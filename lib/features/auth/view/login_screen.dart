@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -10,6 +11,8 @@ import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/features/home/data/home_overview_loader.dart';
 import 'package:vaultara/features/auth/view/password_reset_dialog.dart';
+import 'package:vaultara/features/auth/view/widget/email_typo_hint.dart';
+import 'package:vaultara/features/auth/view/widget/social_sign_in_buttons.dart';
 import 'package:vaultara/features/auth/logic/auth_error_mapper.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 import 'package:vaultara/features/security/services/device_registry.dart';
@@ -18,7 +21,14 @@ import 'package:vaultara/features/security/services/session_guard.dart';
 class LoginScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
 
-  const LoginScreen({super.key, required this.onAuthenticated});
+  /// Switches to the Create account tab.
+  final VoidCallback? onCreateAccount;
+
+  const LoginScreen({
+    super.key,
+    required this.onAuthenticated,
+    this.onCreateAccount,
+  });
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -26,6 +36,13 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   static const String _kNeedsReauthKey = 'needsReauth';
+  // The last email signed in with on this phone, so returning people do not
+  // retype (or mistype) it. Kept on the phone only.
+  static const String _kLastEmailKey = 'lastSignInEmail';
+
+  // After a wrong email or password: a card offering a password reset or a
+  // new account, without saying which of the two was wrong.
+  bool _showWrongDetailsHelp = false;
 
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
@@ -92,12 +109,26 @@ class _LoginScreenState extends State<LoginScreen> {
     passwordFocus.addListener(() => setState(() {}));
 
     emailController.addListener(() {
-      if (emailError != null) setState(() => emailError = null);
+      if (emailError != null || _showWrongDetailsHelp) {
+        setState(() {
+          emailError = null;
+          _showWrongDetailsHelp = false;
+        });
+      }
     });
 
     passwordController.addListener(() {
       if (passError != null) setState(() => passError = null);
     });
+
+    _loadLastEmail();
+  }
+
+  Future<void> _loadLastEmail() async {
+    final prefs = await SharedPreferences.getInstance();
+    final last = prefs.getString(_kLastEmailKey) ?? '';
+    if (!mounted || last.isEmpty || emailController.text.isNotEmpty) return;
+    emailController.text = last;
   }
 
   @override
@@ -233,6 +264,8 @@ class _LoginScreenState extends State<LoginScreen> {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setBool(_kNeedsReauthKey, false);
       await prefs.setString('lastUid', user.uid);
+      await prefs.setString(_kLastEmailKey, email);
+      TextInput.finishAutofillContext();
 
       final signedInAt = await SessionGuard.markSignedIn(user: user);
       unawaited(DeviceRegistry.register(force: true, signedInAtMs: signedInAt));
@@ -260,6 +293,7 @@ class _LoginScreenState extends State<LoginScreen> {
         // One message for a wrong email and a wrong password, so the screen
         // does not tell anyone which emails have an account.
         _applyAuthUiError(uiErr);
+        setState(() => _showWrongDetailsHelp = true);
         _countFailure(email);
       } else {
         _applyAuthUiError(uiErr);
@@ -285,111 +319,199 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Center(
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 520),
-                child: Column(
-                  children: [
-                    TextField(
-                      controller: emailController,
-                      focusNode: emailFocus,
-                      keyboardType: TextInputType.emailAddress,
-                      textInputAction: TextInputAction.next,
-                      onEditingComplete: () =>
-                          FocusScope.of(context).requestFocus(passwordFocus),
-                      decoration: AppInputDecorations.field(
-                        context,
-                        labelText: loc.emailLabel,
-                        hintText: loc.emailHint,
-                        focused: emailFocus.hasFocus,
-                        errorText: emailError,
+                child: AutofillGroup(
+                  child: Column(
+                    children: [
+                      SocialSignInButtons(
+                        enabled: !isBusy,
+                        onSignedIn: () {
+                          _finishAuthNavigate();
+                          _warmUpAfterLogin();
+                        },
                       ),
-                    ),
-                    const SizedBox(height: 12),
-                    TextField(
-                      controller: passwordController,
-                      focusNode: passwordFocus,
-                      obscureText: !isPasswordVisible,
-                      textInputAction: TextInputAction.done,
-                      onSubmitted: (_) => isBusy || _cooldownSeconds > 0
-                          ? null
-                          : _handlePasswordSignIn(),
-                      decoration: AppInputDecorations.field(
-                        context,
-                        labelText: loc.passwordLabel,
-                        hintText: loc.loginPasswordHint,
-                        focused: passwordFocus.hasFocus,
-                        errorText: passError,
-                        suffixIcon: IconButton(
-                          tooltip: isPasswordVisible
-                              ? AppLocalizations.of(context)!.hidePassword
-                              : AppLocalizations.of(context)!.showPassword,
-                          icon: Icon(
-                            isPasswordVisible
-                                ? Icons.visibility_rounded
-                                : Icons.visibility_off_rounded,
-                          ),
-                          onPressed: () => setState(
-                            () => isPasswordVisible = !isPasswordVisible,
+                      TextField(
+                        controller: emailController,
+                        focusNode: emailFocus,
+                        keyboardType: TextInputType.emailAddress,
+                        autofillHints: const [
+                          AutofillHints.email,
+                          AutofillHints.username,
+                        ],
+                        autocorrect: false,
+                        textInputAction: TextInputAction.next,
+                        onEditingComplete: () =>
+                            FocusScope.of(context).requestFocus(passwordFocus),
+                        decoration: AppInputDecorations.field(
+                          context,
+                          labelText: loc.emailLabel,
+                          hintText: loc.emailHint,
+                          focused: emailFocus.hasFocus,
+                          errorText: emailError,
+                        ),
+                      ),
+                      EmailTypoHint(controller: emailController),
+                      const SizedBox(height: 12),
+                      TextField(
+                        controller: passwordController,
+                        focusNode: passwordFocus,
+                        autofillHints: const [AutofillHints.password],
+                        obscureText: !isPasswordVisible,
+                        textInputAction: TextInputAction.done,
+                        onSubmitted: (_) => isBusy || _cooldownSeconds > 0
+                            ? null
+                            : _handlePasswordSignIn(),
+                        decoration: AppInputDecorations.field(
+                          context,
+                          labelText: loc.passwordLabel,
+                          hintText: loc.loginPasswordHint,
+                          focused: passwordFocus.hasFocus,
+                          errorText: passError,
+                          suffixIcon: IconButton(
+                            tooltip: isPasswordVisible
+                                ? AppLocalizations.of(context)!.hidePassword
+                                : AppLocalizations.of(context)!.showPassword,
+                            icon: Icon(
+                              isPasswordVisible
+                                  ? Icons.visibility_rounded
+                                  : Icons.visibility_off_rounded,
+                            ),
+                            onPressed: () => setState(
+                              () => isPasswordVisible = !isPasswordVisible,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                        onPressed: () async {
-                          FocusManager.instance.primaryFocus?.unfocus();
-                          await PasswordResetDialog.show(context);
-                        },
-                        child: Text(loc.forgotPassword),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: TextButton(
+                          onPressed: () async {
+                            FocusManager.instance.primaryFocus?.unfocus();
+                            await PasswordResetDialog.show(context);
+                          },
+                          child: Text(loc.forgotPassword),
+                        ),
                       ),
-                    ),
-                    if (_cooldownSeconds > 0) ...[
-                      const SizedBox(height: 8),
-                      _CooldownCard(
-                        seconds: _cooldownSeconds,
-                        onReset: () async {
-                          FocusManager.instance.primaryFocus?.unfocus();
-                          await PasswordResetDialog.show(context);
-                        },
+                      if (_showWrongDetailsHelp && _cooldownSeconds == 0) ...[
+                        const SizedBox(height: 8),
+                        _WrongDetailsCard(
+                          onReset: () async {
+                            FocusManager.instance.primaryFocus?.unfocus();
+                            await PasswordResetDialog.show(
+                              context,
+                              initialEmail: emailController.text.trim(),
+                            );
+                          },
+                          onCreateAccount: widget.onCreateAccount,
+                        ),
+                      ],
+                      if (_cooldownSeconds > 0) ...[
+                        const SizedBox(height: 8),
+                        _CooldownCard(
+                          seconds: _cooldownSeconds,
+                          onReset: () async {
+                            FocusManager.instance.primaryFocus?.unfocus();
+                            await PasswordResetDialog.show(context);
+                          },
+                        ),
+                      ],
+                      const SizedBox(height: 16),
+                      SizedBox(
+                        width: double.infinity,
+                        height: 52,
+                        child: FilledButton(
+                          style: FilledButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(999),
+                            ),
+                            textStyle: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                          onPressed: isBusy || _cooldownSeconds > 0
+                              ? null
+                              : _handlePasswordSignIn,
+                          child: isBusy
+                              ? const SizedBox(
+                                  width: 20,
+                                  height: 20,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2.5,
+                                  ),
+                                )
+                              : Text(
+                                  _cooldownSeconds > 0
+                                      ? loc.signInWaitSeconds(_cooldownSeconds)
+                                      : loc.signIn,
+                                ),
+                        ),
                       ),
                     ],
-                    const SizedBox(height: 16),
-                    SizedBox(
-                      width: double.infinity,
-                      height: 52,
-                      child: FilledButton(
-                        style: FilledButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(999),
-                          ),
-                          textStyle: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        onPressed: isBusy || _cooldownSeconds > 0
-                            ? null
-                            : _handlePasswordSignIn,
-                        child: isBusy
-                            ? const SizedBox(
-                                width: 20,
-                                height: 20,
-                                child: CircularProgressIndicator(
-                                  strokeWidth: 2.5,
-                                ),
-                              )
-                            : Text(
-                                _cooldownSeconds > 0
-                                    ? loc.signInWaitSeconds(_cooldownSeconds)
-                                    : loc.signIn,
-                              ),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+class _WrongDetailsCard extends StatelessWidget {
+  final VoidCallback onReset;
+  final VoidCallback? onCreateAccount;
+
+  const _WrongDetailsCard({required this.onReset, this.onCreateAccount});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    return Container(
+      padding: const EdgeInsets.fromLTRB(14, 12, 8, 6),
+      decoration: BoxDecoration(
+        color: scheme.surfaceContainerHighest.withValues(alpha: 0.6),
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(Icons.help_outline_rounded, color: scheme.primary, size: 20),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  loc.signInWrongDetailsHelp,
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    height: 1.4,
+                    color: scheme.onSurface,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Wrap(
+            alignment: WrapAlignment.end,
+            spacing: 4,
+            children: [
+              TextButton.icon(
+                onPressed: onReset,
+                icon: const Icon(Icons.key_rounded, size: 18),
+                label: Text(loc.forgotPassword),
+              ),
+              if (onCreateAccount != null)
+                TextButton.icon(
+                  onPressed: onCreateAccount,
+                  icon: const Icon(Icons.person_add_alt_1_rounded, size: 18),
+                  label: Text(loc.createAccount),
+                ),
+            ],
+          ),
+        ],
       ),
     );
   }

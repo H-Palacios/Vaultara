@@ -11,10 +11,7 @@ import 'package:vaultara/features/auth/view/widget/auth_brand_header.dart';
 class AuthGatewayScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
 
-  const AuthGatewayScreen({
-    super.key,
-    required this.onAuthenticated,
-  });
+  const AuthGatewayScreen({super.key, required this.onAuthenticated});
 
   @override
   State<AuthGatewayScreen> createState() => _AuthGatewayScreenState();
@@ -67,8 +64,10 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
             SafeArea(
               child: Center(
                 child: SingleChildScrollView(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 16,
+                  ),
                   child: ConstrainedBox(
                     constraints: const BoxConstraints(maxWidth: 420),
                     child: Column(
@@ -105,8 +104,9 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
                                     children: [
                                       const RegisterScreen(),
                                       LoginScreen(
-                                        onAuthenticated:
-                                            widget.onAuthenticated,
+                                        onAuthenticated: widget.onAuthenticated,
+                                        onCreateAccount: () =>
+                                            tabController.animateTo(0),
                                       ),
                                     ],
                                   ),
@@ -156,10 +156,7 @@ class _TabSelector extends StatelessWidget {
           labelColor: Colors.white,
           unselectedLabelColor: const Color(0xFF0A0E1A).withValues(alpha: 0.7),
           tabs: [
-            SizedBox(
-              height: 44,
-              child: Center(child: Text(loc.tabSignUp)),
-            ),
+            SizedBox(height: 44, child: Center(child: Text(loc.tabSignUp))),
             SizedBox(height: 44, child: Center(child: Text(loc.tabSignIn))),
           ],
         ),
