@@ -55,10 +55,12 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - **Renewal costs.** Add a cost to each record and see the 12-month total and the busiest month in Insights.
 
 ### Insights and calendar
-- **Smart Insights.** Highlights what needs attention first, such as records expiring today, records with no reminder, and records expiring around the same time. Each insight has an action button, and a speaker button reads insights aloud.
-- **Category coverage chart.** An interactive pie chart of where your records sit.
-- **Expiry timeline.** When your records expire across the year.
-- **Calendar.** A month view with expiry dots, a day list, and quick day chips.
+- **Summary at a glance.** Four numbers at the top of Insights (records, expired, due in 30 days and no reminder), each opening the records behind it.
+- **Smart Insights.** Highlights what needs attention first, such as records expiring today, records with no reminder, records to renew together and, on paid plans, what renewals in the next three months will cost. Insights are swiped through one at a time and tinted red, amber or green by urgency. Each has its action, Later (hides it for a week, synced across devices) and, on paid plans, Ask about this. The speaker button reads them all aloud.
+- **Monday recap.** What expires this week and what was renewed last week.
+- **Expiry timeline.** A bar per month, coloured by how soon the first record is, with repeating records shown every time they come round. Records open from the timeline.
+- **Person filter.** On Family and Business plans, Insights and the calendar can show one person's records.
+- **Calendar.** Month and List views. Dots are coloured by urgency (past dates are diamonds), reminder days have a ring and busy days are tinted. Swipe between months, tap the month name to jump, and use Today or Next expiry. Each month shows a summary (with renewal costs on paid plans), each record has Renew and How to renew (or swipe right to renew), and a long press on a day adds a record expiring that day.
 - **Calendar export and live calendar link.** Add expiries to Google Calendar, or subscribe to a feed that updates by itself.
 
 ### Documents
