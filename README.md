@@ -42,11 +42,21 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - **Global search** across categories, groups and records, including holder names, notes and where a record is kept (not for locked records). It ignores accents, tolerates small typos and can be filtered by person.
 - **Recovery Centre.** Deleted categories, groups and records can be restored for 30 days.
 
+### Home
+- **Greeting by first name** ("Welcome back, Ana").
+- **Next expiry.** The record that expires next, with how long is left, Renew and How to renew, and chips for anything expired or due in 30 days that open those records. The overall numbers live in the Insights summary, so Home no longer repeats them.
+- **Pinned categories** one tap away, and pull to refresh.
+
 ### Reminders
-- **Reminder cascade.** Several notifications before a record expires, at times the user chooses.
-- **Custom reminder time.** Pick the hour reminders arrive each day.
+- **Reminder cascade.** Several notifications before a record expires, at times the user chooses. The first and last greet you by first name, and records of people in your family are named as theirs ("Leo's passport expires tomorrow").
+- **After expiry.** Two nudges, 3 and 14 days after a record expired without being renewed (on by default, not for repeating records).
+- **Locked records stay private.** Reminders, "Remind me tomorrow" and the daily summary never show a locked record's name.
+- **Custom reminder time.** Pick the hour reminders arrive each day. A reminder missed while the phone was off arrives once when the app opens, never again on the same day.
 - **Notification actions.** "Renewed" and "Remind me tomorrow" work straight from the notification without opening the app.
-- **Push notifications** through Firebase Cloud Messaging, plus an optional single daily summary.
+- **Monday summary** (optional): a note on Monday morning when something expires that week.
+- **Send a test notification**, help for Android battery settings and for iPhone notification settings.
+- **Within the phone's limits.** iPhones keep only 64 scheduled notifications and some Android phones 500, so the soonest reminders across all records are scheduled first and the rest follow when the app is opened.
+- **Push notifications** through Firebase Cloud Messaging, plus an optional single daily summary. Pushes about shared household records and requested updates can each be turned off; sign-in alerts are always sent.
 - **Monthly email summary** of what expires this month.
 
 ### Renewing
