@@ -3,6 +3,7 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/util/dates.dart';
+import 'package:vaultara/core/util/repeat_dates.dart';
 import 'package:vaultara/features/costs/logic/cost_forecast.dart';
 import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/guides/data/renewal_guides.dart';
@@ -22,7 +23,11 @@ class _Candidate {
 class SmartInsightService {
   const SmartInsightService._();
 
-  static const int maxMore = 3;
+  /// The most insights the card pages through.
+  static const int maxShown = 5;
+
+  /// Insights that can be put off with Later are hidden for this long.
+  static const int snoozeDays = 7;
 
   static const int _soonDays = 7;
   static const int _noReminderWindowDays = 30;
@@ -37,6 +42,9 @@ class SmartInsightService {
   static const int _allCaughtUpWindowDays = 90;
   static const int _costIncreaseWindowDays = 90;
   static const double _costIncreaseThreshold = 0.15;
+  static const int _togetherWindowDays = 120;
+  static const int _togetherGapDays = 14;
+  static const int _upcomingCostDays = 90;
 
   static List<SmartInsight> build({
     required AppLocalizations loc,
@@ -47,6 +55,8 @@ class SmartInsightService {
     List<Person> people = const <Person>[],
     List<SavedTrip> trips = const <SavedTrip>[],
     bool includeTrips = false,
+    bool includeCosts = false,
+    bool Function(String key)? hidden,
     DateTime? now,
   }) {
     final items = records.where((r) => !r.isDeleted).toList();
@@ -83,58 +93,73 @@ class SmartInsightService {
     }
 
     if (includeTrips) {
-      candidates.addAll(_tripProblems(items, trips, today, loc, formatDateLong));
+      candidates.addAll(
+        _tripProblems(items, trips, today, loc, formatDateLong),
+      );
     }
 
     final busy = _busyMonth(items, used, today, loc, formatMonth, formatMoney);
     if (busy != null) candidates.add(busy);
 
-    final reminders =
-        _missingReminders(items, used, today, loc, formatDateLong);
+    final reminders = _missingReminders(
+      items,
+      used,
+      today,
+      loc,
+      formatDateLong,
+    );
     if (reminders != null) candidates.add(reminders);
 
     final wallet = _walletPhotos(items, used, today, loc);
     if (wallet != null) candidates.add(wallet);
 
+    final together = _renewTogether(items, used, today, loc, formatDateLong);
+    if (together != null) candidates.add(together);
+
     final cost = _costIncrease(items, used, today, loc);
     if (cost != null) candidates.add(cost);
 
-    if (candidates.isEmpty) {
+    if (includeCosts) {
+      final upcoming = _upcomingCost(items, today, loc, formatMoney);
+      if (upcoming != null) candidates.add(upcoming);
+    }
+
+    final shown = <_Candidate>[
+      for (final c in candidates)
+        if (hidden == null || !hidden(keyOf(c.insight))) c,
+    ];
+
+    if (shown.isEmpty) {
       return [_calm(items, today, loc, formatDateLong)];
     }
 
-    candidates.sort((a, b) => a.score.compareTo(b.score));
+    shown.sort((a, b) => a.score.compareTo(b.score));
 
     return [
-      for (int i = 0; i < candidates.length; i++)
-        _withPriority(candidates[i].insight, i),
+      for (int i = 0; i < shown.length; i++)
+        shown[i].insight.copyWith(priority: i, key: keyOf(shown[i].insight)),
     ];
   }
 
+  /// The key "Later" uses for [insight]: its kind and the record or trip it
+  /// is about, so putting off one expired record leaves the others showing.
+  static String keyOf(SmartInsight insight) {
+    final target = insight.actionRecord?.id ?? insight.tripId ?? '';
+    return '${insight.kind.name}:$target';
+  }
+
+  /// What the speaker button reads: every insight the card can show, in
+  /// order, not only the first.
   static String toSpeech(List<SmartInsight> insights) {
     if (insights.isEmpty) return '';
-    final main = insights.first;
-    return '${main.heading}. ${main.body}';
+    return insights
+        .take(maxShown)
+        .map((i) => '${i.heading}. ${i.body}')
+        .join(' ');
   }
 
   static String _key(TrackedItem record) =>
       record.id ?? 'base-${record.reminderBaseId}';
-
-  static SmartInsight _withPriority(SmartInsight s, int priority) {
-    return SmartInsight(
-      kind: s.kind,
-      heading: s.heading,
-      body: s.body,
-      icon: s.icon,
-      priority: priority,
-      actionRecord: s.actionRecord,
-      actionLabel: s.actionLabel,
-      actionIcon: s.actionIcon,
-      action: s.action,
-      tripId: s.tripId,
-      urgent: s.urgent,
-    );
-  }
 
   static Map<String, TravellerReadiness> _passportReadiness(
     List<TrackedItem> items,
@@ -281,10 +306,7 @@ class SmartInsightService {
             record,
             kind: SmartInsightKind.passportSoon,
             heading: loc.smartInsightPassportSoonHeading,
-            body: loc.smartInsightPassportSoonBody(
-              name,
-              formatDateLong(until),
-            ),
+            body: loc.smartInsightPassportSoonBody(name, formatDateLong(until)),
             icon: Icons.public_rounded,
             loc: loc,
           ),
@@ -312,9 +334,10 @@ class SmartInsightService {
       priority: 0,
       actionRecord: record,
       actionLabel: hasGuide ? loc.guideTitle : loc.renewAction,
-      actionIcon:
-          hasGuide ? Icons.menu_book_rounded : Icons.autorenew_rounded,
-      action: hasGuide ? SmartInsightAction.howToRenew : SmartInsightAction.renew,
+      actionIcon: hasGuide ? Icons.menu_book_rounded : Icons.autorenew_rounded,
+      action: hasGuide
+          ? SmartInsightAction.howToRenew
+          : SmartInsightAction.renew,
     );
   }
 
@@ -357,7 +380,8 @@ class SmartInsightService {
           SmartInsight(
             kind: SmartInsightKind.tripProblem,
             heading: loc.smartInsightTripHeading,
-            body: '${loc.smartInsightTripWhen(trip.name, formatDateLong(trip.start))} '
+            body:
+                '${loc.smartInsightTripWhen(trip.name, formatDateLong(trip.start))} '
                 '${loc.travelFixBeforeYouGo(problems)}',
             icon: Icons.luggage_rounded,
             priority: 0,
@@ -386,7 +410,8 @@ class SmartInsightService {
     for (final r in items) {
       final expiry = Dates.only(r.expiryDate);
       if (!expiry.isAfter(today)) continue;
-      final index = (expiry.year - firstMonth.year) * 12 +
+      final index =
+          (expiry.year - firstMonth.year) * 12 +
           (expiry.month - firstMonth.month);
       if (index < 0 || index >= _busyMonthWindowMonths) continue;
       byMonth.putIfAbsent(index, () => <TrackedItem>[]).add(r);
@@ -414,8 +439,7 @@ class SmartInsightService {
           .map((r) => CostForecast.normaliseCurrency(r.costCurrency)!)
           .toSet();
       if (currencies.length == 1) {
-        final total =
-            group.fold<double>(0, (sum, r) => sum + r.renewalCost!);
+        final total = group.fold<double>(0, (sum, r) => sum + r.renewalCost!);
         body = loc.smartInsightBusyMonthCostBody(
           group.length,
           monthLabel,
@@ -451,8 +475,7 @@ class SmartInsightService {
       if (used.contains(_key(r))) return false;
       final days = Dates.daysBetween(today, r.expiryDate);
       return days > 0 && days <= _missingReminderWindowDays;
-    }).toList()
-      ..sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
+    }).toList()..sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
     if (list.isEmpty) return null;
 
     final first = list.first;
@@ -490,8 +513,7 @@ class SmartInsightService {
       if (!r.inWallet || r.attachments.isNotEmpty) return false;
       if (used.contains(_key(r))) return false;
       return !Dates.only(r.expiryDate).isBefore(today);
-    }).toList()
-      ..sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
+    }).toList()..sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
     if (list.isEmpty) return null;
 
     final first = list.first;
@@ -519,10 +541,12 @@ class SmartInsightService {
   static int? costIncreasePercent(TrackedItem record) {
     if (record.renewals.isEmpty) return null;
     final withCost = record.renewals
-        .where((e) =>
-            e.cost != null &&
-            e.cost! > 0 &&
-            (e.currency ?? '').trim().isNotEmpty)
+        .where(
+          (e) =>
+              e.cost != null &&
+              e.cost! > 0 &&
+              (e.currency ?? '').trim().isNotEmpty,
+        )
         .toList();
     if (withCost.length < 2) return null;
     final last = withCost.last;
@@ -580,16 +604,142 @@ class SmartInsightService {
     );
   }
 
+  /// Two or more records that expire within two weeks of each other, so
+  /// they can be renewed in one go.
+  static _Candidate? _renewTogether(
+    List<TrackedItem> items,
+    Set<String> used,
+    DateTime today,
+    AppLocalizations loc,
+    String Function(DateTime) formatDateLong,
+  ) {
+    final upcoming = items.where((r) {
+      if (r.repeatMonths != null || used.contains(_key(r))) return false;
+      final days = Dates.daysBetween(today, r.expiryDate);
+      return days > 0 && days <= _togetherWindowDays;
+    }).toList()..sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
+
+    for (var i = 0; i < upcoming.length - 1; i++) {
+      final first = upcoming[i];
+      final group = <TrackedItem>[first];
+      for (var j = i + 1; j < upcoming.length; j++) {
+        final gap = Dates.daysBetween(first.expiryDate, upcoming[j].expiryDate);
+        if (gap > _togetherGapDays) break;
+        group.add(upcoming[j]);
+      }
+      if (group.length < 2) continue;
+
+      final a = RecordDisplayName.of(group[0], loc);
+      final b = RecordDisplayName.of(group[1], loc);
+      final last = formatDateLong(group.last.expiryDate);
+      final String body;
+      if (group.length == 2) {
+        body = loc.smartInsightCloseExpiriesBodyTwo(
+          a,
+          formatDateLong(group[0].expiryDate),
+          b,
+          formatDateLong(group[1].expiryDate),
+        );
+      } else if (group.length == 3) {
+        body = loc.smartInsightCloseExpiriesBodyThree(
+          a,
+          b,
+          RecordDisplayName.of(group[2], loc),
+          last,
+        );
+      } else {
+        body = loc.smartInsightCloseExpiriesBodyMany(
+          a,
+          b,
+          group.length - 2,
+          last,
+        );
+      }
+      for (final r in group) {
+        used.add(_key(r));
+      }
+      final days = Dates.daysBetween(today, first.expiryDate);
+      return _Candidate(
+        6.8 + days / 100000.0,
+        SmartInsight(
+          kind: SmartInsightKind.renewTogether,
+          heading: loc.smartInsightCloseExpiriesHeading,
+          body: body,
+          icon: Icons.event_repeat_rounded,
+          priority: 0,
+          actionRecord: first,
+          actionLabel: loc.smartInsightActionSeeTimeline,
+          actionIcon: Icons.timeline_rounded,
+          action: SmartInsightAction.showTimeline,
+        ),
+      );
+    }
+    return null;
+  }
+
+  /// What renewals in the next three months add up to, when at least two of
+  /// them have a cost in the same currency. Repeating records count each
+  /// time they come round.
+  static _Candidate? _upcomingCost(
+    List<TrackedItem> items,
+    DateTime today,
+    AppLocalizations loc,
+    String Function(double amount, String currency) formatMoney,
+  ) {
+    final until = DateTime(
+      today.year,
+      today.month,
+      today.day + _upcomingCostDays,
+    );
+    final totals = <String, double>{};
+    final counts = <String, int>{};
+    for (final r in items) {
+      if (!CostForecast.hasCost(r)) continue;
+      final currency = CostForecast.normaliseCurrency(r.costCurrency)!;
+      final dates = <DateTime>[
+        Dates.only(r.expiryDate),
+        ...RepeatDates.after(r, until),
+      ];
+      for (final date in dates) {
+        if (date.isBefore(today) || date.isAfter(until)) continue;
+        totals[currency] = (totals[currency] ?? 0) + r.renewalCost!;
+        counts[currency] = (counts[currency] ?? 0) + 1;
+      }
+    }
+    if (counts.isEmpty) return null;
+    final currency = counts.keys.reduce(
+      (a, b) => counts[a]! >= counts[b]! ? a : b,
+    );
+    final count = counts[currency]!;
+    if (count < 2) return null;
+
+    return _Candidate(
+      9.2,
+      SmartInsight(
+        kind: SmartInsightKind.upcomingCost,
+        heading: loc.smartInsightUpcomingCostHeading,
+        body: loc.smartInsightUpcomingCostBody(
+          count,
+          formatMoney(totals[currency]!, currency),
+        ),
+        icon: Icons.payments_outlined,
+        priority: 0,
+        actionLabel: loc.smartInsightActionSeeTimeline,
+        actionIcon: Icons.timeline_rounded,
+        action: SmartInsightAction.showTimeline,
+      ),
+    );
+  }
+
   static SmartInsight _calm(
     List<TrackedItem> items,
     DateTime today,
     AppLocalizations loc,
     String Function(DateTime) formatDateLong,
   ) {
-    final upcoming = items
-        .where((r) => Dates.daysBetween(today, r.expiryDate) > 0)
-        .toList()
-      ..sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
+    final upcoming =
+        items.where((r) => Dates.daysBetween(today, r.expiryDate) > 0).toList()
+          ..sort((a, b) => a.expiryDate.compareTo(b.expiryDate));
 
     TrackedItem? renewed;
     for (final r in items) {
@@ -644,8 +794,10 @@ class SmartInsightService {
     }
 
     final soon = upcoming
-        .where((r) =>
-            Dates.daysBetween(today, r.expiryDate) <= _allCaughtUpWindowDays)
+        .where(
+          (r) =>
+              Dates.daysBetween(today, r.expiryDate) <= _allCaughtUpWindowDays,
+        )
         .length;
     return SmartInsight(
       kind: SmartInsightKind.allCaughtUp,
