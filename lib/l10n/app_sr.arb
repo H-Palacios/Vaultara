@@ -3196,5 +3196,25 @@
   "assistantRestoreNote": "Запис и његови подсетници се враћају.",
   "assistantStepCategories": "Проверавам ваше категорије…",
   "assistantStepCosts": "Сабирам трошкове обнове…",
-  "assistantStepVisa": "Проверавам правила за визе…"
+  "assistantStepVisa": "Проверавам правила за визе…",
+  "signUpCheckEmailTitle": "Проверите имејл",
+  "signUpAlreadyHint": "Ако овај имејл већ има Vaultara налог, порука објашњава шта да урадите уместо тога.",
+  "signUpCodeWrong": "Тај код је погрешан или је истекао. Проверите најновију поруку од Vaultare или додирните Поново пошаљи код.",
+  "signUpCreatedSignIn": "Ваш налог је спреман. Вратите се и пријавите се имејлом и лозинком.",
+  "signUpResent": "Послали смо нову поруку.",
+  "emailDidYouMean": "Да ли сте мислили {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Проверите имејл и лозинку. Заборавили сте лозинку или сте нови у Vaultari?",
+  "passwordResetIfAccount": "Ако за овај имејл постоји Vaultara налог, линк за ресетовање је на путу. Проверите пријемно сандуче.",
+  "socialContinueGoogle": "Настави помоћу Google-а",
+  "socialContinueApple": "Настави помоћу Apple-а",
+  "socialOr": "или",
+  "socialNotAvailable": "Ова опција пријаве тренутно није доступна. Уместо тога користите имејл и лозинку.",
+  "socialAccountExists": "Овај имејл већ има Vaultara налог. Пријавите се имејлом и лозинком."
 }

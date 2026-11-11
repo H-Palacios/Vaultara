@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "Записот и неговите потсетници се враќаат.",
   "assistantStepCategories": "Ги проверувам вашите категории…",
   "assistantStepCosts": "Ги собирам трошоците за обнова…",
-  "assistantStepVisa": "Ги проверувам правилата за визи…"
+  "assistantStepVisa": "Ги проверувам правилата за визи…",
+  "signUpCheckEmailTitle": "Проверете ја е-поштата",
+  "signUpAlreadyHint": "Ако оваа е-пошта веќе има сметка во Vaultara, пораката објаснува што да направите наместо тоа.",
+  "signUpCodeWrong": "Тој код е погрешен или е истечен. Проверете ја најновата порака од Vaultara или допрете Испрати го кодот повторно.",
+  "signUpCreatedSignIn": "Вашата сметка е подготвена. Вратете се и најавете се со е-пошта и лозинка.",
+  "signUpResent": "Испративме нова порака.",
+  "emailDidYouMean": "Дали мислевте на {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Проверете ја е-поштата и лозинката. Ја заборавивте лозинката или сте нови во Vaultara?",
+  "passwordResetIfAccount": "Ако постои сметка во Vaultara за оваа е-пошта, врската за ресетирање е на пат. Проверете го сандачето.",
+  "socialContinueGoogle": "Продолжи со Google",
+  "socialContinueApple": "Продолжи со Apple",
+  "socialOr": "или",
+  "socialNotAvailable": "Оваа опција за најава моментално не е достапна. Наместо тоа, користете е-пошта и лозинка.",
+  "socialAccountExists": "Оваа е-пошта веќе има сметка во Vaultara. Најавете се со е-пошта и лозинка."
 }

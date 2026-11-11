@@ -3239,5 +3239,25 @@
   "assistantRestoreNote": "Запис і його нагадування повернуться.",
   "assistantStepCategories": "Перевіряємо ваші категорії…",
   "assistantStepCosts": "Підраховуємо витрати на поновлення…",
-  "assistantStepVisa": "Перевіряємо візові правила…"
+  "assistantStepVisa": "Перевіряємо візові правила…",
+  "signUpCheckEmailTitle": "Перевірте пошту",
+  "signUpAlreadyHint": "Якщо ця адреса вже має обліковий запис Vaultara, у листі пояснено, що робити натомість.",
+  "signUpCodeWrong": "Цей код неправильний або застарів. Перевірте найновіший лист від Vaultara або натисніть «Надіслати код знову».",
+  "signUpCreatedSignIn": "Ваш обліковий запис готовий. Поверніться та увійдіть за допомогою пошти й пароля.",
+  "signUpResent": "Ми надіслали новий лист.",
+  "emailDidYouMean": "Ви мали на увазі {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Перевірте пошту й пароль. Забули пароль чи ви новачок у Vaultara?",
+  "passwordResetIfAccount": "Якщо для цієї адреси є обліковий запис Vaultara, посилання для скидання вже в дорозі. Перевірте вхідні.",
+  "socialContinueGoogle": "Продовжити з Google",
+  "socialContinueApple": "Продовжити з Apple",
+  "socialOr": "або",
+  "socialNotAvailable": "Цей спосіб входу зараз недоступний. Натомість використайте пошту й пароль.",
+  "socialAccountExists": "Ця адреса вже має обліковий запис Vaultara. Увійдіть за допомогою пошти й пароля."
 }

@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "ჩანაწერი და მისი შეხსენებები ბრუნდება.",
   "assistantStepCategories": "ვამოწმებთ თქვენს კატეგორიებს…",
   "assistantStepCosts": "ვითვლით განახლების ხარჯებს…",
-  "assistantStepVisa": "ვამოწმებთ სავიზო წესებს…"
+  "assistantStepVisa": "ვამოწმებთ სავიზო წესებს…",
+  "signUpCheckEmailTitle": "შეამოწმეთ ელფოსტა",
+  "signUpAlreadyHint": "თუ ამ ელფოსტას უკვე აქვს Vaultara-ს ანგარიში, წერილში ახსნილია, რა უნდა გააკეთოთ ამის ნაცვლად.",
+  "signUpCodeWrong": "ეს კოდი არასწორია ან ვადა გაუვიდა. შეამოწმეთ Vaultara-ს უახლესი წერილი ან შეეხეთ კოდის ხელახლა გაგზავნას.",
+  "signUpCreatedSignIn": "თქვენი ანგარიში მზადაა. დაბრუნდით და შედით ელფოსტითა და პაროლით.",
+  "signUpResent": "ახალი წერილი გამოგიგზავნეთ.",
+  "emailDidYouMean": "გულისხმობდით {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "შეამოწმეთ ელფოსტა და პაროლი. დაგავიწყდათ პაროლი, თუ Vaultara-ში ახალი ხართ?",
+  "passwordResetIfAccount": "თუ ამ ელფოსტისთვის Vaultara-ს ანგარიში არსებობს, აღდგენის ბმული გზაშია. შეამოწმეთ შემოსულები.",
+  "socialContinueGoogle": "Google-ით გაგრძელება",
+  "socialContinueApple": "Apple-ით გაგრძელება",
+  "socialOr": "ან",
+  "socialNotAvailable": "შესვლის ეს გზა ახლა მიუწვდომელია. ამის ნაცვლად გამოიყენეთ ელფოსტა და პაროლი.",
+  "socialAccountExists": "ამ ელფოსტას უკვე აქვს Vaultara-ს ანგარიში. შედით ელფოსტითა და პაროლით."
 }

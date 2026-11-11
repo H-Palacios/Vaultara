@@ -14772,6 +14772,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Checking visa rules…'**
   String get assistantStepVisa;
+
+  /// Title of the screen after Create account, where the 6-digit code is entered.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your email'**
+  String get signUpCheckEmailTitle;
+
+  /// Note under the email address on the sign-up code screen.
+  ///
+  /// In en, this message translates to:
+  /// **'If this email already has a Vaultara account, the email explains what to do instead.'**
+  String get signUpAlreadyHint;
+
+  /// Error for a wrong, expired or missing sign-up code.
+  ///
+  /// In en, this message translates to:
+  /// **'That code is wrong or has expired. Check the newest email from Vaultara, or tap Resend code.'**
+  String get signUpCodeWrong;
+
+  /// Shown if the account was made but signing in straight away did not work.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account is ready. Go back and sign in with your email and password.'**
+  String get signUpCreatedSignIn;
+
+  /// Shown after Resend code on the sign-up code screen.
+  ///
+  /// In en, this message translates to:
+  /// **'We sent a new email.'**
+  String get signUpResent;
+
+  /// Suggestion under an email field when the address looks mistyped.
+  ///
+  /// In en, this message translates to:
+  /// **'Did you mean {email}?'**
+  String emailDidYouMean(String email);
+
+  /// Card under the sign-in form after a wrong email or password, above Forgot password and Create account.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the email and password. Forgot your password, or new to Vaultara?'**
+  String get signInWrongDetailsHelp;
+
+  /// Shown after asking for a password reset. The same for every email.
+  ///
+  /// In en, this message translates to:
+  /// **'If there\'s a Vaultara account for this email, a reset link is on its way. Check your inbox.'**
+  String get passwordResetIfAccount;
+
+  /// Button that signs in or creates an account with Google.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Google'**
+  String get socialContinueGoogle;
+
+  /// Button that signs in or creates an account with Apple.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Apple'**
+  String get socialContinueApple;
+
+  /// Divider between the Google and Apple buttons and the email form.
+  ///
+  /// In en, this message translates to:
+  /// **'or'**
+  String get socialOr;
+
+  /// Shown when Google or Apple sign-in is not set up or not available.
+  ///
+  /// In en, this message translates to:
+  /// **'This sign-in option isn\'t available right now. Use your email and password instead.'**
+  String get socialNotAvailable;
+
+  /// Shown when Google or Apple sign-in uses an email that already has a password account.
+  ///
+  /// In en, this message translates to:
+  /// **'This email already has a Vaultara account. Sign in with your email and password.'**
+  String get socialAccountExists;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -8665,4 +8665,45 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Athuga reglur um vegabréfsáritanir…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Athugaðu tölvupóstinn';
+
+  @override
+  String get signUpAlreadyHint => 'Ef þetta netfang er nú þegar með Vaultara-aðgang útskýrir tölvupósturinn hvað þú átt að gera í staðinn.';
+
+  @override
+  String get signUpCodeWrong => 'Þessi kóði er rangur eða útrunninn. Skoðaðu nýjasta tölvupóstinn frá Vaultara eða ýttu á Senda kóða aftur.';
+
+  @override
+  String get signUpCreatedSignIn => 'Aðgangurinn þinn er tilbúinn. Farðu til baka og skráðu þig inn með netfangi og lykilorði.';
+
+  @override
+  String get signUpResent => 'Við sendum nýjan tölvupóst.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Áttirðu við $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Athugaðu netfang og lykilorð. Gleymdirðu lykilorðinu, eða ertu ný(r) í Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Ef Vaultara-aðgangur er til fyrir þetta netfang er endurstillingartengill á leiðinni. Athugaðu innhólfið.';
+
+  @override
+  String get socialContinueGoogle => 'Halda áfram með Google';
+
+  @override
+  String get socialContinueApple => 'Halda áfram með Apple';
+
+  @override
+  String get socialOr => 'eða';
+
+  @override
+  String get socialNotAvailable => 'Þessi innskráningarleið er ekki í boði núna. Notaðu frekar netfang og lykilorð.';
+
+  @override
+  String get socialAccountExists => 'Þetta netfang er nú þegar með Vaultara-aðgang. Skráðu þig inn með netfangi og lykilorði.';
 }

@@ -3260,5 +3260,25 @@
   "assistantRestoreNote": "Die rekord en sy herinneringe kom terug.",
   "assistantStepCategories": "Kyk na jou kategorieë…",
   "assistantStepCosts": "Tel hernuwingskoste op…",
-  "assistantStepVisa": "Kyk na visumreëls…"
+  "assistantStepVisa": "Kyk na visumreëls…",
+  "signUpCheckEmailTitle": "Kyk na jou e-pos",
+  "signUpAlreadyHint": "As hierdie e-posadres reeds 'n Vaultara-rekening het, verduidelik die e-pos wat om eerder te doen.",
+  "signUpCodeWrong": "Daardie kode is verkeerd of het verval. Kyk na die nuutste e-pos van Vaultara, of tik Stuur kode weer.",
+  "signUpCreatedSignIn": "Jou rekening is gereed. Gaan terug en meld aan met jou e-pos en wagwoord.",
+  "signUpResent": "Ons het 'n nuwe e-pos gestuur.",
+  "emailDidYouMean": "Het jy {email} bedoel?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Kontroleer die e-pos en wagwoord. Wagwoord vergeet, of nuut by Vaultara?",
+  "passwordResetIfAccount": "As daar 'n Vaultara-rekening vir hierdie e-pos is, is 'n terugstelskakel op pad. Kyk in jou inkassie.",
+  "socialContinueGoogle": "Gaan voort met Google",
+  "socialContinueApple": "Gaan voort met Apple",
+  "socialOr": "of",
+  "socialNotAvailable": "Hierdie aanmeldopsie is nie nou beskikbaar nie. Gebruik eerder jou e-pos en wagwoord.",
+  "socialAccountExists": "Hierdie e-pos het reeds 'n Vaultara-rekening. Meld aan met jou e-pos en wagwoord."
 }

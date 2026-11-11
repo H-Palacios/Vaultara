@@ -3236,5 +3236,25 @@
   "assistantRestoreNote": "Regjistrimi dhe kujtesat e tij kthehen.",
   "assistantStepCategories": "Po kontrollohen kategoritë tuaja…",
   "assistantStepCosts": "Po mblidhen kostot e rinovimit…",
-  "assistantStepVisa": "Po kontrollohen rregullat e vizave…"
+  "assistantStepVisa": "Po kontrollohen rregullat e vizave…",
+  "signUpCheckEmailTitle": "Kontrolloni email-in",
+  "signUpAlreadyHint": "Nëse ky email ka tashmë llogari Vaultara, mesazhi shpjegon çfarë të bëni në vend të kësaj.",
+  "signUpCodeWrong": "Ky kod është i gabuar ose ka skaduar. Shikoni email-in më të ri nga Vaultara ose prekni Ridërgo kodin.",
+  "signUpCreatedSignIn": "Llogaria juaj është gati. Kthehuni dhe hyni me email-in dhe fjalëkalimin.",
+  "signUpResent": "Dërguam një email të ri.",
+  "emailDidYouMean": "Mos e keni fjalën për {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Kontrolloni email-in dhe fjalëkalimin. Keni harruar fjalëkalimin, apo jeni të ri në Vaultara?",
+  "passwordResetIfAccount": "Nëse ka llogari Vaultara për këtë email, një lidhje rivendosjeje është në rrugë. Kontrolloni kutinë hyrëse.",
+  "socialContinueGoogle": "Vazhdo me Google",
+  "socialContinueApple": "Vazhdo me Apple",
+  "socialOr": "ose",
+  "socialNotAvailable": "Ky opsion hyrjeje nuk është i disponueshëm tani. Përdorni email-in dhe fjalëkalimin në vend të tij.",
+  "socialAccountExists": "Ky email ka tashmë llogari Vaultara. Hyni me email-in dhe fjalëkalimin."
 }

@@ -8666,4 +8666,45 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Viza qoidalari tekshirilmoqda…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Pochtangizni tekshiring';
+
+  @override
+  String get signUpAlreadyHint => 'Agar bu pochtada allaqachon Vaultara hisobi bo‘lsa, xatda buning o‘rniga nima qilish kerakligi tushuntiriladi.';
+
+  @override
+  String get signUpCodeWrong => 'Bu kod noto‘g‘ri yoki muddati o‘tgan. Vaultara’dan kelgan eng yangi xatni tekshiring yoki Kodni qayta yuborish tugmasini bosing.';
+
+  @override
+  String get signUpCreatedSignIn => 'Hisobingiz tayyor. Orqaga qayting va pochtangiz hamda parolingiz bilan kiring.';
+
+  @override
+  String get signUpResent => 'Yangi xat yubordik.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '$email demoqchimidingiz?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Pochta va parolni tekshiring. Parolni unutdingizmi yoki Vaultara’da yangimisiz?';
+
+  @override
+  String get passwordResetIfAccount => 'Agar bu pochta uchun Vaultara hisobi bo‘lsa, tiklash havolasi yo‘lda. Kiruvchi xatlarni tekshiring.';
+
+  @override
+  String get socialContinueGoogle => 'Google orqali davom etish';
+
+  @override
+  String get socialContinueApple => 'Apple orqali davom etish';
+
+  @override
+  String get socialOr => 'yoki';
+
+  @override
+  String get socialNotAvailable => 'Bu kirish usuli hozir mavjud emas. Buning o‘rniga pochtangiz va parolingizdan foydalaning.';
+
+  @override
+  String get socialAccountExists => 'Bu pochtada allaqachon Vaultara hisobi bor. Pochtangiz va parolingiz bilan kiring.';
 }

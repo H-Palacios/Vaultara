@@ -8670,4 +8670,45 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Kontrollin viisareegleid…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Vaata oma e-posti';
+
+  @override
+  String get signUpAlreadyHint => 'Kui sellel e-posti aadressil on juba Vaultara konto, selgitab kiri, mida selle asemel teha.';
+
+  @override
+  String get signUpCodeWrong => 'See kood on vale või aegunud. Vaata Vaultara uusimat kirja või puuduta Saada kood uuesti.';
+
+  @override
+  String get signUpCreatedSignIn => 'Sinu konto on valmis. Mine tagasi ja logi sisse oma e-posti ja parooliga.';
+
+  @override
+  String get signUpResent => 'Saatsime uue kirja.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Kas mõtlesid $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Kontrolli e-posti ja parooli. Unustasid parooli või oled Vaultaras uus?';
+
+  @override
+  String get passwordResetIfAccount => 'Kui sellele e-postile on Vaultara konto, on lähtestamislink teel. Vaata oma postkasti.';
+
+  @override
+  String get socialContinueGoogle => 'Jätka Google\'iga';
+
+  @override
+  String get socialContinueApple => 'Jätka Apple\'iga';
+
+  @override
+  String get socialOr => 'või';
+
+  @override
+  String get socialNotAvailable => 'See sisselogimisviis pole praegu saadaval. Kasuta selle asemel oma e-posti ja parooli.';
+
+  @override
+  String get socialAccountExists => 'Sellel e-postil on juba Vaultara konto. Logi sisse oma e-posti ja parooliga.';
 }

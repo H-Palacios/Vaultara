@@ -8666,4 +8666,45 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'ਵੀਜ਼ਾ ਨਿਯਮਾਂ ਦੀ ਜਾਂਚ ਹੋ ਰਹੀ ਹੈ…';
+
+  @override
+  String get signUpCheckEmailTitle => 'ਆਪਣੀ ਈਮੇਲ ਦੇਖੋ';
+
+  @override
+  String get signUpAlreadyHint => 'ਜੇ ਇਸ ਈਮੇਲ ਦਾ ਪਹਿਲਾਂ ਹੀ Vaultara ਖਾਤਾ ਹੈ, ਤਾਂ ਈਮੇਲ ਵਿੱਚ ਦੱਸਿਆ ਹੋਵੇਗਾ ਕਿ ਇਸ ਦੀ ਬਜਾਏ ਕੀ ਕਰਨਾ ਹੈ।';
+
+  @override
+  String get signUpCodeWrong => 'ਉਹ ਕੋਡ ਗਲਤ ਹੈ ਜਾਂ ਉਸਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਗਈ ਹੈ। Vaultara ਦੀ ਸਭ ਤੋਂ ਨਵੀਂ ਈਮੇਲ ਦੇਖੋ, ਜਾਂ ਕੋਡ ਮੁੜ ਭੇਜੋ \'ਤੇ ਟੈਪ ਕਰੋ।';
+
+  @override
+  String get signUpCreatedSignIn => 'ਤੁਹਾਡਾ ਖਾਤਾ ਤਿਆਰ ਹੈ। ਵਾਪਸ ਜਾਓ ਅਤੇ ਆਪਣੀ ਈਮੇਲ ਅਤੇ ਪਾਸਵਰਡ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋ।';
+
+  @override
+  String get signUpResent => 'ਅਸੀਂ ਨਵੀਂ ਈਮੇਲ ਭੇਜੀ ਹੈ।';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'ਕੀ ਤੁਹਾਡਾ ਮਤਲਬ $email ਸੀ?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'ਈਮੇਲ ਅਤੇ ਪਾਸਵਰਡ ਜਾਂਚੋ। ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ, ਜਾਂ Vaultara \'ਤੇ ਨਵੇਂ ਹੋ?';
+
+  @override
+  String get passwordResetIfAccount => 'ਜੇ ਇਸ ਈਮੇਲ ਲਈ Vaultara ਖਾਤਾ ਹੈ, ਤਾਂ ਰੀਸੈੱਟ ਲਿੰਕ ਆ ਰਿਹਾ ਹੈ। ਆਪਣਾ ਇਨਬਾਕਸ ਦੇਖੋ।';
+
+  @override
+  String get socialContinueGoogle => 'Google ਨਾਲ ਜਾਰੀ ਰੱਖੋ';
+
+  @override
+  String get socialContinueApple => 'Apple ਨਾਲ ਜਾਰੀ ਰੱਖੋ';
+
+  @override
+  String get socialOr => 'ਜਾਂ';
+
+  @override
+  String get socialNotAvailable => 'ਇਹ ਸਾਈਨ ਇਨ ਵਿਕਲਪ ਹੁਣ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਇਸ ਦੀ ਬਜਾਏ ਆਪਣੀ ਈਮੇਲ ਅਤੇ ਪਾਸਵਰਡ ਵਰਤੋ।';
+
+  @override
+  String get socialAccountExists => 'ਇਸ ਈਮੇਲ ਦਾ ਪਹਿਲਾਂ ਹੀ Vaultara ਖਾਤਾ ਹੈ। ਆਪਣੀ ਈਮੇਲ ਅਤੇ ਪਾਸਵਰਡ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋ।';
 }

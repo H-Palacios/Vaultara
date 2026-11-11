@@ -8680,4 +8680,45 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Vérification des règles de visa…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Vérifiez vos e-mails';
+
+  @override
+  String get signUpAlreadyHint => 'Si cette adresse a déjà un compte Vaultara, l\'e-mail explique quoi faire à la place.';
+
+  @override
+  String get signUpCodeWrong => 'Ce code est incorrect ou a expiré. Consultez le dernier e-mail de Vaultara ou touchez Renvoyer le code.';
+
+  @override
+  String get signUpCreatedSignIn => 'Votre compte est prêt. Revenez en arrière et connectez-vous avec votre e-mail et votre mot de passe.';
+
+  @override
+  String get signUpResent => 'Nous avons envoyé un nouvel e-mail.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Vouliez-vous dire $email ?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Vérifiez l\'e-mail et le mot de passe. Mot de passe oublié, ou nouveau sur Vaultara ?';
+
+  @override
+  String get passwordResetIfAccount => 'S\'il existe un compte Vaultara pour cette adresse, un lien de réinitialisation est en route. Consultez votre boîte de réception.';
+
+  @override
+  String get socialContinueGoogle => 'Continuer avec Google';
+
+  @override
+  String get socialContinueApple => 'Continuer avec Apple';
+
+  @override
+  String get socialOr => 'ou';
+
+  @override
+  String get socialNotAvailable => 'Cette option de connexion n\'est pas disponible pour le moment. Utilisez plutôt votre e-mail et votre mot de passe.';
+
+  @override
+  String get socialAccountExists => 'Cette adresse a déjà un compte Vaultara. Connectez-vous avec votre e-mail et votre mot de passe.';
 }

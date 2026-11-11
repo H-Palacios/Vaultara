@@ -3234,5 +3234,25 @@
   "assistantRestoreNote": "سابقه و یادآوری‌هایش برمی‌گردند.",
   "assistantStepCategories": "در حال بررسی دسته‌های شما…",
   "assistantStepCosts": "در حال جمع زدن هزینه‌های تمدید…",
-  "assistantStepVisa": "در حال بررسی قوانین ویزا…"
+  "assistantStepVisa": "در حال بررسی قوانین ویزا…",
+  "signUpCheckEmailTitle": "ایمیل خود را بررسی کنید",
+  "signUpAlreadyHint": "اگر این ایمیل از قبل حساب Vaultara دارد، ایمیل توضیح می‌دهد که به‌جای آن چه کار کنید.",
+  "signUpCodeWrong": "این کد اشتباه است یا منقضی شده. جدیدترین ایمیل Vaultara را بررسی کنید یا روی ارسال مجدد کد بزنید.",
+  "signUpCreatedSignIn": "حساب شما آماده است. برگردید و با ایمیل و رمز عبور خود وارد شوید.",
+  "signUpResent": "یک ایمیل جدید فرستادیم.",
+  "emailDidYouMean": "منظورتان {email} بود؟",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ایمیل و رمز عبور را بررسی کنید. رمز عبور را فراموش کرده‌اید، یا در Vaultara تازه‌وارد هستید؟",
+  "passwordResetIfAccount": "اگر برای این ایمیل حساب Vaultara وجود داشته باشد، پیوند بازنشانی در راه است. صندوق ورودی خود را بررسی کنید.",
+  "socialContinueGoogle": "ادامه با Google",
+  "socialContinueApple": "ادامه با Apple",
+  "socialOr": "یا",
+  "socialNotAvailable": "این روش ورود اکنون در دسترس نیست. به‌جای آن از ایمیل و رمز عبور خود استفاده کنید.",
+  "socialAccountExists": "این ایمیل از قبل حساب Vaultara دارد. با ایمیل و رمز عبور خود وارد شوید."
 }

@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Wpis i jego przypomnienia wracają.",
   "assistantStepCategories": "Sprawdzanie kategorii…",
   "assistantStepCosts": "Sumowanie kosztów odnowienia…",
-  "assistantStepVisa": "Sprawdzanie zasad wizowych…"
+  "assistantStepVisa": "Sprawdzanie zasad wizowych…",
+  "signUpCheckEmailTitle": "Sprawdź pocztę",
+  "signUpAlreadyHint": "Jeśli ten adres ma już konto Vaultara, e-mail wyjaśnia, co zrobić zamiast tego.",
+  "signUpCodeWrong": "Ten kod jest błędny lub wygasł. Sprawdź najnowszego e-maila od Vaultary albo dotknij Wyślij kod ponownie.",
+  "signUpCreatedSignIn": "Twoje konto jest gotowe. Wróć i zaloguj się adresem e-mail i hasłem.",
+  "signUpResent": "Wysłaliśmy nowego e-maila.",
+  "emailDidYouMean": "Czy chodziło Ci o {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Sprawdź adres e-mail i hasło. Nie pamiętasz hasła albo dopiero zaczynasz z Vaultarą?",
+  "passwordResetIfAccount": "Jeśli dla tego adresu istnieje konto Vaultara, link do zresetowania hasła jest w drodze. Sprawdź skrzynkę odbiorczą.",
+  "socialContinueGoogle": "Kontynuuj z Google",
+  "socialContinueApple": "Kontynuuj z Apple",
+  "socialOr": "lub",
+  "socialNotAvailable": "Ten sposób logowania jest teraz niedostępny. Zamiast tego użyj adresu e-mail i hasła.",
+  "socialAccountExists": "Ten adres ma już konto Vaultara. Zaloguj się adresem e-mail i hasłem."
 }

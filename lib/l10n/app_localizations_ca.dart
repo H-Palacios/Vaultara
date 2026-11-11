@@ -8670,4 +8670,45 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'S\'estan comprovant les normes de visat…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Revisa el correu';
+
+  @override
+  String get signUpAlreadyHint => 'Si aquest correu ja té un compte de Vaultara, el missatge explica què has de fer.';
+
+  @override
+  String get signUpCodeWrong => 'Aquest codi és incorrecte o ha caducat. Revisa el correu més recent de Vaultara o toca Torna a enviar el codi.';
+
+  @override
+  String get signUpCreatedSignIn => 'El teu compte està a punt. Torna enrere i inicia la sessió amb el correu i la contrasenya.';
+
+  @override
+  String get signUpResent => 'T\'hem enviat un correu nou.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Volies dir $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Comprova el correu i la contrasenya. Has oblidat la contrasenya o ets nou a Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Si hi ha un compte de Vaultara per a aquest correu, t\'arribarà un enllaç per restablir la contrasenya. Revisa la safata d\'entrada.';
+
+  @override
+  String get socialContinueGoogle => 'Continua amb Google';
+
+  @override
+  String get socialContinueApple => 'Continua amb Apple';
+
+  @override
+  String get socialOr => 'o';
+
+  @override
+  String get socialNotAvailable => 'Aquesta opció d\'inici de sessió no està disponible ara mateix. Fes servir el correu i la contrasenya.';
+
+  @override
+  String get socialAccountExists => 'Aquest correu ja té un compte de Vaultara. Inicia la sessió amb el correu i la contrasenya.';
 }

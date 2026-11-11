@@ -8614,4 +8614,45 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Ń ṣàyẹ̀wò àwọn òfin físà…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Ṣàyẹ̀wò ímeèlì rẹ';
+
+  @override
+  String get signUpAlreadyHint => 'Bí ímeèlì yìí bá ti ní àkáǹtì Vaultara tẹ́lẹ̀, ímeèlì náà yóò ṣàlàyé ohun tí o lè ṣe dípò bẹ́ẹ̀.';
+
+  @override
+  String get signUpCodeWrong => 'Kóòdù yẹn kò tọ̀nà tàbí ó ti parí. Ṣàyẹ̀wò ímeèlì tuntun jùlọ láti Vaultara, tàbí tẹ Tun koodu ranse.';
+
+  @override
+  String get signUpCreatedSignIn => 'Àkáǹtì rẹ ti ṣetán. Padà sẹ́yìn kí o wọlé pẹ̀lú ímeèlì àti ọ̀rọ̀ aṣínà rẹ.';
+
+  @override
+  String get signUpResent => 'A ti fi ímeèlì tuntun ránṣẹ́.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Ṣé $email ni o ní lọ́kàn?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Ṣàyẹ̀wò ímeèlì àti ọ̀rọ̀ aṣínà. Ṣé o gbàgbé ọ̀rọ̀ aṣínà rẹ, tàbí o jẹ́ tuntun sí Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Bí àkáǹtì Vaultara bá wà fún ímeèlì yìí, ìjápọ̀ àtúntò ń bọ̀. Ṣàyẹ̀wò àpótí ìwọlé rẹ.';
+
+  @override
+  String get socialContinueGoogle => 'Tẹ̀síwájú pẹ̀lú Google';
+
+  @override
+  String get socialContinueApple => 'Tẹ̀síwájú pẹ̀lú Apple';
+
+  @override
+  String get socialOr => 'tàbí';
+
+  @override
+  String get socialNotAvailable => 'Ọ̀nà ìwọlé yìí kò sí báyìí. Lo ímeèlì àti ọ̀rọ̀ aṣínà rẹ dípò rẹ̀.';
+
+  @override
+  String get socialAccountExists => 'Ímeèlì yìí ti ní àkáǹtì Vaultara tẹ́lẹ̀. Wọlé pẹ̀lú ímeèlì àti ọ̀rọ̀ aṣínà rẹ.';
 }

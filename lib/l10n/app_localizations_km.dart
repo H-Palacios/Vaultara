@@ -8600,4 +8600,45 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'កំពុងពិនិត្យច្បាប់ទិដ្ឋាការ…';
+
+  @override
+  String get signUpCheckEmailTitle => 'ពិនិត្យអ៊ីមែលរបស់អ្នក';
+
+  @override
+  String get signUpAlreadyHint => 'ប្រសិនបើអ៊ីមែលនេះមានគណនី Vaultara រួចហើយ អ៊ីមែលនឹងពន្យល់ពីអ្វីដែលត្រូវធ្វើជំនួសវិញ។';
+
+  @override
+  String get signUpCodeWrong => 'លេខកូដនោះមិនត្រឹមត្រូវ ឬផុតកំណត់ហើយ។ សូមពិនិត្យអ៊ីមែលចុងក្រោយពី Vaultara ឬចុច ផ្ញើលេខកូដម្ដងទៀត។';
+
+  @override
+  String get signUpCreatedSignIn => 'គណនីរបស់អ្នករួចរាល់ហើយ។ សូមត្រឡប់ក្រោយ ហើយចូលដោយប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។';
+
+  @override
+  String get signUpResent => 'យើងបានផ្ញើអ៊ីមែលថ្មី។';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'តើអ្នកចង់និយាយថា $email មែនទេ?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'សូមពិនិត្យអ៊ីមែល និងពាក្យសម្ងាត់។ ភ្លេចពាក្យសម្ងាត់ ឬទើបមកប្រើ Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'ប្រសិនបើមានគណនី Vaultara សម្រាប់អ៊ីមែលនេះ តំណកំណត់ឡើងវិញកំពុងផ្ញើមក។ សូមពិនិត្យប្រអប់សំបុត្រ។';
+
+  @override
+  String get socialContinueGoogle => 'បន្តជាមួយ Google';
+
+  @override
+  String get socialContinueApple => 'បន្តជាមួយ Apple';
+
+  @override
+  String get socialOr => 'ឬ';
+
+  @override
+  String get socialNotAvailable => 'ជម្រើសចូលនេះមិនអាចប្រើបានឥឡូវនេះទេ។ សូមប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នកជំនួសវិញ។';
+
+  @override
+  String get socialAccountExists => 'អ៊ីមែលនេះមានគណនី Vaultara រួចហើយ។ សូមចូលដោយប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។';
 }

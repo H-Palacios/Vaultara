@@ -3227,5 +3227,25 @@
   "assistantRestoreNote": "Ndekọ ahụ na ihe ncheta ya na-alọghachi.",
   "assistantStepCategories": "Na-elele ụdị gị…",
   "assistantStepCosts": "Na-agbakọ ego mmeghari ọhụrụ…",
-  "assistantStepVisa": "Na-elele iwu visa…"
+  "assistantStepVisa": "Na-elele iwu visa…",
+  "signUpCheckEmailTitle": "Lelee email gị",
+  "signUpAlreadyHint": "Ọ bụrụ na email a nwere akaụntụ Vaultara, email ahụ ga-akọwa ihe ị ga-eme kama nke ahụ.",
+  "signUpCodeWrong": "Koodu ahụ ezighi ezi ma ọ bụ agwụla. Lelee email kachasị ọhụrụ sitere na Vaultara, ma ọ bụ pịa Zipụgharịa nọmba.",
+  "signUpCreatedSignIn": "Akaụntụ gị adịla njikere. Laghachi ma banye site na email na paswọọdụ gị.",
+  "signUpResent": "Anyị zipụrụ email ọhụrụ.",
+  "emailDidYouMean": "Ị pụtara {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Lelee email na paswọọdụ. Ichefuru paswọọdụ gị, ka ị bụ onye ọhụrụ na Vaultara?",
+  "passwordResetIfAccount": "Ọ bụrụ na e nwere akaụntụ Vaultara maka email a, njikọ ntọgharị na-abịa. Lelee igbe ozi gị.",
+  "socialContinueGoogle": "Gaa n'ihu na Google",
+  "socialContinueApple": "Gaa n'ihu na Apple",
+  "socialOr": "ma ọ bụ",
+  "socialNotAvailable": "Ụzọ mbanye a adịghị ugbu a. Jiri email na paswọọdụ gị kama.",
+  "socialAccountExists": "Email a nwere akaụntụ Vaultara. Banye site na email na paswọọdụ gị."
 }

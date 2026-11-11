@@ -3236,5 +3236,25 @@
   "assistantRestoreNote": "Գրառումը և դրա հիշեցումները վերադառնում են։",
   "assistantStepCategories": "Ստուգում ենք ձեր կատեգորիաները…",
   "assistantStepCosts": "Հաշվում ենք թարմացման ծախսերը…",
-  "assistantStepVisa": "Ստուգում ենք վիզայի կանոնները…"
+  "assistantStepVisa": "Ստուգում ենք վիզայի կանոնները…",
+  "signUpCheckEmailTitle": "Ստուգեք ձեր էլ. փոստը",
+  "signUpAlreadyHint": "Եթե այս էլ. հասցեն արդեն ունի Vaultara հաշիվ, նամակում բացատրված է, թե փոխարենն ինչ անել։",
+  "signUpCodeWrong": "Այդ կոդը սխալ է կամ ժամկետանց։ Ստուգեք Vaultara-ի ամենավերջին նամակը կամ հպեք Վերաուղարկել կոդը։",
+  "signUpCreatedSignIn": "Ձեր հաշիվը պատրաստ է։ Վերադարձեք և մուտք գործեք ձեր էլ. հասցեով ու գաղտնաբառով։",
+  "signUpResent": "Մենք նոր նամակ ուղարկեցինք։",
+  "emailDidYouMean": "Նկատի ունեի՞ք {email}",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Ստուգեք էլ. հասցեն և գաղտնաբառը։ Մոռացե՞լ եք գաղտնաբառը, թե՞ նոր եք Vaultara-ում։",
+  "passwordResetIfAccount": "Եթե այս էլ. հասցեի համար Vaultara հաշիվ կա, վերակայման հղումը ճանապարհին է։ Ստուգեք մուտքի արկղը։",
+  "socialContinueGoogle": "Շարունակել Google-ով",
+  "socialContinueApple": "Շարունակել Apple-ով",
+  "socialOr": "կամ",
+  "socialNotAvailable": "Մուտքի այս տարբերակը հիմա հասանելի չէ։ Փոխարենն օգտագործեք ձեր էլ. հասցեն և գաղտնաբառը։",
+  "socialAccountExists": "Այս էլ. հասցեն արդեն ունի Vaultara հաշիվ։ Մուտք գործեք ձեր էլ. հասցեով ու գաղտնաբառով։"
 }

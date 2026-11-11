@@ -8670,4 +8670,45 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Tjekker visumregler…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Tjek din e-mail';
+
+  @override
+  String get signUpAlreadyHint => 'Hvis denne e-mail allerede har en Vaultara-konto, forklarer e-mailen, hvad du skal gøre i stedet.';
+
+  @override
+  String get signUpCodeWrong => 'Den kode er forkert eller udløbet. Tjek den nyeste e-mail fra Vaultara, eller tryk på Send kode igen.';
+
+  @override
+  String get signUpCreatedSignIn => 'Din konto er klar. Gå tilbage, og log ind med din e-mail og adgangskode.';
+
+  @override
+  String get signUpResent => 'Vi har sendt en ny e-mail.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Mente du $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Tjek e-mail og adgangskode. Har du glemt din adgangskode, eller er du ny i Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Hvis der er en Vaultara-konto til denne e-mail, er et link til nulstilling på vej. Tjek din indbakke.';
+
+  @override
+  String get socialContinueGoogle => 'Fortsæt med Google';
+
+  @override
+  String get socialContinueApple => 'Fortsæt med Apple';
+
+  @override
+  String get socialOr => 'eller';
+
+  @override
+  String get socialNotAvailable => 'Denne loginmulighed er ikke tilgængelig lige nu. Brug din e-mail og adgangskode i stedet.';
+
+  @override
+  String get socialAccountExists => 'Denne e-mail har allerede en Vaultara-konto. Log ind med din e-mail og adgangskode.';
 }

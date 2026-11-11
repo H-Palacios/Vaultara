@@ -8751,4 +8751,45 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Se verifică regulile de viză…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Verifică-ți e-mailul';
+
+  @override
+  String get signUpAlreadyHint => 'Dacă acest e-mail are deja un cont Vaultara, mesajul explică ce să faci în schimb.';
+
+  @override
+  String get signUpCodeWrong => 'Codul este greșit sau a expirat. Verifică cel mai nou e-mail de la Vaultara sau atinge Retrimite codul.';
+
+  @override
+  String get signUpCreatedSignIn => 'Contul tău este gata. Întoarce-te și conectează-te cu e-mailul și parola.';
+
+  @override
+  String get signUpResent => 'Am trimis un e-mail nou.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Te refereai la $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Verifică e-mailul și parola. Ți-ai uitat parola sau ești nou în Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Dacă există un cont Vaultara pentru acest e-mail, un link de resetare e pe drum. Verifică-ți căsuța de e-mail.';
+
+  @override
+  String get socialContinueGoogle => 'Continuă cu Google';
+
+  @override
+  String get socialContinueApple => 'Continuă cu Apple';
+
+  @override
+  String get socialOr => 'sau';
+
+  @override
+  String get socialNotAvailable => 'Această opțiune de conectare nu este disponibilă acum. Folosește în schimb e-mailul și parola.';
+
+  @override
+  String get socialAccountExists => 'Acest e-mail are deja un cont Vaultara. Conectează-te cu e-mailul și parola.';
 }

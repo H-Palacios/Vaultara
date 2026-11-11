@@ -3260,5 +3260,25 @@
   "assistantRestoreNote": "سيعود السجل وتذكيراته.",
   "assistantStepCategories": "جارٍ التحقق من فئاتك…",
   "assistantStepCosts": "جارٍ حساب تكاليف التجديد…",
-  "assistantStepVisa": "جارٍ التحقق من قواعد التأشيرة…"
+  "assistantStepVisa": "جارٍ التحقق من قواعد التأشيرة…",
+  "signUpCheckEmailTitle": "تحقق من بريدك الإلكتروني",
+  "signUpAlreadyHint": "إذا كان لهذا البريد حساب في Vaultara بالفعل، فستشرح الرسالة ما يجب فعله بدلًا من ذلك.",
+  "signUpCodeWrong": "هذا الرمز غير صحيح أو انتهت صلاحيته. تحقق من أحدث رسالة من Vaultara، أو اضغط على إعادة إرسال الرمز.",
+  "signUpCreatedSignIn": "حسابك جاهز. ارجع وسجّل الدخول ببريدك الإلكتروني وكلمة المرور.",
+  "signUpResent": "أرسلنا رسالة جديدة.",
+  "emailDidYouMean": "هل تقصد {email}؟",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "تحقق من البريد الإلكتروني وكلمة المرور. هل نسيت كلمة المرور، أم أنك جديد على Vaultara؟",
+  "passwordResetIfAccount": "إذا كان هناك حساب Vaultara لهذا البريد، فإن رابط إعادة التعيين في الطريق. تحقق من صندوق الوارد.",
+  "socialContinueGoogle": "المتابعة باستخدام Google",
+  "socialContinueApple": "المتابعة باستخدام Apple",
+  "socialOr": "أو",
+  "socialNotAvailable": "خيار تسجيل الدخول هذا غير متاح الآن. استخدم بريدك الإلكتروني وكلمة المرور بدلًا منه.",
+  "socialAccountExists": "لهذا البريد حساب في Vaultara بالفعل. سجّل الدخول ببريدك الإلكتروني وكلمة المرور."
 }

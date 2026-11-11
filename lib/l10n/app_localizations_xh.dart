@@ -8666,4 +8666,45 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Kujongwa imigaqo yevisa…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Jonga i-imeyile yakho';
+
+  @override
+  String get signUpAlreadyHint => 'Ukuba le imeyile sele ine-akhawunti ye-Vaultara, i-imeyile iza kuchaza into omawuyenze endaweni yoko.';
+
+  @override
+  String get signUpCodeWrong => 'Loo khowudi ayichanekanga okanye iphelelwe lixesha. Jonga i-imeyile entsha evela kwi-Vaultara, okanye ucofe uThumela ikhowudi kwakhona.';
+
+  @override
+  String get signUpCreatedSignIn => 'I-akhawunti yakho ilungile. Buyela umva ungene nge-imeyile negama lokugqitha lakho.';
+
+  @override
+  String get signUpResent => 'Sithumele i-imeyile entsha.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Ubuthetha u-$email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Jonga i-imeyile negama lokugqitha. Ulibele igama lokugqitha, okanye umtsha kwi-Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Ukuba kukho i-akhawunti ye-Vaultara yale imeyile, ikhonkco lokuseta kwakhona liyeza. Jonga ibhokisi yakho yokungenayo.';
+
+  @override
+  String get socialContinueGoogle => 'Qhubeka nge-Google';
+
+  @override
+  String get socialContinueApple => 'Qhubeka nge-Apple';
+
+  @override
+  String get socialOr => 'okanye';
+
+  @override
+  String get socialNotAvailable => 'Le ndlela yokungena ayifumaneki okwangoku. Sebenzisa i-imeyile negama lokugqitha lakho endaweni yoko.';
+
+  @override
+  String get socialAccountExists => 'Le imeyile sele ine-akhawunti ye-Vaultara. Ngena nge-imeyile negama lokugqitha lakho.';
 }

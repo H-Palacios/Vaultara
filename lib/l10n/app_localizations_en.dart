@@ -8685,4 +8685,45 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Checking visa rules…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Check your email';
+
+  @override
+  String get signUpAlreadyHint => 'If this email already has a Vaultara account, the email explains what to do instead.';
+
+  @override
+  String get signUpCodeWrong => 'That code is wrong or has expired. Check the newest email from Vaultara, or tap Resend code.';
+
+  @override
+  String get signUpCreatedSignIn => 'Your account is ready. Go back and sign in with your email and password.';
+
+  @override
+  String get signUpResent => 'We sent a new email.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Did you mean $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Check the email and password. Forgot your password, or new to Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'If there\'s a Vaultara account for this email, a reset link is on its way. Check your inbox.';
+
+  @override
+  String get socialContinueGoogle => 'Continue with Google';
+
+  @override
+  String get socialContinueApple => 'Continue with Apple';
+
+  @override
+  String get socialOr => 'or';
+
+  @override
+  String get socialNotAvailable => 'This sign-in option isn\'t available right now. Use your email and password instead.';
+
+  @override
+  String get socialAccountExists => 'This email already has a Vaultara account. Sign in with your email and password.';
 }

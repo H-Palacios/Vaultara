@@ -8820,4 +8820,45 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Tikrinamos vizų taisyklės…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Patikrinkite el. paštą';
+
+  @override
+  String get signUpAlreadyHint => 'Jei šis el. paštas jau turi Vaultara paskyrą, laiške paaiškinta, ką daryti vietoj to.';
+
+  @override
+  String get signUpCodeWrong => 'Šis kodas neteisingas arba nebegalioja. Patikrinkite naujausią Vaultara laišką arba palieskite Siųsti kodą iš naujo.';
+
+  @override
+  String get signUpCreatedSignIn => 'Jūsų paskyra paruošta. Grįžkite ir prisijunkite el. paštu ir slaptažodžiu.';
+
+  @override
+  String get signUpResent => 'Išsiuntėme naują laišką.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Ar turėjote omenyje $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Patikrinkite el. paštą ir slaptažodį. Pamiršote slaptažodį ar esate naujas Vaultara naudotojas?';
+
+  @override
+  String get passwordResetIfAccount => 'Jei šiam el. paštui yra Vaultara paskyra, atkūrimo nuoroda jau keliauja. Patikrinkite gautus laiškus.';
+
+  @override
+  String get socialContinueGoogle => 'Tęsti su Google';
+
+  @override
+  String get socialContinueApple => 'Tęsti su Apple';
+
+  @override
+  String get socialOr => 'arba';
+
+  @override
+  String get socialNotAvailable => 'Šis prisijungimo būdas šiuo metu nepasiekiamas. Vietoj to naudokite el. paštą ir slaptažodį.';
+
+  @override
+  String get socialAccountExists => 'Šis el. paštas jau turi Vaultara paskyrą. Prisijunkite el. paštu ir slaptažodžiu.';
 }

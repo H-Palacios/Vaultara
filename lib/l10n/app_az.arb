@@ -2972,5 +2972,25 @@
   "assistantRestoreNote": "Qeyd və onun xatırlatmaları geri qayıdır.",
   "assistantStepCategories": "Kateqoriyalarınız yoxlanılır…",
   "assistantStepCosts": "Yeniləmə xərcləri hesablanır…",
-  "assistantStepVisa": "Viza qaydaları yoxlanılır…"
+  "assistantStepVisa": "Viza qaydaları yoxlanılır…",
+  "signUpCheckEmailTitle": "E-poçtunuzu yoxlayın",
+  "signUpAlreadyHint": "Bu e-poçtun artıq Vaultara hesabı varsa, məktub bunun əvəzinə nə etməli olduğunuzu izah edir.",
+  "signUpCodeWrong": "Bu kod səhvdir və ya müddəti bitib. Vaultara-dan gələn ən yeni məktuba baxın və ya Kodu yenidən göndər düyməsinə toxunun.",
+  "signUpCreatedSignIn": "Hesabınız hazırdır. Geri qayıdın və e-poçt və parolunuzla daxil olun.",
+  "signUpResent": "Yeni məktub göndərdik.",
+  "emailDidYouMean": "{email} nəzərdə tuturdunuz?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "E-poçtu və parolu yoxlayın. Parolu unutmusunuz, yoxsa Vaultara-da yenisiniz?",
+  "passwordResetIfAccount": "Bu e-poçt üçün Vaultara hesabı varsa, sıfırlama linki yoldadır. Gələnlər qutunuzu yoxlayın.",
+  "socialContinueGoogle": "Google ilə davam et",
+  "socialContinueApple": "Apple ilə davam et",
+  "socialOr": "və ya",
+  "socialNotAvailable": "Bu giriş seçimi hazırda əlçatan deyil. Bunun əvəzinə e-poçt və parolunuzdan istifadə edin.",
+  "socialAccountExists": "Bu e-poçtun artıq Vaultara hesabı var. E-poçt və parolunuzla daxil olun."
 }

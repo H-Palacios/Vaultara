@@ -8670,4 +8670,45 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Έλεγχος κανόνων βίζας…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Ελέγξτε το email σας';
+
+  @override
+  String get signUpAlreadyHint => 'Αν αυτό το email έχει ήδη λογαριασμό Vaultara, το μήνυμα εξηγεί τι να κάνετε αντί γι\' αυτό.';
+
+  @override
+  String get signUpCodeWrong => 'Αυτός ο κωδικός είναι λάθος ή έχει λήξει. Δείτε το πιο πρόσφατο email από το Vaultara ή πατήστε Επαναποστολή κωδικού.';
+
+  @override
+  String get signUpCreatedSignIn => 'Ο λογαριασμός σας είναι έτοιμος. Επιστρέψτε και συνδεθείτε με το email και τον κωδικό πρόσβασής σας.';
+
+  @override
+  String get signUpResent => 'Στείλαμε νέο email.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Μήπως εννοείτε $email;';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Ελέγξτε το email και τον κωδικό πρόσβασης. Ξεχάσατε τον κωδικό σας ή είστε νέοι στο Vaultara;';
+
+  @override
+  String get passwordResetIfAccount => 'Αν υπάρχει λογαριασμός Vaultara για αυτό το email, ένας σύνδεσμος επαναφοράς είναι καθ\' οδόν. Ελέγξτε τα εισερχόμενά σας.';
+
+  @override
+  String get socialContinueGoogle => 'Συνέχεια με Google';
+
+  @override
+  String get socialContinueApple => 'Συνέχεια με Apple';
+
+  @override
+  String get socialOr => 'ή';
+
+  @override
+  String get socialNotAvailable => 'Αυτή η επιλογή σύνδεσης δεν είναι διαθέσιμη τώρα. Χρησιμοποιήστε το email και τον κωδικό πρόσβασής σας.';
+
+  @override
+  String get socialAccountExists => 'Αυτό το email έχει ήδη λογαριασμό Vaultara. Συνδεθείτε με το email και τον κωδικό πρόσβασής σας.';
 }

@@ -3234,5 +3234,25 @@
   "assistantRestoreNote": "記録とそのリマインダーが元に戻ります。",
   "assistantStepCategories": "カテゴリを確認しています…",
   "assistantStepCosts": "更新費用を計算しています…",
-  "assistantStepVisa": "ビザの規則を確認しています…"
+  "assistantStepVisa": "ビザの規則を確認しています…",
+  "signUpCheckEmailTitle": "メールを確認してください",
+  "signUpAlreadyHint": "このメールアドレスにすでに Vaultara アカウントがある場合は、どうすればよいかがメールに書かれています。",
+  "signUpCodeWrong": "コードが正しくないか、有効期限が切れています。Vaultara からの最新のメールを確認するか、「コードを再送」をタップしてください。",
+  "signUpCreatedSignIn": "アカウントの準備ができました。戻ってメールアドレスとパスワードでログインしてください。",
+  "signUpResent": "新しいメールを送信しました。",
+  "emailDidYouMean": "{email} ではありませんか？",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "メールアドレスとパスワードを確認してください。パスワードをお忘れですか？Vaultara は初めてですか？",
+  "passwordResetIfAccount": "このメールアドレスの Vaultara アカウントがある場合は、リセット用のリンクをお送りします。受信トレイを確認してください。",
+  "socialContinueGoogle": "Google で続ける",
+  "socialContinueApple": "Apple で続ける",
+  "socialOr": "または",
+  "socialNotAvailable": "このログイン方法は現在ご利用いただけません。メールアドレスとパスワードをお使いください。",
+  "socialAccountExists": "このメールアドレスにはすでに Vaultara アカウントがあります。メールアドレスとパスワードでログインしてください。"
 }

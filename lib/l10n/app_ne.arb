@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "रेकर्ड र यसका रिमाइन्डरहरू फर्किन्छन्।",
   "assistantStepCategories": "तपाईंका श्रेणीहरू जाँच गर्दै…",
   "assistantStepCosts": "नवीकरण खर्च जोड्दै…",
-  "assistantStepVisa": "भिसा नियमहरू जाँच गर्दै…"
+  "assistantStepVisa": "भिसा नियमहरू जाँच गर्दै…",
+  "signUpCheckEmailTitle": "आफ्नो इमेल हेर्नुहोस्",
+  "signUpAlreadyHint": "यो इमेलको पहिले नै Vaultara खाता छ भने, त्यसको सट्टा के गर्ने भनेर इमेलमा बताइएको हुन्छ।",
+  "signUpCodeWrong": "त्यो कोड गलत छ वा म्याद सकिएको छ। Vaultara को सबैभन्दा नयाँ इमेल हेर्नुहोस्, वा कोड पुनः पठाउनुहोस् मा ट्याप गर्नुहोस्।",
+  "signUpCreatedSignIn": "तपाईंको खाता तयार छ। फर्केर आफ्नो इमेल र पासवर्डबाट साइन इन गर्नुहोस्।",
+  "signUpResent": "हामीले नयाँ इमेल पठायौं।",
+  "emailDidYouMean": "के तपाईंले {email} भन्न खोज्नुभएको हो?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "इमेल र पासवर्ड जाँच गर्नुहोस्। पासवर्ड बिर्सनुभयो, वा Vaultara मा नयाँ हुनुहुन्छ?",
+  "passwordResetIfAccount": "यो इमेलका लागि Vaultara खाता छ भने, रिसेट लिंक आउँदैछ। आफ्नो इनबक्स हेर्नुहोस्।",
+  "socialContinueGoogle": "Google मार्फत जारी राख्नुहोस्",
+  "socialContinueApple": "Apple मार्फत जारी राख्नुहोस्",
+  "socialOr": "वा",
+  "socialNotAvailable": "यो साइन इन विकल्प अहिले उपलब्ध छैन। यसको सट्टा आफ्नो इमेल र पासवर्ड प्रयोग गर्नुहोस्।",
+  "socialAccountExists": "यो इमेलको पहिले नै Vaultara खाता छ। आफ्नो इमेल र पासवर्डबाट साइन इन गर्नुहोस्।"
 }

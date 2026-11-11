@@ -8670,4 +8670,45 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Kyk na visumreëls…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Kyk na jou e-pos';
+
+  @override
+  String get signUpAlreadyHint => 'As hierdie e-posadres reeds \'n Vaultara-rekening het, verduidelik die e-pos wat om eerder te doen.';
+
+  @override
+  String get signUpCodeWrong => 'Daardie kode is verkeerd of het verval. Kyk na die nuutste e-pos van Vaultara, of tik Stuur kode weer.';
+
+  @override
+  String get signUpCreatedSignIn => 'Jou rekening is gereed. Gaan terug en meld aan met jou e-pos en wagwoord.';
+
+  @override
+  String get signUpResent => 'Ons het \'n nuwe e-pos gestuur.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Het jy $email bedoel?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Kontroleer die e-pos en wagwoord. Wagwoord vergeet, of nuut by Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'As daar \'n Vaultara-rekening vir hierdie e-pos is, is \'n terugstelskakel op pad. Kyk in jou inkassie.';
+
+  @override
+  String get socialContinueGoogle => 'Gaan voort met Google';
+
+  @override
+  String get socialContinueApple => 'Gaan voort met Apple';
+
+  @override
+  String get socialOr => 'of';
+
+  @override
+  String get socialNotAvailable => 'Hierdie aanmeldopsie is nie nou beskikbaar nie. Gebruik eerder jou e-pos en wagwoord.';
+
+  @override
+  String get socialAccountExists => 'Hierdie e-pos het reeds \'n Vaultara-rekening. Meld aan met jou e-pos en wagwoord.';
 }

@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "ບັນທຶກ ແລະ ການເຕືອນຂອງມັນຈະກັບຄືນມາ.",
   "assistantStepCategories": "ກຳລັງກວດໝວດໝູ່ຂອງທ່ານ…",
   "assistantStepCosts": "ກຳລັງລວມຄ່າຕໍ່ອາຍຸ…",
-  "assistantStepVisa": "ກຳລັງກວດກົດວີຊາ…"
+  "assistantStepVisa": "ກຳລັງກວດກົດວີຊາ…",
+  "signUpCheckEmailTitle": "ກວດເບິ່ງອີເມວຂອງທ່ານ",
+  "signUpAlreadyHint": "ຖ້າອີເມວນີ້ມີບັນຊີ Vaultara ຢູ່ແລ້ວ, ອີເມວຈະອະທິບາຍວ່າຄວນເຮັດແນວໃດແທນ.",
+  "signUpCodeWrong": "ລະຫັດນັ້ນບໍ່ຖືກຕ້ອງ ຫຼື ໝົດອາຍຸແລ້ວ. ກວດເບິ່ງອີເມວລ່າສຸດຈາກ Vaultara ຫຼື ແຕະ ສົ່ງລະຫັດອີກຄັ້ງ.",
+  "signUpCreatedSignIn": "ບັນຊີຂອງທ່ານພ້ອມແລ້ວ. ກັບຄືນ ແລະ ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວ ແລະ ລະຫັດຜ່ານຂອງທ່ານ.",
+  "signUpResent": "ພວກເຮົາສົ່ງອີເມວໃໝ່ແລ້ວ.",
+  "emailDidYouMean": "ທ່ານໝາຍເຖິງ {email} ບໍ?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ກວດເບິ່ງອີເມວ ແລະ ລະຫັດຜ່ານ. ລືມລະຫັດຜ່ານ ຫຼື ເປັນຜູ້ໃຊ້ໃໝ່ຂອງ Vaultara?",
+  "passwordResetIfAccount": "ຖ້າມີບັນຊີ Vaultara ສຳລັບອີເມວນີ້, ລິ້ງຕັ້ງຄ່າໃໝ່ກຳລັງສົ່ງມາ. ກວດເບິ່ງກ່ອງຈົດໝາຍ.",
+  "socialContinueGoogle": "ສືບຕໍ່ດ້ວຍ Google",
+  "socialContinueApple": "ສືບຕໍ່ດ້ວຍ Apple",
+  "socialOr": "ຫຼື",
+  "socialNotAvailable": "ຕົວເລືອກການເຂົ້າສູ່ລະບົບນີ້ບໍ່ມີໃຫ້ໃຊ້ຕອນນີ້. ໃຊ້ອີເມວ ແລະ ລະຫັດຜ່ານຂອງທ່ານແທນ.",
+  "socialAccountExists": "ອີເມວນີ້ມີບັນຊີ Vaultara ຢູ່ແລ້ວ. ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວ ແລະ ລະຫັດຜ່ານຂອງທ່ານ."
 }

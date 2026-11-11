@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "Жазуу жана анын эскертмелери кайтып келет.",
   "assistantStepCategories": "Категорияларыңыз текшерилүүдө…",
   "assistantStepCosts": "Жаңыртуу чыгымдары эсептелүүдө…",
-  "assistantStepVisa": "Виза эрежелери текшерилүүдө…"
+  "assistantStepVisa": "Виза эрежелери текшерилүүдө…",
+  "signUpCheckEmailTitle": "Электрондук почтаңызды текшериңиз",
+  "signUpAlreadyHint": "Эгер бул почтанын Vaultara аккаунту мурунтан бар болсо, катта анын ордуна эмне кылуу керектиги түшүндүрүлөт.",
+  "signUpCodeWrong": "Бул код туура эмес же мөөнөтү өткөн. Vaultara'дан келген эң жаңы катты текшериңиз же Кодду кайра жөнөтүү баскычын басыңыз.",
+  "signUpCreatedSignIn": "Аккаунтуңуз даяр. Артка кайтып, почтаңыз жана сырсөзүңүз менен кириңиз.",
+  "signUpResent": "Жаңы кат жөнөттүк.",
+  "emailDidYouMean": "{email} дегиңиз келдиби?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Почта менен сырсөздү текшериңиз. Сырсөздү унуттуңузбу же Vaultara'да жаңысызбы?",
+  "passwordResetIfAccount": "Бул почта үчүн Vaultara аккаунту бар болсо, калыбына келтирүү шилтемеси жолдо. Кирүү кутуңузду текшериңиз.",
+  "socialContinueGoogle": "Google менен улантуу",
+  "socialContinueApple": "Apple менен улантуу",
+  "socialOr": "же",
+  "socialNotAvailable": "Бул кирүү ыкмасы азыр жеткиликсиз. Анын ордуна почтаңызды жана сырсөзүңүздү колдонуңуз.",
+  "socialAccountExists": "Бул почтанын Vaultara аккаунту мурунтан бар. Почтаңыз жана сырсөзүңүз менен кириңиз."
 }

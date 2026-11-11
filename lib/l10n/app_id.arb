@@ -3227,5 +3227,25 @@
   "assistantRestoreNote": "Catatan dan pengingatnya kembali.",
   "assistantStepCategories": "Memeriksa kategori Anda…",
   "assistantStepCosts": "Menjumlahkan biaya perpanjangan…",
-  "assistantStepVisa": "Memeriksa aturan visa…"
+  "assistantStepVisa": "Memeriksa aturan visa…",
+  "signUpCheckEmailTitle": "Periksa email Anda",
+  "signUpAlreadyHint": "Jika email ini sudah punya akun Vaultara, email tersebut menjelaskan apa yang perlu dilakukan.",
+  "signUpCodeWrong": "Kode itu salah atau sudah kedaluwarsa. Periksa email terbaru dari Vaultara, atau ketuk Kirim ulang kode.",
+  "signUpCreatedSignIn": "Akun Anda sudah siap. Kembali dan masuk dengan email dan kata sandi Anda.",
+  "signUpResent": "Kami mengirim email baru.",
+  "emailDidYouMean": "Maksud Anda {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Periksa email dan kata sandi. Lupa kata sandi, atau baru di Vaultara?",
+  "passwordResetIfAccount": "Jika ada akun Vaultara untuk email ini, tautan reset sedang dikirim. Periksa kotak masuk Anda.",
+  "socialContinueGoogle": "Lanjutkan dengan Google",
+  "socialContinueApple": "Lanjutkan dengan Apple",
+  "socialOr": "atau",
+  "socialNotAvailable": "Opsi masuk ini sedang tidak tersedia. Gunakan email dan kata sandi Anda.",
+  "socialAccountExists": "Email ini sudah punya akun Vaultara. Masuk dengan email dan kata sandi Anda."
 }

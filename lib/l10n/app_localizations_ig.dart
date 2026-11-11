@@ -8614,4 +8614,45 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Na-elele iwu visa…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Lelee email gị';
+
+  @override
+  String get signUpAlreadyHint => 'Ọ bụrụ na email a nwere akaụntụ Vaultara, email ahụ ga-akọwa ihe ị ga-eme kama nke ahụ.';
+
+  @override
+  String get signUpCodeWrong => 'Koodu ahụ ezighi ezi ma ọ bụ agwụla. Lelee email kachasị ọhụrụ sitere na Vaultara, ma ọ bụ pịa Zipụgharịa nọmba.';
+
+  @override
+  String get signUpCreatedSignIn => 'Akaụntụ gị adịla njikere. Laghachi ma banye site na email na paswọọdụ gị.';
+
+  @override
+  String get signUpResent => 'Anyị zipụrụ email ọhụrụ.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Ị pụtara $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Lelee email na paswọọdụ. Ichefuru paswọọdụ gị, ka ị bụ onye ọhụrụ na Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Ọ bụrụ na e nwere akaụntụ Vaultara maka email a, njikọ ntọgharị na-abịa. Lelee igbe ozi gị.';
+
+  @override
+  String get socialContinueGoogle => 'Gaa n\'ihu na Google';
+
+  @override
+  String get socialContinueApple => 'Gaa n\'ihu na Apple';
+
+  @override
+  String get socialOr => 'ma ọ bụ';
+
+  @override
+  String get socialNotAvailable => 'Ụzọ mbanye a adịghị ugbu a. Jiri email na paswọọdụ gị kama.';
+
+  @override
+  String get socialAccountExists => 'Email a nwere akaụntụ Vaultara. Banye site na email na paswọọdụ gị.';
 }

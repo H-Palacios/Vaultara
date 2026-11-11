@@ -8670,4 +8670,45 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Po kontrollohen rregullat e vizave…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Kontrolloni email-in';
+
+  @override
+  String get signUpAlreadyHint => 'Nëse ky email ka tashmë llogari Vaultara, mesazhi shpjegon çfarë të bëni në vend të kësaj.';
+
+  @override
+  String get signUpCodeWrong => 'Ky kod është i gabuar ose ka skaduar. Shikoni email-in më të ri nga Vaultara ose prekni Ridërgo kodin.';
+
+  @override
+  String get signUpCreatedSignIn => 'Llogaria juaj është gati. Kthehuni dhe hyni me email-in dhe fjalëkalimin.';
+
+  @override
+  String get signUpResent => 'Dërguam një email të ri.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Mos e keni fjalën për $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Kontrolloni email-in dhe fjalëkalimin. Keni harruar fjalëkalimin, apo jeni të ri në Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Nëse ka llogari Vaultara për këtë email, një lidhje rivendosjeje është në rrugë. Kontrolloni kutinë hyrëse.';
+
+  @override
+  String get socialContinueGoogle => 'Vazhdo me Google';
+
+  @override
+  String get socialContinueApple => 'Vazhdo me Apple';
+
+  @override
+  String get socialOr => 'ose';
+
+  @override
+  String get socialNotAvailable => 'Ky opsion hyrjeje nuk është i disponueshëm tani. Përdorni email-in dhe fjalëkalimin në vend të tij.';
+
+  @override
+  String get socialAccountExists => 'Ky email ka tashmë llogari Vaultara. Hyni me email-in dhe fjalëkalimin.';
 }

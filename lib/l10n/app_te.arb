@@ -3239,5 +3239,25 @@
   "assistantRestoreNote": "రికార్డ్ మరియు దాని రిమైండర్‌లు తిరిగి వస్తాయి.",
   "assistantStepCategories": "మీ వర్గాలను తనిఖీ చేస్తోంది…",
   "assistantStepCosts": "పునరుద్ధరణ ఖర్చులను కూడుతోంది…",
-  "assistantStepVisa": "వీసా నియమాలను తనిఖీ చేస్తోంది…"
+  "assistantStepVisa": "వీసా నియమాలను తనిఖీ చేస్తోంది…",
+  "signUpCheckEmailTitle": "మీ ఇమెయిల్ చూడండి",
+  "signUpAlreadyHint": "ఈ ఇమెయిల్‌కు ఇప్పటికే Vaultara ఖాతా ఉంటే, దానికి బదులుగా ఏమి చేయాలో ఇమెయిల్‌లో వివరించి ఉంటుంది.",
+  "signUpCodeWrong": "ఆ కోడ్ తప్పు లేదా గడువు ముగిసింది. Vaultara నుండి వచ్చిన తాజా ఇమెయిల్ చూడండి, లేదా కోడ్‌ను మళ్లీ పంపు నొక్కండి.",
+  "signUpCreatedSignIn": "మీ ఖాతా సిద్ధంగా ఉంది. వెనక్కి వెళ్లి మీ ఇమెయిల్ మరియు పాస్‌వర్డ్‌తో సైన్ ఇన్ చేయండి.",
+  "signUpResent": "మేము కొత్త ఇమెయిల్ పంపాము.",
+  "emailDidYouMean": "మీ ఉద్దేశం {email} ఆ?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ఇమెయిల్ మరియు పాస్‌వర్డ్‌ను తనిఖీ చేయండి. పాస్‌వర్డ్ మర్చిపోయారా, లేదా Vaultaraకి కొత్తవారా?",
+  "passwordResetIfAccount": "ఈ ఇమెయిల్‌కు Vaultara ఖాతా ఉంటే, రీసెట్ లింక్ వస్తోంది. మీ ఇన్‌బాక్స్ చూడండి.",
+  "socialContinueGoogle": "Googleతో కొనసాగండి",
+  "socialContinueApple": "Appleతో కొనసాగండి",
+  "socialOr": "లేదా",
+  "socialNotAvailable": "ఈ సైన్ ఇన్ ఎంపిక ఇప్పుడు అందుబాటులో లేదు. బదులుగా మీ ఇమెయిల్ మరియు పాస్‌వర్డ్ ఉపయోగించండి.",
+  "socialAccountExists": "ఈ ఇమెయిల్‌కు ఇప్పటికే Vaultara ఖాతా ఉంది. మీ ఇమెయిల్ మరియు పాస్‌వర్డ్‌తో సైన్ ఇన్ చేయండి."
 }

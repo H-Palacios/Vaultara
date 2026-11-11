@@ -8664,4 +8664,45 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Ги проверувам правилата за визи…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Проверете ја е-поштата';
+
+  @override
+  String get signUpAlreadyHint => 'Ако оваа е-пошта веќе има сметка во Vaultara, пораката објаснува што да направите наместо тоа.';
+
+  @override
+  String get signUpCodeWrong => 'Тој код е погрешен или е истечен. Проверете ја најновата порака од Vaultara или допрете Испрати го кодот повторно.';
+
+  @override
+  String get signUpCreatedSignIn => 'Вашата сметка е подготвена. Вратете се и најавете се со е-пошта и лозинка.';
+
+  @override
+  String get signUpResent => 'Испративме нова порака.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Дали мислевте на $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Проверете ја е-поштата и лозинката. Ја заборавивте лозинката или сте нови во Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Ако постои сметка во Vaultara за оваа е-пошта, врската за ресетирање е на пат. Проверете го сандачето.';
+
+  @override
+  String get socialContinueGoogle => 'Продолжи со Google';
+
+  @override
+  String get socialContinueApple => 'Продолжи со Apple';
+
+  @override
+  String get socialOr => 'или';
+
+  @override
+  String get socialNotAvailable => 'Оваа опција за најава моментално не е достапна. Наместо тоа, користете е-пошта и лозинка.';
+
+  @override
+  String get socialAccountExists => 'Оваа е-пошта веќе има сметка во Vaultara. Најавете се со е-пошта и лозинка.';
 }

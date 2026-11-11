@@ -3214,5 +3214,25 @@
   "assistantRestoreNote": "Irekhodi nezikhumbuzi zalo kuyabuya.",
   "assistantStepCategories": "Kuhlolwa izigaba zakho…",
   "assistantStepCosts": "Kuhlanganiswa izindleko zokuvuselela…",
-  "assistantStepVisa": "Kuhlolwa imithetho ye-visa…"
+  "assistantStepVisa": "Kuhlolwa imithetho ye-visa…",
+  "signUpCheckEmailTitle": "Hlola i-imeyili yakho",
+  "signUpAlreadyHint": "Uma le imeyili isivele ine-akhawunti ye-Vaultara, i-imeyili izochaza ukuthi yini okufanele uyenze esikhundleni salokho.",
+  "signUpCodeWrong": "Leyo khodi ayilungile noma iphelelwe yisikhathi. Hlola i-imeyili entsha evela ku-Vaultara, noma uthephe Phinda uthumele ikhodi.",
+  "signUpCreatedSignIn": "I-akhawunti yakho isilungile. Buyela emuva ungene nge-imeyili nephasiwedi yakho.",
+  "signUpResent": "Sithumele i-imeyili entsha.",
+  "emailDidYouMean": "Ubuqonde u-{email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Hlola i-imeyili nephasiwedi. Ukhohlwe iphasiwedi, noma umusha ku-Vaultara?",
+  "passwordResetIfAccount": "Uma kukhona i-akhawunti ye-Vaultara yale imeyili, isixhumanisi sokusetha kabusha siyeza. Hlola ibhokisi lakho lokungenayo.",
+  "socialContinueGoogle": "Qhubeka nge-Google",
+  "socialContinueApple": "Qhubeka nge-Apple",
+  "socialOr": "noma",
+  "socialNotAvailable": "Le ndlela yokungena ayitholakali okwamanje. Sebenzisa i-imeyili nephasiwedi yakho esikhundleni salokho.",
+  "socialAccountExists": "Le imeyili isivele ine-akhawunti ye-Vaultara. Ngena nge-imeyili nephasiwedi yakho."
 }

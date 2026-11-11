@@ -3196,5 +3196,25 @@
   "assistantRestoreNote": "Zapis i njegovi podsetnici se vraćaju.",
   "assistantStepCategories": "Proveravam vaše kategorije…",
   "assistantStepCosts": "Sabiram troškove obnove…",
-  "assistantStepVisa": "Proveravam pravila za vize…"
+  "assistantStepVisa": "Proveravam pravila za vize…",
+  "signUpCheckEmailTitle": "Proverite imejl",
+  "signUpAlreadyHint": "Ako ovaj imejl već ima Vaultara nalog, poruka objašnjava šta da uradite umesto toga.",
+  "signUpCodeWrong": "Taj kod je pogrešan ili je istekao. Proverite najnoviju poruku od Vaultare ili dodirnite Ponovo pošalji kod.",
+  "signUpCreatedSignIn": "Vaš nalog je spreman. Vratite se i prijavite se imejlom i lozinkom.",
+  "signUpResent": "Poslali smo novu poruku.",
+  "emailDidYouMean": "Da li ste mislili {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Proverite imejl i lozinku. Zaboravili ste lozinku ili ste novi u Vaultari?",
+  "passwordResetIfAccount": "Ako za ovaj imejl postoji Vaultara nalog, link za resetovanje je na putu. Proverite prijemno sanduče.",
+  "socialContinueGoogle": "Nastavi pomoću Google-a",
+  "socialContinueApple": "Nastavi pomoću Apple-a",
+  "socialOr": "ili",
+  "socialNotAvailable": "Ova opcija prijave trenutno nije dostupna. Umesto toga koristite imejl i lozinku.",
+  "socialAccountExists": "Ovaj imejl već ima Vaultara nalog. Prijavite se imejlom i lozinkom."
 }

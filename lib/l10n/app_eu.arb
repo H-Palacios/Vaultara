@@ -3236,5 +3236,25 @@
   "assistantRestoreNote": "Erregistroa eta haren oroigarriak itzultzen dira.",
   "assistantStepCategories": "Zure kategoriak egiaztatzen…",
   "assistantStepCosts": "Berritze-kostuak batzen…",
-  "assistantStepVisa": "Bisa-arauak egiaztatzen…"
+  "assistantStepVisa": "Bisa-arauak egiaztatzen…",
+  "signUpCheckEmailTitle": "Begiratu zure posta",
+  "signUpAlreadyHint": "Helbide honek dagoeneko Vaultara konturen bat badu, mezuak azaltzen du zer egin horren ordez.",
+  "signUpCodeWrong": "Kode hori okerra da edo iraungi egin da. Begiratu Vaultararen azken mezua, edo sakatu Bidali kodea berriro.",
+  "signUpCreatedSignIn": "Zure kontua prest dago. Itzuli eta hasi saioa zure posta eta pasahitzarekin.",
+  "signUpResent": "Mezu berri bat bidali dizugu.",
+  "emailDidYouMean": "{email} esan nahi zenuen?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Egiaztatu posta eta pasahitza. Pasahitza ahaztu zaizu, edo berria zara Vaultaran?",
+  "passwordResetIfAccount": "Posta honentzat Vaultara konturik badago, pasahitza berrezartzeko esteka bidean da. Begiratu sarrera-ontzia.",
+  "socialContinueGoogle": "Jarraitu Google-rekin",
+  "socialContinueApple": "Jarraitu Apple-rekin",
+  "socialOr": "edo",
+  "socialNotAvailable": "Saioa hasteko aukera hau ez dago erabilgarri orain. Erabili zure posta eta pasahitza.",
+  "socialAccountExists": "Posta honek dagoeneko badu Vaultara kontu bat. Hasi saioa zure posta eta pasahitzarekin."
 }

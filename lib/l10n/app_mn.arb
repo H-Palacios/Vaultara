@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "Бичлэг болон түүний сануулгууд буцаж ирнэ.",
   "assistantStepCategories": "Таны ангиллуудыг шалгаж байна…",
   "assistantStepCosts": "Шинэчлэлтийн зардлыг тооцож байна…",
-  "assistantStepVisa": "Визний дүрмийг шалгаж байна…"
+  "assistantStepVisa": "Визний дүрмийг шалгаж байна…",
+  "signUpCheckEmailTitle": "Имэйлээ шалгана уу",
+  "signUpAlreadyHint": "Хэрэв энэ имэйл аль хэдийн Vaultara бүртгэлтэй бол оронд нь юу хийхийг имэйлд тайлбарласан байна.",
+  "signUpCodeWrong": "Тэр код буруу эсвэл хугацаа нь дууссан. Vaultara-аас ирсэн хамгийн сүүлийн имэйлийг шалгах эсвэл Код дахин илгээх дээр дарна уу.",
+  "signUpCreatedSignIn": "Таны бүртгэл бэлэн боллоо. Буцаж очоод имэйл, нууц үгээрээ нэвтэрнэ үү.",
+  "signUpResent": "Бид шинэ имэйл илгээлээ.",
+  "emailDidYouMean": "Та {email} гэж хэлэх гэсэн үү?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Имэйл болон нууц үгээ шалгана уу. Нууц үгээ мартсан уу, эсвэл Vaultara-д шинэ үү?",
+  "passwordResetIfAccount": "Энэ имэйлд Vaultara бүртгэл байгаа бол сэргээх холбоос замдаа явж байна. Ирсэн имэйлээ шалгана уу.",
+  "socialContinueGoogle": "Google-ээр үргэлжлүүлэх",
+  "socialContinueApple": "Apple-ээр үргэлжлүүлэх",
+  "socialOr": "эсвэл",
+  "socialNotAvailable": "Энэ нэвтрэх сонголт одоогоор боломжгүй байна. Оронд нь имэйл, нууц үгээ ашиглана уу.",
+  "socialAccountExists": "Энэ имэйл аль хэдийн Vaultara бүртгэлтэй. Имэйл, нууц үгээрээ нэвтэрнэ үү."
 }

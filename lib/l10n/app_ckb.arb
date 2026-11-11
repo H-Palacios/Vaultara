@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "تۆمارەکە و بیرخەرەوەکانی دەگەڕێنەوە.",
   "assistantStepCategories": "پشکنینی پۆلەکانت…",
   "assistantStepCosts": "کۆکردنەوەی تێچووی نوێکردنەوە…",
-  "assistantStepVisa": "پشکنینی یاساکانی ڤیزا…"
+  "assistantStepVisa": "پشکنینی یاساکانی ڤیزا…",
+  "signUpCheckEmailTitle": "ئیمەیڵەکەت بپشکنە",
+  "signUpAlreadyHint": "ئەگەر ئەم ئیمەیڵە پێشتر هەژماری Vaultara ی هەبێت، نامەکە ڕوونی دەکاتەوە کە لە جیاتی ئەوە چی بکەیت.",
+  "signUpCodeWrong": "ئەو کۆدە هەڵەیە یان بەسەرچووە. نوێترین ئیمەیڵی Vaultara بپشکنە، یان لە ناردنەوەی کۆد بدە.",
+  "signUpCreatedSignIn": "هەژمارەکەت ئامادەیە. بگەڕێوە و بە ئیمەیڵ و وشەی نهێنییەکەت بچۆ ژوورەوە.",
+  "signUpResent": "ئیمەیڵێکی نوێمان نارد.",
+  "emailDidYouMean": "مەبەستت {email} بوو؟",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ئیمەیڵ و وشەی نهێنی بپشکنە. وشەی نهێنیت لەبیرچووە، یان لە Vaultara نوێیت؟",
+  "passwordResetIfAccount": "ئەگەر هەژماری Vaultara بۆ ئەم ئیمەیڵە هەبێت، بەستەری ڕێکخستنەوە لە ڕێگادایە. سندوقی نامەکانت بپشکنە.",
+  "socialContinueGoogle": "بەردەوامبوون بە Google",
+  "socialContinueApple": "بەردەوامبوون بە Apple",
+  "socialOr": "یان",
+  "socialNotAvailable": "ئەم ڕێگای چوونەژوورەوەیە ئێستا بەردەست نییە. لە جیاتی ئەوە ئیمەیڵ و وشەی نهێنییەکەت بەکاربهێنە.",
+  "socialAccountExists": "ئەم ئیمەیڵە پێشتر هەژماری Vaultara ی هەیە. بە ئیمەیڵ و وشەی نهێنییەکەت بچۆ ژوورەوە."
 }

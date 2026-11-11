@@ -3234,5 +3234,25 @@
   "assistantRestoreNote": "Babalik ang record at ang mga paalala nito.",
   "assistantStepCategories": "Sinusuri ang iyong mga kategorya…",
   "assistantStepCosts": "Kinukuwenta ang gastos sa pag-renew…",
-  "assistantStepVisa": "Sinusuri ang mga patakaran sa visa…"
+  "assistantStepVisa": "Sinusuri ang mga patakaran sa visa…",
+  "signUpCheckEmailTitle": "Tingnan ang iyong email",
+  "signUpAlreadyHint": "Kung may Vaultara account na ang email na ito, ipapaliwanag ng email kung ano ang dapat gawin sa halip.",
+  "signUpCodeWrong": "Mali o expired na ang code na iyon. Tingnan ang pinakabagong email mula sa Vaultara, o i-tap ang Ipadala muli ang code.",
+  "signUpCreatedSignIn": "Handa na ang iyong account. Bumalik at mag-sign in gamit ang iyong email at password.",
+  "signUpResent": "Nagpadala kami ng bagong email.",
+  "emailDidYouMean": "{email} ba ang ibig mong sabihin?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Tingnan ang email at password. Nakalimutan mo ang password mo, o bago ka sa Vaultara?",
+  "passwordResetIfAccount": "Kung may Vaultara account para sa email na ito, parating na ang link para i-reset. Tingnan ang iyong inbox.",
+  "socialContinueGoogle": "Magpatuloy gamit ang Google",
+  "socialContinueApple": "Magpatuloy gamit ang Apple",
+  "socialOr": "o",
+  "socialNotAvailable": "Hindi available ngayon ang opsyong ito sa pag-sign in. Gamitin na lang ang iyong email at password.",
+  "socialAccountExists": "May Vaultara account na ang email na ito. Mag-sign in gamit ang iyong email at password."
 }

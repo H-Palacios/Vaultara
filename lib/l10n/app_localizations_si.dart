@@ -8665,4 +8665,45 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'වීසා නීති පරීක්ෂා කරමින්…';
+
+  @override
+  String get signUpCheckEmailTitle => 'ඔබේ ඊමේල් පරීක්ෂා කරන්න';
+
+  @override
+  String get signUpAlreadyHint => 'මෙම ඊමේලයට දැනටමත් Vaultara ගිණුමක් තිබේ නම්, ඒ වෙනුවට කළ යුතු දේ ඊමේලයේ පැහැදිලි කර ඇත.';
+
+  @override
+  String get signUpCodeWrong => 'එම කේතය වැරදියි හෝ කල් ඉකුත් වී ඇත. Vaultara වෙතින් ආ නවතම ඊමේලය පරීක්ෂා කරන්න, නැතහොත් කේතය නැවත එවන්න තට්ටු කරන්න.';
+
+  @override
+  String get signUpCreatedSignIn => 'ඔබේ ගිණුම සූදානම්. ආපසු ගොස් ඔබේ ඊමේලය සහ මුරපදයෙන් පුරනය වන්න.';
+
+  @override
+  String get signUpResent => 'අපි නව ඊමේලයක් එව්වෙමු.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'ඔබ අදහස් කළේ $email ද?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'ඊමේලය සහ මුරපදය පරීක්ෂා කරන්න. මුරපදය අමතකද, නැතහොත් Vaultara වෙත අලුත්ද?';
+
+  @override
+  String get passwordResetIfAccount => 'මෙම ඊමේලයට Vaultara ගිණුමක් තිබේ නම්, යළි සැකසීමේ සබැඳියක් එමින් පවතී. ඔබේ එන ලිපි පරීක්ෂා කරන්න.';
+
+  @override
+  String get socialContinueGoogle => 'Google සමඟ ඉදිරියට යන්න';
+
+  @override
+  String get socialContinueApple => 'Apple සමඟ ඉදිරියට යන්න';
+
+  @override
+  String get socialOr => 'හෝ';
+
+  @override
+  String get socialNotAvailable => 'මෙම පුරනය වීමේ විකල්පය දැන් ලබා ගත නොහැක. ඒ වෙනුවට ඔබේ ඊමේලය සහ මුරපදය භාවිත කරන්න.';
+
+  @override
+  String get socialAccountExists => 'මෙම ඊමේලයට දැනටමත් Vaultara ගිණුමක් ඇත. ඔබේ ඊමේලය සහ මුරපදයෙන් පුරනය වන්න.';
 }

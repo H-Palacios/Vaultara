@@ -8666,4 +8666,45 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'भिसा नियमहरू जाँच गर्दै…';
+
+  @override
+  String get signUpCheckEmailTitle => 'आफ्नो इमेल हेर्नुहोस्';
+
+  @override
+  String get signUpAlreadyHint => 'यो इमेलको पहिले नै Vaultara खाता छ भने, त्यसको सट्टा के गर्ने भनेर इमेलमा बताइएको हुन्छ।';
+
+  @override
+  String get signUpCodeWrong => 'त्यो कोड गलत छ वा म्याद सकिएको छ। Vaultara को सबैभन्दा नयाँ इमेल हेर्नुहोस्, वा कोड पुनः पठाउनुहोस् मा ट्याप गर्नुहोस्।';
+
+  @override
+  String get signUpCreatedSignIn => 'तपाईंको खाता तयार छ। फर्केर आफ्नो इमेल र पासवर्डबाट साइन इन गर्नुहोस्।';
+
+  @override
+  String get signUpResent => 'हामीले नयाँ इमेल पठायौं।';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'के तपाईंले $email भन्न खोज्नुभएको हो?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'इमेल र पासवर्ड जाँच गर्नुहोस्। पासवर्ड बिर्सनुभयो, वा Vaultara मा नयाँ हुनुहुन्छ?';
+
+  @override
+  String get passwordResetIfAccount => 'यो इमेलका लागि Vaultara खाता छ भने, रिसेट लिंक आउँदैछ। आफ्नो इनबक्स हेर्नुहोस्।';
+
+  @override
+  String get socialContinueGoogle => 'Google मार्फत जारी राख्नुहोस्';
+
+  @override
+  String get socialContinueApple => 'Apple मार्फत जारी राख्नुहोस्';
+
+  @override
+  String get socialOr => 'वा';
+
+  @override
+  String get socialNotAvailable => 'यो साइन इन विकल्प अहिले उपलब्ध छैन। यसको सट्टा आफ्नो इमेल र पासवर्ड प्रयोग गर्नुहोस्।';
+
+  @override
+  String get socialAccountExists => 'यो इमेलको पहिले नै Vaultara खाता छ। आफ्नो इमेल र पासवर्डबाट साइन इन गर्नुहोस्।';
 }

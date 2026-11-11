@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "ریکارډ او د هغه یادونې بېرته راځي.",
   "assistantStepCategories": "ستاسو کټګورۍ ګوري…",
   "assistantStepCosts": "د نوي کولو لګښتونه جمع کوي…",
-  "assistantStepVisa": "د ویزې قواعد ګوري…"
+  "assistantStepVisa": "د ویزې قواعد ګوري…",
+  "signUpCheckEmailTitle": "خپل برېښنالیک وګورئ",
+  "signUpAlreadyHint": "که دا برېښنالیک دمخه د Vaultara حساب ولري، برېښنالیک به تشریح کړي چې پر ځای یې څه وکړئ.",
+  "signUpCodeWrong": "هغه کوډ ناسم دی یا یې موده تېره شوې. د Vaultara وروستی برېښنالیک وګورئ، یا کوډ بیا ولیږئ وټکوئ.",
+  "signUpCreatedSignIn": "ستاسو حساب چمتو دی. بېرته لاړ شئ او په خپل برېښنالیک او پټنوم ننوځئ.",
+  "signUpResent": "موږ نوی برېښنالیک ولېږه.",
+  "emailDidYouMean": "ستاسو مطلب {email} و؟",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "برېښنالیک او پټنوم وګورئ. پټنوم مو هېر کړی، که په Vaultara کې نوي یاست؟",
+  "passwordResetIfAccount": "که د دې برېښنالیک لپاره د Vaultara حساب وي، د بیا تنظیم لینک په لاره کې دی. خپل ان باکس وګورئ.",
+  "socialContinueGoogle": "له Google سره دوام ورکړئ",
+  "socialContinueApple": "له Apple سره دوام ورکړئ",
+  "socialOr": "یا",
+  "socialNotAvailable": "د ننوتلو دا لاره اوس شتون نه لري. پر ځای یې خپل برېښنالیک او پټنوم وکاروئ.",
+  "socialAccountExists": "دا برېښنالیک دمخه د Vaultara حساب لري. په خپل برېښنالیک او پټنوم ننوځئ."
 }

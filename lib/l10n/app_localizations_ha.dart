@@ -8666,4 +8666,45 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Ana duba dokokin biza…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Duba imel ɗinka';
+
+  @override
+  String get signUpAlreadyHint => 'Idan wannan imel yana da asusun Vaultara tuni, imel ɗin zai bayyana abin da za ka yi a madadin haka.';
+
+  @override
+  String get signUpCodeWrong => 'Wannan lambar ba daidai ba ce ko ta ƙare. Duba sabon imel daga Vaultara, ko danna Sake aika lamba.';
+
+  @override
+  String get signUpCreatedSignIn => 'Asusunka ya shirya. Koma ka shiga da imel ɗinka da kalmar sirrinka.';
+
+  @override
+  String get signUpResent => 'Mun aika sabon imel.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Kana nufin $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Duba imel da kalmar sirri. Ka manta kalmar sirrinka, ko kai sabo ne a Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Idan akwai asusun Vaultara na wannan imel, mahaɗin sake saitawa yana kan hanya. Duba akwatin saƙonka.';
+
+  @override
+  String get socialContinueGoogle => 'Ci gaba da Google';
+
+  @override
+  String get socialContinueApple => 'Ci gaba da Apple';
+
+  @override
+  String get socialOr => 'ko';
+
+  @override
+  String get socialNotAvailable => 'Wannan hanyar shiga ba ta samuwa yanzu. Yi amfani da imel ɗinka da kalmar sirrinka a madadin haka.';
+
+  @override
+  String get socialAccountExists => 'Wannan imel yana da asusun Vaultara tuni. Shiga da imel ɗinka da kalmar sirrinka.';
 }

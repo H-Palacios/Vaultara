@@ -8839,4 +8839,45 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Перевіряємо візові правила…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Перевірте пошту';
+
+  @override
+  String get signUpAlreadyHint => 'Якщо ця адреса вже має обліковий запис Vaultara, у листі пояснено, що робити натомість.';
+
+  @override
+  String get signUpCodeWrong => 'Цей код неправильний або застарів. Перевірте найновіший лист від Vaultara або натисніть «Надіслати код знову».';
+
+  @override
+  String get signUpCreatedSignIn => 'Ваш обліковий запис готовий. Поверніться та увійдіть за допомогою пошти й пароля.';
+
+  @override
+  String get signUpResent => 'Ми надіслали новий лист.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Ви мали на увазі $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Перевірте пошту й пароль. Забули пароль чи ви новачок у Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Якщо для цієї адреси є обліковий запис Vaultara, посилання для скидання вже в дорозі. Перевірте вхідні.';
+
+  @override
+  String get socialContinueGoogle => 'Продовжити з Google';
+
+  @override
+  String get socialContinueApple => 'Продовжити з Apple';
+
+  @override
+  String get socialOr => 'або';
+
+  @override
+  String get socialNotAvailable => 'Цей спосіб входу зараз недоступний. Натомість використайте пошту й пароль.';
+
+  @override
+  String get socialAccountExists => 'Ця адреса вже має обліковий запис Vaultara. Увійдіть за допомогою пошти й пароля.';
 }

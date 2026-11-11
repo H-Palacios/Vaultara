@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Mục và các lời nhắc của nó sẽ quay lại.",
   "assistantStepCategories": "Đang kiểm tra danh mục của bạn…",
   "assistantStepCosts": "Đang cộng chi phí gia hạn…",
-  "assistantStepVisa": "Đang kiểm tra quy định thị thực…"
+  "assistantStepVisa": "Đang kiểm tra quy định thị thực…",
+  "signUpCheckEmailTitle": "Kiểm tra email của bạn",
+  "signUpAlreadyHint": "Nếu email này đã có tài khoản Vaultara, email sẽ giải thích bạn nên làm gì thay vào đó.",
+  "signUpCodeWrong": "Mã đó không đúng hoặc đã hết hạn. Hãy xem email mới nhất từ Vaultara, hoặc nhấn Gửi lại mã.",
+  "signUpCreatedSignIn": "Tài khoản của bạn đã sẵn sàng. Hãy quay lại và đăng nhập bằng email và mật khẩu.",
+  "signUpResent": "Chúng tôi đã gửi email mới.",
+  "emailDidYouMean": "Có phải ý bạn là {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Kiểm tra email và mật khẩu. Bạn quên mật khẩu hay mới dùng Vaultara?",
+  "passwordResetIfAccount": "Nếu có tài khoản Vaultara cho email này, liên kết đặt lại đang được gửi đến. Hãy kiểm tra hộp thư đến.",
+  "socialContinueGoogle": "Tiếp tục với Google",
+  "socialContinueApple": "Tiếp tục với Apple",
+  "socialOr": "hoặc",
+  "socialNotAvailable": "Cách đăng nhập này hiện không khả dụng. Hãy dùng email và mật khẩu thay thế.",
+  "socialAccountExists": "Email này đã có tài khoản Vaultara. Hãy đăng nhập bằng email và mật khẩu."
 }

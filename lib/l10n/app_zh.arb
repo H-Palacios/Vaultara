@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "记录及其提醒将会恢复。",
   "assistantStepCategories": "正在检查你的类别…",
   "assistantStepCosts": "正在合计续期费用…",
-  "assistantStepVisa": "正在检查签证规定…"
+  "assistantStepVisa": "正在检查签证规定…",
+  "signUpCheckEmailTitle": "查看你的邮箱",
+  "signUpAlreadyHint": "如果这个邮箱已经有 Vaultara 账户，邮件会说明你该怎么做。",
+  "signUpCodeWrong": "该验证码不正确或已过期。请查看 Vaultara 发来的最新邮件，或点按“重新发送验证码”。",
+  "signUpCreatedSignIn": "你的账户已准备就绪。请返回并使用邮箱和密码登录。",
+  "signUpResent": "我们已发送一封新邮件。",
+  "emailDidYouMean": "你是想输入 {email} 吗？",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "请检查邮箱和密码。忘记密码了，还是第一次使用 Vaultara？",
+  "passwordResetIfAccount": "如果这个邮箱有 Vaultara 账户，重置链接正在发送中。请查看收件箱。",
+  "socialContinueGoogle": "使用 Google 继续",
+  "socialContinueApple": "使用 Apple 继续",
+  "socialOr": "或",
+  "socialNotAvailable": "此登录方式目前不可用。请改用邮箱和密码。",
+  "socialAccountExists": "这个邮箱已经有 Vaultara 账户。请使用邮箱和密码登录。"
 }

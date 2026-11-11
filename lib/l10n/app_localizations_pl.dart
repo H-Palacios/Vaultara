@@ -8844,4 +8844,45 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Sprawdzanie zasad wizowych…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Sprawdź pocztę';
+
+  @override
+  String get signUpAlreadyHint => 'Jeśli ten adres ma już konto Vaultara, e-mail wyjaśnia, co zrobić zamiast tego.';
+
+  @override
+  String get signUpCodeWrong => 'Ten kod jest błędny lub wygasł. Sprawdź najnowszego e-maila od Vaultary albo dotknij Wyślij kod ponownie.';
+
+  @override
+  String get signUpCreatedSignIn => 'Twoje konto jest gotowe. Wróć i zaloguj się adresem e-mail i hasłem.';
+
+  @override
+  String get signUpResent => 'Wysłaliśmy nowego e-maila.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Czy chodziło Ci o $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Sprawdź adres e-mail i hasło. Nie pamiętasz hasła albo dopiero zaczynasz z Vaultarą?';
+
+  @override
+  String get passwordResetIfAccount => 'Jeśli dla tego adresu istnieje konto Vaultara, link do zresetowania hasła jest w drodze. Sprawdź skrzynkę odbiorczą.';
+
+  @override
+  String get socialContinueGoogle => 'Kontynuuj z Google';
+
+  @override
+  String get socialContinueApple => 'Kontynuuj z Apple';
+
+  @override
+  String get socialOr => 'lub';
+
+  @override
+  String get socialNotAvailable => 'Ten sposób logowania jest teraz niedostępny. Zamiast tego użyj adresu e-mail i hasła.';
+
+  @override
+  String get socialAccountExists => 'Ten adres ma już konto Vaultara. Zaloguj się adresem e-mail i hasłem.';
 }

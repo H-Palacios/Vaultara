@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "Įrašas ir jo priminimai grįžta.",
   "assistantStepCategories": "Tikrinamos jūsų kategorijos…",
   "assistantStepCosts": "Skaičiuojamos atnaujinimo išlaidos…",
-  "assistantStepVisa": "Tikrinamos vizų taisyklės…"
+  "assistantStepVisa": "Tikrinamos vizų taisyklės…",
+  "signUpCheckEmailTitle": "Patikrinkite el. paštą",
+  "signUpAlreadyHint": "Jei šis el. paštas jau turi Vaultara paskyrą, laiške paaiškinta, ką daryti vietoj to.",
+  "signUpCodeWrong": "Šis kodas neteisingas arba nebegalioja. Patikrinkite naujausią Vaultara laišką arba palieskite Siųsti kodą iš naujo.",
+  "signUpCreatedSignIn": "Jūsų paskyra paruošta. Grįžkite ir prisijunkite el. paštu ir slaptažodžiu.",
+  "signUpResent": "Išsiuntėme naują laišką.",
+  "emailDidYouMean": "Ar turėjote omenyje {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Patikrinkite el. paštą ir slaptažodį. Pamiršote slaptažodį ar esate naujas Vaultara naudotojas?",
+  "passwordResetIfAccount": "Jei šiam el. paštui yra Vaultara paskyra, atkūrimo nuoroda jau keliauja. Patikrinkite gautus laiškus.",
+  "socialContinueGoogle": "Tęsti su Google",
+  "socialContinueApple": "Tęsti su Apple",
+  "socialOr": "arba",
+  "socialNotAvailable": "Šis prisijungimo būdas šiuo metu nepasiekiamas. Vietoj to naudokite el. paštą ir slaptažodį.",
+  "socialAccountExists": "Šis el. paštas jau turi Vaultara paskyrą. Prisijunkite el. paštu ir slaptažodžiu."
 }

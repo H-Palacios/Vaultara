@@ -8666,4 +8666,45 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'ვამოწმებთ სავიზო წესებს…';
+
+  @override
+  String get signUpCheckEmailTitle => 'შეამოწმეთ ელფოსტა';
+
+  @override
+  String get signUpAlreadyHint => 'თუ ამ ელფოსტას უკვე აქვს Vaultara-ს ანგარიში, წერილში ახსნილია, რა უნდა გააკეთოთ ამის ნაცვლად.';
+
+  @override
+  String get signUpCodeWrong => 'ეს კოდი არასწორია ან ვადა გაუვიდა. შეამოწმეთ Vaultara-ს უახლესი წერილი ან შეეხეთ კოდის ხელახლა გაგზავნას.';
+
+  @override
+  String get signUpCreatedSignIn => 'თქვენი ანგარიში მზადაა. დაბრუნდით და შედით ელფოსტითა და პაროლით.';
+
+  @override
+  String get signUpResent => 'ახალი წერილი გამოგიგზავნეთ.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'გულისხმობდით $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'შეამოწმეთ ელფოსტა და პაროლი. დაგავიწყდათ პაროლი, თუ Vaultara-ში ახალი ხართ?';
+
+  @override
+  String get passwordResetIfAccount => 'თუ ამ ელფოსტისთვის Vaultara-ს ანგარიში არსებობს, აღდგენის ბმული გზაშია. შეამოწმეთ შემოსულები.';
+
+  @override
+  String get socialContinueGoogle => 'Google-ით გაგრძელება';
+
+  @override
+  String get socialContinueApple => 'Apple-ით გაგრძელება';
+
+  @override
+  String get socialOr => 'ან';
+
+  @override
+  String get socialNotAvailable => 'შესვლის ეს გზა ახლა მიუწვდომელია. ამის ნაცვლად გამოიყენეთ ელფოსტა და პაროლი.';
+
+  @override
+  String get socialAccountExists => 'ამ ელფოსტას უკვე აქვს Vaultara-ს ანგარიში. შედით ელფოსტითა და პაროლით.';
 }

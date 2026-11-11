@@ -8666,4 +8666,45 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Kuhlolwa imithetho ye-visa…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Hlola i-imeyili yakho';
+
+  @override
+  String get signUpAlreadyHint => 'Uma le imeyili isivele ine-akhawunti ye-Vaultara, i-imeyili izochaza ukuthi yini okufanele uyenze esikhundleni salokho.';
+
+  @override
+  String get signUpCodeWrong => 'Leyo khodi ayilungile noma iphelelwe yisikhathi. Hlola i-imeyili entsha evela ku-Vaultara, noma uthephe Phinda uthumele ikhodi.';
+
+  @override
+  String get signUpCreatedSignIn => 'I-akhawunti yakho isilungile. Buyela emuva ungene nge-imeyili nephasiwedi yakho.';
+
+  @override
+  String get signUpResent => 'Sithumele i-imeyili entsha.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Ubuqonde u-$email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Hlola i-imeyili nephasiwedi. Ukhohlwe iphasiwedi, noma umusha ku-Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Uma kukhona i-akhawunti ye-Vaultara yale imeyili, isixhumanisi sokusetha kabusha siyeza. Hlola ibhokisi lakho lokungenayo.';
+
+  @override
+  String get socialContinueGoogle => 'Qhubeka nge-Google';
+
+  @override
+  String get socialContinueApple => 'Qhubeka nge-Apple';
+
+  @override
+  String get socialOr => 'noma';
+
+  @override
+  String get socialNotAvailable => 'Le ndlela yokungena ayitholakali okwamanje. Sebenzisa i-imeyili nephasiwedi yakho esikhundleni salokho.';
+
+  @override
+  String get socialAccountExists => 'Le imeyili isivele ine-akhawunti ye-Vaultara. Ngena nge-imeyili nephasiwedi yakho.';
 }

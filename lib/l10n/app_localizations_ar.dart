@@ -8916,4 +8916,45 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'جارٍ التحقق من قواعد التأشيرة…';
+
+  @override
+  String get signUpCheckEmailTitle => 'تحقق من بريدك الإلكتروني';
+
+  @override
+  String get signUpAlreadyHint => 'إذا كان لهذا البريد حساب في Vaultara بالفعل، فستشرح الرسالة ما يجب فعله بدلًا من ذلك.';
+
+  @override
+  String get signUpCodeWrong => 'هذا الرمز غير صحيح أو انتهت صلاحيته. تحقق من أحدث رسالة من Vaultara، أو اضغط على إعادة إرسال الرمز.';
+
+  @override
+  String get signUpCreatedSignIn => 'حسابك جاهز. ارجع وسجّل الدخول ببريدك الإلكتروني وكلمة المرور.';
+
+  @override
+  String get signUpResent => 'أرسلنا رسالة جديدة.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'هل تقصد $email؟';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'تحقق من البريد الإلكتروني وكلمة المرور. هل نسيت كلمة المرور، أم أنك جديد على Vaultara؟';
+
+  @override
+  String get passwordResetIfAccount => 'إذا كان هناك حساب Vaultara لهذا البريد، فإن رابط إعادة التعيين في الطريق. تحقق من صندوق الوارد.';
+
+  @override
+  String get socialContinueGoogle => 'المتابعة باستخدام Google';
+
+  @override
+  String get socialContinueApple => 'المتابعة باستخدام Apple';
+
+  @override
+  String get socialOr => 'أو';
+
+  @override
+  String get socialNotAvailable => 'خيار تسجيل الدخول هذا غير متاح الآن. استخدم بريدك الإلكتروني وكلمة المرور بدلًا منه.';
+
+  @override
+  String get socialAccountExists => 'لهذا البريد حساب في Vaultara بالفعل. سجّل الدخول ببريدك الإلكتروني وكلمة المرور.';
 }

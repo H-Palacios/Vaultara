@@ -3239,5 +3239,25 @@
   "assistantRestoreNote": "รายการและการเตือนจะกลับมา",
   "assistantStepCategories": "กำลังตรวจสอบหมวดหมู่ของคุณ…",
   "assistantStepCosts": "กำลังรวมค่าต่ออายุ…",
-  "assistantStepVisa": "กำลังตรวจสอบกฎวีซ่า…"
+  "assistantStepVisa": "กำลังตรวจสอบกฎวีซ่า…",
+  "signUpCheckEmailTitle": "ตรวจสอบอีเมลของคุณ",
+  "signUpAlreadyHint": "หากอีเมลนี้มีบัญชี Vaultara อยู่แล้ว อีเมลจะอธิบายว่าควรทำอย่างไรแทน",
+  "signUpCodeWrong": "รหัสนี้ไม่ถูกต้องหรือหมดอายุแล้ว ตรวจสอบอีเมลล่าสุดจาก Vaultara หรือแตะ ส่งรหัสอีกครั้ง",
+  "signUpCreatedSignIn": "บัญชีของคุณพร้อมแล้ว กลับไปและลงชื่อเข้าใช้ด้วยอีเมลและรหัสผ่านของคุณ",
+  "signUpResent": "เราส่งอีเมลใหม่แล้ว",
+  "emailDidYouMean": "คุณหมายถึง {email} ใช่ไหม",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ตรวจสอบอีเมลและรหัสผ่าน ลืมรหัสผ่าน หรือเพิ่งเริ่มใช้ Vaultara",
+  "passwordResetIfAccount": "หากมีบัญชี Vaultara สำหรับอีเมลนี้ ลิงก์รีเซ็ตกำลังส่งไป ตรวจสอบกล่องจดหมายของคุณ",
+  "socialContinueGoogle": "ดำเนินการต่อด้วย Google",
+  "socialContinueApple": "ดำเนินการต่อด้วย Apple",
+  "socialOr": "หรือ",
+  "socialNotAvailable": "ตัวเลือกการลงชื่อเข้าใช้นี้ไม่พร้อมใช้งานในขณะนี้ ใช้อีเมลและรหัสผ่านของคุณแทน",
+  "socialAccountExists": "อีเมลนี้มีบัญชี Vaultara อยู่แล้ว ลงชื่อเข้าใช้ด้วยอีเมลและรหัสผ่านของคุณ"
 }

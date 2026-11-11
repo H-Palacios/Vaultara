@@ -8666,4 +8666,45 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Проверка на визовите правила…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Проверете имейла си';
+
+  @override
+  String get signUpAlreadyHint => 'Ако този имейл вече има акаунт във Vaultara, имейлът обяснява какво да направите вместо това.';
+
+  @override
+  String get signUpCodeWrong => 'Този код е грешен или е изтекъл. Проверете най-новия имейл от Vaultara или докоснете Повторно изпращане на кода.';
+
+  @override
+  String get signUpCreatedSignIn => 'Акаунтът ви е готов. Върнете се и влезте с имейла и паролата си.';
+
+  @override
+  String get signUpResent => 'Изпратихме нов имейл.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Имахте предвид $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Проверете имейла и паролата. Забравили сте паролата си или сте нови във Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Ако има акаунт във Vaultara за този имейл, връзка за нулиране е на път. Проверете входящата си поща.';
+
+  @override
+  String get socialContinueGoogle => 'Продължаване с Google';
+
+  @override
+  String get socialContinueApple => 'Продължаване с Apple';
+
+  @override
+  String get socialOr => 'или';
+
+  @override
+  String get socialNotAvailable => 'Тази опция за влизане не е налична в момента. Използвайте имейла и паролата си.';
+
+  @override
+  String get socialAccountExists => 'Този имейл вече има акаунт във Vaultara. Влезте с имейла и паролата си.';
 }

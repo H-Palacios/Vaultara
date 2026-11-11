@@ -3240,5 +3240,25 @@
   "assistantRestoreNote": "Жазба мен оның еске салғыштары қайтады.",
   "assistantStepCategories": "Санаттарыңыз тексерілуде…",
   "assistantStepCosts": "Жаңарту шығындары есептелуде…",
-  "assistantStepVisa": "Виза ережелері тексерілуде…"
+  "assistantStepVisa": "Виза ережелері тексерілуде…",
+  "signUpCheckEmailTitle": "Электрондық поштаңызды тексеріңіз",
+  "signUpAlreadyHint": "Егер бұл поштаның Vaultara есептік жазбасы бұрыннан болса, хатта оның орнына не істеу керектігі түсіндірілген.",
+  "signUpCodeWrong": "Бұл код қате немесе мерзімі өткен. Vaultara-дан келген ең жаңа хатты тексеріңіз немесе Кодты қайта жіберу түймесін түртіңіз.",
+  "signUpCreatedSignIn": "Есептік жазбаңыз дайын. Артқа қайтып, поштаңыз бен құпия сөзіңізбен кіріңіз.",
+  "signUpResent": "Жаңа хат жібердік.",
+  "emailDidYouMean": "{email} деп айтқыңыз келді ме?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Пошта мен құпия сөзді тексеріңіз. Құпия сөзді ұмыттыңыз ба, әлде Vaultara-да жаңасыз ба?",
+  "passwordResetIfAccount": "Бұл поштаға Vaultara есептік жазбасы болса, қалпына келтіру сілтемесі жолда. Кіріс жәшігіңізді тексеріңіз.",
+  "socialContinueGoogle": "Google арқылы жалғастыру",
+  "socialContinueApple": "Apple арқылы жалғастыру",
+  "socialOr": "немесе",
+  "socialNotAvailable": "Бұл кіру әдісі қазір қолжетімсіз. Оның орнына поштаңыз бен құпия сөзіңізді пайдаланыңыз.",
+  "socialAccountExists": "Бұл поштаның Vaultara есептік жазбасы бар. Поштаңыз бен құпия сөзіңізбен кіріңіз."
 }

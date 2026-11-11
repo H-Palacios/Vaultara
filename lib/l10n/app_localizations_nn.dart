@@ -8670,4 +8670,45 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Sjekkar visumreglar…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Sjekk e-posten din';
+
+  @override
+  String get signUpAlreadyHint => 'Dersom denne e-postadressa allereie har ein Vaultara-konto, forklarer e-posten kva du skal gjere i staden.';
+
+  @override
+  String get signUpCodeWrong => 'Den koden er feil eller utgått. Sjekk den nyaste e-posten frå Vaultara, eller trykk på Send kode på nytt.';
+
+  @override
+  String get signUpCreatedSignIn => 'Kontoen din er klar. Gå tilbake og logg på med e-post og passord.';
+
+  @override
+  String get signUpResent => 'Vi har sendt ein ny e-post.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Meinte du $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Sjekk e-post og passord. Har du gløymt passordet, eller er du ny i Vaultara?';
+
+  @override
+  String get passwordResetIfAccount => 'Dersom det finst ein Vaultara-konto for denne e-postadressa, er ei lenkje for tilbakestilling på veg. Sjekk innboksen.';
+
+  @override
+  String get socialContinueGoogle => 'Hald fram med Google';
+
+  @override
+  String get socialContinueApple => 'Hald fram med Apple';
+
+  @override
+  String get socialOr => 'eller';
+
+  @override
+  String get socialNotAvailable => 'Dette påloggingsalternativet er ikkje tilgjengeleg no. Bruk e-post og passord i staden.';
+
+  @override
+  String get socialAccountExists => 'Denne e-postadressa har allereie ein Vaultara-konto. Logg på med e-post og passord.';
 }

@@ -3260,5 +3260,25 @@
   "assistantRestoreNote": "መዝገቡ እና አስታዋሾቹ ይመለሳሉ።",
   "assistantStepCategories": "ምድቦችዎን በመፈተሽ ላይ…",
   "assistantStepCosts": "የእድሳት ወጪዎችን በማስላት ላይ…",
-  "assistantStepVisa": "የቪዛ ደንቦችን በመፈተሽ ላይ…"
+  "assistantStepVisa": "የቪዛ ደንቦችን በመፈተሽ ላይ…",
+  "signUpCheckEmailTitle": "ኢሜይልዎን ይመልከቱ",
+  "signUpAlreadyHint": "ይህ ኢሜይል አስቀድሞ የVaultara መለያ ካለው፣ ኢሜይሉ በምትኩ ምን ማድረግ እንዳለብዎ ያብራራል።",
+  "signUpCodeWrong": "ያ ኮድ የተሳሳተ ነው ወይም ጊዜው አልፏል። ከVaultara የመጣውን አዲሱን ኢሜይል ይመልከቱ ወይም ኮድ እንደገና ላክ የሚለውን ይንኩ።",
+  "signUpCreatedSignIn": "መለያዎ ዝግጁ ነው። ይመለሱና በኢሜይልዎ እና በይለፍ ቃልዎ ይግቡ።",
+  "signUpResent": "አዲስ ኢሜይል ልከናል።",
+  "emailDidYouMean": "{email} ማለትዎ ነው?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "ኢሜይሉን እና የይለፍ ቃሉን ያረጋግጡ። የይለፍ ቃልዎን ረስተዋል ወይስ ለVaultara አዲስ ነዎት?",
+  "passwordResetIfAccount": "ለዚህ ኢሜይል የVaultara መለያ ካለ፣ የዳግም ማስጀመሪያ አገናኝ በመንገድ ላይ ነው። የገቢ መልዕክት ሳጥንዎን ይመልከቱ።",
+  "socialContinueGoogle": "በGoogle ይቀጥሉ",
+  "socialContinueApple": "በApple ይቀጥሉ",
+  "socialOr": "ወይም",
+  "socialNotAvailable": "ይህ የመግቢያ አማራጭ አሁን አይገኝም። በምትኩ ኢሜይልዎን እና የይለፍ ቃልዎን ይጠቀሙ።",
+  "socialAccountExists": "ይህ ኢሜይል አስቀድሞ የVaultara መለያ አለው። በኢሜይልዎ እና በይለፍ ቃልዎ ይግቡ።"
 }

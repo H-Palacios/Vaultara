@@ -8666,4 +8666,45 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'የቪዛ ደንቦችን በመፈተሽ ላይ…';
+
+  @override
+  String get signUpCheckEmailTitle => 'ኢሜይልዎን ይመልከቱ';
+
+  @override
+  String get signUpAlreadyHint => 'ይህ ኢሜይል አስቀድሞ የVaultara መለያ ካለው፣ ኢሜይሉ በምትኩ ምን ማድረግ እንዳለብዎ ያብራራል።';
+
+  @override
+  String get signUpCodeWrong => 'ያ ኮድ የተሳሳተ ነው ወይም ጊዜው አልፏል። ከVaultara የመጣውን አዲሱን ኢሜይል ይመልከቱ ወይም ኮድ እንደገና ላክ የሚለውን ይንኩ።';
+
+  @override
+  String get signUpCreatedSignIn => 'መለያዎ ዝግጁ ነው። ይመለሱና በኢሜይልዎ እና በይለፍ ቃልዎ ይግቡ።';
+
+  @override
+  String get signUpResent => 'አዲስ ኢሜይል ልከናል።';
+
+  @override
+  String emailDidYouMean(String email) {
+    return '$email ማለትዎ ነው?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'ኢሜይሉን እና የይለፍ ቃሉን ያረጋግጡ። የይለፍ ቃልዎን ረስተዋል ወይስ ለVaultara አዲስ ነዎት?';
+
+  @override
+  String get passwordResetIfAccount => 'ለዚህ ኢሜይል የVaultara መለያ ካለ፣ የዳግም ማስጀመሪያ አገናኝ በመንገድ ላይ ነው። የገቢ መልዕክት ሳጥንዎን ይመልከቱ።';
+
+  @override
+  String get socialContinueGoogle => 'በGoogle ይቀጥሉ';
+
+  @override
+  String get socialContinueApple => 'በApple ይቀጥሉ';
+
+  @override
+  String get socialOr => 'ወይም';
+
+  @override
+  String get socialNotAvailable => 'ይህ የመግቢያ አማራጭ አሁን አይገኝም። በምትኩ ኢሜይልዎን እና የይለፍ ቃልዎን ይጠቀሙ።';
+
+  @override
+  String get socialAccountExists => 'ይህ ኢሜይል አስቀድሞ የVaultara መለያ አለው። በኢሜይልዎ እና በይለፍ ቃልዎ ይግቡ።';
 }

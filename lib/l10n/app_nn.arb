@@ -3222,5 +3222,25 @@
   "assistantRestoreNote": "Oppføringa og påminningane kjem tilbake.",
   "assistantStepCategories": "Sjekkar kategoriane dine…",
   "assistantStepCosts": "Legg saman fornyingskostnader…",
-  "assistantStepVisa": "Sjekkar visumreglar…"
+  "assistantStepVisa": "Sjekkar visumreglar…",
+  "signUpCheckEmailTitle": "Sjekk e-posten din",
+  "signUpAlreadyHint": "Dersom denne e-postadressa allereie har ein Vaultara-konto, forklarer e-posten kva du skal gjere i staden.",
+  "signUpCodeWrong": "Den koden er feil eller utgått. Sjekk den nyaste e-posten frå Vaultara, eller trykk på Send kode på nytt.",
+  "signUpCreatedSignIn": "Kontoen din er klar. Gå tilbake og logg på med e-post og passord.",
+  "signUpResent": "Vi har sendt ein ny e-post.",
+  "emailDidYouMean": "Meinte du {email}?",
+  "@emailDidYouMean": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "signInWrongDetailsHelp": "Sjekk e-post og passord. Har du gløymt passordet, eller er du ny i Vaultara?",
+  "passwordResetIfAccount": "Dersom det finst ein Vaultara-konto for denne e-postadressa, er ei lenkje for tilbakestilling på veg. Sjekk innboksen.",
+  "socialContinueGoogle": "Hald fram med Google",
+  "socialContinueApple": "Hald fram med Apple",
+  "socialOr": "eller",
+  "socialNotAvailable": "Dette påloggingsalternativet er ikkje tilgjengeleg no. Bruk e-post og passord i staden.",
+  "socialAccountExists": "Denne e-postadressa har allereie ein Vaultara-konto. Logg på med e-post og passord."
 }

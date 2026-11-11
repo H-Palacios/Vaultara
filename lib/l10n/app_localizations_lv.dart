@@ -8738,4 +8738,45 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantStepVisa => 'Pārbauda vīzu noteikumus…';
+
+  @override
+  String get signUpCheckEmailTitle => 'Pārbaudiet e-pastu';
+
+  @override
+  String get signUpAlreadyHint => 'Ja šai e-pasta adresei jau ir Vaultara konts, vēstulē ir paskaidrots, ko darīt tā vietā.';
+
+  @override
+  String get signUpCodeWrong => 'Šis kods ir nepareizs vai beidzies. Pārbaudiet jaunāko Vaultara vēstuli vai pieskarieties Nosūtīt kodu vēlreiz.';
+
+  @override
+  String get signUpCreatedSignIn => 'Jūsu konts ir gatavs. Atgriezieties un pierakstieties ar savu e-pastu un paroli.';
+
+  @override
+  String get signUpResent => 'Mēs nosūtījām jaunu vēstuli.';
+
+  @override
+  String emailDidYouMean(String email) {
+    return 'Vai domājāt $email?';
+  }
+
+  @override
+  String get signInWrongDetailsHelp => 'Pārbaudiet e-pastu un paroli. Aizmirsāt paroli vai esat jauns Vaultara lietotājs?';
+
+  @override
+  String get passwordResetIfAccount => 'Ja šai e-pasta adresei ir Vaultara konts, atiestatīšanas saite jau ir ceļā. Pārbaudiet iesūtni.';
+
+  @override
+  String get socialContinueGoogle => 'Turpināt ar Google';
+
+  @override
+  String get socialContinueApple => 'Turpināt ar Apple';
+
+  @override
+  String get socialOr => 'vai';
+
+  @override
+  String get socialNotAvailable => 'Šī pierakstīšanās iespēja pašlaik nav pieejama. Tā vietā izmantojiet savu e-pastu un paroli.';
+
+  @override
+  String get socialAccountExists => 'Šai e-pasta adresei jau ir Vaultara konts. Pierakstieties ar savu e-pastu un paroli.';
 }
