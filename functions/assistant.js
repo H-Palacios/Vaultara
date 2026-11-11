@@ -6,6 +6,7 @@ const Anthropic = require("@anthropic-ai/sdk");
 const { admin, ENFORCE_APP_CHECK, consumeRateLimit } = require("./shared");
 const { isPaid } = require("./plans");
 const { cleanLanguage, userLanguage, userOffset, dayNumber, todayNumber, dayToDate } = require("./expiry-data");
+const { aliasMatches, fold } = require("./assistant-synonyms");
 
 const ANTHROPIC_API_KEY = defineSecret("ANTHROPIC_API_KEY");
 
@@ -541,6 +542,8 @@ const SETTINGS = [
   "monthly_summary",
   "reminder_time",
 ];
+// Two more notification choices, only for clients on protocol 10.
+const SETTINGS_V10 = [...SETTINGS, "after_expiry", "weekly"];
 // Security settings and notifications are only turned on from the chat.
 // Turning them off stays in the settings screens.
 const ONLY_ON_SETTINGS = new Set(["app_lock", "privacy_screen", "block_screenshots", "notifications"]);
@@ -615,6 +618,16 @@ function withTutorials(tool) {
   };
 }
 const TOOLS_V8 = TOOLS_V7.map(withTutorials);
+const PROPOSE_SETTING_V10 = {
+  ...PROPOSE_SETTING,
+  description:
+    PROPOSE_SETTING.description +
+    " after_expiry: reminders 3 and 14 days after a record expired without being renewed (on by default). weekly: a note on Monday morning when something expires that week (off by default).",
+  input_schema: {
+    ...PROPOSE_SETTING.input_schema,
+    properties: { ...PROPOSE_SETTING.input_schema.properties, setting: { type: "string", enum: SETTINGS_V10 } },
+  },
+};
 const NAMES_V1 = new Set(TOOLS_V1.map((t) => t.name));
 const NAMES_V2 = new Set(TOOLS_V2.map((t) => t.name));
 const NAMES_V3 = new Set(TOOLS_V3.map((t) => t.name));
@@ -623,6 +636,28 @@ const NAMES_V5 = NAMES_V4;
 const NAMES_V6 = new Set(TOOLS_V6.map((t) => t.name));
 const NAMES_V7 = NAMES_V6;
 const NAMES_V8 = NAMES_V7;
+
+// Protocol 10: categories and groups, moving records, costs, renewal history,
+// Recently deleted, visa checks and two more notification settings.
+const V10 = require("./assistant-v10")({
+  admin,
+  str,
+  norm,
+  isoDay,
+  dayNumber,
+  toMillis,
+  pushAction,
+  draftReady,
+  LOCKED_LABEL,
+  countryCode,
+  groups: () => GROUPS_V9,
+});
+const TOOLS_V10 = [
+  ...TOOLS_V8.map((t) => (t.name === "propose_setting" ? PROPOSE_SETTING_V10 : t)).filter((t) => t.name !== "suggest_replies"),
+  ...V10.TOOLS,
+  SUGGEST_REPLIES,
+];
+const NAMES_V10 = new Set(TOOLS_V10.map((t) => t.name));
 
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
@@ -913,6 +948,7 @@ class UserData {
     } catch (_) {
       hid = null;
     }
+    this.householdId = hid;
     if (hid) {
       const shared = await admin
         .firestore()
@@ -1032,14 +1068,21 @@ class UserData {
   }
 }
 
+// Matches a search phrase against a record's group, category and name.
+// Other spellings and languages are understood through the synonym tables,
+// so "license", "Reisepass" or "permis de conduire" find the right group.
 function groupMatches(record, query) {
-  const wanted = stem(query);
+  const wanted = stem(fold(query));
   if (!wanted) return true;
   const fields = [record.group, record.categoryKey, record.categoryLabel, record.name];
-  return fields.some((field) => {
-    const value = stem(field);
+  const direct = fields.some((field) => {
+    const value = stem(fold(field));
     return value && (value.includes(wanted) || wanted.includes(value));
   });
+  if (direct) return true;
+  const { groups, categories } = aliasMatches(query);
+  if (groups.size) return groups.has(record.group);
+  return categories.size > 0 && categories.has(record.categoryKey);
 }
 
 function resolveGroup(value, groups = GROUPS) {
@@ -1050,6 +1093,11 @@ function resolveGroup(value, groups = GROUPS) {
   for (const groupKey of Object.keys(groups)) {
     const candidate = stem(groupKey);
     if (candidate === wanted) return { groupKey, categoryKey: groups[groupKey], group: text };
+  }
+  const aliased = [...aliasMatches(text).groups].filter((k) => groups[k]);
+  if (aliased.length === 1) {
+    const groupKey = aliased[0];
+    return { groupKey, categoryKey: groups[groupKey], group: text };
   }
   return { groupKey: null, categoryKey: null, group: text };
 }
@@ -1776,9 +1824,9 @@ async function openScreen(ctx, input, actions) {
   return { status: "button_ready", note: "The user sees an Open button under your reply. Reply with one short sentence." };
 }
 
-function proposeSetting(input, actions) {
+function proposeSetting(input, actions, settings = SETTINGS) {
   const setting = str(input?.setting);
-  if (!SETTINGS.includes(setting)) return { error: `setting must be one of ${SETTINGS.join(", ")}.` };
+  if (!settings.includes(setting)) return { error: `setting must be one of ${settings.join(", ")}.` };
   const action = { type: "setting", setting };
   if (setting === "reminder_time") {
     const time = str(input?.time);
@@ -1836,7 +1884,7 @@ async function runTool(ctx, name, input, actions, allowed) {
       case "open_screen":
         return await openScreen(ctx, input, actions);
       case "propose_setting":
-        return proposeSetting(input, actions);
+        return proposeSetting(input, actions, ctx.v10 ? SETTINGS_V10 : SETTINGS);
       case "use_location": {
         if (ctx.here) return { error: "The current country is already known: " + ctx.here + "." };
         if (actions.some((a) => a.type === "location")) return { error: "The card is already shown." };
@@ -1847,8 +1895,10 @@ async function runTool(ctx, name, input, actions, allowed) {
           note: "The user sees a Use my location card. If they allow it, the app sends a short message and the next request includes their country. Reply in one short sentence and do not guess where they are.",
         };
       }
-      default:
-        return { error: "Unknown tool." };
+      default: {
+        const handled = ctx.v10 ? await V10.run(ctx, name, input, actions) : undefined;
+        return handled === undefined ? { error: "Unknown tool." } : handled;
+      }
     }
   } catch (err) {
     logger.error("askVaultara tool failed", { tool: name, code: err?.code || null });
@@ -1856,7 +1906,7 @@ async function runTool(ctx, name, input, actions, allowed) {
   }
 }
 
-function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false) {
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -1918,7 +1968,17 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
       "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, a lost or stolen wallet or purse, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first. For a lost or stolen wallet (key lostWallet), tell them to block their bank cards first; Vaultara shows a call button for each card that has its lost card number saved, keeps the police case number, and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
     );
   }
+  if (v10) {
+    lines.push(
+      "Categories and groups: call list_categories before creating, renaming or moving into one. Use propose_create_category, propose_rename_category, propose_create_group and propose_rename_group; only ones the user made can be renamed. To move records to another group, including one the user made, use propose_move_records with one card for all of them. After a new category, offer to add a group; after a new group, offer to add a record.",
+      "Costs and history: for what renewals will cost call renewal_costs and give the totals per currency without converting them. For when something was renewed before call renewal_history.",
+      "Recently deleted: call list_deleted, and propose_restore_record to bring a record back. Records are gone for good after 30 days.",
+      "Visas: for a quick check of one passport and one country call visa_check, say it is general guidance for a tourist visit, and suggest checking the official website. For a whole trip, offer Travel check with open_screen travel.",
+      "Searching: list_records understands other spellings and languages for group names, so pass the user's own words as group."
+    );
+  }
   lines.push("", v7 ? APP_GUIDE_V7 : APP_GUIDE);
+  if (v10) lines.push(...V10.GUIDE);
   return lines.join("\n");
 }
 
@@ -1929,8 +1989,9 @@ const STATIC_PROMPT_V4 = staticPrompt(true, true, true);
 const STATIC_PROMPT_V5 = staticPrompt(true, true, true, true);
 const STATIC_PROMPT_V6 = staticPrompt(true, true, true, true, true);
 const STATIC_PROMPT_V7 = staticPrompt(true, true, true, true, true, true);
+const STATIC_PROMPT_V10 = staticPrompt(true, true, true, true, true, true, true);
 
-function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false) {
+function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false) {
   const date = dayToDate(ctx.today);
   const weekday = date.toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
   const dynamic = [
@@ -1972,7 +2033,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
   return [
     {
       type: "text",
-      text: v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -2056,7 +2117,7 @@ async function stepFor(ctx, name, input) {
     case "propose_setting":
       return { step: "setting" };
     default:
-      return null;
+      return ctx.v10 ? V10.step(ctx, name, input) : null;
   }
 }
 
@@ -2124,6 +2185,7 @@ exports.askVaultara = onCall(
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
+    const v10 = version >= 10 && intent === "chat";
     const runId = typeof request.data?.runId === "string" && RUN_ID_PATTERN.test(request.data.runId)
       ? request.data.runId
       : null;
@@ -2153,11 +2215,12 @@ exports.askVaultara = onCall(
     ctx.lifePlans = v7;
     ctx.tutorials = v8;
     ctx.groups = v9 ? GROUPS_V9 : GROUPS;
+    ctx.v10 = v10;
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
-    const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7);
-    const baseTools = v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
+    const baseTools = v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
     const tools = v9 ? withGroupsV9(baseTools) : baseTools;
-    const allowed = v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const allowed = v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
@@ -2262,3 +2325,6 @@ exports.askVaultara = onCall(
     };
   }
 );
+
+// For unit tests only.
+exports._test = { runTool, UserData, groupMatches, resolveGroup, TOOLS_V10, NAMES_V10, STATIC_PROMPT_V10 };

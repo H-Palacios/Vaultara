@@ -691,6 +691,11 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // Hashes of two-step backup codes. Only the Cloud Functions use them.
+    match /mfaBackupCodes/{uid} {
+      allow read, write: if false;
+    }
+
     match /billingNotices/{noticeId} {
       allow read, write: if false;
     }

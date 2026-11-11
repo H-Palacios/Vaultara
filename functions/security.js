@@ -948,6 +948,7 @@ exports.pruneSecurityDataJob = onSchedule(
 
 exports.deleteAccountNow = deleteAccountNow;
 exports.logSecurityEvent = logSecurityEvent;
+exports.queueSecurityAlert = queueSecurityAlert;
 exports.parseUserAgent = parseUserAgent;
 exports.maskIp = maskIp;
 exports.maskEmail = maskEmail;
