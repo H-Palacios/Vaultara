@@ -3,17 +3,26 @@ import 'package:flutter/services.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-/// Copy, helpful and not helpful, shown under an answer.
+/// Copy, read aloud, helpful and not helpful, shown under an answer.
 class AssistantMessageTools extends StatelessWidget {
   final String text;
   final int rating;
   final ValueChanged<int>? onRate;
+
+  /// Reads the answer aloud, or stops it when it is being read. Hidden when
+  /// the phone has no text to speech.
+  final VoidCallback? onSpeak;
+
+  /// Whether this answer is being read aloud now.
+  final bool speaking;
 
   const AssistantMessageTools({
     super.key,
     required this.text,
     required this.rating,
     this.onRate,
+    this.onSpeak,
+    this.speaking = false,
   });
 
   Future<void> _copy(BuildContext context) async {
@@ -59,6 +68,17 @@ class AssistantMessageTools extends StatelessWidget {
             tooltip: loc.assistantCopy,
             onPressed: () => _copy(context),
           ),
+          if (onSpeak != null)
+            tool(
+              icon: speaking
+                  ? Icons.stop_circle_rounded
+                  : Icons.volume_up_rounded,
+              tooltip: speaking
+                  ? loc.lifePlanStopReading
+                  : loc.lifePlanReadAloud,
+              selected: speaking,
+              onPressed: onSpeak,
+            ),
           if (onRate != null) ...[
             tool(
               icon: rating == 1
