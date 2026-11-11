@@ -107,7 +107,7 @@ class _InsightsScreenState extends State<InsightsScreen>
     _loadFirstName();
     _loadRecapState();
     InsightSnoozes.load();
-    _refresh();
+    _refresh(initial: true);
   }
 
   @override
@@ -140,8 +140,14 @@ class _InsightsScreenState extends State<InsightsScreen>
   /// Loads the records again. This used to sign the record store out and
   /// in, which cancelled every scheduled reminder and locked unlocked
   /// records again each time anything changed.
-  Future<void> _refresh() async {
-    await RecordRepository.reload();
+  Future<void> _refresh({bool initial = false}) async {
+    // Opening the tab uses the records already loaded; changes and pull to
+    // refresh download them again.
+    if (initial) {
+      await RecordRepository.loadForCurrentUser();
+    } else {
+      await RecordRepository.reload();
+    }
 
     if (!mounted) return;
     setState(() => _dataVersion++);

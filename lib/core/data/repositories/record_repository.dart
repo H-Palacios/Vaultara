@@ -12,7 +12,7 @@ import 'package:vaultara/core/data/repositories/category_repository.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/models/renewal_entry.dart';
-import 'package:flutter/material.dart' show DateUtils;
+import 'package:flutter/material.dart' show DateUtils, ValueNotifier;
 import 'package:vaultara/core/data/models/record_attachment.dart';
 import 'package:vaultara/core/data/repositories/attachment_repository.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
@@ -72,6 +72,10 @@ class RecordRepository {
     LifePlanReminders.refreshSoon(LifePlanRepository.plans.value);
     DailyDigestService.refreshSoon();
     WeeklyRecapNotifier.refreshSoon();
+    // Changes made on this phone schedule their own reminders, so the next
+    // reload does not need to reschedule them again.
+    if (_hasLoadedForUser) _reminderSignature = _signatureOf(_allRecords());
+    changes.value++;
     final loc = _loc();
     if (loc == null) return;
     unawaited(HomeWidgetSync.updateWith(loc));
@@ -441,11 +445,13 @@ class RecordRepository {
     return ReminderBudget.allowed(fireTimes, limit);
   }
 
-  static Future<void> _migrateItemsToRecordsIfNeeded(String uid) async {
+  static Future<void> _migrateItemsToRecordsIfNeeded(
+    String uid,
+    Map<String, dynamic>? userData,
+  ) async {
     final userRef = _firestore.collection('users').doc(uid);
 
-    final userSnap = await userRef.get();
-    if ((userSnap.data()?[_recordsMigratedFlag] as bool?) ?? false) return;
+    if ((userData?[_recordsMigratedFlag] as bool?) ?? false) return;
 
     final legacy = await _firestore.collection(_legacyItemsPath(uid)).get();
 
@@ -466,42 +472,130 @@ class RecordRepository {
     userRef.set({_recordsMigratedFlag: true}, SetOptions(merge: true)).ignore();
   }
 
-  static Future<void> loadForCurrentUser() async {
+  /// Bumped whenever the records in memory change, so screens that show
+  /// counts can update without going to the network.
+  static final ValueNotifier<int> changes = ValueNotifier<int>(0);
+
+  static Future<void>? _loading;
+
+  /// Loads the signed-in user's records. Calls made while a load is running
+  /// share it, instead of each downloading everything again.
+  static Future<void> loadForCurrentUser() {
     final user = _auth.currentUser;
 
     if (user == null) {
       clearForSignOut();
+      return Future<void>.value();
+    }
+
+    if (_hasLoadedForUser && _loadedUserId == user.uid) {
+      return Future<void>.value();
+    }
+
+    return _loading ??= _load(user).whenComplete(() => _loading = null);
+  }
+
+  static Future<void> _load(User user) async {
+    _store.clear();
+    await Future.wait<void>([UserName.load(), NotificationPrefs.load()]);
+
+    // Categories and the profile document do not depend on each other, so
+    // they are read at the same time.
+    final results = await Future.wait<Object?>([
+      CategoryRepository.loadForCurrentUser(),
+      _firestore.collection('users').doc(user.uid).get(),
+    ]);
+    if (_auth.currentUser?.uid != user.uid) return;
+    final userDoc = results[1]! as DocumentSnapshot<Map<String, dynamic>>;
+    final userData = userDoc.data();
+
+    await _migrateItemsToRecordsIfNeeded(user.uid, userData);
+    await UserName.setFromProfile(userData, user.displayName);
+    final raw = userData?['createdItemsCount'];
+    _createdRecordsCount = raw is num ? raw.toInt() : int.tryParse('$raw') ?? 0;
+
+    final ref = _firestore.collection(_recordsPath(user.uid));
+
+    // The copy Firestore keeps on the phone is shown straight away, and the
+    // server copy replaces it when it arrives. A new install has no copy, so
+    // it waits for the server as before.
+    QuerySnapshot<Map<String, dynamic>>? cached;
+    try {
+      cached = await ref.get(const GetOptions(source: Source.cache));
+    } catch (_) {
+      cached = null;
+    }
+    if (_auth.currentUser?.uid != user.uid) return;
+
+    if (cached != null && cached.docs.isNotEmpty) {
+      _fill(cached, user.uid);
+      _hasLoadedForUser = true;
+      _loadedUserId = user.uid;
+      _rollDue();
+      _refreshWidget();
+      unawaited(_refreshFromServer(user.uid));
       return;
     }
 
-    if (_hasLoadedForUser && _loadedUserId == user.uid) return;
+    final snap = await ref.get();
+    if (_auth.currentUser?.uid != user.uid) return;
+    _fill(snap, user.uid);
+    _hasLoadedForUser = true;
+    _loadedUserId = user.uid;
+    _rollDue();
+    _reminderSignature = _signatureOf(_allRecords());
+    unawaited(_resyncAllReminders());
+    _refreshWidget();
+  }
 
+  static void _fill(QuerySnapshot<Map<String, dynamic>> snap, String uid) {
     _store.clear();
-    await UserName.load();
-    await NotificationPrefs.load();
-
-    await CategoryRepository.loadForCurrentUser();
-    await _migrateItemsToRecordsIfNeeded(user.uid);
-
-    final userDoc = await _firestore.collection('users').doc(user.uid).get();
-    await UserName.setFromProfile(userDoc.data(), user.displayName);
-    final raw = userDoc.data()?['createdItemsCount'];
-    _createdRecordsCount = raw is num ? raw.toInt() : int.tryParse('$raw') ?? 0;
-
-    final snap = await _firestore.collection(_recordsPath(user.uid)).get();
     for (final doc in snap.docs) {
       final record = TrackedItem.fromMap(doc.id, doc.data());
       if (record.isDeleted == true) continue;
       _add(record);
     }
+    _addSharedFromHousehold(uid);
+  }
 
-    _addSharedFromHousehold(user.uid);
-
-    _hasLoadedForUser = true;
-    _loadedUserId = user.uid;
-    _rollDue();
+  /// After showing the phone's copy, takes the server copy and schedules
+  /// reminders once from it. Offline, the phone's copy is used.
+  static Future<void> _refreshFromServer(String uid) async {
+    try {
+      final snap = await _firestore
+          .collection(_recordsPath(uid))
+          .get(const GetOptions(source: Source.server));
+      if (_auth.currentUser?.uid != uid || _loadedUserId != uid) return;
+      _fill(snap, uid);
+      _rollDue();
+    } catch (_) {
+      if (_auth.currentUser?.uid != uid || _loadedUserId != uid) return;
+    }
+    _reminderSignature = _signatureOf(_allRecords());
     unawaited(_resyncAllReminders());
     _refreshWidget();
+  }
+
+  /// What the scheduled reminders depend on. A reload only reschedules them
+  /// when this changes, instead of every time any data changes.
+  static String _reminderSignature = '';
+
+  static String _signatureOf(List<TrackedItem> records) {
+    final parts = [
+      for (final r in records)
+        [
+          r.reminderBaseId,
+          r.expiryDate.toIso8601String().substring(0, 10),
+          r.reminderOffsetDays,
+          r.leadDays,
+          r.repeatMonths,
+          r.locked,
+          r.name,
+          r.holderId,
+          r.id,
+        ].join('|'),
+    ]..sort();
+    return parts.join('\n');
   }
 
   static Future<void>? _reloading;
@@ -527,15 +621,13 @@ class RecordRepository {
       return;
     }
 
-    _store.clear();
-    for (final doc in snap.docs) {
-      final record = TrackedItem.fromMap(doc.id, doc.data());
-      if (record.isDeleted == true) continue;
-      _add(record);
-    }
-    _addSharedFromHousehold(user.uid);
+    _fill(snap, user.uid);
     _rollDue();
-    unawaited(_resyncAllReminders());
+    final signature = _signatureOf(_allRecords());
+    if (signature != _reminderSignature) {
+      _reminderSignature = signature;
+      unawaited(_resyncAllReminders());
+    }
     _refreshWidget();
   }
 
@@ -937,6 +1029,8 @@ class RecordRepository {
     _hasLoadedForUser = false;
     _loadedUserId = null;
     _createdRecordsCount = 0;
+    _reminderSignature = '';
+    changes.value++;
 
     for (final id in baseIds) {
       unawaited(ReminderScheduler.cancelSeries(id));

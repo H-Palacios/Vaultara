@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:firebase_auth/firebase_auth.dart';
@@ -50,6 +51,16 @@ class HomeOverviewLoader {
   static void dispose() {
     _watcher?.dispose();
     _watcher = null;
+    RecordRepository.changes.removeListener(_onRecordsChanged);
+  }
+
+  static Timer? _recomputeTimer;
+
+  static void _onRecordsChanged() {
+    _recomputeTimer?.cancel();
+    _recomputeTimer = Timer(const Duration(milliseconds: 150), () {
+      if (_inFlight == null) unawaited(recompute());
+    });
   }
 
   static void startLiveSync() {
@@ -67,6 +78,11 @@ class HomeOverviewLoader {
       watchUserDoc: true,
       onChanged: () => load(force: true),
     )..start();
+
+    // Changes made on this phone (a renewal, a new record) update the counts
+    // from memory, without a download.
+    RecordRepository.changes.removeListener(_onRecordsChanged);
+    RecordRepository.changes.addListener(_onRecordsChanged);
   }
 
   static Future<HomeOverview?> loadCached() async {
@@ -96,7 +112,32 @@ class HomeOverviewLoader {
     }
   }
 
-  static Future<HomeOverview> load({bool force = false}) async {
+  static Future<HomeOverview>? _inFlight;
+
+  /// Loads the overview. A load already running is shared, so the several
+  /// triggers that fire when Home opens cause one download, not four.
+  static Future<HomeOverview> load({bool force = false}) {
+    final running = _inFlight;
+    if (running != null) {
+      // A change arrived during a load: run once more when it finishes, so
+      // the change is not missed.
+      if (force) _again = true;
+      return running;
+    }
+    final next = _load(force: force);
+    _inFlight = next;
+    return next.whenComplete(() {
+      if (identical(_inFlight, next)) _inFlight = null;
+      if (_again) {
+        _again = false;
+        unawaited(load(force: true));
+      }
+    });
+  }
+
+  static bool _again = false;
+
+  static Future<HomeOverview> _load({bool force = false}) async {
     final user = FirebaseAuth.instance.currentUser;
 
     if (user == null) {
@@ -117,19 +158,22 @@ class HomeOverviewLoader {
     // A refresh reloads in place. It used to sign the record store out and
     // in, which cancelled every scheduled reminder (including "Remind me
     // tomorrow") and locked records unlocked this session, every time the
-    // user document changed.
-    if (force && RecordRepository.isLoaded) {
-      await CategoryRepository.loadForCurrentUser(force: true);
-      await RecordRepository.reload();
-    } else {
-      await RecordRepository.loadForCurrentUser();
-      await CategoryRepository.loadForCurrentUser();
-    }
-
-    final userDoc = await FirebaseFirestore.instance
+    // user document changed. The profile document is read at the same time
+    // instead of after the records.
+    final userDocFuture = FirebaseFirestore.instance
         .collection('users')
         .doc(user.uid)
         .get();
+    if (force && RecordRepository.isLoaded) {
+      await Future.wait<void>([
+        CategoryRepository.loadForCurrentUser(force: true),
+        RecordRepository.reload(),
+      ]);
+    } else {
+      await RecordRepository.loadForCurrentUser();
+    }
+
+    final userDoc = await userDocFuture;
     final data = userDoc.data();
     await RecordRepository.refreshUserName(data, user.displayName);
 

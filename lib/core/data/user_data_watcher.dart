@@ -39,6 +39,10 @@ class UserDataWatcher {
         return;
       }
 
+      // The stream repeats the current user as soon as it is listened to.
+      // That is not a change, and reacting to it made every screen that
+      // uses this watcher load everything twice when it opened.
+      if (_listeningUid == user.uid) return;
       _attachFor(user.uid);
       onChanged();
     });
@@ -55,33 +59,46 @@ class UserDataWatcher {
 
     final firestore = FirebaseFirestore.instance;
 
-    void onData(Object? _) {
+    // Each listener first delivers what is already there, which the screen
+    // has just loaded itself. Only later events are real changes.
+    final primed = <String>{};
+    void Function(Object?) onDataFor(String stream) => (Object? _) {
       _failures = 0;
+      if (primed.add(stream)) return;
       _schedule();
-    }
+    };
 
     void onError(String where, Object error, StackTrace stack) {
       ErrorReporter.record(error, stack, where);
       _retryLater(uid);
     }
 
-    _recordsSub = firestore.collection('users/$uid/records').snapshots().listen(
-          onData,
+    _recordsSub = firestore
+        .collection('users/$uid/records')
+        .snapshots()
+        .listen(
+          onDataFor('records'),
           onError: (Object e, StackTrace s) => onError('watch_records', e, s),
         );
 
-    _categoriesSub =
-        firestore.collection('users/$uid/categories').snapshots().listen(
-              onData,
-              onError: (Object e, StackTrace s) =>
-                  onError('watch_categories', e, s),
-            );
+    _categoriesSub = firestore
+        .collection('users/$uid/categories')
+        .snapshots()
+        .listen(
+          onDataFor('categories'),
+          onError: (Object e, StackTrace s) =>
+              onError('watch_categories', e, s),
+        );
 
     HouseholdRepository.revision.addListener(_schedule);
 
     if (watchUserDoc) {
-      _userDocSub = firestore.collection('users').doc(uid).snapshots().listen(
-            onData,
+      _userDocSub = firestore
+          .collection('users')
+          .doc(uid)
+          .snapshots()
+          .listen(
+            onDataFor('user'),
             onError: (Object e, StackTrace s) => onError('watch_user', e, s),
           );
     }

@@ -18,8 +18,6 @@ import 'package:vaultara/features/billing/data/repositories/plan_repository.dart
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 
 import 'package:vaultara/core/data/repositories/record_repository.dart';
-import 'package:vaultara/core/data/models/tracked_item.dart';
-import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/features/reminders/services/notification_action_router.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
@@ -56,8 +54,6 @@ class ShellState extends State<Shell> {
 
   final fabKey = GlobalKey();
   final homeKey = GlobalKey<HomeScreenState>();
-
-  bool _didReschedule = false;
 
   bool get tutorialActive => tutorialStep != null;
 
@@ -166,31 +162,6 @@ class ShellState extends State<Shell> {
     }
   }
 
-  Future<void> _rescheduleAllRemindersOnce() async {
-    if (_didReschedule) return;
-    _didReschedule = true;
-
-    final loc = AppLocalizations.of(context)!;
-    final firstName = _userFirstName.trim().isEmpty
-        ? ' '
-        : _userFirstName.trim();
-
-    final snapshot = RecordRepository.storeSnapshot;
-
-    for (final byCategory in snapshot.values) {
-      for (final list in byCategory.values) {
-        for (final TrackedItem record in list) {
-          await ReminderScheduler.tryScheduleForItem(
-            loc: loc,
-            item: record,
-            firstName: firstName,
-            keepSnooze: true,
-          );
-        }
-      }
-    }
-  }
-
   Future<void> _preload() async {
     final prefs = await SharedPreferences.getInstance();
     isNewUser = prefs.getBool(kIsNewUserKey) ?? false;
@@ -203,16 +174,16 @@ class ShellState extends State<Shell> {
     NotificationActionRouter.drain();
     unawaited(_setUpShortcuts());
 
+    // Home loads itself when it opens, and the record store schedules every
+    // reminder once after loading, budget included. Asking Home to reload
+    // here, and rescheduling every record again one by one, made the first
+    // seconds after opening the app slower and did the same work twice.
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      // Renamed from refreshHeader: it reloads the whole HomeOverview, not
-      // just a header.
-      homeKey.currentState?.refreshOverview();
       if (!mounted) return;
       _onJoinCode();
       _onShared();
       unawaited(HomeWidgetSync.update(context));
       unawaited(SecurityStartup.run(context));
-      await _rescheduleAllRemindersOnce();
     });
   }
 
