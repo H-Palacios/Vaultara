@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_functions/cloud_functions.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -19,10 +18,7 @@ import 'package:vaultara/features/security/services/session_guard.dart';
 class LoginScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
 
-  const LoginScreen({
-    super.key,
-    required this.onAuthenticated,
-  });
+  const LoginScreen({super.key, required this.onAuthenticated});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -39,6 +35,51 @@ class _LoginScreenState extends State<LoginScreen> {
 
   bool isBusy = false;
   bool isPasswordVisible = false;
+
+  // After three wrong tries the button waits a moment and the screen offers
+  // a password reset. Firebase also slows repeated attempts on its side; a
+  // hard lockout is avoided because anyone who knows an email could use it
+  // to keep that person out.
+  static const int _triesBeforeWait = 3;
+  static const Duration _wait = Duration(seconds: 30);
+  final Map<String, int> _failures = <String, int>{};
+  DateTime? _cooldownUntil;
+  Timer? _cooldownTimer;
+
+  int get _cooldownSeconds {
+    final until = _cooldownUntil;
+    if (until == null) return 0;
+    final left = until.difference(DateTime.now()).inMilliseconds;
+    return left <= 0 ? 0 : (left / 1000).ceil();
+  }
+
+  void _countFailure(String email) {
+    final key = email.toLowerCase();
+    final count = (_failures[key] ?? 0) + 1;
+    if (count >= _triesBeforeWait) {
+      _failures.remove(key);
+      _startCooldown(_wait);
+    } else {
+      _failures[key] = count;
+    }
+  }
+
+  void _startCooldown(Duration duration) {
+    _cooldownTimer?.cancel();
+    setState(() => _cooldownUntil = DateTime.now().add(duration));
+    _cooldownTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (!mounted) {
+        timer.cancel();
+        return;
+      }
+      if (_cooldownSeconds == 0) {
+        timer.cancel();
+        setState(() => _cooldownUntil = null);
+      } else {
+        setState(() {});
+      }
+    });
+  }
 
   String? emailError;
   String? passError;
@@ -61,6 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void dispose() {
+    _cooldownTimer?.cancel();
     emailController.dispose();
     passwordController.dispose();
     emailFocus.dispose();
@@ -124,20 +166,6 @@ class _LoginScreenState extends State<LoginScreen> {
   bool _looksLikeEmail(String email) =>
       RegExp(r'^[^\s@]+@[^\s@]+\.[^\s@]+$').hasMatch(email);
 
-  Future<bool?> _emailExists(String email) async {
-    try {
-      final result = await FirebaseFunctions.instance
-          .httpsCallable(
-            'checkEmailExists',
-            options: HttpsCallableOptions(limitedUseAppCheckToken: true),
-          )
-          .call(<String, dynamic>{'email': email});
-      final data = result.data;
-      if (data is Map && data['exists'] is bool) return data['exists'] as bool;
-    } catch (_) {}
-    return null;
-  }
-
   Future<void> _handlePasswordSignIn() async {
     FocusManager.instance.primaryFocus?.unfocus();
 
@@ -177,6 +205,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         context: context,
         light: true,
+        email: email,
       );
 
       final user = credential.user;
@@ -206,9 +235,7 @@ class _LoginScreenState extends State<LoginScreen> {
       await prefs.setString('lastUid', user.uid);
 
       final signedInAt = await SessionGuard.markSignedIn(user: user);
-      unawaited(
-        DeviceRegistry.register(force: true, signedInAtMs: signedInAt),
-      );
+      unawaited(DeviceRegistry.register(force: true, signedInAtMs: signedInAt));
 
       if (!mounted) return;
 
@@ -225,19 +252,15 @@ class _LoginScreenState extends State<LoginScreen> {
       );
       if (!mounted) return;
 
-      if (uiErr.type == AuthUiErrorType.modal) {
+      if (e.code.toLowerCase() == 'too-many-requests') {
+        _startCooldown(const Duration(seconds: 60));
+      } else if (uiErr.type == AuthUiErrorType.modal) {
         await _showErrorModal(loc.signIn, uiErr.message);
       } else if (uiErr.message == loc.signInWrongDetails) {
-        final exists = await _emailExists(email);
-        if (!mounted) return;
-        _applyAuthUiError(switch (exists) {
-          false => AuthUiError(AuthUiErrorType.fieldEmail, loc.emailNotFound),
-          true => AuthUiError(
-              AuthUiErrorType.fieldPassword,
-              loc.incorrectPassword,
-            ),
-          null => uiErr,
-        });
+        // One message for a wrong email and a wrong password, so the screen
+        // does not tell anyone which emails have an account.
+        _applyAuthUiError(uiErr);
+        _countFailure(email);
       } else {
         _applyAuthUiError(uiErr);
       }
@@ -285,8 +308,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       focusNode: passwordFocus,
                       obscureText: !isPasswordVisible,
                       textInputAction: TextInputAction.done,
-                      onSubmitted: (_) =>
-                          isBusy ? null : _handlePasswordSignIn(),
+                      onSubmitted: (_) => isBusy || _cooldownSeconds > 0
+                          ? null
+                          : _handlePasswordSignIn(),
                       decoration: AppInputDecorations.field(
                         context,
                         labelText: loc.passwordLabel,
@@ -294,14 +318,17 @@ class _LoginScreenState extends State<LoginScreen> {
                         focused: passwordFocus.hasFocus,
                         errorText: passError,
                         suffixIcon: IconButton(
-                          tooltip: isPasswordVisible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
+                          tooltip: isPasswordVisible
+                              ? AppLocalizations.of(context)!.hidePassword
+                              : AppLocalizations.of(context)!.showPassword,
                           icon: Icon(
                             isPasswordVisible
                                 ? Icons.visibility_rounded
                                 : Icons.visibility_off_rounded,
                           ),
                           onPressed: () => setState(
-                              () => isPasswordVisible = !isPasswordVisible),
+                            () => isPasswordVisible = !isPasswordVisible,
+                          ),
                         ),
                       ),
                     ),
@@ -315,6 +342,16 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Text(loc.forgotPassword),
                       ),
                     ),
+                    if (_cooldownSeconds > 0) ...[
+                      const SizedBox(height: 8),
+                      _CooldownCard(
+                        seconds: _cooldownSeconds,
+                        onReset: () async {
+                          FocusManager.instance.primaryFocus?.unfocus();
+                          await PasswordResetDialog.show(context);
+                        },
+                      ),
+                    ],
                     const SizedBox(height: 16),
                     SizedBox(
                       width: double.infinity,
@@ -329,15 +366,22 @@ class _LoginScreenState extends State<LoginScreen> {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        onPressed: isBusy ? null : _handlePasswordSignIn,
+                        onPressed: isBusy || _cooldownSeconds > 0
+                            ? null
+                            : _handlePasswordSignIn,
                         child: isBusy
                             ? const SizedBox(
                                 width: 20,
                                 height: 20,
                                 child: CircularProgressIndicator(
-                                    strokeWidth: 2.5),
+                                  strokeWidth: 2.5,
+                                ),
                               )
-                            : Text(loc.signIn),
+                            : Text(
+                                _cooldownSeconds > 0
+                                    ? loc.signInWaitSeconds(_cooldownSeconds)
+                                    : loc.signIn,
+                              ),
                       ),
                     ),
                   ],
@@ -346,6 +390,56 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+class _CooldownCard extends StatelessWidget {
+  final int seconds;
+  final VoidCallback onReset;
+
+  const _CooldownCard({required this.seconds, required this.onReset});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    return Container(
+      padding: const EdgeInsets.fromLTRB(14, 12, 8, 8),
+      decoration: BoxDecoration(
+        color: scheme.errorContainer.withValues(alpha: 0.5),
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(Icons.lock_clock_rounded, color: scheme.error, size: 20),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  loc.signInTooManyTries,
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    height: 1.4,
+                    color: scheme.onErrorContainer,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Align(
+            alignment: AlignmentDirectional.centerEnd,
+            child: TextButton.icon(
+              onPressed: onReset,
+              icon: const Icon(Icons.key_rounded, size: 18),
+              label: Text(loc.forgotPassword),
+            ),
+          ),
+        ],
       ),
     );
   }
