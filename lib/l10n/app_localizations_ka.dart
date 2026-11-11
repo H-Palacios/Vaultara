@@ -360,15 +360,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'სასიამოვნოა თქვენი დაბრუნება. Vaultara ყოველთვის მზადაა თქვენი მნიშვნელოვანი მონაცემებისთვის.';
 
   @override
-  String get summaryAllCaption => 'Vaultara-ში კონტროლდება';
-
-  @override
-  String get summaryExpiredTitle => 'ვადაგასული';
-
-  @override
-  String get summaryExpiredCaption => 'ვადის გასვლის შემდეგ';
-
-  @override
   String get editorNotes => 'შენიშვნები';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'ჩანაწერის წაშლა';
-
-  @override
-  String get summaryAllRecordsTitle => 'ყველა ჩანაწერი';
 
   @override
   String get noGroupFound => 'ჯგუფები ჯერ არ არის';
@@ -829,22 +817,10 @@ class AppLocalizationsKa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ჩანაწერი',
-      one: '1 ჩანაწერი',
+      one: '$count ჩანაწერი',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'მომავალი';
-
-  @override
-  String get summaryUpcomingCaption => 'მომდევნო 30 დღეში';
-
-  @override
-  String get summaryUrgentTitle => 'სასწრაფო';
-
-  @override
-  String get summaryUrgentCaption => 'მომდევნო 7 დღეში';
 
   @override
   String get profileHeaderTitle => 'პროფილი';
@@ -945,7 +921,7 @@ class AppLocalizationsKa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days დღით ადრე',
-      one: '1 დღით ადრე',
+      one: '$days დღით ადრე',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsKa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names და კიდევ $extra ჩანაწერი იწურება დღეს.',
-      one: '$names და კიდევ 1 ჩანაწერი იწურება დღეს.',
+      one: '$names და კიდევ $extra ჩანაწერი იწურება დღეს.',
       zero: '$names იწურება დღეს.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsKa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b და კიდევ $extra ჩანაწერი იწურება $lastDate-მდე, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც რამდენიმე ჩანაწერი ასე ახლოსაა ერთმანეთთან.',
-      one: '$a, $b და კიდევ 1 ჩანაწერი იწურება $lastDate-მდე, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც რამდენიმე ჩანაწერი ასე ახლოსაა ერთმანეთთან.',
+      one: '$a, $b და კიდევ $extra ჩანაწერი იწურება $lastDate-მდე, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც რამდენიმე ჩანაწერი ასე ახლოსაა ერთმანეთთან.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsKa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'თქვენი $count ჩანაწერი კატეგორიაში $category იწურება $date-მდე. ადვილია ერთ-ერთის გამოტოვება, როდესაც ისინი ასეა დაჯგუფებული.',
-      one: 'თქვენი 1 ჩანაწერი კატეგორიაში $category იწურება $date-ში. მისი გამოტოვება ადვილია.',
+      one: 'თქვენი $count ჩანაწერი კატეგორიაში $category იწურება $date-ში. მისი გამოტოვება ადვილია.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsKa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count მომავალი ვადა დაფარულია შეხსენებებით. სხვა არაფერი საჭიროებს თქვენს ყურადღებას.',
-      one: '1 მომავალი ვადა დაფარულია შეხსენებით. სხვა არაფერი საჭიროებს თქვენს ყურადღებას.',
+      one: '$count მომავალი ვადა დაფარულია შეხსენებით. სხვა არაფერი საჭიროებს თქვენს ყურადღებას.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsKa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ამჟამად გადაუდებელი არაფერია, მაგრამ $count მომავალ ჩანაწერს ჯერ არ აქვს შეხსენება.',
-      one: 'ამჟამად გადაუდებელი არაფერია, მაგრამ 1 მომავალ ჩანაწერს ჯერ არ აქვს შეხსენება.',
+      one: 'ამჟამად გადაუდებელი არაფერია, მაგრამ $count მომავალ ჩანაწერს ჯერ არ აქვს შეხსენება.',
     );
     return '$_temp0';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsKa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count მალე იწურება',
-      one: '1 მალე იწურება',
+      one: '$count მალე იწურება',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsKa extends AppLocalizations {
   String get noRecordsTomorrow => 'ხვალ არაფერს ეწურება ვადა';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName-ს ვადა $days დღეში იწურება',
-      one: '$recordName-ს ვადა ხვალ იწურება',
-      zero: '$recordName-ს ვადა დღეს იწურება',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, თქვენს $recordName-ს ვადა $date-ს იწურება. ადრეული განახლება უზრუნველყოფს თქვენს დაცულობას.',
-      one: '$firstName, თქვენს $recordName-ს ვადა ხვალ იწურება. განაახლეთ ახლავე, რათა ვადა არ გაუვიდეს.',
-      zero: '$firstName, თქვენს $recordName-ს ვადა დღეს იწურება. უკვე განაახლეთ? შეცვალეთ ვადის გასვლის თარიღი.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'ბოლო შეხსენება: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days დღეში, $date-ს',
-      one: 'ხვალ',
-    );
-    return '$firstName, თქვენს $recordName-ს ვადა $_temp0 იწურება. ეს თქვენი ბოლო შეხსენებაა, განაახლეთ ის ან შეცვალეთ თარიღი.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsKa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ფოტო ჯერ არ არის დაშიფრული',
-      one: '1 ფოტო ჯერ არ არის დაშიფრული',
+      one: '$count ფოტო ჯერ არ არის დაშიფრული',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsKa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'გაქვთ $count ფოტო, რომელიც ჯერ არ არის დაშიფრული. ახლა შეგვიძლია დავშიფროთ.',
-      one: 'გაქვთ 1 ფოტო, რომელიც ჯერ არ არის დაშიფრული. ახლა შეგვიძლია დავშიფროთ.',
+      one: 'გაქვთ $count ფოტო, რომელიც ჯერ არ არის დაშიფრული. ახლა შეგვიძლია დავშიფროთ.',
     );
     return '$_temp0 დატოვეთ Vaultara ღია, სანამ ეს დასრულდება.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsKa extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'ძალიან ბევრი მცდელობა. დაელოდეთ $seconds წამს და სცადეთ ხელახლა.',
-      one: 'ძალიან ბევრი მცდელობა. დაელოდეთ 1 წამს და სცადეთ ხელახლა.',
+      one: 'ძალიან ბევრი მცდელობა. დაელოდეთ $seconds წამს და სცადეთ ხელახლა.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsKa extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'ძალიან ბევრი მცდელობა. დაელოდეთ $minutes წუთს და სცადეთ ხელახლა.',
-      one: 'ძალიან ბევრი მცდელობა. დაელოდეთ 1 წუთს და სცადეთ ხელახლა.',
+      one: 'ძალიან ბევრი მცდელობა. დაელოდეთ $minutes წუთს და სცადეთ ხელახლა.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsKa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ჩანაწერს თქვენი ყურადღება სჭირდება',
-      one: '1 ჩანაწერს თქვენი ყურადღება სჭირდება',
+      one: '$count ჩანაწერს თქვენი ყურადღება სჭირდება',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsKa extends AppLocalizations {
       years,
       locale: localeName,
       other: 'ჩვეულებრივ მოქმედებს $years წელი',
-      one: 'ჩვეულებრივ მოქმედებს 1 წელი',
+      one: 'ჩვეულებრივ მოქმედებს $years წელი',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsKa extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'შეხსენება: $name-ის ვადა იწურება $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '„$recordName“-ს ვადა დღეს იწურება';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '„$recordName“-ს ვადა ხვალ იწურება';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '„$recordName“-ს ვადა $days დღეში იწურება',
+      one: '„$recordName“-ს ვადა $days დღეში იწურება',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '„$recordName“-ს ვადა ამოიწურა';
+  }
+
+  @override
+  String get remLockedTitle => 'ჩაკეტილ ჩანაწერს თქვენი ყურადღება სჭირდება';
+
+  @override
+  String remLockedBody(String date) {
+    return 'მისი თარიღია $date. განბლოკეთ Vaultara, რომ ნახოთ, რომელი ჩანაწერია.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'თქვენი ჩანაწერის „$recordName“ ვადა დღეს იწურება.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'თქვენი ჩანაწერის „$recordName“ ვადა ხვალ იწურება.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'თქვენი ჩანაწერის „$recordName“ ვადა $date-ს იწურება.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, თქვენი ჩანაწერის „$recordName“ ვადა დღეს იწურება.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, თქვენი ჩანაწერის „$recordName“ ვადა ხვალ იწურება.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, თქვენი ჩანაწერის „$recordName“ ვადა $date-ს იწურება.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: ჩანაწერის „$recordName“ ვადა დღეს იწურება.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: ჩანაწერის „$recordName“ ვადა ხვალ იწურება.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: ჩანაწერის „$recordName“ ვადა $date-ს იწურება.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'თქვენი ჩანაწერის „$recordName“ ვადა $date-ს ამოიწურა.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: ჩანაწერის „$recordName“ ვადა $date-ს ამოიწურა.';
+  }
+
+  @override
+  String get remTipToday => 'უკვე განაახლეთ? განაახლეთ თარიღი.';
+
+  @override
+  String get remTipTomorrow => 'განაახლეთ ახლავე, რომ ვადა არ ამოიწუროს.';
+
+  @override
+  String get remTipEarly => 'ადრეული განახლება დაცულს გტოვებთ.';
+
+  @override
+  String get remTipLast => 'ეს არის ბოლო შეხსენება ვადის ამოწურვამდე.';
+
+  @override
+  String get remTipExpired => 'განაახლეთ, ან შეცვალეთ თარიღი, თუ უკვე განაახლეთ.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'დროა დაიწყოთ „$recordName“-ს განახლება. ვადა $date-ს იწურება, ასე რომ, თუ ახლა დაიწყებთ, საკმარისი დრო გექნებათ.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'დროა დაიწყოთ „$recordName“-ს ($person) განახლება. ვადა $date-ს იწურება, ასე რომ, ახლა დაწყებით საკმარისი დრო იქნება.';
+  }
+
+  @override
+  String get notifChannelName => 'ვადის შეხსენებები';
+
+  @override
+  String get notifChannelDescription => 'შეხსენებები თქვენი ჩანაწერების ვადის ამოწურვამდე';
+
+  @override
+  String get notifTestTitle => 'სატესტო შეტყობინება';
+
+  @override
+  String get notifTestBody => 'Vaultara-ს შეხსენებები ასე მოდის.';
+
+  @override
+  String get notifTestAction => 'სატესტო შეტყობინების გაგზავნა';
+
+  @override
+  String get notifTestSubtitle => 'შეამოწმეთ, აღწევს თუ არა შეხსენებები ამ ტელეფონამდე';
+
+  @override
+  String get notifTestSent => 'ტესტი გაიგზავნა. რამდენიმე წამში უნდა მოვიდეს.';
+
+  @override
+  String get notifAfterExpiryTitle => 'შემახსენე ჩანაწერის ვადის ამოწურვის შემდეგ';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 და 14 დღის შემდეგ, თუ არ განახლებულა';
+
+  @override
+  String get notifWeeklyTitle => 'ორშაბათის შეჯამება';
+
+  @override
+  String get notifWeeklySubtitle => 'შეტყობინება ორშაბათს დილით, როცა იმ კვირაში რაიმეს ვადა იწურება';
+
+  @override
+  String get notifPushSection => 'ოჯახი და განახლებები';
+
+  @override
+  String get notifHouseholdTitle => 'გაზიარებული ჩანაწერები';
+
+  @override
+  String get notifHouseholdSubtitle => 'როცა გაზიარებული ჩანაწერის ვადა იწურება და არავის განუახლებია';
+
+  @override
+  String get notifUpdatesTitle => 'თქვენ მიერ მოთხოვნილი განახლებები';
+
+  @override
+  String get notifUpdatesSubtitle => 'როცა ვინმე ჩანაწერის ახალ მონაცემებს გამოგზავნის';
+
+  @override
+  String get notifSecurityNote => 'გაფრთხილებები თქვენს ანგარიშზე ახალი შესვლების შესახებ ყოველთვის იგზავნება.';
+
+  @override
+  String get notifIosHelpTitle => 'შეხსენებები არ მოდის?';
+
+  @override
+  String get notifIosHelpSubtitle => 'შეამოწმეთ iPhone-ის პარამეტრები';
+
+  @override
+  String get notifIosHelpStep1 => 'გახსენით პარამეტრები, შემდეგ შეტყობინებები, შემდეგ Vaultara, და ჩართეთ შეტყობინებების დაშვება.';
+
+  @override
+  String get notifIosHelpStep2 => 'ჩართეთ დაბლოკილი ეკრანი, შეტყობინებების ცენტრი და ბანერები.';
+
+  @override
+  String get notifIosHelpStep3 => 'თუ ფოკუსს იყენებთ, დაამატეთ Vaultara დაშვებულ აპებში.';
+
+  @override
+  String get notifIosHelpStep4 => 'გახსენით Vaultara ყოველ რამდენიმე კვირაში. iPhone წინასწარ მხოლოდ შეზღუდული რაოდენობის შეხსენებას ინახავს და აპის გახსნა შემდეგებს გეგმავს.';
+
+  @override
+  String get homeNextUpEmpty => 'მალე არაფრის ვადა არ იწურება. ყველაფერი რიგზეა.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count იწურება 30 დღეში',
+      one: '$count იწურება 30 დღეში',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'მიმაგრებული კატეგორიები';
 }

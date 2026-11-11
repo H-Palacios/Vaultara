@@ -360,15 +360,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'သင့်ကို ပြန်တွေ့ရသည့်အတွက် ဝမ်းသာပါသည်။ အရေးကြီးသော ရက်စွဲများနှင့် မှတ်တမ်းများကို ပြန်ကြည့်လိုသည့်အခါတိုင်း Vaultara ရှိနေပါသည်။';
 
   @override
-  String get summaryAllCaption => 'Vaultara တွင် စောင့်ကြည့်ထားသည်';
-
-  @override
-  String get summaryExpiredTitle => 'သက်တမ်းကုန်ပြီ';
-
-  @override
-  String get summaryExpiredCaption => 'သက်တမ်းကုန်ရက် ကျော်လွန်ပြီ';
-
-  @override
   String get editorNotes => 'မှတ်စုများ';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'မှတ်တမ်း ဖျက်ရန်';
-
-  @override
-  String get summaryAllRecordsTitle => 'မှတ်တမ်းအားလုံး';
 
   @override
   String get noGroupFound => 'အုပ်စု မရှိသေးပါ';
@@ -827,22 +815,10 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'မှတ်တမ်း $count ခု',
-      one: 'မှတ်တမ်း ၁ ခု',
+      one: 'မှတ်တမ်း $count ခု',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'လာမည့်အရာများ';
-
-  @override
-  String get summaryUpcomingCaption => '၃၀ ရက်အတွင်း';
-
-  @override
-  String get summaryUrgentTitle => 'အရေးပေါ်';
-
-  @override
-  String get summaryUrgentCaption => '၇ ရက်အတွင်း';
 
   @override
   String get profileHeaderTitle => 'ပရိုဖိုင်';
@@ -1045,7 +1021,7 @@ class AppLocalizationsMy extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names နှင့် နောက်ထပ် $extra ခု ယနေ့ သက်တမ်းကုန်မည်။',
-      one: '$names နှင့် နောက်ထပ် ၁ ခု ယနေ့ သက်တမ်းကုန်မည်။',
+      one: '$names နှင့် နောက်ထပ် $extra ခု ယနေ့ သက်တမ်းကုန်မည်။',
       zero: '$names ယနေ့ သက်တမ်းကုန်မည်။',
     );
     return '$_temp0';
@@ -1078,7 +1054,7 @@ class AppLocalizationsMy extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a၊ $b နှင့် နောက်ထပ် $extra ခု $lastDate မတိုင်မီ ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ အများအပြား ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။',
-      one: '$a၊ $b နှင့် နောက်ထပ် ၁ ခု $lastDate မတိုင်မီ ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ အများအပြား ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။',
+      one: '$a၊ $b နှင့် နောက်ထပ် $extra ခု $lastDate မတိုင်မီ ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ အများအပြား ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။',
     );
     return '$_temp0';
   }
@@ -1089,7 +1065,7 @@ class AppLocalizationsMy extends AppLocalizations {
       days,
       locale: localeName,
       other: 'နောက် $days ရက်အတွင်း သက်တမ်းကုန်မည့်အရာ မရှိပါ။ သင်၏ နောက်ထပ် သက်တမ်းကုန်ရက်မှာ $date ဖြစ်သည်။',
-      one: 'နောက် ၁ ရက်အတွင်း သက်တမ်းကုန်မည့်အရာ မရှိပါ။ သင်၏ နောက်ထပ် သက်တမ်းကုန်ရက်မှာ $date ဖြစ်သည်။',
+      one: 'နောက် $days ရက်အတွင်း သက်တမ်းကုန်မည့်အရာ မရှိပါ။ သင်၏ နောက်ထပ် သက်တမ်းကုန်ရက်မှာ $date ဖြစ်သည်။',
     );
     return '$_temp0';
   }
@@ -1100,7 +1076,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category အမျိုးအစားရှိ သင့်မှတ်တမ်း $count ခု $date မတိုင်မီ သက်တမ်းကုန်မည်။ ဤသို့ စုနေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။',
-      one: '$category အမျိုးအစားရှိ သင့်မှတ်တမ်း ၁ ခု $date တွင် သက်တမ်းကုန်မည်။ လွတ်သွားရန် လွယ်သည်။',
+      one: '$category အမျိုးအစားရှိ သင့်မှတ်တမ်း $count ခု $date တွင် သက်တမ်းကုန်မည်။ လွတ်သွားရန် လွယ်သည်။',
     );
     return '$_temp0';
   }
@@ -1111,7 +1087,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'လာမည့် သက်တမ်းကုန်ရက် $count ခုအတွက် သတိပေးချက်များ ရှိသည်။ အခြား ဂရုစိုက်ရန် မလိုပါ။',
-      one: 'လာမည့် သက်တမ်းကုန်ရက် ၁ ခုအတွက် သတိပေးချက် ရှိသည်။ အခြား ဂရုစိုက်ရန် မလိုပါ။',
+      one: 'လာမည့် သက်တမ်းကုန်ရက် $count ခုအတွက် သတိပေးချက် ရှိသည်။ အခြား ဂရုစိုက်ရန် မလိုပါ။',
     );
     return '$_temp0';
   }
@@ -1125,7 +1101,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ယခု အရေးပေါ် မရှိသော်လည်း လာမည့် မှတ်တမ်း $count ခုတွင် သတိပေးချက် မရှိသေးပါ။',
-      one: 'ယခု အရေးပေါ် မရှိသော်လည်း လာမည့် မှတ်တမ်း ၁ ခုတွင် သတိပေးချက် မရှိသေးပါ။',
+      one: 'ယခု အရေးပေါ် မရှိသော်လည်း လာမည့် မှတ်တမ်း $count ခုတွင် သတိပေးချက် မရှိသေးပါ။',
     );
     return '$_temp0';
   }
@@ -1249,7 +1225,7 @@ class AppLocalizationsMy extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ရက်',
-      one: '၁ ရက်',
+      one: '$days ရက်',
     );
     return 'သတိပေးချက် $position: $_temp0 ကြို၍';
   }
@@ -1286,7 +1262,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ခု သက်တမ်းကုန်မည်',
-      one: '၁ ခု သက်တမ်းကုန်မည်',
+      one: '$count ခု သက်တမ်းကုန်မည်',
     );
     return '$_temp0';
   }
@@ -1298,43 +1274,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get noRecordsTomorrow => 'မနက်ဖြန် သက်တမ်းကုန်မည့်အရာ မရှိပါ';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName $days ရက်အကြာတွင် သက်တမ်းကုန်မည်',
-      one: '$recordName မနက်ဖြန် သက်တမ်းကုန်မည်',
-      zero: '$recordName ယနေ့ သက်တမ်းကုန်မည်',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName၊ သင်၏ $recordName $date တွင် သက်တမ်းကုန်မည်။ စောစီးစွာ သက်တမ်းတိုးထားခြင်းက သင့်ကို စိတ်ချရစေသည်။',
-      one: '$firstName၊ သင်၏ $recordName မနက်ဖြန် သက်တမ်းကုန်မည်။ သက်တမ်းမကုန်သွားစေရန် ယခု သက်တမ်းတိုးပါ။',
-      zero: '$firstName၊ သင်၏ $recordName ယနေ့ သက်တမ်းကုန်မည်။ သက်တမ်းတိုးပြီးပြီလား။ သက်တမ်းကုန်ရက်ကို အပ်ဒိတ်လုပ်ပါ။',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'နောက်ဆုံး သတိပေးချက်: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ရက်အကြာ $date တွင်',
-      one: 'မနက်ဖြန်',
-    );
-    return '$firstName၊ သင်၏ $recordName $_temp0 သက်တမ်းကုန်မည်။ ဤသည်မှာ နောက်ဆုံး သတိပေးချက် ဖြစ်သည်၊ သက်တမ်းတိုးပါ သို့မဟုတ် ရက်စွဲကို အပ်ဒိတ်လုပ်ပါ။';
   }
 
   @override
@@ -1529,7 +1470,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'လာမည့် မှတ်တမ်း $count ခုတွင် စရိတ် မထည့်ရသေးပါ။',
-      one: 'လာမည့် မှတ်တမ်း ၁ ခုတွင် စရိတ် မထည့်ရသေးပါ။',
+      one: 'လာမည့် မှတ်တမ်း $count ခုတွင် စရိတ် မထည့်ရသေးပါ။',
     );
     return '$_temp0';
   }
@@ -1563,7 +1504,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'မှတ်တမ်း $count ခု',
-      one: 'မှတ်တမ်း ၁ ခု',
+      one: 'မှတ်တမ်း $count ခု',
       zero: 'မှတ်တမ်း မရှိပါ',
     );
     return '$_temp0';
@@ -1619,7 +1560,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'လူ $count ဦးအထိ',
-      one: 'လူ ၁ ဦးအထိ',
+      one: 'လူ $count ဦးအထိ',
     );
     return '$_temp0';
   }
@@ -1636,7 +1577,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'လူ $count ဦးအထိ ထည့်နိုင်သည်',
-      one: 'လူ ၁ ဦး ထည့်နိုင်သည်',
+      one: 'လူ $count ဦး ထည့်နိုင်သည်',
     );
     return '$_temp0';
   }
@@ -2220,7 +2161,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'မှတ်တမ်း $count ခု',
-      one: 'မှတ်တမ်း ၁ ခု',
+      one: 'မှတ်တမ်း $count ခု',
     );
     return '$_temp0';
   }
@@ -2251,7 +2192,7 @@ class AppLocalizationsMy extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ရက် ခရီး',
-      one: '၁ ရက် ခရီး',
+      one: '$days ရက် ခရီး',
     );
     return '$_temp0';
   }
@@ -2324,7 +2265,7 @@ class AppLocalizationsMy extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months လ',
-      one: '၁ လ',
+      one: '$months လ',
     );
     return '$name သည် $date တွင် သက်တမ်းကုန်မည်။ နိုင်ငံအများစုသည် သင်ပြန်လာပြီးနောက် $_temp0 သက်တမ်းကျန်ရန် လိုအပ်သည်။';
   }
@@ -2340,7 +2281,7 @@ class AppLocalizationsMy extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ခရီးစပြီး $days ရက်မြောက်နေ့',
-      one: 'ခရီးစပြီး ၁ ရက်မြောက်နေ့',
+      one: 'ခရီးစပြီး $days ရက်မြောက်နေ့',
       zero: 'သင်ထွက်ခွာသည့်နေ့',
     );
     return '$name သည် $date တွင် သက်တမ်းကုန်မည်၊ $_temp0။';
@@ -2518,7 +2459,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ဂရုပြုရန် $count ခု ရှိသည်',
-      one: 'ဂရုပြုရန် ၁ ခု ရှိသည်',
+      one: 'ဂရုပြုရန် $count ခု ရှိသည်',
     );
     return '$_temp0';
   }
@@ -2599,7 +2540,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'မထွက်ခွာမီ စာရွက်စာတမ်း $count ခုကို ဂရုပြုရန် လိုသည်။',
-      one: 'မထွက်ခွာမီ စာရွက်စာတမ်း ၁ ခုကို ဂရုပြုရန် လိုသည်။',
+      one: 'မထွက်ခွာမီ စာရွက်စာတမ်း $count ခုကို ဂရုပြုရန် လိုသည်။',
     );
     return '$_temp0';
   }
@@ -2702,7 +2643,7 @@ class AppLocalizationsMy extends AppLocalizations {
       limit,
       locale: localeName,
       other: 'ဓာတ်ပုံ $limit ပုံ',
-      one: 'ဓာတ်ပုံ ၁ ပုံ',
+      one: 'ဓာတ်ပုံ $limit ပုံ',
     );
     return 'အခမဲ့ အစီအစဉ်တွင် မှတ်တမ်းတစ်ခုစီသို့ $_temp0 ထည့်နိုင်သည်။ Premium ဖြင့် $premiumLimit ပုံအထိ ထည့်နိုင်သည်။';
   }
@@ -2738,7 +2679,7 @@ class AppLocalizationsMy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ဓာတ်ပုံ $count ပုံ',
-      one: 'ဓာတ်ပုံ ၁ ပုံ',
+      one: 'ဓာတ်ပုံ $count ပုံ',
     );
     return '$_temp0';
   }
@@ -8216,4 +8157,202 @@ class AppLocalizationsMy extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'သတိပေးချက်: $name $date တွင် သက်တမ်းကုန်မည်';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName ယနေ့ သက်တမ်းကုန်မည်';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName မနက်ဖြန် သက်တမ်းကုန်မည်';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days ရက်အတွင်း သက်တမ်းကုန်မည်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName သက်တမ်းကုန်သွားပြီ';
+  }
+
+  @override
+  String get remLockedTitle => 'လော့ခ်ချထားသော မှတ်တမ်းတစ်ခုက သင့်အာရုံစိုက်မှု လိုအပ်နေသည်';
+
+  @override
+  String remLockedBody(String date) {
+    return '၎င်း၏ရက်စွဲမှာ $date ဖြစ်သည်။ မည်သည့်မှတ်တမ်းဖြစ်သည်ကို ကြည့်ရန် Vaultara ကို လော့ခ်ဖွင့်ပါ။';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'သင်၏ \"$recordName\" မှတ်တမ်း ယနေ့ သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'သင်၏ \"$recordName\" မှတ်တမ်း မနက်ဖြန် သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'သင်၏ \"$recordName\" မှတ်တမ်း $date တွင် သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName၊ သင်၏ \"$recordName\" မှတ်တမ်း ယနေ့ သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName၊ သင်၏ \"$recordName\" မှတ်တမ်း မနက်ဖြန် သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName၊ သင်၏ \"$recordName\" မှတ်တမ်း $date တွင် သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: \"$recordName\" မှတ်တမ်း ယနေ့ သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: \"$recordName\" မှတ်တမ်း မနက်ဖြန် သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" မှတ်တမ်း $date တွင် သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'သင်၏ \"$recordName\" မှတ်တမ်း $date တွင် သက်တမ်းကုန်ခဲ့သည်။';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" မှတ်တမ်း $date တွင် သက်တမ်းကုန်ခဲ့သည်။';
+  }
+
+  @override
+  String get remTipToday => 'သက်တမ်းတိုးပြီးပြီလား။ ၎င်း၏ရက်စွဲကို အပ်ဒိတ်လုပ်ပါ။';
+
+  @override
+  String get remTipTomorrow => 'သက်တမ်းမကုန်စေရန် ယခုပင် သက်တမ်းတိုးပါ။';
+
+  @override
+  String get remTipEarly => 'စောစီးစွာ သက်တမ်းတိုးခြင်းက သင့်ကို အကာအကွယ်ရှိစေသည်။';
+
+  @override
+  String get remTipLast => 'သက်တမ်းမကုန်မီ နောက်ဆုံးသတိပေးချက် ဖြစ်သည်။';
+
+  @override
+  String get remTipExpired => 'သက်တမ်းတိုးပါ၊ သို့မဟုတ် ပြုလုပ်ပြီးပါက ရက်စွဲကို အပ်ဒိတ်လုပ်ပါ။';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" ကို သက်တမ်းတိုးရန် စတင်ချိန် ရောက်ပြီ။ $date တွင် သက်တမ်းကုန်မည်ဖြစ်၍ ယခုစတင်ပါက အချိန်အလုံအလောက် ရှိပါမည်။';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) ကို သက်တမ်းတိုးရန် စတင်ချိန် ရောက်ပြီ။ $date တွင် သက်တမ်းကုန်မည်ဖြစ်၍ ယခုစတင်ပါက အချိန်အလုံအလောက် ရှိပါမည်။';
+  }
+
+  @override
+  String get notifChannelName => 'သက်တမ်းကုန် သတိပေးချက်များ';
+
+  @override
+  String get notifChannelDescription => 'သင်၏မှတ်တမ်းများ သက်တမ်းမကုန်မီ သတိပေးချက်များ';
+
+  @override
+  String get notifTestTitle => 'စမ်းသပ် အသိပေးချက်';
+
+  @override
+  String get notifTestBody => 'Vaultara သတိပေးချက်များ ဤသို့ရောက်လာပါသည်။';
+
+  @override
+  String get notifTestAction => 'စမ်းသပ် အသိပေးချက် ပို့ရန်';
+
+  @override
+  String get notifTestSubtitle => 'သတိပေးချက်များ ဤဖုန်းသို့ ရောက်မရောက် စစ်ဆေးပါ';
+
+  @override
+  String get notifTestSent => 'စမ်းသပ်မှု ပို့ပြီးပါပြီ။ စက္ကန့်အနည်းငယ်အတွင်း ရောက်လာပါမည်။';
+
+  @override
+  String get notifAfterExpiryTitle => 'မှတ်တမ်း သက်တမ်းကုန်ပြီးနောက် သတိပေးပါ';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 ရက်နှင့် 14 ရက်အကြာ၊ သက်တမ်းမတိုးရသေးပါက';
+
+  @override
+  String get notifWeeklyTitle => 'တနင်္လာနေ့ အနှစ်ချုပ်';
+
+  @override
+  String get notifWeeklySubtitle => 'ထိုအပတ်တွင် တစ်ခုခု သက်တမ်းကုန်မည်ဆိုပါက တနင်္လာနေ့မနက် မက်ဆေ့ချ်';
+
+  @override
+  String get notifPushSection => 'မိသားစုနှင့် အပ်ဒိတ်များ';
+
+  @override
+  String get notifHouseholdTitle => 'မျှဝေထားသော မှတ်တမ်းများ';
+
+  @override
+  String get notifHouseholdSubtitle => 'မျှဝေထားသော မှတ်တမ်းတစ်ခု သက်တမ်းကုန်ခါနီးပြီး မည်သူမျှ သက်တမ်းမတိုးရသေးသည့်အခါ';
+
+  @override
+  String get notifUpdatesTitle => 'သင်တောင်းဆိုထားသော အပ်ဒိတ်များ';
+
+  @override
+  String get notifUpdatesSubtitle => 'တစ်စုံတစ်ယောက်က မှတ်တမ်း၏ အချက်အလက်အသစ်ကို ပို့သည့်အခါ';
+
+  @override
+  String get notifSecurityNote => 'သင့်အကောင့်သို့ ဝင်ရောက်မှုအသစ်များအကြောင်း သတိပေးချက်များကို အမြဲပို့ပါသည်။';
+
+  @override
+  String get notifIosHelpTitle => 'သတိပေးချက်များ မရောက်ဘူးလား။';
+
+  @override
+  String get notifIosHelpSubtitle => 'သင်၏ iPhone ဆက်တင်များကို စစ်ဆေးပါ';
+
+  @override
+  String get notifIosHelpStep1 => 'ဆက်တင်များ၊ ထို့နောက် အသိပေးချက်များ၊ ထို့နောက် Vaultara ကိုဖွင့်ပြီး အသိပေးချက်များကို ခွင့်ပြုရန် ဖွင့်ပါ။';
+
+  @override
+  String get notifIosHelpStep2 => 'လော့ခ်မျက်နှာပြင်၊ အသိပေးချက်စင်တာနှင့် ဘန်နာများကို ဖွင့်ပါ။';
+
+  @override
+  String get notifIosHelpStep3 => 'Focus ကို သုံးပါက Vaultara ကို ခွင့်ပြုထားသော အက်ပ်များတွင် ထည့်ပါ။';
+
+  @override
+  String get notifIosHelpStep4 => 'ရက်သတ္တပတ်အနည်းငယ်တိုင်း Vaultara ကိုဖွင့်ပါ။ iPhone သည် ကြိုတင်သတိပေးချက် အရေအတွက်အကန့်အသတ်ဖြင့်သာ သိမ်းထားပြီး အက်ပ်ဖွင့်လျှင် နောက်ထပ်များကို စီစဉ်ပေးပါသည်။';
+
+  @override
+  String get homeNextUpEmpty => 'မကြာမီ သက်တမ်းကုန်မည့်အရာ မရှိပါ။ အားလုံး အဆင်သင့်ပါ။';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ရက် 30 အတွင်း $count ခု',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'ပင်ထိုးထားသော အမျိုးအစားများ';
 }

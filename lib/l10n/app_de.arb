@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara hilft dir, wichtige Ablaufdaten im Blick zu behalten, damit nichts übersehen wird.",
   "homeWelcomeSubtitleFirst": "Schön, dass du hier bist. Vaultara hilft dir, organisiert zu bleiben, indem wichtige Daten und Einträge an einem sicheren Ort gespeichert werden.",
   "homeWelcomeSubtitleBack": "Schön, dich wiederzusehen. Vaultara ist da, wenn du deine wichtigen Daten und Einträge überprüfen möchtest.",
-  "summaryAllCaption": "In Vaultara verfolgt",
-  "summaryExpiredTitle": "Abgelaufen",
-  "summaryExpiredCaption": "Ablaufdatum überschritten",
   "editorNotes": "Notizen",
   "editorReminderNone": "Keine Erinnerung",
   "editorReminderOnExpiry": "Am Ablaufdatum",
@@ -199,7 +196,6 @@
   "addRecord": "Eintrag hinzufügen",
   "noRecordsYet": "Noch keine Einträge.",
   "deleteRecordTitle": "Eintrag löschen",
-  "summaryAllRecordsTitle": "Alle Einträge",
   "noGroupFound": "Noch keine Gruppen",
   "groupLabel": "{count, plural, one{{count} Gruppe} other{{count} Gruppen}}",
   "recordsLabel": "{count, plural, one{{count} Eintrag} other{{count} Einträge}}",
@@ -444,7 +440,7 @@
   "addNotesHint": "Notizen hinzufügen (optional)",
   "expiryTimelineTitle": "Ablauf-Zeitleiste",
   "expiryTimelineSubtitle": "Tippe auf einen Monat, um die Einträge zu sehen, die in diesem Monat ablaufen",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 Eintrag} other{{count} Einträge}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} Eintrag} other{{count} Einträge}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -452,10 +448,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Bevorstehend",
-  "summaryUpcomingCaption": "Innerhalb von 30 Tagen",
-  "summaryUrgentTitle": "Dringend",
-  "summaryUrgentCaption": "Innerhalb von 7 Tagen",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Tutorials",
   "profileTutorialsSubtitle": "App-Tutorials durchsuchen",
@@ -487,7 +479,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Keine Erinnerung",
   "reminderOnExpiry": "Am Ablaufdatum",
-  "reminderDaysBefore": "{days, plural, one{1 Tag vorher} other{{days} Tage vorher}}",
+  "reminderDaysBefore": "{days, plural, one{{days} Tag vorher} other{{days} Tage vorher}}",
   "reminderCustomDaysTitle": "Benutzerdefinierte Tage eingeben",
   "reminderCascadeTitle": "Gestaffelte Erinnerungen",
   "reminderCascadeSubtitle": "Mehrere Benachrichtigungen erhalten, bevor ein Eintrag abläuft",
@@ -518,16 +510,16 @@
   "smartInsightNoRecordsHeading": "Füge deinen ersten Eintrag hinzu",
   "smartInsightNoRecordsBody": "Beginne, deine Einträge zu verfolgen, und Vaultara zeigt dir hier intelligente Einblicke.",
   "smartInsightExpiresTodaySingleBody": "{name} läuft heute ab. Wenn du es bereits verlängert hast, aktualisiere hier das Datum.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} laufen heute ab.} =1{{names} und 1 weiterer Eintrag laufen heute ab.} other{{names} und {extra} weitere Einträge laufen heute ab.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} laufen heute ab.} =1{{names} und {extra} weiterer Eintrag laufen heute ab.} other{{names} und {extra} weitere Einträge laufen heute ab.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} läuft morgen ab und hat keine Erinnerung. Richte eine ein, damit du es nicht vergisst.} other{{name} läuft am {date} ab und hat keine Erinnerung. Richte eine ein, damit du es nicht vergisst.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} läuft am {dateA} ab und {b} am {dateB}, also etwa zur gleichen Zeit. Wenn zwei Einträge so nah beieinanderliegen, vergisst man leicht einen davon.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} und {c} laufen alle vor dem {lastDate} ab, etwa zur gleichen Zeit. Wenn mehrere Einträge so nah beieinanderliegen, vergisst man leicht einen davon.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} und 1 weiterer Eintrag laufen vor dem {lastDate} ab, etwa zur gleichen Zeit. Wenn mehrere Einträge so nah beieinanderliegen, vergisst man leicht einen davon.} other{{a}, {b} und {extra} weitere Einträge laufen vor dem {lastDate} ab, etwa zur gleichen Zeit. Wenn mehrere Einträge so nah beieinanderliegen, vergisst man leicht einen davon.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} und {extra} weiterer Eintrag laufen vor dem {lastDate} ab, etwa zur gleichen Zeit. Wenn mehrere Einträge so nah beieinanderliegen, vergisst man leicht einen davon.} other{{a}, {b} und {extra} weitere Einträge laufen vor dem {lastDate} ab, etwa zur gleichen Zeit. Wenn mehrere Einträge so nah beieinanderliegen, vergisst man leicht einen davon.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Am nächsten Tag läuft nichts ab. Dein nächster Ablauf ist am {date}.} other{In den nächsten {days} Tagen läuft nichts ab. Dein nächster Ablauf ist am {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 deiner Einträge in der Kategorie {category} läuft am {date} ab. Das übersieht man leicht.} other{{count} deiner Einträge in der Kategorie {category} laufen vor dem {date} ab. Wenn sie so gebündelt sind, vergisst man leicht einen davon.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 bevorstehender Ablauf ist durch eine Erinnerung abgedeckt. Sonst erfordert nichts deine Aufmerksamkeit.} other{{count} bevorstehende Abläufe sind durch Erinnerungen abgedeckt. Sonst erfordert nichts deine Aufmerksamkeit.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} deiner Einträge in der Kategorie {category} läuft am {date} ab. Das übersieht man leicht.} other{{count} deiner Einträge in der Kategorie {category} laufen vor dem {date} ab. Wenn sie so gebündelt sind, vergisst man leicht einen davon.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} bevorstehender Ablauf ist durch eine Erinnerung abgedeckt. Sonst erfordert nichts deine Aufmerksamkeit.} other{{count} bevorstehende Abläufe sind durch Erinnerungen abgedeckt. Sonst erfordert nichts deine Aufmerksamkeit.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Alles ist auf dem neuesten Stand. Im Moment erfordert nichts deine Aufmerksamkeit.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Im Moment ist nichts dringend, aber 1 bevorstehender Eintrag hat noch keine Erinnerung.} other{Im Moment ist nichts dringend, aber {count} bevorstehende Einträge haben noch keine Erinnerung.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Im Moment ist nichts dringend, aber {count} bevorstehender Eintrag hat noch keine Erinnerung.} other{Im Moment ist nichts dringend, aber {count} bevorstehende Einträge haben noch keine Erinnerung.}}",
   "smartInsightCloseExpiriesHeading": "Laufen etwa zur gleichen Zeit ab",
   "plansHeadline": "Hol dir das volle Vaultara-Erlebnis",
   "plansSubhead": "Unbegrenzte Einträge, eigene Gruppen und Erinnerungen, die genau auf dich abgestimmt sind.",
@@ -638,7 +630,7 @@
   "reminderCascadeRemoveStep": "Entfernen",
   "reminderCascadeDuplicate": "Eine andere Erinnerung nutzt bereits diesen Tag",
   "reminderCascadeOutOfRange": "Gib einen Wert zwischen {min} und {max} Tagen ein",
-  "reminderCascadeStepLabel": "Erinnerung {position}: {days, plural, =1{1 Tag} other{{days} Tage}} vorher",
+  "reminderCascadeStepLabel": "Erinnerung {position}: {days, plural, =1{{days} Tag} other{{days} Tage}} vorher",
   "expiryTimelineNotReady": "Deine Zeitleiste erscheint, sobald du Einträge hast, die in einigen verschiedenen Monaten ablaufen.",
   "verifyEmailResendIn": "Erneut senden in {seconds} s",
   "verifyEmailSpamHint": "Nicht angekommen? Überprüfe deinen Spam- oder Junk-Ordner.",
@@ -647,13 +639,10 @@
   "verifyEmailDiscardBody": "Dieses Konto ist nicht verifiziert. Wenn du jetzt gehst, wird es gelöscht und du kannst dich mit einer beliebigen E-Mail-Adresse neu registrieren.",
   "verifyEmailDiscardAction": "Verwerfen",
   "verifyEmailKeepWaiting": "Weiter warten",
-  "expiringBadge": "{count, plural, =1{1 läuft bald ab} other{{count} laufen bald ab}}",
+  "expiringBadge": "{count, plural, =1{{count} läuft bald ab} other{{count} laufen bald ab}}",
   "noRecordsToday": "Heute läuft nichts ab",
   "noRecordsTomorrow": "Morgen läuft nichts ab",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} läuft heute ab} =1{{recordName} läuft morgen ab} other{{recordName} läuft in {days} Tagen ab}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, dein {recordName} läuft heute ab. Bereits verlängert? Aktualisiere das Ablaufdatum.} =1{{firstName}, dein {recordName} läuft morgen ab. Verlängere ihn jetzt, damit er nicht abläuft.} other{{firstName}, dein {recordName} läuft am {date} ab. Eine frühzeitige Verlängerung schützt dich.}}",
   "cascadeFinalStepTitle": "Letzte Erinnerung: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, dein {recordName} läuft {days, plural, =1{morgen} other{in {days} Tagen, am {date}}} ab. Dies ist deine letzte Erinnerung, verlängere ihn oder aktualisiere das Datum.",
   "notificationsTitle": "Benachrichtigungen",
   "notificationsProfileEnabledSubtitle": "Erinnerungen kommen um {time} an.",
   "notificationsProfileDisabledSubtitle": "Benachrichtigungen sind ausgeschaltet.",
@@ -712,7 +701,7 @@
   "costCardTitle": "Verlängerungskosten",
   "costCardSubtitle": "Was deine Verlängerungen kosten, Monat für Monat",
   "costCardBusiest": "Teuerster Monat: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{Für 1 anstehenden Eintrag fehlen noch die Kosten.} other{Für {count} anstehende Einträge fehlen noch die Kosten.}}",
+  "costCardMissing": "{count, plural, =1{Für {count} anstehenden Eintrag fehlen noch die Kosten.} other{Für {count} anstehende Einträge fehlen noch die Kosten.}}",
   "costCardEmpty": "Füge deinen Einträgen Kosten hinzu, um zu sehen, was Verlängerungen kosten.",
   "costCardLockedHint": "Mit Premium siehst du, was deine Verlängerungen im nächsten Jahr kosten.",
   "costCardSeePremium": "Premium ansehen",
@@ -720,7 +709,7 @@
   "familyTitle": "Familie",
   "familyIntro": "Behalte die Einträge der Menschen im Blick, um die du dich kümmerst. Ihre Erinnerungen zeigen ihren Namen, damit du weißt, wessen Eintrag es ist.",
   "familyMe": "Ich",
-  "familyRecordCount": "{count, plural, =0{Keine Einträge} =1{1 Eintrag} other{{count} Einträge}}",
+  "familyRecordCount": "{count, plural, =0{Keine Einträge} =1{{count} Eintrag} other{{count} Einträge}}",
   "familyRename": "Umbenennen",
   "familyRemove": "Entfernen",
   "familyRemoveTitle": "{name} entfernen?",
@@ -733,10 +722,10 @@
   "familyNameLabel": "Name",
   "familyNameHint": "Zum Beispiel Thabo",
   "familyNameRequired": "Gib einen Namen ein",
-  "familyLimitNote": "{count, plural, =1{Bis zu 1 Person} other{Bis zu {count} Personen}}",
+  "familyLimitNote": "{count, plural, =1{Bis zu {count} Person} other{Bis zu {count} Personen}}",
   "familyUpsellTitle": "Behalte die Dokumente deiner Familie im Blick",
   "familyBenefitPremium": "Alles aus Premium",
-  "familyBenefitPeople": "{count, plural, =1{1 Person hinzufügen} other{Bis zu {count} Personen hinzufügen}}",
+  "familyBenefitPeople": "{count, plural, =1{{count} Person hinzufügen} other{Bis zu {count} Personen hinzufügen}}",
   "familyBenefitOwnRecords": "Jede Person hat eigene Einträge und Erinnerungen",
   "familyBenefitOneSubscription": "Ein Abo für den ganzen Haushalt",
   "familySeePlan": "Familien-Abo ansehen",
@@ -922,14 +911,14 @@
   "calendarExportError": "Wir konnten die Kalenderdatei nicht erstellen. Versuch es noch einmal.",
   "pdfExportTitle": "Vaultara-Einträge",
   "pdfExportGenerated": "Erstellt am {date}",
-  "pdfExportCount": "{count, plural, =1{1 Eintrag} other{{count} Einträge}}",
+  "pdfExportCount": "{count, plural, =1{{count} Eintrag} other{{count} Einträge}}",
   "pdfExportCost": "Verlängerungskosten: {amount}",
   "pdfExportBuilding": "Dein PDF wird erstellt...",
   "pdfExportError": "Wir konnten das PDF nicht erstellen. Versuch es noch einmal.",
   "travelTitle": "Reise-Check",
   "travelDeparture": "Abreise",
   "travelReturn": "Rückkehr",
-  "travelTripLength": "{days, plural, =1{1-tägige Reise} other{{days}-tägige Reise}}",
+  "travelTripLength": "{days, plural, =1{{days}-tägige Reise} other{{days}-tägige Reise}}",
   "travelDriving": "Ich fahre selbst",
   "travelNeedsVisa": "Ich brauche ein Visum",
   "travelWho": "Wer reist?",
@@ -950,9 +939,9 @@
   "travelNoLicence": "Kein Führerschein hinzugefügt",
   "travelOtherExpires": "Läuft ab, während du weg bist",
   "travelDetailValidUntil": "{name} ist gültig bis {date}.",
-  "travelDetailPassportBuffer": "{name} läuft am {date} ab. Viele Länder verlangen nach deiner Rückkehr noch {months, plural, =1{1 Monat} other{{months} Monate}} Gültigkeit.",
+  "travelDetailPassportBuffer": "{name} läuft am {date} ab. Viele Länder verlangen nach deiner Rückkehr noch {months, plural, =1{{months} Monat} other{{months} Monate}} Gültigkeit.",
   "travelDetailExpiresBeforeLeaving": "{name} läuft am {date} ab, also vor deiner Abreise.",
-  "travelDetailExpiresDuringTrip": "{name} läuft am {date} ab, {days, plural, =0{am Tag deiner Abreise} =1{1 Tag nach Reisebeginn} other{{days} Tage nach Reisebeginn}}.",
+  "travelDetailExpiresDuringTrip": "{name} läuft am {date} ab, {days, plural, =0{am Tag deiner Abreise} =1{{days} Tag nach Reisebeginn} other{{days} Tage nach Reisebeginn}}.",
   "travelDetailNoPassport": "Füge deinen Reisepass hinzu, damit Vaultara ihn prüfen kann.",
   "travelDetailNoVisa": "Füge dein Visum hinzu, damit Vaultara es prüfen kann.",
   "travelDetailNoInsurance": "Füge deine Reiseversicherung hinzu, um zu prüfen, ob sie die ganze Reise abdeckt.",
@@ -1052,7 +1041,7 @@
   "vaultChooseFromGallery": "Aus Galerie wählen",
   "vaultRemove": "Entfernen",
   "vaultLimitTitle": "Fotolimit erreicht",
-  "vaultLimitFreeBody": "Im kostenlosen Abo kannst du jedem Eintrag {limit, plural, =1{1 Foto} other{{limit} Fotos}} hinzufügen. Mit Premium sind es bis zu {premiumLimit}.",
+  "vaultLimitFreeBody": "Im kostenlosen Abo kannst du jedem Eintrag {limit, plural, =1{{limit} Foto} other{{limit} Fotos}} hinzufügen. Mit Premium sind es bis zu {premiumLimit}.",
   "vaultLimitPremiumBody": "Du kannst jedem Eintrag bis zu {limit} Fotos hinzufügen. Entferne eines, um ein weiteres hinzuzufügen.",
   "vaultSeePremium": "Premium ansehen",
   "vaultPdfShort": "PDF",
@@ -1060,7 +1049,7 @@
   "vaultOpenFile": "Öffnen",
   "vaultClose": "Schließen",
   "vaultPageIndicator": "{current} von {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 Foto} other{{count} Fotos}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} Foto} other{{count} Fotos}}",
   "travelReadinessTitle": "Reisebereitschaft",
   "travelReadinessBody": "Basierend auf den Reisepässen und Führerscheinen, die in Vaultara gespeichert sind. Die meisten Länder verlangen, dass dein Reisepass bei der Rückkehr noch mindestens 6 Monate gültig ist.",
   "travelReadyUntil": "Reisepass für Reisen gültig bis {date}",
@@ -1380,7 +1369,7 @@
   "photoLockTurnOn": "Verschlüsselte Fotos einschalten",
   "photoLockStatusOn": "Verschlüsselte Fotos sind an",
   "photoLockStatusOnBody": "Neue Fotos werden auf diesem Handy verschlüsselt, bevor sie hochgeladen werden.",
-  "photoLockPendingTitle": "{count, plural, one{1 Foto ist noch nicht verschlüsselt} other{{count} Fotos sind noch nicht verschlüsselt}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} Foto ist noch nicht verschlüsselt} other{{count} Fotos sind noch nicht verschlüsselt}}",
   "photoLockPendingBody": "Fotos, die du vor dem Einschalten hinzugefügt hast, werden noch auf normale Weise gespeichert.",
   "photoLockEncryptExisting": "Meine vorhandenen Fotos verschlüsseln",
   "photoLockKeepOpen": "Lass Vaultara geöffnet, bis der Vorgang fertig ist.",
@@ -1417,7 +1406,7 @@
   "photoLockSetupFailed": "Wir konnten verschlüsselte Fotos nicht einschalten. Prüfe deine Verbindung und versuche es erneut.",
   "photoLockAlreadyOn": "Verschlüsselte Fotos sind für dein Konto schon an. Gib deinen Wiederherstellungsschlüssel ein, um sie auf diesem Handy zu nutzen.",
   "photoLockEncryptExistingTitle": "Vorhandene Fotos verschlüsseln?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Du hast 1 Foto, das noch nicht verschlüsselt ist. Wir können es jetzt verschlüsseln.} other{Du hast {count} Fotos, die noch nicht verschlüsselt sind. Wir können sie jetzt verschlüsseln.}} Lass Vaultara geöffnet, bis der Vorgang fertig ist.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Du hast {count} Foto, das noch nicht verschlüsselt ist. Wir können es jetzt verschlüsseln.} other{Du hast {count} Fotos, die noch nicht verschlüsselt sind. Wir können sie jetzt verschlüsseln.}} Lass Vaultara geöffnet, bis der Vorgang fertig ist.",
   "photoLockEncryptNow": "Jetzt verschlüsseln",
   "photoLockEntryBody": "Gib den Wiederherstellungsschlüssel ein, den du beim Einschalten der verschlüsselten Fotos gespeichert hast. Bindestriche und Leerzeichen sind optional.",
   "photoLockEntryLabel": "Wiederherstellungsschlüssel",
@@ -1426,8 +1415,8 @@
   "photoLockUnlocked": "Deine Fotos sind auf diesem Handy entsperrt.",
   "photoLockInvalidFormat": "Das sieht nicht wie ein Wiederherstellungsschlüssel aus. Prüfe jedes Zeichen und versuche es erneut.",
   "photoLockWrongKey": "Dieser Wiederherstellungsschlüssel stimmt nicht. Prüfe ihn und versuche es erneut.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Zu viele Versuche. Bitte warte 1 Sekunde und versuche es erneut.} other{Zu viele Versuche. Bitte warte {seconds} Sekunden und versuche es erneut.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Zu viele Versuche. Bitte warte 1 Minute und versuche es erneut.} other{Zu viele Versuche. Bitte warte {minutes} Minuten und versuche es erneut.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Zu viele Versuche. Bitte warte {seconds} Sekunde und versuche es erneut.} other{Zu viele Versuche. Bitte warte {seconds} Sekunden und versuche es erneut.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Zu viele Versuche. Bitte warte {minutes} Minute und versuche es erneut.} other{Zu viele Versuche. Bitte warte {minutes} Minuten und versuche es erneut.}}",
   "photoLockOffline": "Wir konnten Vaultara nicht erreichen. Prüfe deine Verbindung und versuche es erneut.",
   "photoLockNotSetUp": "Verschlüsselte Fotos sind für dein Konto nicht eingeschaltet.",
   "photoLockUnlockFailed": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
@@ -1683,13 +1672,13 @@
   "dailyDigestSwitchSubtitle": "Erhalte zur Zeit deiner Erinnerung eine Benachrichtigung, die alles auflistet, was an dem Tag fällig ist.",
   "dailyDigestTurnedOn": "Deine Erinnerungen kommen jetzt als eine tägliche Zusammenfassung.",
   "dailyDigestTurnedOff": "Einzelne Erinnerungen für jeden Eintrag sind wieder an.",
-  "dailyDigestTitle": "{count, plural, one{1 Eintrag braucht deine Aufmerksamkeit} other{{count} Einträge brauchen deine Aufmerksamkeit}}",
+  "dailyDigestTitle": "{count, plural, one{{count} Eintrag braucht deine Aufmerksamkeit} other{{count} Einträge brauchen deine Aufmerksamkeit}}",
   "dailyDigestBody": "Demnächst: {names}.",
   "dailyDigestBodyMore": "Demnächst: {names} und {count} weitere.",
   "dailyDigestLockedRecord": "ein gesperrter Eintrag",
   "renewReasonRepeat": "{months, plural, one{Basierend auf deiner Wiederholung jeden Monat} other{Basierend auf deiner Wiederholung alle {months} Monate}}",
   "renewReasonHistory": "{count, plural, one{Basierend auf deiner letzten Verlängerung} other{Basierend auf deinen letzten {count} Verlängerungen}}",
-  "renewReasonTypical": "{years, plural, one{Meist 1 Jahr gültig} other{Meist {years} Jahre gültig}}",
+  "renewReasonTypical": "{years, plural, one{Meist {years} Jahr gültig} other{Meist {years} Jahre gültig}}",
   "renewChangeHint": "Tippe auf das Datum, um es zu ändern.",
   "renewPickDate": "Neues Ablaufdatum wählen",
   "renewPickDateHint": "Wähle das Datum, das auf deinem neuen Dokument steht.",
@@ -1842,9 +1831,9 @@
   "secHistoryIntro": "Anmeldungen und Änderungen an deinem Konto aus den letzten 90 Tagen.",
   "secHistoryEmpty": "Noch nichts vorhanden.",
   "secJustNow": "Gerade eben",
-  "secMinutesAgo": "{count, plural, one{vor 1 Minute} other{vor {count} Minuten}}",
-  "secHoursAgo": "{count, plural, one{vor 1 Stunde} other{vor {count} Stunden}}",
-  "secDaysAgo": "{count, plural, one{vor 1 Tag} other{vor {count} Tagen}}",
+  "secMinutesAgo": "{count, plural, one{vor {count} Minute} other{vor {count} Minuten}}",
+  "secHoursAgo": "{count, plural, one{vor {count} Stunde} other{vor {count} Stunden}}",
+  "secDaysAgo": "{count, plural, one{vor {count} Tag} other{vor {count} Tagen}}",
   "secEventNewSignIn": "Neues Gerät angemeldet",
   "secEventSignIn": "Angemeldet",
   "secEventPasswordChanged": "Passwort geändert",
@@ -2165,8 +2154,8 @@
   "lifePlanAutoChanged": "Vaultara hat eine Änderung an diesem Eintrag bemerkt, deshalb ist er als erledigt markiert.",
   "lifePlanAutoAdded": "Hinzugefügt, nachdem du diesen Plan gestartet hast.",
   "lifePlanProgress": "{done} von {total} erledigt",
-  "lifePlanDaysToGo": "{count, plural, =1{Noch 1 Tag} other{Noch {count} Tage}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Vor 1 Tag} other{Vor {count} Tagen}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Noch {count} Tag} other{Noch {count} Tage}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Vor {count} Tag} other{Vor {count} Tagen}}",
   "lifePlanAllDone": "Alles ist erledigt. Du kannst den Plan als abgeschlossen markieren.",
   "lifePlanFinish": "Als abgeschlossen markieren",
   "lifePlanReopen": "Wieder öffnen",
@@ -2295,7 +2284,7 @@
   "lifePlanReadAloudUnavailable": "Vorlesen ist auf diesem Handy nicht verfügbar.",
   "lifePlanProofPack": "Nachweis-Paket erstellen",
   "lifePlanOpenFamily": "Familie öffnen",
-  "lifePlanRemoved": "{count, plural, =1{1 von Ihnen gelöschter Eintrag zählt als gekündigt.} other{{count} von Ihnen gelöschte Einträge zählen als gekündigt.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} von Ihnen gelöschter Eintrag zählt als gekündigt.} other{{count} von Ihnen gelöschte Einträge zählen als gekündigt.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2353,7 +2342,7 @@
   "lostWalletCheckupBody": "Bereite dich jetzt vor, damit nichts vergessen wird, falls sie verloren geht.",
   "lostWalletCheckupAllGood": "Alles bereit. Falls sie je verloren geht, bist du vorbereitet.",
   "lostWalletSetPlaceBody": "Öffne eine Karte oder ein Dokument und wähle, wo du es aufbewahrst. Mach das für Ausweis, Führerschein und Karten.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 Eintrag hat kein Foto. Mit Foto geht der Ersatz schneller.} other{{count} Einträge haben kein Foto. Mit Fotos geht der Ersatz schneller.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} Eintrag hat kein Foto. Mit Foto geht der Ersatz schneller.} other{{count} Einträge haben kein Foto. Mit Fotos geht der Ersatz schneller.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2361,7 +2350,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{Für 1 Karte ist keine Sperrnummer gespeichert.} other{Für {count} Karten ist keine Sperrnummer gespeichert.}}",
+  "lostWalletIssueLines": "{count, plural, =1{Für {count} Karte ist keine Sperrnummer gespeichert.} other{Für {count} Karten ist keine Sperrnummer gespeichert.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2461,7 +2450,7 @@
     }
   },
   "lostWalletReportNoCase": "Aktenzeichen: noch nicht gemeldet",
-  "lostWalletReportCount": "{count, plural, =1{1 Eintrag unten aufgeführt} other{{count} Einträge unten aufgeführt}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} Eintrag unten aufgeführt} other{{count} Einträge unten aufgeführt}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2496,7 +2485,7 @@
   "tutorialsGroupTravelFamily": "Reisen und Familie",
   "tutorialsGroupEmergencies": "Lebensereignisse und Notfälle",
   "tutorialsGroupPaid": "Kostenpflichtige Funktionen",
-  "tutorialsSteps": "{count, plural, =1{1 Schritt} other{{count} Schritte}}",
+  "tutorialsSteps": "{count, plural, =1{{count} Schritt} other{{count} Schritte}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2892,5 +2881,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} läuft heute ab",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} läuft morgen ab",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} läuft in {days} Tag ab} other{{recordName} läuft in {days} Tagen ab}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} ist abgelaufen",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Ein gesperrter Eintrag braucht deine Aufmerksamkeit",
+  "remLockedBody": "Sein Datum ist der {date}. Entsperre Vaultara, um zu sehen, welcher Eintrag es ist.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Dein Eintrag „{recordName}“ läuft heute ab.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Dein Eintrag „{recordName}“ läuft morgen ab.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Dein Eintrag „{recordName}“ läuft am {date} ab.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, dein Eintrag „{recordName}“ läuft heute ab.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, dein Eintrag „{recordName}“ läuft morgen ab.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, dein Eintrag „{recordName}“ läuft am {date} ab.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Der Eintrag „{recordName}“ von {person} läuft heute ab.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Der Eintrag „{recordName}“ von {person} läuft morgen ab.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Der Eintrag „{recordName}“ von {person} läuft am {date} ab.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Dein Eintrag „{recordName}“ ist am {date} abgelaufen.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Der Eintrag „{recordName}“ von {person} ist am {date} abgelaufen.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Schon verlängert? Aktualisiere das Datum.",
+  "remTipTomorrow": "Verlängere jetzt, damit nichts abläuft.",
+  "remTipEarly": "Wer früh verlängert, bleibt abgesichert.",
+  "remTipLast": "Das ist deine letzte Erinnerung vor dem Ablauf.",
+  "remTipExpired": "Verlängere jetzt oder aktualisiere das Datum, falls schon erledigt.",
+  "remStartBody": "Es ist Zeit, die Verlängerung von „{recordName}“ zu beginnen. Der Eintrag läuft am {date} ab, mit einem Start jetzt hast du viel Zeit.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Es ist Zeit, die Verlängerung von „{recordName}“ von {person} zu beginnen. Der Eintrag läuft am {date} ab, mit einem Start jetzt bleibt viel Zeit.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Ablauferinnerungen",
+  "notifChannelDescription": "Erinnerungen, bevor deine Einträge ablaufen",
+  "notifTestTitle": "Testbenachrichtigung",
+  "notifTestBody": "So kommen Erinnerungen von Vaultara an.",
+  "notifTestAction": "Testbenachrichtigung senden",
+  "notifTestSubtitle": "Prüfen, ob Erinnerungen auf diesem Telefon ankommen",
+  "notifTestSent": "Test gesendet. Er sollte in wenigen Sekunden ankommen.",
+  "notifAfterExpiryTitle": "Nach dem Ablauf eines Eintrags erinnern",
+  "notifAfterExpirySubtitle": "3 und 14 Tage danach, falls er nicht verlängert wurde",
+  "notifWeeklyTitle": "Montagsübersicht",
+  "notifWeeklySubtitle": "Ein Hinweis am Montagmorgen, wenn in der Woche etwas abläuft",
+  "notifPushSection": "Haushalt und Updates",
+  "notifHouseholdTitle": "Geteilte Einträge",
+  "notifHouseholdSubtitle": "Wenn ein geteilter Eintrag bald abläuft und ihn niemand verlängert hat",
+  "notifUpdatesTitle": "Angeforderte Updates",
+  "notifUpdatesSubtitle": "Wenn jemand die neuen Daten eines Eintrags schickt",
+  "notifSecurityNote": "Hinweise zu neuen Anmeldungen bei deinem Konto werden immer gesendet.",
+  "notifIosHelpTitle": "Keine Erinnerungen erhalten?",
+  "notifIosHelpSubtitle": "Prüfe die Einstellungen deines iPhones",
+  "notifIosHelpStep1": "Öffne Einstellungen, dann Mitteilungen, dann Vaultara, und aktiviere Mitteilungen erlauben.",
+  "notifIosHelpStep2": "Aktiviere Sperrbildschirm, Mitteilungszentrale und Banner.",
+  "notifIosHelpStep3": "Wenn du einen Fokus nutzt, füge Vaultara zu den erlaubten Apps hinzu.",
+  "notifIosHelpStep4": "Öffne Vaultara alle paar Wochen. iPhones speichern nur eine begrenzte Zahl künftiger Erinnerungen, und beim Öffnen plant die App die nächsten.",
+  "homeNextUpEmpty": "Bald läuft nichts ab. Alles erledigt.",
+  "homeDueSoonChip": "{count, plural, one{{count} in 30 Tagen fällig} other{{count} in 30 Tagen fällig}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Angeheftete Kategorien"
 }

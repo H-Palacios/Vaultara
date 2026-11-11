@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "A Vaultara segít nyomon követni a fontos lejárati dátumokat, hogy semmi se járjon le észrevétlenül.",
   "homeWelcomeSubtitleFirst": "Örülünk, hogy itt van. A Vaultara egy biztonságos helyen tartja a fontos dátumokat és adatokat.",
   "homeWelcomeSubtitleBack": "Jó újra látni. A Vaultara mindig készen áll fontos adatai áttekintésére.",
-  "summaryAllCaption": "Nyomon követve a Vaultarában",
-  "summaryExpiredTitle": "Lejárt",
-  "summaryExpiredCaption": "Lejárati dátum után",
   "editorNotes": "Jegyzetek",
   "editorReminderNone": "Nincs emlékeztető",
   "editorReminderOnExpiry": "Lejárat napján",
@@ -192,7 +189,6 @@
   "addRecord": "Bejegyzés hozzáadása",
   "noRecordsYet": "Még nincsenek bejegyzések.",
   "deleteRecordTitle": "Bejegyzés törlése",
-  "summaryAllRecordsTitle": "Összes bejegyzés",
   "noGroupFound": "Még nincsenek csoportok",
   "groupLabel": "{count, plural, one{{count} csoport} other{{count} csoport}}",
   "recordsLabel": "{count, plural, one{{count} bejegyzés} other{{count} bejegyzés}}",
@@ -455,7 +451,7 @@
   "addNotesHint": "Jegyzetek hozzáadása (opcionális)",
   "expiryTimelineTitle": "Lejárati idővonal",
   "expiryTimelineSubtitle": "Koppintson egy hónapra, hogy lássa az adott hónapban lejáró bejegyzéseket",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 bejegyzés} other{{count} bejegyzés}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} bejegyzés} other{{count} bejegyzés}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Közelgő",
-  "summaryUpcomingCaption": "30 napon belül",
-  "summaryUrgentTitle": "Sürgős",
-  "summaryUrgentCaption": "7 napon belül",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Oktatóanyagok",
   "profileTutorialsSubtitle": "Böngésszen az alkalmazás oktatóanyagai között",
@@ -498,7 +490,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Nincs emlékeztető",
   "reminderOnExpiry": "A lejárat napján",
-  "reminderDaysBefore": "{days, plural, one{1 nappal előtte} other{{days} nappal előtte}}",
+  "reminderDaysBefore": "{days, plural, one{{days} nappal előtte} other{{days} nappal előtte}}",
   "reminderCustomDaysTitle": "Adjon meg egyéni napokat",
   "reminderCascadeTitle": "Kaszkád emlékeztetők",
   "reminderCascadeSubtitle": "Több értesítést kap, mielőtt egy bejegyzés lejár",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "Adja hozzá az első bejegyzését",
   "smartInsightNoRecordsBody": "Kezdje el követni a bejegyzéseit, és a Vaultara itt fogja megjeleníteni az intelligens elemzéseket.",
   "smartInsightExpiresTodaySingleBody": "A(z) {name} ma jár le. Ha már megújította, frissítse a dátumot itt.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{A(z) {names} ma jár le.} =1{A(z) {names} és még 1 tétel ma jár le.} other{A(z) {names} és még {extra} tétel ma jár le.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{A(z) {names} ma jár le.} =1{A(z) {names} és még {extra} tétel ma jár le.} other{A(z) {names} és még {extra} tétel ma jár le.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{A(z) {name} holnap jár le, és nincs hozzá emlékeztető beállítva. Állítson be egyet, hogy ne mulassza el.} other{A(z) {name} {date} napon jár le, és nincs hozzá emlékeztető beállítva. Állítson be egyet, hogy ne mulassza el.}}",
   "smartInsightCloseExpiriesBodyTwo": "A(z) {a} {dateA} napon, a(z) {b} pedig {dateB} napon jár le, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor két bejegyzés ennyire közel van egymáshoz.",
   "smartInsightCloseExpiriesBodyThree": "A(z) {a}, {b} és {c} mindegyike lejár {lastDate} napig, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor több bejegyzés ennyire közel van egymáshoz.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{A(z) {a}, {b} és még 1 bejegyzés lejár {lastDate} napig, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor több bejegyzés ennyire közel van egymáshoz.} other{A(z) {a}, {b} és még {extra} bejegyzés lejár {lastDate} napig, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor több bejegyzés ennyire közel van egymáshoz.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{A(z) {a}, {b} és még {extra} bejegyzés lejár {lastDate} napig, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor több bejegyzés ennyire közel van egymáshoz.} other{A(z) {a}, {b} és még {extra} bejegyzés lejár {lastDate} napig, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor több bejegyzés ennyire közel van egymáshoz.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{A következő napon semmi sem jár le. A következő határidő: {date}.} other{A következő {days} napban semmi sem jár le. A következő határidő: {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{A(z) {category} kategóriában lévő 1 bejegyzése {date} napon jár le. Könnyű figyelmen kívül hagyni.} other{A(z) {category} kategóriában lévő {count} bejegyzése lejár {date} napig. Könnyű megfeledkezni az egyikről, ha így csoportosítva vannak.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 közelgő lejárathoz van emlékeztető beállítva. Semmi más nem igényel figyelmet.} other{{count} közelgő lejárathoz van emlékeztető beállítva. Semmi más nem igényel figyelmet.}}",
+  "smartInsightClusterBody": "{count, plural, =1{A(z) {category} kategóriában lévő {count} bejegyzése {date} napon jár le. Könnyű figyelmen kívül hagyni.} other{A(z) {category} kategóriában lévő {count} bejegyzése lejár {date} napig. Könnyű megfeledkezni az egyikről, ha így csoportosítva vannak.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} közelgő lejárathoz van emlékeztető beállítva. Semmi más nem igényel figyelmet.} other{{count} közelgő lejárathoz van emlékeztető beállítva. Semmi más nem igényel figyelmet.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Minden naprakész. Jelenleg semmi sem igényel figyelmet.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Jelenleg semmi sem sürgős, de 1 közelgő bejegyzéshez még nincs emlékeztető beállítva.} other{Jelenleg semmi sem sürgős, de {count} közelgő bejegyzéshez még nincs emlékeztető beállítva.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Jelenleg semmi sem sürgős, de {count} közelgő bejegyzéshez még nincs emlékeztető beállítva.} other{Jelenleg semmi sem sürgős, de {count} közelgő bejegyzéshez még nincs emlékeztető beállítva.}}",
   "smartInsightCloseExpiriesHeading": "Körülbelül azonos időben járnak le",
   "plansHeadline": "Szerezze meg a teljes Vaultara élményt",
   "plansSubhead": "Korlátlan bejegyzés, saját csoportok és pontosan úgy beállított emlékeztetők, ahogy szeretné.",
@@ -625,7 +617,7 @@
   "reminderCascadeRemoveStep": "Eltávolítás",
   "reminderCascadeDuplicate": "Egy másik emlékeztető már használja ezt a napot",
   "reminderCascadeOutOfRange": "Adjon meg egy értéket {min} és {max} nap között",
-  "reminderCascadeStepLabel": "{position}. emlékeztető: {days, plural, =1{1 nappal} other{{days} nappal}} a lejárat előtt",
+  "reminderCascadeStepLabel": "{position}. emlékeztető: {days, plural, =1{{days} nappal} other{{days} nappal}} a lejárat előtt",
   "expiryTimelineNotReady": "Idővonala akkor jelenik meg, amint rendelkezik néhány különböző hónapban lejáró bejegyzéssel.",
   "verifyEmailResendIn": "Újraküldés {seconds} mp múlva",
   "verifyEmailSpamHint": "Nem találja? Ellenőrizze a spamek vagy a levélszemét (junk) mappát.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "Ez a fiók még nincs igazolva. Ha most kilép, a fiók törlődik, és később bármilyen e-mail címmel újra regisztrálhat.",
   "verifyEmailDiscardAction": "Elvetés",
   "verifyEmailKeepWaiting": "Várakozás folytatása",
-  "expiringBadge": "{count, plural, =1{1 hamarosan lejár} other{{count} hamarosan lejár}}",
+  "expiringBadge": "{count, plural, =1{{count} hamarosan lejár} other{{count} hamarosan lejár}}",
   "noRecordsToday": "Ma semmi sem jár le",
   "noRecordsTomorrow": "Holnap semmi sem jár le",
-  "cascadeStepTitle": "{days, plural, =0{A(z) {recordName} ma jár le} =1{A(z) {recordName} holnap jár le} other{A(z) {recordName} {days} nap múlva jár le}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, a(z) {recordName} ma jár le. Már megújította? Frissítse a lejárati dátumot.} =1{{firstName}, a(z) {recordName} holnap jár le. Újítsa meg most, hogy ne járjon le.} other{{firstName}, a(z) {recordName} ekkor jár le: {date}. A korai megújítással folyamatosan védett marad.}}",
   "cascadeFinalStepTitle": "Utolsó emlékeztető: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, a(z) {recordName} {days, plural, =1{holnap} other{{days} nap múlva, ekkor: {date}}} jár le. Ez az utolsó emlékeztetője, újítsa meg vagy frissítse a dátumot.",
   "notificationsTitle": "Értesítések",
   "notificationsProfileEnabledSubtitle": "Az emlékeztetők {time}-kor érkeznek.",
   "notificationsProfileDisabledSubtitle": "Az értesítések ki vannak kapcsolva.",
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} ma lejár",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} holnap lejár",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} {days} nap múlva lejár} other{{recordName} {days} nap múlva lejár}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} lejárt",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Egy zárolt bejegyzés figyelmet igényel",
+  "remLockedBody": "Dátuma: {date}. Oldja fel a Vaultarát, hogy lássa, melyik bejegyzésről van szó.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "A(z) „{recordName}” bejegyzése ma lejár.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "A(z) „{recordName}” bejegyzése holnap lejár.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "A(z) „{recordName}” bejegyzése ekkor jár le: {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, a(z) „{recordName}” bejegyzése ma lejár.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, a(z) „{recordName}” bejegyzése holnap lejár.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, a(z) „{recordName}” bejegyzése ekkor jár le: {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: a(z) „{recordName}” bejegyzés ma lejár.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: a(z) „{recordName}” bejegyzés holnap lejár.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: a(z) „{recordName}” bejegyzés ekkor jár le: {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "A(z) „{recordName}” bejegyzése ekkor járt le: {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: a(z) „{recordName}” bejegyzés ekkor járt le: {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Már megújította? Frissítse a dátumát.",
+  "remTipTomorrow": "Újítsa meg most, hogy ne járjon le.",
+  "remTipEarly": "A korai megújítás biztonságban tartja.",
+  "remTipLast": "Ez az utolsó emlékeztető a lejárat előtt.",
+  "remTipExpired": "Újítsa meg, vagy frissítse a dátumát, ha már megtette.",
+  "remStartBody": "Ideje elkezdeni a(z) „{recordName}” megújítását. Ekkor jár le: {date}, így ha most kezdi, bőven lesz ideje.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Ideje elkezdeni a(z) „{recordName}” ({person}) megújítását. Ekkor jár le: {date}, így ha most kezdik, bőven lesz idő.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Lejárati emlékeztetők",
+  "notifChannelDescription": "Emlékeztetők, mielőtt a bejegyzései lejárnak",
+  "notifTestTitle": "Tesztértesítés",
+  "notifTestBody": "Így érkeznek a Vaultara emlékeztetői.",
+  "notifTestAction": "Tesztértesítés küldése",
+  "notifTestSubtitle": "Ellenőrizze, hogy az emlékeztetők megérkeznek-e erre a telefonra",
+  "notifTestSent": "Teszt elküldve. Néhány másodpercen belül meg kell érkeznie.",
+  "notifAfterExpiryTitle": "Emlékeztessen a lejárat után",
+  "notifAfterExpirySubtitle": "3 és 14 nappal utána, ha nem újították meg",
+  "notifWeeklyTitle": "Hétfői összefoglaló",
+  "notifWeeklySubtitle": "Üzenet hétfő reggel, ha azon a héten valami lejár",
+  "notifPushSection": "Háztartás és frissítések",
+  "notifHouseholdTitle": "Megosztott bejegyzések",
+  "notifHouseholdSubtitle": "Ha egy megosztott bejegyzés hamarosan lejár, és senki sem újította meg",
+  "notifUpdatesTitle": "Kért frissítések",
+  "notifUpdatesSubtitle": "Ha valaki elküldi egy bejegyzés új adatait",
+  "notifSecurityNote": "Az új bejelentkezésekről szóló figyelmeztetéseket mindig elküldjük.",
+  "notifIosHelpTitle": "Nem kap emlékeztetőket?",
+  "notifIosHelpSubtitle": "Ellenőrizze az iPhone beállításait",
+  "notifIosHelpStep1": "Nyissa meg a Beállításokat, majd az Értesítéseket, majd a Vaultarát, és kapcsolja be az Értesítések engedélyezését.",
+  "notifIosHelpStep2": "Kapcsolja be a Zárolási képernyőt, az Értesítési központot és a Szalagokat.",
+  "notifIosHelpStep3": "Ha Fókuszt használ, adja hozzá a Vaultarát az engedélyezett appokhoz.",
+  "notifIosHelpStep4": "Nyissa meg a Vaultarát néhány hetente. Az iPhone csak korlátozott számú jövőbeli emlékeztetőt tárol, és az app megnyitása beütemezi a következőket.",
+  "homeNextUpEmpty": "Hamarosan semmi sem jár le. Minden rendben.",
+  "homeDueSoonChip": "{count, plural, one{{count} esedékes 30 napon belül} other{{count} esedékes 30 napon belül}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Kitűzött kategóriák"
 }

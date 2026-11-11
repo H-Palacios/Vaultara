@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleFirst": "Rất vui được gặp bạn tại đây. Vaultara giúp bạn sắp xếp các ngày và bản ghi quan trọng ở một nơi an toàn.",
   "homeWelcomeSubtitleBack": "Rất vui được gặp lại bạn. Vaultara luôn sẵn sàng khi bạn muốn xem lại các ngày và bản ghi quan trọng của mình.",
   "homeWelcomeTitle": "Chào mừng",
-  "summaryAllCaption": "Được theo dõi trong Vaultara",
-  "summaryExpiredTitle": "Đã hết hạn",
-  "summaryExpiredCaption": "Ngày hết hạn đã qua",
   "editorNotes": "Ghi chú",
   "editorReminderNone": "Không có nhắc nhở",
   "editorReminderOnExpiry": "Vào ngày hết hạn",
@@ -192,7 +189,6 @@
   "addRecord": "Thêm bản ghi",
   "noRecordsYet": "Chưa có bản ghi nào.",
   "deleteRecordTitle": "Xóa bản ghi",
-  "summaryAllRecordsTitle": "Tất cả bản ghi",
   "noGroupFound": "Chưa có nhóm nào",
   "groupLabel": "{count, plural, one{{count} nhóm} other{{count} nhóm}}",
   "recordsLabel": "{count, plural, one{{count} bản ghi} other{{count} bản ghi}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Thêm ghi chú (tùy chọn)",
   "expiryTimelineTitle": "Mốc thời gian hết hạn",
   "expiryTimelineSubtitle": "Chạm vào một tháng để xem các bản ghi hết hạn trong tháng đó",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 bản ghi} other{{count} bản ghi}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} bản ghi} other{{count} bản ghi}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Sắp tới",
-  "summaryUpcomingCaption": "Trong 30 ngày",
-  "summaryUrgentTitle": "Khẩn cấp",
-  "summaryUrgentCaption": "Trong 7 ngày",
   "profileHeaderTitle": "Hồ sơ",
   "profileTutorialsTitle": "Hướng dẫn",
   "profileTutorialsSubtitle": "Duyệt Hướng dẫn Ứng dụng",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Thêm Bản Ghi Đầu Tiên Của Bạn",
   "smartInsightNoRecordsBody": "Bắt đầu theo dõi các bản ghi của bạn, và Vaultara sẽ hiển thị các thông tin chi tiết thông minh tại đây.",
   "smartInsightExpiresTodaySingleBody": "{name} hết hạn hôm nay. Nếu bạn đã gia hạn, vui lòng cập nhật ngày tại đây.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} hết hạn hôm nay.} =1{{names} và 1 mục nữa hết hạn hôm nay.} other{{names} và {extra} mục nữa hết hạn hôm nay.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} hết hạn hôm nay.} =1{{names} và {extra} mục nữa hết hạn hôm nay.} other{{names} và {extra} mục nữa hết hạn hôm nay.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} sẽ hết hạn vào ngày mai và chưa có nhắc nhở. Hãy đặt nhắc nhở để không bỏ lỡ.} other{{name} sẽ hết hạn vào ngày {date} và chưa có nhắc nhở. Hãy đặt nhắc nhở để không bỏ lỡ.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} hết hạn ngày {dateA} và {b} hết hạn ngày {dateB}, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi hai bản ghi quá gần nhau như vậy.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b}, và {c} đều hết hạn trước ngày {lastDate}, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi nhiều bản ghi quá gần nhau như vậy.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, và 1 bản ghi nữa hết hạn trước ngày {lastDate}, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi nhiều bản ghi quá gần nhau như vậy.} other{{a}, {b}, và {extra} bản ghi nữa hết hạn trước ngày {lastDate}, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi nhiều bản ghi quá gần nhau như vậy.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, và {extra} bản ghi nữa hết hạn trước ngày {lastDate}, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi nhiều bản ghi quá gần nhau như vậy.} other{{a}, {b}, và {extra} bản ghi nữa hết hạn trước ngày {lastDate}, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi nhiều bản ghi quá gần nhau như vậy.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Không có mục nào hết hạn vào ngày tiếp theo. Mục tiếp theo của bạn là vào ngày {date}.} other{Không có mục nào hết hạn trong {days} ngày tới. Mục tiếp theo của bạn là vào ngày {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 bản ghi của bạn trong danh mục {category} sẽ hết hạn vào ngày {date}. Mục này rất dễ bị bỏ sót.} other{{count} bản ghi của bạn trong danh mục {category} sẽ hết hạn trước ngày {date}. Rất dễ bỏ quên một mục khi chúng được gom nhóm như thế này.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 hạn chót sắp tới đã có nhắc nhở. Không có mục nào khác cần bạn chú ý.} other{{count} hạn chót sắp tới đã có nhắc nhở. Không có mục nào khác cần bạn chú ý.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} bản ghi của bạn trong danh mục {category} sẽ hết hạn vào ngày {date}. Mục này rất dễ bị bỏ sót.} other{{count} bản ghi của bạn trong danh mục {category} sẽ hết hạn trước ngày {date}. Rất dễ bỏ quên một mục khi chúng được gom nhóm như thế này.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} hạn chót sắp tới đã có nhắc nhở. Không có mục nào khác cần bạn chú ý.} other{{count} hạn chót sắp tới đã có nhắc nhở. Không có mục nào khác cần bạn chú ý.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Mọi thứ đã được cập nhật. Hiện tại không có mục nào cần bạn chú ý.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Hiện tại không có mục nào khẩn cấp, nhưng có 1 bản ghi sắp tới chưa được cài đặt nhắc nhở.} other{Hiện tại không có mục nào khẩn cấp, nhưng có {count} bản ghi sắp tới chưa được cài đặt nhắc nhở.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Hiện tại không có mục nào khẩn cấp, nhưng có {count} bản ghi sắp tới chưa được cài đặt nhắc nhở.} other{Hiện tại không có mục nào khẩn cấp, nhưng có {count} bản ghi sắp tới chưa được cài đặt nhắc nhở.}}",
   "smartInsightCloseExpiriesHeading": "Hết hạn vào khoảng cùng thời điểm",
   "plansHeadline": "Trải nghiệm trọn vẹn Vaultara",
   "plansSubhead": "Không giới hạn bản ghi, nhóm riêng của bạn và các nhắc nhở được tùy chỉnh chính xác theo ý muốn.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Gỡ bỏ",
   "reminderCascadeDuplicate": "Một nhắc nhở khác đã sử dụng ngày này",
   "reminderCascadeOutOfRange": "Nhập trong khoảng từ {min} đến {max} ngày",
-  "reminderCascadeStepLabel": "Nhắc nhở {position}: {days, plural, =1{1 ngày} other{{days} ngày}} trước khi hết hạn",
+  "reminderCascadeStepLabel": "Nhắc nhở {position}: {days, plural, =1{{days} ngày} other{{days} ngày}} trước khi hết hạn",
   "expiryTimelineNotReady": "Dòng thời gian của bạn sẽ xuất hiện sau khi bạn có các bản ghi hết hạn trong một vài tháng khác nhau.",
   "verifyEmailResendIn": "Gửi lại sau {seconds} giây",
   "verifyEmailSpamHint": "Không thấy thư? Hãy kiểm tra thư mục spam hoặc thư rác của bạn.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Tài khoản này chưa được xác minh. Rời đi bây giờ sẽ xóa tài khoản, và bạn có thể đăng ký lại bằng bất kỳ địa chỉ email nào.",
   "verifyEmailDiscardAction": "Hủy bỏ",
   "verifyEmailKeepWaiting": "Tiếp tục chờ",
-  "expiringBadge": "{count, plural, =1{1 sắp hết hạn} other{{count} sắp hết hạn}}",
+  "expiringBadge": "{count, plural, =1{{count} sắp hết hạn} other{{count} sắp hết hạn}}",
   "noRecordsToday": "Không có gì hết hạn hôm nay",
   "noRecordsTomorrow": "Không có gì hết hạn ngày mai",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} hết hạn hôm nay} =1{{recordName} hết hạn vào ngày mai} other{{recordName} sẽ hết hạn sau {days} ngày}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} của bạn hết hạn hôm nay. Bạn đã gia hạn chưa? Hãy cập nhật ngày hết hạn.} =1{{firstName}, {recordName} của bạn hết hạn vào ngày mai. Hãy gia hạn ngay để không bị gián đoạn.} other{{firstName}, {recordName} của bạn sẽ hết hạn vào {date}. Gia hạn sớm giúp đảm bảo hiệu lực liên tục.}}",
   "cascadeFinalStepTitle": "Lời nhắc cuối cùng: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} của bạn sẽ hết hạn {days, plural, =1{vào ngày mai} other{sau {days} ngày, vào {date}}}. Đây là lời nhắc cuối cùng, hãy gia hạn hoặc cập nhật ngày hết hạn.",
   "notificationsTitle": "Thông báo",
   "notificationsProfileEnabledSubtitle": "Lời nhắc sẽ đến lúc {time}.",
   "notificationsProfileDisabledSubtitle": "Thông báo đã bị tắt.",
@@ -681,7 +670,7 @@
   "costCardTitle": "Chi phí gia hạn",
   "costCardSubtitle": "Chi phí gia hạn của bạn theo từng tháng",
   "costCardBusiest": "Tháng tốn nhiều nhất: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{1 bản ghi sắp tới chưa có chi phí.} other{{count} bản ghi sắp tới chưa có chi phí.}}",
+  "costCardMissing": "{count, plural, =1{{count} bản ghi sắp tới chưa có chi phí.} other{{count} bản ghi sắp tới chưa có chi phí.}}",
   "costCardEmpty": "Thêm chi phí vào bản ghi để xem các lần gia hạn sẽ tốn bao nhiêu.",
   "costCardLockedHint": "Xem chi phí gia hạn trong năm tới với Premium.",
   "costCardSeePremium": "Xem Premium",
@@ -689,7 +678,7 @@
   "familyTitle": "Gia đình",
   "familyIntro": "Theo dõi bản ghi của những người bạn chăm sóc. Lời nhắc sẽ hiện tên của họ để bạn biết bản ghi đó của ai.",
   "familyMe": "Tôi",
-  "familyRecordCount": "{count, plural, =0{Không có bản ghi} =1{1 bản ghi} other{{count} bản ghi}}",
+  "familyRecordCount": "{count, plural, =0{Không có bản ghi} =1{{count} bản ghi} other{{count} bản ghi}}",
   "familyRename": "Đổi tên",
   "familyRemove": "Gỡ bỏ",
   "familyRemoveTitle": "Gỡ bỏ {name}?",
@@ -702,10 +691,10 @@
   "familyNameLabel": "Tên",
   "familyNameHint": "Ví dụ: Lan",
   "familyNameRequired": "Nhập tên",
-  "familyLimitNote": "{count, plural, =1{Tối đa 1 người} other{Tối đa {count} người}}",
+  "familyLimitNote": "{count, plural, =1{Tối đa {count} người} other{Tối đa {count} người}}",
   "familyUpsellTitle": "Theo dõi giấy tờ của cả gia đình",
   "familyBenefitPremium": "Mọi tính năng của Premium",
-  "familyBenefitPeople": "{count, plural, =1{Thêm 1 người} other{Thêm tối đa {count} người}}",
+  "familyBenefitPeople": "{count, plural, =1{Thêm {count} người} other{Thêm tối đa {count} người}}",
   "familyBenefitOwnRecords": "Mỗi người có bản ghi và lời nhắc riêng",
   "familyBenefitOneSubscription": "Một gói đăng ký cho cả nhà",
   "familySeePlan": "Xem gói Gia đình",
@@ -891,14 +880,14 @@
   "calendarExportError": "Không thể tạo tệp lịch. Vui lòng thử lại.",
   "pdfExportTitle": "Bản ghi Vaultara",
   "pdfExportGenerated": "Tạo lúc {date}",
-  "pdfExportCount": "{count, plural, =1{1 bản ghi} other{{count} bản ghi}}",
+  "pdfExportCount": "{count, plural, =1{{count} bản ghi} other{{count} bản ghi}}",
   "pdfExportCost": "Chi phí gia hạn: {amount}",
   "pdfExportBuilding": "Đang chuẩn bị tệp PDF...",
   "pdfExportError": "Không thể tạo PDF. Vui lòng thử lại.",
   "travelTitle": "Kiểm tra chuyến đi",
   "travelDeparture": "Ngày đi",
   "travelReturn": "Ngày về",
-  "travelTripLength": "{days, plural, =1{Chuyến đi 1 ngày} other{Chuyến đi {days} ngày}}",
+  "travelTripLength": "{days, plural, =1{Chuyến đi {days} ngày} other{Chuyến đi {days} ngày}}",
   "travelDriving": "Tôi sẽ lái xe",
   "travelNeedsVisa": "Tôi cần thị thực",
   "travelWho": "Ai sẽ đi?",
@@ -919,9 +908,9 @@
   "travelNoLicence": "Chưa thêm bằng lái xe",
   "travelOtherExpires": "Hết hạn khi bạn đang đi",
   "travelDetailValidUntil": "{name} còn hạn đến {date}.",
-  "travelDetailPassportBuffer": "{name} hết hạn vào {date}. Nhiều nước yêu cầu còn {months, plural, =1{1 tháng} other{{months} tháng}} sau khi bạn về.",
+  "travelDetailPassportBuffer": "{name} hết hạn vào {date}. Nhiều nước yêu cầu còn {months, plural, =1{{months} tháng} other{{months} tháng}} sau khi bạn về.",
   "travelDetailExpiresBeforeLeaving": "{name} hết hạn vào {date}, trước khi bạn đi.",
-  "travelDetailExpiresDuringTrip": "{name} hết hạn vào {date}, {days, plural, =0{đúng ngày bạn đi} =1{1 ngày sau khi bạn đi} other{{days} ngày sau khi bạn đi}}.",
+  "travelDetailExpiresDuringTrip": "{name} hết hạn vào {date}, {days, plural, =0{đúng ngày bạn đi} =1{{days} ngày sau khi bạn đi} other{{days} ngày sau khi bạn đi}}.",
   "travelDetailNoPassport": "Thêm hộ chiếu để Vaultara có thể kiểm tra.",
   "travelDetailNoVisa": "Thêm thị thực để Vaultara có thể kiểm tra.",
   "travelDetailNoInsurance": "Thêm bảo hiểm du lịch để kiểm tra xem có bao trọn chuyến đi không.",
@@ -973,7 +962,7 @@
   "travelInProgress": "Đang trong chuyến đi",
   "travelTripEnded": "Chuyến đi đã kết thúc",
   "travelAllGood": "Mọi giấy tờ đã sẵn sàng",
-  "travelIssues": "{count, plural, =1{1 mục cần chú ý} other{{count} mục cần chú ý}}",
+  "travelIssues": "{count, plural, =1{{count} mục cần chú ý} other{{count} mục cần chú ý}}",
   "travelChecklistTitle": "Danh sách việc cần làm cho chuyến đi",
   "travelChecklistProgress": "Đã xong {done}/{total}",
   "travelChecklistAdd": "Thêm",
@@ -993,7 +982,7 @@
   "travelTripTo": "Chuyến đi {name}",
   "travelReminderTitle": "{days, plural, other{Chuyến đi {name} sau {days} ngày}}",
   "travelReminderTitleTomorrow": "Chuyến đi {name} vào ngày mai",
-  "travelReminderBodyIssues": "{count, plural, =1{1 giấy tờ cần chú ý trước khi bạn đi.} other{{count} giấy tờ cần chú ý trước khi bạn đi.}}",
+  "travelReminderBodyIssues": "{count, plural, =1{{count} giấy tờ cần chú ý trước khi bạn đi.} other{{count} giấy tờ cần chú ý trước khi bạn đi.}}",
   "travelReminderBodyOk": "Giấy tờ của bạn đã sẵn sàng. Mở chuyến đi để kiểm tra danh sách.",
   "travelTripLimit": "Bạn có thể lưu tối đa {count} chuyến đi. Xóa một chuyến đi cũ để thêm chuyến mới.",
   "recordLockTitle": "Khóa bản ghi này",
@@ -1021,7 +1010,7 @@
   "vaultChooseFromGallery": "Chọn từ thư viện",
   "vaultRemove": "Gỡ bỏ",
   "vaultLimitTitle": "Đã đạt giới hạn ảnh",
-  "vaultLimitFreeBody": "Gói Miễn phí cho phép thêm {limit, plural, =1{1 ảnh} other{{limit} ảnh}} vào mỗi bản ghi. Với Premium, bạn có thể thêm tối đa {premiumLimit} ảnh.",
+  "vaultLimitFreeBody": "Gói Miễn phí cho phép thêm {limit, plural, =1{{limit} ảnh} other{{limit} ảnh}} vào mỗi bản ghi. Với Premium, bạn có thể thêm tối đa {premiumLimit} ảnh.",
   "vaultLimitPremiumBody": "Bạn có thể thêm tối đa {limit} ảnh vào mỗi bản ghi. Gỡ bỏ một ảnh để thêm ảnh khác.",
   "vaultSeePremium": "Xem Premium",
   "vaultPdfShort": "PDF",
@@ -1029,7 +1018,7 @@
   "vaultOpenFile": "Mở",
   "vaultClose": "Đóng",
   "vaultPageIndicator": "{current}/{total}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 ảnh} other{{count} ảnh}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} ảnh} other{{count} ảnh}}",
   "travelReadinessTitle": "Sẵn sàng cho chuyến đi",
   "travelReadinessBody": "Dựa trên hộ chiếu và bằng lái xe đã lưu trong Vaultara. Hầu hết các quốc gia yêu cầu hộ chiếu còn hạn ít nhất 6 tháng khi bạn trở về.",
   "travelReadyUntil": "Hộ chiếu dùng được cho các chuyến đi đến {date}",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} hết hạn hôm nay",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} hết hạn ngày mai",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} hết hạn sau {days} ngày}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} đã hết hạn",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Một bản ghi bị khóa cần bạn chú ý",
+  "remLockedBody": "Ngày của nó là {date}. Mở khóa Vaultara để xem đó là bản ghi nào.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Bản ghi \"{recordName}\" của bạn hết hạn hôm nay.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Bản ghi \"{recordName}\" của bạn hết hạn ngày mai.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Bản ghi \"{recordName}\" của bạn hết hạn vào {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, bản ghi \"{recordName}\" của bạn hết hạn hôm nay.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, bản ghi \"{recordName}\" của bạn hết hạn ngày mai.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, bản ghi \"{recordName}\" của bạn hết hạn vào {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: bản ghi \"{recordName}\" hết hạn hôm nay.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: bản ghi \"{recordName}\" hết hạn ngày mai.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: bản ghi \"{recordName}\" hết hạn vào {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Bản ghi \"{recordName}\" của bạn đã hết hạn vào {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: bản ghi \"{recordName}\" đã hết hạn vào {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Đã gia hạn rồi? Hãy cập nhật ngày.",
+  "remTipTomorrow": "Hãy gia hạn ngay để không bị hết hạn.",
+  "remTipEarly": "Gia hạn sớm giúp bạn luôn được bảo đảm.",
+  "remTipLast": "Đây là lời nhắc cuối cùng trước khi hết hạn.",
+  "remTipExpired": "Hãy gia hạn, hoặc cập nhật ngày nếu bạn đã làm.",
+  "remStartBody": "Đã đến lúc bắt đầu gia hạn \"{recordName}\". Nó hết hạn vào {date}, nên bắt đầu ngay bây giờ bạn sẽ có nhiều thời gian.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Đã đến lúc bắt đầu gia hạn \"{recordName}\" ({person}). Nó hết hạn vào {date}, nên bắt đầu ngay bây giờ sẽ có nhiều thời gian.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Lời nhắc hết hạn",
+  "notifChannelDescription": "Lời nhắc trước khi bản ghi của bạn hết hạn",
+  "notifTestTitle": "Thông báo thử",
+  "notifTestBody": "Lời nhắc từ Vaultara sẽ đến như thế này.",
+  "notifTestAction": "Gửi thông báo thử",
+  "notifTestSubtitle": "Kiểm tra lời nhắc có đến điện thoại này không",
+  "notifTestSent": "Đã gửi thử. Nó sẽ đến sau vài giây.",
+  "notifAfterExpiryTitle": "Nhắc tôi sau khi bản ghi hết hạn",
+  "notifAfterExpirySubtitle": "3 và 14 ngày sau, nếu chưa được gia hạn",
+  "notifWeeklyTitle": "Tóm tắt thứ Hai",
+  "notifWeeklySubtitle": "Một tin nhắn sáng thứ Hai khi có thứ gì đó hết hạn trong tuần",
+  "notifPushSection": "Hộ gia đình và cập nhật",
+  "notifHouseholdTitle": "Bản ghi chia sẻ",
+  "notifHouseholdSubtitle": "Khi một bản ghi chia sẻ sắp hết hạn và chưa ai gia hạn",
+  "notifUpdatesTitle": "Cập nhật bạn đã yêu cầu",
+  "notifUpdatesSubtitle": "Khi ai đó gửi thông tin mới của một bản ghi",
+  "notifSecurityNote": "Cảnh báo về lần đăng nhập mới vào tài khoản của bạn luôn được gửi.",
+  "notifIosHelpTitle": "Không nhận được lời nhắc?",
+  "notifIosHelpSubtitle": "Kiểm tra cài đặt iPhone",
+  "notifIosHelpStep1": "Mở Cài đặt, rồi Thông báo, rồi Vaultara, và bật Cho phép thông báo.",
+  "notifIosHelpStep2": "Bật Màn hình khóa, Trung tâm thông báo và Biểu ngữ.",
+  "notifIosHelpStep3": "Nếu bạn dùng chế độ Tập trung, hãy thêm Vaultara vào các ứng dụng được phép.",
+  "notifIosHelpStep4": "Hãy mở Vaultara vài tuần một lần. iPhone chỉ giữ một số lượng giới hạn lời nhắc sắp tới, và mở ứng dụng sẽ lên lịch những lời nhắc tiếp theo.",
+  "homeNextUpEmpty": "Không có gì sắp hết hạn. Mọi thứ đã sẵn sàng.",
+  "homeDueSoonChip": "{count, plural, other{{count} mục đến hạn trong 30 ngày}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Danh mục đã ghim"
 }

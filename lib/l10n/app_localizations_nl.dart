@@ -360,15 +360,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Goed je weer te zien. Vaultara staat klaar wanneer je je belangrijke datums en records wilt bekijken.';
 
   @override
-  String get summaryAllCaption => 'Bijgehouden in Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Verlopen';
-
-  @override
-  String get summaryExpiredCaption => 'Vervaldatum verstreken';
-
-  @override
   String get editorNotes => 'Notities';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Record verwijderen';
-
-  @override
-  String get summaryAllRecordsTitle => 'Alle records';
 
   @override
   String get noGroupFound => 'Nog geen groepen';
@@ -829,22 +817,10 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count records',
-      one: '1 record',
+      one: '$count record',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Aankomend';
-
-  @override
-  String get summaryUpcomingCaption => 'Binnen 30 dagen';
-
-  @override
-  String get summaryUrgentTitle => 'Urgent';
-
-  @override
-  String get summaryUrgentCaption => 'Binnen 7 dagen';
 
   @override
   String get profileHeaderTitle => 'Profiel';
@@ -945,7 +921,7 @@ class AppLocalizationsNl extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days dagen ervoor',
-      one: '1 dag ervoor',
+      one: '$days dag ervoor',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsNl extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names en nog $extra andere verlopen vandaag.',
-      one: '$names en nog 1 andere verlopen vandaag.',
+      one: '$names en nog $extra andere verlopen vandaag.',
       zero: '$names verlopen vandaag.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsNl extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b en nog $extra records verlopen uiterlijk $lastDate, rond dezelfde tijd. Je vergeet er gemakkelijk eentje als er meerdere zo dicht bij elkaar liggen.',
-      one: '$a, $b en nog 1 record verlopen uiterlijk $lastDate, rond dezelfde tijd. Je vergeet er gemakkelijk eentje als er meerdere zo dicht bij elkaar liggen.',
+      one: '$a, $b en nog $extra record verlopen uiterlijk $lastDate, rond dezelfde tijd. Je vergeet er gemakkelijk eentje als er meerdere zo dicht bij elkaar liggen.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count van je records in de categorie $category verlopen uiterlijk $date. Je vergeet er gemakkelijk eentje als ze zo gegroepeerd zijn.',
-      one: '1 van je records in de categorie $category verloopt op $date. Dit wordt gemakkelijk over het hoofd gezien.',
+      one: '$count van je records in de categorie $category verloopt op $date. Dit wordt gemakkelijk over het hoofd gezien.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count naderende vervaldatums zijn gedekt door herinneringen. Niets anders vereist je aandacht.',
-      one: '1 naderende vervaldatum is gedekt door een herinnering. Niets anders vereist je aandacht.',
+      one: '$count naderende vervaldatum is gedekt door een herinnering. Niets anders vereist je aandacht.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Er is momenteel niets urgents, maar $count aankomende records hebben nog geen herinnering.',
-      one: 'Er is momenteel niets urgents, maar 1 aankomend record heeft nog geen herinnering.',
+      one: 'Er is momenteel niets urgents, maar $count aankomend record heeft nog geen herinnering.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsNl extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days dagen',
-      one: '1 dag',
+      one: '$days dag',
     );
     return 'Herinnering $position: $_temp0 van tevoren';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count verlopen binnenkort',
-      one: '1 verloopt binnenkort',
+      one: '$count verloopt binnenkort',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get noRecordsTomorrow => 'Er verloopt morgen niets';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName verloopt over $days dagen',
-      one: '$recordName verloopt morgen',
-      zero: '$recordName verloopt vandaag',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, je $recordName verloopt op $date. Tijdig vernieuwen zorgt voor ononderbroken geldigheid.',
-      one: '$firstName, je $recordName verloopt morgen. Vernieuw nu, zodat de geldigheid niet verloopt.',
-      zero: '$firstName, je $recordName verloopt vandaag. Al vernieuwd? Werk dan de vervaldatum bij.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Laatste herinnering: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'over $days dagen',
-      one: 'morgen',
-    );
-    return '$firstName, dit is je laatste herinnering. $recordName verloopt $_temp0, op $date. Vernieuw, of werk de vervaldatum bij in Vaultara.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count foto\'s zijn nog niet versleuteld',
-      one: '1 foto is nog niet versleuteld',
+      one: '$count foto is nog niet versleuteld',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Je hebt $count foto\'s die nog niet versleuteld zijn. We kunnen ze nu versleutelen.',
-      one: 'Je hebt 1 foto die nog niet versleuteld is. We kunnen hem nu versleutelen.',
+      one: 'Je hebt $count foto die nog niet versleuteld is. We kunnen hem nu versleutelen.',
     );
     return '$_temp0 Houd Vaultara open tot dit klaar is.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsNl extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Te veel pogingen. Wacht $seconds seconden en probeer het opnieuw.',
-      one: 'Te veel pogingen. Wacht 1 seconde en probeer het opnieuw.',
+      one: 'Te veel pogingen. Wacht $seconds seconde en probeer het opnieuw.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsNl extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Te veel pogingen. Wacht $minutes minuten en probeer het opnieuw.',
-      one: 'Te veel pogingen. Wacht 1 minuut en probeer het opnieuw.',
+      one: 'Te veel pogingen. Wacht $minutes minuut en probeer het opnieuw.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count records hebben je aandacht nodig',
-      one: '1 record heeft je aandacht nodig',
+      one: '$count record heeft je aandacht nodig',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsNl extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Meestal $years jaar geldig',
-      one: 'Meestal 1 jaar geldig',
+      one: 'Meestal $years jaar geldig',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count minuten geleden',
-      one: '1 minuut geleden',
+      one: '$count minuut geleden',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count uur geleden',
-      one: '1 uur geleden',
+      one: '$count uur geleden',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dagen geleden',
-      one: '1 dag geleden',
+      one: '$count dag geleden',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Nog $count dagen',
-      one: 'Nog 1 dag',
+      one: 'Nog $count dag',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dagen geleden',
-      one: '1 dag geleden',
+      one: '$count dag geleden',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count verwijderde gegevens tellen als opgezegd.',
-      one: '1 verwijderd gegeven telt als opgezegd.',
+      one: '$count verwijderd gegeven telt als opgezegd.',
     );
     return '$_temp0';
   }
@@ -7302,7 +7243,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count items hebben geen foto. Met foto\'s gaat vervangen sneller.',
-      one: '1 item heeft geen foto. Met een foto gaat vervangen sneller.',
+      one: '$count item heeft geen foto. Met een foto gaat vervangen sneller.',
     );
     return '$_temp0';
   }
@@ -7313,7 +7254,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Bij $count passen is geen nummer voor verloren passen opgeslagen.',
-      one: 'Bij 1 pas is geen nummer voor verloren passen opgeslagen.',
+      one: 'Bij $count pas is geen nummer voor verloren passen opgeslagen.',
     );
     return '$_temp0';
   }
@@ -7492,7 +7433,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count items hieronder',
-      one: '1 item hieronder',
+      one: '$count item hieronder',
     );
     return '$_temp0';
   }
@@ -7584,7 +7525,7 @@ class AppLocalizationsNl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count stappen',
-      one: '1 stap',
+      one: '$count stap',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsNl extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Herinnering: $name verloopt op $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName verloopt vandaag';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName verloopt morgen';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName verloopt over $days dagen',
+      one: '$recordName verloopt over $days dag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName is verlopen';
+  }
+
+  @override
+  String get remLockedTitle => 'Een vergrendeld record vraagt je aandacht';
+
+  @override
+  String remLockedBody(String date) {
+    return 'De datum is $date. Ontgrendel Vaultara om te zien welk record het is.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Je record \"$recordName\" verloopt vandaag.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Je record \"$recordName\" verloopt morgen.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Je record \"$recordName\" verloopt op $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, je record \"$recordName\" verloopt vandaag.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, je record \"$recordName\" verloopt morgen.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, je record \"$recordName\" verloopt op $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Het record \"$recordName\" van $person verloopt vandaag.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Het record \"$recordName\" van $person verloopt morgen.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Het record \"$recordName\" van $person verloopt op $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Je record \"$recordName\" is verlopen op $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Het record \"$recordName\" van $person is verlopen op $date.';
+  }
+
+  @override
+  String get remTipToday => 'Al vernieuwd? Werk de datum bij.';
+
+  @override
+  String get remTipTomorrow => 'Vernieuw het nu zodat het niet verloopt.';
+
+  @override
+  String get remTipEarly => 'Vroeg vernieuwen houdt je gedekt.';
+
+  @override
+  String get remTipLast => 'Dit is je laatste herinnering voordat het verloopt.';
+
+  @override
+  String get remTipExpired => 'Vernieuw het, of werk de datum bij als je dat al hebt gedaan.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Het is tijd om \"$recordName\" te gaan vernieuwen. Het verloopt op $date, dus als je nu begint heb je ruim de tijd.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Het is tijd om \"$recordName\" van $person te gaan vernieuwen. Het verloopt op $date, dus nu beginnen geeft ruim de tijd.';
+  }
+
+  @override
+  String get notifChannelName => 'Vervalherinneringen';
+
+  @override
+  String get notifChannelDescription => 'Herinneringen voordat je records verlopen';
+
+  @override
+  String get notifTestTitle => 'Testmelding';
+
+  @override
+  String get notifTestBody => 'Herinneringen van Vaultara komen zo binnen.';
+
+  @override
+  String get notifTestAction => 'Testmelding sturen';
+
+  @override
+  String get notifTestSubtitle => 'Controleer of herinneringen op deze telefoon aankomen';
+
+  @override
+  String get notifTestSent => 'Test verstuurd. Hij komt binnen een paar seconden binnen.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Herinner me nadat een record is verlopen';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 en 14 dagen erna, als het niet is vernieuwd';
+
+  @override
+  String get notifWeeklyTitle => 'Maandagoverzicht';
+
+  @override
+  String get notifWeeklySubtitle => 'Een melding op maandagochtend als er die week iets verloopt';
+
+  @override
+  String get notifPushSection => 'Huishouden en updates';
+
+  @override
+  String get notifHouseholdTitle => 'Gedeelde records';
+
+  @override
+  String get notifHouseholdSubtitle => 'Als een gedeeld record bijna verloopt en niemand het heeft vernieuwd';
+
+  @override
+  String get notifUpdatesTitle => 'Updates waar je om vroeg';
+
+  @override
+  String get notifUpdatesSubtitle => 'Als iemand de nieuwe gegevens van een record stuurt';
+
+  @override
+  String get notifSecurityNote => 'Meldingen over nieuwe aanmeldingen op je account worden altijd verstuurd.';
+
+  @override
+  String get notifIosHelpTitle => 'Krijg je geen herinneringen?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Controleer de instellingen van je iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Open Instellingen, dan Berichtgeving, dan Vaultara, en zet Sta berichtgeving toe aan.';
+
+  @override
+  String get notifIosHelpStep2 => 'Zet Toegangsscherm, Berichtencentrum en Stroken aan.';
+
+  @override
+  String get notifIosHelpStep3 => 'Als je een focus gebruikt, voeg Vaultara toe aan de toegestane apps.';
+
+  @override
+  String get notifIosHelpStep4 => 'Open Vaultara om de paar weken. Een iPhone bewaart maar een beperkt aantal toekomstige herinneringen, en als je de app opent worden de volgende ingepland.';
+
+  @override
+  String get homeNextUpEmpty => 'Er verloopt binnenkort niets. Alles is in orde.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verlopen binnen 30 dagen',
+      one: '$count verloopt binnen 30 dagen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Vastgezette categorieën';
 }

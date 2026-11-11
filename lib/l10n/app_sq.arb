@@ -173,9 +173,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara ju ndihmon të ndiqni datat e rëndësishme të skadimit, që asgjë të mos skadojë pa u vënë re.",
   "homeWelcomeSubtitleFirst": "Është kënaqësi t'ju kemi këtu. Vaultara ju ndihmon të qëndroni të organizuar duke mbajtur datat dhe regjistrimet e rëndësishme në një vend të sigurt.",
   "homeWelcomeSubtitleBack": "Gëzohemi që ju shohim përsëri. Vaultara është këtu sa herë që dëshironi të rishikoni datat dhe regjistrimet tuaja të rëndësishme.",
-  "summaryAllCaption": "Të ndjekur në Vaultara",
-  "summaryExpiredTitle": "Të skaduara",
-  "summaryExpiredCaption": "Pas datës së skadimit",
   "editorNotes": "Shënime",
   "editorReminderNone": "Pa kujtesë",
   "enableBiometricsTitle": "Aktivizo sigurinë biometrike",
@@ -197,7 +194,6 @@
   "addRecord": "Shto regjistrim",
   "noRecordsYet": "Ende asnjë regjistrim.",
   "deleteRecordTitle": "Fshi regjistrimin",
-  "summaryAllRecordsTitle": "Të gjitha regjistrimet",
   "noGroupFound": "Ende asnjë grup",
   "groupLabel": "{count, plural, one{{count} grup} other{{count} grupe}}",
   "recordsLabel": "{count, plural, one{{count} regjistrim} other{{count} regjistrime}}",
@@ -443,7 +439,7 @@
   "addNotesHint": "Shtoni shënime (opsionale)",
   "expiryTimelineTitle": "Kronologjia e skadimeve",
   "expiryTimelineSubtitle": "Prekni një muaj për të parë regjistrimet që skadojnë atë muaj",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 regjistrim} other{{count} regjistrime}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} regjistrim} other{{count} regjistrime}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -451,10 +447,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Të ardhshme",
-  "summaryUpcomingCaption": "Brenda 30 ditësh",
-  "summaryUrgentTitle": "Urgjente",
-  "summaryUrgentCaption": "Brenda 7 ditësh",
   "profileHeaderTitle": "Profili",
   "profileTutorialsTitle": "Udhëzuesit",
   "profileTutorialsSubtitle": "Shfletoni udhëzuesit e aplikacionit",
@@ -486,7 +478,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Pa kujtesë",
   "reminderOnExpiry": "Në skadim",
-  "reminderDaysBefore": "{days, plural, one{1 ditë përpara} other{{days} ditë përpara}}",
+  "reminderDaysBefore": "{days, plural, one{{days} ditë përpara} other{{days} ditë përpara}}",
   "@reminderDaysBefore": {
     "placeholders": {
       "days": {
@@ -525,16 +517,16 @@
   "smartInsightNoRecordsHeading": "Shtoni regjistrimin tuaj të parë",
   "smartInsightNoRecordsBody": "Filloni të ndiqni regjistrimet tuaja dhe Vaultara do të shfaqë analiza inteligjente këtu.",
   "smartInsightExpiresTodaySingleBody": "{name} skadon sot. Nëse e keni rinovuar tashmë, përditësoni datën këtu.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} skadojnë sot.} =1{{names} dhe 1 tjetër skadojnë sot.} other{{names} dhe {extra} të tjerë skadojnë sot.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} skadojnë sot.} =1{{names} dhe {extra} tjetër skadojnë sot.} other{{names} dhe {extra} të tjerë skadojnë sot.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} skadon nesër dhe nuk ka asnjë kujtesë. Caktoni një që të mos e harroni.} other{{name} skadon më {date} dhe nuk ka asnjë kujtesë. Caktoni një që të mos e harroni.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} skadon më {dateA} dhe {b} më {dateB}, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur dy regjistrime janë kaq afër.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} dhe {c} skadojnë të gjithë deri më {lastDate}, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur disa regjistrime janë kaq afër.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} dhe 1 regjistrim tjetër skadojnë deri më {lastDate}, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur disa regjistrime janë kaq afër.} other{{a}, {b} dhe {extra} regjistrime të tjera skadojnë deri më {lastDate}, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur disa regjistrime janë kaq afër.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} dhe {extra} regjistrim tjetër skadojnë deri më {lastDate}, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur disa regjistrime janë kaq afër.} other{{a}, {b} dhe {extra} regjistrime të tjera skadojnë deri më {lastDate}, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur disa regjistrime janë kaq afër.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Asgjë nuk skadon ditën tjetër. Afati juaj i radhës është më {date}.} other{Asgjë nuk skadon në {days} ditët e ardhshme. Afati juaj i radhës është më {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 nga regjistrimet tuaja në kategorinë {category} skadon më {date}. Mund të anashkalohet lehtë.} other{{count} nga regjistrimet tuaja në kategorinë {category} skadojnë deri më {date}. Është e lehtë të harrohet njëri kur janë të grupuar kështu.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 skadim i ardhshëm është i mbuluar me kujtesë. Asgjë tjetër nuk kërkon vëmendjen tuaj.} other{{count} skadime të ardhshme janë të mbuluara me kujtesa. Asgjë tjetër nuk kërkon vëmendjen tuaj.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} nga regjistrimet tuaja në kategorinë {category} skadon më {date}. Mund të anashkalohet lehtë.} other{{count} nga regjistrimet tuaja në kategorinë {category} skadojnë deri më {date}. Është e lehtë të harrohet njëri kur janë të grupuar kështu.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} skadim i ardhshëm është i mbuluar me kujtesë. Asgjë tjetër nuk kërkon vëmendjen tuaj.} other{{count} skadime të ardhshme janë të mbuluara me kujtesa. Asgjë tjetër nuk kërkon vëmendjen tuaj.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Çdo gjë është e përditësuar. Për momentin asgjë nuk kërkon vëmendjen tuaj.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Për momentin asgjë nuk është urgjente, por 1 regjistrim i ardhshëm nuk ka ende kujtesë.} other{Për momentin asgjë nuk është urgjente, por {count} regjistrime të ardhshme nuk kanë ende kujtesa.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Për momentin asgjë nuk është urgjente, por {count} regjistrim i ardhshëm nuk ka ende kujtesë.} other{Për momentin asgjë nuk është urgjente, por {count} regjistrime të ardhshme nuk kanë ende kujtesa.}}",
   "smartInsightCloseExpiriesHeading": "Skadojnë afërsisht në të njëjtën kohë",
   "plansHeadline": "Përfitoni paketën e plotë Vaultara",
   "plansSubhead": "Regjistrime të pakufizuara, grupet tuaja dhe kujtesa të përshtatura saktësisht ashtu siç dëshironi.",
@@ -621,7 +613,7 @@
   "reminderCascadeRemoveStep": "Hiq",
   "reminderCascadeDuplicate": "Një kujtesë tjetër e përdor tashmë këtë ditë",
   "reminderCascadeOutOfRange": "Vendosni midis {min} dhe {max} ditësh",
-  "reminderCascadeStepLabel": "Kujtesa {position}: {days, plural, =1{1 ditë} other{{days} ditë}} para",
+  "reminderCascadeStepLabel": "Kujtesa {position}: {days, plural, =1{{days} ditë} other{{days} ditë}} para",
   "expiryTimelineNotReady": "Linja juaj e kohës do të shfaqet sapo të keni regjistrime që skadojnë në pak muaj të ndryshëm.",
   "verifyEmailResendIn": "Ridërgo pas {seconds}s",
   "verifyEmailSpamHint": "Nuk është aty? Kontrolloni dosjen tuaj të spameve ose të emaileve të padëshiruara.",
@@ -630,13 +622,10 @@
   "verifyEmailDiscardBody": "Kjo llogari nuk është e verifikuar. Largimi tani do ta fshijë atë dhe ju mund të regjistroheni sërish me cilëndo adresë emaili.",
   "verifyEmailDiscardAction": "Hidh poshtë",
   "verifyEmailKeepWaiting": "Vazhdoni të prisni",
-  "expiringBadge": "{count, plural, =1{1 skadon së shpejti} other{{count} skadojnë së shpejti}}",
+  "expiringBadge": "{count, plural, =1{{count} skadon së shpejti} other{{count} skadojnë së shpejti}}",
   "noRecordsToday": "Asgjë nuk skadon sot",
   "noRecordsTomorrow": "Asgjë nuk skadon nesër",
-  "cascadeStepTitle": "{days, plural, =0{Vlefshmëria e {recordName} skadon sot} =1{Vlefshmëria e {recordName} skadon nesër} other{Vlefshmëria e {recordName} skadon pas {days} ditësh}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, vlefshmëria e {recordName} skadon sot. E keni rinovuar tashmë? Përditësoni datën e skadimit.} =1{{firstName}, vlefshmëria e {recordName} skadon nesër. Rinovojeni tani që të mos e humbisni vlefshmërinë.} other{{firstName}, vlefshmëria e {recordName} skadon më {date}. Rinovimi i hershëm siguron vlefshmëri të pandërprerë.}}",
   "cascadeFinalStepTitle": "Kujtesa e fundit: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, vlefshmëria e {recordName} skadon {days, plural, =1{nesër} other{pas {days} ditësh, më {date}}}. Kjo është kujtesa juaj e fundit, rinovojeni ose përditësoni datën e skadimit.",
   "notificationsTitle": "Njoftimet",
   "notificationsProfileEnabledSubtitle": "Kujtesat mbërrijnë në orën {time}.",
   "notificationsProfileDisabledSubtitle": "Njoftimet janë të çaktivizuara.",
@@ -1666,13 +1655,13 @@
   "dailyDigestSwitchSubtitle": "Merrni një njoftim në orën e kujtesës suaj që rendit gjithçka që ka afat atë ditë.",
   "dailyDigestTurnedOn": "Kujtesat tuaja tani vijnë si një përmbledhje ditore.",
   "dailyDigestTurnedOff": "Kujtesat e veçanta për çdo regjistrim u rikthyen.",
-  "dailyDigestTitle": "{count, plural, one{1 regjistrim ka nevojë për vëmendjen tuaj} other{{count} regjistrime kanë nevojë për vëmendjen tuaj}}",
+  "dailyDigestTitle": "{count, plural, one{{count} regjistrim ka nevojë për vëmendjen tuaj} other{{count} regjistrime kanë nevojë për vëmendjen tuaj}}",
   "dailyDigestBody": "Së shpejti: {names}.",
   "dailyDigestBodyMore": "Së shpejti: {names} dhe {count} të tjera.",
   "dailyDigestLockedRecord": "një regjistrim i kyçur",
   "renewReasonRepeat": "{months, plural, one{Sipas cilësimit tuaj të përsëritjes, çdo muaj} other{Sipas cilësimit tuaj të përsëritjes, çdo {months} muaj}}",
   "renewReasonHistory": "{count, plural, one{Bazuar në rinovimin tuaj të fundit} other{Bazuar në {count} rinovimet tuaja të fundit}}",
-  "renewReasonTypical": "{years, plural, one{Zakonisht vlen për 1 vit} other{Zakonisht vlen për {years} vjet}}",
+  "renewReasonTypical": "{years, plural, one{Zakonisht vlen për {years} vit} other{Zakonisht vlen për {years} vjet}}",
   "renewChangeHint": "Prekni datën për ta ndryshuar.",
   "renewPickDate": "Zgjidhni datën e re të skadimit",
   "renewPickDateHint": "Zgjidhni datën e shfaqur në dokumentin tuaj të ri.",
@@ -2336,7 +2325,7 @@
   "lostWalletCheckupBody": "Përgatitu tani, që të mos harrohet asgjë nëse humbet.",
   "lostWalletCheckupAllGood": "Gjithçka gati. Nëse humbet ndonjëherë, je i përgatitur.",
   "lostWalletSetPlaceBody": "Hap një kartë ose dokument dhe zgjidh ku e mban. Bëje këtë për ID-në, patentën dhe kartat.",
-  "lostWalletIssuePhotos": "{count, plural, one{1 send nuk ka foto. Me foto zëvendësohet më shpejt.} other{{count} sende nuk kanë foto. Me foto zëvendësohen më shpejt.}}",
+  "lostWalletIssuePhotos": "{count, plural, one{{count} send nuk ka foto. Me foto zëvendësohet më shpejt.} other{{count} sende nuk kanë foto. Me foto zëvendësohen më shpejt.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2344,7 +2333,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, one{1 kartë nuk ka të ruajtur numrin për kartë të humbur.} other{{count} karta nuk kanë të ruajtur numrin për kartë të humbur.}}",
+  "lostWalletIssueLines": "{count, plural, one{{count} kartë nuk ka të ruajtur numrin për kartë të humbur.} other{{count} karta nuk kanë të ruajtur numrin për kartë të humbur.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2444,7 +2433,7 @@
     }
   },
   "lostWalletReportNoCase": "Numri i denoncimit: ende pa denoncuar",
-  "lostWalletReportCount": "{count, plural, one{1 send më poshtë} other{{count} sende më poshtë}}",
+  "lostWalletReportCount": "{count, plural, one{{count} send më poshtë} other{{count} sende më poshtë}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2875,5 +2864,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} skadon sot",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} skadon nesër",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} skadon pas {days} dite} other{{recordName} skadon pas {days} ditësh}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} ka skaduar",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Një regjistrim i kyçur kërkon vëmendjen tuaj",
+  "remLockedBody": "Data e tij është {date}. Shkyçni Vaultara për të parë se cili regjistrim është.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Regjistrimi juaj \"{recordName}\" skadon sot.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Regjistrimi juaj \"{recordName}\" skadon nesër.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Regjistrimi juaj \"{recordName}\" skadon më {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, regjistrimi juaj \"{recordName}\" skadon sot.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, regjistrimi juaj \"{recordName}\" skadon nesër.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, regjistrimi juaj \"{recordName}\" skadon më {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Regjistrimi \"{recordName}\" i {person} skadon sot.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Regjistrimi \"{recordName}\" i {person} skadon nesër.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Regjistrimi \"{recordName}\" i {person} skadon më {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Regjistrimi juaj \"{recordName}\" skadoi më {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Regjistrimi \"{recordName}\" i {person} skadoi më {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "E keni rinovuar tashmë? Përditësoni datën.",
+  "remTipTomorrow": "Rinovojeni tani që të mos skadojë.",
+  "remTipEarly": "Rinovimi herët ju mban të mbuluar.",
+  "remTipLast": "Ky është kujtuesi juaj i fundit para skadimit.",
+  "remTipExpired": "Rinovojeni, ose përditësoni datën nëse e keni bërë tashmë.",
+  "remStartBody": "Është koha të filloni rinovimin e \"{recordName}\". Skadon më {date}, kështu që nëse filloni tani do të keni kohë të mjaftueshme.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Është koha të filloni rinovimin e \"{recordName}\" të {person}. Skadon më {date}, kështu që duke filluar tani ka kohë të mjaftueshme.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Kujtues skadimi",
+  "notifChannelDescription": "Kujtues para se të skadojnë regjistrimet tuaja",
+  "notifTestTitle": "Njoftim provë",
+  "notifTestBody": "Kujtuesit e Vaultara vijnë kështu.",
+  "notifTestAction": "Dërgo një njoftim provë",
+  "notifTestSubtitle": "Kontrolloni që kujtuesit arrijnë në këtë telefon",
+  "notifTestSent": "Prova u dërgua. Duhet të arrijë pas pak sekondash.",
+  "notifAfterExpiryTitle": "Më kujto pasi një regjistrim skadon",
+  "notifAfterExpirySubtitle": "3 dhe 14 ditë më pas, nëse nuk është rinovuar",
+  "notifWeeklyTitle": "Përmbledhja e së hënës",
+  "notifWeeklySubtitle": "Një shënim të hënën në mëngjes kur diçka skadon atë javë",
+  "notifPushSection": "Familja dhe përditësimet",
+  "notifHouseholdTitle": "Regjistrimet e ndara",
+  "notifHouseholdSubtitle": "Kur një regjistrim i ndarë është gati të skadojë dhe askush nuk e ka rinovuar",
+  "notifUpdatesTitle": "Përditësimet që kërkuat",
+  "notifUpdatesSubtitle": "Kur dikush dërgon të dhënat e reja të një regjistrimi",
+  "notifSecurityNote": "Sinjalizimet për hyrje të reja në llogarinë tuaj dërgohen gjithmonë.",
+  "notifIosHelpTitle": "Nuk po merrni kujtues?",
+  "notifIosHelpSubtitle": "Kontrolloni cilësimet e iPhone",
+  "notifIosHelpStep1": "Hapni Cilësimet, pastaj Njoftimet, pastaj Vaultara, dhe aktivizoni Lejo njoftimet.",
+  "notifIosHelpStep2": "Aktivizoni Ekranin e kyçjes, Qendrën e njoftimeve dhe Banerët.",
+  "notifIosHelpStep3": "Nëse përdorni një Fokus, shtoni Vaultara te aplikacionet që lejon.",
+  "notifIosHelpStep4": "Hapni Vaultara çdo disa javë. iPhone mban vetëm një numër të kufizuar kujtuesish përpara, dhe hapja e aplikacionit planifikon të tjerët.",
+  "homeNextUpEmpty": "Asgjë nuk skadon së shpejti. Gjithçka është në rregull.",
+  "homeDueSoonChip": "{count, plural, one{{count} skadon brenda 30 ditëve} other{{count} skadojnë brenda 30 ditëve}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Kategoritë e fiksuara"
 }

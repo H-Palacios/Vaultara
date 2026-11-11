@@ -360,15 +360,6 @@ class AppLocalizationsNb extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Godt å se deg igjen. Vaultara er klar når du vil gjennomgå viktige datoer og oppføringer.';
 
   @override
-  String get summaryAllCaption => 'Sporet i Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Utløpt';
-
-  @override
-  String get summaryExpiredCaption => 'Utløpsdato er passert';
-
-  @override
   String get editorNotes => 'Notater';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Slett oppføring';
-
-  @override
-  String get summaryAllRecordsTitle => 'Alle oppføringer';
 
   @override
   String get noGroupFound => 'Ingen grupper ennå';
@@ -829,22 +817,10 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count oppføringer',
-      one: '1 oppføring',
+      one: '$count oppføring',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Kommende';
-
-  @override
-  String get summaryUpcomingCaption => 'Innen 30 dager';
-
-  @override
-  String get summaryUrgentTitle => 'Haster';
-
-  @override
-  String get summaryUrgentCaption => 'Innen 7 dager';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -945,7 +921,7 @@ class AppLocalizationsNb extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days dager før',
-      one: '1 dag før',
+      one: '$days dag før',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsNb extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names og $extra til utløper i dag.',
-      one: '$names og 1 til utløper i dag.',
+      one: '$names og $extra til utløper i dag.',
       zero: '$names utløper i dag.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsNb extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b og $extra oppføringer til utløper innen $lastDate, omtrent på samme tid. Det er lett å glemme én når flere er så tette.',
-      one: '$a, $b og 1 oppføring til utløper innen $lastDate, omtrent på samme tid. Det er lett å glemme én når flere er så tette.',
+      one: '$a, $b og $extra oppføring til utløper innen $lastDate, omtrent på samme tid. Det er lett å glemme én når flere er så tette.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count av dine oppføringer i kategorien $category utløper innen $date. Det er lett å glemme én når de er gruppert slik.',
-      one: '1 av dine oppføringer i kategorien $category utløper den $date. Den er lett å overse.',
+      one: '$count av dine oppføringer i kategorien $category utløper den $date. Den er lett å overse.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kommende utløpsdatoer dekkes av påminnelser. Ingenting annet krever din oppmerksomhet.',
-      one: '1 kommende utløpsdato dekkes av en påminnelse. Ingenting annet krever din oppmerksomhet.',
+      one: '$count kommende utløpsdato dekkes av en påminnelse. Ingenting annet krever din oppmerksomhet.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ingenting haster akkurat nå, men $count kommende oppføringer mangler påminnelse.',
-      one: 'Ingenting haster akkurat nå, men 1 kommende oppføring mangler påminnelse.',
+      one: 'Ingenting haster akkurat nå, men $count kommende oppføring mangler påminnelse.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsNb extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days dager',
-      one: '1 dag',
+      one: '$days dag',
     );
     return 'Påminnelse $position: $_temp0 før';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count utløper snart',
-      one: '1 utløper snart',
+      one: '$count utløper snart',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsNb extends AppLocalizations {
   String get noRecordsTomorrow => 'Ingenting utløper i morgen';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName utløper om $days dager',
-      one: '$recordName utløper i morgen',
-      zero: '$recordName utløper i dag',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, din $recordName utløper den $date. Fornyelse i god tid holder deg dekket.',
-      one: '$firstName, din $recordName utløper i morgen. Forny den nå så den ikke utløper.',
-      zero: '$firstName, din $recordName utløper i dag. Har du allerede fornyet den? Oppdater utløpsdatoen.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Siste påminnelse: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'om $days dager, den $date',
-      one: 'i morgen',
-    );
-    return '$firstName, din $recordName utløper $_temp0. Dette er din siste påminnelse, forny den eller oppdater datoen.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bilder er ikke krypterte ennå',
-      one: '1 bilde er ikke kryptert ennå',
+      one: '$count bilde er ikke kryptert ennå',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Du har $count bilder som ikke er krypterte ennå. Vi kan kryptere dem nå.',
-      one: 'Du har 1 bilde som ikke er kryptert ennå. Vi kan kryptere det nå.',
+      one: 'Du har $count bilde som ikke er kryptert ennå. Vi kan kryptere det nå.',
     );
     return '$_temp0 Hold Vaultara åpen til dette er ferdig.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsNb extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'For mange forsøk. Vent $seconds sekunder og prøv igjen.',
-      one: 'For mange forsøk. Vent 1 sekund og prøv igjen.',
+      one: 'For mange forsøk. Vent $seconds sekund og prøv igjen.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsNb extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'For mange forsøk. Vent $minutes minutter og prøv igjen.',
-      one: 'For mange forsøk. Vent 1 minutt og prøv igjen.',
+      one: 'For mange forsøk. Vent $minutes minutt og prøv igjen.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count oppføringer trenger oppmerksomhet',
-      one: '1 oppføring trenger oppmerksomhet',
+      one: '$count oppføring trenger oppmerksomhet',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsNb extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Vanligvis gyldig i $years år',
-      one: 'Vanligvis gyldig i 1 år',
+      one: 'Vanligvis gyldig i $years år',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: 'for $count minutter siden',
-      one: 'for 1 minutt siden',
+      one: 'for $count minutt siden',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: 'for $count timer siden',
-      one: 'for 1 time siden',
+      one: 'for $count time siden',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: 'for $count dager siden',
-      one: 'for 1 dag siden',
+      one: 'for $count dag siden',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dager igjen',
-      one: '1 dag igjen',
+      one: '$count dag igjen',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: 'For $count dager siden',
-      one: 'For 1 dag siden',
+      one: 'For $count dag siden',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count poster du har slettet, teller som avsluttet.',
-      one: '1 post du har slettet, teller som avsluttet.',
+      one: '$count post du har slettet, teller som avsluttet.',
     );
     return '$_temp0';
   }
@@ -7302,7 +7243,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count elementer har ikke bilde. Med bilder går det raskere å erstatte.',
-      one: '1 element har ikke bilde. Med bilde går det raskere å erstatte.',
+      one: '$count element har ikke bilde. Med bilde går det raskere å erstatte.',
     );
     return '$_temp0';
   }
@@ -7313,7 +7254,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kort har ikke lagret sperrenummer.',
-      one: '1 kort har ikke lagret sperrenummer.',
+      one: '$count kort har ikke lagret sperrenummer.',
     );
     return '$_temp0';
   }
@@ -7492,7 +7433,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count elementer under',
-      one: '1 element under',
+      one: '$count element under',
     );
     return '$_temp0';
   }
@@ -7584,7 +7525,7 @@ class AppLocalizationsNb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count trinn',
-      one: '1 trinn',
+      one: '$count trinn',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsNb extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Påminnelse: $name utløper $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName utløper i dag';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName utløper i morgen';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName utløper om $days dager',
+      one: '$recordName utløper om $days dag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName har utløpt';
+  }
+
+  @override
+  String get remLockedTitle => 'En låst oppføring trenger oppmerksomheten din';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Datoen er $date. Lås opp Vaultara for å se hvilken oppføring det er.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Oppføringen din «$recordName» utløper i dag.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Oppføringen din «$recordName» utløper i morgen.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Oppføringen din «$recordName» utløper den $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, oppføringen din «$recordName» utløper i dag.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, oppføringen din «$recordName» utløper i morgen.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, oppføringen din «$recordName» utløper den $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Oppføringen «$recordName» til $person utløper i dag.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Oppføringen «$recordName» til $person utløper i morgen.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Oppføringen «$recordName» til $person utløper den $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Oppføringen din «$recordName» utløp den $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Oppføringen «$recordName» til $person utløp den $date.';
+  }
+
+  @override
+  String get remTipToday => 'Allerede fornyet? Oppdater datoen.';
+
+  @override
+  String get remTipTomorrow => 'Forny den nå så den ikke går ut.';
+
+  @override
+  String get remTipEarly => 'Å fornye tidlig holder deg dekket.';
+
+  @override
+  String get remTipLast => 'Dette er den siste påminnelsen før den utløper.';
+
+  @override
+  String get remTipExpired => 'Forny den, eller oppdater datoen hvis du allerede har gjort det.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Det er på tide å begynne å fornye «$recordName». Den utløper den $date, så hvis du begynner nå, har du god tid.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Det er på tide å begynne å fornye «$recordName» til $person. Den utløper den $date, så å begynne nå gir god tid.';
+  }
+
+  @override
+  String get notifChannelName => 'Påminnelser om utløp';
+
+  @override
+  String get notifChannelDescription => 'Påminnelser før oppføringene dine utløper';
+
+  @override
+  String get notifTestTitle => 'Testvarsel';
+
+  @override
+  String get notifTestBody => 'Påminnelser fra Vaultara kommer slik.';
+
+  @override
+  String get notifTestAction => 'Send et testvarsel';
+
+  @override
+  String get notifTestSubtitle => 'Sjekk at påminnelser kommer frem til denne telefonen';
+
+  @override
+  String get notifTestSent => 'Test sendt. Den skal komme om noen sekunder.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Påminn meg etter at en oppføring har utløpt';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 og 14 dager etter, hvis den ikke er fornyet';
+
+  @override
+  String get notifWeeklyTitle => 'Mandagsoversikt';
+
+  @override
+  String get notifWeeklySubtitle => 'En melding mandag morgen når noe utløper den uken';
+
+  @override
+  String get notifPushSection => 'Husstand og oppdateringer';
+
+  @override
+  String get notifHouseholdTitle => 'Delte oppføringer';
+
+  @override
+  String get notifHouseholdSubtitle => 'Når en delt oppføring snart utløper og ingen har fornyet den';
+
+  @override
+  String get notifUpdatesTitle => 'Oppdateringer du ba om';
+
+  @override
+  String get notifUpdatesSubtitle => 'Når noen sender de nye opplysningene for en oppføring';
+
+  @override
+  String get notifSecurityNote => 'Varsler om nye pålogginger på kontoen din sendes alltid.';
+
+  @override
+  String get notifIosHelpTitle => 'Får du ikke påminnelser?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Sjekk innstillingene på iPhonen';
+
+  @override
+  String get notifIosHelpStep1 => 'Åpne Innstillinger, så Varslinger, så Vaultara, og slå på Tillat varslinger.';
+
+  @override
+  String get notifIosHelpStep2 => 'Slå på Låst skjerm, Varselsenter og Bannere.';
+
+  @override
+  String get notifIosHelpStep3 => 'Hvis du bruker en fokus, legg Vaultara til appene den tillater.';
+
+  @override
+  String get notifIosHelpStep4 => 'Åpne Vaultara med noen ukers mellomrom. En iPhone lagrer bare et begrenset antall påminnelser fremover, og når du åpner appen, planlegges de neste.';
+
+  @override
+  String get homeNextUpEmpty => 'Ingenting utløper snart. Alt er i orden.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count forfaller innen 30 dager',
+      one: '$count forfaller innen 30 dager',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Festede kategorier';
 }

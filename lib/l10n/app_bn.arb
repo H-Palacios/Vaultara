@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara আপনাকে গুরুত্বপূর্ণ মেয়াদ শেষ হওয়ার তারিখগুলি অনুসরণ করতে সাহায্য করে যাতে কিছুই অজানা না থাকে।",
   "homeWelcomeSubtitleFirst": "আপনাকে এখানে পেয়ে ভালো লাগছে। Vaultara গুরুত্বপূর্ণ তারিখ ও নথি এক নিরাপদ জায়গায় রেখে আপনাকে সংগঠিত থাকতে সাহায্য করে।",
   "homeWelcomeSubtitleBack": "আবার আপনাকে দেখে ভালো লাগছে। Vaultara এখানে রয়েছে যখনই আপনি আপনার গুরুত্বপূর্ণ তারিখ ও নথি পর্যালোচনা করতে চান।",
-  "summaryAllCaption": "Vaultara-তে ট্র্যাক করা",
-  "summaryExpiredTitle": "মেয়াদ শেষ",
-  "summaryExpiredCaption": "মেয়াদ শেষ হয়ে গেছে",
   "editorNotes": "নোট",
   "editorReminderNone": "কোনো রিমাইন্ডার নেই",
   "editorReminderOnExpiry": "মেয়াদ শেষের দিনে",
@@ -199,7 +196,6 @@
   "addRecord": "রেকর্ড যোগ করুন",
   "noRecordsYet": "এখনও কোনো রেকর্ড নেই।",
   "deleteRecordTitle": "রেকর্ড মুছুন",
-  "summaryAllRecordsTitle": "সব রেকর্ড",
   "noGroupFound": "এখনো কোনো গ্রুপ নেই",
   "groupLabel": "{count, plural, one{{count} গ্রুপ} other{{count} গ্রুপ}}",
   "recordsLabel": "{count, plural, one{{count} রেকর্ড} other{{count} রেকর্ড}}",
@@ -452,10 +448,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "আসন্ন",
-  "summaryUpcomingCaption": "৩০ দিনের মধ্যে",
-  "summaryUrgentTitle": "জরুরি",
-  "summaryUrgentCaption": "৭ দিনের মধ্যে",
   "profileHeaderTitle": "প্রোফাইল",
   "profileTutorialsTitle": "টিউটোরিয়াল",
   "profileTutorialsSubtitle": "অ্যাপ টিউটোরিয়াল ব্রাউজ করুন",
@@ -487,7 +479,7 @@
   "reminderPremiumSection": "প্রিমিয়াম",
   "reminderNone": "কোনো রিমাইন্ডার নেই",
   "reminderOnExpiry": "মেয়াদ শেষে",
-  "reminderDaysBefore": "{days, plural, one{1 দিন আগে} other{{days} দিন আগে}}",
+  "reminderDaysBefore": "{days, plural, one{{days} দিন আগে} other{{days} দিন আগে}}",
   "reminderCustomDaysTitle": "কাস্টম দিন লিখুন",
   "reminderCascadeTitle": "ক্যাসকেড রিমাইন্ডার",
   "reminderCascadeSubtitle": "রেকর্ডের মেয়াদ শেষ হওয়ার আগে একাধিক বিজ্ঞপ্তি পান",
@@ -638,7 +630,7 @@
   "reminderCascadeRemoveStep": "সরিয়ে ফেলুন",
   "reminderCascadeDuplicate": "অন্য একটি রিমাইন্ডার ইতিমধ্যে এই দিনটি ব্যবহার করছে",
   "reminderCascadeOutOfRange": "{min} এবং {max} দিনের মধ্যে লিখুন",
-  "reminderCascadeStepLabel": "রিমাইন্ডার {position}: {days, plural, =1{১ দিন} other{{days} দিন}} আগে",
+  "reminderCascadeStepLabel": "রিমাইন্ডার {position}: {days, plural, =1{{days} দিন} other{{days} দিন}} আগে",
   "expiryTimelineNotReady": "কয়েকটি ভিন্ন মাসে মেয়াদ শেষ হওয়ার মতো রেকর্ড আপনার কাছে থাকলে আপনার টাইমলাইনটি প্রদর্শিত হবে।",
   "verifyEmailResendIn": "{seconds} সেকেন্ডের মধ্যে আবার পাঠান",
   "verifyEmailSpamHint": "সেখানে নেই? আপনার স্প্যাম বা জাঙ্ক ফোল্ডার চেক করুন।",
@@ -650,10 +642,7 @@
   "expiringBadge": "{count, plural, =1{1টির মেয়াদ শীঘ্রই শেষ হচ্ছে} other{{count}টির মেয়াদ শীঘ্রই শেষ হচ্ছে}}",
   "noRecordsToday": "আজ কোনো কিছুর মেয়াদ শেষ হচ্ছে না",
   "noRecordsTomorrow": "আগামীকাল কোনো কিছুর মেয়াদ শেষ হচ্ছে না",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} আজ মেয়াদোত্তীর্ণ হবে} =1{{recordName} আগামীকাল মেয়াদোত্তীর্ণ হবে} other{{recordName} {days} দিনের মধ্যে মেয়াদোত্তীর্ণ হবে}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, আপনার {recordName} আজ মেয়াদোত্তীর্ণ হবে। ইতিমধ্যে নবায়ন করেছেন? এর মেয়াদোত্তীর্ণের তারিখ আপডেট করুন।} =1{{firstName}, আপনার {recordName} আগামীকাল মেয়াদোত্তীর্ণ হবে। এখনই নবায়ন করুন যাতে এটি বাতিল না হয়।} other{{firstName}, আপনার {recordName} {date} তারিখে মেয়াদোত্তীর্ণ হবে। আগেভাগে নবায়ন করলে আপনি সুরক্ষিত থাকবেন।}}",
   "cascadeFinalStepTitle": "শেষ রিমাইন্ডার: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, আপনার {recordName} {days, plural, =1{আগামীকাল} other{{days} দিনের মধ্যে, {date} তারিখে}} মেয়াদোত্তীর্ণ হবে। এটি আপনার শেষ রিমাইন্ডার, এটি নবায়ন করুন বা এর তারিখ আপডেট করুন।",
   "notificationsTitle": "বিজ্ঞপ্তি",
   "notificationsProfileEnabledSubtitle": "রিমাইন্ডার আসবে {time}-এ।",
   "notificationsProfileDisabledSubtitle": "বিজ্ঞপ্তি বন্ধ রয়েছে।",
@@ -1689,7 +1678,7 @@
   "dailyDigestLockedRecord": "একটি লক করা রেকর্ড",
   "renewReasonRepeat": "{months, plural, one{আপনার পুনরাবৃত্তি সেটিং অনুযায়ী, প্রতি মাসে} other{আপনার পুনরাবৃত্তি সেটিং অনুযায়ী, প্রতি {months} মাসে}}",
   "renewReasonHistory": "{count, plural, one{আপনার শেষ নবায়নের ভিত্তিতে} other{আপনার শেষ {count}টি নবায়নের ভিত্তিতে}}",
-  "renewReasonTypical": "{years, plural, one{সাধারণত ১ বছরের জন্য বৈধ} other{সাধারণত {years} বছরের জন্য বৈধ}}",
+  "renewReasonTypical": "{years, plural, one{সাধারণত {years} বছরের জন্য বৈধ} other{সাধারণত {years} বছরের জন্য বৈধ}}",
   "renewChangeHint": "বদলাতে তারিখে ট্যাপ করুন।",
   "renewPickDate": "নতুন মেয়াদ শেষের তারিখ বেছে নিন",
   "renewPickDateHint": "আপনার নতুন নথিতে দেওয়া তারিখটি বেছে নিন।",
@@ -2165,8 +2154,8 @@
   "lifePlanAutoChanged": "Vaultara এই রেকর্ড বদলাতে দেখেছে, তাই এটি সম্পন্ন হিসেবে চিহ্নিত।",
   "lifePlanAutoAdded": "এই পরিকল্পনা শুরুর পরে যোগ করা হয়েছে।",
   "lifePlanProgress": "{total}টির মধ্যে {done}টি সম্পন্ন",
-  "lifePlanDaysToGo": "{count, plural, =1{আর 1 দিন বাকি} other{আর {count} দিন বাকি}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 দিন আগে} other{{count} দিন আগে}}",
+  "lifePlanDaysToGo": "{count, plural, =1{আর {count} দিন বাকি} other{আর {count} দিন বাকি}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} দিন আগে} other{{count} দিন আগে}}",
   "lifePlanAllDone": "সব সম্পন্ন। আপনি পরিকল্পনাটিকে সমাপ্ত হিসেবে চিহ্নিত করতে পারেন।",
   "lifePlanFinish": "সমাপ্ত হিসেবে চিহ্নিত করুন",
   "lifePlanReopen": "আবার খুলুন",
@@ -2892,5 +2881,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName}-এর মেয়াদ আজ শেষ হচ্ছে",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName}-এর মেয়াদ আগামীকাল শেষ হচ্ছে",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName}-এর মেয়াদ {days} দিনের মধ্যে শেষ হচ্ছে} other{{recordName}-এর মেয়াদ {days} দিনের মধ্যে শেষ হচ্ছে}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName}-এর মেয়াদ শেষ হয়ে গেছে",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "একটি লক করা রেকর্ডে আপনার মনোযোগ প্রয়োজন",
+  "remLockedBody": "এর তারিখ {date}। কোন রেকর্ড তা দেখতে Vaultara আনলক করুন।",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "আপনার রেকর্ড \"{recordName}\"-এর মেয়াদ আজ শেষ হচ্ছে।",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "আপনার রেকর্ড \"{recordName}\"-এর মেয়াদ আগামীকাল শেষ হচ্ছে।",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "আপনার রেকর্ড \"{recordName}\"-এর মেয়াদ {date} তারিখে শেষ হবে।",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, আপনার রেকর্ড \"{recordName}\"-এর মেয়াদ আজ শেষ হচ্ছে।",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, আপনার রেকর্ড \"{recordName}\"-এর মেয়াদ আগামীকাল শেষ হচ্ছে।",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, আপনার রেকর্ড \"{recordName}\"-এর মেয়াদ {date} তারিখে শেষ হবে।",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: রেকর্ড \"{recordName}\"-এর মেয়াদ আজ শেষ হচ্ছে।",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: রেকর্ড \"{recordName}\"-এর মেয়াদ আগামীকাল শেষ হচ্ছে।",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: রেকর্ড \"{recordName}\"-এর মেয়াদ {date} তারিখে শেষ হবে।",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "আপনার রেকর্ড \"{recordName}\"-এর মেয়াদ {date} তারিখে শেষ হয়েছে।",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: রেকর্ড \"{recordName}\"-এর মেয়াদ {date} তারিখে শেষ হয়েছে।",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "ইতিমধ্যে নবায়ন করেছেন? এর তারিখ আপডেট করুন।",
+  "remTipTomorrow": "মেয়াদ যেন শেষ না হয়, তাই এখনই নবায়ন করুন।",
+  "remTipEarly": "আগে নবায়ন করলে আপনি সুরক্ষিত থাকেন।",
+  "remTipLast": "মেয়াদ শেষ হওয়ার আগে এটিই আপনার শেষ রিমাইন্ডার।",
+  "remTipExpired": "নবায়ন করুন, অথবা ইতিমধ্যে করে থাকলে তারিখ আপডেট করুন।",
+  "remStartBody": "\"{recordName}\" নবায়ন শুরু করার সময় হয়েছে। এর মেয়াদ {date} তারিখে শেষ হবে, তাই এখন শুরু করলে আপনি যথেষ্ট সময় পাবেন।",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) নবায়ন শুরু করার সময় হয়েছে। এর মেয়াদ {date} তারিখে শেষ হবে, তাই এখন শুরু করলে যথেষ্ট সময় থাকবে।",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "মেয়াদ শেষের রিমাইন্ডার",
+  "notifChannelDescription": "আপনার রেকর্ডের মেয়াদ শেষ হওয়ার আগে রিমাইন্ডার",
+  "notifTestTitle": "পরীক্ষামূলক বিজ্ঞপ্তি",
+  "notifTestBody": "Vaultara-র রিমাইন্ডার এভাবে আসে।",
+  "notifTestAction": "পরীক্ষামূলক বিজ্ঞপ্তি পাঠান",
+  "notifTestSubtitle": "রিমাইন্ডার এই ফোনে পৌঁছায় কিনা দেখুন",
+  "notifTestSent": "পরীক্ষা পাঠানো হয়েছে। কয়েক সেকেন্ডের মধ্যে আসা উচিত।",
+  "notifAfterExpiryTitle": "রেকর্ডের মেয়াদ শেষ হওয়ার পর মনে করিয়ে দিন",
+  "notifAfterExpirySubtitle": "৩ ও ১৪ দিন পরে, যদি নবায়ন না হয়ে থাকে",
+  "notifWeeklyTitle": "সোমবারের সারসংক্ষেপ",
+  "notifWeeklySubtitle": "সোমবার সকালে একটি বার্তা, যখন সেই সপ্তাহে কিছুর মেয়াদ শেষ হচ্ছে",
+  "notifPushSection": "পরিবার ও আপডেট",
+  "notifHouseholdTitle": "শেয়ার করা রেকর্ড",
+  "notifHouseholdSubtitle": "যখন কোনো শেয়ার করা রেকর্ডের মেয়াদ শেষ হওয়ার কাছাকাছি এবং কেউ নবায়ন করেনি",
+  "notifUpdatesTitle": "আপনার চাওয়া আপডেট",
+  "notifUpdatesSubtitle": "যখন কেউ কোনো রেকর্ডের নতুন তথ্য পাঠায়",
+  "notifSecurityNote": "আপনার অ্যাকাউন্টে নতুন সাইন-ইনের সতর্কতা সবসময় পাঠানো হয়।",
+  "notifIosHelpTitle": "রিমাইন্ডার পাচ্ছেন না?",
+  "notifIosHelpSubtitle": "আপনার iPhone-এর সেটিংস দেখুন",
+  "notifIosHelpStep1": "সেটিংস, তারপর বিজ্ঞপ্তি, তারপর Vaultara খুলুন, এবং বিজ্ঞপ্তির অনুমতি দিন চালু করুন।",
+  "notifIosHelpStep2": "লক স্ক্রিন, বিজ্ঞপ্তি কেন্দ্র ও ব্যানার চালু করুন।",
+  "notifIosHelpStep3": "আপনি ফোকাস ব্যবহার করলে, অনুমোদিত অ্যাপে Vaultara যোগ করুন।",
+  "notifIosHelpStep4": "কয়েক সপ্তাহ পরপর Vaultara খুলুন। iPhone সামনের সীমিত সংখ্যক রিমাইন্ডারই রাখে, আর অ্যাপ খুললে পরেরগুলো নির্ধারিত হয়।",
+  "homeNextUpEmpty": "শীঘ্রই কিছুর মেয়াদ শেষ হচ্ছে না। সব ঠিক আছে।",
+  "homeDueSoonChip": "{count, plural, one{৩০ দিনের মধ্যে {count}টি বাকি} other{৩০ দিনের মধ্যে {count}টি বাকি}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "পিন করা বিভাগ"
 }

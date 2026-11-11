@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleFirst": "آپ کو یہاں دیکھ کر خوشی ہوئی۔ Vaultara اہم تاریخوں اور ریکارڈز کو ایک محفوظ جگہ پر منظم کرنے میں مدد دیتا ہے۔",
   "homeWelcomeSubtitleBack": "آپ کو دوبارہ دیکھ کر خوشی ہوئی۔ Vaultara اس وقت تیار ہے جب آپ اپنی اہم تاریخوں اور ریکارڈز کا جائزہ لینا چاہیں۔",
   "homeWelcomeTitle": "خوش آمدید",
-  "summaryAllCaption": "Vaultara میں ٹریک کی گئی",
-  "summaryExpiredTitle": "میعاد ختم",
-  "summaryExpiredCaption": "میعاد ختم ہونے کی تاریخ گزر چکی ہے",
   "editorNotes": "نوٹس",
   "editorReminderNone": "کوئی یاددہانی نہیں",
   "editorReminderOnExpiry": "اختتام کے دن",
@@ -192,7 +189,6 @@
   "addRecord": "ریکارڈ شامل کریں",
   "noRecordsYet": "ابھی تک کوئی ریکارڈ نہیں ہے۔",
   "deleteRecordTitle": "ریکارڈ حذف کریں",
-  "summaryAllRecordsTitle": "تمام ریکارڈز",
   "noGroupFound": "ابھی تک کوئی گروپ نہیں",
   "groupLabel": "{count, plural, one{{count} گروپ} other{{count} گروپس}}",
   "recordsLabel": "{count, plural, one{{count} ریکارڈ} other{{count} ریکارڈز}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "نوٹس شامل کریں (اختیاری)",
   "expiryTimelineTitle": "ختم ہونے کی ٹائم لائن",
   "expiryTimelineSubtitle": "اس مہینے میں ختم ہونے والے ریکارڈ دیکھنے کے لیے مہینے پر تھپتھپائیں",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 ریکارڈ} other{{count} ریکارڈ}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} ریکارڈ} other{{count} ریکارڈ}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "آنے والے",
-  "summaryUpcomingCaption": "30 دنوں میں",
-  "summaryUrgentTitle": "فوری",
-  "summaryUrgentCaption": "7 دنوں میں",
   "profileHeaderTitle": "پروفائل",
   "profileTutorialsTitle": "ٹیوٹوریلز",
   "profileTutorialsSubtitle": "ایپ ٹیوٹوریلز دیکھیں",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "پریمیم",
   "reminderNone": "کوئی یاد دہانی نہیں",
   "reminderOnExpiry": "میعاد ختم ہونے کی تاریخ پر",
-  "reminderDaysBefore": "{days, plural, one{1 دن پہلے} other{{days} دن پہلے}}",
+  "reminderDaysBefore": "{days, plural, one{{days} دن پہلے} other{{days} دن پہلے}}",
   "reminderCustomDaysTitle": "حسب ضرورت دن درج کریں",
   "reminderCascadeTitle": "جھڑی یاد دہانیاں",
   "reminderCascadeSubtitle": "ریکارڈ کی میعاد ختم ہونے سے پہلے متعدد اطلاعات حاصل کریں",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "اپنا پہلا ریکارڈ شامل کریں",
   "smartInsightNoRecordsBody": "اپنے ریکارڈز کو ٹریک کرنا شروع کریں، اور Vaultara یہاں سمارٹ معلومات دکھائے گا۔",
   "smartInsightExpiresTodaySingleBody": "{name} آج ختم ہو رہا ہے۔ اگر آپ اس کی پہلے ہی تجدید کر چکے ہیں، تو یہاں تاریخ اپ ڈیٹ کریں۔",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} آج ختم ہو رہے ہیں۔} =1{{names} اور 1 مزید آج ختم ہو رہے ہیں۔} other{{names} اور {extra} مزید آج ختم ہو رہے ہیں۔}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} آج ختم ہو رہے ہیں۔} =1{{names} اور {extra} مزید آج ختم ہو رہے ہیں۔} other{{names} اور {extra} مزید آج ختم ہو رہے ہیں۔}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} کل ختم ہو رہا ہے اور اس کی کوئی یاد دہانی سیٹ نہیں ہے۔ ایک یاد دہانی سیٹ کریں تاکہ آپ اسے بھول نہ جائیں۔} other{{name} کی میعاد {date} کو ختم ہو رہی ہے اور اس کی کوئی یاد دہانی سیٹ نہیں ہے۔ ایک یاد دہانی سیٹ کریں تاکہ آپ اسے بھول نہ جائیں۔}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} کی میعاد {dateA} کو اور {b} کی {dateB} کو ختم ہو رہی ہے، جو کہ تقریباً ایک ہی وقت ہے۔ جب دو ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔",
   "smartInsightCloseExpiriesBodyThree": "{a}، {b} اور {c} سب {lastDate} تک ختم ہو رہے ہیں، جو کہ تقریباً ایک ہی وقت ہے۔ جب کئی ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}، {b} اور 1 مزید ریکارڈ {lastDate} تک ختم ہو رہے ہیں، جو کہ تقریباً ایک ہی وقت ہے۔ جب کئی ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔} other{{a}، {b} اور {extra} مزید ریکارڈز {lastDate} تک ختم ہو رہے ہیں، جو کہ تقریباً ایک ہی وقت ہے۔ جب کئی ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}، {b} اور {extra} مزید ریکارڈ {lastDate} تک ختم ہو رہے ہیں، جو کہ تقریباً ایک ہی وقت ہے۔ جب کئی ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔} other{{a}، {b} اور {extra} مزید ریکارڈز {lastDate} تک ختم ہو رہے ہیں، جو کہ تقریباً ایک ہی وقت ہے۔ جب کئی ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{اگلے ایک دن میں کچھ بھی ختم نہیں ہو رہا۔ اگلی میعاد {date} کو ختم ہو رہی ہے۔} other{اگلے {days} دنوں میں کچھ بھی ختم نہیں ہو رہا۔ اگلی میعاد {date} کو ختم ہو رہی ہے۔}}",
-  "smartInsightClusterBody": "{count, plural, =1{آپ کا {category} کا 1 ریکارڈ {date} کو ختم ہو رہا ہے۔ اس کو نظر انداز کرنا آسان ہے۔} other{آپ کے {category} کے {count} ریکارڈز {date} تک ختم ہو رہے ہیں۔ جب ریکارڈز اس طرح اکٹھے ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{آنے والے 1 ریکارڈ کے لیے یاد دہانی سیٹ ہے۔ کسی اور چیز پر توجہ دینے کی ضرورت نہیں ہے۔} other{آنے والے {count} ریکارڈز کے لیے یاد دہانیاں سیٹ ہیں۔ کسی اور چیز پر توجہ دینے کی ضرورت نہیں ہے۔}}",
+  "smartInsightClusterBody": "{count, plural, =1{آپ کا {category} کا {count} ریکارڈ {date} کو ختم ہو رہا ہے۔ اس کو نظر انداز کرنا آسان ہے۔} other{آپ کے {category} کے {count} ریکارڈز {date} تک ختم ہو رہے ہیں۔ جب ریکارڈز اس طرح اکٹھے ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{آنے والے {count} ریکارڈ کے لیے یاد دہانی سیٹ ہے۔ کسی اور چیز پر توجہ دینے کی ضرورت نہیں ہے۔} other{آنے والے {count} ریکارڈز کے لیے یاد دہانیاں سیٹ ہیں۔ کسی اور چیز پر توجہ دینے کی ضرورت نہیں ہے۔}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "ہر چیز اپ ٹو ڈیٹ ہے۔ اس وقت کسی بھی چیز پر توجہ دینے کی ضرورت نہیں ہے۔",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{اس وقت کچھ بھی فوری نہیں ہے، لیکن آنے والے 1 ریکارڈ کی ابھی تک کوئی یاد دہانی نہیں ہے۔} other{اس وقت کچھ بھی فوری نہیں ہے، لیکن آنے والے {count} ریکارڈز کی ابھی تک کوئی یاد دہانی نہیں ہے۔}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{اس وقت کچھ بھی فوری نہیں ہے، لیکن آنے والے {count} ریکارڈ کی ابھی تک کوئی یاد دہانی نہیں ہے۔} other{اس وقت کچھ بھی فوری نہیں ہے، لیکن آنے والے {count} ریکارڈز کی ابھی تک کوئی یاد دہانی نہیں ہے۔}}",
   "smartInsightCloseExpiriesHeading": "تقریباً ایک ہی وقت ختم ہو رہے ہیں",
   "plansHeadline": "مکمل Vaultara حاصل کریں",
   "plansSubhead": "لامحدود ریکارڈز، آپ کے اپنے گروپس، اور بالکل آپ کی مرضی کے مطابق سیٹ کردہ یاد دہانیاں۔",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "ہٹائیں",
   "reminderCascadeDuplicate": "کوئی اور یاد دہانی پہلے ہی اس دن کو استعمال کر رہی ہے",
   "reminderCascadeOutOfRange": "{min} اور {max} دن کے درمیان درج کریں",
-  "reminderCascadeStepLabel": "یاد دہانی {position}: {days, plural, =1{1 دن} other{{days} دن}} پہلے",
+  "reminderCascadeStepLabel": "یاد دہانی {position}: {days, plural, =1{{days} دن} other{{days} دن}} پہلے",
   "expiryTimelineNotReady": "آپ کی ٹائم لائن تبھی ظاہر ہوگی جب آپ کے پاس کچھ مختلف مہینوں میں میعاد ختم ہونے والے ریکارڈز موجود ہوں گے۔",
   "verifyEmailResendIn": "{seconds} سیکنڈ میں دوبارہ بھیجیں",
   "verifyEmailSpamHint": "وہاں نہیں ملا؟ اپنا اسپیم یا جنک فولڈر چیک کریں۔",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "اس اکاؤنٹ کی تصدیق نہیں ہوئی ہے۔ ابھی چھوڑنے سے یہ حذف ہو جائے گا، اور آپ کسی بھی ای میل ایڈریس کے ساتھ دوبارہ سائن اپ کر سکتے ہیں۔",
   "verifyEmailDiscardAction": "ختم کریں",
   "verifyEmailKeepWaiting": "انتظار جاری رکھیں",
-  "expiringBadge": "{count, plural, =1{1 ریکارڈ کی میعاد جلد ختم ہو رہی ہے} other{{count} ریکارڈز کی میعاد جلد ختم ہو رہی ہے}}",
+  "expiringBadge": "{count, plural, =1{{count} ریکارڈ کی میعاد جلد ختم ہو رہی ہے} other{{count} ریکارڈز کی میعاد جلد ختم ہو رہی ہے}}",
   "noRecordsToday": "آج کسی چیز کی میعاد ختم نہیں ہو رہی",
   "noRecordsTomorrow": "کل کسی چیز کی میعاد ختم نہیں ہو رہی",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} کی میعاد آج ختم ہو رہی ہے} =1{{recordName} کی میعاد کل ختم ہو رہی ہے} other{{recordName} کی میعاد {days} دنوں میں ختم ہو رہی ہے}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}، آپ کے ریکارڈ {recordName} کی میعاد آج ختم ہو رہی ہے۔ کیا آپ نے پہلے ہی تجدید کر لی ہے؟ میعاد ختم ہونے کی تاریخ اپ ڈیٹ کریں۔} =1{{firstName}، آپ کے ریکارڈ {recordName} کی میعاد کل ختم ہو رہی ہے۔ اب تجدید کریں تاکہ میعاد برقرار رہے۔} other{{firstName}، آپ کے ریکارڈ {recordName} کی میعاد {date} کو ختم ہو رہی ہے۔ بروقت تجدید میعاد کا تسلسل یقینی بناتی ہے۔}}",
   "cascadeFinalStepTitle": "آخری یاد دہانی: {recordName}",
-  "cascadeFinalStepBody": "{firstName}، آپ کے ریکارڈ {recordName} کی میعاد {days, plural, =1{کل} other{{days} دنوں میں، {date} کو}} ختم ہو رہی ہے۔ یہ آپ کی آخری یاد دہانی ہے، تجدید کریں یا میعاد کی تاریخ اپ ڈیٹ کریں۔",
   "notificationsTitle": "اطلاعات",
   "notificationsProfileEnabledSubtitle": "یاد دہانیاں {time} پر موصول ہوں گی۔",
   "notificationsProfileDisabledSubtitle": "اطلاعات بند ہیں۔",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "اپنی یاد دہانی کے وقت ایک اطلاع حاصل کریں جس میں اس دن کی تمام مدتیں درج ہوں۔",
   "dailyDigestTurnedOn": "آپ کی یاد دہانیاں اب ایک روزانہ خلاصے کی صورت میں آئیں گی۔",
   "dailyDigestTurnedOff": "ہر ریکارڈ کی الگ یاد دہانیاں دوبارہ آن ہو گئیں۔",
-  "dailyDigestTitle": "{count, plural, one{1 ریکارڈ آپ کی توجہ چاہتا ہے} other{{count} ریکارڈز آپ کی توجہ چاہتے ہیں}}",
+  "dailyDigestTitle": "{count, plural, one{{count} ریکارڈ آپ کی توجہ چاہتا ہے} other{{count} ریکارڈز آپ کی توجہ چاہتے ہیں}}",
   "dailyDigestBody": "جلد آنے والے: {names}۔",
   "dailyDigestBodyMore": "جلد آنے والے: {names} اور {count} مزید۔",
   "dailyDigestLockedRecord": "ایک مقفل ریکارڈ",
   "renewReasonRepeat": "{months, plural, one{آپ کی دہرانے کی ترتیب کے مطابق، ہر مہینے} other{آپ کی دہرانے کی ترتیب کے مطابق، ہر {months} مہینے}}",
   "renewReasonHistory": "{count, plural, one{آپ کی آخری تجدید کی بنیاد پر} other{آپ کی آخری {count} تجدیدوں کی بنیاد پر}}",
-  "renewReasonTypical": "{years, plural, one{عام طور پر 1 سال کے لیے درست} other{عام طور پر {years} سال کے لیے درست}}",
+  "renewReasonTypical": "{years, plural, one{عام طور پر {years} سال کے لیے درست} other{عام طور پر {years} سال کے لیے درست}}",
   "renewChangeHint": "تبدیل کرنے کے لیے تاریخ پر ٹیپ کریں۔",
   "renewPickDate": "نئی اختتامی تاریخ منتخب کریں",
   "renewPickDateHint": "وہ تاریخ منتخب کریں جو آپ کی نئی دستاویز پر درج ہے۔",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} کی میعاد آج ختم ہو رہی ہے",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} کی میعاد کل ختم ہو رہی ہے",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} کی میعاد {days} دن میں ختم ہو رہی ہے} other{{recordName} کی میعاد {days} دن میں ختم ہو رہی ہے}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} کی میعاد ختم ہو چکی ہے",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "ایک مقفل ریکارڈ پر آپ کی توجہ درکار ہے",
+  "remLockedBody": "اس کی تاریخ {date} ہے۔ یہ دیکھنے کے لیے کہ کون سا ریکارڈ ہے، Vaultara کو اَن لاک کریں۔",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "آپ کے ریکارڈ \"{recordName}\" کی میعاد آج ختم ہو رہی ہے۔",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "آپ کے ریکارڈ \"{recordName}\" کی میعاد کل ختم ہو رہی ہے۔",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "آپ کے ریکارڈ \"{recordName}\" کی میعاد {date} کو ختم ہو رہی ہے۔",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}، آپ کے ریکارڈ \"{recordName}\" کی میعاد آج ختم ہو رہی ہے۔",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}، آپ کے ریکارڈ \"{recordName}\" کی میعاد کل ختم ہو رہی ہے۔",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}، آپ کے ریکارڈ \"{recordName}\" کی میعاد {date} کو ختم ہو رہی ہے۔",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: ریکارڈ \"{recordName}\" کی میعاد آج ختم ہو رہی ہے۔",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: ریکارڈ \"{recordName}\" کی میعاد کل ختم ہو رہی ہے۔",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: ریکارڈ \"{recordName}\" کی میعاد {date} کو ختم ہو رہی ہے۔",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "آپ کے ریکارڈ \"{recordName}\" کی میعاد {date} کو ختم ہو گئی۔",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: ریکارڈ \"{recordName}\" کی میعاد {date} کو ختم ہو گئی۔",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "پہلے ہی تجدید کر لی؟ اس کی تاریخ اپ ڈیٹ کریں۔",
+  "remTipTomorrow": "ابھی تجدید کریں تاکہ میعاد ختم نہ ہو۔",
+  "remTipEarly": "جلد تجدید آپ کو محفوظ رکھتی ہے۔",
+  "remTipLast": "میعاد ختم ہونے سے پہلے یہ آپ کی آخری یاد دہانی ہے۔",
+  "remTipExpired": "تجدید کریں، یا اگر پہلے ہی کر لی ہے تو تاریخ اپ ڈیٹ کریں۔",
+  "remStartBody": "\"{recordName}\" کی تجدید شروع کرنے کا وقت ہے۔ میعاد {date} کو ختم ہو رہی ہے، اس لیے ابھی شروع کرنے سے آپ کے پاس کافی وقت ہوگا۔",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) کی تجدید شروع کرنے کا وقت ہے۔ میعاد {date} کو ختم ہو رہی ہے، اس لیے ابھی شروع کرنے سے کافی وقت ہوگا۔",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "میعاد کی یاد دہانیاں",
+  "notifChannelDescription": "آپ کے ریکارڈز کی میعاد ختم ہونے سے پہلے یاد دہانیاں",
+  "notifTestTitle": "آزمائشی اطلاع",
+  "notifTestBody": "Vaultara کی یاد دہانیاں ایسے آتی ہیں۔",
+  "notifTestAction": "آزمائشی اطلاع بھیجیں",
+  "notifTestSubtitle": "چیک کریں کہ یاد دہانیاں اس فون تک پہنچتی ہیں",
+  "notifTestSent": "آزمائش بھیج دی گئی۔ چند سیکنڈ میں پہنچ جانی چاہیے۔",
+  "notifAfterExpiryTitle": "ریکارڈ کی میعاد ختم ہونے کے بعد یاد دلائیں",
+  "notifAfterExpirySubtitle": "3 اور 14 دن بعد، اگر تجدید نہ ہوئی ہو",
+  "notifWeeklyTitle": "پیر کا خلاصہ",
+  "notifWeeklySubtitle": "پیر کی صبح ایک پیغام جب اس ہفتے کسی چیز کی میعاد ختم ہو رہی ہو",
+  "notifPushSection": "گھرانہ اور اپ ڈیٹس",
+  "notifHouseholdTitle": "شیئر کیے گئے ریکارڈ",
+  "notifHouseholdSubtitle": "جب کسی شیئر کیے گئے ریکارڈ کی میعاد قریب ہو اور کسی نے تجدید نہ کی ہو",
+  "notifUpdatesTitle": "آپ کی مانگی گئی اپ ڈیٹس",
+  "notifUpdatesSubtitle": "جب کوئی کسی ریکارڈ کی نئی تفصیلات بھیجے",
+  "notifSecurityNote": "آپ کے اکاؤنٹ میں نئے سائن اِنز کے الرٹس ہمیشہ بھیجے جاتے ہیں۔",
+  "notifIosHelpTitle": "یاد دہانیاں نہیں مل رہیں؟",
+  "notifIosHelpSubtitle": "اپنے iPhone کی ترتیبات چیک کریں",
+  "notifIosHelpStep1": "ترتیبات، پھر اطلاعات، پھر Vaultara کھولیں، اور اطلاعات کی اجازت دیں آن کریں۔",
+  "notifIosHelpStep2": "لاک اسکرین، اطلاعاتی مرکز اور بینرز آن کریں۔",
+  "notifIosHelpStep3": "اگر آپ فوکس استعمال کرتے ہیں تو Vaultara کو اجازت یافتہ ایپس میں شامل کریں۔",
+  "notifIosHelpStep4": "Vaultara کو ہر چند ہفتوں بعد کھولیں۔ iPhone صرف محدود تعداد میں آنے والی یاد دہانیاں رکھتا ہے، اور ایپ کھولنے سے اگلی یاد دہانیاں طے ہو جاتی ہیں۔",
+  "homeNextUpEmpty": "جلد کسی چیز کی میعاد ختم نہیں ہو رہی۔ سب ٹھیک ہے۔",
+  "homeDueSoonChip": "{count, plural, one{30 دن میں {count} واجب} other{30 دن میں {count} واجب}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "پن کی گئی کیٹیگریز"
 }

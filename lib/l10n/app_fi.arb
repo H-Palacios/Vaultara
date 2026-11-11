@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara auttaa sinua seuraamaan tärkeitä päivämääriä, jotta mikään ei vanhene huomaamatta.",
   "homeWelcomeSubtitleFirst": "Hienoa, että olet täällä. Vaultara auttaa pitämään tärkeät päivämäärät ja tiedot yhdessä turvallisessa paikassa.",
   "homeWelcomeSubtitleBack": "Mukava nähdä sinua taas. Vaultara on aina valmiina tärkeiden tietojesi tarkasteluun.",
-  "summaryAllCaption": "Seurattu Vaultarassa",
-  "summaryExpiredTitle": "Vanhentuneet",
-  "summaryExpiredCaption": "Vanhentumispäivän jälkeen",
   "editorNotes": "Muistiinpanot",
   "editorReminderNone": "Ei muistutusta",
   "editorReminderOnExpiry": "Vanhenemispäivänä",
@@ -192,7 +189,6 @@
   "addRecord": "Lisää tietue",
   "noRecordsYet": "Ei vielä tietueita.",
   "deleteRecordTitle": "Poista tietue",
-  "summaryAllRecordsTitle": "Kaikki tietueet",
   "noGroupFound": "Ei vielä ryhmiä",
   "groupLabel": "{count, plural, one{{count} ryhmä} other{{count} ryhmää}}",
   "recordsLabel": "{count, plural, one{{count} tietue} other{{count} tietuetta}}",
@@ -455,7 +451,7 @@
   "addNotesHint": "Lisää muistiinpanoja (valinnainen)",
   "expiryTimelineTitle": "Vanhentumisaikajana",
   "expiryTimelineSubtitle": "Napauta kuukautta nähdäksesi kyseisenä kuukautena vanhenevat tietueet",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 tietue} other{{count} tietuetta}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} tietue} other{{count} tietuetta}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Tulossa",
-  "summaryUpcomingCaption": "Seuraavan 30 päivän aikana",
-  "summaryUrgentTitle": "Kiireellinen",
-  "summaryUrgentCaption": "Seuraavan 7 päivän aikana",
   "profileHeaderTitle": "Profiili",
   "profileTutorialsTitle": "Oppaat",
   "profileTutorialsSubtitle": "Selaa Sovelluksen Oppaita",
@@ -498,7 +490,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Ei muistutusta",
   "reminderOnExpiry": "Vanhentumispäivänä",
-  "reminderDaysBefore": "{days, plural, one{1 päivä ennen} other{{days} päivää ennen}}",
+  "reminderDaysBefore": "{days, plural, one{{days} päivä ennen} other{{days} päivää ennen}}",
   "reminderCustomDaysTitle": "Syötä mukautetut päivät",
   "reminderCascadeTitle": "Kaskadimuistutukset",
   "reminderCascadeSubtitle": "Vastaanota useita ilmoituksia ennen tietueen vanhenemista",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "Lisää ensimmäinen tietueesi",
   "smartInsightNoRecordsBody": "Aloita tietueidesi seuranta, niin Vaultara näyttää älykkäät oivallukset täällä.",
   "smartInsightExpiresTodaySingleBody": "{name} vanhenee tänään. Jos olet jo uusinut sen, päivitä päivämäärä tästä.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} vanhenevat tänään.} =1{{names} ja 1 muu vanhenevat tänään.} other{{names} ja {extra} muuta vanhenevat tänään.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} vanhenevat tänään.} =1{{names} ja {extra} muu vanhenevat tänään.} other{{names} ja {extra} muuta vanhenevat tänään.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} vanhenee huomenna eikä sillä ole muistutusta. Aseta muistutus, jotta et unohda sitä.} other{{name} vanhenee {date} eikä sillä ole muistutusta. Aseta muistutus, jotta et unohda sitä.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} vanhenee {dateA} ja {b} {dateB} suurin piirtein samaan aikaan. Toinen on helppo unohtaa, kun kaksi tietuetta ovat näin lähekkäin.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} ja {c} vanhenevat {lastDate} mennessä, suurin piirtein samaan aikaan. Yksi on helppo unohtaa, kun useampi tietue on näin lähekkäin.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ja 1 muu tietue vanhenevat {lastDate} mennessä, suurin piirtein samaan aikaan. Yksi on helppo unohtaa, kun useampi tietue on näin lähekkäin.} other{{a}, {b} ja {extra} muuta tietuetta vanhenevat {lastDate} mennessä, suurin piirtein samaan aikaan. Yksi on helppo unohtaa, kun useampi tietue on näin lähekkäin.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ja {extra} muu tietue vanhenevat {lastDate} mennessä, suurin piirtein samaan aikaan. Yksi on helppo unohtaa, kun useampi tietue on näin lähekkäin.} other{{a}, {b} ja {extra} muuta tietuetta vanhenevat {lastDate} mennessä, suurin piirtein samaan aikaan. Yksi on helppo unohtaa, kun useampi tietue on näin lähekkäin.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Mitään ei vanhene seuraavan päivän aikana. Seuraava vanhentuminen on {date}.} other{Mitään ei vanhene seuraavien {days} päivän aikana. Seuraava vanhentuminen on {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 tietueistasi kategoriassa {category} vanhenee {date}. Se on helppo jättää huomaamatta.} other{{count} tietueistasi kategoriassa {category} vanhenevat {date} mennessä. Yksi on helppo unohtaa, kun ne on ryhmitelty näin.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 tulevalle vanhentumiselle on asetettu muistutus. Mikään muu ei vaadi huomiotasi.} other{{count} tulevalle vanhentumiselle on asetettu muistutukset. Mikään muu ei vaadi huomiotasi.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} tietueistasi kategoriassa {category} vanhenee {date}. Se on helppo jättää huomaamatta.} other{{count} tietueistasi kategoriassa {category} vanhenevat {date} mennessä. Yksi on helppo unohtaa, kun ne on ryhmitelty näin.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} tulevalle vanhentumiselle on asetettu muistutus. Mikään muu ei vaadi huomiotasi.} other{{count} tulevalle vanhentumiselle on asetettu muistutukset. Mikään muu ei vaadi huomiotasi.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Kaikki on ajan tasalla. Mikään ei vaadi huomiotasi tällä hetkellä.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Mikään ei ole kiireellistä juuri nyt, mutta 1 tulevasta tietueesta puuttuu vielä muistutus.} other{Mikään ei ole kiireellistä juuri nyt, mutta {count} tulevasta tietueesta puuttuu vielä muistutus.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Mikään ei ole kiireellistä juuri nyt, mutta {count} tulevasta tietueesta puuttuu vielä muistutus.} other{Mikään ei ole kiireellistä juuri nyt, mutta {count} tulevasta tietueesta puuttuu vielä muistutus.}}",
   "smartInsightCloseExpiriesHeading": "Vanhenevat suurin piirtein samaan aikaan",
   "plansHeadline": "Hanki täysi Vaultara käyttöösi",
   "plansSubhead": "Rajoittamattomat tietueet, omat ryhmät ja juuri haluamallasi tavalla hienosäädetyt muistutukset.",
@@ -625,7 +617,7 @@
   "reminderCascadeRemoveStep": "Poista",
   "reminderCascadeDuplicate": "Toinen muistutus käyttää jo tätä päivää",
   "reminderCascadeOutOfRange": "Syötä arvo {min} ja {max} päivän väliltä",
-  "reminderCascadeStepLabel": "Muistutus {position}: {days, plural, =1{1 päivä} other{{days} päivää}} ennen",
+  "reminderCascadeStepLabel": "Muistutus {position}: {days, plural, =1{{days} päivä} other{{days} päivää}} ennen",
   "expiryTimelineNotReady": "Aikajanasi tulee näkyviin, kun sinulla on tietueita, jotka vanhentuvat muutaman eri kuukauden aikana.",
   "verifyEmailResendIn": "Lähetä uudelleen {seconds} s kuluttua",
   "verifyEmailSpamHint": "Ei näy? Tarkista roskapostikansiosi.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "Tätä tiliä ei ole vahvistettu. Poistuminen nyt poistaa sen, ja voit rekisteröityä uudelleen millä tahansa sähköpostiosoitteella.",
   "verifyEmailDiscardAction": "Hylkää",
   "verifyEmailKeepWaiting": "Jatka odottamista",
-  "expiringBadge": "{count, plural, =1{1 vanhenee kohta} other{{count} vanhenee kohta}}",
+  "expiringBadge": "{count, plural, =1{{count} vanhenee kohta} other{{count} vanhenee kohta}}",
   "noRecordsToday": "Mikään ei vanhene tänään",
   "noRecordsTomorrow": "Mikään ei vanhene huomenna",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} vanhenee tänään} =1{{recordName} vanhenee huomenna} other{{recordName} vanhenee {days} päivän kuluttua}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, kohteesi {recordName} vanhenee tänään. Oletko jo uusinut sen? Päivitä sen vanhentumispäivä.} =1{{firstName}, kohteesi {recordName} vanhenee huomenna. Uusi se nyt, jotta se ei vanhene.} other{{firstName}, kohteesi {recordName} vanhenee {date}. Ajoissa uusiminen pitää sinut suojattuna.}}",
   "cascadeFinalStepTitle": "Viimeinen muistutus: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, kohteesi {recordName} vanhenee {days, plural, =1{huomenna} other{{days} päivän kuluttua, {date}}}. Tämä on viimeinen muistutuksesi, uusi se tai päivitä sen päivämäärä.",
   "notificationsTitle": "Ilmoitukset",
   "notificationsProfileEnabledSubtitle": "Muistutukset saapuvat klo {time}.",
   "notificationsProfileDisabledSubtitle": "Ilmoitukset ovat pois päältä.",
@@ -1829,9 +1818,9 @@
   "secHistoryIntro": "Tilisi kirjautumiset ja muutokset viimeisen 90 päivän ajalta.",
   "secHistoryEmpty": "Ei vielä mitään näytettävää.",
   "secJustNow": "Juuri nyt",
-  "secMinutesAgo": "{count, plural, one{1 minuutti sitten} other{{count} minuuttia sitten}}",
-  "secHoursAgo": "{count, plural, one{1 tunti sitten} other{{count} tuntia sitten}}",
-  "secDaysAgo": "{count, plural, one{1 päivä sitten} other{{count} päivää sitten}}",
+  "secMinutesAgo": "{count, plural, one{{count} minuutti sitten} other{{count} minuuttia sitten}}",
+  "secHoursAgo": "{count, plural, one{{count} tunti sitten} other{{count} tuntia sitten}}",
+  "secDaysAgo": "{count, plural, one{{count} päivä sitten} other{{count} päivää sitten}}",
   "secEventNewSignIn": "Uusi laite kirjautui sisään",
   "secEventSignIn": "Kirjauduttu sisään",
   "secEventPasswordChanged": "Salasana vaihdettu",
@@ -2152,8 +2141,8 @@
   "lifePlanAutoChanged": "Vaultara huomasi tämän tiedon muuttuneen, joten se on merkitty valmiiksi.",
   "lifePlanAutoAdded": "Lisätty tämän suunnitelman aloittamisen jälkeen.",
   "lifePlanProgress": "{done}/{total} valmiina",
-  "lifePlanDaysToGo": "{count, plural, =1{1 päivä jäljellä} other{{count} päivää jäljellä}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 päivä sitten} other{{count} päivää sitten}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} päivä jäljellä} other{{count} päivää jäljellä}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} päivä sitten} other{{count} päivää sitten}}",
   "lifePlanAllDone": "Kaikki on tehty. Voit merkitä suunnitelman valmiiksi.",
   "lifePlanFinish": "Merkitse valmiiksi",
   "lifePlanReopen": "Avaa uudelleen",
@@ -2282,7 +2271,7 @@
   "lifePlanReadAloudUnavailable": "Ääneen lukeminen ei ole käytettävissä tässä puhelimessa.",
   "lifePlanProofPack": "Luo todistepaketti",
   "lifePlanOpenFamily": "Avaa Perhe",
-  "lifePlanRemoved": "{count, plural, =1{1 poistamasi tieto lasketaan lopetetuksi.} other{{count} poistamaasi tietoa lasketaan lopetetuiksi.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} poistamasi tieto lasketaan lopetetuksi.} other{{count} poistamaasi tietoa lasketaan lopetetuiksi.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2340,7 +2329,7 @@
   "lostWalletCheckupBody": "Valmistaudu nyt, ettei mitään unohdu, jos se katoaa.",
   "lostWalletCheckupAllGood": "Kaikki valmista. Jos se joskus katoaa, olet valmis.",
   "lostWalletSetPlaceBody": "Avaa kortti tai asiakirja ja valitse, missä säilytät sitä. Tee näin henkilökortille, ajokortille ja korteille.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 kohteelta puuttuu kuva. Kuvan avulla korvaaminen käy nopeammin.} other{{count} kohteelta puuttuu kuva. Kuvien avulla korvaaminen käy nopeammin.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} kohteelta puuttuu kuva. Kuvan avulla korvaaminen käy nopeammin.} other{{count} kohteelta puuttuu kuva. Kuvien avulla korvaaminen käy nopeammin.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2348,7 +2337,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 kortilta puuttuu tallennettu sulkunumero.} other{{count} kortilta puuttuu tallennettu sulkunumero.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} kortilta puuttuu tallennettu sulkunumero.} other{{count} kortilta puuttuu tallennettu sulkunumero.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2448,7 +2437,7 @@
     }
   },
   "lostWalletReportNoCase": "Ilmoitusnumero: ei vielä ilmoitettu",
-  "lostWalletReportCount": "{count, plural, =1{1 kohde alla} other{{count} kohdetta alla}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} kohde alla} other{{count} kohdetta alla}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2483,7 +2472,7 @@
   "tutorialsGroupTravelFamily": "Matkat ja perhe",
   "tutorialsGroupEmergencies": "Elämäntapahtumat ja hätätilanteet",
   "tutorialsGroupPaid": "Maksulliset ominaisuudet",
-  "tutorialsSteps": "{count, plural, =1{1 vaihe} other{{count} vaihetta}}",
+  "tutorialsSteps": "{count, plural, =1{{count} vaihe} other{{count} vaihetta}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} vanhenee tänään",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} vanhenee huomenna",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} vanhenee {days} päivän kuluttua} other{{recordName} vanhenee {days} päivän kuluttua}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} on vanhentunut",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Lukittu tietue vaatii huomiotasi",
+  "remLockedBody": "Sen päivämäärä on {date}. Avaa Vaultaran lukitus nähdäksesi, mikä tietue on kyseessä.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Tietueesi {recordName} vanhenee tänään.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Tietueesi {recordName} vanhenee huomenna.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Tietueesi {recordName} vanhenee {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, tietueesi {recordName} vanhenee tänään.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, tietueesi {recordName} vanhenee huomenna.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, tietueesi {recordName} vanhenee {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Henkilön {person} tietue {recordName} vanhenee tänään.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Henkilön {person} tietue {recordName} vanhenee huomenna.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Henkilön {person} tietue {recordName} vanhenee {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Tietueesi {recordName} vanheni {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Henkilön {person} tietue {recordName} vanheni {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Jo uusittu? Päivitä päivämäärä.",
+  "remTipTomorrow": "Uusi se nyt, ettei se ehdi vanhentua.",
+  "remTipEarly": "Ajoissa uusiminen pitää sinut turvassa.",
+  "remTipLast": "Tämä on viimeinen muistutus ennen vanhenemista.",
+  "remTipExpired": "Uusi se, tai päivitä päivämäärä, jos olet jo uusinut sen.",
+  "remStartBody": "On aika aloittaa tietueen {recordName} uusiminen. Se vanhenee {date}, joten aloittamalla nyt sinulla on reilusti aikaa.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "On aika aloittaa henkilön {person} tietueen {recordName} uusiminen. Se vanhenee {date}, joten aloittamalla nyt aikaa on reilusti.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Vanhenemismuistutukset",
+  "notifChannelDescription": "Muistutukset ennen kuin tietueesi vanhenevat",
+  "notifTestTitle": "Testi-ilmoitus",
+  "notifTestBody": "Vaultaran muistutukset näyttävät tältä.",
+  "notifTestAction": "Lähetä testi-ilmoitus",
+  "notifTestSubtitle": "Tarkista, että muistutukset tulevat tähän puhelimeen",
+  "notifTestSent": "Testi lähetetty. Sen pitäisi tulla muutamassa sekunnissa.",
+  "notifAfterExpiryTitle": "Muistuta, kun tietue on vanhentunut",
+  "notifAfterExpirySubtitle": "3 ja 14 päivää jälkeen, jos sitä ei ole uusittu",
+  "notifWeeklyTitle": "Maanantain yhteenveto",
+  "notifWeeklySubtitle": "Viesti maanantaiaamuna, kun jotain vanhenee sillä viikolla",
+  "notifPushSection": "Kotitalous ja päivitykset",
+  "notifHouseholdTitle": "Jaetut tietueet",
+  "notifHouseholdSubtitle": "Kun jaettu tietue on vanhenemassa eikä kukaan ole uusinut sitä",
+  "notifUpdatesTitle": "Pyytämäsi päivitykset",
+  "notifUpdatesSubtitle": "Kun joku lähettää tietueen uudet tiedot",
+  "notifSecurityNote": "Ilmoitukset uusista kirjautumisista tilillesi lähetetään aina.",
+  "notifIosHelpTitle": "Eivätkö muistutukset tule?",
+  "notifIosHelpSubtitle": "Tarkista iPhonesi asetukset",
+  "notifIosHelpStep1": "Avaa Asetukset, sitten Ilmoitukset, sitten Vaultara, ja laita Salli ilmoitukset päälle.",
+  "notifIosHelpStep2": "Laita päälle Lukitusnäyttö, Ilmoituskeskus ja Bannerit.",
+  "notifIosHelpStep3": "Jos käytät keskittymistilaa, lisää Vaultara sen sallimiin appeihin.",
+  "notifIosHelpStep4": "Avaa Vaultara muutaman viikon välein. iPhone säilyttää vain rajallisen määrän tulevia muistutuksia, ja apin avaaminen ajastaa seuraavat.",
+  "homeNextUpEmpty": "Mikään ei vanhene pian. Kaikki on kunnossa.",
+  "homeDueSoonChip": "{count, plural, one{{count} erääntyy 30 päivän sisällä} other{{count} erääntyy 30 päivän sisällä}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Kiinnitetyt kategoriat"
 }

@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "환영합니다. Vaultara는 중요한 날짜와 기록을 안전한 한 곳에서 정리할 수 있도록 도와줍니다.",
   "homeWelcomeSubtitleBack": "다시 만나서 반갑습니다. Vaultara는 언제든 중요한 날짜와 기록을 검토할 수 있습니다.",
   "homeWelcomeTitle": "환영합니다",
-  "summaryAllCaption": "Vaultara에서 추적됨",
-  "summaryExpiredTitle": "만료됨",
-  "summaryExpiredCaption": "만료 날짜가 지났습니다",
   "editorNotes": "메모",
   "editorReminderNone": "알림 없음",
   "editorReminderOnExpiry": "만료일 당일",
@@ -192,7 +189,6 @@
   "addRecord": "기록 추가",
   "noRecordsYet": "아직 기록이 없습니다.",
   "deleteRecordTitle": "기록 삭제",
-  "summaryAllRecordsTitle": "모든 기록",
   "noGroupFound": "아직 그룹이 없습니다",
   "groupLabel": "{count, plural, one{{count} 그룹} other{{count} 그룹}}",
   "recordsLabel": "{count, plural, one{{count} 기록} other{{count} 기록}}",
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "예정됨",
-  "summaryUpcomingCaption": "30일 이내",
-  "summaryUrgentTitle": "긴급",
-  "summaryUrgentCaption": "7일 이내",
   "profileHeaderTitle": "프로필",
   "profileTutorialsTitle": "튜토리얼",
   "profileTutorialsSubtitle": "앱 튜토리얼 둘러보기",
@@ -619,10 +611,7 @@
   "expiringBadge": "{count, plural, =1{1개 만료 예정} other{{count}개 만료 예정}}",
   "noRecordsToday": "오늘 만료되는 항목 없음",
   "noRecordsTomorrow": "내일 만료되는 항목 없음",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} 만료일이 오늘입니다} =1{{recordName} 만료일이 내일입니다} other{{recordName} 만료가 {days}일 남았습니다}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName} 님, {recordName} 만료일이 오늘입니다. 이미 갱신하셨나요? 만료일을 업데이트해 주세요.} =1{{firstName} 님, {recordName} 만료일이 내일입니다. 만료되기 전에 지금 갱신하세요.} other{{firstName} 님, {recordName} 만료일은 {date}입니다. 미리 갱신하여 안전하게 유지하세요.}}",
   "cascadeFinalStepTitle": "마지막 알림: {recordName}",
-  "cascadeFinalStepBody": "{firstName} 님, {recordName} 만료일이 {days, plural, =1{내일} other{{days}일 후인 {date}}}입니다. 마지막 알림입니다. 갱신하거나 날짜를 업데이트해 주세요.",
   "notificationsTitle": "알림",
   "notificationsProfileEnabledSubtitle": "알림은 {time}에 도착합니다.",
   "notificationsProfileDisabledSubtitle": "알림이 꺼져 있습니다.",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} 오늘 만료",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} 내일 만료",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} {days}일 후 만료}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} 만료됨",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "잠긴 기록을 확인해야 합니다",
+  "remLockedBody": "날짜는 {date}입니다. 어떤 기록인지 보려면 Vaultara 잠금을 해제하세요.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "\"{recordName}\" 기록이 오늘 만료됩니다.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "\"{recordName}\" 기록이 내일 만료됩니다.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "\"{recordName}\" 기록이 {date}에 만료됩니다.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}님, \"{recordName}\" 기록이 오늘 만료됩니다.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}님, \"{recordName}\" 기록이 내일 만료됩니다.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}님, \"{recordName}\" 기록이 {date}에 만료됩니다.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}님의 \"{recordName}\" 기록이 오늘 만료됩니다.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}님의 \"{recordName}\" 기록이 내일 만료됩니다.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}님의 \"{recordName}\" 기록이 {date}에 만료됩니다.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "\"{recordName}\" 기록이 {date}에 만료되었습니다.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}님의 \"{recordName}\" 기록이 {date}에 만료되었습니다.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "이미 갱신하셨나요? 날짜를 업데이트하세요.",
+  "remTipTomorrow": "만료되지 않도록 지금 갱신하세요.",
+  "remTipEarly": "일찍 갱신하면 안심할 수 있습니다.",
+  "remTipLast": "만료 전 마지막 알림입니다.",
+  "remTipExpired": "갱신하거나, 이미 했다면 날짜를 업데이트하세요.",
+  "remStartBody": "\"{recordName}\" 갱신을 시작할 때입니다. {date}에 만료되므로 지금 시작하면 시간이 충분합니다.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "{person}님의 \"{recordName}\" 갱신을 시작할 때입니다. {date}에 만료되므로 지금 시작하면 시간이 충분합니다.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "만료 알림",
+  "notifChannelDescription": "기록이 만료되기 전에 보내는 알림",
+  "notifTestTitle": "테스트 알림",
+  "notifTestBody": "Vaultara 알림은 이렇게 도착합니다.",
+  "notifTestAction": "테스트 알림 보내기",
+  "notifTestSubtitle": "알림이 이 휴대전화에 도착하는지 확인하세요",
+  "notifTestSent": "테스트를 보냈습니다. 몇 초 안에 도착합니다.",
+  "notifAfterExpiryTitle": "기록이 만료된 후에도 알림",
+  "notifAfterExpirySubtitle": "갱신되지 않았다면 3일과 14일 후",
+  "notifWeeklyTitle": "월요일 요약",
+  "notifWeeklySubtitle": "그 주에 만료되는 항목이 있을 때 월요일 아침에 알림",
+  "notifPushSection": "가족 및 업데이트",
+  "notifHouseholdTitle": "공유 기록",
+  "notifHouseholdSubtitle": "공유 기록이 곧 만료되는데 아무도 갱신하지 않았을 때",
+  "notifUpdatesTitle": "요청한 업데이트",
+  "notifUpdatesSubtitle": "누군가 기록의 새 정보를 보냈을 때",
+  "notifSecurityNote": "계정의 새 로그인 알림은 항상 전송됩니다.",
+  "notifIosHelpTitle": "알림이 오지 않나요?",
+  "notifIosHelpSubtitle": "iPhone 설정을 확인하세요",
+  "notifIosHelpStep1": "설정, 알림, Vaultara 순으로 열고 알림 허용을 켜세요.",
+  "notifIosHelpStep2": "잠금 화면, 알림 센터, 배너를 켜세요.",
+  "notifIosHelpStep3": "집중 모드를 사용한다면 허용된 앱에 Vaultara를 추가하세요.",
+  "notifIosHelpStep4": "몇 주에 한 번 Vaultara를 여세요. iPhone은 앞으로의 알림을 제한된 수만 보관하며, 앱을 열면 다음 알림이 예약됩니다.",
+  "homeNextUpEmpty": "곧 만료되는 항목이 없습니다. 모두 준비되었습니다.",
+  "homeDueSoonChip": "{count, plural, other{30일 이내 {count}개}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "고정된 카테고리"
 }

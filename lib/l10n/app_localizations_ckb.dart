@@ -360,15 +360,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'خۆشحاڵین کە دیسان دەتبینین. ڤۆڵتارا هەمیشە ئامادەیە بۆ پێداچوونەوەی بەرواری گرنگ و تۆمارەکانت.';
 
   @override
-  String get summaryAllCaption => 'لە ڤۆڵتارا شوێنکەوتە دەکرێن';
-
-  @override
-  String get summaryExpiredTitle => 'بەسەرچوون';
-
-  @override
-  String get summaryExpiredCaption => 'بەرواری بەسەرچوون تێپەڕیوە';
-
-  @override
   String get editorNotes => 'تێبینی';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'سڕینەوەی تۆمار';
-
-  @override
-  String get summaryAllRecordsTitle => 'هەموو تۆمارەکان';
 
   @override
   String get noGroupFound => 'هێشتا هیچ گرووپێک نییە';
@@ -829,22 +817,10 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count تۆمار',
-      one: '١ تۆمار',
+      one: '$count تۆمار',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'لە نزیکەوە';
-
-  @override
-  String get summaryUpcomingCaption => 'لە ماوەی ٣٠ ڕۆژی داهاتوودا';
-
-  @override
-  String get summaryUrgentTitle => 'بەپەلە';
-
-  @override
-  String get summaryUrgentCaption => 'لە ماوەی ٧ ڕۆژی داهاتوودا';
 
   @override
   String get profileHeaderTitle => 'پرۆفایل';
@@ -945,7 +921,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ڕۆژ پێش',
-      one: '1 ڕۆژ پێش',
+      one: '$days ڕۆژ پێش',
     );
     return '$_temp0';
   }
@@ -1081,7 +1057,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a، $b و $extra تۆماری تر تا $lastDate، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک چەند تۆمارێک هێندە لە یەکەوە نزیک بن.',
-      one: '$a، $b و ١ تۆماری تر تا $lastDate، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک چەند تۆمارێک هێندە لە یەکەوە نزیک بن.',
+      one: '$a، $b و $extra تۆماری تر تا $lastDate، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک چەند تۆمارێک هێندە لە یەکەوە نزیک بن.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count لە تۆمارەکانت لە هاوپۆلی $category تا $date بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک بەم شێوەیە کۆکراونەتەوە.',
-      one: '١ لە تۆمارەکانت لە هاوپۆلی $category لە $date بەسەردەچێت. ئاسانە پشتگوێ بخرێت.',
+      one: '$count لە تۆمارەکانت لە هاوپۆلی $category لە $date بەسەردەچێت. ئاسانە پشتگوێ بخرێت.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count وادەی بەسەرچوونی داهاتوو بە بیرخەرەوە پارێزراون. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.',
-      one: '١ وادەی بەسەرچوونی داهاتوو بە بیرخەرەوەیەک پارێزراوە. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.',
+      one: '$count وادەی بەسەرچوونی داهاتوو بە بیرخەرەوەیەک پارێزراوە. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: 'لەم کاتەدا هیچ شتێک بەپەلە نییە، بەڵام $count تۆماری داهاتوو هێشتا بیرخەرەوەیان بۆ دانەنراوە.',
-      one: 'لەم کاتەدا هیچ شتێک بەپەلە نییە، بەڵام ١ تۆماری داهاتوو هێشتا بیرخەرەوەی بۆ دانەنراوە.',
+      one: 'لەم کاتەدا هیچ شتێک بەپەلە نییە، بەڵام $count تۆماری داهاتوو هێشتا بیرخەرەوەی بۆ دانەنراوە.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ڕۆژ',
-      one: '١ ڕۆژ',
+      one: '$days ڕۆژ',
     );
     return 'بیرخەرەوەی $position: $_temp0 پێشتر';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count بەزوویی بەسەردەچن',
-      one: '1 بەزوویی بەسەردەچێت',
+      one: '$count بەزوویی بەسەردەچێت',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get noRecordsTomorrow => 'سبەینێ هیچ بەسەرناچێت';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName لە دوای $days ڕۆژی تر بەسەردەچێت',
-      one: '$recordName بەیانی بەسەردەچێت',
-      zero: '$recordName ئەمڕۆ بەسەردەچێت',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName، $recordNameەکەت لە بەرواری $date بەسەردەچێت. نوێکردنەوەی پێشوەختە پارێزراوت دەهێڵێتەوە.',
-      one: '$firstName، $recordNameەکەت بەیانی بەسەردەچێت. ئێستا نوێی بکەرەوە بۆ ئەوەی بەسەرنەچێت.',
-      zero: '$firstName، $recordNameەکەت ئەمڕۆ بەسەردەچێت. پێشتر نوێت کردووەتەوە؟ بەرواری بەسەرچوونی نوێ بکەرەوە.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'دواین بیرخستنەوە: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'لە دوای $days ڕۆژی تر، لە بەرواری $date',
-      one: 'بەیانی',
-    );
-    return '$firstName، $recordNameەکەت $_temp0 بەسەردەچێت. ئەمە دواین بیرخستنەوەتە، نوێی بکەرەوە یان بەروارەکەی بگۆڕە.';
   }
 
   @override
@@ -5017,7 +4958,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count تۆمار پێویستیان بە گرنگیپێدانی تۆیە',
-      one: '1 تۆمار پێویستی بە گرنگیپێدانی تۆیە',
+      one: '$count تۆمار پێویستی بە گرنگیپێدانی تۆیە',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       years,
       locale: localeName,
       other: 'بە زۆری بۆ $years ساڵ بەردەوامە',
-      one: 'بە زۆری بۆ 1 ساڵ بەردەوامە',
+      one: 'بە زۆری بۆ $years ساڵ بەردەوامە',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count خولەک لەمەوبەر',
-      one: '1 خولەک لەمەوبەر',
+      one: '$count خولەک لەمەوبەر',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count کاتژمێر لەمەوبەر',
-      one: '1 کاتژمێر لەمەوبەر',
+      one: '$count کاتژمێر لەمەوبەر',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsCkb extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ڕۆژ لەمەوبەر',
-      one: '1 ڕۆژ لەمەوبەر',
+      one: '$count ڕۆژ لەمەوبەر',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsCkb extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'بیرخستنەوە: $name لە $date بەسەردەچێت';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '\"$recordName\" ئەمڕۆ بەسەردەچێت';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '\"$recordName\" سبەینێ بەسەردەچێت';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '\"$recordName\" لە $days ڕۆژدا بەسەردەچێت',
+      one: '\"$recordName\" لە $days ڕۆژدا بەسەردەچێت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '\"$recordName\" بەسەرچووە';
+  }
+
+  @override
+  String get remLockedTitle => 'تۆمارێکی قفڵکراو پێویستی بە سەرنجی تۆیە';
+
+  @override
+  String remLockedBody(String date) {
+    return 'بەروارەکەی $dateـە. Vaultara بکەرەوە بۆ ئەوەی ببینیت کام تۆمارە.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'تۆماری \"$recordName\"ـت ئەمڕۆ بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'تۆماری \"$recordName\"ـت سبەینێ بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'تۆماری \"$recordName\"ـت لە $date بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName، تۆماری \"$recordName\"ـت ئەمڕۆ بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName، تۆماری \"$recordName\"ـت سبەینێ بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName، تۆماری \"$recordName\"ـت لە $date بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: تۆماری \"$recordName\" ئەمڕۆ بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: تۆماری \"$recordName\" سبەینێ بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: تۆماری \"$recordName\" لە $date بەسەردەچێت.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'تۆماری \"$recordName\"ـت لە $date بەسەرچوو.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: تۆماری \"$recordName\" لە $date بەسەرچوو.';
+  }
+
+  @override
+  String get remTipToday => 'پێشتر نوێت کردەوە؟ بەروارەکەی نوێ بکەرەوە.';
+
+  @override
+  String get remTipTomorrow => 'ئێستا نوێی بکەرەوە بۆ ئەوەی بەسەرنەچێت.';
+
+  @override
+  String get remTipEarly => 'نوێکردنەوەی زوو بە پارێزراوی دەتهێڵێتەوە.';
+
+  @override
+  String get remTipLast => 'ئەمە دوایین بیرخستنەوەیە پێش بەسەرچوون.';
+
+  @override
+  String get remTipExpired => 'نوێی بکەرەوە، یان ئەگەر پێشتر کردووتە بەروارەکەی نوێ بکەرەوە.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'کاتی دەستپێکردنی نوێکردنەوەی \"$recordName\"ـە. لە $date بەسەردەچێت، بۆیە ئەگەر ئێستا دەست پێبکەیت کاتی زۆرت دەبێت.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'کاتی دەستپێکردنی نوێکردنەوەی \"$recordName\" ($person)ـە. لە $date بەسەردەچێت، بۆیە دەستپێکردن لە ئێستاوە کاتی زۆر دەهێڵێتەوە.';
+  }
+
+  @override
+  String get notifChannelName => 'بیرخستنەوەکانی بەسەرچوون';
+
+  @override
+  String get notifChannelDescription => 'بیرخستنەوە پێش بەسەرچوونی تۆمارەکانت';
+
+  @override
+  String get notifTestTitle => 'ئاگادارکردنەوەی تاقیکردنەوە';
+
+  @override
+  String get notifTestBody => 'بیرخستنەوەکانی Vaultara بەم شێوەیە دێن.';
+
+  @override
+  String get notifTestAction => 'ناردنی ئاگادارکردنەوەی تاقیکردنەوە';
+
+  @override
+  String get notifTestSubtitle => 'پشکنین بکە کە بیرخستنەوەکان دەگەنە ئەم مۆبایلە';
+
+  @override
+  String get notifTestSent => 'تاقیکردنەوە نێردرا. دەبێت لە چەند چرکەیەکدا بگات.';
+
+  @override
+  String get notifAfterExpiryTitle => 'دوای بەسەرچوونی تۆمار بیرم بخەرەوە';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 و 14 ڕۆژ دواتر، ئەگەر نوێ نەکرابێتەوە';
+
+  @override
+  String get notifWeeklyTitle => 'پوختەی دووشەممە';
+
+  @override
+  String get notifWeeklySubtitle => 'پەیامێک بەیانی دووشەممە کاتێک شتێک لەو هەفتەیەدا بەسەردەچێت';
+
+  @override
+  String get notifPushSection => 'خێزان و نوێکارییەکان';
+
+  @override
+  String get notifHouseholdTitle => 'تۆمارە هاوبەشکراوەکان';
+
+  @override
+  String get notifHouseholdSubtitle => 'کاتێک تۆمارێکی هاوبەشکراو نزیکە بەسەربچێت و کەس نوێی نەکردۆتەوە';
+
+  @override
+  String get notifUpdatesTitle => 'ئەو نوێکارییانەی داوات کردوون';
+
+  @override
+  String get notifUpdatesSubtitle => 'کاتێک کەسێک زانیاری نوێی تۆمارێک دەنێرێت';
+
+  @override
+  String get notifSecurityNote => 'ئاگادارکردنەوەکانی چوونەژوورەوەی نوێ بۆ هەژمارەکەت هەمیشە دەنێردرێن.';
+
+  @override
+  String get notifIosHelpTitle => 'بیرخستنەوەت پێناگات؟';
+
+  @override
+  String get notifIosHelpSubtitle => 'ڕێکخستنەکانی iPhone بپشکنە';
+
+  @override
+  String get notifIosHelpStep1 => 'ڕێکخستنەکان، پاشان ئاگادارکردنەوەکان، پاشان Vaultara بکەرەوە، و ڕێگەدان بە ئاگادارکردنەوە چالاک بکە.';
+
+  @override
+  String get notifIosHelpStep2 => 'شاشەی قفڵ، ناوەندی ئاگادارکردنەوە و بانەرەکان چالاک بکە.';
+
+  @override
+  String get notifIosHelpStep3 => 'ئەگەر Focus بەکاردەهێنیت، Vaultara زیاد بکە بۆ ئەپە ڕێگەپێدراوەکان.';
+
+  @override
+  String get notifIosHelpStep4 => 'هەر چەند هەفتەیەک جارێک Vaultara بکەرەوە. iPhone تەنها ژمارەیەکی سنووردار بیرخستنەوەی داهاتوو هەڵدەگرێت، و کردنەوەی ئەپەکە دواتریەکان ڕێکدەخات.';
+
+  @override
+  String get homeNextUpEmpty => 'بەم زووانە هیچ شتێک بەسەرناچێت. هەموو شتێک ئامادەیە.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count لە ماوەی 30 ڕۆژدا',
+      one: '$count لە ماوەی 30 ڕۆژدا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'پۆلە جێگیرکراوەکان';
 }

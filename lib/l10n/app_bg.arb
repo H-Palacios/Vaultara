@@ -111,9 +111,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara ви помага да следите важните дати на изтичане, за да не изтече нищо незабелязано.",
   "homeWelcomeSubtitleFirst": "Радваме се, че сте тук. Vaultara ви помага да сте организирани, като пази важните дати и записи на едно сигурно място.",
   "homeWelcomeSubtitleBack": "Радваме се да ви видим отново. Vaultara е тук винаги, когато искате да прегледате важните си дати и записи.",
-  "summaryAllCaption": "Проследявани във Vaultara",
-  "summaryExpiredTitle": "Изтекли",
-  "summaryExpiredCaption": "След датата на изтичане",
   "editorNotes": "Бележки",
   "editorReminderNone": "Без напомняне",
   "editorReminderOnExpiry": "На датата на изтичане",
@@ -129,7 +126,6 @@
   "addRecord": "Добавяне на запис",
   "noRecordsYet": "Все още няма записи.",
   "deleteRecordTitle": "Изтриване на запис",
-  "summaryAllRecordsTitle": "Всички записи",
   "noGroupFound": "Все още няма групи",
   "groupLabel": "{count, plural, one{{count} група} other{{count} групи}}",
   "recordsLabel": "{count, plural, one{{count} запис} other{{count} записа}}",
@@ -249,11 +245,7 @@
   "addNotesHint": "Добавете бележки (по избор)",
   "expiryTimelineTitle": "Времева линия на изтичанията",
   "expiryTimelineSubtitle": "Докоснете месец, за да видите записите, които изтичат през него",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 запис} other{{count} записа}}",
-  "summaryUpcomingTitle": "Предстоящи",
-  "summaryUpcomingCaption": "В рамките на 30 дни",
-  "summaryUrgentTitle": "Спешни",
-  "summaryUrgentCaption": "В рамките на 7 дни",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} запис} other{{count} записа}}",
   "profileHeaderTitle": "Профил",
   "profileTutorialsTitle": "Уроци",
   "profileTutorialsSubtitle": "Разгледайте уроците за приложението",
@@ -285,7 +277,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Без напомняне",
   "reminderOnExpiry": "При изтичане",
-  "reminderDaysBefore": "{days, plural, one{1 ден преди} other{{days} дни преди}}",
+  "reminderDaysBefore": "{days, plural, one{{days} ден преди} other{{days} дни преди}}",
   "reminderCustomDaysTitle": "Въведете собствен брой дни",
   "reminderCascadeTitle": "Каскада от напомняния",
   "reminderCascadeSubtitle": "Получавайте няколко известия, преди запис да изтече",
@@ -316,16 +308,16 @@
   "smartInsightNoRecordsHeading": "Добавете първия си запис",
   "smartInsightNoRecordsBody": "Започнете да проследявате записите си и Vaultara ще показва умни анализи тук.",
   "smartInsightExpiresTodaySingleBody": "„{name}“ изтича днес. Ако вече сте подновили записа, актуализирайте датата тук.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} изтичат днес.} =1{{names} и още 1 изтичат днес.} other{{names} и още {extra} изтичат днес.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} изтичат днес.} =1{{names} и още {extra} изтичат днес.} other{{names} и още {extra} изтичат днес.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{„{name}“ изтича утре и няма напомняне. Задайте напомняне, за да не забравите.} other{„{name}“ изтича на {date} и няма напомняне. Задайте напомняне, за да не забравите.}}",
   "smartInsightCloseExpiriesBodyTwo": "„{a}“ изтича на {dateA}, а „{b}“ – на {dateB}, почти по едно и също време. Лесно е да забравите единия, когато два записа са толкова близо един до друг.",
   "smartInsightCloseExpiriesBodyThree": "„{a}“, „{b}“ и „{c}“ изтичат преди {lastDate}, почти по едно и също време. Лесно е да забравите някой от тях, когато са толкова близо един до друг.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{„{a}“, „{b}“ и още 1 изтичат преди {lastDate}, почти по едно и също време. Лесно е да забравите някой от тях, когато са толкова близо един до друг.} other{„{a}“, „{b}“ и още {extra} изтичат преди {lastDate}, почти по едно и също време. Лесно е да забравите някой от тях, когато са толкова близо един до друг.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{„{a}“, „{b}“ и още {extra} изтичат преди {lastDate}, почти по едно и също време. Лесно е да забравите някой от тях, когато са толкова близо един до друг.} other{„{a}“, „{b}“ и още {extra} изтичат преди {lastDate}, почти по едно и също време. Лесно е да забравите някой от тях, когато са толкова близо един до друг.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Нищо не изтича през следващия ден. Следващото изтичане е на {date}.} other{Нищо не изтича през следващите {days} дни. Следващото изтичане е на {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 от записите ви в категорията „{category}“ изтича на {date}. Лесно е да го пропуснете.} other{{count} от записите ви в категорията „{category}“ изтичат преди {date}. Лесно е да забравите някой, когато са събрани така.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 предстоящо изтичане е покрито от напомняне. Нищо друго не изисква вниманието ви.} other{{count} предстоящи изтичания са покрити от напомняния. Нищо друго не изисква вниманието ви.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} от записите ви в категорията „{category}“ изтича на {date}. Лесно е да го пропуснете.} other{{count} от записите ви в категорията „{category}“ изтичат преди {date}. Лесно е да забравите някой, когато са събрани така.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} предстоящо изтичане е покрито от напомняне. Нищо друго не изисква вниманието ви.} other{{count} предстоящи изтичания са покрити от напомняния. Нищо друго не изисква вниманието ви.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Всичко е наред. В момента нищо не изисква вниманието ви.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{В момента няма нищо спешно, но 1 предстоящ запис все още няма напомняне.} other{В момента няма нищо спешно, но {count} предстоящи записа все още нямат напомняне.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{В момента няма нищо спешно, но {count} предстоящ запис все още няма напомняне.} other{В момента няма нищо спешно, но {count} предстоящи записа все още нямат напомняне.}}",
   "smartInsightCloseExpiriesHeading": "Изтичат почти едновременно",
   "plansHeadline": "Вземете пълния Vaultara",
   "plansSubhead": "Неограничен брой записи, собствени групи и напомняния, настроени точно както искате.",
@@ -357,7 +349,7 @@
   "reminderCascadeRemoveStep": "Премахване",
   "reminderCascadeDuplicate": "Друго напомняне вече използва този ден",
   "reminderCascadeOutOfRange": "Въведете между {min} и {max} дни",
-  "reminderCascadeStepLabel": "Напомняне {position}: {days, plural, =1{1 ден} other{{days} дни}} преди",
+  "reminderCascadeStepLabel": "Напомняне {position}: {days, plural, =1{{days} ден} other{{days} дни}} преди",
   "expiryTimelineNotReady": "Времевата линия ще се появи, когато имате записи, които изтичат в няколко различни месеца.",
   "verifyEmailResendIn": "Повторно изпращане след {seconds} сек.",
   "verifyEmailSpamHint": "Не го виждате? Проверете папката за спам или нежелана поща.",
@@ -366,13 +358,10 @@
   "verifyEmailDiscardBody": "Този акаунт не е потвърден. Ако напуснете сега, той ще бъде премахнат и ще можете да създадете акаунт отново с всеки имейл адрес.",
   "verifyEmailDiscardAction": "Отхвърляне",
   "verifyEmailKeepWaiting": "Ще изчакам",
-  "expiringBadge": "{count, plural, =1{1 изтича} other{{count} изтичат}}",
+  "expiringBadge": "{count, plural, =1{{count} изтича} other{{count} изтичат}}",
   "noRecordsToday": "Нищо не изтича днес",
   "noRecordsTomorrow": "Нищо не изтича утре",
-  "cascadeStepTitle": "{days, plural, =0{„{recordName}“ изтича днес} =1{„{recordName}“ изтича утре} other{„{recordName}“ изтича след {days} дни}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, „{recordName}“ изтича днес. Вече сте подновили записа? Актуализирайте датата на изтичане.} =1{{firstName}, „{recordName}“ изтича утре. Подновете записа сега, за да не изтече.} other{{firstName}, „{recordName}“ изтича на {date}. Навременното подновяване ви пази спокойни.}}",
   "cascadeFinalStepTitle": "Последно напомняне: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, „{recordName}“ изтича {days, plural, =1{утре} other{след {days} дни, на {date}}}. Това е последното ви напомняне – подновете записа или актуализирайте датата му.",
   "notificationsTitle": "Известия",
   "notificationsProfileEnabledSubtitle": "Напомнянията пристигат в {time}.",
   "notificationsProfileDisabledSubtitle": "Известията са изключени.",
@@ -1099,7 +1088,7 @@
   "photoLockTurnOn": "Включване на шифровани снимки",
   "photoLockStatusOn": "Шифрованите снимки са включени",
   "photoLockStatusOnBody": "Новите снимки се шифроват на този телефон, преди да бъдат качени.",
-  "photoLockPendingTitle": "{count, plural, one{1 снимка още не е шифрована} other{{count} снимки още не са шифровани}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} снимка още не е шифрована} other{{count} снимки още не са шифровани}}",
   "photoLockPendingBody": "Снимките, които сте добавили преди включването, още се съхраняват по обичайния начин.",
   "photoLockEncryptExisting": "Шифроване на съществуващите ми снимки",
   "photoLockKeepOpen": "Не затваряйте Vaultara, докато това приключи.",
@@ -1136,7 +1125,7 @@
   "photoLockSetupFailed": "Не успяхме да включим шифрованите снимки. Проверете връзката си и опитайте отново.",
   "photoLockAlreadyOn": "Шифрованите снимки вече са включени за акаунта ви. Въведете ключа си за възстановяване, за да ги ползвате на този телефон.",
   "photoLockEncryptExistingTitle": "Да се шифроват ли съществуващите ви снимки?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Имате 1 снимка, която още не е шифрована. Можем да я шифроваме сега.} other{Имате {count} снимки, които още не са шифровани. Можем да ги шифроваме сега.}} Не затваряйте Vaultara, докато това приключи.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Имате {count} снимка, която още не е шифрована. Можем да я шифроваме сега.} other{Имате {count} снимки, които още не са шифровани. Можем да ги шифроваме сега.}} Не затваряйте Vaultara, докато това приключи.",
   "photoLockEncryptNow": "Шифроване сега",
   "photoLockEntryBody": "Въведете ключа за възстановяване, който сте запазили при включването на шифрованите снимки. Тиретата и интервалите не са задължителни.",
   "photoLockEntryLabel": "Ключ за възстановяване",
@@ -1145,8 +1134,8 @@
   "photoLockUnlocked": "Снимките ви са отключени на този телефон.",
   "photoLockInvalidFormat": "Това не прилича на ключ за възстановяване. Проверете всеки знак и опитайте отново.",
   "photoLockWrongKey": "Този ключ за възстановяване не съвпада. Проверете го и опитайте отново.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Твърде много опити. Изчакайте 1 секунда и опитайте отново.} other{Твърде много опити. Изчакайте {seconds} секунди и опитайте отново.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Твърде много опити. Изчакайте 1 минута и опитайте отново.} other{Твърде много опити. Изчакайте {minutes} минути и опитайте отново.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Твърде много опити. Изчакайте {seconds} секунда и опитайте отново.} other{Твърде много опити. Изчакайте {seconds} секунди и опитайте отново.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Твърде много опити. Изчакайте {minutes} минута и опитайте отново.} other{Твърде много опити. Изчакайте {minutes} минути и опитайте отново.}}",
   "photoLockOffline": "Не успяхме да се свържем с Vaultara. Проверете връзката си и опитайте отново.",
   "photoLockNotSetUp": "Шифрованите снимки не са включени за акаунта ви.",
   "photoLockUnlockFailed": "Нещо се обърка. Опитайте отново.",
@@ -1402,13 +1391,13 @@
   "dailyDigestSwitchSubtitle": "Получавайте едно известие в часа на напомнянето, което изброява всичко за деня.",
   "dailyDigestTurnedOn": "Напомнянията ви вече идват като едно дневно резюме.",
   "dailyDigestTurnedOff": "Отделните напомняния за всеки запис отново са включени.",
-  "dailyDigestTitle": "{count, plural, one{1 запис изисква вниманието ви} other{{count} записа изискват вниманието ви}}",
+  "dailyDigestTitle": "{count, plural, one{{count} запис изисква вниманието ви} other{{count} записа изискват вниманието ви}}",
   "dailyDigestBody": "Предстоят: {names}.",
   "dailyDigestBodyMore": "Предстоят: {names} и още {count}.",
   "dailyDigestLockedRecord": "заключен запис",
   "renewReasonRepeat": "{months, plural, one{Според настройката ви за повторение на всеки месец} other{Според настройката ви за повторение на всеки {months} месеца}}",
   "renewReasonHistory": "{count, plural, one{Според последното ви подновяване} other{Според последните ви {count} подновявания}}",
-  "renewReasonTypical": "{years, plural, one{Обикновено важи 1 година} other{Обикновено важи {years} години}}",
+  "renewReasonTypical": "{years, plural, one{Обикновено важи {years} година} other{Обикновено важи {years} години}}",
   "renewChangeHint": "Докоснете датата, за да я промените.",
   "renewPickDate": "Изберете новата дата на изтичане",
   "renewPickDateHint": "Изберете датата, посочена в новия ви документ.",
@@ -1561,9 +1550,9 @@
   "secHistoryIntro": "Влизания и промени в акаунта ви през последните 90 дни.",
   "secHistoryEmpty": "Все още няма нищо за показване.",
   "secJustNow": "Току-що",
-  "secMinutesAgo": "{count, plural, one{преди 1 минута} other{преди {count} минути}}",
-  "secHoursAgo": "{count, plural, one{преди 1 час} other{преди {count} часа}}",
-  "secDaysAgo": "{count, plural, one{преди 1 ден} other{преди {count} дни}}",
+  "secMinutesAgo": "{count, plural, one{преди {count} минута} other{преди {count} минути}}",
+  "secHoursAgo": "{count, plural, one{преди {count} час} other{преди {count} часа}}",
+  "secDaysAgo": "{count, plural, one{преди {count} ден} other{преди {count} дни}}",
   "secEventNewSignIn": "Вход от ново устройство",
   "secEventSignIn": "Вход",
   "secEventPasswordChanged": "Паролата е променена",
@@ -2611,5 +2600,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "„{recordName}“ изтича днес",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "„{recordName}“ изтича утре",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{„{recordName}“ изтича след {days} ден} other{„{recordName}“ изтича след {days} дни}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "„{recordName}“ е изтекъл",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Заключен запис изисква вниманието ви",
+  "remLockedBody": "Датата му е {date}. Отключете Vaultara, за да видите кой запис е.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Вашият запис „{recordName}“ изтича днес.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Вашият запис „{recordName}“ изтича утре.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Вашият запис „{recordName}“ изтича на {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, вашият запис „{recordName}“ изтича днес.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, вашият запис „{recordName}“ изтича утре.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, вашият запис „{recordName}“ изтича на {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Записът „{recordName}“ на {person} изтича днес.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Записът „{recordName}“ на {person} изтича утре.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Записът „{recordName}“ на {person} изтича на {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Вашият запис „{recordName}“ изтече на {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Записът „{recordName}“ на {person} изтече на {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Вече подновен? Актуализирайте датата.",
+  "remTipTomorrow": "Подновете го сега, за да не изтече.",
+  "remTipEarly": "Ранното подновяване ви държи защитени.",
+  "remTipLast": "Това е последното ви напомняне преди изтичането.",
+  "remTipExpired": "Подновете го или актуализирайте датата, ако вече сте го направили.",
+  "remStartBody": "Време е да започнете подновяването на „{recordName}“. Изтича на {date}, така че ако започнете сега, ще имате достатъчно време.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Време е да започнете подновяването на „{recordName}“ на {person}. Изтича на {date}, така че ако започнете сега, ще има достатъчно време.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Напомняния за изтичане",
+  "notifChannelDescription": "Напомняния преди записите ви да изтекат",
+  "notifTestTitle": "Тестово известие",
+  "notifTestBody": "Така пристигат напомнянията от Vaultara.",
+  "notifTestAction": "Изпратете тестово известие",
+  "notifTestSubtitle": "Проверете дали напомнянията стигат до този телефон",
+  "notifTestSent": "Тестът е изпратен. Трябва да пристигне след няколко секунди.",
+  "notifAfterExpiryTitle": "Напомняй ми след изтичане на запис",
+  "notifAfterExpirySubtitle": "3 и 14 дни след това, ако не е подновен",
+  "notifWeeklyTitle": "Обобщение в понеделник",
+  "notifWeeklySubtitle": "Съобщение в понеделник сутрин, когато нещо изтича през седмицата",
+  "notifPushSection": "Домакинство и актуализации",
+  "notifHouseholdTitle": "Споделени записи",
+  "notifHouseholdSubtitle": "Когато споделен запис скоро изтича и никой не го е подновил",
+  "notifUpdatesTitle": "Поискани актуализации",
+  "notifUpdatesSubtitle": "Когато някой изпрати новите данни на запис",
+  "notifSecurityNote": "Сигналите за нови влизания в профила ви се изпращат винаги.",
+  "notifIosHelpTitle": "Не получавате напомняния?",
+  "notifIosHelpSubtitle": "Проверете настройките на iPhone",
+  "notifIosHelpStep1": "Отворете Настройки, после Известия, после Vaultara, и включете Разрешаване на известия.",
+  "notifIosHelpStep2": "Включете Заключен екран, Център за известия и Банери.",
+  "notifIosHelpStep3": "Ако използвате режим Фокус, добавете Vaultara към разрешените приложения.",
+  "notifIosHelpStep4": "Отваряйте Vaultara на всеки няколко седмици. iPhone пази само ограничен брой бъдещи напомняния, а отварянето на приложението планира следващите.",
+  "homeNextUpEmpty": "Скоро нищо не изтича. Всичко е наред.",
+  "homeDueSoonChip": "{count, plural, one{{count} изтича до 30 дни} other{{count} изтичат до 30 дни}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Закачени категории"
 }

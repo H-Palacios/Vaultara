@@ -173,9 +173,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara-ն օգնում է ձեզ հետևել կարևոր ժամկետներին, որպեսզի ոչինչ աննկատ չժամկետանցվի։",
   "homeWelcomeSubtitleFirst": "Հրաշալի է, որ դուք այստեղ եք։ Vaultara-ն օգնում է ձեզ կազմակերպված մնալ՝ կարևոր ամսաթվերն ու գրառումները մեկ անվտանգ վայրում պահելով։",
   "homeWelcomeSubtitleBack": "Հաճելի է կրկին տեսնել ձեզ։ Vaultara-ն այստեղ է, երբ ցանկանաք վերանայել ձեր կարևոր ամսաթվերն ու գրառումները։",
-  "summaryAllCaption": "Հետևվում է Vaultara-ում",
-  "summaryExpiredTitle": "Ժամկետանց",
-  "summaryExpiredCaption": "Ժամկետն անցել է",
   "editorNotes": "Նշումներ",
   "editorReminderNone": "Առանց հիշեցման",
   "enableBiometricsTitle": "Միացնել կենսաչափական անվտանգությունը",
@@ -197,7 +194,6 @@
   "addRecord": "Ավելացնել գրառում",
   "noRecordsYet": "Դեռ գրառումներ չկան։",
   "deleteRecordTitle": "Ջնջել գրառումը",
-  "summaryAllRecordsTitle": "Բոլոր գրառումները",
   "noGroupFound": "Դեռ խմբեր չկան",
   "groupLabel": "{count, plural, one{{count} խումբ} other{{count} խումբ}}",
   "recordsLabel": "{count, plural, one{{count} գրառում} other{{count} գրառում}}",
@@ -443,7 +439,7 @@
   "addNotesHint": "Ավելացրեք նշումներ (ըստ ցանկության)",
   "expiryTimelineTitle": "Ժամկետների ժամանակագիծ",
   "expiryTimelineSubtitle": "Հպեք ամսվան՝ այդ ամսում լրացող ժամկետով գրառումները տեսնելու համար",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 գրառում} other{{count} գրառում}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} գրառում} other{{count} գրառում}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -451,10 +447,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Առաջիկա",
-  "summaryUpcomingCaption": "30 օրվա ընթացքում",
-  "summaryUrgentTitle": "Հրատապ",
-  "summaryUrgentCaption": "7 օրվա ընթացքում",
   "profileHeaderTitle": "Պրոֆիլ",
   "profileTutorialsTitle": "Ուսուցումներ",
   "profileTutorialsSubtitle": "Դիտել հավելվածի ուսուցումները",
@@ -525,16 +517,16 @@
   "smartInsightNoRecordsHeading": "Ավելացրեք ձեր առաջին գրառումը",
   "smartInsightNoRecordsBody": "Սկսեք հետևել ձեր գրառումներին, և Vaultara-ն այստեղ կցուցադրի խելացի վերլուծություններ:",
   "smartInsightExpiresTodaySingleBody": "{name}-ի ժամկետն ավարտվում է այսօր: Եթե այն արդեն նորացրել եք, թարմացրեք ամսաթիվն այստեղ:",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names}-ի ժամկետն ավարտվում է այսօր:} =1{{names}-ը և ևս 1 գրառում ավարտվում են այսօր:} other{{names}-ը և ևս {extra} գրառում ավարտվում են այսօր:}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names}-ի ժամկետն ավարտվում է այսօր:} =1{{names}-ը և ևս {extra} գրառում ավարտվում են այսօր:} other{{names}-ը և ևս {extra} գրառում ավարտվում են այսօր:}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name}-ի ժամկետն ավարտվում է վաղը և հիշեցում չունի: Սահմանեք այն, որպեսզի բաց չթողնեք:} other{{name}-ի ժամկետն ավարտվում է {date}-ին և հիշեցում չունի: Սահմանեք այն, որպեսզի բաց չթողնեք:}}",
   "smartInsightCloseExpiriesBodyTwo": "{a}-ի ժամկետն ավարտվում է {dateA}-ին, իսկ {b}-ինը՝ {dateB}-ին, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ երկու գրառումներն այսքան մոտ են միմյանց:",
   "smartInsightCloseExpiriesBodyThree": "{a}-ի, {b}-ի և {c}-ի ժամկետները լրանում են մինչև {lastDate}, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ մի քանի գրառումներն այսքան մոտ են միմյանց:",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}-ի, {b}-ի և ևս 1 գրառման ժամկետները լրանում են մինչև {lastDate}, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ մի քանի գրառումներն այսքան մոտ են միմյանց:} other{{a}-ի, {b}-ի և ևս {extra} գրառման ժամկետները լրանում են մինչև {lastDate}, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ մի քանի գրառումներն այսքան մոտ են միմյանց:}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}-ի, {b}-ի և ևս {extra} գրառման ժամկետները լրանում են մինչև {lastDate}, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ մի քանի գրառումներն այսքան մոտ են միմյանց:} other{{a}-ի, {b}-ի և ևս {extra} գրառման ժամկետները լրանում են մինչև {lastDate}, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ մի քանի գրառումներն այսքան մոտ են միմյանց:}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Հաջորդ օրը ոչ մի բանի ժամկետ չի ավարտվում: Ձեր հաջորդ վերջնաժամկետը {date}-ին է:} other{Հաջորդ {days} օրերի ընթացքում ոչ մի բանի ժամկետ չի ավարտվում: Ձեր հաջորդ վերջնաժամկետը {date}-ին է:}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} կատեգորիայում ձեր 1 գրառման ժամկետն ավարտվում է {date}-ին: Այն հեշտ է անտեսել:} other{{category} կատեգորիայում ձեր {count} գրառումների ժամկետն ավարտվում է մինչև {date}: Հեշտ է մոռանալ մեկը, երբ դրանք այսպես խմբավորված են:}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Առաջիկա 1 ավարտի ժամկետ ապահովված է հիշեցումով: Ուրիշ ոչինչ չի պահանջում ձեր ուշադրությունը:} other{Առաջիկա {count} ավարտի ժամկետներ ապահովված են հիշեցումներով: Ուրիշ ոչինչ չի պահանջում ձեր ուշադրությունը:}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} կատեգորիայում ձեր {count} գրառման ժամկետն ավարտվում է {date}-ին: Այն հեշտ է անտեսել:} other{{category} կատեգորիայում ձեր {count} գրառումների ժամկետն ավարտվում է մինչև {date}: Հեշտ է մոռանալ մեկը, երբ դրանք այսպես խմբավորված են:}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Առաջիկա {count} ավարտի ժամկետ ապահովված է հիշեցումով: Ուրիշ ոչինչ չի պահանջում ձեր ուշադրությունը:} other{Առաջիկա {count} ավարտի ժամկետներ ապահովված են հիշեցումներով: Ուրիշ ոչինչ չի պահանջում ձեր ուշադրությունը:}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Ամեն ինչ թարմացված է: Այս պահին ոչինչ չի պահանջում ձեր ուշադրությունը:",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Այս պահին հրատապ ոչինչ չկա, բայց առաջիկա 1 գրառում դեռևս հիշեցում չունի:} other{Այս պահին հրատապ ոչինչ չկա, բայց առաջիկա {count} գրառում դեռևս հիշեցում չունեն:}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Այս պահին հրատապ ոչինչ չկա, բայց առաջիկա {count} գրառում դեռևս հիշեցում չունի:} other{Այս պահին հրատապ ոչինչ չկա, բայց առաջիկա {count} գրառում դեռևս հիշեցում չունեն:}}",
   "smartInsightCloseExpiriesHeading": "Ժամկետները լրանում են մոտավորապես նույն ժամանակահատվածում",
   "plansHeadline": "Ստացեք Vaultara-ի ամբողջական տարբերակը",
   "plansSubhead": "Անսահմանափակ գրառումներ, ձեր սեփական խմբերը և հիշեցումներ՝ հարմարեցված ճիշտ ձեր ուզած ձևով։",
@@ -621,7 +613,7 @@
   "reminderCascadeRemoveStep": "Հեռացնել",
   "reminderCascadeDuplicate": "Մեկ այլ հիշեցում արդեն օգտագործում է այս օրը",
   "reminderCascadeOutOfRange": "Մուտքագրեք {min}-ից {max} օր",
-  "reminderCascadeStepLabel": "Հիշեցում {position}. {days, plural, =1{1 օր} other{{days} օր}} առաջ",
+  "reminderCascadeStepLabel": "Հիշեցում {position}. {days, plural, =1{{days} օր} other{{days} օր}} առաջ",
   "expiryTimelineNotReady": "Ձեր ժամանակացույցը կհայտնվի, երբ ունենաք մի քանի տարբեր ամիսների ընթացքում ժամկետանց դարձող գրառումներ:",
   "verifyEmailResendIn": "Կրկին ուղարկել {seconds} վրկ-ից",
   "verifyEmailSpamHint": "Այնտեղ չէ՞: Ստուգեք ձեր սպամի կամ անցանկալի նամակների թղթապանակը:",
@@ -630,13 +622,10 @@
   "verifyEmailDiscardBody": "Այս հաշիվը հաստատված չէ: Հիմա դուրս գալը կհեռացնի այն, և դուք կկարողանաք նորից գրանցվել ցանկացած էլ. փոստի հասցեով:",
   "verifyEmailDiscardAction": "Հեռացնել",
   "verifyEmailKeepWaiting": "Շարունակել սպասել",
-  "expiringBadge": "{count, plural, =1{1-ի ժամկետը շուտով ավարտվում է} other{{count}-ի ժամկետը շուտով ավարտվում է}}",
+  "expiringBadge": "{count, plural, =1{{count}-ի ժամկետը շուտով ավարտվում է} other{{count}-ի ժամկետը շուտով ավարտվում է}}",
   "noRecordsToday": "Այսօր ոչինչ չի ավարտվում",
   "noRecordsTomorrow": "Վաղը ոչինչ չի ավարտվում",
-  "cascadeStepTitle": "{days, plural, =0{{recordName}-ի ժամկետն ավարտվում է այսօր} =1{{recordName}-ի ժամկետն ավարտվում է վաղը} other{{recordName}-ի ժամկետն ավարտվում է {days} օրից}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, ձեր {recordName}-ի ժամկետն ավարտվում է այսօր: Արդեն նորացրե՞լ եք: Թարմացրեք դրա ավարտի ամսաթիվը:} =1{{firstName}, ձեր {recordName}-ի ժամկետն ավարտվում է վաղը: Նորացրեք այն հիմա, որպեսզի չլրանա:} other{{firstName}, ձեր {recordName}-ի ժամկետն ավարտվում է {date}-ին: Վաղաժամ նորացումը պահպանում է ձեր պաշտպանվածությունը:}}",
   "cascadeFinalStepTitle": "Վերջին հիշեցում՝ {recordName}",
-  "cascadeFinalStepBody": "{firstName}, ձեր {recordName}-ի ժամկետն ավարտվում է {days, plural, =1{վաղը} other{{days} օրից՝ {date}-ին}}: Սա ձեր վերջին հիշեցումն է. նորացրեք այն կամ թարմացրեք ամսաթիվը:",
   "notificationsTitle": "Ծանուցումներ",
   "notificationsProfileEnabledSubtitle": "Հիշեցումները ստացվում են ժամը {time}-ին։",
   "notificationsProfileDisabledSubtitle": "Ծանուցումներն անջատված են:",
@@ -1666,13 +1655,13 @@
   "dailyDigestSwitchSubtitle": "Ստացեք մեկ ծանուցում ձեր հիշեցման ժամին, որտեղ կթվարկվի այդ օրվա ամեն ինչ։",
   "dailyDigestTurnedOn": "Ձեր հիշեցումները հիմա գալիս են որպես մեկ օրական ամփոփում։",
   "dailyDigestTurnedOff": "Յուրաքանչյուր գրառման համար առանձին հիշեցումները նորից միացված են։",
-  "dailyDigestTitle": "{count, plural, one{1 գրառում ձեր ուշադրության կարիքն ունի} other{{count} գրառում ձեր ուշադրության կարիքն ունեն}}",
+  "dailyDigestTitle": "{count, plural, one{{count} գրառում ձեր ուշադրության կարիքն ունի} other{{count} գրառում ձեր ուշադրության կարիքն ունեն}}",
   "dailyDigestBody": "Շուտով՝ {names}։",
   "dailyDigestBodyMore": "Շուտով՝ {names} և ևս {count}։",
   "dailyDigestLockedRecord": "կողպված գրառում",
   "renewReasonRepeat": "{months, plural, one{Հիմնված է ձեր կրկնման կարգավորման վրա՝ ամեն ամիս} other{Հիմնված է ձեր կրկնման կարգավորման վրա՝ ամեն {months} ամիս}}",
   "renewReasonHistory": "{count, plural, one{Հիմնված է ձեր վերջին նորացման վրա} other{Հիմնված է ձեր վերջին {count} նորացումների վրա}}",
-  "renewReasonTypical": "{years, plural, one{Սովորաբար վավեր է 1 տարի} other{Սովորաբար վավեր է {years} տարի}}",
+  "renewReasonTypical": "{years, plural, one{Սովորաբար վավեր է {years} տարի} other{Սովորաբար վավեր է {years} տարի}}",
   "renewChangeHint": "Հպեք ամսաթվին՝ փոխելու համար։",
   "renewPickDate": "Ընտրեք ժամկետի նոր ամսաթիվը",
   "renewPickDateHint": "Ընտրեք ձեր նոր փաստաթղթում նշված ամսաթիվը։",
@@ -2875,5 +2864,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "«{recordName}»-ի ժամկետն ավարտվում է այսօր",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "«{recordName}»-ի ժամկետն ավարտվում է վաղը",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{«{recordName}»-ի ժամկետն ավարտվում է {days} օրից} other{«{recordName}»-ի ժամկետն ավարտվում է {days} օրից}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "«{recordName}»-ի ժամկետն ավարտվել է",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Կողպված գրառումը ձեր ուշադրության կարիքն ունի",
+  "remLockedBody": "Դրա ամսաթիվը {date} է: Ապակողպեք Vaultara-ն՝ տեսնելու, թե որ գրառումն է:",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Ձեր «{recordName}» գրառման ժամկետն ավարտվում է այսօր:",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Ձեր «{recordName}» գրառման ժամկետն ավարտվում է վաղը:",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Ձեր «{recordName}» գրառման ժամկետն ավարտվում է {date}-ին:",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, ձեր «{recordName}» գրառման ժամկետն ավարտվում է այսօր:",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, ձեր «{recordName}» գրառման ժամկետն ավարտվում է վաղը:",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, ձեր «{recordName}» գրառման ժամկետն ավարտվում է {date}-ին:",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}՝ «{recordName}» գրառման ժամկետն ավարտվում է այսօր:",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}՝ «{recordName}» գրառման ժամկետն ավարտվում է վաղը:",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}՝ «{recordName}» գրառման ժամկետն ավարտվում է {date}-ին:",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Ձեր «{recordName}» գրառման ժամկետն ավարտվել է {date}-ին:",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}՝ «{recordName}» գրառման ժամկետն ավարտվել է {date}-ին:",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Արդեն նորացրե՞լ եք: Թարմացրեք ամսաթիվը:",
+  "remTipTomorrow": "Նորացրեք հիմա, որ ժամկետը չանցնի:",
+  "remTipEarly": "Վաղ նորացումը ձեզ պաշտպանված է պահում:",
+  "remTipLast": "Սա ձեր վերջին հիշեցումն է ժամկետի ավարտից առաջ:",
+  "remTipExpired": "Նորացրեք կամ թարմացրեք ամսաթիվը, եթե արդեն արել եք:",
+  "remStartBody": "Ժամանակն է սկսել «{recordName}»-ի նորացումը: Ժամկետն ավարտվում է {date}-ին, ուստի եթե հիմա սկսեք, շատ ժամանակ կունենաք:",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Ժամանակն է սկսել «{recordName}»-ի ({person}) նորացումը: Ժամկետն ավարտվում է {date}-ին, ուստի հիմա սկսելով շատ ժամանակ կլինի:",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Ժամկետի հիշեցումներ",
+  "notifChannelDescription": "Հիշեցումներ՝ նախքան ձեր գրառումների ժամկետի ավարտը",
+  "notifTestTitle": "Փորձնական ծանուցում",
+  "notifTestBody": "Vaultara-ի հիշեցումները գալիս են այսպես:",
+  "notifTestAction": "Ուղարկել փորձնական ծանուցում",
+  "notifTestSubtitle": "Ստուգեք, որ հիշեցումները հասնում են այս հեռախոսին",
+  "notifTestSent": "Փորձն ուղարկվեց: Այն պետք է գա մի քանի վայրկյանից:",
+  "notifAfterExpiryTitle": "Հիշեցնել գրառման ժամկետի ավարտից հետո",
+  "notifAfterExpirySubtitle": "3 և 14 օր անց, եթե այն չի նորացվել",
+  "notifWeeklyTitle": "Երկուշաբթիի ամփոփում",
+  "notifWeeklySubtitle": "Հաղորդագրություն երկուշաբթի առավոտյան, երբ այդ շաբաթ ինչ-որ բան ավարտվում է",
+  "notifPushSection": "Ընտանիք և թարմացումներ",
+  "notifHouseholdTitle": "Կիսված գրառումներ",
+  "notifHouseholdSubtitle": "Երբ կիսված գրառման ժամկետը մոտենում է ավարտին, և ոչ ոք այն չի նորացրել",
+  "notifUpdatesTitle": "Ձեր խնդրած թարմացումները",
+  "notifUpdatesSubtitle": "Երբ որևէ մեկն ուղարկում է գրառման նոր տվյալները",
+  "notifSecurityNote": "Ձեր հաշվին նոր մուտքերի մասին զգուշացումները միշտ ուղարկվում են:",
+  "notifIosHelpTitle": "Հիշեցումներ չե՞ք ստանում:",
+  "notifIosHelpSubtitle": "Ստուգեք iPhone-ի կարգավորումները",
+  "notifIosHelpStep1": "Բացեք Կարգավորումներ, ապա Ծանուցումներ, ապա Vaultara, և միացրեք Թույլատրել ծանուցումները:",
+  "notifIosHelpStep2": "Միացրեք Կողպէկրանը, Ծանուցումների կենտրոնը և Բաններները:",
+  "notifIosHelpStep3": "Եթե օգտագործում եք Կենտրոնացում, ավելացրեք Vaultara-ն թույլատրված հավելվածներին:",
+  "notifIosHelpStep4": "Բացեք Vaultara-ն մի քանի շաբաթը մեկ: iPhone-ը պահում է միայն սահմանափակ թվով ապագա հիշեցումներ, և հավելվածը բացելիս պլանավորվում են հաջորդները:",
+  "homeNextUpEmpty": "Շուտով ոչինչ չի ավարտվում: Ամեն ինչ կարգին է:",
+  "homeDueSoonChip": "{count, plural, one{{count}-ը ավարտվում է 30 օրում} other{{count}-ը ավարտվում են 30 օրում}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Ամրացված կատեգորիաներ"
 }

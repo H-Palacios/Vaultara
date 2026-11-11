@@ -360,15 +360,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeWelcomeSubtitleBack => '다시 만나서 반갑습니다. Vaultara는 언제든 중요한 날짜와 기록을 검토할 수 있습니다.';
 
   @override
-  String get summaryAllCaption => 'Vaultara에서 추적됨';
-
-  @override
-  String get summaryExpiredTitle => '만료됨';
-
-  @override
-  String get summaryExpiredCaption => '만료 날짜가 지났습니다';
-
-  @override
   String get editorNotes => '메모';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => '기록 삭제';
-
-  @override
-  String get summaryAllRecordsTitle => '모든 기록';
 
   @override
   String get noGroupFound => '아직 그룹이 없습니다';
@@ -833,18 +821,6 @@ class AppLocalizationsKo extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => '예정됨';
-
-  @override
-  String get summaryUpcomingCaption => '30일 이내';
-
-  @override
-  String get summaryUrgentTitle => '긴급';
-
-  @override
-  String get summaryUrgentCaption => '7일 이내';
 
   @override
   String get profileHeaderTitle => '프로필';
@@ -1300,43 +1276,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noRecordsTomorrow => '내일 만료되는 항목 없음';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName 만료가 $days일 남았습니다',
-      one: '$recordName 만료일이 내일입니다',
-      zero: '$recordName 만료일이 오늘입니다',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName 님, $recordName 만료일은 $date입니다. 미리 갱신하여 안전하게 유지하세요.',
-      one: '$firstName 님, $recordName 만료일이 내일입니다. 만료되기 전에 지금 갱신하세요.',
-      zero: '$firstName 님, $recordName 만료일이 오늘입니다. 이미 갱신하셨나요? 만료일을 업데이트해 주세요.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return '마지막 알림: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days일 후인 $date',
-      one: '내일',
-    );
-    return '$firstName 님, $recordName 만료일이 $_temp0입니다. 마지막 알림입니다. 갱신하거나 날짜를 업데이트해 주세요.';
   }
 
   @override
@@ -8218,4 +8159,202 @@ class AppLocalizationsKo extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return '알림: $name이(가) $date에 만료';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName 오늘 만료';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName 내일 만료';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days일 후 만료',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName 만료됨';
+  }
+
+  @override
+  String get remLockedTitle => '잠긴 기록을 확인해야 합니다';
+
+  @override
+  String remLockedBody(String date) {
+    return '날짜는 $date입니다. 어떤 기록인지 보려면 Vaultara 잠금을 해제하세요.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '\"$recordName\" 기록이 오늘 만료됩니다.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '\"$recordName\" 기록이 내일 만료됩니다.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '\"$recordName\" 기록이 $date에 만료됩니다.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName님, \"$recordName\" 기록이 오늘 만료됩니다.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName님, \"$recordName\" 기록이 내일 만료됩니다.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName님, \"$recordName\" 기록이 $date에 만료됩니다.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person님의 \"$recordName\" 기록이 오늘 만료됩니다.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person님의 \"$recordName\" 기록이 내일 만료됩니다.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person님의 \"$recordName\" 기록이 $date에 만료됩니다.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '\"$recordName\" 기록이 $date에 만료되었습니다.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person님의 \"$recordName\" 기록이 $date에 만료되었습니다.';
+  }
+
+  @override
+  String get remTipToday => '이미 갱신하셨나요? 날짜를 업데이트하세요.';
+
+  @override
+  String get remTipTomorrow => '만료되지 않도록 지금 갱신하세요.';
+
+  @override
+  String get remTipEarly => '일찍 갱신하면 안심할 수 있습니다.';
+
+  @override
+  String get remTipLast => '만료 전 마지막 알림입니다.';
+
+  @override
+  String get remTipExpired => '갱신하거나, 이미 했다면 날짜를 업데이트하세요.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" 갱신을 시작할 때입니다. $date에 만료되므로 지금 시작하면 시간이 충분합니다.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '$person님의 \"$recordName\" 갱신을 시작할 때입니다. $date에 만료되므로 지금 시작하면 시간이 충분합니다.';
+  }
+
+  @override
+  String get notifChannelName => '만료 알림';
+
+  @override
+  String get notifChannelDescription => '기록이 만료되기 전에 보내는 알림';
+
+  @override
+  String get notifTestTitle => '테스트 알림';
+
+  @override
+  String get notifTestBody => 'Vaultara 알림은 이렇게 도착합니다.';
+
+  @override
+  String get notifTestAction => '테스트 알림 보내기';
+
+  @override
+  String get notifTestSubtitle => '알림이 이 휴대전화에 도착하는지 확인하세요';
+
+  @override
+  String get notifTestSent => '테스트를 보냈습니다. 몇 초 안에 도착합니다.';
+
+  @override
+  String get notifAfterExpiryTitle => '기록이 만료된 후에도 알림';
+
+  @override
+  String get notifAfterExpirySubtitle => '갱신되지 않았다면 3일과 14일 후';
+
+  @override
+  String get notifWeeklyTitle => '월요일 요약';
+
+  @override
+  String get notifWeeklySubtitle => '그 주에 만료되는 항목이 있을 때 월요일 아침에 알림';
+
+  @override
+  String get notifPushSection => '가족 및 업데이트';
+
+  @override
+  String get notifHouseholdTitle => '공유 기록';
+
+  @override
+  String get notifHouseholdSubtitle => '공유 기록이 곧 만료되는데 아무도 갱신하지 않았을 때';
+
+  @override
+  String get notifUpdatesTitle => '요청한 업데이트';
+
+  @override
+  String get notifUpdatesSubtitle => '누군가 기록의 새 정보를 보냈을 때';
+
+  @override
+  String get notifSecurityNote => '계정의 새 로그인 알림은 항상 전송됩니다.';
+
+  @override
+  String get notifIosHelpTitle => '알림이 오지 않나요?';
+
+  @override
+  String get notifIosHelpSubtitle => 'iPhone 설정을 확인하세요';
+
+  @override
+  String get notifIosHelpStep1 => '설정, 알림, Vaultara 순으로 열고 알림 허용을 켜세요.';
+
+  @override
+  String get notifIosHelpStep2 => '잠금 화면, 알림 센터, 배너를 켜세요.';
+
+  @override
+  String get notifIosHelpStep3 => '집중 모드를 사용한다면 허용된 앱에 Vaultara를 추가하세요.';
+
+  @override
+  String get notifIosHelpStep4 => '몇 주에 한 번 Vaultara를 여세요. iPhone은 앞으로의 알림을 제한된 수만 보관하며, 앱을 열면 다음 알림이 예약됩니다.';
+
+  @override
+  String get homeNextUpEmpty => '곧 만료되는 항목이 없습니다. 모두 준비되었습니다.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30일 이내 $count개',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => '고정된 카테고리';
 }

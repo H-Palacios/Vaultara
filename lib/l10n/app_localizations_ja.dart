@@ -360,15 +360,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'またお会いできて嬉しいです。Vaultaraはいつでも重要な日付や記録を確認できます。';
 
   @override
-  String get summaryAllCaption => 'Vaultaraで管理中';
-
-  @override
-  String get summaryExpiredTitle => '期限切れ';
-
-  @override
-  String get summaryExpiredCaption => '有効期限を過ぎています';
-
-  @override
   String get editorNotes => 'メモ';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => '記録を削除';
-
-  @override
-  String get summaryAllRecordsTitle => 'すべての記録';
 
   @override
   String get noGroupFound => 'まだグループがありません';
@@ -827,18 +815,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String expiryTimelineDetailCount(int count) {
     return '$count件の記録';
   }
-
-  @override
-  String get summaryUpcomingTitle => '近日中';
-
-  @override
-  String get summaryUpcomingCaption => '30日以内';
-
-  @override
-  String get summaryUrgentTitle => '緊急';
-
-  @override
-  String get summaryUrgentCaption => '7日以内';
 
   @override
   String get profileHeaderTitle => 'プロフィール';
@@ -1288,43 +1264,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noRecordsTomorrow => '明日期限切れになるものはありません';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName の期限まであと $days 日です',
-      one: '$recordName の期限は明日です',
-      zero: '$recordName の期限は本日です',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName さん、$recordName は $date に有効期限が切れます。早めに更新して継続してご利用ください。',
-      one: '$firstName さん、$recordName は明日で有効期限が切れます。失効する前に今すぐ更新してください。',
-      zero: '$firstName さん、$recordName は本日で有効期限が切れます。すでに更新されましたか？有効期限を変更してください。',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return '最終リマインダー: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'あと $days 日後の $date',
-      one: '明日',
-    );
-    return '$firstName さん、$recordName は $_temp0 に有効期限が切れます。これが最後のリマインダーです。更新するか、日付を最新にしてください。';
   }
 
   @override
@@ -8206,4 +8147,202 @@ class AppLocalizationsJa extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'リマインダー：$nameは$dateに期限切れ';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName の期限は今日です';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName の期限は明日です';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName の期限まであと $days 日です',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName の期限が切れました';
+  }
+
+  @override
+  String get remLockedTitle => 'ロックされた記録の確認が必要です';
+
+  @override
+  String remLockedBody(String date) {
+    return '期限は $date です。どの記録かを見るには Vaultara のロックを解除してください。';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '記録「$recordName」の期限は今日です。';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '記録「$recordName」の期限は明日です。';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '記録「$recordName」の期限は $date です。';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstNameさん、記録「$recordName」の期限は今日です。';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstNameさん、記録「$recordName」の期限は明日です。';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstNameさん、記録「$recordName」の期限は $date です。';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$personさんの記録「$recordName」の期限は今日です。';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$personさんの記録「$recordName」の期限は明日です。';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$personさんの記録「$recordName」の期限は $date です。';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '記録「$recordName」の期限は $date に切れました。';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$personさんの記録「$recordName」の期限は $date に切れました。';
+  }
+
+  @override
+  String get remTipToday => '更新済みですか？日付を変更してください。';
+
+  @override
+  String get remTipTomorrow => '期限が切れないよう、今すぐ更新しましょう。';
+
+  @override
+  String get remTipEarly => '早めの更新で安心です。';
+
+  @override
+  String get remTipLast => '期限前の最後のリマインダーです。';
+
+  @override
+  String get remTipExpired => '更新するか、更新済みなら日付を変更してください。';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '「$recordName」の更新を始める時期です。期限は $date なので、今始めれば時間に余裕があります。';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '$personさんの「$recordName」の更新を始める時期です。期限は $date なので、今始めれば時間に余裕があります。';
+  }
+
+  @override
+  String get notifChannelName => '期限のリマインダー';
+
+  @override
+  String get notifChannelDescription => '記録の期限が切れる前のリマインダー';
+
+  @override
+  String get notifTestTitle => 'テスト通知';
+
+  @override
+  String get notifTestBody => 'Vaultara のリマインダーはこのように届きます。';
+
+  @override
+  String get notifTestAction => 'テスト通知を送信';
+
+  @override
+  String get notifTestSubtitle => 'リマインダーがこのスマートフォンに届くか確認します';
+
+  @override
+  String get notifTestSent => 'テストを送信しました。数秒で届きます。';
+
+  @override
+  String get notifAfterExpiryTitle => '期限が切れた後にも知らせる';
+
+  @override
+  String get notifAfterExpirySubtitle => '更新されていなければ、3日後と14日後に';
+
+  @override
+  String get notifWeeklyTitle => '月曜日のまとめ';
+
+  @override
+  String get notifWeeklySubtitle => 'その週に期限が来るものがあるとき、月曜の朝にお知らせ';
+
+  @override
+  String get notifPushSection => '世帯とアップデート';
+
+  @override
+  String get notifHouseholdTitle => '共有された記録';
+
+  @override
+  String get notifHouseholdSubtitle => '共有された記録の期限が近く、誰も更新していないとき';
+
+  @override
+  String get notifUpdatesTitle => '依頼したアップデート';
+
+  @override
+  String get notifUpdatesSubtitle => '誰かが記録の新しい情報を送ってきたとき';
+
+  @override
+  String get notifSecurityNote => 'アカウントへの新しいサインインの通知は常に送信されます。';
+
+  @override
+  String get notifIosHelpTitle => 'リマインダーが届きませんか？';
+
+  @override
+  String get notifIosHelpSubtitle => 'iPhone の設定を確認してください';
+
+  @override
+  String get notifIosHelpStep1 => '設定、通知、Vaultara の順に開き、「通知を許可」をオンにします。';
+
+  @override
+  String get notifIosHelpStep2 => 'ロック画面、通知センター、バナーをオンにします。';
+
+  @override
+  String get notifIosHelpStep3 => '集中モードを使っている場合は、許可するアプリに Vaultara を追加します。';
+
+  @override
+  String get notifIosHelpStep4 => '数週間に一度は Vaultara を開いてください。iPhone は先の予定を限られた数しか保存できず、アプリを開くと次の分が予約されます。';
+
+  @override
+  String get homeNextUpEmpty => '近いうちに期限が来るものはありません。準備万端です。';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30日以内に $count 件',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'ピン留めしたカテゴリ';
 }

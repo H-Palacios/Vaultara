@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara გეხმარებათ მნიშვნელოვანი ვადების კონტროლში, რათა არაფერს ვადა შეუმჩნევლად არ გაუვიდეს.",
   "homeWelcomeSubtitleFirst": "სასიამოვნოა თქვენი ნახვა. Vaultara ინახავს მნიშვნელოვან თარიღებს და ჩანაწერებს ერთ უსაფრთხო ადგილას.",
   "homeWelcomeSubtitleBack": "სასიამოვნოა თქვენი დაბრუნება. Vaultara ყოველთვის მზადაა თქვენი მნიშვნელოვანი მონაცემებისთვის.",
-  "summaryAllCaption": "Vaultara-ში კონტროლდება",
-  "summaryExpiredTitle": "ვადაგასული",
-  "summaryExpiredCaption": "ვადის გასვლის შემდეგ",
   "editorNotes": "შენიშვნები",
   "editorReminderNone": "შეხსენება არ არის",
   "editorReminderOnExpiry": "ვადის დღეს",
@@ -192,7 +189,6 @@
   "addRecord": "ჩანაწერის დამატება",
   "noRecordsYet": "ჩანაწერები ჯერ არ არის.",
   "deleteRecordTitle": "ჩანაწერის წაშლა",
-  "summaryAllRecordsTitle": "ყველა ჩანაწერი",
   "noGroupFound": "ჯგუფები ჯერ არ არის",
   "groupLabel": "{count, plural, one{{count} ჯგუფი} other{{count} ჯგუფი}}",
   "recordsLabel": "{count, plural, one{{count} ჩანაწერი} other{{count} ჩანაწერი}}",
@@ -455,7 +451,7 @@
   "addNotesHint": "შენიშვნების დამატება (არასავალდებულო)",
   "expiryTimelineTitle": "ვადის ამოწურვის ვადები",
   "expiryTimelineSubtitle": "შეეხეთ თვეს, რომ ნახოთ ჩანაწერები, რომელთა ვადა იწურება იმ თვეში",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 ჩანაწერი} other{{count} ჩანაწერი}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} ჩანაწერი} other{{count} ჩანაწერი}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "მომავალი",
-  "summaryUpcomingCaption": "მომდევნო 30 დღეში",
-  "summaryUrgentTitle": "სასწრაფო",
-  "summaryUrgentCaption": "მომდევნო 7 დღეში",
   "profileHeaderTitle": "პროფილი",
   "profileTutorialsTitle": "სახელმძღვანელოები",
   "profileTutorialsSubtitle": "დაათვალიერეთ აპლიკაციის სახელმძღვანელოები",
@@ -498,7 +490,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "შეხსენების გარეშე",
   "reminderOnExpiry": "ვადის გასვლის დღეს",
-  "reminderDaysBefore": "{days, plural, one{1 დღით ადრე} other{{days} დღით ადრე}}",
+  "reminderDaysBefore": "{days, plural, one{{days} დღით ადრე} other{{days} დღით ადრე}}",
   "reminderCustomDaysTitle": "შეიყვანეთ მორგებული დღეები",
   "reminderCascadeTitle": "კასკადური შეხსენებები",
   "reminderCascadeSubtitle": "მიიღეთ რამდენიმე შეტყობინება ჩანაწერის ვადის გასვლამდე",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "დაამატეთ თქვენი პირველი ჩანაწერი",
   "smartInsightNoRecordsBody": "დაიწყეთ თქვენი ჩანაწერების თვალყურის დევნება და Vaultara აქ აჩვენებს ჭკვიანურ ანალიტიკას.",
   "smartInsightExpiresTodaySingleBody": "{name}-ს ვადა დღეს იწურება. თუ ის უკვე განაახლეთ, შეცვალეთ თარიღი აქ.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} იწურება დღეს.} =1{{names} და კიდევ 1 ჩანაწერი იწურება დღეს.} other{{names} და კიდევ {extra} ჩანაწერი იწურება დღეს.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} იწურება დღეს.} =1{{names} და კიდევ {extra} ჩანაწერი იწურება დღეს.} other{{names} და კიდევ {extra} ჩანაწერი იწურება დღეს.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name}-ს ვადა ხვალ იწურება და შეხსენება არ აქვს. დააყენეთ შეხსენება, რომ არ გამოგრჩეთ.} other{{name}-ს ვადა იწურება {date}-ში და შეხსენება არ აქვს. დააყენეთ შეხსენება, რომ არ გამოგრჩეთ.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} იწურება {dateA}-ში, ხოლო {b} — {dateB}-ში, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც ორი ჩანაწერი ასე ახლოსაა ერთმანეთთან.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} და {c} ყველას ვადა იწურება {lastDate}-მდე, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც რამდენიმე ჩანაწერი ასე ახლოსაა ერთმანეთთან.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} და კიდევ 1 ჩანაწერი იწურება {lastDate}-მდე, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც რამდენიმე ჩანაწერი ასე ახლოსაა ერთმანეთთან.} other{{a}, {b} და კიდევ {extra} ჩანაწერი იწურება {lastDate}-მდე, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც რამდენიმე ჩანაწერი ასე ახლოსაა ერთმანეთთან.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} და კიდევ {extra} ჩანაწერი იწურება {lastDate}-მდე, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც რამდენიმე ჩანაწერი ასე ახლოსაა ერთმანეთთან.} other{{a}, {b} და კიდევ {extra} ჩანაწერი იწურება {lastDate}-მდე, დაახლოებით ერთსა და იმავე დროს. ადვილია ერთ-ერთის გამოტოვება, როდესაც რამდენიმე ჩანაწერი ასე ახლოსაა ერთმანეთთან.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{მომდევნო დღეს არაფერი იწურება. თქვენი შემდეგი ვადაა {date}.} other{მომდევნო {days} დღის განმავლობაში არაფერი იწურება. თქვენი შემდეგი ვადაა {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{თქვენი 1 ჩანაწერი კატეგორიაში {category} იწურება {date}-ში. მისი გამოტოვება ადვილია.} other{თქვენი {count} ჩანაწერი კატეგორიაში {category} იწურება {date}-მდე. ადვილია ერთ-ერთის გამოტოვება, როდესაც ისინი ასეა დაჯგუფებული.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 მომავალი ვადა დაფარულია შეხსენებით. სხვა არაფერი საჭიროებს თქვენს ყურადღებას.} other{{count} მომავალი ვადა დაფარულია შეხსენებებით. სხვა არაფერი საჭიროებს თქვენს ყურადღებას.}}",
+  "smartInsightClusterBody": "{count, plural, =1{თქვენი {count} ჩანაწერი კატეგორიაში {category} იწურება {date}-ში. მისი გამოტოვება ადვილია.} other{თქვენი {count} ჩანაწერი კატეგორიაში {category} იწურება {date}-მდე. ადვილია ერთ-ერთის გამოტოვება, როდესაც ისინი ასეა დაჯგუფებული.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} მომავალი ვადა დაფარულია შეხსენებით. სხვა არაფერი საჭიროებს თქვენს ყურადღებას.} other{{count} მომავალი ვადა დაფარულია შეხსენებებით. სხვა არაფერი საჭიროებს თქვენს ყურადღებას.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "ყველაფერი განახლებულია. ამჟამად არაფერი საჭიროებს თქვენს ყურადღებას.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ამჟამად გადაუდებელი არაფერია, მაგრამ 1 მომავალ ჩანაწერს ჯერ არ აქვს შეხსენება.} other{ამჟამად გადაუდებელი არაფერია, მაგრამ {count} მომავალ ჩანაწერს ჯერ არ აქვს შეხსენება.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ამჟამად გადაუდებელი არაფერია, მაგრამ {count} მომავალ ჩანაწერს ჯერ არ აქვს შეხსენება.} other{ამჟამად გადაუდებელი არაფერია, მაგრამ {count} მომავალ ჩანაწერს ჯერ არ აქვს შეხსენება.}}",
   "smartInsightCloseExpiriesHeading": "ვადა დაახლოებით ერთსა და იმავე დროს იწურება",
   "plansHeadline": "მიიღეთ Vaultara სრულად",
   "plansSubhead": "ულიმიტო ჩანაწერები, თქვენი საკუთარი ჯგუფები და ზუსტად თქვენს სურვილზე მორგებული შეხსენებები.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "ეს ანგარიში არ არის დადასტურებული. ახლა გასვლა წაშლის მას და თქვენ შეძლებთ ხელახლა დარეგისტრირდეთ ნებისმიერი ელფოსტის მისამართით.",
   "verifyEmailDiscardAction": "გაუქმება",
   "verifyEmailKeepWaiting": "ლოდინის გაგრძელება",
-  "expiringBadge": "{count, plural, =1{1 მალე იწურება} other{{count} მალე იწურება}}",
+  "expiringBadge": "{count, plural, =1{{count} მალე იწურება} other{{count} მალე იწურება}}",
   "noRecordsToday": "დღეს არაფერს ეწურება ვადა",
   "noRecordsTomorrow": "ხვალ არაფერს ეწურება ვადა",
-  "cascadeStepTitle": "{days, plural, =0{{recordName}-ს ვადა დღეს იწურება} =1{{recordName}-ს ვადა ხვალ იწურება} other{{recordName}-ს ვადა {days} დღეში იწურება}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, თქვენს {recordName}-ს ვადა დღეს იწურება. უკვე განაახლეთ? შეცვალეთ ვადის გასვლის თარიღი.} =1{{firstName}, თქვენს {recordName}-ს ვადა ხვალ იწურება. განაახლეთ ახლავე, რათა ვადა არ გაუვიდეს.} other{{firstName}, თქვენს {recordName}-ს ვადა {date}-ს იწურება. ადრეული განახლება უზრუნველყოფს თქვენს დაცულობას.}}",
   "cascadeFinalStepTitle": "ბოლო შეხსენება: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, თქვენს {recordName}-ს ვადა {days, plural, =1{ხვალ} other{{days} დღეში, {date}-ს}} იწურება. ეს თქვენი ბოლო შეხსენებაა, განაახლეთ ის ან შეცვალეთ თარიღი.",
   "notificationsTitle": "შეტყობინებები",
   "notificationsProfileEnabledSubtitle": "შეხსენებები მოდის {time}-ზე.",
   "notificationsProfileDisabledSubtitle": "შეტყობინებები გამორთულია.",
@@ -1367,7 +1356,7 @@
   "photoLockTurnOn": "დაშიფრული ფოტოების ჩართვა",
   "photoLockStatusOn": "დაშიფრული ფოტოები ჩართულია",
   "photoLockStatusOnBody": "ახალი ფოტოები ამ ტელეფონზე იშიფრება ატვირთვამდე.",
-  "photoLockPendingTitle": "{count, plural, one{1 ფოტო ჯერ არ არის დაშიფრული} other{{count} ფოტო ჯერ არ არის დაშიფრული}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} ფოტო ჯერ არ არის დაშიფრული} other{{count} ფოტო ჯერ არ არის დაშიფრული}}",
   "photoLockPendingBody": "ფოტოები, რომლებიც ჩართვამდე დაამატეთ, ჯერ კიდევ ჩვეულებრივად ინახება.",
   "photoLockEncryptExisting": "ჩემი არსებული ფოტოების დაშიფვრა",
   "photoLockKeepOpen": "დატოვეთ Vaultara ღია, სანამ ეს დასრულდება.",
@@ -1404,7 +1393,7 @@
   "photoLockSetupFailed": "დაშიფრული ფოტოების ჩართვა ვერ მოვახერხეთ. შეამოწმეთ კავშირი და სცადეთ ხელახლა.",
   "photoLockAlreadyOn": "დაშიფრული ფოტოები თქვენს ანგარიშზე უკვე ჩართულია. შეიყვანეთ აღდგენის გასაღები, რომ ამ ტელეფონზე გამოიყენოთ.",
   "photoLockEncryptExistingTitle": "დავშიფროთ თქვენი არსებული ფოტოები?",
-  "photoLockEncryptExistingBody": "{count, plural, one{გაქვთ 1 ფოტო, რომელიც ჯერ არ არის დაშიფრული. ახლა შეგვიძლია დავშიფროთ.} other{გაქვთ {count} ფოტო, რომელიც ჯერ არ არის დაშიფრული. ახლა შეგვიძლია დავშიფროთ.}} დატოვეთ Vaultara ღია, სანამ ეს დასრულდება.",
+  "photoLockEncryptExistingBody": "{count, plural, one{გაქვთ {count} ფოტო, რომელიც ჯერ არ არის დაშიფრული. ახლა შეგვიძლია დავშიფროთ.} other{გაქვთ {count} ფოტო, რომელიც ჯერ არ არის დაშიფრული. ახლა შეგვიძლია დავშიფროთ.}} დატოვეთ Vaultara ღია, სანამ ეს დასრულდება.",
   "photoLockEncryptNow": "ახლა დაშიფვრა",
   "photoLockEntryBody": "შეიყვანეთ აღდგენის გასაღები, რომელიც დაშიფრული ფოტოების ჩართვისას შეინახეთ. ტირეები და ინტერვალები სავალდებულო არ არის.",
   "photoLockEntryLabel": "აღდგენის გასაღები",
@@ -1413,8 +1402,8 @@
   "photoLockUnlocked": "თქვენი ფოტოები ამ ტელეფონზე გახსნილია.",
   "photoLockInvalidFormat": "ეს არ ჰგავს აღდგენის გასაღებს. შეამოწმეთ თითოეული სიმბოლო და სცადეთ ხელახლა.",
   "photoLockWrongKey": "ეს აღდგენის გასაღები არ ემთხვევა. შეამოწმეთ და სცადეთ ხელახლა.",
-  "photoLockWaitSeconds": "{seconds, plural, one{ძალიან ბევრი მცდელობა. დაელოდეთ 1 წამს და სცადეთ ხელახლა.} other{ძალიან ბევრი მცდელობა. დაელოდეთ {seconds} წამს და სცადეთ ხელახლა.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{ძალიან ბევრი მცდელობა. დაელოდეთ 1 წუთს და სცადეთ ხელახლა.} other{ძალიან ბევრი მცდელობა. დაელოდეთ {minutes} წუთს და სცადეთ ხელახლა.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{ძალიან ბევრი მცდელობა. დაელოდეთ {seconds} წამს და სცადეთ ხელახლა.} other{ძალიან ბევრი მცდელობა. დაელოდეთ {seconds} წამს და სცადეთ ხელახლა.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{ძალიან ბევრი მცდელობა. დაელოდეთ {minutes} წუთს და სცადეთ ხელახლა.} other{ძალიან ბევრი მცდელობა. დაელოდეთ {minutes} წუთს და სცადეთ ხელახლა.}}",
   "photoLockOffline": "Vaultara-სთან დაკავშირება ვერ მოვახერხეთ. შეამოწმეთ კავშირი და სცადეთ ხელახლა.",
   "photoLockNotSetUp": "დაშიფრული ფოტოები თქვენს ანგარიშზე ჩართული არ არის.",
   "photoLockUnlockFailed": "რაღაც არასწორად წავიდა. სცადეთ ხელახლა.",
@@ -1670,13 +1659,13 @@
   "dailyDigestSwitchSubtitle": "მიიღეთ ერთი შეტყობინება შეხსენების დროს, სადაც ჩამოთვლილია იმ დღის ყველა საქმე.",
   "dailyDigestTurnedOn": "თქვენი შეხსენებები ახლა ერთ ყოველდღიურ შეჯამებად მოდის.",
   "dailyDigestTurnedOff": "თითოეული ჩანაწერის ცალკე შეხსენებები ისევ ჩართულია.",
-  "dailyDigestTitle": "{count, plural, one{1 ჩანაწერს თქვენი ყურადღება სჭირდება} other{{count} ჩანაწერს თქვენი ყურადღება სჭირდება}}",
+  "dailyDigestTitle": "{count, plural, one{{count} ჩანაწერს თქვენი ყურადღება სჭირდება} other{{count} ჩანაწერს თქვენი ყურადღება სჭირდება}}",
   "dailyDigestBody": "უახლოეს დროში: {names}.",
   "dailyDigestBodyMore": "უახლოეს დროში: {names} და კიდევ {count}.",
   "dailyDigestLockedRecord": "ჩაკეტილი ჩანაწერი",
   "renewReasonRepeat": "{months, plural, one{თქვენი გამეორების პარამეტრის მიხედვით, ყოველ თვე} other{თქვენი გამეორების პარამეტრის მიხედვით, ყოველ {months} თვეში}}",
   "renewReasonHistory": "{count, plural, one{თქვენი ბოლო განახლების მიხედვით} other{თქვენი ბოლო {count} განახლების მიხედვით}}",
-  "renewReasonTypical": "{years, plural, one{ჩვეულებრივ მოქმედებს 1 წელი} other{ჩვეულებრივ მოქმედებს {years} წელი}}",
+  "renewReasonTypical": "{years, plural, one{ჩვეულებრივ მოქმედებს {years} წელი} other{ჩვეულებრივ მოქმედებს {years} წელი}}",
   "renewChangeHint": "თარიღის შესაცვლელად შეეხეთ მას.",
   "renewPickDate": "აირჩიეთ ვადის ახალი თარიღი",
   "renewPickDateHint": "აირჩიეთ თარიღი, რომელიც თქვენს ახალ დოკუმენტზეა მითითებული.",
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "„{recordName}“-ს ვადა დღეს იწურება",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "„{recordName}“-ს ვადა ხვალ იწურება",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{„{recordName}“-ს ვადა {days} დღეში იწურება} other{„{recordName}“-ს ვადა {days} დღეში იწურება}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "„{recordName}“-ს ვადა ამოიწურა",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "ჩაკეტილ ჩანაწერს თქვენი ყურადღება სჭირდება",
+  "remLockedBody": "მისი თარიღია {date}. განბლოკეთ Vaultara, რომ ნახოთ, რომელი ჩანაწერია.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "თქვენი ჩანაწერის „{recordName}“ ვადა დღეს იწურება.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "თქვენი ჩანაწერის „{recordName}“ ვადა ხვალ იწურება.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "თქვენი ჩანაწერის „{recordName}“ ვადა {date}-ს იწურება.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, თქვენი ჩანაწერის „{recordName}“ ვადა დღეს იწურება.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, თქვენი ჩანაწერის „{recordName}“ ვადა ხვალ იწურება.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, თქვენი ჩანაწერის „{recordName}“ ვადა {date}-ს იწურება.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: ჩანაწერის „{recordName}“ ვადა დღეს იწურება.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: ჩანაწერის „{recordName}“ ვადა ხვალ იწურება.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: ჩანაწერის „{recordName}“ ვადა {date}-ს იწურება.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "თქვენი ჩანაწერის „{recordName}“ ვადა {date}-ს ამოიწურა.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: ჩანაწერის „{recordName}“ ვადა {date}-ს ამოიწურა.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "უკვე განაახლეთ? განაახლეთ თარიღი.",
+  "remTipTomorrow": "განაახლეთ ახლავე, რომ ვადა არ ამოიწუროს.",
+  "remTipEarly": "ადრეული განახლება დაცულს გტოვებთ.",
+  "remTipLast": "ეს არის ბოლო შეხსენება ვადის ამოწურვამდე.",
+  "remTipExpired": "განაახლეთ, ან შეცვალეთ თარიღი, თუ უკვე განაახლეთ.",
+  "remStartBody": "დროა დაიწყოთ „{recordName}“-ს განახლება. ვადა {date}-ს იწურება, ასე რომ, თუ ახლა დაიწყებთ, საკმარისი დრო გექნებათ.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "დროა დაიწყოთ „{recordName}“-ს ({person}) განახლება. ვადა {date}-ს იწურება, ასე რომ, ახლა დაწყებით საკმარისი დრო იქნება.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "ვადის შეხსენებები",
+  "notifChannelDescription": "შეხსენებები თქვენი ჩანაწერების ვადის ამოწურვამდე",
+  "notifTestTitle": "სატესტო შეტყობინება",
+  "notifTestBody": "Vaultara-ს შეხსენებები ასე მოდის.",
+  "notifTestAction": "სატესტო შეტყობინების გაგზავნა",
+  "notifTestSubtitle": "შეამოწმეთ, აღწევს თუ არა შეხსენებები ამ ტელეფონამდე",
+  "notifTestSent": "ტესტი გაიგზავნა. რამდენიმე წამში უნდა მოვიდეს.",
+  "notifAfterExpiryTitle": "შემახსენე ჩანაწერის ვადის ამოწურვის შემდეგ",
+  "notifAfterExpirySubtitle": "3 და 14 დღის შემდეგ, თუ არ განახლებულა",
+  "notifWeeklyTitle": "ორშაბათის შეჯამება",
+  "notifWeeklySubtitle": "შეტყობინება ორშაბათს დილით, როცა იმ კვირაში რაიმეს ვადა იწურება",
+  "notifPushSection": "ოჯახი და განახლებები",
+  "notifHouseholdTitle": "გაზიარებული ჩანაწერები",
+  "notifHouseholdSubtitle": "როცა გაზიარებული ჩანაწერის ვადა იწურება და არავის განუახლებია",
+  "notifUpdatesTitle": "თქვენ მიერ მოთხოვნილი განახლებები",
+  "notifUpdatesSubtitle": "როცა ვინმე ჩანაწერის ახალ მონაცემებს გამოგზავნის",
+  "notifSecurityNote": "გაფრთხილებები თქვენს ანგარიშზე ახალი შესვლების შესახებ ყოველთვის იგზავნება.",
+  "notifIosHelpTitle": "შეხსენებები არ მოდის?",
+  "notifIosHelpSubtitle": "შეამოწმეთ iPhone-ის პარამეტრები",
+  "notifIosHelpStep1": "გახსენით პარამეტრები, შემდეგ შეტყობინებები, შემდეგ Vaultara, და ჩართეთ შეტყობინებების დაშვება.",
+  "notifIosHelpStep2": "ჩართეთ დაბლოკილი ეკრანი, შეტყობინებების ცენტრი და ბანერები.",
+  "notifIosHelpStep3": "თუ ფოკუსს იყენებთ, დაამატეთ Vaultara დაშვებულ აპებში.",
+  "notifIosHelpStep4": "გახსენით Vaultara ყოველ რამდენიმე კვირაში. iPhone წინასწარ მხოლოდ შეზღუდული რაოდენობის შეხსენებას ინახავს და აპის გახსნა შემდეგებს გეგმავს.",
+  "homeNextUpEmpty": "მალე არაფრის ვადა არ იწურება. ყველაფერი რიგზეა.",
+  "homeDueSoonChip": "{count, plural, one{{count} იწურება 30 დღეში} other{{count} იწურება 30 დღეში}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "მიმაგრებული კატეგორიები"
 }

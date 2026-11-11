@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara membantu Anda melacak tanggal kedaluwarsa penting agar tidak ada yang terlewat.",
   "homeWelcomeSubtitleFirst": "Senang melihat Anda di sini. Vaultara membantu Anda tetap terorganisir dengan menyimpan tanggal dan catatan penting di satu tempat yang aman.",
   "homeWelcomeSubtitleBack": "Senang bertemu kembali. Vaultara siap kapan saja Anda ingin meninjau tanggal dan catatan penting Anda.",
-  "summaryAllCaption": "Dilacak di Vaultara",
-  "summaryExpiredTitle": "Kedaluwarsa",
-  "summaryExpiredCaption": "Tanggal kedaluwarsa telah lewat",
   "editorNotes": "Catatan",
   "editorReminderNone": "Tanpa pengingat",
   "editorReminderOnExpiry": "Pada tanggal kedaluwarsa",
@@ -192,7 +189,6 @@
   "addRecord": "Tambah catatan",
   "noRecordsYet": "Belum ada catatan.",
   "deleteRecordTitle": "Hapus catatan",
-  "summaryAllRecordsTitle": "Semua catatan",
   "noGroupFound": "Belum ada grup",
   "groupLabel": "{count, plural, one{{count} grup} other{{count} grup}}",
   "recordsLabel": "{count, plural, one{{count} catatan} other{{count} catatan}}",
@@ -450,10 +446,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Segera Berakhir",
-  "summaryUpcomingCaption": "Dalam 30 hari",
-  "summaryUrgentTitle": "Mendesak",
-  "summaryUrgentCaption": "Dalam 7 hari",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Tutorial",
   "profileTutorialsSubtitle": "Jelajahi Tutorial Aplikasi",
@@ -485,7 +477,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Tanpa pengingat",
   "reminderOnExpiry": "Pada tanggal kedaluwarsa",
-  "reminderDaysBefore": "{days, plural, one{1 hari sebelumnya} other{{days} hari sebelumnya}}",
+  "reminderDaysBefore": "{days, plural, one{{days} hari sebelumnya} other{{days} hari sebelumnya}}",
   "reminderCustomDaysTitle": "Masukkan hari kustom",
   "reminderCascadeTitle": "Pengingat berjenjang",
   "reminderCascadeSubtitle": "Terima beberapa notifikasi sebelum catatan kedaluwarsa",
@@ -516,16 +508,16 @@
   "smartInsightNoRecordsHeading": "Tambahkan catatan pertama Anda",
   "smartInsightNoRecordsBody": "Mulai lacak catatan Anda, dan Vaultara akan menampilkan info pintar di sini.",
   "smartInsightExpiresTodaySingleBody": "{name} kedaluwarsa hari ini. Jika Anda sudah memperpanjangnya, perbarui tanggal di sini.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} kedaluwarsa hari ini.} =1{{names} dan 1 lagi kedaluwarsa hari ini.} other{{names} dan {extra} lagi kedaluwarsa hari ini.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} kedaluwarsa hari ini.} =1{{names} dan {extra} lagi kedaluwarsa hari ini.} other{{names} dan {extra} lagi kedaluwarsa hari ini.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} kedaluwarsa besok dan tidak ada pengingat. Atur satu agar Anda tidak melewatinya.} other{{name} kedaluwarsa pada {date} dan tidak ada pengingat. Atur satu agar Anda tidak melewatinya.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} kedaluwarsa pada {dateA} dan {b} pada {dateB}, di waktu yang hampir bersamaan. Sangat mudah untuk melupakan salah satunya ketika dua catatan sedekat ini.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b}, dan {c} semuanya kedaluwarsa sebelum {lastDate}, di waktu yang hampir bersamaan. Sangat mudah untuk melupakan salah satunya ketika beberapa catatan sedekat ini.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, dan 1 catatan lagi kedaluwarsa sebelum {lastDate}, di waktu yang hampir bersamaan. Sangat mudah untuk melupakan salah satunya ketika beberapa catatan sedekat ini.} other{{a}, {b}, dan {extra} catatan lagi kedaluwarsa sebelum {lastDate}, di waktu yang hampir bersamaan. Sangat mudah untuk melupakan salah satunya ketika beberapa catatan sedekat ini.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, dan {extra} catatan lagi kedaluwarsa sebelum {lastDate}, di waktu yang hampir bersamaan. Sangat mudah untuk melupakan salah satunya ketika beberapa catatan sedekat ini.} other{{a}, {b}, dan {extra} catatan lagi kedaluwarsa sebelum {lastDate}, di waktu yang hampir bersamaan. Sangat mudah untuk melupakan salah satunya ketika beberapa catatan sedekat ini.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Tidak ada yang kedaluwarsa besok. Masa kedaluwarsa berikutnya adalah {date}.} other{Tidak ada yang kedaluwarsa dalam {days} hari ke depan. Masa kedaluwarsa berikutnya adalah {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 dari catatan Anda di kategori {category} kedaluwarsa pada {date}. Ini sangat mudah terabaikan.} other{{count} dari catatan Anda di kategori {category} kedaluwarsa sebelum {date}. Sangat mudah untuk melupakan salah satunya ketika dikelompokkan seperti ini.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 masa kedaluwarsa mendatang sudah dilindungi pengingat. Tidak ada hal lain yang memerlukan perhatian Anda.} other{{count} masa kedaluwarsa mendatang sudah dilindungi pengingat. Tidak ada hal lain yang memerlukan perhatian Anda.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} dari catatan Anda di kategori {category} kedaluwarsa pada {date}. Ini sangat mudah terabaikan.} other{{count} dari catatan Anda di kategori {category} kedaluwarsa sebelum {date}. Sangat mudah untuk melupakan salah satunya ketika dikelompokkan seperti ini.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} masa kedaluwarsa mendatang sudah dilindungi pengingat. Tidak ada hal lain yang memerlukan perhatian Anda.} other{{count} masa kedaluwarsa mendatang sudah dilindungi pengingat. Tidak ada hal lain yang memerlukan perhatian Anda.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Semua sudah diperbarui. Tidak ada yang memerlukan perhatian Anda saat ini.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Saat ini tidak ada yang mendesak, tetapi 1 catatan mendatang belum memiliki pengingat.} other{Saat ini tidak ada yang mendesak, tetapi {count} catatan mendatang belum memiliki pengingat.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Saat ini tidak ada yang mendesak, tetapi {count} catatan mendatang belum memiliki pengingat.} other{Saat ini tidak ada yang mendesak, tetapi {count} catatan mendatang belum memiliki pengingat.}}",
   "smartInsightCloseExpiriesHeading": "Kedaluwarsa di waktu yang hampir bersamaan",
   "plansHeadline": "Dapatkan Vaultara sepenuhnya",
   "plansSubhead": "Catatan tanpa batas, grup Anda sendiri, dan pengingat yang disesuaikan persis seperti yang Anda inginkan.",
@@ -612,7 +604,7 @@
   "reminderCascadeRemoveStep": "Hapus",
   "reminderCascadeDuplicate": "Pengingat lain sudah menggunakan hari ini",
   "reminderCascadeOutOfRange": "Masukkan antara {min} dan {max} hari",
-  "reminderCascadeStepLabel": "Pengingat {position}: {days, plural, =1{1 hari} other{{days} hari}} sebelum",
+  "reminderCascadeStepLabel": "Pengingat {position}: {days, plural, =1{{days} hari} other{{days} hari}} sebelum",
   "expiryTimelineNotReady": "Linimasa Anda akan muncul setelah Anda memiliki catatan yang kedaluwarsa dalam beberapa bulan yang berbeda.",
   "verifyEmailResendIn": "Kirim ulang dalam {seconds} detik",
   "verifyEmailSpamHint": "Tidak ada? Periksa folder spam atau sampah Anda.",
@@ -621,13 +613,10 @@
   "verifyEmailDiscardBody": "Akun ini belum diverifikasi. Keluar sekarang akan menghapusnya, dan Anda dapat mendaftar kembali dengan alamat email apa pun.",
   "verifyEmailDiscardAction": "Buang",
   "verifyEmailKeepWaiting": "Tetap menunggu",
-  "expiringBadge": "{count, plural, =1{1 segera kedaluwarsa} other{{count} segera kedaluwarsa}}",
+  "expiringBadge": "{count, plural, =1{{count} segera kedaluwarsa} other{{count} segera kedaluwarsa}}",
   "noRecordsToday": "Tidak ada yang kedaluwarsa hari ini",
   "noRecordsTomorrow": "Tidak ada yang kedaluwarsa besok",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} kedaluwarsa hari ini} =1{{recordName} kedaluwarsa besok} other{{recordName} kedaluwarsa dalam {days} hari}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} Anda kedaluwarsa hari ini. Sudah memperpanjangnya? Perbarui tanggal kedaluwarsanya.} =1{{firstName}, {recordName} Anda kedaluwarsa besok. Perpanjang sekarang agar tidak hangus.} other{{firstName}, {recordName} Anda kedaluwarsa pada {date}. Memperpanjang lebih awal membuat Anda tetap terlindungi.}}",
   "cascadeFinalStepTitle": "Pengingat terakhir: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} Anda kedaluwarsa {days, plural, =1{besok} other{dalam {days} hari, pada {date}}}. Ini pengingat terakhir Anda, perpanjang atau perbarui tanggalnya.",
   "notificationsTitle": "Notifikasi",
   "notificationsProfileEnabledSubtitle": "Pengingat tiba pukul {time}.",
   "notificationsProfileDisabledSubtitle": "Notifikasi dimatikan.",
@@ -686,7 +675,7 @@
   "costCardTitle": "Biaya perpanjangan",
   "costCardSubtitle": "Biaya perpanjangan Anda, bulan demi bulan",
   "costCardBusiest": "Bulan tersibuk: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{1 catatan mendatang belum memiliki biaya.} other{{count} catatan mendatang belum memiliki biaya.}}",
+  "costCardMissing": "{count, plural, =1{{count} catatan mendatang belum memiliki biaya.} other{{count} catatan mendatang belum memiliki biaya.}}",
   "costCardEmpty": "Tambahkan biaya ke catatan Anda untuk melihat berapa biaya perpanjangannya.",
   "costCardLockedHint": "Lihat biaya perpanjangan Anda selama setahun ke depan dengan Premium.",
   "costCardSeePremium": "Lihat Premium",
@@ -694,7 +683,7 @@
   "familyTitle": "Keluarga",
   "familyIntro": "Pantau catatan orang-orang yang Anda urus. Pengingat mereka menampilkan nama sehingga Anda tahu catatan itu milik siapa.",
   "familyMe": "Saya",
-  "familyRecordCount": "{count, plural, =0{Tidak ada catatan} =1{1 catatan} other{{count} catatan}}",
+  "familyRecordCount": "{count, plural, =0{Tidak ada catatan} =1{{count} catatan} other{{count} catatan}}",
   "familyRename": "Ganti nama",
   "familyRemove": "Keluarkan",
   "familyRemoveTitle": "Keluarkan {name}?",
@@ -707,10 +696,10 @@
   "familyNameLabel": "Nama",
   "familyNameHint": "Misalnya, Thabo",
   "familyNameRequired": "Masukkan nama",
-  "familyLimitNote": "{count, plural, =1{Hingga 1 orang} other{Hingga {count} orang}}",
+  "familyLimitNote": "{count, plural, =1{Hingga {count} orang} other{Hingga {count} orang}}",
   "familyUpsellTitle": "Pantau dokumen keluarga Anda",
   "familyBenefitPremium": "Semua fitur Premium",
-  "familyBenefitPeople": "{count, plural, =1{Tambahkan 1 orang} other{Tambahkan hingga {count} orang}}",
+  "familyBenefitPeople": "{count, plural, =1{Tambahkan {count} orang} other{Tambahkan hingga {count} orang}}",
   "familyBenefitOwnRecords": "Setiap orang memiliki catatan dan pengingat sendiri",
   "familyBenefitOneSubscription": "Satu langganan untuk seluruh rumah tangga",
   "familySeePlan": "Lihat paket Keluarga",
@@ -896,14 +885,14 @@
   "calendarExportError": "Kami tidak dapat membuat file kalender. Coba lagi.",
   "pdfExportTitle": "Catatan Vaultara",
   "pdfExportGenerated": "Dibuat pada {date}",
-  "pdfExportCount": "{count, plural, =1{1 catatan} other{{count} catatan}}",
+  "pdfExportCount": "{count, plural, =1{{count} catatan} other{{count} catatan}}",
   "pdfExportCost": "Biaya perpanjangan: {amount}",
   "pdfExportBuilding": "Menyiapkan PDF Anda...",
   "pdfExportError": "Kami tidak dapat membuat PDF. Coba lagi.",
   "travelTitle": "Cek perjalanan",
   "travelDeparture": "Berangkat",
   "travelReturn": "Kembali",
-  "travelTripLength": "{days, plural, =1{Perjalanan 1 hari} other{Perjalanan {days} hari}}",
+  "travelTripLength": "{days, plural, =1{Perjalanan {days} hari} other{Perjalanan {days} hari}}",
   "travelDriving": "Saya akan menyetir",
   "travelNeedsVisa": "Saya perlu visa",
   "travelWho": "Siapa yang bepergian?",
@@ -924,9 +913,9 @@
   "travelNoLicence": "Belum ada SIM",
   "travelOtherExpires": "Kedaluwarsa saat Anda pergi",
   "travelDetailValidUntil": "{name} berlaku hingga {date}.",
-  "travelDetailPassportBuffer": "{name} kedaluwarsa {date}. Banyak negara meminta sisa masa berlaku {months, plural, =1{1 bulan} other{{months} bulan}} setelah Anda kembali.",
+  "travelDetailPassportBuffer": "{name} kedaluwarsa {date}. Banyak negara meminta sisa masa berlaku {months, plural, =1{{months} bulan} other{{months} bulan}} setelah Anda kembali.",
   "travelDetailExpiresBeforeLeaving": "{name} kedaluwarsa {date}, sebelum Anda berangkat.",
-  "travelDetailExpiresDuringTrip": "{name} kedaluwarsa {date}, {days, plural, =0{pada hari keberangkatan} =1{1 hari setelah berangkat} other{{days} hari setelah berangkat}}.",
+  "travelDetailExpiresDuringTrip": "{name} kedaluwarsa {date}, {days, plural, =0{pada hari keberangkatan} =1{{days} hari setelah berangkat} other{{days} hari setelah berangkat}}.",
   "travelDetailNoPassport": "Tambahkan paspor Anda agar Vaultara bisa memeriksanya.",
   "travelDetailNoVisa": "Tambahkan visa Anda agar Vaultara bisa memeriksanya.",
   "travelDetailNoInsurance": "Tambahkan asuransi perjalanan Anda untuk memastikan seluruh perjalanan tercakup.",
@@ -978,7 +967,7 @@
   "travelInProgress": "Perjalanan sedang berlangsung",
   "travelTripEnded": "Perjalanan selesai",
   "travelAllGood": "Semua dokumen siap",
-  "travelIssues": "{count, plural, =1{1 hal perlu diperhatikan} other{{count} hal perlu diperhatikan}}",
+  "travelIssues": "{count, plural, =1{{count} hal perlu diperhatikan} other{{count} hal perlu diperhatikan}}",
   "travelChecklistTitle": "Daftar periksa perjalanan",
   "travelChecklistProgress": "{done} dari {total} selesai",
   "travelChecklistAdd": "Tambah",
@@ -998,7 +987,7 @@
   "travelTripTo": "Perjalanan ke {name}",
   "travelReminderTitle": "{days, plural, other{Perjalanan ke {name} {days} hari lagi}}",
   "travelReminderTitleTomorrow": "Perjalanan ke {name} besok",
-  "travelReminderBodyIssues": "{count, plural, =1{1 dokumen perlu diperhatikan sebelum Anda berangkat.} other{{count} dokumen perlu diperhatikan sebelum Anda berangkat.}}",
+  "travelReminderBodyIssues": "{count, plural, =1{{count} dokumen perlu diperhatikan sebelum Anda berangkat.} other{{count} dokumen perlu diperhatikan sebelum Anda berangkat.}}",
   "travelReminderBodyOk": "Dokumen Anda sudah siap. Buka perjalanan Anda untuk memeriksa daftarnya.",
   "travelTripLimit": "Anda dapat menyimpan hingga {count} perjalanan. Hapus perjalanan lama untuk menambah yang baru.",
   "recordLockTitle": "Kunci catatan ini",
@@ -1026,7 +1015,7 @@
   "vaultChooseFromGallery": "Pilih dari galeri",
   "vaultRemove": "Hapus",
   "vaultLimitTitle": "Batas foto tercapai",
-  "vaultLimitFreeBody": "Paket Gratis memungkinkan Anda menambahkan {limit, plural, =1{1 foto} other{{limit} foto}} ke setiap catatan. Dengan Premium, Anda bisa menambahkan hingga {premiumLimit}.",
+  "vaultLimitFreeBody": "Paket Gratis memungkinkan Anda menambahkan {limit, plural, =1{{limit} foto} other{{limit} foto}} ke setiap catatan. Dengan Premium, Anda bisa menambahkan hingga {premiumLimit}.",
   "vaultLimitPremiumBody": "Anda bisa menambahkan hingga {limit} foto ke setiap catatan. Hapus satu untuk menambahkan yang lain.",
   "vaultSeePremium": "Lihat Premium",
   "vaultPdfShort": "PDF",
@@ -1034,7 +1023,7 @@
   "vaultOpenFile": "Buka",
   "vaultClose": "Tutup",
   "vaultPageIndicator": "{current} dari {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 foto} other{{count} foto}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} foto} other{{count} foto}}",
   "travelReadinessTitle": "Kesiapan perjalanan",
   "travelReadinessBody": "Berdasarkan paspor dan SIM yang tersimpan di Vaultara. Sebagian besar negara mensyaratkan paspor masih berlaku minimal 6 bulan saat Anda kembali.",
   "travelReadyUntil": "Paspor berlaku untuk perjalanan hingga {date}",
@@ -2866,5 +2855,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} kedaluwarsa hari ini",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} kedaluwarsa besok",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} kedaluwarsa dalam {days} hari}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} telah kedaluwarsa",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Catatan terkunci perlu perhatian Anda",
+  "remLockedBody": "Tanggalnya {date}. Buka kunci Vaultara untuk melihat catatan mana itu.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Catatan Anda \"{recordName}\" kedaluwarsa hari ini.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Catatan Anda \"{recordName}\" kedaluwarsa besok.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Catatan Anda \"{recordName}\" kedaluwarsa pada {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, catatan Anda \"{recordName}\" kedaluwarsa hari ini.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, catatan Anda \"{recordName}\" kedaluwarsa besok.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, catatan Anda \"{recordName}\" kedaluwarsa pada {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Catatan \"{recordName}\" milik {person} kedaluwarsa hari ini.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Catatan \"{recordName}\" milik {person} kedaluwarsa besok.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Catatan \"{recordName}\" milik {person} kedaluwarsa pada {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Catatan Anda \"{recordName}\" kedaluwarsa pada {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Catatan \"{recordName}\" milik {person} kedaluwarsa pada {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Sudah diperpanjang? Perbarui tanggalnya.",
+  "remTipTomorrow": "Perpanjang sekarang agar tidak kedaluwarsa.",
+  "remTipEarly": "Memperpanjang lebih awal membuat Anda tetap terlindungi.",
+  "remTipLast": "Ini pengingat terakhir sebelum kedaluwarsa.",
+  "remTipExpired": "Perpanjang, atau perbarui tanggalnya jika sudah.",
+  "remStartBody": "Saatnya mulai memperpanjang \"{recordName}\". Kedaluwarsa pada {date}, jadi jika mulai sekarang Anda punya banyak waktu.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Saatnya mulai memperpanjang \"{recordName}\" milik {person}. Kedaluwarsa pada {date}, jadi mulai sekarang memberi banyak waktu.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Pengingat kedaluwarsa",
+  "notifChannelDescription": "Pengingat sebelum catatan Anda kedaluwarsa",
+  "notifTestTitle": "Notifikasi uji",
+  "notifTestBody": "Pengingat dari Vaultara tampil seperti ini.",
+  "notifTestAction": "Kirim notifikasi uji",
+  "notifTestSubtitle": "Pastikan pengingat sampai ke ponsel ini",
+  "notifTestSent": "Uji terkirim. Seharusnya tiba dalam beberapa detik.",
+  "notifAfterExpiryTitle": "Ingatkan saya setelah catatan kedaluwarsa",
+  "notifAfterExpirySubtitle": "3 dan 14 hari setelahnya, jika belum diperpanjang",
+  "notifWeeklyTitle": "Ringkasan Senin",
+  "notifWeeklySubtitle": "Pesan pada Senin pagi jika ada yang kedaluwarsa minggu itu",
+  "notifPushSection": "Rumah tangga dan pembaruan",
+  "notifHouseholdTitle": "Catatan bersama",
+  "notifHouseholdSubtitle": "Saat catatan bersama hampir kedaluwarsa dan belum ada yang memperpanjangnya",
+  "notifUpdatesTitle": "Pembaruan yang Anda minta",
+  "notifUpdatesSubtitle": "Saat seseorang mengirim data baru sebuah catatan",
+  "notifSecurityNote": "Peringatan tentang login baru ke akun Anda selalu dikirim.",
+  "notifIosHelpTitle": "Tidak menerima pengingat?",
+  "notifIosHelpSubtitle": "Periksa pengaturan iPhone Anda",
+  "notifIosHelpStep1": "Buka Pengaturan, lalu Notifikasi, lalu Vaultara, dan aktifkan Izinkan Notifikasi.",
+  "notifIosHelpStep2": "Aktifkan Layar Terkunci, Pusat Notifikasi, dan Banner.",
+  "notifIosHelpStep3": "Jika Anda memakai Fokus, tambahkan Vaultara ke app yang diizinkan.",
+  "notifIosHelpStep4": "Buka Vaultara setiap beberapa minggu. iPhone hanya menyimpan sejumlah terbatas pengingat ke depan, dan membuka app akan menjadwalkan yang berikutnya.",
+  "homeNextUpEmpty": "Tidak ada yang segera kedaluwarsa. Semuanya beres.",
+  "homeDueSoonChip": "{count, plural, other{{count} jatuh tempo dalam 30 hari}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Kategori yang disematkan"
 }

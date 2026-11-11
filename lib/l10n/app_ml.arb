@@ -111,9 +111,6 @@
   "homeWelcomeSubtitleGeneric": "പ്രധാനപ്പെട്ട കാലഹരണ തീയതികൾ ട്രാക്ക് ചെയ്യാൻ Vaultara സഹായിക്കുന്നു, അതിനാൽ ഒന്നും അറിയാതെ കാലഹരണപ്പെടില്ല.",
   "homeWelcomeSubtitleFirst": "നിങ്ങളെ ഇവിടെ കാണുന്നതിൽ സന്തോഷം. പ്രധാനപ്പെട്ട തീയതികളും റെക്കോർഡുകളും സുരക്ഷിതമായ ഒരിടത്ത് സൂക്ഷിച്ച് കാര്യങ്ങൾ ചിട്ടയോടെ നിലനിർത്താൻ Vaultara സഹായിക്കുന്നു.",
   "homeWelcomeSubtitleBack": "നിങ്ങളെ വീണ്ടും കാണുന്നതിൽ സന്തോഷം. പ്രധാനപ്പെട്ട തീയതികളും റെക്കോർഡുകളും അവലോകനം ചെയ്യാൻ Vaultara എപ്പോഴും ഇവിടെയുണ്ട്.",
-  "summaryAllCaption": "Vaultara-യിൽ ട്രാക്ക് ചെയ്യുന്നവ",
-  "summaryExpiredTitle": "കാലഹരണപ്പെട്ടവ",
-  "summaryExpiredCaption": "കാലഹരണ തീയതി കഴിഞ്ഞവ",
   "editorNotes": "കുറിപ്പുകൾ",
   "editorReminderNone": "റിമൈൻഡർ വേണ്ട",
   "editorReminderOnExpiry": "കാലഹരണ തീയതിയിൽ",
@@ -129,7 +126,6 @@
   "addRecord": "റെക്കോർഡ് ചേർക്കുക",
   "noRecordsYet": "ഇതുവരെ റെക്കോർഡുകളൊന്നുമില്ല.",
   "deleteRecordTitle": "റെക്കോർഡ് ഇല്ലാതാക്കുക",
-  "summaryAllRecordsTitle": "എല്ലാ റെക്കോർഡുകളും",
   "noGroupFound": "ഇതുവരെ ഗ്രൂപ്പുകളൊന്നുമില്ല",
   "groupLabel": "{count, plural, one{{count} ഗ്രൂപ്പ്} other{{count} ഗ്രൂപ്പുകൾ}}",
   "recordsLabel": "{count, plural, one{{count} റെക്കോർഡ്} other{{count} റെക്കോർഡുകൾ}}",
@@ -249,11 +245,7 @@
   "addNotesHint": "കുറിപ്പുകൾ ചേർക്കുക (ഓപ്‌ഷണൽ)",
   "expiryTimelineTitle": "കാലഹരണ ടൈംലൈൻ",
   "expiryTimelineSubtitle": "ഒരു മാസത്തിൽ കാലഹരണപ്പെടുന്ന റെക്കോർഡുകൾ കാണാൻ ആ മാസത്തിൽ ടാപ്പ് ചെയ്യുക",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 റെക്കോർഡ്} other{{count} റെക്കോർഡുകൾ}}",
-  "summaryUpcomingTitle": "വരാനിരിക്കുന്നവ",
-  "summaryUpcomingCaption": "30 ദിവസത്തിനുള്ളിൽ",
-  "summaryUrgentTitle": "അടിയന്തരം",
-  "summaryUrgentCaption": "7 ദിവസത്തിനുള്ളിൽ",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} റെക്കോർഡ്} other{{count} റെക്കോർഡുകൾ}}",
   "profileHeaderTitle": "പ്രൊഫൈൽ",
   "profileTutorialsTitle": "ട്യൂട്ടോറിയലുകൾ",
   "profileTutorialsSubtitle": "ആപ്പ് ട്യൂട്ടോറിയലുകൾ ബ്രൗസ് ചെയ്യുക",
@@ -285,7 +277,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "റിമൈൻഡർ വേണ്ട",
   "reminderOnExpiry": "കാലഹരണ ദിവസം",
-  "reminderDaysBefore": "{days, plural, one{1 ദിവസം മുമ്പ്} other{{days} ദിവസം മുമ്പ്}}",
+  "reminderDaysBefore": "{days, plural, one{{days} ദിവസം മുമ്പ്} other{{days} ദിവസം മുമ്പ്}}",
   "reminderCustomDaysTitle": "ഇഷ്‌ടാനുസൃത ദിവസങ്ങൾ നൽകുക",
   "reminderCascadeTitle": "റിമൈൻഡർ ശ്രേണി",
   "reminderCascadeSubtitle": "ഒരു റെക്കോർഡ് കാലഹരണപ്പെടുന്നതിന് മുമ്പ് ഒന്നിലധികം അറിയിപ്പുകൾ നേടുക",
@@ -322,10 +314,10 @@
   "smartInsightCloseExpiriesBodyThree": "{a}, {b}, {c} എന്നിവയെല്ലാം {lastDate}-ന് മുമ്പ്, ഏകദേശം ഒരേ സമയത്ത് കാലഹരണപ്പെടും. നിരവധി എണ്ണം ഇത്ര അടുത്തടുത്ത് വരുമ്പോൾ ഒന്ന് മറന്നുപോകാൻ എളുപ്പമാണ്.",
   "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, മറ്റൊരെണ്ണം എന്നിവ {lastDate}-ന് മുമ്പ്, ഏകദേശം ഒരേ സമയത്ത് കാലഹരണപ്പെടും. നിരവധി എണ്ണം ഇത്ര അടുത്തടുത്ത് വരുമ്പോൾ ഒന്ന് മറന്നുപോകാൻ എളുപ്പമാണ്.} other{{a}, {b}, മറ്റ് {extra} എണ്ണം എന്നിവ {lastDate}-ന് മുമ്പ്, ഏകദേശം ഒരേ സമയത്ത് കാലഹരണപ്പെടും. നിരവധി എണ്ണം ഇത്ര അടുത്തടുത്ത് വരുമ്പോൾ ഒന്ന് മറന്നുപോകാൻ എളുപ്പമാണ്.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{അടുത്ത ഒരു ദിവസത്തിൽ ഒന്നും കാലഹരണപ്പെടുന്നില്ല. നിങ്ങളുടെ അടുത്ത കാലഹരണം {date}-നാണ്.} other{അടുത്ത {days} ദിവസത്തിൽ ഒന്നും കാലഹരണപ്പെടുന്നില്ല. നിങ്ങളുടെ അടുത്ത കാലഹരണം {date}-നാണ്.}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} വിഭാഗത്തിലെ നിങ്ങളുടെ 1 റെക്കോർഡ് {date}-ന് കാലഹരണപ്പെടും. ഇത് ശ്രദ്ധിക്കാതെ പോകാൻ എളുപ്പമാണ്.} other{{category} വിഭാഗത്തിലെ നിങ്ങളുടെ {count} റെക്കോർഡുകൾ {date}-ന് മുമ്പ് കാലഹരണപ്പെടും. ഇങ്ങനെ ഒരുമിച്ച് വരുമ്പോൾ ഒന്ന് മറന്നുപോകാൻ എളുപ്പമാണ്.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{വരാനിരിക്കുന്ന 1 കാലഹരണത്തിന് റിമൈൻഡറുണ്ട്. മറ്റൊന്നിനും നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമില്ല.} other{വരാനിരിക്കുന്ന {count} കാലഹരണങ്ങൾക്ക് റിമൈൻഡറുകളുണ്ട്. മറ്റൊന്നിനും നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമില്ല.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} വിഭാഗത്തിലെ നിങ്ങളുടെ {count} റെക്കോർഡ് {date}-ന് കാലഹരണപ്പെടും. ഇത് ശ്രദ്ധിക്കാതെ പോകാൻ എളുപ്പമാണ്.} other{{category} വിഭാഗത്തിലെ നിങ്ങളുടെ {count} റെക്കോർഡുകൾ {date}-ന് മുമ്പ് കാലഹരണപ്പെടും. ഇങ്ങനെ ഒരുമിച്ച് വരുമ്പോൾ ഒന്ന് മറന്നുപോകാൻ എളുപ്പമാണ്.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{വരാനിരിക്കുന്ന {count} കാലഹരണത്തിന് റിമൈൻഡറുണ്ട്. മറ്റൊന്നിനും നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമില്ല.} other{വരാനിരിക്കുന്ന {count} കാലഹരണങ്ങൾക്ക് റിമൈൻഡറുകളുണ്ട്. മറ്റൊന്നിനും നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമില്ല.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "എല്ലാം കാലികമാണ്. ഇപ്പോൾ ഒന്നിനും നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമില്ല.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ഇപ്പോൾ അടിയന്തരമായി ഒന്നുമില്ല, എന്നാൽ വരാനിരിക്കുന്ന 1 റെക്കോർഡിന് ഇതുവരെ റിമൈൻഡറില്ല.} other{ഇപ്പോൾ അടിയന്തരമായി ഒന്നുമില്ല, എന്നാൽ വരാനിരിക്കുന്ന {count} റെക്കോർഡുകൾക്ക് ഇതുവരെ റിമൈൻഡറില്ല.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ഇപ്പോൾ അടിയന്തരമായി ഒന്നുമില്ല, എന്നാൽ വരാനിരിക്കുന്ന {count} റെക്കോർഡിന് ഇതുവരെ റിമൈൻഡറില്ല.} other{ഇപ്പോൾ അടിയന്തരമായി ഒന്നുമില്ല, എന്നാൽ വരാനിരിക്കുന്ന {count} റെക്കോർഡുകൾക്ക് ഇതുവരെ റിമൈൻഡറില്ല.}}",
   "smartInsightCloseExpiriesHeading": "ഏകദേശം ഒരേ സമയത്ത് കാലഹരണപ്പെടുന്നവ",
   "plansHeadline": "Vaultara പൂർണ്ണമായി നേടുക",
   "plansSubhead": "പരിധിയില്ലാത്ത റെക്കോർഡുകൾ, നിങ്ങളുടെ സ്വന്തം ഗ്രൂപ്പുകൾ, നിങ്ങൾ ആഗ്രഹിക്കുന്നത് പോലെ കൃത്യമായി ക്രമീകരിച്ച റിമൈൻഡറുകൾ.",
@@ -357,7 +349,7 @@
   "reminderCascadeRemoveStep": "നീക്കം ചെയ്യുക",
   "reminderCascadeDuplicate": "മറ്റൊരു റിമൈൻഡർ ഇതിനകം ഈ ദിവസം ഉപയോഗിക്കുന്നു",
   "reminderCascadeOutOfRange": "{min} മുതൽ {max} വരെ ദിവസം നൽകുക",
-  "reminderCascadeStepLabel": "റിമൈൻഡർ {position}: {days, plural, =1{1 ദിവസം} other{{days} ദിവസം}} മുമ്പ്",
+  "reminderCascadeStepLabel": "റിമൈൻഡർ {position}: {days, plural, =1{{days} ദിവസം} other{{days} ദിവസം}} മുമ്പ്",
   "expiryTimelineNotReady": "ഏതാനും വ്യത്യസ്‌ത മാസങ്ങളിൽ കാലഹരണപ്പെടുന്ന റെക്കോർഡുകൾ ഉണ്ടാകുമ്പോൾ നിങ്ങളുടെ ടൈംലൈൻ ദൃശ്യമാകും.",
   "verifyEmailResendIn": "{seconds} സെക്കൻഡിൽ വീണ്ടും അയയ്‌ക്കാം",
   "verifyEmailSpamHint": "കണ്ടില്ലേ? നിങ്ങളുടെ സ്‌പാം അല്ലെങ്കിൽ ജങ്ക് ഫോൾഡർ പരിശോധിക്കുക.",
@@ -366,13 +358,10 @@
   "verifyEmailDiscardBody": "ഈ അക്കൗണ്ട് പരിശോധിച്ചുറപ്പിച്ചിട്ടില്ല. ഇപ്പോൾ പുറത്തുപോയാൽ അത് ഇല്ലാതാക്കും, തുടർന്ന് ഏത് ഇമെയിൽ വിലാസം ഉപയോഗിച്ചും നിങ്ങൾക്ക് വീണ്ടും സൈൻ അപ്പ് ചെയ്യാം.",
   "verifyEmailDiscardAction": "ഉപേക്ഷിക്കുക",
   "verifyEmailKeepWaiting": "കാത്തിരിപ്പ് തുടരുക",
-  "expiringBadge": "{count, plural, =1{1 എണ്ണം കാലഹരണപ്പെടുന്നു} other{{count} എണ്ണം കാലഹരണപ്പെടുന്നു}}",
+  "expiringBadge": "{count, plural, =1{{count} എണ്ണം കാലഹരണപ്പെടുന്നു} other{{count} എണ്ണം കാലഹരണപ്പെടുന്നു}}",
   "noRecordsToday": "ഇന്ന് ഒന്നും കാലഹരണപ്പെടുന്നില്ല",
   "noRecordsTomorrow": "നാളെ ഒന്നും കാലഹരണപ്പെടുന്നില്ല",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ഇന്ന് കാലഹരണപ്പെടും} =1{{recordName} നാളെ കാലഹരണപ്പെടും} other{{recordName} {days} ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, നിങ്ങളുടെ {recordName} ഇന്ന് കാലഹരണപ്പെടും. ഇതിനകം പുതുക്കിയോ? അതിന്റെ കാലഹരണ തീയതി അപ്‌ഡേറ്റ് ചെയ്യുക.} =1{{firstName}, നിങ്ങളുടെ {recordName} നാളെ കാലഹരണപ്പെടും. കാലഹരണപ്പെടാതിരിക്കാൻ ഇപ്പോൾ തന്നെ പുതുക്കുക.} other{{firstName}, നിങ്ങളുടെ {recordName} {date}-ന് കാലഹരണപ്പെടും. നേരത്തെ പുതുക്കിയാൽ നിങ്ങൾ സുരക്ഷിതരായിരിക്കും.}}",
   "cascadeFinalStepTitle": "അവസാന റിമൈൻഡർ: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, നിങ്ങളുടെ {recordName} {days, plural, =1{നാളെ} other{{days} ദിവസത്തിനുള്ളിൽ, {date}-ന്}} കാലഹരണപ്പെടും. ഇത് നിങ്ങളുടെ അവസാന റിമൈൻഡറാണ്, ഇത് പുതുക്കുക അല്ലെങ്കിൽ അതിന്റെ തീയതി അപ്‌ഡേറ്റ് ചെയ്യുക.",
   "notificationsTitle": "അറിയിപ്പുകൾ",
   "notificationsProfileEnabledSubtitle": "റിമൈൻഡറുകൾ {time}-ന് എത്തും.",
   "notificationsProfileDisabledSubtitle": "അറിയിപ്പുകൾ ഓഫാണ്.",
@@ -1402,13 +1391,13 @@
   "dailyDigestSwitchSubtitle": "നിങ്ങളുടെ റിമൈൻഡർ സമയത്ത് ആ ദിവസം വരാനുള്ള എല്ലാം പട്ടികപ്പെടുത്തുന്ന ഒരു അറിയിപ്പ് നേടുക.",
   "dailyDigestTurnedOn": "നിങ്ങളുടെ റിമൈൻഡറുകൾ ഇനി ഒരു ദൈനംദിന സംഗ്രഹമായി വരും.",
   "dailyDigestTurnedOff": "ഓരോ റെക്കോർഡിനുമുള്ള പ്രത്യേക റിമൈൻഡറുകൾ വീണ്ടും ഓണായി.",
-  "dailyDigestTitle": "{count, plural, one{1 റെക്കോർഡിൽ നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്} other{{count} റെക്കോർഡുകളിൽ നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്}}",
+  "dailyDigestTitle": "{count, plural, one{{count} റെക്കോർഡിൽ നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്} other{{count} റെക്കോർഡുകളിൽ നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്}}",
   "dailyDigestBody": "വരാനിരിക്കുന്നത്: {names}.",
   "dailyDigestBodyMore": "വരാനിരിക്കുന്നത്: {names}, കൂടാതെ {count} എണ്ണം കൂടി.",
   "dailyDigestLockedRecord": "ഒരു ലോക്ക് ചെയ്ത റെക്കോർഡ്",
   "renewReasonRepeat": "{months, plural, one{നിങ്ങളുടെ ആവർത്തന ക്രമീകരണം അനുസരിച്ച്, എല്ലാ മാസവും} other{നിങ്ങളുടെ ആവർത്തന ക്രമീകരണം അനുസരിച്ച്, ഓരോ {months} മാസത്തിലും}}",
   "renewReasonHistory": "{count, plural, one{നിങ്ങളുടെ അവസാന പുതുക്കലിനെ അടിസ്ഥാനമാക്കി} other{നിങ്ങളുടെ അവസാന {count} പുതുക്കലുകളെ അടിസ്ഥാനമാക്കി}}",
-  "renewReasonTypical": "{years, plural, one{സാധാരണയായി 1 വർഷത്തേക്ക് സാധുതയുണ്ട്} other{സാധാരണയായി {years} വർഷത്തേക്ക് സാധുതയുണ്ട്}}",
+  "renewReasonTypical": "{years, plural, one{സാധാരണയായി {years} വർഷത്തേക്ക് സാധുതയുണ്ട്} other{സാധാരണയായി {years} വർഷത്തേക്ക് സാധുതയുണ്ട്}}",
   "renewChangeHint": "മാറ്റാൻ തീയതിയിൽ ടാപ്പ് ചെയ്യുക.",
   "renewPickDate": "പുതിയ കാലഹരണ തീയതി തിരഞ്ഞെടുക്കുക",
   "renewPickDateHint": "നിങ്ങളുടെ പുതിയ രേഖയിൽ കാണിച്ചിരിക്കുന്ന തീയതി തിരഞ്ഞെടുക്കുക.",
@@ -1884,8 +1873,8 @@
   "lifePlanAutoChanged": "ഈ രേഖ മാറിയതായി Vaultara കണ്ടു, അതിനാൽ പൂർത്തിയായി എന്ന് അടയാളപ്പെടുത്തി.",
   "lifePlanAutoAdded": "ഈ പദ്ധതി തുടങ്ങിയ ശേഷം ചേർത്തത്.",
   "lifePlanProgress": "{total}-ൽ {done} പൂർത്തിയായി",
-  "lifePlanDaysToGo": "{count, plural, =1{ഇനി 1 ദിവസം} other{ഇനി {count} ദിവസം}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 ദിവസം മുമ്പ്} other{{count} ദിവസം മുമ്പ്}}",
+  "lifePlanDaysToGo": "{count, plural, =1{ഇനി {count} ദിവസം} other{ഇനി {count} ദിവസം}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} ദിവസം മുമ്പ്} other{{count} ദിവസം മുമ്പ്}}",
   "lifePlanAllDone": "എല്ലാം പൂർത്തിയായി. പദ്ധതി പൂർത്തിയായി എന്ന് അടയാളപ്പെടുത്താം.",
   "lifePlanFinish": "പൂർത്തിയായി എന്ന് അടയാളപ്പെടുത്തുക",
   "lifePlanReopen": "വീണ്ടും തുറക്കുക",
@@ -2014,7 +2003,7 @@
   "lifePlanReadAloudUnavailable": "ഈ ഫോണിൽ ഉറക്കെ വായിക്കൽ ലഭ്യമല്ല.",
   "lifePlanProofPack": "തെളിവ് പായ്ക്ക് ഉണ്ടാക്കുക",
   "lifePlanOpenFamily": "കുടുംബം തുറക്കുക",
-  "lifePlanRemoved": "{count, plural, =1{നിങ്ങൾ ഇല്ലാതാക്കിയ 1 രേഖ റദ്ദാക്കിയതായി കണക്കാക്കും.} other{നിങ്ങൾ ഇല്ലാതാക്കിയ {count} രേഖകൾ റദ്ദാക്കിയതായി കണക്കാക്കും.}}",
+  "lifePlanRemoved": "{count, plural, =1{നിങ്ങൾ ഇല്ലാതാക്കിയ {count} രേഖ റദ്ദാക്കിയതായി കണക്കാക്കും.} other{നിങ്ങൾ ഇല്ലാതാക്കിയ {count} രേഖകൾ റദ്ദാക്കിയതായി കണക്കാക്കും.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2611,5 +2600,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} ഇന്ന് കാലഹരണപ്പെടും",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} നാളെ കാലഹരണപ്പെടും",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} {days} ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും} other{{recordName} {days} ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} കാലഹരണപ്പെട്ടു",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "ലോക്ക് ചെയ്ത ഒരു റെക്കോർഡിന് നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്",
+  "remLockedBody": "അതിന്റെ തീയതി {date} ആണ്. ഏത് റെക്കോർഡാണെന്ന് കാണാൻ Vaultara അൺലോക്ക് ചെയ്യുക.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "നിങ്ങളുടെ \"{recordName}\" റെക്കോർഡ് ഇന്ന് കാലഹരണപ്പെടും.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "നിങ്ങളുടെ \"{recordName}\" റെക്കോർഡ് നാളെ കാലഹരണപ്പെടും.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "നിങ്ങളുടെ \"{recordName}\" റെക്കോർഡ് {date}-ന് കാലഹരണപ്പെടും.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, നിങ്ങളുടെ \"{recordName}\" റെക്കോർഡ് ഇന്ന് കാലഹരണപ്പെടും.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, നിങ്ങളുടെ \"{recordName}\" റെക്കോർഡ് നാളെ കാലഹരണപ്പെടും.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, നിങ്ങളുടെ \"{recordName}\" റെക്കോർഡ് {date}-ന് കാലഹരണപ്പെടും.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: \"{recordName}\" റെക്കോർഡ് ഇന്ന് കാലഹരണപ്പെടും.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: \"{recordName}\" റെക്കോർഡ് നാളെ കാലഹരണപ്പെടും.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: \"{recordName}\" റെക്കോർഡ് {date}-ന് കാലഹരണപ്പെടും.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "നിങ്ങളുടെ \"{recordName}\" റെക്കോർഡ് {date}-ന് കാലഹരണപ്പെട്ടു.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: \"{recordName}\" റെക്കോർഡ് {date}-ന് കാലഹരണപ്പെട്ടു.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "ഇതിനകം പുതുക്കിയോ? അതിന്റെ തീയതി അപ്ഡേറ്റ് ചെയ്യുക.",
+  "remTipTomorrow": "കാലഹരണപ്പെടാതിരിക്കാൻ ഇപ്പോൾ തന്നെ പുതുക്കുക.",
+  "remTipEarly": "നേരത്തെ പുതുക്കുന്നത് നിങ്ങളെ സുരക്ഷിതരാക്കുന്നു.",
+  "remTipLast": "കാലഹരണപ്പെടുന്നതിന് മുമ്പുള്ള നിങ്ങളുടെ അവസാന ഓർമ്മപ്പെടുത്തലാണിത്.",
+  "remTipExpired": "പുതുക്കുക, അല്ലെങ്കിൽ ഇതിനകം ചെയ്തെങ്കിൽ തീയതി അപ്ഡേറ്റ് ചെയ്യുക.",
+  "remStartBody": "\"{recordName}\" പുതുക്കാൻ തുടങ്ങാനുള്ള സമയമായി. ഇത് {date}-ന് കാലഹരണപ്പെടും, അതിനാൽ ഇപ്പോൾ തുടങ്ങിയാൽ നിങ്ങൾക്ക് ധാരാളം സമയമുണ്ടാകും.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) പുതുക്കാൻ തുടങ്ങാനുള്ള സമയമായി. ഇത് {date}-ന് കാലഹരണപ്പെടും, അതിനാൽ ഇപ്പോൾ തുടങ്ങിയാൽ ധാരാളം സമയമുണ്ടാകും.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "കാലഹരണ ഓർമ്മപ്പെടുത്തലുകൾ",
+  "notifChannelDescription": "നിങ്ങളുടെ റെക്കോർഡുകൾ കാലഹരണപ്പെടുന്നതിന് മുമ്പുള്ള ഓർമ്മപ്പെടുത്തലുകൾ",
+  "notifTestTitle": "ടെസ്റ്റ് അറിയിപ്പ്",
+  "notifTestBody": "Vaultara ഓർമ്മപ്പെടുത്തലുകൾ ഇങ്ങനെയാണ് വരുന്നത്.",
+  "notifTestAction": "ടെസ്റ്റ് അറിയിപ്പ് അയയ്ക്കുക",
+  "notifTestSubtitle": "ഓർമ്മപ്പെടുത്തലുകൾ ഈ ഫോണിൽ എത്തുന്നുണ്ടോ എന്ന് പരിശോധിക്കുക",
+  "notifTestSent": "ടെസ്റ്റ് അയച്ചു. കുറച്ച് സെക്കൻഡിനുള്ളിൽ എത്തണം.",
+  "notifAfterExpiryTitle": "റെക്കോർഡ് കാലഹരണപ്പെട്ട ശേഷം ഓർമ്മിപ്പിക്കുക",
+  "notifAfterExpirySubtitle": "3-ഉം 14-ഉം ദിവസത്തിന് ശേഷം, പുതുക്കിയിട്ടില്ലെങ്കിൽ",
+  "notifWeeklyTitle": "തിങ്കളാഴ്ചത്തെ സംഗ്രഹം",
+  "notifWeeklySubtitle": "ആ ആഴ്ച എന്തെങ്കിലും കാലഹരണപ്പെടുമ്പോൾ തിങ്കളാഴ്ച രാവിലെ ഒരു സന്ദേശം",
+  "notifPushSection": "കുടുംബവും അപ്ഡേറ്റുകളും",
+  "notifHouseholdTitle": "പങ്കിട്ട റെക്കോർഡുകൾ",
+  "notifHouseholdSubtitle": "പങ്കിട്ട റെക്കോർഡ് കാലഹരണപ്പെടാറായിട്ടും ആരും പുതുക്കാത്തപ്പോൾ",
+  "notifUpdatesTitle": "നിങ്ങൾ ആവശ്യപ്പെട്ട അപ്ഡേറ്റുകൾ",
+  "notifUpdatesSubtitle": "ആരെങ്കിലും ഒരു റെക്കോർഡിന്റെ പുതിയ വിവരങ്ങൾ അയയ്ക്കുമ്പോൾ",
+  "notifSecurityNote": "നിങ്ങളുടെ അക്കൗണ്ടിലെ പുതിയ സൈൻ-ഇന്നുകളെക്കുറിച്ചുള്ള മുന്നറിയിപ്പുകൾ എപ്പോഴും അയയ്ക്കും.",
+  "notifIosHelpTitle": "ഓർമ്മപ്പെടുത്തലുകൾ ലഭിക്കുന്നില്ലേ?",
+  "notifIosHelpSubtitle": "നിങ്ങളുടെ iPhone ക്രമീകരണങ്ങൾ പരിശോധിക്കുക",
+  "notifIosHelpStep1": "ക്രമീകരണങ്ങൾ, തുടർന്ന് അറിയിപ്പുകൾ, തുടർന്ന് Vaultara തുറന്ന്, അറിയിപ്പുകൾ അനുവദിക്കുക ഓണാക്കുക.",
+  "notifIosHelpStep2": "ലോക്ക് സ്ക്രീൻ, അറിയിപ്പ് കേന്ദ്രം, ബാനറുകൾ എന്നിവ ഓണാക്കുക.",
+  "notifIosHelpStep3": "നിങ്ങൾ ഫോക്കസ് ഉപയോഗിക്കുന്നുവെങ്കിൽ, അനുവദിച്ച ആപ്പുകളിൽ Vaultara ചേർക്കുക.",
+  "notifIosHelpStep4": "ഏതാനും ആഴ്ചയിലൊരിക്കൽ Vaultara തുറക്കുക. iPhone മുന്നോട്ടുള്ള പരിമിതമായ ഓർമ്മപ്പെടുത്തലുകൾ മാത്രമേ സൂക്ഷിക്കൂ, ആപ്പ് തുറക്കുമ്പോൾ അടുത്തവ ഷെഡ്യൂൾ ചെയ്യും.",
+  "homeNextUpEmpty": "ഉടൻ ഒന്നും കാലഹരണപ്പെടുന്നില്ല. എല്ലാം ശരിയാണ്.",
+  "homeDueSoonChip": "{count, plural, one{30 ദിവസത്തിനുള്ളിൽ {count} എണ്ണം} other{30 ദിവസത്തിനുള്ളിൽ {count} എണ്ണം}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "പിൻ ചെയ്ത വിഭാഗങ്ങൾ"
 }

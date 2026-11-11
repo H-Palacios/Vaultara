@@ -173,9 +173,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara ምንም ነገር በዝምታ ጊዜው እንዳያልፍ አስፈላጊ የማብቂያ ቀኖችን እንዲከታተሉ ይረዳዎታል.",
   "homeWelcomeSubtitleFirst": "እዚህ በመኖርዎ ደስ ብሎናል. Vaultara አስፈላጊ ቀኖችን እና መዝገቦችን በአንድ ደህንነቱ የተጠበቀ ቦታ በማስቀመጥ የተደራጁ እንዲሆኑ ይረዳዎታል.",
   "homeWelcomeSubtitleBack": "እንደገና በማየታችን ደስ ብሎናል. አስፈላጊ ቀኖችዎን እና መዝገቦችዎን መገምገም በሚፈልጉበት ጊዜ ሁሉ Vaultara እዚህ አለ.",
-  "summaryAllCaption": "በVaultara የሚከታተሉ",
-  "summaryExpiredTitle": "ጊዜው ያለፈበት",
-  "summaryExpiredCaption": "ከማብቂያ ቀን ያለፈ",
   "editorNotes": "ማስታወሻዎች",
   "editorReminderNone": "አስታዋሽ የለም",
   "enableBiometricsTitle": "የባዮሜትሪክ ደህንነትን አንቃ",
@@ -197,7 +194,6 @@
   "addRecord": "መዝገብ አክል",
   "noRecordsYet": "ገና ምንም መዝገቦች የሉም.",
   "deleteRecordTitle": "መዝገብ ሰርዝ",
-  "summaryAllRecordsTitle": "ሁሉም መዝገቦች",
   "noGroupFound": "ገና ምንም ቡድኖች የሉም",
   "groupLabel": "{count, plural, one{{count} ቡድን} other{{count} ቡድኖች}}",
   "recordsLabel": "{count, plural, one{{count} መዝገብ} other{{count} መዝገቦች}}",
@@ -443,7 +439,7 @@
   "addNotesHint": "ማስታወሻዎችን ያክሉ (አማራጭ)",
   "expiryTimelineTitle": "የማብቂያ የጊዜ መስመር",
   "expiryTimelineSubtitle": "በዚያ ወር ጊዜያቸው የሚያበቃ መዝገቦችን ለማየት ወር መታ ያድርጉ",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 መዝገብ} other{{count} መዝገቦች}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} መዝገብ} other{{count} መዝገቦች}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -451,10 +447,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "መጪ",
-  "summaryUpcomingCaption": "በ 30 ቀናት ውስጥ",
-  "summaryUrgentTitle": "አስቸኳይ",
-  "summaryUrgentCaption": "በ 7 ቀናት ውስጥ",
   "profileHeaderTitle": "መገለጫ",
   "profileTutorialsTitle": "አጋዥ ስልጠናዎች",
   "profileTutorialsSubtitle": "የመተግበሪያ አጋዥ ስልጠናዎችን ያስሱ",
@@ -525,16 +517,16 @@
   "smartInsightNoRecordsHeading": "የመጀመሪያ መዝገብዎን ያክሉ",
   "smartInsightNoRecordsBody": "መዝገቦችዎን መከታተል ይጀምሩ፣ እና Vaultara እዚህ ላይ ብልጥ የሆኑ ግንዛቤዎችን ያሳያል።",
   "smartInsightExpiresTodaySingleBody": "{name} ዛሬ ያበቃል። አስቀድመው ካደሱት፣ ቀኑን እዚህ ያዘምኑ።",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ዛሬ ያበቃሉ።} =1{{names} እና ሌላ 1 መዝገብ ዛሬ ያበቃሉ።} other{{names} እና ሌላ {extra} መዝገቦች ዛሬ ያበቃሉ።}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ዛሬ ያበቃሉ።} =1{{names} እና ሌላ {extra} መዝገብ ዛሬ ያበቃሉ።} other{{names} እና ሌላ {extra} መዝገቦች ዛሬ ያበቃሉ።}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} ነገ ያበቃል ነገር ግን ምንም አስታዋሽ የለውም። እንዳያመልጥዎት አስታዋሽ ያዘጋጁ።} other{{name} በ {date} ያበቃል ነገር ግን ምንም አስታዋሽ የለውም። እንዳያመልጥዎት አስታዋሽ ያዘጋጁ።}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} በ {dateA} እና {b} በ {dateB} አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ሁለት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።",
   "smartInsightCloseExpiriesBodyThree": "{a}፣ {b} እና {c} ሁሉም በ {lastDate} አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ጥቂት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}፣ {b} እና ሌላ 1 መዝገብ በ {lastDate} አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ጥቂት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።} other{{a}፣ {b} እና ሌላ {extra} መዝገቦች በ {lastDate} አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ጥቂት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}፣ {b} እና ሌላ {extra} መዝገብ በ {lastDate} አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ጥቂት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።} other{{a}፣ {b} እና ሌላ {extra} መዝገቦች በ {lastDate} አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ጥቂት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{በሚቀጥለው ቀን ምንም የሚያበቃ ነገር የለም። የሚቀጥለው ማብቂያዎ በ {date} ነው።} other{በሚቀጥሉት {days} ቀናት ውስጥ ምንም የሚያበቃ ነገር የለም። የሚቀጥለው ማብቂያዎ በ {date} ነው።}}",
-  "smartInsightClusterBody": "{count, plural, =1{በምድብ {category} ውስጥ ካሉት መዝገቦችዎ 1 መዝገብ በ {date} ያበቃል። ይህንን በቀላሉ መዘንጋት ይቻላል።} other{በምድብ {category} ውስጥ ካሉት መዝገቦችዎ {count} መዝገቦች በ {date} ያበቃሉ። በዚህ መልኩ ሲደራጁ አንዱን መርሳት ቀላል ነው።}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 የሚመጣ ማብቂያ በአስታዋሽ ተሸፍኗል። ሌላ የእርስዎን ትኩረት የሚፈልግ ነገር የለም።} other{{count} የሚመጡ ማብቂያዎች በአስታዋሽ ተሸፍነዋል። ሌላ የእርስዎን ትኩረት የሚፈልግ ነገር የለም።}}",
+  "smartInsightClusterBody": "{count, plural, =1{በምድብ {category} ውስጥ ካሉት መዝገቦችዎ {count} መዝገብ በ {date} ያበቃል። ይህንን በቀላሉ መዘንጋት ይቻላል።} other{በምድብ {category} ውስጥ ካሉት መዝገቦችዎ {count} መዝገቦች በ {date} ያበቃሉ። በዚህ መልኩ ሲደራጁ አንዱን መርሳት ቀላል ነው።}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} የሚመጣ ማብቂያ በአስታዋሽ ተሸፍኗል። ሌላ የእርስዎን ትኩረት የሚፈልግ ነገር የለም።} other{{count} የሚመጡ ማብቂያዎች በአስታዋሽ ተሸፍነዋል። ሌላ የእርስዎን ትኩረት የሚፈልግ ነገር የለም።}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "ሁሉም ነገር የተዘመነ ነው። በአሁኑ ጊዜ የእርስዎን ትኩረት የሚፈልግ ምንም ነገር የለም።",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{በአሁኑ ጊዜ ምንም አስቸኳይ ነገር የለም፣ ነገር ግን 1 የሚመጣ መዝገብ ገና አስታዋሽ አልተዘጋጀለትም።} other{በአሁኑ ጊዜ ምንም አስቸኳይ ነገር የለም፣ ነገር ግን {count} የሚመጡ መዝገቦች ገና አስታዋሽ አልተዘጋጀላቸውም።}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{በአሁኑ ጊዜ ምንም አስቸኳይ ነገር የለም፣ ነገር ግን {count} የሚመጣ መዝገብ ገና አስታዋሽ አልተዘጋጀለትም።} other{በአሁኑ ጊዜ ምንም አስቸኳይ ነገር የለም፣ ነገር ግን {count} የሚመጡ መዝገቦች ገና አስታዋሽ አልተዘጋጀላቸውም።}}",
   "smartInsightCloseExpiriesHeading": "በተመሳሳይ ጊዜ አካባቢ ያበቃሉ",
   "plansHeadline": "ሙሉውን Vaultara ያግኙ",
   "plansSubhead": "ያልተገደቡ መዝገቦች፣ የእርስዎ የግል ቡድኖች እና በትክክል የሚፈልጉት ዓይነት አስታዋሾች።",
@@ -645,7 +637,7 @@
   "reminderCascadeRemoveStep": "አስወግድ",
   "reminderCascadeDuplicate": "ሌላ አስታዋሽ አስቀድሞ ይህንን ቀን እየተጠቀመበት ነው",
   "reminderCascadeOutOfRange": "በ{min} እና {max} ቀናት መካከል ያስገቡ",
-  "reminderCascadeStepLabel": "አስታዋሽ {position}፦ ከማብቂያው {days, plural, =1{1 ቀን} other{{days} ቀናት}} በፊት",
+  "reminderCascadeStepLabel": "አስታዋሽ {position}፦ ከማብቂያው {days, plural, =1{{days} ቀን} other{{days} ቀናት}} በፊት",
   "expiryTimelineNotReady": "በተለያዩ ጥቂት ወራት ውስጥ የሚያልቁ መዝገቦች ሲኖሩዎት የጊዜ መስመርዎ ይታያል።",
   "verifyEmailResendIn": "በ{seconds}ሰከንድ ውስጥ እንደገና ላክ",
   "verifyEmailSpamHint": "እዚያ የለም? አይፈለጌ መልዕክት (spam) ወይም የቆሻሻ መጣያ አቃፊዎን ያረጋግጡ።",
@@ -654,13 +646,10 @@
   "verifyEmailDiscardBody": "ይህ መለያ አልተረጋገጠም። አሁን መውጣት መለያውን ያስወግደዋል፣ እና በማንኛውም ኢሜይል አድራሻ እንደገና መመዝገብ ይችላሉ።",
   "verifyEmailDiscardAction": "አስወግድ",
   "verifyEmailKeepWaiting": "መጠበቅ ቀጥል",
-  "expiringBadge": "{count, plural, =1{1 በቅርቡ ያበቃል} other{{count} በቅርቡ ያበቃሉ}}",
+  "expiringBadge": "{count, plural, =1{{count} በቅርቡ ያበቃል} other{{count} በቅርቡ ያበቃሉ}}",
   "noRecordsToday": "ዛሬ ምንም የሚያበቃ የለም",
   "noRecordsTomorrow": "ነገ ምንም የሚያበቃ የለም",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ዛሬ ያበቃል} =1{{recordName} ነገ ያበቃል} other{{recordName} በ {days} ቀናት ውስጥ ያበቃል}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}፣ የእርስዎ {recordName} ዛሬ ያበቃል። ቀደም ብለው አድሰዋል? የማብቂያ ቀኑን ያዘምኑ።} =1{{firstName}፣ የእርስዎ {recordName} ነገ ያበቃል። እንዳያልፍብዎት አሁኑኑ ያድሱ።} other{{firstName}፣ የእርስዎ {recordName} በ {date} ያበቃል። ቀድመው ማደስ ጥበቃዎን ያረጋግጣል።}}",
   "cascadeFinalStepTitle": "የመጨረሻ አስታዋሽ፡ {recordName}",
-  "cascadeFinalStepBody": "{firstName}፣ የእርስዎ {recordName} {days, plural, =1{ነገ} other{በ {days} ቀናት ውስጥ፣ በ {date}}} ያበቃል። ይህ የመጨረሻ አስታዋሽዎ ነው፣ ያድሱት ወይም ቀኑን ያዘምኑ።",
   "notificationsTitle": "ማሳወቂያዎች",
   "notificationsProfileEnabledSubtitle": "አስታዋሾች በ{time} ይደርሳሉ።",
   "notificationsProfileDisabledSubtitle": "ማሳወቂያዎች ጠፍተዋል።",
@@ -719,7 +708,7 @@
   "costCardTitle": "የእድሳት ወጪዎች",
   "costCardSubtitle": "እድሳቶችዎ በየወሩ ምን ያህል ያስከፍላሉ",
   "costCardBusiest": "ብዙ ወጪ ያለበት ወር፦ {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{1 መጪ መዝገብ እስካሁን ወጪ የለውም።} other{{count} መጪ መዝገቦች እስካሁን ወጪ የላቸውም።}}",
+  "costCardMissing": "{count, plural, =1{{count} መጪ መዝገብ እስካሁን ወጪ የለውም።} other{{count} መጪ መዝገቦች እስካሁን ወጪ የላቸውም።}}",
   "costCardEmpty": "እድሳቶች ምን ያህል እንደሚያስወጡ ለማየት ለመዝገቦችዎ ወጪ ያክሉ።",
   "costCardLockedHint": "በሚቀጥለው ዓመት እድሳቶችዎ ምን ያህል እንደሚያስወጡ በፕሪሚየም ይመልከቱ።",
   "costCardSeePremium": "ፕሪሚየምን ይመልከቱ",
@@ -727,7 +716,7 @@
   "familyTitle": "ቤተሰብ",
   "familyIntro": "የሚንከባከቧቸውን ሰዎች መዝገቦች ይከታተሉ። አስታዋሾቻቸው ስማቸውን ስለሚያሳዩ መዝገቡ የማን እንደሆነ ያውቃሉ።",
   "familyMe": "እኔ",
-  "familyRecordCount": "{count, plural, =0{ምንም መዝገብ የለም} =1{1 መዝገብ} other{{count} መዝገቦች}}",
+  "familyRecordCount": "{count, plural, =0{ምንም መዝገብ የለም} =1{{count} መዝገብ} other{{count} መዝገቦች}}",
   "familyRename": "እንደገና ሰይም",
   "familyRemove": "አስወግድ",
   "familyRemoveTitle": "{name} ይወገድ?",
@@ -740,10 +729,10 @@
   "familyNameLabel": "ስም",
   "familyNameHint": "ለምሳሌ፣ Thabo",
   "familyNameRequired": "ስም ያስገቡ",
-  "familyLimitNote": "{count, plural, =1{እስከ 1 ሰው} other{እስከ {count} ሰዎች}}",
+  "familyLimitNote": "{count, plural, =1{እስከ {count} ሰው} other{እስከ {count} ሰዎች}}",
   "familyUpsellTitle": "የቤተሰብዎን ሰነዶች ይከታተሉ",
   "familyBenefitPremium": "በፕሪሚየም ያለው ሁሉ",
-  "familyBenefitPeople": "{count, plural, =1{1 ሰው ያክሉ} other{እስከ {count} ሰዎች ያክሉ}}",
+  "familyBenefitPeople": "{count, plural, =1{{count} ሰው ያክሉ} other{እስከ {count} ሰዎች ያክሉ}}",
   "familyBenefitOwnRecords": "እያንዳንዱ ሰው የራሱ መዝገቦች እና አስታዋሾች አሉት",
   "familyBenefitOneSubscription": "ለመላው ቤተሰብ አንድ ምዝገባ",
   "familySeePlan": "የቤተሰብ ዕቅድን ይመልከቱ",
@@ -929,7 +918,7 @@
   "calendarExportError": "የቀን መቁጠሪያ ፋይሉን መፍጠር አልቻልንም። እንደገና ይሞክሩ።",
   "pdfExportTitle": "የVaultara መዝገቦች",
   "pdfExportGenerated": "የተዘጋጀው በ{date}",
-  "pdfExportCount": "{count, plural, =1{1 መዝገብ} other{{count} መዝገቦች}}",
+  "pdfExportCount": "{count, plural, =1{{count} መዝገብ} other{{count} መዝገቦች}}",
   "pdfExportCost": "የእድሳት ወጪ፦ {amount}",
   "pdfExportBuilding": "PDFዎን በማዘጋጀት ላይ...",
   "pdfExportError": "PDFውን መፍጠር አልቻልንም። እንደገና ይሞክሩ።",
@@ -957,7 +946,7 @@
   "travelNoLicence": "ምንም መንጃ ፈቃድ አልታከለም",
   "travelOtherExpires": "እርስዎ በሌሉበት ጊዜ ያበቃል",
   "travelDetailValidUntil": "{name} እስከ {date} ድረስ ጸንቷል።",
-  "travelDetailPassportBuffer": "{name} በ{date} ያበቃል። ብዙ አገሮች ከተመለሱ በኋላ {months, plural, =1{1 ወር} other{{months} ወራት}} እንዲቀር ይፈልጋሉ።",
+  "travelDetailPassportBuffer": "{name} በ{date} ያበቃል። ብዙ አገሮች ከተመለሱ በኋላ {months, plural, =1{{months} ወር} other{{months} ወራት}} እንዲቀር ይፈልጋሉ።",
   "travelDetailExpiresBeforeLeaving": "{name} በ{date} ያበቃል፣ ከመነሳትዎ በፊት።",
   "travelDetailExpiresDuringTrip": "{name} በ{date} ያበቃል፣ {days, plural, =0{በሚነሱበት ቀን} =1{ጉዞ ከጀመሩ በ1 ቀን} other{ጉዞ ከጀመሩ በ{days} ቀናት}}።",
   "travelDetailNoPassport": "Vaultara እንዲያረጋግጠው ፓስፖርትዎን ያክሉ።",
@@ -1059,7 +1048,7 @@
   "vaultChooseFromGallery": "ከጋለሪ ምረጥ",
   "vaultRemove": "አስወግድ",
   "vaultLimitTitle": "የፎቶ ገደብ ላይ ደርሰዋል",
-  "vaultLimitFreeBody": "ነጻው ዕቅድ ለእያንዳንዱ መዝገብ {limit, plural, =1{1 ፎቶ} other{{limit} ፎቶዎች}} እንዲያክሉ ይፈቅዳል። በፕሪሚየም እስከ {premiumLimit} ማከል ይችላሉ።",
+  "vaultLimitFreeBody": "ነጻው ዕቅድ ለእያንዳንዱ መዝገብ {limit, plural, =1{{limit} ፎቶ} other{{limit} ፎቶዎች}} እንዲያክሉ ይፈቅዳል። በፕሪሚየም እስከ {premiumLimit} ማከል ይችላሉ።",
   "vaultLimitPremiumBody": "ለእያንዳንዱ መዝገብ እስከ {limit} ፎቶዎች ማከል ይችላሉ። ሌላ ለማከል አንዱን ያስወግዱ።",
   "vaultSeePremium": "ፕሪሚየምን ይመልከቱ",
   "vaultPdfShort": "PDF",
@@ -1067,7 +1056,7 @@
   "vaultOpenFile": "ክፈት",
   "vaultClose": "ዝጋ",
   "vaultPageIndicator": "{current} ከ{total}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 ፎቶ} other{{count} ፎቶዎች}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} ፎቶ} other{{count} ፎቶዎች}}",
   "travelReadinessTitle": "የጉዞ ዝግጁነት",
   "travelReadinessBody": "በVaultara ውስጥ በተቀመጡ ፓስፖርቶች እና መንጃ ፈቃዶች ላይ የተመሠረተ። አብዛኞቹ አገሮች ሲመለሱ ፓስፖርቱ ቢያንስ 6 ወር ቀሪ ጊዜ እንዲኖረው ይፈልጋሉ።",
   "travelReadyUntil": "ፓስፖርቱ እስከ {date} ድረስ ለጉዞ ይሰራል",
@@ -1387,7 +1376,7 @@
   "photoLockTurnOn": "የተመሰጠሩ ፎቶዎችን አብራ",
   "photoLockStatusOn": "የተመሰጠሩ ፎቶዎች በርተዋል",
   "photoLockStatusOnBody": "አዳዲስ ፎቶዎች ከመጫናቸው በፊት በዚህ ስልክ ላይ ይመሰጠራሉ።",
-  "photoLockPendingTitle": "{count, plural, one{1 ፎቶ ገና አልተመሰጠረም} other{{count} ፎቶዎች ገና አልተመሰጠሩም}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} ፎቶ ገና አልተመሰጠረም} other{{count} ፎቶዎች ገና አልተመሰጠሩም}}",
   "photoLockPendingBody": "ይህን ከማብራትዎ በፊት ያከሏቸው ፎቶዎች አሁንም በመደበኛው መንገድ ተከማችተዋል።",
   "photoLockEncryptExisting": "ያሉኝን ፎቶዎች አመስጥር",
   "photoLockKeepOpen": "ይህ እስኪጠናቀቅ ድረስ Vaultara ክፍት ያድርጉት።",
@@ -1424,7 +1413,7 @@
   "photoLockSetupFailed": "የተመሰጠሩ ፎቶዎችን ማብራት አልቻልንም። ግንኙነትዎን ይፈትሹ እና እንደገና ይሞክሩ።",
   "photoLockAlreadyOn": "የተመሰጠሩ ፎቶዎች ለመለያዎ አስቀድሞ በርተዋል። በዚህ ስልክ ላይ ለመጠቀም የመልሶ ማግኛ ቁልፍዎን ያስገቡ።",
   "photoLockEncryptExistingTitle": "ያሉዎት ፎቶዎች ይመሰጠሩ?",
-  "photoLockEncryptExistingBody": "{count, plural, one{ገና ያልተመሰጠረ 1 ፎቶ አለዎት። አሁን ልናመሰጥረው እንችላለን።} other{ገና ያልተመሰጠሩ {count} ፎቶዎች አለዎት። አሁን ልናመሰጥራቸው እንችላለን።}} ይህ እስኪጠናቀቅ ድረስ Vaultara ክፍት ያድርጉት።",
+  "photoLockEncryptExistingBody": "{count, plural, one{ገና ያልተመሰጠረ {count} ፎቶ አለዎት። አሁን ልናመሰጥረው እንችላለን።} other{ገና ያልተመሰጠሩ {count} ፎቶዎች አለዎት። አሁን ልናመሰጥራቸው እንችላለን።}} ይህ እስኪጠናቀቅ ድረስ Vaultara ክፍት ያድርጉት።",
   "photoLockEncryptNow": "አሁን አመስጥር",
   "photoLockEntryBody": "የተመሰጠሩ ፎቶዎችን ሲያበሩ ያስቀመጡትን የመልሶ ማግኛ ቁልፍ ያስገቡ። ሰረዞች እና ክፍት ቦታዎች አማራጭ ናቸው።",
   "photoLockEntryLabel": "የመልሶ ማግኛ ቁልፍ",
@@ -1433,8 +1422,8 @@
   "photoLockUnlocked": "ፎቶዎችዎ በዚህ ስልክ ላይ ተከፍተዋል።",
   "photoLockInvalidFormat": "ይህ የመልሶ ማግኛ ቁልፍ አይመስልም። እያንዳንዱን ፊደል ይፈትሹ እና እንደገና ይሞክሩ።",
   "photoLockWrongKey": "ይህ የመልሶ ማግኛ ቁልፍ አይዛመድም። ይፈትሹት እና እንደገና ይሞክሩ።",
-  "photoLockWaitSeconds": "{seconds, plural, one{ብዙ ሙከራዎች። እባክዎ 1 ሰከንድ ይጠብቁ እና እንደገና ይሞክሩ።} other{ብዙ ሙከራዎች። እባክዎ {seconds} ሰከንዶች ይጠብቁ እና እንደገና ይሞክሩ።}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{ብዙ ሙከራዎች። እባክዎ 1 ደቂቃ ይጠብቁ እና እንደገና ይሞክሩ።} other{ብዙ ሙከራዎች። እባክዎ {minutes} ደቂቃዎች ይጠብቁ እና እንደገና ይሞክሩ።}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{ብዙ ሙከራዎች። እባክዎ {seconds} ሰከንድ ይጠብቁ እና እንደገና ይሞክሩ።} other{ብዙ ሙከራዎች። እባክዎ {seconds} ሰከንዶች ይጠብቁ እና እንደገና ይሞክሩ።}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{ብዙ ሙከራዎች። እባክዎ {minutes} ደቂቃ ይጠብቁ እና እንደገና ይሞክሩ።} other{ብዙ ሙከራዎች። እባክዎ {minutes} ደቂቃዎች ይጠብቁ እና እንደገና ይሞክሩ።}}",
   "photoLockOffline": "Vaultara ን ማግኘት አልቻልንም። ግንኙነትዎን ይፈትሹ እና እንደገና ይሞክሩ።",
   "photoLockNotSetUp": "የተመሰጠሩ ፎቶዎች ለመለያዎ አልበሩም።",
   "photoLockUnlockFailed": "የሆነ ችግር ተፈጥሯል። እባክዎ እንደገና ይሞክሩ።",
@@ -2172,7 +2161,7 @@
   "lifePlanAutoChanged": "Vaultara ይህ መዝገብ ሲለወጥ አይቷል፣ ስለዚህ እንደተጠናቀቀ ተመልክቷል።",
   "lifePlanAutoAdded": "ይህን እቅድ ከጀመሩ በኋላ ታክሏል።",
   "lifePlanProgress": "ከ{total} {done} ተጠናቀዋል",
-  "lifePlanDaysToGo": "{count, plural, =1{1 ቀን ቀርቷል} other{{count} ቀናት ቀርተዋል}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} ቀን ቀርቷል} other{{count} ቀናት ቀርተዋል}}",
   "lifePlanDaysAgo": "{count, plural, =1{ከ1 ቀን በፊት} other{ከ{count} ቀናት በፊት}}",
   "lifePlanAllDone": "ሁሉም ተጠናቋል። እቅዱን እንደተጠናቀቀ ምልክት ማድረግ ይችላሉ።",
   "lifePlanFinish": "እንደተጠናቀቀ ምልክት አድርግ",
@@ -2302,7 +2291,7 @@
   "lifePlanReadAloudUnavailable": "ጮክ ብሎ ማንበብ በዚህ ስልክ ላይ አይገኝም።",
   "lifePlanProofPack": "የማስረጃ ጥቅል አዘጋጅ",
   "lifePlanOpenFamily": "ቤተሰብን ክፈት",
-  "lifePlanRemoved": "{count, plural, =1{የሰረዝከው 1 መዝገብ እንደተሰረዘ ይቆጠራል።} other{የሰረዝካቸው {count} መዝገቦች እንደተሰረዙ ይቆጠራሉ።}}",
+  "lifePlanRemoved": "{count, plural, =1{የሰረዝከው {count} መዝገብ እንደተሰረዘ ይቆጠራል።} other{የሰረዝካቸው {count} መዝገቦች እንደተሰረዙ ይቆጠራሉ።}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2899,5 +2888,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} ዛሬ ያበቃል",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} ነገ ያበቃል",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} በ{days} ቀን ውስጥ ያበቃል} other{{recordName} በ{days} ቀናት ውስጥ ያበቃል}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} አብቅቷል",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "የተቆለፈ መዝገብ ትኩረትዎን ይፈልጋል",
+  "remLockedBody": "ቀኑ {date} ነው። የትኛው መዝገብ እንደሆነ ለማየት Vaultaraን ይክፈቱ።",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "መዝገብዎ \"{recordName}\" ዛሬ ያበቃል።",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "መዝገብዎ \"{recordName}\" ነገ ያበቃል።",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "መዝገብዎ \"{recordName}\" በ{date} ያበቃል።",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}፣ መዝገብዎ \"{recordName}\" ዛሬ ያበቃል።",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}፣ መዝገብዎ \"{recordName}\" ነገ ያበቃል።",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}፣ መዝገብዎ \"{recordName}\" በ{date} ያበቃል።",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}፦ መዝገቡ \"{recordName}\" ዛሬ ያበቃል።",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}፦ መዝገቡ \"{recordName}\" ነገ ያበቃል።",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}፦ መዝገቡ \"{recordName}\" በ{date} ያበቃል።",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "መዝገብዎ \"{recordName}\" በ{date} አብቅቷል።",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}፦ መዝገቡ \"{recordName}\" በ{date} አብቅቷል።",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "አስቀድመው አድሰውታል? ቀኑን ያዘምኑ።",
+  "remTipTomorrow": "እንዳያበቃ አሁኑኑ ያድሱት።",
+  "remTipEarly": "ቀደም ብሎ ማደስ ጥበቃ ያደርግልዎታል።",
+  "remTipLast": "ከማብቃቱ በፊት ይህ የመጨረሻ አስታዋሽዎ ነው።",
+  "remTipExpired": "ያድሱት፣ ወይም አስቀድመው ካደረጉት ቀኑን ያዘምኑ።",
+  "remStartBody": "\"{recordName}\"ን ማደስ የሚጀምሩበት ጊዜ ነው። በ{date} ያበቃል፣ ስለዚህ አሁን ከጀመሩ በቂ ጊዜ ይኖርዎታል።",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "የ{person}ን \"{recordName}\" ማደስ የሚጀመርበት ጊዜ ነው። በ{date} ያበቃል፣ ስለዚህ አሁን መጀመር በቂ ጊዜ ይተዋል።",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "የማብቂያ አስታዋሾች",
+  "notifChannelDescription": "መዝገቦችዎ ከማብቃታቸው በፊት አስታዋሾች",
+  "notifTestTitle": "የሙከራ ማሳወቂያ",
+  "notifTestBody": "የVaultara አስታዋሾች እንዲህ ይደርሳሉ።",
+  "notifTestAction": "የሙከራ ማሳወቂያ ይላኩ",
+  "notifTestSubtitle": "አስታዋሾች ወደዚህ ስልክ እንደሚደርሱ ያረጋግጡ",
+  "notifTestSent": "ሙከራው ተልኳል። በጥቂት ሰከንዶች ውስጥ መድረስ አለበት።",
+  "notifAfterExpiryTitle": "መዝገብ ካበቃ በኋላ አስታውሰኝ",
+  "notifAfterExpirySubtitle": "ከ3 እና 14 ቀናት በኋላ፣ ካልታደሰ",
+  "notifWeeklyTitle": "የሰኞ ማጠቃለያ",
+  "notifWeeklySubtitle": "በዚያ ሳምንት የሚያበቃ ነገር ሲኖር ሰኞ ጠዋት መልዕክት",
+  "notifPushSection": "ቤተሰብ እና ዝማኔዎች",
+  "notifHouseholdTitle": "የተጋሩ መዝገቦች",
+  "notifHouseholdSubtitle": "የተጋራ መዝገብ ሊያበቃ ሲቃረብ እና ማንም ሳያድሰው ሲቀር",
+  "notifUpdatesTitle": "የጠየቋቸው ዝማኔዎች",
+  "notifUpdatesSubtitle": "አንድ ሰው የመዝገብን አዲስ ዝርዝሮች ሲልክ",
+  "notifSecurityNote": "ወደ መለያዎ ስለሚደረጉ አዲስ መግቢያዎች የሚላኩ ማንቂያዎች ሁልጊዜ ይላካሉ።",
+  "notifIosHelpTitle": "አስታዋሾች አይደርሱዎትም?",
+  "notifIosHelpSubtitle": "የiPhone ቅንብሮችዎን ይፈትሹ",
+  "notifIosHelpStep1": "Settingsን፣ ከዚያ Notificationsን፣ ከዚያ Vaultaraን ይክፈቱ፣ እና Allow Notificationsን ያብሩ።",
+  "notifIosHelpStep2": "Lock Screen፣ Notification Centre እና Bannersን ያብሩ።",
+  "notifIosHelpStep3": "Focus ከተጠቀሙ፣ Vaultaraን በተፈቀዱ መተግበሪያዎች ውስጥ ያክሉ።",
+  "notifIosHelpStep4": "በጥቂት ሳምንታት አንዴ Vaultaraን ይክፈቱ። iPhone የሚያስቀምጠው የተወሰነ ቁጥር ያላቸውን የወደፊት አስታዋሾች ብቻ ነው፣ መተግበሪያውን መክፈት ቀጣዮቹን ያቅዳል።",
+  "homeNextUpEmpty": "በቅርቡ የሚያበቃ ነገር የለም። ሁሉም ዝግጁ ነው።",
+  "homeDueSoonChip": "{count, plural, one{በ30 ቀናት ውስጥ {count}} other{በ30 ቀናት ውስጥ {count}}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "የተሰኩ ምድቦች"
 }

@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Ọ dị mma ịnọ ebe a. Vaultara na-enyere gị hazie ụbọchị na ndekọ dị mkpa n’otu ebe dị nchebe.",
   "homeWelcomeSubtitleBack": "Ọ dị mma ịhụ gị ọzọ. Vaultara dị njikere mgbe ịchọrọ ịlele ụbọchị na ndekọ gị.",
   "homeWelcomeTitle": "Nnọọ",
-  "summaryAllCaption": "A na-enyocha ha na Vaultara",
-  "summaryExpiredTitle": "Agwụla",
-  "summaryExpiredCaption": "Ụbọchị ngwụcha agafeela",
   "editorNotes": "Ndetu",
   "editorReminderNone": "Enweghị ncheta",
   "editorReminderOnExpiry": "N'ụbọchị ngwụcha",
@@ -192,7 +189,6 @@
   "addRecord": "Tinye ndekọ",
   "noRecordsYet": "Enweghị ndekọ ka ọ dị.",
   "deleteRecordTitle": "Hichapụ ndekọ",
-  "summaryAllRecordsTitle": "Ndekọ niile",
   "noGroupFound": "Enwebeghị otu ọ bụla",
   "groupLabel": "{count, plural, one{{count} otu} other{{count} otu}}",
   "recordsLabel": "{count, plural, one{{count} ndekọ} other{{count} ndekọ}}",
@@ -442,7 +438,7 @@
   "addNotesHint": "Tinye ndetu (nhọrọ)",
   "expiryTimelineTitle": "Usoro oge ngwụcha",
   "expiryTimelineSubtitle": "Pịa ọnwa iji hụ ndekọ ndị na-akwụsị n'ọnwa ahụ",
-  "expiryTimelineDetailCount": "{count, plural, =1{Ndekọ 1} other{Ndekọ {count}}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{Ndekọ {count}} other{Ndekọ {count}}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -450,10 +446,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Na-abịa",
-  "summaryUpcomingCaption": "N'ime ụbọchị 30",
-  "summaryUrgentTitle": "Ngwa Ngwa",
-  "summaryUrgentCaption": "N'ime ụbọchị 7",
   "profileHeaderTitle": "Profaịlụ",
   "profileTutorialsTitle": "Nkuzi",
   "profileTutorialsSubtitle": "Chọgharịa Nkuzi Ngwa",
@@ -485,7 +477,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Enweghị ihe ncheta",
   "reminderOnExpiry": "N'ụbọchị ngwụcha",
-  "reminderDaysBefore": "{days, plural, one{Ụbọchị 1 tupu} other{Ụbọchị {days} tupu}}",
+  "reminderDaysBefore": "{days, plural, one{Ụbọchị {days} tupu} other{Ụbọchị {days} tupu}}",
   "reminderCustomDaysTitle": "Tinye ụbọchị nkeonwe",
   "reminderCascadeTitle": "Ncheta n'usoro",
   "reminderCascadeSubtitle": "Nweta ọtụtụ ọkwa tupu ndekọ akwụsị",
@@ -516,16 +508,16 @@
   "smartInsightNoRecordsHeading": "Tinye ndekọ mbụ gị",
   "smartInsightNoRecordsBody": "Malite nlekọta ndekọ gị, Vaultara ga-egosikwa nghọta amamihe ebe a.",
   "smartInsightExpiresTodaySingleBody": "{name} na-agwụ taa. Ọ bụrụ na i megharịala ya, melite ụbọchị ebe a.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} na-agwụ taa.} =1{{names} na 1 ọzọ na-agwụ taa.} other{{names} na {extra} ọzọ na-agwụ taa.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} na-agwụ taa.} =1{{names} na {extra} ọzọ na-agwụ taa.} other{{names} na {extra} ọzọ na-agwụ taa.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} na-agwụ echi ma enweghị ihe ncheta. Seta otu ka ị ghara ichefu ya.} other{{name} na-agwụ na {date} ma enweghị ihe ncheta. Seta otu ka ị ghara ichefu ya.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} na-agwụ na {dateA} na {b} na {dateB}, ihe fọrọ nke nta ka ọ bụrụ n'otu oge. Ọ dị mfe ichefu otu mgbe ndekọ abụọ dị nso otu a.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} na {c} niile na-agwụ tupu {lastDate}, ihe fọrọ nke nta ka ọ bụrụ n'otu oge. Ọ dị mfe ichefu otu mgbe ụfọdụ ndekọ dị nso otu a.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} na 1 ndekọ ọzọ na-agwụ tupu {lastDate}, ihe fọrọ nke nta ka ọ bụrụ n'otu oge. Ọ dị mfe ichefu otu mgbe ụfọdụ ndekọ dị nso otu a.} other{{a}, {b} na {extra} ndekọ ọzọ na-agwụ tupu {lastDate}, ihe fọrọ nke nta ka ọ bụrụ n'otu oge. Ọ dị mfe ichefu otu mgbe ụfọdụ ndekọ dị nso otu a.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} na {extra} ndekọ ọzọ na-agwụ tupu {lastDate}, ihe fọrọ nke nta ka ọ bụrụ n'otu oge. Ọ dị mfe ichefu otu mgbe ụfọdụ ndekọ dị nso otu a.} other{{a}, {b} na {extra} ndekọ ọzọ na-agwụ tupu {lastDate}, ihe fọrọ nke nta ka ọ bụrụ n'otu oge. Ọ dị mfe ichefu otu mgbe ụfọdụ ndekọ dị nso otu a.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Ọ dịghị ihe na-agwụ n'ụbọchị na-esote. Nke ọzọ gị bụ na {date}.} other{Ọ dịghị ihe na-agwụ n'ime ụbọchị {days} na-abịa. Nke ọzọ gị bụ na {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 n'ime ndekọ gị na ngalaba {category} na-agwụ na {date}. Ọ dị mfe ileghara ya anya.} other{{count} n'ime ndekọ gị na ngalaba {category} na-agwụ tupu {date}. Ọ dị mfe ichefu otu mgbe a chịkọtara ha otu a.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{E nwere ihe ncheta maka 1 ihe na-agwụ n'ọdịnihu. Ọ dịghị ihe ọzọ chọrọ nlebara anya gị.} other{E nwere ihe ncheta maka {count} ihe na-agwụ n'ọdịnihu. Ọ dịghị ihe ọzọ chọrọ nlebara anya gị.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} n'ime ndekọ gị na ngalaba {category} na-agwụ na {date}. Ọ dị mfe ileghara ya anya.} other{{count} n'ime ndekọ gị na ngalaba {category} na-agwụ tupu {date}. Ọ dị mfe ichefu otu mgbe a chịkọtara ha otu a.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{E nwere ihe ncheta maka {count} ihe na-agwụ n'ọdịnihu. Ọ dịghị ihe ọzọ chọrọ nlebara anya gị.} other{E nwere ihe ncheta maka {count} ihe na-agwụ n'ọdịnihu. Ọ dịghị ihe ọzọ chọrọ nlebara anya gị.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Ihe niile dị mma. Ọ dịghị ihe chọrọ nlebara anya gị ugbu a.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Ọ dịghị ihe dị ngwa ugbu a, mana 1 ndekọ na-abịa n'ọdịnihu enweghị ihe ncheta doro anya.} other{Ọ dịghị ihe dị ngwa ugbu a, mana {count} ndekọ na-abịa n'ọdịnihu enweghị ihe ncheta doro anya.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Ọ dịghị ihe dị ngwa ugbu a, mana {count} ndekọ na-abịa n'ọdịnihu enweghị ihe ncheta doro anya.} other{Ọ dịghị ihe dị ngwa ugbu a, mana {count} ndekọ na-abịa n'ọdịnihu enweghị ihe ncheta doro anya.}}",
   "smartInsightCloseExpiriesHeading": "Na-agwụ ihe fọrọ nke nta ka ọ bụrụ n'otu oge",
   "plansHeadline": "Nweta Vaultara n'uju ya",
   "plansSubhead": "Ihe ndekọ na-enweghị njedebe, otu nke gị, na ihe ncheta a haziri kpọmkwem otú ị chọrọ.",
@@ -612,7 +604,7 @@
   "reminderCascadeRemoveStep": "Wepụ",
   "reminderCascadeDuplicate": "Ncheta ọzọ na-eji ụbọchị a ugbu a",
   "reminderCascadeOutOfRange": "Tinye n'agbata ụbọchị {min} na {max}",
-  "reminderCascadeStepLabel": "Ncheta {position}: Ụbọchị {days, plural, =1{1} other{{days}}} tupu ọ gwụchaa",
+  "reminderCascadeStepLabel": "Ncheta {position}: Ụbọchị {days, plural, =1{{days}} other{{days}}} tupu ọ gwụchaa",
   "expiryTimelineNotReady": "Usoro oge gị ga-apụta ozugbo ị nwere ndekọ ga-agwụ n'ime ọnwa ole na ole dị iche iche.",
   "verifyEmailResendIn": "Ziga ọzọ n'ime sekọnd {seconds}",
   "verifyEmailSpamHint": "Ọ nọghị ebe ahụ? Lelee nchekwa spam ma ọ bụ junk gị.",
@@ -621,13 +613,10 @@
   "verifyEmailDiscardBody": "Akaụntụ a enwebeghị nkwenye. Ịpụ ugbu a ga-eme ka e wepụ ya, ị nwere ike iji email ọ bụla debanye aha ọzọ.",
   "verifyEmailDiscardAction": "Wepụ",
   "verifyEmailKeepWaiting": "Nọgide na-eche",
-  "expiringBadge": "{count, plural, =1{1 na-agwụ n'oge na-adịghị anya} other{{count} na-agwụ n'oge na-adịghị anya}}",
+  "expiringBadge": "{count, plural, =1{{count} na-agwụ n'oge na-adịghị anya} other{{count} na-agwụ n'oge na-adịghị anya}}",
   "noRecordsToday": "Enweghị ihe na-agwụ taa",
   "noRecordsTomorrow": "Enweghị ihe na-agwụ echi",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} na-agwụ taa} =1{{recordName} na-agwụ echi} other{{recordName} na-agwụ n'ime ụbọchị {days}}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} gị na-agwụ taa. Ị megharịala ya? Melite ụbọchị njedebe ya.} =1{{firstName}, {recordName} gị na-agwụ echi. Megharịa ya ugbu a ka ọ ghara ịla n'iyi.} other{{firstName}, {recordName} gị na-agwụ na {date}. Imegharị ya n'oge na-edobe gị na nchekwa.}}",
   "cascadeFinalStepTitle": "Ncheta ikpeazụ: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} gị na-agwụ {days, plural, =1{echi} other{n'ime ụbọchị {days}, na {date}}}. Nke a bụ ncheta ikpeazụ gị, megharịa ya ma ọ bụ melite ụbọchị ya.",
   "notificationsTitle": "Ihe ọkwa",
   "notificationsProfileEnabledSubtitle": "Ncheta na-abịa n'elekere {time}.",
   "notificationsProfileDisabledSubtitle": "A mụnyụọla ihe ọkwa.",
@@ -686,7 +675,7 @@
   "costCardTitle": "Ego imegharị",
   "costCardSubtitle": "Ọnụ ahịa ngbanwe gị, ọnwa site n’ọnwa",
   "costCardBusiest": "Ọnwa kacha efu: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{Ndekọ 1 na-abịa enweghị ego ya ugbu a.} other{Ndekọ {count} na-abịa enweghị ego ha ugbu a.}}",
+  "costCardMissing": "{count, plural, =1{Ndekọ {count} na-abịa enweghị ego ya ugbu a.} other{Ndekọ {count} na-abịa enweghị ego ha ugbu a.}}",
   "costCardEmpty": "Tinye ego na ndekọ gị ka ị hụ ihe imegharị ga-efu.",
   "costCardLockedHint": "Jiri Premium hụ ihe imegharị gị ga-efu n'afọ na-abịa.",
   "costCardSeePremium": "Lelee Premium",
@@ -694,7 +683,7 @@
   "familyTitle": "Ezinụlọ",
   "familyIntro": "Soro ndekọ ndị mmadụ ị na-elekọta. Ihe ncheta ha na-egosi aha ha ka ị mara onye nwe ndekọ ahụ.",
   "familyMe": "Mụ onwe m",
-  "familyRecordCount": "{count, plural, =0{Enweghị ndekọ} =1{Ndekọ 1} other{Ndekọ {count}}}",
+  "familyRecordCount": "{count, plural, =0{Enweghị ndekọ} =1{Ndekọ {count}} other{Ndekọ {count}}}",
   "familyRename": "Gbanwee aha",
   "familyRemove": "Wepụ",
   "familyRemoveTitle": "Wepụ {name}?",
@@ -707,10 +696,10 @@
   "familyNameLabel": "Aha",
   "familyNameHint": "Dịka ọmụmaatụ, Thabo",
   "familyNameRequired": "Tinye aha",
-  "familyLimitNote": "{count, plural, =1{Ruo mmadụ 1} other{Ruo mmadụ {count}}}",
+  "familyLimitNote": "{count, plural, =1{Ruo mmadụ {count}} other{Ruo mmadụ {count}}}",
   "familyUpsellTitle": "Soro akwụkwọ ezinụlọ gị",
   "familyBenefitPremium": "Ihe niile dị na Premium",
-  "familyBenefitPeople": "{count, plural, =1{Tinye mmadụ 1} other{Tinye ruo mmadụ {count}}}",
+  "familyBenefitPeople": "{count, plural, =1{Tinye mmadụ {count}} other{Tinye ruo mmadụ {count}}}",
   "familyBenefitOwnRecords": "Onye ọ bụla nwere ndekọ na ihe ncheta nke ya",
   "familyBenefitOneSubscription": "Ndebanye aha otu maka ezinụlọ dum",
   "familySeePlan": "Lelee atụmatụ Ezinụlọ",
@@ -896,14 +885,14 @@
   "calendarExportError": "Anyị enweghị ike imepụta faịlụ kalenda. Nwaa ọzọ.",
   "pdfExportTitle": "Ndekọ Vaultara",
   "pdfExportGenerated": "Emepụtara na {date}",
-  "pdfExportCount": "{count, plural, =1{Ndekọ 1} other{Ndekọ {count}}}",
+  "pdfExportCount": "{count, plural, =1{Ndekọ {count}} other{Ndekọ {count}}}",
   "pdfExportCost": "Ego imegharị: {amount}",
   "pdfExportBuilding": "Anyị na-akwado PDF gị...",
   "pdfExportError": "Anyị enweghị ike imepụta PDF ahụ. Nwaa ọzọ.",
   "travelTitle": "Nlele njem",
   "travelDeparture": "Ọpụpụ",
   "travelReturn": "Nlọghachi",
-  "travelTripLength": "{days, plural, =1{Njem ụbọchị 1} other{Njem ụbọchị {days}}}",
+  "travelTripLength": "{days, plural, =1{Njem ụbọchị {days}} other{Njem ụbọchị {days}}}",
   "travelDriving": "M ga-anya ụgbọala",
   "travelNeedsVisa": "Achọrọ m vịsa",
   "travelWho": "Onye na-aga njem?",
@@ -924,9 +913,9 @@
   "travelNoLicence": "Etinyeghị ikikere ịnya ụgbọala",
   "travelOtherExpires": "Na-agwụ mgbe ị na-anọghị",
   "travelDetailValidUntil": "{name} dị irè ruo {date}.",
-  "travelDetailPassportBuffer": "{name} na-agwụ na {date}. Ọtụtụ mba chọrọ ka ọ fọdụ {months, plural, =1{ọnwa 1} other{ọnwa {months}}} mgbe ị lọtara.",
+  "travelDetailPassportBuffer": "{name} na-agwụ na {date}. Ọtụtụ mba chọrọ ka ọ fọdụ {months, plural, =1{ọnwa {months}} other{ọnwa {months}}} mgbe ị lọtara.",
   "travelDetailExpiresBeforeLeaving": "{name} na-agwụ na {date}, tupu ị pụọ.",
-  "travelDetailExpiresDuringTrip": "{name} na-agwụ na {date}, {days, plural, =0{ụbọchị ị na-apụ} =1{ụbọchị 1 n'ime njem gị} other{ụbọchị {days} n'ime njem gị}}.",
+  "travelDetailExpiresDuringTrip": "{name} na-agwụ na {date}, {days, plural, =0{ụbọchị ị na-apụ} =1{ụbọchị {days} n'ime njem gị} other{ụbọchị {days} n'ime njem gị}}.",
   "travelDetailNoPassport": "Tinye paspọtụ gị ka Vaultara wee lelee ya.",
   "travelDetailNoVisa": "Tinye vịsa gị ka Vaultara wee lelee ya.",
   "travelDetailNoInsurance": "Tinye inshọransị njem gị iji lelee na ọ kpuchiri njem ahụ niile.",
@@ -978,7 +967,7 @@
   "travelInProgress": "Njem na-aga n'ihu",
   "travelTripEnded": "Njem agwụla",
   "travelAllGood": "Akwụkwọ niile adịla njikere",
-  "travelIssues": "{count, plural, =1{1 ihe chọrọ nlebara anya} other{Ihe {count} chọrọ nlebara anya}}",
+  "travelIssues": "{count, plural, =1{{count} ihe chọrọ nlebara anya} other{Ihe {count} chọrọ nlebara anya}}",
   "travelChecklistTitle": "Ndepụta nlele njem",
   "travelChecklistProgress": "{done} n'ime {total} emechara",
   "travelChecklistAdd": "Tinye",
@@ -998,7 +987,7 @@
   "travelTripTo": "Njem gaa {name}",
   "travelReminderTitle": "{days, plural, other{Njem gaa {name} n'ime ụbọchị {days}}}",
   "travelReminderTitleTomorrow": "Njem gaa {name} echi",
-  "travelReminderBodyIssues": "{count, plural, =1{1 akwụkwọ chọrọ nlebara anya tupu ị pụọ.} other{Akwụkwọ {count} chọrọ nlebara anya tupu ị pụọ.}}",
+  "travelReminderBodyIssues": "{count, plural, =1{{count} akwụkwọ chọrọ nlebara anya tupu ị pụọ.} other{Akwụkwọ {count} chọrọ nlebara anya tupu ị pụọ.}}",
   "travelReminderBodyOk": "Akwụkwọ gị adịla njikere. Mepee njem gị ka ị lelee ndepụta ahụ.",
   "travelTripLimit": "Ị nwere ike ichekwa ihe ruru njem {count}. Hichapụ njem ochie iji tinye nke ọhụrụ.",
   "recordLockTitle": "Kpọchie ndekọ a",
@@ -1026,7 +1015,7 @@
   "vaultChooseFromGallery": "Họrọ site na ọba foto",
   "vaultRemove": "Wepụ",
   "vaultLimitTitle": "I ruola oke foto",
-  "vaultLimitFreeBody": "Atụmatụ N'efu na-ekwe ka ị tinye {limit, plural, =1{foto 1} other{foto {limit}}} na ndekọ ọ bụla. Na Premium ị nwere ike itinye ruo {premiumLimit}.",
+  "vaultLimitFreeBody": "Atụmatụ N'efu na-ekwe ka ị tinye {limit, plural, =1{foto {limit}} other{foto {limit}}} na ndekọ ọ bụla. Na Premium ị nwere ike itinye ruo {premiumLimit}.",
   "vaultLimitPremiumBody": "Ị nwere ike itinye ruo foto {limit} na ndekọ ọ bụla. Wepụ otu ka ị tinye ọzọ.",
   "vaultSeePremium": "Lelee Premium",
   "vaultPdfShort": "PDF",
@@ -1034,7 +1023,7 @@
   "vaultOpenFile": "Mepee",
   "vaultClose": "Mechie",
   "vaultPageIndicator": "{current} n'ime {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{Foto 1} other{Foto {count}}}",
+  "vaultPhotosTooltip": "{count, plural, =1{Foto {count}} other{Foto {count}}}",
   "travelReadinessTitle": "Nkwadebe maka njem",
   "travelReadinessBody": "Ọ dabere na paspọtụ na ikikere ịnya ụgbọala echekwara na Vaultara. Ọtụtụ obodo chọrọ ka paspọtụ gị nwekwuo ọnwa isii opekata mpe mgbe ị laghachiri.",
   "travelReadyUntil": "Paspọtụ dị mma maka njem ruo {date}",
@@ -2139,8 +2128,8 @@
   "lifePlanAutoChanged": "Vaultara hụrụ na ndekọ a gbanwere, ya mere a kaara ya akara na emechara ya.",
   "lifePlanAutoAdded": "Etinyere mgbe ị malitere atụmatụ a.",
   "lifePlanProgress": "{done} n'ime {total} emechara",
-  "lifePlanDaysToGo": "{count, plural, =1{Ụbọchị 1 fọdụrụ} other{Ụbọchị {count} fọdụrụ}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Ụbọchị 1 gara aga} other{Ụbọchị {count} gara aga}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Ụbọchị {count} fọdụrụ} other{Ụbọchị {count} fọdụrụ}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Ụbọchị {count} gara aga} other{Ụbọchị {count} gara aga}}",
   "lifePlanAllDone": "Emechala ihe niile. Ị nwere ike ịka atụmatụ ahụ akara na emechara ya.",
   "lifePlanFinish": "Kaa akara na emechara",
   "lifePlanReopen": "Meghee ya ọzọ",
@@ -2269,7 +2258,7 @@
   "lifePlanReadAloudUnavailable": "Ịgụ n'olu dara ụda adịghị na ekwentị a.",
   "lifePlanProofPack": "Mepụta ngwugwu ihe akaebe",
   "lifePlanOpenFamily": "Mepee Ezinụlọ",
-  "lifePlanRemoved": "{count, plural, =1{Ndekọ 1 i hichapụrụ ka a gụrụ dị ka akagburu.} other{Ndekọ {count} i hichapụrụ ka a gụrụ dị ka akagburu.}}",
+  "lifePlanRemoved": "{count, plural, =1{Ndekọ {count} i hichapụrụ ka a gụrụ dị ka akagburu.} other{Ndekọ {count} i hichapụrụ ka a gụrụ dị ka akagburu.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2866,5 +2855,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} na-agwụ taa",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} na-agwụ echi",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} na-agwụ n'ime ụbọchị {days}} other{{recordName} na-agwụ n'ime ụbọchị {days}}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} agwụla",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Ndekọ a kpọchiri akpọchi chọrọ nlebara anya gị",
+  "remLockedBody": "Ụbọchị ya bụ {date}. Mepee Vaultara ka ịhụ ndekọ ọ bụ.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Ndekọ gị \"{recordName}\" na-agwụ taa.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Ndekọ gị \"{recordName}\" na-agwụ echi.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Ndekọ gị \"{recordName}\" na-agwụ na {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, ndekọ gị \"{recordName}\" na-agwụ taa.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, ndekọ gị \"{recordName}\" na-agwụ echi.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, ndekọ gị \"{recordName}\" na-agwụ na {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Ndekọ {person} \"{recordName}\" na-agwụ taa.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Ndekọ {person} \"{recordName}\" na-agwụ echi.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Ndekọ {person} \"{recordName}\" na-agwụ na {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Ndekọ gị \"{recordName}\" gwụrụ na {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Ndekọ {person} \"{recordName}\" gwụrụ na {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Ị megharịala ya? Melite ụbọchị ya.",
+  "remTipTomorrow": "Megharịa ya ugbu a ka ọ ghara ịgwụ.",
+  "remTipEarly": "Imegharị n'oge na-eme ka ị nọrọ n'udo.",
+  "remTipLast": "Nke a bụ ncheta ikpeazụ tupu ọ gwụ.",
+  "remTipExpired": "Megharịa ya, ma ọ bụ melite ụbọchị ya ma ọ bụrụ na i meela ya.",
+  "remStartBody": "Oge eruola ịmalite imegharị \"{recordName}\". Ọ na-agwụ na {date}, ya mere ọ bụrụ na ịmalite ugbu a, ị ga-enwe oge zuru ezu.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Oge eruola ịmalite imegharị \"{recordName}\" nke {person}. Ọ na-agwụ na {date}, ya mere ịmalite ugbu a na-ahapụ oge zuru ezu.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Ncheta njedebe",
+  "notifChannelDescription": "Ncheta tupu ndekọ gị agwụ",
+  "notifTestTitle": "Ọkwa nnwale",
+  "notifTestBody": "Ncheta Vaultara na-abịa otu a.",
+  "notifTestAction": "Zipu ọkwa nnwale",
+  "notifTestSubtitle": "Lelee na ncheta na-eru ekwentị a",
+  "notifTestSent": "Ezipụla nnwale. O kwesịrị ịbịa n'ime sekọnd ole na ole.",
+  "notifAfterExpiryTitle": "Chetara m mgbe ndekọ gwụrụ",
+  "notifAfterExpirySubtitle": "Ụbọchị 3 na 14 mgbe nke ahụ gasịrị, ma ọ bụrụ na a megharịghị ya",
+  "notifWeeklyTitle": "Nchịkọta Mọnde",
+  "notifWeeklySubtitle": "Ozi n'ụtụtụ Mọnde mgbe ihe ga-agwụ n'izu ahụ",
+  "notifPushSection": "Ezinụlọ na mmelite",
+  "notifHouseholdTitle": "Ndekọ ekesara",
+  "notifHouseholdSubtitle": "Mgbe ndekọ ekesara na-achọ ịgwụ ma ọ dịghị onye megharịrị ya",
+  "notifUpdatesTitle": "Mmelite ị rịọrọ",
+  "notifUpdatesSubtitle": "Mgbe mmadụ zitere nkọwa ọhụrụ nke ndekọ",
+  "notifSecurityNote": "A na-ezipụ ịdọ aka ná ntị gbasara ịbanye ọhụrụ n'akaụntụ gị mgbe niile.",
+  "notifIosHelpTitle": "Ị naghị enweta ncheta?",
+  "notifIosHelpSubtitle": "Lelee ntọala iPhone gị",
+  "notifIosHelpStep1": "Mepee Settings, wee Notifications, wee Vaultara, ma gbanye Allow Notifications.",
+  "notifIosHelpStep2": "Gbanye Lock Screen, Notification Centre na Banners.",
+  "notifIosHelpStep3": "Ọ bụrụ na ị na-eji Focus, tinye Vaultara na ngwa ọ na-ekwe.",
+  "notifIosHelpStep4": "Mepee Vaultara kwa izu ole na ole. iPhone na-echekwa naanị ọnụọgụ ncheta dị oke n'ihu, imepe ngwa ahụ na-ahazi ndị na-esote.",
+  "homeNextUpEmpty": "Ọ dịghị ihe ga-agwụ n'oge na-adịghị anya. Ihe niile adịla njikere.",
+  "homeDueSoonChip": "{count, plural, one{{count} ga-eru n'ime ụbọchị 30} other{{count} ga-eru n'ime ụbọchị 30}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Ụdị ndị a pịnara"
 }

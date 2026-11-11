@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "تاسو دلته لیدل خوشحالۍ ده. Vaultara تاسو سره مرسته کوي چې مهمې نیټې او ریکارډونه په یو خوندي ځای کې تنظیم کړئ.",
   "homeWelcomeSubtitleBack": "بیا مو لیدل خوښ شول. Vaultara هر وخت چمتو ده چې تاسو خپلې مهمې نیټې او ریکارډونه بیاکتنه کړئ.",
   "homeWelcomeTitle": "ښه راغلاست",
-  "summaryAllCaption": "په Vaultara کې تعقیب شوي",
-  "summaryExpiredTitle": "پای ته رسیدلي",
-  "summaryExpiredCaption": "د پای نېټه تېره شوې ده",
   "editorNotes": "یادښتونه",
   "editorReminderNone": "یادونه نشته",
   "editorReminderOnExpiry": "د پای نېټې په ورځ",
@@ -192,7 +189,6 @@
   "addRecord": "ریکارډ اضافه کړئ",
   "noRecordsYet": "تر اوسه هېڅ ریکارډ نشته.",
   "deleteRecordTitle": "ریکارډ ړنګ کړئ",
-  "summaryAllRecordsTitle": "ټول ریکارډونه",
   "noGroupFound": "تر اوسه ډلې نشته",
   "groupLabel": "{count, plural, one{{count} ډله} other{{count} ډلې}}",
   "recordsLabel": "{count, plural, one{{count} ریکارډ} other{{count} ریکارډونه}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "یادښتونه اضافه کړئ (اختیاري)",
   "expiryTimelineTitle": "د پای ته رسیدو مهالویش",
   "expiryTimelineSubtitle": "په هغه میاشت کې د پای ته رسیدونکو ریکارډونو لیدلو لپاره میاشت ټک کړئ",
-  "expiryTimelineDetailCount": "{count, plural, =1{۱ ریکارډ} other{{count} ریکارډونه}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} ریکارډ} other{{count} ریکارډونه}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "راتلونکي",
-  "summaryUpcomingCaption": "په 30 ورځو کې",
-  "summaryUrgentTitle": "بیړنی",
-  "summaryUrgentCaption": "په 7 ورځو کې",
   "profileHeaderTitle": "پروفایل",
   "profileTutorialsTitle": "لارښودونه",
   "profileTutorialsSubtitle": "د اپلیکیشن لارښودونه وګورئ",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "پریمیم",
   "reminderNone": "هیڅ یادونه نشته",
   "reminderOnExpiry": "د پای نیټې په ورځ",
-  "reminderDaysBefore": "{days, plural, one{1 ورځ مخکې} other{{days} ورځې مخکې}}",
+  "reminderDaysBefore": "{days, plural, one{{days} ورځ مخکې} other{{days} ورځې مخکې}}",
   "reminderCustomDaysTitle": "دودیزې ورځې دننه کړئ",
   "reminderCascadeTitle": "کاسکاډ یادونې",
   "reminderCascadeSubtitle": "د ریکارډ د پای نیټې څخه مخکې څو خبرتیاوې ترلاسه کړئ",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "خپل لومړی ریکارډ اضافه کړئ",
   "smartInsightNoRecordsBody": "د خپلو ریکارډونو تعقیب پیل کړئ، او Vaultara به دلته هوښیار لیدونه وښيي.",
   "smartInsightExpiresTodaySingleBody": "{name} نن پای ته رسېږي. که مو دمخه نوی کړی وي، نېټه دلته تازه کړئ.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} نن پای ته رسېږي.} =1{{names} او ۱ نور نن پای ته رسېږي.} other{{names} او {extra} نور نن پای ته رسېږي.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} نن پای ته رسېږي.} =1{{names} او {extra} نور نن پای ته رسېږي.} other{{names} او {extra} نور نن پای ته رسېږي.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} سبا پای ته رسېږي او یادونه نه لري. یوه یادونه تنظیم کړئ چې هېر یې نه کړئ.} other{{name} په {date} پای ته رسېږي او یادونه نه لري. یوه یادونه تنظیم کړئ چې هېر یې نه کړئ.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} په {dateA} او {b} په {dateB} پای ته رسېږي، نږدې په یو وخت. کله چې دوه ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.",
   "smartInsightCloseExpiriesBodyThree": "{a}، {b} او {c} ټول تر {lastDate} پورې پای ته رسېږي، نږدې په یو وخت. کله چې څو ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}، {b} او ۱ نور تر {lastDate} پورې پای ته رسېږي، نږدې په یو وخت. کله چې څو ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.} other{{a}، {b} او {extra} نور تر {lastDate} پورې پای ته رسېږي، نږدې په یو وخت. کله چې څو ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}، {b} او {extra} نور تر {lastDate} پورې پای ته رسېږي، نږدې په یو وخت. کله چې څو ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.} other{{a}، {b} او {extra} نور تر {lastDate} پورې پای ته رسېږي، نږدې په یو وخت. کله چې څو ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{په راتلونکې ورځ کې هېڅ شی پای ته نه رسېږي. ستاسو بل پای ته رسېدل په {date} دی.} other{په راتلونکو {days} ورځو کې هېڅ شی پای ته نه رسېږي. ستاسو بل پای ته رسېدل په {date} دی.}}",
-  "smartInsightClusterBody": "{count, plural, =1{د {category} کټګورۍ کې ستاسو ۱ ریکارډ په {date} پای ته رسېږي. له پامه غورځول یې اسانه دي.} other{د {category} کټګورۍ کې ستاسو {count} ریکارډونه تر {date} پورې پای ته رسېږي. کله چې داسې یو ځای وي، د یوه هېرول اسانه دي.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{۱ راتلونکی پای ته رسېدل په یادونه پوښل شوی دی. بل هېڅ شی ستاسو پاملرنې ته اړتیا نه لري.} other{{count} راتلونکي پای ته رسېدنې په یادونو پوښل شوې دي. بل هېڅ شی ستاسو پاملرنې ته اړتیا نه لري.}}",
+  "smartInsightClusterBody": "{count, plural, =1{د {category} کټګورۍ کې ستاسو {count} ریکارډ په {date} پای ته رسېږي. له پامه غورځول یې اسانه دي.} other{د {category} کټګورۍ کې ستاسو {count} ریکارډونه تر {date} پورې پای ته رسېږي. کله چې داسې یو ځای وي، د یوه هېرول اسانه دي.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} راتلونکی پای ته رسېدل په یادونه پوښل شوی دی. بل هېڅ شی ستاسو پاملرنې ته اړتیا نه لري.} other{{count} راتلونکي پای ته رسېدنې په یادونو پوښل شوې دي. بل هېڅ شی ستاسو پاملرنې ته اړتیا نه لري.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "هر څه تازه دي. اوس مهال هېڅ شی ستاسو پاملرنې ته اړتیا نه لري.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{اوس مهال هېڅ شی بېړنی نه دی، خو ۱ راتلونکی ریکارډ لا یادونه نه لري.} other{اوس مهال هېڅ شی بېړنی نه دی، خو {count} راتلونکي ریکارډونه لا یادونه نه لري.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{اوس مهال هېڅ شی بېړنی نه دی، خو {count} راتلونکی ریکارډ لا یادونه نه لري.} other{اوس مهال هېڅ شی بېړنی نه دی، خو {count} راتلونکي ریکارډونه لا یادونه نه لري.}}",
   "smartInsightCloseExpiriesHeading": "تقریباً په یو وخت کې پای ته رسیږي",
   "plansHeadline": "بشپړ Vaultara ترلاسه کړئ",
   "plansSubhead": "نامحدود ریکارډونه، ستاسو خپلې ډلې، او یادونې په کټ مټ هغه ډول تنظیم شوې چې تاسو یې غواړئ.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "دا حساب تایید شوی نه دی. اوس وتل دا لیرې کوي، او تاسو کولی شئ بیا د هر برېښنالیک پته سره راجستر شئ.",
   "verifyEmailDiscardAction": "لغوه کول",
   "verifyEmailKeepWaiting": "انتظار ته دوام ورکړئ",
-  "expiringBadge": "{count, plural, =1{1 ژر پای ته رسیږي} other{{count} ژر پای ته رسیږي}}",
+  "expiringBadge": "{count, plural, =1{{count} ژر پای ته رسیږي} other{{count} ژر پای ته رسیږي}}",
   "noRecordsToday": "نن هیڅ شی نه پای ته رسیږي",
   "noRecordsTomorrow": "سبا هیڅ شی نه پای ته رسیږي",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} نن پای ته رسیږي} =1{{recordName} سبا پای ته رسیږي} other{{recordName} په {days} ورځو کې پای ته رسیږي}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}، ستاسو {recordName} نن پای ته رسیږي. ایا دمخه مو نوی کړی دی؟ د پای ته رسیدو نیټه یې تازه کړئ.} =1{{firstName}، ستاسو {recordName} سبا پای ته رسیږي. همدا اوس یې نوی کړئ ترڅو باطل نشي.} other{{firstName}، ستاسو {recordName} په {date} پای ته رسیږي. وخته نوي کول تاسو خوندي ساتي.}}",
   "cascadeFinalStepTitle": "وروستی یادونه: {recordName}",
-  "cascadeFinalStepBody": "{firstName}، ستاسو {recordName} {days, plural, =1{سبا} other{په {days} ورځو کې، په {date}}} پای ته رسیږي. دا ستاسو وروستی یادونه ده، نوی یې کړئ یا یې نیټه تازه کړئ.",
   "notificationsTitle": "خبرتیاوې",
   "notificationsProfileEnabledSubtitle": "یادونې په {time} رارسیږي.",
   "notificationsProfileDisabledSubtitle": "خبرتیاوې بندې دي.",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "\"{recordName}\" نن پای ته رسیږي",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "\"{recordName}\" سبا پای ته رسیږي",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{\"{recordName}\" په {days} ورځ کې پای ته رسیږي} other{\"{recordName}\" په {days} ورځو کې پای ته رسیږي}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "\"{recordName}\" پای ته رسېدلی",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "یو بند شوی ریکارډ ستاسو پاملرنې ته اړتیا لري",
+  "remLockedBody": "د دې نېټه {date} ده. Vaultara خلاص کړئ ترڅو وګورئ چې کوم ریکارډ دی.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "ستاسو ریکارډ \"{recordName}\" نن پای ته رسیږي.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "ستاسو ریکارډ \"{recordName}\" سبا پای ته رسیږي.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "ستاسو ریکارډ \"{recordName}\" په {date} پای ته رسیږي.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}، ستاسو ریکارډ \"{recordName}\" نن پای ته رسیږي.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}، ستاسو ریکارډ \"{recordName}\" سبا پای ته رسیږي.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}، ستاسو ریکارډ \"{recordName}\" په {date} پای ته رسیږي.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: ریکارډ \"{recordName}\" نن پای ته رسیږي.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: ریکارډ \"{recordName}\" سبا پای ته رسیږي.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: ریکارډ \"{recordName}\" په {date} پای ته رسیږي.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "ستاسو ریکارډ \"{recordName}\" په {date} پای ته ورسېد.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: ریکارډ \"{recordName}\" په {date} پای ته ورسېد.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "مخکې مو نوی کړی؟ نېټه یې تازه کړئ.",
+  "remTipTomorrow": "اوس یې نوی کړئ چې پای ته ونه رسیږي.",
+  "remTipEarly": "ژر نوي کول تاسو خوندي ساتي.",
+  "remTipLast": "دا د پای ته رسېدو مخکې ستاسو وروستۍ یادونه ده.",
+  "remTipExpired": "نوی یې کړئ، یا که مو مخکې کړی وي نېټه یې تازه کړئ.",
+  "remStartBody": "د \"{recordName}\" د نوي کولو د پیل وخت دی. په {date} پای ته رسیږي، نو که اوس پیل کړئ ډېر وخت به ولرئ.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "د \"{recordName}\" ({person}) د نوي کولو د پیل وخت دی. په {date} پای ته رسیږي، نو اوس پیل کول کافي وخت ورکوي.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "د پای ته رسېدو یادونې",
+  "notifChannelDescription": "مخکې له دې چې ستاسو ریکارډونه پای ته ورسیږي یادونې",
+  "notifTestTitle": "ازمایښتي خبرتیا",
+  "notifTestBody": "د Vaultara یادونې داسې راځي.",
+  "notifTestAction": "ازمایښتي خبرتیا ولېږئ",
+  "notifTestSubtitle": "وګورئ چې یادونې دې تلیفون ته رسیږي",
+  "notifTestSent": "ازمایښت ولېږل شو. باید په څو ثانیو کې ورسیږي.",
+  "notifAfterExpiryTitle": "د ریکارډ له پای ته رسېدو وروسته یادونه وکړه",
+  "notifAfterExpirySubtitle": "3 او 14 ورځې وروسته، که نوی شوی نه وي",
+  "notifWeeklyTitle": "د دوشنبې لنډیز",
+  "notifWeeklySubtitle": "د دوشنبې په سهار یو پیغام کله چې په هغه اونۍ کې څه پای ته رسیږي",
+  "notifPushSection": "کورنۍ او تازه معلومات",
+  "notifHouseholdTitle": "شریک شوي ریکارډونه",
+  "notifHouseholdSubtitle": "کله چې یو شریک شوی ریکارډ پای ته نږدې وي او هیچا نوی کړی نه وي",
+  "notifUpdatesTitle": "هغه تازه معلومات چې تاسو غوښتي",
+  "notifUpdatesSubtitle": "کله چې څوک د ریکارډ نوي معلومات ولېږي",
+  "notifSecurityNote": "ستاسو حساب ته د نویو ننوتنو خبرتیاوې تل لېږل کیږي.",
+  "notifIosHelpTitle": "یادونې نه درځي؟",
+  "notifIosHelpSubtitle": "د خپل iPhone تنظیمات وګورئ",
+  "notifIosHelpStep1": "تنظیمات، بیا خبرتیاوې، بیا Vaultara پرانیزئ، او د خبرتیاوو اجازه فعاله کړئ.",
+  "notifIosHelpStep2": "د قفل پرده، د خبرتیاوو مرکز او بنرونه فعال کړئ.",
+  "notifIosHelpStep3": "که تمرکز کاروئ، Vaultara اجازه لرونکو اپونو ته ورزیات کړئ.",
+  "notifIosHelpStep4": "Vaultara هرو څو اونیو کې پرانیزئ. iPhone یوازې محدود شمېر راتلونکې یادونې ساتي، او د اپ پرانیستل راتلونکې پلان کوي.",
+  "homeNextUpEmpty": "ژر څه پای ته نه رسیږي. هر څه چمتو دي.",
+  "homeDueSoonChip": "{count, plural, one{په 30 ورځو کې {count}} other{په 30 ورځو کې {count}}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "ټاکل شوې کټګورۍ"
 }

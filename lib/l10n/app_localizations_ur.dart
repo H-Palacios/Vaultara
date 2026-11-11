@@ -360,15 +360,6 @@ class AppLocalizationsUr extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'آپ کو دوبارہ دیکھ کر خوشی ہوئی۔ Vaultara اس وقت تیار ہے جب آپ اپنی اہم تاریخوں اور ریکارڈز کا جائزہ لینا چاہیں۔';
 
   @override
-  String get summaryAllCaption => 'Vaultara میں ٹریک کی گئی';
-
-  @override
-  String get summaryExpiredTitle => 'میعاد ختم';
-
-  @override
-  String get summaryExpiredCaption => 'میعاد ختم ہونے کی تاریخ گزر چکی ہے';
-
-  @override
   String get editorNotes => 'نوٹس';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'ریکارڈ حذف کریں';
-
-  @override
-  String get summaryAllRecordsTitle => 'تمام ریکارڈز';
 
   @override
   String get noGroupFound => 'ابھی تک کوئی گروپ نہیں';
@@ -829,22 +817,10 @@ class AppLocalizationsUr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ریکارڈ',
-      one: '1 ریکارڈ',
+      one: '$count ریکارڈ',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'آنے والے';
-
-  @override
-  String get summaryUpcomingCaption => '30 دنوں میں';
-
-  @override
-  String get summaryUrgentTitle => 'فوری';
-
-  @override
-  String get summaryUrgentCaption => '7 دنوں میں';
 
   @override
   String get profileHeaderTitle => 'پروفائل';
@@ -945,7 +921,7 @@ class AppLocalizationsUr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days دن پہلے',
-      one: '1 دن پہلے',
+      one: '$days دن پہلے',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsUr extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names اور $extra مزید آج ختم ہو رہے ہیں۔',
-      one: '$names اور 1 مزید آج ختم ہو رہے ہیں۔',
+      one: '$names اور $extra مزید آج ختم ہو رہے ہیں۔',
       zero: '$names آج ختم ہو رہے ہیں۔',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsUr extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a، $b اور $extra مزید ریکارڈز $lastDate تک ختم ہو رہے ہیں، جو کہ تقریباً ایک ہی وقت ہے۔ جب کئی ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔',
-      one: '$a، $b اور 1 مزید ریکارڈ $lastDate تک ختم ہو رہے ہیں، جو کہ تقریباً ایک ہی وقت ہے۔ جب کئی ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔',
+      one: '$a، $b اور $extra مزید ریکارڈ $lastDate تک ختم ہو رہے ہیں، جو کہ تقریباً ایک ہی وقت ہے۔ جب کئی ریکارڈز اتنے قریب ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsUr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'آپ کے $category کے $count ریکارڈز $date تک ختم ہو رہے ہیں۔ جب ریکارڈز اس طرح اکٹھے ہوں تو کسی ایک کو بھول جانا آسان ہوتا ہے۔',
-      one: 'آپ کا $category کا 1 ریکارڈ $date کو ختم ہو رہا ہے۔ اس کو نظر انداز کرنا آسان ہے۔',
+      one: 'آپ کا $category کا $count ریکارڈ $date کو ختم ہو رہا ہے۔ اس کو نظر انداز کرنا آسان ہے۔',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsUr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'آنے والے $count ریکارڈز کے لیے یاد دہانیاں سیٹ ہیں۔ کسی اور چیز پر توجہ دینے کی ضرورت نہیں ہے۔',
-      one: 'آنے والے 1 ریکارڈ کے لیے یاد دہانی سیٹ ہے۔ کسی اور چیز پر توجہ دینے کی ضرورت نہیں ہے۔',
+      one: 'آنے والے $count ریکارڈ کے لیے یاد دہانی سیٹ ہے۔ کسی اور چیز پر توجہ دینے کی ضرورت نہیں ہے۔',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsUr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'اس وقت کچھ بھی فوری نہیں ہے، لیکن آنے والے $count ریکارڈز کی ابھی تک کوئی یاد دہانی نہیں ہے۔',
-      one: 'اس وقت کچھ بھی فوری نہیں ہے، لیکن آنے والے 1 ریکارڈ کی ابھی تک کوئی یاد دہانی نہیں ہے۔',
+      one: 'اس وقت کچھ بھی فوری نہیں ہے، لیکن آنے والے $count ریکارڈ کی ابھی تک کوئی یاد دہانی نہیں ہے۔',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsUr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days دن',
-      one: '1 دن',
+      one: '$days دن',
     );
     return 'یاد دہانی $position: $_temp0 پہلے';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsUr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ریکارڈز کی میعاد جلد ختم ہو رہی ہے',
-      one: '1 ریکارڈ کی میعاد جلد ختم ہو رہی ہے',
+      one: '$count ریکارڈ کی میعاد جلد ختم ہو رہی ہے',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsUr extends AppLocalizations {
   String get noRecordsTomorrow => 'کل کسی چیز کی میعاد ختم نہیں ہو رہی';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName کی میعاد $days دنوں میں ختم ہو رہی ہے',
-      one: '$recordName کی میعاد کل ختم ہو رہی ہے',
-      zero: '$recordName کی میعاد آج ختم ہو رہی ہے',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName، آپ کے ریکارڈ $recordName کی میعاد $date کو ختم ہو رہی ہے۔ بروقت تجدید میعاد کا تسلسل یقینی بناتی ہے۔',
-      one: '$firstName، آپ کے ریکارڈ $recordName کی میعاد کل ختم ہو رہی ہے۔ اب تجدید کریں تاکہ میعاد برقرار رہے۔',
-      zero: '$firstName، آپ کے ریکارڈ $recordName کی میعاد آج ختم ہو رہی ہے۔ کیا آپ نے پہلے ہی تجدید کر لی ہے؟ میعاد ختم ہونے کی تاریخ اپ ڈیٹ کریں۔',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'آخری یاد دہانی: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days دنوں میں، $date کو',
-      one: 'کل',
-    );
-    return '$firstName، آپ کے ریکارڈ $recordName کی میعاد $_temp0 ختم ہو رہی ہے۔ یہ آپ کی آخری یاد دہانی ہے، تجدید کریں یا میعاد کی تاریخ اپ ڈیٹ کریں۔';
   }
 
   @override
@@ -5017,7 +4958,7 @@ class AppLocalizationsUr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ریکارڈز آپ کی توجہ چاہتے ہیں',
-      one: '1 ریکارڈ آپ کی توجہ چاہتا ہے',
+      one: '$count ریکارڈ آپ کی توجہ چاہتا ہے',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsUr extends AppLocalizations {
       years,
       locale: localeName,
       other: 'عام طور پر $years سال کے لیے درست',
-      one: 'عام طور پر 1 سال کے لیے درست',
+      one: 'عام طور پر $years سال کے لیے درست',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsUr extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'یاد دہانی: $name کی میعاد $date کو ختم ہوگی';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName کی میعاد آج ختم ہو رہی ہے';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName کی میعاد کل ختم ہو رہی ہے';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName کی میعاد $days دن میں ختم ہو رہی ہے',
+      one: '$recordName کی میعاد $days دن میں ختم ہو رہی ہے',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName کی میعاد ختم ہو چکی ہے';
+  }
+
+  @override
+  String get remLockedTitle => 'ایک مقفل ریکارڈ پر آپ کی توجہ درکار ہے';
+
+  @override
+  String remLockedBody(String date) {
+    return 'اس کی تاریخ $date ہے۔ یہ دیکھنے کے لیے کہ کون سا ریکارڈ ہے، Vaultara کو اَن لاک کریں۔';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'آپ کے ریکارڈ \"$recordName\" کی میعاد آج ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'آپ کے ریکارڈ \"$recordName\" کی میعاد کل ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'آپ کے ریکارڈ \"$recordName\" کی میعاد $date کو ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName، آپ کے ریکارڈ \"$recordName\" کی میعاد آج ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName، آپ کے ریکارڈ \"$recordName\" کی میعاد کل ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName، آپ کے ریکارڈ \"$recordName\" کی میعاد $date کو ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: ریکارڈ \"$recordName\" کی میعاد آج ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: ریکارڈ \"$recordName\" کی میعاد کل ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: ریکارڈ \"$recordName\" کی میعاد $date کو ختم ہو رہی ہے۔';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'آپ کے ریکارڈ \"$recordName\" کی میعاد $date کو ختم ہو گئی۔';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: ریکارڈ \"$recordName\" کی میعاد $date کو ختم ہو گئی۔';
+  }
+
+  @override
+  String get remTipToday => 'پہلے ہی تجدید کر لی؟ اس کی تاریخ اپ ڈیٹ کریں۔';
+
+  @override
+  String get remTipTomorrow => 'ابھی تجدید کریں تاکہ میعاد ختم نہ ہو۔';
+
+  @override
+  String get remTipEarly => 'جلد تجدید آپ کو محفوظ رکھتی ہے۔';
+
+  @override
+  String get remTipLast => 'میعاد ختم ہونے سے پہلے یہ آپ کی آخری یاد دہانی ہے۔';
+
+  @override
+  String get remTipExpired => 'تجدید کریں، یا اگر پہلے ہی کر لی ہے تو تاریخ اپ ڈیٹ کریں۔';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" کی تجدید شروع کرنے کا وقت ہے۔ میعاد $date کو ختم ہو رہی ہے، اس لیے ابھی شروع کرنے سے آپ کے پاس کافی وقت ہوگا۔';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) کی تجدید شروع کرنے کا وقت ہے۔ میعاد $date کو ختم ہو رہی ہے، اس لیے ابھی شروع کرنے سے کافی وقت ہوگا۔';
+  }
+
+  @override
+  String get notifChannelName => 'میعاد کی یاد دہانیاں';
+
+  @override
+  String get notifChannelDescription => 'آپ کے ریکارڈز کی میعاد ختم ہونے سے پہلے یاد دہانیاں';
+
+  @override
+  String get notifTestTitle => 'آزمائشی اطلاع';
+
+  @override
+  String get notifTestBody => 'Vaultara کی یاد دہانیاں ایسے آتی ہیں۔';
+
+  @override
+  String get notifTestAction => 'آزمائشی اطلاع بھیجیں';
+
+  @override
+  String get notifTestSubtitle => 'چیک کریں کہ یاد دہانیاں اس فون تک پہنچتی ہیں';
+
+  @override
+  String get notifTestSent => 'آزمائش بھیج دی گئی۔ چند سیکنڈ میں پہنچ جانی چاہیے۔';
+
+  @override
+  String get notifAfterExpiryTitle => 'ریکارڈ کی میعاد ختم ہونے کے بعد یاد دلائیں';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 اور 14 دن بعد، اگر تجدید نہ ہوئی ہو';
+
+  @override
+  String get notifWeeklyTitle => 'پیر کا خلاصہ';
+
+  @override
+  String get notifWeeklySubtitle => 'پیر کی صبح ایک پیغام جب اس ہفتے کسی چیز کی میعاد ختم ہو رہی ہو';
+
+  @override
+  String get notifPushSection => 'گھرانہ اور اپ ڈیٹس';
+
+  @override
+  String get notifHouseholdTitle => 'شیئر کیے گئے ریکارڈ';
+
+  @override
+  String get notifHouseholdSubtitle => 'جب کسی شیئر کیے گئے ریکارڈ کی میعاد قریب ہو اور کسی نے تجدید نہ کی ہو';
+
+  @override
+  String get notifUpdatesTitle => 'آپ کی مانگی گئی اپ ڈیٹس';
+
+  @override
+  String get notifUpdatesSubtitle => 'جب کوئی کسی ریکارڈ کی نئی تفصیلات بھیجے';
+
+  @override
+  String get notifSecurityNote => 'آپ کے اکاؤنٹ میں نئے سائن اِنز کے الرٹس ہمیشہ بھیجے جاتے ہیں۔';
+
+  @override
+  String get notifIosHelpTitle => 'یاد دہانیاں نہیں مل رہیں؟';
+
+  @override
+  String get notifIosHelpSubtitle => 'اپنے iPhone کی ترتیبات چیک کریں';
+
+  @override
+  String get notifIosHelpStep1 => 'ترتیبات، پھر اطلاعات، پھر Vaultara کھولیں، اور اطلاعات کی اجازت دیں آن کریں۔';
+
+  @override
+  String get notifIosHelpStep2 => 'لاک اسکرین، اطلاعاتی مرکز اور بینرز آن کریں۔';
+
+  @override
+  String get notifIosHelpStep3 => 'اگر آپ فوکس استعمال کرتے ہیں تو Vaultara کو اجازت یافتہ ایپس میں شامل کریں۔';
+
+  @override
+  String get notifIosHelpStep4 => 'Vaultara کو ہر چند ہفتوں بعد کھولیں۔ iPhone صرف محدود تعداد میں آنے والی یاد دہانیاں رکھتا ہے، اور ایپ کھولنے سے اگلی یاد دہانیاں طے ہو جاتی ہیں۔';
+
+  @override
+  String get homeNextUpEmpty => 'جلد کسی چیز کی میعاد ختم نہیں ہو رہی۔ سب ٹھیک ہے۔';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 دن میں $count واجب',
+      one: '30 دن میں $count واجب',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'پن کی گئی کیٹیگریز';
 }

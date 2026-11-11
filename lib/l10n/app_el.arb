@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Το Vaultara σας βοηθά να παρακολουθείτε σημαντικές ημερομηνίες λήξης, ώστε τίποτα να μη λήγει «σιωπηλά».",
   "homeWelcomeSubtitleFirst": "Χαιρόμαστε που είστε εδώ. Το Vaultara σας βοηθά να μένετε οργανωμένοι, κρατώντας σημαντικές ημερομηνίες και εγγραφές σε ένα ασφαλές μέρος.",
   "homeWelcomeSubtitleBack": "Χαιρόμαστε που σας βλέπουμε ξανά. Το Vaultara είναι εδώ όποτε θέλετε να ελέγξετε τις σημαντικές ημερομηνίες και τις εγγραφές σας.",
-  "summaryAllCaption": "Παρακολουθούνται στο Vaultara",
-  "summaryExpiredTitle": "Έχουν λήξει",
-  "summaryExpiredCaption": "Μετά την ημερομηνία λήξης",
   "editorNotes": "Σημειώσεις",
   "editorReminderNone": "Χωρίς υπενθύμιση",
   "editorReminderOnExpiry": "Την ημέρα λήξης",
@@ -199,7 +196,6 @@
   "addRecord": "Προσθήκη εγγραφής",
   "noRecordsYet": "Δεν υπάρχουν εγγραφές ακόμα.",
   "deleteRecordTitle": "Διαγραφή εγγραφής",
-  "summaryAllRecordsTitle": "Όλες οι εγγραφές",
   "noGroupFound": "Δεν υπάρχουν ομάδες ακόμα",
   "groupLabel": "{count, plural, one{{count} ομάδα} other{{count} ομάδες}}",
   "recordsLabel": "{count, plural, one{{count} εγγραφή} other{{count} εγγραφές}}",
@@ -444,7 +440,7 @@
   "addNotesHint": "Προσθήκη σημειώσεων (προαιρετικό)",
   "expiryTimelineTitle": "Χρονοδιάγραμμα λήξης",
   "expiryTimelineSubtitle": "Πατήστε έναν μήνα για να δείτε τις εγγραφές που λήγουν σε αυτόν τον μήνα",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 εγγραφή} other{{count} εγγραφές}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} εγγραφή} other{{count} εγγραφές}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -452,10 +448,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Επερχόμενα",
-  "summaryUpcomingCaption": "Εντός 30 ημερών",
-  "summaryUrgentTitle": "Επείγον",
-  "summaryUrgentCaption": "Εντός 7 ημερών",
   "profileHeaderTitle": "Προφίλ",
   "profileTutorialsTitle": "Οδηγοί",
   "profileTutorialsSubtitle": "Περιήγηση στους Οδηγούς Εφαρμογής",
@@ -487,7 +479,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Χωρίς υπενθύμιση",
   "reminderOnExpiry": "Στη λήξη",
-  "reminderDaysBefore": "{days, plural, one{1 ημέρα πριν} other{{days} ημέρες πριν}}",
+  "reminderDaysBefore": "{days, plural, one{{days} ημέρα πριν} other{{days} ημέρες πριν}}",
   "reminderCustomDaysTitle": "Εισάγετε προσαρμοσμένες ημέρες",
   "reminderCascadeTitle": "Κλιμακωτές υπενθυμίσεις",
   "reminderCascadeSubtitle": "Λάβετε πολλαπλές ειδοποιήσεις πριν λήξει μια εγγραφή",
@@ -518,16 +510,16 @@
   "smartInsightNoRecordsHeading": "Προσθέστε την πρώτη σας εγγραφή",
   "smartInsightNoRecordsBody": "Ξεκινήστε την παρακολούθηση των εγγραφών σας και το Vaultara θα εμφανίσει έξυπνες πληροφορίες εδώ.",
   "smartInsightExpiresTodaySingleBody": "Το στοιχείο {name} λήγει σήμερα. Αν το έχετε ήδη ανανεώσει, ενημερώστε την ημερομηνία εδώ.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{Τα στοιχεία {names} λήγουν σήμερα.} =1{Τα στοιχεία {names} και 1 ακόμη λήγουν σήμερα.} other{Τα στοιχεία {names} και {extra} ακόμη λήγουν σήμερα.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{Τα στοιχεία {names} λήγουν σήμερα.} =1{Τα στοιχεία {names} και {extra} ακόμη λήγουν σήμερα.} other{Τα στοιχεία {names} και {extra} ακόμη λήγουν σήμερα.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{Το στοιχείο {name} λήγει αύριο και δεν έχει υπενθύμιση. Ορίστε μία για να μην το ξεχάσετε.} other{Το στοιχείο {name} λήγει στις {date} και δεν έχει υπενθύμιση. Ορίστε μία για να μην το ξεχάσετε.}}",
   "smartInsightCloseExpiriesBodyTwo": "Το στοιχείο {a} λήγει στις {dateA} και το {b} στις {dateB}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν δύο εγγραφές είναι τόσο κοντά.",
   "smartInsightCloseExpiriesBodyThree": "Τα στοιχεία {a}, {b} και {c} λήγουν έως τις {lastDate}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{Τα στοιχεία {a}, {b} και 1 ακόμη εγγραφή λήγουν έως τις {lastDate}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.} other{Τα στοιχεία {a}, {b} και {extra} ακόμη εγγραφές λήγουν έως τις {lastDate}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{Τα στοιχεία {a}, {b} και {extra} ακόμη εγγραφή λήγουν έως τις {lastDate}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.} other{Τα στοιχεία {a}, {b} και {extra} ακόμη εγγραφές λήγουν έως τις {lastDate}, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Τίποτα δεν λήγει την επόμενη ημέρα. Η επόμενη προθεσμία σας είναι στις {date}.} other{Τίποτα δεν λήγει τις επόμενες {days} ημέρες. Η επόμενη προθεσμία σας είναι στις {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 από τις εγγραφές σας στην κατηγορία {category} λήγει στις {date}. Είναι εύκολο να παραβλεφθεί.} other{{count} από τις εγγραφές σας στην κατηγορία {category} λήγουν έως τις {date}. Είναι εύκολο να ξεχάσετε μία όταν είναι ομαδοποιημένες έτσι.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 επόμενη λήξη καλύπτεται από υπενθύμιση. Τίποτα άλλο δεν απαιτεί την προσοχή σας.} other{{count} επόμενες λήξεις καλύπτονται από υπενθυμίσεις. Τίποτα άλλο δεν απαιτεί την προσοχή σας.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} από τις εγγραφές σας στην κατηγορία {category} λήγει στις {date}. Είναι εύκολο να παραβλεφθεί.} other{{count} από τις εγγραφές σας στην κατηγορία {category} λήγουν έως τις {date}. Είναι εύκολο να ξεχάσετε μία όταν είναι ομαδοποιημένες έτσι.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} επόμενη λήξη καλύπτεται από υπενθύμιση. Τίποτα άλλο δεν απαιτεί την προσοχή σας.} other{{count} επόμενες λήξεις καλύπτονται από υπενθυμίσεις. Τίποτα άλλο δεν απαιτεί την προσοχή σας.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Όλα είναι ενημερωμένα. Δεν υπάρχει κάτι που να απαιτεί την προσοχή σας αυτή τη στιγμή.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά 1 επόμενη εγγραφή δεν έχει ακόμη υπενθύμιση.} other{Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά {count} επόμενες εγγραφές δεν έχουν ακόμη υπενθύμιση.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά {count} επόμενη εγγραφή δεν έχει ακόμη υπενθύμιση.} other{Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά {count} επόμενες εγγραφές δεν έχουν ακόμη υπενθύμιση.}}",
   "smartInsightCloseExpiriesHeading": "Λήγουν περίπου την ίδια χρονική περίοδο",
   "plansHeadline": "Αποκτήστε την πλήρη εμπειρία του Vaultara",
   "plansSubhead": "Απεριόριστες εγγραφές, δικές σας ομάδες και υπενθυμίσεις ρυθμισμένες ακριβώς όπως θέλετε.",
@@ -614,7 +606,7 @@
   "reminderCascadeRemoveStep": "Κατάργηση",
   "reminderCascadeDuplicate": "Μια άλλη υπενθύμιση χρησιμοποιεί ήδη αυτήν την ημέρα",
   "reminderCascadeOutOfRange": "Εισαγάγετε μεταξύ {min} και {max} ημερών",
-  "reminderCascadeStepLabel": "Υπενθύμιση {position}: {days, plural, =1{1 ημέρα} other{{days} ημέρες}} πριν",
+  "reminderCascadeStepLabel": "Υπενθύμιση {position}: {days, plural, =1{{days} ημέρα} other{{days} ημέρες}} πριν",
   "expiryTimelineNotReady": "Το χρονοδιάγραμμά σας εμφανίζεται μόλις έχετε εγγραφές που λήγουν σε μερικούς διαφορετικούς μήνες.",
   "verifyEmailResendIn": "Αποστολή ξανά σε {seconds}δ",
   "verifyEmailSpamHint": "Δεν είναι εκεί; Ελέγξτε τον φάκελο με τα ανεπιθύμητα (spam).",
@@ -623,13 +615,10 @@
   "verifyEmailDiscardBody": "Αυτός ο λογαριασμός δεν έχει επαληθευτεί. Αν αποχωρήσετε τώρα θα διαγραφεί και θα μπορείτε να εγγραφείτε ξανά με οποιαδήποτε διεύθυνση email.",
   "verifyEmailDiscardAction": "Απόρριψη",
   "verifyEmailKeepWaiting": "Συνέχεια αναμονής",
-  "expiringBadge": "{count, plural, =1{1 λήγει σύντομα} other{{count} λήγουν σύντομα}}",
+  "expiringBadge": "{count, plural, =1{{count} λήγει σύντομα} other{{count} λήγουν σύντομα}}",
   "noRecordsToday": "Τίποτα δεν λήγει σήμερα",
   "noRecordsTomorrow": "Τίποτα δεν λήγει αύριο",
-  "cascadeStepTitle": "{days, plural, =0{Το {recordName} λήγει σήμερα} =1{Το {recordName} λήγει αύριο} other{Το {recordName} λήγει σε {days} ημέρες}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, το {recordName} λήγει σήμερα. Το ανανεώσατε ήδη; Ενημερώστε την ημερομηνία λήξης.} =1{{firstName}, το {recordName} λήγει αύριο. Ανανεώστε το τώρα για να μην λήξει.} other{{firstName}, το {recordName} λήγει στις {date}. Η πρόωρη ανανέωση σας κρατά καλυμμένους.}}",
   "cascadeFinalStepTitle": "Τελευταία υπενθύμιση: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, το {recordName} λήγει {days, plural, =1{αύριο} other{σε {days} ημέρες, στις {date}}}. Αυτή είναι η τελευταία σας υπενθύμιση, ανανεώστε το ή ενημερώστε την ημερομηνία.",
   "notificationsTitle": "Ειδοποιήσεις",
   "notificationsProfileEnabledSubtitle": "Οι υπενθυμίσεις φτάνουν στις {time}.",
   "notificationsProfileDisabledSubtitle": "Οι ειδοποιήσεις είναι απενεργοποιημένες.",
@@ -1356,7 +1345,7 @@
   "photoLockTurnOn": "Ενεργοποίηση κρυπτογραφημένων φωτογραφιών",
   "photoLockStatusOn": "Οι κρυπτογραφημένες φωτογραφίες είναι ενεργές",
   "photoLockStatusOnBody": "Οι νέες φωτογραφίες κρυπτογραφούνται σε αυτό το τηλέφωνο πριν ανέβουν.",
-  "photoLockPendingTitle": "{count, plural, one{1 φωτογραφία δεν είναι ακόμη κρυπτογραφημένη} other{{count} φωτογραφίες δεν είναι ακόμη κρυπτογραφημένες}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} φωτογραφία δεν είναι ακόμη κρυπτογραφημένη} other{{count} φωτογραφίες δεν είναι ακόμη κρυπτογραφημένες}}",
   "photoLockPendingBody": "Οι φωτογραφίες που προσθέσατε πριν ενεργοποιήσετε αυτή τη λειτουργία αποθηκεύονται ακόμη με τον κανονικό τρόπο.",
   "photoLockEncryptExisting": "Κρυπτογράφηση των υπαρχουσών φωτογραφιών μου",
   "photoLockKeepOpen": "Κρατήστε το Vaultara ανοιχτό μέχρι να ολοκληρωθεί.",
@@ -1393,7 +1382,7 @@
   "photoLockSetupFailed": "Δεν ήταν δυνατή η ενεργοποίηση των κρυπτογραφημένων φωτογραφιών. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
   "photoLockAlreadyOn": "Οι κρυπτογραφημένες φωτογραφίες είναι ήδη ενεργές για τον λογαριασμό σας. Εισαγάγετε το κλειδί ανάκτησης για να τις χρησιμοποιήσετε σε αυτό το τηλέφωνο.",
   "photoLockEncryptExistingTitle": "Κρυπτογράφηση των υπαρχουσών φωτογραφιών;",
-  "photoLockEncryptExistingBody": "{count, plural, one{Έχετε 1 φωτογραφία που δεν είναι ακόμη κρυπτογραφημένη. Μπορούμε να την κρυπτογραφήσουμε τώρα.} other{Έχετε {count} φωτογραφίες που δεν είναι ακόμη κρυπτογραφημένες. Μπορούμε να τις κρυπτογραφήσουμε τώρα.}} Κρατήστε το Vaultara ανοιχτό μέχρι να ολοκληρωθεί.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Έχετε {count} φωτογραφία που δεν είναι ακόμη κρυπτογραφημένη. Μπορούμε να την κρυπτογραφήσουμε τώρα.} other{Έχετε {count} φωτογραφίες που δεν είναι ακόμη κρυπτογραφημένες. Μπορούμε να τις κρυπτογραφήσουμε τώρα.}} Κρατήστε το Vaultara ανοιχτό μέχρι να ολοκληρωθεί.",
   "photoLockEncryptNow": "Κρυπτογράφηση τώρα",
   "photoLockEntryBody": "Εισαγάγετε το κλειδί ανάκτησης που αποθηκεύσατε όταν ενεργοποιήσατε τις κρυπτογραφημένες φωτογραφίες. Οι παύλες και τα κενά είναι προαιρετικά.",
   "photoLockEntryLabel": "Κλειδί ανάκτησης",
@@ -1402,8 +1391,8 @@
   "photoLockUnlocked": "Οι φωτογραφίες σας είναι ξεκλείδωτες σε αυτό το τηλέφωνο.",
   "photoLockInvalidFormat": "Αυτό δεν μοιάζει με κλειδί ανάκτησης. Ελέγξτε κάθε χαρακτήρα και δοκιμάστε ξανά.",
   "photoLockWrongKey": "Αυτό το κλειδί ανάκτησης δεν ταιριάζει. Ελέγξτε το και δοκιμάστε ξανά.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Πάρα πολλές προσπάθειες. Περιμένετε 1 δευτερόλεπτο και δοκιμάστε ξανά.} other{Πάρα πολλές προσπάθειες. Περιμένετε {seconds} δευτερόλεπτα και δοκιμάστε ξανά.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Πάρα πολλές προσπάθειες. Περιμένετε 1 λεπτό και δοκιμάστε ξανά.} other{Πάρα πολλές προσπάθειες. Περιμένετε {minutes} λεπτά και δοκιμάστε ξανά.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Πάρα πολλές προσπάθειες. Περιμένετε {seconds} δευτερόλεπτο και δοκιμάστε ξανά.} other{Πάρα πολλές προσπάθειες. Περιμένετε {seconds} δευτερόλεπτα και δοκιμάστε ξανά.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Πάρα πολλές προσπάθειες. Περιμένετε {minutes} λεπτό και δοκιμάστε ξανά.} other{Πάρα πολλές προσπάθειες. Περιμένετε {minutes} λεπτά και δοκιμάστε ξανά.}}",
   "photoLockOffline": "Δεν ήταν δυνατή η επικοινωνία με το Vaultara. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
   "photoLockNotSetUp": "Οι κρυπτογραφημένες φωτογραφίες δεν είναι ενεργές για τον λογαριασμό σας.",
   "photoLockUnlockFailed": "Κάτι πήγε στραβά. Δοκιμάστε ξανά.",
@@ -1659,13 +1648,13 @@
   "dailyDigestSwitchSubtitle": "Λάβετε μία ειδοποίηση την ώρα της υπενθύμισής σας με ό,τι λήγει εκείνη την ημέρα.",
   "dailyDigestTurnedOn": "Οι υπενθυμίσεις σας έρχονται πλέον ως μία ημερήσια σύνοψη.",
   "dailyDigestTurnedOff": "Οι ξεχωριστές υπενθυμίσεις για κάθε εγγραφή είναι ξανά ενεργές.",
-  "dailyDigestTitle": "{count, plural, one{1 εγγραφή χρειάζεται την προσοχή σας} other{{count} εγγραφές χρειάζονται την προσοχή σας}}",
+  "dailyDigestTitle": "{count, plural, one{{count} εγγραφή χρειάζεται την προσοχή σας} other{{count} εγγραφές χρειάζονται την προσοχή σας}}",
   "dailyDigestBody": "Έρχονται: {names}.",
   "dailyDigestBodyMore": "Έρχονται: {names} και άλλες {count}.",
   "dailyDigestLockedRecord": "μια κλειδωμένη εγγραφή",
   "renewReasonRepeat": "{months, plural, one{Με βάση τη ρύθμιση επανάληψης κάθε μήνα} other{Με βάση τη ρύθμιση επανάληψης κάθε {months} μήνες}}",
   "renewReasonHistory": "{count, plural, one{Με βάση την τελευταία σας ανανέωση} other{Με βάση τις τελευταίες {count} ανανεώσεις σας}}",
-  "renewReasonTypical": "{years, plural, one{Συνήθως ισχύει για 1 έτος} other{Συνήθως ισχύει για {years} έτη}}",
+  "renewReasonTypical": "{years, plural, one{Συνήθως ισχύει για {years} έτος} other{Συνήθως ισχύει για {years} έτη}}",
   "renewChangeHint": "Πατήστε την ημερομηνία για να την αλλάξετε.",
   "renewPickDate": "Επιλέξτε τη νέα ημερομηνία λήξης",
   "renewPickDateHint": "Επιλέξτε την ημερομηνία που αναγράφεται στο νέο σας έγγραφο.",
@@ -1818,9 +1807,9 @@
   "secHistoryIntro": "Συνδέσεις και αλλαγές στον λογαριασμό σας τις τελευταίες 90 ημέρες.",
   "secHistoryEmpty": "Δεν υπάρχει τίποτα για εμφάνιση ακόμα.",
   "secJustNow": "Μόλις τώρα",
-  "secMinutesAgo": "{count, plural, one{Πριν από 1 λεπτό} other{Πριν από {count} λεπτά}}",
-  "secHoursAgo": "{count, plural, one{Πριν από 1 ώρα} other{Πριν από {count} ώρες}}",
-  "secDaysAgo": "{count, plural, one{Πριν από 1 ημέρα} other{Πριν από {count} ημέρες}}",
+  "secMinutesAgo": "{count, plural, one{Πριν από {count} λεπτό} other{Πριν από {count} λεπτά}}",
+  "secHoursAgo": "{count, plural, one{Πριν από {count} ώρα} other{Πριν από {count} ώρες}}",
+  "secDaysAgo": "{count, plural, one{Πριν από {count} ημέρα} other{Πριν από {count} ημέρες}}",
   "secEventNewSignIn": "Σύνδεση από νέα συσκευή",
   "secEventSignIn": "Σύνδεση",
   "secEventPasswordChanged": "Ο κωδικός άλλαξε",
@@ -2329,7 +2318,7 @@
   "lostWalletCheckupBody": "Προετοιμαστείτε τώρα, για να μην ξεχαστεί τίποτα αν χαθεί.",
   "lostWalletCheckupAllGood": "Όλα έτοιμα. Αν χαθεί ποτέ, είστε προετοιμασμένοι.",
   "lostWalletSetPlaceBody": "Ανοίξτε μια κάρτα ή ένα έγγραφο και επιλέξτε πού το φυλάτε. Κάντε το για ταυτότητα, δίπλωμα και κάρτες.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 στοιχείο δεν έχει φωτογραφία. Με φωτογραφία η αντικατάσταση γίνεται πιο γρήγορα.} other{{count} στοιχεία δεν έχουν φωτογραφία. Με φωτογραφίες η αντικατάσταση γίνεται πιο γρήγορα.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} στοιχείο δεν έχει φωτογραφία. Με φωτογραφία η αντικατάσταση γίνεται πιο γρήγορα.} other{{count} στοιχεία δεν έχουν φωτογραφία. Με φωτογραφίες η αντικατάσταση γίνεται πιο γρήγορα.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2337,7 +2326,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 κάρτα δεν έχει αποθηκευμένο τηλέφωνο για χαμένη κάρτα.} other{{count} κάρτες δεν έχουν αποθηκευμένο τηλέφωνο για χαμένη κάρτα.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} κάρτα δεν έχει αποθηκευμένο τηλέφωνο για χαμένη κάρτα.} other{{count} κάρτες δεν έχουν αποθηκευμένο τηλέφωνο για χαμένη κάρτα.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2437,7 +2426,7 @@
     }
   },
   "lostWalletReportNoCase": "Αριθμός δήλωσης: δεν έχει δηλωθεί ακόμα",
-  "lostWalletReportCount": "{count, plural, =1{1 στοιχείο παρακάτω} other{{count} στοιχεία παρακάτω}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} στοιχείο παρακάτω} other{{count} στοιχεία παρακάτω}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2472,7 +2461,7 @@
   "tutorialsGroupTravelFamily": "Ταξίδια και οικογένεια",
   "tutorialsGroupEmergencies": "Γεγονότα ζωής και έκτακτα περιστατικά",
   "tutorialsGroupPaid": "Επί πληρωμή λειτουργίες",
-  "tutorialsSteps": "{count, plural, one{1 βήμα} other{{count} βήματα}}",
+  "tutorialsSteps": "{count, plural, one{{count} βήμα} other{{count} βήματα}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2868,5 +2857,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "Το «{recordName}» λήγει σήμερα",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "Το «{recordName}» λήγει αύριο",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{Το «{recordName}» λήγει σε {days} ημέρα} other{Το «{recordName}» λήγει σε {days} ημέρες}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "Το «{recordName}» έληξε",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Μια κλειδωμένη εγγραφή χρειάζεται την προσοχή σας",
+  "remLockedBody": "Η ημερομηνία της είναι {date}. Ξεκλειδώστε το Vaultara για να δείτε ποια εγγραφή είναι.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Η εγγραφή σας «{recordName}» λήγει σήμερα.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Η εγγραφή σας «{recordName}» λήγει αύριο.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Η εγγραφή σας «{recordName}» λήγει στις {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, η εγγραφή σας «{recordName}» λήγει σήμερα.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, η εγγραφή σας «{recordName}» λήγει αύριο.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, η εγγραφή σας «{recordName}» λήγει στις {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: η εγγραφή «{recordName}» λήγει σήμερα.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: η εγγραφή «{recordName}» λήγει αύριο.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: η εγγραφή «{recordName}» λήγει στις {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Η εγγραφή σας «{recordName}» έληξε στις {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: η εγγραφή «{recordName}» έληξε στις {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Την ανανεώσατε ήδη; Ενημερώστε την ημερομηνία.",
+  "remTipTomorrow": "Ανανεώστε την τώρα για να μη λήξει.",
+  "remTipEarly": "Η έγκαιρη ανανέωση σας κρατά καλυμμένους.",
+  "remTipLast": "Αυτή είναι η τελευταία υπενθύμιση πριν από τη λήξη.",
+  "remTipExpired": "Ανανεώστε την ή ενημερώστε την ημερομηνία αν το κάνατε ήδη.",
+  "remStartBody": "Ήρθε η ώρα να ξεκινήσετε την ανανέωση του «{recordName}». Λήγει στις {date}, οπότε αν ξεκινήσετε τώρα θα έχετε άφθονο χρόνο.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Ήρθε η ώρα να ξεκινήσετε την ανανέωση του «{recordName}» ({person}). Λήγει στις {date}, οπότε αν ξεκινήσετε τώρα υπάρχει άφθονος χρόνος.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Υπενθυμίσεις λήξης",
+  "notifChannelDescription": "Υπενθυμίσεις πριν λήξουν οι εγγραφές σας",
+  "notifTestTitle": "Δοκιμαστική ειδοποίηση",
+  "notifTestBody": "Έτσι φτάνουν οι υπενθυμίσεις του Vaultara.",
+  "notifTestAction": "Αποστολή δοκιμαστικής ειδοποίησης",
+  "notifTestSubtitle": "Ελέγξτε ότι οι υπενθυμίσεις φτάνουν σε αυτό το τηλέφωνο",
+  "notifTestSent": "Η δοκιμή στάλθηκε. Θα φτάσει σε λίγα δευτερόλεπτα.",
+  "notifAfterExpiryTitle": "Υπενθύμιση μετά τη λήξη μιας εγγραφής",
+  "notifAfterExpirySubtitle": "3 και 14 ημέρες μετά, αν δεν έχει ανανεωθεί",
+  "notifWeeklyTitle": "Σύνοψη Δευτέρας",
+  "notifWeeklySubtitle": "Ένα μήνυμα τη Δευτέρα το πρωί όταν κάτι λήγει εκείνη την εβδομάδα",
+  "notifPushSection": "Νοικοκυριό και ενημερώσεις",
+  "notifHouseholdTitle": "Κοινόχρηστες εγγραφές",
+  "notifHouseholdSubtitle": "Όταν μια κοινόχρηστη εγγραφή πλησιάζει στη λήξη και κανείς δεν την έχει ανανεώσει",
+  "notifUpdatesTitle": "Ενημερώσεις που ζητήσατε",
+  "notifUpdatesSubtitle": "Όταν κάποιος στέλνει τα νέα στοιχεία μιας εγγραφής",
+  "notifSecurityNote": "Οι ειδοποιήσεις για νέες συνδέσεις στον λογαριασμό σας στέλνονται πάντα.",
+  "notifIosHelpTitle": "Δεν λαμβάνετε υπενθυμίσεις;",
+  "notifIosHelpSubtitle": "Ελέγξτε τις ρυθμίσεις του iPhone",
+  "notifIosHelpStep1": "Ανοίξτε τις Ρυθμίσεις, μετά Γνωστοποιήσεις, μετά Vaultara, και ενεργοποιήστε την Αποδοχή γνωστοποιήσεων.",
+  "notifIosHelpStep2": "Ενεργοποιήστε Οθόνη κλειδώματος, Κέντρο γνωστοποιήσεων και Πλαίσια.",
+  "notifIosHelpStep3": "Αν χρησιμοποιείτε Εστίαση, προσθέστε το Vaultara στις επιτρεπόμενες εφαρμογές.",
+  "notifIosHelpStep4": "Ανοίγετε το Vaultara κάθε λίγες εβδομάδες. Το iPhone κρατά μόνο περιορισμένο αριθμό μελλοντικών υπενθυμίσεων και το άνοιγμα της εφαρμογής προγραμματίζει τις επόμενες.",
+  "homeNextUpEmpty": "Τίποτα δεν λήγει σύντομα. Όλα είναι εντάξει.",
+  "homeDueSoonChip": "{count, plural, one{{count} λήγει σε 30 ημέρες} other{{count} λήγουν σε 30 ημέρες}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Καρφιτσωμένες κατηγορίες"
 }

@@ -360,15 +360,6 @@ class AppLocalizationsKk extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Қайта көргенімізге қуаныштымыз. Vaultara маңызды күндерді қарау үшін әрқашан дайын.';
 
   @override
-  String get summaryAllCaption => 'Vaultara жүйесінде';
-
-  @override
-  String get summaryExpiredTitle => 'Аяқталған';
-
-  @override
-  String get summaryExpiredCaption => 'Мерзімі өткен';
-
-  @override
   String get editorNotes => 'Ескертпелер';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Жазбаны жою';
-
-  @override
-  String get summaryAllRecordsTitle => 'Барлық жазбалар';
 
   @override
   String get noGroupFound => 'Әзірге топтар жоқ';
@@ -829,22 +817,10 @@ class AppLocalizationsKk extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count жазба',
-      one: '1 жазба',
+      one: '$count жазба',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Алдағы';
-
-  @override
-  String get summaryUpcomingCaption => 'Келесі 30 күн ішінде';
-
-  @override
-  String get summaryUrgentTitle => 'Шұғыл';
-
-  @override
-  String get summaryUrgentCaption => 'Келесі 7 күн ішінде';
 
   @override
   String get profileHeaderTitle => 'Профиль';
@@ -945,7 +921,7 @@ class AppLocalizationsKk extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days күн бұрын',
-      one: '1 күн бұрын',
+      one: '$days күн бұрын',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsKk extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names және тағы $extra жазба бүгін өтеді.',
-      one: '$names және тағы 1 жазба бүгін өтеді.',
+      one: '$names және тағы $extra жазба бүгін өтеді.',
       zero: '$names мерзімі бүгін өтеді.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsKk extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b және тағы $extra жазба $lastDate мерзіміне дейін, шамамен бір уақытта өтеді. Бірнеше жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.',
-      one: '$a, $b және тағы 1 жазба $lastDate мерзіміне дейін, шамамен бір уақытта өтеді. Бірнеше жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.',
+      one: '$a, $b және тағы $extra жазба $lastDate мерзіміне дейін, шамамен бір уақытта өтеді. Бірнеше жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsKk extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category санатындағы $count жазбаңыздың мерзімі $date мерзіміне дейін өтеді. Олар осылай топтастырылғанда, біреуін ұмытып кету оңай.',
-      one: '$category санатындағы 1 жазбаңыздың мерзімі $date күні өтеді. Оны байқамай қалу оңай.',
+      one: '$category санатындағы $count жазбаңыздың мерзімі $date күні өтеді. Оны байқамай қалу оңай.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsKk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Алдағы $count мерзім еске салғыштармен қамтылған. Басқа ештеңе назар аударуды талап етпейді.',
-      one: 'Алдағы 1 мерзім еске салғышпен қамтылған. Басқа ештеңе назар аударуды талап етпейді.',
+      one: 'Алдағы $count мерзім еске салғышпен қамтылған. Басқа ештеңе назар аударуды талап етпейді.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsKk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Қазіргі уақытта шұғыл ештеңе жоқ, бірақ алдағы $count жазбаның әлі еске салғыштары орнатылмаған.',
-      one: 'Қазіргі уақытта шұғыл ештеңе жоқ, бірақ алдағы 1 жазбаның әлі еске салғышы орнатылмаған.',
+      one: 'Қазіргі уақытта шұғыл ештеңе жоқ, бірақ алдағы $count жазбаның әлі еске салғышы орнатылмаған.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsKk extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days күн',
-      one: '1 күн',
+      one: '$days күн',
     );
     return 'Еске салғыш $position: $_temp0 бұрын';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsKk extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count мерзімі жақында аяқталады',
-      one: '1 мерзімі жақында аяқталады',
+      one: '$count мерзімі жақында аяқталады',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get noRecordsTomorrow => 'Ертең ештеңенің мерзімі аяқталмайды';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName мерзімі $days күннен кейін аяқталады',
-      one: '$recordName мерзімі ертең аяқталады',
-      zero: '$recordName мерзімі бүгін аяқталады',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName мерзімі $date күні аяқталады. Ерте жаңарту сізді қорғалған күйде ұстайды.',
-      one: '$firstName, $recordName мерзімі ертең аяқталады. Мерзімі өтіп кетпеуі үшін оны қазір жаңартыңыз.',
-      zero: '$firstName, $recordName мерзімі бүгін аяқталады. Жаңартып қойдыңыз ба? Мерзімінің аяқталу күнін өзгертіңіз.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Соңғы еске салғыш: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days күннен кейін, $date күні',
-      one: 'ертең',
-    );
-    return '$firstName, $recordName мерзімі $_temp0 аяқталады. Бұл соңғы еске салғышыңыз, оны жаңартыңыз немесе күнін өзгертіңіз.';
   }
 
   @override
@@ -5017,7 +4958,7 @@ class AppLocalizationsKk extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count жазбаға назар аудару қажет',
-      one: '1 жазбаға назар аудару қажет',
+      one: '$count жазбаға назар аудару қажет',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsKk extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Әдетте $years жылға жарамды',
-      one: 'Әдетте 1 жылға жарамды',
+      one: 'Әдетте $years жылға жарамды',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsKk extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Еске салғыш: $name мерзімі $date бітеді';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName мерзімі бүгін аяқталады';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName мерзімі ертең аяқталады';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName мерзімі $days күннен кейін аяқталады',
+      one: '$recordName мерзімі $days күннен кейін аяқталады',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName мерзімі аяқталды';
+  }
+
+  @override
+  String get remLockedTitle => 'Құлыпталған жазба назарыңызды қажет етеді';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Оның күні — $date. Қай жазба екенін көру үшін Vaultara құлпын ашыңыз.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '«$recordName» жазбаңыздың мерзімі бүгін аяқталады.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '«$recordName» жазбаңыздың мерзімі ертең аяқталады.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '«$recordName» жазбаңыздың мерзімі $date күні аяқталады.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, «$recordName» жазбаңыздың мерзімі бүгін аяқталады.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, «$recordName» жазбаңыздың мерзімі ертең аяқталады.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, «$recordName» жазбаңыздың мерзімі $date күні аяқталады.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: «$recordName» жазбасының мерзімі бүгін аяқталады.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: «$recordName» жазбасының мерзімі ертең аяқталады.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: «$recordName» жазбасының мерзімі $date күні аяқталады.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '«$recordName» жазбаңыздың мерзімі $date күні аяқталды.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: «$recordName» жазбасының мерзімі $date күні аяқталды.';
+  }
+
+  @override
+  String get remTipToday => 'Жаңартып қойдыңыз ба? Күнін өзгертіңіз.';
+
+  @override
+  String get remTipTomorrow => 'Мерзімі өтпеуі үшін қазір жаңартыңыз.';
+
+  @override
+  String get remTipEarly => 'Ерте жаңарту сізді қорғаулы ұстайды.';
+
+  @override
+  String get remTipLast => 'Бұл мерзім аяқталғанға дейінгі соңғы еске салу.';
+
+  @override
+  String get remTipExpired => 'Жаңартыңыз немесе жаңартып қойсаңыз, күнін өзгертіңіз.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '«$recordName» жаңартуды бастайтын уақыт келді. Мерзімі $date күні аяқталады, қазір бастасаңыз, уақытыңыз жеткілікті болады.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '«$recordName» ($person) жаңартуды бастайтын уақыт келді. Мерзімі $date күні аяқталады, қазір бастаса, уақыт жеткілікті болады.';
+  }
+
+  @override
+  String get notifChannelName => 'Мерзім туралы еске салғыштар';
+
+  @override
+  String get notifChannelDescription => 'Жазбаларыңыздың мерзімі аяқталғанға дейін еске салу';
+
+  @override
+  String get notifTestTitle => 'Сынақ хабарландыруы';
+
+  @override
+  String get notifTestBody => 'Vaultara еске салғыштары осылай келеді.';
+
+  @override
+  String get notifTestAction => 'Сынақ хабарландыруын жіберу';
+
+  @override
+  String get notifTestSubtitle => 'Еске салғыштар осы телефонға жететінін тексеріңіз';
+
+  @override
+  String get notifTestSent => 'Сынақ жіберілді. Бірнеше секундта келуі керек.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Жазба мерзімі аяқталғаннан кейін еске салу';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 және 14 күннен кейін, егер жаңартылмаса';
+
+  @override
+  String get notifWeeklyTitle => 'Дүйсенбі шолуы';
+
+  @override
+  String get notifWeeklySubtitle => 'Сол аптада бірдеңенің мерзімі аяқталса, дүйсенбі таңертең хабар';
+
+  @override
+  String get notifPushSection => 'Отбасы және жаңартулар';
+
+  @override
+  String get notifHouseholdTitle => 'Бөлісілген жазбалар';
+
+  @override
+  String get notifHouseholdSubtitle => 'Бөлісілген жазбаның мерзімі бітуге жақын және оны ешкім жаңартпаса';
+
+  @override
+  String get notifUpdatesTitle => 'Сіз сұраған жаңартулар';
+
+  @override
+  String get notifUpdatesSubtitle => 'Біреу жазбаның жаңа деректерін жібергенде';
+
+  @override
+  String get notifSecurityNote => 'Аккаунтыңызға жаңа кірулер туралы ескертулер әрқашан жіберіледі.';
+
+  @override
+  String get notifIosHelpTitle => 'Еске салғыштар келмей ме?';
+
+  @override
+  String get notifIosHelpSubtitle => 'iPhone параметрлерін тексеріңіз';
+
+  @override
+  String get notifIosHelpStep1 => 'Параметрлерді, содан кейін Хабарландыруларды, содан кейін Vaultara-ны ашып, Хабарландыруларға рұқсат беруді қосыңыз.';
+
+  @override
+  String get notifIosHelpStep2 => 'Құлып экранын, Хабарландыру орталығын және Баннерлерді қосыңыз.';
+
+  @override
+  String get notifIosHelpStep3 => 'Фокус режимін қолдансаңыз, Vaultara-ны рұқсат етілген қолданбаларға қосыңыз.';
+
+  @override
+  String get notifIosHelpStep4 => 'Vaultara-ны бірнеше апта сайын ашып тұрыңыз. iPhone алдағы еске салғыштардың шектеулі санын ғана сақтайды, ал қолданбаны ашу келесілерін жоспарлайды.';
+
+  @override
+  String get homeNextUpEmpty => 'Жақында ештеңенің мерзімі бітпейді. Бәрі дайын.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 күнде $count мерзімі бітеді',
+      one: '30 күнде $count мерзімі бітеді',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Бекітілген санаттар';
 }

@@ -360,15 +360,6 @@ class AppLocalizationsKy extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Сизди кайра көргөнүбүзгө кубанычтабыз. Vaultara ар дайым сиздин маанилүү маалыматтарыңыз үчүн даяр.';
 
   @override
-  String get summaryAllCaption => 'Vaultara ичинде көзөмөлдөнөт';
-
-  @override
-  String get summaryExpiredTitle => 'Мөөнөтү бүткөн';
-
-  @override
-  String get summaryExpiredCaption => 'Мөөнөтү өтүп кеткен';
-
-  @override
   String get editorNotes => 'Эскертмелер';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Жазууну өчүрүү';
-
-  @override
-  String get summaryAllRecordsTitle => 'Бардык жазуулар';
 
   @override
   String get noGroupFound => 'Азырынча топтор жок';
@@ -829,22 +817,10 @@ class AppLocalizationsKy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count жазуу',
-      one: '1 жазуу',
+      one: '$count жазуу',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Алдыдагы';
-
-  @override
-  String get summaryUpcomingCaption => '30 күн ичинде';
-
-  @override
-  String get summaryUrgentTitle => 'Шашылыш';
-
-  @override
-  String get summaryUrgentCaption => '7 күн ичинде';
 
   @override
   String get profileHeaderTitle => 'Профиль';
@@ -945,7 +921,7 @@ class AppLocalizationsKy extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days күн мурун',
-      one: '1 күн мурун',
+      one: '$days күн мурун',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsKy extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names жана дагы $extra жазуу бүгүн бүтөт.',
-      one: '$names жана дагы 1 жазуу бүгүн бүтөт.',
+      one: '$names жана дагы $extra жазуу бүгүн бүтөт.',
       zero: '$names бүгүн мөөнөтү бүтөт.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsKy extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b жана дагы $extra жазуу $lastDate күнүнө чейин, болжол менен бир убакта бүтөт. Бир нече жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.',
-      one: '$a, $b жана дагы 1 жазуу $lastDate күнүнө чейин, болжол менен бир убакта бүтөт. Бир нече жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.',
+      one: '$a, $b жана дагы $extra жазуу $lastDate күнүнө чейин, болжол менен бир убакта бүтөт. Бир нече жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsKy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category категориясындагы сиздин $count жазууңуз $date күнүнө чейин бүтөт. Алар ушундайча топтолгондо, бирөөнү унутуп калуу оңой.',
-      one: '$category категориясындагы сиздин 1 жазууңуз $date күнү бүтөт. Аны байкабай калуу оңой.',
+      one: '$category категориясындагы сиздин $count жазууңуз $date күнү бүтөт. Аны байкабай калуу оңой.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsKy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Убактысы жакындап калган $count мөөнөт эскертүүлөр менен корголгон. Сиздин көңүл бурууңузду талап кылган башка эч нерсе жок.',
-      one: 'Убактысы жакындап калган 1 мөөнөт эскертүү менен корголгон. Сиздин көңүл бурууңузду талап кылган башка эч нерсе жок.',
+      one: 'Убактысы жакындап калган $count мөөнөт эскертүү менен корголгон. Сиздин көңүл бурууңузду талап кылган башка эч нерсе жок.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsKy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Учурда эч нерсе шашылыш эмес, бирок алдыдагы $count жазуунун эскертүүсү азырынча жок.',
-      one: 'Учурда эч нерсе шашылыш эмес, бирок алдыдагы 1 жазуунун эскертүүсү азырынча жок.',
+      one: 'Учурда эч нерсе шашылыш эмес, бирок алдыдагы $count жазуунун эскертүүсү азырынча жок.',
     );
     return '$_temp0';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsKy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count мөөнөтү жакында бүтөт',
-      one: '1 мөөнөтү жакында бүтөт',
+      one: '$count мөөнөтү жакында бүтөт',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsKy extends AppLocalizations {
   String get noRecordsTomorrow => 'Эртең эч нерсенин мөөнөтү бүтпөйт';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName мөөнөтү $days күндөн кийин бүтөт',
-      one: '$recordName мөөнөтү эртең бүтөт',
-      zero: '$recordName мөөнөтү бүгүн бүтөт',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName мөөнөтү $date күнү бүтөт. Эрте жаңылоо сизди коргоодо кармайт.',
-      one: '$firstName, $recordName мөөнөтү эртең бүтөт. Мөөнөтү өтүп кетпеши үчүн азыр жаңылаңыз.',
-      zero: '$firstName, $recordName мөөнөтү бүгүн бүтөт. Жаңылап жетиштиңизби? Аяктоо күнүн жаңыртыңыз.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Соңку эскертүү: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days күндөн кийин, $date күнү',
-      one: 'эртең',
-    );
-    return '$firstName, $recordName мөөнөтү $_temp0 бүтөт. Бул сиздин соңку эскертүүңүз, аны жаңылаңыз же күнүн жаңыртыңыз.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsKy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count сүрөт азырынча шифрленген эмес',
-      one: '1 сүрөт азырынча шифрленген эмес',
+      one: '$count сүрөт азырынча шифрленген эмес',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsKy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Сизде азырынча шифрленбеген $count сүрөт бар. Аларды азыр шифрлей алабыз.',
-      one: 'Сизде азырынча шифрленбеген 1 сүрөт бар. Аны азыр шифрлей алабыз.',
+      one: 'Сизде азырынча шифрленбеген $count сүрөт бар. Аны азыр шифрлей алабыз.',
     );
     return '$_temp0 Бүтмөйүнчө Vaultara\'ны ачык кармаңыз.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsKy extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Өтө көп аракет болду. $seconds секунд күтүп, кайра аракет кылыңыз.',
-      one: 'Өтө көп аракет болду. 1 секунд күтүп, кайра аракет кылыңыз.',
+      one: 'Өтө көп аракет болду. $seconds секунд күтүп, кайра аракет кылыңыз.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsKy extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Өтө көп аракет болду. $minutes мүнөт күтүп, кайра аракет кылыңыз.',
-      one: 'Өтө көп аракет болду. 1 мүнөт күтүп, кайра аракет кылыңыз.',
+      one: 'Өтө көп аракет болду. $minutes мүнөт күтүп, кайра аракет кылыңыз.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsKy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count жазуу сиздин көңүлүңүздү талап кылат',
-      one: '1 жазуу сиздин көңүлүңүздү талап кылат',
+      one: '$count жазуу сиздин көңүлүңүздү талап кылат',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsKy extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Адатта $years жыл жарактуу',
-      one: 'Адатта 1 жыл жарактуу',
+      one: 'Адатта $years жыл жарактуу',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsKy extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Эскертүү: $name мөөнөтү $date бүтөт';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName мөөнөтү бүгүн бүтөт';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName мөөнөтү эртең бүтөт';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName мөөнөтү $days күндөн кийин бүтөт',
+      one: '$recordName мөөнөтү $days күндөн кийин бүтөт',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName мөөнөтү бүттү';
+  }
+
+  @override
+  String get remLockedTitle => 'Кулпуланган жазуу көңүл бурууну талап кылат';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Анын күнү — $date. Кайсы жазуу экенин көрүү үчүн Vaultara кулпусун ачыңыз.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '«$recordName» жазууңуздун мөөнөтү бүгүн бүтөт.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '«$recordName» жазууңуздун мөөнөтү эртең бүтөт.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '«$recordName» жазууңуздун мөөнөтү $date күнү бүтөт.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, «$recordName» жазууңуздун мөөнөтү бүгүн бүтөт.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, «$recordName» жазууңуздун мөөнөтү эртең бүтөт.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, «$recordName» жазууңуздун мөөнөтү $date күнү бүтөт.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: «$recordName» жазуусунун мөөнөтү бүгүн бүтөт.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: «$recordName» жазуусунун мөөнөтү эртең бүтөт.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: «$recordName» жазуусунун мөөнөтү $date күнү бүтөт.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '«$recordName» жазууңуздун мөөнөтү $date күнү бүттү.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: «$recordName» жазуусунун мөөнөтү $date күнү бүттү.';
+  }
+
+  @override
+  String get remTipToday => 'Жаңылап койдуңузбу? Күнүн өзгөртүңүз.';
+
+  @override
+  String get remTipTomorrow => 'Мөөнөтү өтүп кетпеши үчүн азыр жаңылаңыз.';
+
+  @override
+  String get remTipEarly => 'Эрте жаңылоо сизди корголгон кармайт.';
+
+  @override
+  String get remTipLast => 'Бул мөөнөт бүткөнгө чейинки акыркы эскертүү.';
+
+  @override
+  String get remTipExpired => 'Жаңылаңыз же жаңылап койсоңуз, күнүн өзгөртүңүз.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '«$recordName» жаңылоону баштоо убагы келди. Мөөнөтү $date күнү бүтөт, азыр баштасаңыз, убактыңыз жетиштүү болот.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '«$recordName» ($person) жаңылоону баштоо убагы келди. Мөөнөтү $date күнү бүтөт, азыр башталса, убакыт жетиштүү болот.';
+  }
+
+  @override
+  String get notifChannelName => 'Мөөнөт эскертүүлөрү';
+
+  @override
+  String get notifChannelDescription => 'Жазууларыңыздын мөөнөтү бүткөнгө чейин эскертүүлөр';
+
+  @override
+  String get notifTestTitle => 'Сыноо билдирмеси';
+
+  @override
+  String get notifTestBody => 'Vaultara эскертүүлөрү ушундай келет.';
+
+  @override
+  String get notifTestAction => 'Сыноо билдирмесин жөнөтүү';
+
+  @override
+  String get notifTestSubtitle => 'Эскертүүлөр ушул телефонго жетип жатканын текшериңиз';
+
+  @override
+  String get notifTestSent => 'Сыноо жөнөтүлдү. Бир нече секундда келиши керек.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Жазуунун мөөнөтү бүткөндөн кийин эскертүү';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 жана 14 күндөн кийин, эгер жаңыланбаса';
+
+  @override
+  String get notifWeeklyTitle => 'Дүйшөмбү сереби';
+
+  @override
+  String get notifWeeklySubtitle => 'Ошол жумада бир нерсенин мөөнөтү бүтсө, дүйшөмбү эртең менен кабар';
+
+  @override
+  String get notifPushSection => 'Үй-бүлө жана жаңыртуулар';
+
+  @override
+  String get notifHouseholdTitle => 'Бөлүшүлгөн жазуулар';
+
+  @override
+  String get notifHouseholdSubtitle => 'Бөлүшүлгөн жазуунун мөөнөтү бүтөйүн деп, аны эч ким жаңылабаганда';
+
+  @override
+  String get notifUpdatesTitle => 'Сиз сураган жаңыртуулар';
+
+  @override
+  String get notifUpdatesSubtitle => 'Кимдир бирөө жазуунун жаңы маалыматын жөнөткөндө';
+
+  @override
+  String get notifSecurityNote => 'Аккаунтуңузга жаңы кирүүлөр тууралуу эскертүүлөр дайыма жөнөтүлөт.';
+
+  @override
+  String get notifIosHelpTitle => 'Эскертүүлөр келбей жатабы?';
+
+  @override
+  String get notifIosHelpSubtitle => 'iPhone жөндөөлөрүн текшериңиз';
+
+  @override
+  String get notifIosHelpStep1 => 'Жөндөөлөрдү, андан кийин Билдирмелерди, андан кийин Vaultara\'ны ачып, Билдирмелерге уруксат берүүнү күйгүзүңүз.';
+
+  @override
+  String get notifIosHelpStep2 => 'Кулпу экранын, Билдирмелер борборун жана Баннерлерди күйгүзүңүз.';
+
+  @override
+  String get notifIosHelpStep3 => 'Фокус колдонсоңуз, Vaultara\'ны уруксат берилген колдонмолорго кошуңуз.';
+
+  @override
+  String get notifIosHelpStep4 => 'Vaultara\'ны бир нече жумада бир ачып туруңуз. iPhone алдыдагы эскертүүлөрдүн чектелген санын гана сактайт, ал эми колдонмону ачуу кийинкилерин пландайт.';
+
+  @override
+  String get homeNextUpEmpty => 'Жакында эч нерсенин мөөнөтү бүтпөйт. Баары даяр.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 күндө $count мөөнөтү бүтөт',
+      one: '30 күндө $count мөөнөтү бүтөт',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Кадалган категориялар';
 }

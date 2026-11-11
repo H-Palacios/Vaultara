@@ -360,15 +360,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Jó újra látni. A Vaultara mindig készen áll fontos adatai áttekintésére.';
 
   @override
-  String get summaryAllCaption => 'Nyomon követve a Vaultarában';
-
-  @override
-  String get summaryExpiredTitle => 'Lejárt';
-
-  @override
-  String get summaryExpiredCaption => 'Lejárati dátum után';
-
-  @override
   String get editorNotes => 'Jegyzetek';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Bejegyzés törlése';
-
-  @override
-  String get summaryAllRecordsTitle => 'Összes bejegyzés';
 
   @override
   String get noGroupFound => 'Még nincsenek csoportok';
@@ -829,22 +817,10 @@ class AppLocalizationsHu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bejegyzés',
-      one: '1 bejegyzés',
+      one: '$count bejegyzés',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Közelgő';
-
-  @override
-  String get summaryUpcomingCaption => '30 napon belül';
-
-  @override
-  String get summaryUrgentTitle => 'Sürgős';
-
-  @override
-  String get summaryUrgentCaption => '7 napon belül';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -945,7 +921,7 @@ class AppLocalizationsHu extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days nappal előtte',
-      one: '1 nappal előtte',
+      one: '$days nappal előtte',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsHu extends AppLocalizations {
       extra,
       locale: localeName,
       other: 'A(z) $names és még $extra tétel ma jár le.',
-      one: 'A(z) $names és még 1 tétel ma jár le.',
+      one: 'A(z) $names és még $extra tétel ma jár le.',
       zero: 'A(z) $names ma jár le.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsHu extends AppLocalizations {
       extra,
       locale: localeName,
       other: 'A(z) $a, $b és még $extra bejegyzés lejár $lastDate napig, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor több bejegyzés ennyire közel van egymáshoz.',
-      one: 'A(z) $a, $b és még 1 bejegyzés lejár $lastDate napig, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor több bejegyzés ennyire közel van egymáshoz.',
+      one: 'A(z) $a, $b és még $extra bejegyzés lejár $lastDate napig, körülbelül azonos időben. Könnyű megfeledkezni az egyikről, amikor több bejegyzés ennyire közel van egymáshoz.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsHu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'A(z) $category kategóriában lévő $count bejegyzése lejár $date napig. Könnyű megfeledkezni az egyikről, ha így csoportosítva vannak.',
-      one: 'A(z) $category kategóriában lévő 1 bejegyzése $date napon jár le. Könnyű figyelmen kívül hagyni.',
+      one: 'A(z) $category kategóriában lévő $count bejegyzése $date napon jár le. Könnyű figyelmen kívül hagyni.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsHu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count közelgő lejárathoz van emlékeztető beállítva. Semmi más nem igényel figyelmet.',
-      one: '1 közelgő lejárathoz van emlékeztető beállítva. Semmi más nem igényel figyelmet.',
+      one: '$count közelgő lejárathoz van emlékeztető beállítva. Semmi más nem igényel figyelmet.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsHu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Jelenleg semmi sem sürgős, de $count közelgő bejegyzéshez még nincs emlékeztető beállítva.',
-      one: 'Jelenleg semmi sem sürgős, de 1 közelgő bejegyzéshez még nincs emlékeztető beállítva.',
+      one: 'Jelenleg semmi sem sürgős, de $count közelgő bejegyzéshez még nincs emlékeztető beállítva.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsHu extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days nappal',
-      one: '1 nappal',
+      one: '$days nappal',
     );
     return '$position. emlékeztető: $_temp0 a lejárat előtt';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsHu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count hamarosan lejár',
-      one: '1 hamarosan lejár',
+      one: '$count hamarosan lejár',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get noRecordsTomorrow => 'Holnap semmi sem jár le';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'A(z) $recordName $days nap múlva jár le',
-      one: 'A(z) $recordName holnap jár le',
-      zero: 'A(z) $recordName ma jár le',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, a(z) $recordName ekkor jár le: $date. A korai megújítással folyamatosan védett marad.',
-      one: '$firstName, a(z) $recordName holnap jár le. Újítsa meg most, hogy ne járjon le.',
-      zero: '$firstName, a(z) $recordName ma jár le. Már megújította? Frissítse a lejárati dátumot.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Utolsó emlékeztető: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days nap múlva, ekkor: $date',
-      one: 'holnap',
-    );
-    return '$firstName, a(z) $recordName $_temp0 jár le. Ez az utolsó emlékeztetője, újítsa meg vagy frissítse a dátumot.';
   }
 
   @override
@@ -8276,4 +8217,204 @@ class AppLocalizationsHu extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Emlékeztető: $name lejár: $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName ma lejár';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName holnap lejár';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days nap múlva lejár',
+      one: '$recordName $days nap múlva lejár',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName lejárt';
+  }
+
+  @override
+  String get remLockedTitle => 'Egy zárolt bejegyzés figyelmet igényel';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Dátuma: $date. Oldja fel a Vaultarát, hogy lássa, melyik bejegyzésről van szó.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'A(z) „$recordName” bejegyzése ma lejár.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'A(z) „$recordName” bejegyzése holnap lejár.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'A(z) „$recordName” bejegyzése ekkor jár le: $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, a(z) „$recordName” bejegyzése ma lejár.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, a(z) „$recordName” bejegyzése holnap lejár.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, a(z) „$recordName” bejegyzése ekkor jár le: $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: a(z) „$recordName” bejegyzés ma lejár.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: a(z) „$recordName” bejegyzés holnap lejár.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: a(z) „$recordName” bejegyzés ekkor jár le: $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'A(z) „$recordName” bejegyzése ekkor járt le: $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: a(z) „$recordName” bejegyzés ekkor járt le: $date.';
+  }
+
+  @override
+  String get remTipToday => 'Már megújította? Frissítse a dátumát.';
+
+  @override
+  String get remTipTomorrow => 'Újítsa meg most, hogy ne járjon le.';
+
+  @override
+  String get remTipEarly => 'A korai megújítás biztonságban tartja.';
+
+  @override
+  String get remTipLast => 'Ez az utolsó emlékeztető a lejárat előtt.';
+
+  @override
+  String get remTipExpired => 'Újítsa meg, vagy frissítse a dátumát, ha már megtette.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Ideje elkezdeni a(z) „$recordName” megújítását. Ekkor jár le: $date, így ha most kezdi, bőven lesz ideje.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Ideje elkezdeni a(z) „$recordName” ($person) megújítását. Ekkor jár le: $date, így ha most kezdik, bőven lesz idő.';
+  }
+
+  @override
+  String get notifChannelName => 'Lejárati emlékeztetők';
+
+  @override
+  String get notifChannelDescription => 'Emlékeztetők, mielőtt a bejegyzései lejárnak';
+
+  @override
+  String get notifTestTitle => 'Tesztértesítés';
+
+  @override
+  String get notifTestBody => 'Így érkeznek a Vaultara emlékeztetői.';
+
+  @override
+  String get notifTestAction => 'Tesztértesítés küldése';
+
+  @override
+  String get notifTestSubtitle => 'Ellenőrizze, hogy az emlékeztetők megérkeznek-e erre a telefonra';
+
+  @override
+  String get notifTestSent => 'Teszt elküldve. Néhány másodpercen belül meg kell érkeznie.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Emlékeztessen a lejárat után';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 és 14 nappal utána, ha nem újították meg';
+
+  @override
+  String get notifWeeklyTitle => 'Hétfői összefoglaló';
+
+  @override
+  String get notifWeeklySubtitle => 'Üzenet hétfő reggel, ha azon a héten valami lejár';
+
+  @override
+  String get notifPushSection => 'Háztartás és frissítések';
+
+  @override
+  String get notifHouseholdTitle => 'Megosztott bejegyzések';
+
+  @override
+  String get notifHouseholdSubtitle => 'Ha egy megosztott bejegyzés hamarosan lejár, és senki sem újította meg';
+
+  @override
+  String get notifUpdatesTitle => 'Kért frissítések';
+
+  @override
+  String get notifUpdatesSubtitle => 'Ha valaki elküldi egy bejegyzés új adatait';
+
+  @override
+  String get notifSecurityNote => 'Az új bejelentkezésekről szóló figyelmeztetéseket mindig elküldjük.';
+
+  @override
+  String get notifIosHelpTitle => 'Nem kap emlékeztetőket?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Ellenőrizze az iPhone beállításait';
+
+  @override
+  String get notifIosHelpStep1 => 'Nyissa meg a Beállításokat, majd az Értesítéseket, majd a Vaultarát, és kapcsolja be az Értesítések engedélyezését.';
+
+  @override
+  String get notifIosHelpStep2 => 'Kapcsolja be a Zárolási képernyőt, az Értesítési központot és a Szalagokat.';
+
+  @override
+  String get notifIosHelpStep3 => 'Ha Fókuszt használ, adja hozzá a Vaultarát az engedélyezett appokhoz.';
+
+  @override
+  String get notifIosHelpStep4 => 'Nyissa meg a Vaultarát néhány hetente. Az iPhone csak korlátozott számú jövőbeli emlékeztetőt tárol, és az app megnyitása beütemezi a következőket.';
+
+  @override
+  String get homeNextUpEmpty => 'Hamarosan semmi sem jár le. Minden rendben.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count esedékes 30 napon belül',
+      one: '$count esedékes 30 napon belül',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Kitűzött kategóriák';
 }

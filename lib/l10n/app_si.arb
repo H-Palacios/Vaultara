@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "ඔබ මෙහි දැකීමට සතුටුයි. Vaultara වැදගත් දිනයන් සහ වාර්තා එක් ආරක්ෂිත ස්ථානයක සංවිධානය කිරීමට උදව් කරයි.",
   "homeWelcomeSubtitleBack": "නැවතත් ඔබව දැකීමට සතුටුයි. ඔබගේ වැදගත් දිනයන් සහ වාර්තා පරීක්ෂා කිරීමට Vaultara සූදානම්.",
   "homeWelcomeTitle": "සාදරයෙන් පිළිගනිමු",
-  "summaryAllCaption": "Vaultara තුළ නිරීක්ෂණය කරයි",
-  "summaryExpiredTitle": "කල් ඉකුත් වූ",
-  "summaryExpiredCaption": "කල් ඉකුත් දිනය පසු වී ඇත",
   "editorNotes": "සටහන්",
   "editorReminderNone": "මතක් කිරීමක් නැත",
   "editorReminderOnExpiry": "කල් ඉකුත් වන දිනයේ",
@@ -192,7 +189,6 @@
   "addRecord": "වාර්තාව එක් කරන්න",
   "noRecordsYet": "තවම වාර්තා නැත.",
   "deleteRecordTitle": "වාර්තාව මකන්න",
-  "summaryAllRecordsTitle": "සියලු වාර්තා",
   "noGroupFound": "තවම කණ්ඩායම් නොමැත",
   "groupLabel": "{count, plural, one{{count} කණ්ඩායම} other{{count} කණ්ඩායම්}}",
   "recordsLabel": "{count, plural, one{{count} වාර්තාව} other{{count} වාර්තා}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "සටහන් එක් කරන්න (විකල්ප)",
   "expiryTimelineTitle": "කල් ඉකුත්වීමේ කාල රේඛාව",
   "expiryTimelineSubtitle": "එම මාසයේ කල් ඉකුත්වන වාර්තා බැලීමට මාසය මත තට්ටු කරන්න",
-  "expiryTimelineDetailCount": "{count, plural, =1{වාර්තා 1} other{වාර්තා {count}}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{වාර්තා {count}} other{වාර්තා {count}}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "ඉදිරියට",
-  "summaryUpcomingCaption": "දින 30ක් ඇතුළත",
-  "summaryUrgentTitle": "හදිසි",
-  "summaryUrgentCaption": "දින 7ක් ඇතුළත",
   "profileHeaderTitle": "පැතිකඩ",
   "profileTutorialsTitle": "නිබන්ධන",
   "profileTutorialsSubtitle": "යෙදුම් නිබන්ධන පිරික්සන්න",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "මතක් කිරීමක් නැත",
   "reminderOnExpiry": "කල් ඉකුත් වන දිනයේ",
-  "reminderDaysBefore": "{days, plural, one{දින 1 කට පෙර} other{දින {days} කට පෙර}}",
+  "reminderDaysBefore": "{days, plural, one{දින {days} කට පෙර} other{දින {days} කට පෙර}}",
   "reminderCustomDaysTitle": "අභිරුචි දින ඇතුළත් කරන්න",
   "reminderCascadeTitle": "කැස්කේඩ් මතක් කිරීම්",
   "reminderCascadeSubtitle": "වාර්තාවක් කල් ඉකුත් වීමට පෙර දැනුම්දීම් කිහිපයක් ලබා ගන්න",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "මෙම ගිණුම සත්‍යාපනය කර නොමැත. දැන් පිටවීමෙන් එය මකා දැමෙන අතර, ඔබට ඕනෑම විද්‍යුත් තැපැල් ලිපිනයක් භාවිතයෙන් නැවත ලියාපදිංචි විය හැක.",
   "verifyEmailDiscardAction": "ඉවත් කරන්න",
   "verifyEmailKeepWaiting": "දිගටම රැඳී සිටින්න",
-  "expiringBadge": "{count, plural, =1{1 ළඟදීම කල් ඉකුත් වේ} other{{count} ළඟදීම කල් ඉකුත් වේ}}",
+  "expiringBadge": "{count, plural, =1{{count} ළඟදීම කල් ඉකුත් වේ} other{{count} ළඟදීම කල් ඉකුත් වේ}}",
   "noRecordsToday": "අද කිසිවක් කල් ඉකුත් නොවේ",
   "noRecordsTomorrow": "හෙට කිසිවක් කල් ඉකුත් නොවේ",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} අද කල් ඉකුත් වේ} =1{{recordName} හෙට කල් ඉකුත් වේ} other{{recordName} දින {days}කින් කල් ඉකුත් වේ}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, ඔබේ {recordName} අද කල් ඉකුත් වේ. ඔබ දැනටමත් එය අලුත් කළාද? එහි කල් ඉකුත්වීමේ දිනය යාවත්කාලීන කරන්න.} =1{{firstName}, ඔබේ {recordName} හෙට කල් ඉකුත් වේ. එහි වලංගුභාවය නැති නොවන පරිදි දැන්ම අලුත් කරන්න.} other{{firstName}, ඔබේ {recordName} {date} දින කල් ඉකුත් වේ. කල්තියා අලුත් කිරීමෙන් නොකඩවා වලංගුභාවය සහතික වේ.}}",
   "cascadeFinalStepTitle": "අවසාන මතක් කිරීම: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, ඔබේ {recordName} {days, plural, =1{හෙට} other{දින {days}කින්, {date} දින}} කල් ඉකුත් වේ. මෙය ඔබේ අවසාන මතක් කිරීමයි, එය අලුත් කරන්න හෝ එහි දිනය යාවත්කාලීන කරන්න.",
   "notificationsTitle": "දැනුම්දීම්",
   "notificationsProfileEnabledSubtitle": "මතක් කිරීම් {time} ට පැමිණේ.",
   "notificationsProfileDisabledSubtitle": "දැනුම්දීම් අක්‍රිය කර ඇත.",
@@ -689,7 +678,7 @@
   "familyTitle": "පවුල",
   "familyIntro": "ඔබ රැකබලා ගන්නා අයගේ වාර්තා නිරීක්ෂණය කරන්න. ඔවුන්ගේ මතක් කිරීම්වල නම පෙන්වන නිසා එය කාගේ වාර්තාවදැයි ඔබට දැනගත හැක.",
   "familyMe": "මම",
-  "familyRecordCount": "{count, plural, =0{වාර්තා නැත} =1{වාර්තා 1} other{වාර්තා {count}}}",
+  "familyRecordCount": "{count, plural, =0{වාර්තා නැත} =1{වාර්තා {count}} other{වාර්තා {count}}}",
   "familyRename": "නම වෙනස් කරන්න",
   "familyRemove": "ඉවත් කරන්න",
   "familyRemoveTitle": "{name} ඉවත් කරන්නද?",
@@ -702,10 +691,10 @@
   "familyNameLabel": "නම",
   "familyNameHint": "උදාහරණයක් ලෙස, Thabo",
   "familyNameRequired": "නමක් ඇතුළත් කරන්න",
-  "familyLimitNote": "{count, plural, =1{1 දෙනෙකු දක්වා} other{{count} දෙනෙකු දක්වා}}",
+  "familyLimitNote": "{count, plural, =1{{count} දෙනෙකු දක්වා} other{{count} දෙනෙකු දක්වා}}",
   "familyUpsellTitle": "ඔබේ පවුලේ ලේඛන නිරීක්ෂණය කරන්න",
   "familyBenefitPremium": "Premium හි ඇති සියල්ල",
-  "familyBenefitPeople": "{count, plural, =1{1 දෙනෙකු එක් කරන්න} other{{count} දෙනෙකු දක්වා එක් කරන්න}}",
+  "familyBenefitPeople": "{count, plural, =1{{count} දෙනෙකු එක් කරන්න} other{{count} දෙනෙකු දක්වා එක් කරන්න}}",
   "familyBenefitOwnRecords": "සෑම කෙනෙකුටම තමන්ගේම වාර්තා සහ මතක් කිරීම්",
   "familyBenefitOneSubscription": "මුළු නිවසටම එක් දායකත්වයක්",
   "familySeePlan": "පවුල් සැලසුම බලන්න",
@@ -891,7 +880,7 @@
   "calendarExportError": "දින දර්ශන ගොනුව සෑදීමට අපට නොහැකි විය. නැවත උත්සාහ කරන්න.",
   "pdfExportTitle": "Vaultara වාර්තා",
   "pdfExportGenerated": "{date} දින සාදන ලදී",
-  "pdfExportCount": "{count, plural, =1{වාර්තා 1} other{වාර්තා {count}}}",
+  "pdfExportCount": "{count, plural, =1{වාර්තා {count}} other{වාර්තා {count}}}",
   "pdfExportCost": "අලුත් කිරීමේ වියදම: {amount}",
   "pdfExportBuilding": "ඔබේ PDF සූදානම් කරමින්...",
   "pdfExportError": "PDF සෑදීමට අපට නොහැකි විය. නැවත උත්සාහ කරන්න.",
@@ -921,7 +910,7 @@
   "travelDetailValidUntil": "{name} {date} දක්වා වලංගුයි.",
   "travelDetailPassportBuffer": "{name} {date} දින කල් ඉකුත් වේ. බොහෝ රටවල් ඔබ ආපසු පැමිණි පසු {months, plural, =1{මාස 1ක්} other{මාස {months}ක්}} ඉතිරිව තිබීම අපේක්ෂා කරයි.",
   "travelDetailExpiresBeforeLeaving": "{name} {date} දින, ඔබ පිටත් වීමට පෙර කල් ඉකුත් වේ.",
-  "travelDetailExpiresDuringTrip": "{name} {date} දින කල් ඉකුත් වේ, {days, plural, =0{ඔබ පිටත් වන දිනයේම} =1{ගමනේ 1 වන දිනයේ} other{ගමනේ {days} වන දිනයේ}}.",
+  "travelDetailExpiresDuringTrip": "{name} {date} දින කල් ඉකුත් වේ, {days, plural, =0{ඔබ පිටත් වන දිනයේම} =1{ගමනේ {days} වන දිනයේ} other{ගමනේ {days} වන දිනයේ}}.",
   "travelDetailNoPassport": "Vaultara හට පරීක්ෂා කිරීමට ඔබේ ගමන් බලපත්‍රය එක් කරන්න.",
   "travelDetailNoVisa": "Vaultara හට පරීක්ෂා කිරීමට ඔබේ වීසා එක් කරන්න.",
   "travelDetailNoInsurance": "එය මුළු ගමනම ආවරණය කරනවාදැයි බැලීමට ඔබේ ගමන් රක්ෂණය එක් කරන්න.",
@@ -1029,7 +1018,7 @@
   "vaultOpenFile": "විවෘත කරන්න",
   "vaultClose": "වසන්න",
   "vaultPageIndicator": "{total}න් {current}",
-  "vaultPhotosTooltip": "{count, plural, =1{ඡායාරූප 1} other{ඡායාරූප {count}}}",
+  "vaultPhotosTooltip": "{count, plural, =1{ඡායාරූප {count}} other{ඡායාරූප {count}}}",
   "travelReadinessTitle": "ගමන් සූදානම",
   "travelReadinessBody": "Vaultara හි සුරකින ලද ගමන් බලපත්‍ර සහ රියදුරු බලපත්‍ර මත පදනම් වේ. බොහෝ රටවල් ඔබ ආපසු එන විට ගමන් බලපත්‍රයේ අවම වශයෙන් මාස 6ක් ඉතිරි වී තිබීම අපේක්ෂා කරයි.",
   "travelReadyUntil": "ගමන් බලපත්‍රය {date} දක්වා ගමන් සඳහා වලංගුයි",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} අද කල් ඉකුත් වේ",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} හෙට කල් ඉකුත් වේ",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} දින {days} කින් කල් ඉකුත් වේ} other{{recordName} දින {days} කින් කල් ඉකුත් වේ}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} කල් ඉකුත් වී ඇත",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "අගුළු දැමූ වාර්තාවකට ඔබේ අවධානය අවශ්‍යයි",
+  "remLockedBody": "එහි දිනය {date}. කුමන වාර්තාවදැයි බැලීමට Vaultara අගුළු හරින්න.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "ඔබේ \"{recordName}\" වාර්තාව අද කල් ඉකුත් වේ.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "ඔබේ \"{recordName}\" වාර්තාව හෙට කල් ඉකුත් වේ.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "ඔබේ \"{recordName}\" වාර්තාව {date} දින කල් ඉකුත් වේ.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, ඔබේ \"{recordName}\" වාර්තාව අද කල් ඉකුත් වේ.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, ඔබේ \"{recordName}\" වාර්තාව හෙට කල් ඉකුත් වේ.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, ඔබේ \"{recordName}\" වාර්තාව {date} දින කල් ඉකුත් වේ.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: \"{recordName}\" වාර්තාව අද කල් ඉකුත් වේ.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: \"{recordName}\" වාර්තාව හෙට කල් ඉකුත් වේ.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: \"{recordName}\" වාර්තාව {date} දින කල් ඉකුත් වේ.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "ඔබේ \"{recordName}\" වාර්තාව {date} දින කල් ඉකුත් විය.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: \"{recordName}\" වාර්තාව {date} දින කල් ඉකුත් විය.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "දැනටමත් අලුත් කළාද? එහි දිනය යාවත්කාලීන කරන්න.",
+  "remTipTomorrow": "කල් ඉකුත් නොවන ලෙස දැන්ම අලුත් කරන්න.",
+  "remTipEarly": "කලින් අලුත් කිරීම ඔබව ආරක්ෂිතව තබයි.",
+  "remTipLast": "කල් ඉකුත් වීමට පෙර ඔබේ අවසාන සිහිකැඳවීම මෙයයි.",
+  "remTipExpired": "අලුත් කරන්න, නැතහොත් දැනටමත් කර ඇත්නම් දිනය යාවත්කාලීන කරන්න.",
+  "remStartBody": "\"{recordName}\" අලුත් කිරීම ආරම්භ කිරීමට කාලයයි. එය {date} දින කල් ඉකුත් වේ, එබැවින් දැන් ආරම්භ කළොත් ඔබට ප්‍රමාණවත් කාලයක් ලැබේ.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) අලුත් කිරීම ආරම්භ කිරීමට කාලයයි. එය {date} දින කල් ඉකුත් වේ, එබැවින් දැන් ආරම්භ කළොත් ප්‍රමාණවත් කාලයක් ඇත.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "කල් ඉකුත් වීමේ සිහිකැඳවීම්",
+  "notifChannelDescription": "ඔබේ වාර්තා කල් ඉකුත් වීමට පෙර සිහිකැඳවීම්",
+  "notifTestTitle": "පරීක්ෂණ දැනුම්දීම",
+  "notifTestBody": "Vaultara සිහිකැඳවීම් මෙලෙස පැමිණේ.",
+  "notifTestAction": "පරීක්ෂණ දැනුම්දීමක් යවන්න",
+  "notifTestSubtitle": "සිහිකැඳවීම් මෙම දුරකථනයට ළඟා වේදැයි පරීක්ෂා කරන්න",
+  "notifTestSent": "පරීක්ෂණය යැව්වා. තත්පර කිහිපයකින් පැමිණිය යුතුයි.",
+  "notifAfterExpiryTitle": "වාර්තාවක් කල් ඉකුත් වූ පසු මතක් කරන්න",
+  "notifAfterExpirySubtitle": "දින 3 සහ 14 කට පසු, අලුත් කර නැත්නම්",
+  "notifWeeklyTitle": "සඳුදා සාරාංශය",
+  "notifWeeklySubtitle": "එම සතියේ යමක් කල් ඉකුත් වන විට සඳුදා උදෑසන පණිවිඩයක්",
+  "notifPushSection": "පවුල සහ යාවත්කාලීන",
+  "notifHouseholdTitle": "බෙදාගත් වාර්තා",
+  "notifHouseholdSubtitle": "බෙදාගත් වාර්තාවක් කල් ඉකුත් වීමට ආසන්නව කිසිවෙක් අලුත් නොකළ විට",
+  "notifUpdatesTitle": "ඔබ ඉල්ලූ යාවත්කාලීන",
+  "notifUpdatesSubtitle": "යමෙක් වාර්තාවක නව විස්තර එවූ විට",
+  "notifSecurityNote": "ඔබේ ගිණුමට නව පිවිසීම් ගැන ඇඟවීම් සැමවිටම යවනු ලැබේ.",
+  "notifIosHelpTitle": "සිහිකැඳවීම් ලැබෙන්නේ නැද්ද?",
+  "notifIosHelpSubtitle": "ඔබේ iPhone සැකසීම් පරීක්ෂා කරන්න",
+  "notifIosHelpStep1": "සැකසීම්, පසුව දැනුම්දීම්, පසුව Vaultara විවෘත කර, දැනුම්දීම්වලට ඉඩ දෙන්න ක්‍රියාත්මක කරන්න.",
+  "notifIosHelpStep2": "අගුළු තිරය, දැනුම්දීම් මධ්‍යස්ථානය සහ බැනර් ක්‍රියාත්මක කරන්න.",
+  "notifIosHelpStep3": "ඔබ Focus භාවිත කරන්නේ නම්, ඉඩ දුන් යෙදුම්වලට Vaultara එක් කරන්න.",
+  "notifIosHelpStep4": "සති කිහිපයකට වරක් Vaultara විවෘත කරන්න. iPhone ඉදිරි සිහිකැඳවීම් සීමිත ගණනක් පමණක් තබා ගනී, යෙදුම විවෘත කිරීමෙන් ඊළඟ ඒවා සැලසුම් වේ.",
+  "homeNextUpEmpty": "ඉක්මනින් කිසිවක් කල් ඉකුත් නොවේ. සියල්ල සූදානම්.",
+  "homeDueSoonChip": "{count, plural, one{දින 30 තුළ {count}} other{දින 30 තුළ {count}}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "අමුණා ඇති කාණ්ඩ"
 }

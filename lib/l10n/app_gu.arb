@@ -111,9 +111,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara તમને મહત્ત્વની સમાપ્તિ તારીખો પર નજર રાખવામાં મદદ કરે છે, જેથી કંઈ પણ ચૂપચાપ સમાપ્ત ન થઈ જાય.",
   "homeWelcomeSubtitleFirst": "તમે અહીં છો એ જાણીને આનંદ થયો. Vaultara મહત્ત્વની તારીખો અને રેકોર્ડને એક સુરક્ષિત જગ્યાએ રાખીને તમને વ્યવસ્થિત રહેવામાં મદદ કરે છે.",
   "homeWelcomeSubtitleBack": "તમને ફરી જોઈને આનંદ થયો. જ્યારે પણ તમે તમારી મહત્ત્વની તારીખો અને રેકોર્ડ જોવા માગો, ત્યારે Vaultara અહીં છે.",
-  "summaryAllCaption": "Vaultaraમાં ટ્રૅક કરેલા",
-  "summaryExpiredTitle": "સમાપ્ત થયેલ",
-  "summaryExpiredCaption": "સમાપ્તિ તારીખ વીતી ગઈ",
   "editorNotes": "નોંધો",
   "editorReminderNone": "કોઈ રિમાઇન્ડર નહીં",
   "editorReminderOnExpiry": "સમાપ્તિ તારીખે",
@@ -129,7 +126,6 @@
   "addRecord": "રેકોર્ડ ઉમેરો",
   "noRecordsYet": "હજુ સુધી કોઈ રેકોર્ડ નથી.",
   "deleteRecordTitle": "રેકોર્ડ ડિલીટ કરો",
-  "summaryAllRecordsTitle": "બધા રેકોર્ડ",
   "noGroupFound": "હજુ સુધી કોઈ ગ્રૂપ નથી",
   "groupLabel": "{count, plural, one{{count} ગ્રૂપ} other{{count} ગ્રૂપ}}",
   "recordsLabel": "{count, plural, one{{count} રેકોર્ડ} other{{count} રેકોર્ડ}}",
@@ -250,10 +246,6 @@
   "expiryTimelineTitle": "સમાપ્તિ ટાઇમલાઇન",
   "expiryTimelineSubtitle": "તે મહિનામાં સમાપ્ત થતા રેકોર્ડ જોવા માટે કોઈ મહિના પર ટૅપ કરો",
   "expiryTimelineDetailCount": "{count, plural, one{{count} રેકોર્ડ} other{{count} રેકોર્ડ}}",
-  "summaryUpcomingTitle": "આગામી",
-  "summaryUpcomingCaption": "30 દિવસની અંદર",
-  "summaryUrgentTitle": "તાત્કાલિક",
-  "summaryUrgentCaption": "7 દિવસની અંદર",
   "profileHeaderTitle": "પ્રોફાઇલ",
   "profileTutorialsTitle": "ટ્યુટોરિયલ",
   "profileTutorialsSubtitle": "ઍપના ટ્યુટોરિયલ જુઓ",
@@ -369,10 +361,7 @@
   "expiringBadge": "{count, plural, one{{count} સમાપ્ત થશે} other{{count} સમાપ્ત થશે}}",
   "noRecordsToday": "આજે કંઈ સમાપ્ત થતું નથી",
   "noRecordsTomorrow": "આવતીકાલે કંઈ સમાપ્ત થતું નથી",
-  "cascadeStepTitle": "{days, plural, =0{\"{recordName}\" આજે સમાપ્ત થાય છે} one{\"{recordName}\" {days} દિવસમાં સમાપ્ત થાય છે} other{\"{recordName}\" {days} દિવસમાં સમાપ્ત થાય છે}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, \"{recordName}\" આજે સમાપ્ત થાય છે. પહેલેથી રિન્યૂ કરી લીધું છે? તેની સમાપ્તિ તારીખ અપડેટ કરો.} one{{firstName}, \"{recordName}\" {date}ના રોજ સમાપ્ત થાય છે. વહેલું રિન્યૂ કરવાથી તમે સુરક્ષિત રહો છો.} other{{firstName}, \"{recordName}\" {date}ના રોજ સમાપ્ત થાય છે. વહેલું રિન્યૂ કરવાથી તમે સુરક્ષિત રહો છો.}}",
   "cascadeFinalStepTitle": "છેલ્લું રિમાઇન્ડર: \"{recordName}\"",
-  "cascadeFinalStepBody": "{firstName}, \"{recordName}\" {days, plural, one{{days} દિવસમાં, {date}ના રોજ} other{{days} દિવસમાં, {date}ના રોજ}} સમાપ્ત થાય છે. આ તમારું છેલ્લું રિમાઇન્ડર છે, તેને રિન્યૂ કરો અથવા તેની તારીખ અપડેટ કરો.",
   "notificationsTitle": "નોટિફિકેશન",
   "notificationsProfileEnabledSubtitle": "રિમાઇન્ડર {time}એ આવે છે.",
   "notificationsProfileDisabledSubtitle": "નોટિફિકેશન બંધ છે.",
@@ -1099,7 +1088,7 @@
   "photoLockTurnOn": "એન્ક્રિપ્ટ કરેલા ફોટા ચાલુ કરો",
   "photoLockStatusOn": "એન્ક્રિપ્ટ કરેલા ફોટા ચાલુ છે",
   "photoLockStatusOnBody": "નવા ફોટા અપલોડ થાય તે પહેલાં આ ફોનમાં એન્ક્રિપ્ટ થાય છે.",
-  "photoLockPendingTitle": "{count, plural, one{1 ફોટો હજી એન્ક્રિપ્ટ થયો નથી} other{{count} ફોટા હજી એન્ક્રિપ્ટ થયા નથી}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} ફોટો હજી એન્ક્રિપ્ટ થયો નથી} other{{count} ફોટા હજી એન્ક્રિપ્ટ થયા નથી}}",
   "photoLockPendingBody": "આ ચાલુ કરતા પહેલાં તમે ઉમેરેલા ફોટા હજી સામાન્ય રીતે સ્ટોર થયેલા છે.",
   "photoLockEncryptExisting": "મારા હાલના ફોટા એન્ક્રિપ્ટ કરો",
   "photoLockKeepOpen": "આ પૂરું થાય ત્યાં સુધી Vaultara ખુલ્લું રાખો.",
@@ -1136,7 +1125,7 @@
   "photoLockSetupFailed": "અમે એન્ક્રિપ્ટ કરેલા ફોટા ચાલુ કરી શક્યા નથી. તમારું કનેક્શન તપાસો અને ફરી પ્રયાસ કરો.",
   "photoLockAlreadyOn": "તમારા એકાઉન્ટ માટે એન્ક્રિપ્ટ કરેલા ફોટા પહેલેથી ચાલુ છે. આ ફોનમાં વાપરવા માટે રિકવરી કી દાખલ કરો.",
   "photoLockEncryptExistingTitle": "તમારા હાલના ફોટા એન્ક્રિપ્ટ કરવા છે?",
-  "photoLockEncryptExistingBody": "{count, plural, one{તમારી પાસે 1 ફોટો છે જે હજી એન્ક્રિપ્ટ થયો નથી. અમે તેને હવે એન્ક્રિપ્ટ કરી શકીએ છીએ.} other{તમારી પાસે {count} ફોટા છે જે હજી એન્ક્રિપ્ટ થયા નથી. અમે તેમને હવે એન્ક્રિપ્ટ કરી શકીએ છીએ.}} આ પૂરું થાય ત્યાં સુધી Vaultara ખુલ્લું રાખો.",
+  "photoLockEncryptExistingBody": "{count, plural, one{તમારી પાસે {count} ફોટો છે જે હજી એન્ક્રિપ્ટ થયો નથી. અમે તેને હવે એન્ક્રિપ્ટ કરી શકીએ છીએ.} other{તમારી પાસે {count} ફોટા છે જે હજી એન્ક્રિપ્ટ થયા નથી. અમે તેમને હવે એન્ક્રિપ્ટ કરી શકીએ છીએ.}} આ પૂરું થાય ત્યાં સુધી Vaultara ખુલ્લું રાખો.",
   "photoLockEncryptNow": "હવે એન્ક્રિપ્ટ કરો",
   "photoLockEntryBody": "એન્ક્રિપ્ટ કરેલા ફોટા ચાલુ કર્યા ત્યારે તમે સેવ કરેલી રિકવરી કી દાખલ કરો. ડૅશ અને સ્પેસ વૈકલ્પિક છે.",
   "photoLockEntryLabel": "રિકવરી કી",
@@ -1145,8 +1134,8 @@
   "photoLockUnlocked": "આ ફોનમાં તમારા ફોટા અનલૉક થયા છે.",
   "photoLockInvalidFormat": "આ રિકવરી કી જેવી લાગતી નથી. દરેક અક્ષર તપાસો અને ફરી પ્રયાસ કરો.",
   "photoLockWrongKey": "આ રિકવરી કી મેળ ખાતી નથી. તેને તપાસો અને ફરી પ્રયાસ કરો.",
-  "photoLockWaitSeconds": "{seconds, plural, one{ઘણા બધા પ્રયાસ. કૃપા કરીને 1 સેકન્ડ રાહ જુઓ અને ફરી પ્રયાસ કરો.} other{ઘણા બધા પ્રયાસ. કૃપા કરીને {seconds} સેકન્ડ રાહ જુઓ અને ફરી પ્રયાસ કરો.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{ઘણા બધા પ્રયાસ. કૃપા કરીને 1 મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.} other{ઘણા બધા પ્રયાસ. કૃપા કરીને {minutes} મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{ઘણા બધા પ્રયાસ. કૃપા કરીને {seconds} સેકન્ડ રાહ જુઓ અને ફરી પ્રયાસ કરો.} other{ઘણા બધા પ્રયાસ. કૃપા કરીને {seconds} સેકન્ડ રાહ જુઓ અને ફરી પ્રયાસ કરો.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{ઘણા બધા પ્રયાસ. કૃપા કરીને {minutes} મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.} other{ઘણા બધા પ્રયાસ. કૃપા કરીને {minutes} મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.}}",
   "photoLockOffline": "અમે Vaultara સુધી પહોંચી શક્યા નથી. તમારું કનેક્શન તપાસો અને ફરી પ્રયાસ કરો.",
   "photoLockNotSetUp": "તમારા એકાઉન્ટ માટે એન્ક્રિપ્ટ કરેલા ફોટા ચાલુ નથી.",
   "photoLockUnlockFailed": "કંઈક ખોટું થયું. ફરી પ્રયાસ કરો.",
@@ -1561,9 +1550,9 @@
   "secHistoryIntro": "છેલ્લા 90 દિવસમાં તમારા એકાઉન્ટમાં થયેલા સાઇન-ઇન અને ફેરફારો.",
   "secHistoryEmpty": "હજુ બતાવવા માટે કંઈ નથી.",
   "secJustNow": "હમણાં જ",
-  "secMinutesAgo": "{count, plural, one{1 મિનિટ પહેલાં} other{{count} મિનિટ પહેલાં}}",
-  "secHoursAgo": "{count, plural, one{1 કલાક પહેલાં} other{{count} કલાક પહેલાં}}",
-  "secDaysAgo": "{count, plural, one{1 દિવસ પહેલાં} other{{count} દિવસ પહેલાં}}",
+  "secMinutesAgo": "{count, plural, one{{count} મિનિટ પહેલાં} other{{count} મિનિટ પહેલાં}}",
+  "secHoursAgo": "{count, plural, one{{count} કલાક પહેલાં} other{{count} કલાક પહેલાં}}",
+  "secDaysAgo": "{count, plural, one{{count} દિવસ પહેલાં} other{{count} દિવસ પહેલાં}}",
   "secEventNewSignIn": "નવા ડિવાઇસથી સાઇન ઇન થયું",
   "secEventSignIn": "સાઇન ઇન થયું",
   "secEventPasswordChanged": "પાસવર્ડ બદલાયો",
@@ -1884,8 +1873,8 @@
   "lifePlanAutoChanged": "Vaultara એ આ રેકોર્ડ બદલાતો જોયો, તેથી તે પૂર્ણ તરીકે ચિહ્નિત છે.",
   "lifePlanAutoAdded": "તમે આ યોજના શરૂ કર્યા પછી ઉમેરાયું.",
   "lifePlanProgress": "{total} માંથી {done} પૂર્ણ",
-  "lifePlanDaysToGo": "{count, plural, =1{1 દિવસ બાકી} other{{count} દિવસ બાકી}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 દિવસ પહેલાં} other{{count} દિવસ પહેલાં}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} દિવસ બાકી} other{{count} દિવસ બાકી}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} દિવસ પહેલાં} other{{count} દિવસ પહેલાં}}",
   "lifePlanAllDone": "બધું પૂર્ણ થયું. તમે યોજનાને સમાપ્ત તરીકે ચિહ્નિત કરી શકો છો.",
   "lifePlanFinish": "સમાપ્ત તરીકે ચિહ્નિત કરો",
   "lifePlanReopen": "ફરી ખોલો",
@@ -2014,7 +2003,7 @@
   "lifePlanReadAloudUnavailable": "આ ફોનમાં મોટેથી વાંચવાની સુવિધા નથી.",
   "lifePlanProofPack": "પુરાવા પૅક બનાવો",
   "lifePlanOpenFamily": "પરિવાર ખોલો",
-  "lifePlanRemoved": "{count, plural, =1{તમે કાઢી નાખેલો 1 રેકોર્ડ રદ ગણાય છે.} other{તમે કાઢી નાખેલા {count} રેકોર્ડ રદ ગણાય છે.}}",
+  "lifePlanRemoved": "{count, plural, =1{તમે કાઢી નાખેલો {count} રેકોર્ડ રદ ગણાય છે.} other{તમે કાઢી નાખેલા {count} રેકોર્ડ રદ ગણાય છે.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2611,5 +2600,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "\"{recordName}\" આજે સમાપ્ત થાય છે",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "\"{recordName}\" કાલે સમાપ્ત થાય છે",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{\"{recordName}\" {days} દિવસમાં સમાપ્ત થાય છે} other{\"{recordName}\" {days} દિવસમાં સમાપ્ત થાય છે}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "\"{recordName}\" સમાપ્ત થઈ ગયું છે",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "એક લૉક કરેલા રેકોર્ડને તમારું ધ્યાન જોઈએ છે",
+  "remLockedBody": "તેની તારીખ {date} છે. કયો રેકોર્ડ છે તે જોવા Vaultara અનલૉક કરો.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "તમારો રેકોર્ડ \"{recordName}\" આજે સમાપ્ત થાય છે.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "તમારો રેકોર્ડ \"{recordName}\" કાલે સમાપ્ત થાય છે.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "તમારો રેકોર્ડ \"{recordName}\" {date}ના રોજ સમાપ્ત થાય છે.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, તમારો રેકોર્ડ \"{recordName}\" આજે સમાપ્ત થાય છે.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, તમારો રેકોર્ડ \"{recordName}\" કાલે સમાપ્ત થાય છે.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, તમારો રેકોર્ડ \"{recordName}\" {date}ના રોજ સમાપ્ત થાય છે.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: રેકોર્ડ \"{recordName}\" આજે સમાપ્ત થાય છે.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: રેકોર્ડ \"{recordName}\" કાલે સમાપ્ત થાય છે.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: રેકોર્ડ \"{recordName}\" {date}ના રોજ સમાપ્ત થાય છે.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "તમારો રેકોર્ડ \"{recordName}\" {date}ના રોજ સમાપ્ત થયો.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: રેકોર્ડ \"{recordName}\" {date}ના રોજ સમાપ્ત થયો.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "પહેલેથી રિન્યૂ કર્યું? તેની તારીખ અપડેટ કરો.",
+  "remTipTomorrow": "તે સમાપ્ત ન થાય તે માટે હમણાં રિન્યૂ કરો.",
+  "remTipEarly": "વહેલું રિન્યૂ કરવાથી તમે સુરક્ષિત રહો છો.",
+  "remTipLast": "સમાપ્તિ પહેલાંનું આ તમારું છેલ્લું રિમાઇન્ડર છે.",
+  "remTipExpired": "રિન્યૂ કરો, અથવા પહેલેથી કર્યું હોય તો તારીખ અપડેટ કરો.",
+  "remStartBody": "\"{recordName}\" રિન્યૂ કરવાનું શરૂ કરવાનો સમય છે. તે {date}ના રોજ સમાપ્ત થાય છે, તેથી હમણાં શરૂ કરશો તો તમારી પાસે પૂરતો સમય રહેશે.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) રિન્યૂ કરવાનું શરૂ કરવાનો સમય છે. તે {date}ના રોજ સમાપ્ત થાય છે, તેથી હમણાં શરૂ કરવાથી પૂરતો સમય રહેશે.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "સમાપ્તિ રિમાઇન્ડર",
+  "notifChannelDescription": "તમારા રેકોર્ડ સમાપ્ત થાય તે પહેલાં રિમાઇન્ડર",
+  "notifTestTitle": "પરીક્ષણ સૂચના",
+  "notifTestBody": "Vaultaraના રિમાઇન્ડર આ રીતે આવે છે.",
+  "notifTestAction": "પરીક્ષણ સૂચના મોકલો",
+  "notifTestSubtitle": "તપાસો કે રિમાઇન્ડર આ ફોન સુધી પહોંચે છે",
+  "notifTestSent": "પરીક્ષણ મોકલ્યું. તે થોડી સેકન્ડમાં આવવું જોઈએ.",
+  "notifAfterExpiryTitle": "રેકોર્ડ સમાપ્ત થયા પછી યાદ અપાવો",
+  "notifAfterExpirySubtitle": "3 અને 14 દિવસ પછી, જો રિન્યૂ ન થયો હોય",
+  "notifWeeklyTitle": "સોમવારનો સારાંશ",
+  "notifWeeklySubtitle": "તે અઠવાડિયે કંઈક સમાપ્ત થતું હોય ત્યારે સોમવારે સવારે એક સંદેશ",
+  "notifPushSection": "કુટુંબ અને અપડેટ",
+  "notifHouseholdTitle": "શેર કરેલા રેકોર્ડ",
+  "notifHouseholdSubtitle": "જ્યારે શેર કરેલો રેકોર્ડ સમાપ્ત થવાની નજીક હોય અને કોઈએ રિન્યૂ ન કર્યો હોય",
+  "notifUpdatesTitle": "તમે માંગેલા અપડેટ",
+  "notifUpdatesSubtitle": "જ્યારે કોઈ રેકોર્ડની નવી વિગતો મોકલે",
+  "notifSecurityNote": "તમારા એકાઉન્ટમાં નવા સાઇન-ઇનની ચેતવણીઓ હંમેશા મોકલવામાં આવે છે.",
+  "notifIosHelpTitle": "રિમાઇન્ડર મળતા નથી?",
+  "notifIosHelpSubtitle": "તમારા iPhoneના સેટિંગ્સ તપાસો",
+  "notifIosHelpStep1": "સેટિંગ્સ, પછી સૂચનાઓ, પછી Vaultara ખોલો, અને સૂચનાઓને મંજૂરી આપો ચાલુ કરો.",
+  "notifIosHelpStep2": "લૉક સ્ક્રીન, સૂચના કેન્દ્ર અને બૅનર ચાલુ કરો.",
+  "notifIosHelpStep3": "જો તમે ફોકસ વાપરો છો, તો Vaultaraને મંજૂર ઍપ્સમાં ઉમેરો.",
+  "notifIosHelpStep4": "દર થોડા અઠવાડિયે Vaultara ખોલો. iPhone આગળના મર્યાદિત રિમાઇન્ડર જ રાખે છે, અને ઍપ ખોલવાથી પછીના નક્કી થાય છે.",
+  "homeNextUpEmpty": "જલ્દી કંઈ સમાપ્ત થતું નથી. બધું બરાબર છે.",
+  "homeDueSoonChip": "{count, plural, one{30 દિવસમાં {count} બાકી} other{30 દિવસમાં {count} બાકી}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "પિન કરેલી શ્રેણીઓ"
 }

@@ -360,15 +360,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Rất vui được gặp lại bạn. Vaultara luôn sẵn sàng khi bạn muốn xem lại các ngày và bản ghi quan trọng của mình.';
 
   @override
-  String get summaryAllCaption => 'Được theo dõi trong Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Đã hết hạn';
-
-  @override
-  String get summaryExpiredCaption => 'Ngày hết hạn đã qua';
-
-  @override
   String get editorNotes => 'Ghi chú';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Xóa bản ghi';
-
-  @override
-  String get summaryAllRecordsTitle => 'Tất cả bản ghi';
 
   @override
   String get noGroupFound => 'Chưa có nhóm nào';
@@ -829,22 +817,10 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bản ghi',
-      one: '1 bản ghi',
+      one: '$count bản ghi',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Sắp tới';
-
-  @override
-  String get summaryUpcomingCaption => 'Trong 30 ngày';
-
-  @override
-  String get summaryUrgentTitle => 'Khẩn cấp';
-
-  @override
-  String get summaryUrgentCaption => 'Trong 7 ngày';
 
   @override
   String get profileHeaderTitle => 'Hồ sơ';
@@ -1047,7 +1023,7 @@ class AppLocalizationsVi extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names và $extra mục nữa hết hạn hôm nay.',
-      one: '$names và 1 mục nữa hết hạn hôm nay.',
+      one: '$names và $extra mục nữa hết hạn hôm nay.',
       zero: '$names hết hạn hôm nay.',
     );
     return '$_temp0';
@@ -1080,7 +1056,7 @@ class AppLocalizationsVi extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b, và $extra bản ghi nữa hết hạn trước ngày $lastDate, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi nhiều bản ghi quá gần nhau như vậy.',
-      one: '$a, $b, và 1 bản ghi nữa hết hạn trước ngày $lastDate, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi nhiều bản ghi quá gần nhau như vậy.',
+      one: '$a, $b, và $extra bản ghi nữa hết hạn trước ngày $lastDate, vào khoảng cùng một thời điểm. Rất dễ bỏ quên một mục khi nhiều bản ghi quá gần nhau như vậy.',
     );
     return '$_temp0';
   }
@@ -1102,7 +1078,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bản ghi của bạn trong danh mục $category sẽ hết hạn trước ngày $date. Rất dễ bỏ quên một mục khi chúng được gom nhóm như thế này.',
-      one: '1 bản ghi của bạn trong danh mục $category sẽ hết hạn vào ngày $date. Mục này rất dễ bị bỏ sót.',
+      one: '$count bản ghi của bạn trong danh mục $category sẽ hết hạn vào ngày $date. Mục này rất dễ bị bỏ sót.',
     );
     return '$_temp0';
   }
@@ -1113,7 +1089,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count hạn chót sắp tới đã có nhắc nhở. Không có mục nào khác cần bạn chú ý.',
-      one: '1 hạn chót sắp tới đã có nhắc nhở. Không có mục nào khác cần bạn chú ý.',
+      one: '$count hạn chót sắp tới đã có nhắc nhở. Không có mục nào khác cần bạn chú ý.',
     );
     return '$_temp0';
   }
@@ -1127,7 +1103,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Hiện tại không có mục nào khẩn cấp, nhưng có $count bản ghi sắp tới chưa được cài đặt nhắc nhở.',
-      one: 'Hiện tại không có mục nào khẩn cấp, nhưng có 1 bản ghi sắp tới chưa được cài đặt nhắc nhở.',
+      one: 'Hiện tại không có mục nào khẩn cấp, nhưng có $count bản ghi sắp tới chưa được cài đặt nhắc nhở.',
     );
     return '$_temp0';
   }
@@ -1251,7 +1227,7 @@ class AppLocalizationsVi extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ngày',
-      one: '1 ngày',
+      one: '$days ngày',
     );
     return 'Nhắc nhở $position: $_temp0 trước khi hết hạn';
   }
@@ -1288,7 +1264,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count sắp hết hạn',
-      one: '1 sắp hết hạn',
+      one: '$count sắp hết hạn',
     );
     return '$_temp0';
   }
@@ -1300,43 +1276,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get noRecordsTomorrow => 'Không có gì hết hạn ngày mai';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName sẽ hết hạn sau $days ngày',
-      one: '$recordName hết hạn vào ngày mai',
-      zero: '$recordName hết hạn hôm nay',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName của bạn sẽ hết hạn vào $date. Gia hạn sớm giúp đảm bảo hiệu lực liên tục.',
-      one: '$firstName, $recordName của bạn hết hạn vào ngày mai. Hãy gia hạn ngay để không bị gián đoạn.',
-      zero: '$firstName, $recordName của bạn hết hạn hôm nay. Bạn đã gia hạn chưa? Hãy cập nhật ngày hết hạn.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Lời nhắc cuối cùng: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'sau $days ngày, vào $date',
-      one: 'vào ngày mai',
-    );
-    return '$firstName, $recordName của bạn sẽ hết hạn $_temp0. Đây là lời nhắc cuối cùng, hãy gia hạn hoặc cập nhật ngày hết hạn.';
   }
 
   @override
@@ -1531,7 +1472,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bản ghi sắp tới chưa có chi phí.',
-      one: '1 bản ghi sắp tới chưa có chi phí.',
+      one: '$count bản ghi sắp tới chưa có chi phí.',
     );
     return '$_temp0';
   }
@@ -1565,7 +1506,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bản ghi',
-      one: '1 bản ghi',
+      one: '$count bản ghi',
       zero: 'Không có bản ghi',
     );
     return '$_temp0';
@@ -1621,7 +1562,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Tối đa $count người',
-      one: 'Tối đa 1 người',
+      one: 'Tối đa $count người',
     );
     return '$_temp0';
   }
@@ -1638,7 +1579,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Thêm tối đa $count người',
-      one: 'Thêm 1 người',
+      one: 'Thêm $count người',
     );
     return '$_temp0';
   }
@@ -2222,7 +2163,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bản ghi',
-      one: '1 bản ghi',
+      one: '$count bản ghi',
     );
     return '$_temp0';
   }
@@ -2253,7 +2194,7 @@ class AppLocalizationsVi extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Chuyến đi $days ngày',
-      one: 'Chuyến đi 1 ngày',
+      one: 'Chuyến đi $days ngày',
     );
     return '$_temp0';
   }
@@ -2326,7 +2267,7 @@ class AppLocalizationsVi extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months tháng',
-      one: '1 tháng',
+      one: '$months tháng',
     );
     return '$name hết hạn vào $date. Nhiều nước yêu cầu còn $_temp0 sau khi bạn về.';
   }
@@ -2342,7 +2283,7 @@ class AppLocalizationsVi extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ngày sau khi bạn đi',
-      one: '1 ngày sau khi bạn đi',
+      one: '$days ngày sau khi bạn đi',
       zero: 'đúng ngày bạn đi',
     );
     return '$name hết hạn vào $date, $_temp0.';
@@ -2520,7 +2461,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count mục cần chú ý',
-      one: '1 mục cần chú ý',
+      one: '$count mục cần chú ý',
     );
     return '$_temp0';
   }
@@ -2601,7 +2542,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count giấy tờ cần chú ý trước khi bạn đi.',
-      one: '1 giấy tờ cần chú ý trước khi bạn đi.',
+      one: '$count giấy tờ cần chú ý trước khi bạn đi.',
     );
     return '$_temp0';
   }
@@ -2704,7 +2645,7 @@ class AppLocalizationsVi extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit ảnh',
-      one: '1 ảnh',
+      one: '$limit ảnh',
     );
     return 'Gói Miễn phí cho phép thêm $_temp0 vào mỗi bản ghi. Với Premium, bạn có thể thêm tối đa $premiumLimit ảnh.';
   }
@@ -2740,7 +2681,7 @@ class AppLocalizationsVi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ảnh',
-      one: '1 ảnh',
+      one: '$count ảnh',
     );
     return '$_temp0';
   }
@@ -8218,4 +8159,202 @@ class AppLocalizationsVi extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Nhắc nhở: $name hết hạn vào $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName hết hạn hôm nay';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName hết hạn ngày mai';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName hết hạn sau $days ngày',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName đã hết hạn';
+  }
+
+  @override
+  String get remLockedTitle => 'Một bản ghi bị khóa cần bạn chú ý';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Ngày của nó là $date. Mở khóa Vaultara để xem đó là bản ghi nào.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Bản ghi \"$recordName\" của bạn hết hạn hôm nay.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Bản ghi \"$recordName\" của bạn hết hạn ngày mai.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Bản ghi \"$recordName\" của bạn hết hạn vào $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, bản ghi \"$recordName\" của bạn hết hạn hôm nay.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, bản ghi \"$recordName\" của bạn hết hạn ngày mai.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, bản ghi \"$recordName\" của bạn hết hạn vào $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: bản ghi \"$recordName\" hết hạn hôm nay.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: bản ghi \"$recordName\" hết hạn ngày mai.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: bản ghi \"$recordName\" hết hạn vào $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Bản ghi \"$recordName\" của bạn đã hết hạn vào $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: bản ghi \"$recordName\" đã hết hạn vào $date.';
+  }
+
+  @override
+  String get remTipToday => 'Đã gia hạn rồi? Hãy cập nhật ngày.';
+
+  @override
+  String get remTipTomorrow => 'Hãy gia hạn ngay để không bị hết hạn.';
+
+  @override
+  String get remTipEarly => 'Gia hạn sớm giúp bạn luôn được bảo đảm.';
+
+  @override
+  String get remTipLast => 'Đây là lời nhắc cuối cùng trước khi hết hạn.';
+
+  @override
+  String get remTipExpired => 'Hãy gia hạn, hoặc cập nhật ngày nếu bạn đã làm.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Đã đến lúc bắt đầu gia hạn \"$recordName\". Nó hết hạn vào $date, nên bắt đầu ngay bây giờ bạn sẽ có nhiều thời gian.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Đã đến lúc bắt đầu gia hạn \"$recordName\" ($person). Nó hết hạn vào $date, nên bắt đầu ngay bây giờ sẽ có nhiều thời gian.';
+  }
+
+  @override
+  String get notifChannelName => 'Lời nhắc hết hạn';
+
+  @override
+  String get notifChannelDescription => 'Lời nhắc trước khi bản ghi của bạn hết hạn';
+
+  @override
+  String get notifTestTitle => 'Thông báo thử';
+
+  @override
+  String get notifTestBody => 'Lời nhắc từ Vaultara sẽ đến như thế này.';
+
+  @override
+  String get notifTestAction => 'Gửi thông báo thử';
+
+  @override
+  String get notifTestSubtitle => 'Kiểm tra lời nhắc có đến điện thoại này không';
+
+  @override
+  String get notifTestSent => 'Đã gửi thử. Nó sẽ đến sau vài giây.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Nhắc tôi sau khi bản ghi hết hạn';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 và 14 ngày sau, nếu chưa được gia hạn';
+
+  @override
+  String get notifWeeklyTitle => 'Tóm tắt thứ Hai';
+
+  @override
+  String get notifWeeklySubtitle => 'Một tin nhắn sáng thứ Hai khi có thứ gì đó hết hạn trong tuần';
+
+  @override
+  String get notifPushSection => 'Hộ gia đình và cập nhật';
+
+  @override
+  String get notifHouseholdTitle => 'Bản ghi chia sẻ';
+
+  @override
+  String get notifHouseholdSubtitle => 'Khi một bản ghi chia sẻ sắp hết hạn và chưa ai gia hạn';
+
+  @override
+  String get notifUpdatesTitle => 'Cập nhật bạn đã yêu cầu';
+
+  @override
+  String get notifUpdatesSubtitle => 'Khi ai đó gửi thông tin mới của một bản ghi';
+
+  @override
+  String get notifSecurityNote => 'Cảnh báo về lần đăng nhập mới vào tài khoản của bạn luôn được gửi.';
+
+  @override
+  String get notifIosHelpTitle => 'Không nhận được lời nhắc?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Kiểm tra cài đặt iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Mở Cài đặt, rồi Thông báo, rồi Vaultara, và bật Cho phép thông báo.';
+
+  @override
+  String get notifIosHelpStep2 => 'Bật Màn hình khóa, Trung tâm thông báo và Biểu ngữ.';
+
+  @override
+  String get notifIosHelpStep3 => 'Nếu bạn dùng chế độ Tập trung, hãy thêm Vaultara vào các ứng dụng được phép.';
+
+  @override
+  String get notifIosHelpStep4 => 'Hãy mở Vaultara vài tuần một lần. iPhone chỉ giữ một số lượng giới hạn lời nhắc sắp tới, và mở ứng dụng sẽ lên lịch những lời nhắc tiếp theo.';
+
+  @override
+  String get homeNextUpEmpty => 'Không có gì sắp hết hạn. Mọi thứ đã sẵn sàng.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mục đến hạn trong 30 ngày',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Danh mục đã ghim';
 }

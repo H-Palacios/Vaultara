@@ -111,9 +111,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara ជួយអ្នកតាមដានកាលបរិច្ឆេទផុតកំណត់សំខាន់ៗ ដើម្បីកុំឱ្យអ្វីមួយផុតកំណត់ដោយមិនដឹងខ្លួន។",
   "homeWelcomeSubtitleFirst": "រីករាយណាស់ដែលមានអ្នកនៅទីនេះ។ Vaultara ជួយអ្នករៀបចំអ្វីៗឱ្យមានរបៀប ដោយរក្សាកាលបរិច្ឆេទ និងកំណត់ត្រាសំខាន់ៗនៅកន្លែងតែមួយប្រកបដោយសុវត្ថិភាព។",
   "homeWelcomeSubtitleBack": "រីករាយដែលបានជួបអ្នកម្ដងទៀត។ Vaultara តែងនៅទីនេះគ្រប់ពេលដែលអ្នកចង់ពិនិត្យមើលកាលបរិច្ឆេទ និងកំណត់ត្រាសំខាន់ៗរបស់អ្នក។",
-  "summaryAllCaption": "បានតាមដានក្នុង Vaultara",
-  "summaryExpiredTitle": "បានផុតកំណត់",
-  "summaryExpiredCaption": "ហួសកាលបរិច្ឆេទផុតកំណត់",
   "editorNotes": "កំណត់ចំណាំ",
   "editorReminderNone": "គ្មានការរំលឹក",
   "editorReminderOnExpiry": "នៅកាលបរិច្ឆេទផុតកំណត់",
@@ -129,7 +126,6 @@
   "addRecord": "បន្ថែមកំណត់ត្រា",
   "noRecordsYet": "មិនទាន់មានកំណត់ត្រានៅឡើយទេ។",
   "deleteRecordTitle": "លុបកំណត់ត្រា",
-  "summaryAllRecordsTitle": "កំណត់ត្រាទាំងអស់",
   "noGroupFound": "មិនទាន់មានក្រុមនៅឡើយទេ",
   "groupLabel": "{count, plural, other{{count} ក្រុម}}",
   "recordsLabel": "{count, plural, other{{count} កំណត់ត្រា}}",
@@ -249,11 +245,7 @@
   "addNotesHint": "បន្ថែមកំណត់ចំណាំ (ស្រេចចិត្ត)",
   "expiryTimelineTitle": "បន្ទាត់ពេលវេលានៃការផុតកំណត់",
   "expiryTimelineSubtitle": "ចុចលើខែមួយ ដើម្បីមើលកំណត់ត្រាដែលផុតកំណត់ក្នុងខែនោះ",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 កំណត់ត្រា} other{{count} កំណត់ត្រា}}",
-  "summaryUpcomingTitle": "នាពេលខាងមុខ",
-  "summaryUpcomingCaption": "ក្នុងរយៈពេល 30 ថ្ងៃ",
-  "summaryUrgentTitle": "បន្ទាន់",
-  "summaryUrgentCaption": "ក្នុងរយៈពេល 7 ថ្ងៃ",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} កំណត់ត្រា} other{{count} កំណត់ត្រា}}",
   "profileHeaderTitle": "កម្រងព័ត៌មាន",
   "profileTutorialsTitle": "មេរៀនណែនាំ",
   "profileTutorialsSubtitle": "រុករកមេរៀនណែនាំអំពីកម្មវិធី",
@@ -316,16 +308,16 @@
   "smartInsightNoRecordsHeading": "បន្ថែមកំណត់ត្រាដំបូងរបស់អ្នក",
   "smartInsightNoRecordsBody": "ចាប់ផ្ដើមតាមដានកំណត់ត្រារបស់អ្នក ហើយ Vaultara នឹងបង្ហាញការយល់ដឹងឆ្លាតវៃនៅទីនេះ។",
   "smartInsightExpiresTodaySingleBody": "{name} ផុតកំណត់ថ្ងៃនេះ។ ប្រសិនបើអ្នកបានបន្តសុពលភាពវារួចហើយ សូមធ្វើបច្ចុប្បន្នភាពកាលបរិច្ឆេទនៅទីនេះ។",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ផុតកំណត់ថ្ងៃនេះ។} =1{{names} និង 1 ផ្សេងទៀត ផុតកំណត់ថ្ងៃនេះ។} other{{names} និង {extra} ផ្សេងទៀត ផុតកំណត់ថ្ងៃនេះ។}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ផុតកំណត់ថ្ងៃនេះ។} =1{{names} និង {extra} ផ្សេងទៀត ផុតកំណត់ថ្ងៃនេះ។} other{{names} និង {extra} ផ្សេងទៀត ផុតកំណត់ថ្ងៃនេះ។}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} ផុតកំណត់ថ្ងៃស្អែក ហើយមិនមានការរំលឹកទេ។ សូមកំណត់ការរំលឹកមួយ ដើម្បីកុំឱ្យភ្លេច។} other{{name} ផុតកំណត់នៅ {date} ហើយមិនមានការរំលឹកទេ។ សូមកំណត់ការរំលឹកមួយ ដើម្បីកុំឱ្យភ្លេច។}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} ផុតកំណត់នៅ {dateA} ហើយ {b} នៅ {dateB} ដែលស្ទើរតែក្នុងពេលតែមួយ។ វាងាយនឹងភ្លេចមួយ នៅពេលកំណត់ត្រាពីរនៅជិតគ្នាបែបនេះ។",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} និង {c} សុទ្ធតែផុតកំណត់មុន {lastDate} ដែលស្ទើរតែក្នុងពេលតែមួយ។ វាងាយនឹងភ្លេចមួយ នៅពេលកំណត់ត្រាជាច្រើននៅជិតគ្នាបែបនេះ។",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} និង 1 ផ្សេងទៀត ផុតកំណត់មុន {lastDate} ដែលស្ទើរតែក្នុងពេលតែមួយ។ វាងាយនឹងភ្លេចមួយ នៅពេលកំណត់ត្រាជាច្រើននៅជិតគ្នាបែបនេះ។} other{{a}, {b} និង {extra} ផ្សេងទៀត ផុតកំណត់មុន {lastDate} ដែលស្ទើរតែក្នុងពេលតែមួយ។ វាងាយនឹងភ្លេចមួយ នៅពេលកំណត់ត្រាជាច្រើននៅជិតគ្នាបែបនេះ។}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} និង {extra} ផ្សេងទៀត ផុតកំណត់មុន {lastDate} ដែលស្ទើរតែក្នុងពេលតែមួយ។ វាងាយនឹងភ្លេចមួយ នៅពេលកំណត់ត្រាជាច្រើននៅជិតគ្នាបែបនេះ។} other{{a}, {b} និង {extra} ផ្សេងទៀត ផុតកំណត់មុន {lastDate} ដែលស្ទើរតែក្នុងពេលតែមួយ។ វាងាយនឹងភ្លេចមួយ នៅពេលកំណត់ត្រាជាច្រើននៅជិតគ្នាបែបនេះ។}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{គ្មានអ្វីផុតកំណត់នៅថ្ងៃខាងមុខទេ។ ការផុតកំណត់បន្ទាប់របស់អ្នកគឺនៅ {date}។} other{គ្មានអ្វីផុតកំណត់ក្នុងរយៈពេល {days} ថ្ងៃខាងមុខទេ។ ការផុតកំណត់បន្ទាប់របស់អ្នកគឺនៅ {date}។}}",
-  "smartInsightClusterBody": "{count, plural, =1{កំណត់ត្រា 1 របស់អ្នកក្នុងប្រភេទ {category} ផុតកំណត់នៅ {date}។ វាងាយនឹងមើលរំលង។} other{កំណត់ត្រា {count} របស់អ្នកក្នុងប្រភេទ {category} ផុតកំណត់មុន {date}។ វាងាយនឹងភ្លេចមួយ នៅពេលវាប្រមូលផ្ដុំគ្នាបែបនេះ។}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{ការផុតកំណត់នាពេលខាងមុខ 1 ត្រូវបានគ្របដណ្ដប់ដោយការរំលឹក។ គ្មានអ្វីផ្សេងទៀតត្រូវការការយកចិត្តទុកដាក់ពីអ្នកទេ។} other{ការផុតកំណត់នាពេលខាងមុខ {count} ត្រូវបានគ្របដណ្ដប់ដោយការរំលឹក។ គ្មានអ្វីផ្សេងទៀតត្រូវការការយកចិត្តទុកដាក់ពីអ្នកទេ។}}",
+  "smartInsightClusterBody": "{count, plural, =1{កំណត់ត្រា {count} របស់អ្នកក្នុងប្រភេទ {category} ផុតកំណត់នៅ {date}។ វាងាយនឹងមើលរំលង។} other{កំណត់ត្រា {count} របស់អ្នកក្នុងប្រភេទ {category} ផុតកំណត់មុន {date}។ វាងាយនឹងភ្លេចមួយ នៅពេលវាប្រមូលផ្ដុំគ្នាបែបនេះ។}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{ការផុតកំណត់នាពេលខាងមុខ {count} ត្រូវបានគ្របដណ្ដប់ដោយការរំលឹក។ គ្មានអ្វីផ្សេងទៀតត្រូវការការយកចិត្តទុកដាក់ពីអ្នកទេ។} other{ការផុតកំណត់នាពេលខាងមុខ {count} ត្រូវបានគ្របដណ្ដប់ដោយការរំលឹក។ គ្មានអ្វីផ្សេងទៀតត្រូវការការយកចិត្តទុកដាក់ពីអ្នកទេ។}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "អ្វីៗទាំងអស់រៀបរយហើយ។ គ្មានអ្វីត្រូវការការយកចិត្តទុកដាក់ពីអ្នកនៅពេលនេះទេ។",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{មិនមានអ្វីបន្ទាន់នៅពេលនេះទេ ប៉ុន្តែកំណត់ត្រានាពេលខាងមុខ 1 មិនទាន់មានការរំលឹកនៅឡើយ។} other{មិនមានអ្វីបន្ទាន់នៅពេលនេះទេ ប៉ុន្តែកំណត់ត្រានាពេលខាងមុខ {count} មិនទាន់មានការរំលឹកនៅឡើយ។}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{មិនមានអ្វីបន្ទាន់នៅពេលនេះទេ ប៉ុន្តែកំណត់ត្រានាពេលខាងមុខ {count} មិនទាន់មានការរំលឹកនៅឡើយ។} other{មិនមានអ្វីបន្ទាន់នៅពេលនេះទេ ប៉ុន្តែកំណត់ត្រានាពេលខាងមុខ {count} មិនទាន់មានការរំលឹកនៅឡើយ។}}",
   "smartInsightCloseExpiriesHeading": "ផុតកំណត់ក្នុងពេលប្រហាក់ប្រហែលគ្នា",
   "plansHeadline": "ទទួលបាន Vaultara ពេញលេញ",
   "plansSubhead": "កំណត់ត្រាគ្មានដែនកំណត់ ក្រុមផ្ទាល់ខ្លួនរបស់អ្នក និងការរំលឹកដែលកំណត់តាមបំណងរបស់អ្នកយ៉ាងពិតប្រាកដ។",
@@ -357,7 +349,7 @@
   "reminderCascadeRemoveStep": "ដកចេញ",
   "reminderCascadeDuplicate": "ការរំលឹកមួយទៀតប្រើថ្ងៃនេះរួចហើយ",
   "reminderCascadeOutOfRange": "បញ្ចូលចន្លោះពី {min} ដល់ {max} ថ្ងៃ",
-  "reminderCascadeStepLabel": "ការរំលឹក {position}៖ {days, plural, =1{1 ថ្ងៃ} other{{days} ថ្ងៃ}} មុន",
+  "reminderCascadeStepLabel": "ការរំលឹក {position}៖ {days, plural, =1{{days} ថ្ងៃ} other{{days} ថ្ងៃ}} មុន",
   "expiryTimelineNotReady": "បន្ទាត់ពេលវេលារបស់អ្នកនឹងបង្ហាញ នៅពេលអ្នកមានកំណត់ត្រាដែលផុតកំណត់ក្នុងខែផ្សេងៗគ្នាពីរបី។",
   "verifyEmailResendIn": "ផ្ញើម្ដងទៀតក្នុង {seconds}វិ",
   "verifyEmailSpamHint": "រកមិនឃើញទេ? សូមពិនិត្យថតសារឥតបានការរបស់អ្នក។",
@@ -366,13 +358,10 @@
   "verifyEmailDiscardBody": "គណនីនេះមិនទាន់បានផ្ទៀងផ្ទាត់ទេ។ ប្រសិនបើអ្នកចេញពីទំព័រនេះឥឡូវ គណនីនឹងត្រូវបានលុប ហើយអ្នកអាចចុះឈ្មោះម្ដងទៀតដោយប្រើអាសយដ្ឋានអ៊ីមែលណាមួយ។",
   "verifyEmailDiscardAction": "បោះចោល",
   "verifyEmailKeepWaiting": "បន្តរង់ចាំ",
-  "expiringBadge": "{count, plural, =1{1 ជិតផុតកំណត់} other{{count} ជិតផុតកំណត់}}",
+  "expiringBadge": "{count, plural, =1{{count} ជិតផុតកំណត់} other{{count} ជិតផុតកំណត់}}",
   "noRecordsToday": "គ្មានអ្វីផុតកំណត់ថ្ងៃនេះទេ",
   "noRecordsTomorrow": "គ្មានអ្វីផុតកំណត់ថ្ងៃស្អែកទេ",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ផុតកំណត់ថ្ងៃនេះ} =1{{recordName} ផុតកំណត់ថ្ងៃស្អែក} other{{recordName} ផុតកំណត់ក្នុងរយៈពេល {days} ថ្ងៃទៀត}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} របស់អ្នកផុតកំណត់ថ្ងៃនេះ។ បានបន្តសុពលភាពវារួចហើយឬ? សូមធ្វើបច្ចុប្បន្នភាពកាលបរិច្ឆេទផុតកំណត់របស់វា។} =1{{firstName}, {recordName} របស់អ្នកផុតកំណត់ថ្ងៃស្អែក។ សូមបន្តសុពលភាពវាឥឡូវនេះ ដើម្បីកុំឱ្យវាផុតកំណត់។} other{{firstName}, {recordName} របស់អ្នកផុតកំណត់នៅ {date}។ ការបន្តសុពលភាពមុនពេល ជួយឱ្យអ្នកមានការការពារជានិច្ច។}}",
   "cascadeFinalStepTitle": "ការរំលឹកចុងក្រោយ៖ {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} របស់អ្នកផុតកំណត់{days, plural, =1{ថ្ងៃស្អែក} other{ក្នុងរយៈពេល {days} ថ្ងៃទៀត គឺនៅ {date}}}។ នេះជាការរំលឹកចុងក្រោយរបស់អ្នក សូមបន្តសុពលភាពវា ឬធ្វើបច្ចុប្បន្នភាពកាលបរិច្ឆេទរបស់វា។",
   "notificationsTitle": "ការជូនដំណឹង",
   "notificationsProfileEnabledSubtitle": "ការរំលឹកមកដល់នៅម៉ោង {time}។",
   "notificationsProfileDisabledSubtitle": "ការជូនដំណឹងត្រូវបានបិទ។",
@@ -431,7 +420,7 @@
   "costCardTitle": "ថ្លៃបន្តសុពលភាព",
   "costCardSubtitle": "ថ្លៃបន្តសុពលភាពរបស់អ្នកតាមខែ",
   "costCardBusiest": "ខែចំណាយច្រើនបំផុត៖ {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{កំណត់ត្រានាពេលខាងមុខ 1 មិនទាន់មានថ្លៃនៅឡើយ។} other{កំណត់ត្រានាពេលខាងមុខ {count} មិនទាន់មានថ្លៃនៅឡើយ។}}",
+  "costCardMissing": "{count, plural, =1{កំណត់ត្រានាពេលខាងមុខ {count} មិនទាន់មានថ្លៃនៅឡើយ។} other{កំណត់ត្រានាពេលខាងមុខ {count} មិនទាន់មានថ្លៃនៅឡើយ។}}",
   "costCardEmpty": "បន្ថែមថ្លៃទៅកំណត់ត្រារបស់អ្នក ដើម្បីមើលថាការបន្តសុពលភាពនឹងចំណាយប៉ុន្មាន។",
   "costCardLockedHint": "មើលថាការបន្តសុពលភាពរបស់អ្នកនឹងចំណាយប៉ុន្មានក្នុងឆ្នាំខាងមុខ ជាមួយ Premium។",
   "costCardSeePremium": "មើល Premium",
@@ -439,7 +428,7 @@
   "familyTitle": "គ្រួសារ",
   "familyIntro": "តាមដានកំណត់ត្រារបស់មនុស្សដែលអ្នកមើលថែ។ ការរំលឹករបស់ពួកគេបង្ហាញឈ្មោះ ដូច្នេះអ្នកដឹងថាជាកំណត់ត្រារបស់អ្នកណា។",
   "familyMe": "ខ្ញុំ",
-  "familyRecordCount": "{count, plural, =0{គ្មានកំណត់ត្រា} =1{1 កំណត់ត្រា} other{{count} កំណត់ត្រា}}",
+  "familyRecordCount": "{count, plural, =0{គ្មានកំណត់ត្រា} =1{{count} កំណត់ត្រា} other{{count} កំណត់ត្រា}}",
   "familyRename": "ប្តូរឈ្មោះ",
   "familyRemove": "ដកចេញ",
   "familyRemoveTitle": "ដក {name} ចេញឬ?",
@@ -452,10 +441,10 @@
   "familyNameLabel": "ឈ្មោះ",
   "familyNameHint": "ឧទាហរណ៍ សុខា",
   "familyNameRequired": "បញ្ចូលឈ្មោះ",
-  "familyLimitNote": "{count, plural, =1{រហូតដល់ 1 នាក់} other{រហូតដល់ {count} នាក់}}",
+  "familyLimitNote": "{count, plural, =1{រហូតដល់ {count} នាក់} other{រហូតដល់ {count} នាក់}}",
   "familyUpsellTitle": "តាមដានឯកសាររបស់គ្រួសារអ្នក",
   "familyBenefitPremium": "អ្វីៗទាំងអស់ក្នុង Premium",
-  "familyBenefitPeople": "{count, plural, =1{បន្ថែម 1 នាក់} other{បន្ថែមរហូតដល់ {count} នាក់}}",
+  "familyBenefitPeople": "{count, plural, =1{បន្ថែម {count} នាក់} other{បន្ថែមរហូតដល់ {count} នាក់}}",
   "familyBenefitOwnRecords": "មនុស្សម្នាក់ៗមានកំណត់ត្រា និងការរំលឹកផ្ទាល់ខ្លួន",
   "familyBenefitOneSubscription": "ការជាវតែមួយសម្រាប់គ្រួសារទាំងមូល",
   "familySeePlan": "មើលគម្រោងគ្រួសារ",
@@ -641,14 +630,14 @@
   "calendarExportError": "យើងមិនអាចបង្កើតឯកសារប្រតិទិនបានទេ។ សូមព្យាយាមម្តងទៀត។",
   "pdfExportTitle": "កំណត់ត្រា Vaultara",
   "pdfExportGenerated": "បានបង្កើតនៅ {date}",
-  "pdfExportCount": "{count, plural, =1{1 កំណត់ត្រា} other{{count} កំណត់ត្រា}}",
+  "pdfExportCount": "{count, plural, =1{{count} កំណត់ត្រា} other{{count} កំណត់ត្រា}}",
   "pdfExportCost": "ថ្លៃបន្តសុពលភាព៖ {amount}",
   "pdfExportBuilding": "កំពុងរៀបចំ PDF របស់អ្នក...",
   "pdfExportError": "យើងមិនអាចបង្កើត PDF បានទេ។ សូមព្យាយាមម្តងទៀត។",
   "travelTitle": "ការពិនិត្យដំណើរ",
   "travelDeparture": "ចេញដំណើរ",
   "travelReturn": "ត្រឡប់មកវិញ",
-  "travelTripLength": "{days, plural, =1{ដំណើរ 1 ថ្ងៃ} other{ដំណើរ {days} ថ្ងៃ}}",
+  "travelTripLength": "{days, plural, =1{ដំណើរ {days} ថ្ងៃ} other{ដំណើរ {days} ថ្ងៃ}}",
   "travelDriving": "ខ្ញុំនឹងបើកបរ",
   "travelNeedsVisa": "ខ្ញុំត្រូវការទិដ្ឋាការ",
   "travelWho": "តើអ្នកណាធ្វើដំណើរ?",
@@ -669,9 +658,9 @@
   "travelNoLicence": "មិនទាន់បានបន្ថែមប័ណ្ណបើកបរ",
   "travelOtherExpires": "ផុតកំណត់ពេលអ្នកនៅឆ្ងាយ",
   "travelDetailValidUntil": "{name} មានសុពលភាពរហូតដល់ {date}។",
-  "travelDetailPassportBuffer": "{name} ផុតកំណត់នៅ {date}។ ប្រទេសជាច្រើនចង់ឱ្យនៅសល់សុពលភាព {months, plural, =1{1 ខែ} other{{months} ខែ}} ក្រោយអ្នកត្រឡប់មកវិញ។",
+  "travelDetailPassportBuffer": "{name} ផុតកំណត់នៅ {date}។ ប្រទេសជាច្រើនចង់ឱ្យនៅសល់សុពលភាព {months, plural, =1{{months} ខែ} other{{months} ខែ}} ក្រោយអ្នកត្រឡប់មកវិញ។",
   "travelDetailExpiresBeforeLeaving": "{name} ផុតកំណត់នៅ {date} មុនអ្នកចេញដំណើរ។",
-  "travelDetailExpiresDuringTrip": "{name} ផុតកំណត់នៅ {date} {days, plural, =0{នៅថ្ងៃអ្នកចេញដំណើរ} =1{1 ថ្ងៃក្រោយចេញដំណើរ} other{{days} ថ្ងៃក្រោយចេញដំណើរ}}។",
+  "travelDetailExpiresDuringTrip": "{name} ផុតកំណត់នៅ {date} {days, plural, =0{នៅថ្ងៃអ្នកចេញដំណើរ} =1{{days} ថ្ងៃក្រោយចេញដំណើរ} other{{days} ថ្ងៃក្រោយចេញដំណើរ}}។",
   "travelDetailNoPassport": "បន្ថែមលិខិតឆ្លងដែនរបស់អ្នក ដើម្បីឱ្យ Vaultara អាចពិនិត្យវា។",
   "travelDetailNoVisa": "បន្ថែមទិដ្ឋាការរបស់អ្នក ដើម្បីឱ្យ Vaultara អាចពិនិត្យវា។",
   "travelDetailNoInsurance": "បន្ថែមធានារ៉ាប់រងការធ្វើដំណើររបស់អ្នក ដើម្បីពិនិត្យថាវាគ្របដណ្តប់ដំណើរទាំងមូល។",
@@ -723,7 +712,7 @@
   "travelInProgress": "កំពុងធ្វើដំណើរ",
   "travelTripEnded": "ដំណើរបានបញ្ចប់",
   "travelAllGood": "ឯកសារទាំងអស់រួចរាល់",
-  "travelIssues": "{count, plural, =1{មាន 1 ចំណុចត្រូវយកចិត្តទុកដាក់} other{មាន {count} ចំណុចត្រូវយកចិត្តទុកដាក់}}",
+  "travelIssues": "{count, plural, =1{មាន {count} ចំណុចត្រូវយកចិត្តទុកដាក់} other{មាន {count} ចំណុចត្រូវយកចិត្តទុកដាក់}}",
   "travelChecklistTitle": "បញ្ជីត្រួតពិនិត្យដំណើរ",
   "travelChecklistProgress": "បានធ្វើ {done} ក្នុងចំណោម {total}",
   "travelChecklistAdd": "បន្ថែម",
@@ -743,7 +732,7 @@
   "travelTripTo": "ដំណើរទៅ {name}",
   "travelReminderTitle": "{days, plural, other{ដំណើរទៅ {name} ក្នុងរយៈពេល {days} ថ្ងៃទៀត}}",
   "travelReminderTitleTomorrow": "ដំណើរទៅ {name} ថ្ងៃស្អែក",
-  "travelReminderBodyIssues": "{count, plural, =1{ឯកសារ 1 ត្រូវយកចិត្តទុកដាក់មុនអ្នកចេញដំណើរ។} other{ឯកសារ {count} ត្រូវយកចិត្តទុកដាក់មុនអ្នកចេញដំណើរ។}}",
+  "travelReminderBodyIssues": "{count, plural, =1{ឯកសារ {count} ត្រូវយកចិត្តទុកដាក់មុនអ្នកចេញដំណើរ។} other{ឯកសារ {count} ត្រូវយកចិត្តទុកដាក់មុនអ្នកចេញដំណើរ។}}",
   "travelReminderBodyOk": "ឯកសាររបស់អ្នករួចរាល់ហើយ។ បើកដំណើររបស់អ្នក ដើម្បីពិនិត្យបញ្ជី។",
   "travelTripLimit": "អ្នកអាចរក្សាទុកដំណើរបានរហូតដល់ {count}។ លុបដំណើរចាស់ ដើម្បីបន្ថែមដំណើរថ្មី។",
   "recordLockTitle": "ចាក់សោកំណត់ត្រានេះ",
@@ -771,7 +760,7 @@
   "vaultChooseFromGallery": "ជ្រើសរើសពីវិចិត្រសាល",
   "vaultRemove": "ដកចេញ",
   "vaultLimitTitle": "បានដល់ដែនកំណត់រូបថត",
-  "vaultLimitFreeBody": "គម្រោងឥតគិតថ្លៃអនុញ្ញាតឱ្យអ្នកបន្ថែម {limit, plural, =1{រូបថត 1} other{រូបថត {limit}}} ទៅកំណត់ត្រានីមួយៗ។ ជាមួយ Premium អ្នកអាចបន្ថែមបានរហូតដល់ {premiumLimit}។",
+  "vaultLimitFreeBody": "គម្រោងឥតគិតថ្លៃអនុញ្ញាតឱ្យអ្នកបន្ថែម {limit, plural, =1{រូបថត {limit}} other{រូបថត {limit}}} ទៅកំណត់ត្រានីមួយៗ។ ជាមួយ Premium អ្នកអាចបន្ថែមបានរហូតដល់ {premiumLimit}។",
   "vaultLimitPremiumBody": "អ្នកអាចបន្ថែមរូបថតរហូតដល់ {limit} ទៅកំណត់ត្រានីមួយៗ។ សូមដកមួយចេញ ដើម្បីបន្ថែមមួយទៀត។",
   "vaultSeePremium": "មើល Premium",
   "vaultPdfShort": "PDF",
@@ -779,7 +768,7 @@
   "vaultOpenFile": "បើក",
   "vaultClose": "បិទ",
   "vaultPageIndicator": "{current} នៃ {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{រូបថត 1} other{រូបថត {count}}}",
+  "vaultPhotosTooltip": "{count, plural, =1{រូបថត {count}} other{រូបថត {count}}}",
   "travelReadinessTitle": "ភាពរួចរាល់សម្រាប់ដំណើរ",
   "travelReadinessBody": "ផ្អែកលើលិខិតឆ្លងដែន និងប័ណ្ណបើកបរដែលបានរក្សាទុកក្នុង Vaultara។ ប្រទេសភាគច្រើនចង់ឱ្យលិខិតឆ្លងដែនមានសុពលភាពនៅសល់យ៉ាងតិច ៦ ខែ ពេលអ្នកត្រឡប់មកវិញ។",
   "travelReadyUntil": "លិខិតឆ្លងដែនប្រើបានសម្រាប់ដំណើររហូតដល់ {date}",
@@ -2611,5 +2600,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} ផុតកំណត់ថ្ងៃនេះ",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} ផុតកំណត់ថ្ងៃស្អែក",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} នឹងផុតកំណត់ក្នុងរយៈពេល {days} ថ្ងៃទៀត}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} បានផុតកំណត់ហើយ",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "កំណត់ត្រាដែលបានចាក់សោត្រូវការការយកចិត្តទុកដាក់របស់អ្នក",
+  "remLockedBody": "កាលបរិច្ឆេទរបស់វាគឺ {date}។ ដោះសោ Vaultara ដើម្បីមើលថាជាកំណត់ត្រាមួយណា។",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "កំណត់ត្រា \"{recordName}\" របស់អ្នកផុតកំណត់ថ្ងៃនេះ។",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "កំណត់ត្រា \"{recordName}\" របស់អ្នកផុតកំណត់ថ្ងៃស្អែក។",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "កំណត់ត្រា \"{recordName}\" របស់អ្នកនឹងផុតកំណត់នៅ {date}។",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, កំណត់ត្រា \"{recordName}\" របស់អ្នកផុតកំណត់ថ្ងៃនេះ។",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, កំណត់ត្រា \"{recordName}\" របស់អ្នកផុតកំណត់ថ្ងៃស្អែក។",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, កំណត់ត្រា \"{recordName}\" របស់អ្នកនឹងផុតកំណត់នៅ {date}។",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}៖ កំណត់ត្រា \"{recordName}\" ផុតកំណត់ថ្ងៃនេះ។",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}៖ កំណត់ត្រា \"{recordName}\" ផុតកំណត់ថ្ងៃស្អែក។",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}៖ កំណត់ត្រា \"{recordName}\" នឹងផុតកំណត់នៅ {date}។",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "កំណត់ត្រា \"{recordName}\" របស់អ្នកបានផុតកំណត់នៅ {date}។",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}៖ កំណត់ត្រា \"{recordName}\" បានផុតកំណត់នៅ {date}។",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "បានបន្តរួចហើយឬ? ធ្វើបច្ចុប្បន្នភាពកាលបរិច្ឆេទរបស់វា។",
+  "remTipTomorrow": "បន្តវាឥឡូវនេះ ដើម្បីកុំឱ្យផុតកំណត់។",
+  "remTipEarly": "ការបន្តមុនៗ ធ្វើឱ្យអ្នកមានសុវត្ថិភាព។",
+  "remTipLast": "នេះជាការរំលឹកចុងក្រោយមុនពេលផុតកំណត់។",
+  "remTipExpired": "បន្តវា ឬធ្វើបច្ចុប្បន្នភាពកាលបរិច្ឆេទ ប្រសិនបើអ្នកបានធ្វើរួចហើយ។",
+  "remStartBody": "ដល់ពេលចាប់ផ្ដើមបន្ត \"{recordName}\" ហើយ។ វានឹងផុតកំណត់នៅ {date} ដូច្នេះបើចាប់ផ្ដើមឥឡូវនេះ អ្នកនឹងមានពេលច្រើន។",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "ដល់ពេលចាប់ផ្ដើមបន្ត \"{recordName}\" ({person}) ហើយ។ វានឹងផុតកំណត់នៅ {date} ដូច្នេះបើចាប់ផ្ដើមឥឡូវនេះ នឹងមានពេលច្រើន។",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "ការរំលឹកពីការផុតកំណត់",
+  "notifChannelDescription": "ការរំលឹកមុនពេលកំណត់ត្រារបស់អ្នកផុតកំណត់",
+  "notifTestTitle": "ការជូនដំណឹងសាកល្បង",
+  "notifTestBody": "ការរំលឹកពី Vaultara មកដល់បែបនេះ។",
+  "notifTestAction": "ផ្ញើការជូនដំណឹងសាកល្បង",
+  "notifTestSubtitle": "ពិនិត្យថាការរំលឹកមកដល់ទូរសព្ទនេះ",
+  "notifTestSent": "បានផ្ញើការសាកល្បង។ វាគួរតែមកដល់ក្នុងរយៈពេលពីរបីវិនាទី។",
+  "notifAfterExpiryTitle": "រំលឹកខ្ញុំក្រោយកំណត់ត្រាផុតកំណត់",
+  "notifAfterExpirySubtitle": "3 និង 14 ថ្ងៃក្រោយ ប្រសិនបើមិនទាន់បន្ត",
+  "notifWeeklyTitle": "សេចក្ដីសង្ខេបថ្ងៃច័ន្ទ",
+  "notifWeeklySubtitle": "សារមួយនៅព្រឹកថ្ងៃច័ន្ទ នៅពេលមានអ្វីផុតកំណត់ក្នុងសប្ដាហ៍នោះ",
+  "notifPushSection": "គ្រួសារ និងបច្ចុប្បន្នភាព",
+  "notifHouseholdTitle": "កំណត់ត្រាដែលបានចែករំលែក",
+  "notifHouseholdSubtitle": "នៅពេលកំណត់ត្រាដែលបានចែករំលែកជិតផុតកំណត់ ហើយគ្មាននរណាបានបន្ត",
+  "notifUpdatesTitle": "បច្ចុប្បន្នភាពដែលអ្នកបានស្នើ",
+  "notifUpdatesSubtitle": "នៅពេលនរណាម្នាក់ផ្ញើព័ត៌មានថ្មីនៃកំណត់ត្រា",
+  "notifSecurityNote": "ការជូនដំណឹងអំពីការចូលថ្មីទៅគណនីរបស់អ្នកតែងតែត្រូវបានផ្ញើ។",
+  "notifIosHelpTitle": "មិនទទួលបានការរំលឹកទេឬ?",
+  "notifIosHelpSubtitle": "ពិនិត្យការកំណត់ iPhone របស់អ្នក",
+  "notifIosHelpStep1": "បើកការកំណត់ បន្ទាប់មកការជូនដំណឹង បន្ទាប់មក Vaultara ហើយបើកអនុញ្ញាតការជូនដំណឹង។",
+  "notifIosHelpStep2": "បើកអេក្រង់ចាក់សោ មជ្ឈមណ្ឌលជូនដំណឹង និងបដា។",
+  "notifIosHelpStep3": "ប្រសិនបើអ្នកប្រើ Focus សូមបន្ថែម Vaultara ទៅកម្មវិធីដែលវាអនុញ្ញាត។",
+  "notifIosHelpStep4": "បើក Vaultara រៀងរាល់ពីរបីសប្ដាហ៍ម្ដង។ iPhone រក្សាការរំលឹកជាមុនបានតែចំនួនកំណត់ ហើយការបើកកម្មវិធីនឹងរៀបចំការរំលឹកបន្ទាប់។",
+  "homeNextUpEmpty": "គ្មានអ្វីផុតកំណត់ឆាប់ៗនេះទេ។ អ្វីៗរួចរាល់ហើយ។",
+  "homeDueSoonChip": "{count, plural, other{{count} ដល់កំណត់ក្នុង 30 ថ្ងៃ}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "ប្រភេទដែលបានខ្ទាស់"
 }

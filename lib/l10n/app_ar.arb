@@ -173,9 +173,6 @@
   "homeWelcomeSubtitleGeneric": "يساعدك Vaultara على تتبع تواريخ انتهاء الصلاحية المهمة حتى لا ينتهي أي شيء دون أن تنتبه.",
   "homeWelcomeSubtitleFirst": "يسعدنا وجودك هنا. يساعدك Vaultara على البقاء منظمًا من خلال حفظ التواريخ والسجلات المهمة في مكان واحد آمن.",
   "homeWelcomeSubtitleBack": "من الجيد رؤيتك مجددًا. Vaultara هنا متى أردت مراجعة تواريخك وسجلاتك المهمة.",
-  "summaryAllCaption": "متتبَّعة في Vaultara",
-  "summaryExpiredTitle": "منتهية",
-  "summaryExpiredCaption": "تجاوزت تاريخ انتهاء الصلاحية",
   "editorNotes": "ملاحظات",
   "editorReminderNone": "لا يوجد تذكير",
   "enableBiometricsTitle": "تفعيل الأمان البيومتري",
@@ -197,7 +194,6 @@
   "addRecord": "إضافة سجل",
   "noRecordsYet": "لا توجد سجلات بعد.",
   "deleteRecordTitle": "حذف السجل",
-  "summaryAllRecordsTitle": "جميع السجلات",
   "noGroupFound": "لا توجد مجموعات بعد",
   "groupLabel": "{count, plural, one{{count} مجموعة} other{{count} مجموعات}}",
   "recordsLabel": "{count, plural, one{{count} سجل} other{{count} سجلات}}",
@@ -443,7 +439,7 @@
   "addNotesHint": "إضافة ملاحظات (اختياري)",
   "expiryTimelineTitle": "الجدول الزمني لانتهاء الصلاحية",
   "expiryTimelineSubtitle": "انقر على شهر لمشاهدة السجلات التي تنتهي في ذلك الشهر",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 سجل} other{{count} سجلات}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} سجل} other{{count} سجلات}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -451,10 +447,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "قادمة",
-  "summaryUpcomingCaption": "خلال 30 يوما",
-  "summaryUrgentTitle": "عاجل",
-  "summaryUrgentCaption": "خلال 7 أيام",
   "profileHeaderTitle": "الملف الشخصي",
   "profileTutorialsTitle": "دروس",
   "profileTutorialsSubtitle": "استعراض دروس التطبيق",
@@ -654,13 +646,10 @@
   "verifyEmailDiscardBody": "هذا الحساب غير متحقق منه. المغادرة الآن ستؤدي إلى إزالته، ويمكنك التسجيل مرة أخرى بأي عنوان بريد إلكتروني.",
   "verifyEmailDiscardAction": "تخلص منه",
   "verifyEmailKeepWaiting": "استمر في الانتظار",
-  "expiringBadge": "{count, plural, =1{1 ينتهي قريبًا} two{{count} تنتهيان قريبًا} few{{count} تنتهي قريبًا} many{{count} تنتهي قريبًا} other{{count} تنتهي قريبًا}}",
+  "expiringBadge": "{count, plural, =1{{count} ينتهي قريبًا} two{{count} تنتهيان قريبًا} few{{count} تنتهي قريبًا} many{{count} تنتهي قريبًا} other{{count} تنتهي قريبًا}}",
   "noRecordsToday": "لا شيء ينتهي اليوم",
   "noRecordsTomorrow": "لا شيء ينتهي غدًا",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ينتهي اليوم} =1{{recordName} ينتهي غداً} other{{recordName} ينتهي خلال {days} أيام}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}، ينتهي {recordName} الخاص بك اليوم. هل قمت بالتجديد بالفعل؟ قم بتحديث تاريخ الانتهاء.} =1{{firstName}، ينتهي {recordName} الخاص بك غداً. جدده الآن حتى لا ينتهي.} other{{firstName}، ينتهي {recordName} الخاص بك في {date}. التجديد المبكر يبقيك محمياً.}}",
   "cascadeFinalStepTitle": "تذكير أخير: {recordName}",
-  "cascadeFinalStepBody": "{firstName}، ينتهي {recordName} الخاص بك {days, plural, =1{غداً} other{خلال {days} أيام، في {date}}}. هذا هو تذكيرك الأخير، جدده أو قم بتحديث تاريخه.",
   "notificationsTitle": "الإشعارات",
   "notificationsProfileEnabledSubtitle": "تصل التذكيرات في الساعة {time}.",
   "notificationsProfileDisabledSubtitle": "الإشعارات معطلة.",
@@ -2899,5 +2888,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "ينتهي \"{recordName}\" اليوم",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "ينتهي \"{recordName}\" غدًا",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, zero{ينتهي \"{recordName}\" خلال {days} يوم} one{ينتهي \"{recordName}\" خلال {days} يوم} two{ينتهي \"{recordName}\" خلال {days} يوم} few{ينتهي \"{recordName}\" خلال {days} أيام} many{ينتهي \"{recordName}\" خلال {days} يومًا} other{ينتهي \"{recordName}\" خلال {days} يوم}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "انتهى \"{recordName}\"",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "سجل مقفل يحتاج إلى انتباهك",
+  "remLockedBody": "تاريخه {date}. افتح قفل Vaultara لترى أي سجل هو.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "ينتهي سجلك \"{recordName}\" اليوم.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "ينتهي سجلك \"{recordName}\" غدًا.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "ينتهي سجلك \"{recordName}\" في {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}، ينتهي سجلك \"{recordName}\" اليوم.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}، ينتهي سجلك \"{recordName}\" غدًا.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}، ينتهي سجلك \"{recordName}\" في {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: ينتهي السجل \"{recordName}\" اليوم.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: ينتهي السجل \"{recordName}\" غدًا.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: ينتهي السجل \"{recordName}\" في {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "انتهى سجلك \"{recordName}\" في {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: انتهى السجل \"{recordName}\" في {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "هل جددته بالفعل؟ حدّث تاريخه.",
+  "remTipTomorrow": "جدده الآن حتى لا تنتهي صلاحيته.",
+  "remTipEarly": "التجديد المبكر يبقيك محميًا.",
+  "remTipLast": "هذا آخر تذكير قبل انتهائه.",
+  "remTipExpired": "جدده، أو حدّث تاريخه إن كنت قد جددته.",
+  "remStartBody": "حان وقت بدء تجديد \"{recordName}\". ينتهي في {date}، لذا إن بدأت الآن فلديك وقت كافٍ.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "حان وقت بدء تجديد \"{recordName}\" ({person}). ينتهي في {date}، لذا فالبدء الآن يترك وقتًا كافيًا.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "تذكيرات انتهاء الصلاحية",
+  "notifChannelDescription": "تذكيرات قبل انتهاء سجلاتك",
+  "notifTestTitle": "إشعار تجريبي",
+  "notifTestBody": "هكذا تصل تذكيرات Vaultara.",
+  "notifTestAction": "إرسال إشعار تجريبي",
+  "notifTestSubtitle": "تحقق من وصول التذكيرات إلى هذا الهاتف",
+  "notifTestSent": "تم إرسال التجربة. يجب أن تصل خلال ثوانٍ.",
+  "notifAfterExpiryTitle": "ذكّرني بعد انتهاء السجل",
+  "notifAfterExpirySubtitle": "بعد 3 و14 يومًا إن لم يُجدَّد",
+  "notifWeeklyTitle": "ملخص يوم الاثنين",
+  "notifWeeklySubtitle": "رسالة صباح الاثنين عندما ينتهي شيء في ذلك الأسبوع",
+  "notifPushSection": "الأسرة والتحديثات",
+  "notifHouseholdTitle": "السجلات المشتركة",
+  "notifHouseholdSubtitle": "عندما يقترب سجل مشترك من الانتهاء ولم يجدده أحد",
+  "notifUpdatesTitle": "التحديثات التي طلبتها",
+  "notifUpdatesSubtitle": "عندما يرسل شخص البيانات الجديدة لسجل",
+  "notifSecurityNote": "تُرسل دائمًا تنبيهات تسجيلات الدخول الجديدة إلى حسابك.",
+  "notifIosHelpTitle": "لا تصلك التذكيرات؟",
+  "notifIosHelpSubtitle": "تحقق من إعدادات iPhone",
+  "notifIosHelpStep1": "افتح الإعدادات، ثم الإشعارات، ثم Vaultara، وفعّل السماح بالإشعارات.",
+  "notifIosHelpStep2": "فعّل شاشة القفل ومركز الإشعارات واللافتات.",
+  "notifIosHelpStep3": "إذا كنت تستخدم وضع التركيز، فأضف Vaultara إلى التطبيقات المسموح بها.",
+  "notifIosHelpStep4": "افتح Vaultara كل بضعة أسابيع. يحتفظ iPhone بعدد محدود فقط من التذكيرات المقبلة، وفتح التطبيق يجدول التذكيرات التالية.",
+  "homeNextUpEmpty": "لا شيء ينتهي قريبًا. كل شيء جاهز.",
+  "homeDueSoonChip": "{count, plural, zero{{count} مستحقة خلال 30 يومًا} one{{count} مستحق خلال 30 يومًا} two{{count} مستحقان خلال 30 يومًا} few{{count} مستحقة خلال 30 يومًا} many{{count} مستحقًا خلال 30 يومًا} other{{count} مستحق خلال 30 يومًا}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "الفئات المثبتة"
 }

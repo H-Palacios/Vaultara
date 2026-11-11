@@ -360,15 +360,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'మళ్లీ మిమ్మల్ని చూడటం సంతోషంగా ఉంది. Vaultara మీ ముఖ్యమైన తేదీలు మరియు రికార్డులను సమీక్షించేందుకు ఎప్పుడూ సిద్ధంగా ఉంటుంది.';
 
   @override
-  String get summaryAllCaption => 'Vaultara లో ట్రాక్ చేయబడినవి';
-
-  @override
-  String get summaryExpiredTitle => 'గడువు ముగిసినవి';
-
-  @override
-  String get summaryExpiredCaption => 'గడువు తేదీ దాటింది';
-
-  @override
   String get editorNotes => 'గమనికలు';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'రికార్డు తొలగించండి';
-
-  @override
-  String get summaryAllRecordsTitle => 'అన్ని రికార్డులు';
 
   @override
   String get noGroupFound => 'ఇంకా గ్రూపులు లేవు';
@@ -829,22 +817,10 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count రికార్డులు',
-      one: '1 రికార్డ్',
+      one: '$count రికార్డ్',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'రాబోయే';
-
-  @override
-  String get summaryUpcomingCaption => '30 రోజులలో';
-
-  @override
-  String get summaryUrgentTitle => 'అత్యవసరం';
-
-  @override
-  String get summaryUrgentCaption => '7 రోజులలో';
 
   @override
   String get profileHeaderTitle => 'ప్రొఫైల్';
@@ -945,7 +921,7 @@ class AppLocalizationsTe extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days రోజుల ముందు',
-      one: '1 రోజు ముందు',
+      one: '$days రోజు ముందు',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsTe extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names మరియు మరో $extra రికార్డుల గడువు ఈరోజు ముగుస్తుంది.',
-      one: '$names మరియు మరో 1 రికార్డు గడువు ఈరోజు ముగుస్తుంది.',
+      one: '$names మరియు మరో $extra రికార్డు గడువు ఈరోజు ముగుస్తుంది.',
       zero: '$names గడువు ఈరోజే ముగుస్తుంది.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsTe extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b మరియు మరో $extra రికార్డుల గడువు దాదాపు ఒకే సమయంలో $lastDate నాటికి ముగుస్తుంది. కొన్ని రికార్డులు ఇంత దగ్గరగా ఉన్నప్పుడు ఒకదాన్ని మర్చిపోవడం సులభం.',
-      one: '$a, $b మరియు మరో 1 రికార్డు గడువు దాదాపు ఒకే సమయంలో $lastDate నాటికి ముగుస్తుంది. కొన్ని రికార్డులు ఇంత దగ్గరగా ఉన్నప్పుడు ఒకదాన్ని మర్చిపోవడం సులభం.',
+      one: '$a, $b మరియు మరో $extra రికార్డు గడువు దాదాపు ఒకే సమయంలో $lastDate నాటికి ముగుస్తుంది. కొన్ని రికార్డులు ఇంత దగ్గరగా ఉన్నప్పుడు ఒకదాన్ని మర్చిపోవడం సులభం.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category వర్గంలో మీ $count రికార్డుల గడువు $date నాటికి ముగుస్తుంది. ఇవి ఇలా గ్రూప్ అయినప్పుడు ఒకదాన్ని మర్చిపోవడం సులభం.',
-      one: '$category వర్గంలో మీ 1 రికార్డు గడువు $dateన ముగుస్తుంది. దీన్ని సులభంగా విస్మరించే ప్రమాదం ఉంది.',
+      one: '$category వర్గంలో మీ $count రికార్డు గడువు $dateన ముగుస్తుంది. దీన్ని సులభంగా విస్మరించే ప్రమాదం ఉంది.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'రాబోయే $count గడువులకు రిమైండర్లు ఉన్నాయి. ఇక మీ శ్రద్ధ అవసరమైనవి ఏవీ లేవు.',
-      one: 'రాబోయే 1 గడువుకు రిమైండర్ ఉంది. ఇక మీ శ్రద్ధ అవసరమైనవి ఏవీ లేవు.',
+      one: 'రాబోయే $count గడువుకు రిమైండర్ ఉంది. ఇక మీ శ్రద్ధ అవసరమైనవి ఏవీ లేవు.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ప్రస్తుతానికి ఏవీ అర్జంట్ కావు, కానీ రాబోయే $count రికార్డులకు ఇంకా రిమైండర్లు సెట్ చేయలేదు.',
-      one: 'ప్రస్తుతానికి ఏవీ అర్జంట్ కావు, కానీ రాబోయే 1 రికార్డుకు ఇంకా రిమైండర్ సెట్ చేయలేదు.',
+      one: 'ప్రస్తుతానికి ఏవీ అర్జంట్ కావు, కానీ రాబోయే $count రికార్డుకు ఇంకా రిమైండర్ సెట్ చేయలేదు.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsTe extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days రోజుల',
-      one: '1 రోజు',
+      one: '$days రోజు',
     );
     return 'రిమైండర్ $position: $_temp0 ముందు';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count గడువులు త్వరలో ముగుస్తాయి',
-      one: '1 గడువు త్వరలో ముగుస్తుంది',
+      one: '$count గడువు త్వరలో ముగుస్తుంది',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsTe extends AppLocalizations {
   String get noRecordsTomorrow => 'రేపు ఏ గడువూ ముగియదు';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName గడువు మరో $days రోజుల్లో ముగుస్తుంది',
-      one: '$recordName గడువు రేపటితో ముగుస్తుంది',
-      zero: '$recordName గడువు నేటితో ముగుస్తుంది',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, మీ $recordName గడువు $dateన ముగుస్తుంది. ముందుగానే పునరుద్ధరించడం వల్ల చెల్లుబాటు నిరంతరాయంగా కొనసాగుతుంది.',
-      one: '$firstName, మీ $recordName గడువు రేపటితో ముగుస్తుంది. చెల్లుబాటు కోల్పోకుండా ఉండేందుకు ఇప్పుడే పునరుద్ధరించండి.',
-      zero: '$firstName, మీ $recordName గడువు నేటితో ముగుస్తుంది. ఇప్పటికే పునరుద్ధరించారా? గడువు తేదీని అప్‌డేట్ చేయండి.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'చివరి రిమైండర్: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'మరో $days రోజుల్లో, $dateన',
-      one: 'రేపటితో',
-    );
-    return '$firstName, మీ $recordName గడువు $_temp0 ముగుస్తుంది. ఇది మీ చివరి రిమైండర్, దాన్ని పునరుద్ధరించండి లేదా గడువు తేదీని అప్‌డేట్ చేయండి.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ఫోటోలు ఇంకా ఎన్‌క్రిప్ట్ కాలేదు',
-      one: '1 ఫోటో ఇంకా ఎన్‌క్రిప్ట్ కాలేదు',
+      one: '$count ఫోటో ఇంకా ఎన్‌క్రిప్ట్ కాలేదు',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'మీకు ఇంకా ఎన్‌క్రిప్ట్ కాని $count ఫోటోలు ఉన్నాయి. మేము వాటిని ఇప్పుడు ఎన్‌క్రిప్ట్ చేయవచ్చు.',
-      one: 'మీకు ఇంకా ఎన్‌క్రిప్ట్ కాని 1 ఫోటో ఉంది. మేము దాన్ని ఇప్పుడు ఎన్‌క్రిప్ట్ చేయవచ్చు.',
+      one: 'మీకు ఇంకా ఎన్‌క్రిప్ట్ కాని $count ఫోటో ఉంది. మేము దాన్ని ఇప్పుడు ఎన్‌క్రిప్ట్ చేయవచ్చు.',
     );
     return '$_temp0 ఇది పూర్తయ్యే వరకు Vaultaraను తెరిచి ఉంచండి.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsTe extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'చాలా ఎక్కువ ప్రయత్నాలు. దయచేసి $seconds సెకన్లు వేచి ఉండి మళ్లీ ప్రయత్నించండి.',
-      one: 'చాలా ఎక్కువ ప్రయత్నాలు. దయచేసి 1 సెకను వేచి ఉండి మళ్లీ ప్రయత్నించండి.',
+      one: 'చాలా ఎక్కువ ప్రయత్నాలు. దయచేసి $seconds సెకను వేచి ఉండి మళ్లీ ప్రయత్నించండి.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsTe extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'చాలా ఎక్కువ ప్రయత్నాలు. దయచేసి $minutes నిమిషాలు వేచి ఉండి మళ్లీ ప్రయత్నించండి.',
-      one: 'చాలా ఎక్కువ ప్రయత్నాలు. దయచేసి 1 నిమిషం వేచి ఉండి మళ్లీ ప్రయత్నించండి.',
+      one: 'చాలా ఎక్కువ ప్రయత్నాలు. దయచేసి $minutes నిమిషం వేచి ఉండి మళ్లీ ప్రయత్నించండి.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count రికార్డులపై మీ దృష్టి అవసరం',
-      one: '1 రికార్డుపై మీ దృష్టి అవసరం',
+      one: '$count రికార్డుపై మీ దృష్టి అవసరం',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ఇంకా $count రోజులు',
-      one: 'ఇంకా 1 రోజు',
+      one: 'ఇంకా $count రోజు',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count రోజుల క్రితం',
-      one: '1 రోజు క్రితం',
+      one: '$count రోజు క్రితం',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsTe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'మీరు తొలగించిన $count రికార్డులు రద్దు అయినట్లుగా లెక్కించబడతాయి.',
-      one: 'మీరు తొలగించిన 1 రికార్డ్ రద్దు అయినట్లుగా లెక్కించబడుతుంది.',
+      one: 'మీరు తొలగించిన $count రికార్డ్ రద్దు అయినట్లుగా లెక్కించబడుతుంది.',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsTe extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'రిమైండర్: $name గడువు $dateన ముగుస్తుంది';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName గడువు ఈరోజు ముగుస్తుంది';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName గడువు రేపు ముగుస్తుంది';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName గడువు $days రోజుల్లో ముగుస్తుంది',
+      one: '$recordName గడువు $days రోజులో ముగుస్తుంది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName గడువు ముగిసింది';
+  }
+
+  @override
+  String get remLockedTitle => 'లాక్ చేసిన రికార్డుకు మీ దృష్టి అవసరం';
+
+  @override
+  String remLockedBody(String date) {
+    return 'దాని తేదీ $date. అది ఏ రికార్డో చూడటానికి Vaultaraను అన్‌లాక్ చేయండి.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'మీ రికార్డు \"$recordName\" గడువు ఈరోజు ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'మీ రికార్డు \"$recordName\" గడువు రేపు ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'మీ రికార్డు \"$recordName\" గడువు $dateన ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, మీ రికార్డు \"$recordName\" గడువు ఈరోజు ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, మీ రికార్డు \"$recordName\" గడువు రేపు ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, మీ రికార్డు \"$recordName\" గడువు $dateన ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: రికార్డు \"$recordName\" గడువు ఈరోజు ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: రికార్డు \"$recordName\" గడువు రేపు ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: రికార్డు \"$recordName\" గడువు $dateన ముగుస్తుంది.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'మీ రికార్డు \"$recordName\" గడువు $dateన ముగిసింది.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: రికార్డు \"$recordName\" గడువు $dateన ముగిసింది.';
+  }
+
+  @override
+  String get remTipToday => 'ఇప్పటికే పునరుద్ధరించారా? దాని తేదీని అప్‌డేట్ చేయండి.';
+
+  @override
+  String get remTipTomorrow => 'గడువు ముగియకుండా ఇప్పుడే పునరుద్ధరించండి.';
+
+  @override
+  String get remTipEarly => 'ముందుగా పునరుద్ధరించడం మిమ్మల్ని సురక్షితంగా ఉంచుతుంది.';
+
+  @override
+  String get remTipLast => 'గడువు ముగిసే ముందు ఇది మీ చివరి రిమైండర్.';
+
+  @override
+  String get remTipExpired => 'పునరుద్ధరించండి, లేదా ఇప్పటికే చేసి ఉంటే తేదీని అప్‌డేట్ చేయండి.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" పునరుద్ధరణ మొదలుపెట్టే సమయం వచ్చింది. దాని గడువు $dateన ముగుస్తుంది, కాబట్టి ఇప్పుడే మొదలుపెడితే మీకు చాలా సమయం ఉంటుంది.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) పునరుద్ధరణ మొదలుపెట్టే సమయం వచ్చింది. దాని గడువు $dateన ముగుస్తుంది, కాబట్టి ఇప్పుడే మొదలుపెడితే చాలా సమయం ఉంటుంది.';
+  }
+
+  @override
+  String get notifChannelName => 'గడువు రిమైండర్‌లు';
+
+  @override
+  String get notifChannelDescription => 'మీ రికార్డుల గడువు ముగిసే ముందు రిమైండర్‌లు';
+
+  @override
+  String get notifTestTitle => 'పరీక్ష నోటిఫికేషన్';
+
+  @override
+  String get notifTestBody => 'Vaultara రిమైండర్‌లు ఇలా వస్తాయి.';
+
+  @override
+  String get notifTestAction => 'పరీక్ష నోటిఫికేషన్ పంపండి';
+
+  @override
+  String get notifTestSubtitle => 'రిమైండర్‌లు ఈ ఫోన్‌కు చేరుతున్నాయో చూడండి';
+
+  @override
+  String get notifTestSent => 'పరీక్ష పంపబడింది. కొన్ని సెకన్లలో రావాలి.';
+
+  @override
+  String get notifAfterExpiryTitle => 'రికార్డు గడువు ముగిసిన తర్వాత గుర్తు చేయండి';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 మరియు 14 రోజుల తర్వాత, పునరుద్ధరించకపోతే';
+
+  @override
+  String get notifWeeklyTitle => 'సోమవారం సారాంశం';
+
+  @override
+  String get notifWeeklySubtitle => 'ఆ వారం ఏదైనా గడువు ముగిసేటప్పుడు సోమవారం ఉదయం ఒక సందేశం';
+
+  @override
+  String get notifPushSection => 'కుటుంబం మరియు అప్‌డేట్‌లు';
+
+  @override
+  String get notifHouseholdTitle => 'షేర్ చేసిన రికార్డులు';
+
+  @override
+  String get notifHouseholdSubtitle => 'షేర్ చేసిన రికార్డు గడువు ముగియబోతుండగా ఎవరూ పునరుద్ధరించనప్పుడు';
+
+  @override
+  String get notifUpdatesTitle => 'మీరు అడిగిన అప్‌డేట్‌లు';
+
+  @override
+  String get notifUpdatesSubtitle => 'ఎవరైనా ఒక రికార్డు కొత్త వివరాలు పంపినప్పుడు';
+
+  @override
+  String get notifSecurityNote => 'మీ ఖాతాలో కొత్త సైన్-ఇన్‌ల హెచ్చరికలు ఎల్లప్పుడూ పంపబడతాయి.';
+
+  @override
+  String get notifIosHelpTitle => 'రిమైండర్‌లు రావడం లేదా?';
+
+  @override
+  String get notifIosHelpSubtitle => 'మీ iPhone సెట్టింగ్‌లను చూడండి';
+
+  @override
+  String get notifIosHelpStep1 => 'సెట్టింగ్‌లు, తర్వాత నోటిఫికేషన్‌లు, తర్వాత Vaultara తెరిచి, నోటిఫికేషన్‌లను అనుమతించు ఆన్ చేయండి.';
+
+  @override
+  String get notifIosHelpStep2 => 'లాక్ స్క్రీన్, నోటిఫికేషన్ సెంటర్ మరియు బ్యానర్‌లను ఆన్ చేయండి.';
+
+  @override
+  String get notifIosHelpStep3 => 'మీరు ఫోకస్ ఉపయోగిస్తే, అనుమతించిన యాప్‌లకు Vaultaraను జోడించండి.';
+
+  @override
+  String get notifIosHelpStep4 => 'కొన్ని వారాలకు ఒకసారి Vaultara తెరవండి. iPhone ముందుగా పరిమిత సంఖ్యలో రిమైండర్‌లను మాత్రమే ఉంచుతుంది, యాప్ తెరిస్తే తదుపరివి షెడ్యూల్ అవుతాయి.';
+
+  @override
+  String get homeNextUpEmpty => 'త్వరలో ఏదీ గడువు ముగియడం లేదు. అంతా సిద్ధంగా ఉంది.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 రోజుల్లో $count గడువు',
+      one: '30 రోజుల్లో $count గడువు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'పిన్ చేసిన వర్గాలు';
 }

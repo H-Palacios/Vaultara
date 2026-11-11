@@ -360,15 +360,6 @@ class AppLocalizationsNe extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'फेरि भेट्न पाउँदा खुसी लाग्यो। Vaultara तपाईंका महत्त्वपूर्ण मिति र रेकर्डहरू समीक्षा गर्न सधैं तयार छ।';
 
   @override
-  String get summaryAllCaption => 'Vaultara मा ट्र्याक गरिएको';
-
-  @override
-  String get summaryExpiredTitle => 'सकिएको';
-
-  @override
-  String get summaryExpiredCaption => 'म्याद समाप्त भइसकेको छ';
-
-  @override
   String get editorNotes => 'नोटहरू';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'रेकर्ड हटाउनुहोस्';
-
-  @override
-  String get summaryAllRecordsTitle => 'सबै रेकर्डहरू';
 
   @override
   String get noGroupFound => 'अहिलेसम्म कुनै समूह छैन';
@@ -829,22 +817,10 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count रेकर्ड',
-      one: '1 रेकर्ड',
+      one: '$count रेकर्ड',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'आगामी';
-
-  @override
-  String get summaryUpcomingCaption => '30 दिन भित्र';
-
-  @override
-  String get summaryUrgentTitle => 'जरुरी';
-
-  @override
-  String get summaryUrgentCaption => '7 दिन भित्र';
 
   @override
   String get profileHeaderTitle => 'प्रोफाइल';
@@ -945,7 +921,7 @@ class AppLocalizationsNe extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days दिन अघि',
-      one: '1 दिन अघि',
+      one: '$days दिन अघि',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsNe extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names र थप $extra आजै समाप्त हुँदैछन्।',
-      one: '$names र थप १ आजै समाप्त हुँदैछन्।',
+      one: '$names र थप $extra आजै समाप्त हुँदैछन्।',
       zero: '$names आजै समाप्त हुँदैछन्।',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsNe extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b र थप $extra रेकर्डहरूको म्याद $lastDate भित्र समाप्त हुँदैछ, लगभग एकै समयमा। धेरै रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।',
-      one: '$a, $b र थप १ रेकर्डको म्याद $lastDate भित्र समाप्त हुँदैछ, लगभग एकै समयमा। धेरै रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।',
+      one: '$a, $b र थप $extra रेकर्डको म्याद $lastDate भित्र समाप्त हुँदैछ, लगभग एकै समयमा। धेरै रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category श्रेणीमा तपाईंको $count रेकर्डहरू $date भित्र समाप्त हुँदैछन्। यसरी समूहकृत हुँदा एउटा बिर्सन सजिलो हुन्छ।',
-      one: '$category श्रेणीमा तपाईंको १ रेकर्ड $date मा समाप्त हुँदैछ। यसलाई ध्यान नदिन सजिलो छ।',
+      one: '$category श्रेणीमा तपाईंको $count रेकर्ड $date मा समाप्त हुँदैछ। यसलाई ध्यान नदिन सजिलो छ।',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'आगामी $count म्यादहरू रिमाइन्डरद्वारा सुरक्षित छन्। तपाईंको ध्यान आवश्यक पर्ने अरू केही छैन।',
-      one: 'आगामी १ म्याद रिमाइन्डरद्वारा सुरक्षित छ। तपाईंको ध्यान आवश्यक पर्ने अरू केही छैन।',
+      one: 'आगामी $count म्याद रिमाइन्डरद्वारा सुरक्षित छ। तपाईंको ध्यान आवश्यक पर्ने अरू केही छैन।',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'यस समयमा केही पनि जरुरी छैन, तर आगामी $count रेकर्डहरूमा अझै रिमाइन्डर सेट गरिएको छैन।',
-      one: 'यस समयमा केही पनि जरुरी छैन, तर आगामी १ रेकर्डमा अझै रिमाइन्डर सेट गरिएको छैन।',
+      one: 'यस समयमा केही पनि जरुरी छैन, तर आगामी $count रेकर्डमा अझै रिमाइन्डर सेट गरिएको छैन।',
     );
     return '$_temp0';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count म्याद सकिँदैछ',
-      one: '1 म्याद सकिँदैछ',
+      one: '$count म्याद सकिँदैछ',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsNe extends AppLocalizations {
   String get noRecordsTomorrow => 'भोलि केही पनि म्याद सकिँदैन';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName $days दिनमा समाप्त हुँदैछ',
-      one: '$recordName भोलि समाप्त हुँदैछ',
-      zero: '$recordName आज समाप्त हुँदैछ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, तपाईंको $recordName $date मा समाप्त हुँदैछ। समयमै नवीकरण गर्नाले तपाईं सुरक्षित रहनुहुन्छ।',
-      one: '$firstName, तपाईंको $recordName भोलि समाप्त हुँदैछ। यसलाई अहिल्यै नवीकरण गर्नुहोस् ताकि यो रद्द नहोस्।',
-      zero: '$firstName, तपाईंको $recordName आज समाप्त हुँदैछ। के तपाईंले यसलाई नवीकरण गरिसक्नुभयो? यसको समाप्ति मिति अद्यावधिक गर्नुहोस्।',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'अन्तिम रिमाइन्डर: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days दिनमा, $date मा',
-      one: 'भोलि',
-    );
-    return '$firstName, तपाईंको $recordName $_temp0 समाप्त हुँदैछ। यो तपाईंको अन्तिम रिमाइन्डर हो, यसलाई नवीकरण गर्नुहोस् वा यसको मिति अद्यावधिक गर्नुहोस्।';
   }
 
   @override
@@ -1532,7 +1473,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'आगामी $count रेकर्डहरूमा अझै शुल्क छैन।',
-      one: 'आगामी 1 रेकर्डमा अझै शुल्क छैन।',
+      one: 'आगामी $count रेकर्डमा अझै शुल्क छैन।',
     );
     return '$_temp0';
   }
@@ -1566,7 +1507,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count रेकर्डहरू',
-      one: '1 रेकर्ड',
+      one: '$count रेकर्ड',
       zero: 'कुनै रेकर्ड छैन',
     );
     return '$_temp0';
@@ -1622,7 +1563,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count जनासम्म',
-      one: '1 जनासम्म',
+      one: '$count जनासम्म',
     );
     return '$_temp0';
   }
@@ -1639,7 +1580,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count जनासम्म थप्नुहोस्',
-      one: '1 जना थप्नुहोस्',
+      one: '$count जना थप्नुहोस्',
     );
     return '$_temp0';
   }
@@ -2223,7 +2164,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count रेकर्डहरू',
-      one: '1 रेकर्ड',
+      one: '$count रेकर्ड',
     );
     return '$_temp0';
   }
@@ -2254,7 +2195,7 @@ class AppLocalizationsNe extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days दिनको यात्रा',
-      one: '1 दिनको यात्रा',
+      one: '$days दिनको यात्रा',
     );
     return '$_temp0';
   }
@@ -2327,7 +2268,7 @@ class AppLocalizationsNe extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months महिना',
-      one: '1 महिना',
+      one: '$months महिना',
     );
     return '$name को म्याद $date मा सकिन्छ। धेरै देशले फर्केपछि $_temp0 म्याद बाँकी भएको चाहन्छन्।';
   }
@@ -2343,7 +2284,7 @@ class AppLocalizationsNe extends AppLocalizations {
       days,
       locale: localeName,
       other: 'यात्राको $days दिनपछि',
-      one: 'यात्राको 1 दिनपछि',
+      one: 'यात्राको $days दिनपछि',
       zero: 'प्रस्थान गर्ने दिन',
     );
     return '$name को म्याद $date मा सकिन्छ, $_temp0।';
@@ -2708,7 +2649,7 @@ class AppLocalizationsNe extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit फोटो',
-      one: '1 फोटो',
+      one: '$limit फोटो',
     );
     return 'निःशुल्क योजनामा हरेक रेकर्डमा $_temp0 थप्न सकिन्छ। प्रिमियममा $premiumLimit सम्म थप्न सकिन्छ।';
   }
@@ -2744,7 +2685,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count फोटोहरू',
-      one: '1 फोटो',
+      one: '$count फोटो',
     );
     return '$_temp0';
   }
@@ -4006,7 +3947,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count फोटो अझै एन्क्रिप्ट भएका छैनन्',
-      one: '१ फोटो अझै एन्क्रिप्ट भएको छैन',
+      one: '$count फोटो अझै एन्क्रिप्ट भएको छैन',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'तपाईंसँग अझै एन्क्रिप्ट नभएका $count फोटो छन्। हामी तिनलाई अहिले एन्क्रिप्ट गर्न सक्छौं।',
-      one: 'तपाईंसँग अझै एन्क्रिप्ट नभएको १ फोटो छ। हामी यसलाई अहिले एन्क्रिप्ट गर्न सक्छौं।',
+      one: 'तपाईंसँग अझै एन्क्रिप्ट नभएको $count फोटो छ। हामी यसलाई अहिले एन्क्रिप्ट गर्न सक्छौं।',
     );
     return '$_temp0 यो सकिएसम्म Vaultara खुला राख्नुहोस्।';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsNe extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'धेरै प्रयास भयो। कृपया $seconds सेकेन्ड पर्खेर फेरि प्रयास गर्नुहोस्।',
-      one: 'धेरै प्रयास भयो। कृपया १ सेकेन्ड पर्खेर फेरि प्रयास गर्नुहोस्।',
+      one: 'धेरै प्रयास भयो। कृपया $seconds सेकेन्ड पर्खेर फेरि प्रयास गर्नुहोस्।',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsNe extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'धेरै प्रयास भयो। कृपया $minutes मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।',
-      one: 'धेरै प्रयास भयो। कृपया १ मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।',
+      one: 'धेरै प्रयास भयो। कृपया $minutes मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count रेकर्डमा तपाईंको ध्यान चाहिन्छ',
-      one: '1 रेकर्डमा तपाईंको ध्यान चाहिन्छ',
+      one: '$count रेकर्डमा तपाईंको ध्यान चाहिन्छ',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsNe extends AppLocalizations {
       years,
       locale: localeName,
       other: 'सामान्यतया $years वर्ष मान्य हुन्छ',
-      one: 'सामान्यतया 1 वर्ष मान्य हुन्छ',
+      one: 'सामान्यतया $years वर्ष मान्य हुन्छ',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count दिन बाँकी',
-      one: '1 दिन बाँकी',
+      one: '$count दिन बाँकी',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count दिन अघि',
-      one: '1 दिन अघि',
+      one: '$count दिन अघि',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsNe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'तपाईंले मेटाएका $count अभिलेख रद्द भएको मानिन्छ।',
-      one: 'तपाईंले मेटाएको 1 अभिलेख रद्द भएको मानिन्छ।',
+      one: 'तपाईंले मेटाएको $count अभिलेख रद्द भएको मानिन्छ।',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsNe extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'रिमाइन्डर: $name को म्याद $date मा सकिन्छ';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName आज समाप्त हुँदैछ';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName भोलि समाप्त हुँदैछ';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days दिनमा समाप्त हुँदैछ',
+      one: '$recordName $days दिनमा समाप्त हुँदैछ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName समाप्त भइसकेको छ';
+  }
+
+  @override
+  String get remLockedTitle => 'लक गरिएको रेकर्डलाई तपाईंको ध्यान चाहिन्छ';
+
+  @override
+  String remLockedBody(String date) {
+    return 'यसको मिति $date हो। कुन रेकर्ड हो हेर्न Vaultara अनलक गर्नुहोस्।';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'तपाईंको रेकर्ड \"$recordName\" आज समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'तपाईंको रेकर्ड \"$recordName\" भोलि समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'तपाईंको रेकर्ड \"$recordName\" $date मा समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, तपाईंको रेकर्ड \"$recordName\" आज समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, तपाईंको रेकर्ड \"$recordName\" भोलि समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, तपाईंको रेकर्ड \"$recordName\" $date मा समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: रेकर्ड \"$recordName\" आज समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: रेकर्ड \"$recordName\" भोलि समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: रेकर्ड \"$recordName\" $date मा समाप्त हुँदैछ।';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'तपाईंको रेकर्ड \"$recordName\" $date मा समाप्त भयो।';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: रेकर्ड \"$recordName\" $date मा समाप्त भयो।';
+  }
+
+  @override
+  String get remTipToday => 'पहिले नै नवीकरण गर्नुभयो? यसको मिति अद्यावधिक गर्नुहोस्।';
+
+  @override
+  String get remTipTomorrow => 'समाप्त नहोस् भनेर अहिले नै नवीकरण गर्नुहोस्।';
+
+  @override
+  String get remTipEarly => 'चाँडै नवीकरण गर्दा तपाईं सुरक्षित रहनुहुन्छ।';
+
+  @override
+  String get remTipLast => 'समाप्त हुनुअघिको यो तपाईंको अन्तिम रिमाइन्डर हो।';
+
+  @override
+  String get remTipExpired => 'नवीकरण गर्नुहोस्, वा पहिले नै गर्नुभएको छ भने मिति अद्यावधिक गर्नुहोस्।';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" को नवीकरण सुरु गर्ने समय भयो। यो $date मा समाप्त हुन्छ, त्यसैले अहिले सुरु गर्दा तपाईंसँग प्रशस्त समय हुनेछ।';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) को नवीकरण सुरु गर्ने समय भयो। यो $date मा समाप्त हुन्छ, त्यसैले अहिले सुरु गर्दा प्रशस्त समय रहन्छ।';
+  }
+
+  @override
+  String get notifChannelName => 'समाप्ति रिमाइन्डरहरू';
+
+  @override
+  String get notifChannelDescription => 'तपाईंका रेकर्ड समाप्त हुनुअघि रिमाइन्डरहरू';
+
+  @override
+  String get notifTestTitle => 'परीक्षण सूचना';
+
+  @override
+  String get notifTestBody => 'Vaultara का रिमाइन्डर यसरी आउँछन्।';
+
+  @override
+  String get notifTestAction => 'परीक्षण सूचना पठाउनुहोस्';
+
+  @override
+  String get notifTestSubtitle => 'रिमाइन्डर यो फोनमा आइपुग्छन् कि जाँच गर्नुहोस्';
+
+  @override
+  String get notifTestSent => 'परीक्षण पठाइयो। केही सेकेन्डमा आइपुग्नुपर्छ।';
+
+  @override
+  String get notifAfterExpiryTitle => 'रेकर्ड समाप्त भएपछि सम्झाउनुहोस्';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 र 14 दिनपछि, नवीकरण नभएको खण्डमा';
+
+  @override
+  String get notifWeeklyTitle => 'सोमबारको सारांश';
+
+  @override
+  String get notifWeeklySubtitle => 'त्यो हप्ता केही समाप्त हुँदा सोमबार बिहान एउटा सन्देश';
+
+  @override
+  String get notifPushSection => 'परिवार र अद्यावधिकहरू';
+
+  @override
+  String get notifHouseholdTitle => 'सेयर गरिएका रेकर्डहरू';
+
+  @override
+  String get notifHouseholdSubtitle => 'सेयर गरिएको रेकर्ड समाप्त हुन लाग्दा र कसैले नवीकरण नगर्दा';
+
+  @override
+  String get notifUpdatesTitle => 'तपाईंले मागेका अद्यावधिकहरू';
+
+  @override
+  String get notifUpdatesSubtitle => 'कसैले रेकर्डको नयाँ विवरण पठाउँदा';
+
+  @override
+  String get notifSecurityNote => 'तपाईंको खातामा नयाँ साइन-इनका चेतावनीहरू सधैं पठाइन्छन्।';
+
+  @override
+  String get notifIosHelpTitle => 'रिमाइन्डर आइरहेका छैनन्?';
+
+  @override
+  String get notifIosHelpSubtitle => 'आफ्नो iPhone का सेटिङहरू जाँच गर्नुहोस्';
+
+  @override
+  String get notifIosHelpStep1 => 'सेटिङहरू, त्यसपछि सूचनाहरू, त्यसपछि Vaultara खोल्नुहोस्, र सूचनाहरूलाई अनुमति दिनुहोस् सक्रिय गर्नुहोस्।';
+
+  @override
+  String get notifIosHelpStep2 => 'लक स्क्रिन, सूचना केन्द्र र ब्यानरहरू सक्रिय गर्नुहोस्।';
+
+  @override
+  String get notifIosHelpStep3 => 'फोकस प्रयोग गर्नुहुन्छ भने, Vaultara लाई अनुमति दिइएका एपहरूमा थप्नुहोस्।';
+
+  @override
+  String get notifIosHelpStep4 => 'केही हप्तामा एक पटक Vaultara खोल्नुहोस्। iPhone ले अगाडिका सीमित रिमाइन्डर मात्र राख्छ, र एप खोल्दा अर्का तय हुन्छन्।';
+
+  @override
+  String get homeNextUpEmpty => 'चाँडै केही समाप्त हुँदैन। सबै ठिक छ।';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 दिनभित्र $count बाँकी',
+      one: '30 दिनभित्र $count बाँकी',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'पिन गरिएका श्रेणीहरू';
 }

@@ -360,15 +360,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'እንደገና በማየታችን ደስ ብሎናል. አስፈላጊ ቀኖችዎን እና መዝገቦችዎን መገምገም በሚፈልጉበት ጊዜ ሁሉ Vaultara እዚህ አለ.';
 
   @override
-  String get summaryAllCaption => 'በVaultara የሚከታተሉ';
-
-  @override
-  String get summaryExpiredTitle => 'ጊዜው ያለፈበት';
-
-  @override
-  String get summaryExpiredCaption => 'ከማብቂያ ቀን ያለፈ';
-
-  @override
   String get editorNotes => 'ማስታወሻዎች';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'መዝገብ ሰርዝ';
-
-  @override
-  String get summaryAllRecordsTitle => 'ሁሉም መዝገቦች';
 
   @override
   String get noGroupFound => 'ገና ምንም ቡድኖች የሉም';
@@ -829,22 +817,10 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count መዝገቦች',
-      one: '1 መዝገብ',
+      one: '$count መዝገብ',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'መጪ';
-
-  @override
-  String get summaryUpcomingCaption => 'በ 30 ቀናት ውስጥ';
-
-  @override
-  String get summaryUrgentTitle => 'አስቸኳይ';
-
-  @override
-  String get summaryUrgentCaption => 'በ 7 ቀናት ውስጥ';
 
   @override
   String get profileHeaderTitle => 'መገለጫ';
@@ -1048,7 +1024,7 @@ class AppLocalizationsAm extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names እና ሌላ $extra መዝገቦች ዛሬ ያበቃሉ።',
-      one: '$names እና ሌላ 1 መዝገብ ዛሬ ያበቃሉ።',
+      one: '$names እና ሌላ $extra መዝገብ ዛሬ ያበቃሉ።',
       zero: '$names ዛሬ ያበቃሉ።',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsAm extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a፣ $b እና ሌላ $extra መዝገቦች በ $lastDate አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ጥቂት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።',
-      one: '$a፣ $b እና ሌላ 1 መዝገብ በ $lastDate አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ጥቂት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።',
+      one: '$a፣ $b እና ሌላ $extra መዝገብ በ $lastDate አካባቢ በተመሳሳይ ጊዜ ያበቃሉ። ጥቂት መዝገቦች በዚህ መልኩ ሲቀራረቡ አንዱን መርሳት ቀላል ነው።',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'በምድብ $category ውስጥ ካሉት መዝገቦችዎ $count መዝገቦች በ $date ያበቃሉ። በዚህ መልኩ ሲደራጁ አንዱን መርሳት ቀላል ነው።',
-      one: 'በምድብ $category ውስጥ ካሉት መዝገቦችዎ 1 መዝገብ በ $date ያበቃል። ይህንን በቀላሉ መዘንጋት ይቻላል።',
+      one: 'በምድብ $category ውስጥ ካሉት መዝገቦችዎ $count መዝገብ በ $date ያበቃል። ይህንን በቀላሉ መዘንጋት ይቻላል።',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count የሚመጡ ማብቂያዎች በአስታዋሽ ተሸፍነዋል። ሌላ የእርስዎን ትኩረት የሚፈልግ ነገር የለም።',
-      one: '1 የሚመጣ ማብቂያ በአስታዋሽ ተሸፍኗል። ሌላ የእርስዎን ትኩረት የሚፈልግ ነገር የለም።',
+      one: '$count የሚመጣ ማብቂያ በአስታዋሽ ተሸፍኗል። ሌላ የእርስዎን ትኩረት የሚፈልግ ነገር የለም።',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'በአሁኑ ጊዜ ምንም አስቸኳይ ነገር የለም፣ ነገር ግን $count የሚመጡ መዝገቦች ገና አስታዋሽ አልተዘጋጀላቸውም።',
-      one: 'በአሁኑ ጊዜ ምንም አስቸኳይ ነገር የለም፣ ነገር ግን 1 የሚመጣ መዝገብ ገና አስታዋሽ አልተዘጋጀለትም።',
+      one: 'በአሁኑ ጊዜ ምንም አስቸኳይ ነገር የለም፣ ነገር ግን $count የሚመጣ መዝገብ ገና አስታዋሽ አልተዘጋጀለትም።',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsAm extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ቀናት',
-      one: '1 ቀን',
+      one: '$days ቀን',
     );
     return 'አስታዋሽ $position፦ ከማብቂያው $_temp0 በፊት';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count በቅርቡ ያበቃሉ',
-      one: '1 በቅርቡ ያበቃል',
+      one: '$count በቅርቡ ያበቃል',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsAm extends AppLocalizations {
   String get noRecordsTomorrow => 'ነገ ምንም የሚያበቃ የለም';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName በ $days ቀናት ውስጥ ያበቃል',
-      one: '$recordName ነገ ያበቃል',
-      zero: '$recordName ዛሬ ያበቃል',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName፣ የእርስዎ $recordName በ $date ያበቃል። ቀድመው ማደስ ጥበቃዎን ያረጋግጣል።',
-      one: '$firstName፣ የእርስዎ $recordName ነገ ያበቃል። እንዳያልፍብዎት አሁኑኑ ያድሱ።',
-      zero: '$firstName፣ የእርስዎ $recordName ዛሬ ያበቃል። ቀደም ብለው አድሰዋል? የማብቂያ ቀኑን ያዘምኑ።',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'የመጨረሻ አስታዋሽ፡ $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'በ $days ቀናት ውስጥ፣ በ $date',
-      one: 'ነገ',
-    );
-    return '$firstName፣ የእርስዎ $recordName $_temp0 ያበቃል። ይህ የመጨረሻ አስታዋሽዎ ነው፣ ያድሱት ወይም ቀኑን ያዘምኑ።';
   }
 
   @override
@@ -1532,7 +1473,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count መጪ መዝገቦች እስካሁን ወጪ የላቸውም።',
-      one: '1 መጪ መዝገብ እስካሁን ወጪ የለውም።',
+      one: '$count መጪ መዝገብ እስካሁን ወጪ የለውም።',
     );
     return '$_temp0';
   }
@@ -1566,7 +1507,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count መዝገቦች',
-      one: '1 መዝገብ',
+      one: '$count መዝገብ',
       zero: 'ምንም መዝገብ የለም',
     );
     return '$_temp0';
@@ -1622,7 +1563,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'እስከ $count ሰዎች',
-      one: 'እስከ 1 ሰው',
+      one: 'እስከ $count ሰው',
     );
     return '$_temp0';
   }
@@ -1639,7 +1580,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'እስከ $count ሰዎች ያክሉ',
-      one: '1 ሰው ያክሉ',
+      one: '$count ሰው ያክሉ',
     );
     return '$_temp0';
   }
@@ -2223,7 +2164,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count መዝገቦች',
-      one: '1 መዝገብ',
+      one: '$count መዝገብ',
     );
     return '$_temp0';
   }
@@ -2327,7 +2268,7 @@ class AppLocalizationsAm extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months ወራት',
-      one: '1 ወር',
+      one: '$months ወር',
     );
     return '$name በ$date ያበቃል። ብዙ አገሮች ከተመለሱ በኋላ $_temp0 እንዲቀር ይፈልጋሉ።';
   }
@@ -2708,7 +2649,7 @@ class AppLocalizationsAm extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit ፎቶዎች',
-      one: '1 ፎቶ',
+      one: '$limit ፎቶ',
     );
     return 'ነጻው ዕቅድ ለእያንዳንዱ መዝገብ $_temp0 እንዲያክሉ ይፈቅዳል። በፕሪሚየም እስከ $premiumLimit ማከል ይችላሉ።';
   }
@@ -2744,7 +2685,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ፎቶዎች',
-      one: '1 ፎቶ',
+      one: '$count ፎቶ',
     );
     return '$_temp0';
   }
@@ -4006,7 +3947,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ፎቶዎች ገና አልተመሰጠሩም',
-      one: '1 ፎቶ ገና አልተመሰጠረም',
+      one: '$count ፎቶ ገና አልተመሰጠረም',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ገና ያልተመሰጠሩ $count ፎቶዎች አለዎት። አሁን ልናመሰጥራቸው እንችላለን።',
-      one: 'ገና ያልተመሰጠረ 1 ፎቶ አለዎት። አሁን ልናመሰጥረው እንችላለን።',
+      one: 'ገና ያልተመሰጠረ $count ፎቶ አለዎት። አሁን ልናመሰጥረው እንችላለን።',
     );
     return '$_temp0 ይህ እስኪጠናቀቅ ድረስ Vaultara ክፍት ያድርጉት።';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsAm extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'ብዙ ሙከራዎች። እባክዎ $seconds ሰከንዶች ይጠብቁ እና እንደገና ይሞክሩ።',
-      one: 'ብዙ ሙከራዎች። እባክዎ 1 ሰከንድ ይጠብቁ እና እንደገና ይሞክሩ።',
+      one: 'ብዙ ሙከራዎች። እባክዎ $seconds ሰከንድ ይጠብቁ እና እንደገና ይሞክሩ።',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsAm extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'ብዙ ሙከራዎች። እባክዎ $minutes ደቂቃዎች ይጠብቁ እና እንደገና ይሞክሩ።',
-      one: 'ብዙ ሙከራዎች። እባክዎ 1 ደቂቃ ይጠብቁ እና እንደገና ይሞክሩ።',
+      one: 'ብዙ ሙከራዎች። እባክዎ $minutes ደቂቃ ይጠብቁ እና እንደገና ይሞክሩ።',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ቀናት ቀርተዋል',
-      one: '1 ቀን ቀርቷል',
+      one: '$count ቀን ቀርቷል',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsAm extends AppLocalizations {
       count,
       locale: localeName,
       other: 'የሰረዝካቸው $count መዝገቦች እንደተሰረዙ ይቆጠራሉ።',
-      one: 'የሰረዝከው 1 መዝገብ እንደተሰረዘ ይቆጠራል።',
+      one: 'የሰረዝከው $count መዝገብ እንደተሰረዘ ይቆጠራል።',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsAm extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'አስታዋሽ፦ $name በ$date ያበቃል';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName ዛሬ ያበቃል';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName ነገ ያበቃል';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName በ$days ቀናት ውስጥ ያበቃል',
+      one: '$recordName በ$days ቀን ውስጥ ያበቃል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName አብቅቷል';
+  }
+
+  @override
+  String get remLockedTitle => 'የተቆለፈ መዝገብ ትኩረትዎን ይፈልጋል';
+
+  @override
+  String remLockedBody(String date) {
+    return 'ቀኑ $date ነው። የትኛው መዝገብ እንደሆነ ለማየት Vaultaraን ይክፈቱ።';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'መዝገብዎ \"$recordName\" ዛሬ ያበቃል።';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'መዝገብዎ \"$recordName\" ነገ ያበቃል።';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'መዝገብዎ \"$recordName\" በ$date ያበቃል።';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName፣ መዝገብዎ \"$recordName\" ዛሬ ያበቃል።';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName፣ መዝገብዎ \"$recordName\" ነገ ያበቃል።';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName፣ መዝገብዎ \"$recordName\" በ$date ያበቃል።';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person፦ መዝገቡ \"$recordName\" ዛሬ ያበቃል።';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person፦ መዝገቡ \"$recordName\" ነገ ያበቃል።';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person፦ መዝገቡ \"$recordName\" በ$date ያበቃል።';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'መዝገብዎ \"$recordName\" በ$date አብቅቷል።';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person፦ መዝገቡ \"$recordName\" በ$date አብቅቷል።';
+  }
+
+  @override
+  String get remTipToday => 'አስቀድመው አድሰውታል? ቀኑን ያዘምኑ።';
+
+  @override
+  String get remTipTomorrow => 'እንዳያበቃ አሁኑኑ ያድሱት።';
+
+  @override
+  String get remTipEarly => 'ቀደም ብሎ ማደስ ጥበቃ ያደርግልዎታል።';
+
+  @override
+  String get remTipLast => 'ከማብቃቱ በፊት ይህ የመጨረሻ አስታዋሽዎ ነው።';
+
+  @override
+  String get remTipExpired => 'ያድሱት፣ ወይም አስቀድመው ካደረጉት ቀኑን ያዘምኑ።';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\"ን ማደስ የሚጀምሩበት ጊዜ ነው። በ$date ያበቃል፣ ስለዚህ አሁን ከጀመሩ በቂ ጊዜ ይኖርዎታል።';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'የ$personን \"$recordName\" ማደስ የሚጀመርበት ጊዜ ነው። በ$date ያበቃል፣ ስለዚህ አሁን መጀመር በቂ ጊዜ ይተዋል።';
+  }
+
+  @override
+  String get notifChannelName => 'የማብቂያ አስታዋሾች';
+
+  @override
+  String get notifChannelDescription => 'መዝገቦችዎ ከማብቃታቸው በፊት አስታዋሾች';
+
+  @override
+  String get notifTestTitle => 'የሙከራ ማሳወቂያ';
+
+  @override
+  String get notifTestBody => 'የVaultara አስታዋሾች እንዲህ ይደርሳሉ።';
+
+  @override
+  String get notifTestAction => 'የሙከራ ማሳወቂያ ይላኩ';
+
+  @override
+  String get notifTestSubtitle => 'አስታዋሾች ወደዚህ ስልክ እንደሚደርሱ ያረጋግጡ';
+
+  @override
+  String get notifTestSent => 'ሙከራው ተልኳል። በጥቂት ሰከንዶች ውስጥ መድረስ አለበት።';
+
+  @override
+  String get notifAfterExpiryTitle => 'መዝገብ ካበቃ በኋላ አስታውሰኝ';
+
+  @override
+  String get notifAfterExpirySubtitle => 'ከ3 እና 14 ቀናት በኋላ፣ ካልታደሰ';
+
+  @override
+  String get notifWeeklyTitle => 'የሰኞ ማጠቃለያ';
+
+  @override
+  String get notifWeeklySubtitle => 'በዚያ ሳምንት የሚያበቃ ነገር ሲኖር ሰኞ ጠዋት መልዕክት';
+
+  @override
+  String get notifPushSection => 'ቤተሰብ እና ዝማኔዎች';
+
+  @override
+  String get notifHouseholdTitle => 'የተጋሩ መዝገቦች';
+
+  @override
+  String get notifHouseholdSubtitle => 'የተጋራ መዝገብ ሊያበቃ ሲቃረብ እና ማንም ሳያድሰው ሲቀር';
+
+  @override
+  String get notifUpdatesTitle => 'የጠየቋቸው ዝማኔዎች';
+
+  @override
+  String get notifUpdatesSubtitle => 'አንድ ሰው የመዝገብን አዲስ ዝርዝሮች ሲልክ';
+
+  @override
+  String get notifSecurityNote => 'ወደ መለያዎ ስለሚደረጉ አዲስ መግቢያዎች የሚላኩ ማንቂያዎች ሁልጊዜ ይላካሉ።';
+
+  @override
+  String get notifIosHelpTitle => 'አስታዋሾች አይደርሱዎትም?';
+
+  @override
+  String get notifIosHelpSubtitle => 'የiPhone ቅንብሮችዎን ይፈትሹ';
+
+  @override
+  String get notifIosHelpStep1 => 'Settingsን፣ ከዚያ Notificationsን፣ ከዚያ Vaultaraን ይክፈቱ፣ እና Allow Notificationsን ያብሩ።';
+
+  @override
+  String get notifIosHelpStep2 => 'Lock Screen፣ Notification Centre እና Bannersን ያብሩ።';
+
+  @override
+  String get notifIosHelpStep3 => 'Focus ከተጠቀሙ፣ Vaultaraን በተፈቀዱ መተግበሪያዎች ውስጥ ያክሉ።';
+
+  @override
+  String get notifIosHelpStep4 => 'በጥቂት ሳምንታት አንዴ Vaultaraን ይክፈቱ። iPhone የሚያስቀምጠው የተወሰነ ቁጥር ያላቸውን የወደፊት አስታዋሾች ብቻ ነው፣ መተግበሪያውን መክፈት ቀጣዮቹን ያቅዳል።';
+
+  @override
+  String get homeNextUpEmpty => 'በቅርቡ የሚያበቃ ነገር የለም። ሁሉም ዝግጁ ነው።';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'በ30 ቀናት ውስጥ $count',
+      one: 'በ30 ቀናት ውስጥ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'የተሰኩ ምድቦች';
 }

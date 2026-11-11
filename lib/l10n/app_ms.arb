@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Gembira melihat anda di sini. Vaultara membantu anda mengatur tarikh dan rekod penting di satu tempat yang selamat.",
   "homeWelcomeSubtitleBack": "Seronok bertemu anda kembali. Vaultara sentiasa sedia apabila anda ingin menyemak tarikh dan rekod penting anda.",
   "homeWelcomeTitle": "Selamat datang",
-  "summaryAllCaption": "Dijejaki dalam Vaultara",
-  "summaryExpiredTitle": "Tamat tempoh",
-  "summaryExpiredCaption": "Tarikh tamat telah berlalu",
   "editorNotes": "Nota",
   "editorReminderNone": "Tiada peringatan",
   "editorReminderOnExpiry": "Pada tarikh luput",
@@ -192,7 +189,6 @@
   "addRecord": "Tambah rekod",
   "noRecordsYet": "Tiada rekod lagi.",
   "deleteRecordTitle": "Padam rekod",
-  "summaryAllRecordsTitle": "Semua rekod",
   "noGroupFound": "Tiada kumpulan lagi",
   "groupLabel": "{count, plural, one{{count} kumpulan} other{{count} kumpulan}}",
   "recordsLabel": "{count, plural, one{{count} rekod} other{{count} rekod}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Tambah nota (pilihan)",
   "expiryTimelineTitle": "Garis masa tamat tempoh",
   "expiryTimelineSubtitle": "Ketik bulan untuk melihat rekod yang tamat tempoh pada bulan tersebut",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 rekod} other{{count} rekod}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} rekod} other{{count} rekod}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Akan datang",
-  "summaryUpcomingCaption": "Dalam 30 hari",
-  "summaryUrgentTitle": "Mendesak",
-  "summaryUrgentCaption": "Dalam 7 hari",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Tutorial",
   "profileTutorialsSubtitle": "Layari Tutorial Aplikasi",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Tambah Rekod Pertama Anda",
   "smartInsightNoRecordsBody": "Mula menjejaki rekod anda, dan Vaultara akan menunjukkan wawasan pintar di sini.",
   "smartInsightExpiresTodaySingleBody": "{name} tamat tempoh hari ini. Jika anda telah memperbaharuinya, kemaskini tarikh di sini.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} tamat tempoh hari ini.} =1{{names} dan 1 lagi tamat tempoh hari ini.} other{{names} dan {extra} lagi tamat tempoh hari ini.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} tamat tempoh hari ini.} =1{{names} dan {extra} lagi tamat tempoh hari ini.} other{{names} dan {extra} lagi tamat tempoh hari ini.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} tamat tempoh esok dan tidak mempunyai peringatan. Tetapkan satu supaya anda tidak terlepas.} other{{name} tamat tempoh pada {date} dan tidak mempunyai peringatan. Tetapkan satu supaya anda tidak terlepas.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} tamat tempoh pada {dateA} dan {b} pada {dateB}, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila dua rekod sangat dekat.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b}, dan {c} semuanya tamat tempoh sebelum {lastDate}, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila beberapa rekod sangat dekat.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, dan 1 lagi rekod tamat tempoh sebelum {lastDate}, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila beberapa rekod sangat dekat.} other{{a}, {b}, dan {extra} lagi rekod tamat tempoh sebelum {lastDate}, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila beberapa rekod sangat dekat.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, dan {extra} lagi rekod tamat tempoh sebelum {lastDate}, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila beberapa rekod sangat dekat.} other{{a}, {b}, dan {extra} lagi rekod tamat tempoh sebelum {lastDate}, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila beberapa rekod sangat dekat.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Tiada apa-apa yang tamat tempoh pada hari berikutnya. Tarikh tamat tempoh anda yang seterusnya adalah pada {date}.} other{Tiada apa-apa yang tamat tempoh dalam {days} hari akan datang. Tarikh tamat tempoh anda yang seterusnya adalah pada {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 daripada rekod anda dalam kategori {category} tamat tempoh pada {date}. Ia mudah terlepas pandang.} other{{count} daripada rekod anda dalam kategori {category} tamat tempoh sebelum {date}. Mudah untuk melupakan salah satu apabila dikelompokkan sebegini.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 tarikh tamat tempoh akan datang dilindungi oleh peringatan. Tiada perkara lain yang memerlukan perhatian anda.} other{{count} tarikh tamat tempoh akan datang dilindungi oleh peringatan. Tiada perkara lain yang memerlukan perhatian anda.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} daripada rekod anda dalam kategori {category} tamat tempoh pada {date}. Ia mudah terlepas pandang.} other{{count} daripada rekod anda dalam kategori {category} tamat tempoh sebelum {date}. Mudah untuk melupakan salah satu apabila dikelompokkan sebegini.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} tarikh tamat tempoh akan datang dilindungi oleh peringatan. Tiada perkara lain yang memerlukan perhatian anda.} other{{count} tarikh tamat tempoh akan datang dilindungi oleh peringatan. Tiada perkara lain yang memerlukan perhatian anda.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Semuanya terkini. Tiada apa-apa yang memerlukan perhatian anda buat masa ini.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Tiada apa-apa yang mendesak buat masa ini, tetapi 1 rekod akan datang belum mempunyai peringatan.} other{Tiada apa-apa yang mendesak buat masa ini, tetapi {count} rekod akan datang belum mempunyai peringatan.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Tiada apa-apa yang mendesak buat masa ini, tetapi {count} rekod akan datang belum mempunyai peringatan.} other{Tiada apa-apa yang mendesak buat masa ini, tetapi {count} rekod akan datang belum mempunyai peringatan.}}",
   "smartInsightCloseExpiriesHeading": "Tamat Tempoh Kira-Kira Pada Masa Yang Sama",
   "plansHeadline": "Dapatkan Vaultara sepenuhnya",
   "plansSubhead": "Rekod tanpa had, kumpulan anda sendiri, dan peringatan yang ditala mengikut kehendak anda.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Alih keluar",
   "reminderCascadeDuplicate": "Peringatan lain sudah menggunakan hari ini",
   "reminderCascadeOutOfRange": "Masukkan antara {min} hingga {max} hari",
-  "reminderCascadeStepLabel": "Peringatan {position}: {days, plural, =1{1 hari} other{{days} hari}} sebelum tamat tempoh",
+  "reminderCascadeStepLabel": "Peringatan {position}: {days, plural, =1{{days} hari} other{{days} hari}} sebelum tamat tempoh",
   "expiryTimelineNotReady": "Linimasa anda akan muncul sebaik sahaja anda mempunyai rekod yang tamat tempoh dalam beberapa bulan yang berbeza.",
   "verifyEmailResendIn": "Hantar semula dalam {seconds}s",
   "verifyEmailSpamHint": "Tiada di sana? Semak folder spam atau sampah anda.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Akaun ini belum disahkan. Meninggalkan halaman sekarang akan memadamkannya, dan anda boleh mendaftar semula dengan mana-mana alamat emel.",
   "verifyEmailDiscardAction": "Buang",
   "verifyEmailKeepWaiting": "Teruskan menunggu",
-  "expiringBadge": "{count, plural, =1{1 hampir tamat tempoh} other{{count} hampir tamat tempoh}}",
+  "expiringBadge": "{count, plural, =1{{count} hampir tamat tempoh} other{{count} hampir tamat tempoh}}",
   "noRecordsToday": "Tiada apa yang tamat tempoh hari ini",
   "noRecordsTomorrow": "Tiada apa yang tamat tempoh esok",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} tamat tempoh hari ini} =1{{recordName} tamat tempoh esok} other{{recordName} tamat tempoh dalam {days} hari}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} anda tamat tempoh hari ini. Sudah memperbaharuinya? Kemaskini tarikh luputnya.} =1{{firstName}, {recordName} anda tamat tempoh esok. Perbaharuinya sekarang supaya ia tidak luput.} other{{firstName}, {recordName} anda tamat tempoh pada {date}. Memperbaharui lebih awal memastikan anda kekal dilindungi.}}",
   "cascadeFinalStepTitle": "Peringatan terakhir: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} anda tamat tempoh {days, plural, =1{esok} other{dalam {days} hari, pada {date}}}. Ini ialah peringatan terakhir anda, perbaharuinya atau kemaskini tarikhnya.",
   "notificationsTitle": "Pemberitahuan",
   "notificationsProfileEnabledSubtitle": "Peringatan tiba pada {time}.",
   "notificationsProfileDisabledSubtitle": "Pemberitahuan dimatikan.",
@@ -681,7 +670,7 @@
   "costCardTitle": "Kos pembaharuan",
   "costCardSubtitle": "Kos pembaharuan anda, bulan demi bulan",
   "costCardBusiest": "Bulan paling sibuk: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{1 rekod akan datang belum ada kos.} other{{count} rekod akan datang belum ada kos.}}",
+  "costCardMissing": "{count, plural, =1{{count} rekod akan datang belum ada kos.} other{{count} rekod akan datang belum ada kos.}}",
   "costCardEmpty": "Tambah kos pada rekod anda untuk melihat kos pembaharuan.",
   "costCardLockedHint": "Lihat kos pembaharuan anda sepanjang tahun depan dengan Premium.",
   "costCardSeePremium": "Lihat Premium",
@@ -689,7 +678,7 @@
   "familyTitle": "Keluarga",
   "familyIntro": "Jejaki rekod orang yang anda jaga. Peringatan mereka memaparkan nama mereka supaya anda tahu rekod siapa itu.",
   "familyMe": "Saya",
-  "familyRecordCount": "{count, plural, =0{Tiada rekod} =1{1 rekod} other{{count} rekod}}",
+  "familyRecordCount": "{count, plural, =0{Tiada rekod} =1{{count} rekod} other{{count} rekod}}",
   "familyRename": "Namakan semula",
   "familyRemove": "Alih keluar",
   "familyRemoveTitle": "Alih keluar {name}?",
@@ -702,10 +691,10 @@
   "familyNameLabel": "Nama",
   "familyNameHint": "Contohnya, Aisyah",
   "familyNameRequired": "Masukkan nama",
-  "familyLimitNote": "{count, plural, =1{Sehingga 1 orang} other{Sehingga {count} orang}}",
+  "familyLimitNote": "{count, plural, =1{Sehingga {count} orang} other{Sehingga {count} orang}}",
   "familyUpsellTitle": "Jejaki dokumen keluarga anda",
   "familyBenefitPremium": "Semua yang ada dalam Premium",
-  "familyBenefitPeople": "{count, plural, =1{Tambah 1 orang} other{Tambah sehingga {count} orang}}",
+  "familyBenefitPeople": "{count, plural, =1{Tambah {count} orang} other{Tambah sehingga {count} orang}}",
   "familyBenefitOwnRecords": "Setiap orang mempunyai rekod dan peringatan sendiri",
   "familyBenefitOneSubscription": "Satu langganan untuk seisi rumah",
   "familySeePlan": "Lihat pelan Keluarga",
@@ -891,14 +880,14 @@
   "calendarExportError": "Kami tidak dapat mencipta fail kalendar. Cuba lagi.",
   "pdfExportTitle": "Rekod Vaultara",
   "pdfExportGenerated": "Dijana pada {date}",
-  "pdfExportCount": "{count, plural, =1{1 rekod} other{{count} rekod}}",
+  "pdfExportCount": "{count, plural, =1{{count} rekod} other{{count} rekod}}",
   "pdfExportCost": "Kos pembaharuan: {amount}",
   "pdfExportBuilding": "Menyediakan PDF anda...",
   "pdfExportError": "Kami tidak dapat mencipta PDF. Cuba lagi.",
   "travelTitle": "Semakan perjalanan",
   "travelDeparture": "Bertolak",
   "travelReturn": "Pulang",
-  "travelTripLength": "{days, plural, =1{Perjalanan 1 hari} other{Perjalanan {days} hari}}",
+  "travelTripLength": "{days, plural, =1{Perjalanan {days} hari} other{Perjalanan {days} hari}}",
   "travelDriving": "Saya akan memandu",
   "travelNeedsVisa": "Saya perlukan visa",
   "travelWho": "Siapa yang melancong?",
@@ -919,9 +908,9 @@
   "travelNoLicence": "Tiada lesen memandu ditambah",
   "travelOtherExpires": "Tamat tempoh semasa anda tiada",
   "travelDetailValidUntil": "{name} sah sehingga {date}.",
-  "travelDetailPassportBuffer": "{name} tamat tempoh pada {date}. Banyak negara mahu baki {months, plural, =1{1 bulan} other{{months} bulan}} selepas anda pulang.",
+  "travelDetailPassportBuffer": "{name} tamat tempoh pada {date}. Banyak negara mahu baki {months, plural, =1{{months} bulan} other{{months} bulan}} selepas anda pulang.",
   "travelDetailExpiresBeforeLeaving": "{name} tamat tempoh pada {date}, sebelum anda bertolak.",
-  "travelDetailExpiresDuringTrip": "{name} tamat tempoh pada {date}, {days, plural, =0{pada hari anda bertolak} =1{1 hari selepas anda bertolak} other{{days} hari selepas anda bertolak}}.",
+  "travelDetailExpiresDuringTrip": "{name} tamat tempoh pada {date}, {days, plural, =0{pada hari anda bertolak} =1{{days} hari selepas anda bertolak} other{{days} hari selepas anda bertolak}}.",
   "travelDetailNoPassport": "Tambah pasport anda supaya Vaultara boleh menyemaknya.",
   "travelDetailNoVisa": "Tambah visa anda supaya Vaultara boleh menyemaknya.",
   "travelDetailNoInsurance": "Tambah insurans perjalanan anda untuk menyemak ia meliputi seluruh perjalanan.",
@@ -973,7 +962,7 @@
   "travelInProgress": "Perjalanan sedang berlangsung",
   "travelTripEnded": "Perjalanan tamat",
   "travelAllGood": "Semua dokumen sedia",
-  "travelIssues": "{count, plural, =1{1 perkara perlu perhatian} other{{count} perkara perlu perhatian}}",
+  "travelIssues": "{count, plural, =1{{count} perkara perlu perhatian} other{{count} perkara perlu perhatian}}",
   "travelChecklistTitle": "Senarai semak perjalanan",
   "travelChecklistProgress": "{done} daripada {total} selesai",
   "travelChecklistAdd": "Tambah",
@@ -993,7 +982,7 @@
   "travelTripTo": "Perjalanan ke {name}",
   "travelReminderTitle": "{days, plural, other{Perjalanan ke {name} dalam {days} hari}}",
   "travelReminderTitleTomorrow": "Perjalanan ke {name} esok",
-  "travelReminderBodyIssues": "{count, plural, =1{1 dokumen perlu perhatian sebelum anda bertolak.} other{{count} dokumen perlu perhatian sebelum anda bertolak.}}",
+  "travelReminderBodyIssues": "{count, plural, =1{{count} dokumen perlu perhatian sebelum anda bertolak.} other{{count} dokumen perlu perhatian sebelum anda bertolak.}}",
   "travelReminderBodyOk": "Dokumen anda sudah sedia. Buka perjalanan anda untuk menyemak senarai.",
   "travelTripLimit": "Anda boleh menyimpan sehingga {count} perjalanan. Padam perjalanan lama untuk menambah yang baharu.",
   "recordLockTitle": "Kunci rekod ini",
@@ -1021,7 +1010,7 @@
   "vaultChooseFromGallery": "Pilih daripada galeri",
   "vaultRemove": "Alih keluar",
   "vaultLimitTitle": "Had gambar dicapai",
-  "vaultLimitFreeBody": "Pelan Percuma membenarkan anda menambah {limit, plural, =1{1 gambar} other{{limit} gambar}} pada setiap rekod. Dengan Premium anda boleh menambah sehingga {premiumLimit}.",
+  "vaultLimitFreeBody": "Pelan Percuma membenarkan anda menambah {limit, plural, =1{{limit} gambar} other{{limit} gambar}} pada setiap rekod. Dengan Premium anda boleh menambah sehingga {premiumLimit}.",
   "vaultLimitPremiumBody": "Anda boleh menambah sehingga {limit} gambar pada setiap rekod. Alih keluar satu untuk menambah yang lain.",
   "vaultSeePremium": "Lihat Premium",
   "vaultPdfShort": "PDF",
@@ -1029,7 +1018,7 @@
   "vaultOpenFile": "Buka",
   "vaultClose": "Tutup",
   "vaultPageIndicator": "{current} daripada {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 gambar} other{{count} gambar}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} gambar} other{{count} gambar}}",
   "travelReadinessTitle": "Kesediaan perjalanan",
   "travelReadinessBody": "Berdasarkan pasport dan lesen yang disimpan dalam Vaultara. Kebanyakan negara mahu pasport mempunyai baki sekurang-kurangnya 6 bulan apabila anda pulang.",
   "travelReadyUntil": "Pasport boleh digunakan untuk perjalanan sehingga {date}",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} tamat tempoh hari ini",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} tamat tempoh esok",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} tamat tempoh dalam {days} hari}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} telah tamat tempoh",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Rekod yang dikunci memerlukan perhatian anda",
+  "remLockedBody": "Tarikhnya {date}. Buka kunci Vaultara untuk melihat rekod yang mana.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Rekod anda \"{recordName}\" tamat tempoh hari ini.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Rekod anda \"{recordName}\" tamat tempoh esok.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Rekod anda \"{recordName}\" tamat tempoh pada {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, rekod anda \"{recordName}\" tamat tempoh hari ini.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, rekod anda \"{recordName}\" tamat tempoh esok.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, rekod anda \"{recordName}\" tamat tempoh pada {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Rekod \"{recordName}\" milik {person} tamat tempoh hari ini.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Rekod \"{recordName}\" milik {person} tamat tempoh esok.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Rekod \"{recordName}\" milik {person} tamat tempoh pada {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Rekod anda \"{recordName}\" tamat tempoh pada {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Rekod \"{recordName}\" milik {person} tamat tempoh pada {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Sudah diperbaharui? Kemas kini tarikhnya.",
+  "remTipTomorrow": "Perbaharuinya sekarang supaya tidak tamat tempoh.",
+  "remTipEarly": "Memperbaharui awal memastikan anda terlindung.",
+  "remTipLast": "Ini peringatan terakhir sebelum tamat tempoh.",
+  "remTipExpired": "Perbaharuinya, atau kemas kini tarikhnya jika sudah.",
+  "remStartBody": "Sudah tiba masanya untuk mula memperbaharui \"{recordName}\". Ia tamat tempoh pada {date}, jadi jika mula sekarang anda ada banyak masa.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Sudah tiba masanya untuk mula memperbaharui \"{recordName}\" milik {person}. Ia tamat tempoh pada {date}, jadi bermula sekarang memberi banyak masa.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Peringatan tamat tempoh",
+  "notifChannelDescription": "Peringatan sebelum rekod anda tamat tempoh",
+  "notifTestTitle": "Pemberitahuan ujian",
+  "notifTestBody": "Peringatan daripada Vaultara tiba seperti ini.",
+  "notifTestAction": "Hantar pemberitahuan ujian",
+  "notifTestSubtitle": "Semak bahawa peringatan sampai ke telefon ini",
+  "notifTestSent": "Ujian dihantar. Ia sepatutnya tiba dalam beberapa saat.",
+  "notifAfterExpiryTitle": "Ingatkan saya selepas rekod tamat tempoh",
+  "notifAfterExpirySubtitle": "3 dan 14 hari selepasnya, jika belum diperbaharui",
+  "notifWeeklyTitle": "Ringkasan Isnin",
+  "notifWeeklySubtitle": "Mesej pada pagi Isnin apabila sesuatu tamat tempoh minggu itu",
+  "notifPushSection": "Isi rumah dan kemas kini",
+  "notifHouseholdTitle": "Rekod dikongsi",
+  "notifHouseholdSubtitle": "Apabila rekod dikongsi hampir tamat tempoh dan tiada sesiapa memperbaharuinya",
+  "notifUpdatesTitle": "Kemas kini yang anda minta",
+  "notifUpdatesSubtitle": "Apabila seseorang menghantar butiran baharu sesuatu rekod",
+  "notifSecurityNote": "Amaran tentang log masuk baharu ke akaun anda sentiasa dihantar.",
+  "notifIosHelpTitle": "Tidak menerima peringatan?",
+  "notifIosHelpSubtitle": "Semak tetapan iPhone anda",
+  "notifIosHelpStep1": "Buka Tetapan, kemudian Pemberitahuan, kemudian Vaultara, dan hidupkan Benarkan Pemberitahuan.",
+  "notifIosHelpStep2": "Hidupkan Skrin Kunci, Pusat Pemberitahuan dan Sepanduk.",
+  "notifIosHelpStep3": "Jika anda menggunakan Fokus, tambah Vaultara pada app yang dibenarkan.",
+  "notifIosHelpStep4": "Buka Vaultara setiap beberapa minggu. iPhone hanya menyimpan bilangan terhad peringatan akan datang, dan membuka app menjadualkan yang seterusnya.",
+  "homeNextUpEmpty": "Tiada apa yang tamat tempoh tidak lama lagi. Semuanya beres.",
+  "homeDueSoonChip": "{count, plural, other{{count} perlu diperbaharui dalam 30 hari}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Kategori yang disemat"
 }

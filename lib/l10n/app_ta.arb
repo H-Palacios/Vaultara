@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleFirst": "உங்களை இங்கே காண மகிழ்ச்சி. Vaultara முக்கியமான தேதிகளையும் பதிவுகளையும் ஒரு பாதுகாப்பான இடத்தில் ஒழுங்குபடுத்த உதவுகிறது.",
   "homeWelcomeSubtitleBack": "மீண்டும் உங்களை காண மகிழ்ச்சி. உங்கள் முக்கியமான தேதிகளையும் பதிவுகளையும் பார்வையிட Vaultara எப்போதும் தயாராக உள்ளது.",
   "homeWelcomeTitle": "வரவேற்கிறோம்",
-  "summaryAllCaption": "Vaultara இல் கண்காணிக்கப்படுகிறது",
-  "summaryExpiredTitle": "காலாவதியானது",
-  "summaryExpiredCaption": "காலாவதி தேதி கடந்துவிட்டது",
   "editorNotes": "குறிப்புகள்",
   "editorReminderNone": "நினைவூட்டல் இல்லை",
   "editorReminderOnExpiry": "காலாவதியான நாளில்",
@@ -192,7 +189,6 @@
   "addRecord": "பதிவு சேர்க்க",
   "noRecordsYet": "இதுவரை பதிவுகள் இல்லை.",
   "deleteRecordTitle": "பதிவை நீக்கு",
-  "summaryAllRecordsTitle": "அனைத்து பதிவுகள்",
   "noGroupFound": "இன்னும் குழுக்கள் இல்லை",
   "groupLabel": "{count, plural, one{{count} குழு} other{{count} குழுக்கள்}}",
   "recordsLabel": "{count, plural, one{{count} பதிவு} other{{count} பதிவுகள்}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "குறிப்புகளைச் சேர்க்கவும் (விருப்பம்)",
   "expiryTimelineTitle": "காலாவதி காலவரிசை",
   "expiryTimelineSubtitle": "அந்த மாதத்தில் காலாவதியாகும் பதிவுகளைப் பார்க்க மாதத்தைத் தட்டவும்",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 பதிவு} other{{count} பதிவுகள்}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} பதிவு} other{{count} பதிவுகள்}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "வரவிருக்கும்",
-  "summaryUpcomingCaption": "30 நாட்களுக்குள்",
-  "summaryUrgentTitle": "அவசரம்",
-  "summaryUrgentCaption": "7 நாட்களுக்குள்",
   "profileHeaderTitle": "சுயவிவரம்",
   "profileTutorialsTitle": "பயிற்சிகள்",
   "profileTutorialsSubtitle": "பயன்பாட்டு பயிற்சிகளை உலாவவும்",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "நினைவூட்டல் இல்லை",
   "reminderOnExpiry": "காலாவதி தேதியில்",
-  "reminderDaysBefore": "{days, plural, one{1 நாள் முன்பு} other{{days} நாட்கள் முன்பு}}",
+  "reminderDaysBefore": "{days, plural, one{{days} நாள் முன்பு} other{{days} நாட்கள் முன்பு}}",
   "reminderCustomDaysTitle": "தனிப்பயன் நாட்களை உள்ளிடவும்",
   "reminderCascadeTitle": "தொடர் நினைவூட்டல்கள்",
   "reminderCascadeSubtitle": "பதிவு காலாவதியாகும் முன் பல அறிவிப்புகளைப் பெறவும்",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "உங்கள் முதல் பதிவைச் சேர்க்கவும்",
   "smartInsightNoRecordsBody": "உங்கள் பதிவுகளைக் கண்காணிக்கத் தொடங்குங்கள், Vaultara இங்கே ஸ்மார்ட் நுண்ணறிவுகளைக் காண்பிக்கும்.",
   "smartInsightExpiresTodaySingleBody": "{name} இன்றே காலாவதியாகிறது. நீங்கள் ஏற்கனவே புதுப்பித்திருந்தால், தேதியை இங்கே மாற்றவும்.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} இன்றே காலாவதியாகின்றன.} =1{{names} மற்றும் மேலும் 1 பதிவு இன்றே காலாவதியாகின்றன.} other{{names} மற்றும் மேலும் {extra} பதிவுகள் இன்றே காலாவதியாகின்றன.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} இன்றே காலாவதியாகின்றன.} =1{{names} மற்றும் மேலும் {extra} பதிவு இன்றே காலாவதியாகின்றன.} other{{names} மற்றும் மேலும் {extra} பதிவுகள் இன்றே காலாவதியாகின்றன.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} நாளை காலாவதியாகிறது, நினைவூட்டல் எதுவும் அமைக்கப்படவில்லை. தவறவிடாமல் இருக்க ஒன்றை அமைக்கவும்.} other{{name} தேதி {date} அன்று காலாவதியாகிறது, நினைவூட்டல் எதுவும் அமைக்கப்படவில்லை. தவறவிடாமல் இருக்க ஒன்றை அமைக்கவும்.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} தேதி {dateA} அன்றும், {b} தேதி {dateB} அன்றும் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. இரண்டு பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} மற்றும் {c} ஆகிய அனைத்தும் {lastDate}க்குள் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. சில பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} மற்றும் மேலும் 1 பதிவு {lastDate}க்குள் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. சில பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.} other{{a}, {b} மற்றும் மேலும் {extra} பதிவுகள் {lastDate}க்குள் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. சில பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} மற்றும் மேலும் {extra} பதிவு {lastDate}க்குள் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. சில பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.} other{{a}, {b} மற்றும் மேலும் {extra} பதிவுகள் {lastDate}க்குள் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. சில பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{அடுத்த நாள் எதுவும் காலாவதியாகவில்லை. உங்களது அடுத்த காலாவதி {date} அன்று.} other{அடுத்த {days} நாட்களுக்கு எதுவும் காலாவதியாகவில்லை. உங்களது அடுத்த காலாவதி {date} அன்று.}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} வகையில் உள்ள உங்களது 1 பதிவு {date} அன்று காலாவதியாகிறது. இதைத் தவறவிட வாய்ப்புள்ளது.} other{{category} வகையில் உள்ள உங்களது {count} பதிவுகள் {date}க்குள் காலாவதியாகின்றன. பதிவுகள் இப்படி ஒன்றாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{வரவிருக்கும் 1 காலாவதிக்கு நினைவூட்டல் உள்ளது. வேறு எதுவும் உங்கள் கவனத்திற்குத் தேவையில்லை.} other{வரவிருக்கும் {count} காலாவதிகளுக்கு நினைவூட்டல்கள் உள்ளன. வேறு எதுவும் உங்கள் கவனத்திற்குத் தேவையில்லை.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} வகையில் உள்ள உங்களது {count} பதிவு {date} அன்று காலாவதியாகிறது. இதைத் தவறவிட வாய்ப்புள்ளது.} other{{category} வகையில் உள்ள உங்களது {count} பதிவுகள் {date}க்குள் காலாவதியாகின்றன. பதிவுகள் இப்படி ஒன்றாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{வரவிருக்கும் {count} காலாவதிக்கு நினைவூட்டல் உள்ளது. வேறு எதுவும் உங்கள் கவனத்திற்குத் தேவையில்லை.} other{வரவிருக்கும் {count} காலாவதிகளுக்கு நினைவூட்டல்கள் உள்ளன. வேறு எதுவும் உங்கள் கவனத்திற்குத் தேவையில்லை.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "அனைத்தும் புதுப்பித்த நிலையில் உள்ளன. தற்போது உங்கள் கவனம் தேவைப்படும் எதுவும் இல்லை.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{தற்போது அவசரம் எதுவும் இல்லை, ஆனால் வரவிருக்கும் 1 பதிவிற்கு இன்னும் நினைவூட்டல் அமைக்கப்படவில்லை.} other{தற்போது அவசரம் எதுவும் இல்லை, ஆனால் வரவிருக்கும் {count} பதிவுகளுக்கு இன்னும் நினைவூட்டல் அமைக்கப்படவில்லை.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{தற்போது அவசரம் எதுவும் இல்லை, ஆனால் வரவிருக்கும் {count} பதிவிற்கு இன்னும் நினைவூட்டல் அமைக்கப்படவில்லை.} other{தற்போது அவசரம் எதுவும் இல்லை, ஆனால் வரவிருக்கும் {count} பதிவுகளுக்கு இன்னும் நினைவூட்டல் அமைக்கப்படவில்லை.}}",
   "smartInsightCloseExpiriesHeading": "தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன",
   "plansHeadline": "முழுமையான Vaultara அனுபவத்தைப் பெறுங்கள்",
   "plansSubhead": "வரம்பற்ற பதிவுகள், உங்களுக்கான சொந்தக் குழுக்கள் மற்றும் நீங்கள் விரும்பும் வகையில் அமைக்கப்பட்ட நினைவூட்டல்கள்.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "இந்தக் கணக்கு இன்னும் சரிபார்க்கப்படவில்லை. இப்போது வெளியேறினால் இது நீக்கப்படும், அதன் பிறகு நீங்கள் எந்த மின்னஞ்சல் முகவரியைப் பயன்படுத்தியும் மீண்டும் பதிவு செய்யலாம்.",
   "verifyEmailDiscardAction": "நீக்கு",
   "verifyEmailKeepWaiting": "தொடர்ந்து காத்திரு",
-  "expiringBadge": "{count, plural, =1{1 விரைவில் காலாவதியாகிறது} other{{count} விரைவில் காலாவதியாகின்றன}}",
+  "expiringBadge": "{count, plural, =1{{count} விரைவில் காலாவதியாகிறது} other{{count} விரைவில் காலாவதியாகின்றன}}",
   "noRecordsToday": "இன்று எதுவும் காலாவதியாகாது",
   "noRecordsTomorrow": "நாளை எதுவும் காலாவதியாகாது",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} இன்று காலாவதியாகிறது} =1{{recordName} நாளை காலாவதியாகிறது} other{{recordName} {days} நாட்களில் காலாவதியாகிறது}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, உங்களது {recordName} இன்று காலாவதியாகிறது. ஏற்கனவே புதுப்பித்துவிட்டீர்களா? அதன் காலாவதி தேதியை மாற்றவும்.} =1{{firstName}, உங்களது {recordName} நாளை காலாவதியாகிறது. அதன் செல்லுபடி இழக்கப்படாமல் இருக்க இப்போதே புதுப்பிக்கவும்.} other{{firstName}, உங்களது {recordName} {date} அன்று காலாவதியாகிறது. முன்கூட்டியே புதுப்பிப்பது தொடர்ச்சியான செல்லுபடியை உறுதி செய்யும்.}}",
   "cascadeFinalStepTitle": "இறுதி நினைவூட்டல்: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, உங்களது {recordName} {days, plural, =1{நாளை} other{{days} நாட்களில், {date} அன்று}} காலாவதியாகிறது. இது உங்களது இறுதி நினைவூட்டல், இதைப் புதுப்பிக்கவும் அல்லது காலாவதி தேதியை மாற்றவும்.",
   "notificationsTitle": "அறிவிப்புகள்",
   "notificationsProfileEnabledSubtitle": "நினைவூட்டல்கள் {time} மணிக்கு வரும்.",
   "notificationsProfileDisabledSubtitle": "அறிவிப்புகள் முடக்கப்பட்டுள்ளன.",
@@ -681,7 +670,7 @@
   "costCardTitle": "புதுப்பித்தல் செலவுகள்",
   "costCardSubtitle": "உங்கள் புதுப்பிப்புகளுக்கான மாதவாரி செலவு",
   "costCardBusiest": "அதிக செலவுள்ள மாதம்: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{வரவிருக்கும் 1 பதிவுக்கு இன்னும் செலவு இல்லை.} other{வரவிருக்கும் {count} பதிவுகளுக்கு இன்னும் செலவு இல்லை.}}",
+  "costCardMissing": "{count, plural, =1{வரவிருக்கும் {count} பதிவுக்கு இன்னும் செலவு இல்லை.} other{வரவிருக்கும் {count} பதிவுகளுக்கு இன்னும் செலவு இல்லை.}}",
   "costCardEmpty": "புதுப்பித்தல்களுக்கு எவ்வளவு ஆகும் என்று பார்க்க உங்கள் பதிவுகளில் செலவுகளைச் சேர்க்கவும்.",
   "costCardLockedHint": "அடுத்த ஆண்டில் உங்கள் புதுப்பித்தல்களுக்கு எவ்வளவு ஆகும் என்பதை ப்ரீமியம் மூலம் பாருங்கள்.",
   "costCardSeePremium": "ப்ரீமியத்தைப் பார்",
@@ -689,7 +678,7 @@
   "familyTitle": "குடும்பம்",
   "familyIntro": "நீங்கள் கவனித்துக்கொள்பவர்களின் பதிவுகளைக் கண்காணிக்கவும். அவர்களின் நினைவூட்டல்களில் பெயர் காட்டப்படுவதால் அது யாருடைய பதிவு என்று உங்களுக்குத் தெரியும்.",
   "familyMe": "நான்",
-  "familyRecordCount": "{count, plural, =0{பதிவுகள் இல்லை} =1{1 பதிவு} other{{count} பதிவுகள்}}",
+  "familyRecordCount": "{count, plural, =0{பதிவுகள் இல்லை} =1{{count} பதிவு} other{{count} பதிவுகள்}}",
   "familyRename": "பெயர் மாற்று",
   "familyRemove": "அகற்று",
   "familyRemoveTitle": "{name}-ஐ அகற்றவா?",
@@ -702,10 +691,10 @@
   "familyNameLabel": "பெயர்",
   "familyNameHint": "உதாரணமாக, Thabo",
   "familyNameRequired": "பெயரை உள்ளிடவும்",
-  "familyLimitNote": "{count, plural, =1{1 நபர் வரை} other{{count} நபர்கள் வரை}}",
+  "familyLimitNote": "{count, plural, =1{{count} நபர் வரை} other{{count} நபர்கள் வரை}}",
   "familyUpsellTitle": "உங்கள் குடும்பத்தின் ஆவணங்களைக் கண்காணிக்கவும்",
   "familyBenefitPremium": "ப்ரீமியத்தில் உள்ள அனைத்தும்",
-  "familyBenefitPeople": "{count, plural, =1{1 நபரைச் சேர்க்கலாம்} other{{count} நபர்கள் வரை சேர்க்கலாம்}}",
+  "familyBenefitPeople": "{count, plural, =1{{count} நபரைச் சேர்க்கலாம்} other{{count} நபர்கள் வரை சேர்க்கலாம்}}",
   "familyBenefitOwnRecords": "ஒவ்வொருவருக்கும் தனிப் பதிவுகளும் நினைவூட்டல்களும்",
   "familyBenefitOneSubscription": "முழு வீட்டுக்கும் ஒரே சந்தா",
   "familySeePlan": "குடும்பத் திட்டத்தைப் பார்",
@@ -891,14 +880,14 @@
   "calendarExportError": "நாட்காட்டிக் கோப்பை உருவாக்க முடியவில்லை. மீண்டும் முயலவும்.",
   "pdfExportTitle": "Vaultara பதிவுகள்",
   "pdfExportGenerated": "{date} அன்று உருவாக்கப்பட்டது",
-  "pdfExportCount": "{count, plural, =1{1 பதிவு} other{{count} பதிவுகள்}}",
+  "pdfExportCount": "{count, plural, =1{{count} பதிவு} other{{count} பதிவுகள்}}",
   "pdfExportCost": "புதுப்பித்தல் செலவு: {amount}",
   "pdfExportBuilding": "உங்கள் PDF-ஐத் தயாரிக்கிறது...",
   "pdfExportError": "PDF-ஐ உருவாக்க முடியவில்லை. மீண்டும் முயலவும்.",
   "travelTitle": "பயணச் சரிபார்ப்பு",
   "travelDeparture": "புறப்பாடு",
   "travelReturn": "திரும்புதல்",
-  "travelTripLength": "{days, plural, =1{1 நாள் பயணம்} other{{days} நாள் பயணம்}}",
+  "travelTripLength": "{days, plural, =1{{days} நாள் பயணம்} other{{days} நாள் பயணம்}}",
   "travelDriving": "நான் வாகனம் ஓட்டுவேன்",
   "travelNeedsVisa": "எனக்கு விசா தேவை",
   "travelWho": "யார் பயணிக்கிறார்கள்?",
@@ -919,7 +908,7 @@
   "travelNoLicence": "ஓட்டுநர் உரிமம் சேர்க்கப்படவில்லை",
   "travelOtherExpires": "நீங்கள் வெளியே இருக்கும்போது காலாவதியாகும்",
   "travelDetailValidUntil": "{name} {date} வரை செல்லுபடியாகும்.",
-  "travelDetailPassportBuffer": "{name} {date} அன்று காலாவதியாகும். பல நாடுகள் நீங்கள் திரும்பிய பின் {months, plural, =1{1 மாதம்} other{{months} மாதங்கள்}} மீதம் இருக்க வேண்டும் என்கின்றன.",
+  "travelDetailPassportBuffer": "{name} {date} அன்று காலாவதியாகும். பல நாடுகள் நீங்கள் திரும்பிய பின் {months, plural, =1{{months} மாதம்} other{{months} மாதங்கள்}} மீதம் இருக்க வேண்டும் என்கின்றன.",
   "travelDetailExpiresBeforeLeaving": "{name} {date} அன்று, நீங்கள் புறப்படும் முன்பே காலாவதியாகும்.",
   "travelDetailExpiresDuringTrip": "{name} {date} அன்று காலாவதியாகும், {days, plural, =0{நீங்கள் புறப்படும் நாளிலேயே} =1{பயணத்தின் 1வது நாளில்} other{பயணத்தின் {days}வது நாளில்}}.",
   "travelDetailNoPassport": "Vaultara சரிபார்க்க உங்கள் கடவுச்சீட்டைச் சேர்க்கவும்.",
@@ -1021,7 +1010,7 @@
   "vaultChooseFromGallery": "கேலரியிலிருந்து தேர்ந்தெடு",
   "vaultRemove": "அகற்று",
   "vaultLimitTitle": "புகைப்பட வரம்பை எட்டிவிட்டீர்கள்",
-  "vaultLimitFreeBody": "இலவசத் திட்டத்தில் ஒவ்வொரு பதிவிலும் {limit, plural, =1{1 புகைப்படம்} other{{limit} புகைப்படங்கள்}} சேர்க்கலாம். ப்ரீமியத்தில் {premiumLimit} வரை சேர்க்கலாம்.",
+  "vaultLimitFreeBody": "இலவசத் திட்டத்தில் ஒவ்வொரு பதிவிலும் {limit, plural, =1{{limit} புகைப்படம்} other{{limit} புகைப்படங்கள்}} சேர்க்கலாம். ப்ரீமியத்தில் {premiumLimit} வரை சேர்க்கலாம்.",
   "vaultLimitPremiumBody": "ஒவ்வொரு பதிவிலும் {limit} புகைப்படங்கள் வரை சேர்க்கலாம். இன்னொன்றைச் சேர்க்க ஒன்றை அகற்றவும்.",
   "vaultSeePremium": "ப்ரீமியத்தைப் பார்",
   "vaultPdfShort": "PDF",
@@ -1029,7 +1018,7 @@
   "vaultOpenFile": "திற",
   "vaultClose": "மூடு",
   "vaultPageIndicator": "{total}-இல் {current}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 புகைப்படம்} other{{count} புகைப்படங்கள்}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} புகைப்படம்} other{{count} புகைப்படங்கள்}}",
   "travelReadinessTitle": "பயணத் தயார்நிலை",
   "travelReadinessBody": "Vaultara-வில் சேமித்துள்ள கடவுச்சீட்டுகள் மற்றும் ஓட்டுநர் உரிமங்களின் அடிப்படையில். நீங்கள் திரும்பும்போது கடவுச்சீட்டில் குறைந்தது 6 மாதங்கள் செல்லுபடி காலம் இருக்க வேண்டும் என்று பெரும்பாலான நாடுகள் எதிர்பார்க்கின்றன.",
   "travelReadyUntil": "கடவுச்சீட்டு {date} வரை பயணங்களுக்குச் செல்லும்",
@@ -1349,7 +1338,7 @@
   "photoLockTurnOn": "குறியாக்கப்பட்ட புகைப்படங்களை இயக்கு",
   "photoLockStatusOn": "குறியாக்கப்பட்ட புகைப்படங்கள் இயக்கத்தில் உள்ளன",
   "photoLockStatusOnBody": "புதிய புகைப்படங்கள் பதிவேற்றப்படுவதற்கு முன் இந்த ஃபோனில் குறியாக்கம் செய்யப்படும்.",
-  "photoLockPendingTitle": "{count, plural, one{1 புகைப்படம் இன்னும் குறியாக்கம் செய்யப்படவில்லை} other{{count} புகைப்படங்கள் இன்னும் குறியாக்கம் செய்யப்படவில்லை}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} புகைப்படம் இன்னும் குறியாக்கம் செய்யப்படவில்லை} other{{count} புகைப்படங்கள் இன்னும் குறியாக்கம் செய்யப்படவில்லை}}",
   "photoLockPendingBody": "இதை இயக்குவதற்கு முன் நீங்கள் சேர்த்த புகைப்படங்கள் இன்னும் சாதாரண முறையில் சேமிக்கப்பட்டுள்ளன.",
   "photoLockEncryptExisting": "என் ஏற்கெனவே உள்ள புகைப்படங்களைக் குறியாக்கு",
   "photoLockKeepOpen": "இது முடியும் வரை Vaultara ஐத் திறந்தே வைத்திருக்கவும்.",
@@ -1386,7 +1375,7 @@
   "photoLockSetupFailed": "குறியாக்கப்பட்ட புகைப்படங்களை இயக்க முடியவில்லை. உங்கள் இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.",
   "photoLockAlreadyOn": "உங்கள் கணக்கில் குறியாக்கப்பட்ட புகைப்படங்கள் ஏற்கெனவே இயக்கத்தில் உள்ளன. இந்த ஃபோனில் பயன்படுத்த மீட்பு விசையை உள்ளிடவும்.",
   "photoLockEncryptExistingTitle": "ஏற்கெனவே உள்ள புகைப்படங்களைக் குறியாக்கவா?",
-  "photoLockEncryptExistingBody": "{count, plural, one{உங்களிடம் இன்னும் குறியாக்கம் செய்யப்படாத 1 புகைப்படம் உள்ளது. அதை இப்போது குறியாக்கலாம்.} other{உங்களிடம் இன்னும் குறியாக்கம் செய்யப்படாத {count} புகைப்படங்கள் உள்ளன. அவற்றை இப்போது குறியாக்கலாம்.}} இது முடியும் வரை Vaultara ஐத் திறந்தே வைத்திருக்கவும்.",
+  "photoLockEncryptExistingBody": "{count, plural, one{உங்களிடம் இன்னும் குறியாக்கம் செய்யப்படாத {count} புகைப்படம் உள்ளது. அதை இப்போது குறியாக்கலாம்.} other{உங்களிடம் இன்னும் குறியாக்கம் செய்யப்படாத {count} புகைப்படங்கள் உள்ளன. அவற்றை இப்போது குறியாக்கலாம்.}} இது முடியும் வரை Vaultara ஐத் திறந்தே வைத்திருக்கவும்.",
   "photoLockEncryptNow": "இப்போதே குறியாக்கு",
   "photoLockEntryBody": "குறியாக்கப்பட்ட புகைப்படங்களை இயக்கியபோது நீங்கள் சேமித்த மீட்பு விசையை உள்ளிடவும். கோடுகளும் இடைவெளிகளும் விருப்பத்திற்குரியவை.",
   "photoLockEntryLabel": "மீட்பு விசை",
@@ -1395,8 +1384,8 @@
   "photoLockUnlocked": "இந்த ஃபோனில் உங்கள் புகைப்படங்கள் திறக்கப்பட்டன.",
   "photoLockInvalidFormat": "இது மீட்பு விசை போலத் தெரியவில்லை. ஒவ்வொரு எழுத்தையும் சரிபார்த்து மீண்டும் முயலவும்.",
   "photoLockWrongKey": "இந்த மீட்பு விசை பொருந்தவில்லை. சரிபார்த்து மீண்டும் முயலவும்.",
-  "photoLockWaitSeconds": "{seconds, plural, one{அதிக முயற்சிகள். 1 வினாடி காத்திருந்து மீண்டும் முயலவும்.} other{அதிக முயற்சிகள். {seconds} வினாடிகள் காத்திருந்து மீண்டும் முயலவும்.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{அதிக முயற்சிகள். 1 நிமிடம் காத்திருந்து மீண்டும் முயலவும்.} other{அதிக முயற்சிகள். {minutes} நிமிடங்கள் காத்திருந்து மீண்டும் முயலவும்.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{அதிக முயற்சிகள். {seconds} வினாடி காத்திருந்து மீண்டும் முயலவும்.} other{அதிக முயற்சிகள். {seconds} வினாடிகள் காத்திருந்து மீண்டும் முயலவும்.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{அதிக முயற்சிகள். {minutes} நிமிடம் காத்திருந்து மீண்டும் முயலவும்.} other{அதிக முயற்சிகள். {minutes} நிமிடங்கள் காத்திருந்து மீண்டும் முயலவும்.}}",
   "photoLockOffline": "Vaultara ஐ அடைய முடியவில்லை. உங்கள் இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.",
   "photoLockNotSetUp": "உங்கள் கணக்கில் குறியாக்கப்பட்ட புகைப்படங்கள் இயக்கப்படவில்லை.",
   "photoLockUnlockFailed": "ஏதோ தவறு நடந்துவிட்டது. மீண்டும் முயலவும்.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "உங்கள் நினைவூட்டல் நேரத்தில், அன்றைய தினம் உரிய அனைத்தையும் பட்டியலிடும் ஒரு அறிவிப்பைப் பெறுங்கள்.",
   "dailyDigestTurnedOn": "உங்கள் நினைவூட்டல்கள் இனி ஒரு தினசரிச் சுருக்கமாக வரும்.",
   "dailyDigestTurnedOff": "ஒவ்வொரு பதிவுக்கும் தனித்தனி நினைவூட்டல்கள் மீண்டும் இயக்கத்தில் உள்ளன.",
-  "dailyDigestTitle": "{count, plural, one{1 பதிவுக்கு உங்கள் கவனம் தேவை} other{{count} பதிவுகளுக்கு உங்கள் கவனம் தேவை}}",
+  "dailyDigestTitle": "{count, plural, one{{count} பதிவுக்கு உங்கள் கவனம் தேவை} other{{count} பதிவுகளுக்கு உங்கள் கவனம் தேவை}}",
   "dailyDigestBody": "விரைவில்: {names}.",
   "dailyDigestBodyMore": "விரைவில்: {names} மற்றும் மேலும் {count}.",
   "dailyDigestLockedRecord": "ஒரு பூட்டிய பதிவு",
   "renewReasonRepeat": "{months, plural, one{நீங்கள் அமைத்த ஒவ்வொரு மாதமும் மீண்டும் வரும் அமைப்பின் அடிப்படையில்} other{நீங்கள் அமைத்த ஒவ்வொரு {months} மாதங்களுக்கும் மீண்டும் வரும் அமைப்பின் அடிப்படையில்}}",
   "renewReasonHistory": "{count, plural, one{உங்கள் கடைசிப் புதுப்பித்தலின் அடிப்படையில்} other{உங்கள் கடைசி {count} புதுப்பித்தல்களின் அடிப்படையில்}}",
-  "renewReasonTypical": "{years, plural, one{பொதுவாக 1 ஆண்டு செல்லுபடியாகும்} other{பொதுவாக {years} ஆண்டுகள் செல்லுபடியாகும்}}",
+  "renewReasonTypical": "{years, plural, one{பொதுவாக {years} ஆண்டு செல்லுபடியாகும்} other{பொதுவாக {years} ஆண்டுகள் செல்லுபடியாகும்}}",
   "renewChangeHint": "தேதியை மாற்ற அதைத் தட்டவும்.",
   "renewPickDate": "புதிய காலாவதி தேதியைத் தேர்ந்தெடுக்கவும்",
   "renewPickDateHint": "உங்கள் புதிய ஆவணத்தில் உள்ள தேதியைத் தேர்ந்தெடுக்கவும்.",
@@ -2134,8 +2123,8 @@
   "lifePlanAutoChanged": "இந்தப் பதிவு மாறியதை Vaultara கண்டது, எனவே முடிந்ததாகக் குறிக்கப்பட்டது.",
   "lifePlanAutoAdded": "இந்தத் திட்டத்தைத் தொடங்கிய பின் சேர்க்கப்பட்டது.",
   "lifePlanProgress": "{total} இல் {done} முடிந்தது",
-  "lifePlanDaysToGo": "{count, plural, =1{இன்னும் 1 நாள்} other{இன்னும் {count} நாட்கள்}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 நாள் முன்பு} other{{count} நாட்கள் முன்பு}}",
+  "lifePlanDaysToGo": "{count, plural, =1{இன்னும் {count} நாள்} other{இன்னும் {count} நாட்கள்}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} நாள் முன்பு} other{{count} நாட்கள் முன்பு}}",
   "lifePlanAllDone": "எல்லாம் முடிந்தது. திட்டத்தை முடிந்ததாகக் குறிக்கலாம்.",
   "lifePlanFinish": "முடிந்ததாகக் குறி",
   "lifePlanReopen": "மீண்டும் திற",
@@ -2264,7 +2253,7 @@
   "lifePlanReadAloudUnavailable": "இந்த போனில் உரக்கப் படிக்கும் வசதி இல்லை.",
   "lifePlanProofPack": "சான்றுத் தொகுப்பை உருவாக்குங்கள்",
   "lifePlanOpenFamily": "குடும்பத்தைத் திற",
-  "lifePlanRemoved": "{count, plural, =1{நீங்கள் நீக்கிய 1 பதிவு ரத்தானதாகக் கணக்கிடப்படும்.} other{நீங்கள் நீக்கிய {count} பதிவுகள் ரத்தானவையாகக் கணக்கிடப்படும்.}}",
+  "lifePlanRemoved": "{count, plural, =1{நீங்கள் நீக்கிய {count} பதிவு ரத்தானதாகக் கணக்கிடப்படும்.} other{நீங்கள் நீக்கிய {count} பதிவுகள் ரத்தானவையாகக் கணக்கிடப்படும்.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} இன்று காலாவதியாகிறது",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} நாளை காலாவதியாகிறது",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} {days} நாளில் காலாவதியாகிறது} other{{recordName} {days} நாட்களில் காலாவதியாகிறது}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} காலாவதியாகிவிட்டது",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "பூட்டிய பதிவு ஒன்றுக்கு உங்கள் கவனம் தேவை",
+  "remLockedBody": "அதன் தேதி {date}. எந்தப் பதிவு என்று பார்க்க Vaultara-வைத் திறக்கவும்.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "உங்கள் \"{recordName}\" பதிவு இன்று காலாவதியாகிறது.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "உங்கள் \"{recordName}\" பதிவு நாளை காலாவதியாகிறது.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "உங்கள் \"{recordName}\" பதிவு {date} அன்று காலாவதியாகிறது.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, உங்கள் \"{recordName}\" பதிவு இன்று காலாவதியாகிறது.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, உங்கள் \"{recordName}\" பதிவு நாளை காலாவதியாகிறது.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, உங்கள் \"{recordName}\" பதிவு {date} அன்று காலாவதியாகிறது.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: \"{recordName}\" பதிவு இன்று காலாவதியாகிறது.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: \"{recordName}\" பதிவு நாளை காலாவதியாகிறது.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: \"{recordName}\" பதிவு {date} அன்று காலாவதியாகிறது.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "உங்கள் \"{recordName}\" பதிவு {date} அன்று காலாவதியானது.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: \"{recordName}\" பதிவு {date} அன்று காலாவதியானது.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "ஏற்கனவே புதுப்பித்தீர்களா? அதன் தேதியைப் புதுப்பிக்கவும்.",
+  "remTipTomorrow": "காலாவதியாகாமல் இருக்க இப்போதே புதுப்பிக்கவும்.",
+  "remTipEarly": "முன்கூட்டியே புதுப்பிப்பது உங்களைப் பாதுகாப்பாக வைக்கிறது.",
+  "remTipLast": "காலாவதியாவதற்கு முன் இதுவே உங்கள் கடைசி நினைவூட்டல்.",
+  "remTipExpired": "புதுப்பிக்கவும், அல்லது ஏற்கனவே செய்திருந்தால் தேதியைப் புதுப்பிக்கவும்.",
+  "remStartBody": "\"{recordName}\" புதுப்பிப்பைத் தொடங்கும் நேரம் இது. இது {date} அன்று காலாவதியாகிறது, எனவே இப்போதே தொடங்கினால் உங்களுக்கு நிறைய நேரம் இருக்கும்.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) புதுப்பிப்பைத் தொடங்கும் நேரம் இது. இது {date} அன்று காலாவதியாகிறது, எனவே இப்போதே தொடங்கினால் நிறைய நேரம் இருக்கும்.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "காலாவதி நினைவூட்டல்கள்",
+  "notifChannelDescription": "உங்கள் பதிவுகள் காலாவதியாகும் முன் நினைவூட்டல்கள்",
+  "notifTestTitle": "சோதனை அறிவிப்பு",
+  "notifTestBody": "Vaultara நினைவூட்டல்கள் இப்படி வரும்.",
+  "notifTestAction": "சோதனை அறிவிப்பை அனுப்பு",
+  "notifTestSubtitle": "நினைவூட்டல்கள் இந்த ஃபோனுக்கு வருகின்றனவா எனச் சரிபார்க்கவும்",
+  "notifTestSent": "சோதனை அனுப்பப்பட்டது. சில வினாடிகளில் வர வேண்டும்.",
+  "notifAfterExpiryTitle": "பதிவு காலாவதியான பின் நினைவூட்டு",
+  "notifAfterExpirySubtitle": "3 மற்றும் 14 நாட்களுக்குப் பிறகு, புதுப்பிக்கப்படவில்லை என்றால்",
+  "notifWeeklyTitle": "திங்கள் சுருக்கம்",
+  "notifWeeklySubtitle": "அந்த வாரம் ஏதாவது காலாவதியாகும்போது திங்கள் காலை ஒரு செய்தி",
+  "notifPushSection": "குடும்பம் மற்றும் புதுப்பிப்புகள்",
+  "notifHouseholdTitle": "பகிரப்பட்ட பதிவுகள்",
+  "notifHouseholdSubtitle": "பகிரப்பட்ட பதிவு காலாவதியாகும் நிலையில் யாரும் புதுப்பிக்காதபோது",
+  "notifUpdatesTitle": "நீங்கள் கேட்ட புதுப்பிப்புகள்",
+  "notifUpdatesSubtitle": "யாராவது ஒரு பதிவின் புதிய விவரங்களை அனுப்பும்போது",
+  "notifSecurityNote": "உங்கள் கணக்கில் புதிய உள்நுழைவுகள் பற்றிய எச்சரிக்கைகள் எப்போதும் அனுப்பப்படும்.",
+  "notifIosHelpTitle": "நினைவூட்டல்கள் வரவில்லையா?",
+  "notifIosHelpSubtitle": "உங்கள் iPhone அமைப்புகளைச் சரிபார்க்கவும்",
+  "notifIosHelpStep1": "அமைப்புகள், பிறகு அறிவிப்புகள், பிறகு Vaultara-வைத் திறந்து, அறிவிப்புகளை அனுமதி என்பதை இயக்கவும்.",
+  "notifIosHelpStep2": "பூட்டுத் திரை, அறிவிப்பு மையம் மற்றும் பேனர்களை இயக்கவும்.",
+  "notifIosHelpStep3": "நீங்கள் ஃபோகஸைப் பயன்படுத்தினால், அனுமதிக்கப்பட்ட ஆப்ஸில் Vaultara-வைச் சேர்க்கவும்.",
+  "notifIosHelpStep4": "சில வாரங்களுக்கு ஒருமுறை Vaultara-வைத் திறக்கவும். iPhone வரவிருக்கும் குறிப்பிட்ட எண்ணிக்கையிலான நினைவூட்டல்களை மட்டுமே வைத்திருக்கும், ஆப்ஸைத் திறப்பது அடுத்தவற்றைத் திட்டமிடும்.",
+  "homeNextUpEmpty": "விரைவில் எதுவும் காலாவதியாகவில்லை. எல்லாம் சரியாக உள்ளது.",
+  "homeDueSoonChip": "{count, plural, one{30 நாட்களில் {count} நிலுவை} other{30 நாட்களில் {count} நிலுவை}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "பின் செய்த வகைகள்"
 }

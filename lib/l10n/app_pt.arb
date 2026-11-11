@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "É ótimo ver você aqui. O Vaultara ajuda a organizar datas e registros importantes em um único lugar seguro.",
   "homeWelcomeSubtitleBack": "Bom vê-lo novamente. O Vaultara está pronto sempre que você quiser revisar suas datas e registros importantes.",
   "homeWelcomeTitle": "Bem-vindo",
-  "summaryAllCaption": "Monitorizados no Vaultara",
-  "summaryExpiredTitle": "Expirado",
-  "summaryExpiredCaption": "Data de expiração ultrapassada",
   "editorNotes": "Notas",
   "editorReminderNone": "Sem lembrete",
   "editorReminderOnExpiry": "Na data de expiração",
@@ -192,7 +189,6 @@
   "addRecord": "Adicionar registo",
   "noRecordsYet": "Ainda não existem registos.",
   "deleteRecordTitle": "Eliminar registo",
-  "summaryAllRecordsTitle": "Todos os registos",
   "noGroupFound": "Ainda não há grupos",
   "groupLabel": "{count, plural, one{{count} grupo} other{{count} grupos}}",
   "recordsLabel": "{count, plural, one{{count} registo} other{{count} registos}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Adicionar notas (opcional)",
   "expiryTimelineTitle": "Linha do tempo de expiração",
   "expiryTimelineSubtitle": "Toque em um mês para ver os registros que expiram nesse mês",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 registro} other{{count} registros}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} registro} other{{count} registros}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Próximos",
-  "summaryUpcomingCaption": "Em 30 dias",
-  "summaryUrgentTitle": "Urgente",
-  "summaryUrgentCaption": "Em 7 dias",
   "profileHeaderTitle": "Perfil",
   "profileTutorialsTitle": "Tutoriais",
   "profileTutorialsSubtitle": "Explore os Tutoriais da App",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Sem lembrete",
   "reminderOnExpiry": "Na data de validade",
-  "reminderDaysBefore": "{days, plural, one{1 dia antes} other{{days} dias antes}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dia antes} other{{days} dias antes}}",
   "reminderCustomDaysTitle": "Introduza dias personalizados",
   "reminderCascadeTitle": "Lembretes em cascata",
   "reminderCascadeSubtitle": "Receba várias notificações antes de um registo caducar",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Adicione o seu primeiro registo",
   "smartInsightNoRecordsBody": "Comece a acompanhar os seus registos e a Vaultara apresentará informações inteligentes aqui.",
   "smartInsightExpiresTodaySingleBody": "{name} expira hoje. Se já o renovou, atualize a data aqui.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} expiram hoje.} =1{{names} e mais 1 registo expiram hoje.} other{{names} e mais {extra} registos expiram hoje.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} expiram hoje.} =1{{names} e mais {extra} registo expiram hoje.} other{{names} e mais {extra} registos expiram hoje.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} expira amanhã e não tem lembrete. Defina um para não se esquecer.} other{{name} expira a {date} e não tem lembrete. Defina um para não se esquecer.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} expira a {dateA} e {b} a {dateB}, aproximadamente ao mesmo tempo. É fácil esquecer-se de um quando dois registos estão tão próximos.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} e {c} expiram até {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer-se de um quando vários estão tão próximos.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} e mais 1 registo expiram até {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer-se de um quando vários estão tão próximos.} other{{a}, {b} e mais {extra} registos expiram até {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer-se de um quando vários estão tão próximos.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} e mais {extra} registo expiram até {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer-se de um quando vários estão tão próximos.} other{{a}, {b} e mais {extra} registos expiram até {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer-se de um quando vários estão tão próximos.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Nada expira no dia seguinte. O seu próximo vencimento é a {date}.} other{Nada expira nos próximos {days} dias. O seu próximo vencimento é a {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 dos seus registos de {category} expira a {date}. É fácil de passar por alto.} other{{count} dos seus registos de {category} expiram até {date}. É fácil esquecer-se de um quando estão agrupados desta forma.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 próximo vencimento está coberto por um lembrete. Nada mais requer a sua atenção.} other{{count} próximos vencimentos estão cobertos por lembretes. Nada mais requer a sua atenção.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} dos seus registos de {category} expira a {date}. É fácil de passar por alto.} other{{count} dos seus registos de {category} expiram até {date}. É fácil esquecer-se de um quando estão agrupados desta forma.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} próximo vencimento está coberto por um lembrete. Nada mais requer a sua atenção.} other{{count} próximos vencimentos estão cobertos por lembretes. Nada mais requer a sua atenção.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Tudo atualizado. Nada requer a sua atenção de momento.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Nada é urgente de momento, mas 1 próximo registo ainda não tem lembrete.} other{Nada é urgente de momento, mas {count} próximos registos ainda não têm lembrete.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Nada é urgente de momento, mas {count} próximo registo ainda não tem lembrete.} other{Nada é urgente de momento, mas {count} próximos registos ainda não têm lembrete.}}",
   "smartInsightCloseExpiriesHeading": "Expiram aproximadamente ao mesmo tempo",
   "plansHeadline": "Tenha o Vaultara completo",
   "plansSubhead": "Registos ilimitados, os seus próprios grupos e lembretes configurados exatamente como deseja.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Eliminar",
   "reminderCascadeDuplicate": "Outro lembrete já utiliza este dia",
   "reminderCascadeOutOfRange": "Introduza entre {min} e {max} dias",
-  "reminderCascadeStepLabel": "Lembrete {position}: {days, plural, =1{1 dia} other{{days} dias}} antes",
+  "reminderCascadeStepLabel": "Lembrete {position}: {days, plural, =1{{days} dia} other{{days} dias}} antes",
   "expiryTimelineNotReady": "A sua linha do tempo aparecerá assim que tiver registos a expirar em alguns meses diferentes.",
   "verifyEmailResendIn": "Reenviar em {seconds}s",
   "verifyEmailSpamHint": "Não recebeu? Verifique a sua pasta de spam ou de correio indesejado.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Esta conta não está verificada. Sair agora irá removê-la e poderá registar-se novamente com qualquer endereço de e-mail.",
   "verifyEmailDiscardAction": "Descartar",
   "verifyEmailKeepWaiting": "Continuar a esperar",
-  "expiringBadge": "{count, plural, =1{1 a expirar em breve} other{{count} a expirar em breve}}",
+  "expiringBadge": "{count, plural, =1{{count} a expirar em breve} other{{count} a expirar em breve}}",
   "noRecordsToday": "Nada expira hoje",
   "noRecordsTomorrow": "Nada expira amanhã",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} expira hoje} =1{{recordName} expira amanhã} other{{recordName} expira em {days} dias}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, o seu {recordName} expira hoje. Já o renovou? Atualize a data de expiração.} =1{{firstName}, o seu {recordName} expira amanhã. Renove-o agora para não expirar.} other{{firstName}, o seu {recordName} expira em {date}. Renovar com antecedência mantém você coberto.}}",
   "cascadeFinalStepTitle": "Último lembrete: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, o seu {recordName} expira {days, plural, =1{amanhã} other{em {days} dias, em {date}}}. Este é o seu último lembrete, renove-o ou atualize a data.",
   "notificationsTitle": "Notificações",
   "notificationsProfileEnabledSubtitle": "Os lembretes chegam às {time}.",
   "notificationsProfileDisabledSubtitle": "As notificações estão desativadas.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "Receba uma notificação à hora do lembrete com tudo o que termina nesse dia.",
   "dailyDigestTurnedOn": "Os seus lembretes agora chegam num resumo diário.",
   "dailyDigestTurnedOff": "Os lembretes separados para cada registo voltaram.",
-  "dailyDigestTitle": "{count, plural, one{1 registo precisa da sua atenção} other{{count} registos precisam da sua atenção}}",
+  "dailyDigestTitle": "{count, plural, one{{count} registo precisa da sua atenção} other{{count} registos precisam da sua atenção}}",
   "dailyDigestBody": "A seguir: {names}.",
   "dailyDigestBodyMore": "A seguir: {names} e mais {count}.",
   "dailyDigestLockedRecord": "um registo bloqueado",
   "renewReasonRepeat": "{months, plural, one{Com base na sua repetição a cada mês} other{Com base na sua repetição a cada {months} meses}}",
   "renewReasonHistory": "{count, plural, one{Com base na sua última renovação} other{Com base nas suas últimas {count} renovações}}",
-  "renewReasonTypical": "{years, plural, one{Normalmente válido por 1 ano} other{Normalmente válido por {years} anos}}",
+  "renewReasonTypical": "{years, plural, one{Normalmente válido por {years} ano} other{Normalmente válido por {years} anos}}",
   "renewChangeHint": "Toque na data para a alterar.",
   "renewPickDate": "Escolha a nova data de expiração",
   "renewPickDateHint": "Escolha a data indicada no seu novo documento.",
@@ -2134,8 +2123,8 @@
   "lifePlanAutoChanged": "A Vaultara viu que este registo mudou, por isso está marcado como feito.",
   "lifePlanAutoAdded": "Adicionado depois de começar este plano.",
   "lifePlanProgress": "{done} de {total} feitos",
-  "lifePlanDaysToGo": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Há 1 dia} other{Há {count} dias}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Falta {count} dia} other{Faltam {count} dias}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Há {count} dia} other{Há {count} dias}}",
   "lifePlanAllDone": "Está tudo feito. Pode marcar o plano como concluído.",
   "lifePlanFinish": "Marcar como concluído",
   "lifePlanReopen": "Abrir de novo",
@@ -2264,7 +2253,7 @@
   "lifePlanReadAloudUnavailable": "A leitura em voz alta não está disponível neste telemóvel.",
   "lifePlanProofPack": "Criar um pacote de comprovativos",
   "lifePlanOpenFamily": "Abrir Família",
-  "lifePlanRemoved": "{count, plural, =1{1 registo que apagou conta como cancelado.} other{{count} registos que apagou contam como cancelados.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} registo que apagou conta como cancelado.} other{{count} registos que apagou contam como cancelados.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2322,7 +2311,7 @@
   "lostWalletCheckupBody": "Prepare-se agora, para não se esquecer de nada se a perder.",
   "lostWalletCheckupAllGood": "Tudo pronto. Se algum dia a perder, está preparado.",
   "lostWalletSetPlaceBody": "Abra um cartão ou documento e escolha onde o guarda. Faça isto para o seu documento de identificação, carta de condução e cartões.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 item não tem foto. Uma foto torna a substituição mais rápida.} other{{count} itens não têm foto. Fotos tornam a substituição mais rápida.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} item não tem foto. Uma foto torna a substituição mais rápida.} other{{count} itens não têm foto. Fotos tornam a substituição mais rápida.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2330,7 +2319,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 cartão não tem telefone para cartão perdido.} other{{count} cartões não têm telefone para cartão perdido.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} cartão não tem telefone para cartão perdido.} other{{count} cartões não têm telefone para cartão perdido.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2430,7 +2419,7 @@
     }
   },
   "lostWalletReportNoCase": "Número do auto: ainda não participado",
-  "lostWalletReportCount": "{count, plural, =1{1 item listado abaixo} other{{count} itens listados abaixo}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} item listado abaixo} other{{count} itens listados abaixo}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2465,7 +2454,7 @@
   "tutorialsGroupTravelFamily": "Viagens e família",
   "tutorialsGroupEmergencies": "Acontecimentos de vida e emergências",
   "tutorialsGroupPaid": "Funcionalidades pagas",
-  "tutorialsSteps": "{count, plural, =1{1 passo} other{{count} passos}}",
+  "tutorialsSteps": "{count, plural, =1{{count} passo} other{{count} passos}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} expira hoje",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} expira amanhã",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} expira daqui a {days} dia} other{{recordName} expira daqui a {days} dias}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} expirou",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Um registo bloqueado precisa da sua atenção",
+  "remLockedBody": "A data é {date}. Desbloqueie o Vaultara para ver qual é o registo.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "O seu registo \"{recordName}\" expira hoje.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "O seu registo \"{recordName}\" expira amanhã.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "O seu registo \"{recordName}\" expira em {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, o seu registo \"{recordName}\" expira hoje.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, o seu registo \"{recordName}\" expira amanhã.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, o seu registo \"{recordName}\" expira em {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "O registo \"{recordName}\" de {person} expira hoje.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "O registo \"{recordName}\" de {person} expira amanhã.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "O registo \"{recordName}\" de {person} expira em {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "O seu registo \"{recordName}\" expirou em {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "O registo \"{recordName}\" de {person} expirou em {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Já renovou? Atualize a data.",
+  "remTipTomorrow": "Renove agora para não caducar.",
+  "remTipEarly": "Renovar cedo mantém-no coberto.",
+  "remTipLast": "Este é o seu último lembrete antes de expirar.",
+  "remTipExpired": "Renove, ou atualize a data se já o fez.",
+  "remStartBody": "Está na hora de começar a renovar \"{recordName}\". Expira em {date}, por isso começar agora dá-lhe tempo de sobra.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Está na hora de começar a renovar \"{recordName}\" de {person}. Expira em {date}, por isso começar agora dá tempo de sobra.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Lembretes de validade",
+  "notifChannelDescription": "Lembretes antes de os seus registos expirarem",
+  "notifTestTitle": "Notificação de teste",
+  "notifTestBody": "Os lembretes do Vaultara chegam assim.",
+  "notifTestAction": "Enviar uma notificação de teste",
+  "notifTestSubtitle": "Confirme que os lembretes chegam a este telemóvel",
+  "notifTestSent": "Teste enviado. Deve chegar dentro de segundos.",
+  "notifAfterExpiryTitle": "Lembrar-me depois de expirar",
+  "notifAfterExpirySubtitle": "3 e 14 dias depois, se não tiver sido renovado",
+  "notifWeeklyTitle": "Resumo de segunda-feira",
+  "notifWeeklySubtitle": "Um aviso na segunda de manhã quando algo expira nessa semana",
+  "notifPushSection": "Agregado e atualizações",
+  "notifHouseholdTitle": "Registos partilhados",
+  "notifHouseholdSubtitle": "Quando um registo partilhado está quase a expirar e ninguém o renovou",
+  "notifUpdatesTitle": "Atualizações que pediu",
+  "notifUpdatesSubtitle": "Quando alguém envia os novos dados de um registo",
+  "notifSecurityNote": "Os alertas de novos inícios de sessão na sua conta são sempre enviados.",
+  "notifIosHelpTitle": "Não recebe lembretes?",
+  "notifIosHelpSubtitle": "Verifique as definições do iPhone",
+  "notifIosHelpStep1": "Abra Definições, depois Notificações, depois Vaultara, e ative Permitir notificações.",
+  "notifIosHelpStep2": "Ative Ecrã bloqueado, Central de notificações e Faixas.",
+  "notifIosHelpStep3": "Se usar um modo de foco, adicione o Vaultara às apps permitidas.",
+  "notifIosHelpStep4": "Abra o Vaultara de poucas em poucas semanas. O iPhone só guarda um número limitado de lembretes futuros, e abrir a app agenda os seguintes.",
+  "homeNextUpEmpty": "Nada expira em breve. Está tudo em dia.",
+  "homeDueSoonChip": "{count, plural, one{{count} expira em 30 dias} other{{count} expiram em 30 dias}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Categorias fixadas"
 }

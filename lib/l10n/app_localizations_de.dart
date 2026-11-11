@@ -360,15 +360,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Schön, dich wiederzusehen. Vaultara ist da, wenn du deine wichtigen Daten und Einträge überprüfen möchtest.';
 
   @override
-  String get summaryAllCaption => 'In Vaultara verfolgt';
-
-  @override
-  String get summaryExpiredTitle => 'Abgelaufen';
-
-  @override
-  String get summaryExpiredCaption => 'Ablaufdatum überschritten';
-
-  @override
   String get editorNotes => 'Notizen';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Eintrag löschen';
-
-  @override
-  String get summaryAllRecordsTitle => 'Alle Einträge';
 
   @override
   String get noGroupFound => 'Noch keine Gruppen';
@@ -829,22 +817,10 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Einträge',
-      one: '1 Eintrag',
+      one: '$count Eintrag',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Bevorstehend';
-
-  @override
-  String get summaryUpcomingCaption => 'Innerhalb von 30 Tagen';
-
-  @override
-  String get summaryUrgentTitle => 'Dringend';
-
-  @override
-  String get summaryUrgentCaption => 'Innerhalb von 7 Tagen';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -945,7 +921,7 @@ class AppLocalizationsDe extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days Tage vorher',
-      one: '1 Tag vorher',
+      one: '$days Tag vorher',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsDe extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names und $extra weitere Einträge laufen heute ab.',
-      one: '$names und 1 weiterer Eintrag laufen heute ab.',
+      one: '$names und $extra weiterer Eintrag laufen heute ab.',
       zero: '$names laufen heute ab.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsDe extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b und $extra weitere Einträge laufen vor dem $lastDate ab, etwa zur gleichen Zeit. Wenn mehrere Einträge so nah beieinanderliegen, vergisst man leicht einen davon.',
-      one: '$a, $b und 1 weiterer Eintrag laufen vor dem $lastDate ab, etwa zur gleichen Zeit. Wenn mehrere Einträge so nah beieinanderliegen, vergisst man leicht einen davon.',
+      one: '$a, $b und $extra weiterer Eintrag laufen vor dem $lastDate ab, etwa zur gleichen Zeit. Wenn mehrere Einträge so nah beieinanderliegen, vergisst man leicht einen davon.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count deiner Einträge in der Kategorie $category laufen vor dem $date ab. Wenn sie so gebündelt sind, vergisst man leicht einen davon.',
-      one: '1 deiner Einträge in der Kategorie $category läuft am $date ab. Das übersieht man leicht.',
+      one: '$count deiner Einträge in der Kategorie $category läuft am $date ab. Das übersieht man leicht.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bevorstehende Abläufe sind durch Erinnerungen abgedeckt. Sonst erfordert nichts deine Aufmerksamkeit.',
-      one: '1 bevorstehender Ablauf ist durch eine Erinnerung abgedeckt. Sonst erfordert nichts deine Aufmerksamkeit.',
+      one: '$count bevorstehender Ablauf ist durch eine Erinnerung abgedeckt. Sonst erfordert nichts deine Aufmerksamkeit.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Im Moment ist nichts dringend, aber $count bevorstehende Einträge haben noch keine Erinnerung.',
-      one: 'Im Moment ist nichts dringend, aber 1 bevorstehender Eintrag hat noch keine Erinnerung.',
+      one: 'Im Moment ist nichts dringend, aber $count bevorstehender Eintrag hat noch keine Erinnerung.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsDe extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days Tage',
-      one: '1 Tag',
+      one: '$days Tag',
     );
     return 'Erinnerung $position: $_temp0 vorher';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count laufen bald ab',
-      one: '1 läuft bald ab',
+      one: '$count läuft bald ab',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsDe extends AppLocalizations {
   String get noRecordsTomorrow => 'Morgen läuft nichts ab';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName läuft in $days Tagen ab',
-      one: '$recordName läuft morgen ab',
-      zero: '$recordName läuft heute ab',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, dein $recordName läuft am $date ab. Eine frühzeitige Verlängerung schützt dich.',
-      one: '$firstName, dein $recordName läuft morgen ab. Verlängere ihn jetzt, damit er nicht abläuft.',
-      zero: '$firstName, dein $recordName läuft heute ab. Bereits verlängert? Aktualisiere das Ablaufdatum.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Letzte Erinnerung: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'in $days Tagen, am $date',
-      one: 'morgen',
-    );
-    return '$firstName, dein $recordName läuft $_temp0 ab. Dies ist deine letzte Erinnerung, verlängere ihn oder aktualisiere das Datum.';
   }
 
   @override
@@ -1532,7 +1473,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Für $count anstehende Einträge fehlen noch die Kosten.',
-      one: 'Für 1 anstehenden Eintrag fehlen noch die Kosten.',
+      one: 'Für $count anstehenden Eintrag fehlen noch die Kosten.',
     );
     return '$_temp0';
   }
@@ -1566,7 +1507,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Einträge',
-      one: '1 Eintrag',
+      one: '$count Eintrag',
       zero: 'Keine Einträge',
     );
     return '$_temp0';
@@ -1622,7 +1563,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Bis zu $count Personen',
-      one: 'Bis zu 1 Person',
+      one: 'Bis zu $count Person',
     );
     return '$_temp0';
   }
@@ -1639,7 +1580,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Bis zu $count Personen hinzufügen',
-      one: '1 Person hinzufügen',
+      one: '$count Person hinzufügen',
     );
     return '$_temp0';
   }
@@ -2223,7 +2164,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Einträge',
-      one: '1 Eintrag',
+      one: '$count Eintrag',
     );
     return '$_temp0';
   }
@@ -2254,7 +2195,7 @@ class AppLocalizationsDe extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days-tägige Reise',
-      one: '1-tägige Reise',
+      one: '$days-tägige Reise',
     );
     return '$_temp0';
   }
@@ -2327,7 +2268,7 @@ class AppLocalizationsDe extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months Monate',
-      one: '1 Monat',
+      one: '$months Monat',
     );
     return '$name läuft am $date ab. Viele Länder verlangen nach deiner Rückkehr noch $_temp0 Gültigkeit.';
   }
@@ -2343,7 +2284,7 @@ class AppLocalizationsDe extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days Tage nach Reisebeginn',
-      one: '1 Tag nach Reisebeginn',
+      one: '$days Tag nach Reisebeginn',
       zero: 'am Tag deiner Abreise',
     );
     return '$name läuft am $date ab, $_temp0.';
@@ -2708,7 +2649,7 @@ class AppLocalizationsDe extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit Fotos',
-      one: '1 Foto',
+      one: '$limit Foto',
     );
     return 'Im kostenlosen Abo kannst du jedem Eintrag $_temp0 hinzufügen. Mit Premium sind es bis zu $premiumLimit.';
   }
@@ -2744,7 +2685,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Fotos',
-      one: '1 Foto',
+      one: '$count Foto',
     );
     return '$_temp0';
   }
@@ -4006,7 +3947,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Fotos sind noch nicht verschlüsselt',
-      one: '1 Foto ist noch nicht verschlüsselt',
+      one: '$count Foto ist noch nicht verschlüsselt',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Du hast $count Fotos, die noch nicht verschlüsselt sind. Wir können sie jetzt verschlüsseln.',
-      one: 'Du hast 1 Foto, das noch nicht verschlüsselt ist. Wir können es jetzt verschlüsseln.',
+      one: 'Du hast $count Foto, das noch nicht verschlüsselt ist. Wir können es jetzt verschlüsseln.',
     );
     return '$_temp0 Lass Vaultara geöffnet, bis der Vorgang fertig ist.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsDe extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Zu viele Versuche. Bitte warte $seconds Sekunden und versuche es erneut.',
-      one: 'Zu viele Versuche. Bitte warte 1 Sekunde und versuche es erneut.',
+      one: 'Zu viele Versuche. Bitte warte $seconds Sekunde und versuche es erneut.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsDe extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Zu viele Versuche. Bitte warte $minutes Minuten und versuche es erneut.',
-      one: 'Zu viele Versuche. Bitte warte 1 Minute und versuche es erneut.',
+      one: 'Zu viele Versuche. Bitte warte $minutes Minute und versuche es erneut.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Einträge brauchen deine Aufmerksamkeit',
-      one: '1 Eintrag braucht deine Aufmerksamkeit',
+      one: '$count Eintrag braucht deine Aufmerksamkeit',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsDe extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Meist $years Jahre gültig',
-      one: 'Meist 1 Jahr gültig',
+      one: 'Meist $years Jahr gültig',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'vor $count Minuten',
-      one: 'vor 1 Minute',
+      one: 'vor $count Minute',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'vor $count Stunden',
-      one: 'vor 1 Stunde',
+      one: 'vor $count Stunde',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'vor $count Tagen',
-      one: 'vor 1 Tag',
+      one: 'vor $count Tag',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Noch $count Tage',
-      one: 'Noch 1 Tag',
+      one: 'Noch $count Tag',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Vor $count Tagen',
-      one: 'Vor 1 Tag',
+      one: 'Vor $count Tag',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count von Ihnen gelöschte Einträge zählen als gekündigt.',
-      one: '1 von Ihnen gelöschter Eintrag zählt als gekündigt.',
+      one: '$count von Ihnen gelöschter Eintrag zählt als gekündigt.',
     );
     return '$_temp0';
   }
@@ -7302,7 +7243,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Einträge haben kein Foto. Mit Fotos geht der Ersatz schneller.',
-      one: '1 Eintrag hat kein Foto. Mit Foto geht der Ersatz schneller.',
+      one: '$count Eintrag hat kein Foto. Mit Foto geht der Ersatz schneller.',
     );
     return '$_temp0';
   }
@@ -7313,7 +7254,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Für $count Karten ist keine Sperrnummer gespeichert.',
-      one: 'Für 1 Karte ist keine Sperrnummer gespeichert.',
+      one: 'Für $count Karte ist keine Sperrnummer gespeichert.',
     );
     return '$_temp0';
   }
@@ -7492,7 +7433,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Einträge unten aufgeführt',
-      one: '1 Eintrag unten aufgeführt',
+      one: '$count Eintrag unten aufgeführt',
     );
     return '$_temp0';
   }
@@ -7584,7 +7525,7 @@ class AppLocalizationsDe extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count Schritte',
-      one: '1 Schritt',
+      one: '$count Schritt',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsDe extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Erinnerung: $name läuft am $date ab';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName läuft heute ab';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName läuft morgen ab';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName läuft in $days Tagen ab',
+      one: '$recordName läuft in $days Tag ab',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName ist abgelaufen';
+  }
+
+  @override
+  String get remLockedTitle => 'Ein gesperrter Eintrag braucht deine Aufmerksamkeit';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Sein Datum ist der $date. Entsperre Vaultara, um zu sehen, welcher Eintrag es ist.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Dein Eintrag „$recordName“ läuft heute ab.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Dein Eintrag „$recordName“ läuft morgen ab.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Dein Eintrag „$recordName“ läuft am $date ab.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, dein Eintrag „$recordName“ läuft heute ab.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, dein Eintrag „$recordName“ läuft morgen ab.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, dein Eintrag „$recordName“ läuft am $date ab.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Der Eintrag „$recordName“ von $person läuft heute ab.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Der Eintrag „$recordName“ von $person läuft morgen ab.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Der Eintrag „$recordName“ von $person läuft am $date ab.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Dein Eintrag „$recordName“ ist am $date abgelaufen.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Der Eintrag „$recordName“ von $person ist am $date abgelaufen.';
+  }
+
+  @override
+  String get remTipToday => 'Schon verlängert? Aktualisiere das Datum.';
+
+  @override
+  String get remTipTomorrow => 'Verlängere jetzt, damit nichts abläuft.';
+
+  @override
+  String get remTipEarly => 'Wer früh verlängert, bleibt abgesichert.';
+
+  @override
+  String get remTipLast => 'Das ist deine letzte Erinnerung vor dem Ablauf.';
+
+  @override
+  String get remTipExpired => 'Verlängere jetzt oder aktualisiere das Datum, falls schon erledigt.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Es ist Zeit, die Verlängerung von „$recordName“ zu beginnen. Der Eintrag läuft am $date ab, mit einem Start jetzt hast du viel Zeit.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Es ist Zeit, die Verlängerung von „$recordName“ von $person zu beginnen. Der Eintrag läuft am $date ab, mit einem Start jetzt bleibt viel Zeit.';
+  }
+
+  @override
+  String get notifChannelName => 'Ablauferinnerungen';
+
+  @override
+  String get notifChannelDescription => 'Erinnerungen, bevor deine Einträge ablaufen';
+
+  @override
+  String get notifTestTitle => 'Testbenachrichtigung';
+
+  @override
+  String get notifTestBody => 'So kommen Erinnerungen von Vaultara an.';
+
+  @override
+  String get notifTestAction => 'Testbenachrichtigung senden';
+
+  @override
+  String get notifTestSubtitle => 'Prüfen, ob Erinnerungen auf diesem Telefon ankommen';
+
+  @override
+  String get notifTestSent => 'Test gesendet. Er sollte in wenigen Sekunden ankommen.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Nach dem Ablauf eines Eintrags erinnern';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 und 14 Tage danach, falls er nicht verlängert wurde';
+
+  @override
+  String get notifWeeklyTitle => 'Montagsübersicht';
+
+  @override
+  String get notifWeeklySubtitle => 'Ein Hinweis am Montagmorgen, wenn in der Woche etwas abläuft';
+
+  @override
+  String get notifPushSection => 'Haushalt und Updates';
+
+  @override
+  String get notifHouseholdTitle => 'Geteilte Einträge';
+
+  @override
+  String get notifHouseholdSubtitle => 'Wenn ein geteilter Eintrag bald abläuft und ihn niemand verlängert hat';
+
+  @override
+  String get notifUpdatesTitle => 'Angeforderte Updates';
+
+  @override
+  String get notifUpdatesSubtitle => 'Wenn jemand die neuen Daten eines Eintrags schickt';
+
+  @override
+  String get notifSecurityNote => 'Hinweise zu neuen Anmeldungen bei deinem Konto werden immer gesendet.';
+
+  @override
+  String get notifIosHelpTitle => 'Keine Erinnerungen erhalten?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Prüfe die Einstellungen deines iPhones';
+
+  @override
+  String get notifIosHelpStep1 => 'Öffne Einstellungen, dann Mitteilungen, dann Vaultara, und aktiviere Mitteilungen erlauben.';
+
+  @override
+  String get notifIosHelpStep2 => 'Aktiviere Sperrbildschirm, Mitteilungszentrale und Banner.';
+
+  @override
+  String get notifIosHelpStep3 => 'Wenn du einen Fokus nutzt, füge Vaultara zu den erlaubten Apps hinzu.';
+
+  @override
+  String get notifIosHelpStep4 => 'Öffne Vaultara alle paar Wochen. iPhones speichern nur eine begrenzte Zahl künftiger Erinnerungen, und beim Öffnen plant die App die nächsten.';
+
+  @override
+  String get homeNextUpEmpty => 'Bald läuft nichts ab. Alles erledigt.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count in 30 Tagen fällig',
+      one: '$count in 30 Tagen fällig',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Angeheftete Kategorien';
 }

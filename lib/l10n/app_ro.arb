@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Ne bucurăm să te vedem aici. Vaultara te ajută să organizezi datele și înregistrările importante într-un singur loc sigur.",
   "homeWelcomeSubtitleBack": "Bine ai revenit. Vaultara este gata oricând dorești să revizuiești datele și înregistrările tale importante.",
   "homeWelcomeTitle": "Bun venit",
-  "summaryAllCaption": "Urmărite în Vaultara",
-  "summaryExpiredTitle": "Expirat",
-  "summaryExpiredCaption": "Data de expirare a trecut",
   "editorNotes": "Note",
   "editorReminderNone": "Fără memento",
   "editorReminderOnExpiry": "La data expirării",
@@ -192,7 +189,6 @@
   "addRecord": "Adaugă înregistrare",
   "noRecordsYet": "Nu există încă înregistrări.",
   "deleteRecordTitle": "Șterge înregistrare",
-  "summaryAllRecordsTitle": "Toate înregistrările",
   "noGroupFound": "Nu există încă grupuri",
   "groupLabel": "{count, plural, one{{count} grup} few{{count} grupuri} other{{count} de grupuri}}",
   "recordsLabel": "{count, plural, one{{count} înregistrare} few{{count} înregistrări} other{{count} de înregistrări}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Adaugă note (opțional)",
   "expiryTimelineTitle": "Cronologie expirare",
   "expiryTimelineSubtitle": "Atinge o lună pentru a vedea înregistrările care expiră în acea lună",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 înregistrare} few{{count} înregistrări} other{{count} de înregistrări}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} înregistrare} few{{count} înregistrări} other{{count} de înregistrări}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Apropiate",
-  "summaryUpcomingCaption": "În 30 de zile",
-  "summaryUrgentTitle": "Urgent",
-  "summaryUrgentCaption": "În 7 zile",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Tutoriale",
   "profileTutorialsSubtitle": "Răsfoiește Tutorialele Aplicației",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Fără memento",
   "reminderOnExpiry": "La data expirării",
-  "reminderDaysBefore": "{days, plural, one{1 zi înainte} few{{days} zile înainte} other{{days} de zile înainte}}",
+  "reminderDaysBefore": "{days, plural, one{{days} zi înainte} few{{days} zile înainte} other{{days} de zile înainte}}",
   "reminderCustomDaysTitle": "Introdu zile personalizate",
   "reminderCascadeTitle": "Memento-uri în cascadă",
   "reminderCascadeSubtitle": "Primește mai multe notificări înainte ca o înregistrare să expire",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Adaugă prima ta înregistrare",
   "smartInsightNoRecordsBody": "Începe să îți monitorizezi înregistrările, iar Vaultara va afișa informații inteligente aici.",
   "smartInsightExpiresTodaySingleBody": "{name} expiră astăzi. Dacă l-ai reînnoit deja, actualizează data aici.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} expiră astăzi.} =1{{names} și încă 1 expiră astăzi.} other{{names} și încă {extra} expiră astăzi.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} expiră astăzi.} =1{{names} și încă {extra} expiră astăzi.} other{{names} și încă {extra} expiră astăzi.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} expiră mâine și nu are memento. Setează unul pentru a nu-l rata.} other{{name} expiră pe {date} și nu are memento. Setează unul pentru a nu-l rata.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} expiră pe {dateA} și {b} pe {dateB}, cam în același timp. Este ușor să uiți una când două înregistrări sunt atât de apropiate.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} și {c} expiră până pe {lastDate}, cam în același timp. Este ușor să uiți unul când mai multe sunt atât de apropiate.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} și încă 1 expiră până pe {lastDate}, cam în același timp. Este ușor să uiți unul când mai multe sunt atât de apropiate.} other{{a}, {b} și încă {extra} expiră până pe {lastDate}, cam în același timp. Este ușor să uiți unul când mai multe sunt atât de apropiate.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} și încă {extra} expiră până pe {lastDate}, cam în același timp. Este ușor să uiți unul când mai multe sunt atât de apropiate.} other{{a}, {b} și încă {extra} expiră până pe {lastDate}, cam în același timp. Este ușor să uiți unul când mai multe sunt atât de apropiate.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Nimic nu expiră în următoarea zi. Următorul termen este pe {date}.} other{Nimic nu expiră în următoarele {days} zile. Următorul termen este pe {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 dintre înregistrările tale din categoria {category} expiră pe {date}. Este ușor de omis.} other{{count} dintre înregistrările tale din categoria {category} expiră până pe {date}. Este ușor să uiți una când sunt grupate astfel.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 expirare viitoare este acoperită de un memento. Nimic altceva nu necesită atenția ta.} other{{count} expirări viitoare sunt acoperite de memento-uri. Nimic altceva nu necesită atenția ta.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} dintre înregistrările tale din categoria {category} expiră pe {date}. Este ușor de omis.} other{{count} dintre înregistrările tale din categoria {category} expiră până pe {date}. Este ușor să uiți una când sunt grupate astfel.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} expirare viitoare este acoperită de un memento. Nimic altceva nu necesită atenția ta.} other{{count} expirări viitoare sunt acoperite de memento-uri. Nimic altceva nu necesită atenția ta.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Totul este la zi. Nimic nu necesită atenția ta în acest moment.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Nimic nu este urgent momentan, dar 1 înregistrare viitoare nu are încă memento.} other{Nimic nu este urgent momentan, dar {count} înregistrări viitoare nu au încă memento.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Nimic nu este urgent momentan, dar {count} înregistrare viitoare nu are încă memento.} other{Nimic nu este urgent momentan, dar {count} înregistrări viitoare nu au încă memento.}}",
   "smartInsightCloseExpiriesHeading": "Expiră cam în același timp",
   "plansHeadline": "Obține experiența completă Vaultara",
   "plansSubhead": "Înregistrări nelimitate, propriile grupuri și mementouri configurate exact așa cum vrei.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Elimină",
   "reminderCascadeDuplicate": "Un alt memento folosește deja această zi",
   "reminderCascadeOutOfRange": "Introdu între {min} și {max} zile",
-  "reminderCascadeStepLabel": "Memento {position}: cu {days, plural, =1{1 zi} few{{days} zile} other{{days} de zile}} înainte",
+  "reminderCascadeStepLabel": "Memento {position}: cu {days, plural, =1{{days} zi} few{{days} zile} other{{days} de zile}} înainte",
   "expiryTimelineNotReady": "Cronologia ta va apărea de îndată ce vei avea înregistrări care expiră în câteva luni diferite.",
   "verifyEmailResendIn": "Retrimite în {seconds}s",
   "verifyEmailSpamHint": "Nu este acolo? Verifică folderul de spam sau junk.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Acest cont nu este verificat. Dacă pleci acum, contul va fi șters, iar tu te vei putea înregistra din nou cu orice adresă de e-mail.",
   "verifyEmailDiscardAction": "Renunță",
   "verifyEmailKeepWaiting": "Continuă să aștepți",
-  "expiringBadge": "{count, plural, =1{1 expiră în curând} few{{count} expiră în curând} other{{count} expiră în curând}}",
+  "expiringBadge": "{count, plural, =1{{count} expiră în curând} few{{count} expiră în curând} other{{count} expiră în curând}}",
   "noRecordsToday": "Nimic nu expiră astăzi",
   "noRecordsTomorrow": "Nimic nu expiră mâine",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} expiră astăzi} =1{{recordName} expiră mâine} few{{recordName} expiră în {days} zile} other{{recordName} expiră în {days} de zile}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} expiră astăzi. L-ai reînnoit deja? Actualizează data de expirare.} =1{{firstName}, {recordName} expiră mâine. Reînnoiește-l acum pentru a nu expira.} few{{firstName}, {recordName} expiră pe {date}. Reînnoirea timpurie te menține protejat.} other{{firstName}, {recordName} expiră pe {date}. Reînnoirea timpurie te menține protejat.}}",
   "cascadeFinalStepTitle": "Ultimul memento: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} expiră {days, plural, =1{mâine} few{în {days} zile, pe {date}} other{în {days} de zile, pe {date}}}. Acesta este ultimul tău memento, reînnoiește-l sau actualizează data.",
   "notificationsTitle": "Notificări",
   "notificationsProfileEnabledSubtitle": "Mementourile sosesc la ora {time}.",
   "notificationsProfileDisabledSubtitle": "Notificările sunt dezactivate.",
@@ -1349,7 +1338,7 @@
   "photoLockTurnOn": "Activează fotografiile criptate",
   "photoLockStatusOn": "Fotografiile criptate sunt active",
   "photoLockStatusOnBody": "Fotografiile noi sunt criptate pe acest telefon înainte să fie încărcate.",
-  "photoLockPendingTitle": "{count, plural, one{1 fotografie nu este încă criptată} few{{count} fotografii nu sunt încă criptate} other{{count} de fotografii nu sunt încă criptate}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} fotografie nu este încă criptată} few{{count} fotografii nu sunt încă criptate} other{{count} de fotografii nu sunt încă criptate}}",
   "photoLockPendingBody": "Fotografiile adăugate înainte de activare sunt încă stocate în mod obișnuit.",
   "photoLockEncryptExisting": "Criptează fotografiile existente",
   "photoLockKeepOpen": "Ține Vaultara deschis până se termină.",
@@ -1386,7 +1375,7 @@
   "photoLockSetupFailed": "Nu am putut activa fotografiile criptate. Verifică conexiunea și încearcă din nou.",
   "photoLockAlreadyOn": "Fotografiile criptate sunt deja active pentru contul tău. Introdu cheia de recuperare ca să le folosești pe acest telefon.",
   "photoLockEncryptExistingTitle": "Criptezi fotografiile existente?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Ai 1 fotografie care nu este încă criptată. O putem cripta acum.} few{Ai {count} fotografii care nu sunt încă criptate. Le putem cripta acum.} other{Ai {count} de fotografii care nu sunt încă criptate. Le putem cripta acum.}} Ține Vaultara deschis până se termină.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Ai {count} fotografie care nu este încă criptată. O putem cripta acum.} few{Ai {count} fotografii care nu sunt încă criptate. Le putem cripta acum.} other{Ai {count} de fotografii care nu sunt încă criptate. Le putem cripta acum.}} Ține Vaultara deschis până se termină.",
   "photoLockEncryptNow": "Criptează acum",
   "photoLockEntryBody": "Introdu cheia de recuperare pe care ai salvat-o când ai activat fotografiile criptate. Cratimele și spațiile sunt opționale.",
   "photoLockEntryLabel": "Cheie de recuperare",
@@ -1395,8 +1384,8 @@
   "photoLockUnlocked": "Fotografiile tale sunt deblocate pe acest telefon.",
   "photoLockInvalidFormat": "Aceasta nu arată ca o cheie de recuperare. Verifică fiecare caracter și încearcă din nou.",
   "photoLockWrongKey": "Această cheie de recuperare nu se potrivește. Verifică-o și încearcă din nou.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Prea multe încercări. Așteaptă 1 secundă și încearcă din nou.} few{Prea multe încercări. Așteaptă {seconds} secunde și încearcă din nou.} other{Prea multe încercări. Așteaptă {seconds} de secunde și încearcă din nou.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Prea multe încercări. Așteaptă 1 minut și încearcă din nou.} few{Prea multe încercări. Așteaptă {minutes} minute și încearcă din nou.} other{Prea multe încercări. Așteaptă {minutes} de minute și încearcă din nou.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Prea multe încercări. Așteaptă {seconds} secundă și încearcă din nou.} few{Prea multe încercări. Așteaptă {seconds} secunde și încearcă din nou.} other{Prea multe încercări. Așteaptă {seconds} de secunde și încearcă din nou.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Prea multe încercări. Așteaptă {minutes} minut și încearcă din nou.} few{Prea multe încercări. Așteaptă {minutes} minute și încearcă din nou.} other{Prea multe încercări. Așteaptă {minutes} de minute și încearcă din nou.}}",
   "photoLockOffline": "Nu am putut contacta Vaultara. Verifică conexiunea și încearcă din nou.",
   "photoLockNotSetUp": "Fotografiile criptate nu sunt active pentru contul tău.",
   "photoLockUnlockFailed": "Ceva nu a mers bine. Încearcă din nou.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "Primești o singură notificare la ora mementoului, cu tot ce expiră în ziua respectivă.",
   "dailyDigestTurnedOn": "Mementourile tale vin acum ca un singur rezumat zilnic.",
   "dailyDigestTurnedOff": "Mementourile separate pentru fiecare înregistrare sunt din nou active.",
-  "dailyDigestTitle": "{count, plural, one{1 înregistrare are nevoie de atenția ta} few{{count} înregistrări au nevoie de atenția ta} other{{count} de înregistrări au nevoie de atenția ta}}",
+  "dailyDigestTitle": "{count, plural, one{{count} înregistrare are nevoie de atenția ta} few{{count} înregistrări au nevoie de atenția ta} other{{count} de înregistrări au nevoie de atenția ta}}",
   "dailyDigestBody": "Urmează: {names}.",
   "dailyDigestBodyMore": "Urmează: {names} și încă {count}.",
   "dailyDigestLockedRecord": "o înregistrare blocată",
   "renewReasonRepeat": "{months, plural, one{Pe baza setării tale de repetare lunară} few{Pe baza setării tale de repetare la fiecare {months} luni} other{Pe baza setării tale de repetare la fiecare {months} de luni}}",
   "renewReasonHistory": "{count, plural, one{Pe baza ultimei tale reînnoiri} few{Pe baza ultimelor tale {count} reînnoiri} other{Pe baza ultimelor tale {count} de reînnoiri}}",
-  "renewReasonTypical": "{years, plural, one{De obicei este valabil 1 an} few{De obicei este valabil {years} ani} other{De obicei este valabil {years} de ani}}",
+  "renewReasonTypical": "{years, plural, one{De obicei este valabil {years} an} few{De obicei este valabil {years} ani} other{De obicei este valabil {years} de ani}}",
   "renewChangeHint": "Atinge data ca s-o schimbi.",
   "renewPickDate": "Alege data nouă de expirare",
   "renewPickDateHint": "Alege data care apare pe documentul tău nou.",
@@ -1811,9 +1800,9 @@
   "secHistoryIntro": "Autentificări și modificări ale contului tău din ultimele 90 de zile.",
   "secHistoryEmpty": "Încă nu există nimic de afișat.",
   "secJustNow": "Chiar acum",
-  "secMinutesAgo": "{count, plural, one{acum 1 minut} few{acum {count} minute} other{acum {count} de minute}}",
-  "secHoursAgo": "{count, plural, one{acum 1 oră} few{acum {count} ore} other{acum {count} de ore}}",
-  "secDaysAgo": "{count, plural, one{acum 1 zi} few{acum {count} zile} other{acum {count} de zile}}",
+  "secMinutesAgo": "{count, plural, one{acum {count} minut} few{acum {count} minute} other{acum {count} de minute}}",
+  "secHoursAgo": "{count, plural, one{acum {count} oră} few{acum {count} ore} other{acum {count} de ore}}",
+  "secDaysAgo": "{count, plural, one{acum {count} zi} few{acum {count} zile} other{acum {count} de zile}}",
   "secEventNewSignIn": "Autentificare de pe un dispozitiv nou",
   "secEventSignIn": "Autentificare",
   "secEventPasswordChanged": "Parola a fost schimbată",
@@ -2322,7 +2311,7 @@
   "lostWalletCheckupBody": "Pregătește-te acum, ca să nu uiți nimic dacă se pierde.",
   "lostWalletCheckupAllGood": "Totul e gata. Dacă se pierde vreodată, ești pregătit.",
   "lostWalletSetPlaceBody": "Deschide un card sau document și alege unde îl ții. Fă asta pentru buletin, permis și carduri.",
-  "lostWalletIssuePhotos": "{count, plural, one{1 element nu are fotografie. Cu o fotografie se înlocuiește mai repede.} other{{count} elemente nu au fotografie. Cu fotografii se înlocuiesc mai repede.}}",
+  "lostWalletIssuePhotos": "{count, plural, one{{count} element nu are fotografie. Cu o fotografie se înlocuiește mai repede.} other{{count} elemente nu au fotografie. Cu fotografii se înlocuiesc mai repede.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2330,7 +2319,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, one{1 card nu are salvat numărul pentru card pierdut.} other{{count} carduri nu au salvat numărul pentru card pierdut.}}",
+  "lostWalletIssueLines": "{count, plural, one{{count} card nu are salvat numărul pentru card pierdut.} other{{count} carduri nu au salvat numărul pentru card pierdut.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2430,7 +2419,7 @@
     }
   },
   "lostWalletReportNoCase": "Număr de dosar: încă neraportat",
-  "lostWalletReportCount": "{count, plural, one{1 element mai jos} other{{count} elemente mai jos}}",
+  "lostWalletReportCount": "{count, plural, one{{count} element mai jos} other{{count} elemente mai jos}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} expiră astăzi",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} expiră mâine",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} expiră peste {days} zi} few{{recordName} expiră peste {days} zile} other{{recordName} expiră peste {days} de zile}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} a expirat",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "O înregistrare blocată are nevoie de atenția ta",
+  "remLockedBody": "Data ei este {date}. Deblochează Vaultara ca să vezi ce înregistrare este.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Înregistrarea ta „{recordName}” expiră astăzi.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Înregistrarea ta „{recordName}” expiră mâine.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Înregistrarea ta „{recordName}” expiră pe {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, înregistrarea ta „{recordName}” expiră astăzi.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, înregistrarea ta „{recordName}” expiră mâine.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, înregistrarea ta „{recordName}” expiră pe {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Înregistrarea „{recordName}” a lui {person} expiră astăzi.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Înregistrarea „{recordName}” a lui {person} expiră mâine.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Înregistrarea „{recordName}” a lui {person} expiră pe {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Înregistrarea ta „{recordName}” a expirat pe {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Înregistrarea „{recordName}” a lui {person} a expirat pe {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Ai reînnoit-o deja? Actualizează-i data.",
+  "remTipTomorrow": "Reînnoiește-o acum ca să nu expire.",
+  "remTipEarly": "Reînnoirea din timp te menține acoperit.",
+  "remTipLast": "Acesta este ultimul memento înainte de expirare.",
+  "remTipExpired": "Reînnoiește-o sau actualizează-i data dacă ai făcut-o deja.",
+  "remStartBody": "Este momentul să începi reînnoirea pentru „{recordName}”. Expiră pe {date}, așa că dacă începi acum ai timp suficient.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Este momentul să începi reînnoirea pentru „{recordName}” a lui {person}. Expiră pe {date}, așa că dacă începi acum e timp suficient.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Mementouri de expirare",
+  "notifChannelDescription": "Mementouri înainte să expire înregistrările tale",
+  "notifTestTitle": "Notificare de test",
+  "notifTestBody": "Mementourile Vaultara arată așa.",
+  "notifTestAction": "Trimite o notificare de test",
+  "notifTestSubtitle": "Verifică dacă mementourile ajung pe acest telefon",
+  "notifTestSent": "Test trimis. Ar trebui să ajungă în câteva secunde.",
+  "notifAfterExpiryTitle": "Amintește-mi după ce o înregistrare expiră",
+  "notifAfterExpirySubtitle": "La 3 și 14 zile după, dacă nu a fost reînnoită",
+  "notifWeeklyTitle": "Rezumatul de luni",
+  "notifWeeklySubtitle": "Un mesaj luni dimineață când ceva expiră în acea săptămână",
+  "notifPushSection": "Gospodărie și actualizări",
+  "notifHouseholdTitle": "Înregistrări partajate",
+  "notifHouseholdSubtitle": "Când o înregistrare partajată e pe cale să expire și nimeni nu a reînnoit-o",
+  "notifUpdatesTitle": "Actualizări cerute de tine",
+  "notifUpdatesSubtitle": "Când cineva trimite datele noi ale unei înregistrări",
+  "notifSecurityNote": "Alertele despre conectări noi în contul tău sunt trimise mereu.",
+  "notifIosHelpTitle": "Nu primești mementouri?",
+  "notifIosHelpSubtitle": "Verifică setările iPhone-ului",
+  "notifIosHelpStep1": "Deschide Configurări, apoi Notificări, apoi Vaultara, și activează Permite notificările.",
+  "notifIosHelpStep2": "Activează Ecran blocat, Centru de notificări și Bannere.",
+  "notifIosHelpStep3": "Dacă folosești un mod de concentrare, adaugă Vaultara la aplicațiile permise.",
+  "notifIosHelpStep4": "Deschide Vaultara la câteva săptămâni. iPhone-ul păstrează doar un număr limitat de mementouri viitoare, iar deschiderea aplicației le programează pe următoarele.",
+  "homeNextUpEmpty": "Nimic nu expiră curând. Totul e în regulă.",
+  "homeDueSoonChip": "{count, plural, one{{count} expiră în 30 de zile} few{{count} expiră în 30 de zile} other{{count} expiră în 30 de zile}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Categorii fixate"
 }

@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleFirst": "Tunafurahi kukuona hapa. Vaultara hukusaidia kupanga tarehe na rekodi muhimu mahali pamoja salama.",
   "homeWelcomeSubtitleBack": "Tunafurahi kukuona tena. Vaultara iko tayari wakati wowote unapotaka kukagua tarehe na rekodi zako muhimu.",
   "homeWelcomeTitle": "Karibu",
-  "summaryAllCaption": "Vinafuatiwa katika Vaultara",
-  "summaryExpiredTitle": "Vimeisha",
-  "summaryExpiredCaption": "Tarehe ya mwisho imepita",
   "editorNotes": "Vidokezo",
   "editorReminderNone": "Hakuna kikumbusho",
   "editorReminderOnExpiry": "Siku ya mwisho",
@@ -192,7 +189,6 @@
   "addRecord": "Ongeza rekodi",
   "noRecordsYet": "Bado hakuna rekodi.",
   "deleteRecordTitle": "Futa rekodi",
-  "summaryAllRecordsTitle": "Rekodi zote",
   "noGroupFound": "Bado hakuna vikundi",
   "groupLabel": "{count, plural, one{{count} kikundi} other{{count} vikundi}}",
   "recordsLabel": "{count, plural, one{{count} rekodi} other{{count} rekodi}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Ongeza maelezo (hiari)",
   "expiryTimelineTitle": "Rekodi ya muda wa kuisha",
   "expiryTimelineSubtitle": "Gusa mwezi ili kuona rekodi zinazoisha katika mwezi huo",
-  "expiryTimelineDetailCount": "{count, plural, =1{Rekodi 1} other{Rekodi {count}}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{Rekodi {count}} other{Rekodi {count}}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Yanayokuja",
-  "summaryUpcomingCaption": "Ndani ya siku 30",
-  "summaryUrgentTitle": "Haraka",
-  "summaryUrgentCaption": "Ndani ya siku 7",
   "profileHeaderTitle": "Wasifu",
   "profileTutorialsTitle": "Mafunzo",
   "profileTutorialsSubtitle": "Vinjari Mafunzo ya Programu",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Hakuna ukumbusho",
   "reminderOnExpiry": "Siku ya kumalizika",
-  "reminderDaysBefore": "{days, plural, one{Siku 1 kabla} other{Siku {days} kabla}}",
+  "reminderDaysBefore": "{days, plural, one{Siku {days} kabla} other{Siku {days} kabla}}",
   "reminderCustomDaysTitle": "Ingiza siku maalum",
   "reminderCascadeTitle": "Ukumbusho wa mfululizo",
   "reminderCascadeSubtitle": "Pokea arifa nyingi kabla ya rekodi kumalizika",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Ongeza Rekodi Yako Ya Kwanza",
   "smartInsightNoRecordsBody": "Anza kufuatilia rekodi zako, na Vaultara itaonyesha maarifa mahiri hapa.",
   "smartInsightExpiresTodaySingleBody": "{name} inamalizika leo. Kama tayari umeifanya upya, sasisha tarehe hapa.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} zinamalizika leo.} =1{{names} na 1 zaidi zinamalizika leo.} other{{names} na {extra} zaidi zinamalizika leo.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} zinamalizika leo.} =1{{names} na {extra} zaidi zinamalizika leo.} other{{names} na {extra} zaidi zinamalizika leo.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} inamalizika kesho na haina kikumbusho. Weka kimoja ili usiikose.} other{{name} inamalizika mnamo {date} na haina kikumbusho. Weka kimoja ili usiikose.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} inamalizika mnamo {dateA} na {b} mnamo {dateB}, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi mbili ziko karibu hivi.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b}, na {c} zote zinamalizika kabla ya {lastDate}, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi kadhaa ziko karibu hivi.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, na rekodi 1 zaidi zinamalizika kabla ya {lastDate}, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi kadhaa ziko karibu hivi.} other{{a}, {b}, na rekodi {extra} zaidi zinamalizika kabla ya {lastDate}, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi kadhaa ziko karibu hivi.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, na rekodi {extra} zaidi zinamalizika kabla ya {lastDate}, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi kadhaa ziko karibu hivi.} other{{a}, {b}, na rekodi {extra} zaidi zinamalizika kabla ya {lastDate}, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi kadhaa ziko karibu hivi.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Hakuna kinachomalizika siku inayofuata. Tarehe yako ijayo ni mnamo {date}.} other{Hakuna kinachomalizika katika siku {days} zijazo. Tarehe yako ijayo ni mnamo {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 ya rekodi zako katika kategoria ya {category} inamalizika mnamo {date}. Ni rahisi kuisahau.} other{{count} ya rekodi zako katika kategoria ya {category} zinamalizika kabla ya {date}. Ni rahisi kusahau moja zinapowekwa pamoja hivi.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Muda 1 ujao wa kumalizika umewekewa kikumbusho. Hakuna kitu kingine kinachohitaji makini yako.} other{Muda {count} ujao wa kumalizika umewekewa vikumbusho. Hakuna kitu kingine kinachohitaji makini yako.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} ya rekodi zako katika kategoria ya {category} inamalizika mnamo {date}. Ni rahisi kuisahau.} other{{count} ya rekodi zako katika kategoria ya {category} zinamalizika kabla ya {date}. Ni rahisi kusahau moja zinapowekwa pamoja hivi.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Muda {count} ujao wa kumalizika umewekewa kikumbusho. Hakuna kitu kingine kinachohitaji makini yako.} other{Muda {count} ujao wa kumalizika umewekewa vikumbusho. Hakuna kitu kingine kinachohitaji makini yako.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Kila kitu kimesasishwa. Hakuna kinachohitaji makini yako kwa sasa.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Hakuna jambo la dharura kwa sasa, lakini rekodi 1 ijayo bado haina kikumbusho.} other{Hakuna jambo la dharura kwa sasa, lakini rekodi {count} zijazo bado hazina vikumbusho.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Hakuna jambo la dharura kwa sasa, lakini rekodi {count} ijayo bado haina kikumbusho.} other{Hakuna jambo la dharura kwa sasa, lakini rekodi {count} zijazo bado hazina vikumbusho.}}",
   "smartInsightCloseExpiriesHeading": "Zinamalizika Muda Unaoingiliana",
   "plansHeadline": "Pata toleo kamili la Vaultara",
   "plansSubhead": "Rekodi zisizo na kikomo, vikundi vyako wenyewe, na vikumbusho vilivyorekebishwa jinsi unavyotaka.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Ondoa",
   "reminderCascadeDuplicate": "Kikumbusho kingine tayari kinatumia siku hii",
   "reminderCascadeOutOfRange": "Weka kati ya siku {min} na {max}",
-  "reminderCascadeStepLabel": "Kikumbusho {position}: Siku {days, plural, =1{1} other{{days}}} kabla",
+  "reminderCascadeStepLabel": "Kikumbusho {position}: Siku {days, plural, =1{{days}} other{{days}}} kabla",
   "expiryTimelineNotReady": "Mstari wako wa wakati utaonekana pindi utakapokuwa na rekodi zinazoisha muda wake katika miezi michache tofauti.",
   "verifyEmailResendIn": "Tuma tena baada ya sekunde {seconds}",
   "verifyEmailSpamHint": "Haipo hapo? Angalia folda yako ya barua pepe taka au spam.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Akaunti hii haijathibitishwa. Kuondoka sasa kutaiondoa, na unaweza kujisajili tena kwa anwani yoyote ya barua pepe.",
   "verifyEmailDiscardAction": "Futa",
   "verifyEmailKeepWaiting": "Endelea kusubiri",
-  "expiringBadge": "{count, plural, =1{1 inayoisha hivi karibuni} other{{count} zinazoisha hivi karibuni}}",
+  "expiringBadge": "{count, plural, =1{{count} inayoisha hivi karibuni} other{{count} zinazoisha hivi karibuni}}",
   "noRecordsToday": "Hakuna kinachoisha leo",
   "noRecordsTomorrow": "Hakuna kinachoisha kesho",
-  "cascadeStepTitle": "{days, plural, =0{Rekodi ya {recordName} inakwisha muda wake leo} =1{Rekodi ya {recordName} inakwisha muda wake kesho} other{Rekodi ya {recordName} inakwisha muda wake baada ya siku {days}}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, rekodi yako ya {recordName} inakwisha muda wake leo. Je, umeiuhuisha tayari? Sasisha tarehe yake ya mwisho.} =1{{firstName}, rekodi yako ya {recordName} inakwisha muda wake kesho. Ihuishe sasa hivi ili isipoteze uhalali wake.} other{{firstName}, rekodi yako ya {recordName} inakwisha muda wake tarehe {date}. Kuihuisha mapema kunahakikisha uhalali usiokatizwa.}}",
   "cascadeFinalStepTitle": "Kikumbusho cha mwisho: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, rekodi yako ya {recordName} inakwisha muda wake {days, plural, =1{kesho} other{baada ya siku {days}, tarehe {date}}}. Hiki ni kikumbusho chako cha mwisho, ihuishe au usasishe tarehe yake.",
   "notificationsTitle": "Arifa",
   "notificationsProfileEnabledSubtitle": "Vikumbusho huwasili saa {time}.",
   "notificationsProfileDisabledSubtitle": "Arifa zimezimwa.",
@@ -1349,7 +1338,7 @@
   "photoLockTurnOn": "Washa picha zilizosimbwa",
   "photoLockStatusOn": "Picha zilizosimbwa zimewashwa",
   "photoLockStatusOnBody": "Picha mpya husimbwa kwenye simu hii kabla ya kupakiwa.",
-  "photoLockPendingTitle": "{count, plural, one{Picha 1 haijasimbwa bado} other{Picha {count} hazijasimbwa bado}}",
+  "photoLockPendingTitle": "{count, plural, one{Picha {count} haijasimbwa bado} other{Picha {count} hazijasimbwa bado}}",
   "photoLockPendingBody": "Picha ulizoongeza kabla ya kuwasha hii bado zimehifadhiwa kwa njia ya kawaida.",
   "photoLockEncryptExisting": "Simba picha zangu zilizopo",
   "photoLockKeepOpen": "Weka Vaultara wazi hadi hii ikamilike.",
@@ -1386,7 +1375,7 @@
   "photoLockSetupFailed": "Hatukuweza kuwasha picha zilizosimbwa. Angalia muunganisho wako na ujaribu tena.",
   "photoLockAlreadyOn": "Picha zilizosimbwa tayari zimewashwa kwenye akaunti yako. Weka ufunguo wako wa kurejesha ili uzitumie kwenye simu hii.",
   "photoLockEncryptExistingTitle": "Simba picha zako zilizopo?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Una picha 1 ambayo haijasimbwa bado. Tunaweza kuisimba sasa.} other{Una picha {count} ambazo hazijasimbwa bado. Tunaweza kuzisimba sasa.}} Weka Vaultara wazi hadi hii ikamilike.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Una picha {count} ambayo haijasimbwa bado. Tunaweza kuisimba sasa.} other{Una picha {count} ambazo hazijasimbwa bado. Tunaweza kuzisimba sasa.}} Weka Vaultara wazi hadi hii ikamilike.",
   "photoLockEncryptNow": "Simba sasa",
   "photoLockEntryBody": "Weka ufunguo wa kurejesha uliouhifadhi ulipowasha picha zilizosimbwa. Vistari na nafasi ni hiari.",
   "photoLockEntryLabel": "Ufunguo wa kurejesha",
@@ -1395,8 +1384,8 @@
   "photoLockUnlocked": "Picha zako zimefunguliwa kwenye simu hii.",
   "photoLockInvalidFormat": "Hii haionekani kama ufunguo wa kurejesha. Angalia kila herufi na ujaribu tena.",
   "photoLockWrongKey": "Ufunguo huu wa kurejesha haulingani. Uangalie na ujaribu tena.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Majaribio mengi mno. Tafadhali subiri sekunde 1 kisha ujaribu tena.} other{Majaribio mengi mno. Tafadhali subiri sekunde {seconds} kisha ujaribu tena.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Majaribio mengi mno. Tafadhali subiri dakika 1 kisha ujaribu tena.} other{Majaribio mengi mno. Tafadhali subiri dakika {minutes} kisha ujaribu tena.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Majaribio mengi mno. Tafadhali subiri sekunde {seconds} kisha ujaribu tena.} other{Majaribio mengi mno. Tafadhali subiri sekunde {seconds} kisha ujaribu tena.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Majaribio mengi mno. Tafadhali subiri dakika {minutes} kisha ujaribu tena.} other{Majaribio mengi mno. Tafadhali subiri dakika {minutes} kisha ujaribu tena.}}",
   "photoLockOffline": "Hatukuweza kufikia Vaultara. Angalia muunganisho wako na ujaribu tena.",
   "photoLockNotSetUp": "Picha zilizosimbwa hazijawashwa kwenye akaunti yako.",
   "photoLockUnlockFailed": "Hitilafu imetokea. Tafadhali jaribu tena.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "Pata arifa moja wakati wa ukumbusho wako inayoorodhesha kila kitu kinachofaa kushughulikiwa siku hiyo.",
   "dailyDigestTurnedOn": "Vikumbusho vyako sasa vinakuja kama muhtasari mmoja wa kila siku.",
   "dailyDigestTurnedOff": "Vikumbusho tofauti kwa kila rekodi vimewashwa tena.",
-  "dailyDigestTitle": "{count, plural, one{Rekodi 1 inahitaji umakini wako} other{Rekodi {count} zinahitaji umakini wako}}",
+  "dailyDigestTitle": "{count, plural, one{Rekodi {count} inahitaji umakini wako} other{Rekodi {count} zinahitaji umakini wako}}",
   "dailyDigestBody": "Zinazokuja: {names}.",
   "dailyDigestBodyMore": "Zinazokuja: {names} na {count} zaidi.",
   "dailyDigestLockedRecord": "rekodi iliyofungwa",
   "renewReasonRepeat": "{months, plural, one{Kulingana na mpangilio wako wa kurudia kila mwezi} other{Kulingana na mpangilio wako wa kurudia kila miezi {months}}}",
   "renewReasonHistory": "{count, plural, one{Kulingana na usasishaji wako wa mwisho} other{Kulingana na usasishaji wako {count} wa mwisho}}",
-  "renewReasonTypical": "{years, plural, one{Kwa kawaida hudumu mwaka 1} other{Kwa kawaida hudumu miaka {years}}}",
+  "renewReasonTypical": "{years, plural, one{Kwa kawaida hudumu mwaka {years}} other{Kwa kawaida hudumu miaka {years}}}",
   "renewChangeHint": "Gusa tarehe ili kuibadilisha.",
   "renewPickDate": "Chagua tarehe mpya ya kuisha muda",
   "renewPickDateHint": "Chagua tarehe iliyoonyeshwa kwenye hati yako mpya.",
@@ -2134,8 +2123,8 @@
   "lifePlanAutoChanged": "Vaultara iliona rekodi hii ikibadilika, kwa hivyo imewekwa alama kuwa imekamilika.",
   "lifePlanAutoAdded": "Imeongezwa baada ya kuanza mpango huu.",
   "lifePlanProgress": "{done} kati ya {total} zimekamilika",
-  "lifePlanDaysToGo": "{count, plural, =1{Imebaki siku 1} other{Zimebaki siku {count}}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Siku 1 iliyopita} other{Siku {count} zilizopita}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Imebaki siku {count}} other{Zimebaki siku {count}}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Siku {count} iliyopita} other{Siku {count} zilizopita}}",
   "lifePlanAllDone": "Kila kitu kimekamilika. Unaweza kuweka alama kuwa mpango umekamilika.",
   "lifePlanFinish": "Weka alama imekamilika",
   "lifePlanReopen": "Fungua tena",
@@ -2264,7 +2253,7 @@
   "lifePlanReadAloudUnavailable": "Kusoma kwa sauti hakupatikani kwenye simu hii.",
   "lifePlanProofPack": "Tengeneza kifurushi cha uthibitisho",
   "lifePlanOpenFamily": "Fungua Familia",
-  "lifePlanRemoved": "{count, plural, =1{Rekodi 1 uliyofuta inahesabiwa kuwa imesitishwa.} other{Rekodi {count} ulizofuta zinahesabiwa kuwa zimesitishwa.}}",
+  "lifePlanRemoved": "{count, plural, =1{Rekodi {count} uliyofuta inahesabiwa kuwa imesitishwa.} other{Rekodi {count} ulizofuta zinahesabiwa kuwa zimesitishwa.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2465,7 +2454,7 @@
   "tutorialsGroupTravelFamily": "Safari na familia",
   "tutorialsGroupEmergencies": "Matukio ya maisha na dharura",
   "tutorialsGroupPaid": "Vipengele vya kulipia",
-  "tutorialsSteps": "{count, plural, =1{Hatua 1} other{Hatua {count}}}",
+  "tutorialsSteps": "{count, plural, =1{Hatua {count}} other{Hatua {count}}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} inaisha muda wake leo",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} inaisha muda wake kesho",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} inaisha muda wake baada ya siku {days}} other{{recordName} inaisha muda wake baada ya siku {days}}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} imeisha muda wake",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Rekodi iliyofungwa inahitaji umakini wako",
+  "remLockedBody": "Tarehe yake ni {date}. Fungua Vaultara ili kuona ni rekodi ipi.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Rekodi yako \"{recordName}\" inaisha muda wake leo.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Rekodi yako \"{recordName}\" inaisha muda wake kesho.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Rekodi yako \"{recordName}\" inaisha muda wake tarehe {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, rekodi yako \"{recordName}\" inaisha muda wake leo.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, rekodi yako \"{recordName}\" inaisha muda wake kesho.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, rekodi yako \"{recordName}\" inaisha muda wake tarehe {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Rekodi ya {person} \"{recordName}\" inaisha muda wake leo.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Rekodi ya {person} \"{recordName}\" inaisha muda wake kesho.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Rekodi ya {person} \"{recordName}\" inaisha muda wake tarehe {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Rekodi yako \"{recordName}\" iliisha muda wake tarehe {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Rekodi ya {person} \"{recordName}\" iliisha muda wake tarehe {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Umeshaihuisha? Sasisha tarehe yake.",
+  "remTipTomorrow": "Ihuishe sasa ili isiishe muda wake.",
+  "remTipEarly": "Kuhuisha mapema kunakuweka salama.",
+  "remTipLast": "Hiki ni kikumbusho chako cha mwisho kabla muda haujaisha.",
+  "remTipExpired": "Ihuishe, au sasisha tarehe yake kama tayari umefanya hivyo.",
+  "remStartBody": "Ni wakati wa kuanza kuhuisha \"{recordName}\". Inaisha muda wake tarehe {date}, kwa hiyo ukianza sasa utakuwa na muda wa kutosha.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Ni wakati wa kuanza kuhuisha \"{recordName}\" ya {person}. Inaisha muda wake tarehe {date}, kwa hiyo kuanza sasa kunaacha muda wa kutosha.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Vikumbusho vya kuisha muda",
+  "notifChannelDescription": "Vikumbusho kabla rekodi zako hazijaisha muda",
+  "notifTestTitle": "Arifa ya majaribio",
+  "notifTestBody": "Vikumbusho vya Vaultara huja hivi.",
+  "notifTestAction": "Tuma arifa ya majaribio",
+  "notifTestSubtitle": "Hakikisha vikumbusho vinafika kwenye simu hii",
+  "notifTestSent": "Jaribio limetumwa. Linapaswa kufika baada ya sekunde chache.",
+  "notifAfterExpiryTitle": "Nikumbushe baada ya rekodi kuisha muda",
+  "notifAfterExpirySubtitle": "Siku 3 na 14 baadaye, kama haijahuishwa",
+  "notifWeeklyTitle": "Muhtasari wa Jumatatu",
+  "notifWeeklySubtitle": "Ujumbe Jumatatu asubuhi kitu kinapoisha muda wiki hiyo",
+  "notifPushSection": "Kaya na masasisho",
+  "notifHouseholdTitle": "Rekodi zilizoshirikiwa",
+  "notifHouseholdSubtitle": "Rekodi iliyoshirikiwa inapokaribia kuisha muda na hakuna aliyeihuisha",
+  "notifUpdatesTitle": "Masasisho uliyoomba",
+  "notifUpdatesSubtitle": "Mtu anapotuma taarifa mpya za rekodi",
+  "notifSecurityNote": "Tahadhari kuhusu kuingia upya kwenye akaunti yako hutumwa kila wakati.",
+  "notifIosHelpTitle": "Hupati vikumbusho?",
+  "notifIosHelpSubtitle": "Angalia mipangilio ya iPhone yako",
+  "notifIosHelpStep1": "Fungua Mipangilio, kisha Arifa, kisha Vaultara, na uwashe Ruhusu Arifa.",
+  "notifIosHelpStep2": "Washa Skrini Iliyofungwa, Kituo cha Arifa na Mabango.",
+  "notifIosHelpStep3": "Ukitumia Focus, ongeza Vaultara kwenye programu zinazoruhusiwa.",
+  "notifIosHelpStep4": "Fungua Vaultara kila baada ya wiki chache. iPhone huhifadhi idadi ndogo tu ya vikumbusho vya mbele, na kufungua programu hupanga vinavyofuata.",
+  "homeNextUpEmpty": "Hakuna kinachoisha muda hivi karibuni. Kila kitu kiko tayari.",
+  "homeDueSoonChip": "{count, plural, one{{count} inadaiwa ndani ya siku 30} other{{count} zinadaiwa ndani ya siku 30}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Kategoria zilizobandikwa"
 }

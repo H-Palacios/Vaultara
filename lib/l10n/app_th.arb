@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara ช่วยให้คุณติดตามวันหมดอายุสำคัญ เพื่อไม่ให้สิ่งใดหมดอายุโดยไม่รู้ตัว",
   "homeWelcomeSubtitleFirst": "ยินดีที่ได้พบคุณ Vaultara ช่วยให้คุณจัดระเบียบวันสำคัญและเอกสารไว้ในที่ปลอดภัยแห่งเดียว",
   "homeWelcomeSubtitleBack": "ดีใจที่ได้พบคุณอีกครั้ง Vaultara พร้อมช่วยคุณตรวจสอบวันสำคัญและเอกสารเสมอ",
-  "summaryAllCaption": "ติดตามใน Vaultara",
-  "summaryExpiredTitle": "หมดอายุแล้ว",
-  "summaryExpiredCaption": "เลยวันหมดอายุ",
   "editorNotes": "บันทึก",
   "editorReminderNone": "ไม่มีการแจ้งเตือน",
   "editorReminderOnExpiry": "ในวันหมดอายุ",
@@ -185,7 +182,6 @@
   "addRecord": "เพิ่มรายการ",
   "noRecordsYet": "ยังไม่มีรายการ",
   "deleteRecordTitle": "ลบรายการ",
-  "summaryAllRecordsTitle": "รายการทั้งหมด",
   "noGroupFound": "ยังไม่มีกลุ่ม",
   "groupLabel": "{count, plural, one{{count} กลุ่ม} other{{count} กลุ่ม}}",
   "recordsLabel": "{count, plural, one{{count} รายการ} other{{count} รายการ}}",
@@ -462,10 +458,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "กำลังจะมาถึง",
-  "summaryUpcomingCaption": "ภายใน 30 วัน",
-  "summaryUrgentTitle": "ด่วน",
-  "summaryUrgentCaption": "ภายใน 7 วัน",
   "profileHeaderTitle": "โปรไฟล์",
   "profileTutorialsTitle": "บทเรียน",
   "profileTutorialsSubtitle": "เรียกดูบทเรียนของแอป",
@@ -528,16 +520,16 @@
   "smartInsightNoRecordsHeading": "เพิ่มรายการแรกของคุณ",
   "smartInsightNoRecordsBody": "เริ่มติดตามรายการของคุณ แล้ว Vaultara จะแสดงข้อมูลเชิงลึกอัจฉริยะที่นี่",
   "smartInsightExpiresTodaySingleBody": "{name} จะหมดอายุวันนี้ หากคุณต่ออายุเรียบร้อยแล้ว สามารถอัปเดตวันที่ได้ที่นี่",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} หมดอายุวันนี้} =1{{names} และอีก 1 รายการหมดอายุวันนี้} other{{names} และอีก {extra} รายการหมดอายุวันนี้}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} หมดอายุวันนี้} =1{{names} และอีก {extra} รายการหมดอายุวันนี้} other{{names} และอีก {extra} รายการหมดอายุวันนี้}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} จะหมดอายุพรุ่งนี้และยังไม่ได้ตั้งการแจ้งเตือน ตั้งค่าเลยเพื่อไม่ให้พลาด} other{{name} จะหมดอายุในวันที่ {date} และยังไม่ได้ตั้งการแจ้งเตือน ตั้งค่าเลยเพื่อไม่ให้พลาด}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} จะหมดอายุวันที่ {dateA} และ {b} จะหมดอายุวันที่ {dateB} ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีสองรายการใกล้กันขนาดนี้",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} และ {c} ทั้งหมดจะหมดอายุภายในวันที่ {lastDate} ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีหลายรายการใกล้กันขนาดนี้",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} และอีก 1 รายการจะหมดอายุภายในวันที่ {lastDate} ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีหลายรายการใกล้กันขนาดนี้} other{{a}, {b} และอีก {extra} รายการจะหมดอายุภายในวันที่ {lastDate} ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีหลายรายการใกล้กันขนาดนี้}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} และอีก {extra} รายการจะหมดอายุภายในวันที่ {lastDate} ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีหลายรายการใกล้กันขนาดนี้} other{{a}, {b} และอีก {extra} รายการจะหมดอายุภายในวันที่ {lastDate} ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีหลายรายการใกล้กันขนาดนี้}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{ไม่มีรายการใดหมดอายุในวันพรุ่งนี้ รายการถัดไปของคุณจะหมดอายุวันที่ {date}} other{ไม่มีรายการใดหมดอายุในอีก {days} วันข้างหน้า รายการถัดไปของคุณคือวันที่ {date}}}",
-  "smartInsightClusterBody": "{count, plural, =1{รายการในหมวดหมู่ {category} จำนวน 1 รายการของคุณจะหมดอายุวันที่ {date} ซึ่งอาจถูกมองข้ามได้ง่าย} other{รายการในหมวดหมู่ {category} จำนวน {count} รายการของคุณจะหมดอายุภายในวันที่ {date} อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อรวมกลุ่มกันแบบนี้}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{การหมดอายุที่จะเกิดขึ้น 1 รายการ มีการตั้งแจ้งเตือนไว้แล้ว ไม่มีรายการอื่นที่ต้องดูแลเพิ่มเติม} other{การหมดอายุที่จะเกิดขึ้น {count} รายการ มีการตั้งแจ้งเตือนไว้แล้ว ไม่มีรายการอื่นที่ต้องดูแลเพิ่มเติม}}",
+  "smartInsightClusterBody": "{count, plural, =1{รายการในหมวดหมู่ {category} จำนวน {count} รายการของคุณจะหมดอายุวันที่ {date} ซึ่งอาจถูกมองข้ามได้ง่าย} other{รายการในหมวดหมู่ {category} จำนวน {count} รายการของคุณจะหมดอายุภายในวันที่ {date} อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อรวมกลุ่มกันแบบนี้}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{การหมดอายุที่จะเกิดขึ้น {count} รายการ มีการตั้งแจ้งเตือนไว้แล้ว ไม่มีรายการอื่นที่ต้องดูแลเพิ่มเติม} other{การหมดอายุที่จะเกิดขึ้น {count} รายการ มีการตั้งแจ้งเตือนไว้แล้ว ไม่มีรายการอื่นที่ต้องดูแลเพิ่มเติม}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "ทุกอย่างเป็นปัจจุบันแล้ว ไม่มีรายการใดที่ต้องดูแลในขณะนี้",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ขณะนี้ไม่มีรายการเร่งด่วน แต่มี 1 รายการที่กำลังจะเกิดขึ้นซึ่งยังไม่ได้ตั้งการแจ้งเตือน} other{ขณะนี้ไม่มีรายการเร่งด่วน แต่มี {count} รายการที่กำลังจะเกิดขึ้นซึ่งยังไม่ได้ตั้งการแจ้งเตือน}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ขณะนี้ไม่มีรายการเร่งด่วน แต่มี {count} รายการที่กำลังจะเกิดขึ้นซึ่งยังไม่ได้ตั้งการแจ้งเตือน} other{ขณะนี้ไม่มีรายการเร่งด่วน แต่มี {count} รายการที่กำลังจะเกิดขึ้นซึ่งยังไม่ได้ตั้งการแจ้งเตือน}}",
   "smartInsightCloseExpiriesHeading": "หมดอายุในช่วงเวลาใกล้เคียงกัน",
   "plansHeadline": "รับประสบการณ์ Vaultara แบบเต็มรูปแบบ",
   "plansSubhead": "เพิ่มรายการได้ไม่จำกัด สร้างกลุ่มของคุณเอง และตั้งค่าการแจ้งเตือนได้ตามที่คุณต้องการ",
@@ -633,13 +625,10 @@
   "verifyEmailDiscardBody": "บัญชีนี้ยังไม่ได้รับการยืนยัน หากคุณออกตอนนี้ บัญชีจะถูกลบออก และคุณสามารถลงทะเบียนใหม่ด้วยอีเมลใดก็ได้",
   "verifyEmailDiscardAction": "ละทิ้ง",
   "verifyEmailKeepWaiting": "รอต่อไป",
-  "expiringBadge": "{count, plural, =1{1 รายการกำลังจะหมดอายุ} other{{count} รายการกำลังจะหมดอายุ}}",
+  "expiringBadge": "{count, plural, =1{{count} รายการกำลังจะหมดอายุ} other{{count} รายการกำลังจะหมดอายุ}}",
   "noRecordsToday": "ไม่มีรายการหมดอายุในวันนี้",
   "noRecordsTomorrow": "ไม่มีรายการหมดอายุในพรุ่งนี้",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} หมดอายุวันนี้} =1{{recordName} หมดอายุพรุ่งนี้} other{{recordName} จะหมดอายุในอีก {days} วัน}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName} {recordName} ของคุณหมดอายุวันนี้ ต่ออายุแล้วหรือยัง อัปเดตวันหมดอายุ} =1{{firstName} {recordName} ของคุณหมดอายุพรุ่งนี้ ต่ออายุทันทีเพื่อไม่ให้ขาดต่อ} other{{firstName} {recordName} ของคุณจะหมดอายุในวันที่ {date} การต่ออายุล่วงหน้าช่วยให้มีผลใช้ได้อย่างต่อเนื่อง}}",
   "cascadeFinalStepTitle": "การแจ้งเตือนครั้งสุดท้าย: {recordName}",
-  "cascadeFinalStepBody": "{firstName} {recordName} ของคุณจะหมดอายุ {days, plural, =1{พรุ่งนี้} other{ในอีก {days} วัน วันที่ {date}}} นี่คือการแจ้งเตือนครั้งสุดท้ายของคุณ โปรดต่ออายุหรืออัปเดตวันที่",
   "notificationsTitle": "การแจ้งเตือน",
   "notificationsProfileEnabledSubtitle": "การแจ้งเตือนจะมาถึงเวลา {time}",
   "notificationsProfileDisabledSubtitle": "การแจ้งเตือนถูกปิดอยู่",
@@ -698,7 +687,7 @@
   "costCardTitle": "ค่าต่ออายุ",
   "costCardSubtitle": "ค่าใช้จ่ายในการต่ออายุของคุณรายเดือน",
   "costCardBusiest": "เดือนที่ใช้จ่ายมากที่สุด: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{มี 1 รายการที่กำลังจะถึงซึ่งยังไม่มีค่าใช้จ่าย} other{มี {count} รายการที่กำลังจะถึงซึ่งยังไม่มีค่าใช้จ่าย}}",
+  "costCardMissing": "{count, plural, =1{มี {count} รายการที่กำลังจะถึงซึ่งยังไม่มีค่าใช้จ่าย} other{มี {count} รายการที่กำลังจะถึงซึ่งยังไม่มีค่าใช้จ่าย}}",
   "costCardEmpty": "เพิ่มค่าใช้จ่ายให้รายการของคุณเพื่อดูว่าการต่ออายุจะมีค่าใช้จ่ายเท่าไร",
   "costCardLockedHint": "ดูค่าใช้จ่ายในการต่ออายุตลอดปีข้างหน้าด้วย Premium",
   "costCardSeePremium": "ดู Premium",
@@ -706,7 +695,7 @@
   "familyTitle": "ครอบครัว",
   "familyIntro": "ติดตามรายการของคนที่คุณดูแล การเตือนจะแสดงชื่อของพวกเขา เพื่อให้คุณรู้ว่าเป็นรายการของใคร",
   "familyMe": "ฉัน",
-  "familyRecordCount": "{count, plural, =0{ไม่มีรายการ} =1{1 รายการ} other{{count} รายการ}}",
+  "familyRecordCount": "{count, plural, =0{ไม่มีรายการ} =1{{count} รายการ} other{{count} รายการ}}",
   "familyRename": "เปลี่ยนชื่อ",
   "familyRemove": "นำออก",
   "familyRemoveTitle": "นำ {name} ออกไหม",
@@ -719,10 +708,10 @@
   "familyNameLabel": "ชื่อ",
   "familyNameHint": "ตัวอย่างเช่น สมชาย",
   "familyNameRequired": "ป้อนชื่อ",
-  "familyLimitNote": "{count, plural, =1{สูงสุด 1 คน} other{สูงสุด {count} คน}}",
+  "familyLimitNote": "{count, plural, =1{สูงสุด {count} คน} other{สูงสุด {count} คน}}",
   "familyUpsellTitle": "ติดตามเอกสารของครอบครัวคุณ",
   "familyBenefitPremium": "ทุกอย่างใน Premium",
-  "familyBenefitPeople": "{count, plural, =1{เพิ่มได้ 1 คน} other{เพิ่มได้สูงสุด {count} คน}}",
+  "familyBenefitPeople": "{count, plural, =1{เพิ่มได้ {count} คน} other{เพิ่มได้สูงสุด {count} คน}}",
   "familyBenefitOwnRecords": "แต่ละคนมีรายการและการเตือนของตัวเอง",
   "familyBenefitOneSubscription": "สมัครสมาชิกครั้งเดียวสำหรับทั้งครอบครัว",
   "familySeePlan": "ดูแผนครอบครัว",
@@ -908,14 +897,14 @@
   "calendarExportError": "เราสร้างไฟล์ปฏิทินไม่ได้ ลองอีกครั้ง",
   "pdfExportTitle": "รายการใน Vaultara",
   "pdfExportGenerated": "สร้างเมื่อ {date}",
-  "pdfExportCount": "{count, plural, =1{1 รายการ} other{{count} รายการ}}",
+  "pdfExportCount": "{count, plural, =1{{count} รายการ} other{{count} รายการ}}",
   "pdfExportCost": "ค่าต่ออายุ: {amount}",
   "pdfExportBuilding": "กำลังเตรียม PDF ของคุณ...",
   "pdfExportError": "เราสร้าง PDF ไม่ได้ ลองอีกครั้ง",
   "travelTitle": "ตรวจสอบก่อนเดินทาง",
   "travelDeparture": "วันออกเดินทาง",
   "travelReturn": "วันกลับ",
-  "travelTripLength": "{days, plural, =1{ทริป 1 วัน} other{ทริป {days} วัน}}",
+  "travelTripLength": "{days, plural, =1{ทริป {days} วัน} other{ทริป {days} วัน}}",
   "travelDriving": "ฉันจะขับรถ",
   "travelNeedsVisa": "ฉันต้องใช้วีซ่า",
   "travelWho": "ใครเดินทาง",
@@ -936,9 +925,9 @@
   "travelNoLicence": "ยังไม่ได้เพิ่มใบขับขี่",
   "travelOtherExpires": "หมดอายุระหว่างที่คุณไม่อยู่",
   "travelDetailValidUntil": "{name} ใช้ได้ถึง {date}",
-  "travelDetailPassportBuffer": "{name} หมดอายุ {date} หลายประเทศต้องการให้เหลืออายุ {months, plural, =1{1 เดือน} other{{months} เดือน}} หลังคุณกลับ",
+  "travelDetailPassportBuffer": "{name} หมดอายุ {date} หลายประเทศต้องการให้เหลืออายุ {months, plural, =1{{months} เดือน} other{{months} เดือน}} หลังคุณกลับ",
   "travelDetailExpiresBeforeLeaving": "{name} หมดอายุ {date} ก่อนคุณออกเดินทาง",
-  "travelDetailExpiresDuringTrip": "{name} หมดอายุ {date} {days, plural, =0{ในวันที่คุณออกเดินทาง} =1{หลังออกเดินทาง 1 วัน} other{หลังออกเดินทาง {days} วัน}}",
+  "travelDetailExpiresDuringTrip": "{name} หมดอายุ {date} {days, plural, =0{ในวันที่คุณออกเดินทาง} =1{หลังออกเดินทาง {days} วัน} other{หลังออกเดินทาง {days} วัน}}",
   "travelDetailNoPassport": "เพิ่มพาสปอร์ตเพื่อให้ Vaultara ตรวจสอบได้",
   "travelDetailNoVisa": "เพิ่มวีซ่าเพื่อให้ Vaultara ตรวจสอบได้",
   "travelDetailNoInsurance": "เพิ่มประกันการเดินทางเพื่อตรวจสอบว่าครอบคลุมทั้งทริป",
@@ -990,7 +979,7 @@
   "travelInProgress": "อยู่ระหว่างทริป",
   "travelTripEnded": "ทริปสิ้นสุดแล้ว",
   "travelAllGood": "เอกสารพร้อมทั้งหมด",
-  "travelIssues": "{count, plural, =1{มี 1 เรื่องที่ต้องดูแล} other{มี {count} เรื่องที่ต้องดูแล}}",
+  "travelIssues": "{count, plural, =1{มี {count} เรื่องที่ต้องดูแล} other{มี {count} เรื่องที่ต้องดูแล}}",
   "travelChecklistTitle": "รายการตรวจสอบสำหรับทริป",
   "travelChecklistProgress": "เสร็จแล้ว {done} จาก {total}",
   "travelChecklistAdd": "เพิ่ม",
@@ -1010,7 +999,7 @@
   "travelTripTo": "ทริปไป {name}",
   "travelReminderTitle": "{days, plural, other{ทริปไป {name} ในอีก {days} วัน}}",
   "travelReminderTitleTomorrow": "ทริปไป {name} พรุ่งนี้",
-  "travelReminderBodyIssues": "{count, plural, =1{มีเอกสาร 1 ฉบับที่ต้องดูแลก่อนออกเดินทาง} other{มีเอกสาร {count} ฉบับที่ต้องดูแลก่อนออกเดินทาง}}",
+  "travelReminderBodyIssues": "{count, plural, =1{มีเอกสาร {count} ฉบับที่ต้องดูแลก่อนออกเดินทาง} other{มีเอกสาร {count} ฉบับที่ต้องดูแลก่อนออกเดินทาง}}",
   "travelReminderBodyOk": "เอกสารของคุณพร้อมแล้ว เปิดทริปเพื่อตรวจดูรายการ",
   "travelTripLimit": "คุณบันทึกได้สูงสุด {count} ทริป ลบทริปเก่าเพื่อเพิ่มทริปใหม่",
   "recordLockTitle": "ล็อกรายการนี้",
@@ -1038,7 +1027,7 @@
   "vaultChooseFromGallery": "เลือกจากแกลเลอรี",
   "vaultRemove": "นำออก",
   "vaultLimitTitle": "ถึงขีดจำกัดรูปภาพแล้ว",
-  "vaultLimitFreeBody": "แผนบริการฟรีให้คุณเพิ่มได้ {limit, plural, =1{1 รูป} other{{limit} รูป}} ต่อรายการ ด้วย Premium คุณเพิ่มได้สูงสุด {premiumLimit} รูป",
+  "vaultLimitFreeBody": "แผนบริการฟรีให้คุณเพิ่มได้ {limit, plural, =1{{limit} รูป} other{{limit} รูป}} ต่อรายการ ด้วย Premium คุณเพิ่มได้สูงสุด {premiumLimit} รูป",
   "vaultLimitPremiumBody": "คุณเพิ่มรูปได้สูงสุด {limit} รูปต่อรายการ นำออก 1 รูปเพื่อเพิ่มรูปอื่น",
   "vaultSeePremium": "ดู Premium",
   "vaultPdfShort": "PDF",
@@ -1046,7 +1035,7 @@
   "vaultOpenFile": "เปิด",
   "vaultClose": "ปิด",
   "vaultPageIndicator": "{current} จาก {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 รูป} other{{count} รูป}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} รูป} other{{count} รูป}}",
   "travelReadinessTitle": "ความพร้อมในการเดินทาง",
   "travelReadinessBody": "จากพาสปอร์ตและใบขับขี่ที่บันทึกไว้ใน Vaultara ส่วนใหญ่ประเทศต่าง ๆ ต้องการให้พาสปอร์ตเหลืออายุอย่างน้อย 6 เดือนตอนที่คุณกลับ",
   "travelReadyUntil": "พาสปอร์ตใช้เดินทางได้ถึง {date}",
@@ -2878,5 +2867,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} หมดอายุวันนี้",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} หมดอายุพรุ่งนี้",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} จะหมดอายุในอีก {days} วัน}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} หมดอายุแล้ว",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "รายการที่ล็อกต้องการความสนใจจากคุณ",
+  "remLockedBody": "วันที่ของรายการคือ {date} ปลดล็อก Vaultara เพื่อดูว่าเป็นรายการใด",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "รายการ \"{recordName}\" ของคุณหมดอายุวันนี้",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "รายการ \"{recordName}\" ของคุณหมดอายุพรุ่งนี้",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "รายการ \"{recordName}\" ของคุณจะหมดอายุในวันที่ {date}",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName} รายการ \"{recordName}\" ของคุณหมดอายุวันนี้",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName} รายการ \"{recordName}\" ของคุณหมดอายุพรุ่งนี้",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName} รายการ \"{recordName}\" ของคุณจะหมดอายุในวันที่ {date}",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: รายการ \"{recordName}\" หมดอายุวันนี้",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: รายการ \"{recordName}\" หมดอายุพรุ่งนี้",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: รายการ \"{recordName}\" จะหมดอายุในวันที่ {date}",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "รายการ \"{recordName}\" ของคุณหมดอายุเมื่อวันที่ {date}",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: รายการ \"{recordName}\" หมดอายุเมื่อวันที่ {date}",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "ต่ออายุแล้วหรือยัง อัปเดตวันที่ได้เลย",
+  "remTipTomorrow": "ต่ออายุตอนนี้เพื่อไม่ให้หมดอายุ",
+  "remTipEarly": "การต่ออายุแต่เนิ่นๆ ช่วยให้คุณไม่ขาดความคุ้มครอง",
+  "remTipLast": "นี่คือการแจ้งเตือนครั้งสุดท้ายก่อนหมดอายุ",
+  "remTipExpired": "ต่ออายุ หรืออัปเดตวันที่หากคุณทำแล้ว",
+  "remStartBody": "ถึงเวลาเริ่มต่ออายุ \"{recordName}\" แล้ว จะหมดอายุในวันที่ {date} ถ้าเริ่มตอนนี้คุณจะมีเวลาเหลือเฟือ",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "ถึงเวลาเริ่มต่ออายุ \"{recordName}\" ({person}) แล้ว จะหมดอายุในวันที่ {date} ถ้าเริ่มตอนนี้จะมีเวลาเหลือเฟือ",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "การแจ้งเตือนวันหมดอายุ",
+  "notifChannelDescription": "การแจ้งเตือนก่อนรายการของคุณหมดอายุ",
+  "notifTestTitle": "การแจ้งเตือนทดสอบ",
+  "notifTestBody": "การแจ้งเตือนจาก Vaultara จะมาแบบนี้",
+  "notifTestAction": "ส่งการแจ้งเตือนทดสอบ",
+  "notifTestSubtitle": "ตรวจสอบว่าการแจ้งเตือนมาถึงโทรศัพท์เครื่องนี้",
+  "notifTestSent": "ส่งการทดสอบแล้ว ควรมาถึงภายในไม่กี่วินาที",
+  "notifAfterExpiryTitle": "เตือนฉันหลังรายการหมดอายุ",
+  "notifAfterExpirySubtitle": "3 และ 14 วันหลังจากนั้น หากยังไม่ได้ต่ออายุ",
+  "notifWeeklyTitle": "สรุปวันจันทร์",
+  "notifWeeklySubtitle": "ข้อความเช้าวันจันทร์เมื่อมีบางอย่างหมดอายุในสัปดาห์นั้น",
+  "notifPushSection": "ครัวเรือนและการอัปเดต",
+  "notifHouseholdTitle": "รายการที่แชร์",
+  "notifHouseholdSubtitle": "เมื่อรายการที่แชร์ใกล้หมดอายุและยังไม่มีใครต่ออายุ",
+  "notifUpdatesTitle": "การอัปเดตที่คุณขอ",
+  "notifUpdatesSubtitle": "เมื่อมีคนส่งรายละเอียดใหม่ของรายการ",
+  "notifSecurityNote": "การแจ้งเตือนการลงชื่อเข้าใช้ใหม่ในบัญชีของคุณจะถูกส่งเสมอ",
+  "notifIosHelpTitle": "ไม่ได้รับการแจ้งเตือนใช่ไหม",
+  "notifIosHelpSubtitle": "ตรวจสอบการตั้งค่า iPhone ของคุณ",
+  "notifIosHelpStep1": "เปิดการตั้งค่า แล้วเลือกการแจ้งเตือน แล้วเลือก Vaultara และเปิดอนุญาตการแจ้งเตือน",
+  "notifIosHelpStep2": "เปิดหน้าจอล็อก ศูนย์การแจ้งเตือน และแบนเนอร์",
+  "notifIosHelpStep3": "หากคุณใช้โฟกัส ให้เพิ่ม Vaultara ในแอปที่อนุญาต",
+  "notifIosHelpStep4": "เปิด Vaultara ทุกๆ สองสามสัปดาห์ iPhone เก็บการแจ้งเตือนล่วงหน้าได้จำนวนจำกัด และการเปิดแอปจะตั้งเวลาการแจ้งเตือนถัดไป",
+  "homeNextUpEmpty": "ไม่มีอะไรจะหมดอายุเร็วๆ นี้ ทุกอย่างเรียบร้อย",
+  "homeDueSoonChip": "{count, plural, other{{count} รายการครบกำหนดใน 30 วัน}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "หมวดหมู่ที่ปักหมุด"
 }

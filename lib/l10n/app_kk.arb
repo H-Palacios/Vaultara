@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara маңызды мерзімдерді бақылауға көмектеседі, ештеңе байқалмай мерзімі өтпейді.",
   "homeWelcomeSubtitleFirst": "Сізді көргенімізге қуаныштымыз. Vaultara маңызды күндер мен жазбаларды бір қауіпсіз жерде сақтауға көмектеседі.",
   "homeWelcomeSubtitleBack": "Қайта көргенімізге қуаныштымыз. Vaultara маңызды күндерді қарау үшін әрқашан дайын.",
-  "summaryAllCaption": "Vaultara жүйесінде",
-  "summaryExpiredTitle": "Аяқталған",
-  "summaryExpiredCaption": "Мерзімі өткен",
   "editorNotes": "Ескертпелер",
   "editorReminderNone": "Еске салғыш жоқ",
   "editorReminderOnExpiry": "Мерзімі өткен күні",
@@ -192,7 +189,6 @@
   "addRecord": "Жазба қосу",
   "noRecordsYet": "Әзірге жазбалар жоқ.",
   "deleteRecordTitle": "Жазбаны жою",
-  "summaryAllRecordsTitle": "Барлық жазбалар",
   "noGroupFound": "Әзірге топтар жоқ",
   "groupLabel": "{count, plural, one{{count} топ} other{{count} топ}}",
   "recordsLabel": "{count, plural, one{{count} жазба} other{{count} жазба}}",
@@ -455,7 +451,7 @@
   "addNotesHint": "Ескертпелер қосу (міндетті емес)",
   "expiryTimelineTitle": "Аяқталу уақыт шкаласы",
   "expiryTimelineSubtitle": "Сол айда аяқталатын жазбаларды көру үшін айды басыңыз",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 жазба} other{{count} жазба}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} жазба} other{{count} жазба}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Алдағы",
-  "summaryUpcomingCaption": "Келесі 30 күн ішінде",
-  "summaryUrgentTitle": "Шұғыл",
-  "summaryUrgentCaption": "Келесі 7 күн ішінде",
   "profileHeaderTitle": "Профиль",
   "profileTutorialsTitle": "Оқулықтар",
   "profileTutorialsSubtitle": "Қолданба Оқулықтарын Шолу",
@@ -498,7 +490,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Еске салғыш жоқ",
   "reminderOnExpiry": "Мерзімнің аяқталу күнінде",
-  "reminderDaysBefore": "{days, plural, one{1 күн бұрын} other{{days} күн бұрын}}",
+  "reminderDaysBefore": "{days, plural, one{{days} күн бұрын} other{{days} күн бұрын}}",
   "reminderCustomDaysTitle": "Реттелген күндерді енгізіңіз",
   "reminderCascadeTitle": "Каскадты еске салғыштар",
   "reminderCascadeSubtitle": "Жазбаның мерзімі бітпей тұрып бірнеше хабарландыру алыңыз",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "Алғашқы жазбаңызды қосыңыз",
   "smartInsightNoRecordsBody": "Жазбаларыңызды бақылауды бастаңыз, сонда Vaultara осында ақылды мәліметтерді көрсетеді.",
   "smartInsightExpiresTodaySingleBody": "{name} мерзімі бүгін өтеді. Егер оны жаңартып қойсаңыз, күнін осы жерде өзгертіңіз.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} мерзімі бүгін өтеді.} =1{{names} және тағы 1 жазба бүгін өтеді.} other{{names} және тағы {extra} жазба бүгін өтеді.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} мерзімі бүгін өтеді.} =1{{names} және тағы {extra} жазба бүгін өтеді.} other{{names} және тағы {extra} жазба бүгін өтеді.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} мерзімі ертең өтеді және еске салғышы жоқ. Өткізіп алмас үшін еске салғыш орнатыңыз.} other{{name} мерзімі {date} күні өтеді және еске салғышы жоқ. Өткізіп алмас үшін еске салғыш орнатыңыз.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} мерзімі {dateA} күні, ал {b} мерзімі {dateB} күні, шамамен бір уақытта өтеді. Екі жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} және {c} бәрі {lastDate} мерзіміне дейін, шамамен бір уақытта өтеді. Бірнеше жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} және тағы 1 жазба {lastDate} мерзіміне дейін, шамамен бір уақытта өтеді. Бірнеше жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.} other{{a}, {b} және тағы {extra} жазба {lastDate} мерзіміне дейін, шамамен бір уақытта өтеді. Бірнеше жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} және тағы {extra} жазба {lastDate} мерзіміне дейін, шамамен бір уақытта өтеді. Бірнеше жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.} other{{a}, {b} және тағы {extra} жазба {lastDate} мерзіміне дейін, шамамен бір уақытта өтеді. Бірнеше жазба бір-біріне өте жақын болғанда, біреуін ұмытып кету оңай.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Келесі күні ештеңенің мерзімі өтпейді. Келесі мерзіміңіз: {date}.} other{Жақын арадағы {days} күнде ештеңенің мерзімі өтпейді. Келесі мерзіміңіз: {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} санатындағы 1 жазбаңыздың мерзімі {date} күні өтеді. Оны байқамай қалу оңай.} other{{category} санатындағы {count} жазбаңыздың мерзімі {date} мерзіміне дейін өтеді. Олар осылай топтастырылғанда, біреуін ұмытып кету оңай.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Алдағы 1 мерзім еске салғышпен қамтылған. Басқа ештеңе назар аударуды талап етпейді.} other{Алдағы {count} мерзім еске салғыштармен қамтылған. Басқа ештеңе назар аударуды талап етпейді.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} санатындағы {count} жазбаңыздың мерзімі {date} күні өтеді. Оны байқамай қалу оңай.} other{{category} санатындағы {count} жазбаңыздың мерзімі {date} мерзіміне дейін өтеді. Олар осылай топтастырылғанда, біреуін ұмытып кету оңай.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Алдағы {count} мерзім еске салғышпен қамтылған. Басқа ештеңе назар аударуды талап етпейді.} other{Алдағы {count} мерзім еске салғыштармен қамтылған. Басқа ештеңе назар аударуды талап етпейді.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Бәрі жаңартылған. Қазіргі уақытта назар аударуды талап ететін ештеңе жоқ.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Қазіргі уақытта шұғыл ештеңе жоқ, бірақ алдағы 1 жазбаның әлі еске салғышы орнатылмаған.} other{Қазіргі уақытта шұғыл ештеңе жоқ, бірақ алдағы {count} жазбаның әлі еске салғыштары орнатылмаған.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Қазіргі уақытта шұғыл ештеңе жоқ, бірақ алдағы {count} жазбаның әлі еске салғышы орнатылмаған.} other{Қазіргі уақытта шұғыл ештеңе жоқ, бірақ алдағы {count} жазбаның әлі еске салғыштары орнатылмаған.}}",
   "smartInsightCloseExpiriesHeading": "Шамамен бір уақытта мерзімі өтеді",
   "plansHeadline": "Vaultara мүмкіндіктерін толық ашыңыз",
   "plansSubhead": "Шектеусіз жазбалар, жеке топтар және толықтай сіздің қалауыңызша бапталған еске салғыштар.",
@@ -625,7 +617,7 @@
   "reminderCascadeRemoveStep": "Өшіру",
   "reminderCascadeDuplicate": "Басқа еске салғыш бұл күнді қолданып қойған",
   "reminderCascadeOutOfRange": "{min} және {max} күн аралығында енгізіңіз",
-  "reminderCascadeStepLabel": "Еске салғыш {position}: {days, plural, =1{1 күн} other{{days} күн}} бұрын",
+  "reminderCascadeStepLabel": "Еске салғыш {position}: {days, plural, =1{{days} күн} other{{days} күн}} бұрын",
   "expiryTimelineNotReady": "Уақыт шкаласы бірнеше түрлі айда мерзімі аяқталатын жазбаларыңыз болған кезде пайда болады.",
   "verifyEmailResendIn": "{seconds} сек ішінде қайта жіберу",
   "verifyEmailSpamHint": "Хат келмеді ме? Спам немесе қалаусыз хаттар қалтасын тексеріңіз.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "Бұл тіркелгі расталмаған. Қазір шықсаңыз, ол жойылады және кез келген электрондық пошта мекенжайымен қайта тіркеле аласыз.",
   "verifyEmailDiscardAction": "Жою",
   "verifyEmailKeepWaiting": "Күте тұру",
-  "expiringBadge": "{count, plural, =1{1 мерзімі жақында аяқталады} other{{count} мерзімі жақында аяқталады}}",
+  "expiringBadge": "{count, plural, =1{{count} мерзімі жақында аяқталады} other{{count} мерзімі жақында аяқталады}}",
   "noRecordsToday": "Бүгін ештеңенің мерзімі аяқталмайды",
   "noRecordsTomorrow": "Ертең ештеңенің мерзімі аяқталмайды",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} мерзімі бүгін аяқталады} =1{{recordName} мерзімі ертең аяқталады} other{{recordName} мерзімі {days} күннен кейін аяқталады}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} мерзімі бүгін аяқталады. Жаңартып қойдыңыз ба? Мерзімінің аяқталу күнін өзгертіңіз.} =1{{firstName}, {recordName} мерзімі ертең аяқталады. Мерзімі өтіп кетпеуі үшін оны қазір жаңартыңыз.} other{{firstName}, {recordName} мерзімі {date} күні аяқталады. Ерте жаңарту сізді қорғалған күйде ұстайды.}}",
   "cascadeFinalStepTitle": "Соңғы еске салғыш: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} мерзімі {days, plural, =1{ертең} other{{days} күннен кейін, {date} күні}} аяқталады. Бұл соңғы еске салғышыңыз, оны жаңартыңыз немесе күнін өзгертіңіз.",
   "notificationsTitle": "Хабарландырулар",
   "notificationsProfileEnabledSubtitle": "Еске салғыштар келетін уақыт: {time}.",
   "notificationsProfileDisabledSubtitle": "Хабарландырулар өшірілген.",
@@ -1670,13 +1659,13 @@
   "dailyDigestSwitchSubtitle": "Еске салғыш уақытында сол күнгі барлық нәрсені көрсететін бір хабарландыру алыңыз.",
   "dailyDigestTurnedOn": "Енді еске салғыштарыңыз бір күндік қорытынды ретінде келеді.",
   "dailyDigestTurnedOff": "Әр жазбаның бөлек еске салғыштары қайта қосылды.",
-  "dailyDigestTitle": "{count, plural, one{1 жазбаға назар аудару қажет} other{{count} жазбаға назар аудару қажет}}",
+  "dailyDigestTitle": "{count, plural, one{{count} жазбаға назар аудару қажет} other{{count} жазбаға назар аудару қажет}}",
   "dailyDigestBody": "Жақында: {names}.",
   "dailyDigestBodyMore": "Жақында: {names} және тағы {count}.",
   "dailyDigestLockedRecord": "құлыпталған жазба",
   "renewReasonRepeat": "{months, plural, one{Қайталау параметріңізге сәйкес, әр ай сайын} other{Қайталау параметріңізге сәйкес, әр {months} ай сайын}}",
   "renewReasonHistory": "{count, plural, one{Соңғы жаңартуыңыз негізінде} other{Соңғы {count} жаңартуыңыз негізінде}}",
-  "renewReasonTypical": "{years, plural, one{Әдетте 1 жылға жарамды} other{Әдетте {years} жылға жарамды}}",
+  "renewReasonTypical": "{years, plural, one{Әдетте {years} жылға жарамды} other{Әдетте {years} жылға жарамды}}",
   "renewChangeHint": "Өзгерту үшін күнді басыңыз.",
   "renewPickDate": "Жаңа мерзім күнін таңдаңыз",
   "renewPickDateHint": "Жаңа құжатыңызда көрсетілген күнді таңдаңыз.",
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} мерзімі бүгін аяқталады",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} мерзімі ертең аяқталады",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} мерзімі {days} күннен кейін аяқталады} other{{recordName} мерзімі {days} күннен кейін аяқталады}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} мерзімі аяқталды",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Құлыпталған жазба назарыңызды қажет етеді",
+  "remLockedBody": "Оның күні — {date}. Қай жазба екенін көру үшін Vaultara құлпын ашыңыз.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "«{recordName}» жазбаңыздың мерзімі бүгін аяқталады.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "«{recordName}» жазбаңыздың мерзімі ертең аяқталады.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "«{recordName}» жазбаңыздың мерзімі {date} күні аяқталады.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, «{recordName}» жазбаңыздың мерзімі бүгін аяқталады.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, «{recordName}» жазбаңыздың мерзімі ертең аяқталады.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, «{recordName}» жазбаңыздың мерзімі {date} күні аяқталады.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: «{recordName}» жазбасының мерзімі бүгін аяқталады.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: «{recordName}» жазбасының мерзімі ертең аяқталады.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: «{recordName}» жазбасының мерзімі {date} күні аяқталады.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "«{recordName}» жазбаңыздың мерзімі {date} күні аяқталды.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: «{recordName}» жазбасының мерзімі {date} күні аяқталды.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Жаңартып қойдыңыз ба? Күнін өзгертіңіз.",
+  "remTipTomorrow": "Мерзімі өтпеуі үшін қазір жаңартыңыз.",
+  "remTipEarly": "Ерте жаңарту сізді қорғаулы ұстайды.",
+  "remTipLast": "Бұл мерзім аяқталғанға дейінгі соңғы еске салу.",
+  "remTipExpired": "Жаңартыңыз немесе жаңартып қойсаңыз, күнін өзгертіңіз.",
+  "remStartBody": "«{recordName}» жаңартуды бастайтын уақыт келді. Мерзімі {date} күні аяқталады, қазір бастасаңыз, уақытыңыз жеткілікті болады.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "«{recordName}» ({person}) жаңартуды бастайтын уақыт келді. Мерзімі {date} күні аяқталады, қазір бастаса, уақыт жеткілікті болады.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Мерзім туралы еске салғыштар",
+  "notifChannelDescription": "Жазбаларыңыздың мерзімі аяқталғанға дейін еске салу",
+  "notifTestTitle": "Сынақ хабарландыруы",
+  "notifTestBody": "Vaultara еске салғыштары осылай келеді.",
+  "notifTestAction": "Сынақ хабарландыруын жіберу",
+  "notifTestSubtitle": "Еске салғыштар осы телефонға жететінін тексеріңіз",
+  "notifTestSent": "Сынақ жіберілді. Бірнеше секундта келуі керек.",
+  "notifAfterExpiryTitle": "Жазба мерзімі аяқталғаннан кейін еске салу",
+  "notifAfterExpirySubtitle": "3 және 14 күннен кейін, егер жаңартылмаса",
+  "notifWeeklyTitle": "Дүйсенбі шолуы",
+  "notifWeeklySubtitle": "Сол аптада бірдеңенің мерзімі аяқталса, дүйсенбі таңертең хабар",
+  "notifPushSection": "Отбасы және жаңартулар",
+  "notifHouseholdTitle": "Бөлісілген жазбалар",
+  "notifHouseholdSubtitle": "Бөлісілген жазбаның мерзімі бітуге жақын және оны ешкім жаңартпаса",
+  "notifUpdatesTitle": "Сіз сұраған жаңартулар",
+  "notifUpdatesSubtitle": "Біреу жазбаның жаңа деректерін жібергенде",
+  "notifSecurityNote": "Аккаунтыңызға жаңа кірулер туралы ескертулер әрқашан жіберіледі.",
+  "notifIosHelpTitle": "Еске салғыштар келмей ме?",
+  "notifIosHelpSubtitle": "iPhone параметрлерін тексеріңіз",
+  "notifIosHelpStep1": "Параметрлерді, содан кейін Хабарландыруларды, содан кейін Vaultara-ны ашып, Хабарландыруларға рұқсат беруді қосыңыз.",
+  "notifIosHelpStep2": "Құлып экранын, Хабарландыру орталығын және Баннерлерді қосыңыз.",
+  "notifIosHelpStep3": "Фокус режимін қолдансаңыз, Vaultara-ны рұқсат етілген қолданбаларға қосыңыз.",
+  "notifIosHelpStep4": "Vaultara-ны бірнеше апта сайын ашып тұрыңыз. iPhone алдағы еске салғыштардың шектеулі санын ғана сақтайды, ал қолданбаны ашу келесілерін жоспарлайды.",
+  "homeNextUpEmpty": "Жақында ештеңенің мерзімі бітпейді. Бәрі дайын.",
+  "homeDueSoonChip": "{count, plural, one{30 күнде {count} мерзімі бітеді} other{30 күнде {count} мерзімі бітеді}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Бекітілген санаттар"
 }

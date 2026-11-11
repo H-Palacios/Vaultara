@@ -360,15 +360,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Waan ku faraxsanahay inaan ku aragno mar kale. Vaultara waa diyaar markaad rabto inaad dib u eegto taariikhahaaga iyo diiwaannadaada muhiimka ah.';
 
   @override
-  String get summaryAllCaption => 'Lagula socdo Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Dhacay';
-
-  @override
-  String get summaryExpiredCaption => 'Taariikhda dhacday way dhaaftay';
-
-  @override
   String get editorNotes => 'Qoraallo';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Tirtir diiwaan';
-
-  @override
-  String get summaryAllRecordsTitle => 'Dhammaan diiwaannada';
 
   @override
   String get noGroupFound => 'Kooxo wali ma jiraan';
@@ -829,22 +817,10 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count diiwaan',
-      one: '1 diiwaan',
+      one: '$count diiwaan',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Soo socda';
-
-  @override
-  String get summaryUpcomingCaption => 'Gudaha 30 maalmood';
-
-  @override
-  String get summaryUrgentTitle => 'Degdeg ah';
-
-  @override
-  String get summaryUrgentCaption => 'Gudaha 7 maalmood';
 
   @override
   String get profileHeaderTitle => 'Bogga shakhsiga';
@@ -945,7 +921,7 @@ class AppLocalizationsSo extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days maalmood ka hor',
-      one: '1 maalin ka hor',
+      one: '$days maalin ka hor',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsSo extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names iyo $extra kale ayaa maanta dhacaya.',
-      one: '$names iyo 1 kale ayaa maanta dhacaya.',
+      one: '$names iyo $extra kale ayaa maanta dhacaya.',
       zero: '$names maanta ayay dhacayaan.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsSo extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b iyo $extra diiwaanno kale ayaa dhacaya marka ay taariikhdu tahay $lastDate, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay dhowr sidan isuugu dhow yihiin.',
-      one: '$a, $b iyo 1 diiwaan oo kale ayaa dhacaya marka ay taariikhdu tahay $lastDate, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay dhowr sidan isuugu dhow yihiin.',
+      one: '$a, $b iyo $extra diiwaan oo kale ayaa dhacaya marka ay taariikhdu tahay $lastDate, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay dhowr sidan isuugu dhow yihiin.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ka mid ah diiwaannadaada $category ayaa dhacaya marka ay taariikhdu tahay $date. Waa u fududahay inaad mid illoowdo marka sidan loo wada kooxeeyo.',
-      one: '1 ka mid ah diiwaannadaada $category ayaa dhacaya taariikhda $date. Waa u fududahay inaad iska indhotirto.',
+      one: '$count ka mid ah diiwaannadaada $category ayaa dhacaya taariikhda $date. Waa u fududahay inaad iska indhotirto.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dhicitaanno oo soo socda waxaa daboolay xusuusiyeyaal. Wax kale oo u baahan feejignaantaada ma jiraan.',
-      one: '1 dhicitaan oo soo socda waxaa daboolay xusuusin. Wax kale oo u baahan feejignaantaada ma jiraan.',
+      one: '$count dhicitaan oo soo socda waxaa daboolay xusuusin. Wax kale oo u baahan feejignaantaada ma jiraan.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Waxba ma degdegsana hadda, laakiin $count diiwaanno oo soo socda ayaan weli lahayn xusuusin.',
-      one: 'Waxba ma degdegsana hadda, laakiin 1 diiwaan oo soo socda ayaan weli lahayn xusuusin.',
+      one: 'Waxba ma degdegsana hadda, laakiin $count diiwaan oo soo socda ayaan weli lahayn xusuusin.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsSo extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days maalmood',
-      one: '1 maalin',
+      one: '$days maalin',
     );
     return 'Xusuusin $position: $_temp0 ka hor';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ayaa dhawaan dhacaya',
-      one: '1 ayaa dhawaan dhacaya',
+      one: '$count ayaa dhawaan dhacaya',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get noRecordsTomorrow => 'Waxba ma dhacayo berri';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Diiwaanka $recordName wuxuu dhacayaa $days maalmood kaddib',
-      one: 'Diiwaanka $recordName wuxuu dhacayaa berri',
-      zero: 'Diiwaanka $recordName wuxuu dhacayaa maanta',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, diiwaankaaga $recordName wuxuu dhacayaa $date. Cusboonaysiinta waqti hore waxay xaqiijinaysaa ansaxnimo joogto ah.',
-      one: '$firstName, diiwaankaaga $recordName wuxuu dhacayaa berri. Cusboonaysii markiiba si uusan ansaxnimadiisa u lumin.',
-      zero: '$firstName, diiwaankaaga $recordName wuxuu dhacayaa maanta. Miyaad hore u cusboonaysiisay? Wax ka beddel taariikhda dhicitaanka.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Xasuusinta ugu dambaysa: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days maalmood kaddib, taariikhda $date',
-      one: 'berri',
-    );
-    return '$firstName, diiwaankaaga $recordName wuxuu dhacayaa $_temp0. Tani waa xasuusintaada ugu dambaysa, cusboonaysii ama taariikhdiisa wax ka beddel.';
   }
 
   @override
@@ -4005,7 +3946,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count sawir wali lama qarsan',
-      one: '1 sawir wali lama qarsan',
+      one: '$count sawir wali lama qarsan',
     );
     return '$_temp0';
   }
@@ -4126,7 +4067,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Waxaad haysataa $count sawir oo wali aan la qarsan. Hadda ayaan qarsan karnaa.',
-      one: 'Waxaad haysataa 1 sawir oo wali aan la qarsan. Hadda ayaan qarsan karnaa.',
+      one: 'Waxaad haysataa $count sawir oo wali aan la qarsan. Hadda ayaan qarsan karnaa.',
     );
     return '$_temp0 Vaultara furan ka dhig ilaa ay dhammaato.';
   }
@@ -4161,7 +4102,7 @@ class AppLocalizationsSo extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Isku day aad u badan. Fadlan sug $seconds ilbiriqsi oo isku day mar kale.',
-      one: 'Isku day aad u badan. Fadlan sug 1 ilbiriqsi oo isku day mar kale.',
+      one: 'Isku day aad u badan. Fadlan sug $seconds ilbiriqsi oo isku day mar kale.',
     );
     return '$_temp0';
   }
@@ -4172,7 +4113,7 @@ class AppLocalizationsSo extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Isku day aad u badan. Fadlan sug $minutes daqiiqo oo isku day mar kale.',
-      one: 'Isku day aad u badan. Fadlan sug 1 daqiiqo oo isku day mar kale.',
+      one: 'Isku day aad u badan. Fadlan sug $minutes daqiiqo oo isku day mar kale.',
     );
     return '$_temp0';
   }
@@ -5016,7 +4957,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count diiwaan ayaa u baahan feejignaan',
-      one: '1 diiwaan ayaa u baahan feejignaan',
+      one: '$count diiwaan ayaa u baahan feejignaan',
     );
     return '$_temp0';
   }
@@ -5062,7 +5003,7 @@ class AppLocalizationsSo extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Caadi ahaan wuxuu shaqeeyaa $years sano',
-      one: 'Caadi ahaan wuxuu shaqeeyaa 1 sano',
+      one: 'Caadi ahaan wuxuu shaqeeyaa $years sano',
     );
     return '$_temp0';
   }
@@ -6788,7 +6729,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count maalmood ayaa harsan',
-      one: '1 maalin ayaa harsan',
+      one: '$count maalin ayaa harsan',
     );
     return '$_temp0';
   }
@@ -6799,7 +6740,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count maalmood ka hor',
-      one: '1 maalin ka hor',
+      one: '$count maalin ka hor',
     );
     return '$_temp0';
   }
@@ -7159,7 +7100,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.',
-      one: '1 diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.',
+      one: '$count diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.',
     );
     return '$_temp0';
   }
@@ -7579,7 +7520,7 @@ class AppLocalizationsSo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tallaabo',
-      one: '1 tallaabo',
+      one: '$count tallaabo',
     );
     return '$_temp0';
   }
@@ -8275,4 +8216,204 @@ class AppLocalizationsSo extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Xusuusin: $name wuxuu dhacayaa $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName wuxuu dhacayaa maanta';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName wuxuu dhacayaa berri';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName wuxuu dhacayaa $days maalmood kadib',
+      one: '$recordName wuxuu dhacayaa $days maalin kadib',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName wuu dhacay';
+  }
+
+  @override
+  String get remLockedTitle => 'Diiwaan xiran ayaa u baahan dareenkaaga';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Taariikhdiisu waa $date. Fur Vaultara si aad u aragto diiwaanka uu yahay.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Diiwaankaaga \"$recordName\" wuxuu dhacayaa maanta.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Diiwaankaaga \"$recordName\" wuxuu dhacayaa berri.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Diiwaankaaga \"$recordName\" wuxuu dhacayaa $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, diiwaankaaga \"$recordName\" wuxuu dhacayaa maanta.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, diiwaankaaga \"$recordName\" wuxuu dhacayaa berri.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, diiwaankaaga \"$recordName\" wuxuu dhacayaa $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Diiwaanka \"$recordName\" ee $person wuxuu dhacayaa maanta.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Diiwaanka \"$recordName\" ee $person wuxuu dhacayaa berri.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Diiwaanka \"$recordName\" ee $person wuxuu dhacayaa $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Diiwaankaaga \"$recordName\" wuxuu dhacay $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Diiwaanka \"$recordName\" ee $person wuxuu dhacay $date.';
+  }
+
+  @override
+  String get remTipToday => 'Mar hore ma cusboonaysiisay? Cusboonaysii taariikhdiisa.';
+
+  @override
+  String get remTipTomorrow => 'Hadda cusboonaysii si uusan u dhicin.';
+
+  @override
+  String get remTipEarly => 'Cusboonaysiinta goor hore waxay kuu haysaa ammaan.';
+
+  @override
+  String get remTipLast => 'Kani waa xusuusinta kuugu dambaysa ka hor inta uusan dhicin.';
+
+  @override
+  String get remTipExpired => 'Cusboonaysii, ama cusboonaysii taariikhdiisa haddii aad horeba u samaysay.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Waa waqtigii aad bilaabi lahayd cusboonaysiinta \"$recordName\". Wuxuu dhacayaa $date, markaa haddii aad hadda bilowdo waqti badan ayaad haysan doontaa.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Waa waqtigii la bilaabi lahaa cusboonaysiinta \"$recordName\" ee $person. Wuxuu dhacayaa $date, markaa bilaabidda hadda waxay reebaysaa waqti badan.';
+  }
+
+  @override
+  String get notifChannelName => 'Xusuusinta dhicitaanka';
+
+  @override
+  String get notifChannelDescription => 'Xusuusin ka hor inta diiwaannadaadu aysan dhicin';
+
+  @override
+  String get notifTestTitle => 'Ogeysiis tijaabo ah';
+
+  @override
+  String get notifTestBody => 'Xusuusinta Vaultara sidan ayay u timaadaa.';
+
+  @override
+  String get notifTestAction => 'Dir ogeysiis tijaabo ah';
+
+  @override
+  String get notifTestSubtitle => 'Hubi in xusuusintu gaarto taleefankan';
+
+  @override
+  String get notifTestSent => 'Tijaabada waa la diray. Waa inay timaadaa dhowr ilbiriqsi gudahood.';
+
+  @override
+  String get notifAfterExpiryTitle => 'I xusuusi kadib marka diiwaan dhaco';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 iyo 14 maalmood kadib, haddii aan la cusboonaysiin';
+
+  @override
+  String get notifWeeklyTitle => 'Soo koobidda Isniinta';
+
+  @override
+  String get notifWeeklySubtitle => 'Fariin subaxa Isniinta marka wax dhacayaan toddobaadkaas';
+
+  @override
+  String get notifPushSection => 'Qoyska iyo cusboonaysiinta';
+
+  @override
+  String get notifHouseholdTitle => 'Diiwaannada la wadaagay';
+
+  @override
+  String get notifHouseholdSubtitle => 'Marka diiwaan la wadaagay uu ku dhow yahay inuu dhaco oo aan cidna cusboonaysiin';
+
+  @override
+  String get notifUpdatesTitle => 'Cusboonaysiinta aad codsatay';
+
+  @override
+  String get notifUpdatesSubtitle => 'Marka qof soo diro faahfaahinta cusub ee diiwaan';
+
+  @override
+  String get notifSecurityNote => 'Digniinaha ku saabsan galitaannada cusub ee akoonkaaga had iyo jeer waa la diraa.';
+
+  @override
+  String get notifIosHelpTitle => 'Ma helaysid xusuusin?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Hubi dejinta iPhone-kaaga';
+
+  @override
+  String get notifIosHelpStep1 => 'Fur Settings, kadib Notifications, kadib Vaultara, oo daar Allow Notifications.';
+
+  @override
+  String get notifIosHelpStep2 => 'Daar Lock Screen, Notification Centre iyo Banners.';
+
+  @override
+  String get notifIosHelpStep3 => 'Haddii aad isticmaasho Focus, ku dar Vaultara barnaamijyada uu oggol yahay.';
+
+  @override
+  String get notifIosHelpStep4 => 'Fur Vaultara dhowr toddobaad kasta. iPhone wuxuu kaydiyaa tiro xaddidan oo xusuusin ah oo horay u socota, furitaanka barnaamijkuna wuxuu qorsheeyaa kuwa xiga.';
+
+  @override
+  String get homeNextUpEmpty => 'Waxba dhowaan ma dhacayaan. Wax walba waa diyaar.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ayaa ku eg 30 maalmood gudahood',
+      one: '$count ayaa ku eg 30 maalmood gudahood',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Qaybaha la dhejiyay';
 }

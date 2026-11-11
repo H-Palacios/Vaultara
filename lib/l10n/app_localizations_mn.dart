@@ -360,15 +360,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Таныг дахин харах сайхан байна. Vaultara таны чухал мэдээлэлд үргэлж бэлэн.';
 
   @override
-  String get summaryAllCaption => 'Vaultara-д хянагдсан';
-
-  @override
-  String get summaryExpiredTitle => 'Дууссан';
-
-  @override
-  String get summaryExpiredCaption => 'Хугацаа хэтэрсэн';
-
-  @override
   String get editorNotes => 'Тэмдэглэл';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Бичлэг устгах';
-
-  @override
-  String get summaryAllRecordsTitle => 'Бүх бичлэг';
 
   @override
   String get noGroupFound => 'Одоогоор бүлэг алга';
@@ -829,22 +817,10 @@ class AppLocalizationsMn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count бичлэг',
-      one: '1 бичлэг',
+      one: '$count бичлэг',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Удахгүй болох';
-
-  @override
-  String get summaryUpcomingCaption => '30 хоногийн дотор';
-
-  @override
-  String get summaryUrgentTitle => 'Яаралтай';
-
-  @override
-  String get summaryUrgentCaption => '7 хоногийн дотор';
 
   @override
   String get profileHeaderTitle => 'Профайл';
@@ -1047,7 +1023,7 @@ class AppLocalizationsMn extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names болон дахин $extra бичлэг өнөөдөр дуусна.',
-      one: '$names болон дахин 1 бичлэг өнөөдөр дуусна.',
+      one: '$names болон дахин $extra бичлэг өнөөдөр дуусна.',
       zero: '$names өнөөдөр дуусна.',
     );
     return '$_temp0';
@@ -1080,7 +1056,7 @@ class AppLocalizationsMn extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b болон дахин $extra бичлэг $lastDate гэхэд буюу бараг ижил хугацаанд дуусна. Хэд хэдэн бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.',
-      one: '$a, $b болон дахин 1 бичлэг $lastDate гэхэд буюу бараг ижил хугацаанд дуусна. Хэд хэдэн бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.',
+      one: '$a, $b болон дахин $extra бичлэг $lastDate гэхэд буюу бараг ижил хугацаанд дуусна. Хэд хэдэн бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.',
     );
     return '$_temp0';
   }
@@ -1102,7 +1078,7 @@ class AppLocalizationsMn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category ангилал дахь таны $count бичлэг $date гэхэд дуусна. Эдгээрийг ингэж багцалсан үед нэгийг нь мартах амархан байдаг.',
-      one: '$category ангилал дахь таны 1 бичлэг $date-нд дуусна. Үүнийг анзааралгүй өнгөрөөх амархан.',
+      one: '$category ангилал дахь таны $count бичлэг $date-нд дуусна. Үүнийг анзааралгүй өнгөрөөх амархан.',
     );
     return '$_temp0';
   }
@@ -1113,7 +1089,7 @@ class AppLocalizationsMn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Удахгүй хугацаа нь дуусах $count зүйлд сануулга тохируулсан байна. Таны анхаарал хандуулах өөр зүйл алга.',
-      one: 'Удахгүй хугацаа нь дуусах 1 зүйлд сануулга тохируулсан байна. Таны анхаарал хандуулах өөр зүйл алга.',
+      one: 'Удахгүй хугацаа нь дуусах $count зүйлд сануулга тохируулсан байна. Таны анхаарал хандуулах өөр зүйл алга.',
     );
     return '$_temp0';
   }
@@ -1127,7 +1103,7 @@ class AppLocalizationsMn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Одоогоор яаралтай зүйл байхгүй ч удахгүй хугацаа нь дуусах $count бичлэгт сануулга хараахан тохируулаагүй байна.',
-      one: 'Одоогоор яаралтай зүйл байхгүй ч удахгүй хугацаа нь дуусах 1 бичлэгт сануулга хараахан тохируулаагүй байна.',
+      one: 'Одоогоор яаралтай зүйл байхгүй ч удахгүй хугацаа нь дуусах $count бичлэгт сануулга хараахан тохируулаагүй байна.',
     );
     return '$_temp0';
   }
@@ -1251,7 +1227,7 @@ class AppLocalizationsMn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days өдрийн',
-      one: '1 өдрийн',
+      one: '$days өдрийн',
     );
     return 'Сануулга $position: $_temp0 өмнө';
   }
@@ -1288,7 +1264,7 @@ class AppLocalizationsMn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count хугацаа дуусах гэж байна',
-      one: '1 хугацаа дуусах гэж байна',
+      one: '$count хугацаа дуусах гэж байна',
     );
     return '$_temp0';
   }
@@ -1300,43 +1276,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get noRecordsTomorrow => 'Маргааш юу ч дуусахгүй';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName-ийн хугацаа $days өдрийн дараа дуусна',
-      one: '$recordName-ийн хугацаа маргааш дуусна',
-      zero: '$recordName-ийн хугацаа өнөөдөр дуусна',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, таны $recordName-ийн хугацаа $date өдөр дуусна. Эрт сунгах нь таны үйлчилгээг тасалдуулахгүй байлгана.',
-      one: '$firstName, таны $recordName-ийн хугацаа маргааш дуусч байна. Хугацаа нь дуусахаас өмнө одоо сунгана уу.',
-      zero: '$firstName, таны $recordName-ийн хугацаа өнөөдөр дуусч байна. Та үүнийг сунгасан уу? Дуусах огноог шинэчилнэ үү.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Сүүлчийн сануулга: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days өдрийн дараа, $date-нд',
-      one: 'маргааш',
-    );
-    return '$firstName, таны $recordName-ийн хугацаа $_temp0 дуусна. Энэ бол таны сүүлчийн сануулга тул сунгах эсвэл огноог нь шинэчилнэ үү.';
   }
 
   @override
@@ -8266,4 +8207,204 @@ class AppLocalizationsMn extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Сануулга: $name $date-нд дуусна';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName-ийн хугацаа өнөөдөр дуусна';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName-ийн хугацаа маргааш дуусна';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName-ийн хугацаа $days хоногийн дараа дуусна',
+      one: '$recordName-ийн хугацаа $days хоногийн дараа дуусна',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName-ийн хугацаа дууссан';
+  }
+
+  @override
+  String get remLockedTitle => 'Түгжигдсэн бичлэг таны анхаарлыг шаардаж байна';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Түүний огноо $date. Аль бичлэг болохыг харахын тулд Vaultara-гийн түгжээг тайлна уу.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Таны \"$recordName\" бичлэгийн хугацаа өнөөдөр дуусна.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Таны \"$recordName\" бичлэгийн хугацаа маргааш дуусна.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Таны \"$recordName\" бичлэгийн хугацаа $date-нд дуусна.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, таны \"$recordName\" бичлэгийн хугацаа өнөөдөр дуусна.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, таны \"$recordName\" бичлэгийн хугацаа маргааш дуусна.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, таны \"$recordName\" бичлэгийн хугацаа $date-нд дуусна.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: \"$recordName\" бичлэгийн хугацаа өнөөдөр дуусна.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: \"$recordName\" бичлэгийн хугацаа маргааш дуусна.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" бичлэгийн хугацаа $date-нд дуусна.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Таны \"$recordName\" бичлэгийн хугацаа $date-нд дууссан.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" бичлэгийн хугацаа $date-нд дууссан.';
+  }
+
+  @override
+  String get remTipToday => 'Аль хэдийн сунгасан уу? Огноог нь шинэчилнэ үү.';
+
+  @override
+  String get remTipTomorrow => 'Хугацаа нь дуусахгүйн тулд одоо сунгана уу.';
+
+  @override
+  String get remTipEarly => 'Эрт сунгах нь таныг хамгаалалттай байлгана.';
+
+  @override
+  String get remTipLast => 'Энэ бол хугацаа дуусахаас өмнөх сүүлийн сануулга.';
+
+  @override
+  String get remTipExpired => 'Сунгана уу, эсвэл аль хэдийн сунгасан бол огноог нь шинэчилнэ үү.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\"-ийг сунгаж эхлэх цаг боллоо. Хугацаа нь $date-нд дуусах тул одоо эхэлбэл танд хангалттай хугацаа байна.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person)-ийг сунгаж эхлэх цаг боллоо. Хугацаа нь $date-нд дуусах тул одоо эхэлбэл хангалттай хугацаа байна.';
+  }
+
+  @override
+  String get notifChannelName => 'Хугацааны сануулга';
+
+  @override
+  String get notifChannelDescription => 'Таны бичлэгүүдийн хугацаа дуусахаас өмнөх сануулга';
+
+  @override
+  String get notifTestTitle => 'Туршилтын мэдэгдэл';
+
+  @override
+  String get notifTestBody => 'Vaultara-гийн сануулга ингэж ирнэ.';
+
+  @override
+  String get notifTestAction => 'Туршилтын мэдэгдэл илгээх';
+
+  @override
+  String get notifTestSubtitle => 'Сануулга энэ утсанд ирж байгааг шалгана уу';
+
+  @override
+  String get notifTestSent => 'Туршилт илгээгдлээ. Хэдхэн секундэд ирэх ёстой.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Бичлэгийн хугацаа дууссаны дараа сануулах';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 ба 14 хоногийн дараа, хэрэв сунгаагүй бол';
+
+  @override
+  String get notifWeeklyTitle => 'Даваа гарагийн тойм';
+
+  @override
+  String get notifWeeklySubtitle => 'Тэр долоо хоногт ямар нэг зүйлийн хугацаа дуусах бол даваа гарагийн өглөө мэдэгдэл';
+
+  @override
+  String get notifPushSection => 'Гэр бүл ба шинэчлэлүүд';
+
+  @override
+  String get notifHouseholdTitle => 'Хуваалцсан бичлэгүүд';
+
+  @override
+  String get notifHouseholdSubtitle => 'Хуваалцсан бичлэгийн хугацаа дуусах дөхөж, хэн ч сунгаагүй үед';
+
+  @override
+  String get notifUpdatesTitle => 'Таны хүссэн шинэчлэлүүд';
+
+  @override
+  String get notifUpdatesSubtitle => 'Хэн нэгэн бичлэгийн шинэ мэдээллийг илгээх үед';
+
+  @override
+  String get notifSecurityNote => 'Таны бүртгэлд шинээр нэвтэрсэн тухай сэрэмжлүүлэг үргэлж илгээгдэнэ.';
+
+  @override
+  String get notifIosHelpTitle => 'Сануулга ирэхгүй байна уу?';
+
+  @override
+  String get notifIosHelpSubtitle => 'iPhone-ийн тохиргоогоо шалгана уу';
+
+  @override
+  String get notifIosHelpStep1 => 'Тохиргоо, дараа нь Мэдэгдэл, дараа нь Vaultara-г нээж, Мэдэгдлийг зөвшөөрөхийг асаана уу.';
+
+  @override
+  String get notifIosHelpStep2 => 'Түгжээний дэлгэц, Мэдэгдлийн төв болон Баннеруудыг асаана уу.';
+
+  @override
+  String get notifIosHelpStep3 => 'Хэрэв Фокус ашигладаг бол Vaultara-г зөвшөөрөгдсөн аппуудад нэмнэ үү.';
+
+  @override
+  String get notifIosHelpStep4 => 'Vaultara-г хэдэн долоо хоног тутам нээгээрэй. iPhone урьдчилан цөөн тооны сануулга л хадгалдаг бөгөөд аппыг нээхэд дараагийнх нь төлөвлөгдөнө.';
+
+  @override
+  String get homeNextUpEmpty => 'Ойрын хугацаанд юу ч дуусахгүй. Бүх зүйл бэлэн.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 хоногт $count дуусна',
+      one: '30 хоногт $count дуусна',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Бэхэлсэн ангиллууд';
 }

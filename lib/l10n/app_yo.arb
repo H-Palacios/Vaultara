@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleFirst": "Inú wa dùn láti rí ọ níbí. Vaultara n ṣe iranlọwọ fun ọ lati ṣeto awọn ọjọ ati awọn igbasilẹ pataki ni ibi kan ti o ni aabo.",
   "homeWelcomeSubtitleBack": "Inú wa dùn láti rí ọ padà. Vaultara ṣetan nigbakugba ti o ba fẹ lati tún wo awọn ọjọ ati awọn igbasilẹ pataki rẹ.",
   "homeWelcomeTitle": "Kaabọ",
-  "summaryAllCaption": "Tẹle ninu Vaultara",
-  "summaryExpiredTitle": "Ti parí",
-  "summaryExpiredCaption": "Ọjọ́ ipari ti kọja",
   "editorNotes": "Àwọn àkọsílẹ̀",
   "editorReminderNone": "Ko si iranti",
   "editorReminderOnExpiry": "Ni ọjọ́ ipari",
@@ -192,7 +189,6 @@
   "addRecord": "Ṣafikun igbasilẹ",
   "noRecordsYet": "Ko si awọn igbasilẹ sibẹsibẹ.",
   "deleteRecordTitle": "Pa igbasilẹ rẹ",
-  "summaryAllRecordsTitle": "Gbogbo awọn igbasilẹ",
   "noGroupFound": "Ko si ẹgbẹ kankan sibẹ",
   "groupLabel": "{count, plural, one{{count} ẹgbẹ} other{{count} awọn ẹgbẹ}}",
   "recordsLabel": "{count, plural, one{{count} igbasilẹ} other{{count} awọn igbasilẹ}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Ṣafikun awọn akọsilẹ (aṣayan)",
   "expiryTimelineTitle": "Ilana akoko ipari",
   "expiryTimelineSubtitle": "Tẹ oṣù kan láti rí àwọn igbasilẹ tó parí ní oṣù náà",
-  "expiryTimelineDetailCount": "{count, plural, =1{Igbasilẹ 1} other{Àwọn igbasilẹ {count}}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{Igbasilẹ {count}} other{Àwọn igbasilẹ {count}}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Tó ń bọ̀",
-  "summaryUpcomingCaption": "Láàárín ọjọ́ 30",
-  "summaryUrgentTitle": "Kíákíá",
-  "summaryUrgentCaption": "Láàárín ọjọ́ 7",
   "profileHeaderTitle": "Profaili",
   "profileTutorialsTitle": "Àwọn Ìtọ́nisọ́nà",
   "profileTutorialsSubtitle": "Ṣàwárí Àwọn Ìtọ́nisọ́nà Ẹ̀rọ",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Ko si iranti",
   "reminderOnExpiry": "Ni ọjọ ipari",
-  "reminderDaysBefore": "{days, plural, one{1 ọjọ ṣaaju} other{{days} ọjọ ṣaaju}}",
+  "reminderDaysBefore": "{days, plural, one{{days} ọjọ ṣaaju} other{{days} ọjọ ṣaaju}}",
   "reminderCustomDaysTitle": "Tẹ awọn ọjọ aṣa",
   "reminderCascadeTitle": "Awọn iranti alẹsẹsẹ",
   "reminderCascadeSubtitle": "Gba awọn iwifunni pupọ ṣaaju ki igbasilẹ to pari",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Ṣafikun Igbasilẹ Rẹ Akọkọ",
   "smartInsightNoRecordsBody": "Bẹ̀rẹ̀ sí ní tọpinpin àwọn igbasilẹ rẹ, Vaultara yóò sì ṣàfihàn àwọn òye ọlọgbọ́n níbí.",
   "smartInsightExpiresTodaySingleBody": "{name} yóò parí lónìí. Tí o bá ti sọ ọ́ di tuntun tẹ́lẹ̀, ṣe imudojuiwọn ọjọ́ rẹ̀ níbí.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} yóò parí lónìí.} =1{{names} ati 1 míràn yóò parí lónìí.} other{{names} ati {extra} míràn yóò parí lónìí.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} yóò parí lónìí.} =1{{names} ati {extra} míràn yóò parí lónìí.} other{{names} ati {extra} míràn yóò parí lónìí.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} yóò parí lọ́la kò sì ní ìrántí kankan. Múra ọ̀kan sílẹ̀ kí o má baà gbàgbé rẹ̀.} other{{name} yóò parí ní ọjọ́ {date} kò sì ní ìrántí kankan. Múra ọ̀kan sílẹ̀ kí o má baà gbàgbé rẹ̀.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} yóò parí ní ọjọ́ {dateA} ati {b} ní ọjọ́ {dateB}, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí igbasilẹ méjì bá súnmọ́ra báyìí.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b}, ati {c} yóò parí nígbà tí yóò bá fi di ọjọ́ {lastDate}, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí àwọn igbasilẹ bá súnmọ́ra báyìí.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, ati igbasilẹ 1 míràn yóò parí nígbà tí yóò bá fi di ọjọ́ {lastDate}, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí àwọn igbasilẹ bá súnmọ́ra báyìí.} other{{a}, {b}, ati igbasilẹ {extra} míràn yóò parí nígbà tí yóò bá fi di ọjọ́ {lastDate}, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí àwọn igbasilẹ bá súnmọ́ra báyìí.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, ati igbasilẹ {extra} míràn yóò parí nígbà tí yóò bá fi di ọjọ́ {lastDate}, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí àwọn igbasilẹ bá súnmọ́ra báyìí.} other{{a}, {b}, ati igbasilẹ {extra} míràn yóò parí nígbà tí yóò bá fi di ọjọ́ {lastDate}, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí àwọn igbasilẹ bá súnmọ́ra báyìí.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Kò sí nkan tó ń parí ní ọjọ́ kejì. Èyí tó kàn yóò jẹ́ ní ọjọ́ {date}.} other{Kò sí nkan tó ń parí ní ọjọ́ {days} tí ń bọ̀. Èyí tó kàn yóò jẹ́ ní ọjọ́ {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 nínú àwọn igbasilẹ rẹ nínú ẹka {category} yóò parí ní ọjọ́ {date}. Ó rọrùn láti fojú fò ó.} other{{count} nínú àwọn igbasilẹ rẹ nínú ẹka {category} yóò parí nígbà tí yóò bá fi di ọjọ́ {date}. Ó rọrùn lati gbàgbé ọ̀kan tí wọ́n bá wà nínú ẹgbẹ́ báyìí.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Ìparí 1 tí ń bọ̀ ti ní ìrántí. Kò sí nkan míràn tó gba àkíyèsí rẹ.} other{Ìparí {count} tí ń bọ̀ ti ní ìrántí. Kò sí nkan míràn tó gba àkíyèsí rẹ.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} nínú àwọn igbasilẹ rẹ nínú ẹka {category} yóò parí ní ọjọ́ {date}. Ó rọrùn láti fojú fò ó.} other{{count} nínú àwọn igbasilẹ rẹ nínú ẹka {category} yóò parí nígbà tí yóò bá fi di ọjọ́ {date}. Ó rọrùn lati gbàgbé ọ̀kan tí wọ́n bá wà nínú ẹgbẹ́ báyìí.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Ìparí {count} tí ń bọ̀ ti ní ìrántí. Kò sí nkan míràn tó gba àkíyèsí rẹ.} other{Ìparí {count} tí ń bọ̀ ti ní ìrántí. Kò sí nkan míràn tó gba àkíyèsí rẹ.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Gbogbo nkan wà ní ìmúdójúìwọ̀n. Kò sí nkan tó gba àkíyèsí rẹ lọ́wọ́lọ́wọ́ báyìí.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Kò sí nkan tó jẹ́ kánjú mọ́ lọ́wọ́lọ́wọ́, ṣùgbọ́n igbasilẹ 1 tí ń bọ̀ kò tíì ní ìrántí kankan.} other{Kò sí nkan tó jẹ́ kánjú mọ́ lọ́wọ́lọ́wọ́, ṣùgbọ́n àwọn igbasilẹ {count} tí ń bọ̀ kò tíì ní ìrántí kankan.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Kò sí nkan tó jẹ́ kánjú mọ́ lọ́wọ́lọ́wọ́, ṣùgbọ́n igbasilẹ {count} tí ń bọ̀ kò tíì ní ìrántí kankan.} other{Kò sí nkan tó jẹ́ kánjú mọ́ lọ́wọ́lọ́wọ́, ṣùgbọ́n àwọn igbasilẹ {count} tí ń bọ̀ kò tíì ní ìrántí kankan.}}",
   "smartInsightCloseExpiriesHeading": "Wọn Ń Parí Ní Àkókò Kan Náà",
   "plansHeadline": "Gba gbogbo Vaultara ní kíkún",
   "plansSubhead": "Àwọn igbasilẹ ailopin, àwọn ẹgbẹ́ tirẹ, ati àwọn olùránnilétí tí a túnṣe gẹ́gẹ́ bí o ṣe fẹ́.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Mú kúrò",
   "reminderCascadeDuplicate": "Olùrántí míràn ti ń lo ọjọ́ yìí báyìí",
   "reminderCascadeOutOfRange": "Tẹ iye ọjọ́ láàárín {min} àti {max}",
-  "reminderCascadeStepLabel": "Iranti {position}: {days, plural, =1{1 ọjọ} other{{days} ọjọ}} ṣaaju",
+  "reminderCascadeStepLabel": "Iranti {position}: {days, plural, =1{{days} ọjọ} other{{days} ọjọ}} ṣaaju",
   "expiryTimelineNotReady": "Àwọn àkókò rẹ yóò hàn ní kété tí o bá ní àwọn igbasilẹ tó máa parí ní àwọn oṣù ọ̀tọ̀ọ̀tọ̀ mélòó kan.",
   "verifyEmailResendIn": "Tún ránṣẹ́ ní àwọn ìṣẹ́jú àáyá {seconds}",
   "verifyEmailSpamHint": "Kò sí níbẹ̀? Ṣàyẹ̀wò fódà spam tàbí àwọn lẹ́tà ìdọ̀tí rẹ.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "A kò tíì fìdí akọọlẹ yìí múlẹ̀. Lílọ kúrò nísìnsìnyí yóò mú un kúrò, o sì le tún forúkọsílẹ̀ pẹ̀lú àdírẹ́sì imeeli èyíkéyìí.",
   "verifyEmailDiscardAction": "Pa rẹ́",
   "verifyEmailKeepWaiting": "Sì máa dúró",
-  "expiringBadge": "{count, plural, =1{1 yóò parí láìpẹ́} other{{count} yóò parí láìpẹ́}}",
+  "expiringBadge": "{count, plural, =1{{count} yóò parí láìpẹ́} other{{count} yóò parí láìpẹ́}}",
   "noRecordsToday": "Kò sí ohun tí ń parí lónìí",
   "noRecordsTomorrow": "Kò sí ohun tí ń parí lọ́la",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ń parí lónìí} =1{{recordName} ń parí lọ́la} other{{recordName} ń parí ní ọjọ́ {days}}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} rẹ ń parí lónìí. Ṣe o ti sọ ọ di tuntun tẹlẹ? Ṣe imudojuiwọn ọjọ́ ipari rẹ̀.} =1{{firstName}, {recordName} rẹ ń parí lọ́la. Sọ ọ di tuntun ni bayi ki o ma baa pari.} other{{firstName}, {recordName} rẹ ń parí ní {date}. Titún ṣe ni kutukutu n jẹ ki o wa ni aabo.}}",
   "cascadeFinalStepTitle": "Iranti ikẹhin: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} rẹ ń parí {days, plural, =1{lọ́la} other{ní ọjọ́ {days}, ní {date}}}. Eleyi ni iranti ikẹhin rẹ, sọ ọ di tuntun tabi ṣe imudojuiwọn ọjọ́ rẹ̀.",
   "notificationsTitle": "Awọn ifitonileti",
   "notificationsProfileEnabledSubtitle": "Awọn iranti yoo de ni {time}.",
   "notificationsProfileDisabledSubtitle": "Awọn ifitonileti ti wa ni pa.",
@@ -681,7 +670,7 @@
   "costCardTitle": "Iye owó isọdọtun",
   "costCardSubtitle": "Iye owó àtúnṣe rẹ, oṣù kọ̀ọ̀kan",
   "costCardBusiest": "Oṣù tó gbówó jù: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{Igbasilẹ 1 tó ń bọ̀ kò tíì ní iye owó.} other{Àwọn igbasilẹ {count} tó ń bọ̀ kò tíì ní iye owó.}}",
+  "costCardMissing": "{count, plural, =1{Igbasilẹ {count} tó ń bọ̀ kò tíì ní iye owó.} other{Àwọn igbasilẹ {count} tó ń bọ̀ kò tíì ní iye owó.}}",
   "costCardEmpty": "Ṣafikun iye owó sí àwọn igbasilẹ rẹ láti rí iye tí sísọ wọn di tuntun yóò ná.",
   "costCardLockedHint": "Pẹ̀lú Premium, wo iye tí sísọ àwọn igbasilẹ rẹ di tuntun yóò ná ní ọdún tó ń bọ̀.",
   "costCardSeePremium": "Wo Premium",
@@ -689,7 +678,7 @@
   "familyTitle": "Ẹbí",
   "familyIntro": "Tọpinpin àwọn igbasilẹ àwọn ènìyàn tí o ń tọ́jú. Àwọn iranti wọn máa ń fi orúkọ wọn hàn kí o lè mọ ẹni tí igbasilẹ náà jẹ́ tirẹ̀.",
   "familyMe": "Èmi",
-  "familyRecordCount": "{count, plural, =0{Kò sí igbasilẹ} =1{Igbasilẹ 1} other{Àwọn igbasilẹ {count}}}",
+  "familyRecordCount": "{count, plural, =0{Kò sí igbasilẹ} =1{Igbasilẹ {count}} other{Àwọn igbasilẹ {count}}}",
   "familyRename": "Yí orúkọ padà",
   "familyRemove": "Yọ kúrò",
   "familyRemoveTitle": "Yọ {name} kúrò?",
@@ -702,10 +691,10 @@
   "familyNameLabel": "Orúkọ",
   "familyNameHint": "Fún àpẹẹrẹ, Thabo",
   "familyNameRequired": "Tẹ orúkọ kan",
-  "familyLimitNote": "{count, plural, =1{Títí dé ènìyàn 1} other{Títí dé ènìyàn {count}}}",
+  "familyLimitNote": "{count, plural, =1{Títí dé ènìyàn {count}} other{Títí dé ènìyàn {count}}}",
   "familyUpsellTitle": "Tọpinpin àwọn ìwé ẹbí rẹ",
   "familyBenefitPremium": "Gbogbo nǹkan tó wà nínú Premium",
-  "familyBenefitPeople": "{count, plural, =1{Ṣafikun ènìyàn 1} other{Ṣafikun títí dé ènìyàn {count}}}",
+  "familyBenefitPeople": "{count, plural, =1{Ṣafikun ènìyàn {count}} other{Ṣafikun títí dé ènìyàn {count}}}",
   "familyBenefitOwnRecords": "Ènìyàn kọ̀ọ̀kan ní igbasilẹ àti iranti tirẹ̀",
   "familyBenefitOneSubscription": "Ìforúkọsílẹ̀ kan fún gbogbo ilé",
   "familySeePlan": "Wo ètò Ẹbí",
@@ -891,14 +880,14 @@
   "calendarExportError": "A kò lè ṣẹ̀dá fáìlì kàlẹ́ńdà. Tún gbìyànjú.",
   "pdfExportTitle": "Àwọn igbasilẹ Vaultara",
   "pdfExportGenerated": "A ṣẹ̀dá rẹ̀ ní {date}",
-  "pdfExportCount": "{count, plural, =1{Igbasilẹ 1} other{Àwọn igbasilẹ {count}}}",
+  "pdfExportCount": "{count, plural, =1{Igbasilẹ {count}} other{Àwọn igbasilẹ {count}}}",
   "pdfExportCost": "Iye owó isọdọtun: {amount}",
   "pdfExportBuilding": "À ń pèsè PDF rẹ...",
   "pdfExportError": "A kò lè ṣẹ̀dá PDF náà. Tún gbìyànjú.",
   "travelTitle": "Àyẹ̀wò ìrìn àjò",
   "travelDeparture": "Ìlọ",
   "travelReturn": "Ìpadàbọ̀",
-  "travelTripLength": "{days, plural, =1{Ìrìn àjò ọjọ́ 1} other{Ìrìn àjò ọjọ́ {days}}}",
+  "travelTripLength": "{days, plural, =1{Ìrìn àjò ọjọ́ {days}} other{Ìrìn àjò ọjọ́ {days}}}",
   "travelDriving": "Màá wakọ̀",
   "travelNeedsVisa": "Mo nílò fisa",
   "travelWho": "Ta ló ń rìnrìn àjò?",
@@ -919,9 +908,9 @@
   "travelNoLicence": "A kò fi ìwé-aṣẹ awakọ̀ kún un",
   "travelOtherExpires": "Ń parí nígbà tí o kò sí nílé",
   "travelDetailValidUntil": "{name} wúlò títí di {date}.",
-  "travelDetailPassportBuffer": "{name} ń parí ní {date}. Ọ̀pọ̀ orílẹ̀-èdè fẹ́ kí {months, plural, =1{oṣù 1} other{oṣù {months}}} kù lẹ́yìn tí o bá padà.",
+  "travelDetailPassportBuffer": "{name} ń parí ní {date}. Ọ̀pọ̀ orílẹ̀-èdè fẹ́ kí {months, plural, =1{oṣù {months}} other{oṣù {months}}} kù lẹ́yìn tí o bá padà.",
   "travelDetailExpiresBeforeLeaving": "{name} ń parí ní {date}, kí o tó lọ.",
-  "travelDetailExpiresDuringTrip": "{name} ń parí ní {date}, {days, plural, =0{ní ọjọ́ tí o ń lọ} =1{ọjọ́ 1 sínú ìrìn àjò rẹ} other{ọjọ́ {days} sínú ìrìn àjò rẹ}}.",
+  "travelDetailExpiresDuringTrip": "{name} ń parí ní {date}, {days, plural, =0{ní ọjọ́ tí o ń lọ} =1{ọjọ́ {days} sínú ìrìn àjò rẹ} other{ọjọ́ {days} sínú ìrìn àjò rẹ}}.",
   "travelDetailNoPassport": "Ṣafikun ìwé irinna rẹ kí Vaultara lè ṣàyẹ̀wò rẹ̀.",
   "travelDetailNoVisa": "Ṣafikun fisa rẹ kí Vaultara lè ṣàyẹ̀wò rẹ̀.",
   "travelDetailNoInsurance": "Ṣafikun ìdánilójú ìrìn àjò rẹ láti ṣàyẹ̀wò pé ó bo gbogbo ìrìn àjò náà.",
@@ -973,7 +962,7 @@
   "travelInProgress": "Ìrìn àjò ń lọ lọ́wọ́",
   "travelTripEnded": "Ìrìn àjò ti parí",
   "travelAllGood": "Gbogbo ìwé ti ṣetán",
-  "travelIssues": "{count, plural, =1{Nǹkan 1 nílò àkíyèsí} other{Nǹkan {count} nílò àkíyèsí}}",
+  "travelIssues": "{count, plural, =1{Nǹkan {count} nílò àkíyèsí} other{Nǹkan {count} nílò àkíyèsí}}",
   "travelChecklistTitle": "Àkọsílẹ̀ àyẹ̀wò ìrìn àjò",
   "travelChecklistProgress": "{done} nínú {total} ti parí",
   "travelChecklistAdd": "Ṣafikun",
@@ -993,7 +982,7 @@
   "travelTripTo": "Ìrìn àjò sí {name}",
   "travelReminderTitle": "{days, plural, other{Ìrìn àjò sí {name} ní ọjọ́ {days} sí i}}",
   "travelReminderTitleTomorrow": "Ìrìn àjò sí {name} lọ́la",
-  "travelReminderBodyIssues": "{count, plural, =1{Ìwé 1 nílò àkíyèsí kí o tó lọ.} other{Ìwé {count} nílò àkíyèsí kí o tó lọ.}}",
+  "travelReminderBodyIssues": "{count, plural, =1{Ìwé {count} nílò àkíyèsí kí o tó lọ.} other{Ìwé {count} nílò àkíyèsí kí o tó lọ.}}",
   "travelReminderBodyOk": "Àwọn ìwé rẹ ti ṣetán. Ṣí ìrìn àjò rẹ láti ṣàyẹ̀wò àkọsílẹ̀ náà.",
   "travelTripLimit": "O lè fi ìrìn àjò {count} pamọ́ ní pọ̀jù. Pa ìrìn àjò àtijọ́ kan rẹ́ láti ṣafikun tuntun.",
   "recordLockTitle": "Tii igbasilẹ yii pa",
@@ -1021,7 +1010,7 @@
   "vaultChooseFromGallery": "Yan láti inú àwòrán",
   "vaultRemove": "Yọ kúrò",
   "vaultLimitTitle": "O ti dé òpin fọ́tò",
-  "vaultLimitFreeBody": "Ètò Ọ̀fẹ́ jẹ́ kí o ṣafikun {limit, plural, =1{fọ́tò 1} other{fọ́tò {limit}}} sí igbasilẹ kọ̀ọ̀kan. Pẹ̀lú Premium o lè ṣafikun títí dé {premiumLimit}.",
+  "vaultLimitFreeBody": "Ètò Ọ̀fẹ́ jẹ́ kí o ṣafikun {limit, plural, =1{fọ́tò {limit}} other{fọ́tò {limit}}} sí igbasilẹ kọ̀ọ̀kan. Pẹ̀lú Premium o lè ṣafikun títí dé {premiumLimit}.",
   "vaultLimitPremiumBody": "O lè ṣafikun títí dé fọ́tò {limit} sí igbasilẹ kọ̀ọ̀kan. Yọ ọ̀kan kúrò láti ṣafikun òmíràn.",
   "vaultSeePremium": "Wo Premium",
   "vaultPdfShort": "PDF",
@@ -1029,7 +1018,7 @@
   "vaultOpenFile": "Ṣí i",
   "vaultClose": "Pa á dé",
   "vaultPageIndicator": "{current} nínú {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{Fọ́tò 1} other{Àwọn fọ́tò {count}}}",
+  "vaultPhotosTooltip": "{count, plural, =1{Fọ́tò {count}} other{Àwọn fọ́tò {count}}}",
   "travelReadinessTitle": "Ìmúrasílẹ̀ fún ìrìn àjò",
   "travelReadinessBody": "Ó dá lórí àwọn ìwé irinna àti ìwé-aṣẹ awakọ̀ tí a fi pamọ́ sínú Vaultara. Ọ̀pọ̀ orílẹ̀-èdè fẹ́ kí ìwé irinna ní o kéré tán oṣù mẹ́fà tó kù nígbà tí o bá padà dé.",
   "travelReadyUntil": "Ìwé irinna wúlò fún ìrìn àjò títí di {date}",
@@ -2134,8 +2123,8 @@
   "lifePlanAutoChanged": "Vaultara rí i pé àkọsílẹ̀ yìí yí padà, nítorí náà a ti sàmì sí i pé ó ti ṣe.",
   "lifePlanAutoAdded": "A fi kún un lẹ́yìn tí o bẹ̀rẹ̀ ètò yìí.",
   "lifePlanProgress": "{done} nínú {total} ti ṣe",
-  "lifePlanDaysToGo": "{count, plural, =1{Ọjọ́ 1 ló kù} other{Ọjọ́ {count} ló kù}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Ọjọ́ 1 sẹ́yìn} other{Ọjọ́ {count} sẹ́yìn}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Ọjọ́ {count} ló kù} other{Ọjọ́ {count} ló kù}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Ọjọ́ {count} sẹ́yìn} other{Ọjọ́ {count} sẹ́yìn}}",
   "lifePlanAllDone": "Gbogbo rẹ̀ ti parí. O lè sàmì sí ètò náà pé ó ti parí.",
   "lifePlanFinish": "Sàmì sí pé ó ti parí",
   "lifePlanReopen": "Ṣí i lẹ́ẹ̀kan sí i",
@@ -2264,7 +2253,7 @@
   "lifePlanReadAloudUnavailable": "Kíkà sókè kò sí lórí fóònù yìí.",
   "lifePlanProofPack": "Ṣe àpò ẹ̀rí",
   "lifePlanOpenFamily": "Ṣí Ẹbí",
-  "lifePlanRemoved": "{count, plural, =1{Àkọsílẹ̀ 1 tí o pa rẹ́ ni a kà sí èyí tí a fagi lé.} other{Àkọsílẹ̀ {count} tí o pa rẹ́ ni a kà sí èyí tí a fagi lé.}}",
+  "lifePlanRemoved": "{count, plural, =1{Àkọsílẹ̀ {count} tí o pa rẹ́ ni a kà sí èyí tí a fagi lé.} other{Àkọsílẹ̀ {count} tí o pa rẹ́ ni a kà sí èyí tí a fagi lé.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} ń parí lónìí",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} ń parí lọ́la",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} ń parí ní ọjọ́ {days}} other{{recordName} ń parí ní ọjọ́ {days}}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} ti parí",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Igbasilẹ tí a tì nílò àfiyèsí rẹ",
+  "remLockedBody": "Ọjọ́ rẹ̀ ni {date}. Ṣí Vaultara láti rí igbasilẹ tí ó jẹ́.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Igbasilẹ rẹ \"{recordName}\" ń parí lónìí.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Igbasilẹ rẹ \"{recordName}\" ń parí lọ́la.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Igbasilẹ rẹ \"{recordName}\" ń parí ní {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, igbasilẹ rẹ \"{recordName}\" ń parí lónìí.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, igbasilẹ rẹ \"{recordName}\" ń parí lọ́la.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, igbasilẹ rẹ \"{recordName}\" ń parí ní {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Igbasilẹ {person} \"{recordName}\" ń parí lónìí.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Igbasilẹ {person} \"{recordName}\" ń parí lọ́la.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Igbasilẹ {person} \"{recordName}\" ń parí ní {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Igbasilẹ rẹ \"{recordName}\" parí ní {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Igbasilẹ {person} \"{recordName}\" parí ní {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Ṣé o ti sọ ọ́ di tuntun? Ṣe imudojuiwọn ọjọ́ rẹ̀.",
+  "remTipTomorrow": "Sọ ọ́ di tuntun nísinsìnyí kí ó má bàa parí.",
+  "remTipEarly": "Sísọ di tuntun ní kùtùkùtù ń dáàbò bò ọ́.",
+  "remTipLast": "Èyí ni ìránnilétí rẹ tó kẹ́yìn kí ó tó parí.",
+  "remTipExpired": "Sọ ọ́ di tuntun, tàbí ṣe imudojuiwọn ọjọ́ rẹ̀ bí o bá ti ṣe é.",
+  "remStartBody": "Àkókò ti tó láti bẹ̀rẹ̀ sí sọ \"{recordName}\" di tuntun. Ó ń parí ní {date}, nítorí náà bí o bá bẹ̀rẹ̀ nísinsìnyí, o máa ní àkókò tó pọ̀.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Àkókò ti tó láti bẹ̀rẹ̀ sí sọ \"{recordName}\" ti {person} di tuntun. Ó ń parí ní {date}, nítorí náà bíbẹ̀rẹ̀ nísinsìnyí máa fi àkókò tó pọ̀ sílẹ̀.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Àwọn ìránnilétí ìparí",
+  "notifChannelDescription": "Àwọn ìránnilétí kí àwọn igbasilẹ rẹ tó parí",
+  "notifTestTitle": "Ìfitónilétí ìdánwò",
+  "notifTestBody": "Àwọn ìránnilétí Vaultara máa ń dé báyìí.",
+  "notifTestAction": "Fi ìfitónilétí ìdánwò ránṣẹ́",
+  "notifTestSubtitle": "Ṣàyẹ̀wò pé àwọn ìránnilétí ń dé fóònù yìí",
+  "notifTestSent": "A ti fi ìdánwò ránṣẹ́. Ó yẹ kí ó dé láàrin ìṣẹ́jú-àáyá díẹ̀.",
+  "notifAfterExpiryTitle": "Rán mi létí lẹ́yìn tí igbasilẹ bá parí",
+  "notifAfterExpirySubtitle": "Ọjọ́ 3 àti 14 lẹ́yìn náà, bí a kò bá sọ ọ́ di tuntun",
+  "notifWeeklyTitle": "Àkópọ̀ Ọjọ́ Ajé",
+  "notifWeeklySubtitle": "Ìfiránṣẹ́ ní àárọ̀ Ọjọ́ Ajé nígbà tí nǹkan bá ń parí ní ọ̀sẹ̀ náà",
+  "notifPushSection": "Ìdílé àti àwọn imudojuiwọn",
+  "notifHouseholdTitle": "Àwọn igbasilẹ tí a pín",
+  "notifHouseholdSubtitle": "Nígbà tí igbasilẹ tí a pín bá fẹ́ parí tí kò sí ẹni tí ó sọ ọ́ di tuntun",
+  "notifUpdatesTitle": "Àwọn imudojuiwọn tí o béèrè",
+  "notifUpdatesSubtitle": "Nígbà tí ẹnìkan bá fi àlàyé tuntun igbasilẹ ránṣẹ́",
+  "notifSecurityNote": "A máa ń fi ìkìlọ̀ nípa ìwọlé tuntun sínú àkáǹtì rẹ ránṣẹ́ nígbà gbogbo.",
+  "notifIosHelpTitle": "O kò rí àwọn ìránnilétí gbà?",
+  "notifIosHelpSubtitle": "Ṣàyẹ̀wò ètò iPhone rẹ",
+  "notifIosHelpStep1": "Ṣí Settings, lẹ́yìn náà Notifications, lẹ́yìn náà Vaultara, kí o sì tan Allow Notifications.",
+  "notifIosHelpStep2": "Tan Lock Screen, Notification Centre àti Banners.",
+  "notifIosHelpStep3": "Bí o bá ń lo Focus, fi Vaultara kún àwọn ohun èlò tí ó gbà láàyè.",
+  "notifIosHelpStep4": "Ṣí Vaultara ní ọ̀sẹ̀ díẹ̀ díẹ̀. iPhone máa ń tọ́jú iye ìránnilétí díẹ̀ ṣáájú, ṣíṣí ohun èlò náà sì máa ń ṣètò àwọn tó kàn.",
+  "homeNextUpEmpty": "Kò sí ohun tó máa parí láìpẹ́. Gbogbo nǹkan ti ṣetán.",
+  "homeDueSoonChip": "{count, plural, one{{count} yóò parí láàrin ọjọ́ 30} other{{count} yóò parí láàrin ọjọ́ 30}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Àwọn ẹ̀ka tí a pinni"
 }

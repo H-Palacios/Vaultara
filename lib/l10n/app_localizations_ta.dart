@@ -360,15 +360,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'மீண்டும் உங்களை காண மகிழ்ச்சி. உங்கள் முக்கியமான தேதிகளையும் பதிவுகளையும் பார்வையிட Vaultara எப்போதும் தயாராக உள்ளது.';
 
   @override
-  String get summaryAllCaption => 'Vaultara இல் கண்காணிக்கப்படுகிறது';
-
-  @override
-  String get summaryExpiredTitle => 'காலாவதியானது';
-
-  @override
-  String get summaryExpiredCaption => 'காலாவதி தேதி கடந்துவிட்டது';
-
-  @override
   String get editorNotes => 'குறிப்புகள்';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'பதிவை நீக்கு';
-
-  @override
-  String get summaryAllRecordsTitle => 'அனைத்து பதிவுகள்';
 
   @override
   String get noGroupFound => 'இன்னும் குழுக்கள் இல்லை';
@@ -829,22 +817,10 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count பதிவுகள்',
-      one: '1 பதிவு',
+      one: '$count பதிவு',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'வரவிருக்கும்';
-
-  @override
-  String get summaryUpcomingCaption => '30 நாட்களுக்குள்';
-
-  @override
-  String get summaryUrgentTitle => 'அவசரம்';
-
-  @override
-  String get summaryUrgentCaption => '7 நாட்களுக்குள்';
 
   @override
   String get profileHeaderTitle => 'சுயவிவரம்';
@@ -945,7 +921,7 @@ class AppLocalizationsTa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days நாட்கள் முன்பு',
-      one: '1 நாள் முன்பு',
+      one: '$days நாள் முன்பு',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsTa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names மற்றும் மேலும் $extra பதிவுகள் இன்றே காலாவதியாகின்றன.',
-      one: '$names மற்றும் மேலும் 1 பதிவு இன்றே காலாவதியாகின்றன.',
+      one: '$names மற்றும் மேலும் $extra பதிவு இன்றே காலாவதியாகின்றன.',
       zero: '$names இன்றே காலாவதியாகின்றன.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsTa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b மற்றும் மேலும் $extra பதிவுகள் $lastDateக்குள் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. சில பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.',
-      one: '$a, $b மற்றும் மேலும் 1 பதிவு $lastDateக்குள் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. சில பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.',
+      one: '$a, $b மற்றும் மேலும் $extra பதிவு $lastDateக்குள் தோராயமாக ஒரே நேரத்தில் காலாவதியாகின்றன. சில பதிவுகள் இவ்வளவு நெருக்கமாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category வகையில் உள்ள உங்களது $count பதிவுகள் $dateக்குள் காலாவதியாகின்றன. பதிவுகள் இப்படி ஒன்றாக இருக்கும்போது ஒன்றை மறந்துவிடுவது எளிது.',
-      one: '$category வகையில் உள்ள உங்களது 1 பதிவு $date அன்று காலாவதியாகிறது. இதைத் தவறவிட வாய்ப்புள்ளது.',
+      one: '$category வகையில் உள்ள உங்களது $count பதிவு $date அன்று காலாவதியாகிறது. இதைத் தவறவிட வாய்ப்புள்ளது.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'வரவிருக்கும் $count காலாவதிகளுக்கு நினைவூட்டல்கள் உள்ளன. வேறு எதுவும் உங்கள் கவனத்திற்குத் தேவையில்லை.',
-      one: 'வரவிருக்கும் 1 காலாவதிக்கு நினைவூட்டல் உள்ளது. வேறு எதுவும் உங்கள் கவனத்திற்குத் தேவையில்லை.',
+      one: 'வரவிருக்கும் $count காலாவதிக்கு நினைவூட்டல் உள்ளது. வேறு எதுவும் உங்கள் கவனத்திற்குத் தேவையில்லை.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'தற்போது அவசரம் எதுவும் இல்லை, ஆனால் வரவிருக்கும் $count பதிவுகளுக்கு இன்னும் நினைவூட்டல் அமைக்கப்படவில்லை.',
-      one: 'தற்போது அவசரம் எதுவும் இல்லை, ஆனால் வரவிருக்கும் 1 பதிவிற்கு இன்னும் நினைவூட்டல் அமைக்கப்படவில்லை.',
+      one: 'தற்போது அவசரம் எதுவும் இல்லை, ஆனால் வரவிருக்கும் $count பதிவிற்கு இன்னும் நினைவூட்டல் அமைக்கப்படவில்லை.',
     );
     return '$_temp0';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count விரைவில் காலாவதியாகின்றன',
-      one: '1 விரைவில் காலாவதியாகிறது',
+      one: '$count விரைவில் காலாவதியாகிறது',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsTa extends AppLocalizations {
   String get noRecordsTomorrow => 'நாளை எதுவும் காலாவதியாகாது';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName $days நாட்களில் காலாவதியாகிறது',
-      one: '$recordName நாளை காலாவதியாகிறது',
-      zero: '$recordName இன்று காலாவதியாகிறது',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, உங்களது $recordName $date அன்று காலாவதியாகிறது. முன்கூட்டியே புதுப்பிப்பது தொடர்ச்சியான செல்லுபடியை உறுதி செய்யும்.',
-      one: '$firstName, உங்களது $recordName நாளை காலாவதியாகிறது. அதன் செல்லுபடி இழக்கப்படாமல் இருக்க இப்போதே புதுப்பிக்கவும்.',
-      zero: '$firstName, உங்களது $recordName இன்று காலாவதியாகிறது. ஏற்கனவே புதுப்பித்துவிட்டீர்களா? அதன் காலாவதி தேதியை மாற்றவும்.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'இறுதி நினைவூட்டல்: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days நாட்களில், $date அன்று',
-      one: 'நாளை',
-    );
-    return '$firstName, உங்களது $recordName $_temp0 காலாவதியாகிறது. இது உங்களது இறுதி நினைவூட்டல், இதைப் புதுப்பிக்கவும் அல்லது காலாவதி தேதியை மாற்றவும்.';
   }
 
   @override
@@ -1532,7 +1473,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'வரவிருக்கும் $count பதிவுகளுக்கு இன்னும் செலவு இல்லை.',
-      one: 'வரவிருக்கும் 1 பதிவுக்கு இன்னும் செலவு இல்லை.',
+      one: 'வரவிருக்கும் $count பதிவுக்கு இன்னும் செலவு இல்லை.',
     );
     return '$_temp0';
   }
@@ -1566,7 +1507,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count பதிவுகள்',
-      one: '1 பதிவு',
+      one: '$count பதிவு',
       zero: 'பதிவுகள் இல்லை',
     );
     return '$_temp0';
@@ -1622,7 +1563,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count நபர்கள் வரை',
-      one: '1 நபர் வரை',
+      one: '$count நபர் வரை',
     );
     return '$_temp0';
   }
@@ -1639,7 +1580,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count நபர்கள் வரை சேர்க்கலாம்',
-      one: '1 நபரைச் சேர்க்கலாம்',
+      one: '$count நபரைச் சேர்க்கலாம்',
     );
     return '$_temp0';
   }
@@ -2223,7 +2164,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count பதிவுகள்',
-      one: '1 பதிவு',
+      one: '$count பதிவு',
     );
     return '$_temp0';
   }
@@ -2254,7 +2195,7 @@ class AppLocalizationsTa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days நாள் பயணம்',
-      one: '1 நாள் பயணம்',
+      one: '$days நாள் பயணம்',
     );
     return '$_temp0';
   }
@@ -2327,7 +2268,7 @@ class AppLocalizationsTa extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months மாதங்கள்',
-      one: '1 மாதம்',
+      one: '$months மாதம்',
     );
     return '$name $date அன்று காலாவதியாகும். பல நாடுகள் நீங்கள் திரும்பிய பின் $_temp0 மீதம் இருக்க வேண்டும் என்கின்றன.';
   }
@@ -2708,7 +2649,7 @@ class AppLocalizationsTa extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit புகைப்படங்கள்',
-      one: '1 புகைப்படம்',
+      one: '$limit புகைப்படம்',
     );
     return 'இலவசத் திட்டத்தில் ஒவ்வொரு பதிவிலும் $_temp0 சேர்க்கலாம். ப்ரீமியத்தில் $premiumLimit வரை சேர்க்கலாம்.';
   }
@@ -2744,7 +2685,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count புகைப்படங்கள்',
-      one: '1 புகைப்படம்',
+      one: '$count புகைப்படம்',
     );
     return '$_temp0';
   }
@@ -4006,7 +3947,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count புகைப்படங்கள் இன்னும் குறியாக்கம் செய்யப்படவில்லை',
-      one: '1 புகைப்படம் இன்னும் குறியாக்கம் செய்யப்படவில்லை',
+      one: '$count புகைப்படம் இன்னும் குறியாக்கம் செய்யப்படவில்லை',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'உங்களிடம் இன்னும் குறியாக்கம் செய்யப்படாத $count புகைப்படங்கள் உள்ளன. அவற்றை இப்போது குறியாக்கலாம்.',
-      one: 'உங்களிடம் இன்னும் குறியாக்கம் செய்யப்படாத 1 புகைப்படம் உள்ளது. அதை இப்போது குறியாக்கலாம்.',
+      one: 'உங்களிடம் இன்னும் குறியாக்கம் செய்யப்படாத $count புகைப்படம் உள்ளது. அதை இப்போது குறியாக்கலாம்.',
     );
     return '$_temp0 இது முடியும் வரை Vaultara ஐத் திறந்தே வைத்திருக்கவும்.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsTa extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'அதிக முயற்சிகள். $seconds வினாடிகள் காத்திருந்து மீண்டும் முயலவும்.',
-      one: 'அதிக முயற்சிகள். 1 வினாடி காத்திருந்து மீண்டும் முயலவும்.',
+      one: 'அதிக முயற்சிகள். $seconds வினாடி காத்திருந்து மீண்டும் முயலவும்.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsTa extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'அதிக முயற்சிகள். $minutes நிமிடங்கள் காத்திருந்து மீண்டும் முயலவும்.',
-      one: 'அதிக முயற்சிகள். 1 நிமிடம் காத்திருந்து மீண்டும் முயலவும்.',
+      one: 'அதிக முயற்சிகள். $minutes நிமிடம் காத்திருந்து மீண்டும் முயலவும்.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count பதிவுகளுக்கு உங்கள் கவனம் தேவை',
-      one: '1 பதிவுக்கு உங்கள் கவனம் தேவை',
+      one: '$count பதிவுக்கு உங்கள் கவனம் தேவை',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsTa extends AppLocalizations {
       years,
       locale: localeName,
       other: 'பொதுவாக $years ஆண்டுகள் செல்லுபடியாகும்',
-      one: 'பொதுவாக 1 ஆண்டு செல்லுபடியாகும்',
+      one: 'பொதுவாக $years ஆண்டு செல்லுபடியாகும்',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'இன்னும் $count நாட்கள்',
-      one: 'இன்னும் 1 நாள்',
+      one: 'இன்னும் $count நாள்',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count நாட்கள் முன்பு',
-      one: '1 நாள் முன்பு',
+      one: '$count நாள் முன்பு',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsTa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'நீங்கள் நீக்கிய $count பதிவுகள் ரத்தானவையாகக் கணக்கிடப்படும்.',
-      one: 'நீங்கள் நீக்கிய 1 பதிவு ரத்தானதாகக் கணக்கிடப்படும்.',
+      one: 'நீங்கள் நீக்கிய $count பதிவு ரத்தானதாகக் கணக்கிடப்படும்.',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsTa extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'நினைவூட்டல்: $name $date அன்று காலாவதியாகும்';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName இன்று காலாவதியாகிறது';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName நாளை காலாவதியாகிறது';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days நாட்களில் காலாவதியாகிறது',
+      one: '$recordName $days நாளில் காலாவதியாகிறது',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName காலாவதியாகிவிட்டது';
+  }
+
+  @override
+  String get remLockedTitle => 'பூட்டிய பதிவு ஒன்றுக்கு உங்கள் கவனம் தேவை';
+
+  @override
+  String remLockedBody(String date) {
+    return 'அதன் தேதி $date. எந்தப் பதிவு என்று பார்க்க Vaultara-வைத் திறக்கவும்.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'உங்கள் \"$recordName\" பதிவு இன்று காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'உங்கள் \"$recordName\" பதிவு நாளை காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'உங்கள் \"$recordName\" பதிவு $date அன்று காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, உங்கள் \"$recordName\" பதிவு இன்று காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, உங்கள் \"$recordName\" பதிவு நாளை காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, உங்கள் \"$recordName\" பதிவு $date அன்று காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: \"$recordName\" பதிவு இன்று காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: \"$recordName\" பதிவு நாளை காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" பதிவு $date அன்று காலாவதியாகிறது.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'உங்கள் \"$recordName\" பதிவு $date அன்று காலாவதியானது.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" பதிவு $date அன்று காலாவதியானது.';
+  }
+
+  @override
+  String get remTipToday => 'ஏற்கனவே புதுப்பித்தீர்களா? அதன் தேதியைப் புதுப்பிக்கவும்.';
+
+  @override
+  String get remTipTomorrow => 'காலாவதியாகாமல் இருக்க இப்போதே புதுப்பிக்கவும்.';
+
+  @override
+  String get remTipEarly => 'முன்கூட்டியே புதுப்பிப்பது உங்களைப் பாதுகாப்பாக வைக்கிறது.';
+
+  @override
+  String get remTipLast => 'காலாவதியாவதற்கு முன் இதுவே உங்கள் கடைசி நினைவூட்டல்.';
+
+  @override
+  String get remTipExpired => 'புதுப்பிக்கவும், அல்லது ஏற்கனவே செய்திருந்தால் தேதியைப் புதுப்பிக்கவும்.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" புதுப்பிப்பைத் தொடங்கும் நேரம் இது. இது $date அன்று காலாவதியாகிறது, எனவே இப்போதே தொடங்கினால் உங்களுக்கு நிறைய நேரம் இருக்கும்.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) புதுப்பிப்பைத் தொடங்கும் நேரம் இது. இது $date அன்று காலாவதியாகிறது, எனவே இப்போதே தொடங்கினால் நிறைய நேரம் இருக்கும்.';
+  }
+
+  @override
+  String get notifChannelName => 'காலாவதி நினைவூட்டல்கள்';
+
+  @override
+  String get notifChannelDescription => 'உங்கள் பதிவுகள் காலாவதியாகும் முன் நினைவூட்டல்கள்';
+
+  @override
+  String get notifTestTitle => 'சோதனை அறிவிப்பு';
+
+  @override
+  String get notifTestBody => 'Vaultara நினைவூட்டல்கள் இப்படி வரும்.';
+
+  @override
+  String get notifTestAction => 'சோதனை அறிவிப்பை அனுப்பு';
+
+  @override
+  String get notifTestSubtitle => 'நினைவூட்டல்கள் இந்த ஃபோனுக்கு வருகின்றனவா எனச் சரிபார்க்கவும்';
+
+  @override
+  String get notifTestSent => 'சோதனை அனுப்பப்பட்டது. சில வினாடிகளில் வர வேண்டும்.';
+
+  @override
+  String get notifAfterExpiryTitle => 'பதிவு காலாவதியான பின் நினைவூட்டு';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 மற்றும் 14 நாட்களுக்குப் பிறகு, புதுப்பிக்கப்படவில்லை என்றால்';
+
+  @override
+  String get notifWeeklyTitle => 'திங்கள் சுருக்கம்';
+
+  @override
+  String get notifWeeklySubtitle => 'அந்த வாரம் ஏதாவது காலாவதியாகும்போது திங்கள் காலை ஒரு செய்தி';
+
+  @override
+  String get notifPushSection => 'குடும்பம் மற்றும் புதுப்பிப்புகள்';
+
+  @override
+  String get notifHouseholdTitle => 'பகிரப்பட்ட பதிவுகள்';
+
+  @override
+  String get notifHouseholdSubtitle => 'பகிரப்பட்ட பதிவு காலாவதியாகும் நிலையில் யாரும் புதுப்பிக்காதபோது';
+
+  @override
+  String get notifUpdatesTitle => 'நீங்கள் கேட்ட புதுப்பிப்புகள்';
+
+  @override
+  String get notifUpdatesSubtitle => 'யாராவது ஒரு பதிவின் புதிய விவரங்களை அனுப்பும்போது';
+
+  @override
+  String get notifSecurityNote => 'உங்கள் கணக்கில் புதிய உள்நுழைவுகள் பற்றிய எச்சரிக்கைகள் எப்போதும் அனுப்பப்படும்.';
+
+  @override
+  String get notifIosHelpTitle => 'நினைவூட்டல்கள் வரவில்லையா?';
+
+  @override
+  String get notifIosHelpSubtitle => 'உங்கள் iPhone அமைப்புகளைச் சரிபார்க்கவும்';
+
+  @override
+  String get notifIosHelpStep1 => 'அமைப்புகள், பிறகு அறிவிப்புகள், பிறகு Vaultara-வைத் திறந்து, அறிவிப்புகளை அனுமதி என்பதை இயக்கவும்.';
+
+  @override
+  String get notifIosHelpStep2 => 'பூட்டுத் திரை, அறிவிப்பு மையம் மற்றும் பேனர்களை இயக்கவும்.';
+
+  @override
+  String get notifIosHelpStep3 => 'நீங்கள் ஃபோகஸைப் பயன்படுத்தினால், அனுமதிக்கப்பட்ட ஆப்ஸில் Vaultara-வைச் சேர்க்கவும்.';
+
+  @override
+  String get notifIosHelpStep4 => 'சில வாரங்களுக்கு ஒருமுறை Vaultara-வைத் திறக்கவும். iPhone வரவிருக்கும் குறிப்பிட்ட எண்ணிக்கையிலான நினைவூட்டல்களை மட்டுமே வைத்திருக்கும், ஆப்ஸைத் திறப்பது அடுத்தவற்றைத் திட்டமிடும்.';
+
+  @override
+  String get homeNextUpEmpty => 'விரைவில் எதுவும் காலாவதியாகவில்லை. எல்லாம் சரியாக உள்ளது.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 நாட்களில் $count நிலுவை',
+      one: '30 நாட்களில் $count நிலுவை',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'பின் செய்த வகைகள்';
 }

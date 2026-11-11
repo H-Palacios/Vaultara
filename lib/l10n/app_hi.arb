@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara आपको महत्वपूर्ण समाप्ति तिथियों को ट्रैक करने में मदद करता है ताकि कुछ भी छूट न जाए।",
   "homeWelcomeSubtitleFirst": "हमें आपको यहाँ देखकर खुशी हुई। Vaultara आपकी महत्वपूर्ण तिथियों और रिकॉर्ड्स को एक सुरक्षित स्थान पर व्यवस्थित रखने में मदद करता है।",
   "homeWelcomeSubtitleBack": "आपका फिर से स्वागत है। Vaultara तब उपलब्ध है जब भी आप अपनी महत्वपूर्ण तिथियों और रिकॉर्ड्स की समीक्षा करना चाहें।",
-  "summaryAllCaption": "Vaultara में ट्रैक किया गया",
-  "summaryExpiredTitle": "समाप्त",
-  "summaryExpiredCaption": "समाप्ति तिथि पार हो चुकी है",
   "editorNotes": "नोट्स",
   "editorReminderNone": "कोई रिमाइंडर नहीं",
   "editorReminderOnExpiry": "समाप्ति के दिन",
@@ -199,7 +196,6 @@
   "addRecord": "रिकॉर्ड जोड़ें",
   "noRecordsYet": "अभी कोई रिकॉर्ड नहीं है।",
   "deleteRecordTitle": "रिकॉर्ड हटाएँ",
-  "summaryAllRecordsTitle": "सभी रिकॉर्ड",
   "noGroupFound": "अभी तक कोई समूह नहीं है",
   "groupLabel": "{count, plural, one{{count} समूह} other{{count} समूह}}",
   "recordsLabel": "{count, plural, one{{count} रिकॉर्ड} other{{count} रिकॉर्ड}}",
@@ -449,7 +445,7 @@
   "addNotesHint": "नोट्स जोड़ें (वैकल्पिक)",
   "expiryTimelineTitle": "समाप्ति समयरेखा",
   "expiryTimelineSubtitle": "उस महीने में समाप्त होने वाले रिकॉर्ड देखने के लिए महीने पर टैप करें",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 रिकॉर्ड} other{{count} रिकॉर्ड}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} रिकॉर्ड} other{{count} रिकॉर्ड}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -457,10 +453,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "आगामी",
-  "summaryUpcomingCaption": "अगले 30 दिनों के भीतर",
-  "summaryUrgentTitle": "अत्यावश्यक",
-  "summaryUrgentCaption": "अगले 7 दिनों के भीतर",
   "profileHeaderTitle": "प्रोफ़ाइल",
   "profileTutorialsTitle": "ट्यूटोरियल",
   "profileTutorialsSubtitle": "ऐप ट्यूटोरियल ब्राउज़ करें",
@@ -492,7 +484,7 @@
   "reminderPremiumSection": "प्रीमियम",
   "reminderNone": "कोई रिमाइंडर नहीं",
   "reminderOnExpiry": "समाप्ति की तारीख पर",
-  "reminderDaysBefore": "{days, plural, one{1 दिन पहले} other{{days} दिन पहले}}",
+  "reminderDaysBefore": "{days, plural, one{{days} दिन पहले} other{{days} दिन पहले}}",
   "reminderCustomDaysTitle": "कस्टम दिन दर्ज करें",
   "reminderCascadeTitle": "कैस्केड रिमाइंडर",
   "reminderCascadeSubtitle": "रिकॉर्ड समाप्त होने से पहले कई सूचनाएं प्राप्त करें",
@@ -523,16 +515,16 @@
   "smartInsightNoRecordsHeading": "अपना पहला रिकॉर्ड जोड़ें",
   "smartInsightNoRecordsBody": "अपने रिकॉर्ड को ट्रैक करना शुरू करें, और Vaultara यहां स्मार्ट इनसाइट्स दिखाएगा।",
   "smartInsightExpiresTodaySingleBody": "{name} आज समाप्त हो रहा है। यदि आपने इसे पहले ही नवीनीकृत कर लिया है, तो यहां तारीख अपडेट करें।",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} आज समाप्त हो रहे हैं।} =1{{names} और 1 और आज समाप्त हो रहे हैं।} other{{names} और {extra} और आज समाप्त हो रहे हैं।}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} आज समाप्त हो रहे हैं।} =1{{names} और {extra} और आज समाप्त हो रहे हैं।} other{{names} और {extra} और आज समाप्त हो रहे हैं।}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} कल समाप्त हो रहा है और इसका कोई रिमाइंडर सेट नहीं है। एक रिमाइंडर सेट करें ताकि आप इसे भूल न जाएं।} other{{name} की अवधि {date} को समाप्त हो रही है और इसका कोई रिमाइंडर सेट नहीं है। एक रिमाइंडर सेट करें ताकि आप इसे भूल न जाएं।}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} की अवधि {dateA} को और {b} की {dateB} को समाप्त हो रही है, जो कि लगभग एक ही समय है। जब दो रिकॉर्ड इतने करीब हों तो एक को भूल जाना आसान होता है।",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} और {c} सभी {lastDate} तक समाप्त हो रहे हैं, जो कि लगभग एक ही समय है। जब कई रिकॉर्ड इतने करीब हों तो एक को भूल जाना आसान होता है।",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} और 1 और रिकॉर्ड {lastDate} तक समाप्त हो रहे हैं, जो कि लगभग एक ही समय है। जब कई रिकॉर्ड इतने करीब हों तो एक को भूल जाना आसान होता है।} other{{a}, {b} और {extra} और रिकॉर्ड्स {lastDate} तक समाप्त हो रहे हैं, जो कि लगभग एक ही समय है। जब कई रिकॉर्ड इतने करीब हों तो एक को भूल जाना आसान होता है।}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} और {extra} और रिकॉर्ड {lastDate} तक समाप्त हो रहे हैं, जो कि लगभग एक ही समय है। जब कई रिकॉर्ड इतने करीब हों तो एक को भूल जाना आसान होता है।} other{{a}, {b} और {extra} और रिकॉर्ड्स {lastDate} तक समाप्त हो रहे हैं, जो कि लगभग एक ही समय है। जब कई रिकॉर्ड इतने करीब हों तो एक को भूल जाना आसान होता है।}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{अगले एक दिन में कुछ भी समाप्त नहीं हो रहा है। आपका अगला रिकॉर्ड {date} को है।} other{अगले {days} दिनों में कुछ भी समाप्त नहीं हो रहा है। आपका अगला रिकॉर्ड {date} को है।}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} श्रेणी में आपका 1 रिकॉर्ड {date} को समाप्त हो रहा है। इसे अनदेखा करना आसान है।} other{{category} श्रेणी में आपके {count} रिकॉर्ड्स {date} तक समाप्त हो रहे हैं। जब रिकॉर्ड इस तरह एक साथ हों तो एक को भूल जाना आसान होता है।}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{आने वाले 1 रिकॉर्ड की अवधि रिमाइंडर से कवर है। किसी और चीज़ पर ध्यान देने की आवश्यकता नहीं है।} other{आने वाले {count} रिकॉर्ड्स की अवधि रिमाइंडर से कवर है। किसी और चीज़ पर ध्यान देने की आवश्यकता नहीं है।}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} श्रेणी में आपका {count} रिकॉर्ड {date} को समाप्त हो रहा है। इसे अनदेखा करना आसान है।} other{{category} श्रेणी में आपके {count} रिकॉर्ड्स {date} तक समाप्त हो रहे हैं। जब रिकॉर्ड इस तरह एक साथ हों तो एक को भूल जाना आसान होता है।}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{आने वाले {count} रिकॉर्ड की अवधि रिमाइंडर से कवर है। किसी और चीज़ पर ध्यान देने की आवश्यकता नहीं है।} other{आने वाले {count} रिकॉर्ड्स की अवधि रिमाइंडर से कवर है। किसी और चीज़ पर ध्यान देने की आवश्यकता नहीं है।}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "सब कुछ अप-टू-डेट है। इस समय किसी भी चीज़ पर ध्यान देने की आवश्यकता नहीं है।",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{इस समय कुछ भी जरूरी नहीं है, लेकिन आने वाले 1 रिकॉर्ड का अभी तक कोई रिमाइंडर नहीं लगा है।} other{इस समय कुछ भी जरूरी नहीं है, लेकिन आने वाले {count} रिकॉर्ड्स का अभी तक कोई रिमाइंडर नहीं लगा है।}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{इस समय कुछ भी जरूरी नहीं है, लेकिन आने वाले {count} रिकॉर्ड का अभी तक कोई रिमाइंडर नहीं लगा है।} other{इस समय कुछ भी जरूरी नहीं है, लेकिन आने वाले {count} रिकॉर्ड्स का अभी तक कोई रिमाइंडर नहीं लगा है।}}",
   "smartInsightCloseExpiriesHeading": "लगभग एक ही समय समाप्त हो रहे हैं",
   "plansHeadline": "पूरी तरह से Vaultara का लाभ उठाएं",
   "plansSubhead": "असीमित रिकॉर्ड, आपके अपने समूह, और ठीक वैसे ही रिमाइंडर्स जैसा आप चाहते हैं।",
@@ -619,7 +611,7 @@
   "reminderCascadeRemoveStep": "हटाएं",
   "reminderCascadeDuplicate": "कोई अन्य रिमाइंडर पहले से ही इस दिन का उपयोग कर रहा है",
   "reminderCascadeOutOfRange": "{min} और {max} दिनों के बीच दर्ज करें",
-  "reminderCascadeStepLabel": "रिमाइंडर {position}: समाप्त होने से {days, plural, =1{1 दिन} other{{days} दिन}} पहले",
+  "reminderCascadeStepLabel": "रिमाइंडर {position}: समाप्त होने से {days, plural, =1{{days} दिन} other{{days} दिन}} पहले",
   "expiryTimelineNotReady": "आपकी समयरेखा तब दिखाई देगी जब आपके पास कुछ अलग-अलग महीनों में समाप्त होने वाले रिकॉर्ड होंगे।",
   "verifyEmailResendIn": "{seconds} सेकंड में दोबारा भेजें",
   "verifyEmailSpamHint": "वहाँ नहीं है? अपने स्पैम या जंक फ़ोल्डर की जाँच करें।",
@@ -628,13 +620,10 @@
   "verifyEmailDiscardBody": "यह खाता सत्यापित नहीं है। अभी छोड़ने पर यह हट जाएगा, और आप किसी भी ईमेल पते से दोबारा साइन अप कर सकते हैं।",
   "verifyEmailDiscardAction": "हटाएं",
   "verifyEmailKeepWaiting": "प्रतीक्षा करते रहें",
-  "expiringBadge": "{count, plural, =1{1 की वैधता जल्द समाप्त हो रही है} other{{count} की वैधता जल्द समाप्त हो रही है}}",
+  "expiringBadge": "{count, plural, =1{{count} की वैधता जल्द समाप्त हो रही है} other{{count} की वैधता जल्द समाप्त हो रही है}}",
   "noRecordsToday": "आज किसी की वैधता समाप्त नहीं हो रही",
   "noRecordsTomorrow": "कल किसी की वैधता समाप्त नहीं हो रही",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} आज समाप्त हो रहा है} =1{{recordName} कल समाप्त हो रहा है} other{{recordName} {days} दिनों में समाप्त हो रहा है}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, आपका {recordName} आज समाप्त हो रहा है। क्या आपने इसे पहले ही नवीनीकृत कर लिया है? इसकी समाप्ति तिथि अपडेट करें।} =1{{firstName}, आपका {recordName} कल समाप्त हो रहा है। इसे अभी नवीनीकृत करें ताकि यह समाप्त न हो।} other{{firstName}, आपका {recordName} {date} को समाप्त हो रहा है। समय से पहले नवीनीकरण आपको सुरक्षित रखता है।}}",
   "cascadeFinalStepTitle": "अंतिम रिमाइंडर: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, आपका {recordName} {days, plural, =1{कल} other{{days} दिनों में, {date} को}} समाप्त हो रहा है। यह आपका अंतिम रिमाइंडर है, इसे नवीनीकृत करें या इसकी तिथि अपडेट करें।",
   "notificationsTitle": "सूचनाएं",
   "notificationsProfileEnabledSubtitle": "रिमाइंडर {time} बजे आते हैं।",
   "notificationsProfileDisabledSubtitle": "सूचनाएं बंद हैं।",
@@ -1664,13 +1653,13 @@
   "dailyDigestSwitchSubtitle": "अपने रिमाइंडर के समय पर एक सूचना पाएँ, जिसमें उस दिन की सभी चीज़ें हों।",
   "dailyDigestTurnedOn": "अब आपके रिमाइंडर एक दैनिक सारांश के रूप में आएंगे।",
   "dailyDigestTurnedOff": "हर रिकॉर्ड के अलग रिमाइंडर फिर से चालू हो गए हैं।",
-  "dailyDigestTitle": "{count, plural, one{1 रिकॉर्ड पर आपका ध्यान चाहिए} other{{count} रिकॉर्ड पर आपका ध्यान चाहिए}}",
+  "dailyDigestTitle": "{count, plural, one{{count} रिकॉर्ड पर आपका ध्यान चाहिए} other{{count} रिकॉर्ड पर आपका ध्यान चाहिए}}",
   "dailyDigestBody": "आगे आने वाले: {names}।",
   "dailyDigestBodyMore": "आगे आने वाले: {names} और {count} अन्य।",
   "dailyDigestLockedRecord": "एक लॉक किया गया रिकॉर्ड",
   "renewReasonRepeat": "{months, plural, one{आपकी दोहराव सेटिंग के अनुसार, हर महीने} other{आपकी दोहराव सेटिंग के अनुसार, हर {months} महीने}}",
   "renewReasonHistory": "{count, plural, one{आपके पिछले नवीनीकरण के आधार पर} other{आपके पिछले {count} नवीनीकरण के आधार पर}}",
-  "renewReasonTypical": "{years, plural, one{आमतौर पर 1 साल के लिए मान्य} other{आमतौर पर {years} साल के लिए मान्य}}",
+  "renewReasonTypical": "{years, plural, one{आमतौर पर {years} साल के लिए मान्य} other{आमतौर पर {years} साल के लिए मान्य}}",
   "renewChangeHint": "बदलने के लिए तारीख पर टैप करें।",
   "renewPickDate": "नई समाप्ति तिथि चुनें",
   "renewPickDateHint": "वह तारीख चुनें जो आपके नए दस्तावेज़ पर दी गई है।",
@@ -2146,8 +2135,8 @@
   "lifePlanAutoChanged": "Vaultara ने यह रिकॉर्ड बदलते देखा, इसलिए इसे पूरा माना गया है।",
   "lifePlanAutoAdded": "यह योजना शुरू करने के बाद जोड़ा गया।",
   "lifePlanProgress": "{total} में से {done} पूरे",
-  "lifePlanDaysToGo": "{count, plural, =1{1 दिन बाकी} other{{count} दिन बाकी}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 दिन पहले} other{{count} दिन पहले}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} दिन बाकी} other{{count} दिन बाकी}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} दिन पहले} other{{count} दिन पहले}}",
   "lifePlanAllDone": "सब पूरा हो गया। आप योजना को पूरी के रूप में चिह्नित कर सकते हैं।",
   "lifePlanFinish": "पूरी के रूप में चिह्नित करें",
   "lifePlanReopen": "फिर से खोलें",
@@ -2276,7 +2265,7 @@
   "lifePlanReadAloudUnavailable": "इस फ़ोन पर ज़ोर से पढ़ने की सुविधा उपलब्ध नहीं है।",
   "lifePlanProofPack": "प्रूफ़ पैक बनाएँ",
   "lifePlanOpenFamily": "परिवार खोलें",
-  "lifePlanRemoved": "{count, plural, =1{आपका हटाया गया 1 रिकॉर्ड रद्द माना जाता है।} other{आपके हटाए गए {count} रिकॉर्ड रद्द माने जाते हैं।}}",
+  "lifePlanRemoved": "{count, plural, =1{आपका हटाया गया {count} रिकॉर्ड रद्द माना जाता है।} other{आपके हटाए गए {count} रिकॉर्ड रद्द माने जाते हैं।}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2873,5 +2862,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} की समाप्ति आज है",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} की समाप्ति कल है",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} की समाप्ति {days} दिन में है} other{{recordName} की समाप्ति {days} दिनों में है}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} समाप्त हो गया है",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "एक लॉक किए गए रिकॉर्ड पर आपका ध्यान चाहिए",
+  "remLockedBody": "इसकी तिथि {date} है। कौन-सा रिकॉर्ड है यह देखने के लिए Vaultara अनलॉक करें।",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "आपके रिकॉर्ड \"{recordName}\" की समाप्ति आज है।",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "आपके रिकॉर्ड \"{recordName}\" की समाप्ति कल है।",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "आपके रिकॉर्ड \"{recordName}\" की समाप्ति {date} को है।",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, आपके रिकॉर्ड \"{recordName}\" की समाप्ति आज है।",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, आपके रिकॉर्ड \"{recordName}\" की समाप्ति कल है।",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, आपके रिकॉर्ड \"{recordName}\" की समाप्ति {date} को है।",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: रिकॉर्ड \"{recordName}\" की समाप्ति आज है।",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: रिकॉर्ड \"{recordName}\" की समाप्ति कल है।",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: रिकॉर्ड \"{recordName}\" की समाप्ति {date} को है।",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "आपका रिकॉर्ड \"{recordName}\" {date} को समाप्त हो गया।",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: रिकॉर्ड \"{recordName}\" {date} को समाप्त हो गया।",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "पहले ही नवीनीकृत कर लिया? इसकी तिथि अपडेट करें।",
+  "remTipTomorrow": "इसे अभी नवीनीकृत करें ताकि यह समाप्त न हो।",
+  "remTipEarly": "जल्दी नवीनीकरण आपको सुरक्षित रखता है।",
+  "remTipLast": "समाप्ति से पहले यह आपका आखिरी रिमाइंडर है।",
+  "remTipExpired": "इसे नवीनीकृत करें, या अगर कर चुके हैं तो इसकी तिथि अपडेट करें।",
+  "remStartBody": "\"{recordName}\" का नवीनीकरण शुरू करने का समय है। इसकी समाप्ति {date} को है, इसलिए अभी शुरू करने पर आपके पास भरपूर समय होगा।",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) का नवीनीकरण शुरू करने का समय है। इसकी समाप्ति {date} को है, इसलिए अभी शुरू करने पर भरपूर समय रहेगा।",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "समाप्ति रिमाइंडर",
+  "notifChannelDescription": "आपके रिकॉर्ड समाप्त होने से पहले रिमाइंडर",
+  "notifTestTitle": "परीक्षण सूचना",
+  "notifTestBody": "Vaultara के रिमाइंडर ऐसे आते हैं।",
+  "notifTestAction": "परीक्षण सूचना भेजें",
+  "notifTestSubtitle": "जांचें कि रिमाइंडर इस फ़ोन तक पहुंचते हैं",
+  "notifTestSent": "परीक्षण भेजा गया। यह कुछ सेकंड में आना चाहिए।",
+  "notifAfterExpiryTitle": "रिकॉर्ड समाप्त होने के बाद याद दिलाएं",
+  "notifAfterExpirySubtitle": "3 और 14 दिन बाद, अगर नवीनीकरण न हुआ हो",
+  "notifWeeklyTitle": "सोमवार का सारांश",
+  "notifWeeklySubtitle": "सोमवार सुबह एक संदेश जब उस सप्ताह कुछ समाप्त हो रहा हो",
+  "notifPushSection": "परिवार और अपडेट",
+  "notifHouseholdTitle": "साझा रिकॉर्ड",
+  "notifHouseholdSubtitle": "जब कोई साझा रिकॉर्ड समाप्त होने वाला हो और किसी ने उसे नवीनीकृत न किया हो",
+  "notifUpdatesTitle": "आपके मांगे गए अपडेट",
+  "notifUpdatesSubtitle": "जब कोई किसी रिकॉर्ड का नया विवरण भेजे",
+  "notifSecurityNote": "आपके खाते में नए साइन-इन की चेतावनियां हमेशा भेजी जाती हैं।",
+  "notifIosHelpTitle": "रिमाइंडर नहीं मिल रहे?",
+  "notifIosHelpSubtitle": "अपने iPhone की सेटिंग्स जांचें",
+  "notifIosHelpStep1": "सेटिंग्स, फिर सूचनाएं, फिर Vaultara खोलें, और सूचनाओं की अनुमति दें चालू करें।",
+  "notifIosHelpStep2": "लॉक स्क्रीन, सूचना केंद्र और बैनर चालू करें।",
+  "notifIosHelpStep3": "अगर आप फ़ोकस का उपयोग करते हैं, तो Vaultara को अनुमत ऐप्स में जोड़ें।",
+  "notifIosHelpStep4": "हर कुछ हफ़्तों में Vaultara खोलें। iPhone आगे के केवल सीमित रिमाइंडर रखता है, और ऐप खोलने पर अगले रिमाइंडर तय हो जाते हैं।",
+  "homeNextUpEmpty": "जल्द कुछ समाप्त नहीं हो रहा। सब ठीक है।",
+  "homeDueSoonChip": "{count, plural, one{30 दिनों में {count} देय} other{30 दिनों में {count} देय}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "पिन की गई श्रेणियां"
 }

@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "بەخێربێیت. ڤۆڵتارا یارمەتیت دەدات بەرواری گرنگ و تۆمارەکان لە شوێنێکی پارێزراودا ڕێک بخەیت.",
   "homeWelcomeSubtitleBack": "خۆشحاڵین کە دیسان دەتبینین. ڤۆڵتارا هەمیشە ئامادەیە بۆ پێداچوونەوەی بەرواری گرنگ و تۆمارەکانت.",
   "homeWelcomeTitle": "بەخێربێیت",
-  "summaryAllCaption": "لە ڤۆڵتارا شوێنکەوتە دەکرێن",
-  "summaryExpiredTitle": "بەسەرچوون",
-  "summaryExpiredCaption": "بەرواری بەسەرچوون تێپەڕیوە",
   "editorNotes": "تێبینی",
   "editorReminderNone": "بیرخستنەوە نییە",
   "editorReminderOnExpiry": "لە ڕۆژی بەسەرچووندا",
@@ -192,7 +189,6 @@
   "addRecord": "زیادکردنی تۆمار",
   "noRecordsYet": "هێشتا هیچ تۆمارێک نییە.",
   "deleteRecordTitle": "سڕینەوەی تۆمار",
-  "summaryAllRecordsTitle": "هەموو تۆمارەکان",
   "noGroupFound": "هێشتا هیچ گرووپێک نییە",
   "groupLabel": "{count, plural, one{{count} گرووپ} other{{count} گرووپ}}",
   "recordsLabel": "{count, plural, one{{count} تۆمار} other{{count} تۆمار}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "تێبینی زیاد بکە (ئیختیاری)",
   "expiryTimelineTitle": "هێڵی کاتی بەسەرچوون",
   "expiryTimelineSubtitle": "لەسەر مانگێک بکە بۆ بینینی ئەو تۆمارانەی لەو مانگەدا بەسەر دەچن",
-  "expiryTimelineDetailCount": "{count, plural, =1{١ تۆمار} other{{count} تۆمار}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} تۆمار} other{{count} تۆمار}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "لە نزیکەوە",
-  "summaryUpcomingCaption": "لە ماوەی ٣٠ ڕۆژی داهاتوودا",
-  "summaryUrgentTitle": "بەپەلە",
-  "summaryUrgentCaption": "لە ماوەی ٧ ڕۆژی داهاتوودا",
   "profileHeaderTitle": "پرۆفایل",
   "profileTutorialsTitle": "ڕێبەرەکان",
   "profileTutorialsSubtitle": "گەڕان بەناو ڕێبەرەکانی ئەپ",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "پرێمیۆم",
   "reminderNone": "بیرخەرەوە نییە",
   "reminderOnExpiry": "لە ڕۆژی بەسەرچوون",
-  "reminderDaysBefore": "{days, plural, one{1 ڕۆژ پێش} other{{days} ڕۆژ پێش}}",
+  "reminderDaysBefore": "{days, plural, one{{days} ڕۆژ پێش} other{{days} ڕۆژ پێش}}",
   "reminderCustomDaysTitle": "ڕۆژە تایبەتەکان بنووسە",
   "reminderCascadeTitle": "بیرخەرەوە کاسکادییەکان",
   "reminderCascadeSubtitle": "چەند ئاگاداریەک وەربگرە پێش ئەوەی تۆمار بەسەربچێت",
@@ -515,12 +507,12 @@
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} بەیانی بەسەردەچێت و بیرخەرەوەی نییە. دانەیەک دابنێ بۆ ئەوەی لەبیرت نەچێت.} other{{name} لە ڕێکەوتی {date} بەسەردەچێت و بیرخەرەوەی نییە. دانەیەک دابنێ بۆ ئەوەی لەبیرت نەچێت.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} لە {dateA} و {b} لە {dateB}، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک دوو تۆمار هێندە لە یەکەوە نزیک بن.",
   "smartInsightCloseExpiriesBodyThree": "{a}، {b} و {c} هەموویان تا {lastDate}، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک چەند تۆمارێک هێندە لە یەکەوە نزیک بن.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}، {b} و ١ تۆماری تر تا {lastDate}، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک چەند تۆمارێک هێندە لە یەکەوە نزیک بن.} other{{a}، {b} و {extra} تۆماری تر تا {lastDate}، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک چەند تۆمارێک هێندە لە یەکەوە نزیک بن.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}، {b} و {extra} تۆماری تر تا {lastDate}، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک چەند تۆمارێک هێندە لە یەکەوە نزیک بن.} other{{a}، {b} و {extra} تۆماری تر تا {lastDate}، نزیکەی لە هەمان کاتدا بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک چەند تۆمارێک هێندە لە یەکەوە نزیک بن.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{هیچ شتێک لە ڕۆژی دواتردا بەسەرناچێت. وادەی داهاتووت لە {date} یە.} other{هیچ شتێک لە {days} ڕۆژی داهاتوودا بەسەرناچێت. وادەی داهاتووت لە {date} یە.}}",
-  "smartInsightClusterBody": "{count, plural, =1{١ لە تۆمارەکانت لە هاوپۆلی {category} لە {date} بەسەردەچێت. ئاسانە پشتگوێ بخرێت.} other{{count} لە تۆمارەکانت لە هاوپۆلی {category} تا {date} بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک بەم شێوەیە کۆکراونەتەوە.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{١ وادەی بەسەرچوونی داهاتوو بە بیرخەرەوەیەک پارێزراوە. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.} other{{count} وادەی بەسەرچوونی داهاتوو بە بیرخەرەوە پارێزراون. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} لە تۆمارەکانت لە هاوپۆلی {category} لە {date} بەسەردەچێت. ئاسانە پشتگوێ بخرێت.} other{{count} لە تۆمارەکانت لە هاوپۆلی {category} تا {date} بەسەردەچن. لەبیرکردنی دانەیەک ئاسانە کاتێک بەم شێوەیە کۆکراونەتەوە.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} وادەی بەسەرچوونی داهاتوو بە بیرخەرەوەیەک پارێزراوە. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.} other{{count} وادەی بەسەرچوونی داهاتوو بە بیرخەرەوە پارێزراون. هیچ شتێکی تر پێویستی بە سەرنجی تۆ نییە.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "هەموو شتێک نوێیە. لەم کاتەدا هیچ شتێک پێویستی بە سەرنجی تۆ نییە.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{لەم کاتەدا هیچ شتێک بەپەلە نییە، بەڵام ١ تۆماری داهاتوو هێشتا بیرخەرەوەی بۆ دانەنراوە.} other{لەم کاتەدا هیچ شتێک بەپەلە نییە، بەڵام {count} تۆماری داهاتوو هێشتا بیرخەرەوەیان بۆ دانەنراوە.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{لەم کاتەدا هیچ شتێک بەپەلە نییە، بەڵام {count} تۆماری داهاتوو هێشتا بیرخەرەوەی بۆ دانەنراوە.} other{لەم کاتەدا هیچ شتێک بەپەلە نییە، بەڵام {count} تۆماری داهاتوو هێشتا بیرخەرەوەیان بۆ دانەنراوە.}}",
   "smartInsightCloseExpiriesHeading": "نزیکەی لە هەمان کاتدا بەسەردەچن",
   "plansHeadline": "تەواوی تایبەتمەندییەکانی Vaultara بەدەستبهێنە",
   "plansSubhead": "تۆماری بێسنوور، گرووپی تایبەت بە خۆت، و بیرخەرەوەکان ڕێکخراون ڕێک بەو شێوازەی کە خۆت دەتەوێت.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "سڕینەوە",
   "reminderCascadeDuplicate": "بیرخەرەوەیەکی تر پێشتر ئەم ڕۆژەی بەکارهێناوە",
   "reminderCascadeOutOfRange": "ژمارەیەک لە نێوان {min} و {max} ڕۆژ بنووسە",
-  "reminderCascadeStepLabel": "بیرخەرەوەی {position}: {days, plural, =1{١ ڕۆژ} other{{days} ڕۆژ}} پێشتر",
+  "reminderCascadeStepLabel": "بیرخەرەوەی {position}: {days, plural, =1{{days} ڕۆژ} other{{days} ڕۆژ}} پێشتر",
   "expiryTimelineNotReady": "هێڵی کاتەکەت دەردەکەوێت کاتێک تۆمارەکانت هەبن کە لە چەند مانگێکی جیاوازدا بەسەردەچن.",
   "verifyEmailResendIn": "دووبارە ناردنەوە لە {seconds} چرکەدا",
   "verifyEmailSpamHint": "لەوێ نییە؟ بوخچەی سپام یان نامە نەخوازراوەکانت بپشکنە.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "ئەم هەژمارە پشتڕاست نەکراوەتەوە. جێهێشتنی ئێستا دەبێتە هۆی سڕینەوەی، و دەتوانیت دووبارە بە هەر ناونیشانێکی ئیمەیڵ تۆمار بکەیتەوە.",
   "verifyEmailDiscardAction": "سڕینەوە",
   "verifyEmailKeepWaiting": "بەردەوام بە لە چاوەڕوانیکردن",
-  "expiringBadge": "{count, plural, =1{1 بەزوویی بەسەردەچێت} other{{count} بەزوویی بەسەردەچن}}",
+  "expiringBadge": "{count, plural, =1{{count} بەزوویی بەسەردەچێت} other{{count} بەزوویی بەسەردەچن}}",
   "noRecordsToday": "ئەمڕۆ هیچ بەسەرناچێت",
   "noRecordsTomorrow": "سبەینێ هیچ بەسەرناچێت",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ئەمڕۆ بەسەردەچێت} =1{{recordName} بەیانی بەسەردەچێت} other{{recordName} لە دوای {days} ڕۆژی تر بەسەردەچێت}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}، {recordName}ەکەت ئەمڕۆ بەسەردەچێت. پێشتر نوێت کردووەتەوە؟ بەرواری بەسەرچوونی نوێ بکەرەوە.} =1{{firstName}، {recordName}ەکەت بەیانی بەسەردەچێت. ئێستا نوێی بکەرەوە بۆ ئەوەی بەسەرنەچێت.} other{{firstName}، {recordName}ەکەت لە بەرواری {date} بەسەردەچێت. نوێکردنەوەی پێشوەختە پارێزراوت دەهێڵێتەوە.}}",
   "cascadeFinalStepTitle": "دواین بیرخستنەوە: {recordName}",
-  "cascadeFinalStepBody": "{firstName}، {recordName}ەکەت {days, plural, =1{بەیانی} other{لە دوای {days} ڕۆژی تر، لە بەرواری {date}}} بەسەردەچێت. ئەمە دواین بیرخستنەوەتە، نوێی بکەرەوە یان بەروارەکەی بگۆڕە.",
   "notificationsTitle": "ئاگادارکردنەوەکان",
   "notificationsProfileEnabledSubtitle": "بیرخەرەوەکان لە کاتژمێر {time} دەگەن.",
   "notificationsProfileDisabledSubtitle": "ئاگادارکردنەوەکان کوژێنراونەتەوە.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "لە کاتی بیرخەرەوەکەتدا یەک ئاگادارکردنەوە وەربگرە کە هەموو ئەو شتانە دەژمێرێت کە ئەو ڕۆژە کاتیانە.",
   "dailyDigestTurnedOn": "بیرخەرەوەکانت ئێستا وەک یەک پوختەی ڕۆژانە دێن.",
   "dailyDigestTurnedOff": "بیرخەرەوەی جیا بۆ هەر تۆمارێک گەڕایەوە.",
-  "dailyDigestTitle": "{count, plural, one{1 تۆمار پێویستی بە گرنگیپێدانی تۆیە} other{{count} تۆمار پێویستیان بە گرنگیپێدانی تۆیە}}",
+  "dailyDigestTitle": "{count, plural, one{{count} تۆمار پێویستی بە گرنگیپێدانی تۆیە} other{{count} تۆمار پێویستیان بە گرنگیپێدانی تۆیە}}",
   "dailyDigestBody": "بەم زووانە: {names}.",
   "dailyDigestBodyMore": "بەم زووانە: {names} و {count}ی تر.",
   "dailyDigestLockedRecord": "تۆمارێکی قفڵکراو",
   "renewReasonRepeat": "{months, plural, one{لەسەر بنەمای ڕێکخستنی دووبارەبوونەوەت: هەر مانگێک} other{لەسەر بنەمای ڕێکخستنی دووبارەبوونەوەت: هەر {months} مانگ}}",
   "renewReasonHistory": "{count, plural, one{لەسەر بنەمای دوایین نوێکردنەوەت} other{لەسەر بنەمای دوایین {count} نوێکردنەوەت}}",
-  "renewReasonTypical": "{years, plural, one{بە زۆری بۆ 1 ساڵ بەردەوامە} other{بە زۆری بۆ {years} ساڵ بەردەوامە}}",
+  "renewReasonTypical": "{years, plural, one{بە زۆری بۆ {years} ساڵ بەردەوامە} other{بە زۆری بۆ {years} ساڵ بەردەوامە}}",
   "renewChangeHint": "پەنجە بنێ بە بەروارەکەوە بۆ گۆڕینی.",
   "renewPickDate": "بەرواری بەسەرچوونی نوێ هەڵبژێرە",
   "renewPickDateHint": "ئەو بەروارە هەڵبژێرە کە لەسەر بەڵگەنامە نوێیەکەت نووسراوە.",
@@ -1811,9 +1800,9 @@
   "secHistoryIntro": "چوونەژوورەوەکان و گۆڕانکارییەکانی هەژمارەکەت لە 90 ڕۆژی ڕابردوودا.",
   "secHistoryEmpty": "هێشتا هیچ شتێک نییە بۆ پیشاندان.",
   "secJustNow": "ئێستا",
-  "secMinutesAgo": "{count, plural, one{1 خولەک لەمەوبەر} other{{count} خولەک لەمەوبەر}}",
-  "secHoursAgo": "{count, plural, one{1 کاتژمێر لەمەوبەر} other{{count} کاتژمێر لەمەوبەر}}",
-  "secDaysAgo": "{count, plural, one{1 ڕۆژ لەمەوبەر} other{{count} ڕۆژ لەمەوبەر}}",
+  "secMinutesAgo": "{count, plural, one{{count} خولەک لەمەوبەر} other{{count} خولەک لەمەوبەر}}",
+  "secHoursAgo": "{count, plural, one{{count} کاتژمێر لەمەوبەر} other{{count} کاتژمێر لەمەوبەر}}",
+  "secDaysAgo": "{count, plural, one{{count} ڕۆژ لەمەوبەر} other{{count} ڕۆژ لەمەوبەر}}",
   "secEventNewSignIn": "ئامێرێکی نوێ چووە ژوورەوە",
   "secEventSignIn": "چوویتە ژوورەوە",
   "secEventPasswordChanged": "وشەی نهێنی گۆڕدرا",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "\"{recordName}\" ئەمڕۆ بەسەردەچێت",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "\"{recordName}\" سبەینێ بەسەردەچێت",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{\"{recordName}\" لە {days} ڕۆژدا بەسەردەچێت} other{\"{recordName}\" لە {days} ڕۆژدا بەسەردەچێت}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "\"{recordName}\" بەسەرچووە",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "تۆمارێکی قفڵکراو پێویستی بە سەرنجی تۆیە",
+  "remLockedBody": "بەروارەکەی {date}ـە. Vaultara بکەرەوە بۆ ئەوەی ببینیت کام تۆمارە.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "تۆماری \"{recordName}\"ـت ئەمڕۆ بەسەردەچێت.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "تۆماری \"{recordName}\"ـت سبەینێ بەسەردەچێت.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "تۆماری \"{recordName}\"ـت لە {date} بەسەردەچێت.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}، تۆماری \"{recordName}\"ـت ئەمڕۆ بەسەردەچێت.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}، تۆماری \"{recordName}\"ـت سبەینێ بەسەردەچێت.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}، تۆماری \"{recordName}\"ـت لە {date} بەسەردەچێت.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: تۆماری \"{recordName}\" ئەمڕۆ بەسەردەچێت.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: تۆماری \"{recordName}\" سبەینێ بەسەردەچێت.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: تۆماری \"{recordName}\" لە {date} بەسەردەچێت.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "تۆماری \"{recordName}\"ـت لە {date} بەسەرچوو.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: تۆماری \"{recordName}\" لە {date} بەسەرچوو.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "پێشتر نوێت کردەوە؟ بەروارەکەی نوێ بکەرەوە.",
+  "remTipTomorrow": "ئێستا نوێی بکەرەوە بۆ ئەوەی بەسەرنەچێت.",
+  "remTipEarly": "نوێکردنەوەی زوو بە پارێزراوی دەتهێڵێتەوە.",
+  "remTipLast": "ئەمە دوایین بیرخستنەوەیە پێش بەسەرچوون.",
+  "remTipExpired": "نوێی بکەرەوە، یان ئەگەر پێشتر کردووتە بەروارەکەی نوێ بکەرەوە.",
+  "remStartBody": "کاتی دەستپێکردنی نوێکردنەوەی \"{recordName}\"ـە. لە {date} بەسەردەچێت، بۆیە ئەگەر ئێستا دەست پێبکەیت کاتی زۆرت دەبێت.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "کاتی دەستپێکردنی نوێکردنەوەی \"{recordName}\" ({person})ـە. لە {date} بەسەردەچێت، بۆیە دەستپێکردن لە ئێستاوە کاتی زۆر دەهێڵێتەوە.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "بیرخستنەوەکانی بەسەرچوون",
+  "notifChannelDescription": "بیرخستنەوە پێش بەسەرچوونی تۆمارەکانت",
+  "notifTestTitle": "ئاگادارکردنەوەی تاقیکردنەوە",
+  "notifTestBody": "بیرخستنەوەکانی Vaultara بەم شێوەیە دێن.",
+  "notifTestAction": "ناردنی ئاگادارکردنەوەی تاقیکردنەوە",
+  "notifTestSubtitle": "پشکنین بکە کە بیرخستنەوەکان دەگەنە ئەم مۆبایلە",
+  "notifTestSent": "تاقیکردنەوە نێردرا. دەبێت لە چەند چرکەیەکدا بگات.",
+  "notifAfterExpiryTitle": "دوای بەسەرچوونی تۆمار بیرم بخەرەوە",
+  "notifAfterExpirySubtitle": "3 و 14 ڕۆژ دواتر، ئەگەر نوێ نەکرابێتەوە",
+  "notifWeeklyTitle": "پوختەی دووشەممە",
+  "notifWeeklySubtitle": "پەیامێک بەیانی دووشەممە کاتێک شتێک لەو هەفتەیەدا بەسەردەچێت",
+  "notifPushSection": "خێزان و نوێکارییەکان",
+  "notifHouseholdTitle": "تۆمارە هاوبەشکراوەکان",
+  "notifHouseholdSubtitle": "کاتێک تۆمارێکی هاوبەشکراو نزیکە بەسەربچێت و کەس نوێی نەکردۆتەوە",
+  "notifUpdatesTitle": "ئەو نوێکارییانەی داوات کردوون",
+  "notifUpdatesSubtitle": "کاتێک کەسێک زانیاری نوێی تۆمارێک دەنێرێت",
+  "notifSecurityNote": "ئاگادارکردنەوەکانی چوونەژوورەوەی نوێ بۆ هەژمارەکەت هەمیشە دەنێردرێن.",
+  "notifIosHelpTitle": "بیرخستنەوەت پێناگات؟",
+  "notifIosHelpSubtitle": "ڕێکخستنەکانی iPhone بپشکنە",
+  "notifIosHelpStep1": "ڕێکخستنەکان، پاشان ئاگادارکردنەوەکان، پاشان Vaultara بکەرەوە، و ڕێگەدان بە ئاگادارکردنەوە چالاک بکە.",
+  "notifIosHelpStep2": "شاشەی قفڵ، ناوەندی ئاگادارکردنەوە و بانەرەکان چالاک بکە.",
+  "notifIosHelpStep3": "ئەگەر Focus بەکاردەهێنیت، Vaultara زیاد بکە بۆ ئەپە ڕێگەپێدراوەکان.",
+  "notifIosHelpStep4": "هەر چەند هەفتەیەک جارێک Vaultara بکەرەوە. iPhone تەنها ژمارەیەکی سنووردار بیرخستنەوەی داهاتوو هەڵدەگرێت، و کردنەوەی ئەپەکە دواتریەکان ڕێکدەخات.",
+  "homeNextUpEmpty": "بەم زووانە هیچ شتێک بەسەرناچێت. هەموو شتێک ئامادەیە.",
+  "homeDueSoonChip": "{count, plural, one{{count} لە ماوەی 30 ڕۆژدا} other{{count} لە ماوەی 30 ڕۆژدا}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "پۆلە جێگیرکراوەکان"
 }

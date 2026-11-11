@@ -360,15 +360,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Pozgarria da zu berriro ikustea. Vaultara hemen dago zure data eta erregistro garrantzitsuak berrikusi nahi dituzunean.';
 
   @override
-  String get summaryAllCaption => 'Vaultaran jarraituta';
-
-  @override
-  String get summaryExpiredTitle => 'Iraungita';
-
-  @override
-  String get summaryExpiredCaption => 'Iraungitze-data igarota';
-
-  @override
   String get editorNotes => 'Oharrak';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Ezabatu erregistroa';
-
-  @override
-  String get summaryAllRecordsTitle => 'Erregistro guztiak';
 
   @override
   String get noGroupFound => 'Oraindik ez dago talderik';
@@ -829,22 +817,10 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count erregistro',
-      one: 'Erregistro 1',
+      one: 'Erregistro $count',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Datozenak';
-
-  @override
-  String get summaryUpcomingCaption => '30 egun barru';
-
-  @override
-  String get summaryUrgentTitle => 'Premiazkoak';
-
-  @override
-  String get summaryUrgentCaption => '7 egun barru';
 
   @override
   String get profileHeaderTitle => 'Profila';
@@ -945,7 +921,7 @@ class AppLocalizationsEu extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days egun lehenago',
-      one: 'Egun 1 lehenago',
+      one: 'Egun $days lehenago',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsEu extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names eta beste $extra erregistro gaur iraungitzen dira.',
-      one: '$names eta beste erregistro 1 gaur iraungitzen dira.',
+      one: '$names eta beste erregistro $extra gaur iraungitzen dira.',
       zero: '$names gaur iraungitzen dira.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsEu extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b eta beste $extra erregistro $lastDate baino lehen iraungitzen dira, antzeko garaian. Erraza da bat ahaztea hainbat erregistro hain hurbil daudenean.',
-      one: '$a, $b eta beste erregistro 1 $lastDate baino lehen iraungitzen dira, antzeko garaian. Erraza da bat ahaztea hainbat erregistro hain hurbil daudenean.',
+      one: '$a, $b eta beste erregistro $extra $lastDate baino lehen iraungitzen dira, antzeko garaian. Erraza da bat ahaztea hainbat erregistro hain hurbil daudenean.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category kategoriako zure $count erregistro $date baino lehen iraungitzen dira. Erraza da bat ahaztea horrela taldekatuta daudenean.',
-      one: '$category kategoriako zure erregistro 1 $date(e)an iraungitzen da. Erraza da oharkabean pasatzea.',
+      one: '$category kategoriako zure erregistro $count $date(e)an iraungitzen da. Erraza da oharkabean pasatzea.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Datozen $count iraungitze-data gogorarazleekin estalita daude. Ez dago zure arreta eskatzen duen beste ezer.',
-      one: 'Datorren iraungitze-data 1 gogorarazle batekin estalita dago. Ez dago zure arreta eskatzen duen beste ezer.',
+      one: 'Datorren iraungitze-data $count gogorarazle batekin estalita dago. Ez dago zure arreta eskatzen duen beste ezer.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsEu extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days egun',
-      one: 'egun 1',
+      one: 'egun $days',
     );
     return '$position. gogorarazlea: $_temp0 lehenago';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count laster iraungiko dira',
-      one: '1 laster iraungiko da',
+      one: '$count laster iraungiko da',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsEu extends AppLocalizations {
   String get noRecordsTomorrow => 'Ezer ez da bihar iraungitzen';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName $days egun barru iraungitzen da',
-      one: '$recordName bihar iraungitzen da',
-      zero: '$recordName gaur iraungitzen da',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, zure $recordName $date datan iraungitzen da. Epea amaitu baino lehen berritzeak estalita mantentzen zaitu.',
-      one: '$firstName, zure $recordName bihar iraungitzen da. Berritu orain iraungi ez dadin.',
-      zero: '$firstName, zure $recordName gaur iraungitzen da. Berritu duzu dagoeneko? Eguneratu iraungitze-data.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Azken gogorarazlea: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days egun barru, $date datan',
-      one: 'bihar',
-    );
-    return '$firstName, zure $recordName $_temp0 iraungitzen da. Hau da zure azken gogorarazlea, berritu ezazu edo eguneratu data.';
   }
 
   @override
@@ -5654,7 +5595,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Duela $count minutu',
-      one: 'Duela minutu 1',
+      one: 'Duela minutu $count',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Duela $count ordu',
-      one: 'Duela ordu 1',
+      one: 'Duela ordu $count',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Duela $count egun',
-      one: 'Duela egun 1',
+      one: 'Duela egun $count',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count egun falta dira',
-      one: 'Egun 1 falta da',
+      one: 'Egun $count falta da',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Duela $count egun',
-      one: 'Duela egun 1',
+      one: 'Duela egun $count',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ezabatu dituzun $count erregistro ezeztatutzat hartzen dira.',
-      one: 'Ezabatu duzun erregistro 1 ezeztatutzat hartzen da.',
+      one: 'Ezabatu duzun erregistro $count ezeztatutzat hartzen da.',
     );
     return '$_temp0';
   }
@@ -7584,7 +7525,7 @@ class AppLocalizationsEu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count urrats',
-      one: 'Urrats 1',
+      one: 'Urrats $count',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsEu extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Abisua: $name $date iraungitzen da';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName gaur iraungitzen da';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName bihar iraungitzen da';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days egun barru iraungitzen da',
+      one: '$recordName $days egun barru iraungitzen da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName iraungi da';
+  }
+
+  @override
+  String get remLockedTitle => 'Erregistro blokeatu batek zure arreta behar du';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Data $date da. Desblokeatu Vaultara zein erregistro den ikusteko.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Zure «$recordName» erregistroa gaur iraungitzen da.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Zure «$recordName» erregistroa bihar iraungitzen da.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Zure «$recordName» erregistroa $date datan iraungitzen da.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, zure «$recordName» erregistroa gaur iraungitzen da.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, zure «$recordName» erregistroa bihar iraungitzen da.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, zure «$recordName» erregistroa $date datan iraungitzen da.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: «$recordName» erregistroa gaur iraungitzen da.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: «$recordName» erregistroa bihar iraungitzen da.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: «$recordName» erregistroa $date datan iraungitzen da.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Zure «$recordName» erregistroa $date datan iraungi zen.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: «$recordName» erregistroa $date datan iraungi zen.';
+  }
+
+  @override
+  String get remTipToday => 'Berritu duzu jada? Eguneratu data.';
+
+  @override
+  String get remTipTomorrow => 'Berritu orain, iraungi ez dadin.';
+
+  @override
+  String get remTipEarly => 'Goiz berritzeak babestuta mantentzen zaitu.';
+
+  @override
+  String get remTipLast => 'Iraungi aurreko azken oroigarria da hau.';
+
+  @override
+  String get remTipExpired => 'Berritu, edo eguneratu data dagoeneko egin baduzu.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '«$recordName» berritzen hasteko garaia da. $date datan iraungitzen da; beraz, orain hasten bazara, denbora asko izango duzu.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '«$recordName» ($person) berritzen hasteko garaia da. $date datan iraungitzen da; beraz, orain hasiz gero, denbora asko egongo da.';
+  }
+
+  @override
+  String get notifChannelName => 'Iraungitze-oroigarriak';
+
+  @override
+  String get notifChannelDescription => 'Zure erregistroak iraungi aurreko oroigarriak';
+
+  @override
+  String get notifTestTitle => 'Proba-jakinarazpena';
+
+  @override
+  String get notifTestBody => 'Vaultararen oroigarriak horrela iristen dira.';
+
+  @override
+  String get notifTestAction => 'Bidali proba-jakinarazpen bat';
+
+  @override
+  String get notifTestSubtitle => 'Egiaztatu oroigarriak telefono honetara iristen direla';
+
+  @override
+  String get notifTestSent => 'Proba bidali da. Segundo batzuetan iritsi beharko litzateke.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Gogorarazi erregistro bat iraungi ondoren';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 eta 14 egun geroago, berritu ez bada';
+
+  @override
+  String get notifWeeklyTitle => 'Asteleheneko laburpena';
+
+  @override
+  String get notifWeeklySubtitle => 'Mezu bat astelehen goizean aste horretan zerbait iraungitzen denean';
+
+  @override
+  String get notifPushSection => 'Etxea eta eguneraketak';
+
+  @override
+  String get notifHouseholdTitle => 'Partekatutako erregistroak';
+
+  @override
+  String get notifHouseholdSubtitle => 'Partekatutako erregistro bat iraungitzear dagoenean eta inork berritu ez duenean';
+
+  @override
+  String get notifUpdatesTitle => 'Eskatu dituzun eguneraketak';
+
+  @override
+  String get notifUpdatesSubtitle => 'Norbaitek erregistro baten datu berriak bidaltzen dituenean';
+
+  @override
+  String get notifSecurityNote => 'Zure kontuan saio-hasiera berriei buruzko alertak beti bidaltzen dira.';
+
+  @override
+  String get notifIosHelpTitle => 'Ez zaizkizu oroigarriak iristen?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Egiaztatu iPhonearen ezarpenak';
+
+  @override
+  String get notifIosHelpStep1 => 'Ireki Ezarpenak, gero Jakinarazpenak, gero Vaultara, eta aktibatu Baimendu jakinarazpenak.';
+
+  @override
+  String get notifIosHelpStep2 => 'Aktibatu Pantaila blokeatua, Jakinarazpen-zentroa eta Bannerrak.';
+
+  @override
+  String get notifIosHelpStep3 => 'Kontzentrazio modu bat erabiltzen baduzu, gehitu Vaultara baimendutako aplikazioetara.';
+
+  @override
+  String get notifIosHelpStep4 => 'Ireki Vaultara aste gutxiro. iPhoneak etorkizuneko oroigarri kopuru mugatua soilik gordetzen du, eta aplikazioa irekitzean hurrengoak programatzen dira.';
+
+  @override
+  String get homeNextUpEmpty => 'Ez da ezer iraungiko laster. Dena prest dago.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 30 egunean iraungitzen dira',
+      one: '$count 30 egunean iraungitzen da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Ainguratutako kategoriak';
 }

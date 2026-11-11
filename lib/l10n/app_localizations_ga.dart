@@ -360,15 +360,6 @@ class AppLocalizationsGa extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Tá áthas orainn tú a fheiceáil arís. Tá Vaultara anseo aon uair is mian leat do dhátaí agus taifid thábhachtacha a athbhreithniú.';
 
   @override
-  String get summaryAllCaption => 'Rianaithe i Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'In éag';
-
-  @override
-  String get summaryExpiredCaption => 'Tá an dáta éaga caite';
-
-  @override
   String get editorNotes => 'Nótaí';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Scrios taifead';
-
-  @override
-  String get summaryAllRecordsTitle => 'Gach taifead';
 
   @override
   String get noGroupFound => 'Níl aon ghrúpaí fós';
@@ -831,23 +819,11 @@ class AppLocalizationsGa extends AppLocalizations {
       other: '$count taifead',
       many: '$count dtaifead',
       few: '$count thaifead',
-      two: '2 thaifead',
-      one: '1 taifead',
+      two: '$count thaifead',
+      one: '$count taifead',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Le Teacht';
-
-  @override
-  String get summaryUpcomingCaption => 'Laistigh de 30 lá';
-
-  @override
-  String get summaryUrgentTitle => 'Práinneach';
-
-  @override
-  String get summaryUrgentCaption => 'Laistigh de 7 lá';
 
   @override
   String get profileHeaderTitle => 'Próifíl';
@@ -948,7 +924,7 @@ class AppLocalizationsGa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days lá roimhe sin',
-      one: '1 lá roimhe sin',
+      one: '$days lá roimhe sin',
     );
     return '$_temp0';
   }
@@ -1051,7 +1027,7 @@ class AppLocalizationsGa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names agus $extra eile ag dul in éag inniu.',
-      one: '$names agus 1 eile ag dul in éag inniu.',
+      one: '$names agus $extra eile ag dul in éag inniu.',
       zero: '$names ag dul in éag inniu.',
     );
     return '$_temp0';
@@ -1084,7 +1060,7 @@ class AppLocalizationsGa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b agus $extra taifead eile ag dul in éag faoin $lastDate, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá roinnt rudaí chomh gar sin dá chéile.',
-      one: '$a, $b agus 1 taifead eile ag dul in éag faoin $lastDate, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá roinnt rudaí chomh gar sin dá chéile.',
+      one: '$a, $b agus $extra taifead eile ag dul in éag faoin $lastDate, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá roinnt rudaí chomh gar sin dá chéile.',
     );
     return '$_temp0';
   }
@@ -1106,7 +1082,7 @@ class AppLocalizationsGa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Tá $count de do chuid taifead sa chatagóir $category ag dul in éag faoin $date. Is furasta ceann acu a dhearmad nuair atá siad grúpáilte mar seo.',
-      one: 'Tá 1 de do chuid taifead sa chatagóir $category ag dul in éag ar an $date. Is furasta neamhaird a thabhairt air.',
+      one: 'Tá $count de do chuid taifead sa chatagóir $category ag dul in éag ar an $date. Is furasta neamhaird a thabhairt air.',
     );
     return '$_temp0';
   }
@@ -1117,7 +1093,7 @@ class AppLocalizationsGa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Tá meabhrúcháin socraithe do $count spriocdháta atá ag teacht aníos. Níl aon rud eile a dteastaíonn d\'aire uaidh.',
-      one: 'Tá meabhrúchán socraithe do 1 spriocdháta atá ag teacht aníos. Níl aon rud eile a dteastaíonn d\'aire uaidh.',
+      one: 'Tá meabhrúchán socraithe do $count spriocdháta atá ag teacht aníos. Níl aon rud eile a dteastaíonn d\'aire uaidh.',
     );
     return '$_temp0';
   }
@@ -1131,7 +1107,7 @@ class AppLocalizationsGa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Níl aon rud práinneach faoi láthair, ach níl aon mheabhrúchán fós ag $count taifead atá ag teacht aníos.',
-      one: 'Níl aon rud práinneach faoi láthair, ach níl aon mheabhrúchán fós ag 1 taifead atá ag teacht aníos.',
+      one: 'Níl aon rud práinneach faoi láthair, ach níl aon mheabhrúchán fós ag $count taifead atá ag teacht aníos.',
     );
     return '$_temp0';
   }
@@ -1255,7 +1231,7 @@ class AppLocalizationsGa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days lá',
-      one: '1 lá',
+      one: '$days lá',
     );
     return 'Meabhrúchán $position: $_temp0 roimh ré';
   }
@@ -1292,7 +1268,7 @@ class AppLocalizationsGa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ag dul in éag go luath',
-      one: '1 ag dul in éag go luath',
+      one: '$count ag dul in éag go luath',
     );
     return '$_temp0';
   }
@@ -1304,43 +1280,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get noRecordsTomorrow => 'Níl aon rud ag dul in éag amárach';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Rachaidh $recordName in éag i gceann $days lá',
-      one: 'Rachaidh $recordName in éag amárach',
-      zero: 'Rachaidh $recordName in éag inniu',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, rachaidh do $recordName in éag ar $date. Coinníonn athnuachan luath tú clúdaithe.',
-      one: '$firstName, rachaidh do $recordName in éag amárach. Athnuaigh anois é ionas nach rachaidh sé in éag.',
-      zero: '$firstName, rachaidh do $recordName in éag inniu. An bhfuil sé athnuaite agat cheana féin? Nuashonraigh a dháta éaga.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Meabhrúchán deiridh: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'i gceann $days lá, ar $date',
-      one: 'amárach',
-    );
-    return '$firstName, rachaidh do $recordName in éag $_temp0. Is é seo do mheabhrúchán deiridh, athnuaigh é nó nuashonraigh a dháta.';
   }
 
   @override
@@ -4124,7 +4065,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: 'Níl $count ngrianghraf criptithe go fóill',
       few: 'Níl $count ghrianghraf criptithe go fóill',
       two: 'Níl $count ghrianghraf criptithe go fóill',
-      one: 'Níl 1 ghrianghraf criptithe go fóill',
+      one: 'Níl $count ghrianghraf criptithe go fóill',
     );
     return '$_temp0';
   }
@@ -4248,7 +4189,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: 'Tá $count ngrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.',
       few: 'Tá $count ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.',
       two: 'Tá $count ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.',
-      one: 'Tá 1 ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn é a chriptiú anois.',
+      one: 'Tá $count ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn é a chriptiú anois.',
     );
     return '$_temp0 Coinnigh Vaultara oscailte go mbeidh seo críochnaithe.';
   }
@@ -4286,7 +4227,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: 'An iomarca iarrachtaí. Fan $seconds soicind agus bain triail eile as.',
       few: 'An iomarca iarrachtaí. Fan $seconds soicind agus bain triail eile as.',
       two: 'An iomarca iarrachtaí. Fan $seconds shoicind agus bain triail eile as.',
-      one: 'An iomarca iarrachtaí. Fan 1 soicind agus bain triail eile as.',
+      one: 'An iomarca iarrachtaí. Fan $seconds soicind agus bain triail eile as.',
     );
     return '$_temp0';
   }
@@ -4300,7 +4241,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: 'An iomarca iarrachtaí. Fan $minutes nóiméad agus bain triail eile as.',
       few: 'An iomarca iarrachtaí. Fan $minutes nóiméad agus bain triail eile as.',
       two: 'An iomarca iarrachtaí. Fan $minutes nóiméad agus bain triail eile as.',
-      one: 'An iomarca iarrachtaí. Fan 1 nóiméad agus bain triail eile as.',
+      one: 'An iomarca iarrachtaí. Fan $minutes nóiméad agus bain triail eile as.',
     );
     return '$_temp0';
   }
@@ -5153,7 +5094,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: 'Tá aird ag teastáil ó $count dtaifead',
       few: 'Tá aird ag teastáil ó $count thaifead',
       two: 'Tá aird ag teastáil ó $count thaifead',
-      one: 'Tá aird ag teastáil ó 1 taifead',
+      one: 'Tá aird ag teastáil ó $count taifead',
     );
     return '$_temp0';
   }
@@ -5208,7 +5149,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: 'Bailí go hiondúil ar feadh $years mbliana',
       few: 'Bailí go hiondúil ar feadh $years bliana',
       two: 'Bailí go hiondúil ar feadh $years bhliain',
-      one: 'Bailí go hiondúil ar feadh 1 bhliain',
+      one: 'Bailí go hiondúil ar feadh $years bhliain',
     );
     return '$_temp0';
   }
@@ -5817,7 +5758,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: '$count nóiméad ó shin',
       few: '$count nóiméad ó shin',
       two: '$count nóiméad ó shin',
-      one: '1 nóiméad ó shin',
+      one: '$count nóiméad ó shin',
     );
     return '$_temp0';
   }
@@ -5831,7 +5772,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: '$count n-uaire an chloig ó shin',
       few: '$count huaire an chloig ó shin',
       two: '$count uair an chloig ó shin',
-      one: '1 uair an chloig ó shin',
+      one: '$count uair an chloig ó shin',
     );
     return '$_temp0';
   }
@@ -5845,7 +5786,7 @@ class AppLocalizationsGa extends AppLocalizations {
       many: '$count lá ó shin',
       few: '$count lá ó shin',
       two: '$count lá ó shin',
-      one: '1 lá ó shin',
+      one: '$count lá ó shin',
     );
     return '$_temp0';
   }
@@ -6973,7 +6914,7 @@ class AppLocalizationsGa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count lá fágtha',
-      one: '1 lá fágtha',
+      one: '$count lá fágtha',
     );
     return '$_temp0';
   }
@@ -6984,7 +6925,7 @@ class AppLocalizationsGa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count lá ó shin',
-      one: '1 lá ó shin',
+      one: '$count lá ó shin',
     );
     return '$_temp0';
   }
@@ -7344,7 +7285,7 @@ class AppLocalizationsGa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Áirítear $count taifead a scrios tú mar cealaithe.',
-      one: 'Áirítear 1 taifead a scrios tú mar cealaithe.',
+      one: 'Áirítear $count taifead a scrios tú mar cealaithe.',
     );
     return '$_temp0';
   }
@@ -8463,4 +8404,210 @@ class AppLocalizationsGa extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Meabhrúchán: téann $name in éag ar $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'Rachaidh $recordName in éag inniu';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'Rachaidh $recordName in éag amárach';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Rachaidh $recordName in éag i gceann $days lá',
+      many: 'Rachaidh $recordName in éag i gceann $days lá',
+      few: 'Rachaidh $recordName in éag i gceann $days lá',
+      two: 'Rachaidh $recordName in éag i gceann $days lá',
+      one: 'Rachaidh $recordName in éag i gceann $days lá',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'Tá $recordName imithe in éag';
+  }
+
+  @override
+  String get remLockedTitle => 'Tá aird ag teastáil ó thaifead faoi ghlas';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Is é $date a dháta. Díghlasáil Vaultara chun a fheiceáil cén taifead atá ann.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Rachaidh do thaifead \"$recordName\" in éag inniu.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Rachaidh do thaifead \"$recordName\" in éag amárach.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Rachaidh do thaifead \"$recordName\" in éag ar $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, rachaidh do thaifead \"$recordName\" in éag inniu.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, rachaidh do thaifead \"$recordName\" in éag amárach.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, rachaidh do thaifead \"$recordName\" in éag ar $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: rachaidh an taifead \"$recordName\" in éag inniu.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: rachaidh an taifead \"$recordName\" in éag amárach.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: rachaidh an taifead \"$recordName\" in éag ar $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Chuaigh do thaifead \"$recordName\" in éag ar $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: chuaigh an taifead \"$recordName\" in éag ar $date.';
+  }
+
+  @override
+  String get remTipToday => 'Athnuaite cheana? Nuashonraigh a dháta.';
+
+  @override
+  String get remTipTomorrow => 'Athnuaigh anois é ionas nach rachaidh sé in éag.';
+
+  @override
+  String get remTipEarly => 'Coinníonn athnuachan luath clúdaithe thú.';
+
+  @override
+  String get remTipLast => 'Seo do mheabhrúchán deireanach sula rachaidh sé in éag.';
+
+  @override
+  String get remTipExpired => 'Athnuaigh é, nó nuashonraigh a dháta má tá sé déanta agat cheana.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Tá sé in am tosú ar \"$recordName\" a athnuachan. Rachaidh sé in éag ar $date, mar sin má thosaíonn tú anois beidh neart ama agat.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Tá sé in am tosú ar \"$recordName\" ($person) a athnuachan. Rachaidh sé in éag ar $date, mar sin má thosaítear anois beidh neart ama ann.';
+  }
+
+  @override
+  String get notifChannelName => 'Meabhrúcháin éaga';
+
+  @override
+  String get notifChannelDescription => 'Meabhrúcháin sula rachaidh do thaifid in éag';
+
+  @override
+  String get notifTestTitle => 'Fógra tástála';
+
+  @override
+  String get notifTestBody => 'Seo mar a thagann meabhrúcháin Vaultara.';
+
+  @override
+  String get notifTestAction => 'Seol fógra tástála';
+
+  @override
+  String get notifTestSubtitle => 'Seiceáil go dtagann meabhrúcháin chuig an bhfón seo';
+
+  @override
+  String get notifTestSent => 'Tástáil seolta. Ba cheart di teacht i gceann cúpla soicind.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Cuir i gcuimhne dom tar éis do thaifead dul in éag';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 agus 14 lá ina dhiaidh, mura bhfuil sé athnuaite';
+
+  @override
+  String get notifWeeklyTitle => 'Achoimre an Luain';
+
+  @override
+  String get notifWeeklySubtitle => 'Nóta maidin Dé Luain nuair a rachaidh rud éigin in éag an tseachtain sin';
+
+  @override
+  String get notifPushSection => 'Teaghlach agus nuashonruithe';
+
+  @override
+  String get notifHouseholdTitle => 'Taifid roinnte';
+
+  @override
+  String get notifHouseholdSubtitle => 'Nuair atá taifead roinnte ar tí dul in éag agus nár athnuaigh aon duine é';
+
+  @override
+  String get notifUpdatesTitle => 'Nuashonruithe a d\'iarr tú';
+
+  @override
+  String get notifUpdatesSubtitle => 'Nuair a sheolann duine sonraí nua taifid';
+
+  @override
+  String get notifSecurityNote => 'Seoltar foláirimh faoi shínithe isteach nua ar do chuntas i gcónaí.';
+
+  @override
+  String get notifIosHelpTitle => 'Gan meabhrúcháin a fháil?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Seiceáil socruithe do iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Oscail Socruithe, ansin Fógraí, ansin Vaultara, agus cas air Ceadaigh Fógraí.';
+
+  @override
+  String get notifIosHelpStep2 => 'Cas air Scáileán Glasála, Lárionad Fógraí agus Meirgí.';
+
+  @override
+  String get notifIosHelpStep3 => 'Má úsáideann tú Fócas, cuir Vaultara leis na haipeanna a cheadaíonn sé.';
+
+  @override
+  String get notifIosHelpStep4 => 'Oscail Vaultara gach cúpla seachtain. Ní choinníonn iPhone ach líon teoranta meabhrúchán chun cinn, agus pleanálann oscailt na haipe na cinn eile.';
+
+  @override
+  String get homeNextUpEmpty => 'Níl aon rud ag dul in éag go luath. Tá gach rud réidh.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dlite laistigh de 30 lá',
+      many: '$count dlite laistigh de 30 lá',
+      few: '$count dlite laistigh de 30 lá',
+      two: '$count dlite laistigh de 30 lá',
+      one: '$count dlite laistigh de 30 lá',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Catagóirí greamaithe';
 }

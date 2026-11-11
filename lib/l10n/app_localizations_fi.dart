@@ -360,15 +360,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Mukava nähdä sinua taas. Vaultara on aina valmiina tärkeiden tietojesi tarkasteluun.';
 
   @override
-  String get summaryAllCaption => 'Seurattu Vaultarassa';
-
-  @override
-  String get summaryExpiredTitle => 'Vanhentuneet';
-
-  @override
-  String get summaryExpiredCaption => 'Vanhentumispäivän jälkeen';
-
-  @override
   String get editorNotes => 'Muistiinpanot';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Poista tietue';
-
-  @override
-  String get summaryAllRecordsTitle => 'Kaikki tietueet';
 
   @override
   String get noGroupFound => 'Ei vielä ryhmiä';
@@ -829,22 +817,10 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tietuetta',
-      one: '1 tietue',
+      one: '$count tietue',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Tulossa';
-
-  @override
-  String get summaryUpcomingCaption => 'Seuraavan 30 päivän aikana';
-
-  @override
-  String get summaryUrgentTitle => 'Kiireellinen';
-
-  @override
-  String get summaryUrgentCaption => 'Seuraavan 7 päivän aikana';
 
   @override
   String get profileHeaderTitle => 'Profiili';
@@ -945,7 +921,7 @@ class AppLocalizationsFi extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days päivää ennen',
-      one: '1 päivä ennen',
+      one: '$days päivä ennen',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsFi extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names ja $extra muuta vanhenevat tänään.',
-      one: '$names ja 1 muu vanhenevat tänään.',
+      one: '$names ja $extra muu vanhenevat tänään.',
       zero: '$names vanhenevat tänään.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsFi extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b ja $extra muuta tietuetta vanhenevat $lastDate mennessä, suurin piirtein samaan aikaan. Yksi on helppo unohtaa, kun useampi tietue on näin lähekkäin.',
-      one: '$a, $b ja 1 muu tietue vanhenevat $lastDate mennessä, suurin piirtein samaan aikaan. Yksi on helppo unohtaa, kun useampi tietue on näin lähekkäin.',
+      one: '$a, $b ja $extra muu tietue vanhenevat $lastDate mennessä, suurin piirtein samaan aikaan. Yksi on helppo unohtaa, kun useampi tietue on näin lähekkäin.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tietueistasi kategoriassa $category vanhenevat $date mennessä. Yksi on helppo unohtaa, kun ne on ryhmitelty näin.',
-      one: '1 tietueistasi kategoriassa $category vanhenee $date. Se on helppo jättää huomaamatta.',
+      one: '$count tietueistasi kategoriassa $category vanhenee $date. Se on helppo jättää huomaamatta.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tulevalle vanhentumiselle on asetettu muistutukset. Mikään muu ei vaadi huomiotasi.',
-      one: '1 tulevalle vanhentumiselle on asetettu muistutus. Mikään muu ei vaadi huomiotasi.',
+      one: '$count tulevalle vanhentumiselle on asetettu muistutus. Mikään muu ei vaadi huomiotasi.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Mikään ei ole kiireellistä juuri nyt, mutta $count tulevasta tietueesta puuttuu vielä muistutus.',
-      one: 'Mikään ei ole kiireellistä juuri nyt, mutta 1 tulevasta tietueesta puuttuu vielä muistutus.',
+      one: 'Mikään ei ole kiireellistä juuri nyt, mutta $count tulevasta tietueesta puuttuu vielä muistutus.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsFi extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days päivää',
-      one: '1 päivä',
+      one: '$days päivä',
     );
     return 'Muistutus $position: $_temp0 ennen';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count vanhenee kohta',
-      one: '1 vanhenee kohta',
+      one: '$count vanhenee kohta',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get noRecordsTomorrow => 'Mikään ei vanhene huomenna';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName vanhenee $days päivän kuluttua',
-      one: '$recordName vanhenee huomenna',
-      zero: '$recordName vanhenee tänään',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, kohteesi $recordName vanhenee $date. Ajoissa uusiminen pitää sinut suojattuna.',
-      one: '$firstName, kohteesi $recordName vanhenee huomenna. Uusi se nyt, jotta se ei vanhene.',
-      zero: '$firstName, kohteesi $recordName vanhenee tänään. Oletko jo uusinut sen? Päivitä sen vanhentumispäivä.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Viimeinen muistutus: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days päivän kuluttua, $date',
-      one: 'huomenna',
-    );
-    return '$firstName, kohteesi $recordName vanhenee $_temp0. Tämä on viimeinen muistutuksesi, uusi se tai päivitä sen päivämäärä.';
   }
 
   @override
@@ -5654,7 +5595,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count minuuttia sitten',
-      one: '1 minuutti sitten',
+      one: '$count minuutti sitten',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tuntia sitten',
-      one: '1 tunti sitten',
+      one: '$count tunti sitten',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count päivää sitten',
-      one: '1 päivä sitten',
+      one: '$count päivä sitten',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count päivää jäljellä',
-      one: '1 päivä jäljellä',
+      one: '$count päivä jäljellä',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count päivää sitten',
-      one: '1 päivä sitten',
+      one: '$count päivä sitten',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count poistamaasi tietoa lasketaan lopetetuiksi.',
-      one: '1 poistamasi tieto lasketaan lopetetuksi.',
+      one: '$count poistamasi tieto lasketaan lopetetuksi.',
     );
     return '$_temp0';
   }
@@ -7302,7 +7243,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kohteelta puuttuu kuva. Kuvien avulla korvaaminen käy nopeammin.',
-      one: '1 kohteelta puuttuu kuva. Kuvan avulla korvaaminen käy nopeammin.',
+      one: '$count kohteelta puuttuu kuva. Kuvan avulla korvaaminen käy nopeammin.',
     );
     return '$_temp0';
   }
@@ -7313,7 +7254,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kortilta puuttuu tallennettu sulkunumero.',
-      one: '1 kortilta puuttuu tallennettu sulkunumero.',
+      one: '$count kortilta puuttuu tallennettu sulkunumero.',
     );
     return '$_temp0';
   }
@@ -7492,7 +7433,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kohdetta alla',
-      one: '1 kohde alla',
+      one: '$count kohde alla',
     );
     return '$_temp0';
   }
@@ -7584,7 +7525,7 @@ class AppLocalizationsFi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count vaihetta',
-      one: '1 vaihe',
+      one: '$count vaihe',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsFi extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Muistutus: $name vanhenee $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName vanhenee tänään';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName vanhenee huomenna';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName vanhenee $days päivän kuluttua',
+      one: '$recordName vanhenee $days päivän kuluttua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName on vanhentunut';
+  }
+
+  @override
+  String get remLockedTitle => 'Lukittu tietue vaatii huomiotasi';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Sen päivämäärä on $date. Avaa Vaultaran lukitus nähdäksesi, mikä tietue on kyseessä.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Tietueesi $recordName vanhenee tänään.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Tietueesi $recordName vanhenee huomenna.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Tietueesi $recordName vanhenee $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, tietueesi $recordName vanhenee tänään.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, tietueesi $recordName vanhenee huomenna.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, tietueesi $recordName vanhenee $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Henkilön $person tietue $recordName vanhenee tänään.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Henkilön $person tietue $recordName vanhenee huomenna.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Henkilön $person tietue $recordName vanhenee $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Tietueesi $recordName vanheni $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Henkilön $person tietue $recordName vanheni $date.';
+  }
+
+  @override
+  String get remTipToday => 'Jo uusittu? Päivitä päivämäärä.';
+
+  @override
+  String get remTipTomorrow => 'Uusi se nyt, ettei se ehdi vanhentua.';
+
+  @override
+  String get remTipEarly => 'Ajoissa uusiminen pitää sinut turvassa.';
+
+  @override
+  String get remTipLast => 'Tämä on viimeinen muistutus ennen vanhenemista.';
+
+  @override
+  String get remTipExpired => 'Uusi se, tai päivitä päivämäärä, jos olet jo uusinut sen.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'On aika aloittaa tietueen $recordName uusiminen. Se vanhenee $date, joten aloittamalla nyt sinulla on reilusti aikaa.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'On aika aloittaa henkilön $person tietueen $recordName uusiminen. Se vanhenee $date, joten aloittamalla nyt aikaa on reilusti.';
+  }
+
+  @override
+  String get notifChannelName => 'Vanhenemismuistutukset';
+
+  @override
+  String get notifChannelDescription => 'Muistutukset ennen kuin tietueesi vanhenevat';
+
+  @override
+  String get notifTestTitle => 'Testi-ilmoitus';
+
+  @override
+  String get notifTestBody => 'Vaultaran muistutukset näyttävät tältä.';
+
+  @override
+  String get notifTestAction => 'Lähetä testi-ilmoitus';
+
+  @override
+  String get notifTestSubtitle => 'Tarkista, että muistutukset tulevat tähän puhelimeen';
+
+  @override
+  String get notifTestSent => 'Testi lähetetty. Sen pitäisi tulla muutamassa sekunnissa.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Muistuta, kun tietue on vanhentunut';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 ja 14 päivää jälkeen, jos sitä ei ole uusittu';
+
+  @override
+  String get notifWeeklyTitle => 'Maanantain yhteenveto';
+
+  @override
+  String get notifWeeklySubtitle => 'Viesti maanantaiaamuna, kun jotain vanhenee sillä viikolla';
+
+  @override
+  String get notifPushSection => 'Kotitalous ja päivitykset';
+
+  @override
+  String get notifHouseholdTitle => 'Jaetut tietueet';
+
+  @override
+  String get notifHouseholdSubtitle => 'Kun jaettu tietue on vanhenemassa eikä kukaan ole uusinut sitä';
+
+  @override
+  String get notifUpdatesTitle => 'Pyytämäsi päivitykset';
+
+  @override
+  String get notifUpdatesSubtitle => 'Kun joku lähettää tietueen uudet tiedot';
+
+  @override
+  String get notifSecurityNote => 'Ilmoitukset uusista kirjautumisista tilillesi lähetetään aina.';
+
+  @override
+  String get notifIosHelpTitle => 'Eivätkö muistutukset tule?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Tarkista iPhonesi asetukset';
+
+  @override
+  String get notifIosHelpStep1 => 'Avaa Asetukset, sitten Ilmoitukset, sitten Vaultara, ja laita Salli ilmoitukset päälle.';
+
+  @override
+  String get notifIosHelpStep2 => 'Laita päälle Lukitusnäyttö, Ilmoituskeskus ja Bannerit.';
+
+  @override
+  String get notifIosHelpStep3 => 'Jos käytät keskittymistilaa, lisää Vaultara sen sallimiin appeihin.';
+
+  @override
+  String get notifIosHelpStep4 => 'Avaa Vaultara muutaman viikon välein. iPhone säilyttää vain rajallisen määrän tulevia muistutuksia, ja apin avaaminen ajastaa seuraavat.';
+
+  @override
+  String get homeNextUpEmpty => 'Mikään ei vanhene pian. Kaikki on kunnossa.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count erääntyy 30 päivän sisällä',
+      one: '$count erääntyy 30 päivän sisällä',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Kiinnitetyt kategoriat';
 }

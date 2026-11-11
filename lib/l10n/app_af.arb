@@ -173,9 +173,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara help jou om belangrike vervaldatums dop te hou sodat niks stilweg verval nie.",
   "homeWelcomeSubtitleFirst": "Dit is wonderlik om jou hier te hê. Vaultara help jou om georganiseerd te bly deur belangrike datums en rekords op een veilige plek te hou.",
   "homeWelcomeSubtitleBack": "Dit is goed om jou weer te sien. Vaultara is hier wanneer jy ook al jou belangrike datums en rekords wil hersien.",
-  "summaryAllCaption": "Nagespoor in Vaultara",
-  "summaryExpiredTitle": "Verval",
-  "summaryExpiredCaption": "Verby die vervaldatum",
   "editorNotes": "Notas",
   "editorReminderNone": "Geen herinnering",
   "enableBiometricsTitle": "Aktiveer biometriese sekuriteit",
@@ -197,7 +194,6 @@
   "addRecord": "Voeg rekord by",
   "noRecordsYet": "Nog geen rekords nie.",
   "deleteRecordTitle": "Vee rekord uit",
-  "summaryAllRecordsTitle": "Alle rekords",
   "noGroupFound": "Nog geen groepe nie",
   "groupLabel": "{count, plural, one{{count} groep} other{{count} groepe}}",
   "recordsLabel": "{count, plural, one{{count} rekord} other{{count} rekords}}",
@@ -443,7 +439,7 @@
   "addNotesHint": "Voeg notas by (opsioneel)",
   "expiryTimelineTitle": "Vervaltydlyn",
   "expiryTimelineSubtitle": "Tik op 'n maand om die rekords te sien wat daardie maand verval",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 rekord} other{{count} rekords}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} rekord} other{{count} rekords}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -451,10 +447,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Komend",
-  "summaryUpcomingCaption": "Binne 30 dae",
-  "summaryUrgentTitle": "Dringend",
-  "summaryUrgentCaption": "Binne 7 dae",
   "profileHeaderTitle": "Profiel",
   "profileTutorialsTitle": "Tutoriale",
   "profileTutorialsSubtitle": "Blaai deur toep-tutoriale",
@@ -486,7 +478,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Geen herinnering",
   "reminderOnExpiry": "Op vervaldatum",
-  "reminderDaysBefore": "{days, plural, one{1 dag voor} other{{days} dae voor}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dag voor} other{{days} dae voor}}",
   "@reminderDaysBefore": {
     "placeholders": {
       "days": {
@@ -525,16 +517,16 @@
   "smartInsightNoRecordsHeading": "Voeg jou eerste rekord by",
   "smartInsightNoRecordsBody": "Begin om jou rekords na te spoor, en Vaultara sal slim insigte hier wys.",
   "smartInsightExpiresTodaySingleBody": "{name} verval vandag. As jy dit reeds hernu het, dateer die datum hier op.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} verval vandag.} =1{{names} en 1 nog verval vandag.} other{{names} en {extra} nog verval vandag.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} verval vandag.} =1{{names} en {extra} nog verval vandag.} other{{names} en {extra} nog verval vandag.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} verval môre en het geen herinnering nie. Stel een sodat jy dit nie misloop nie.} other{{name} verval op {date} en het geen herinnering nie. Stel een sodat jy dit nie misloop nie.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} verval op {dateA} en {b} op {dateB}, omtrent dieselfde tyd. Dit is maklik om een te vergeet wanneer twee rekords so naby aan mekaar is.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} en {c} verval almal teen {lastDate}, omtrent dieselfde tyd. Dit is maklik om een te vergeet wanneer verskeie rekords so naby aan mekaar is.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} en 1 nog rekord verval teen {lastDate}, omtrent dieselfde tyd. Dit is maklik om een te vergeet wanneer verskeie rekords so naby aan mekaar is.} other{{a}, {b} en {extra} nog rekords verval teen {lastDate}, omtrent dieselfde tyd. Dit is maklik om een te vergeet wanneer verskeie rekords so naby aan mekaar is.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} en {extra} nog rekord verval teen {lastDate}, omtrent dieselfde tyd. Dit is maklik om een te vergeet wanneer verskeie rekords so naby aan mekaar is.} other{{a}, {b} en {extra} nog rekords verval teen {lastDate}, omtrent dieselfde tyd. Dit is maklik om een te vergeet wanneer verskeie rekords so naby aan mekaar is.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Niks verval in die volgende dag nie. Jou volgende een is op {date}.} other{Niks verval in die volgende {days} dae nie. Jou volgende een is op {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 of jou {category}-rekords verval op {date}. Dit is maklik om dit mis te kyk.} other{{count} of jou {category}-rekords verval teen {date}. Dit is maklik om een te vergeet wanneer hulle so gegroepeer is.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 komende vervaldatum word deur 'n herinnering gedek. Niks anders vereis jou aandag nie.} other{{count} komende vervaldatums word deur herinneringe gedek. Niks anders vereis jou aandag nie.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} of jou {category}-rekords verval op {date}. Dit is maklik om dit mis te kyk.} other{{count} of jou {category}-rekords verval teen {date}. Dit is maklik om een te vergeet wanneer hulle so gegroepeer is.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} komende vervaldatum word deur 'n herinnering gedek. Niks anders vereis jou aandag nie.} other{{count} komende vervaldatums word deur herinneringe gedek. Niks anders vereis jou aandag nie.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Alles is op datum. Niks vereis jou aandag op die oomblik nie.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Niks is dringend op die oomblik nie, maar 1 komende rekord het nog geen herinnering nie.} other{Niks is dringend op die oomblik nie, maar {count} komende rekords het nog geen herinnering nie.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Niks is dringend op die oomblik nie, maar {count} komende rekord het nog geen herinnering nie.} other{Niks is dringend op die oomblik nie, maar {count} komende rekords het nog geen herinnering nie.}}",
   "smartInsightCloseExpiriesHeading": "Verval Omtrent Dieselfde Tyd",
   "plansHeadline": "Kry die volledige Vaultara",
   "plansSubhead": "Onbeperkte rekords, jou eie groepe, en herinneringe presies soos jy dit wil hê.",
@@ -645,7 +637,7 @@
   "reminderCascadeRemoveStep": "Verwyder",
   "reminderCascadeDuplicate": "'n Ander herinnering gebruik reeds hierdie dag",
   "reminderCascadeOutOfRange": "Sleutel tussen {min} en {max} dae in",
-  "reminderCascadeStepLabel": "Herinnering {position}: {days, plural, =1{1 dag} other{{days} dae}} vooraf",
+  "reminderCascadeStepLabel": "Herinnering {position}: {days, plural, =1{{days} dag} other{{days} dae}} vooraf",
   "expiryTimelineNotReady": "Jou tydlyn verskyn sodra jy rekords het wat in 'n paar verskillende maande verval.",
   "verifyEmailResendIn": "Stuur weer oor {seconds}s",
   "verifyEmailSpamHint": "Nie daar nie? Gaan jou strooipos- of gemorspos-vouer na.",
@@ -654,13 +646,10 @@
   "verifyEmailDiscardBody": "Hierdie rekening is nie geverifieer nie. As jy nou weggaan, sal dit verwyder word, en jy kan weer met enige e-posadres registreer.",
   "verifyEmailDiscardAction": "Verwerp",
   "verifyEmailKeepWaiting": "Hou aan wag",
-  "expiringBadge": "{count, plural, =1{1 verval binnekort} other{{count} verval binnekort}}",
+  "expiringBadge": "{count, plural, =1{{count} verval binnekort} other{{count} verval binnekort}}",
   "noRecordsToday": "Niks verval vandag nie",
   "noRecordsTomorrow": "Niks verval môre nie",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} verval vandag} =1{{recordName} verval môre} other{{recordName} verval oor {days} dae}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, jou {recordName} verval vandag. Het jy dit reeds hernu? Dateer die vervaldatum op.} =1{{firstName}, jou {recordName} verval môre. Hernu dit nou sodat dit nie verval nie.} other{{firstName}, jou {recordName} verval op {date}. As jy vroeg hernu, bly jy gedek.}}",
   "cascadeFinalStepTitle": "Laaste herinnering: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, jou {recordName} verval {days, plural, =1{môre} other{oor {days} dae, op {date}}}. Hierdie is jou laaste herinnering, hernu dit of dateer die datum op.",
   "notificationsTitle": "Kennisgewings",
   "notificationsProfileEnabledSubtitle": "Herinneringe kom om {time} aan.",
   "notificationsProfileDisabledSubtitle": "Kennisgewings is afgeskakel.",
@@ -1387,7 +1376,7 @@
   "photoLockTurnOn": "Skakel geënkripteerde foto's aan",
   "photoLockStatusOn": "Geënkripteerde foto's is aan",
   "photoLockStatusOnBody": "Nuwe foto's word op hierdie foon geënkripteer voordat hulle opgelaai word.",
-  "photoLockPendingTitle": "{count, plural, one{1 foto is nog nie geënkripteer nie} other{{count} foto's is nog nie geënkripteer nie}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} foto is nog nie geënkripteer nie} other{{count} foto's is nog nie geënkripteer nie}}",
   "photoLockPendingBody": "Foto's wat jy bygevoeg het voordat jy dit aangeskakel het, word steeds op die gewone manier gestoor.",
   "photoLockEncryptExisting": "Enkripteer my bestaande foto's",
   "photoLockKeepOpen": "Hou Vaultara oop totdat dit klaar is.",
@@ -1424,7 +1413,7 @@
   "photoLockSetupFailed": "Ons kon nie geënkripteerde foto's aanskakel nie. Kyk na jou verbinding en probeer weer.",
   "photoLockAlreadyOn": "Geënkripteerde foto's is reeds aan vir jou rekening. Voer jou herstelsleutel in om dit op hierdie foon te gebruik.",
   "photoLockEncryptExistingTitle": "Enkripteer jou bestaande foto's?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Jy het 1 foto wat nog nie geënkripteer is nie. Ons kan dit nou enkripteer.} other{Jy het {count} foto's wat nog nie geënkripteer is nie. Ons kan hulle nou enkripteer.}} Hou Vaultara oop totdat dit klaar is.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Jy het {count} foto wat nog nie geënkripteer is nie. Ons kan dit nou enkripteer.} other{Jy het {count} foto's wat nog nie geënkripteer is nie. Ons kan hulle nou enkripteer.}} Hou Vaultara oop totdat dit klaar is.",
   "photoLockEncryptNow": "Enkripteer nou",
   "photoLockEntryBody": "Voer die herstelsleutel in wat jy gestoor het toe jy geënkripteerde foto's aangeskakel het. Strepies en spasies is opsioneel.",
   "photoLockEntryLabel": "Herstelsleutel",
@@ -1433,8 +1422,8 @@
   "photoLockUnlocked": "Jou foto's is op hierdie foon ontsluit.",
   "photoLockInvalidFormat": "Dit lyk nie soos 'n herstelsleutel nie. Kyk na elke karakter en probeer weer.",
   "photoLockWrongKey": "Hierdie herstelsleutel stem nie ooreen nie. Kyk daarna en probeer weer.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Te veel pogings. Wag asseblief 1 sekonde en probeer weer.} other{Te veel pogings. Wag asseblief {seconds} sekondes en probeer weer.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Te veel pogings. Wag asseblief 1 minuut en probeer weer.} other{Te veel pogings. Wag asseblief {minutes} minute en probeer weer.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Te veel pogings. Wag asseblief {seconds} sekonde en probeer weer.} other{Te veel pogings. Wag asseblief {seconds} sekondes en probeer weer.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Te veel pogings. Wag asseblief {minutes} minuut en probeer weer.} other{Te veel pogings. Wag asseblief {minutes} minute en probeer weer.}}",
   "photoLockOffline": "Ons kon nie Vaultara bereik nie. Kyk na jou verbinding en probeer weer.",
   "photoLockNotSetUp": "Geënkripteerde foto's is nie vir jou rekening aangeskakel nie.",
   "photoLockUnlockFailed": "Iets het verkeerd gegaan. Probeer asseblief weer.",
@@ -1690,13 +1679,13 @@
   "dailyDigestSwitchSubtitle": "Kry een kennisgewing op jou herinneringstyd wat alles lys wat daardie dag verskuldig is.",
   "dailyDigestTurnedOn": "Jou herinnerings kom nou as een daaglikse opsomming.",
   "dailyDigestTurnedOff": "Aparte herinnerings vir elke rekord is weer aan.",
-  "dailyDigestTitle": "{count, plural, one{1 rekord het jou aandag nodig} other{{count} rekords het jou aandag nodig}}",
+  "dailyDigestTitle": "{count, plural, one{{count} rekord het jou aandag nodig} other{{count} rekords het jou aandag nodig}}",
   "dailyDigestBody": "Binnekort: {names}.",
   "dailyDigestBodyMore": "Binnekort: {names} en {count} meer.",
   "dailyDigestLockedRecord": "'n gesluite rekord",
   "renewReasonRepeat": "{months, plural, one{Gebaseer op jou herhaalinstelling van elke maand} other{Gebaseer op jou herhaalinstelling van elke {months} maande}}",
   "renewReasonHistory": "{count, plural, one{Gebaseer op jou laaste hernuwing} other{Gebaseer op jou laaste {count} hernuwings}}",
-  "renewReasonTypical": "{years, plural, one{Gewoonlik 1 jaar geldig} other{Gewoonlik {years} jaar geldig}}",
+  "renewReasonTypical": "{years, plural, one{Gewoonlik {years} jaar geldig} other{Gewoonlik {years} jaar geldig}}",
   "renewChangeHint": "Tik op die datum om dit te verander.",
   "renewPickDate": "Kies die nuwe vervaldatum",
   "renewPickDateHint": "Kies die datum op jou nuwe dokument.",
@@ -1849,9 +1838,9 @@
   "secHistoryIntro": "Aanmeldings en veranderinge aan jou rekening van die afgelope 90 dae.",
   "secHistoryEmpty": "Nog niks om te wys nie.",
   "secJustNow": "Net nou",
-  "secMinutesAgo": "{count, plural, one{1 minuut gelede} other{{count} minute gelede}}",
-  "secHoursAgo": "{count, plural, one{1 uur gelede} other{{count} uur gelede}}",
-  "secDaysAgo": "{count, plural, one{1 dag gelede} other{{count} dae gelede}}",
+  "secMinutesAgo": "{count, plural, one{{count} minuut gelede} other{{count} minute gelede}}",
+  "secHoursAgo": "{count, plural, one{{count} uur gelede} other{{count} uur gelede}}",
+  "secDaysAgo": "{count, plural, one{{count} dag gelede} other{{count} dae gelede}}",
   "secEventNewSignIn": "Nuwe toestel aangemeld",
   "secEventSignIn": "Aangemeld",
   "secEventPasswordChanged": "Wagwoord verander",
@@ -2172,8 +2161,8 @@
   "lifePlanAutoChanged": "Vaultara het gesien dat hierdie rekord verander het, so dit is as klaar gemerk.",
   "lifePlanAutoAdded": "Bygevoeg nadat jy hierdie plan begin het.",
   "lifePlanProgress": "{done} van {total} klaar",
-  "lifePlanDaysToGo": "{count, plural, =1{Nog 1 dag} other{Nog {count} dae}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 dag gelede} other{{count} dae gelede}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Nog {count} dag} other{Nog {count} dae}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} dag gelede} other{{count} dae gelede}}",
   "lifePlanAllDone": "Alles is klaar. Jy kan die plan as klaar merk.",
   "lifePlanFinish": "Merk as klaar",
   "lifePlanReopen": "Maak dit weer oop",
@@ -2302,7 +2291,7 @@
   "lifePlanReadAloudUnavailable": "Hardop lees is nie op hierdie foon beskikbaar nie.",
   "lifePlanProofPack": "Maak 'n bewyspakket",
   "lifePlanOpenFamily": "Maak Gesin oop",
-  "lifePlanRemoved": "{count, plural, =1{1 rekord wat jy uitgevee het, tel as gekanselleer.} other{{count} rekords wat jy uitgevee het, tel as gekanselleer.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} rekord wat jy uitgevee het, tel as gekanselleer.} other{{count} rekords wat jy uitgevee het, tel as gekanselleer.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2360,7 +2349,7 @@
   "lostWalletCheckupBody": "Maak nou gereed sodat niks vergeet word as dit wegraak nie.",
   "lostWalletCheckupAllGood": "Alles reg. As dit ooit wegraak, is jy gereed.",
   "lostWalletSetPlaceBody": "Maak 'n kaart of dokument oop en kies waar jy dit hou. Doen dit vir jou ID, rybewys en kaarte.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 item het geen foto nie. Met 'n foto is vervanging vinniger.} other{{count} items het geen foto nie. Met foto's is vervanging vinniger.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} item het geen foto nie. Met 'n foto is vervanging vinniger.} other{{count} items het geen foto nie. Met foto's is vervanging vinniger.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2368,7 +2357,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 kaart het geen nommer vir verlore kaart nie.} other{{count} kaarte het geen nommer vir verlore kaart nie.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} kaart het geen nommer vir verlore kaart nie.} other{{count} kaarte het geen nommer vir verlore kaart nie.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2468,7 +2457,7 @@
     }
   },
   "lostWalletReportNoCase": "Saaknommer: nog nie aangemeld nie",
-  "lostWalletReportCount": "{count, plural, =1{1 item hieronder gelys} other{{count} items hieronder gelys}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} item hieronder gelys} other{{count} items hieronder gelys}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2503,7 +2492,7 @@
   "tutorialsGroupTravelFamily": "Reis en gesin",
   "tutorialsGroupEmergencies": "Lewensgebeure en noodgevalle",
   "tutorialsGroupPaid": "Betaalde funksies",
-  "tutorialsSteps": "{count, plural, =1{1 stap} other{{count} stappe}}",
+  "tutorialsSteps": "{count, plural, =1{{count} stap} other{{count} stappe}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2899,5 +2888,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} verval vandag",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} verval môre",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} verval oor {days} dag} other{{recordName} verval oor {days} dae}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} het verval",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "'n Gesluite rekord het jou aandag nodig",
+  "remLockedBody": "Die datum is {date}. Ontsluit Vaultara om te sien watter rekord dit is.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Jou rekord \"{recordName}\" verval vandag.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Jou rekord \"{recordName}\" verval môre.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Jou rekord \"{recordName}\" verval op {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, jou rekord \"{recordName}\" verval vandag.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, jou rekord \"{recordName}\" verval môre.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, jou rekord \"{recordName}\" verval op {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person} se rekord \"{recordName}\" verval vandag.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person} se rekord \"{recordName}\" verval môre.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person} se rekord \"{recordName}\" verval op {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Jou rekord \"{recordName}\" het op {date} verval.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person} se rekord \"{recordName}\" het op {date} verval.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Reeds hernu? Dateer die datum op.",
+  "remTipTomorrow": "Hernu dit nou sodat dit nie verval nie.",
+  "remTipEarly": "Vroeg hernu hou jou gedek.",
+  "remTipLast": "Dit is jou laaste herinnering voordat dit verval.",
+  "remTipExpired": "Hernu dit, of dateer die datum op as jy dit reeds gedoen het.",
+  "remStartBody": "Dit is tyd om met die hernuwing van \"{recordName}\" te begin. Dit verval op {date}, so as jy nou begin, het jy genoeg tyd.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Dit is tyd om met die hernuwing van {person} se \"{recordName}\" te begin. Dit verval op {date}, so om nou te begin gee genoeg tyd.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Vervalherinneringe",
+  "notifChannelDescription": "Herinneringe voordat jou rekords verval",
+  "notifTestTitle": "Toetskennisgewing",
+  "notifTestBody": "Herinneringe van Vaultara kom so aan.",
+  "notifTestAction": "Stuur 'n toetskennisgewing",
+  "notifTestSubtitle": "Kyk of herinneringe hierdie foon bereik",
+  "notifTestSent": "Toets gestuur. Dit behoort binne 'n paar sekondes aan te kom.",
+  "notifAfterExpiryTitle": "Herinner my nadat 'n rekord verval het",
+  "notifAfterExpirySubtitle": "3 en 14 dae daarna, as dit nie hernu is nie",
+  "notifWeeklyTitle": "Maandag-opsomming",
+  "notifWeeklySubtitle": "'n Nota Maandagoggend wanneer iets daardie week verval",
+  "notifPushSection": "Huishouding en opdaterings",
+  "notifHouseholdTitle": "Gedeelde rekords",
+  "notifHouseholdSubtitle": "Wanneer 'n gedeelde rekord amper verval en niemand dit hernu het nie",
+  "notifUpdatesTitle": "Opdaterings wat jy gevra het",
+  "notifUpdatesSubtitle": "Wanneer iemand die nuwe besonderhede van 'n rekord stuur",
+  "notifSecurityNote": "Waarskuwings oor nuwe aanmeldings op jou rekening word altyd gestuur.",
+  "notifIosHelpTitle": "Kry jy nie herinneringe nie?",
+  "notifIosHelpSubtitle": "Gaan jou iPhone-instellings na",
+  "notifIosHelpStep1": "Maak Instellings oop, dan Kennisgewings, dan Vaultara, en skakel Laat kennisgewings toe aan.",
+  "notifIosHelpStep2": "Skakel Sluitskerm, Kennisgewingsentrum en Baniere aan.",
+  "notifIosHelpStep3": "As jy 'n Fokus gebruik, voeg Vaultara by die programme wat dit toelaat.",
+  "notifIosHelpStep4": "Maak Vaultara elke paar weke oop. 'n iPhone hou net 'n beperkte aantal herinneringe vooruit, en as jy die program oopmaak, beplan dit die volgendes.",
+  "homeNextUpEmpty": "Niks verval binnekort nie. Alles is reg.",
+  "homeDueSoonChip": "{count, plural, one{{count} verval binne 30 dae} other{{count} verval binne 30 dae}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Vasgespelde kategorieë"
 }

@@ -360,15 +360,6 @@ class AppLocalizationsMl extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'നിങ്ങളെ വീണ്ടും കാണുന്നതിൽ സന്തോഷം. പ്രധാനപ്പെട്ട തീയതികളും റെക്കോർഡുകളും അവലോകനം ചെയ്യാൻ Vaultara എപ്പോഴും ഇവിടെയുണ്ട്.';
 
   @override
-  String get summaryAllCaption => 'Vaultara-യിൽ ട്രാക്ക് ചെയ്യുന്നവ';
-
-  @override
-  String get summaryExpiredTitle => 'കാലഹരണപ്പെട്ടവ';
-
-  @override
-  String get summaryExpiredCaption => 'കാലഹരണ തീയതി കഴിഞ്ഞവ';
-
-  @override
   String get editorNotes => 'കുറിപ്പുകൾ';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'റെക്കോർഡ് ഇല്ലാതാക്കുക';
-
-  @override
-  String get summaryAllRecordsTitle => 'എല്ലാ റെക്കോർഡുകളും';
 
   @override
   String get noGroupFound => 'ഇതുവരെ ഗ്രൂപ്പുകളൊന്നുമില്ല';
@@ -829,22 +817,10 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count റെക്കോർഡുകൾ',
-      one: '1 റെക്കോർഡ്',
+      one: '$count റെക്കോർഡ്',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'വരാനിരിക്കുന്നവ';
-
-  @override
-  String get summaryUpcomingCaption => '30 ദിവസത്തിനുള്ളിൽ';
-
-  @override
-  String get summaryUrgentTitle => 'അടിയന്തരം';
-
-  @override
-  String get summaryUrgentCaption => '7 ദിവസത്തിനുള്ളിൽ';
 
   @override
   String get profileHeaderTitle => 'പ്രൊഫൈൽ';
@@ -945,7 +921,7 @@ class AppLocalizationsMl extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ദിവസം മുമ്പ്',
-      one: '1 ദിവസം മുമ്പ്',
+      one: '$days ദിവസം മുമ്പ്',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category വിഭാഗത്തിലെ നിങ്ങളുടെ $count റെക്കോർഡുകൾ $date-ന് മുമ്പ് കാലഹരണപ്പെടും. ഇങ്ങനെ ഒരുമിച്ച് വരുമ്പോൾ ഒന്ന് മറന്നുപോകാൻ എളുപ്പമാണ്.',
-      one: '$category വിഭാഗത്തിലെ നിങ്ങളുടെ 1 റെക്കോർഡ് $date-ന് കാലഹരണപ്പെടും. ഇത് ശ്രദ്ധിക്കാതെ പോകാൻ എളുപ്പമാണ്.',
+      one: '$category വിഭാഗത്തിലെ നിങ്ങളുടെ $count റെക്കോർഡ് $date-ന് കാലഹരണപ്പെടും. ഇത് ശ്രദ്ധിക്കാതെ പോകാൻ എളുപ്പമാണ്.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'വരാനിരിക്കുന്ന $count കാലഹരണങ്ങൾക്ക് റിമൈൻഡറുകളുണ്ട്. മറ്റൊന്നിനും നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമില്ല.',
-      one: 'വരാനിരിക്കുന്ന 1 കാലഹരണത്തിന് റിമൈൻഡറുണ്ട്. മറ്റൊന്നിനും നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമില്ല.',
+      one: 'വരാനിരിക്കുന്ന $count കാലഹരണത്തിന് റിമൈൻഡറുണ്ട്. മറ്റൊന്നിനും നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമില്ല.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ഇപ്പോൾ അടിയന്തരമായി ഒന്നുമില്ല, എന്നാൽ വരാനിരിക്കുന്ന $count റെക്കോർഡുകൾക്ക് ഇതുവരെ റിമൈൻഡറില്ല.',
-      one: 'ഇപ്പോൾ അടിയന്തരമായി ഒന്നുമില്ല, എന്നാൽ വരാനിരിക്കുന്ന 1 റെക്കോർഡിന് ഇതുവരെ റിമൈൻഡറില്ല.',
+      one: 'ഇപ്പോൾ അടിയന്തരമായി ഒന്നുമില്ല, എന്നാൽ വരാനിരിക്കുന്ന $count റെക്കോർഡിന് ഇതുവരെ റിമൈൻഡറില്ല.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsMl extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ദിവസം',
-      one: '1 ദിവസം',
+      one: '$days ദിവസം',
     );
     return 'റിമൈൻഡർ $position: $_temp0 മുമ്പ്';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count എണ്ണം കാലഹരണപ്പെടുന്നു',
-      one: '1 എണ്ണം കാലഹരണപ്പെടുന്നു',
+      one: '$count എണ്ണം കാലഹരണപ്പെടുന്നു',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsMl extends AppLocalizations {
   String get noRecordsTomorrow => 'നാളെ ഒന്നും കാലഹരണപ്പെടുന്നില്ല';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName $days ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും',
-      one: '$recordName നാളെ കാലഹരണപ്പെടും',
-      zero: '$recordName ഇന്ന് കാലഹരണപ്പെടും',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, നിങ്ങളുടെ $recordName $date-ന് കാലഹരണപ്പെടും. നേരത്തെ പുതുക്കിയാൽ നിങ്ങൾ സുരക്ഷിതരായിരിക്കും.',
-      one: '$firstName, നിങ്ങളുടെ $recordName നാളെ കാലഹരണപ്പെടും. കാലഹരണപ്പെടാതിരിക്കാൻ ഇപ്പോൾ തന്നെ പുതുക്കുക.',
-      zero: '$firstName, നിങ്ങളുടെ $recordName ഇന്ന് കാലഹരണപ്പെടും. ഇതിനകം പുതുക്കിയോ? അതിന്റെ കാലഹരണ തീയതി അപ്‌ഡേറ്റ് ചെയ്യുക.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'അവസാന റിമൈൻഡർ: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ദിവസത്തിനുള്ളിൽ, $date-ന്',
-      one: 'നാളെ',
-    );
-    return '$firstName, നിങ്ങളുടെ $recordName $_temp0 കാലഹരണപ്പെടും. ഇത് നിങ്ങളുടെ അവസാന റിമൈൻഡറാണ്, ഇത് പുതുക്കുക അല്ലെങ്കിൽ അതിന്റെ തീയതി അപ്‌ഡേറ്റ് ചെയ്യുക.';
   }
 
   @override
@@ -5017,7 +4958,7 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count റെക്കോർഡുകളിൽ നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്',
-      one: '1 റെക്കോർഡിൽ നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്',
+      one: '$count റെക്കോർഡിൽ നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsMl extends AppLocalizations {
       years,
       locale: localeName,
       other: 'സാധാരണയായി $years വർഷത്തേക്ക് സാധുതയുണ്ട്',
-      one: 'സാധാരണയായി 1 വർഷത്തേക്ക് സാധുതയുണ്ട്',
+      one: 'സാധാരണയായി $years വർഷത്തേക്ക് സാധുതയുണ്ട്',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ഇനി $count ദിവസം',
-      one: 'ഇനി 1 ദിവസം',
+      one: 'ഇനി $count ദിവസം',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ദിവസം മുമ്പ്',
-      one: '1 ദിവസം മുമ്പ്',
+      one: '$count ദിവസം മുമ്പ്',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsMl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'നിങ്ങൾ ഇല്ലാതാക്കിയ $count രേഖകൾ റദ്ദാക്കിയതായി കണക്കാക്കും.',
-      one: 'നിങ്ങൾ ഇല്ലാതാക്കിയ 1 രേഖ റദ്ദാക്കിയതായി കണക്കാക്കും.',
+      one: 'നിങ്ങൾ ഇല്ലാതാക്കിയ $count രേഖ റദ്ദാക്കിയതായി കണക്കാക്കും.',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsMl extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'ഓർമ്മപ്പെടുത്തൽ: $name $date ന് കാലഹരണപ്പെടും';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName ഇന്ന് കാലഹരണപ്പെടും';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName നാളെ കാലഹരണപ്പെടും';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും',
+      one: '$recordName $days ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName കാലഹരണപ്പെട്ടു';
+  }
+
+  @override
+  String get remLockedTitle => 'ലോക്ക് ചെയ്ത ഒരു റെക്കോർഡിന് നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമാണ്';
+
+  @override
+  String remLockedBody(String date) {
+    return 'അതിന്റെ തീയതി $date ആണ്. ഏത് റെക്കോർഡാണെന്ന് കാണാൻ Vaultara അൺലോക്ക് ചെയ്യുക.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'നിങ്ങളുടെ \"$recordName\" റെക്കോർഡ് ഇന്ന് കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'നിങ്ങളുടെ \"$recordName\" റെക്കോർഡ് നാളെ കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'നിങ്ങളുടെ \"$recordName\" റെക്കോർഡ് $date-ന് കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, നിങ്ങളുടെ \"$recordName\" റെക്കോർഡ് ഇന്ന് കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, നിങ്ങളുടെ \"$recordName\" റെക്കോർഡ് നാളെ കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, നിങ്ങളുടെ \"$recordName\" റെക്കോർഡ് $date-ന് കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: \"$recordName\" റെക്കോർഡ് ഇന്ന് കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: \"$recordName\" റെക്കോർഡ് നാളെ കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" റെക്കോർഡ് $date-ന് കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'നിങ്ങളുടെ \"$recordName\" റെക്കോർഡ് $date-ന് കാലഹരണപ്പെട്ടു.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" റെക്കോർഡ് $date-ന് കാലഹരണപ്പെട്ടു.';
+  }
+
+  @override
+  String get remTipToday => 'ഇതിനകം പുതുക്കിയോ? അതിന്റെ തീയതി അപ്ഡേറ്റ് ചെയ്യുക.';
+
+  @override
+  String get remTipTomorrow => 'കാലഹരണപ്പെടാതിരിക്കാൻ ഇപ്പോൾ തന്നെ പുതുക്കുക.';
+
+  @override
+  String get remTipEarly => 'നേരത്തെ പുതുക്കുന്നത് നിങ്ങളെ സുരക്ഷിതരാക്കുന്നു.';
+
+  @override
+  String get remTipLast => 'കാലഹരണപ്പെടുന്നതിന് മുമ്പുള്ള നിങ്ങളുടെ അവസാന ഓർമ്മപ്പെടുത്തലാണിത്.';
+
+  @override
+  String get remTipExpired => 'പുതുക്കുക, അല്ലെങ്കിൽ ഇതിനകം ചെയ്തെങ്കിൽ തീയതി അപ്ഡേറ്റ് ചെയ്യുക.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" പുതുക്കാൻ തുടങ്ങാനുള്ള സമയമായി. ഇത് $date-ന് കാലഹരണപ്പെടും, അതിനാൽ ഇപ്പോൾ തുടങ്ങിയാൽ നിങ്ങൾക്ക് ധാരാളം സമയമുണ്ടാകും.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) പുതുക്കാൻ തുടങ്ങാനുള്ള സമയമായി. ഇത് $date-ന് കാലഹരണപ്പെടും, അതിനാൽ ഇപ്പോൾ തുടങ്ങിയാൽ ധാരാളം സമയമുണ്ടാകും.';
+  }
+
+  @override
+  String get notifChannelName => 'കാലഹരണ ഓർമ്മപ്പെടുത്തലുകൾ';
+
+  @override
+  String get notifChannelDescription => 'നിങ്ങളുടെ റെക്കോർഡുകൾ കാലഹരണപ്പെടുന്നതിന് മുമ്പുള്ള ഓർമ്മപ്പെടുത്തലുകൾ';
+
+  @override
+  String get notifTestTitle => 'ടെസ്റ്റ് അറിയിപ്പ്';
+
+  @override
+  String get notifTestBody => 'Vaultara ഓർമ്മപ്പെടുത്തലുകൾ ഇങ്ങനെയാണ് വരുന്നത്.';
+
+  @override
+  String get notifTestAction => 'ടെസ്റ്റ് അറിയിപ്പ് അയയ്ക്കുക';
+
+  @override
+  String get notifTestSubtitle => 'ഓർമ്മപ്പെടുത്തലുകൾ ഈ ഫോണിൽ എത്തുന്നുണ്ടോ എന്ന് പരിശോധിക്കുക';
+
+  @override
+  String get notifTestSent => 'ടെസ്റ്റ് അയച്ചു. കുറച്ച് സെക്കൻഡിനുള്ളിൽ എത്തണം.';
+
+  @override
+  String get notifAfterExpiryTitle => 'റെക്കോർഡ് കാലഹരണപ്പെട്ട ശേഷം ഓർമ്മിപ്പിക്കുക';
+
+  @override
+  String get notifAfterExpirySubtitle => '3-ഉം 14-ഉം ദിവസത്തിന് ശേഷം, പുതുക്കിയിട്ടില്ലെങ്കിൽ';
+
+  @override
+  String get notifWeeklyTitle => 'തിങ്കളാഴ്ചത്തെ സംഗ്രഹം';
+
+  @override
+  String get notifWeeklySubtitle => 'ആ ആഴ്ച എന്തെങ്കിലും കാലഹരണപ്പെടുമ്പോൾ തിങ്കളാഴ്ച രാവിലെ ഒരു സന്ദേശം';
+
+  @override
+  String get notifPushSection => 'കുടുംബവും അപ്ഡേറ്റുകളും';
+
+  @override
+  String get notifHouseholdTitle => 'പങ്കിട്ട റെക്കോർഡുകൾ';
+
+  @override
+  String get notifHouseholdSubtitle => 'പങ്കിട്ട റെക്കോർഡ് കാലഹരണപ്പെടാറായിട്ടും ആരും പുതുക്കാത്തപ്പോൾ';
+
+  @override
+  String get notifUpdatesTitle => 'നിങ്ങൾ ആവശ്യപ്പെട്ട അപ്ഡേറ്റുകൾ';
+
+  @override
+  String get notifUpdatesSubtitle => 'ആരെങ്കിലും ഒരു റെക്കോർഡിന്റെ പുതിയ വിവരങ്ങൾ അയയ്ക്കുമ്പോൾ';
+
+  @override
+  String get notifSecurityNote => 'നിങ്ങളുടെ അക്കൗണ്ടിലെ പുതിയ സൈൻ-ഇന്നുകളെക്കുറിച്ചുള്ള മുന്നറിയിപ്പുകൾ എപ്പോഴും അയയ്ക്കും.';
+
+  @override
+  String get notifIosHelpTitle => 'ഓർമ്മപ്പെടുത്തലുകൾ ലഭിക്കുന്നില്ലേ?';
+
+  @override
+  String get notifIosHelpSubtitle => 'നിങ്ങളുടെ iPhone ക്രമീകരണങ്ങൾ പരിശോധിക്കുക';
+
+  @override
+  String get notifIosHelpStep1 => 'ക്രമീകരണങ്ങൾ, തുടർന്ന് അറിയിപ്പുകൾ, തുടർന്ന് Vaultara തുറന്ന്, അറിയിപ്പുകൾ അനുവദിക്കുക ഓണാക്കുക.';
+
+  @override
+  String get notifIosHelpStep2 => 'ലോക്ക് സ്ക്രീൻ, അറിയിപ്പ് കേന്ദ്രം, ബാനറുകൾ എന്നിവ ഓണാക്കുക.';
+
+  @override
+  String get notifIosHelpStep3 => 'നിങ്ങൾ ഫോക്കസ് ഉപയോഗിക്കുന്നുവെങ്കിൽ, അനുവദിച്ച ആപ്പുകളിൽ Vaultara ചേർക്കുക.';
+
+  @override
+  String get notifIosHelpStep4 => 'ഏതാനും ആഴ്ചയിലൊരിക്കൽ Vaultara തുറക്കുക. iPhone മുന്നോട്ടുള്ള പരിമിതമായ ഓർമ്മപ്പെടുത്തലുകൾ മാത്രമേ സൂക്ഷിക്കൂ, ആപ്പ് തുറക്കുമ്പോൾ അടുത്തവ ഷെഡ്യൂൾ ചെയ്യും.';
+
+  @override
+  String get homeNextUpEmpty => 'ഉടൻ ഒന്നും കാലഹരണപ്പെടുന്നില്ല. എല്ലാം ശരിയാണ്.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 ദിവസത്തിനുള്ളിൽ $count എണ്ണം',
+      one: '30 ദിവസത്തിനുള്ളിൽ $count എണ്ണം',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'പിൻ ചെയ്ത വിഭാഗങ്ങൾ';
 }

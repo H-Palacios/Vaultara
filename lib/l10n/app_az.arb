@@ -111,9 +111,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara vacib bitmə tarixlərini izləməyinizə kömək edir ki, heç nəyin müddəti xəbəriniz olmadan bitməsin.",
   "homeWelcomeSubtitleFirst": "Sizi burada görməyə şadıq. Vaultara vacib tarixləri və sənədləri bir təhlükəsiz yerdə saxlayaraq işlərinizi qaydada saxlamağa kömək edir.",
   "homeWelcomeSubtitleBack": "Sizi yenidən görməyə şadıq. Vacib tarixlərinizə və sənədlərinizə nəzər salmaq istədiyiniz vaxt Vaultara buradadır.",
-  "summaryAllCaption": "Vaultara-da izlənilir",
-  "summaryExpiredTitle": "Müddəti bitib",
-  "summaryExpiredCaption": "Bitmə tarixi keçib",
   "editorNotes": "Qeydlər",
   "editorReminderNone": "Xatırlatma yoxdur",
   "editorReminderOnExpiry": "Bitmə tarixində",
@@ -129,7 +126,6 @@
   "addRecord": "Sənəd əlavə et",
   "noRecordsYet": "Hələ sənəd yoxdur.",
   "deleteRecordTitle": "Sənədi sil",
-  "summaryAllRecordsTitle": "Bütün sənədlər",
   "noGroupFound": "Hələ qrup yoxdur",
   "groupLabel": "{count, plural, one{{count} qrup} other{{count} qrup}}",
   "recordsLabel": "{count, plural, one{{count} sənəd} other{{count} sənəd}}",
@@ -249,11 +245,7 @@
   "addNotesHint": "Qeyd əlavə edin (istəyə görə)",
   "expiryTimelineTitle": "Bitmə tarixlərinin zaman xətti",
   "expiryTimelineSubtitle": "Həmin ay müddəti bitən sənədləri görmək üçün aya toxunun",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 sənəd} other{{count} sənəd}}",
-  "summaryUpcomingTitle": "Yaxınlaşan",
-  "summaryUpcomingCaption": "30 gün ərzində",
-  "summaryUrgentTitle": "Təcili",
-  "summaryUrgentCaption": "7 gün ərzində",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} sənəd} other{{count} sənəd}}",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Təlimatlar",
   "profileTutorialsSubtitle": "Tətbiq təlimatlarına baxın",
@@ -285,7 +277,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Xatırlatma yoxdur",
   "reminderOnExpiry": "Bitmə tarixində",
-  "reminderDaysBefore": "{days, plural, one{1 gün əvvəl} other{{days} gün əvvəl}}",
+  "reminderDaysBefore": "{days, plural, one{{days} gün əvvəl} other{{days} gün əvvəl}}",
   "reminderCustomDaysTitle": "Fərdi günləri daxil edin",
   "reminderCascadeTitle": "Pilləli xatırlatmalar",
   "reminderCascadeSubtitle": "Sənədin müddəti bitməzdən əvvəl bir neçə bildiriş alın",
@@ -316,16 +308,16 @@
   "smartInsightNoRecordsHeading": "İlk sənədinizi əlavə edin",
   "smartInsightNoRecordsBody": "Sənədlərinizi izləməyə başlayın, Vaultara ağıllı təhlilləri burada göstərəcək.",
   "smartInsightExpiresTodaySingleBody": "“{name}” sənədinin müddəti bu gün bitir. Artıq müddətini uzatmısınızsa, tarixi burada yeniləyin.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names}: müddəti bu gün bitir.} =1{{names} və daha 1 sənəd: müddəti bu gün bitir.} other{{names} və daha {extra} sənəd: müddəti bu gün bitir.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names}: müddəti bu gün bitir.} =1{{names} və daha {extra} sənəd: müddəti bu gün bitir.} other{{names} və daha {extra} sənəd: müddəti bu gün bitir.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{“{name}” sənədinin müddəti sabah bitir və xatırlatması yoxdur. Unutmamaq üçün xatırlatma qurun.} other{“{name}” sənədinin müddəti {date} tarixində bitir və xatırlatması yoxdur. Unutmamaq üçün xatırlatma qurun.}}",
   "smartInsightCloseExpiriesBodyTwo": "“{a}” sənədinin müddəti {dateA} tarixində, “{b}” sənədinin müddəti isə {dateB} tarixində bitir — təxminən eyni vaxtda. İki sənəd bir-birinə bu qədər yaxın olanda birini unutmaq asandır.",
   "smartInsightCloseExpiriesBodyThree": "“{a}”, “{b}” və “{c}” sənədlərinin müddəti {lastDate} tarixindən əvvəl, təxminən eyni vaxtda bitir. Bir neçə sənəd bu qədər yaxın olanda birini unutmaq asandır.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{“{a}”, “{b}” və daha 1 sənədin müddəti {lastDate} tarixindən əvvəl, təxminən eyni vaxtda bitir. Bir neçə sənəd bu qədər yaxın olanda birini unutmaq asandır.} other{“{a}”, “{b}” və daha {extra} sənədin müddəti {lastDate} tarixindən əvvəl, təxminən eyni vaxtda bitir. Bir neçə sənəd bu qədər yaxın olanda birini unutmaq asandır.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{“{a}”, “{b}” və daha {extra} sənədin müddəti {lastDate} tarixindən əvvəl, təxminən eyni vaxtda bitir. Bir neçə sənəd bu qədər yaxın olanda birini unutmaq asandır.} other{“{a}”, “{b}” və daha {extra} sənədin müddəti {lastDate} tarixindən əvvəl, təxminən eyni vaxtda bitir. Bir neçə sənəd bu qədər yaxın olanda birini unutmaq asandır.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Növbəti gün heç nəyin müddəti bitmir. Növbəti bitmə tarixi: {date}.} other{Növbəti {days} gün ərzində heç nəyin müddəti bitmir. Növbəti bitmə tarixi: {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} kateqoriyasındakı 1 sənədinizin müddəti {date} tarixində bitir. Bunu gözdən qaçırmaq asandır.} other{{category} kateqoriyasındakı {count} sənədinizin müddəti {date} tarixindən əvvəl bitir. Sənədlər belə bir yerə toplananda birini unutmaq asandır.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Yaxınlaşan 1 bitmə tarixi xatırlatma ilə əhatə olunub. Başqa heç nə diqqətinizi tələb etmir.} other{Yaxınlaşan {count} bitmə tarixi xatırlatmalarla əhatə olunub. Başqa heç nə diqqətinizi tələb etmir.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} kateqoriyasındakı {count} sənədinizin müddəti {date} tarixində bitir. Bunu gözdən qaçırmaq asandır.} other{{category} kateqoriyasındakı {count} sənədinizin müddəti {date} tarixindən əvvəl bitir. Sənədlər belə bir yerə toplananda birini unutmaq asandır.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Yaxınlaşan {count} bitmə tarixi xatırlatma ilə əhatə olunub. Başqa heç nə diqqətinizi tələb etmir.} other{Yaxınlaşan {count} bitmə tarixi xatırlatmalarla əhatə olunub. Başqa heç nə diqqətinizi tələb etmir.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Hər şey qaydasındadır. Hazırda heç nə diqqətinizi tələb etmir.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Hazırda təcili heç nə yoxdur, amma yaxınlaşan 1 sənədin hələ xatırlatması yoxdur.} other{Hazırda təcili heç nə yoxdur, amma yaxınlaşan {count} sənədin hələ xatırlatması yoxdur.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Hazırda təcili heç nə yoxdur, amma yaxınlaşan {count} sənədin hələ xatırlatması yoxdur.} other{Hazırda təcili heç nə yoxdur, amma yaxınlaşan {count} sənədin hələ xatırlatması yoxdur.}}",
   "smartInsightCloseExpiriesHeading": "Müddəti təxminən eyni vaxtda bitənlər",
   "plansHeadline": "Vaultara-nın bütün imkanlarını əldə edin",
   "plansSubhead": "Limitsiz sənəd, öz qruplarınız və tam istədiyiniz kimi qurulan xatırlatmalar.",
@@ -357,7 +349,7 @@
   "reminderCascadeRemoveStep": "Sil",
   "reminderCascadeDuplicate": "Bu gün artıq başqa xatırlatmada istifadə olunur",
   "reminderCascadeOutOfRange": "{min} ilə {max} gün arasında dəyər daxil edin",
-  "reminderCascadeStepLabel": "Xatırlatma {position}: {days, plural, =1{1 gün} other{{days} gün}} əvvəl",
+  "reminderCascadeStepLabel": "Xatırlatma {position}: {days, plural, =1{{days} gün} other{{days} gün}} əvvəl",
   "expiryTimelineNotReady": "Bir neçə fərqli ayda müddəti bitən sənədləriniz olanda zaman xəttiniz görünəcək.",
   "verifyEmailResendIn": "{seconds} san. sonra yenidən göndər",
   "verifyEmailSpamHint": "Tapmadınız? Spam və ya lazımsız məktublar qovluğunu yoxlayın.",
@@ -366,13 +358,10 @@
   "verifyEmailDiscardBody": "Bu hesab doğrulanmayıb. İndi çıxsanız, hesab silinəcək və istənilən e-poçt ünvanı ilə yenidən qeydiyyatdan keçə bilərsiniz.",
   "verifyEmailDiscardAction": "İmtina et",
   "verifyEmailKeepWaiting": "Gözləməyə davam et",
-  "expiringBadge": "{count, plural, =1{Müddəti bitən: 1} other{Müddəti bitən: {count}}}",
+  "expiringBadge": "{count, plural, =1{Müddəti bitən: {count}} other{Müddəti bitən: {count}}}",
   "noRecordsToday": "Bu gün heç nəyin müddəti bitmir",
   "noRecordsTomorrow": "Sabah heç nəyin müddəti bitmir",
-  "cascadeStepTitle": "{days, plural, =0{“{recordName}” sənədinin müddəti bu gün bitir} =1{“{recordName}” sənədinin müddəti sabah bitir} other{“{recordName}” sənədinin müddəti {days} gün sonra bitir}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, “{recordName}” sənədinizin müddəti bu gün bitir. Artıq müddətini uzatmısınız? Bitmə tarixini yeniləyin.} =1{{firstName}, “{recordName}” sənədinizin müddəti sabah bitir. Etibarsız olmaması üçün müddətini indi uzadın.} other{{firstName}, “{recordName}” sənədinizin müddəti {date} tarixində bitir. Müddətini vaxtından əvvəl uzatmaq sizi arxayın saxlayır.}}",
   "cascadeFinalStepTitle": "Son xatırlatma: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, “{recordName}” sənədinizin müddəti {days, plural, =1{sabah} other{{days} gün sonra, {date} tarixində}} bitir. Bu, son xatırlatmadır: müddətini uzadın və ya tarixini yeniləyin.",
   "notificationsTitle": "Bildirişlər",
   "notificationsProfileEnabledSubtitle": "Xatırlatmalar saat {time} gəlir.",
   "notificationsProfileDisabledSubtitle": "Bildirişlər deaktivdir.",
@@ -1099,7 +1088,7 @@
   "photoLockTurnOn": "Şifrələnmiş şəkilləri aktiv et",
   "photoLockStatusOn": "Şifrələnmiş şəkillər aktivdir",
   "photoLockStatusOnBody": "Yeni şəkillər yüklənməzdən əvvəl bu telefonda şifrələnir.",
-  "photoLockPendingTitle": "{count, plural, one{1 şəkil hələ şifrələnməyib} other{{count} şəkil hələ şifrələnməyib}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} şəkil hələ şifrələnməyib} other{{count} şəkil hələ şifrələnməyib}}",
   "photoLockPendingBody": "Bunu aktiv etməzdən əvvəl əlavə etdiyiniz şəkillər hələ də adi qaydada saxlanılır.",
   "photoLockEncryptExisting": "Mövcud şəkillərimi şifrələ",
   "photoLockKeepOpen": "Bu bitənədək Vaultara-nı açıq saxlayın.",
@@ -1136,7 +1125,7 @@
   "photoLockSetupFailed": "Şifrələnmiş şəkilləri aktiv edə bilmədik. Bağlantınızı yoxlayın və yenidən cəhd edin.",
   "photoLockAlreadyOn": "Şifrələnmiş şəkillər hesabınızda artıq aktivdir. Onlardan bu telefonda istifadə etmək üçün bərpa açarınızı daxil edin.",
   "photoLockEncryptExistingTitle": "Mövcud şəkilləriniz şifrələnsin?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Hələ şifrələnməmiş 1 şəkliniz var. Onu indi şifrələyə bilərik.} other{Hələ şifrələnməmiş {count} şəkliniz var. Onları indi şifrələyə bilərik.}} Bu bitənədək Vaultara-nı açıq saxlayın.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Hələ şifrələnməmiş {count} şəkliniz var. Onu indi şifrələyə bilərik.} other{Hələ şifrələnməmiş {count} şəkliniz var. Onları indi şifrələyə bilərik.}} Bu bitənədək Vaultara-nı açıq saxlayın.",
   "photoLockEncryptNow": "İndi şifrələ",
   "photoLockEntryBody": "Şifrələnmiş şəkilləri aktiv edəndə saxladığınız bərpa açarını daxil edin. Defis və boşluqlar məcburi deyil.",
   "photoLockEntryLabel": "Bərpa açarı",
@@ -1145,8 +1134,8 @@
   "photoLockUnlocked": "Şəkillərinizin kilidi bu telefonda açıldı.",
   "photoLockInvalidFormat": "Bu, bərpa açarına oxşamır. Hər simvolu yoxlayın və yenidən cəhd edin.",
   "photoLockWrongKey": "Bu bərpa açarı uyğun gəlmir. Yoxlayın və yenidən cəhd edin.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Çox cəhd edildi. 1 saniyə gözləyin və yenidən cəhd edin.} other{Çox cəhd edildi. {seconds} saniyə gözləyin və yenidən cəhd edin.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Çox cəhd edildi. 1 dəqiqə gözləyin və yenidən cəhd edin.} other{Çox cəhd edildi. {minutes} dəqiqə gözləyin və yenidən cəhd edin.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Çox cəhd edildi. {seconds} saniyə gözləyin və yenidən cəhd edin.} other{Çox cəhd edildi. {seconds} saniyə gözləyin və yenidən cəhd edin.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Çox cəhd edildi. {minutes} dəqiqə gözləyin və yenidən cəhd edin.} other{Çox cəhd edildi. {minutes} dəqiqə gözləyin və yenidən cəhd edin.}}",
   "photoLockOffline": "Vaultara ilə əlaqə qura bilmədik. Bağlantınızı yoxlayın və yenidən cəhd edin.",
   "photoLockNotSetUp": "Şifrələnmiş şəkillər hesabınızda aktiv deyil.",
   "photoLockUnlockFailed": "Nəsə səhv getdi. Yenidən cəhd edin.",
@@ -1402,13 +1391,13 @@
   "dailyDigestSwitchSubtitle": "Xatırlatma vaxtınızda həmin gün vaxtı çatan hər şeyi göstərən bir bildiriş alın.",
   "dailyDigestTurnedOn": "Xatırlatmalarınız indi gündəlik bir xülasə kimi gəlir.",
   "dailyDigestTurnedOff": "Hər sənəd üçün ayrı xatırlatmalar yenidən açıqdır.",
-  "dailyDigestTitle": "{count, plural, one{1 sənəd diqqətinizi tələb edir} other{{count} sənəd diqqətinizi tələb edir}}",
+  "dailyDigestTitle": "{count, plural, one{{count} sənəd diqqətinizi tələb edir} other{{count} sənəd diqqətinizi tələb edir}}",
   "dailyDigestBody": "Yaxınlaşır: {names}.",
   "dailyDigestBodyMore": "Yaxınlaşır: {names} və daha {count} sənəd.",
   "dailyDigestLockedRecord": "kilidli sənəd",
   "renewReasonRepeat": "{months, plural, one{Hər ay təkrar ayarınıza əsasən} other{Hər {months} aydan bir təkrar ayarınıza əsasən}}",
   "renewReasonHistory": "{count, plural, one{Son müddət uzatmanıza əsasən} other{Son {count} müddət uzatmanıza əsasən}}",
-  "renewReasonTypical": "{years, plural, one{Adətən 1 il etibarlıdır} other{Adətən {years} il etibarlıdır}}",
+  "renewReasonTypical": "{years, plural, one{Adətən {years} il etibarlıdır} other{Adətən {years} il etibarlıdır}}",
   "renewChangeHint": "Dəyişmək üçün tarixə toxunun.",
   "renewPickDate": "Yeni bitmə tarixini seçin",
   "renewPickDateHint": "Yeni sənədinizdə göstərilən tarixi seçin.",
@@ -1561,9 +1550,9 @@
   "secHistoryIntro": "Son 90 gündə hesabınıza girişlər və dəyişikliklər.",
   "secHistoryEmpty": "Hələ göstəriləcək heç nə yoxdur.",
   "secJustNow": "İndicə",
-  "secMinutesAgo": "{count, plural, one{1 dəqiqə əvvəl} other{{count} dəqiqə əvvəl}}",
-  "secHoursAgo": "{count, plural, one{1 saat əvvəl} other{{count} saat əvvəl}}",
-  "secDaysAgo": "{count, plural, one{1 gün əvvəl} other{{count} gün əvvəl}}",
+  "secMinutesAgo": "{count, plural, one{{count} dəqiqə əvvəl} other{{count} dəqiqə əvvəl}}",
+  "secHoursAgo": "{count, plural, one{{count} saat əvvəl} other{{count} saat əvvəl}}",
+  "secDaysAgo": "{count, plural, one{{count} gün əvvəl} other{{count} gün əvvəl}}",
   "secEventNewSignIn": "Yeni cihazdan giriş",
   "secEventSignIn": "Daxil olundu",
   "secEventPasswordChanged": "Şifrə dəyişdirildi",
@@ -2611,5 +2600,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "“{recordName}” sənədinin müddəti bu gün bitir",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "“{recordName}” sənədinin müddəti sabah bitir",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{“{recordName}” sənədinin müddəti {days} gün sonra bitir} other{“{recordName}” sənədinin müddəti {days} gün sonra bitir}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "“{recordName}” sənədinin müddəti bitib",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Kilidli sənəd diqqətinizi tələb edir",
+  "remLockedBody": "Tarixi {date}. Hansı sənəd olduğunu görmək üçün Vaultara-nın kilidini açın.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "“{recordName}” sənədinizin müddəti bu gün bitir.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "“{recordName}” sənədinizin müddəti sabah bitir.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "“{recordName}” sənədinizin müddəti {date} tarixində bitir.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, “{recordName}” sənədinizin müddəti bu gün bitir.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, “{recordName}” sənədinizin müddəti sabah bitir.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, “{recordName}” sənədinizin müddəti {date} tarixində bitir.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: “{recordName}” sənədinin müddəti bu gün bitir.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: “{recordName}” sənədinin müddəti sabah bitir.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: “{recordName}” sənədinin müddəti {date} tarixində bitir.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "“{recordName}” sənədinizin müddəti {date} tarixində bitib.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: “{recordName}” sənədinin müddəti {date} tarixində bitib.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Artıq yeniləmisiniz? Tarixi yeniləyin.",
+  "remTipTomorrow": "Müddəti bitməsin deyə indi yeniləyin.",
+  "remTipEarly": "Erkən yeniləmək sizi qorunmuş saxlayır.",
+  "remTipLast": "Bu, müddət bitməzdən əvvəl son xatırlatmanızdır.",
+  "remTipExpired": "Yeniləyin və ya artıq etmisinizsə, tarixi dəyişin.",
+  "remStartBody": "“{recordName}” sənədini yeniləməyə başlamaq vaxtıdır. Müddəti {date} tarixində bitir, indi başlasanız, kifayət qədər vaxtınız olacaq.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "“{recordName}” ({person}) sənədini yeniləməyə başlamaq vaxtıdır. Müddəti {date} tarixində bitir, indi başlasaq, kifayət qədər vaxt olacaq.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Müddət xatırlatmaları",
+  "notifChannelDescription": "Sənədlərinizin müddəti bitməzdən əvvəl xatırlatmalar",
+  "notifTestTitle": "Test bildirişi",
+  "notifTestBody": "Vaultara xatırlatmaları belə gəlir.",
+  "notifTestAction": "Test bildirişi göndər",
+  "notifTestSubtitle": "Xatırlatmaların bu telefona çatdığını yoxlayın",
+  "notifTestSent": "Test göndərildi. Bir neçə saniyəyə gəlməlidir.",
+  "notifAfterExpiryTitle": "Sənədin müddəti bitdikdən sonra xatırlat",
+  "notifAfterExpirySubtitle": "3 və 14 gün sonra, yenilənməyibsə",
+  "notifWeeklyTitle": "Bazar ertəsi xülasəsi",
+  "notifWeeklySubtitle": "Həmin həftə nəyinsə müddəti bitəndə bazar ertəsi səhər qeyd",
+  "notifPushSection": "Ailə və yeniləmələr",
+  "notifHouseholdTitle": "Paylaşılan sənədlər",
+  "notifHouseholdSubtitle": "Paylaşılan sənədin müddəti bitmək üzrə olanda və heç kim onu yeniləməyəndə",
+  "notifUpdatesTitle": "İstədiyiniz yeniləmələr",
+  "notifUpdatesSubtitle": "Kimsə sənədin yeni məlumatlarını göndərəndə",
+  "notifSecurityNote": "Hesabınıza yeni girişlər barədə xəbərdarlıqlar həmişə göndərilir.",
+  "notifIosHelpTitle": "Xatırlatmalar gəlmir?",
+  "notifIosHelpSubtitle": "iPhone ayarlarınızı yoxlayın",
+  "notifIosHelpStep1": "Ayarları, sonra Bildirişləri, sonra Vaultara-nı açın və Bildirişlərə icazə verin seçimini aktiv edin.",
+  "notifIosHelpStep2": "Kilid ekranı, Bildiriş mərkəzi və Bannerləri aktiv edin.",
+  "notifIosHelpStep3": "Fokus istifadə edirsinizsə, Vaultara-nı icazə verilən tətbiqlərə əlavə edin.",
+  "notifIosHelpStep4": "Vaultara-nı bir neçə həftədən bir açın. iPhone qabaqcadan yalnız məhdud sayda xatırlatma saxlayır, tətbiqi açmaq isə növbətiləri planlaşdırır.",
+  "homeNextUpEmpty": "Tezliklə heç nəyin müddəti bitmir. Hər şey qaydasındadır.",
+  "homeDueSoonChip": "{count, plural, one{30 gün ərzində {count} sənəd} other{30 gün ərzində {count} sənəd}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Bərkidilmiş kateqoriyalar"
 }

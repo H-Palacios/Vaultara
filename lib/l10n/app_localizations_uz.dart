@@ -360,15 +360,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Sizni yana koʻrib turganimizdan xursandmiz. Muhim sanalar va yozuvlaringizni koʻrib chiqmoqchi boʻlsangiz, Vaultara doim shu yerda.';
 
   @override
-  String get summaryAllCaption => 'Vaultarada kuzatilmoqda';
-
-  @override
-  String get summaryExpiredTitle => 'Muddati tugagan';
-
-  @override
-  String get summaryExpiredCaption => 'Tugash sanasi oʻtgan';
-
-  @override
   String get editorNotes => 'Izohlar';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Yozuvni oʻchirish';
-
-  @override
-  String get summaryAllRecordsTitle => 'Barcha yozuvlar';
 
   @override
   String get noGroupFound => 'Hozircha guruhlar yoʻq';
@@ -829,22 +817,10 @@ class AppLocalizationsUz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ta yozuv',
-      one: '1 ta yozuv',
+      one: '$count ta yozuv',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Yaqinlashayotganlar';
-
-  @override
-  String get summaryUpcomingCaption => '30 kun ichida';
-
-  @override
-  String get summaryUrgentTitle => 'Shoshilinch';
-
-  @override
-  String get summaryUrgentCaption => '7 kun ichida';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -945,7 +921,7 @@ class AppLocalizationsUz extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days kun oldin',
-      one: '1 kun oldin',
+      one: '$days kun oldin',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsUz extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names va yana $extra ta yozuvning muddati bugun tugaydi.',
-      one: '$names va yana 1 ta yozuvning muddati bugun tugaydi.',
+      one: '$names va yana $extra ta yozuvning muddati bugun tugaydi.',
       zero: '$names muddati bugun tugaydi.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsUz extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b va yana $extra ta yozuvning muddati ${lastDate}gacha, deyarli bir vaqtda tugaydi. Bir nechta yozuv shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.',
-      one: '$a, $b va yana 1 ta yozuvning muddati ${lastDate}gacha, deyarli bir vaqtda tugaydi. Bir nechta yozuv shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.',
+      one: '$a, $b va yana $extra ta yozuvning muddati ${lastDate}gacha, deyarli bir vaqtda tugaydi. Bir nechta yozuv shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsUz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category turkumidagi $count ta yozuvingiz muddati ${date}gacha tugaydi. Ular shunday toʻplanib qolganda, birini unutib qoʻyish oson.',
-      one: '$category turkumidagi 1 ta yozuvingiz muddati $date kuni tugaydi. Uni eʼtibordan chetda qoldirish oson.',
+      one: '$category turkumidagi $count ta yozuvingiz muddati $date kuni tugaydi. Uni eʼtibordan chetda qoldirish oson.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsUz extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Yaqinlashayotgan $count ta muddat tugashi uchun eslatmalar oʻrnatilgan. Boshqa hech narsa eʼtiboringizni talab qilmaydi.',
-      one: 'Yaqinlashayotgan 1 ta muddat tugashi uchun eslatma oʻrnatilgan. Boshqa hech narsa eʼtiboringizni talab qilmaydi.',
+      one: 'Yaqinlashayotgan $count ta muddat tugashi uchun eslatma oʻrnatilgan. Boshqa hech narsa eʼtiboringizni talab qilmaydi.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsUz extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Hozircha shoshilinch narsa yoʻq, lekin yaqinlashayotgan $count ta yozuvda hali eslatma yoʻq.',
-      one: 'Hozircha shoshilinch narsa yoʻq, lekin yaqinlashayotgan 1 ta yozuvda hali eslatma yoʻq.',
+      one: 'Hozircha shoshilinch narsa yoʻq, lekin yaqinlashayotgan $count ta yozuvda hali eslatma yoʻq.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsUz extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days kun',
-      one: '1 kun',
+      one: '$days kun',
     );
     return '$position-eslatma: $_temp0 oldin';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsUz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tasining muddati tugaydi',
-      one: '1 tasining muddati tugaydi',
+      one: '$count tasining muddati tugaydi',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get noRecordsTomorrow => 'Ertaga hech narsaning muddati tugamaydi';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName muddati $days kundan keyin tugaydi',
-      one: '$recordName muddati ertaga tugaydi',
-      zero: '$recordName muddati bugun tugaydi',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName muddati $date kuni tugaydi. Oldindan uzaytirsangiz, xotirjam boʻlasiz.',
-      one: '$firstName, $recordName muddati ertaga tugaydi. Kechikib qolmaslik uchun uni hozir uzaytiring.',
-      zero: '$firstName, $recordName muddati bugun tugaydi. Allaqachon uzaytirdingizmi? Tugash sanasini yangilang.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Soʻnggi eslatma: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days kundan keyin, $date kuni',
-      one: 'ertaga',
-    );
-    return '$firstName, $recordName muddati $_temp0 tugaydi. Bu soʻnggi eslatma: uni uzaytiring yoki tugash sanasini yangilang.';
   }
 
   @override
@@ -8276,4 +8217,204 @@ class AppLocalizationsUz extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Eslatma: $name $date kuni tugaydi';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName muddati bugun tugaydi';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName muddati ertaga tugaydi';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName muddati $days kundan keyin tugaydi',
+      one: '$recordName muddati $days kundan keyin tugaydi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName muddati tugadi';
+  }
+
+  @override
+  String get remLockedTitle => 'Qulflangan yozuv e\'tiboringizni talab qiladi';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Uning sanasi — $date. Qaysi yozuv ekanini ko\'rish uchun Vaultara qulfini oching.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '“$recordName” yozuvingiz muddati bugun tugaydi.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '“$recordName” yozuvingiz muddati ertaga tugaydi.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '“$recordName” yozuvingiz muddati $date kuni tugaydi.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, “$recordName” yozuvingiz muddati bugun tugaydi.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, “$recordName” yozuvingiz muddati ertaga tugaydi.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, “$recordName” yozuvingiz muddati $date kuni tugaydi.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: “$recordName” yozuvi muddati bugun tugaydi.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: “$recordName” yozuvi muddati ertaga tugaydi.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: “$recordName” yozuvi muddati $date kuni tugaydi.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '“$recordName” yozuvingiz muddati $date kuni tugagan.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: “$recordName” yozuvi muddati $date kuni tugagan.';
+  }
+
+  @override
+  String get remTipToday => 'Allaqachon uzaytirdingizmi? Sanasini yangilang.';
+
+  @override
+  String get remTipTomorrow => 'Muddati o\'tib ketmasligi uchun hozir uzaytiring.';
+
+  @override
+  String get remTipEarly => 'Erta uzaytirish sizni himoyalangan holda saqlaydi.';
+
+  @override
+  String get remTipLast => 'Bu muddat tugashidan oldingi oxirgi eslatma.';
+
+  @override
+  String get remTipExpired => 'Uzaytiring yoki allaqachon qilgan bo\'lsangiz, sanasini yangilang.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '“$recordName” yozuvini uzaytirishni boshlash vaqti keldi. Muddati $date kuni tugaydi, hozir boshlasangiz, vaqtingiz yetarli bo\'ladi.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '“$recordName” ($person) yozuvini uzaytirishni boshlash vaqti keldi. Muddati $date kuni tugaydi, hozir boshlansa, vaqt yetarli bo\'ladi.';
+  }
+
+  @override
+  String get notifChannelName => 'Muddat eslatmalari';
+
+  @override
+  String get notifChannelDescription => 'Yozuvlaringiz muddati tugashidan oldin eslatmalar';
+
+  @override
+  String get notifTestTitle => 'Sinov bildirishnomasi';
+
+  @override
+  String get notifTestBody => 'Vaultara eslatmalari shunday keladi.';
+
+  @override
+  String get notifTestAction => 'Sinov bildirishnomasini yuborish';
+
+  @override
+  String get notifTestSubtitle => 'Eslatmalar shu telefonga yetib kelishini tekshiring';
+
+  @override
+  String get notifTestSent => 'Sinov yuborildi. Bir necha soniyada kelishi kerak.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Yozuv muddati tugagach eslatish';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 va 14 kundan keyin, agar uzaytirilmagan bo\'lsa';
+
+  @override
+  String get notifWeeklyTitle => 'Dushanba xulosasi';
+
+  @override
+  String get notifWeeklySubtitle => 'O\'sha haftada biror narsaning muddati tugasa, dushanba ertalab xabar';
+
+  @override
+  String get notifPushSection => 'Oila va yangilanishlar';
+
+  @override
+  String get notifHouseholdTitle => 'Ulashilgan yozuvlar';
+
+  @override
+  String get notifHouseholdSubtitle => 'Ulashilgan yozuv muddati tugash arafasida va uni hech kim uzaytirmaganda';
+
+  @override
+  String get notifUpdatesTitle => 'Siz so\'ragan yangilanishlar';
+
+  @override
+  String get notifUpdatesSubtitle => 'Kimdir yozuvning yangi ma\'lumotlarini yuborganda';
+
+  @override
+  String get notifSecurityNote => 'Hisobingizga yangi kirishlar haqidagi ogohlantirishlar doim yuboriladi.';
+
+  @override
+  String get notifIosHelpTitle => 'Eslatmalar kelmayaptimi?';
+
+  @override
+  String get notifIosHelpSubtitle => 'iPhone sozlamalarini tekshiring';
+
+  @override
+  String get notifIosHelpStep1 => 'Sozlamalarni, keyin Bildirishnomalarni, keyin Vaultara\'ni oching va Bildirishnomalarga ruxsat berishni yoqing.';
+
+  @override
+  String get notifIosHelpStep2 => 'Qulf ekrani, Bildirishnomalar markazi va Bannerlarni yoqing.';
+
+  @override
+  String get notifIosHelpStep3 => 'Fokus rejimidan foydalansangiz, Vaultara\'ni ruxsat berilgan ilovalarga qo\'shing.';
+
+  @override
+  String get notifIosHelpStep4 => 'Vaultara\'ni bir necha haftada bir oching. iPhone oldindan faqat cheklangan sondagi eslatmalarni saqlaydi, ilovani ochish esa keyingilarini rejalashtiradi.';
+
+  @override
+  String get homeNextUpEmpty => 'Yaqin orada hech narsaning muddati tugamaydi. Hammasi joyida.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 kun ichida $count ta muddat',
+      one: '30 kun ichida $count ta muddat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Mahkamlangan toifalar';
 }

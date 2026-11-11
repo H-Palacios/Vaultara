@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara na taimaka maka wajen bibiyar muhimman kwanakin karewa domin kada wani abu ya wuce ka.",
   "homeWelcomeSubtitleFirst": "Muna farin cikin ganin ka a nan. Vaultara na taimaka maka ka kasance cikin tsari ta hanyar adana muhimman kwanaki da rikodi a wuri guda mai tsaro.",
   "homeWelcomeSubtitleBack": "Muna farin cikin sake ganinka. Vaultara na nan a duk lokacin da kake son duba muhimman kwanaki da rikodinka.",
-  "summaryAllCaption": "Ana bibiyarsu a Vaultara",
-  "summaryExpiredTitle": "Sun ƙare",
-  "summaryExpiredCaption": "Lokacin ƙarewa ya wuce",
   "editorNotes": "Bayanan kula",
   "editorReminderNone": "Babu tunatarwa",
   "editorReminderOnExpiry": "A ranar ƙarewa",
@@ -199,7 +196,6 @@
   "addRecord": "Ƙara rikodi",
   "noRecordsYet": "Babu rikodi tukuna.",
   "deleteRecordTitle": "Goge rikodi",
-  "summaryAllRecordsTitle": "Dukkan rikodi",
   "noGroupFound": "Babu ƙungiyoyi tukuna",
   "groupLabel": "{count, plural, one{ƙungiya {count}} other{ƙungiyoyi {count}}}",
   "recordsLabel": "{count, plural, one{{count} rikodi} other{{count} rikodi}}",
@@ -449,7 +445,7 @@
   "addNotesHint": "Ƙara bayanin kula (na zaɓi)",
   "expiryTimelineTitle": "Layin lokacin ƙarewa",
   "expiryTimelineSubtitle": "Latsa wata don ganin rikodin da suka ƙare a wannan watan",
-  "expiryTimelineDetailCount": "{count, plural, =1{Rikodi 1} other{Rikodi {count}}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{Rikodi {count}} other{Rikodi {count}}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -457,10 +453,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Masu zuwa",
-  "summaryUpcomingCaption": "Cikin kwanaki 30",
-  "summaryUrgentTitle": "Gaggawa",
-  "summaryUrgentCaption": "Cikin kwanaki 7",
   "profileHeaderTitle": "Bayanan martaba",
   "profileTutorialsTitle": "Darussa",
   "profileTutorialsSubtitle": "Duba Darussan Manhaja",
@@ -492,7 +484,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Babu tunatarwa",
   "reminderOnExpiry": "A ranar ƙarewa",
-  "reminderDaysBefore": "{days, plural, one{Kwana 1 kafin} other{Kwanaki {days} kafin}}",
+  "reminderDaysBefore": "{days, plural, one{Kwana {days} kafin} other{Kwanaki {days} kafin}}",
   "reminderCustomDaysTitle": "Shigar da kwanaki na musamman",
   "reminderCascadeTitle": "Tunatarwa masu jera",
   "reminderCascadeSubtitle": "Karɓi sanarwa da yawa kafin rikodi ya ƙare",
@@ -523,16 +515,16 @@
   "smartInsightNoRecordsHeading": "Ƙara rikodinka na farko",
   "smartInsightNoRecordsBody": "Fara bin diddigin rikodinka, kuma Vaultara zai nuna maka nazari mai basira anan.",
   "smartInsightExpiresTodaySingleBody": "{name} yana karewa yau. Idan ka riga ka sabunta shi, canza kwanan watan anan.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} suna karewa yau.} =1{{names} da ƙarin guda 1 suna karewa yau.} other{{names} da ƙarin {extra} suna karewa yau.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} suna karewa yau.} =1{{names} da ƙarin guda {extra} suna karewa yau.} other{{names} da ƙarin {extra} suna karewa yau.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} zai kare gobe kuma babu tunatarwa. Sanya guda ɗaya don kada ka manta.} other{{name} zai kare a ranar {date} kuma babu tunatarwa. Sanya guda ɗaya don kada ka manta.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} zai kare ranar {dateA} kuma {b} ranar {dateB}, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan kwanakin rikodi biyu sun kusa haka.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} da {c} duka zasu kare nan da {lastDate}, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan rikodi da dama sun kusa haka.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} da ƙarin rikodi guda 1 zasu kare nan da {lastDate}, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan rikodin sun kusa haka.} other{{a}, {b} da ƙarin rikodi {extra} zasu kare nan da {lastDate}, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan rikodin sun kusa haka.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} da ƙarin rikodi guda {extra} zasu kare nan da {lastDate}, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan rikodin sun kusa haka.} other{{a}, {b} da ƙarin rikodi {extra} zasu kare nan da {lastDate}, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan rikodin sun kusa haka.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Babu abin da zai kare a rana mai zuwa. Na gaba zai kare ranar {date}.} other{Babu abin da zai kare a cikin kwanaki {days} masu zuwa. Na gaba zai kare ranar {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Guda 1 daga cikin rikodinka na rukunin {category} zai kare ranar {date}. Abu ne mai sauƙi a manta da shi.} other{Guda {count} daga cikin rikodinka na rukunin {category} zasu kare nan da {date}. Abu ne mai sauƙi ka manta guda ɗaya idan aka jera su waje ɗaya haka.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Kwanan wata 1 na nan gaba yana da tunatarwa. Babu wani abu da ke bukatar kulawar ka.} other{Kwanan watanni {count} na nan gaba suna da tunatarwa. Babu wani abu da ke bukatar kulawar ka.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Guda {count} daga cikin rikodinka na rukunin {category} zai kare ranar {date}. Abu ne mai sauƙi a manta da shi.} other{Guda {count} daga cikin rikodinka na rukunin {category} zasu kare nan da {date}. Abu ne mai sauƙi ka manta guda ɗaya idan aka jera su waje ɗaya haka.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Kwanan wata {count} na nan gaba yana da tunatarwa. Babu wani abu da ke bukatar kulawar ka.} other{Kwanan watanni {count} na nan gaba suna da tunatarwa. Babu wani abu da ke bukatar kulawar ka.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Komai yana cikin tsari. Babu abin da ke bukatar kulawarka a yanzu.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Babu wani abu mai gaggawa a yanzu, amma akwai rikodi guda 1 na nan gaba da babu tunatarwa.} other{Babu wani abu mai gaggawa a yanzu, amma akwai rikodi {count} na nan gaba da babu tunatarwa.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Babu wani abu mai gaggawa a yanzu, amma akwai rikodi guda {count} na nan gaba da babu tunatarwa.} other{Babu wani abu mai gaggawa a yanzu, amma akwai rikodi {count} na nan gaba da babu tunatarwa.}}",
   "smartInsightCloseExpiriesHeading": "Suna karewa kusan a lokaci guda",
   "plansHeadline": "Sami cikakken Vaultara",
   "plansSubhead": "Rikodi marasa iyaka, ƙungiyoyinka na kanka, da tunatarwa da aka daidaita daidai yadda kake so.",
@@ -619,7 +611,7 @@
   "reminderCascadeRemoveStep": "Cire",
   "reminderCascadeDuplicate": "Wata tunatarwa ta riga ta yi amfani da wannan ranar",
   "reminderCascadeOutOfRange": "Shigar da tsakanin kwanaki {min} zuwa {max}",
-  "reminderCascadeStepLabel": "Tunatarwa {position}: {days, plural, =1{Kwana 1} other{Kwanaki {days}}} kafin",
+  "reminderCascadeStepLabel": "Tunatarwa {position}: {days, plural, =1{Kwana {days}} other{Kwanaki {days}}} kafin",
   "expiryTimelineNotReady": "Layin lokacinka zai bayyana da zarar kana da rikodin da za su ƙare a cikin ƴan watanni daban-daban.",
   "verifyEmailResendIn": "Sake aika a cikin sakan {seconds}",
   "verifyEmailSpamHint": "Baya nan? Bincika babban fayil na spam ko junk.",
@@ -628,13 +620,10 @@
   "verifyEmailDiscardBody": "Wannan asusun ba a tabbatar da shi ba. Barin shi yanzu zai cire shi, kuma zaka iya sake yin rajista da kowane adireshin imel.",
   "verifyEmailDiscardAction": "Watsar",
   "verifyEmailKeepWaiting": "Ci gaba da jira",
-  "expiringBadge": "{count, plural, =1{1 zai ƙare nan ba da daɗewa ba} other{{count} za su ƙare nan ba da daɗewa ba}}",
+  "expiringBadge": "{count, plural, =1{{count} zai ƙare nan ba da daɗewa ba} other{{count} za su ƙare nan ba da daɗewa ba}}",
   "noRecordsToday": "Babu abin da zai ƙare yau",
   "noRecordsTomorrow": "Babu abin da zai ƙare gobe",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} zai ƙare a yau} =1{{recordName} zai ƙare a gobe} other{{recordName} zai ƙare cikin kwanaki {days}}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} naka zai ƙare a yau. Shin ka riga ka sabunta shi? Canza ranar ƙarewarsa.} =1{{firstName}, {recordName} naka zai ƙare a gobe. Sabunta shi yanzu domin kar ya ƙare.} other{{firstName}, {recordName} naka zai ƙare a ranar {date}. Sabuntawa wuri-wuri yana kiyaye ka.}}",
   "cascadeFinalStepTitle": "Tunatarwa ta ƙarshe: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} naka zai ƙare {days, plural, =1{a gobe} other{cikin kwanaki {days}, a ranar {date}}}. Wannan ita ce tunatarwarka ta ƙarshe, sabunta shi ko ka canza ranarsa.",
   "notificationsTitle": "Sanarwoyi",
   "notificationsProfileEnabledSubtitle": "Tunatarwoyi suna zuwa da ƙarfe {time}.",
   "notificationsProfileDisabledSubtitle": "An kashe sanarwoyi.",
@@ -1361,7 +1350,7 @@
   "photoLockTurnOn": "Kunna hotuna masu ɓoyayyen sirri",
   "photoLockStatusOn": "Hotuna masu ɓoyayyen sirri suna kunne",
   "photoLockStatusOnBody": "Ana ɓoye sabbin hotuna a wannan wayar kafin a loda su.",
-  "photoLockPendingTitle": "{count, plural, one{Hoto 1 bai zama ɓoyayye ba tukuna} other{Hotuna {count} ba su zama ɓoyayyu ba tukuna}}",
+  "photoLockPendingTitle": "{count, plural, one{Hoto {count} bai zama ɓoyayye ba tukuna} other{Hotuna {count} ba su zama ɓoyayyu ba tukuna}}",
   "photoLockPendingBody": "Hotunan da ka ƙara kafin ka kunna wannan har yanzu ana adana su ta hanyar da aka saba.",
   "photoLockEncryptExisting": "Ɓoye hotunana da ke akwai",
   "photoLockKeepOpen": "Bar Vaultara a buɗe har sai wannan ya ƙare.",
@@ -1398,7 +1387,7 @@
   "photoLockSetupFailed": "Ba mu iya kunna hotuna masu ɓoyayyen sirri ba. Duba haɗin intanet ɗinka ka sake gwadawa.",
   "photoLockAlreadyOn": "Hotuna masu ɓoyayyen sirri sun riga sun kasance a kunne a asusunka. Shigar da maɓallin dawo da kai don amfani da su a wannan wayar.",
   "photoLockEncryptExistingTitle": "A ɓoye hotunanka da ke akwai?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Kana da hoto 1 da bai zama ɓoyayye ba tukuna. Za mu iya ɓoye shi yanzu.} other{Kana da hotuna {count} da ba su zama ɓoyayyu ba tukuna. Za mu iya ɓoye su yanzu.}} Bar Vaultara a buɗe har sai wannan ya ƙare.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Kana da hoto {count} da bai zama ɓoyayye ba tukuna. Za mu iya ɓoye shi yanzu.} other{Kana da hotuna {count} da ba su zama ɓoyayyu ba tukuna. Za mu iya ɓoye su yanzu.}} Bar Vaultara a buɗe har sai wannan ya ƙare.",
   "photoLockEncryptNow": "Ɓoye yanzu",
   "photoLockEntryBody": "Shigar da maɓallin dawo da kai da ka ajiye lokacin da ka kunna hotuna masu ɓoyayyen sirri. Ba lallai ne ka saka dashes ko sarari ba.",
   "photoLockEntryLabel": "Maɓallin dawo da kai",
@@ -1407,8 +1396,8 @@
   "photoLockUnlocked": "An buɗe hotunanka a wannan wayar.",
   "photoLockInvalidFormat": "Wannan bai yi kama da maɓallin dawo da kai ba. Duba kowane harafi ka sake gwadawa.",
   "photoLockWrongKey": "Wannan maɓallin dawo da kai bai yi daidai ba. Duba shi ka sake gwadawa.",
-  "photoLockWaitSeconds": "{seconds, plural, one{An yi ƙoƙari sau da yawa. Jira daƙiƙa 1 ka sake gwadawa.} other{An yi ƙoƙari sau da yawa. Jira daƙiƙa {seconds} ka sake gwadawa.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{An yi ƙoƙari sau da yawa. Jira minti 1 ka sake gwadawa.} other{An yi ƙoƙari sau da yawa. Jira mintuna {minutes} ka sake gwadawa.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{An yi ƙoƙari sau da yawa. Jira daƙiƙa {seconds} ka sake gwadawa.} other{An yi ƙoƙari sau da yawa. Jira daƙiƙa {seconds} ka sake gwadawa.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{An yi ƙoƙari sau da yawa. Jira minti {minutes} ka sake gwadawa.} other{An yi ƙoƙari sau da yawa. Jira mintuna {minutes} ka sake gwadawa.}}",
   "photoLockOffline": "Ba mu iya haɗawa da Vaultara ba. Duba haɗin intanet ɗinka ka sake gwadawa.",
   "photoLockNotSetUp": "Ba a kunna hotuna masu ɓoyayyen sirri a asusunka ba.",
   "photoLockUnlockFailed": "Wani abu ya faru ba daidai ba. Da fatan za a sake gwadawa.",
@@ -1664,13 +1653,13 @@
   "dailyDigestSwitchSubtitle": "Karɓi sanarwa ɗaya a lokacin tunatarwarka da ke lissafa duk abin da lokacinsa ya yi a ranar.",
   "dailyDigestTurnedOn": "Tunatarwarka yanzu tana zuwa a matsayin taƙaitaccen bayani na kowace rana.",
   "dailyDigestTurnedOff": "Tunatarwa daban-daban na kowane rikodi sun dawo.",
-  "dailyDigestTitle": "{count, plural, one{Rikodi 1 yana buƙatar hankalinka} other{Rikodi {count} suna buƙatar hankalinka}}",
+  "dailyDigestTitle": "{count, plural, one{Rikodi {count} yana buƙatar hankalinka} other{Rikodi {count} suna buƙatar hankalinka}}",
   "dailyDigestBody": "Masu zuwa: {names}.",
   "dailyDigestBodyMore": "Masu zuwa: {names} da wasu {count}.",
   "dailyDigestLockedRecord": "rikodi mai kullewa",
   "renewReasonRepeat": "{months, plural, one{Bisa saitin maimaitawarka na kowane wata} other{Bisa saitin maimaitawarka na kowane wata {months}}}",
   "renewReasonHistory": "{count, plural, one{Bisa sabuntawarka ta ƙarshe} other{Bisa sabuntawarka {count} na ƙarshe}}",
-  "renewReasonTypical": "{years, plural, one{Yawanci yana aiki na shekara 1} other{Yawanci yana aiki na shekaru {years}}}",
+  "renewReasonTypical": "{years, plural, one{Yawanci yana aiki na shekara {years}} other{Yawanci yana aiki na shekaru {years}}}",
   "renewChangeHint": "Taɓa ranar don canza ta.",
   "renewPickDate": "Zaɓi sabuwar ranar karewa",
   "renewPickDateHint": "Zaɓi ranar da ke kan sabuwar takardarka.",
@@ -1823,9 +1812,9 @@
   "secHistoryIntro": "Shiga da canje-canje a asusunka a cikin kwanaki 90 da suka gabata.",
   "secHistoryEmpty": "Babu abin da za a nuna tukuna.",
   "secJustNow": "Yanzu yanzu",
-  "secMinutesAgo": "{count, plural, one{Minti 1 da ya wuce} other{Mintuna {count} da suka wuce}}",
-  "secHoursAgo": "{count, plural, one{Awa 1 da ta wuce} other{Awanni {count} da suka wuce}}",
-  "secDaysAgo": "{count, plural, one{Kwana 1 da ya wuce} other{Kwanaki {count} da suka wuce}}",
+  "secMinutesAgo": "{count, plural, one{Minti {count} da ya wuce} other{Mintuna {count} da suka wuce}}",
+  "secHoursAgo": "{count, plural, one{Awa {count} da ta wuce} other{Awanni {count} da suka wuce}}",
+  "secDaysAgo": "{count, plural, one{Kwana {count} da ya wuce} other{Kwanaki {count} da suka wuce}}",
   "secEventNewSignIn": "Sabuwar na'ura ta shiga",
   "secEventSignIn": "An shiga",
   "secEventPasswordChanged": "An canza kalmar sirri",
@@ -2146,8 +2135,8 @@
   "lifePlanAutoChanged": "Vaultara ya ga wannan bayanin ya canza, don haka an yi masa alamar an gama.",
   "lifePlanAutoAdded": "An ƙara bayan ka fara wannan tsarin.",
   "lifePlanProgress": "{done} cikin {total} an gama",
-  "lifePlanDaysToGo": "{count, plural, =1{Saura kwana 1} other{Saura kwanaki {count}}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Kwana 1 da ya wuce} other{Kwanaki {count} da suka wuce}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Saura kwana {count}} other{Saura kwanaki {count}}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Kwana {count} da ya wuce} other{Kwanaki {count} da suka wuce}}",
   "lifePlanAllDone": "Komai ya kammala. Kana iya yi wa tsarin alamar an gama.",
   "lifePlanFinish": "Yi alamar an gama",
   "lifePlanReopen": "Sake buɗewa",
@@ -2276,7 +2265,7 @@
   "lifePlanReadAloudUnavailable": "Karatu da ƙarfi ba ya samuwa a wannan wayar.",
   "lifePlanProofPack": "Ƙirƙiri fakitin shaida",
   "lifePlanOpenFamily": "Buɗe Iyali",
-  "lifePlanRemoved": "{count, plural, =1{Bayani 1 da ka goge ana ɗaukarsa a matsayin an soke.} other{Bayanai {count} da ka goge ana ɗaukarsu a matsayin an soke.}}",
+  "lifePlanRemoved": "{count, plural, =1{Bayani {count} da ka goge ana ɗaukarsa a matsayin an soke.} other{Bayanai {count} da ka goge ana ɗaukarsu a matsayin an soke.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2477,7 +2466,7 @@
   "tutorialsGroupTravelFamily": "Tafiya da iyali",
   "tutorialsGroupEmergencies": "Al'amuran rayuwa da gaggawa",
   "tutorialsGroupPaid": "Fasalolin biya",
-  "tutorialsSteps": "{count, plural, =1{Mataki 1} other{Matakai {count}}}",
+  "tutorialsSteps": "{count, plural, =1{Mataki {count}} other{Matakai {count}}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2873,5 +2862,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "\"{recordName}\" zai ƙare yau",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "\"{recordName}\" zai ƙare gobe",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{\"{recordName}\" zai ƙare cikin kwana {days}} other{\"{recordName}\" zai ƙare cikin kwanaki {days}}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "\"{recordName}\" ya ƙare",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Rikodi mai kullewa yana buƙatar hankalinka",
+  "remLockedBody": "Kwanan watansa {date} ne. Buɗe Vaultara don ganin wane rikodi ne.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Rikodinka \"{recordName}\" zai ƙare yau.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Rikodinka \"{recordName}\" zai ƙare gobe.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Rikodinka \"{recordName}\" zai ƙare a ranar {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, rikodinka \"{recordName}\" zai ƙare yau.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, rikodinka \"{recordName}\" zai ƙare gobe.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, rikodinka \"{recordName}\" zai ƙare a ranar {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Rikodin {person} \"{recordName}\" zai ƙare yau.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Rikodin {person} \"{recordName}\" zai ƙare gobe.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Rikodin {person} \"{recordName}\" zai ƙare a ranar {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Rikodinka \"{recordName}\" ya ƙare a ranar {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Rikodin {person} \"{recordName}\" ya ƙare a ranar {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Ka riga ka sabunta? Canza kwanan watansa.",
+  "remTipTomorrow": "Sabunta shi yanzu don kada ya ƙare.",
+  "remTipEarly": "Sabuntawa da wuri yana kiyaye ka.",
+  "remTipLast": "Wannan shi ne tunatarwarka ta ƙarshe kafin ya ƙare.",
+  "remTipExpired": "Sabunta shi, ko ka canza kwanan watansa idan ka riga ka yi.",
+  "remStartBody": "Lokaci ya yi da za ka fara sabunta \"{recordName}\". Zai ƙare a ranar {date}, don haka idan ka fara yanzu za ka sami isasshen lokaci.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Lokaci ya yi da za a fara sabunta \"{recordName}\" na {person}. Zai ƙare a ranar {date}, don haka fara yanzu zai bar isasshen lokaci.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Tunatarwar ƙarewa",
+  "notifChannelDescription": "Tunatarwa kafin rikodinka su ƙare",
+  "notifTestTitle": "Sanarwar gwaji",
+  "notifTestBody": "Tunatarwar Vaultara tana zuwa haka.",
+  "notifTestAction": "Aika sanarwar gwaji",
+  "notifTestSubtitle": "Duba ko tunatarwa tana isa wannan wayar",
+  "notifTestSent": "An aika gwaji. Ya kamata ya iso cikin ɗan daƙiƙa.",
+  "notifAfterExpiryTitle": "Tunatar da ni bayan rikodi ya ƙare",
+  "notifAfterExpirySubtitle": "Kwana 3 da 14 bayan haka, idan ba a sabunta ba",
+  "notifWeeklyTitle": "Taƙaitawar Litinin",
+  "notifWeeklySubtitle": "Saƙo da safiyar Litinin idan wani abu zai ƙare a wannan makon",
+  "notifPushSection": "Gida da sabuntawa",
+  "notifHouseholdTitle": "Rikodin da aka raba",
+  "notifHouseholdSubtitle": "Idan rikodin da aka raba ya kusa ƙarewa kuma babu wanda ya sabunta shi",
+  "notifUpdatesTitle": "Sabuntawar da ka nema",
+  "notifUpdatesSubtitle": "Idan wani ya aiko sababbin bayanan rikodi",
+  "notifSecurityNote": "Ana aika faɗakarwa game da sabbin shiga cikin asusunka koyaushe.",
+  "notifIosHelpTitle": "Ba ka samun tunatarwa?",
+  "notifIosHelpSubtitle": "Duba saitunan iPhone ɗinka",
+  "notifIosHelpStep1": "Buɗe Settings, sannan Notifications, sannan Vaultara, ka kunna Allow Notifications.",
+  "notifIosHelpStep2": "Kunna Lock Screen, Notification Centre da Banners.",
+  "notifIosHelpStep3": "Idan kana amfani da Focus, ƙara Vaultara cikin manhajojin da aka yarda da su.",
+  "notifIosHelpStep4": "Buɗe Vaultara bayan 'yan makonni. iPhone yana adana ƙayyadadden adadin tunatarwa na gaba ne kawai, kuma buɗe manhajar yana tsara na gaba.",
+  "homeNextUpEmpty": "Babu abin da zai ƙare nan ba da daɗewa ba. Komai ya shirya.",
+  "homeDueSoonChip": "{count, plural, one{{count} cikin kwana 30} other{{count} cikin kwana 30}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Rukunonin da aka liƙa"
 }

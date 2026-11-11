@@ -360,15 +360,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'නැවතත් ඔබව දැකීමට සතුටුයි. ඔබගේ වැදගත් දිනයන් සහ වාර්තා පරීක්ෂා කිරීමට Vaultara සූදානම්.';
 
   @override
-  String get summaryAllCaption => 'Vaultara තුළ නිරීක්ෂණය කරයි';
-
-  @override
-  String get summaryExpiredTitle => 'කල් ඉකුත් වූ';
-
-  @override
-  String get summaryExpiredCaption => 'කල් ඉකුත් දිනය පසු වී ඇත';
-
-  @override
   String get editorNotes => 'සටහන්';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'වාර්තාව මකන්න';
-
-  @override
-  String get summaryAllRecordsTitle => 'සියලු වාර්තා';
 
   @override
   String get noGroupFound => 'තවම කණ්ඩායම් නොමැත';
@@ -829,22 +817,10 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'වාර්තා $count',
-      one: 'වාර්තා 1',
+      one: 'වාර්තා $count',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'ඉදිරියට';
-
-  @override
-  String get summaryUpcomingCaption => 'දින 30ක් ඇතුළත';
-
-  @override
-  String get summaryUrgentTitle => 'හදිසි';
-
-  @override
-  String get summaryUrgentCaption => 'දින 7ක් ඇතුළත';
 
   @override
   String get profileHeaderTitle => 'පැතිකඩ';
@@ -945,7 +921,7 @@ class AppLocalizationsSi extends AppLocalizations {
       days,
       locale: localeName,
       other: 'දින $days කට පෙර',
-      one: 'දින 1 කට පෙර',
+      one: 'දින $days කට පෙර',
     );
     return '$_temp0';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ළඟදීම කල් ඉකුත් වේ',
-      one: '1 ළඟදීම කල් ඉකුත් වේ',
+      one: '$count ළඟදීම කල් ඉකුත් වේ',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get noRecordsTomorrow => 'හෙට කිසිවක් කල් ඉකුත් නොවේ';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName දින $daysකින් කල් ඉකුත් වේ',
-      one: '$recordName හෙට කල් ඉකුත් වේ',
-      zero: '$recordName අද කල් ඉකුත් වේ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, ඔබේ $recordName $date දින කල් ඉකුත් වේ. කල්තියා අලුත් කිරීමෙන් නොකඩවා වලංගුභාවය සහතික වේ.',
-      one: '$firstName, ඔබේ $recordName හෙට කල් ඉකුත් වේ. එහි වලංගුභාවය නැති නොවන පරිදි දැන්ම අලුත් කරන්න.',
-      zero: '$firstName, ඔබේ $recordName අද කල් ඉකුත් වේ. ඔබ දැනටමත් එය අලුත් කළාද? එහි කල් ඉකුත්වීමේ දිනය යාවත්කාලීන කරන්න.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'අවසාන මතක් කිරීම: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'දින $daysකින්, $date දින',
-      one: 'හෙට',
-    );
-    return '$firstName, ඔබේ $recordName $_temp0 කල් ඉකුත් වේ. මෙය ඔබේ අවසාන මතක් කිරීමයි, එය අලුත් කරන්න හෝ එහි දිනය යාවත්කාලීන කරන්න.';
   }
 
   @override
@@ -1566,7 +1507,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'වාර්තා $count',
-      one: 'වාර්තා 1',
+      one: 'වාර්තා $count',
       zero: 'වාර්තා නැත',
     );
     return '$_temp0';
@@ -1622,7 +1563,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count දෙනෙකු දක්වා',
-      one: '1 දෙනෙකු දක්වා',
+      one: '$count දෙනෙකු දක්වා',
     );
     return '$_temp0';
   }
@@ -1639,7 +1580,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count දෙනෙකු දක්වා එක් කරන්න',
-      one: '1 දෙනෙකු එක් කරන්න',
+      one: '$count දෙනෙකු එක් කරන්න',
     );
     return '$_temp0';
   }
@@ -2223,7 +2164,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'වාර්තා $count',
-      one: 'වාර්තා 1',
+      one: 'වාර්තා $count',
     );
     return '$_temp0';
   }
@@ -2343,7 +2284,7 @@ class AppLocalizationsSi extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ගමනේ $days වන දිනයේ',
-      one: 'ගමනේ 1 වන දිනයේ',
+      one: 'ගමනේ $days වන දිනයේ',
       zero: 'ඔබ පිටත් වන දිනයේම',
     );
     return '$name $date දින කල් ඉකුත් වේ, $_temp0.';
@@ -2743,7 +2684,7 @@ class AppLocalizationsSi extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ඡායාරූප $count',
-      one: 'ඡායාරූප 1',
+      one: 'ඡායාරූප $count',
     );
     return '$_temp0';
   }
@@ -8275,4 +8216,204 @@ class AppLocalizationsSi extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'සිහිකැඳවීම: $name $date දින කල් ඉකුත් වේ';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName අද කල් ඉකුත් වේ';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName හෙට කල් ඉකුත් වේ';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName දින $days කින් කල් ඉකුත් වේ',
+      one: '$recordName දින $days කින් කල් ඉකුත් වේ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName කල් ඉකුත් වී ඇත';
+  }
+
+  @override
+  String get remLockedTitle => 'අගුළු දැමූ වාර්තාවකට ඔබේ අවධානය අවශ්‍යයි';
+
+  @override
+  String remLockedBody(String date) {
+    return 'එහි දිනය $date. කුමන වාර්තාවදැයි බැලීමට Vaultara අගුළු හරින්න.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'ඔබේ \"$recordName\" වාර්තාව අද කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'ඔබේ \"$recordName\" වාර්තාව හෙට කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'ඔබේ \"$recordName\" වාර්තාව $date දින කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, ඔබේ \"$recordName\" වාර්තාව අද කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, ඔබේ \"$recordName\" වාර්තාව හෙට කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, ඔබේ \"$recordName\" වාර්තාව $date දින කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: \"$recordName\" වාර්තාව අද කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: \"$recordName\" වාර්තාව හෙට කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" වාර්තාව $date දින කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'ඔබේ \"$recordName\" වාර්තාව $date දින කල් ඉකුත් විය.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" වාර්තාව $date දින කල් ඉකුත් විය.';
+  }
+
+  @override
+  String get remTipToday => 'දැනටමත් අලුත් කළාද? එහි දිනය යාවත්කාලීන කරන්න.';
+
+  @override
+  String get remTipTomorrow => 'කල් ඉකුත් නොවන ලෙස දැන්ම අලුත් කරන්න.';
+
+  @override
+  String get remTipEarly => 'කලින් අලුත් කිරීම ඔබව ආරක්ෂිතව තබයි.';
+
+  @override
+  String get remTipLast => 'කල් ඉකුත් වීමට පෙර ඔබේ අවසාන සිහිකැඳවීම මෙයයි.';
+
+  @override
+  String get remTipExpired => 'අලුත් කරන්න, නැතහොත් දැනටමත් කර ඇත්නම් දිනය යාවත්කාලීන කරන්න.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" අලුත් කිරීම ආරම්භ කිරීමට කාලයයි. එය $date දින කල් ඉකුත් වේ, එබැවින් දැන් ආරම්භ කළොත් ඔබට ප්‍රමාණවත් කාලයක් ලැබේ.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) අලුත් කිරීම ආරම්භ කිරීමට කාලයයි. එය $date දින කල් ඉකුත් වේ, එබැවින් දැන් ආරම්භ කළොත් ප්‍රමාණවත් කාලයක් ඇත.';
+  }
+
+  @override
+  String get notifChannelName => 'කල් ඉකුත් වීමේ සිහිකැඳවීම්';
+
+  @override
+  String get notifChannelDescription => 'ඔබේ වාර්තා කල් ඉකුත් වීමට පෙර සිහිකැඳවීම්';
+
+  @override
+  String get notifTestTitle => 'පරීක්ෂණ දැනුම්දීම';
+
+  @override
+  String get notifTestBody => 'Vaultara සිහිකැඳවීම් මෙලෙස පැමිණේ.';
+
+  @override
+  String get notifTestAction => 'පරීක්ෂණ දැනුම්දීමක් යවන්න';
+
+  @override
+  String get notifTestSubtitle => 'සිහිකැඳවීම් මෙම දුරකථනයට ළඟා වේදැයි පරීක්ෂා කරන්න';
+
+  @override
+  String get notifTestSent => 'පරීක්ෂණය යැව්වා. තත්පර කිහිපයකින් පැමිණිය යුතුයි.';
+
+  @override
+  String get notifAfterExpiryTitle => 'වාර්තාවක් කල් ඉකුත් වූ පසු මතක් කරන්න';
+
+  @override
+  String get notifAfterExpirySubtitle => 'දින 3 සහ 14 කට පසු, අලුත් කර නැත්නම්';
+
+  @override
+  String get notifWeeklyTitle => 'සඳුදා සාරාංශය';
+
+  @override
+  String get notifWeeklySubtitle => 'එම සතියේ යමක් කල් ඉකුත් වන විට සඳුදා උදෑසන පණිවිඩයක්';
+
+  @override
+  String get notifPushSection => 'පවුල සහ යාවත්කාලීන';
+
+  @override
+  String get notifHouseholdTitle => 'බෙදාගත් වාර්තා';
+
+  @override
+  String get notifHouseholdSubtitle => 'බෙදාගත් වාර්තාවක් කල් ඉකුත් වීමට ආසන්නව කිසිවෙක් අලුත් නොකළ විට';
+
+  @override
+  String get notifUpdatesTitle => 'ඔබ ඉල්ලූ යාවත්කාලීන';
+
+  @override
+  String get notifUpdatesSubtitle => 'යමෙක් වාර්තාවක නව විස්තර එවූ විට';
+
+  @override
+  String get notifSecurityNote => 'ඔබේ ගිණුමට නව පිවිසීම් ගැන ඇඟවීම් සැමවිටම යවනු ලැබේ.';
+
+  @override
+  String get notifIosHelpTitle => 'සිහිකැඳවීම් ලැබෙන්නේ නැද්ද?';
+
+  @override
+  String get notifIosHelpSubtitle => 'ඔබේ iPhone සැකසීම් පරීක්ෂා කරන්න';
+
+  @override
+  String get notifIosHelpStep1 => 'සැකසීම්, පසුව දැනුම්දීම්, පසුව Vaultara විවෘත කර, දැනුම්දීම්වලට ඉඩ දෙන්න ක්‍රියාත්මක කරන්න.';
+
+  @override
+  String get notifIosHelpStep2 => 'අගුළු තිරය, දැනුම්දීම් මධ්‍යස්ථානය සහ බැනර් ක්‍රියාත්මක කරන්න.';
+
+  @override
+  String get notifIosHelpStep3 => 'ඔබ Focus භාවිත කරන්නේ නම්, ඉඩ දුන් යෙදුම්වලට Vaultara එක් කරන්න.';
+
+  @override
+  String get notifIosHelpStep4 => 'සති කිහිපයකට වරක් Vaultara විවෘත කරන්න. iPhone ඉදිරි සිහිකැඳවීම් සීමිත ගණනක් පමණක් තබා ගනී, යෙදුම විවෘත කිරීමෙන් ඊළඟ ඒවා සැලසුම් වේ.';
+
+  @override
+  String get homeNextUpEmpty => 'ඉක්මනින් කිසිවක් කල් ඉකුත් නොවේ. සියල්ල සූදානම්.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දින 30 තුළ $count',
+      one: 'දින 30 තුළ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'අමුණා ඇති කාණ්ඩ';
 }
