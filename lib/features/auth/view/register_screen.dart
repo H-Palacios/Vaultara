@@ -1,27 +1,17 @@
-import 'dart:async';
-
-import 'package:vaultara/core/data/user_name.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/core/navigation/navigator_key.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/theme/app_themes.dart';
-import 'package:vaultara/features/auth/services/biometric_onboarding_service.dart';
-import 'package:vaultara/features/auth/services/email_verification_service.dart';
-import 'package:vaultara/features/auth/logic/register_error_mapper.dart';
+import 'package:vaultara/features/auth/services/sign_up_service.dart';
+import 'package:vaultara/features/auth/view/sign_up_code_screen.dart';
+import 'package:vaultara/features/auth/view/widget/email_typo_hint.dart';
+import 'package:vaultara/features/auth/view/widget/social_sign_in_buttons.dart';
 import 'package:vaultara/features/auth/logic/password_rules.dart';
 import 'package:vaultara/core/util/text_normaliser.dart';
-import 'package:vaultara/features/auth/view/verify_email_screen.dart';
 import 'package:vaultara/shell/shell.dart';
 import 'package:vaultara/features/security/logic/pwned_passwords.dart';
-import 'package:vaultara/features/security/services/device_registry.dart';
-import 'package:vaultara/features/security/services/legal_consent.dart';
-import 'package:vaultara/features/security/services/session_guard.dart';
-import 'package:vaultara/features/security/services/strong_password_flag.dart';
 import 'package:vaultara/features/security/view/consent_sheets.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -196,66 +186,50 @@ class _RegisterScreenState extends State<RegisterScreen> {
         return;
       }
 
-      final credential = await FirebaseAuth.instance
-          .createUserWithEmailAndPassword(email: email, password: password);
-
-      final user = credential.user;
-
-      if (user != null) {
-        await FirebaseFirestore.instance.collection('users').doc(user.uid).set({
-          'firstName': first,
-          'lastName': last,
-          'fullName': '$first $last',
-          'email': email,
-          'createdAt': FieldValue.serverTimestamp(),
-          'consent': LegalConsent.currentConsent(),
-        }, SetOptions(merge: true));
-
-        // The account's display name and the saved first name were never
-        // set, so reminders and the greeting had no name to use.
-        await UserName.set(first);
-        unawaited(
-          user
-              .updateDisplayName('$first $last'.trim())
-              .catchError((Object _) {}),
-        );
-
-        await StrongPasswordFlag.mark(user.uid);
-        final signedInAt = await SessionGuard.markSignedIn(user: user);
-        unawaited(
-          DeviceRegistry.register(force: true, signedInAtMs: signedInAt),
-        );
-
-        await EmailVerificationService.sendCode(locale: loc.localeName);
-      }
-
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setBool(kIsNewUserKey, true);
+      // The server answers the same way whether or not this email already
+      // has an account, and emails the owner to say which it is.
+      await SignUpService.start(
+        email: email,
+        password: password,
+        locale: loc.localeName,
+      );
 
       if (!mounted) return;
-
       FocusManager.instance.primaryFocus?.unfocus();
 
-      Navigator.of(context).push(
+      await Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (_) => VerifyEmailScreen(onAuthenticated: _goToShell),
+          builder: (_) => SignUpCodeScreen(
+            email: email,
+            password: password,
+            firstName: first,
+            lastName: last,
+            onCreated: _goToShell,
+          ),
         ),
       );
-    } on FirebaseAuthException catch (e) {
+    } on SignUpException catch (e) {
       if (!mounted) return;
-
-      final uiErr = RegisterErrorMapper.fromFirebase(loc, e);
-
-      switch (uiErr.type) {
-        case RegisterUiErrorType.fieldEmail:
-          setState(() => emailErrorText = uiErr.message);
-          break;
-        case RegisterUiErrorType.fieldPassword:
-          setState(() => passwordErrorText = uiErr.message);
-          break;
-        case RegisterUiErrorType.modal:
-          await _showErrorModal(loc.createAccount, uiErr.message);
-          break;
+      switch (e.error) {
+        case SignUpError.invalidEmail:
+          setState(() => emailErrorText = loc.errorEmailInvalid);
+        case SignUpError.disposableEmail:
+          setState(() => emailErrorText = loc.signUpEmailNotAllowed);
+        case SignUpError.weakPassword:
+          setState(() {
+            showPasswordRuleErrors = true;
+            passwordErrorText = PasswordRules.ruleError(password, loc);
+          });
+        case SignUpError.tooMany:
+          await _showErrorModal(
+            loc.createAccount,
+            loc.authErrorTooManyRequests,
+          );
+        case SignUpError.network:
+          await _showErrorModal(loc.createAccount, loc.authErrorNetwork);
+        case SignUpError.invalidCode:
+        case SignUpError.failed:
+          await _showErrorModal(loc.createAccount, loc.authErrorSignInFailed);
       }
     } catch (_) {
       if (!mounted) return;
@@ -279,143 +253,158 @@ class _RegisterScreenState extends State<RegisterScreen> {
             child: SingleChildScrollView(
               keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               padding: const EdgeInsets.all(16),
-              child: Column(
-                children: [
-                  TextField(
-                    controller: firstNameController,
-                    focusNode: firstNameFocus,
-                    textInputAction: TextInputAction.next,
-                    onEditingComplete: () =>
-                        FocusScope.of(context).requestFocus(lastNameFocus),
-                    decoration: AppInputDecorations.field(
-                      context,
-                      labelText: loc.firstNameLabel,
-                      hintText: loc.firstNameHint,
-                      focused: firstNameFocus.hasFocus,
-                      errorText: firstNameErrorText,
+              child: AutofillGroup(
+                child: Column(
+                  children: [
+                    SocialSignInButtons(
+                      onSignedIn: _goToShell,
+                      enabled: !isBusy,
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: lastNameController,
-                    focusNode: lastNameFocus,
-                    textInputAction: TextInputAction.next,
-                    onEditingComplete: () =>
-                        FocusScope.of(context).requestFocus(emailFocus),
-                    decoration: AppInputDecorations.field(
-                      context,
-                      labelText: loc.lastNameLabel,
-                      hintText: loc.lastNameHint,
-                      focused: lastNameFocus.hasFocus,
-                      errorText: lastNameErrorText,
+                    TextField(
+                      controller: firstNameController,
+                      focusNode: firstNameFocus,
+                      autofillHints: const [AutofillHints.givenName],
+                      textCapitalization: TextCapitalization.words,
+                      textInputAction: TextInputAction.next,
+                      onEditingComplete: () =>
+                          FocusScope.of(context).requestFocus(lastNameFocus),
+                      decoration: AppInputDecorations.field(
+                        context,
+                        labelText: loc.firstNameLabel,
+                        hintText: loc.firstNameHint,
+                        focused: firstNameFocus.hasFocus,
+                        errorText: firstNameErrorText,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: emailController,
-                    focusNode: emailFocus,
-                    keyboardType: TextInputType.emailAddress,
-                    textInputAction: TextInputAction.next,
-                    onEditingComplete: () =>
-                        FocusScope.of(context).requestFocus(passwordFocus),
-                    decoration: AppInputDecorations.field(
-                      context,
-                      labelText: loc.emailLabel,
-                      hintText: loc.emailHint,
-                      focused: emailFocus.hasFocus,
-                      errorText: emailErrorText,
+                    const SizedBox(height: 12),
+                    TextField(
+                      controller: lastNameController,
+                      focusNode: lastNameFocus,
+                      autofillHints: const [AutofillHints.familyName],
+                      textCapitalization: TextCapitalization.words,
+                      textInputAction: TextInputAction.next,
+                      onEditingComplete: () =>
+                          FocusScope.of(context).requestFocus(emailFocus),
+                      decoration: AppInputDecorations.field(
+                        context,
+                        labelText: loc.lastNameLabel,
+                        hintText: loc.lastNameHint,
+                        focused: lastNameFocus.hasFocus,
+                        errorText: lastNameErrorText,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: passwordController,
-                    focusNode: passwordFocus,
-                    obscureText: !isPasswordVisible,
-                    onChanged: (_) => setState(() {}),
-                    textInputAction: TextInputAction.done,
-                    onEditingComplete: () {
-                      FocusManager.instance.primaryFocus?.unfocus();
-                      if (!isBusy && agreedToTerms) _handleRegister();
-                    },
-                    decoration: AppInputDecorations.field(
-                      context,
-                      labelText: loc.passwordLabel,
-                      hintText: loc.registerPasswordHint,
-                      focused: passwordFocus.hasFocus,
-                      errorText: passwordErrorText,
-                      suffixIcon: IconButton(
-                        tooltip: isPasswordVisible
-                            ? AppLocalizations.of(context)!.hidePassword
-                            : AppLocalizations.of(context)!.showPassword,
-                        icon: Icon(
-                          isPasswordVisible
-                              ? Icons.visibility_rounded
-                              : Icons.visibility_off_rounded,
-                        ),
-                        onPressed: () => setState(
-                          () => isPasswordVisible = !isPasswordVisible,
+                    const SizedBox(height: 12),
+                    TextField(
+                      controller: emailController,
+                      focusNode: emailFocus,
+                      keyboardType: TextInputType.emailAddress,
+                      autofillHints: const [AutofillHints.email],
+                      autocorrect: false,
+                      onChanged: (_) => setState(() {}),
+                      textInputAction: TextInputAction.next,
+                      onEditingComplete: () =>
+                          FocusScope.of(context).requestFocus(passwordFocus),
+                      decoration: AppInputDecorations.field(
+                        context,
+                        labelText: loc.emailLabel,
+                        hintText: loc.emailHint,
+                        focused: emailFocus.hasFocus,
+                        errorText: emailErrorText,
+                      ),
+                    ),
+                    EmailTypoHint(controller: emailController),
+                    const SizedBox(height: 12),
+                    TextField(
+                      controller: passwordController,
+                      autofillHints: const [AutofillHints.newPassword],
+                      focusNode: passwordFocus,
+                      obscureText: !isPasswordVisible,
+                      onChanged: (_) => setState(() {}),
+                      textInputAction: TextInputAction.done,
+                      onEditingComplete: () {
+                        FocusManager.instance.primaryFocus?.unfocus();
+                        if (!isBusy && agreedToTerms) _handleRegister();
+                      },
+                      decoration: AppInputDecorations.field(
+                        context,
+                        labelText: loc.passwordLabel,
+                        hintText: loc.registerPasswordHint,
+                        focused: passwordFocus.hasFocus,
+                        errorText: passwordErrorText,
+                        suffixIcon: IconButton(
+                          tooltip: isPasswordVisible
+                              ? AppLocalizations.of(context)!.hidePassword
+                              : AppLocalizations.of(context)!.showPassword,
+                          icon: Icon(
+                            isPasswordVisible
+                                ? Icons.visibility_rounded
+                                : Icons.visibility_off_rounded,
+                          ),
+                          onPressed: () => setState(
+                            () => isPasswordVisible = !isPasswordVisible,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: _PasswordRuleList(
-                      password: passwordController.text,
-                      showErrors: showPasswordRuleErrors,
+                    const SizedBox(height: 12),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: _PasswordRuleList(
+                        password: passwordController.text,
+                        showErrors: showPasswordRuleErrors,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Checkbox(
-                        value: agreedToTerms,
-                        onChanged: isBusy
+                    const SizedBox(height: 12),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Checkbox(
+                          value: agreedToTerms,
+                          onChanged: isBusy
+                              ? null
+                              : (value) => setState(
+                                  () => agreedToTerms = value ?? false,
+                                ),
+                        ),
+                        const SizedBox(width: 4),
+                        const Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.only(top: 12),
+                            child: LegalAgreementText(),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+                    SizedBox(
+                      width: double.infinity,
+                      height: 52,
+                      child: FilledButton(
+                        style: FilledButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(999),
+                          ),
+                          textStyle: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        onPressed: isBusy || !agreedToTerms
                             ? null
-                            : (value) => setState(
-                                () => agreedToTerms = value ?? false,
-                              ),
+                            : _handleRegister,
+                        child: isBusy
+                            ? const SizedBox(
+                                width: 20,
+                                height: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2.5,
+                                ),
+                              )
+                            : Text(loc.createAccount),
                       ),
-                      const SizedBox(width: 4),
-                      const Expanded(
-                        child: Padding(
-                          padding: EdgeInsets.only(top: 12),
-                          child: LegalAgreementText(),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 12),
-                  SizedBox(
-                    width: double.infinity,
-                    height: 52,
-                    child: FilledButton(
-                      style: FilledButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(999),
-                        ),
-                        textStyle: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      onPressed: isBusy || !agreedToTerms
-                          ? null
-                          : _handleRegister,
-                      child: isBusy
-                          ? const SizedBox(
-                              width: 20,
-                              height: 20,
-                              child: CircularProgressIndicator(
-                                strokeWidth: 2.5,
-                              ),
-                            )
-                          : Text(loc.createAccount),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           );
