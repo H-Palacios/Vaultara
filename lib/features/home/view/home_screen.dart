@@ -10,7 +10,8 @@ import 'package:vaultara/features/auth/services/biometric_onboarding_service.dar
 import 'package:vaultara/features/home/data/home_overview.dart';
 import 'package:vaultara/features/home/data/home_overview_loader.dart';
 import 'package:vaultara/features/home/logic/home_welcome_message.dart';
-import 'package:vaultara/features/home/view/widgets/home_summary_section.dart';
+import 'package:vaultara/features/home/view/widgets/home_next_up.dart';
+import 'package:vaultara/features/home/view/widgets/home_pinned_categories.dart';
 import 'package:vaultara/features/records/view/search/global_search_sheet.dart';
 import 'package:vaultara/features/profile/view/profile_screen.dart';
 import 'package:vaultara/features/profile/view/widgets/my_avatar.dart';
@@ -133,69 +134,74 @@ class HomeScreenState extends State<HomeScreen>
     final loc = AppLocalizations.of(context)!;
 
     final overview = HomeOverviewLoader.cached ?? const HomeOverview.empty();
-    final isLoading = HomeOverviewLoader.cached == null;
 
     return SafeArea(
-      child: ListView(
-        controller: _scrollController,
-        padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-        children: [
-          Row(
-            children: [
-              Expanded(
-                child: SearchField(
-                  hintText: loc.searchRecords,
-                  onTap: () => GlobalSearchSheet.open(
-                    context,
-                    isPremium: widget.isPremium,
+      child: RefreshIndicator(
+        onRefresh: () => HomeOverviewLoader.load(force: true),
+        child: ListView(
+          controller: _scrollController,
+          physics: const AlwaysScrollableScrollPhysics(),
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: SearchField(
+                    hintText: loc.searchRecords,
+                    onTap: () => GlobalSearchSheet.open(
+                      context,
+                      isPremium: widget.isPremium,
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(width: 4),
-              IconButton(
-                tooltip: loc.assistantTitle,
-                onPressed: () =>
-                    openAskVaultara(context, isPremium: widget.isPremium),
-                icon: Icon(
-                  Icons.auto_awesome_rounded,
-                  color: scheme.primary,
-                  size: 26,
+                const SizedBox(width: 4),
+                IconButton(
+                  tooltip: loc.assistantTitle,
+                  onPressed: () =>
+                      openAskVaultara(context, isPremium: widget.isPremium),
+                  icon: Icon(
+                    Icons.auto_awesome_rounded,
+                    color: scheme.primary,
+                    size: 26,
+                  ),
                 ),
-              ),
-              IconButton(
-                tooltip: loc.profileHeaderTitle,
-                onPressed: _openProfile,
-                icon: const MyAvatar(
-                  size: 32,
-                  fallback: InitialsAvatar(size: 32),
+                IconButton(
+                  tooltip: loc.profileHeaderTitle,
+                  onPressed: _openProfile,
+                  icon: const MyAvatar(
+                    size: 32,
+                    fallback: InitialsAvatar(size: 32),
+                  ),
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 20),
-          Text(
-            HomeWelcomeMessage.title(loc, overview),
-            style: const TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.w800,
-              height: 1.2,
+              ],
             ),
-          ),
-          if (_showTourBanner) ...[
+            const SizedBox(height: 20),
+            Text(
+              HomeWelcomeMessage.title(loc, overview),
+              style: const TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.w800,
+                height: 1.2,
+              ),
+            ),
+            if (_showTourBanner) ...[
+              const SizedBox(height: 16),
+              _TourBanner(onDismiss: _dismissTourBanner, onStart: _startTour),
+            ] else
+              WhatsNewCard(newUser: widget.isNewUser),
+            const SizedBox(height: 20),
+            HomeNextUp(
+              totals: overview.totals,
+              isPremium: widget.isPremium,
+              onChanged: () => HomeOverviewLoader.recompute(),
+            ),
             const SizedBox(height: 16),
-            _TourBanner(onDismiss: _dismissTourBanner, onStart: _startTour),
-          ] else
-            WhatsNewCard(newUser: widget.isNewUser),
-          const SizedBox(height: 20),
-          HomeSummarySection(
-            totals: overview.totals,
-            isLoading: isLoading,
-            isPremium: widget.isPremium,
-          ),
-          const SizedBox(height: 16),
-          TravelCheckCard(isPremium: widget.isPremium),
-          const LifePlansHomeSection(),
-        ],
+            HomePinnedCategories(isPremium: widget.isPremium),
+            const SizedBox(height: 16),
+            TravelCheckCard(isPremium: widget.isPremium),
+            const LifePlansHomeSection(),
+          ],
+        ),
       ),
     );
   }

@@ -9,6 +9,7 @@ import 'package:vaultara/core/data/user_data_watcher.dart';
 import 'package:vaultara/core/data/item_lifecycle_manager.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/data/repositories/category_repository.dart';
+import 'package:vaultara/core/data/user_name.dart';
 import 'package:vaultara/features/home/data/home_overview.dart';
 import 'package:vaultara/features/home/logic/overview_calculator.dart';
 
@@ -18,7 +19,7 @@ class HomeOverviewLoader {
   static HomeOverview? _cached;
   static String? _cachedUserId;
 
-  static const String _cacheVersion = 'v3';
+  static const String _cacheVersion = 'v4';
 
   static UserDataWatcher? _watcher;
 
@@ -113,29 +114,39 @@ class HomeOverviewLoader {
 
     _cachedUserId = user.uid;
 
-    if (force) {
-      RecordRepository.clearForSignOut();
-      CategoryRepository.clearForSignOut();
+    // A refresh reloads in place. It used to sign the record store out and
+    // in, which cancelled every scheduled reminder (including "Remind me
+    // tomorrow") and locked records unlocked this session, every time the
+    // user document changed.
+    if (force && RecordRepository.isLoaded) {
+      await CategoryRepository.loadForCurrentUser(force: true);
+      await RecordRepository.reload();
+    } else {
+      await RecordRepository.loadForCurrentUser();
+      await CategoryRepository.loadForCurrentUser();
     }
-
-    await RecordRepository.loadForCurrentUser();
-    await CategoryRepository.loadForCurrentUser();
 
     final userDoc = await FirebaseFirestore.instance
         .collection('users')
         .doc(user.uid)
         .get();
+    final data = userDoc.data();
+    await RecordRepository.refreshUserName(data, user.displayName);
 
-    final fullName = (userDoc.data()?['fullName'] ?? '').toString().trim();
+    final fullName = (data?['fullName'] ?? '').toString().trim();
+    final firstName = UserName.pick(data, user.displayName);
 
     final prefs = await SharedPreferences.getInstance();
-    final isFirstLogin =
-        await _resolveFirstLogin(prefs, user.uid, persist: true);
+    final isFirstLogin = await _resolveFirstLogin(
+      prefs,
+      user.uid,
+      persist: true,
+    );
 
     final overview = OverviewCalculator.build(
       records: ItemLifecycleManager.getAllItemsFlat(),
-      knownCategoryKeys: CategoryRepository.getAll().map((c) => c.key),
       fullName: fullName,
+      firstName: firstName,
       isFirstLogin: isFirstLogin,
     );
 
@@ -144,6 +155,24 @@ class HomeOverviewLoader {
     await _saveCache(user.uid, overview);
 
     return overview;
+  }
+
+  /// Works the counts out again from the records already loaded, without
+  /// going to the network, after a change made on this phone such as a
+  /// renewal from the home screen.
+  static Future<void> recompute() async {
+    final user = FirebaseAuth.instance.currentUser;
+    final current = _cached;
+    if (user == null || current == null || !RecordRepository.isLoaded) return;
+    final overview = OverviewCalculator.build(
+      records: ItemLifecycleManager.getAllItemsFlat(),
+      fullName: current.fullName,
+      firstName: current.firstName,
+      isFirstLogin: current.isFirstLogin,
+    );
+    _cached = overview;
+    revision.value++;
+    await _saveCache(user.uid, overview);
   }
 
   static Future<bool> _resolveFirstLogin(
