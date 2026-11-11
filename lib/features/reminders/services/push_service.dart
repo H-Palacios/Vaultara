@@ -51,13 +51,21 @@ class PushService {
 
       _subscriptions
         ..add(FirebaseMessaging.onMessage.listen(_showForeground))
-        ..add(FirebaseMessaging.onMessageOpenedApp
-            .listen((message) => PushRouter.open(message.data)))
-        ..add(FirebaseMessaging.instance.onTokenRefresh
-            .listen((token) => unawaited(sync(token: token))))
-        ..add(FirebaseAuth.instance.userChanges().listen((user) {
-          if (user != null) unawaited(sync());
-        }));
+        ..add(
+          FirebaseMessaging.onMessageOpenedApp.listen(
+            (message) => PushRouter.open(message.data),
+          ),
+        )
+        ..add(
+          FirebaseMessaging.instance.onTokenRefresh.listen(
+            (token) => unawaited(sync(token: token)),
+          ),
+        )
+        ..add(
+          FirebaseAuth.instance.userChanges().listen((user) {
+            if (user != null) unawaited(sync());
+          }),
+        );
 
       _lifecycle ??= AppLifecycleListener(onResume: () => unawaited(sync()));
 
@@ -68,9 +76,7 @@ class PushService {
 
   static Future<void> sync({String? token}) {
     if (!_supported) return Future<void>.value();
-    _chain = _chain
-        .then((_) => _sync(token))
-        .catchError((Object _) {});
+    _chain = _chain.then((_) => _sync(token)).catchError((Object _) {});
     return _chain;
   }
 
@@ -88,7 +94,8 @@ class PushService {
 
   static Future<String> _deviceId(SharedPreferences prefs) async {
     final existing = prefs.getString(_deviceIdKey);
-    if (existing != null && RegExp(r'^[A-Za-z0-9]{16,64}$').hasMatch(existing)) {
+    if (existing != null &&
+        RegExp(r'^[A-Za-z0-9]{16,64}$').hasMatch(existing)) {
       return existing;
     }
     final random = Random.secure();
@@ -103,12 +110,11 @@ class PushService {
   static DocumentReference<Map<String, dynamic>> _deviceRef(
     String uid,
     String deviceId,
-  ) =>
-      FirebaseFirestore.instance
-          .collection('users')
-          .doc(uid)
-          .collection('devices')
-          .doc(deviceId);
+  ) => FirebaseFirestore.instance
+      .collection('users')
+      .doc(uid)
+      .collection('devices')
+      .doc(deviceId);
 
   static Future<void> _sync(String? givenToken) async {
     final user = FirebaseAuth.instance.currentUser;
@@ -127,12 +133,14 @@ class PushService {
       return;
     }
 
-    if (Platform.isIOS && await FirebaseMessaging.instance.getAPNSToken() == null) {
+    if (Platform.isIOS &&
+        await FirebaseMessaging.instance.getAPNSToken() == null) {
       return;
     }
 
     final token = givenToken ?? await FirebaseMessaging.instance.getToken();
-    if (token == null || token.isEmpty || token.length > _maxTokenLength) return;
+    if (token == null || token.isEmpty || token.length > _maxTokenLength)
+      return;
 
     final locale = _locale();
     final platform = Platform.isIOS ? 'ios' : 'android';
@@ -145,12 +153,14 @@ class PushService {
       return;
     }
 
-    await _deviceRef(uid, deviceId).set(<String, dynamic>{
-      'token': token,
-      'platform': platform,
-      'locale': locale,
-      'updatedAt': FieldValue.serverTimestamp(),
-    }).timeout(_timeout);
+    await _deviceRef(uid, deviceId)
+        .set(<String, dynamic>{
+          'token': token,
+          'platform': platform,
+          'locale': locale,
+          'updatedAt': FieldValue.serverTimestamp(),
+        })
+        .timeout(_timeout);
 
     await prefs.setString(_syncedKey(uid), signature);
     await prefs.setInt(
@@ -170,36 +180,33 @@ class PushService {
         await prefs.remove(_syncedKey(user.uid));
         await prefs.remove(_syncedAtKey(user.uid));
         if (deviceId != null) {
-          tasks.add(_deviceRef(user.uid, deviceId)
-              .delete()
-              .timeout(_signOutTimeout)
-              .catchError((Object _) {}));
+          tasks.add(
+            _deviceRef(
+              user.uid,
+              deviceId,
+            ).delete().timeout(_signOutTimeout).catchError((Object _) {}),
+          );
         }
       }
-      tasks.add(FirebaseMessaging.instance
-          .deleteToken()
-          .timeout(_signOutTimeout)
-          .catchError((Object _) {}));
+      tasks.add(
+        FirebaseMessaging.instance
+            .deleteToken()
+            .timeout(_signOutTimeout)
+            .catchError((Object _) {}),
+      );
       await Future.wait(tasks);
     } catch (_) {}
   }
 
   static Future<void> _ensureChannel() async {
     if (!Platform.isAndroid) return;
-    final android = _plugin.resolvePlatformSpecificImplementation<
-        AndroidFlutterLocalNotificationsPlugin>();
-    await android?.createNotificationChannel(
-      const AndroidNotificationChannel(
-        kNotificationChannelId,
-        kNotificationChannelName,
-        description: kNotificationChannelDescription,
-        importance: Importance.high,
-      ),
-    );
+    // Named in the app's language; it used to be created in English here.
+    await ReminderScheduler.localiseChannel();
   }
 
   static int _idFor(RemoteMessage message) {
-    final key = message.data['recordId']?.toString() ??
+    final key =
+        message.data['recordId']?.toString() ??
         message.data['householdId']?.toString() ??
         message.messageId ??
         '';
@@ -226,8 +233,9 @@ class PushService {
         NotificationDetails(
           android: AndroidNotificationDetails(
             kNotificationChannelId,
-            kNotificationChannelName,
-            channelDescription: kNotificationChannelDescription,
+            ReminderScheduler.channelLoc().notifChannelName,
+            channelDescription:
+                ReminderScheduler.channelLoc().notifChannelDescription,
             importance: Importance.high,
             priority: Priority.high,
             icon: kNotificationIcon,

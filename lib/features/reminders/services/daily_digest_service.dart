@@ -130,10 +130,13 @@ class DailyDigestService {
     final out = <int, List<TrackedItem>>{};
     for (final record in records) {
       if (record.isDeleted) continue;
-      final start =
-          ReminderScheduler.seriesOffset(record.reminderOffsetDays, record.leadDays);
+      final start = ReminderScheduler.seriesOffset(
+        record.reminderOffsetDays,
+        record.leadDays,
+      );
       if (start == null) continue;
-      final steps = ReminderScheduler.seriesSteps(
+      final steps =
+          ReminderScheduler.seriesSteps(
             record.reminderOffsetDays,
             record.leadDays,
           ) ??
@@ -177,21 +180,24 @@ class DailyDigestService {
     SharedPreferences prefs,
     String uid,
     Map<int, _DayPlan> plan,
-  ) =>
-      prefs.setString(
-        _seenKey(uid),
-        jsonEncode(<String, Object>{
-          for (final entry in plan.entries) '${entry.key}': entry.value.toJson(),
-        }),
-      );
+  ) => prefs.setString(
+    _seenKey(uid),
+    jsonEncode(<String, Object>{
+      for (final entry in plan.entries) '${entry.key}': entry.value.toJson(),
+    }),
+  );
 
-  static Future<void> _markTodaySeen(SharedPreferences prefs, String uid) async {
+  static Future<void> _markTodaySeen(
+    SharedPreferences prefs,
+    String uid,
+  ) async {
     if (!RecordRepository.isLoaded) return;
     final now = DateTime.now();
     final today = Dates.only(now);
     final at = await ReminderTimeService.getTime();
     if (_at(today, at).isAfter(now)) return;
-    final due = _dueByDay(RecordRepository.allActive(), today)[0] ??
+    final due =
+        _dueByDay(RecordRepository.allActive(), today)[0] ??
         const <TrackedItem>[];
     final todayKey = _epochDay(today);
     final plan = _readPlan(prefs, uid)
@@ -206,9 +212,11 @@ class DailyDigestService {
   static (String, String) _text(AppLocalizations loc, List<TrackedItem> due) {
     final names = due
         .take(_maxNames)
-        .map((r) => r.locked
-            ? loc.dailyDigestLockedRecord
-            : RecordDisplayName.of(r, loc))
+        .map(
+          (r) => r.locked
+              ? loc.dailyDigestLockedRecord
+              : RecordDisplayName.of(r, loc),
+        )
         .join(', ');
     final rest = due.length - _maxNames;
     final body = rest > 0
@@ -217,11 +225,12 @@ class DailyDigestService {
     return (loc.dailyDigestTitle(due.length), body);
   }
 
-  static NotificationDetails _details(String body) => NotificationDetails(
+  static NotificationDetails _details(AppLocalizations loc, String body) =>
+      NotificationDetails(
         android: AndroidNotificationDetails(
           kNotificationChannelId,
-          kNotificationChannelName,
-          channelDescription: kNotificationChannelDescription,
+          loc.notifChannelName,
+          channelDescription: loc.notifChannelDescription,
           importance: Importance.high,
           priority: Priority.high,
           icon: kNotificationIcon,
@@ -245,7 +254,7 @@ class DailyDigestService {
       text.$1,
       text.$2,
       tz.TZDateTime.from(fire, tz.local),
-      _details(text.$2),
+      _details(loc, text.$2),
       payload: PushRouter.homePayload,
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
       uiLocalNotificationDateInterpretation:
@@ -332,11 +341,11 @@ class _DayPlan {
   });
 
   factory _DayPlan.empty() => const _DayPlan(
-        ids: <String>{},
-        done: <String>{},
-        at: null,
-        notificationId: null,
-      );
+    ids: <String>{},
+    done: <String>{},
+    at: null,
+    notificationId: null,
+  );
 
   factory _DayPlan.fromJson(Map<dynamic, dynamic> json) {
     Set<String> read(Object? value) =>
@@ -371,18 +380,17 @@ class _DayPlan {
     Set<String>? ids,
     Set<String>? done,
     bool clearAt = false,
-  }) =>
-      _DayPlan(
-        ids: ids ?? this.ids,
-        done: done ?? this.done,
-        at: clearAt ? null : at,
-        notificationId: notificationId,
-      );
+  }) => _DayPlan(
+    ids: ids ?? this.ids,
+    done: done ?? this.done,
+    at: clearAt ? null : at,
+    notificationId: notificationId,
+  );
 
   Map<String, Object?> toJson() => <String, Object?>{
-        'ids': ids.toList(),
-        'done': done.toList(),
-        'at': at,
-        'nid': notificationId,
-      };
+    'ids': ids.toList(),
+    'done': done.toList(),
+    'at': at,
+    'nid': notificationId,
+  };
 }
