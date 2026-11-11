@@ -27,6 +27,8 @@ class SecurityCheckupCard extends StatelessWidget {
         return Icons.key_rounded;
       case CheckupItem.strongPassword:
         return Icons.password_rounded;
+      case CheckupItem.backupCodes:
+        return Icons.pin_rounded;
     }
   }
 
@@ -44,6 +46,8 @@ class SecurityCheckupCard extends StatelessWidget {
         return loc.secCheckRecoveryKey;
       case CheckupItem.strongPassword:
         return loc.secCheckPassword;
+      case CheckupItem.backupCodes:
+        return loc.backupCodesTitle;
     }
   }
 
@@ -56,6 +60,7 @@ class SecurityCheckupCard extends StatelessWidget {
       case CheckupItem.photoEncryption:
         return loc.secCheckActionTurnOn;
       case CheckupItem.recoveryKey:
+      case CheckupItem.backupCodes:
         return loc.secCheckActionSetUp;
       case CheckupItem.strongPassword:
         return loc.secCheckActionChange;
@@ -130,8 +135,9 @@ class SecurityCheckupCard extends StatelessWidget {
                   child: LinearProgressIndicator(
                     value: data.progress,
                     minHeight: 6,
-                    backgroundColor:
-                        scheme.outlineVariant.withValues(alpha: 0.4),
+                    backgroundColor: scheme.outlineVariant.withValues(
+                      alpha: 0.4,
+                    ),
                   ),
                 ),
                 if (data.complete) ...[
@@ -198,11 +204,7 @@ class _CheckupRow extends StatelessWidget {
               ),
             ),
           ),
-          if (!done)
-            TextButton(
-              onPressed: onAction,
-              child: Text(actionLabel),
-            ),
+          if (!done) TextButton(onPressed: onAction, child: Text(actionLabel)),
         ],
       ),
     );

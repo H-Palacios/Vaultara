@@ -1,5 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:local_auth/local_auth.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -12,6 +14,9 @@ import 'package:vaultara/features/platform/sensitive_clipboard.dart';
 import 'package:vaultara/features/security/services/security_events.dart';
 import 'package:vaultara/features/auth/services/two_step_service.dart';
 import 'package:vaultara/features/auth/view/two_step/confirm_identity_sheet.dart';
+import 'package:vaultara/features/auth/services/biometric_preference.dart';
+import 'package:vaultara/features/auth/view/two_step/backup_codes_screen.dart';
+import 'package:vaultara/features/security/view/devices_screen.dart';
 
 enum _SetupStep { confirm, loading, scan, done, failed }
 
@@ -32,6 +37,11 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
   String? _codeError;
   String? _confirmError;
   String? _failure;
+
+  // The steps after two-step is on: backup codes, app lock, other devices.
+  bool _codesSaved = false;
+  bool _appLockOn = false;
+  bool _appLockChecked = false;
 
   @override
   void initState() {
@@ -158,6 +168,53 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
     }
   }
 
+  Future<void> _paste() async {
+    final data = await Clipboard.getData(Clipboard.kTextPlain);
+    final digits = (data?.text ?? '').replaceAll(RegExp(r'\D'), '');
+    if (digits.length < 6 || !mounted) return;
+    _codeController.text = digits.substring(0, 6);
+    await _finish();
+  }
+
+  Future<void> _openBackupCodes() async {
+    final saved = await Navigator.of(context).push<bool>(
+      MaterialPageRoute(
+        builder: (_) => const BackupCodesScreen(afterSetup: true),
+      ),
+    );
+    if (saved == true && mounted) setState(() => _codesSaved = true);
+  }
+
+  Future<void> _checkAppLock() async {
+    if (_appLockChecked) return;
+    _appLockChecked = true;
+    final on = await BiometricPreference.isEnabled();
+    if (mounted) setState(() => _appLockOn = on);
+  }
+
+  Future<void> _turnOnAppLock() async {
+    final loc = AppLocalizations.of(context)!;
+    var didAuth = false;
+    try {
+      didAuth = await LocalAuthentication().authenticate(
+        localizedReason: loc.profile_biometric_enable_reason,
+        options: const AuthenticationOptions(biometricOnly: false),
+      );
+    } catch (_) {
+      didAuth = false;
+    }
+    if (!didAuth) return;
+    await BiometricPreference.setEnabled(true);
+    SecurityEvents.log(SecurityEvents.appLockEnabled);
+    if (mounted) setState(() => _appLockOn = true);
+  }
+
+  Future<void> _openDevices() async {
+    await Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: (_) => const DevicesScreen()));
+  }
+
   Future<void> _openInApp() async {
     final loc = AppLocalizations.of(context)!;
     final setup = _setup;
@@ -191,9 +248,8 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
     );
   }
 
-  String _groupedKey(String key) => key
-      .replaceAllMapped(RegExp(r'.{1,4}'), (m) => '${m.group(0)} ')
-      .trim();
+  String _groupedKey(String key) =>
+      key.replaceAllMapped(RegExp(r'.{1,4}'), (m) => '${m.group(0)} ').trim();
 
   @override
   Widget build(BuildContext context) {
@@ -248,9 +304,7 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
     final scheme = Theme.of(context).colorScheme;
     final setup = _setup!;
 
-    return SecureScreen(
-      child: _scanColumn(loc, scheme, setup),
-    );
+    return SecureScreen(child: _scanColumn(loc, scheme, setup));
   }
 
   Widget _scanColumn(
@@ -265,6 +319,15 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              Text(
+                loc.twoStepStepOf(1, 3),
+                style: TextStyle(
+                  fontSize: 12.5,
+                  fontWeight: FontWeight.w700,
+                  color: scheme.primary,
+                ),
+              ),
+              const SizedBox(height: 6),
               _StepTitle(number: 1, text: loc.twoStepScanTitle),
               const SizedBox(height: 6),
               Text(
@@ -290,6 +353,17 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
                     size: 200,
                     backgroundColor: Colors.white,
                   ),
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                loc.twoStepAccountLabel(
+                  FirebaseAuth.instance.currentUser?.email ?? '',
+                ),
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 12.5,
+                  color: scheme.onSurfaceVariant,
                 ),
               ),
               const SizedBox(height: 12),
@@ -342,10 +416,19 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              Text(
+                loc.twoStepStepOf(2, 3),
+                style: TextStyle(
+                  fontSize: 12.5,
+                  fontWeight: FontWeight.w700,
+                  color: scheme.primary,
+                ),
+              ),
+              const SizedBox(height: 6),
               _StepTitle(number: 2, text: loc.twoStepCodeLabel),
               const SizedBox(height: 6),
               Text(
-                loc.twoStepEnterCodeBody,
+                '${loc.twoStepEnterCodeBody} ${loc.twoStepCodesChange}',
                 style: TextStyle(
                   fontSize: 13.5,
                   height: 1.35,
@@ -356,6 +439,9 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
               TextField(
                 controller: _codeController,
                 focusNode: _codeFocus,
+                onChanged: (value) {
+                  if (value.length == 6) _finish();
+                },
                 keyboardType: TextInputType.number,
                 textAlign: TextAlign.center,
                 autofillHints: const [AutofillHints.oneTimeCode],
@@ -375,6 +461,11 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
                   hintText: loc.twoStepCodeLabel,
                   focused: _codeFocus.hasFocus,
                   errorText: _codeError,
+                  suffixIcon: IconButton(
+                    tooltip: loc.twoStepPaste,
+                    icon: const Icon(Icons.content_paste_rounded),
+                    onPressed: _busy ? null : _paste,
+                  ),
                 ),
               ),
               const SizedBox(height: 16),
@@ -382,8 +473,9 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
                 children: [
                   Expanded(
                     child: TextButton(
-                      onPressed:
-                          _busy ? null : () => Navigator.of(context).pop(false),
+                      onPressed: _busy
+                          ? null
+                          : () => Navigator.of(context).pop(false),
                       child: Text(loc.cancel),
                     ),
                   ),
@@ -411,35 +503,84 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
 
   Widget _doneBody(AppLocalizations loc) {
     final scheme = Theme.of(context).colorScheme;
-    return _Panel(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const SizedBox(height: 8),
-          Icon(Icons.verified_user_rounded, size: 56, color: scheme.primary),
-          const SizedBox(height: 12),
-          Text(
-            loc.twoStepStatusOn,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+    _checkAppLock();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        _Panel(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const SizedBox(height: 8),
+              Icon(
+                Icons.verified_user_rounded,
+                size: 56,
+                color: scheme.primary,
+              ),
+              const SizedBox(height: 12),
+              Text(
+                loc.twoStepStatusOn,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                loc.twoStepEnabledBody,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 13.5,
+                  height: 1.35,
+                  color: scheme.onSurfaceVariant,
+                ),
+              ),
+            ],
           ),
-          const SizedBox(height: 6),
-          Text(
-            loc.twoStepEnabledBody,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13.5,
-              height: 1.35,
-              color: scheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(height: 20),
-          FilledButton(
-            onPressed: () => Navigator.of(context).pop(true),
-            child: Text(loc.twoStepDone),
+        ),
+        const SizedBox(height: 14),
+        _NextStep(
+          icon: Icons.password_rounded,
+          title: loc.backupCodesTitle,
+          body: loc.twoStepBackupNext,
+          done: _codesSaved,
+          actionLabel: loc.backupCodesMake,
+          onAction: _openBackupCodes,
+        ),
+        if (!_appLockOn) ...[
+          const SizedBox(height: 10),
+          _NextStep(
+            icon: Icons.fingerprint_rounded,
+            title: loc.twoStepAppLockTitle,
+            body: loc.twoStepAppLockBody,
+            done: false,
+            actionLabel: loc.twoStepAppLockAction,
+            onAction: _turnOnAppLock,
           ),
         ],
-      ),
+        const SizedBox(height: 10),
+        _NextStep(
+          icon: Icons.devices_rounded,
+          title: loc.secSignOutOthersTitle,
+          body: loc.twoStepSignOutOthersBody,
+          done: false,
+          actionLabel: loc.twoStepReviewDevices,
+          onAction: _openDevices,
+        ),
+        const SizedBox(height: 18),
+        FilledButton(
+          onPressed: _codesSaved
+              ? () => Navigator.of(context).pop(true)
+              : _openBackupCodes,
+          child: Text(_codesSaved ? loc.twoStepDone : loc.backupCodesMake),
+        ),
+        if (!_codesSaved)
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            child: Text(loc.twoStepSkipForNow),
+          ),
+      ],
     );
   }
 
@@ -496,9 +637,7 @@ class _Panel extends StatelessWidget {
       decoration: BoxDecoration(
         color: scheme.surface,
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(
-          color: scheme.outlineVariant.withValues(alpha: 0.6),
-        ),
+        border: Border.all(color: scheme.outlineVariant.withValues(alpha: 0.6)),
       ),
       child: child,
     );
@@ -541,6 +680,72 @@ class _StepTitle extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _NextStep extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String body;
+  final bool done;
+  final String actionLabel;
+  final VoidCallback onAction;
+
+  const _NextStep({
+    required this.icon,
+    required this.title,
+    required this.body,
+    required this.done,
+    required this.actionLabel,
+    required this.onAction,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return _Panel(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(
+            done ? Icons.check_circle_rounded : icon,
+            color: done ? Colors.green : scheme.primary,
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  body,
+                  style: TextStyle(
+                    fontSize: 13,
+                    height: 1.35,
+                    color: scheme.onSurfaceVariant,
+                  ),
+                ),
+                if (!done)
+                  Align(
+                    alignment: AlignmentDirectional.centerEnd,
+                    child: TextButton(
+                      onPressed: onAction,
+                      child: Text(actionLabel),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

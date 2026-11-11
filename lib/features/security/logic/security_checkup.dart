@@ -5,6 +5,7 @@ enum CheckupItem {
   photoEncryption,
   recoveryKey,
   strongPassword,
+  backupCodes,
 }
 
 class CheckupInputs {
@@ -16,6 +17,10 @@ class CheckupInputs {
   final bool hasPasswordSignIn;
   final bool strongPasswordConfirmed;
 
+  /// Whether two-step backup codes are saved. Only counted when two-step
+  /// sign-in is on.
+  final bool backupCodesSaved;
+
   const CheckupInputs({
     required this.emailVerified,
     required this.twoStepOn,
@@ -24,6 +29,7 @@ class CheckupInputs {
     required this.recoveryKeySaved,
     required this.hasPasswordSignIn,
     required this.strongPasswordConfirmed,
+    this.backupCodesSaved = true,
   });
 }
 
@@ -53,6 +59,9 @@ class CheckupResult {
     };
     if (input.hasPasswordSignIn) {
       items[CheckupItem.strongPassword] = input.strongPasswordConfirmed;
+    }
+    if (input.twoStepOn) {
+      items[CheckupItem.backupCodes] = input.backupCodesSaved;
     }
     return CheckupResult(items);
   }
