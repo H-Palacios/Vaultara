@@ -473,7 +473,7 @@ async function handleSubmit(req, res) {
           record: { name: record.name, locked: record.locked === true },
         },
         data: { type: "updateRequest", recordId },
-      });
+      }, { category: "updates" });
     } catch (err) {
       logger.warn("submitUpdate push failed", { message: err?.message });
     }

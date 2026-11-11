@@ -131,11 +131,36 @@ function isSessionDevice(doc, device) {
   return SESSION_DEVICE_ID.test(doc.id) || device.lastSeenAt !== undefined;
 }
 
+// Kinds of push the user can turn off in Notifications. Sign-in alerts are
+// not listed, so they are always sent.
+const MUTABLE_CATEGORIES = new Set(["household", "updates"]);
+
+// True when users/{uid}/preferences/notifications has the category set to
+// false. A missing document or field means the default, which is on. If the
+// check itself fails, the push is sent rather than silently dropped.
+async function mutedByUser(uid, category) {
+  if (!MUTABLE_CATEGORIES.has(category)) return false;
+  try {
+    const snap = await admin.firestore()
+      .collection("users").doc(uid)
+      .collection("preferences").doc("notifications")
+      .get();
+    return snap.exists && snap.get(category) === false;
+  } catch (err) {
+    logger.warn("notification preference check failed", { message: err?.message });
+    return false;
+  }
+}
+
 async function sendToUser(uid, message = {}, options = {}) {
   const result = { sent: 0, failed: 0, removed: 0 };
   if (typeof uid !== "string" || !UID_PATTERN.test(uid)) return result;
   const { titleKey, bodyKey, params = {}, data = {} } = message;
   if (typeof titleKey !== "string" || typeof bodyKey !== "string") return result;
+  if (await mutedByUser(uid, options.category)) {
+    result.muted = true;
+    return result;
+  }
 
   const devicesRef = admin.firestore().collection("users").doc(uid).collection("devices");
   const snap = await devicesRef.get();
@@ -350,7 +375,7 @@ async function escalateHousehold(houseDoc, now) {
           data: { type: "household", householdId: houseDoc.id },
         };
     try {
-      const result = await sendToUser(uid, message);
+      const result = await sendToUser(uid, message, { category: "household" });
       if (result.sent > 0) pushed++;
     } catch (err) {
       logger.error("household escalation push failed", { message: err?.message });
