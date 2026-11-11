@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara helps you keep track of important expiry dates so nothing quietly goes out of date.",
   "homeWelcomeSubtitleFirst": "It is great to have you here. Vaultara helps you stay organised by keeping important dates and records in one secure place.",
   "homeWelcomeSubtitleBack": "It is good to see you again. Vaultara is here whenever you want to review your important dates and records.",
-  "summaryAllCaption": "Tracked in Vaultara",
-  "summaryExpiredTitle": "Expired",
-  "summaryExpiredCaption": "Past expiry date",
   "editorNotes": "Notes",
   "editorReminderNone": "No reminder",
   "editorReminderOnExpiry": "On expiry date",
@@ -199,7 +196,6 @@
   "addRecord": "Add record",
   "noRecordsYet": "No records yet.",
   "deleteRecordTitle": "Delete record",
-  "summaryAllRecordsTitle": "All records",
   "noGroupFound": "No groups yet",
   "groupLabel": "{count, plural, one{{count} group} other{{count} groups}}",
   "recordsLabel": "{count, plural, one{{count} record} other{{count} records}}",
@@ -444,7 +440,7 @@
   "addNotesHint": "Add notes (optional)",
   "expiryTimelineTitle": "Expiry timeline",
   "expiryTimelineSubtitle": "Tap a month to see the records expiring that month",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 record} other{{count} records}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} record} other{{count} records}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -452,10 +448,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Upcoming",
-  "summaryUpcomingCaption": "Within 30 days",
-  "summaryUrgentTitle": "Urgent",
-  "summaryUrgentCaption": "Within 7 days",
   "profileHeaderTitle": "Profile",
   "profileTutorialsTitle": "Tutorials",
   "profileTutorialsSubtitle": "Browse App Tutorials",
@@ -487,7 +479,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "No reminder",
   "reminderOnExpiry": "On expiry",
-  "reminderDaysBefore": "{days, plural, one{1 day before} other{{days} days before}}",
+  "reminderDaysBefore": "{days, plural, one{{days} day before} other{{days} days before}}",
   "@reminderDaysBefore": {
     "placeholders": {
       "days": {
@@ -560,7 +552,7 @@
       }
     }
   },
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} expire today.} =1{{names} and 1 more expire today.} other{{names} and {extra} more expire today.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} expire today.} =1{{names} and {extra} more expire today.} other{{names} and {extra} more expire today.}}",
   "@smartInsightExpiresTodayMultiBody": {
     "description": "Body for the expires-today insight when several records expire today. {names} lists up to two names; {extra} is how many more beyond those.",
     "placeholders": {
@@ -623,7 +615,7 @@
       }
     }
   },
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, and 1 more expire before {lastDate}, at approximately the same time. It is easy to forget one when several are so close together.} other{{a}, {b}, and {extra} more expire before {lastDate}, at approximately the same time. It is easy to forget one when several are so close together.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b}, and {extra} more expire before {lastDate}, at approximately the same time. It is easy to forget one when several are so close together.} other{{a}, {b}, and {extra} more expire before {lastDate}, at approximately the same time. It is easy to forget one when several are so close together.}}",
   "@smartInsightCloseExpiriesBodyMany": {
     "description": "Body for the close-expiries insight when more than three records are involved. Uses ICU plural on {extra}.",
     "placeholders": {
@@ -653,7 +645,7 @@
       }
     }
   },
-  "smartInsightClusterBody": "{count, plural, =1{1 of your records in the {category} category expires on {date}. It is easy to overlook.} other{{count} of your records in the {category} category expire before {date}. It is easy to forget one when they are grouped like this.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} of your records in the {category} category expires on {date}. It is easy to overlook.} other{{count} of your records in the {category} category expire before {date}. It is easy to forget one when they are grouped like this.}}",
   "@smartInsightClusterBody": {
     "description": "Body for the cluster insight. {count} is how many records, {category} is the category label, {date} is the last expiry date in the group.",
     "placeholders": {
@@ -668,7 +660,7 @@
       }
     }
   },
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 upcoming expiration is covered by a reminder. Nothing else requires your attention.} other{{count} upcoming expirations are covered by reminders. Nothing else requires your attention.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} upcoming expiration is covered by a reminder. Nothing else requires your attention.} other{{count} upcoming expirations are covered by reminders. Nothing else requires your attention.}}",
   "@smartInsightAllCaughtUpBody": {
     "description": "Body for the all-caught-up insight when there are upcoming records within 90 days and all of them have reminders.",
     "placeholders": {
@@ -681,7 +673,7 @@
   "@smartInsightAllCaughtUpNoUpcomingBody": {
     "description": "Body used when nothing needs attention and nothing is upcoming (all-caught-up and quiet-period empty cases)."
   },
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Nothing is urgent at the moment, but 1 upcoming record does not have a reminder yet.} other{Nothing is urgent at the moment, but {count} upcoming records do not have a reminder yet.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Nothing is urgent at the moment, but {count} upcoming record does not have a reminder yet.} other{Nothing is urgent at the moment, but {count} upcoming records do not have a reminder yet.}}",
   "@smartInsightAllCaughtUpUnremindedBody": {
     "description": "Body for the all-caught-up state when some upcoming records have no reminder. {count} is how many upcoming records lack a reminder.",
     "placeholders": {
@@ -828,7 +820,7 @@
       }
     }
   },
-  "reminderCascadeStepLabel": "Reminder {position}: {days, plural, =1{1 day} other{{days} days}} before",
+  "reminderCascadeStepLabel": "Reminder {position}: {days, plural, =1{{days} day} other{{days} days}} before",
   "@reminderCascadeStepLabel": {
     "description": "Summary line on a collapsed cascade step row",
     "placeholders": {
@@ -877,7 +869,7 @@
   "@verifyEmailKeepWaiting": {
     "description": "Cancel action on the discard account dialog"
   },
-  "expiringBadge": "{count, plural, =1{1 expiring} other{{count} expiring}}",
+  "expiringBadge": "{count, plural, =1{{count} expiring} other{{count} expiring}}",
   "@expiringBadge": {
     "description": "Badge on a category or group card showing how many records expire soon",
     "placeholders": {
@@ -895,58 +887,10 @@
   "@noRecordsTomorrow": {
     "description": ",Empty state under the calendar when the selected day is tomorrow and no records expire on it"
   },
-  "cascadeStepTitle": "{days, plural, =0{{recordName} expires today} =1{{recordName} expires tomorrow} other{{recordName} expires in {days} days}}",
-  "@cascadeStepTitle": {
-    "description": "Notification title for one step of a reminder series. {days} is how many days before expiry this step fires.",
-    "placeholders": {
-      "days": {
-        "type": "int"
-      },
-      "recordName": {
-        "type": "String"
-      }
-    }
-  },
-  "cascadeStepBody": "{days, plural, =0{{firstName}, your {recordName} expires today. Already renewed it? Update its expiry date.} =1{{firstName}, your {recordName} expires tomorrow. Renew it now so it does not lapse.} other{{firstName}, your {recordName} expires on {date}. Renewing early keeps you covered.}}",
-  "@cascadeStepBody": {
-    "description": "Notification body for one step of a reminder series. {date} appears only when expiry is more than one day away; today and tomorrow need no date.",
-    "placeholders": {
-      "days": {
-        "type": "int"
-      },
-      "date": {
-        "type": "String"
-      },
-      "firstName": {
-        "type": "String"
-      },
-      "recordName": {
-        "type": "String"
-      }
-    }
-  },
   "cascadeFinalStepTitle": "Last reminder: {recordName}",
   "@cascadeFinalStepTitle": {
     "description": "Notification title for the final step of a multi-step reminder series, firing before expiry day.",
     "placeholders": {
-      "recordName": {
-        "type": "String"
-      }
-    }
-  },
-  "cascadeFinalStepBody": "{firstName}, your {recordName} expires {days, plural, =1{tomorrow} other{in {days} days, on {date}}}. This is your last reminder, renew it or update its date.",
-  "@cascadeFinalStepBody": {
-    "description": "Notification body for the final step of a multi-step reminder series. {date} appears only when the final step is more than one day before expiry.",
-    "placeholders": {
-      "days": {
-        "type": "int"
-      },
-      "date": {
-        "type": "String"
-      },
-      "firstName": {
-        "type": "String"
-      },
       "recordName": {
         "type": "String"
       }
@@ -1129,7 +1073,7 @@
       }
     }
   },
-  "costCardMissing": "{count, plural, =1{1 upcoming record has no cost yet.} other{{count} upcoming records have no cost yet.}}",
+  "costCardMissing": "{count, plural, =1{{count} upcoming record has no cost yet.} other{{count} upcoming records have no cost yet.}}",
   "@costCardMissing": {
     "description": "Small note on the renewal costs card when some records expiring in the next 12 months have no renewal cost",
     "placeholders": {
@@ -1171,7 +1115,7 @@
   "@familyMe": {
     "description": "The account owner, shown as the first person on the Family screen and as a chip in the record editor"
   },
-  "familyRecordCount": "{count, plural, =0{No records} =1{1 record} other{{count} records}}",
+  "familyRecordCount": "{count, plural, =0{No records} =1{{count} record} other{{count} records}}",
   "@familyRecordCount": {
     "description": "Number of records for a person on the Family screen",
     "placeholders": {
@@ -1248,7 +1192,7 @@
   "@familyNameRequired": {
     "description": "Error when the person name field is empty"
   },
-  "familyLimitNote": "{count, plural, =1{Up to 1 person} other{Up to {count} people}}",
+  "familyLimitNote": "{count, plural, =1{Up to {count} person} other{Up to {count} people}}",
   "@familyLimitNote": {
     "description": "Note under the Add person button about the people limit",
     "placeholders": {
@@ -1265,7 +1209,7 @@
   "@familyBenefitPremium": {
     "description": "Family plan benefit, on the upsell card and the plans screen"
   },
-  "familyBenefitPeople": "{count, plural, =1{Add 1 person} other{Add up to {count} people}}",
+  "familyBenefitPeople": "{count, plural, =1{Add {count} person} other{Add up to {count} people}}",
   "@familyBenefitPeople": {
     "description": "Family plan benefit, on the upsell card and the plans screen",
     "placeholders": {
@@ -2071,7 +2015,7 @@
       }
     }
   },
-  "pdfExportCount": "{count, plural, =1{1 record} other{{count} records}}",
+  "pdfExportCount": "{count, plural, =1{{count} record} other{{count} records}}",
   "@pdfExportCount": {
     "description": "Total number of records in the PDF",
     "placeholders": {
@@ -2109,7 +2053,7 @@
   "@travelReturn": {
     "description": "Label of the return date field"
   },
-  "travelTripLength": "{days, plural, =1{1 day trip} other{{days} day trip}}",
+  "travelTripLength": "{days, plural, =1{{days} day trip} other{{days} day trip}}",
   "@travelTripLength": {
     "description": "Trip length shown under the date fields, counting both the departure and return day",
     "placeholders": {
@@ -2206,7 +2150,7 @@
       }
     }
   },
-  "travelDetailPassportBuffer": "{name} expires {date}. Many countries want {months, plural, =1{1 month} other{{months} months}} left after you return.",
+  "travelDetailPassportBuffer": "{name} expires {date}. Many countries want {months, plural, =1{{months} month} other{{months} months}} left after you return.",
   "@travelDetailPassportBuffer": {
     "description": "Result detail: passport expiry date and the number of months many countries require after return",
     "placeholders": {
@@ -2233,7 +2177,7 @@
       }
     }
   },
-  "travelDetailExpiresDuringTrip": "{name} expires {date}, {days, plural, =0{the day you leave} =1{1 day into your trip} other{{days} days into your trip}}.",
+  "travelDetailExpiresDuringTrip": "{name} expires {date}, {days, plural, =0{the day you leave} =1{{days} day into your trip} other{{days} days into your trip}}.",
   "@travelDetailExpiresDuringTrip": {
     "description": "Result detail: the record expires during the trip; days is how many days after departure",
     "placeholders": {
@@ -2340,7 +2284,7 @@
   "@travelSaveFailed": {
     "description": "Error shown when saving a trip to the server fails"
   },
-  "travelNights": "{nights, plural, =1{1 night} other{{nights} nights}}",
+  "travelNights": "{nights, plural, =1{{nights} night} other{{nights} nights}}",
   "@travelNights": {
     "description": "Number of nights away on a trip",
     "placeholders": {
@@ -2349,7 +2293,7 @@
       }
     }
   },
-  "travelDaysShort": "{days, plural, =1{1 day} other{{days} days}}",
+  "travelDaysShort": "{days, plural, =1{{days} day} other{{days} days}}",
   "@travelDaysShort": {
     "description": "Number of days a trip covers, counting the departure and return day",
     "placeholders": {
@@ -2358,7 +2302,7 @@
       }
     }
   },
-  "travelAtDestination": "{days, plural, =1{1 day at your destination} other{{days} days at your destination}}",
+  "travelAtDestination": "{days, plural, =1{{days} day at your destination} other{{days} days at your destination}}",
   "@travelAtDestination": {
     "description": "Days spent at the destination, from the day the flight lands to the day the return flight leaves",
     "placeholders": {
@@ -2472,7 +2416,7 @@
   "@travelAllGood": {
     "description": "Trip status when nothing needs attention"
   },
-  "travelIssues": "{count, plural, =1{1 thing needs attention} other{{count} things need attention}}",
+  "travelIssues": "{count, plural, =1{{count} thing needs attention} other{{count} things need attention}}",
   "@travelIssues": {
     "description": "Trip status with the number of problems and warnings",
     "placeholders": {
@@ -2583,7 +2527,7 @@
       }
     }
   },
-  "travelReminderBodyIssues": "{count, plural, =1{1 document needs attention before you leave.} other{{count} documents need attention before you leave.}}",
+  "travelReminderBodyIssues": "{count, plural, =1{{count} document needs attention before you leave.} other{{count} documents need attention before you leave.}}",
   "@travelReminderBodyIssues": {
     "description": "Notification text when documents have problems",
     "placeholders": {
@@ -2718,7 +2662,7 @@
   "@vaultLimitTitle": {
     "description": "Title of the dialog shown when tapping the locked add-photo tile; also its tooltip"
   },
-  "vaultLimitFreeBody": "The free plan lets you add {limit, plural, =1{1 photo} other{{limit} photos}} to each record. With Premium you can add up to {premiumLimit}.",
+  "vaultLimitFreeBody": "The free plan lets you add {limit, plural, =1{{limit} photo} other{{limit} photos}} to each record. With Premium you can add up to {premiumLimit}.",
   "@vaultLimitFreeBody": {
     "description": "Body of the photo limit dialog for free users",
     "placeholders": {
@@ -2771,7 +2715,7 @@
       }
     }
   },
-  "vaultPhotosTooltip": "{count, plural, =1{1 photo} other{{count} photos}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} photo} other{{count} photos}}",
   "@vaultPhotosTooltip": {
     "description": "Tooltip on the photo button on a record card that opens the record's photos",
     "placeholders": {
@@ -3610,7 +3554,7 @@
       }
     }
   },
-  "travelFixBeforeYouGo": "{count, plural, one{1 thing to fix before you go} other{{count} things to fix before you go}}",
+  "travelFixBeforeYouGo": "{count, plural, one{{count} thing to fix before you go} other{{count} things to fix before you go}}",
   "@travelFixBeforeYouGo": {
     "description": "Trip summary when documents have problems",
     "placeholders": {
@@ -3644,7 +3588,7 @@
   "@travelRemindersPassed": {
     "description": "Text when all trip reminder dates are in the past"
   },
-  "travelReminderBefore": "{days, plural, one{1 day before you leave} other{{days} days before you leave}}",
+  "travelReminderBefore": "{days, plural, one{{days} day before you leave} other{{days} days before you leave}}",
   "@travelReminderBefore": {
     "description": "One trip reminder row",
     "placeholders": {
@@ -3657,7 +3601,7 @@
   "@travelStatusReady": {
     "description": "Status of a traveller whose documents are all fine"
   },
-  "travelStatusToFix": "{count, plural, one{1 to fix} other{{count} to fix}}",
+  "travelStatusToFix": "{count, plural, one{{count} to fix} other{{count} to fix}}",
   "@travelStatusToFix": {
     "description": "Status of a traveller with document problems",
     "placeholders": {
@@ -3666,7 +3610,7 @@
       }
     }
   },
-  "travelStatusToCheck": "{count, plural, one{1 to check} other{{count} to check}}",
+  "travelStatusToCheck": "{count, plural, one{{count} to check} other{{count} to check}}",
   "@travelStatusToCheck": {
     "description": "Status of a traveller with document warnings",
     "placeholders": {
@@ -4479,7 +4423,7 @@
   "@photoLockStatusOnBody": {
     "description": ""
   },
-  "photoLockPendingTitle": "{count, plural, one{1 photo is not encrypted yet} other{{count} photos are not encrypted yet}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} photo is not encrypted yet} other{{count} photos are not encrypted yet}}",
   "@photoLockPendingTitle": {
     "description": "Shown when some existing photos are still stored without encryption.",
     "placeholders": {
@@ -4640,7 +4584,7 @@
   "@photoLockEncryptExistingTitle": {
     "description": ""
   },
-  "photoLockEncryptExistingBody": "{count, plural, one{You have 1 photo that is not encrypted yet. We can encrypt it now.} other{You have {count} photos that are not encrypted yet. We can encrypt them now.}} Keep Vaultara open until this finishes.",
+  "photoLockEncryptExistingBody": "{count, plural, one{You have {count} photo that is not encrypted yet. We can encrypt it now.} other{You have {count} photos that are not encrypted yet. We can encrypt them now.}} Keep Vaultara open until this finishes.",
   "@photoLockEncryptExistingBody": {
     "description": "Offer to encrypt photos added before encryption was turned on.",
     "placeholders": {
@@ -4681,7 +4625,7 @@
   "@photoLockWrongKey": {
     "description": ""
   },
-  "photoLockWaitSeconds": "{seconds, plural, one{Too many tries. Please wait 1 second and try again.} other{Too many tries. Please wait {seconds} seconds and try again.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Too many tries. Please wait {seconds} second and try again.} other{Too many tries. Please wait {seconds} seconds and try again.}}",
   "@photoLockWaitSeconds": {
     "description": "Shown after too many wrong recovery keys.",
     "placeholders": {
@@ -4690,7 +4634,7 @@
       }
     }
   },
-  "photoLockWaitMinutes": "{minutes, plural, one{Too many tries. Please wait 1 minute and try again.} other{Too many tries. Please wait {minutes} minutes and try again.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Too many tries. Please wait {minutes} minute and try again.} other{Too many tries. Please wait {minutes} minutes and try again.}}",
   "@photoLockWaitMinutes": {
     "description": "Shown after too many wrong recovery keys.",
     "placeholders": {
@@ -5880,7 +5824,7 @@
   "@dailyDigestTurnedOff": {
     "description": "Snackbar after turning off the daily summary, so each record gets its own reminders again"
   },
-  "dailyDigestTitle": "{count, plural, one{1 record needs your attention} other{{count} records need your attention}}",
+  "dailyDigestTitle": "{count, plural, one{{count} record needs your attention} other{{count} records need your attention}}",
   "@dailyDigestTitle": {
     "description": "Title of the daily summary notification. count is how many records are due that day",
     "placeholders": {
@@ -5932,7 +5876,7 @@
       }
     }
   },
-  "renewReasonTypical": "{years, plural, one{Usually valid for 1 year} other{Usually valid for {years} years}}",
+  "renewReasonTypical": "{years, plural, one{Usually valid for {years} year} other{Usually valid for {years} years}}",
   "@renewReasonTypical": {
     "description": "Renew sheet: the suggested new expiry date comes from how long this type of document usually lasts",
     "placeholders": {
@@ -6832,7 +6776,7 @@
   "@secJustNow": {
     "description": "Relative time for something that happened less than a minute ago."
   },
-  "secMinutesAgo": "{count, plural, one{1 minute ago} other{{count} minutes ago}}",
+  "secMinutesAgo": "{count, plural, one{{count} minute ago} other{{count} minutes ago}}",
   "@secMinutesAgo": {
     "description": "Relative time.",
     "placeholders": {
@@ -6841,7 +6785,7 @@
       }
     }
   },
-  "secHoursAgo": "{count, plural, one{1 hour ago} other{{count} hours ago}}",
+  "secHoursAgo": "{count, plural, one{{count} hour ago} other{{count} hours ago}}",
   "@secHoursAgo": {
     "description": "Relative time.",
     "placeholders": {
@@ -6850,7 +6794,7 @@
       }
     }
   },
-  "secDaysAgo": "{count, plural, one{1 day ago} other{{count} days ago}}",
+  "secDaysAgo": "{count, plural, one{{count} day ago} other{{count} days ago}}",
   "@secDaysAgo": {
     "description": "Relative time.",
     "placeholders": {
@@ -8134,7 +8078,7 @@
       }
     }
   },
-  "lifePlanDaysToGo": "{count, plural, =1{1 day to go} other{{count} days to go}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} day to go} other{{count} days to go}}",
   "@lifePlanDaysToGo": {
     "description": "Days until the date of a life event plan.",
     "placeholders": {
@@ -8143,7 +8087,7 @@
       }
     }
   },
-  "lifePlanDaysAgo": "{count, plural, =1{1 day ago} other{{count} days ago}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} day ago} other{{count} days ago}}",
   "@lifePlanDaysAgo": {
     "description": "Days since the date of a life event plan.",
     "placeholders": {
@@ -8567,7 +8511,7 @@
   "@lifePlanOpenFamily": {
     "description": "Button that opens the Family screen from a life event plan."
   },
-  "lifePlanRemoved": "{count, plural, =1{1 record you deleted counts as cancelled.} other{{count} records you deleted count as cancelled.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} record you deleted counts as cancelled.} other{{count} records you deleted count as cancelled.}}",
   "@lifePlanRemoved": {
     "description": "Records deleted after a life event plan started.",
     "placeholders": {
@@ -8753,7 +8697,7 @@
   "@lostWalletSetPlaceBody": {
     "description": "On the Lost my wallet screen."
   },
-  "lostWalletIssuePhotos": "{count, plural, =1{1 item has no photo. A photo makes it faster to replace.} other{{count} items have no photo. Photos make them faster to replace.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} item has no photo. A photo makes it faster to replace.} other{{count} items have no photo. Photos make them faster to replace.}}",
   "@lostWalletIssuePhotos": {
     "description": "On the Lost my wallet screen.",
     "placeholders": {
@@ -8762,7 +8706,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 card has no lost card number saved.} other{{count} cards have no lost card number saved.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} card has no lost card number saved.} other{{count} cards have no lost card number saved.}}",
   "@lostWalletIssueLines": {
     "description": "On the Lost my wallet screen.",
     "placeholders": {
@@ -9001,7 +8945,7 @@
   "@lostWalletReportNoCase": {
     "description": "Line in the PDF."
   },
-  "lostWalletReportCount": "{count, plural, =1{1 item listed below} other{{count} items listed below}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} item listed below} other{{count} items listed below}}",
   "@lostWalletReportCount": {
     "description": "Line in the PDF.",
     "placeholders": {
@@ -9118,7 +9062,7 @@
   "@tutorialsGroupPaid": {
     "description": "Heading on the Tutorials screen."
   },
-  "tutorialsSteps": "{count, plural, =1{1 step} other{{count} steps}}",
+  "tutorialsSteps": "{count, plural, =1{{count} step} other{{count} steps}}",
   "@tutorialsSteps": {
     "description": "How long a tutorial is.",
     "placeholders": {
@@ -9661,7 +9605,7 @@
   "@yoursTag": {
     "description": "Small label on a category or group the user made."
   },
-  "expiredBadge": "{count, plural, =1{1 expired} other{{count} expired}}",
+  "expiredBadge": "{count, plural, =1{{count} expired} other{{count} expired}}",
   "@expiredBadge": {
     "description": "Badge with how many records in a category or group have expired.",
     "placeholders": {
@@ -9731,7 +9675,7 @@
   "@recordsSelect": {
     "description": "Menu item to start choosing several records."
   },
-  "recordsSelected": "{count, plural, =1{1 selected} other{{count} selected}}",
+  "recordsSelected": "{count, plural, =1{{count} selected} other{{count} selected}}",
   "@recordsSelected": {
     "description": "How many records are chosen.",
     "placeholders": {
@@ -9748,7 +9692,7 @@
   "@recordsMoveTitle": {
     "description": "Title of the sheet to pick a group to move records to."
   },
-  "recordsMoved": "{count, plural, =1{Moved 1 record} other{Moved {count} records}}",
+  "recordsMoved": "{count, plural, =1{Moved {count} record} other{Moved {count} records}}",
   "@recordsMoved": {
     "description": "Confirmation after moving records.",
     "placeholders": {
@@ -9757,7 +9701,7 @@
       }
     }
   },
-  "recordsDeleteManyTitle": "{count, plural, =1{Delete 1 record?} other{Delete {count} records?}}",
+  "recordsDeleteManyTitle": "{count, plural, =1{Delete {count} record?} other{Delete {count} records?}}",
   "@recordsDeleteManyTitle": {
     "description": "Title of the dialog before deleting several records.",
     "placeholders": {
@@ -9770,7 +9714,7 @@
   "@recordsDeleteManyBody": {
     "description": "Body of the dialog before deleting several records."
   },
-  "recordsDeletedMany": "{count, plural, =1{Deleted 1 record} other{Deleted {count} records}}",
+  "recordsDeletedMany": "{count, plural, =1{Deleted {count} record} other{Deleted {count} records}}",
   "@recordsDeletedMany": {
     "description": "Confirmation after deleting several records.",
     "placeholders": {
@@ -10035,5 +9979,348 @@
         "type": "String"
       }
     }
+  },
+  "remTitleToday": "{recordName} expires today",
+  "@remTitleToday": {
+    "description": "Reminder title on the expiry day.",
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} expires tomorrow",
+  "@remTitleTomorrow": {
+    "description": "Reminder title the day before expiry.",
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} expires in {days} day} other{{recordName} expires in {days} days}}",
+  "@remTitleDays": {
+    "description": "Reminder title some days before expiry. days is always 2 or more.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} has expired",
+  "@remTitleExpired": {
+    "description": "Title of a reminder sent after the expiry date.",
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "A locked record needs your attention",
+  "@remLockedTitle": {
+    "description": "Reminder title for a locked record, whose name is hidden."
+  },
+  "remLockedBody": "Its date is {date}. Unlock Vaultara to see which record it is.",
+  "@remLockedBody": {
+    "description": "Reminder text for a locked record.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Your {recordName} expires today.",
+  "@remBodyToday": {
+    "description": "First sentence of a reminder on the expiry day.",
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Your {recordName} expires tomorrow.",
+  "@remBodyTomorrow": {
+    "description": "First sentence of a reminder the day before expiry.",
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Your {recordName} expires on {date}.",
+  "@remBodyDays": {
+    "description": "First sentence of a reminder some days before expiry.",
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, your {recordName} expires today.",
+  "@remBodyTodayNamed": {
+    "description": "First sentence of a reminder on the expiry day, greeting the user by first name.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, your {recordName} expires tomorrow.",
+  "@remBodyTomorrowNamed": {
+    "description": "First sentence of a reminder the day before expiry, with the first name.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, your {recordName} expires on {date}.",
+  "@remBodyDaysNamed": {
+    "description": "First sentence of a reminder some days before expiry, with the first name.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}'s {recordName} expires today.",
+  "@remBodyTodayFamily": {
+    "description": "Reminder for a record of someone in the family, on the expiry day.",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}'s {recordName} expires tomorrow.",
+  "@remBodyTomorrowFamily": {
+    "description": "Reminder for someone else's record, the day before expiry.",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}'s {recordName} expires on {date}.",
+  "@remBodyDaysFamily": {
+    "description": "Reminder for someone else's record, some days before expiry.",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Your {recordName} expired on {date}.",
+  "@remBodyExpired": {
+    "description": "First sentence of a reminder after the expiry date.",
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}'s {recordName} expired on {date}.",
+  "@remBodyExpiredFamily": {
+    "description": "Reminder after the expiry date for someone else's record.",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Already renewed it? Update its date.",
+  "@remTipToday": {
+    "description": "Second sentence of a reminder on the expiry day."
+  },
+  "remTipTomorrow": "Renew it now so it does not lapse.",
+  "@remTipTomorrow": {
+    "description": "Second sentence of a reminder the day before expiry."
+  },
+  "remTipEarly": "Renewing early keeps you covered.",
+  "@remTipEarly": {
+    "description": "Second sentence of an early reminder."
+  },
+  "remTipLast": "This is your last reminder before it expires.",
+  "@remTipLast": {
+    "description": "Second sentence of the last reminder before expiry."
+  },
+  "remTipExpired": "Renew it, or update its date if you already have.",
+  "@remTipExpired": {
+    "description": "Second sentence of a reminder after the expiry date."
+  },
+  "remStartBody": "It is time to start renewing your {recordName}. It expires on {date}, so starting now gives you plenty of time.",
+  "@remStartBody": {
+    "description": "Text of the start renewing reminder without the first name.",
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "It is time to start renewing {person}'s {recordName}. It expires on {date}, so starting now gives you plenty of time.",
+  "@remStartBodyFamily": {
+    "description": "Start renewing reminder for someone else's record.",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Expiry reminders",
+  "@notifChannelName": {
+    "description": "Name of the reminder channel in the phone's notification settings."
+  },
+  "notifChannelDescription": "Reminders before your records expire",
+  "@notifChannelDescription": {
+    "description": "Description of the reminder channel in the phone's notification settings."
+  },
+  "notifTestTitle": "Test notification",
+  "@notifTestTitle": {
+    "description": "Title of the test notification."
+  },
+  "notifTestBody": "Reminders from Vaultara arrive like this.",
+  "@notifTestBody": {
+    "description": "Text of the test notification."
+  },
+  "notifTestAction": "Send a test notification",
+  "@notifTestAction": {
+    "description": "Settings row that sends a test notification."
+  },
+  "notifTestSubtitle": "Check that reminders reach this phone",
+  "@notifTestSubtitle": {
+    "description": "Subtitle of the test notification row."
+  },
+  "notifTestSent": "Test sent. It should arrive in a few seconds.",
+  "@notifTestSent": {
+    "description": "Shown after sending a test notification."
+  },
+  "notifAfterExpiryTitle": "Remind me after a record expires",
+  "@notifAfterExpiryTitle": {
+    "description": "Switch for reminders after the expiry date."
+  },
+  "notifAfterExpirySubtitle": "3 and 14 days after, if it has not been renewed",
+  "@notifAfterExpirySubtitle": {
+    "description": "Subtitle of the after expiry switch."
+  },
+  "notifWeeklyTitle": "Monday summary",
+  "@notifWeeklyTitle": {
+    "description": "Switch for the Monday summary notification."
+  },
+  "notifWeeklySubtitle": "A note on Monday morning when something expires that week",
+  "@notifWeeklySubtitle": {
+    "description": "Subtitle of the Monday summary switch."
+  },
+  "notifPushSection": "Household and updates",
+  "@notifPushSection": {
+    "description": "Heading above the household and update notification switches."
+  },
+  "notifHouseholdTitle": "Shared records",
+  "@notifHouseholdTitle": {
+    "description": "Switch for notifications about shared household records nobody has renewed."
+  },
+  "notifHouseholdSubtitle": "When a shared record is close to expiring and nobody has renewed it",
+  "@notifHouseholdSubtitle": {
+    "description": "Subtitle of the shared records switch."
+  },
+  "notifUpdatesTitle": "Updates you asked for",
+  "@notifUpdatesTitle": {
+    "description": "Switch for notifications when someone sends an update that was requested."
+  },
+  "notifUpdatesSubtitle": "When someone sends the new details of a record",
+  "@notifUpdatesSubtitle": {
+    "description": "Subtitle of the updates switch."
+  },
+  "notifSecurityNote": "Alerts about new sign-ins to your account are always sent.",
+  "@notifSecurityNote": {
+    "description": "Note under the notification switches."
+  },
+  "notifIosHelpTitle": "Not getting reminders?",
+  "@notifIosHelpTitle": {
+    "description": "Settings row and sheet title for iPhone reminder help."
+  },
+  "notifIosHelpSubtitle": "Check your iPhone settings",
+  "@notifIosHelpSubtitle": {
+    "description": "Subtitle of the iPhone reminder help row."
+  },
+  "notifIosHelpStep1": "Open Settings, then Notifications, then Vaultara, and turn on Allow Notifications.",
+  "@notifIosHelpStep1": {
+    "description": "First step of the iPhone reminder help."
+  },
+  "notifIosHelpStep2": "Turn on Lock Screen, Notification Centre and Banners.",
+  "@notifIosHelpStep2": {
+    "description": "Second step of the iPhone reminder help."
+  },
+  "notifIosHelpStep3": "If you use a Focus, add Vaultara to the apps it allows.",
+  "@notifIosHelpStep3": {
+    "description": "Third step of the iPhone reminder help."
+  },
+  "notifIosHelpStep4": "Open Vaultara every few weeks. iPhones only keep a limited number of reminders ahead, and opening the app plans the next ones.",
+  "@notifIosHelpStep4": {
+    "description": "Fourth step of the iPhone reminder help."
+  },
+  "homeNextUpEmpty": "Nothing expires soon. You are all set.",
+  "@homeNextUpEmpty": {
+    "description": "Shown on Home when no record is coming up."
+  },
+  "homeDueSoonChip": "{count, plural, one{{count} due in 30 days} other{{count} due in 30 days}}",
+  "@homeDueSoonChip": {
+    "description": "Chip on Home with the number of records due within 30 days.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Pinned categories",
+  "@homePinnedTitle": {
+    "description": "Heading of the pinned categories row on Home."
   }
 }
