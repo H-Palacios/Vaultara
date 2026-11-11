@@ -171,7 +171,13 @@ class CalendarRecordCard extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              Row(
+              // The status on the left and the actions on the right. On a
+              // narrow phone, or in a language with long button labels, the
+              // actions wrap onto a second line instead of overflowing.
+              Wrap(
+                alignment: WrapAlignment.spaceBetween,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                runSpacing: 2,
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
@@ -184,6 +190,8 @@ class CalendarRecordCard extends StatelessWidget {
                     ),
                     child: Text(
                       statusText,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontSize: 11.5,
                         fontWeight: FontWeight.w800,
@@ -194,44 +202,59 @@ class CalendarRecordCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Spacer(),
-                  if (notes.isNotEmpty)
-                    IconButton(
-                      visualDensity: VisualDensity.compact,
-                      tooltip: loc.editorNotes,
-                      icon: Icon(
-                        Icons.sticky_note_2_rounded,
-                        size: 20,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                      onPressed: () => RecordLock.guard(
-                        context,
-                        record,
-                        () => RecordNotesDialog.show(
-                          context,
-                          title: record.name,
-                          notes: notes,
+                  Wrap(
+                    alignment: WrapAlignment.end,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [
+                      if (notes.isNotEmpty)
+                        IconButton(
+                          visualDensity: VisualDensity.compact,
+                          tooltip: loc.editorNotes,
+                          icon: Icon(
+                            Icons.sticky_note_2_rounded,
+                            size: 20,
+                            color: scheme.onSurfaceVariant,
+                          ),
+                          onPressed: () => RecordLock.guard(
+                            context,
+                            record,
+                            () => RecordNotesDialog.show(
+                              context,
+                              title: record.name,
+                              notes: notes,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                  if (guide != null)
-                    TextButton.icon(
-                      style: TextButton.styleFrom(
-                        visualDensity: VisualDensity.compact,
-                      ),
-                      onPressed: guide,
-                      icon: const Icon(Icons.menu_book_rounded, size: 16),
-                      label: Text(loc.guideTitle),
-                    ),
-                  if (renew != null)
-                    TextButton.icon(
-                      style: TextButton.styleFrom(
-                        visualDensity: VisualDensity.compact,
-                      ),
-                      onPressed: renew,
-                      icon: const Icon(Icons.autorenew_rounded, size: 16),
-                      label: Text(loc.renewAction),
-                    ),
+                      if (guide != null)
+                        TextButton.icon(
+                          style: TextButton.styleFrom(
+                            visualDensity: VisualDensity.compact,
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                          ),
+                          onPressed: guide,
+                          icon: const Icon(Icons.menu_book_rounded, size: 16),
+                          label: Text(
+                            loc.guideTitle,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                      if (renew != null)
+                        TextButton.icon(
+                          style: TextButton.styleFrom(
+                            visualDensity: VisualDensity.compact,
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                          ),
+                          onPressed: renew,
+                          icon: const Icon(Icons.autorenew_rounded, size: 16),
+                          label: Text(
+                            loc.renewAction,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                    ],
+                  ),
                 ],
               ),
             ],
