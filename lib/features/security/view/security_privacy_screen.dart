@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:vaultara/features/auth/view/two_step/backup_codes_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
 
@@ -108,9 +109,9 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
   }
 
   Future<void> _push(Widget screen) async {
-    await Navigator.of(context).push(
-      MaterialPageRoute<void>(builder: (_) => screen),
-    );
+    await Navigator.of(
+      context,
+    ).push(MaterialPageRoute<void>(builder: (_) => screen));
     if (mounted) await _loadCheckup();
   }
 
@@ -172,6 +173,8 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
         _push(const EncryptedPhotosScreen());
       case CheckupItem.strongPassword:
         _changePassword();
+      case CheckupItem.backupCodes:
+        _push(const BackupCodesScreen());
     }
   }
 
@@ -299,10 +302,7 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
                 subtitle: _appLock
                     ? loc.profile_biometric_on
                     : loc.profile_biometric_off,
-                trailing: _switch(
-                  _appLock,
-                  _loadingLock ? null : _setAppLock,
-                ),
+                trailing: _switch(_appLock, _loadingLock ? null : _setAppLock),
                 onTap: _loadingLock ? null : () => _setAppLock(!_appLock),
               ),
               const SizedBox(height: 12),
@@ -416,10 +416,7 @@ class _SectionHeader extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 8),
       child: Text(
         text,
-        style: const TextStyle(
-          fontSize: 13,
-          fontWeight: FontWeight.w700,
-        ),
+        style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
       ),
     );
   }

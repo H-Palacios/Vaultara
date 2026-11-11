@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
+import 'package:vaultara/features/auth/services/backup_code_service.dart';
 import 'package:vaultara/features/auth/services/biometric_preference.dart';
 import 'package:vaultara/features/auth/services/two_step_service.dart';
 import 'package:vaultara/features/security/data/photo_key_store.dart';
@@ -19,6 +20,11 @@ class SecurityCheckupService {
     try {
       twoStep = (await TwoStepService.enrolledTotp()).isNotEmpty;
     } catch (_) {}
+
+    var backupCodes = true;
+    if (twoStep) {
+      backupCodes = (await BackupCodeService.status()).remaining > 0;
+    }
 
     var appLock = false;
     try {
@@ -42,6 +48,7 @@ class SecurityCheckupService {
         recoveryKeySaved: photosOn,
         hasPasswordSignIn: StrongPasswordFlag.hasPasswordSignIn(fresh),
         strongPasswordConfirmed: await StrongPasswordFlag.isMarked(fresh?.uid),
+        backupCodesSaved: backupCodes,
       ),
     );
   }

@@ -10,6 +10,8 @@ import 'package:vaultara/features/auth/services/two_step_service.dart';
 import 'package:vaultara/features/security/services/security_events.dart';
 import 'package:vaultara/features/auth/view/two_step/confirm_identity_sheet.dart';
 import 'package:vaultara/features/auth/view/two_step/totp_setup_screen.dart';
+import 'package:vaultara/features/auth/services/backup_code_service.dart';
+import 'package:vaultara/features/auth/view/two_step/backup_codes_screen.dart';
 
 class TwoStepScreen extends StatefulWidget {
   const TwoStepScreen({super.key});
@@ -20,6 +22,7 @@ class TwoStepScreen extends StatefulWidget {
 
 class _TwoStepScreenState extends State<TwoStepScreen> {
   List<MultiFactorInfo>? _factors;
+  BackupCodeStatus? _codes;
   bool _failed = false;
   final Set<String> _removing = <String>{};
 
@@ -35,6 +38,10 @@ class _TwoStepScreenState extends State<TwoStepScreen> {
       final factors = await TwoStepService.enrolledTotp();
       if (!mounted) return;
       setState(() => _factors = factors);
+      if (factors.isNotEmpty) {
+        final codes = await BackupCodeService.status();
+        if (mounted) setState(() => _codes = codes);
+      }
     } catch (_) {
       if (!mounted) return;
       setState(() {
@@ -54,10 +61,17 @@ class _TwoStepScreenState extends State<TwoStepScreen> {
       );
       return;
     }
-    final added = await Navigator.of(context).push<bool>(
-      MaterialPageRoute(builder: (_) => const TotpSetupScreen()),
-    );
+    final added = await Navigator.of(
+      context,
+    ).push<bool>(MaterialPageRoute(builder: (_) => const TotpSetupScreen()));
     if (added == true && mounted) await _load();
+  }
+
+  Future<void> _openBackupCodes() async {
+    await Navigator.of(
+      context,
+    ).push<bool>(MaterialPageRoute(builder: (_) => const BackupCodesScreen()));
+    if (mounted) await _load();
   }
 
   Future<bool?> _confirmRemove(bool last) {
@@ -71,7 +85,9 @@ class _TwoStepScreenState extends State<TwoStepScreen> {
           textAlign: TextAlign.center,
           style: const TextStyle(fontWeight: FontWeight.w800),
         ),
-        content: Text(last ? loc.twoStepRemoveBody : loc.twoStepRemoveBodyOther),
+        content: Text(
+          last ? loc.twoStepRemoveBody : loc.twoStepRemoveBodyOther,
+        ),
         actionsAlignment: MainAxisAlignment.spaceBetween,
         actions: [
           TextButton(
@@ -257,6 +273,37 @@ class _TwoStepScreenState extends State<TwoStepScreen> {
                     ),
                     const SizedBox(height: 10),
                   ],
+                ],
+                if (on) ...[
+                  const SizedBox(height: 10),
+                  Material(
+                    color: scheme.surfaceContainerHighest,
+                    borderRadius: BorderRadius.circular(16),
+                    child: ListTile(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      leading: Icon(
+                        Icons.password_rounded,
+                        color: (_codes?.remaining ?? 0) <= 2
+                            ? scheme.error
+                            : scheme.primary,
+                      ),
+                      title: Text(
+                        loc.backupCodesTitle,
+                        style: const TextStyle(fontWeight: FontWeight.w700),
+                      ),
+                      subtitle: Text(
+                        _codes == null
+                            ? loc.backupCodesTileHint
+                            : _codes!.none
+                            ? loc.backupCodesNone
+                            : loc.backupCodesLeft(_codes!.remaining),
+                      ),
+                      trailing: const Icon(Icons.chevron_right_rounded),
+                      onTap: _openBackupCodes,
+                    ),
+                  ),
                 ],
                 const SizedBox(height: 16),
                 if (!on)
