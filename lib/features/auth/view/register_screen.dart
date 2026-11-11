@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:vaultara/core/data/user_name.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -64,14 +65,26 @@ class _RegisterScreenState extends State<RegisterScreen> {
       focus.addListener(() => setState(() {}));
     }
 
-    _clearErrorOnType(firstNameController, () => firstNameErrorText,
-        (v) => firstNameErrorText = v);
-    _clearErrorOnType(lastNameController, () => lastNameErrorText,
-        (v) => lastNameErrorText = v);
     _clearErrorOnType(
-        emailController, () => emailErrorText, (v) => emailErrorText = v);
-    _clearErrorOnType(passwordController, () => passwordErrorText,
-        (v) => passwordErrorText = v);
+      firstNameController,
+      () => firstNameErrorText,
+      (v) => firstNameErrorText = v,
+    );
+    _clearErrorOnType(
+      lastNameController,
+      () => lastNameErrorText,
+      (v) => lastNameErrorText = v,
+    );
+    _clearErrorOnType(
+      emailController,
+      () => emailErrorText,
+      (v) => emailErrorText = v,
+    );
+    _clearErrorOnType(
+      passwordController,
+      () => passwordErrorText,
+      (v) => passwordErrorText = v,
+    );
   }
 
   void _clearErrorOnType(
@@ -198,6 +211,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
           'consent': LegalConsent.currentConsent(),
         }, SetOptions(merge: true));
 
+        // The account's display name and the saved first name were never
+        // set, so reminders and the greeting had no name to use.
+        await UserName.set(first);
+        unawaited(
+          user
+              .updateDisplayName('$first $last'.trim())
+              .catchError((Object _) {}),
+        );
+
         await StrongPasswordFlag.mark(user.uid);
         final signedInAt = await SessionGuard.markSignedIn(user: user);
         unawaited(
@@ -255,8 +277,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             behavior: HitTestBehavior.translucent,
             onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
             child: SingleChildScrollView(
-              keyboardDismissBehavior:
-                  ScrollViewKeyboardDismissBehavior.onDrag,
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
@@ -323,14 +344,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       focused: passwordFocus.hasFocus,
                       errorText: passwordErrorText,
                       suffixIcon: IconButton(
-                        tooltip: isPasswordVisible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
+                        tooltip: isPasswordVisible
+                            ? AppLocalizations.of(context)!.hidePassword
+                            : AppLocalizations.of(context)!.showPassword,
                         icon: Icon(
                           isPasswordVisible
                               ? Icons.visibility_rounded
                               : Icons.visibility_off_rounded,
                         ),
                         onPressed: () => setState(
-                            () => isPasswordVisible = !isPasswordVisible),
+                          () => isPasswordVisible = !isPasswordVisible,
+                        ),
                       ),
                     ),
                   ),
@@ -350,8 +374,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         value: agreedToTerms,
                         onChanged: isBusy
                             ? null
-                            : (value) =>
-                                setState(() => agreedToTerms = value ?? false),
+                            : (value) => setState(
+                                () => agreedToTerms = value ?? false,
+                              ),
                       ),
                       const SizedBox(width: 4),
                       const Expanded(
@@ -376,14 +401,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-                      onPressed:
-                          isBusy || !agreedToTerms ? null : _handleRegister,
+                      onPressed: isBusy || !agreedToTerms
+                          ? null
+                          : _handleRegister,
                       child: isBusy
                           ? const SizedBox(
                               width: 20,
                               height: 20,
-                              child:
-                                  CircularProgressIndicator(strokeWidth: 2.5),
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2.5,
+                              ),
                             )
                           : Text(loc.createAccount),
                     ),
@@ -404,10 +431,7 @@ class _PasswordRuleList extends StatelessWidget {
 
   static const Color _metColour = Color(0xFF2E7D32);
 
-  const _PasswordRuleList({
-    required this.password,
-    required this.showErrors,
-  });
+  const _PasswordRuleList({required this.password, required this.showErrors});
 
   @override
   Widget build(BuildContext context) {
@@ -435,8 +459,8 @@ class _PasswordRuleList extends StatelessWidget {
                     color: rule.met
                         ? _metColour
                         : showErrors
-                            ? scheme.error
-                            : scheme.onSurfaceVariant,
+                        ? scheme.error
+                        : scheme.onSurfaceVariant,
                   ),
                   const SizedBox(width: 8),
                   Flexible(
@@ -448,8 +472,8 @@ class _PasswordRuleList extends StatelessWidget {
                         color: rule.met
                             ? _metColour
                             : showErrors
-                                ? scheme.error
-                                : scheme.onSurfaceVariant,
+                            ? scheme.error
+                            : scheme.onSurfaceVariant,
                       ),
                     ),
                   ),

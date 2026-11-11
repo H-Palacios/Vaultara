@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/platform/privacy_screen.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
@@ -13,7 +12,7 @@ import 'package:vaultara/features/records/logic/record_defaults.dart';
 import 'package:vaultara/features/records/logic/record_match.dart';
 import 'package:vaultara/features/records/view/record_editor_launcher.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
-import 'package:vaultara/shell/shell_state.dart' show kUserFirstNameKey;
+import 'package:vaultara/core/data/user_name.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/data/models/add_record_tutorial_sample.dart';
@@ -28,6 +27,7 @@ import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/features/records/data/enums/record_editor_mode.dart';
 import 'package:vaultara/features/records/data/models/record_input.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/features/profile/data/avatar_repository.dart';
 import 'package:vaultara/core/data/repositories/category_repository.dart';
 import 'package:vaultara/core/data/repositories/group_repository.dart';
 import 'package:vaultara/core/data/models/record_attachment.dart';
@@ -593,8 +593,11 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
     if (holderId == null && r.hasHolderName) {
       final people = PeopleRepository.people.value;
-      final String owner =
-          (FirebaseAuth.instance.currentUser?.displayName ?? '').trim();
+      // The saved full name: the account's display name was never set for
+      // people who registered by email.
+      final String owner = AvatarRepository.knownName.trim().isNotEmpty
+          ? AvatarRepository.knownName.trim()
+          : (FirebaseAuth.instance.currentUser?.displayName ?? '').trim();
       final String? matchId = HolderMatcher.match(
         <String, String>{
           for (final p in people) p.id: p.name,
@@ -825,11 +828,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final bool premium = isPremium;
     navigator.pop();
 
-    String firstName = '';
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      firstName = (prefs.getString(kUserFirstNameKey) ?? '').trim();
-    } catch (_) {}
+    final String firstName = UserName.first;
     if (!host.mounted) return;
 
     if (!await RecordLock.unlock(host, existing) || !host.mounted) return;
