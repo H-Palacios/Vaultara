@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -109,8 +110,10 @@ class HomeScreenState extends State<HomeScreen>
     if (mounted) setState(() {});
   }
 
+  /// After a change made on this phone: the counts are worked out again
+  /// from memory. Changes from other devices arrive through the live sync.
   void refreshOverview() {
-    HomeOverviewLoader.load(force: true);
+    unawaited(HomeOverviewLoader.recompute());
   }
 
   void _openProfile() {

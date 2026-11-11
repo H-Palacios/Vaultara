@@ -1,12 +1,10 @@
 import 'dart:async';
-import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'firebase_options.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/reminders/services/push_service.dart';
@@ -15,42 +13,19 @@ import 'features/security/services/analytics_consent.dart';
 import 'app.dart';
 import 'core/util/temp_files.dart';
 
-final FlutterLocalNotificationsPlugin notificationsPlugin =
-    FlutterLocalNotificationsPlugin();
-
-Future<void> _requestNotificationPermissionsSafe() async {
-  try {
-    if (Platform.isAndroid) {
-      final android = notificationsPlugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>();
-      await android?.requestNotificationsPermission();
-    }
-
-    if (Platform.isIOS) {
-      final ios = notificationsPlugin.resolvePlatformSpecificImplementation<
-          IOSFlutterLocalNotificationsPlugin>();
-
-      await ios?.requestPermissions(
-        alert: true,
-        badge: true,
-        sound: true,
-      );
-    }
-  } catch (_) {}
-}
-
 Future<void> _initAppServices() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   try {
     await FirebaseAppCheck.instance.activate(
-      androidProvider:
-          kDebugMode ? AndroidProvider.debug : AndroidProvider.playIntegrity,
-      appleProvider:
-          kDebugMode ? AppleProvider.debug : AppleProvider.appAttestWithDeviceCheckFallback,
+      androidProvider: kDebugMode
+          ? AndroidProvider.debug
+          : AndroidProvider.playIntegrity,
+      appleProvider: kDebugMode
+          ? AppleProvider.debug
+          : AppleProvider.appAttestWithDeviceCheckFallback,
     );
-    await FirebaseAppCheck.instance.setTokenAutoRefreshEnabled(true);
+    unawaited(FirebaseAppCheck.instance.setTokenAutoRefreshEnabled(true));
   } catch (_) {}
 
   FirebaseFirestore.instance.settings = const Settings(
@@ -66,9 +41,8 @@ Future<void> _initAppServices() async {
 
   unawaited(TempFiles.clear());
 
-  try {
-    await AnalyticsConsent.applyAtStartup();
-  } catch (_) {}
+  // Not needed before the first screen, so it no longer delays it.
+  unawaited(AnalyticsConsent.applyAtStartup().catchError((Object _) {}));
 
   AnalyticsService.observer();
 
@@ -85,9 +59,10 @@ Future<void> main() async {
 
   runApp(const MainApp());
 
+  // Notifications are asked for when a record with a reminder is saved,
+  // with a reason shown first (NotificationAsk), not on first launch.
   WidgetsBinding.instance.addPostFrameCallback((_) async {
     await Future.delayed(const Duration(milliseconds: 1800));
-    await _requestNotificationPermissionsSafe();
     await PushService.sync();
   });
 }

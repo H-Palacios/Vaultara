@@ -250,21 +250,26 @@ class CategoryRepository {
     final categories = <CategoryItem>[];
     final pinned = <String>[];
 
-    final userDoc = await _firestore.collection('users').doc(user.uid).get();
+    // The three reads do not depend on each other, so they run together.
+    final results = await Future.wait<Object?>([
+      _firestore.collection('users').doc(user.uid).get(),
+      _firestore.collection(_categoriesPath(user.uid)).get(),
+      _firestore.doc(_pinnedPath(user.uid)).get(),
+    ]);
+    final userDoc = results[0]! as DocumentSnapshot<Map<String, dynamic>>;
+    final snap = results[1]! as QuerySnapshot<Map<String, dynamic>>;
+    final pinnedDoc = results[2]! as DocumentSnapshot<Map<String, dynamic>>;
+
     final data = userDoc.data();
     final raw = data?['createdCategoriesCount'];
     _createdCategoriesCount = raw is num
         ? raw.toInt()
         : int.tryParse('$raw') ?? 0;
 
-    final snap = await _firestore.collection(_categoriesPath(user.uid)).get();
-
     for (final doc in snap.docs) {
       if (doc.data()['isDeleted'] == true) continue;
       categories.add(_categoryFromDoc(doc));
     }
-
-    final pinnedDoc = await _firestore.doc(_pinnedPath(user.uid)).get();
 
     if (pinnedDoc.exists) {
       final pins = pinnedDoc.data()?['pins'];
