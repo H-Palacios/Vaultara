@@ -45,12 +45,14 @@ class _Body extends StatelessWidget {
         constraints: BoxConstraints(maxHeight: height),
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            // Centred under the drag handle, like the app's other sheets.
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
               child: Text(
                 title,
+                textAlign: TextAlign.center,
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w800,
@@ -62,6 +64,7 @@ class _Body extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(20, 16, 20, 32),
                 child: Text(
                   loc.insightsListEmpty,
+                  textAlign: TextAlign.center,
                   style: TextStyle(color: scheme.onSurfaceVariant),
                 ),
               )
