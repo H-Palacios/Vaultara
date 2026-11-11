@@ -8106,4 +8106,174 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get recordsScan => 'I-scan';
+
+  @override
+  String get insightsCardTitle => 'Matatalinong insight';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Insight $index sa $total';
+  }
+
+  @override
+  String get insightSnooze => 'Mamaya';
+
+  @override
+  String get insightSnoozed => 'Itinago nang isang linggo. Babalik ito kung kailangan pa.';
+
+  @override
+  String get insightAsk => 'Itanong ito';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Ano ang dapat kong gawin?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Mga record';
+
+  @override
+  String get insightsSummaryDueSoon => 'Sa loob ng 30 araw';
+
+  @override
+  String get insightsSummaryNoReminder => 'Walang paalala';
+
+  @override
+  String get insightsListEmpty => 'Wala pang laman dito.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Mga paparating na renewal';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ang $count renewal sa susunod na 3 buwan ay aabot ng mga $amount.',
+      one: 'Ang $count renewal sa susunod na 3 buwan ay aabot ng mga $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Ang linggo mo';
+
+  @override
+  String get weeklyRecapNothing => 'Walang mag-e-expire ngayong linggo.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count record ang mag-e-expire ngayong linggo.',
+      one: '$count record ang mag-e-expire ngayong linggo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nag-renew ka ng $count record noong nakaraang linggo.',
+      one: 'Nag-renew ka ng $count record noong nakaraang linggo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Ang mga renewal noong nakaraang linggo ay nagkahalaga ng $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Isara';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count sa $total record na may paparating na petsa';
+  }
+
+  @override
+  String get timelineRepeats => 'Umuulit';
+
+  @override
+  String get calendarNextExpiry => 'Susunod na pag-expire';
+
+  @override
+  String get calendarViewMonth => 'Buwan';
+
+  @override
+  String get calendarViewList => 'Listahan';
+
+  @override
+  String get calendarLegendExpiry => 'Mag-e-expire';
+
+  @override
+  String get calendarLegendReminder => 'Paalala';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mag-e-expire sa $month',
+      one: '$count mag-e-expire sa $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Walang mag-e-expire sa $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Mga $amount para i-renew';
+  }
+
+  @override
+  String get calendarThisWeek => 'Ngayong linggo';
+
+  @override
+  String get calendarNextWeek => 'Susunod na linggo';
+
+  @override
+  String get calendarListEmpty => 'Wala sa susunod na 12 buwan.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count araw na lang',
+      one: '$count araw na lang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nag-expire $count araw na ang nakalipas',
+      one: 'Nag-expire $count araw na ang nakalipas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Magdagdag ng record na mag-e-expire sa araw na ito';
+
+  @override
+  String get calendarPickMonth => 'Pumili ng buwan';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Paalala: Mag-e-expire ang $name sa $date';
+  }
 }

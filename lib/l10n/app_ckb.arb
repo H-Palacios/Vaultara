@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "کارت یان بەڵگەنامەکە سکان بکە، یان بە دەست زیادی بکە. Vaultara پێش بەسەرچوون بیرت دەخاتەوە.",
-  "recordsScan": "سکان"
+  "recordsScan": "سکان",
+  "insightsCardTitle": "ئامۆژگاریی زیرەک",
+  "insightPosition": "ئامۆژگاری {index} لە {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "دواتر",
+  "insightSnoozed": "بۆ هەفتەیەک شاردرایەوە. ئەگەر هێشتا پێویست بێت دەگەڕێتەوە.",
+  "insightAsk": "لەسەر ئەمە بپرسە",
+  "insightAskPrompt": "{heading}. {body} چی بکەم؟",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "تۆمارەکان",
+  "insightsSummaryDueSoon": "لە ماوەی 30 ڕۆژدا",
+  "insightsSummaryNoReminder": "بێ بیرخستنەوە",
+  "insightsListEmpty": "ئێستا هیچ لێرە نییە.",
+  "smartInsightUpcomingCostHeading": "نوێکردنەوەی داهاتوو",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} نوێکردنەوە لە 3 مانگی داهاتوودا نزیکەی {amount} تێدەچێت.} other{{count} نوێکردنەوە لە 3 مانگی داهاتوودا نزیکەی {amount} تێدەچێت.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "هەفتەکەت",
+  "weeklyRecapNothing": "ئەم هەفتەیە هیچ بەسەرناچێت.",
+  "weeklyRecapExpiring": "{count, plural, =1{ئەم هەفتەیە {count} تۆمار بەسەردەچێت.} other{ئەم هەفتەیە {count} تۆمار بەسەردەچن.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{هەفتەی ڕابردوو {count} تۆمارت نوێکردەوە.} other{هەفتەی ڕابردوو {count} تۆمارت نوێکردەوە.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "نوێکردنەوەکانی هەفتەی ڕابردوو {amount} تێچوون.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "داخستن",
+  "timelineUnlockProgress": "{count} لە {total} تۆمار بە بەرواری داهاتوو",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "دووبارە دەبێتەوە",
+  "calendarNextExpiry": "بەسەرچوونی داهاتوو",
+  "calendarViewMonth": "مانگ",
+  "calendarViewList": "لیست",
+  "calendarLegendExpiry": "بەسەردەچێت",
+  "calendarLegendReminder": "بیرخستنەوە",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} بەسەردەچێت} other{{month}: {count} بەسەردەچن}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: هیچ بەسەرناچێت",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "نزیکەی {amount} بۆ نوێکردنەوە",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ئەم هەفتەیە",
+  "calendarNextWeek": "هەفتەی داهاتوو",
+  "calendarListEmpty": "لە 12 مانگی داهاتوودا هیچ نییە.",
+  "calendarDaysLeft": "{count, plural, =1{{count} ڕۆژ ماوە} other{{count} ڕۆژ ماوە}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} ڕۆژ لەمەوبەر بەسەرچوو} other{{count} ڕۆژ لەمەوبەر بەسەرچوو}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "تۆمارێک زیاد بکە کە لەم ڕۆژەدا بەسەردەچێت",
+  "calendarPickMonth": "مانگێک هەڵبژێرە",
+  "calendarReminderFor": "بیرخستنەوە: {name} لە {date} بەسەردەچێت",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

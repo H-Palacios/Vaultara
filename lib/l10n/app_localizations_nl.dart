@@ -8110,4 +8110,174 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get recordsScan => 'Scannen';
+
+  @override
+  String get insightsCardTitle => 'Slimme inzichten';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Inzicht $index van $total';
+  }
+
+  @override
+  String get insightSnooze => 'Later';
+
+  @override
+  String get insightSnoozed => 'Een week verborgen. Het komt terug als het dan nog nodig is.';
+
+  @override
+  String get insightAsk => 'Hierover vragen';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Wat moet ik doen?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Items';
+
+  @override
+  String get insightsSummaryDueSoon => 'Binnen 30 dagen';
+
+  @override
+  String get insightsSummaryNoReminder => 'Geen herinnering';
+
+  @override
+  String get insightsListEmpty => 'Hier staat nu niets.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Verlengingen op komst';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verlengingen in de komende 3 maanden kosten ongeveer $amount.',
+      one: '$count verlenging in de komende 3 maanden kost ongeveer $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Jouw week';
+
+  @override
+  String get weeklyRecapNothing => 'Deze week verloopt er niets.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items verlopen deze week.',
+      one: '$count item verloopt deze week.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Je hebt vorige week $count items verlengd.',
+      one: 'Je hebt vorige week $count item verlengd.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Verlengingen vorige week kostten $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Sluiten';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count van $total items met een komende datum';
+  }
+
+  @override
+  String get timelineRepeats => 'Herhaalt';
+
+  @override
+  String get calendarNextExpiry => 'Eerstvolgende vervaldatum';
+
+  @override
+  String get calendarViewMonth => 'Maand';
+
+  @override
+  String get calendarViewList => 'Lijst';
+
+  @override
+  String get calendarLegendExpiry => 'Verloopt';
+
+  @override
+  String get calendarLegendReminder => 'Herinnering';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verlopen in $month',
+      one: '$count verloopt in $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Er verloopt niets in $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Ongeveer $amount aan verlengingen';
+  }
+
+  @override
+  String get calendarThisWeek => 'Deze week';
+
+  @override
+  String get calendarNextWeek => 'Volgende week';
+
+  @override
+  String get calendarListEmpty => 'Niets in de komende 12 maanden.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nog $count dagen',
+      one: 'Nog $count dag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dagen geleden verlopen',
+      one: '$count dag geleden verlopen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Item toevoegen dat op deze dag verloopt';
+
+  @override
+  String get calendarPickMonth => 'Kies een maand';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Herinnering: $name verloopt op $date';
+  }
 }

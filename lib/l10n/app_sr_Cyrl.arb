@@ -2690,5 +2690,150 @@
     }
   },
   "recordsEmptyBody": "Скенирајте картицу или документ или га додајте ручно. Vaultara вас подсећа пре истека.",
-  "recordsScan": "Скенирај"
+  "recordsScan": "Скенирај",
+  "insightsCardTitle": "Паметни савети",
+  "insightPosition": "Савет {index} од {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Касније",
+  "insightSnoozed": "Сакривено на недељу дана. Вратиће се ако још буде потребно.",
+  "insightAsk": "Питај о овоме",
+  "insightAskPrompt": "{heading}. {body} Шта треба да урадим?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Записи",
+  "insightsSummaryDueSoon": "У 30 дана",
+  "insightsSummaryNoReminder": "Без подсетника",
+  "insightsListEmpty": "Овде засад нема ничега.",
+  "smartInsightUpcomingCostHeading": "Предстојеће обнове",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Обнове у наредна 3 месеца ({count}) коштаће око {amount}.} other{Обнове у наредна 3 месеца ({count}) коштаће око {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Ваша недеља",
+  "weeklyRecapNothing": "Ове недеље ништа не истиче.",
+  "weeklyRecapExpiring": "{count, plural, =1{Ове недеље истиче записа: {count}.} other{Ове недеље истиче записа: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Прошле недеље обновљено записа: {count}.} other{Прошле недеље обновљено записа: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Обнове прошле недеље коштале су {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Затвори",
+  "timelineUnlockProgress": "{count} од {total} записа са предстојећим датумом",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Понавља се",
+  "calendarNextExpiry": "Следећи истек",
+  "calendarViewMonth": "Месец",
+  "calendarViewList": "Листа",
+  "calendarLegendExpiry": "Истиче",
+  "calendarLegendReminder": "Подсетник",
+  "calendarMonthSummary": "{count, plural, =1{{month}: истиче {count}} other{{month}: истиче {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "У месецу {month} ништа не истиче",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Око {amount} за обнове",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Ова недеља",
+  "calendarNextWeek": "Следећа недеља",
+  "calendarListEmpty": "Ништа у наредних 12 месеци.",
+  "calendarDaysLeft": "{count, plural, =1{Још {count} дан} few{Још {count} дана} other{Још {count} дана}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Истекло пре {count} дан} few{Истекло пре {count} дана} other{Истекло пре {count} дана}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Додај запис који истиче овог дана",
+  "calendarPickMonth": "Изаберите месец",
+  "calendarReminderFor": "Подсетник: {name} истиче {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

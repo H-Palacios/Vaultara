@@ -2728,5 +2728,150 @@
     }
   },
   "recordsEmptyBody": "Scan an cárta nó an doiciméad, nó cuir leis de láimh é. Cuirfidh Vaultara i gcuimhne duit sula dtéann sé in éag.",
-  "recordsScan": "Scan"
+  "recordsScan": "Scan",
+  "insightsCardTitle": "Léargais chliste",
+  "insightPosition": "Léargas {index} as {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Ar ball",
+  "insightSnoozed": "I bhfolach ar feadh seachtaine. Fillfidh sé má tá gá leis fós.",
+  "insightAsk": "Fiafraigh faoi seo",
+  "insightAskPrompt": "{heading}. {body} Cad ba chóir dom a dhéanamh?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Taifid",
+  "insightsSummaryDueSoon": "Laistigh de 30 lá",
+  "insightsSummaryNoReminder": "Gan meabhrúchán",
+  "insightsListEmpty": "Níl aon rud anseo faoi láthair.",
+  "smartInsightUpcomingCostHeading": "Athnuachain le teacht",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Cosnóidh {count} athnuachan sna 3 mhí atá romhainn thart ar {amount}.} other{Cosnóidh {count} athnuachan sna 3 mhí atá romhainn thart ar {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Do sheachtain",
+  "weeklyRecapNothing": "Níl aon rud ag dul in éag an tseachtain seo.",
+  "weeklyRecapExpiring": "{count, plural, =1{Tá {count} taifead ag dul in éag an tseachtain seo.} other{Tá {count} taifead ag dul in éag an tseachtain seo.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{D'athnuaigh tú {count} taifead an tseachtain seo caite.} other{D'athnuaigh tú {count} taifead an tseachtain seo caite.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Chosain athnuachain na seachtaine seo caite {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Dún",
+  "timelineUnlockProgress": "{count} as {total} taifead le dáta le teacht",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Athrá",
+  "calendarNextExpiry": "An chéad éag eile",
+  "calendarViewMonth": "Mí",
+  "calendarViewList": "Liosta",
+  "calendarLegendExpiry": "Téann in éag",
+  "calendarLegendReminder": "Meabhrúchán",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} ag dul in éag} other{{month}: {count} ag dul in éag}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Níl aon rud ag dul in éag in {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Thart ar {amount} le hathnuachan",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "An tseachtain seo",
+  "calendarNextWeek": "An tseachtain seo chugainn",
+  "calendarListEmpty": "Níl aon rud sna 12 mhí atá romhainn.",
+  "calendarDaysLeft": "{count, plural, =1{{count} lá fágtha} other{{count} lá fágtha}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Chuaigh in éag {count} lá ó shin} other{Chuaigh in éag {count} lá ó shin}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Cuir taifead leis a théann in éag an lá seo",
+  "calendarPickMonth": "Roghnaigh mí",
+  "calendarReminderFor": "Meabhrúchán: téann {name} in éag ar {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

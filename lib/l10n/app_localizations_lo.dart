@@ -8048,4 +8048,174 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get recordsScan => 'ສະແກນ';
+
+  @override
+  String get insightsCardTitle => 'ຄຳແນະນຳອັດສະລິຍະ';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'ຄຳແນະນຳ $index ຈາກ $total';
+  }
+
+  @override
+  String get insightSnooze => 'ພາຍຫຼັງ';
+
+  @override
+  String get insightSnoozed => 'ເຊື່ອງໄວ້ໜຶ່ງອາທິດ. ມັນຈະກັບມາຖ້າຍັງຕ້ອງການ.';
+
+  @override
+  String get insightAsk => 'ຖາມກ່ຽວກັບເລື່ອງນີ້';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body ຂ້ອຍຄວນເຮັດແນວໃດ?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'ລາຍການ';
+
+  @override
+  String get insightsSummaryDueSoon => 'ພາຍໃນ 30 ມື້';
+
+  @override
+  String get insightsSummaryNoReminder => 'ບໍ່ມີການເຕືອນ';
+
+  @override
+  String get insightsListEmpty => 'ຕອນນີ້ບໍ່ມີຫຍັງຢູ່ນີ້.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'ການຕໍ່ອາຍຸທີ່ກຳລັງຈະມາ';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ການຕໍ່ອາຍຸ $count ລາຍການໃນ 3 ເດືອນຂ້າງໜ້າຈະມີຄ່າໃຊ້ຈ່າຍປະມານ $amount.',
+      one: 'ການຕໍ່ອາຍຸ $count ລາຍການໃນ 3 ເດືອນຂ້າງໜ້າຈະມີຄ່າໃຊ້ຈ່າຍປະມານ $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'ອາທິດຂອງທ່ານ';
+
+  @override
+  String get weeklyRecapNothing => 'ອາທິດນີ້ບໍ່ມີຫຍັງໝົດອາຍຸ.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ອາທິດນີ້ມີ $count ລາຍການໝົດອາຍຸ.',
+      one: 'ອາທິດນີ້ມີ $count ລາຍການໝົດອາຍຸ.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ອາທິດແລ້ວທ່ານຕໍ່ອາຍຸ $count ລາຍການ.',
+      one: 'ອາທິດແລ້ວທ່ານຕໍ່ອາຍຸ $count ລາຍການ.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'ການຕໍ່ອາຍຸອາທິດແລ້ວມີຄ່າໃຊ້ຈ່າຍ $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'ປິດ';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count ຈາກ $total ລາຍການທີ່ມີວັນທີກຳລັງຈະມາ';
+  }
+
+  @override
+  String get timelineRepeats => 'ຊ້ຳ';
+
+  @override
+  String get calendarNextExpiry => 'ການໝົດອາຍຸຕໍ່ໄປ';
+
+  @override
+  String get calendarViewMonth => 'ເດືອນ';
+
+  @override
+  String get calendarViewList => 'ລາຍຊື່';
+
+  @override
+  String get calendarLegendExpiry => 'ໝົດອາຍຸ';
+
+  @override
+  String get calendarLegendReminder => 'ການເຕືອນ';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: ໝົດອາຍຸ $count',
+      one: '$month: ໝົດອາຍຸ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: ບໍ່ມີຫຍັງໝົດອາຍຸ';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'ປະມານ $amount ສຳລັບການຕໍ່ອາຍຸ';
+  }
+
+  @override
+  String get calendarThisWeek => 'ອາທິດນີ້';
+
+  @override
+  String get calendarNextWeek => 'ອາທິດໜ້າ';
+
+  @override
+  String get calendarListEmpty => 'ບໍ່ມີຫຍັງໃນ 12 ເດືອນຂ້າງໜ້າ.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ເຫຼືອ $count ມື້',
+      one: 'ເຫຼືອ $count ມື້',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ໝົດອາຍຸແລ້ວ $count ມື້',
+      one: 'ໝົດອາຍຸແລ້ວ $count ມື້',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'ເພີ່ມລາຍການທີ່ໝົດອາຍຸໃນມື້ນີ້';
+
+  @override
+  String get calendarPickMonth => 'ເລືອກເດືອນ';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'ການເຕືອນ: $name ໝົດອາຍຸວັນທີ $date';
+  }
 }

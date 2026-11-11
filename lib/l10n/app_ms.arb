@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Imbas kad atau dokumen, atau tambah secara manual. Vaultara akan mengingatkan anda sebelum tamat tempoh.",
-  "recordsScan": "Imbas"
+  "recordsScan": "Imbas",
+  "insightsCardTitle": "Pandangan pintar",
+  "insightPosition": "Pandangan {index} daripada {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Kemudian",
+  "insightSnoozed": "Disembunyikan selama seminggu. Ia akan kembali jika masih perlu.",
+  "insightAsk": "Tanya tentang ini",
+  "insightAskPrompt": "{heading}. {body} Apa yang perlu saya buat?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Rekod",
+  "insightsSummaryDueSoon": "Dalam 30 hari",
+  "insightsSummaryNoReminder": "Tiada peringatan",
+  "insightsListEmpty": "Tiada apa-apa di sini buat masa ini.",
+  "smartInsightUpcomingCostHeading": "Pembaharuan akan datang",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} pembaharuan dalam 3 bulan akan datang akan menelan kos kira-kira {amount}.} other{{count} pembaharuan dalam 3 bulan akan datang akan menelan kos kira-kira {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Minggu anda",
+  "weeklyRecapNothing": "Tiada yang tamat tempoh minggu ini.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} rekod tamat tempoh minggu ini.} other{{count} rekod tamat tempoh minggu ini.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Anda memperbaharui {count} rekod minggu lepas.} other{Anda memperbaharui {count} rekod minggu lepas.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Pembaharuan minggu lepas menelan kos {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Tutup",
+  "timelineUnlockProgress": "{count} daripada {total} rekod dengan tarikh akan datang",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Berulang",
+  "calendarNextExpiry": "Tamat tempoh seterusnya",
+  "calendarViewMonth": "Bulan",
+  "calendarViewList": "Senarai",
+  "calendarLegendExpiry": "Tamat tempoh",
+  "calendarLegendReminder": "Peringatan",
+  "calendarMonthSummary": "{count, plural, =1{{count} tamat tempoh pada {month}} other{{count} tamat tempoh pada {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Tiada yang tamat tempoh pada {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Kira-kira {amount} untuk diperbaharui",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Minggu ini",
+  "calendarNextWeek": "Minggu depan",
+  "calendarListEmpty": "Tiada apa-apa dalam 12 bulan akan datang.",
+  "calendarDaysLeft": "{count, plural, =1{{count} hari lagi} other{{count} hari lagi}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Tamat tempoh {count} hari lalu} other{Tamat tempoh {count} hari lalu}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Tambah rekod yang tamat tempoh pada hari ini",
+  "calendarPickMonth": "Pilih bulan",
+  "calendarReminderFor": "Peringatan: {name} tamat tempoh pada {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

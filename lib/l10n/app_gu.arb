@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "કાર્ડ કે દસ્તાવેજ સ્કૅન કરો, અથવા જાતે ઉમેરો. મુદત પૂરી થાય તે પહેલાં Vaultara યાદ કરાવશે.",
-  "recordsScan": "સ્કૅન કરો"
+  "recordsScan": "સ્કૅન કરો",
+  "insightsCardTitle": "સ્માર્ટ સૂચનો",
+  "insightPosition": "સૂચન {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "પછી",
+  "insightSnoozed": "એક અઠવાડિયા માટે છુપાવ્યું. જરૂર હશે તો ફરી દેખાશે.",
+  "insightAsk": "આ વિશે પૂછો",
+  "insightAskPrompt": "{heading}. {body} મારે શું કરવું જોઈએ?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "રેકોર્ડ",
+  "insightsSummaryDueSoon": "30 દિવસમાં",
+  "insightsSummaryNoReminder": "કોઈ રિમાઇન્ડર નથી",
+  "insightsListEmpty": "અહીં હમણાં કંઈ નથી.",
+  "smartInsightUpcomingCostHeading": "આવનારા નવીનીકરણ",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{આગામી 3 મહિનામાં {count} નવીનીકરણનો ખર્ચ આશરે {amount} થશે.} other{આગામી 3 મહિનામાં {count} નવીનીકરણનો ખર્ચ આશરે {amount} થશે.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "તમારું અઠવાડિયું",
+  "weeklyRecapNothing": "આ અઠવાડિયે કંઈ સમાપ્ત થતું નથી.",
+  "weeklyRecapExpiring": "{count, plural, =1{આ અઠવાડિયે {count} રેકોર્ડ સમાપ્ત થાય છે.} other{આ અઠવાડિયે {count} રેકોર્ડ સમાપ્ત થાય છે.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{તમે ગયા અઠવાડિયે {count} રેકોર્ડ નવીકરણ કર્યો.} other{તમે ગયા અઠવાડિયે {count} રેકોર્ડ નવીકરણ કર્યા.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "ગયા અઠવાડિયાના નવીનીકરણનો ખર્ચ {amount} થયો.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "બંધ કરો",
+  "timelineUnlockProgress": "આવનારી તારીખવાળા {total} માંથી {count} રેકોર્ડ",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "પુનરાવર્તિત",
+  "calendarNextExpiry": "આગલી મુદત",
+  "calendarViewMonth": "મહિનો",
+  "calendarViewList": "યાદી",
+  "calendarLegendExpiry": "મુદત પૂરી",
+  "calendarLegendReminder": "રિમાઇન્ડર",
+  "calendarMonthSummary": "{count, plural, =1{{month}માં {count}ની મુદત પૂરી} other{{month}માં {count}ની મુદત પૂરી}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}માં કંઈ સમાપ્ત થતું નથી",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "નવીનીકરણ માટે આશરે {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "આ અઠવાડિયે",
+  "calendarNextWeek": "આવતા અઠવાડિયે",
+  "calendarListEmpty": "આગામી 12 મહિનામાં કંઈ નથી.",
+  "calendarDaysLeft": "{count, plural, =1{{count} દિવસ બાકી} other{{count} દિવસ બાકી}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} દિવસ પહેલાં મુદત પૂરી} other{{count} દિવસ પહેલાં મુદત પૂરી}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "આ દિવસે સમાપ્ત થતો રેકોર્ડ ઉમેરો",
+  "calendarPickMonth": "મહિનો પસંદ કરો",
+  "calendarReminderFor": "રિમાઇન્ડર: {name}ની મુદત {date}ના રોજ પૂરી",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

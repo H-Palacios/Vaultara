@@ -8106,4 +8106,174 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skena';
+
+  @override
+  String get insightsCardTitle => 'Iingcebiso ezikrelekrele';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Ingcebiso $index kwezi-$total';
+  }
+
+  @override
+  String get insightSnooze => 'Kamva';
+
+  @override
+  String get insightSnoozed => 'Ifihliwe iveki. Iza kubuya ukuba isafuneka.';
+
+  @override
+  String get insightAsk => 'Buza ngale nto';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Ndenze ntoni?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Iirekhodi';
+
+  @override
+  String get insightsSummaryDueSoon => 'Kwiintsuku ezingama-30';
+
+  @override
+  String get insightsSummaryNoReminder => 'Akukho sikhumbuzo';
+
+  @override
+  String get insightsListEmpty => 'Akukho nto apha okwangoku.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Ukuhlaziywa okuzayo';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ukuhlaziywa oku-$count kwiinyanga ezi-3 ezizayo kuya kuxabisa malunga ne-$amount.',
+      one: 'Ukuhlaziywa oku-$count kwiinyanga ezi-3 ezizayo kuya kuxabisa malunga ne-$amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Iveki yakho';
+
+  @override
+  String get weeklyRecapNothing => 'Akukho nto iphelelwa kule veki.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iirekhodi ezi-$count ziphelelwa kule veki.',
+      one: 'Irekhodi eli-$count liphelelwa kule veki.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Uhlaziye iirekhodi ezi-$count kwiveki ephelileyo.',
+      one: 'Uhlaziye irekhodi eli-$count kwiveki ephelileyo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Ukuhlaziywa kweveki ephelileyo kuxabise $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Vala';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'Iirekhodi ezi-$count kwezi-$total ezinomhla ozayo';
+  }
+
+  @override
+  String get timelineRepeats => 'Iyaphinda';
+
+  @override
+  String get calendarNextExpiry => 'Ukuphelelwa okulandelayo';
+
+  @override
+  String get calendarViewMonth => 'Inyanga';
+
+  @override
+  String get calendarViewList => 'Uluhlu';
+
+  @override
+  String get calendarLegendExpiry => 'Iphelelwa';
+
+  @override
+  String get calendarLegendReminder => 'Isikhumbuzo';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count ziphelelwa',
+      one: '$month: $count iphelelwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: akukho nto iphelelwayo';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Malunga ne-$amount ukuhlaziya';
+  }
+
+  @override
+  String get calendarThisWeek => 'Le veki';
+
+  @override
+  String get calendarNextWeek => 'Iveki ezayo';
+
+  @override
+  String get calendarListEmpty => 'Akukho nto kwiinyanga ezili-12 ezizayo.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusele iintsuku ezi-$count',
+      one: 'Kusele usuku olu-$count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iphelelwe kwiintsuku ezi-$count ezidlulileyo',
+      one: 'Iphelelwe kwiintsuku ezi-$count ezidlulileyo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Yongeza irekhodi eliphelelwa ngalo mhla';
+
+  @override
+  String get calendarPickMonth => 'Khetha inyanga';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Isikhumbuzo: $name iphelelwa ngo-$date';
+  }
 }

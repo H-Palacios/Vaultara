@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Changanua kadi au hati, au iongeze mwenyewe. Vaultara itakukumbusha kabla muda wake haujaisha.",
-  "recordsScan": "Changanua"
+  "recordsScan": "Changanua",
+  "insightsCardTitle": "Maarifa mahiri",
+  "insightPosition": "Maarifa {index} kati ya {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Baadaye",
+  "insightSnoozed": "Imefichwa kwa wiki moja. Itarudi ikiwa bado inahitajika.",
+  "insightAsk": "Uliza kuhusu hili",
+  "insightAskPrompt": "{heading}. {body} Nifanye nini?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Rekodi",
+  "insightsSummaryDueSoon": "Ndani ya siku 30",
+  "insightsSummaryNoReminder": "Hakuna kikumbusho",
+  "insightsListEmpty": "Hakuna kitu hapa kwa sasa.",
+  "smartInsightUpcomingCostHeading": "Usasishaji unaokuja",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Usasishaji {count} katika miezi 3 ijayo utagharimu takriban {amount}.} other{Usasishaji {count} katika miezi 3 ijayo utagharimu takriban {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Wiki yako",
+  "weeklyRecapNothing": "Hakuna kinachoisha wiki hii.",
+  "weeklyRecapExpiring": "{count, plural, =1{Rekodi {count} inaisha wiki hii.} other{Rekodi {count} zinaisha wiki hii.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Ulisasisha rekodi {count} wiki iliyopita.} other{Ulisasisha rekodi {count} wiki iliyopita.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Usasishaji wa wiki iliyopita uligharimu {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Funga",
+  "timelineUnlockProgress": "Rekodi {count} kati ya {total} zenye tarehe inayokuja",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Hujirudia",
+  "calendarNextExpiry": "Muda unaofuata kuisha",
+  "calendarViewMonth": "Mwezi",
+  "calendarViewList": "Orodha",
+  "calendarLegendExpiry": "Inaisha",
+  "calendarLegendReminder": "Kikumbusho",
+  "calendarMonthSummary": "{count, plural, =1{{count} inaisha {month}} other{{count} zinaisha {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Hakuna kinachoisha {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Takriban {amount} kusasisha",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Wiki hii",
+  "calendarNextWeek": "Wiki ijayo",
+  "calendarListEmpty": "Hakuna kitu katika miezi 12 ijayo.",
+  "calendarDaysLeft": "{count, plural, =1{Imebaki siku {count}} other{Zimebaki siku {count}}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Iliisha siku {count} iliyopita} other{Iliisha siku {count} zilizopita}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Ongeza rekodi inayoisha siku hii",
+  "calendarPickMonth": "Chagua mwezi",
+  "calendarReminderFor": "Kikumbusho: {name} inaisha {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

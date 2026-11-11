@@ -8110,4 +8110,174 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skano';
+
+  @override
+  String get insightsCardTitle => 'Këshilla të zgjuara';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Këshilla $index nga $total';
+  }
+
+  @override
+  String get insightSnooze => 'Më vonë';
+
+  @override
+  String get insightSnoozed => 'U fsheh për një javë. Kthehet nëse ende duhet.';
+
+  @override
+  String get insightAsk => 'Pyet për këtë';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Çfarë duhet të bëj?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Regjistrime';
+
+  @override
+  String get insightsSummaryDueSoon => 'Brenda 30 ditëve';
+
+  @override
+  String get insightsSummaryNoReminder => 'Pa kujtesë';
+
+  @override
+  String get insightsListEmpty => 'Nuk ka asgjë këtu tani.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Rinovime në pritje';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count rinovime në 3 muajt e ardhshëm do të kushtojnë rreth $amount.',
+      one: '$count rinovim në 3 muajt e ardhshëm do të kushtojë rreth $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Java juaj';
+
+  @override
+  String get weeklyRecapNothing => 'Asgjë nuk skadon këtë javë.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count regjistrime skadojnë këtë javë.',
+      one: '$count regjistrim skadon këtë javë.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rinovuat $count regjistrime javën e kaluar.',
+      one: 'Rinovuat $count regjistrim javën e kaluar.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Rinovimet e javës së kaluar kushtuan $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Mbyll';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count nga $total regjistrime me datë të ardhshme';
+  }
+
+  @override
+  String get timelineRepeats => 'Përsëritet';
+
+  @override
+  String get calendarNextExpiry => 'Skadimi i radhës';
+
+  @override
+  String get calendarViewMonth => 'Muaj';
+
+  @override
+  String get calendarViewList => 'Listë';
+
+  @override
+  String get calendarLegendExpiry => 'Skadon';
+
+  @override
+  String get calendarLegendReminder => 'Kujtesë';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count skadojnë në $month',
+      one: '$count skadon në $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Asgjë nuk skadon në $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Rreth $amount për rinovime';
+  }
+
+  @override
+  String get calendarThisWeek => 'Këtë javë';
+
+  @override
+  String get calendarNextWeek => 'Javën tjetër';
+
+  @override
+  String get calendarListEmpty => 'Asgjë në 12 muajt e ardhshëm.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mbeten $count ditë',
+      one: 'Mbetet $count ditë',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Skadoi para $count ditësh',
+      one: 'Skadoi para $count dite',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Shto një regjistrim që skadon këtë ditë';
+
+  @override
+  String get calendarPickMonth => 'Zgjidh muajin';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Kujtesë: $name skadon më $date';
+  }
 }

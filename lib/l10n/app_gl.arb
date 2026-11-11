@@ -2728,5 +2728,150 @@
     }
   },
   "recordsEmptyBody": "Escanea a tarxeta ou o documento, ou engádeo a man. Vaultara avísate antes de que caduque.",
-  "recordsScan": "Escanear"
+  "recordsScan": "Escanear",
+  "insightsCardTitle": "Consellos intelixentes",
+  "insightPosition": "Consello {index} de {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Máis tarde",
+  "insightSnoozed": "Agochado durante unha semana. Volverá se aínda fai falta.",
+  "insightAsk": "Preguntar sobre isto",
+  "insightAskPrompt": "{heading}. {body} Que debo facer?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Rexistros",
+  "insightsSummaryDueSoon": "En 30 días",
+  "insightsSummaryNoReminder": "Sen recordatorio",
+  "insightsListEmpty": "Aquí non hai nada agora mesmo.",
+  "smartInsightUpcomingCostHeading": "Renovacións próximas",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} renovación nos próximos 3 meses custará uns {amount}.} other{{count} renovacións nos próximos 3 meses custarán uns {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "A túa semana",
+  "weeklyRecapNothing": "Esta semana non caduca nada.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} rexistro caduca esta semana.} other{{count} rexistros caducan esta semana.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{A semana pasada renovaches {count} rexistro.} other{A semana pasada renovaches {count} rexistros.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "As renovacións da semana pasada custaron {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Pechar",
+  "timelineUnlockProgress": "{count} de {total} rexistros cunha data próxima",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Repítese",
+  "calendarNextExpiry": "Próxima caducidade",
+  "calendarViewMonth": "Mes",
+  "calendarViewList": "Lista",
+  "calendarLegendExpiry": "Caduca",
+  "calendarLegendReminder": "Recordatorio",
+  "calendarMonthSummary": "{count, plural, =1{{count} caduca en {month}} other{{count} caducan en {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Non caduca nada en {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Uns {amount} en renovacións",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Esta semana",
+  "calendarNextWeek": "A próxima semana",
+  "calendarListEmpty": "Non hai nada nos próximos 12 meses.",
+  "calendarDaysLeft": "{count, plural, =1{Queda {count} día} other{Quedan {count} días}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Caducou hai {count} día} other{Caducou hai {count} días}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Engadir un rexistro que caduca este día",
+  "calendarPickMonth": "Escoller un mes",
+  "calendarReminderFor": "Recordatorio: {name} caduca o {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

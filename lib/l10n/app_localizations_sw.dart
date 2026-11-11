@@ -8106,4 +8106,174 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get recordsScan => 'Changanua';
+
+  @override
+  String get insightsCardTitle => 'Maarifa mahiri';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Maarifa $index kati ya $total';
+  }
+
+  @override
+  String get insightSnooze => 'Baadaye';
+
+  @override
+  String get insightSnoozed => 'Imefichwa kwa wiki moja. Itarudi ikiwa bado inahitajika.';
+
+  @override
+  String get insightAsk => 'Uliza kuhusu hili';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Nifanye nini?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Rekodi';
+
+  @override
+  String get insightsSummaryDueSoon => 'Ndani ya siku 30';
+
+  @override
+  String get insightsSummaryNoReminder => 'Hakuna kikumbusho';
+
+  @override
+  String get insightsListEmpty => 'Hakuna kitu hapa kwa sasa.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Usasishaji unaokuja';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Usasishaji $count katika miezi 3 ijayo utagharimu takriban $amount.',
+      one: 'Usasishaji $count katika miezi 3 ijayo utagharimu takriban $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Wiki yako';
+
+  @override
+  String get weeklyRecapNothing => 'Hakuna kinachoisha wiki hii.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rekodi $count zinaisha wiki hii.',
+      one: 'Rekodi $count inaisha wiki hii.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ulisasisha rekodi $count wiki iliyopita.',
+      one: 'Ulisasisha rekodi $count wiki iliyopita.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Usasishaji wa wiki iliyopita uligharimu $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Funga';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'Rekodi $count kati ya $total zenye tarehe inayokuja';
+  }
+
+  @override
+  String get timelineRepeats => 'Hujirudia';
+
+  @override
+  String get calendarNextExpiry => 'Muda unaofuata kuisha';
+
+  @override
+  String get calendarViewMonth => 'Mwezi';
+
+  @override
+  String get calendarViewList => 'Orodha';
+
+  @override
+  String get calendarLegendExpiry => 'Inaisha';
+
+  @override
+  String get calendarLegendReminder => 'Kikumbusho';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count zinaisha $month',
+      one: '$count inaisha $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Hakuna kinachoisha $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Takriban $amount kusasisha';
+  }
+
+  @override
+  String get calendarThisWeek => 'Wiki hii';
+
+  @override
+  String get calendarNextWeek => 'Wiki ijayo';
+
+  @override
+  String get calendarListEmpty => 'Hakuna kitu katika miezi 12 ijayo.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zimebaki siku $count',
+      one: 'Imebaki siku $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iliisha siku $count zilizopita',
+      one: 'Iliisha siku $count iliyopita',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Ongeza rekodi inayoisha siku hii';
+
+  @override
+  String get calendarPickMonth => 'Chagua mwezi';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Kikumbusho: $name inaisha $date';
+  }
 }

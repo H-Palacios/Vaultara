@@ -2721,5 +2721,150 @@
     }
   },
   "recordsEmptyBody": "Pindai kartu atau dokumen, atau tambahkan secara manual. Vaultara mengingatkan Anda sebelum kedaluwarsa.",
-  "recordsScan": "Pindai"
+  "recordsScan": "Pindai",
+  "insightsCardTitle": "Wawasan pintar",
+  "insightPosition": "Wawasan {index} dari {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Nanti",
+  "insightSnoozed": "Disembunyikan selama seminggu. Akan muncul lagi jika masih perlu.",
+  "insightAsk": "Tanyakan ini",
+  "insightAskPrompt": "{heading}. {body} Apa yang harus saya lakukan?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Catatan",
+  "insightsSummaryDueSoon": "Dalam 30 hari",
+  "insightsSummaryNoReminder": "Tanpa pengingat",
+  "insightsListEmpty": "Belum ada apa-apa di sini.",
+  "smartInsightUpcomingCostHeading": "Perpanjangan mendatang",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} perpanjangan dalam 3 bulan ke depan akan menghabiskan sekitar {amount}.} other{{count} perpanjangan dalam 3 bulan ke depan akan menghabiskan sekitar {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Minggu Anda",
+  "weeklyRecapNothing": "Tidak ada yang kedaluwarsa minggu ini.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} catatan kedaluwarsa minggu ini.} other{{count} catatan kedaluwarsa minggu ini.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Anda memperpanjang {count} catatan minggu lalu.} other{Anda memperpanjang {count} catatan minggu lalu.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Perpanjangan minggu lalu menghabiskan {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Tutup",
+  "timelineUnlockProgress": "{count} dari {total} catatan dengan tanggal mendatang",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Berulang",
+  "calendarNextExpiry": "Kedaluwarsa berikutnya",
+  "calendarViewMonth": "Bulan",
+  "calendarViewList": "Daftar",
+  "calendarLegendExpiry": "Kedaluwarsa",
+  "calendarLegendReminder": "Pengingat",
+  "calendarMonthSummary": "{count, plural, =1{{count} kedaluwarsa di bulan {month}} other{{count} kedaluwarsa di bulan {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Tidak ada yang kedaluwarsa di bulan {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Sekitar {amount} untuk perpanjangan",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Minggu ini",
+  "calendarNextWeek": "Minggu depan",
+  "calendarListEmpty": "Tidak ada apa pun dalam 12 bulan ke depan.",
+  "calendarDaysLeft": "{count, plural, =1{{count} hari lagi} other{{count} hari lagi}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Kedaluwarsa {count} hari lalu} other{Kedaluwarsa {count} hari lalu}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Tambahkan catatan yang kedaluwarsa hari ini",
+  "calendarPickMonth": "Pilih bulan",
+  "calendarReminderFor": "Pengingat: {name} kedaluwarsa pada {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

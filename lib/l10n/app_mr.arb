@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "कार्ड किंवा दस्तऐवज स्कॅन करा, किंवा स्वतः जोडा. मुदत संपण्यापूर्वी Vaultara आठवण करून देईल.",
-  "recordsScan": "स्कॅन करा"
+  "recordsScan": "स्कॅन करा",
+  "insightsCardTitle": "स्मार्ट सूचना",
+  "insightPosition": "सूचना {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "नंतर",
+  "insightSnoozed": "एका आठवड्यासाठी लपवले. गरज असल्यास पुन्हा दिसेल.",
+  "insightAsk": "याबद्दल विचारा",
+  "insightAskPrompt": "{heading}. {body} मी काय करावे?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "नोंदी",
+  "insightsSummaryDueSoon": "30 दिवसांत",
+  "insightsSummaryNoReminder": "स्मरणपत्र नाही",
+  "insightsListEmpty": "सध्या इथे काही नाही.",
+  "smartInsightUpcomingCostHeading": "येणारी नूतनीकरणे",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{पुढील 3 महिन्यांतील {count} नूतनीकरणाचा खर्च सुमारे {amount} येईल.} other{पुढील 3 महिन्यांतील {count} नूतनीकरणांचा खर्च सुमारे {amount} येईल.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "तुमचा आठवडा",
+  "weeklyRecapNothing": "या आठवड्यात काहीही संपत नाही.",
+  "weeklyRecapExpiring": "{count, plural, =1{या आठवड्यात {count} नोंद संपत आहे.} other{या आठवड्यात {count} नोंदी संपत आहेत.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{तुम्ही गेल्या आठवड्यात {count} नोंद नूतनीकृत केली.} other{तुम्ही गेल्या आठवड्यात {count} नोंदी नूतनीकृत केल्या.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "गेल्या आठवड्यातील नूतनीकरणांचा खर्च {amount} आला.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "बंद करा",
+  "timelineUnlockProgress": "येणाऱ्या तारखेच्या {total} पैकी {count} नोंदी",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "पुनरावृत्ती",
+  "calendarNextExpiry": "पुढील मुदत",
+  "calendarViewMonth": "महिना",
+  "calendarViewList": "यादी",
+  "calendarLegendExpiry": "मुदत संपते",
+  "calendarLegendReminder": "स्मरणपत्र",
+  "calendarMonthSummary": "{count, plural, =1{{month} मध्ये {count} ची मुदत संपते} other{{month} मध्ये {count} ची मुदत संपते}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} मध्ये काहीही संपत नाही",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "नूतनीकरणासाठी सुमारे {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "हा आठवडा",
+  "calendarNextWeek": "पुढचा आठवडा",
+  "calendarListEmpty": "पुढील 12 महिन्यांत काहीही नाही.",
+  "calendarDaysLeft": "{count, plural, =1{{count} दिवस बाकी} other{{count} दिवस बाकी}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} दिवसांपूर्वी मुदत संपली} other{{count} दिवसांपूर्वी मुदत संपली}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "या दिवशी संपणारी नोंद जोडा",
+  "calendarPickMonth": "महिना निवडा",
+  "calendarReminderFor": "स्मरणपत्र: {name} ची मुदत {date} ला संपते",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

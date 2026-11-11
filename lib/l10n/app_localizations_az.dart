@@ -8106,4 +8106,174 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skan et';
+
+  @override
+  String get insightsCardTitle => 'Ağıllı tövsiyələr';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Tövsiyə $index/$total';
+  }
+
+  @override
+  String get insightSnooze => 'Sonra';
+
+  @override
+  String get insightSnoozed => 'Bir həftəlik gizlədildi. Hələ lazım olsa, geri qayıdacaq.';
+
+  @override
+  String get insightAsk => 'Bu barədə soruş';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Nə etməliyəm?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Qeydlər';
+
+  @override
+  String get insightsSummaryDueSoon => '30 gün ərzində';
+
+  @override
+  String get insightsSummaryNoReminder => 'Xatırlatma yoxdur';
+
+  @override
+  String get insightsListEmpty => 'Hələ burada heç nə yoxdur.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Qarşıdakı yeniləmələr';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Növbəti 3 aydakı $count yeniləmə təxminən $amount olacaq.',
+      one: 'Növbəti 3 aydakı $count yeniləmə təxminən $amount olacaq.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Həftəniz';
+
+  @override
+  String get weeklyRecapNothing => 'Bu həftə heç nəyin müddəti bitmir.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bu həftə $count qeydin müddəti bitir.',
+      one: 'Bu həftə $count qeydin müddəti bitir.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Keçən həftə $count qeyd yenilədiniz.',
+      one: 'Keçən həftə $count qeyd yenilədiniz.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Keçən həftənin yeniləmələri $amount oldu.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Bağla';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'Yaxın tarixi olan $total qeyddən $count';
+  }
+
+  @override
+  String get timelineRepeats => 'Təkrarlanır';
+
+  @override
+  String get calendarNextExpiry => 'Növbəti bitmə';
+
+  @override
+  String get calendarViewMonth => 'Ay';
+
+  @override
+  String get calendarViewList => 'Siyahı';
+
+  @override
+  String get calendarLegendExpiry => 'Bitir';
+
+  @override
+  String get calendarLegendReminder => 'Xatırlatma';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count bitir',
+      one: '$month: $count bitir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: heç nə bitmir';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Yeniləməyə təxminən $amount';
+  }
+
+  @override
+  String get calendarThisWeek => 'Bu həftə';
+
+  @override
+  String get calendarNextWeek => 'Gələn həftə';
+
+  @override
+  String get calendarListEmpty => 'Növbəti 12 ayda heç nə yoxdur.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count gün qalıb',
+      one: '$count gün qalıb',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count gün əvvəl bitib',
+      one: '$count gün əvvəl bitib',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Bu gün bitən qeyd əlavə et';
+
+  @override
+  String get calendarPickMonth => 'Ay seçin';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Xatırlatma: $name $date tarixində bitir';
+  }
 }

@@ -8048,6 +8048,176 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get recordsScan => '扫描';
+
+  @override
+  String get insightsCardTitle => '智能提示';
+
+  @override
+  String insightPosition(int index, int total) {
+    return '第 $index 条，共 $total 条';
+  }
+
+  @override
+  String get insightSnooze => '稍后';
+
+  @override
+  String get insightSnoozed => '已隐藏一周。如果仍需处理，它会再次出现。';
+
+  @override
+  String get insightAsk => '就此提问';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading。$body 我该怎么做？';
+  }
+
+  @override
+  String get insightsSummaryRecords => '记录';
+
+  @override
+  String get insightsSummaryDueSoon => '30 天内到期';
+
+  @override
+  String get insightsSummaryNoReminder => '无提醒';
+
+  @override
+  String get insightsListEmpty => '这里暂时没有内容。';
+
+  @override
+  String get smartInsightUpcomingCostHeading => '即将续期';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未来 3 个月的 $count 项续期约需 $amount。',
+      one: '未来 3 个月的 $count 项续期约需 $amount。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => '本周概览';
+
+  @override
+  String get weeklyRecapNothing => '本周没有到期的记录。';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '本周有 $count 条记录到期。',
+      one: '本周有 $count 条记录到期。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '上周你续期了 $count 条记录。',
+      one: '上周你续期了 $count 条记录。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return '上周续期花费 $amount。';
+  }
+
+  @override
+  String get weeklyRecapDismiss => '关闭';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count/$total 条记录有即将到来的日期';
+  }
+
+  @override
+  String get timelineRepeats => '重复';
+
+  @override
+  String get calendarNextExpiry => '下一个到期';
+
+  @override
+  String get calendarViewMonth => '月';
+
+  @override
+  String get calendarViewList => '列表';
+
+  @override
+  String get calendarLegendExpiry => '到期';
+
+  @override
+  String get calendarLegendReminder => '提醒';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month有 $count 项到期',
+      one: '$month有 $count 项到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month没有到期的记录';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return '续期约需 $amount';
+  }
+
+  @override
+  String get calendarThisWeek => '本周';
+
+  @override
+  String get calendarNextWeek => '下周';
+
+  @override
+  String get calendarListEmpty => '未来 12 个月没有安排。';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '还剩 $count 天',
+      one: '还剩 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已过期 $count 天',
+      one: '已过期 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => '添加在这一天到期的记录';
+
+  @override
+  String get calendarPickMonth => '选择月份';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return '提醒：$name 将于 $date 到期';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -16082,6 +16252,176 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get recordsScan => '扫描';
+
+  @override
+  String get insightsCardTitle => '智能提示';
+
+  @override
+  String insightPosition(int index, int total) {
+    return '第 $index 条，共 $total 条';
+  }
+
+  @override
+  String get insightSnooze => '稍后';
+
+  @override
+  String get insightSnoozed => '已隐藏一周。如果仍需处理，它会再次出现。';
+
+  @override
+  String get insightAsk => '就此提问';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading。$body 我该怎么做？';
+  }
+
+  @override
+  String get insightsSummaryRecords => '记录';
+
+  @override
+  String get insightsSummaryDueSoon => '30 天内到期';
+
+  @override
+  String get insightsSummaryNoReminder => '无提醒';
+
+  @override
+  String get insightsListEmpty => '这里暂时没有内容。';
+
+  @override
+  String get smartInsightUpcomingCostHeading => '即将续期';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未来 3 个月的 $count 项续期约需 $amount。',
+      one: '未来 3 个月的 $count 项续期约需 $amount。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => '本周概览';
+
+  @override
+  String get weeklyRecapNothing => '本周没有到期的记录。';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '本周有 $count 条记录到期。',
+      one: '本周有 $count 条记录到期。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '上周你续期了 $count 条记录。',
+      one: '上周你续期了 $count 条记录。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return '上周续期花费 $amount。';
+  }
+
+  @override
+  String get weeklyRecapDismiss => '关闭';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count/$total 条记录有即将到来的日期';
+  }
+
+  @override
+  String get timelineRepeats => '重复';
+
+  @override
+  String get calendarNextExpiry => '下一个到期';
+
+  @override
+  String get calendarViewMonth => '月';
+
+  @override
+  String get calendarViewList => '列表';
+
+  @override
+  String get calendarLegendExpiry => '到期';
+
+  @override
+  String get calendarLegendReminder => '提醒';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month有 $count 项到期',
+      one: '$month有 $count 项到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month没有到期的记录';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return '续期约需 $amount';
+  }
+
+  @override
+  String get calendarThisWeek => '本周';
+
+  @override
+  String get calendarNextWeek => '下周';
+
+  @override
+  String get calendarListEmpty => '未来 12 个月没有安排。';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '还剩 $count 天',
+      one: '还剩 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已过期 $count 天',
+      one: '已过期 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => '添加在这一天到期的记录';
+
+  @override
+  String get calendarPickMonth => '选择月份';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return '提醒：$name 将于 $date 到期';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -24116,4 +24456,174 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get recordsScan => '掃描';
+
+  @override
+  String get insightsCardTitle => '智慧提示';
+
+  @override
+  String insightPosition(int index, int total) {
+    return '第 $index 則，共 $total 則';
+  }
+
+  @override
+  String get insightSnooze => '稍後';
+
+  @override
+  String get insightSnoozed => '已隱藏一週。如果仍需處理，會再次出現。';
+
+  @override
+  String get insightAsk => '就此提問';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading。$body 我該怎麼做？';
+  }
+
+  @override
+  String get insightsSummaryRecords => '紀錄';
+
+  @override
+  String get insightsSummaryDueSoon => '30 天內到期';
+
+  @override
+  String get insightsSummaryNoReminder => '沒有提醒';
+
+  @override
+  String get insightsListEmpty => '這裡目前沒有內容。';
+
+  @override
+  String get smartInsightUpcomingCostHeading => '即將續約';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未來 3 個月的 $count 筆續約約需 $amount。',
+      one: '未來 3 個月的 $count 筆續約約需 $amount。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => '本週概覽';
+
+  @override
+  String get weeklyRecapNothing => '本週沒有到期的紀錄。';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '本週有 $count 筆紀錄到期。',
+      one: '本週有 $count 筆紀錄到期。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '上週你續約了 $count 筆紀錄。',
+      one: '上週你續約了 $count 筆紀錄。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return '上週續約花費 $amount。';
+  }
+
+  @override
+  String get weeklyRecapDismiss => '關閉';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count/$total 筆紀錄有即將到來的日期';
+  }
+
+  @override
+  String get timelineRepeats => '重複';
+
+  @override
+  String get calendarNextExpiry => '下一個到期';
+
+  @override
+  String get calendarViewMonth => '月';
+
+  @override
+  String get calendarViewList => '清單';
+
+  @override
+  String get calendarLegendExpiry => '到期';
+
+  @override
+  String get calendarLegendReminder => '提醒';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month有 $count 筆到期',
+      one: '$month有 $count 筆到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month沒有到期的紀錄';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return '續約約需 $amount';
+  }
+
+  @override
+  String get calendarThisWeek => '本週';
+
+  @override
+  String get calendarNextWeek => '下週';
+
+  @override
+  String get calendarListEmpty => '未來 12 個月沒有安排。';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '還剩 $count 天',
+      one: '還剩 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已過期 $count 天',
+      one: '已過期 $count 天',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => '新增在這一天到期的紀錄';
+
+  @override
+  String get calendarPickMonth => '選擇月份';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return '提醒：$name 將於 $date 到期';
+  }
 }

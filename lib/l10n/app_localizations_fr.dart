@@ -8120,4 +8120,174 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get recordsScan => 'Scanner';
+
+  @override
+  String get insightsCardTitle => 'Conseils intelligents';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Conseil $index sur $total';
+  }
+
+  @override
+  String get insightSnooze => 'Plus tard';
+
+  @override
+  String get insightSnoozed => 'Masqué pendant une semaine. Il reviendra s\'il est encore utile.';
+
+  @override
+  String get insightAsk => 'Poser une question';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Que dois-je faire ?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Éléments';
+
+  @override
+  String get insightsSummaryDueSoon => 'À échéance sous 30 jours';
+
+  @override
+  String get insightsSummaryNoReminder => 'Sans rappel';
+
+  @override
+  String get insightsListEmpty => 'Rien ici pour le moment.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Renouvellements à venir';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count renouvellements dans les 3 prochains mois coûteront environ $amount.',
+      one: '$count renouvellement dans les 3 prochains mois coûtera environ $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Votre semaine';
+
+  @override
+  String get weeklyRecapNothing => 'Rien n\'expire cette semaine.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count éléments expirent cette semaine.',
+      one: '$count élément expire cette semaine.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vous avez renouvelé $count éléments la semaine dernière.',
+      one: 'Vous avez renouvelé $count élément la semaine dernière.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Les renouvellements de la semaine dernière ont coûté $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Fermer';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count sur $total éléments avec une date à venir';
+  }
+
+  @override
+  String get timelineRepeats => 'Se répète';
+
+  @override
+  String get calendarNextExpiry => 'Prochaine échéance';
+
+  @override
+  String get calendarViewMonth => 'Mois';
+
+  @override
+  String get calendarViewList => 'Liste';
+
+  @override
+  String get calendarLegendExpiry => 'Expire';
+
+  @override
+  String get calendarLegendReminder => 'Rappel';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expirent en $month',
+      one: '$count expire en $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Rien n\'expire en $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Environ $amount à renouveler';
+  }
+
+  @override
+  String get calendarThisWeek => 'Cette semaine';
+
+  @override
+  String get calendarNextWeek => 'La semaine prochaine';
+
+  @override
+  String get calendarListEmpty => 'Rien de prévu dans les 12 prochains mois.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count jours restants',
+      one: '$count jour restant',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Expiré il y a $count jours',
+      one: 'Expiré il y a $count jour',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Ajouter un élément qui expire ce jour-là';
+
+  @override
+  String get calendarPickMonth => 'Choisir un mois';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Rappel : $name expire le $date';
+  }
 }

@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Zeskanuj kartę lub dokument albo dodaj ręcznie. Vaultara przypomni przed upływem ważności.",
-  "recordsScan": "Skanuj"
+  "recordsScan": "Skanuj",
+  "insightsCardTitle": "Inteligentne wskazówki",
+  "insightPosition": "Wskazówka {index} z {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Później",
+  "insightSnoozed": "Ukryte na tydzień. Wróci, jeśli nadal będzie potrzebne.",
+  "insightAsk": "Zapytaj o to",
+  "insightAskPrompt": "{heading}. {body} Co mam zrobić?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Wpisy",
+  "insightsSummaryDueSoon": "W ciągu 30 dni",
+  "insightsSummaryNoReminder": "Bez przypomnienia",
+  "insightsListEmpty": "Na razie nic tu nie ma.",
+  "smartInsightUpcomingCostHeading": "Nadchodzące odnowienia",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Odnowienia w ciągu 3 miesięcy ({count}) będą kosztować około {amount}.} other{Odnowienia w ciągu 3 miesięcy ({count}) będą kosztować około {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Twój tydzień",
+  "weeklyRecapNothing": "W tym tygodniu nic nie wygasa.",
+  "weeklyRecapExpiring": "{count, plural, =1{Wygasające w tym tygodniu: {count}.} other{Wygasające w tym tygodniu: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Odnowione w zeszłym tygodniu: {count}.} other{Odnowione w zeszłym tygodniu: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Odnowienia w zeszłym tygodniu kosztowały {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Zamknij",
+  "timelineUnlockProgress": "{count} z {total} wpisów z nadchodzącą datą",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Powtarza się",
+  "calendarNextExpiry": "Najbliższy termin",
+  "calendarViewMonth": "Miesiąc",
+  "calendarViewList": "Lista",
+  "calendarLegendExpiry": "Wygasa",
+  "calendarLegendReminder": "Przypomnienie",
+  "calendarMonthSummary": "{count, plural, =1{{month}: wygasa {count}} other{{month}: wygasa {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "W miesiącu {month} nic nie wygasa",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Około {amount} na odnowienia",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Ten tydzień",
+  "calendarNextWeek": "Następny tydzień",
+  "calendarListEmpty": "Nic w ciągu najbliższych 12 miesięcy.",
+  "calendarDaysLeft": "{count, plural, =1{Został {count} dzień} few{Zostały {count} dni} many{Zostało {count} dni} other{Zostało {count} dnia}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Wygasło {count} dzień temu} other{Wygasło {count} dni temu}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Dodaj wpis wygasający tego dnia",
+  "calendarPickMonth": "Wybierz miesiąc",
+  "calendarReminderFor": "Przypomnienie: {name} wygasa {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

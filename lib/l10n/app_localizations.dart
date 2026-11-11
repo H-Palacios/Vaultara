@@ -13914,6 +13914,222 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Scan'**
   String get recordsScan;
+
+  /// Title of the insights card on the Insights tab.
+  ///
+  /// In en, this message translates to:
+  /// **'Smart insights'**
+  String get insightsCardTitle;
+
+  /// Read by screen readers for the page dots.
+  ///
+  /// In en, this message translates to:
+  /// **'Insight {index} of {total}'**
+  String insightPosition(int index, int total);
+
+  /// Button that hides an insight for a week.
+  ///
+  /// In en, this message translates to:
+  /// **'Later'**
+  String get insightSnooze;
+
+  /// Shown after tapping Later.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden for a week. It comes back if it still needs you.'**
+  String get insightSnoozed;
+
+  /// Button that opens Ask Vaultara about an insight.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask about this'**
+  String get insightAsk;
+
+  /// Question filled in when asking Ask Vaultara about an insight.
+  ///
+  /// In en, this message translates to:
+  /// **'{heading}. {body} What should I do?'**
+  String insightAskPrompt(String heading, String body);
+
+  /// Label of the total records number at the top of Insights.
+  ///
+  /// In en, this message translates to:
+  /// **'Records'**
+  String get insightsSummaryRecords;
+
+  /// Label of the number of records expiring within 30 days.
+  ///
+  /// In en, this message translates to:
+  /// **'Due in 30 days'**
+  String get insightsSummaryDueSoon;
+
+  /// Label of the number of upcoming records without a reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'No reminder'**
+  String get insightsSummaryNoReminder;
+
+  /// Shown when a list opened from Insights is empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing here right now.'**
+  String get insightsListEmpty;
+
+  /// Heading of the insight about renewal costs in the next 3 months.
+  ///
+  /// In en, this message translates to:
+  /// **'Renewals Coming Up'**
+  String get smartInsightUpcomingCostHeading;
+
+  /// Body of the upcoming renewal costs insight.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{count} renewal in the next 3 months will cost about {amount}.} other{{count} renewals in the next 3 months will cost about {amount}.}}'**
+  String smartInsightUpcomingCostBody(int count, String amount);
+
+  /// Title of the Monday recap on Insights.
+  ///
+  /// In en, this message translates to:
+  /// **'Your week'**
+  String get weeklyRecapTitle;
+
+  /// Monday recap when nothing expires this week.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing expires this week.'**
+  String get weeklyRecapNothing;
+
+  /// Monday recap line.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{count} record expires this week.} other{{count} records expire this week.}}'**
+  String weeklyRecapExpiring(int count);
+
+  /// Monday recap line.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{You renewed {count} record last week.} other{You renewed {count} records last week.}}'**
+  String weeklyRecapRenewed(int count);
+
+  /// Monday recap line with a money amount.
+  ///
+  /// In en, this message translates to:
+  /// **'Renewals last week cost {amount}.'**
+  String weeklyRecapCost(String amount);
+
+  /// Tooltip of the button that closes the Monday recap.
+  ///
+  /// In en, this message translates to:
+  /// **'Dismiss'**
+  String get weeklyRecapDismiss;
+
+  /// Progress before the expiry timeline appears.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} of {total} records with an upcoming date'**
+  String timelineUnlockProgress(int count, int total);
+
+  /// Marks a later date of a repeating record.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeats'**
+  String get timelineRepeats;
+
+  /// Chip that jumps to the next day with something expiring.
+  ///
+  /// In en, this message translates to:
+  /// **'Next expiry'**
+  String get calendarNextExpiry;
+
+  /// Calendar view switch: month grid.
+  ///
+  /// In en, this message translates to:
+  /// **'Month'**
+  String get calendarViewMonth;
+
+  /// Calendar view switch: list of upcoming dates.
+  ///
+  /// In en, this message translates to:
+  /// **'List'**
+  String get calendarViewList;
+
+  /// Legend under the calendar for the coloured dots.
+  ///
+  /// In en, this message translates to:
+  /// **'Expires'**
+  String get calendarLegendExpiry;
+
+  /// Legend under the calendar for the ring around a day.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder'**
+  String get calendarLegendReminder;
+
+  /// Summary under the calendar. {month} is a month name.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{count} expiring in {month}} other{{count} expiring in {month}}}'**
+  String calendarMonthSummary(int count, String month);
+
+  /// Summary when nothing expires in the month shown.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing expires in {month}'**
+  String calendarMonthNothing(String month);
+
+  /// Added to the month summary on paid plans.
+  ///
+  /// In en, this message translates to:
+  /// **'About {amount} to renew'**
+  String calendarMonthCost(String amount);
+
+  /// Heading in the calendar list.
+  ///
+  /// In en, this message translates to:
+  /// **'This week'**
+  String get calendarThisWeek;
+
+  /// Heading in the calendar list.
+  ///
+  /// In en, this message translates to:
+  /// **'Next week'**
+  String get calendarNextWeek;
+
+  /// Calendar list when there is nothing.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing coming up in the next 12 months.'**
+  String get calendarListEmpty;
+
+  /// How long until a record expires.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{count} day left} other{{count} days left}}'**
+  String calendarDaysLeft(int count);
+
+  /// How long ago a record expired.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Expired {count} day ago} other{Expired {count} days ago}}'**
+  String calendarDaysAgo(int count);
+
+  /// Button on an empty day; also what a long press does.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a record expiring on this day'**
+  String get calendarAddOnDay;
+
+  /// Title of the month picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a month'**
+  String get calendarPickMonth;
+
+  /// A reminder day in the calendar.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder: {name} expires on {date}'**
+  String calendarReminderFor(String name, String date);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

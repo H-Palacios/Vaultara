@@ -8110,4 +8110,174 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get recordsScan => 'Escaneja';
+
+  @override
+  String get insightsCardTitle => 'Consells intel·ligents';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Consell $index de $total';
+  }
+
+  @override
+  String get insightSnooze => 'Més tard';
+
+  @override
+  String get insightSnoozed => 'Amagat durant una setmana. Tornarà si encara cal.';
+
+  @override
+  String get insightAsk => 'Pregunta sobre això';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Què he de fer?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Registres';
+
+  @override
+  String get insightsSummaryDueSoon => 'En 30 dies';
+
+  @override
+  String get insightsSummaryNoReminder => 'Sense recordatori';
+
+  @override
+  String get insightsListEmpty => 'Aquí no hi ha res ara mateix.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Renovacions properes';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count renovacions en els propers 3 mesos costaran uns $amount.',
+      one: '$count renovació en els propers 3 mesos costarà uns $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'La teva setmana';
+
+  @override
+  String get weeklyRecapNothing => 'Aquesta setmana no caduca res.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count registres caduquen aquesta setmana.',
+      one: '$count registre caduca aquesta setmana.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'La setmana passada vas renovar $count registres.',
+      one: 'La setmana passada vas renovar $count registre.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Les renovacions de la setmana passada van costar $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Tanca';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count de $total registres amb una data propera';
+  }
+
+  @override
+  String get timelineRepeats => 'Es repeteix';
+
+  @override
+  String get calendarNextExpiry => 'Propera caducitat';
+
+  @override
+  String get calendarViewMonth => 'Mes';
+
+  @override
+  String get calendarViewList => 'Llista';
+
+  @override
+  String get calendarLegendExpiry => 'Caduca';
+
+  @override
+  String get calendarLegendReminder => 'Recordatori';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count caduquen el $month',
+      one: '$count caduca el $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'No caduca res el $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Uns $amount en renovacions';
+  }
+
+  @override
+  String get calendarThisWeek => 'Aquesta setmana';
+
+  @override
+  String get calendarNextWeek => 'La setmana que ve';
+
+  @override
+  String get calendarListEmpty => 'No hi ha res en els propers 12 mesos.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Queden $count dies',
+      one: 'Queda $count dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Va caducar fa $count dies',
+      one: 'Va caducar fa $count dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Afegeix un registre que caduca aquest dia';
+
+  @override
+  String get calendarPickMonth => 'Tria un mes';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Recordatori: $name caduca el $date';
+  }
 }

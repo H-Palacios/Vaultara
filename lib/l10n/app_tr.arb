@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Kartı veya belgeyi tarayın ya da elle ekleyin. Vaultara süresi dolmadan önce size hatırlatır.",
-  "recordsScan": "Tara"
+  "recordsScan": "Tara",
+  "insightsCardTitle": "Akıllı içgörüler",
+  "insightPosition": "İçgörü {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Sonra",
+  "insightSnoozed": "Bir hafta gizlendi. Hâlâ gerekiyorsa geri gelir.",
+  "insightAsk": "Bunu sor",
+  "insightAskPrompt": "{heading}. {body} Ne yapmalıyım?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Kayıtlar",
+  "insightsSummaryDueSoon": "30 gün içinde",
+  "insightsSummaryNoReminder": "Hatırlatıcı yok",
+  "insightsListEmpty": "Şu anda burada bir şey yok.",
+  "smartInsightUpcomingCostHeading": "Yaklaşan yenilemeler",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Önümüzdeki 3 aydaki {count} yenileme yaklaşık {amount} tutacak.} other{Önümüzdeki 3 aydaki {count} yenileme yaklaşık {amount} tutacak.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Haftanız",
+  "weeklyRecapNothing": "Bu hafta süresi dolan bir şey yok.",
+  "weeklyRecapExpiring": "{count, plural, =1{Bu hafta {count} kaydın süresi doluyor.} other{Bu hafta {count} kaydın süresi doluyor.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Geçen hafta {count} kayıt yenilediniz.} other{Geçen hafta {count} kayıt yenilediniz.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Geçen haftaki yenilemeler {amount} tuttu.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Kapat",
+  "timelineUnlockProgress": "Yaklaşan tarihi olan {total} kayıttan {count} tanesi",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Tekrarlanır",
+  "calendarNextExpiry": "Sonraki son tarih",
+  "calendarViewMonth": "Ay",
+  "calendarViewList": "Liste",
+  "calendarLegendExpiry": "Süresi doluyor",
+  "calendarLegendReminder": "Hatırlatıcı",
+  "calendarMonthSummary": "{count, plural, =1{{month} ayında {count} kayıt doluyor} other{{month} ayında {count} kayıt doluyor}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} ayında süresi dolan yok",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Yenileme için yaklaşık {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Bu hafta",
+  "calendarNextWeek": "Gelecek hafta",
+  "calendarListEmpty": "Önümüzdeki 12 ayda bir şey yok.",
+  "calendarDaysLeft": "{count, plural, =1{{count} gün kaldı} other{{count} gün kaldı}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} gün önce doldu} other{{count} gün önce doldu}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Bu gün süresi dolan bir kayıt ekle",
+  "calendarPickMonth": "Ay seçin",
+  "calendarReminderFor": "Hatırlatıcı: {name} {date} tarihinde doluyor",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

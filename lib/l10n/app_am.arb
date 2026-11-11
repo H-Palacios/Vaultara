@@ -2754,5 +2754,150 @@
     }
   },
   "recordsEmptyBody": "ካርዱን ወይም ሰነዱን ይቃኙ፣ ወይም በእጅ ያክሉ። ጊዜው ከማለፉ በፊት Vaultara ያስታውስዎታል።",
-  "recordsScan": "ቃኝ"
+  "recordsScan": "ቃኝ",
+  "insightsCardTitle": "ብልህ ምክሮች",
+  "insightPosition": "ምክር {index} ከ{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "በኋላ",
+  "insightSnoozed": "ለአንድ ሳምንት ተደብቋል። አሁንም ካስፈለገ ይመለሳል።",
+  "insightAsk": "ስለዚህ ጠይቅ",
+  "insightAskPrompt": "{heading}። {body} ምን ማድረግ አለብኝ?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "መዝገቦች",
+  "insightsSummaryDueSoon": "በ30 ቀናት ውስጥ",
+  "insightsSummaryNoReminder": "አስታዋሽ የለም",
+  "insightsListEmpty": "እዚህ አሁን ምንም የለም።",
+  "smartInsightUpcomingCostHeading": "የሚመጡ እድሳቶች",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{በሚቀጥሉት 3 ወራት {count} እድሳት ወደ {amount} ያስወጣል።} other{በሚቀጥሉት 3 ወራት {count} እድሳቶች ወደ {amount} ያስወጣሉ።}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "የእርስዎ ሳምንት",
+  "weeklyRecapNothing": "በዚህ ሳምንት ምንም አያበቃም።",
+  "weeklyRecapExpiring": "{count, plural, =1{በዚህ ሳምንት {count} መዝገብ ያበቃል።} other{በዚህ ሳምንት {count} መዝገቦች ያበቃሉ።}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{ባለፈው ሳምንት {count} መዝገብ አድሰዋል።} other{ባለፈው ሳምንት {count} መዝገቦች አድሰዋል።}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "ያለፈው ሳምንት እድሳቶች {amount} አስወጥተዋል።",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "ዝጋ",
+  "timelineUnlockProgress": "የሚመጣ ቀን ካላቸው {total} መዝገቦች {count}",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "ይደጋገማል",
+  "calendarNextExpiry": "ቀጣይ ማብቂያ",
+  "calendarViewMonth": "ወር",
+  "calendarViewList": "ዝርዝር",
+  "calendarLegendExpiry": "ያበቃል",
+  "calendarLegendReminder": "አስታዋሽ",
+  "calendarMonthSummary": "{count, plural, =1{በ{month} {count} ያበቃል} other{በ{month} {count} ያበቃሉ}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "በ{month} ምንም አያበቃም",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "ለእድሳት ወደ {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ይህ ሳምንት",
+  "calendarNextWeek": "የሚቀጥለው ሳምንት",
+  "calendarListEmpty": "በሚቀጥሉት 12 ወራት ምንም የለም።",
+  "calendarDaysLeft": "{count, plural, =1{{count} ቀን ቀርቷል} other{{count} ቀናት ቀርተዋል}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{ከ{count} ቀን በፊት አብቅቷል} other{ከ{count} ቀናት በፊት አብቅቷል}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "በዚህ ቀን የሚያበቃ መዝገብ አክል",
+  "calendarPickMonth": "ወር ይምረጡ",
+  "calendarReminderFor": "አስታዋሽ፦ {name} በ{date} ያበቃል",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

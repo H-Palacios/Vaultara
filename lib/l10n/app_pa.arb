@@ -2723,5 +2723,150 @@
     }
   },
   "recordsEmptyBody": "ਕਾਰਡ ਜਾਂ ਦਸਤਾਵੇਜ਼ ਸਕੈਨ ਕਰੋ, ਜਾਂ ਹੱਥੀਂ ਸ਼ਾਮਲ ਕਰੋ। ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ Vaultara ਯਾਦ ਕਰਾਏਗਾ।",
-  "recordsScan": "ਸਕੈਨ ਕਰੋ"
+  "recordsScan": "ਸਕੈਨ ਕਰੋ",
+  "insightsCardTitle": "ਸਮਾਰਟ ਸੁਝਾਅ",
+  "insightPosition": "ਸੁਝਾਅ {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "ਬਾਅਦ ਵਿੱਚ",
+  "insightSnoozed": "ਇੱਕ ਹਫ਼ਤੇ ਲਈ ਲੁਕਾਇਆ। ਲੋੜ ਰਹੀ ਤਾਂ ਮੁੜ ਦਿਖੇਗਾ।",
+  "insightAsk": "ਇਸ ਬਾਰੇ ਪੁੱਛੋ",
+  "insightAskPrompt": "{heading}। {body} ਮੈਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "ਰਿਕਾਰਡ",
+  "insightsSummaryDueSoon": "30 ਦਿਨਾਂ ਵਿੱਚ",
+  "insightsSummaryNoReminder": "ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ",
+  "insightsListEmpty": "ਹਾਲੇ ਇੱਥੇ ਕੁਝ ਨਹੀਂ।",
+  "smartInsightUpcomingCostHeading": "ਆਉਣ ਵਾਲੇ ਨਵੀਨੀਕਰਨ",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{ਅਗਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ {count} ਨਵੀਨੀਕਰਨ 'ਤੇ ਲਗਭਗ {amount} ਲੱਗਣਗੇ।} other{ਅਗਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ {count} ਨਵੀਨੀਕਰਨਾਂ 'ਤੇ ਲਗਭਗ {amount} ਲੱਗਣਗੇ।}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "ਤੁਹਾਡਾ ਹਫ਼ਤਾ",
+  "weeklyRecapNothing": "ਇਸ ਹਫ਼ਤੇ ਕੁਝ ਖ਼ਤਮ ਨਹੀਂ ਹੋ ਰਿਹਾ।",
+  "weeklyRecapExpiring": "{count, plural, =1{ਇਸ ਹਫ਼ਤੇ {count} ਰਿਕਾਰਡ ਖ਼ਤਮ ਹੋ ਰਿਹਾ ਹੈ।} other{ਇਸ ਹਫ਼ਤੇ {count} ਰਿਕਾਰਡ ਖ਼ਤਮ ਹੋ ਰਹੇ ਹਨ।}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{ਤੁਸੀਂ ਪਿਛਲੇ ਹਫ਼ਤੇ {count} ਰਿਕਾਰਡ ਨਵਿਆਇਆ।} other{ਤੁਸੀਂ ਪਿਛਲੇ ਹਫ਼ਤੇ {count} ਰਿਕਾਰਡ ਨਵਿਆਏ।}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "ਪਿਛਲੇ ਹਫ਼ਤੇ ਦੇ ਨਵੀਨੀਕਰਨਾਂ 'ਤੇ {amount} ਲੱਗੇ।",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "ਬੰਦ ਕਰੋ",
+  "timelineUnlockProgress": "ਆਉਣ ਵਾਲੀ ਤਾਰੀਖ਼ ਵਾਲੇ {total} ਵਿੱਚੋਂ {count} ਰਿਕਾਰਡ",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "ਦੁਹਰਾਉਂਦਾ ਹੈ",
+  "calendarNextExpiry": "ਅਗਲੀ ਮਿਆਦ",
+  "calendarViewMonth": "ਮਹੀਨਾ",
+  "calendarViewList": "ਸੂਚੀ",
+  "calendarLegendExpiry": "ਮਿਆਦ ਖ਼ਤਮ",
+  "calendarLegendReminder": "ਰਿਮਾਈਂਡਰ",
+  "calendarMonthSummary": "{count, plural, =1{{month} ਵਿੱਚ {count} ਦੀ ਮਿਆਦ ਖ਼ਤਮ} other{{month} ਵਿੱਚ {count} ਦੀ ਮਿਆਦ ਖ਼ਤਮ}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} ਵਿੱਚ ਕੁਝ ਖ਼ਤਮ ਨਹੀਂ ਹੋ ਰਿਹਾ",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "ਨਵੀਨੀਕਰਨ 'ਤੇ ਲਗਭਗ {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ਇਸ ਹਫ਼ਤੇ",
+  "calendarNextWeek": "ਅਗਲੇ ਹਫ਼ਤੇ",
+  "calendarListEmpty": "ਅਗਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਕੁਝ ਨਹੀਂ।",
+  "calendarDaysLeft": "{count, plural, =1{{count} ਦਿਨ ਬਾਕੀ} other{{count} ਦਿਨ ਬਾਕੀ}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} ਦਿਨ ਪਹਿਲਾਂ ਮਿਆਦ ਖ਼ਤਮ} other{{count} ਦਿਨ ਪਹਿਲਾਂ ਮਿਆਦ ਖ਼ਤਮ}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "ਇਸ ਦਿਨ ਖ਼ਤਮ ਹੋਣ ਵਾਲਾ ਰਿਕਾਰਡ ਸ਼ਾਮਲ ਕਰੋ",
+  "calendarPickMonth": "ਮਹੀਨਾ ਚੁਣੋ",
+  "calendarReminderFor": "ਰਿਮਾਈਂਡਰ: {name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਖ਼ਤਮ",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

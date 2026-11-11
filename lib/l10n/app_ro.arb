@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Scanează cardul sau documentul ori adaugă-l manual. Vaultara îți amintește înainte să expire.",
-  "recordsScan": "Scanează"
+  "recordsScan": "Scanează",
+  "insightsCardTitle": "Informații inteligente",
+  "insightPosition": "Informația {index} din {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Mai târziu",
+  "insightSnoozed": "Ascuns pentru o săptămână. Revine dacă mai e nevoie.",
+  "insightAsk": "Întreabă despre asta",
+  "insightAskPrompt": "{heading}. {body} Ce ar trebui să fac?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Înregistrări",
+  "insightsSummaryDueSoon": "În 30 de zile",
+  "insightsSummaryNoReminder": "Fără memento",
+  "insightsListEmpty": "Nu e nimic aici deocamdată.",
+  "smartInsightUpcomingCostHeading": "Reînnoiri în curând",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} reînnoire în următoarele 3 luni va costa aproximativ {amount}.} other{{count} reînnoiri în următoarele 3 luni vor costa aproximativ {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Săptămâna ta",
+  "weeklyRecapNothing": "Nimic nu expiră săptămâna aceasta.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} înregistrare expiră săptămâna aceasta.} other{{count} înregistrări expiră săptămâna aceasta.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Ai reînnoit {count} înregistrare săptămâna trecută.} other{Ai reînnoit {count} înregistrări săptămâna trecută.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Reînnoirile de săptămâna trecută au costat {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Închide",
+  "timelineUnlockProgress": "{count} din {total} înregistrări cu o dată viitoare",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Se repetă",
+  "calendarNextExpiry": "Următoarea expirare",
+  "calendarViewMonth": "Lună",
+  "calendarViewList": "Listă",
+  "calendarLegendExpiry": "Expiră",
+  "calendarLegendReminder": "Memento",
+  "calendarMonthSummary": "{count, plural, =1{{count} expiră în {month}} other{{count} expiră în {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Nimic nu expiră în {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Aproximativ {amount} pentru reînnoiri",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Săptămâna aceasta",
+  "calendarNextWeek": "Săptămâna viitoare",
+  "calendarListEmpty": "Nimic în următoarele 12 luni.",
+  "calendarDaysLeft": "{count, plural, =1{A mai rămas {count} zi} other{Au mai rămas {count} zile}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{A expirat acum {count} zi} other{A expirat acum {count} zile}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Adaugă o înregistrare care expiră în această zi",
+  "calendarPickMonth": "Alege o lună",
+  "calendarReminderFor": "Memento: {name} expiră pe {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

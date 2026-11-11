@@ -2730,5 +2730,150 @@
     }
   },
   "recordsEmptyBody": "Skanoni kartën ose dokumentin, ose shtojeni me dorë. Vaultara ju kujton para se të skadojë.",
-  "recordsScan": "Skano"
+  "recordsScan": "Skano",
+  "insightsCardTitle": "Këshilla të zgjuara",
+  "insightPosition": "Këshilla {index} nga {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Më vonë",
+  "insightSnoozed": "U fsheh për një javë. Kthehet nëse ende duhet.",
+  "insightAsk": "Pyet për këtë",
+  "insightAskPrompt": "{heading}. {body} Çfarë duhet të bëj?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Regjistrime",
+  "insightsSummaryDueSoon": "Brenda 30 ditëve",
+  "insightsSummaryNoReminder": "Pa kujtesë",
+  "insightsListEmpty": "Nuk ka asgjë këtu tani.",
+  "smartInsightUpcomingCostHeading": "Rinovime në pritje",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} rinovim në 3 muajt e ardhshëm do të kushtojë rreth {amount}.} other{{count} rinovime në 3 muajt e ardhshëm do të kushtojnë rreth {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Java juaj",
+  "weeklyRecapNothing": "Asgjë nuk skadon këtë javë.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} regjistrim skadon këtë javë.} other{{count} regjistrime skadojnë këtë javë.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Rinovuat {count} regjistrim javën e kaluar.} other{Rinovuat {count} regjistrime javën e kaluar.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Rinovimet e javës së kaluar kushtuan {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Mbyll",
+  "timelineUnlockProgress": "{count} nga {total} regjistrime me datë të ardhshme",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Përsëritet",
+  "calendarNextExpiry": "Skadimi i radhës",
+  "calendarViewMonth": "Muaj",
+  "calendarViewList": "Listë",
+  "calendarLegendExpiry": "Skadon",
+  "calendarLegendReminder": "Kujtesë",
+  "calendarMonthSummary": "{count, plural, =1{{count} skadon në {month}} other{{count} skadojnë në {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Asgjë nuk skadon në {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Rreth {amount} për rinovime",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Këtë javë",
+  "calendarNextWeek": "Javën tjetër",
+  "calendarListEmpty": "Asgjë në 12 muajt e ardhshëm.",
+  "calendarDaysLeft": "{count, plural, =1{Mbetet {count} ditë} other{Mbeten {count} ditë}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Skadoi para {count} dite} other{Skadoi para {count} ditësh}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Shto një regjistrim që skadon këtë ditë",
+  "calendarPickMonth": "Zgjidh muajin",
+  "calendarReminderFor": "Kujtesë: {name} skadon më {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -8181,4 +8181,176 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skeniraj';
+
+  @override
+  String get insightsCardTitle => 'Pametni savjeti';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Savjet $index od $total';
+  }
+
+  @override
+  String get insightSnooze => 'Kasnije';
+
+  @override
+  String get insightSnoozed => 'Skriveno na tjedan dana. Vratit će se ako još bude potrebno.';
+
+  @override
+  String get insightAsk => 'Pitaj o ovome';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Što trebam učiniti?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Zapisi';
+
+  @override
+  String get insightsSummaryDueSoon => 'U 30 dana';
+
+  @override
+  String get insightsSummaryNoReminder => 'Bez podsjetnika';
+
+  @override
+  String get insightsListEmpty => 'Ovdje zasad nema ničega.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Nadolazeće obnove';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Obnove u sljedeća 3 mjeseca ($count) stajat će oko $amount.',
+      one: 'Obnove u sljedeća 3 mjeseca ($count) stajat će oko $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Vaš tjedan';
+
+  @override
+  String get weeklyRecapNothing => 'Ovaj tjedan ništa ne istječe.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ovaj tjedan istječe zapisa: $count.',
+      one: 'Ovaj tjedan istječe zapisa: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Prošli tjedan obnovljeno zapisa: $count.',
+      one: 'Prošli tjedan obnovljeno zapisa: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Obnove prošlog tjedna stajale su $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Zatvori';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count od $total zapisa s nadolazećim datumom';
+  }
+
+  @override
+  String get timelineRepeats => 'Ponavlja se';
+
+  @override
+  String get calendarNextExpiry => 'Sljedeći istek';
+
+  @override
+  String get calendarViewMonth => 'Mjesec';
+
+  @override
+  String get calendarViewList => 'Popis';
+
+  @override
+  String get calendarLegendExpiry => 'Istječe';
+
+  @override
+  String get calendarLegendReminder => 'Podsjetnik';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: istječe $count',
+      one: '$month: istječe $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'U mjesecu $month ništa ne istječe';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Oko $amount za obnove';
+  }
+
+  @override
+  String get calendarThisWeek => 'Ovaj tjedan';
+
+  @override
+  String get calendarNextWeek => 'Sljedeći tjedan';
+
+  @override
+  String get calendarListEmpty => 'Ništa u sljedećih 12 mjeseci.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Još $count dana',
+      few: 'Još $count dana',
+      one: 'Još $count dan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Isteklo prije $count dana',
+      few: 'Isteklo prije $count dana',
+      one: 'Isteklo prije $count dan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Dodaj zapis koji istječe ovog dana';
+
+  @override
+  String get calendarPickMonth => 'Odaberite mjesec';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Podsjetnik: $name istječe $date';
+  }
 }

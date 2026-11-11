@@ -8165,4 +8165,174 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get recordsScan => 'סריקה';
+
+  @override
+  String get insightsCardTitle => 'תובנות חכמות';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'תובנה $index מתוך $total';
+  }
+
+  @override
+  String get insightSnooze => 'אחר כך';
+
+  @override
+  String get insightSnoozed => 'הוסתר לשבוע. זה יחזור אם עדיין יהיה צורך.';
+
+  @override
+  String get insightAsk => 'לשאול על זה';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body מה עליי לעשות?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'רשומות';
+
+  @override
+  String get insightsSummaryDueSoon => 'תוך 30 יום';
+
+  @override
+  String get insightsSummaryNoReminder => 'ללא תזכורת';
+
+  @override
+  String get insightsListEmpty => 'אין כאן כלום כרגע.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'חידושים קרובים';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'חידושים ב-3 החודשים הקרובים ($count) יעלו בערך $amount.',
+      one: 'חידושים ב-3 החודשים הקרובים ($count) יעלו בערך $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'השבוע שלך';
+
+  @override
+  String get weeklyRecapNothing => 'שום דבר לא פג השבוע.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'רשומות שפגות השבוע: $count.',
+      one: 'רשומות שפגות השבוע: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'רשומות שחידשת בשבוע שעבר: $count.',
+      one: 'רשומות שחידשת בשבוע שעבר: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'החידושים בשבוע שעבר עלו $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'סגירה';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count מתוך $total רשומות עם תאריך קרוב';
+  }
+
+  @override
+  String get timelineRepeats => 'חוזר';
+
+  @override
+  String get calendarNextExpiry => 'התפוגה הבאה';
+
+  @override
+  String get calendarViewMonth => 'חודש';
+
+  @override
+  String get calendarViewList => 'רשימה';
+
+  @override
+  String get calendarLegendExpiry => 'פג';
+
+  @override
+  String get calendarLegendReminder => 'תזכורת';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: פגות $count',
+      one: '$month: פגות $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'שום דבר לא פג ב$month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'כ-$amount לחידוש';
+  }
+
+  @override
+  String get calendarThisWeek => 'השבוע';
+
+  @override
+  String get calendarNextWeek => 'השבוע הבא';
+
+  @override
+  String get calendarListEmpty => 'אין דבר ב-12 החודשים הקרובים.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'נותרו $count ימים',
+      one: 'נותר $count יום',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'פג לפני $count ימים',
+      one: 'פג לפני $count יום',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'הוספת רשומה שפגה ביום הזה';
+
+  @override
+  String get calendarPickMonth => 'בחירת חודש';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'תזכורת: $name פג ב-$date';
+  }
 }

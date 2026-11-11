@@ -8175,4 +8175,174 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skenēt';
+
+  @override
+  String get insightsCardTitle => 'Gudri padomi';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Padoms $index no $total';
+  }
+
+  @override
+  String get insightSnooze => 'Vēlāk';
+
+  @override
+  String get insightSnoozed => 'Paslēpts uz nedēļu. Atgriezīsies, ja vēl būs vajadzīgs.';
+
+  @override
+  String get insightAsk => 'Jautāt par šo';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Ko man darīt?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Ieraksti';
+
+  @override
+  String get insightsSummaryDueSoon => '30 dienu laikā';
+
+  @override
+  String get insightsSummaryNoReminder => 'Bez atgādinājuma';
+
+  @override
+  String get insightsListEmpty => 'Pagaidām šeit nekā nav.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Gaidāmās atjaunošanas';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Atjaunošanas nākamajos 3 mēnešos ($count) maksās ap $amount.',
+      one: 'Atjaunošanas nākamajos 3 mēnešos ($count) maksās ap $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Jūsu nedēļa';
+
+  @override
+  String get weeklyRecapNothing => 'Šonedēļ nekas nebeidzas.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Šonedēļ beidzas ieraksti: $count.',
+      one: 'Šonedēļ beidzas ieraksti: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pagājušajā nedēļā atjaunoti ieraksti: $count.',
+      one: 'Pagājušajā nedēļā atjaunoti ieraksti: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Pagājušās nedēļas atjaunošanas maksāja $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Aizvērt';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count no $total ierakstiem ar gaidāmu datumu';
+  }
+
+  @override
+  String get timelineRepeats => 'Atkārtojas';
+
+  @override
+  String get calendarNextExpiry => 'Nākamais termiņš';
+
+  @override
+  String get calendarViewMonth => 'Mēnesis';
+
+  @override
+  String get calendarViewList => 'Saraksts';
+
+  @override
+  String get calendarLegendExpiry => 'Beidzas';
+
+  @override
+  String get calendarLegendReminder => 'Atgādinājums';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: beidzas $count',
+      one: '$month: beidzas $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: nekas nebeidzas';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Ap $amount atjaunošanai';
+  }
+
+  @override
+  String get calendarThisWeek => 'Šī nedēļa';
+
+  @override
+  String get calendarNextWeek => 'Nākamā nedēļa';
+
+  @override
+  String get calendarListEmpty => 'Nākamajos 12 mēnešos nekā nav.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Atlikušas dienas: $count',
+      one: 'Atlikušas dienas: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Beidzies pirms dienām: $count',
+      one: 'Beidzies pirms dienām: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Pievienot ierakstu, kas beidzas šajā dienā';
+
+  @override
+  String get calendarPickMonth => 'Izvēlieties mēnesi';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Atgādinājums: $name beidzas $date';
+  }
 }

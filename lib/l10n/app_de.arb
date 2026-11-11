@@ -2747,5 +2747,150 @@
     }
   },
   "recordsEmptyBody": "Scanne die Karte oder das Dokument oder füge es manuell hinzu. Vaultara erinnert dich, bevor es abläuft.",
-  "recordsScan": "Scannen"
+  "recordsScan": "Scannen",
+  "insightsCardTitle": "Smarte Hinweise",
+  "insightPosition": "Hinweis {index} von {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Später",
+  "insightSnoozed": "Für eine Woche ausgeblendet. Er kommt wieder, falls er dann noch wichtig ist.",
+  "insightAsk": "Dazu fragen",
+  "insightAskPrompt": "{heading}. {body} Was soll ich tun?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Einträge",
+  "insightsSummaryDueSoon": "In 30 Tagen fällig",
+  "insightsSummaryNoReminder": "Keine Erinnerung",
+  "insightsListEmpty": "Hier ist gerade nichts.",
+  "smartInsightUpcomingCostHeading": "Anstehende Verlängerungen",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} Verlängerung in den nächsten 3 Monaten kostet etwa {amount}.} other{{count} Verlängerungen in den nächsten 3 Monaten kosten etwa {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Deine Woche",
+  "weeklyRecapNothing": "Diese Woche läuft nichts ab.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} Eintrag läuft diese Woche ab.} other{{count} Einträge laufen diese Woche ab.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Du hast letzte Woche {count} Eintrag verlängert.} other{Du hast letzte Woche {count} Einträge verlängert.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Verlängerungen letzte Woche kosteten {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Schließen",
+  "timelineUnlockProgress": "{count} von {total} Einträgen mit kommendem Datum",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Wiederholt sich",
+  "calendarNextExpiry": "Nächster Ablauf",
+  "calendarViewMonth": "Monat",
+  "calendarViewList": "Liste",
+  "calendarLegendExpiry": "Läuft ab",
+  "calendarLegendReminder": "Erinnerung",
+  "calendarMonthSummary": "{count, plural, =1{{count} läuft im {month} ab} other{{count} laufen im {month} ab}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Im {month} läuft nichts ab",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Etwa {amount} für Verlängerungen",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Diese Woche",
+  "calendarNextWeek": "Nächste Woche",
+  "calendarListEmpty": "In den nächsten 12 Monaten steht nichts an.",
+  "calendarDaysLeft": "{count, plural, =1{Noch {count} Tag} other{Noch {count} Tage}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Vor {count} Tag abgelaufen} other{Vor {count} Tagen abgelaufen}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Eintrag hinzufügen, der an diesem Tag abläuft",
+  "calendarPickMonth": "Monat wählen",
+  "calendarReminderFor": "Erinnerung: {name} läuft am {date} ab",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

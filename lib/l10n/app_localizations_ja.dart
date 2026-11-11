@@ -8036,4 +8036,174 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get recordsScan => 'スキャン';
+
+  @override
+  String get insightsCardTitle => 'スマートインサイト';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'インサイト $index/$total';
+  }
+
+  @override
+  String get insightSnooze => 'あとで';
+
+  @override
+  String get insightSnoozed => '1週間非表示にしました。まだ必要なら再表示されます。';
+
+  @override
+  String get insightAsk => 'これについて質問';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading。$body どうすればよいですか？';
+  }
+
+  @override
+  String get insightsSummaryRecords => '記録';
+
+  @override
+  String get insightsSummaryDueSoon => '30日以内';
+
+  @override
+  String get insightsSummaryNoReminder => 'リマインダーなし';
+
+  @override
+  String get insightsListEmpty => '今は何もありません。';
+
+  @override
+  String get smartInsightUpcomingCostHeading => '今後の更新';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '今後3か月の更新$count件で約$amountかかります。',
+      one: '今後3か月の更新$count件で約$amountかかります。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => '今週のまとめ';
+
+  @override
+  String get weeklyRecapNothing => '今週期限切れになるものはありません。';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '今週$count件の期限が切れます。',
+      one: '今週$count件の期限が切れます。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '先週$count件を更新しました。',
+      one: '先週$count件を更新しました。',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return '先週の更新費用は$amountでした。';
+  }
+
+  @override
+  String get weeklyRecapDismiss => '閉じる';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '今後の日付がある記録 $count/$total';
+  }
+
+  @override
+  String get timelineRepeats => '繰り返し';
+
+  @override
+  String get calendarNextExpiry => '次の期限';
+
+  @override
+  String get calendarViewMonth => '月';
+
+  @override
+  String get calendarViewList => 'リスト';
+
+  @override
+  String get calendarLegendExpiry => '期限';
+
+  @override
+  String get calendarLegendReminder => 'リマインダー';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$monthに$count件期限切れ',
+      one: '$monthに$count件期限切れ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$monthに期限切れになるものはありません';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return '更新に約$amount';
+  }
+
+  @override
+  String get calendarThisWeek => '今週';
+
+  @override
+  String get calendarNextWeek => '来週';
+
+  @override
+  String get calendarListEmpty => '今後12か月は何もありません。';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '残り$count日',
+      one: '残り$count日',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count日前に期限切れ',
+      one: '$count日前に期限切れ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'この日に期限が切れる記録を追加';
+
+  @override
+  String get calendarPickMonth => '月を選択';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'リマインダー：$nameは$dateに期限切れ';
+  }
 }

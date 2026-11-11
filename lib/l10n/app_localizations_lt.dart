@@ -8256,4 +8256,174 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skenuoti';
+
+  @override
+  String get insightsCardTitle => 'Išmanūs patarimai';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Patarimas $index iš $total';
+  }
+
+  @override
+  String get insightSnooze => 'Vėliau';
+
+  @override
+  String get insightSnoozed => 'Paslėpta savaitei. Grįš, jei vis dar reikės.';
+
+  @override
+  String get insightAsk => 'Klausti apie tai';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Ką turėčiau daryti?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Įrašai';
+
+  @override
+  String get insightsSummaryDueSoon => 'Per 30 dienų';
+
+  @override
+  String get insightsSummaryNoReminder => 'Be priminimo';
+
+  @override
+  String get insightsListEmpty => 'Kol kas čia nieko nėra.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Artėjantys atnaujinimai';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Atnaujinimai per ateinančius 3 mėnesius ($count) kainuos apie $amount.',
+      one: 'Atnaujinimai per ateinančius 3 mėnesius ($count) kainuos apie $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Jūsų savaitė';
+
+  @override
+  String get weeklyRecapNothing => 'Šią savaitę niekas nebaigia galioti.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Šią savaitę baigia galioti įrašų: $count.',
+      one: 'Šią savaitę baigia galioti įrašų: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Praėjusią savaitę atnaujinta įrašų: $count.',
+      one: 'Praėjusią savaitę atnaujinta įrašų: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Praėjusios savaitės atnaujinimai kainavo $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Uždaryti';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count iš $total įrašų su artėjančia data';
+  }
+
+  @override
+  String get timelineRepeats => 'Kartojasi';
+
+  @override
+  String get calendarNextExpiry => 'Artimiausia pabaiga';
+
+  @override
+  String get calendarViewMonth => 'Mėnuo';
+
+  @override
+  String get calendarViewList => 'Sąrašas';
+
+  @override
+  String get calendarLegendExpiry => 'Baigia galioti';
+
+  @override
+  String get calendarLegendReminder => 'Priminimas';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: baigia galioti $count',
+      one: '$month: baigia galioti $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: niekas nebaigia galioti';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Apie $amount atnaujinimams';
+  }
+
+  @override
+  String get calendarThisWeek => 'Ši savaitė';
+
+  @override
+  String get calendarNextWeek => 'Kita savaitė';
+
+  @override
+  String get calendarListEmpty => 'Per ateinančius 12 mėnesių nieko nėra.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Liko dienų: $count',
+      one: 'Liko dienų: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nebegalioja dienų: $count',
+      one: 'Nebegalioja dienų: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Pridėti įrašą, kuris baigia galioti šią dieną';
+
+  @override
+  String get calendarPickMonth => 'Pasirinkite mėnesį';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Priminimas: $name baigia galioti $date';
+  }
 }

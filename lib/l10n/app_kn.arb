@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "ಕಾರ್ಡ್ ಅಥವಾ ದಾಖಲೆಯನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ, ಅಥವಾ ಕೈಯಾರೆ ಸೇರಿಸಿ. ಅವಧಿ ಮುಗಿಯುವ ಮೊದಲು Vaultara ನೆನಪಿಸುತ್ತದೆ.",
-  "recordsScan": "ಸ್ಕ್ಯಾನ್"
+  "recordsScan": "ಸ್ಕ್ಯಾನ್",
+  "insightsCardTitle": "ಸ್ಮಾರ್ಟ್ ಸಲಹೆಗಳು",
+  "insightPosition": "ಸಲಹೆ {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "ನಂತರ",
+  "insightSnoozed": "ಒಂದು ವಾರ ಮರೆಮಾಡಲಾಗಿದೆ. ಇನ್ನೂ ಅಗತ್ಯವಿದ್ದರೆ ಮತ್ತೆ ಬರುತ್ತದೆ.",
+  "insightAsk": "ಇದರ ಬಗ್ಗೆ ಕೇಳಿ",
+  "insightAskPrompt": "{heading}. {body} ನಾನು ಏನು ಮಾಡಬೇಕು?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "ದಾಖಲೆಗಳು",
+  "insightsSummaryDueSoon": "30 ದಿನಗಳಲ್ಲಿ",
+  "insightsSummaryNoReminder": "ಜ್ಞಾಪನೆ ಇಲ್ಲ",
+  "insightsListEmpty": "ಈಗ ಇಲ್ಲಿ ಏನೂ ಇಲ್ಲ.",
+  "smartInsightUpcomingCostHeading": "ಮುಂಬರುವ ನವೀಕರಣಗಳು",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{ಮುಂದಿನ 3 ತಿಂಗಳಲ್ಲಿ {count} ನವೀಕರಣಕ್ಕೆ ಸುಮಾರು {amount} ವೆಚ್ಚವಾಗುತ್ತದೆ.} other{ಮುಂದಿನ 3 ತಿಂಗಳಲ್ಲಿ {count} ನವೀಕರಣಗಳಿಗೆ ಸುಮಾರು {amount} ವೆಚ್ಚವಾಗುತ್ತದೆ.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "ನಿಮ್ಮ ವಾರ",
+  "weeklyRecapNothing": "ಈ ವಾರ ಯಾವುದರ ಅವಧಿಯೂ ಮುಗಿಯುವುದಿಲ್ಲ.",
+  "weeklyRecapExpiring": "{count, plural, =1{ಈ ವಾರ {count} ದಾಖಲೆಯ ಅವಧಿ ಮುಗಿಯುತ್ತದೆ.} other{ಈ ವಾರ {count} ದಾಖಲೆಗಳ ಅವಧಿ ಮುಗಿಯುತ್ತದೆ.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{ಕಳೆದ ವಾರ ನೀವು {count} ದಾಖಲೆಯನ್ನು ನವೀಕರಿಸಿದ್ದೀರಿ.} other{ಕಳೆದ ವಾರ ನೀವು {count} ದಾಖಲೆಗಳನ್ನು ನವೀಕರಿಸಿದ್ದೀರಿ.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "ಕಳೆದ ವಾರದ ನವೀಕರಣಗಳಿಗೆ {amount} ವೆಚ್ಚವಾಯಿತು.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "ಮುಚ್ಚಿ",
+  "timelineUnlockProgress": "ಮುಂಬರುವ ದಿನಾಂಕವಿರುವ {total} ರಲ್ಲಿ {count} ದಾಖಲೆಗಳು",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "ಪುನರಾವರ್ತನೆ",
+  "calendarNextExpiry": "ಮುಂದಿನ ಅವಧಿ ಮುಕ್ತಾಯ",
+  "calendarViewMonth": "ತಿಂಗಳು",
+  "calendarViewList": "ಪಟ್ಟಿ",
+  "calendarLegendExpiry": "ಅವಧಿ ಮುಗಿಯುತ್ತದೆ",
+  "calendarLegendReminder": "ಜ್ಞಾಪನೆ",
+  "calendarMonthSummary": "{count, plural, =1{{month} ನಲ್ಲಿ {count} ಅವಧಿ ಮುಗಿಯುತ್ತದೆ} other{{month} ನಲ್ಲಿ {count} ಅವಧಿ ಮುಗಿಯುತ್ತವೆ}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} ನಲ್ಲಿ ಯಾವುದರ ಅವಧಿಯೂ ಮುಗಿಯುವುದಿಲ್ಲ",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "ನವೀಕರಣಕ್ಕೆ ಸುಮಾರು {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ಈ ವಾರ",
+  "calendarNextWeek": "ಮುಂದಿನ ವಾರ",
+  "calendarListEmpty": "ಮುಂದಿನ 12 ತಿಂಗಳಲ್ಲಿ ಏನೂ ಇಲ್ಲ.",
+  "calendarDaysLeft": "{count, plural, =1{{count} ದಿನ ಬಾಕಿ} other{{count} ದಿನಗಳು ಬಾಕಿ}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} ದಿನದ ಹಿಂದೆ ಅವಧಿ ಮುಗಿದಿದೆ} other{{count} ದಿನಗಳ ಹಿಂದೆ ಅವಧಿ ಮುಗಿದಿದೆ}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "ಈ ದಿನ ಅವಧಿ ಮುಗಿಯುವ ದಾಖಲೆ ಸೇರಿಸಿ",
+  "calendarPickMonth": "ತಿಂಗಳು ಆಯ್ಕೆಮಾಡಿ",
+  "calendarReminderFor": "ಜ್ಞಾಪನೆ: {name} ಅವಧಿ {date} ರಂದು ಮುಗಿಯುತ್ತದೆ",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

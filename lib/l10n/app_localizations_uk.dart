@@ -8264,4 +8264,178 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get recordsScan => 'Сканувати';
+
+  @override
+  String get insightsCardTitle => 'Розумні підказки';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Підказка $index з $total';
+  }
+
+  @override
+  String get insightSnooze => 'Пізніше';
+
+  @override
+  String get insightSnoozed => 'Приховано на тиждень. Повернеться, якщо ще буде потрібно.';
+
+  @override
+  String get insightAsk => 'Запитати про це';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Що мені робити?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Записи';
+
+  @override
+  String get insightsSummaryDueSoon => 'Спливають за 30 днів';
+
+  @override
+  String get insightsSummaryNoReminder => 'Без нагадування';
+
+  @override
+  String get insightsListEmpty => 'Тут поки нічого немає.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Незабаром поновлення';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Поновлення за найближчі 3 місяці ($count) коштуватимуть приблизно $amount.',
+      one: 'Поновлення за найближчі 3 місяці ($count) коштуватиме приблизно $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Ваш тиждень';
+
+  @override
+  String get weeklyRecapNothing => 'Цього тижня нічого не спливає.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Цього тижня спливає записів: $count.',
+      one: 'Цього тижня спливає записів: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Минулого тижня поновлено записів: $count.',
+      one: 'Минулого тижня поновлено записів: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Поновлення минулого тижня коштували $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Закрити';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count з $total записів із майбутньою датою';
+  }
+
+  @override
+  String get timelineRepeats => 'Повторюється';
+
+  @override
+  String get calendarNextExpiry => 'Найближчий термін';
+
+  @override
+  String get calendarViewMonth => 'Місяць';
+
+  @override
+  String get calendarViewList => 'Список';
+
+  @override
+  String get calendarLegendExpiry => 'Спливає';
+
+  @override
+  String get calendarLegendReminder => 'Нагадування';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: спливає $count',
+      one: '$month: спливає $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'У $month нічого не спливає';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Близько $amount на поновлення';
+  }
+
+  @override
+  String get calendarThisWeek => 'Цей тиждень';
+
+  @override
+  String get calendarNextWeek => 'Наступний тиждень';
+
+  @override
+  String get calendarListEmpty => 'У найближчі 12 місяців нічого немає.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Залишилося $count дня',
+      many: 'Залишилося $count днів',
+      few: 'Залишилося $count дні',
+      one: 'Залишився $count день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Сплив $count дня тому',
+      many: 'Сплив $count днів тому',
+      few: 'Сплив $count дні тому',
+      one: 'Сплив $count день тому',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Додати запис, що спливає цього дня';
+
+  @override
+  String get calendarPickMonth => 'Виберіть місяць';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Нагадування: $name спливає $date';
+  }
 }

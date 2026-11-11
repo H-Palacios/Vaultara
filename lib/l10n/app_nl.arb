@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Scan de kaart of het document, of voeg het handmatig toe. Vaultara herinnert je voordat het verloopt.",
-  "recordsScan": "Scannen"
+  "recordsScan": "Scannen",
+  "insightsCardTitle": "Slimme inzichten",
+  "insightPosition": "Inzicht {index} van {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Later",
+  "insightSnoozed": "Een week verborgen. Het komt terug als het dan nog nodig is.",
+  "insightAsk": "Hierover vragen",
+  "insightAskPrompt": "{heading}. {body} Wat moet ik doen?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Items",
+  "insightsSummaryDueSoon": "Binnen 30 dagen",
+  "insightsSummaryNoReminder": "Geen herinnering",
+  "insightsListEmpty": "Hier staat nu niets.",
+  "smartInsightUpcomingCostHeading": "Verlengingen op komst",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} verlenging in de komende 3 maanden kost ongeveer {amount}.} other{{count} verlengingen in de komende 3 maanden kosten ongeveer {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Jouw week",
+  "weeklyRecapNothing": "Deze week verloopt er niets.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} item verloopt deze week.} other{{count} items verlopen deze week.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Je hebt vorige week {count} item verlengd.} other{Je hebt vorige week {count} items verlengd.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Verlengingen vorige week kostten {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Sluiten",
+  "timelineUnlockProgress": "{count} van {total} items met een komende datum",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Herhaalt",
+  "calendarNextExpiry": "Eerstvolgende vervaldatum",
+  "calendarViewMonth": "Maand",
+  "calendarViewList": "Lijst",
+  "calendarLegendExpiry": "Verloopt",
+  "calendarLegendReminder": "Herinnering",
+  "calendarMonthSummary": "{count, plural, =1{{count} verloopt in {month}} other{{count} verlopen in {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Er verloopt niets in {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Ongeveer {amount} aan verlengingen",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Deze week",
+  "calendarNextWeek": "Volgende week",
+  "calendarListEmpty": "Niets in de komende 12 maanden.",
+  "calendarDaysLeft": "{count, plural, =1{Nog {count} dag} other{Nog {count} dagen}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} dag geleden verlopen} other{{count} dagen geleden verlopen}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Item toevoegen dat op deze dag verloopt",
+  "calendarPickMonth": "Kies een maand",
+  "calendarReminderFor": "Herinnering: {name} verloopt op {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

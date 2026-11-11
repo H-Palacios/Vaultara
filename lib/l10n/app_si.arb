@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "කාඩ්පත හෝ ලේඛනය ස්කෑන් කරන්න, නැතහොත් අතින් එක් කරන්න. කල් ඉකුත් වීමට පෙර Vaultara මතක් කරයි.",
-  "recordsScan": "ස්කෑන් කරන්න"
+  "recordsScan": "ස්කෑන් කරන්න",
+  "insightsCardTitle": "ස්මාර්ට් ඉඟි",
+  "insightPosition": "ඉඟිය {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "පසුව",
+  "insightSnoozed": "සතියකට සඟවා ඇත. තවමත් අවශ්‍ය නම් නැවත පෙන්වයි.",
+  "insightAsk": "මේ ගැන අසන්න",
+  "insightAskPrompt": "{heading}. {body} මා කළ යුත්තේ කුමක්ද?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "වාර්තා",
+  "insightsSummaryDueSoon": "දින 30ක් ඇතුළත",
+  "insightsSummaryNoReminder": "සිහිකැඳවීමක් නැත",
+  "insightsListEmpty": "දැනට මෙහි කිසිවක් නැත.",
+  "smartInsightUpcomingCostHeading": "ඉදිරි අලුත් කිරීම්",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{ඉදිරි මාස 3 තුළ අලුත් කිරීම් {count}කට ආසන්න වශයෙන් {amount} වැය වේ.} other{ඉදිරි මාස 3 තුළ අලුත් කිරීම් {count}කට ආසන්න වශයෙන් {amount} වැය වේ.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "ඔබේ සතිය",
+  "weeklyRecapNothing": "මෙම සතියේ කිසිවක් කල් ඉකුත් නොවේ.",
+  "weeklyRecapExpiring": "{count, plural, =1{මෙම සතියේ වාර්තා {count}ක් කල් ඉකුත් වේ.} other{මෙම සතියේ වාර්තා {count}ක් කල් ඉකුත් වේ.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{පසුගිය සතියේ ඔබ වාර්තා {count}ක් අලුත් කළා.} other{පසුගිය සතියේ ඔබ වාර්තා {count}ක් අලුත් කළා.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "පසුගිය සතියේ අලුත් කිරීම්වලට {amount} වැය විය.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "වසන්න",
+  "timelineUnlockProgress": "ඉදිරි දිනයක් ඇති {total}න් වාර්තා {count}",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "පුනරාවර්තනය වේ",
+  "calendarNextExpiry": "ඊළඟ කල් ඉකුත් වීම",
+  "calendarViewMonth": "මාසය",
+  "calendarViewList": "ලැයිස්තුව",
+  "calendarLegendExpiry": "කල් ඉකුත් වේ",
+  "calendarLegendReminder": "සිහිකැඳවීම",
+  "calendarMonthSummary": "{count, plural, =1{{month} තුළ {count}ක් කල් ඉකුත් වේ} other{{month} තුළ {count}ක් කල් ඉකුත් වේ}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} තුළ කිසිවක් කල් ඉකුත් නොවේ",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "අලුත් කිරීමට ආසන්න වශයෙන් {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "මෙම සතිය",
+  "calendarNextWeek": "ඊළඟ සතිය",
+  "calendarListEmpty": "ඉදිරි මාස 12 තුළ කිසිවක් නැත.",
+  "calendarDaysLeft": "{count, plural, =1{දින {count}ක් ඉතිරියි} other{දින {count}ක් ඉතිරියි}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{දින {count}කට පෙර කල් ඉකුත් විය} other{දින {count}කට පෙර කල් ඉකුත් විය}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "මෙදින කල් ඉකුත් වන වාර්තාවක් එක් කරන්න",
+  "calendarPickMonth": "මාසයක් තෝරන්න",
+  "calendarReminderFor": "සිහිකැඳවීම: {name} {date} දින කල් ඉකුත් වේ",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

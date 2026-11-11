@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "कार्ड वा कागजात स्क्यान गर्नुहोस्, वा आफैं थप्नुहोस्। म्याद सकिनुअघि Vaultara ले सम्झाउनेछ।",
-  "recordsScan": "स्क्यान गर्नुहोस्"
+  "recordsScan": "स्क्यान गर्नुहोस्",
+  "insightsCardTitle": "स्मार्ट सुझाव",
+  "insightPosition": "सुझाव {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "पछि",
+  "insightSnoozed": "एक हप्ताका लागि लुकाइयो। आवश्यक भए फेरि देखिन्छ।",
+  "insightAsk": "यसबारे सोध्नुहोस्",
+  "insightAskPrompt": "{heading}। {body} मैले के गर्नुपर्छ?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "रेकर्ड",
+  "insightsSummaryDueSoon": "30 दिनभित्र",
+  "insightsSummaryNoReminder": "रिमाइन्डर छैन",
+  "insightsListEmpty": "अहिले यहाँ केही छैन।",
+  "smartInsightUpcomingCostHeading": "आउँदै गरेका नवीकरण",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{अर्को 3 महिनाका {count} नवीकरणमा करिब {amount} लाग्नेछ।} other{अर्को 3 महिनाका {count} नवीकरणमा करिब {amount} लाग्नेछ।}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "तपाईंको हप्ता",
+  "weeklyRecapNothing": "यो हप्ता केही पनि म्याद सकिँदैन।",
+  "weeklyRecapExpiring": "{count, plural, =1{यो हप्ता {count} रेकर्डको म्याद सकिन्छ।} other{यो हप्ता {count} रेकर्डको म्याद सकिन्छ।}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{तपाईंले गत हप्ता {count} रेकर्ड नवीकरण गर्नुभयो।} other{तपाईंले गत हप्ता {count} रेकर्ड नवीकरण गर्नुभयो।}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "गत हप्ताको नवीकरणमा {amount} लाग्यो।",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "बन्द गर्नुहोस्",
+  "timelineUnlockProgress": "आउँदै गरेको मिति भएका {total} मध्ये {count} रेकर्ड",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "दोहोरिन्छ",
+  "calendarNextExpiry": "अर्को म्याद",
+  "calendarViewMonth": "महिना",
+  "calendarViewList": "सूची",
+  "calendarLegendExpiry": "म्याद सकिन्छ",
+  "calendarLegendReminder": "रिमाइन्डर",
+  "calendarMonthSummary": "{count, plural, =1{{month} मा {count} को म्याद सकिन्छ} other{{month} मा {count} को म्याद सकिन्छ}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} मा केही पनि म्याद सकिँदैन",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "नवीकरणमा करिब {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "यो हप्ता",
+  "calendarNextWeek": "अर्को हप्ता",
+  "calendarListEmpty": "अर्को 12 महिनामा केही छैन।",
+  "calendarDaysLeft": "{count, plural, =1{{count} दिन बाँकी} other{{count} दिन बाँकी}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} दिनअघि म्याद सकियो} other{{count} दिनअघि म्याद सकियो}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "यो दिन म्याद सकिने रेकर्ड थप्नुहोस्",
+  "calendarPickMonth": "महिना छान्नुहोस्",
+  "calendarReminderFor": "रिमाइन्डर: {name} को म्याद {date} मा सकिन्छ",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

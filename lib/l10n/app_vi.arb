@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Quét thẻ hoặc giấy tờ, hoặc thêm thủ công. Vaultara sẽ nhắc bạn trước khi hết hạn.",
-  "recordsScan": "Quét"
+  "recordsScan": "Quét",
+  "insightsCardTitle": "Gợi ý thông minh",
+  "insightPosition": "Gợi ý {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Để sau",
+  "insightSnoozed": "Đã ẩn một tuần. Nó sẽ quay lại nếu vẫn cần bạn xử lý.",
+  "insightAsk": "Hỏi về việc này",
+  "insightAskPrompt": "{heading}. {body} Tôi nên làm gì?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Hồ sơ",
+  "insightsSummaryDueSoon": "Đến hạn trong 30 ngày",
+  "insightsSummaryNoReminder": "Không có nhắc nhở",
+  "insightsListEmpty": "Hiện chưa có gì ở đây.",
+  "smartInsightUpcomingCostHeading": "Sắp gia hạn",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} lần gia hạn trong 3 tháng tới sẽ tốn khoảng {amount}.} other{{count} lần gia hạn trong 3 tháng tới sẽ tốn khoảng {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Tuần của bạn",
+  "weeklyRecapNothing": "Tuần này không có gì hết hạn.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} hồ sơ hết hạn trong tuần này.} other{{count} hồ sơ hết hạn trong tuần này.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Tuần trước bạn đã gia hạn {count} hồ sơ.} other{Tuần trước bạn đã gia hạn {count} hồ sơ.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Gia hạn tuần trước tốn {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Đóng",
+  "timelineUnlockProgress": "{count}/{total} hồ sơ có ngày sắp tới",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Lặp lại",
+  "calendarNextExpiry": "Hạn tiếp theo",
+  "calendarViewMonth": "Tháng",
+  "calendarViewList": "Danh sách",
+  "calendarLegendExpiry": "Hết hạn",
+  "calendarLegendReminder": "Nhắc nhở",
+  "calendarMonthSummary": "{count, plural, =1{{count} hết hạn trong {month}} other{{count} hết hạn trong {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Không có gì hết hạn trong {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Khoảng {amount} để gia hạn",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Tuần này",
+  "calendarNextWeek": "Tuần sau",
+  "calendarListEmpty": "Không có gì trong 12 tháng tới.",
+  "calendarDaysLeft": "{count, plural, =1{Còn {count} ngày} other{Còn {count} ngày}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Đã hết hạn {count} ngày trước} other{Đã hết hạn {count} ngày trước}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Thêm hồ sơ hết hạn vào ngày này",
+  "calendarPickMonth": "Chọn tháng",
+  "calendarReminderFor": "Nhắc nhở: {name} hết hạn vào {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

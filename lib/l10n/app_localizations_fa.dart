@@ -8106,4 +8106,174 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get recordsScan => 'اسکن';
+
+  @override
+  String get insightsCardTitle => 'بینش‌های هوشمند';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'بینش $index از $total';
+  }
+
+  @override
+  String get insightSnooze => 'بعداً';
+
+  @override
+  String get insightSnoozed => 'به مدت یک هفته پنهان شد. اگر هنوز لازم باشد، برمی‌گردد.';
+
+  @override
+  String get insightAsk => 'درباره این بپرس';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body چه کار کنم؟';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'موارد';
+
+  @override
+  String get insightsSummaryDueSoon => 'تا ۳۰ روز آینده';
+
+  @override
+  String get insightsSummaryNoReminder => 'بدون یادآور';
+
+  @override
+  String get insightsListEmpty => 'فعلاً چیزی اینجا نیست.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'تمدیدهای پیش رو';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تمدید در ۳ ماه آینده حدود $amount هزینه دارد.',
+      one: '$count تمدید در ۳ ماه آینده حدود $amount هزینه دارد.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'هفته شما';
+
+  @override
+  String get weeklyRecapNothing => 'این هفته چیزی منقضی نمی‌شود.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'این هفته $count مورد منقضی می‌شود.',
+      one: 'این هفته $count مورد منقضی می‌شود.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'هفته گذشته $count مورد را تمدید کردید.',
+      one: 'هفته گذشته $count مورد را تمدید کردید.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'تمدیدهای هفته گذشته $amount هزینه داشت.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'بستن';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count از $total مورد با تاریخ پیش رو';
+  }
+
+  @override
+  String get timelineRepeats => 'تکرار می‌شود';
+
+  @override
+  String get calendarNextExpiry => 'انقضای بعدی';
+
+  @override
+  String get calendarViewMonth => 'ماه';
+
+  @override
+  String get calendarViewList => 'فهرست';
+
+  @override
+  String get calendarLegendExpiry => 'منقضی می‌شود';
+
+  @override
+  String get calendarLegendReminder => 'یادآور';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد در $month منقضی می‌شود',
+      one: '$count مورد در $month منقضی می‌شود',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'در $month چیزی منقضی نمی‌شود';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'حدود $amount برای تمدید';
+  }
+
+  @override
+  String get calendarThisWeek => 'این هفته';
+
+  @override
+  String get calendarNextWeek => 'هفته بعد';
+
+  @override
+  String get calendarListEmpty => 'در ۱۲ ماه آینده چیزی نیست.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count روز مانده',
+      one: '$count روز مانده',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count روز پیش منقضی شد',
+      one: '$count روز پیش منقضی شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'افزودن موردی که در این روز منقضی می‌شود';
+
+  @override
+  String get calendarPickMonth => 'انتخاب ماه';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'یادآور: $name در $date منقضی می‌شود';
+  }
 }

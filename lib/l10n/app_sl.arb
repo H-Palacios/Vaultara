@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Skenirajte kartico ali dokument ali ga dodajte ročno. Vaultara vas opomni, preden poteče.",
-  "recordsScan": "Skeniraj"
+  "recordsScan": "Skeniraj",
+  "insightsCardTitle": "Pametni nasveti",
+  "insightPosition": "Nasvet {index} od {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Pozneje",
+  "insightSnoozed": "Skrito za en teden. Vrnilo se bo, če bo še potrebno.",
+  "insightAsk": "Vprašaj o tem",
+  "insightAskPrompt": "{heading}. {body} Kaj naj naredim?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Zapisi",
+  "insightsSummaryDueSoon": "V 30 dneh",
+  "insightsSummaryNoReminder": "Brez opomnika",
+  "insightsListEmpty": "Tukaj zaenkrat ni ničesar.",
+  "smartInsightUpcomingCostHeading": "Prihajajoča podaljšanja",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Podaljšanja v naslednjih 3 mesecih ({count}) bodo stala okoli {amount}.} other{Podaljšanja v naslednjih 3 mesecih ({count}) bodo stala okoli {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Vaš teden",
+  "weeklyRecapNothing": "Ta teden nič ne poteče.",
+  "weeklyRecapExpiring": "{count, plural, =1{Ta teden poteče zapisov: {count}.} other{Ta teden poteče zapisov: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Prejšnji teden podaljšanih zapisov: {count}.} other{Prejšnji teden podaljšanih zapisov: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Podaljšanja prejšnji teden so stala {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Zapri",
+  "timelineUnlockProgress": "{count} od {total} zapisov s prihajajočim datumom",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Ponavlja se",
+  "calendarNextExpiry": "Naslednji potek",
+  "calendarViewMonth": "Mesec",
+  "calendarViewList": "Seznam",
+  "calendarLegendExpiry": "Poteče",
+  "calendarLegendReminder": "Opomnik",
+  "calendarMonthSummary": "{count, plural, =1{{month}: poteče {count}} other{{month}: poteče {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: nič ne poteče",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Okoli {amount} za podaljšanja",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Ta teden",
+  "calendarNextWeek": "Naslednji teden",
+  "calendarListEmpty": "V naslednjih 12 mesecih ni ničesar.",
+  "calendarDaysLeft": "{count, plural, =1{Še {count} dan} two{Še {count} dneva} few{Še {count} dnevi} other{Še {count} dni}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Poteklo pred {count} dnem} other{Poteklo pred {count} dnevi}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Dodaj zapis, ki poteče na ta dan",
+  "calendarPickMonth": "Izberite mesec",
+  "calendarReminderFor": "Opomnik: {name} poteče {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

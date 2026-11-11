@@ -8134,4 +8134,174 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get recordsScan => 'Escanear';
+
+  @override
+  String get insightsCardTitle => 'Consejos inteligentes';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Consejo $index de $total';
+  }
+
+  @override
+  String get insightSnooze => 'Más tarde';
+
+  @override
+  String get insightSnoozed => 'Oculto durante una semana. Volverá si aún te necesita.';
+
+  @override
+  String get insightAsk => 'Preguntar sobre esto';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body ¿Qué debo hacer?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Registros';
+
+  @override
+  String get insightsSummaryDueSoon => 'Vencen en 30 días';
+
+  @override
+  String get insightsSummaryNoReminder => 'Sin recordatorio';
+
+  @override
+  String get insightsListEmpty => 'Aquí no hay nada por ahora.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Renovaciones próximas';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count renovaciones en los próximos 3 meses costarán unos $amount.',
+      one: '$count renovación en los próximos 3 meses costará unos $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Tu semana';
+
+  @override
+  String get weeklyRecapNothing => 'Esta semana no vence nada.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count registros vencen esta semana.',
+      one: '$count registro vence esta semana.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Renovaste $count registros la semana pasada.',
+      one: 'Renovaste $count registro la semana pasada.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Las renovaciones de la semana pasada costaron $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Cerrar';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count de $total registros con una fecha próxima';
+  }
+
+  @override
+  String get timelineRepeats => 'Se repite';
+
+  @override
+  String get calendarNextExpiry => 'Próximo vencimiento';
+
+  @override
+  String get calendarViewMonth => 'Mes';
+
+  @override
+  String get calendarViewList => 'Lista';
+
+  @override
+  String get calendarLegendExpiry => 'Vence';
+
+  @override
+  String get calendarLegendReminder => 'Recordatorio';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vencen en $month',
+      one: '$count vence en $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'No vence nada en $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Unos $amount en renovaciones';
+  }
+
+  @override
+  String get calendarThisWeek => 'Esta semana';
+
+  @override
+  String get calendarNextWeek => 'La próxima semana';
+
+  @override
+  String get calendarListEmpty => 'No hay nada en los próximos 12 meses.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Quedan $count días',
+      one: 'Queda $count día',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Venció hace $count días',
+      one: 'Venció hace $count día',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Agregar un registro que vence este día';
+
+  @override
+  String get calendarPickMonth => 'Elegir un mes';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Recordatorio: $name vence el $date';
+  }
 }

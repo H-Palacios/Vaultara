@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "കാർഡോ രേഖയോ സ്കാൻ ചെയ്യുക, അല്ലെങ്കിൽ സ്വയം ചേർക്കുക. കാലാവധി കഴിയും മുമ്പ് Vaultara ഓർമ്മിപ്പിക്കും.",
-  "recordsScan": "സ്കാൻ"
+  "recordsScan": "സ്കാൻ",
+  "insightsCardTitle": "സ്മാർട്ട് നിർദ്ദേശങ്ങൾ",
+  "insightPosition": "നിർദ്ദേശം {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "പിന്നീട്",
+  "insightSnoozed": "ഒരാഴ്ചത്തേക്ക് മറച്ചു. ഇനിയും ആവശ്യമെങ്കിൽ വീണ്ടും വരും.",
+  "insightAsk": "ഇതിനെക്കുറിച്ച് ചോദിക്കുക",
+  "insightAskPrompt": "{heading}. {body} ഞാൻ എന്ത് ചെയ്യണം?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "റെക്കോർഡുകൾ",
+  "insightsSummaryDueSoon": "30 ദിവസത്തിനുള്ളിൽ",
+  "insightsSummaryNoReminder": "ഓർമ്മപ്പെടുത്തൽ ഇല്ല",
+  "insightsListEmpty": "ഇപ്പോൾ ഇവിടെ ഒന്നുമില്ല.",
+  "smartInsightUpcomingCostHeading": "വരാനിരിക്കുന്ന പുതുക്കലുകൾ",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{അടുത്ത 3 മാസത്തിലെ {count} പുതുക്കലിന് ഏകദേശം {amount} ചെലവാകും.} other{അടുത്ത 3 മാസത്തിലെ {count} പുതുക്കലുകൾക്ക് ഏകദേശം {amount} ചെലവാകും.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "നിങ്ങളുടെ ആഴ്ച",
+  "weeklyRecapNothing": "ഈ ആഴ്ച ഒന്നും കാലഹരണപ്പെടുന്നില്ല.",
+  "weeklyRecapExpiring": "{count, plural, =1{ഈ ആഴ്ച {count} റെക്കോർഡ് കാലഹരണപ്പെടുന്നു.} other{ഈ ആഴ്ച {count} റെക്കോർഡുകൾ കാലഹരണപ്പെടുന്നു.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{കഴിഞ്ഞ ആഴ്ച നിങ്ങൾ {count} റെക്കോർഡ് പുതുക്കി.} other{കഴിഞ്ഞ ആഴ്ച നിങ്ങൾ {count} റെക്കോർഡുകൾ പുതുക്കി.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "കഴിഞ്ഞ ആഴ്ചയിലെ പുതുക്കലുകൾക്ക് {amount} ചെലവായി.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "അടയ്ക്കുക",
+  "timelineUnlockProgress": "വരാനിരിക്കുന്ന തീയതിയുള്ള {total} ൽ {count} റെക്കോർഡുകൾ",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "ആവർത്തിക്കുന്നു",
+  "calendarNextExpiry": "അടുത്ത കാലാവധി",
+  "calendarViewMonth": "മാസം",
+  "calendarViewList": "ലിസ്റ്റ്",
+  "calendarLegendExpiry": "കാലഹരണപ്പെടുന്നു",
+  "calendarLegendReminder": "ഓർമ്മപ്പെടുത്തൽ",
+  "calendarMonthSummary": "{count, plural, =1{{month} ൽ {count} കാലഹരണപ്പെടുന്നു} other{{month} ൽ {count} കാലഹരണപ്പെടുന്നു}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} ൽ ഒന്നും കാലഹരണപ്പെടുന്നില്ല",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "പുതുക്കാൻ ഏകദേശം {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ഈ ആഴ്ച",
+  "calendarNextWeek": "അടുത്ത ആഴ്ച",
+  "calendarListEmpty": "അടുത്ത 12 മാസത്തിൽ ഒന്നുമില്ല.",
+  "calendarDaysLeft": "{count, plural, =1{{count} ദിവസം ബാക്കി} other{{count} ദിവസം ബാക്കി}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} ദിവസം മുമ്പ് കാലഹരണപ്പെട്ടു} other{{count} ദിവസം മുമ്പ് കാലഹരണപ്പെട്ടു}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "ഈ ദിവസം കാലഹരണപ്പെടുന്ന റെക്കോർഡ് ചേർക്കുക",
+  "calendarPickMonth": "മാസം തിരഞ്ഞെടുക്കുക",
+  "calendarReminderFor": "ഓർമ്മപ്പെടുത്തൽ: {name} {date} ന് കാലഹരണപ്പെടും",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

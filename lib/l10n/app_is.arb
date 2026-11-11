@@ -2721,5 +2721,150 @@
     }
   },
   "recordsEmptyBody": "Skannaðu kortið eða skjalið, eða bættu því við handvirkt. Vaultara minnir þig á áður en það rennur út.",
-  "recordsScan": "Skanna"
+  "recordsScan": "Skanna",
+  "insightsCardTitle": "Snjallar ábendingar",
+  "insightPosition": "Ábending {index} af {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Síðar",
+  "insightSnoozed": "Falið í viku. Kemur aftur ef þess er enn þörf.",
+  "insightAsk": "Spyrja um þetta",
+  "insightAskPrompt": "{heading}. {body} Hvað ætti ég að gera?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Færslur",
+  "insightsSummaryDueSoon": "Innan 30 daga",
+  "insightsSummaryNoReminder": "Engin áminning",
+  "insightsListEmpty": "Hér er ekkert í bili.",
+  "smartInsightUpcomingCostHeading": "Endurnýjanir fram undan",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} endurnýjun næstu 3 mánuði kostar um {amount}.} other{{count} endurnýjanir næstu 3 mánuði kosta um {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Vikan þín",
+  "weeklyRecapNothing": "Ekkert rennur út í þessari viku.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} færsla rennur út í þessari viku.} other{{count} færslur renna út í þessari viku.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Þú endurnýjaðir {count} færslu í síðustu viku.} other{Þú endurnýjaðir {count} færslur í síðustu viku.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Endurnýjanir síðustu viku kostuðu {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Loka",
+  "timelineUnlockProgress": "{count} af {total} færslum með dagsetningu fram undan",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Endurtekst",
+  "calendarNextExpiry": "Næsta lokadagsetning",
+  "calendarViewMonth": "Mánuður",
+  "calendarViewList": "Listi",
+  "calendarLegendExpiry": "Rennur út",
+  "calendarLegendReminder": "Áminning",
+  "calendarMonthSummary": "{count, plural, =1{{count} rennur út í {month}} other{{count} renna út í {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Ekkert rennur út í {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Um {amount} í endurnýjun",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Þessi vika",
+  "calendarNextWeek": "Næsta vika",
+  "calendarListEmpty": "Ekkert næstu 12 mánuði.",
+  "calendarDaysLeft": "{count, plural, =1{{count} dagur eftir} other{{count} dagar eftir}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Rann út fyrir {count} degi} other{Rann út fyrir {count} dögum}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Bæta við færslu sem rennur út þennan dag",
+  "calendarPickMonth": "Veldu mánuð",
+  "calendarReminderFor": "Áminning: {name} rennur út {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

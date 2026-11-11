@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "அட்டை அல்லது ஆவணத்தை ஸ்கேன் செய்யுங்கள், அல்லது கைமுறையாகச் சேருங்கள். காலாவதியாகும் முன் Vaultara நினைவூட்டும்.",
-  "recordsScan": "ஸ்கேன்"
+  "recordsScan": "ஸ்கேன்",
+  "insightsCardTitle": "ஸ்மார்ட் குறிப்புகள்",
+  "insightPosition": "குறிப்பு {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "பிறகு",
+  "insightSnoozed": "ஒரு வாரத்துக்கு மறைக்கப்பட்டது. இன்னும் தேவைப்பட்டால் மீண்டும் வரும்.",
+  "insightAsk": "இதைப் பற்றிக் கேள்",
+  "insightAskPrompt": "{heading}. {body} நான் என்ன செய்ய வேண்டும்?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "பதிவுகள்",
+  "insightsSummaryDueSoon": "30 நாட்களுக்குள்",
+  "insightsSummaryNoReminder": "நினைவூட்டல் இல்லை",
+  "insightsListEmpty": "இப்போது இங்கே எதுவும் இல்லை.",
+  "smartInsightUpcomingCostHeading": "வரவிருக்கும் புதுப்பித்தல்கள்",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{அடுத்த 3 மாதங்களில் {count} புதுப்பித்தலுக்கு சுமார் {amount} செலவாகும்.} other{அடுத்த 3 மாதங்களில் {count} புதுப்பித்தல்களுக்கு சுமார் {amount} செலவாகும்.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "உங்கள் வாரம்",
+  "weeklyRecapNothing": "இந்த வாரம் எதுவும் காலாவதியாகவில்லை.",
+  "weeklyRecapExpiring": "{count, plural, =1{இந்த வாரம் {count} பதிவு காலாவதியாகிறது.} other{இந்த வாரம் {count} பதிவுகள் காலாவதியாகின்றன.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{கடந்த வாரம் {count} பதிவைப் புதுப்பித்தீர்கள்.} other{கடந்த வாரம் {count} பதிவுகளைப் புதுப்பித்தீர்கள்.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "கடந்த வாரப் புதுப்பித்தல்களுக்கு {amount} செலவானது.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "மூடு",
+  "timelineUnlockProgress": "வரவிருக்கும் தேதி உள்ள {total} இல் {count} பதிவுகள்",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "மீண்டும் வரும்",
+  "calendarNextExpiry": "அடுத்த காலாவதி",
+  "calendarViewMonth": "மாதம்",
+  "calendarViewList": "பட்டியல்",
+  "calendarLegendExpiry": "காலாவதி",
+  "calendarLegendReminder": "நினைவூட்டல்",
+  "calendarMonthSummary": "{count, plural, =1{{month} இல் {count} காலாவதி} other{{month} இல் {count} காலாவதி}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} இல் எதுவும் காலாவதியாகவில்லை",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "புதுப்பிக்க சுமார் {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "இந்த வாரம்",
+  "calendarNextWeek": "அடுத்த வாரம்",
+  "calendarListEmpty": "அடுத்த 12 மாதங்களில் எதுவும் இல்லை.",
+  "calendarDaysLeft": "{count, plural, =1{{count} நாள் உள்ளது} other{{count} நாட்கள் உள்ளன}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} நாள் முன் காலாவதியானது} other{{count} நாட்கள் முன் காலாவதியானது}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "இந்த நாளில் காலாவதியாகும் பதிவைச் சேர்",
+  "calendarPickMonth": "மாதத்தைத் தேர்ந்தெடு",
+  "calendarReminderFor": "நினைவூட்டல்: {name} {date} அன்று காலாவதியாகும்",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

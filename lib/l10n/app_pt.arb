@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Escaneie o cartão ou documento, ou adicione à mão. O Vaultara avisa antes de vencer.",
-  "recordsScan": "Escanear"
+  "recordsScan": "Escanear",
+  "insightsCardTitle": "Dicas inteligentes",
+  "insightPosition": "Dica {index} de {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Mais tarde",
+  "insightSnoozed": "Oculta por uma semana. Volta se ainda precisar de você.",
+  "insightAsk": "Perguntar sobre isto",
+  "insightAskPrompt": "{heading}. {body} O que devo fazer?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Registros",
+  "insightsSummaryDueSoon": "Vencem em 30 dias",
+  "insightsSummaryNoReminder": "Sem lembrete",
+  "insightsListEmpty": "Nada aqui por enquanto.",
+  "smartInsightUpcomingCostHeading": "Renovações chegando",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} renovação nos próximos 3 meses vai custar cerca de {amount}.} other{{count} renovações nos próximos 3 meses vão custar cerca de {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Sua semana",
+  "weeklyRecapNothing": "Nada vence esta semana.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} registro vence esta semana.} other{{count} registros vencem esta semana.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Você renovou {count} registro na semana passada.} other{Você renovou {count} registros na semana passada.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "As renovações da semana passada custaram {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Fechar",
+  "timelineUnlockProgress": "{count} de {total} registros com data futura",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Repete",
+  "calendarNextExpiry": "Próximo vencimento",
+  "calendarViewMonth": "Mês",
+  "calendarViewList": "Lista",
+  "calendarLegendExpiry": "Vence",
+  "calendarLegendReminder": "Lembrete",
+  "calendarMonthSummary": "{count, plural, =1{{count} vencendo em {month}} other{{count} vencendo em {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Nada vence em {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Cerca de {amount} em renovações",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Esta semana",
+  "calendarNextWeek": "Próxima semana",
+  "calendarListEmpty": "Nada nos próximos 12 meses.",
+  "calendarDaysLeft": "{count, plural, =1{Falta {count} dia} other{Faltam {count} dias}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Venceu há {count} dia} other{Venceu há {count} dias}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Adicionar um registro que vence neste dia",
+  "calendarPickMonth": "Escolher um mês",
+  "calendarReminderFor": "Lembrete: {name} vence em {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

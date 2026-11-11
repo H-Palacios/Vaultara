@@ -8333,4 +8333,174 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get recordsScan => 'مسح ضوئي';
+
+  @override
+  String get insightsCardTitle => 'رؤى ذكية';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'الرؤية $index من $total';
+  }
+
+  @override
+  String get insightSnooze => 'لاحقًا';
+
+  @override
+  String get insightSnoozed => 'أُخفيت لمدة أسبوع. ستعود إذا كانت لا تزال تحتاج إليك.';
+
+  @override
+  String get insightAsk => 'اسأل عن هذا';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body ماذا يجب أن أفعل؟';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'السجلات';
+
+  @override
+  String get insightsSummaryDueSoon => 'خلال 30 يومًا';
+
+  @override
+  String get insightsSummaryNoReminder => 'بلا تذكير';
+
+  @override
+  String get insightsListEmpty => 'لا يوجد شيء هنا الآن.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'تجديدات قادمة';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ستكلف التجديدات في الأشهر الثلاثة القادمة ($count) نحو $amount.',
+      one: 'ستكلف التجديدات في الأشهر الثلاثة القادمة ($count) نحو $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'أسبوعك';
+
+  @override
+  String get weeklyRecapNothing => 'لا ينتهي شيء هذا الأسبوع.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'عدد السجلات التي تنتهي هذا الأسبوع: $count.',
+      one: 'عدد السجلات التي تنتهي هذا الأسبوع: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'عدد السجلات التي جددتها الأسبوع الماضي: $count.',
+      one: 'عدد السجلات التي جددتها الأسبوع الماضي: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'كلفت تجديدات الأسبوع الماضي $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'إغلاق';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count من $total سجلات بتاريخ قادم';
+  }
+
+  @override
+  String get timelineRepeats => 'يتكرر';
+
+  @override
+  String get calendarNextExpiry => 'أقرب انتهاء';
+
+  @override
+  String get calendarViewMonth => 'شهر';
+
+  @override
+  String get calendarViewList => 'قائمة';
+
+  @override
+  String get calendarLegendExpiry => 'ينتهي';
+
+  @override
+  String get calendarLegendReminder => 'تذكير';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: ينتهي $count',
+      one: '$month: ينتهي $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'لا ينتهي شيء في $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'نحو $amount للتجديد';
+  }
+
+  @override
+  String get calendarThisWeek => 'هذا الأسبوع';
+
+  @override
+  String get calendarNextWeek => 'الأسبوع القادم';
+
+  @override
+  String get calendarListEmpty => 'لا شيء خلال الأشهر الـ12 القادمة.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'متبقٍ $count يوم',
+      one: 'متبقٍ $count يوم',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'انتهى منذ $count يوم',
+      one: 'انتهى منذ $count يوم',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'إضافة سجل ينتهي في هذا اليوم';
+
+  @override
+  String get calendarPickMonth => 'اختر شهرًا';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'تذكير: ينتهي $name في $date';
+  }
 }

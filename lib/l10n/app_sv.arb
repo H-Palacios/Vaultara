@@ -2709,5 +2709,150 @@
     }
   },
   "recordsEmptyBody": "Skanna kortet eller dokumentet, eller lägg till det för hand. Vaultara påminner dig innan det går ut.",
-  "recordsScan": "Skanna"
+  "recordsScan": "Skanna",
+  "insightsCardTitle": "Smarta tips",
+  "insightPosition": "Tips {index} av {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Senare",
+  "insightSnoozed": "Dold i en vecka. Den kommer tillbaka om den fortfarande behövs.",
+  "insightAsk": "Fråga om det här",
+  "insightAskPrompt": "{heading}. {body} Vad ska jag göra?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Poster",
+  "insightsSummaryDueSoon": "Inom 30 dagar",
+  "insightsSummaryNoReminder": "Ingen påminnelse",
+  "insightsListEmpty": "Här finns inget just nu.",
+  "smartInsightUpcomingCostHeading": "Förnyelser på väg",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} förnyelse de kommande 3 månaderna kostar ungefär {amount}.} other{{count} förnyelser de kommande 3 månaderna kostar ungefär {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Din vecka",
+  "weeklyRecapNothing": "Inget går ut den här veckan.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} post går ut den här veckan.} other{{count} poster går ut den här veckan.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Du förnyade {count} post förra veckan.} other{Du förnyade {count} poster förra veckan.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Förnyelserna förra veckan kostade {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Stäng",
+  "timelineUnlockProgress": "{count} av {total} poster med kommande datum",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Upprepas",
+  "calendarNextExpiry": "Nästa utgång",
+  "calendarViewMonth": "Månad",
+  "calendarViewList": "Lista",
+  "calendarLegendExpiry": "Går ut",
+  "calendarLegendReminder": "Påminnelse",
+  "calendarMonthSummary": "{count, plural, =1{{count} går ut i {month}} other{{count} går ut i {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Inget går ut i {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Ungefär {amount} att förnya",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Den här veckan",
+  "calendarNextWeek": "Nästa vecka",
+  "calendarListEmpty": "Inget de kommande 12 månaderna.",
+  "calendarDaysLeft": "{count, plural, =1{{count} dag kvar} other{{count} dagar kvar}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Gick ut för {count} dag sedan} other{Gick ut för {count} dagar sedan}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Lägg till en post som går ut den här dagen",
+  "calendarPickMonth": "Välj månad",
+  "calendarReminderFor": "Påminnelse: {name} går ut {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

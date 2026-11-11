@@ -8105,4 +8105,174 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get recordsScan => 'Iska sawir';
+
+  @override
+  String get insightsCardTitle => 'Talooyin caqli leh';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Talo $index ee $total';
+  }
+
+  @override
+  String get insightSnooze => 'Hadhow';
+
+  @override
+  String get insightSnoozed => 'Toddobaad ayaa la qariyay. Way soo noqonaysaa haddii weli loo baahdo.';
+
+  @override
+  String get insightAsk => 'Wax ka weydii';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Maxaan sameeyaa?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Diiwaanno';
+
+  @override
+  String get insightsSummaryDueSoon => '30 maalmood gudahood';
+
+  @override
+  String get insightsSummaryNoReminder => 'Xusuusin la\'aan';
+
+  @override
+  String get insightsListEmpty => 'Halkan wax ma jiraan hadda.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Cusboonaysiinta soo socota';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cusboonaysiin 3da bilood ee soo socda waxay ku kacayaan ilaa $amount.',
+      one: '$count cusboonaysiin 3da bilood ee soo socda waxay ku kacaysaa ilaa $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Toddobaadkaaga';
+
+  @override
+  String get weeklyRecapNothing => 'Toddobaadkan waxba ma dhacayaan.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count diiwaan ayaa dhacaya toddobaadkan.',
+      one: '$count diiwaan ayaa dhacaya toddobaadkan.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Toddobaadkii hore waxaad cusboonaysiisay $count diiwaan.',
+      one: 'Toddobaadkii hore waxaad cusboonaysiisay $count diiwaan.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Cusboonaysiinta toddobaadkii hore waxay ku kacday $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Xir';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count ka mid ah $total diiwaan oo leh taariikh soo socota';
+  }
+
+  @override
+  String get timelineRepeats => 'Way soo noqnoqotaa';
+
+  @override
+  String get calendarNextExpiry => 'Dhicitaanka xiga';
+
+  @override
+  String get calendarViewMonth => 'Bil';
+
+  @override
+  String get calendarViewList => 'Liis';
+
+  @override
+  String get calendarLegendExpiry => 'Wuu dhacayaa';
+
+  @override
+  String get calendarLegendReminder => 'Xusuusin';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count ayaa dhacaya',
+      one: '$month: $count ayaa dhacaya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: waxba ma dhacayaan';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Ilaa $amount cusboonaysiin';
+  }
+
+  @override
+  String get calendarThisWeek => 'Toddobaadkan';
+
+  @override
+  String get calendarNextWeek => 'Toddobaadka soo socda';
+
+  @override
+  String get calendarListEmpty => 'Waxba ma jiraan 12ka bilood ee soo socda.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count maalmood ayaa hadhay',
+      one: '$count maalin ayaa hadhay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wuu dhacay $count maalmood ka hor',
+      one: 'Wuu dhacay $count maalin ka hor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Ku dar diiwaan dhacaya maalintan';
+
+  @override
+  String get calendarPickMonth => 'Dooro bil';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Xusuusin: $name wuxuu dhacayaa $date';
+  }
 }

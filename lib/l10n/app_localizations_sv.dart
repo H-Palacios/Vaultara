@@ -8109,4 +8109,174 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skanna';
+
+  @override
+  String get insightsCardTitle => 'Smarta tips';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Tips $index av $total';
+  }
+
+  @override
+  String get insightSnooze => 'Senare';
+
+  @override
+  String get insightSnoozed => 'Dold i en vecka. Den kommer tillbaka om den fortfarande behövs.';
+
+  @override
+  String get insightAsk => 'Fråga om det här';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Vad ska jag göra?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Poster';
+
+  @override
+  String get insightsSummaryDueSoon => 'Inom 30 dagar';
+
+  @override
+  String get insightsSummaryNoReminder => 'Ingen påminnelse';
+
+  @override
+  String get insightsListEmpty => 'Här finns inget just nu.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Förnyelser på väg';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count förnyelser de kommande 3 månaderna kostar ungefär $amount.',
+      one: '$count förnyelse de kommande 3 månaderna kostar ungefär $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Din vecka';
+
+  @override
+  String get weeklyRecapNothing => 'Inget går ut den här veckan.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count poster går ut den här veckan.',
+      one: '$count post går ut den här veckan.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Du förnyade $count poster förra veckan.',
+      one: 'Du förnyade $count post förra veckan.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Förnyelserna förra veckan kostade $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Stäng';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count av $total poster med kommande datum';
+  }
+
+  @override
+  String get timelineRepeats => 'Upprepas';
+
+  @override
+  String get calendarNextExpiry => 'Nästa utgång';
+
+  @override
+  String get calendarViewMonth => 'Månad';
+
+  @override
+  String get calendarViewList => 'Lista';
+
+  @override
+  String get calendarLegendExpiry => 'Går ut';
+
+  @override
+  String get calendarLegendReminder => 'Påminnelse';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count går ut i $month',
+      one: '$count går ut i $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Inget går ut i $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Ungefär $amount att förnya';
+  }
+
+  @override
+  String get calendarThisWeek => 'Den här veckan';
+
+  @override
+  String get calendarNextWeek => 'Nästa vecka';
+
+  @override
+  String get calendarListEmpty => 'Inget de kommande 12 månaderna.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dagar kvar',
+      one: '$count dag kvar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gick ut för $count dagar sedan',
+      one: 'Gick ut för $count dag sedan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Lägg till en post som går ut den här dagen';
+
+  @override
+  String get calendarPickMonth => 'Välj månad';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Påminnelse: $name går ut $date';
+  }
 }

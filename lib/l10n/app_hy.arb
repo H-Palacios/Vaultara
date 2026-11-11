@@ -2730,5 +2730,150 @@
     }
   },
   "recordsEmptyBody": "Սկանավորեք քարտը կամ փաստաթուղթը կամ ավելացրեք ձեռքով։ Vaultara-ն կհիշեցնի ժամկետը լրանալուց առաջ։",
-  "recordsScan": "Սկանավորել"
+  "recordsScan": "Սկանավորել",
+  "insightsCardTitle": "Խելացի խորհուրդներ",
+  "insightPosition": "Խորհուրդ {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Ավելի ուշ",
+  "insightSnoozed": "Թաքցված է մեկ շաբաթով։ Կվերադառնա, եթե դեռ պետք լինի։",
+  "insightAsk": "Հարցնել այս մասին",
+  "insightAskPrompt": "{heading}։ {body} Ի՞նչ անեմ։",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Գրառումներ",
+  "insightsSummaryDueSoon": "30 օրվա ընթացքում",
+  "insightsSummaryNoReminder": "Առանց հիշեցման",
+  "insightsListEmpty": "Այստեղ դեռ ոչինչ չկա։",
+  "smartInsightUpcomingCostHeading": "Մոտալուտ թարմացումներ",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Առաջիկա 3 ամսվա {count} թարմացումը կարժենա մոտ {amount}։} other{Առաջիկա 3 ամսվա {count} թարմացումները կարժենան մոտ {amount}։}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Ձեր շաբաթը",
+  "weeklyRecapNothing": "Այս շաբաթ ոչինչ չի լրանում։",
+  "weeklyRecapExpiring": "{count, plural, =1{Այս շաբաթ լրանում է {count} գրառում։} other{Այս շաբաթ լրանում է {count} գրառում։}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Անցյալ շաբաթ թարմացրել եք {count} գրառում։} other{Անցյալ շաբաթ թարմացրել եք {count} գրառում։}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Անցյալ շաբաթվա թարմացումները արժեցան {amount}։",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Փակել",
+  "timelineUnlockProgress": "Մոտալուտ ամսաթվով {total} գրառումից {count}-ը",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Կրկնվում է",
+  "calendarNextExpiry": "Հաջորդ ժամկետը",
+  "calendarViewMonth": "Ամիս",
+  "calendarViewList": "Ցանկ",
+  "calendarLegendExpiry": "Լրանում է",
+  "calendarLegendReminder": "Հիշեցում",
+  "calendarMonthSummary": "{count, plural, =1{{month}՝ լրանում է {count}} other{{month}՝ լրանում է {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}՝ ոչինչ չի լրանում",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Մոտ {amount} թարմացման համար",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Այս շաբաթ",
+  "calendarNextWeek": "Հաջորդ շաբաթ",
+  "calendarListEmpty": "Առաջիկա 12 ամսում ոչինչ չկա։",
+  "calendarDaysLeft": "{count, plural, =1{Մնաց {count} օր} other{Մնաց {count} օր}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Լրացել է {count} օր առաջ} other{Լրացել է {count} օր առաջ}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Ավելացնել այս օրը լրացող գրառում",
+  "calendarPickMonth": "Ընտրեք ամիսը",
+  "calendarReminderFor": "Հիշեցում՝ {name}-ի ժամկետը լրանում է {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

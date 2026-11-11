@@ -2721,5 +2721,150 @@
     }
   },
   "recordsEmptyBody": "Nyochaa kaadị ma ọ bụ akwụkwọ, ma ọ bụ tinye ya n'aka. Vaultara ga-echetara gị tupu ọ gwụ.",
-  "recordsScan": "Nyochaa"
+  "recordsScan": "Nyochaa",
+  "insightsCardTitle": "Ndụmọdụ amamihe",
+  "insightPosition": "Ndụmọdụ {index} n'ime {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Emechaa",
+  "insightSnoozed": "E zoro ya otu izu. Ọ ga-alọta ma ọ ka dị mkpa.",
+  "insightAsk": "Jụọ maka nke a",
+  "insightAskPrompt": "{heading}. {body} Gịnị ka m kwesịrị ime?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Ndekọ",
+  "insightsSummaryDueSoon": "N'ime ụbọchị 30",
+  "insightsSummaryNoReminder": "Enweghị ihe ncheta",
+  "insightsListEmpty": "Ọ dịghị ihe ebe a ugbu a.",
+  "smartInsightUpcomingCostHeading": "Mmeghari ọhụrụ na-abịa",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Mmeghari {count} n'ime ọnwa 3 na-abịa ga-efu ihe dị ka {amount}.} other{Mmeghari {count} n'ime ọnwa 3 na-abịa ga-efu ihe dị ka {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Izu gị",
+  "weeklyRecapNothing": "Ọ dịghị ihe na-agwụ n'izu a.",
+  "weeklyRecapExpiring": "{count, plural, =1{Ndekọ {count} na-agwụ n'izu a.} other{Ndekọ {count} na-agwụ n'izu a.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Ị megharịrị ndekọ {count} n'izu gara aga.} other{Ị megharịrị ndekọ {count} n'izu gara aga.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Mmeghari izu gara aga fụrụ {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Mechie",
+  "timelineUnlockProgress": "Ndekọ {count} n'ime {total} nwere ụbọchị na-abịa",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Na-emegharị",
+  "calendarNextExpiry": "Ngwụcha na-esote",
+  "calendarViewMonth": "Ọnwa",
+  "calendarViewList": "Ndepụta",
+  "calendarLegendExpiry": "Na-agwụ",
+  "calendarLegendReminder": "Ihe ncheta",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} na-agwụ} other{{month}: {count} na-agwụ}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: ọ dịghị ihe na-agwụ",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Ihe dị ka {amount} maka mmeghari",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Izu a",
+  "calendarNextWeek": "Izu na-abịa",
+  "calendarListEmpty": "Ọ dịghị ihe n'ime ọnwa 12 na-abịa.",
+  "calendarDaysLeft": "{count, plural, =1{Ụbọchị {count} fọdụrụ} other{Ụbọchị {count} fọdụrụ}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Gwụrụ ụbọchị {count} gara aga} other{Gwụrụ ụbọchị {count} gara aga}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Tinye ndekọ na-agwụ n'ụbọchị a",
+  "calendarPickMonth": "Họrọ ọnwa",
+  "calendarReminderFor": "Ihe ncheta: {name} na-agwụ na {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

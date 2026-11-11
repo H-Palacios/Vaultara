@@ -2747,5 +2747,150 @@
     }
   },
   "recordsEmptyBody": "কার্ড বা নথি স্ক্যান করুন, অথবা নিজে যোগ করুন। মেয়াদ শেষের আগে Vaultara আপনাকে মনে করিয়ে দেবে।",
-  "recordsScan": "স্ক্যান"
+  "recordsScan": "স্ক্যান",
+  "insightsCardTitle": "স্মার্ট পরামর্শ",
+  "insightPosition": "পরামর্শ {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "পরে",
+  "insightSnoozed": "এক সপ্তাহের জন্য লুকানো হলো। দরকার থাকলে আবার দেখাবে।",
+  "insightAsk": "এ বিষয়ে জিজ্ঞাসা করুন",
+  "insightAskPrompt": "{heading}। {body} আমার কী করা উচিত?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "রেকর্ড",
+  "insightsSummaryDueSoon": "30 দিনের মধ্যে",
+  "insightsSummaryNoReminder": "কোনো রিমাইন্ডার নেই",
+  "insightsListEmpty": "এখানে এখন কিছু নেই।",
+  "smartInsightUpcomingCostHeading": "আসন্ন নবায়ন",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{আগামী 3 মাসে {count}টি নবায়নে প্রায় {amount} খরচ হবে।} other{আগামী 3 মাসে {count}টি নবায়নে প্রায় {amount} খরচ হবে।}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "আপনার সপ্তাহ",
+  "weeklyRecapNothing": "এই সপ্তাহে কিছুর মেয়াদ শেষ হচ্ছে না।",
+  "weeklyRecapExpiring": "{count, plural, =1{এই সপ্তাহে {count}টি রেকর্ডের মেয়াদ শেষ হচ্ছে।} other{এই সপ্তাহে {count}টি রেকর্ডের মেয়াদ শেষ হচ্ছে।}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{গত সপ্তাহে আপনি {count}টি রেকর্ড নবায়ন করেছেন।} other{গত সপ্তাহে আপনি {count}টি রেকর্ড নবায়ন করেছেন।}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "গত সপ্তাহের নবায়নে {amount} খরচ হয়েছে।",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "বন্ধ করুন",
+  "timelineUnlockProgress": "আসন্ন তারিখসহ {total}টির মধ্যে {count}টি রেকর্ড",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "পুনরাবৃত্তি হয়",
+  "calendarNextExpiry": "পরবর্তী মেয়াদ শেষ",
+  "calendarViewMonth": "মাস",
+  "calendarViewList": "তালিকা",
+  "calendarLegendExpiry": "মেয়াদ শেষ",
+  "calendarLegendReminder": "রিমাইন্ডার",
+  "calendarMonthSummary": "{count, plural, =1{{month}-এ {count}টির মেয়াদ শেষ} other{{month}-এ {count}টির মেয়াদ শেষ}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}-এ কিছুর মেয়াদ শেষ হচ্ছে না",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "নবায়নে প্রায় {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "এই সপ্তাহ",
+  "calendarNextWeek": "আগামী সপ্তাহ",
+  "calendarListEmpty": "আগামী 12 মাসে কিছু নেই।",
+  "calendarDaysLeft": "{count, plural, =1{{count} দিন বাকি} other{{count} দিন বাকি}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} দিন আগে মেয়াদ শেষ} other{{count} দিন আগে মেয়াদ শেষ}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "এই দিনে মেয়াদ শেষ হওয়া রেকর্ড যোগ করুন",
+  "calendarPickMonth": "মাস বেছে নিন",
+  "calendarReminderFor": "রিমাইন্ডার: {name}-এর মেয়াদ {date}-এ শেষ",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

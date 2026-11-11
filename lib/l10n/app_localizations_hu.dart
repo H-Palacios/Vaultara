@@ -8106,4 +8106,174 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get recordsScan => 'Szkennelés';
+
+  @override
+  String get insightsCardTitle => 'Okos tippek';
+
+  @override
+  String insightPosition(int index, int total) {
+    return '$index. tipp / $total';
+  }
+
+  @override
+  String get insightSnooze => 'Később';
+
+  @override
+  String get insightSnoozed => 'Egy hétre elrejtve. Visszatér, ha még szükség van rá.';
+
+  @override
+  String get insightAsk => 'Kérdezz erről';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Mit tegyek?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Tételek';
+
+  @override
+  String get insightsSummaryDueSoon => '30 napon belül';
+
+  @override
+  String get insightsSummaryNoReminder => 'Nincs emlékeztető';
+
+  @override
+  String get insightsListEmpty => 'Itt most nincs semmi.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Közelgő megújítások';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A következő 3 hónap $count megújítása körülbelül $amount lesz.',
+      one: 'A következő 3 hónap $count megújítása körülbelül $amount lesz.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'A heted';
+
+  @override
+  String get weeklyRecapNothing => 'Ezen a héten semmi sem jár le.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ezen a héten $count tétel jár le.',
+      one: 'Ezen a héten $count tétel jár le.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Múlt héten $count tételt újítottál meg.',
+      one: 'Múlt héten $count tételt újítottál meg.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'A múlt heti megújítások $amount összegbe kerültek.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Bezárás';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$total tételből $count közelgő dátummal';
+  }
+
+  @override
+  String get timelineRepeats => 'Ismétlődik';
+
+  @override
+  String get calendarNextExpiry => 'Következő lejárat';
+
+  @override
+  String get calendarViewMonth => 'Hónap';
+
+  @override
+  String get calendarViewList => 'Lista';
+
+  @override
+  String get calendarLegendExpiry => 'Lejár';
+
+  @override
+  String get calendarLegendReminder => 'Emlékeztető';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count lejár',
+      one: '$month: $count lejár',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: semmi sem jár le';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Körülbelül $amount a megújításokra';
+  }
+
+  @override
+  String get calendarThisWeek => 'Ez a hét';
+
+  @override
+  String get calendarNextWeek => 'Jövő hét';
+
+  @override
+  String get calendarListEmpty => 'A következő 12 hónapban nincs semmi.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Még $count nap',
+      one: 'Még $count nap',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count napja lejárt',
+      one: '$count napja lejárt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Ezen a napon lejáró tétel hozzáadása';
+
+  @override
+  String get calendarPickMonth => 'Válassz hónapot';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Emlékeztető: $name lejár: $date';
+  }
 }

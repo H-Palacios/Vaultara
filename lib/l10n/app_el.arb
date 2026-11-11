@@ -2723,5 +2723,150 @@
     }
   },
   "recordsEmptyBody": "Σαρώστε την κάρτα ή το έγγραφο ή προσθέστε το χειροκίνητα. Το Vaultara θα σας υπενθυμίσει πριν λήξει.",
-  "recordsScan": "Σάρωση"
+  "recordsScan": "Σάρωση",
+  "insightsCardTitle": "Έξυπνες πληροφορίες",
+  "insightPosition": "Πληροφορία {index} από {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Αργότερα",
+  "insightSnoozed": "Κρύφτηκε για μία εβδομάδα. Θα επιστρέψει αν χρειάζεται ακόμα.",
+  "insightAsk": "Ρώτα γι' αυτό",
+  "insightAskPrompt": "{heading}. {body} Τι πρέπει να κάνω;",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Εγγραφές",
+  "insightsSummaryDueSoon": "Εντός 30 ημερών",
+  "insightsSummaryNoReminder": "Χωρίς υπενθύμιση",
+  "insightsListEmpty": "Δεν υπάρχει τίποτα εδώ προς το παρόν.",
+  "smartInsightUpcomingCostHeading": "Ανανεώσεις που έρχονται",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} ανανέωση τους επόμενους 3 μήνες θα κοστίσει περίπου {amount}.} other{{count} ανανεώσεις τους επόμενους 3 μήνες θα κοστίσουν περίπου {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Η εβδομάδα σας",
+  "weeklyRecapNothing": "Τίποτα δεν λήγει αυτή την εβδομάδα.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} εγγραφή λήγει αυτή την εβδομάδα.} other{{count} εγγραφές λήγουν αυτή την εβδομάδα.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Ανανεώσατε {count} εγγραφή την περασμένη εβδομάδα.} other{Ανανεώσατε {count} εγγραφές την περασμένη εβδομάδα.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Οι ανανεώσεις της περασμένης εβδομάδας κόστισαν {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Κλείσιμο",
+  "timelineUnlockProgress": "{count} από {total} εγγραφές με επερχόμενη ημερομηνία",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Επαναλαμβάνεται",
+  "calendarNextExpiry": "Επόμενη λήξη",
+  "calendarViewMonth": "Μήνας",
+  "calendarViewList": "Λίστα",
+  "calendarLegendExpiry": "Λήγει",
+  "calendarLegendReminder": "Υπενθύμιση",
+  "calendarMonthSummary": "{count, plural, =1{{count} λήγει τον {month}} other{{count} λήγουν τον {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Τίποτα δεν λήγει τον {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Περίπου {amount} για ανανεώσεις",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Αυτή την εβδομάδα",
+  "calendarNextWeek": "Την επόμενη εβδομάδα",
+  "calendarListEmpty": "Τίποτα τους επόμενους 12 μήνες.",
+  "calendarDaysLeft": "{count, plural, =1{Απομένει {count} ημέρα} other{Απομένουν {count} ημέρες}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Έληξε πριν από {count} ημέρα} other{Έληξε πριν από {count} ημέρες}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Προσθήκη εγγραφής που λήγει αυτή την ημέρα",
+  "calendarPickMonth": "Επιλογή μήνα",
+  "calendarReminderFor": "Υπενθύμιση: {name} λήγει στις {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

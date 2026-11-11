@@ -2734,5 +2734,150 @@
     }
   },
   "recordsEmptyBody": "Skannaa kortti tai asiakirja tai lisää se käsin. Vaultara muistuttaa ennen kuin se vanhenee.",
-  "recordsScan": "Skannaa"
+  "recordsScan": "Skannaa",
+  "insightsCardTitle": "Älykkäät vinkit",
+  "insightPosition": "Vinkki {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Myöhemmin",
+  "insightSnoozed": "Piilotettu viikoksi. Se palaa, jos sitä vielä tarvitaan.",
+  "insightAsk": "Kysy tästä",
+  "insightAskPrompt": "{heading}. {body} Mitä minun pitäisi tehdä?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Tietueet",
+  "insightsSummaryDueSoon": "30 päivän sisällä",
+  "insightsSummaryNoReminder": "Ei muistutusta",
+  "insightsListEmpty": "Täällä ei ole nyt mitään.",
+  "smartInsightUpcomingCostHeading": "Tulevat uusinnat",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} uusinta seuraavien 3 kuukauden aikana maksaa noin {amount}.} other{{count} uusintaa seuraavien 3 kuukauden aikana maksaa noin {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Viikkosi",
+  "weeklyRecapNothing": "Tällä viikolla ei vanhene mitään.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} tietue vanhenee tällä viikolla.} other{{count} tietuetta vanhenee tällä viikolla.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Uusit viime viikolla {count} tietueen.} other{Uusit viime viikolla {count} tietuetta.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Viime viikon uusinnat maksoivat {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Sulje",
+  "timelineUnlockProgress": "{count}/{total} tietuetta, joilla on tuleva päivä",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Toistuu",
+  "calendarNextExpiry": "Seuraava vanheneminen",
+  "calendarViewMonth": "Kuukausi",
+  "calendarViewList": "Luettelo",
+  "calendarLegendExpiry": "Vanhenee",
+  "calendarLegendReminder": "Muistutus",
+  "calendarMonthSummary": "{count, plural, =1{{month}: vanhenee {count}} other{{month}: vanhenee {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Ei vanhenevia: {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Noin {amount} uusintoihin",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Tämä viikko",
+  "calendarNextWeek": "Ensi viikko",
+  "calendarListEmpty": "Seuraavan 12 kuukauden aikana ei mitään.",
+  "calendarDaysLeft": "{count, plural, =1{{count} päivä jäljellä} other{{count} päivää jäljellä}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Vanheni {count} päivä sitten} other{Vanheni {count} päivää sitten}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Lisää tietue, joka vanhenee tänä päivänä",
+  "calendarPickMonth": "Valitse kuukausi",
+  "calendarReminderFor": "Muistutus: {name} vanhenee {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

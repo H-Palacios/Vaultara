@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "کارت یا سند سکن کړئ، یا یې په لاس ورزیات کړئ. Vaultara به تاسو ته د پای ته رسېدو مخکې یادونه وکړي.",
-  "recordsScan": "سکن"
+  "recordsScan": "سکن",
+  "insightsCardTitle": "هوښیار مشورې",
+  "insightPosition": "مشوره {index} له {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "وروسته",
+  "insightSnoozed": "د یوې اونۍ لپاره پټ شو. که لا اړتیا وي بېرته راځي.",
+  "insightAsk": "د دې په اړه پوښتنه",
+  "insightAskPrompt": "{heading}. {body} زه باید څه وکړم؟",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "ریکارډونه",
+  "insightsSummaryDueSoon": "په 30 ورځو کې",
+  "insightsSummaryNoReminder": "بې یادونې",
+  "insightsListEmpty": "اوس دلته هیڅ نشته.",
+  "smartInsightUpcomingCostHeading": "راتلونکي نوي کول",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{په راتلونکو 3 میاشتو کې {count} نوي کول به شاوخوا {amount} لګښت ولري.} other{په راتلونکو 3 میاشتو کې {count} نوي کول به شاوخوا {amount} لګښت ولري.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "ستاسو اونۍ",
+  "weeklyRecapNothing": "پدې اونۍ کې هیڅ نه پای ته رسېږي.",
+  "weeklyRecapExpiring": "{count, plural, =1{پدې اونۍ کې {count} ریکارډ پای ته رسېږي.} other{پدې اونۍ کې {count} ریکارډونه پای ته رسېږي.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{تېره اونۍ مو {count} ریکارډ نوی کړ.} other{تېره اونۍ مو {count} ریکارډونه نوي کړل.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "د تېرې اونۍ نوي کول {amount} لګښت درلود.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "بندول",
+  "timelineUnlockProgress": "له {total} ریکارډونو {count} د راتلونکې نېټې سره",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "تکرارېږي",
+  "calendarNextExpiry": "بله پای نېټه",
+  "calendarViewMonth": "میاشت",
+  "calendarViewList": "لېست",
+  "calendarLegendExpiry": "پای ته رسېږي",
+  "calendarLegendReminder": "یادونه",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} پای ته رسېږي} other{{month}: {count} پای ته رسېږي}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: هیڅ نه پای ته رسېږي",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "د نوي کولو لپاره شاوخوا {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "دا اونۍ",
+  "calendarNextWeek": "بله اونۍ",
+  "calendarListEmpty": "په راتلونکو 12 میاشتو کې هیڅ نشته.",
+  "calendarDaysLeft": "{count, plural, =1{{count} ورځ پاتې} other{{count} ورځې پاتې}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} ورځ مخکې پای ته ورسېد} other{{count} ورځې مخکې پای ته ورسېد}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "یو ریکارډ ورزیات کړئ چې پدې ورځ پای ته رسېږي",
+  "calendarPickMonth": "میاشت وټاکئ",
+  "calendarReminderFor": "یادونه: {name} په {date} پای ته رسېږي",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

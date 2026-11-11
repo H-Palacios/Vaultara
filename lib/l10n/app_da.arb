@@ -2747,5 +2747,150 @@
     }
   },
   "recordsEmptyBody": "Scan kortet eller dokumentet, eller tilføj det manuelt. Vaultara minder dig om det, før det udløber.",
-  "recordsScan": "Scan"
+  "recordsScan": "Scan",
+  "insightsCardTitle": "Smarte tips",
+  "insightPosition": "Tip {index} af {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Senere",
+  "insightSnoozed": "Skjult i en uge. Det kommer igen, hvis det stadig er vigtigt.",
+  "insightAsk": "Spørg om det",
+  "insightAskPrompt": "{heading}. {body} Hvad skal jeg gøre?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Poster",
+  "insightsSummaryDueSoon": "Inden for 30 dage",
+  "insightsSummaryNoReminder": "Ingen påmindelse",
+  "insightsListEmpty": "Her er intet lige nu.",
+  "smartInsightUpcomingCostHeading": "Kommende fornyelser",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} fornyelse de næste 3 måneder koster ca. {amount}.} other{{count} fornyelser de næste 3 måneder koster ca. {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Din uge",
+  "weeklyRecapNothing": "Intet udløber i denne uge.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} post udløber i denne uge.} other{{count} poster udløber i denne uge.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Du fornyede {count} post i sidste uge.} other{Du fornyede {count} poster i sidste uge.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Fornyelser i sidste uge kostede {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Luk",
+  "timelineUnlockProgress": "{count} af {total} poster med en kommende dato",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Gentages",
+  "calendarNextExpiry": "Næste udløb",
+  "calendarViewMonth": "Måned",
+  "calendarViewList": "Liste",
+  "calendarLegendExpiry": "Udløber",
+  "calendarLegendReminder": "Påmindelse",
+  "calendarMonthSummary": "{count, plural, =1{{count} udløber i {month}} other{{count} udløber i {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Intet udløber i {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Ca. {amount} at forny",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Denne uge",
+  "calendarNextWeek": "Næste uge",
+  "calendarListEmpty": "Intet de næste 12 måneder.",
+  "calendarDaysLeft": "{count, plural, =1{{count} dag tilbage} other{{count} dage tilbage}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Udløb for {count} dag siden} other{Udløb for {count} dage siden}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Tilføj en post, der udløber denne dag",
+  "calendarPickMonth": "Vælg en måned",
+  "calendarReminderFor": "Påmindelse: {name} udløber {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

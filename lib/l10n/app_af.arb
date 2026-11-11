@@ -2754,5 +2754,150 @@
     }
   },
   "recordsEmptyBody": "Skandeer die kaart of dokument, of voeg dit met die hand by. Vaultara herinner jou voordat dit verval.",
-  "recordsScan": "Skandeer"
+  "recordsScan": "Skandeer",
+  "insightsCardTitle": "Slim insigte",
+  "insightPosition": "Insig {index} van {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Later",
+  "insightSnoozed": "Vir 'n week versteek. Dit kom terug as dit nog nodig is.",
+  "insightAsk": "Vra hieroor",
+  "insightAskPrompt": "{heading}. {body} Wat moet ek doen?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Inskrywings",
+  "insightsSummaryDueSoon": "Binne 30 dae",
+  "insightsSummaryNoReminder": "Geen herinnering",
+  "insightsListEmpty": "Hier is tans niks nie.",
+  "smartInsightUpcomingCostHeading": "Hernuwings op pad",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} hernuwing in die volgende 3 maande sal sowat {amount} kos.} other{{count} hernuwings in die volgende 3 maande sal sowat {amount} kos.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Jou week",
+  "weeklyRecapNothing": "Niks verval hierdie week nie.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} inskrywing verval hierdie week.} other{{count} inskrywings verval hierdie week.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Jy het verlede week {count} inskrywing hernu.} other{Jy het verlede week {count} inskrywings hernu.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Hernuwings verlede week het {amount} gekos.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Maak toe",
+  "timelineUnlockProgress": "{count} van {total} inskrywings met 'n komende datum",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Herhaal",
+  "calendarNextExpiry": "Volgende vervaldatum",
+  "calendarViewMonth": "Maand",
+  "calendarViewList": "Lys",
+  "calendarLegendExpiry": "Verval",
+  "calendarLegendReminder": "Herinnering",
+  "calendarMonthSummary": "{count, plural, =1{{count} verval in {month}} other{{count} verval in {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Niks verval in {month} nie",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Sowat {amount} om te hernu",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Hierdie week",
+  "calendarNextWeek": "Volgende week",
+  "calendarListEmpty": "Niks in die volgende 12 maande nie.",
+  "calendarDaysLeft": "{count, plural, =1{{count} dag oor} other{{count} dae oor}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} dag gelede verval} other{{count} dae gelede verval}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Voeg 'n inskrywing by wat op hierdie dag verval",
+  "calendarPickMonth": "Kies 'n maand",
+  "calendarReminderFor": "Herinnering: {name} verval op {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

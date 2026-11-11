@@ -2721,5 +2721,150 @@
     }
   },
   "recordsEmptyBody": "סרוק את הכרטיס או המסמך, או הוסף ידנית. Vaultara יזכיר לך לפני שהתוקף יפוג.",
-  "recordsScan": "סריקה"
+  "recordsScan": "סריקה",
+  "insightsCardTitle": "תובנות חכמות",
+  "insightPosition": "תובנה {index} מתוך {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "אחר כך",
+  "insightSnoozed": "הוסתר לשבוע. זה יחזור אם עדיין יהיה צורך.",
+  "insightAsk": "לשאול על זה",
+  "insightAskPrompt": "{heading}. {body} מה עליי לעשות?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "רשומות",
+  "insightsSummaryDueSoon": "תוך 30 יום",
+  "insightsSummaryNoReminder": "ללא תזכורת",
+  "insightsListEmpty": "אין כאן כלום כרגע.",
+  "smartInsightUpcomingCostHeading": "חידושים קרובים",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{חידושים ב-3 החודשים הקרובים ({count}) יעלו בערך {amount}.} other{חידושים ב-3 החודשים הקרובים ({count}) יעלו בערך {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "השבוע שלך",
+  "weeklyRecapNothing": "שום דבר לא פג השבוע.",
+  "weeklyRecapExpiring": "{count, plural, =1{רשומות שפגות השבוע: {count}.} other{רשומות שפגות השבוע: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{רשומות שחידשת בשבוע שעבר: {count}.} other{רשומות שחידשת בשבוע שעבר: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "החידושים בשבוע שעבר עלו {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "סגירה",
+  "timelineUnlockProgress": "{count} מתוך {total} רשומות עם תאריך קרוב",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "חוזר",
+  "calendarNextExpiry": "התפוגה הבאה",
+  "calendarViewMonth": "חודש",
+  "calendarViewList": "רשימה",
+  "calendarLegendExpiry": "פג",
+  "calendarLegendReminder": "תזכורת",
+  "calendarMonthSummary": "{count, plural, =1{{month}: פגות {count}} other{{month}: פגות {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "שום דבר לא פג ב{month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "כ-{amount} לחידוש",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "השבוע",
+  "calendarNextWeek": "השבוע הבא",
+  "calendarListEmpty": "אין דבר ב-12 החודשים הקרובים.",
+  "calendarDaysLeft": "{count, plural, =1{נותר {count} יום} other{נותרו {count} ימים}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{פג לפני {count} יום} other{פג לפני {count} ימים}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "הוספת רשומה שפגה ביום הזה",
+  "calendarPickMonth": "בחירת חודש",
+  "calendarReminderFor": "תזכורת: {name} פג ב-{date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

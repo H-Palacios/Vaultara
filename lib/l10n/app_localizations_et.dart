@@ -8110,4 +8110,174 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skanni';
+
+  @override
+  String get insightsCardTitle => 'Nutikad vihjed';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Vihje $index/$total';
+  }
+
+  @override
+  String get insightSnooze => 'Hiljem';
+
+  @override
+  String get insightSnoozed => 'Peidetud nädalaks. Tuleb tagasi, kui seda veel vaja on.';
+
+  @override
+  String get insightAsk => 'Küsi selle kohta';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Mida ma peaksin tegema?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Kirjed';
+
+  @override
+  String get insightsSummaryDueSoon => '30 päeva jooksul';
+
+  @override
+  String get insightsSummaryNoReminder => 'Meeldetuletuseta';
+
+  @override
+  String get insightsListEmpty => 'Siin pole praegu midagi.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Tulevad uuendused';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count uuendust järgmise 3 kuu jooksul maksab umbes $amount.',
+      one: '$count uuendus järgmise 3 kuu jooksul maksab umbes $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Sinu nädal';
+
+  @override
+  String get weeklyRecapNothing => 'Sel nädalal ei aegu midagi.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sel nädalal aegub $count kirjet.',
+      one: 'Sel nädalal aegub $count kirje.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Uuendasid eelmisel nädalal $count kirjet.',
+      one: 'Uuendasid eelmisel nädalal $count kirje.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Eelmise nädala uuendused maksid $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Sulge';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count/$total kirjet tuleva kuupäevaga';
+  }
+
+  @override
+  String get timelineRepeats => 'Kordub';
+
+  @override
+  String get calendarNextExpiry => 'Järgmine aegumine';
+
+  @override
+  String get calendarViewMonth => 'Kuu';
+
+  @override
+  String get calendarViewList => 'Loend';
+
+  @override
+  String get calendarLegendExpiry => 'Aegub';
+
+  @override
+  String get calendarLegendReminder => 'Meeldetuletus';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: aegub $count',
+      one: '$month: aegub $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: midagi ei aegu';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Umbes $amount uuendusteks';
+  }
+
+  @override
+  String get calendarThisWeek => 'See nädal';
+
+  @override
+  String get calendarNextWeek => 'Järgmine nädal';
+
+  @override
+  String get calendarListEmpty => 'Järgmise 12 kuu jooksul pole midagi.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count päeva jäänud',
+      one: '$count päev jäänud',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aegus $count päeva tagasi',
+      one: 'Aegus $count päev tagasi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Lisa kirje, mis aegub sel päeval';
+
+  @override
+  String get calendarPickMonth => 'Vali kuu';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Meeldetuletus: $name aegub $date';
+  }
 }

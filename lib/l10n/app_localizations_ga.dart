@@ -8293,4 +8293,174 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get recordsScan => 'Scan';
+
+  @override
+  String get insightsCardTitle => 'Léargais chliste';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Léargas $index as $total';
+  }
+
+  @override
+  String get insightSnooze => 'Ar ball';
+
+  @override
+  String get insightSnoozed => 'I bhfolach ar feadh seachtaine. Fillfidh sé má tá gá leis fós.';
+
+  @override
+  String get insightAsk => 'Fiafraigh faoi seo';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Cad ba chóir dom a dhéanamh?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Taifid';
+
+  @override
+  String get insightsSummaryDueSoon => 'Laistigh de 30 lá';
+
+  @override
+  String get insightsSummaryNoReminder => 'Gan meabhrúchán';
+
+  @override
+  String get insightsListEmpty => 'Níl aon rud anseo faoi láthair.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Athnuachain le teacht';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Cosnóidh $count athnuachan sna 3 mhí atá romhainn thart ar $amount.',
+      one: 'Cosnóidh $count athnuachan sna 3 mhí atá romhainn thart ar $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Do sheachtain';
+
+  @override
+  String get weeklyRecapNothing => 'Níl aon rud ag dul in éag an tseachtain seo.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tá $count taifead ag dul in éag an tseachtain seo.',
+      one: 'Tá $count taifead ag dul in éag an tseachtain seo.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'D\'athnuaigh tú $count taifead an tseachtain seo caite.',
+      one: 'D\'athnuaigh tú $count taifead an tseachtain seo caite.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Chosain athnuachain na seachtaine seo caite $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Dún';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count as $total taifead le dáta le teacht';
+  }
+
+  @override
+  String get timelineRepeats => 'Athrá';
+
+  @override
+  String get calendarNextExpiry => 'An chéad éag eile';
+
+  @override
+  String get calendarViewMonth => 'Mí';
+
+  @override
+  String get calendarViewList => 'Liosta';
+
+  @override
+  String get calendarLegendExpiry => 'Téann in éag';
+
+  @override
+  String get calendarLegendReminder => 'Meabhrúchán';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count ag dul in éag',
+      one: '$month: $count ag dul in éag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Níl aon rud ag dul in éag in $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Thart ar $amount le hathnuachan';
+  }
+
+  @override
+  String get calendarThisWeek => 'An tseachtain seo';
+
+  @override
+  String get calendarNextWeek => 'An tseachtain seo chugainn';
+
+  @override
+  String get calendarListEmpty => 'Níl aon rud sna 12 mhí atá romhainn.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lá fágtha',
+      one: '$count lá fágtha',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Chuaigh in éag $count lá ó shin',
+      one: 'Chuaigh in éag $count lá ó shin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Cuir taifead leis a théann in éag an lá seo';
+
+  @override
+  String get calendarPickMonth => 'Roghnaigh mí';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Meabhrúchán: téann $name in éag ar $date';
+  }
 }

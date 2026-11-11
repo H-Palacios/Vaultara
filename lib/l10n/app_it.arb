@@ -2721,5 +2721,150 @@
     }
   },
   "recordsEmptyBody": "Scansiona la tessera o il documento, oppure aggiungilo a mano. Vaultara ti avvisa prima della scadenza.",
-  "recordsScan": "Scansiona"
+  "recordsScan": "Scansiona",
+  "insightsCardTitle": "Suggerimenti intelligenti",
+  "insightPosition": "Suggerimento {index} di {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Più tardi",
+  "insightSnoozed": "Nascosto per una settimana. Tornerà se servirà ancora.",
+  "insightAsk": "Chiedi su questo",
+  "insightAskPrompt": "{heading}. {body} Cosa devo fare?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Elementi",
+  "insightsSummaryDueSoon": "In scadenza entro 30 giorni",
+  "insightsSummaryNoReminder": "Senza promemoria",
+  "insightsListEmpty": "Qui non c'è niente per ora.",
+  "smartInsightUpcomingCostHeading": "Rinnovi in arrivo",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} rinnovo nei prossimi 3 mesi costerà circa {amount}.} other{{count} rinnovi nei prossimi 3 mesi costeranno circa {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "La tua settimana",
+  "weeklyRecapNothing": "Questa settimana non scade niente.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} elemento scade questa settimana.} other{{count} elementi scadono questa settimana.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{La settimana scorsa hai rinnovato {count} elemento.} other{La settimana scorsa hai rinnovato {count} elementi.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "I rinnovi della settimana scorsa sono costati {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Chiudi",
+  "timelineUnlockProgress": "{count} di {total} elementi con una data in arrivo",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Si ripete",
+  "calendarNextExpiry": "Prossima scadenza",
+  "calendarViewMonth": "Mese",
+  "calendarViewList": "Elenco",
+  "calendarLegendExpiry": "Scade",
+  "calendarLegendReminder": "Promemoria",
+  "calendarMonthSummary": "{count, plural, =1{{count} in scadenza a {month}} other{{count} in scadenza a {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Niente scade a {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Circa {amount} di rinnovi",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Questa settimana",
+  "calendarNextWeek": "La prossima settimana",
+  "calendarListEmpty": "Niente in arrivo nei prossimi 12 mesi.",
+  "calendarDaysLeft": "{count, plural, =1{Manca {count} giorno} other{Mancano {count} giorni}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Scaduto da {count} giorno} other{Scaduto da {count} giorni}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Aggiungi un elemento che scade in questo giorno",
+  "calendarPickMonth": "Scegli un mese",
+  "calendarReminderFor": "Promemoria: {name} scade il {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

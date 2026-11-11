@@ -8106,4 +8106,174 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get recordsScan => 'Bişopîne';
+
+  @override
+  String get insightsCardTitle => 'Şîretên jîr';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Şîret $index ji $total';
+  }
+
+  @override
+  String get insightSnooze => 'Paşê';
+
+  @override
+  String get insightSnoozed => 'Ji bo hefteyekê hat veşartin. Ger hîn pêwîst be dê vegere.';
+
+  @override
+  String get insightAsk => 'Li ser vê bipirse';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Divê ez çi bikim?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Tomar';
+
+  @override
+  String get insightsSummaryDueSoon => 'Di 30 rojan de';
+
+  @override
+  String get insightsSummaryNoReminder => 'Bê bîrxistin';
+
+  @override
+  String get insightsListEmpty => 'Niha li vir tiştek tune.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Nûkirinên tên';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nûkirin di 3 mehên tên de dê bi qasî $amount biha bin.',
+      one: '$count nûkirin di 3 mehên tên de dê bi qasî $amount biha be.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Hefteya te';
+
+  @override
+  String get weeklyRecapNothing => 'Vê hefteyê tiştek naqede.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vê hefteyê $count tomar diqedin.',
+      one: 'Vê hefteyê $count tomar diqede.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Te hefteya borî $count tomar nû kirin.',
+      one: 'Te hefteya borî $count tomar nû kir.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Nûkirinên hefteya borî $amount biha bûn.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Bigire';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count ji $total tomarên bi dîroka tê';
+  }
+
+  @override
+  String get timelineRepeats => 'Dubare dibe';
+
+  @override
+  String get calendarNextExpiry => 'Qedandina pêş';
+
+  @override
+  String get calendarViewMonth => 'Meh';
+
+  @override
+  String get calendarViewList => 'Lîste';
+
+  @override
+  String get calendarLegendExpiry => 'Diqede';
+
+  @override
+  String get calendarLegendReminder => 'Bîrxistin';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count diqedin',
+      one: '$month: $count diqede',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: tiştek naqede';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Bi qasî $amount ji bo nûkirinê';
+  }
+
+  @override
+  String get calendarThisWeek => 'Ev hefte';
+
+  @override
+  String get calendarNextWeek => 'Hefteya bê';
+
+  @override
+  String get calendarListEmpty => 'Di 12 mehên tên de tiştek tune.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count roj mane',
+      one: '$count roj maye',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Berî $count rojan qediya',
+      one: 'Berî $count rojê qediya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Tomarek ku vê rojê diqede lê zêde bike';
+
+  @override
+  String get calendarPickMonth => 'Mehekê hilbijêre';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Bîrxistin: $name di $date de diqede';
+  }
 }

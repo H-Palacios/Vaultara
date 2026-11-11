@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Skena ikhadi okanye uxwebhu, okanye uyongeze ngesandla. I-Vaultara iya kukukhumbuza phambi kokuba liphelelwe.",
-  "recordsScan": "Skena"
+  "recordsScan": "Skena",
+  "insightsCardTitle": "Iingcebiso ezikrelekrele",
+  "insightPosition": "Ingcebiso {index} kwezi-{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Kamva",
+  "insightSnoozed": "Ifihliwe iveki. Iza kubuya ukuba isafuneka.",
+  "insightAsk": "Buza ngale nto",
+  "insightAskPrompt": "{heading}. {body} Ndenze ntoni?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Iirekhodi",
+  "insightsSummaryDueSoon": "Kwiintsuku ezingama-30",
+  "insightsSummaryNoReminder": "Akukho sikhumbuzo",
+  "insightsListEmpty": "Akukho nto apha okwangoku.",
+  "smartInsightUpcomingCostHeading": "Ukuhlaziywa okuzayo",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Ukuhlaziywa oku-{count} kwiinyanga ezi-3 ezizayo kuya kuxabisa malunga ne-{amount}.} other{Ukuhlaziywa oku-{count} kwiinyanga ezi-3 ezizayo kuya kuxabisa malunga ne-{amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Iveki yakho",
+  "weeklyRecapNothing": "Akukho nto iphelelwa kule veki.",
+  "weeklyRecapExpiring": "{count, plural, =1{Irekhodi eli-{count} liphelelwa kule veki.} other{Iirekhodi ezi-{count} ziphelelwa kule veki.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Uhlaziye irekhodi eli-{count} kwiveki ephelileyo.} other{Uhlaziye iirekhodi ezi-{count} kwiveki ephelileyo.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Ukuhlaziywa kweveki ephelileyo kuxabise {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Vala",
+  "timelineUnlockProgress": "Iirekhodi ezi-{count} kwezi-{total} ezinomhla ozayo",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Iyaphinda",
+  "calendarNextExpiry": "Ukuphelelwa okulandelayo",
+  "calendarViewMonth": "Inyanga",
+  "calendarViewList": "Uluhlu",
+  "calendarLegendExpiry": "Iphelelwa",
+  "calendarLegendReminder": "Isikhumbuzo",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} iphelelwa} other{{month}: {count} ziphelelwa}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: akukho nto iphelelwayo",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Malunga ne-{amount} ukuhlaziya",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Le veki",
+  "calendarNextWeek": "Iveki ezayo",
+  "calendarListEmpty": "Akukho nto kwiinyanga ezili-12 ezizayo.",
+  "calendarDaysLeft": "{count, plural, =1{Kusele usuku olu-{count}} other{Kusele iintsuku ezi-{count}}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Iphelelwe kwiintsuku ezi-{count} ezidlulileyo} other{Iphelelwe kwiintsuku ezi-{count} ezidlulileyo}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Yongeza irekhodi eliphelelwa ngalo mhla",
+  "calendarPickMonth": "Khetha inyanga",
+  "calendarReminderFor": "Isikhumbuzo: {name} iphelelwa ngo-{date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

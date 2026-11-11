@@ -8188,4 +8188,174 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get recordsScan => 'Scanează';
+
+  @override
+  String get insightsCardTitle => 'Informații inteligente';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Informația $index din $total';
+  }
+
+  @override
+  String get insightSnooze => 'Mai târziu';
+
+  @override
+  String get insightSnoozed => 'Ascuns pentru o săptămână. Revine dacă mai e nevoie.';
+
+  @override
+  String get insightAsk => 'Întreabă despre asta';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Ce ar trebui să fac?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Înregistrări';
+
+  @override
+  String get insightsSummaryDueSoon => 'În 30 de zile';
+
+  @override
+  String get insightsSummaryNoReminder => 'Fără memento';
+
+  @override
+  String get insightsListEmpty => 'Nu e nimic aici deocamdată.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Reînnoiri în curând';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count reînnoiri în următoarele 3 luni vor costa aproximativ $amount.',
+      one: '$count reînnoire în următoarele 3 luni va costa aproximativ $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Săptămâna ta';
+
+  @override
+  String get weeklyRecapNothing => 'Nimic nu expiră săptămâna aceasta.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count înregistrări expiră săptămâna aceasta.',
+      one: '$count înregistrare expiră săptămâna aceasta.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ai reînnoit $count înregistrări săptămâna trecută.',
+      one: 'Ai reînnoit $count înregistrare săptămâna trecută.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Reînnoirile de săptămâna trecută au costat $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Închide';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count din $total înregistrări cu o dată viitoare';
+  }
+
+  @override
+  String get timelineRepeats => 'Se repetă';
+
+  @override
+  String get calendarNextExpiry => 'Următoarea expirare';
+
+  @override
+  String get calendarViewMonth => 'Lună';
+
+  @override
+  String get calendarViewList => 'Listă';
+
+  @override
+  String get calendarLegendExpiry => 'Expiră';
+
+  @override
+  String get calendarLegendReminder => 'Memento';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expiră în $month',
+      one: '$count expiră în $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Nimic nu expiră în $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Aproximativ $amount pentru reînnoiri';
+  }
+
+  @override
+  String get calendarThisWeek => 'Săptămâna aceasta';
+
+  @override
+  String get calendarNextWeek => 'Săptămâna viitoare';
+
+  @override
+  String get calendarListEmpty => 'Nimic în următoarele 12 luni.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au mai rămas $count zile',
+      one: 'A mai rămas $count zi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A expirat acum $count zile',
+      one: 'A expirat acum $count zi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Adaugă o înregistrare care expiră în această zi';
+
+  @override
+  String get calendarPickMonth => 'Alege o lună';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Memento: $name expiră pe $date';
+  }
 }

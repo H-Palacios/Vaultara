@@ -8106,4 +8106,174 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get recordsScan => 'ਸਕੈਨ ਕਰੋ';
+
+  @override
+  String get insightsCardTitle => 'ਸਮਾਰਟ ਸੁਝਾਅ';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'ਸੁਝਾਅ $index / $total';
+  }
+
+  @override
+  String get insightSnooze => 'ਬਾਅਦ ਵਿੱਚ';
+
+  @override
+  String get insightSnoozed => 'ਇੱਕ ਹਫ਼ਤੇ ਲਈ ਲੁਕਾਇਆ। ਲੋੜ ਰਹੀ ਤਾਂ ਮੁੜ ਦਿਖੇਗਾ।';
+
+  @override
+  String get insightAsk => 'ਇਸ ਬਾਰੇ ਪੁੱਛੋ';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading। $body ਮੈਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'ਰਿਕਾਰਡ';
+
+  @override
+  String get insightsSummaryDueSoon => '30 ਦਿਨਾਂ ਵਿੱਚ';
+
+  @override
+  String get insightsSummaryNoReminder => 'ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ';
+
+  @override
+  String get insightsListEmpty => 'ਹਾਲੇ ਇੱਥੇ ਕੁਝ ਨਹੀਂ।';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'ਆਉਣ ਵਾਲੇ ਨਵੀਨੀਕਰਨ';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ਅਗਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ $count ਨਵੀਨੀਕਰਨਾਂ \'ਤੇ ਲਗਭਗ $amount ਲੱਗਣਗੇ।',
+      one: 'ਅਗਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ $count ਨਵੀਨੀਕਰਨ \'ਤੇ ਲਗਭਗ $amount ਲੱਗਣਗੇ।',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'ਤੁਹਾਡਾ ਹਫ਼ਤਾ';
+
+  @override
+  String get weeklyRecapNothing => 'ਇਸ ਹਫ਼ਤੇ ਕੁਝ ਖ਼ਤਮ ਨਹੀਂ ਹੋ ਰਿਹਾ।';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ਇਸ ਹਫ਼ਤੇ $count ਰਿਕਾਰਡ ਖ਼ਤਮ ਹੋ ਰਹੇ ਹਨ।',
+      one: 'ਇਸ ਹਫ਼ਤੇ $count ਰਿਕਾਰਡ ਖ਼ਤਮ ਹੋ ਰਿਹਾ ਹੈ।',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ਤੁਸੀਂ ਪਿਛਲੇ ਹਫ਼ਤੇ $count ਰਿਕਾਰਡ ਨਵਿਆਏ।',
+      one: 'ਤੁਸੀਂ ਪਿਛਲੇ ਹਫ਼ਤੇ $count ਰਿਕਾਰਡ ਨਵਿਆਇਆ।',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'ਪਿਛਲੇ ਹਫ਼ਤੇ ਦੇ ਨਵੀਨੀਕਰਨਾਂ \'ਤੇ $amount ਲੱਗੇ।';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'ਬੰਦ ਕਰੋ';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'ਆਉਣ ਵਾਲੀ ਤਾਰੀਖ਼ ਵਾਲੇ $total ਵਿੱਚੋਂ $count ਰਿਕਾਰਡ';
+  }
+
+  @override
+  String get timelineRepeats => 'ਦੁਹਰਾਉਂਦਾ ਹੈ';
+
+  @override
+  String get calendarNextExpiry => 'ਅਗਲੀ ਮਿਆਦ';
+
+  @override
+  String get calendarViewMonth => 'ਮਹੀਨਾ';
+
+  @override
+  String get calendarViewList => 'ਸੂਚੀ';
+
+  @override
+  String get calendarLegendExpiry => 'ਮਿਆਦ ਖ਼ਤਮ';
+
+  @override
+  String get calendarLegendReminder => 'ਰਿਮਾਈਂਡਰ';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month ਵਿੱਚ $count ਦੀ ਮਿਆਦ ਖ਼ਤਮ',
+      one: '$month ਵਿੱਚ $count ਦੀ ਮਿਆਦ ਖ਼ਤਮ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month ਵਿੱਚ ਕੁਝ ਖ਼ਤਮ ਨਹੀਂ ਹੋ ਰਿਹਾ';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'ਨਵੀਨੀਕਰਨ \'ਤੇ ਲਗਭਗ $amount';
+  }
+
+  @override
+  String get calendarThisWeek => 'ਇਸ ਹਫ਼ਤੇ';
+
+  @override
+  String get calendarNextWeek => 'ਅਗਲੇ ਹਫ਼ਤੇ';
+
+  @override
+  String get calendarListEmpty => 'ਅਗਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਕੁਝ ਨਹੀਂ।';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਦਿਨ ਬਾਕੀ',
+      one: '$count ਦਿਨ ਬਾਕੀ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਦਿਨ ਪਹਿਲਾਂ ਮਿਆਦ ਖ਼ਤਮ',
+      one: '$count ਦਿਨ ਪਹਿਲਾਂ ਮਿਆਦ ਖ਼ਤਮ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'ਇਸ ਦਿਨ ਖ਼ਤਮ ਹੋਣ ਵਾਲਾ ਰਿਕਾਰਡ ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String get calendarPickMonth => 'ਮਹੀਨਾ ਚੁਣੋ';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'ਰਿਮਾਈਂਡਰ: $name ਦੀ ਮਿਆਦ $date ਨੂੰ ਖ਼ਤਮ';
+  }
 }

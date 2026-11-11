@@ -8106,4 +8106,174 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get recordsScan => 'ቃኝ';
+
+  @override
+  String get insightsCardTitle => 'ብልህ ምክሮች';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'ምክር $index ከ$total';
+  }
+
+  @override
+  String get insightSnooze => 'በኋላ';
+
+  @override
+  String get insightSnoozed => 'ለአንድ ሳምንት ተደብቋል። አሁንም ካስፈለገ ይመለሳል።';
+
+  @override
+  String get insightAsk => 'ስለዚህ ጠይቅ';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading። $body ምን ማድረግ አለብኝ?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'መዝገቦች';
+
+  @override
+  String get insightsSummaryDueSoon => 'በ30 ቀናት ውስጥ';
+
+  @override
+  String get insightsSummaryNoReminder => 'አስታዋሽ የለም';
+
+  @override
+  String get insightsListEmpty => 'እዚህ አሁን ምንም የለም።';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'የሚመጡ እድሳቶች';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'በሚቀጥሉት 3 ወራት $count እድሳቶች ወደ $amount ያስወጣሉ።',
+      one: 'በሚቀጥሉት 3 ወራት $count እድሳት ወደ $amount ያስወጣል።',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'የእርስዎ ሳምንት';
+
+  @override
+  String get weeklyRecapNothing => 'በዚህ ሳምንት ምንም አያበቃም።';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'በዚህ ሳምንት $count መዝገቦች ያበቃሉ።',
+      one: 'በዚህ ሳምንት $count መዝገብ ያበቃል።',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ባለፈው ሳምንት $count መዝገቦች አድሰዋል።',
+      one: 'ባለፈው ሳምንት $count መዝገብ አድሰዋል።',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'ያለፈው ሳምንት እድሳቶች $amount አስወጥተዋል።';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'ዝጋ';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'የሚመጣ ቀን ካላቸው $total መዝገቦች $count';
+  }
+
+  @override
+  String get timelineRepeats => 'ይደጋገማል';
+
+  @override
+  String get calendarNextExpiry => 'ቀጣይ ማብቂያ';
+
+  @override
+  String get calendarViewMonth => 'ወር';
+
+  @override
+  String get calendarViewList => 'ዝርዝር';
+
+  @override
+  String get calendarLegendExpiry => 'ያበቃል';
+
+  @override
+  String get calendarLegendReminder => 'አስታዋሽ';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'በ$month $count ያበቃሉ',
+      one: 'በ$month $count ያበቃል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'በ$month ምንም አያበቃም';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'ለእድሳት ወደ $amount';
+  }
+
+  @override
+  String get calendarThisWeek => 'ይህ ሳምንት';
+
+  @override
+  String get calendarNextWeek => 'የሚቀጥለው ሳምንት';
+
+  @override
+  String get calendarListEmpty => 'በሚቀጥሉት 12 ወራት ምንም የለም።';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ቀናት ቀርተዋል',
+      one: '$count ቀን ቀርቷል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ከ$count ቀናት በፊት አብቅቷል',
+      one: 'ከ$count ቀን በፊት አብቅቷል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'በዚህ ቀን የሚያበቃ መዝገብ አክል';
+
+  @override
+  String get calendarPickMonth => 'ወር ይምረጡ';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'አስታዋሽ፦ $name በ$date ያበቃል';
+  }
 }

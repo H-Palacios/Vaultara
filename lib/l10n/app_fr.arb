@@ -2728,5 +2728,150 @@
     }
   },
   "recordsEmptyBody": "Scannez la carte ou le document, ou ajoutez-le à la main. Vaultara vous prévient avant l'expiration.",
-  "recordsScan": "Scanner"
+  "recordsScan": "Scanner",
+  "insightsCardTitle": "Conseils intelligents",
+  "insightPosition": "Conseil {index} sur {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Plus tard",
+  "insightSnoozed": "Masqué pendant une semaine. Il reviendra s'il est encore utile.",
+  "insightAsk": "Poser une question",
+  "insightAskPrompt": "{heading}. {body} Que dois-je faire ?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Éléments",
+  "insightsSummaryDueSoon": "À échéance sous 30 jours",
+  "insightsSummaryNoReminder": "Sans rappel",
+  "insightsListEmpty": "Rien ici pour le moment.",
+  "smartInsightUpcomingCostHeading": "Renouvellements à venir",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} renouvellement dans les 3 prochains mois coûtera environ {amount}.} other{{count} renouvellements dans les 3 prochains mois coûteront environ {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Votre semaine",
+  "weeklyRecapNothing": "Rien n'expire cette semaine.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} élément expire cette semaine.} other{{count} éléments expirent cette semaine.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Vous avez renouvelé {count} élément la semaine dernière.} other{Vous avez renouvelé {count} éléments la semaine dernière.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Les renouvellements de la semaine dernière ont coûté {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Fermer",
+  "timelineUnlockProgress": "{count} sur {total} éléments avec une date à venir",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Se répète",
+  "calendarNextExpiry": "Prochaine échéance",
+  "calendarViewMonth": "Mois",
+  "calendarViewList": "Liste",
+  "calendarLegendExpiry": "Expire",
+  "calendarLegendReminder": "Rappel",
+  "calendarMonthSummary": "{count, plural, =1{{count} expire en {month}} other{{count} expirent en {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Rien n'expire en {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Environ {amount} à renouveler",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Cette semaine",
+  "calendarNextWeek": "La semaine prochaine",
+  "calendarListEmpty": "Rien de prévu dans les 12 prochains mois.",
+  "calendarDaysLeft": "{count, plural, =1{{count} jour restant} other{{count} jours restants}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Expiré il y a {count} jour} other{Expiré il y a {count} jours}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Ajouter un élément qui expire ce jour-là",
+  "calendarPickMonth": "Choisir un mois",
+  "calendarReminderFor": "Rappel : {name} expire le {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }
