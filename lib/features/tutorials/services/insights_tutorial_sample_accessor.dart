@@ -16,8 +16,9 @@ class InsightsTutorialSampleAccessor {
     final loc = AppLocalizations.of(context)!;
     final locale = Localizations.localeOf(context).toString();
 
-    final String recordOne =
-        AddRecordTutorialSampleAccessor.recordName(context);
+    final String recordOne = AddRecordTutorialSampleAccessor.recordName(
+      context,
+    );
     final String recordTwo = loc.tutorialInsightsSampleRecordTwo;
     final String recordThree = loc.tutorialInsightsSampleRecordThree;
 
@@ -42,16 +43,12 @@ class InsightsTutorialSampleAccessor {
       SmartInsight(
         kind: SmartInsightKind.silentRisk,
         heading: loc.smartInsightSilentRiskHeading,
-        body: loc.smartInsightSilentRiskBody(
-         recordTwo,
-          2,
-          nextMonthDate,
-        ),
+        body: loc.smartInsightSilentRiskBody(recordTwo, 2, nextMonthDate),
         icon: Icons.notifications_off_outlined,
         priority: 2,
       ),
       SmartInsight(
-        kind: SmartInsightKind.renewalTwin,
+        kind: SmartInsightKind.renewTogether,
         heading: loc.smartInsightCloseExpiriesHeading,
         body: loc.smartInsightCloseExpiriesBodyTwo(
           recordOne,
@@ -68,10 +65,12 @@ class InsightsTutorialSampleAccessor {
   static List<ExpiryTimelineRecord> timelineRecords(BuildContext context) {
     return InsightsTutorialSample.timelineRecords(
       recordNameOne: AddRecordTutorialSampleAccessor.recordName(context),
-      recordNameTwo:
-          AppLocalizations.of(context)!.tutorialInsightsSampleRecordTwo,
-      recordNameThree:
-          AppLocalizations.of(context)!.tutorialInsightsSampleRecordThree,
+      recordNameTwo: AppLocalizations.of(
+        context,
+      )!.tutorialInsightsSampleRecordTwo,
+      recordNameThree: AppLocalizations.of(
+        context,
+      )!.tutorialInsightsSampleRecordThree,
       categoryLabel: PresetCatalog.categoryLabel(
         context,
         InsightsTutorialSample.categoryKey,

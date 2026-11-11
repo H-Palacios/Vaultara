@@ -16,6 +16,11 @@ class SmartInsight {
   final String? tripId;
   final bool urgent;
 
+  /// Identifies this insight for "Later", for example
+  /// "expired:recordId". Null for insights that cannot be put off, such as
+  /// the calm summaries.
+  final String? key;
+
   const SmartInsight({
     required this.kind,
     required this.heading,
@@ -28,7 +33,24 @@ class SmartInsight {
     this.action = SmartInsightAction.none,
     this.tripId,
     this.urgent = false,
+    this.key,
   });
+
+  /// A copy with [priority] and [key] replaced.
+  SmartInsight copyWith({int? priority, String? key}) => SmartInsight(
+    kind: kind,
+    heading: heading,
+    body: body,
+    icon: icon,
+    priority: priority ?? this.priority,
+    actionRecord: actionRecord,
+    actionLabel: actionLabel,
+    actionIcon: actionIcon,
+    action: action,
+    tripId: tripId,
+    urgent: urgent,
+    key: key ?? this.key,
+  );
 
   bool get hasAction {
     if (actionLabel == null) return false;
