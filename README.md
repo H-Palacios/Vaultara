@@ -188,11 +188,14 @@ Every paid plan comes monthly or yearly, with a 7-day free trial. Prices are rea
 - **Optional end-to-end encrypted photos.** Photos are encrypted on the phone with AES-GCM before upload, with a recovery key only the user holds. Not even Vorkalis can see them.
 - **Two-step sign-in** with an authenticator app. Setup shows "Step 1 of 3", the account name the app will show, a Paste button and a note that codes change every 30 seconds. Afterwards it offers backup codes, app lock and a device review.
 - **Backup codes.** Ten one-time codes, shown once and stored only as salted hashes. "Use a backup code" at sign-in turns two-step off, sends a security alert and asks you to set it up again. The Security checkup reminds you when two-step is on without backup codes.
-- **Sign-in protection.** Wrong details always show the same message, and after three wrong tries the sign-in button waits briefly with a password reset offered. Firebase's own throttling starts a 60-second wait.
+- **Private sign-up.** Creating an account emails a 6-digit code and always opens the same "Check your email" screen. A new address gets the code; an address that already has an account gets an email saying so, with a button to choose a new password. The account is made on the server only after the right code, so the sign-up screen never reveals who uses Vaultara. Codes are stored only as salted hashes for 10 minutes.
+- **Sign-in protection.** Wrong details always show the same message, with a help card that offers Forgot password (email filled in) and Create account. After three wrong tries the sign-in button waits briefly; Firebase's own throttling starts a 60-second wait. Password reset reads the same whether or not an account exists, and an address without one gets an email saying so.
+- **Sign-in that is quick to get right.** "Did you mean gmail.com?" catches common email slips, sign-in remembers the last email on the device, and every field carries autofill hints so password managers fill and save passwords.
+- **Continue with Google** on all devices and **Continue with Apple** on iPhone and iPad, two-step sign-in included.
 - **Email verification by 6-digit code**, with a deep-link button that opens the app directly.
 - **Server-side purchase verification** with the Google Play Developer API and the App Store Server API, so plans cannot be faked on the device.
 - **Firebase App Check**, rate limiting and owner-only Firestore and Storage rules.
-- **Account enumeration closed** on sign-in and password reset.
+- **Account enumeration closed** on sign-up, sign-in and password reset.
 - **Security history** of sign-ins and a device list, kept for 90 days.
 - **Account deletion** in the app or on the web, which removes all Firestore data and Storage files.
 - Built with POPIA and GDPR in mind. Document scanning runs on the device with Google ML Kit.
