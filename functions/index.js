@@ -49,6 +49,10 @@ exports.removeMember = household.removeMember;
 exports.getHousehold = household.getHousehold;
 exports.shareRecord = household.shareRecord;
 exports.unshareRecord = household.unshareRecord;
+const mfa = require("./mfa");
+exports.mfaBackupCodesCreate = mfa.mfaBackupCodesCreate;
+exports.mfaBackupCodesStatus = mfa.mfaBackupCodesStatus;
+exports.mfaBackupCodeRedeem = mfa.mfaBackupCodeRedeem;
 exports.getReferralCode = require("./referrals").getReferralCode;
 exports.redeemReferral = require("./referrals").redeemReferral;
 exports.onReferralRecordCreated = require("./referrals").onReferralRecordCreated;
@@ -104,41 +108,12 @@ function hashCode(uid, code) {
   return crypto.createHash("sha256").update(`${uid}:${code}`).digest("hex");
 }
 
-const EMAIL_PATTERN = /^[^\s@]{1,64}@[^\s@]{1,190}\.[^\s@]{2,63}$/;
-
-function callerIp(request) {
-  const forwarded = String(request.rawRequest?.headers?.["x-forwarded-for"] || "");
-  const parts = forwarded.split(",").map((p) => p.trim()).filter(Boolean);
-  return parts[parts.length - 1] || request.rawRequest?.ip || "unknown";
-}
-
+// The sign-in screen used to ask whether an email has an account, which let
+// anyone find out who uses Vaultara. The app no longer asks; older app
+// versions still call this, so it stays deployed and never answers.
 exports.checkEmailExists = onCall({ ...CALLABLE_CONSUME, maxInstances: 10 }, async (request) => {
   rejectReplayedAppCheck(request);
-  const email = String(request.data?.email || "").trim().toLowerCase();
-  if (!EMAIL_PATTERN.test(email) || email.length > 254) {
-    return { exists: null };
-  }
-
-  const hour = 60 * 60 * 1000;
-  const ip = callerIp(request);
-  const allowed =
-    (await consumeRateLimit("email-check-global", 3000, hour)) &&
-    (await consumeRateLimit(`email-check-ip:${ip}`, 15, hour)) &&
-    (await consumeRateLimit(`email-check-email:${email}`, 10, hour));
-
-  if (!allowed) {
-    logger.warn("checkEmailExists rate limited");
-    return { exists: null };
-  }
-
-  try {
-    await admin.auth().getUserByEmail(email);
-    return { exists: true };
-  } catch (err) {
-    if (err?.code === "auth/user-not-found") return { exists: false };
-    logger.error("checkEmailExists failed", { code: err?.code });
-    return { exists: null };
-  }
+  return { exists: null };
 });
 
 exports.sendVerificationCode = onCall(
