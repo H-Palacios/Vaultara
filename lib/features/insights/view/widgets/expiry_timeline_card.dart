@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/view/widgets/year_navigator.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/insights/data/models/expiry_timeline_month.dart';
@@ -9,13 +10,16 @@ import 'package:vaultara/features/insights/logic/expiry_timeline_controller.dart
 import 'package:vaultara/features/insights/view/widgets/expiry_timeline_month_row.dart';
 
 class ExpiryTimelineCard extends StatefulWidget {
-  final int refreshKey;
-  final ExpiryTimelineResult? overrideResult;
+  final ExpiryTimelineResult result;
+
+  /// Opens a record from an expanded month. Null makes the rows display
+  /// only, as in the tutorial.
+  final void Function(TrackedItem record)? onOpenRecord;
 
   const ExpiryTimelineCard({
     super.key,
-    required this.refreshKey,
-    this.overrideResult,
+    required this.result,
+    this.onOpenRecord,
   });
 
   @override
@@ -23,31 +27,15 @@ class ExpiryTimelineCard extends StatefulWidget {
 }
 
 class _ExpiryTimelineCardState extends State<ExpiryTimelineCard> {
-  late ExpiryTimelineController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = ExpiryTimelineController(
-      overrideResult: widget.overrideResult,
-    );
-    _controller.load();
-  }
+  late final ExpiryTimelineController _controller = ExpiryTimelineController(
+    widget.result,
+  );
 
   @override
   void didUpdateWidget(covariant ExpiryTimelineCard oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (widget.overrideResult != oldWidget.overrideResult) {
-      _controller.dispose();
-      _controller = ExpiryTimelineController(
-        overrideResult: widget.overrideResult,
-      );
-      _controller.load();
-      return;
-    }
-
-    if (widget.refreshKey != oldWidget.refreshKey) {
-      _controller.refresh();
+    if (!identical(widget.result, oldWidget.result)) {
+      _controller.setResult(widget.result);
     }
   }
 
@@ -62,11 +50,11 @@ class _ExpiryTimelineCardState extends State<ExpiryTimelineCard> {
     return ListenableBuilder(
       listenable: _controller,
       builder: (context, _) => switch (_controller.state) {
-        ExpiryTimelineLoading() =>
-          const _TimelineShell(child: _TimelineLoadingBody()),
         ExpiryTimelineHidden() => const SizedBox.shrink(),
-        ExpiryTimelineNotReady() =>
-          const _TimelineShell(child: _TimelineEmptyBody()),
+        ExpiryTimelineNotReady(count: final count, total: final total) =>
+          _TimelineShell(
+            child: _TimelineEmptyBody(count: count, total: total),
+          ),
         ExpiryTimelineReady(
           year: final year,
           months: final months,
@@ -94,6 +82,7 @@ class _ExpiryTimelineCardState extends State<ExpiryTimelineCard> {
                   maxCount: maxCount,
                   expandedMonths: expandedMonths,
                   onToggle: _controller.toggleMonth,
+                  onOpenRecord: widget.onOpenRecord,
                 ),
               ],
             ),
@@ -166,12 +155,14 @@ class _TimelineMonthList extends StatelessWidget {
   final int maxCount;
   final Set<int> expandedMonths;
   final ValueChanged<int> onToggle;
+  final void Function(TrackedItem record)? onOpenRecord;
 
   const _TimelineMonthList({
     required this.months,
     required this.maxCount,
     required this.expandedMonths,
     required this.onToggle,
+    this.onOpenRecord,
   });
 
   @override
@@ -187,6 +178,7 @@ class _TimelineMonthList extends StatelessWidget {
             maxCount: maxCount,
             isExpanded: expandedMonths.contains(months[i].month.month),
             onToggle: () => onToggle(months[i].month.month),
+            onOpenRecord: onOpenRecord,
           ),
           if (i < months.length - 1)
             Divider(
@@ -200,35 +192,22 @@ class _TimelineMonthList extends StatelessWidget {
   }
 }
 
-class _TimelineLoadingBody extends StatelessWidget {
-  const _TimelineLoadingBody();
-
-  @override
-  Widget build(BuildContext context) {
-    return const SizedBox(
-      height: 120,
-      child: Center(
-        child: SizedBox(
-          width: 22,
-          height: 22,
-          child: CircularProgressIndicator(strokeWidth: 2),
-        ),
-      ),
-    );
-  }
-}
-
-/// Shown when there are upcoming records but not enough spread to chart.
+/// Shown until there are enough upcoming records, with how far along the
+/// user is.
 class _TimelineEmptyBody extends StatelessWidget {
-  const _TimelineEmptyBody();
+  final int count;
+  final int total;
+
+  const _TimelineEmptyBody({required this.count, required this.total});
 
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final loc = AppLocalizations.of(context)!;
+    final shown = count.clamp(0, total).toInt();
 
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 22, horizontal: 8),
+      padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
       child: Column(
         children: [
           Icon(
@@ -244,6 +223,34 @@ class _TimelineEmptyBody extends StatelessWidget {
               fontSize: 12,
               height: 1.45,
               color: scheme.onSurfaceVariant,
+            ),
+          ),
+          const SizedBox(height: 14),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(999),
+            child: TweenAnimationBuilder<double>(
+              tween: Tween<double>(
+                begin: 0,
+                end: total == 0 ? 0 : shown / total,
+              ),
+              duration: MediaQuery.of(context).disableAnimations
+                  ? Duration.zero
+                  : const Duration(milliseconds: 500),
+              curve: Curves.easeOutCubic,
+              builder: (context, value, _) => LinearProgressIndicator(
+                value: value,
+                minHeight: 8,
+                backgroundColor: scheme.primary.withValues(alpha: 0.12),
+              ),
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            loc.timelineUnlockProgress(shown, total),
+            style: TextStyle(
+              fontSize: 11.5,
+              fontWeight: FontWeight.w700,
+              color: scheme.primary,
             ),
           ),
         ],
