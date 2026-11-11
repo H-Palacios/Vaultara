@@ -38,11 +38,15 @@ class _Body extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final locale = Localizations.localeOf(context).toString();
     final format = DateFormat('d MMM y', SafeLocale.date(locale));
-    final height = MediaQuery.of(context).size.height * 0.7;
+    // Full height: the list opened at 70% and had to be dragged up.
+    final height = MediaQuery.of(context).size.height * 0.92;
 
+    // Empty lists stay small; any list opens at full height straight away.
     return SafeArea(
       child: ConstrainedBox(
-        constraints: BoxConstraints(maxHeight: height),
+        constraints: records.isEmpty
+            ? BoxConstraints(maxHeight: height)
+            : BoxConstraints.tightFor(height: height),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -69,9 +73,8 @@ class _Body extends StatelessWidget {
                 ),
               )
             else
-              Flexible(
+              Expanded(
                 child: ListView.separated(
-                  shrinkWrap: true,
                   padding: const EdgeInsets.fromLTRB(12, 0, 12, 16),
                   itemCount: records.length,
                   separatorBuilder: (_, __) => const SizedBox(height: 4),

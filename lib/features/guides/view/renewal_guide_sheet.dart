@@ -22,7 +22,9 @@ Future<void> showRenewalGuide(
     useSafeArea: true,
     builder: (_) => DraggableScrollableSheet(
       expand: false,
-      initialChildSize: 0.75,
+      // Opens at full height: the guide is long and was cut off at three
+      // quarters, so people had to drag it up.
+      initialChildSize: 0.95,
       minChildSize: 0.4,
       maxChildSize: 0.95,
       builder: (sheetContext, controller) => _RenewalGuideSheet(

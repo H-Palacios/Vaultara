@@ -41,7 +41,8 @@ class MoveRecordsSheet extends StatelessWidget {
       showDragHandle: true,
       builder: (_) => DraggableScrollableSheet(
         expand: false,
-        initialChildSize: 0.75,
+        // Opens at full height so every group is in reach without dragging.
+        initialChildSize: 0.92,
         maxChildSize: 0.92,
         builder: (context, controller) => MoveRecordsSheet(
           fromCategoryKey: fromCategoryKey,

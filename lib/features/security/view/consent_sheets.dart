@@ -40,7 +40,8 @@ class _LegalAgreementTextState extends State<LegalAgreementText> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    final base = widget.style ??
+    final base =
+        widget.style ??
         TextStyle(fontSize: 13.5, height: 1.35, color: scheme.onSurface);
     final linkStyle = base.copyWith(
       color: scheme.primary,
@@ -61,18 +62,22 @@ class _LegalAgreementTextState extends State<LegalAgreementText> {
     for (final ch in template.split('')) {
       if (ch == _termsMark) {
         flush();
-        spans.add(TextSpan(
-          text: loc.secTermsOfService,
-          style: linkStyle,
-          recognizer: _terms,
-        ));
+        spans.add(
+          TextSpan(
+            text: loc.secTermsOfService,
+            style: linkStyle,
+            recognizer: _terms,
+          ),
+        );
       } else if (ch == _privacyMark) {
         flush();
-        spans.add(TextSpan(
-          text: loc.secPrivacyPolicy,
-          style: linkStyle,
-          recognizer: _privacy,
-        ));
+        spans.add(
+          TextSpan(
+            text: loc.secPrivacyPolicy,
+            style: linkStyle,
+            recognizer: _privacy,
+          ),
+        );
       } else {
         buffer.write(ch);
       }
@@ -123,70 +128,89 @@ class _UpdatedTermsSheetState extends State<_UpdatedTermsSheet> {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
 
-    return SingleChildScrollView(
-      padding: const EdgeInsets.fromLTRB(20, 24, 20, 20),
+    // Full height, with Accept and Sign out pinned at the bottom. It used to
+    // open only as tall as its text, so on smaller phones and in longer
+    // languages the buttons sat below the edge and had to be dragged up.
+    final height = MediaQuery.sizeOf(context).height * 0.92;
+
+    return SizedBox(
+      height: height,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Icon(Icons.policy_rounded, size: 44, color: scheme.primary),
-          const SizedBox(height: 12),
-          Text(
-            loc.secTermsUpdatedTitle,
-            textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            loc.secTermsUpdatedBody,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13.5,
-              height: 1.4,
-              color: scheme.onSurfaceVariant,
+          Expanded(
+            child: Center(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.fromLTRB(24, 24, 24, 12),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Icon(Icons.policy_rounded, size: 56, color: scheme.primary),
+                    const SizedBox(height: 16),
+                    Text(
+                      loc.secTermsUpdatedTitle,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      loc.secTermsUpdatedBody,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 14.5,
+                        height: 1.45,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    OutlinedButton.icon(
+                      onPressed: LegalConsent.openTerms,
+                      icon: const Icon(Icons.open_in_new_rounded, size: 16),
+                      label: Text(
+                        loc.secTermsOfService,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    OutlinedButton.icon(
+                      onPressed: LegalConsent.openPrivacy,
+                      icon: const Icon(Icons.open_in_new_rounded, size: 16),
+                      label: Text(
+                        loc.secPrivacyPolicy,
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
-          const SizedBox(height: 14),
-          Row(
-            children: [
-              Expanded(
-                child: OutlinedButton.icon(
-                  onPressed: LegalConsent.openTerms,
-                  icon: const Icon(Icons.open_in_new_rounded, size: 16),
-                  label: Text(
-                    loc.secTermsOfService,
-                    textAlign: TextAlign.center,
-                  ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(24, 8, 24, 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                FilledButton(
+                  onPressed: _busy ? null : _accept,
+                  child: _busy
+                      ? const SizedBox(
+                          width: 18,
+                          height: 18,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        )
+                      : Text(loc.secAccept),
                 ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: OutlinedButton.icon(
-                  onPressed: LegalConsent.openPrivacy,
-                  icon: const Icon(Icons.open_in_new_rounded, size: 16),
-                  label: Text(
-                    loc.secPrivacyPolicy,
-                    textAlign: TextAlign.center,
-                  ),
+                const SizedBox(height: 6),
+                TextButton(
+                  onPressed: _busy ? null : _signOut,
+                  child: Text(loc.profile_sign_out_action),
                 ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 18),
-          FilledButton(
-            onPressed: _busy ? null : _accept,
-            child: _busy
-                ? const SizedBox(
-                    width: 18,
-                    height: 18,
-                    child: CircularProgressIndicator(strokeWidth: 2),
-                  )
-                : Text(loc.secAccept),
-          ),
-          const SizedBox(height: 6),
-          TextButton(
-            onPressed: _busy ? null : _signOut,
-            child: Text(loc.profile_sign_out_action),
+              ],
+            ),
           ),
         ],
       ),
