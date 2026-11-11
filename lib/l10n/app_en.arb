@@ -9808,5 +9808,232 @@
   "recordsScan": "Scan",
   "@recordsScan": {
     "description": "Button to add a record by scanning it with the camera."
+  },
+  "insightsCardTitle": "Smart insights",
+  "@insightsCardTitle": {
+    "description": "Title of the insights card on the Insights tab."
+  },
+  "insightPosition": "Insight {index} of {total}",
+  "@insightPosition": {
+    "description": "Read by screen readers for the page dots.",
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Later",
+  "@insightSnooze": {
+    "description": "Button that hides an insight for a week."
+  },
+  "insightSnoozed": "Hidden for a week. It comes back if it still needs you.",
+  "@insightSnoozed": {
+    "description": "Shown after tapping Later."
+  },
+  "insightAsk": "Ask about this",
+  "@insightAsk": {
+    "description": "Button that opens Ask Vaultara about an insight."
+  },
+  "insightAskPrompt": "{heading}. {body} What should I do?",
+  "@insightAskPrompt": {
+    "description": "Question filled in when asking Ask Vaultara about an insight.",
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Records",
+  "@insightsSummaryRecords": {
+    "description": "Label of the total records number at the top of Insights."
+  },
+  "insightsSummaryDueSoon": "Due in 30 days",
+  "@insightsSummaryDueSoon": {
+    "description": "Label of the number of records expiring within 30 days."
+  },
+  "insightsSummaryNoReminder": "No reminder",
+  "@insightsSummaryNoReminder": {
+    "description": "Label of the number of upcoming records without a reminder."
+  },
+  "insightsListEmpty": "Nothing here right now.",
+  "@insightsListEmpty": {
+    "description": "Shown when a list opened from Insights is empty."
+  },
+  "smartInsightUpcomingCostHeading": "Renewals Coming Up",
+  "@smartInsightUpcomingCostHeading": {
+    "description": "Heading of the insight about renewal costs in the next 3 months."
+  },
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} renewal in the next 3 months will cost about {amount}.} other{{count} renewals in the next 3 months will cost about {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "description": "Body of the upcoming renewal costs insight.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Your week",
+  "@weeklyRecapTitle": {
+    "description": "Title of the Monday recap on Insights."
+  },
+  "weeklyRecapNothing": "Nothing expires this week.",
+  "@weeklyRecapNothing": {
+    "description": "Monday recap when nothing expires this week."
+  },
+  "weeklyRecapExpiring": "{count, plural, =1{{count} record expires this week.} other{{count} records expire this week.}}",
+  "@weeklyRecapExpiring": {
+    "description": "Monday recap line.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{You renewed {count} record last week.} other{You renewed {count} records last week.}}",
+  "@weeklyRecapRenewed": {
+    "description": "Monday recap line.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Renewals last week cost {amount}.",
+  "@weeklyRecapCost": {
+    "description": "Monday recap line with a money amount.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Dismiss",
+  "@weeklyRecapDismiss": {
+    "description": "Tooltip of the button that closes the Monday recap."
+  },
+  "timelineUnlockProgress": "{count} of {total} records with an upcoming date",
+  "@timelineUnlockProgress": {
+    "description": "Progress before the expiry timeline appears.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Repeats",
+  "@timelineRepeats": {
+    "description": "Marks a later date of a repeating record."
+  },
+  "calendarNextExpiry": "Next expiry",
+  "@calendarNextExpiry": {
+    "description": "Chip that jumps to the next day with something expiring."
+  },
+  "calendarViewMonth": "Month",
+  "@calendarViewMonth": {
+    "description": "Calendar view switch: month grid."
+  },
+  "calendarViewList": "List",
+  "@calendarViewList": {
+    "description": "Calendar view switch: list of upcoming dates."
+  },
+  "calendarLegendExpiry": "Expires",
+  "@calendarLegendExpiry": {
+    "description": "Legend under the calendar for the coloured dots."
+  },
+  "calendarLegendReminder": "Reminder",
+  "@calendarLegendReminder": {
+    "description": "Legend under the calendar for the ring around a day."
+  },
+  "calendarMonthSummary": "{count, plural, =1{{count} expiring in {month}} other{{count} expiring in {month}}}",
+  "@calendarMonthSummary": {
+    "description": "Summary under the calendar. {month} is a month name.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Nothing expires in {month}",
+  "@calendarMonthNothing": {
+    "description": "Summary when nothing expires in the month shown.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "About {amount} to renew",
+  "@calendarMonthCost": {
+    "description": "Added to the month summary on paid plans.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "This week",
+  "@calendarThisWeek": {
+    "description": "Heading in the calendar list."
+  },
+  "calendarNextWeek": "Next week",
+  "@calendarNextWeek": {
+    "description": "Heading in the calendar list."
+  },
+  "calendarListEmpty": "Nothing coming up in the next 12 months.",
+  "@calendarListEmpty": {
+    "description": "Calendar list when there is nothing."
+  },
+  "calendarDaysLeft": "{count, plural, =1{{count} day left} other{{count} days left}}",
+  "@calendarDaysLeft": {
+    "description": "How long until a record expires.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Expired {count} day ago} other{Expired {count} days ago}}",
+  "@calendarDaysAgo": {
+    "description": "How long ago a record expired.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Add a record expiring on this day",
+  "@calendarAddOnDay": {
+    "description": "Button on an empty day; also what a long press does."
+  },
+  "calendarPickMonth": "Choose a month",
+  "@calendarPickMonth": {
+    "description": "Title of the month picker."
+  },
+  "calendarReminderFor": "Reminder: {name} expires on {date}",
+  "@calendarReminderFor": {
+    "description": "A reminder day in the calendar.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
   }
 }
