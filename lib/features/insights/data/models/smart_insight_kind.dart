@@ -1,10 +1,8 @@
 enum SmartInsightKind {
   expiresToday,
   silentRisk,
-  renewalTwin,
-  documentCluster,
+  renewTogether,
   quietPeriod,
-  healthScore,
   allCaughtUp,
   noRecords,
   expired,
@@ -18,4 +16,5 @@ enum SmartInsightKind {
   walletPhoto,
   recentlyRenewed,
   costIncrease,
+  upcomingCost,
 }
