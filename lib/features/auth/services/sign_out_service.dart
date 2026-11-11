@@ -20,6 +20,9 @@ import 'package:vaultara/features/profile/data/avatar_repository.dart';
 import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
 import 'package:vaultara/features/reminders/services/push_service.dart';
 import 'package:vaultara/features/insights/services/insight_snoozes.dart';
+import 'package:vaultara/core/data/user_name.dart';
+import 'package:vaultara/features/reminders/services/notification_prefs.dart';
+import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
 
 class SignOutService {
   static Future<void> signOut() async {
@@ -36,6 +39,9 @@ class SignOutService {
 
     await PushService.unregister();
     await DailyDigestService.clearForSignOut();
+    await WeeklyRecapNotifier.clearForSignOut();
+    await UserName.clear();
+    NotificationPrefs.clearForSignOut();
 
     CategoryRepository.clearForSignOut();
     RecordRepository.clearForSignOut();
