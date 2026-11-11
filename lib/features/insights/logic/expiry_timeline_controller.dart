@@ -4,23 +4,23 @@ import 'package:vaultara/features/insights/data/models/expiry_timeline_result.da
 import 'package:vaultara/features/insights/data/models/expiry_timeline_view_state.dart';
 import 'package:vaultara/features/insights/services/expiry_timeline_service.dart';
 
+/// Holds the chosen year and the open months while the records underneath
+/// change.
 class ExpiryTimelineController extends ChangeNotifier {
-  final ExpiryTimelineResult? overrideResult;
+  ExpiryTimelineController(this._result);
 
-  ExpiryTimelineController({this.overrideResult});
-
-  ExpiryTimelineResult? _result;
-  bool _loading = true;
-
+  ExpiryTimelineResult _result;
   int? _selectedYear;
   final Set<int> _expandedMonths = <int>{};
+
   ExpiryTimelineViewState get state {
-    if (_loading) return const ExpiryTimelineLoading();
-
     final result = _result;
-    if (result == null) return const ExpiryTimelineHidden();
-
-    if (result.notReady) return const ExpiryTimelineNotReady();
+    if (result.notReady) {
+      return ExpiryTimelineNotReady(
+        count: result.upcomingCount,
+        total: ExpiryTimelineService.minRecordsToShow,
+      );
+    }
     if (!result.shouldShow) return const ExpiryTimelineHidden();
 
     final year = _resolveYear(result);
@@ -35,6 +35,7 @@ class ExpiryTimelineController extends ChangeNotifier {
       expandedMonths: Set.unmodifiable(_expandedMonths),
     );
   }
+
   int _resolveYear(ExpiryTimelineResult result) {
     final selected = _selectedYear;
     if (selected != null && result.availableYears.contains(selected)) {
@@ -43,32 +44,16 @@ class ExpiryTimelineController extends ChangeNotifier {
     return result.defaultYear;
   }
 
-  /// First load. Call once, from initState.
-  Future<void> load() async {
-    final override = overrideResult;
-    if (override != null) {
-      _result = override;
-      _loading = false;
-      notifyListeners();
-      return;
+  /// New data, for example after a record changed or a person was picked.
+  /// The chosen year and open months stay when they still make sense.
+  void setResult(ExpiryTimelineResult result) {
+    if (identical(result, _result)) return;
+    _result = result;
+    final selected = _selectedYear;
+    if (selected != null && !result.availableYears.contains(selected)) {
+      _selectedYear = null;
+      _expandedMonths.clear();
     }
-
-    await _fetch();
-  }
-  Future<void> refresh() async {
-    if (overrideResult != null) return;
-
-    _selectedYear = null;
-    _expandedMonths.clear();
-    _loading = true;
-    notifyListeners();
-
-    await _fetch();
-  }
-
-  Future<void> _fetch() async {
-    _result = await ExpiryTimelineService.load();
-    _loading = false;
     notifyListeners();
   }
 
