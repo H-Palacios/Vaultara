@@ -41,16 +41,21 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - **Spreadsheet import.** Bring records over from Excel or another app with a CSV file, with automatic date detection.
 - **Global search** across categories, groups and records, including holder names, notes and where a record is kept (not for locked records). It ignores accents, tolerates small typos and can be filtered by person.
 - **Recovery Centre.** Deleted categories, groups and records can be restored for 30 days.
+- **Quick adding.** An empty Add record sheet has one-tap starts for common documents (passport, driving licence, ID card, visa, car insurance, bank card, medical aid card and subscriptions). Under the expiry date are +1, +2, +5 and +10 year buttons and a Type date option, and records that already expired or expire today can be added too. **Save and add another** keeps the category, group, person and reminder for the next record.
+- **Follow-ups.** After a new category Vaultara offers to add a group to it, and after a new group it offers to add a record. Adding a group suggests names that fit the category ("Pets" suggests Vaccinations, Certificates, Licences and more).
+- **Search spelling.** "Licence" and "license" find the same records, in the app and in Ask Vaultara.
 
 ### Home
 - **Greeting by first name** ("Welcome back, Ana").
 - **Next expiry.** The record that expires next, with how long is left, Renew and How to renew, and chips for anything expired or due in 30 days that open those records. The overall numbers live in the Insights summary, so Home no longer repeats them.
 - **Pinned categories** one tap away, and pull to refresh.
+- **Opens instantly.** Home is drawn from the records already saved on the phone, then refreshed from the server in the background. Opening Home loads once instead of several times, reads run side by side, and reminders are only planned again when something about them changed.
 
 ### Reminders
 - **Reminder cascade.** Several notifications before a record expires, at times the user chooses. The first and last greet you by first name, and records of people in your family are named as theirs ("Leo's passport expires tomorrow").
 - **After expiry.** Two nudges, 3 and 14 days after a record expired without being renewed (on by default, not for repeating records).
 - **Locked records stay private.** Reminders, "Remind me tomorrow" and the daily summary never show a locked record's name.
+- **Asked at the right moment.** The app asks for notification permission the first time you set a reminder, with a short explanation, instead of on first launch. "Not now" waits a week before asking again.
 - **Custom reminder time.** Pick the hour reminders arrive each day. A reminder missed while the phone was off arrives once when the app opens, never again on the same day.
 - **Notification actions.** "Renewed" and "Remind me tomorrow" work straight from the notification without opening the app.
 - **Monday summary** (optional): a note on Monday morning when something expires that week.
@@ -136,6 +141,8 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - Record names in answers open the record. Answers can be copied and rated, so weak answers can be found and improved.
 - Knows each traveller's passports and home country, so it never asks for a visa or permit for your own country. For trips at home it asks which city. If you are already on a trip there, it offers to add a city or change the dates instead of making a second trip. With location on, it can tell if you are at home or travelling, and asks before treating a country as home.
 - Changes settings for you after you confirm: turns on app lock, the privacy screen, screenshot blocking and notifications, turns the daily and monthly summaries on or off, and sets the reminder time. The phone still asks for a fingerprint or for permission where it normally would, and security settings can only be turned off in the app.
+- Makes and renames categories and groups, moves records into any group (including your own), adds up renewal costs for the coming months, shows a record's renewal history, lists Recently deleted and brings records back, gives quick visa guidance for a passport and country, and turns the after-expiry reminders and Monday summary on or off.
+- Understands other spellings and languages when looking for records: "license", "Reisepass" and "permis de conduire" all find the right group.
 - Adds flights to a trip from plain words, connections included ("Johannesburg to Tokyo through Dubai on 10 March"), and the date you reach each country on trips with several countries.
 - New trip and record cards show their details in two columns, and the countries label matches the number of countries.
 
@@ -179,7 +186,9 @@ Every paid plan comes monthly or yearly, with a 7-day free trial. Prices are rea
 - **Hide in recent apps** when App lock is on.
 - **Lock sensitive records** behind an extra check even when the app is open.
 - **Optional end-to-end encrypted photos.** Photos are encrypted on the phone with AES-GCM before upload, with a recovery key only the user holds. Not even Vorkalis can see them.
-- **Two-step sign-in** with an authenticator app.
+- **Two-step sign-in** with an authenticator app. Setup shows "Step 1 of 3", the account name the app will show, a Paste button and a note that codes change every 30 seconds. Afterwards it offers backup codes, app lock and a device review.
+- **Backup codes.** Ten one-time codes, shown once and stored only as salted hashes. "Use a backup code" at sign-in turns two-step off, sends a security alert and asks you to set it up again. The Security checkup reminds you when two-step is on without backup codes.
+- **Sign-in protection.** Wrong details always show the same message, and after three wrong tries the sign-in button waits briefly with a password reset offered. Firebase's own throttling starts a 60-second wait.
 - **Email verification by 6-digit code**, with a deep-link button that opens the app directly.
 - **Server-side purchase verification** with the Google Play Developer API and the App Store Server API, so plans cannot be faked on the device.
 - **Firebase App Check**, rate limiting and owner-only Firestore and Storage rules.
