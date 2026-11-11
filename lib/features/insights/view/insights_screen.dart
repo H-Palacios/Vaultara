@@ -10,7 +10,18 @@ import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/features/insights/data/models/smart_insight.dart';
 import 'package:vaultara/features/insights/data/models/smart_insight_action.dart';
 import 'package:vaultara/features/insights/data/models/insights_screen_data.dart';
+import 'package:vaultara/features/insights/data/models/expiry_timeline_result.dart';
+import 'package:vaultara/features/insights/logic/insights_summary.dart';
+import 'package:vaultara/features/insights/logic/weekly_recap.dart';
+import 'package:vaultara/features/insights/services/expiry_timeline_service.dart';
+import 'package:vaultara/features/insights/services/insight_snoozes.dart';
 import 'package:vaultara/features/insights/services/insights_data_loader.dart';
+import 'package:vaultara/features/insights/view/widgets/insights_summary_strip.dart';
+import 'package:vaultara/features/insights/view/widgets/record_list_sheet.dart';
+import 'package:vaultara/features/insights/view/widgets/weekly_recap_card.dart';
+import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
+import 'package:vaultara/features/records/view/record_opener.dart';
+import 'package:vaultara/features/records/view/widgets/person_filter_chips.dart';
 import 'package:vaultara/features/insights/services/smart_insight_service.dart';
 import 'package:vaultara/features/insights/services/tts_service.dart';
 import 'package:vaultara/features/insights/view/widgets/expiry_timeline_card.dart';
@@ -47,6 +58,7 @@ class InsightsScreen extends StatefulWidget {
 class _InsightsScreenState extends State<InsightsScreen>
     with AutomaticKeepAliveClientMixin {
   static const String _userFirstNameKey = 'userFirstName';
+  static const String _recapDismissedKey = 'weeklyRecapDismissedOn';
 
   final TtsService _tts = TtsService();
   bool _ttsReady = false;
@@ -63,6 +75,10 @@ class _InsightsScreenState extends State<InsightsScreen>
   InsightsScreenData _tutorialData = InsightsScreenData.empty();
   bool _tutorialDataReady = false;
   int _dataVersion = 0;
+
+  /// Whose records to show: null for everyone.
+  String? _person;
+  String _recapDismissedOn = '';
 
   @override
   bool get wantKeepAlive => true;
@@ -86,8 +102,11 @@ class _InsightsScreenState extends State<InsightsScreen>
 
     PeopleRepository.people.addListener(_onSourcesChanged);
     TripRepository.trips.addListener(_onSourcesChanged);
+    InsightSnoozes.until.addListener(_onSourcesChanged);
 
     _loadFirstName();
+    _loadRecapState();
+    InsightSnoozes.load();
     _refresh();
   }
 
@@ -107,6 +126,7 @@ class _InsightsScreenState extends State<InsightsScreen>
     if (!widget.isTutorialMode) {
       PeopleRepository.people.removeListener(_onSourcesChanged);
       TripRepository.trips.removeListener(_onSourcesChanged);
+      InsightSnoozes.until.removeListener(_onSourcesChanged);
     }
     _watcher?.dispose();
     _tts.stop();
@@ -117,12 +137,75 @@ class _InsightsScreenState extends State<InsightsScreen>
     if (mounted) setState(() {});
   }
 
+  /// Loads the records again. This used to sign the record store out and
+  /// in, which cancelled every scheduled reminder and locked unlocked
+  /// records again each time anything changed.
   Future<void> _refresh() async {
-    RecordRepository.clearForSignOut();
-    await RecordRepository.loadForCurrentUser();
+    await RecordRepository.reload();
 
     if (!mounted) return;
     setState(() => _dataVersion++);
+  }
+
+  Future<void> _loadRecapState() async {
+    final prefs = await SharedPreferences.getInstance();
+    final value = prefs.getString(_recapDismissedKey) ?? '';
+    if (!mounted) return;
+    setState(() => _recapDismissedOn = value);
+  }
+
+  static String _dayKey(DateTime d) =>
+      '${d.year}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
+
+  Future<void> _dismissRecap() async {
+    final key = _dayKey(DateTime.now());
+    setState(() => _recapDismissedOn = key);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_recapDismissedKey, key);
+  }
+
+  Future<void> _snooze(SmartInsight insight) async {
+    final key = insight.key;
+    if (key == null) return;
+    final loc = AppLocalizations.of(context)!;
+    final messenger = ScaffoldMessenger.of(context);
+    await InsightSnoozes.snooze(key, days: SmartInsightService.snoozeDays);
+    messenger
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text(loc.insightSnoozed),
+          action: SnackBarAction(
+            label: loc.assistantUndo,
+            onPressed: () => InsightSnoozes.clear(key),
+          ),
+        ),
+      );
+  }
+
+  void _ask(SmartInsight insight) {
+    final loc = AppLocalizations.of(context)!;
+    openAskVaultara(
+      context,
+      isPremium: true,
+      sharedText: loc.insightAskPrompt(insight.heading, insight.body),
+    );
+  }
+
+  Future<void> _openList(String title, List<TrackedItem> records) async {
+    final picked = await RecordListSheet.show(
+      context,
+      title: title,
+      records: records,
+    );
+    if (picked == null || !mounted) return;
+    await RecordOpener.open(context, picked, isPremium: widget.isPremium);
+    if (mounted) setState(() {});
+  }
+
+  Future<void> _openTimelineRecord(TrackedItem record) async {
+    await RecordOpener.open(context, record, isPremium: widget.isPremium);
+    if (mounted) setState(() {});
   }
 
   Future<void> _loadFirstName() async {
@@ -180,9 +263,9 @@ class _InsightsScreenState extends State<InsightsScreen>
   }
 
   Future<void> _openTrip(String tripId) async {
-    await Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => TripDetailScreen(tripId: tripId)),
-    );
+    await Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => TripDetailScreen(tripId: tripId)));
     if (mounted) setState(() {});
   }
 
@@ -267,14 +350,14 @@ class _InsightsScreenState extends State<InsightsScreen>
   }
 
   String _formatDateLong(DateTime date) => DateFormat(
-        'd MMMM y',
-        SafeLocale.date(Localizations.localeOf(context).toString()),
-      ).format(date);
+    'd MMMM y',
+    SafeLocale.date(Localizations.localeOf(context).toString()),
+  ).format(date);
 
   String _formatMonth(DateTime date) => DateFormat(
-        'MMMM y',
-        SafeLocale.date(Localizations.localeOf(context).toString()),
-      ).format(date);
+    'MMMM y',
+    SafeLocale.date(Localizations.localeOf(context).toString()),
+  ).format(date);
 
   String _formatMoney(double amount, String currency) =>
       CostFormat.format(context, amount, currency);
@@ -289,64 +372,121 @@ class _InsightsScreenState extends State<InsightsScreen>
       return const SizedBox.shrink();
     }
 
+    final allRecords = widget.isTutorialMode
+        ? const <TrackedItem>[]
+        : RecordRepository.allActive();
+    final person = PersonFilterChips.owners(allRecords).length < 2
+        ? null
+        : _person;
+    final records = [
+      for (final r in allRecords)
+        if (PersonFilterChips.matches(r, person)) r,
+    ];
+
     final List<SmartInsight> insights = widget.isTutorialMode
         ? _tutorialData.insights
         : SmartInsightService.build(
             loc: loc,
-            records: RecordRepository.allActive(),
+            records: records,
             people: PeopleRepository.people.value,
-            trips: TripRepository.trips.value,
+            trips: person == null ? TripRepository.trips.value : const [],
             includeTrips: widget.isPremium,
+            includeCosts: widget.isPremium,
+            hidden: (key) => InsightSnoozes.isHidden(key),
             formatDateLong: _formatDateLong,
             formatMonth: _formatMonth,
             formatMoney: _formatMoney,
           );
 
+    final ExpiryTimelineResult timeline = widget.isTutorialMode
+        ? _tutorialData.timeline
+        : ExpiryTimelineService.build(records);
+
     final speechText = SmartInsightService.toSpeech(insights);
+    final now = DateTime.now();
+    final showRecap =
+        !widget.isTutorialMode &&
+        RecordRepository.isLoaded &&
+        WeeklyRecap.showsOn(now) &&
+        _recapDismissedOn != _dayKey(now);
+    final recap = showRecap ? WeeklyRecap.of(records, now: now) : null;
+    final recapCost = recap?.costLastWeek;
+    final recapCurrency = recap?.currency;
+
+    final list = ListView(
+      physics: const AlwaysScrollableScrollPhysics(),
+      padding: const EdgeInsets.all(16),
+      children: [
+        const SizedBox(height: 8),
+        if (!widget.isTutorialMode) ...[
+          PersonFilterChips(
+            records: allRecords,
+            value: person,
+            onChanged: (value) => setState(() => _person = value),
+          ),
+          if (recap != null) ...[
+            WeeklyRecapCard(
+              recap: recap,
+              costText:
+                  widget.isPremium && recapCost != null && recapCurrency != null
+                  ? _formatMoney(recapCost, recapCurrency)
+                  : null,
+              onDismiss: _dismissRecap,
+            ),
+            const SizedBox(height: 12),
+          ],
+          if (RecordRepository.isLoaded)
+            InsightsSummaryStrip(
+              summary: InsightsSummary.of(records, now: now),
+              onOpen: _openList,
+            )
+          else
+            const InsightsSummarySkeleton(),
+          const SizedBox(height: 12),
+        ],
+        Container(
+          key: _smartCardKey,
+          child: SmartInsightCard(
+            insights: insights,
+            speakerKey: _speakerKey,
+            canSpeak: widget.isTutorialMode || _ttsReady,
+            isSpeaking: _tts.speaking,
+            isPaused: _tts.paused,
+            onPlay: () => _handlePlay(speechText),
+            onPause: _handlePause,
+            onAction: widget.isTutorialMode ? null : _handleInsightAction,
+            onSnooze: widget.isTutorialMode ? null : _snooze,
+            onAsk: widget.isTutorialMode || !widget.isPremium ? null : _ask,
+          ),
+        ),
+        const SizedBox(height: 16),
+        Container(
+          key: _timelineKey,
+          child: ExpiryTimelineCard(
+            result: timeline,
+            onOpenRecord: widget.isTutorialMode ? null : _openTimelineRecord,
+          ),
+        ),
+        const SizedBox(height: 16),
+        if (!widget.isTutorialMode) ...[
+          PremiumBuilder(
+            initial: widget.isPremium,
+            builder: (context, isPremium) => RenewalCostsCard(
+              key: ValueKey('renewal-costs-$_dataVersion'),
+              isPremium: isPremium,
+            ),
+          ),
+          const SizedBox(height: 16),
+        ],
+      ],
+    );
 
     return PopScope(
       canPop: !widget.isTutorialMode,
       child: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
-            const SizedBox(height: 8),
-            Container(
-              key: _smartCardKey,
-              child: SmartInsightCard(
-                insights: insights,
-                speakerKey: _speakerKey,
-                canSpeak: widget.isTutorialMode || _ttsReady,
-                isSpeaking: _tts.speaking,
-                isPaused: _tts.paused,
-                onPlay: () => _handlePlay(speechText),
-                onPause: _handlePause,
-                onAction:
-                    widget.isTutorialMode ? null : _handleInsightAction,
-              ),
-            ),
-            const SizedBox(height: 16),
-            Container(
-              key: _timelineKey,
-              child: ExpiryTimelineCard(
-                refreshKey: _dataVersion,
-                overrideResult:
-                    widget.isTutorialMode ? _tutorialData.timeline : null,
-              ),
-            ),
-            const SizedBox(height: 16),
-            if (!widget.isTutorialMode) ...[
-              PremiumBuilder(
-                initial: widget.isPremium,
-                builder: (context, isPremium) => RenewalCostsCard(
-                  key: ValueKey('renewal-costs-$_dataVersion'),
-                  isPremium: isPremium,
-                ),
-              ),
-              const SizedBox(height: 16),
-            ],
-          ],
-        ),
+        child: widget.isTutorialMode
+            ? list
+            : RefreshIndicator(onRefresh: _refresh, child: list),
       ),
     );
   }
