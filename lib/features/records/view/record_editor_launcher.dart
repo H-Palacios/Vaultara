@@ -1,3 +1,4 @@
+import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/features/records/data/models/record_input.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -119,10 +120,11 @@ Future<void> openRecordEditor({
         if (!context.mounted) return;
 
         if (!scheduled && stored.reminderOffsetDays != null) {
-          ActionFeedbackSnackbar.showNotificationsDisabled(
+          await NotificationAsk.afterReminderSet(
             context,
             onOpenSettings: onOpenNotificationSettings,
           );
+          if (!context.mounted) return;
         }
       }
 

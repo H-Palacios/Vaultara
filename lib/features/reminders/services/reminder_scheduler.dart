@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'dart:ui' show PlatformDispatcher;
@@ -178,6 +179,7 @@ class ReminderScheduler {
 
   static Future<bool> ensurePermissions() async {
     await init();
+    unawaited(_markAsked());
 
     if (Platform.isIOS) {
       final status = await Permission.notification.request();
@@ -198,8 +200,58 @@ class ReminderScheduler {
     return _allowedCache = true;
   }
 
-  static Future<bool> notificationsAllowed() async =>
-      _allowedCache ?? await ensurePermissions();
+  /// Whether notifications are allowed, without asking. Asking happens in
+  /// context (see NotificationAsk), never in the middle of loading records,
+  /// which used to show the phone's prompt right after signing in with no
+  /// explanation.
+  static Future<bool> notificationsAllowed() async {
+    final cached = _allowedCache;
+    if (cached != null) return cached;
+    await init();
+    try {
+      final status = await Permission.notification.status;
+      if (!status.isGranted) return false;
+      if (Platform.isAndroid) {
+        final android = _plugin
+            .resolvePlatformSpecificImplementation<
+              AndroidFlutterLocalNotificationsPlugin
+            >();
+        return _allowedCache = await android?.areNotificationsEnabled() ?? true;
+      }
+      return _allowedCache = true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// True when the phone will no longer show its prompt, so the only way
+  /// left is the phone's settings.
+  static Future<bool> permissionBlocked() async {
+    try {
+      final status = await Permission.notification.status;
+      return status.isPermanentlyDenied ||
+          (Platform.isIOS && status.isDenied && await _askedBefore());
+    } catch (_) {
+      return false;
+    }
+  }
+
+  static const String _askedKey = 'notifPermissionAsked';
+
+  static Future<bool> _askedBefore() async {
+    try {
+      return (await SharedPreferences.getInstance()).getBool(_askedKey) ??
+          false;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  static Future<void> _markAsked() async {
+    try {
+      await (await SharedPreferences.getInstance()).setBool(_askedKey, true);
+    } catch (_) {}
+  }
 
   static Future<void> openSystemNotificationSettings() async {
     _allowedCache = null;
