@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Cabhraíonn Vaultara leat dátaí éaga tábhachtacha a rianú ionas nach gcailltear aon rud.",
   "homeWelcomeSubtitleFirst": "Tá áthas orainn tú a fheiceáil anseo. Cabhraíonn Vaultara leat fanacht eagraithe trí dhátaí agus taifid thábhachtacha a choinneáil in aon áit shlán amháin.",
   "homeWelcomeSubtitleBack": "Tá áthas orainn tú a fheiceáil arís. Tá Vaultara anseo aon uair is mian leat do dhátaí agus taifid thábhachtacha a athbhreithniú.",
-  "summaryAllCaption": "Rianaithe i Vaultara",
-  "summaryExpiredTitle": "In éag",
-  "summaryExpiredCaption": "Tá an dáta éaga caite",
   "editorNotes": "Nótaí",
   "editorReminderNone": "Gan meabhrúchán",
   "editorReminderOnExpiry": "Ar an lá éaga",
@@ -199,7 +196,6 @@
   "addRecord": "Cuir taifead leis",
   "noRecordsYet": "Níl aon taifid ann fós.",
   "deleteRecordTitle": "Scrios taifead",
-  "summaryAllRecordsTitle": "Gach taifead",
   "noGroupFound": "Níl aon ghrúpaí fós",
   "groupLabel": "{count, plural, one{{count} grúpa} other{{count} grúpaí}}",
   "recordsLabel": "{count, plural, one{{count} taifead} other{{count} taifid}}",
@@ -449,7 +445,7 @@
   "addNotesHint": "Cuir nótaí leis (roghnach)",
   "expiryTimelineTitle": "Amlíne éaga",
   "expiryTimelineSubtitle": "Tapáil mí chun na taifid a éagann an mhí sin a fheiceáil",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 taifead} =2{2 thaifead} few{{count} thaifead} many{{count} dtaifead} other{{count} taifead}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} taifead} =2{{count} thaifead} few{{count} thaifead} many{{count} dtaifead} other{{count} taifead}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -457,10 +453,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Le Teacht",
-  "summaryUpcomingCaption": "Laistigh de 30 lá",
-  "summaryUrgentTitle": "Práinneach",
-  "summaryUrgentCaption": "Laistigh de 7 lá",
   "profileHeaderTitle": "Próifíl",
   "profileTutorialsTitle": "Ranganna Teagaisc",
   "profileTutorialsSubtitle": "Brabhsáil Ranganna Teagaisc na hAipe",
@@ -492,7 +484,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Gan meabhrúchán",
   "reminderOnExpiry": "Ar an dáta éaga",
-  "reminderDaysBefore": "{days, plural, one{1 lá roimhe sin} other{{days} lá roimhe sin}}",
+  "reminderDaysBefore": "{days, plural, one{{days} lá roimhe sin} other{{days} lá roimhe sin}}",
   "reminderCustomDaysTitle": "Cuir isteach laethanta saincheaptha",
   "reminderCascadeTitle": "Meabhrúcháin chascáide",
   "reminderCascadeSubtitle": "Faigh iliomad fógraí sula dtéann taifead in éag",
@@ -523,16 +515,16 @@
   "smartInsightNoRecordsHeading": "Cuir do chéad taifead leis",
   "smartInsightNoRecordsBody": "Tosaigh ag rianú do chuid taifead, agus taispeánfaidh Vaultara léargais chliste anseo.",
   "smartInsightExpiresTodaySingleBody": "Rachaidh {name} in éag inniu. Má tá sé athnuaite agat cheana féin, nuashonraigh an dáta anseo.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ag dul in éag inniu.} =1{{names} agus 1 eile ag dul in éag inniu.} other{{names} agus {extra} eile ag dul in éag inniu.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ag dul in éag inniu.} =1{{names} agus {extra} eile ag dul in éag inniu.} other{{names} agus {extra} eile ag dul in éag inniu.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{Rachaidh {name} in éag amárach agus níl aon mheabhrúchán socraithe. Socraigh ceann amháin ionas nach gcaillfidh tú é.} other{Rachaidh {name} in éag ar an {date} agus níl aon mheabhrúchán socraithe. Socraigh ceann amháin ionas nach gcaillfidh tú é.}}",
   "smartInsightCloseExpiriesBodyTwo": "Rachaidh {a} in éag ar an {dateA} agus {b} ar an {dateB}, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá dhá thaifead chomh gar sin dá chéile.",
   "smartInsightCloseExpiriesBodyThree": "Rachaidh {a}, {b} agus {c} go léir in éag faoin {lastDate}, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá roinnt rudaí chomh gar sin dá chéile.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} agus 1 taifead eile ag dul in éag faoin {lastDate}, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá roinnt rudaí chomh gar sin dá chéile.} other{{a}, {b} agus {extra} taifead eile ag dul in éag faoin {lastDate}, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá roinnt rudaí chomh gar sin dá chéile.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} agus {extra} taifead eile ag dul in éag faoin {lastDate}, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá roinnt rudaí chomh gar sin dá chéile.} other{{a}, {b} agus {extra} taifead eile ag dul in éag faoin {lastDate}, thart ar an am céanna. Is furasta ceann acu a dhearmad nuair atá roinnt rudaí chomh gar sin dá chéile.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Níl aon rud ag dul in éag amárach. Is é {date} an chéad dáta eile.} other{Níl aon rud ag dul in éag sna {days} lá amach romhainn. Is é {date} an chéad dáta eile.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Tá 1 de do chuid taifead sa chatagóir {category} ag dul in éag ar an {date}. Is furasta neamhaird a thabhairt air.} other{Tá {count} de do chuid taifead sa chatagóir {category} ag dul in éag faoin {date}. Is furasta ceann acu a dhearmad nuair atá siad grúpáilte mar seo.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Tá meabhrúchán socraithe do 1 spriocdháta atá ag teacht aníos. Níl aon rud eile a dteastaíonn d'aire uaidh.} other{Tá meabhrúcháin socraithe do {count} spriocdháta atá ag teacht aníos. Níl aon rud eile a dteastaíonn d'aire uaidh.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Tá {count} de do chuid taifead sa chatagóir {category} ag dul in éag ar an {date}. Is furasta neamhaird a thabhairt air.} other{Tá {count} de do chuid taifead sa chatagóir {category} ag dul in éag faoin {date}. Is furasta ceann acu a dhearmad nuair atá siad grúpáilte mar seo.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Tá meabhrúchán socraithe do {count} spriocdháta atá ag teacht aníos. Níl aon rud eile a dteastaíonn d'aire uaidh.} other{Tá meabhrúcháin socraithe do {count} spriocdháta atá ag teacht aníos. Níl aon rud eile a dteastaíonn d'aire uaidh.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Gach rud cothrom le dáta. Níl aon rud ann a dteastaíonn d'aire uaidh faoi láthair.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Níl aon rud práinneach faoi láthair, ach níl aon mheabhrúchán fós ag 1 taifead atá ag teacht aníos.} other{Níl aon rud práinneach faoi láthair, ach níl aon mheabhrúchán fós ag {count} taifead atá ag teacht aníos.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Níl aon rud práinneach faoi láthair, ach níl aon mheabhrúchán fós ag {count} taifead atá ag teacht aníos.} other{Níl aon rud práinneach faoi láthair, ach níl aon mheabhrúchán fós ag {count} taifead atá ag teacht aníos.}}",
   "smartInsightCloseExpiriesHeading": "Ag dul in éag thart ar an am céanna",
   "plansHeadline": "Faigh Vaultara iomlán",
   "plansSubhead": "Taifid neamhtheoranta, do ghrúpaí féin, agus meabhrúcháin tiúnta go díreach mar is mian leat.",
@@ -619,7 +611,7 @@
   "reminderCascadeRemoveStep": "Bain",
   "reminderCascadeDuplicate": "Tá meabhrúchán eile ag baint úsáide as an lá seo cheana féin",
   "reminderCascadeOutOfRange": "Iontráil idir {min} agus {max} lá",
-  "reminderCascadeStepLabel": "Meabhrúchán {position}: {days, plural, =1{1 lá} other{{days} lá}} roimh ré",
+  "reminderCascadeStepLabel": "Meabhrúchán {position}: {days, plural, =1{{days} lá} other{{days} lá}} roimh ré",
   "expiryTimelineNotReady": "Feicfidh tú do líne ama chomh luath is a bheidh taifid agat a rachaidh in éag i gcúpla mí dhifriúla.",
   "verifyEmailResendIn": "Seol arís i {seconds}s",
   "verifyEmailSpamHint": "Nach bhfuil sé ansin? Seiceáil do fhillteán spám nó mioscaise.",
@@ -628,13 +620,10 @@
   "verifyEmailDiscardBody": "Níl an cuntas seo fíoraithe. Má fhágann tú anois, bainfear é, agus is féidir leat clárú arís le haon seoladh ríomhphoist.",
   "verifyEmailDiscardAction": "Cuir i leataobh",
   "verifyEmailKeepWaiting": "Lean ort ag fanacht",
-  "expiringBadge": "{count, plural, =1{1 ag dul in éag go luath} other{{count} ag dul in éag go luath}}",
+  "expiringBadge": "{count, plural, =1{{count} ag dul in éag go luath} other{{count} ag dul in éag go luath}}",
   "noRecordsToday": "Níl aon rud ag dul in éag inniu",
   "noRecordsTomorrow": "Níl aon rud ag dul in éag amárach",
-  "cascadeStepTitle": "{days, plural, =0{Rachaidh {recordName} in éag inniu} =1{Rachaidh {recordName} in éag amárach} other{Rachaidh {recordName} in éag i gceann {days} lá}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, rachaidh do {recordName} in éag inniu. An bhfuil sé athnuaite agat cheana féin? Nuashonraigh a dháta éaga.} =1{{firstName}, rachaidh do {recordName} in éag amárach. Athnuaigh anois é ionas nach rachaidh sé in éag.} other{{firstName}, rachaidh do {recordName} in éag ar {date}. Coinníonn athnuachan luath tú clúdaithe.}}",
   "cascadeFinalStepTitle": "Meabhrúchán deiridh: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, rachaidh do {recordName} in éag {days, plural, =1{amárach} other{i gceann {days} lá, ar {date}}}. Is é seo do mheabhrúchán deiridh, athnuaigh é nó nuashonraigh a dháta.",
   "notificationsTitle": "Fógraí",
   "notificationsProfileEnabledSubtitle": "Tagann meabhrúcháin ag {time}.",
   "notificationsProfileDisabledSubtitle": "Tá fógraí casta as.",
@@ -1361,7 +1350,7 @@
   "photoLockTurnOn": "Cuir grianghraif chriptithe ar siúl",
   "photoLockStatusOn": "Tá grianghraif chriptithe ar siúl",
   "photoLockStatusOnBody": "Criptítear grianghraif nua ar an bhfón seo sula n-uaslódáiltear iad.",
-  "photoLockPendingTitle": "{count, plural, one{Níl 1 ghrianghraf criptithe go fóill} two{Níl {count} ghrianghraf criptithe go fóill} few{Níl {count} ghrianghraf criptithe go fóill} many{Níl {count} ngrianghraf criptithe go fóill} other{Níl {count} grianghraf criptithe go fóill}}",
+  "photoLockPendingTitle": "{count, plural, one{Níl {count} ghrianghraf criptithe go fóill} two{Níl {count} ghrianghraf criptithe go fóill} few{Níl {count} ghrianghraf criptithe go fóill} many{Níl {count} ngrianghraf criptithe go fóill} other{Níl {count} grianghraf criptithe go fóill}}",
   "photoLockPendingBody": "Tá grianghraif a chuir tú leis sular chuir tú seo ar siúl stóráilte fós ar an ngnáthmhodh.",
   "photoLockEncryptExisting": "Criptigh mo ghrianghraif atá ann cheana",
   "photoLockKeepOpen": "Coinnigh Vaultara oscailte go mbeidh seo críochnaithe.",
@@ -1398,7 +1387,7 @@
   "photoLockSetupFailed": "Níorbh fhéidir linn grianghraif chriptithe a chur ar siúl. Seiceáil do cheangal agus bain triail eile as.",
   "photoLockAlreadyOn": "Tá grianghraif chriptithe ar siúl cheana do do chuntas. Cuir isteach d'eochair aisghabhála chun iad a úsáid ar an bhfón seo.",
   "photoLockEncryptExistingTitle": "An gcripteoidh tú do ghrianghraif atá ann cheana?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Tá 1 ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn é a chriptiú anois.} two{Tá {count} ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.} few{Tá {count} ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.} many{Tá {count} ngrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.} other{Tá {count} grianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.}} Coinnigh Vaultara oscailte go mbeidh seo críochnaithe.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Tá {count} ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn é a chriptiú anois.} two{Tá {count} ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.} few{Tá {count} ghrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.} many{Tá {count} ngrianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.} other{Tá {count} grianghraf agat nach bhfuil criptithe go fóill. Is féidir linn iad a chriptiú anois.}} Coinnigh Vaultara oscailte go mbeidh seo críochnaithe.",
   "photoLockEncryptNow": "Criptigh anois",
   "photoLockEntryBody": "Cuir isteach an eochair aisghabhála a shábháil tú nuair a chuir tú grianghraif chriptithe ar siúl. Tá fleiscíní agus spásanna roghnach.",
   "photoLockEntryLabel": "Eochair aisghabhála",
@@ -1407,8 +1396,8 @@
   "photoLockUnlocked": "Tá do ghrianghraif díghlasáilte ar an bhfón seo.",
   "photoLockInvalidFormat": "Ní chuma eochair aisghabhála é seo. Seiceáil gach carachtar agus bain triail eile as.",
   "photoLockWrongKey": "Ní hionann an eochair aisghabhála seo agus an ceann ceart. Seiceáil í agus bain triail eile as.",
-  "photoLockWaitSeconds": "{seconds, plural, one{An iomarca iarrachtaí. Fan 1 soicind agus bain triail eile as.} two{An iomarca iarrachtaí. Fan {seconds} shoicind agus bain triail eile as.} few{An iomarca iarrachtaí. Fan {seconds} soicind agus bain triail eile as.} many{An iomarca iarrachtaí. Fan {seconds} soicind agus bain triail eile as.} other{An iomarca iarrachtaí. Fan {seconds} soicind agus bain triail eile as.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{An iomarca iarrachtaí. Fan 1 nóiméad agus bain triail eile as.} two{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.} few{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.} many{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.} other{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{An iomarca iarrachtaí. Fan {seconds} soicind agus bain triail eile as.} two{An iomarca iarrachtaí. Fan {seconds} shoicind agus bain triail eile as.} few{An iomarca iarrachtaí. Fan {seconds} soicind agus bain triail eile as.} many{An iomarca iarrachtaí. Fan {seconds} soicind agus bain triail eile as.} other{An iomarca iarrachtaí. Fan {seconds} soicind agus bain triail eile as.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.} two{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.} few{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.} many{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.} other{An iomarca iarrachtaí. Fan {minutes} nóiméad agus bain triail eile as.}}",
   "photoLockOffline": "Níorbh fhéidir linn teacht ar Vaultara. Seiceáil do cheangal agus bain triail eile as.",
   "photoLockNotSetUp": "Níl grianghraif chriptithe ar siúl do do chuntas.",
   "photoLockUnlockFailed": "Chuaigh rud éigin ar strae. Bain triail eile as.",
@@ -1664,13 +1653,13 @@
   "dailyDigestSwitchSubtitle": "Faigh fógra amháin ag am do mheabhrúcháin a liostaíonn gach rud atá le déanamh an lá sin.",
   "dailyDigestTurnedOn": "Tagann do mheabhrúcháin anois mar achoimre laethúil amháin.",
   "dailyDigestTurnedOff": "Tá meabhrúcháin ar leith do gach taifead ar ais ar siúl.",
-  "dailyDigestTitle": "{count, plural, one{Tá aird ag teastáil ó 1 taifead} two{Tá aird ag teastáil ó {count} thaifead} few{Tá aird ag teastáil ó {count} thaifead} many{Tá aird ag teastáil ó {count} dtaifead} other{Tá aird ag teastáil ó {count} taifead}}",
+  "dailyDigestTitle": "{count, plural, one{Tá aird ag teastáil ó {count} taifead} two{Tá aird ag teastáil ó {count} thaifead} few{Tá aird ag teastáil ó {count} thaifead} many{Tá aird ag teastáil ó {count} dtaifead} other{Tá aird ag teastáil ó {count} taifead}}",
   "dailyDigestBody": "Ag teacht: {names}.",
   "dailyDigestBodyMore": "Ag teacht: {names} agus {count} eile.",
   "dailyDigestLockedRecord": "taifead faoi ghlas",
   "renewReasonRepeat": "{months, plural, one{Bunaithe ar do shocrú athdhéanta gach mí} two{Bunaithe ar do shocrú athdhéanta gach {months} mhí} few{Bunaithe ar do shocrú athdhéanta gach {months} mhí} many{Bunaithe ar do shocrú athdhéanta gach {months} mí} other{Bunaithe ar do shocrú athdhéanta gach {months} mí}}",
   "renewReasonHistory": "{count, plural, one{Bunaithe ar d’athnuachan is déanaí} two{Bunaithe ar do {count} athnuachan is déanaí} few{Bunaithe ar do {count} athnuachan is déanaí} many{Bunaithe ar do {count} athnuachan is déanaí} other{Bunaithe ar do {count} athnuachan is déanaí}}",
-  "renewReasonTypical": "{years, plural, one{Bailí go hiondúil ar feadh 1 bhliain} two{Bailí go hiondúil ar feadh {years} bhliain} few{Bailí go hiondúil ar feadh {years} bliana} many{Bailí go hiondúil ar feadh {years} mbliana} other{Bailí go hiondúil ar feadh {years} bliain}}",
+  "renewReasonTypical": "{years, plural, one{Bailí go hiondúil ar feadh {years} bhliain} two{Bailí go hiondúil ar feadh {years} bhliain} few{Bailí go hiondúil ar feadh {years} bliana} many{Bailí go hiondúil ar feadh {years} mbliana} other{Bailí go hiondúil ar feadh {years} bliain}}",
   "renewChangeHint": "Tapáil an dáta chun é a athrú.",
   "renewPickDate": "Roghnaigh an dáta éaga nua",
   "renewPickDateHint": "Roghnaigh an dáta atá ar do dhoiciméad nua.",
@@ -1823,9 +1812,9 @@
   "secHistoryIntro": "Sínithe isteach agus athruithe ar do chuntas le 90 lá anuas.",
   "secHistoryEmpty": "Níl aon rud le taispeáint fós.",
   "secJustNow": "Díreach anois",
-  "secMinutesAgo": "{count, plural, one{1 nóiméad ó shin} two{{count} nóiméad ó shin} few{{count} nóiméad ó shin} many{{count} nóiméad ó shin} other{{count} nóiméad ó shin}}",
-  "secHoursAgo": "{count, plural, one{1 uair an chloig ó shin} two{{count} uair an chloig ó shin} few{{count} huaire an chloig ó shin} many{{count} n-uaire an chloig ó shin} other{{count} uair an chloig ó shin}}",
-  "secDaysAgo": "{count, plural, one{1 lá ó shin} two{{count} lá ó shin} few{{count} lá ó shin} many{{count} lá ó shin} other{{count} lá ó shin}}",
+  "secMinutesAgo": "{count, plural, one{{count} nóiméad ó shin} two{{count} nóiméad ó shin} few{{count} nóiméad ó shin} many{{count} nóiméad ó shin} other{{count} nóiméad ó shin}}",
+  "secHoursAgo": "{count, plural, one{{count} uair an chloig ó shin} two{{count} uair an chloig ó shin} few{{count} huaire an chloig ó shin} many{{count} n-uaire an chloig ó shin} other{{count} uair an chloig ó shin}}",
+  "secDaysAgo": "{count, plural, one{{count} lá ó shin} two{{count} lá ó shin} few{{count} lá ó shin} many{{count} lá ó shin} other{{count} lá ó shin}}",
   "secEventNewSignIn": "Shínigh gléas nua isteach",
   "secEventSignIn": "Sínithe isteach",
   "secEventPasswordChanged": "Athraíodh an pasfhocal",
@@ -2146,8 +2135,8 @@
   "lifePlanAutoChanged": "Chonaic Vaultara gur athraigh an taifead seo, mar sin tá sé marcáilte mar déanta.",
   "lifePlanAutoAdded": "Curtha leis tar éis duit an plean seo a thosú.",
   "lifePlanProgress": "{done} as {total} déanta",
-  "lifePlanDaysToGo": "{count, plural, =1{1 lá fágtha} other{{count} lá fágtha}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 lá ó shin} other{{count} lá ó shin}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} lá fágtha} other{{count} lá fágtha}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} lá ó shin} other{{count} lá ó shin}}",
   "lifePlanAllDone": "Tá gach rud déanta. Is féidir leat an plean a mharcáil mar críochnaithe.",
   "lifePlanFinish": "Marcáil mar críochnaithe",
   "lifePlanReopen": "Oscail arís é",
@@ -2276,7 +2265,7 @@
   "lifePlanReadAloudUnavailable": "Níl léamh os ard ar fáil ar an nguthán seo.",
   "lifePlanProofPack": "Déan paca cruthúnais",
   "lifePlanOpenFamily": "Oscail Teaghlach",
-  "lifePlanRemoved": "{count, plural, =1{Áirítear 1 taifead a scrios tú mar cealaithe.} other{Áirítear {count} taifead a scrios tú mar cealaithe.}}",
+  "lifePlanRemoved": "{count, plural, =1{Áirítear {count} taifead a scrios tú mar cealaithe.} other{Áirítear {count} taifead a scrios tú mar cealaithe.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2873,5 +2862,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "Rachaidh {recordName} in éag inniu",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "Rachaidh {recordName} in éag amárach",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{Rachaidh {recordName} in éag i gceann {days} lá} two{Rachaidh {recordName} in éag i gceann {days} lá} few{Rachaidh {recordName} in éag i gceann {days} lá} many{Rachaidh {recordName} in éag i gceann {days} lá} other{Rachaidh {recordName} in éag i gceann {days} lá}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "Tá {recordName} imithe in éag",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Tá aird ag teastáil ó thaifead faoi ghlas",
+  "remLockedBody": "Is é {date} a dháta. Díghlasáil Vaultara chun a fheiceáil cén taifead atá ann.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Rachaidh do thaifead \"{recordName}\" in éag inniu.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Rachaidh do thaifead \"{recordName}\" in éag amárach.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Rachaidh do thaifead \"{recordName}\" in éag ar {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, rachaidh do thaifead \"{recordName}\" in éag inniu.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, rachaidh do thaifead \"{recordName}\" in éag amárach.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, rachaidh do thaifead \"{recordName}\" in éag ar {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: rachaidh an taifead \"{recordName}\" in éag inniu.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: rachaidh an taifead \"{recordName}\" in éag amárach.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: rachaidh an taifead \"{recordName}\" in éag ar {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Chuaigh do thaifead \"{recordName}\" in éag ar {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: chuaigh an taifead \"{recordName}\" in éag ar {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Athnuaite cheana? Nuashonraigh a dháta.",
+  "remTipTomorrow": "Athnuaigh anois é ionas nach rachaidh sé in éag.",
+  "remTipEarly": "Coinníonn athnuachan luath clúdaithe thú.",
+  "remTipLast": "Seo do mheabhrúchán deireanach sula rachaidh sé in éag.",
+  "remTipExpired": "Athnuaigh é, nó nuashonraigh a dháta má tá sé déanta agat cheana.",
+  "remStartBody": "Tá sé in am tosú ar \"{recordName}\" a athnuachan. Rachaidh sé in éag ar {date}, mar sin má thosaíonn tú anois beidh neart ama agat.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Tá sé in am tosú ar \"{recordName}\" ({person}) a athnuachan. Rachaidh sé in éag ar {date}, mar sin má thosaítear anois beidh neart ama ann.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Meabhrúcháin éaga",
+  "notifChannelDescription": "Meabhrúcháin sula rachaidh do thaifid in éag",
+  "notifTestTitle": "Fógra tástála",
+  "notifTestBody": "Seo mar a thagann meabhrúcháin Vaultara.",
+  "notifTestAction": "Seol fógra tástála",
+  "notifTestSubtitle": "Seiceáil go dtagann meabhrúcháin chuig an bhfón seo",
+  "notifTestSent": "Tástáil seolta. Ba cheart di teacht i gceann cúpla soicind.",
+  "notifAfterExpiryTitle": "Cuir i gcuimhne dom tar éis do thaifead dul in éag",
+  "notifAfterExpirySubtitle": "3 agus 14 lá ina dhiaidh, mura bhfuil sé athnuaite",
+  "notifWeeklyTitle": "Achoimre an Luain",
+  "notifWeeklySubtitle": "Nóta maidin Dé Luain nuair a rachaidh rud éigin in éag an tseachtain sin",
+  "notifPushSection": "Teaghlach agus nuashonruithe",
+  "notifHouseholdTitle": "Taifid roinnte",
+  "notifHouseholdSubtitle": "Nuair atá taifead roinnte ar tí dul in éag agus nár athnuaigh aon duine é",
+  "notifUpdatesTitle": "Nuashonruithe a d'iarr tú",
+  "notifUpdatesSubtitle": "Nuair a sheolann duine sonraí nua taifid",
+  "notifSecurityNote": "Seoltar foláirimh faoi shínithe isteach nua ar do chuntas i gcónaí.",
+  "notifIosHelpTitle": "Gan meabhrúcháin a fháil?",
+  "notifIosHelpSubtitle": "Seiceáil socruithe do iPhone",
+  "notifIosHelpStep1": "Oscail Socruithe, ansin Fógraí, ansin Vaultara, agus cas air Ceadaigh Fógraí.",
+  "notifIosHelpStep2": "Cas air Scáileán Glasála, Lárionad Fógraí agus Meirgí.",
+  "notifIosHelpStep3": "Má úsáideann tú Fócas, cuir Vaultara leis na haipeanna a cheadaíonn sé.",
+  "notifIosHelpStep4": "Oscail Vaultara gach cúpla seachtain. Ní choinníonn iPhone ach líon teoranta meabhrúchán chun cinn, agus pleanálann oscailt na haipe na cinn eile.",
+  "homeNextUpEmpty": "Níl aon rud ag dul in éag go luath. Tá gach rud réidh.",
+  "homeDueSoonChip": "{count, plural, one{{count} dlite laistigh de 30 lá} two{{count} dlite laistigh de 30 lá} few{{count} dlite laistigh de 30 lá} many{{count} dlite laistigh de 30 lá} other{{count} dlite laistigh de 30 lá}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Catagóirí greamaithe"
 }

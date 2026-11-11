@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara допомагає відстежувати важливі дати, щоб нічого не закінчилось непомітно.",
   "homeWelcomeSubtitleFirst": "Раді бачити вас тут. Vaultara допомагає зберігати важливі дати та записи в одному безпечному місці.",
   "homeWelcomeSubtitleBack": "Раді бачити вас знову. Vaultara завжди поруч для перегляду ваших важливих дат.",
-  "summaryAllCaption": "Відстежено у Vaultara",
-  "summaryExpiredTitle": "Прострочені",
-  "summaryExpiredCaption": "Після дати закінчення",
   "editorNotes": "Нотатки",
   "editorReminderNone": "Без нагадування",
   "editorReminderOnExpiry": "У день закінчення терміну",
@@ -185,7 +182,6 @@
   "addRecord": "Додати запис",
   "noRecordsYet": "Записів поки немає.",
   "deleteRecordTitle": "Видалити запис",
-  "summaryAllRecordsTitle": "Усі записи",
   "noGroupFound": "Груп поки немає",
   "groupLabel": "{count, plural, one{{count} група} few{{count} групи} many{{count} груп} other{{count} групи}}",
   "recordsLabel": "{count, plural, one{{count} запис} few{{count} записи} many{{count} записів} other{{count} запису}}",
@@ -454,7 +450,7 @@
   "addNotesHint": "Додати нотатки (необов’язково)",
   "expiryTimelineTitle": "Хронологія закінчення",
   "expiryTimelineSubtitle": "Натисніть місяць, щоб побачити записи, які закінчуються в цьому місяці",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 запис} few{{count} записи} many{{count} записів} other{{count} запису}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} запис} few{{count} записи} many{{count} записів} other{{count} запису}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -462,10 +458,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Майбутні",
-  "summaryUpcomingCaption": "Протягом 30 днів",
-  "summaryUrgentTitle": "Терміново",
-  "summaryUrgentCaption": "Протягом 7 днів",
   "profileHeaderTitle": "Профіль",
   "profileTutorialsTitle": "Посібники",
   "profileTutorialsSubtitle": "Перегляд Посібників Застосунку",
@@ -497,7 +489,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Без нагадування",
   "reminderOnExpiry": "У день закінчення терміну",
-  "reminderDaysBefore": "{days, plural, one{За 1 день} few{За {days} дні} many{За {days} днів} other{За {days} днів}}",
+  "reminderDaysBefore": "{days, plural, one{За {days} день} few{За {days} дні} many{За {days} днів} other{За {days} днів}}",
   "reminderCustomDaysTitle": "Введіть довільні дні",
   "reminderCascadeTitle": "Каскадні нагадування",
   "reminderCascadeSubtitle": "Отримуйте кілька сповіщень до закінчення терміну запису",
@@ -518,7 +510,7 @@
   "smartInsightCloseExpiriesHeading": "Закінчуються приблизно одночасно",
   "smartInsightCloseExpiriesBodyTwo": "Термін дії {a} закінчується {dateA}, а {b} — {dateB}, приблизно в один і той самий час. Легко забути про один, коли два записи так близько.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} та {c} закінчуються до {lastDate}, приблизно в один і той самий час. Легко забути про один, коли кілька записів так близько.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} та ще 1 запис закінчуються до {lastDate}, приблизно в один і той самий час. Легко забути про один, коли кілька записів так близько.} other{{a}, {b} та ще {extra} записів закінчуються до {lastDate}, приблизно в один і той самий час. Легко забути про один, коли кілька записів так близько.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} та ще {extra} запис закінчуються до {lastDate}, приблизно в один і той самий час. Легко забути про один, коли кілька записів так близько.} other{{a}, {b} та ще {extra} записів закінчуються до {lastDate}, приблизно в один і той самий час. Легко забути про один, коли кілька записів так близько.}}",
   "tutorialAudio": "Волієте слухати? Нехай ваші аналітичні дані читаються вголос, і призупиняйте будь-коли.",
   "tutorialAddRecordReminderTour": "Торкніться поля нагадування, щоб побачити, як працюють нагадування.",
   "tutorialAddRecordReminderSolo": "Це поле нагадування, де Vaultara може сповістити вас до закінчення терміну дії запису.",
@@ -532,13 +524,13 @@
   "smartInsightNoRecordsHeading": "Додайте свій перший запис",
   "smartInsightNoRecordsBody": "Почніть відстежувати свої записи, і Vaultara покаже тут розумні підказки.",
   "smartInsightExpiresTodaySingleBody": "Термін дії {name} закінчується сьогодні. Якщо ви вже продовжили його, оновіть дату тут.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} закінчуються сьогодні.} =1{{names} та ще 1 запис закінчуються сьогодні.} other{{names} та ще {extra} записів закінчуються сьогодні.}}",
-  "smartInsightSilentRiskBody": "{days, plural, =1{Термін дії {name} закінчується завтра, а нагадування не встановлено. Налаштуйте його, щоб нічого не пропустити.} other{Термін дії {name} закінчується {date}, а нагадування не встановлено. Налаштуйте його, щоб нічого не пропустити.}}",
-  "smartInsightQuietPeriodBody": "{days, plural, =1{Нічого не закінчується наступного дня. Ваш наступний термін — {date}.} other{Нічого не закінчується в найближчі {days} днів. Ваш наступний термін — {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Термін дії вашого 1 запису в категорії {category} закінчується {date}. Його легко пропустити.} other{Термін дії ваших {count} записів у категорії {category} закінчується до {date}. Легко забути про один, коли вони згруповані таким чином.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 майбутній термін покритий нагадуванням. Більше нічого не вимагає вашої уваги.} other{{count} майбутніх термінів покриті нагадуваннями. Більше нічого не вимагає вашої уваги.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} закінчуються сьогодні.} =1{{names} та ще {extra} запис закінчуються сьогодні.} other{{names} та ще {extra} записів закінчуються сьогодні.}}",
+  "smartInsightSilentRiskBody": "{days, plural, other{Термін дії {name} закінчується {date}, а нагадування не встановлено. Налаштуйте його, щоб нічого не пропустити.}}",
+  "smartInsightQuietPeriodBody": "{days, plural, one{Нічого не закінчується в найближчий {days} день. Ваш наступний термін — {date}.} few{Нічого не закінчується в найближчі {days} дні. Ваш наступний термін — {date}.} many{Нічого не закінчується в найближчі {days} днів. Ваш наступний термін — {date}.} other{Нічого не закінчується в найближчі {days} дня. Ваш наступний термін — {date}.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Термін дії вашого {count} запису в категорії {category} закінчується {date}. Його легко пропустити.} other{Термін дії ваших {count} записів у категорії {category} закінчується до {date}. Легко забути про один, коли вони згруповані таким чином.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} майбутній термін покритий нагадуванням. Більше нічого не вимагає вашої уваги.} other{{count} майбутніх термінів покриті нагадуваннями. Більше нічого не вимагає вашої уваги.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Усе оновлено. Наразі нічого не вимагає вашої уваги.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Зараз немає нічого термінового, але для 1 майбутнього запису ще не встановлено нагадування.} other{Зараз немає нічого термінового, але для {count} майбутніх записів ще не встановлено нагадування.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Зараз немає нічого термінового, але для {count} майбутнього запису ще не встановлено нагадування.} other{Зараз немає нічого термінового, але для {count} майбутніх записів ще не встановлено нагадування.}}",
   "plansHeadline": "Отримайте повну версію Vaultara",
   "plansSubhead": "Безлімітні записи, власні групи та нагадування, налаштовані саме так, як вам потрібно.",
   "planFreeName": "Безкоштовно",
@@ -624,7 +616,7 @@
   "reminderCascadeRemoveStep": "Видалити",
   "reminderCascadeDuplicate": "Інше нагадування вже використовує цей день",
   "reminderCascadeOutOfRange": "Введіть значення від {min} до {max} днів",
-  "reminderCascadeStepLabel": "Нагадування {position}: за {days, plural, =1{1 день} few{{days} дні} many{{days} днів} other{{days} дня}} до кінця",
+  "reminderCascadeStepLabel": "Нагадування {position}: за {days, plural, =1{{days} день} few{{days} дні} many{{days} днів} other{{days} дня}} до кінця",
   "expiryTimelineNotReady": "Часова шкала з'явиться, щойно у вас будуть записи, термін дії яких закінчується в кількох різних місяцях.",
   "verifyEmailResendIn": "Надіслати знову через {seconds} с",
   "verifyEmailSpamHint": "Немає листа? Перевірте папку «Спам» або «Небажана пошта».",
@@ -636,10 +628,7 @@
   "expiringBadge": "{count, plural, one{{count} скоро закінчується} few{{count} скоро закінчуються} many{{count} скоро закінчуються} other{{count} скоро закінчуються}}",
   "noRecordsToday": "Сьогодні нічого не закінчується",
   "noRecordsTomorrow": "Завтра нічого не закінчується",
-  "cascadeStepTitle": "{days, plural, =0{Термін дії «{recordName}» закінчується сьогодні} one{Термін дії «{recordName}» закінчується через {days} день} few{Термін дії «{recordName}» закінчується через {days} дні} other{Термін дії «{recordName}» закінчується через {days} днів}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, термін дії «{recordName}» закінчується сьогодні. Вже продовжили? Оновіть дату закінчення терміну дії.} =1{{firstName}, термін дії «{recordName}» закінчується завтра. Продовжіть його зараз, щоб не втратити чинності.} other{{firstName}, термін дії «{recordName}» закінчується {date}. Завчасне продовження гарантує безперервну чинність.}}",
   "cascadeFinalStepTitle": "Останнє нагадування: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, термін дії «{recordName}» закінчується {days, plural, one{через {days} день, {date}} few{через {days} дні, {date}} other{через {days} днів, {date}}}. Це ваше останнє нагадування, продовжіть його або оновіть дату.",
   "notificationsTitle": "Сповіщення",
   "notificationsProfileEnabledSubtitle": "Нагадування надходять о {time}.",
   "notificationsProfileDisabledSubtitle": "Сповіщення вимкнено.",
@@ -2878,5 +2867,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "Термін дії «{recordName}» закінчується сьогодні",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "Термін дії «{recordName}» закінчується завтра",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{Термін дії «{recordName}» закінчується через {days} день} few{Термін дії «{recordName}» закінчується через {days} дні} many{Термін дії «{recordName}» закінчується через {days} днів} other{Термін дії «{recordName}» закінчується через {days} дня}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "Термін дії «{recordName}» закінчився",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Заблокований запис потребує уваги",
+  "remLockedBody": "Його дата — {date}. Розблокуйте Vaultara, щоб побачити, що це за запис.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Термін дії вашого запису «{recordName}» закінчується сьогодні.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Термін дії вашого запису «{recordName}» закінчується завтра.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Термін дії вашого запису «{recordName}» закінчується {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, термін дії вашого запису «{recordName}» закінчується сьогодні.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, термін дії вашого запису «{recordName}» закінчується завтра.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, термін дії вашого запису «{recordName}» закінчується {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: термін дії запису «{recordName}» закінчується сьогодні.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: термін дії запису «{recordName}» закінчується завтра.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: термін дії запису «{recordName}» закінчується {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Термін дії вашого запису «{recordName}» закінчився {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: термін дії запису «{recordName}» закінчився {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Уже продовжили? Оновіть дату.",
+  "remTipTomorrow": "Продовжте зараз, щоб термін не сплив.",
+  "remTipEarly": "Раннє продовження тримає вас захищеними.",
+  "remTipLast": "Це останнє нагадування до закінчення терміну.",
+  "remTipExpired": "Продовжте або оновіть дату, якщо вже продовжили.",
+  "remStartBody": "Час починати продовжувати «{recordName}». Термін закінчується {date}, тож якщо почати зараз, часу буде достатньо.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Час починати продовжувати запис «{recordName}» ({person}). Термін закінчується {date}, тож якщо почати зараз, часу буде достатньо.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Нагадування про терміни",
+  "notifChannelDescription": "Нагадування до закінчення терміну ваших записів",
+  "notifTestTitle": "Тестове сповіщення",
+  "notifTestBody": "Так виглядають нагадування Vaultara.",
+  "notifTestAction": "Надіслати тестове сповіщення",
+  "notifTestSubtitle": "Перевірте, що нагадування надходять на цей телефон",
+  "notifTestSent": "Тест надіслано. Він надійде за кілька секунд.",
+  "notifAfterExpiryTitle": "Нагадувати після закінчення терміну",
+  "notifAfterExpirySubtitle": "Через 3 і 14 днів, якщо запис не продовжено",
+  "notifWeeklyTitle": "Підсумок у понеділок",
+  "notifWeeklySubtitle": "Повідомлення в понеділок зранку, якщо цього тижня щось закінчується",
+  "notifPushSection": "Родина й оновлення",
+  "notifHouseholdTitle": "Спільні записи",
+  "notifHouseholdSubtitle": "Коли термін спільного запису майже сплив, а ніхто його не продовжив",
+  "notifUpdatesTitle": "Запитані оновлення",
+  "notifUpdatesSubtitle": "Коли хтось надсилає нові дані запису",
+  "notifSecurityNote": "Сповіщення про нові входи у ваш обліковий запис надсилаються завжди.",
+  "notifIosHelpTitle": "Не надходять нагадування?",
+  "notifIosHelpSubtitle": "Перевірте налаштування iPhone",
+  "notifIosHelpStep1": "Відкрийте «Параметри», потім «Сповіщення», потім Vaultara і ввімкніть «Дозволити сповіщення».",
+  "notifIosHelpStep2": "Увімкніть «Замкнений екран», «Центр сповіщень» і «Банери».",
+  "notifIosHelpStep3": "Якщо ви використовуєте режим зосередження, додайте Vaultara до дозволених програм.",
+  "notifIosHelpStep4": "Відкривайте Vaultara раз на кілька тижнів. iPhone зберігає обмежену кількість майбутніх нагадувань, а під час відкриття програма планує наступні.",
+  "homeNextUpEmpty": "Найближчим часом нічого не закінчується. Усе гаразд.",
+  "homeDueSoonChip": "{count, plural, one{{count} закінчується протягом 30 днів} few{{count} закінчуються протягом 30 днів} many{{count} закінчуються протягом 30 днів} other{{count} закінчуються протягом 30 днів}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Закріплені категорії"
 }

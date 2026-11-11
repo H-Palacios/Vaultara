@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Waan ku faraxsanahay inaan ku aragno halkan. Vaultara waxay kaa caawisaa abaabulka taariikhaha iyo diiwaannada muhiimka ah hal meel ammaan ah.",
   "homeWelcomeSubtitleBack": "Waan ku faraxsanahay inaan ku aragno mar kale. Vaultara waa diyaar markaad rabto inaad dib u eegto taariikhahaaga iyo diiwaannadaada muhiimka ah.",
   "homeWelcomeTitle": "Ku soo dhawoow",
-  "summaryAllCaption": "Lagula socdo Vaultara",
-  "summaryExpiredTitle": "Dhacay",
-  "summaryExpiredCaption": "Taariikhda dhacday way dhaaftay",
   "editorNotes": "Qoraallo",
   "editorReminderNone": "Xusuusin ma jirto",
   "editorReminderOnExpiry": "Maalinta uu dhacayo",
@@ -192,7 +189,6 @@
   "addRecord": "Ku dar diiwaan",
   "noRecordsYet": "Weli ma jiraan diiwaanno.",
   "deleteRecordTitle": "Tirtir diiwaan",
-  "summaryAllRecordsTitle": "Dhammaan diiwaannada",
   "noGroupFound": "Kooxo wali ma jiraan",
   "groupLabel": "{count, plural, one{{count} koox} other{{count} kooxo}}",
   "recordsLabel": "{count, plural, one{{count} diiwaan} other{{count} diiwaanno}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Ku dar qoraallo (ikhtiyaari)",
   "expiryTimelineTitle": "Jadwalka dhammaadka",
   "expiryTimelineSubtitle": "Taabo bil si aad u aragto diiwaanada dhamaada bishaas",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 diiwaan} other{{count} diiwaan}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} diiwaan} other{{count} diiwaan}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Soo socda",
-  "summaryUpcomingCaption": "Gudaha 30 maalmood",
-  "summaryUrgentTitle": "Degdeg ah",
-  "summaryUrgentCaption": "Gudaha 7 maalmood",
   "profileHeaderTitle": "Bogga shakhsiga",
   "profileTutorialsTitle": "Casharrada",
   "profileTutorialsSubtitle": "Baar Casharrada Abka",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Xasuusin ma leh",
   "reminderOnExpiry": "Maalinta dhicida",
-  "reminderDaysBefore": "{days, plural, one{1 maalin ka hor} other{{days} maalmood ka hor}}",
+  "reminderDaysBefore": "{days, plural, one{{days} maalin ka hor} other{{days} maalmood ka hor}}",
   "reminderCustomDaysTitle": "Geli maalmo gaar ah",
   "reminderCascadeTitle": "Xasuusinta taxaneed",
   "reminderCascadeSubtitle": "Hel ogeysiisyo badan ka hor inta uusan diiwaanku dhicin",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Ku Dar Diiwaankaaga Koowaad",
   "smartInsightNoRecordsBody": "Billow inaad la socoto diiwaannadaada, Vaultara-na waxay halkan ku tusi doontaa falanqayn caqli gal ah.",
   "smartInsightExpiresTodaySingleBody": "{name} maanta ayay dhacaysaa. Haddii aad mar hore cusboonaysiisay, halkan wax ka beddel taariikhda.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} maanta ayay dhacayaan.} =1{{names} iyo 1 kale ayaa maanta dhacaya.} other{{names} iyo {extra} kale ayaa maanta dhacaya.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} maanta ayay dhacayaan.} =1{{names} iyo {extra} kale ayaa maanta dhacaya.} other{{names} iyo {extra} kale ayaa maanta dhacaya.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} berri ayay dhacaysaa mana laha xusuusin. Deji mid si aadan u seegin.} other{{name} waxay dhacaysaa taariikhda {date} mana laha xusuusin. Deji mid si aadan u seegin.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} waxay dhacaysaa {dateA} halka {b} ay dhacayso {dateB}, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay laba diiwaan sidan isuugu dhow yihiin.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} iyo {c} dhammaantood waxay dhacayaan marka ay taariikhdu tahay {lastDate}, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay dhowr sidan isuugu dhow yihiin.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} iyo 1 diiwaan oo kale ayaa dhacaya marka ay taariikhdu tahay {lastDate}, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay dhowr sidan isuugu dhow yihiin.} other{{a}, {b} iyo {extra} diiwaanno kale ayaa dhacaya marka ay taariikhdu tahay {lastDate}, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay dhowr sidan isuugu dhow yihiin.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} iyo {extra} diiwaan oo kale ayaa dhacaya marka ay taariikhdu tahay {lastDate}, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay dhowr sidan isuugu dhow yihiin.} other{{a}, {b} iyo {extra} diiwaanno kale ayaa dhacaya marka ay taariikhdu tahay {lastDate}, qiyaastii isku waqti. Waa u fududahay inaad mid illoowdo marka ay dhowr sidan isuugu dhow yihiin.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Waxba ma dhacayaan maalinta xigta. Midda xigta waxay ku beegan tahay {date}.} other{Waxba ma dhacayaan {days} maalmood ee soo socda. Midda xigta waxay ku beegan tahay {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 ka mid ah diiwaannadaada {category} ayaa dhacaya taariikhda {date}. Waa u fududahay inaad iska indhotirto.} other{{count} ka mid ah diiwaannadaada {category} ayaa dhacaya marka ay taariikhdu tahay {date}. Waa u fududahay inaad mid illoowdo marka sidan loo wada kooxeeyo.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 dhicitaan oo soo socda waxaa daboolay xusuusin. Wax kale oo u baahan feejignaantaada ma jiraan.} other{{count} dhicitaanno oo soo socda waxaa daboolay xusuusiyeyaal. Wax kale oo u baahan feejignaantaada ma jiraan.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} ka mid ah diiwaannadaada {category} ayaa dhacaya taariikhda {date}. Waa u fududahay inaad iska indhotirto.} other{{count} ka mid ah diiwaannadaada {category} ayaa dhacaya marka ay taariikhdu tahay {date}. Waa u fududahay inaad mid illoowdo marka sidan loo wada kooxeeyo.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} dhicitaan oo soo socda waxaa daboolay xusuusin. Wax kale oo u baahan feejignaantaada ma jiraan.} other{{count} dhicitaanno oo soo socda waxaa daboolay xusuusiyeyaal. Wax kale oo u baahan feejignaantaada ma jiraan.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Wax kasta waa habsami. Hadda ma jiraan wax u baahan feejignaantaada.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Waxba ma degdegsana hadda, laakiin 1 diiwaan oo soo socda ayaan weli lahayn xusuusin.} other{Waxba ma degdegsana hadda, laakiin {count} diiwaanno oo soo socda ayaan weli lahayn xusuusin.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Waxba ma degdegsana hadda, laakiin {count} diiwaan oo soo socda ayaan weli lahayn xusuusin.} other{Waxba ma degdegsana hadda, laakiin {count} diiwaanno oo soo socda ayaan weli lahayn xusuusin.}}",
   "smartInsightCloseExpiriesHeading": "Dhacaya qiyaastii isku waqti",
   "plansHeadline": "Hel Vaultara oo dhammaystiran",
   "plansSubhead": "Diiwaanno aan xadidnayn, kooxahaaga gaarka ah, iyo xusuusiyeyaal loo habeeyey sida aad saxda ah u doonayso.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Ka saar",
   "reminderCascadeDuplicate": "Xusuusin kale ayaa mar hore isticmaaleysa maalintan",
   "reminderCascadeOutOfRange": "Geli inta u dhaxaysa {min} iyo {max} maalmood",
-  "reminderCascadeStepLabel": "Xusuusin {position}: {days, plural, =1{1 maalin} other{{days} maalmood}} ka hor",
+  "reminderCascadeStepLabel": "Xusuusin {position}: {days, plural, =1{{days} maalin} other{{days} maalmood}} ka hor",
   "expiryTimelineNotReady": "Jadwalkaagu wuxuu soo muuqan doonaa marka aad haysato diiwaanno ku dhacaya dhowr bilood oo kala duwan.",
   "verifyEmailResendIn": "Mar kale u dir {seconds} ilbiriqsi gudahood",
   "verifyEmailSpamHint": "Ma aadan helin? Ka hubi galka spam-ka ama qashinka.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Akoonkan lama xaqiijin. Ka bixitaanka hadda wuu tirtiri doonaa, waxaadna mar kale is diiwaangelin kartaa cinwaan kasta oo iimayl ah.",
   "verifyEmailDiscardAction": "Tuur",
   "verifyEmailKeepWaiting": "Sii sug",
-  "expiringBadge": "{count, plural, =1{1 ayaa dhawaan dhacaya} other{{count} ayaa dhawaan dhacaya}}",
+  "expiringBadge": "{count, plural, =1{{count} ayaa dhawaan dhacaya} other{{count} ayaa dhawaan dhacaya}}",
   "noRecordsToday": "Waxba ma dhacayo maanta",
   "noRecordsTomorrow": "Waxba ma dhacayo berri",
-  "cascadeStepTitle": "{days, plural, =0{Diiwaanka {recordName} wuxuu dhacayaa maanta} =1{Diiwaanka {recordName} wuxuu dhacayaa berri} other{Diiwaanka {recordName} wuxuu dhacayaa {days} maalmood kaddib}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, diiwaankaaga {recordName} wuxuu dhacayaa maanta. Miyaad hore u cusboonaysiisay? Wax ka beddel taariikhda dhicitaanka.} =1{{firstName}, diiwaankaaga {recordName} wuxuu dhacayaa berri. Cusboonaysii markiiba si uusan ansaxnimadiisa u lumin.} other{{firstName}, diiwaankaaga {recordName} wuxuu dhacayaa {date}. Cusboonaysiinta waqti hore waxay xaqiijinaysaa ansaxnimo joogto ah.}}",
   "cascadeFinalStepTitle": "Xasuusinta ugu dambaysa: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, diiwaankaaga {recordName} wuxuu dhacayaa {days, plural, =1{berri} other{{days} maalmood kaddib, taariikhda {date}}}. Tani waa xasuusintaada ugu dambaysa, cusboonaysii ama taariikhdiisa wax ka beddel.",
   "notificationsTitle": "Ogeysiisyada",
   "notificationsProfileEnabledSubtitle": "Xusuusinnadu waxay imanayaan saacadda {time}.",
   "notificationsProfileDisabledSubtitle": "Ogeysiisyada waa la damiyay.",
@@ -1349,7 +1338,7 @@
   "photoLockTurnOn": "Shid sawirrada qarsoodiga ah",
   "photoLockStatusOn": "Sawirrada qarsoodiga ah waa shidan yihiin",
   "photoLockStatusOnBody": "Sawirrada cusub waa lagu qarsadaa taleefankan ka hor intaan la soo rarin.",
-  "photoLockPendingTitle": "{count, plural, one{1 sawir wali lama qarsan} other{{count} sawir wali lama qarsan}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} sawir wali lama qarsan} other{{count} sawir wali lama qarsan}}",
   "photoLockPendingBody": "Sawirrada aad ku dartay ka hor intaadan tan shidin weli waxaa lagu keydiyaa habka caadiga ah.",
   "photoLockEncryptExisting": "Qarso sawirradayda jira",
   "photoLockKeepOpen": "Vaultara furan ka dhig ilaa ay dhammaato.",
@@ -1386,7 +1375,7 @@
   "photoLockSetupFailed": "Ma aannu shidi karin sawirrada qarsoodiga ah. Hubi isku xirkaaga oo isku day mar kale.",
   "photoLockAlreadyOn": "Sawirrada qarsoodiga ah horeba waa shidan yihiin akoonkaaga. Geli furaha soo celinta si aad ugu isticmaasho taleefankan.",
   "photoLockEncryptExistingTitle": "Ma qarsaysaa sawirradaada jira?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Waxaad haysataa 1 sawir oo wali aan la qarsan. Hadda ayaan qarsan karnaa.} other{Waxaad haysataa {count} sawir oo wali aan la qarsan. Hadda ayaan qarsan karnaa.}} Vaultara furan ka dhig ilaa ay dhammaato.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Waxaad haysataa {count} sawir oo wali aan la qarsan. Hadda ayaan qarsan karnaa.} other{Waxaad haysataa {count} sawir oo wali aan la qarsan. Hadda ayaan qarsan karnaa.}} Vaultara furan ka dhig ilaa ay dhammaato.",
   "photoLockEncryptNow": "Qarso hadda",
   "photoLockEntryBody": "Geli furaha soo celinta ee aad keydisay markii aad shidday sawirrada qarsoodiga ah. Xarfaha xariijinta iyo meelaha bannaan ikhtiyaar ayay yihiin.",
   "photoLockEntryLabel": "Furaha soo celinta",
@@ -1395,8 +1384,8 @@
   "photoLockUnlocked": "Sawirradaada waa furan yihiin taleefankan.",
   "photoLockInvalidFormat": "Tani uma eka furaha soo celinta. Hubi xaraf kasta oo isku day mar kale.",
   "photoLockWrongKey": "Furahan soo celinta ma habboona. Hubi oo isku day mar kale.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Isku day aad u badan. Fadlan sug 1 ilbiriqsi oo isku day mar kale.} other{Isku day aad u badan. Fadlan sug {seconds} ilbiriqsi oo isku day mar kale.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Isku day aad u badan. Fadlan sug 1 daqiiqo oo isku day mar kale.} other{Isku day aad u badan. Fadlan sug {minutes} daqiiqo oo isku day mar kale.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Isku day aad u badan. Fadlan sug {seconds} ilbiriqsi oo isku day mar kale.} other{Isku day aad u badan. Fadlan sug {seconds} ilbiriqsi oo isku day mar kale.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Isku day aad u badan. Fadlan sug {minutes} daqiiqo oo isku day mar kale.} other{Isku day aad u badan. Fadlan sug {minutes} daqiiqo oo isku day mar kale.}}",
   "photoLockOffline": "Ma aannu gaadhi karin Vaultara. Hubi isku xirkaaga oo isku day mar kale.",
   "photoLockNotSetUp": "Sawirrada qarsoodiga ah ma shidna akoonkaaga.",
   "photoLockUnlockFailed": "Wax qalad ah ayaa dhacay. Isku day mar kale.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "Hel hal ogeysiis waqtiga xasuusinta oo taxaya wax kasta oo maalintaas dhacaya.",
   "dailyDigestTurnedOn": "Xasuusintaada hadda waxay u imaanaysaa hal koobitaan maalinle ah.",
   "dailyDigestTurnedOff": "Xasuusinta gaarka ah ee diiwaan kasta mar kale way shaqaynaysaa.",
-  "dailyDigestTitle": "{count, plural, one{1 diiwaan ayaa u baahan feejignaan} other{{count} diiwaan ayaa u baahan feejignaan}}",
+  "dailyDigestTitle": "{count, plural, one{{count} diiwaan ayaa u baahan feejignaan} other{{count} diiwaan ayaa u baahan feejignaan}}",
   "dailyDigestBody": "Soo socda: {names}.",
   "dailyDigestBodyMore": "Soo socda: {names} iyo {count} kale.",
   "dailyDigestLockedRecord": "diiwaan xiran",
   "renewReasonRepeat": "{months, plural, one{Iyadoo lagu salaynayo dejintaada soo noqnoqoshada, bil kasta} other{Iyadoo lagu salaynayo dejintaada soo noqnoqoshada, {months} bilood kasta}}",
   "renewReasonHistory": "{count, plural, one{Iyadoo lagu salaynayo cusboonaysiintaadii ugu dambaysay} other{Iyadoo lagu salaynayo {count} cusboonaysiin ee ugu dambeeyay}}",
-  "renewReasonTypical": "{years, plural, one{Caadi ahaan wuxuu shaqeeyaa 1 sano} other{Caadi ahaan wuxuu shaqeeyaa {years} sano}}",
+  "renewReasonTypical": "{years, plural, one{Caadi ahaan wuxuu shaqeeyaa {years} sano} other{Caadi ahaan wuxuu shaqeeyaa {years} sano}}",
   "renewChangeHint": "Taabo taariikhda si aad u beddesho.",
   "renewPickDate": "Dooro taariikhda dhicitaanka cusub",
   "renewPickDateHint": "Dooro taariikhda ku taal dukumentigaaga cusub.",
@@ -2134,8 +2123,8 @@
   "lifePlanAutoChanged": "Vaultara waxay aragtay diiwaankan oo isbeddelay, markaa waxaa loo calaamadeeyay la dhammeeyay.",
   "lifePlanAutoAdded": "La daray ka dib markaad bilowday qorshahan.",
   "lifePlanProgress": "{done} ka mid ah {total} ayaa la dhammeeyay",
-  "lifePlanDaysToGo": "{count, plural, =1{1 maalin ayaa harsan} other{{count} maalmood ayaa harsan}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 maalin ka hor} other{{count} maalmood ka hor}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} maalin ayaa harsan} other{{count} maalmood ayaa harsan}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} maalin ka hor} other{{count} maalmood ka hor}}",
   "lifePlanAllDone": "Wax walba waa la dhammeeyay. Waxaad qorshaha u calaamadayn kartaa dhammaaday.",
   "lifePlanFinish": "U calaamadee dhammaaday",
   "lifePlanReopen": "Mar kale fur",
@@ -2264,7 +2253,7 @@
   "lifePlanReadAloudUnavailable": "Kor u akhrintu kuma jirto taleefankan.",
   "lifePlanProofPack": "Samee xirmada caddaynta",
   "lifePlanOpenFamily": "Fur Qoyska",
-  "lifePlanRemoved": "{count, plural, =1{1 diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.} other{{count} diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.} other{{count} diiwaan oo aad tirtirtay waxaa loo tiriyaa in la joojiyay.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2465,7 +2454,7 @@
   "tutorialsGroupTravelFamily": "Safar iyo qoys",
   "tutorialsGroupEmergencies": "Dhacdooyinka nolosha iyo xaaladaha degdega ah",
   "tutorialsGroupPaid": "Astaamo lacag ah",
-  "tutorialsSteps": "{count, plural, =1{1 tallaabo} other{{count} tallaabo}}",
+  "tutorialsSteps": "{count, plural, =1{{count} tallaabo} other{{count} tallaabo}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} wuxuu dhacayaa maanta",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} wuxuu dhacayaa berri",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} wuxuu dhacayaa {days} maalin kadib} other{{recordName} wuxuu dhacayaa {days} maalmood kadib}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} wuu dhacay",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Diiwaan xiran ayaa u baahan dareenkaaga",
+  "remLockedBody": "Taariikhdiisu waa {date}. Fur Vaultara si aad u aragto diiwaanka uu yahay.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Diiwaankaaga \"{recordName}\" wuxuu dhacayaa maanta.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Diiwaankaaga \"{recordName}\" wuxuu dhacayaa berri.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Diiwaankaaga \"{recordName}\" wuxuu dhacayaa {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, diiwaankaaga \"{recordName}\" wuxuu dhacayaa maanta.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, diiwaankaaga \"{recordName}\" wuxuu dhacayaa berri.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, diiwaankaaga \"{recordName}\" wuxuu dhacayaa {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Diiwaanka \"{recordName}\" ee {person} wuxuu dhacayaa maanta.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Diiwaanka \"{recordName}\" ee {person} wuxuu dhacayaa berri.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Diiwaanka \"{recordName}\" ee {person} wuxuu dhacayaa {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Diiwaankaaga \"{recordName}\" wuxuu dhacay {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Diiwaanka \"{recordName}\" ee {person} wuxuu dhacay {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Mar hore ma cusboonaysiisay? Cusboonaysii taariikhdiisa.",
+  "remTipTomorrow": "Hadda cusboonaysii si uusan u dhicin.",
+  "remTipEarly": "Cusboonaysiinta goor hore waxay kuu haysaa ammaan.",
+  "remTipLast": "Kani waa xusuusinta kuugu dambaysa ka hor inta uusan dhicin.",
+  "remTipExpired": "Cusboonaysii, ama cusboonaysii taariikhdiisa haddii aad horeba u samaysay.",
+  "remStartBody": "Waa waqtigii aad bilaabi lahayd cusboonaysiinta \"{recordName}\". Wuxuu dhacayaa {date}, markaa haddii aad hadda bilowdo waqti badan ayaad haysan doontaa.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Waa waqtigii la bilaabi lahaa cusboonaysiinta \"{recordName}\" ee {person}. Wuxuu dhacayaa {date}, markaa bilaabidda hadda waxay reebaysaa waqti badan.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Xusuusinta dhicitaanka",
+  "notifChannelDescription": "Xusuusin ka hor inta diiwaannadaadu aysan dhicin",
+  "notifTestTitle": "Ogeysiis tijaabo ah",
+  "notifTestBody": "Xusuusinta Vaultara sidan ayay u timaadaa.",
+  "notifTestAction": "Dir ogeysiis tijaabo ah",
+  "notifTestSubtitle": "Hubi in xusuusintu gaarto taleefankan",
+  "notifTestSent": "Tijaabada waa la diray. Waa inay timaadaa dhowr ilbiriqsi gudahood.",
+  "notifAfterExpiryTitle": "I xusuusi kadib marka diiwaan dhaco",
+  "notifAfterExpirySubtitle": "3 iyo 14 maalmood kadib, haddii aan la cusboonaysiin",
+  "notifWeeklyTitle": "Soo koobidda Isniinta",
+  "notifWeeklySubtitle": "Fariin subaxa Isniinta marka wax dhacayaan toddobaadkaas",
+  "notifPushSection": "Qoyska iyo cusboonaysiinta",
+  "notifHouseholdTitle": "Diiwaannada la wadaagay",
+  "notifHouseholdSubtitle": "Marka diiwaan la wadaagay uu ku dhow yahay inuu dhaco oo aan cidna cusboonaysiin",
+  "notifUpdatesTitle": "Cusboonaysiinta aad codsatay",
+  "notifUpdatesSubtitle": "Marka qof soo diro faahfaahinta cusub ee diiwaan",
+  "notifSecurityNote": "Digniinaha ku saabsan galitaannada cusub ee akoonkaaga had iyo jeer waa la diraa.",
+  "notifIosHelpTitle": "Ma helaysid xusuusin?",
+  "notifIosHelpSubtitle": "Hubi dejinta iPhone-kaaga",
+  "notifIosHelpStep1": "Fur Settings, kadib Notifications, kadib Vaultara, oo daar Allow Notifications.",
+  "notifIosHelpStep2": "Daar Lock Screen, Notification Centre iyo Banners.",
+  "notifIosHelpStep3": "Haddii aad isticmaasho Focus, ku dar Vaultara barnaamijyada uu oggol yahay.",
+  "notifIosHelpStep4": "Fur Vaultara dhowr toddobaad kasta. iPhone wuxuu kaydiyaa tiro xaddidan oo xusuusin ah oo horay u socota, furitaanka barnaamijkuna wuxuu qorsheeyaa kuwa xiga.",
+  "homeNextUpEmpty": "Waxba dhowaan ma dhacayaan. Wax walba waa diyaar.",
+  "homeDueSoonChip": "{count, plural, one{{count} ayaa ku eg 30 maalmood gudahood} other{{count} ayaa ku eg 30 maalmood gudahood}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Qaybaha la dhejiyay"
 }

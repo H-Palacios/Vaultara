@@ -360,15 +360,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'ดีใจที่ได้พบคุณอีกครั้ง Vaultara พร้อมช่วยคุณตรวจสอบวันสำคัญและเอกสารเสมอ';
 
   @override
-  String get summaryAllCaption => 'ติดตามใน Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'หมดอายุแล้ว';
-
-  @override
-  String get summaryExpiredCaption => 'เลยวันหมดอายุ';
-
-  @override
   String get editorNotes => 'บันทึก';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'ลบรายการ';
-
-  @override
-  String get summaryAllRecordsTitle => 'รายการทั้งหมด';
 
   @override
   String get noGroupFound => 'ยังไม่มีกลุ่ม';
@@ -829,18 +817,6 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get summaryUpcomingTitle => 'กำลังจะมาถึง';
-
-  @override
-  String get summaryUpcomingCaption => 'ภายใน 30 วัน';
-
-  @override
-  String get summaryUrgentTitle => 'ด่วน';
-
-  @override
-  String get summaryUrgentCaption => 'ภายใน 7 วัน';
-
-  @override
   String get profileHeaderTitle => 'โปรไฟล์';
 
   @override
@@ -1041,7 +1017,7 @@ class AppLocalizationsTh extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names และอีก $extra รายการหมดอายุวันนี้',
-      one: '$names และอีก 1 รายการหมดอายุวันนี้',
+      one: '$names และอีก $extra รายการหมดอายุวันนี้',
       zero: '$names หมดอายุวันนี้',
     );
     return '$_temp0';
@@ -1074,7 +1050,7 @@ class AppLocalizationsTh extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b และอีก $extra รายการจะหมดอายุภายในวันที่ $lastDate ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีหลายรายการใกล้กันขนาดนี้',
-      one: '$a, $b และอีก 1 รายการจะหมดอายุภายในวันที่ $lastDate ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีหลายรายการใกล้กันขนาดนี้',
+      one: '$a, $b และอีก $extra รายการจะหมดอายุภายในวันที่ $lastDate ซึ่งเป็นช่วงเวลาใกล้เคียงกัน อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อมีหลายรายการใกล้กันขนาดนี้',
     );
     return '$_temp0';
   }
@@ -1096,7 +1072,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: 'รายการในหมวดหมู่ $category จำนวน $count รายการของคุณจะหมดอายุภายในวันที่ $date อาจทำให้ลืมรายการใดรายการหนึ่งได้ง่ายเมื่อรวมกลุ่มกันแบบนี้',
-      one: 'รายการในหมวดหมู่ $category จำนวน 1 รายการของคุณจะหมดอายุวันที่ $date ซึ่งอาจถูกมองข้ามได้ง่าย',
+      one: 'รายการในหมวดหมู่ $category จำนวน $count รายการของคุณจะหมดอายุวันที่ $date ซึ่งอาจถูกมองข้ามได้ง่าย',
     );
     return '$_temp0';
   }
@@ -1107,7 +1083,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: 'การหมดอายุที่จะเกิดขึ้น $count รายการ มีการตั้งแจ้งเตือนไว้แล้ว ไม่มีรายการอื่นที่ต้องดูแลเพิ่มเติม',
-      one: 'การหมดอายุที่จะเกิดขึ้น 1 รายการ มีการตั้งแจ้งเตือนไว้แล้ว ไม่มีรายการอื่นที่ต้องดูแลเพิ่มเติม',
+      one: 'การหมดอายุที่จะเกิดขึ้น $count รายการ มีการตั้งแจ้งเตือนไว้แล้ว ไม่มีรายการอื่นที่ต้องดูแลเพิ่มเติม',
     );
     return '$_temp0';
   }
@@ -1121,7 +1097,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ขณะนี้ไม่มีรายการเร่งด่วน แต่มี $count รายการที่กำลังจะเกิดขึ้นซึ่งยังไม่ได้ตั้งการแจ้งเตือน',
-      one: 'ขณะนี้ไม่มีรายการเร่งด่วน แต่มี 1 รายการที่กำลังจะเกิดขึ้นซึ่งยังไม่ได้ตั้งการแจ้งเตือน',
+      one: 'ขณะนี้ไม่มีรายการเร่งด่วน แต่มี $count รายการที่กำลังจะเกิดขึ้นซึ่งยังไม่ได้ตั้งการแจ้งเตือน',
     );
     return '$_temp0';
   }
@@ -1276,7 +1252,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count รายการกำลังจะหมดอายุ',
-      one: '1 รายการกำลังจะหมดอายุ',
+      one: '$count รายการกำลังจะหมดอายุ',
     );
     return '$_temp0';
   }
@@ -1288,43 +1264,8 @@ class AppLocalizationsTh extends AppLocalizations {
   String get noRecordsTomorrow => 'ไม่มีรายการหมดอายุในพรุ่งนี้';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName จะหมดอายุในอีก $days วัน',
-      one: '$recordName หมดอายุพรุ่งนี้',
-      zero: '$recordName หมดอายุวันนี้',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName $recordName ของคุณจะหมดอายุในวันที่ $date การต่ออายุล่วงหน้าช่วยให้มีผลใช้ได้อย่างต่อเนื่อง',
-      one: '$firstName $recordName ของคุณหมดอายุพรุ่งนี้ ต่ออายุทันทีเพื่อไม่ให้ขาดต่อ',
-      zero: '$firstName $recordName ของคุณหมดอายุวันนี้ ต่ออายุแล้วหรือยัง อัปเดตวันหมดอายุ',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'การแจ้งเตือนครั้งสุดท้าย: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'ในอีก $days วัน วันที่ $date',
-      one: 'พรุ่งนี้',
-    );
-    return '$firstName $recordName ของคุณจะหมดอายุ $_temp0 นี่คือการแจ้งเตือนครั้งสุดท้ายของคุณ โปรดต่ออายุหรืออัปเดตวันที่';
   }
 
   @override
@@ -1519,7 +1460,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: 'มี $count รายการที่กำลังจะถึงซึ่งยังไม่มีค่าใช้จ่าย',
-      one: 'มี 1 รายการที่กำลังจะถึงซึ่งยังไม่มีค่าใช้จ่าย',
+      one: 'มี $count รายการที่กำลังจะถึงซึ่งยังไม่มีค่าใช้จ่าย',
     );
     return '$_temp0';
   }
@@ -1553,7 +1494,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count รายการ',
-      one: '1 รายการ',
+      one: '$count รายการ',
       zero: 'ไม่มีรายการ',
     );
     return '$_temp0';
@@ -1609,7 +1550,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: 'สูงสุด $count คน',
-      one: 'สูงสุด 1 คน',
+      one: 'สูงสุด $count คน',
     );
     return '$_temp0';
   }
@@ -1626,7 +1567,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: 'เพิ่มได้สูงสุด $count คน',
-      one: 'เพิ่มได้ 1 คน',
+      one: 'เพิ่มได้ $count คน',
     );
     return '$_temp0';
   }
@@ -2210,7 +2151,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count รายการ',
-      one: '1 รายการ',
+      one: '$count รายการ',
     );
     return '$_temp0';
   }
@@ -2241,7 +2182,7 @@ class AppLocalizationsTh extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ทริป $days วัน',
-      one: 'ทริป 1 วัน',
+      one: 'ทริป $days วัน',
     );
     return '$_temp0';
   }
@@ -2314,7 +2255,7 @@ class AppLocalizationsTh extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months เดือน',
-      one: '1 เดือน',
+      one: '$months เดือน',
     );
     return '$name หมดอายุ $date หลายประเทศต้องการให้เหลืออายุ $_temp0 หลังคุณกลับ';
   }
@@ -2330,7 +2271,7 @@ class AppLocalizationsTh extends AppLocalizations {
       days,
       locale: localeName,
       other: 'หลังออกเดินทาง $days วัน',
-      one: 'หลังออกเดินทาง 1 วัน',
+      one: 'หลังออกเดินทาง $days วัน',
       zero: 'ในวันที่คุณออกเดินทาง',
     );
     return '$name หมดอายุ $date $_temp0';
@@ -2508,7 +2449,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: 'มี $count เรื่องที่ต้องดูแล',
-      one: 'มี 1 เรื่องที่ต้องดูแล',
+      one: 'มี $count เรื่องที่ต้องดูแล',
     );
     return '$_temp0';
   }
@@ -2589,7 +2530,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: 'มีเอกสาร $count ฉบับที่ต้องดูแลก่อนออกเดินทาง',
-      one: 'มีเอกสาร 1 ฉบับที่ต้องดูแลก่อนออกเดินทาง',
+      one: 'มีเอกสาร $count ฉบับที่ต้องดูแลก่อนออกเดินทาง',
     );
     return '$_temp0';
   }
@@ -2692,7 +2633,7 @@ class AppLocalizationsTh extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit รูป',
-      one: '1 รูป',
+      one: '$limit รูป',
     );
     return 'แผนบริการฟรีให้คุณเพิ่มได้ $_temp0 ต่อรายการ ด้วย Premium คุณเพิ่มได้สูงสุด $premiumLimit รูป';
   }
@@ -2728,7 +2669,7 @@ class AppLocalizationsTh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count รูป',
-      one: '1 รูป',
+      one: '$count รูป',
     );
     return '$_temp0';
   }
@@ -8206,4 +8147,202 @@ class AppLocalizationsTh extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'การเตือน: $name หมดอายุวันที่ $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName หมดอายุวันนี้';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName หมดอายุพรุ่งนี้';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName จะหมดอายุในอีก $days วัน',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName หมดอายุแล้ว';
+  }
+
+  @override
+  String get remLockedTitle => 'รายการที่ล็อกต้องการความสนใจจากคุณ';
+
+  @override
+  String remLockedBody(String date) {
+    return 'วันที่ของรายการคือ $date ปลดล็อก Vaultara เพื่อดูว่าเป็นรายการใด';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'รายการ \"$recordName\" ของคุณหมดอายุวันนี้';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'รายการ \"$recordName\" ของคุณหมดอายุพรุ่งนี้';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'รายการ \"$recordName\" ของคุณจะหมดอายุในวันที่ $date';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName รายการ \"$recordName\" ของคุณหมดอายุวันนี้';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName รายการ \"$recordName\" ของคุณหมดอายุพรุ่งนี้';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName รายการ \"$recordName\" ของคุณจะหมดอายุในวันที่ $date';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: รายการ \"$recordName\" หมดอายุวันนี้';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: รายการ \"$recordName\" หมดอายุพรุ่งนี้';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: รายการ \"$recordName\" จะหมดอายุในวันที่ $date';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'รายการ \"$recordName\" ของคุณหมดอายุเมื่อวันที่ $date';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: รายการ \"$recordName\" หมดอายุเมื่อวันที่ $date';
+  }
+
+  @override
+  String get remTipToday => 'ต่ออายุแล้วหรือยัง อัปเดตวันที่ได้เลย';
+
+  @override
+  String get remTipTomorrow => 'ต่ออายุตอนนี้เพื่อไม่ให้หมดอายุ';
+
+  @override
+  String get remTipEarly => 'การต่ออายุแต่เนิ่นๆ ช่วยให้คุณไม่ขาดความคุ้มครอง';
+
+  @override
+  String get remTipLast => 'นี่คือการแจ้งเตือนครั้งสุดท้ายก่อนหมดอายุ';
+
+  @override
+  String get remTipExpired => 'ต่ออายุ หรืออัปเดตวันที่หากคุณทำแล้ว';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'ถึงเวลาเริ่มต่ออายุ \"$recordName\" แล้ว จะหมดอายุในวันที่ $date ถ้าเริ่มตอนนี้คุณจะมีเวลาเหลือเฟือ';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'ถึงเวลาเริ่มต่ออายุ \"$recordName\" ($person) แล้ว จะหมดอายุในวันที่ $date ถ้าเริ่มตอนนี้จะมีเวลาเหลือเฟือ';
+  }
+
+  @override
+  String get notifChannelName => 'การแจ้งเตือนวันหมดอายุ';
+
+  @override
+  String get notifChannelDescription => 'การแจ้งเตือนก่อนรายการของคุณหมดอายุ';
+
+  @override
+  String get notifTestTitle => 'การแจ้งเตือนทดสอบ';
+
+  @override
+  String get notifTestBody => 'การแจ้งเตือนจาก Vaultara จะมาแบบนี้';
+
+  @override
+  String get notifTestAction => 'ส่งการแจ้งเตือนทดสอบ';
+
+  @override
+  String get notifTestSubtitle => 'ตรวจสอบว่าการแจ้งเตือนมาถึงโทรศัพท์เครื่องนี้';
+
+  @override
+  String get notifTestSent => 'ส่งการทดสอบแล้ว ควรมาถึงภายในไม่กี่วินาที';
+
+  @override
+  String get notifAfterExpiryTitle => 'เตือนฉันหลังรายการหมดอายุ';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 และ 14 วันหลังจากนั้น หากยังไม่ได้ต่ออายุ';
+
+  @override
+  String get notifWeeklyTitle => 'สรุปวันจันทร์';
+
+  @override
+  String get notifWeeklySubtitle => 'ข้อความเช้าวันจันทร์เมื่อมีบางอย่างหมดอายุในสัปดาห์นั้น';
+
+  @override
+  String get notifPushSection => 'ครัวเรือนและการอัปเดต';
+
+  @override
+  String get notifHouseholdTitle => 'รายการที่แชร์';
+
+  @override
+  String get notifHouseholdSubtitle => 'เมื่อรายการที่แชร์ใกล้หมดอายุและยังไม่มีใครต่ออายุ';
+
+  @override
+  String get notifUpdatesTitle => 'การอัปเดตที่คุณขอ';
+
+  @override
+  String get notifUpdatesSubtitle => 'เมื่อมีคนส่งรายละเอียดใหม่ของรายการ';
+
+  @override
+  String get notifSecurityNote => 'การแจ้งเตือนการลงชื่อเข้าใช้ใหม่ในบัญชีของคุณจะถูกส่งเสมอ';
+
+  @override
+  String get notifIosHelpTitle => 'ไม่ได้รับการแจ้งเตือนใช่ไหม';
+
+  @override
+  String get notifIosHelpSubtitle => 'ตรวจสอบการตั้งค่า iPhone ของคุณ';
+
+  @override
+  String get notifIosHelpStep1 => 'เปิดการตั้งค่า แล้วเลือกการแจ้งเตือน แล้วเลือก Vaultara และเปิดอนุญาตการแจ้งเตือน';
+
+  @override
+  String get notifIosHelpStep2 => 'เปิดหน้าจอล็อก ศูนย์การแจ้งเตือน และแบนเนอร์';
+
+  @override
+  String get notifIosHelpStep3 => 'หากคุณใช้โฟกัส ให้เพิ่ม Vaultara ในแอปที่อนุญาต';
+
+  @override
+  String get notifIosHelpStep4 => 'เปิด Vaultara ทุกๆ สองสามสัปดาห์ iPhone เก็บการแจ้งเตือนล่วงหน้าได้จำนวนจำกัด และการเปิดแอปจะตั้งเวลาการแจ้งเตือนถัดไป';
+
+  @override
+  String get homeNextUpEmpty => 'ไม่มีอะไรจะหมดอายุเร็วๆ นี้ ทุกอย่างเรียบร้อย';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count รายการครบกำหนดใน 30 วัน',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'หมวดหมู่ที่ปักหมุด';
 }

@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara нь чухал хугацааг хянахад тань тусалж, юу ч анзааралгүй дуусахгүй байхад дэмжинэ.",
   "homeWelcomeSubtitleFirst": "Таныг энд байгаад баяртай байна. Vaultara чухал огноо, бүртгэлийг нэг аюулгүй газар хадгална.",
   "homeWelcomeSubtitleBack": "Таныг дахин харах сайхан байна. Vaultara таны чухал мэдээлэлд үргэлж бэлэн.",
-  "summaryAllCaption": "Vaultara-д хянагдсан",
-  "summaryExpiredTitle": "Дууссан",
-  "summaryExpiredCaption": "Хугацаа хэтэрсэн",
   "editorNotes": "Тэмдэглэл",
   "editorReminderNone": "Сануулахгүй",
   "editorReminderOnExpiry": "Хугацаа дуусах өдөр",
@@ -192,7 +189,6 @@
   "addRecord": "Бичлэг нэмэх",
   "noRecordsYet": "Одоогоор бичлэг алга.",
   "deleteRecordTitle": "Бичлэг устгах",
-  "summaryAllRecordsTitle": "Бүх бичлэг",
   "noGroupFound": "Одоогоор бүлэг алга",
   "groupLabel": "{count, plural, one{{count} бүлэг} other{{count} бүлэг}}",
   "recordsLabel": "{count, plural, one{{count} бичлэг} other{{count} бичлэг}}",
@@ -455,7 +451,7 @@
   "addNotesHint": "Тэмдэглэл нэмэх (заавал биш)",
   "expiryTimelineTitle": "Дуусах хугацааны шугам",
   "expiryTimelineSubtitle": "Тухайн сард дуусах бичлэгүүдийг харахын тулд сар дээр товшино уу",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 бичлэг} other{{count} бичлэг}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} бичлэг} other{{count} бичлэг}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Удахгүй болох",
-  "summaryUpcomingCaption": "30 хоногийн дотор",
-  "summaryUrgentTitle": "Яаралтай",
-  "summaryUrgentCaption": "7 хоногийн дотор",
   "profileHeaderTitle": "Профайл",
   "profileTutorialsTitle": "Хичээлүүд",
   "profileTutorialsSubtitle": "Апп Хичээлүүдийг Үзэх",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "Эхний бичлэгээ нэмнэ үү",
   "smartInsightNoRecordsBody": "Бичлэгээ хөтөлж эхэлснээр Vaultara ухаалаг мэдээллийг энд харуулах болно.",
   "smartInsightExpiresTodaySingleBody": "{name}-ийн хугацаа өнөөдөр дуусна. Хэрэв та аль хэдийн сунгасан бол огноог энд шинэчилнэ үү.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} өнөөдөр дуусна.} =1{{names} болон дахин 1 бичлэг өнөөдөр дуусна.} other{{names} болон дахин {extra} бичлэг өнөөдөр дуусна.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} өнөөдөр дуусна.} =1{{names} болон дахин {extra} бичлэг өнөөдөр дуусна.} other{{names} болон дахин {extra} бичлэг өнөөдөр дуусна.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} маргааш дуусах бөгөөд сануулга тохируулаагүй байна. Мартахгүйн тулд сануулга тохируулна уу.} other{{name} {date}-нд дуусах бөгөөд сануулга тохируулаагүй байна. Мартахгүйн тулд сануулга тохируулна уу.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} нь {dateA}-нд, харин {b} нь {dateB}-нд буюу бараг ижил хугацаанд дуусна. Хоёр бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} болон {c} бүгд {lastDate} гэхэд буюу бараг ижил хугацаанд дуусна. Хэд хэдэн бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} болон дахин 1 бичлэг {lastDate} гэхэд буюу бараг ижил хугацаанд дуусна. Хэд хэдэн бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.} other{{a}, {b} болон дахин {extra} бичлэг {lastDate} гэхэд буюу бараг ижил хугацаанд дуусна. Хэд хэдэн бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} болон дахин {extra} бичлэг {lastDate} гэхэд буюу бараг ижил хугацаанд дуусна. Хэд хэдэн бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.} other{{a}, {b} болон дахин {extra} бичлэг {lastDate} гэхэд буюу бараг ижил хугацаанд дуусна. Хэд хэдэн бичлэг ийм ойрхон байхад нэгийг нь мартах амархан байдаг.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Дараагийн өдөр хугацаа нь дуусах зүйл алга. Таны дараагийн эцсийн хугацаа {date} байна.} other{Ойрын {days} хоногт хугацаа нь дуусах зүйл алга. Таны дараагийн эцсийн хугацаа {date} байна.}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} ангилал дахь таны 1 бичлэг {date}-нд дуусна. Үүнийг анзааралгүй өнгөрөөх амархан.} other{{category} ангилал дахь таны {count} бичлэг {date} гэхэд дуусна. Эдгээрийг ингэж багцалсан үед нэгийг нь мартах амархан байдаг.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Удахгүй хугацаа нь дуусах 1 зүйлд сануулга тохируулсан байна. Таны анхаарал хандуулах өөр зүйл алга.} other{Удахгүй хугацаа нь дуусах {count} зүйлд сануулга тохируулсан байна. Таны анхаарал хандуулах өөр зүйл алга.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} ангилал дахь таны {count} бичлэг {date}-нд дуусна. Үүнийг анзааралгүй өнгөрөөх амархан.} other{{category} ангилал дахь таны {count} бичлэг {date} гэхэд дуусна. Эдгээрийг ингэж багцалсан үед нэгийг нь мартах амархан байдаг.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Удахгүй хугацаа нь дуусах {count} зүйлд сануулга тохируулсан байна. Таны анхаарал хандуулах өөр зүйл алга.} other{Удахгүй хугацаа нь дуусах {count} зүйлд сануулга тохируулсан байна. Таны анхаарал хандуулах өөр зүйл алга.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Бүх зүйл шинэчлэгдсэн байна. Одоогоор таны анхаарал хандуулах зүйл алга.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Одоогоор яаралтай зүйл байхгүй ч удахгүй хугацаа нь дуусах 1 бичлэгт сануулга хараахан тохируулаагүй байна.} other{Одоогоор яаралтай зүйл байхгүй ч удахгүй хугацаа нь дуусах {count} бичлэгт сануулга хараахан тохируулаагүй байна.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Одоогоор яаралтай зүйл байхгүй ч удахгүй хугацаа нь дуусах {count} бичлэгт сануулга хараахан тохируулаагүй байна.} other{Одоогоор яаралтай зүйл байхгүй ч удахгүй хугацаа нь дуусах {count} бичлэгт сануулга хараахан тохируулаагүй байна.}}",
   "smartInsightCloseExpiriesHeading": "Бараг ижил хугацаанд дуусна",
   "plansHeadline": "Vaultara-г бүрэн эхээр нь аваарай",
   "plansSubhead": "Хязгааргүй бичлэг, өөрийн гэсэн бүлгүүд, таны хүссэнээр нарийн тохируулсан сануулгууд.",
@@ -625,7 +617,7 @@
   "reminderCascadeRemoveStep": "Устгах",
   "reminderCascadeDuplicate": "Өөр нэг сануулга энэ өдрийг ашигласан байна",
   "reminderCascadeOutOfRange": "{min}-ээс {max} хоногийн хооронд оруулна уу",
-  "reminderCascadeStepLabel": "Сануулга {position}: {days, plural, =1{1 өдрийн} other{{days} өдрийн}} өмнө",
+  "reminderCascadeStepLabel": "Сануулга {position}: {days, plural, =1{{days} өдрийн} other{{days} өдрийн}} өмнө",
   "expiryTimelineNotReady": "Хэд хэдэн өөр саруудад хугацаа нь дуусах бичлэгүүд байх үед таны цагийн шугам гарч ирнэ.",
   "verifyEmailResendIn": "{seconds} сек-ийн дараа дахин илгээх",
   "verifyEmailSpamHint": "Ирээгүй байна уу? Спам эсвэл хог хаягдлын хавтасаа шалгана уу.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "Энэ бүртгэл баталгаажаагүй байна. Одоо гарвал бүртгэл устах бөгөөд та дурын имэйл хаягаар дахин бүртгүүлэх боломжтой.",
   "verifyEmailDiscardAction": "Устгах",
   "verifyEmailKeepWaiting": "Үргэлжлүүлэн хүлээх",
-  "expiringBadge": "{count, plural, =1{1 хугацаа дуусах гэж байна} other{{count} хугацаа дуусах гэж байна}}",
+  "expiringBadge": "{count, plural, =1{{count} хугацаа дуусах гэж байна} other{{count} хугацаа дуусах гэж байна}}",
   "noRecordsToday": "Өнөөдөр юу ч дуусахгүй",
   "noRecordsTomorrow": "Маргааш юу ч дуусахгүй",
-  "cascadeStepTitle": "{days, plural, =0{{recordName}-ийн хугацаа өнөөдөр дуусна} =1{{recordName}-ийн хугацаа маргааш дуусна} other{{recordName}-ийн хугацаа {days} өдрийн дараа дуусна}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, таны {recordName}-ийн хугацаа өнөөдөр дуусч байна. Та үүнийг сунгасан уу? Дуусах огноог шинэчилнэ үү.} =1{{firstName}, таны {recordName}-ийн хугацаа маргааш дуусч байна. Хугацаа нь дуусахаас өмнө одоо сунгана уу.} other{{firstName}, таны {recordName}-ийн хугацаа {date} өдөр дуусна. Эрт сунгах нь таны үйлчилгээг тасалдуулахгүй байлгана.}}",
   "cascadeFinalStepTitle": "Сүүлчийн сануулга: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, таны {recordName}-ийн хугацаа {days, plural, =1{маргааш} other{{days} өдрийн дараа, {date}-нд}} дуусна. Энэ бол таны сүүлчийн сануулга тул сунгах эсвэл огноог нь шинэчилнэ үү.",
   "notificationsTitle": "Мэдэгдэл",
   "notificationsProfileEnabledSubtitle": "Сануулга {time} цагт ирнэ.",
   "notificationsProfileDisabledSubtitle": "Мэдэгдлийг унтраасан байна.",
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName}-ийн хугацаа өнөөдөр дуусна",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName}-ийн хугацаа маргааш дуусна",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName}-ийн хугацаа {days} хоногийн дараа дуусна} other{{recordName}-ийн хугацаа {days} хоногийн дараа дуусна}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName}-ийн хугацаа дууссан",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Түгжигдсэн бичлэг таны анхаарлыг шаардаж байна",
+  "remLockedBody": "Түүний огноо {date}. Аль бичлэг болохыг харахын тулд Vaultara-гийн түгжээг тайлна уу.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Таны \"{recordName}\" бичлэгийн хугацаа өнөөдөр дуусна.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Таны \"{recordName}\" бичлэгийн хугацаа маргааш дуусна.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Таны \"{recordName}\" бичлэгийн хугацаа {date}-нд дуусна.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, таны \"{recordName}\" бичлэгийн хугацаа өнөөдөр дуусна.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, таны \"{recordName}\" бичлэгийн хугацаа маргааш дуусна.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, таны \"{recordName}\" бичлэгийн хугацаа {date}-нд дуусна.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: \"{recordName}\" бичлэгийн хугацаа өнөөдөр дуусна.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: \"{recordName}\" бичлэгийн хугацаа маргааш дуусна.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: \"{recordName}\" бичлэгийн хугацаа {date}-нд дуусна.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Таны \"{recordName}\" бичлэгийн хугацаа {date}-нд дууссан.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: \"{recordName}\" бичлэгийн хугацаа {date}-нд дууссан.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Аль хэдийн сунгасан уу? Огноог нь шинэчилнэ үү.",
+  "remTipTomorrow": "Хугацаа нь дуусахгүйн тулд одоо сунгана уу.",
+  "remTipEarly": "Эрт сунгах нь таныг хамгаалалттай байлгана.",
+  "remTipLast": "Энэ бол хугацаа дуусахаас өмнөх сүүлийн сануулга.",
+  "remTipExpired": "Сунгана уу, эсвэл аль хэдийн сунгасан бол огноог нь шинэчилнэ үү.",
+  "remStartBody": "\"{recordName}\"-ийг сунгаж эхлэх цаг боллоо. Хугацаа нь {date}-нд дуусах тул одоо эхэлбэл танд хангалттай хугацаа байна.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person})-ийг сунгаж эхлэх цаг боллоо. Хугацаа нь {date}-нд дуусах тул одоо эхэлбэл хангалттай хугацаа байна.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Хугацааны сануулга",
+  "notifChannelDescription": "Таны бичлэгүүдийн хугацаа дуусахаас өмнөх сануулга",
+  "notifTestTitle": "Туршилтын мэдэгдэл",
+  "notifTestBody": "Vaultara-гийн сануулга ингэж ирнэ.",
+  "notifTestAction": "Туршилтын мэдэгдэл илгээх",
+  "notifTestSubtitle": "Сануулга энэ утсанд ирж байгааг шалгана уу",
+  "notifTestSent": "Туршилт илгээгдлээ. Хэдхэн секундэд ирэх ёстой.",
+  "notifAfterExpiryTitle": "Бичлэгийн хугацаа дууссаны дараа сануулах",
+  "notifAfterExpirySubtitle": "3 ба 14 хоногийн дараа, хэрэв сунгаагүй бол",
+  "notifWeeklyTitle": "Даваа гарагийн тойм",
+  "notifWeeklySubtitle": "Тэр долоо хоногт ямар нэг зүйлийн хугацаа дуусах бол даваа гарагийн өглөө мэдэгдэл",
+  "notifPushSection": "Гэр бүл ба шинэчлэлүүд",
+  "notifHouseholdTitle": "Хуваалцсан бичлэгүүд",
+  "notifHouseholdSubtitle": "Хуваалцсан бичлэгийн хугацаа дуусах дөхөж, хэн ч сунгаагүй үед",
+  "notifUpdatesTitle": "Таны хүссэн шинэчлэлүүд",
+  "notifUpdatesSubtitle": "Хэн нэгэн бичлэгийн шинэ мэдээллийг илгээх үед",
+  "notifSecurityNote": "Таны бүртгэлд шинээр нэвтэрсэн тухай сэрэмжлүүлэг үргэлж илгээгдэнэ.",
+  "notifIosHelpTitle": "Сануулга ирэхгүй байна уу?",
+  "notifIosHelpSubtitle": "iPhone-ийн тохиргоогоо шалгана уу",
+  "notifIosHelpStep1": "Тохиргоо, дараа нь Мэдэгдэл, дараа нь Vaultara-г нээж, Мэдэгдлийг зөвшөөрөхийг асаана уу.",
+  "notifIosHelpStep2": "Түгжээний дэлгэц, Мэдэгдлийн төв болон Баннеруудыг асаана уу.",
+  "notifIosHelpStep3": "Хэрэв Фокус ашигладаг бол Vaultara-г зөвшөөрөгдсөн аппуудад нэмнэ үү.",
+  "notifIosHelpStep4": "Vaultara-г хэдэн долоо хоног тутам нээгээрэй. iPhone урьдчилан цөөн тооны сануулга л хадгалдаг бөгөөд аппыг нээхэд дараагийнх нь төлөвлөгдөнө.",
+  "homeNextUpEmpty": "Ойрын хугацаанд юу ч дуусахгүй. Бүх зүйл бэлэн.",
+  "homeDueSoonChip": "{count, plural, one{30 хоногт {count} дуусна} other{30 хоногт {count} дуусна}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Бэхэлсэн ангиллууд"
 }

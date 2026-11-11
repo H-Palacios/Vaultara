@@ -360,15 +360,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Hea meel sind jälle näha. Vaultara on siin, kui soovid oma olulisi kuupäevi ja kirjeid üle vaadata.';
 
   @override
-  String get summaryAllCaption => 'Jälgitud Vaultaras';
-
-  @override
-  String get summaryExpiredTitle => 'Aegunud';
-
-  @override
-  String get summaryExpiredCaption => 'Aegumiskuupäev möödas';
-
-  @override
   String get editorNotes => 'Märkmed';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Kustuta kirje';
-
-  @override
-  String get summaryAllRecordsTitle => 'Kõik kirjed';
 
   @override
   String get noGroupFound => 'Gruppe pole veel';
@@ -829,22 +817,10 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kirjet',
-      one: '1 kirje',
+      one: '$count kirje',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Peatselt saabuvad';
-
-  @override
-  String get summaryUpcomingCaption => '30 päeva jooksul';
-
-  @override
-  String get summaryUrgentTitle => 'Kiireloomuline';
-
-  @override
-  String get summaryUrgentCaption => '7 päeva jooksul';
 
   @override
   String get profileHeaderTitle => 'Profiil';
@@ -945,7 +921,7 @@ class AppLocalizationsEt extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days päeva enne',
-      one: '1 päev enne',
+      one: '$days päev enne',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsEt extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names ja veel $extra aeguvad täna.',
-      one: '$names ja veel 1 aeguvad täna.',
+      one: '$names ja veel $extra aeguvad täna.',
       zero: '$names aeguvad täna.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsEt extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b ja veel $extra kirjet aeguvad hiljemalt $lastDate, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.',
-      one: '$a, $b ja veel 1 kirje aeguvad hiljemalt $lastDate, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.',
+      one: '$a, $b ja veel $extra kirje aeguvad hiljemalt $lastDate, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count sinu kirjet kategoorias $category aegub hiljemalt $date. Kui need on nii koos, on lihtne üht unustada.',
-      one: '1 sinu kirje kategoorias $category aegub $date. Seda on lihtne kahe silma vahele jätta.',
+      one: '$count sinu kirje kategoorias $category aegub $date. Seda on lihtne kahe silma vahele jätta.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count eesseisvat aegumist on meeldetuletustega kaetud. Miski muu ei vaja sinu tähelepanu.',
-      one: '1 eesseisev aegumine on meeldetuletusega kaetud. Miski muu ei vaja sinu tähelepanu.',
+      one: '$count eesseisev aegumine on meeldetuletusega kaetud. Miski muu ei vaja sinu tähelepanu.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Praegu pole midagi kiireloomulist, kuid $count eesseisval kirjel pole veel meeldetuletust.',
-      one: 'Praegu pole midagi kiireloomulist, kuid 1 eesseisval kirjel pole veel meeldetuletust.',
+      one: 'Praegu pole midagi kiireloomulist, kuid $count eesseisval kirjel pole veel meeldetuletust.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsEt extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days päeva',
-      one: '1 päev',
+      one: '$days päev',
     );
     return 'Meeldetuletus $position: $_temp0 enne';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count aeguvad peatselt',
-      one: '1 aegub peatselt',
+      one: '$count aegub peatselt',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsEt extends AppLocalizations {
   String get noRecordsTomorrow => 'Homme ei aegu midagi';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName aegub $days päeva pärast',
-      one: '$recordName aegub homme',
-      zero: '$recordName aegub täna',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, sinu $recordName aegub kuupäeval $date. Enneaegne uuendamine tagab katvuse.',
-      one: '$firstName, sinu $recordName aegub homme. Uuenda seda kohe, et see ei aeguks.',
-      zero: '$firstName, sinu $recordName aegub täna. Kas oled seda juba uuendanud? Muuda aegumiskuupäeva.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Viimane meeldetuletus: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days päeva pärast, kuupäeval $date',
-      one: 'homme',
-    );
-    return '$firstName, sinu $recordName aegub $_temp0. See on sinu viimane meeldetuletus, uuenda seda või muuda kuupäeva.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count fotot pole veel krüptitud',
-      one: '1 foto pole veel krüptitud',
+      one: '$count foto pole veel krüptitud',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Sul on $count fotot, mis pole veel krüptitud. Saame need nüüd krüptida.',
-      one: 'Sul on 1 foto, mis pole veel krüptitud. Saame selle nüüd krüptida.',
+      one: 'Sul on $count foto, mis pole veel krüptitud. Saame selle nüüd krüptida.',
     );
     return '$_temp0 Hoia Vaultara lahti, kuni see on valmis.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsEt extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Liiga palju katseid. Oota $seconds sekundit ja proovi uuesti.',
-      one: 'Liiga palju katseid. Oota 1 sekund ja proovi uuesti.',
+      one: 'Liiga palju katseid. Oota $seconds sekund ja proovi uuesti.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsEt extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Liiga palju katseid. Oota $minutes minutit ja proovi uuesti.',
-      one: 'Liiga palju katseid. Oota 1 minut ja proovi uuesti.',
+      one: 'Liiga palju katseid. Oota $minutes minut ja proovi uuesti.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kirjet vajavad sinu tähelepanu',
-      one: '1 kirje vajab sinu tähelepanu',
+      one: '$count kirje vajab sinu tähelepanu',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsEt extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Kehtib tavaliselt $years aastat',
-      one: 'Kehtib tavaliselt 1 aasta',
+      one: 'Kehtib tavaliselt $years aasta',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count minutit tagasi',
-      one: '1 minut tagasi',
+      one: '$count minut tagasi',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tundi tagasi',
-      one: '1 tund tagasi',
+      one: '$count tund tagasi',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count päeva tagasi',
-      one: '1 päev tagasi',
+      one: '$count päev tagasi',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Jäänud $count päeva',
-      one: 'Jäänud 1 päev',
+      one: 'Jäänud $count päev',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count päeva tagasi',
-      one: '1 päev tagasi',
+      one: '$count päev tagasi',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kustutatud kirjet loetakse lõpetatuks.',
-      one: '1 kustutatud kirje loetakse lõpetatuks.',
+      one: '$count kustutatud kirje loetakse lõpetatuks.',
     );
     return '$_temp0';
   }
@@ -7302,7 +7243,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count asjal pole fotot. Fotodega on asendamine kiirem.',
-      one: '1 asjal pole fotot. Fotoga on asendamine kiirem.',
+      one: '$count asjal pole fotot. Fotoga on asendamine kiirem.',
     );
     return '$_temp0';
   }
@@ -7313,7 +7254,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kaardil pole sulgemise numbrit salvestatud.',
-      one: '1 kaardil pole sulgemise numbrit salvestatud.',
+      one: '$count kaardil pole sulgemise numbrit salvestatud.',
     );
     return '$_temp0';
   }
@@ -7492,7 +7433,7 @@ class AppLocalizationsEt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count asja allpool',
-      one: '1 asi allpool',
+      one: '$count asi allpool',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsEt extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Meeldetuletus: $name aegub $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName aegub täna';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName aegub homme';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName aegub $days päeva pärast',
+      one: '$recordName aegub $days päeva pärast',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName on aegunud';
+  }
+
+  @override
+  String get remLockedTitle => 'Lukustatud kirje vajab sinu tähelepanu';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Selle kuupäev on $date. Ava Vaultara lukk, et näha, milline kirje see on.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Sinu kirje „$recordName“ aegub täna.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Sinu kirje „$recordName“ aegub homme.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Sinu kirje „$recordName“ aegub kuupäeval $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, sinu kirje „$recordName“ aegub täna.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, sinu kirje „$recordName“ aegub homme.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, sinu kirje „$recordName“ aegub kuupäeval $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Kasutaja $person kirje „$recordName“ aegub täna.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Kasutaja $person kirje „$recordName“ aegub homme.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Kasutaja $person kirje „$recordName“ aegub kuupäeval $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Sinu kirje „$recordName“ aegus kuupäeval $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Kasutaja $person kirje „$recordName“ aegus kuupäeval $date.';
+  }
+
+  @override
+  String get remTipToday => 'Juba uuendatud? Muuda kuupäeva.';
+
+  @override
+  String get remTipTomorrow => 'Uuenda see kohe, et see ei aeguks.';
+
+  @override
+  String get remTipEarly => 'Varakult uuendamine hoiab sind kaitstuna.';
+
+  @override
+  String get remTipLast => 'See on viimane meeldetuletus enne aegumist.';
+
+  @override
+  String get remTipExpired => 'Uuenda see või muuda kuupäeva, kui oled seda juba teinud.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'On aeg alustada kirje „$recordName“ uuendamist. See aegub kuupäeval $date, nii et kohe alustades on sul palju aega.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'On aeg alustada kasutaja $person kirje „$recordName“ uuendamist. See aegub kuupäeval $date, nii et kohe alustades on palju aega.';
+  }
+
+  @override
+  String get notifChannelName => 'Aegumise meeldetuletused';
+
+  @override
+  String get notifChannelDescription => 'Meeldetuletused enne sinu kirjete aegumist';
+
+  @override
+  String get notifTestTitle => 'Testteavitus';
+
+  @override
+  String get notifTestBody => 'Vaultara meeldetuletused saabuvad nii.';
+
+  @override
+  String get notifTestAction => 'Saada testteavitus';
+
+  @override
+  String get notifTestSubtitle => 'Kontrolli, et meeldetuletused jõuavad sellesse telefoni';
+
+  @override
+  String get notifTestSent => 'Test saadetud. See peaks saabuma mõne sekundi pärast.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Tuleta meelde pärast kirje aegumist';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 ja 14 päeva hiljem, kui seda pole uuendatud';
+
+  @override
+  String get notifWeeklyTitle => 'Esmaspäeva kokkuvõte';
+
+  @override
+  String get notifWeeklySubtitle => 'Teade esmaspäeva hommikul, kui sel nädalal midagi aegub';
+
+  @override
+  String get notifPushSection => 'Leibkond ja uuendused';
+
+  @override
+  String get notifHouseholdTitle => 'Jagatud kirjed';
+
+  @override
+  String get notifHouseholdSubtitle => 'Kui jagatud kirje on aegumas ja keegi pole seda uuendanud';
+
+  @override
+  String get notifUpdatesTitle => 'Sinu küsitud uuendused';
+
+  @override
+  String get notifUpdatesSubtitle => 'Kui keegi saadab kirje uued andmed';
+
+  @override
+  String get notifSecurityNote => 'Teated uute sisselogimiste kohta sinu kontole saadetakse alati.';
+
+  @override
+  String get notifIosHelpTitle => 'Meeldetuletusi ei tule?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Kontrolli iPhone\'i seadeid';
+
+  @override
+  String get notifIosHelpStep1 => 'Ava Seaded, siis Teavitused, siis Vaultara, ja lülita sisse Luba teavitused.';
+
+  @override
+  String get notifIosHelpStep2 => 'Lülita sisse Lukustuskuva, Teavituskeskus ja Bännerid.';
+
+  @override
+  String get notifIosHelpStep3 => 'Kui kasutad fookust, lisa Vaultara rakenduste hulka, mida see lubab.';
+
+  @override
+  String get notifIosHelpStep4 => 'Ava Vaultara iga paari nädala tagant. iPhone hoiab ette vaid piiratud arvu meeldetuletusi ja rakenduse avamine planeerib järgmised.';
+
+  @override
+  String get homeNextUpEmpty => 'Varsti ei aegu midagi. Kõik on korras.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tähtaega 30 päeva jooksul',
+      one: '$count tähtaeg 30 päeva jooksul',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Kinnitatud kategooriad';
 }

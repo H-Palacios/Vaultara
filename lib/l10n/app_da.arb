@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara hjælper dig med at holde styr på vigtige udløbsdatoer, så intet bliver overset.",
   "homeWelcomeSubtitleFirst": "Det er dejligt at have dig her. Vaultara hjælper dig med at holde orden ved at samle vigtige datoer og registreringer ét sikkert sted.",
   "homeWelcomeSubtitleBack": "Det er godt at se dig igen. Vaultara er her, når du vil gennemgå dine vigtige datoer og registreringer.",
-  "summaryAllCaption": "Sporet i Vaultara",
-  "summaryExpiredTitle": "Udløbet",
-  "summaryExpiredCaption": "Udløbsdato overskredet",
   "editorNotes": "Noter",
   "editorReminderNone": "Ingen påmindelse",
   "editorReminderOnExpiry": "På udløbsdatoen",
@@ -199,7 +196,6 @@
   "addRecord": "Tilføj post",
   "noRecordsYet": "Ingen poster endnu.",
   "deleteRecordTitle": "Slet post",
-  "summaryAllRecordsTitle": "Alle poster",
   "noGroupFound": "Ingen grupper endnu",
   "groupLabel": "{count, plural, one{{count} gruppe} other{{count} grupper}}",
   "recordsLabel": "{count, plural, one{{count} post} other{{count} poster}}",
@@ -444,7 +440,7 @@
   "addNotesHint": "Tilføj noter (valgfrit)",
   "expiryTimelineTitle": "Udløbstidslinje",
   "expiryTimelineSubtitle": "Tryk på en måned for at se posterne, der udløber i den måned",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 post} other{{count} poster}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} post} other{{count} poster}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -452,10 +448,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Kommende",
-  "summaryUpcomingCaption": "Inden for 30 dage",
-  "summaryUrgentTitle": "Haster",
-  "summaryUrgentCaption": "Inden for 7 dage",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Vejledninger",
   "profileTutorialsSubtitle": "Gennemse App-vejledninger",
@@ -487,7 +479,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Ingen påmindelse",
   "reminderOnExpiry": "På udløbsdatoen",
-  "reminderDaysBefore": "{days, plural, one{1 dag før} other{{days} dage før}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dag før} other{{days} dage før}}",
   "reminderCustomDaysTitle": "Angiv brugerdefinerede dage",
   "reminderCascadeTitle": "Kaskadepåmindelser",
   "reminderCascadeSubtitle": "Modtag flere notifikationer før en post udløber",
@@ -518,16 +510,16 @@
   "smartInsightNoRecordsHeading": "Tilføj din første post",
   "smartInsightNoRecordsBody": "Begynd at spore dine poster, så vil Vaultara vise smarte indsigter her.",
   "smartInsightExpiresTodaySingleBody": "{name} udløber i dag. Hvis du allerede har fornyet det, kan du opdatere datoen her.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} udløber i dag.} =1{{names} og 1 mere udløber i dag.} other{{names} og {extra} mere udløber i dag.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} udløber i dag.} =1{{names} og {extra} mere udløber i dag.} other{{names} og {extra} mere udløber i dag.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} udløber i morgen og mangler en påmindelse. Indstil en, så du ikke går glip af det.} other{{name} udløber den {date} og mangler en påmindelse. Indstil en, så du ikke går glip af det.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} udløber den {dateA} og {b} den {dateB}, omtrent på samme tid. Det er nemt at glemme den ene, når to poster ligger så tæt på hinanden.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} og {c} udløber alle senest {lastDate}, omtrent på samme tid. Det er nemt at glemme den ene, når flere poster ligger så tæt på hinanden.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} og 1 post mere udløber senest {lastDate}, omtrent på samme tid. Det er nemt at glemme den ene, når flere poster ligger så tæt på hinanden.} other{{a}, {b} og {extra} poster mere udløber senest {lastDate}, omtrent på samme tid. Det er nemt at glemme den ene, når flere poster ligger så tæt på hinanden.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} og {extra} post mere udløber senest {lastDate}, omtrent på samme tid. Det er nemt at glemme den ene, når flere poster ligger så tæt på hinanden.} other{{a}, {b} og {extra} poster mere udløber senest {lastDate}, omtrent på samme tid. Det er nemt at glemme den ene, når flere poster ligger så tæt på hinanden.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Intet udløber den næste dag. Din næste frist er {date}.} other{Intet udløber de næste {days} dage. Din næste frist er {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 af dine poster i kategorien {category} udløber den {date}. Den overses nemt.} other{{count} af dine poster i kategorien {category} udløber senest {date}. Det er nemt at glemme en, når de er grupperet på denne måde.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 kommende udløb er dækket af en påmindelse. Intet andet kræver din opmærksomhed.} other{{count} kommende udløb er dækket af påmindelser. Intet andet kræver din opmærksomhed.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} af dine poster i kategorien {category} udløber den {date}. Den overses nemt.} other{{count} af dine poster i kategorien {category} udløber senest {date}. Det er nemt at glemme en, når de er grupperet på denne måde.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} kommende udløb er dækket af en påmindelse. Intet andet kræver din opmærksomhed.} other{{count} kommende udløb er dækket af påmindelser. Intet andet kræver din opmærksomhed.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Alt er opdateret. Intet kræver din opmærksomhed lige nu.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Intet haster lige nu, men 1 kommende post har endnu ikke en påmindelse.} other{Intet haster lige nu, men {count} kommende poster har endnu ikke påmindelser.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Intet haster lige nu, men {count} kommende post har endnu ikke en påmindelse.} other{Intet haster lige nu, men {count} kommende poster har endnu ikke påmindelser.}}",
   "smartInsightCloseExpiriesHeading": "Udløber omtrent på samme tid",
   "plansHeadline": "Få den fulde Vaultara-oplevelse",
   "plansSubhead": "Ubegrænsede poster, dine egne grupper og påmindelser tilpasset nøjagtigt som du vil have dem.",
@@ -638,7 +630,7 @@
   "reminderCascadeRemoveStep": "Fjern",
   "reminderCascadeDuplicate": "En anden påmindelse bruger allerede denne dag",
   "reminderCascadeOutOfRange": "Indtast mellem {min} og {max} dage",
-  "reminderCascadeStepLabel": "Påmindelse {position}: {days, plural, =1{1 dag} other{{days} dage}} før",
+  "reminderCascadeStepLabel": "Påmindelse {position}: {days, plural, =1{{days} dag} other{{days} dage}} før",
   "expiryTimelineNotReady": "Din tidslinje vises, når du har poster, der udløber i et par forskellige måneder.",
   "verifyEmailResendIn": "Send igen om {seconds} s",
   "verifyEmailSpamHint": "Er den der ikke? Tjek din spam- eller uønsket post-mappe.",
@@ -647,13 +639,10 @@
   "verifyEmailDiscardBody": "Denne konto er ikke verificeret. Hvis du forlader siden nu, fjernes den, og du kan tilmelde dig igen med en hvilken som helst e-mailadresse.",
   "verifyEmailDiscardAction": "Kasser",
   "verifyEmailKeepWaiting": "Bliv ved med at vente",
-  "expiringBadge": "{count, plural, =1{1 udløber snart} other{{count} udløber snart}}",
+  "expiringBadge": "{count, plural, =1{{count} udløber snart} other{{count} udløber snart}}",
   "noRecordsToday": "Intet udløber i dag",
   "noRecordsTomorrow": "Intet udløber i morgen",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} udløber i dag} =1{{recordName} udløber i morgen} other{{recordName} udløber om {days} dage}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, din {recordName} udløber i dag. Har du allerede fornyet den? Opdater udløbsdatoen.} =1{{firstName}, din {recordName} udløber i morgen. Forny den nu, så den ikke udløber.} other{{firstName}, din {recordName} udløber den {date}. Fornyelse i god tid holder dig dækket.}}",
   "cascadeFinalStepTitle": "Sidste påmindelse: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, din {recordName} udløber {days, plural, =1{i morgen} other{om {days} dage, den {date}}}. Dette er din sidste påmindelse, forny den eller opdater datoen.",
   "notificationsTitle": "Meddelelser",
   "notificationsProfileEnabledSubtitle": "Påmindelser kommer kl. {time}.",
   "notificationsProfileDisabledSubtitle": "Meddelelser er slået fra.",
@@ -1380,7 +1369,7 @@
   "photoLockTurnOn": "Slå krypterede billeder til",
   "photoLockStatusOn": "Krypterede billeder er slået til",
   "photoLockStatusOnBody": "Nye billeder bliver krypteret på denne telefon, før de uploades.",
-  "photoLockPendingTitle": "{count, plural, one{1 billede er ikke krypteret endnu} other{{count} billeder er ikke krypteret endnu}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} billede er ikke krypteret endnu} other{{count} billeder er ikke krypteret endnu}}",
   "photoLockPendingBody": "Billeder, du tilføjede, før du slog dette til, er stadig gemt på den almindelige måde.",
   "photoLockEncryptExisting": "Krypter mine eksisterende billeder",
   "photoLockKeepOpen": "Hold Vaultara åben, indtil det er færdigt.",
@@ -1417,7 +1406,7 @@
   "photoLockSetupFailed": "Vi kunne ikke slå krypterede billeder til. Tjek din forbindelse, og prøv igen.",
   "photoLockAlreadyOn": "Krypterede billeder er allerede slået til for din konto. Indtast din gendannelsesnøgle for at bruge dem på denne telefon.",
   "photoLockEncryptExistingTitle": "Krypter dine eksisterende billeder?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Du har 1 billede, der ikke er krypteret endnu. Vi kan kryptere det nu.} other{Du har {count} billeder, der ikke er krypteret endnu. Vi kan kryptere dem nu.}} Hold Vaultara åben, indtil det er færdigt.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Du har {count} billede, der ikke er krypteret endnu. Vi kan kryptere det nu.} other{Du har {count} billeder, der ikke er krypteret endnu. Vi kan kryptere dem nu.}} Hold Vaultara åben, indtil det er færdigt.",
   "photoLockEncryptNow": "Krypter nu",
   "photoLockEntryBody": "Indtast den gendannelsesnøgle, du gemte, da du slog krypterede billeder til. Bindestreger og mellemrum er valgfrie.",
   "photoLockEntryLabel": "Gendannelsesnøgle",
@@ -1426,8 +1415,8 @@
   "photoLockUnlocked": "Dine billeder er låst op på denne telefon.",
   "photoLockInvalidFormat": "Det ligner ikke en gendannelsesnøgle. Tjek hvert tegn, og prøv igen.",
   "photoLockWrongKey": "Denne gendannelsesnøgle passer ikke. Tjek den, og prøv igen.",
-  "photoLockWaitSeconds": "{seconds, plural, one{For mange forsøg. Vent 1 sekund, og prøv igen.} other{For mange forsøg. Vent {seconds} sekunder, og prøv igen.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{For mange forsøg. Vent 1 minut, og prøv igen.} other{For mange forsøg. Vent {minutes} minutter, og prøv igen.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{For mange forsøg. Vent {seconds} sekund, og prøv igen.} other{For mange forsøg. Vent {seconds} sekunder, og prøv igen.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{For mange forsøg. Vent {minutes} minut, og prøv igen.} other{For mange forsøg. Vent {minutes} minutter, og prøv igen.}}",
   "photoLockOffline": "Vi kunne ikke få forbindelse til Vaultara. Tjek din forbindelse, og prøv igen.",
   "photoLockNotSetUp": "Krypterede billeder er ikke slået til for din konto.",
   "photoLockUnlockFailed": "Noget gik galt. Prøv igen.",
@@ -1683,13 +1672,13 @@
   "dailyDigestSwitchSubtitle": "Få én meddelelse på dit påmindelsestidspunkt med alt, der skal ordnes den dag.",
   "dailyDigestTurnedOn": "Dine påmindelser kommer nu som én daglig oversigt.",
   "dailyDigestTurnedOff": "Separate påmindelser for hver post er slået til igen.",
-  "dailyDigestTitle": "{count, plural, one{1 post kræver din opmærksomhed} other{{count} poster kræver din opmærksomhed}}",
+  "dailyDigestTitle": "{count, plural, one{{count} post kræver din opmærksomhed} other{{count} poster kræver din opmærksomhed}}",
   "dailyDigestBody": "På vej: {names}.",
   "dailyDigestBodyMore": "På vej: {names} og {count} mere.",
   "dailyDigestLockedRecord": "en låst post",
   "renewReasonRepeat": "{months, plural, one{Baseret på din gentagelsesindstilling hver måned} other{Baseret på din gentagelsesindstilling hver {months}. måned}}",
   "renewReasonHistory": "{count, plural, one{Baseret på din seneste fornyelse} other{Baseret på dine seneste {count} fornyelser}}",
-  "renewReasonTypical": "{years, plural, one{Gælder normalt i 1 år} other{Gælder normalt i {years} år}}",
+  "renewReasonTypical": "{years, plural, one{Gælder normalt i {years} år} other{Gælder normalt i {years} år}}",
   "renewChangeHint": "Tryk på datoen for at ændre den.",
   "renewPickDate": "Vælg den nye udløbsdato",
   "renewPickDateHint": "Vælg den dato, der står på dit nye dokument.",
@@ -1842,9 +1831,9 @@
   "secHistoryIntro": "Logins og ændringer af din konto fra de seneste 90 dage.",
   "secHistoryEmpty": "Intet at vise endnu.",
   "secJustNow": "Lige nu",
-  "secMinutesAgo": "{count, plural, one{for 1 minut siden} other{for {count} minutter siden}}",
-  "secHoursAgo": "{count, plural, one{for 1 time siden} other{for {count} timer siden}}",
-  "secDaysAgo": "{count, plural, one{for 1 dag siden} other{for {count} dage siden}}",
+  "secMinutesAgo": "{count, plural, one{for {count} minut siden} other{for {count} minutter siden}}",
+  "secHoursAgo": "{count, plural, one{for {count} time siden} other{for {count} timer siden}}",
+  "secDaysAgo": "{count, plural, one{for {count} dag siden} other{for {count} dage siden}}",
   "secEventNewSignIn": "Ny enhed logget ind",
   "secEventSignIn": "Logget ind",
   "secEventPasswordChanged": "Adgangskode skiftet",
@@ -2165,8 +2154,8 @@
   "lifePlanAutoChanged": "Vaultara så, at denne post blev ændret, så den er markeret som færdig.",
   "lifePlanAutoAdded": "Tilføjet, efter du startede denne plan.",
   "lifePlanProgress": "{done} af {total} færdige",
-  "lifePlanDaysToGo": "{count, plural, =1{1 dag tilbage} other{{count} dage tilbage}}",
-  "lifePlanDaysAgo": "{count, plural, =1{For 1 dag siden} other{For {count} dage siden}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} dag tilbage} other{{count} dage tilbage}}",
+  "lifePlanDaysAgo": "{count, plural, =1{For {count} dag siden} other{For {count} dage siden}}",
   "lifePlanAllDone": "Alt er færdigt. Du kan markere planen som afsluttet.",
   "lifePlanFinish": "Markér som afsluttet",
   "lifePlanReopen": "Åbn den igen",
@@ -2295,7 +2284,7 @@
   "lifePlanReadAloudUnavailable": "Oplæsning er ikke tilgængelig på denne telefon.",
   "lifePlanProofPack": "Lav en dokumentpakke",
   "lifePlanOpenFamily": "Åbn Familie",
-  "lifePlanRemoved": "{count, plural, =1{1 post, du har slettet, tæller som opsagt.} other{{count} poster, du har slettet, tæller som opsagt.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} post, du har slettet, tæller som opsagt.} other{{count} poster, du har slettet, tæller som opsagt.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2353,7 +2342,7 @@
   "lostWalletCheckupBody": "Gør dig klar nu, så intet bliver glemt, hvis den bliver væk.",
   "lostWalletCheckupAllGood": "Alt er klar. Hvis den nogensinde bliver væk, er du forberedt.",
   "lostWalletSetPlaceBody": "Åbn et kort eller dokument, og vælg, hvor du opbevarer det. Gør det for dit ID, kørekort og kort.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 element har intet foto. Med et foto går erstatning hurtigere.} other{{count} elementer har intet foto. Med fotos går erstatning hurtigere.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} element har intet foto. Med et foto går erstatning hurtigere.} other{{count} elementer har intet foto. Med fotos går erstatning hurtigere.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2361,7 +2350,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 kort har intet spærrenummer gemt.} other{{count} kort har intet spærrenummer gemt.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} kort har intet spærrenummer gemt.} other{{count} kort har intet spærrenummer gemt.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2461,7 +2450,7 @@
     }
   },
   "lostWalletReportNoCase": "Journalnummer: endnu ikke anmeldt",
-  "lostWalletReportCount": "{count, plural, =1{1 element nedenfor} other{{count} elementer nedenfor}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} element nedenfor} other{{count} elementer nedenfor}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2496,7 +2485,7 @@
   "tutorialsGroupTravelFamily": "Rejser og familie",
   "tutorialsGroupEmergencies": "Livsbegivenheder og nødsituationer",
   "tutorialsGroupPaid": "Betalte funktioner",
-  "tutorialsSteps": "{count, plural, =1{1 trin} other{{count} trin}}",
+  "tutorialsSteps": "{count, plural, =1{{count} trin} other{{count} trin}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2892,5 +2881,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} udløber i dag",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} udløber i morgen",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} udløber om {days} dag} other{{recordName} udløber om {days} dage}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} er udløbet",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "En låst post kræver din opmærksomhed",
+  "remLockedBody": "Datoen er {date}. Lås Vaultara op for at se, hvilken post det er.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Din post \"{recordName}\" udløber i dag.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Din post \"{recordName}\" udløber i morgen.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Din post \"{recordName}\" udløber den {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, din post \"{recordName}\" udløber i dag.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, din post \"{recordName}\" udløber i morgen.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, din post \"{recordName}\" udløber den {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}s post \"{recordName}\" udløber i dag.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}s post \"{recordName}\" udløber i morgen.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}s post \"{recordName}\" udløber den {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Din post \"{recordName}\" udløb den {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}s post \"{recordName}\" udløb den {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Allerede fornyet? Opdater datoen.",
+  "remTipTomorrow": "Forny den nu, så den ikke udløber.",
+  "remTipEarly": "Når du fornyer tidligt, er du dækket.",
+  "remTipLast": "Dette er din sidste påmindelse, før den udløber.",
+  "remTipExpired": "Forny den, eller opdater datoen, hvis du allerede har gjort det.",
+  "remStartBody": "Det er tid til at begynde at forny \"{recordName}\". Den udløber den {date}, så hvis du begynder nu, har du god tid.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Det er tid til at begynde at forny {person}s \"{recordName}\". Den udløber den {date}, så hvis I begynder nu, er der god tid.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Påmindelser om udløb",
+  "notifChannelDescription": "Påmindelser, før dine poster udløber",
+  "notifTestTitle": "Testnotifikation",
+  "notifTestBody": "Påmindelser fra Vaultara kommer sådan her.",
+  "notifTestAction": "Send en testnotifikation",
+  "notifTestSubtitle": "Tjek, at påmindelser når frem til denne telefon",
+  "notifTestSent": "Test sendt. Den bør komme om få sekunder.",
+  "notifAfterExpiryTitle": "Påmind mig, når en post er udløbet",
+  "notifAfterExpirySubtitle": "3 og 14 dage efter, hvis den ikke er fornyet",
+  "notifWeeklyTitle": "Mandagsoversigt",
+  "notifWeeklySubtitle": "En besked mandag morgen, når noget udløber den uge",
+  "notifPushSection": "Husstand og opdateringer",
+  "notifHouseholdTitle": "Delte poster",
+  "notifHouseholdSubtitle": "Når en delt post snart udløber, og ingen har fornyet den",
+  "notifUpdatesTitle": "Opdateringer, du har bedt om",
+  "notifUpdatesSubtitle": "Når nogen sender de nye oplysninger for en post",
+  "notifSecurityNote": "Advarsler om nye logins på din konto sendes altid.",
+  "notifIosHelpTitle": "Får du ikke påmindelser?",
+  "notifIosHelpSubtitle": "Tjek indstillingerne på din iPhone",
+  "notifIosHelpStep1": "Åbn Indstillinger, derefter Notifikationer, derefter Vaultara, og slå Tillad notifikationer til.",
+  "notifIosHelpStep2": "Slå Låst skærm, Notifikationscenter og Bannere til.",
+  "notifIosHelpStep3": "Hvis du bruger et fokus, så føj Vaultara til de apps, det tillader.",
+  "notifIosHelpStep4": "Åbn Vaultara med få ugers mellemrum. En iPhone gemmer kun et begrænset antal kommende påmindelser, og når du åbner appen, planlægges de næste.",
+  "homeNextUpEmpty": "Intet udløber snart. Du er klar.",
+  "homeDueSoonChip": "{count, plural, one{{count} forfalder inden for 30 dage} other{{count} forfalder inden for 30 dage}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Fastgjorte kategorier"
 }

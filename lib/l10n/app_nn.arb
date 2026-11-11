@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Kjekt å sjå deg her. Vaultara hjelper deg med å organisere viktige datoar og oppføringar på ein trygg stad.",
   "homeWelcomeSubtitleBack": "Kjekt å sjå deg igjen. Vaultara er klar når du vil sjå gjennom viktige datoar og oppføringar.",
   "homeWelcomeTitle": "Velkomen",
-  "summaryAllCaption": "Spora i Vaultara",
-  "summaryExpiredTitle": "Utløpt",
-  "summaryExpiredCaption": "Utløpsdatoen er passert",
   "editorNotes": "Notat",
   "editorReminderNone": "Ingen påminning",
   "editorReminderOnExpiry": "På utløpsdato",
@@ -192,7 +189,6 @@
   "addRecord": "Legg til oppføring",
   "noRecordsYet": "Ingen oppføringar enno.",
   "deleteRecordTitle": "Slett oppføring",
-  "summaryAllRecordsTitle": "Alle oppføringar",
   "noGroupFound": "Ingen grupper enno",
   "groupLabel": "{count, plural, one{{count} gruppe} other{{count} grupper}}",
   "recordsLabel": "{count, plural, one{{count} oppføring} other{{count} oppføringar}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Legg til notat (valfritt)",
   "expiryTimelineTitle": "Utløpstidslinje",
   "expiryTimelineSubtitle": "Trykk på ein månad for å sjå oppføringane som går ut den månaden",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 oppføring} other{{count} oppføringar}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} oppføring} other{{count} oppføringar}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Kommande",
-  "summaryUpcomingCaption": "Innan 30 dagar",
-  "summaryUrgentTitle": "Hastar",
-  "summaryUrgentCaption": "Innan 7 dagar",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Rettleiingar",
   "profileTutorialsSubtitle": "Bla Gjennom App-rettleiingar",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Inga påminning",
   "reminderOnExpiry": "På utløpsdatoen",
-  "reminderDaysBefore": "{days, plural, one{1 dag før} other{{days} dagar før}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dag før} other{{days} dagar før}}",
   "reminderCustomDaysTitle": "Skriv inn eigendefinerte dagar",
   "reminderCascadeTitle": "Kaskade-påminningar",
   "reminderCascadeSubtitle": "Motta fleire varsel før ei oppføring går ut",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Legg til den første oppføringa di",
   "smartInsightNoRecordsBody": "Byrja å spora oppføringane dine, så vil Vaultara visa smarte innsikter her.",
   "smartInsightExpiresTodaySingleBody": "{name} går ut i dag. Dersom du allereie har fornya henne, kan du oppdatere datoen her.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} går ut i dag.} =1{{names} og 1 til går ut i dag.} other{{names} og {extra} til går ut i dag.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} går ut i dag.} =1{{names} og {extra} til går ut i dag.} other{{names} og {extra} til går ut i dag.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} går ut i morgon og manglar påminning. Set ei så du ikkje gløymer det.} other{{name} går ut den {date} og manglar påminning. Set ei så du ikkje gløymer det.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} går ut den {dateA} og {b} den {dateB}, omtrent på same tid. Det er lett å gløyma éi når to oppføringar er så tette.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} og {c} går ut innan {lastDate}, omtrent på same tid. Det er lett å gløyma éi når fleire oppføringar er så tette.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} og 1 oppføring til går ut innan {lastDate}, omtrent på same tid. Det er lett å gløyma éi når fleire er so tette.} other{{a}, {b} og {extra} oppføringar til går ut innan {lastDate}, omtrent på same tid. Det er lett å gløyma éi når fleire er so tette.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} og {extra} oppføring til går ut innan {lastDate}, omtrent på same tid. Det er lett å gløyma éi når fleire er so tette.} other{{a}, {b} og {extra} oppføringar til går ut innan {lastDate}, omtrent på same tid. Det er lett å gløyma éi når fleire er so tette.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Ingenting går ut neste dag. Den neste fristen din er {date}.} other{Ingenting går ut dei neste {days} dagane. Den neste fristen din er {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 av oppføringane dine i kategorien {category} går ut den {date}. Ho er lett å oversjå.} other{{count} av oppføringane dine i kategorien {category} går ut innan {date}. Det er lett å gløyma éi når dei er grupperte slik.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 kommande utløpsdato vert dekt av ei påminning. Ingenting anna krev merksemda di.} other{{count} kommande utløpsdatoar vert dekte av påminningar. Ingenting anna krev merksemda di.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} av oppføringane dine i kategorien {category} går ut den {date}. Ho er lett å oversjå.} other{{count} av oppføringane dine i kategorien {category} går ut innan {date}. Det er lett å gløyma éi når dei er grupperte slik.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} kommande utløpsdato vert dekt av ei påminning. Ingenting anna krev merksemda di.} other{{count} kommande utløpsdatoar vert dekte av påminningar. Ingenting anna krev merksemda di.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Alt er oppdatert. Ingenting krev merksemda di akkurat no.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Ingenting hastar akkurat no, men 1 kommande oppføring manglar påminning.} other{Ingenting hastar akkurat no, men {count} kommande oppføringar manglar påminning.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Ingenting hastar akkurat no, men {count} kommande oppføring manglar påminning.} other{Ingenting hastar akkurat no, men {count} kommande oppføringar manglar påminning.}}",
   "smartInsightCloseExpiriesHeading": "Går ut omtrent på same tid",
   "plansHeadline": "Få heile Vaultara",
   "plansSubhead": "Ubegrensa oppføringar, dine eigne grupper og påminningar tilpassa akkurat slik du vil ha dei.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Fjern",
   "reminderCascadeDuplicate": "Ei anna påminning brukar allereie denne dagen",
   "reminderCascadeOutOfRange": "Oppgi mellom {min} og {max} dagar",
-  "reminderCascadeStepLabel": "Påminning {position}: {days, plural, =1{1 dag} other{{days} dagar}} før",
+  "reminderCascadeStepLabel": "Påminning {position}: {days, plural, =1{{days} dag} other{{days} dagar}} før",
   "expiryTimelineNotReady": "Tidslinja di vert vist når du har oppføringar som går ut i nokre ulike månader.",
   "verifyEmailResendIn": "Send på nytt om {seconds} s",
   "verifyEmailSpamHint": "Ikkje der? Sjekk søppelpost- eller spam-mappa di.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Denne kontoen er ikkje stadfesta. Om du dreg no vil han verta sletta, og du kan registrera deg på nytt med ein kva som helst e-postadresse.",
   "verifyEmailDiscardAction": "Slett",
   "verifyEmailKeepWaiting": "Halda fram med å venta",
-  "expiringBadge": "{count, plural, =1{1 går ut snart} other{{count} går ut snart}}",
+  "expiringBadge": "{count, plural, =1{{count} går ut snart} other{{count} går ut snart}}",
   "noRecordsToday": "Ingenting går ut i dag",
   "noRecordsTomorrow": "Ingenting går ut i morgon",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} går ut i dag} =1{{recordName} går ut i morgon} other{{recordName} går ut om {days} dagar}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, din {recordName} går ut i dag. Har du alt fornya han? Oppdater utløpsdatoen.} =1{{firstName}, din {recordName} går ut i morgon. Forny han no så han ikkje går ut.} other{{firstName}, din {recordName} går ut den {date}. Fornying i god tid held deg dekka.}}",
   "cascadeFinalStepTitle": "Siste påminning: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, din {recordName} går ut {days, plural, =1{i morgon} other{om {days} dagar, den {date}}}. Dette er di siste påminning, forny han eller oppdater datoen.",
   "notificationsTitle": "Varslingar",
   "notificationsProfileEnabledSubtitle": "Påminningar kjem klokka {time}.",
   "notificationsProfileDisabledSubtitle": "Varslingar er slått av.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "Få eitt varsel til påminningstidspunktet ditt som viser alt som forfell den dagen.",
   "dailyDigestTurnedOn": "Påminningane dine kjem no som éi dagleg oppsummering.",
   "dailyDigestTurnedOff": "Separate påminningar for kvar oppføring er på igjen.",
-  "dailyDigestTitle": "{count, plural, one{1 oppføring treng merksemda di} other{{count} oppføringar treng merksemda di}}",
+  "dailyDigestTitle": "{count, plural, one{{count} oppføring treng merksemda di} other{{count} oppføringar treng merksemda di}}",
   "dailyDigestBody": "På veg: {names}.",
   "dailyDigestBodyMore": "På veg: {names} og {count} til.",
   "dailyDigestLockedRecord": "ei låst oppføring",
   "renewReasonRepeat": "{months, plural, one{Basert på repetisjonsinnstillinga di om kvar månad} other{Basert på repetisjonsinnstillinga di om kvar {months}. månad}}",
   "renewReasonHistory": "{count, plural, one{Basert på den siste fornyinga di} other{Basert på dei {count} siste fornyingane dine}}",
-  "renewReasonTypical": "{years, plural, one{Gjeld vanlegvis i 1 år} other{Gjeld vanlegvis i {years} år}}",
+  "renewReasonTypical": "{years, plural, one{Gjeld vanlegvis i {years} år} other{Gjeld vanlegvis i {years} år}}",
   "renewChangeHint": "Trykk på datoen for å endre han.",
   "renewPickDate": "Vel den nye utløpsdatoen",
   "renewPickDateHint": "Vel datoen som står på det nye dokumentet ditt.",
@@ -1811,9 +1800,9 @@
   "secHistoryIntro": "Innloggingar og endringar i kontoen din dei siste 90 dagane.",
   "secHistoryEmpty": "Ingenting å vise enno.",
   "secJustNow": "Akkurat no",
-  "secMinutesAgo": "{count, plural, one{for 1 minutt sidan} other{for {count} minutt sidan}}",
-  "secHoursAgo": "{count, plural, one{for 1 time sidan} other{for {count} timar sidan}}",
-  "secDaysAgo": "{count, plural, one{for 1 dag sidan} other{for {count} dagar sidan}}",
+  "secMinutesAgo": "{count, plural, one{for {count} minutt sidan} other{for {count} minutt sidan}}",
+  "secHoursAgo": "{count, plural, one{for {count} time sidan} other{for {count} timar sidan}}",
+  "secDaysAgo": "{count, plural, one{for {count} dag sidan} other{for {count} dagar sidan}}",
   "secEventNewSignIn": "Ny eining logga inn",
   "secEventSignIn": "Logga inn",
   "secEventPasswordChanged": "Passord endra",
@@ -2134,8 +2123,8 @@
   "lifePlanAutoChanged": "Vaultara såg at denne oppføringa vart endra, så ho er merkt som ferdig.",
   "lifePlanAutoAdded": "Lagt til etter at du starta denne planen.",
   "lifePlanProgress": "{done} av {total} ferdig",
-  "lifePlanDaysToGo": "{count, plural, =1{1 dag att} other{{count} dagar att}}",
-  "lifePlanDaysAgo": "{count, plural, =1{For 1 dag sidan} other{For {count} dagar sidan}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} dag att} other{{count} dagar att}}",
+  "lifePlanDaysAgo": "{count, plural, =1{For {count} dag sidan} other{For {count} dagar sidan}}",
   "lifePlanAllDone": "Alt er ferdig. Du kan merke planen som fullført.",
   "lifePlanFinish": "Merk som fullført",
   "lifePlanReopen": "Opne han igjen",
@@ -2264,7 +2253,7 @@
   "lifePlanReadAloudUnavailable": "Opplesing er ikkje tilgjengeleg på denne telefonen.",
   "lifePlanProofPack": "Lag ein dokumentpakke",
   "lifePlanOpenFamily": "Opne Familie",
-  "lifePlanRemoved": "{count, plural, =1{1 post du har sletta, tel som avslutta.} other{{count} postar du har sletta, tel som avslutta.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} post du har sletta, tel som avslutta.} other{{count} postar du har sletta, tel som avslutta.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2322,7 +2311,7 @@
   "lostWalletCheckupBody": "Gjer deg klar no, så ingenting blir gløymt om ho blir borte.",
   "lostWalletCheckupAllGood": "Alt klart. Om ho nokon gong blir borte, er du førebudd.",
   "lostWalletSetPlaceBody": "Opne eit kort eller dokument og vel kvar du oppbevarer det. Gjer det for legitimasjon, førarkort og kort.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 element har ikkje bilete. Med bilete går det raskare å erstatte.} other{{count} element har ikkje bilete. Med bilete går det raskare å erstatte.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} element har ikkje bilete. Med bilete går det raskare å erstatte.} other{{count} element har ikkje bilete. Med bilete går det raskare å erstatte.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2330,7 +2319,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 kort har ikkje lagra sperrenummer.} other{{count} kort har ikkje lagra sperrenummer.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} kort har ikkje lagra sperrenummer.} other{{count} kort har ikkje lagra sperrenummer.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2430,7 +2419,7 @@
     }
   },
   "lostWalletReportNoCase": "Saksnummer: ikkje meldt enno",
-  "lostWalletReportCount": "{count, plural, =1{1 element under} other{{count} element under}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} element under} other{{count} element under}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2465,7 +2454,7 @@
   "tutorialsGroupTravelFamily": "Reiser og familie",
   "tutorialsGroupEmergencies": "Livshendingar og naudsituasjonar",
   "tutorialsGroupPaid": "Betalte funksjonar",
-  "tutorialsSteps": "{count, plural, =1{1 steg} other{{count} steg}}",
+  "tutorialsSteps": "{count, plural, =1{{count} steg} other{{count} steg}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} går ut i dag",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} går ut i morgon",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} går ut om {days} dag} other{{recordName} går ut om {days} dagar}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} har gått ut",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Ei låst oppføring treng merksemda di",
+  "remLockedBody": "Datoen er {date}. Lås opp Vaultara for å sjå kva oppføring det er.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Oppføringa di «{recordName}» går ut i dag.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Oppføringa di «{recordName}» går ut i morgon.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Oppføringa di «{recordName}» går ut den {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, oppføringa di «{recordName}» går ut i dag.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, oppføringa di «{recordName}» går ut i morgon.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, oppføringa di «{recordName}» går ut den {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Oppføringa «{recordName}» til {person} går ut i dag.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Oppføringa «{recordName}» til {person} går ut i morgon.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Oppføringa «{recordName}» til {person} går ut den {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Oppføringa di «{recordName}» gjekk ut den {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Oppføringa «{recordName}» til {person} gjekk ut den {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Allereie fornya? Oppdater datoen.",
+  "remTipTomorrow": "Forny ho no så ho ikkje går ut.",
+  "remTipEarly": "Å fornye tidleg held deg dekt.",
+  "remTipLast": "Dette er den siste påminninga før ho går ut.",
+  "remTipExpired": "Forny ho, eller oppdater datoen viss du allereie har gjort det.",
+  "remStartBody": "Det er på tide å byrje å fornye «{recordName}». Ho går ut den {date}, så viss du byrjar no, har du god tid.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Det er på tide å byrje å fornye «{recordName}» til {person}. Ho går ut den {date}, så å byrje no gir god tid.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Påminningar om utløp",
+  "notifChannelDescription": "Påminningar før oppføringane dine går ut",
+  "notifTestTitle": "Testvarsel",
+  "notifTestBody": "Påminningar frå Vaultara kjem slik.",
+  "notifTestAction": "Send eit testvarsel",
+  "notifTestSubtitle": "Sjekk at påminningar kjem fram til denne telefonen",
+  "notifTestSent": "Test sendt. Han skal kome om nokre sekund.",
+  "notifAfterExpiryTitle": "Minn meg på etter at ei oppføring har gått ut",
+  "notifAfterExpirySubtitle": "3 og 14 dagar etter, viss ho ikkje er fornya",
+  "notifWeeklyTitle": "Måndagsoversikt",
+  "notifWeeklySubtitle": "Ei melding måndag morgon når noko går ut den veka",
+  "notifPushSection": "Hushald og oppdateringar",
+  "notifHouseholdTitle": "Delte oppføringar",
+  "notifHouseholdSubtitle": "Når ei delt oppføring snart går ut og ingen har fornya ho",
+  "notifUpdatesTitle": "Oppdateringar du bad om",
+  "notifUpdatesSubtitle": "Når nokon sender dei nye opplysningane for ei oppføring",
+  "notifSecurityNote": "Varsel om nye innloggingar på kontoen din blir alltid sende.",
+  "notifIosHelpTitle": "Får du ikkje påminningar?",
+  "notifIosHelpSubtitle": "Sjekk innstillingane på iPhonen",
+  "notifIosHelpStep1": "Opne Innstillingar, så Varslingar, så Vaultara, og slå på Tillat varslingar.",
+  "notifIosHelpStep2": "Slå på Låst skjerm, Varselsenter og Banner.",
+  "notifIosHelpStep3": "Viss du brukar ein fokus, legg Vaultara til appane han tillèt.",
+  "notifIosHelpStep4": "Opne Vaultara med nokre vekers mellomrom. Ein iPhone lagrar berre eit avgrensa tal påminningar framover, og når du opnar appen, blir dei neste planlagde.",
+  "homeNextUpEmpty": "Ingenting går ut snart. Alt er i orden.",
+  "homeDueSoonChip": "{count, plural, one{{count} forfell innan 30 dagar} other{{count} forfell innan 30 dagar}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Festa kategoriar"
 }

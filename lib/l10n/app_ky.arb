@@ -189,7 +189,6 @@
   "addRecord": "Жазуу кошуу",
   "noRecordsYet": "Азырынча жазуулар жок.",
   "deleteRecordTitle": "Жазууну өчүрүү",
-  "summaryAllRecordsTitle": "Бардык жазуулар",
   "noGroupFound": "Азырынча топтор жок",
   "groupLabel": "{count, plural, one{{count} топ} other{{count} топ}}",
   "recordsLabel": "{count, plural, one{{count} жазуу} other{{count} жазуу}}",
@@ -425,9 +424,6 @@
   "passwordNeedUpper": "Чоң тамга болушу керек",
   "passwordNeedNumber": "Сан болушу керек",
   "passwordNeedSymbol": "Белги болушу керек",
-  "summaryAllCaption": "Vaultara ичинде көзөмөлдөнөт",
-  "summaryExpiredTitle": "Мөөнөтү бүткөн",
-  "summaryExpiredCaption": "Мөөнөтү өтүп кеткен",
   "profile_account_management_subtitle": "Эл. почтаны, сырсөздү өзгөртүңүз же аккаунтуңузду өчүрүңүз.",
   "confirmIdentityTitle": "Өздүгүн тастыктоо",
   "confirm": "Тастыктоо",
@@ -455,7 +451,7 @@
   "addNotesHint": "Эскертмелерди кошуу (милдеттүү эмес)",
   "expiryTimelineTitle": "Аякташ убакыт шкаласы",
   "expiryTimelineSubtitle": "Ошол айда аяктоочу жазууларды көрүү үчүн айды басыңыз",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 жазуу} other{{count} жазуу}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} жазуу} other{{count} жазуу}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Алдыдагы",
-  "summaryUpcomingCaption": "30 күн ичинде",
-  "summaryUrgentTitle": "Шашылыш",
-  "summaryUrgentCaption": "7 күн ичинде",
   "profileHeaderTitle": "Профиль",
   "profileTutorialsTitle": "Окуу Куралдары",
   "profileTutorialsSubtitle": "Колдонмо Окуу Куралдарын Карап Чыгуу",
@@ -498,7 +490,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Эскертүү жок",
   "reminderOnExpiry": "Мөөнөттүн бүтүү күнүндө",
-  "reminderDaysBefore": "{days, plural, one{1 күн мурун} other{{days} күн мурун}}",
+  "reminderDaysBefore": "{days, plural, one{{days} күн мурун} other{{days} күн мурун}}",
   "reminderCustomDaysTitle": "Ыңгайлаштырылган күндөрдү киргизиңиз",
   "reminderCascadeTitle": "Каскаддуу эскертүүлөр",
   "reminderCascadeSubtitle": "Жазуунун мөөнөтү бүткөнгө чейин бир нече билдирүү алыңыз",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "Биринчи жазууңузду кошуңуз",
   "smartInsightNoRecordsBody": "Жазууларыңызды көзөмөлдөп баштаңыз, Vaultara бул жерде акылдуу маалыматтарды көрсөтөт.",
   "smartInsightExpiresTodaySingleBody": "{name} бүгүн мөөнөтү бүтөт. Эгер сиз аны буга чейин узарткан болсоңуз, күндү бул жерден жаңыртыңыз.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} бүгүн мөөнөтү бүтөт.} =1{{names} жана дагы 1 жазуу бүгүн бүтөт.} other{{names} жана дагы {extra} жазуу бүгүн бүтөт.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} бүгүн мөөнөтү бүтөт.} =1{{names} жана дагы {extra} жазуу бүгүн бүтөт.} other{{names} жана дагы {extra} жазуу бүгүн бүтөт.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} эртең мөөнөтү бүтөт жана эскертүүсү жок. Өткөрүп жибербөө үчүн эскертүү коюңуз.} other{{name} {date} күнү мөөнөтү бүтөт жана эскертүүсү жок. Өткөрүп жибербөө үчүн эскертүү коюңуз.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} {dateA} күнү, ал эми {b} {dateB} күнү, болжол менен бир убакта бүтөт. Эки жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} жана {c} баары {lastDate} күнүнө чейин, болжол менен бир убакта бүтөт. Бир нече жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} жана дагы 1 жазуу {lastDate} күнүнө чейин, болжол менен бир убакта бүтөт. Бир нече жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.} other{{a}, {b} жана дагы {extra} жазуу {lastDate} күнүнө чейин, болжол менен бир убакта бүтөт. Бир нече жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} жана дагы {extra} жазуу {lastDate} күнүнө чейин, болжол менен бир убакта бүтөт. Бир нече жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.} other{{a}, {b} жана дагы {extra} жазуу {lastDate} күнүнө чейин, болжол менен бир убакта бүтөт. Бир нече жазуу бири-бирине ушунчалык жакын болгондо, бирөөнү унутуп калуу оңой.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Кийинки күнү эч нерсе бүтпөйт. Сиздин кийинки мөөнөтүңүз {date} күнү.} other{Жакынкы {days} күндүн ичинде эч нерсе бүтпөйт. Сиздин кийинки мөөнөтүңүз {date} күнү.}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} категориясындагы сиздин 1 жазууңуз {date} күнү бүтөт. Аны байкабай калуу оңой.} other{{category} категориясындагы сиздин {count} жазууңуз {date} күнүнө чейин бүтөт. Алар ушундайча топтолгондо, бирөөнү унутуп калуу оңой.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Убактысы жакындап калган 1 мөөнөт эскертүү менен корголгон. Сиздин көңүл бурууңузду талап кылган башка эч нерсе жок.} other{Убактысы жакындап калган {count} мөөнөт эскертүүлөр менен корголгон. Сиздин көңүл бурууңузду талап кылган башка эч нерсе жок.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} категориясындагы сиздин {count} жазууңуз {date} күнү бүтөт. Аны байкабай калуу оңой.} other{{category} категориясындагы сиздин {count} жазууңуз {date} күнүнө чейин бүтөт. Алар ушундайча топтолгондо, бирөөнү унутуп калуу оңой.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Убактысы жакындап калган {count} мөөнөт эскертүү менен корголгон. Сиздин көңүл бурууңузду талап кылган башка эч нерсе жок.} other{Убактысы жакындап калган {count} мөөнөт эскертүүлөр менен корголгон. Сиздин көңүл бурууңузду талап кылган башка эч нерсе жок.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Баары жаңыртылган. Учурда сиздин көңүл бурууңузду талап кылган эч нерсе жок.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Учурда эч нерсе шашылыш эмес, бирок алдыдагы 1 жазуунун эскертүүсү азырынча жок.} other{Учурда эч нерсе шашылыш эмес, бирок алдыдагы {count} жазуунун эскертүүсү азырынча жок.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Учурда эч нерсе шашылыш эмес, бирок алдыдагы {count} жазуунун эскертүүсү азырынча жок.} other{Учурда эч нерсе шашылыш эмес, бирок алдыдагы {count} жазуунун эскертүүсү азырынча жок.}}",
   "smartInsightCloseExpiriesHeading": "Болжол менен бир убакта бүтөт",
   "plansHeadline": "Vaultara мүмкүнчүлүктөрүн толук алыңыз",
   "plansSubhead": "Чектөөсүз жазуулар, өзүңүздүн топторуңуз жана сиз каалагандай так жөндөлгөн эскертүүлөр.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "Бул аккаунт ырастала элек. Азыр чыгып кетсеңиз, ал өчүрүлөт жана каалаган электрондук почта дареги менен кайра каттала аласыз.",
   "verifyEmailDiscardAction": "Өчүрүү",
   "verifyEmailKeepWaiting": "Күте туруу",
-  "expiringBadge": "{count, plural, =1{1 мөөнөтү жакында бүтөт} other{{count} мөөнөтү жакында бүтөт}}",
+  "expiringBadge": "{count, plural, =1{{count} мөөнөтү жакында бүтөт} other{{count} мөөнөтү жакында бүтөт}}",
   "noRecordsToday": "Бүгүн эч нерсенин мөөнөтү бүтпөйт",
   "noRecordsTomorrow": "Эртең эч нерсенин мөөнөтү бүтпөйт",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} мөөнөтү бүгүн бүтөт} =1{{recordName} мөөнөтү эртең бүтөт} other{{recordName} мөөнөтү {days} күндөн кийин бүтөт}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} мөөнөтү бүгүн бүтөт. Жаңылап жетиштиңизби? Аяктоо күнүн жаңыртыңыз.} =1{{firstName}, {recordName} мөөнөтү эртең бүтөт. Мөөнөтү өтүп кетпеши үчүн азыр жаңылаңыз.} other{{firstName}, {recordName} мөөнөтү {date} күнү бүтөт. Эрте жаңылоо сизди коргоодо кармайт.}}",
   "cascadeFinalStepTitle": "Соңку эскертүү: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} мөөнөтү {days, plural, =1{эртең} other{{days} күндөн кийин, {date} күнү}} бүтөт. Бул сиздин соңку эскертүүңүз, аны жаңылаңыз же күнүн жаңыртыңыз.",
   "notificationsTitle": "Билдирмелер",
   "notificationsProfileEnabledSubtitle": "Эскертүүлөр саат {time} келет.",
   "notificationsProfileDisabledSubtitle": "Билдирмелер өчүрүлгөн.",
@@ -1367,7 +1356,7 @@
   "photoLockTurnOn": "Шифрленген сүрөттөрдү күйгүзүү",
   "photoLockStatusOn": "Шифрленген сүрөттөр күйгүзүлгөн",
   "photoLockStatusOnBody": "Жаңы сүрөттөр жүктөлгөнгө чейин бул телефондо шифрленет.",
-  "photoLockPendingTitle": "{count, plural, one{1 сүрөт азырынча шифрленген эмес} other{{count} сүрөт азырынча шифрленген эмес}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} сүрөт азырынча шифрленген эмес} other{{count} сүрөт азырынча шифрленген эмес}}",
   "photoLockPendingBody": "Муну күйгүзгөнгө чейин кошкон сүрөттөрүңүз дагы эле кадимки жол менен сакталат.",
   "photoLockEncryptExisting": "Учурдагы сүрөттөрүмдү шифрлөө",
   "photoLockKeepOpen": "Бүтмөйүнчө Vaultara'ны ачык кармаңыз.",
@@ -1404,7 +1393,7 @@
   "photoLockSetupFailed": "Шифрленген сүрөттөрдү күйгүзө алган жокпуз. Туташууңузду текшерип, кайра аракет кылыңыз.",
   "photoLockAlreadyOn": "Шифрленген сүрөттөр аккаунтуңуз үчүн мурунтан күйгүзүлгөн. Аларды бул телефондо колдонуу үчүн калыбына келтирүү ачкычыңызды киргизиңиз.",
   "photoLockEncryptExistingTitle": "Учурдагы сүрөттөрүңүздү шифрлейсизби?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Сизде азырынча шифрленбеген 1 сүрөт бар. Аны азыр шифрлей алабыз.} other{Сизде азырынча шифрленбеген {count} сүрөт бар. Аларды азыр шифрлей алабыз.}} Бүтмөйүнчө Vaultara'ны ачык кармаңыз.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Сизде азырынча шифрленбеген {count} сүрөт бар. Аны азыр шифрлей алабыз.} other{Сизде азырынча шифрленбеген {count} сүрөт бар. Аларды азыр шифрлей алабыз.}} Бүтмөйүнчө Vaultara'ны ачык кармаңыз.",
   "photoLockEncryptNow": "Азыр шифрлөө",
   "photoLockEntryBody": "Шифрленген сүрөттөрдү күйгүзгөндө сактаган калыбына келтирүү ачкычыңызды киргизиңиз. Сызыкчалар жана боштуктар милдеттүү эмес.",
   "photoLockEntryLabel": "Калыбына келтирүү ачкычы",
@@ -1413,8 +1402,8 @@
   "photoLockUnlocked": "Сүрөттөрүңүз бул телефондо ачылды.",
   "photoLockInvalidFormat": "Бул калыбына келтирүү ачкычына окшобойт. Ар бир белгини текшерип, кайра аракет кылыңыз.",
   "photoLockWrongKey": "Бул калыбына келтирүү ачкычы дал келбейт. Аны текшерип, кайра аракет кылыңыз.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Өтө көп аракет болду. 1 секунд күтүп, кайра аракет кылыңыз.} other{Өтө көп аракет болду. {seconds} секунд күтүп, кайра аракет кылыңыз.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Өтө көп аракет болду. 1 мүнөт күтүп, кайра аракет кылыңыз.} other{Өтө көп аракет болду. {minutes} мүнөт күтүп, кайра аракет кылыңыз.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Өтө көп аракет болду. {seconds} секунд күтүп, кайра аракет кылыңыз.} other{Өтө көп аракет болду. {seconds} секунд күтүп, кайра аракет кылыңыз.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Өтө көп аракет болду. {minutes} мүнөт күтүп, кайра аракет кылыңыз.} other{Өтө көп аракет болду. {minutes} мүнөт күтүп, кайра аракет кылыңыз.}}",
   "photoLockOffline": "Vaultara'га туташа алган жокпуз. Туташууңузду текшерип, кайра аракет кылыңыз.",
   "photoLockNotSetUp": "Шифрленген сүрөттөр аккаунтуңуз үчүн күйгүзүлгөн эмес.",
   "photoLockUnlockFailed": "Бир нерсе туура эмес болду. Кайра аракет кылыңыз.",
@@ -1670,13 +1659,13 @@
   "dailyDigestSwitchSubtitle": "Эскертүү убактыңызда ошол күнү аткарылууга тийиш бардык нерселердин тизмеси менен бир билдирме алыңыз.",
   "dailyDigestTurnedOn": "Эскертүүлөрүңүз эми күнүнө бир жыйынтык болуп келет.",
   "dailyDigestTurnedOff": "Ар бир жазуу үчүн өзүнчө эскертүүлөр кайра күйгүзүлдү.",
-  "dailyDigestTitle": "{count, plural, one{1 жазуу сиздин көңүлүңүздү талап кылат} other{{count} жазуу сиздин көңүлүңүздү талап кылат}}",
+  "dailyDigestTitle": "{count, plural, one{{count} жазуу сиздин көңүлүңүздү талап кылат} other{{count} жазуу сиздин көңүлүңүздү талап кылат}}",
   "dailyDigestBody": "Жакында: {names}.",
   "dailyDigestBodyMore": "Жакында: {names} жана дагы {count}.",
   "dailyDigestLockedRecord": "кулпуланган жазуу",
   "renewReasonRepeat": "{months, plural, one{Ар айда кайталоо жөндөөңүз боюнча} other{Ар {months} айда кайталоо жөндөөңүз боюнча}}",
   "renewReasonHistory": "{count, plural, one{Акыркы узартууңуз боюнча} other{Акыркы {count} узартууңуз боюнча}}",
-  "renewReasonTypical": "{years, plural, one{Адатта 1 жыл жарактуу} other{Адатта {years} жыл жарактуу}}",
+  "renewReasonTypical": "{years, plural, one{Адатта {years} жыл жарактуу} other{Адатта {years} жыл жарактуу}}",
   "renewChangeHint": "Өзгөртүү үчүн датаны басыңыз.",
   "renewPickDate": "Жаңы мөөнөт датасын тандаңыз",
   "renewPickDateHint": "Жаңы документиңизде көрсөтүлгөн датаны тандаңыз.",
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} мөөнөтү бүгүн бүтөт",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} мөөнөтү эртең бүтөт",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} мөөнөтү {days} күндөн кийин бүтөт} other{{recordName} мөөнөтү {days} күндөн кийин бүтөт}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} мөөнөтү бүттү",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Кулпуланган жазуу көңүл бурууну талап кылат",
+  "remLockedBody": "Анын күнү — {date}. Кайсы жазуу экенин көрүү үчүн Vaultara кулпусун ачыңыз.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "«{recordName}» жазууңуздун мөөнөтү бүгүн бүтөт.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "«{recordName}» жазууңуздун мөөнөтү эртең бүтөт.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "«{recordName}» жазууңуздун мөөнөтү {date} күнү бүтөт.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, «{recordName}» жазууңуздун мөөнөтү бүгүн бүтөт.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, «{recordName}» жазууңуздун мөөнөтү эртең бүтөт.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, «{recordName}» жазууңуздун мөөнөтү {date} күнү бүтөт.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: «{recordName}» жазуусунун мөөнөтү бүгүн бүтөт.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: «{recordName}» жазуусунун мөөнөтү эртең бүтөт.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: «{recordName}» жазуусунун мөөнөтү {date} күнү бүтөт.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "«{recordName}» жазууңуздун мөөнөтү {date} күнү бүттү.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: «{recordName}» жазуусунун мөөнөтү {date} күнү бүттү.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Жаңылап койдуңузбу? Күнүн өзгөртүңүз.",
+  "remTipTomorrow": "Мөөнөтү өтүп кетпеши үчүн азыр жаңылаңыз.",
+  "remTipEarly": "Эрте жаңылоо сизди корголгон кармайт.",
+  "remTipLast": "Бул мөөнөт бүткөнгө чейинки акыркы эскертүү.",
+  "remTipExpired": "Жаңылаңыз же жаңылап койсоңуз, күнүн өзгөртүңүз.",
+  "remStartBody": "«{recordName}» жаңылоону баштоо убагы келди. Мөөнөтү {date} күнү бүтөт, азыр баштасаңыз, убактыңыз жетиштүү болот.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "«{recordName}» ({person}) жаңылоону баштоо убагы келди. Мөөнөтү {date} күнү бүтөт, азыр башталса, убакыт жетиштүү болот.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Мөөнөт эскертүүлөрү",
+  "notifChannelDescription": "Жазууларыңыздын мөөнөтү бүткөнгө чейин эскертүүлөр",
+  "notifTestTitle": "Сыноо билдирмеси",
+  "notifTestBody": "Vaultara эскертүүлөрү ушундай келет.",
+  "notifTestAction": "Сыноо билдирмесин жөнөтүү",
+  "notifTestSubtitle": "Эскертүүлөр ушул телефонго жетип жатканын текшериңиз",
+  "notifTestSent": "Сыноо жөнөтүлдү. Бир нече секундда келиши керек.",
+  "notifAfterExpiryTitle": "Жазуунун мөөнөтү бүткөндөн кийин эскертүү",
+  "notifAfterExpirySubtitle": "3 жана 14 күндөн кийин, эгер жаңыланбаса",
+  "notifWeeklyTitle": "Дүйшөмбү сереби",
+  "notifWeeklySubtitle": "Ошол жумада бир нерсенин мөөнөтү бүтсө, дүйшөмбү эртең менен кабар",
+  "notifPushSection": "Үй-бүлө жана жаңыртуулар",
+  "notifHouseholdTitle": "Бөлүшүлгөн жазуулар",
+  "notifHouseholdSubtitle": "Бөлүшүлгөн жазуунун мөөнөтү бүтөйүн деп, аны эч ким жаңылабаганда",
+  "notifUpdatesTitle": "Сиз сураган жаңыртуулар",
+  "notifUpdatesSubtitle": "Кимдир бирөө жазуунун жаңы маалыматын жөнөткөндө",
+  "notifSecurityNote": "Аккаунтуңузга жаңы кирүүлөр тууралуу эскертүүлөр дайыма жөнөтүлөт.",
+  "notifIosHelpTitle": "Эскертүүлөр келбей жатабы?",
+  "notifIosHelpSubtitle": "iPhone жөндөөлөрүн текшериңиз",
+  "notifIosHelpStep1": "Жөндөөлөрдү, андан кийин Билдирмелерди, андан кийин Vaultara'ны ачып, Билдирмелерге уруксат берүүнү күйгүзүңүз.",
+  "notifIosHelpStep2": "Кулпу экранын, Билдирмелер борборун жана Баннерлерди күйгүзүңүз.",
+  "notifIosHelpStep3": "Фокус колдонсоңуз, Vaultara'ны уруксат берилген колдонмолорго кошуңуз.",
+  "notifIosHelpStep4": "Vaultara'ны бир нече жумада бир ачып туруңуз. iPhone алдыдагы эскертүүлөрдүн чектелген санын гана сактайт, ал эми колдонмону ачуу кийинкилерин пландайт.",
+  "homeNextUpEmpty": "Жакында эч нерсенин мөөнөтү бүтпөйт. Баары даяр.",
+  "homeDueSoonChip": "{count, plural, one{30 күндө {count} мөөнөтү бүтөт} other{30 күндө {count} мөөнөтү бүтөт}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Кадалган категориялар"
 }

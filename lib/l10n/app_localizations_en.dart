@@ -360,15 +360,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'It is good to see you again. Vaultara is here whenever you want to review your important dates and records.';
 
   @override
-  String get summaryAllCaption => 'Tracked in Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Expired';
-
-  @override
-  String get summaryExpiredCaption => 'Past expiry date';
-
-  @override
   String get editorNotes => 'Notes';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Delete record';
-
-  @override
-  String get summaryAllRecordsTitle => 'All records';
 
   @override
   String get noGroupFound => 'No groups yet';
@@ -829,22 +817,10 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count records',
-      one: '1 record',
+      one: '$count record',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Upcoming';
-
-  @override
-  String get summaryUpcomingCaption => 'Within 30 days';
-
-  @override
-  String get summaryUrgentTitle => 'Urgent';
-
-  @override
-  String get summaryUrgentCaption => 'Within 7 days';
 
   @override
   String get profileHeaderTitle => 'Profile';
@@ -945,7 +921,7 @@ class AppLocalizationsEn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days days before',
-      one: '1 day before',
+      one: '$days day before',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsEn extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names and $extra more expire today.',
-      one: '$names and 1 more expire today.',
+      one: '$names and $extra more expire today.',
       zero: '$names expire today.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsEn extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b, and $extra more expire before $lastDate, at approximately the same time. It is easy to forget one when several are so close together.',
-      one: '$a, $b, and 1 more expire before $lastDate, at approximately the same time. It is easy to forget one when several are so close together.',
+      one: '$a, $b, and $extra more expire before $lastDate, at approximately the same time. It is easy to forget one when several are so close together.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count of your records in the $category category expire before $date. It is easy to forget one when they are grouped like this.',
-      one: '1 of your records in the $category category expires on $date. It is easy to overlook.',
+      one: '$count of your records in the $category category expires on $date. It is easy to overlook.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count upcoming expirations are covered by reminders. Nothing else requires your attention.',
-      one: '1 upcoming expiration is covered by a reminder. Nothing else requires your attention.',
+      one: '$count upcoming expiration is covered by a reminder. Nothing else requires your attention.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Nothing is urgent at the moment, but $count upcoming records do not have a reminder yet.',
-      one: 'Nothing is urgent at the moment, but 1 upcoming record does not have a reminder yet.',
+      one: 'Nothing is urgent at the moment, but $count upcoming record does not have a reminder yet.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsEn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days days',
-      one: '1 day',
+      one: '$days day',
     );
     return 'Reminder $position: $_temp0 before';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count expiring',
-      one: '1 expiring',
+      one: '$count expiring',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noRecordsTomorrow => 'Nothing expires tomorrow';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName expires in $days days',
-      one: '$recordName expires tomorrow',
-      zero: '$recordName expires today',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, your $recordName expires on $date. Renewing early keeps you covered.',
-      one: '$firstName, your $recordName expires tomorrow. Renew it now so it does not lapse.',
-      zero: '$firstName, your $recordName expires today. Already renewed it? Update its expiry date.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Last reminder: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'in $days days, on $date',
-      one: 'tomorrow',
-    );
-    return '$firstName, your $recordName expires $_temp0. This is your last reminder, renew it or update its date.';
   }
 
   @override
@@ -1532,7 +1473,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count upcoming records have no cost yet.',
-      one: '1 upcoming record has no cost yet.',
+      one: '$count upcoming record has no cost yet.',
     );
     return '$_temp0';
   }
@@ -1566,7 +1507,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count records',
-      one: '1 record',
+      one: '$count record',
       zero: 'No records',
     );
     return '$_temp0';
@@ -1622,7 +1563,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Up to $count people',
-      one: 'Up to 1 person',
+      one: 'Up to $count person',
     );
     return '$_temp0';
   }
@@ -1639,7 +1580,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Add up to $count people',
-      one: 'Add 1 person',
+      one: 'Add $count person',
     );
     return '$_temp0';
   }
@@ -2223,7 +2164,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count records',
-      one: '1 record',
+      one: '$count record',
     );
     return '$_temp0';
   }
@@ -2254,7 +2195,7 @@ class AppLocalizationsEn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days day trip',
-      one: '1 day trip',
+      one: '$days day trip',
     );
     return '$_temp0';
   }
@@ -2327,7 +2268,7 @@ class AppLocalizationsEn extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months months',
-      one: '1 month',
+      one: '$months month',
     );
     return '$name expires $date. Many countries want $_temp0 left after you return.';
   }
@@ -2343,7 +2284,7 @@ class AppLocalizationsEn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days days into your trip',
-      one: '1 day into your trip',
+      one: '$days day into your trip',
       zero: 'the day you leave',
     );
     return '$name expires $date, $_temp0.';
@@ -2424,7 +2365,7 @@ class AppLocalizationsEn extends AppLocalizations {
       nights,
       locale: localeName,
       other: '$nights nights',
-      one: '1 night',
+      one: '$nights night',
     );
     return '$_temp0';
   }
@@ -2435,7 +2376,7 @@ class AppLocalizationsEn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days days',
-      one: '1 day',
+      one: '$days day',
     );
     return '$_temp0';
   }
@@ -2446,7 +2387,7 @@ class AppLocalizationsEn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days days at your destination',
-      one: '1 day at your destination',
+      one: '$days day at your destination',
     );
     return '$_temp0';
   }
@@ -2539,7 +2480,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count things need attention',
-      one: '1 thing needs attention',
+      one: '$count thing needs attention',
     );
     return '$_temp0';
   }
@@ -2620,7 +2561,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count documents need attention before you leave.',
-      one: '1 document needs attention before you leave.',
+      one: '$count document needs attention before you leave.',
     );
     return '$_temp0';
   }
@@ -2723,7 +2664,7 @@ class AppLocalizationsEn extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit photos',
-      one: '1 photo',
+      one: '$limit photo',
     );
     return 'The free plan lets you add $_temp0 to each record. With Premium you can add up to $premiumLimit.';
   }
@@ -2759,7 +2700,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count photos',
-      one: '1 photo',
+      one: '$count photo',
     );
     return '$_temp0';
   }
@@ -3352,7 +3293,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count things to fix before you go',
-      one: '1 thing to fix before you go',
+      one: '$count thing to fix before you go',
     );
     return '$_temp0';
   }
@@ -3386,7 +3327,7 @@ class AppLocalizationsEn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days days before you leave',
-      one: '1 day before you leave',
+      one: '$days day before you leave',
     );
     return '$_temp0';
   }
@@ -3400,7 +3341,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count to fix',
-      one: '1 to fix',
+      one: '$count to fix',
     );
     return '$_temp0';
   }
@@ -3411,7 +3352,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count to check',
-      one: '1 to check',
+      one: '$count to check',
     );
     return '$_temp0';
   }
@@ -4021,7 +3962,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count photos are not encrypted yet',
-      one: '1 photo is not encrypted yet',
+      one: '$count photo is not encrypted yet',
     );
     return '$_temp0';
   }
@@ -4142,7 +4083,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'You have $count photos that are not encrypted yet. We can encrypt them now.',
-      one: 'You have 1 photo that is not encrypted yet. We can encrypt it now.',
+      one: 'You have $count photo that is not encrypted yet. We can encrypt it now.',
     );
     return '$_temp0 Keep Vaultara open until this finishes.';
   }
@@ -4177,7 +4118,7 @@ class AppLocalizationsEn extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Too many tries. Please wait $seconds seconds and try again.',
-      one: 'Too many tries. Please wait 1 second and try again.',
+      one: 'Too many tries. Please wait $seconds second and try again.',
     );
     return '$_temp0';
   }
@@ -4188,7 +4129,7 @@ class AppLocalizationsEn extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Too many tries. Please wait $minutes minutes and try again.',
-      one: 'Too many tries. Please wait 1 minute and try again.',
+      one: 'Too many tries. Please wait $minutes minute and try again.',
     );
     return '$_temp0';
   }
@@ -5032,7 +4973,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count records need your attention',
-      one: '1 record needs your attention',
+      one: '$count record needs your attention',
     );
     return '$_temp0';
   }
@@ -5078,7 +5019,7 @@ class AppLocalizationsEn extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Usually valid for $years years',
-      one: 'Usually valid for 1 year',
+      one: 'Usually valid for $years year',
     );
     return '$_temp0';
   }
@@ -5669,7 +5610,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count minutes ago',
-      one: '1 minute ago',
+      one: '$count minute ago',
     );
     return '$_temp0';
   }
@@ -5680,7 +5621,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count hours ago',
-      one: '1 hour ago',
+      one: '$count hour ago',
     );
     return '$_temp0';
   }
@@ -5691,7 +5632,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count days ago',
-      one: '1 day ago',
+      one: '$count day ago',
     );
     return '$_temp0';
   }
@@ -6804,7 +6745,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count days to go',
-      one: '1 day to go',
+      one: '$count day to go',
     );
     return '$_temp0';
   }
@@ -6815,7 +6756,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count days ago',
-      one: '1 day ago',
+      one: '$count day ago',
     );
     return '$_temp0';
   }
@@ -7175,7 +7116,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count records you deleted count as cancelled.',
-      one: '1 record you deleted counts as cancelled.',
+      one: '$count record you deleted counts as cancelled.',
     );
     return '$_temp0';
   }
@@ -7317,7 +7258,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count items have no photo. Photos make them faster to replace.',
-      one: '1 item has no photo. A photo makes it faster to replace.',
+      one: '$count item has no photo. A photo makes it faster to replace.',
     );
     return '$_temp0';
   }
@@ -7328,7 +7269,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count cards have no lost card number saved.',
-      one: '1 card has no lost card number saved.',
+      one: '$count card has no lost card number saved.',
     );
     return '$_temp0';
   }
@@ -7507,7 +7448,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count items listed below',
-      one: '1 item listed below',
+      one: '$count item listed below',
     );
     return '$_temp0';
   }
@@ -7599,7 +7540,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count steps',
-      one: '1 step',
+      one: '$count step',
     );
     return '$_temp0';
   }
@@ -8003,7 +7944,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count expired',
-      one: '1 expired',
+      one: '$count expired',
     );
     return '$_temp0';
   }
@@ -8054,7 +7995,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count selected',
-      one: '1 selected',
+      one: '$count selected',
     );
     return '$_temp0';
   }
@@ -8071,7 +8012,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Moved $count records',
-      one: 'Moved 1 record',
+      one: 'Moved $count record',
     );
     return '$_temp0';
   }
@@ -8082,7 +8023,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Delete $count records?',
-      one: 'Delete 1 record?',
+      one: 'Delete $count record?',
     );
     return '$_temp0';
   }
@@ -8096,7 +8037,7 @@ class AppLocalizationsEn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Deleted $count records',
-      one: 'Deleted 1 record',
+      one: 'Deleted $count record',
     );
     return '$_temp0';
   }
@@ -8295,4 +8236,204 @@ class AppLocalizationsEn extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Reminder: $name expires on $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName expires today';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName expires tomorrow';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName expires in $days days',
+      one: '$recordName expires in $days day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName has expired';
+  }
+
+  @override
+  String get remLockedTitle => 'A locked record needs your attention';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Its date is $date. Unlock Vaultara to see which record it is.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Your $recordName expires today.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Your $recordName expires tomorrow.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Your $recordName expires on $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, your $recordName expires today.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, your $recordName expires tomorrow.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, your $recordName expires on $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person\'s $recordName expires today.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person\'s $recordName expires tomorrow.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person\'s $recordName expires on $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Your $recordName expired on $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person\'s $recordName expired on $date.';
+  }
+
+  @override
+  String get remTipToday => 'Already renewed it? Update its date.';
+
+  @override
+  String get remTipTomorrow => 'Renew it now so it does not lapse.';
+
+  @override
+  String get remTipEarly => 'Renewing early keeps you covered.';
+
+  @override
+  String get remTipLast => 'This is your last reminder before it expires.';
+
+  @override
+  String get remTipExpired => 'Renew it, or update its date if you already have.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'It is time to start renewing your $recordName. It expires on $date, so starting now gives you plenty of time.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'It is time to start renewing $person\'s $recordName. It expires on $date, so starting now gives you plenty of time.';
+  }
+
+  @override
+  String get notifChannelName => 'Expiry reminders';
+
+  @override
+  String get notifChannelDescription => 'Reminders before your records expire';
+
+  @override
+  String get notifTestTitle => 'Test notification';
+
+  @override
+  String get notifTestBody => 'Reminders from Vaultara arrive like this.';
+
+  @override
+  String get notifTestAction => 'Send a test notification';
+
+  @override
+  String get notifTestSubtitle => 'Check that reminders reach this phone';
+
+  @override
+  String get notifTestSent => 'Test sent. It should arrive in a few seconds.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Remind me after a record expires';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 and 14 days after, if it has not been renewed';
+
+  @override
+  String get notifWeeklyTitle => 'Monday summary';
+
+  @override
+  String get notifWeeklySubtitle => 'A note on Monday morning when something expires that week';
+
+  @override
+  String get notifPushSection => 'Household and updates';
+
+  @override
+  String get notifHouseholdTitle => 'Shared records';
+
+  @override
+  String get notifHouseholdSubtitle => 'When a shared record is close to expiring and nobody has renewed it';
+
+  @override
+  String get notifUpdatesTitle => 'Updates you asked for';
+
+  @override
+  String get notifUpdatesSubtitle => 'When someone sends the new details of a record';
+
+  @override
+  String get notifSecurityNote => 'Alerts about new sign-ins to your account are always sent.';
+
+  @override
+  String get notifIosHelpTitle => 'Not getting reminders?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Check your iPhone settings';
+
+  @override
+  String get notifIosHelpStep1 => 'Open Settings, then Notifications, then Vaultara, and turn on Allow Notifications.';
+
+  @override
+  String get notifIosHelpStep2 => 'Turn on Lock Screen, Notification Centre and Banners.';
+
+  @override
+  String get notifIosHelpStep3 => 'If you use a Focus, add Vaultara to the apps it allows.';
+
+  @override
+  String get notifIosHelpStep4 => 'Open Vaultara every few weeks. iPhones only keep a limited number of reminders ahead, and opening the app plans the next ones.';
+
+  @override
+  String get homeNextUpEmpty => 'Nothing expires soon. You are all set.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count due in 30 days',
+      one: '$count due in 30 days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Pinned categories';
 }

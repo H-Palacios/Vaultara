@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara t’ajuda a fer el seguiment de dates de venciment importants perquè no se’n perdi cap.",
   "homeWelcomeSubtitleFirst": "Ens alegra tenir-te aquí. Vaultara t’ajuda a mantenir-te organitzat guardant dates i registres importants en un únic lloc segur.",
   "homeWelcomeSubtitleBack": "Ens alegra tornar-te a veure. Vaultara és aquí quan vulguis revisar les teves dates i registres importants.",
-  "summaryAllCaption": "Seguiment a Vaultara",
-  "summaryExpiredTitle": "Caducat",
-  "summaryExpiredCaption": "Data de caducitat superada",
   "editorNotes": "Notes",
   "editorReminderNone": "Sense recordatori",
   "editorReminderOnExpiry": "A la data de caducitat",
@@ -199,7 +196,6 @@
   "addRecord": "Afegeix registre",
   "noRecordsYet": "Encara no hi ha registres.",
   "deleteRecordTitle": "Suprimeix registre",
-  "summaryAllRecordsTitle": "Tots els registres",
   "noGroupFound": "Encara no hi ha grups",
   "groupLabel": "{count, plural, one{{count} grup} other{{count} grups}}",
   "recordsLabel": "{count, plural, one{{count} registre} other{{count} registres}}",
@@ -444,7 +440,7 @@
   "addNotesHint": "Afegir notes (opcional)",
   "expiryTimelineTitle": "Cronologia de venciments",
   "expiryTimelineSubtitle": "Toca un mes per veure els registres que caduquen aquell mes",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 registre} other{{count} registres}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} registre} other{{count} registres}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -452,10 +448,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Pròxims",
-  "summaryUpcomingCaption": "En 30 dies",
-  "summaryUrgentTitle": "Urgent",
-  "summaryUrgentCaption": "En 7 dies",
   "profileHeaderTitle": "Perfil",
   "profileTutorialsTitle": "Tutorials",
   "profileTutorialsSubtitle": "Explora els Tutorials de l'App",
@@ -487,7 +479,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Sense recordatori",
   "reminderOnExpiry": "El dia de caducitat",
-  "reminderDaysBefore": "{days, plural, one{1 dia abans} other{{days} dies abans}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dia abans} other{{days} dies abans}}",
   "reminderCustomDaysTitle": "Introdueix dies personalitzats",
   "reminderCascadeTitle": "Recordatoris en cascada",
   "reminderCascadeSubtitle": "Rep múltiples notificacions abans que caduqui un registre",
@@ -518,16 +510,16 @@
   "smartInsightNoRecordsHeading": "Afegeix el teu primer registre",
   "smartInsightNoRecordsBody": "Comença a realitzar el seguiment dels teus registres i Vaultara mostrarà informació intel·ligent aquí.",
   "smartInsightExpiresTodaySingleBody": "{name} venç avui. Si ja l'has renovat, actualitza la data aquí.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} vencen avui.} =1{{names} i 1 més vencen avui.} other{{names} i {extra} més vencen avui.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} vencen avui.} =1{{names} i {extra} més vencen avui.} other{{names} i {extra} més vencen avui.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} venç demà i no té recordatori. Configura'n un per no oblidar-lo.} other{{name} venç el {date} i no té recordatori. Configura'n un per no oblidar-lo.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} venç el {dateA} i {b} el {dateB}, aproximadament al mateix temps. És fàcil oblidar-ne un quan dos registres estan tan junts.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} i {c} vencen abans del {lastDate}, aproximadament al mateix temps. És fàcil oblidar-ne un quan diversos estan tan junts.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} i 1 més vencen abans del {lastDate}, aproximadament al mateix temps. És fàcil oblidar-ne un quan diversos estan tan junts.} other{{a}, {b} i {extra} més vencen abans del {lastDate}, aproximadament al mateix temps. És fàcil oblidar-ne un quan diversos estan tan junts.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} i {extra} més vencen abans del {lastDate}, aproximadament al mateix temps. És fàcil oblidar-ne un quan diversos estan tan junts.} other{{a}, {b} i {extra} més vencen abans del {lastDate}, aproximadament al mateix temps. És fàcil oblidar-ne un quan diversos estan tan junts.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Res no venç en el pròxim dia. El teu pròxim venciment és el {date}.} other{Res no venç en els pròxims {days} dies. El teu pròxim venciment és el {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 dels teus registres de {category} venç el {date}. És fàcil de passar per alt.} other{{count} dels teus registres de {category} vencen abans del {date}. És fàcil oblidar-ne un quan estan agrupats d'aquesta manera.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 pròxim venciment està cobert per un recordatori. Res més requereix la teva atenció.} other{{count} pròxims venciments estan coberts per recordatoris. Res més requereix la teva atenció.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} dels teus registres de {category} venç el {date}. És fàcil de passar per alt.} other{{count} dels teus registres de {category} vencen abans del {date}. És fàcil oblidar-ne un quan estan agrupats d'aquesta manera.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} pròxim venciment està cobert per un recordatori. Res més requereix la teva atenció.} other{{count} pròxims venciments estan coberts per recordatoris. Res més requereix la teva atenció.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Tot està al dia. Res requereix la teva atenció en aquest moment.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Res és urgent en aquest moment, però 1 pròxim registre encara no té recordatori.} other{Res és urgent en aquest moment, però {count} pròxims registres encara no tenen recordatori.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Res és urgent en aquest moment, però {count} pròxim registre encara no té recordatori.} other{Res és urgent en aquest moment, però {count} pròxims registres encara no tenen recordatori.}}",
   "smartInsightCloseExpiriesHeading": "Vencen aproximadament al mateix temps",
   "plansHeadline": "Aconsegueix tot el Vaultara",
   "plansSubhead": "Registres il·limitats, els teus propis grups i recordatoris configurats exactament com tu vulguis.",
@@ -638,7 +630,7 @@
   "reminderCascadeRemoveStep": "Elimina",
   "reminderCascadeDuplicate": "Un altre recordatori ja utilitza aquest dia",
   "reminderCascadeOutOfRange": "Introdueix entre {min} i {max} dies",
-  "reminderCascadeStepLabel": "Recordatori {position}: {days, plural, =1{1 dia} other{{days} dies}} abans",
+  "reminderCascadeStepLabel": "Recordatori {position}: {days, plural, =1{{days} dia} other{{days} dies}} abans",
   "expiryTimelineNotReady": "La teva línia de temps aparecerà un cop tinguis registres que caduquin en uns quants mesos diferents.",
   "verifyEmailResendIn": "Torna a enviar en {seconds} s",
   "verifyEmailSpamHint": "No hi és? Comprova la teva carpeta de correu brossa o spam.",
@@ -647,13 +639,10 @@
   "verifyEmailDiscardBody": "Aquest compte no està verificat. Sortir ara el suprimirà, i podràs tornar a registrar-te amb qualsevol adreça de correu electrònic.",
   "verifyEmailDiscardAction": "Descarta",
   "verifyEmailKeepWaiting": "Continua esperant",
-  "expiringBadge": "{count, plural, =1{1 venç aviat} other{{count} vencen aviat}}",
+  "expiringBadge": "{count, plural, =1{{count} venç aviat} other{{count} vencen aviat}}",
   "noRecordsToday": "Res no venç avui",
   "noRecordsTomorrow": "Res no venç demà",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} venç avui} =1{{recordName} venç demà} other{{recordName} venç d'aquí a {days} dies}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, el teu {recordName} venç avui. Ja l'has renovat? Actualitza la data de venciment.} =1{{firstName}, el teu {recordName} venç demà. Renova'l ara perquè no caduqui.} other{{firstName}, el teu {recordName} venç el {date}. Renovar-lo d'hora et manté cobert.}}",
   "cascadeFinalStepTitle": "Últim recordatori: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, el teu {recordName} venç {days, plural, =1{demà} other{d'aquí a {days} dies, el {date}}}. Aquest és el teu últim recordatori, renova'l o actualitza la data.",
   "notificationsTitle": "Notificacions",
   "notificationsProfileEnabledSubtitle": "Els recordatoris arriben a les {time}.",
   "notificationsProfileDisabledSubtitle": "Les notificacions estan desactivades.",
@@ -1842,9 +1831,9 @@
   "secHistoryIntro": "Inicis de sessió i canvis al teu compte dels últims 90 dies.",
   "secHistoryEmpty": "Encara no hi ha res per mostrar.",
   "secJustNow": "Ara mateix",
-  "secMinutesAgo": "{count, plural, one{fa 1 minut} other{fa {count} minuts}}",
-  "secHoursAgo": "{count, plural, one{fa 1 hora} other{fa {count} hores}}",
-  "secDaysAgo": "{count, plural, one{fa 1 dia} other{fa {count} dies}}",
+  "secMinutesAgo": "{count, plural, one{fa {count} minut} other{fa {count} minuts}}",
+  "secHoursAgo": "{count, plural, one{fa {count} hora} other{fa {count} hores}}",
+  "secDaysAgo": "{count, plural, one{fa {count} dia} other{fa {count} dies}}",
   "secEventNewSignIn": "Inici de sessió en un dispositiu nou",
   "secEventSignIn": "Sessió iniciada",
   "secEventPasswordChanged": "Contrasenya canviada",
@@ -2165,8 +2154,8 @@
   "lifePlanAutoChanged": "Vaultara ha vist que aquest registre ha canviat, així que està marcat com a fet.",
   "lifePlanAutoAdded": "Afegit després de començar aquest pla.",
   "lifePlanProgress": "{done} de {total} fets",
-  "lifePlanDaysToGo": "{count, plural, =1{Falta 1 dia} other{Falten {count} dies}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Fa 1 dia} other{Fa {count} dies}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Falta {count} dia} other{Falten {count} dies}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Fa {count} dia} other{Fa {count} dies}}",
   "lifePlanAllDone": "Tot està fet. Pots marcar el pla com a acabat.",
   "lifePlanFinish": "Marca com a acabat",
   "lifePlanReopen": "Torna'l a obrir",
@@ -2295,7 +2284,7 @@
   "lifePlanReadAloudUnavailable": "La lectura en veu alta no està disponible en aquest mòbil.",
   "lifePlanProofPack": "Crea un paquet de proves",
   "lifePlanOpenFamily": "Obre Família",
-  "lifePlanRemoved": "{count, plural, =1{1 registre que has esborrat compta com a cancel·lat.} other{{count} registres que has esborrat compten com a cancel·lats.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} registre que has esborrat compta com a cancel·lat.} other{{count} registres que has esborrat compten com a cancel·lats.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2353,7 +2342,7 @@
   "lostWalletCheckupBody": "Prepara't ara perquè no t'oblidis de res si es perd.",
   "lostWalletCheckupAllGood": "Tot a punt. Si mai es perd, estàs preparat.",
   "lostWalletSetPlaceBody": "Obre una targeta o un document i tria on el guardes. Fes-ho amb el DNI, el carnet de conduir i les targetes.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 element no té foto. Amb una foto se substitueix abans.} other{{count} elements no tenen foto. Amb fotos se substitueixen abans.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} element no té foto. Amb una foto se substitueix abans.} other{{count} elements no tenen foto. Amb fotos se substitueixen abans.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2361,7 +2350,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 targeta no té desat el telèfon per a targeta perduda.} other{{count} targetes no tenen desat el telèfon per a targeta perduda.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} targeta no té desat el telèfon per a targeta perduda.} other{{count} targetes no tenen desat el telèfon per a targeta perduda.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2461,7 +2450,7 @@
     }
   },
   "lostWalletReportNoCase": "Número de denúncia: encara no denunciat",
-  "lostWalletReportCount": "{count, plural, =1{1 element a sota} other{{count} elements a sota}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} element a sota} other{{count} elements a sota}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2496,7 +2485,7 @@
   "tutorialsGroupTravelFamily": "Viatges i família",
   "tutorialsGroupEmergencies": "Esdeveniments vitals i emergències",
   "tutorialsGroupPaid": "Funcions de pagament",
-  "tutorialsSteps": "{count, plural, =1{1 pas} other{{count} passos}}",
+  "tutorialsSteps": "{count, plural, =1{{count} pas} other{{count} passos}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2892,5 +2881,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} venç avui",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} venç demà",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} venç d'aquí a {days} dia} other{{recordName} venç d'aquí a {days} dies}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} ha vençut",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Un registre bloquejat necessita la teva atenció",
+  "remLockedBody": "La seva data és el {date}. Desbloqueja Vaultara per veure quin registre és.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "El teu registre «{recordName}» venç avui.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "El teu registre «{recordName}» venç demà.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "El teu registre «{recordName}» venç el {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, el teu registre «{recordName}» venç avui.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, el teu registre «{recordName}» venç demà.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, el teu registre «{recordName}» venç el {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "El registre «{recordName}» de {person} venç avui.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "El registre «{recordName}» de {person} venç demà.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "El registre «{recordName}» de {person} venç el {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "El teu registre «{recordName}» va vèncer el {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "El registre «{recordName}» de {person} va vèncer el {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Ja l'has renovat? Actualitza'n la data.",
+  "remTipTomorrow": "Renova'l ara perquè no caduqui.",
+  "remTipEarly": "Renovar aviat et manté cobert.",
+  "remTipLast": "Aquest és el teu últim recordatori abans que venci.",
+  "remTipExpired": "Renova'l, o actualitza'n la data si ja ho has fet.",
+  "remStartBody": "És hora de començar a renovar «{recordName}». Venç el {date}, així que si comences ara tindràs temps de sobres.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "És hora de començar a renovar «{recordName}» de {person}. Venç el {date}, així que començar ara deixa temps de sobres.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Recordatoris de venciment",
+  "notifChannelDescription": "Recordatoris abans que els teus registres vencin",
+  "notifTestTitle": "Notificació de prova",
+  "notifTestBody": "Els recordatoris de Vaultara arriben així.",
+  "notifTestAction": "Envia una notificació de prova",
+  "notifTestSubtitle": "Comprova que els recordatoris arriben a aquest telèfon",
+  "notifTestSent": "Prova enviada. Hauria d'arribar en uns segons.",
+  "notifAfterExpiryTitle": "Recorda-m'ho després del venciment",
+  "notifAfterExpirySubtitle": "3 i 14 dies després, si no s'ha renovat",
+  "notifWeeklyTitle": "Resum del dilluns",
+  "notifWeeklySubtitle": "Un avís el dilluns al matí quan alguna cosa venç aquella setmana",
+  "notifPushSection": "Llar i actualitzacions",
+  "notifHouseholdTitle": "Registres compartits",
+  "notifHouseholdSubtitle": "Quan un registre compartit està a punt de vèncer i ningú no l'ha renovat",
+  "notifUpdatesTitle": "Actualitzacions que has demanat",
+  "notifUpdatesSubtitle": "Quan algú envia les dades noves d'un registre",
+  "notifSecurityNote": "Els avisos de nous inicis de sessió al teu compte s'envien sempre.",
+  "notifIosHelpTitle": "No et arriben els recordatoris?",
+  "notifIosHelpSubtitle": "Revisa la configuració de l'iPhone",
+  "notifIosHelpStep1": "Obre Configuració, després Notificacions, després Vaultara, i activa Permetre notificacions.",
+  "notifIosHelpStep2": "Activa Pantalla bloquejada, Centre de notificacions i Bàners.",
+  "notifIosHelpStep3": "Si fas servir un mode de concentració, afegeix Vaultara a les apps permeses.",
+  "notifIosHelpStep4": "Obre Vaultara cada poques setmanes. L'iPhone només guarda un nombre limitat de recordatoris futurs, i en obrir l'app es programen els següents.",
+  "homeNextUpEmpty": "No venç res aviat. Tot és al dia.",
+  "homeDueSoonChip": "{count, plural, one{{count} venç en 30 dies} other{{count} vencen en 30 dies}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Categories fixades"
 }

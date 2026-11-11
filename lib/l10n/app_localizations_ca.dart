@@ -360,15 +360,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Ens alegra tornar-te a veure. Vaultara és aquí quan vulguis revisar les teves dates i registres importants.';
 
   @override
-  String get summaryAllCaption => 'Seguiment a Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Caducat';
-
-  @override
-  String get summaryExpiredCaption => 'Data de caducitat superada';
-
-  @override
   String get editorNotes => 'Notes';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Suprimeix registre';
-
-  @override
-  String get summaryAllRecordsTitle => 'Tots els registres';
 
   @override
   String get noGroupFound => 'Encara no hi ha grups';
@@ -829,22 +817,10 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count registres',
-      one: '1 registre',
+      one: '$count registre',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Pròxims';
-
-  @override
-  String get summaryUpcomingCaption => 'En 30 dies';
-
-  @override
-  String get summaryUrgentTitle => 'Urgent';
-
-  @override
-  String get summaryUrgentCaption => 'En 7 dies';
 
   @override
   String get profileHeaderTitle => 'Perfil';
@@ -945,7 +921,7 @@ class AppLocalizationsCa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days dies abans',
-      one: '1 dia abans',
+      one: '$days dia abans',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsCa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names i $extra més vencen avui.',
-      one: '$names i 1 més vencen avui.',
+      one: '$names i $extra més vencen avui.',
       zero: '$names vencen avui.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsCa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b i $extra més vencen abans del $lastDate, aproximadament al mateix temps. És fàcil oblidar-ne un quan diversos estan tan junts.',
-      one: '$a, $b i 1 més vencen abans del $lastDate, aproximadament al mateix temps. És fàcil oblidar-ne un quan diversos estan tan junts.',
+      one: '$a, $b i $extra més vencen abans del $lastDate, aproximadament al mateix temps. És fàcil oblidar-ne un quan diversos estan tan junts.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dels teus registres de $category vencen abans del $date. És fàcil oblidar-ne un quan estan agrupats d\'aquesta manera.',
-      one: '1 dels teus registres de $category venç el $date. És fàcil de passar per alt.',
+      one: '$count dels teus registres de $category venç el $date. És fàcil de passar per alt.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count pròxims venciments estan coberts per recordatoris. Res més requereix la teva atenció.',
-      one: '1 pròxim venciment està cobert per un recordatori. Res més requereix la teva atenció.',
+      one: '$count pròxim venciment està cobert per un recordatori. Res més requereix la teva atenció.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Res és urgent en aquest moment, però $count pròxims registres encara no tenen recordatori.',
-      one: 'Res és urgent en aquest moment, però 1 pròxim registre encara no té recordatori.',
+      one: 'Res és urgent en aquest moment, però $count pròxim registre encara no té recordatori.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsCa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days dies',
-      one: '1 dia',
+      one: '$days dia',
     );
     return 'Recordatori $position: $_temp0 abans';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count vencen aviat',
-      one: '1 venç aviat',
+      one: '$count venç aviat',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsCa extends AppLocalizations {
   String get noRecordsTomorrow => 'Res no venç demà';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName venç d\'aquí a $days dies',
-      one: '$recordName venç demà',
-      zero: '$recordName venç avui',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, el teu $recordName venç el $date. Renovar-lo d\'hora et manté cobert.',
-      one: '$firstName, el teu $recordName venç demà. Renova\'l ara perquè no caduqui.',
-      zero: '$firstName, el teu $recordName venç avui. Ja l\'has renovat? Actualitza la data de venciment.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Últim recordatori: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'd\'aquí a $days dies, el $date',
-      one: 'demà',
-    );
-    return '$firstName, el teu $recordName venç $_temp0. Aquest és el teu últim recordatori, renova\'l o actualitza la data.';
   }
 
   @override
@@ -5654,7 +5595,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'fa $count minuts',
-      one: 'fa 1 minut',
+      one: 'fa $count minut',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'fa $count hores',
-      one: 'fa 1 hora',
+      one: 'fa $count hora',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'fa $count dies',
-      one: 'fa 1 dia',
+      one: 'fa $count dia',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Falten $count dies',
-      one: 'Falta 1 dia',
+      one: 'Falta $count dia',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Fa $count dies',
-      one: 'Fa 1 dia',
+      one: 'Fa $count dia',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count registres que has esborrat compten com a cancel·lats.',
-      one: '1 registre que has esborrat compta com a cancel·lat.',
+      one: '$count registre que has esborrat compta com a cancel·lat.',
     );
     return '$_temp0';
   }
@@ -7302,7 +7243,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count elements no tenen foto. Amb fotos se substitueixen abans.',
-      one: '1 element no té foto. Amb una foto se substitueix abans.',
+      one: '$count element no té foto. Amb una foto se substitueix abans.',
     );
     return '$_temp0';
   }
@@ -7313,7 +7254,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count targetes no tenen desat el telèfon per a targeta perduda.',
-      one: '1 targeta no té desat el telèfon per a targeta perduda.',
+      one: '$count targeta no té desat el telèfon per a targeta perduda.',
     );
     return '$_temp0';
   }
@@ -7492,7 +7433,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count elements a sota',
-      one: '1 element a sota',
+      one: '$count element a sota',
     );
     return '$_temp0';
   }
@@ -7584,7 +7525,7 @@ class AppLocalizationsCa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count passos',
-      one: '1 pas',
+      one: '$count pas',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsCa extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Recordatori: $name caduca el $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName venç avui';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName venç demà';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName venç d\'aquí a $days dies',
+      one: '$recordName venç d\'aquí a $days dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName ha vençut';
+  }
+
+  @override
+  String get remLockedTitle => 'Un registre bloquejat necessita la teva atenció';
+
+  @override
+  String remLockedBody(String date) {
+    return 'La seva data és el $date. Desbloqueja Vaultara per veure quin registre és.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'El teu registre «$recordName» venç avui.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'El teu registre «$recordName» venç demà.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'El teu registre «$recordName» venç el $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, el teu registre «$recordName» venç avui.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, el teu registre «$recordName» venç demà.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, el teu registre «$recordName» venç el $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'El registre «$recordName» de $person venç avui.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'El registre «$recordName» de $person venç demà.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'El registre «$recordName» de $person venç el $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'El teu registre «$recordName» va vèncer el $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'El registre «$recordName» de $person va vèncer el $date.';
+  }
+
+  @override
+  String get remTipToday => 'Ja l\'has renovat? Actualitza\'n la data.';
+
+  @override
+  String get remTipTomorrow => 'Renova\'l ara perquè no caduqui.';
+
+  @override
+  String get remTipEarly => 'Renovar aviat et manté cobert.';
+
+  @override
+  String get remTipLast => 'Aquest és el teu últim recordatori abans que venci.';
+
+  @override
+  String get remTipExpired => 'Renova\'l, o actualitza\'n la data si ja ho has fet.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'És hora de començar a renovar «$recordName». Venç el $date, així que si comences ara tindràs temps de sobres.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'És hora de començar a renovar «$recordName» de $person. Venç el $date, així que començar ara deixa temps de sobres.';
+  }
+
+  @override
+  String get notifChannelName => 'Recordatoris de venciment';
+
+  @override
+  String get notifChannelDescription => 'Recordatoris abans que els teus registres vencin';
+
+  @override
+  String get notifTestTitle => 'Notificació de prova';
+
+  @override
+  String get notifTestBody => 'Els recordatoris de Vaultara arriben així.';
+
+  @override
+  String get notifTestAction => 'Envia una notificació de prova';
+
+  @override
+  String get notifTestSubtitle => 'Comprova que els recordatoris arriben a aquest telèfon';
+
+  @override
+  String get notifTestSent => 'Prova enviada. Hauria d\'arribar en uns segons.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Recorda-m\'ho després del venciment';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 i 14 dies després, si no s\'ha renovat';
+
+  @override
+  String get notifWeeklyTitle => 'Resum del dilluns';
+
+  @override
+  String get notifWeeklySubtitle => 'Un avís el dilluns al matí quan alguna cosa venç aquella setmana';
+
+  @override
+  String get notifPushSection => 'Llar i actualitzacions';
+
+  @override
+  String get notifHouseholdTitle => 'Registres compartits';
+
+  @override
+  String get notifHouseholdSubtitle => 'Quan un registre compartit està a punt de vèncer i ningú no l\'ha renovat';
+
+  @override
+  String get notifUpdatesTitle => 'Actualitzacions que has demanat';
+
+  @override
+  String get notifUpdatesSubtitle => 'Quan algú envia les dades noves d\'un registre';
+
+  @override
+  String get notifSecurityNote => 'Els avisos de nous inicis de sessió al teu compte s\'envien sempre.';
+
+  @override
+  String get notifIosHelpTitle => 'No et arriben els recordatoris?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Revisa la configuració de l\'iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Obre Configuració, després Notificacions, després Vaultara, i activa Permetre notificacions.';
+
+  @override
+  String get notifIosHelpStep2 => 'Activa Pantalla bloquejada, Centre de notificacions i Bàners.';
+
+  @override
+  String get notifIosHelpStep3 => 'Si fas servir un mode de concentració, afegeix Vaultara a les apps permeses.';
+
+  @override
+  String get notifIosHelpStep4 => 'Obre Vaultara cada poques setmanes. L\'iPhone només guarda un nombre limitat de recordatoris futurs, i en obrir l\'app es programen els següents.';
+
+  @override
+  String get homeNextUpEmpty => 'No venç res aviat. Tot és al dia.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vencen en 30 dies',
+      one: '$count venç en 30 dies',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Categories fixades';
 }

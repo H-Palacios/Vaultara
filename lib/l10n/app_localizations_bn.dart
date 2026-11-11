@@ -360,15 +360,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'আবার আপনাকে দেখে ভালো লাগছে। Vaultara এখানে রয়েছে যখনই আপনি আপনার গুরুত্বপূর্ণ তারিখ ও নথি পর্যালোচনা করতে চান।';
 
   @override
-  String get summaryAllCaption => 'Vaultara-তে ট্র্যাক করা';
-
-  @override
-  String get summaryExpiredTitle => 'মেয়াদ শেষ';
-
-  @override
-  String get summaryExpiredCaption => 'মেয়াদ শেষ হয়ে গেছে';
-
-  @override
   String get editorNotes => 'নোট';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'রেকর্ড মুছুন';
-
-  @override
-  String get summaryAllRecordsTitle => 'সব রেকর্ড';
 
   @override
   String get noGroupFound => 'এখনো কোনো গ্রুপ নেই';
@@ -835,18 +823,6 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get summaryUpcomingTitle => 'আসন্ন';
-
-  @override
-  String get summaryUpcomingCaption => '৩০ দিনের মধ্যে';
-
-  @override
-  String get summaryUrgentTitle => 'জরুরি';
-
-  @override
-  String get summaryUrgentCaption => '৭ দিনের মধ্যে';
-
-  @override
   String get profileHeaderTitle => 'প্রোফাইল';
 
   @override
@@ -945,7 +921,7 @@ class AppLocalizationsBn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days দিন আগে',
-      one: '1 দিন আগে',
+      one: '$days দিন আগে',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsBn extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days দিন',
-      one: '১ দিন',
+      one: '$days দিন',
     );
     return 'রিমাইন্ডার $position: $_temp0 আগে';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get noRecordsTomorrow => 'আগামীকাল কোনো কিছুর মেয়াদ শেষ হচ্ছে না';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName $days দিনের মধ্যে মেয়াদোত্তীর্ণ হবে',
-      one: '$recordName আগামীকাল মেয়াদোত্তীর্ণ হবে',
-      zero: '$recordName আজ মেয়াদোত্তীর্ণ হবে',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, আপনার $recordName $date তারিখে মেয়াদোত্তীর্ণ হবে। আগেভাগে নবায়ন করলে আপনি সুরক্ষিত থাকবেন।',
-      one: '$firstName, আপনার $recordName আগামীকাল মেয়াদোত্তীর্ণ হবে। এখনই নবায়ন করুন যাতে এটি বাতিল না হয়।',
-      zero: '$firstName, আপনার $recordName আজ মেয়াদোত্তীর্ণ হবে। ইতিমধ্যে নবায়ন করেছেন? এর মেয়াদোত্তীর্ণের তারিখ আপডেট করুন।',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'শেষ রিমাইন্ডার: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days দিনের মধ্যে, $date তারিখে',
-      one: 'আগামীকাল',
-    );
-    return '$firstName, আপনার $recordName $_temp0 মেয়াদোত্তীর্ণ হবে। এটি আপনার শেষ রিমাইন্ডার, এটি নবায়ন করুন বা এর তারিখ আপডেট করুন।';
   }
 
   @override
@@ -5063,7 +5004,7 @@ class AppLocalizationsBn extends AppLocalizations {
       years,
       locale: localeName,
       other: 'সাধারণত $years বছরের জন্য বৈধ',
-      one: 'সাধারণত ১ বছরের জন্য বৈধ',
+      one: 'সাধারণত $years বছরের জন্য বৈধ',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsBn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'আর $count দিন বাকি',
-      one: 'আর 1 দিন বাকি',
+      one: 'আর $count দিন বাকি',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsBn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count দিন আগে',
-      one: '1 দিন আগে',
+      one: '$count দিন আগে',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsBn extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'রিমাইন্ডার: $name-এর মেয়াদ $date-এ শেষ';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName-এর মেয়াদ আজ শেষ হচ্ছে';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName-এর মেয়াদ আগামীকাল শেষ হচ্ছে';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName-এর মেয়াদ $days দিনের মধ্যে শেষ হচ্ছে',
+      one: '$recordName-এর মেয়াদ $days দিনের মধ্যে শেষ হচ্ছে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName-এর মেয়াদ শেষ হয়ে গেছে';
+  }
+
+  @override
+  String get remLockedTitle => 'একটি লক করা রেকর্ডে আপনার মনোযোগ প্রয়োজন';
+
+  @override
+  String remLockedBody(String date) {
+    return 'এর তারিখ $date। কোন রেকর্ড তা দেখতে Vaultara আনলক করুন।';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'আপনার রেকর্ড \"$recordName\"-এর মেয়াদ আজ শেষ হচ্ছে।';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'আপনার রেকর্ড \"$recordName\"-এর মেয়াদ আগামীকাল শেষ হচ্ছে।';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'আপনার রেকর্ড \"$recordName\"-এর মেয়াদ $date তারিখে শেষ হবে।';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, আপনার রেকর্ড \"$recordName\"-এর মেয়াদ আজ শেষ হচ্ছে।';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, আপনার রেকর্ড \"$recordName\"-এর মেয়াদ আগামীকাল শেষ হচ্ছে।';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, আপনার রেকর্ড \"$recordName\"-এর মেয়াদ $date তারিখে শেষ হবে।';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: রেকর্ড \"$recordName\"-এর মেয়াদ আজ শেষ হচ্ছে।';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: রেকর্ড \"$recordName\"-এর মেয়াদ আগামীকাল শেষ হচ্ছে।';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: রেকর্ড \"$recordName\"-এর মেয়াদ $date তারিখে শেষ হবে।';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'আপনার রেকর্ড \"$recordName\"-এর মেয়াদ $date তারিখে শেষ হয়েছে।';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: রেকর্ড \"$recordName\"-এর মেয়াদ $date তারিখে শেষ হয়েছে।';
+  }
+
+  @override
+  String get remTipToday => 'ইতিমধ্যে নবায়ন করেছেন? এর তারিখ আপডেট করুন।';
+
+  @override
+  String get remTipTomorrow => 'মেয়াদ যেন শেষ না হয়, তাই এখনই নবায়ন করুন।';
+
+  @override
+  String get remTipEarly => 'আগে নবায়ন করলে আপনি সুরক্ষিত থাকেন।';
+
+  @override
+  String get remTipLast => 'মেয়াদ শেষ হওয়ার আগে এটিই আপনার শেষ রিমাইন্ডার।';
+
+  @override
+  String get remTipExpired => 'নবায়ন করুন, অথবা ইতিমধ্যে করে থাকলে তারিখ আপডেট করুন।';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" নবায়ন শুরু করার সময় হয়েছে। এর মেয়াদ $date তারিখে শেষ হবে, তাই এখন শুরু করলে আপনি যথেষ্ট সময় পাবেন।';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) নবায়ন শুরু করার সময় হয়েছে। এর মেয়াদ $date তারিখে শেষ হবে, তাই এখন শুরু করলে যথেষ্ট সময় থাকবে।';
+  }
+
+  @override
+  String get notifChannelName => 'মেয়াদ শেষের রিমাইন্ডার';
+
+  @override
+  String get notifChannelDescription => 'আপনার রেকর্ডের মেয়াদ শেষ হওয়ার আগে রিমাইন্ডার';
+
+  @override
+  String get notifTestTitle => 'পরীক্ষামূলক বিজ্ঞপ্তি';
+
+  @override
+  String get notifTestBody => 'Vaultara-র রিমাইন্ডার এভাবে আসে।';
+
+  @override
+  String get notifTestAction => 'পরীক্ষামূলক বিজ্ঞপ্তি পাঠান';
+
+  @override
+  String get notifTestSubtitle => 'রিমাইন্ডার এই ফোনে পৌঁছায় কিনা দেখুন';
+
+  @override
+  String get notifTestSent => 'পরীক্ষা পাঠানো হয়েছে। কয়েক সেকেন্ডের মধ্যে আসা উচিত।';
+
+  @override
+  String get notifAfterExpiryTitle => 'রেকর্ডের মেয়াদ শেষ হওয়ার পর মনে করিয়ে দিন';
+
+  @override
+  String get notifAfterExpirySubtitle => '৩ ও ১৪ দিন পরে, যদি নবায়ন না হয়ে থাকে';
+
+  @override
+  String get notifWeeklyTitle => 'সোমবারের সারসংক্ষেপ';
+
+  @override
+  String get notifWeeklySubtitle => 'সোমবার সকালে একটি বার্তা, যখন সেই সপ্তাহে কিছুর মেয়াদ শেষ হচ্ছে';
+
+  @override
+  String get notifPushSection => 'পরিবার ও আপডেট';
+
+  @override
+  String get notifHouseholdTitle => 'শেয়ার করা রেকর্ড';
+
+  @override
+  String get notifHouseholdSubtitle => 'যখন কোনো শেয়ার করা রেকর্ডের মেয়াদ শেষ হওয়ার কাছাকাছি এবং কেউ নবায়ন করেনি';
+
+  @override
+  String get notifUpdatesTitle => 'আপনার চাওয়া আপডেট';
+
+  @override
+  String get notifUpdatesSubtitle => 'যখন কেউ কোনো রেকর্ডের নতুন তথ্য পাঠায়';
+
+  @override
+  String get notifSecurityNote => 'আপনার অ্যাকাউন্টে নতুন সাইন-ইনের সতর্কতা সবসময় পাঠানো হয়।';
+
+  @override
+  String get notifIosHelpTitle => 'রিমাইন্ডার পাচ্ছেন না?';
+
+  @override
+  String get notifIosHelpSubtitle => 'আপনার iPhone-এর সেটিংস দেখুন';
+
+  @override
+  String get notifIosHelpStep1 => 'সেটিংস, তারপর বিজ্ঞপ্তি, তারপর Vaultara খুলুন, এবং বিজ্ঞপ্তির অনুমতি দিন চালু করুন।';
+
+  @override
+  String get notifIosHelpStep2 => 'লক স্ক্রিন, বিজ্ঞপ্তি কেন্দ্র ও ব্যানার চালু করুন।';
+
+  @override
+  String get notifIosHelpStep3 => 'আপনি ফোকাস ব্যবহার করলে, অনুমোদিত অ্যাপে Vaultara যোগ করুন।';
+
+  @override
+  String get notifIosHelpStep4 => 'কয়েক সপ্তাহ পরপর Vaultara খুলুন। iPhone সামনের সীমিত সংখ্যক রিমাইন্ডারই রাখে, আর অ্যাপ খুললে পরেরগুলো নির্ধারিত হয়।';
+
+  @override
+  String get homeNextUpEmpty => 'শীঘ্রই কিছুর মেয়াদ শেষ হচ্ছে না। সব ঠিক আছে।';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '৩০ দিনের মধ্যে $countটি বাকি',
+      one: '৩০ দিনের মধ্যে $countটি বাকি',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'পিন করা বিভাগ';
 }

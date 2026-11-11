@@ -360,15 +360,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Sizi yenidən görməyə şadıq. Vacib tarixlərinizə və sənədlərinizə nəzər salmaq istədiyiniz vaxt Vaultara buradadır.';
 
   @override
-  String get summaryAllCaption => 'Vaultara-da izlənilir';
-
-  @override
-  String get summaryExpiredTitle => 'Müddəti bitib';
-
-  @override
-  String get summaryExpiredCaption => 'Bitmə tarixi keçib';
-
-  @override
   String get editorNotes => 'Qeydlər';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Sənədi sil';
-
-  @override
-  String get summaryAllRecordsTitle => 'Bütün sənədlər';
 
   @override
   String get noGroupFound => 'Hələ qrup yoxdur';
@@ -829,22 +817,10 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count sənəd',
-      one: '1 sənəd',
+      one: '$count sənəd',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Yaxınlaşan';
-
-  @override
-  String get summaryUpcomingCaption => '30 gün ərzində';
-
-  @override
-  String get summaryUrgentTitle => 'Təcili';
-
-  @override
-  String get summaryUrgentCaption => '7 gün ərzində';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -945,7 +921,7 @@ class AppLocalizationsAz extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days gün əvvəl',
-      one: '1 gün əvvəl',
+      one: '$days gün əvvəl',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsAz extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names və daha $extra sənəd: müddəti bu gün bitir.',
-      one: '$names və daha 1 sənəd: müddəti bu gün bitir.',
+      one: '$names və daha $extra sənəd: müddəti bu gün bitir.',
       zero: '$names: müddəti bu gün bitir.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsAz extends AppLocalizations {
       extra,
       locale: localeName,
       other: '“$a”, “$b” və daha $extra sənədin müddəti $lastDate tarixindən əvvəl, təxminən eyni vaxtda bitir. Bir neçə sənəd bu qədər yaxın olanda birini unutmaq asandır.',
-      one: '“$a”, “$b” və daha 1 sənədin müddəti $lastDate tarixindən əvvəl, təxminən eyni vaxtda bitir. Bir neçə sənəd bu qədər yaxın olanda birini unutmaq asandır.',
+      one: '“$a”, “$b” və daha $extra sənədin müddəti $lastDate tarixindən əvvəl, təxminən eyni vaxtda bitir. Bir neçə sənəd bu qədər yaxın olanda birini unutmaq asandır.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category kateqoriyasındakı $count sənədinizin müddəti $date tarixindən əvvəl bitir. Sənədlər belə bir yerə toplananda birini unutmaq asandır.',
-      one: '$category kateqoriyasındakı 1 sənədinizin müddəti $date tarixində bitir. Bunu gözdən qaçırmaq asandır.',
+      one: '$category kateqoriyasındakı $count sənədinizin müddəti $date tarixində bitir. Bunu gözdən qaçırmaq asandır.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Yaxınlaşan $count bitmə tarixi xatırlatmalarla əhatə olunub. Başqa heç nə diqqətinizi tələb etmir.',
-      one: 'Yaxınlaşan 1 bitmə tarixi xatırlatma ilə əhatə olunub. Başqa heç nə diqqətinizi tələb etmir.',
+      one: 'Yaxınlaşan $count bitmə tarixi xatırlatma ilə əhatə olunub. Başqa heç nə diqqətinizi tələb etmir.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Hazırda təcili heç nə yoxdur, amma yaxınlaşan $count sənədin hələ xatırlatması yoxdur.',
-      one: 'Hazırda təcili heç nə yoxdur, amma yaxınlaşan 1 sənədin hələ xatırlatması yoxdur.',
+      one: 'Hazırda təcili heç nə yoxdur, amma yaxınlaşan $count sənədin hələ xatırlatması yoxdur.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsAz extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days gün',
-      one: '1 gün',
+      one: '$days gün',
     );
     return 'Xatırlatma $position: $_temp0 əvvəl';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Müddəti bitən: $count',
-      one: 'Müddəti bitən: 1',
+      one: 'Müddəti bitən: $count',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsAz extends AppLocalizations {
   String get noRecordsTomorrow => 'Sabah heç nəyin müddəti bitmir';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '“$recordName” sənədinin müddəti $days gün sonra bitir',
-      one: '“$recordName” sənədinin müddəti sabah bitir',
-      zero: '“$recordName” sənədinin müddəti bu gün bitir',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, “$recordName” sənədinizin müddəti $date tarixində bitir. Müddətini vaxtından əvvəl uzatmaq sizi arxayın saxlayır.',
-      one: '$firstName, “$recordName” sənədinizin müddəti sabah bitir. Etibarsız olmaması üçün müddətini indi uzadın.',
-      zero: '$firstName, “$recordName” sənədinizin müddəti bu gün bitir. Artıq müddətini uzatmısınız? Bitmə tarixini yeniləyin.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Son xatırlatma: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days gün sonra, $date tarixində',
-      one: 'sabah',
-    );
-    return '$firstName, “$recordName” sənədinizin müddəti $_temp0 bitir. Bu, son xatırlatmadır: müddətini uzadın və ya tarixini yeniləyin.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count şəkil hələ şifrələnməyib',
-      one: '1 şəkil hələ şifrələnməyib',
+      one: '$count şəkil hələ şifrələnməyib',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Hələ şifrələnməmiş $count şəkliniz var. Onları indi şifrələyə bilərik.',
-      one: 'Hələ şifrələnməmiş 1 şəkliniz var. Onu indi şifrələyə bilərik.',
+      one: 'Hələ şifrələnməmiş $count şəkliniz var. Onu indi şifrələyə bilərik.',
     );
     return '$_temp0 Bu bitənədək Vaultara-nı açıq saxlayın.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsAz extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Çox cəhd edildi. $seconds saniyə gözləyin və yenidən cəhd edin.',
-      one: 'Çox cəhd edildi. 1 saniyə gözləyin və yenidən cəhd edin.',
+      one: 'Çox cəhd edildi. $seconds saniyə gözləyin və yenidən cəhd edin.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsAz extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Çox cəhd edildi. $minutes dəqiqə gözləyin və yenidən cəhd edin.',
-      one: 'Çox cəhd edildi. 1 dəqiqə gözləyin və yenidən cəhd edin.',
+      one: 'Çox cəhd edildi. $minutes dəqiqə gözləyin və yenidən cəhd edin.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count sənəd diqqətinizi tələb edir',
-      one: '1 sənəd diqqətinizi tələb edir',
+      one: '$count sənəd diqqətinizi tələb edir',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsAz extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Adətən $years il etibarlıdır',
-      one: 'Adətən 1 il etibarlıdır',
+      one: 'Adətən $years il etibarlıdır',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dəqiqə əvvəl',
-      one: '1 dəqiqə əvvəl',
+      one: '$count dəqiqə əvvəl',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count saat əvvəl',
-      one: '1 saat əvvəl',
+      one: '$count saat əvvəl',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsAz extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count gün əvvəl',
-      one: '1 gün əvvəl',
+      one: '$count gün əvvəl',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsAz extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Xatırlatma: $name $date tarixində bitir';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '“$recordName” sənədinin müddəti bu gün bitir';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '“$recordName” sənədinin müddəti sabah bitir';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '“$recordName” sənədinin müddəti $days gün sonra bitir',
+      one: '“$recordName” sənədinin müddəti $days gün sonra bitir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '“$recordName” sənədinin müddəti bitib';
+  }
+
+  @override
+  String get remLockedTitle => 'Kilidli sənəd diqqətinizi tələb edir';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Tarixi $date. Hansı sənəd olduğunu görmək üçün Vaultara-nın kilidini açın.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '“$recordName” sənədinizin müddəti bu gün bitir.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '“$recordName” sənədinizin müddəti sabah bitir.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '“$recordName” sənədinizin müddəti $date tarixində bitir.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, “$recordName” sənədinizin müddəti bu gün bitir.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, “$recordName” sənədinizin müddəti sabah bitir.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, “$recordName” sənədinizin müddəti $date tarixində bitir.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: “$recordName” sənədinin müddəti bu gün bitir.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: “$recordName” sənədinin müddəti sabah bitir.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: “$recordName” sənədinin müddəti $date tarixində bitir.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '“$recordName” sənədinizin müddəti $date tarixində bitib.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: “$recordName” sənədinin müddəti $date tarixində bitib.';
+  }
+
+  @override
+  String get remTipToday => 'Artıq yeniləmisiniz? Tarixi yeniləyin.';
+
+  @override
+  String get remTipTomorrow => 'Müddəti bitməsin deyə indi yeniləyin.';
+
+  @override
+  String get remTipEarly => 'Erkən yeniləmək sizi qorunmuş saxlayır.';
+
+  @override
+  String get remTipLast => 'Bu, müddət bitməzdən əvvəl son xatırlatmanızdır.';
+
+  @override
+  String get remTipExpired => 'Yeniləyin və ya artıq etmisinizsə, tarixi dəyişin.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '“$recordName” sənədini yeniləməyə başlamaq vaxtıdır. Müddəti $date tarixində bitir, indi başlasanız, kifayət qədər vaxtınız olacaq.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '“$recordName” ($person) sənədini yeniləməyə başlamaq vaxtıdır. Müddəti $date tarixində bitir, indi başlasaq, kifayət qədər vaxt olacaq.';
+  }
+
+  @override
+  String get notifChannelName => 'Müddət xatırlatmaları';
+
+  @override
+  String get notifChannelDescription => 'Sənədlərinizin müddəti bitməzdən əvvəl xatırlatmalar';
+
+  @override
+  String get notifTestTitle => 'Test bildirişi';
+
+  @override
+  String get notifTestBody => 'Vaultara xatırlatmaları belə gəlir.';
+
+  @override
+  String get notifTestAction => 'Test bildirişi göndər';
+
+  @override
+  String get notifTestSubtitle => 'Xatırlatmaların bu telefona çatdığını yoxlayın';
+
+  @override
+  String get notifTestSent => 'Test göndərildi. Bir neçə saniyəyə gəlməlidir.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Sənədin müddəti bitdikdən sonra xatırlat';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 və 14 gün sonra, yenilənməyibsə';
+
+  @override
+  String get notifWeeklyTitle => 'Bazar ertəsi xülasəsi';
+
+  @override
+  String get notifWeeklySubtitle => 'Həmin həftə nəyinsə müddəti bitəndə bazar ertəsi səhər qeyd';
+
+  @override
+  String get notifPushSection => 'Ailə və yeniləmələr';
+
+  @override
+  String get notifHouseholdTitle => 'Paylaşılan sənədlər';
+
+  @override
+  String get notifHouseholdSubtitle => 'Paylaşılan sənədin müddəti bitmək üzrə olanda və heç kim onu yeniləməyəndə';
+
+  @override
+  String get notifUpdatesTitle => 'İstədiyiniz yeniləmələr';
+
+  @override
+  String get notifUpdatesSubtitle => 'Kimsə sənədin yeni məlumatlarını göndərəndə';
+
+  @override
+  String get notifSecurityNote => 'Hesabınıza yeni girişlər barədə xəbərdarlıqlar həmişə göndərilir.';
+
+  @override
+  String get notifIosHelpTitle => 'Xatırlatmalar gəlmir?';
+
+  @override
+  String get notifIosHelpSubtitle => 'iPhone ayarlarınızı yoxlayın';
+
+  @override
+  String get notifIosHelpStep1 => 'Ayarları, sonra Bildirişləri, sonra Vaultara-nı açın və Bildirişlərə icazə verin seçimini aktiv edin.';
+
+  @override
+  String get notifIosHelpStep2 => 'Kilid ekranı, Bildiriş mərkəzi və Bannerləri aktiv edin.';
+
+  @override
+  String get notifIosHelpStep3 => 'Fokus istifadə edirsinizsə, Vaultara-nı icazə verilən tətbiqlərə əlavə edin.';
+
+  @override
+  String get notifIosHelpStep4 => 'Vaultara-nı bir neçə həftədən bir açın. iPhone qabaqcadan yalnız məhdud sayda xatırlatma saxlayır, tətbiqi açmaq isə növbətiləri planlaşdırır.';
+
+  @override
+  String get homeNextUpEmpty => 'Tezliklə heç nəyin müddəti bitmir. Hər şey qaydasındadır.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 gün ərzində $count sənəd',
+      one: '30 gün ərzində $count sənəd',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Bərkidilmiş kateqoriyalar';
 }

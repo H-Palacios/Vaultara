@@ -360,15 +360,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Radi vás opäť vidíme. Vaultara je pripravená, keď si chcete prezrieť svoje dôležité dátumy a záznamy.';
 
   @override
-  String get summaryAllCaption => 'Sledované vo Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Vypršané';
-
-  @override
-  String get summaryExpiredCaption => 'Dátum platnosti vypršal';
-
-  @override
   String get editorNotes => 'Poznámky';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Odstrániť záznam';
-
-  @override
-  String get summaryAllRecordsTitle => 'Všetky záznamy';
 
   @override
   String get noGroupFound => 'Zatiaľ žiadne skupiny';
@@ -830,22 +818,10 @@ class AppLocalizationsSk extends AppLocalizations {
       locale: localeName,
       other: '$count záznamov',
       few: '$count záznamy',
-      one: '1 záznam',
+      one: '$count záznam',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Nadchádzajúce';
-
-  @override
-  String get summaryUpcomingCaption => 'Do 30 dní';
-
-  @override
-  String get summaryUrgentTitle => 'Naliehavé';
-
-  @override
-  String get summaryUrgentCaption => 'Do 7 dní';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -947,7 +923,7 @@ class AppLocalizationsSk extends AppLocalizations {
       locale: localeName,
       other: '$days dní vopred',
       few: '$days dni vopred',
-      one: '1 deň vopred',
+      one: '$days deň vopred',
     );
     return '$_temp0';
   }
@@ -1050,7 +1026,7 @@ class AppLocalizationsSk extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names a ešte $extra záznamov vyprší dnes.',
-      one: '$names a ešte 1 záznam vypršia dnes.',
+      one: '$names a ešte $extra záznam vypršia dnes.',
       zero: '$names vypršia dnes.',
     );
     return '$_temp0';
@@ -1083,7 +1059,7 @@ class AppLocalizationsSk extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b a ešte $extra záznamov vyprší do $lastDate, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď je ich niekoľko takto blízko seba.',
-      one: '$a, $b a ešte 1 záznam vypršia do $lastDate, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď je ich niekoľko takto blízko seba.',
+      one: '$a, $b a ešte $extra záznam vypršia do $lastDate, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď je ich niekoľko takto blízko seba.',
     );
     return '$_temp0';
   }
@@ -1105,7 +1081,7 @@ class AppLocalizationsSk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Platnosť vašich $count záznamov v kategórii $category vyprší do $date. Je ľahké na jeden zabudnúť, keď sú takto zoskupené.',
-      one: 'Platnosť vášho 1 záznamu v kategórii $category vyprší $date. Je ľahké ho prehliadnuť.',
+      one: 'Platnosť vášho $count záznamu v kategórii $category vyprší $date. Je ľahké ho prehliadnuť.',
     );
     return '$_temp0';
   }
@@ -1116,7 +1092,7 @@ class AppLocalizationsSk extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count nadchádzajúcich termínov je pokrytých pripomienkami. Nič iné nevyžaduje vašu pozornosť.',
-      one: '1 nadchádzajúci termín je pokrytý pripomienkou. Nič iné nevyžaduje vašu pozornosť.',
+      one: '$count nadchádzajúci termín je pokrytý pripomienkou. Nič iné nevyžaduje vašu pozornosť.',
     );
     return '$_temp0';
   }
@@ -1130,7 +1106,7 @@ class AppLocalizationsSk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Momentálne nič nie je naliehavé, ale $count nadchádzajúcich záznamov ešte nemá pripomienku.',
-      one: 'Momentálne nič nie je naliehavé, ale 1 nadchádzajúci záznam ešte nemá pripomienku.',
+      one: 'Momentálne nič nie je naliehavé, ale $count nadchádzajúci záznam ešte nemá pripomienku.',
     );
     return '$_temp0';
   }
@@ -1255,7 +1231,7 @@ class AppLocalizationsSk extends AppLocalizations {
       locale: localeName,
       other: '$days dní',
       few: '$days dni',
-      one: '1 deň',
+      one: '$days deň',
     );
     return 'Pripomienka $position: $_temp0 vopred';
   }
@@ -1293,7 +1269,7 @@ class AppLocalizationsSk extends AppLocalizations {
       locale: localeName,
       other: '$count čoskoro vyprší',
       few: '$count čoskoro vypršia',
-      one: '1 čoskoro vyprší',
+      one: '$count čoskoro vyprší',
     );
     return '$_temp0';
   }
@@ -1305,45 +1281,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get noRecordsTomorrow => 'Zajtra nič nevyprší';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Platnosť položky $recordName vyprší o $days dní',
-      few: 'Platnosť položky $recordName vyprší o $days dni',
-      one: 'Platnosť položky $recordName vyprší zajtra',
-      zero: 'Platnosť položky $recordName vyprší dnes',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, platnosť položky $recordName vyprší $date. Včasné obnovenie zaistí nepretržitú platnosť.',
-      one: '$firstName, platnosť položky $recordName vyprší zajtra. Obnovte ju hneď, aby nestratila platnosť.',
-      zero: '$firstName, platnosť položky $recordName vyprší dnes. Už ste ju obnovili? Aktualizujte dátum vypršania.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Posledná pripomienka: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'o $days dní, dňa $date',
-      few: 'o $days dni, dňa $date',
-      one: 'zajtra',
-    );
-    return '$firstName, platnosť položky $recordName vyprší $_temp0. Toto je vaša posledná pripomienka, obnovte ju alebo aktualizujte jej dátum.';
   }
 
   @override
@@ -4088,7 +4027,7 @@ class AppLocalizationsSk extends AppLocalizations {
       other: '$count fotiek ešte nie je zašifrovaných',
       many: '$count fotky ešte nie je zašifrovaných',
       few: '$count fotky ešte nie sú zašifrované',
-      one: '1 fotka ešte nie je zašifrovaná',
+      one: '$count fotka ešte nie je zašifrovaná',
     );
     return '$_temp0';
   }
@@ -4211,7 +4150,7 @@ class AppLocalizationsSk extends AppLocalizations {
       other: 'Máte $count fotiek, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.',
       many: 'Máte $count fotky, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.',
       few: 'Máte $count fotky, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.',
-      one: 'Máte 1 fotku, ktorá ešte nie je zašifrovaná. Môžeme ju zašifrovať teraz.',
+      one: 'Máte $count fotku, ktorá ešte nie je zašifrovaná. Môžeme ju zašifrovať teraz.',
     );
     return '$_temp0 Nechajte Vaultara otvorenú, kým sa to nedokončí.';
   }
@@ -4248,7 +4187,7 @@ class AppLocalizationsSk extends AppLocalizations {
       other: 'Príliš veľa pokusov. Počkajte $seconds sekúnd a skúste to znova.',
       many: 'Príliš veľa pokusov. Počkajte $seconds sekundy a skúste to znova.',
       few: 'Príliš veľa pokusov. Počkajte $seconds sekundy a skúste to znova.',
-      one: 'Príliš veľa pokusov. Počkajte 1 sekundu a skúste to znova.',
+      one: 'Príliš veľa pokusov. Počkajte $seconds sekundu a skúste to znova.',
     );
     return '$_temp0';
   }
@@ -4261,7 +4200,7 @@ class AppLocalizationsSk extends AppLocalizations {
       other: 'Príliš veľa pokusov. Počkajte $minutes minút a skúste to znova.',
       many: 'Príliš veľa pokusov. Počkajte $minutes minúty a skúste to znova.',
       few: 'Príliš veľa pokusov. Počkajte $minutes minúty a skúste to znova.',
-      one: 'Príliš veľa pokusov. Počkajte 1 minútu a skúste to znova.',
+      one: 'Príliš veľa pokusov. Počkajte $minutes minútu a skúste to znova.',
     );
     return '$_temp0';
   }
@@ -8422,4 +8361,208 @@ class AppLocalizationsSk extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Pripomenutie: $name vyprší $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'Platnosť položky $recordName vyprší dnes';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'Platnosť položky $recordName vyprší zajtra';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Platnosť položky $recordName vyprší o $days dní',
+      many: 'Platnosť položky $recordName vyprší o $days dňa',
+      few: 'Platnosť položky $recordName vyprší o $days dni',
+      one: 'Platnosť položky $recordName vyprší o $days deň',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'Platnosť položky $recordName vypršala';
+  }
+
+  @override
+  String get remLockedTitle => 'Zamknutý záznam vyžaduje vašu pozornosť';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Jeho dátum je $date. Odomknite Vaultaru a uvidíte, o ktorý záznam ide.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Platnosť vášho záznamu $recordName vyprší dnes.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Platnosť vášho záznamu $recordName vyprší zajtra.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Platnosť vášho záznamu $recordName vyprší $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, platnosť vášho záznamu $recordName vyprší dnes.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, platnosť vášho záznamu $recordName vyprší zajtra.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, platnosť vášho záznamu $recordName vyprší $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: platnosť záznamu $recordName vyprší dnes.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: platnosť záznamu $recordName vyprší zajtra.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: platnosť záznamu $recordName vyprší $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Platnosť vášho záznamu $recordName vypršala $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: platnosť záznamu $recordName vypršala $date.';
+  }
+
+  @override
+  String get remTipToday => 'Už obnovené? Aktualizujte dátum.';
+
+  @override
+  String get remTipTomorrow => 'Obnovte ho teraz, aby platnosť nevypršala.';
+
+  @override
+  String get remTipEarly => 'Včasné obnovenie vás udrží v bezpečí.';
+
+  @override
+  String get remTipLast => 'Toto je posledná pripomienka pred vypršaním.';
+
+  @override
+  String get remTipExpired => 'Obnovte ho, alebo aktualizujte dátum, ak je už obnovený.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Je čas začať s obnovou záznamu $recordName. Platnosť vyprší $date, takže keď začnete teraz, budete mať dosť času.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Je čas začať s obnovou záznamu $recordName ($person). Platnosť vyprší $date, takže keď začnete teraz, bude dosť času.';
+  }
+
+  @override
+  String get notifChannelName => 'Pripomienky vypršania';
+
+  @override
+  String get notifChannelDescription => 'Pripomienky pred vypršaním vašich záznamov';
+
+  @override
+  String get notifTestTitle => 'Testovacie upozornenie';
+
+  @override
+  String get notifTestBody => 'Takto prichádzajú pripomienky z Vaultary.';
+
+  @override
+  String get notifTestAction => 'Poslať testovacie upozornenie';
+
+  @override
+  String get notifTestSubtitle => 'Skontrolujte, či pripomienky chodia na tento telefón';
+
+  @override
+  String get notifTestSent => 'Test odoslaný. Mal by prísť o pár sekúnd.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Pripomenúť po vypršaní záznamu';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 a 14 dní potom, ak nebol obnovený';
+
+  @override
+  String get notifWeeklyTitle => 'Pondelkový súhrn';
+
+  @override
+  String get notifWeeklySubtitle => 'Správa v pondelok ráno, keď v ten týždeň niečo vyprší';
+
+  @override
+  String get notifPushSection => 'Domácnosť a aktualizácie';
+
+  @override
+  String get notifHouseholdTitle => 'Zdieľané záznamy';
+
+  @override
+  String get notifHouseholdSubtitle => 'Keď zdieľaný záznam čoskoro vyprší a nikto ho neobnovil';
+
+  @override
+  String get notifUpdatesTitle => 'Aktualizácie, o ktoré ste požiadali';
+
+  @override
+  String get notifUpdatesSubtitle => 'Keď niekto pošle nové údaje záznamu';
+
+  @override
+  String get notifSecurityNote => 'Upozornenia na nové prihlásenia do vášho účtu sa posielajú vždy.';
+
+  @override
+  String get notifIosHelpTitle => 'Nechodia vám pripomienky?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Skontrolujte nastavenia iPhonu';
+
+  @override
+  String get notifIosHelpStep1 => 'Otvorte Nastavenia, potom Hlásenia, potom Vaultara, a zapnite Povoliť hlásenia.';
+
+  @override
+  String get notifIosHelpStep2 => 'Zapnite Zamknutú obrazovku, Centrum hlásení a Bannery.';
+
+  @override
+  String get notifIosHelpStep3 => 'Ak používate režim sústredenia, pridajte Vaultaru medzi povolené aplikácie.';
+
+  @override
+  String get notifIosHelpStep4 => 'Otvárajte Vaultaru raz za pár týždňov. iPhone si drží iba obmedzený počet budúcich pripomienok a otvorenie aplikácie naplánuje ďalšie.';
+
+  @override
+  String get homeNextUpEmpty => 'Čoskoro nič nevyprší. Všetko je v poriadku.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vyprší do 30 dní',
+      many: '$count vyprší do 30 dní',
+      few: '$count vypršia do 30 dní',
+      one: '$count vyprší do 30 dní',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Pripnuté kategórie';
 }

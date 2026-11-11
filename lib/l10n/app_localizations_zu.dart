@@ -360,15 +360,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Siyajabula ukukubona futhi. IVaultara ihlale ilungele uma ufuna ukubuyekeza izinsuku namarekhodi abalulekile.';
 
   @override
-  String get summaryAllCaption => 'Zilandelwa ku-Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Ziphelelwe isikhathi';
-
-  @override
-  String get summaryExpiredCaption => 'Usuku lokuphelelwa isikhathi seludlulile';
-
-  @override
   String get editorNotes => 'Amanothi';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Susa irekhodi';
-
-  @override
-  String get summaryAllRecordsTitle => 'Wonke amarekhodi';
 
   @override
   String get noGroupFound => 'Awekho amaqembu okwamanje';
@@ -829,22 +817,10 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count amarekhodi',
-      one: '1 irekhodi',
+      one: '$count irekhodi',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Eziza';
-
-  @override
-  String get summaryUpcomingCaption => 'Phakathi kwezinsuku ezingu-30';
-
-  @override
-  String get summaryUrgentTitle => 'Ngokushesha';
-
-  @override
-  String get summaryUrgentCaption => 'Phakathi kwezinsuku ezingu-7';
 
   @override
   String get profileHeaderTitle => 'Iphrofayela';
@@ -945,7 +921,7 @@ class AppLocalizationsZu extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Izinsuku ezingu-$days ngaphambi',
-      one: 'Usuku 1 ngaphambi',
+      one: 'Usuku $days ngaphambi',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsZu extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names kanye nezinye ezingu-$extra ziphelelwa yisikhathi namuhla.',
-      one: '$names kanye nenye e-1 ziphelelwa yisikhathi namuhla.',
+      one: '$names kanye nenye e-$extra ziphelelwa yisikhathi namuhla.',
       zero: '$names ziphelelwa yisikhathi namuhla.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsZu extends AppLocalizations {
       extra,
       locale: localeName,
       other: 'I-$a, i-$b kanye namanye amarekhodi angu-$extra ngaphezulu ziphelelwa yisikhathi ngomhlaka-$lastDate, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma ezimbalwa ziseduze kanje.',
-      one: 'I-$a, i-$b kanye nerekhodi eli-1 ngaphezulu ziphelelwa yisikhathi ngomhlaka-$lastDate, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma ezimbalwa ziseduze kanje.',
+      one: 'I-$a, i-$b kanye nerekhodi eli-$extra ngaphezulu ziphelelwa yisikhathi ngomhlaka-$lastDate, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma ezimbalwa ziseduze kanje.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Azi-$count kwamarekhodi akho e-$category ziphelelwa yisikhathi ngomhlaka-$date. Kulula ukukhohlwa eyodwa uma zihlelwe ndawonye kanje.',
-      one: 'Eli-1 kwamarekhodi akho e-$category liphelelwa yisikhathi ngomhlaka-$date. Kulula ukungalinaki.',
+      one: 'Eli-$count kwamarekhodi akho e-$category liphelelwa yisikhathi ngomhlaka-$date. Kulula ukungalinaki.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Amarekhodi azayo angu-$count asekelwe yizikhumbuzo. Akukho okunye okudinga ukunakwa nguwe.',
-      one: 'Irekhodi eli-1 elizayo lisekelwe yisikhumbuzo. Akukho okunye okudinga ukunakwa nguwe.',
+      one: 'Irekhodi eli-$count elizayo lisekelwe yisikhumbuzo. Akukho okunye okudinga ukunakwa nguwe.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Akukho okuphuthumayo njengamanje, kodwa amarekhodi azayo angu-$count awakabi nazo izikhumbuzo.',
-      one: 'Akukho okuphuthumayo njengamanje, kodwa irekhodi eli-1 elizayo alikabi naso isikhumbuzo.',
+      one: 'Akukho okuphuthumayo njengamanje, kodwa irekhodi eli-$count elizayo alikabi naso isikhumbuzo.',
     );
     return '$_temp0';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count okuphelelwa yisikhathi maduze',
-      one: '1 okuphelelwa yisikhathi maduze',
+      one: '$count okuphelelwa yisikhathi maduze',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsZu extends AppLocalizations {
   String get noRecordsTomorrow => 'Akukho okuphelelwa yisikhathi kusasa';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Irekhodi le-$recordName liphelelwa yisikhathi ezinsukwini ezi-$days',
-      one: 'Irekhodi le-$recordName liphelelwa yisikhathi kusasa',
-      zero: 'Irekhodi le-$recordName liphelelwa yisikhathi namhlanje',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, irekhodi lakho le-$recordName liphelelwa yisikhathi ngomhlaka-$date. Ukulivuselela kusenesikhathi kuqinisekisa ukuthi lihlale lisebenza.',
-      one: '$firstName, irekhodi lakho le-$recordName liphelelwa yisikhathi kusasa. Livuselele manje ukuze lingayeki ukusebenza.',
-      zero: '$firstName, irekhodi lakho le-$recordName liphelelwa yisikhathi namhlanje. Usulivuselele vele? Buyekeza usuku lwalo lokuphelelwa yisikhathi.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Isikhumbuzo sokugcina: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'ezinsukwini ezi-$days, ngomhlaka-$date',
-      one: 'kusasa',
-    );
-    return '$firstName, irekhodi lakho le-$recordName liphelelwa yisikhathi $_temp0. Lesi isikhumbuzo sakho sokugcina, livuselele noma ubuyekeze usuku lwalo.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'izithombe ezingu-$count azikafihlwa okwamanje',
-      one: 'isithombe esi-1 asikafihlwa okwamanje',
+      one: 'isithombe esi-$count asikafihlwa okwamanje',
     );
     return '$_temp0';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsZu extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Imizamo eminingi kakhulu. Sicela ulinde amasekhondi angu-$seconds bese uzama futhi.',
-      one: 'Imizamo eminingi kakhulu. Sicela ulinde isekhondi eli-1 bese uzama futhi.',
+      one: 'Imizamo eminingi kakhulu. Sicela ulinde isekhondi eli-$seconds bese uzama futhi.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsZu extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Imizamo eminingi kakhulu. Sicela ulinde amaminithi angu-$minutes bese uzama futhi.',
-      one: 'Imizamo eminingi kakhulu. Sicela ulinde iminithi eli-1 bese uzama futhi.',
+      one: 'Imizamo eminingi kakhulu. Sicela ulinde iminithi eli-$minutes bese uzama futhi.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Amarekhodi angu-$count adinga ukunaka kwakho',
-      one: 'Irekhodi eli-1 lidinga ukunaka kwakho',
+      one: 'Irekhodi eli-$count lidinga ukunaka kwakho',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kusele izinsuku ezingu-$count',
-      one: 'Kusele usuku olu-1',
+      one: 'Kusele usuku olu-$count',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Izinsuku ezingu-$count ezedlule',
-      one: 'Usuku olu-1 olwedlule',
+      one: 'Usuku olu-$count olwedlule',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Amarekhodi angu-$count owasusile abalwa njengakhanseliwe.',
-      one: 'Irekhodi eli-1 olisusile libalwa njengelikhanseliwe.',
+      one: 'Irekhodi eli-$count olisusile libalwa njengelikhanseliwe.',
     );
     return '$_temp0';
   }
@@ -7580,7 +7521,7 @@ class AppLocalizationsZu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Izinyathelo ezingu-$count',
-      one: 'Isinyathelo esingu-1',
+      one: 'Isinyathelo esingu-$count',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsZu extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Isikhumbuzo: $name siphelelwa ngo-$date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'I-$recordName iphelelwa yisikhathi namuhla';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'I-$recordName iphelelwa yisikhathi kusasa';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'I-$recordName iphelelwa yisikhathi ezinsukwini ezi-$days',
+      one: 'I-$recordName iphelelwa yisikhathi osukwini olu-$days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'I-$recordName iphelelwe yisikhathi';
+  }
+
+  @override
+  String get remLockedTitle => 'Irekhodi elivaliwe lidinga ukunaka kwakho';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Usuku lwalo lungu-$date. Vula i-Vaultara ukuze ubone ukuthi yiliphi irekhodi.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Irekhodi lakho \"$recordName\" liphelelwa yisikhathi namuhla.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Irekhodi lakho \"$recordName\" liphelelwa yisikhathi kusasa.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Irekhodi lakho \"$recordName\" liphelelwa yisikhathi ngomhlaka-$date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, irekhodi lakho \"$recordName\" liphelelwa yisikhathi namuhla.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, irekhodi lakho \"$recordName\" liphelelwa yisikhathi kusasa.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, irekhodi lakho \"$recordName\" liphelelwa yisikhathi ngomhlaka-$date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Irekhodi lika-$person \"$recordName\" liphelelwa yisikhathi namuhla.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Irekhodi lika-$person \"$recordName\" liphelelwa yisikhathi kusasa.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Irekhodi lika-$person \"$recordName\" liphelelwa yisikhathi ngomhlaka-$date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Irekhodi lakho \"$recordName\" liphelelwe yisikhathi ngomhlaka-$date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Irekhodi lika-$person \"$recordName\" liphelelwe yisikhathi ngomhlaka-$date.';
+  }
+
+  @override
+  String get remTipToday => 'Usulivuselelile? Buyekeza usuku lwalo.';
+
+  @override
+  String get remTipTomorrow => 'Livuselele manje ukuze lingaphelelwa yisikhathi.';
+
+  @override
+  String get remTipEarly => 'Ukuvuselela kusenesikhathi kukugcina uvikelekile.';
+
+  @override
+  String get remTipLast => 'Lesi yisikhumbuzo sakho sokugcina ngaphambi kokuthi liphelelwe yisikhathi.';
+
+  @override
+  String get remTipExpired => 'Livuselele, noma ubuyekeze usuku lwalo uma usukwenzile.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Yisikhathi sokuqala ukuvuselela i-\"$recordName\". Liphelelwa yisikhathi ngomhlaka-$date, ngakho uma uqala manje uzoba nesikhathi esanele.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Yisikhathi sokuqala ukuvuselela i-\"$recordName\" lika-$person. Liphelelwa yisikhathi ngomhlaka-$date, ngakho ukuqala manje kushiya isikhathi esanele.';
+  }
+
+  @override
+  String get notifChannelName => 'Izikhumbuzo zokuphelelwa yisikhathi';
+
+  @override
+  String get notifChannelDescription => 'Izikhumbuzo ngaphambi kokuthi amarekhodi akho aphelelwe yisikhathi';
+
+  @override
+  String get notifTestTitle => 'Isaziso sokuhlola';
+
+  @override
+  String get notifTestBody => 'Izikhumbuzo ze-Vaultara zifika kanje.';
+
+  @override
+  String get notifTestAction => 'Thumela isaziso sokuhlola';
+
+  @override
+  String get notifTestSubtitle => 'Hlola ukuthi izikhumbuzo ziyafika kule foni';
+
+  @override
+  String get notifTestSent => 'Ukuhlola kuthunyelwe. Kufanele kufike emizuzwaneni embalwa.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Ngikhumbuze ngemva kokuba irekhodi liphelelwe yisikhathi';
+
+  @override
+  String get notifAfterExpirySubtitle => 'Izinsuku ezi-3 nezi-14 ngemva kwalokho, uma lingavuselelwanga';
+
+  @override
+  String get notifWeeklyTitle => 'Isifinyezo sangoMsombuluko';
+
+  @override
+  String get notifWeeklySubtitle => 'Umlayezo ngoMsombuluko ekuseni uma okuthile kuphelelwa yisikhathi ngalelo sonto';
+
+  @override
+  String get notifPushSection => 'Umndeni nezibuyekezo';
+
+  @override
+  String get notifHouseholdTitle => 'Amarekhodi abiwe';
+
+  @override
+  String get notifHouseholdSubtitle => 'Uma irekhodi elabiwe selizophelelwa yisikhathi futhi kungekho olivuselele';
+
+  @override
+  String get notifUpdatesTitle => 'Izibuyekezo ozicelile';
+
+  @override
+  String get notifUpdatesSubtitle => 'Uma othile ethumela imininingwane emisha yerekhodi';
+
+  @override
+  String get notifSecurityNote => 'Izexwayiso mayelana nokungena okusha ku-akhawunti yakho zihlala zithunyelwa.';
+
+  @override
+  String get notifIosHelpTitle => 'Awutholi izikhumbuzo?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Hlola izilungiselelo ze-iPhone yakho';
+
+  @override
+  String get notifIosHelpStep1 => 'Vula iSettings, bese iNotifications, bese iVaultara, bese uvula iAllow Notifications.';
+
+  @override
+  String get notifIosHelpStep2 => 'Vula iLock Screen, iNotification Centre namaBanners.';
+
+  @override
+  String get notifIosHelpStep3 => 'Uma usebenzisa iFocus, engeza iVaultara kuma-app awavumelayo.';
+
+  @override
+  String get notifIosHelpStep4 => 'Vula iVaultara njalo emva kwamasonto ambalwa. I-iPhone igcina inani elilinganiselwe lezikhumbuzo ezizayo kuphela, futhi ukuvula i-app kuhlela ezilandelayo.';
+
+  @override
+  String get homeNextUpEmpty => 'Akukho okuphelelwa yisikhathi maduze. Konke kulungile.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kufanele ezinsukwini ezingu-30',
+      one: '$count kufanele ezinsukwini ezingu-30',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Izigaba eziphiniwe';
 }

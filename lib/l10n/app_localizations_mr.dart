@@ -360,15 +360,6 @@ class AppLocalizationsMr extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'तुम्हाला पुन्हा पाहून आनंद झाला. तुमच्या महत्त्वाच्या तारखा आणि नोंदींचा आढावा घ्यायचा असेल तेव्हा Vaultara इथेच आहे.';
 
   @override
-  String get summaryAllCaption => 'Vaultara मध्ये ट्रॅक केलेल्या';
-
-  @override
-  String get summaryExpiredTitle => 'मुदत संपली';
-
-  @override
-  String get summaryExpiredCaption => 'मुदतसमाप्तीची तारीख उलटून गेली';
-
-  @override
   String get editorNotes => 'टिपा';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'नोंद हटवा';
-
-  @override
-  String get summaryAllRecordsTitle => 'सर्व नोंदी';
 
   @override
   String get noGroupFound => 'अद्याप कोणतेही गट नाहीत';
@@ -829,22 +817,10 @@ class AppLocalizationsMr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count नोंदी',
-      one: '1 नोंद',
+      one: '$count नोंद',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'आगामी';
-
-  @override
-  String get summaryUpcomingCaption => '30 दिवसांत';
-
-  @override
-  String get summaryUrgentTitle => 'तातडीचे';
-
-  @override
-  String get summaryUrgentCaption => '7 दिवसांत';
 
   @override
   String get profileHeaderTitle => 'प्रोफाइल';
@@ -945,7 +921,7 @@ class AppLocalizationsMr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days दिवस आधी',
-      one: '1 दिवस आधी',
+      one: '$days दिवस आधी',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsMr extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names आणि आणखी $extra नोंदींची मुदत आज संपते.',
-      one: '$names आणि आणखी 1 नोंदीची मुदत आज संपते.',
+      one: '$names आणि आणखी $extra नोंदीची मुदत आज संपते.',
       zero: '$names ची मुदत आज संपते.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsMr extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b आणि आणखी $extra नोंदींची मुदत $lastDate पूर्वी, म्हणजे जवळपास एकाच वेळी संपते. अनेक नोंदी इतक्या जवळ असल्या की एखादी विसरणे सोपे असते.',
-      one: '$a, $b आणि आणखी 1 नोंदीची मुदत $lastDate पूर्वी, म्हणजे जवळपास एकाच वेळी संपते. अनेक नोंदी इतक्या जवळ असल्या की एखादी विसरणे सोपे असते.',
+      one: '$a, $b आणि आणखी $extra नोंदीची मुदत $lastDate पूर्वी, म्हणजे जवळपास एकाच वेळी संपते. अनेक नोंदी इतक्या जवळ असल्या की एखादी विसरणे सोपे असते.',
     );
     return '$_temp0';
   }
@@ -1092,7 +1068,7 @@ class AppLocalizationsMr extends AppLocalizations {
       days,
       locale: localeName,
       other: 'पुढील $days दिवसांत कशाचीही मुदत संपत नाही. तुमची पुढील मुदतसमाप्ती $date रोजी आहे.',
-      one: 'पुढील 1 दिवसात कशाचीही मुदत संपत नाही. तुमची पुढील मुदतसमाप्ती $date रोजी आहे.',
+      one: 'पुढील $days दिवसात कशाचीही मुदत संपत नाही. तुमची पुढील मुदतसमाप्ती $date रोजी आहे.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsMr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category श्रेणीतील तुमच्या $count नोंदींची मुदत $date पूर्वी संपते. अशा एकत्र असलेल्या नोंदींपैकी एखादी विसरणे सोपे असते.',
-      one: '$category श्रेणीतील तुमच्या 1 नोंदीची मुदत $date रोजी संपते. याकडे दुर्लक्ष होणे सोपे आहे.',
+      one: '$category श्रेणीतील तुमच्या $count नोंदीची मुदत $date रोजी संपते. याकडे दुर्लक्ष होणे सोपे आहे.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsMr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count आगामी मुदतसमाप्ती रिमाइंडरने कव्हर केल्या आहेत. इतर कशाकडेही लक्ष देण्याची गरज नाही.',
-      one: '1 आगामी मुदतसमाप्ती रिमाइंडरने कव्हर केली आहे. इतर कशाकडेही लक्ष देण्याची गरज नाही.',
+      one: '$count आगामी मुदतसमाप्ती रिमाइंडरने कव्हर केली आहे. इतर कशाकडेही लक्ष देण्याची गरज नाही.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsMr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'सध्या काहीही तातडीचे नाही, पण $count आगामी नोंदींसाठी अद्याप रिमाइंडर नाही.',
-      one: 'सध्या काहीही तातडीचे नाही, पण 1 आगामी नोंदीसाठी अद्याप रिमाइंडर नाही.',
+      one: 'सध्या काहीही तातडीचे नाही, पण $count आगामी नोंदीसाठी अद्याप रिमाइंडर नाही.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsMr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days दिवस',
-      one: '1 दिवस',
+      one: '$days दिवस',
     );
     return 'रिमाइंडर $position: $_temp0 आधी';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsMr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count नोंदींची मुदत संपत आहे',
-      one: '1 नोंदीची मुदत संपत आहे',
+      one: '$count नोंदीची मुदत संपत आहे',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsMr extends AppLocalizations {
   String get noRecordsTomorrow => 'उद्या कशाचीही मुदत संपत नाही';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName ची मुदत $days दिवसांत संपते',
-      one: '$recordName ची मुदत उद्या संपते',
-      zero: '$recordName ची मुदत आज संपते',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, तुमच्या $recordName या नोंदीची मुदत $date रोजी संपते. लवकर नूतनीकरण केल्यास तुम्ही सुरक्षित राहाल.',
-      one: '$firstName, तुमच्या $recordName या नोंदीची मुदत उद्या संपते. मुदत उलटून जाऊ नये म्हणून आताच नूतनीकरण करा.',
-      zero: '$firstName, तुमच्या $recordName या नोंदीची मुदत आज संपते. आधीच नूतनीकरण केले आहे? तिची मुदतसमाप्तीची तारीख अपडेट करा.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'शेवटचा रिमाइंडर: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days दिवसांत, $date रोजी',
-      one: 'उद्या',
-    );
-    return '$firstName, तुमच्या $recordName या नोंदीची मुदत $_temp0 संपते. हा तुमचा शेवटचा रिमाइंडर आहे. नूतनीकरण करा किंवा तिची तारीख अपडेट करा.';
   }
 
   @override
@@ -6789,7 +6730,7 @@ class AppLocalizationsMr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count दिवस बाकी',
-      one: '1 दिवस बाकी',
+      one: '$count दिवस बाकी',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsMr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count दिवसांपूर्वी',
-      one: '1 दिवसापूर्वी',
+      one: '$count दिवसापूर्वी',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsMr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'तुम्ही हटवलेल्या $count नोंदी रद्द मानल्या जातात.',
-      one: 'तुम्ही हटवलेली 1 नोंद रद्द मानली जाते.',
+      one: 'तुम्ही हटवलेली $count नोंद रद्द मानली जाते.',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsMr extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'स्मरणपत्र: $name ची मुदत $date ला संपते';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName ची मुदत आज संपते';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName ची मुदत उद्या संपते';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName ची मुदत $days दिवसांत संपते',
+      one: '$recordName ची मुदत $days दिवसात संपते',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName ची मुदत संपली आहे';
+  }
+
+  @override
+  String get remLockedTitle => 'एका लॉक केलेल्या नोंदीकडे तुमचे लक्ष हवे आहे';
+
+  @override
+  String remLockedBody(String date) {
+    return 'तिची तारीख $date आहे. कोणती नोंद आहे ते पाहण्यासाठी Vaultara अनलॉक करा.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'तुमच्या \"$recordName\" नोंदीची मुदत आज संपते.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'तुमच्या \"$recordName\" नोंदीची मुदत उद्या संपते.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'तुमच्या \"$recordName\" नोंदीची मुदत $date रोजी संपते.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, तुमच्या \"$recordName\" नोंदीची मुदत आज संपते.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, तुमच्या \"$recordName\" नोंदीची मुदत उद्या संपते.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, तुमच्या \"$recordName\" नोंदीची मुदत $date रोजी संपते.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: \"$recordName\" नोंदीची मुदत आज संपते.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: \"$recordName\" नोंदीची मुदत उद्या संपते.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" नोंदीची मुदत $date रोजी संपते.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'तुमच्या \"$recordName\" नोंदीची मुदत $date रोजी संपली.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" नोंदीची मुदत $date रोजी संपली.';
+  }
+
+  @override
+  String get remTipToday => 'आधीच नूतनीकरण केले? तिची तारीख अपडेट करा.';
+
+  @override
+  String get remTipTomorrow => 'मुदत संपू नये म्हणून आत्ताच नूतनीकरण करा.';
+
+  @override
+  String get remTipEarly => 'लवकर नूतनीकरण केल्याने तुम्ही सुरक्षित राहता.';
+
+  @override
+  String get remTipLast => 'मुदत संपण्यापूर्वीचे हे तुमचे शेवटचे स्मरणपत्र आहे.';
+
+  @override
+  String get remTipExpired => 'नूतनीकरण करा, किंवा आधीच केले असल्यास तारीख अपडेट करा.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" चे नूतनीकरण सुरू करण्याची वेळ झाली आहे. मुदत $date रोजी संपते, त्यामुळे आत्ता सुरू केल्यास तुमच्याकडे भरपूर वेळ असेल.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) चे नूतनीकरण सुरू करण्याची वेळ झाली आहे. मुदत $date रोजी संपते, त्यामुळे आत्ता सुरू केल्यास भरपूर वेळ राहील.';
+  }
+
+  @override
+  String get notifChannelName => 'मुदत स्मरणपत्रे';
+
+  @override
+  String get notifChannelDescription => 'तुमच्या नोंदींची मुदत संपण्यापूर्वी स्मरणपत्रे';
+
+  @override
+  String get notifTestTitle => 'चाचणी सूचना';
+
+  @override
+  String get notifTestBody => 'Vaultara ची स्मरणपत्रे अशी येतात.';
+
+  @override
+  String get notifTestAction => 'चाचणी सूचना पाठवा';
+
+  @override
+  String get notifTestSubtitle => 'स्मरणपत्रे या फोनवर पोहोचतात का ते तपासा';
+
+  @override
+  String get notifTestSent => 'चाचणी पाठवली. काही सेकंदांत यायला हवी.';
+
+  @override
+  String get notifAfterExpiryTitle => 'नोंदीची मुदत संपल्यानंतर आठवण करून द्या';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 आणि 14 दिवसांनी, नूतनीकरण झाले नसल्यास';
+
+  @override
+  String get notifWeeklyTitle => 'सोमवारचा सारांश';
+
+  @override
+  String get notifWeeklySubtitle => 'त्या आठवड्यात काहीतरी संपत असल्यास सोमवारी सकाळी एक संदेश';
+
+  @override
+  String get notifPushSection => 'कुटुंब आणि अपडेट्स';
+
+  @override
+  String get notifHouseholdTitle => 'शेअर केलेल्या नोंदी';
+
+  @override
+  String get notifHouseholdSubtitle => 'शेअर केलेल्या नोंदीची मुदत संपत आली असेल आणि कोणी नूतनीकरण केले नसेल तेव्हा';
+
+  @override
+  String get notifUpdatesTitle => 'तुम्ही मागितलेले अपडेट्स';
+
+  @override
+  String get notifUpdatesSubtitle => 'कोणी नोंदीचे नवीन तपशील पाठवल्यावर';
+
+  @override
+  String get notifSecurityNote => 'तुमच्या खात्यातील नवीन साइन-इनच्या सूचना नेहमी पाठवल्या जातात.';
+
+  @override
+  String get notifIosHelpTitle => 'स्मरणपत्रे मिळत नाहीत?';
+
+  @override
+  String get notifIosHelpSubtitle => 'तुमच्या iPhone ची सेटिंग्ज तपासा';
+
+  @override
+  String get notifIosHelpStep1 => 'सेटिंग्ज, नंतर सूचना, नंतर Vaultara उघडा, आणि सूचनांना परवानगी द्या सुरू करा.';
+
+  @override
+  String get notifIosHelpStep2 => 'लॉक स्क्रीन, सूचना केंद्र आणि बॅनर सुरू करा.';
+
+  @override
+  String get notifIosHelpStep3 => 'तुम्ही फोकस वापरत असल्यास, Vaultara परवानगी असलेल्या अ‍ॅप्समध्ये जोडा.';
+
+  @override
+  String get notifIosHelpStep4 => 'दर काही आठवड्यांनी Vaultara उघडा. iPhone पुढील मर्यादित स्मरणपत्रेच ठेवतो, आणि अ‍ॅप उघडल्यावर पुढची ठरवली जातात.';
+
+  @override
+  String get homeNextUpEmpty => 'लवकरच काहीही संपत नाही. सर्व काही ठीक आहे.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 दिवसांत $count देय',
+      one: '30 दिवसांत $count देय',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'पिन केलेल्या श्रेणी';
 }

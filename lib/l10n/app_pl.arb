@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Miło Cię tu widzieć. Vaultara pomaga organizować ważne daty i zapisy w jednym bezpiecznym miejscu.",
   "homeWelcomeSubtitleBack": "Dobrze Cię znowu widzieć. Vaultara jest gotowa, gdy chcesz przejrzeć swoje ważne daty i zapisy.",
   "homeWelcomeTitle": "Witamy",
-  "summaryAllCaption": "Śledzone w Vaultara",
-  "summaryExpiredTitle": "Wygasłe",
-  "summaryExpiredCaption": "Data ważności minęła",
   "editorNotes": "Notatki",
   "editorReminderNone": "Brak przypomnienia",
   "editorReminderOnExpiry": "W dniu wygaśnięcia",
@@ -192,7 +189,6 @@
   "addRecord": "Dodaj rekord",
   "noRecordsYet": "Brak rekordów.",
   "deleteRecordTitle": "Usuń rekord",
-  "summaryAllRecordsTitle": "Wszystkie rekordy",
   "noGroupFound": "Brak grup",
   "groupLabel": "{count, plural, one{{count} grupa} few{{count} grupy} many{{count} grup} other{{count} grupy}}",
   "recordsLabel": "{count, plural, one{{count} rekord} few{{count} rekordy} many{{count} rekordów} other{{count} rekordu}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Dodaj notatki (opcjonalnie)",
   "expiryTimelineTitle": "Oś czasu wygaśnięcia",
   "expiryTimelineSubtitle": "Stuknij miesiąc, aby zobaczyć rekordy wygasające w tym miesiącu",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 rekord} few{{count} rekordy} many{{count} rekordów} other{{count} rekordu}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} rekord} few{{count} rekordy} many{{count} rekordów} other{{count} rekordu}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Nadchodzące",
-  "summaryUpcomingCaption": "W ciągu 30 dni",
-  "summaryUrgentTitle": "Pilne",
-  "summaryUrgentCaption": "W ciągu 7 dni",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Samouczki",
   "profileTutorialsSubtitle": "Przeglądaj Samouczki Aplikacji",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Brak przypomnienia",
   "reminderOnExpiry": "W dniu wygaśnięcia",
-  "reminderDaysBefore": "{days, plural, one{1 dzień wcześniej} few{{days} dni wcześniej} many{{days} dni wcześniej} other{{days} dni wcześniej}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dzień wcześniej} few{{days} dni wcześniej} many{{days} dni wcześniej} other{{days} dni wcześniej}}",
   "reminderCustomDaysTitle": "Wprowadź niestandardowe dni",
   "reminderCascadeTitle": "Przypomnienia kaskadowe",
   "reminderCascadeSubtitle": "Otrzymuj wiele powiadomień przed wygaśnięciem rekordu",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Dodaj swój pierwszy rekord",
   "smartInsightNoRecordsBody": "Zacznij śledzić swoje rekordy, a Vaultara pokaże tutaj inteligentne analizy.",
   "smartInsightExpiresTodaySingleBody": "{name} wygasa dziś. Jeśli rekord został już odnowiony, zaktualizuj tutaj datę.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} wygasają dziś.} =1{{names} i jeszcze 1 rekord wygasają dziś.} few{{names} i jeszcze {extra} rekordy wygasają dziś.} many{{names} i jeszcze {extra} rekordów wygasa dziś.} other{{names} i jeszcze {extra} rekordu wygasa dziś.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} wygasają dziś.} =1{{names} i jeszcze {extra} rekord wygasają dziś.} few{{names} i jeszcze {extra} rekordy wygasają dziś.} many{{names} i jeszcze {extra} rekordów wygasa dziś.} other{{names} i jeszcze {extra} rekordu wygasa dziś.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} wygasa jutro i nie ma przypomnienia. Ustaw je, aby o tym nie zapomnieć.} few{{name} wygasa {date} i nie ma przypomnienia. Ustaw je, aby o tym nie zapomnieć.} many{{name} wygasa {date} i nie ma przypomnienia. Ustaw je, aby o tym nie zapomnieć.} other{{name} wygasa {date} i nie ma przypomnienia. Ustaw je, aby o tym nie zapomnieć.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} wygasa {dateA}, a {b} {dateB}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy dwa rekordy są tak blisko siebie.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} i {c} wygasają przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} i jeszcze 1 rekord wygasają przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.} few{{a}, {b} i jeszcze {extra} rekordy wygasają przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.} many{{a}, {b} i jeszcze {extra} rekordów wygasa przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.} other{{a}, {b} i jeszcze {extra} rekordu wygasa przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} i jeszcze {extra} rekord wygasają przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.} few{{a}, {b} i jeszcze {extra} rekordy wygasają przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.} many{{a}, {b} i jeszcze {extra} rekordów wygasa przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.} other{{a}, {b} i jeszcze {extra} rekordu wygasa przed {lastDate}, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Nic nie wygasa w ciągu najbliższego dnia. Następne wygaśnięcie: {date}.} few{Nic nie wygasa w ciągu najbliższych {days} dni. Następne wygaśnięcie: {date}.} many{Nic nie wygasa w ciągu najbliższych {days} dni. Następne wygaśnięcie: {date}.} other{Nic nie wygasa w ciągu najbliższych {days} dnia. Następne wygaśnięcie: {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 z Twoich rekordów w kategorii {category} wygasa {date}. Łatwo go przeoczyć.} few{{count} z Twoich rekordów w kategorii {category} wygasają przed {date}. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.} many{{count} z Twoich rekordów w kategorii {category} wygasa przed {date}. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.} other{{count} z Twoich rekordów w kategorii {category} wygasa przed {date}. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 nadchodzące wygaśnięcie jest objęte przypomnieniem. Nic więcej nie wymaga Twojej uwagi.} few{{count} nadchodzące wygaśnięcia są objęte przypomnieniami. Nic więcej nie wymaga Twojej uwagi.} many{{count} nadchodzących wygaśnięć jest objętych przypomnieniami. Nic więcej nie wymaga Twojej uwagi.} other{{count} nadchodzącego wygaśnięcia jest objęte przypomnieniami. Nic więcej nie wymaga Twojej uwagi.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} z Twoich rekordów w kategorii {category} wygasa {date}. Łatwo go przeoczyć.} few{{count} z Twoich rekordów w kategorii {category} wygasają przed {date}. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.} many{{count} z Twoich rekordów w kategorii {category} wygasa przed {date}. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.} other{{count} z Twoich rekordów w kategorii {category} wygasa przed {date}. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} nadchodzące wygaśnięcie jest objęte przypomnieniem. Nic więcej nie wymaga Twojej uwagi.} few{{count} nadchodzące wygaśnięcia są objęte przypomnieniami. Nic więcej nie wymaga Twojej uwagi.} many{{count} nadchodzących wygaśnięć jest objętych przypomnieniami. Nic więcej nie wymaga Twojej uwagi.} other{{count} nadchodzącego wygaśnięcia jest objęte przypomnieniami. Nic więcej nie wymaga Twojej uwagi.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Wszystko jest aktualne. W tej chwili nic nie wymaga Twojej uwagi.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{W tej chwili nic nie jest pilne, ale 1 nadchodzący rekord nie ma jeszcze przypomnienia.} few{W tej chwili nic nie jest pilne, ale {count} nadchodzące rekordy nie mają jeszcze przypomnienia.} many{W tej chwili nic nie jest pilne, ale {count} nadchodzących rekordów nie ma jeszcze przypomnienia.} other{W tej chwili nic nie jest pilne, ale {count} nadchodzącego rekordu nie ma jeszcze przypomnienia.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{W tej chwili nic nie jest pilne, ale {count} nadchodzący rekord nie ma jeszcze przypomnienia.} few{W tej chwili nic nie jest pilne, ale {count} nadchodzące rekordy nie mają jeszcze przypomnienia.} many{W tej chwili nic nie jest pilne, ale {count} nadchodzących rekordów nie ma jeszcze przypomnienia.} other{W tej chwili nic nie jest pilne, ale {count} nadchodzącego rekordu nie ma jeszcze przypomnienia.}}",
   "smartInsightCloseExpiriesHeading": "Wygasają w podobnym czasie",
   "plansHeadline": "Uzyskaj pełny dostęp do Vaultara",
   "plansSubhead": "Nieograniczona liczba rekordów, własne grupy i przypomnienia dopasowane dokładnie do Twoich potrzeb.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Usuń",
   "reminderCascadeDuplicate": "Inne przypomnienie już korzysta z tego dnia",
   "reminderCascadeOutOfRange": "Wpisz wartość od {min} do {max} dni",
-  "reminderCascadeStepLabel": "Przypomnienie {position}: {days, plural, =1{1 dzień} few{{days} dni} many{{days} dni} other{{days} dnia}} wcześniej",
+  "reminderCascadeStepLabel": "Przypomnienie {position}: {days, plural, =1{{days} dzień} few{{days} dni} many{{days} dni} other{{days} dnia}} wcześniej",
   "expiryTimelineNotReady": "Oś czasu pojawi się, gdy dodasz rekordy wygasające w kilku różnych miesiącach.",
   "verifyEmailResendIn": "Wyślij ponownie za {seconds} s",
   "verifyEmailSpamHint": "Nie ma go tam? Sprawdź folder ze spamem lub wiadomościami-śmieciami.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "To konto nie jest zweryfikowane. Wyjście teraz spowoduje jego usunięcie, a Rejestracji będzie można dokonać ponownie przy użyciu dowolnego adresu e-mail.",
   "verifyEmailDiscardAction": "Odrzuć",
   "verifyEmailKeepWaiting": "Czekaj dalej",
-  "expiringBadge": "{count, plural, =1{1 wkrótce wygasa} few{{count} wkrótce wygasają} many{{count} wkrótce wygasa} other{{count} wkrótce wygasa}}",
+  "expiringBadge": "{count, plural, =1{{count} wkrótce wygasa} few{{count} wkrótce wygasają} many{{count} wkrótce wygasa} other{{count} wkrótce wygasa}}",
   "noRecordsToday": "Dzisiaj nic nie wygasa",
   "noRecordsTomorrow": "Jutro nic nie wygasa",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} wygasa dzisiaj} =1{{recordName} wygasa jutro} few{{recordName} wygasa za {days} dni} many{{recordName} wygasa za {days} dni} other{{recordName} wygasa za {days} dni}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, Twój {recordName} wygasa dzisiaj. Czy został już odnowiony? Zaktualizuj datę wygaśnięcia.} =1{{firstName}, Twój {recordName} wygasa jutro. Odnów go teraz, aby nie stracił ważności.} few{{firstName}, Twój {recordName} wygasa {date}. Wcześniejsze odnowienie zapewnia ciągłość ochrony.} many{{firstName}, Twój {recordName} wygasa {date}. Wcześniejsze odnowienie zapewnia ciągłość ochrony.} other{{firstName}, Twój {recordName} wygasa {date}. Wcześniejsze odnowienie zapewnia ciągłość ochrony.}}",
   "cascadeFinalStepTitle": "Ostatnie przypomnienie: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, Twój {recordName} wygasa {days, plural, =1{jutro} few{za {days} dni, {date}} many{za {days} dni, {date}} other{za {days} dni, {date}}}. To Twoje ostatnie przypomnienie, odnów go lub zaktualizuj datę.",
   "notificationsTitle": "Powiadomienia",
   "notificationsProfileEnabledSubtitle": "Przypomnienia przychodzą o {time}.",
   "notificationsProfileDisabledSubtitle": "Powiadomienia są wyłączone.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "Otrzymuj jedno powiadomienie o godzinie przypomnienia z listą wszystkiego, co wygasa tego dnia.",
   "dailyDigestTurnedOn": "Twoje przypomnienia przychodzą teraz jako jedno codzienne podsumowanie.",
   "dailyDigestTurnedOff": "Osobne przypomnienia dla każdego rekordu są znowu włączone.",
-  "dailyDigestTitle": "{count, plural, one{1 rekord wymaga twojej uwagi} few{{count} rekordy wymagają twojej uwagi} many{{count} rekordów wymaga twojej uwagi} other{{count} rekordu wymaga twojej uwagi}}",
+  "dailyDigestTitle": "{count, plural, one{{count} rekord wymaga twojej uwagi} few{{count} rekordy wymagają twojej uwagi} many{{count} rekordów wymaga twojej uwagi} other{{count} rekordu wymaga twojej uwagi}}",
   "dailyDigestBody": "Wkrótce: {names}.",
   "dailyDigestBodyMore": "Wkrótce: {names} i jeszcze {count}.",
   "dailyDigestLockedRecord": "zablokowany rekord",
   "renewReasonRepeat": "{months, plural, one{Na podstawie ustawienia powtarzania co miesiąc} few{Na podstawie ustawienia powtarzania co {months} miesiące} many{Na podstawie ustawienia powtarzania co {months} miesięcy} other{Na podstawie ustawienia powtarzania co {months} miesiąca}}",
   "renewReasonHistory": "{count, plural, one{Na podstawie ostatniego odnowienia} few{Na podstawie ostatnich {count} odnowień} many{Na podstawie ostatnich {count} odnowień} other{Na podstawie ostatnich {count} odnowień}}",
-  "renewReasonTypical": "{years, plural, one{Zwykle ważne przez 1 rok} few{Zwykle ważne przez {years} lata} many{Zwykle ważne przez {years} lat} other{Zwykle ważne przez {years} roku}}",
+  "renewReasonTypical": "{years, plural, one{Zwykle ważne przez {years} rok} few{Zwykle ważne przez {years} lata} many{Zwykle ważne przez {years} lat} other{Zwykle ważne przez {years} roku}}",
   "renewChangeHint": "Dotknij daty, aby ją zmienić.",
   "renewPickDate": "Wybierz nową datę wygaśnięcia",
   "renewPickDateHint": "Wybierz datę podaną na twoim nowym dokumencie.",
@@ -1811,9 +1800,9 @@
   "secHistoryIntro": "Logowania i zmiany na twoim koncie z ostatnich 90 dni.",
   "secHistoryEmpty": "Nie ma jeszcze nic do wyświetlenia.",
   "secJustNow": "Przed chwilą",
-  "secMinutesAgo": "{count, plural, one{1 minutę temu} few{{count} minuty temu} many{{count} minut temu} other{{count} minuty temu}}",
-  "secHoursAgo": "{count, plural, one{1 godzinę temu} few{{count} godziny temu} many{{count} godzin temu} other{{count} godziny temu}}",
-  "secDaysAgo": "{count, plural, one{1 dzień temu} few{{count} dni temu} many{{count} dni temu} other{{count} dnia temu}}",
+  "secMinutesAgo": "{count, plural, one{{count} minutę temu} few{{count} minuty temu} many{{count} minut temu} other{{count} minuty temu}}",
+  "secHoursAgo": "{count, plural, one{{count} godzinę temu} few{{count} godziny temu} many{{count} godzin temu} other{{count} godziny temu}}",
+  "secDaysAgo": "{count, plural, one{{count} dzień temu} few{{count} dni temu} many{{count} dni temu} other{{count} dnia temu}}",
   "secEventNewSignIn": "Logowanie z nowego urządzenia",
   "secEventSignIn": "Zalogowano",
   "secEventPasswordChanged": "Zmieniono hasło",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "Rekord „{recordName}” wygasa dziś",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "Rekord „{recordName}” wygasa jutro",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{Rekord „{recordName}” wygasa za {days} dzień} few{Rekord „{recordName}” wygasa za {days} dni} many{Rekord „{recordName}” wygasa za {days} dni} other{Rekord „{recordName}” wygasa za {days} dnia}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "Rekord „{recordName}” wygasł",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Zablokowany rekord wymaga Twojej uwagi",
+  "remLockedBody": "Jego data to {date}. Odblokuj Vaultara, aby zobaczyć, który to rekord.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Twój rekord „{recordName}” wygasa dziś.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Twój rekord „{recordName}” wygasa jutro.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Twój rekord „{recordName}” wygasa {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, Twój rekord „{recordName}” wygasa dziś.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, Twój rekord „{recordName}” wygasa jutro.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, Twój rekord „{recordName}” wygasa {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Rekord „{recordName}” ({person}) wygasa dziś.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Rekord „{recordName}” ({person}) wygasa jutro.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Rekord „{recordName}” ({person}) wygasa {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Twój rekord „{recordName}” wygasł {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Rekord „{recordName}” ({person}) wygasł {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Już odnowiony? Zaktualizuj datę.",
+  "remTipTomorrow": "Odnów go teraz, żeby nie wygasł.",
+  "remTipEarly": "Wczesne odnowienie zapewnia ciągłość.",
+  "remTipLast": "To ostatnie przypomnienie przed wygaśnięciem.",
+  "remTipExpired": "Odnów go albo zaktualizuj datę, jeśli już to zrobiono.",
+  "remStartBody": "Czas zacząć odnawianie „{recordName}”. Rekord wygasa {date}, więc zaczynając teraz, masz mnóstwo czasu.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Czas zacząć odnawianie „{recordName}” ({person}). Rekord wygasa {date}, więc zaczynając teraz, jest mnóstwo czasu.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Przypomnienia o wygaśnięciu",
+  "notifChannelDescription": "Przypomnienia przed wygaśnięciem Twoich rekordów",
+  "notifTestTitle": "Powiadomienie testowe",
+  "notifTestBody": "Tak wyglądają przypomnienia z Vaultara.",
+  "notifTestAction": "Wyślij powiadomienie testowe",
+  "notifTestSubtitle": "Sprawdź, czy przypomnienia docierają na ten telefon",
+  "notifTestSent": "Test wysłany. Powinien dotrzeć za kilka sekund.",
+  "notifAfterExpiryTitle": "Przypominaj po wygaśnięciu rekordu",
+  "notifAfterExpirySubtitle": "3 i 14 dni później, jeśli nie został odnowiony",
+  "notifWeeklyTitle": "Podsumowanie poniedziałkowe",
+  "notifWeeklySubtitle": "Wiadomość w poniedziałek rano, gdy coś wygasa w tym tygodniu",
+  "notifPushSection": "Gospodarstwo i aktualizacje",
+  "notifHouseholdTitle": "Udostępnione rekordy",
+  "notifHouseholdSubtitle": "Gdy udostępniony rekord zaraz wygaśnie, a nikt go nie odnowił",
+  "notifUpdatesTitle": "Aktualizacje, o które prosisz",
+  "notifUpdatesSubtitle": "Gdy ktoś przyśle nowe dane rekordu",
+  "notifSecurityNote": "Alerty o nowych logowaniach na Twoje konto są wysyłane zawsze.",
+  "notifIosHelpTitle": "Nie dostajesz przypomnień?",
+  "notifIosHelpSubtitle": "Sprawdź ustawienia iPhone'a",
+  "notifIosHelpStep1": "Otwórz Ustawienia, potem Powiadomienia, potem Vaultara, i włącz Zezwalaj na powiadomienia.",
+  "notifIosHelpStep2": "Włącz Ekran blokady, Centrum powiadomień i Banery.",
+  "notifIosHelpStep3": "Jeśli używasz trybu skupienia, dodaj Vaultara do dozwolonych aplikacji.",
+  "notifIosHelpStep4": "Otwieraj Vaultara co kilka tygodni. iPhone przechowuje tylko ograniczoną liczbę przyszłych przypomnień, a otwarcie aplikacji planuje kolejne.",
+  "homeNextUpEmpty": "Wkrótce nic nie wygasa. Wszystko gotowe.",
+  "homeDueSoonChip": "{count, plural, one{{count} wygasa w ciągu 30 dni} few{{count} wygasają w ciągu 30 dni} many{{count} wygasa w ciągu 30 dni} other{{count} wygasa w ciągu 30 dni}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Przypięte kategorie"
 }

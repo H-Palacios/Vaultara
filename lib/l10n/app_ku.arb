@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Bi xêr hatî. Vaultara alîkariya te dike ku dîrokên girîng û tomaran li cihekî ewle rêk bixî.",
   "homeWelcomeSubtitleBack": "Em kêfxweş in ku dîsa te dibînin. Vaultara her dem amade ye ji bo dîrok û tomarên te yên girîng.",
   "homeWelcomeTitle": "Bi xêr hatî",
-  "summaryAllCaption": "Di Vaultara de têne şopandin",
-  "summaryExpiredTitle": "Bidawîbûyî",
-  "summaryExpiredCaption": "Dîroka bidawîbûnê derbas bûye",
   "editorNotes": "Nîşe",
   "editorReminderNone": "Bê bîrxistin",
   "editorReminderOnExpiry": "Di roja bidawîbûnê de",
@@ -192,7 +189,6 @@
   "addRecord": "Tomarê zêde bike",
   "noRecordsYet": "Hîn tu tomar tune ne.",
   "deleteRecordTitle": "Tomarê jê bibe",
-  "summaryAllRecordsTitle": "Hemû tomar",
   "noGroupFound": "Hîn tu kom tune ne",
   "groupLabel": "{count, plural, one{{count} kom} other{{count} kom}}",
   "recordsLabel": "{count, plural, one{{count} tomar} other{{count} tomar}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Nîşeyan zêde bike (bijarî)",
   "expiryTimelineTitle": "Xeta dema bidawîbûnê",
   "expiryTimelineSubtitle": "Li mehekê bitikîne da ku tomarên wê mehê bidawî dibin bibînî",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 tomar} other{{count} tomar}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} tomar} other{{count} tomar}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Nêzîk",
-  "summaryUpcomingCaption": "Di 30 rojên bê de",
-  "summaryUrgentTitle": "Lezgîn",
-  "summaryUrgentCaption": "Di 7 rojên bê de",
   "profileHeaderTitle": "Profîl",
   "profileTutorialsTitle": "Rêber",
   "profileTutorialsSubtitle": "Li rêberên sepanê bigere",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Bê bîrxistin",
   "reminderOnExpiry": "Di roja bidawîbûnê de",
-  "reminderDaysBefore": "{days, plural, one{1 roj berê} other{{days} roj berê}}",
+  "reminderDaysBefore": "{days, plural, one{{days} roj berê} other{{days} roj berê}}",
   "reminderCustomDaysTitle": "Rojên taybet binivîse",
   "reminderCascadeTitle": "Bîrxistinên kaskad",
   "reminderCascadeSubtitle": "Berî ku tomarek bidawî bibe çend agahdariyan werbigire",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Tomara xwe ya yekem zêde bike",
   "smartInsightNoRecordsBody": "Dest bi şopandina tomarên xwe bike, û Vaultara wê li vir agahiyên jîr nîşan bide.",
   "smartInsightExpiresTodaySingleBody": "{name} îro bidawî dibe. Eger te berê nû kiribe, dîrokê li vir biguherîne.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} îro bidawî dibin.} =1{{names} û 1 ya din îro bidawî dibin.} other{{names} û {extra} yên din îro bidawî dibin.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} îro bidawî dibin.} =1{{names} û {extra} ya din îro bidawî dibin.} other{{names} û {extra} yên din îro bidawî dibin.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} sibê bidawî dibe û bîrxistina wê tune ye. Yekê dayne da ku ji bîr nekî.} other{{name} di dîroka {date} de bidawî dibe û bîrxistina wê tune ye. Yekê dayne da ku ji bîr nekî.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} di {dateA} de û {b} di {dateB} de, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema du tomar ewqas nêzîkî hev bin.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} û {c} hemû heta {lastDate}, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema çend tomar ewqas nêzîkî hev bin.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} û 1 tomara din heta {lastDate}, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema çend tomar ewqas nêzîkî hev bin.} other{{a}, {b} û {extra} tomarên din heta {lastDate}, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema çend tomar ewqas nêzîkî hev bin.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} û {extra} tomara din heta {lastDate}, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema çend tomar ewqas nêzîkî hev bin.} other{{a}, {b} û {extra} tomarên din heta {lastDate}, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema çend tomar ewqas nêzîkî hev bin.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Roja pêş tu tişt bidawî nabe. Dema te ya pêş {date} e.} other{Di {days} rojên pêş de tu tişt bidawî nabe. Dema te ya pêş {date} e.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 ji tomarên te yên di kategoriya {category} de di {date} de bidawî dibe. Hêsan e ku ji ber çavan derkeve.} other{{count} ji tomarên te yên di kategoriya {category} de heta {date} bidawî dibin. Ji bîr kirina yekê hêsan e dema bi vî awayî kom bûne.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 bidawîbûna pêş bi bîrxistinekê parastî ye. Tu tiştê din hewceyî baldariya te nîne.} other{{count} bidawîbûnên pêş bi bîrxistinan parastî ne. Tu tiştê din hewceyî baldariya te nîne.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} ji tomarên te yên di kategoriya {category} de di {date} de bidawî dibe. Hêsan e ku ji ber çavan derkeve.} other{{count} ji tomarên te yên di kategoriya {category} de heta {date} bidawî dibin. Ji bîr kirina yekê hêsan e dema bi vî awayî kom bûne.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} bidawîbûna pêş bi bîrxistinekê parastî ye. Tu tiştê din hewceyî baldariya te nîne.} other{{count} bidawîbûnên pêş bi bîrxistinan parastî ne. Tu tiştê din hewceyî baldariya te nîne.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Her tişt nû ye. Di vê demê de tu tişt hewceyî baldariya te nîne.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Di vê demê de tu tişt lezgîn nîne, lê 1 tomara pêş hîn bîrxistina wê tune ye.} other{Di vê demê de tu tişt lezgîn nîne, lê {count} tomarên pêş hîn bîrxistina wan tune ye.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Di vê demê de tu tişt lezgîn nîne, lê {count} tomara pêş hîn bîrxistina wê tune ye.} other{Di vê demê de tu tişt lezgîn nîne, lê {count} tomarên pêş hîn bîrxistina wan tune ye.}}",
   "smartInsightCloseExpiriesHeading": "Hema hema di heman demê de bidawî dibin",
   "plansHeadline": "Guhartoya Vaultara ya tije bi dest bixe",
   "plansSubhead": "Tomarên bêsînor, komên te yên taybet, û bîrxistinên ku tam wekî ku tu dixwazî hatine eyarkirin.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Rake",
   "reminderCascadeDuplicate": "Bîrxistineke din jixwe vê rojê bi kar tîne",
   "reminderCascadeOutOfRange": "Di navbera {min} û {max} rojan de binivîse",
-  "reminderCascadeStepLabel": "Bîrxistin {position}: {days, plural, =1{1 roj} other{{days} roj}} berê",
+  "reminderCascadeStepLabel": "Bîrxistin {position}: {days, plural, =1{{days} roj} other{{days} roj}} berê",
   "expiryTimelineNotReady": "Xeta te ya demê dê xuya bibe gava ku tomarên te hebin ku di çend mehên cuda de bidawî dibin.",
   "verifyEmailResendIn": "Di {seconds} çirkeyan de dîsa bişîne",
   "verifyEmailSpamHint": "Ne li wir e? Peldanka xwe ya spam an jinkê kontrol bike.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Ev hesab nehatiye piştrastkirin. Heke tu niha derkevî, ew ê were jêbirin, û tu dikarî dîsa bi her navnîşaneke e-nameyê qeyd bibî.",
   "verifyEmailDiscardAction": "Jê bibe",
   "verifyEmailKeepWaiting": "Li bendê bimîne",
-  "expiringBadge": "{count, plural, =1{1 nêzîkê bidawîbûnê ye} other{{count} nêzîkê bidawîbûnê ne}}",
+  "expiringBadge": "{count, plural, =1{{count} nêzîkê bidawîbûnê ye} other{{count} nêzîkê bidawîbûnê ne}}",
   "noRecordsToday": "Îro tu tişt bidawî nabe",
   "noRecordsTomorrow": "Sibê tu tişt bidawî nabe",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} îro bi dawî dibe} =1{{recordName} sibê bi dawî dibe} other{{recordName} di nav {days} rojan de bi dawî dibe}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} a te îro bi dawî dibe. Te jixwe ew nû kir? Dîroka bidawîbûna wê biguherîne.} =1{{firstName}, {recordName} a te sibê bi dawî dibe. Niha ew nû bike da ku bi dawî nebe.} other{{firstName}, {recordName} a te di {date} de bi dawî dibe. Nûkirina zû te diparêze.}}",
   "cascadeFinalStepTitle": "Bîrxistina dawî: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} a te {days, plural, =1{sibê} other{di nav {days} rojan de, di {date} de}} bi dawî dibe. Ev bîrxistina te ya dawî ye, wê nû bike an jî dîroka wê biguherîne.",
   "notificationsTitle": "Agahdarî",
   "notificationsProfileEnabledSubtitle": "Bîrxistin di saet {time} de tên.",
   "notificationsProfileDisabledSubtitle": "Agahdarî girtî ne.",
@@ -1349,7 +1338,7 @@
   "photoLockTurnOn": "Wêneyên şîfrekirî çalak bike",
   "photoLockStatusOn": "Wêneyên şîfrekirî çalak in",
   "photoLockStatusOnBody": "Wêneyên nû berî barkirinê di vê telefonê de têne şîfrekirin.",
-  "photoLockPendingTitle": "{count, plural, one{1 wêne hêj şîfrekirî nîne} other{{count} wêne hêj şîfrekirî nînin}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} wêne hêj şîfrekirî nîne} other{{count} wêne hêj şîfrekirî nînin}}",
   "photoLockPendingBody": "Wêneyên ku te berî çalakkirinê zêde kirine hêj bi awayê asayî têne tomarkirin.",
   "photoLockEncryptExisting": "Wêneyên min ên heyî şîfre bike",
   "photoLockKeepOpen": "Vaultara vekirî bihêle heta ku biqede.",
@@ -1386,7 +1375,7 @@
   "photoLockSetupFailed": "Me nikarî wêneyên şîfrekirî çalak bikin. Girêdana xwe kontrol bike û dîsa biceribîne.",
   "photoLockAlreadyOn": "Wêneyên şîfrekirî jixwe ji bo hesabê te çalak in. Mifteya vegerandinê têkevîne da ku wan di vê telefonê de bi kar bînî.",
   "photoLockEncryptExistingTitle": "Wêneyên xwe yên heyî şîfre bikî?",
-  "photoLockEncryptExistingBody": "{count, plural, one{1 wêneyê te heye ku hêj şîfrekirî nîne. Em dikarin wê niha şîfre bikin.} other{{count} wêneyên te hene ku hêj şîfrekirî nînin. Em dikarin wan niha şîfre bikin.}} Vaultara vekirî bihêle heta ku biqede.",
+  "photoLockEncryptExistingBody": "{count, plural, one{{count} wêneyê te heye ku hêj şîfrekirî nîne. Em dikarin wê niha şîfre bikin.} other{{count} wêneyên te hene ku hêj şîfrekirî nînin. Em dikarin wan niha şîfre bikin.}} Vaultara vekirî bihêle heta ku biqede.",
   "photoLockEncryptNow": "Niha şîfre bike",
   "photoLockEntryBody": "Mifteya vegerandinê ya ku te dema çalakkirina wêneyên şîfrekirî tomar kir têkevîne. Xêzik û valahî ne mecbûrî ne.",
   "photoLockEntryLabel": "Mifteya vegerandinê",
@@ -1395,8 +1384,8 @@
   "photoLockUnlocked": "Wêneyên te di vê telefonê de vekirî ne.",
   "photoLockInvalidFormat": "Ev wekî mifteyeke vegerandinê xuya nake. Her karakterekê kontrol bike û dîsa biceribîne.",
   "photoLockWrongKey": "Ev mifteya vegerandinê lihev nayê. Wê kontrol bike û dîsa biceribîne.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Gelek caran hat ceribandin. Ji kerema xwe 1 çirkeyê bisekine û dîsa biceribîne.} other{Gelek caran hat ceribandin. Ji kerema xwe {seconds} çirkeyan bisekine û dîsa biceribîne.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Gelek caran hat ceribandin. Ji kerema xwe 1 deqeyê bisekine û dîsa biceribîne.} other{Gelek caran hat ceribandin. Ji kerema xwe {minutes} deqeyan bisekine û dîsa biceribîne.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Gelek caran hat ceribandin. Ji kerema xwe {seconds} çirkeyê bisekine û dîsa biceribîne.} other{Gelek caran hat ceribandin. Ji kerema xwe {seconds} çirkeyan bisekine û dîsa biceribîne.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Gelek caran hat ceribandin. Ji kerema xwe {minutes} deqeyê bisekine û dîsa biceribîne.} other{Gelek caran hat ceribandin. Ji kerema xwe {minutes} deqeyan bisekine û dîsa biceribîne.}}",
   "photoLockOffline": "Me nikarî bigihînin Vaultara. Girêdana xwe kontrol bike û dîsa biceribîne.",
   "photoLockNotSetUp": "Wêneyên şîfrekirî ji bo hesabê te çalak nînin.",
   "photoLockUnlockFailed": "Tiştek xelet çû. Ji kerema xwe dîsa biceribîne.",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "Di dema bîrxistina xwe de yek agahdarî bistîne ku her tiştê wê rojê lê tê rêzkirin.",
   "dailyDigestTurnedOn": "Bîrxistinên te niha wekî yek kurteya rojane tên.",
   "dailyDigestTurnedOff": "Bîrxistinên cuda yên ji bo her tomarê vegeriyan.",
-  "dailyDigestTitle": "{count, plural, one{1 tomar bala te dixwaze} other{{count} tomar bala te dixwazin}}",
+  "dailyDigestTitle": "{count, plural, one{{count} tomar bala te dixwaze} other{{count} tomar bala te dixwazin}}",
   "dailyDigestBody": "Tê: {names}.",
   "dailyDigestBodyMore": "Tê: {names} û {count} yên din.",
   "dailyDigestLockedRecord": "tomareke kilîtkirî",
   "renewReasonRepeat": "{months, plural, one{Li gorî sazkirina te ya dubarekirinê her mehê} other{Li gorî sazkirina te ya dubarekirinê her {months} mehan}}",
   "renewReasonHistory": "{count, plural, one{Li gorî nûkirina te ya dawî} other{Li gorî {count} nûkirinên te yên dawî}}",
-  "renewReasonTypical": "{years, plural, one{Bi gelemperî 1 salî derbasdar e} other{Bi gelemperî {years} salan derbasdar e}}",
+  "renewReasonTypical": "{years, plural, one{Bi gelemperî {years} salî derbasdar e} other{Bi gelemperî {years} salan derbasdar e}}",
   "renewChangeHint": "Ji bo guhertinê li dîrokê bitikîne.",
   "renewPickDate": "Dîroka nû ya bidawîbûnê hilbijêre",
   "renewPickDateHint": "Dîroka li ser belgeya xwe ya nû hilbijêre.",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} îro bi dawî dibe",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} sibê bi dawî dibe",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} di {days} rojê de bi dawî dibe} other{{recordName} di {days} rojan de bi dawî dibe}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} bi dawî bûye",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Tomareke kilîtkirî baldariya te dixwaze",
+  "remLockedBody": "Dîroka wê {date} e. Kilîta Vaultara veke da ku bibînî ka kîjan tomar e.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Tomara te \"{recordName}\" îro bi dawî dibe.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Tomara te \"{recordName}\" sibê bi dawî dibe.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Tomara te \"{recordName}\" di {date} de bi dawî dibe.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, tomara te \"{recordName}\" îro bi dawî dibe.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, tomara te \"{recordName}\" sibê bi dawî dibe.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, tomara te \"{recordName}\" di {date} de bi dawî dibe.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: tomara \"{recordName}\" îro bi dawî dibe.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: tomara \"{recordName}\" sibê bi dawî dibe.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: tomara \"{recordName}\" di {date} de bi dawî dibe.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Tomara te \"{recordName}\" di {date} de bi dawî bû.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: tomara \"{recordName}\" di {date} de bi dawî bû.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Te berê nû kir? Dîroka wê nû bike.",
+  "remTipTomorrow": "Niha nû bike da ku bi dawî nebe.",
+  "remTipEarly": "Nûkirina zû te parastî dihêle.",
+  "remTipLast": "Ev bîranîna te ya dawî ye berî ku bi dawî bibe.",
+  "remTipExpired": "Nû bike, an jî heke te berê kiribe dîroka wê nû bike.",
+  "remStartBody": "Dem hatiye ku dest bi nûkirina \"{recordName}\" bikî. Di {date} de bi dawî dibe, ji ber vê heke niha dest pê bikî dê wext bes be.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Dem hatiye ku dest bi nûkirina \"{recordName}\" ({person}) bê kirin. Di {date} de bi dawî dibe, ji ber vê destpêkirina niha wext bes dihêle.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Bîranînên dawîbûnê",
+  "notifChannelDescription": "Bîranîn berî ku tomarên te bi dawî bibin",
+  "notifTestTitle": "Agahdariya ceribandinê",
+  "notifTestBody": "Bîranînên Vaultara bi vî awayî tên.",
+  "notifTestAction": "Agahdariya ceribandinê bişîne",
+  "notifTestSubtitle": "Kontrol bike ku bîranîn digihîjin vê telefonê",
+  "notifTestSent": "Ceribandin hat şandin. Divê di çend çirkeyan de bigihîje.",
+  "notifAfterExpiryTitle": "Piştî ku tomarek bi dawî bû bîne bîra min",
+  "notifAfterExpirySubtitle": "3 û 14 roj piştî wê, heke nehatibe nûkirin",
+  "notifWeeklyTitle": "Kurteya Duşemê",
+  "notifWeeklySubtitle": "Peyamek sibeha Duşemê dema ku tiştek wê hefteyê bi dawî dibe",
+  "notifPushSection": "Malbat û nûkirin",
+  "notifHouseholdTitle": "Tomarên parvekirî",
+  "notifHouseholdSubtitle": "Dema ku tomareke parvekirî nêzî dawîbûnê ye û kesî nû nekiriye",
+  "notifUpdatesTitle": "Nûkirinên ku te xwestin",
+  "notifUpdatesSubtitle": "Dema ku kesek agahiyên nû yên tomarekê dişîne",
+  "notifSecurityNote": "Hişyariyên têketinên nû li hesabê te her tim têne şandin.",
+  "notifIosHelpTitle": "Bîranîn nayên?",
+  "notifIosHelpSubtitle": "Mîhengên iPhone kontrol bike",
+  "notifIosHelpStep1": "Mîheng, paşê Agahdarî, paşê Vaultara veke, û Destûra agahdariyan bide çalak bike.",
+  "notifIosHelpStep2": "Ekrana kilîtê, Navenda agahdariyan û Banneran çalak bike.",
+  "notifIosHelpStep3": "Heke tu Focus bi kar tînî, Vaultara li sepanên destûrdayî zêde bike.",
+  "notifIosHelpStep4": "Her çend hefteyan carekê Vaultara veke. iPhone tenê hejmareke sînorkirî ya bîranînên pêş de digire, û vekirina sepanê yên din plan dike.",
+  "homeNextUpEmpty": "Di demeke nêz de tiştek bi dawî nabe. Her tişt amade ye.",
+  "homeDueSoonChip": "{count, plural, one{{count} di nav 30 rojan de} other{{count} di nav 30 rojan de}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Kategoriyên derzîkirî"
 }

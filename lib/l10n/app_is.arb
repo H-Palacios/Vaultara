@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Gaman að hafa þig hér. Vaultara hjálpar þér að halda mikilvægum dagsetningum og færslum skipulögðum á einum öruggum stað.",
   "homeWelcomeSubtitleBack": "Gott að sjá þig aftur. Vaultara er hér þegar þú vilt skoða mikilvægar dagsetningar og færslur.",
   "homeWelcomeTitle": "Velkomin",
-  "summaryAllCaption": "Rakið í Vaultara",
-  "summaryExpiredTitle": "Útrunnið",
-  "summaryExpiredCaption": "Gildistími liðinn",
   "editorNotes": "Athugasemdir",
   "editorReminderNone": "Engin áminning",
   "editorReminderOnExpiry": "Á fyrningardegi",
@@ -192,7 +189,6 @@
   "addRecord": "Bæta við færslu",
   "noRecordsYet": "Engar færslur enn.",
   "deleteRecordTitle": "Eyða færslu",
-  "summaryAllRecordsTitle": "Allar færslur",
   "noGroupFound": "Engir hópar enn",
   "groupLabel": "{count, plural, one{{count} hópur} other{{count} hópar}}",
   "recordsLabel": "{count, plural, one{{count} færsla} other{{count} færslur}}",
@@ -442,7 +438,7 @@
   "addNotesHint": "Bæta við athugasemdum (valfrjálst)",
   "expiryTimelineTitle": "Tímalína fyrninga",
   "expiryTimelineSubtitle": "Smelltu á mánuð til að sjá færslurnar sem renna út í þeim mánuði",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 færsla} other{{count} færslur}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} færsla} other{{count} færslur}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -450,10 +446,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Væntanlegt",
-  "summaryUpcomingCaption": "Innan 30 daga",
-  "summaryUrgentTitle": "Brýnt",
-  "summaryUrgentCaption": "Innan 7 daga",
   "profileHeaderTitle": "Prófíll",
   "profileTutorialsTitle": "Kennsluefni",
   "profileTutorialsSubtitle": "Skoðaðu kennsluefni forritsins",
@@ -485,7 +477,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Engin áminning",
   "reminderOnExpiry": "Á fyrningardegi",
-  "reminderDaysBefore": "{days, plural, one{1 dag áður} other{{days} daga áður}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dag áður} other{{days} daga áður}}",
   "reminderCustomDaysTitle": "Sláðu inn sérsniðna daga",
   "reminderCascadeTitle": "Fossandi áminningar",
   "reminderCascadeSubtitle": "Fáðu margar tilkynningar áður en færsla rennur út",
@@ -516,16 +508,16 @@
   "smartInsightNoRecordsHeading": "Bættu við fyrstu færslunni þinni",
   "smartInsightNoRecordsBody": "Byrjaðu að fylgjast með færslunum þínum og Vaultara mun sýna snjalla innsýn hér.",
   "smartInsightExpiresTodaySingleBody": "{name} rennur út í dag. Ef þú ert þegar búinn að endurnýja hana, uppfærðu þá dagsetninguna hér.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} renna út í dag.} =1{{names} og 1 til renna út í dag.} other{{names} og {extra} til renna út í dag.}}",
-  "smartInsightSilentRiskBody": "{days, plural, =1{{name} rennur út á morgun og er án áminningar. Stilltu áminningu svo þú missir ekki af því.} other{{name} rennur út þann {date} og er án áminningar. Stilltu áminningu svo þú missir ekki af því.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} renna út í dag.} =1{{names} og {extra} til renna út í dag.} other{{names} og {extra} til renna út í dag.}}",
+  "smartInsightSilentRiskBody": "{days, plural, other{{name} rennur út þann {date} og er án áminningar. Stilltu áminningu svo þú missir ekki af því.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} rennur út þann {dateA} og {b} þann {dateB}, á svipuðum tíma. Það er auðvelt að gleyma öðru þeirra þegar tvær færslur eru svona nálægt hvor annarri.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} og {c} renna öll út fyrir {lastDate}, á svipuðum tíma. Það er auðvelt að gleyma einu þegar nokkrar færslur eru svona nálægt hverri annarri.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} og 1 færsla til renna út fyrir {lastDate}, á svipuðum tíma. Það er auðvelt að gleyma einu þegar nokkrar færslur eru svona nálægt hverri annarri.} other{{a}, {b} og {extra} færslur til renna út fyrir {lastDate}, á svipuðum tíma. Það er auðvelt að gleyma einu þegar nokkrar færslur eru svona nálægt hverri annarri.}}",
-  "smartInsightQuietPeriodBody": "{days, plural, =1{Ekkert rennur út á næsta degi. Næsti frestur þinn er {date}.} other{Ekkert rennur út næstu {days} daga. Næsti frestur þinn er {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 af færslum þínum í flokknum {category} rennur út þann {date}. Það er auðvelt að yfirsjá það.} other{{count} af færslum þínum í flokknum {category} renna út fyrir {date}. Það er auðvelt að gleyma einu þegar þau eru flokkuð svona saman.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 væntanleg fyrning er með áminningu. Ekkert annað krefst athygli þinnar.} other{{count} væntanlegar fyrningar eru með áminningum. Ekkert annað krefst athygli þinnar.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} og {extra} færsla til renna út fyrir {lastDate}, á svipuðum tíma. Það er auðvelt að gleyma einu þegar nokkrar færslur eru svona nálægt hverri annarri.} other{{a}, {b} og {extra} færslur til renna út fyrir {lastDate}, á svipuðum tíma. Það er auðvelt að gleyma einu þegar nokkrar færslur eru svona nálægt hverri annarri.}}",
+  "smartInsightQuietPeriodBody": "{days, plural, one{Ekkert rennur út næsta {days} dag. Næsti frestur þinn er {date}.} other{Ekkert rennur út næstu {days} daga. Næsti frestur þinn er {date}.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} af færslum þínum í flokknum {category} rennur út þann {date}. Það er auðvelt að yfirsjá það.} other{{count} af færslum þínum í flokknum {category} renna út fyrir {date}. Það er auðvelt að gleyma einu þegar þau eru flokkuð svona saman.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} væntanleg fyrning er með áminningu. Ekkert annað krefst athygli þinnar.} other{{count} væntanlegar fyrningar eru með áminningum. Ekkert annað krefst athygli þinnar.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Allt er uppfært. Ekkert krefst athygli þinnar eins og er.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Ekkert er áríðandi eins og er, en 1 komandi færsla er ekki enn með áminningu.} other{Ekkert er áríðandi eins og er, en {count} komandi færslur eru ekki enn með áminningar.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Ekkert er áríðandi eins og er, en {count} komandi færsla er ekki enn með áminningu.} other{Ekkert er áríðandi eins og er, en {count} komandi færslur eru ekki enn með áminningar.}}",
   "smartInsightCloseExpiriesHeading": "Renna út á svipuðum tíma",
   "plansHeadline": "Fáðu Vaultara í heild sinni",
   "plansSubhead": "Ótakmarkaðar færslur, þínir eigin hópar og áminningar stilltar nákvæmlega eins og þú vilt.",
@@ -612,7 +604,7 @@
   "reminderCascadeRemoveStep": "Fjarlægja",
   "reminderCascadeDuplicate": "Önnur áminning notar nú þegar þennan dag",
   "reminderCascadeOutOfRange": "Sláðu inn á milli {min} og {max} daga",
-  "reminderCascadeStepLabel": "Áminning {position}: {days, plural, =1{1 degi} other{{days} dögum}} áður",
+  "reminderCascadeStepLabel": "Áminning {position}: {days, plural, =1{{days} degi} other{{days} dögum}} áður",
   "expiryTimelineNotReady": "Tímalínan þín birtist þegar þú ert með færslur sem renna út á nokkrum mismunandi mánuðum.",
   "verifyEmailResendIn": "Senda aftur eftir {seconds}s",
   "verifyEmailSpamHint": "Ekki þar? Athugaðu ruslpóstsmöppuna þína.",
@@ -621,13 +613,10 @@
   "verifyEmailDiscardBody": "Þessi aðgangur er ekki staðfestur. Ef þú ferð núna verður honum eytt og þú getur skráð þig aftur með hvaða netfangi sem er.",
   "verifyEmailDiscardAction": "Henda",
   "verifyEmailKeepWaiting": "Bíða áfram",
-  "expiringBadge": "{count, plural, =1{1 rennur senn út} other{{count} renna senn út}}",
+  "expiringBadge": "{count, plural, =1{{count} rennur senn út} other{{count} renna senn út}}",
   "noRecordsToday": "Ekkert rennur út í dag",
   "noRecordsTomorrow": "Ekkert rennur út á morgun",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} rennur út í dag} =1{{recordName} rennur út á morgun} other{{recordName} rennur út eftir {days} daga}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} þitt rennur út í dag. Ertu þegar búin(n) að endurnýja? Uppfærðu gildistímann.} =1{{firstName}, {recordName} þitt rennur út á morgun. Endurnýjaðu núna svo það falli ekki úr gildi.} other{{firstName}, {recordName} þitt rennur út þann {date}. Snemmbúin endurnýjun tryggir áframhaldandi vernd.}}",
   "cascadeFinalStepTitle": "Síðasta áminning: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} þitt rennur út {days, plural, =1{á morgun} other{eftir {days} daga, þann {date}}}. Þetta er síðasta áminningin þín, endurnýjaðu það eða uppfærðu dagsetninguna.",
   "notificationsTitle": "Tilkynningar",
   "notificationsProfileEnabledSubtitle": "Áminningar berast kl. {time}.",
   "notificationsProfileDisabledSubtitle": "Slökkt er á tilkynningum.",
@@ -707,10 +696,10 @@
   "familyNameLabel": "Nafn",
   "familyNameHint": "Til dæmis Thabo",
   "familyNameRequired": "Sláðu inn nafn",
-  "familyLimitNote": "{count, plural, =1{Allt að 1 manneskja} other{Allt að {count} manns}}",
+  "familyLimitNote": "{count, plural, =1{Allt að {count} manneskja} other{Allt að {count} manns}}",
   "familyUpsellTitle": "Haltu utan um skjöl fjölskyldunnar",
   "familyBenefitPremium": "Allt sem fylgir Premium",
-  "familyBenefitPeople": "{count, plural, =1{Bættu við 1 manneskju} other{Bættu við allt að {count} manns}}",
+  "familyBenefitPeople": "{count, plural, =1{Bættu við {count} manneskju} other{Bættu við allt að {count} manns}}",
   "familyBenefitOwnRecords": "Hver og einn er með sínar eigin færslur og áminningar",
   "familyBenefitOneSubscription": "Ein áskrift fyrir heimilið",
   "familySeePlan": "Skoða Fjölskylduleið",
@@ -1354,7 +1343,7 @@
   "photoLockTurnOn": "Kveikja á dulkóðuðum myndum",
   "photoLockStatusOn": "Kveikt er á dulkóðuðum myndum",
   "photoLockStatusOnBody": "Nýjar myndir eru dulkóðaðar í þessum síma áður en þær eru sendar upp.",
-  "photoLockPendingTitle": "{count, plural, one{1 mynd er ekki dulkóðuð enn} other{{count} myndir eru ekki dulkóðaðar enn}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} mynd er ekki dulkóðuð enn} other{{count} myndir eru ekki dulkóðaðar enn}}",
   "photoLockPendingBody": "Myndir sem þú bættir við áður en þú kveiktir á þessu eru enn vistaðar á venjulegan hátt.",
   "photoLockEncryptExisting": "Dulkóða myndirnar sem ég á nú þegar",
   "photoLockKeepOpen": "Hafðu Vaultara opið þar til þessu er lokið.",
@@ -1391,7 +1380,7 @@
   "photoLockSetupFailed": "Við gátum ekki kveikt á dulkóðuðum myndum. Athugaðu tenginguna og reyndu aftur.",
   "photoLockAlreadyOn": "Kveikt er nú þegar á dulkóðuðum myndum fyrir reikninginn þinn. Sláðu inn endurheimtarlykilinn þinn til að nota þær í þessum síma.",
   "photoLockEncryptExistingTitle": "Dulkóða myndirnar sem þú átt nú þegar?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Þú átt 1 mynd sem er ekki dulkóðuð enn. Við getum dulkóðað hana núna.} other{Þú átt {count} myndir sem eru ekki dulkóðaðar enn. Við getum dulkóðað þær núna.}} Hafðu Vaultara opið þar til þessu er lokið.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Þú átt {count} mynd sem er ekki dulkóðuð enn. Við getum dulkóðað hana núna.} other{Þú átt {count} myndir sem eru ekki dulkóðaðar enn. Við getum dulkóðað þær núna.}} Hafðu Vaultara opið þar til þessu er lokið.",
   "photoLockEncryptNow": "Dulkóða núna",
   "photoLockEntryBody": "Sláðu inn endurheimtarlykilinn sem þú vistaðir þegar þú kveiktir á dulkóðuðum myndum. Bandstrik og bil eru valfrjáls.",
   "photoLockEntryLabel": "Endurheimtarlykill",
@@ -1400,8 +1389,8 @@
   "photoLockUnlocked": "Myndirnar þínar eru opnar í þessum síma.",
   "photoLockInvalidFormat": "Þetta lítur ekki út eins og endurheimtarlykill. Athugaðu hvern staf og reyndu aftur.",
   "photoLockWrongKey": "Þessi endurheimtarlykill passar ekki. Athugaðu hann og reyndu aftur.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Of margar tilraunir. Bíddu í 1 sekúndu og reyndu aftur.} other{Of margar tilraunir. Bíddu í {seconds} sekúndur og reyndu aftur.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Of margar tilraunir. Bíddu í 1 mínútu og reyndu aftur.} other{Of margar tilraunir. Bíddu í {minutes} mínútur og reyndu aftur.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Of margar tilraunir. Bíddu í {seconds} sekúndu og reyndu aftur.} other{Of margar tilraunir. Bíddu í {seconds} sekúndur og reyndu aftur.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Of margar tilraunir. Bíddu í {minutes} mínútu og reyndu aftur.} other{Of margar tilraunir. Bíddu í {minutes} mínútur og reyndu aftur.}}",
   "photoLockOffline": "Við náðum ekki sambandi við Vaultara. Athugaðu tenginguna og reyndu aftur.",
   "photoLockNotSetUp": "Ekki er kveikt á dulkóðuðum myndum fyrir reikninginn þinn.",
   "photoLockUnlockFailed": "Eitthvað fór úrskeiðis. Reyndu aftur.",
@@ -2139,8 +2128,8 @@
   "lifePlanAutoChanged": "Vaultara sá að þessi færsla breyttist, svo hún er merkt sem lokið.",
   "lifePlanAutoAdded": "Bætt við eftir að þú hófst þessa áætlun.",
   "lifePlanProgress": "{done} af {total} lokið",
-  "lifePlanDaysToGo": "{count, plural, =1{1 dagur eftir} other{{count} dagar eftir}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Fyrir 1 degi} other{Fyrir {count} dögum}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} dagur eftir} other{{count} dagar eftir}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Fyrir {count} degi} other{Fyrir {count} dögum}}",
   "lifePlanAllDone": "Allt er búið. Þú getur merkt áætlunina sem lokið.",
   "lifePlanFinish": "Merkja sem lokið",
   "lifePlanReopen": "Opna aftur",
@@ -2236,7 +2225,7 @@
   "lifeTaskParentMedicines": "Haltu lista yfir lyf og lækna viðkomandi",
   "lifePlanDoClaim": "Gera kröfu",
   "lifePlanStatusClaimed": "Krafa gerð",
-  "lifePlanStartBy": "{weeks, plural, =1{Byrjaðu fyrir {date}. Nýtt tekur yfirleitt um viku.} other{Byrjaðu fyrir {date}. Nýtt tekur yfirleitt um {weeks} vikur.}}",
+  "lifePlanStartBy": "{weeks, plural, one{Byrjaðu fyrir {date}. Nýtt tekur yfirleitt um {weeks} viku.} other{Byrjaðu fyrir {date}. Nýtt tekur yfirleitt um {weeks} vikur.}}",
   "@lifePlanStartBy": {
     "placeholders": {
       "date": {
@@ -2247,7 +2236,7 @@
       }
     }
   },
-  "lifePlanStartNow": "{weeks, plural, =1{Byrjaðu núna. Nýtt tekur yfirleitt um viku.} other{Byrjaðu núna. Nýtt tekur yfirleitt um {weeks} vikur.}}",
+  "lifePlanStartNow": "{weeks, plural, one{Byrjaðu núna. Nýtt tekur yfirleitt um {weeks} viku.} other{Byrjaðu núna. Nýtt tekur yfirleitt um {weeks} vikur.}}",
   "@lifePlanStartNow": {
     "placeholders": {
       "weeks": {
@@ -2269,7 +2258,7 @@
   "lifePlanReadAloudUnavailable": "Upplestur er ekki í boði í þessum síma.",
   "lifePlanProofPack": "Búa til skjalapakka",
   "lifePlanOpenFamily": "Opna Fjölskyldu",
-  "lifePlanRemoved": "{count, plural, =1{1 skrá sem þú eyddir telst uppsögð.} other{{count} skrár sem þú eyddir teljast uppsagðar.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} skrá sem þú eyddir telst uppsögð.} other{{count} skrár sem þú eyddir teljast uppsagðar.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2470,7 +2459,7 @@
   "tutorialsGroupTravelFamily": "Ferðalög og fjölskylda",
   "tutorialsGroupEmergencies": "Lífsviðburðir og neyðartilvik",
   "tutorialsGroupPaid": "Greiddir eiginleikar",
-  "tutorialsSteps": "{count, plural, =1{1 skref} other{{count} skref}}",
+  "tutorialsSteps": "{count, plural, =1{{count} skref} other{{count} skref}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2866,5 +2855,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} rennur út í dag",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} rennur út á morgun",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} rennur út eftir {days} dag} other{{recordName} rennur út eftir {days} daga}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} er runnið út",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Læst færsla þarfnast athygli þinnar",
+  "remLockedBody": "Dagsetningin er {date}. Opnaðu Vaultara til að sjá hvaða færsla það er.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Færslan þín „{recordName}“ rennur út í dag.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Færslan þín „{recordName}“ rennur út á morgun.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Færslan þín „{recordName}“ rennur út þann {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, færslan þín „{recordName}“ rennur út í dag.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, færslan þín „{recordName}“ rennur út á morgun.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, færslan þín „{recordName}“ rennur út þann {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Færslan „{recordName}“ hjá {person} rennur út í dag.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Færslan „{recordName}“ hjá {person} rennur út á morgun.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Færslan „{recordName}“ hjá {person} rennur út þann {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Færslan þín „{recordName}“ rann út þann {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Færslan „{recordName}“ hjá {person} rann út þann {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Búið að endurnýja? Uppfærðu dagsetninguna.",
+  "remTipTomorrow": "Endurnýjaðu núna svo hún renni ekki út.",
+  "remTipEarly": "Að endurnýja snemma heldur þér tryggðum.",
+  "remTipLast": "Þetta er síðasta áminningin áður en hún rennur út.",
+  "remTipExpired": "Endurnýjaðu, eða uppfærðu dagsetninguna ef þú hefur þegar gert það.",
+  "remStartBody": "Það er kominn tími til að byrja að endurnýja „{recordName}“. Hún rennur út þann {date}, svo ef þú byrjar núna hefur þú nægan tíma.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Það er kominn tími til að byrja að endurnýja „{recordName}“ hjá {person}. Hún rennur út þann {date}, svo það gefst nægur tími ef byrjað er núna.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Áminningar um gildistíma",
+  "notifChannelDescription": "Áminningar áður en færslurnar þínar renna út",
+  "notifTestTitle": "Prófunartilkynning",
+  "notifTestBody": "Áminningar frá Vaultara berast svona.",
+  "notifTestAction": "Senda prófunartilkynningu",
+  "notifTestSubtitle": "Athugaðu hvort áminningar berist í þennan síma",
+  "notifTestSent": "Prófun send. Hún ætti að berast eftir nokkrar sekúndur.",
+  "notifAfterExpiryTitle": "Minna mig á eftir að færsla rennur út",
+  "notifAfterExpirySubtitle": "3 og 14 dögum síðar, ef hún hefur ekki verið endurnýjuð",
+  "notifWeeklyTitle": "Mánudagsyfirlit",
+  "notifWeeklySubtitle": "Skilaboð á mánudagsmorgni þegar eitthvað rennur út í vikunni",
+  "notifPushSection": "Heimili og uppfærslur",
+  "notifHouseholdTitle": "Sameiginlegar færslur",
+  "notifHouseholdSubtitle": "Þegar sameiginleg færsla er að renna út og enginn hefur endurnýjað hana",
+  "notifUpdatesTitle": "Uppfærslur sem þú baðst um",
+  "notifUpdatesSubtitle": "Þegar einhver sendir nýjar upplýsingar fyrir færslu",
+  "notifSecurityNote": "Viðvaranir um nýjar innskráningar á reikninginn þinn eru alltaf sendar.",
+  "notifIosHelpTitle": "Færðu ekki áminningar?",
+  "notifIosHelpSubtitle": "Athugaðu stillingar iPhone",
+  "notifIosHelpStep1": "Opnaðu Stillingar, svo Tilkynningar, svo Vaultara, og kveiktu á Leyfa tilkynningar.",
+  "notifIosHelpStep2": "Kveiktu á Læstum skjá, Tilkynningamiðstöð og Borðum.",
+  "notifIosHelpStep3": "Ef þú notar fókus skaltu bæta Vaultara við forritin sem hann leyfir.",
+  "notifIosHelpStep4": "Opnaðu Vaultara á nokkurra vikna fresti. iPhone geymir aðeins takmarkaðan fjölda áminninga fram í tímann og þegar forritið er opnað eru þær næstu skipulagðar.",
+  "homeNextUpEmpty": "Ekkert rennur út á næstunni. Allt er klárt.",
+  "homeDueSoonChip": "{count, plural, one{{count} á gjalddaga innan 30 daga} other{{count} á gjalddaga innan 30 daga}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Festir flokkar"
 }

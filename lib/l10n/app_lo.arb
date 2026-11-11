@@ -189,7 +189,6 @@
   "addRecord": "ເພີ່ມບັນທຶກ",
   "noRecordsYet": "ຍັງບໍ່ມີບັນທຶກ.",
   "deleteRecordTitle": "ລຶບບັນທຶກ",
-  "summaryAllRecordsTitle": "ບັນທຶກທັງໝົດ",
   "noGroupFound": "ຍັງບໍ່ມີກຸ່ມ",
   "groupLabel": "{count, plural, one{{count} ກຸ່ມ} other{{count} ກຸ່ມ}}",
   "recordsLabel": "{count, plural, one{{count} ບັນທຶກ} other{{count} ບັນທຶກ}}",
@@ -425,9 +424,6 @@
   "passwordNeedUpper": "ຕ້ອງມີຕົວອັກສອນໃຫຍ່",
   "passwordNeedNumber": "ຕ້ອງມີຕົວເລກ",
   "passwordNeedSymbol": "ຕ້ອງມີສັນຍາລັກ",
-  "summaryAllCaption": "ຕິດຕາມຢູ່ໃນ Vaultara",
-  "summaryExpiredTitle": "ໝົດອາຍຸແລ້ວ",
-  "summaryExpiredCaption": "ຜ່ານວັນໝົດອາຍຸ",
   "profile_account_management_subtitle": "ປ່ຽນອີເມວ, ລະຫັດຜ່ານ ຫຼື ລຶບບັນຊີຂອງທ່ານ.",
   "confirmIdentityTitle": "ຢືນຢັນຕົວຕົນ",
   "confirm": "ຢືນຢັນ",
@@ -455,7 +451,7 @@
   "addNotesHint": "ເພີ່ມໝາຍເຫດ (ທາງເລືອກ)",
   "expiryTimelineTitle": "ໄລຍະເວລາໝົດອາຍຸ",
   "expiryTimelineSubtitle": "ແຕະເດືອນເພື່ອເບິ່ງບັນທຶກທີ່ໝົດອາຍຸໃນເດືອນນັ້ນ",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 ບັນທຶກ} other{{count} ບັນທຶກ}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} ບັນທຶກ} other{{count} ບັນທຶກ}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "ກຳລັງຈະມາ",
-  "summaryUpcomingCaption": "ພາຍໃນ 30 ມື້",
-  "summaryUrgentTitle": "ດ່ວນ",
-  "summaryUrgentCaption": "ພາຍໃນ 7 ມື້",
   "profileHeaderTitle": "ໂປຣໄຟລ໌",
   "profileTutorialsTitle": "ບົດຮຽນ",
   "profileTutorialsSubtitle": "ເບິ່ງບົດຮຽນຂອງແອັບ",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "ເພີ່ມບັນທຶກທຳອິດຂອງທ່ານ",
   "smartInsightNoRecordsBody": "ເລີ່ມຕິດຕາມບັນທຶກຂອງທ່ານ, ແລ້ວ Vaultara ຈະສະແດງຂໍ້ມູນອັດສະລິຍະຢູ່ບ່ອນນີ້.",
   "smartInsightExpiresTodaySingleBody": "{name} ຈະໝົດອາຍຸມື້ນີ້. ຖ້າທ່ານໄດ້ຕໍ່ອາຍຸແລ້ວ, ໃຫ້ອັບເດດວັນທີຢູ່ບ່ອນນີ້.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ໝົດອາຍຸມື້ນີ້.} =1{{names} ແລະ ອີກ 1 ລາຍການໝົດອາຍຸມື້ນີ້.} other{{names} ແລະ ອີກ {extra} ລາຍການໝົດອາຍຸມື້ນີ້.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ໝົດອາຍຸມື້ນີ້.} =1{{names} ແລະ ອີກ {extra} ລາຍການໝົດອາຍຸມື້ນີ້.} other{{names} ແລະ ອີກ {extra} ລາຍການໝົດອາຍຸມື້ນີ້.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} ຈະໝົດອາຍຸມື້ອື່ນ ແລະ ຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ. ຕັ້ງຄ່າເລີຍເພື່ອບໍ່ໃຫ້ພາດ.} other{{name} ຈະໝົດອາຍຸໃນວັນທີ {date} ແລະ ຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ. ຕັ້ງຄ່າເລີຍເພື່ອບໍ່ໃຫ້ພາດ.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} ຈະໝົດອາຍຸວັນທີ {dateA} ແລະ {b} ຈະໝົດອາຍຸວັນທີ {dateB}, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມບັນທຶກໃດໜຶ່ງເມື່ອມີສອງບັນທຶກໃກ້ກັນຂະໜາດນີ້.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} ແລະ {c} ທັງໝົດຈະໝົດອາຍຸພາຍໃນວັນທີ {lastDate}, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອມີຫຼາຍລາຍການໃກ້ກັນຂະໜາດນີ້.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ແລະ ອີກ 1 ລາຍການຈະໝົດອາຍຸພາຍໃນວັນທີ {lastDate}, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອມີຫຼາຍລາຍການໃກ້ກັນຂະໜາດນີ້.} other{{a}, {b} ແລະ ອີກ {extra} ລາຍການຈະໝົດອາຍຸພາຍໃນວັນທີ {lastDate}, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອມີຫຼາຍລາຍການໃກ້ກັນຂະໜາດນີ້.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ແລະ ອີກ {extra} ລາຍການຈະໝົດອາຍຸພາຍໃນວັນທີ {lastDate}, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອມີຫຼາຍລາຍການໃກ້ກັນຂະໜາດນີ້.} other{{a}, {b} ແລະ ອີກ {extra} ລາຍການຈະໝົດອາຍຸພາຍໃນວັນທີ {lastDate}, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອມີຫຼາຍລາຍການໃກ້ກັນຂະໜາດນີ້.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{ບໍ່ມີຫຍັງໝົດອາຍຸໃນມື້ຕໍ່ໄປ. ລາຍການຖັດໄປທີ່ຈະໝົດອາຍຸແມ່ນວັນທີ {date}.} other{ບໍ່ມີຫຍັງໝົດອາຍຸໃນ {days} ວັນຂ້າງໜ້າ. ລາຍການຖັດໄປທີ່ຈະໝົດອາຍຸແມ່ນວັນທີ {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{ບັນທຶກໃນໝວດໝູ່ {category} ຈຳນວນ 1 ລາຍການຂອງທ່ານຈະໝົດອາຍຸວັນທີ {date}. ມັນງ່າຍທີ່ຈະເບິ່ງຂ້າມ.} other{ບັນທຶກໃນໝວດໝູ່ {category} ຈຳນວນ {count} ລາຍການຂອງທ່ານຈະໝົດອາຍຸພາຍໃນວັນທີ {date}. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອພວກມັນຖືກຈັດກຸ່ມແບບນີ້.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{ການໝົດອາຍຸທີ່ຈະເກີດຂຶ້ນ 1 ລາຍການ ມີການຕັ້ງການເຕືອນໄວ້ແລ້ວ. ບໍ່ມີຫຍັງອື່ນທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານ.} other{ການໝົດອາຍຸທີ່ຈະເກີດຂຶ້ນ {count} ລາຍການ ມີການຕັ້ງການເຕືອນໄວ້ແລ້ວ. ບໍ່ມີຫຍັງອື່ນທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານ.}}",
+  "smartInsightClusterBody": "{count, plural, =1{ບັນທຶກໃນໝວດໝູ່ {category} ຈຳນວນ {count} ລາຍການຂອງທ່ານຈະໝົດອາຍຸວັນທີ {date}. ມັນງ່າຍທີ່ຈະເບິ່ງຂ້າມ.} other{ບັນທຶກໃນໝວດໝູ່ {category} ຈຳນວນ {count} ລາຍການຂອງທ່ານຈະໝົດອາຍຸພາຍໃນວັນທີ {date}. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອພວກມັນຖືກຈັດກຸ່ມແບບນີ້.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{ການໝົດອາຍຸທີ່ຈະເກີດຂຶ້ນ {count} ລາຍການ ມີການຕັ້ງການເຕືອນໄວ້ແລ້ວ. ບໍ່ມີຫຍັງອື່ນທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານ.} other{ການໝົດອາຍຸທີ່ຈະເກີດຂຶ້ນ {count} ລາຍການ ມີການຕັ້ງການເຕືອນໄວ້ແລ້ວ. ບໍ່ມີຫຍັງອື່ນທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານ.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "ທຸກຢ່າງເປັນປັດຈຸບັນແລ້ວ. ບໍ່ມີຫຍັງທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານໃນເວລານີ້.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ໃນເວລານີ້ບໍ່ມີຫຍັງຮີບດ່ວນ, ແຕ່ມີ 1 ລາຍການທີ່ກຳລັງຈະເກີດຂຶ້ນເຊິ່ງຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ.} other{ໃນເວລານີ້ບໍ່ມີຫຍັງຮີບດ່ວນ, ແຕ່ມີ {count} ລາຍການທີ່ກຳລັງຈະເກີດຂຶ້ນເຊິ່ງຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ໃນເວລານີ້ບໍ່ມີຫຍັງຮີບດ່ວນ, ແຕ່ມີ {count} ລາຍການທີ່ກຳລັງຈະເກີດຂຶ້ນເຊິ່ງຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ.} other{ໃນເວລານີ້ບໍ່ມີຫຍັງຮີບດ່ວນ, ແຕ່ມີ {count} ລາຍການທີ່ກຳລັງຈະເກີດຂຶ້ນເຊິ່ງຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ.}}",
   "smartInsightCloseExpiriesHeading": "ໝົດອາຍຸພາຍໃນຊ່ວງເວລາໃກ້ຄຽງກັນ",
   "plansHeadline": "ຮັບປະສົບການ Vaultara ແບບເຕັມຮູບແບບ",
   "plansSubhead": "ບັນທຶກບໍ່ຈຳກັດ, ກຸ່ມສ່ວນຕົວຂອງທ່ານ, ແລະການເຕືອນທີ່ປັບແຕ່ງໄດ້ຕາມໃຈຕ້ອງການ.",
@@ -625,7 +617,7 @@
   "reminderCascadeRemoveStep": "ລຶບອອກ",
   "reminderCascadeDuplicate": "ມີການເຕືອນອື່ນທີ່ໃຊ້ມື້ນີ້ແລ້ວ",
   "reminderCascadeOutOfRange": "ປ້ອນລະຫວ່າງ {min} ຫາ {max} ມື້",
-  "reminderCascadeStepLabel": "ການເຕືອນ {position}: {days, plural, =1{1 ມື້} other{{days} ມື້}} ກ່ອນ",
+  "reminderCascadeStepLabel": "ການເຕືອນ {position}: {days, plural, =1{{days} ມື້} other{{days} ມື້}} ກ່ອນ",
   "expiryTimelineNotReady": "ທາມລາຍຂອງທ່ານຈະປາກົດຂຶ້ນເມື່ອທ່ານມີບັນທຶກທີ່ຈະໝົດອາຍຸໃນສອງສາມເດືອນທີ່ແຕກຕ່າງກັນ.",
   "verifyEmailResendIn": "ສົ່ງຄືນໃໝ່ໃນ {seconds}ວິນາທີ",
   "verifyEmailSpamHint": "ບໍ່ເຫັນບໍ? ກວດເບິ່ງໂຟນເດີສະແປມ ຫຼື ອີເມວຂີ້ເຫຍື້ອຂອງທ່ານ.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "ບັນຊີນີ້ຍັງບໍ່ທັນໄດ້ຮັບການຢືນຢັນເທື່ອ. ການອອກດຽວນີ້ຈະລຶບມັນອອກ, ແລະ ທ່ານສາມາດລົງທະບຽນໃໝ່ໄດ້ດ້ວຍທີ່ຢູ່ອີເມວໃດກໍໄດ້.",
   "verifyEmailDiscardAction": "ຖິ້ມ",
   "verifyEmailKeepWaiting": "ລໍຖ້າຕໍ່ໄປ",
-  "expiringBadge": "{count, plural, =1{1 ໃກ້ຈະໝົດອາຍຸ} other{{count} ໃກ້ຈະໝົດອາຍຸ}}",
+  "expiringBadge": "{count, plural, =1{{count} ໃກ້ຈະໝົດອາຍຸ} other{{count} ໃກ້ຈະໝົດອາຍຸ}}",
   "noRecordsToday": "ມື້ນີ້ບໍ່ມີຫຍັງໝົດອາຍຸ",
   "noRecordsTomorrow": "ມື້ອື່ນບໍ່ມີຫຍັງໝົດອາຍຸ",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ໝົດອາຍຸໃນມື້ນີ້} =1{{recordName} ໝົດອາຍຸໃນມື້ອື່ນ} other{{recordName} ຈະໝົດອາຍຸໃນອີກ {days} ມື້}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} ຂອງທ່ານໝົດອາຍຸໃນມື້ນີ້. ທ່ານໄດ້ຕໍ່ອາຍຸແລ້ວບໍ? ອັບເດດວັນໝົດອາຍຸ.} =1{{firstName}, {recordName} ຂອງທ່ານໝົດອາຍຸໃນມື້ອື່ນ. ຕໍ່ອາຍຸດຽວນີ້ເພື່ອບໍ່ໃຫ້ມັນຂາດອາຍຸ.} other{{firstName}, {recordName} ຂອງທ່ານຈະໝົດອາຍຸໃນວັນທີ {date}. ການຕໍ່ອາຍຸກ່ອນເວລາຈະຊ່ວຍໃຫ້ທ່ານໄດ້ຮັບການຄຸ້ມຄອງຢ່າງຕໍ່ເນື່ອງ.}}",
   "cascadeFinalStepTitle": "ການເຕືອນຄັ້ງສຸດທ້າຍ: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} ຂອງທ່ານຈະໝົດອາຍຸ {days, plural, =1{ໃນມື້ອື່ນ} other{ໃນອີກ {days} ມື້, ວັນທີ {date}}}. ນີ້ແມ່ນການເຕືອນຄັ້ງສຸດທ້າຍຂອງທ່ານ, ກະລຸນາຕໍ່ອາຍຸ ຫຼື ອັບເດດວັນທີ.",
   "notificationsTitle": "ການແຈ້ງເຕືອນ",
   "notificationsProfileEnabledSubtitle": "ການເຕືອນຈະມາຮອດເວລາ {time}.",
   "notificationsProfileDisabledSubtitle": "ການແຈ້ງເຕືອນຖືກປິດຢູ່.",
@@ -699,7 +688,7 @@
   "costCardTitle": "ຄ່າຕໍ່ອາຍຸ",
   "costCardSubtitle": "ຄ່າຕໍ່ອາຍຸຂອງທ່ານແຕ່ລະເດືອນ",
   "costCardBusiest": "ເດືອນທີ່ຈ່າຍຫຼາຍທີ່ສຸດ: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{ມີ 1 ບັນທຶກທີ່ຈະມາເຖິງທີ່ຍັງບໍ່ມີຄ່າໃຊ້ຈ່າຍ.} other{ມີ {count} ບັນທຶກທີ່ຈະມາເຖິງທີ່ຍັງບໍ່ມີຄ່າໃຊ້ຈ່າຍ.}}",
+  "costCardMissing": "{count, plural, =1{ມີ {count} ບັນທຶກທີ່ຈະມາເຖິງທີ່ຍັງບໍ່ມີຄ່າໃຊ້ຈ່າຍ.} other{ມີ {count} ບັນທຶກທີ່ຈະມາເຖິງທີ່ຍັງບໍ່ມີຄ່າໃຊ້ຈ່າຍ.}}",
   "costCardEmpty": "ເພີ່ມຄ່າໃຊ້ຈ່າຍໃສ່ບັນທຶກຂອງທ່ານເພື່ອເບິ່ງວ່າການຕໍ່ອາຍຸຈະເສຍເທົ່າໃດ.",
   "costCardLockedHint": "ເບິ່ງວ່າການຕໍ່ອາຍຸຂອງທ່ານຈະເສຍເທົ່າໃດໃນປີໜ້າດ້ວຍ ພຣີເມຍມ.",
   "costCardSeePremium": "ເບິ່ງ ພຣີເມຍມ",
@@ -707,7 +696,7 @@
   "familyTitle": "ຄອບຄົວ",
   "familyIntro": "ຕິດຕາມບັນທຶກຂອງຄົນທີ່ທ່ານເບິ່ງແຍງ. ການເຕືອນຂອງພວກເຂົາຈະສະແດງຊື່ ເພື່ອໃຫ້ທ່ານຮູ້ວ່າເປັນບັນທຶກຂອງໃຜ.",
   "familyMe": "ຂ້ອຍ",
-  "familyRecordCount": "{count, plural, =0{ບໍ່ມີບັນທຶກ} =1{1 ບັນທຶກ} other{{count} ບັນທຶກ}}",
+  "familyRecordCount": "{count, plural, =0{ບໍ່ມີບັນທຶກ} =1{{count} ບັນທຶກ} other{{count} ບັນທຶກ}}",
   "familyRename": "ປ່ຽນຊື່",
   "familyRemove": "ລຶບອອກ",
   "familyRemoveTitle": "ລຶບ {name} ອອກບໍ?",
@@ -720,10 +709,10 @@
   "familyNameLabel": "ຊື່",
   "familyNameHint": "ຕົວຢ່າງ: Thabo",
   "familyNameRequired": "ໃສ່ຊື່",
-  "familyLimitNote": "{count, plural, =1{ສູງສຸດ 1 ຄົນ} other{ສູງສຸດ {count} ຄົນ}}",
+  "familyLimitNote": "{count, plural, =1{ສູງສຸດ {count} ຄົນ} other{ສູງສຸດ {count} ຄົນ}}",
   "familyUpsellTitle": "ຕິດຕາມເອກະສານຂອງຄອບຄົວທ່ານ",
   "familyBenefitPremium": "ທຸກຢ່າງໃນ ພຣີເມຍມ",
-  "familyBenefitPeople": "{count, plural, =1{ເພີ່ມໄດ້ 1 ຄົນ} other{ເພີ່ມໄດ້ສູງສຸດ {count} ຄົນ}}",
+  "familyBenefitPeople": "{count, plural, =1{ເພີ່ມໄດ້ {count} ຄົນ} other{ເພີ່ມໄດ້ສູງສຸດ {count} ຄົນ}}",
   "familyBenefitOwnRecords": "ແຕ່ລະຄົນມີບັນທຶກ ແລະ ການເຕືອນຂອງຕົນເອງ",
   "familyBenefitOneSubscription": "ການສະໝັກສະມາຊິກດຽວສຳລັບທັງຄອບຄົວ",
   "familySeePlan": "ເບິ່ງແພັກເກດຄອບຄົວ",
@@ -909,14 +898,14 @@
   "calendarExportError": "ພວກເຮົາສ້າງໄຟລ໌ປະຕິທິນບໍ່ໄດ້. ລອງໃໝ່.",
   "pdfExportTitle": "ບັນທຶກ Vaultara",
   "pdfExportGenerated": "ສ້າງເມື່ອ {date}",
-  "pdfExportCount": "{count, plural, =1{1 ບັນທຶກ} other{{count} ບັນທຶກ}}",
+  "pdfExportCount": "{count, plural, =1{{count} ບັນທຶກ} other{{count} ບັນທຶກ}}",
   "pdfExportCost": "ຄ່າຕໍ່ອາຍຸ: {amount}",
   "pdfExportBuilding": "ກຳລັງກຽມ PDF ຂອງທ່ານ...",
   "pdfExportError": "ພວກເຮົາສ້າງ PDF ບໍ່ໄດ້. ລອງໃໝ່.",
   "travelTitle": "ກວດກ່ອນເດີນທາງ",
   "travelDeparture": "ອອກເດີນທາງ",
   "travelReturn": "ກັບຄືນ",
-  "travelTripLength": "{days, plural, =1{ເດີນທາງ 1 ມື້} other{ເດີນທາງ {days} ມື້}}",
+  "travelTripLength": "{days, plural, =1{ເດີນທາງ {days} ມື້} other{ເດີນທາງ {days} ມື້}}",
   "travelDriving": "ຂ້ອຍຈະຂັບລົດ",
   "travelNeedsVisa": "ຂ້ອຍຕ້ອງການວີຊາ",
   "travelWho": "ໃຜເດີນທາງ?",
@@ -937,9 +926,9 @@
   "travelNoLicence": "ຍັງບໍ່ໄດ້ເພີ່ມໃບຂັບຂີ່",
   "travelOtherExpires": "ໝົດອາຍຸໃນຂະນະທີ່ທ່ານບໍ່ຢູ່",
   "travelDetailValidUntil": "{name} ໃຊ້ໄດ້ຮອດ {date}.",
-  "travelDetailPassportBuffer": "{name} ໝົດອາຍຸ {date}. ຫຼາຍປະເທດຕ້ອງການໃຫ້ເຫຼືອອາຍຸ {months, plural, =1{1 ເດືອນ} other{{months} ເດືອນ}} ຫຼັງທ່ານກັບຄືນ.",
+  "travelDetailPassportBuffer": "{name} ໝົດອາຍຸ {date}. ຫຼາຍປະເທດຕ້ອງການໃຫ້ເຫຼືອອາຍຸ {months, plural, =1{{months} ເດືອນ} other{{months} ເດືອນ}} ຫຼັງທ່ານກັບຄືນ.",
   "travelDetailExpiresBeforeLeaving": "{name} ໝົດອາຍຸ {date}, ກ່ອນທ່ານອອກເດີນທາງ.",
-  "travelDetailExpiresDuringTrip": "{name} ໝົດອາຍຸ {date}, {days, plural, =0{ໃນມື້ທີ່ທ່ານອອກເດີນທາງ} =1{1 ມື້ຫຼັງອອກເດີນທາງ} other{{days} ມື້ຫຼັງອອກເດີນທາງ}}.",
+  "travelDetailExpiresDuringTrip": "{name} ໝົດອາຍຸ {date}, {days, plural, =0{ໃນມື້ທີ່ທ່ານອອກເດີນທາງ} =1{{days} ມື້ຫຼັງອອກເດີນທາງ} other{{days} ມື້ຫຼັງອອກເດີນທາງ}}.",
   "travelDetailNoPassport": "ເພີ່ມພາສປອດຂອງທ່ານເພື່ອໃຫ້ Vaultara ກວດໄດ້.",
   "travelDetailNoVisa": "ເພີ່ມວີຊາຂອງທ່ານເພື່ອໃຫ້ Vaultara ກວດໄດ້.",
   "travelDetailNoInsurance": "ເພີ່ມປະກັນການເດີນທາງເພື່ອກວດວ່າມັນຄອບຄຸມທັງການເດີນທາງ.",
@@ -991,7 +980,7 @@
   "travelInProgress": "ກຳລັງເດີນທາງ",
   "travelTripEnded": "ການເດີນທາງສິ້ນສຸດແລ້ວ",
   "travelAllGood": "ເອກະສານທັງໝົດພ້ອມແລ້ວ",
-  "travelIssues": "{count, plural, =1{ມີ 1 ລາຍການຕ້ອງກວດເບິ່ງ} other{ມີ {count} ລາຍການຕ້ອງກວດເບິ່ງ}}",
+  "travelIssues": "{count, plural, =1{ມີ {count} ລາຍການຕ້ອງກວດເບິ່ງ} other{ມີ {count} ລາຍການຕ້ອງກວດເບິ່ງ}}",
   "travelChecklistTitle": "ລາຍການກວດສອບການເດີນທາງ",
   "travelChecklistProgress": "ສຳເລັດ {done} ຈາກ {total}",
   "travelChecklistAdd": "ເພີ່ມ",
@@ -1011,7 +1000,7 @@
   "travelTripTo": "ເດີນທາງໄປ {name}",
   "travelReminderTitle": "{days, plural, other{ເດີນທາງໄປ {name} ໃນອີກ {days} ມື້}}",
   "travelReminderTitleTomorrow": "ເດີນທາງໄປ {name} ມື້ອື່ນ",
-  "travelReminderBodyIssues": "{count, plural, =1{ມີເອກະສານ 1 ລາຍການຕ້ອງກວດເບິ່ງກ່ອນທ່ານອອກເດີນທາງ.} other{ມີເອກະສານ {count} ລາຍການຕ້ອງກວດເບິ່ງກ່ອນທ່ານອອກເດີນທາງ.}}",
+  "travelReminderBodyIssues": "{count, plural, =1{ມີເອກະສານ {count} ລາຍການຕ້ອງກວດເບິ່ງກ່ອນທ່ານອອກເດີນທາງ.} other{ມີເອກະສານ {count} ລາຍການຕ້ອງກວດເບິ່ງກ່ອນທ່ານອອກເດີນທາງ.}}",
   "travelReminderBodyOk": "ເອກະສານຂອງທ່ານພ້ອມແລ້ວ. ເປີດການເດີນທາງຂອງທ່ານເພື່ອກວດລາຍການ.",
   "travelTripLimit": "ທ່ານສາມາດບັນທຶກການເດີນທາງໄດ້ສູງສຸດ {count} ລາຍການ. ລຶບການເດີນທາງເກົ່າເພື່ອເພີ່ມອັນໃໝ່.",
   "recordLockTitle": "ລັອກບັນທຶກນີ້",
@@ -1039,7 +1028,7 @@
   "vaultChooseFromGallery": "ເລືອກຈາກຄັງຮູບ",
   "vaultRemove": "ລຶບອອກ",
   "vaultLimitTitle": "ຮອດຂີດຈຳກັດຮູບແລ້ວ",
-  "vaultLimitFreeBody": "ແພັກເກດຟຣີໃຫ້ເພີ່ມ {limit, plural, =1{1 ຮູບ} other{{limit} ຮູບ}} ຕໍ່ບັນທຶກ. ດ້ວຍ ພຣີເມຍມ ທ່ານເພີ່ມໄດ້ສູງສຸດ {premiumLimit}.",
+  "vaultLimitFreeBody": "ແພັກເກດຟຣີໃຫ້ເພີ່ມ {limit, plural, =1{{limit} ຮູບ} other{{limit} ຮູບ}} ຕໍ່ບັນທຶກ. ດ້ວຍ ພຣີເມຍມ ທ່ານເພີ່ມໄດ້ສູງສຸດ {premiumLimit}.",
   "vaultLimitPremiumBody": "ທ່ານເພີ່ມໄດ້ສູງສຸດ {limit} ຮູບຕໍ່ບັນທຶກ. ລຶບອອກໜຶ່ງຮູບເພື່ອເພີ່ມອັນໃໝ່.",
   "vaultSeePremium": "ເບິ່ງ ພຣີເມຍມ",
   "vaultPdfShort": "PDF",
@@ -1047,7 +1036,7 @@
   "vaultOpenFile": "ເປີດ",
   "vaultClose": "ປິດ",
   "vaultPageIndicator": "{current} ຈາກ {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 ຮູບ} other{{count} ຮູບ}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} ຮູບ} other{{count} ຮູບ}}",
   "travelReadinessTitle": "ຄວາມພ້ອມໃນການເດີນທາງ",
   "travelReadinessBody": "ອີງຕາມພາສປອດ ແລະ ໃບຂັບຂີ່ທີ່ບັນທຶກໄວ້ໃນ Vaultara. ຫຼາຍປະເທດຕ້ອງການໃຫ້ພາສປອດເຫຼືອອາຍຸຢ່າງໜ້ອຍ 6 ເດືອນຕອນທ່ານກັບຄືນ.",
   "travelReadyUntil": "ພາສປອດໃຊ້ເດີນທາງໄດ້ຮອດ {date}",
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} ໝົດອາຍຸມື້ນີ້",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} ໝົດອາຍຸມື້ອື່ນ",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} ຈະໝົດອາຍຸໃນອີກ {days} ມື້}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} ໝົດອາຍຸແລ້ວ",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "ບັນທຶກທີ່ລັອກຕ້ອງການຄວາມສົນໃຈຂອງທ່ານ",
+  "remLockedBody": "ວັນທີຂອງມັນແມ່ນ {date}. ປົດລັອກ Vaultara ເພື່ອເບິ່ງວ່າແມ່ນບັນທຶກໃດ.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "ບັນທຶກ \"{recordName}\" ຂອງທ່ານໝົດອາຍຸມື້ນີ້.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "ບັນທຶກ \"{recordName}\" ຂອງທ່ານໝົດອາຍຸມື້ອື່ນ.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "ບັນທຶກ \"{recordName}\" ຂອງທ່ານຈະໝົດອາຍຸໃນວັນທີ {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, ບັນທຶກ \"{recordName}\" ຂອງທ່ານໝົດອາຍຸມື້ນີ້.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, ບັນທຶກ \"{recordName}\" ຂອງທ່ານໝົດອາຍຸມື້ອື່ນ.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, ບັນທຶກ \"{recordName}\" ຂອງທ່ານຈະໝົດອາຍຸໃນວັນທີ {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: ບັນທຶກ \"{recordName}\" ໝົດອາຍຸມື້ນີ້.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: ບັນທຶກ \"{recordName}\" ໝົດອາຍຸມື້ອື່ນ.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: ບັນທຶກ \"{recordName}\" ຈະໝົດອາຍຸໃນວັນທີ {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "ບັນທຶກ \"{recordName}\" ຂອງທ່ານໝົດອາຍຸເມື່ອວັນທີ {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: ບັນທຶກ \"{recordName}\" ໝົດອາຍຸເມື່ອວັນທີ {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "ຕໍ່ອາຍຸແລ້ວບໍ? ອັບເດດວັນທີຂອງມັນ.",
+  "remTipTomorrow": "ຕໍ່ອາຍຸດຽວນີ້ເພື່ອບໍ່ໃຫ້ໝົດອາຍຸ.",
+  "remTipEarly": "ການຕໍ່ອາຍຸແຕ່ເນີ່ນໆ ຊ່ວຍໃຫ້ທ່ານປອດໄພ.",
+  "remTipLast": "ນີ້ແມ່ນການແຈ້ງເຕືອນສຸດທ້າຍກ່ອນໝົດອາຍຸ.",
+  "remTipExpired": "ຕໍ່ອາຍຸ, ຫຼື ອັບເດດວັນທີຖ້າທ່ານເຮັດແລ້ວ.",
+  "remStartBody": "ຮອດເວລາເລີ່ມຕໍ່ອາຍຸ \"{recordName}\" ແລ້ວ. ມັນຈະໝົດອາຍຸໃນວັນທີ {date}, ສະນັ້ນຖ້າເລີ່ມດຽວນີ້ທ່ານຈະມີເວລາຫຼວງຫຼາຍ.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "ຮອດເວລາເລີ່ມຕໍ່ອາຍຸ \"{recordName}\" ({person}) ແລ້ວ. ມັນຈະໝົດອາຍຸໃນວັນທີ {date}, ສະນັ້ນຖ້າເລີ່ມດຽວນີ້ຈະມີເວລາຫຼວງຫຼາຍ.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "ການແຈ້ງເຕືອນວັນໝົດອາຍຸ",
+  "notifChannelDescription": "ການແຈ້ງເຕືອນກ່ອນບັນທຶກຂອງທ່ານໝົດອາຍຸ",
+  "notifTestTitle": "ການແຈ້ງເຕືອນທົດສອບ",
+  "notifTestBody": "ການແຈ້ງເຕືອນຈາກ Vaultara ຈະມາແບບນີ້.",
+  "notifTestAction": "ສົ່ງການແຈ້ງເຕືອນທົດສອບ",
+  "notifTestSubtitle": "ກວດສອບວ່າການແຈ້ງເຕືອນມາຮອດໂທລະສັບນີ້",
+  "notifTestSent": "ສົ່ງການທົດສອບແລ້ວ. ຄວນມາຮອດພາຍໃນບໍ່ເທົ່າໃດວິນາທີ.",
+  "notifAfterExpiryTitle": "ເຕືອນຂ້ອຍຫຼັງບັນທຶກໝົດອາຍຸ",
+  "notifAfterExpirySubtitle": "3 ແລະ 14 ມື້ຫຼັງຈາກນັ້ນ, ຖ້າຍັງບໍ່ໄດ້ຕໍ່ອາຍຸ",
+  "notifWeeklyTitle": "ສະຫຼຸບວັນຈັນ",
+  "notifWeeklySubtitle": "ຂໍ້ຄວາມເຊົ້າວັນຈັນເມື່ອມີບາງຢ່າງໝົດອາຍຸໃນອາທິດນັ້ນ",
+  "notifPushSection": "ຄອບຄົວ ແລະ ການອັບເດດ",
+  "notifHouseholdTitle": "ບັນທຶກທີ່ແບ່ງປັນ",
+  "notifHouseholdSubtitle": "ເມື່ອບັນທຶກທີ່ແບ່ງປັນໃກ້ໝົດອາຍຸ ແລະ ບໍ່ມີໃຜຕໍ່ອາຍຸ",
+  "notifUpdatesTitle": "ການອັບເດດທີ່ທ່ານຂໍ",
+  "notifUpdatesSubtitle": "ເມື່ອມີຄົນສົ່ງລາຍລະອຽດໃໝ່ຂອງບັນທຶກ",
+  "notifSecurityNote": "ການແຈ້ງເຕືອນການເຂົ້າສູ່ລະບົບໃໝ່ໃນບັນຊີຂອງທ່ານຈະຖືກສົ່ງສະເໝີ.",
+  "notifIosHelpTitle": "ບໍ່ໄດ້ຮັບການແຈ້ງເຕືອນບໍ?",
+  "notifIosHelpSubtitle": "ກວດສອບການຕັ້ງຄ່າ iPhone ຂອງທ່ານ",
+  "notifIosHelpStep1": "ເປີດການຕັ້ງຄ່າ, ຈາກນັ້ນການແຈ້ງເຕືອນ, ຈາກນັ້ນ Vaultara, ແລະ ເປີດອະນຸຍາດການແຈ້ງເຕືອນ.",
+  "notifIosHelpStep2": "ເປີດໜ້າຈໍລັອກ, ສູນການແຈ້ງເຕືອນ ແລະ ແບນເນີ.",
+  "notifIosHelpStep3": "ຖ້າທ່ານໃຊ້ໂຟກັສ, ໃຫ້ເພີ່ມ Vaultara ໃສ່ແອັບທີ່ອະນຸຍາດ.",
+  "notifIosHelpStep4": "ເປີດ Vaultara ທຸກໆສອງສາມອາທິດ. iPhone ເກັບການແຈ້ງເຕືອນລ່ວງໜ້າໄດ້ຈຳນວນຈຳກັດ, ແລະ ການເປີດແອັບຈະຕັ້ງເວລາອັນຕໍ່ໄປ.",
+  "homeNextUpEmpty": "ບໍ່ມີຫຍັງຈະໝົດອາຍຸໄວໆນີ້. ທຸກຢ່າງພ້ອມແລ້ວ.",
+  "homeDueSoonChip": "{count, plural, other{{count} ລາຍການຮອດກຳນົດໃນ 30 ມື້}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "ໝວດໝູ່ທີ່ປັກໝຸດ"
 }

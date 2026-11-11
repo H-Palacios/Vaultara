@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara עוזרת לך לעקוב אחר תאריכי תפוגה חשובים כדי ששום דבר לא יישכח.",
   "homeWelcomeSubtitleFirst": "שמחים לראות אותך כאן. Vaultara עוזרת לך להישאר מאורגן על ידי שמירת תאריכים ורשומות חשובות במקום בטוח אחד.",
   "homeWelcomeSubtitleBack": "שמחים לראות אותך שוב. Vaultara כאן בכל פעם שתרצה לבדוק את התאריכים והרשומות החשובות שלך.",
-  "summaryAllCaption": "במעקב ב-Vaultara",
-  "summaryExpiredTitle": "פג תוקף",
-  "summaryExpiredCaption": "תאריך התוקף עבר",
   "editorNotes": "הערות",
   "editorReminderNone": "ללא תזכורת",
   "editorReminderOnExpiry": "ביום התפוגה",
@@ -192,7 +189,6 @@
   "addRecord": "הוסף רשומה",
   "noRecordsYet": "אין רשומות עדיין.",
   "deleteRecordTitle": "מחק רשומה",
-  "summaryAllRecordsTitle": "כל הרשומות",
   "noGroupFound": "עדיין אין קבוצות",
   "groupLabel": "{count, plural, one{{count} קבוצה} other{{count} קבוצות}}",
   "recordsLabel": "{count, plural, one{{count} רשומה} other{{count} רשומות}}",
@@ -442,7 +438,7 @@
   "addNotesHint": "הוספת הערות (אופציונלי)",
   "expiryTimelineTitle": "ציר זמן של תפוגה",
   "expiryTimelineSubtitle": "הקש על חודש כדי לראות את הרשומות שפג תוקפן באותו חודש",
-  "expiryTimelineDetailCount": "{count, plural, =1{רשומה אחת} =2{2 רשומות} many{{count} רשומות} other{{count} רשומות}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{רשומה אחת} =2{{count} רשומות} many{{count} רשומות} other{{count} רשומות}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -450,10 +446,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "בקרוב",
-  "summaryUpcomingCaption": "במהלך 30 הימים הקרובים",
-  "summaryUrgentTitle": "דחוף",
-  "summaryUrgentCaption": "במהלך 7 הימים הקרובים",
   "profileHeaderTitle": "פרופיל",
   "profileTutorialsTitle": "מדריכים",
   "profileTutorialsSubtitle": "עיין במדריכי האפליקציה",
@@ -624,10 +616,7 @@
   "expiringBadge": "{count, plural, =1{תוקף של פריט אחד יפוג בקרוב} other{תוקף של {count} פריטים יפוג בקרוב}}",
   "noRecordsToday": "שום דבר לא פג תוקף היום",
   "noRecordsTomorrow": "שום דבר לא פג תוקף מחר",
-  "cascadeStepTitle": "{days, plural, =0{התוקף של {recordName} פג היום} =1{התוקף של {recordName} פג מחר} two{התוקף של {recordName} פג בעוד יומיים} many{התוקף של {recordName} פג בעוד {days} ימים} other{התוקף של {recordName} פג בעוד {days} ימים}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, התוקף של {recordName} שלך פג היום. כבר חידשת אותו? עדכן את תאריך התפוגה.} =1{{firstName}, התוקף של {recordName} שלך פג מחר. חדש אותו עכשיו כדי שלא יפוג.} two{{firstName}, התוקף של {recordName} שלך פג ב-{date}. חידוש מוקדם שומר עליך מוגן.} many{{firstName}, התוקף של {recordName} שלך פג ב-{date}. חידוש מוקדם שומר עליך מוגן.} other{{firstName}, התוקף של {recordName} שלך פג ב-{date}. חידוש מוקדם שומר עליך מוגן.}}",
   "cascadeFinalStepTitle": "תזכורת אחרונה: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, התוקף של {recordName} שלך פג {days, plural, =1{מחר} two{בעוד יומיים, ב-{date}} many{בעוד {days} ימים, ב-{date}} other{בעוד {days} ימים, ב-{date}}}. זו התזכורת האחרונה שלך, חדש אותו או עדכן את התאריך.",
   "notificationsTitle": "התראות",
   "notificationsProfileEnabledSubtitle": "התזכורות מגיעות בשעה {time}.",
   "notificationsProfileDisabledSubtitle": "ההתראות כבויות.",
@@ -2866,5 +2855,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "התוקף של {recordName} פג היום",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "התוקף של {recordName} פג מחר",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{התוקף של {recordName} פג בעוד {days} יום} two{התוקף של {recordName} פג בעוד {days} ימים} other{התוקף של {recordName} פג בעוד {days} ימים}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "התוקף של {recordName} פג",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "רשומה נעולה דורשת את תשומת לבך",
+  "remLockedBody": "התאריך שלה הוא {date}. בטל את נעילת Vaultara כדי לראות איזו רשומה זו.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "התוקף של הרשומה שלך \"{recordName}\" פג היום.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "התוקף של הרשומה שלך \"{recordName}\" פג מחר.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "התוקף של הרשומה שלך \"{recordName}\" פג ב-{date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, התוקף של הרשומה שלך \"{recordName}\" פג היום.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, התוקף של הרשומה שלך \"{recordName}\" פג מחר.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, התוקף של הרשומה שלך \"{recordName}\" פג ב-{date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: התוקף של הרשומה \"{recordName}\" פג היום.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: התוקף של הרשומה \"{recordName}\" פג מחר.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: התוקף של הרשומה \"{recordName}\" פג ב-{date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "התוקף של הרשומה שלך \"{recordName}\" פג ב-{date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: התוקף של הרשומה \"{recordName}\" פג ב-{date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "כבר חידשת? עדכן את התאריך.",
+  "remTipTomorrow": "חדש עכשיו כדי שהתוקף לא יפוג.",
+  "remTipEarly": "חידוש מוקדם שומר עליך מכוסה.",
+  "remTipLast": "זו התזכורת האחרונה לפני שהתוקף פג.",
+  "remTipExpired": "חדש, או עדכן את התאריך אם כבר עשית זאת.",
+  "remStartBody": "הגיע הזמן להתחיל לחדש את \"{recordName}\". התוקף פג ב-{date}, כך שאם תתחיל עכשיו יהיה לך זמן רב.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "הגיע הזמן להתחיל לחדש את \"{recordName}\" ({person}). התוקף פג ב-{date}, כך שהתחלה עכשיו משאירה זמן רב.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "תזכורות תפוגה",
+  "notifChannelDescription": "תזכורות לפני שהתוקף של הרשומות שלך פג",
+  "notifTestTitle": "התראת בדיקה",
+  "notifTestBody": "כך מגיעות התזכורות של Vaultara.",
+  "notifTestAction": "שליחת התראת בדיקה",
+  "notifTestSubtitle": "בדוק שתזכורות מגיעות לטלפון הזה",
+  "notifTestSent": "הבדיקה נשלחה. היא אמורה להגיע בעוד כמה שניות.",
+  "notifAfterExpiryTitle": "להזכיר לי אחרי שתוקף רשומה פג",
+  "notifAfterExpirySubtitle": "3 ו-14 ימים אחרי, אם לא חודשה",
+  "notifWeeklyTitle": "סיכום יום שני",
+  "notifWeeklySubtitle": "הודעה ביום שני בבוקר כשמשהו פג באותו שבוע",
+  "notifPushSection": "משק הבית ועדכונים",
+  "notifHouseholdTitle": "רשומות משותפות",
+  "notifHouseholdSubtitle": "כשתוקף של רשומה משותפת עומד לפוג ואף אחד לא חידש אותה",
+  "notifUpdatesTitle": "עדכונים שביקשת",
+  "notifUpdatesSubtitle": "כשמישהו שולח את הפרטים החדשים של רשומה",
+  "notifSecurityNote": "התראות על כניסות חדשות לחשבון שלך נשלחות תמיד.",
+  "notifIosHelpTitle": "לא מקבל תזכורות?",
+  "notifIosHelpSubtitle": "בדוק את הגדרות ה-iPhone",
+  "notifIosHelpStep1": "פתח את הגדרות, אחר כך עדכונים, אחר כך Vaultara, והפעל את אפשר עדכונים.",
+  "notifIosHelpStep2": "הפעל את מסך נעילה, מרכז העדכונים ובאנרים.",
+  "notifIosHelpStep3": "אם אתה משתמש במיקוד, הוסף את Vaultara לאפליקציות המותרות.",
+  "notifIosHelpStep4": "פתח את Vaultara כל כמה שבועות. iPhone שומר רק מספר מוגבל של תזכורות עתידיות, ופתיחת האפליקציה מתזמנת את הבאות.",
+  "homeNextUpEmpty": "שום דבר לא פג בקרוב. הכול מוכן.",
+  "homeDueSoonChip": "{count, plural, one{{count} פג בתוך 30 ימים} two{{count} פגים בתוך 30 ימים} other{{count} פגים בתוך 30 ימים}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "קטגוריות מוצמדות"
 }

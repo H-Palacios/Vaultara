@@ -360,15 +360,6 @@ class AppLocalizationsYo extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Inú wa dùn láti rí ọ padà. Vaultara ṣetan nigbakugba ti o ba fẹ lati tún wo awọn ọjọ ati awọn igbasilẹ pataki rẹ.';
 
   @override
-  String get summaryAllCaption => 'Tẹle ninu Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Ti parí';
-
-  @override
-  String get summaryExpiredCaption => 'Ọjọ́ ipari ti kọja';
-
-  @override
   String get editorNotes => 'Àwọn àkọsílẹ̀';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Pa igbasilẹ rẹ';
-
-  @override
-  String get summaryAllRecordsTitle => 'Gbogbo awọn igbasilẹ';
 
   @override
   String get noGroupFound => 'Ko si ẹgbẹ kankan sibẹ';
@@ -829,22 +817,10 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Àwọn igbasilẹ $count',
-      one: 'Igbasilẹ 1',
+      one: 'Igbasilẹ $count',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Tó ń bọ̀';
-
-  @override
-  String get summaryUpcomingCaption => 'Láàárín ọjọ́ 30';
-
-  @override
-  String get summaryUrgentTitle => 'Kíákíá';
-
-  @override
-  String get summaryUrgentCaption => 'Láàárín ọjọ́ 7';
 
   @override
   String get profileHeaderTitle => 'Profaili';
@@ -945,7 +921,7 @@ class AppLocalizationsYo extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ọjọ ṣaaju',
-      one: '1 ọjọ ṣaaju',
+      one: '$days ọjọ ṣaaju',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsYo extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names ati $extra míràn yóò parí lónìí.',
-      one: '$names ati 1 míràn yóò parí lónìí.',
+      one: '$names ati $extra míràn yóò parí lónìí.',
       zero: '$names yóò parí lónìí.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsYo extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b, ati igbasilẹ $extra míràn yóò parí nígbà tí yóò bá fi di ọjọ́ $lastDate, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí àwọn igbasilẹ bá súnmọ́ra báyìí.',
-      one: '$a, $b, ati igbasilẹ 1 míràn yóò parí nígbà tí yóò bá fi di ọjọ́ $lastDate, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí àwọn igbasilẹ bá súnmọ́ra báyìí.',
+      one: '$a, $b, ati igbasilẹ $extra míràn yóò parí nígbà tí yóò bá fi di ọjọ́ $lastDate, ní nǹkan bí àkókò kan náà. Ó rọrùn lati gbàgbé ọ̀kan tí àwọn igbasilẹ bá súnmọ́ra báyìí.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count nínú àwọn igbasilẹ rẹ nínú ẹka $category yóò parí nígbà tí yóò bá fi di ọjọ́ $date. Ó rọrùn lati gbàgbé ọ̀kan tí wọ́n bá wà nínú ẹgbẹ́ báyìí.',
-      one: '1 nínú àwọn igbasilẹ rẹ nínú ẹka $category yóò parí ní ọjọ́ $date. Ó rọrùn láti fojú fò ó.',
+      one: '$count nínú àwọn igbasilẹ rẹ nínú ẹka $category yóò parí ní ọjọ́ $date. Ó rọrùn láti fojú fò ó.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ìparí $count tí ń bọ̀ ti ní ìrántí. Kò sí nkan míràn tó gba àkíyèsí rẹ.',
-      one: 'Ìparí 1 tí ń bọ̀ ti ní ìrántí. Kò sí nkan míràn tó gba àkíyèsí rẹ.',
+      one: 'Ìparí $count tí ń bọ̀ ti ní ìrántí. Kò sí nkan míràn tó gba àkíyèsí rẹ.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kò sí nkan tó jẹ́ kánjú mọ́ lọ́wọ́lọ́wọ́, ṣùgbọ́n àwọn igbasilẹ $count tí ń bọ̀ kò tíì ní ìrántí kankan.',
-      one: 'Kò sí nkan tó jẹ́ kánjú mọ́ lọ́wọ́lọ́wọ́, ṣùgbọ́n igbasilẹ 1 tí ń bọ̀ kò tíì ní ìrántí kankan.',
+      one: 'Kò sí nkan tó jẹ́ kánjú mọ́ lọ́wọ́lọ́wọ́, ṣùgbọ́n igbasilẹ $count tí ń bọ̀ kò tíì ní ìrántí kankan.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsYo extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ọjọ',
-      one: '1 ọjọ',
+      one: '$days ọjọ',
     );
     return 'Iranti $position: $_temp0 ṣaaju';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count yóò parí láìpẹ́',
-      one: '1 yóò parí láìpẹ́',
+      one: '$count yóò parí láìpẹ́',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsYo extends AppLocalizations {
   String get noRecordsTomorrow => 'Kò sí ohun tí ń parí lọ́la';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName ń parí ní ọjọ́ $days',
-      one: '$recordName ń parí lọ́la',
-      zero: '$recordName ń parí lónìí',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName rẹ ń parí ní $date. Titún ṣe ni kutukutu n jẹ ki o wa ni aabo.',
-      one: '$firstName, $recordName rẹ ń parí lọ́la. Sọ ọ di tuntun ni bayi ki o ma baa pari.',
-      zero: '$firstName, $recordName rẹ ń parí lónìí. Ṣe o ti sọ ọ di tuntun tẹlẹ? Ṣe imudojuiwọn ọjọ́ ipari rẹ̀.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Iranti ikẹhin: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'ní ọjọ́ $days, ní $date',
-      one: 'lọ́la',
-    );
-    return '$firstName, $recordName rẹ ń parí $_temp0. Eleyi ni iranti ikẹhin rẹ, sọ ọ di tuntun tabi ṣe imudojuiwọn ọjọ́ rẹ̀.';
   }
 
   @override
@@ -1532,7 +1473,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Àwọn igbasilẹ $count tó ń bọ̀ kò tíì ní iye owó.',
-      one: 'Igbasilẹ 1 tó ń bọ̀ kò tíì ní iye owó.',
+      one: 'Igbasilẹ $count tó ń bọ̀ kò tíì ní iye owó.',
     );
     return '$_temp0';
   }
@@ -1566,7 +1507,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Àwọn igbasilẹ $count',
-      one: 'Igbasilẹ 1',
+      one: 'Igbasilẹ $count',
       zero: 'Kò sí igbasilẹ',
     );
     return '$_temp0';
@@ -1622,7 +1563,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Títí dé ènìyàn $count',
-      one: 'Títí dé ènìyàn 1',
+      one: 'Títí dé ènìyàn $count',
     );
     return '$_temp0';
   }
@@ -1639,7 +1580,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ṣafikun títí dé ènìyàn $count',
-      one: 'Ṣafikun ènìyàn 1',
+      one: 'Ṣafikun ènìyàn $count',
     );
     return '$_temp0';
   }
@@ -2223,7 +2164,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Àwọn igbasilẹ $count',
-      one: 'Igbasilẹ 1',
+      one: 'Igbasilẹ $count',
     );
     return '$_temp0';
   }
@@ -2254,7 +2195,7 @@ class AppLocalizationsYo extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Ìrìn àjò ọjọ́ $days',
-      one: 'Ìrìn àjò ọjọ́ 1',
+      one: 'Ìrìn àjò ọjọ́ $days',
     );
     return '$_temp0';
   }
@@ -2327,7 +2268,7 @@ class AppLocalizationsYo extends AppLocalizations {
       months,
       locale: localeName,
       other: 'oṣù $months',
-      one: 'oṣù 1',
+      one: 'oṣù $months',
     );
     return '$name ń parí ní $date. Ọ̀pọ̀ orílẹ̀-èdè fẹ́ kí $_temp0 kù lẹ́yìn tí o bá padà.';
   }
@@ -2343,7 +2284,7 @@ class AppLocalizationsYo extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ọjọ́ $days sínú ìrìn àjò rẹ',
-      one: 'ọjọ́ 1 sínú ìrìn àjò rẹ',
+      one: 'ọjọ́ $days sínú ìrìn àjò rẹ',
       zero: 'ní ọjọ́ tí o ń lọ',
     );
     return '$name ń parí ní $date, $_temp0.';
@@ -2521,7 +2462,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Nǹkan $count nílò àkíyèsí',
-      one: 'Nǹkan 1 nílò àkíyèsí',
+      one: 'Nǹkan $count nílò àkíyèsí',
     );
     return '$_temp0';
   }
@@ -2602,7 +2543,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ìwé $count nílò àkíyèsí kí o tó lọ.',
-      one: 'Ìwé 1 nílò àkíyèsí kí o tó lọ.',
+      one: 'Ìwé $count nílò àkíyèsí kí o tó lọ.',
     );
     return '$_temp0';
   }
@@ -2705,7 +2646,7 @@ class AppLocalizationsYo extends AppLocalizations {
       limit,
       locale: localeName,
       other: 'fọ́tò $limit',
-      one: 'fọ́tò 1',
+      one: 'fọ́tò $limit',
     );
     return 'Ètò Ọ̀fẹ́ jẹ́ kí o ṣafikun $_temp0 sí igbasilẹ kọ̀ọ̀kan. Pẹ̀lú Premium o lè ṣafikun títí dé $premiumLimit.';
   }
@@ -2741,7 +2682,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Àwọn fọ́tò $count',
-      one: 'Fọ́tò 1',
+      one: 'Fọ́tò $count',
     );
     return '$_temp0';
   }
@@ -6738,7 +6679,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ọjọ́ $count ló kù',
-      one: 'Ọjọ́ 1 ló kù',
+      one: 'Ọjọ́ $count ló kù',
     );
     return '$_temp0';
   }
@@ -6749,7 +6690,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ọjọ́ $count sẹ́yìn',
-      one: 'Ọjọ́ 1 sẹ́yìn',
+      one: 'Ọjọ́ $count sẹ́yìn',
     );
     return '$_temp0';
   }
@@ -7109,7 +7050,7 @@ class AppLocalizationsYo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Àkọsílẹ̀ $count tí o pa rẹ́ ni a kà sí èyí tí a fagi lé.',
-      one: 'Àkọsílẹ̀ 1 tí o pa rẹ́ ni a kà sí èyí tí a fagi lé.',
+      one: 'Àkọsílẹ̀ $count tí o pa rẹ́ ni a kà sí èyí tí a fagi lé.',
     );
     return '$_temp0';
   }
@@ -8224,4 +8165,204 @@ class AppLocalizationsYo extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Ìránnilétí: $name ń parí ní $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName ń parí lónìí';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName ń parí lọ́la';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName ń parí ní ọjọ́ $days',
+      one: '$recordName ń parí ní ọjọ́ $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName ti parí';
+  }
+
+  @override
+  String get remLockedTitle => 'Igbasilẹ tí a tì nílò àfiyèsí rẹ';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Ọjọ́ rẹ̀ ni $date. Ṣí Vaultara láti rí igbasilẹ tí ó jẹ́.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Igbasilẹ rẹ \"$recordName\" ń parí lónìí.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Igbasilẹ rẹ \"$recordName\" ń parí lọ́la.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Igbasilẹ rẹ \"$recordName\" ń parí ní $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, igbasilẹ rẹ \"$recordName\" ń parí lónìí.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, igbasilẹ rẹ \"$recordName\" ń parí lọ́la.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, igbasilẹ rẹ \"$recordName\" ń parí ní $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Igbasilẹ $person \"$recordName\" ń parí lónìí.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Igbasilẹ $person \"$recordName\" ń parí lọ́la.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Igbasilẹ $person \"$recordName\" ń parí ní $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Igbasilẹ rẹ \"$recordName\" parí ní $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Igbasilẹ $person \"$recordName\" parí ní $date.';
+  }
+
+  @override
+  String get remTipToday => 'Ṣé o ti sọ ọ́ di tuntun? Ṣe imudojuiwọn ọjọ́ rẹ̀.';
+
+  @override
+  String get remTipTomorrow => 'Sọ ọ́ di tuntun nísinsìnyí kí ó má bàa parí.';
+
+  @override
+  String get remTipEarly => 'Sísọ di tuntun ní kùtùkùtù ń dáàbò bò ọ́.';
+
+  @override
+  String get remTipLast => 'Èyí ni ìránnilétí rẹ tó kẹ́yìn kí ó tó parí.';
+
+  @override
+  String get remTipExpired => 'Sọ ọ́ di tuntun, tàbí ṣe imudojuiwọn ọjọ́ rẹ̀ bí o bá ti ṣe é.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Àkókò ti tó láti bẹ̀rẹ̀ sí sọ \"$recordName\" di tuntun. Ó ń parí ní $date, nítorí náà bí o bá bẹ̀rẹ̀ nísinsìnyí, o máa ní àkókò tó pọ̀.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Àkókò ti tó láti bẹ̀rẹ̀ sí sọ \"$recordName\" ti $person di tuntun. Ó ń parí ní $date, nítorí náà bíbẹ̀rẹ̀ nísinsìnyí máa fi àkókò tó pọ̀ sílẹ̀.';
+  }
+
+  @override
+  String get notifChannelName => 'Àwọn ìránnilétí ìparí';
+
+  @override
+  String get notifChannelDescription => 'Àwọn ìránnilétí kí àwọn igbasilẹ rẹ tó parí';
+
+  @override
+  String get notifTestTitle => 'Ìfitónilétí ìdánwò';
+
+  @override
+  String get notifTestBody => 'Àwọn ìránnilétí Vaultara máa ń dé báyìí.';
+
+  @override
+  String get notifTestAction => 'Fi ìfitónilétí ìdánwò ránṣẹ́';
+
+  @override
+  String get notifTestSubtitle => 'Ṣàyẹ̀wò pé àwọn ìránnilétí ń dé fóònù yìí';
+
+  @override
+  String get notifTestSent => 'A ti fi ìdánwò ránṣẹ́. Ó yẹ kí ó dé láàrin ìṣẹ́jú-àáyá díẹ̀.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Rán mi létí lẹ́yìn tí igbasilẹ bá parí';
+
+  @override
+  String get notifAfterExpirySubtitle => 'Ọjọ́ 3 àti 14 lẹ́yìn náà, bí a kò bá sọ ọ́ di tuntun';
+
+  @override
+  String get notifWeeklyTitle => 'Àkópọ̀ Ọjọ́ Ajé';
+
+  @override
+  String get notifWeeklySubtitle => 'Ìfiránṣẹ́ ní àárọ̀ Ọjọ́ Ajé nígbà tí nǹkan bá ń parí ní ọ̀sẹ̀ náà';
+
+  @override
+  String get notifPushSection => 'Ìdílé àti àwọn imudojuiwọn';
+
+  @override
+  String get notifHouseholdTitle => 'Àwọn igbasilẹ tí a pín';
+
+  @override
+  String get notifHouseholdSubtitle => 'Nígbà tí igbasilẹ tí a pín bá fẹ́ parí tí kò sí ẹni tí ó sọ ọ́ di tuntun';
+
+  @override
+  String get notifUpdatesTitle => 'Àwọn imudojuiwọn tí o béèrè';
+
+  @override
+  String get notifUpdatesSubtitle => 'Nígbà tí ẹnìkan bá fi àlàyé tuntun igbasilẹ ránṣẹ́';
+
+  @override
+  String get notifSecurityNote => 'A máa ń fi ìkìlọ̀ nípa ìwọlé tuntun sínú àkáǹtì rẹ ránṣẹ́ nígbà gbogbo.';
+
+  @override
+  String get notifIosHelpTitle => 'O kò rí àwọn ìránnilétí gbà?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Ṣàyẹ̀wò ètò iPhone rẹ';
+
+  @override
+  String get notifIosHelpStep1 => 'Ṣí Settings, lẹ́yìn náà Notifications, lẹ́yìn náà Vaultara, kí o sì tan Allow Notifications.';
+
+  @override
+  String get notifIosHelpStep2 => 'Tan Lock Screen, Notification Centre àti Banners.';
+
+  @override
+  String get notifIosHelpStep3 => 'Bí o bá ń lo Focus, fi Vaultara kún àwọn ohun èlò tí ó gbà láàyè.';
+
+  @override
+  String get notifIosHelpStep4 => 'Ṣí Vaultara ní ọ̀sẹ̀ díẹ̀ díẹ̀. iPhone máa ń tọ́jú iye ìránnilétí díẹ̀ ṣáájú, ṣíṣí ohun èlò náà sì máa ń ṣètò àwọn tó kàn.';
+
+  @override
+  String get homeNextUpEmpty => 'Kò sí ohun tó máa parí láìpẹ́. Gbogbo nǹkan ti ṣetán.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count yóò parí láàrin ọjọ́ 30',
+      one: '$count yóò parí láàrin ọjọ́ 30',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Àwọn ẹ̀ka tí a pinni';
 }

@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Sme radi, že vás tu vidíme. Vaultara vám pomáha organizovať dôležité dátumy a záznamy na jednom bezpečnom mieste.",
   "homeWelcomeSubtitleBack": "Radi vás opäť vidíme. Vaultara je pripravená, keď si chcete prezrieť svoje dôležité dátumy a záznamy.",
   "homeWelcomeTitle": "Vitajte",
-  "summaryAllCaption": "Sledované vo Vaultara",
-  "summaryExpiredTitle": "Vypršané",
-  "summaryExpiredCaption": "Dátum platnosti vypršal",
   "editorNotes": "Poznámky",
   "editorReminderNone": "Bez pripomienky",
   "editorReminderOnExpiry": "V deň vypršania",
@@ -192,7 +189,6 @@
   "addRecord": "Pridať záznam",
   "noRecordsYet": "Zatiaľ žiadne záznamy.",
   "deleteRecordTitle": "Odstrániť záznam",
-  "summaryAllRecordsTitle": "Všetky záznamy",
   "noGroupFound": "Zatiaľ žiadne skupiny",
   "groupLabel": "{count, plural, one{{count} skupina} other{{count} skupiny}}",
   "recordsLabel": "{count, plural, one{{count} záznam} other{{count} záznamy}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "Pridať poznámky (voliteľné)",
   "expiryTimelineTitle": "Časová os vypršania",
   "expiryTimelineSubtitle": "Klepnite na mesiac a zobrazte záznamy, ktorým vyprší platnosť v danom mesiaci",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 záznam} few{{count} záznamy} other{{count} záznamov}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} záznam} few{{count} záznamy} other{{count} záznamov}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Nadchádzajúce",
-  "summaryUpcomingCaption": "Do 30 dní",
-  "summaryUrgentTitle": "Naliehavé",
-  "summaryUrgentCaption": "Do 7 dní",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Návody",
   "profileTutorialsSubtitle": "Prehľadávať Návody k Aplikácii",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Bez pripomienky",
   "reminderOnExpiry": "V deň vypršania",
-  "reminderDaysBefore": "{days, plural, one{1 deň vopred} few{{days} dni vopred} other{{days} dní vopred}}",
+  "reminderDaysBefore": "{days, plural, one{{days} deň vopred} few{{days} dni vopred} other{{days} dní vopred}}",
   "reminderCustomDaysTitle": "Zadajte vlastné dni",
   "reminderCascadeTitle": "Kaskádové pripomienky",
   "reminderCascadeSubtitle": "Prijímajte viacero oznámení pred vypršaním záznamu",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "Pridajte svoj prvý záznam",
   "smartInsightNoRecordsBody": "Začnite sledovať svoje záznamy a Vaultara tu zobrazí inteligentné prehľady.",
   "smartInsightExpiresTodaySingleBody": "Platnosť {name} vyprší dnes. Ak ste ju už obnovili, aktualizujte dátum tu.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} vypršia dnes.} =1{{names} a ešte 1 záznam vypršia dnes.} other{{names} a ešte {extra} záznamov vyprší dnes.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} vypršia dnes.} =1{{names} a ešte {extra} záznam vypršia dnes.} other{{names} a ešte {extra} záznamov vyprší dnes.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{Platnosť {name} vyprší zajtra a nemá nastavenú pripomienku. Nastavte si ju, aby ste na to nezabudli.} other{Platnosť {name} vyprší {date} a nemá nastavenú pripomienku. Nastavte si ju, aby ste na to nezabudli.}}",
   "smartInsightCloseExpiriesBodyTwo": "Platnosť {a} vyprší {dateA} a {b} vyprší {dateB}, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď sú dva záznamy takto blízko seba.",
   "smartInsightCloseExpiriesBodyThree": "Platnosť {a}, {b} a {c} vyprší do {lastDate}, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď je ich niekoľko takto blízko seba.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} a ešte 1 záznam vypršia do {lastDate}, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď je ich niekoľko takto blízko seba.} other{{a}, {b} a ešte {extra} záznamov vyprší do {lastDate}, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď je ich niekoľko takto blízko seba.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} a ešte {extra} záznam vypršia do {lastDate}, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď je ich niekoľko takto blízko seba.} other{{a}, {b} a ešte {extra} záznamov vyprší do {lastDate}, približne v rovnakom čase. Je ľahké na jeden zabudnúť, keď je ich niekoľko takto blízko seba.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Nasledujúci deň nič nevyprší. Váš najbližší termín je {date}.} other{V nasledujúcich {days} dňoch nič nevyprší. Váš najbližší termín je {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Platnosť vášho 1 záznamu v kategórii {category} vyprší {date}. Je ľahké ho prehliadnuť.} other{Platnosť vašich {count} záznamov v kategórii {category} vyprší do {date}. Je ľahké na jeden zabudnúť, keď sú takto zoskupené.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 nadchádzajúci termín je pokrytý pripomienkou. Nič iné nevyžaduje vašu pozornosť.} other{{count} nadchádzajúcich termínov je pokrytých pripomienkami. Nič iné nevyžaduje vašu pozornosť.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Platnosť vášho {count} záznamu v kategórii {category} vyprší {date}. Je ľahké ho prehliadnuť.} other{Platnosť vašich {count} záznamov v kategórii {category} vyprší do {date}. Je ľahké na jeden zabudnúť, keď sú takto zoskupené.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} nadchádzajúci termín je pokrytý pripomienkou. Nič iné nevyžaduje vašu pozornosť.} other{{count} nadchádzajúcich termínov je pokrytých pripomienkami. Nič iné nevyžaduje vašu pozornosť.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Všetko je aktuálne. Momentálne nič nevyžaduje vašu pozornosť.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Momentálne nič nie je naliehavé, ale 1 nadchádzajúci záznam ešte nemá pripomienku.} other{Momentálne nič nie je naliehavé, ale {count} nadchádzajúcich záznamov ešte nemá pripomienku.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Momentálne nič nie je naliehavé, ale {count} nadchádzajúci záznam ešte nemá pripomienku.} other{Momentálne nič nie je naliehavé, ale {count} nadchádzajúcich záznamov ešte nemá pripomienku.}}",
   "smartInsightCloseExpiriesHeading": "Vypršia približne v rovnakom čase",
   "plansHeadline": "Získajte kompletnú službu Vaultara",
   "plansSubhead": "Neobmedzené záznamy, vlastné skupiny a pripomienky vyladené presne podľa vašich predstáv.",
@@ -607,7 +599,7 @@
   "reminderCascadeRemoveStep": "Odstrániť",
   "reminderCascadeDuplicate": "Tento deň už využíva iná pripomienka",
   "reminderCascadeOutOfRange": "Zadajte hodnotu medzi {min} a {max} dňami",
-  "reminderCascadeStepLabel": "Pripomienka {position}: {days, plural, =1{1 deň} few{{days} dni} other{{days} dní}} vopred",
+  "reminderCascadeStepLabel": "Pripomienka {position}: {days, plural, =1{{days} deň} few{{days} dni} other{{days} dní}} vopred",
   "expiryTimelineNotReady": "Časová os sa zobrazí, hneď ako budete mať záznamy s koncom platnosti v niekoľkých rôznych mesiacoch.",
   "verifyEmailResendIn": "Znovu odoslať o {seconds} s",
   "verifyEmailSpamHint": "Nenašli ste ho? Skontrolujte priečinok so spamom alebo nevyžiadanou poštou.",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "Tento účet nie je overený. Ak teraz odídete, bude odstránený a budete sa môcť znova zaregistrovať s akoukoľvek e-mailovou adresou.",
   "verifyEmailDiscardAction": "Zahodiť",
   "verifyEmailKeepWaiting": "Počkať",
-  "expiringBadge": "{count, plural, =1{1 čoskoro vyprší} few{{count} čoskoro vypršia} other{{count} čoskoro vyprší}}",
+  "expiringBadge": "{count, plural, =1{{count} čoskoro vyprší} few{{count} čoskoro vypršia} other{{count} čoskoro vyprší}}",
   "noRecordsToday": "Dnes nič nevyprší",
   "noRecordsTomorrow": "Zajtra nič nevyprší",
-  "cascadeStepTitle": "{days, plural, =0{Platnosť položky {recordName} vyprší dnes} =1{Platnosť položky {recordName} vyprší zajtra} few{Platnosť položky {recordName} vyprší o {days} dni} other{Platnosť položky {recordName} vyprší o {days} dní}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, platnosť položky {recordName} vyprší dnes. Už ste ju obnovili? Aktualizujte dátum vypršania.} =1{{firstName}, platnosť položky {recordName} vyprší zajtra. Obnovte ju hneď, aby nestratila platnosť.} other{{firstName}, platnosť položky {recordName} vyprší {date}. Včasné obnovenie zaistí nepretržitú platnosť.}}",
   "cascadeFinalStepTitle": "Posledná pripomienka: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, platnosť položky {recordName} vyprší {days, plural, =1{zajtra} few{o {days} dni, dňa {date}} other{o {days} dní, dňa {date}}}. Toto je vaša posledná pripomienka, obnovte ju alebo aktualizujte jej dátum.",
   "notificationsTitle": "Oznámenia",
   "notificationsProfileEnabledSubtitle": "Pripomienky prichádzajú o {time}.",
   "notificationsProfileDisabledSubtitle": "Oznámenia sú vypnuté.",
@@ -1349,7 +1338,7 @@
   "photoLockTurnOn": "Zapnúť šifrované fotky",
   "photoLockStatusOn": "Šifrované fotky sú zapnuté",
   "photoLockStatusOnBody": "Nové fotky sa pred nahraním zašifrujú v tomto telefóne.",
-  "photoLockPendingTitle": "{count, plural, one{1 fotka ešte nie je zašifrovaná} few{{count} fotky ešte nie sú zašifrované} many{{count} fotky ešte nie je zašifrovaných} other{{count} fotiek ešte nie je zašifrovaných}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} fotka ešte nie je zašifrovaná} few{{count} fotky ešte nie sú zašifrované} many{{count} fotky ešte nie je zašifrovaných} other{{count} fotiek ešte nie je zašifrovaných}}",
   "photoLockPendingBody": "Fotky pridané pred zapnutím tejto funkcie sa stále ukladajú bežným spôsobom.",
   "photoLockEncryptExisting": "Zašifrovať moje existujúce fotky",
   "photoLockKeepOpen": "Nechajte Vaultara otvorenú, kým sa to nedokončí.",
@@ -1386,7 +1375,7 @@
   "photoLockSetupFailed": "Šifrované fotky sa nepodarilo zapnúť. Skontrolujte pripojenie a skúste to znova.",
   "photoLockAlreadyOn": "Šifrované fotky sú pre váš účet už zapnuté. Zadajte kľúč na obnovenie, aby ste ich mohli používať v tomto telefóne.",
   "photoLockEncryptExistingTitle": "Zašifrovať existujúce fotky?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Máte 1 fotku, ktorá ešte nie je zašifrovaná. Môžeme ju zašifrovať teraz.} few{Máte {count} fotky, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.} many{Máte {count} fotky, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.} other{Máte {count} fotiek, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.}} Nechajte Vaultara otvorenú, kým sa to nedokončí.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Máte {count} fotku, ktorá ešte nie je zašifrovaná. Môžeme ju zašifrovať teraz.} few{Máte {count} fotky, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.} many{Máte {count} fotky, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.} other{Máte {count} fotiek, ktoré ešte nie sú zašifrované. Môžeme ich zašifrovať teraz.}} Nechajte Vaultara otvorenú, kým sa to nedokončí.",
   "photoLockEncryptNow": "Zašifrovať teraz",
   "photoLockEntryBody": "Zadajte kľúč na obnovenie, ktorý ste uložili pri zapnutí šifrovaných fotiek. Pomlčky a medzery sú voliteľné.",
   "photoLockEntryLabel": "Kľúč na obnovenie",
@@ -1395,8 +1384,8 @@
   "photoLockUnlocked": "Vaše fotky sú v tomto telefóne odomknuté.",
   "photoLockInvalidFormat": "Toto nevyzerá ako kľúč na obnovenie. Skontrolujte každý znak a skúste to znova.",
   "photoLockWrongKey": "Tento kľúč na obnovenie sa nezhoduje. Skontrolujte ho a skúste to znova.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Príliš veľa pokusov. Počkajte 1 sekundu a skúste to znova.} few{Príliš veľa pokusov. Počkajte {seconds} sekundy a skúste to znova.} many{Príliš veľa pokusov. Počkajte {seconds} sekundy a skúste to znova.} other{Príliš veľa pokusov. Počkajte {seconds} sekúnd a skúste to znova.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Príliš veľa pokusov. Počkajte 1 minútu a skúste to znova.} few{Príliš veľa pokusov. Počkajte {minutes} minúty a skúste to znova.} many{Príliš veľa pokusov. Počkajte {minutes} minúty a skúste to znova.} other{Príliš veľa pokusov. Počkajte {minutes} minút a skúste to znova.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Príliš veľa pokusov. Počkajte {seconds} sekundu a skúste to znova.} few{Príliš veľa pokusov. Počkajte {seconds} sekundy a skúste to znova.} many{Príliš veľa pokusov. Počkajte {seconds} sekundy a skúste to znova.} other{Príliš veľa pokusov. Počkajte {seconds} sekúnd a skúste to znova.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Príliš veľa pokusov. Počkajte {minutes} minútu a skúste to znova.} few{Príliš veľa pokusov. Počkajte {minutes} minúty a skúste to znova.} many{Príliš veľa pokusov. Počkajte {minutes} minúty a skúste to znova.} other{Príliš veľa pokusov. Počkajte {minutes} minút a skúste to znova.}}",
   "photoLockOffline": "Nepodarilo sa spojiť s Vaultara. Skontrolujte pripojenie a skúste to znova.",
   "photoLockNotSetUp": "Šifrované fotky nie sú pre váš účet zapnuté.",
   "photoLockUnlockFailed": "Niečo sa pokazilo. Skúste to znova.",
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "Platnosť položky {recordName} vyprší dnes",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "Platnosť položky {recordName} vyprší zajtra",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{Platnosť položky {recordName} vyprší o {days} deň} few{Platnosť položky {recordName} vyprší o {days} dni} many{Platnosť položky {recordName} vyprší o {days} dňa} other{Platnosť položky {recordName} vyprší o {days} dní}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "Platnosť položky {recordName} vypršala",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Zamknutý záznam vyžaduje vašu pozornosť",
+  "remLockedBody": "Jeho dátum je {date}. Odomknite Vaultaru a uvidíte, o ktorý záznam ide.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Platnosť vášho záznamu {recordName} vyprší dnes.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Platnosť vášho záznamu {recordName} vyprší zajtra.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Platnosť vášho záznamu {recordName} vyprší {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, platnosť vášho záznamu {recordName} vyprší dnes.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, platnosť vášho záznamu {recordName} vyprší zajtra.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, platnosť vášho záznamu {recordName} vyprší {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: platnosť záznamu {recordName} vyprší dnes.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: platnosť záznamu {recordName} vyprší zajtra.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: platnosť záznamu {recordName} vyprší {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Platnosť vášho záznamu {recordName} vypršala {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: platnosť záznamu {recordName} vypršala {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Už obnovené? Aktualizujte dátum.",
+  "remTipTomorrow": "Obnovte ho teraz, aby platnosť nevypršala.",
+  "remTipEarly": "Včasné obnovenie vás udrží v bezpečí.",
+  "remTipLast": "Toto je posledná pripomienka pred vypršaním.",
+  "remTipExpired": "Obnovte ho, alebo aktualizujte dátum, ak je už obnovený.",
+  "remStartBody": "Je čas začať s obnovou záznamu {recordName}. Platnosť vyprší {date}, takže keď začnete teraz, budete mať dosť času.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Je čas začať s obnovou záznamu {recordName} ({person}). Platnosť vyprší {date}, takže keď začnete teraz, bude dosť času.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Pripomienky vypršania",
+  "notifChannelDescription": "Pripomienky pred vypršaním vašich záznamov",
+  "notifTestTitle": "Testovacie upozornenie",
+  "notifTestBody": "Takto prichádzajú pripomienky z Vaultary.",
+  "notifTestAction": "Poslať testovacie upozornenie",
+  "notifTestSubtitle": "Skontrolujte, či pripomienky chodia na tento telefón",
+  "notifTestSent": "Test odoslaný. Mal by prísť o pár sekúnd.",
+  "notifAfterExpiryTitle": "Pripomenúť po vypršaní záznamu",
+  "notifAfterExpirySubtitle": "3 a 14 dní potom, ak nebol obnovený",
+  "notifWeeklyTitle": "Pondelkový súhrn",
+  "notifWeeklySubtitle": "Správa v pondelok ráno, keď v ten týždeň niečo vyprší",
+  "notifPushSection": "Domácnosť a aktualizácie",
+  "notifHouseholdTitle": "Zdieľané záznamy",
+  "notifHouseholdSubtitle": "Keď zdieľaný záznam čoskoro vyprší a nikto ho neobnovil",
+  "notifUpdatesTitle": "Aktualizácie, o ktoré ste požiadali",
+  "notifUpdatesSubtitle": "Keď niekto pošle nové údaje záznamu",
+  "notifSecurityNote": "Upozornenia na nové prihlásenia do vášho účtu sa posielajú vždy.",
+  "notifIosHelpTitle": "Nechodia vám pripomienky?",
+  "notifIosHelpSubtitle": "Skontrolujte nastavenia iPhonu",
+  "notifIosHelpStep1": "Otvorte Nastavenia, potom Hlásenia, potom Vaultara, a zapnite Povoliť hlásenia.",
+  "notifIosHelpStep2": "Zapnite Zamknutú obrazovku, Centrum hlásení a Bannery.",
+  "notifIosHelpStep3": "Ak používate režim sústredenia, pridajte Vaultaru medzi povolené aplikácie.",
+  "notifIosHelpStep4": "Otvárajte Vaultaru raz za pár týždňov. iPhone si drží iba obmedzený počet budúcich pripomienok a otvorenie aplikácie naplánuje ďalšie.",
+  "homeNextUpEmpty": "Čoskoro nič nevyprší. Všetko je v poriadku.",
+  "homeDueSoonChip": "{count, plural, one{{count} vyprší do 30 dní} few{{count} vypršia do 30 dní} many{{count} vyprší do 30 dní} other{{count} vyprší do 30 dní}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Pripnuté kategórie"
 }

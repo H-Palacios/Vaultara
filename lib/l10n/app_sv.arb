@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Kul att ha dig här. Vaultara hjälper dig att organisera viktiga datum och uppgifter på ett säkert ställe.",
   "homeWelcomeSubtitleBack": "Kul att se dig igen. Vaultara är redo när du vill granska dina viktiga datum och uppgifter.",
   "homeWelcomeTitle": "Välkommen",
-  "summaryAllCaption": "Spårade i Vaultara",
-  "summaryExpiredTitle": "Utgångna",
-  "summaryExpiredCaption": "Utgångsdatumet har passerat",
   "editorNotes": "Anteckningar",
   "editorReminderNone": "Ingen påminnelse",
   "editorReminderOnExpiry": "På utgångsdatumet",
@@ -185,7 +182,6 @@
   "addRecord": "Lägg till post",
   "noRecordsYet": "Inga poster ännu.",
   "deleteRecordTitle": "Ta bort post",
-  "summaryAllRecordsTitle": "Alla poster",
   "noGroupFound": "Inga grupper ännu",
   "groupLabel": "{count, plural, one{{count} grupp} other{{count} grupper}}",
   "recordsLabel": "{count, plural, one{{count} post} other{{count} poster}}",
@@ -430,7 +426,7 @@
   "addNotesHint": "Lägg till anteckningar (valfritt)",
   "expiryTimelineTitle": "Utgångstidslinje",
   "expiryTimelineSubtitle": "Tryck på en månad för att se posterna som går ut den månaden",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 post} other{{count} poster}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} post} other{{count} poster}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -438,10 +434,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Kommande",
-  "summaryUpcomingCaption": "Inom 30 dagar",
-  "summaryUrgentTitle": "Brådskande",
-  "summaryUrgentCaption": "Inom 7 dagar",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Guider",
   "profileTutorialsSubtitle": "Bläddra Bland App-guider",
@@ -473,7 +465,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Ingen påminnelse",
   "reminderOnExpiry": "På utgångsdatumet",
-  "reminderDaysBefore": "{days, plural, one{1 dag innan} other{{days} dagar innan}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dag innan} other{{days} dagar innan}}",
   "reminderCustomDaysTitle": "Ange anpassade dagar",
   "reminderCascadeTitle": "Kaskadpåminnelser",
   "reminderCascadeSubtitle": "Ta emot flera aviseringar innan en post går ut",
@@ -504,16 +496,16 @@
   "smartInsightNoRecordsHeading": "Lägg till din första post",
   "smartInsightNoRecordsBody": "Börja spåra dina poster, så kommer Vaultara att visa smarta insikter här.",
   "smartInsightExpiresTodaySingleBody": "{name} utgår idag. Om du redan har förnyat den, uppdatera datumet här.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} utgår idag.} =1{{names} och 1 till utgår idag.} other{{names} och {extra} till utgår idag.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} utgår idag.} =1{{names} och {extra} till utgår idag.} other{{names} och {extra} till utgår idag.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} utgår imorgon och saknar påminnelse. Ställ in en så att du inte missar det.} other{{name} utgår den {date} och saknar påminnelse. Ställ in en så att du inte missar det.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} utgår den {dateA} och {b} den {dateB}, ungefär samtidigt. Det är lätt att glömma bort en när två poster ligger så nära varandra.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} och {c} utgår senast {lastDate}, ungefär samtidigt. Det är lätt att glömma bort en när flera poster ligger så nära varandra.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} och 1 post till utgår senast {lastDate}, ungefär samtidigt. Det är lätt att glömma bort en när flera poster ligger så nära varandra.} other{{a}, {b} och {extra} poster till utgår senast {lastDate}, ungefär samtidigt. Det är lätt att glömma bort en när flera poster ligger så nära varandra.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} och {extra} post till utgår senast {lastDate}, ungefär samtidigt. Det är lätt att glömma bort en när flera poster ligger så nära varandra.} other{{a}, {b} och {extra} poster till utgår senast {lastDate}, ungefär samtidigt. Det är lätt att glömma bort en när flera poster ligger så nära varandra.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Inget utgår under nästa dag. Din nästa post utgår den {date}.} other{Inget utgår under de närmaste {days} dagarna. Din nästa post utgår den {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 av dina poster i kategorin {category} utgår den {date}. Den är lätt att förbise.} other{{count} av dina poster i kategorin {category} utgår senast {date}. Det är lätt att glömma bort en när de är grupperade så här.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 kommande utgångsdatum täcks av en påminnelse. Inget annat kräver din uppmärksamhet.} other{{count} kommande utgångsdatum täcks av påminnelser. Inget annat kräver din uppmärksamhet.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} av dina poster i kategorin {category} utgår den {date}. Den är lätt att förbise.} other{{count} av dina poster i kategorin {category} utgår senast {date}. Det är lätt att glömma bort en när de är grupperade så här.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} kommande utgångsdatum täcks av en påminnelse. Inget annat kräver din uppmärksamhet.} other{{count} kommande utgångsdatum täcks av påminnelser. Inget annat kräver din uppmärksamhet.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Allt är uppdaterat. Inget kräver din uppmärksamhet just nu.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Inget är brådskande just nu, men 1 kommande post saknar påminnelse.} other{Inget är brådskande just nu, men {count} kommande poster saknar påminnelse.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Inget är brådskande just nu, men {count} kommande post saknar påminnelse.} other{Inget är brådskande just nu, men {count} kommande poster saknar påminnelse.}}",
   "smartInsightCloseExpiriesHeading": "Utgår ungefär samtidigt",
   "plansHeadline": "Få hela Vaultara",
   "plansSubhead": "Obegränsat med poster, dina egna grupper och påminnelser anpassade exakt efter dina önskemål.",
@@ -600,7 +592,7 @@
   "reminderCascadeRemoveStep": "Ta bort",
   "reminderCascadeDuplicate": "En annan påminnelse använder redan denna dag",
   "reminderCascadeOutOfRange": "Ange mellan {min} och {max} dagar",
-  "reminderCascadeStepLabel": "Påminnelse {position}: {days, plural, =1{1 dag} other{{days} dagar}} före",
+  "reminderCascadeStepLabel": "Påminnelse {position}: {days, plural, =1{{days} dag} other{{days} dagar}} före",
   "expiryTimelineNotReady": "Din tidslinje visas när du har poster som löper ut under några olika månader.",
   "verifyEmailResendIn": "Skicka igen om {seconds} s",
   "verifyEmailSpamHint": "Har det inte kommit fram? Kontrollera din skräppost- eller spam-mapp.",
@@ -609,13 +601,10 @@
   "verifyEmailDiscardBody": "Det här kontot är inte verifierat. Om du lämnar sidan nu raderas det, och du kan registrera dig igen med vilken e-postadress som helst.",
   "verifyEmailDiscardAction": "Släng",
   "verifyEmailKeepWaiting": "Fortsätt vänta",
-  "expiringBadge": "{count, plural, =1{1 går ut snart} other{{count} går ut snart}}",
+  "expiringBadge": "{count, plural, =1{{count} går ut snart} other{{count} går ut snart}}",
   "noRecordsToday": "Inget går ut i dag",
   "noRecordsTomorrow": "Inget går ut i morgon",
-  "cascadeStepTitle": "{days, plural, =0{Giltigheten för {recordName} går ut i dag} =1{Giltigheten för {recordName} går ut i morgon} other{Giltigheten för {recordName} går ut om {days} dagar}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, giltigheten för {recordName} går ut i dag. Har du redan förnyat? Uppdatera utgångsdatumet.} =1{{firstName}, giltigheten för {recordName} går ut i morgon. Förnya nu så att giltigheten inte går förlorad.} other{{firstName}, giltigheten för {recordName} går ut den {date}. Förnyelse i god tid säkerställer oavbruten giltighet.}}",
   "cascadeFinalStepTitle": "Sista påminnelsen: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, giltigheten för {recordName} går ut {days, plural, =1{i morgon} other{om {days} dagar, den {date}}}. Detta är din sista påminnelse, förnya eller uppdatera datumet.",
   "notificationsTitle": "Aviseringar",
   "notificationsProfileEnabledSubtitle": "Påminnelser kommer kl. {time}.",
   "notificationsProfileDisabledSubtitle": "Aviseringar är avstängda.",
@@ -1342,7 +1331,7 @@
   "photoLockTurnOn": "Slå på krypterade foton",
   "photoLockStatusOn": "Krypterade foton är på",
   "photoLockStatusOnBody": "Nya foton krypteras på den här telefonen innan de laddas upp.",
-  "photoLockPendingTitle": "{count, plural, one{1 foto är inte krypterat ännu} other{{count} foton är inte krypterade ännu}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} foto är inte krypterat ännu} other{{count} foton är inte krypterade ännu}}",
   "photoLockPendingBody": "Foton du lade till innan du slog på det här lagras fortfarande på vanligt sätt.",
   "photoLockEncryptExisting": "Kryptera mina befintliga foton",
   "photoLockKeepOpen": "Låt Vaultara vara öppet tills det är klart.",
@@ -1379,7 +1368,7 @@
   "photoLockSetupFailed": "Vi kunde inte slå på krypterade foton. Kontrollera anslutningen och försök igen.",
   "photoLockAlreadyOn": "Krypterade foton är redan på för ditt konto. Ange din återställningsnyckel för att använda dem på den här telefonen.",
   "photoLockEncryptExistingTitle": "Kryptera dina befintliga foton?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Du har 1 foto som inte är krypterat ännu. Vi kan kryptera det nu.} other{Du har {count} foton som inte är krypterade ännu. Vi kan kryptera dem nu.}} Låt Vaultara vara öppet tills det är klart.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Du har {count} foto som inte är krypterat ännu. Vi kan kryptera det nu.} other{Du har {count} foton som inte är krypterade ännu. Vi kan kryptera dem nu.}} Låt Vaultara vara öppet tills det är klart.",
   "photoLockEncryptNow": "Kryptera nu",
   "photoLockEntryBody": "Ange den återställningsnyckel du sparade när du slog på krypterade foton. Bindestreck och mellanslag är valfria.",
   "photoLockEntryLabel": "Återställningsnyckel",
@@ -1388,8 +1377,8 @@
   "photoLockUnlocked": "Dina foton är upplåsta på den här telefonen.",
   "photoLockInvalidFormat": "Det här ser inte ut som en återställningsnyckel. Kontrollera varje tecken och försök igen.",
   "photoLockWrongKey": "Den här återställningsnyckeln stämmer inte. Kontrollera den och försök igen.",
-  "photoLockWaitSeconds": "{seconds, plural, one{För många försök. Vänta 1 sekund och försök igen.} other{För många försök. Vänta {seconds} sekunder och försök igen.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{För många försök. Vänta 1 minut och försök igen.} other{För många försök. Vänta {minutes} minuter och försök igen.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{För många försök. Vänta {seconds} sekund och försök igen.} other{För många försök. Vänta {seconds} sekunder och försök igen.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{För många försök. Vänta {minutes} minut och försök igen.} other{För många försök. Vänta {minutes} minuter och försök igen.}}",
   "photoLockOffline": "Vi kunde inte nå Vaultara. Kontrollera anslutningen och försök igen.",
   "photoLockNotSetUp": "Krypterade foton är inte på för ditt konto.",
   "photoLockUnlockFailed": "Något gick fel. Försök igen.",
@@ -1645,13 +1634,13 @@
   "dailyDigestSwitchSubtitle": "Få en avisering vid din påminnelsetid som listar allt som förfaller den dagen.",
   "dailyDigestTurnedOn": "Dina påminnelser kommer nu som en daglig sammanfattning.",
   "dailyDigestTurnedOff": "Separata påminnelser för varje post är på igen.",
-  "dailyDigestTitle": "{count, plural, one{1 post behöver din uppmärksamhet} other{{count} poster behöver din uppmärksamhet}}",
+  "dailyDigestTitle": "{count, plural, one{{count} post behöver din uppmärksamhet} other{{count} poster behöver din uppmärksamhet}}",
   "dailyDigestBody": "Kommande: {names}.",
   "dailyDigestBodyMore": "Kommande: {names} och {count} till.",
   "dailyDigestLockedRecord": "en låst post",
   "renewReasonRepeat": "{months, plural, one{Baserat på din inställning att upprepa varje månad} other{Baserat på din inställning att upprepa var {months}:e månad}}",
   "renewReasonHistory": "{count, plural, one{Baserat på din senaste förnyelse} other{Baserat på dina senaste {count} förnyelser}}",
-  "renewReasonTypical": "{years, plural, one{Gäller vanligtvis i 1 år} other{Gäller vanligtvis i {years} år}}",
+  "renewReasonTypical": "{years, plural, one{Gäller vanligtvis i {years} år} other{Gäller vanligtvis i {years} år}}",
   "renewChangeHint": "Tryck på datumet för att ändra det.",
   "renewPickDate": "Välj nytt utgångsdatum",
   "renewPickDateHint": "Välj datumet som står på ditt nya dokument.",
@@ -2127,8 +2116,8 @@
   "lifePlanAutoChanged": "Vaultara såg att den här posten ändrades, så den är markerad som klar.",
   "lifePlanAutoAdded": "Tillagd efter att du startade den här planen.",
   "lifePlanProgress": "{done} av {total} klara",
-  "lifePlanDaysToGo": "{count, plural, =1{1 dag kvar} other{{count} dagar kvar}}",
-  "lifePlanDaysAgo": "{count, plural, =1{För 1 dag sedan} other{För {count} dagar sedan}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} dag kvar} other{{count} dagar kvar}}",
+  "lifePlanDaysAgo": "{count, plural, =1{För {count} dag sedan} other{För {count} dagar sedan}}",
   "lifePlanAllDone": "Allt är klart. Du kan markera planen som avslutad.",
   "lifePlanFinish": "Markera som avslutad",
   "lifePlanReopen": "Öppna den igen",
@@ -2257,7 +2246,7 @@
   "lifePlanReadAloudUnavailable": "Uppläsning är inte tillgänglig på den här mobilen.",
   "lifePlanProofPack": "Skapa ett intygspaket",
   "lifePlanOpenFamily": "Öppna Familj",
-  "lifePlanRemoved": "{count, plural, =1{1 post du har raderat räknas som uppsagd.} other{{count} poster du har raderat räknas som uppsagda.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} post du har raderat räknas som uppsagd.} other{{count} poster du har raderat räknas som uppsagda.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2315,7 +2304,7 @@
   "lostWalletCheckupBody": "Förbered dig nu, så att inget glöms bort om den försvinner.",
   "lostWalletCheckupAllGood": "Allt klart. Om den någon gång försvinner är du förberedd.",
   "lostWalletSetPlaceBody": "Öppna ett kort eller dokument och välj var du förvarar det. Gör det för din legitimation, ditt körkort och dina kort.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 sak har inget foto. Med ett foto går det snabbare att ersätta.} other{{count} saker har inget foto. Med foton går det snabbare att ersätta.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} sak har inget foto. Med ett foto går det snabbare att ersätta.} other{{count} saker har inget foto. Med foton går det snabbare att ersätta.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2323,7 +2312,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 kort saknar sparat spärrnummer.} other{{count} kort saknar sparat spärrnummer.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} kort saknar sparat spärrnummer.} other{{count} kort saknar sparat spärrnummer.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2423,7 +2412,7 @@
     }
   },
   "lostWalletReportNoCase": "Diarienummer: inte anmält än",
-  "lostWalletReportCount": "{count, plural, =1{1 sak listad nedan} other{{count} saker listade nedan}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} sak listad nedan} other{{count} saker listade nedan}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2458,7 +2447,7 @@
   "tutorialsGroupTravelFamily": "Resor och familj",
   "tutorialsGroupEmergencies": "Livshändelser och nödlägen",
   "tutorialsGroupPaid": "Betalfunktioner",
-  "tutorialsSteps": "{count, plural, =1{1 steg} other{{count} steg}}",
+  "tutorialsSteps": "{count, plural, =1{{count} steg} other{{count} steg}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2854,5 +2843,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} går ut i dag",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} går ut i morgon",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} går ut om {days} dag} other{{recordName} går ut om {days} dagar}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} har gått ut",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "En låst post behöver din uppmärksamhet",
+  "remLockedBody": "Datumet är {date}. Lås upp Vaultara för att se vilken post det är.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Din post \"{recordName}\" går ut i dag.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Din post \"{recordName}\" går ut i morgon.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Din post \"{recordName}\" går ut den {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, din post \"{recordName}\" går ut i dag.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, din post \"{recordName}\" går ut i morgon.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, din post \"{recordName}\" går ut den {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}s post \"{recordName}\" går ut i dag.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}s post \"{recordName}\" går ut i morgon.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}s post \"{recordName}\" går ut den {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Din post \"{recordName}\" gick ut den {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}s post \"{recordName}\" gick ut den {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Redan förnyad? Uppdatera datumet.",
+  "remTipTomorrow": "Förnya den nu så att den inte går ut.",
+  "remTipEarly": "Att förnya tidigt håller dig täckt.",
+  "remTipLast": "Det här är din sista påminnelse innan den går ut.",
+  "remTipExpired": "Förnya den, eller uppdatera datumet om du redan har gjort det.",
+  "remStartBody": "Det är dags att börja förnya \"{recordName}\". Den går ut den {date}, så om du börjar nu har du gott om tid.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Det är dags att börja förnya {person}s \"{recordName}\". Den går ut den {date}, så att börja nu ger gott om tid.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Påminnelser om utgång",
+  "notifChannelDescription": "Påminnelser innan dina poster går ut",
+  "notifTestTitle": "Testavisering",
+  "notifTestBody": "Påminnelser från Vaultara ser ut så här.",
+  "notifTestAction": "Skicka en testavisering",
+  "notifTestSubtitle": "Kontrollera att påminnelser kommer fram till den här telefonen",
+  "notifTestSent": "Test skickat. Det bör komma inom några sekunder.",
+  "notifAfterExpiryTitle": "Påminn mig när en post har gått ut",
+  "notifAfterExpirySubtitle": "3 och 14 dagar efter, om den inte har förnyats",
+  "notifWeeklyTitle": "Måndagssammanfattning",
+  "notifWeeklySubtitle": "Ett meddelande måndag morgon när något går ut den veckan",
+  "notifPushSection": "Hushåll och uppdateringar",
+  "notifHouseholdTitle": "Delade poster",
+  "notifHouseholdSubtitle": "När en delad post snart går ut och ingen har förnyat den",
+  "notifUpdatesTitle": "Uppdateringar du bad om",
+  "notifUpdatesSubtitle": "När någon skickar de nya uppgifterna för en post",
+  "notifSecurityNote": "Varningar om nya inloggningar på ditt konto skickas alltid.",
+  "notifIosHelpTitle": "Får du inga påminnelser?",
+  "notifIosHelpSubtitle": "Kontrollera inställningarna på din iPhone",
+  "notifIosHelpStep1": "Öppna Inställningar, sedan Notiser, sedan Vaultara, och slå på Tillåt notiser.",
+  "notifIosHelpStep2": "Slå på Låsskärm, Notiscenter och Banners.",
+  "notifIosHelpStep3": "Om du använder ett fokus, lägg till Vaultara bland apparna det tillåter.",
+  "notifIosHelpStep4": "Öppna Vaultara med några veckors mellanrum. En iPhone sparar bara ett begränsat antal kommande påminnelser, och när du öppnar appen planeras nästa.",
+  "homeNextUpEmpty": "Inget går ut snart. Allt är klart.",
+  "homeDueSoonChip": "{count, plural, one{{count} förfaller inom 30 dagar} other{{count} förfaller inom 30 dagar}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Fästa kategorier"
 }

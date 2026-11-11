@@ -360,15 +360,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Χαιρόμαστε που σας βλέπουμε ξανά. Το Vaultara είναι εδώ όποτε θέλετε να ελέγξετε τις σημαντικές ημερομηνίες και τις εγγραφές σας.';
 
   @override
-  String get summaryAllCaption => 'Παρακολουθούνται στο Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Έχουν λήξει';
-
-  @override
-  String get summaryExpiredCaption => 'Μετά την ημερομηνία λήξης';
-
-  @override
   String get editorNotes => 'Σημειώσεις';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Διαγραφή εγγραφής';
-
-  @override
-  String get summaryAllRecordsTitle => 'Όλες οι εγγραφές';
 
   @override
   String get noGroupFound => 'Δεν υπάρχουν ομάδες ακόμα';
@@ -829,22 +817,10 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count εγγραφές',
-      one: '1 εγγραφή',
+      one: '$count εγγραφή',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Επερχόμενα';
-
-  @override
-  String get summaryUpcomingCaption => 'Εντός 30 ημερών';
-
-  @override
-  String get summaryUrgentTitle => 'Επείγον';
-
-  @override
-  String get summaryUrgentCaption => 'Εντός 7 ημερών';
 
   @override
   String get profileHeaderTitle => 'Προφίλ';
@@ -945,7 +921,7 @@ class AppLocalizationsEl extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ημέρες πριν',
-      one: '1 ημέρα πριν',
+      one: '$days ημέρα πριν',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsEl extends AppLocalizations {
       extra,
       locale: localeName,
       other: 'Τα στοιχεία $names και $extra ακόμη λήγουν σήμερα.',
-      one: 'Τα στοιχεία $names και 1 ακόμη λήγουν σήμερα.',
+      one: 'Τα στοιχεία $names και $extra ακόμη λήγουν σήμερα.',
       zero: 'Τα στοιχεία $names λήγουν σήμερα.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsEl extends AppLocalizations {
       extra,
       locale: localeName,
       other: 'Τα στοιχεία $a, $b και $extra ακόμη εγγραφές λήγουν έως τις $lastDate, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.',
-      one: 'Τα στοιχεία $a, $b και 1 ακόμη εγγραφή λήγουν έως τις $lastDate, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.',
+      one: 'Τα στοιχεία $a, $b και $extra ακόμη εγγραφή λήγουν έως τις $lastDate, περίπου την ίδια χρονική περίοδο. Είναι εύκολο να ξεχάσετε το ένα όταν αρκετές εγγραφές είναι τόσο κοντά.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count από τις εγγραφές σας στην κατηγορία $category λήγουν έως τις $date. Είναι εύκολο να ξεχάσετε μία όταν είναι ομαδοποιημένες έτσι.',
-      one: '1 από τις εγγραφές σας στην κατηγορία $category λήγει στις $date. Είναι εύκολο να παραβλεφθεί.',
+      one: '$count από τις εγγραφές σας στην κατηγορία $category λήγει στις $date. Είναι εύκολο να παραβλεφθεί.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count επόμενες λήξεις καλύπτονται από υπενθυμίσεις. Τίποτα άλλο δεν απαιτεί την προσοχή σας.',
-      one: '1 επόμενη λήξη καλύπτεται από υπενθύμιση. Τίποτα άλλο δεν απαιτεί την προσοχή σας.',
+      one: '$count επόμενη λήξη καλύπτεται από υπενθύμιση. Τίποτα άλλο δεν απαιτεί την προσοχή σας.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά $count επόμενες εγγραφές δεν έχουν ακόμη υπενθύμιση.',
-      one: 'Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά 1 επόμενη εγγραφή δεν έχει ακόμη υπενθύμιση.',
+      one: 'Δεν υπάρχει κάτι επείγον αυτή τη στιγμή, αλλά $count επόμενη εγγραφή δεν έχει ακόμη υπενθύμιση.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsEl extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ημέρες',
-      one: '1 ημέρα',
+      one: '$days ημέρα',
     );
     return 'Υπενθύμιση $position: $_temp0 πριν';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count λήγουν σύντομα',
-      one: '1 λήγει σύντομα',
+      one: '$count λήγει σύντομα',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsEl extends AppLocalizations {
   String get noRecordsTomorrow => 'Τίποτα δεν λήγει αύριο';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Το $recordName λήγει σε $days ημέρες',
-      one: 'Το $recordName λήγει αύριο',
-      zero: 'Το $recordName λήγει σήμερα',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, το $recordName λήγει στις $date. Η πρόωρη ανανέωση σας κρατά καλυμμένους.',
-      one: '$firstName, το $recordName λήγει αύριο. Ανανεώστε το τώρα για να μην λήξει.',
-      zero: '$firstName, το $recordName λήγει σήμερα. Το ανανεώσατε ήδη; Ενημερώστε την ημερομηνία λήξης.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Τελευταία υπενθύμιση: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'σε $days ημέρες, στις $date',
-      one: 'αύριο',
-    );
-    return '$firstName, το $recordName λήγει $_temp0. Αυτή είναι η τελευταία σας υπενθύμιση, ανανεώστε το ή ενημερώστε την ημερομηνία.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count φωτογραφίες δεν είναι ακόμη κρυπτογραφημένες',
-      one: '1 φωτογραφία δεν είναι ακόμη κρυπτογραφημένη',
+      one: '$count φωτογραφία δεν είναι ακόμη κρυπτογραφημένη',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Έχετε $count φωτογραφίες που δεν είναι ακόμη κρυπτογραφημένες. Μπορούμε να τις κρυπτογραφήσουμε τώρα.',
-      one: 'Έχετε 1 φωτογραφία που δεν είναι ακόμη κρυπτογραφημένη. Μπορούμε να την κρυπτογραφήσουμε τώρα.',
+      one: 'Έχετε $count φωτογραφία που δεν είναι ακόμη κρυπτογραφημένη. Μπορούμε να την κρυπτογραφήσουμε τώρα.',
     );
     return '$_temp0 Κρατήστε το Vaultara ανοιχτό μέχρι να ολοκληρωθεί.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsEl extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Πάρα πολλές προσπάθειες. Περιμένετε $seconds δευτερόλεπτα και δοκιμάστε ξανά.',
-      one: 'Πάρα πολλές προσπάθειες. Περιμένετε 1 δευτερόλεπτο και δοκιμάστε ξανά.',
+      one: 'Πάρα πολλές προσπάθειες. Περιμένετε $seconds δευτερόλεπτο και δοκιμάστε ξανά.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsEl extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Πάρα πολλές προσπάθειες. Περιμένετε $minutes λεπτά και δοκιμάστε ξανά.',
-      one: 'Πάρα πολλές προσπάθειες. Περιμένετε 1 λεπτό και δοκιμάστε ξανά.',
+      one: 'Πάρα πολλές προσπάθειες. Περιμένετε $minutes λεπτό και δοκιμάστε ξανά.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count εγγραφές χρειάζονται την προσοχή σας',
-      one: '1 εγγραφή χρειάζεται την προσοχή σας',
+      one: '$count εγγραφή χρειάζεται την προσοχή σας',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsEl extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Συνήθως ισχύει για $years έτη',
-      one: 'Συνήθως ισχύει για 1 έτος',
+      one: 'Συνήθως ισχύει για $years έτος',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Πριν από $count λεπτά',
-      one: 'Πριν από 1 λεπτό',
+      one: 'Πριν από $count λεπτό',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Πριν από $count ώρες',
-      one: 'Πριν από 1 ώρα',
+      one: 'Πριν από $count ώρα',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Πριν από $count ημέρες',
-      one: 'Πριν από 1 ημέρα',
+      one: 'Πριν από $count ημέρα',
     );
     return '$_temp0';
   }
@@ -7302,7 +7243,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count στοιχεία δεν έχουν φωτογραφία. Με φωτογραφίες η αντικατάσταση γίνεται πιο γρήγορα.',
-      one: '1 στοιχείο δεν έχει φωτογραφία. Με φωτογραφία η αντικατάσταση γίνεται πιο γρήγορα.',
+      one: '$count στοιχείο δεν έχει φωτογραφία. Με φωτογραφία η αντικατάσταση γίνεται πιο γρήγορα.',
     );
     return '$_temp0';
   }
@@ -7313,7 +7254,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count κάρτες δεν έχουν αποθηκευμένο τηλέφωνο για χαμένη κάρτα.',
-      one: '1 κάρτα δεν έχει αποθηκευμένο τηλέφωνο για χαμένη κάρτα.',
+      one: '$count κάρτα δεν έχει αποθηκευμένο τηλέφωνο για χαμένη κάρτα.',
     );
     return '$_temp0';
   }
@@ -7492,7 +7433,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count στοιχεία παρακάτω',
-      one: '1 στοιχείο παρακάτω',
+      one: '$count στοιχείο παρακάτω',
     );
     return '$_temp0';
   }
@@ -7584,7 +7525,7 @@ class AppLocalizationsEl extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count βήματα',
-      one: '1 βήμα',
+      one: '$count βήμα',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsEl extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Υπενθύμιση: $name λήγει στις $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'Το «$recordName» λήγει σήμερα';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'Το «$recordName» λήγει αύριο';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Το «$recordName» λήγει σε $days ημέρες',
+      one: 'Το «$recordName» λήγει σε $days ημέρα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'Το «$recordName» έληξε';
+  }
+
+  @override
+  String get remLockedTitle => 'Μια κλειδωμένη εγγραφή χρειάζεται την προσοχή σας';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Η ημερομηνία της είναι $date. Ξεκλειδώστε το Vaultara για να δείτε ποια εγγραφή είναι.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Η εγγραφή σας «$recordName» λήγει σήμερα.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Η εγγραφή σας «$recordName» λήγει αύριο.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Η εγγραφή σας «$recordName» λήγει στις $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, η εγγραφή σας «$recordName» λήγει σήμερα.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, η εγγραφή σας «$recordName» λήγει αύριο.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, η εγγραφή σας «$recordName» λήγει στις $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: η εγγραφή «$recordName» λήγει σήμερα.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: η εγγραφή «$recordName» λήγει αύριο.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: η εγγραφή «$recordName» λήγει στις $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Η εγγραφή σας «$recordName» έληξε στις $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: η εγγραφή «$recordName» έληξε στις $date.';
+  }
+
+  @override
+  String get remTipToday => 'Την ανανεώσατε ήδη; Ενημερώστε την ημερομηνία.';
+
+  @override
+  String get remTipTomorrow => 'Ανανεώστε την τώρα για να μη λήξει.';
+
+  @override
+  String get remTipEarly => 'Η έγκαιρη ανανέωση σας κρατά καλυμμένους.';
+
+  @override
+  String get remTipLast => 'Αυτή είναι η τελευταία υπενθύμιση πριν από τη λήξη.';
+
+  @override
+  String get remTipExpired => 'Ανανεώστε την ή ενημερώστε την ημερομηνία αν το κάνατε ήδη.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Ήρθε η ώρα να ξεκινήσετε την ανανέωση του «$recordName». Λήγει στις $date, οπότε αν ξεκινήσετε τώρα θα έχετε άφθονο χρόνο.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Ήρθε η ώρα να ξεκινήσετε την ανανέωση του «$recordName» ($person). Λήγει στις $date, οπότε αν ξεκινήσετε τώρα υπάρχει άφθονος χρόνος.';
+  }
+
+  @override
+  String get notifChannelName => 'Υπενθυμίσεις λήξης';
+
+  @override
+  String get notifChannelDescription => 'Υπενθυμίσεις πριν λήξουν οι εγγραφές σας';
+
+  @override
+  String get notifTestTitle => 'Δοκιμαστική ειδοποίηση';
+
+  @override
+  String get notifTestBody => 'Έτσι φτάνουν οι υπενθυμίσεις του Vaultara.';
+
+  @override
+  String get notifTestAction => 'Αποστολή δοκιμαστικής ειδοποίησης';
+
+  @override
+  String get notifTestSubtitle => 'Ελέγξτε ότι οι υπενθυμίσεις φτάνουν σε αυτό το τηλέφωνο';
+
+  @override
+  String get notifTestSent => 'Η δοκιμή στάλθηκε. Θα φτάσει σε λίγα δευτερόλεπτα.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Υπενθύμιση μετά τη λήξη μιας εγγραφής';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 και 14 ημέρες μετά, αν δεν έχει ανανεωθεί';
+
+  @override
+  String get notifWeeklyTitle => 'Σύνοψη Δευτέρας';
+
+  @override
+  String get notifWeeklySubtitle => 'Ένα μήνυμα τη Δευτέρα το πρωί όταν κάτι λήγει εκείνη την εβδομάδα';
+
+  @override
+  String get notifPushSection => 'Νοικοκυριό και ενημερώσεις';
+
+  @override
+  String get notifHouseholdTitle => 'Κοινόχρηστες εγγραφές';
+
+  @override
+  String get notifHouseholdSubtitle => 'Όταν μια κοινόχρηστη εγγραφή πλησιάζει στη λήξη και κανείς δεν την έχει ανανεώσει';
+
+  @override
+  String get notifUpdatesTitle => 'Ενημερώσεις που ζητήσατε';
+
+  @override
+  String get notifUpdatesSubtitle => 'Όταν κάποιος στέλνει τα νέα στοιχεία μιας εγγραφής';
+
+  @override
+  String get notifSecurityNote => 'Οι ειδοποιήσεις για νέες συνδέσεις στον λογαριασμό σας στέλνονται πάντα.';
+
+  @override
+  String get notifIosHelpTitle => 'Δεν λαμβάνετε υπενθυμίσεις;';
+
+  @override
+  String get notifIosHelpSubtitle => 'Ελέγξτε τις ρυθμίσεις του iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Ανοίξτε τις Ρυθμίσεις, μετά Γνωστοποιήσεις, μετά Vaultara, και ενεργοποιήστε την Αποδοχή γνωστοποιήσεων.';
+
+  @override
+  String get notifIosHelpStep2 => 'Ενεργοποιήστε Οθόνη κλειδώματος, Κέντρο γνωστοποιήσεων και Πλαίσια.';
+
+  @override
+  String get notifIosHelpStep3 => 'Αν χρησιμοποιείτε Εστίαση, προσθέστε το Vaultara στις επιτρεπόμενες εφαρμογές.';
+
+  @override
+  String get notifIosHelpStep4 => 'Ανοίγετε το Vaultara κάθε λίγες εβδομάδες. Το iPhone κρατά μόνο περιορισμένο αριθμό μελλοντικών υπενθυμίσεων και το άνοιγμα της εφαρμογής προγραμματίζει τις επόμενες.';
+
+  @override
+  String get homeNextUpEmpty => 'Τίποτα δεν λήγει σύντομα. Όλα είναι εντάξει.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count λήγουν σε 30 ημέρες',
+      one: '$count λήγει σε 30 ημέρες',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Καρφιτσωμένες κατηγορίες';
 }

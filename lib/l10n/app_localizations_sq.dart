@@ -360,15 +360,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Gëzohemi që ju shohim përsëri. Vaultara është këtu sa herë që dëshironi të rishikoni datat dhe regjistrimet tuaja të rëndësishme.';
 
   @override
-  String get summaryAllCaption => 'Të ndjekur në Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Të skaduara';
-
-  @override
-  String get summaryExpiredCaption => 'Pas datës së skadimit';
-
-  @override
   String get editorNotes => 'Shënime';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Fshi regjistrimin';
-
-  @override
-  String get summaryAllRecordsTitle => 'Të gjitha regjistrimet';
 
   @override
   String get noGroupFound => 'Ende asnjë grup';
@@ -829,22 +817,10 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count regjistrime',
-      one: '1 regjistrim',
+      one: '$count regjistrim',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Të ardhshme';
-
-  @override
-  String get summaryUpcomingCaption => 'Brenda 30 ditësh';
-
-  @override
-  String get summaryUrgentTitle => 'Urgjente';
-
-  @override
-  String get summaryUrgentCaption => 'Brenda 7 ditësh';
 
   @override
   String get profileHeaderTitle => 'Profili';
@@ -945,7 +921,7 @@ class AppLocalizationsSq extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ditë përpara',
-      one: '1 ditë përpara',
+      one: '$days ditë përpara',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsSq extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names dhe $extra të tjerë skadojnë sot.',
-      one: '$names dhe 1 tjetër skadojnë sot.',
+      one: '$names dhe $extra tjetër skadojnë sot.',
       zero: '$names skadojnë sot.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsSq extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b dhe $extra regjistrime të tjera skadojnë deri më $lastDate, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur disa regjistrime janë kaq afër.',
-      one: '$a, $b dhe 1 regjistrim tjetër skadojnë deri më $lastDate, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur disa regjistrime janë kaq afër.',
+      one: '$a, $b dhe $extra regjistrim tjetër skadojnë deri më $lastDate, afërsisht në të njëjtën kohë. Është e lehtë të harrohet njëri kur disa regjistrime janë kaq afër.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count nga regjistrimet tuaja në kategorinë $category skadojnë deri më $date. Është e lehtë të harrohet njëri kur janë të grupuar kështu.',
-      one: '1 nga regjistrimet tuaja në kategorinë $category skadon më $date. Mund të anashkalohet lehtë.',
+      one: '$count nga regjistrimet tuaja në kategorinë $category skadon më $date. Mund të anashkalohet lehtë.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count skadime të ardhshme janë të mbuluara me kujtesa. Asgjë tjetër nuk kërkon vëmendjen tuaj.',
-      one: '1 skadim i ardhshëm është i mbuluar me kujtesë. Asgjë tjetër nuk kërkon vëmendjen tuaj.',
+      one: '$count skadim i ardhshëm është i mbuluar me kujtesë. Asgjë tjetër nuk kërkon vëmendjen tuaj.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Për momentin asgjë nuk është urgjente, por $count regjistrime të ardhshme nuk kanë ende kujtesa.',
-      one: 'Për momentin asgjë nuk është urgjente, por 1 regjistrim i ardhshëm nuk ka ende kujtesë.',
+      one: 'Për momentin asgjë nuk është urgjente, por $count regjistrim i ardhshëm nuk ka ende kujtesë.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsSq extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ditë',
-      one: '1 ditë',
+      one: '$days ditë',
     );
     return 'Kujtesa $position: $_temp0 para';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count skadojnë së shpejti',
-      one: '1 skadon së shpejti',
+      one: '$count skadon së shpejti',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get noRecordsTomorrow => 'Asgjë nuk skadon nesër';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Vlefshmëria e $recordName skadon pas $days ditësh',
-      one: 'Vlefshmëria e $recordName skadon nesër',
-      zero: 'Vlefshmëria e $recordName skadon sot',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, vlefshmëria e $recordName skadon më $date. Rinovimi i hershëm siguron vlefshmëri të pandërprerë.',
-      one: '$firstName, vlefshmëria e $recordName skadon nesër. Rinovojeni tani që të mos e humbisni vlefshmërinë.',
-      zero: '$firstName, vlefshmëria e $recordName skadon sot. E keni rinovuar tashmë? Përditësoni datën e skadimit.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Kujtesa e fundit: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'pas $days ditësh, më $date',
-      one: 'nesër',
-    );
-    return '$firstName, vlefshmëria e $recordName skadon $_temp0. Kjo është kujtesa juaj e fundit, rinovojeni ose përditësoni datën e skadimit.';
   }
 
   @override
@@ -5017,7 +4958,7 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count regjistrime kanë nevojë për vëmendjen tuaj',
-      one: '1 regjistrim ka nevojë për vëmendjen tuaj',
+      one: '$count regjistrim ka nevojë për vëmendjen tuaj',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsSq extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Zakonisht vlen për $years vjet',
-      one: 'Zakonisht vlen për 1 vit',
+      one: 'Zakonisht vlen për $years vit',
     );
     return '$_temp0';
   }
@@ -7302,7 +7243,7 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count sende nuk kanë foto. Me foto zëvendësohen më shpejt.',
-      one: '1 send nuk ka foto. Me foto zëvendësohet më shpejt.',
+      one: '$count send nuk ka foto. Me foto zëvendësohet më shpejt.',
     );
     return '$_temp0';
   }
@@ -7313,7 +7254,7 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count karta nuk kanë të ruajtur numrin për kartë të humbur.',
-      one: '1 kartë nuk ka të ruajtur numrin për kartë të humbur.',
+      one: '$count kartë nuk ka të ruajtur numrin për kartë të humbur.',
     );
     return '$_temp0';
   }
@@ -7492,7 +7433,7 @@ class AppLocalizationsSq extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count sende më poshtë',
-      one: '1 send më poshtë',
+      one: '$count send më poshtë',
     );
     return '$_temp0';
   }
@@ -8280,4 +8221,204 @@ class AppLocalizationsSq extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Kujtesë: $name skadon më $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName skadon sot';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName skadon nesër';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName skadon pas $days ditësh',
+      one: '$recordName skadon pas $days dite',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName ka skaduar';
+  }
+
+  @override
+  String get remLockedTitle => 'Një regjistrim i kyçur kërkon vëmendjen tuaj';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Data e tij është $date. Shkyçni Vaultara për të parë se cili regjistrim është.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Regjistrimi juaj \"$recordName\" skadon sot.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Regjistrimi juaj \"$recordName\" skadon nesër.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Regjistrimi juaj \"$recordName\" skadon më $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, regjistrimi juaj \"$recordName\" skadon sot.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, regjistrimi juaj \"$recordName\" skadon nesër.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, regjistrimi juaj \"$recordName\" skadon më $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Regjistrimi \"$recordName\" i $person skadon sot.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Regjistrimi \"$recordName\" i $person skadon nesër.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Regjistrimi \"$recordName\" i $person skadon më $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Regjistrimi juaj \"$recordName\" skadoi më $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Regjistrimi \"$recordName\" i $person skadoi më $date.';
+  }
+
+  @override
+  String get remTipToday => 'E keni rinovuar tashmë? Përditësoni datën.';
+
+  @override
+  String get remTipTomorrow => 'Rinovojeni tani që të mos skadojë.';
+
+  @override
+  String get remTipEarly => 'Rinovimi herët ju mban të mbuluar.';
+
+  @override
+  String get remTipLast => 'Ky është kujtuesi juaj i fundit para skadimit.';
+
+  @override
+  String get remTipExpired => 'Rinovojeni, ose përditësoni datën nëse e keni bërë tashmë.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Është koha të filloni rinovimin e \"$recordName\". Skadon më $date, kështu që nëse filloni tani do të keni kohë të mjaftueshme.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Është koha të filloni rinovimin e \"$recordName\" të $person. Skadon më $date, kështu që duke filluar tani ka kohë të mjaftueshme.';
+  }
+
+  @override
+  String get notifChannelName => 'Kujtues skadimi';
+
+  @override
+  String get notifChannelDescription => 'Kujtues para se të skadojnë regjistrimet tuaja';
+
+  @override
+  String get notifTestTitle => 'Njoftim provë';
+
+  @override
+  String get notifTestBody => 'Kujtuesit e Vaultara vijnë kështu.';
+
+  @override
+  String get notifTestAction => 'Dërgo një njoftim provë';
+
+  @override
+  String get notifTestSubtitle => 'Kontrolloni që kujtuesit arrijnë në këtë telefon';
+
+  @override
+  String get notifTestSent => 'Prova u dërgua. Duhet të arrijë pas pak sekondash.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Më kujto pasi një regjistrim skadon';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 dhe 14 ditë më pas, nëse nuk është rinovuar';
+
+  @override
+  String get notifWeeklyTitle => 'Përmbledhja e së hënës';
+
+  @override
+  String get notifWeeklySubtitle => 'Një shënim të hënën në mëngjes kur diçka skadon atë javë';
+
+  @override
+  String get notifPushSection => 'Familja dhe përditësimet';
+
+  @override
+  String get notifHouseholdTitle => 'Regjistrimet e ndara';
+
+  @override
+  String get notifHouseholdSubtitle => 'Kur një regjistrim i ndarë është gati të skadojë dhe askush nuk e ka rinovuar';
+
+  @override
+  String get notifUpdatesTitle => 'Përditësimet që kërkuat';
+
+  @override
+  String get notifUpdatesSubtitle => 'Kur dikush dërgon të dhënat e reja të një regjistrimi';
+
+  @override
+  String get notifSecurityNote => 'Sinjalizimet për hyrje të reja në llogarinë tuaj dërgohen gjithmonë.';
+
+  @override
+  String get notifIosHelpTitle => 'Nuk po merrni kujtues?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Kontrolloni cilësimet e iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Hapni Cilësimet, pastaj Njoftimet, pastaj Vaultara, dhe aktivizoni Lejo njoftimet.';
+
+  @override
+  String get notifIosHelpStep2 => 'Aktivizoni Ekranin e kyçjes, Qendrën e njoftimeve dhe Banerët.';
+
+  @override
+  String get notifIosHelpStep3 => 'Nëse përdorni një Fokus, shtoni Vaultara te aplikacionet që lejon.';
+
+  @override
+  String get notifIosHelpStep4 => 'Hapni Vaultara çdo disa javë. iPhone mban vetëm një numër të kufizuar kujtuesish përpara, dhe hapja e aplikacionit planifikon të tjerët.';
+
+  @override
+  String get homeNextUpEmpty => 'Asgjë nuk skadon së shpejti. Gjithçka është në rregull.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count skadojnë brenda 30 ditëve',
+      one: '$count skadon brenda 30 ditëve',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Kategoritë e fiksuara';
 }

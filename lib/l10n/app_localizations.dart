@@ -925,24 +925,6 @@ abstract class AppLocalizations {
   /// **'It is good to see you again. Vaultara is here whenever you want to review your important dates and records.'**
   String get homeWelcomeSubtitleBack;
 
-  /// No description provided for @summaryAllCaption.
-  ///
-  /// In en, this message translates to:
-  /// **'Tracked in Vaultara'**
-  String get summaryAllCaption;
-
-  /// No description provided for @summaryExpiredTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Expired'**
-  String get summaryExpiredTitle;
-
-  /// No description provided for @summaryExpiredCaption.
-  ///
-  /// In en, this message translates to:
-  /// **'Past expiry date'**
-  String get summaryExpiredCaption;
-
   /// No description provided for @editorNotes.
   ///
   /// In en, this message translates to:
@@ -1032,12 +1014,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Delete record'**
   String get deleteRecordTitle;
-
-  /// No description provided for @summaryAllRecordsTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'All records'**
-  String get summaryAllRecordsTitle;
 
   /// No description provided for @noGroupFound.
   ///
@@ -1756,32 +1732,8 @@ abstract class AppLocalizations {
   /// No description provided for @expiryTimelineDetailCount.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 record} other{{count} records}}'**
+  /// **'{count, plural, =1{{count} record} other{{count} records}}'**
   String expiryTimelineDetailCount(int count);
-
-  /// No description provided for @summaryUpcomingTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Upcoming'**
-  String get summaryUpcomingTitle;
-
-  /// No description provided for @summaryUpcomingCaption.
-  ///
-  /// In en, this message translates to:
-  /// **'Within 30 days'**
-  String get summaryUpcomingCaption;
-
-  /// No description provided for @summaryUrgentTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Urgent'**
-  String get summaryUrgentTitle;
-
-  /// No description provided for @summaryUrgentCaption.
-  ///
-  /// In en, this message translates to:
-  /// **'Within 7 days'**
-  String get summaryUrgentCaption;
 
   /// No description provided for @profileHeaderTitle.
   ///
@@ -1972,7 +1924,7 @@ abstract class AppLocalizations {
   /// No description provided for @reminderDaysBefore.
   ///
   /// In en, this message translates to:
-  /// **'{days, plural, one{1 day before} other{{days} days before}}'**
+  /// **'{days, plural, one{{days} day before} other{{days} days before}}'**
   String reminderDaysBefore(int days);
 
   /// No description provided for @reminderCustomDaysTitle.
@@ -2158,7 +2110,7 @@ abstract class AppLocalizations {
   /// Body for the expires-today insight when several records expire today. {names} lists up to two names; {extra} is how many more beyond those.
   ///
   /// In en, this message translates to:
-  /// **'{extra, plural, =0{{names} expire today.} =1{{names} and 1 more expire today.} other{{names} and {extra} more expire today.}}'**
+  /// **'{extra, plural, =0{{names} expire today.} =1{{names} and {extra} more expire today.} other{{names} and {extra} more expire today.}}'**
   String smartInsightExpiresTodayMultiBody(String names, int extra);
 
   /// Body for the Silent Risk insight. {name} is the record, {days} is days until expiry, {date} is the formatted expiry date.
@@ -2182,7 +2134,7 @@ abstract class AppLocalizations {
   /// Body for the close-expiries insight when more than three records are involved. Uses ICU plural on {extra}.
   ///
   /// In en, this message translates to:
-  /// **'{extra, plural, =1{{a}, {b}, and 1 more expire before {lastDate}, at approximately the same time. It is easy to forget one when several are so close together.} other{{a}, {b}, and {extra} more expire before {lastDate}, at approximately the same time. It is easy to forget one when several are so close together.}}'**
+  /// **'{extra, plural, =1{{a}, {b}, and {extra} more expire before {lastDate}, at approximately the same time. It is easy to forget one when several are so close together.} other{{a}, {b}, and {extra} more expire before {lastDate}, at approximately the same time. It is easy to forget one when several are so close together.}}'**
   String smartInsightCloseExpiriesBodyMany(String a, String b, int extra, String lastDate);
 
   /// Body for the quiet-period insight. {days} is days until the next expiry, {date} is that first upcoming expiry date.
@@ -2194,13 +2146,13 @@ abstract class AppLocalizations {
   /// Body for the cluster insight. {count} is how many records, {category} is the category label, {date} is the last expiry date in the group.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 of your records in the {category} category expires on {date}. It is easy to overlook.} other{{count} of your records in the {category} category expire before {date}. It is easy to forget one when they are grouped like this.}}'**
+  /// **'{count, plural, =1{{count} of your records in the {category} category expires on {date}. It is easy to overlook.} other{{count} of your records in the {category} category expire before {date}. It is easy to forget one when they are grouped like this.}}'**
   String smartInsightClusterBody(int count, String category, String date);
 
   /// Body for the all-caught-up insight when there are upcoming records within 90 days and all of them have reminders.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 upcoming expiration is covered by a reminder. Nothing else requires your attention.} other{{count} upcoming expirations are covered by reminders. Nothing else requires your attention.}}'**
+  /// **'{count, plural, =1{{count} upcoming expiration is covered by a reminder. Nothing else requires your attention.} other{{count} upcoming expirations are covered by reminders. Nothing else requires your attention.}}'**
   String smartInsightAllCaughtUpBody(int count);
 
   /// Body used when nothing needs attention and nothing is upcoming (all-caught-up and quiet-period empty cases).
@@ -2212,7 +2164,7 @@ abstract class AppLocalizations {
   /// Body for the all-caught-up state when some upcoming records have no reminder. {count} is how many upcoming records lack a reminder.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{Nothing is urgent at the moment, but 1 upcoming record does not have a reminder yet.} other{Nothing is urgent at the moment, but {count} upcoming records do not have a reminder yet.}}'**
+  /// **'{count, plural, =1{Nothing is urgent at the moment, but {count} upcoming record does not have a reminder yet.} other{Nothing is urgent at the moment, but {count} upcoming records do not have a reminder yet.}}'**
   String smartInsightAllCaughtUpUnremindedBody(int count);
 
   /// Heading for the insight shown when multiple records across categories expire within a short window of each other.
@@ -2404,7 +2356,7 @@ abstract class AppLocalizations {
   /// Summary line on a collapsed cascade step row
   ///
   /// In en, this message translates to:
-  /// **'Reminder {position}: {days, plural, =1{1 day} other{{days} days}} before'**
+  /// **'Reminder {position}: {days, plural, =1{{days} day} other{{days} days}} before'**
   String reminderCascadeStepLabel(int position, int days);
 
   /// No description provided for @expiryTimelineNotReady.
@@ -2458,7 +2410,7 @@ abstract class AppLocalizations {
   /// Badge on a category or group card showing how many records expire soon
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 expiring} other{{count} expiring}}'**
+  /// **'{count, plural, =1{{count} expiring} other{{count} expiring}}'**
   String expiringBadge(int count);
 
   /// Empty state under the calendar when the selected day is today and no records expire on it
@@ -2473,29 +2425,11 @@ abstract class AppLocalizations {
   /// **'Nothing expires tomorrow'**
   String get noRecordsTomorrow;
 
-  /// Notification title for one step of a reminder series. {days} is how many days before expiry this step fires.
-  ///
-  /// In en, this message translates to:
-  /// **'{days, plural, =0{{recordName} expires today} =1{{recordName} expires tomorrow} other{{recordName} expires in {days} days}}'**
-  String cascadeStepTitle(int days, String recordName);
-
-  /// Notification body for one step of a reminder series. {date} appears only when expiry is more than one day away; today and tomorrow need no date.
-  ///
-  /// In en, this message translates to:
-  /// **'{days, plural, =0{{firstName}, your {recordName} expires today. Already renewed it? Update its expiry date.} =1{{firstName}, your {recordName} expires tomorrow. Renew it now so it does not lapse.} other{{firstName}, your {recordName} expires on {date}. Renewing early keeps you covered.}}'**
-  String cascadeStepBody(int days, String date, String firstName, String recordName);
-
   /// Notification title for the final step of a multi-step reminder series, firing before expiry day.
   ///
   /// In en, this message translates to:
   /// **'Last reminder: {recordName}'**
   String cascadeFinalStepTitle(String recordName);
-
-  /// Notification body for the final step of a multi-step reminder series. {date} appears only when the final step is more than one day before expiry.
-  ///
-  /// In en, this message translates to:
-  /// **'{firstName}, your {recordName} expires {days, plural, =1{tomorrow} other{in {days} days, on {date}}}. This is your last reminder, renew it or update its date.'**
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName);
 
   /// Title of the notification settings screen and its entry tile on the profile screen
   ///
@@ -2848,7 +2782,7 @@ abstract class AppLocalizations {
   /// Small note on the renewal costs card when some records expiring in the next 12 months have no renewal cost
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 upcoming record has no cost yet.} other{{count} upcoming records have no cost yet.}}'**
+  /// **'{count, plural, =1{{count} upcoming record has no cost yet.} other{{count} upcoming records have no cost yet.}}'**
   String costCardMissing(int count);
 
   /// Empty state of the renewal costs card when no upcoming record has a cost
@@ -2896,7 +2830,7 @@ abstract class AppLocalizations {
   /// Number of records for a person on the Family screen
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =0{No records} =1{1 record} other{{count} records}}'**
+  /// **'{count, plural, =0{No records} =1{{count} record} other{{count} records}}'**
   String familyRecordCount(int count);
 
   /// Menu item on a person row
@@ -2974,7 +2908,7 @@ abstract class AppLocalizations {
   /// Note under the Add person button about the people limit
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{Up to 1 person} other{Up to {count} people}}'**
+  /// **'{count, plural, =1{Up to {count} person} other{Up to {count} people}}'**
   String familyLimitNote(int count);
 
   /// Title of the Family plan upsell card on the Family screen
@@ -2992,7 +2926,7 @@ abstract class AppLocalizations {
   /// Family plan benefit, on the upsell card and the plans screen
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{Add 1 person} other{Add up to {count} people}}'**
+  /// **'{count, plural, =1{Add {count} person} other{Add up to {count} people}}'**
   String familyBenefitPeople(int count);
 
   /// Family plan benefit, on the upsell card and the plans screen
@@ -4108,7 +4042,7 @@ abstract class AppLocalizations {
   /// Total number of records in the PDF
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 record} other{{count} records}}'**
+  /// **'{count, plural, =1{{count} record} other{{count} records}}'**
   String pdfExportCount(int count);
 
   /// Line in the PDF showing the renewal cost of a record. amount = formatted amount with currency code
@@ -4150,7 +4084,7 @@ abstract class AppLocalizations {
   /// Trip length shown under the date fields, counting both the departure and return day
   ///
   /// In en, this message translates to:
-  /// **'{days, plural, =1{1 day trip} other{{days} day trip}}'**
+  /// **'{days, plural, =1{{days} day trip} other{{days} day trip}}'**
   String travelTripLength(int days);
 
   /// Switch label: the user will drive on the trip, so the driving licence is checked
@@ -4276,7 +4210,7 @@ abstract class AppLocalizations {
   /// Result detail: passport expiry date and the number of months many countries require after return
   ///
   /// In en, this message translates to:
-  /// **'{name} expires {date}. Many countries want {months, plural, =1{1 month} other{{months} months}} left after you return.'**
+  /// **'{name} expires {date}. Many countries want {months, plural, =1{{months} month} other{{months} months}} left after you return.'**
   String travelDetailPassportBuffer(String name, String date, int months);
 
   /// Result detail: the record expires before the departure date
@@ -4288,7 +4222,7 @@ abstract class AppLocalizations {
   /// Result detail: the record expires during the trip; days is how many days after departure
   ///
   /// In en, this message translates to:
-  /// **'{name} expires {date}, {days, plural, =0{the day you leave} =1{1 day into your trip} other{{days} days into your trip}}.'**
+  /// **'{name} expires {date}, {days, plural, =0{the day you leave} =1{{days} day into your trip} other{{days} days into your trip}}.'**
   String travelDetailExpiresDuringTrip(String name, String date, int days);
 
   /// Result detail when no passport record exists
@@ -4432,19 +4366,19 @@ abstract class AppLocalizations {
   /// Number of nights away on a trip
   ///
   /// In en, this message translates to:
-  /// **'{nights, plural, =1{1 night} other{{nights} nights}}'**
+  /// **'{nights, plural, =1{{nights} night} other{{nights} nights}}'**
   String travelNights(int nights);
 
   /// Number of days a trip covers, counting the departure and return day
   ///
   /// In en, this message translates to:
-  /// **'{days, plural, =1{1 day} other{{days} days}}'**
+  /// **'{days, plural, =1{{days} day} other{{days} days}}'**
   String travelDaysShort(int days);
 
   /// Days spent at the destination, from the day the flight lands to the day the return flight leaves
   ///
   /// In en, this message translates to:
-  /// **'{days, plural, =1{1 day at your destination} other{{days} days at your destination}}'**
+  /// **'{days, plural, =1{{days} day at your destination} other{{days} days at your destination}}'**
   String travelAtDestination(int days);
 
   /// Heading above the departure, flights and return timeline on a trip
@@ -4600,7 +4534,7 @@ abstract class AppLocalizations {
   /// Trip status with the number of problems and warnings
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 thing needs attention} other{{count} things need attention}}'**
+  /// **'{count, plural, =1{{count} thing needs attention} other{{count} things need attention}}'**
   String travelIssues(int count);
 
   /// Section title for the per-trip checklist
@@ -4720,7 +4654,7 @@ abstract class AppLocalizations {
   /// Notification text when documents have problems
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 document needs attention before you leave.} other{{count} documents need attention before you leave.}}'**
+  /// **'{count, plural, =1{{count} document needs attention before you leave.} other{{count} documents need attention before you leave.}}'**
   String travelReminderBodyIssues(int count);
 
   /// Notification text when all documents are fine
@@ -4888,7 +4822,7 @@ abstract class AppLocalizations {
   /// Body of the photo limit dialog for free users
   ///
   /// In en, this message translates to:
-  /// **'The free plan lets you add {limit, plural, =1{1 photo} other{{limit} photos}} to each record. With Premium you can add up to {premiumLimit}.'**
+  /// **'The free plan lets you add {limit, plural, =1{{limit} photo} other{{limit} photos}} to each record. With Premium you can add up to {premiumLimit}.'**
   String vaultLimitFreeBody(int limit, int premiumLimit);
 
   /// Body of the photo limit dialog for Premium users
@@ -4936,7 +4870,7 @@ abstract class AppLocalizations {
   /// Tooltip on the photo button on a record card that opens the record's photos
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 photo} other{{count} photos}}'**
+  /// **'{count, plural, =1{{count} photo} other{{count} photos}}'**
   String vaultPhotosTooltip(int count);
 
   /// Card title on the Travel screen showing if each person can travel
@@ -5782,7 +5716,7 @@ abstract class AppLocalizations {
   /// Trip summary when documents have problems
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{1 thing to fix before you go} other{{count} things to fix before you go}}'**
+  /// **'{count, plural, one{{count} thing to fix before you go} other{{count} things to fix before you go}}'**
   String travelFixBeforeYouGo(int count);
 
   /// Label under the big countdown number on a trip
@@ -5818,7 +5752,7 @@ abstract class AppLocalizations {
   /// One trip reminder row
   ///
   /// In en, this message translates to:
-  /// **'{days, plural, one{1 day before you leave} other{{days} days before you leave}}'**
+  /// **'{days, plural, one{{days} day before you leave} other{{days} days before you leave}}'**
   String travelReminderBefore(int days);
 
   /// Status of a traveller whose documents are all fine
@@ -5830,13 +5764,13 @@ abstract class AppLocalizations {
   /// Status of a traveller with document problems
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{1 to fix} other{{count} to fix}}'**
+  /// **'{count, plural, one{{count} to fix} other{{count} to fix}}'**
   String travelStatusToFix(int count);
 
   /// Status of a traveller with document warnings
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{1 to check} other{{count} to check}}'**
+  /// **'{count, plural, one{{count} to check} other{{count} to check}}'**
   String travelStatusToCheck(int count);
 
   /// Title of the passport validity rule used for a trip
@@ -6856,7 +6790,7 @@ abstract class AppLocalizations {
   /// Shown when some existing photos are still stored without encryption.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{1 photo is not encrypted yet} other{{count} photos are not encrypted yet}}'**
+  /// **'{count, plural, one{{count} photo is not encrypted yet} other{{count} photos are not encrypted yet}}'**
   String photoLockPendingTitle(int count);
 
   ///
@@ -7078,7 +7012,7 @@ abstract class AppLocalizations {
   /// Offer to encrypt photos added before encryption was turned on.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{You have 1 photo that is not encrypted yet. We can encrypt it now.} other{You have {count} photos that are not encrypted yet. We can encrypt them now.}} Keep Vaultara open until this finishes.'**
+  /// **'{count, plural, one{You have {count} photo that is not encrypted yet. We can encrypt it now.} other{You have {count} photos that are not encrypted yet. We can encrypt them now.}} Keep Vaultara open until this finishes.'**
   String photoLockEncryptExistingBody(int count);
 
   ///
@@ -7132,13 +7066,13 @@ abstract class AppLocalizations {
   /// Shown after too many wrong recovery keys.
   ///
   /// In en, this message translates to:
-  /// **'{seconds, plural, one{Too many tries. Please wait 1 second and try again.} other{Too many tries. Please wait {seconds} seconds and try again.}}'**
+  /// **'{seconds, plural, one{Too many tries. Please wait {seconds} second and try again.} other{Too many tries. Please wait {seconds} seconds and try again.}}'**
   String photoLockWaitSeconds(int seconds);
 
   /// Shown after too many wrong recovery keys.
   ///
   /// In en, this message translates to:
-  /// **'{minutes, plural, one{Too many tries. Please wait 1 minute and try again.} other{Too many tries. Please wait {minutes} minutes and try again.}}'**
+  /// **'{minutes, plural, one{Too many tries. Please wait {minutes} minute and try again.} other{Too many tries. Please wait {minutes} minutes and try again.}}'**
   String photoLockWaitMinutes(int minutes);
 
   ///
@@ -8674,7 +8608,7 @@ abstract class AppLocalizations {
   /// Title of the daily summary notification. count is how many records are due that day
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{1 record needs your attention} other{{count} records need your attention}}'**
+  /// **'{count, plural, one{{count} record needs your attention} other{{count} records need your attention}}'**
   String dailyDigestTitle(int count);
 
   /// Body of the daily summary notification when it lists every due record. names is a comma separated list of up to 3 record names
@@ -8710,7 +8644,7 @@ abstract class AppLocalizations {
   /// Renew sheet: the suggested new expiry date comes from how long this type of document usually lasts
   ///
   /// In en, this message translates to:
-  /// **'{years, plural, one{Usually valid for 1 year} other{Usually valid for {years} years}}'**
+  /// **'{years, plural, one{Usually valid for {years} year} other{Usually valid for {years} years}}'**
   String renewReasonTypical(int years);
 
   /// Renew sheet: small hint under the suggested new expiry date
@@ -9628,19 +9562,19 @@ abstract class AppLocalizations {
   /// Relative time.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{1 minute ago} other{{count} minutes ago}}'**
+  /// **'{count, plural, one{{count} minute ago} other{{count} minutes ago}}'**
   String secMinutesAgo(int count);
 
   /// Relative time.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{1 hour ago} other{{count} hours ago}}'**
+  /// **'{count, plural, one{{count} hour ago} other{{count} hours ago}}'**
   String secHoursAgo(int count);
 
   /// Relative time.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, one{1 day ago} other{{count} days ago}}'**
+  /// **'{count, plural, one{{count} day ago} other{{count} days ago}}'**
   String secDaysAgo(int count);
 
   /// Entry title in the security history list.
@@ -11566,13 +11500,13 @@ abstract class AppLocalizations {
   /// Days until the date of a life event plan.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 day to go} other{{count} days to go}}'**
+  /// **'{count, plural, =1{{count} day to go} other{{count} days to go}}'**
   String lifePlanDaysToGo(int count);
 
   /// Days since the date of a life event plan.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 day ago} other{{count} days ago}}'**
+  /// **'{count, plural, =1{{count} day ago} other{{count} days ago}}'**
   String lifePlanDaysAgo(int count);
 
   /// No description provided for @lifePlanAllDone.
@@ -12244,7 +12178,7 @@ abstract class AppLocalizations {
   /// Records deleted after a life event plan started.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 record you deleted counts as cancelled.} other{{count} records you deleted count as cancelled.}}'**
+  /// **'{count, plural, =1{{count} record you deleted counts as cancelled.} other{{count} records you deleted count as cancelled.}}'**
   String lifePlanRemoved(int count);
 
   /// The renewal costs of the records in a life event plan.
@@ -12508,13 +12442,13 @@ abstract class AppLocalizations {
   /// On the Lost my wallet screen.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 item has no photo. A photo makes it faster to replace.} other{{count} items have no photo. Photos make them faster to replace.}}'**
+  /// **'{count, plural, =1{{count} item has no photo. A photo makes it faster to replace.} other{{count} items have no photo. Photos make them faster to replace.}}'**
   String lostWalletIssuePhotos(int count);
 
   /// On the Lost my wallet screen.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 card has no lost card number saved.} other{{count} cards have no lost card number saved.}}'**
+  /// **'{count, plural, =1{{count} card has no lost card number saved.} other{{count} cards have no lost card number saved.}}'**
   String lostWalletIssueLines(int count);
 
   /// On the Lost my wallet screen.
@@ -12820,7 +12754,7 @@ abstract class AppLocalizations {
   /// Line in the PDF.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 item listed below} other{{count} items listed below}}'**
+  /// **'{count, plural, =1{{count} item listed below} other{{count} items listed below}}'**
   String lostWalletReportCount(int count);
 
   /// Short title of a tutorial.
@@ -12988,7 +12922,7 @@ abstract class AppLocalizations {
   /// How long a tutorial is.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 step} other{{count} steps}}'**
+  /// **'{count, plural, =1{{count} step} other{{count} steps}}'**
   String tutorialsSteps(int count);
 
   /// Badge on a tutorial for a paid feature.
@@ -13768,7 +13702,7 @@ abstract class AppLocalizations {
   /// Badge with how many records in a category or group have expired.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 expired} other{{count} expired}}'**
+  /// **'{count, plural, =1{{count} expired} other{{count} expired}}'**
   String expiredBadge(int count);
 
   /// Menu item to change a custom category's icon and colour.
@@ -13846,7 +13780,7 @@ abstract class AppLocalizations {
   /// How many records are chosen.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{1 selected} other{{count} selected}}'**
+  /// **'{count, plural, =1{{count} selected} other{{count} selected}}'**
   String recordsSelected(int count);
 
   /// Button to move the chosen records to another group.
@@ -13864,13 +13798,13 @@ abstract class AppLocalizations {
   /// Confirmation after moving records.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{Moved 1 record} other{Moved {count} records}}'**
+  /// **'{count, plural, =1{Moved {count} record} other{Moved {count} records}}'**
   String recordsMoved(int count);
 
   /// Title of the dialog before deleting several records.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{Delete 1 record?} other{Delete {count} records?}}'**
+  /// **'{count, plural, =1{Delete {count} record?} other{Delete {count} records?}}'**
   String recordsDeleteManyTitle(int count);
 
   /// Body of the dialog before deleting several records.
@@ -13882,7 +13816,7 @@ abstract class AppLocalizations {
   /// Confirmation after deleting several records.
   ///
   /// In en, this message translates to:
-  /// **'{count, plural, =1{Deleted 1 record} other{Deleted {count} records}}'**
+  /// **'{count, plural, =1{Deleted {count} record} other{Deleted {count} records}}'**
   String recordsDeletedMany(int count);
 
   /// Section heading for records that expire within 30 days.
@@ -14130,6 +14064,306 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reminder: {name} expires on {date}'**
   String calendarReminderFor(String name, String date);
+
+  /// Reminder title on the expiry day.
+  ///
+  /// In en, this message translates to:
+  /// **'{recordName} expires today'**
+  String remTitleToday(String recordName);
+
+  /// Reminder title the day before expiry.
+  ///
+  /// In en, this message translates to:
+  /// **'{recordName} expires tomorrow'**
+  String remTitleTomorrow(String recordName);
+
+  /// Reminder title some days before expiry. days is always 2 or more.
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, one{{recordName} expires in {days} day} other{{recordName} expires in {days} days}}'**
+  String remTitleDays(int days, String recordName);
+
+  /// Title of a reminder sent after the expiry date.
+  ///
+  /// In en, this message translates to:
+  /// **'{recordName} has expired'**
+  String remTitleExpired(String recordName);
+
+  /// Reminder title for a locked record, whose name is hidden.
+  ///
+  /// In en, this message translates to:
+  /// **'A locked record needs your attention'**
+  String get remLockedTitle;
+
+  /// Reminder text for a locked record.
+  ///
+  /// In en, this message translates to:
+  /// **'Its date is {date}. Unlock Vaultara to see which record it is.'**
+  String remLockedBody(String date);
+
+  /// First sentence of a reminder on the expiry day.
+  ///
+  /// In en, this message translates to:
+  /// **'Your {recordName} expires today.'**
+  String remBodyToday(String recordName);
+
+  /// First sentence of a reminder the day before expiry.
+  ///
+  /// In en, this message translates to:
+  /// **'Your {recordName} expires tomorrow.'**
+  String remBodyTomorrow(String recordName);
+
+  /// First sentence of a reminder some days before expiry.
+  ///
+  /// In en, this message translates to:
+  /// **'Your {recordName} expires on {date}.'**
+  String remBodyDays(String recordName, String date);
+
+  /// First sentence of a reminder on the expiry day, greeting the user by first name.
+  ///
+  /// In en, this message translates to:
+  /// **'{firstName}, your {recordName} expires today.'**
+  String remBodyTodayNamed(String firstName, String recordName);
+
+  /// First sentence of a reminder the day before expiry, with the first name.
+  ///
+  /// In en, this message translates to:
+  /// **'{firstName}, your {recordName} expires tomorrow.'**
+  String remBodyTomorrowNamed(String firstName, String recordName);
+
+  /// First sentence of a reminder some days before expiry, with the first name.
+  ///
+  /// In en, this message translates to:
+  /// **'{firstName}, your {recordName} expires on {date}.'**
+  String remBodyDaysNamed(String firstName, String recordName, String date);
+
+  /// Reminder for a record of someone in the family, on the expiry day.
+  ///
+  /// In en, this message translates to:
+  /// **'{person}\'s {recordName} expires today.'**
+  String remBodyTodayFamily(String person, String recordName);
+
+  /// Reminder for someone else's record, the day before expiry.
+  ///
+  /// In en, this message translates to:
+  /// **'{person}\'s {recordName} expires tomorrow.'**
+  String remBodyTomorrowFamily(String person, String recordName);
+
+  /// Reminder for someone else's record, some days before expiry.
+  ///
+  /// In en, this message translates to:
+  /// **'{person}\'s {recordName} expires on {date}.'**
+  String remBodyDaysFamily(String person, String recordName, String date);
+
+  /// First sentence of a reminder after the expiry date.
+  ///
+  /// In en, this message translates to:
+  /// **'Your {recordName} expired on {date}.'**
+  String remBodyExpired(String recordName, String date);
+
+  /// Reminder after the expiry date for someone else's record.
+  ///
+  /// In en, this message translates to:
+  /// **'{person}\'s {recordName} expired on {date}.'**
+  String remBodyExpiredFamily(String person, String recordName, String date);
+
+  /// Second sentence of a reminder on the expiry day.
+  ///
+  /// In en, this message translates to:
+  /// **'Already renewed it? Update its date.'**
+  String get remTipToday;
+
+  /// Second sentence of a reminder the day before expiry.
+  ///
+  /// In en, this message translates to:
+  /// **'Renew it now so it does not lapse.'**
+  String get remTipTomorrow;
+
+  /// Second sentence of an early reminder.
+  ///
+  /// In en, this message translates to:
+  /// **'Renewing early keeps you covered.'**
+  String get remTipEarly;
+
+  /// Second sentence of the last reminder before expiry.
+  ///
+  /// In en, this message translates to:
+  /// **'This is your last reminder before it expires.'**
+  String get remTipLast;
+
+  /// Second sentence of a reminder after the expiry date.
+  ///
+  /// In en, this message translates to:
+  /// **'Renew it, or update its date if you already have.'**
+  String get remTipExpired;
+
+  /// Text of the start renewing reminder without the first name.
+  ///
+  /// In en, this message translates to:
+  /// **'It is time to start renewing your {recordName}. It expires on {date}, so starting now gives you plenty of time.'**
+  String remStartBody(String recordName, String date);
+
+  /// Start renewing reminder for someone else's record.
+  ///
+  /// In en, this message translates to:
+  /// **'It is time to start renewing {person}\'s {recordName}. It expires on {date}, so starting now gives you plenty of time.'**
+  String remStartBodyFamily(String person, String recordName, String date);
+
+  /// Name of the reminder channel in the phone's notification settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Expiry reminders'**
+  String get notifChannelName;
+
+  /// Description of the reminder channel in the phone's notification settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders before your records expire'**
+  String get notifChannelDescription;
+
+  /// Title of the test notification.
+  ///
+  /// In en, this message translates to:
+  /// **'Test notification'**
+  String get notifTestTitle;
+
+  /// Text of the test notification.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders from Vaultara arrive like this.'**
+  String get notifTestBody;
+
+  /// Settings row that sends a test notification.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a test notification'**
+  String get notifTestAction;
+
+  /// Subtitle of the test notification row.
+  ///
+  /// In en, this message translates to:
+  /// **'Check that reminders reach this phone'**
+  String get notifTestSubtitle;
+
+  /// Shown after sending a test notification.
+  ///
+  /// In en, this message translates to:
+  /// **'Test sent. It should arrive in a few seconds.'**
+  String get notifTestSent;
+
+  /// Switch for reminders after the expiry date.
+  ///
+  /// In en, this message translates to:
+  /// **'Remind me after a record expires'**
+  String get notifAfterExpiryTitle;
+
+  /// Subtitle of the after expiry switch.
+  ///
+  /// In en, this message translates to:
+  /// **'3 and 14 days after, if it has not been renewed'**
+  String get notifAfterExpirySubtitle;
+
+  /// Switch for the Monday summary notification.
+  ///
+  /// In en, this message translates to:
+  /// **'Monday summary'**
+  String get notifWeeklyTitle;
+
+  /// Subtitle of the Monday summary switch.
+  ///
+  /// In en, this message translates to:
+  /// **'A note on Monday morning when something expires that week'**
+  String get notifWeeklySubtitle;
+
+  /// Heading above the household and update notification switches.
+  ///
+  /// In en, this message translates to:
+  /// **'Household and updates'**
+  String get notifPushSection;
+
+  /// Switch for notifications about shared household records nobody has renewed.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared records'**
+  String get notifHouseholdTitle;
+
+  /// Subtitle of the shared records switch.
+  ///
+  /// In en, this message translates to:
+  /// **'When a shared record is close to expiring and nobody has renewed it'**
+  String get notifHouseholdSubtitle;
+
+  /// Switch for notifications when someone sends an update that was requested.
+  ///
+  /// In en, this message translates to:
+  /// **'Updates you asked for'**
+  String get notifUpdatesTitle;
+
+  /// Subtitle of the updates switch.
+  ///
+  /// In en, this message translates to:
+  /// **'When someone sends the new details of a record'**
+  String get notifUpdatesSubtitle;
+
+  /// Note under the notification switches.
+  ///
+  /// In en, this message translates to:
+  /// **'Alerts about new sign-ins to your account are always sent.'**
+  String get notifSecurityNote;
+
+  /// Settings row and sheet title for iPhone reminder help.
+  ///
+  /// In en, this message translates to:
+  /// **'Not getting reminders?'**
+  String get notifIosHelpTitle;
+
+  /// Subtitle of the iPhone reminder help row.
+  ///
+  /// In en, this message translates to:
+  /// **'Check your iPhone settings'**
+  String get notifIosHelpSubtitle;
+
+  /// First step of the iPhone reminder help.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Settings, then Notifications, then Vaultara, and turn on Allow Notifications.'**
+  String get notifIosHelpStep1;
+
+  /// Second step of the iPhone reminder help.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn on Lock Screen, Notification Centre and Banners.'**
+  String get notifIosHelpStep2;
+
+  /// Third step of the iPhone reminder help.
+  ///
+  /// In en, this message translates to:
+  /// **'If you use a Focus, add Vaultara to the apps it allows.'**
+  String get notifIosHelpStep3;
+
+  /// Fourth step of the iPhone reminder help.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Vaultara every few weeks. iPhones only keep a limited number of reminders ahead, and opening the app plans the next ones.'**
+  String get notifIosHelpStep4;
+
+  /// Shown on Home when no record is coming up.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing expires soon. You are all set.'**
+  String get homeNextUpEmpty;
+
+  /// Chip on Home with the number of records due within 30 days.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, one{{count} due in 30 days} other{{count} due in 30 days}}'**
+  String homeDueSoonChip(int count);
+
+  /// Heading of the pinned categories row on Home.
+  ///
+  /// In en, this message translates to:
+  /// **'Pinned categories'**
+  String get homePinnedTitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

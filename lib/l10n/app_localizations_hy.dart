@@ -360,15 +360,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Հաճելի է կրկին տեսնել ձեզ։ Vaultara-ն այստեղ է, երբ ցանկանաք վերանայել ձեր կարևոր ամսաթվերն ու գրառումները։';
 
   @override
-  String get summaryAllCaption => 'Հետևվում է Vaultara-ում';
-
-  @override
-  String get summaryExpiredTitle => 'Ժամկետանց';
-
-  @override
-  String get summaryExpiredCaption => 'Ժամկետն անցել է';
-
-  @override
   String get editorNotes => 'Նշումներ';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Ջնջել գրառումը';
-
-  @override
-  String get summaryAllRecordsTitle => 'Բոլոր գրառումները';
 
   @override
   String get noGroupFound => 'Դեռ խմբեր չկան';
@@ -829,22 +817,10 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count գրառում',
-      one: '1 գրառում',
+      one: '$count գրառում',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Առաջիկա';
-
-  @override
-  String get summaryUpcomingCaption => '30 օրվա ընթացքում';
-
-  @override
-  String get summaryUrgentTitle => 'Հրատապ';
-
-  @override
-  String get summaryUrgentCaption => '7 օրվա ընթացքում';
 
   @override
   String get profileHeaderTitle => 'Պրոֆիլ';
@@ -1048,7 +1024,7 @@ class AppLocalizationsHy extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names-ը և ևս $extra գրառում ավարտվում են այսօր:',
-      one: '$names-ը և ևս 1 գրառում ավարտվում են այսօր:',
+      one: '$names-ը և ևս $extra գրառում ավարտվում են այսօր:',
       zero: '$names-ի ժամկետն ավարտվում է այսօր:',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsHy extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a-ի, $b-ի և ևս $extra գրառման ժամկետները լրանում են մինչև $lastDate, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ մի քանի գրառումներն այսքան մոտ են միմյանց:',
-      one: '$a-ի, $b-ի և ևս 1 գրառման ժամկետները լրանում են մինչև $lastDate, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ մի քանի գրառումներն այսքան մոտ են միմյանց:',
+      one: '$a-ի, $b-ի և ևս $extra գրառման ժամկետները լրանում են մինչև $lastDate, մոտավորապես նույն ժամանակահատվածում: Հեշտ է մոռանալ մեկը, երբ մի քանի գրառումներն այսքան մոտ են միմյանց:',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category կատեգորիայում ձեր $count գրառումների ժամկետն ավարտվում է մինչև $date: Հեշտ է մոռանալ մեկը, երբ դրանք այսպես խմբավորված են:',
-      one: '$category կատեգորիայում ձեր 1 գրառման ժամկետն ավարտվում է $date-ին: Այն հեշտ է անտեսել:',
+      one: '$category կատեգորիայում ձեր $count գրառման ժամկետն ավարտվում է $date-ին: Այն հեշտ է անտեսել:',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Առաջիկա $count ավարտի ժամկետներ ապահովված են հիշեցումներով: Ուրիշ ոչինչ չի պահանջում ձեր ուշադրությունը:',
-      one: 'Առաջիկա 1 ավարտի ժամկետ ապահովված է հիշեցումով: Ուրիշ ոչինչ չի պահանջում ձեր ուշադրությունը:',
+      one: 'Առաջիկա $count ավարտի ժամկետ ապահովված է հիշեցումով: Ուրիշ ոչինչ չի պահանջում ձեր ուշադրությունը:',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Այս պահին հրատապ ոչինչ չկա, բայց առաջիկա $count գրառում դեռևս հիշեցում չունեն:',
-      one: 'Այս պահին հրատապ ոչինչ չկա, բայց առաջիկա 1 գրառում դեռևս հիշեցում չունի:',
+      one: 'Այս պահին հրատապ ոչինչ չկա, բայց առաջիկա $count գրառում դեռևս հիշեցում չունի:',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsHy extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days օր',
-      one: '1 օր',
+      one: '$days օր',
     );
     return 'Հիշեցում $position. $_temp0 առաջ';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count-ի ժամկետը շուտով ավարտվում է',
-      one: '1-ի ժամկետը շուտով ավարտվում է',
+      one: '$count-ի ժամկետը շուտով ավարտվում է',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsHy extends AppLocalizations {
   String get noRecordsTomorrow => 'Վաղը ոչինչ չի ավարտվում';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName-ի ժամկետն ավարտվում է $days օրից',
-      one: '$recordName-ի ժամկետն ավարտվում է վաղը',
-      zero: '$recordName-ի ժամկետն ավարտվում է այսօր',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, ձեր $recordName-ի ժամկետն ավարտվում է $date-ին: Վաղաժամ նորացումը պահպանում է ձեր պաշտպանվածությունը:',
-      one: '$firstName, ձեր $recordName-ի ժամկետն ավարտվում է վաղը: Նորացրեք այն հիմա, որպեսզի չլրանա:',
-      zero: '$firstName, ձեր $recordName-ի ժամկետն ավարտվում է այսօր: Արդեն նորացրե՞լ եք: Թարմացրեք դրա ավարտի ամսաթիվը:',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Վերջին հիշեցում՝ $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days օրից՝ $date-ին',
-      one: 'վաղը',
-    );
-    return '$firstName, ձեր $recordName-ի ժամկետն ավարտվում է $_temp0: Սա ձեր վերջին հիշեցումն է. նորացրեք այն կամ թարմացրեք ամսաթիվը:';
   }
 
   @override
@@ -5017,7 +4958,7 @@ class AppLocalizationsHy extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count գրառում ձեր ուշադրության կարիքն ունեն',
-      one: '1 գրառում ձեր ուշադրության կարիքն ունի',
+      one: '$count գրառում ձեր ուշադրության կարիքն ունի',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsHy extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Սովորաբար վավեր է $years տարի',
-      one: 'Սովորաբար վավեր է 1 տարի',
+      one: 'Սովորաբար վավեր է $years տարի',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsHy extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Հիշեցում՝ $name-ի ժամկետը լրանում է $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '«$recordName»-ի ժամկետն ավարտվում է այսօր';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '«$recordName»-ի ժամկետն ավարտվում է վաղը';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '«$recordName»-ի ժամկետն ավարտվում է $days օրից',
+      one: '«$recordName»-ի ժամկետն ավարտվում է $days օրից',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '«$recordName»-ի ժամկետն ավարտվել է';
+  }
+
+  @override
+  String get remLockedTitle => 'Կողպված գրառումը ձեր ուշադրության կարիքն ունի';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Դրա ամսաթիվը $date է: Ապակողպեք Vaultara-ն՝ տեսնելու, թե որ գրառումն է:';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Ձեր «$recordName» գրառման ժամկետն ավարտվում է այսօր:';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Ձեր «$recordName» գրառման ժամկետն ավարտվում է վաղը:';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Ձեր «$recordName» գրառման ժամկետն ավարտվում է $date-ին:';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, ձեր «$recordName» գրառման ժամկետն ավարտվում է այսօր:';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, ձեր «$recordName» գրառման ժամկետն ավարտվում է վաղը:';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, ձեր «$recordName» գրառման ժամկետն ավարտվում է $date-ին:';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person՝ «$recordName» գրառման ժամկետն ավարտվում է այսօր:';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person՝ «$recordName» գրառման ժամկետն ավարտվում է վաղը:';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person՝ «$recordName» գրառման ժամկետն ավարտվում է $date-ին:';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Ձեր «$recordName» գրառման ժամկետն ավարտվել է $date-ին:';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person՝ «$recordName» գրառման ժամկետն ավարտվել է $date-ին:';
+  }
+
+  @override
+  String get remTipToday => 'Արդեն նորացրե՞լ եք: Թարմացրեք ամսաթիվը:';
+
+  @override
+  String get remTipTomorrow => 'Նորացրեք հիմա, որ ժամկետը չանցնի:';
+
+  @override
+  String get remTipEarly => 'Վաղ նորացումը ձեզ պաշտպանված է պահում:';
+
+  @override
+  String get remTipLast => 'Սա ձեր վերջին հիշեցումն է ժամկետի ավարտից առաջ:';
+
+  @override
+  String get remTipExpired => 'Նորացրեք կամ թարմացրեք ամսաթիվը, եթե արդեն արել եք:';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Ժամանակն է սկսել «$recordName»-ի նորացումը: Ժամկետն ավարտվում է $date-ին, ուստի եթե հիմա սկսեք, շատ ժամանակ կունենաք:';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Ժամանակն է սկսել «$recordName»-ի ($person) նորացումը: Ժամկետն ավարտվում է $date-ին, ուստի հիմա սկսելով շատ ժամանակ կլինի:';
+  }
+
+  @override
+  String get notifChannelName => 'Ժամկետի հիշեցումներ';
+
+  @override
+  String get notifChannelDescription => 'Հիշեցումներ՝ նախքան ձեր գրառումների ժամկետի ավարտը';
+
+  @override
+  String get notifTestTitle => 'Փորձնական ծանուցում';
+
+  @override
+  String get notifTestBody => 'Vaultara-ի հիշեցումները գալիս են այսպես:';
+
+  @override
+  String get notifTestAction => 'Ուղարկել փորձնական ծանուցում';
+
+  @override
+  String get notifTestSubtitle => 'Ստուգեք, որ հիշեցումները հասնում են այս հեռախոսին';
+
+  @override
+  String get notifTestSent => 'Փորձն ուղարկվեց: Այն պետք է գա մի քանի վայրկյանից:';
+
+  @override
+  String get notifAfterExpiryTitle => 'Հիշեցնել գրառման ժամկետի ավարտից հետո';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 և 14 օր անց, եթե այն չի նորացվել';
+
+  @override
+  String get notifWeeklyTitle => 'Երկուշաբթիի ամփոփում';
+
+  @override
+  String get notifWeeklySubtitle => 'Հաղորդագրություն երկուշաբթի առավոտյան, երբ այդ շաբաթ ինչ-որ բան ավարտվում է';
+
+  @override
+  String get notifPushSection => 'Ընտանիք և թարմացումներ';
+
+  @override
+  String get notifHouseholdTitle => 'Կիսված գրառումներ';
+
+  @override
+  String get notifHouseholdSubtitle => 'Երբ կիսված գրառման ժամկետը մոտենում է ավարտին, և ոչ ոք այն չի նորացրել';
+
+  @override
+  String get notifUpdatesTitle => 'Ձեր խնդրած թարմացումները';
+
+  @override
+  String get notifUpdatesSubtitle => 'Երբ որևէ մեկն ուղարկում է գրառման նոր տվյալները';
+
+  @override
+  String get notifSecurityNote => 'Ձեր հաշվին նոր մուտքերի մասին զգուշացումները միշտ ուղարկվում են:';
+
+  @override
+  String get notifIosHelpTitle => 'Հիշեցումներ չե՞ք ստանում:';
+
+  @override
+  String get notifIosHelpSubtitle => 'Ստուգեք iPhone-ի կարգավորումները';
+
+  @override
+  String get notifIosHelpStep1 => 'Բացեք Կարգավորումներ, ապա Ծանուցումներ, ապա Vaultara, և միացրեք Թույլատրել ծանուցումները:';
+
+  @override
+  String get notifIosHelpStep2 => 'Միացրեք Կողպէկրանը, Ծանուցումների կենտրոնը և Բաններները:';
+
+  @override
+  String get notifIosHelpStep3 => 'Եթե օգտագործում եք Կենտրոնացում, ավելացրեք Vaultara-ն թույլատրված հավելվածներին:';
+
+  @override
+  String get notifIosHelpStep4 => 'Բացեք Vaultara-ն մի քանի շաբաթը մեկ: iPhone-ը պահում է միայն սահմանափակ թվով ապագա հիշեցումներ, և հավելվածը բացելիս պլանավորվում են հաջորդները:';
+
+  @override
+  String get homeNextUpEmpty => 'Շուտով ոչինչ չի ավարտվում: Ամեն ինչ կարգին է:';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count-ը ավարտվում են 30 օրում',
+      one: '$count-ը ավարտվում է 30 օրում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Ամրացված կատեգորիաներ';
 }

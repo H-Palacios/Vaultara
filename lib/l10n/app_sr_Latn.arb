@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara vam pomaže da pratite važne datume isteka kako ništa ne bi prošlo neprimećeno.",
   "homeWelcomeSubtitleFirst": "Drago nam je što ste ovde. Vaultara čuva važne datume i zapise na jednom sigurnom mestu.",
   "homeWelcomeSubtitleBack": "Drago nam je što vas ponovo vidimo. Vaultara je uvek tu za vaše važne podatke.",
-  "summaryAllCaption": "Praćene u Vaultara",
-  "summaryExpiredTitle": "Istekle",
-  "summaryExpiredCaption": "Posle datuma isteka",
   "editorNotes": "Beleške",
   "editorReminderNone": "Bez podsetnika",
   "editorReminderOnExpiry": "Na dan isteka",
@@ -192,7 +189,6 @@
   "addRecord": "Dodaj zapis",
   "noRecordsYet": "Još nema zapisa.",
   "deleteRecordTitle": "Obriši zapis",
-  "summaryAllRecordsTitle": "Svi zapisi",
   "noGroupFound": "Još nema grupa",
   "groupLabel": "{count, plural, one{{count} grupa} other{{count} grupe}}",
   "recordsLabel": "{count, plural, one{{count} zapis} other{{count} zapisa}}",
@@ -411,7 +407,7 @@
   "addNotesHint": "Dodaj beleške (opciono)",
   "expiryTimelineTitle": "Vremenska linija isteka",
   "expiryTimelineSubtitle": "Dodirnite mesec da vidite zapise koji ističu u tom mesecu",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 zapis} few{{count} zapisa} other{{count} zapisa}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} zapis} few{{count} zapisa} other{{count} zapisa}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -419,10 +415,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Nadolazeći",
-  "summaryUpcomingCaption": "U roku od 30 dana",
-  "summaryUrgentTitle": "Hitno",
-  "summaryUrgentCaption": "U roku od 7 dana",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Vodiči",
   "profileTutorialsSubtitle": "Pregledajte vodiče za aplikaciju",
@@ -454,7 +446,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Bez podsetnika",
   "reminderOnExpiry": "Na dan isteka",
-  "reminderDaysBefore": "{days, plural, one{1 dan pre} few{{days} dana pre} other{{days} dana pre}}",
+  "reminderDaysBefore": "{days, plural, one{{days} dan pre} few{{days} dana pre} other{{days} dana pre}}",
   "reminderCustomDaysTitle": "Unesite prilagođene dane",
   "reminderCascadeTitle": "Kaskadni podsetnici",
   "reminderCascadeSubtitle": "Primajte više obaveštenja pre isteka zapisa",
@@ -485,16 +477,16 @@
   "smartInsightNoRecordsHeading": "Dodajte svoj prvi zapis",
   "smartInsightNoRecordsBody": "Počnite da pratite svoje zapise i Vaultara će ovde prikazati pametne uvide.",
   "smartInsightExpiresTodaySingleBody": "{name} ističe danas. Ako ste ga već obnovili, ažurirajte datum ovde.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ističu danas.} =1{{names} i još 1 zapis ističu danas.} other{{names} i još {extra} zapisa ističe danas.}}",
-  "smartInsightSilentRiskBody": "{days, plural, =1{{name} ističe sutra i nema podsetnik. Postavite ga kako ga ne biste propustili.} other{{name} ističe {date} i nema podsetnik. Postavite ga kako ga ne biste propustili.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ističu danas.} =1{{names} i još {extra} zapis ističu danas.} other{{names} i još {extra} zapisa ističe danas.}}",
+  "smartInsightSilentRiskBody": "{days, plural, other{{name} ističe {date} i nema podsetnik. Postavite ga kako ga ne biste propustili.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} ističe {dateA}, a {b} {dateB}, otprilike u isto vreme. Lako je zaboraviti jedan kada su dva zapisa tako blizu.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} i {c} ističu do {lastDate}, otprilike u isto vreme. Lako je zaboraviti jedan kada ih je nekoliko tako blizu.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} i još 1 zapis ističu do {lastDate}, otprilike u isto vreme. Lako je zaboraviti jedan kada ih je nekoliko tako blizu.} other{{a}, {b} i još {extra} zapisa ističe do {lastDate}, otprilike u isto vreme. Lako je zaboraviti jedan kada ih je nekoliko tako blizu.}}",
-  "smartInsightQuietPeriodBody": "{days, plural, =1{Ništa ne ističe sledećeg dana. Vaš sledeći rok je {date}.} other{Ništa ne ističe u narednih {days} dana. Vaš sledeći rok je {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Vaš 1 zapis u kategoriji {category} ističe {date}. Lako ga je prevideti.} other{Vaših {count} zapisa u kategoriji {category} ističe do {date}. Lako je zaboraviti jedan kada su ovako grupisani.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 predstojeći istek pokriven je podsetnikom. Ništa drugo ne zahteva vašu pažnju.} other{{count} predstojećih isteka pokriveno je podsetnicima. Ništa drugo ne zahteva vašu pažnju.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} i još {extra} zapis ističu do {lastDate}, otprilike u isto vreme. Lako je zaboraviti jedan kada ih je nekoliko tako blizu.} other{{a}, {b} i još {extra} zapisa ističe do {lastDate}, otprilike u isto vreme. Lako je zaboraviti jedan kada ih je nekoliko tako blizu.}}",
+  "smartInsightQuietPeriodBody": "{days, plural, other{Ništa ne ističe u narednih {days} dana. Vaš sledeći rok je {date}.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Vaš {count} zapis u kategoriji {category} ističe {date}. Lako ga je prevideti.} other{Vaših {count} zapisa u kategoriji {category} ističe do {date}. Lako je zaboraviti jedan kada su ovako grupisani.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} predstojeći istek pokriven je podsetnikom. Ništa drugo ne zahteva vašu pažnju.} other{{count} predstojećih isteka pokriveno je podsetnicima. Ništa drugo ne zahteva vašu pažnju.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Sve je ažurno. Trenutno ništa ne zahteva vašu pažnju.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Trenutno ništa nije hitno, ali 1 predstojeći zapis još nema podsetnik.} other{Trenutno ništa nije hitno, ali {count} predstojećih zapisa još nema podsetnik.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Trenutno ništa nije hitno, ali {count} predstojeći zapis još nema podsetnik.} other{Trenutno ništa nije hitno, ali {count} predstojećih zapisa još nema podsetnik.}}",
   "smartInsightCloseExpiriesHeading": "Ističu otprilike u isto vreme",
   "plansHeadline": "Pređite na potpuni Vaultara paket",
   "plansSubhead": "Neograničen broj zapisa, sopstvene grupe i podsetnici podešeni tačno onako kako želite.",
@@ -581,7 +573,7 @@
   "reminderCascadeRemoveStep": "Ukloni",
   "reminderCascadeDuplicate": "Drugi podsetnik već koristi ovaj dan",
   "reminderCascadeOutOfRange": "Unesite između {min} i {max} dana",
-  "reminderCascadeStepLabel": "Podsetnik {position}: {days, plural, =1{1 dan} few{{days} dana} other{{days} dana}} pre",
+  "reminderCascadeStepLabel": "Podsetnik {position}: {days, plural, =1{{days} dan} few{{days} dana} other{{days} dana}} pre",
   "expiryTimelineNotReady": "Vaša vremenska linija će se pojaviti kada budete imali zapise koji ističu u nekoliko različitih meseci.",
   "verifyEmailResendIn": "Pošalji ponovo za {seconds} s",
   "verifyEmailSpamHint": "Nije stiglo? Proverite fasciklu sa nepoželjnom poštom ili spamom.",
@@ -590,13 +582,10 @@
   "verifyEmailDiscardBody": "Ovaj nalog nije verifikovan. Ako sada odete, nalog će biti uklonjen, a možete se ponovo registrovati sa bilo kojom e-mail adresom.",
   "verifyEmailDiscardAction": "Odbaci",
   "verifyEmailKeepWaiting": "Nastavi sa čekanjem",
-  "expiringBadge": "{count, plural, =1{1 uskoro ističe} few{{count} uskoro ističu} other{{count} uskoro ističe}}",
+  "expiringBadge": "{count, plural, =1{{count} uskoro ističe} few{{count} uskoro ističu} other{{count} uskoro ističe}}",
   "noRecordsToday": "Danas ništa ne ističe",
   "noRecordsTomorrow": "Sutra ništa ne ističe",
-  "cascadeStepTitle": "{days, plural, =0{Važenje zapisa {recordName} ističe danas} one{Važenje zapisa {recordName} ističe za {days} dan} few{Važenje zapisa {recordName} ističe za {days} dana} other{Važenje zapisa {recordName} ističe za {days} dana}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, važenje zapisa {recordName} ističe danas. Da li ste ga već obnovili? Ažurirajte datum isteka.} =1{{firstName}, važenje zapisa {recordName} ističe sutra. Obnovite ga sada da ne izgubi važenje.} other{{firstName}, važenje zapisa {recordName} ističe {date}. Blagovremena obnova osigurava neprekidno važenje.}}",
   "cascadeFinalStepTitle": "Poslednje podsećanje: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, važenje zapisa {recordName} ističe {days, plural, one{za {days} dan, {date}} other{za {days} dana, {date}}}. Ovo je vaše poslednje podsećanje, obnovite ga ili ažurirajte datum.",
   "notificationsTitle": "Obaveštenja",
   "notificationsProfileEnabledSubtitle": "Podsetnici stižu u {time}.",
   "notificationsProfileDisabledSubtitle": "Obaveštenja su isključena.",
@@ -2835,5 +2824,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "Zapis {recordName} ističe danas",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "Zapis {recordName} ističe sutra",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{Zapis {recordName} ističe za {days} dan} few{Zapis {recordName} ističe za {days} dana} other{Zapis {recordName} ističe za {days} dana}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "Zapis {recordName} je istekao",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Zaključan zapis zahteva vašu pažnju",
+  "remLockedBody": "Njegov datum je {date}. Otključajte Vaultara da vidite koji je zapis.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Vaš zapis {recordName} ističe danas.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Vaš zapis {recordName} ističe sutra.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Vaš zapis {recordName} ističe {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, vaš zapis {recordName} ističe danas.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, vaš zapis {recordName} ističe sutra.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, vaš zapis {recordName} ističe {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: zapis {recordName} ističe danas.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: zapis {recordName} ističe sutra.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: zapis {recordName} ističe {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Vaš zapis {recordName} je istekao {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: zapis {recordName} je istekao {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Već obnovljeno? Ažurirajte datum.",
+  "remTipTomorrow": "Obnovite ga sada da ne istekne.",
+  "remTipEarly": "Rana obnova vas drži pokrivenim.",
+  "remTipLast": "Ovo je vaš poslednji podsetnik pre isteka.",
+  "remTipExpired": "Obnovite ga ili ažurirajte datum ako ste to već uradili.",
+  "remStartBody": "Vreme je da počnete obnovu zapisa {recordName}. Ističe {date}, pa ako počnete sada, imaćete dovoljno vremena.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Vreme je da počnete obnovu zapisa {recordName} ({person}). Ističe {date}, pa ako počnete sada, biće dovoljno vremena.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Podsetnici o isteku",
+  "notifChannelDescription": "Podsetnici pre nego što vaši zapisi isteknu",
+  "notifTestTitle": "Probno obaveštenje",
+  "notifTestBody": "Ovako stižu podsetnici iz Vaultara.",
+  "notifTestAction": "Pošalji probno obaveštenje",
+  "notifTestSubtitle": "Proverite da li podsetnici stižu na ovaj telefon",
+  "notifTestSent": "Proba poslata. Trebalo bi da stigne za nekoliko sekundi.",
+  "notifAfterExpiryTitle": "Podseti me posle isteka zapisa",
+  "notifAfterExpirySubtitle": "3 i 14 dana posle, ako nije obnovljen",
+  "notifWeeklyTitle": "Ponedeljni pregled",
+  "notifWeeklySubtitle": "Poruka u ponedeljak ujutru kada nešto ističe te nedelje",
+  "notifPushSection": "Domaćinstvo i ažuriranja",
+  "notifHouseholdTitle": "Podeljeni zapisi",
+  "notifHouseholdSubtitle": "Kada podeljeni zapis uskoro ističe, a niko ga nije obnovio",
+  "notifUpdatesTitle": "Ažuriranja koja ste tražili",
+  "notifUpdatesSubtitle": "Kada neko pošalje nove podatke zapisa",
+  "notifSecurityNote": "Upozorenja o novim prijavama na vaš nalog uvek se šalju.",
+  "notifIosHelpTitle": "Ne stižu vam podsetnici?",
+  "notifIosHelpSubtitle": "Proverite podešavanja iPhone-a",
+  "notifIosHelpStep1": "Otvorite Podešavanja, zatim Obaveštenja, zatim Vaultara, i uključite Dozvoli obaveštenja.",
+  "notifIosHelpStep2": "Uključite Zaključan ekran, Centar za obaveštenja i Banere.",
+  "notifIosHelpStep3": "Ako koristite fokus, dodajte Vaultara među dozvoljene aplikacije.",
+  "notifIosHelpStep4": "Otvarajte Vaultara na svakih nekoliko nedelja. iPhone čuva samo ograničen broj budućih podsetnika, a otvaranje aplikacije planira sledeće.",
+  "homeNextUpEmpty": "Ništa uskoro ne ističe. Sve je spremno.",
+  "homeDueSoonChip": "{count, plural, one{{count} ističe za 30 dana} few{{count} ističu za 30 dana} other{{count} ističe za 30 dana}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Zakačene kategorije"
 }

@@ -360,15 +360,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Bine ai revenit. Vaultara este gata oricând dorești să revizuiești datele și înregistrările tale importante.';
 
   @override
-  String get summaryAllCaption => 'Urmărite în Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Expirat';
-
-  @override
-  String get summaryExpiredCaption => 'Data de expirare a trecut';
-
-  @override
   String get editorNotes => 'Note';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Șterge înregistrare';
-
-  @override
-  String get summaryAllRecordsTitle => 'Toate înregistrările';
 
   @override
   String get noGroupFound => 'Nu există încă grupuri';
@@ -832,22 +820,10 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: '$count de înregistrări',
       few: '$count înregistrări',
-      one: '1 înregistrare',
+      one: '$count înregistrare',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Apropiate';
-
-  @override
-  String get summaryUpcomingCaption => 'În 30 de zile';
-
-  @override
-  String get summaryUrgentTitle => 'Urgent';
-
-  @override
-  String get summaryUrgentCaption => 'În 7 zile';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -949,7 +925,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: '$days de zile înainte',
       few: '$days zile înainte',
-      one: '1 zi înainte',
+      one: '$days zi înainte',
     );
     return '$_temp0';
   }
@@ -1052,7 +1028,7 @@ class AppLocalizationsRo extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names și încă $extra expiră astăzi.',
-      one: '$names și încă 1 expiră astăzi.',
+      one: '$names și încă $extra expiră astăzi.',
       zero: '$names expiră astăzi.',
     );
     return '$_temp0';
@@ -1085,7 +1061,7 @@ class AppLocalizationsRo extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b și încă $extra expiră până pe $lastDate, cam în același timp. Este ușor să uiți unul când mai multe sunt atât de apropiate.',
-      one: '$a, $b și încă 1 expiră până pe $lastDate, cam în același timp. Este ușor să uiți unul când mai multe sunt atât de apropiate.',
+      one: '$a, $b și încă $extra expiră până pe $lastDate, cam în același timp. Este ușor să uiți unul când mai multe sunt atât de apropiate.',
     );
     return '$_temp0';
   }
@@ -1107,7 +1083,7 @@ class AppLocalizationsRo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dintre înregistrările tale din categoria $category expiră până pe $date. Este ușor să uiți una când sunt grupate astfel.',
-      one: '1 dintre înregistrările tale din categoria $category expiră pe $date. Este ușor de omis.',
+      one: '$count dintre înregistrările tale din categoria $category expiră pe $date. Este ușor de omis.',
     );
     return '$_temp0';
   }
@@ -1118,7 +1094,7 @@ class AppLocalizationsRo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count expirări viitoare sunt acoperite de memento-uri. Nimic altceva nu necesită atenția ta.',
-      one: '1 expirare viitoare este acoperită de un memento. Nimic altceva nu necesită atenția ta.',
+      one: '$count expirare viitoare este acoperită de un memento. Nimic altceva nu necesită atenția ta.',
     );
     return '$_temp0';
   }
@@ -1132,7 +1108,7 @@ class AppLocalizationsRo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Nimic nu este urgent momentan, dar $count înregistrări viitoare nu au încă memento.',
-      one: 'Nimic nu este urgent momentan, dar 1 înregistrare viitoare nu are încă memento.',
+      one: 'Nimic nu este urgent momentan, dar $count înregistrare viitoare nu are încă memento.',
     );
     return '$_temp0';
   }
@@ -1257,7 +1233,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: '$days de zile',
       few: '$days zile',
-      one: '1 zi',
+      one: '$days zi',
     );
     return 'Memento $position: cu $_temp0 înainte';
   }
@@ -1295,7 +1271,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: '$count expiră în curând',
       few: '$count expiră în curând',
-      one: '1 expiră în curând',
+      one: '$count expiră în curând',
     );
     return '$_temp0';
   }
@@ -1307,46 +1283,8 @@ class AppLocalizationsRo extends AppLocalizations {
   String get noRecordsTomorrow => 'Nimic nu expiră mâine';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName expiră în $days de zile',
-      few: '$recordName expiră în $days zile',
-      one: '$recordName expiră mâine',
-      zero: '$recordName expiră astăzi',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName expiră pe $date. Reînnoirea timpurie te menține protejat.',
-      few: '$firstName, $recordName expiră pe $date. Reînnoirea timpurie te menține protejat.',
-      one: '$firstName, $recordName expiră mâine. Reînnoiește-l acum pentru a nu expira.',
-      zero: '$firstName, $recordName expiră astăzi. L-ai reînnoit deja? Actualizează data de expirare.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Ultimul memento: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'în $days de zile, pe $date',
-      few: 'în $days zile, pe $date',
-      one: 'mâine',
-    );
-    return '$firstName, $recordName expiră $_temp0. Acesta este ultimul tău memento, reînnoiește-l sau actualizează data.';
   }
 
   @override
@@ -4056,7 +3994,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: '$count de fotografii nu sunt încă criptate',
       few: '$count fotografii nu sunt încă criptate',
-      one: '1 fotografie nu este încă criptată',
+      one: '$count fotografie nu este încă criptată',
     );
     return '$_temp0';
   }
@@ -4178,7 +4116,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: 'Ai $count de fotografii care nu sunt încă criptate. Le putem cripta acum.',
       few: 'Ai $count fotografii care nu sunt încă criptate. Le putem cripta acum.',
-      one: 'Ai 1 fotografie care nu este încă criptată. O putem cripta acum.',
+      one: 'Ai $count fotografie care nu este încă criptată. O putem cripta acum.',
     );
     return '$_temp0 Ține Vaultara deschis până se termină.';
   }
@@ -4214,7 +4152,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: 'Prea multe încercări. Așteaptă $seconds de secunde și încearcă din nou.',
       few: 'Prea multe încercări. Așteaptă $seconds secunde și încearcă din nou.',
-      one: 'Prea multe încercări. Așteaptă 1 secundă și încearcă din nou.',
+      one: 'Prea multe încercări. Așteaptă $seconds secundă și încearcă din nou.',
     );
     return '$_temp0';
   }
@@ -4226,7 +4164,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: 'Prea multe încercări. Așteaptă $minutes de minute și încearcă din nou.',
       few: 'Prea multe încercări. Așteaptă $minutes minute și încearcă din nou.',
-      one: 'Prea multe încercări. Așteaptă 1 minut și încearcă din nou.',
+      one: 'Prea multe încercări. Așteaptă $minutes minut și încearcă din nou.',
     );
     return '$_temp0';
   }
@@ -5073,7 +5011,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: '$count de înregistrări au nevoie de atenția ta',
       few: '$count înregistrări au nevoie de atenția ta',
-      one: '1 înregistrare are nevoie de atenția ta',
+      one: '$count înregistrare are nevoie de atenția ta',
     );
     return '$_temp0';
   }
@@ -5122,7 +5060,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: 'De obicei este valabil $years de ani',
       few: 'De obicei este valabil $years ani',
-      one: 'De obicei este valabil 1 an',
+      one: 'De obicei este valabil $years an',
     );
     return '$_temp0';
   }
@@ -5719,7 +5657,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: 'acum $count de minute',
       few: 'acum $count minute',
-      one: 'acum 1 minut',
+      one: 'acum $count minut',
     );
     return '$_temp0';
   }
@@ -5731,7 +5669,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: 'acum $count de ore',
       few: 'acum $count ore',
-      one: 'acum 1 oră',
+      one: 'acum $count oră',
     );
     return '$_temp0';
   }
@@ -5743,7 +5681,7 @@ class AppLocalizationsRo extends AppLocalizations {
       locale: localeName,
       other: 'acum $count de zile',
       few: 'acum $count zile',
-      one: 'acum 1 zi',
+      one: 'acum $count zi',
     );
     return '$_temp0';
   }
@@ -7379,7 +7317,7 @@ class AppLocalizationsRo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count elemente nu au fotografie. Cu fotografii se înlocuiesc mai repede.',
-      one: '1 element nu are fotografie. Cu o fotografie se înlocuiește mai repede.',
+      one: '$count element nu are fotografie. Cu o fotografie se înlocuiește mai repede.',
     );
     return '$_temp0';
   }
@@ -7390,7 +7328,7 @@ class AppLocalizationsRo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count carduri nu au salvat numărul pentru card pierdut.',
-      one: '1 card nu are salvat numărul pentru card pierdut.',
+      one: '$count card nu are salvat numărul pentru card pierdut.',
     );
     return '$_temp0';
   }
@@ -7569,7 +7507,7 @@ class AppLocalizationsRo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count elemente mai jos',
-      one: '1 element mai jos',
+      one: '$count element mai jos',
     );
     return '$_temp0';
   }
@@ -8358,4 +8296,206 @@ class AppLocalizationsRo extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Memento: $name expiră pe $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName expiră astăzi';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName expiră mâine';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName expiră peste $days de zile',
+      few: '$recordName expiră peste $days zile',
+      one: '$recordName expiră peste $days zi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName a expirat';
+  }
+
+  @override
+  String get remLockedTitle => 'O înregistrare blocată are nevoie de atenția ta';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Data ei este $date. Deblochează Vaultara ca să vezi ce înregistrare este.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Înregistrarea ta „$recordName” expiră astăzi.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Înregistrarea ta „$recordName” expiră mâine.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Înregistrarea ta „$recordName” expiră pe $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, înregistrarea ta „$recordName” expiră astăzi.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, înregistrarea ta „$recordName” expiră mâine.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, înregistrarea ta „$recordName” expiră pe $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Înregistrarea „$recordName” a lui $person expiră astăzi.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Înregistrarea „$recordName” a lui $person expiră mâine.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Înregistrarea „$recordName” a lui $person expiră pe $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Înregistrarea ta „$recordName” a expirat pe $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Înregistrarea „$recordName” a lui $person a expirat pe $date.';
+  }
+
+  @override
+  String get remTipToday => 'Ai reînnoit-o deja? Actualizează-i data.';
+
+  @override
+  String get remTipTomorrow => 'Reînnoiește-o acum ca să nu expire.';
+
+  @override
+  String get remTipEarly => 'Reînnoirea din timp te menține acoperit.';
+
+  @override
+  String get remTipLast => 'Acesta este ultimul memento înainte de expirare.';
+
+  @override
+  String get remTipExpired => 'Reînnoiește-o sau actualizează-i data dacă ai făcut-o deja.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Este momentul să începi reînnoirea pentru „$recordName”. Expiră pe $date, așa că dacă începi acum ai timp suficient.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Este momentul să începi reînnoirea pentru „$recordName” a lui $person. Expiră pe $date, așa că dacă începi acum e timp suficient.';
+  }
+
+  @override
+  String get notifChannelName => 'Mementouri de expirare';
+
+  @override
+  String get notifChannelDescription => 'Mementouri înainte să expire înregistrările tale';
+
+  @override
+  String get notifTestTitle => 'Notificare de test';
+
+  @override
+  String get notifTestBody => 'Mementourile Vaultara arată așa.';
+
+  @override
+  String get notifTestAction => 'Trimite o notificare de test';
+
+  @override
+  String get notifTestSubtitle => 'Verifică dacă mementourile ajung pe acest telefon';
+
+  @override
+  String get notifTestSent => 'Test trimis. Ar trebui să ajungă în câteva secunde.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Amintește-mi după ce o înregistrare expiră';
+
+  @override
+  String get notifAfterExpirySubtitle => 'La 3 și 14 zile după, dacă nu a fost reînnoită';
+
+  @override
+  String get notifWeeklyTitle => 'Rezumatul de luni';
+
+  @override
+  String get notifWeeklySubtitle => 'Un mesaj luni dimineață când ceva expiră în acea săptămână';
+
+  @override
+  String get notifPushSection => 'Gospodărie și actualizări';
+
+  @override
+  String get notifHouseholdTitle => 'Înregistrări partajate';
+
+  @override
+  String get notifHouseholdSubtitle => 'Când o înregistrare partajată e pe cale să expire și nimeni nu a reînnoit-o';
+
+  @override
+  String get notifUpdatesTitle => 'Actualizări cerute de tine';
+
+  @override
+  String get notifUpdatesSubtitle => 'Când cineva trimite datele noi ale unei înregistrări';
+
+  @override
+  String get notifSecurityNote => 'Alertele despre conectări noi în contul tău sunt trimise mereu.';
+
+  @override
+  String get notifIosHelpTitle => 'Nu primești mementouri?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Verifică setările iPhone-ului';
+
+  @override
+  String get notifIosHelpStep1 => 'Deschide Configurări, apoi Notificări, apoi Vaultara, și activează Permite notificările.';
+
+  @override
+  String get notifIosHelpStep2 => 'Activează Ecran blocat, Centru de notificări și Bannere.';
+
+  @override
+  String get notifIosHelpStep3 => 'Dacă folosești un mod de concentrare, adaugă Vaultara la aplicațiile permise.';
+
+  @override
+  String get notifIosHelpStep4 => 'Deschide Vaultara la câteva săptămâni. iPhone-ul păstrează doar un număr limitat de mementouri viitoare, iar deschiderea aplicației le programează pe următoarele.';
+
+  @override
+  String get homeNextUpEmpty => 'Nimic nu expiră curând. Totul e în regulă.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expiră în 30 de zile',
+      few: '$count expiră în 30 de zile',
+      one: '$count expiră în 30 de zile',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Categorii fixate';
 }

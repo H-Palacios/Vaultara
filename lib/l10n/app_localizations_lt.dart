@@ -360,15 +360,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Smagu jus vėl matyti. Vaultara visada pasirengusi jūsų svarbiems duomenims.';
 
   @override
-  String get summaryAllCaption => 'Sekami Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Pasibaigę';
-
-  @override
-  String get summaryExpiredCaption => 'Po galiojimo datos';
-
-  @override
   String get editorNotes => 'Pastabos';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Ištrinti įrašą';
-
-  @override
-  String get summaryAllRecordsTitle => 'Visi įrašai';
 
   @override
   String get noGroupFound => 'Grupių dar nėra';
@@ -831,22 +819,10 @@ class AppLocalizationsLt extends AppLocalizations {
       other: '$count įrašų',
       many: '$count įrašo',
       few: '$count įrašai',
-      one: '1 įrašas',
+      one: '$count įrašas',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Artėjantys';
-
-  @override
-  String get summaryUpcomingCaption => 'Per 30 dienų';
-
-  @override
-  String get summaryUrgentTitle => 'Skubu';
-
-  @override
-  String get summaryUrgentCaption => 'Per 7 dienas';
 
   @override
   String get profileHeaderTitle => 'Profilis';
@@ -1052,7 +1028,7 @@ class AppLocalizationsLt extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names ir dar $extra baigiasi šiandien.',
-      one: '$names ir dar 1 baigiasi šiandien.',
+      one: '$names ir dar $extra baigiasi šiandien.',
       zero: '$names baigiasi šiandien.',
     );
     return '$_temp0';
@@ -1064,7 +1040,6 @@ class AppLocalizationsLt extends AppLocalizations {
       days,
       locale: localeName,
       other: '$name baigiasi $date ir neturi priminimo. Nustatykite jį, kad nepraleistumėte.',
-      one: '$name baigiasi rytoj ir neturi priminimo. Nustatykite jį, kad nepraleistumėte.',
     );
     return '$_temp0';
   }
@@ -1085,7 +1060,7 @@ class AppLocalizationsLt extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b ir dar $extra įrašai baigiasi iki $lastDate, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai keletas įrašų yra taip arti vienas kito.',
-      one: '$a, $b ir dar 1 įrašas baigiasi iki $lastDate, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai keletas įrašų yra taip arti vienas kito.',
+      one: '$a, $b ir dar $extra įrašas baigiasi iki $lastDate, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai keletas įrašų yra taip arti vienas kito.',
     );
     return '$_temp0';
   }
@@ -1095,8 +1070,9 @@ class AppLocalizationsLt extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Per ateinančias $days dienas niekas nesibaigia. Kitas jūsų terminas yra $date.',
-      one: 'Sekančią dieną niekas nesibaigia. Kitas jūsų terminas yra $date.',
+      other: 'Per ateinančias $days dienų niekas nesibaigia. Kitas jūsų terminas yra $date.',
+      few: 'Per ateinančias $days dienas niekas nesibaigia. Kitas jūsų terminas yra $date.',
+      one: 'Per ateinančią $days dieną niekas nesibaigia. Kitas jūsų terminas yra $date.',
     );
     return '$_temp0';
   }
@@ -1107,7 +1083,7 @@ class AppLocalizationsLt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count iš jūsų įrašų kategorijoje $category baigiasi iki $date. Lengva vieną pamiršti, kai jie sugrupuoti taip.',
-      one: '1 iš jūsų įrašų kategorijoje $category baigiasi $date. Jį lengva nepastebėti.',
+      one: '$count iš jūsų įrašų kategorijoje $category baigiasi $date. Jį lengva nepastebėti.',
     );
     return '$_temp0';
   }
@@ -1118,7 +1094,7 @@ class AppLocalizationsLt extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count būsimi terminai yra apsaugoti priminimais. Daugiau niekas nereikalauja jūsų dėmesio.',
-      one: '1 būsimas terminas yra apsaugotas priminimu. Daugiau niekas nereikalauja jūsų dėmesio.',
+      one: '$count būsimas terminas yra apsaugotas priminimu. Daugiau niekas nereikalauja jūsų dėmesio.',
     );
     return '$_temp0';
   }
@@ -1132,7 +1108,7 @@ class AppLocalizationsLt extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Šiuo metu nieko skubaus nėra, tačiau $count būsimi įrašai dar neturi priminimų.',
-      one: 'Šiuo metu nieko skubaus nėra, tačiau 1 būsimas įrašas dar neturi priminimo.',
+      one: 'Šiuo metu nieko skubaus nėra, tačiau $count būsimas įrašas dar neturi priminimo.',
     );
     return '$_temp0';
   }
@@ -1257,7 +1233,7 @@ class AppLocalizationsLt extends AppLocalizations {
       locale: localeName,
       other: '$days d.',
       few: '$days dienoms',
-      one: '1 dienai',
+      one: '$days dienai',
     );
     return 'Priminimas $position: likus $_temp0 iki pabaigos';
   }
@@ -1295,7 +1271,7 @@ class AppLocalizationsLt extends AppLocalizations {
       locale: localeName,
       other: '$count greitai baigs galiojimą',
       few: '$count greitai baigs galiojimą',
-      one: '1 greitai baigs galiojimą',
+      one: '$count greitai baigs galiojimą',
     );
     return '$_temp0';
   }
@@ -1307,49 +1283,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get noRecordsTomorrow => 'Rytoj niekas nebaigia galiojimo';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '„$recordName“ galiojimas baigiasi per $days dienų',
-      many: '„$recordName“ galiojimas baigiasi per $days dienos',
-      few: '„$recordName“ galiojimas baigiasi per $days dienas',
-      one: '„$recordName“ galiojimas baigiasi per $days dieną',
-      zero: '„$recordName“ galiojimas baigiasi šiandien',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, jūsų „$recordName“ galiojimas baigiasi $date. Ankstyvas atnaujinimas užtikrina apsaugą.',
-      many: '$firstName, jūsų „$recordName“ galiojimas baigiasi $date. Ankstyvas atnaujinimas užtikrina apsaugą.',
-      few: '$firstName, jūsų „$recordName“ galiojimas baigiasi $date. Ankstyvas atnaujinimas užtikrina apsaugą.',
-      one: '$firstName, jūsų „$recordName“ galiojimas baigiasi $date. Ankstyvas atnaujinimas užtikrina apsaugą.',
-      zero: '$firstName, jūsų „$recordName“ galiojimas baigiasi šiandien. Jau atnaujinote? Pakeiskite galiojimo datą.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Paskutinis priminimas: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'per $days dienų, $date',
-      many: 'per $days dienos, $date',
-      few: 'per $days dienas, $date',
-      one: 'per $days dieną, $date',
-    );
-    return '$firstName, jūsų „$recordName“ galiojimas baigiasi $_temp0. Tai paskutinis jūsų priminimas, atnaujinkite jį arba pakeiskite datą.';
   }
 
   @override
@@ -4100,7 +4035,7 @@ class AppLocalizationsLt extends AppLocalizations {
       other: '$count nuotraukų dar neužšifruota',
       many: '$count nuotraukos dar neužšifruotos',
       few: '$count nuotraukos dar neužšifruotos',
-      one: '1 nuotrauka dar neužšifruota',
+      one: '$count nuotrauka dar neužšifruota',
     );
     return '$_temp0';
   }
@@ -4223,7 +4158,7 @@ class AppLocalizationsLt extends AppLocalizations {
       other: 'Turite $count dar neužšifruotų nuotraukų. Galime jas užšifruoti dabar.',
       many: 'Turite $count dar neužšifruotas nuotraukas. Galime jas užšifruoti dabar.',
       few: 'Turite $count dar neužšifruotas nuotraukas. Galime jas užšifruoti dabar.',
-      one: 'Turite 1 dar neužšifruotą nuotrauką. Galime ją užšifruoti dabar.',
+      one: 'Turite $count dar neužšifruotą nuotrauką. Galime ją užšifruoti dabar.',
     );
     return '$_temp0 Laikykite Vaultara atidarytą, kol viskas baigsis.';
   }
@@ -4260,7 +4195,7 @@ class AppLocalizationsLt extends AppLocalizations {
       other: 'Per daug bandymų. Palaukite $seconds sekundžių ir bandykite dar kartą.',
       many: 'Per daug bandymų. Palaukite $seconds sekundės ir bandykite dar kartą.',
       few: 'Per daug bandymų. Palaukite $seconds sekundes ir bandykite dar kartą.',
-      one: 'Per daug bandymų. Palaukite 1 sekundę ir bandykite dar kartą.',
+      one: 'Per daug bandymų. Palaukite $seconds sekundę ir bandykite dar kartą.',
     );
     return '$_temp0';
   }
@@ -4273,7 +4208,7 @@ class AppLocalizationsLt extends AppLocalizations {
       other: 'Per daug bandymų. Palaukite $minutes minučių ir bandykite dar kartą.',
       many: 'Per daug bandymų. Palaukite $minutes minutės ir bandykite dar kartą.',
       few: 'Per daug bandymų. Palaukite $minutes minutes ir bandykite dar kartą.',
-      one: 'Per daug bandymų. Palaukite 1 minutę ir bandykite dar kartą.',
+      one: 'Per daug bandymų. Palaukite $minutes minutę ir bandykite dar kartą.',
     );
     return '$_temp0';
   }
@@ -8426,4 +8361,206 @@ class AppLocalizationsLt extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Priminimas: $name baigia galioti $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '„$recordName“ galiojimas baigiasi šiandien';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '„$recordName“ galiojimas baigiasi rytoj';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '„$recordName“ galiojimas baigiasi po $days dienų',
+      few: '„$recordName“ galiojimas baigiasi po $days dienų',
+      one: '„$recordName“ galiojimas baigiasi po $days dienos',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '„$recordName“ galiojimas baigėsi';
+  }
+
+  @override
+  String get remLockedTitle => 'Užrakintam įrašui reikia jūsų dėmesio';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Jo data – $date. Atrakinkite Vaultara, kad pamatytumėte, kuris tai įrašas.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Jūsų įrašo „$recordName“ galiojimas baigiasi šiandien.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Jūsų įrašo „$recordName“ galiojimas baigiasi rytoj.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Jūsų įrašo „$recordName“ galiojimas baigiasi $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, jūsų įrašo „$recordName“ galiojimas baigiasi šiandien.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, jūsų įrašo „$recordName“ galiojimas baigiasi rytoj.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, jūsų įrašo „$recordName“ galiojimas baigiasi $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: įrašo „$recordName“ galiojimas baigiasi šiandien.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: įrašo „$recordName“ galiojimas baigiasi rytoj.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: įrašo „$recordName“ galiojimas baigiasi $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Jūsų įrašo „$recordName“ galiojimas baigėsi $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: įrašo „$recordName“ galiojimas baigėsi $date.';
+  }
+
+  @override
+  String get remTipToday => 'Jau atnaujinote? Pakeiskite datą.';
+
+  @override
+  String get remTipTomorrow => 'Atnaujinkite dabar, kad galiojimas nesibaigtų.';
+
+  @override
+  String get remTipEarly => 'Ankstyvas atnaujinimas palaiko jūsų apsaugą.';
+
+  @override
+  String get remTipLast => 'Tai paskutinis priminimas prieš pasibaigiant galiojimui.';
+
+  @override
+  String get remTipExpired => 'Atnaujinkite arba pakeiskite datą, jei jau atnaujinote.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Laikas pradėti atnaujinti „$recordName“. Galiojimas baigiasi $date, todėl pradėję dabar turėsite daug laiko.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Laikas pradėti atnaujinti „$recordName“ ($person). Galiojimas baigiasi $date, todėl pradėjus dabar laiko bus daug.';
+  }
+
+  @override
+  String get notifChannelName => 'Galiojimo priminimai';
+
+  @override
+  String get notifChannelDescription => 'Priminimai prieš pasibaigiant jūsų įrašų galiojimui';
+
+  @override
+  String get notifTestTitle => 'Bandomasis pranešimas';
+
+  @override
+  String get notifTestBody => 'Taip atrodo Vaultara priminimai.';
+
+  @override
+  String get notifTestAction => 'Siųsti bandomąjį pranešimą';
+
+  @override
+  String get notifTestSubtitle => 'Patikrinkite, ar priminimai pasiekia šį telefoną';
+
+  @override
+  String get notifTestSent => 'Bandymas išsiųstas. Jis turėtų ateiti po kelių sekundžių.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Priminti pasibaigus įrašo galiojimui';
+
+  @override
+  String get notifAfterExpirySubtitle => 'Po 3 ir 14 dienų, jei jis neatnaujintas';
+
+  @override
+  String get notifWeeklyTitle => 'Pirmadienio santrauka';
+
+  @override
+  String get notifWeeklySubtitle => 'Žinutė pirmadienio rytą, kai tą savaitę kas nors baigiasi';
+
+  @override
+  String get notifPushSection => 'Namų ūkis ir atnaujinimai';
+
+  @override
+  String get notifHouseholdTitle => 'Bendrinami įrašai';
+
+  @override
+  String get notifHouseholdSubtitle => 'Kai bendrinamo įrašo galiojimas tuoj baigsis, o niekas jo neatnaujino';
+
+  @override
+  String get notifUpdatesTitle => 'Jūsų prašyti atnaujinimai';
+
+  @override
+  String get notifUpdatesSubtitle => 'Kai kas nors atsiunčia naujus įrašo duomenis';
+
+  @override
+  String get notifSecurityNote => 'Įspėjimai apie naujus prisijungimus prie jūsų paskyros siunčiami visada.';
+
+  @override
+  String get notifIosHelpTitle => 'Negaunate priminimų?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Patikrinkite iPhone nustatymus';
+
+  @override
+  String get notifIosHelpStep1 => 'Atidarykite Nustatymai, tada Pranešimai, tada Vaultara, ir įjunkite Leisti pranešimus.';
+
+  @override
+  String get notifIosHelpStep2 => 'Įjunkite Užrakinimo ekraną, Pranešimų centrą ir Reklamjuostes.';
+
+  @override
+  String get notifIosHelpStep3 => 'Jei naudojate Fokusavimą, pridėkite Vaultara prie leidžiamų programų.';
+
+  @override
+  String get notifIosHelpStep4 => 'Atidarykite Vaultara kas kelias savaites. iPhone saugo tik ribotą būsimų priminimų skaičių, o atidarius programėlę suplanuojami kiti.';
+
+  @override
+  String get homeNextUpEmpty => 'Netrukus niekas nesibaigia. Viskas tvarkoje.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count baigiasi per 30 dienų',
+      few: '$count baigiasi per 30 dienų',
+      one: '$count baigiasi per 30 dienų',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Prisegtos kategorijos';
 }

@@ -360,15 +360,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Tunafurahi kukuona tena. Vaultara iko tayari wakati wowote unapotaka kukagua tarehe na rekodi zako muhimu.';
 
   @override
-  String get summaryAllCaption => 'Vinafuatiwa katika Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Vimeisha';
-
-  @override
-  String get summaryExpiredCaption => 'Tarehe ya mwisho imepita';
-
-  @override
   String get editorNotes => 'Vidokezo';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Futa rekodi';
-
-  @override
-  String get summaryAllRecordsTitle => 'Rekodi zote';
 
   @override
   String get noGroupFound => 'Bado hakuna vikundi';
@@ -829,22 +817,10 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Rekodi $count',
-      one: 'Rekodi 1',
+      one: 'Rekodi $count',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Yanayokuja';
-
-  @override
-  String get summaryUpcomingCaption => 'Ndani ya siku 30';
-
-  @override
-  String get summaryUrgentTitle => 'Haraka';
-
-  @override
-  String get summaryUrgentCaption => 'Ndani ya siku 7';
 
   @override
   String get profileHeaderTitle => 'Wasifu';
@@ -945,7 +921,7 @@ class AppLocalizationsSw extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Siku $days kabla',
-      one: 'Siku 1 kabla',
+      one: 'Siku $days kabla',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsSw extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names na $extra zaidi zinamalizika leo.',
-      one: '$names na 1 zaidi zinamalizika leo.',
+      one: '$names na $extra zaidi zinamalizika leo.',
       zero: '$names zinamalizika leo.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsSw extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b, na rekodi $extra zaidi zinamalizika kabla ya $lastDate, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi kadhaa ziko karibu hivi.',
-      one: '$a, $b, na rekodi 1 zaidi zinamalizika kabla ya $lastDate, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi kadhaa ziko karibu hivi.',
+      one: '$a, $b, na rekodi $extra zaidi zinamalizika kabla ya $lastDate, karibu wakati mmoja. Ni rahisi kusahau moja wakati rekodi kadhaa ziko karibu hivi.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ya rekodi zako katika kategoria ya $category zinamalizika kabla ya $date. Ni rahisi kusahau moja zinapowekwa pamoja hivi.',
-      one: '1 ya rekodi zako katika kategoria ya $category inamalizika mnamo $date. Ni rahisi kuisahau.',
+      one: '$count ya rekodi zako katika kategoria ya $category inamalizika mnamo $date. Ni rahisi kuisahau.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Muda $count ujao wa kumalizika umewekewa vikumbusho. Hakuna kitu kingine kinachohitaji makini yako.',
-      one: 'Muda 1 ujao wa kumalizika umewekewa kikumbusho. Hakuna kitu kingine kinachohitaji makini yako.',
+      one: 'Muda $count ujao wa kumalizika umewekewa kikumbusho. Hakuna kitu kingine kinachohitaji makini yako.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Hakuna jambo la dharura kwa sasa, lakini rekodi $count zijazo bado hazina vikumbusho.',
-      one: 'Hakuna jambo la dharura kwa sasa, lakini rekodi 1 ijayo bado haina kikumbusho.',
+      one: 'Hakuna jambo la dharura kwa sasa, lakini rekodi $count ijayo bado haina kikumbusho.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsSw extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days',
-      one: '1',
+      one: '$days',
     );
     return 'Kikumbusho $position: Siku $_temp0 kabla';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count zinazoisha hivi karibuni',
-      one: '1 inayoisha hivi karibuni',
+      one: '$count inayoisha hivi karibuni',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsSw extends AppLocalizations {
   String get noRecordsTomorrow => 'Hakuna kinachoisha kesho';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Rekodi ya $recordName inakwisha muda wake baada ya siku $days',
-      one: 'Rekodi ya $recordName inakwisha muda wake kesho',
-      zero: 'Rekodi ya $recordName inakwisha muda wake leo',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, rekodi yako ya $recordName inakwisha muda wake tarehe $date. Kuihuisha mapema kunahakikisha uhalali usiokatizwa.',
-      one: '$firstName, rekodi yako ya $recordName inakwisha muda wake kesho. Ihuishe sasa hivi ili isipoteze uhalali wake.',
-      zero: '$firstName, rekodi yako ya $recordName inakwisha muda wake leo. Je, umeiuhuisha tayari? Sasisha tarehe yake ya mwisho.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Kikumbusho cha mwisho: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'baada ya siku $days, tarehe $date',
-      one: 'kesho',
-    );
-    return '$firstName, rekodi yako ya $recordName inakwisha muda wake $_temp0. Hiki ni kikumbusho chako cha mwisho, ihuishe au usasishe tarehe yake.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Picha $count hazijasimbwa bado',
-      one: 'Picha 1 haijasimbwa bado',
+      one: 'Picha $count haijasimbwa bado',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Una picha $count ambazo hazijasimbwa bado. Tunaweza kuzisimba sasa.',
-      one: 'Una picha 1 ambayo haijasimbwa bado. Tunaweza kuisimba sasa.',
+      one: 'Una picha $count ambayo haijasimbwa bado. Tunaweza kuisimba sasa.',
     );
     return '$_temp0 Weka Vaultara wazi hadi hii ikamilike.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsSw extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Majaribio mengi mno. Tafadhali subiri sekunde $seconds kisha ujaribu tena.',
-      one: 'Majaribio mengi mno. Tafadhali subiri sekunde 1 kisha ujaribu tena.',
+      one: 'Majaribio mengi mno. Tafadhali subiri sekunde $seconds kisha ujaribu tena.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsSw extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Majaribio mengi mno. Tafadhali subiri dakika $minutes kisha ujaribu tena.',
-      one: 'Majaribio mengi mno. Tafadhali subiri dakika 1 kisha ujaribu tena.',
+      one: 'Majaribio mengi mno. Tafadhali subiri dakika $minutes kisha ujaribu tena.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Rekodi $count zinahitaji umakini wako',
-      one: 'Rekodi 1 inahitaji umakini wako',
+      one: 'Rekodi $count inahitaji umakini wako',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsSw extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Kwa kawaida hudumu miaka $years',
-      one: 'Kwa kawaida hudumu mwaka 1',
+      one: 'Kwa kawaida hudumu mwaka $years',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Zimebaki siku $count',
-      one: 'Imebaki siku 1',
+      one: 'Imebaki siku $count',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Siku $count zilizopita',
-      one: 'Siku 1 iliyopita',
+      one: 'Siku $count iliyopita',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Rekodi $count ulizofuta zinahesabiwa kuwa zimesitishwa.',
-      one: 'Rekodi 1 uliyofuta inahesabiwa kuwa imesitishwa.',
+      one: 'Rekodi $count uliyofuta inahesabiwa kuwa imesitishwa.',
     );
     return '$_temp0';
   }
@@ -7580,7 +7521,7 @@ class AppLocalizationsSw extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Hatua $count',
-      one: 'Hatua 1',
+      one: 'Hatua $count',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsSw extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Kikumbusho: $name inaisha $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName inaisha muda wake leo';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName inaisha muda wake kesho';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName inaisha muda wake baada ya siku $days',
+      one: '$recordName inaisha muda wake baada ya siku $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName imeisha muda wake';
+  }
+
+  @override
+  String get remLockedTitle => 'Rekodi iliyofungwa inahitaji umakini wako';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Tarehe yake ni $date. Fungua Vaultara ili kuona ni rekodi ipi.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Rekodi yako \"$recordName\" inaisha muda wake leo.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Rekodi yako \"$recordName\" inaisha muda wake kesho.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Rekodi yako \"$recordName\" inaisha muda wake tarehe $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, rekodi yako \"$recordName\" inaisha muda wake leo.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, rekodi yako \"$recordName\" inaisha muda wake kesho.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, rekodi yako \"$recordName\" inaisha muda wake tarehe $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Rekodi ya $person \"$recordName\" inaisha muda wake leo.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Rekodi ya $person \"$recordName\" inaisha muda wake kesho.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Rekodi ya $person \"$recordName\" inaisha muda wake tarehe $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Rekodi yako \"$recordName\" iliisha muda wake tarehe $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Rekodi ya $person \"$recordName\" iliisha muda wake tarehe $date.';
+  }
+
+  @override
+  String get remTipToday => 'Umeshaihuisha? Sasisha tarehe yake.';
+
+  @override
+  String get remTipTomorrow => 'Ihuishe sasa ili isiishe muda wake.';
+
+  @override
+  String get remTipEarly => 'Kuhuisha mapema kunakuweka salama.';
+
+  @override
+  String get remTipLast => 'Hiki ni kikumbusho chako cha mwisho kabla muda haujaisha.';
+
+  @override
+  String get remTipExpired => 'Ihuishe, au sasisha tarehe yake kama tayari umefanya hivyo.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Ni wakati wa kuanza kuhuisha \"$recordName\". Inaisha muda wake tarehe $date, kwa hiyo ukianza sasa utakuwa na muda wa kutosha.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Ni wakati wa kuanza kuhuisha \"$recordName\" ya $person. Inaisha muda wake tarehe $date, kwa hiyo kuanza sasa kunaacha muda wa kutosha.';
+  }
+
+  @override
+  String get notifChannelName => 'Vikumbusho vya kuisha muda';
+
+  @override
+  String get notifChannelDescription => 'Vikumbusho kabla rekodi zako hazijaisha muda';
+
+  @override
+  String get notifTestTitle => 'Arifa ya majaribio';
+
+  @override
+  String get notifTestBody => 'Vikumbusho vya Vaultara huja hivi.';
+
+  @override
+  String get notifTestAction => 'Tuma arifa ya majaribio';
+
+  @override
+  String get notifTestSubtitle => 'Hakikisha vikumbusho vinafika kwenye simu hii';
+
+  @override
+  String get notifTestSent => 'Jaribio limetumwa. Linapaswa kufika baada ya sekunde chache.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Nikumbushe baada ya rekodi kuisha muda';
+
+  @override
+  String get notifAfterExpirySubtitle => 'Siku 3 na 14 baadaye, kama haijahuishwa';
+
+  @override
+  String get notifWeeklyTitle => 'Muhtasari wa Jumatatu';
+
+  @override
+  String get notifWeeklySubtitle => 'Ujumbe Jumatatu asubuhi kitu kinapoisha muda wiki hiyo';
+
+  @override
+  String get notifPushSection => 'Kaya na masasisho';
+
+  @override
+  String get notifHouseholdTitle => 'Rekodi zilizoshirikiwa';
+
+  @override
+  String get notifHouseholdSubtitle => 'Rekodi iliyoshirikiwa inapokaribia kuisha muda na hakuna aliyeihuisha';
+
+  @override
+  String get notifUpdatesTitle => 'Masasisho uliyoomba';
+
+  @override
+  String get notifUpdatesSubtitle => 'Mtu anapotuma taarifa mpya za rekodi';
+
+  @override
+  String get notifSecurityNote => 'Tahadhari kuhusu kuingia upya kwenye akaunti yako hutumwa kila wakati.';
+
+  @override
+  String get notifIosHelpTitle => 'Hupati vikumbusho?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Angalia mipangilio ya iPhone yako';
+
+  @override
+  String get notifIosHelpStep1 => 'Fungua Mipangilio, kisha Arifa, kisha Vaultara, na uwashe Ruhusu Arifa.';
+
+  @override
+  String get notifIosHelpStep2 => 'Washa Skrini Iliyofungwa, Kituo cha Arifa na Mabango.';
+
+  @override
+  String get notifIosHelpStep3 => 'Ukitumia Focus, ongeza Vaultara kwenye programu zinazoruhusiwa.';
+
+  @override
+  String get notifIosHelpStep4 => 'Fungua Vaultara kila baada ya wiki chache. iPhone huhifadhi idadi ndogo tu ya vikumbusho vya mbele, na kufungua programu hupanga vinavyofuata.';
+
+  @override
+  String get homeNextUpEmpty => 'Hakuna kinachoisha muda hivi karibuni. Kila kitu kiko tayari.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count zinadaiwa ndani ya siku 30',
+      one: '$count inadaiwa ndani ya siku 30',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Kategoria zilizobandikwa';
 }

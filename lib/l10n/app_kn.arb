@@ -111,9 +111,6 @@
   "homeWelcomeSubtitleGeneric": "ಪ್ರಮುಖ ಮುಕ್ತಾಯ ದಿನಾಂಕಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು Vaultara ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ, ಇದರಿಂದ ಯಾವುದೂ ಗಮನಕ್ಕೆ ಬಾರದೆ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದಿಲ್ಲ.",
   "homeWelcomeSubtitleFirst": "ನೀವು ಇಲ್ಲಿರುವುದು ತುಂಬಾ ಸಂತೋಷ. ಪ್ರಮುಖ ದಿನಾಂಕಗಳು ಮತ್ತು ದಾಖಲೆಗಳನ್ನು ಒಂದೇ ಸುರಕ್ಷಿತ ಸ್ಥಳದಲ್ಲಿ ಇರಿಸುವ ಮೂಲಕ Vaultara ನಿಮ್ಮನ್ನು ವ್ಯವಸ್ಥಿತವಾಗಿರಿಸುತ್ತದೆ.",
   "homeWelcomeSubtitleBack": "ನಿಮ್ಮನ್ನು ಮತ್ತೆ ನೋಡಿ ಸಂತೋಷವಾಯಿತು. ನಿಮ್ಮ ಪ್ರಮುಖ ದಿನಾಂಕಗಳು ಮತ್ತು ದಾಖಲೆಗಳನ್ನು ವಿಮರ್ಶಿಸಲು ಬಯಸಿದಾಗಲೆಲ್ಲಾ Vaultara ಇಲ್ಲಿದೆ.",
-  "summaryAllCaption": "Vaultara ನಲ್ಲಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಲಾಗಿದೆ",
-  "summaryExpiredTitle": "ಮುಕ್ತಾಯಗೊಂಡವು",
-  "summaryExpiredCaption": "ಮುಕ್ತಾಯ ದಿನಾಂಕ ಕಳೆದಿದೆ",
   "editorNotes": "ಟಿಪ್ಪಣಿಗಳು",
   "editorReminderNone": "ರಿಮೈಂಡರ್ ಇಲ್ಲ",
   "editorReminderOnExpiry": "ಮುಕ್ತಾಯ ದಿನಾಂಕದಂದು",
@@ -129,7 +126,6 @@
   "addRecord": "ದಾಖಲೆ ಸೇರಿಸಿ",
   "noRecordsYet": "ಇನ್ನೂ ಯಾವುದೇ ದಾಖಲೆಗಳಿಲ್ಲ.",
   "deleteRecordTitle": "ದಾಖಲೆ ಅಳಿಸಿ",
-  "summaryAllRecordsTitle": "ಎಲ್ಲಾ ದಾಖಲೆಗಳು",
   "noGroupFound": "ಇನ್ನೂ ಯಾವುದೇ ಗುಂಪುಗಳಿಲ್ಲ",
   "groupLabel": "{count, plural, one{{count} ಗುಂಪು} other{{count} ಗುಂಪುಗಳು}}",
   "recordsLabel": "{count, plural, one{{count} ದಾಖಲೆ} other{{count} ದಾಖಲೆಗಳು}}",
@@ -250,10 +246,6 @@
   "expiryTimelineTitle": "ಮುಕ್ತಾಯ ಟೈಮ್‌ಲೈನ್",
   "expiryTimelineSubtitle": "ಆ ತಿಂಗಳಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುವ ದಾಖಲೆಗಳನ್ನು ನೋಡಲು ಒಂದು ತಿಂಗಳನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ",
   "expiryTimelineDetailCount": "{count, plural, one{{count} ದಾಖಲೆಗಳು} other{{count} ದಾಖಲೆಗಳು}}",
-  "summaryUpcomingTitle": "ಮುಂಬರುವವು",
-  "summaryUpcomingCaption": "30 ದಿನಗಳೊಳಗೆ",
-  "summaryUrgentTitle": "ತುರ್ತು",
-  "summaryUrgentCaption": "7 ದಿನಗಳೊಳಗೆ",
   "profileHeaderTitle": "ಪ್ರೊಫೈಲ್",
   "profileTutorialsTitle": "ಟ್ಯುಟೋರಿಯಲ್‌ಗಳು",
   "profileTutorialsSubtitle": "ಆ್ಯಪ್ ಟ್ಯುಟೋರಿಯಲ್‌ಗಳನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ",
@@ -369,10 +361,7 @@
   "expiringBadge": "{count, plural, one{{count} ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತಿವೆ} other{{count} ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತಿವೆ}}",
   "noRecordsToday": "ಇಂದು ಯಾವುದೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದಿಲ್ಲ",
   "noRecordsTomorrow": "ನಾಳೆ ಯಾವುದೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದಿಲ್ಲ",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ} one{{recordName} {days} ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ} other{{recordName} {days} ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, ನಿಮ್ಮ {recordName} ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ. ಈಗಾಗಲೇ ನವೀಕರಿಸಿದ್ದೀರಾ? ಅದರ ಮುಕ್ತಾಯ ದಿನಾಂಕವನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ.} one{{firstName}, ನಿಮ್ಮ {recordName} {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ. ಮೊದಲೇ ನವೀಕರಿಸಿದರೆ ನೀವು ನಿಶ್ಚಿಂತರಾಗಿರಬಹುದು.} other{{firstName}, ನಿಮ್ಮ {recordName} {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ. ಮೊದಲೇ ನವೀಕರಿಸಿದರೆ ನೀವು ನಿಶ್ಚಿಂತರಾಗಿರಬಹುದು.}}",
   "cascadeFinalStepTitle": "ಕೊನೆಯ ರಿಮೈಂಡರ್: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, ನಿಮ್ಮ {recordName} {days, plural, one{{days} ದಿನಗಳಲ್ಲಿ, {date} ರಂದು} other{{days} ದಿನಗಳಲ್ಲಿ, {date} ರಂದು}} ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಕೊನೆಯ ರಿಮೈಂಡರ್, ಅದನ್ನು ನವೀಕರಿಸಿ ಅಥವಾ ಅದರ ದಿನಾಂಕವನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ.",
   "notificationsTitle": "ಅಧಿಸೂಚನೆಗಳು",
   "notificationsProfileEnabledSubtitle": "ರಿಮೈಂಡರ್‌ಗಳು {time} ಕ್ಕೆ ಬರುತ್ತವೆ.",
   "notificationsProfileDisabledSubtitle": "ಅಧಿಸೂಚನೆಗಳನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ.",
@@ -1884,8 +1873,8 @@
   "lifePlanAutoChanged": "Vaultara ಈ ದಾಖಲೆ ಬದಲಾಗಿದುದನ್ನು ಗಮನಿಸಿದೆ, ಆದ್ದರಿಂದ ಮುಗಿದಿದೆ ಎಂದು ಗುರುತಿಸಲಾಗಿದೆ.",
   "lifePlanAutoAdded": "ಈ ಯೋಜನೆ ಆರಂಭಿಸಿದ ನಂತರ ಸೇರಿಸಲಾಗಿದೆ.",
   "lifePlanProgress": "{total} ರಲ್ಲಿ {done} ಮುಗಿದಿದೆ",
-  "lifePlanDaysToGo": "{count, plural, =1{ಇನ್ನೂ 1 ದಿನ} other{ಇನ್ನೂ {count} ದಿನಗಳು}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 ದಿನದ ಹಿಂದೆ} other{{count} ದಿನಗಳ ಹಿಂದೆ}}",
+  "lifePlanDaysToGo": "{count, plural, =1{ಇನ್ನೂ {count} ದಿನ} other{ಇನ್ನೂ {count} ದಿನಗಳು}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} ದಿನದ ಹಿಂದೆ} other{{count} ದಿನಗಳ ಹಿಂದೆ}}",
   "lifePlanAllDone": "ಎಲ್ಲವೂ ಮುಗಿದಿದೆ. ಯೋಜನೆಯನ್ನು ಮುಗಿದಿದೆ ಎಂದು ಗುರುತಿಸಬಹುದು.",
   "lifePlanFinish": "ಮುಗಿದಿದೆ ಎಂದು ಗುರುತಿಸಿ",
   "lifePlanReopen": "ಮತ್ತೆ ತೆರೆಯಿರಿ",
@@ -2014,7 +2003,7 @@
   "lifePlanReadAloudUnavailable": "ಈ ಫೋನ್‌ನಲ್ಲಿ ಗಟ್ಟಿಯಾಗಿ ಓದುವ ಸೌಲಭ್ಯ ಇಲ್ಲ.",
   "lifePlanProofPack": "ಪುರಾವೆ ಪ್ಯಾಕ್ ರಚಿಸಿ",
   "lifePlanOpenFamily": "ಕುಟುಂಬ ತೆರೆಯಿರಿ",
-  "lifePlanRemoved": "{count, plural, =1{ನೀವು ಅಳಿಸಿದ 1 ದಾಖಲೆಯನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.} other{ನೀವು ಅಳಿಸಿದ {count} ದಾಖಲೆಗಳನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.}}",
+  "lifePlanRemoved": "{count, plural, =1{ನೀವು ಅಳಿಸಿದ {count} ದಾಖಲೆಯನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.} other{ನೀವು ಅಳಿಸಿದ {count} ದಾಖಲೆಗಳನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2611,5 +2600,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} ನಾಳೆ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} {days} ದಿನದಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ} other{{recordName} {days} ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} ಮುಕ್ತಾಯಗೊಂಡಿದೆ",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "ಲಾಕ್ ಮಾಡಿದ ದಾಖಲೆಗೆ ನಿಮ್ಮ ಗಮನ ಬೇಕು",
+  "remLockedBody": "ಅದರ ದಿನಾಂಕ {date}. ಯಾವ ದಾಖಲೆ ಎಂದು ನೋಡಲು Vaultara ಅನ್‌ಲಾಕ್ ಮಾಡಿ.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "ನಿಮ್ಮ \"{recordName}\" ದಾಖಲೆ ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "ನಿಮ್ಮ \"{recordName}\" ದಾಖಲೆ ನಾಳೆ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "ನಿಮ್ಮ \"{recordName}\" ದಾಖಲೆ {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, ನಿಮ್ಮ \"{recordName}\" ದಾಖಲೆ ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, ನಿಮ್ಮ \"{recordName}\" ದಾಖಲೆ ನಾಳೆ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, ನಿಮ್ಮ \"{recordName}\" ದಾಖಲೆ {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: \"{recordName}\" ದಾಖಲೆ ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: \"{recordName}\" ದಾಖಲೆ ನಾಳೆ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: \"{recordName}\" ದಾಖಲೆ {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "ನಿಮ್ಮ \"{recordName}\" ದಾಖಲೆ {date} ರಂದು ಮುಕ್ತಾಯಗೊಂಡಿತು.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: \"{recordName}\" ದಾಖಲೆ {date} ರಂದು ಮುಕ್ತಾಯಗೊಂಡಿತು.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "ಈಗಾಗಲೇ ನವೀಕರಿಸಿದ್ದೀರಾ? ಅದರ ದಿನಾಂಕವನ್ನು ನವೀಕರಿಸಿ.",
+  "remTipTomorrow": "ಮುಕ್ತಾಯವಾಗದಂತೆ ಈಗಲೇ ನವೀಕರಿಸಿ.",
+  "remTipEarly": "ಬೇಗ ನವೀಕರಿಸುವುದು ನಿಮ್ಮನ್ನು ಸುರಕ್ಷಿತವಾಗಿರಿಸುತ್ತದೆ.",
+  "remTipLast": "ಮುಕ್ತಾಯದ ಮೊದಲು ಇದು ನಿಮ್ಮ ಕೊನೆಯ ಜ್ಞಾಪನೆ.",
+  "remTipExpired": "ನವೀಕರಿಸಿ, ಅಥವಾ ಈಗಾಗಲೇ ಮಾಡಿದ್ದರೆ ದಿನಾಂಕವನ್ನು ನವೀಕರಿಸಿ.",
+  "remStartBody": "\"{recordName}\" ನವೀಕರಣ ಆರಂಭಿಸುವ ಸಮಯ ಬಂದಿದೆ. ಅದು {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ, ಆದ್ದರಿಂದ ಈಗ ಆರಂಭಿಸಿದರೆ ನಿಮಗೆ ಸಾಕಷ್ಟು ಸಮಯವಿರುತ್ತದೆ.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) ನವೀಕರಣ ಆರಂಭಿಸುವ ಸಮಯ ಬಂದಿದೆ. ಅದು {date} ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ, ಆದ್ದರಿಂದ ಈಗ ಆರಂಭಿಸಿದರೆ ಸಾಕಷ್ಟು ಸಮಯವಿರುತ್ತದೆ.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "ಮುಕ್ತಾಯ ಜ್ಞಾಪನೆಗಳು",
+  "notifChannelDescription": "ನಿಮ್ಮ ದಾಖಲೆಗಳು ಮುಕ್ತಾಯಗೊಳ್ಳುವ ಮೊದಲು ಜ್ಞಾಪನೆಗಳು",
+  "notifTestTitle": "ಪರೀಕ್ಷಾ ಅಧಿಸೂಚನೆ",
+  "notifTestBody": "Vaultara ಜ್ಞಾಪನೆಗಳು ಹೀಗೆ ಬರುತ್ತವೆ.",
+  "notifTestAction": "ಪರೀಕ್ಷಾ ಅಧಿಸೂಚನೆ ಕಳುಹಿಸಿ",
+  "notifTestSubtitle": "ಜ್ಞಾಪನೆಗಳು ಈ ಫೋನ್‌ಗೆ ತಲುಪುತ್ತವೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+  "notifTestSent": "ಪರೀಕ್ಷೆ ಕಳುಹಿಸಲಾಗಿದೆ. ಕೆಲವು ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಬರಬೇಕು.",
+  "notifAfterExpiryTitle": "ದಾಖಲೆ ಮುಕ್ತಾಯಗೊಂಡ ನಂತರ ನೆನಪಿಸಿ",
+  "notifAfterExpirySubtitle": "3 ಮತ್ತು 14 ದಿನಗಳ ನಂತರ, ನವೀಕರಿಸದಿದ್ದರೆ",
+  "notifWeeklyTitle": "ಸೋಮವಾರದ ಸಾರಾಂಶ",
+  "notifWeeklySubtitle": "ಆ ವಾರ ಏನಾದರೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವಾಗ ಸೋಮವಾರ ಬೆಳಿಗ್ಗೆ ಒಂದು ಸಂದೇಶ",
+  "notifPushSection": "ಕುಟುಂಬ ಮತ್ತು ಅಪ್‌ಡೇಟ್‌ಗಳು",
+  "notifHouseholdTitle": "ಹಂಚಿದ ದಾಖಲೆಗಳು",
+  "notifHouseholdSubtitle": "ಹಂಚಿದ ದಾಖಲೆ ಮುಕ್ತಾಯಕ್ಕೆ ಹತ್ತಿರವಿದ್ದು ಯಾರೂ ನವೀಕರಿಸದಿದ್ದಾಗ",
+  "notifUpdatesTitle": "ನೀವು ಕೇಳಿದ ಅಪ್‌ಡೇಟ್‌ಗಳು",
+  "notifUpdatesSubtitle": "ಯಾರಾದರೂ ದಾಖಲೆಯ ಹೊಸ ವಿವರಗಳನ್ನು ಕಳುಹಿಸಿದಾಗ",
+  "notifSecurityNote": "ನಿಮ್ಮ ಖಾತೆಗೆ ಹೊಸ ಸೈನ್-ಇನ್‌ಗಳ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಯಾವಾಗಲೂ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.",
+  "notifIosHelpTitle": "ಜ್ಞಾಪನೆಗಳು ಬರುತ್ತಿಲ್ಲವೇ?",
+  "notifIosHelpSubtitle": "ನಿಮ್ಮ iPhone ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ",
+  "notifIosHelpStep1": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ನಂತರ ಅಧಿಸೂಚನೆಗಳು, ನಂತರ Vaultara ತೆರೆಯಿರಿ, ಮತ್ತು ಅಧಿಸೂಚನೆಗಳನ್ನು ಅನುಮತಿಸಿ ಆನ್ ಮಾಡಿ.",
+  "notifIosHelpStep2": "ಲಾಕ್ ಸ್ಕ್ರೀನ್, ಅಧಿಸೂಚನಾ ಕೇಂದ್ರ ಮತ್ತು ಬ್ಯಾನರ್‌ಗಳನ್ನು ಆನ್ ಮಾಡಿ.",
+  "notifIosHelpStep3": "ನೀವು ಫೋಕಸ್ ಬಳಸಿದರೆ, ಅನುಮತಿಸಿದ ಆ್ಯಪ್‌ಗಳಿಗೆ Vaultara ಸೇರಿಸಿ.",
+  "notifIosHelpStep4": "ಕೆಲವು ವಾರಗಳಿಗೊಮ್ಮೆ Vaultara ತೆರೆಯಿರಿ. iPhone ಮುಂದಿನ ಸೀಮಿತ ಸಂಖ್ಯೆಯ ಜ್ಞಾಪನೆಗಳನ್ನು ಮಾತ್ರ ಇಡುತ್ತದೆ, ಮತ್ತು ಆ್ಯಪ್ ತೆರೆದಾಗ ಮುಂದಿನವು ನಿಗದಿಯಾಗುತ್ತವೆ.",
+  "homeNextUpEmpty": "ಶೀಘ್ರದಲ್ಲಿ ಯಾವುದೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದಿಲ್ಲ. ಎಲ್ಲವೂ ಸಿದ್ಧವಾಗಿದೆ.",
+  "homeDueSoonChip": "{count, plural, one{30 ದಿನಗಳಲ್ಲಿ {count} ಬಾಕಿ} other{30 ದಿನಗಳಲ್ಲಿ {count} ಬಾಕಿ}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "ಪಿನ್ ಮಾಡಿದ ವರ್ಗಗಳು"
 }

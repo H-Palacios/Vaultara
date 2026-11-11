@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "È un piacere averti qui. Vaultara ti aiuta a organizzare date e record importanti in un unico luogo sicuro.",
   "homeWelcomeSubtitleBack": "È bello rivederti. Vaultara è pronta ogni volta che vuoi rivedere le tue date e i tuoi record importanti.",
   "homeWelcomeTitle": "Benvenuto",
-  "summaryAllCaption": "Monitorati in Vaultara",
-  "summaryExpiredTitle": "Scaduto",
-  "summaryExpiredCaption": "Data di scadenza superata",
   "editorNotes": "Note",
   "editorReminderNone": "Nessun promemoria",
   "editorReminderOnExpiry": "Il giorno della scadenza",
@@ -192,7 +189,6 @@
   "addRecord": "Aggiungi record",
   "noRecordsYet": "Nessun record presente.",
   "deleteRecordTitle": "Elimina record",
-  "summaryAllRecordsTitle": "Tutti i record",
   "noGroupFound": "Nessun gruppo ancora",
   "groupLabel": "{count, plural, one{{count} gruppo} other{{count} gruppi}}",
   "recordsLabel": "{count, plural, one{{count} record} other{{count} record}}",
@@ -442,7 +438,7 @@
   "addNotesHint": "Aggiungi note (opzionale)",
   "expiryTimelineTitle": "Cronologia scadenze",
   "expiryTimelineSubtitle": "Tocca un mese per vedere i record in scadenza in quel mese",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 record} other{{count} record}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} record} other{{count} record}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -450,10 +446,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "In Scadenza",
-  "summaryUpcomingCaption": "Entro 30 giorni",
-  "summaryUrgentTitle": "Urgente",
-  "summaryUrgentCaption": "Entro 7 giorni",
   "profileHeaderTitle": "Profilo",
   "profileTutorialsTitle": "Tutorial",
   "profileTutorialsSubtitle": "Sfoglia i Tutorial dell'App",
@@ -485,7 +477,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Nessun promemoria",
   "reminderOnExpiry": "Alla data di scadenza",
-  "reminderDaysBefore": "{days, plural, one{1 giorno prima} other{{days} giorni prima}}",
+  "reminderDaysBefore": "{days, plural, one{{days} giorno prima} other{{days} giorni prima}}",
   "reminderCustomDaysTitle": "Inserisci giorni personalizzati",
   "reminderCascadeTitle": "Promemoria a cascata",
   "reminderCascadeSubtitle": "Ricevi più notifiche prima che un record scada",
@@ -516,16 +508,16 @@
   "smartInsightNoRecordsHeading": "Aggiungi il tuo primo record",
   "smartInsightNoRecordsBody": "Inizia a monitorare i tuoi record e Vaultara mostrerà qui le analisi intelligenti.",
   "smartInsightExpiresTodaySingleBody": "{name} scade oggi. Se lo hai già rinnovato, aggiorna la data qui.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} scadono oggi.} =1{{names} e 1 altro scadono oggi.} other{{names} e altri {extra} scadono oggi.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} scadono oggi.} =1{{names} e {extra} altro scadono oggi.} other{{names} e altri {extra} scadono oggi.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} scade domani e non ha un promemoria. Impostane uno per non dimenticarlo.} other{{name} scade il {date} e non ha un promemoria. Impostane uno per non dimenticarlo.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} scade il {dateA} e {b} il {dateB}, all'incirca nello stesso periodo. È facile dimenticarne uno quando due scadenze sono così vicine.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} e {c} scadono entro il {lastDate}, all'incirca nello stesso periodo. È facile dimenticarne uno quando diverse scadenze sono così vicine.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} e 1 altro record scadono entro il {lastDate}, all'incirca nello stesso periodo. È facile dimenticarne uno quando diverse scadenze sono così vicine.} other{{a}, {b} e altri {extra} record scadono entro il {lastDate}, all'incirca nello stesso periodo. È facile dimenticarne uno quando diverse scadenze sono così vicine.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} e {extra} altro record scadono entro il {lastDate}, all'incirca nello stesso periodo. È facile dimenticarne uno quando diverse scadenze sono così vicine.} other{{a}, {b} e altri {extra} record scadono entro il {lastDate}, all'incirca nello stesso periodo. È facile dimenticarne uno quando diverse scadenze sono così vicine.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Nulla scade domani. La prossima scadenza è il {date}.} other{Nulla scade nei prossimi {days} giorni. La prossima scadenza è il {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 dei tuoi record nella categoria {category} scade il {date}. È facile che sfugga.} other{{count} dei tuoi record nella categoria {category} scadono entro il {date}. È facile dimenticarne uno quando sono raggruppati così.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 prossima scadenza è coperta da un promemoria. Nient'altro richiede la tua attenzione.} other{{count} prossime scadenze sono coperte da promemoria. Nient'altro richiede la tua attenzione.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} dei tuoi record nella categoria {category} scade il {date}. È facile che sfugga.} other{{count} dei tuoi record nella categoria {category} scadono entro il {date}. È facile dimenticarne uno quando sono raggruppati così.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} prossima scadenza è coperta da un promemoria. Nient'altro richiede la tua attenzione.} other{{count} prossime scadenze sono coperte da promemoria. Nient'altro richiede la tua attenzione.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Tutto aggiornato. Al momento nulla richiede la tua attenzione.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Al momento nulla è urgente, ma 1 prossima scadenza non ha ancora un promemoria.} other{Al momento nulla è urgente, ma {count} prossime scadenze non hanno ancora un promemoria.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Al momento nulla è urgente, ma {count} prossima scadenza non ha ancora un promemoria.} other{Al momento nulla è urgente, ma {count} prossime scadenze non hanno ancora un promemoria.}}",
   "smartInsightCloseExpiriesHeading": "Scadono all'incirca nello stesso periodo",
   "plansHeadline": "Ottieni il massimo da Vaultara",
   "plansSubhead": "Record illimitati, gruppi personalizzati e promemoria impostati esattamente come desideri.",
@@ -612,7 +604,7 @@
   "reminderCascadeRemoveStep": "Rimuovi",
   "reminderCascadeDuplicate": "Un altro promemoria utilizza già questo giorno",
   "reminderCascadeOutOfRange": "Inserisci un valore compreso tra {min} e {max} giorni",
-  "reminderCascadeStepLabel": "Promemoria {position}: {days, plural, =1{1 giorno} other{{days} giorni}} prima",
+  "reminderCascadeStepLabel": "Promemoria {position}: {days, plural, =1{{days} giorno} other{{days} giorni}} prima",
   "expiryTimelineNotReady": "La tua cronologia apparirà non appena avrai record in scadenza in alcuni mesi diversi.",
   "verifyEmailResendIn": "Reinvia tra {seconds} s",
   "verifyEmailSpamHint": "Non c'è? Controlla la cartella spam o della posta indesiderata.",
@@ -621,13 +613,10 @@
   "verifyEmailDiscardBody": "Questo account non è verificato. Uscendo ora verrà rimosso e potrai registrarti di nuovo con qualsiasi indirizzo email.",
   "verifyEmailDiscardAction": "Elimina",
   "verifyEmailKeepWaiting": "Continua ad attendere",
-  "expiringBadge": "{count, plural, =1{1 in scadenza} other{{count} in scadenza}}",
+  "expiringBadge": "{count, plural, =1{{count} in scadenza} other{{count} in scadenza}}",
   "noRecordsToday": "Niente scade oggi",
   "noRecordsTomorrow": "Niente scade domani",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} scade oggi} =1{{recordName} scade domani} other{{recordName} scade tra {days} giorni}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, il tuo {recordName} scade oggi. L'hai già rinnovato? Aggiorna la data di scadenza.} =1{{firstName}, il tuo {recordName} scade domani. Rinnovalo ora per evitare che scada.} other{{firstName}, il tuo {recordName} scade il {date}. Rinnovarlo in anticipo ti mantiene coperto.}}",
   "cascadeFinalStepTitle": "Ultimo promemoria: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, il tuo {recordName} scade {days, plural, =1{domani} other{tra {days} giorni, il {date}}}. Questo è il tuo ultimo promemoria, rinnovalo o aggiorna la data.",
   "notificationsTitle": "Notifiche",
   "notificationsProfileEnabledSubtitle": "I promemoria arrivano alle {time}.",
   "notificationsProfileDisabledSubtitle": "Le notifiche sono disattivate.",
@@ -1354,7 +1343,7 @@
   "photoLockTurnOn": "Attiva le foto cifrate",
   "photoLockStatusOn": "Le foto cifrate sono attive",
   "photoLockStatusOnBody": "Le nuove foto vengono cifrate su questo telefono prima del caricamento.",
-  "photoLockPendingTitle": "{count, plural, one{1 foto non è ancora cifrata} other{{count} foto non sono ancora cifrate}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} foto non è ancora cifrata} other{{count} foto non sono ancora cifrate}}",
   "photoLockPendingBody": "Le foto aggiunte prima di attivare questa funzione sono ancora archiviate in modo normale.",
   "photoLockEncryptExisting": "Cifra le mie foto esistenti",
   "photoLockKeepOpen": "Tieni aperto Vaultara finché non ha finito.",
@@ -1391,7 +1380,7 @@
   "photoLockSetupFailed": "Non siamo riusciti ad attivare le foto cifrate. Controlla la connessione e riprova.",
   "photoLockAlreadyOn": "Le foto cifrate sono già attive per il tuo account. Inserisci la chiave di recupero per usarle su questo telefono.",
   "photoLockEncryptExistingTitle": "Cifrare le foto esistenti?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Hai 1 foto non ancora cifrata. Possiamo cifrarla ora.} other{Hai {count} foto non ancora cifrate. Possiamo cifrarle ora.}} Tieni aperto Vaultara finché non ha finito.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Hai {count} foto non ancora cifrata. Possiamo cifrarla ora.} other{Hai {count} foto non ancora cifrate. Possiamo cifrarle ora.}} Tieni aperto Vaultara finché non ha finito.",
   "photoLockEncryptNow": "Cifra ora",
   "photoLockEntryBody": "Inserisci la chiave di recupero che hai salvato quando hai attivato le foto cifrate. Trattini e spazi sono facoltativi.",
   "photoLockEntryLabel": "Chiave di recupero",
@@ -1400,8 +1389,8 @@
   "photoLockUnlocked": "Le tue foto sono sbloccate su questo telefono.",
   "photoLockInvalidFormat": "Non sembra una chiave di recupero. Controlla ogni carattere e riprova.",
   "photoLockWrongKey": "Questa chiave di recupero non corrisponde. Controllala e riprova.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Troppi tentativi. Attendi 1 secondo e riprova.} other{Troppi tentativi. Attendi {seconds} secondi e riprova.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Troppi tentativi. Attendi 1 minuto e riprova.} other{Troppi tentativi. Attendi {minutes} minuti e riprova.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Troppi tentativi. Attendi {seconds} secondo e riprova.} other{Troppi tentativi. Attendi {seconds} secondi e riprova.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Troppi tentativi. Attendi {minutes} minuto e riprova.} other{Troppi tentativi. Attendi {minutes} minuti e riprova.}}",
   "photoLockOffline": "Non siamo riusciti a raggiungere Vaultara. Controlla la connessione e riprova.",
   "photoLockNotSetUp": "Le foto cifrate non sono attive per il tuo account.",
   "photoLockUnlockFailed": "Qualcosa è andato storto. Riprova.",
@@ -1657,13 +1646,13 @@
   "dailyDigestSwitchSubtitle": "Ricevi una notifica all'ora del promemoria con tutto ciò che scade quel giorno.",
   "dailyDigestTurnedOn": "I tuoi promemoria ora arrivano in un unico riepilogo giornaliero.",
   "dailyDigestTurnedOff": "I promemoria separati per ogni record sono di nuovo attivi.",
-  "dailyDigestTitle": "{count, plural, one{1 record richiede la tua attenzione} other{{count} record richiedono la tua attenzione}}",
+  "dailyDigestTitle": "{count, plural, one{{count} record richiede la tua attenzione} other{{count} record richiedono la tua attenzione}}",
   "dailyDigestBody": "In arrivo: {names}.",
   "dailyDigestBodyMore": "In arrivo: {names} e altri {count}.",
   "dailyDigestLockedRecord": "un record bloccato",
   "renewReasonRepeat": "{months, plural, one{In base alla tua impostazione di ripetizione ogni mese} other{In base alla tua impostazione di ripetizione ogni {months} mesi}}",
   "renewReasonHistory": "{count, plural, one{In base al tuo ultimo rinnovo} other{In base ai tuoi ultimi {count} rinnovi}}",
-  "renewReasonTypical": "{years, plural, one{Di solito valido 1 anno} other{Di solito valido {years} anni}}",
+  "renewReasonTypical": "{years, plural, one{Di solito valido {years} anno} other{Di solito valido {years} anni}}",
   "renewChangeHint": "Tocca la data per cambiarla.",
   "renewPickDate": "Scegli la nuova data di scadenza",
   "renewPickDateHint": "Scegli la data indicata sul tuo nuovo documento.",
@@ -2139,8 +2128,8 @@
   "lifePlanAutoChanged": "Vaultara ha visto che questo record è cambiato, quindi è segnato come fatto.",
   "lifePlanAutoAdded": "Aggiunto dopo l'inizio di questo piano.",
   "lifePlanProgress": "{done} di {total} fatti",
-  "lifePlanDaysToGo": "{count, plural, =1{Manca 1 giorno} other{Mancano {count} giorni}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 giorno fa} other{{count} giorni fa}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Manca {count} giorno} other{Mancano {count} giorni}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} giorno fa} other{{count} giorni fa}}",
   "lifePlanAllDone": "È tutto fatto. Puoi segnare il piano come completato.",
   "lifePlanFinish": "Segna come completato",
   "lifePlanReopen": "Riaprilo",
@@ -2269,7 +2258,7 @@
   "lifePlanReadAloudUnavailable": "La lettura ad alta voce non è disponibile su questo telefono.",
   "lifePlanProofPack": "Crea un pacchetto di prova",
   "lifePlanOpenFamily": "Apri Famiglia",
-  "lifePlanRemoved": "{count, plural, =1{1 documento che hai eliminato conta come disdetto.} other{{count} documenti che hai eliminato contano come disdetti.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} documento che hai eliminato conta come disdetto.} other{{count} documenti che hai eliminato contano come disdetti.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2327,7 +2316,7 @@
   "lostWalletCheckupBody": "Preparati ora, così non dimentichi nulla se si perde.",
   "lostWalletCheckupAllGood": "Tutto pronto. Se mai si perdesse, sei preparato.",
   "lostWalletSetPlaceBody": "Apri una carta o un documento e scegli dove lo tieni. Fallo per carta d'identità, patente e carte.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 elemento non ha foto. Con una foto si sostituisce prima.} other{{count} elementi non hanno foto. Con le foto si sostituiscono prima.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} elemento non ha foto. Con una foto si sostituisce prima.} other{{count} elementi non hanno foto. Con le foto si sostituiscono prima.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2335,7 +2324,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 carta non ha il numero per carta smarrita.} other{{count} carte non hanno il numero per carta smarrita.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} carta non ha il numero per carta smarrita.} other{{count} carte non hanno il numero per carta smarrita.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2435,7 +2424,7 @@
     }
   },
   "lostWalletReportNoCase": "Numero di denuncia: non ancora sporta",
-  "lostWalletReportCount": "{count, plural, =1{1 elemento elencato sotto} other{{count} elementi elencati sotto}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} elemento elencato sotto} other{{count} elementi elencati sotto}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2470,7 +2459,7 @@
   "tutorialsGroupTravelFamily": "Viaggi e famiglia",
   "tutorialsGroupEmergencies": "Eventi della vita ed emergenze",
   "tutorialsGroupPaid": "Funzioni a pagamento",
-  "tutorialsSteps": "{count, plural, =1{1 passaggio} other{{count} passaggi}}",
+  "tutorialsSteps": "{count, plural, =1{{count} passaggio} other{{count} passaggi}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2866,5 +2855,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} scade oggi",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} scade domani",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} scade tra {days} giorno} other{{recordName} scade tra {days} giorni}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} è scaduto",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Un record bloccato richiede la tua attenzione",
+  "remLockedBody": "La sua data è il {date}. Sblocca Vaultara per vedere di quale record si tratta.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Il tuo record \"{recordName}\" scade oggi.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Il tuo record \"{recordName}\" scade domani.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Il tuo record \"{recordName}\" scade il {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, il tuo record \"{recordName}\" scade oggi.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, il tuo record \"{recordName}\" scade domani.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, il tuo record \"{recordName}\" scade il {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Il record \"{recordName}\" di {person} scade oggi.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Il record \"{recordName}\" di {person} scade domani.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Il record \"{recordName}\" di {person} scade il {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Il tuo record \"{recordName}\" è scaduto il {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Il record \"{recordName}\" di {person} è scaduto il {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Già rinnovato? Aggiorna la data.",
+  "remTipTomorrow": "Rinnovalo ora così non scade.",
+  "remTipEarly": "Rinnovare in anticipo ti mantiene coperto.",
+  "remTipLast": "Questo è il tuo ultimo promemoria prima della scadenza.",
+  "remTipExpired": "Rinnovalo, o aggiorna la data se l'hai già fatto.",
+  "remStartBody": "È ora di iniziare a rinnovare \"{recordName}\". Scade il {date}, quindi iniziando ora avrai tutto il tempo necessario.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "È ora di iniziare a rinnovare \"{recordName}\" di {person}. Scade il {date}, quindi iniziando ora c'è tutto il tempo necessario.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Promemoria di scadenza",
+  "notifChannelDescription": "Promemoria prima che i tuoi record scadano",
+  "notifTestTitle": "Notifica di prova",
+  "notifTestBody": "I promemoria di Vaultara arrivano così.",
+  "notifTestAction": "Invia una notifica di prova",
+  "notifTestSubtitle": "Verifica che i promemoria arrivino su questo telefono",
+  "notifTestSent": "Prova inviata. Dovrebbe arrivare tra pochi secondi.",
+  "notifAfterExpiryTitle": "Ricordamelo dopo la scadenza",
+  "notifAfterExpirySubtitle": "3 e 14 giorni dopo, se non è stato rinnovato",
+  "notifWeeklyTitle": "Riepilogo del lunedì",
+  "notifWeeklySubtitle": "Un avviso il lunedì mattina quando qualcosa scade in settimana",
+  "notifPushSection": "Famiglia e aggiornamenti",
+  "notifHouseholdTitle": "Record condivisi",
+  "notifHouseholdSubtitle": "Quando un record condiviso sta per scadere e nessuno l'ha rinnovato",
+  "notifUpdatesTitle": "Aggiornamenti richiesti",
+  "notifUpdatesSubtitle": "Quando qualcuno invia i nuovi dati di un record",
+  "notifSecurityNote": "Gli avvisi di nuovi accessi al tuo account vengono sempre inviati.",
+  "notifIosHelpTitle": "Non ricevi i promemoria?",
+  "notifIosHelpSubtitle": "Controlla le impostazioni dell'iPhone",
+  "notifIosHelpStep1": "Apri Impostazioni, poi Notifiche, poi Vaultara, e attiva Consenti notifiche.",
+  "notifIosHelpStep2": "Attiva Schermata di blocco, Centro Notifiche e Banner.",
+  "notifIosHelpStep3": "Se usi una modalità Full immersion, aggiungi Vaultara alle app consentite.",
+  "notifIosHelpStep4": "Apri Vaultara ogni poche settimane. L'iPhone conserva solo un numero limitato di promemoria futuri, e aprire l'app pianifica i successivi.",
+  "homeNextUpEmpty": "Niente in scadenza a breve. È tutto a posto.",
+  "homeDueSoonChip": "{count, plural, one{{count} in scadenza entro 30 giorni} other{{count} in scadenza entro 30 giorni}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Categorie fissate"
 }

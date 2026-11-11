@@ -360,15 +360,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Sizi tekrar görmek güzel. Vaultara, önemli tarihlerinizi ve kayıtlarınızı gözden geçirmek istediğinizde her zaman hazırdır.';
 
   @override
-  String get summaryAllCaption => 'Vaultara’da izleniyor';
-
-  @override
-  String get summaryExpiredTitle => 'Süresi dolmuş';
-
-  @override
-  String get summaryExpiredCaption => 'Son kullanma tarihi geçti';
-
-  @override
   String get editorNotes => 'Notlar';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Kaydı sil';
-
-  @override
-  String get summaryAllRecordsTitle => 'Tüm kayıtlar';
 
   @override
   String get noGroupFound => 'Henüz grup yok';
@@ -829,22 +817,10 @@ class AppLocalizationsTr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kayıt',
-      one: '1 kayıt',
+      one: '$count kayıt',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Yaklaşan';
-
-  @override
-  String get summaryUpcomingCaption => '30 gün içinde';
-
-  @override
-  String get summaryUrgentTitle => 'Acil';
-
-  @override
-  String get summaryUrgentCaption => '7 gün içinde';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -945,7 +921,7 @@ class AppLocalizationsTr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days gün önce',
-      one: '1 gün önce',
+      one: '$days gün önce',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsTr extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names ve $extra kayıt daha bugün sona eriyor.',
-      one: '$names ve 1 kayıt daha bugün sona eriyor.',
+      one: '$names ve $extra kayıt daha bugün sona eriyor.',
       zero: '$names süresi bugün doluyor.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsTr extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b ve $extra kayıt daha $lastDate tarihine kadar sona eriyor; yani hemen hemen aynı zamanda. Birkaçı birbirine bu kadar yakınken birini unutmak kolay olabilir.',
-      one: '$a, $b ve 1 kayıt daha $lastDate tarihine kadar sona eriyor; yani hemen hemen aynı zamanda. Birkaçı birbirine bu kadar yakınken birini unutmak kolay olabilir.',
+      one: '$a, $b ve $extra kayıt daha $lastDate tarihine kadar sona eriyor; yani hemen hemen aynı zamanda. Birkaçı birbirine bu kadar yakınken birini unutmak kolay olabilir.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsTr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$category kategorisindeki $count kaydınızın süresi $date tarihine kadar doluyor. Bu şekilde gruplandıklarında birini unutmak kolay olabilir.',
-      one: '$category kategorisindeki 1 kaydınızın süresi $date tarihinde doluyor. Gözden kaçması kolay olabilir.',
+      one: '$category kategorisindeki $count kaydınızın süresi $date tarihinde doluyor. Gözden kaçması kolay olabilir.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsTr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Yaklaşan $count bitiş tarihi hatırlatıcılarla korunuyor. İlginizi gerektiren başka bir şey yok.',
-      one: 'Yaklaşan 1 bitiş tarihi hatırlatıcıyla korunuyor. İlginizi gerektiren başka bir şey yok.',
+      one: 'Yaklaşan $count bitiş tarihi hatırlatıcıyla korunuyor. İlginizi gerektiren başka bir şey yok.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsTr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Şu anda acil bir durum yok, ancak yaklaşan $count kaydın henüz hatırlatıcıları ayarlanmamış.',
-      one: 'Şu anda acil bir durum yok, ancak yaklaşan 1 kaydın henüz hatırlatıcısı ayarlanmamış.',
+      one: 'Şu anda acil bir durum yok, ancak yaklaşan $count kaydın henüz hatırlatıcısı ayarlanmamış.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsTr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days gün',
-      one: '1 gün',
+      one: '$days gün',
     );
     return 'Hatırlatıcı $position: $_temp0 önce';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsTr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kaydın süresi dolmak üzere',
-      one: '1 kaydın süresi dolmak üzere',
+      one: '$count kaydın süresi dolmak üzere',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get noRecordsTomorrow => 'Yarın süresi dolan hiçbir şey yok';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName kaydının süresi $days gün içinde doluyor',
-      one: '$recordName kaydının süresi yarın doluyor',
-      zero: '$recordName kaydının süresi bugün doluyor',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName kaydınızın süresi $date tarihinde doluyor. Erken yenilemek kesintisiz geçerlilik sağlar.',
-      one: '$firstName, $recordName kaydınızın süresi yarın doluyor. Geçerliliğini kaybetmeden şimdi yenileyin.',
-      zero: '$firstName, $recordName kaydınızın süresi bugün doluyor. Yenilediniz mi? Bitiş tarihini güncelleyin.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Son hatırlatma: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days gün içinde, $date tarihinde',
-      one: 'yarın',
-    );
-    return '$firstName, $recordName kaydınızın süresi $_temp0 doluyor. Bu son hatırlatmanızdır, yenileyin veya tarihini güncelleyin.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsTr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count fotoğraf henüz şifrelenmedi',
-      one: '1 fotoğraf henüz şifrelenmedi',
+      one: '$count fotoğraf henüz şifrelenmedi',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsTr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Henüz şifrelenmemiş $count fotoğrafınız var. Şimdi şifreleyebiliriz.',
-      one: 'Henüz şifrelenmemiş 1 fotoğrafınız var. Şimdi şifreleyebiliriz.',
+      one: 'Henüz şifrelenmemiş $count fotoğrafınız var. Şimdi şifreleyebiliriz.',
     );
     return '$_temp0 Bu işlem bitene kadar Vaultara uygulamasını açık tutun.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsTr extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Çok fazla deneme yapıldı. Lütfen $seconds saniye bekleyip tekrar deneyin.',
-      one: 'Çok fazla deneme yapıldı. Lütfen 1 saniye bekleyip tekrar deneyin.',
+      one: 'Çok fazla deneme yapıldı. Lütfen $seconds saniye bekleyip tekrar deneyin.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsTr extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Çok fazla deneme yapıldı. Lütfen $minutes dakika bekleyip tekrar deneyin.',
-      one: 'Çok fazla deneme yapıldı. Lütfen 1 dakika bekleyip tekrar deneyin.',
+      one: 'Çok fazla deneme yapıldı. Lütfen $minutes dakika bekleyip tekrar deneyin.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsTr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count kayıt ilginizi bekliyor',
-      one: '1 kayıt ilginizi bekliyor',
+      one: '$count kayıt ilginizi bekliyor',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsTr extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Genellikle $years yıl geçerlidir',
-      one: 'Genellikle 1 yıl geçerlidir',
+      one: 'Genellikle $years yıl geçerlidir',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsTr extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Hatırlatıcı: $name $date tarihinde doluyor';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName bugün sona eriyor';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName yarın sona eriyor';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days gün içinde sona eriyor',
+      one: '$recordName $days gün içinde sona eriyor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName süresi doldu';
+  }
+
+  @override
+  String get remLockedTitle => 'Kilitli bir kayıt ilginizi bekliyor';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Tarihi $date. Hangi kayıt olduğunu görmek için Vaultara\'nın kilidini açın.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '\"$recordName\" kaydınızın süresi bugün doluyor.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '\"$recordName\" kaydınızın süresi yarın doluyor.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '\"$recordName\" kaydınızın süresi $date tarihinde doluyor.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, \"$recordName\" kaydınızın süresi bugün doluyor.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, \"$recordName\" kaydınızın süresi yarın doluyor.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, \"$recordName\" kaydınızın süresi $date tarihinde doluyor.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: \"$recordName\" kaydının süresi bugün doluyor.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: \"$recordName\" kaydının süresi yarın doluyor.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" kaydının süresi $date tarihinde doluyor.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '\"$recordName\" kaydınızın süresi $date tarihinde doldu.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" kaydının süresi $date tarihinde doldu.';
+  }
+
+  @override
+  String get remTipToday => 'Zaten yenilediniz mi? Tarihini güncelleyin.';
+
+  @override
+  String get remTipTomorrow => 'Süresi dolmasın diye şimdi yenileyin.';
+
+  @override
+  String get remTipEarly => 'Erken yenilemek sizi güvende tutar.';
+
+  @override
+  String get remTipLast => 'Bu, süresi dolmadan önceki son hatırlatmanız.';
+
+  @override
+  String get remTipExpired => 'Yenileyin veya zaten yenilediyseniz tarihini güncelleyin.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" kaydını yenilemeye başlama zamanı. Süresi $date tarihinde doluyor, şimdi başlarsanız bolca zamanınız olur.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) kaydını yenilemeye başlama zamanı. Süresi $date tarihinde doluyor, şimdi başlanırsa bolca zaman olur.';
+  }
+
+  @override
+  String get notifChannelName => 'Süre hatırlatmaları';
+
+  @override
+  String get notifChannelDescription => 'Kayıtlarınızın süresi dolmadan önce hatırlatmalar';
+
+  @override
+  String get notifTestTitle => 'Test bildirimi';
+
+  @override
+  String get notifTestBody => 'Vaultara hatırlatmaları böyle gelir.';
+
+  @override
+  String get notifTestAction => 'Test bildirimi gönder';
+
+  @override
+  String get notifTestSubtitle => 'Hatırlatmaların bu telefona ulaştığını kontrol edin';
+
+  @override
+  String get notifTestSent => 'Test gönderildi. Birkaç saniye içinde gelmeli.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Bir kaydın süresi dolduktan sonra hatırlat';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 ve 14 gün sonra, yenilenmediyse';
+
+  @override
+  String get notifWeeklyTitle => 'Pazartesi özeti';
+
+  @override
+  String get notifWeeklySubtitle => 'O hafta bir şeyin süresi dolacaksa pazartesi sabahı bir not';
+
+  @override
+  String get notifPushSection => 'Hane ve güncellemeler';
+
+  @override
+  String get notifHouseholdTitle => 'Paylaşılan kayıtlar';
+
+  @override
+  String get notifHouseholdSubtitle => 'Paylaşılan bir kaydın süresi dolmak üzereyken ve kimse yenilemediğinde';
+
+  @override
+  String get notifUpdatesTitle => 'İstediğiniz güncellemeler';
+
+  @override
+  String get notifUpdatesSubtitle => 'Biri bir kaydın yeni bilgilerini gönderdiğinde';
+
+  @override
+  String get notifSecurityNote => 'Hesabınıza yeni girişlerle ilgili uyarılar her zaman gönderilir.';
+
+  @override
+  String get notifIosHelpTitle => 'Hatırlatma gelmiyor mu?';
+
+  @override
+  String get notifIosHelpSubtitle => 'iPhone ayarlarınızı kontrol edin';
+
+  @override
+  String get notifIosHelpStep1 => 'Ayarlar\'ı, sonra Bildirimler\'i, sonra Vaultara\'yı açın ve Bildirimlere İzin Ver\'i açın.';
+
+  @override
+  String get notifIosHelpStep2 => 'Kilitli Ekran, Bildirim Merkezi ve Afişler\'i açın.';
+
+  @override
+  String get notifIosHelpStep3 => 'Odak kullanıyorsanız Vaultara\'yı izin verilen uygulamalara ekleyin.';
+
+  @override
+  String get notifIosHelpStep4 => 'Vaultara\'yı birkaç haftada bir açın. iPhone ileriye dönük yalnızca sınırlı sayıda hatırlatma tutar ve uygulamayı açmak sonrakileri planlar.';
+
+  @override
+  String get homeNextUpEmpty => 'Yakında süresi dolan bir şey yok. Her şey hazır.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 gün içinde $count kayıt',
+      one: '30 gün içinde $count kayıt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Sabitlenen kategoriler';
 }

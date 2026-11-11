@@ -360,15 +360,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Рады видеть вас снова. Vaultara всегда рядом для просмотра ваших важных дат.';
 
   @override
-  String get summaryAllCaption => 'Отслеживаются в Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Истекшие';
-
-  @override
-  String get summaryExpiredCaption => 'Срок действия истёк';
-
-  @override
   String get editorNotes => 'Заметки';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Удалить запись';
-
-  @override
-  String get summaryAllRecordsTitle => 'Все записи';
 
   @override
   String get noGroupFound => 'Групп пока нет';
@@ -835,22 +823,10 @@ class AppLocalizationsRu extends AppLocalizations {
       other: '$count записи',
       many: '$count записей',
       few: '$count записи',
-      one: '1 запись',
+      one: '$count запись',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Предстоящие';
-
-  @override
-  String get summaryUpcomingCaption => 'В течение 30 дней';
-
-  @override
-  String get summaryUrgentTitle => 'Срочно';
-
-  @override
-  String get summaryUrgentCaption => 'В течение 7 дней';
 
   @override
   String get profileHeaderTitle => 'Профиль';
@@ -953,7 +929,7 @@ class AppLocalizationsRu extends AppLocalizations {
       other: 'За $days дней',
       many: 'За $days дней',
       few: 'За $days дня',
-      one: 'За 1 день',
+      one: 'За $days день',
     );
     return '$_temp0';
   }
@@ -1056,7 +1032,7 @@ class AppLocalizationsRu extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names и ещё $extra истекают сегодня.',
-      one: '$names и ещё 1 запись истекают сегодня.',
+      one: '$names и ещё $extra запись истекают сегодня.',
       zero: '$names истекают сегодня.',
     );
     return '$_temp0';
@@ -1068,7 +1044,6 @@ class AppLocalizationsRu extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Срок действия $name истекает $date, а напоминание не установлено. Настройте его, чтобы ничего не пропустить.',
-      one: 'Срок действия $name истекает завтра, а напоминание не установлено. Настройте его, чтобы ничего не пропустить.',
     );
     return '$_temp0';
   }
@@ -1089,7 +1064,7 @@ class AppLocalizationsRu extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b и ещё $extra истекают до $lastDate, примерно в одно и то же время. Легко забыть про одну, когда несколько записей так близко.',
-      one: '$a, $b и ещё 1 запись истекают до $lastDate, примерно в одно и то же время. Легко забыть про одну, когда несколько записей так близко.',
+      one: '$a, $b и ещё $extra запись истекают до $lastDate, примерно в одно и то же время. Легко забыть про одну, когда несколько записей так близко.',
     );
     return '$_temp0';
   }
@@ -1113,7 +1088,7 @@ class AppLocalizationsRu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Срок действия ваших $count записей в категории $category истекает до $date. Легко забыть про одну, когда они сгруппированы таким образом.',
-      one: 'Срок действия вашей 1 записи в категории $category истекает $date. Её легко пропустить.',
+      one: 'Срок действия вашей $count записи в категории $category истекает $date. Её легко пропустить.',
     );
     return '$_temp0';
   }
@@ -1140,7 +1115,7 @@ class AppLocalizationsRu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Сейчас нет ничего срочного, но для $count предстоящих записей еще не установлено напоминание.',
-      one: 'Сейчас нет ничего срочного, но для 1 предстоящей записи еще не установлено напоминание.',
+      one: 'Сейчас нет ничего срочного, но для $count предстоящей записи еще не установлено напоминание.',
     );
     return '$_temp0';
   }
@@ -1266,7 +1241,7 @@ class AppLocalizationsRu extends AppLocalizations {
       other: '$days дня',
       many: '$days дней',
       few: '$days дня',
-      one: '1 день',
+      one: '$days день',
     );
     return 'Напоминание $position: за $_temp0 до конца';
   }
@@ -1305,7 +1280,7 @@ class AppLocalizationsRu extends AppLocalizations {
       other: '$count истекают скоро',
       many: '$count истекают скоро',
       few: '$count истекают скоро',
-      one: '1 истекает скоро',
+      one: '$count истекает скоро',
     );
     return '$_temp0';
   }
@@ -1317,49 +1292,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get noRecordsTomorrow => 'Завтра ничего не истекает';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Срок действия «$recordName» истекает через $days дней',
-      many: 'Срок действия «$recordName» истекает через $days дней',
-      few: 'Срок действия «$recordName» истекает через $days дня',
-      one: 'Срок действия «$recordName» истекает через $days день',
-      zero: 'Срок действия «$recordName» истекает сегодня',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, срок действия «$recordName» истекает $date. Досрочное продление гарантирует непрерывную защиту.',
-      many: '$firstName, срок действия «$recordName» истекает $date. Досрочное продление гарантирует непрерывную защиту.',
-      few: '$firstName, срок действия «$recordName» истекает $date. Досрочное продление гарантирует непрерывную защиту.',
-      one: '$firstName, срок действия «$recordName» истекает $date. Досрочное продление гарантирует непрерывную защиту.',
-      zero: '$firstName, срок действия «$recordName» истекает сегодня. Уже продлили? Обновите дату окончания срока действия.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Последнее напоминание: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'через $days дней, $date',
-      many: 'через $days дней, $date',
-      few: 'через $days дня, $date',
-      one: 'через $days день, $date',
-    );
-    return '$firstName, срок действия «$recordName» истекает $_temp0. Это ваше последнее напоминание, продлите его или обновите дату.';
   }
 
   @override
@@ -8450,4 +8384,208 @@ class AppLocalizationsRu extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Напоминание: $name истекает $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'Срок действия «$recordName» истекает сегодня';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'Срок действия «$recordName» истекает завтра';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Срок действия «$recordName» истекает через $days дня',
+      many: 'Срок действия «$recordName» истекает через $days дней',
+      few: 'Срок действия «$recordName» истекает через $days дня',
+      one: 'Срок действия «$recordName» истекает через $days день',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'Срок действия «$recordName» истёк';
+  }
+
+  @override
+  String get remLockedTitle => 'Заблокированная запись требует внимания';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Её дата — $date. Разблокируйте Vaultara, чтобы увидеть, что это за запись.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Срок действия вашей записи «$recordName» истекает сегодня.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Срок действия вашей записи «$recordName» истекает завтра.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Срок действия вашей записи «$recordName» истекает $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, срок действия вашей записи «$recordName» истекает сегодня.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, срок действия вашей записи «$recordName» истекает завтра.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, срок действия вашей записи «$recordName» истекает $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: срок действия записи «$recordName» истекает сегодня.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: срок действия записи «$recordName» истекает завтра.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: срок действия записи «$recordName» истекает $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Срок действия вашей записи «$recordName» истёк $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: срок действия записи «$recordName» истёк $date.';
+  }
+
+  @override
+  String get remTipToday => 'Уже продлили? Обновите дату.';
+
+  @override
+  String get remTipTomorrow => 'Продлите сейчас, чтобы срок не истёк.';
+
+  @override
+  String get remTipEarly => 'Раннее продление гарантирует непрерывную защиту.';
+
+  @override
+  String get remTipLast => 'Это последнее напоминание до окончания срока.';
+
+  @override
+  String get remTipExpired => 'Продлите или обновите дату, если уже продлили.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Пора начинать продлевать «$recordName». Срок истекает $date, так что если начать сейчас, времени будет достаточно.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Пора начинать продлевать запись «$recordName» ($person). Срок истекает $date, так что если начать сейчас, времени будет достаточно.';
+  }
+
+  @override
+  String get notifChannelName => 'Напоминания о сроках';
+
+  @override
+  String get notifChannelDescription => 'Напоминания до окончания срока ваших записей';
+
+  @override
+  String get notifTestTitle => 'Тестовое уведомление';
+
+  @override
+  String get notifTestBody => 'Так выглядят напоминания Vaultara.';
+
+  @override
+  String get notifTestAction => 'Отправить тестовое уведомление';
+
+  @override
+  String get notifTestSubtitle => 'Проверьте, что напоминания приходят на этот телефон';
+
+  @override
+  String get notifTestSent => 'Тест отправлен. Он придёт через несколько секунд.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Напоминать после окончания срока';
+
+  @override
+  String get notifAfterExpirySubtitle => 'Через 3 и 14 дней, если запись не продлена';
+
+  @override
+  String get notifWeeklyTitle => 'Сводка по понедельникам';
+
+  @override
+  String get notifWeeklySubtitle => 'Сообщение в понедельник утром, если на этой неделе что-то истекает';
+
+  @override
+  String get notifPushSection => 'Семья и обновления';
+
+  @override
+  String get notifHouseholdTitle => 'Общие записи';
+
+  @override
+  String get notifHouseholdSubtitle => 'Когда срок общей записи почти истёк, а продлением никто не занялся';
+
+  @override
+  String get notifUpdatesTitle => 'Запрошенные обновления';
+
+  @override
+  String get notifUpdatesSubtitle => 'Когда кто-то присылает новые данные записи';
+
+  @override
+  String get notifSecurityNote => 'Оповещения о новых входах в ваш аккаунт отправляются всегда.';
+
+  @override
+  String get notifIosHelpTitle => 'Не приходят напоминания?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Проверьте настройки iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Откройте «Настройки», затем «Уведомления», затем Vaultara и включите «Допуск уведомлений».';
+
+  @override
+  String get notifIosHelpStep2 => 'Включите «Заблокированный экран», «Центр уведомлений» и «Баннеры».';
+
+  @override
+  String get notifIosHelpStep3 => 'Если вы используете фокусирование, добавьте Vaultara в разрешённые приложения.';
+
+  @override
+  String get notifIosHelpStep4 => 'Открывайте Vaultara раз в несколько недель. iPhone хранит ограниченное число будущих напоминаний, а при открытии приложение планирует следующие.';
+
+  @override
+  String get homeNextUpEmpty => 'В ближайшее время ничего не истекает. Всё в порядке.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count истекают в течение 30 дней',
+      many: '$count истекают в течение 30 дней',
+      few: '$count истекают в течение 30 дней',
+      one: '$count истекает в течение 30 дней',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Закреплённые категории';
 }

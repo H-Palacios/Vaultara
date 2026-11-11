@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Tinutulungan ka ng Vaultara na subaybayan ang mahahalagang petsa ng pag-expire upang walang makaligtaan.",
   "homeWelcomeSubtitleFirst": "Masaya kaming makita ka dito. Tinutulungan ka ng Vaultara na manatiling organisado sa pamamagitan ng pag-iingat ng mahahalagang petsa at rekord sa isang ligtas na lugar.",
   "homeWelcomeSubtitleBack": "Masaya kaming makita kang muli. Nandito ang Vaultara anumang oras na nais mong suriin ang iyong mahahalagang petsa at rekord.",
-  "summaryAllCaption": "Sinusubaybayan sa Vaultara",
-  "summaryExpiredTitle": "Nag-expire na",
-  "summaryExpiredCaption": "Lampas na sa petsa ng expiration",
   "editorNotes": "Mga Tala",
   "editorReminderNone": "Walang paalala",
   "editorReminderOnExpiry": "Sa araw ng pag-expire",
@@ -199,7 +196,6 @@
   "addRecord": "Magdagdag ng rekord",
   "noRecordsYet": "Wala pang mga rekord.",
   "deleteRecordTitle": "Tanggalin ang rekord",
-  "summaryAllRecordsTitle": "Lahat ng rekord",
   "noGroupFound": "Wala pang mga grupo",
   "groupLabel": "{count, plural, one{{count} grupo} other{{count} grupo}}",
   "recordsLabel": "{count, plural, one{{count} rekord} other{{count} na rekord}}",
@@ -449,7 +445,7 @@
   "addNotesHint": "Magdagdag ng tala (opsyonal)",
   "expiryTimelineTitle": "Timeline ng pag-expire",
   "expiryTimelineSubtitle": "I-tap ang isang buwan para makita ang mga record na mag-eexpire sa buwang iyon",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 record} other{{count} record}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} record} other{{count} record}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -457,10 +453,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Nalalapit",
-  "summaryUpcomingCaption": "Sa loob ng 30 araw",
-  "summaryUrgentTitle": "Agarang Asikasuhin",
-  "summaryUrgentCaption": "Sa loob ng 7 araw",
   "profileHeaderTitle": "Profile",
   "profileTutorialsTitle": "Mga Tutorial",
   "profileTutorialsSubtitle": "Tingnan ang mga Tutorial ng App",
@@ -492,7 +484,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Walang paalala",
   "reminderOnExpiry": "Sa petsa ng pag-expire",
-  "reminderDaysBefore": "{days, plural, one{1 araw bago} other{{days} araw bago}}",
+  "reminderDaysBefore": "{days, plural, one{{days} araw bago} other{{days} araw bago}}",
   "reminderCustomDaysTitle": "Ilagay ang custom na araw",
   "reminderCascadeTitle": "Cascade na paalala",
   "reminderCascadeSubtitle": "Tumanggap ng maraming abiso bago mag-expire ang isang rekord",
@@ -523,16 +515,16 @@
   "smartInsightNoRecordsHeading": "Idagdag ang Iyong Unang Record",
   "smartInsightNoRecordsBody": "Simulan ang pagsubaybay sa iyong mga record, at magpapakita ang Vaultara ng mga smart insight dito.",
   "smartInsightExpiresTodaySingleBody": "Mag-eexpire ngayong araw ang {name}. Kung na-renew mo na ito, i-update ang petsa rito.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ay mag-eexpire ngayong araw.} =1{{names} at 1 pa ay mag-eexpire ngayong araw.} other{{names} at {extra} pa ay mag-eexpire ngayong araw.}}",
-  "smartInsightSilentRiskBody": "{days, plural, =1{Mag-eexpire bukas ang {name} at walang paalala. Magtakda ng isa para hindi mo ito makalimutan.} other{Mag-eexpire sa {date} ang {name} at walang paalala. Magtakda ng isa para hindi mo ito makalimutan.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ay mag-eexpire ngayong araw.} =1{{names} at {extra} pa ay mag-eexpire ngayong araw.} other{{names} at {extra} pa ay mag-eexpire ngayong araw.}}",
+  "smartInsightSilentRiskBody": "{days, plural, other{Mag-eexpire sa {date} ang {name} at walang paalala. Magtakda ng isa para hindi mo ito makalimutan.}}",
   "smartInsightCloseExpiriesBodyTwo": "Mag-eexpire ang {a} sa {dateA} at ang {b} sa {dateB}, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang dalawang record ay magkalapit nang ganito.",
   "smartInsightCloseExpiriesBodyThree": "Mag-eexpire ang {a}, {b}, at {c} bago mag-{lastDate}, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang ilang record ay magkalapit nang ganito.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{Mag-eexpire ang {a}, {b}, at 1 pang record bago mag-{lastDate}, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang ilang record ay magkalapit nang ganito.} other{{a}, {b}, at {extra} pang mga record ay mag-eexpire bago mag-{lastDate}, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang ilang record ay magkalapit nang ganito.}}",
-  "smartInsightQuietPeriodBody": "{days, plural, =1{Walang mag-eexpire sa susunod na araw. Ang susunod mong deadline ay sa {date}.} other{Walang mag-eexpire sa susunod na {days} araw. Ang susunod mong deadline ay sa {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Ang 1 sa iyong mga record sa kategoryang {category} ay mag-eexpire sa {date}. Madali itong makaligtaan.} other{Ang {count} sa iyong mga record sa kategoryang {category} ay mag-eexpire bago mag-{date}. Madaling makalimutan ang isa kapag nakagrupo sila nang ganito.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Ang 1 paparating na pag-expire ay may paalala na. Wala nang iba pang kailangan ng iyong atensyon.} other{Ang {count} paparating na mga pag-expire ay may mga paalala na. Wala nang iba pang kailangan ng iyong atensyon.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{Mag-eexpire ang {a}, {b}, at {extra} pang record bago mag-{lastDate}, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang ilang record ay magkalapit nang ganito.} other{{a}, {b}, at {extra} pang mga record ay mag-eexpire bago mag-{lastDate}, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang ilang record ay magkalapit nang ganito.}}",
+  "smartInsightQuietPeriodBody": "{days, plural, other{Walang mag-eexpire sa susunod na {days} araw. Ang susunod mong deadline ay sa {date}.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Ang {count} sa iyong mga record sa kategoryang {category} ay mag-eexpire sa {date}. Madali itong makaligtaan.} other{Ang {count} sa iyong mga record sa kategoryang {category} ay mag-eexpire bago mag-{date}. Madaling makalimutan ang isa kapag nakagrupo sila nang ganito.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Ang {count} paparating na pag-expire ay may paalala na. Wala nang iba pang kailangan ng iyong atensyon.} other{Ang {count} paparating na mga pag-expire ay may mga paalala na. Wala nang iba pang kailangan ng iyong atensyon.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Lahat ay up-to-date. Walang kailangan ng iyong atensyon sa ngayon.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Walang apurahan sa ngayon, ngunit ang 1 paparating na record ay wala pang paalala.} other{Walang apurahan sa ngayon, ngunit ang {count} paparating na mga record ay wala pang paalala.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Walang apurahan sa ngayon, ngunit ang {count} paparating na record ay wala pang paalala.} other{Walang apurahan sa ngayon, ngunit ang {count} paparating na mga record ay wala pang paalala.}}",
   "smartInsightCloseExpiriesHeading": "Mag-eexpire sa Halos Magkaparehong Oras",
   "plansHeadline": "Kunin ang buong Vaultara",
   "plansSubhead": "Walang limitasyong mga record, sarili mong mga grupo, at mga paalala na naka-tune eksakto kung paano mo gusto.",
@@ -619,7 +611,7 @@
   "reminderCascadeRemoveStep": "Alisin",
   "reminderCascadeDuplicate": "May iba pang paalala na gumagamit na sa araw na ito",
   "reminderCascadeOutOfRange": "Maglagay ng bilang sa pagitan ng {min} at {max} na araw",
-  "reminderCascadeStepLabel": "Paalala {position}: {days, plural, =1{1 araw} other{{days} na araw}} bago mag-expire",
+  "reminderCascadeStepLabel": "Paalala {position}: {days, plural, =1{{days} araw} other{{days} na araw}} bago mag-expire",
   "expiryTimelineNotReady": "Lalabas ang iyong timeline kapag mayroon ka nang mga rekord na mag-eexpire sa ilang magkakaibang buwan.",
   "verifyEmailResendIn": "Ipadala ulit sa loob ng {seconds}s",
   "verifyEmailSpamHint": "Wala doon? Suriin ang iyong spam o junk folder.",
@@ -628,13 +620,10 @@
   "verifyEmailDiscardBody": "Hindi pa na-verify ang account na ito. Ang pag-alis ngayon ay magtatanggal dito, at maaari kang mag-sign up ulit gamit ang anumang email address.",
   "verifyEmailDiscardAction": "I-discard",
   "verifyEmailKeepWaiting": "Patuloy na maghintay",
-  "expiringBadge": "{count, plural, =1{1 ang malapit nang mag-expire} other{{count} ang malapit nang mag-expire}}",
+  "expiringBadge": "{count, plural, =1{{count} ang malapit nang mag-expire} other{{count} ang malapit nang mag-expire}}",
   "noRecordsToday": "Walang mag-e-expire ngayon",
   "noRecordsTomorrow": "Walang mag-e-expire bukas",
-  "cascadeStepTitle": "{days, plural, =0{Mag-e-expire ang {recordName} ngayon} =1{Mag-e-expire ang {recordName} bukas} other{Mag-e-expire ang {recordName} sa loob ng {days} araw}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, mag-e-expire ang iyong {recordName} ngayon. Na-renew mo na ba ito? I-update ang petsa ng pag-expire nito.} =1{{firstName}, mag-e-expire ang iyong {recordName} bukas. I-renew na ito ngayon para hindi ito mawalan ng bisa.} other{{firstName}, mag-e-expire ang iyong {recordName} sa {date}. Ang maagang pag-renew ay nagpapanatili sa iyong protektado.}}",
   "cascadeFinalStepTitle": "Huling paalala: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, mag-e-expire ang iyong {recordName} {days, plural, =1{bukas} other{sa loob ng {days} araw, sa {date}}}. Ito na ang huling paalala sa iyo, i-renew ito o i-update ang petsa nito.",
   "notificationsTitle": "Mga Notification",
   "notificationsProfileEnabledSubtitle": "Darating ang mga paalala sa ganap na {time}.",
   "notificationsProfileDisabledSubtitle": "Naka-off ang mga notification.",
@@ -1664,13 +1653,13 @@
   "dailyDigestSwitchSubtitle": "Makatanggap ng isang notification sa oras ng paalala mo na naglilista ng lahat ng due sa araw na iyon.",
   "dailyDigestTurnedOn": "Darating na ngayon bilang isang pang-araw-araw na buod ang mga paalala mo.",
   "dailyDigestTurnedOff": "Bumalik na ang magkakahiwalay na paalala para sa bawat rekord.",
-  "dailyDigestTitle": "{count, plural, one{1 rekord ang nangangailangan ng pansin mo} other{{count} na rekord ang nangangailangan ng pansin mo}}",
+  "dailyDigestTitle": "{count, plural, one{{count} rekord ang nangangailangan ng pansin mo} other{{count} na rekord ang nangangailangan ng pansin mo}}",
   "dailyDigestBody": "Paparating: {names}.",
   "dailyDigestBodyMore": "Paparating: {names} at {count} pa.",
   "dailyDigestLockedRecord": "isang naka-lock na rekord",
-  "renewReasonRepeat": "{months, plural, one{Batay sa setting mong umulit kada buwan} other{Batay sa setting mong umulit kada {months} buwan}}",
-  "renewReasonHistory": "{count, plural, one{Batay sa huling renewal mo} other{Batay sa huling {count} renewal mo}}",
-  "renewReasonTypical": "{years, plural, one{Karaniwang valid sa loob ng 1 taon} other{Karaniwang valid sa loob ng {years} taon}}",
+  "renewReasonRepeat": "{months, plural, other{Batay sa setting mong umulit kada {months} buwan}}",
+  "renewReasonHistory": "{count, plural, other{Batay sa huling {count} renewal mo}}",
+  "renewReasonTypical": "{years, plural, one{Karaniwang valid sa loob ng {years} taon} other{Karaniwang valid sa loob ng {years} taon}}",
   "renewChangeHint": "I-tap ang petsa para baguhin ito.",
   "renewPickDate": "Piliin ang bagong petsa ng pag-expire",
   "renewPickDateHint": "Piliin ang petsang nakasulat sa bago mong dokumento.",
@@ -2146,8 +2135,8 @@
   "lifePlanAutoChanged": "Nakita ng Vaultara na nagbago ang record na ito, kaya minarkahan itong tapos.",
   "lifePlanAutoAdded": "Idinagdag pagkatapos mong simulan ang planong ito.",
   "lifePlanProgress": "{done} sa {total} ang tapos",
-  "lifePlanDaysToGo": "{count, plural, =1{1 araw na lang} other{{count} araw na lang}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 araw na ang nakalipas} other{{count} araw na ang nakalipas}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} araw na lang} other{{count} araw na lang}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} araw na ang nakalipas} other{{count} araw na ang nakalipas}}",
   "lifePlanAllDone": "Tapos na ang lahat. Maaari mong markahang tapos ang plano.",
   "lifePlanFinish": "Markahang tapos",
   "lifePlanReopen": "Buksan muli",
@@ -2243,7 +2232,7 @@
   "lifeTaskParentMedicines": "Magtabi ng listahan ng mga gamot at doktor niya",
   "lifePlanDoClaim": "Mag-claim",
   "lifePlanStatusClaimed": "Na-claim na",
-  "lifePlanStartBy": "{weeks, plural, =1{Magsimula bago mag-{date}. Karaniwang mga isang linggo bago makuha ang bago.} other{Magsimula bago mag-{date}. Karaniwang mga {weeks} linggo bago makuha ang bago.}}",
+  "lifePlanStartBy": "{weeks, plural, other{Magsimula bago mag-{date}. Karaniwang mga {weeks} linggo bago makuha ang bago.}}",
   "@lifePlanStartBy": {
     "placeholders": {
       "date": {
@@ -2254,7 +2243,7 @@
       }
     }
   },
-  "lifePlanStartNow": "{weeks, plural, =1{Magsimula na ngayon. Karaniwang mga isang linggo bago makuha ang bago.} other{Magsimula na ngayon. Karaniwang mga {weeks} linggo bago makuha ang bago.}}",
+  "lifePlanStartNow": "{weeks, plural, other{Magsimula na ngayon. Karaniwang mga {weeks} linggo bago makuha ang bago.}}",
   "@lifePlanStartNow": {
     "placeholders": {
       "weeks": {
@@ -2276,7 +2265,7 @@
   "lifePlanReadAloudUnavailable": "Hindi available ang pagbasa nang malakas sa phone na ito.",
   "lifePlanProofPack": "Gumawa ng pakete ng patunay",
   "lifePlanOpenFamily": "Buksan ang Pamilya",
-  "lifePlanRemoved": "{count, plural, =1{Ang 1 record na binura mo ay itinuturing na kanselado.} other{Ang {count} record na binura mo ay itinuturing na kanselado.}}",
+  "lifePlanRemoved": "{count, plural, =1{Ang {count} record na binura mo ay itinuturing na kanselado.} other{Ang {count} record na binura mo ay itinuturing na kanselado.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2873,5 +2862,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "Mag-e-expire ngayon ang {recordName}",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "Mag-e-expire bukas ang {recordName}",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{Mag-e-expire ang {recordName} sa loob ng {days} araw} other{Mag-e-expire ang {recordName} sa loob ng {days} araw}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "Nag-expire na ang {recordName}",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Kailangan ng iyong pansin ang isang naka-lock na rekord",
+  "remLockedBody": "Ang petsa nito ay {date}. I-unlock ang Vaultara para makita kung aling rekord ito.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Mag-e-expire ngayon ang iyong rekord na \"{recordName}\".",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Mag-e-expire bukas ang iyong rekord na \"{recordName}\".",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Mag-e-expire sa {date} ang iyong rekord na \"{recordName}\".",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, mag-e-expire ngayon ang iyong rekord na \"{recordName}\".",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, mag-e-expire bukas ang iyong rekord na \"{recordName}\".",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, mag-e-expire sa {date} ang iyong rekord na \"{recordName}\".",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Mag-e-expire ngayon ang rekord ni {person} na \"{recordName}\".",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Mag-e-expire bukas ang rekord ni {person} na \"{recordName}\".",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Mag-e-expire sa {date} ang rekord ni {person} na \"{recordName}\".",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Nag-expire noong {date} ang iyong rekord na \"{recordName}\".",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Nag-expire noong {date} ang rekord ni {person} na \"{recordName}\".",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Na-renew mo na? I-update ang petsa nito.",
+  "remTipTomorrow": "I-renew na ngayon para hindi ito mag-expire.",
+  "remTipEarly": "Ang maagang pag-renew ay nagpapanatili sa iyong protektado.",
+  "remTipLast": "Ito na ang huling paalala bago ito mag-expire.",
+  "remTipExpired": "I-renew ito, o i-update ang petsa nito kung nagawa mo na.",
+  "remStartBody": "Oras na para simulan ang pag-renew ng \"{recordName}\". Mag-e-expire ito sa {date}, kaya kung magsisimula ka ngayon, marami kang oras.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Oras na para simulan ang pag-renew ng \"{recordName}\" ni {person}. Mag-e-expire ito sa {date}, kaya kung magsisimula ngayon, maraming oras.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Mga paalala sa pag-expire",
+  "notifChannelDescription": "Mga paalala bago mag-expire ang iyong mga rekord",
+  "notifTestTitle": "Pansubok na notification",
+  "notifTestBody": "Ganito dumarating ang mga paalala ng Vaultara.",
+  "notifTestAction": "Magpadala ng pansubok na notification",
+  "notifTestSubtitle": "Tingnan kung dumarating ang mga paalala sa teleponong ito",
+  "notifTestSent": "Naipadala ang pagsubok. Darating ito sa loob ng ilang segundo.",
+  "notifAfterExpiryTitle": "Paalalahanan ako pagkatapos mag-expire ng rekord",
+  "notifAfterExpirySubtitle": "3 at 14 na araw pagkatapos, kung hindi pa na-renew",
+  "notifWeeklyTitle": "Buod tuwing Lunes",
+  "notifWeeklySubtitle": "Isang mensahe tuwing Lunes ng umaga kapag may mag-e-expire sa linggong iyon",
+  "notifPushSection": "Sambahayan at mga update",
+  "notifHouseholdTitle": "Mga ibinahaging rekord",
+  "notifHouseholdSubtitle": "Kapag malapit nang mag-expire ang isang ibinahaging rekord at walang nag-renew nito",
+  "notifUpdatesTitle": "Mga update na hiniling mo",
+  "notifUpdatesSubtitle": "Kapag may nagpadala ng bagong detalye ng isang rekord",
+  "notifSecurityNote": "Laging ipinapadala ang mga alerto tungkol sa mga bagong pag-sign in sa iyong account.",
+  "notifIosHelpTitle": "Hindi nakakatanggap ng mga paalala?",
+  "notifIosHelpSubtitle": "Tingnan ang mga setting ng iyong iPhone",
+  "notifIosHelpStep1": "Buksan ang Settings, pagkatapos Notifications, pagkatapos Vaultara, at i-on ang Allow Notifications.",
+  "notifIosHelpStep2": "I-on ang Lock Screen, Notification Center at Banners.",
+  "notifIosHelpStep3": "Kung gumagamit ka ng Focus, idagdag ang Vaultara sa mga app na pinapayagan nito.",
+  "notifIosHelpStep4": "Buksan ang Vaultara tuwing ilang linggo. Limitado lang ang mga paalalang naitatabi ng iPhone, at ang pagbubukas ng app ang nagtatakda ng mga susunod.",
+  "homeNextUpEmpty": "Walang mag-e-expire sa lalong madaling panahon. Handa na ang lahat.",
+  "homeDueSoonChip": "{count, plural, one{{count} ang dapat sa loob ng 30 araw} other{{count} ang dapat sa loob ng 30 araw}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Mga naka-pin na kategorya"
 }

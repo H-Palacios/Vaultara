@@ -360,15 +360,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get homeWelcomeSubtitleBack => '很高兴再次见到您。每当您想查看重要日期和记录时，Vaultara 都已准备就绪。';
 
   @override
-  String get summaryAllCaption => '在 Vaultara 中跟踪';
-
-  @override
-  String get summaryExpiredTitle => '已过期';
-
-  @override
-  String get summaryExpiredCaption => '到期日期已过';
-
-  @override
   String get editorNotes => '备注';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => '删除记录';
-
-  @override
-  String get summaryAllRecordsTitle => '所有记录';
 
   @override
   String get noGroupFound => '暂无分组';
@@ -829,22 +817,10 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count 条记录',
-      one: '1 条记录',
+      one: '$count 条记录',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => '即将到来';
-
-  @override
-  String get summaryUpcomingCaption => '30天内';
-
-  @override
-  String get summaryUrgentTitle => '紧急';
-
-  @override
-  String get summaryUrgentCaption => '7天内';
 
   @override
   String get profileHeaderTitle => '个人资料';
@@ -1047,7 +1023,7 @@ class AppLocalizationsZh extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names 和另外 $extra 个项目今天到期。',
-      one: '$names 和另外 1 个项目今天到期。',
+      one: '$names 和另外 $extra 个项目今天到期。',
       zero: '$names 今天到期。',
     );
     return '$_temp0';
@@ -1080,7 +1056,7 @@ class AppLocalizationsZh extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a、$b 和另外 $extra 个记录将在 $lastDate 之前到期，时间非常接近。当多个记录的到期时间如此接近时，很容易漏掉其中一个。',
-      one: '$a、$b 和另外 1 个记录将在 $lastDate 之前到期，时间非常接近。当多个记录的到期时间如此接近时，很容易漏掉其中一个。',
+      one: '$a、$b 和另外 $extra 个记录将在 $lastDate 之前到期，时间非常接近。当多个记录的到期时间如此接近时，很容易漏掉其中一个。',
     );
     return '$_temp0';
   }
@@ -1102,7 +1078,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '您在 $category 类别中的 $count 个记录将在 $date 之前到期。像这样分组时，很容易漏掉其中一个。',
-      one: '您在 $category 类别中的 1 个记录将于 $date 到期。这很容易被忽略。',
+      one: '您在 $category 类别中的 $count 个记录将于 $date 到期。这很容易被忽略。',
     );
     return '$_temp0';
   }
@@ -1113,7 +1089,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '有 $count 个即将到期的项目已设置提醒。目前没有其他需要您注意的事项。',
-      one: '有 1 个即将到期的项目已设置提醒。目前没有其他需要您注意的事项。',
+      one: '有 $count 个即将到期的项目已设置提醒。目前没有其他需要您注意的事项。',
     );
     return '$_temp0';
   }
@@ -1127,7 +1103,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '目前没有紧急事项，但有 $count 个即将到期的记录尚未设置提醒。',
-      one: '目前没有紧急事项，但有 1 个即将到期的记录尚未设置提醒。',
+      one: '目前没有紧急事项，但有 $count 个即将到期的记录尚未设置提醒。',
     );
     return '$_temp0';
   }
@@ -1251,7 +1227,7 @@ class AppLocalizationsZh extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days 天',
-      one: '1 天',
+      one: '$days 天',
     );
     return '提醒 $position：提前 $_temp0';
   }
@@ -1288,7 +1264,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count 个项目即将到期',
-      one: '1 个项目即将到期',
+      one: '$count 个项目即将到期',
     );
     return '$_temp0';
   }
@@ -1300,43 +1276,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noRecordsTomorrow => '明天没有到期的项目';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName 将在 $days 天后到期',
-      one: '$recordName 明天到期',
-      zero: '$recordName 今天到期',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName，您的 $recordName 将于 $date 到期。提前续期可确保其持续有效。',
-      one: '$firstName，您的 $recordName 明天到期。请立即续期，以免失效。',
-      zero: '$firstName，您的 $recordName 今天到期。您是否已经续期？请更新其到期日期。',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return '最后提醒：$recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days 天后（$date）',
-      one: '明天',
-    );
-    return '$firstName，您的 $recordName 将于 $_temp0到期。这是您的最后提醒，请续期或更新其日期。';
   }
 
   @override
@@ -1531,7 +1472,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '有 $count 条即将到期的记录尚未填写费用。',
-      one: '有 1 条即将到期的记录尚未填写费用。',
+      one: '有 $count 条即将到期的记录尚未填写费用。',
     );
     return '$_temp0';
   }
@@ -1565,7 +1506,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count 条记录',
-      one: '1 条记录',
+      one: '$count 条记录',
       zero: '没有记录',
     );
     return '$_temp0';
@@ -1621,7 +1562,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '最多 $count 人',
-      one: '最多 1 人',
+      one: '最多 $count 人',
     );
     return '$_temp0';
   }
@@ -1638,7 +1579,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '最多可添加 $count 人',
-      one: '可添加 1 人',
+      one: '可添加 $count 人',
     );
     return '$_temp0';
   }
@@ -2222,7 +2163,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count 条记录',
-      one: '1 条记录',
+      one: '$count 条记录',
     );
     return '$_temp0';
   }
@@ -2253,7 +2194,7 @@ class AppLocalizationsZh extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days 天行程',
-      one: '1 天行程',
+      one: '$days 天行程',
     );
     return '$_temp0';
   }
@@ -2326,7 +2267,7 @@ class AppLocalizationsZh extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months 个月',
-      one: '1 个月',
+      one: '$months 个月',
     );
     return '$name 于 $date 到期。许多国家要求返回后仍有 $_temp0的有效期。';
   }
@@ -2342,7 +2283,7 @@ class AppLocalizationsZh extends AppLocalizations {
       days,
       locale: localeName,
       other: '即出发后第 $days 天',
-      one: '即出发后第 1 天',
+      one: '即出发后第 $days 天',
       zero: '即出发当天',
     );
     return '$name 于 $date 到期，$_temp0。';
@@ -2520,7 +2461,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count 项需要处理',
-      one: '1 项需要处理',
+      one: '$count 项需要处理',
     );
     return '$_temp0';
   }
@@ -2601,7 +2542,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '出发前有 $count 份证件需要处理。',
-      one: '出发前有 1 份证件需要处理。',
+      one: '出发前有 $count 份证件需要处理。',
     );
     return '$_temp0';
   }
@@ -2704,7 +2645,7 @@ class AppLocalizationsZh extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit 张照片',
-      one: '1 张照片',
+      one: '$limit 张照片',
     );
     return '免费版每条记录可添加 $_temp0。升级高级版最多可添加 $premiumLimit 张。';
   }
@@ -2740,7 +2681,7 @@ class AppLocalizationsZh extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count 张照片',
-      one: '1 张照片',
+      one: '$count 张照片',
     );
     return '$_temp0';
   }
@@ -8218,6 +8159,204 @@ class AppLocalizationsZh extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return '提醒：$name 将于 $date 到期';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName 今天到期';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName 明天到期';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName 将在 $days 天后到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName 已到期';
+  }
+
+  @override
+  String get remLockedTitle => '一条已锁定的记录需要你处理';
+
+  @override
+  String remLockedBody(String date) {
+    return '其日期为 $date。请解锁 Vaultara 查看是哪条记录。';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '你的记录“$recordName”今天到期。';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '你的记录“$recordName”明天到期。';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '你的记录“$recordName”将于 $date 到期。';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName，你的记录“$recordName”今天到期。';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName，你的记录“$recordName”明天到期。';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName，你的记录“$recordName”将于 $date 到期。';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person的记录“$recordName”今天到期。';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person的记录“$recordName”明天到期。';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person的记录“$recordName”将于 $date 到期。';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '你的记录“$recordName”已于 $date 到期。';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person的记录“$recordName”已于 $date 到期。';
+  }
+
+  @override
+  String get remTipToday => '已经续期了？请更新日期。';
+
+  @override
+  String get remTipTomorrow => '现在就续期，以免过期。';
+
+  @override
+  String get remTipEarly => '提早续期，安心无忧。';
+
+  @override
+  String get remTipLast => '这是到期前的最后一次提醒。';
+
+  @override
+  String get remTipExpired => '请续期；如果已经续期，请更新日期。';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '是时候开始为“$recordName”续期了。它将于 $date 到期，现在开始时间很充裕。';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '是时候开始为$person的“$recordName”续期了。它将于 $date 到期，现在开始时间很充裕。';
+  }
+
+  @override
+  String get notifChannelName => '到期提醒';
+
+  @override
+  String get notifChannelDescription => '记录到期前的提醒';
+
+  @override
+  String get notifTestTitle => '测试通知';
+
+  @override
+  String get notifTestBody => 'Vaultara 的提醒会这样送达。';
+
+  @override
+  String get notifTestAction => '发送测试通知';
+
+  @override
+  String get notifTestSubtitle => '检查提醒能否送达这部手机';
+
+  @override
+  String get notifTestSent => '测试已发送，几秒内应会送达。';
+
+  @override
+  String get notifAfterExpiryTitle => '记录到期后也提醒我';
+
+  @override
+  String get notifAfterExpirySubtitle => '如未续期，在到期后第 3 天和第 14 天提醒';
+
+  @override
+  String get notifWeeklyTitle => '周一摘要';
+
+  @override
+  String get notifWeeklySubtitle => '当周有内容到期时，周一早上发送提醒';
+
+  @override
+  String get notifPushSection => '家庭与更新';
+
+  @override
+  String get notifHouseholdTitle => '共享记录';
+
+  @override
+  String get notifHouseholdSubtitle => '共享记录即将到期且无人续期时';
+
+  @override
+  String get notifUpdatesTitle => '你请求的更新';
+
+  @override
+  String get notifUpdatesSubtitle => '有人发送记录的新信息时';
+
+  @override
+  String get notifSecurityNote => '有关你账户新登录的提醒始终会发送。';
+
+  @override
+  String get notifIosHelpTitle => '收不到提醒？';
+
+  @override
+  String get notifIosHelpSubtitle => '检查 iPhone 设置';
+
+  @override
+  String get notifIosHelpStep1 => '打开“设置”，然后“通知”，然后 Vaultara，并打开“允许通知”。';
+
+  @override
+  String get notifIosHelpStep2 => '打开“锁定屏幕”、“通知中心”和“横幅”。';
+
+  @override
+  String get notifIosHelpStep3 => '如果你使用专注模式，请将 Vaultara 添加到允许的 App。';
+
+  @override
+  String get notifIosHelpStep4 => '请每隔几周打开一次 Vaultara。iPhone 只能保存有限数量的未来提醒，打开 App 时会安排接下来的提醒。';
+
+  @override
+  String get homeNextUpEmpty => '近期没有即将到期的内容。一切就绪。';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 天内到期 $count 条',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => '已置顶的类别';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -8576,15 +8715,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get homeWelcomeSubtitleBack => '很高兴再次见到您。每当您想查看重要日期和记录时，Vaultara 都已准备就绪。';
 
   @override
-  String get summaryAllCaption => '在 Vaultara 中跟踪';
-
-  @override
-  String get summaryExpiredTitle => '已过期';
-
-  @override
-  String get summaryExpiredCaption => '到期日期已过';
-
-  @override
   String get editorNotes => '备注';
 
   @override
@@ -8630,9 +8760,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get deleteRecordTitle => '删除记录';
-
-  @override
-  String get summaryAllRecordsTitle => '所有记录';
 
   @override
   String get noGroupFound => '暂无分组';
@@ -9045,18 +9172,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
-  String get summaryUpcomingTitle => '即将到来';
-
-  @override
-  String get summaryUpcomingCaption => '30天内';
-
-  @override
-  String get summaryUrgentTitle => '紧急';
-
-  @override
-  String get summaryUrgentCaption => '7天内';
-
-  @override
   String get profileHeaderTitle => '个人资料';
 
   @override
@@ -9257,7 +9372,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       extra,
       locale: localeName,
       other: '$names 和另外 $extra 个项目今天到期。',
-      one: '$names 和另外 1 个项目今天到期。',
+      one: '$names 和另外 $extra 个项目今天到期。',
       zero: '$names 今天到期。',
     );
     return '$_temp0';
@@ -9290,7 +9405,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       extra,
       locale: localeName,
       other: '$a、$b 和另外 $extra 个记录将在 $lastDate 之前到期，时间非常接近。当多个记录的到期时间如此接近时，很容易漏掉其中一个。',
-      one: '$a、$b 和另外 1 个记录将在 $lastDate 之前到期，时间非常接近。当多个记录的到期时间如此接近时，很容易漏掉其中一个。',
+      one: '$a、$b 和另外 $extra 个记录将在 $lastDate 之前到期，时间非常接近。当多个记录的到期时间如此接近时，很容易漏掉其中一个。',
     );
     return '$_temp0';
   }
@@ -9312,7 +9427,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '您在 $category 类别中的 $count 个记录将在 $date 之前到期。像这样分组时，很容易漏掉其中一个。',
-      one: '您在 $category 类别中的 1 个记录将于 $date 到期。这很容易被忽略。',
+      one: '您在 $category 类别中的 $count 个记录将于 $date 到期。这很容易被忽略。',
     );
     return '$_temp0';
   }
@@ -9323,7 +9438,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '有 $count 个即将到期的项目已设置提醒。目前没有其他需要您注意的事项。',
-      one: '有 1 个即将到期的项目已设置提醒。目前没有其他需要您注意的事项。',
+      one: '有 $count 个即将到期的项目已设置提醒。目前没有其他需要您注意的事项。',
     );
     return '$_temp0';
   }
@@ -9337,7 +9452,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '目前没有紧急事项，但有 $count 个即将到期的记录尚未设置提醒。',
-      one: '目前没有紧急事项，但有 1 个即将到期的记录尚未设置提醒。',
+      one: '目前没有紧急事项，但有 $count 个即将到期的记录尚未设置提醒。',
     );
     return '$_temp0';
   }
@@ -9492,7 +9607,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 个项目即将到期',
-      one: '1 个项目即将到期',
+      one: '$count 个项目即将到期',
     );
     return '$_temp0';
   }
@@ -9504,43 +9619,8 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get noRecordsTomorrow => '明天没有到期的项目';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName 将在 $days 天后到期',
-      one: '$recordName 明天到期',
-      zero: '$recordName 今天到期',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName，您的 $recordName 将于 $date 到期。提前续期可确保其持续有效。',
-      one: '$firstName，您的 $recordName 明天到期。请立即续期，以免失效。',
-      zero: '$firstName，您的 $recordName 今天到期。您是否已经续期？请更新其到期日期。',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return '最后提醒：$recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days 天后（$date）',
-      one: '明天',
-    );
-    return '$firstName，您的 $recordName 将于 $_temp0到期。这是您的最后提醒，请续期或更新其日期。';
   }
 
   @override
@@ -9735,7 +9815,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '有 $count 条即将到期的记录尚未填写费用。',
-      one: '有 1 条即将到期的记录尚未填写费用。',
+      one: '有 $count 条即将到期的记录尚未填写费用。',
     );
     return '$_temp0';
   }
@@ -9769,7 +9849,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 条记录',
-      one: '1 条记录',
+      one: '$count 条记录',
       zero: '暂无记录',
     );
     return '$_temp0';
@@ -9825,7 +9905,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '最多 $count 位成员',
-      one: '最多 1 位成员',
+      one: '最多 $count 位成员',
     );
     return '$_temp0';
   }
@@ -9842,7 +9922,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '最多可添加 $count 位成员',
-      one: '可添加 1 位成员',
+      one: '可添加 $count 位成员',
     );
     return '$_temp0';
   }
@@ -10426,7 +10506,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 条记录',
-      one: '1 条记录',
+      one: '$count 条记录',
     );
     return '$_temp0';
   }
@@ -10457,7 +10537,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       days,
       locale: localeName,
       other: '$days 天行程',
-      one: '1 天行程',
+      one: '$days 天行程',
     );
     return '$_temp0';
   }
@@ -10530,7 +10610,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       months,
       locale: localeName,
       other: '$months 个月',
-      one: '1 个月',
+      one: '$months 个月',
     );
     return '$name 将于 $date 到期。许多国家要求返回后仍有 $_temp0的有效期。';
   }
@@ -10546,7 +10626,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       days,
       locale: localeName,
       other: '即出发 $days 天后',
-      one: '即出发 1 天后',
+      one: '即出发 $days 天后',
       zero: '即出发当天',
     );
     return '$name 将于 $date 到期，$_temp0。';
@@ -10724,7 +10804,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 项需要处理',
-      one: '1 项需要处理',
+      one: '$count 项需要处理',
     );
     return '$_temp0';
   }
@@ -10805,7 +10885,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '出发前有 $count 份证件需要处理。',
-      one: '出发前有 1 份证件需要处理。',
+      one: '出发前有 $count 份证件需要处理。',
     );
     return '$_temp0';
   }
@@ -10908,7 +10988,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       limit,
       locale: localeName,
       other: '$limit 张照片',
-      one: '1 张照片',
+      one: '$limit 张照片',
     );
     return '免费方案每条记录可添加 $_temp0。升级高级版后最多可添加 $premiumLimit 张。';
   }
@@ -10944,7 +11024,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 张照片',
-      one: '1 张照片',
+      one: '$count 张照片',
     );
     return '$_temp0';
   }
@@ -16422,6 +16502,204 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String calendarReminderFor(String name, String date) {
     return '提醒：$name 将于 $date 到期';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName 今天到期';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName 明天到期';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName 将在 $days 天后到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName 已到期';
+  }
+
+  @override
+  String get remLockedTitle => '一条已锁定的记录需要你处理';
+
+  @override
+  String remLockedBody(String date) {
+    return '其日期为 $date。请解锁 Vaultara 查看是哪条记录。';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '你的记录“$recordName”今天到期。';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '你的记录“$recordName”明天到期。';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '你的记录“$recordName”将于 $date 到期。';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName，你的记录“$recordName”今天到期。';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName，你的记录“$recordName”明天到期。';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName，你的记录“$recordName”将于 $date 到期。';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person的记录“$recordName”今天到期。';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person的记录“$recordName”明天到期。';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person的记录“$recordName”将于 $date 到期。';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '你的记录“$recordName”已于 $date 到期。';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person的记录“$recordName”已于 $date 到期。';
+  }
+
+  @override
+  String get remTipToday => '已经续期了？请更新日期。';
+
+  @override
+  String get remTipTomorrow => '现在就续期，以免过期。';
+
+  @override
+  String get remTipEarly => '提早续期，安心无忧。';
+
+  @override
+  String get remTipLast => '这是到期前的最后一次提醒。';
+
+  @override
+  String get remTipExpired => '请续期；如果已经续期，请更新日期。';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '是时候开始为“$recordName”续期了。它将于 $date 到期，现在开始时间很充裕。';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '是时候开始为$person的“$recordName”续期了。它将于 $date 到期，现在开始时间很充裕。';
+  }
+
+  @override
+  String get notifChannelName => '到期提醒';
+
+  @override
+  String get notifChannelDescription => '记录到期前的提醒';
+
+  @override
+  String get notifTestTitle => '测试通知';
+
+  @override
+  String get notifTestBody => 'Vaultara 的提醒会这样送达。';
+
+  @override
+  String get notifTestAction => '发送测试通知';
+
+  @override
+  String get notifTestSubtitle => '检查提醒能否送达这部手机';
+
+  @override
+  String get notifTestSent => '测试已发送，几秒内应会送达。';
+
+  @override
+  String get notifAfterExpiryTitle => '记录到期后也提醒我';
+
+  @override
+  String get notifAfterExpirySubtitle => '如未续期，在到期后第 3 天和第 14 天提醒';
+
+  @override
+  String get notifWeeklyTitle => '周一摘要';
+
+  @override
+  String get notifWeeklySubtitle => '当周有内容到期时，周一早上发送提醒';
+
+  @override
+  String get notifPushSection => '家庭与更新';
+
+  @override
+  String get notifHouseholdTitle => '共享记录';
+
+  @override
+  String get notifHouseholdSubtitle => '共享记录即将到期且无人续期时';
+
+  @override
+  String get notifUpdatesTitle => '你请求的更新';
+
+  @override
+  String get notifUpdatesSubtitle => '有人发送记录的新信息时';
+
+  @override
+  String get notifSecurityNote => '有关你账户新登录的提醒始终会发送。';
+
+  @override
+  String get notifIosHelpTitle => '收不到提醒？';
+
+  @override
+  String get notifIosHelpSubtitle => '检查 iPhone 设置';
+
+  @override
+  String get notifIosHelpStep1 => '打开“设置”，然后“通知”，然后 Vaultara，并打开“允许通知”。';
+
+  @override
+  String get notifIosHelpStep2 => '打开“锁定屏幕”、“通知中心”和“横幅”。';
+
+  @override
+  String get notifIosHelpStep3 => '如果你使用专注模式，请将 Vaultara 添加到允许的 App。';
+
+  @override
+  String get notifIosHelpStep4 => '请每隔几周打开一次 Vaultara。iPhone 只能保存有限数量的未来提醒，打开 App 时会安排接下来的提醒。';
+
+  @override
+  String get homeNextUpEmpty => '近期没有即将到期的内容。一切就绪。';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 天内到期 $count 条',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => '已置顶的类别';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -16780,15 +17058,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get homeWelcomeSubtitleBack => '很高興再次見到您。當您想查看重要日期與記錄時，Vaultara 隨時準備就緒。';
 
   @override
-  String get summaryAllCaption => '在 Vaultara 中追蹤';
-
-  @override
-  String get summaryExpiredTitle => '已過期';
-
-  @override
-  String get summaryExpiredCaption => '到期日已過';
-
-  @override
   String get editorNotes => '備註';
 
   @override
@@ -16834,9 +17103,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get deleteRecordTitle => '刪除記錄';
-
-  @override
-  String get summaryAllRecordsTitle => '所有記錄';
 
   @override
   String get noGroupFound => '尚未建立任何群組';
@@ -17249,18 +17515,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get summaryUpcomingTitle => '即將到來';
-
-  @override
-  String get summaryUpcomingCaption => '30天內';
-
-  @override
-  String get summaryUrgentTitle => '緊急';
-
-  @override
-  String get summaryUrgentCaption => '7天內';
-
-  @override
   String get profileHeaderTitle => '個人資料';
 
   @override
@@ -17461,7 +17715,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       extra,
       locale: localeName,
       other: '$names 和另外 $extra 個項目今天到期。',
-      one: '$names 和另外 1 個項目今天到期。',
+      one: '$names 和另外 $extra 個項目今天到期。',
       zero: '$names 今天到期。',
     );
     return '$_temp0';
@@ -17494,7 +17748,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       extra,
       locale: localeName,
       other: '$a、$b 和另外 $extra 個記錄將在 $lastDate 之前到期，時間非常接近。當多個記錄的到期時間如此接近時，很容易遺漏其中一個。',
-      one: '$a、$b 和另外 1 個記錄將在 $lastDate 之前到期，時間非常接近。當多個記錄的到期時間如此接近時，很容易遺漏其中一個。',
+      one: '$a、$b 和另外 $extra 個記錄將在 $lastDate 之前到期，時間非常接近。當多個記錄的到期時間如此接近時，很容易遺漏其中一個。',
     );
     return '$_temp0';
   }
@@ -17516,7 +17770,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '您在 $category 類別中的 $count 個記錄將在 $date 之前到期。像這樣分組時，很容易遺漏其中一個。',
-      one: '您在 $category 類別中的 1 個記錄將於 $date 到期。這很容易被忽略。',
+      one: '您在 $category 類別中的 $count 個記錄將於 $date 到期。這很容易被忽略。',
     );
     return '$_temp0';
   }
@@ -17527,7 +17781,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '有 $count 個即將到期的項目已設定提醒。目前沒有其他需要您注意的事項。',
-      one: '有 1 個即將到期的項目已設定提醒。目前沒有其他需要您注意的事項。',
+      one: '有 $count 個即將到期的項目已設定提醒。目前沒有其他需要您注意的事項。',
     );
     return '$_temp0';
   }
@@ -17541,7 +17795,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '目前沒有緊急事項，但有 $count 個即將到期的記錄尚未設定提醒。',
-      one: '目前沒有緊急事項，但有 1 個即將到期的記錄尚未設定提醒。',
+      one: '目前沒有緊急事項，但有 $count 個即將到期的記錄尚未設定提醒。',
     );
     return '$_temp0';
   }
@@ -17696,7 +17950,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 個項目即將到期',
-      one: '1 個項目即將到期',
+      one: '$count 個項目即將到期',
     );
     return '$_temp0';
   }
@@ -17708,43 +17962,8 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get noRecordsTomorrow => '明天沒有到期的項目';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName 將在 $days 天後到期',
-      one: '$recordName 明天到期',
-      zero: '$recordName 今天到期',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName，您的 $recordName 將於 $date 到期。提前續期可確保其持續有效。',
-      one: '$firstName，您的 $recordName 明天到期。請立即續期，以免失效。',
-      zero: '$firstName，您的 $recordName 今天到期。您是否已經續期？請更新其到期日期。',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return '最後提醒：$recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days 天後（$date）',
-      one: '明天',
-    );
-    return '$firstName，您的 $recordName 將於 $_temp0到期。這是您的最後提醒，請續期或更新其日期。';
   }
 
   @override
@@ -17939,7 +18158,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '有 $count 筆即將到期的記錄尚未填寫費用。',
-      one: '有 1 筆即將到期的記錄尚未填寫費用。',
+      one: '有 $count 筆即將到期的記錄尚未填寫費用。',
     );
     return '$_temp0';
   }
@@ -17973,7 +18192,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 筆記錄',
-      one: '1 筆記錄',
+      one: '$count 筆記錄',
       zero: '沒有記錄',
     );
     return '$_temp0';
@@ -18029,7 +18248,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '最多 $count 人',
-      one: '最多 1 人',
+      one: '最多 $count 人',
     );
     return '$_temp0';
   }
@@ -18046,7 +18265,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '最多可新增 $count 人',
-      one: '可新增 1 人',
+      one: '可新增 $count 人',
     );
     return '$_temp0';
   }
@@ -18630,7 +18849,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 筆記錄',
-      one: '1 筆記錄',
+      one: '$count 筆記錄',
     );
     return '$_temp0';
   }
@@ -18661,7 +18880,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       days,
       locale: localeName,
       other: '$days 天的旅程',
-      one: '1 天的旅程',
+      one: '$days 天的旅程',
     );
     return '$_temp0';
   }
@@ -18734,7 +18953,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       months,
       locale: localeName,
       other: '$months 個月',
-      one: '1 個月',
+      one: '$months 個月',
     );
     return '$name 將於 $date 到期。許多國家要求回程後仍有 $_temp0的效期。';
   }
@@ -18750,7 +18969,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       days,
       locale: localeName,
       other: '即出發後第 $days 天',
-      one: '即出發後第 1 天',
+      one: '即出發後第 $days 天',
       zero: '就在您出發當天',
     );
     return '$name 將於 $date 到期，$_temp0。';
@@ -18928,7 +19147,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 個項目需要處理',
-      one: '1 個項目需要處理',
+      one: '$count 個項目需要處理',
     );
     return '$_temp0';
   }
@@ -19009,7 +19228,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '出發前有 $count 份證件需要處理。',
-      one: '出發前有 1 份證件需要處理。',
+      one: '出發前有 $count 份證件需要處理。',
     );
     return '$_temp0';
   }
@@ -19112,7 +19331,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       limit,
       locale: localeName,
       other: '$limit 張照片',
-      one: '1 張照片',
+      one: '$limit 張照片',
     );
     return '免費版每筆記錄可新增 $_temp0。使用進階版最多可新增 $premiumLimit 張。';
   }
@@ -19148,7 +19367,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
       count,
       locale: localeName,
       other: '$count 張照片',
-      one: '1 張照片',
+      one: '$count 張照片',
     );
     return '$_temp0';
   }
@@ -24626,4 +24845,202 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String calendarReminderFor(String name, String date) {
     return '提醒：$name 將於 $date 到期';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName 今天到期';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName 明天到期';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName 將在 $days 天後到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName 已到期';
+  }
+
+  @override
+  String get remLockedTitle => '一筆已鎖定的記錄需要你處理';
+
+  @override
+  String remLockedBody(String date) {
+    return '日期為 $date。請解鎖 Vaultara 查看是哪一筆記錄。';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return '你的記錄「$recordName」今天到期。';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return '你的記錄「$recordName」明天到期。';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return '你的記錄「$recordName」將於 $date 到期。';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName，你的記錄「$recordName」今天到期。';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName，你的記錄「$recordName」明天到期。';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName，你的記錄「$recordName」將於 $date 到期。';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person的記錄「$recordName」今天到期。';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person的記錄「$recordName」明天到期。';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person的記錄「$recordName」將於 $date 到期。';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return '你的記錄「$recordName」已於 $date 到期。';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person的記錄「$recordName」已於 $date 到期。';
+  }
+
+  @override
+  String get remTipToday => '已經續期了？請更新日期。';
+
+  @override
+  String get remTipTomorrow => '現在就續期，以免過期。';
+
+  @override
+  String get remTipEarly => '提早續期，安心無憂。';
+
+  @override
+  String get remTipLast => '這是到期前的最後一次提醒。';
+
+  @override
+  String get remTipExpired => '請續期；如果已經續期，請更新日期。';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '是時候開始為「$recordName」續期了。它將於 $date 到期，現在開始時間很充裕。';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '是時候開始為$person的「$recordName」續期了。它將於 $date 到期，現在開始時間很充裕。';
+  }
+
+  @override
+  String get notifChannelName => '到期提醒';
+
+  @override
+  String get notifChannelDescription => '記錄到期前的提醒';
+
+  @override
+  String get notifTestTitle => '測試通知';
+
+  @override
+  String get notifTestBody => 'Vaultara 的提醒會這樣送達。';
+
+  @override
+  String get notifTestAction => '傳送測試通知';
+
+  @override
+  String get notifTestSubtitle => '檢查提醒能否送達這支手機';
+
+  @override
+  String get notifTestSent => '已傳送測試，幾秒內應會送達。';
+
+  @override
+  String get notifAfterExpiryTitle => '記錄到期後也提醒我';
+
+  @override
+  String get notifAfterExpirySubtitle => '如未續期，在到期後第 3 天和第 14 天提醒';
+
+  @override
+  String get notifWeeklyTitle => '週一摘要';
+
+  @override
+  String get notifWeeklySubtitle => '當週有項目到期時，週一早上傳送提醒';
+
+  @override
+  String get notifPushSection => '家庭與更新';
+
+  @override
+  String get notifHouseholdTitle => '已分享的記錄';
+
+  @override
+  String get notifHouseholdSubtitle => '已分享的記錄即將到期且無人續期時';
+
+  @override
+  String get notifUpdatesTitle => '你要求的更新';
+
+  @override
+  String get notifUpdatesSubtitle => '有人傳送記錄的新資訊時';
+
+  @override
+  String get notifSecurityNote => '有關你帳戶新登入的提醒一律會傳送。';
+
+  @override
+  String get notifIosHelpTitle => '收不到提醒？';
+
+  @override
+  String get notifIosHelpSubtitle => '檢查 iPhone 設定';
+
+  @override
+  String get notifIosHelpStep1 => '打開「設定」，然後「通知」，然後 Vaultara，並開啟「允許通知」。';
+
+  @override
+  String get notifIosHelpStep2 => '開啟「鎖定畫面」、「通知中心」和「橫幅」。';
+
+  @override
+  String get notifIosHelpStep3 => '如果你使用專注模式，請將 Vaultara 加入允許的 App。';
+
+  @override
+  String get notifIosHelpStep4 => '請每隔幾週打開一次 Vaultara。iPhone 只能保存有限數量的未來提醒，打開 App 時會安排接下來的提醒。';
+
+  @override
+  String get homeNextUpEmpty => '近期沒有即將到期的項目。一切就緒。';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 天內到期 $count 筆',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => '已釘選的類別';
 }

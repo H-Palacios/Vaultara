@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "यहाँ तपाईंलाई देखेर खुशी लाग्यो। Vaultara ले महत्त्वपूर्ण मिति र रेकर्डहरू एक सुरक्षित स्थानमा व्यवस्थित गर्छ।",
   "homeWelcomeSubtitleBack": "फेरि भेट्न पाउँदा खुसी लाग्यो। Vaultara तपाईंका महत्त्वपूर्ण मिति र रेकर्डहरू समीक्षा गर्न सधैं तयार छ।",
   "homeWelcomeTitle": "स्वागत छ",
-  "summaryAllCaption": "Vaultara मा ट्र्याक गरिएको",
-  "summaryExpiredTitle": "सकिएको",
-  "summaryExpiredCaption": "म्याद समाप्त भइसकेको छ",
   "editorNotes": "नोटहरू",
   "editorReminderNone": "रिमाइन्डर छैन",
   "editorReminderOnExpiry": "म्याद समाप्त हुने दिन",
@@ -192,7 +189,6 @@
   "addRecord": "रेकर्ड थप्नुहोस्",
   "noRecordsYet": "अहिलेसम्म कुनै रेकर्ड छैन।",
   "deleteRecordTitle": "रेकर्ड हटाउनुहोस्",
-  "summaryAllRecordsTitle": "सबै रेकर्डहरू",
   "noGroupFound": "अहिलेसम्म कुनै समूह छैन",
   "groupLabel": "{count, plural, one{{count} समूह} other{{count} समूहहरू}}",
   "recordsLabel": "{count, plural, one{{count} रेकर्ड} other{{count} रेकर्डहरू}}",
@@ -437,7 +433,7 @@
   "addNotesHint": "टिप्पणी थप्नुहोस् (वैकल्पिक)",
   "expiryTimelineTitle": "समाप्ति समयरेखा",
   "expiryTimelineSubtitle": "त्यो महिनामा समाप्त हुने रेकर्डहरू हेर्न महिनामा ट्याप गर्नुहोस्",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 रेकर्ड} other{{count} रेकर्ड}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} रेकर्ड} other{{count} रेकर्ड}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -445,10 +441,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "आगामी",
-  "summaryUpcomingCaption": "30 दिन भित्र",
-  "summaryUrgentTitle": "जरुरी",
-  "summaryUrgentCaption": "7 दिन भित्र",
   "profileHeaderTitle": "प्रोफाइल",
   "profileTutorialsTitle": "ट्युटोरियलहरू",
   "profileTutorialsSubtitle": "एप ट्युटोरियलहरू ब्राउज गर्नुहोस्",
@@ -480,7 +472,7 @@
   "reminderPremiumSection": "प्रिमियम",
   "reminderNone": "कुनै रिमाइन्डर छैन",
   "reminderOnExpiry": "म्याद समाप्ति मितिमा",
-  "reminderDaysBefore": "{days, plural, one{1 दिन अघि} other{{days} दिन अघि}}",
+  "reminderDaysBefore": "{days, plural, one{{days} दिन अघि} other{{days} दिन अघि}}",
   "reminderCustomDaysTitle": "अनुकूलन दिनहरू प्रविष्ट गर्नुहोस्",
   "reminderCascadeTitle": "क्यास्केड रिमाइन्डरहरू",
   "reminderCascadeSubtitle": "रेकर्डको म्याद समाप्त हुनु अघि धेरै सूचनाहरू प्राप्त गर्नुहोस्",
@@ -511,16 +503,16 @@
   "smartInsightNoRecordsHeading": "आफ्नो पहिलो रेकर्ड थप्नुहोस्",
   "smartInsightNoRecordsBody": "आफ्ना रेकर्डहरू ट्र्याक गर्न सुरु गर्नुहोस्, र Vaultara ले यहाँ स्मार्ट अन्तर्दृष्टिहरू देखाउनेछ।",
   "smartInsightExpiresTodaySingleBody": "{name} आजै समाप्त हुँदैछ। यदि तपाईंले यसलाई पहिले नै नवीकरण गरिसक्नुभएको छ भने, यहाँ मिति अपडेट गर्नुहोस्।",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} आजै समाप्त हुँदैछन्।} =1{{names} र थप १ आजै समाप्त हुँदैछन्।} other{{names} र थप {extra} आजै समाप्त हुँदैछन्।}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} आजै समाप्त हुँदैछन्।} =1{{names} र थप {extra} आजै समाप्त हुँदैछन्।} other{{names} र थप {extra} आजै समाप्त हुँदैछन्।}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} भोलि समाप्त हुँदैछ र यसको कुनै रिमाइन्डर छैन। यसलाई नछुटाउन एक रिमाइन्डर सेट गर्नुहोस्।} other{{name} {date} मा समाप्त हुँदैछ र यसको कुनै रिमाइन्डर छैन। यसलाई नछुटाउन एक रिमाइन्डर सेट गर्नुहोस्।}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} को म्याद {dateA} मा र {b} को {dateB} मा समाप्त हुँदैछ, लगभग एकै समयमा। दुईवटा रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} र {c} सबैको म्याद {lastDate} भित्र समाप्त हुँदैछ, लगभग एकै समयमा। धेरै रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} र थप १ रेकर्डको म्याद {lastDate} भित्र समाप्त हुँदैछ, लगभग एकै समयमा। धेरै रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।} other{{a}, {b} र थप {extra} रेकर्डहरूको म्याद {lastDate} भित्र समाप्त हुँदैछ, लगभग एकै समयमा। धेरै रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} र थप {extra} रेकर्डको म्याद {lastDate} भित्र समाप्त हुँदैछ, लगभग एकै समयमा। धेरै रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।} other{{a}, {b} र थप {extra} रेकर्डहरूको म्याद {lastDate} भित्र समाप्त हुँदैछ, लगभग एकै समयमा। धेरै रेकर्डहरू यति नजिक हुँदा एउटा बिर्सन सजिलो हुन्छ।}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{अर्को दिन केही पनि समाप्त हुँदैन। तपाईंको अर्को म्याद {date} मा छ।} other{आगामी {days} दिनमा केही पनि समाप्त हुँदैन। तपाईंको अर्को म्याद {date} मा छ।}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} श्रेणीमा तपाईंको १ रेकर्ड {date} मा समाप्त हुँदैछ। यसलाई ध्यान नदिन सजिलो छ।} other{{category} श्रेणीमा तपाईंको {count} रेकर्डहरू {date} भित्र समाप्त हुँदैछन्। यसरी समूहकृत हुँदा एउटा बिर्सन सजिलो हुन्छ।}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{आगामी १ म्याद रिमाइन्डरद्वारा सुरक्षित छ। तपाईंको ध्यान आवश्यक पर्ने अरू केही छैन।} other{आगामी {count} म्यादहरू रिमाइन्डरद्वारा सुरक्षित छन्। तपाईंको ध्यान आवश्यक पर्ने अरू केही छैन।}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} श्रेणीमा तपाईंको {count} रेकर्ड {date} मा समाप्त हुँदैछ। यसलाई ध्यान नदिन सजिलो छ।} other{{category} श्रेणीमा तपाईंको {count} रेकर्डहरू {date} भित्र समाप्त हुँदैछन्। यसरी समूहकृत हुँदा एउटा बिर्सन सजिलो हुन्छ।}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{आगामी {count} म्याद रिमाइन्डरद्वारा सुरक्षित छ। तपाईंको ध्यान आवश्यक पर्ने अरू केही छैन।} other{आगामी {count} म्यादहरू रिमाइन्डरद्वारा सुरक्षित छन्। तपाईंको ध्यान आवश्यक पर्ने अरू केही छैन।}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "सबै कुरा अप-टु-डेट छ। यस समयमा तपाईंको ध्यान आवश्यक पर्ने केही छैन।",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{यस समयमा केही पनि जरुरी छैन, तर आगामी १ रेकर्डमा अझै रिमाइन्डर सेट गरिएको छैन।} other{यस समयमा केही पनि जरुरी छैन, तर आगामी {count} रेकर्डहरूमा अझै रिमाइन्डर सेट गरिएको छैन।}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{यस समयमा केही पनि जरुरी छैन, तर आगामी {count} रेकर्डमा अझै रिमाइन्डर सेट गरिएको छैन।} other{यस समयमा केही पनि जरुरी छैन, तर आगामी {count} रेकर्डहरूमा अझै रिमाइन्डर सेट गरिएको छैन।}}",
   "smartInsightCloseExpiriesHeading": "लगभग एकै समयमा म्याद समाप्त हुँदैछ",
   "plansHeadline": "पूर्ण Vaultara प्राप्त गर्नुहोस्",
   "plansSubhead": "असीमित रेकर्डहरू, तपाईंको आफ्नै समूहहरू, र तपाईंले चाहे जस्तै गरी मिलाइएका रिमाइन्डरहरू।",
@@ -616,13 +608,10 @@
   "verifyEmailDiscardBody": "यो खाता प्रमाणित गरिएको छैन। अहिले छोड्दा यो हट्नेछ र तपाईंले जुनसुकै इमेल ठेगाना प्रयोग गरेर पुन: साइन अप गर्न सक्नुहुन्छ।",
   "verifyEmailDiscardAction": "खारेज गर्नुहोस्",
   "verifyEmailKeepWaiting": "प्रतीक्षा गरिरहनुहोस्",
-  "expiringBadge": "{count, plural, =1{1 म्याद सकिँदैछ} other{{count} म्याद सकिँदैछ}}",
+  "expiringBadge": "{count, plural, =1{{count} म्याद सकिँदैछ} other{{count} म्याद सकिँदैछ}}",
   "noRecordsToday": "आज केही पनि म्याद सकिँदैन",
   "noRecordsTomorrow": "भोलि केही पनि म्याद सकिँदैन",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} आज समाप्त हुँदैछ} =1{{recordName} भोलि समाप्त हुँदैछ} other{{recordName} {days} दिनमा समाप्त हुँदैछ}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, तपाईंको {recordName} आज समाप्त हुँदैछ। के तपाईंले यसलाई नवीकरण गरिसक्नुभयो? यसको समाप्ति मिति अद्यावधिक गर्नुहोस्।} =1{{firstName}, तपाईंको {recordName} भोलि समाप्त हुँदैछ। यसलाई अहिल्यै नवीकरण गर्नुहोस् ताकि यो रद्द नहोस्।} other{{firstName}, तपाईंको {recordName} {date} मा समाप्त हुँदैछ। समयमै नवीकरण गर्नाले तपाईं सुरक्षित रहनुहुन्छ।}}",
   "cascadeFinalStepTitle": "अन्तिम रिमाइन्डर: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, तपाईंको {recordName} {days, plural, =1{भोलि} other{{days} दिनमा, {date} मा}} समाप्त हुँदैछ। यो तपाईंको अन्तिम रिमाइन्डर हो, यसलाई नवीकरण गर्नुहोस् वा यसको मिति अद्यावधिक गर्नुहोस्।",
   "notificationsTitle": "सूचनाहरू",
   "notificationsProfileEnabledSubtitle": "रिमाइन्डरहरू {time} मा आउनेछन्।",
   "notificationsProfileDisabledSubtitle": "सूचनाहरू बन्द गरिएका छन्।",
@@ -681,7 +670,7 @@
   "costCardTitle": "नवीकरण शुल्कहरू",
   "costCardSubtitle": "तपाईंका नवीकरणको महिनाअनुसार खर्च",
   "costCardBusiest": "सबैभन्दा बढी खर्च हुने महिना: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{आगामी 1 रेकर्डमा अझै शुल्क छैन।} other{आगामी {count} रेकर्डहरूमा अझै शुल्क छैन।}}",
+  "costCardMissing": "{count, plural, =1{आगामी {count} रेकर्डमा अझै शुल्क छैन।} other{आगामी {count} रेकर्डहरूमा अझै शुल्क छैन।}}",
   "costCardEmpty": "नवीकरणमा कति खर्च हुन्छ हेर्न आफ्ना रेकर्डहरूमा शुल्क थप्नुहोस्।",
   "costCardLockedHint": "प्रिमियमसँग अर्को एक वर्षमा तपाईंका नवीकरणमा कति खर्च हुन्छ हेर्नुहोस्।",
   "costCardSeePremium": "प्रिमियम हेर्नुहोस्",
@@ -689,7 +678,7 @@
   "familyTitle": "परिवार",
   "familyIntro": "तपाईंले हेरचाह गर्ने मानिसहरूका रेकर्डहरू ट्र्याक गर्नुहोस्। उनीहरूका रिमाइन्डरमा नाम देखिन्छ, त्यसैले रेकर्ड कसको हो भनेर तपाईंलाई थाहा हुन्छ।",
   "familyMe": "म",
-  "familyRecordCount": "{count, plural, =0{कुनै रेकर्ड छैन} =1{1 रेकर्ड} other{{count} रेकर्डहरू}}",
+  "familyRecordCount": "{count, plural, =0{कुनै रेकर्ड छैन} =1{{count} रेकर्ड} other{{count} रेकर्डहरू}}",
   "familyRename": "नाम बदल्नुहोस्",
   "familyRemove": "हटाउनुहोस्",
   "familyRemoveTitle": "{name} लाई हटाउने?",
@@ -702,10 +691,10 @@
   "familyNameLabel": "नाम",
   "familyNameHint": "उदाहरणका लागि, Thabo",
   "familyNameRequired": "नाम लेख्नुहोस्",
-  "familyLimitNote": "{count, plural, =1{1 जनासम्म} other{{count} जनासम्म}}",
+  "familyLimitNote": "{count, plural, =1{{count} जनासम्म} other{{count} जनासम्म}}",
   "familyUpsellTitle": "आफ्नो परिवारका कागजातहरू ट्र्याक गर्नुहोस्",
   "familyBenefitPremium": "प्रिमियममा भएका सबै सुविधा",
-  "familyBenefitPeople": "{count, plural, =1{1 जना थप्नुहोस्} other{{count} जनासम्म थप्नुहोस्}}",
+  "familyBenefitPeople": "{count, plural, =1{{count} जना थप्नुहोस्} other{{count} जनासम्म थप्नुहोस्}}",
   "familyBenefitOwnRecords": "हरेक व्यक्तिका आफ्नै रेकर्ड र रिमाइन्डरहरू",
   "familyBenefitOneSubscription": "पूरै घरपरिवारका लागि एउटै सदस्यता",
   "familySeePlan": "परिवार योजना हेर्नुहोस्",
@@ -891,14 +880,14 @@
   "calendarExportError": "हामीले क्यालेन्डर फाइल बनाउन सकेनौं। फेरि प्रयास गर्नुहोस्।",
   "pdfExportTitle": "Vaultara रेकर्डहरू",
   "pdfExportGenerated": "{date} मा तयार गरिएको",
-  "pdfExportCount": "{count, plural, =1{1 रेकर्ड} other{{count} रेकर्डहरू}}",
+  "pdfExportCount": "{count, plural, =1{{count} रेकर्ड} other{{count} रेकर्डहरू}}",
   "pdfExportCost": "नवीकरण शुल्क: {amount}",
   "pdfExportBuilding": "तपाईंको PDF तयार गर्दै...",
   "pdfExportError": "हामीले PDF बनाउन सकेनौं। फेरि प्रयास गर्नुहोस्।",
   "travelTitle": "यात्रा जाँच",
   "travelDeparture": "प्रस्थान",
   "travelReturn": "फर्कने",
-  "travelTripLength": "{days, plural, =1{1 दिनको यात्रा} other{{days} दिनको यात्रा}}",
+  "travelTripLength": "{days, plural, =1{{days} दिनको यात्रा} other{{days} दिनको यात्रा}}",
   "travelDriving": "म गाडी चलाउनेछु",
   "travelNeedsVisa": "मलाई भिसा चाहिन्छ",
   "travelWho": "को यात्रा गर्दैछ?",
@@ -919,9 +908,9 @@
   "travelNoLicence": "सवारी चालक अनुमति पत्र थपिएको छैन",
   "travelOtherExpires": "तपाईं बाहिर हुँदा म्याद सकिन्छ",
   "travelDetailValidUntil": "{name} {date} सम्म मान्य छ।",
-  "travelDetailPassportBuffer": "{name} को म्याद {date} मा सकिन्छ। धेरै देशले फर्केपछि {months, plural, =1{1 महिना} other{{months} महिना}} म्याद बाँकी भएको चाहन्छन्।",
+  "travelDetailPassportBuffer": "{name} को म्याद {date} मा सकिन्छ। धेरै देशले फर्केपछि {months, plural, =1{{months} महिना} other{{months} महिना}} म्याद बाँकी भएको चाहन्छन्।",
   "travelDetailExpiresBeforeLeaving": "{name} को म्याद {date} मा, तपाईं प्रस्थान गर्नुअघि नै सकिन्छ।",
-  "travelDetailExpiresDuringTrip": "{name} को म्याद {date} मा सकिन्छ, {days, plural, =0{प्रस्थान गर्ने दिन} =1{यात्राको 1 दिनपछि} other{यात्राको {days} दिनपछि}}।",
+  "travelDetailExpiresDuringTrip": "{name} को म्याद {date} मा सकिन्छ, {days, plural, =0{प्रस्थान गर्ने दिन} =1{यात्राको {days} दिनपछि} other{यात्राको {days} दिनपछि}}।",
   "travelDetailNoPassport": "Vaultara ले जाँच्न सकोस् भनेर आफ्नो पासपोर्ट थप्नुहोस्।",
   "travelDetailNoVisa": "Vaultara ले जाँच्न सकोस् भनेर आफ्नो भिसा थप्नुहोस्।",
   "travelDetailNoInsurance": "पूरै यात्रा समेट्छ कि जाँच्न आफ्नो यात्रा बीमा थप्नुहोस्।",
@@ -1021,7 +1010,7 @@
   "vaultChooseFromGallery": "ग्यालरीबाट छान्नुहोस्",
   "vaultRemove": "हटाउनुहोस्",
   "vaultLimitTitle": "फोटोको सीमा पुग्यो",
-  "vaultLimitFreeBody": "निःशुल्क योजनामा हरेक रेकर्डमा {limit, plural, =1{1 फोटो} other{{limit} फोटो}} थप्न सकिन्छ। प्रिमियममा {premiumLimit} सम्म थप्न सकिन्छ।",
+  "vaultLimitFreeBody": "निःशुल्क योजनामा हरेक रेकर्डमा {limit, plural, =1{{limit} फोटो} other{{limit} फोटो}} थप्न सकिन्छ। प्रिमियममा {premiumLimit} सम्म थप्न सकिन्छ।",
   "vaultLimitPremiumBody": "तपाईं हरेक रेकर्डमा {limit} सम्म फोटो थप्न सक्नुहुन्छ। अर्को थप्न एउटा हटाउनुहोस्।",
   "vaultSeePremium": "प्रिमियम हेर्नुहोस्",
   "vaultPdfShort": "PDF",
@@ -1029,7 +1018,7 @@
   "vaultOpenFile": "खोल्नुहोस्",
   "vaultClose": "बन्द गर्नुहोस्",
   "vaultPageIndicator": "{total} मध्ये {current}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 फोटो} other{{count} फोटोहरू}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} फोटो} other{{count} फोटोहरू}}",
   "travelReadinessTitle": "यात्राको तयारी",
   "travelReadinessBody": "Vaultara मा सुरक्षित गरिएका पासपोर्ट र सवारी चालक अनुमति पत्रहरूमा आधारित। धेरैजसो देशले फर्कंदा पासपोर्टको कम्तीमा ६ महिना म्याद बाँकी हुनुपर्ने माग गर्छन्।",
   "travelReadyUntil": "पासपोर्ट {date} सम्मका यात्राका लागि ठीक छ",
@@ -1349,7 +1338,7 @@
   "photoLockTurnOn": "एन्क्रिप्ट गरिएका फोटोहरू चालु गर्नुहोस्",
   "photoLockStatusOn": "एन्क्रिप्ट गरिएका फोटोहरू चालु छन्",
   "photoLockStatusOnBody": "नयाँ फोटोहरू अपलोड हुनुअघि यो फोनमा एन्क्रिप्ट गरिन्छन्।",
-  "photoLockPendingTitle": "{count, plural, one{१ फोटो अझै एन्क्रिप्ट भएको छैन} other{{count} फोटो अझै एन्क्रिप्ट भएका छैनन्}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} फोटो अझै एन्क्रिप्ट भएको छैन} other{{count} फोटो अझै एन्क्रिप्ट भएका छैनन्}}",
   "photoLockPendingBody": "यो चालु गर्नुअघि तपाईंले थपेका फोटोहरू अझै सामान्य तरिकाले राखिएका छन्।",
   "photoLockEncryptExisting": "मेरा अहिलेका फोटोहरू एन्क्रिप्ट गर्नुहोस्",
   "photoLockKeepOpen": "यो सकिएसम्म Vaultara खुला राख्नुहोस्।",
@@ -1386,7 +1375,7 @@
   "photoLockSetupFailed": "हामीले एन्क्रिप्ट गरिएका फोटोहरू चालु गर्न सकेनौं। आफ्नो इन्टरनेट जाँचेर फेरि प्रयास गर्नुहोस्।",
   "photoLockAlreadyOn": "तपाईंको खातामा एन्क्रिप्ट गरिएका फोटोहरू पहिल्यै चालु छन्। यो फोनमा प्रयोग गर्न रिकभरी कुञ्जी हाल्नुहोस्।",
   "photoLockEncryptExistingTitle": "अहिलेका फोटोहरू एन्क्रिप्ट गर्ने?",
-  "photoLockEncryptExistingBody": "{count, plural, one{तपाईंसँग अझै एन्क्रिप्ट नभएको १ फोटो छ। हामी यसलाई अहिले एन्क्रिप्ट गर्न सक्छौं।} other{तपाईंसँग अझै एन्क्रिप्ट नभएका {count} फोटो छन्। हामी तिनलाई अहिले एन्क्रिप्ट गर्न सक्छौं।}} यो सकिएसम्म Vaultara खुला राख्नुहोस्।",
+  "photoLockEncryptExistingBody": "{count, plural, one{तपाईंसँग अझै एन्क्रिप्ट नभएको {count} फोटो छ। हामी यसलाई अहिले एन्क्रिप्ट गर्न सक्छौं।} other{तपाईंसँग अझै एन्क्रिप्ट नभएका {count} फोटो छन्। हामी तिनलाई अहिले एन्क्रिप्ट गर्न सक्छौं।}} यो सकिएसम्म Vaultara खुला राख्नुहोस्।",
   "photoLockEncryptNow": "अहिले एन्क्रिप्ट गर्नुहोस्",
   "photoLockEntryBody": "एन्क्रिप्ट गरिएका फोटोहरू चालु गर्दा तपाईंले सुरक्षित गरेको रिकभरी कुञ्जी हाल्नुहोस्। ड्यास र खाली ठाउँ आवश्यक छैन।",
   "photoLockEntryLabel": "रिकभरी कुञ्जी",
@@ -1395,8 +1384,8 @@
   "photoLockUnlocked": "यो फोनमा तपाईंका फोटोहरू खुल्यो।",
   "photoLockInvalidFormat": "यो रिकभरी कुञ्जी जस्तो देखिँदैन। हरेक अक्षर जाँचेर फेरि प्रयास गर्नुहोस्।",
   "photoLockWrongKey": "यो रिकभरी कुञ्जी मिलेन। जाँचेर फेरि प्रयास गर्नुहोस्।",
-  "photoLockWaitSeconds": "{seconds, plural, one{धेरै प्रयास भयो। कृपया १ सेकेन्ड पर्खेर फेरि प्रयास गर्नुहोस्।} other{धेरै प्रयास भयो। कृपया {seconds} सेकेन्ड पर्खेर फेरि प्रयास गर्नुहोस्।}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{धेरै प्रयास भयो। कृपया १ मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।} other{धेरै प्रयास भयो। कृपया {minutes} मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{धेरै प्रयास भयो। कृपया {seconds} सेकेन्ड पर्खेर फेरि प्रयास गर्नुहोस्।} other{धेरै प्रयास भयो। कृपया {seconds} सेकेन्ड पर्खेर फेरि प्रयास गर्नुहोस्।}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{धेरै प्रयास भयो। कृपया {minutes} मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।} other{धेरै प्रयास भयो। कृपया {minutes} मिनेट पर्खेर फेरि प्रयास गर्नुहोस्।}}",
   "photoLockOffline": "हामी Vaultara सम्म पुग्न सकेनौं। आफ्नो इन्टरनेट जाँचेर फेरि प्रयास गर्नुहोस्।",
   "photoLockNotSetUp": "तपाईंको खातामा एन्क्रिप्ट गरिएका फोटोहरू चालु छैनन्।",
   "photoLockUnlockFailed": "केही गडबड भयो। कृपया फेरि प्रयास गर्नुहोस्।",
@@ -1652,13 +1641,13 @@
   "dailyDigestSwitchSubtitle": "आफ्नो रिमाइन्डरको समयमा त्यस दिन म्याद पुग्ने सबै कुरा देखाउने एउटा सूचना पाउनुहोस्।",
   "dailyDigestTurnedOn": "अब तपाईंका रिमाइन्डर दैनिक एउटा सारांशका रूपमा आउँछन्।",
   "dailyDigestTurnedOff": "हरेक रेकर्डका अलग-अलग रिमाइन्डर फेरि चालु भए।",
-  "dailyDigestTitle": "{count, plural, one{1 रेकर्डमा तपाईंको ध्यान चाहिन्छ} other{{count} रेकर्डमा तपाईंको ध्यान चाहिन्छ}}",
+  "dailyDigestTitle": "{count, plural, one{{count} रेकर्डमा तपाईंको ध्यान चाहिन्छ} other{{count} रेकर्डमा तपाईंको ध्यान चाहिन्छ}}",
   "dailyDigestBody": "आउँदै छन्: {names}।",
   "dailyDigestBodyMore": "आउँदै छन्: {names} र थप {count}।",
   "dailyDigestLockedRecord": "लक गरिएको रेकर्ड",
   "renewReasonRepeat": "{months, plural, one{तपाईंले राखेको हरेक महिना दोहोर्‍याउने सेटिङका आधारमा} other{तपाईंले राखेको हरेक {months} महिनामा दोहोर्‍याउने सेटिङका आधारमा}}",
   "renewReasonHistory": "{count, plural, one{तपाईंको पछिल्लो नवीकरणका आधारमा} other{तपाईंका पछिल्ला {count} नवीकरणका आधारमा}}",
-  "renewReasonTypical": "{years, plural, one{सामान्यतया 1 वर्ष मान्य हुन्छ} other{सामान्यतया {years} वर्ष मान्य हुन्छ}}",
+  "renewReasonTypical": "{years, plural, one{सामान्यतया {years} वर्ष मान्य हुन्छ} other{सामान्यतया {years} वर्ष मान्य हुन्छ}}",
   "renewChangeHint": "मिति बदल्न त्यसमा ट्याप गर्नुहोस्।",
   "renewPickDate": "नयाँ म्याद समाप्ति मिति छान्नुहोस्",
   "renewPickDateHint": "आफ्नो नयाँ कागजातमा देखाइएको मिति छान्नुहोस्।",
@@ -2134,8 +2123,8 @@
   "lifePlanAutoChanged": "Vaultara ले यो रेकर्ड परिवर्तन भएको देख्यो, त्यसैले सकियो भनी चिनो लगाइयो।",
   "lifePlanAutoAdded": "यो योजना सुरु गरेपछि थपिएको।",
   "lifePlanProgress": "{total} मध्ये {done} सकियो",
-  "lifePlanDaysToGo": "{count, plural, =1{1 दिन बाँकी} other{{count} दिन बाँकी}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 दिन अघि} other{{count} दिन अघि}}",
+  "lifePlanDaysToGo": "{count, plural, =1{{count} दिन बाँकी} other{{count} दिन बाँकी}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} दिन अघि} other{{count} दिन अघि}}",
   "lifePlanAllDone": "सबै सकियो। तपाईं योजनालाई सकिएको भनी चिनो लगाउन सक्नुहुन्छ।",
   "lifePlanFinish": "सकिएको भनी चिनो लगाउनुहोस्",
   "lifePlanReopen": "फेरि खोल्नुहोस्",
@@ -2264,7 +2253,7 @@
   "lifePlanReadAloudUnavailable": "यो फोनमा ठूलो स्वरमा पढ्ने सुविधा छैन।",
   "lifePlanProofPack": "प्रमाण प्याक बनाउनुहोस्",
   "lifePlanOpenFamily": "परिवार खोल्नुहोस्",
-  "lifePlanRemoved": "{count, plural, =1{तपाईंले मेटाएको 1 अभिलेख रद्द भएको मानिन्छ।} other{तपाईंले मेटाएका {count} अभिलेख रद्द भएको मानिन्छ।}}",
+  "lifePlanRemoved": "{count, plural, =1{तपाईंले मेटाएको {count} अभिलेख रद्द भएको मानिन्छ।} other{तपाईंले मेटाएका {count} अभिलेख रद्द भएको मानिन्छ।}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2861,5 +2850,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} आज समाप्त हुँदैछ",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} भोलि समाप्त हुँदैछ",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} {days} दिनमा समाप्त हुँदैछ} other{{recordName} {days} दिनमा समाप्त हुँदैछ}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} समाप्त भइसकेको छ",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "लक गरिएको रेकर्डलाई तपाईंको ध्यान चाहिन्छ",
+  "remLockedBody": "यसको मिति {date} हो। कुन रेकर्ड हो हेर्न Vaultara अनलक गर्नुहोस्।",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "तपाईंको रेकर्ड \"{recordName}\" आज समाप्त हुँदैछ।",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "तपाईंको रेकर्ड \"{recordName}\" भोलि समाप्त हुँदैछ।",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "तपाईंको रेकर्ड \"{recordName}\" {date} मा समाप्त हुँदैछ।",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, तपाईंको रेकर्ड \"{recordName}\" आज समाप्त हुँदैछ।",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, तपाईंको रेकर्ड \"{recordName}\" भोलि समाप्त हुँदैछ।",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, तपाईंको रेकर्ड \"{recordName}\" {date} मा समाप्त हुँदैछ।",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: रेकर्ड \"{recordName}\" आज समाप्त हुँदैछ।",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: रेकर्ड \"{recordName}\" भोलि समाप्त हुँदैछ।",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: रेकर्ड \"{recordName}\" {date} मा समाप्त हुँदैछ।",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "तपाईंको रेकर्ड \"{recordName}\" {date} मा समाप्त भयो।",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: रेकर्ड \"{recordName}\" {date} मा समाप्त भयो।",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "पहिले नै नवीकरण गर्नुभयो? यसको मिति अद्यावधिक गर्नुहोस्।",
+  "remTipTomorrow": "समाप्त नहोस् भनेर अहिले नै नवीकरण गर्नुहोस्।",
+  "remTipEarly": "चाँडै नवीकरण गर्दा तपाईं सुरक्षित रहनुहुन्छ।",
+  "remTipLast": "समाप्त हुनुअघिको यो तपाईंको अन्तिम रिमाइन्डर हो।",
+  "remTipExpired": "नवीकरण गर्नुहोस्, वा पहिले नै गर्नुभएको छ भने मिति अद्यावधिक गर्नुहोस्।",
+  "remStartBody": "\"{recordName}\" को नवीकरण सुरु गर्ने समय भयो। यो {date} मा समाप्त हुन्छ, त्यसैले अहिले सुरु गर्दा तपाईंसँग प्रशस्त समय हुनेछ।",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) को नवीकरण सुरु गर्ने समय भयो। यो {date} मा समाप्त हुन्छ, त्यसैले अहिले सुरु गर्दा प्रशस्त समय रहन्छ।",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "समाप्ति रिमाइन्डरहरू",
+  "notifChannelDescription": "तपाईंका रेकर्ड समाप्त हुनुअघि रिमाइन्डरहरू",
+  "notifTestTitle": "परीक्षण सूचना",
+  "notifTestBody": "Vaultara का रिमाइन्डर यसरी आउँछन्।",
+  "notifTestAction": "परीक्षण सूचना पठाउनुहोस्",
+  "notifTestSubtitle": "रिमाइन्डर यो फोनमा आइपुग्छन् कि जाँच गर्नुहोस्",
+  "notifTestSent": "परीक्षण पठाइयो। केही सेकेन्डमा आइपुग्नुपर्छ।",
+  "notifAfterExpiryTitle": "रेकर्ड समाप्त भएपछि सम्झाउनुहोस्",
+  "notifAfterExpirySubtitle": "3 र 14 दिनपछि, नवीकरण नभएको खण्डमा",
+  "notifWeeklyTitle": "सोमबारको सारांश",
+  "notifWeeklySubtitle": "त्यो हप्ता केही समाप्त हुँदा सोमबार बिहान एउटा सन्देश",
+  "notifPushSection": "परिवार र अद्यावधिकहरू",
+  "notifHouseholdTitle": "सेयर गरिएका रेकर्डहरू",
+  "notifHouseholdSubtitle": "सेयर गरिएको रेकर्ड समाप्त हुन लाग्दा र कसैले नवीकरण नगर्दा",
+  "notifUpdatesTitle": "तपाईंले मागेका अद्यावधिकहरू",
+  "notifUpdatesSubtitle": "कसैले रेकर्डको नयाँ विवरण पठाउँदा",
+  "notifSecurityNote": "तपाईंको खातामा नयाँ साइन-इनका चेतावनीहरू सधैं पठाइन्छन्।",
+  "notifIosHelpTitle": "रिमाइन्डर आइरहेका छैनन्?",
+  "notifIosHelpSubtitle": "आफ्नो iPhone का सेटिङहरू जाँच गर्नुहोस्",
+  "notifIosHelpStep1": "सेटिङहरू, त्यसपछि सूचनाहरू, त्यसपछि Vaultara खोल्नुहोस्, र सूचनाहरूलाई अनुमति दिनुहोस् सक्रिय गर्नुहोस्।",
+  "notifIosHelpStep2": "लक स्क्रिन, सूचना केन्द्र र ब्यानरहरू सक्रिय गर्नुहोस्।",
+  "notifIosHelpStep3": "फोकस प्रयोग गर्नुहुन्छ भने, Vaultara लाई अनुमति दिइएका एपहरूमा थप्नुहोस्।",
+  "notifIosHelpStep4": "केही हप्तामा एक पटक Vaultara खोल्नुहोस्। iPhone ले अगाडिका सीमित रिमाइन्डर मात्र राख्छ, र एप खोल्दा अर्का तय हुन्छन्।",
+  "homeNextUpEmpty": "चाँडै केही समाप्त हुँदैन। सबै ठिक छ।",
+  "homeDueSoonChip": "{count, plural, one{30 दिनभित्र {count} बाँकी} other{30 दिनभित्र {count} बाँकी}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "पिन गरिएका श्रेणीहरू"
 }

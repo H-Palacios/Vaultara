@@ -111,9 +111,6 @@
   "homeWelcomeSubtitleGeneric": "မည်သည့်အရာမျှ သတိမထားမိဘဲ သက်တမ်းမကုန်သွားစေရန် အရေးကြီးသော သက်တမ်းကုန်ရက်များကို Vaultara က မှတ်သားပေးသည်။",
   "homeWelcomeSubtitleFirst": "သင့်ကို ဤနေရာတွင် တွေ့ရသည့်အတွက် ဝမ်းသာပါသည်။ အရေးကြီးသော ရက်စွဲများနှင့် မှတ်တမ်းများကို လုံခြုံသော နေရာတစ်ခုတည်းတွင် ထားပေးခြင်းဖြင့် Vaultara က သင့်ကို စနစ်တကျ ဖြစ်စေပါသည်။",
   "homeWelcomeSubtitleBack": "သင့်ကို ပြန်တွေ့ရသည့်အတွက် ဝမ်းသာပါသည်။ အရေးကြီးသော ရက်စွဲများနှင့် မှတ်တမ်းများကို ပြန်ကြည့်လိုသည့်အခါတိုင်း Vaultara ရှိနေပါသည်။",
-  "summaryAllCaption": "Vaultara တွင် စောင့်ကြည့်ထားသည်",
-  "summaryExpiredTitle": "သက်တမ်းကုန်ပြီ",
-  "summaryExpiredCaption": "သက်တမ်းကုန်ရက် ကျော်လွန်ပြီ",
   "editorNotes": "မှတ်စုများ",
   "editorReminderNone": "သတိပေးချက် မရှိ",
   "editorReminderOnExpiry": "သက်တမ်းကုန်ရက်တွင်",
@@ -129,7 +126,6 @@
   "addRecord": "မှတ်တမ်း ထည့်ရန်",
   "noRecordsYet": "မှတ်တမ်း မရှိသေးပါ။",
   "deleteRecordTitle": "မှတ်တမ်း ဖျက်ရန်",
-  "summaryAllRecordsTitle": "မှတ်တမ်းအားလုံး",
   "noGroupFound": "အုပ်စု မရှိသေးပါ",
   "groupLabel": "{count, plural, other{အုပ်စု {count} ခု}}",
   "recordsLabel": "{count, plural, other{မှတ်တမ်း {count} ခု}}",
@@ -249,11 +245,7 @@
   "addNotesHint": "မှတ်စုများ ထည့်ပါ (ချန်လှပ်နိုင်)",
   "expiryTimelineTitle": "သက်တမ်းကုန်ရက် အချိန်လိုင်း",
   "expiryTimelineSubtitle": "ထိုလတွင် သက်တမ်းကုန်မည့် မှတ်တမ်းများကို ကြည့်ရန် လတစ်လကို တို့ပါ",
-  "expiryTimelineDetailCount": "{count, plural, =1{မှတ်တမ်း ၁ ခု} other{မှတ်တမ်း {count} ခု}}",
-  "summaryUpcomingTitle": "လာမည့်အရာများ",
-  "summaryUpcomingCaption": "၃၀ ရက်အတွင်း",
-  "summaryUrgentTitle": "အရေးပေါ်",
-  "summaryUrgentCaption": "၇ ရက်အတွင်း",
+  "expiryTimelineDetailCount": "{count, plural, =1{မှတ်တမ်း {count} ခု} other{မှတ်တမ်း {count} ခု}}",
   "profileHeaderTitle": "ပရိုဖိုင်",
   "profileTutorialsTitle": "သင်ခန်းစာများ",
   "profileTutorialsSubtitle": "အက်ပ် သင်ခန်းစာများ ကြည့်ရန်",
@@ -316,16 +308,16 @@
   "smartInsightNoRecordsHeading": "သင်၏ ပထမဆုံး မှတ်တမ်းကို ထည့်ပါ",
   "smartInsightNoRecordsBody": "သင့်မှတ်တမ်းများကို စတင်စောင့်ကြည့်ပါ၊ Vaultara က ဤနေရာတွင် စမတ် သုံးသပ်ချက်များ ပြပေးပါမည်။",
   "smartInsightExpiresTodaySingleBody": "{name} ယနေ့ သက်တမ်းကုန်မည်။ သက်တမ်းတိုးပြီးပါက ရက်စွဲကို ဤနေရာတွင် အပ်ဒိတ်လုပ်ပါ။",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ယနေ့ သက်တမ်းကုန်မည်။} =1{{names} နှင့် နောက်ထပ် ၁ ခု ယနေ့ သက်တမ်းကုန်မည်။} other{{names} နှင့် နောက်ထပ် {extra} ခု ယနေ့ သက်တမ်းကုန်မည်။}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ယနေ့ သက်တမ်းကုန်မည်။} =1{{names} နှင့် နောက်ထပ် {extra} ခု ယနေ့ သက်တမ်းကုန်မည်။} other{{names} နှင့် နောက်ထပ် {extra} ခု ယနေ့ သက်တမ်းကုန်မည်။}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} မနက်ဖြန် သက်တမ်းကုန်မည်ဖြစ်ပြီး သတိပေးချက် မရှိပါ။ မမေ့စေရန် သတိပေးချက်တစ်ခု သတ်မှတ်ပါ။} other{{name} {date} တွင် သက်တမ်းကုန်မည်ဖြစ်ပြီး သတိပေးချက် မရှိပါ။ မမေ့စေရန် သတိပေးချက်တစ်ခု သတ်မှတ်ပါ။}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} သည် {dateA} တွင်လည်းကောင်း၊ {b} သည် {dateB} တွင်လည်းကောင်း ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ မှတ်တမ်းနှစ်ခု ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။",
   "smartInsightCloseExpiriesBodyThree": "{a}၊ {b} နှင့် {c} အားလုံး {lastDate} မတိုင်မီ ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ အများအပြား ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}၊ {b} နှင့် နောက်ထပ် ၁ ခု {lastDate} မတိုင်မီ ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ အများအပြား ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။} other{{a}၊ {b} နှင့် နောက်ထပ် {extra} ခု {lastDate} မတိုင်မီ ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ အများအပြား ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။}}",
-  "smartInsightQuietPeriodBody": "{days, plural, =1{နောက် ၁ ရက်အတွင်း သက်တမ်းကုန်မည့်အရာ မရှိပါ။ သင်၏ နောက်ထပ် သက်တမ်းကုန်ရက်မှာ {date} ဖြစ်သည်။} other{နောက် {days} ရက်အတွင်း သက်တမ်းကုန်မည့်အရာ မရှိပါ။ သင်၏ နောက်ထပ် သက်တမ်းကုန်ရက်မှာ {date} ဖြစ်သည်။}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} အမျိုးအစားရှိ သင့်မှတ်တမ်း ၁ ခု {date} တွင် သက်တမ်းကုန်မည်။ လွတ်သွားရန် လွယ်သည်။} other{{category} အမျိုးအစားရှိ သင့်မှတ်တမ်း {count} ခု {date} မတိုင်မီ သက်တမ်းကုန်မည်။ ဤသို့ စုနေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{လာမည့် သက်တမ်းကုန်ရက် ၁ ခုအတွက် သတိပေးချက် ရှိသည်။ အခြား ဂရုစိုက်ရန် မလိုပါ။} other{လာမည့် သက်တမ်းကုန်ရက် {count} ခုအတွက် သတိပေးချက်များ ရှိသည်။ အခြား ဂရုစိုက်ရန် မလိုပါ။}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}၊ {b} နှင့် နောက်ထပ် {extra} ခု {lastDate} မတိုင်မီ ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ အများအပြား ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။} other{{a}၊ {b} နှင့် နောက်ထပ် {extra} ခု {lastDate} မတိုင်မီ ခန့်မှန်းခြေ တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်။ အများအပြား ဤမျှ နီးကပ်နေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။}}",
+  "smartInsightQuietPeriodBody": "{days, plural, =1{နောက် {days} ရက်အတွင်း သက်တမ်းကုန်မည့်အရာ မရှိပါ။ သင်၏ နောက်ထပ် သက်တမ်းကုန်ရက်မှာ {date} ဖြစ်သည်။} other{နောက် {days} ရက်အတွင်း သက်တမ်းကုန်မည့်အရာ မရှိပါ။ သင်၏ နောက်ထပ် သက်တမ်းကုန်ရက်မှာ {date} ဖြစ်သည်။}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} အမျိုးအစားရှိ သင့်မှတ်တမ်း {count} ခု {date} တွင် သက်တမ်းကုန်မည်။ လွတ်သွားရန် လွယ်သည်။} other{{category} အမျိုးအစားရှိ သင့်မှတ်တမ်း {count} ခု {date} မတိုင်မီ သက်တမ်းကုန်မည်။ ဤသို့ စုနေသည့်အခါ တစ်ခုကို မေ့သွားရန် လွယ်သည်။}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{လာမည့် သက်တမ်းကုန်ရက် {count} ခုအတွက် သတိပေးချက် ရှိသည်။ အခြား ဂရုစိုက်ရန် မလိုပါ။} other{လာမည့် သက်တမ်းကုန်ရက် {count} ခုအတွက် သတိပေးချက်များ ရှိသည်။ အခြား ဂရုစိုက်ရန် မလိုပါ။}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "အရာအားလုံး နောက်ဆုံးအခြေအနေအတိုင်း ဖြစ်နေသည်။ ယခုအချိန်တွင် ဂရုစိုက်ရန် မလိုပါ။",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ယခု အရေးပေါ် မရှိသော်လည်း လာမည့် မှတ်တမ်း ၁ ခုတွင် သတိပေးချက် မရှိသေးပါ။} other{ယခု အရေးပေါ် မရှိသော်လည်း လာမည့် မှတ်တမ်း {count} ခုတွင် သတိပေးချက် မရှိသေးပါ။}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{ယခု အရေးပေါ် မရှိသော်လည်း လာမည့် မှတ်တမ်း {count} ခုတွင် သတိပေးချက် မရှိသေးပါ။} other{ယခု အရေးပေါ် မရှိသော်လည်း လာမည့် မှတ်တမ်း {count} ခုတွင် သတိပေးချက် မရှိသေးပါ။}}",
   "smartInsightCloseExpiriesHeading": "တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်",
   "plansHeadline": "Vaultara အပြည့်အစုံကို ရယူပါ",
   "plansSubhead": "အကန့်အသတ်မဲ့ မှတ်တမ်းများ၊ ကိုယ်ပိုင်အုပ်စုများနှင့် သင်လိုသလို အတိအကျ ချိန်ညှိထားသော သတိပေးချက်များ။",
@@ -357,7 +349,7 @@
   "reminderCascadeRemoveStep": "ဖယ်ရှားရန်",
   "reminderCascadeDuplicate": "ဤရက်ကို အခြား သတိပေးချက်တစ်ခု သုံးထားပြီးဖြစ်သည်",
   "reminderCascadeOutOfRange": "{min} မှ {max} ရက်အတွင်း ထည့်ပါ",
-  "reminderCascadeStepLabel": "သတိပေးချက် {position}: {days, plural, =1{၁ ရက်} other{{days} ရက်}} ကြို၍",
+  "reminderCascadeStepLabel": "သတိပေးချက် {position}: {days, plural, =1{{days} ရက်} other{{days} ရက်}} ကြို၍",
   "expiryTimelineNotReady": "မတူညီသော လအနည်းငယ်တွင် သက်တမ်းကုန်မည့် မှတ်တမ်းများ ရှိလာသည်နှင့် သင့်အချိန်လိုင်း ပေါ်လာပါမည်။",
   "verifyEmailResendIn": "{seconds} စက္ကန့်အကြာတွင် ပြန်ပို့ရန်",
   "verifyEmailSpamHint": "မတွေ့ပါသလား။ စပမ် သို့မဟုတ် အမှိုက်ဖိုင်တွဲကို စစ်ကြည့်ပါ။",
@@ -366,13 +358,10 @@
   "verifyEmailDiscardBody": "ဤအကောင့်ကို မစိစစ်အတည်ပြုရသေးပါ။ ယခု ထွက်လိုက်ပါက ၎င်းကို ဖယ်ရှားမည်ဖြစ်ပြီး မည်သည့် အီးမေးလ်လိပ်စာဖြင့်မဆို အကောင့် ပြန်ပြုလုပ်နိုင်သည်။",
   "verifyEmailDiscardAction": "ဖယ်ပစ်ရန်",
   "verifyEmailKeepWaiting": "ဆက်စောင့်ရန်",
-  "expiringBadge": "{count, plural, =1{၁ ခု သက်တမ်းကုန်မည်} other{{count} ခု သက်တမ်းကုန်မည်}}",
+  "expiringBadge": "{count, plural, =1{{count} ခု သက်တမ်းကုန်မည်} other{{count} ခု သက်တမ်းကုန်မည်}}",
   "noRecordsToday": "ယနေ့ သက်တမ်းကုန်မည့်အရာ မရှိပါ",
   "noRecordsTomorrow": "မနက်ဖြန် သက်တမ်းကုန်မည့်အရာ မရှိပါ",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} ယနေ့ သက်တမ်းကုန်မည်} =1{{recordName} မနက်ဖြန် သက်တမ်းကုန်မည်} other{{recordName} {days} ရက်အကြာတွင် သက်တမ်းကုန်မည်}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}၊ သင်၏ {recordName} ယနေ့ သက်တမ်းကုန်မည်။ သက်တမ်းတိုးပြီးပြီလား။ သက်တမ်းကုန်ရက်ကို အပ်ဒိတ်လုပ်ပါ။} =1{{firstName}၊ သင်၏ {recordName} မနက်ဖြန် သက်တမ်းကုန်မည်။ သက်တမ်းမကုန်သွားစေရန် ယခု သက်တမ်းတိုးပါ။} other{{firstName}၊ သင်၏ {recordName} {date} တွင် သက်တမ်းကုန်မည်။ စောစီးစွာ သက်တမ်းတိုးထားခြင်းက သင့်ကို စိတ်ချရစေသည်။}}",
   "cascadeFinalStepTitle": "နောက်ဆုံး သတိပေးချက်: {recordName}",
-  "cascadeFinalStepBody": "{firstName}၊ သင်၏ {recordName} {days, plural, =1{မနက်ဖြန်} other{{days} ရက်အကြာ {date} တွင်}} သက်တမ်းကုန်မည်။ ဤသည်မှာ နောက်ဆုံး သတိပေးချက် ဖြစ်သည်၊ သက်တမ်းတိုးပါ သို့မဟုတ် ရက်စွဲကို အပ်ဒိတ်လုပ်ပါ။",
   "notificationsTitle": "အကြောင်းကြားချက်များ",
   "notificationsProfileEnabledSubtitle": "သတိပေးချက်များ {time} တွင် ရောက်လာမည်။",
   "notificationsProfileDisabledSubtitle": "အကြောင်းကြားချက်များ ပိတ်ထားသည်။",
@@ -431,7 +420,7 @@
   "costCardTitle": "သက်တမ်းတိုးစရိတ်များ",
   "costCardSubtitle": "သင့်သက်တမ်းတိုးမှု ကုန်ကျစရိတ် လစဉ်",
   "costCardBusiest": "အများဆုံး ကုန်ကျမည့်လ: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{လာမည့် မှတ်တမ်း ၁ ခုတွင် စရိတ် မထည့်ရသေးပါ။} other{လာမည့် မှတ်တမ်း {count} ခုတွင် စရိတ် မထည့်ရသေးပါ။}}",
+  "costCardMissing": "{count, plural, =1{လာမည့် မှတ်တမ်း {count} ခုတွင် စရိတ် မထည့်ရသေးပါ။} other{လာမည့် မှတ်တမ်း {count} ခုတွင် စရိတ် မထည့်ရသေးပါ။}}",
   "costCardEmpty": "သက်တမ်းတိုးရန် ကုန်ကျမည့်ငွေကို ကြည့်ရန် သင့်မှတ်တမ်းများတွင် စရိတ် ထည့်ပါ။",
   "costCardLockedHint": "လာမည့်နှစ်အတွင်း သက်တမ်းတိုးစရိတ်များကို Premium ဖြင့် ကြည့်ပါ။",
   "costCardSeePremium": "Premium ကြည့်ရန်",
@@ -439,7 +428,7 @@
   "familyTitle": "မိသားစု",
   "familyIntro": "သင် စောင့်ရှောက်ပေးသူများ၏ မှတ်တမ်းများကို စောင့်ကြည့်ပါ။ ၎င်းတို့၏ သတိပေးချက်များတွင် အမည်ပါသဖြင့် မည်သူ့မှတ်တမ်းဖြစ်ကြောင်း သိနိုင်ပါသည်။",
   "familyMe": "ကျွန်ုပ်",
-  "familyRecordCount": "{count, plural, =0{မှတ်တမ်း မရှိပါ} =1{မှတ်တမ်း ၁ ခု} other{မှတ်တမ်း {count} ခု}}",
+  "familyRecordCount": "{count, plural, =0{မှတ်တမ်း မရှိပါ} =1{မှတ်တမ်း {count} ခု} other{မှတ်တမ်း {count} ခု}}",
   "familyRename": "အမည်ပြောင်းရန်",
   "familyRemove": "ဖယ်ရှားရန်",
   "familyRemoveTitle": "{name} ကို ဖယ်ရှားမလား။",
@@ -452,10 +441,10 @@
   "familyNameLabel": "အမည်",
   "familyNameHint": "ဥပမာ Thabo",
   "familyNameRequired": "အမည် ထည့်ပါ",
-  "familyLimitNote": "{count, plural, =1{လူ ၁ ဦးအထိ} other{လူ {count} ဦးအထိ}}",
+  "familyLimitNote": "{count, plural, =1{လူ {count} ဦးအထိ} other{လူ {count} ဦးအထိ}}",
   "familyUpsellTitle": "သင့်မိသားစု၏ စာရွက်စာတမ်းများကို စောင့်ကြည့်ပါ",
   "familyBenefitPremium": "Premium ပါ အရာအားလုံး",
-  "familyBenefitPeople": "{count, plural, =1{လူ ၁ ဦး ထည့်နိုင်သည်} other{လူ {count} ဦးအထိ ထည့်နိုင်သည်}}",
+  "familyBenefitPeople": "{count, plural, =1{လူ {count} ဦး ထည့်နိုင်သည်} other{လူ {count} ဦးအထိ ထည့်နိုင်သည်}}",
   "familyBenefitOwnRecords": "လူတိုင်းတွင် ကိုယ်ပိုင် မှတ်တမ်းနှင့် သတိပေးချက်များ ရှိသည်",
   "familyBenefitOneSubscription": "အိမ်ထောင်စုတစ်ခုလုံးအတွက် စာရင်းသွင်းမှု တစ်ခုတည်း",
   "familySeePlan": "မိသားစု အစီအစဉ် ကြည့်ရန်",
@@ -641,14 +630,14 @@
   "calendarExportError": "ပြက္ခဒိန်ဖိုင် ဖန်တီး၍ မရပါ။ ထပ်ကြိုးစားပါ။",
   "pdfExportTitle": "Vaultara မှတ်တမ်းများ",
   "pdfExportGenerated": "{date} တွင် ထုတ်ထားသည်",
-  "pdfExportCount": "{count, plural, =1{မှတ်တမ်း ၁ ခု} other{မှတ်တမ်း {count} ခု}}",
+  "pdfExportCount": "{count, plural, =1{မှတ်တမ်း {count} ခု} other{မှတ်တမ်း {count} ခု}}",
   "pdfExportCost": "သက်တမ်းတိုးစရိတ်: {amount}",
   "pdfExportBuilding": "သင့် PDF ကို ပြင်ဆင်နေသည်...",
   "pdfExportError": "PDF ဖန်တီး၍ မရပါ။ ထပ်ကြိုးစားပါ။",
   "travelTitle": "ခရီးစစ်ဆေးမှု",
   "travelDeparture": "ထွက်ခွာမည့်ရက်",
   "travelReturn": "ပြန်လာမည့်ရက်",
-  "travelTripLength": "{days, plural, =1{၁ ရက် ခရီး} other{{days} ရက် ခရီး}}",
+  "travelTripLength": "{days, plural, =1{{days} ရက် ခရီး} other{{days} ရက် ခရီး}}",
   "travelDriving": "ကားမောင်းမည်",
   "travelNeedsVisa": "ဗီဇာ လိုအပ်သည်",
   "travelWho": "မည်သူ ခရီးသွားမည်နည်း။",
@@ -669,9 +658,9 @@
   "travelNoLicence": "ယာဉ်မောင်းလိုင်စင် မထည့်ရသေးပါ",
   "travelOtherExpires": "သင် ခရီးထွက်နေစဉ် သက်တမ်းကုန်မည်",
   "travelDetailValidUntil": "{name} သည် {date} အထိ သက်တမ်းရှိသည်။",
-  "travelDetailPassportBuffer": "{name} သည် {date} တွင် သက်တမ်းကုန်မည်။ နိုင်ငံအများစုသည် သင်ပြန်လာပြီးနောက် {months, plural, =1{၁ လ} other{{months} လ}} သက်တမ်းကျန်ရန် လိုအပ်သည်။",
+  "travelDetailPassportBuffer": "{name} သည် {date} တွင် သက်တမ်းကုန်မည်။ နိုင်ငံအများစုသည် သင်ပြန်လာပြီးနောက် {months, plural, =1{{months} လ} other{{months} လ}} သက်တမ်းကျန်ရန် လိုအပ်သည်။",
   "travelDetailExpiresBeforeLeaving": "{name} သည် သင်မထွက်ခွာမီ {date} တွင် သက်တမ်းကုန်မည်။",
-  "travelDetailExpiresDuringTrip": "{name} သည် {date} တွင် သက်တမ်းကုန်မည်၊ {days, plural, =0{သင်ထွက်ခွာသည့်နေ့} =1{ခရီးစပြီး ၁ ရက်မြောက်နေ့} other{ခရီးစပြီး {days} ရက်မြောက်နေ့}}။",
+  "travelDetailExpiresDuringTrip": "{name} သည် {date} တွင် သက်တမ်းကုန်မည်၊ {days, plural, =0{သင်ထွက်ခွာသည့်နေ့} =1{ခရီးစပြီး {days} ရက်မြောက်နေ့} other{ခရီးစပြီး {days} ရက်မြောက်နေ့}}။",
   "travelDetailNoPassport": "Vaultara စစ်ဆေးနိုင်ရန် သင့်နိုင်ငံကူးလက်မှတ်ကို ထည့်ပါ။",
   "travelDetailNoVisa": "Vaultara စစ်ဆေးနိုင်ရန် သင့်ဗီဇာကို ထည့်ပါ။",
   "travelDetailNoInsurance": "ခရီးတစ်လျှောက်လုံး ကာမိမမိ စစ်ရန် သင့်ခရီးသွားအာမခံကို ထည့်ပါ။",
@@ -723,7 +712,7 @@
   "travelInProgress": "ခရီးထွက်နေဆဲ",
   "travelTripEnded": "ခရီး ပြီးဆုံးပြီ",
   "travelAllGood": "စာရွက်စာတမ်းအားလုံး အဆင်သင့်",
-  "travelIssues": "{count, plural, =1{ဂရုပြုရန် ၁ ခု ရှိသည်} other{ဂရုပြုရန် {count} ခု ရှိသည်}}",
+  "travelIssues": "{count, plural, =1{ဂရုပြုရန် {count} ခု ရှိသည်} other{ဂရုပြုရန် {count} ခု ရှိသည်}}",
   "travelChecklistTitle": "ခရီး စစ်ဆေးစာရင်း",
   "travelChecklistProgress": "{total} ခုအနက် {done} ခု ပြီးပြီ",
   "travelChecklistAdd": "ထည့်ရန်",
@@ -743,7 +732,7 @@
   "travelTripTo": "{name} ခရီး",
   "travelReminderTitle": "{days, plural, other{{days} ရက်အတွင်း {name} ခရီး}}",
   "travelReminderTitleTomorrow": "မနက်ဖြန် {name} ခရီး",
-  "travelReminderBodyIssues": "{count, plural, =1{မထွက်ခွာမီ စာရွက်စာတမ်း ၁ ခုကို ဂရုပြုရန် လိုသည်။} other{မထွက်ခွာမီ စာရွက်စာတမ်း {count} ခုကို ဂရုပြုရန် လိုသည်။}}",
+  "travelReminderBodyIssues": "{count, plural, =1{မထွက်ခွာမီ စာရွက်စာတမ်း {count} ခုကို ဂရုပြုရန် လိုသည်။} other{မထွက်ခွာမီ စာရွက်စာတမ်း {count} ခုကို ဂရုပြုရန် လိုသည်။}}",
   "travelReminderBodyOk": "သင့်စာရွက်စာတမ်းများ အဆင်သင့်ဖြစ်ပါပြီ။ စာရင်းကို စစ်ရန် ခရီးကို ဖွင့်ပါ။",
   "travelTripLimit": "ခရီး {count} ခုအထိ သိမ်းနိုင်သည်။ အသစ်ထည့်ရန် ခရီးဟောင်းတစ်ခုကို ဖျက်ပါ။",
   "recordLockTitle": "ဤမှတ်တမ်းကို လော့ခ်ချရန်",
@@ -771,7 +760,7 @@
   "vaultChooseFromGallery": "ဓာတ်ပုံပြခန်းမှ ရွေးရန်",
   "vaultRemove": "ဖယ်ရှားရန်",
   "vaultLimitTitle": "ဓာတ်ပုံ ကန့်သတ်ချက် ပြည့်သွားပါပြီ",
-  "vaultLimitFreeBody": "အခမဲ့ အစီအစဉ်တွင် မှတ်တမ်းတစ်ခုစီသို့ {limit, plural, =1{ဓာတ်ပုံ ၁ ပုံ} other{ဓာတ်ပုံ {limit} ပုံ}} ထည့်နိုင်သည်။ Premium ဖြင့် {premiumLimit} ပုံအထိ ထည့်နိုင်သည်။",
+  "vaultLimitFreeBody": "အခမဲ့ အစီအစဉ်တွင် မှတ်တမ်းတစ်ခုစီသို့ {limit, plural, =1{ဓာတ်ပုံ {limit} ပုံ} other{ဓာတ်ပုံ {limit} ပုံ}} ထည့်နိုင်သည်။ Premium ဖြင့် {premiumLimit} ပုံအထိ ထည့်နိုင်သည်။",
   "vaultLimitPremiumBody": "မှတ်တမ်းတစ်ခုစီသို့ ဓာတ်ပုံ {limit} ပုံအထိ ထည့်နိုင်သည်။ နောက်တစ်ပုံ ထည့်ရန် တစ်ပုံ ဖယ်ရှားပါ။",
   "vaultSeePremium": "Premium ကြည့်ရန်",
   "vaultPdfShort": "PDF",
@@ -779,7 +768,7 @@
   "vaultOpenFile": "ဖွင့်ရန်",
   "vaultClose": "ပိတ်ရန်",
   "vaultPageIndicator": "{total} အနက် {current}",
-  "vaultPhotosTooltip": "{count, plural, =1{ဓာတ်ပုံ ၁ ပုံ} other{ဓာတ်ပုံ {count} ပုံ}}",
+  "vaultPhotosTooltip": "{count, plural, =1{ဓာတ်ပုံ {count} ပုံ} other{ဓာတ်ပုံ {count} ပုံ}}",
   "travelReadinessTitle": "ခရီးသွားရန် အဆင်သင့်ဖြစ်မှု",
   "travelReadinessBody": "Vaultara တွင် သိမ်းထားသော နိုင်ငံကူးလက်မှတ်နှင့် ယာဉ်မောင်းလိုင်စင်များအပေါ် အခြေခံထားသည်။ နိုင်ငံအများစုက ပြန်လာချိန်တွင် နိုင်ငံကူးလက်မှတ်၌ အနည်းဆုံး ၆ လ ကျန်ရှိရန် လိုအပ်သည်။",
   "travelReadyUntil": "နိုင်ငံကူးလက်မှတ်ကို {date} အထိ ခရီးများအတွက် သုံးနိုင်သည်",
@@ -2611,5 +2600,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} ယနေ့ သက်တမ်းကုန်မည်",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} မနက်ဖြန် သက်တမ်းကုန်မည်",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} {days} ရက်အတွင်း သက်တမ်းကုန်မည်}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} သက်တမ်းကုန်သွားပြီ",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "လော့ခ်ချထားသော မှတ်တမ်းတစ်ခုက သင့်အာရုံစိုက်မှု လိုအပ်နေသည်",
+  "remLockedBody": "၎င်း၏ရက်စွဲမှာ {date} ဖြစ်သည်။ မည်သည့်မှတ်တမ်းဖြစ်သည်ကို ကြည့်ရန် Vaultara ကို လော့ခ်ဖွင့်ပါ။",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "သင်၏ \"{recordName}\" မှတ်တမ်း ယနေ့ သက်တမ်းကုန်မည်။",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "သင်၏ \"{recordName}\" မှတ်တမ်း မနက်ဖြန် သက်တမ်းကုန်မည်။",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "သင်၏ \"{recordName}\" မှတ်တမ်း {date} တွင် သက်တမ်းကုန်မည်။",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}၊ သင်၏ \"{recordName}\" မှတ်တမ်း ယနေ့ သက်တမ်းကုန်မည်။",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}၊ သင်၏ \"{recordName}\" မှတ်တမ်း မနက်ဖြန် သက်တမ်းကုန်မည်။",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}၊ သင်၏ \"{recordName}\" မှတ်တမ်း {date} တွင် သက်တမ်းကုန်မည်။",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: \"{recordName}\" မှတ်တမ်း ယနေ့ သက်တမ်းကုန်မည်။",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: \"{recordName}\" မှတ်တမ်း မနက်ဖြန် သက်တမ်းကုန်မည်။",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: \"{recordName}\" မှတ်တမ်း {date} တွင် သက်တမ်းကုန်မည်။",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "သင်၏ \"{recordName}\" မှတ်တမ်း {date} တွင် သက်တမ်းကုန်ခဲ့သည်။",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: \"{recordName}\" မှတ်တမ်း {date} တွင် သက်တမ်းကုန်ခဲ့သည်။",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "သက်တမ်းတိုးပြီးပြီလား။ ၎င်း၏ရက်စွဲကို အပ်ဒိတ်လုပ်ပါ။",
+  "remTipTomorrow": "သက်တမ်းမကုန်စေရန် ယခုပင် သက်တမ်းတိုးပါ။",
+  "remTipEarly": "စောစီးစွာ သက်တမ်းတိုးခြင်းက သင့်ကို အကာအကွယ်ရှိစေသည်။",
+  "remTipLast": "သက်တမ်းမကုန်မီ နောက်ဆုံးသတိပေးချက် ဖြစ်သည်။",
+  "remTipExpired": "သက်တမ်းတိုးပါ၊ သို့မဟုတ် ပြုလုပ်ပြီးပါက ရက်စွဲကို အပ်ဒိတ်လုပ်ပါ။",
+  "remStartBody": "\"{recordName}\" ကို သက်တမ်းတိုးရန် စတင်ချိန် ရောက်ပြီ။ {date} တွင် သက်တမ်းကုန်မည်ဖြစ်၍ ယခုစတင်ပါက အချိန်အလုံအလောက် ရှိပါမည်။",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "\"{recordName}\" ({person}) ကို သက်တမ်းတိုးရန် စတင်ချိန် ရောက်ပြီ။ {date} တွင် သက်တမ်းကုန်မည်ဖြစ်၍ ယခုစတင်ပါက အချိန်အလုံအလောက် ရှိပါမည်။",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "သက်တမ်းကုန် သတိပေးချက်များ",
+  "notifChannelDescription": "သင်၏မှတ်တမ်းများ သက်တမ်းမကုန်မီ သတိပေးချက်များ",
+  "notifTestTitle": "စမ်းသပ် အသိပေးချက်",
+  "notifTestBody": "Vaultara သတိပေးချက်များ ဤသို့ရောက်လာပါသည်။",
+  "notifTestAction": "စမ်းသပ် အသိပေးချက် ပို့ရန်",
+  "notifTestSubtitle": "သတိပေးချက်များ ဤဖုန်းသို့ ရောက်မရောက် စစ်ဆေးပါ",
+  "notifTestSent": "စမ်းသပ်မှု ပို့ပြီးပါပြီ။ စက္ကန့်အနည်းငယ်အတွင်း ရောက်လာပါမည်။",
+  "notifAfterExpiryTitle": "မှတ်တမ်း သက်တမ်းကုန်ပြီးနောက် သတိပေးပါ",
+  "notifAfterExpirySubtitle": "3 ရက်နှင့် 14 ရက်အကြာ၊ သက်တမ်းမတိုးရသေးပါက",
+  "notifWeeklyTitle": "တနင်္လာနေ့ အနှစ်ချုပ်",
+  "notifWeeklySubtitle": "ထိုအပတ်တွင် တစ်ခုခု သက်တမ်းကုန်မည်ဆိုပါက တနင်္လာနေ့မနက် မက်ဆေ့ချ်",
+  "notifPushSection": "မိသားစုနှင့် အပ်ဒိတ်များ",
+  "notifHouseholdTitle": "မျှဝေထားသော မှတ်တမ်းများ",
+  "notifHouseholdSubtitle": "မျှဝေထားသော မှတ်တမ်းတစ်ခု သက်တမ်းကုန်ခါနီးပြီး မည်သူမျှ သက်တမ်းမတိုးရသေးသည့်အခါ",
+  "notifUpdatesTitle": "သင်တောင်းဆိုထားသော အပ်ဒိတ်များ",
+  "notifUpdatesSubtitle": "တစ်စုံတစ်ယောက်က မှတ်တမ်း၏ အချက်အလက်အသစ်ကို ပို့သည့်အခါ",
+  "notifSecurityNote": "သင့်အကောင့်သို့ ဝင်ရောက်မှုအသစ်များအကြောင်း သတိပေးချက်များကို အမြဲပို့ပါသည်။",
+  "notifIosHelpTitle": "သတိပေးချက်များ မရောက်ဘူးလား။",
+  "notifIosHelpSubtitle": "သင်၏ iPhone ဆက်တင်များကို စစ်ဆေးပါ",
+  "notifIosHelpStep1": "ဆက်တင်များ၊ ထို့နောက် အသိပေးချက်များ၊ ထို့နောက် Vaultara ကိုဖွင့်ပြီး အသိပေးချက်များကို ခွင့်ပြုရန် ဖွင့်ပါ။",
+  "notifIosHelpStep2": "လော့ခ်မျက်နှာပြင်၊ အသိပေးချက်စင်တာနှင့် ဘန်နာများကို ဖွင့်ပါ။",
+  "notifIosHelpStep3": "Focus ကို သုံးပါက Vaultara ကို ခွင့်ပြုထားသော အက်ပ်များတွင် ထည့်ပါ။",
+  "notifIosHelpStep4": "ရက်သတ္တပတ်အနည်းငယ်တိုင်း Vaultara ကိုဖွင့်ပါ။ iPhone သည် ကြိုတင်သတိပေးချက် အရေအတွက်အကန့်အသတ်ဖြင့်သာ သိမ်းထားပြီး အက်ပ်ဖွင့်လျှင် နောက်ထပ်များကို စီစဉ်ပေးပါသည်။",
+  "homeNextUpEmpty": "မကြာမီ သက်တမ်းကုန်မည့်အရာ မရှိပါ။ အားလုံး အဆင်သင့်ပါ။",
+  "homeDueSoonChip": "{count, plural, other{ရက် 30 အတွင်း {count} ခု}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "ပင်ထိုးထားသော အမျိုးအစားများ"
 }

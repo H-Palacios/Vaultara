@@ -360,15 +360,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'ຍິນດີທີ່ໄດ້ພົບທ່ານອີກຄັ້ງ. Vaultara ພ້ອມສຳລັບຂໍ້ມູນສຳຄັນຂອງທ່ານເສມີ.';
 
   @override
-  String get summaryAllCaption => 'ຕິດຕາມຢູ່ໃນ Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'ໝົດອາຍຸແລ້ວ';
-
-  @override
-  String get summaryExpiredCaption => 'ຜ່ານວັນໝົດອາຍຸ';
-
-  @override
   String get editorNotes => 'ໝາຍເຫດ';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'ລຶບບັນທຶກ';
-
-  @override
-  String get summaryAllRecordsTitle => 'ບັນທຶກທັງໝົດ';
 
   @override
   String get noGroupFound => 'ຍັງບໍ່ມີກຸ່ມ';
@@ -829,22 +817,10 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ບັນທຶກ',
-      one: '1 ບັນທຶກ',
+      one: '$count ບັນທຶກ',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'ກຳລັງຈະມາ';
-
-  @override
-  String get summaryUpcomingCaption => 'ພາຍໃນ 30 ມື້';
-
-  @override
-  String get summaryUrgentTitle => 'ດ່ວນ';
-
-  @override
-  String get summaryUrgentCaption => 'ພາຍໃນ 7 ມື້';
 
   @override
   String get profileHeaderTitle => 'ໂປຣໄຟລ໌';
@@ -1047,7 +1023,7 @@ class AppLocalizationsLo extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names ແລະ ອີກ $extra ລາຍການໝົດອາຍຸມື້ນີ້.',
-      one: '$names ແລະ ອີກ 1 ລາຍການໝົດອາຍຸມື້ນີ້.',
+      one: '$names ແລະ ອີກ $extra ລາຍການໝົດອາຍຸມື້ນີ້.',
       zero: '$names ໝົດອາຍຸມື້ນີ້.',
     );
     return '$_temp0';
@@ -1080,7 +1056,7 @@ class AppLocalizationsLo extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b ແລະ ອີກ $extra ລາຍການຈະໝົດອາຍຸພາຍໃນວັນທີ $lastDate, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອມີຫຼາຍລາຍການໃກ້ກັນຂະໜາດນີ້.',
-      one: '$a, $b ແລະ ອີກ 1 ລາຍການຈະໝົດອາຍຸພາຍໃນວັນທີ $lastDate, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອມີຫຼາຍລາຍການໃກ້ກັນຂະໜາດນີ້.',
+      one: '$a, $b ແລະ ອີກ $extra ລາຍການຈະໝົດອາຍຸພາຍໃນວັນທີ $lastDate, ເຊິ່ງເປັນຊ່ວງເວລາໃກ້ຄຽງກັນ. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອມີຫຼາຍລາຍການໃກ້ກັນຂະໜາດນີ້.',
     );
     return '$_temp0';
   }
@@ -1102,7 +1078,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ບັນທຶກໃນໝວດໝູ່ $category ຈຳນວນ $count ລາຍການຂອງທ່ານຈະໝົດອາຍຸພາຍໃນວັນທີ $date. ມັນງ່າຍທີ່ຈະລືມລາຍການໃດໜຶ່ງເມື່ອພວກມັນຖືກຈັດກຸ່ມແບບນີ້.',
-      one: 'ບັນທຶກໃນໝວດໝູ່ $category ຈຳນວນ 1 ລາຍການຂອງທ່ານຈະໝົດອາຍຸວັນທີ $date. ມັນງ່າຍທີ່ຈະເບິ່ງຂ້າມ.',
+      one: 'ບັນທຶກໃນໝວດໝູ່ $category ຈຳນວນ $count ລາຍການຂອງທ່ານຈະໝົດອາຍຸວັນທີ $date. ມັນງ່າຍທີ່ຈະເບິ່ງຂ້າມ.',
     );
     return '$_temp0';
   }
@@ -1113,7 +1089,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ການໝົດອາຍຸທີ່ຈະເກີດຂຶ້ນ $count ລາຍການ ມີການຕັ້ງການເຕືອນໄວ້ແລ້ວ. ບໍ່ມີຫຍັງອື່ນທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານ.',
-      one: 'ການໝົດອາຍຸທີ່ຈະເກີດຂຶ້ນ 1 ລາຍການ ມີການຕັ້ງການເຕືອນໄວ້ແລ້ວ. ບໍ່ມີຫຍັງອື່ນທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານ.',
+      one: 'ການໝົດອາຍຸທີ່ຈະເກີດຂຶ້ນ $count ລາຍການ ມີການຕັ້ງການເຕືອນໄວ້ແລ້ວ. ບໍ່ມີຫຍັງອື່ນທີ່ຕ້ອງການຄວາມສົນໃຈຈາກທ່ານ.',
     );
     return '$_temp0';
   }
@@ -1127,7 +1103,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ໃນເວລານີ້ບໍ່ມີຫຍັງຮີບດ່ວນ, ແຕ່ມີ $count ລາຍການທີ່ກຳລັງຈະເກີດຂຶ້ນເຊິ່ງຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ.',
-      one: 'ໃນເວລານີ້ບໍ່ມີຫຍັງຮີບດ່ວນ, ແຕ່ມີ 1 ລາຍການທີ່ກຳລັງຈະເກີດຂຶ້ນເຊິ່ງຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ.',
+      one: 'ໃນເວລານີ້ບໍ່ມີຫຍັງຮີບດ່ວນ, ແຕ່ມີ $count ລາຍການທີ່ກຳລັງຈະເກີດຂຶ້ນເຊິ່ງຍັງບໍ່ໄດ້ຕັ້ງການເຕືອນ.',
     );
     return '$_temp0';
   }
@@ -1251,7 +1227,7 @@ class AppLocalizationsLo extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ມື້',
-      one: '1 ມື້',
+      one: '$days ມື້',
     );
     return 'ການເຕືອນ $position: $_temp0 ກ່ອນ';
   }
@@ -1288,7 +1264,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ໃກ້ຈະໝົດອາຍຸ',
-      one: '1 ໃກ້ຈະໝົດອາຍຸ',
+      one: '$count ໃກ້ຈະໝົດອາຍຸ',
     );
     return '$_temp0';
   }
@@ -1300,43 +1276,8 @@ class AppLocalizationsLo extends AppLocalizations {
   String get noRecordsTomorrow => 'ມື້ອື່ນບໍ່ມີຫຍັງໝົດອາຍຸ';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName ຈະໝົດອາຍຸໃນອີກ $days ມື້',
-      one: '$recordName ໝົດອາຍຸໃນມື້ອື່ນ',
-      zero: '$recordName ໝົດອາຍຸໃນມື້ນີ້',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName ຂອງທ່ານຈະໝົດອາຍຸໃນວັນທີ $date. ການຕໍ່ອາຍຸກ່ອນເວລາຈະຊ່ວຍໃຫ້ທ່ານໄດ້ຮັບການຄຸ້ມຄອງຢ່າງຕໍ່ເນື່ອງ.',
-      one: '$firstName, $recordName ຂອງທ່ານໝົດອາຍຸໃນມື້ອື່ນ. ຕໍ່ອາຍຸດຽວນີ້ເພື່ອບໍ່ໃຫ້ມັນຂາດອາຍຸ.',
-      zero: '$firstName, $recordName ຂອງທ່ານໝົດອາຍຸໃນມື້ນີ້. ທ່ານໄດ້ຕໍ່ອາຍຸແລ້ວບໍ? ອັບເດດວັນໝົດອາຍຸ.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'ການເຕືອນຄັ້ງສຸດທ້າຍ: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'ໃນອີກ $days ມື້, ວັນທີ $date',
-      one: 'ໃນມື້ອື່ນ',
-    );
-    return '$firstName, $recordName ຂອງທ່ານຈະໝົດອາຍຸ $_temp0. ນີ້ແມ່ນການເຕືອນຄັ້ງສຸດທ້າຍຂອງທ່ານ, ກະລຸນາຕໍ່ອາຍຸ ຫຼື ອັບເດດວັນທີ.';
   }
 
   @override
@@ -1531,7 +1472,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ມີ $count ບັນທຶກທີ່ຈະມາເຖິງທີ່ຍັງບໍ່ມີຄ່າໃຊ້ຈ່າຍ.',
-      one: 'ມີ 1 ບັນທຶກທີ່ຈະມາເຖິງທີ່ຍັງບໍ່ມີຄ່າໃຊ້ຈ່າຍ.',
+      one: 'ມີ $count ບັນທຶກທີ່ຈະມາເຖິງທີ່ຍັງບໍ່ມີຄ່າໃຊ້ຈ່າຍ.',
     );
     return '$_temp0';
   }
@@ -1565,7 +1506,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ບັນທຶກ',
-      one: '1 ບັນທຶກ',
+      one: '$count ບັນທຶກ',
       zero: 'ບໍ່ມີບັນທຶກ',
     );
     return '$_temp0';
@@ -1621,7 +1562,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ສູງສຸດ $count ຄົນ',
-      one: 'ສູງສຸດ 1 ຄົນ',
+      one: 'ສູງສຸດ $count ຄົນ',
     );
     return '$_temp0';
   }
@@ -1638,7 +1579,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ເພີ່ມໄດ້ສູງສຸດ $count ຄົນ',
-      one: 'ເພີ່ມໄດ້ 1 ຄົນ',
+      one: 'ເພີ່ມໄດ້ $count ຄົນ',
     );
     return '$_temp0';
   }
@@ -2222,7 +2163,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ບັນທຶກ',
-      one: '1 ບັນທຶກ',
+      one: '$count ບັນທຶກ',
     );
     return '$_temp0';
   }
@@ -2253,7 +2194,7 @@ class AppLocalizationsLo extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ເດີນທາງ $days ມື້',
-      one: 'ເດີນທາງ 1 ມື້',
+      one: 'ເດີນທາງ $days ມື້',
     );
     return '$_temp0';
   }
@@ -2326,7 +2267,7 @@ class AppLocalizationsLo extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months ເດືອນ',
-      one: '1 ເດືອນ',
+      one: '$months ເດືອນ',
     );
     return '$name ໝົດອາຍຸ $date. ຫຼາຍປະເທດຕ້ອງການໃຫ້ເຫຼືອອາຍຸ $_temp0 ຫຼັງທ່ານກັບຄືນ.';
   }
@@ -2342,7 +2283,7 @@ class AppLocalizationsLo extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ມື້ຫຼັງອອກເດີນທາງ',
-      one: '1 ມື້ຫຼັງອອກເດີນທາງ',
+      one: '$days ມື້ຫຼັງອອກເດີນທາງ',
       zero: 'ໃນມື້ທີ່ທ່ານອອກເດີນທາງ',
     );
     return '$name ໝົດອາຍຸ $date, $_temp0.';
@@ -2520,7 +2461,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ມີ $count ລາຍການຕ້ອງກວດເບິ່ງ',
-      one: 'ມີ 1 ລາຍການຕ້ອງກວດເບິ່ງ',
+      one: 'ມີ $count ລາຍການຕ້ອງກວດເບິ່ງ',
     );
     return '$_temp0';
   }
@@ -2601,7 +2542,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ມີເອກະສານ $count ລາຍການຕ້ອງກວດເບິ່ງກ່ອນທ່ານອອກເດີນທາງ.',
-      one: 'ມີເອກະສານ 1 ລາຍການຕ້ອງກວດເບິ່ງກ່ອນທ່ານອອກເດີນທາງ.',
+      one: 'ມີເອກະສານ $count ລາຍການຕ້ອງກວດເບິ່ງກ່ອນທ່ານອອກເດີນທາງ.',
     );
     return '$_temp0';
   }
@@ -2704,7 +2645,7 @@ class AppLocalizationsLo extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit ຮູບ',
-      one: '1 ຮູບ',
+      one: '$limit ຮູບ',
     );
     return 'ແພັກເກດຟຣີໃຫ້ເພີ່ມ $_temp0 ຕໍ່ບັນທຶກ. ດ້ວຍ ພຣີເມຍມ ທ່ານເພີ່ມໄດ້ສູງສຸດ $premiumLimit.';
   }
@@ -2740,7 +2681,7 @@ class AppLocalizationsLo extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ຮູບ',
-      one: '1 ຮູບ',
+      one: '$count ຮູບ',
     );
     return '$_temp0';
   }
@@ -8218,4 +8159,202 @@ class AppLocalizationsLo extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'ການເຕືອນ: $name ໝົດອາຍຸວັນທີ $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName ໝົດອາຍຸມື້ນີ້';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName ໝົດອາຍຸມື້ອື່ນ';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName ຈະໝົດອາຍຸໃນອີກ $days ມື້',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName ໝົດອາຍຸແລ້ວ';
+  }
+
+  @override
+  String get remLockedTitle => 'ບັນທຶກທີ່ລັອກຕ້ອງການຄວາມສົນໃຈຂອງທ່ານ';
+
+  @override
+  String remLockedBody(String date) {
+    return 'ວັນທີຂອງມັນແມ່ນ $date. ປົດລັອກ Vaultara ເພື່ອເບິ່ງວ່າແມ່ນບັນທຶກໃດ.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'ບັນທຶກ \"$recordName\" ຂອງທ່ານໝົດອາຍຸມື້ນີ້.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'ບັນທຶກ \"$recordName\" ຂອງທ່ານໝົດອາຍຸມື້ອື່ນ.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'ບັນທຶກ \"$recordName\" ຂອງທ່ານຈະໝົດອາຍຸໃນວັນທີ $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, ບັນທຶກ \"$recordName\" ຂອງທ່ານໝົດອາຍຸມື້ນີ້.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, ບັນທຶກ \"$recordName\" ຂອງທ່ານໝົດອາຍຸມື້ອື່ນ.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, ບັນທຶກ \"$recordName\" ຂອງທ່ານຈະໝົດອາຍຸໃນວັນທີ $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: ບັນທຶກ \"$recordName\" ໝົດອາຍຸມື້ນີ້.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: ບັນທຶກ \"$recordName\" ໝົດອາຍຸມື້ອື່ນ.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: ບັນທຶກ \"$recordName\" ຈະໝົດອາຍຸໃນວັນທີ $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'ບັນທຶກ \"$recordName\" ຂອງທ່ານໝົດອາຍຸເມື່ອວັນທີ $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: ບັນທຶກ \"$recordName\" ໝົດອາຍຸເມື່ອວັນທີ $date.';
+  }
+
+  @override
+  String get remTipToday => 'ຕໍ່ອາຍຸແລ້ວບໍ? ອັບເດດວັນທີຂອງມັນ.';
+
+  @override
+  String get remTipTomorrow => 'ຕໍ່ອາຍຸດຽວນີ້ເພື່ອບໍ່ໃຫ້ໝົດອາຍຸ.';
+
+  @override
+  String get remTipEarly => 'ການຕໍ່ອາຍຸແຕ່ເນີ່ນໆ ຊ່ວຍໃຫ້ທ່ານປອດໄພ.';
+
+  @override
+  String get remTipLast => 'ນີ້ແມ່ນການແຈ້ງເຕືອນສຸດທ້າຍກ່ອນໝົດອາຍຸ.';
+
+  @override
+  String get remTipExpired => 'ຕໍ່ອາຍຸ, ຫຼື ອັບເດດວັນທີຖ້າທ່ານເຮັດແລ້ວ.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'ຮອດເວລາເລີ່ມຕໍ່ອາຍຸ \"$recordName\" ແລ້ວ. ມັນຈະໝົດອາຍຸໃນວັນທີ $date, ສະນັ້ນຖ້າເລີ່ມດຽວນີ້ທ່ານຈະມີເວລາຫຼວງຫຼາຍ.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'ຮອດເວລາເລີ່ມຕໍ່ອາຍຸ \"$recordName\" ($person) ແລ້ວ. ມັນຈະໝົດອາຍຸໃນວັນທີ $date, ສະນັ້ນຖ້າເລີ່ມດຽວນີ້ຈະມີເວລາຫຼວງຫຼາຍ.';
+  }
+
+  @override
+  String get notifChannelName => 'ການແຈ້ງເຕືອນວັນໝົດອາຍຸ';
+
+  @override
+  String get notifChannelDescription => 'ການແຈ້ງເຕືອນກ່ອນບັນທຶກຂອງທ່ານໝົດອາຍຸ';
+
+  @override
+  String get notifTestTitle => 'ການແຈ້ງເຕືອນທົດສອບ';
+
+  @override
+  String get notifTestBody => 'ການແຈ້ງເຕືອນຈາກ Vaultara ຈະມາແບບນີ້.';
+
+  @override
+  String get notifTestAction => 'ສົ່ງການແຈ້ງເຕືອນທົດສອບ';
+
+  @override
+  String get notifTestSubtitle => 'ກວດສອບວ່າການແຈ້ງເຕືອນມາຮອດໂທລະສັບນີ້';
+
+  @override
+  String get notifTestSent => 'ສົ່ງການທົດສອບແລ້ວ. ຄວນມາຮອດພາຍໃນບໍ່ເທົ່າໃດວິນາທີ.';
+
+  @override
+  String get notifAfterExpiryTitle => 'ເຕືອນຂ້ອຍຫຼັງບັນທຶກໝົດອາຍຸ';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 ແລະ 14 ມື້ຫຼັງຈາກນັ້ນ, ຖ້າຍັງບໍ່ໄດ້ຕໍ່ອາຍຸ';
+
+  @override
+  String get notifWeeklyTitle => 'ສະຫຼຸບວັນຈັນ';
+
+  @override
+  String get notifWeeklySubtitle => 'ຂໍ້ຄວາມເຊົ້າວັນຈັນເມື່ອມີບາງຢ່າງໝົດອາຍຸໃນອາທິດນັ້ນ';
+
+  @override
+  String get notifPushSection => 'ຄອບຄົວ ແລະ ການອັບເດດ';
+
+  @override
+  String get notifHouseholdTitle => 'ບັນທຶກທີ່ແບ່ງປັນ';
+
+  @override
+  String get notifHouseholdSubtitle => 'ເມື່ອບັນທຶກທີ່ແບ່ງປັນໃກ້ໝົດອາຍຸ ແລະ ບໍ່ມີໃຜຕໍ່ອາຍຸ';
+
+  @override
+  String get notifUpdatesTitle => 'ການອັບເດດທີ່ທ່ານຂໍ';
+
+  @override
+  String get notifUpdatesSubtitle => 'ເມື່ອມີຄົນສົ່ງລາຍລະອຽດໃໝ່ຂອງບັນທຶກ';
+
+  @override
+  String get notifSecurityNote => 'ການແຈ້ງເຕືອນການເຂົ້າສູ່ລະບົບໃໝ່ໃນບັນຊີຂອງທ່ານຈະຖືກສົ່ງສະເໝີ.';
+
+  @override
+  String get notifIosHelpTitle => 'ບໍ່ໄດ້ຮັບການແຈ້ງເຕືອນບໍ?';
+
+  @override
+  String get notifIosHelpSubtitle => 'ກວດສອບການຕັ້ງຄ່າ iPhone ຂອງທ່ານ';
+
+  @override
+  String get notifIosHelpStep1 => 'ເປີດການຕັ້ງຄ່າ, ຈາກນັ້ນການແຈ້ງເຕືອນ, ຈາກນັ້ນ Vaultara, ແລະ ເປີດອະນຸຍາດການແຈ້ງເຕືອນ.';
+
+  @override
+  String get notifIosHelpStep2 => 'ເປີດໜ້າຈໍລັອກ, ສູນການແຈ້ງເຕືອນ ແລະ ແບນເນີ.';
+
+  @override
+  String get notifIosHelpStep3 => 'ຖ້າທ່ານໃຊ້ໂຟກັສ, ໃຫ້ເພີ່ມ Vaultara ໃສ່ແອັບທີ່ອະນຸຍາດ.';
+
+  @override
+  String get notifIosHelpStep4 => 'ເປີດ Vaultara ທຸກໆສອງສາມອາທິດ. iPhone ເກັບການແຈ້ງເຕືອນລ່ວງໜ້າໄດ້ຈຳນວນຈຳກັດ, ແລະ ການເປີດແອັບຈະຕັ້ງເວລາອັນຕໍ່ໄປ.';
+
+  @override
+  String get homeNextUpEmpty => 'ບໍ່ມີຫຍັງຈະໝົດອາຍຸໄວໆນີ້. ທຸກຢ່າງພ້ອມແລ້ວ.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ລາຍການຮອດກຳນົດໃນ 30 ມື້',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'ໝວດໝູ່ທີ່ປັກໝຸດ';
 }

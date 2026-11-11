@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleFirst": "ご利用ありがとうございます。Vaultaraは重要な日付や記録を安全な場所で整理します。",
   "homeWelcomeSubtitleBack": "またお会いできて嬉しいです。Vaultaraはいつでも重要な日付や記録を確認できます。",
   "homeWelcomeTitle": "ようこそ",
-  "summaryAllCaption": "Vaultaraで管理中",
-  "summaryExpiredTitle": "期限切れ",
-  "summaryExpiredCaption": "有効期限を過ぎています",
   "editorNotes": "メモ",
   "editorReminderNone": "リマインダーなし",
   "editorReminderOnExpiry": "有効期限当日",
@@ -199,7 +196,6 @@
   "addRecord": "記録を追加",
   "noRecordsYet": "まだ記録がありません。",
   "deleteRecordTitle": "記録を削除",
-  "summaryAllRecordsTitle": "すべての記録",
   "noGroupFound": "まだグループがありません",
   "groupLabel": "{count, plural, one{{count} グループ} other{{count} グループ}}",
   "recordsLabel": "{count, plural, one{{count} 件の記録} other{{count} 件の記録}}",
@@ -457,10 +453,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "近日中",
-  "summaryUpcomingCaption": "30日以内",
-  "summaryUrgentTitle": "緊急",
-  "summaryUrgentCaption": "7日以内",
   "profileHeaderTitle": "プロフィール",
   "profileTutorialsTitle": "チュートリアル",
   "profileTutorialsSubtitle": "アプリのチュートリアルを見る",
@@ -631,10 +623,7 @@
   "expiringBadge": "{count, plural, =1{1件がまもなく期限切れ} other{{count}件がまもなく期限切れ}}",
   "noRecordsToday": "本日期限切れになるものはありません",
   "noRecordsTomorrow": "明日期限切れになるものはありません",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} の期限は本日です} =1{{recordName} の期限は明日です} other{{recordName} の期限まであと {days} 日です}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName} さん、{recordName} は本日で有効期限が切れます。すでに更新されましたか？有効期限を変更してください。} =1{{firstName} さん、{recordName} は明日で有効期限が切れます。失効する前に今すぐ更新してください。} other{{firstName} さん、{recordName} は {date} に有効期限が切れます。早めに更新して継続してご利用ください。}}",
   "cascadeFinalStepTitle": "最終リマインダー: {recordName}",
-  "cascadeFinalStepBody": "{firstName} さん、{recordName} は {days, plural, =1{明日} other{あと {days} 日後の {date}}} に有効期限が切れます。これが最後のリマインダーです。更新するか、日付を最新にしてください。",
   "notificationsTitle": "通知",
   "notificationsProfileEnabledSubtitle": "リマインダーは{time}に届きます。",
   "notificationsProfileDisabledSubtitle": "通知はオフになっています。",
@@ -2873,5 +2862,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} の期限は今日です",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} の期限は明日です",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, other{{recordName} の期限まであと {days} 日です}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} の期限が切れました",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "ロックされた記録の確認が必要です",
+  "remLockedBody": "期限は {date} です。どの記録かを見るには Vaultara のロックを解除してください。",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "記録「{recordName}」の期限は今日です。",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "記録「{recordName}」の期限は明日です。",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "記録「{recordName}」の期限は {date} です。",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}さん、記録「{recordName}」の期限は今日です。",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}さん、記録「{recordName}」の期限は明日です。",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}さん、記録「{recordName}」の期限は {date} です。",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}さんの記録「{recordName}」の期限は今日です。",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}さんの記録「{recordName}」の期限は明日です。",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}さんの記録「{recordName}」の期限は {date} です。",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "記録「{recordName}」の期限は {date} に切れました。",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}さんの記録「{recordName}」の期限は {date} に切れました。",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "更新済みですか？日付を変更してください。",
+  "remTipTomorrow": "期限が切れないよう、今すぐ更新しましょう。",
+  "remTipEarly": "早めの更新で安心です。",
+  "remTipLast": "期限前の最後のリマインダーです。",
+  "remTipExpired": "更新するか、更新済みなら日付を変更してください。",
+  "remStartBody": "「{recordName}」の更新を始める時期です。期限は {date} なので、今始めれば時間に余裕があります。",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "{person}さんの「{recordName}」の更新を始める時期です。期限は {date} なので、今始めれば時間に余裕があります。",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "期限のリマインダー",
+  "notifChannelDescription": "記録の期限が切れる前のリマインダー",
+  "notifTestTitle": "テスト通知",
+  "notifTestBody": "Vaultara のリマインダーはこのように届きます。",
+  "notifTestAction": "テスト通知を送信",
+  "notifTestSubtitle": "リマインダーがこのスマートフォンに届くか確認します",
+  "notifTestSent": "テストを送信しました。数秒で届きます。",
+  "notifAfterExpiryTitle": "期限が切れた後にも知らせる",
+  "notifAfterExpirySubtitle": "更新されていなければ、3日後と14日後に",
+  "notifWeeklyTitle": "月曜日のまとめ",
+  "notifWeeklySubtitle": "その週に期限が来るものがあるとき、月曜の朝にお知らせ",
+  "notifPushSection": "世帯とアップデート",
+  "notifHouseholdTitle": "共有された記録",
+  "notifHouseholdSubtitle": "共有された記録の期限が近く、誰も更新していないとき",
+  "notifUpdatesTitle": "依頼したアップデート",
+  "notifUpdatesSubtitle": "誰かが記録の新しい情報を送ってきたとき",
+  "notifSecurityNote": "アカウントへの新しいサインインの通知は常に送信されます。",
+  "notifIosHelpTitle": "リマインダーが届きませんか？",
+  "notifIosHelpSubtitle": "iPhone の設定を確認してください",
+  "notifIosHelpStep1": "設定、通知、Vaultara の順に開き、「通知を許可」をオンにします。",
+  "notifIosHelpStep2": "ロック画面、通知センター、バナーをオンにします。",
+  "notifIosHelpStep3": "集中モードを使っている場合は、許可するアプリに Vaultara を追加します。",
+  "notifIosHelpStep4": "数週間に一度は Vaultara を開いてください。iPhone は先の予定を限られた数しか保存できず、アプリを開くと次の分が予約されます。",
+  "homeNextUpEmpty": "近いうちに期限が来るものはありません。準備万端です。",
+  "homeDueSoonChip": "{count, plural, other{30日以内に {count} 件}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "ピン留めしたカテゴリ"
 }

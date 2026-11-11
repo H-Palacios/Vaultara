@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara palīdz sekot svarīgiem derīguma termiņiem, lai nekas nebeigtos nepamanīti.",
   "homeWelcomeSubtitleFirst": "Prieks jūs redzēt šeit. Vaultara glabā svarīgus datumus un ierakstus vienā drošā vietā.",
   "homeWelcomeSubtitleBack": "Prieks jūs atkal redzēt. Vaultara vienmēr ir gatava jūsu svarīgajiem datiem.",
-  "summaryAllCaption": "Sekoti Vaultara",
-  "summaryExpiredTitle": "Beigušies",
-  "summaryExpiredCaption": "Pēc derīguma termiņa",
   "editorNotes": "Piezīmes",
   "editorReminderNone": "Nav atgādinājuma",
   "editorReminderOnExpiry": "Derīguma termiņa dienā",
@@ -192,7 +189,6 @@
   "addRecord": "Pievienot ierakstu",
   "noRecordsYet": "Vēl nav ierakstu.",
   "deleteRecordTitle": "Dzēst ierakstu",
-  "summaryAllRecordsTitle": "Visi ieraksti",
   "noGroupFound": "Grupu vēl nav",
   "groupLabel": "{count, plural, one{{count} grupa} other{{count} grupas}}",
   "recordsLabel": "{count, plural, one{{count} ieraksts} other{{count} ieraksti}}",
@@ -455,7 +451,7 @@
   "addNotesHint": "Pievienot piezīmes (neobligāti)",
   "expiryTimelineTitle": "Derīguma termiņa laika līnija",
   "expiryTimelineSubtitle": "Pieskarieties mēnesim, lai redzētu ierakstus, kuriem beidzas derīgums tajā mēnesī",
-  "expiryTimelineDetailCount": "{count, plural, =0{ieraksta nav} =1{1 ieraksts} other{{count} ieraksti}}",
+  "expiryTimelineDetailCount": "{count, plural, =0{{count} ieraksti} =1{{count} ieraksts} other{{count} ieraksti}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Gaidāmi",
-  "summaryUpcomingCaption": "30 dienu laikā",
-  "summaryUrgentTitle": "Steidzami",
-  "summaryUrgentCaption": "7 dienu laikā",
   "profileHeaderTitle": "Profils",
   "profileTutorialsTitle": "Pamācības",
   "profileTutorialsSubtitle": "Pārlūkot Lietotnes Pamācības",
@@ -498,7 +490,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Nav atgādinājuma",
   "reminderOnExpiry": "Derīguma termiņa dienā",
-  "reminderDaysBefore": "{days, plural, one{1 diena pirms} other{{days} dienas pirms}}",
+  "reminderDaysBefore": "{days, plural, one{{days} diena pirms} other{{days} dienas pirms}}",
   "reminderCustomDaysTitle": "Ievadiet pielāgotas dienas",
   "reminderCascadeTitle": "Kaskādes atgādinājumi",
   "reminderCascadeSubtitle": "Saņemiet vairākus paziņojumus pirms ieraksta derīguma termiņa beigām",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "Pievienojiet savu pirmo ierakstu",
   "smartInsightNoRecordsBody": "Sāciet sekot saviem ierakstiem, un Vaultara šeit parādīs viedos ieskatus.",
   "smartInsightExpiresTodaySingleBody": "{name} termiņš beidzas šodien. Ja jau esat to atjaunojis, atjauniniet datumu šeit.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} termiņš beidzas šodien.} =1{{names} un vēl 1 ieraksts beidzas šodien.} other{{names} un vēl {extra} ieraksti beidzas šodien.}}",
-  "smartInsightSilentRiskBody": "{days, plural, =1{{name} termiņš beidzas rīt, un tam nav atgādinājuma. Iestatiet to, lai nepalaistu garām.} other{{name} termiņš beidzas {date}, un tam nav atgādinājuma. Iestatiet to, lai nepalaistu garām.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} un vēl {extra} ieraksti beidzas šodien.} =1{{names} un vēl {extra} ieraksts beidzas šodien.} other{{names} un vēl {extra} ieraksti beidzas šodien.}}",
+  "smartInsightSilentRiskBody": "{days, plural, other{{name} termiņš beidzas {date}, un tam nav atgādinājuma. Iestatiet to, lai nepalaistu garām.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} termiņš beidzas {dateA} un {b} beidzas {dateB}, aptuveni tajā pašā laikā. Ir viegli aizmirst vienu, ja divi ieraksti ir tik tuvu.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} un {c} termiņš beidzas līdz {lastDate}, aptuveni tajā pašā laikā. Ir viegli aizmirst vienu, ja vairāki ieraksti ir tik tuvu.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} un vēl 1 ieraksts beidzas līdz {lastDate}, aptuveni tajā pašā laikā. Ir viegli aizmirst vienu, ja vairāki ieraksti ir tik tuvu.} other{{a}, {b} un vēl {extra} ieraksti beidzas līdz {lastDate}, aptuveni tajā pašā laikā. Ir viegli aizmirst vienu, ja vairāki ieraksti ir tik tuvu.}}",
-  "smartInsightQuietPeriodBody": "{days, plural, =1{Nākamajā dienā nekas nebeidzas. Jūsu nākamais termiņš ir {date}.} other{Tuvākajās {days} dienās nekas nebeidzas. Jūsu nākamais termiņš ir {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Jūsu 1 ieraksta termiņš kategorijā {category} beidzas {date}. To ir viegli palaist garām.} other{Jūsu {count} ierakstu termiņš kategorijā {category} beidzas līdz {date}. Ir viegli aizmirst vienu, ja tie ir šādi grupēti.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 gaidāmais termiņš ir segts ar atgādinājumu. Nekas cits neprasa jūsu uzmanību.} other{{count} gaidāmie termiņi ir segti ar atgādinājumiem. Nekas cits neprasa jūsu uzmanību.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} un vēl {extra} ieraksts beidzas līdz {lastDate}, aptuveni tajā pašā laikā. Ir viegli aizmirst vienu, ja vairāki ieraksti ir tik tuvu.} other{{a}, {b} un vēl {extra} ieraksti beidzas līdz {lastDate}, aptuveni tajā pašā laikā. Ir viegli aizmirst vienu, ja vairāki ieraksti ir tik tuvu.}}",
+  "smartInsightQuietPeriodBody": "{days, plural, one{Tuvākajā {days} dienā nekas nebeidzas. Jūsu nākamais termiņš ir {date}.} other{Tuvākajās {days} dienās nekas nebeidzas. Jūsu nākamais termiņš ir {date}.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Jūsu {count} ieraksta termiņš kategorijā {category} beidzas {date}. To ir viegli palaist garām.} other{Jūsu {count} ierakstu termiņš kategorijā {category} beidzas līdz {date}. Ir viegli aizmirst vienu, ja tie ir šādi grupēti.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} gaidāmais termiņš ir segts ar atgādinājumu. Nekas cits neprasa jūsu uzmanību.} other{{count} gaidāmie termiņi ir segti ar atgādinājumiem. Nekas cits neprasa jūsu uzmanību.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Viss ir atjaunināts. Pašlaik nekas neprasa jūsu uzmanību.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Pašlaik nekas nav steidzams, taču 1 gaidāmajam ierakstam vēl nav atgādinājuma.} other{Pašlaik nekas nav steidzams, taču {count} gaidāmajiem ierakstiem vēl nav atgādinājumu.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Pašlaik nekas nav steidzams, taču {count} gaidāmajam ierakstam vēl nav atgādinājuma.} other{Pašlaik nekas nav steidzams, taču {count} gaidāmajiem ierakstiem vēl nav atgādinājumu.}}",
   "smartInsightCloseExpiriesHeading": "Termiņš beidzas aptuveni tajā pašā laikā",
   "plansHeadline": "Iegūstiet pilnu Vaultara",
   "plansSubhead": "Neierobežots ierakstu skaits, jūsu grupas un atgādinājumi, kas pielāgoti tieši tā, kā vēlaties.",
@@ -625,7 +617,7 @@
   "reminderCascadeRemoveStep": "Noņemt",
   "reminderCascadeDuplicate": "Cits atgādinājums jau izmanto šo dienu",
   "reminderCascadeOutOfRange": "Ievadiet no {min} līdz {max} dienām",
-  "reminderCascadeStepLabel": "Atgādinājums {position}: {days, plural, =1{1 dienu} other{{days} dienas}} pirms",
+  "reminderCascadeStepLabel": "Atgādinājums {position}: {days, plural, =1{{days} dienu} other{{days} dienas}} pirms",
   "expiryTimelineNotReady": "Jūsu laika skala parādīsies, tiklīdz jums būs ieraksti, kuru derīguma termiņš beidzas dažos dažādos mēnešos.",
   "verifyEmailResendIn": "Nosūtīt vēlreiz pēc {seconds} s",
   "verifyEmailSpamHint": "Nav saņemts? Pārbaudiet surogātpasta vai nevēlamā pasta mapi.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "Šis konts nav verificēts. Ja pamesiet lapu tagad, tas tiks dzēsts, un jūs varēsiet reģistrēties no jauna ar jebkuru e-pasta adresi.",
   "verifyEmailDiscardAction": "Atmest",
   "verifyEmailKeepWaiting": "Turpināt gaidīt",
-  "expiringBadge": "{count, plural, =1{1 drīz beigsies} other{{count} drīz beigsies}}",
+  "expiringBadge": "{count, plural, =1{{count} drīz beigsies} other{{count} drīz beigsies}}",
   "noRecordsToday": "Šodien nekas nebeidzas",
   "noRecordsTomorrow": "Rīt nekas nebeigsies",
-  "cascadeStepTitle": "{days, plural, zero{{recordName} termiņš beidzas pēc {days} dienām} one{{recordName} termiņš beidzas pēc {days} dienas} other{{recordName} termiņš beidzas pēc {days} dienām}}",
-  "cascadeStepBody": "{days, plural, zero{{firstName}, jūsu {recordName} termiņš beidzas {date}. Savlaicīga atjaunošana nodrošina aizsardzību.} one{{firstName}, jūsu {recordName} termiņš beidzas {date}. Savlaicīga atjaunošana nodrošina aizsardzību.} other{{firstName}, jūsu {recordName} termiņš beidzas {date}. Savlaicīga atjaunošana nodrošina aizsardzību.}}",
   "cascadeFinalStepTitle": "Pēdējais atgādinājums: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, jūsu {recordName} termiņš beidzas {days, plural, zero{pēc {days} dienām, {date}} one{pēc {days} dienas, {date}} other{pēc {days} dienām, {date}}}. Šis ir jūsu pēdējais atgādinājums, atjaunojiet to vai atjauniniet tā datumu.",
   "notificationsTitle": "Paziņojumi",
   "notificationsProfileEnabledSubtitle": "Atgādinājumi pienāk plkst. {time}.",
   "notificationsProfileDisabledSubtitle": "Paziņojumi ir izslēgti.",
@@ -1071,8 +1060,8 @@
   "leadLabel": "Atjaunošana aizņem aptuveni",
   "leadHelper": "Vaultara sāk atgādināt pietiekami agri, lai varētu atjaunot laikā.",
   "leadNotSet": "Nezinu",
-  "leadWeeks": "{weeks, plural, zero{{weeks} nedēļu} one{{weeks} nedēļa} other{{weeks} nedēļas}}",
-  "leadMonths": "{months, plural, zero{{months} mēnešu} one{{months} mēnesis} other{{months} mēneši}}",
+  "leadWeeks": "{weeks, plural, zero{{weeks} nedēļas} one{{weeks} nedēļa} other{{weeks} nedēļas}}",
+  "leadMonths": "{months, plural, zero{{months} mēneši} one{{months} mēnesis} other{{months} mēneši}}",
   "walletTileTitle": "Manā makā",
   "walletTileSubtitle": "Ja pazaudējat maku, Vaultara parāda, kas jāaizstāj",
   "startRenewingBy": "Sāciet atjaunošanu līdz {date}",
@@ -1102,7 +1091,7 @@
   "lifeEventCountry": "Es pārceļos uz citu valsti",
   "lifeEventCountryBody": "Pārbaudiet katru no tiem pirms aizbraukšanas un vēlreiz pēc ierašanās.",
   "lifeEventNone": "Šis neietekmē nevienu jūsu saglabāto ierakstu.",
-  "lifeEventCount": "{count, plural, zero{{count} jūsu ierakstu} one{{count} jūsu ieraksts} other{{count} jūsu ieraksti}}",
+  "lifeEventCount": "{count, plural, zero{{count} jūsu ieraksti} one{{count} jūsu ieraksts} other{{count} jūsu ieraksti}}",
   "proofPackTitle": "Pierādījumu komplekts",
   "proofPackSubtitle": "Ievietojiet izvēlētos ierakstus un to foto vienā PDF",
   "proofPackIntro": "Izvēlieties ierakstus, ko jums ir lūdzis kāds, piemēram, darba devējs, vēstniecība vai apdrošinātājs. Vaultara tos ievieto vienā PDF, ko varat nosūtīt pa e-pastu vai augšupielādēt.",
@@ -1130,7 +1119,7 @@
   "smartInsightTripHeading": "Jūsu ceļojumam vajadzīga uzmanība",
   "smartInsightActionOpenTrip": "Atvērt ceļojumu",
   "smartInsightBusyMonthHeading": "Gaidāms rosīgs mēnesis",
-  "smartInsightBusyMonthBody": "{count, plural, zero{{month} beidzas {count} ierakstu termiņš. Ieplānojiet to savlaicīgi.} one{{month} beidzas {count} ieraksta termiņš. Ieplānojiet to savlaicīgi.} other{{month} beidzas {count} ierakstu termiņš. Ieplānojiet tos kopā, lai neviens neaizmirstos.}}",
+  "smartInsightBusyMonthBody": "{count, plural, zero{{month} beidzas {count} ierakstu termiņš. Ieplānojiet tos kopā, lai neviens neaizmirstos.} one{{month} beidzas {count} ieraksta termiņš. Ieplānojiet to savlaicīgi.} other{{month} beidzas {count} ierakstu termiņš. Ieplānojiet tos kopā, lai neviens neaizmirstos.}}",
   "smartInsightBusyMonthCostBody": "{count, plural, zero{{month} beidzas {count} ierakstu termiņš, un atjaunošana izmaksās aptuveni {amount}. Ieplānojiet tos kopā.} one{{month} beidzas {count} ieraksta termiņš, un atjaunošana izmaksās aptuveni {amount}. Ieplānojiet to savlaicīgi.} other{{month} beidzas {count} ierakstu termiņš, un atjaunošana izmaksās aptuveni {amount}. Ieplānojiet tos kopā.}}",
   "smartInsightActionSeeTimeline": "Skatīt laika līniju",
   "smartInsightMissingRemindersHeading": "Ieraksti bez atgādinājuma",
@@ -1152,8 +1141,8 @@
   "businessPlanSwitch": "Pāriet uz uzņēmumu plānu",
   "planSwitchToYearly": "Pāriet uz gada plānu",
   "planSwitchToMonthly": "Pāriet uz mēneša plānu",
-  "planTrialDays": "{count, plural, zero{{count} dienu} one{{count} diena} other{{count} dienas}}",
-  "planTrialMonths": "{count, plural, zero{{count} mēnešu} one{{count} mēnesis} other{{count} mēneši}}",
+  "planTrialDays": "{count, plural, zero{{count} dienas} one{{count} diena} other{{count} dienas}}",
+  "planTrialMonths": "{count, plural, zero{{count} mēneši} one{{count} mēnesis} other{{count} mēneši}}",
   "planTrialCta": "Izmēģināt bez maksas {length}",
   "planTrialThen": "Bez maksas {length}, pēc tam {price}{period}. Atcelt var jebkurā laikā.",
   "planTrialNoCharge": "Šobrīd maksājums nav jāveic. Pirms bezmaksas izmēģinājuma beigām jūs atgādināsim.",
@@ -1188,13 +1177,13 @@
   "travelErrorNameOrDestination": "Izvēlieties galamērķi vai ievadiet ceļojuma nosaukumu",
   "travelDetailPassportNeeds": "{name} termiņš beidzas {date}. Šim ceļojumam tas jābūt derīgam līdz {needed}.",
   "travelReadySchengenUntil": "Joprojām der Šengenas zonas ceļojumiem, kas beidzas līdz {date}",
-  "travelFixBeforeYouGo": "{count, plural, zero{{count} lietu jānokārto pirms došanās ceļā} one{{count} lieta jānokārto pirms došanās ceļā} other{{count} lietas jānokārto pirms došanās ceļā}}",
-  "travelDaysToGo": "{count, plural, zero{{count} dienu līdz ceļojumam} one{{count} diena līdz ceļojumam} other{{count} dienas līdz ceļojumam}}",
+  "travelFixBeforeYouGo": "{count, plural, zero{{count} lietas jānokārto pirms došanās ceļā} one{{count} lieta jānokārto pirms došanās ceļā} other{{count} lietas jānokārto pirms došanās ceļā}}",
+  "travelDaysToGo": "{count, plural, zero{{count} dienas līdz ceļojumam} one{{count} diena līdz ceļojumam} other{{count} dienas līdz ceļojumam}}",
   "travelSectionWho": "Kas brauc",
   "travelSectionReminders": "Atgādinājumi",
   "travelRemindersBody": "Vaultara atgādina jums šajās dienās un katru reizi vēlreiz pārbauda jūsu dokumentus.",
   "travelRemindersPassed": "Šī ceļojuma atgādinājumu dienas ir pagājušas.",
-  "travelReminderBefore": "{days, plural, zero{{days} dienu pirms izbraukšanas} one{{days} diena pirms izbraukšanas} other{{days} dienas pirms izbraukšanas}}",
+  "travelReminderBefore": "{days, plural, zero{{days} dienas pirms izbraukšanas} one{{days} diena pirms izbraukšanas} other{{days} dienas pirms izbraukšanas}}",
   "travelStatusReady": "Gatavs",
   "travelStatusToFix": "{count, plural, zero{{count} jānokārto} one{{count} jānokārto} other{{count} jānokārto}}",
   "travelStatusToCheck": "{count, plural, zero{{count} jāpārbauda} one{{count} jāpārbauda} other{{count} jāpārbauda}}",
@@ -1897,7 +1886,7 @@
   "assistantCardDone": "Gatavs",
   "assistantCardEditTitle": "Mainīt ierakstu",
   "assistantCardNotConfirmed": "Nav apstiprināts",
-  "assistantDays": "{count, plural, zero{{count} dienu} one{{count} diena} other{{count} dienas}}",
+  "assistantDays": "{count, plural, zero{{count} dienas} one{{count} diena} other{{count} dienas}}",
   "assistantDeleteNote": "Tas tiks pārvietots uz Atkopšanas centru, kur to varēsiet atjaunot 30 dienas.",
   "assistantHistoryAllDeleted": "Visas sarunas izdzēstas",
   "assistantHistoryDeleteAll": "Dzēst visas sarunas",
@@ -2043,7 +2032,7 @@
   "assistantUndoAll": "Atsaukt visu",
   "assistantUndone": "Izmaiņas atsauktas",
   "assistantUndoFailed": "To nevarēja atsaukt. Veiciet izmaiņas paši.",
-  "assistantBatchTitle": "{count, plural, zero{{count} izmaiņu} one{{count} izmaiņa} other{{count} izmaiņas}}",
+  "assistantBatchTitle": "{count, plural, zero{{count} izmaiņas} one{{count} izmaiņa} other{{count} izmaiņas}}",
   "assistantConfirmAll": "Apstiprināt visu",
   "assistantConfirmSelected": "Apstiprināt {count}",
   "assistantSuggestRenew": "Palīdzi man atjaunot: {name}",
@@ -2483,7 +2472,7 @@
   "tutorialsGroupTravelFamily": "Ceļojumi un ģimene",
   "tutorialsGroupEmergencies": "Dzīves notikumi un ārkārtas situācijas",
   "tutorialsGroupPaid": "Maksas funkcijas",
-  "tutorialsSteps": "{count, plural, zero{{count} soļu} one{{count} solis} other{{count} soļi}}",
+  "tutorialsSteps": "{count, plural, zero{{count} soļi} one{{count} solis} other{{count} soļi}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} termiņš beidzas šodien",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} termiņš beidzas rīt",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, zero{{recordName} termiņš beidzas pēc {days} dienām} one{{recordName} termiņš beidzas pēc {days} dienas} other{{recordName} termiņš beidzas pēc {days} dienām}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} termiņš ir beidzies",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Bloķētam ierakstam nepieciešama jūsu uzmanība",
+  "remLockedBody": "Tā datums ir {date}. Atbloķējiet Vaultara, lai redzētu, kurš ieraksts tas ir.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Jūsu ieraksta “{recordName}” termiņš beidzas šodien.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Jūsu ieraksta “{recordName}” termiņš beidzas rīt.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Jūsu ieraksta “{recordName}” termiņš beidzas {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, jūsu ieraksta “{recordName}” termiņš beidzas šodien.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, jūsu ieraksta “{recordName}” termiņš beidzas rīt.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, jūsu ieraksta “{recordName}” termiņš beidzas {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: ieraksta “{recordName}” termiņš beidzas šodien.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: ieraksta “{recordName}” termiņš beidzas rīt.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: ieraksta “{recordName}” termiņš beidzas {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Jūsu ieraksta “{recordName}” termiņš beidzās {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: ieraksta “{recordName}” termiņš beidzās {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Jau atjaunojāt? Atjauniniet datumu.",
+  "remTipTomorrow": "Atjaunojiet tagad, lai termiņš nebeigtos.",
+  "remTipEarly": "Laicīga atjaunošana jūs pasargā.",
+  "remTipLast": "Šis ir pēdējais atgādinājums pirms termiņa beigām.",
+  "remTipExpired": "Atjaunojiet vai atjauniniet datumu, ja jau esat to izdarījis.",
+  "remStartBody": "Ir laiks sākt atjaunot “{recordName}”. Termiņš beidzas {date}, tāpēc, sākot tagad, jums būs daudz laika.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Ir laiks sākt atjaunot “{recordName}” ({person}). Termiņš beidzas {date}, tāpēc, sākot tagad, laika būs daudz.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Termiņa atgādinājumi",
+  "notifChannelDescription": "Atgādinājumi, pirms jūsu ierakstu termiņš beidzas",
+  "notifTestTitle": "Testa paziņojums",
+  "notifTestBody": "Tā pienāk Vaultara atgādinājumi.",
+  "notifTestAction": "Sūtīt testa paziņojumu",
+  "notifTestSubtitle": "Pārbaudiet, vai atgādinājumi pienāk šajā tālrunī",
+  "notifTestSent": "Tests nosūtīts. Tam vajadzētu pienākt pēc dažām sekundēm.",
+  "notifAfterExpiryTitle": "Atgādināt pēc ieraksta termiņa beigām",
+  "notifAfterExpirySubtitle": "3 un 14 dienas pēc tam, ja tas nav atjaunots",
+  "notifWeeklyTitle": "Pirmdienas kopsavilkums",
+  "notifWeeklySubtitle": "Ziņa pirmdienas rītā, ja tajā nedēļā kaut kam beidzas termiņš",
+  "notifPushSection": "Mājsaimniecība un atjauninājumi",
+  "notifHouseholdTitle": "Kopīgotie ieraksti",
+  "notifHouseholdSubtitle": "Kad kopīgota ieraksta termiņš drīz beigsies un neviens to nav atjaunojis",
+  "notifUpdatesTitle": "Jūsu pieprasītie atjauninājumi",
+  "notifUpdatesSubtitle": "Kad kāds nosūta ieraksta jaunos datus",
+  "notifSecurityNote": "Brīdinājumi par jauniem pieteikumiem jūsu kontā tiek sūtīti vienmēr.",
+  "notifIosHelpTitle": "Nesaņemat atgādinājumus?",
+  "notifIosHelpSubtitle": "Pārbaudiet iPhone iestatījumus",
+  "notifIosHelpStep1": "Atveriet Iestatījumi, tad Paziņojumi, tad Vaultara, un ieslēdziet Atļaut paziņojumus.",
+  "notifIosHelpStep2": "Ieslēdziet Bloķēšanas ekrānu, Paziņojumu centru un Reklāmkarogus.",
+  "notifIosHelpStep3": "Ja izmantojat fokusu, pievienojiet Vaultara atļautajām lietotnēm.",
+  "notifIosHelpStep4": "Atveriet Vaultara ik pēc dažām nedēļām. iPhone glabā tikai ierobežotu skaitu nākamo atgādinājumu, un lietotnes atvēršana ieplāno nākamos.",
+  "homeNextUpEmpty": "Drīzumā nekam nebeidzas termiņš. Viss kārtībā.",
+  "homeDueSoonChip": "{count, plural, zero{{count} jāatjauno 30 dienu laikā} one{{count} jāatjauno 30 dienu laikā} other{{count} jāatjauno 30 dienu laikā}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Piespraustās kategorijas"
 }

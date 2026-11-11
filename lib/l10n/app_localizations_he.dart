@@ -360,15 +360,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'שמחים לראות אותך שוב. Vaultara כאן בכל פעם שתרצה לבדוק את התאריכים והרשומות החשובות שלך.';
 
   @override
-  String get summaryAllCaption => 'במעקב ב-Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'פג תוקף';
-
-  @override
-  String get summaryExpiredCaption => 'תאריך התוקף עבר';
-
-  @override
   String get editorNotes => 'הערות';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'מחק רשומה';
-
-  @override
-  String get summaryAllRecordsTitle => 'כל הרשומות';
 
   @override
   String get noGroupFound => 'עדיין אין קבוצות';
@@ -830,23 +818,11 @@ class AppLocalizationsHe extends AppLocalizations {
       locale: localeName,
       other: '$count רשומות',
       many: '$count רשומות',
-      two: '2 רשומות',
+      two: '$count רשומות',
       one: 'רשומה אחת',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'בקרוב';
-
-  @override
-  String get summaryUpcomingCaption => 'במהלך 30 הימים הקרובים';
-
-  @override
-  String get summaryUrgentTitle => 'דחוף';
-
-  @override
-  String get summaryUrgentCaption => 'במהלך 7 הימים הקרובים';
 
   @override
   String get profileHeaderTitle => 'פרופיל';
@@ -1304,49 +1280,8 @@ class AppLocalizationsHe extends AppLocalizations {
   String get noRecordsTomorrow => 'שום דבר לא פג תוקף מחר';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'התוקף של $recordName פג בעוד $days ימים',
-      many: 'התוקף של $recordName פג בעוד $days ימים',
-      two: 'התוקף של $recordName פג בעוד יומיים',
-      one: 'התוקף של $recordName פג מחר',
-      zero: 'התוקף של $recordName פג היום',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, התוקף של $recordName שלך פג ב-$date. חידוש מוקדם שומר עליך מוגן.',
-      many: '$firstName, התוקף של $recordName שלך פג ב-$date. חידוש מוקדם שומר עליך מוגן.',
-      two: '$firstName, התוקף של $recordName שלך פג ב-$date. חידוש מוקדם שומר עליך מוגן.',
-      one: '$firstName, התוקף של $recordName שלך פג מחר. חדש אותו עכשיו כדי שלא יפוג.',
-      zero: '$firstName, התוקף של $recordName שלך פג היום. כבר חידשת אותו? עדכן את תאריך התפוגה.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'תזכורת אחרונה: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'בעוד $days ימים, ב-$date',
-      many: 'בעוד $days ימים, ב-$date',
-      two: 'בעוד יומיים, ב-$date',
-      one: 'מחר',
-    );
-    return '$firstName, התוקף של $recordName שלך פג $_temp0. זו התזכורת האחרונה שלך, חדש אותו או עדכן את התאריך.';
   }
 
   @override
@@ -8335,4 +8270,206 @@ class AppLocalizationsHe extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'תזכורת: $name פג ב-$date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'התוקף של $recordName פג היום';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'התוקף של $recordName פג מחר';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'התוקף של $recordName פג בעוד $days ימים',
+      two: 'התוקף של $recordName פג בעוד $days ימים',
+      one: 'התוקף של $recordName פג בעוד $days יום',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'התוקף של $recordName פג';
+  }
+
+  @override
+  String get remLockedTitle => 'רשומה נעולה דורשת את תשומת לבך';
+
+  @override
+  String remLockedBody(String date) {
+    return 'התאריך שלה הוא $date. בטל את נעילת Vaultara כדי לראות איזו רשומה זו.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'התוקף של הרשומה שלך \"$recordName\" פג היום.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'התוקף של הרשומה שלך \"$recordName\" פג מחר.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'התוקף של הרשומה שלך \"$recordName\" פג ב-$date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, התוקף של הרשומה שלך \"$recordName\" פג היום.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, התוקף של הרשומה שלך \"$recordName\" פג מחר.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, התוקף של הרשומה שלך \"$recordName\" פג ב-$date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: התוקף של הרשומה \"$recordName\" פג היום.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: התוקף של הרשומה \"$recordName\" פג מחר.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: התוקף של הרשומה \"$recordName\" פג ב-$date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'התוקף של הרשומה שלך \"$recordName\" פג ב-$date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: התוקף של הרשומה \"$recordName\" פג ב-$date.';
+  }
+
+  @override
+  String get remTipToday => 'כבר חידשת? עדכן את התאריך.';
+
+  @override
+  String get remTipTomorrow => 'חדש עכשיו כדי שהתוקף לא יפוג.';
+
+  @override
+  String get remTipEarly => 'חידוש מוקדם שומר עליך מכוסה.';
+
+  @override
+  String get remTipLast => 'זו התזכורת האחרונה לפני שהתוקף פג.';
+
+  @override
+  String get remTipExpired => 'חדש, או עדכן את התאריך אם כבר עשית זאת.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'הגיע הזמן להתחיל לחדש את \"$recordName\". התוקף פג ב-$date, כך שאם תתחיל עכשיו יהיה לך זמן רב.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'הגיע הזמן להתחיל לחדש את \"$recordName\" ($person). התוקף פג ב-$date, כך שהתחלה עכשיו משאירה זמן רב.';
+  }
+
+  @override
+  String get notifChannelName => 'תזכורות תפוגה';
+
+  @override
+  String get notifChannelDescription => 'תזכורות לפני שהתוקף של הרשומות שלך פג';
+
+  @override
+  String get notifTestTitle => 'התראת בדיקה';
+
+  @override
+  String get notifTestBody => 'כך מגיעות התזכורות של Vaultara.';
+
+  @override
+  String get notifTestAction => 'שליחת התראת בדיקה';
+
+  @override
+  String get notifTestSubtitle => 'בדוק שתזכורות מגיעות לטלפון הזה';
+
+  @override
+  String get notifTestSent => 'הבדיקה נשלחה. היא אמורה להגיע בעוד כמה שניות.';
+
+  @override
+  String get notifAfterExpiryTitle => 'להזכיר לי אחרי שתוקף רשומה פג';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 ו-14 ימים אחרי, אם לא חודשה';
+
+  @override
+  String get notifWeeklyTitle => 'סיכום יום שני';
+
+  @override
+  String get notifWeeklySubtitle => 'הודעה ביום שני בבוקר כשמשהו פג באותו שבוע';
+
+  @override
+  String get notifPushSection => 'משק הבית ועדכונים';
+
+  @override
+  String get notifHouseholdTitle => 'רשומות משותפות';
+
+  @override
+  String get notifHouseholdSubtitle => 'כשתוקף של רשומה משותפת עומד לפוג ואף אחד לא חידש אותה';
+
+  @override
+  String get notifUpdatesTitle => 'עדכונים שביקשת';
+
+  @override
+  String get notifUpdatesSubtitle => 'כשמישהו שולח את הפרטים החדשים של רשומה';
+
+  @override
+  String get notifSecurityNote => 'התראות על כניסות חדשות לחשבון שלך נשלחות תמיד.';
+
+  @override
+  String get notifIosHelpTitle => 'לא מקבל תזכורות?';
+
+  @override
+  String get notifIosHelpSubtitle => 'בדוק את הגדרות ה-iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'פתח את הגדרות, אחר כך עדכונים, אחר כך Vaultara, והפעל את אפשר עדכונים.';
+
+  @override
+  String get notifIosHelpStep2 => 'הפעל את מסך נעילה, מרכז העדכונים ובאנרים.';
+
+  @override
+  String get notifIosHelpStep3 => 'אם אתה משתמש במיקוד, הוסף את Vaultara לאפליקציות המותרות.';
+
+  @override
+  String get notifIosHelpStep4 => 'פתח את Vaultara כל כמה שבועות. iPhone שומר רק מספר מוגבל של תזכורות עתידיות, ופתיחת האפליקציה מתזמנת את הבאות.';
+
+  @override
+  String get homeNextUpEmpty => 'שום דבר לא פג בקרוב. הכול מוכן.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count פגים בתוך 30 ימים',
+      two: '$count פגים בתוך 30 ימים',
+      one: '$count פג בתוך 30 ימים',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'קטגוריות מוצמדות';
 }

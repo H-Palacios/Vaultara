@@ -360,15 +360,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Masaya kaming makita kang muli. Nandito ang Vaultara anumang oras na nais mong suriin ang iyong mahahalagang petsa at rekord.';
 
   @override
-  String get summaryAllCaption => 'Sinusubaybayan sa Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Nag-expire na';
-
-  @override
-  String get summaryExpiredCaption => 'Lampas na sa petsa ng expiration';
-
-  @override
   String get editorNotes => 'Mga Tala';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Tanggalin ang rekord';
-
-  @override
-  String get summaryAllRecordsTitle => 'Lahat ng rekord';
 
   @override
   String get noGroupFound => 'Wala pang mga grupo';
@@ -829,22 +817,10 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count record',
-      one: '1 record',
+      one: '$count record',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Nalalapit';
-
-  @override
-  String get summaryUpcomingCaption => 'Sa loob ng 30 araw';
-
-  @override
-  String get summaryUrgentTitle => 'Agarang Asikasuhin';
-
-  @override
-  String get summaryUrgentCaption => 'Sa loob ng 7 araw';
 
   @override
   String get profileHeaderTitle => 'Profile';
@@ -945,7 +921,7 @@ class AppLocalizationsFil extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days araw bago',
-      one: '1 araw bago',
+      one: '$days araw bago',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsFil extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names at $extra pa ay mag-eexpire ngayong araw.',
-      one: '$names at 1 pa ay mag-eexpire ngayong araw.',
+      one: '$names at $extra pa ay mag-eexpire ngayong araw.',
       zero: '$names ay mag-eexpire ngayong araw.',
     );
     return '$_temp0';
@@ -1060,7 +1036,6 @@ class AppLocalizationsFil extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Mag-eexpire sa $date ang $name at walang paalala. Magtakda ng isa para hindi mo ito makalimutan.',
-      one: 'Mag-eexpire bukas ang $name at walang paalala. Magtakda ng isa para hindi mo ito makalimutan.',
     );
     return '$_temp0';
   }
@@ -1081,7 +1056,7 @@ class AppLocalizationsFil extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b, at $extra pang mga record ay mag-eexpire bago mag-$lastDate, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang ilang record ay magkalapit nang ganito.',
-      one: 'Mag-eexpire ang $a, $b, at 1 pang record bago mag-$lastDate, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang ilang record ay magkalapit nang ganito.',
+      one: 'Mag-eexpire ang $a, $b, at $extra pang record bago mag-$lastDate, sa halos magkaparehong oras. Madaling makalimutan ang isa kapag ang ilang record ay magkalapit nang ganito.',
     );
     return '$_temp0';
   }
@@ -1092,7 +1067,6 @@ class AppLocalizationsFil extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Walang mag-eexpire sa susunod na $days araw. Ang susunod mong deadline ay sa $date.',
-      one: 'Walang mag-eexpire sa susunod na araw. Ang susunod mong deadline ay sa $date.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1077,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ang $count sa iyong mga record sa kategoryang $category ay mag-eexpire bago mag-$date. Madaling makalimutan ang isa kapag nakagrupo sila nang ganito.',
-      one: 'Ang 1 sa iyong mga record sa kategoryang $category ay mag-eexpire sa $date. Madali itong makaligtaan.',
+      one: 'Ang $count sa iyong mga record sa kategoryang $category ay mag-eexpire sa $date. Madali itong makaligtaan.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1088,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ang $count paparating na mga pag-expire ay may mga paalala na. Wala nang iba pang kailangan ng iyong atensyon.',
-      one: 'Ang 1 paparating na pag-expire ay may paalala na. Wala nang iba pang kailangan ng iyong atensyon.',
+      one: 'Ang $count paparating na pag-expire ay may paalala na. Wala nang iba pang kailangan ng iyong atensyon.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1102,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Walang apurahan sa ngayon, ngunit ang $count paparating na mga record ay wala pang paalala.',
-      one: 'Walang apurahan sa ngayon, ngunit ang 1 paparating na record ay wala pang paalala.',
+      one: 'Walang apurahan sa ngayon, ngunit ang $count paparating na record ay wala pang paalala.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1226,7 @@ class AppLocalizationsFil extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days na araw',
-      one: '1 araw',
+      one: '$days araw',
     );
     return 'Paalala $position: $_temp0 bago mag-expire';
   }
@@ -1289,7 +1263,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ang malapit nang mag-expire',
-      one: '1 ang malapit nang mag-expire',
+      one: '$count ang malapit nang mag-expire',
     );
     return '$_temp0';
   }
@@ -1301,43 +1275,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get noRecordsTomorrow => 'Walang mag-e-expire bukas';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'Mag-e-expire ang $recordName sa loob ng $days araw',
-      one: 'Mag-e-expire ang $recordName bukas',
-      zero: 'Mag-e-expire ang $recordName ngayon',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, mag-e-expire ang iyong $recordName sa $date. Ang maagang pag-renew ay nagpapanatili sa iyong protektado.',
-      one: '$firstName, mag-e-expire ang iyong $recordName bukas. I-renew na ito ngayon para hindi ito mawalan ng bisa.',
-      zero: '$firstName, mag-e-expire ang iyong $recordName ngayon. Na-renew mo na ba ito? I-update ang petsa ng pag-expire nito.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Huling paalala: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'sa loob ng $days araw, sa $date',
-      one: 'bukas',
-    );
-    return '$firstName, mag-e-expire ang iyong $recordName $_temp0. Ito na ang huling paalala sa iyo, i-renew ito o i-update ang petsa nito.';
   }
 
   @override
@@ -5017,7 +4956,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count na rekord ang nangangailangan ng pansin mo',
-      one: '1 rekord ang nangangailangan ng pansin mo',
+      one: '$count rekord ang nangangailangan ng pansin mo',
     );
     return '$_temp0';
   }
@@ -5041,7 +4980,6 @@ class AppLocalizationsFil extends AppLocalizations {
       months,
       locale: localeName,
       other: 'Batay sa setting mong umulit kada $months buwan',
-      one: 'Batay sa setting mong umulit kada buwan',
     );
     return '$_temp0';
   }
@@ -5052,7 +4990,6 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Batay sa huling $count renewal mo',
-      one: 'Batay sa huling renewal mo',
     );
     return '$_temp0';
   }
@@ -5063,7 +5000,7 @@ class AppLocalizationsFil extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Karaniwang valid sa loob ng $years taon',
-      one: 'Karaniwang valid sa loob ng 1 taon',
+      one: 'Karaniwang valid sa loob ng $years taon',
     );
     return '$_temp0';
   }
@@ -6789,7 +6726,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count araw na lang',
-      one: '1 araw na lang',
+      one: '$count araw na lang',
     );
     return '$_temp0';
   }
@@ -6800,7 +6737,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count araw na ang nakalipas',
-      one: '1 araw na ang nakalipas',
+      one: '$count araw na ang nakalipas',
     );
     return '$_temp0';
   }
@@ -7096,7 +7033,6 @@ class AppLocalizationsFil extends AppLocalizations {
       weeks,
       locale: localeName,
       other: 'Magsimula bago mag-$date. Karaniwang mga $weeks linggo bago makuha ang bago.',
-      one: 'Magsimula bago mag-$date. Karaniwang mga isang linggo bago makuha ang bago.',
     );
     return '$_temp0';
   }
@@ -7107,7 +7043,6 @@ class AppLocalizationsFil extends AppLocalizations {
       weeks,
       locale: localeName,
       other: 'Magsimula na ngayon. Karaniwang mga $weeks linggo bago makuha ang bago.',
-      one: 'Magsimula na ngayon. Karaniwang mga isang linggo bago makuha ang bago.',
     );
     return '$_temp0';
   }
@@ -7160,7 +7095,7 @@ class AppLocalizationsFil extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ang $count record na binura mo ay itinuturing na kanselado.',
-      one: 'Ang 1 record na binura mo ay itinuturing na kanselado.',
+      one: 'Ang $count record na binura mo ay itinuturing na kanselado.',
     );
     return '$_temp0';
   }
@@ -8276,4 +8211,204 @@ class AppLocalizationsFil extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Paalala: Mag-e-expire ang $name sa $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'Mag-e-expire ngayon ang $recordName';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'Mag-e-expire bukas ang $recordName';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Mag-e-expire ang $recordName sa loob ng $days araw',
+      one: 'Mag-e-expire ang $recordName sa loob ng $days araw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'Nag-expire na ang $recordName';
+  }
+
+  @override
+  String get remLockedTitle => 'Kailangan ng iyong pansin ang isang naka-lock na rekord';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Ang petsa nito ay $date. I-unlock ang Vaultara para makita kung aling rekord ito.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Mag-e-expire ngayon ang iyong rekord na \"$recordName\".';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Mag-e-expire bukas ang iyong rekord na \"$recordName\".';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Mag-e-expire sa $date ang iyong rekord na \"$recordName\".';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, mag-e-expire ngayon ang iyong rekord na \"$recordName\".';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, mag-e-expire bukas ang iyong rekord na \"$recordName\".';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, mag-e-expire sa $date ang iyong rekord na \"$recordName\".';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Mag-e-expire ngayon ang rekord ni $person na \"$recordName\".';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Mag-e-expire bukas ang rekord ni $person na \"$recordName\".';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Mag-e-expire sa $date ang rekord ni $person na \"$recordName\".';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Nag-expire noong $date ang iyong rekord na \"$recordName\".';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Nag-expire noong $date ang rekord ni $person na \"$recordName\".';
+  }
+
+  @override
+  String get remTipToday => 'Na-renew mo na? I-update ang petsa nito.';
+
+  @override
+  String get remTipTomorrow => 'I-renew na ngayon para hindi ito mag-expire.';
+
+  @override
+  String get remTipEarly => 'Ang maagang pag-renew ay nagpapanatili sa iyong protektado.';
+
+  @override
+  String get remTipLast => 'Ito na ang huling paalala bago ito mag-expire.';
+
+  @override
+  String get remTipExpired => 'I-renew ito, o i-update ang petsa nito kung nagawa mo na.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Oras na para simulan ang pag-renew ng \"$recordName\". Mag-e-expire ito sa $date, kaya kung magsisimula ka ngayon, marami kang oras.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Oras na para simulan ang pag-renew ng \"$recordName\" ni $person. Mag-e-expire ito sa $date, kaya kung magsisimula ngayon, maraming oras.';
+  }
+
+  @override
+  String get notifChannelName => 'Mga paalala sa pag-expire';
+
+  @override
+  String get notifChannelDescription => 'Mga paalala bago mag-expire ang iyong mga rekord';
+
+  @override
+  String get notifTestTitle => 'Pansubok na notification';
+
+  @override
+  String get notifTestBody => 'Ganito dumarating ang mga paalala ng Vaultara.';
+
+  @override
+  String get notifTestAction => 'Magpadala ng pansubok na notification';
+
+  @override
+  String get notifTestSubtitle => 'Tingnan kung dumarating ang mga paalala sa teleponong ito';
+
+  @override
+  String get notifTestSent => 'Naipadala ang pagsubok. Darating ito sa loob ng ilang segundo.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Paalalahanan ako pagkatapos mag-expire ng rekord';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 at 14 na araw pagkatapos, kung hindi pa na-renew';
+
+  @override
+  String get notifWeeklyTitle => 'Buod tuwing Lunes';
+
+  @override
+  String get notifWeeklySubtitle => 'Isang mensahe tuwing Lunes ng umaga kapag may mag-e-expire sa linggong iyon';
+
+  @override
+  String get notifPushSection => 'Sambahayan at mga update';
+
+  @override
+  String get notifHouseholdTitle => 'Mga ibinahaging rekord';
+
+  @override
+  String get notifHouseholdSubtitle => 'Kapag malapit nang mag-expire ang isang ibinahaging rekord at walang nag-renew nito';
+
+  @override
+  String get notifUpdatesTitle => 'Mga update na hiniling mo';
+
+  @override
+  String get notifUpdatesSubtitle => 'Kapag may nagpadala ng bagong detalye ng isang rekord';
+
+  @override
+  String get notifSecurityNote => 'Laging ipinapadala ang mga alerto tungkol sa mga bagong pag-sign in sa iyong account.';
+
+  @override
+  String get notifIosHelpTitle => 'Hindi nakakatanggap ng mga paalala?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Tingnan ang mga setting ng iyong iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Buksan ang Settings, pagkatapos Notifications, pagkatapos Vaultara, at i-on ang Allow Notifications.';
+
+  @override
+  String get notifIosHelpStep2 => 'I-on ang Lock Screen, Notification Center at Banners.';
+
+  @override
+  String get notifIosHelpStep3 => 'Kung gumagamit ka ng Focus, idagdag ang Vaultara sa mga app na pinapayagan nito.';
+
+  @override
+  String get notifIosHelpStep4 => 'Buksan ang Vaultara tuwing ilang linggo. Limitado lang ang mga paalalang naitatabi ng iPhone, at ang pagbubukas ng app ang nagtatakda ng mga susunod.';
+
+  @override
+  String get homeNextUpEmpty => 'Walang mag-e-expire sa lalong madaling panahon. Handa na ang lahat.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ang dapat sa loob ng 30 araw',
+      one: '$count ang dapat sa loob ng 30 araw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Mga naka-pin na kategorya';
 }

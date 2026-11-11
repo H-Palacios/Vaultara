@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara aitab sul jälgida olulisi aegumiskuupäevi, et midagi ei jääks märkamata.",
   "homeWelcomeSubtitleFirst": "Meil on hea meel sind siin näha. Vaultara aitab sul püsida organiseerituna, hoides olulised kuupäevad ja kirjed ühes turvalises kohas.",
   "homeWelcomeSubtitleBack": "Hea meel sind jälle näha. Vaultara on siin, kui soovid oma olulisi kuupäevi ja kirjeid üle vaadata.",
-  "summaryAllCaption": "Jälgitud Vaultaras",
-  "summaryExpiredTitle": "Aegunud",
-  "summaryExpiredCaption": "Aegumiskuupäev möödas",
   "editorNotes": "Märkmed",
   "editorReminderNone": "Meeldetuletus puudub",
   "editorReminderOnExpiry": "Aegumiskuupäeval",
@@ -199,7 +196,6 @@
   "addRecord": "Lisa kirje",
   "noRecordsYet": "Kirjeid pole veel.",
   "deleteRecordTitle": "Kustuta kirje",
-  "summaryAllRecordsTitle": "Kõik kirjed",
   "noGroupFound": "Gruppe pole veel",
   "groupLabel": "{count, plural, one{{count} grupp} other{{count} gruppi}}",
   "recordsLabel": "{count, plural, one{{count} kirje} other{{count} kirjet}}",
@@ -444,7 +440,7 @@
   "addNotesHint": "Lisa märkmeid (valikuline)",
   "expiryTimelineTitle": "Aegumise ajatelg",
   "expiryTimelineSubtitle": "Puuduta kuud, et näha selles kuus aeguvaid kirjeid",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 kirje} other{{count} kirjet}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} kirje} other{{count} kirjet}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -452,10 +448,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Peatselt saabuvad",
-  "summaryUpcomingCaption": "30 päeva jooksul",
-  "summaryUrgentTitle": "Kiireloomuline",
-  "summaryUrgentCaption": "7 päeva jooksul",
   "profileHeaderTitle": "Profiil",
   "profileTutorialsTitle": "Õpetused",
   "profileTutorialsSubtitle": "Sirvi rakenduse õpetusi",
@@ -487,7 +479,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Meeldetuletust pole",
   "reminderOnExpiry": "Aegumiskuupäeval",
-  "reminderDaysBefore": "{days, plural, one{1 päev enne} other{{days} päeva enne}}",
+  "reminderDaysBefore": "{days, plural, one{{days} päev enne} other{{days} päeva enne}}",
   "reminderCustomDaysTitle": "Sisesta kohandatud päevad",
   "reminderCascadeTitle": "Kaskaadmeeldetuletused",
   "reminderCascadeSubtitle": "Saa mitu teavitust enne kirje aegumist",
@@ -533,7 +525,7 @@
       }
     }
   },
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} aeguvad täna.} =1{{names} ja veel 1 aeguvad täna.} other{{names} ja veel {extra} aeguvad täna.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} aeguvad täna.} =1{{names} ja veel {extra} aeguvad täna.} other{{names} ja veel {extra} aeguvad täna.}}",
   "@smartInsightExpiresTodayMultiBody": {
     "description": "Body for the expires-today insight when several records expire today. {names} lists up to two names; {extra} is how many more beyond those.",
     "placeholders": {
@@ -604,7 +596,7 @@
       }
     }
   },
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ja veel 1 kirje aeguvad hiljemalt {lastDate}, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.} other{{a}, {b} ja veel {extra} kirjet aeguvad hiljemalt {lastDate}, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ja veel {extra} kirje aeguvad hiljemalt {lastDate}, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.} other{{a}, {b} ja veel {extra} kirjet aeguvad hiljemalt {lastDate}, umbes samal ajal. Kui mitu on nii lähestikku, on lihtne üht unustada.}}",
   "@smartInsightCloseExpiriesBodyMany": {
     "description": "Body for the close-expiries insight when more than three records are involved. Uses ICU plural on {extra}.",
     "placeholders": {
@@ -626,7 +618,7 @@
   "@smartInsightClusterHeading": {
     "description": "Heading for the insight shown when three or more records in one category expire within a short window."
   },
-  "smartInsightClusterBody": "{count, plural, =1{1 sinu kirje kategoorias {category} aegub {date}. Seda on lihtne kahe silma vahele jätta.} other{{count} sinu kirjet kategoorias {category} aegub hiljemalt {date}. Kui need on nii koos, on lihtne üht unustada.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} sinu kirje kategoorias {category} aegub {date}. Seda on lihtne kahe silma vahele jätta.} other{{count} sinu kirjet kategoorias {category} aegub hiljemalt {date}. Kui need on nii koos, on lihtne üht unustada.}}",
   "@smartInsightClusterBody": {
     "description": "Body for the cluster insight. {count} is how many records, {category} is the category label, {date} is the last expiry date in the group.",
     "placeholders": {
@@ -661,7 +653,7 @@
   "@smartInsightAllCaughtUpHeading": {
     "description": "Heading for the all-caught-up insight when nothing needs attention and everything upcoming is covered by a reminder."
   },
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 eesseisev aegumine on meeldetuletusega kaetud. Miski muu ei vaja sinu tähelepanu.} other{{count} eesseisvat aegumist on meeldetuletustega kaetud. Miski muu ei vaja sinu tähelepanu.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} eesseisev aegumine on meeldetuletusega kaetud. Miski muu ei vaja sinu tähelepanu.} other{{count} eesseisvat aegumist on meeldetuletustega kaetud. Miski muu ei vaja sinu tähelepanu.}}",
   "@smartInsightAllCaughtUpBody": {
     "description": "Body for the all-caught-up insight when there are upcoming records within 90 days and all of them have reminders.",
     "placeholders": {
@@ -674,7 +666,7 @@
   "@smartInsightAllCaughtUpNoUpcomingBody": {
     "description": "Body used when nothing needs attention and nothing is upcoming (all-caught-up and quiet-period empty cases)."
   },
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Praegu pole midagi kiireloomulist, kuid 1 eesseisval kirjel pole veel meeldetuletust.} other{Praegu pole midagi kiireloomulist, kuid {count} eesseisval kirjel pole veel meeldetuletust.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Praegu pole midagi kiireloomulist, kuid {count} eesseisval kirjel pole veel meeldetuletust.} other{Praegu pole midagi kiireloomulist, kuid {count} eesseisval kirjel pole veel meeldetuletust.}}",
   "@smartInsightAllCaughtUpUnremindedBody": {
     "description": "Body for the all-caught-up state when some upcoming records have no reminder. {count} is how many upcoming records lack a reminder.",
     "placeholders": {
@@ -772,7 +764,7 @@
   "reminderCascadeRemoveStep": "Eemalda",
   "reminderCascadeDuplicate": "Mõni muu meeldetuletus kasutab juba seda päeva",
   "reminderCascadeOutOfRange": "Sisesta vahemikus {min} kuni {max} päeva",
-  "reminderCascadeStepLabel": "Meeldetuletus {position}: {days, plural, =1{1 päev} other{{days} päeva}} enne",
+  "reminderCascadeStepLabel": "Meeldetuletus {position}: {days, plural, =1{{days} päev} other{{days} päeva}} enne",
   "expiryTimelineNotReady": "Sinu ajatelg ilmub siis, kui sul on kirjeid, mis aeguvad mõne erineva kuu jooksul.",
   "verifyEmailResendIn": "Saada uuesti {seconds} s pärast",
   "verifyEmailSpamHint": "Ei ole kohal? Kontrolli oma rämpsposti kausta.",
@@ -781,13 +773,10 @@
   "verifyEmailDiscardBody": "See konto pole kinnitatud. Praegu lahkudes see eemaldatakse ja saad uuesti registreeruda mis tahes e-posti aadressiga.",
   "verifyEmailDiscardAction": "Loobu",
   "verifyEmailKeepWaiting": "Oota veel",
-  "expiringBadge": "{count, plural, =1{1 aegub peatselt} other{{count} aeguvad peatselt}}",
+  "expiringBadge": "{count, plural, =1{{count} aegub peatselt} other{{count} aeguvad peatselt}}",
   "noRecordsToday": "Täna ei aegu midagi",
   "noRecordsTomorrow": "Homme ei aegu midagi",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} aegub täna} =1{{recordName} aegub homme} other{{recordName} aegub {days} päeva pärast}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, sinu {recordName} aegub täna. Kas oled seda juba uuendanud? Muuda aegumiskuupäeva.} =1{{firstName}, sinu {recordName} aegub homme. Uuenda seda kohe, et see ei aeguks.} other{{firstName}, sinu {recordName} aegub kuupäeval {date}. Enneaegne uuendamine tagab katvuse.}}",
   "cascadeFinalStepTitle": "Viimane meeldetuletus: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, sinu {recordName} aegub {days, plural, =1{homme} other{{days} päeva pärast, kuupäeval {date}}}. See on sinu viimane meeldetuletus, uuenda seda või muuda kuupäeva.",
   "notificationsTitle": "Teavitused",
   "notificationsProfileEnabledSubtitle": "Meeldetuletused saabuvad kell {time}.",
   "notificationsProfileDisabledSubtitle": "Teavitused on välja lülitatud.",
@@ -1514,7 +1503,7 @@
   "photoLockTurnOn": "Lülita krüptitud fotod sisse",
   "photoLockStatusOn": "Krüptitud fotod on sees",
   "photoLockStatusOnBody": "Uued fotod krüptitakse sellel telefonil enne üleslaadimist.",
-  "photoLockPendingTitle": "{count, plural, one{1 foto pole veel krüptitud} other{{count} fotot pole veel krüptitud}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} foto pole veel krüptitud} other{{count} fotot pole veel krüptitud}}",
   "photoLockPendingBody": "Fotod, mille lisasid enne selle sisselülitamist, on endiselt salvestatud tavalisel viisil.",
   "photoLockEncryptExisting": "Krüpti mu olemasolevad fotod",
   "photoLockKeepOpen": "Hoia Vaultara lahti, kuni see on valmis.",
@@ -1551,7 +1540,7 @@
   "photoLockSetupFailed": "Krüptitud fotosid ei õnnestunud sisse lülitada. Kontrolli ühendust ja proovi uuesti.",
   "photoLockAlreadyOn": "Krüptitud fotod on sinu kontol juba sees. Sisesta oma taastevõti, et kasutada neid sellel telefonil.",
   "photoLockEncryptExistingTitle": "Kas krüptida sinu olemasolevad fotod?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Sul on 1 foto, mis pole veel krüptitud. Saame selle nüüd krüptida.} other{Sul on {count} fotot, mis pole veel krüptitud. Saame need nüüd krüptida.}} Hoia Vaultara lahti, kuni see on valmis.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Sul on {count} foto, mis pole veel krüptitud. Saame selle nüüd krüptida.} other{Sul on {count} fotot, mis pole veel krüptitud. Saame need nüüd krüptida.}} Hoia Vaultara lahti, kuni see on valmis.",
   "photoLockEncryptNow": "Krüpti nüüd",
   "photoLockEntryBody": "Sisesta taastevõti, mille salvestasid krüptitud fotode sisselülitamisel. Sidekriipsud ja tühikud pole kohustuslikud.",
   "photoLockEntryLabel": "Taastevõti",
@@ -1560,8 +1549,8 @@
   "photoLockUnlocked": "Sinu fotod on sellel telefonil avatud.",
   "photoLockInvalidFormat": "See ei tundu olevat taastevõti. Kontrolli iga märki ja proovi uuesti.",
   "photoLockWrongKey": "See taastevõti ei sobi. Kontrolli seda ja proovi uuesti.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Liiga palju katseid. Oota 1 sekund ja proovi uuesti.} other{Liiga palju katseid. Oota {seconds} sekundit ja proovi uuesti.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Liiga palju katseid. Oota 1 minut ja proovi uuesti.} other{Liiga palju katseid. Oota {minutes} minutit ja proovi uuesti.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Liiga palju katseid. Oota {seconds} sekund ja proovi uuesti.} other{Liiga palju katseid. Oota {seconds} sekundit ja proovi uuesti.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Liiga palju katseid. Oota {minutes} minut ja proovi uuesti.} other{Liiga palju katseid. Oota {minutes} minutit ja proovi uuesti.}}",
   "photoLockOffline": "Vaultaraga ei õnnestunud ühendust luua. Kontrolli ühendust ja proovi uuesti.",
   "photoLockNotSetUp": "Krüptitud fotod pole sinu kontol sees.",
   "photoLockUnlockFailed": "Midagi läks valesti. Proovi uuesti.",
@@ -1817,13 +1806,13 @@
   "dailyDigestSwitchSubtitle": "Saa meeldetuletuse ajal üks teavitus, mis loetleb kõik, mis sel päeval aegub.",
   "dailyDigestTurnedOn": "Sinu meeldetuletused tulevad nüüd ühe päevakokkuvõttena.",
   "dailyDigestTurnedOff": "Iga kirje eraldi meeldetuletused on tagasi sees.",
-  "dailyDigestTitle": "{count, plural, one{1 kirje vajab sinu tähelepanu} other{{count} kirjet vajavad sinu tähelepanu}}",
+  "dailyDigestTitle": "{count, plural, one{{count} kirje vajab sinu tähelepanu} other{{count} kirjet vajavad sinu tähelepanu}}",
   "dailyDigestBody": "Tulemas: {names}.",
   "dailyDigestBodyMore": "Tulemas: {names} ja veel {count}.",
   "dailyDigestLockedRecord": "lukustatud kirje",
   "renewReasonRepeat": "{months, plural, one{Sinu kordusseadistuse põhjal igal kuul} other{Sinu kordusseadistuse põhjal iga {months} kuu järel}}",
   "renewReasonHistory": "{count, plural, one{Sinu viimase uuendamise põhjal} other{Sinu viimase {count} uuendamise põhjal}}",
-  "renewReasonTypical": "{years, plural, one{Kehtib tavaliselt 1 aasta} other{Kehtib tavaliselt {years} aastat}}",
+  "renewReasonTypical": "{years, plural, one{Kehtib tavaliselt {years} aasta} other{Kehtib tavaliselt {years} aastat}}",
   "renewChangeHint": "Puuduta kuupäeva, et seda muuta.",
   "renewPickDate": "Vali uus aegumiskuupäev",
   "renewPickDateHint": "Vali kuupäev, mis on sinu uuel dokumendil.",
@@ -1976,9 +1965,9 @@
   "secHistoryIntro": "Sinu konto sisselogimised ja muudatused viimase 90 päeva jooksul.",
   "secHistoryEmpty": "Veel pole midagi näidata.",
   "secJustNow": "Just praegu",
-  "secMinutesAgo": "{count, plural, one{1 minut tagasi} other{{count} minutit tagasi}}",
-  "secHoursAgo": "{count, plural, one{1 tund tagasi} other{{count} tundi tagasi}}",
-  "secDaysAgo": "{count, plural, one{1 päev tagasi} other{{count} päeva tagasi}}",
+  "secMinutesAgo": "{count, plural, one{{count} minut tagasi} other{{count} minutit tagasi}}",
+  "secHoursAgo": "{count, plural, one{{count} tund tagasi} other{{count} tundi tagasi}}",
+  "secDaysAgo": "{count, plural, one{{count} päev tagasi} other{{count} päeva tagasi}}",
   "secEventNewSignIn": "Uus seade logis sisse",
   "secEventSignIn": "Sisse logitud",
   "secEventPasswordChanged": "Parool muudetud",
@@ -2299,8 +2288,8 @@
   "lifePlanAutoChanged": "Vaultara nägi, et see kirje muutus, seega on see märgitud tehtuks.",
   "lifePlanAutoAdded": "Lisatud pärast selle plaani alustamist.",
   "lifePlanProgress": "{done}/{total} tehtud",
-  "lifePlanDaysToGo": "{count, plural, =1{Jäänud 1 päev} other{Jäänud {count} päeva}}",
-  "lifePlanDaysAgo": "{count, plural, =1{1 päev tagasi} other{{count} päeva tagasi}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Jäänud {count} päev} other{Jäänud {count} päeva}}",
+  "lifePlanDaysAgo": "{count, plural, =1{{count} päev tagasi} other{{count} päeva tagasi}}",
   "lifePlanAllDone": "Kõik on tehtud. Võid plaani lõpetatuks märkida.",
   "lifePlanFinish": "Märgi lõpetatuks",
   "lifePlanReopen": "Ava uuesti",
@@ -2429,7 +2418,7 @@
   "lifePlanReadAloudUnavailable": "Ettelugemine pole selles telefonis saadaval.",
   "lifePlanProofPack": "Loo tõendipakett",
   "lifePlanOpenFamily": "Ava Pere",
-  "lifePlanRemoved": "{count, plural, =1{1 kustutatud kirje loetakse lõpetatuks.} other{{count} kustutatud kirjet loetakse lõpetatuks.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} kustutatud kirje loetakse lõpetatuks.} other{{count} kustutatud kirjet loetakse lõpetatuks.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2487,7 +2476,7 @@
   "lostWalletCheckupBody": "Valmistu kohe, et midagi ei ununeks, kui see kaob.",
   "lostWalletCheckupAllGood": "Kõik valmis. Kui see kunagi kaob, oled valmis.",
   "lostWalletSetPlaceBody": "Ava kaart või dokument ja vali, kus seda hoiad. Tee seda ID-kaardi, juhiloa ja kaartide puhul.",
-  "lostWalletIssuePhotos": "{count, plural, one{1 asjal pole fotot. Fotoga on asendamine kiirem.} other{{count} asjal pole fotot. Fotodega on asendamine kiirem.}}",
+  "lostWalletIssuePhotos": "{count, plural, one{{count} asjal pole fotot. Fotoga on asendamine kiirem.} other{{count} asjal pole fotot. Fotodega on asendamine kiirem.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2495,7 +2484,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, one{1 kaardil pole sulgemise numbrit salvestatud.} other{{count} kaardil pole sulgemise numbrit salvestatud.}}",
+  "lostWalletIssueLines": "{count, plural, one{{count} kaardil pole sulgemise numbrit salvestatud.} other{{count} kaardil pole sulgemise numbrit salvestatud.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2595,7 +2584,7 @@
     }
   },
   "lostWalletReportNoCase": "Menetlusnumber: veel teatamata",
-  "lostWalletReportCount": "{count, plural, one{1 asi allpool} other{{count} asja allpool}}",
+  "lostWalletReportCount": "{count, plural, one{{count} asi allpool} other{{count} asja allpool}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -3026,5 +3015,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} aegub täna",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} aegub homme",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} aegub {days} päeva pärast} other{{recordName} aegub {days} päeva pärast}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} on aegunud",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Lukustatud kirje vajab sinu tähelepanu",
+  "remLockedBody": "Selle kuupäev on {date}. Ava Vaultara lukk, et näha, milline kirje see on.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Sinu kirje „{recordName}“ aegub täna.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Sinu kirje „{recordName}“ aegub homme.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Sinu kirje „{recordName}“ aegub kuupäeval {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, sinu kirje „{recordName}“ aegub täna.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, sinu kirje „{recordName}“ aegub homme.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, sinu kirje „{recordName}“ aegub kuupäeval {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Kasutaja {person} kirje „{recordName}“ aegub täna.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Kasutaja {person} kirje „{recordName}“ aegub homme.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Kasutaja {person} kirje „{recordName}“ aegub kuupäeval {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Sinu kirje „{recordName}“ aegus kuupäeval {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Kasutaja {person} kirje „{recordName}“ aegus kuupäeval {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Juba uuendatud? Muuda kuupäeva.",
+  "remTipTomorrow": "Uuenda see kohe, et see ei aeguks.",
+  "remTipEarly": "Varakult uuendamine hoiab sind kaitstuna.",
+  "remTipLast": "See on viimane meeldetuletus enne aegumist.",
+  "remTipExpired": "Uuenda see või muuda kuupäeva, kui oled seda juba teinud.",
+  "remStartBody": "On aeg alustada kirje „{recordName}“ uuendamist. See aegub kuupäeval {date}, nii et kohe alustades on sul palju aega.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "On aeg alustada kasutaja {person} kirje „{recordName}“ uuendamist. See aegub kuupäeval {date}, nii et kohe alustades on palju aega.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Aegumise meeldetuletused",
+  "notifChannelDescription": "Meeldetuletused enne sinu kirjete aegumist",
+  "notifTestTitle": "Testteavitus",
+  "notifTestBody": "Vaultara meeldetuletused saabuvad nii.",
+  "notifTestAction": "Saada testteavitus",
+  "notifTestSubtitle": "Kontrolli, et meeldetuletused jõuavad sellesse telefoni",
+  "notifTestSent": "Test saadetud. See peaks saabuma mõne sekundi pärast.",
+  "notifAfterExpiryTitle": "Tuleta meelde pärast kirje aegumist",
+  "notifAfterExpirySubtitle": "3 ja 14 päeva hiljem, kui seda pole uuendatud",
+  "notifWeeklyTitle": "Esmaspäeva kokkuvõte",
+  "notifWeeklySubtitle": "Teade esmaspäeva hommikul, kui sel nädalal midagi aegub",
+  "notifPushSection": "Leibkond ja uuendused",
+  "notifHouseholdTitle": "Jagatud kirjed",
+  "notifHouseholdSubtitle": "Kui jagatud kirje on aegumas ja keegi pole seda uuendanud",
+  "notifUpdatesTitle": "Sinu küsitud uuendused",
+  "notifUpdatesSubtitle": "Kui keegi saadab kirje uued andmed",
+  "notifSecurityNote": "Teated uute sisselogimiste kohta sinu kontole saadetakse alati.",
+  "notifIosHelpTitle": "Meeldetuletusi ei tule?",
+  "notifIosHelpSubtitle": "Kontrolli iPhone'i seadeid",
+  "notifIosHelpStep1": "Ava Seaded, siis Teavitused, siis Vaultara, ja lülita sisse Luba teavitused.",
+  "notifIosHelpStep2": "Lülita sisse Lukustuskuva, Teavituskeskus ja Bännerid.",
+  "notifIosHelpStep3": "Kui kasutad fookust, lisa Vaultara rakenduste hulka, mida see lubab.",
+  "notifIosHelpStep4": "Ava Vaultara iga paari nädala tagant. iPhone hoiab ette vaid piiratud arvu meeldetuletusi ja rakenduse avamine planeerib järgmised.",
+  "homeNextUpEmpty": "Varsti ei aegu midagi. Kõik on korras.",
+  "homeDueSoonChip": "{count, plural, one{{count} tähtaeg 30 päeva jooksul} other{{count} tähtaega 30 päeva jooksul}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Kinnitatud kategooriad"
 }

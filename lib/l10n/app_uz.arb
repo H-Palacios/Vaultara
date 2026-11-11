@@ -111,9 +111,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara muhim tugash sanalarini kuzatib borishga yordam beradi, shunda hech narsaning muddati bilinmay tugab qolmaydi.",
   "homeWelcomeSubtitleFirst": "Sizni bu yerda koʻrganimizdan xursandmiz. Vaultara muhim sanalar va yozuvlarni bitta xavfsiz joyda saqlab, hammasini tartibda tutishingizga yordam beradi.",
   "homeWelcomeSubtitleBack": "Sizni yana koʻrib turganimizdan xursandmiz. Muhim sanalar va yozuvlaringizni koʻrib chiqmoqchi boʻlsangiz, Vaultara doim shu yerda.",
-  "summaryAllCaption": "Vaultarada kuzatilmoqda",
-  "summaryExpiredTitle": "Muddati tugagan",
-  "summaryExpiredCaption": "Tugash sanasi oʻtgan",
   "editorNotes": "Izohlar",
   "editorReminderNone": "Eslatmasiz",
   "editorReminderOnExpiry": "Tugash sanasida",
@@ -129,7 +126,6 @@
   "addRecord": "Yozuv qoʻshish",
   "noRecordsYet": "Hozircha yozuvlar yoʻq.",
   "deleteRecordTitle": "Yozuvni oʻchirish",
-  "summaryAllRecordsTitle": "Barcha yozuvlar",
   "noGroupFound": "Hozircha guruhlar yoʻq",
   "groupLabel": "{count, plural, one{{count} ta guruh} other{{count} ta guruh}}",
   "recordsLabel": "{count, plural, one{{count} ta yozuv} other{{count} ta yozuv}}",
@@ -249,11 +245,7 @@
   "addNotesHint": "Izoh qoʻshing (ixtiyoriy)",
   "expiryTimelineTitle": "Tugash sanalari vaqt chizigʻi",
   "expiryTimelineSubtitle": "Shu oyda muddati tugaydigan yozuvlarni koʻrish uchun oyni bosing",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 ta yozuv} other{{count} ta yozuv}}",
-  "summaryUpcomingTitle": "Yaqinlashayotganlar",
-  "summaryUpcomingCaption": "30 kun ichida",
-  "summaryUrgentTitle": "Shoshilinch",
-  "summaryUrgentCaption": "7 kun ichida",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} ta yozuv} other{{count} ta yozuv}}",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Qoʻllanmalar",
   "profileTutorialsSubtitle": "Ilova qoʻllanmalarini koʻrish",
@@ -285,7 +277,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Eslatmasiz",
   "reminderOnExpiry": "Tugash sanasida",
-  "reminderDaysBefore": "{days, plural, one{1 kun oldin} other{{days} kun oldin}}",
+  "reminderDaysBefore": "{days, plural, one{{days} kun oldin} other{{days} kun oldin}}",
   "reminderCustomDaysTitle": "Kunlar sonini kiriting",
   "reminderCascadeTitle": "Eslatmalar zanjiri",
   "reminderCascadeSubtitle": "Yozuv muddati tugashidan oldin bir nechta bildirishnoma oling",
@@ -316,16 +308,16 @@
   "smartInsightNoRecordsHeading": "Birinchi yozuvingizni qoʻshing",
   "smartInsightNoRecordsBody": "Yozuvlaringizni kuzatishni boshlang, Vaultara shu yerda aqlli tahlillarni koʻrsatadi.",
   "smartInsightExpiresTodaySingleBody": "{name} muddati bugun tugaydi. Agar uni allaqachon uzaytirgan boʻlsangiz, sanani shu yerda yangilang.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} muddati bugun tugaydi.} =1{{names} va yana 1 ta yozuvning muddati bugun tugaydi.} other{{names} va yana {extra} ta yozuvning muddati bugun tugaydi.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} muddati bugun tugaydi.} =1{{names} va yana {extra} ta yozuvning muddati bugun tugaydi.} other{{names} va yana {extra} ta yozuvning muddati bugun tugaydi.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} muddati ertaga tugaydi, lekin eslatmasi yoʻq. Unutmaslik uchun eslatma oʻrnating.} other{{name} muddati {date} kuni tugaydi, lekin eslatmasi yoʻq. Unutmaslik uchun eslatma oʻrnating.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} muddati {dateA} kuni, {b} muddati esa {dateB} kuni, deyarli bir vaqtda tugaydi. Ikki yozuv bir-biriga shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} va {c} muddati {lastDate}gacha, deyarli bir vaqtda tugaydi. Bir nechta yozuv shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} va yana 1 ta yozuvning muddati {lastDate}gacha, deyarli bir vaqtda tugaydi. Bir nechta yozuv shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.} other{{a}, {b} va yana {extra} ta yozuvning muddati {lastDate}gacha, deyarli bir vaqtda tugaydi. Bir nechta yozuv shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} va yana {extra} ta yozuvning muddati {lastDate}gacha, deyarli bir vaqtda tugaydi. Bir nechta yozuv shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.} other{{a}, {b} va yana {extra} ta yozuvning muddati {lastDate}gacha, deyarli bir vaqtda tugaydi. Bir nechta yozuv shunchalik yaqin boʻlsa, birini unutib qoʻyish oson.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Keyingi bir kunda hech narsaning muddati tugamaydi. Keyingi muddat tugashi: {date}.} other{Keyingi {days} kun ichida hech narsaning muddati tugamaydi. Keyingi muddat tugashi: {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} turkumidagi 1 ta yozuvingiz muddati {date} kuni tugaydi. Uni eʼtibordan chetda qoldirish oson.} other{{category} turkumidagi {count} ta yozuvingiz muddati {date}gacha tugaydi. Ular shunday toʻplanib qolganda, birini unutib qoʻyish oson.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Yaqinlashayotgan 1 ta muddat tugashi uchun eslatma oʻrnatilgan. Boshqa hech narsa eʼtiboringizni talab qilmaydi.} other{Yaqinlashayotgan {count} ta muddat tugashi uchun eslatmalar oʻrnatilgan. Boshqa hech narsa eʼtiboringizni talab qilmaydi.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} turkumidagi {count} ta yozuvingiz muddati {date} kuni tugaydi. Uni eʼtibordan chetda qoldirish oson.} other{{category} turkumidagi {count} ta yozuvingiz muddati {date}gacha tugaydi. Ular shunday toʻplanib qolganda, birini unutib qoʻyish oson.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Yaqinlashayotgan {count} ta muddat tugashi uchun eslatma oʻrnatilgan. Boshqa hech narsa eʼtiboringizni talab qilmaydi.} other{Yaqinlashayotgan {count} ta muddat tugashi uchun eslatmalar oʻrnatilgan. Boshqa hech narsa eʼtiboringizni talab qilmaydi.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Hammasi joyida. Hozircha hech narsa eʼtiboringizni talab qilmaydi.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Hozircha shoshilinch narsa yoʻq, lekin yaqinlashayotgan 1 ta yozuvda hali eslatma yoʻq.} other{Hozircha shoshilinch narsa yoʻq, lekin yaqinlashayotgan {count} ta yozuvda hali eslatma yoʻq.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Hozircha shoshilinch narsa yoʻq, lekin yaqinlashayotgan {count} ta yozuvda hali eslatma yoʻq.} other{Hozircha shoshilinch narsa yoʻq, lekin yaqinlashayotgan {count} ta yozuvda hali eslatma yoʻq.}}",
   "smartInsightCloseExpiriesHeading": "Muddati deyarli bir vaqtda tugaydi",
   "plansHeadline": "Vaultaradan toʻliq foydalaning",
   "plansSubhead": "Cheksiz yozuvlar, oʻz guruhlaringiz va aynan siz xohlagandek sozlangan eslatmalar.",
@@ -357,7 +349,7 @@
   "reminderCascadeRemoveStep": "Olib tashlash",
   "reminderCascadeDuplicate": "Bu kun boshqa eslatmada allaqachon ishlatilgan",
   "reminderCascadeOutOfRange": "{min}–{max} kun oraligʻida kiriting",
-  "reminderCascadeStepLabel": "{position}-eslatma: {days, plural, =1{1 kun} other{{days} kun}} oldin",
+  "reminderCascadeStepLabel": "{position}-eslatma: {days, plural, =1{{days} kun} other{{days} kun}} oldin",
   "expiryTimelineNotReady": "Bir necha xil oyda muddati tugaydigan yozuvlaringiz boʻlgach, vaqt chizigʻingiz paydo boʻladi.",
   "verifyEmailResendIn": "{seconds} soniyadan keyin qayta yuborish",
   "verifyEmailSpamHint": "Topa olmadingizmi? Spam papkasini tekshiring.",
@@ -366,13 +358,10 @@
   "verifyEmailDiscardBody": "Bu hisob tasdiqlanmagan. Hozir chiqib ketsangiz, u oʻchiriladi va istalgan e-pochta manzili bilan qaytadan roʻyxatdan oʻtishingiz mumkin.",
   "verifyEmailDiscardAction": "Voz kechish",
   "verifyEmailKeepWaiting": "Kutishda davom etish",
-  "expiringBadge": "{count, plural, =1{1 tasining muddati tugaydi} other{{count} tasining muddati tugaydi}}",
+  "expiringBadge": "{count, plural, =1{{count} tasining muddati tugaydi} other{{count} tasining muddati tugaydi}}",
   "noRecordsToday": "Bugun hech narsaning muddati tugamaydi",
   "noRecordsTomorrow": "Ertaga hech narsaning muddati tugamaydi",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} muddati bugun tugaydi} =1{{recordName} muddati ertaga tugaydi} other{{recordName} muddati {days} kundan keyin tugaydi}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, {recordName} muddati bugun tugaydi. Allaqachon uzaytirdingizmi? Tugash sanasini yangilang.} =1{{firstName}, {recordName} muddati ertaga tugaydi. Kechikib qolmaslik uchun uni hozir uzaytiring.} other{{firstName}, {recordName} muddati {date} kuni tugaydi. Oldindan uzaytirsangiz, xotirjam boʻlasiz.}}",
   "cascadeFinalStepTitle": "Soʻnggi eslatma: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, {recordName} muddati {days, plural, =1{ertaga} other{{days} kundan keyin, {date} kuni}} tugaydi. Bu soʻnggi eslatma: uni uzaytiring yoki tugash sanasini yangilang.",
   "notificationsTitle": "Bildirishnomalar",
   "notificationsProfileEnabledSubtitle": "Eslatmalar vaqti: {time}.",
   "notificationsProfileDisabledSubtitle": "Bildirishnomalar oʻchiq.",
@@ -2611,5 +2600,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} muddati bugun tugaydi",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} muddati ertaga tugaydi",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} muddati {days} kundan keyin tugaydi} other{{recordName} muddati {days} kundan keyin tugaydi}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} muddati tugadi",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Qulflangan yozuv e'tiboringizni talab qiladi",
+  "remLockedBody": "Uning sanasi — {date}. Qaysi yozuv ekanini ko'rish uchun Vaultara qulfini oching.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "“{recordName}” yozuvingiz muddati bugun tugaydi.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "“{recordName}” yozuvingiz muddati ertaga tugaydi.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "“{recordName}” yozuvingiz muddati {date} kuni tugaydi.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, “{recordName}” yozuvingiz muddati bugun tugaydi.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, “{recordName}” yozuvingiz muddati ertaga tugaydi.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, “{recordName}” yozuvingiz muddati {date} kuni tugaydi.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: “{recordName}” yozuvi muddati bugun tugaydi.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: “{recordName}” yozuvi muddati ertaga tugaydi.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: “{recordName}” yozuvi muddati {date} kuni tugaydi.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "“{recordName}” yozuvingiz muddati {date} kuni tugagan.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: “{recordName}” yozuvi muddati {date} kuni tugagan.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Allaqachon uzaytirdingizmi? Sanasini yangilang.",
+  "remTipTomorrow": "Muddati o'tib ketmasligi uchun hozir uzaytiring.",
+  "remTipEarly": "Erta uzaytirish sizni himoyalangan holda saqlaydi.",
+  "remTipLast": "Bu muddat tugashidan oldingi oxirgi eslatma.",
+  "remTipExpired": "Uzaytiring yoki allaqachon qilgan bo'lsangiz, sanasini yangilang.",
+  "remStartBody": "“{recordName}” yozuvini uzaytirishni boshlash vaqti keldi. Muddati {date} kuni tugaydi, hozir boshlasangiz, vaqtingiz yetarli bo'ladi.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "“{recordName}” ({person}) yozuvini uzaytirishni boshlash vaqti keldi. Muddati {date} kuni tugaydi, hozir boshlansa, vaqt yetarli bo'ladi.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Muddat eslatmalari",
+  "notifChannelDescription": "Yozuvlaringiz muddati tugashidan oldin eslatmalar",
+  "notifTestTitle": "Sinov bildirishnomasi",
+  "notifTestBody": "Vaultara eslatmalari shunday keladi.",
+  "notifTestAction": "Sinov bildirishnomasini yuborish",
+  "notifTestSubtitle": "Eslatmalar shu telefonga yetib kelishini tekshiring",
+  "notifTestSent": "Sinov yuborildi. Bir necha soniyada kelishi kerak.",
+  "notifAfterExpiryTitle": "Yozuv muddati tugagach eslatish",
+  "notifAfterExpirySubtitle": "3 va 14 kundan keyin, agar uzaytirilmagan bo'lsa",
+  "notifWeeklyTitle": "Dushanba xulosasi",
+  "notifWeeklySubtitle": "O'sha haftada biror narsaning muddati tugasa, dushanba ertalab xabar",
+  "notifPushSection": "Oila va yangilanishlar",
+  "notifHouseholdTitle": "Ulashilgan yozuvlar",
+  "notifHouseholdSubtitle": "Ulashilgan yozuv muddati tugash arafasida va uni hech kim uzaytirmaganda",
+  "notifUpdatesTitle": "Siz so'ragan yangilanishlar",
+  "notifUpdatesSubtitle": "Kimdir yozuvning yangi ma'lumotlarini yuborganda",
+  "notifSecurityNote": "Hisobingizga yangi kirishlar haqidagi ogohlantirishlar doim yuboriladi.",
+  "notifIosHelpTitle": "Eslatmalar kelmayaptimi?",
+  "notifIosHelpSubtitle": "iPhone sozlamalarini tekshiring",
+  "notifIosHelpStep1": "Sozlamalarni, keyin Bildirishnomalarni, keyin Vaultara'ni oching va Bildirishnomalarga ruxsat berishni yoqing.",
+  "notifIosHelpStep2": "Qulf ekrani, Bildirishnomalar markazi va Bannerlarni yoqing.",
+  "notifIosHelpStep3": "Fokus rejimidan foydalansangiz, Vaultara'ni ruxsat berilgan ilovalarga qo'shing.",
+  "notifIosHelpStep4": "Vaultara'ni bir necha haftada bir oching. iPhone oldindan faqat cheklangan sondagi eslatmalarni saqlaydi, ilovani ochish esa keyingilarini rejalashtiradi.",
+  "homeNextUpEmpty": "Yaqin orada hech narsaning muddati tugamaydi. Hammasi joyida.",
+  "homeDueSoonChip": "{count, plural, one{30 kun ichida {count} ta muddat} other{30 kun ichida {count} ta muddat}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Mahkamlangan toifalar"
 }

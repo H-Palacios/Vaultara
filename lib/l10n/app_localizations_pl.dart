@@ -360,15 +360,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Dobrze Cię znowu widzieć. Vaultara jest gotowa, gdy chcesz przejrzeć swoje ważne daty i zapisy.';
 
   @override
-  String get summaryAllCaption => 'Śledzone w Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Wygasłe';
-
-  @override
-  String get summaryExpiredCaption => 'Data ważności minęła';
-
-  @override
   String get editorNotes => 'Notatki';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Usuń rekord';
-
-  @override
-  String get summaryAllRecordsTitle => 'Wszystkie rekordy';
 
   @override
   String get noGroupFound => 'Brak grup';
@@ -835,22 +823,10 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$count rekordu',
       many: '$count rekordów',
       few: '$count rekordy',
-      one: '1 rekord',
+      one: '$count rekord',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Nadchodzące';
-
-  @override
-  String get summaryUpcomingCaption => 'W ciągu 30 dni';
-
-  @override
-  String get summaryUrgentTitle => 'Pilne';
-
-  @override
-  String get summaryUrgentCaption => 'W ciągu 7 dni';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -953,7 +929,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$days dni wcześniej',
       many: '$days dni wcześniej',
       few: '$days dni wcześniej',
-      one: '1 dzień wcześniej',
+      one: '$days dzień wcześniej',
     );
     return '$_temp0';
   }
@@ -1058,7 +1034,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$names i jeszcze $extra rekordu wygasa dziś.',
       many: '$names i jeszcze $extra rekordów wygasa dziś.',
       few: '$names i jeszcze $extra rekordy wygasają dziś.',
-      one: '$names i jeszcze 1 rekord wygasają dziś.',
+      one: '$names i jeszcze $extra rekord wygasają dziś.',
       zero: '$names wygasają dziś.',
     );
     return '$_temp0';
@@ -1095,7 +1071,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$a, $b i jeszcze $extra rekordu wygasa przed $lastDate, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.',
       many: '$a, $b i jeszcze $extra rekordów wygasa przed $lastDate, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.',
       few: '$a, $b i jeszcze $extra rekordy wygasają przed $lastDate, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.',
-      one: '$a, $b i jeszcze 1 rekord wygasają przed $lastDate, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.',
+      one: '$a, $b i jeszcze $extra rekord wygasają przed $lastDate, mniej więcej w tym samym czasie. Łatwo o czymś zapomnieć, gdy kilka rekordów jest tak blisko siebie.',
     );
     return '$_temp0';
   }
@@ -1121,7 +1097,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$count z Twoich rekordów w kategorii $category wygasa przed $date. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.',
       many: '$count z Twoich rekordów w kategorii $category wygasa przed $date. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.',
       few: '$count z Twoich rekordów w kategorii $category wygasają przed $date. Łatwo o którymś zapomnieć, gdy są tak zgrupowane.',
-      one: '1 z Twoich rekordów w kategorii $category wygasa $date. Łatwo go przeoczyć.',
+      one: '$count z Twoich rekordów w kategorii $category wygasa $date. Łatwo go przeoczyć.',
     );
     return '$_temp0';
   }
@@ -1134,7 +1110,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$count nadchodzącego wygaśnięcia jest objęte przypomnieniami. Nic więcej nie wymaga Twojej uwagi.',
       many: '$count nadchodzących wygaśnięć jest objętych przypomnieniami. Nic więcej nie wymaga Twojej uwagi.',
       few: '$count nadchodzące wygaśnięcia są objęte przypomnieniami. Nic więcej nie wymaga Twojej uwagi.',
-      one: '1 nadchodzące wygaśnięcie jest objęte przypomnieniem. Nic więcej nie wymaga Twojej uwagi.',
+      one: '$count nadchodzące wygaśnięcie jest objęte przypomnieniem. Nic więcej nie wymaga Twojej uwagi.',
     );
     return '$_temp0';
   }
@@ -1150,7 +1126,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: 'W tej chwili nic nie jest pilne, ale $count nadchodzącego rekordu nie ma jeszcze przypomnienia.',
       many: 'W tej chwili nic nie jest pilne, ale $count nadchodzących rekordów nie ma jeszcze przypomnienia.',
       few: 'W tej chwili nic nie jest pilne, ale $count nadchodzące rekordy nie mają jeszcze przypomnienia.',
-      one: 'W tej chwili nic nie jest pilne, ale 1 nadchodzący rekord nie ma jeszcze przypomnienia.',
+      one: 'W tej chwili nic nie jest pilne, ale $count nadchodzący rekord nie ma jeszcze przypomnienia.',
     );
     return '$_temp0';
   }
@@ -1276,7 +1252,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$days dnia',
       many: '$days dni',
       few: '$days dni',
-      one: '1 dzień',
+      one: '$days dzień',
     );
     return 'Przypomnienie $position: $_temp0 wcześniej';
   }
@@ -1315,7 +1291,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$count wkrótce wygasa',
       many: '$count wkrótce wygasa',
       few: '$count wkrótce wygasają',
-      one: '1 wkrótce wygasa',
+      one: '$count wkrótce wygasa',
     );
     return '$_temp0';
   }
@@ -1327,49 +1303,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get noRecordsTomorrow => 'Jutro nic nie wygasa';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName wygasa za $days dni',
-      many: '$recordName wygasa za $days dni',
-      few: '$recordName wygasa za $days dni',
-      one: '$recordName wygasa jutro',
-      zero: '$recordName wygasa dzisiaj',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, Twój $recordName wygasa $date. Wcześniejsze odnowienie zapewnia ciągłość ochrony.',
-      many: '$firstName, Twój $recordName wygasa $date. Wcześniejsze odnowienie zapewnia ciągłość ochrony.',
-      few: '$firstName, Twój $recordName wygasa $date. Wcześniejsze odnowienie zapewnia ciągłość ochrony.',
-      one: '$firstName, Twój $recordName wygasa jutro. Odnów go teraz, aby nie stracił ważności.',
-      zero: '$firstName, Twój $recordName wygasa dzisiaj. Czy został już odnowiony? Zaktualizuj datę wygaśnięcia.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Ostatnie przypomnienie: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'za $days dni, $date',
-      many: 'za $days dni, $date',
-      few: 'za $days dni, $date',
-      one: 'jutro',
-    );
-    return '$firstName, Twój $recordName wygasa $_temp0. To Twoje ostatnie przypomnienie, odnów go lub zaktualizuj datę.';
   }
 
   @override
@@ -5137,7 +5072,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$count rekordu wymaga twojej uwagi',
       many: '$count rekordów wymaga twojej uwagi',
       few: '$count rekordy wymagają twojej uwagi',
-      one: '1 rekord wymaga twojej uwagi',
+      one: '$count rekord wymaga twojej uwagi',
     );
     return '$_temp0';
   }
@@ -5189,7 +5124,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: 'Zwykle ważne przez $years roku',
       many: 'Zwykle ważne przez $years lat',
       few: 'Zwykle ważne przez $years lata',
-      one: 'Zwykle ważne przez 1 rok',
+      one: 'Zwykle ważne przez $years rok',
     );
     return '$_temp0';
   }
@@ -5792,7 +5727,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$count minuty temu',
       many: '$count minut temu',
       few: '$count minuty temu',
-      one: '1 minutę temu',
+      one: '$count minutę temu',
     );
     return '$_temp0';
   }
@@ -5805,7 +5740,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$count godziny temu',
       many: '$count godzin temu',
       few: '$count godziny temu',
-      one: '1 godzinę temu',
+      one: '$count godzinę temu',
     );
     return '$_temp0';
   }
@@ -5818,7 +5753,7 @@ class AppLocalizationsPl extends AppLocalizations {
       other: '$count dnia temu',
       many: '$count dni temu',
       few: '$count dni temu',
-      one: '1 dzień temu',
+      one: '$count dzień temu',
     );
     return '$_temp0';
   }
@@ -8448,4 +8383,208 @@ class AppLocalizationsPl extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Przypomnienie: $name wygasa $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'Rekord „$recordName” wygasa dziś';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'Rekord „$recordName” wygasa jutro';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Rekord „$recordName” wygasa za $days dnia',
+      many: 'Rekord „$recordName” wygasa za $days dni',
+      few: 'Rekord „$recordName” wygasa za $days dni',
+      one: 'Rekord „$recordName” wygasa za $days dzień',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'Rekord „$recordName” wygasł';
+  }
+
+  @override
+  String get remLockedTitle => 'Zablokowany rekord wymaga Twojej uwagi';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Jego data to $date. Odblokuj Vaultara, aby zobaczyć, który to rekord.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Twój rekord „$recordName” wygasa dziś.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Twój rekord „$recordName” wygasa jutro.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Twój rekord „$recordName” wygasa $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, Twój rekord „$recordName” wygasa dziś.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, Twój rekord „$recordName” wygasa jutro.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, Twój rekord „$recordName” wygasa $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Rekord „$recordName” ($person) wygasa dziś.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Rekord „$recordName” ($person) wygasa jutro.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Rekord „$recordName” ($person) wygasa $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Twój rekord „$recordName” wygasł $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Rekord „$recordName” ($person) wygasł $date.';
+  }
+
+  @override
+  String get remTipToday => 'Już odnowiony? Zaktualizuj datę.';
+
+  @override
+  String get remTipTomorrow => 'Odnów go teraz, żeby nie wygasł.';
+
+  @override
+  String get remTipEarly => 'Wczesne odnowienie zapewnia ciągłość.';
+
+  @override
+  String get remTipLast => 'To ostatnie przypomnienie przed wygaśnięciem.';
+
+  @override
+  String get remTipExpired => 'Odnów go albo zaktualizuj datę, jeśli już to zrobiono.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Czas zacząć odnawianie „$recordName”. Rekord wygasa $date, więc zaczynając teraz, masz mnóstwo czasu.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Czas zacząć odnawianie „$recordName” ($person). Rekord wygasa $date, więc zaczynając teraz, jest mnóstwo czasu.';
+  }
+
+  @override
+  String get notifChannelName => 'Przypomnienia o wygaśnięciu';
+
+  @override
+  String get notifChannelDescription => 'Przypomnienia przed wygaśnięciem Twoich rekordów';
+
+  @override
+  String get notifTestTitle => 'Powiadomienie testowe';
+
+  @override
+  String get notifTestBody => 'Tak wyglądają przypomnienia z Vaultara.';
+
+  @override
+  String get notifTestAction => 'Wyślij powiadomienie testowe';
+
+  @override
+  String get notifTestSubtitle => 'Sprawdź, czy przypomnienia docierają na ten telefon';
+
+  @override
+  String get notifTestSent => 'Test wysłany. Powinien dotrzeć za kilka sekund.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Przypominaj po wygaśnięciu rekordu';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 i 14 dni później, jeśli nie został odnowiony';
+
+  @override
+  String get notifWeeklyTitle => 'Podsumowanie poniedziałkowe';
+
+  @override
+  String get notifWeeklySubtitle => 'Wiadomość w poniedziałek rano, gdy coś wygasa w tym tygodniu';
+
+  @override
+  String get notifPushSection => 'Gospodarstwo i aktualizacje';
+
+  @override
+  String get notifHouseholdTitle => 'Udostępnione rekordy';
+
+  @override
+  String get notifHouseholdSubtitle => 'Gdy udostępniony rekord zaraz wygaśnie, a nikt go nie odnowił';
+
+  @override
+  String get notifUpdatesTitle => 'Aktualizacje, o które prosisz';
+
+  @override
+  String get notifUpdatesSubtitle => 'Gdy ktoś przyśle nowe dane rekordu';
+
+  @override
+  String get notifSecurityNote => 'Alerty o nowych logowaniach na Twoje konto są wysyłane zawsze.';
+
+  @override
+  String get notifIosHelpTitle => 'Nie dostajesz przypomnień?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Sprawdź ustawienia iPhone\'a';
+
+  @override
+  String get notifIosHelpStep1 => 'Otwórz Ustawienia, potem Powiadomienia, potem Vaultara, i włącz Zezwalaj na powiadomienia.';
+
+  @override
+  String get notifIosHelpStep2 => 'Włącz Ekran blokady, Centrum powiadomień i Banery.';
+
+  @override
+  String get notifIosHelpStep3 => 'Jeśli używasz trybu skupienia, dodaj Vaultara do dozwolonych aplikacji.';
+
+  @override
+  String get notifIosHelpStep4 => 'Otwieraj Vaultara co kilka tygodni. iPhone przechowuje tylko ograniczoną liczbę przyszłych przypomnień, a otwarcie aplikacji planuje kolejne.';
+
+  @override
+  String get homeNextUpEmpty => 'Wkrótce nic nie wygasa. Wszystko gotowe.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count wygasa w ciągu 30 dni',
+      many: '$count wygasa w ciągu 30 dni',
+      few: '$count wygasają w ciągu 30 dni',
+      one: '$count wygasa w ciągu 30 dni',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Przypięte kategorie';
 }

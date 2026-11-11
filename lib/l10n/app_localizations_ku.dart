@@ -360,15 +360,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Em kêfxweş in ku dîsa te dibînin. Vaultara her dem amade ye ji bo dîrok û tomarên te yên girîng.';
 
   @override
-  String get summaryAllCaption => 'Di Vaultara de têne şopandin';
-
-  @override
-  String get summaryExpiredTitle => 'Bidawîbûyî';
-
-  @override
-  String get summaryExpiredCaption => 'Dîroka bidawîbûnê derbas bûye';
-
-  @override
   String get editorNotes => 'Nîşe';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Tomarê jê bibe';
-
-  @override
-  String get summaryAllRecordsTitle => 'Hemû tomar';
 
   @override
   String get noGroupFound => 'Hîn tu kom tune ne';
@@ -829,22 +817,10 @@ class AppLocalizationsKu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tomar',
-      one: '1 tomar',
+      one: '$count tomar',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Nêzîk';
-
-  @override
-  String get summaryUpcomingCaption => 'Di 30 rojên bê de';
-
-  @override
-  String get summaryUrgentTitle => 'Lezgîn';
-
-  @override
-  String get summaryUrgentCaption => 'Di 7 rojên bê de';
 
   @override
   String get profileHeaderTitle => 'Profîl';
@@ -945,7 +921,7 @@ class AppLocalizationsKu extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days roj berê',
-      one: '1 roj berê',
+      one: '$days roj berê',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsKu extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names û $extra yên din îro bidawî dibin.',
-      one: '$names û 1 ya din îro bidawî dibin.',
+      one: '$names û $extra ya din îro bidawî dibin.',
       zero: '$names îro bidawî dibin.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsKu extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b û $extra tomarên din heta $lastDate, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema çend tomar ewqas nêzîkî hev bin.',
-      one: '$a, $b û 1 tomara din heta $lastDate, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema çend tomar ewqas nêzîkî hev bin.',
+      one: '$a, $b û $extra tomara din heta $lastDate, hema hema di heman demê de bidawî dibin. Ji bîr kirina yekê hêsan e dema çend tomar ewqas nêzîkî hev bin.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsKu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ji tomarên te yên di kategoriya $category de heta $date bidawî dibin. Ji bîr kirina yekê hêsan e dema bi vî awayî kom bûne.',
-      one: '1 ji tomarên te yên di kategoriya $category de di $date de bidawî dibe. Hêsan e ku ji ber çavan derkeve.',
+      one: '$count ji tomarên te yên di kategoriya $category de di $date de bidawî dibe. Hêsan e ku ji ber çavan derkeve.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsKu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count bidawîbûnên pêş bi bîrxistinan parastî ne. Tu tiştê din hewceyî baldariya te nîne.',
-      one: '1 bidawîbûna pêş bi bîrxistinekê parastî ye. Tu tiştê din hewceyî baldariya te nîne.',
+      one: '$count bidawîbûna pêş bi bîrxistinekê parastî ye. Tu tiştê din hewceyî baldariya te nîne.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsKu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Di vê demê de tu tişt lezgîn nîne, lê $count tomarên pêş hîn bîrxistina wan tune ye.',
-      one: 'Di vê demê de tu tişt lezgîn nîne, lê 1 tomara pêş hîn bîrxistina wê tune ye.',
+      one: 'Di vê demê de tu tişt lezgîn nîne, lê $count tomara pêş hîn bîrxistina wê tune ye.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsKu extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days roj',
-      one: '1 roj',
+      one: '$days roj',
     );
     return 'Bîrxistin $position: $_temp0 berê';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsKu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count nêzîkê bidawîbûnê ne',
-      one: '1 nêzîkê bidawîbûnê ye',
+      one: '$count nêzîkê bidawîbûnê ye',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get noRecordsTomorrow => 'Sibê tu tişt bidawî nabe';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName di nav $days rojan de bi dawî dibe',
-      one: '$recordName sibê bi dawî dibe',
-      zero: '$recordName îro bi dawî dibe',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName a te di $date de bi dawî dibe. Nûkirina zû te diparêze.',
-      one: '$firstName, $recordName a te sibê bi dawî dibe. Niha ew nû bike da ku bi dawî nebe.',
-      zero: '$firstName, $recordName a te îro bi dawî dibe. Te jixwe ew nû kir? Dîroka bidawîbûna wê biguherîne.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Bîrxistina dawî: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'di nav $days rojan de, di $date de',
-      one: 'sibê',
-    );
-    return '$firstName, $recordName a te $_temp0 bi dawî dibe. Ev bîrxistina te ya dawî ye, wê nû bike an jî dîroka wê biguherîne.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsKu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count wêne hêj şîfrekirî nînin',
-      one: '1 wêne hêj şîfrekirî nîne',
+      one: '$count wêne hêj şîfrekirî nîne',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsKu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count wêneyên te hene ku hêj şîfrekirî nînin. Em dikarin wan niha şîfre bikin.',
-      one: '1 wêneyê te heye ku hêj şîfrekirî nîne. Em dikarin wê niha şîfre bikin.',
+      one: '$count wêneyê te heye ku hêj şîfrekirî nîne. Em dikarin wê niha şîfre bikin.',
     );
     return '$_temp0 Vaultara vekirî bihêle heta ku biqede.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsKu extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Gelek caran hat ceribandin. Ji kerema xwe $seconds çirkeyan bisekine û dîsa biceribîne.',
-      one: 'Gelek caran hat ceribandin. Ji kerema xwe 1 çirkeyê bisekine û dîsa biceribîne.',
+      one: 'Gelek caran hat ceribandin. Ji kerema xwe $seconds çirkeyê bisekine û dîsa biceribîne.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsKu extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Gelek caran hat ceribandin. Ji kerema xwe $minutes deqeyan bisekine û dîsa biceribîne.',
-      one: 'Gelek caran hat ceribandin. Ji kerema xwe 1 deqeyê bisekine û dîsa biceribîne.',
+      one: 'Gelek caran hat ceribandin. Ji kerema xwe $minutes deqeyê bisekine û dîsa biceribîne.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsKu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tomar bala te dixwazin',
-      one: '1 tomar bala te dixwaze',
+      one: '$count tomar bala te dixwaze',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsKu extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Bi gelemperî $years salan derbasdar e',
-      one: 'Bi gelemperî 1 salî derbasdar e',
+      one: 'Bi gelemperî $years salî derbasdar e',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsKu extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Bîrxistin: $name di $date de diqede';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName îro bi dawî dibe';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName sibê bi dawî dibe';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName di $days rojan de bi dawî dibe',
+      one: '$recordName di $days rojê de bi dawî dibe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName bi dawî bûye';
+  }
+
+  @override
+  String get remLockedTitle => 'Tomareke kilîtkirî baldariya te dixwaze';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Dîroka wê $date e. Kilîta Vaultara veke da ku bibînî ka kîjan tomar e.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Tomara te \"$recordName\" îro bi dawî dibe.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Tomara te \"$recordName\" sibê bi dawî dibe.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Tomara te \"$recordName\" di $date de bi dawî dibe.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, tomara te \"$recordName\" îro bi dawî dibe.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, tomara te \"$recordName\" sibê bi dawî dibe.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, tomara te \"$recordName\" di $date de bi dawî dibe.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: tomara \"$recordName\" îro bi dawî dibe.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: tomara \"$recordName\" sibê bi dawî dibe.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: tomara \"$recordName\" di $date de bi dawî dibe.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Tomara te \"$recordName\" di $date de bi dawî bû.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: tomara \"$recordName\" di $date de bi dawî bû.';
+  }
+
+  @override
+  String get remTipToday => 'Te berê nû kir? Dîroka wê nû bike.';
+
+  @override
+  String get remTipTomorrow => 'Niha nû bike da ku bi dawî nebe.';
+
+  @override
+  String get remTipEarly => 'Nûkirina zû te parastî dihêle.';
+
+  @override
+  String get remTipLast => 'Ev bîranîna te ya dawî ye berî ku bi dawî bibe.';
+
+  @override
+  String get remTipExpired => 'Nû bike, an jî heke te berê kiribe dîroka wê nû bike.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Dem hatiye ku dest bi nûkirina \"$recordName\" bikî. Di $date de bi dawî dibe, ji ber vê heke niha dest pê bikî dê wext bes be.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Dem hatiye ku dest bi nûkirina \"$recordName\" ($person) bê kirin. Di $date de bi dawî dibe, ji ber vê destpêkirina niha wext bes dihêle.';
+  }
+
+  @override
+  String get notifChannelName => 'Bîranînên dawîbûnê';
+
+  @override
+  String get notifChannelDescription => 'Bîranîn berî ku tomarên te bi dawî bibin';
+
+  @override
+  String get notifTestTitle => 'Agahdariya ceribandinê';
+
+  @override
+  String get notifTestBody => 'Bîranînên Vaultara bi vî awayî tên.';
+
+  @override
+  String get notifTestAction => 'Agahdariya ceribandinê bişîne';
+
+  @override
+  String get notifTestSubtitle => 'Kontrol bike ku bîranîn digihîjin vê telefonê';
+
+  @override
+  String get notifTestSent => 'Ceribandin hat şandin. Divê di çend çirkeyan de bigihîje.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Piştî ku tomarek bi dawî bû bîne bîra min';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 û 14 roj piştî wê, heke nehatibe nûkirin';
+
+  @override
+  String get notifWeeklyTitle => 'Kurteya Duşemê';
+
+  @override
+  String get notifWeeklySubtitle => 'Peyamek sibeha Duşemê dema ku tiştek wê hefteyê bi dawî dibe';
+
+  @override
+  String get notifPushSection => 'Malbat û nûkirin';
+
+  @override
+  String get notifHouseholdTitle => 'Tomarên parvekirî';
+
+  @override
+  String get notifHouseholdSubtitle => 'Dema ku tomareke parvekirî nêzî dawîbûnê ye û kesî nû nekiriye';
+
+  @override
+  String get notifUpdatesTitle => 'Nûkirinên ku te xwestin';
+
+  @override
+  String get notifUpdatesSubtitle => 'Dema ku kesek agahiyên nû yên tomarekê dişîne';
+
+  @override
+  String get notifSecurityNote => 'Hişyariyên têketinên nû li hesabê te her tim têne şandin.';
+
+  @override
+  String get notifIosHelpTitle => 'Bîranîn nayên?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Mîhengên iPhone kontrol bike';
+
+  @override
+  String get notifIosHelpStep1 => 'Mîheng, paşê Agahdarî, paşê Vaultara veke, û Destûra agahdariyan bide çalak bike.';
+
+  @override
+  String get notifIosHelpStep2 => 'Ekrana kilîtê, Navenda agahdariyan û Banneran çalak bike.';
+
+  @override
+  String get notifIosHelpStep3 => 'Heke tu Focus bi kar tînî, Vaultara li sepanên destûrdayî zêde bike.';
+
+  @override
+  String get notifIosHelpStep4 => 'Her çend hefteyan carekê Vaultara veke. iPhone tenê hejmareke sînorkirî ya bîranînên pêş de digire, û vekirina sepanê yên din plan dike.';
+
+  @override
+  String get homeNextUpEmpty => 'Di demeke nêz de tiştek bi dawî nabe. Her tişt amade ye.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count di nav 30 rojan de',
+      one: '$count di nav 30 rojan de',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Kategoriyên derzîkirî';
 }

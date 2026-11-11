@@ -360,15 +360,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Heureux de vous revoir. Vaultara est là chaque fois que vous souhaitez consulter vos dates et enregistrements importants.';
 
   @override
-  String get summaryAllCaption => 'Suivis dans Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Expiré';
-
-  @override
-  String get summaryExpiredCaption => 'Date d’expiration dépassée';
-
-  @override
   String get editorNotes => 'Notes';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Supprimer l’enregistrement';
-
-  @override
-  String get summaryAllRecordsTitle => 'Tous les enregistrements';
 
   @override
   String get noGroupFound => 'Aucun groupe pour le moment';
@@ -829,22 +817,10 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count enregistrements',
-      one: '1 enregistrement',
+      one: '$count enregistrement',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'À Venir';
-
-  @override
-  String get summaryUpcomingCaption => 'Dans les 30 prochains jours';
-
-  @override
-  String get summaryUrgentTitle => 'Urgent';
-
-  @override
-  String get summaryUrgentCaption => 'Dans les 7 prochains jours';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -945,7 +921,7 @@ class AppLocalizationsFr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days jours avant',
-      one: '1 jour avant',
+      one: '$days jour avant',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsFr extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names et $extra autres expirent aujourd\'hui.',
-      one: '$names et 1 autre expirent aujourd\'hui.',
+      one: '$names et $extra autre expirent aujourd\'hui.',
       zero: '$names expirent aujourd\'hui.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsFr extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b et $extra autres enregistrements expirent d\'ici le $lastDate, à peu près au même moment. Il est facile d\'en oublier un lorsque plusieurs enregistrements sont si rapprochés.',
-      one: '$a, $b et 1 autre enregistrement expirent d\'ici le $lastDate, à peu près au même moment. Il est facile d\'en oublier un lorsque plusieurs enregistrements sont si rapprochés.',
+      one: '$a, $b et $extra autre enregistrement expirent d\'ici le $lastDate, à peu près au même moment. Il est facile d\'en oublier un lorsque plusieurs enregistrements sont si rapprochés.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count de vos enregistrements de la catégorie $category expirent d\'ici le $date. Il est facile d\'en oublier un lorsqu\'ils sont regroupés ainsi.',
-      one: '1 de vos enregistrements de la catégorie $category expire le $date. Il est facile de passer à côté.',
+      one: '$count de vos enregistrements de la catégorie $category expire le $date. Il est facile de passer à côté.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count échéances à venir sont couvertes par des rappels. Rien d\'autre ne requiert votre attention.',
-      one: '1 échéance à venir est couverte par un rappel. Rien d\'autre ne requiert votre attention.',
+      one: '$count échéance à venir est couverte par un rappel. Rien d\'autre ne requiert votre attention.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Rien n\'est urgent pour le moment, mais $count enregistrements à venir n\'ont pas encore de rappel.',
-      one: 'Rien n\'est urgent pour le moment, mais 1 enregistrement à venir n\'a pas encore de rappel.',
+      one: 'Rien n\'est urgent pour le moment, mais $count enregistrement à venir n\'a pas encore de rappel.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsFr extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days jours',
-      one: '1 jour',
+      one: '$days jour',
     );
     return 'Rappel $position : $_temp0 avant';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count expirent bientôt',
-      one: '1 expire bientôt',
+      one: '$count expire bientôt',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get noRecordsTomorrow => 'Rien n\'expire demain';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName expire dans $days jours',
-      one: '$recordName expire demain',
-      zero: '$recordName expire aujourd\'hui',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, votre $recordName expire le $date. Le renouveler tôt vous permet de rester couvert.',
-      one: '$firstName, votre $recordName expire demain. Renouvelez-le maintenant pour éviter qu\'il ne soit caduc.',
-      zero: '$firstName, votre $recordName expire aujourd\'hui. L\'avez-vous déjà renouvelé ? Mettez à jour sa date d\'expiration.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Dernier rappel : $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'dans $days jours, le $date',
-      one: 'demain',
-    );
-    return '$firstName, votre $recordName expire $_temp0. C\'est votre dernier rappel, renouvelez-le ou mettez à jour sa date.';
   }
 
   @override
@@ -6797,7 +6738,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Plus que $count jours',
-      one: 'Plus que 1 jour',
+      one: 'Plus que $count jour',
       zero: 'Plus que 0 jour',
     );
     return '$_temp0';
@@ -6809,7 +6750,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Il y a $count jours',
-      one: 'Il y a 1 jour',
+      one: 'Il y a $count jour',
       zero: 'Il y a 0 jour',
     );
     return '$_temp0';
@@ -7170,7 +7111,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dossiers que vous avez supprimés comptent comme résiliés.',
-      one: '1 dossier que vous avez supprimé compte comme résilié.',
+      one: '$count dossier que vous avez supprimé compte comme résilié.',
     );
     return '$_temp0';
   }
@@ -7312,7 +7253,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count éléments n\'ont pas de photo. Des photos accélèrent le remplacement.',
-      one: '1 élément n\'a pas de photo. Une photo accélère le remplacement.',
+      one: '$count élément n\'a pas de photo. Une photo accélère le remplacement.',
     );
     return '$_temp0';
   }
@@ -7323,7 +7264,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count cartes n\'ont pas de numéro pour carte perdue.',
-      one: '1 carte n\'a pas de numéro pour carte perdue.',
+      one: '$count carte n\'a pas de numéro pour carte perdue.',
     );
     return '$_temp0';
   }
@@ -7502,7 +7443,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count éléments listés ci-dessous',
-      one: '1 élément listé ci-dessous',
+      one: '$count élément listé ci-dessous',
     );
     return '$_temp0';
   }
@@ -7594,7 +7535,7 @@ class AppLocalizationsFr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count étapes',
-      one: '1 étape',
+      one: '$count étape',
     );
     return '$_temp0';
   }
@@ -8290,4 +8231,204 @@ class AppLocalizationsFr extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Rappel : $name expire le $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName expire aujourd\'hui';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName expire demain';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName expire dans $days jours',
+      one: '$recordName expire dans $days jour',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName a expiré';
+  }
+
+  @override
+  String get remLockedTitle => 'Un enregistrement verrouillé demande votre attention';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Sa date est le $date. Déverrouillez Vaultara pour voir de quel enregistrement il s\'agit.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Votre enregistrement « $recordName » expire aujourd\'hui.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Votre enregistrement « $recordName » expire demain.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Votre enregistrement « $recordName » expire le $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, votre enregistrement « $recordName » expire aujourd\'hui.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, votre enregistrement « $recordName » expire demain.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, votre enregistrement « $recordName » expire le $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'L\'enregistrement « $recordName » de $person expire aujourd\'hui.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'L\'enregistrement « $recordName » de $person expire demain.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'L\'enregistrement « $recordName » de $person expire le $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Votre enregistrement « $recordName » a expiré le $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'L\'enregistrement « $recordName » de $person a expiré le $date.';
+  }
+
+  @override
+  String get remTipToday => 'Déjà renouvelé ? Mettez à jour sa date.';
+
+  @override
+  String get remTipTomorrow => 'Renouvelez-le maintenant pour qu\'il ne soit pas périmé.';
+
+  @override
+  String get remTipEarly => 'Renouveler tôt vous permet de rester couvert.';
+
+  @override
+  String get remTipLast => 'C\'est votre dernier rappel avant l\'expiration.';
+
+  @override
+  String get remTipExpired => 'Renouvelez-le, ou mettez à jour sa date si c\'est déjà fait.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Il est temps de commencer le renouvellement de « $recordName ». Il expire le $date, donc commencer maintenant vous laisse largement le temps.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Il est temps de commencer le renouvellement de « $recordName » de $person. Il expire le $date, donc commencer maintenant laisse largement le temps.';
+  }
+
+  @override
+  String get notifChannelName => 'Rappels d\'expiration';
+
+  @override
+  String get notifChannelDescription => 'Rappels avant l\'expiration de vos enregistrements';
+
+  @override
+  String get notifTestTitle => 'Notification de test';
+
+  @override
+  String get notifTestBody => 'Les rappels de Vaultara arrivent comme ceci.';
+
+  @override
+  String get notifTestAction => 'Envoyer une notification de test';
+
+  @override
+  String get notifTestSubtitle => 'Vérifier que les rappels arrivent sur ce téléphone';
+
+  @override
+  String get notifTestSent => 'Test envoyé. Il devrait arriver dans quelques secondes.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Me rappeler après l\'expiration';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 et 14 jours après, s\'il n\'a pas été renouvelé';
+
+  @override
+  String get notifWeeklyTitle => 'Résumé du lundi';
+
+  @override
+  String get notifWeeklySubtitle => 'Un message le lundi matin quand quelque chose expire dans la semaine';
+
+  @override
+  String get notifPushSection => 'Foyer et mises à jour';
+
+  @override
+  String get notifHouseholdTitle => 'Enregistrements partagés';
+
+  @override
+  String get notifHouseholdSubtitle => 'Quand un enregistrement partagé va bientôt expirer et que personne ne l\'a renouvelé';
+
+  @override
+  String get notifUpdatesTitle => 'Mises à jour demandées';
+
+  @override
+  String get notifUpdatesSubtitle => 'Quand quelqu\'un envoie les nouvelles informations d\'un enregistrement';
+
+  @override
+  String get notifSecurityNote => 'Les alertes de nouvelle connexion à votre compte sont toujours envoyées.';
+
+  @override
+  String get notifIosHelpTitle => 'Vous ne recevez pas les rappels ?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Vérifiez les réglages de votre iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Ouvrez Réglages, puis Notifications, puis Vaultara, et activez Autoriser les notifications.';
+
+  @override
+  String get notifIosHelpStep2 => 'Activez Écran verrouillé, Centre de notifications et Bannières.';
+
+  @override
+  String get notifIosHelpStep3 => 'Si vous utilisez un mode de concentration, ajoutez Vaultara aux apps autorisées.';
+
+  @override
+  String get notifIosHelpStep4 => 'Ouvrez Vaultara toutes les quelques semaines. L\'iPhone ne garde qu\'un nombre limité de rappels à l\'avance, et ouvrir l\'app planifie les suivants.';
+
+  @override
+  String get homeNextUpEmpty => 'Rien n\'expire bientôt. Tout est en ordre.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count à échéance sous 30 jours',
+      one: '$count à échéance sous 30 jours',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Catégories épinglées';
 }

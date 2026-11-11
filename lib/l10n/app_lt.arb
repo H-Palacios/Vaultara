@@ -189,7 +189,6 @@
   "addRecord": "Pridėti įrašą",
   "noRecordsYet": "Įrašų dar nėra.",
   "deleteRecordTitle": "Ištrinti įrašą",
-  "summaryAllRecordsTitle": "Visi įrašai",
   "noGroupFound": "Grupių dar nėra",
   "groupLabel": "{count, plural, one{{count} grupė} other{{count} grupės}}",
   "recordsLabel": "{count, plural, one{{count} įrašas} other{{count} įrašai}}",
@@ -425,9 +424,6 @@
   "passwordNeedUpper": "Turi būti didžioji raidė",
   "passwordNeedNumber": "Turi būti skaičius",
   "passwordNeedSymbol": "Turi būti simbolis",
-  "summaryAllCaption": "Sekami Vaultara",
-  "summaryExpiredTitle": "Pasibaigę",
-  "summaryExpiredCaption": "Po galiojimo datos",
   "profile_account_management_subtitle": "Keiskite el. paštą, slaptažodį arba ištrinkite paskyrą.",
   "confirmIdentityTitle": "Patvirtinti tapatybę",
   "confirm": "Patvirtinti",
@@ -455,7 +451,7 @@
   "addNotesHint": "Pridėti pastabas (nebūtina)",
   "expiryTimelineTitle": "Galiojimo laiko juosta",
   "expiryTimelineSubtitle": "Bakstelėkite mėnesį, kad pamatytumėte įrašus, kurių galiojimas baigiasi tą mėnesį",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 įrašas} few{{count} įrašai} many{{count} įrašo} other{{count} įrašų}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} įrašas} few{{count} įrašai} many{{count} įrašo} other{{count} įrašų}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -463,10 +459,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Artėjantys",
-  "summaryUpcomingCaption": "Per 30 dienų",
-  "summaryUrgentTitle": "Skubu",
-  "summaryUrgentCaption": "Per 7 dienas",
   "profileHeaderTitle": "Profilis",
   "profileTutorialsTitle": "Pamokos",
   "profileTutorialsSubtitle": "Naršyti Programėlės Pamokas",
@@ -529,16 +521,16 @@
   "smartInsightNoRecordsHeading": "Pridėkite Savo Pirmąjį Įrašą",
   "smartInsightNoRecordsBody": "Pradėkite sekti savo įrašus, ir „Vaultara“ čia parodys išmaniąsias įžvalgas.",
   "smartInsightExpiresTodaySingleBody": "{name} galiojimas baigiasi šiandien. Jei jį jau atnaujinote, pakeiskite datą čia.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} baigiasi šiandien.} =1{{names} ir dar 1 baigiasi šiandien.} other{{names} ir dar {extra} baigiasi šiandien.}}",
-  "smartInsightSilentRiskBody": "{days, plural, =1{{name} baigiasi rytoj ir neturi priminimo. Nustatykite jį, kad nepraleistumėte.} other{{name} baigiasi {date} ir neturi priminimo. Nustatykite jį, kad nepraleistumėte.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} baigiasi šiandien.} =1{{names} ir dar {extra} baigiasi šiandien.} other{{names} ir dar {extra} baigiasi šiandien.}}",
+  "smartInsightSilentRiskBody": "{days, plural, other{{name} baigiasi {date} ir neturi priminimo. Nustatykite jį, kad nepraleistumėte.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} baigiasi {dateA}, o {b} – {dateB}, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai du įrašai yra taip arti vienas kito.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} ir {c} visi baigiasi iki {lastDate}, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai keletas įrašų yra taip arti vienas kito.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ir dar 1 įrašas baigiasi iki {lastDate}, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai keletas įrašų yra taip arti vienas kito.} other{{a}, {b} ir dar {extra} įrašai baigiasi iki {lastDate}, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai keletas įrašų yra taip arti vienas kito.}}",
-  "smartInsightQuietPeriodBody": "{days, plural, =1{Sekančią dieną niekas nesibaigia. Kitas jūsų terminas yra {date}.} other{Per ateinančias {days} dienas niekas nesibaigia. Kitas jūsų terminas yra {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 iš jūsų įrašų kategorijoje {category} baigiasi {date}. Jį lengva nepastebėti.} other{{count} iš jūsų įrašų kategorijoje {category} baigiasi iki {date}. Lengva vieną pamiršti, kai jie sugrupuoti taip.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 būsimas terminas yra apsaugotas priminimu. Daugiau niekas nereikalauja jūsų dėmesio.} other{{count} būsimi terminai yra apsaugoti priminimais. Daugiau niekas nereikalauja jūsų dėmesio.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} ir dar {extra} įrašas baigiasi iki {lastDate}, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai keletas įrašų yra taip arti vienas kito.} other{{a}, {b} ir dar {extra} įrašai baigiasi iki {lastDate}, maždaug tuo pačiu metu. Lengva vieną pamiršti, kai keletas įrašų yra taip arti vienas kito.}}",
+  "smartInsightQuietPeriodBody": "{days, plural, one{Per ateinančią {days} dieną niekas nesibaigia. Kitas jūsų terminas yra {date}.} few{Per ateinančias {days} dienas niekas nesibaigia. Kitas jūsų terminas yra {date}.} other{Per ateinančias {days} dienų niekas nesibaigia. Kitas jūsų terminas yra {date}.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} iš jūsų įrašų kategorijoje {category} baigiasi {date}. Jį lengva nepastebėti.} other{{count} iš jūsų įrašų kategorijoje {category} baigiasi iki {date}. Lengva vieną pamiršti, kai jie sugrupuoti taip.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} būsimas terminas yra apsaugotas priminimu. Daugiau niekas nereikalauja jūsų dėmesio.} other{{count} būsimi terminai yra apsaugoti priminimais. Daugiau niekas nereikalauja jūsų dėmesio.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Viskas atnaujinta. Šiuo metu niekas nereikalauja jūsų dėmesio.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Šiuo metu nieko skubaus nėra, tačiau 1 būsimas įrašas dar neturi priminimo.} other{Šiuo metu nieko skubaus nėra, tačiau {count} būsimi įrašai dar neturi priminimų.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Šiuo metu nieko skubaus nėra, tačiau {count} būsimas įrašas dar neturi priminimo.} other{Šiuo metu nieko skubaus nėra, tačiau {count} būsimi įrašai dar neturi priminimų.}}",
   "smartInsightCloseExpiriesHeading": "Baigiasi Maždaug Tuo Pačiu Metu",
   "plansHeadline": "Gaukite visą Vaultara funkcionalumą",
   "plansSubhead": "Neriboti įrašai, jūsų asmeninės grupės ir priminimai, suderinti tiksliai taip, kaip norite.",
@@ -625,7 +617,7 @@
   "reminderCascadeRemoveStep": "Pašalinti",
   "reminderCascadeDuplicate": "Kitas priminimas jau naudoja šią dieną",
   "reminderCascadeOutOfRange": "Įveskite dienų skaičių nuo {min} iki {max}",
-  "reminderCascadeStepLabel": "Priminimas {position}: likus {days, plural, =1{1 dienai} few{{days} dienoms} other{{days} d.}} iki pabaigos",
+  "reminderCascadeStepLabel": "Priminimas {position}: likus {days, plural, =1{{days} dienai} few{{days} dienoms} other{{days} d.}} iki pabaigos",
   "expiryTimelineNotReady": "Laiko juosta pasirodys, kai turėsite įrašų, kurių galiojimas baigiasi keliais skirtingais mėnesiais.",
   "verifyEmailResendIn": "Išsiųsti iš naujo po {seconds} s",
   "verifyEmailSpamHint": "Nėra? Patikrinkite brukalų (spam) ar nepageidaujamo pašto aplanką.",
@@ -634,13 +626,10 @@
   "verifyEmailDiscardBody": "Ši paskyra nepatvirtinta. Jei išeisite dabar, ji bus pašalinta, o vėliau galėsite užsiregistruoti iš naujo naudodami bet kurį el. pašto adresą.",
   "verifyEmailDiscardAction": "Atmesti",
   "verifyEmailKeepWaiting": "Laukti toliau",
-  "expiringBadge": "{count, plural, =1{1 greitai baigs galiojimą} few{{count} greitai baigs galiojimą} other{{count} greitai baigs galiojimą}}",
+  "expiringBadge": "{count, plural, =1{{count} greitai baigs galiojimą} few{{count} greitai baigs galiojimą} other{{count} greitai baigs galiojimą}}",
   "noRecordsToday": "Šiandien niekas nebaigia galiojimo",
   "noRecordsTomorrow": "Rytoj niekas nebaigia galiojimo",
-  "cascadeStepTitle": "{days, plural, =0{„{recordName}“ galiojimas baigiasi šiandien} one{„{recordName}“ galiojimas baigiasi per {days} dieną} few{„{recordName}“ galiojimas baigiasi per {days} dienas} many{„{recordName}“ galiojimas baigiasi per {days} dienos} other{„{recordName}“ galiojimas baigiasi per {days} dienų}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, jūsų „{recordName}“ galiojimas baigiasi šiandien. Jau atnaujinote? Pakeiskite galiojimo datą.} one{{firstName}, jūsų „{recordName}“ galiojimas baigiasi {date}. Ankstyvas atnaujinimas užtikrina apsaugą.} few{{firstName}, jūsų „{recordName}“ galiojimas baigiasi {date}. Ankstyvas atnaujinimas užtikrina apsaugą.} many{{firstName}, jūsų „{recordName}“ galiojimas baigiasi {date}. Ankstyvas atnaujinimas užtikrina apsaugą.} other{{firstName}, jūsų „{recordName}“ galiojimas baigiasi {date}. Ankstyvas atnaujinimas užtikrina apsaugą.}}",
   "cascadeFinalStepTitle": "Paskutinis priminimas: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, jūsų „{recordName}“ galiojimas baigiasi {days, plural, one{per {days} dieną, {date}} few{per {days} dienas, {date}} many{per {days} dienos, {date}} other{per {days} dienų, {date}}}. Tai paskutinis jūsų priminimas, atnaujinkite jį arba pakeiskite datą.",
   "notificationsTitle": "Pranešimai",
   "notificationsProfileEnabledSubtitle": "Priminimai gaunami {time}.",
   "notificationsProfileDisabledSubtitle": "Pranešimai išjungti.",
@@ -1367,7 +1356,7 @@
   "photoLockTurnOn": "Įjungti šifruotas nuotraukas",
   "photoLockStatusOn": "Šifruotos nuotraukos įjungtos",
   "photoLockStatusOnBody": "Naujos nuotraukos šiame telefone užšifruojamos prieš jas įkeliant.",
-  "photoLockPendingTitle": "{count, plural, one{1 nuotrauka dar neužšifruota} few{{count} nuotraukos dar neužšifruotos} many{{count} nuotraukos dar neužšifruotos} other{{count} nuotraukų dar neužšifruota}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} nuotrauka dar neužšifruota} few{{count} nuotraukos dar neužšifruotos} many{{count} nuotraukos dar neužšifruotos} other{{count} nuotraukų dar neužšifruota}}",
   "photoLockPendingBody": "Nuotraukos, pridėtos prieš tai įjungiant, vis dar saugomos įprastu būdu.",
   "photoLockEncryptExisting": "Užšifruoti turimas nuotraukas",
   "photoLockKeepOpen": "Laikykite Vaultara atidarytą, kol viskas baigsis.",
@@ -1404,7 +1393,7 @@
   "photoLockSetupFailed": "Nepavyko įjungti šifruotų nuotraukų. Patikrinkite ryšį ir bandykite dar kartą.",
   "photoLockAlreadyOn": "Šifruotos nuotraukos jūsų paskyroje jau įjungtos. Įveskite atkūrimo raktą, kad galėtumėte jas naudoti šiame telefone.",
   "photoLockEncryptExistingTitle": "Užšifruoti turimas nuotraukas?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Turite 1 dar neužšifruotą nuotrauką. Galime ją užšifruoti dabar.} few{Turite {count} dar neužšifruotas nuotraukas. Galime jas užšifruoti dabar.} many{Turite {count} dar neužšifruotas nuotraukas. Galime jas užšifruoti dabar.} other{Turite {count} dar neužšifruotų nuotraukų. Galime jas užšifruoti dabar.}} Laikykite Vaultara atidarytą, kol viskas baigsis.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Turite {count} dar neužšifruotą nuotrauką. Galime ją užšifruoti dabar.} few{Turite {count} dar neužšifruotas nuotraukas. Galime jas užšifruoti dabar.} many{Turite {count} dar neužšifruotas nuotraukas. Galime jas užšifruoti dabar.} other{Turite {count} dar neužšifruotų nuotraukų. Galime jas užšifruoti dabar.}} Laikykite Vaultara atidarytą, kol viskas baigsis.",
   "photoLockEncryptNow": "Užšifruoti dabar",
   "photoLockEntryBody": "Įveskite atkūrimo raktą, kurį išsaugojote įjungdami šifruotas nuotraukas. Brūkšniai ir tarpai nebūtini.",
   "photoLockEntryLabel": "Atkūrimo raktas",
@@ -1413,8 +1402,8 @@
   "photoLockUnlocked": "Jūsų nuotraukos šiame telefone atrakintos.",
   "photoLockInvalidFormat": "Tai nepanašu į atkūrimo raktą. Patikrinkite kiekvieną simbolį ir bandykite dar kartą.",
   "photoLockWrongKey": "Šis atkūrimo raktas nesutampa. Patikrinkite jį ir bandykite dar kartą.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Per daug bandymų. Palaukite 1 sekundę ir bandykite dar kartą.} few{Per daug bandymų. Palaukite {seconds} sekundes ir bandykite dar kartą.} many{Per daug bandymų. Palaukite {seconds} sekundės ir bandykite dar kartą.} other{Per daug bandymų. Palaukite {seconds} sekundžių ir bandykite dar kartą.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Per daug bandymų. Palaukite 1 minutę ir bandykite dar kartą.} few{Per daug bandymų. Palaukite {minutes} minutes ir bandykite dar kartą.} many{Per daug bandymų. Palaukite {minutes} minutės ir bandykite dar kartą.} other{Per daug bandymų. Palaukite {minutes} minučių ir bandykite dar kartą.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Per daug bandymų. Palaukite {seconds} sekundę ir bandykite dar kartą.} few{Per daug bandymų. Palaukite {seconds} sekundes ir bandykite dar kartą.} many{Per daug bandymų. Palaukite {seconds} sekundės ir bandykite dar kartą.} other{Per daug bandymų. Palaukite {seconds} sekundžių ir bandykite dar kartą.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Per daug bandymų. Palaukite {minutes} minutę ir bandykite dar kartą.} few{Per daug bandymų. Palaukite {minutes} minutes ir bandykite dar kartą.} many{Per daug bandymų. Palaukite {minutes} minutės ir bandykite dar kartą.} other{Per daug bandymų. Palaukite {minutes} minučių ir bandykite dar kartą.}}",
   "photoLockOffline": "Nepavyko prisijungti prie Vaultara. Patikrinkite ryšį ir bandykite dar kartą.",
   "photoLockNotSetUp": "Šifruotos nuotraukos jūsų paskyroje neįjungtos.",
   "photoLockUnlockFailed": "Kažkas nepavyko. Bandykite dar kartą.",
@@ -2879,5 +2868,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "„{recordName}“ galiojimas baigiasi šiandien",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "„{recordName}“ galiojimas baigiasi rytoj",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{„{recordName}“ galiojimas baigiasi po {days} dienos} few{„{recordName}“ galiojimas baigiasi po {days} dienų} other{„{recordName}“ galiojimas baigiasi po {days} dienų}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "„{recordName}“ galiojimas baigėsi",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Užrakintam įrašui reikia jūsų dėmesio",
+  "remLockedBody": "Jo data – {date}. Atrakinkite Vaultara, kad pamatytumėte, kuris tai įrašas.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Jūsų įrašo „{recordName}“ galiojimas baigiasi šiandien.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Jūsų įrašo „{recordName}“ galiojimas baigiasi rytoj.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Jūsų įrašo „{recordName}“ galiojimas baigiasi {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, jūsų įrašo „{recordName}“ galiojimas baigiasi šiandien.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, jūsų įrašo „{recordName}“ galiojimas baigiasi rytoj.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, jūsų įrašo „{recordName}“ galiojimas baigiasi {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: įrašo „{recordName}“ galiojimas baigiasi šiandien.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: įrašo „{recordName}“ galiojimas baigiasi rytoj.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: įrašo „{recordName}“ galiojimas baigiasi {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Jūsų įrašo „{recordName}“ galiojimas baigėsi {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: įrašo „{recordName}“ galiojimas baigėsi {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Jau atnaujinote? Pakeiskite datą.",
+  "remTipTomorrow": "Atnaujinkite dabar, kad galiojimas nesibaigtų.",
+  "remTipEarly": "Ankstyvas atnaujinimas palaiko jūsų apsaugą.",
+  "remTipLast": "Tai paskutinis priminimas prieš pasibaigiant galiojimui.",
+  "remTipExpired": "Atnaujinkite arba pakeiskite datą, jei jau atnaujinote.",
+  "remStartBody": "Laikas pradėti atnaujinti „{recordName}“. Galiojimas baigiasi {date}, todėl pradėję dabar turėsite daug laiko.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Laikas pradėti atnaujinti „{recordName}“ ({person}). Galiojimas baigiasi {date}, todėl pradėjus dabar laiko bus daug.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Galiojimo priminimai",
+  "notifChannelDescription": "Priminimai prieš pasibaigiant jūsų įrašų galiojimui",
+  "notifTestTitle": "Bandomasis pranešimas",
+  "notifTestBody": "Taip atrodo Vaultara priminimai.",
+  "notifTestAction": "Siųsti bandomąjį pranešimą",
+  "notifTestSubtitle": "Patikrinkite, ar priminimai pasiekia šį telefoną",
+  "notifTestSent": "Bandymas išsiųstas. Jis turėtų ateiti po kelių sekundžių.",
+  "notifAfterExpiryTitle": "Priminti pasibaigus įrašo galiojimui",
+  "notifAfterExpirySubtitle": "Po 3 ir 14 dienų, jei jis neatnaujintas",
+  "notifWeeklyTitle": "Pirmadienio santrauka",
+  "notifWeeklySubtitle": "Žinutė pirmadienio rytą, kai tą savaitę kas nors baigiasi",
+  "notifPushSection": "Namų ūkis ir atnaujinimai",
+  "notifHouseholdTitle": "Bendrinami įrašai",
+  "notifHouseholdSubtitle": "Kai bendrinamo įrašo galiojimas tuoj baigsis, o niekas jo neatnaujino",
+  "notifUpdatesTitle": "Jūsų prašyti atnaujinimai",
+  "notifUpdatesSubtitle": "Kai kas nors atsiunčia naujus įrašo duomenis",
+  "notifSecurityNote": "Įspėjimai apie naujus prisijungimus prie jūsų paskyros siunčiami visada.",
+  "notifIosHelpTitle": "Negaunate priminimų?",
+  "notifIosHelpSubtitle": "Patikrinkite iPhone nustatymus",
+  "notifIosHelpStep1": "Atidarykite Nustatymai, tada Pranešimai, tada Vaultara, ir įjunkite Leisti pranešimus.",
+  "notifIosHelpStep2": "Įjunkite Užrakinimo ekraną, Pranešimų centrą ir Reklamjuostes.",
+  "notifIosHelpStep3": "Jei naudojate Fokusavimą, pridėkite Vaultara prie leidžiamų programų.",
+  "notifIosHelpStep4": "Atidarykite Vaultara kas kelias savaites. iPhone saugo tik ribotą būsimų priminimų skaičių, o atidarius programėlę suplanuojami kiti.",
+  "homeNextUpEmpty": "Netrukus niekas nesibaigia. Viskas tvarkoje.",
+  "homeDueSoonChip": "{count, plural, one{{count} baigiasi per 30 dienų} few{{count} baigiasi per 30 dienų} other{{count} baigiasi per 30 dienų}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Prisegtos kategorijos"
 }

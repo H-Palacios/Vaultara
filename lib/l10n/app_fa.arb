@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara به شما کمک می‌کند تاریخ‌های انقضای مهم را پیگیری کنید تا هیچ چیزی نادیده گرفته نشود.",
   "homeWelcomeSubtitleFirst": "خوشحالیم که اینجا هستید. Vaultara با نگهداری تاریخ‌ها و سوابق مهم در یک مکان امن به شما کمک می‌کند منظم بمانید.",
   "homeWelcomeSubtitleBack": "خوشحالیم دوباره شما را می‌بینیم. Vaultara هر زمان که بخواهید تاریخ‌ها و سوابق مهم خود را بررسی کنید در کنار شماست.",
-  "summaryAllCaption": "پیگیری‌شده در Vaultara",
-  "summaryExpiredTitle": "منقضی‌شده",
-  "summaryExpiredCaption": "تاریخ انقضا گذشته است",
   "editorNotes": "یادداشت‌ها",
   "editorReminderNone": "بدون یادآور",
   "editorReminderOnExpiry": "در روز انقضا",
@@ -199,7 +196,6 @@
   "addRecord": "افزودن رکورد",
   "noRecordsYet": "هنوز رکوردی وجود ندارد.",
   "deleteRecordTitle": "حذف رکورد",
-  "summaryAllRecordsTitle": "همه رکوردها",
   "noGroupFound": "هنوز گروهی وجود ندارد",
   "groupLabel": "{count, plural, one{{count} گروه} other{{count} گروه}}",
   "recordsLabel": "{count, plural, one{{count} رکورد} other{{count} رکورد}}",
@@ -449,7 +445,7 @@
   "addNotesHint": "افزودن یادداشت (اختیاری)",
   "expiryTimelineTitle": "خط زمانی انقضا",
   "expiryTimelineSubtitle": "روی یک ماه ضربه بزنید تا رکوردهایی که در آن ماه منقضی می‌شوند را ببینید",
-  "expiryTimelineDetailCount": "{count, plural, =1{۱ رکورد} other{{count} رکورد}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} رکورد} other{{count} رکورد}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -457,10 +453,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "پیش‌رو",
-  "summaryUpcomingCaption": "در ۳۰ روز آینده",
-  "summaryUrgentTitle": "فوری",
-  "summaryUrgentCaption": "در ۷ روز آینده",
   "profileHeaderTitle": "نمایه",
   "profileTutorialsTitle": "آموزش‌ها",
   "profileTutorialsSubtitle": "مرور آموزش‌های برنامه",
@@ -492,7 +484,7 @@
   "reminderPremiumSection": "پریمیوم",
   "reminderNone": "بدون یادآوری",
   "reminderOnExpiry": "در تاریخ انقضا",
-  "reminderDaysBefore": "{days, plural, one{1 روز قبل} other{{days} روز قبل}}",
+  "reminderDaysBefore": "{days, plural, one{{days} روز قبل} other{{days} روز قبل}}",
   "reminderCustomDaysTitle": "روزهای دلخواه را وارد کنید",
   "reminderCascadeTitle": "یادآوری‌های آبشاری",
   "reminderCascadeSubtitle": "قبل از انقضای رکورد چندین اعلان دریافت کنید",
@@ -518,20 +510,20 @@
   "smartInsightNoRecordsBody": "افزودن رکوردهای خود را شروع کنید تا Vaultara نکات هوشمند را اینجا نشان دهد.",
   "smartInsightExpiresTodayHeading": "امروز منقضی می‌شود",
   "smartInsightExpiresTodaySingleBody": "{name} امروز منقضی می‌شود. اگر آن را قبلاً تمدید کرده‌اید، تاریخ را اینجا به‌روز کنید.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} امروز منقضی می‌شوند.} =1{{names} و ۱ مورد دیگر امروز منقضی می‌شوند.} other{{names} و {extra} مورد دیگر امروز منقضی می‌شوند.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} امروز منقضی می‌شوند.} =1{{names} و {extra} مورد دیگر امروز منقضی می‌شوند.} other{{names} و {extra} مورد دیگر امروز منقضی می‌شوند.}}",
   "smartInsightSilentRiskHeading": "به توجه شما نیاز دارد",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} فردا منقضی می‌شود و یادآوری ندارد. یکی تنظیم کنید تا از دستتان نرود.} other{{name} در {date} منقضی می‌شود و یادآوری ندارد. یکی تنظیم کنید تا از دستتان نرود.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} در {dateA} و {b} در {dateB} منقضی می‌شوند، تقریباً هم‌زمان. وقتی این‌قدر نزدیک باشند، فراموش‌کردن یکی آسان است.",
   "smartInsightCloseExpiriesBodyThree": "{a}، {b} و {c} همگی تا {lastDate} منقضی می‌شوند، تقریباً هم‌زمان. وقتی چند مورد این‌قدر نزدیک باشند، فراموش‌کردن یکی آسان است.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}، {b} و ۱ رکورد دیگر تا {lastDate} منقضی می‌شوند، تقریباً هم‌زمان. فراموش‌کردن یکی آسان است.} other{{a}، {b} و {extra} رکورد دیگر تا {lastDate} منقضی می‌شوند، تقریباً هم‌زمان. فراموش‌کردن یکی آسان است.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}، {b} و {extra} رکورد دیگر تا {lastDate} منقضی می‌شوند، تقریباً هم‌زمان. فراموش‌کردن یکی آسان است.} other{{a}، {b} و {extra} رکورد دیگر تا {lastDate} منقضی می‌شوند، تقریباً هم‌زمان. فراموش‌کردن یکی آسان است.}}",
   "smartInsightClusterHeading": "چند مورد در یک دسته",
-  "smartInsightClusterBody": "{count, plural, =1{۱ مورد از رکوردهای {category} شما در {date} منقضی می‌شود. نادیده‌گرفتنش آسان است.} other{{count} مورد از رکوردهای {category} شما تا {date} منقضی می‌شوند. وقتی این‌طور کنار هم باشند، فراموش‌کردن یکی آسان است.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} مورد از رکوردهای {category} شما در {date} منقضی می‌شود. نادیده‌گرفتنش آسان است.} other{{count} مورد از رکوردهای {category} شما تا {date} منقضی می‌شوند. وقتی این‌طور کنار هم باشند، فراموش‌کردن یکی آسان است.}}",
   "smartInsightQuietPeriodHeading": "دوره‌ای آرام در پیش است",
   "smartInsightQuietPeriodBody": "{days, plural, =1{در روز آینده چیزی منقضی نمی‌شود. مورد بعدی در {date} است.} other{در {days} روز آینده چیزی منقضی نمی‌شود. مورد بعدی در {date} است.}}",
   "smartInsightAllCaughtUpHeading": "همه چیز پوشش داده شده",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{۱ انقضای پیش‌رو یادآور دارد. چیز دیگری به توجه شما نیاز ندارد.} other{{count} انقضای پیش‌رو یادآور دارند. چیز دیگری به توجه شما نیاز ندارد.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} انقضای پیش‌رو یادآور دارد. چیز دیگری به توجه شما نیاز ندارد.} other{{count} انقضای پیش‌رو یادآور دارند. چیز دیگری به توجه شما نیاز ندارد.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "همه چیز به‌روز است. در حال حاضر چیزی به توجه شما نیاز ندارد.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{در حال حاضر چیز فوری‌ای نیست، اما ۱ رکورد پیش‌رو هنوز یادآور ندارد.} other{در حال حاضر چیز فوری‌ای نیست، اما {count} رکورد پیش‌رو هنوز یادآور ندارند.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{در حال حاضر چیز فوری‌ای نیست، اما {count} رکورد پیش‌رو هنوز یادآور ندارد.} other{در حال حاضر چیز فوری‌ای نیست، اما {count} رکورد پیش‌رو هنوز یادآور ندارند.}}",
   "smartInsightCloseExpiriesHeading": "تقریباً در یک زمان منقضی می‌شوند",
   "smartInsightNearlyAllCoveredHeading": "تقریباً همه چیز پوشش داده شده",
   "plansHeadline": "دریافت نسخه کامل Vaultara",
@@ -619,7 +611,7 @@
   "reminderCascadeRemoveStep": "حذف",
   "reminderCascadeDuplicate": "یادآور دیگری قبلاً از این روز استفاده کرده است",
   "reminderCascadeOutOfRange": "عددی بین {min} و {max} روز وارد کنید",
-  "reminderCascadeStepLabel": "یادآور {position}: {days, plural, =1{۱ روز} other{{days} روز}} قبل",
+  "reminderCascadeStepLabel": "یادآور {position}: {days, plural, =1{{days} روز} other{{days} روز}} قبل",
   "expiryTimelineNotReady": "خط زمانی شما زمانی ظاهر می‌شود که رکوردهایی داشته باشید که در چند ماه مختلف منقضی می‌شوند.",
   "verifyEmailResendIn": "ارسال مجدد در {seconds} ثانیه",
   "verifyEmailSpamHint": "آنجا نیست؟ پوشه اسپم یا هرزنامه‌های خود را بررسی کنید.",
@@ -628,13 +620,10 @@
   "verifyEmailDiscardBody": "این حساب تأیید نشده است. خروج در این لحظه باعث حذف آن می‌شود و می‌توانید دوباره با هر آدرس ایمیل دیگری ثبت‌نام کنید.",
   "verifyEmailDiscardAction": "لغو",
   "verifyEmailKeepWaiting": "منتظر بمانید",
-  "expiringBadge": "{count, plural, =1{1 مورد به‌زودی منقضی می‌شود} other{{count} مورد به‌زودی منقضی می‌شوند}}",
+  "expiringBadge": "{count, plural, =1{{count} مورد به‌زودی منقضی می‌شود} other{{count} مورد به‌زودی منقضی می‌شوند}}",
   "noRecordsToday": "امروز چیزی منقضی نمی‌شود",
   "noRecordsTomorrow": "فردا چیزی منقضی نمی‌شود",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} امروز منقضی می‌شود} =1{{recordName} فردا منقضی می‌شود} other{{recordName} ظرف {days} روز آینده منقضی می‌شود}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}، {recordName} شما امروز منقضی می‌شود. آیا قبلاً آن را تمدید کرده‌اید؟ تاریخ انقضا را به‌روزرسانی کنید.} =1{{firstName}، {recordName} شما فردا منقضی می‌شود. همین حالا آن را تمدید کنید تا باطل نشود.} other{{firstName}، {recordName} شما در تاریخ {date} منقضی می‌شود. تمدید زودهنگام شما را تحت پوشش نگه می‌دارد.}}",
   "cascadeFinalStepTitle": "آخرین یادآوری: {recordName}",
-  "cascadeFinalStepBody": "{firstName}، {recordName} شما {days, plural, =1{فردا} other{ظرف {days} روز آینده، در تاریخ {date}}} منقضی می‌شود. این آخرین یادآوری شماست، آن را تمدید کرده یا تاریخش را به‌روزرسانی کنید.",
   "notificationsTitle": "اعلان‌ها",
   "notificationsProfileEnabledSubtitle": "یادآوری‌ها ساعت {time} می‌رسند.",
   "notificationsProfileDisabledSubtitle": "اعلان‌ها خاموش هستند.",
@@ -1664,13 +1653,13 @@
   "dailyDigestSwitchSubtitle": "در زمان یادآوری یک اعلان دریافت کنید که هر چه در آن روز سررسید دارد را فهرست می‌کند.",
   "dailyDigestTurnedOn": "یادآوری‌های شما اکنون به‌صورت یک خلاصه روزانه می‌رسند.",
   "dailyDigestTurnedOff": "یادآوری‌های جداگانه برای هر رکورد دوباره روشن شد.",
-  "dailyDigestTitle": "{count, plural, one{1 رکورد به توجه شما نیاز دارد} other{{count} رکورد به توجه شما نیاز دارند}}",
+  "dailyDigestTitle": "{count, plural, one{{count} رکورد به توجه شما نیاز دارد} other{{count} رکورد به توجه شما نیاز دارند}}",
   "dailyDigestBody": "به‌زودی: {names}.",
   "dailyDigestBodyMore": "به‌زودی: {names} و {count} مورد دیگر.",
   "dailyDigestLockedRecord": "یک رکورد قفل‌شده",
   "renewReasonRepeat": "{months, plural, one{بر اساس تنظیم تکرار شما، هر ماه} other{بر اساس تنظیم تکرار شما، هر {months} ماه}}",
   "renewReasonHistory": "{count, plural, one{بر اساس آخرین تمدید شما} other{بر اساس {count} تمدید آخر شما}}",
-  "renewReasonTypical": "{years, plural, one{معمولاً 1 سال اعتبار دارد} other{معمولاً {years} سال اعتبار دارد}}",
+  "renewReasonTypical": "{years, plural, one{معمولاً {years} سال اعتبار دارد} other{معمولاً {years} سال اعتبار دارد}}",
   "renewChangeHint": "برای تغییر، روی تاریخ بزنید.",
   "renewPickDate": "تاریخ انقضای جدید را انتخاب کنید",
   "renewPickDateHint": "تاریخ درج‌شده روی سند جدید خود را انتخاب کنید.",
@@ -2873,5 +2862,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} امروز منقضی می‌شود",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} فردا منقضی می‌شود",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} تا {days} روز دیگر منقضی می‌شود} other{{recordName} تا {days} روز دیگر منقضی می‌شود}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} منقضی شده است",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "یک رکورد قفل‌شده به توجه شما نیاز دارد",
+  "remLockedBody": "تاریخ آن {date} است. قفل Vaultara را باز کنید تا ببینید کدام رکورد است.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "رکورد «{recordName}» شما امروز منقضی می‌شود.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "رکورد «{recordName}» شما فردا منقضی می‌شود.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "رکورد «{recordName}» شما در تاریخ {date} منقضی می‌شود.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}، رکورد «{recordName}» شما امروز منقضی می‌شود.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}، رکورد «{recordName}» شما فردا منقضی می‌شود.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}، رکورد «{recordName}» شما در تاریخ {date} منقضی می‌شود.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: رکورد «{recordName}» امروز منقضی می‌شود.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: رکورد «{recordName}» فردا منقضی می‌شود.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: رکورد «{recordName}» در تاریخ {date} منقضی می‌شود.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "رکورد «{recordName}» شما در تاریخ {date} منقضی شد.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: رکورد «{recordName}» در تاریخ {date} منقضی شد.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "قبلاً تمدید کرده‌اید؟ تاریخ آن را به‌روز کنید.",
+  "remTipTomorrow": "همین حالا تمدید کنید تا منقضی نشود.",
+  "remTipEarly": "تمدید زودهنگام شما را تحت پوشش نگه می‌دارد.",
+  "remTipLast": "این آخرین یادآوری قبل از انقضا است.",
+  "remTipExpired": "تمدید کنید، یا اگر قبلاً تمدید کرده‌اید تاریخ را به‌روز کنید.",
+  "remStartBody": "وقت آن است که تمدید «{recordName}» را شروع کنید. در تاریخ {date} منقضی می‌شود، پس اگر الان شروع کنید وقت کافی دارید.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "وقت آن است که تمدید «{recordName}» ({person}) را شروع کنید. در تاریخ {date} منقضی می‌شود، پس شروع از الان وقت کافی می‌دهد.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "یادآوری‌های انقضا",
+  "notifChannelDescription": "یادآوری‌ها قبل از انقضای رکوردهای شما",
+  "notifTestTitle": "اعلان آزمایشی",
+  "notifTestBody": "یادآوری‌های Vaultara این‌طور می‌رسند.",
+  "notifTestAction": "ارسال اعلان آزمایشی",
+  "notifTestSubtitle": "بررسی کنید یادآوری‌ها به این تلفن می‌رسند",
+  "notifTestSent": "آزمایش ارسال شد. باید ظرف چند ثانیه برسد.",
+  "notifAfterExpiryTitle": "پس از انقضای رکورد یادآوری کن",
+  "notifAfterExpirySubtitle": "۳ و ۱۴ روز بعد، اگر تمدید نشده باشد",
+  "notifWeeklyTitle": "خلاصهٔ دوشنبه",
+  "notifWeeklySubtitle": "یک پیام صبح دوشنبه وقتی چیزی در آن هفته منقضی می‌شود",
+  "notifPushSection": "خانواده و به‌روزرسانی‌ها",
+  "notifHouseholdTitle": "رکوردهای مشترک",
+  "notifHouseholdSubtitle": "وقتی یک رکورد مشترک نزدیک انقضا است و کسی آن را تمدید نکرده",
+  "notifUpdatesTitle": "به‌روزرسانی‌هایی که خواستید",
+  "notifUpdatesSubtitle": "وقتی کسی اطلاعات جدید یک رکورد را می‌فرستد",
+  "notifSecurityNote": "هشدارهای ورود جدید به حساب شما همیشه ارسال می‌شوند.",
+  "notifIosHelpTitle": "یادآوری دریافت نمی‌کنید؟",
+  "notifIosHelpSubtitle": "تنظیمات iPhone خود را بررسی کنید",
+  "notifIosHelpStep1": "تنظیمات، سپس اعلان‌ها، سپس Vaultara را باز کنید و اجازهٔ اعلان‌ها را روشن کنید.",
+  "notifIosHelpStep2": "صفحهٔ قفل، مرکز اعلان و بنرها را روشن کنید.",
+  "notifIosHelpStep3": "اگر از حالت تمرکز استفاده می‌کنید، Vaultara را به برنامه‌های مجاز اضافه کنید.",
+  "notifIosHelpStep4": "هر چند هفته یک بار Vaultara را باز کنید. iPhone فقط تعداد محدودی یادآوری آینده نگه می‌دارد و باز کردن برنامه یادآوری‌های بعدی را برنامه‌ریزی می‌کند.",
+  "homeNextUpEmpty": "به‌زودی چیزی منقضی نمی‌شود. همه چیز آماده است.",
+  "homeDueSoonChip": "{count, plural, one{{count} مورد تا ۳۰ روز} other{{count} مورد تا ۳۰ روز}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "دسته‌های سنجاق‌شده"
 }

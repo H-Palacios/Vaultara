@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara вам помаже да пратите важне датуме истека како ништа не би прошло непримећено.",
   "homeWelcomeSubtitleFirst": "Драго нам је што сте овде. Vaultara чува важне датуме и записе на једном сигурном месту.",
   "homeWelcomeSubtitleBack": "Драго нам је што вас поново видимо. Vaultara је увек ту за ваше важне податке.",
-  "summaryAllCaption": "Праћене у Vaultara",
-  "summaryExpiredTitle": "Истекле",
-  "summaryExpiredCaption": "После датума истека",
   "editorNotes": "Белешке",
   "editorReminderNone": "Без подсетника",
   "editorReminderOnExpiry": "На дан истека",
@@ -192,7 +189,6 @@
   "addRecord": "Додај запис",
   "noRecordsYet": "Још нема записа.",
   "deleteRecordTitle": "Обриши запис",
-  "summaryAllRecordsTitle": "Сви записи",
   "noGroupFound": "Још нема група",
   "groupLabel": "{count, plural, one{{count} група} other{{count} групе}}",
   "recordsLabel": "{count, plural, one{{count} запис} other{{count} записа}}",
@@ -411,7 +407,7 @@
   "addNotesHint": "Додај белешке (опционо)",
   "expiryTimelineTitle": "Временска линија истека",
   "expiryTimelineSubtitle": "Додирните месец да видите записе који истичу у том месецу",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 запис} few{{count} записа} other{{count} записа}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} запис} few{{count} записа} other{{count} записа}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -419,10 +415,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Надолазећи",
-  "summaryUpcomingCaption": "У року од 30 дана",
-  "summaryUrgentTitle": "Хитно",
-  "summaryUrgentCaption": "У року од 7 дана",
   "profileHeaderTitle": "Профил",
   "profileTutorialsTitle": "Водичи",
   "profileTutorialsSubtitle": "Прегледајте водиче за апликацију",
@@ -454,7 +446,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Без подсетника",
   "reminderOnExpiry": "На дан истека",
-  "reminderDaysBefore": "{days, plural, one{1 дан пре} few{{days} дана пре} other{{days} дана пре}}",
+  "reminderDaysBefore": "{days, plural, one{{days} дан пре} few{{days} дана пре} other{{days} дана пре}}",
   "reminderCustomDaysTitle": "Унесите прилагођене дане",
   "reminderCascadeTitle": "Каскадни подсетници",
   "reminderCascadeSubtitle": "Примајте више обавештења пре истека записа",
@@ -485,16 +477,16 @@
   "smartInsightNoRecordsHeading": "Додајте свој први запис",
   "smartInsightNoRecordsBody": "Почните да пратите своје записе и Vaultara ће овде приказати паметне увиде.",
   "smartInsightExpiresTodaySingleBody": "{name} истиче данас. Ако сте га већ обновили, ажурирајте датум овде.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} истичу данас.} =1{{names} и још 1 запис истичу данас.} other{{names} и још {extra} записа истиче данас.}}",
-  "smartInsightSilentRiskBody": "{days, plural, =1{{name} истиче сутра и нема подсетник. Поставите га како га не бисте пропустили.} other{{name} истиче {date} и нема подсетник. Поставите га како га не бисте пропустили.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} истичу данас.} =1{{names} и још {extra} запис истичу данас.} other{{names} и још {extra} записа истиче данас.}}",
+  "smartInsightSilentRiskBody": "{days, plural, other{{name} истиче {date} и нема подсетник. Поставите га како га не бисте пропустили.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} истиче {dateA}, а {b} {dateB}, отприлике у исто време. Лако је заборавити један када су два записа тако близу.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} и {c} истичу до {lastDate}, отприлике у исто време. Лако је заборавити један када их је неколико тако близу.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} и још 1 запис истичу до {lastDate}, отприлике у исто време. Лако је заборавити један када их је неколико тако близу.} other{{a}, {b} и још {extra} записа истиче до {lastDate}, отприлике у исто време. Лако је заборавити један када их је неколико тако близу.}}",
-  "smartInsightQuietPeriodBody": "{days, plural, =1{Ништа не истиче следећег дана. Ваш следећи рок је {date}.} other{Ништа не истиче у наредних {days} дана. Ваш следећи рок је {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Ваш 1 запис у категорији {category} истиче {date}. Лако га је превидети.} other{Ваших {count} записа у категорији {category} истиче до {date}. Лако је заборавити један када су овако груписани.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 предстојећи истек покривен је подсетником. Ништа друго не захтева вашу пажњу.} other{{count} предстојећих истека покривено је подсетницима. Ништа друго не захтева вашу пажњу.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} и још {extra} запис истичу до {lastDate}, отприлике у исто време. Лако је заборавити један када их је неколико тако близу.} other{{a}, {b} и још {extra} записа истиче до {lastDate}, отприлике у исто време. Лако је заборавити један када их је неколико тако близу.}}",
+  "smartInsightQuietPeriodBody": "{days, plural, other{Ништа не истиче у наредних {days} дана. Ваш следећи рок је {date}.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Ваш {count} запис у категорији {category} истиче {date}. Лако га је превидети.} other{Ваших {count} записа у категорији {category} истиче до {date}. Лако је заборавити један када су овако груписани.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} предстојећи истек покривен је подсетником. Ништа друго не захтева вашу пажњу.} other{{count} предстојећих истека покривено је подсетницима. Ништа друго не захтева вашу пажњу.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Све је ажурно. Тренутно ништа не захтева вашу пажњу.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Тренутно ништа није хитно, али 1 предстојећи запис још нема подсетник.} other{Тренутно ништа није хитно, али {count} предстојећих записа још нема подсетник.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Тренутно ништа није хитно, али {count} предстојећи запис још нема подсетник.} other{Тренутно ништа није хитно, али {count} предстојећих записа још нема подсетник.}}",
   "smartInsightCloseExpiriesHeading": "Истичу отприлике у исто време",
   "plansHeadline": "Пређите на потпуни Vaultara пакет",
   "plansSubhead": "Неограничен број записа, сопствене групе и подсетници подешени тачно онако како желите.",
@@ -581,7 +573,7 @@
   "reminderCascadeRemoveStep": "Уклони",
   "reminderCascadeDuplicate": "Други подсетник већ користи овај дан",
   "reminderCascadeOutOfRange": "Унесите између {min} и {max} дана",
-  "reminderCascadeStepLabel": "Подсетник {position}: {days, plural, =1{1 дан} few{{days} дана} other{{days} дана}} пре",
+  "reminderCascadeStepLabel": "Подсетник {position}: {days, plural, =1{{days} дан} few{{days} дана} other{{days} дана}} пре",
   "expiryTimelineNotReady": "Ваша временска линија ће се појавити када будете имали записе који истичу у неколико различитих месеци.",
   "verifyEmailResendIn": "Пошаљи поново за {seconds} с",
   "verifyEmailSpamHint": "Није стигло? Проверите фасциклу са непожељном поштом или спамом.",
@@ -590,13 +582,10 @@
   "verifyEmailDiscardBody": "Овај налог није верификован. Ако сада одете, налог ће бити уклоњен, а можете се поново регистровати са било којом имејл адресом.",
   "verifyEmailDiscardAction": "Одбаци",
   "verifyEmailKeepWaiting": "Настави са чекањем",
-  "expiringBadge": "{count, plural, =1{1 ускоро истиче} few{{count} ускоро истичу} other{{count} ускоро истиче}}",
+  "expiringBadge": "{count, plural, =1{{count} ускоро истиче} few{{count} ускоро истичу} other{{count} ускоро истиче}}",
   "noRecordsToday": "Данас ништа не истиче",
   "noRecordsTomorrow": "Сутра ништа не истиче",
-  "cascadeStepTitle": "{days, plural, =0{Важење записа {recordName} истиче данас} one{Важење записа {recordName} истиче за {days} дан} few{Важење записа {recordName} истиче за {days} дана} other{Важење записа {recordName} истиче за {days} дана}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, важење записа {recordName} истиче данас. Да ли сте га већ обновили? Ажурирајте датум истека.} =1{{firstName}, важење записа {recordName} истиче сутра. Обновите га сада да не изгуби важење.} other{{firstName}, важење записа {recordName} истиче {date}. Благовремена обнова осигурава непрекидно важење.}}",
   "cascadeFinalStepTitle": "Последње подсећање: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, важење записа {recordName} истиче {days, plural, one{за {days} дан, {date}} other{за {days} дана, {date}}}. Ово је ваше последње подсећање, обновите га или ажурирајте датум.",
   "notificationsTitle": "Обавештења",
   "notificationsProfileEnabledSubtitle": "Подсетници стижу у {time}.",
   "notificationsProfileDisabledSubtitle": "Обавештења су искључена.",
@@ -2835,5 +2824,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "Запис {recordName} истиче данас",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "Запис {recordName} истиче сутра",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{Запис {recordName} истиче за {days} дан} few{Запис {recordName} истиче за {days} дана} other{Запис {recordName} истиче за {days} дана}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "Запис {recordName} је истекао",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Закључан запис захтева вашу пажњу",
+  "remLockedBody": "Његов датум је {date}. Откључајте Vaultara да видите који је запис.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Ваш запис {recordName} истиче данас.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Ваш запис {recordName} истиче сутра.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Ваш запис {recordName} истиче {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, ваш запис {recordName} истиче данас.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, ваш запис {recordName} истиче сутра.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, ваш запис {recordName} истиче {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: запис {recordName} истиче данас.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: запис {recordName} истиче сутра.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: запис {recordName} истиче {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Ваш запис {recordName} је истекао {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: запис {recordName} је истекао {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Већ обновљено? Ажурирајте датум.",
+  "remTipTomorrow": "Обновите га сада да не истекне.",
+  "remTipEarly": "Рана обнова вас држи покривеним.",
+  "remTipLast": "Ово је ваш последњи подсетник пре истека.",
+  "remTipExpired": "Обновите га или ажурирајте датум ако сте то већ урадили.",
+  "remStartBody": "Време је да почнете обнову записа {recordName}. Истиче {date}, па ако почнете сада, имаћете довољно времена.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Време је да почнете обнову записа {recordName} ({person}). Истиче {date}, па ако почнете сада, биће довољно времена.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Подсетници о истеку",
+  "notifChannelDescription": "Подсетници пре него што ваши записи истекну",
+  "notifTestTitle": "Пробно обавештење",
+  "notifTestBody": "Овако стижу подсетници из Vaultara.",
+  "notifTestAction": "Пошаљи пробно обавештење",
+  "notifTestSubtitle": "Проверите да ли подсетници стижу на овај телефон",
+  "notifTestSent": "Проба послата. Требало би да стигне за неколико секунди.",
+  "notifAfterExpiryTitle": "Подсети ме после истека записа",
+  "notifAfterExpirySubtitle": "3 и 14 дана после, ако није обновљен",
+  "notifWeeklyTitle": "Понедељни преглед",
+  "notifWeeklySubtitle": "Порука у понедељак ујутру када нешто истиче те недеље",
+  "notifPushSection": "Домаћинство и ажурирања",
+  "notifHouseholdTitle": "Подељени записи",
+  "notifHouseholdSubtitle": "Када подељени запис ускоро истиче, а нико га није обновио",
+  "notifUpdatesTitle": "Ажурирања која сте тражили",
+  "notifUpdatesSubtitle": "Када неко пошаље нове податке записа",
+  "notifSecurityNote": "Упозорења о новим пријавама на ваш налог увек се шаљу.",
+  "notifIosHelpTitle": "Не стижу вам подсетници?",
+  "notifIosHelpSubtitle": "Проверите подешавања iPhone-а",
+  "notifIosHelpStep1": "Отворите Подешавања, затим Обавештења, затим Vaultara, и укључите Дозволи обавештења.",
+  "notifIosHelpStep2": "Укључите Закључан екран, Центар за обавештења и Банере.",
+  "notifIosHelpStep3": "Ако користите фокус, додајте Vaultara међу дозвољене апликације.",
+  "notifIosHelpStep4": "Отварајте Vaultara на сваких неколико недеља. iPhone чува само ограничен број будућих подсетника, а отварање апликације планира следеће.",
+  "homeNextUpEmpty": "Ништа ускоро не истиче. Све је спремно.",
+  "homeDueSoonChip": "{count, plural, one{{count} истиче за 30 дана} few{{count} истичу за 30 дана} other{{count} истиче за 30 дана}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Закачене категорије"
 }

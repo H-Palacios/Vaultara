@@ -360,15 +360,6 @@ class AppLocalizationsMs extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Seronok bertemu anda kembali. Vaultara sentiasa sedia apabila anda ingin menyemak tarikh dan rekod penting anda.';
 
   @override
-  String get summaryAllCaption => 'Dijejaki dalam Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Tamat tempoh';
-
-  @override
-  String get summaryExpiredCaption => 'Tarikh tamat telah berlalu';
-
-  @override
   String get editorNotes => 'Nota';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Padam rekod';
-
-  @override
-  String get summaryAllRecordsTitle => 'Semua rekod';
 
   @override
   String get noGroupFound => 'Tiada kumpulan lagi';
@@ -829,22 +817,10 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count rekod',
-      one: '1 rekod',
+      one: '$count rekod',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Akan datang';
-
-  @override
-  String get summaryUpcomingCaption => 'Dalam 30 hari';
-
-  @override
-  String get summaryUrgentTitle => 'Mendesak';
-
-  @override
-  String get summaryUrgentCaption => 'Dalam 7 hari';
 
   @override
   String get profileHeaderTitle => 'Profil';
@@ -1047,7 +1023,7 @@ class AppLocalizationsMs extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names dan $extra lagi tamat tempoh hari ini.',
-      one: '$names dan 1 lagi tamat tempoh hari ini.',
+      one: '$names dan $extra lagi tamat tempoh hari ini.',
       zero: '$names tamat tempoh hari ini.',
     );
     return '$_temp0';
@@ -1080,7 +1056,7 @@ class AppLocalizationsMs extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b, dan $extra lagi rekod tamat tempoh sebelum $lastDate, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila beberapa rekod sangat dekat.',
-      one: '$a, $b, dan 1 lagi rekod tamat tempoh sebelum $lastDate, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila beberapa rekod sangat dekat.',
+      one: '$a, $b, dan $extra lagi rekod tamat tempoh sebelum $lastDate, pada masa yang hampir sama. Mudah untuk melupakan salah satu apabila beberapa rekod sangat dekat.',
     );
     return '$_temp0';
   }
@@ -1102,7 +1078,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count daripada rekod anda dalam kategori $category tamat tempoh sebelum $date. Mudah untuk melupakan salah satu apabila dikelompokkan sebegini.',
-      one: '1 daripada rekod anda dalam kategori $category tamat tempoh pada $date. Ia mudah terlepas pandang.',
+      one: '$count daripada rekod anda dalam kategori $category tamat tempoh pada $date. Ia mudah terlepas pandang.',
     );
     return '$_temp0';
   }
@@ -1113,7 +1089,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count tarikh tamat tempoh akan datang dilindungi oleh peringatan. Tiada perkara lain yang memerlukan perhatian anda.',
-      one: '1 tarikh tamat tempoh akan datang dilindungi oleh peringatan. Tiada perkara lain yang memerlukan perhatian anda.',
+      one: '$count tarikh tamat tempoh akan datang dilindungi oleh peringatan. Tiada perkara lain yang memerlukan perhatian anda.',
     );
     return '$_temp0';
   }
@@ -1127,7 +1103,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Tiada apa-apa yang mendesak buat masa ini, tetapi $count rekod akan datang belum mempunyai peringatan.',
-      one: 'Tiada apa-apa yang mendesak buat masa ini, tetapi 1 rekod akan datang belum mempunyai peringatan.',
+      one: 'Tiada apa-apa yang mendesak buat masa ini, tetapi $count rekod akan datang belum mempunyai peringatan.',
     );
     return '$_temp0';
   }
@@ -1251,7 +1227,7 @@ class AppLocalizationsMs extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days hari',
-      one: '1 hari',
+      one: '$days hari',
     );
     return 'Peringatan $position: $_temp0 sebelum tamat tempoh';
   }
@@ -1288,7 +1264,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count hampir tamat tempoh',
-      one: '1 hampir tamat tempoh',
+      one: '$count hampir tamat tempoh',
     );
     return '$_temp0';
   }
@@ -1300,43 +1276,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get noRecordsTomorrow => 'Tiada apa yang tamat tempoh esok';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName tamat tempoh dalam $days hari',
-      one: '$recordName tamat tempoh esok',
-      zero: '$recordName tamat tempoh hari ini',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName anda tamat tempoh pada $date. Memperbaharui lebih awal memastikan anda kekal dilindungi.',
-      one: '$firstName, $recordName anda tamat tempoh esok. Perbaharuinya sekarang supaya ia tidak luput.',
-      zero: '$firstName, $recordName anda tamat tempoh hari ini. Sudah memperbaharuinya? Kemaskini tarikh luputnya.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Peringatan terakhir: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'dalam $days hari, pada $date',
-      one: 'esok',
-    );
-    return '$firstName, $recordName anda tamat tempoh $_temp0. Ini ialah peringatan terakhir anda, perbaharuinya atau kemaskini tarikhnya.';
   }
 
   @override
@@ -1531,7 +1472,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count rekod akan datang belum ada kos.',
-      one: '1 rekod akan datang belum ada kos.',
+      one: '$count rekod akan datang belum ada kos.',
     );
     return '$_temp0';
   }
@@ -1565,7 +1506,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count rekod',
-      one: '1 rekod',
+      one: '$count rekod',
       zero: 'Tiada rekod',
     );
     return '$_temp0';
@@ -1621,7 +1562,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Sehingga $count orang',
-      one: 'Sehingga 1 orang',
+      one: 'Sehingga $count orang',
     );
     return '$_temp0';
   }
@@ -1638,7 +1579,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Tambah sehingga $count orang',
-      one: 'Tambah 1 orang',
+      one: 'Tambah $count orang',
     );
     return '$_temp0';
   }
@@ -2222,7 +2163,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count rekod',
-      one: '1 rekod',
+      one: '$count rekod',
     );
     return '$_temp0';
   }
@@ -2253,7 +2194,7 @@ class AppLocalizationsMs extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Perjalanan $days hari',
-      one: 'Perjalanan 1 hari',
+      one: 'Perjalanan $days hari',
     );
     return '$_temp0';
   }
@@ -2326,7 +2267,7 @@ class AppLocalizationsMs extends AppLocalizations {
       months,
       locale: localeName,
       other: '$months bulan',
-      one: '1 bulan',
+      one: '$months bulan',
     );
     return '$name tamat tempoh pada $date. Banyak negara mahu baki $_temp0 selepas anda pulang.';
   }
@@ -2342,7 +2283,7 @@ class AppLocalizationsMs extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days hari selepas anda bertolak',
-      one: '1 hari selepas anda bertolak',
+      one: '$days hari selepas anda bertolak',
       zero: 'pada hari anda bertolak',
     );
     return '$name tamat tempoh pada $date, $_temp0.';
@@ -2520,7 +2461,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count perkara perlu perhatian',
-      one: '1 perkara perlu perhatian',
+      one: '$count perkara perlu perhatian',
     );
     return '$_temp0';
   }
@@ -2601,7 +2542,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dokumen perlu perhatian sebelum anda bertolak.',
-      one: '1 dokumen perlu perhatian sebelum anda bertolak.',
+      one: '$count dokumen perlu perhatian sebelum anda bertolak.',
     );
     return '$_temp0';
   }
@@ -2704,7 +2645,7 @@ class AppLocalizationsMs extends AppLocalizations {
       limit,
       locale: localeName,
       other: '$limit gambar',
-      one: '1 gambar',
+      one: '$limit gambar',
     );
     return 'Pelan Percuma membenarkan anda menambah $_temp0 pada setiap rekod. Dengan Premium anda boleh menambah sehingga $premiumLimit.';
   }
@@ -2740,7 +2681,7 @@ class AppLocalizationsMs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count gambar',
-      one: '1 gambar',
+      one: '$count gambar',
     );
     return '$_temp0';
   }
@@ -8218,4 +8159,202 @@ class AppLocalizationsMs extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Peringatan: $name tamat tempoh pada $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName tamat tempoh hari ini';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName tamat tempoh esok';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName tamat tempoh dalam $days hari',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName telah tamat tempoh';
+  }
+
+  @override
+  String get remLockedTitle => 'Rekod yang dikunci memerlukan perhatian anda';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Tarikhnya $date. Buka kunci Vaultara untuk melihat rekod yang mana.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Rekod anda \"$recordName\" tamat tempoh hari ini.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Rekod anda \"$recordName\" tamat tempoh esok.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Rekod anda \"$recordName\" tamat tempoh pada $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, rekod anda \"$recordName\" tamat tempoh hari ini.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, rekod anda \"$recordName\" tamat tempoh esok.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, rekod anda \"$recordName\" tamat tempoh pada $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Rekod \"$recordName\" milik $person tamat tempoh hari ini.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Rekod \"$recordName\" milik $person tamat tempoh esok.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Rekod \"$recordName\" milik $person tamat tempoh pada $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Rekod anda \"$recordName\" tamat tempoh pada $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Rekod \"$recordName\" milik $person tamat tempoh pada $date.';
+  }
+
+  @override
+  String get remTipToday => 'Sudah diperbaharui? Kemas kini tarikhnya.';
+
+  @override
+  String get remTipTomorrow => 'Perbaharuinya sekarang supaya tidak tamat tempoh.';
+
+  @override
+  String get remTipEarly => 'Memperbaharui awal memastikan anda terlindung.';
+
+  @override
+  String get remTipLast => 'Ini peringatan terakhir sebelum tamat tempoh.';
+
+  @override
+  String get remTipExpired => 'Perbaharuinya, atau kemas kini tarikhnya jika sudah.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Sudah tiba masanya untuk mula memperbaharui \"$recordName\". Ia tamat tempoh pada $date, jadi jika mula sekarang anda ada banyak masa.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Sudah tiba masanya untuk mula memperbaharui \"$recordName\" milik $person. Ia tamat tempoh pada $date, jadi bermula sekarang memberi banyak masa.';
+  }
+
+  @override
+  String get notifChannelName => 'Peringatan tamat tempoh';
+
+  @override
+  String get notifChannelDescription => 'Peringatan sebelum rekod anda tamat tempoh';
+
+  @override
+  String get notifTestTitle => 'Pemberitahuan ujian';
+
+  @override
+  String get notifTestBody => 'Peringatan daripada Vaultara tiba seperti ini.';
+
+  @override
+  String get notifTestAction => 'Hantar pemberitahuan ujian';
+
+  @override
+  String get notifTestSubtitle => 'Semak bahawa peringatan sampai ke telefon ini';
+
+  @override
+  String get notifTestSent => 'Ujian dihantar. Ia sepatutnya tiba dalam beberapa saat.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Ingatkan saya selepas rekod tamat tempoh';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 dan 14 hari selepasnya, jika belum diperbaharui';
+
+  @override
+  String get notifWeeklyTitle => 'Ringkasan Isnin';
+
+  @override
+  String get notifWeeklySubtitle => 'Mesej pada pagi Isnin apabila sesuatu tamat tempoh minggu itu';
+
+  @override
+  String get notifPushSection => 'Isi rumah dan kemas kini';
+
+  @override
+  String get notifHouseholdTitle => 'Rekod dikongsi';
+
+  @override
+  String get notifHouseholdSubtitle => 'Apabila rekod dikongsi hampir tamat tempoh dan tiada sesiapa memperbaharuinya';
+
+  @override
+  String get notifUpdatesTitle => 'Kemas kini yang anda minta';
+
+  @override
+  String get notifUpdatesSubtitle => 'Apabila seseorang menghantar butiran baharu sesuatu rekod';
+
+  @override
+  String get notifSecurityNote => 'Amaran tentang log masuk baharu ke akaun anda sentiasa dihantar.';
+
+  @override
+  String get notifIosHelpTitle => 'Tidak menerima peringatan?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Semak tetapan iPhone anda';
+
+  @override
+  String get notifIosHelpStep1 => 'Buka Tetapan, kemudian Pemberitahuan, kemudian Vaultara, dan hidupkan Benarkan Pemberitahuan.';
+
+  @override
+  String get notifIosHelpStep2 => 'Hidupkan Skrin Kunci, Pusat Pemberitahuan dan Sepanduk.';
+
+  @override
+  String get notifIosHelpStep3 => 'Jika anda menggunakan Fokus, tambah Vaultara pada app yang dibenarkan.';
+
+  @override
+  String get notifIosHelpStep4 => 'Buka Vaultara setiap beberapa minggu. iPhone hanya menyimpan bilangan terhad peringatan akan datang, dan membuka app menjadualkan yang seterusnya.';
+
+  @override
+  String get homeNextUpEmpty => 'Tiada apa yang tamat tempoh tidak lama lagi. Semuanya beres.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count perlu diperbaharui dalam 30 hari',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Kategori yang disemat';
 }

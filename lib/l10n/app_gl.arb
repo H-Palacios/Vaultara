@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara axúdache a facer un seguimento das datas de caducidade importantes para que nada pase desapercibido.",
   "homeWelcomeSubtitleFirst": "Encántanos terte aquí. Vaultara axúdache a manterte organizado gardando datas e rexistros importantes nun só lugar seguro.",
   "homeWelcomeSubtitleBack": "Encántanos verte de novo. Vaultara está aquí cando queiras revisar as túas datas e rexistros importantes.",
-  "summaryAllCaption": "Seguimento en Vaultara",
-  "summaryExpiredTitle": "Caducado",
-  "summaryExpiredCaption": "Data de caducidade superada",
   "editorNotes": "Notas",
   "editorReminderNone": "Sen lembrete",
   "editorReminderOnExpiry": "No día de caducidade",
@@ -199,7 +196,6 @@
   "addRecord": "Engadir rexistro",
   "noRecordsYet": "Aínda non hai rexistros.",
   "deleteRecordTitle": "Eliminar rexistro",
-  "summaryAllRecordsTitle": "Todos os rexistros",
   "noGroupFound": "Aínda non hai grupos",
   "groupLabel": "{count, plural, one{{count} grupo} other{{count} grupos}}",
   "recordsLabel": "{count, plural, one{{count} rexistro} other{{count} rexistros}}",
@@ -449,7 +445,7 @@
   "addNotesHint": "Engadir notas (opcional)",
   "expiryTimelineTitle": "Cronoloxía de caducidades",
   "expiryTimelineSubtitle": "Toca un mes para ver os rexistros que caducan nese mes",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 rexistro} other{{count} rexistros}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} rexistro} other{{count} rexistros}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -457,10 +453,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Próximos",
-  "summaryUpcomingCaption": "Nos próximos 30 días",
-  "summaryUrgentTitle": "Urxente",
-  "summaryUrgentCaption": "Nos próximos 7 días",
   "profileHeaderTitle": "Perfil",
   "profileTutorialsTitle": "Titoriais",
   "profileTutorialsSubtitle": "Explora os titoriais da aplicación",
@@ -492,7 +484,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Sen lembrete",
   "reminderOnExpiry": "Na data de caducidade",
-  "reminderDaysBefore": "{days, plural, one{1 día antes} other{{days} días antes}}",
+  "reminderDaysBefore": "{days, plural, one{{days} día antes} other{{days} días antes}}",
   "reminderCustomDaysTitle": "Introduce días personalizados",
   "reminderCascadeTitle": "Lembretes en cascada",
   "reminderCascadeSubtitle": "Recibe múltiples notificacións antes de que caduque un rexistro",
@@ -523,16 +515,16 @@
   "smartInsightNoRecordsHeading": "Engade o teu primeiro rexistro",
   "smartInsightNoRecordsBody": "Comeza a realizar o seguimento dos teus rexistros e Vaultara amosará información intelixente aquí.",
   "smartInsightExpiresTodaySingleBody": "{name} caduca hoxe. Se xa o renovaches, actualiza a data aquí.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} caducan hoxe.} =1{{names} e 1 máis caducan hoxe.} other{{names} e {extra} máis caducan hoxe.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} caducan hoxe.} =1{{names} e {extra} máis caducan hoxe.} other{{names} e {extra} máis caducan hoxe.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} caduca mañá e non ten lembrete. Configura un para non esquecelo.} other{{name} caduca o {date} e non ten lembrete. Configura un para non esquecelo.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} caduca o {dateA} e {b} o {dateB}, aproximadamente ao mesmo tempo. É fácil esquecer un cando dous rexistros están tan xuntos.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} e {c} caducan antes do {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer un cando varios están tan xuntos.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} e 1 máis caducan antes do {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer un cando varios están tan xuntos.} other{{a}, {b} e {extra} máis caducan antes do {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer un cando varios están tan xuntos.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} e {extra} máis caducan antes do {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer un cando varios están tan xuntos.} other{{a}, {b} e {extra} máis caducan antes do {lastDate}, aproximadamente ao mesmo tempo. É fácil esquecer un cando varios están tan xuntos.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Nada caduca no vindeiro día. A túa próxima caducidade é o {date}.} other{Nada caduca nos vindeiros {days} días. A túa próxima caducidade é o {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 dos teus rexistros de {category} caduca o {date}. É fácil de pasar por alto.} other{{count} dos teus rexistros de {category} caducan antes do {date}. É fácil esquecer un cando están agrupados desta maneira.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 próxima caducidade está cuberta por un lembrete. Nada máis require a túa atención.} other{{count} próximas caducidades están cubertas por lembretes. Nada máis require a túa atención.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} dos teus rexistros de {category} caduca o {date}. É fácil de pasar por alto.} other{{count} dos teus rexistros de {category} caducan antes do {date}. É fácil esquecer un cando están agrupados desta maneira.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} próxima caducidade está cuberta por un lembrete. Nada máis require a túa atención.} other{{count} próximas caducidades están cubertas por lembretes. Nada máis require a túa atención.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Todo está ao día. Nada require a túa atención neste momento.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Nada é urxente neste momento, pero 1 próximo rexistro aínda non ten lembrete.} other{Nada é urxente neste momento, pero {count} próximos rexistros aínda non teñen lembrete.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Nada é urxente neste momento, pero {count} próximo rexistro aínda non ten lembrete.} other{Nada é urxente neste momento, pero {count} próximos rexistros aínda non teñen lembrete.}}",
   "smartInsightCloseExpiriesHeading": "Caducan aproximadamente ao mesmo tempo",
   "plansHeadline": "Obtén todo o potencial de Vaultara",
   "plansSubhead": "Rexistros ilimitados, os teus propios grupos e lembretes axustados exactamente como queiras.",
@@ -619,7 +611,7 @@
   "reminderCascadeRemoveStep": "Eliminar",
   "reminderCascadeDuplicate": "Outro lembrete xa está a usar este día",
   "reminderCascadeOutOfRange": "Introduce entre {min} e {max} días",
-  "reminderCascadeStepLabel": "Lembrete {position}: {days, plural, =1{1 día} other{{days} días}} antes",
+  "reminderCascadeStepLabel": "Lembrete {position}: {days, plural, =1{{days} día} other{{days} días}} antes",
   "expiryTimelineNotReady": "A túa liña de tempo aparecerá unha vez que teñas rexistros que caduquen en varios meses diferentes.",
   "verifyEmailResendIn": "Reenviar en {seconds} s",
   "verifyEmailSpamHint": "Non está aí? Revisa o teu cartafol de correo lixo ou spam.",
@@ -628,13 +620,10 @@
   "verifyEmailDiscardBody": "Esta conta non está verificada. Saír agora eliminaraa e poderás rexistrarte de novo con calquera enderezo de correo electrónico.",
   "verifyEmailDiscardAction": "Desbotar",
   "verifyEmailKeepWaiting": "Seguir agardando",
-  "expiringBadge": "{count, plural, =1{1 a punto de caducar} other{{count} a punto de caducar}}",
+  "expiringBadge": "{count, plural, =1{{count} a punto de caducar} other{{count} a punto de caducar}}",
   "noRecordsToday": "Nada caduca hoxe",
   "noRecordsTomorrow": "Nada caduca mañá",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} caduca hoxe} =1{{recordName} caduca mañá} other{{recordName} caduca en {days} días}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, o teu {recordName} caduca hoxe. Xa o renovaches? Actualiza a súa data de caducidade.} =1{{firstName}, o teu {recordName} caduca mañá. Renóvao agora para que non caduque.} other{{firstName}, o teu {recordName} caduca o {date}. Renovar con antelación manténche protexido.}}",
   "cascadeFinalStepTitle": "Último lembrete: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, o teu {recordName} caduca {days, plural, =1{mañá} other{en {days} días, o {date}}}. Este é o teu último lembrete, renóvao ou actualiza a súa data.",
   "notificationsTitle": "Notificacións",
   "notificationsProfileEnabledSubtitle": "Os lembretes chegan ás {time}.",
   "notificationsProfileDisabledSubtitle": "As notificacións están desactivadas.",
@@ -693,7 +682,7 @@
   "costCardTitle": "Custos de renovación",
   "costCardSubtitle": "O que custan as túas renovacións, mes a mes",
   "costCardBusiest": "Mes máis caro: {month} ({amount})",
-  "costCardMissing": "{count, plural, =1{1 rexistro próximo aínda non ten custo.} other{{count} rexistros próximos aínda non teñen custo.}}",
+  "costCardMissing": "{count, plural, =1{{count} rexistro próximo aínda non ten custo.} other{{count} rexistros próximos aínda non teñen custo.}}",
   "costCardEmpty": "Engade custos aos teus rexistros para ver canto custarán as renovacións.",
   "costCardLockedHint": "Con Premium podes ver canto custarán as túas renovacións durante o próximo ano.",
   "costCardSeePremium": "Ver Premium",
@@ -701,7 +690,7 @@
   "familyTitle": "Familia",
   "familyIntro": "Leva o control dos rexistros das persoas que coidas. Os seus lembretes mostran o seu nome para que saibas de quen é cada rexistro.",
   "familyMe": "Eu",
-  "familyRecordCount": "{count, plural, =0{Sen rexistros} =1{1 rexistro} other{{count} rexistros}}",
+  "familyRecordCount": "{count, plural, =0{Sen rexistros} =1{{count} rexistro} other{{count} rexistros}}",
   "familyRename": "Renomear",
   "familyRemove": "Quitar",
   "familyRemoveTitle": "Queres quitar a {name}?",
@@ -714,10 +703,10 @@
   "familyNameLabel": "Nome",
   "familyNameHint": "Por exemplo, Thabo",
   "familyNameRequired": "Escribe un nome",
-  "familyLimitNote": "{count, plural, =1{Ata 1 persoa} other{Ata {count} persoas}}",
+  "familyLimitNote": "{count, plural, =1{Ata {count} persoa} other{Ata {count} persoas}}",
   "familyUpsellTitle": "Controla os documentos da túa familia",
   "familyBenefitPremium": "Todo o de Premium",
-  "familyBenefitPeople": "{count, plural, =1{Engade 1 persoa} other{Engade ata {count} persoas}}",
+  "familyBenefitPeople": "{count, plural, =1{Engade {count} persoa} other{Engade ata {count} persoas}}",
   "familyBenefitOwnRecords": "Cada persoa ten os seus propios rexistros e lembretes",
   "familyBenefitOneSubscription": "Unha soa subscrición para todo o fogar",
   "familySeePlan": "Ver plan Familia",
@@ -903,14 +892,14 @@
   "calendarExportError": "Non puidemos crear o ficheiro do calendario. Téntao de novo.",
   "pdfExportTitle": "Rexistros de Vaultara",
   "pdfExportGenerated": "Xerado o {date}",
-  "pdfExportCount": "{count, plural, =1{1 rexistro} other{{count} rexistros}}",
+  "pdfExportCount": "{count, plural, =1{{count} rexistro} other{{count} rexistros}}",
   "pdfExportCost": "Custo de renovación: {amount}",
   "pdfExportBuilding": "Preparando o teu PDF...",
   "pdfExportError": "Non puidemos crear o PDF. Téntao de novo.",
   "travelTitle": "Revisión de viaxe",
   "travelDeparture": "Saída",
   "travelReturn": "Volta",
-  "travelTripLength": "{days, plural, =1{Viaxe de 1 día} other{Viaxe de {days} días}}",
+  "travelTripLength": "{days, plural, =1{Viaxe de {days} día} other{Viaxe de {days} días}}",
   "travelDriving": "Vou conducir",
   "travelNeedsVisa": "Necesito visado",
   "travelWho": "Quen viaxa?",
@@ -931,9 +920,9 @@
   "travelNoLicence": "Non hai licenza de condución engadida",
   "travelOtherExpires": "Caduca mentres estás fóra",
   "travelDetailValidUntil": "{name} é válido ata o {date}.",
-  "travelDetailPassportBuffer": "{name} caduca o {date}. Moitos países esixen {months, plural, =1{1 mes} other{{months} meses}} de validez despois da volta.",
+  "travelDetailPassportBuffer": "{name} caduca o {date}. Moitos países esixen {months, plural, =1{{months} mes} other{{months} meses}} de validez despois da volta.",
   "travelDetailExpiresBeforeLeaving": "{name} caduca o {date}, antes de que saias.",
-  "travelDetailExpiresDuringTrip": "{name} caduca o {date}, {days, plural, =0{o día que saes} =1{1 día despois de saír} other{{days} días despois de saír}}.",
+  "travelDetailExpiresDuringTrip": "{name} caduca o {date}, {days, plural, =0{o día que saes} =1{{days} día despois de saír} other{{days} días despois de saír}}.",
   "travelDetailNoPassport": "Engade o teu pasaporte para que Vaultara o poida comprobar.",
   "travelDetailNoVisa": "Engade o teu visado para que Vaultara o poida comprobar.",
   "travelDetailNoInsurance": "Engade o teu seguro de viaxe para comprobar que cobre toda a viaxe.",
@@ -1033,7 +1022,7 @@
   "vaultChooseFromGallery": "Escoller da galería",
   "vaultRemove": "Quitar",
   "vaultLimitTitle": "Alcanzouse o límite de fotos",
-  "vaultLimitFreeBody": "O plan De balde permíteche engadir {limit, plural, =1{1 foto} other{{limit} fotos}} a cada rexistro. Con Premium podes engadir ata {premiumLimit}.",
+  "vaultLimitFreeBody": "O plan De balde permíteche engadir {limit, plural, =1{{limit} foto} other{{limit} fotos}} a cada rexistro. Con Premium podes engadir ata {premiumLimit}.",
   "vaultLimitPremiumBody": "Podes engadir ata {limit} fotos a cada rexistro. Quita unha para engadir outra.",
   "vaultSeePremium": "Ver Premium",
   "vaultPdfShort": "PDF",
@@ -1041,7 +1030,7 @@
   "vaultOpenFile": "Abrir",
   "vaultClose": "Pechar",
   "vaultPageIndicator": "{current} de {total}",
-  "vaultPhotosTooltip": "{count, plural, =1{1 foto} other{{count} fotos}}",
+  "vaultPhotosTooltip": "{count, plural, =1{{count} foto} other{{count} fotos}}",
   "travelReadinessTitle": "Preparado para viaxar",
   "travelReadinessBody": "Baséase nos pasaportes e nas licenzas de condución gardados en Vaultara. A maioría dos países piden que o pasaporte teña polo menos 6 meses de validez ao volver.",
   "travelReadyUntil": "Pasaporte útil para viaxes ata o {date}",
@@ -1361,7 +1350,7 @@
   "photoLockTurnOn": "Activar as fotos cifradas",
   "photoLockStatusOn": "As fotos cifradas están activadas",
   "photoLockStatusOnBody": "As fotos novas cífranse neste teléfono antes de subilas.",
-  "photoLockPendingTitle": "{count, plural, one{1 foto aínda non está cifrada} other{{count} fotos aínda non están cifradas}}",
+  "photoLockPendingTitle": "{count, plural, one{{count} foto aínda non está cifrada} other{{count} fotos aínda non están cifradas}}",
   "photoLockPendingBody": "As fotos que engadiches antes de activar isto seguen gardadas da forma normal.",
   "photoLockEncryptExisting": "Cifrar as miñas fotos existentes",
   "photoLockKeepOpen": "Mantén Vaultara aberta ata que remate.",
@@ -1398,7 +1387,7 @@
   "photoLockSetupFailed": "Non puidemos activar as fotos cifradas. Comproba a túa conexión e téntao de novo.",
   "photoLockAlreadyOn": "As fotos cifradas xa están activadas na túa conta. Introduce a túa chave de recuperación para usalas neste teléfono.",
   "photoLockEncryptExistingTitle": "Cifrar as túas fotos existentes?",
-  "photoLockEncryptExistingBody": "{count, plural, one{Tes 1 foto que aínda non está cifrada. Podemos cifrala agora.} other{Tes {count} fotos que aínda non están cifradas. Podemos cifralas agora.}} Mantén Vaultara aberta ata que remate.",
+  "photoLockEncryptExistingBody": "{count, plural, one{Tes {count} foto que aínda non está cifrada. Podemos cifrala agora.} other{Tes {count} fotos que aínda non están cifradas. Podemos cifralas agora.}} Mantén Vaultara aberta ata que remate.",
   "photoLockEncryptNow": "Cifrar agora",
   "photoLockEntryBody": "Introduce a chave de recuperación que gardaches ao activar as fotos cifradas. Os guións e os espazos son opcionais.",
   "photoLockEntryLabel": "Chave de recuperación",
@@ -1407,8 +1396,8 @@
   "photoLockUnlocked": "As túas fotos están desbloqueadas neste teléfono.",
   "photoLockInvalidFormat": "Isto non parece unha chave de recuperación. Comproba cada carácter e téntao de novo.",
   "photoLockWrongKey": "Esta chave de recuperación non coincide. Comprobaa e téntao de novo.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Demasiados intentos. Agarda 1 segundo e téntao de novo.} other{Demasiados intentos. Agarda {seconds} segundos e téntao de novo.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Demasiados intentos. Agarda 1 minuto e téntao de novo.} other{Demasiados intentos. Agarda {minutes} minutos e téntao de novo.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Demasiados intentos. Agarda {seconds} segundo e téntao de novo.} other{Demasiados intentos. Agarda {seconds} segundos e téntao de novo.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Demasiados intentos. Agarda {minutes} minuto e téntao de novo.} other{Demasiados intentos. Agarda {minutes} minutos e téntao de novo.}}",
   "photoLockOffline": "Non puidemos chegar a Vaultara. Comproba a túa conexión e téntao de novo.",
   "photoLockNotSetUp": "As fotos cifradas non están activadas na túa conta.",
   "photoLockUnlockFailed": "Algo saíu mal. Téntao de novo.",
@@ -1664,13 +1653,13 @@
   "dailyDigestSwitchSubtitle": "Recibe unha notificación á hora do lembrete cunha lista de todo o que vence ese día.",
   "dailyDigestTurnedOn": "Agora os teus lembretes chegan nun só resumo diario.",
   "dailyDigestTurnedOff": "Volveron os lembretes separados para cada rexistro.",
-  "dailyDigestTitle": "{count, plural, one{1 rexistro precisa a túa atención} other{{count} rexistros precisan a túa atención}}",
+  "dailyDigestTitle": "{count, plural, one{{count} rexistro precisa a túa atención} other{{count} rexistros precisan a túa atención}}",
   "dailyDigestBody": "Próximamente: {names}.",
   "dailyDigestBodyMore": "Próximamente: {names} e {count} máis.",
   "dailyDigestLockedRecord": "un rexistro bloqueado",
   "renewReasonRepeat": "{months, plural, one{Segundo a túa repetición cada mes} other{Segundo a túa repetición cada {months} meses}}",
   "renewReasonHistory": "{count, plural, one{Segundo a túa última renovación} other{Segundo as túas últimas {count} renovacións}}",
-  "renewReasonTypical": "{years, plural, one{Adoita ser válido 1 ano} other{Adoita ser válido {years} anos}}",
+  "renewReasonTypical": "{years, plural, one{Adoita ser válido {years} ano} other{Adoita ser válido {years} anos}}",
   "renewChangeHint": "Toca a data para cambiala.",
   "renewPickDate": "Escolle a nova data de caducidade",
   "renewPickDateHint": "Escolle a data que aparece no teu documento novo.",
@@ -1823,9 +1812,9 @@
   "secHistoryIntro": "Inicios de sesión e cambios na túa conta dos últimos 90 días.",
   "secHistoryEmpty": "Aínda non hai nada que mostrar.",
   "secJustNow": "Agora mesmo",
-  "secMinutesAgo": "{count, plural, one{Hai 1 minuto} other{Hai {count} minutos}}",
-  "secHoursAgo": "{count, plural, one{Hai 1 hora} other{Hai {count} horas}}",
-  "secDaysAgo": "{count, plural, one{Hai 1 día} other{Hai {count} días}}",
+  "secMinutesAgo": "{count, plural, one{Hai {count} minuto} other{Hai {count} minutos}}",
+  "secHoursAgo": "{count, plural, one{Hai {count} hora} other{Hai {count} horas}}",
+  "secDaysAgo": "{count, plural, one{Hai {count} día} other{Hai {count} días}}",
   "secEventNewSignIn": "Inicio de sesión nun dispositivo novo",
   "secEventSignIn": "Sesión iniciada",
   "secEventPasswordChanged": "Contrasinal cambiado",
@@ -2146,8 +2135,8 @@
   "lifePlanAutoChanged": "Vaultara viu que este rexistro cambiou, así que está marcado como feito.",
   "lifePlanAutoAdded": "Engadido despois de comezar este plan.",
   "lifePlanProgress": "{done} de {total} feitos",
-  "lifePlanDaysToGo": "{count, plural, =1{Falta 1 día} other{Faltan {count} días}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Hai 1 día} other{Hai {count} días}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Falta {count} día} other{Faltan {count} días}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Hai {count} día} other{Hai {count} días}}",
   "lifePlanAllDone": "Todo está feito. Podes marcar o plan como rematado.",
   "lifePlanFinish": "Marcar como rematado",
   "lifePlanReopen": "Volver abrilo",
@@ -2276,7 +2265,7 @@
   "lifePlanReadAloudUnavailable": "A lectura en voz alta non está dispoñible neste móbil.",
   "lifePlanProofPack": "Crear un paquete de probas",
   "lifePlanOpenFamily": "Abrir Familia",
-  "lifePlanRemoved": "{count, plural, =1{1 rexistro que borraches conta como cancelado.} other{{count} rexistros que borraches contan como cancelados.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} rexistro que borraches conta como cancelado.} other{{count} rexistros que borraches contan como cancelados.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2334,7 +2323,7 @@
   "lostWalletCheckupBody": "Prepárate agora para non esquecer nada se se perde.",
   "lostWalletCheckupAllGood": "Todo listo. Se algunha vez se perde, estás preparado.",
   "lostWalletSetPlaceBody": "Abre unha tarxeta ou documento e escolle onde o gardas. Faino co DNI, o carné de conducir e as tarxetas.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 elemento non ten foto. Cunha foto substitúese antes.} other{{count} elementos non teñen foto. Con fotos substitúense antes.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} elemento non ten foto. Cunha foto substitúese antes.} other{{count} elementos non teñen foto. Con fotos substitúense antes.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2342,7 +2331,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 tarxeta non ten gardado o teléfono para tarxeta perdida.} other{{count} tarxetas non teñen gardado o teléfono para tarxeta perdida.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} tarxeta non ten gardado o teléfono para tarxeta perdida.} other{{count} tarxetas non teñen gardado o teléfono para tarxeta perdida.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2442,7 +2431,7 @@
     }
   },
   "lostWalletReportNoCase": "Número de denuncia: aínda sen denunciar",
-  "lostWalletReportCount": "{count, plural, =1{1 elemento abaixo} other{{count} elementos abaixo}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} elemento abaixo} other{{count} elementos abaixo}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2477,7 +2466,7 @@
   "tutorialsGroupTravelFamily": "Viaxes e familia",
   "tutorialsGroupEmergencies": "Acontecementos vitais e emerxencias",
   "tutorialsGroupPaid": "Funcións de pago",
-  "tutorialsSteps": "{count, plural, =1{1 paso} other{{count} pasos}}",
+  "tutorialsSteps": "{count, plural, =1{{count} paso} other{{count} pasos}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2873,5 +2862,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "O rexistro «{recordName}» caduca hoxe",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "O rexistro «{recordName}» caduca mañá",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{O rexistro «{recordName}» caduca en {days} día} other{O rexistro «{recordName}» caduca en {days} días}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "O rexistro «{recordName}» caducou",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Un rexistro bloqueado precisa a túa atención",
+  "remLockedBody": "A súa data é o {date}. Desbloquea Vaultara para ver que rexistro é.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "O teu rexistro «{recordName}» caduca hoxe.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "O teu rexistro «{recordName}» caduca mañá.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "O teu rexistro «{recordName}» caduca o {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, o teu rexistro «{recordName}» caduca hoxe.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, o teu rexistro «{recordName}» caduca mañá.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, o teu rexistro «{recordName}» caduca o {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "O rexistro «{recordName}» de {person} caduca hoxe.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "O rexistro «{recordName}» de {person} caduca mañá.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "O rexistro «{recordName}» de {person} caduca o {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "O teu rexistro «{recordName}» caducou o {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "O rexistro «{recordName}» de {person} caducou o {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Xa o renovaches? Actualiza a súa data.",
+  "remTipTomorrow": "Renóvao agora para que non caduque.",
+  "remTipEarly": "Renovar cedo mantente cuberto.",
+  "remTipLast": "Este é o teu último recordatorio antes de que caduque.",
+  "remTipExpired": "Renóvao, ou actualiza a súa data se xa o fixeches.",
+  "remStartBody": "É hora de comezar a renovar «{recordName}». Caduca o {date}, así que se comezas agora terás tempo de sobra.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "É hora de comezar a renovar «{recordName}» de {person}. Caduca o {date}, así que comezar agora deixa tempo de sobra.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Recordatorios de caducidade",
+  "notifChannelDescription": "Recordatorios antes de que caduquen os teus rexistros",
+  "notifTestTitle": "Notificación de proba",
+  "notifTestBody": "Os recordatorios de Vaultara chegan así.",
+  "notifTestAction": "Enviar unha notificación de proba",
+  "notifTestSubtitle": "Comproba que os recordatorios chegan a este teléfono",
+  "notifTestSent": "Proba enviada. Debería chegar nuns segundos.",
+  "notifAfterExpiryTitle": "Lembrarme despois da caducidade",
+  "notifAfterExpirySubtitle": "3 e 14 días despois, se non se renovou",
+  "notifWeeklyTitle": "Resumo do luns",
+  "notifWeeklySubtitle": "Un aviso o luns pola mañá cando algo caduca esa semana",
+  "notifPushSection": "Fogar e actualizacións",
+  "notifHouseholdTitle": "Rexistros compartidos",
+  "notifHouseholdSubtitle": "Cando un rexistro compartido está a piques de caducar e ninguén o renovou",
+  "notifUpdatesTitle": "Actualizacións que pediches",
+  "notifUpdatesSubtitle": "Cando alguén envía os datos novos dun rexistro",
+  "notifSecurityNote": "Os avisos de novos inicios de sesión na túa conta envíanse sempre.",
+  "notifIosHelpTitle": "Non che chegan os recordatorios?",
+  "notifIosHelpSubtitle": "Revisa a configuración do iPhone",
+  "notifIosHelpStep1": "Abre Axustes, despois Notificacións, despois Vaultara, e activa Permitir notificacións.",
+  "notifIosHelpStep2": "Activa Pantalla bloqueada, Centro de notificacións e Báneres.",
+  "notifIosHelpStep3": "Se usas un modo de concentración, engade Vaultara ás apps permitidas.",
+  "notifIosHelpStep4": "Abre Vaultara cada poucas semanas. O iPhone só garda un número limitado de recordatorios futuros, e ao abrir a app prográmanse os seguintes.",
+  "homeNextUpEmpty": "Nada caduca pronto. Todo está ao día.",
+  "homeDueSoonChip": "{count, plural, one{{count} caduca en 30 días} other{{count} caducan en 30 días}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Categorías fixadas"
 }

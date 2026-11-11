@@ -360,15 +360,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'من الجيد رؤيتك مجددًا. Vaultara هنا متى أردت مراجعة تواريخك وسجلاتك المهمة.';
 
   @override
-  String get summaryAllCaption => 'متتبَّعة في Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'منتهية';
-
-  @override
-  String get summaryExpiredCaption => 'تجاوزت تاريخ انتهاء الصلاحية';
-
-  @override
   String get editorNotes => 'ملاحظات';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'حذف السجل';
-
-  @override
-  String get summaryAllRecordsTitle => 'جميع السجلات';
 
   @override
   String get noGroupFound => 'لا توجد مجموعات بعد';
@@ -829,22 +817,10 @@ class AppLocalizationsAr extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count سجلات',
-      one: '1 سجل',
+      one: '$count سجل',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'قادمة';
-
-  @override
-  String get summaryUpcomingCaption => 'خلال 30 يوما';
-
-  @override
-  String get summaryUrgentTitle => 'عاجل';
-
-  @override
-  String get summaryUrgentCaption => 'خلال 7 أيام';
 
   @override
   String get profileHeaderTitle => 'الملف الشخصي';
@@ -1298,7 +1274,7 @@ class AppLocalizationsAr extends AppLocalizations {
       many: '$count تنتهي قريبًا',
       few: '$count تنتهي قريبًا',
       two: '$count تنتهيان قريبًا',
-      one: '1 ينتهي قريبًا',
+      one: '$count ينتهي قريبًا',
     );
     return '$_temp0';
   }
@@ -1310,43 +1286,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get noRecordsTomorrow => 'لا شيء ينتهي غدًا';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName ينتهي خلال $days أيام',
-      one: '$recordName ينتهي غداً',
-      zero: '$recordName ينتهي اليوم',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName، ينتهي $recordName الخاص بك في $date. التجديد المبكر يبقيك محمياً.',
-      one: '$firstName، ينتهي $recordName الخاص بك غداً. جدده الآن حتى لا ينتهي.',
-      zero: '$firstName، ينتهي $recordName الخاص بك اليوم. هل قمت بالتجديد بالفعل؟ قم بتحديث تاريخ الانتهاء.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'تذكير أخير: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'خلال $days أيام، في $date',
-      one: 'غداً',
-    );
-    return '$firstName، ينتهي $recordName الخاص بك $_temp0. هذا هو تذكيرك الأخير، جدده أو قم بتحديث تاريخه.';
   }
 
   @override
@@ -8503,4 +8444,212 @@ class AppLocalizationsAr extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'تذكير: ينتهي $name في $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return 'ينتهي \"$recordName\" اليوم';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return 'ينتهي \"$recordName\" غدًا';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'ينتهي \"$recordName\" خلال $days يوم',
+      many: 'ينتهي \"$recordName\" خلال $days يومًا',
+      few: 'ينتهي \"$recordName\" خلال $days أيام',
+      two: 'ينتهي \"$recordName\" خلال $days يوم',
+      one: 'ينتهي \"$recordName\" خلال $days يوم',
+      zero: 'ينتهي \"$recordName\" خلال $days يوم',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return 'انتهى \"$recordName\"';
+  }
+
+  @override
+  String get remLockedTitle => 'سجل مقفل يحتاج إلى انتباهك';
+
+  @override
+  String remLockedBody(String date) {
+    return 'تاريخه $date. افتح قفل Vaultara لترى أي سجل هو.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'ينتهي سجلك \"$recordName\" اليوم.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'ينتهي سجلك \"$recordName\" غدًا.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'ينتهي سجلك \"$recordName\" في $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName، ينتهي سجلك \"$recordName\" اليوم.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName، ينتهي سجلك \"$recordName\" غدًا.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName، ينتهي سجلك \"$recordName\" في $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: ينتهي السجل \"$recordName\" اليوم.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: ينتهي السجل \"$recordName\" غدًا.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: ينتهي السجل \"$recordName\" في $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'انتهى سجلك \"$recordName\" في $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: انتهى السجل \"$recordName\" في $date.';
+  }
+
+  @override
+  String get remTipToday => 'هل جددته بالفعل؟ حدّث تاريخه.';
+
+  @override
+  String get remTipTomorrow => 'جدده الآن حتى لا تنتهي صلاحيته.';
+
+  @override
+  String get remTipEarly => 'التجديد المبكر يبقيك محميًا.';
+
+  @override
+  String get remTipLast => 'هذا آخر تذكير قبل انتهائه.';
+
+  @override
+  String get remTipExpired => 'جدده، أو حدّث تاريخه إن كنت قد جددته.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'حان وقت بدء تجديد \"$recordName\". ينتهي في $date، لذا إن بدأت الآن فلديك وقت كافٍ.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'حان وقت بدء تجديد \"$recordName\" ($person). ينتهي في $date، لذا فالبدء الآن يترك وقتًا كافيًا.';
+  }
+
+  @override
+  String get notifChannelName => 'تذكيرات انتهاء الصلاحية';
+
+  @override
+  String get notifChannelDescription => 'تذكيرات قبل انتهاء سجلاتك';
+
+  @override
+  String get notifTestTitle => 'إشعار تجريبي';
+
+  @override
+  String get notifTestBody => 'هكذا تصل تذكيرات Vaultara.';
+
+  @override
+  String get notifTestAction => 'إرسال إشعار تجريبي';
+
+  @override
+  String get notifTestSubtitle => 'تحقق من وصول التذكيرات إلى هذا الهاتف';
+
+  @override
+  String get notifTestSent => 'تم إرسال التجربة. يجب أن تصل خلال ثوانٍ.';
+
+  @override
+  String get notifAfterExpiryTitle => 'ذكّرني بعد انتهاء السجل';
+
+  @override
+  String get notifAfterExpirySubtitle => 'بعد 3 و14 يومًا إن لم يُجدَّد';
+
+  @override
+  String get notifWeeklyTitle => 'ملخص يوم الاثنين';
+
+  @override
+  String get notifWeeklySubtitle => 'رسالة صباح الاثنين عندما ينتهي شيء في ذلك الأسبوع';
+
+  @override
+  String get notifPushSection => 'الأسرة والتحديثات';
+
+  @override
+  String get notifHouseholdTitle => 'السجلات المشتركة';
+
+  @override
+  String get notifHouseholdSubtitle => 'عندما يقترب سجل مشترك من الانتهاء ولم يجدده أحد';
+
+  @override
+  String get notifUpdatesTitle => 'التحديثات التي طلبتها';
+
+  @override
+  String get notifUpdatesSubtitle => 'عندما يرسل شخص البيانات الجديدة لسجل';
+
+  @override
+  String get notifSecurityNote => 'تُرسل دائمًا تنبيهات تسجيلات الدخول الجديدة إلى حسابك.';
+
+  @override
+  String get notifIosHelpTitle => 'لا تصلك التذكيرات؟';
+
+  @override
+  String get notifIosHelpSubtitle => 'تحقق من إعدادات iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'افتح الإعدادات، ثم الإشعارات، ثم Vaultara، وفعّل السماح بالإشعارات.';
+
+  @override
+  String get notifIosHelpStep2 => 'فعّل شاشة القفل ومركز الإشعارات واللافتات.';
+
+  @override
+  String get notifIosHelpStep3 => 'إذا كنت تستخدم وضع التركيز، فأضف Vaultara إلى التطبيقات المسموح بها.';
+
+  @override
+  String get notifIosHelpStep4 => 'افتح Vaultara كل بضعة أسابيع. يحتفظ iPhone بعدد محدود فقط من التذكيرات المقبلة، وفتح التطبيق يجدول التذكيرات التالية.';
+
+  @override
+  String get homeNextUpEmpty => 'لا شيء ينتهي قريبًا. كل شيء جاهز.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مستحق خلال 30 يومًا',
+      many: '$count مستحقًا خلال 30 يومًا',
+      few: '$count مستحقة خلال 30 يومًا',
+      two: '$count مستحقان خلال 30 يومًا',
+      one: '$count مستحق خلال 30 يومًا',
+      zero: '$count مستحقة خلال 30 يومًا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'الفئات المثبتة';
 }

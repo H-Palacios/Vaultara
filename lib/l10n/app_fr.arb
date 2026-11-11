@@ -174,9 +174,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultara vous aide à suivre les dates d’expiration importantes afin que rien ne passe inaperçu.",
   "homeWelcomeSubtitleFirst": "Ravi de vous accueillir. Vaultara vous aide à rester organisé en conservant vos dates et enregistrements importants en un seul endroit sécurisé.",
   "homeWelcomeSubtitleBack": "Heureux de vous revoir. Vaultara est là chaque fois que vous souhaitez consulter vos dates et enregistrements importants.",
-  "summaryAllCaption": "Suivis dans Vaultara",
-  "summaryExpiredTitle": "Expiré",
-  "summaryExpiredCaption": "Date d’expiration dépassée",
   "editorNotes": "Notes",
   "editorReminderNone": "Aucun rappel",
   "editorReminderOnExpiry": "Le jour d’expiration",
@@ -199,7 +196,6 @@
   "addRecord": "Ajouter un enregistrement",
   "noRecordsYet": "Aucun enregistrement pour le moment.",
   "deleteRecordTitle": "Supprimer l’enregistrement",
-  "summaryAllRecordsTitle": "Tous les enregistrements",
   "noGroupFound": "Aucun groupe pour le moment",
   "groupLabel": "{count, plural, one{{count} groupe} other{{count} groupes}}",
   "recordsLabel": "{count, plural, one{{count} enregistrement} other{{count} enregistrements}}",
@@ -449,7 +445,7 @@
   "addNotesHint": "Ajouter des notes (optionnel)",
   "expiryTimelineTitle": "Chronologie d'expiration",
   "expiryTimelineSubtitle": "Appuyez sur un mois pour voir les enregistrements qui expirent ce mois-ci",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 enregistrement} other{{count} enregistrements}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} enregistrement} other{{count} enregistrements}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -457,10 +453,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "À Venir",
-  "summaryUpcomingCaption": "Dans les 30 prochains jours",
-  "summaryUrgentTitle": "Urgent",
-  "summaryUrgentCaption": "Dans les 7 prochains jours",
   "profileHeaderTitle": "Profil",
   "profileTutorialsTitle": "Tutoriels",
   "profileTutorialsSubtitle": "Parcourir les Tutoriels de l'Application",
@@ -492,7 +484,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Aucun rappel",
   "reminderOnExpiry": "À la date d'expiration",
-  "reminderDaysBefore": "{days, plural, one{1 jour avant} other{{days} jours avant}}",
+  "reminderDaysBefore": "{days, plural, one{{days} jour avant} other{{days} jours avant}}",
   "reminderCustomDaysTitle": "Entrez des jours personnalisés",
   "reminderCascadeTitle": "Rappels en cascade",
   "reminderCascadeSubtitle": "Recevez plusieurs notifications avant qu'un enregistrement n'expire",
@@ -523,16 +515,16 @@
   "smartInsightNoRecordsHeading": "Ajoutez votre premier enregistrement",
   "smartInsightNoRecordsBody": "Commencez à suivre vos enregistrements et Vaultara affichera des analyses intelligentes ici.",
   "smartInsightExpiresTodaySingleBody": "{name} expire aujourd'hui. Si vous l'avez déjà renouvelé, mettez à jour la date ici.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} expirent aujourd'hui.} =1{{names} et 1 autre expirent aujourd'hui.} other{{names} et {extra} autres expirent aujourd'hui.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} expirent aujourd'hui.} =1{{names} et {extra} autre expirent aujourd'hui.} other{{names} et {extra} autres expirent aujourd'hui.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} expire demain et n'a pas de rappel. Définissez-en un pour ne pas l'oublier.} other{{name} expire le {date} et n'a pas de rappel. Définissez-en un pour ne pas l'oublier.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} expire le {dateA} et {b} le {dateB}, à peu près au même moment. Il est facile d'en oublier un lorsque deux enregistrements sont si rapprochés.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} et {c} expirent d'ici le {lastDate}, à peu près au même moment. Il est facile d'en oublier un lorsque plusieurs enregistrements sont si rapprochés.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} et 1 autre enregistrement expirent d'ici le {lastDate}, à peu près au même moment. Il est facile d'en oublier un lorsque plusieurs enregistrements sont si rapprochés.} other{{a}, {b} et {extra} autres enregistrements expirent d'ici le {lastDate}, à peu près au même moment. Il est facile d'en oublier un lorsque plusieurs enregistrements sont si rapprochés.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} et {extra} autre enregistrement expirent d'ici le {lastDate}, à peu près au même moment. Il est facile d'en oublier un lorsque plusieurs enregistrements sont si rapprochés.} other{{a}, {b} et {extra} autres enregistrements expirent d'ici le {lastDate}, à peu près au même moment. Il est facile d'en oublier un lorsque plusieurs enregistrements sont si rapprochés.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Rien n'expire le jour suivant. Votre prochaine échéance est le {date}.} other{Rien n'expire au cours des {days} prochains jours. Votre prochaine échéance est le {date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{1 de vos enregistrements de la catégorie {category} expire le {date}. Il est facile de passer à côté.} other{{count} de vos enregistrements de la catégorie {category} expirent d'ici le {date}. Il est facile d'en oublier un lorsqu'ils sont regroupés ainsi.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{1 échéance à venir est couverte par un rappel. Rien d'autre ne requiert votre attention.} other{{count} échéances à venir sont couvertes par des rappels. Rien d'autre ne requiert votre attention.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{count} de vos enregistrements de la catégorie {category} expire le {date}. Il est facile de passer à côté.} other{{count} de vos enregistrements de la catégorie {category} expirent d'ici le {date}. Il est facile d'en oublier un lorsqu'ils sont regroupés ainsi.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{{count} échéance à venir est couverte par un rappel. Rien d'autre ne requiert votre attention.} other{{count} échéances à venir sont couvertes par des rappels. Rien d'autre ne requiert votre attention.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Tout est à jour. Rien ne requiert votre attention pour le moment.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Rien n'est urgent pour le moment, mais 1 enregistrement à venir n'a pas encore de rappel.} other{Rien n'est urgent pour le moment, mais {count} enregistrements à venir n'ont pas encore de rappel.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Rien n'est urgent pour le moment, mais {count} enregistrement à venir n'a pas encore de rappel.} other{Rien n'est urgent pour le moment, mais {count} enregistrements à venir n'ont pas encore de rappel.}}",
   "smartInsightCloseExpiriesHeading": "Expirent à peu près au même moment",
   "plansHeadline": "Profitez de tout le potentiel de Vaultara",
   "plansSubhead": "Des enregistrements illimités, vos propres groupes et des rappels configurés exactement comme vous le souhaitez.",
@@ -619,7 +611,7 @@
   "reminderCascadeRemoveStep": "Supprimer",
   "reminderCascadeDuplicate": "Un autre rappel utilise déjà ce jour",
   "reminderCascadeOutOfRange": "Saisissez entre {min} et {max} jours",
-  "reminderCascadeStepLabel": "Rappel {position} : {days, plural, =1{1 jour} other{{days} jours}} avant",
+  "reminderCascadeStepLabel": "Rappel {position} : {days, plural, =1{{days} jour} other{{days} jours}} avant",
   "expiryTimelineNotReady": "Votre frise chronologique apparaîtra dès que vous aurez des enregistrements qui expirent dans quelques mois différents.",
   "verifyEmailResendIn": "Renvoyer dans {seconds} s",
   "verifyEmailSpamHint": "Rien reçu ? Vérifiez votre dossier de courriers indésirables ou spams.",
@@ -628,13 +620,10 @@
   "verifyEmailDiscardBody": "Ce compte n'est pas vérifié. Quitter maintenant le supprimera, et vous pourrez vous inscrire à nouveau avec n'importe quelle adresse e-mail.",
   "verifyEmailDiscardAction": "Abandonner",
   "verifyEmailKeepWaiting": "Continuer d'attendre",
-  "expiringBadge": "{count, plural, =1{1 expire bientôt} other{{count} expirent bientôt}}",
+  "expiringBadge": "{count, plural, =1{{count} expire bientôt} other{{count} expirent bientôt}}",
   "noRecordsToday": "Rien n'expire aujourd'hui",
   "noRecordsTomorrow": "Rien n'expire demain",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} expire aujourd'hui} =1{{recordName} expire demain} other{{recordName} expire dans {days} jours}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, votre {recordName} expire aujourd'hui. L'avez-vous déjà renouvelé ? Mettez à jour sa date d'expiration.} =1{{firstName}, votre {recordName} expire demain. Renouvelez-le maintenant pour éviter qu'il ne soit caduc.} other{{firstName}, votre {recordName} expire le {date}. Le renouveler tôt vous permet de rester couvert.}}",
   "cascadeFinalStepTitle": "Dernier rappel : {recordName}",
-  "cascadeFinalStepBody": "{firstName}, votre {recordName} expire {days, plural, =1{demain} other{dans {days} jours, le {date}}}. C'est votre dernier rappel, renouvelez-le ou mettez à jour sa date.",
   "notificationsTitle": "Notifications",
   "notificationsProfileEnabledSubtitle": "Les rappels arrivent à {time}.",
   "notificationsProfileDisabledSubtitle": "Les notifications sont désactivées.",
@@ -2146,8 +2135,8 @@
   "lifePlanAutoChanged": "Vaultara a vu que cet enregistrement a changé, il est donc marqué comme fait.",
   "lifePlanAutoAdded": "Ajouté après le début de ce plan.",
   "lifePlanProgress": "{done} sur {total} faits",
-  "lifePlanDaysToGo": "{count, plural, =0{Plus que 0 jour} =1{Plus que 1 jour} other{Plus que {count} jours}}",
-  "lifePlanDaysAgo": "{count, plural, =0{Il y a 0 jour} =1{Il y a 1 jour} other{Il y a {count} jours}}",
+  "lifePlanDaysToGo": "{count, plural, =0{Plus que 0 jour} =1{Plus que {count} jour} other{Plus que {count} jours}}",
+  "lifePlanDaysAgo": "{count, plural, =0{Il y a 0 jour} =1{Il y a {count} jour} other{Il y a {count} jours}}",
   "lifePlanAllDone": "Tout est fait. Vous pouvez marquer le plan comme terminé.",
   "lifePlanFinish": "Marquer comme terminé",
   "lifePlanReopen": "Le rouvrir",
@@ -2276,7 +2265,7 @@
   "lifePlanReadAloudUnavailable": "La lecture à voix haute n'est pas disponible sur ce téléphone.",
   "lifePlanProofPack": "Créer un dossier justificatif",
   "lifePlanOpenFamily": "Ouvrir Famille",
-  "lifePlanRemoved": "{count, plural, =1{1 dossier que vous avez supprimé compte comme résilié.} other{{count} dossiers que vous avez supprimés comptent comme résiliés.}}",
+  "lifePlanRemoved": "{count, plural, =1{{count} dossier que vous avez supprimé compte comme résilié.} other{{count} dossiers que vous avez supprimés comptent comme résiliés.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2334,7 +2323,7 @@
   "lostWalletCheckupBody": "Préparez-vous dès maintenant, pour ne rien oublier s'il disparaît.",
   "lostWalletCheckupAllGood": "Tout est prêt. S'il disparaît un jour, vous êtes paré.",
   "lostWalletSetPlaceBody": "Ouvrez une carte ou un document et choisissez où vous le rangez. Faites-le pour votre pièce d'identité, votre permis et vos cartes.",
-  "lostWalletIssuePhotos": "{count, plural, =1{1 élément n'a pas de photo. Une photo accélère le remplacement.} other{{count} éléments n'ont pas de photo. Des photos accélèrent le remplacement.}}",
+  "lostWalletIssuePhotos": "{count, plural, =1{{count} élément n'a pas de photo. Une photo accélère le remplacement.} other{{count} éléments n'ont pas de photo. Des photos accélèrent le remplacement.}}",
   "@lostWalletIssuePhotos": {
     "placeholders": {
       "count": {
@@ -2342,7 +2331,7 @@
       }
     }
   },
-  "lostWalletIssueLines": "{count, plural, =1{1 carte n'a pas de numéro pour carte perdue.} other{{count} cartes n'ont pas de numéro pour carte perdue.}}",
+  "lostWalletIssueLines": "{count, plural, =1{{count} carte n'a pas de numéro pour carte perdue.} other{{count} cartes n'ont pas de numéro pour carte perdue.}}",
   "@lostWalletIssueLines": {
     "placeholders": {
       "count": {
@@ -2442,7 +2431,7 @@
     }
   },
   "lostWalletReportNoCase": "Numéro de plainte : pas encore déclaré",
-  "lostWalletReportCount": "{count, plural, =1{1 élément listé ci-dessous} other{{count} éléments listés ci-dessous}}",
+  "lostWalletReportCount": "{count, plural, =1{{count} élément listé ci-dessous} other{{count} éléments listés ci-dessous}}",
   "@lostWalletReportCount": {
     "placeholders": {
       "count": {
@@ -2477,7 +2466,7 @@
   "tutorialsGroupTravelFamily": "Voyages et famille",
   "tutorialsGroupEmergencies": "Événements de vie et urgences",
   "tutorialsGroupPaid": "Fonctions payantes",
-  "tutorialsSteps": "{count, plural, =1{1 étape} other{{count} étapes}}",
+  "tutorialsSteps": "{count, plural, =1{{count} étape} other{{count} étapes}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2873,5 +2862,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} expire aujourd'hui",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} expire demain",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} expire dans {days} jour} other{{recordName} expire dans {days} jours}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} a expiré",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Un enregistrement verrouillé demande votre attention",
+  "remLockedBody": "Sa date est le {date}. Déverrouillez Vaultara pour voir de quel enregistrement il s'agit.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Votre enregistrement « {recordName} » expire aujourd'hui.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Votre enregistrement « {recordName} » expire demain.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Votre enregistrement « {recordName} » expire le {date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, votre enregistrement « {recordName} » expire aujourd'hui.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, votre enregistrement « {recordName} » expire demain.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, votre enregistrement « {recordName} » expire le {date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "L'enregistrement « {recordName} » de {person} expire aujourd'hui.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "L'enregistrement « {recordName} » de {person} expire demain.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "L'enregistrement « {recordName} » de {person} expire le {date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Votre enregistrement « {recordName} » a expiré le {date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "L'enregistrement « {recordName} » de {person} a expiré le {date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Déjà renouvelé ? Mettez à jour sa date.",
+  "remTipTomorrow": "Renouvelez-le maintenant pour qu'il ne soit pas périmé.",
+  "remTipEarly": "Renouveler tôt vous permet de rester couvert.",
+  "remTipLast": "C'est votre dernier rappel avant l'expiration.",
+  "remTipExpired": "Renouvelez-le, ou mettez à jour sa date si c'est déjà fait.",
+  "remStartBody": "Il est temps de commencer le renouvellement de « {recordName} ». Il expire le {date}, donc commencer maintenant vous laisse largement le temps.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Il est temps de commencer le renouvellement de « {recordName} » de {person}. Il expire le {date}, donc commencer maintenant laisse largement le temps.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Rappels d'expiration",
+  "notifChannelDescription": "Rappels avant l'expiration de vos enregistrements",
+  "notifTestTitle": "Notification de test",
+  "notifTestBody": "Les rappels de Vaultara arrivent comme ceci.",
+  "notifTestAction": "Envoyer une notification de test",
+  "notifTestSubtitle": "Vérifier que les rappels arrivent sur ce téléphone",
+  "notifTestSent": "Test envoyé. Il devrait arriver dans quelques secondes.",
+  "notifAfterExpiryTitle": "Me rappeler après l'expiration",
+  "notifAfterExpirySubtitle": "3 et 14 jours après, s'il n'a pas été renouvelé",
+  "notifWeeklyTitle": "Résumé du lundi",
+  "notifWeeklySubtitle": "Un message le lundi matin quand quelque chose expire dans la semaine",
+  "notifPushSection": "Foyer et mises à jour",
+  "notifHouseholdTitle": "Enregistrements partagés",
+  "notifHouseholdSubtitle": "Quand un enregistrement partagé va bientôt expirer et que personne ne l'a renouvelé",
+  "notifUpdatesTitle": "Mises à jour demandées",
+  "notifUpdatesSubtitle": "Quand quelqu'un envoie les nouvelles informations d'un enregistrement",
+  "notifSecurityNote": "Les alertes de nouvelle connexion à votre compte sont toujours envoyées.",
+  "notifIosHelpTitle": "Vous ne recevez pas les rappels ?",
+  "notifIosHelpSubtitle": "Vérifiez les réglages de votre iPhone",
+  "notifIosHelpStep1": "Ouvrez Réglages, puis Notifications, puis Vaultara, et activez Autoriser les notifications.",
+  "notifIosHelpStep2": "Activez Écran verrouillé, Centre de notifications et Bannières.",
+  "notifIosHelpStep3": "Si vous utilisez un mode de concentration, ajoutez Vaultara aux apps autorisées.",
+  "notifIosHelpStep4": "Ouvrez Vaultara toutes les quelques semaines. L'iPhone ne garde qu'un nombre limité de rappels à l'avance, et ouvrir l'app planifie les suivants.",
+  "homeNextUpEmpty": "Rien n'expire bientôt. Tout est en ordre.",
+  "homeDueSoonChip": "{count, plural, one{{count} à échéance sous 30 jours} other{{count} à échéance sous 30 jours}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Catégories épinglées"
 }

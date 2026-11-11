@@ -360,15 +360,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Ọ dị mma ịhụ gị ọzọ. Vaultara dị njikere mgbe ịchọrọ ịlele ụbọchị na ndekọ gị.';
 
   @override
-  String get summaryAllCaption => 'A na-enyocha ha na Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Agwụla';
-
-  @override
-  String get summaryExpiredCaption => 'Ụbọchị ngwụcha agafeela';
-
-  @override
   String get editorNotes => 'Ndetu';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Hichapụ ndekọ';
-
-  @override
-  String get summaryAllRecordsTitle => 'Ndekọ niile';
 
   @override
   String get noGroupFound => 'Enwebeghị otu ọ bụla';
@@ -829,22 +817,10 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ndekọ $count',
-      one: 'Ndekọ 1',
+      one: 'Ndekọ $count',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Na-abịa';
-
-  @override
-  String get summaryUpcomingCaption => 'N\'ime ụbọchị 30';
-
-  @override
-  String get summaryUrgentTitle => 'Ngwa Ngwa';
-
-  @override
-  String get summaryUrgentCaption => 'N\'ime ụbọchị 7';
 
   @override
   String get profileHeaderTitle => 'Profaịlụ';
@@ -945,7 +921,7 @@ class AppLocalizationsIg extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Ụbọchị $days tupu',
-      one: 'Ụbọchị 1 tupu',
+      one: 'Ụbọchị $days tupu',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsIg extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names na $extra ọzọ na-agwụ taa.',
-      one: '$names na 1 ọzọ na-agwụ taa.',
+      one: '$names na $extra ọzọ na-agwụ taa.',
       zero: '$names na-agwụ taa.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsIg extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b na $extra ndekọ ọzọ na-agwụ tupu $lastDate, ihe fọrọ nke nta ka ọ bụrụ n\'otu oge. Ọ dị mfe ichefu otu mgbe ụfọdụ ndekọ dị nso otu a.',
-      one: '$a, $b na 1 ndekọ ọzọ na-agwụ tupu $lastDate, ihe fọrọ nke nta ka ọ bụrụ n\'otu oge. Ọ dị mfe ichefu otu mgbe ụfọdụ ndekọ dị nso otu a.',
+      one: '$a, $b na $extra ndekọ ọzọ na-agwụ tupu $lastDate, ihe fọrọ nke nta ka ọ bụrụ n\'otu oge. Ọ dị mfe ichefu otu mgbe ụfọdụ ndekọ dị nso otu a.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count n\'ime ndekọ gị na ngalaba $category na-agwụ tupu $date. Ọ dị mfe ichefu otu mgbe a chịkọtara ha otu a.',
-      one: '1 n\'ime ndekọ gị na ngalaba $category na-agwụ na $date. Ọ dị mfe ileghara ya anya.',
+      one: '$count n\'ime ndekọ gị na ngalaba $category na-agwụ na $date. Ọ dị mfe ileghara ya anya.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'E nwere ihe ncheta maka $count ihe na-agwụ n\'ọdịnihu. Ọ dịghị ihe ọzọ chọrọ nlebara anya gị.',
-      one: 'E nwere ihe ncheta maka 1 ihe na-agwụ n\'ọdịnihu. Ọ dịghị ihe ọzọ chọrọ nlebara anya gị.',
+      one: 'E nwere ihe ncheta maka $count ihe na-agwụ n\'ọdịnihu. Ọ dịghị ihe ọzọ chọrọ nlebara anya gị.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ọ dịghị ihe dị ngwa ugbu a, mana $count ndekọ na-abịa n\'ọdịnihu enweghị ihe ncheta doro anya.',
-      one: 'Ọ dịghị ihe dị ngwa ugbu a, mana 1 ndekọ na-abịa n\'ọdịnihu enweghị ihe ncheta doro anya.',
+      one: 'Ọ dịghị ihe dị ngwa ugbu a, mana $count ndekọ na-abịa n\'ọdịnihu enweghị ihe ncheta doro anya.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsIg extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days',
-      one: '1',
+      one: '$days',
     );
     return 'Ncheta $position: Ụbọchị $_temp0 tupu ọ gwụchaa';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count na-agwụ n\'oge na-adịghị anya',
-      one: '1 na-agwụ n\'oge na-adịghị anya',
+      one: '$count na-agwụ n\'oge na-adịghị anya',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsIg extends AppLocalizations {
   String get noRecordsTomorrow => 'Enweghị ihe na-agwụ echi';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName na-agwụ n\'ime ụbọchị $days',
-      one: '$recordName na-agwụ echi',
-      zero: '$recordName na-agwụ taa',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName gị na-agwụ na $date. Imegharị ya n\'oge na-edobe gị na nchekwa.',
-      one: '$firstName, $recordName gị na-agwụ echi. Megharịa ya ugbu a ka ọ ghara ịla n\'iyi.',
-      zero: '$firstName, $recordName gị na-agwụ taa. Ị megharịala ya? Melite ụbọchị njedebe ya.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Ncheta ikpeazụ: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'n\'ime ụbọchị $days, na $date',
-      one: 'echi',
-    );
-    return '$firstName, $recordName gị na-agwụ $_temp0. Nke a bụ ncheta ikpeazụ gị, megharịa ya ma ọ bụ melite ụbọchị ya.';
   }
 
   @override
@@ -1532,7 +1473,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ndekọ $count na-abịa enweghị ego ha ugbu a.',
-      one: 'Ndekọ 1 na-abịa enweghị ego ya ugbu a.',
+      one: 'Ndekọ $count na-abịa enweghị ego ya ugbu a.',
     );
     return '$_temp0';
   }
@@ -1566,7 +1507,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ndekọ $count',
-      one: 'Ndekọ 1',
+      one: 'Ndekọ $count',
       zero: 'Enweghị ndekọ',
     );
     return '$_temp0';
@@ -1622,7 +1563,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ruo mmadụ $count',
-      one: 'Ruo mmadụ 1',
+      one: 'Ruo mmadụ $count',
     );
     return '$_temp0';
   }
@@ -1639,7 +1580,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Tinye ruo mmadụ $count',
-      one: 'Tinye mmadụ 1',
+      one: 'Tinye mmadụ $count',
     );
     return '$_temp0';
   }
@@ -2223,7 +2164,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ndekọ $count',
-      one: 'Ndekọ 1',
+      one: 'Ndekọ $count',
     );
     return '$_temp0';
   }
@@ -2254,7 +2195,7 @@ class AppLocalizationsIg extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Njem ụbọchị $days',
-      one: 'Njem ụbọchị 1',
+      one: 'Njem ụbọchị $days',
     );
     return '$_temp0';
   }
@@ -2327,7 +2268,7 @@ class AppLocalizationsIg extends AppLocalizations {
       months,
       locale: localeName,
       other: 'ọnwa $months',
-      one: 'ọnwa 1',
+      one: 'ọnwa $months',
     );
     return '$name na-agwụ na $date. Ọtụtụ mba chọrọ ka ọ fọdụ $_temp0 mgbe ị lọtara.';
   }
@@ -2343,7 +2284,7 @@ class AppLocalizationsIg extends AppLocalizations {
       days,
       locale: localeName,
       other: 'ụbọchị $days n\'ime njem gị',
-      one: 'ụbọchị 1 n\'ime njem gị',
+      one: 'ụbọchị $days n\'ime njem gị',
       zero: 'ụbọchị ị na-apụ',
     );
     return '$name na-agwụ na $date, $_temp0.';
@@ -2521,7 +2462,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ihe $count chọrọ nlebara anya',
-      one: '1 ihe chọrọ nlebara anya',
+      one: '$count ihe chọrọ nlebara anya',
     );
     return '$_temp0';
   }
@@ -2602,7 +2543,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Akwụkwọ $count chọrọ nlebara anya tupu ị pụọ.',
-      one: '1 akwụkwọ chọrọ nlebara anya tupu ị pụọ.',
+      one: '$count akwụkwọ chọrọ nlebara anya tupu ị pụọ.',
     );
     return '$_temp0';
   }
@@ -2705,7 +2646,7 @@ class AppLocalizationsIg extends AppLocalizations {
       limit,
       locale: localeName,
       other: 'foto $limit',
-      one: 'foto 1',
+      one: 'foto $limit',
     );
     return 'Atụmatụ N\'efu na-ekwe ka ị tinye $_temp0 na ndekọ ọ bụla. Na Premium ị nwere ike itinye ruo $premiumLimit.';
   }
@@ -2741,7 +2682,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Foto $count',
-      one: 'Foto 1',
+      one: 'Foto $count',
     );
     return '$_temp0';
   }
@@ -6738,7 +6679,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ụbọchị $count fọdụrụ',
-      one: 'Ụbọchị 1 fọdụrụ',
+      one: 'Ụbọchị $count fọdụrụ',
     );
     return '$_temp0';
   }
@@ -6749,7 +6690,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ụbọchị $count gara aga',
-      one: 'Ụbọchị 1 gara aga',
+      one: 'Ụbọchị $count gara aga',
     );
     return '$_temp0';
   }
@@ -7109,7 +7050,7 @@ class AppLocalizationsIg extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ndekọ $count i hichapụrụ ka a gụrụ dị ka akagburu.',
-      one: 'Ndekọ 1 i hichapụrụ ka a gụrụ dị ka akagburu.',
+      one: 'Ndekọ $count i hichapụrụ ka a gụrụ dị ka akagburu.',
     );
     return '$_temp0';
   }
@@ -8224,4 +8165,204 @@ class AppLocalizationsIg extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Ihe ncheta: $name na-agwụ na $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName na-agwụ taa';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName na-agwụ echi';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName na-agwụ n\'ime ụbọchị $days',
+      one: '$recordName na-agwụ n\'ime ụbọchị $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName agwụla';
+  }
+
+  @override
+  String get remLockedTitle => 'Ndekọ a kpọchiri akpọchi chọrọ nlebara anya gị';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Ụbọchị ya bụ $date. Mepee Vaultara ka ịhụ ndekọ ọ bụ.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Ndekọ gị \"$recordName\" na-agwụ taa.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Ndekọ gị \"$recordName\" na-agwụ echi.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Ndekọ gị \"$recordName\" na-agwụ na $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, ndekọ gị \"$recordName\" na-agwụ taa.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, ndekọ gị \"$recordName\" na-agwụ echi.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, ndekọ gị \"$recordName\" na-agwụ na $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Ndekọ $person \"$recordName\" na-agwụ taa.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Ndekọ $person \"$recordName\" na-agwụ echi.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Ndekọ $person \"$recordName\" na-agwụ na $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Ndekọ gị \"$recordName\" gwụrụ na $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Ndekọ $person \"$recordName\" gwụrụ na $date.';
+  }
+
+  @override
+  String get remTipToday => 'Ị megharịala ya? Melite ụbọchị ya.';
+
+  @override
+  String get remTipTomorrow => 'Megharịa ya ugbu a ka ọ ghara ịgwụ.';
+
+  @override
+  String get remTipEarly => 'Imegharị n\'oge na-eme ka ị nọrọ n\'udo.';
+
+  @override
+  String get remTipLast => 'Nke a bụ ncheta ikpeazụ tupu ọ gwụ.';
+
+  @override
+  String get remTipExpired => 'Megharịa ya, ma ọ bụ melite ụbọchị ya ma ọ bụrụ na i meela ya.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Oge eruola ịmalite imegharị \"$recordName\". Ọ na-agwụ na $date, ya mere ọ bụrụ na ịmalite ugbu a, ị ga-enwe oge zuru ezu.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Oge eruola ịmalite imegharị \"$recordName\" nke $person. Ọ na-agwụ na $date, ya mere ịmalite ugbu a na-ahapụ oge zuru ezu.';
+  }
+
+  @override
+  String get notifChannelName => 'Ncheta njedebe';
+
+  @override
+  String get notifChannelDescription => 'Ncheta tupu ndekọ gị agwụ';
+
+  @override
+  String get notifTestTitle => 'Ọkwa nnwale';
+
+  @override
+  String get notifTestBody => 'Ncheta Vaultara na-abịa otu a.';
+
+  @override
+  String get notifTestAction => 'Zipu ọkwa nnwale';
+
+  @override
+  String get notifTestSubtitle => 'Lelee na ncheta na-eru ekwentị a';
+
+  @override
+  String get notifTestSent => 'Ezipụla nnwale. O kwesịrị ịbịa n\'ime sekọnd ole na ole.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Chetara m mgbe ndekọ gwụrụ';
+
+  @override
+  String get notifAfterExpirySubtitle => 'Ụbọchị 3 na 14 mgbe nke ahụ gasịrị, ma ọ bụrụ na a megharịghị ya';
+
+  @override
+  String get notifWeeklyTitle => 'Nchịkọta Mọnde';
+
+  @override
+  String get notifWeeklySubtitle => 'Ozi n\'ụtụtụ Mọnde mgbe ihe ga-agwụ n\'izu ahụ';
+
+  @override
+  String get notifPushSection => 'Ezinụlọ na mmelite';
+
+  @override
+  String get notifHouseholdTitle => 'Ndekọ ekesara';
+
+  @override
+  String get notifHouseholdSubtitle => 'Mgbe ndekọ ekesara na-achọ ịgwụ ma ọ dịghị onye megharịrị ya';
+
+  @override
+  String get notifUpdatesTitle => 'Mmelite ị rịọrọ';
+
+  @override
+  String get notifUpdatesSubtitle => 'Mgbe mmadụ zitere nkọwa ọhụrụ nke ndekọ';
+
+  @override
+  String get notifSecurityNote => 'A na-ezipụ ịdọ aka ná ntị gbasara ịbanye ọhụrụ n\'akaụntụ gị mgbe niile.';
+
+  @override
+  String get notifIosHelpTitle => 'Ị naghị enweta ncheta?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Lelee ntọala iPhone gị';
+
+  @override
+  String get notifIosHelpStep1 => 'Mepee Settings, wee Notifications, wee Vaultara, ma gbanye Allow Notifications.';
+
+  @override
+  String get notifIosHelpStep2 => 'Gbanye Lock Screen, Notification Centre na Banners.';
+
+  @override
+  String get notifIosHelpStep3 => 'Ọ bụrụ na ị na-eji Focus, tinye Vaultara na ngwa ọ na-ekwe.';
+
+  @override
+  String get notifIosHelpStep4 => 'Mepee Vaultara kwa izu ole na ole. iPhone na-echekwa naanị ọnụọgụ ncheta dị oke n\'ihu, imepe ngwa ahụ na-ahazi ndị na-esote.';
+
+  @override
+  String get homeNextUpEmpty => 'Ọ dịghị ihe ga-agwụ n\'oge na-adịghị anya. Ihe niile adịla njikere.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ga-eru n\'ime ụbọchị 30',
+      one: '$count ga-eru n\'ime ụbọchị 30',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Ụdị ndị a pịnara';
 }

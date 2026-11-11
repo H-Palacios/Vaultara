@@ -167,9 +167,6 @@
   "homeWelcomeSubtitleFirst": "Siyajabula ukukubona lapha. IVaultara ikusiza ukuhlela izinsuku namarekhodi abalulekile endaweni eyodwa ephephile.",
   "homeWelcomeSubtitleBack": "Siyajabula ukukubona futhi. IVaultara ihlale ilungele uma ufuna ukubuyekeza izinsuku namarekhodi abalulekile.",
   "homeWelcomeTitle": "Siyakwamukela",
-  "summaryAllCaption": "Zilandelwa ku-Vaultara",
-  "summaryExpiredTitle": "Ziphelelwe isikhathi",
-  "summaryExpiredCaption": "Usuku lokuphelelwa isikhathi seludlulile",
   "editorNotes": "Amanothi",
   "editorReminderNone": "Akukho sikhumbuzo",
   "editorReminderOnExpiry": "Ngosuku lokuphela",
@@ -185,7 +182,6 @@
   "addRecord": "Engeza irekhodi",
   "noRecordsYet": "Akukho marekhodi okwamanje.",
   "deleteRecordTitle": "Susa irekhodi",
-  "summaryAllRecordsTitle": "Wonke amarekhodi",
   "noGroupFound": "Awekho amaqembu okwamanje",
   "groupLabel": "{count, plural, one{{count} iqembu} other{{count} amaqembu}}",
   "recordsLabel": "{count, plural, one{{count} irekhodi} other{{count} amarekhodi}}",
@@ -429,7 +425,7 @@
   "addNotesHint": "Engeza amanothi (okuzithandela)",
   "expiryTimelineTitle": "Uhlu lwesikhathi sokuphelelwa",
   "expiryTimelineSubtitle": "Thepha inyanga ukubona amarekhodi aphelelwa kuleyo nyanga",
-  "expiryTimelineDetailCount": "{count, plural, =1{1 irekhodi} other{{count} amarekhodi}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{{count} irekhodi} other{{count} amarekhodi}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -437,10 +433,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Eziza",
-  "summaryUpcomingCaption": "Phakathi kwezinsuku ezingu-30",
-  "summaryUrgentTitle": "Ngokushesha",
-  "summaryUrgentCaption": "Phakathi kwezinsuku ezingu-7",
   "profileHeaderTitle": "Iphrofayela",
   "profileTutorialsTitle": "Izifundo",
   "profileTutorialsSubtitle": "Phequlula Izifundo Zohlelo Lokusebenza",
@@ -472,7 +464,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Alukho isikhumbuzo",
   "reminderOnExpiry": "Osukwini lokuphelelwa",
-  "reminderDaysBefore": "{days, plural, one{Usuku 1 ngaphambi} other{Izinsuku ezingu-{days} ngaphambi}}",
+  "reminderDaysBefore": "{days, plural, one{Usuku {days} ngaphambi} other{Izinsuku ezingu-{days} ngaphambi}}",
   "reminderCustomDaysTitle": "Faka izinsuku ezizakho",
   "reminderCascadeTitle": "Izikhumbuzo ezilandelanayo",
   "reminderCascadeSubtitle": "Thola izaziso eziningi ngaphambi kokuba irekhodi iphelelwe",
@@ -503,16 +495,16 @@
   "smartInsightNoRecordsHeading": "Faka Irekhodi Lakho Lokuqala",
   "smartInsightNoRecordsBody": "Qala ukulandelela amarekhodi akho, iVaultara izobonisa imibono ehlakaniphile lapha.",
   "smartInsightExpiresTodaySingleBody": "I-{name} iphelelwa yisikhathi namuhla. Uma usuyivuselele, buyekeza usuku lapha.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ziphelelwa yisikhathi namuhla.} =1{{names} kanye nenye e-1 ziphelelwa yisikhathi namuhla.} other{{names} kanye nezinye ezingu-{extra} ziphelelwa yisikhathi namuhla.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} ziphelelwa yisikhathi namuhla.} =1{{names} kanye nenye e-{extra} ziphelelwa yisikhathi namuhla.} other{{names} kanye nezinye ezingu-{extra} ziphelelwa yisikhathi namuhla.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{I-{name} iphelelwa yisikhathi kusasa futhi ayinaso isikhumbuzo. Setha esisodwa ukuze ungakhohlwa.} other{I-{name} iphelelwa yisikhathi ngomhlaka-{date} futhi ayinaso isikhumbuzo. Setha esisodwa ukuze ungakhohlwa.}}",
   "smartInsightCloseExpiriesBodyTwo": "I-{a} iphelelwa ngomhlaka-{dateA} bese i-{b} iphelelwa ngomhlaka-{dateB}, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma zombini ziseduze kanje.",
   "smartInsightCloseExpiriesBodyThree": "I-{a}, i-{b} kanye ne-{c} zonke ziphelelwa yisikhathi ngomhlaka-{lastDate}, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma ezimbalwa ziseduze kanje.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{I-{a}, i-{b} kanye nerekhodi eli-1 ngaphezulu ziphelelwa yisikhathi ngomhlaka-{lastDate}, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma ezimbalwa ziseduze kanje.} other{I-{a}, i-{b} kanye namanye amarekhodi angu-{extra} ngaphezulu ziphelelwa yisikhathi ngomhlaka-{lastDate}, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma ezimbalwa ziseduze kanje.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{I-{a}, i-{b} kanye nerekhodi eli-{extra} ngaphezulu ziphelelwa yisikhathi ngomhlaka-{lastDate}, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma ezimbalwa ziseduze kanje.} other{I-{a}, i-{b} kanye namanye amarekhodi angu-{extra} ngaphezulu ziphelelwa yisikhathi ngomhlaka-{lastDate}, cishe ngesikhathi esifanayo. Kulula ukukhohlwa eyodwa uma ezimbalwa ziseduze kanje.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Akukho okulandelayo okuphelelwa yisikhathi kusasa. Okulandelayo kungomhlaka-{date}.} other{Akukho okuphelelwa yisikhathi ezinsukwini ezingu-{days} ezizayo. Okulandelayo kungomhlaka-{date}.}}",
-  "smartInsightClusterBody": "{count, plural, =1{Eli-1 kwamarekhodi akho e-{category} liphelelwa yisikhathi ngomhlaka-{date}. Kulula ukungalinaki.} other{Azi-{count} kwamarekhodi akho e-{category} ziphelelwa yisikhathi ngomhlaka-{date}. Kulula ukukhohlwa eyodwa uma zihlelwe ndawonye kanje.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Irekhodi eli-1 elizayo lisekelwe yisikhumbuzo. Akukho okunye okudinga ukunakwa nguwe.} other{Amarekhodi azayo angu-{count} asekelwe yizikhumbuzo. Akukho okunye okudinga ukunakwa nguwe.}}",
+  "smartInsightClusterBody": "{count, plural, =1{Eli-{count} kwamarekhodi akho e-{category} liphelelwa yisikhathi ngomhlaka-{date}. Kulula ukungalinaki.} other{Azi-{count} kwamarekhodi akho e-{category} ziphelelwa yisikhathi ngomhlaka-{date}. Kulula ukukhohlwa eyodwa uma zihlelwe ndawonye kanje.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Irekhodi eli-{count} elizayo lisekelwe yisikhumbuzo. Akukho okunye okudinga ukunakwa nguwe.} other{Amarekhodi azayo angu-{count} asekelwe yizikhumbuzo. Akukho okunye okudinga ukunakwa nguwe.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Konke kusezingeni elifanele. Akukho okudinga ukunakwa nguwe njengamanje.",
-  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Akukho okuphuthumayo njengamanje, kodwa irekhodi eli-1 elizayo alikabi naso isikhumbuzo.} other{Akukho okuphuthumayo njengamanje, kodwa amarekhodi azayo angu-{count} awakabi nazo izikhumbuzo.}}",
+  "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Akukho okuphuthumayo njengamanje, kodwa irekhodi eli-{count} elizayo alikabi naso isikhumbuzo.} other{Akukho okuphuthumayo njengamanje, kodwa amarekhodi azayo angu-{count} awakabi nazo izikhumbuzo.}}",
   "smartInsightCloseExpiriesHeading": "Ziphelelwa yisikhathi cishe ngesikhathi esifanayo",
   "plansHeadline": "Thola i-Vaultara egcwele",
   "plansSubhead": "Amarekhodi angenamkhawulo, amaqembu akho, nezikhumbuzo ezihlelwe ngendlela ofuna ngayo.",
@@ -608,13 +600,10 @@
   "verifyEmailDiscardBody": "Le akhawunti ayikaqinisekiswa. Ukuhamba manje kuzoyisusa, futhi ungaphinda ubhalise nganoma yiliphi ikheli le-imeyili.",
   "verifyEmailDiscardAction": "Lahlana nayo",
   "verifyEmailKeepWaiting": "Qhubeka ulindile",
-  "expiringBadge": "{count, plural, =1{1 okuphelelwa yisikhathi maduze} other{{count} okuphelelwa yisikhathi maduze}}",
+  "expiringBadge": "{count, plural, =1{{count} okuphelelwa yisikhathi maduze} other{{count} okuphelelwa yisikhathi maduze}}",
   "noRecordsToday": "Akukho okuphelelwa yisikhathi namhlanje",
   "noRecordsTomorrow": "Akukho okuphelelwa yisikhathi kusasa",
-  "cascadeStepTitle": "{days, plural, =0{Irekhodi le-{recordName} liphelelwa yisikhathi namhlanje} =1{Irekhodi le-{recordName} liphelelwa yisikhathi kusasa} other{Irekhodi le-{recordName} liphelelwa yisikhathi ezinsukwini ezi-{days}}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, irekhodi lakho le-{recordName} liphelelwa yisikhathi namhlanje. Usulivuselele vele? Buyekeza usuku lwalo lokuphelelwa yisikhathi.} =1{{firstName}, irekhodi lakho le-{recordName} liphelelwa yisikhathi kusasa. Livuselele manje ukuze lingayeki ukusebenza.} other{{firstName}, irekhodi lakho le-{recordName} liphelelwa yisikhathi ngomhlaka-{date}. Ukulivuselela kusenesikhathi kuqinisekisa ukuthi lihlale lisebenza.}}",
   "cascadeFinalStepTitle": "Isikhumbuzo sokugcina: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, irekhodi lakho le-{recordName} liphelelwa yisikhathi {days, plural, =1{kusasa} other{ezinsukwini ezi-{days}, ngomhlaka-{date}}}. Lesi isikhumbuzo sakho sokugcina, livuselele noma ubuyekeze usuku lwalo.",
   "notificationsTitle": "Izaziso",
   "notificationsProfileEnabledSubtitle": "Izikhumbuzo zifika ngo-{time}.",
   "notificationsProfileDisabledSubtitle": "Izaziso zivaliwe.",
@@ -1341,7 +1330,7 @@
   "photoLockTurnOn": "Vula izithombe ezifihliwe",
   "photoLockStatusOn": "Izithombe ezifihliwe zivuliwe",
   "photoLockStatusOnBody": "Izithombe ezintsha zifihlwa kule foni ngaphambi kokulayishwa.",
-  "photoLockPendingTitle": "{count, plural, one{isithombe esi-1 asikafihlwa okwamanje} other{izithombe ezingu-{count} azikafihlwa okwamanje}}",
+  "photoLockPendingTitle": "{count, plural, one{isithombe esi-{count} asikafihlwa okwamanje} other{izithombe ezingu-{count} azikafihlwa okwamanje}}",
   "photoLockPendingBody": "Izithombe owazengeza ngaphambi kokuvula lokhu zisagcinwa ngendlela evamile.",
   "photoLockEncryptExisting": "Fihla izithombe zami ezikhona",
   "photoLockKeepOpen": "Gcina i-Vaultara ivuliwe kuze kuphele lokhu.",
@@ -1387,8 +1376,8 @@
   "photoLockUnlocked": "Izithombe zakho zivuliwe kule foni.",
   "photoLockInvalidFormat": "Lokhu akufani nokhiye wokubuyisela. Hlola uhlamvu ngalunye bese uzama futhi.",
   "photoLockWrongKey": "Lolu khiye lokubuyisela alufani. Lwehlole bese uzama futhi.",
-  "photoLockWaitSeconds": "{seconds, plural, one{Imizamo eminingi kakhulu. Sicela ulinde isekhondi eli-1 bese uzama futhi.} other{Imizamo eminingi kakhulu. Sicela ulinde amasekhondi angu-{seconds} bese uzama futhi.}}",
-  "photoLockWaitMinutes": "{minutes, plural, one{Imizamo eminingi kakhulu. Sicela ulinde iminithi eli-1 bese uzama futhi.} other{Imizamo eminingi kakhulu. Sicela ulinde amaminithi angu-{minutes} bese uzama futhi.}}",
+  "photoLockWaitSeconds": "{seconds, plural, one{Imizamo eminingi kakhulu. Sicela ulinde isekhondi eli-{seconds} bese uzama futhi.} other{Imizamo eminingi kakhulu. Sicela ulinde amasekhondi angu-{seconds} bese uzama futhi.}}",
+  "photoLockWaitMinutes": "{minutes, plural, one{Imizamo eminingi kakhulu. Sicela ulinde iminithi eli-{minutes} bese uzama futhi.} other{Imizamo eminingi kakhulu. Sicela ulinde amaminithi angu-{minutes} bese uzama futhi.}}",
   "photoLockOffline": "Asikwazanga ukufinyelela i-Vaultara. Hlola uxhumano lwakho bese uzama futhi.",
   "photoLockNotSetUp": "Izithombe ezifihliwe azivuliwe ku-akhawunti yakho.",
   "photoLockUnlockFailed": "Kukhona okungahambanga kahle. Zama futhi.",
@@ -1644,7 +1633,7 @@
   "dailyDigestSwitchSubtitle": "Thola isaziso esisodwa ngesikhathi sesikhumbuzo esidwebula konke okufanele kwenziwe ngalolo suku.",
   "dailyDigestTurnedOn": "Izikhumbuzo zakho manje ziza njengesifinyezo esisodwa sansuku zonke.",
   "dailyDigestTurnedOff": "Izikhumbuzo ezihlukene zerekhodi ngalinye zibuyile.",
-  "dailyDigestTitle": "{count, plural, one{Irekhodi eli-1 lidinga ukunaka kwakho} other{Amarekhodi angu-{count} adinga ukunaka kwakho}}",
+  "dailyDigestTitle": "{count, plural, one{Irekhodi eli-{count} lidinga ukunaka kwakho} other{Amarekhodi angu-{count} adinga ukunaka kwakho}}",
   "dailyDigestBody": "Okuzayo: {names}.",
   "dailyDigestBodyMore": "Okuzayo: {names} nokunye okungu-{count}.",
   "dailyDigestLockedRecord": "irekhodi elivaliwe",
@@ -2126,8 +2115,8 @@
   "lifePlanAutoChanged": "I-Vaultara ibone leli rekhodi lishintsha, ngakho limakwe njengeliqediwe.",
   "lifePlanAutoAdded": "Kwengezwe ngemva kokuqala lolu hlelo.",
   "lifePlanProgress": "{done} kwezingu-{total} kwenziwe",
-  "lifePlanDaysToGo": "{count, plural, =1{Kusele usuku olu-1} other{Kusele izinsuku ezingu-{count}}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Usuku olu-1 olwedlule} other{Izinsuku ezingu-{count} ezedlule}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Kusele usuku olu-{count}} other{Kusele izinsuku ezingu-{count}}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Usuku olu-{count} olwedlule} other{Izinsuku ezingu-{count} ezedlule}}",
   "lifePlanAllDone": "Konke kwenziwe. Ungamaka uhlelo njengoluqediwe.",
   "lifePlanFinish": "Maka njengoluqediwe",
   "lifePlanReopen": "Vula futhi",
@@ -2256,7 +2245,7 @@
   "lifePlanReadAloudUnavailable": "Ukufunda ngokuzwakalayo akutholakali kule foni.",
   "lifePlanProofPack": "Yenza iphakheji lobufakazi",
   "lifePlanOpenFamily": "Vula Umndeni",
-  "lifePlanRemoved": "{count, plural, =1{Irekhodi eli-1 olisusile libalwa njengelikhanseliwe.} other{Amarekhodi angu-{count} owasusile abalwa njengakhanseliwe.}}",
+  "lifePlanRemoved": "{count, plural, =1{Irekhodi eli-{count} olisusile libalwa njengelikhanseliwe.} other{Amarekhodi angu-{count} owasusile abalwa njengakhanseliwe.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2457,7 +2446,7 @@
   "tutorialsGroupTravelFamily": "Ukuhamba nomndeni",
   "tutorialsGroupEmergencies": "Izehlakalo zempilo nezimo eziphuthumayo",
   "tutorialsGroupPaid": "Izici ezikhokhelwayo",
-  "tutorialsSteps": "{count, plural, =1{Isinyathelo esingu-1} other{Izinyathelo ezingu-{count}}}",
+  "tutorialsSteps": "{count, plural, =1{Isinyathelo esingu-{count}} other{Izinyathelo ezingu-{count}}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2853,5 +2842,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "I-{recordName} iphelelwa yisikhathi namuhla",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "I-{recordName} iphelelwa yisikhathi kusasa",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{I-{recordName} iphelelwa yisikhathi osukwini olu-{days}} other{I-{recordName} iphelelwa yisikhathi ezinsukwini ezi-{days}}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "I-{recordName} iphelelwe yisikhathi",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Irekhodi elivaliwe lidinga ukunaka kwakho",
+  "remLockedBody": "Usuku lwalo lungu-{date}. Vula i-Vaultara ukuze ubone ukuthi yiliphi irekhodi.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Irekhodi lakho \"{recordName}\" liphelelwa yisikhathi namuhla.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Irekhodi lakho \"{recordName}\" liphelelwa yisikhathi kusasa.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Irekhodi lakho \"{recordName}\" liphelelwa yisikhathi ngomhlaka-{date}.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, irekhodi lakho \"{recordName}\" liphelelwa yisikhathi namuhla.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, irekhodi lakho \"{recordName}\" liphelelwa yisikhathi kusasa.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, irekhodi lakho \"{recordName}\" liphelelwa yisikhathi ngomhlaka-{date}.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "Irekhodi lika-{person} \"{recordName}\" liphelelwa yisikhathi namuhla.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "Irekhodi lika-{person} \"{recordName}\" liphelelwa yisikhathi kusasa.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "Irekhodi lika-{person} \"{recordName}\" liphelelwa yisikhathi ngomhlaka-{date}.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Irekhodi lakho \"{recordName}\" liphelelwe yisikhathi ngomhlaka-{date}.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "Irekhodi lika-{person} \"{recordName}\" liphelelwe yisikhathi ngomhlaka-{date}.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Usulivuselelile? Buyekeza usuku lwalo.",
+  "remTipTomorrow": "Livuselele manje ukuze lingaphelelwa yisikhathi.",
+  "remTipEarly": "Ukuvuselela kusenesikhathi kukugcina uvikelekile.",
+  "remTipLast": "Lesi yisikhumbuzo sakho sokugcina ngaphambi kokuthi liphelelwe yisikhathi.",
+  "remTipExpired": "Livuselele, noma ubuyekeze usuku lwalo uma usukwenzile.",
+  "remStartBody": "Yisikhathi sokuqala ukuvuselela i-\"{recordName}\". Liphelelwa yisikhathi ngomhlaka-{date}, ngakho uma uqala manje uzoba nesikhathi esanele.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "Yisikhathi sokuqala ukuvuselela i-\"{recordName}\" lika-{person}. Liphelelwa yisikhathi ngomhlaka-{date}, ngakho ukuqala manje kushiya isikhathi esanele.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Izikhumbuzo zokuphelelwa yisikhathi",
+  "notifChannelDescription": "Izikhumbuzo ngaphambi kokuthi amarekhodi akho aphelelwe yisikhathi",
+  "notifTestTitle": "Isaziso sokuhlola",
+  "notifTestBody": "Izikhumbuzo ze-Vaultara zifika kanje.",
+  "notifTestAction": "Thumela isaziso sokuhlola",
+  "notifTestSubtitle": "Hlola ukuthi izikhumbuzo ziyafika kule foni",
+  "notifTestSent": "Ukuhlola kuthunyelwe. Kufanele kufike emizuzwaneni embalwa.",
+  "notifAfterExpiryTitle": "Ngikhumbuze ngemva kokuba irekhodi liphelelwe yisikhathi",
+  "notifAfterExpirySubtitle": "Izinsuku ezi-3 nezi-14 ngemva kwalokho, uma lingavuselelwanga",
+  "notifWeeklyTitle": "Isifinyezo sangoMsombuluko",
+  "notifWeeklySubtitle": "Umlayezo ngoMsombuluko ekuseni uma okuthile kuphelelwa yisikhathi ngalelo sonto",
+  "notifPushSection": "Umndeni nezibuyekezo",
+  "notifHouseholdTitle": "Amarekhodi abiwe",
+  "notifHouseholdSubtitle": "Uma irekhodi elabiwe selizophelelwa yisikhathi futhi kungekho olivuselele",
+  "notifUpdatesTitle": "Izibuyekezo ozicelile",
+  "notifUpdatesSubtitle": "Uma othile ethumela imininingwane emisha yerekhodi",
+  "notifSecurityNote": "Izexwayiso mayelana nokungena okusha ku-akhawunti yakho zihlala zithunyelwa.",
+  "notifIosHelpTitle": "Awutholi izikhumbuzo?",
+  "notifIosHelpSubtitle": "Hlola izilungiselelo ze-iPhone yakho",
+  "notifIosHelpStep1": "Vula iSettings, bese iNotifications, bese iVaultara, bese uvula iAllow Notifications.",
+  "notifIosHelpStep2": "Vula iLock Screen, iNotification Centre namaBanners.",
+  "notifIosHelpStep3": "Uma usebenzisa iFocus, engeza iVaultara kuma-app awavumelayo.",
+  "notifIosHelpStep4": "Vula iVaultara njalo emva kwamasonto ambalwa. I-iPhone igcina inani elilinganiselwe lezikhumbuzo ezizayo kuphela, futhi ukuvula i-app kuhlela ezilandelayo.",
+  "homeNextUpEmpty": "Akukho okuphelelwa yisikhathi maduze. Konke kulungile.",
+  "homeDueSoonChip": "{count, plural, one{{count} kufanele ezinsukwini ezingu-30} other{{count} kufanele ezinsukwini ezingu-30}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Izigaba eziphiniwe"
 }

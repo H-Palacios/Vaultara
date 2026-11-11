@@ -360,15 +360,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'ನಿಮ್ಮನ್ನು ಮತ್ತೆ ನೋಡಿ ಸಂತೋಷವಾಯಿತು. ನಿಮ್ಮ ಪ್ರಮುಖ ದಿನಾಂಕಗಳು ಮತ್ತು ದಾಖಲೆಗಳನ್ನು ವಿಮರ್ಶಿಸಲು ಬಯಸಿದಾಗಲೆಲ್ಲಾ Vaultara ಇಲ್ಲಿದೆ.';
 
   @override
-  String get summaryAllCaption => 'Vaultara ನಲ್ಲಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಲಾಗಿದೆ';
-
-  @override
-  String get summaryExpiredTitle => 'ಮುಕ್ತಾಯಗೊಂಡವು';
-
-  @override
-  String get summaryExpiredCaption => 'ಮುಕ್ತಾಯ ದಿನಾಂಕ ಕಳೆದಿದೆ';
-
-  @override
   String get editorNotes => 'ಟಿಪ್ಪಣಿಗಳು';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'ದಾಖಲೆ ಅಳಿಸಿ';
-
-  @override
-  String get summaryAllRecordsTitle => 'ಎಲ್ಲಾ ದಾಖಲೆಗಳು';
 
   @override
   String get noGroupFound => 'ಇನ್ನೂ ಯಾವುದೇ ಗುಂಪುಗಳಿಲ್ಲ';
@@ -833,18 +821,6 @@ class AppLocalizationsKn extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'ಮುಂಬರುವವು';
-
-  @override
-  String get summaryUpcomingCaption => '30 ದಿನಗಳೊಳಗೆ';
-
-  @override
-  String get summaryUrgentTitle => 'ತುರ್ತು';
-
-  @override
-  String get summaryUrgentCaption => '7 ದಿನಗಳೊಳಗೆ';
 
   @override
   String get profileHeaderTitle => 'ಪ್ರೊಫೈಲ್';
@@ -1301,43 +1277,8 @@ class AppLocalizationsKn extends AppLocalizations {
   String get noRecordsTomorrow => 'ನಾಳೆ ಯಾವುದೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದಿಲ್ಲ';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName $days ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ',
-      one: '$recordName $days ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ',
-      zero: '$recordName ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, ನಿಮ್ಮ $recordName $date ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ. ಮೊದಲೇ ನವೀಕರಿಸಿದರೆ ನೀವು ನಿಶ್ಚಿಂತರಾಗಿರಬಹುದು.',
-      one: '$firstName, ನಿಮ್ಮ $recordName $date ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ. ಮೊದಲೇ ನವೀಕರಿಸಿದರೆ ನೀವು ನಿಶ್ಚಿಂತರಾಗಿರಬಹುದು.',
-      zero: '$firstName, ನಿಮ್ಮ $recordName ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ. ಈಗಾಗಲೇ ನವೀಕರಿಸಿದ್ದೀರಾ? ಅದರ ಮುಕ್ತಾಯ ದಿನಾಂಕವನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'ಕೊನೆಯ ರಿಮೈಂಡರ್: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days ದಿನಗಳಲ್ಲಿ, $date ರಂದು',
-      one: '$days ದಿನಗಳಲ್ಲಿ, $date ರಂದು',
-    );
-    return '$firstName, ನಿಮ್ಮ $recordName $_temp0 ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ. ಇದು ನಿಮ್ಮ ಕೊನೆಯ ರಿಮೈಂಡರ್, ಅದನ್ನು ನವೀಕರಿಸಿ ಅಥವಾ ಅದರ ದಿನಾಂಕವನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ.';
   }
 
   @override
@@ -6789,7 +6730,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ಇನ್ನೂ $count ದಿನಗಳು',
-      one: 'ಇನ್ನೂ 1 ದಿನ',
+      one: 'ಇನ್ನೂ $count ದಿನ',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ದಿನಗಳ ಹಿಂದೆ',
-      one: '1 ದಿನದ ಹಿಂದೆ',
+      one: '$count ದಿನದ ಹಿಂದೆ',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsKn extends AppLocalizations {
       count,
       locale: localeName,
       other: 'ನೀವು ಅಳಿಸಿದ $count ದಾಖಲೆಗಳನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.',
-      one: 'ನೀವು ಅಳಿಸಿದ 1 ದಾಖಲೆಯನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.',
+      one: 'ನೀವು ಅಳಿಸಿದ $count ದಾಖಲೆಯನ್ನು ರದ್ದು ಎಂದು ಎಣಿಸಲಾಗುತ್ತದೆ.',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsKn extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'ಜ್ಞಾಪನೆ: $name ಅವಧಿ $date ರಂದು ಮುಗಿಯುತ್ತದೆ';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName ನಾಳೆ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName $days ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ',
+      one: '$recordName $days ದಿನದಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName ಮುಕ್ತಾಯಗೊಂಡಿದೆ';
+  }
+
+  @override
+  String get remLockedTitle => 'ಲಾಕ್ ಮಾಡಿದ ದಾಖಲೆಗೆ ನಿಮ್ಮ ಗಮನ ಬೇಕು';
+
+  @override
+  String remLockedBody(String date) {
+    return 'ಅದರ ದಿನಾಂಕ $date. ಯಾವ ದಾಖಲೆ ಎಂದು ನೋಡಲು Vaultara ಅನ್‌ಲಾಕ್ ಮಾಡಿ.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'ನಿಮ್ಮ \"$recordName\" ದಾಖಲೆ ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'ನಿಮ್ಮ \"$recordName\" ದಾಖಲೆ ನಾಳೆ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'ನಿಮ್ಮ \"$recordName\" ದಾಖಲೆ $date ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, ನಿಮ್ಮ \"$recordName\" ದಾಖಲೆ ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, ನಿಮ್ಮ \"$recordName\" ದಾಖಲೆ ನಾಳೆ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, ನಿಮ್ಮ \"$recordName\" ದಾಖಲೆ $date ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: \"$recordName\" ದಾಖಲೆ ಇಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: \"$recordName\" ದಾಖಲೆ ನಾಳೆ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" ದಾಖಲೆ $date ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'ನಿಮ್ಮ \"$recordName\" ದಾಖಲೆ $date ರಂದು ಮುಕ್ತಾಯಗೊಂಡಿತು.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: \"$recordName\" ದಾಖಲೆ $date ರಂದು ಮುಕ್ತಾಯಗೊಂಡಿತು.';
+  }
+
+  @override
+  String get remTipToday => 'ಈಗಾಗಲೇ ನವೀಕರಿಸಿದ್ದೀರಾ? ಅದರ ದಿನಾಂಕವನ್ನು ನವೀಕರಿಸಿ.';
+
+  @override
+  String get remTipTomorrow => 'ಮುಕ್ತಾಯವಾಗದಂತೆ ಈಗಲೇ ನವೀಕರಿಸಿ.';
+
+  @override
+  String get remTipEarly => 'ಬೇಗ ನವೀಕರಿಸುವುದು ನಿಮ್ಮನ್ನು ಸುರಕ್ಷಿತವಾಗಿರಿಸುತ್ತದೆ.';
+
+  @override
+  String get remTipLast => 'ಮುಕ್ತಾಯದ ಮೊದಲು ಇದು ನಿಮ್ಮ ಕೊನೆಯ ಜ್ಞಾಪನೆ.';
+
+  @override
+  String get remTipExpired => 'ನವೀಕರಿಸಿ, ಅಥವಾ ಈಗಾಗಲೇ ಮಾಡಿದ್ದರೆ ದಿನಾಂಕವನ್ನು ನವೀಕರಿಸಿ.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" ನವೀಕರಣ ಆರಂಭಿಸುವ ಸಮಯ ಬಂದಿದೆ. ಅದು $date ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ, ಆದ್ದರಿಂದ ಈಗ ಆರಂಭಿಸಿದರೆ ನಿಮಗೆ ಸಾಕಷ್ಟು ಸಮಯವಿರುತ್ತದೆ.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) ನವೀಕರಣ ಆರಂಭಿಸುವ ಸಮಯ ಬಂದಿದೆ. ಅದು $date ರಂದು ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತದೆ, ಆದ್ದರಿಂದ ಈಗ ಆರಂಭಿಸಿದರೆ ಸಾಕಷ್ಟು ಸಮಯವಿರುತ್ತದೆ.';
+  }
+
+  @override
+  String get notifChannelName => 'ಮುಕ್ತಾಯ ಜ್ಞಾಪನೆಗಳು';
+
+  @override
+  String get notifChannelDescription => 'ನಿಮ್ಮ ದಾಖಲೆಗಳು ಮುಕ್ತಾಯಗೊಳ್ಳುವ ಮೊದಲು ಜ್ಞಾಪನೆಗಳು';
+
+  @override
+  String get notifTestTitle => 'ಪರೀಕ್ಷಾ ಅಧಿಸೂಚನೆ';
+
+  @override
+  String get notifTestBody => 'Vaultara ಜ್ಞಾಪನೆಗಳು ಹೀಗೆ ಬರುತ್ತವೆ.';
+
+  @override
+  String get notifTestAction => 'ಪರೀಕ್ಷಾ ಅಧಿಸೂಚನೆ ಕಳುಹಿಸಿ';
+
+  @override
+  String get notifTestSubtitle => 'ಜ್ಞಾಪನೆಗಳು ಈ ಫೋನ್‌ಗೆ ತಲುಪುತ್ತವೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ';
+
+  @override
+  String get notifTestSent => 'ಪರೀಕ್ಷೆ ಕಳುಹಿಸಲಾಗಿದೆ. ಕೆಲವು ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಬರಬೇಕು.';
+
+  @override
+  String get notifAfterExpiryTitle => 'ದಾಖಲೆ ಮುಕ್ತಾಯಗೊಂಡ ನಂತರ ನೆನಪಿಸಿ';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 ಮತ್ತು 14 ದಿನಗಳ ನಂತರ, ನವೀಕರಿಸದಿದ್ದರೆ';
+
+  @override
+  String get notifWeeklyTitle => 'ಸೋಮವಾರದ ಸಾರಾಂಶ';
+
+  @override
+  String get notifWeeklySubtitle => 'ಆ ವಾರ ಏನಾದರೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವಾಗ ಸೋಮವಾರ ಬೆಳಿಗ್ಗೆ ಒಂದು ಸಂದೇಶ';
+
+  @override
+  String get notifPushSection => 'ಕುಟುಂಬ ಮತ್ತು ಅಪ್‌ಡೇಟ್‌ಗಳು';
+
+  @override
+  String get notifHouseholdTitle => 'ಹಂಚಿದ ದಾಖಲೆಗಳು';
+
+  @override
+  String get notifHouseholdSubtitle => 'ಹಂಚಿದ ದಾಖಲೆ ಮುಕ್ತಾಯಕ್ಕೆ ಹತ್ತಿರವಿದ್ದು ಯಾರೂ ನವೀಕರಿಸದಿದ್ದಾಗ';
+
+  @override
+  String get notifUpdatesTitle => 'ನೀವು ಕೇಳಿದ ಅಪ್‌ಡೇಟ್‌ಗಳು';
+
+  @override
+  String get notifUpdatesSubtitle => 'ಯಾರಾದರೂ ದಾಖಲೆಯ ಹೊಸ ವಿವರಗಳನ್ನು ಕಳುಹಿಸಿದಾಗ';
+
+  @override
+  String get notifSecurityNote => 'ನಿಮ್ಮ ಖಾತೆಗೆ ಹೊಸ ಸೈನ್-ಇನ್‌ಗಳ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಯಾವಾಗಲೂ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get notifIosHelpTitle => 'ಜ್ಞಾಪನೆಗಳು ಬರುತ್ತಿಲ್ಲವೇ?';
+
+  @override
+  String get notifIosHelpSubtitle => 'ನಿಮ್ಮ iPhone ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ';
+
+  @override
+  String get notifIosHelpStep1 => 'ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ನಂತರ ಅಧಿಸೂಚನೆಗಳು, ನಂತರ Vaultara ತೆರೆಯಿರಿ, ಮತ್ತು ಅಧಿಸೂಚನೆಗಳನ್ನು ಅನುಮತಿಸಿ ಆನ್ ಮಾಡಿ.';
+
+  @override
+  String get notifIosHelpStep2 => 'ಲಾಕ್ ಸ್ಕ್ರೀನ್, ಅಧಿಸೂಚನಾ ಕೇಂದ್ರ ಮತ್ತು ಬ್ಯಾನರ್‌ಗಳನ್ನು ಆನ್ ಮಾಡಿ.';
+
+  @override
+  String get notifIosHelpStep3 => 'ನೀವು ಫೋಕಸ್ ಬಳಸಿದರೆ, ಅನುಮತಿಸಿದ ಆ್ಯಪ್‌ಗಳಿಗೆ Vaultara ಸೇರಿಸಿ.';
+
+  @override
+  String get notifIosHelpStep4 => 'ಕೆಲವು ವಾರಗಳಿಗೊಮ್ಮೆ Vaultara ತೆರೆಯಿರಿ. iPhone ಮುಂದಿನ ಸೀಮಿತ ಸಂಖ್ಯೆಯ ಜ್ಞಾಪನೆಗಳನ್ನು ಮಾತ್ರ ಇಡುತ್ತದೆ, ಮತ್ತು ಆ್ಯಪ್ ತೆರೆದಾಗ ಮುಂದಿನವು ನಿಗದಿಯಾಗುತ್ತವೆ.';
+
+  @override
+  String get homeNextUpEmpty => 'ಶೀಘ್ರದಲ್ಲಿ ಯಾವುದೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದಿಲ್ಲ. ಎಲ್ಲವೂ ಸಿದ್ಧವಾಗಿದೆ.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 ದಿನಗಳಲ್ಲಿ $count ಬಾಕಿ',
+      one: '30 ದಿನಗಳಲ್ಲಿ $count ಬಾಕಿ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'ಪಿನ್ ಮಾಡಿದ ವರ್ಗಗಳು';
 }

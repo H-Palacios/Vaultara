@@ -173,9 +173,6 @@
   "homeWelcomeSubtitleGeneric": "Vaultarak iraungitze-data garrantzitsuen jarraipena egiten laguntzen dizu, ezer isilean iraungi ez dadin.",
   "homeWelcomeSubtitleFirst": "Pozgarria da zu hemen izatea. Vaultarak antolatuta egoten laguntzen dizu, data eta erregistro garrantzitsuak leku seguru bakarrean gordez.",
   "homeWelcomeSubtitleBack": "Pozgarria da zu berriro ikustea. Vaultara hemen dago zure data eta erregistro garrantzitsuak berrikusi nahi dituzunean.",
-  "summaryAllCaption": "Vaultaran jarraituta",
-  "summaryExpiredTitle": "Iraungita",
-  "summaryExpiredCaption": "Iraungitze-data igarota",
   "editorNotes": "Oharrak",
   "editorReminderNone": "Gogorarazlerik ez",
   "enableBiometricsTitle": "Gaitu segurtasun biometrikoa",
@@ -197,7 +194,6 @@
   "addRecord": "Gehitu erregistroa",
   "noRecordsYet": "Oraindik ez dago erregistrorik.",
   "deleteRecordTitle": "Ezabatu erregistroa",
-  "summaryAllRecordsTitle": "Erregistro guztiak",
   "noGroupFound": "Oraindik ez dago talderik",
   "groupLabel": "{count, plural, one{{count} talde} other{{count} talde}}",
   "recordsLabel": "{count, plural, one{{count} erregistro} other{{count} erregistro}}",
@@ -443,7 +439,7 @@
   "addNotesHint": "Gehitu oharrak (aukerakoa)",
   "expiryTimelineTitle": "Iraungitzeen kronologia",
   "expiryTimelineSubtitle": "Sakatu hilabete bat hil horretan iraungitzen diren erregistroak ikusteko",
-  "expiryTimelineDetailCount": "{count, plural, =1{Erregistro 1} other{{count} erregistro}}",
+  "expiryTimelineDetailCount": "{count, plural, =1{Erregistro {count}} other{{count} erregistro}}",
   "@expiryTimelineDetailCount": {
     "placeholders": {
       "count": {
@@ -451,10 +447,6 @@
       }
     }
   },
-  "summaryUpcomingTitle": "Datozenak",
-  "summaryUpcomingCaption": "30 egun barru",
-  "summaryUrgentTitle": "Premiazkoak",
-  "summaryUrgentCaption": "7 egun barru",
   "profileHeaderTitle": "Profila",
   "profileTutorialsTitle": "Tutorialak",
   "profileTutorialsSubtitle": "Arakatu aplikazioaren tutorialak",
@@ -486,7 +478,7 @@
   "reminderPremiumSection": "Premium",
   "reminderNone": "Gogorarazlerik ez",
   "reminderOnExpiry": "Iraungitzean",
-  "reminderDaysBefore": "{days, plural, one{Egun 1 lehenago} other{{days} egun lehenago}}",
+  "reminderDaysBefore": "{days, plural, one{Egun {days} lehenago} other{{days} egun lehenago}}",
   "@reminderDaysBefore": {
     "placeholders": {
       "days": {
@@ -525,14 +517,14 @@
   "smartInsightNoRecordsHeading": "Gehitu zure lehen erregistroa",
   "smartInsightNoRecordsBody": "Hasi zure erregistroen jarraipena egiten, eta Vaultarak azterketa adimendunak erakutsiko ditu hemen.",
   "smartInsightExpiresTodaySingleBody": "{name} gaur iraungitzen da. Dagoeneko berritu baduzu, eguneratu data hemen.",
-  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} gaur iraungitzen dira.} =1{{names} eta beste erregistro 1 gaur iraungitzen dira.} other{{names} eta beste {extra} erregistro gaur iraungitzen dira.}}",
+  "smartInsightExpiresTodayMultiBody": "{extra, plural, =0{{names} gaur iraungitzen dira.} =1{{names} eta beste erregistro {extra} gaur iraungitzen dira.} other{{names} eta beste {extra} erregistro gaur iraungitzen dira.}}",
   "smartInsightSilentRiskBody": "{days, plural, =1{{name} bihar iraungitzen da eta ez du gogorarazlerik. Ezarri bat ez ahazteko.} other{{name} {date}(e)an iraungitzen da eta ez du gogorarazlerik. Ezarri bat ez ahazteko.}}",
   "smartInsightCloseExpiriesBodyTwo": "{a} {dateA}(e)an iraungitzen da eta {b} {dateB}(e)an, antzeko garaian. Erraza da bat ahaztea bi erregistro hain hurbil daudenean.",
   "smartInsightCloseExpiriesBodyThree": "{a}, {b} eta {c} {lastDate} baino lehen iraungitzen dira, antzeko garaian. Erraza da bat ahaztea hainbat erregistro hain hurbil daudenean.",
-  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} eta beste erregistro 1 {lastDate} baino lehen iraungitzen dira, antzeko garaian. Erraza da bat ahaztea hainbat erregistro hain hurbil daudenean.} other{{a}, {b} eta beste {extra} erregistro {lastDate} baino lehen iraungitzen dira, antzeko garaian. Erraza da bat ahaztea hainbat erregistro hain hurbil daudenean.}}",
+  "smartInsightCloseExpiriesBodyMany": "{extra, plural, =1{{a}, {b} eta beste erregistro {extra} {lastDate} baino lehen iraungitzen dira, antzeko garaian. Erraza da bat ahaztea hainbat erregistro hain hurbil daudenean.} other{{a}, {b} eta beste {extra} erregistro {lastDate} baino lehen iraungitzen dira, antzeko garaian. Erraza da bat ahaztea hainbat erregistro hain hurbil daudenean.}}",
   "smartInsightQuietPeriodBody": "{days, plural, =1{Ez da ezer iraungitzen hurrengo egunean. Zure hurrengo epea {date} da.} other{Ez da ezer iraungitzen hurrengo {days} egunetan. Zure hurrengo epea {date} da.}}",
-  "smartInsightClusterBody": "{count, plural, =1{{category} kategoriako zure erregistro 1 {date}(e)an iraungitzen da. Erraza da oharkabean pasatzea.} other{{category} kategoriako zure {count} erregistro {date} baino lehen iraungitzen dira. Erraza da bat ahaztea horrela taldekatuta daudenean.}}",
-  "smartInsightAllCaughtUpBody": "{count, plural, =1{Datorren iraungitze-data 1 gogorarazle batekin estalita dago. Ez dago zure arreta eskatzen duen beste ezer.} other{Datozen {count} iraungitze-data gogorarazleekin estalita daude. Ez dago zure arreta eskatzen duen beste ezer.}}",
+  "smartInsightClusterBody": "{count, plural, =1{{category} kategoriako zure erregistro {count} {date}(e)an iraungitzen da. Erraza da oharkabean pasatzea.} other{{category} kategoriako zure {count} erregistro {date} baino lehen iraungitzen dira. Erraza da bat ahaztea horrela taldekatuta daudenean.}}",
+  "smartInsightAllCaughtUpBody": "{count, plural, =1{Datorren iraungitze-data {count} gogorarazle batekin estalita dago. Ez dago zure arreta eskatzen duen beste ezer.} other{Datozen {count} iraungitze-data gogorarazleekin estalita daude. Ez dago zure arreta eskatzen duen beste ezer.}}",
   "smartInsightAllCaughtUpNoUpcomingBody": "Dena egunean dago. Une honetan ez dago zure arreta eskatzen duen ezer.",
   "smartInsightAllCaughtUpUnremindedBody": "{count, plural, =1{Une honetan ez dago ezer urgenterik, baina datozen erregistroetako 1ek ez du gogorarazlerik oraindik.} other{Une honetan ez dago ezer urgenterik, baina datozen erregistroetako {count}(e)k ez dute gogorarazlerik oraindik.}}",
   "smartInsightCloseExpiriesHeading": "Antzeko garaian iraungitzen dira",
@@ -621,7 +613,7 @@
   "reminderCascadeRemoveStep": "Kendu",
   "reminderCascadeDuplicate": "Beste gogorarazle batek erabiltzen du dagoeneko egun hau",
   "reminderCascadeOutOfRange": "Sartu {min} eta {max} egun artean",
-  "reminderCascadeStepLabel": "{position}. gogorarazlea: {days, plural, =1{egun 1} other{{days} egun}} lehenago",
+  "reminderCascadeStepLabel": "{position}. gogorarazlea: {days, plural, =1{egun {days}} other{{days} egun}} lehenago",
   "expiryTimelineNotReady": "Zure denbora-lerroa hilabete desberdin batzuetan iraungitzen diren erregistroak dituzunean agertuko da.",
   "verifyEmailResendIn": "Bidali berriro {seconds} s barru",
   "verifyEmailSpamHint": "Ez dago hor? Begiratu spam edo zabor-postaren karpeta.",
@@ -630,13 +622,10 @@
   "verifyEmailDiscardBody": "Kontu hau ez dago egiaztatuta. Orain irteten bazara ezabatu egingo da, eta berriro erregistratu ahal izango zara edozein posta helbiderekin.",
   "verifyEmailDiscardAction": "Baztertu",
   "verifyEmailKeepWaiting": "Jarraitu itxaroten",
-  "expiringBadge": "{count, plural, =1{1 laster iraungiko da} other{{count} laster iraungiko dira}}",
+  "expiringBadge": "{count, plural, =1{{count} laster iraungiko da} other{{count} laster iraungiko dira}}",
   "noRecordsToday": "Ezer ez da gaur iraungitzen",
   "noRecordsTomorrow": "Ezer ez da bihar iraungitzen",
-  "cascadeStepTitle": "{days, plural, =0{{recordName} gaur iraungitzen da} =1{{recordName} bihar iraungitzen da} other{{recordName} {days} egun barru iraungitzen da}}",
-  "cascadeStepBody": "{days, plural, =0{{firstName}, zure {recordName} gaur iraungitzen da. Berritu duzu dagoeneko? Eguneratu iraungitze-data.} =1{{firstName}, zure {recordName} bihar iraungitzen da. Berritu orain iraungi ez dadin.} other{{firstName}, zure {recordName} {date} datan iraungitzen da. Epea amaitu baino lehen berritzeak estalita mantentzen zaitu.}}",
   "cascadeFinalStepTitle": "Azken gogorarazlea: {recordName}",
-  "cascadeFinalStepBody": "{firstName}, zure {recordName} {days, plural, =1{bihar} other{{days} egun barru, {date} datan}} iraungitzen da. Hau da zure azken gogorarazlea, berritu ezazu edo eguneratu data.",
   "notificationsTitle": "Jakinarazpenak",
   "notificationsProfileEnabledSubtitle": "Gogorarazleak ordu honetan iristen dira: {time}.",
   "notificationsProfileDisabledSubtitle": "Jakinarazpenak desaktibatuta daude.",
@@ -1825,9 +1814,9 @@
   "secHistoryIntro": "Azken 90 egunetako saio-hasierak eta zure kontuko aldaketak.",
   "secHistoryEmpty": "Oraindik ez dago ezer erakusteko.",
   "secJustNow": "Oraintxe",
-  "secMinutesAgo": "{count, plural, one{Duela minutu 1} other{Duela {count} minutu}}",
-  "secHoursAgo": "{count, plural, one{Duela ordu 1} other{Duela {count} ordu}}",
-  "secDaysAgo": "{count, plural, one{Duela egun 1} other{Duela {count} egun}}",
+  "secMinutesAgo": "{count, plural, one{Duela minutu {count}} other{Duela {count} minutu}}",
+  "secHoursAgo": "{count, plural, one{Duela ordu {count}} other{Duela {count} ordu}}",
+  "secDaysAgo": "{count, plural, one{Duela egun {count}} other{Duela {count} egun}}",
   "secEventNewSignIn": "Gailu berri batek saioa hasi du",
   "secEventSignIn": "Saioa hasita",
   "secEventPasswordChanged": "Pasahitza aldatu da",
@@ -2148,8 +2137,8 @@
   "lifePlanAutoChanged": "Vaultarak ikusi du erregistro hau aldatu dela, eta eginda bezala markatu du.",
   "lifePlanAutoAdded": "Plan hau hasi ondoren gehitua.",
   "lifePlanProgress": "{done}/{total} eginda",
-  "lifePlanDaysToGo": "{count, plural, =1{Egun 1 falta da} other{{count} egun falta dira}}",
-  "lifePlanDaysAgo": "{count, plural, =1{Duela egun 1} other{Duela {count} egun}}",
+  "lifePlanDaysToGo": "{count, plural, =1{Egun {count} falta da} other{{count} egun falta dira}}",
+  "lifePlanDaysAgo": "{count, plural, =1{Duela egun {count}} other{Duela {count} egun}}",
   "lifePlanAllDone": "Dena eginda dago. Plana amaitutzat markatu dezakezu.",
   "lifePlanFinish": "Markatu amaitutzat",
   "lifePlanReopen": "Ireki berriro",
@@ -2278,7 +2267,7 @@
   "lifePlanReadAloudUnavailable": "Ozen irakurtzea ez dago erabilgarri mugikor honetan.",
   "lifePlanProofPack": "Sortu froga-paketea",
   "lifePlanOpenFamily": "Ireki Familia",
-  "lifePlanRemoved": "{count, plural, =1{Ezabatu duzun erregistro 1 ezeztatutzat hartzen da.} other{Ezabatu dituzun {count} erregistro ezeztatutzat hartzen dira.}}",
+  "lifePlanRemoved": "{count, plural, =1{Ezabatu duzun erregistro {count} ezeztatutzat hartzen da.} other{Ezabatu dituzun {count} erregistro ezeztatutzat hartzen dira.}}",
   "@lifePlanRemoved": {
     "placeholders": {
       "count": {
@@ -2479,7 +2468,7 @@
   "tutorialsGroupTravelFamily": "Bidaiak eta familia",
   "tutorialsGroupEmergencies": "Bizitzako gertaerak eta larrialdiak",
   "tutorialsGroupPaid": "Ordainpeko funtzioak",
-  "tutorialsSteps": "{count, plural, =1{Urrats 1} other{{count} urrats}}",
+  "tutorialsSteps": "{count, plural, =1{Urrats {count}} other{{count} urrats}}",
   "@tutorialsSteps": {
     "placeholders": {
       "count": {
@@ -2875,5 +2864,236 @@
         "type": "String"
       }
     }
-  }
+  },
+  "remTitleToday": "{recordName} gaur iraungitzen da",
+  "@remTitleToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleTomorrow": "{recordName} bihar iraungitzen da",
+  "@remTitleTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleDays": "{days, plural, one{{recordName} {days} egun barru iraungitzen da} other{{recordName} {days} egun barru iraungitzen da}}",
+  "@remTitleDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remTitleExpired": "{recordName} iraungi da",
+  "@remTitleExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remLockedTitle": "Erregistro blokeatu batek zure arreta behar du",
+  "remLockedBody": "Data {date} da. Desblokeatu Vaultara zein erregistro den ikusteko.",
+  "@remLockedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyToday": "Zure «{recordName}» erregistroa gaur iraungitzen da.",
+  "@remBodyToday": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrow": "Zure «{recordName}» erregistroa bihar iraungitzen da.",
+  "@remBodyTomorrow": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDays": "Zure «{recordName}» erregistroa {date} datan iraungitzen da.",
+  "@remBodyDays": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayNamed": "{firstName}, zure «{recordName}» erregistroa gaur iraungitzen da.",
+  "@remBodyTodayNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowNamed": "{firstName}, zure «{recordName}» erregistroa bihar iraungitzen da.",
+  "@remBodyTomorrowNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysNamed": "{firstName}, zure «{recordName}» erregistroa {date} datan iraungitzen da.",
+  "@remBodyDaysNamed": {
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTodayFamily": "{person}: «{recordName}» erregistroa gaur iraungitzen da.",
+  "@remBodyTodayFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyTomorrowFamily": "{person}: «{recordName}» erregistroa bihar iraungitzen da.",
+  "@remBodyTomorrowFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyDaysFamily": "{person}: «{recordName}» erregistroa {date} datan iraungitzen da.",
+  "@remBodyDaysFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpired": "Zure «{recordName}» erregistroa {date} datan iraungi zen.",
+  "@remBodyExpired": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remBodyExpiredFamily": "{person}: «{recordName}» erregistroa {date} datan iraungi zen.",
+  "@remBodyExpiredFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remTipToday": "Berritu duzu jada? Eguneratu data.",
+  "remTipTomorrow": "Berritu orain, iraungi ez dadin.",
+  "remTipEarly": "Goiz berritzeak babestuta mantentzen zaitu.",
+  "remTipLast": "Iraungi aurreko azken oroigarria da hau.",
+  "remTipExpired": "Berritu, edo eguneratu data dagoeneko egin baduzu.",
+  "remStartBody": "«{recordName}» berritzen hasteko garaia da. {date} datan iraungitzen da; beraz, orain hasten bazara, denbora asko izango duzu.",
+  "@remStartBody": {
+    "placeholders": {
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "remStartBodyFamily": "«{recordName}» ({person}) berritzen hasteko garaia da. {date} datan iraungitzen da; beraz, orain hasiz gero, denbora asko egongo da.",
+  "@remStartBodyFamily": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "recordName": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannelName": "Iraungitze-oroigarriak",
+  "notifChannelDescription": "Zure erregistroak iraungi aurreko oroigarriak",
+  "notifTestTitle": "Proba-jakinarazpena",
+  "notifTestBody": "Vaultararen oroigarriak horrela iristen dira.",
+  "notifTestAction": "Bidali proba-jakinarazpen bat",
+  "notifTestSubtitle": "Egiaztatu oroigarriak telefono honetara iristen direla",
+  "notifTestSent": "Proba bidali da. Segundo batzuetan iritsi beharko litzateke.",
+  "notifAfterExpiryTitle": "Gogorarazi erregistro bat iraungi ondoren",
+  "notifAfterExpirySubtitle": "3 eta 14 egun geroago, berritu ez bada",
+  "notifWeeklyTitle": "Asteleheneko laburpena",
+  "notifWeeklySubtitle": "Mezu bat astelehen goizean aste horretan zerbait iraungitzen denean",
+  "notifPushSection": "Etxea eta eguneraketak",
+  "notifHouseholdTitle": "Partekatutako erregistroak",
+  "notifHouseholdSubtitle": "Partekatutako erregistro bat iraungitzear dagoenean eta inork berritu ez duenean",
+  "notifUpdatesTitle": "Eskatu dituzun eguneraketak",
+  "notifUpdatesSubtitle": "Norbaitek erregistro baten datu berriak bidaltzen dituenean",
+  "notifSecurityNote": "Zure kontuan saio-hasiera berriei buruzko alertak beti bidaltzen dira.",
+  "notifIosHelpTitle": "Ez zaizkizu oroigarriak iristen?",
+  "notifIosHelpSubtitle": "Egiaztatu iPhonearen ezarpenak",
+  "notifIosHelpStep1": "Ireki Ezarpenak, gero Jakinarazpenak, gero Vaultara, eta aktibatu Baimendu jakinarazpenak.",
+  "notifIosHelpStep2": "Aktibatu Pantaila blokeatua, Jakinarazpen-zentroa eta Bannerrak.",
+  "notifIosHelpStep3": "Kontzentrazio modu bat erabiltzen baduzu, gehitu Vaultara baimendutako aplikazioetara.",
+  "notifIosHelpStep4": "Ireki Vaultara aste gutxiro. iPhoneak etorkizuneko oroigarri kopuru mugatua soilik gordetzen du, eta aplikazioa irekitzean hurrengoak programatzen dira.",
+  "homeNextUpEmpty": "Ez da ezer iraungiko laster. Dena prest dago.",
+  "homeDueSoonChip": "{count, plural, one{{count} 30 egunean iraungitzen da} other{{count} 30 egunean iraungitzen dira}}",
+  "@homeDueSoonChip": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homePinnedTitle": "Ainguratutako kategoriak"
 }

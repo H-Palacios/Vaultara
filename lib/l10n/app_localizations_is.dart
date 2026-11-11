@@ -360,15 +360,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Gott að sjá þig aftur. Vaultara er hér þegar þú vilt skoða mikilvægar dagsetningar og færslur.';
 
   @override
-  String get summaryAllCaption => 'Rakið í Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Útrunnið';
-
-  @override
-  String get summaryExpiredCaption => 'Gildistími liðinn';
-
-  @override
   String get editorNotes => 'Athugasemdir';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Eyða færslu';
-
-  @override
-  String get summaryAllRecordsTitle => 'Allar færslur';
 
   @override
   String get noGroupFound => 'Engir hópar enn';
@@ -829,22 +817,10 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count færslur',
-      one: '1 færsla',
+      one: '$count færsla',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Væntanlegt';
-
-  @override
-  String get summaryUpcomingCaption => 'Innan 30 daga';
-
-  @override
-  String get summaryUrgentTitle => 'Brýnt';
-
-  @override
-  String get summaryUrgentCaption => 'Innan 7 daga';
 
   @override
   String get profileHeaderTitle => 'Prófíll';
@@ -945,7 +921,7 @@ class AppLocalizationsIs extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days daga áður',
-      one: '1 dag áður',
+      one: '$days dag áður',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsIs extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names og $extra til renna út í dag.',
-      one: '$names og 1 til renna út í dag.',
+      one: '$names og $extra til renna út í dag.',
       zero: '$names renna út í dag.',
     );
     return '$_temp0';
@@ -1060,7 +1036,6 @@ class AppLocalizationsIs extends AppLocalizations {
       days,
       locale: localeName,
       other: '$name rennur út þann $date og er án áminningar. Stilltu áminningu svo þú missir ekki af því.',
-      one: '$name rennur út á morgun og er án áminningar. Stilltu áminningu svo þú missir ekki af því.',
     );
     return '$_temp0';
   }
@@ -1081,7 +1056,7 @@ class AppLocalizationsIs extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b og $extra færslur til renna út fyrir $lastDate, á svipuðum tíma. Það er auðvelt að gleyma einu þegar nokkrar færslur eru svona nálægt hverri annarri.',
-      one: '$a, $b og 1 færsla til renna út fyrir $lastDate, á svipuðum tíma. Það er auðvelt að gleyma einu þegar nokkrar færslur eru svona nálægt hverri annarri.',
+      one: '$a, $b og $extra færsla til renna út fyrir $lastDate, á svipuðum tíma. Það er auðvelt að gleyma einu þegar nokkrar færslur eru svona nálægt hverri annarri.',
     );
     return '$_temp0';
   }
@@ -1092,7 +1067,7 @@ class AppLocalizationsIs extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Ekkert rennur út næstu $days daga. Næsti frestur þinn er $date.',
-      one: 'Ekkert rennur út á næsta degi. Næsti frestur þinn er $date.',
+      one: 'Ekkert rennur út næsta $days dag. Næsti frestur þinn er $date.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1078,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count af færslum þínum í flokknum $category renna út fyrir $date. Það er auðvelt að gleyma einu þegar þau eru flokkuð svona saman.',
-      one: '1 af færslum þínum í flokknum $category rennur út þann $date. Það er auðvelt að yfirsjá það.',
+      one: '$count af færslum þínum í flokknum $category rennur út þann $date. Það er auðvelt að yfirsjá það.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1089,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count væntanlegar fyrningar eru með áminningum. Ekkert annað krefst athygli þinnar.',
-      one: '1 væntanleg fyrning er með áminningu. Ekkert annað krefst athygli þinnar.',
+      one: '$count væntanleg fyrning er með áminningu. Ekkert annað krefst athygli þinnar.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1103,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Ekkert er áríðandi eins og er, en $count komandi færslur eru ekki enn með áminningar.',
-      one: 'Ekkert er áríðandi eins og er, en 1 komandi færsla er ekki enn með áminningu.',
+      one: 'Ekkert er áríðandi eins og er, en $count komandi færsla er ekki enn með áminningu.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1227,7 @@ class AppLocalizationsIs extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days dögum',
-      one: '1 degi',
+      one: '$days degi',
     );
     return 'Áminning $position: $_temp0 áður';
   }
@@ -1289,7 +1264,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count renna senn út',
-      one: '1 rennur senn út',
+      one: '$count rennur senn út',
     );
     return '$_temp0';
   }
@@ -1301,43 +1276,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get noRecordsTomorrow => 'Ekkert rennur út á morgun';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName rennur út eftir $days daga',
-      one: '$recordName rennur út á morgun',
-      zero: '$recordName rennur út í dag',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName þitt rennur út þann $date. Snemmbúin endurnýjun tryggir áframhaldandi vernd.',
-      one: '$firstName, $recordName þitt rennur út á morgun. Endurnýjaðu núna svo það falli ekki úr gildi.',
-      zero: '$firstName, $recordName þitt rennur út í dag. Ertu þegar búin(n) að endurnýja? Uppfærðu gildistímann.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Síðasta áminning: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'eftir $days daga, þann $date',
-      one: 'á morgun',
-    );
-    return '$firstName, $recordName þitt rennur út $_temp0. Þetta er síðasta áminningin þín, endurnýjaðu það eða uppfærðu dagsetninguna.';
   }
 
   @override
@@ -1622,7 +1562,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Allt að $count manns',
-      one: 'Allt að 1 manneskja',
+      one: 'Allt að $count manneskja',
     );
     return '$_temp0';
   }
@@ -1639,7 +1579,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Bættu við allt að $count manns',
-      one: 'Bættu við 1 manneskju',
+      one: 'Bættu við $count manneskju',
     );
     return '$_temp0';
   }
@@ -4006,7 +3946,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count myndir eru ekki dulkóðaðar enn',
-      one: '1 mynd er ekki dulkóðuð enn',
+      one: '$count mynd er ekki dulkóðuð enn',
     );
     return '$_temp0';
   }
@@ -4127,7 +4067,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Þú átt $count myndir sem eru ekki dulkóðaðar enn. Við getum dulkóðað þær núna.',
-      one: 'Þú átt 1 mynd sem er ekki dulkóðuð enn. Við getum dulkóðað hana núna.',
+      one: 'Þú átt $count mynd sem er ekki dulkóðuð enn. Við getum dulkóðað hana núna.',
     );
     return '$_temp0 Hafðu Vaultara opið þar til þessu er lokið.';
   }
@@ -4162,7 +4102,7 @@ class AppLocalizationsIs extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'Of margar tilraunir. Bíddu í $seconds sekúndur og reyndu aftur.',
-      one: 'Of margar tilraunir. Bíddu í 1 sekúndu og reyndu aftur.',
+      one: 'Of margar tilraunir. Bíddu í $seconds sekúndu og reyndu aftur.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4113,7 @@ class AppLocalizationsIs extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'Of margar tilraunir. Bíddu í $minutes mínútur og reyndu aftur.',
-      one: 'Of margar tilraunir. Bíddu í 1 mínútu og reyndu aftur.',
+      one: 'Of margar tilraunir. Bíddu í $minutes mínútu og reyndu aftur.',
     );
     return '$_temp0';
   }
@@ -6789,7 +6729,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count dagar eftir',
-      one: '1 dagur eftir',
+      one: '$count dagur eftir',
     );
     return '$_temp0';
   }
@@ -6800,7 +6740,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Fyrir $count dögum',
-      one: 'Fyrir 1 degi',
+      one: 'Fyrir $count degi',
     );
     return '$_temp0';
   }
@@ -7096,7 +7036,7 @@ class AppLocalizationsIs extends AppLocalizations {
       weeks,
       locale: localeName,
       other: 'Byrjaðu fyrir $date. Nýtt tekur yfirleitt um $weeks vikur.',
-      one: 'Byrjaðu fyrir $date. Nýtt tekur yfirleitt um viku.',
+      one: 'Byrjaðu fyrir $date. Nýtt tekur yfirleitt um $weeks viku.',
     );
     return '$_temp0';
   }
@@ -7107,7 +7047,7 @@ class AppLocalizationsIs extends AppLocalizations {
       weeks,
       locale: localeName,
       other: 'Byrjaðu núna. Nýtt tekur yfirleitt um $weeks vikur.',
-      one: 'Byrjaðu núna. Nýtt tekur yfirleitt um viku.',
+      one: 'Byrjaðu núna. Nýtt tekur yfirleitt um $weeks viku.',
     );
     return '$_temp0';
   }
@@ -7160,7 +7100,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count skrár sem þú eyddir teljast uppsagðar.',
-      one: '1 skrá sem þú eyddir telst uppsögð.',
+      one: '$count skrá sem þú eyddir telst uppsögð.',
     );
     return '$_temp0';
   }
@@ -7580,7 +7520,7 @@ class AppLocalizationsIs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count skref',
-      one: '1 skref',
+      one: '$count skref',
     );
     return '$_temp0';
   }
@@ -8276,4 +8216,204 @@ class AppLocalizationsIs extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Áminning: $name rennur út $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName rennur út í dag';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName rennur út á morgun';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName rennur út eftir $days daga',
+      one: '$recordName rennur út eftir $days dag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName er runnið út';
+  }
+
+  @override
+  String get remLockedTitle => 'Læst færsla þarfnast athygli þinnar';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Dagsetningin er $date. Opnaðu Vaultara til að sjá hvaða færsla það er.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Færslan þín „$recordName“ rennur út í dag.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Færslan þín „$recordName“ rennur út á morgun.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Færslan þín „$recordName“ rennur út þann $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, færslan þín „$recordName“ rennur út í dag.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, færslan þín „$recordName“ rennur út á morgun.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, færslan þín „$recordName“ rennur út þann $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Færslan „$recordName“ hjá $person rennur út í dag.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Færslan „$recordName“ hjá $person rennur út á morgun.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Færslan „$recordName“ hjá $person rennur út þann $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Færslan þín „$recordName“ rann út þann $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Færslan „$recordName“ hjá $person rann út þann $date.';
+  }
+
+  @override
+  String get remTipToday => 'Búið að endurnýja? Uppfærðu dagsetninguna.';
+
+  @override
+  String get remTipTomorrow => 'Endurnýjaðu núna svo hún renni ekki út.';
+
+  @override
+  String get remTipEarly => 'Að endurnýja snemma heldur þér tryggðum.';
+
+  @override
+  String get remTipLast => 'Þetta er síðasta áminningin áður en hún rennur út.';
+
+  @override
+  String get remTipExpired => 'Endurnýjaðu, eða uppfærðu dagsetninguna ef þú hefur þegar gert það.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Það er kominn tími til að byrja að endurnýja „$recordName“. Hún rennur út þann $date, svo ef þú byrjar núna hefur þú nægan tíma.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Það er kominn tími til að byrja að endurnýja „$recordName“ hjá $person. Hún rennur út þann $date, svo það gefst nægur tími ef byrjað er núna.';
+  }
+
+  @override
+  String get notifChannelName => 'Áminningar um gildistíma';
+
+  @override
+  String get notifChannelDescription => 'Áminningar áður en færslurnar þínar renna út';
+
+  @override
+  String get notifTestTitle => 'Prófunartilkynning';
+
+  @override
+  String get notifTestBody => 'Áminningar frá Vaultara berast svona.';
+
+  @override
+  String get notifTestAction => 'Senda prófunartilkynningu';
+
+  @override
+  String get notifTestSubtitle => 'Athugaðu hvort áminningar berist í þennan síma';
+
+  @override
+  String get notifTestSent => 'Prófun send. Hún ætti að berast eftir nokkrar sekúndur.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Minna mig á eftir að færsla rennur út';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 og 14 dögum síðar, ef hún hefur ekki verið endurnýjuð';
+
+  @override
+  String get notifWeeklyTitle => 'Mánudagsyfirlit';
+
+  @override
+  String get notifWeeklySubtitle => 'Skilaboð á mánudagsmorgni þegar eitthvað rennur út í vikunni';
+
+  @override
+  String get notifPushSection => 'Heimili og uppfærslur';
+
+  @override
+  String get notifHouseholdTitle => 'Sameiginlegar færslur';
+
+  @override
+  String get notifHouseholdSubtitle => 'Þegar sameiginleg færsla er að renna út og enginn hefur endurnýjað hana';
+
+  @override
+  String get notifUpdatesTitle => 'Uppfærslur sem þú baðst um';
+
+  @override
+  String get notifUpdatesSubtitle => 'Þegar einhver sendir nýjar upplýsingar fyrir færslu';
+
+  @override
+  String get notifSecurityNote => 'Viðvaranir um nýjar innskráningar á reikninginn þinn eru alltaf sendar.';
+
+  @override
+  String get notifIosHelpTitle => 'Færðu ekki áminningar?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Athugaðu stillingar iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Opnaðu Stillingar, svo Tilkynningar, svo Vaultara, og kveiktu á Leyfa tilkynningar.';
+
+  @override
+  String get notifIosHelpStep2 => 'Kveiktu á Læstum skjá, Tilkynningamiðstöð og Borðum.';
+
+  @override
+  String get notifIosHelpStep3 => 'Ef þú notar fókus skaltu bæta Vaultara við forritin sem hann leyfir.';
+
+  @override
+  String get notifIosHelpStep4 => 'Opnaðu Vaultara á nokkurra vikna fresti. iPhone geymir aðeins takmarkaðan fjölda áminninga fram í tímann og þegar forritið er opnað eru þær næstu skipulagðar.';
+
+  @override
+  String get homeNextUpEmpty => 'Ekkert rennur út á næstunni. Allt er klárt.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count á gjalddaga innan 30 daga',
+      one: '$count á gjalddaga innan 30 daga',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Festir flokkar';
 }

@@ -360,15 +360,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Muna farin cikin sake ganinka. Vaultara na nan a duk lokacin da kake son duba muhimman kwanaki da rikodinka.';
 
   @override
-  String get summaryAllCaption => 'Ana bibiyarsu a Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Sun ƙare';
-
-  @override
-  String get summaryExpiredCaption => 'Lokacin ƙarewa ya wuce';
-
-  @override
   String get editorNotes => 'Bayanan kula';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Goge rikodi';
-
-  @override
-  String get summaryAllRecordsTitle => 'Dukkan rikodi';
 
   @override
   String get noGroupFound => 'Babu ƙungiyoyi tukuna';
@@ -829,22 +817,10 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Rikodi $count',
-      one: 'Rikodi 1',
+      one: 'Rikodi $count',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Masu zuwa';
-
-  @override
-  String get summaryUpcomingCaption => 'Cikin kwanaki 30';
-
-  @override
-  String get summaryUrgentTitle => 'Gaggawa';
-
-  @override
-  String get summaryUrgentCaption => 'Cikin kwanaki 7';
 
   @override
   String get profileHeaderTitle => 'Bayanan martaba';
@@ -945,7 +921,7 @@ class AppLocalizationsHa extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Kwanaki $days kafin',
-      one: 'Kwana 1 kafin',
+      one: 'Kwana $days kafin',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsHa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names da ƙarin $extra suna karewa yau.',
-      one: '$names da ƙarin guda 1 suna karewa yau.',
+      one: '$names da ƙarin guda $extra suna karewa yau.',
       zero: '$names suna karewa yau.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsHa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b da ƙarin rikodi $extra zasu kare nan da $lastDate, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan rikodin sun kusa haka.',
-      one: '$a, $b da ƙarin rikodi guda 1 zasu kare nan da $lastDate, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan rikodin sun kusa haka.',
+      one: '$a, $b da ƙarin rikodi guda $extra zasu kare nan da $lastDate, kusan a lokaci guda. Abu ne mai sauƙi ka manta guda ɗaya idan rikodin sun kusa haka.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Guda $count daga cikin rikodinka na rukunin $category zasu kare nan da $date. Abu ne mai sauƙi ka manta guda ɗaya idan aka jera su waje ɗaya haka.',
-      one: 'Guda 1 daga cikin rikodinka na rukunin $category zai kare ranar $date. Abu ne mai sauƙi a manta da shi.',
+      one: 'Guda $count daga cikin rikodinka na rukunin $category zai kare ranar $date. Abu ne mai sauƙi a manta da shi.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kwanan watanni $count na nan gaba suna da tunatarwa. Babu wani abu da ke bukatar kulawar ka.',
-      one: 'Kwanan wata 1 na nan gaba yana da tunatarwa. Babu wani abu da ke bukatar kulawar ka.',
+      one: 'Kwanan wata $count na nan gaba yana da tunatarwa. Babu wani abu da ke bukatar kulawar ka.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Babu wani abu mai gaggawa a yanzu, amma akwai rikodi $count na nan gaba da babu tunatarwa.',
-      one: 'Babu wani abu mai gaggawa a yanzu, amma akwai rikodi guda 1 na nan gaba da babu tunatarwa.',
+      one: 'Babu wani abu mai gaggawa a yanzu, amma akwai rikodi guda $count na nan gaba da babu tunatarwa.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsHa extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Kwanaki $days',
-      one: 'Kwana 1',
+      one: 'Kwana $days',
     );
     return 'Tunatarwa $position: $_temp0 kafin';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count za su ƙare nan ba da daɗewa ba',
-      one: '1 zai ƙare nan ba da daɗewa ba',
+      one: '$count zai ƙare nan ba da daɗewa ba',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get noRecordsTomorrow => 'Babu abin da zai ƙare gobe';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName zai ƙare cikin kwanaki $days',
-      one: '$recordName zai ƙare a gobe',
-      zero: '$recordName zai ƙare a yau',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, $recordName naka zai ƙare a ranar $date. Sabuntawa wuri-wuri yana kiyaye ka.',
-      one: '$firstName, $recordName naka zai ƙare a gobe. Sabunta shi yanzu domin kar ya ƙare.',
-      zero: '$firstName, $recordName naka zai ƙare a yau. Shin ka riga ka sabunta shi? Canza ranar ƙarewarsa.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Tunatarwa ta ƙarshe: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'cikin kwanaki $days, a ranar $date',
-      one: 'a gobe',
-    );
-    return '$firstName, $recordName naka zai ƙare $_temp0. Wannan ita ce tunatarwarka ta ƙarshe, sabunta shi ko ka canza ranarsa.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Hotuna $count ba su zama ɓoyayyu ba tukuna',
-      one: 'Hoto 1 bai zama ɓoyayye ba tukuna',
+      one: 'Hoto $count bai zama ɓoyayye ba tukuna',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kana da hotuna $count da ba su zama ɓoyayyu ba tukuna. Za mu iya ɓoye su yanzu.',
-      one: 'Kana da hoto 1 da bai zama ɓoyayye ba tukuna. Za mu iya ɓoye shi yanzu.',
+      one: 'Kana da hoto $count da bai zama ɓoyayye ba tukuna. Za mu iya ɓoye shi yanzu.',
     );
     return '$_temp0 Bar Vaultara a buɗe har sai wannan ya ƙare.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsHa extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'An yi ƙoƙari sau da yawa. Jira daƙiƙa $seconds ka sake gwadawa.',
-      one: 'An yi ƙoƙari sau da yawa. Jira daƙiƙa 1 ka sake gwadawa.',
+      one: 'An yi ƙoƙari sau da yawa. Jira daƙiƙa $seconds ka sake gwadawa.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsHa extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'An yi ƙoƙari sau da yawa. Jira mintuna $minutes ka sake gwadawa.',
-      one: 'An yi ƙoƙari sau da yawa. Jira minti 1 ka sake gwadawa.',
+      one: 'An yi ƙoƙari sau da yawa. Jira minti $minutes ka sake gwadawa.',
     );
     return '$_temp0';
   }
@@ -5017,7 +4958,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Rikodi $count suna buƙatar hankalinka',
-      one: 'Rikodi 1 yana buƙatar hankalinka',
+      one: 'Rikodi $count yana buƙatar hankalinka',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsHa extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Yawanci yana aiki na shekaru $years',
-      one: 'Yawanci yana aiki na shekara 1',
+      one: 'Yawanci yana aiki na shekara $years',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Mintuna $count da suka wuce',
-      one: 'Minti 1 da ya wuce',
+      one: 'Minti $count da ya wuce',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Awanni $count da suka wuce',
-      one: 'Awa 1 da ta wuce',
+      one: 'Awa $count da ta wuce',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kwanaki $count da suka wuce',
-      one: 'Kwana 1 da ya wuce',
+      one: 'Kwana $count da ya wuce',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Saura kwanaki $count',
-      one: 'Saura kwana 1',
+      one: 'Saura kwana $count',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Kwanaki $count da suka wuce',
-      one: 'Kwana 1 da ya wuce',
+      one: 'Kwana $count da ya wuce',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Bayanai $count da ka goge ana ɗaukarsu a matsayin an soke.',
-      one: 'Bayani 1 da ka goge ana ɗaukarsa a matsayin an soke.',
+      one: 'Bayani $count da ka goge ana ɗaukarsa a matsayin an soke.',
     );
     return '$_temp0';
   }
@@ -7580,7 +7521,7 @@ class AppLocalizationsHa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Matakai $count',
-      one: 'Mataki 1',
+      one: 'Mataki $count',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsHa extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Tunatarwa: $name zai ƙare a $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '\"$recordName\" zai ƙare yau';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '\"$recordName\" zai ƙare gobe';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '\"$recordName\" zai ƙare cikin kwanaki $days',
+      one: '\"$recordName\" zai ƙare cikin kwana $days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '\"$recordName\" ya ƙare';
+  }
+
+  @override
+  String get remLockedTitle => 'Rikodi mai kullewa yana buƙatar hankalinka';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Kwanan watansa $date ne. Buɗe Vaultara don ganin wane rikodi ne.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Rikodinka \"$recordName\" zai ƙare yau.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Rikodinka \"$recordName\" zai ƙare gobe.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Rikodinka \"$recordName\" zai ƙare a ranar $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, rikodinka \"$recordName\" zai ƙare yau.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, rikodinka \"$recordName\" zai ƙare gobe.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, rikodinka \"$recordName\" zai ƙare a ranar $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return 'Rikodin $person \"$recordName\" zai ƙare yau.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return 'Rikodin $person \"$recordName\" zai ƙare gobe.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return 'Rikodin $person \"$recordName\" zai ƙare a ranar $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Rikodinka \"$recordName\" ya ƙare a ranar $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return 'Rikodin $person \"$recordName\" ya ƙare a ranar $date.';
+  }
+
+  @override
+  String get remTipToday => 'Ka riga ka sabunta? Canza kwanan watansa.';
+
+  @override
+  String get remTipTomorrow => 'Sabunta shi yanzu don kada ya ƙare.';
+
+  @override
+  String get remTipEarly => 'Sabuntawa da wuri yana kiyaye ka.';
+
+  @override
+  String get remTipLast => 'Wannan shi ne tunatarwarka ta ƙarshe kafin ya ƙare.';
+
+  @override
+  String get remTipExpired => 'Sabunta shi, ko ka canza kwanan watansa idan ka riga ka yi.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Lokaci ya yi da za ka fara sabunta \"$recordName\". Zai ƙare a ranar $date, don haka idan ka fara yanzu za ka sami isasshen lokaci.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Lokaci ya yi da za a fara sabunta \"$recordName\" na $person. Zai ƙare a ranar $date, don haka fara yanzu zai bar isasshen lokaci.';
+  }
+
+  @override
+  String get notifChannelName => 'Tunatarwar ƙarewa';
+
+  @override
+  String get notifChannelDescription => 'Tunatarwa kafin rikodinka su ƙare';
+
+  @override
+  String get notifTestTitle => 'Sanarwar gwaji';
+
+  @override
+  String get notifTestBody => 'Tunatarwar Vaultara tana zuwa haka.';
+
+  @override
+  String get notifTestAction => 'Aika sanarwar gwaji';
+
+  @override
+  String get notifTestSubtitle => 'Duba ko tunatarwa tana isa wannan wayar';
+
+  @override
+  String get notifTestSent => 'An aika gwaji. Ya kamata ya iso cikin ɗan daƙiƙa.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Tunatar da ni bayan rikodi ya ƙare';
+
+  @override
+  String get notifAfterExpirySubtitle => 'Kwana 3 da 14 bayan haka, idan ba a sabunta ba';
+
+  @override
+  String get notifWeeklyTitle => 'Taƙaitawar Litinin';
+
+  @override
+  String get notifWeeklySubtitle => 'Saƙo da safiyar Litinin idan wani abu zai ƙare a wannan makon';
+
+  @override
+  String get notifPushSection => 'Gida da sabuntawa';
+
+  @override
+  String get notifHouseholdTitle => 'Rikodin da aka raba';
+
+  @override
+  String get notifHouseholdSubtitle => 'Idan rikodin da aka raba ya kusa ƙarewa kuma babu wanda ya sabunta shi';
+
+  @override
+  String get notifUpdatesTitle => 'Sabuntawar da ka nema';
+
+  @override
+  String get notifUpdatesSubtitle => 'Idan wani ya aiko sababbin bayanan rikodi';
+
+  @override
+  String get notifSecurityNote => 'Ana aika faɗakarwa game da sabbin shiga cikin asusunka koyaushe.';
+
+  @override
+  String get notifIosHelpTitle => 'Ba ka samun tunatarwa?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Duba saitunan iPhone ɗinka';
+
+  @override
+  String get notifIosHelpStep1 => 'Buɗe Settings, sannan Notifications, sannan Vaultara, ka kunna Allow Notifications.';
+
+  @override
+  String get notifIosHelpStep2 => 'Kunna Lock Screen, Notification Centre da Banners.';
+
+  @override
+  String get notifIosHelpStep3 => 'Idan kana amfani da Focus, ƙara Vaultara cikin manhajojin da aka yarda da su.';
+
+  @override
+  String get notifIosHelpStep4 => 'Buɗe Vaultara bayan \'yan makonni. iPhone yana adana ƙayyadadden adadin tunatarwa na gaba ne kawai, kuma buɗe manhajar yana tsara na gaba.';
+
+  @override
+  String get homeNextUpEmpty => 'Babu abin da zai ƙare nan ba da daɗewa ba. Komai ya shirya.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cikin kwana 30',
+      one: '$count cikin kwana 30',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Rukunonin da aka liƙa';
 }

@@ -360,15 +360,6 @@ class AppLocalizationsMk extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'Драго ни е што ве гледаме повторно. Vaultara е секогаш тука за вашите важни податоци.';
 
   @override
-  String get summaryAllCaption => 'Следени во Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'Истечени';
-
-  @override
-  String get summaryExpiredCaption => 'По рокот';
-
-  @override
   String get editorNotes => 'Белешки';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'Избриши запис';
-
-  @override
-  String get summaryAllRecordsTitle => 'Сите записи';
 
   @override
   String get noGroupFound => 'Сè уште нема групи';
@@ -829,22 +817,10 @@ class AppLocalizationsMk extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count записи',
-      one: '1 запис',
+      one: '$count запис',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'Претстојни';
-
-  @override
-  String get summaryUpcomingCaption => 'Во рок од 30 дена';
-
-  @override
-  String get summaryUrgentTitle => 'Итно';
-
-  @override
-  String get summaryUrgentCaption => 'Во рок од 7 дена';
 
   @override
   String get profileHeaderTitle => 'Профил';
@@ -945,7 +921,7 @@ class AppLocalizationsMk extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days дена претходно',
-      one: '1 ден претходно',
+      one: '$days ден претходно',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsMk extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names и уште $extra записи истекуваат денес.',
-      one: '$names и уште 1 запис истекуваат денес.',
+      one: '$names и уште $extra запис истекуваат денес.',
       zero: '$names истекуваат денес.',
     );
     return '$_temp0';
@@ -1060,7 +1036,6 @@ class AppLocalizationsMk extends AppLocalizations {
       days,
       locale: localeName,
       other: '$name истекува на $date и нема потсетник. Поставете го за да не го пропуштите.',
-      one: '$name истекува утре и нема потсетник. Поставете го за да не го пропуштите.',
     );
     return '$_temp0';
   }
@@ -1081,7 +1056,7 @@ class AppLocalizationsMk extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a, $b и уште $extra записи истекуваат до $lastDate, во приближно исто време. Лесно е да се заборави еден кога неколку записи се толку блиску.',
-      one: '$a, $b и уште 1 запис истекуваат до $lastDate, во приближно исто време. Лесно е да се заборави еден кога неколку записи се толку блиску.',
+      one: '$a, $b и уште $extra запис истекуваат до $lastDate, во приближно исто време. Лесно е да се заборави еден кога неколку записи се толку блиску.',
     );
     return '$_temp0';
   }
@@ -1092,7 +1067,6 @@ class AppLocalizationsMk extends AppLocalizations {
       days,
       locale: localeName,
       other: 'Ништо не истекува во следните $days дена. Вашиот следен рок е на $date.',
-      one: 'Ништо не истекува следниот ден. Вашиот следен рок е на $date.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1077,7 @@ class AppLocalizationsMk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Вашите $count записи во категоријата $category истекуваат до $date. Лесно е да се заборави еден кога се вака групирани.',
-      one: 'Вашиот 1 запис во категоријата $category истекува на $date. Лесно може да се превиди.',
+      one: 'Вашиот $count запис во категоријата $category истекува на $date. Лесно може да се превиди.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1088,7 @@ class AppLocalizationsMk extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count претстојни истеци се покриени со потсетници. Ништо друго не го бара вашето внимание.',
-      one: '1 претстоен истек е покриен со потсетник. Ништо друго не го бара вашето внимание.',
+      one: '$count претстоен истек е покриен со потсетник. Ништо друго не го бара вашето внимание.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1102,7 @@ class AppLocalizationsMk extends AppLocalizations {
       count,
       locale: localeName,
       other: 'Моментално ништо не е итно, но $count претстојни записи сè уште немаат потсетник.',
-      one: 'Моментално ништо не е итно, но 1 претстоен запис сè уште нема потсетник.',
+      one: 'Моментално ништо не е итно, но $count претстоен запис сè уште нема потсетник.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1226,7 @@ class AppLocalizationsMk extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days дена',
-      one: '1 ден',
+      one: '$days ден',
     );
     return 'Потсетник $position: $_temp0 пред';
   }
@@ -1289,7 +1263,7 @@ class AppLocalizationsMk extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count истекуваат наскоро',
-      one: '1 истекува наскоро',
+      one: '$count истекува наскоро',
     );
     return '$_temp0';
   }
@@ -1301,43 +1275,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get noRecordsTomorrow => 'Ништо не истекува утре';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName истекува за $days дена',
-      one: '$recordName истекува утре',
-      zero: '$recordName истекува денес',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, вашиот $recordName истекува на $date. Предвременото обновување ве чува заштитени.',
-      one: '$firstName, вашиот $recordName истекува утре. Обновете го сега за да не истече.',
-      zero: '$firstName, вашиот $recordName истекува денес. Дали веќе го обновивте? Ажурирајте го датумот на истекување.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'Последен потсетник: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'за $days дена, на $date',
-      one: 'утре',
-    );
-    return '$firstName, вашиот $recordName истекува $_temp0. Ова е вашиот последен потсетник, обновете го или ажурирајте го неговиот датум.';
   }
 
   @override
@@ -5063,7 +5002,7 @@ class AppLocalizationsMk extends AppLocalizations {
       years,
       locale: localeName,
       other: 'Обично важи $years години',
-      one: 'Обично важи 1 година',
+      one: 'Обично важи $years година',
     );
     return '$_temp0';
   }
@@ -8276,4 +8215,204 @@ class AppLocalizationsMk extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'Потсетник: $name истекува на $date';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName истекува денес';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName истекува утре';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName истекува за $days дена',
+      one: '$recordName истекува за $days ден',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName истече';
+  }
+
+  @override
+  String get remLockedTitle => 'Заклучен запис бара ваше внимание';
+
+  @override
+  String remLockedBody(String date) {
+    return 'Неговиот датум е $date. Отклучете ја Vaultara за да видите кој запис е.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'Вашиот запис $recordName истекува денес.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'Вашиот запис $recordName истекува утре.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'Вашиот запис $recordName истекува на $date.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, вашиот запис $recordName истекува денес.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, вашиот запис $recordName истекува утре.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, вашиот запис $recordName истекува на $date.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: записот $recordName истекува денес.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: записот $recordName истекува утре.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: записот $recordName истекува на $date.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'Вашиот запис $recordName истече на $date.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: записот $recordName истече на $date.';
+  }
+
+  @override
+  String get remTipToday => 'Веќе обновено? Ажурирајте го датумот.';
+
+  @override
+  String get remTipTomorrow => 'Обновете го сега за да не истече.';
+
+  @override
+  String get remTipEarly => 'Раното обновување ве држи покриени.';
+
+  @override
+  String get remTipLast => 'Ова е вашиот последен потсетник пред истекот.';
+
+  @override
+  String get remTipExpired => 'Обновете го или ажурирајте го датумот ако веќе сте го направиле тоа.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'Време е да почнете со обновување на $recordName. Истекува на $date, па ако почнете сега, ќе имате доволно време.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'Време е да почнете со обновување на $recordName ($person). Истекува на $date, па ако почнете сега, ќе има доволно време.';
+  }
+
+  @override
+  String get notifChannelName => 'Потсетници за истек';
+
+  @override
+  String get notifChannelDescription => 'Потсетници пред вашите записи да истечат';
+
+  @override
+  String get notifTestTitle => 'Пробно известување';
+
+  @override
+  String get notifTestBody => 'Вака пристигнуваат потсетниците од Vaultara.';
+
+  @override
+  String get notifTestAction => 'Испрати пробно известување';
+
+  @override
+  String get notifTestSubtitle => 'Проверете дали потсетниците стигнуваат на овој телефон';
+
+  @override
+  String get notifTestSent => 'Пробата е испратена. Треба да стигне за неколку секунди.';
+
+  @override
+  String get notifAfterExpiryTitle => 'Потсети ме по истекот на запис';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 и 14 дена потоа, ако не е обновен';
+
+  @override
+  String get notifWeeklyTitle => 'Преглед во понеделник';
+
+  @override
+  String get notifWeeklySubtitle => 'Порака во понеделник наутро кога нешто истекува таа недела';
+
+  @override
+  String get notifPushSection => 'Домаќинство и ажурирања';
+
+  @override
+  String get notifHouseholdTitle => 'Споделени записи';
+
+  @override
+  String get notifHouseholdSubtitle => 'Кога споделен запис наскоро истекува и никој не го обновил';
+
+  @override
+  String get notifUpdatesTitle => 'Ажурирања што ги побаравте';
+
+  @override
+  String get notifUpdatesSubtitle => 'Кога некој ќе ги испрати новите податоци на запис';
+
+  @override
+  String get notifSecurityNote => 'Предупредувањата за нови најавувања на вашата сметка секогаш се испраќаат.';
+
+  @override
+  String get notifIosHelpTitle => 'Не стигнуваат потсетници?';
+
+  @override
+  String get notifIosHelpSubtitle => 'Проверете ги поставките на iPhone';
+
+  @override
+  String get notifIosHelpStep1 => 'Отворете Поставки, потоа Известувања, потоа Vaultara, и вклучете Дозволи известувања.';
+
+  @override
+  String get notifIosHelpStep2 => 'Вклучете Заклучен екран, Центар за известувања и Банери.';
+
+  @override
+  String get notifIosHelpStep3 => 'Ако користите фокус, додајте ја Vaultara меѓу дозволените апликации.';
+
+  @override
+  String get notifIosHelpStep4 => 'Отворајте ја Vaultara на секои неколку недели. iPhone чува само ограничен број идни потсетници, а отворањето на апликацијата ги планира следните.';
+
+  @override
+  String get homeNextUpEmpty => 'Ништо не истекува наскоро. Сè е подготвено.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count истекуваат за 30 дена',
+      one: '$count истекува за 30 дена',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'Закачени категории';
 }

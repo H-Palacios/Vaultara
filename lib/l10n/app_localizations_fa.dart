@@ -360,15 +360,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'خوشحالیم دوباره شما را می‌بینیم. Vaultara هر زمان که بخواهید تاریخ‌ها و سوابق مهم خود را بررسی کنید در کنار شماست.';
 
   @override
-  String get summaryAllCaption => 'پیگیری‌شده در Vaultara';
-
-  @override
-  String get summaryExpiredTitle => 'منقضی‌شده';
-
-  @override
-  String get summaryExpiredCaption => 'تاریخ انقضا گذشته است';
-
-  @override
   String get editorNotes => 'یادداشت‌ها';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'حذف رکورد';
-
-  @override
-  String get summaryAllRecordsTitle => 'همه رکوردها';
 
   @override
   String get noGroupFound => 'هنوز گروهی وجود ندارد';
@@ -829,22 +817,10 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count رکورد',
-      one: '۱ رکورد',
+      one: '$count رکورد',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'پیش‌رو';
-
-  @override
-  String get summaryUpcomingCaption => 'در ۳۰ روز آینده';
-
-  @override
-  String get summaryUrgentTitle => 'فوری';
-
-  @override
-  String get summaryUrgentCaption => 'در ۷ روز آینده';
 
   @override
   String get profileHeaderTitle => 'نمایه';
@@ -945,7 +921,7 @@ class AppLocalizationsFa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days روز قبل',
-      one: '1 روز قبل',
+      one: '$days روز قبل',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsFa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names و $extra مورد دیگر امروز منقضی می‌شوند.',
-      one: '$names و ۱ مورد دیگر امروز منقضی می‌شوند.',
+      one: '$names و $extra مورد دیگر امروز منقضی می‌شوند.',
       zero: '$names امروز منقضی می‌شوند.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsFa extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a، $b و $extra رکورد دیگر تا $lastDate منقضی می‌شوند، تقریباً هم‌زمان. فراموش‌کردن یکی آسان است.',
-      one: '$a، $b و ۱ رکورد دیگر تا $lastDate منقضی می‌شوند، تقریباً هم‌زمان. فراموش‌کردن یکی آسان است.',
+      one: '$a، $b و $extra رکورد دیگر تا $lastDate منقضی می‌شوند، تقریباً هم‌زمان. فراموش‌کردن یکی آسان است.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count مورد از رکوردهای $category شما تا $date منقضی می‌شوند. وقتی این‌طور کنار هم باشند، فراموش‌کردن یکی آسان است.',
-      one: '۱ مورد از رکوردهای $category شما در $date منقضی می‌شود. نادیده‌گرفتنش آسان است.',
+      one: '$count مورد از رکوردهای $category شما در $date منقضی می‌شود. نادیده‌گرفتنش آسان است.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count انقضای پیش‌رو یادآور دارند. چیز دیگری به توجه شما نیاز ندارد.',
-      one: '۱ انقضای پیش‌رو یادآور دارد. چیز دیگری به توجه شما نیاز ندارد.',
+      one: '$count انقضای پیش‌رو یادآور دارد. چیز دیگری به توجه شما نیاز ندارد.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: 'در حال حاضر چیز فوری‌ای نیست، اما $count رکورد پیش‌رو هنوز یادآور ندارند.',
-      one: 'در حال حاضر چیز فوری‌ای نیست، اما ۱ رکورد پیش‌رو هنوز یادآور ندارد.',
+      one: 'در حال حاضر چیز فوری‌ای نیست، اما $count رکورد پیش‌رو هنوز یادآور ندارد.',
     );
     return '$_temp0';
   }
@@ -1252,7 +1228,7 @@ class AppLocalizationsFa extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days روز',
-      one: '۱ روز',
+      one: '$days روز',
     );
     return 'یادآور $position: $_temp0 قبل';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count مورد به‌زودی منقضی می‌شوند',
-      one: '1 مورد به‌زودی منقضی می‌شود',
+      one: '$count مورد به‌زودی منقضی می‌شود',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get noRecordsTomorrow => 'فردا چیزی منقضی نمی‌شود';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName ظرف $days روز آینده منقضی می‌شود',
-      one: '$recordName فردا منقضی می‌شود',
-      zero: '$recordName امروز منقضی می‌شود',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName، $recordName شما در تاریخ $date منقضی می‌شود. تمدید زودهنگام شما را تحت پوشش نگه می‌دارد.',
-      one: '$firstName، $recordName شما فردا منقضی می‌شود. همین حالا آن را تمدید کنید تا باطل نشود.',
-      zero: '$firstName، $recordName شما امروز منقضی می‌شود. آیا قبلاً آن را تمدید کرده‌اید؟ تاریخ انقضا را به‌روزرسانی کنید.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'آخرین یادآوری: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'ظرف $days روز آینده، در تاریخ $date',
-      one: 'فردا',
-    );
-    return '$firstName، $recordName شما $_temp0 منقضی می‌شود. این آخرین یادآوری شماست، آن را تمدید کرده یا تاریخش را به‌روزرسانی کنید.';
   }
 
   @override
@@ -5017,7 +4958,7 @@ class AppLocalizationsFa extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count رکورد به توجه شما نیاز دارند',
-      one: '1 رکورد به توجه شما نیاز دارد',
+      one: '$count رکورد به توجه شما نیاز دارد',
     );
     return '$_temp0';
   }
@@ -5063,7 +5004,7 @@ class AppLocalizationsFa extends AppLocalizations {
       years,
       locale: localeName,
       other: 'معمولاً $years سال اعتبار دارد',
-      one: 'معمولاً 1 سال اعتبار دارد',
+      one: 'معمولاً $years سال اعتبار دارد',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsFa extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'یادآور: $name در $date منقضی می‌شود';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '$recordName امروز منقضی می‌شود';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '$recordName فردا منقضی می‌شود';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$recordName تا $days روز دیگر منقضی می‌شود',
+      one: '$recordName تا $days روز دیگر منقضی می‌شود',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '$recordName منقضی شده است';
+  }
+
+  @override
+  String get remLockedTitle => 'یک رکورد قفل‌شده به توجه شما نیاز دارد';
+
+  @override
+  String remLockedBody(String date) {
+    return 'تاریخ آن $date است. قفل Vaultara را باز کنید تا ببینید کدام رکورد است.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'رکورد «$recordName» شما امروز منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'رکورد «$recordName» شما فردا منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'رکورد «$recordName» شما در تاریخ $date منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName، رکورد «$recordName» شما امروز منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName، رکورد «$recordName» شما فردا منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName، رکورد «$recordName» شما در تاریخ $date منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: رکورد «$recordName» امروز منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: رکورد «$recordName» فردا منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: رکورد «$recordName» در تاریخ $date منقضی می‌شود.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'رکورد «$recordName» شما در تاریخ $date منقضی شد.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: رکورد «$recordName» در تاریخ $date منقضی شد.';
+  }
+
+  @override
+  String get remTipToday => 'قبلاً تمدید کرده‌اید؟ تاریخ آن را به‌روز کنید.';
+
+  @override
+  String get remTipTomorrow => 'همین حالا تمدید کنید تا منقضی نشود.';
+
+  @override
+  String get remTipEarly => 'تمدید زودهنگام شما را تحت پوشش نگه می‌دارد.';
+
+  @override
+  String get remTipLast => 'این آخرین یادآوری قبل از انقضا است.';
+
+  @override
+  String get remTipExpired => 'تمدید کنید، یا اگر قبلاً تمدید کرده‌اید تاریخ را به‌روز کنید.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'وقت آن است که تمدید «$recordName» را شروع کنید. در تاریخ $date منقضی می‌شود، پس اگر الان شروع کنید وقت کافی دارید.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'وقت آن است که تمدید «$recordName» ($person) را شروع کنید. در تاریخ $date منقضی می‌شود، پس شروع از الان وقت کافی می‌دهد.';
+  }
+
+  @override
+  String get notifChannelName => 'یادآوری‌های انقضا';
+
+  @override
+  String get notifChannelDescription => 'یادآوری‌ها قبل از انقضای رکوردهای شما';
+
+  @override
+  String get notifTestTitle => 'اعلان آزمایشی';
+
+  @override
+  String get notifTestBody => 'یادآوری‌های Vaultara این‌طور می‌رسند.';
+
+  @override
+  String get notifTestAction => 'ارسال اعلان آزمایشی';
+
+  @override
+  String get notifTestSubtitle => 'بررسی کنید یادآوری‌ها به این تلفن می‌رسند';
+
+  @override
+  String get notifTestSent => 'آزمایش ارسال شد. باید ظرف چند ثانیه برسد.';
+
+  @override
+  String get notifAfterExpiryTitle => 'پس از انقضای رکورد یادآوری کن';
+
+  @override
+  String get notifAfterExpirySubtitle => '۳ و ۱۴ روز بعد، اگر تمدید نشده باشد';
+
+  @override
+  String get notifWeeklyTitle => 'خلاصهٔ دوشنبه';
+
+  @override
+  String get notifWeeklySubtitle => 'یک پیام صبح دوشنبه وقتی چیزی در آن هفته منقضی می‌شود';
+
+  @override
+  String get notifPushSection => 'خانواده و به‌روزرسانی‌ها';
+
+  @override
+  String get notifHouseholdTitle => 'رکوردهای مشترک';
+
+  @override
+  String get notifHouseholdSubtitle => 'وقتی یک رکورد مشترک نزدیک انقضا است و کسی آن را تمدید نکرده';
+
+  @override
+  String get notifUpdatesTitle => 'به‌روزرسانی‌هایی که خواستید';
+
+  @override
+  String get notifUpdatesSubtitle => 'وقتی کسی اطلاعات جدید یک رکورد را می‌فرستد';
+
+  @override
+  String get notifSecurityNote => 'هشدارهای ورود جدید به حساب شما همیشه ارسال می‌شوند.';
+
+  @override
+  String get notifIosHelpTitle => 'یادآوری دریافت نمی‌کنید؟';
+
+  @override
+  String get notifIosHelpSubtitle => 'تنظیمات iPhone خود را بررسی کنید';
+
+  @override
+  String get notifIosHelpStep1 => 'تنظیمات، سپس اعلان‌ها، سپس Vaultara را باز کنید و اجازهٔ اعلان‌ها را روشن کنید.';
+
+  @override
+  String get notifIosHelpStep2 => 'صفحهٔ قفل، مرکز اعلان و بنرها را روشن کنید.';
+
+  @override
+  String get notifIosHelpStep3 => 'اگر از حالت تمرکز استفاده می‌کنید، Vaultara را به برنامه‌های مجاز اضافه کنید.';
+
+  @override
+  String get notifIosHelpStep4 => 'هر چند هفته یک بار Vaultara را باز کنید. iPhone فقط تعداد محدودی یادآوری آینده نگه می‌دارد و باز کردن برنامه یادآوری‌های بعدی را برنامه‌ریزی می‌کند.';
+
+  @override
+  String get homeNextUpEmpty => 'به‌زودی چیزی منقضی نمی‌شود. همه چیز آماده است.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد تا ۳۰ روز',
+      one: '$count مورد تا ۳۰ روز',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'دسته‌های سنجاق‌شده';
 }

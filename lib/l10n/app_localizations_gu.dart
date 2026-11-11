@@ -360,15 +360,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'તમને ફરી જોઈને આનંદ થયો. જ્યારે પણ તમે તમારી મહત્ત્વની તારીખો અને રેકોર્ડ જોવા માગો, ત્યારે Vaultara અહીં છે.';
 
   @override
-  String get summaryAllCaption => 'Vaultaraમાં ટ્રૅક કરેલા';
-
-  @override
-  String get summaryExpiredTitle => 'સમાપ્ત થયેલ';
-
-  @override
-  String get summaryExpiredCaption => 'સમાપ્તિ તારીખ વીતી ગઈ';
-
-  @override
   String get editorNotes => 'નોંધો';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'રેકોર્ડ ડિલીટ કરો';
-
-  @override
-  String get summaryAllRecordsTitle => 'બધા રેકોર્ડ';
 
   @override
   String get noGroupFound => 'હજુ સુધી કોઈ ગ્રૂપ નથી';
@@ -833,18 +821,6 @@ class AppLocalizationsGu extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'આગામી';
-
-  @override
-  String get summaryUpcomingCaption => '30 દિવસની અંદર';
-
-  @override
-  String get summaryUrgentTitle => 'તાત્કાલિક';
-
-  @override
-  String get summaryUrgentCaption => '7 દિવસની અંદર';
 
   @override
   String get profileHeaderTitle => 'પ્રોફાઇલ';
@@ -1301,43 +1277,8 @@ class AppLocalizationsGu extends AppLocalizations {
   String get noRecordsTomorrow => 'આવતીકાલે કંઈ સમાપ્ત થતું નથી';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '\"$recordName\" $days દિવસમાં સમાપ્ત થાય છે',
-      one: '\"$recordName\" $days દિવસમાં સમાપ્ત થાય છે',
-      zero: '\"$recordName\" આજે સમાપ્ત થાય છે',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName, \"$recordName\" $dateના રોજ સમાપ્ત થાય છે. વહેલું રિન્યૂ કરવાથી તમે સુરક્ષિત રહો છો.',
-      one: '$firstName, \"$recordName\" $dateના રોજ સમાપ્ત થાય છે. વહેલું રિન્યૂ કરવાથી તમે સુરક્ષિત રહો છો.',
-      zero: '$firstName, \"$recordName\" આજે સમાપ્ત થાય છે. પહેલેથી રિન્યૂ કરી લીધું છે? તેની સમાપ્તિ તારીખ અપડેટ કરો.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'છેલ્લું રિમાઇન્ડર: \"$recordName\"';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$days દિવસમાં, $dateના રોજ',
-      one: '$days દિવસમાં, $dateના રોજ',
-    );
-    return '$firstName, \"$recordName\" $_temp0 સમાપ્ત થાય છે. આ તમારું છેલ્લું રિમાઇન્ડર છે, તેને રિન્યૂ કરો અથવા તેની તારીખ અપડેટ કરો.';
   }
 
   @override
@@ -4006,7 +3947,7 @@ class AppLocalizationsGu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ફોટા હજી એન્ક્રિપ્ટ થયા નથી',
-      one: '1 ફોટો હજી એન્ક્રિપ્ટ થયો નથી',
+      one: '$count ફોટો હજી એન્ક્રિપ્ટ થયો નથી',
     );
     return '$_temp0';
   }
@@ -4127,7 +4068,7 @@ class AppLocalizationsGu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'તમારી પાસે $count ફોટા છે જે હજી એન્ક્રિપ્ટ થયા નથી. અમે તેમને હવે એન્ક્રિપ્ટ કરી શકીએ છીએ.',
-      one: 'તમારી પાસે 1 ફોટો છે જે હજી એન્ક્રિપ્ટ થયો નથી. અમે તેને હવે એન્ક્રિપ્ટ કરી શકીએ છીએ.',
+      one: 'તમારી પાસે $count ફોટો છે જે હજી એન્ક્રિપ્ટ થયો નથી. અમે તેને હવે એન્ક્રિપ્ટ કરી શકીએ છીએ.',
     );
     return '$_temp0 આ પૂરું થાય ત્યાં સુધી Vaultara ખુલ્લું રાખો.';
   }
@@ -4162,7 +4103,7 @@ class AppLocalizationsGu extends AppLocalizations {
       seconds,
       locale: localeName,
       other: 'ઘણા બધા પ્રયાસ. કૃપા કરીને $seconds સેકન્ડ રાહ જુઓ અને ફરી પ્રયાસ કરો.',
-      one: 'ઘણા બધા પ્રયાસ. કૃપા કરીને 1 સેકન્ડ રાહ જુઓ અને ફરી પ્રયાસ કરો.',
+      one: 'ઘણા બધા પ્રયાસ. કૃપા કરીને $seconds સેકન્ડ રાહ જુઓ અને ફરી પ્રયાસ કરો.',
     );
     return '$_temp0';
   }
@@ -4173,7 +4114,7 @@ class AppLocalizationsGu extends AppLocalizations {
       minutes,
       locale: localeName,
       other: 'ઘણા બધા પ્રયાસ. કૃપા કરીને $minutes મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.',
-      one: 'ઘણા બધા પ્રયાસ. કૃપા કરીને 1 મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.',
+      one: 'ઘણા બધા પ્રયાસ. કૃપા કરીને $minutes મિનિટ રાહ જુઓ અને ફરી પ્રયાસ કરો.',
     );
     return '$_temp0';
   }
@@ -5654,7 +5595,7 @@ class AppLocalizationsGu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count મિનિટ પહેલાં',
-      one: '1 મિનિટ પહેલાં',
+      one: '$count મિનિટ પહેલાં',
     );
     return '$_temp0';
   }
@@ -5665,7 +5606,7 @@ class AppLocalizationsGu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count કલાક પહેલાં',
-      one: '1 કલાક પહેલાં',
+      one: '$count કલાક પહેલાં',
     );
     return '$_temp0';
   }
@@ -5676,7 +5617,7 @@ class AppLocalizationsGu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count દિવસ પહેલાં',
-      one: '1 દિવસ પહેલાં',
+      one: '$count દિવસ પહેલાં',
     );
     return '$_temp0';
   }
@@ -6789,7 +6730,7 @@ class AppLocalizationsGu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count દિવસ બાકી',
-      one: '1 દિવસ બાકી',
+      one: '$count દિવસ બાકી',
     );
     return '$_temp0';
   }
@@ -6800,7 +6741,7 @@ class AppLocalizationsGu extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count દિવસ પહેલાં',
-      one: '1 દિવસ પહેલાં',
+      one: '$count દિવસ પહેલાં',
     );
     return '$_temp0';
   }
@@ -7160,7 +7101,7 @@ class AppLocalizationsGu extends AppLocalizations {
       count,
       locale: localeName,
       other: 'તમે કાઢી નાખેલા $count રેકોર્ડ રદ ગણાય છે.',
-      one: 'તમે કાઢી નાખેલો 1 રેકોર્ડ રદ ગણાય છે.',
+      one: 'તમે કાઢી નાખેલો $count રેકોર્ડ રદ ગણાય છે.',
     );
     return '$_temp0';
   }
@@ -8276,4 +8217,204 @@ class AppLocalizationsGu extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'રિમાઇન્ડર: $nameની મુદત $dateના રોજ પૂરી';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '\"$recordName\" આજે સમાપ્ત થાય છે';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '\"$recordName\" કાલે સમાપ્ત થાય છે';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '\"$recordName\" $days દિવસમાં સમાપ્ત થાય છે',
+      one: '\"$recordName\" $days દિવસમાં સમાપ્ત થાય છે',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '\"$recordName\" સમાપ્ત થઈ ગયું છે';
+  }
+
+  @override
+  String get remLockedTitle => 'એક લૉક કરેલા રેકોર્ડને તમારું ધ્યાન જોઈએ છે';
+
+  @override
+  String remLockedBody(String date) {
+    return 'તેની તારીખ $date છે. કયો રેકોર્ડ છે તે જોવા Vaultara અનલૉક કરો.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'તમારો રેકોર્ડ \"$recordName\" આજે સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'તમારો રેકોર્ડ \"$recordName\" કાલે સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'તમારો રેકોર્ડ \"$recordName\" $dateના રોજ સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName, તમારો રેકોર્ડ \"$recordName\" આજે સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName, તમારો રેકોર્ડ \"$recordName\" કાલે સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName, તમારો રેકોર્ડ \"$recordName\" $dateના રોજ સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: રેકોર્ડ \"$recordName\" આજે સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: રેકોર્ડ \"$recordName\" કાલે સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: રેકોર્ડ \"$recordName\" $dateના રોજ સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'તમારો રેકોર્ડ \"$recordName\" $dateના રોજ સમાપ્ત થયો.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: રેકોર્ડ \"$recordName\" $dateના રોજ સમાપ્ત થયો.';
+  }
+
+  @override
+  String get remTipToday => 'પહેલેથી રિન્યૂ કર્યું? તેની તારીખ અપડેટ કરો.';
+
+  @override
+  String get remTipTomorrow => 'તે સમાપ્ત ન થાય તે માટે હમણાં રિન્યૂ કરો.';
+
+  @override
+  String get remTipEarly => 'વહેલું રિન્યૂ કરવાથી તમે સુરક્ષિત રહો છો.';
+
+  @override
+  String get remTipLast => 'સમાપ્તિ પહેલાંનું આ તમારું છેલ્લું રિમાઇન્ડર છે.';
+
+  @override
+  String get remTipExpired => 'રિન્યૂ કરો, અથવા પહેલેથી કર્યું હોય તો તારીખ અપડેટ કરો.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return '\"$recordName\" રિન્યૂ કરવાનું શરૂ કરવાનો સમય છે. તે $dateના રોજ સમાપ્ત થાય છે, તેથી હમણાં શરૂ કરશો તો તમારી પાસે પૂરતો સમય રહેશે.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return '\"$recordName\" ($person) રિન્યૂ કરવાનું શરૂ કરવાનો સમય છે. તે $dateના રોજ સમાપ્ત થાય છે, તેથી હમણાં શરૂ કરવાથી પૂરતો સમય રહેશે.';
+  }
+
+  @override
+  String get notifChannelName => 'સમાપ્તિ રિમાઇન્ડર';
+
+  @override
+  String get notifChannelDescription => 'તમારા રેકોર્ડ સમાપ્ત થાય તે પહેલાં રિમાઇન્ડર';
+
+  @override
+  String get notifTestTitle => 'પરીક્ષણ સૂચના';
+
+  @override
+  String get notifTestBody => 'Vaultaraના રિમાઇન્ડર આ રીતે આવે છે.';
+
+  @override
+  String get notifTestAction => 'પરીક્ષણ સૂચના મોકલો';
+
+  @override
+  String get notifTestSubtitle => 'તપાસો કે રિમાઇન્ડર આ ફોન સુધી પહોંચે છે';
+
+  @override
+  String get notifTestSent => 'પરીક્ષણ મોકલ્યું. તે થોડી સેકન્ડમાં આવવું જોઈએ.';
+
+  @override
+  String get notifAfterExpiryTitle => 'રેકોર્ડ સમાપ્ત થયા પછી યાદ અપાવો';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 અને 14 દિવસ પછી, જો રિન્યૂ ન થયો હોય';
+
+  @override
+  String get notifWeeklyTitle => 'સોમવારનો સારાંશ';
+
+  @override
+  String get notifWeeklySubtitle => 'તે અઠવાડિયે કંઈક સમાપ્ત થતું હોય ત્યારે સોમવારે સવારે એક સંદેશ';
+
+  @override
+  String get notifPushSection => 'કુટુંબ અને અપડેટ';
+
+  @override
+  String get notifHouseholdTitle => 'શેર કરેલા રેકોર્ડ';
+
+  @override
+  String get notifHouseholdSubtitle => 'જ્યારે શેર કરેલો રેકોર્ડ સમાપ્ત થવાની નજીક હોય અને કોઈએ રિન્યૂ ન કર્યો હોય';
+
+  @override
+  String get notifUpdatesTitle => 'તમે માંગેલા અપડેટ';
+
+  @override
+  String get notifUpdatesSubtitle => 'જ્યારે કોઈ રેકોર્ડની નવી વિગતો મોકલે';
+
+  @override
+  String get notifSecurityNote => 'તમારા એકાઉન્ટમાં નવા સાઇન-ઇનની ચેતવણીઓ હંમેશા મોકલવામાં આવે છે.';
+
+  @override
+  String get notifIosHelpTitle => 'રિમાઇન્ડર મળતા નથી?';
+
+  @override
+  String get notifIosHelpSubtitle => 'તમારા iPhoneના સેટિંગ્સ તપાસો';
+
+  @override
+  String get notifIosHelpStep1 => 'સેટિંગ્સ, પછી સૂચનાઓ, પછી Vaultara ખોલો, અને સૂચનાઓને મંજૂરી આપો ચાલુ કરો.';
+
+  @override
+  String get notifIosHelpStep2 => 'લૉક સ્ક્રીન, સૂચના કેન્દ્ર અને બૅનર ચાલુ કરો.';
+
+  @override
+  String get notifIosHelpStep3 => 'જો તમે ફોકસ વાપરો છો, તો Vaultaraને મંજૂર ઍપ્સમાં ઉમેરો.';
+
+  @override
+  String get notifIosHelpStep4 => 'દર થોડા અઠવાડિયે Vaultara ખોલો. iPhone આગળના મર્યાદિત રિમાઇન્ડર જ રાખે છે, અને ઍપ ખોલવાથી પછીના નક્કી થાય છે.';
+
+  @override
+  String get homeNextUpEmpty => 'જલ્દી કંઈ સમાપ્ત થતું નથી. બધું બરાબર છે.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '30 દિવસમાં $count બાકી',
+      one: '30 દિવસમાં $count બાકી',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'પિન કરેલી શ્રેણીઓ';
 }

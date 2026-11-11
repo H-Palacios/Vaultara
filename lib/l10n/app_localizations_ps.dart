@@ -360,15 +360,6 @@ class AppLocalizationsPs extends AppLocalizations {
   String get homeWelcomeSubtitleBack => 'بیا مو لیدل خوښ شول. Vaultara هر وخت چمتو ده چې تاسو خپلې مهمې نیټې او ریکارډونه بیاکتنه کړئ.';
 
   @override
-  String get summaryAllCaption => 'په Vaultara کې تعقیب شوي';
-
-  @override
-  String get summaryExpiredTitle => 'پای ته رسیدلي';
-
-  @override
-  String get summaryExpiredCaption => 'د پای نېټه تېره شوې ده';
-
-  @override
   String get editorNotes => 'یادښتونه';
 
   @override
@@ -414,9 +405,6 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get deleteRecordTitle => 'ریکارډ ړنګ کړئ';
-
-  @override
-  String get summaryAllRecordsTitle => 'ټول ریکارډونه';
 
   @override
   String get noGroupFound => 'تر اوسه ډلې نشته';
@@ -829,22 +817,10 @@ class AppLocalizationsPs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ریکارډونه',
-      one: '۱ ریکارډ',
+      one: '$count ریکارډ',
     );
     return '$_temp0';
   }
-
-  @override
-  String get summaryUpcomingTitle => 'راتلونکي';
-
-  @override
-  String get summaryUpcomingCaption => 'په 30 ورځو کې';
-
-  @override
-  String get summaryUrgentTitle => 'بیړنی';
-
-  @override
-  String get summaryUrgentCaption => 'په 7 ورځو کې';
 
   @override
   String get profileHeaderTitle => 'پروفایل';
@@ -945,7 +921,7 @@ class AppLocalizationsPs extends AppLocalizations {
       days,
       locale: localeName,
       other: '$days ورځې مخکې',
-      one: '1 ورځ مخکې',
+      one: '$days ورځ مخکې',
     );
     return '$_temp0';
   }
@@ -1048,7 +1024,7 @@ class AppLocalizationsPs extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$names او $extra نور نن پای ته رسېږي.',
-      one: '$names او ۱ نور نن پای ته رسېږي.',
+      one: '$names او $extra نور نن پای ته رسېږي.',
       zero: '$names نن پای ته رسېږي.',
     );
     return '$_temp0';
@@ -1081,7 +1057,7 @@ class AppLocalizationsPs extends AppLocalizations {
       extra,
       locale: localeName,
       other: '$a، $b او $extra نور تر $lastDate پورې پای ته رسېږي، نږدې په یو وخت. کله چې څو ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.',
-      one: '$a، $b او ۱ نور تر $lastDate پورې پای ته رسېږي، نږدې په یو وخت. کله چې څو ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.',
+      one: '$a، $b او $extra نور تر $lastDate پورې پای ته رسېږي، نږدې په یو وخت. کله چې څو ریکارډونه دومره نږدې وي، د یوه هېرول اسانه دي.',
     );
     return '$_temp0';
   }
@@ -1103,7 +1079,7 @@ class AppLocalizationsPs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'د $category کټګورۍ کې ستاسو $count ریکارډونه تر $date پورې پای ته رسېږي. کله چې داسې یو ځای وي، د یوه هېرول اسانه دي.',
-      one: 'د $category کټګورۍ کې ستاسو ۱ ریکارډ په $date پای ته رسېږي. له پامه غورځول یې اسانه دي.',
+      one: 'د $category کټګورۍ کې ستاسو $count ریکارډ په $date پای ته رسېږي. له پامه غورځول یې اسانه دي.',
     );
     return '$_temp0';
   }
@@ -1114,7 +1090,7 @@ class AppLocalizationsPs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count راتلونکي پای ته رسېدنې په یادونو پوښل شوې دي. بل هېڅ شی ستاسو پاملرنې ته اړتیا نه لري.',
-      one: '۱ راتلونکی پای ته رسېدل په یادونه پوښل شوی دی. بل هېڅ شی ستاسو پاملرنې ته اړتیا نه لري.',
+      one: '$count راتلونکی پای ته رسېدل په یادونه پوښل شوی دی. بل هېڅ شی ستاسو پاملرنې ته اړتیا نه لري.',
     );
     return '$_temp0';
   }
@@ -1128,7 +1104,7 @@ class AppLocalizationsPs extends AppLocalizations {
       count,
       locale: localeName,
       other: 'اوس مهال هېڅ شی بېړنی نه دی، خو $count راتلونکي ریکارډونه لا یادونه نه لري.',
-      one: 'اوس مهال هېڅ شی بېړنی نه دی، خو ۱ راتلونکی ریکارډ لا یادونه نه لري.',
+      one: 'اوس مهال هېڅ شی بېړنی نه دی، خو $count راتلونکی ریکارډ لا یادونه نه لري.',
     );
     return '$_temp0';
   }
@@ -1289,7 +1265,7 @@ class AppLocalizationsPs extends AppLocalizations {
       count,
       locale: localeName,
       other: '$count ژر پای ته رسیږي',
-      one: '1 ژر پای ته رسیږي',
+      one: '$count ژر پای ته رسیږي',
     );
     return '$_temp0';
   }
@@ -1301,43 +1277,8 @@ class AppLocalizationsPs extends AppLocalizations {
   String get noRecordsTomorrow => 'سبا هیڅ شی نه پای ته رسیږي';
 
   @override
-  String cascadeStepTitle(int days, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$recordName په $days ورځو کې پای ته رسیږي',
-      one: '$recordName سبا پای ته رسیږي',
-      zero: '$recordName نن پای ته رسیږي',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String cascadeStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: '$firstName، ستاسو $recordName په $date پای ته رسیږي. وخته نوي کول تاسو خوندي ساتي.',
-      one: '$firstName، ستاسو $recordName سبا پای ته رسیږي. همدا اوس یې نوی کړئ ترڅو باطل نشي.',
-      zero: '$firstName، ستاسو $recordName نن پای ته رسیږي. ایا دمخه مو نوی کړی دی؟ د پای ته رسیدو نیټه یې تازه کړئ.',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String cascadeFinalStepTitle(String recordName) {
     return 'وروستی یادونه: $recordName';
-  }
-
-  @override
-  String cascadeFinalStepBody(int days, String date, String firstName, String recordName) {
-    String _temp0 = intl.Intl.pluralLogic(
-      days,
-      locale: localeName,
-      other: 'په $days ورځو کې، په $date',
-      one: 'سبا',
-    );
-    return '$firstName، ستاسو $recordName $_temp0 پای ته رسیږي. دا ستاسو وروستی یادونه ده، نوی یې کړئ یا یې نیټه تازه کړئ.';
   }
 
   @override
@@ -8276,4 +8217,204 @@ class AppLocalizationsPs extends AppLocalizations {
   String calendarReminderFor(String name, String date) {
     return 'یادونه: $name په $date پای ته رسېږي';
   }
+
+  @override
+  String remTitleToday(String recordName) {
+    return '\"$recordName\" نن پای ته رسیږي';
+  }
+
+  @override
+  String remTitleTomorrow(String recordName) {
+    return '\"$recordName\" سبا پای ته رسیږي';
+  }
+
+  @override
+  String remTitleDays(int days, String recordName) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '\"$recordName\" په $days ورځو کې پای ته رسیږي',
+      one: '\"$recordName\" په $days ورځ کې پای ته رسیږي',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String remTitleExpired(String recordName) {
+    return '\"$recordName\" پای ته رسېدلی';
+  }
+
+  @override
+  String get remLockedTitle => 'یو بند شوی ریکارډ ستاسو پاملرنې ته اړتیا لري';
+
+  @override
+  String remLockedBody(String date) {
+    return 'د دې نېټه $date ده. Vaultara خلاص کړئ ترڅو وګورئ چې کوم ریکارډ دی.';
+  }
+
+  @override
+  String remBodyToday(String recordName) {
+    return 'ستاسو ریکارډ \"$recordName\" نن پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyTomorrow(String recordName) {
+    return 'ستاسو ریکارډ \"$recordName\" سبا پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyDays(String recordName, String date) {
+    return 'ستاسو ریکارډ \"$recordName\" په $date پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyTodayNamed(String firstName, String recordName) {
+    return '$firstName، ستاسو ریکارډ \"$recordName\" نن پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyTomorrowNamed(String firstName, String recordName) {
+    return '$firstName، ستاسو ریکارډ \"$recordName\" سبا پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyDaysNamed(String firstName, String recordName, String date) {
+    return '$firstName، ستاسو ریکارډ \"$recordName\" په $date پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyTodayFamily(String person, String recordName) {
+    return '$person: ریکارډ \"$recordName\" نن پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyTomorrowFamily(String person, String recordName) {
+    return '$person: ریکارډ \"$recordName\" سبا پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyDaysFamily(String person, String recordName, String date) {
+    return '$person: ریکارډ \"$recordName\" په $date پای ته رسیږي.';
+  }
+
+  @override
+  String remBodyExpired(String recordName, String date) {
+    return 'ستاسو ریکارډ \"$recordName\" په $date پای ته ورسېد.';
+  }
+
+  @override
+  String remBodyExpiredFamily(String person, String recordName, String date) {
+    return '$person: ریکارډ \"$recordName\" په $date پای ته ورسېد.';
+  }
+
+  @override
+  String get remTipToday => 'مخکې مو نوی کړی؟ نېټه یې تازه کړئ.';
+
+  @override
+  String get remTipTomorrow => 'اوس یې نوی کړئ چې پای ته ونه رسیږي.';
+
+  @override
+  String get remTipEarly => 'ژر نوي کول تاسو خوندي ساتي.';
+
+  @override
+  String get remTipLast => 'دا د پای ته رسېدو مخکې ستاسو وروستۍ یادونه ده.';
+
+  @override
+  String get remTipExpired => 'نوی یې کړئ، یا که مو مخکې کړی وي نېټه یې تازه کړئ.';
+
+  @override
+  String remStartBody(String recordName, String date) {
+    return 'د \"$recordName\" د نوي کولو د پیل وخت دی. په $date پای ته رسیږي، نو که اوس پیل کړئ ډېر وخت به ولرئ.';
+  }
+
+  @override
+  String remStartBodyFamily(String person, String recordName, String date) {
+    return 'د \"$recordName\" ($person) د نوي کولو د پیل وخت دی. په $date پای ته رسیږي، نو اوس پیل کول کافي وخت ورکوي.';
+  }
+
+  @override
+  String get notifChannelName => 'د پای ته رسېدو یادونې';
+
+  @override
+  String get notifChannelDescription => 'مخکې له دې چې ستاسو ریکارډونه پای ته ورسیږي یادونې';
+
+  @override
+  String get notifTestTitle => 'ازمایښتي خبرتیا';
+
+  @override
+  String get notifTestBody => 'د Vaultara یادونې داسې راځي.';
+
+  @override
+  String get notifTestAction => 'ازمایښتي خبرتیا ولېږئ';
+
+  @override
+  String get notifTestSubtitle => 'وګورئ چې یادونې دې تلیفون ته رسیږي';
+
+  @override
+  String get notifTestSent => 'ازمایښت ولېږل شو. باید په څو ثانیو کې ورسیږي.';
+
+  @override
+  String get notifAfterExpiryTitle => 'د ریکارډ له پای ته رسېدو وروسته یادونه وکړه';
+
+  @override
+  String get notifAfterExpirySubtitle => '3 او 14 ورځې وروسته، که نوی شوی نه وي';
+
+  @override
+  String get notifWeeklyTitle => 'د دوشنبې لنډیز';
+
+  @override
+  String get notifWeeklySubtitle => 'د دوشنبې په سهار یو پیغام کله چې په هغه اونۍ کې څه پای ته رسیږي';
+
+  @override
+  String get notifPushSection => 'کورنۍ او تازه معلومات';
+
+  @override
+  String get notifHouseholdTitle => 'شریک شوي ریکارډونه';
+
+  @override
+  String get notifHouseholdSubtitle => 'کله چې یو شریک شوی ریکارډ پای ته نږدې وي او هیچا نوی کړی نه وي';
+
+  @override
+  String get notifUpdatesTitle => 'هغه تازه معلومات چې تاسو غوښتي';
+
+  @override
+  String get notifUpdatesSubtitle => 'کله چې څوک د ریکارډ نوي معلومات ولېږي';
+
+  @override
+  String get notifSecurityNote => 'ستاسو حساب ته د نویو ننوتنو خبرتیاوې تل لېږل کیږي.';
+
+  @override
+  String get notifIosHelpTitle => 'یادونې نه درځي؟';
+
+  @override
+  String get notifIosHelpSubtitle => 'د خپل iPhone تنظیمات وګورئ';
+
+  @override
+  String get notifIosHelpStep1 => 'تنظیمات، بیا خبرتیاوې، بیا Vaultara پرانیزئ، او د خبرتیاوو اجازه فعاله کړئ.';
+
+  @override
+  String get notifIosHelpStep2 => 'د قفل پرده، د خبرتیاوو مرکز او بنرونه فعال کړئ.';
+
+  @override
+  String get notifIosHelpStep3 => 'که تمرکز کاروئ، Vaultara اجازه لرونکو اپونو ته ورزیات کړئ.';
+
+  @override
+  String get notifIosHelpStep4 => 'Vaultara هرو څو اونیو کې پرانیزئ. iPhone یوازې محدود شمېر راتلونکې یادونې ساتي، او د اپ پرانیستل راتلونکې پلان کوي.';
+
+  @override
+  String get homeNextUpEmpty => 'ژر څه پای ته نه رسیږي. هر څه چمتو دي.';
+
+  @override
+  String homeDueSoonChip(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'په 30 ورځو کې $count',
+      one: 'په 30 ورځو کې $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homePinnedTitle => 'ټاکل شوې کټګورۍ';
 }
