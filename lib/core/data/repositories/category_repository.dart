@@ -245,8 +245,10 @@ class CategoryRepository {
 
     if (_hasLoadedForUser && !force) return;
 
-    _categories.clear();
-    _pins.clear();
+    // Built aside and swapped in at the end, so a refresh does not leave the
+    // categories empty while the new copy downloads.
+    final categories = <CategoryItem>[];
+    final pinned = <String>[];
 
     final userDoc = await _firestore.collection('users').doc(user.uid).get();
     final data = userDoc.data();
@@ -259,7 +261,7 @@ class CategoryRepository {
 
     for (final doc in snap.docs) {
       if (doc.data()['isDeleted'] == true) continue;
-      _categories.add(_categoryFromDoc(doc));
+      categories.add(_categoryFromDoc(doc));
     }
 
     final pinnedDoc = await _firestore.doc(_pinnedPath(user.uid)).get();
@@ -268,10 +270,18 @@ class CategoryRepository {
       final pins = pinnedDoc.data()?['pins'];
       if (pins is List) {
         for (final key in pins) {
-          if (key is String && !_pins.contains(key)) _pins.add(key);
+          if (key is String && !pinned.contains(key)) pinned.add(key);
         }
       }
     }
+
+    if (_auth.currentUser?.uid != user.uid) return;
+    _categories
+      ..clear()
+      ..addAll(categories);
+    _pins
+      ..clear()
+      ..addAll(pinned);
 
     _hasLoadedForUser = true;
   }
