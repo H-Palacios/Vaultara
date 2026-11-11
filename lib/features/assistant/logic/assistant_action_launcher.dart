@@ -1,7 +1,13 @@
+import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/core/data/category_appearance.dart';
+import 'package:vaultara/core/data/models/category_item.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
+import 'package:vaultara/core/data/repositories/category_repository.dart';
+import 'package:vaultara/core/data/repositories/group_repository.dart';
+import 'package:vaultara/features/records/services/icon_suggest_service.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/util/dates.dart';
@@ -94,11 +100,14 @@ class AssistantActionLauncher {
       categoryLabel: PresetCatalog.categoryLabel(context, categoryKey),
       subcategoryName: groupKey,
       notes: action.notes,
-      reminderOffsetDays:
-          action.hasReminder ? action.reminderDays : RecordDefaults.reminderDays,
+      reminderOffsetDays: action.hasReminder
+          ? action.reminderDays
+          : RecordDefaults.reminderDays,
       holderId: action.personId,
       renewalCost: cost,
-      costCurrency: cost == null ? null : _currency(context, action.currency, null),
+      costCurrency: cost == null
+          ? null
+          : _currency(context, action.currency, null),
       repeatMonths: action.repeatMonths ?? defaults.repeatMonths,
       locked: action.locked,
       inWallet: action.inWallet ?? defaults.inWallet,
@@ -148,7 +157,7 @@ class AssistantActionLauncher {
     );
     if (!context.mounted) return;
     if (!scheduled && stored.reminderOffsetDays != null) {
-      ActionFeedbackSnackbar.showNotificationsDisabled(
+      await NotificationAsk.afterReminderSet(
         context,
         onOpenSettings: () {
           ReminderScheduler.openSystemNotificationSettings();
@@ -175,8 +184,7 @@ class AssistantActionLauncher {
   static Future<AssistantApplyResult> apply(
     BuildContext context,
     AssistantAction action,
-  ) async =>
-      (await applyWithUndo(context, action)).result;
+  ) async => (await applyWithUndo(context, action)).result;
 
   /// Applies a confirmed card and, when it worked, returns a way to put
   /// everything back as it was.
@@ -224,6 +232,18 @@ class AssistantActionLauncher {
           return AssistantNavigator.open(context, action)
               ? AssistantApplyResult.opened
               : AssistantApplyResult.failed;
+        case AssistantActionType.categoryAdd:
+          return await _addCategory(context, action);
+        case AssistantActionType.categoryRename:
+          return await _renameCategory(context, action, slot);
+        case AssistantActionType.groupAdd:
+          return await _addGroup(context, action);
+        case AssistantActionType.groupRename:
+          return await _renameGroup(context, action, slot);
+        case AssistantActionType.move:
+          return await _move(context, action, slot);
+        case AssistantActionType.restore:
+          return await _restore(context, action, slot);
       }
     } catch (_) {
       if (context.mounted) {
@@ -231,6 +251,319 @@ class AssistantActionLauncher {
       }
       return AssistantApplyResult.failed;
     }
+  }
+
+  /// The name shown for a category, preset or the user's own.
+  static String categoryLabel(BuildContext context, String key) {
+    if (PresetCatalog.categoryKeys.contains(key)) {
+      return PresetCatalog.categoryLabel(context, key);
+    }
+    for (final c in CategoryRepository.getAll()) {
+      if (c.key == key) return c.label;
+    }
+    return key;
+  }
+
+  static bool _isCustomCategory(String key) =>
+      !PresetCatalog.categoryKeys.contains(key) &&
+      CategoryRepository.getAll().any((c) => c.key == key);
+
+  static bool _categoryExists(String key) =>
+      PresetCatalog.categoryKeys.contains(key) || _isCustomCategory(key);
+
+  static bool _groupNameTaken(
+    AppLocalizations loc,
+    String categoryKey,
+    String name,
+  ) {
+    final wanted = name.trim().toLowerCase();
+    final names = <String>[
+      for (final k
+          in PresetCatalog.groupsByCategory[categoryKey] ?? const <String>[])
+        PresetCatalog.groupLabelFor(loc, k),
+      for (final k in GroupRepository.getForCategory(categoryKey))
+        GroupRepository.labelForCategoryKey(categoryKey, k) ?? k,
+      ...GroupRepository.getDeletedForCategory(categoryKey),
+    ];
+    return names.any((n) => n.trim().toLowerCase() == wanted);
+  }
+
+  /// The group key a move card points at: the key the server sent when it is
+  /// still a group here, otherwise the user's group with that name.
+  static String? resolveGroupKey(AssistantAction action) {
+    final categoryKey = action.categoryKey;
+    if (categoryKey == null) return null;
+    final preset =
+        PresetCatalog.groupsByCategory[categoryKey] ?? const <String>[];
+    final custom = GroupRepository.getForCategory(categoryKey);
+    final key = action.groupKey;
+    if (key != null && (preset.contains(key) || custom.contains(key))) {
+      return key;
+    }
+    final wanted = action.groupName?.trim().toLowerCase();
+    if (wanted == null || wanted.isEmpty) return null;
+    for (final k in custom) {
+      final label = GroupRepository.labelForCategoryKey(categoryKey, k);
+      if (label != null && label.trim().toLowerCase() == wanted) return k;
+    }
+    return null;
+  }
+
+  static Future<AssistantApplyResult> _addCategory(
+    BuildContext context,
+    AssistantAction action,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final shell = ShellState.current;
+    final name = action.name;
+    if (shell == null || name == null) return AssistantApplyResult.failed;
+    await CategoryRepository.loadForCurrentUser();
+    if (!context.mounted) return AssistantApplyResult.failed;
+    final label = normaliseTitleCase(name);
+    final presetLabels = <String>[
+      for (final k in PresetCatalog.categoryKeys)
+        PresetCatalog.categoryLabel(context, k),
+    ];
+    if (CategoryRepository.labelInUse(label, presetLabels: presetLabels)) {
+      _info(context, loc.nameInUse);
+      return AssistantApplyResult.failed;
+    }
+    if (!CategoryRepository.canAddCategory(isPremium: shell.isPremium)) {
+      _info(context, loc.assistantActionNotPossible);
+      return AssistantApplyResult.failed;
+    }
+    final look = IconSuggestService.guess(label);
+    final ok = await CategoryRepository.addCategory(
+      CategoryItem(
+        key: CategoryRepository.newKeyFor(label),
+        label: label,
+        icon: CategoryAppearance.iconFor(look.icon) ?? Icons.folder_rounded,
+        groupKeys: const <String>[],
+        iconKey: look.icon,
+        colourKey: look.colour,
+      ),
+      isPremium: shell.isPremium,
+    );
+    if (!context.mounted) {
+      return ok ? AssistantApplyResult.applied : AssistantApplyResult.failed;
+    }
+    if (!ok) {
+      _info(context, loc.assistantActionNotPossible);
+      return AssistantApplyResult.failed;
+    }
+    ActionFeedbackSnackbar.showAdded(context, label);
+    return AssistantApplyResult.applied;
+  }
+
+  static Future<AssistantApplyResult> _renameCategory(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final key = action.categoryKey;
+    final name = action.name;
+    if (key == null || name == null) return AssistantApplyResult.failed;
+    await CategoryRepository.loadForCurrentUser();
+    if (!context.mounted) return AssistantApplyResult.failed;
+    if (!_isCustomCategory(key)) {
+      _info(context, loc.assistantActionNotPossible);
+      return AssistantApplyResult.failed;
+    }
+    final before = categoryLabel(context, key);
+    final label = normaliseTitleCase(name);
+    final presetLabels = <String>[
+      for (final k in PresetCatalog.categoryKeys)
+        PresetCatalog.categoryLabel(context, k),
+    ];
+    if (CategoryRepository.labelInUse(
+      label,
+      exceptKey: key,
+      presetLabels: presetLabels,
+    )) {
+      _info(context, loc.nameInUse);
+      return AssistantApplyResult.failed;
+    }
+    await CategoryRepository.renameCategory(key, label);
+    slot.undo = () async {
+      if (!_isCustomCategory(key)) return false;
+      await CategoryRepository.renameCategory(key, before);
+      return true;
+    };
+    _refreshHome();
+    return AssistantApplyResult.applied;
+  }
+
+  static Future<AssistantApplyResult> _addGroup(
+    BuildContext context,
+    AssistantAction action,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final shell = ShellState.current;
+    final key = action.categoryKey;
+    final name = action.name;
+    if (shell == null || key == null || name == null) {
+      return AssistantApplyResult.failed;
+    }
+    await Future.wait(<Future<void>>[
+      CategoryRepository.loadForCurrentUser(),
+      GroupRepository.loadForCurrentUser(),
+    ]);
+    if (!context.mounted) return AssistantApplyResult.failed;
+    if (!_categoryExists(key)) {
+      _info(context, loc.assistantActionNotPossible);
+      return AssistantApplyResult.failed;
+    }
+    final label = normaliseTitleCase(name);
+    if (_groupNameTaken(loc, key, label)) {
+      _info(context, loc.nameInUse);
+      return AssistantApplyResult.failed;
+    }
+    if (!shell.isPremium &&
+        GroupRepository.customGroupCount() >= GroupRepository.freeGroupLimit) {
+      _info(context, loc.groupLimitReached(GroupRepository.freeGroupLimit));
+      return AssistantApplyResult.failed;
+    }
+    await GroupRepository.addGroup(categoryKey: key, name: label);
+    if (context.mounted) ActionFeedbackSnackbar.showAdded(context, label);
+    return AssistantApplyResult.applied;
+  }
+
+  static Future<AssistantApplyResult> _renameGroup(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final key = action.categoryKey;
+    final from = action.previousName;
+    final name = action.name;
+    if (key == null || from == null || name == null) {
+      return AssistantApplyResult.failed;
+    }
+    await GroupRepository.loadForCurrentUser();
+    if (!context.mounted) return AssistantApplyResult.failed;
+    final label = normaliseTitleCase(name);
+    if (label.trim().toLowerCase() != from.trim().toLowerCase() &&
+        _groupNameTaken(loc, key, label)) {
+      _info(context, loc.nameInUse);
+      return AssistantApplyResult.failed;
+    }
+    final ok = await GroupRepository.renameGroup(
+      categoryKey: key,
+      from: from,
+      to: label,
+    );
+    if (!context.mounted) {
+      return ok ? AssistantApplyResult.applied : AssistantApplyResult.failed;
+    }
+    if (!ok) {
+      _info(context, loc.assistantActionNotPossible);
+      return AssistantApplyResult.failed;
+    }
+    slot.undo = () =>
+        GroupRepository.renameGroup(categoryKey: key, from: label, to: from);
+    return AssistantApplyResult.applied;
+  }
+
+  static Future<AssistantApplyResult> _move(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final categoryKey = action.categoryKey;
+    if (categoryKey == null) return AssistantApplyResult.failed;
+    await Future.wait(<Future<void>>[
+      CategoryRepository.loadForCurrentUser(),
+      GroupRepository.loadForCurrentUser(),
+    ]);
+    if (!context.mounted) return AssistantApplyResult.failed;
+    final groupKey = resolveGroupKey(action);
+    if (groupKey == null || !_categoryExists(categoryKey)) {
+      _info(context, loc.assistantActionNotPossible);
+      return AssistantApplyResult.failed;
+    }
+    final label = categoryLabel(context, categoryKey);
+
+    final before = <TrackedItem>[];
+    for (final id in action.recordIds) {
+      final record = await _editableRecord(context, id);
+      if (!context.mounted) break;
+      if (record == null) continue;
+      if (record.categoryKey == categoryKey &&
+          record.subcategoryName == groupKey) {
+        continue;
+      }
+      before.add(record);
+    }
+    if (!context.mounted || before.isEmpty) {
+      return AssistantApplyResult.failed;
+    }
+    for (final record in before) {
+      await RecordRepository.updateRecord(
+        record,
+        record.copyWith(
+          categoryKey: categoryKey,
+          categoryLabel: label,
+          subcategoryName: groupKey,
+        ),
+      );
+    }
+    _refreshHome();
+    slot.undo = () async {
+      var any = false;
+      for (final old in before) {
+        final id = old.id;
+        final current = id == null ? null : RecordRepository.findById(id);
+        if (current == null) continue;
+        await RecordRepository.updateRecord(current, old);
+        any = true;
+      }
+      _refreshHome();
+      return any;
+    };
+    if (context.mounted) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.recordsMoved(before.length),
+        icon: Icons.drive_file_move_rounded,
+      );
+    }
+    return AssistantApplyResult.applied;
+  }
+
+  static Future<AssistantApplyResult> _restore(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final id = action.recordId;
+    if (id == null) return AssistantApplyResult.failed;
+    final deleted = await RecordRepository.getDeleted();
+    if (!context.mounted) return AssistantApplyResult.failed;
+    TrackedItem? record;
+    for (final r in deleted) {
+      if (r.id == id) record = r;
+    }
+    if (record == null) {
+      _info(context, loc.assistantRecordMissing);
+      return AssistantApplyResult.failed;
+    }
+    await RecordRepository.restoreRecord(record);
+    _refreshHome();
+    slot.undo = () async {
+      final current = RecordRepository.findById(id);
+      if (current == null) return false;
+      await RecordRepository.softDeleteRecord(current);
+      _refreshHome();
+      return true;
+    };
+    if (context.mounted) {
+      ActionFeedbackSnackbar.showRestored(context, record.name);
+    }
+    return AssistantApplyResult.applied;
   }
 
   static Future<AssistantApplyResult> _add(
@@ -342,7 +675,8 @@ class AssistantActionLauncher {
       clearReminder:
           changes.reminderDays != null && changes.reminderDays!.value == null,
       leadDays: changes.leadDays?.value,
-      clearLeadDays: changes.leadDays != null && changes.leadDays!.value == null,
+      clearLeadDays:
+          changes.leadDays != null && changes.leadDays!.value == null,
       repeatMonths: changes.repeatMonths?.value,
       clearRepeat:
           changes.repeatMonths != null && changes.repeatMonths!.value == null,
@@ -356,7 +690,8 @@ class AssistantActionLauncher {
     slot.undo = _restoreRecord(record);
     if (!context.mounted) return AssistantApplyResult.applied;
     _refreshHome();
-    final remindersChanged = changes.reminderDays != null ||
+    final remindersChanged =
+        changes.reminderDays != null ||
         changes.leadDays != null ||
         changes.expiryDate != null;
     if (remindersChanged) {
@@ -437,9 +772,9 @@ class AssistantActionLauncher {
 
   static Future<PlanTier> _tier() async {
     try {
-      return await PlanRepository.tierStream()
-          .first
-          .timeout(const Duration(seconds: 6));
+      return await PlanRepository.tierStream().first.timeout(
+        const Duration(seconds: 6),
+      );
     } catch (_) {
       return PlanTier.free;
     }
@@ -535,14 +870,16 @@ class AssistantActionLauncher {
       final residenceBefore = NationalityRepository.myResidence.value;
       var ok = true;
       if (action.hasNationality) {
-        ok = await NationalityRepository.set(
+        ok =
+            await NationalityRepository.set(
               null,
               _knownCountry(action.nationality),
             ) &&
             ok;
       }
       if (action.hasResidence) {
-        ok = await NationalityRepository.setResidence(
+        ok =
+            await NationalityRepository.setResidence(
               null,
               _knownCountry(action.residence),
             ) &&
@@ -553,11 +890,13 @@ class AssistantActionLauncher {
         slot.undo = () async {
           var undone = true;
           if (action.hasNationality) {
-            undone = await NationalityRepository.set(null, nationalityBefore) &&
+            undone =
+                await NationalityRepository.set(null, nationalityBefore) &&
                 undone;
           }
           if (action.hasResidence) {
-            undone = await NationalityRepository.setResidence(
+            undone =
+                await NationalityRepository.setResidence(
                   null,
                   residenceBefore,
                 ) &&
@@ -636,16 +975,18 @@ class AssistantActionLauncher {
         return null;
       }
       final country = f.toCountry;
-      out.add(country == null || Countries.byCode(country) != null
-          ? f
-          : TripFlight(
-              from: f.from,
-              to: f.to,
-              departDate: f.departDate,
-              departTime: f.departTime,
-              landDate: f.landDate,
-              landTime: f.landTime,
-            ));
+      out.add(
+        country == null || Countries.byCode(country) != null
+            ? f
+            : TripFlight(
+                from: f.from,
+                to: f.to,
+                departDate: f.departDate,
+                departTime: f.departTime,
+                landDate: f.landDate,
+                landTime: f.landTime,
+              ),
+      );
       if (out.length >= SavedTrip.maxFlights) break;
     }
     out.sort(TripFlight.compare);
@@ -688,7 +1029,8 @@ class AssistantActionLauncher {
       return AssistantApplyResult.failed;
     }
     final countries = _validCountries(action.countries);
-    final name = action.name ??
+    final name =
+        action.name ??
         (countries.isEmpty
             ? ''
             : SavedTrip.defaultName(countries, places: action.places));
@@ -720,8 +1062,7 @@ class AssistantActionLauncher {
     final base = plain.copyWith(
       arrivals: _zonedArrivals(plain, action.arrivals),
     );
-    final needsVisa =
-        VisaCheck.autoNeedsVisa(VisaCheck.forTrip(base)) ?? false;
+    final needsVisa = VisaCheck.autoNeedsVisa(VisaCheck.forTrip(base)) ?? false;
     final draft = base.copyWith(needsVisa: needsVisa);
     final saved = await TripRepository.add(
       draft.copyWith(checklist: TripChecklist.build(loc, draft)),
@@ -757,10 +1098,12 @@ class AssistantActionLauncher {
     final countries = changes.countries == null
         ? base.countries
         : _validCountries(changes.countries!);
-    final departure =
-        changes.departure == null ? base.start : Dates.only(changes.departure!);
-    final returnDate =
-        changes.returnDate == null ? base.end : Dates.only(changes.returnDate!);
+    final departure = changes.departure == null
+        ? base.start
+        : Dates.only(changes.departure!);
+    final returnDate = changes.returnDate == null
+        ? base.end
+        : Dates.only(changes.returnDate!);
     if (returnDate.isBefore(departure)) {
       _info(context, loc.assistantActionNotPossible);
       return AssistantApplyResult.failed;

@@ -15,6 +15,12 @@ enum AssistantActionType {
   setting,
   location,
   open,
+  categoryAdd,
+  categoryRename,
+  groupAdd,
+  groupRename,
+  move,
+  restore,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -183,6 +189,8 @@ class AssistantAction {
     'daily_digest',
     'monthly_summary',
     'reminder_time',
+    'after_expiry',
+    'weekly',
   ];
 
   static const Set<String> onlyOn = <String>{
@@ -259,6 +267,18 @@ class AssistantAction {
   final bool? settingOn;
   final String? settingTime;
 
+  /// The current name, for a rename.
+  final String? previousName;
+
+  /// Display names that go with [categoryKey] and [groupKey] when the server
+  /// sent them (the user's own categories and groups).
+  final String? categoryName;
+  final String? groupName;
+
+  /// Records a move card covers, and the names it may show.
+  final List<String> recordIds;
+  final List<String> recordNames;
+
   const AssistantAction({
     required this.type,
     this.name,
@@ -301,6 +321,11 @@ class AssistantAction {
     this.setting,
     this.settingOn,
     this.settingTime,
+    this.previousName,
+    this.categoryName,
+    this.groupName,
+    this.recordIds = const <String>[],
+    this.recordNames = const <String>[],
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -452,8 +477,104 @@ class AssistantAction {
         return const AssistantAction(type: AssistantActionType.location);
       case 'open':
         return _fromOpen(raw);
+      case 'category_add':
+        {
+          final name = text(raw['name'], 30);
+          if (name == null) return null;
+          return AssistantAction(
+            type: AssistantActionType.categoryAdd,
+            name: name,
+          );
+        }
+      case 'category_rename':
+        {
+          final key = text(raw['categoryKey'], 80);
+          final name = text(raw['name'], 30);
+          if (key == null || name == null) return null;
+          return AssistantAction(
+            type: AssistantActionType.categoryRename,
+            categoryKey: key,
+            previousName: text(raw['from'], 80),
+            name: name,
+          );
+        }
+      case 'group_add':
+        {
+          final key = text(raw['categoryKey'], 80);
+          final name = text(raw['name'], 30);
+          if (key == null || name == null) return null;
+          return AssistantAction(
+            type: AssistantActionType.groupAdd,
+            categoryKey: key,
+            categoryName: text(raw['categoryName'], 80),
+            name: name,
+          );
+        }
+      case 'group_rename':
+        {
+          final key = text(raw['categoryKey'], 80);
+          final from = text(raw['from'], 80);
+          final name = text(raw['name'], 30);
+          if (key == null || from == null || name == null) return null;
+          return AssistantAction(
+            type: AssistantActionType.groupRename,
+            categoryKey: key,
+            groupKey: text(raw['groupKey'], 80),
+            previousName: from,
+            name: name,
+          );
+        }
+      case 'move':
+        return _fromMove(raw);
+      case 'restore':
+        {
+          final id = text(raw['recordId'], 200);
+          if (id == null) return null;
+          return AssistantAction(
+            type: AssistantActionType.restore,
+            recordId: id,
+            name: text(raw['name'], 60),
+          );
+        }
     }
     return null;
+  }
+
+  static const int maxMove = 25;
+
+  static AssistantAction? _fromMove(Map<dynamic, dynamic> raw) {
+    final ids = <String>[];
+    final rawIds = raw['recordIds'];
+    if (rawIds is List) {
+      for (final item in rawIds) {
+        final id = text(item, 200);
+        if (id != null && !ids.contains(id)) ids.add(id);
+        if (ids.length >= maxMove) break;
+      }
+    }
+    final categoryKey = text(raw['categoryKey'], 80);
+    final groupKey = text(raw['groupKey'], 80);
+    final groupName = text(raw['groupName'], 80);
+    if (ids.isEmpty || categoryKey == null) return null;
+    if (groupKey == null && groupName == null) return null;
+    final names = <String>[];
+    final rawNames = raw['names'];
+    if (rawNames is List) {
+      for (final item in rawNames) {
+        final n = text(item, 60);
+        if (n != null) names.add(n);
+        if (names.length >= 5) break;
+      }
+    }
+    return AssistantAction(
+      type: AssistantActionType.move,
+      recordIds: ids,
+      recordNames: names,
+      categoryKey: categoryKey,
+      categoryName: text(raw['categoryName'], 80),
+      groupKey: groupKey,
+      groupName: groupName,
+    );
   }
 
   static AssistantAction? _fromAdd(Map<dynamic, dynamic> raw) {

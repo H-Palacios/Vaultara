@@ -9,6 +9,8 @@ import 'package:vaultara/features/auth/services/biometric_preference.dart';
 import 'package:vaultara/features/platform/privacy_screen.dart';
 import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
 import 'package:vaultara/features/reminders/services/monthly_summary_service.dart';
+import 'package:vaultara/features/reminders/services/notification_prefs.dart';
+import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
 import 'package:vaultara/features/reminders/services/push_service.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
@@ -51,6 +53,10 @@ class AssistantSettings {
         return loc.monthlySummaryTitle;
       case 'reminder_time':
         return loc.reminderTimeTitle;
+      case 'after_expiry':
+        return loc.notifAfterExpiryTitle;
+      case 'weekly':
+        return loc.notifWeeklyTitle;
     }
     return '';
   }
@@ -71,6 +77,10 @@ class AssistantSettings {
         return Icons.mark_email_read_rounded;
       case 'reminder_time':
         return Icons.schedule_rounded;
+      case 'after_expiry':
+        return Icons.event_busy_rounded;
+      case 'weekly':
+        return Icons.calendar_view_week_rounded;
     }
     return Icons.settings_rounded;
   }
@@ -156,8 +166,7 @@ class AssistantSettings {
         if (summaryOn == null) break;
         final bool wanted = summaryOn;
         final locale = AppLocalizations.of(context)!.localeName;
-        final before = await MonthlySummaryService.enabledStream()
-            .first
+        final before = await MonthlySummaryService.enabledStream().first
             .timeout(const Duration(seconds: 6), onTimeout: () => !wanted);
         if (!context.mounted) break;
         return _toggle(
@@ -169,6 +178,18 @@ class AssistantSettings {
         );
       case 'reminder_time':
         return _reminderTime(context, timeOf(action.settingTime));
+      case 'after_expiry':
+      case 'weekly':
+        final kindOn = action.settingOn;
+        if (kindOn == null) break;
+        return _kind(
+          context,
+          setting,
+          setting == 'weekly'
+              ? NotificationKind.weekly
+              : NotificationKind.afterExpiry,
+          kindOn,
+        );
     }
     return const AssistantSettingResult(AssistantSettingOutcome.failed);
   }
@@ -185,12 +206,38 @@ class AssistantSettings {
       return const AssistantSettingResult(AssistantSettingOutcome.unchanged);
     }
     await write(wanted);
-    return AssistantSettingResult(
-      AssistantSettingOutcome.changed,
-      () async {
-        await write(before);
-        return true;
-      },
+    return AssistantSettingResult(AssistantSettingOutcome.changed, () async {
+      await write(before);
+      return true;
+    });
+  }
+
+  static Future<AssistantSettingResult> _kind(
+    BuildContext context,
+    String setting,
+    NotificationKind kind,
+    bool wanted,
+  ) async {
+    await NotificationPrefs.load();
+    if (!context.mounted) {
+      return const AssistantSettingResult(AssistantSettingOutcome.failed);
+    }
+    Future<void> write(bool value) async {
+      await NotificationPrefs.set(kind, value);
+      if (kind == NotificationKind.weekly) {
+        if (value) await ReminderScheduler.ensurePermissions();
+        unawaited(WeeklyRecapNotifier.rebuild());
+      } else {
+        unawaited(RecordRepository.resyncAllReminders());
+      }
+    }
+
+    return _toggle(
+      context,
+      setting,
+      NotificationPrefs.get(kind),
+      wanted,
+      write,
     );
   }
 
@@ -242,13 +289,10 @@ class AssistantSettings {
     }
     await ReminderTimeService.setTime(wanted);
     unawaited(RecordRepository.resyncAllReminders());
-    return AssistantSettingResult(
-      AssistantSettingOutcome.changed,
-      () async {
-        await ReminderTimeService.setTime(before);
-        unawaited(RecordRepository.resyncAllReminders());
-        return true;
-      },
-    );
+    return AssistantSettingResult(AssistantSettingOutcome.changed, () async {
+      await ReminderTimeService.setTime(before);
+      unawaited(RecordRepository.resyncAllReminders());
+      return true;
+    });
   }
 }
