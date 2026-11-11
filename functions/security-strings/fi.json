@@ -73,5 +73,20 @@
   "deleteButton": "Tarkista ja poista",
   "deleteExpiry": "Linkki toimii kerran ja vanhenee 1 tunnin kuluttua.",
   "deleteNotYou": "Jos et pyytänyt tätä, voit jättää tämän sähköpostin huomiotta. Tilisi pysyy täsmälleen ennallaan.",
-  "deleteFooter": "Lähetämme tämän sähköpostin, koska joku pyysi poistamaan tähän osoitteeseen liittyvän Vaultara-tilin."
+  "deleteFooter": "Lähetämme tämän sähköpostin, koska joku pyysi poistamaan tähän osoitteeseen liittyvän Vaultara-tilin.",
+
+  "signUpCodeSubject": "{code} on Vaultara-koodisi",
+  "signUpCodeHeading": "Viimeistele tilisi luominen",
+  "signUpCodeBody": "Anna tämä koodi Vaultarassa, niin tilisi luominen viimeistellään.",
+  "signUpCodeExpiry": "Koodi vanhenee 10 minuutissa. Jos et yrittänyt luoda Vaultara-tiliä, voit ohittaa tämän viestin. Ilman koodia tiliä ei luoda.",
+  "alreadyRegisteredSubject": "Sinulla on jo Vaultara-tili",
+  "alreadyRegisteredHeading": "Sinulla on jo tili",
+  "alreadyRegisteredBody": "Joku yritti juuri luoda Vaultara-tilin tällä sähköpostiosoitteella. Sinulla on jo tili, joten uutta ei luotu.",
+  "alreadyRegisteredSignIn": "Jos se olit sinä, kirjaudu sovelluksessa salasanallasi. Unohditko sen? Valitse uusi alla olevalla painikkeella.",
+  "alreadyRegisteredButton": "Valitse uusi salasana",
+  "alreadyRegisteredNotYou": "Jos se et ollut sinä, sinun ei tarvitse tehdä mitään. Tilisi ei ole muuttunut.",
+  "noAccountSubject": "Tälle sähköpostille ei ole Vaultara-tiliä",
+  "noAccountHeading": "Tällä sähköpostilla ei ole tiliä",
+  "noAccountBody": "Joku pyysi Vaultara-salasanan palautusta tälle sähköpostiosoitteelle, mutta sille ei ole Vaultara-tiliä. Jos se olit sinä, rekisteröidyit ehkä toisella osoitteella, tai voit luoda tilin sovelluksessa.",
+  "noAccountNotYou": "Jos se et ollut sinä, voit ohittaa tämän viestin."
 }

@@ -73,5 +73,20 @@
   "deleteButton": "Revisar e eliminar",
   "deleteExpiry": "A ligazón funciona unha soa vez e caduca en 1 hora.",
   "deleteNotYou": "Se non o pediches ti, podes ignorar este correo. A túa conta queda exactamente como está.",
-  "deleteFooter": "Enviámosche este correo porque alguén pediu eliminar a conta de Vaultara deste enderezo."
+  "deleteFooter": "Enviámosche este correo porque alguén pediu eliminar a conta de Vaultara deste enderezo.",
+
+  "signUpCodeSubject": "{code} é o teu código de Vaultara",
+  "signUpCodeHeading": "Remata de crear a túa conta",
+  "signUpCodeBody": "Introduce este código en Vaultara para rematar de crear a túa conta.",
+  "signUpCodeExpiry": "O código caduca en 10 minutos. Se non intentaches crear unha conta de Vaultara, podes ignorar este correo. Sen o código non se crea ningunha conta.",
+  "alreadyRegisteredSubject": "Xa tes unha conta de Vaultara",
+  "alreadyRegisteredHeading": "Xa tes unha conta",
+  "alreadyRegisteredBody": "Alguén acaba de intentar crear unha conta de Vaultara con este enderezo de correo. Xa tes unha, así que non se creou ningunha conta nova.",
+  "alreadyRegisteredSignIn": "Se fuches ti, inicia sesión co teu contrasinal na aplicación. Esquecíchelo? Escolle un novo co botón de abaixo.",
+  "alreadyRegisteredButton": "Escoller un contrasinal novo",
+  "alreadyRegisteredNotYou": "Se non fuches ti, non tes que facer nada. A túa conta non cambiou.",
+  "noAccountSubject": "Non hai ningunha conta de Vaultara para este correo",
+  "noAccountHeading": "Non hai ningunha conta con este correo",
+  "noAccountBody": "Alguén pediu restablecer o contrasinal de Vaultara deste enderezo de correo, pero non hai ningunha conta de Vaultara asociada. Se fuches ti, quizais te rexistraches con outro enderezo, ou podes crear unha conta na aplicación.",
+  "noAccountNotYou": "Se non fuches ti, podes ignorar este correo."
 }

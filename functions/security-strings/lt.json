@@ -73,5 +73,20 @@
   "deleteButton": "Peržiūrėti ir ištrinti",
   "deleteExpiry": "Nuoroda veikia vieną kartą ir nustoja galioti po 1 valandos.",
   "deleteNotYou": "Jei to neprašėte, galite nekreipti dėmesio į šį el. laišką. Jūsų paskyra liks tokia, kokia yra.",
-  "deleteFooter": "Šį el. laišką siunčiame, nes kažkas paprašė ištrinti šio adreso Vaultara paskyrą."
+  "deleteFooter": "Šį el. laišką siunčiame, nes kažkas paprašė ištrinti šio adreso Vaultara paskyrą.",
+
+  "signUpCodeSubject": "{code} yra jūsų Vaultara kodas",
+  "signUpCodeHeading": "Užbaikite paskyros kūrimą",
+  "signUpCodeBody": "Įveskite šį kodą Vaultara programoje, kad užbaigtumėte paskyros kūrimą.",
+  "signUpCodeExpiry": "Kodas nebegalios po 10 minučių. Jei nebandėte sukurti Vaultara paskyros, šį laišką galite ignoruoti. Be kodo paskyra nesukuriama.",
+  "alreadyRegisteredSubject": "Jūs jau turite Vaultara paskyrą",
+  "alreadyRegisteredHeading": "Jūs jau turite paskyrą",
+  "alreadyRegisteredBody": "Kažkas ką tik bandė sukurti Vaultara paskyrą su šiuo el. pašto adresu. Jūs jau turite paskyrą, todėl nauja nebuvo sukurta.",
+  "alreadyRegisteredSignIn": "Jei tai buvote jūs, prisijunkite programoje savo slaptažodžiu. Pamiršote? Pasirinkite naują mygtuku žemiau.",
+  "alreadyRegisteredButton": "Pasirinkti naują slaptažodį",
+  "alreadyRegisteredNotYou": "Jei tai buvote ne jūs, nieko daryti nereikia. Jūsų paskyra nepasikeitė.",
+  "noAccountSubject": "Šiam el. paštui Vaultara paskyros nėra",
+  "noAccountHeading": "Su šiuo el. paštu paskyros nėra",
+  "noAccountBody": "Kažkas paprašė atkurti Vaultara slaptažodį šiam el. pašto adresui, tačiau jam nėra Vaultara paskyros. Jei tai buvote jūs, galbūt užsiregistravote kitu el. pašto adresu arba galite sukurti paskyrą programoje.",
+  "noAccountNotYou": "Jei tai buvote ne jūs, šį laišką galite ignoruoti."
 }

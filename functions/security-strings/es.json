@@ -73,5 +73,20 @@
   "deleteButton": "Revisar y eliminar",
   "deleteExpiry": "El enlace funciona una sola vez y caduca en 1 hora.",
   "deleteNotYou": "Si no lo pediste tú, puedes ignorar este correo. Tu cuenta se queda exactamente como está.",
-  "deleteFooter": "Te enviamos este correo porque alguien pidió eliminar la cuenta de Vaultara de esta dirección."
+  "deleteFooter": "Te enviamos este correo porque alguien pidió eliminar la cuenta de Vaultara de esta dirección.",
+
+  "signUpCodeSubject": "{code} es tu código de Vaultara",
+  "signUpCodeHeading": "Termina de crear tu cuenta",
+  "signUpCodeBody": "Introduce este código en Vaultara para terminar de crear tu cuenta.",
+  "signUpCodeExpiry": "El código caduca en 10 minutos. Si no intentaste crear una cuenta de Vaultara, puedes ignorar este correo. Sin el código no se crea ninguna cuenta.",
+  "alreadyRegisteredSubject": "Ya tienes una cuenta de Vaultara",
+  "alreadyRegisteredHeading": "Ya tienes una cuenta",
+  "alreadyRegisteredBody": "Alguien acaba de intentar crear una cuenta de Vaultara con esta dirección de correo. Ya tienes una, así que no se creó ninguna cuenta nueva.",
+  "alreadyRegisteredSignIn": "Si fuiste tú, inicia sesión con tu contraseña en la app. ¿La olvidaste? Elige una nueva con el botón de abajo.",
+  "alreadyRegisteredButton": "Elegir una contraseña nueva",
+  "alreadyRegisteredNotYou": "Si no fuiste tú, no tienes que hacer nada. Tu cuenta no ha cambiado.",
+  "noAccountSubject": "No hay ninguna cuenta de Vaultara para este correo",
+  "noAccountHeading": "No hay ninguna cuenta con este correo",
+  "noAccountBody": "Alguien pidió restablecer la contraseña de Vaultara para esta dirección de correo, pero no hay ninguna cuenta de Vaultara asociada. Si fuiste tú, quizá te registraste con otra dirección, o puedes crear una cuenta en la app.",
+  "noAccountNotYou": "Si no fuiste tú, puedes ignorar este correo."
 }

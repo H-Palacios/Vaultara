@@ -73,5 +73,20 @@
   "deleteButton": "Bax və sil",
   "deleteExpiry": "Link bir dəfə işləyir və 1 saata etibarsız olur.",
   "deleteNotYou": "Əgər bunu siz istəməmisinizsə, bu e-poçta məhəl qoymaya bilərsiniz. Hesabınız olduğu kimi qalır.",
-  "deleteFooter": "Bu e-poçtu ona görə göndəririk ki, kimsə bu ünvana aid Vaultara hesabının silinməsini istəyib."
+  "deleteFooter": "Bu e-poçtu ona görə göndəririk ki, kimsə bu ünvana aid Vaultara hesabının silinməsini istəyib.",
+
+  "signUpCodeSubject": "{code} Vaultara kodunuzdur",
+  "signUpCodeHeading": "Hesabınızın yaradılmasını tamamlayın",
+  "signUpCodeBody": "Hesabınızın yaradılmasını tamamlamaq üçün bu kodu Vaultara-ya daxil edin.",
+  "signUpCodeExpiry": "Kodun müddəti 10 dəqiqəyə bitir. Vaultara hesabı yaratmağa cəhd etməmisinizsə, bu məktubu nəzərə almaya bilərsiniz. Kod olmadan heç bir hesab yaradılmır.",
+  "alreadyRegisteredSubject": "Artıq Vaultara hesabınız var",
+  "alreadyRegisteredHeading": "Artıq hesabınız var",
+  "alreadyRegisteredBody": "Kimsə indicə bu e-poçt ünvanı ilə Vaultara hesabı yaratmağa cəhd etdi. Artıq hesabınız olduğu üçün yeni hesab yaradılmadı.",
+  "alreadyRegisteredSignIn": "Bu sizsinizsə, tətbiqdə parolunuzla daxil olun. Unutmusunuz? Aşağıdakı düymə ilə yenisini seçin.",
+  "alreadyRegisteredButton": "Yeni parol seçin",
+  "alreadyRegisteredNotYou": "Bu siz deyilsinizsə, heç nə etməyinizə ehtiyac yoxdur. Hesabınız dəyişməyib.",
+  "noAccountSubject": "Bu e-poçt üçün Vaultara hesabı yoxdur",
+  "noAccountHeading": "Bu e-poçtla hesab yoxdur",
+  "noAccountBody": "Kimsə bu e-poçt ünvanı üçün Vaultara parolunun sıfırlanmasını istədi, lakin onun üçün Vaultara hesabı yoxdur. Bu sizsinizsə, bəlkə başqa e-poçt ünvanı ilə qeydiyyatdan keçmisiniz və ya tətbiqdə hesab yarada bilərsiniz.",
+  "noAccountNotYou": "Bu siz deyilsinizsə, bu məktubu nəzərə almaya bilərsiniz."
 }

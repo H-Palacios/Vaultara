@@ -73,5 +73,20 @@
   "deleteButton": "Sprawdź i usuń",
   "deleteExpiry": "Link działa jeden raz i wygasa po 1 godzinie.",
   "deleteNotYou": "Jeśli to nie ty o to prosiłeś, możesz zignorować tę wiadomość. Twoje konto pozostanie dokładnie takie, jak jest.",
-  "deleteFooter": "Wysyłamy tę wiadomość, ponieważ ktoś poprosił o usunięcie konta Vaultara powiązanego z tym adresem."
+  "deleteFooter": "Wysyłamy tę wiadomość, ponieważ ktoś poprosił o usunięcie konta Vaultara powiązanego z tym adresem.",
+
+  "signUpCodeSubject": "{code} to Twój kod Vaultara",
+  "signUpCodeHeading": "Dokończ zakładanie konta",
+  "signUpCodeBody": "Wpisz ten kod w Vaultarze, aby dokończyć zakładanie konta.",
+  "signUpCodeExpiry": "Kod wygaśnie za 10 minut. Jeśli nie próbowałeś założyć konta Vaultara, możesz zignorować tego e-maila. Bez kodu konto nie zostanie utworzone.",
+  "alreadyRegisteredSubject": "Masz już konto Vaultara",
+  "alreadyRegisteredHeading": "Masz już konto",
+  "alreadyRegisteredBody": "Ktoś właśnie próbował założyć konto Vaultara z tym adresem e-mail. Masz już konto, więc nowe nie zostało utworzone.",
+  "alreadyRegisteredSignIn": "Jeśli to Ty, zaloguj się w aplikacji swoim hasłem. Nie pamiętasz go? Wybierz nowe przyciskiem poniżej.",
+  "alreadyRegisteredButton": "Wybierz nowe hasło",
+  "alreadyRegisteredNotYou": "Jeśli to nie Ty, nie musisz nic robić. Twoje konto się nie zmieniło.",
+  "noAccountSubject": "Dla tego adresu nie ma konta Vaultara",
+  "noAccountHeading": "Brak konta z tym adresem",
+  "noAccountBody": "Ktoś poprosił o zresetowanie hasła Vaultara dla tego adresu e-mail, ale nie ma dla niego konta Vaultara. Jeśli to Ty, może zarejestrowałeś się innym adresem albo możesz założyć konto w aplikacji.",
+  "noAccountNotYou": "Jeśli to nie Ty, możesz zignorować tego e-maila."
 }

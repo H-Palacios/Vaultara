@@ -73,5 +73,20 @@
   "deleteButton": "Suriin at tanggalin",
   "deleteExpiry": "Isang beses lang gagana ang link at mag-e-expire ito sa loob ng 1 oras.",
   "deleteNotYou": "Kung hindi ikaw ang humiling nito, puwede mong balewalain ang email na ito. Mananatili ang account mo nang eksakto kung ano ito ngayon.",
-  "deleteFooter": "Ipinadala namin ang email na ito dahil may humiling na tanggalin ang Vaultara account para sa address na ito."
+  "deleteFooter": "Ipinadala namin ang email na ito dahil may humiling na tanggalin ang Vaultara account para sa address na ito.",
+
+  "signUpCodeSubject": "{code} ang iyong Vaultara code",
+  "signUpCodeHeading": "Tapusin ang paggawa ng iyong account",
+  "signUpCodeBody": "Ilagay ang code na ito sa Vaultara para matapos ang paggawa ng iyong account.",
+  "signUpCodeExpiry": "Mag-e-expire ang code sa loob ng 10 minuto. Kung hindi mo sinubukang gumawa ng Vaultara account, puwede mong balewalain ang email na ito. Walang account na gagawin nang walang code.",
+  "alreadyRegisteredSubject": "May Vaultara account ka na",
+  "alreadyRegisteredHeading": "May account ka na",
+  "alreadyRegisteredBody": "May sumubok na gumawa ng Vaultara account gamit ang email address na ito. May account ka na, kaya walang bagong account na ginawa.",
+  "alreadyRegisteredSignIn": "Kung ikaw iyon, mag-sign in gamit ang iyong password sa app. Nakalimutan mo? Pumili ng bago gamit ang button sa ibaba.",
+  "alreadyRegisteredButton": "Pumili ng bagong password",
+  "alreadyRegisteredNotYou": "Kung hindi ikaw iyon, wala kang kailangang gawin. Walang nagbago sa iyong account.",
+  "noAccountSubject": "Walang Vaultara account para sa email na ito",
+  "noAccountHeading": "Walang account sa email na ito",
+  "noAccountBody": "May humiling na i-reset ang Vaultara password para sa email address na ito, pero walang Vaultara account para dito. Kung ikaw iyon, baka ibang email address ang ginamit mo sa pag-sign up, o puwede kang gumawa ng account sa app.",
+  "noAccountNotYou": "Kung hindi ikaw iyon, puwede mong balewalain ang email na ito."
 }

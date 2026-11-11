@@ -696,6 +696,14 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // Pending sign-up codes and email cooldowns. Only the Cloud Functions use them.
+    match /pendingSignUps/{id} {
+      allow read, write: if false;
+    }
+    match /signUpNotices/{id} {
+      allow read, write: if false;
+    }
+
     match /billingNotices/{noticeId} {
       allow read, write: if false;
     }

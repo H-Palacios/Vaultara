@@ -73,5 +73,20 @@
   "deleteButton": "Controlla ed elimina",
   "deleteExpiry": "Il link funziona una sola volta e scade tra 1 ora.",
   "deleteNotYou": "Se non l'hai chiesto tu, puoi ignorare questa email. Il tuo account resta esattamente com'è.",
-  "deleteFooter": "Ti inviamo questa email perché qualcuno ha chiesto di eliminare l'account Vaultara di questo indirizzo."
+  "deleteFooter": "Ti inviamo questa email perché qualcuno ha chiesto di eliminare l'account Vaultara di questo indirizzo.",
+
+  "signUpCodeSubject": "{code} è il tuo codice Vaultara",
+  "signUpCodeHeading": "Completa la creazione del tuo account",
+  "signUpCodeBody": "Inserisci questo codice in Vaultara per completare la creazione del tuo account.",
+  "signUpCodeExpiry": "Il codice scade tra 10 minuti. Se non hai provato a creare un account Vaultara, puoi ignorare questa email. Senza il codice non viene creato alcun account.",
+  "alreadyRegisteredSubject": "Hai già un account Vaultara",
+  "alreadyRegisteredHeading": "Hai già un account",
+  "alreadyRegisteredBody": "Qualcuno ha appena provato a creare un account Vaultara con questo indirizzo email. Ne hai già uno, quindi non è stato creato alcun nuovo account.",
+  "alreadyRegisteredSignIn": "Se sei stato tu, accedi con la tua password nell'app. L'hai dimenticata? Scegline una nuova con il pulsante qui sotto.",
+  "alreadyRegisteredButton": "Scegli una nuova password",
+  "alreadyRegisteredNotYou": "Se non sei stato tu, non devi fare nulla. Il tuo account non è cambiato.",
+  "noAccountSubject": "Non esiste un account Vaultara per questa email",
+  "noAccountHeading": "Nessun account con questa email",
+  "noAccountBody": "Qualcuno ha chiesto di reimpostare la password di Vaultara per questo indirizzo email, ma non esiste un account Vaultara associato. Se sei stato tu, forse ti sei registrato con un altro indirizzo, oppure puoi creare un account nell'app.",
+  "noAccountNotYou": "Se non sei stato tu, puoi ignorare questa email."
 }

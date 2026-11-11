@@ -73,5 +73,20 @@
   "deleteButton": "Revisa i suprimeix",
   "deleteExpiry": "L'enllaç funciona una sola vegada i caduca d'aquí a 1 hora.",
   "deleteNotYou": "Si no ho has demanat tu, pots ignorar aquest correu. El teu compte es queda exactament com està.",
-  "deleteFooter": "T'enviem aquest correu perquè algú ha demanat suprimir el compte de Vaultara d'aquesta adreça."
+  "deleteFooter": "T'enviem aquest correu perquè algú ha demanat suprimir el compte de Vaultara d'aquesta adreça.",
+
+  "signUpCodeSubject": "{code} és el teu codi de Vaultara",
+  "signUpCodeHeading": "Acaba de crear el teu compte",
+  "signUpCodeBody": "Introdueix aquest codi a Vaultara per acabar de crear el teu compte.",
+  "signUpCodeExpiry": "El codi caduca d'aquí a 10 minuts. Si no has intentat crear un compte de Vaultara, pots ignorar aquest correu. Sense el codi no es crea cap compte.",
+  "alreadyRegisteredSubject": "Ja tens un compte de Vaultara",
+  "alreadyRegisteredHeading": "Ja tens un compte",
+  "alreadyRegisteredBody": "Algú acaba d'intentar crear un compte de Vaultara amb aquesta adreça de correu. Ja en tens un, així que no s'ha creat cap compte nou.",
+  "alreadyRegisteredSignIn": "Si has estat tu, inicia la sessió amb la contrasenya a l'aplicació. L'has oblidada? Tria'n una de nova amb el botó de sota.",
+  "alreadyRegisteredButton": "Tria una contrasenya nova",
+  "alreadyRegisteredNotYou": "Si no has estat tu, no cal que facis res. El teu compte no ha canviat.",
+  "noAccountSubject": "No hi ha cap compte de Vaultara per a aquest correu",
+  "noAccountHeading": "No hi ha cap compte amb aquest correu",
+  "noAccountBody": "Algú ha demanat restablir la contrasenya de Vaultara per a aquesta adreça de correu, però no hi ha cap compte de Vaultara associat. Si has estat tu, potser et vas registrar amb una altra adreça, o pots crear un compte a l'aplicació.",
+  "noAccountNotYou": "Si no has estat tu, pots ignorar aquest correu."
 }

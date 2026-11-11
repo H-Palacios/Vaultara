@@ -73,5 +73,20 @@
   "deleteButton": "檢視並刪除",
   "deleteExpiry": "此連結只能使用一次，並會在 1 小時後失效。",
   "deleteNotYou": "如果這不是您提出的要求，您可以忽略這封電子郵件。您的帳戶會維持原狀。",
-  "deleteFooter": "我們寄送這封電子郵件，是因為有人要求刪除此地址的 Vaultara 帳戶。"
+  "deleteFooter": "我們寄送這封電子郵件，是因為有人要求刪除此地址的 Vaultara 帳戶。",
+
+  "signUpCodeSubject": "{code} 是你的 Vaultara 驗證碼",
+  "signUpCodeHeading": "完成建立你的帳戶",
+  "signUpCodeBody": "在 Vaultara 中輸入這個驗證碼，即可完成建立帳戶。",
+  "signUpCodeExpiry": "驗證碼將在 10 分鐘後失效。如果你沒有嘗試建立 Vaultara 帳戶，可以忽略這封郵件。沒有驗證碼就不會建立任何帳戶。",
+  "alreadyRegisteredSubject": "你已經有 Vaultara 帳戶",
+  "alreadyRegisteredHeading": "你已經有帳戶了",
+  "alreadyRegisteredBody": "剛才有人嘗試用這個電子郵件地址建立 Vaultara 帳戶。你已經有一個帳戶，因此沒有建立新帳戶。",
+  "alreadyRegisteredSignIn": "如果是你本人，請在應用程式中使用密碼登入。忘記了？請用下方按鈕設定新密碼。",
+  "alreadyRegisteredButton": "設定新密碼",
+  "alreadyRegisteredNotYou": "如果不是你本人，不需要做任何事。你的帳戶沒有任何變更。",
+  "noAccountSubject": "這個電子郵件沒有 Vaultara 帳戶",
+  "noAccountHeading": "沒有使用這個電子郵件的帳戶",
+  "noAccountBody": "有人要求為這個電子郵件地址重設 Vaultara 密碼，但這個地址沒有 Vaultara 帳戶。如果是你本人，你可能用其他電子郵件地址註冊過，也可以在應用程式中建立帳戶。",
+  "noAccountNotYou": "如果不是你本人，可以忽略這封郵件。"
 }

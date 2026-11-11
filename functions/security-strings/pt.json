@@ -73,5 +73,20 @@
   "deleteButton": "Rever e eliminar",
   "deleteExpiry": "O link só funciona uma vez e expira dentro de 1 hora.",
   "deleteNotYou": "Se não fez este pedido, pode ignorar este email. A sua conta fica exatamente como está.",
-  "deleteFooter": "Enviamos este email porque alguém pediu para eliminar a conta Vaultara associada a este endereço."
+  "deleteFooter": "Enviamos este email porque alguém pediu para eliminar a conta Vaultara associada a este endereço.",
+
+  "signUpCodeSubject": "{code} é o seu código do Vaultara",
+  "signUpCodeHeading": "Termine de criar sua conta",
+  "signUpCodeBody": "Digite este código no Vaultara para terminar de criar sua conta.",
+  "signUpCodeExpiry": "O código expira em 10 minutos. Se você não tentou criar uma conta Vaultara, pode ignorar este e-mail. Nenhuma conta é criada sem o código.",
+  "alreadyRegisteredSubject": "Você já tem uma conta Vaultara",
+  "alreadyRegisteredHeading": "Você já tem uma conta",
+  "alreadyRegisteredBody": "Alguém acabou de tentar criar uma conta Vaultara com este endereço de e-mail. Você já tem uma, então nenhuma conta nova foi criada.",
+  "alreadyRegisteredSignIn": "Se foi você, entre com sua senha no app. Esqueceu? Escolha uma nova com o botão abaixo.",
+  "alreadyRegisteredButton": "Escolher uma nova senha",
+  "alreadyRegisteredNotYou": "Se não foi você, não precisa fazer nada. Sua conta não mudou.",
+  "noAccountSubject": "Não existe conta Vaultara para este e-mail",
+  "noAccountHeading": "Nenhuma conta com este e-mail",
+  "noAccountBody": "Alguém pediu para redefinir a senha do Vaultara deste endereço de e-mail, mas não existe conta Vaultara para ele. Se foi você, talvez tenha se cadastrado com outro endereço, ou você pode criar uma conta no app.",
+  "noAccountNotYou": "Se não foi você, pode ignorar este e-mail."
 }

@@ -73,5 +73,20 @@
   "deleteButton": "Bekijken en verwijderen",
   "deleteExpiry": "De link werkt één keer en verloopt na 1 uur.",
   "deleteNotYou": "Heb je hier niet om gevraagd, dan kun je deze e-mail negeren. Je account blijft precies zoals het is.",
-  "deleteFooter": "We sturen deze e-mail omdat iemand heeft gevraagd het Vaultara-account voor dit adres te verwijderen."
+  "deleteFooter": "We sturen deze e-mail omdat iemand heeft gevraagd het Vaultara-account voor dit adres te verwijderen.",
+
+  "signUpCodeSubject": "{code} is je Vaultara-code",
+  "signUpCodeHeading": "Rond het maken van je account af",
+  "signUpCodeBody": "Voer deze code in Vaultara in om het maken van je account af te ronden.",
+  "signUpCodeExpiry": "De code verloopt over 10 minuten. Als je niet hebt geprobeerd een Vaultara-account te maken, kun je deze e-mail negeren. Zonder de code wordt er geen account gemaakt.",
+  "alreadyRegisteredSubject": "Je hebt al een Vaultara-account",
+  "alreadyRegisteredHeading": "Je hebt al een account",
+  "alreadyRegisteredBody": "Iemand probeerde zojuist een Vaultara-account te maken met dit e-mailadres. Je hebt er al een, dus er is geen nieuw account gemaakt.",
+  "alreadyRegisteredSignIn": "Was jij dit, log dan in met je wachtwoord in de app. Vergeten? Kies een nieuw wachtwoord met de knop hieronder.",
+  "alreadyRegisteredButton": "Nieuw wachtwoord kiezen",
+  "alreadyRegisteredNotYou": "Was jij dit niet, dan hoef je niets te doen. Je account is niet gewijzigd.",
+  "noAccountSubject": "Er is geen Vaultara-account voor dit e-mailadres",
+  "noAccountHeading": "Geen account met dit e-mailadres",
+  "noAccountBody": "Iemand vroeg om het Vaultara-wachtwoord voor dit e-mailadres opnieuw in te stellen, maar er is geen Vaultara-account voor. Was jij dit, dan heb je je misschien met een ander e-mailadres aangemeld, of je kunt een account maken in de app.",
+  "noAccountNotYou": "Was jij dit niet, dan kun je deze e-mail negeren."
 }

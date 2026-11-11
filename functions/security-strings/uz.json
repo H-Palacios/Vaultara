@@ -73,5 +73,20 @@
   "deleteButton": "Koʻrib chiqish va oʻchirish",
   "deleteExpiry": "Havola bir marta ishlaydi va 1 soatdan keyin eskiradi.",
   "deleteNotYou": "Agar buni siz soʻramagan boʻlsangiz, bu xatni eʼtiborsiz qoldirishingiz mumkin. Hisobingiz avvalgidek qoladi.",
-  "deleteFooter": "Bu xatni kimdir ushbu manzil uchun Vaultara hisobini oʻchirishni soʻragani sababli yuboryapmiz."
+  "deleteFooter": "Bu xatni kimdir ushbu manzil uchun Vaultara hisobini oʻchirishni soʻragani sababli yuboryapmiz.",
+
+  "signUpCodeSubject": "{code} – sizning Vaultara kodingiz",
+  "signUpCodeHeading": "Hisobingizni yaratishni yakunlang",
+  "signUpCodeBody": "Hisobingizni yaratishni yakunlash uchun bu kodni Vaultara’ga kiriting.",
+  "signUpCodeExpiry": "Kodning amal qilish muddati 10 daqiqada tugaydi. Agar Vaultara hisobini yaratishga urinmagan bo‘lsangiz, bu xatni e’tiborsiz qoldirishingiz mumkin. Kodsiz hech qanday hisob yaratilmaydi.",
+  "alreadyRegisteredSubject": "Sizda allaqachon Vaultara hisobi bor",
+  "alreadyRegisteredHeading": "Sizda allaqachon hisob bor",
+  "alreadyRegisteredBody": "Kimdir hozirgina bu pochta manzili bilan Vaultara hisobini yaratishga urindi. Sizda allaqachon hisob bor, shuning uchun yangisi yaratilmadi.",
+  "alreadyRegisteredSignIn": "Agar bu siz bo‘lsangiz, ilovada parolingiz bilan kiring. Unutdingizmi? Quyidagi tugma orqali yangisini tanlang.",
+  "alreadyRegisteredButton": "Yangi parol tanlash",
+  "alreadyRegisteredNotYou": "Agar bu siz bo‘lmasangiz, hech narsa qilishingiz shart emas. Hisobingiz o‘zgarmadi.",
+  "noAccountSubject": "Bu pochta uchun Vaultara hisobi yo‘q",
+  "noAccountHeading": "Bu pochta bilan hisob yo‘q",
+  "noAccountBody": "Kimdir bu pochta manzili uchun Vaultara parolini tiklashni so‘radi, lekin unga Vaultara hisobi yo‘q. Agar bu siz bo‘lsangiz, ehtimol boshqa pochta bilan ro‘yxatdan o‘tgansiz yoki ilovada hisob yaratishingiz mumkin.",
+  "noAccountNotYou": "Agar bu siz bo‘lmasangiz, bu xatni e’tiborsiz qoldirishingiz mumkin."
 }

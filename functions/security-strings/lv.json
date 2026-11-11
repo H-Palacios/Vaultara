@@ -73,5 +73,20 @@
   "deleteButton": "Pārskatīt un dzēst",
   "deleteExpiry": "Saite darbojas vienreiz, un tās derīgums beidzas pēc 1 stundas.",
   "deleteNotYou": "Ja jūs to nepieprasījāt, varat ignorēt šo e-pastu. Jūsu konts paliks tieši tāds, kāds tas ir.",
-  "deleteFooter": "Mēs sūtām šo e-pastu, jo kāds pieprasīja dzēst Vaultara kontu šai adresei."
+  "deleteFooter": "Mēs sūtām šo e-pastu, jo kāds pieprasīja dzēst Vaultara kontu šai adresei.",
+
+  "signUpCodeSubject": "{code} ir jūsu Vaultara kods",
+  "signUpCodeHeading": "Pabeidziet konta izveidi",
+  "signUpCodeBody": "Ievadiet šo kodu Vaultara, lai pabeigtu konta izveidi.",
+  "signUpCodeExpiry": "Kods beigsies pēc 10 minūtēm. Ja nemēģinājāt izveidot Vaultara kontu, varat ignorēt šo vēstuli. Bez koda konts netiek izveidots.",
+  "alreadyRegisteredSubject": "Jums jau ir Vaultara konts",
+  "alreadyRegisteredHeading": "Jums jau ir konts",
+  "alreadyRegisteredBody": "Kāds tikko mēģināja izveidot Vaultara kontu ar šo e-pasta adresi. Jums jau ir konts, tāpēc jauns netika izveidots.",
+  "alreadyRegisteredSignIn": "Ja tas bijāt jūs, pierakstieties lietotnē ar savu paroli. Aizmirsāt? Izvēlieties jaunu ar zemāk esošo pogu.",
+  "alreadyRegisteredButton": "Izvēlēties jaunu paroli",
+  "alreadyRegisteredNotYou": "Ja tas nebijāt jūs, jums nekas nav jādara. Jūsu konts nav mainīts.",
+  "noAccountSubject": "Šai e-pasta adresei nav Vaultara konta",
+  "noAccountHeading": "Ar šo e-pastu konta nav",
+  "noAccountBody": "Kāds lūdza atiestatīt Vaultara paroli šai e-pasta adresei, taču tai nav Vaultara konta. Ja tas bijāt jūs, iespējams, reģistrējāties ar citu e-pasta adresi, vai arī varat izveidot kontu lietotnē.",
+  "noAccountNotYou": "Ja tas nebijāt jūs, varat ignorēt šo vēstuli."
 }

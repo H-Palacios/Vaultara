@@ -73,5 +73,20 @@
   "deleteButton": "Gennemse og slet",
   "deleteExpiry": "Linket virker én gang og udløber om 1 time.",
   "deleteNotYou": "Hvis du ikke har bedt om dette, kan du ignorere denne e-mail. Din konto forbliver præcis, som den er.",
-  "deleteFooter": "Vi sender denne e-mail, fordi nogen har bedt om at slette Vaultara-kontoen for denne adresse."
+  "deleteFooter": "Vi sender denne e-mail, fordi nogen har bedt om at slette Vaultara-kontoen for denne adresse.",
+
+  "signUpCodeSubject": "{code} er din Vaultara-kode",
+  "signUpCodeHeading": "Gør oprettelsen af din konto færdig",
+  "signUpCodeBody": "Indtast denne kode i Vaultara for at gøre oprettelsen af din konto færdig.",
+  "signUpCodeExpiry": "Koden udløber om 10 minutter. Hvis du ikke har prøvet at oprette en Vaultara-konto, kan du ignorere denne e-mail. Der oprettes ingen konto uden koden.",
+  "alreadyRegisteredSubject": "Du har allerede en Vaultara-konto",
+  "alreadyRegisteredHeading": "Du har allerede en konto",
+  "alreadyRegisteredBody": "Nogen har lige prøvet at oprette en Vaultara-konto med denne e-mailadresse. Du har allerede en, så der blev ikke oprettet en ny konto.",
+  "alreadyRegisteredSignIn": "Hvis det var dig, så log ind med din adgangskode i appen. Har du glemt den? Vælg en ny med knappen nedenfor.",
+  "alreadyRegisteredButton": "Vælg en ny adgangskode",
+  "alreadyRegisteredNotYou": "Hvis det ikke var dig, behøver du ikke gøre noget. Din konto er ikke ændret.",
+  "noAccountSubject": "Der er ingen Vaultara-konto til denne e-mail",
+  "noAccountHeading": "Ingen konto med denne e-mail",
+  "noAccountBody": "Nogen har bedt om at nulstille Vaultara-adgangskoden til denne e-mailadresse, men der er ingen Vaultara-konto til den. Hvis det var dig, har du måske tilmeldt dig med en anden e-mailadresse, eller du kan oprette en konto i appen.",
+  "noAccountNotYou": "Hvis det ikke var dig, kan du ignorere denne e-mail."
 }

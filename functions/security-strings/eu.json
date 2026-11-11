@@ -73,5 +73,20 @@
   "deleteButton": "Berrikusi eta ezabatu",
   "deleteExpiry": "Estekak behin bakarrik funtzionatzen du eta ordu 1 barru iraungiko da.",
   "deleteNotYou": "Zuk eskatu ez baduzu, mezu honi ez ikusiarena egin diezaiokezu. Zure kontua dagoen bezala geratuko da.",
-  "deleteFooter": "Mezu hau bidaltzen dizugu norbaitek helbide honetako Vaultara kontua ezabatzeko eskatu duelako."
+  "deleteFooter": "Mezu hau bidaltzen dizugu norbaitek helbide honetako Vaultara kontua ezabatzeko eskatu duelako.",
+
+  "signUpCodeSubject": "{code} da zure Vaultara kodea",
+  "signUpCodeHeading": "Amaitu zure kontua sortzen",
+  "signUpCodeBody": "Idatzi kode hau Vaultaran zure kontua sortzen amaitzeko.",
+  "signUpCodeExpiry": "Kodea 10 minututan iraungiko da. Vaultara konturik sortzen saiatu ez bazara, mezu honi ez ikusiarena egin diezaiokezu. Koderik gabe ez da konturik sortzen.",
+  "alreadyRegisteredSubject": "Dagoeneko baduzu Vaultara kontu bat",
+  "alreadyRegisteredHeading": "Dagoeneko baduzu kontu bat",
+  "alreadyRegisteredBody": "Norbait helbide honekin Vaultara kontu bat sortzen saiatu da oraintxe. Dagoeneko baduzu bat; beraz, ez da kontu berririk sortu.",
+  "alreadyRegisteredSignIn": "Zu izan bazara, hasi saioa aplikazioan zure pasahitzarekin. Ahaztu zaizu? Aukeratu berri bat beheko botoiarekin.",
+  "alreadyRegisteredButton": "Aukeratu pasahitz berria",
+  "alreadyRegisteredNotYou": "Zu izan ez bazara, ez duzu ezer egin behar. Zure kontua ez da aldatu.",
+  "noAccountSubject": "Ez dago Vaultara konturik posta honentzat",
+  "noAccountHeading": "Ez dago konturik posta honekin",
+  "noAccountBody": "Norbaitek helbide honen Vaultara pasahitza berrezartzeko eskatu du, baina ez dago Vaultara konturik harentzat. Zu izan bazara, agian beste helbide batekin erregistratu zinen, edo kontu bat sor dezakezu aplikazioan.",
+  "noAccountNotYou": "Zu izan ez bazara, mezu honi ez ikusiarena egin diezaiokezu."
 }

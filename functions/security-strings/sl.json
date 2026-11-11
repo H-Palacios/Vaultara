@@ -73,5 +73,20 @@
   "deleteButton": "Preglej in izbriši",
   "deleteExpiry": "Povezava deluje enkrat in poteče čez 1 uro.",
   "deleteNotYou": "Če tega niste zahtevali, lahko to e-pošto prezrete. Vaš račun ostane točno tak, kot je.",
-  "deleteFooter": "To e-pošto pošiljamo, ker je nekdo zahteval izbris računa Vaultara za ta naslov."
+  "deleteFooter": "To e-pošto pošiljamo, ker je nekdo zahteval izbris računa Vaultara za ta naslov.",
+
+  "signUpCodeSubject": "{code} je vaša koda za Vaultaro",
+  "signUpCodeHeading": "Dokončajte ustvarjanje računa",
+  "signUpCodeBody": "Vnesite to kodo v Vaultaro, da dokončate ustvarjanje računa.",
+  "signUpCodeExpiry": "Koda poteče čez 10 minut. Če niste poskušali ustvariti računa Vaultara, lahko to sporočilo prezrete. Brez kode se račun ne ustvari.",
+  "alreadyRegisteredSubject": "Že imate račun Vaultara",
+  "alreadyRegisteredHeading": "Že imate račun",
+  "alreadyRegisteredBody": "Nekdo je pravkar poskušal ustvariti račun Vaultara s tem e-poštnim naslovom. Račun že imate, zato nov ni bil ustvarjen.",
+  "alreadyRegisteredSignIn": "Če ste bili vi, se v aplikaciji prijavite s svojim geslom. Ste ga pozabili? Izberite novega z gumbom spodaj.",
+  "alreadyRegisteredButton": "Izberite novo geslo",
+  "alreadyRegisteredNotYou": "Če to niste bili vi, vam ni treba storiti ničesar. Vaš račun se ni spremenil.",
+  "noAccountSubject": "Za ta e-poštni naslov ni računa Vaultara",
+  "noAccountHeading": "Ni računa s tem e-poštnim naslovom",
+  "noAccountBody": "Nekdo je zahteval ponastavitev gesla za Vaultaro za ta e-poštni naslov, vendar zanj ni računa Vaultara. Če ste bili vi, ste se morda registrirali z drugim naslovom, ali pa lahko ustvarite račun v aplikaciji.",
+  "noAccountNotYou": "Če to niste bili vi, lahko to sporočilo prezrete."
 }

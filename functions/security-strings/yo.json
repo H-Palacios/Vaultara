@@ -73,5 +73,20 @@
   "deleteButton": "Wò ó kí o sì pa á",
   "deleteExpiry": "Ọ̀nà asopọ̀ náà ń ṣiṣẹ́ lẹ́ẹ̀kan, ó sì máa parí láàárín wákàtí 1.",
   "deleteNotYou": "Bí kì í bá ṣe ìwọ ló béèrè fún èyí, o lè fojú fo imeeli yìí. Akọọlẹ rẹ yóò wà bí ó ṣe wà gẹ́lẹ́.",
-  "deleteFooter": "A fi imeeli yìí ránṣẹ́ nítorí pé ẹnì kan béèrè láti pa akọọlẹ Vaultara ti adirẹsi yìí."
+  "deleteFooter": "A fi imeeli yìí ránṣẹ́ nítorí pé ẹnì kan béèrè láti pa akọọlẹ Vaultara ti adirẹsi yìí.",
+
+  "signUpCodeSubject": "{code} ni kóòdù Vaultara rẹ",
+  "signUpCodeHeading": "Parí ṣíṣe àkáǹtì rẹ",
+  "signUpCodeBody": "Tẹ kóòdù yìí sínú Vaultara láti parí ṣíṣe àkáǹtì rẹ.",
+  "signUpCodeExpiry": "Kóòdù náà yóò parí ní ìṣẹ́jú 10. Bí o kò bá gbìyànjú láti ṣe àkáǹtì Vaultara, o lè fojú fo ímeèlì yìí. Kò sí àkáǹtì tí a ń ṣe láìsí kóòdù náà.",
+  "alreadyRegisteredSubject": "O ti ní àkáǹtì Vaultara tẹ́lẹ̀",
+  "alreadyRegisteredHeading": "O ti ní àkáǹtì tẹ́lẹ̀",
+  "alreadyRegisteredBody": "Ẹnìkan ṣẹ̀ṣẹ̀ gbìyànjú láti ṣe àkáǹtì Vaultara pẹ̀lú àdírẹ́sì ímeèlì yìí. O ti ní ọ̀kan tẹ́lẹ̀, nítorí náà a kò ṣe àkáǹtì tuntun.",
+  "alreadyRegisteredSignIn": "Bí ìwọ ni, wọlé pẹ̀lú ọ̀rọ̀ aṣínà rẹ nínú áàpù náà. Ṣé o gbàgbé rẹ̀? Yan tuntun pẹ̀lú bọ́tìnnì ìsàlẹ̀.",
+  "alreadyRegisteredButton": "Yan ọ̀rọ̀ aṣínà tuntun",
+  "alreadyRegisteredNotYou": "Bí kì í ṣe ìwọ, o kò nílò láti ṣe ohunkóhun. Àkáǹtì rẹ kò yípadà.",
+  "noAccountSubject": "Kò sí àkáǹtì Vaultara fún ímeèlì yìí",
+  "noAccountHeading": "Kò sí àkáǹtì pẹ̀lú ímeèlì yìí",
+  "noAccountBody": "Ẹnìkan béèrè láti tún ọ̀rọ̀ aṣínà Vaultara ṣe fún àdírẹ́sì ímeèlì yìí, ṣùgbọ́n kò sí àkáǹtì Vaultara fún un. Bí ìwọ ni, bóyá o forúkọsílẹ̀ pẹ̀lú àdírẹ́sì ímeèlì mìíràn, tàbí o lè ṣe àkáǹtì nínú áàpù náà.",
+  "noAccountNotYou": "Bí kì í ṣe ìwọ, o lè fojú fo ímeèlì yìí."
 }

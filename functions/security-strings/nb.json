@@ -73,5 +73,20 @@
   "deleteButton": "Se gjennom og slett",
   "deleteExpiry": "Lenken virker én gang og utløper om 1 time.",
   "deleteNotYou": "Hvis du ikke ba om dette, kan du se bort fra denne e-posten. Kontoen din forblir nøyaktig som den er.",
-  "deleteFooter": "Vi sender denne e-posten fordi noen ba om å slette Vaultara-kontoen for denne adressen."
+  "deleteFooter": "Vi sender denne e-posten fordi noen ba om å slette Vaultara-kontoen for denne adressen.",
+
+  "signUpCodeSubject": "{code} er Vaultara-koden din",
+  "signUpCodeHeading": "Fullfør opprettingen av kontoen din",
+  "signUpCodeBody": "Skriv inn denne koden i Vaultara for å fullføre opprettingen av kontoen.",
+  "signUpCodeExpiry": "Koden utløper om 10 minutter. Hvis du ikke prøvde å opprette en Vaultara-konto, kan du se bort fra denne e-posten. Ingen konto opprettes uten koden.",
+  "alreadyRegisteredSubject": "Du har allerede en Vaultara-konto",
+  "alreadyRegisteredHeading": "Du har allerede en konto",
+  "alreadyRegisteredBody": "Noen prøvde nettopp å opprette en Vaultara-konto med denne e-postadressen. Du har allerede en, så ingen ny konto ble opprettet.",
+  "alreadyRegisteredSignIn": "Hvis det var deg, logg på med passordet ditt i appen. Glemt det? Velg et nytt med knappen nedenfor.",
+  "alreadyRegisteredButton": "Velg et nytt passord",
+  "alreadyRegisteredNotYou": "Hvis det ikke var deg, trenger du ikke gjøre noe. Kontoen din er ikke endret.",
+  "noAccountSubject": "Det finnes ingen Vaultara-konto for denne e-postadressen",
+  "noAccountHeading": "Ingen konto med denne e-postadressen",
+  "noAccountBody": "Noen ba om å tilbakestille Vaultara-passordet for denne e-postadressen, men det finnes ingen Vaultara-konto for den. Hvis det var deg, registrerte du deg kanskje med en annen e-postadresse, eller du kan opprette en konto i appen.",
+  "noAccountNotYou": "Hvis det ikke var deg, kan du se bort fra denne e-posten."
 }
