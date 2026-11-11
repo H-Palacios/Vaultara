@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/features/assistant/logic/assistant_plain_text.dart';
 
 /// An answer where the names of the user's records can be tapped to open
 /// that record. Locked records and names shared by several records are
@@ -100,7 +101,7 @@ class _AssistantLinkedTextState extends State<AssistantLinkedText> {
   @override
   Widget build(BuildContext context) {
     _clear();
-    final text = widget.text;
+    final text = AssistantPlainText.clean(widget.text);
     final matches = _matches(text);
     if (matches.isEmpty) return Text(text);
 
