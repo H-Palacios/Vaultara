@@ -9,28 +9,32 @@ class ExpiryTimelineResult {
 
   final bool notReady;
 
+  /// Records with an upcoming date, for the progress shown before the
+  /// timeline has enough to draw.
+  final int upcomingCount;
+
   const ExpiryTimelineResult({
     required this.availableYears,
     required this.monthsByYear,
     required this.defaultYear,
     required this.shouldShow,
+    this.upcomingCount = 0,
   }) : notReady = false;
 
   const ExpiryTimelineResult.empty()
-      : availableYears = const [],
-        monthsByYear = const {},
-        defaultYear = 0,
-        shouldShow = false,
-        notReady = false;
-  const ExpiryTimelineResult.notEnoughData()
-      : availableYears = const [],
-        monthsByYear = const {},
-        defaultYear = 0,
-        shouldShow = false,
-        notReady = true;
-  factory ExpiryTimelineResult.fromRecords(
-    List<ExpiryTimelineRecord> records,
-  ) {
+    : availableYears = const [],
+      monthsByYear = const {},
+      defaultYear = 0,
+      shouldShow = false,
+      notReady = false,
+      upcomingCount = 0;
+  const ExpiryTimelineResult.notEnoughData({this.upcomingCount = 0})
+    : availableYears = const [],
+      monthsByYear = const {},
+      defaultYear = 0,
+      shouldShow = false,
+      notReady = true;
+  factory ExpiryTimelineResult.fromRecords(List<ExpiryTimelineRecord> records) {
     if (records.isEmpty) return const ExpiryTimelineResult.empty();
 
     final Map<DateTime, List<ExpiryTimelineRecord>> byMonth = {};
@@ -48,9 +52,9 @@ class ExpiryTimelineResult {
 
     final Map<int, List<ExpiryTimelineMonth>> monthsByYear = {};
     for (final entry in byMonth.entries) {
-      monthsByYear.putIfAbsent(entry.key.year, () => []).add(
-            ExpiryTimelineMonth(month: entry.key, records: entry.value),
-          );
+      monthsByYear
+          .putIfAbsent(entry.key.year, () => [])
+          .add(ExpiryTimelineMonth(month: entry.key, records: entry.value));
     }
 
     for (final list in monthsByYear.values) {
@@ -65,6 +69,7 @@ class ExpiryTimelineResult {
       monthsByYear: monthsByYear,
       defaultYear: years.contains(now.year) ? now.year : years.first,
       shouldShow: true,
+      upcomingCount: records.length,
     );
   }
 

@@ -1,17 +1,19 @@
 import 'package:vaultara/features/insights/data/models/expiry_timeline_month.dart';
+
 sealed class ExpiryTimelineViewState {
   const ExpiryTimelineViewState();
 }
 
-/// The load is still in flight.
-class ExpiryTimelineLoading extends ExpiryTimelineViewState {
-  const ExpiryTimelineLoading();
-}
 class ExpiryTimelineHidden extends ExpiryTimelineViewState {
   const ExpiryTimelineHidden();
 }
+
+/// Not enough upcoming records yet: [count] of [total].
 class ExpiryTimelineNotReady extends ExpiryTimelineViewState {
-  const ExpiryTimelineNotReady();
+  final int count;
+  final int total;
+
+  const ExpiryTimelineNotReady({required this.count, required this.total});
 }
 
 /// Everything the card needs to draw one year, already resolved.

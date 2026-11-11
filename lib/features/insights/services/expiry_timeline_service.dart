@@ -1,77 +1,63 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-
+import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/core/util/dates.dart';
+import 'package:vaultara/core/util/repeat_dates.dart';
 import 'package:vaultara/features/insights/data/models/expiry_timeline_record.dart';
 import 'package:vaultara/features/insights/data/models/expiry_timeline_result.dart';
-import 'package:vaultara/features/household/data/household_repository.dart';
 
+/// Builds the expiry timeline from the records already loaded, so it works
+/// offline and costs no extra reads. Repeating records appear every time
+/// they come round in the next year.
 class ExpiryTimelineService {
+  const ExpiryTimelineService._();
+
+  /// Records with an upcoming date needed before the timeline is drawn.
   static const int minRecordsToShow = 3;
 
-  static const int minMonthsWithDataToShow = 3;
+  /// How far ahead repeating records are shown.
+  static const int repeatHorizonDays = 365;
 
-  static Future<ExpiryTimelineResult> load() async {
-    final user = FirebaseAuth.instance.currentUser;
-    if (user == null) return const ExpiryTimelineResult.empty();
+  static ExpiryTimelineResult build(
+    List<TrackedItem> records, {
+    DateTime? now,
+  }) {
+    final today = Dates.only(now ?? DateTime.now());
+    final horizon = DateTime(
+      today.year,
+      today.month,
+      today.day + repeatHorizonDays,
+    );
+    final rows = <ExpiryTimelineRecord>[];
+    var upcoming = 0;
 
-    final QuerySnapshot<Map<String, dynamic>> snap;
-    try {
-      snap = await FirebaseFirestore.instance
-          .collection('users/${user.uid}/records')
-          .get();
-    } catch (_) {
-      return const ExpiryTimelineResult.empty();
-    }
-
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
-
-    final records = <ExpiryTimelineRecord>[];
-    final months = <DateTime>{};
-
-    for (final doc in snap.docs) {
-      final data = doc.data();
-      if (data['isDeleted'] == true) continue;
-
-      final ts = data['expiryDate'];
-      if (ts is! Timestamp) continue;
-
-      final expiry = ts.toDate();
-      final expiryDate = DateTime(expiry.year, expiry.month, expiry.day);
-
-      if (expiryDate.isBefore(today)) continue;
-
-      records.add(
+    for (final record in records) {
+      if (record.isDeleted) continue;
+      final expiry = Dates.only(record.expiryDate);
+      if (expiry.isBefore(today)) continue;
+      upcoming++;
+      rows.add(
         ExpiryTimelineRecord(
-          name: (data['name'] as String?) ?? '',
-          categoryLabel: (data['categoryLabel'] as String?) ?? '',
-          expiryDate: expiryDate,
+          name: record.name,
+          categoryLabel: record.categoryLabel,
+          expiryDate: expiry,
+          record: record,
         ),
       );
-
-      months.add(DateTime(expiry.year, expiry.month));
+      for (final date in RepeatDates.after(record, horizon)) {
+        rows.add(
+          ExpiryTimelineRecord(
+            name: record.name,
+            categoryLabel: record.categoryLabel,
+            expiryDate: date,
+            record: record,
+            repeats: true,
+          ),
+        );
+      }
     }
 
-    final privateIds = <String>{for (final doc in snap.docs) doc.id};
-    for (final shared in HouseholdRepository.activeShared) {
-      if (privateIds.contains(shared.id)) continue;
-      final expiry = shared.expiryDate;
-      final expiryDate = DateTime(expiry.year, expiry.month, expiry.day);
-      if (expiryDate.isBefore(today)) continue;
-      records.add(
-        ExpiryTimelineRecord(
-          name: shared.name,
-          categoryLabel: shared.categoryLabel,
-          expiryDate: expiryDate,
-        ),
-      );
-      months.add(DateTime(expiry.year, expiry.month));
+    if (upcoming < minRecordsToShow) {
+      return ExpiryTimelineResult.notEnoughData(upcomingCount: upcoming);
     }
-    if (records.length < minRecordsToShow ||
-        months.length < minMonthsWithDataToShow) {
-      return const ExpiryTimelineResult.notEnoughData();
-    }
-
-    return ExpiryTimelineResult.fromRecords(records);
+    return ExpiryTimelineResult.fromRecords(rows);
   }
 }
