@@ -42,7 +42,8 @@ class RecordRepository {
   static String _legacyItemsPath(String uid) => 'users/$uid/items';
   static const String _recordsMigratedFlag = 'recordsMigrated';
 
-  static Map<String, Map<String, List<TrackedItem>>> get storeSnapshot => _store;
+  static Map<String, Map<String, List<TrackedItem>>> get storeSnapshot =>
+      _store;
 
   static int totalRecordsAll() => _totalRecordsAll();
 
@@ -104,9 +105,9 @@ class RecordRepository {
       HouseholdRepository.canEdit(record);
 
   static Set<int> _privateBaseIds() => <int>{
-        for (final record in _allRecords())
-          if (!record.isShared) record.reminderBaseId,
-      };
+    for (final record in _allRecords())
+      if (!record.isShared) record.reminderBaseId,
+  };
 
   static int _wrapBase(int value) => value.abs() % (2147483647 - _slotSpan);
 
@@ -131,10 +132,7 @@ class RecordRepository {
   static int _sharedBaseFor(String id, int seed) {
     final existing = _sharedBaseIds[id];
     if (existing != null) return existing;
-    final taken = <int>{
-      ..._privateBaseIds(),
-      ..._sharedBaseIds.values,
-    };
+    final taken = <int>{..._privateBaseIds(), ..._sharedBaseIds.values};
     var candidate = _wrapBase(seed);
     var tries = 0;
     while (_clashes(candidate, taken) && tries < 64) {
@@ -154,13 +152,13 @@ class RecordRepository {
   }
 
   static String _signature(TrackedItem record) => <Object?>[
-        record.name,
-        record.expiryDate.millisecondsSinceEpoch,
-        record.reminderOffsetDays,
-        record.leadDays,
-        record.holderId,
-        record.reminderBaseId,
-      ].join('|');
+    record.name,
+    record.expiryDate.millisecondsSinceEpoch,
+    record.reminderOffsetDays,
+    record.leadDays,
+    record.holderId,
+    record.reminderBaseId,
+  ].join('|');
 
   static TrackedItem stored(TrackedItem record) {
     final id = record.id;
@@ -177,8 +175,9 @@ class RecordRepository {
       return bucket.where((r) => r.isShared && !r.isDeleted).toList();
     }
     return HouseholdRepository.activeShared
-        .where((r) =>
-            r.categoryKey == categoryKey && r.subcategoryName == groupKey)
+        .where(
+          (r) => r.categoryKey == categoryKey && r.subcategoryName == groupKey,
+        )
         .map(_localShared)
         .toList();
   }
@@ -232,17 +231,16 @@ class RecordRepository {
     List<RecordAttachment> attachments,
     String from,
     String to,
-  ) =>
-      <RecordAttachment>[
-        for (final a in attachments)
-          RecordAttachment(
-            id: a.id,
-            storagePath: _movedPath(a.storagePath, from, to),
-            contentType: a.contentType,
-            addedAt: a.addedAt,
-            encrypted: a.encrypted,
-          ),
-      ];
+  ) => <RecordAttachment>[
+    for (final a in attachments)
+      RecordAttachment(
+        id: a.id,
+        storagePath: _movedPath(a.storagePath, from, to),
+        contentType: a.contentType,
+        addedAt: a.addedAt,
+        encrypted: a.encrypted,
+      ),
+  ];
 
   static Future<void> _decryptForSharing(TrackedItem record) async {
     if (!record.attachments.any((a) => a.encrypted)) return;
@@ -253,8 +251,10 @@ class RecordRepository {
         next.add(attachment);
         continue;
       }
-      final plain =
-          await AttachmentRepository.reupload(attachment, encrypt: false);
+      final plain = await AttachmentRepository.reupload(
+        attachment,
+        encrypt: false,
+      );
       if (plain == null) {
         for (final made in next.where((a) => !record.attachments.contains(a))) {
           await AttachmentRepository.delete(
@@ -271,9 +271,9 @@ class RecordRepository {
     final updated = record.copyWith(attachments: next);
     _remove(record);
     _add(updated);
-    await _docFor(updated)?.update({
-      'attachments': next.map((a) => a.toMap()).toList(),
-    });
+    await _docFor(
+      updated,
+    )?.update({'attachments': next.map((a) => a.toMap()).toList()});
     for (final old in replaced) {
       await AttachmentRepository.delete(
         old,
@@ -285,9 +285,9 @@ class RecordRepository {
 
   static Future<void> _flushWrites() async {
     try {
-      await _firestore
-          .waitForPendingWrites()
-          .timeout(const Duration(seconds: 8));
+      await _firestore.waitForPendingWrites().timeout(
+        const Duration(seconds: 8),
+      );
     } catch (_) {}
   }
 
@@ -370,9 +370,9 @@ class RecordRepository {
   }
 
   static List<TrackedItem> _allRecords() => [
-        for (final byCategory in _store.values)
-          for (final list in byCategory.values) ...list,
-      ];
+    for (final byCategory in _store.values)
+      for (final list in byCategory.values) ...list,
+  ];
 
   static Future<void> _applyReminderForRecord(
     TrackedItem record, {
@@ -468,6 +468,41 @@ class RecordRepository {
     _refreshWidget();
   }
 
+  static Future<void>? _reloading;
+
+  /// Loads the records again from the server, for screens that refresh when
+  /// data changes on another device. Unlike signing out and in, it keeps
+  /// the reminders already scheduled and any records unlocked this session,
+  /// and the records stay available while the new copy downloads. Calls
+  /// made while a reload is running share it.
+  static Future<void> reload() {
+    return _reloading ??= _reload().whenComplete(() => _reloading = null);
+  }
+
+  static Future<void> _reload() async {
+    final user = _auth.currentUser;
+    if (user == null || !_hasLoadedForUser || _loadedUserId != user.uid) {
+      await loadForCurrentUser();
+      return;
+    }
+
+    final snap = await _firestore.collection(_recordsPath(user.uid)).get();
+    if (_auth.currentUser?.uid != user.uid || _loadedUserId != user.uid) {
+      return;
+    }
+
+    _store.clear();
+    for (final doc in snap.docs) {
+      final record = TrackedItem.fromMap(doc.id, doc.data());
+      if (record.isDeleted == true) continue;
+      _add(record);
+    }
+    _addSharedFromHousehold(user.uid);
+    _rollDue();
+    unawaited(_resyncAllReminders());
+    _refreshWidget();
+  }
+
   static DateTime _addMonths(DateTime date, int months) {
     final total = date.year * 12 + (date.month - 1) + months;
     final year = total ~/ 12;
@@ -497,9 +532,7 @@ class RecordRepository {
     _remove(record);
     _add(rolled);
 
-    _docFor(rolled)
-        ?.update({'expiryDate': Timestamp.fromDate(next)})
-        .ignore();
+    _docFor(rolled)?.update({'expiryDate': Timestamp.fromDate(next)}).ignore();
     return rolled;
   }
 
@@ -536,8 +569,9 @@ class RecordRepository {
         .where('isDeleted', isEqualTo: true)
         .get();
 
-    final cutoff = DateTime.now()
-        .subtract(const Duration(days: recentlyDeletedRetentionDays));
+    final cutoff = DateTime.now().subtract(
+      const Duration(days: recentlyDeletedRetentionDays),
+    );
     final result = <TrackedItem>[];
 
     for (final doc in snap.docs) {
@@ -587,8 +621,9 @@ class RecordRepository {
     var categoryKey = record.categoryKey;
 
     if (!PresetCatalog.categoryKeys.contains(categoryKey)) {
-      final isKnownCustom =
-          CategoryRepository.getAll().any((c) => c.key == categoryKey);
+      final isKnownCustom = CategoryRepository.getAll().any(
+        (c) => c.key == categoryKey,
+      );
 
       if (!isKnownCustom) {
         categoryKey = _resolveCategoryKeyFromLabel(record.categoryLabel);
@@ -597,8 +632,9 @@ class RecordRepository {
 
     if (categoryKey.isEmpty) {
       if (!record.isShared) return;
-      categoryKey =
-          record.categoryKey.isNotEmpty ? record.categoryKey : '_shared';
+      categoryKey = record.categoryKey.isNotEmpty
+          ? record.categoryKey
+          : '_shared';
     }
 
     final byCategory = _store.putIfAbsent(categoryKey, () => {});
@@ -611,8 +647,9 @@ class RecordRepository {
   static void _remove(TrackedItem record) {
     final id = record.id;
     if (id == null) {
-      _store[record.categoryKey]?[record.subcategoryName]
-          ?.removeWhere((e) => identical(e, record));
+      _store[record.categoryKey]?[record.subcategoryName]?.removeWhere(
+        (e) => identical(e, record),
+      );
       return;
     }
     for (final byCategory in _store.values) {
@@ -695,7 +732,8 @@ class RecordRepository {
     final offsetChanged =
         oldRecord.reminderOffsetDays != updated.reminderOffsetDays;
 
-    final reminderChanged = offsetChanged ||
+    final reminderChanged =
+        offsetChanged ||
         oldRecord.expiryDate != updated.expiryDate ||
         oldRecord.name != updated.name ||
         oldRecord.holderId != updated.holderId ||
@@ -752,7 +790,8 @@ class RecordRepository {
       if (uploaded != null) next.add(uploaded);
     }
 
-    final changed = next.length != record.attachments.length ||
+    final changed =
+        next.length != record.attachments.length ||
         next.any((a) => !record.attachments.any((b) => b.id == a.id));
     if (!changed) return record;
 
@@ -760,9 +799,9 @@ class RecordRepository {
     _remove(record);
     _add(updated);
 
-    _docFor(updated)?.update({
-      'attachments': next.map((a) => a.toMap()).toList(),
-    }).ignore();
+    _docFor(
+      updated,
+    )?.update({'attachments': next.map((a) => a.toMap()).toList()}).ignore();
     return updated;
   }
 
@@ -814,16 +853,14 @@ class RecordRepository {
     }
     _refreshWidget();
 
-    _docFor(record)?.update({
-      'isDeleted': true,
-      'deletedAt': Timestamp.now(),
-    }).ignore();
+    _docFor(
+      record,
+    )?.update({'isDeleted': true, 'deletedAt': Timestamp.now()}).ignore();
   }
 
   static Future<void> restoreRecord(TrackedItem record) async {
     if (!canEdit(record)) return;
-    _docFor(record)
-        ?.update({'isDeleted': false, 'deletedAt': null}).ignore();
+    _docFor(record)?.update({'isDeleted': false, 'deletedAt': null}).ignore();
 
     var restored = _localShared(record.copyWith(isDeleted: false));
     _add(restored);
@@ -854,9 +891,7 @@ class RecordRepository {
 
   static int _totalRecordsAll() => _allRecords().length;
   static void clearForSignOut() {
-    final baseIds = [
-      for (final record in _allRecords()) record.reminderBaseId,
-    ];
+    final baseIds = [for (final record in _allRecords()) record.reminderBaseId];
 
     _store.clear();
     _sharedSignatures.clear();
