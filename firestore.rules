@@ -385,12 +385,19 @@ service cloud.firestore {
       // done and hints hold tutorial ids, for preferences/tutorials. pins
       // holds pinned category keys, for preferences/pinnedCategories.
       // snoozed holds insights put off with Later, for preferences/insights.
+      // afterExpiry, weekly, household and updates are on/off choices, for
+      // preferences/notifications; the push functions read household and
+      // updates before sending.
       return smallDoc(20)
         && optionalList('labels', 100)
         && optionalList('pins', 100)
         && optionalList('done', 60)
         && optionalList('hints', 60)
-        && optionalList('snoozed', 60);
+        && optionalList('snoozed', 60)
+        && optionalBool('afterExpiry')
+        && optionalBool('weekly')
+        && optionalBool('household')
+        && optionalBool('updates');
     }
 
     function assistantExpiryOk(d) {
