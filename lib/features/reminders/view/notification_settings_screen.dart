@@ -16,6 +16,9 @@ import 'package:vaultara/core/view/widgets/settings_tile.dart';
 
 import '../services/daily_digest_service.dart';
 import 'reminder_help_sheet.dart';
+import 'ios_reminder_help_sheet.dart';
+import '../services/notification_prefs.dart';
+import '../services/weekly_recap_notifier.dart';
 import '../services/monthly_summary_service.dart';
 import '../services/push_service.dart';
 import '../services/reminder_scheduler.dart';
@@ -39,11 +42,13 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
     minute: ReminderTimeService.defaultMinute,
   );
 
-  late final Stream<bool> _summaryStream = MonthlySummaryService.enabledStream();
+  late final Stream<bool> _summaryStream =
+      MonthlySummaryService.enabledStream();
   bool? _summaryPending;
   bool _sendingSample = false;
   bool _digestOn = false;
   bool _digestBusy = false;
+  bool _sendingTest = false;
 
   @override
   void initState() {
@@ -67,6 +72,7 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
     final status = await Permission.notification.status;
     final time = await ReminderTimeService.getTime();
     final digest = await DailyDigestService.isEnabled();
+    await NotificationPrefs.load();
 
     if (!mounted) return;
     setState(() {
@@ -120,11 +126,87 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
       !saved
           ? loc.monthlySummarySaveError
           : actual
-              ? loc.dailyDigestTurnedOn
-              : loc.dailyDigestTurnedOff,
+          ? loc.dailyDigestTurnedOn
+          : loc.dailyDigestTurnedOff,
       icon: !saved
           ? Icons.error_outline_rounded
           : Icons.notifications_active_rounded,
+    );
+  }
+
+  Future<void> _setKind(NotificationKind kind, bool value) async {
+    await NotificationPrefs.set(kind, value);
+    switch (kind) {
+      case NotificationKind.afterExpiry:
+        unawaited(RecordRepository.resyncAllReminders());
+      case NotificationKind.weekly:
+        if (value) {
+          final granted = await ReminderScheduler.ensurePermissions();
+          if (mounted) setState(() => _allowed = granted);
+        }
+        unawaited(WeeklyRecapNotifier.rebuild());
+      case NotificationKind.household:
+      case NotificationKind.updates:
+        break;
+    }
+  }
+
+  Future<void> _sendTest() async {
+    if (_sendingTest) return;
+    final loc = AppLocalizations.of(context)!;
+    setState(() => _sendingTest = true);
+    var sent = false;
+    try {
+      sent = await ReminderScheduler.sendTest(loc);
+    } catch (_) {
+      sent = false;
+    }
+    if (!mounted) return;
+    setState(() {
+      _sendingTest = false;
+      _allowed = sent || _allowed;
+    });
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      sent ? loc.notifTestSent : loc.snackNotificationsDisabled,
+      icon: sent
+          ? Icons.notifications_active_rounded
+          : Icons.notifications_off_rounded,
+    );
+  }
+
+  Widget _kindTile(
+    BuildContext context,
+    NotificationKind kind, {
+    required IconData icon,
+    required String title,
+    required String subtitle,
+  }) {
+    final scheme = Theme.of(context).colorScheme;
+    final value = NotificationPrefs.get(kind);
+    return SettingsTile(
+      icon: icon,
+      title: title,
+      subtitle: subtitle,
+      trailing: Transform.scale(
+        scale: 0.85,
+        child: CupertinoSwitch(
+          value: value,
+          activeTrackColor: scheme.primary,
+          onChanged: _loading ? null : (v) => _setKind(kind, v),
+        ),
+      ),
+      onTap: _loading ? null : () => _setKind(kind, !value),
+    );
+  }
+
+  Widget _sectionTitle(String text) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: Text(
+        text,
+        style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
+      ),
     );
   }
 
@@ -264,6 +346,43 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
                   ? null
                   : () => _setDigest(!_digestOn),
             ),
+            ValueListenableBuilder<int>(
+              valueListenable: NotificationPrefs.revision,
+              builder: (context, revision, child) => Column(
+                children: [
+                  const SizedBox(height: 12),
+                  _kindTile(
+                    context,
+                    NotificationKind.afterExpiry,
+                    icon: Icons.event_busy_rounded,
+                    title: t.notifAfterExpiryTitle,
+                    subtitle: t.notifAfterExpirySubtitle,
+                  ),
+                  const SizedBox(height: 12),
+                  _kindTile(
+                    context,
+                    NotificationKind.weekly,
+                    icon: Icons.calendar_view_week_rounded,
+                    title: t.notifWeeklyTitle,
+                    subtitle: t.notifWeeklySubtitle,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 12),
+            SettingsTile(
+              icon: Icons.notification_add_rounded,
+              title: t.notifTestAction,
+              subtitle: t.notifTestSubtitle,
+              trailing: _sendingTest
+                  ? const SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    )
+                  : null,
+              onTap: _sendingTest ? null : _sendTest,
+            ),
             if (Platform.isAndroid) ...[
               const SizedBox(height: 12),
               SettingsTile(
@@ -273,17 +392,52 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
                 onTap: () => showReminderHelpSheet(context),
               ),
             ],
+            if (Platform.isIOS) ...[
+              const SizedBox(height: 12),
+              SettingsTile(
+                icon: Icons.help_outline_rounded,
+                title: t.notifIosHelpTitle,
+                subtitle: t.notifIosHelpSubtitle,
+                onTap: () => showIosReminderHelpSheet(context),
+              ),
+            ],
             const SizedBox(height: 24),
+            _sectionTitle(t.notifPushSection),
+            ValueListenableBuilder<int>(
+              valueListenable: NotificationPrefs.revision,
+              builder: (context, revision, child) => Column(
+                children: [
+                  _kindTile(
+                    context,
+                    NotificationKind.household,
+                    icon: Icons.groups_rounded,
+                    title: t.notifHouseholdTitle,
+                    subtitle: t.notifHouseholdSubtitle,
+                  ),
+                  const SizedBox(height: 12),
+                  _kindTile(
+                    context,
+                    NotificationKind.updates,
+                    icon: Icons.mark_email_read_rounded,
+                    title: t.notifUpdatesTitle,
+                    subtitle: t.notifUpdatesSubtitle,
+                  ),
+                ],
+              ),
+            ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 8),
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
               child: Text(
-                t.notificationsEmailSection,
-                style: const TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w700,
+                t.notifSecurityNote,
+                style: TextStyle(
+                  fontSize: 12.5,
+                  height: 1.4,
+                  color: scheme.onSurfaceVariant,
                 ),
               ),
             ),
+            const SizedBox(height: 24),
+            _sectionTitle(t.notificationsEmailSection),
             StreamBuilder<bool>(
               stream: _summaryStream,
               builder: (context, snap) {
