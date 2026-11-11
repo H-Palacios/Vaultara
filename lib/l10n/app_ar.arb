@@ -2754,5 +2754,150 @@
     }
   },
   "recordsEmptyBody": "امسح البطاقة أو المستند ضوئيًا، أو أضفه يدويًا. سيذكّرك Vaultara قبل انتهاء صلاحيته.",
-  "recordsScan": "مسح ضوئي"
+  "recordsScan": "مسح ضوئي",
+  "insightsCardTitle": "رؤى ذكية",
+  "insightPosition": "الرؤية {index} من {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "لاحقًا",
+  "insightSnoozed": "أُخفيت لمدة أسبوع. ستعود إذا كانت لا تزال تحتاج إليك.",
+  "insightAsk": "اسأل عن هذا",
+  "insightAskPrompt": "{heading}. {body} ماذا يجب أن أفعل؟",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "السجلات",
+  "insightsSummaryDueSoon": "خلال 30 يومًا",
+  "insightsSummaryNoReminder": "بلا تذكير",
+  "insightsListEmpty": "لا يوجد شيء هنا الآن.",
+  "smartInsightUpcomingCostHeading": "تجديدات قادمة",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{ستكلف التجديدات في الأشهر الثلاثة القادمة ({count}) نحو {amount}.} other{ستكلف التجديدات في الأشهر الثلاثة القادمة ({count}) نحو {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "أسبوعك",
+  "weeklyRecapNothing": "لا ينتهي شيء هذا الأسبوع.",
+  "weeklyRecapExpiring": "{count, plural, =1{عدد السجلات التي تنتهي هذا الأسبوع: {count}.} other{عدد السجلات التي تنتهي هذا الأسبوع: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{عدد السجلات التي جددتها الأسبوع الماضي: {count}.} other{عدد السجلات التي جددتها الأسبوع الماضي: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "كلفت تجديدات الأسبوع الماضي {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "إغلاق",
+  "timelineUnlockProgress": "{count} من {total} سجلات بتاريخ قادم",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "يتكرر",
+  "calendarNextExpiry": "أقرب انتهاء",
+  "calendarViewMonth": "شهر",
+  "calendarViewList": "قائمة",
+  "calendarLegendExpiry": "ينتهي",
+  "calendarLegendReminder": "تذكير",
+  "calendarMonthSummary": "{count, plural, =1{{month}: ينتهي {count}} other{{month}: ينتهي {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "لا ينتهي شيء في {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "نحو {amount} للتجديد",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "هذا الأسبوع",
+  "calendarNextWeek": "الأسبوع القادم",
+  "calendarListEmpty": "لا شيء خلال الأشهر الـ12 القادمة.",
+  "calendarDaysLeft": "{count, plural, =1{متبقٍ {count} يوم} other{متبقٍ {count} يوم}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{انتهى منذ {count} يوم} other{انتهى منذ {count} يوم}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "إضافة سجل ينتهي في هذا اليوم",
+  "calendarPickMonth": "اختر شهرًا",
+  "calendarReminderFor": "تذكير: ينتهي {name} في {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

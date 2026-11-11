@@ -8106,4 +8106,174 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get recordsScan => 'સ્કૅન કરો';
+
+  @override
+  String get insightsCardTitle => 'સ્માર્ટ સૂચનો';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'સૂચન $index / $total';
+  }
+
+  @override
+  String get insightSnooze => 'પછી';
+
+  @override
+  String get insightSnoozed => 'એક અઠવાડિયા માટે છુપાવ્યું. જરૂર હશે તો ફરી દેખાશે.';
+
+  @override
+  String get insightAsk => 'આ વિશે પૂછો';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body મારે શું કરવું જોઈએ?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'રેકોર્ડ';
+
+  @override
+  String get insightsSummaryDueSoon => '30 દિવસમાં';
+
+  @override
+  String get insightsSummaryNoReminder => 'કોઈ રિમાઇન્ડર નથી';
+
+  @override
+  String get insightsListEmpty => 'અહીં હમણાં કંઈ નથી.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'આવનારા નવીનીકરણ';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'આગામી 3 મહિનામાં $count નવીનીકરણનો ખર્ચ આશરે $amount થશે.',
+      one: 'આગામી 3 મહિનામાં $count નવીનીકરણનો ખર્ચ આશરે $amount થશે.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'તમારું અઠવાડિયું';
+
+  @override
+  String get weeklyRecapNothing => 'આ અઠવાડિયે કંઈ સમાપ્ત થતું નથી.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'આ અઠવાડિયે $count રેકોર્ડ સમાપ્ત થાય છે.',
+      one: 'આ અઠવાડિયે $count રેકોર્ડ સમાપ્ત થાય છે.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'તમે ગયા અઠવાડિયે $count રેકોર્ડ નવીકરણ કર્યા.',
+      one: 'તમે ગયા અઠવાડિયે $count રેકોર્ડ નવીકરણ કર્યો.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'ગયા અઠવાડિયાના નવીનીકરણનો ખર્ચ $amount થયો.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'બંધ કરો';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'આવનારી તારીખવાળા $total માંથી $count રેકોર્ડ';
+  }
+
+  @override
+  String get timelineRepeats => 'પુનરાવર્તિત';
+
+  @override
+  String get calendarNextExpiry => 'આગલી મુદત';
+
+  @override
+  String get calendarViewMonth => 'મહિનો';
+
+  @override
+  String get calendarViewList => 'યાદી';
+
+  @override
+  String get calendarLegendExpiry => 'મુદત પૂરી';
+
+  @override
+  String get calendarLegendReminder => 'રિમાઇન્ડર';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$monthમાં $countની મુદત પૂરી',
+      one: '$monthમાં $countની મુદત પૂરી',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$monthમાં કંઈ સમાપ્ત થતું નથી';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'નવીનીકરણ માટે આશરે $amount';
+  }
+
+  @override
+  String get calendarThisWeek => 'આ અઠવાડિયે';
+
+  @override
+  String get calendarNextWeek => 'આવતા અઠવાડિયે';
+
+  @override
+  String get calendarListEmpty => 'આગામી 12 મહિનામાં કંઈ નથી.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count દિવસ બાકી',
+      one: '$count દિવસ બાકી',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count દિવસ પહેલાં મુદત પૂરી',
+      one: '$count દિવસ પહેલાં મુદત પૂરી',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'આ દિવસે સમાપ્ત થતો રેકોર્ડ ઉમેરો';
+
+  @override
+  String get calendarPickMonth => 'મહિનો પસંદ કરો';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'રિમાઇન્ડર: $nameની મુદત $dateના રોજ પૂરી';
+  }
 }

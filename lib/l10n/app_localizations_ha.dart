@@ -8106,4 +8106,174 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get recordsScan => 'Duba';
+
+  @override
+  String get insightsCardTitle => 'Shawarwari masu wayo';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Shawara $index cikin $total';
+  }
+
+  @override
+  String get insightSnooze => 'Daga baya';
+
+  @override
+  String get insightSnoozed => 'An ɓoye na mako guda. Zai dawo idan har yanzu ana buƙata.';
+
+  @override
+  String get insightAsk => 'Tambaya game da wannan';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Me ya kamata in yi?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Bayanai';
+
+  @override
+  String get insightsSummaryDueSoon => 'Cikin kwana 30';
+
+  @override
+  String get insightsSummaryNoReminder => 'Babu tunatarwa';
+
+  @override
+  String get insightsListEmpty => 'Babu komai a nan yanzu.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Sabuntawa masu zuwa';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sabuntawa $count a watanni 3 masu zuwa za su kai kusan $amount.',
+      one: 'Sabuntawa $count a watanni 3 masu zuwa zai kai kusan $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Makonka';
+
+  @override
+  String get weeklyRecapNothing => 'Babu abin da zai ƙare a wannan makon.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bayanai $count za su ƙare a wannan makon.',
+      one: 'Bayani $count zai ƙare a wannan makon.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ka sabunta bayanai $count a makon da ya gabata.',
+      one: 'Ka sabunta bayani $count a makon da ya gabata.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Sabuntawar makon da ya gabata ta kai $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Rufe';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'Bayanai $count cikin $total masu kwanan wata mai zuwa';
+  }
+
+  @override
+  String get timelineRepeats => 'Yana maimaituwa';
+
+  @override
+  String get calendarNextExpiry => 'Ƙarewa ta gaba';
+
+  @override
+  String get calendarViewMonth => 'Wata';
+
+  @override
+  String get calendarViewList => 'Jeri';
+
+  @override
+  String get calendarLegendExpiry => 'Yana ƙarewa';
+
+  @override
+  String get calendarLegendReminder => 'Tunatarwa';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count za su ƙare',
+      one: '$month: $count zai ƙare',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: babu abin da zai ƙare';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Kusan $amount don sabuntawa';
+  }
+
+  @override
+  String get calendarThisWeek => 'Wannan makon';
+
+  @override
+  String get calendarNextWeek => 'Mako mai zuwa';
+
+  @override
+  String get calendarListEmpty => 'Babu komai a watanni 12 masu zuwa.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Saura kwanaki $count',
+      one: 'Saura kwana $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ya ƙare kwanaki $count da suka wuce',
+      one: 'Ya ƙare kwana $count da ya wuce',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Ƙara bayanin da zai ƙare a wannan rana';
+
+  @override
+  String get calendarPickMonth => 'Zaɓi wata';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Tunatarwa: $name zai ƙare a $date';
+  }
 }

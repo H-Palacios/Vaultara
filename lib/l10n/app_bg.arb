@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "Сканирайте картата или документа или го добавете ръчно. Vaultara ще ви напомни преди да изтече.",
-  "recordsScan": "Сканиране"
+  "recordsScan": "Сканиране",
+  "insightsCardTitle": "Умни съвети",
+  "insightPosition": "Съвет {index} от {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "По-късно",
+  "insightSnoozed": "Скрито за седмица. Ще се върне, ако още е нужно.",
+  "insightAsk": "Попитай за това",
+  "insightAskPrompt": "{heading}. {body} Какво да направя?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Записи",
+  "insightsSummaryDueSoon": "До 30 дни",
+  "insightsSummaryNoReminder": "Без напомняне",
+  "insightsListEmpty": "Тук засега няма нищо.",
+  "smartInsightUpcomingCostHeading": "Предстоящи подновявания",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} подновяване през следващите 3 месеца ще струва около {amount}.} other{{count} подновявания през следващите 3 месеца ще струват около {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Вашата седмица",
+  "weeklyRecapNothing": "Тази седмица нищо не изтича.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} запис изтича тази седмица.} other{{count} записа изтичат тази седмица.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Подновихте {count} запис миналата седмица.} other{Подновихте {count} записа миналата седмица.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Подновяванията миналата седмица струваха {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Затвори",
+  "timelineUnlockProgress": "{count} от {total} записа с предстояща дата",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Повтаря се",
+  "calendarNextExpiry": "Следващо изтичане",
+  "calendarViewMonth": "Месец",
+  "calendarViewList": "Списък",
+  "calendarLegendExpiry": "Изтича",
+  "calendarLegendReminder": "Напомняне",
+  "calendarMonthSummary": "{count, plural, =1{{count} изтича през {month}} other{{count} изтичат през {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "През {month} нищо не изтича",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Около {amount} за подновяване",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Тази седмица",
+  "calendarNextWeek": "Следващата седмица",
+  "calendarListEmpty": "Нищо през следващите 12 месеца.",
+  "calendarDaysLeft": "{count, plural, =1{Остава {count} ден} other{Остават {count} дни}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Изтекъл преди {count} ден} other{Изтекъл преди {count} дни}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Добави запис, който изтича на този ден",
+  "calendarPickMonth": "Изберете месец",
+  "calendarReminderFor": "Напомняне: {name} изтича на {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

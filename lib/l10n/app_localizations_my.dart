@@ -8046,4 +8046,174 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get recordsScan => 'စကင်ဖတ်ရန်';
+
+  @override
+  String get insightsCardTitle => 'စမတ် အကြံပြုချက်များ';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'အကြံပြုချက် $index / $total';
+  }
+
+  @override
+  String get insightSnooze => 'နောက်မှ';
+
+  @override
+  String get insightSnoozed => 'တစ်ပတ် ဖျောက်ထားသည်။ လိုအပ်နေသေးပါက ပြန်ပေါ်လာမည်။';
+
+  @override
+  String get insightAsk => 'ဤအကြောင်း မေးရန်';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading။ $body ကျွန်ုပ် ဘာလုပ်သင့်သလဲ။';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'မှတ်တမ်းများ';
+
+  @override
+  String get insightsSummaryDueSoon => 'ရက် 30 အတွင်း';
+
+  @override
+  String get insightsSummaryNoReminder => 'သတိပေးချက် မရှိ';
+
+  @override
+  String get insightsListEmpty => 'ယခု ဤနေရာတွင် ဘာမျှ မရှိပါ။';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'လာမည့် သက်တမ်းတိုးမှုများ';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'နောက် 3 လအတွင်း သက်တမ်းတိုးမှု $count ခုအတွက် $amount ခန့် ကုန်ကျမည်။',
+      one: 'နောက် 3 လအတွင်း သက်တမ်းတိုးမှု $count ခုအတွက် $amount ခန့် ကုန်ကျမည်။',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'သင့်အပတ်';
+
+  @override
+  String get weeklyRecapNothing => 'ဤအပတ်တွင် သက်တမ်းကုန်မည့်အရာ မရှိပါ။';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ဤအပတ်တွင် မှတ်တမ်း $count ခု သက်တမ်းကုန်မည်။',
+      one: 'ဤအပတ်တွင် မှတ်တမ်း $count ခု သက်တမ်းကုန်မည်။',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ပြီးခဲ့သည့်အပတ်တွင် မှတ်တမ်း $count ခု သက်တမ်းတိုးခဲ့သည်။',
+      one: 'ပြီးခဲ့သည့်အပတ်တွင် မှတ်တမ်း $count ခု သက်တမ်းတိုးခဲ့သည်။',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'ပြီးခဲ့သည့်အပတ် သက်တမ်းတိုးမှုများအတွက် $amount ကုန်ကျခဲ့သည်။';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'ပိတ်ရန်';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'လာမည့်ရက်ရှိသော $total ခုအနက် မှတ်တမ်း $count ခု';
+  }
+
+  @override
+  String get timelineRepeats => 'ထပ်ခါလာသည်';
+
+  @override
+  String get calendarNextExpiry => 'နောက်ထပ် သက်တမ်းကုန်ရက်';
+
+  @override
+  String get calendarViewMonth => 'လ';
+
+  @override
+  String get calendarViewList => 'စာရင်း';
+
+  @override
+  String get calendarLegendExpiry => 'သက်တမ်းကုန်';
+
+  @override
+  String get calendarLegendReminder => 'သတိပေးချက်';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month တွင် $count ခု သက်တမ်းကုန်',
+      one: '$month တွင် $count ခု သက်တမ်းကုန်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month တွင် သက်တမ်းကုန်မည့်အရာ မရှိ';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'သက်တမ်းတိုးရန် $amount ခန့်';
+  }
+
+  @override
+  String get calendarThisWeek => 'ဤအပတ်';
+
+  @override
+  String get calendarNextWeek => 'နောက်အပတ်';
+
+  @override
+  String get calendarListEmpty => 'နောက် 12 လအတွင်း ဘာမျှ မရှိပါ။';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ရက် ကျန်',
+      one: '$count ရက် ကျန်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ရက်က သက်တမ်းကုန်ခဲ့',
+      one: '$count ရက်က သက်တမ်းကုန်ခဲ့',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'ဤနေ့တွင် သက်တမ်းကုန်မည့် မှတ်တမ်း ထည့်ရန်';
+
+  @override
+  String get calendarPickMonth => 'လ ရွေးရန်';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'သတိပေးချက်: $name $date တွင် သက်တမ်းကုန်မည်';
+  }
 }

@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Kart an belgeyê bişopîne, an bi destan lê zêde bike. Vaultara berî qedandinê bîra te tîne.",
-  "recordsScan": "Bişopîne"
+  "recordsScan": "Bişopîne",
+  "insightsCardTitle": "Şîretên jîr",
+  "insightPosition": "Şîret {index} ji {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Paşê",
+  "insightSnoozed": "Ji bo hefteyekê hat veşartin. Ger hîn pêwîst be dê vegere.",
+  "insightAsk": "Li ser vê bipirse",
+  "insightAskPrompt": "{heading}. {body} Divê ez çi bikim?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Tomar",
+  "insightsSummaryDueSoon": "Di 30 rojan de",
+  "insightsSummaryNoReminder": "Bê bîrxistin",
+  "insightsListEmpty": "Niha li vir tiştek tune.",
+  "smartInsightUpcomingCostHeading": "Nûkirinên tên",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} nûkirin di 3 mehên tên de dê bi qasî {amount} biha be.} other{{count} nûkirin di 3 mehên tên de dê bi qasî {amount} biha bin.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Hefteya te",
+  "weeklyRecapNothing": "Vê hefteyê tiştek naqede.",
+  "weeklyRecapExpiring": "{count, plural, =1{Vê hefteyê {count} tomar diqede.} other{Vê hefteyê {count} tomar diqedin.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Te hefteya borî {count} tomar nû kir.} other{Te hefteya borî {count} tomar nû kirin.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Nûkirinên hefteya borî {amount} biha bûn.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Bigire",
+  "timelineUnlockProgress": "{count} ji {total} tomarên bi dîroka tê",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Dubare dibe",
+  "calendarNextExpiry": "Qedandina pêş",
+  "calendarViewMonth": "Meh",
+  "calendarViewList": "Lîste",
+  "calendarLegendExpiry": "Diqede",
+  "calendarLegendReminder": "Bîrxistin",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} diqede} other{{month}: {count} diqedin}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: tiştek naqede",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Bi qasî {amount} ji bo nûkirinê",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Ev hefte",
+  "calendarNextWeek": "Hefteya bê",
+  "calendarListEmpty": "Di 12 mehên tên de tiştek tune.",
+  "calendarDaysLeft": "{count, plural, =1{{count} roj maye} other{{count} roj mane}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Berî {count} rojê qediya} other{Berî {count} rojan qediya}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Tomarek ku vê rojê diqede lê zêde bike",
+  "calendarPickMonth": "Mehekê hilbijêre",
+  "calendarReminderFor": "Bîrxistin: {name} di {date} de diqede",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

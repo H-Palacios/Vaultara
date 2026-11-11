@@ -2728,5 +2728,150 @@
     }
   },
   "recordsEmptyBody": "I-scan ang card o dokumento, o idagdag nang mano-mano. Paaalalahanan ka ng Vaultara bago ito mag-expire.",
-  "recordsScan": "I-scan"
+  "recordsScan": "I-scan",
+  "insightsCardTitle": "Matatalinong insight",
+  "insightPosition": "Insight {index} sa {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Mamaya",
+  "insightSnoozed": "Itinago nang isang linggo. Babalik ito kung kailangan pa.",
+  "insightAsk": "Itanong ito",
+  "insightAskPrompt": "{heading}. {body} Ano ang dapat kong gawin?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Mga record",
+  "insightsSummaryDueSoon": "Sa loob ng 30 araw",
+  "insightsSummaryNoReminder": "Walang paalala",
+  "insightsListEmpty": "Wala pang laman dito.",
+  "smartInsightUpcomingCostHeading": "Mga paparating na renewal",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Ang {count} renewal sa susunod na 3 buwan ay aabot ng mga {amount}.} other{Ang {count} renewal sa susunod na 3 buwan ay aabot ng mga {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Ang linggo mo",
+  "weeklyRecapNothing": "Walang mag-e-expire ngayong linggo.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} record ang mag-e-expire ngayong linggo.} other{{count} record ang mag-e-expire ngayong linggo.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Nag-renew ka ng {count} record noong nakaraang linggo.} other{Nag-renew ka ng {count} record noong nakaraang linggo.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Ang mga renewal noong nakaraang linggo ay nagkahalaga ng {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Isara",
+  "timelineUnlockProgress": "{count} sa {total} record na may paparating na petsa",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Umuulit",
+  "calendarNextExpiry": "Susunod na pag-expire",
+  "calendarViewMonth": "Buwan",
+  "calendarViewList": "Listahan",
+  "calendarLegendExpiry": "Mag-e-expire",
+  "calendarLegendReminder": "Paalala",
+  "calendarMonthSummary": "{count, plural, =1{{count} mag-e-expire sa {month}} other{{count} mag-e-expire sa {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Walang mag-e-expire sa {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Mga {amount} para i-renew",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Ngayong linggo",
+  "calendarNextWeek": "Susunod na linggo",
+  "calendarListEmpty": "Wala sa susunod na 12 buwan.",
+  "calendarDaysLeft": "{count, plural, =1{{count} araw na lang} other{{count} araw na lang}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Nag-expire {count} araw na ang nakalipas} other{Nag-expire {count} araw na ang nakalipas}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Magdagdag ng record na mag-e-expire sa araw na ito",
+  "calendarPickMonth": "Pumili ng buwan",
+  "calendarReminderFor": "Paalala: Mag-e-expire ang {name} sa {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

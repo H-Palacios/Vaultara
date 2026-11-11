@@ -8046,4 +8046,174 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get recordsScan => 'ស្កេន';
+
+  @override
+  String get insightsCardTitle => 'ការណែនាំឆ្លាតវៃ';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'ការណែនាំ $index ក្នុងចំណោម $total';
+  }
+
+  @override
+  String get insightSnooze => 'ពេលក្រោយ';
+
+  @override
+  String get insightSnoozed => 'បានលាក់មួយសប្ដាហ៍។ វានឹងត្រឡប់មកវិញ ប្រសិនបើនៅត្រូវការ។';
+
+  @override
+  String get insightAsk => 'សួរអំពីរឿងនេះ';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading។ $body តើខ្ញុំគួរធ្វើអ្វី?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'កំណត់ត្រា';
+
+  @override
+  String get insightsSummaryDueSoon => 'ក្នុងរយៈពេល 30 ថ្ងៃ';
+
+  @override
+  String get insightsSummaryNoReminder => 'គ្មានការរំលឹក';
+
+  @override
+  String get insightsListEmpty => 'មិនទាន់មានអ្វីនៅទីនេះទេ។';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'ការបន្តដែលនឹងមកដល់';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ការបន្ត $count ក្នុង 3 ខែខាងមុខនឹងចំណាយប្រហែល $amount។',
+      one: 'ការបន្ត $count ក្នុង 3 ខែខាងមុខនឹងចំណាយប្រហែល $amount។',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'សប្ដាហ៍របស់អ្នក';
+
+  @override
+  String get weeklyRecapNothing => 'សប្ដាហ៍នេះគ្មានអ្វីផុតកំណត់ទេ។';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'សប្ដាហ៍នេះ កំណត់ត្រា $count ផុតកំណត់។',
+      one: 'សប្ដាហ៍នេះ កំណត់ត្រា $count ផុតកំណត់។',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'សប្ដាហ៍មុន អ្នកបានបន្តកំណត់ត្រា $count។',
+      one: 'សប្ដាហ៍មុន អ្នកបានបន្តកំណត់ត្រា $count។',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'ការបន្តសប្ដាហ៍មុនបានចំណាយ $amount។';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'បិទ';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'កំណត់ត្រា $count ក្នុងចំណោម $total ដែលមានកាលបរិច្ឆេទខាងមុខ';
+  }
+
+  @override
+  String get timelineRepeats => 'កើតឡើងម្ដងទៀត';
+
+  @override
+  String get calendarNextExpiry => 'ការផុតកំណត់បន្ទាប់';
+
+  @override
+  String get calendarViewMonth => 'ខែ';
+
+  @override
+  String get calendarViewList => 'បញ្ជី';
+
+  @override
+  String get calendarLegendExpiry => 'ផុតកំណត់';
+
+  @override
+  String get calendarLegendReminder => 'ការរំលឹក';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month៖ ផុតកំណត់ $count',
+      one: '$month៖ ផុតកំណត់ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month៖ គ្មានអ្វីផុតកំណត់';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'ប្រហែល $amount សម្រាប់ការបន្ត';
+  }
+
+  @override
+  String get calendarThisWeek => 'សប្ដាហ៍នេះ';
+
+  @override
+  String get calendarNextWeek => 'សប្ដាហ៍ក្រោយ';
+
+  @override
+  String get calendarListEmpty => 'គ្មានអ្វីក្នុង 12 ខែខាងមុខទេ។';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'នៅសល់ $count ថ្ងៃ',
+      one: 'នៅសល់ $count ថ្ងៃ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានផុតកំណត់ $count ថ្ងៃមុន',
+      one: 'បានផុតកំណត់ $count ថ្ងៃមុន',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'បន្ថែមកំណត់ត្រាដែលផុតកំណត់នៅថ្ងៃនេះ';
+
+  @override
+  String get calendarPickMonth => 'ជ្រើសរើសខែ';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'ការរំលឹក៖ $name ផុតកំណត់នៅ $date';
+  }
 }

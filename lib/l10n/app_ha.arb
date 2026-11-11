@@ -2728,5 +2728,150 @@
     }
   },
   "recordsEmptyBody": "Duba katin ko takardar da kyamara, ko ka ƙara da hannu. Vaultara za ta tunatar da kai kafin ya ƙare.",
-  "recordsScan": "Duba"
+  "recordsScan": "Duba",
+  "insightsCardTitle": "Shawarwari masu wayo",
+  "insightPosition": "Shawara {index} cikin {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Daga baya",
+  "insightSnoozed": "An ɓoye na mako guda. Zai dawo idan har yanzu ana buƙata.",
+  "insightAsk": "Tambaya game da wannan",
+  "insightAskPrompt": "{heading}. {body} Me ya kamata in yi?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Bayanai",
+  "insightsSummaryDueSoon": "Cikin kwana 30",
+  "insightsSummaryNoReminder": "Babu tunatarwa",
+  "insightsListEmpty": "Babu komai a nan yanzu.",
+  "smartInsightUpcomingCostHeading": "Sabuntawa masu zuwa",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Sabuntawa {count} a watanni 3 masu zuwa zai kai kusan {amount}.} other{Sabuntawa {count} a watanni 3 masu zuwa za su kai kusan {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Makonka",
+  "weeklyRecapNothing": "Babu abin da zai ƙare a wannan makon.",
+  "weeklyRecapExpiring": "{count, plural, =1{Bayani {count} zai ƙare a wannan makon.} other{Bayanai {count} za su ƙare a wannan makon.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Ka sabunta bayani {count} a makon da ya gabata.} other{Ka sabunta bayanai {count} a makon da ya gabata.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Sabuntawar makon da ya gabata ta kai {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Rufe",
+  "timelineUnlockProgress": "Bayanai {count} cikin {total} masu kwanan wata mai zuwa",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Yana maimaituwa",
+  "calendarNextExpiry": "Ƙarewa ta gaba",
+  "calendarViewMonth": "Wata",
+  "calendarViewList": "Jeri",
+  "calendarLegendExpiry": "Yana ƙarewa",
+  "calendarLegendReminder": "Tunatarwa",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} zai ƙare} other{{month}: {count} za su ƙare}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: babu abin da zai ƙare",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Kusan {amount} don sabuntawa",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Wannan makon",
+  "calendarNextWeek": "Mako mai zuwa",
+  "calendarListEmpty": "Babu komai a watanni 12 masu zuwa.",
+  "calendarDaysLeft": "{count, plural, =1{Saura kwana {count}} other{Saura kwanaki {count}}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Ya ƙare kwana {count} da ya wuce} other{Ya ƙare kwanaki {count} da suka wuce}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Ƙara bayanin da zai ƙare a wannan rana",
+  "calendarPickMonth": "Zaɓi wata",
+  "calendarReminderFor": "Tunatarwa: {name} zai ƙare a {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

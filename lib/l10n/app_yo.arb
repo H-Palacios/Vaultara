@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Ṣe àyẹ̀wò káàdì tàbí ìwé náà, tàbí fi kún un ní ọwọ́. Vaultara yóò rán ọ létí kí ó tó parí.",
-  "recordsScan": "Ṣe àyẹ̀wò"
+  "recordsScan": "Ṣe àyẹ̀wò",
+  "insightsCardTitle": "Àwọn ìmọ̀ràn ọlọ́gbọ́n",
+  "insightPosition": "Ìmọ̀ràn {index} nínú {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Lẹ́yìn náà",
+  "insightSnoozed": "A fi pamọ́ fún ọ̀sẹ̀ kan. Yóò padà tí ó bá ṣì nílò.",
+  "insightAsk": "Béèrè nípa èyí",
+  "insightAskPrompt": "{heading}. {body} Kí ni kí n ṣe?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Àwọn àkọsílẹ̀",
+  "insightsSummaryDueSoon": "Láàárín ọjọ́ 30",
+  "insightsSummaryNoReminder": "Kò sí ìránnilétí",
+  "insightsListEmpty": "Kò sí nǹkan kan níbí báyìí.",
+  "smartInsightUpcomingCostHeading": "Àwọn àtúnṣe tó ń bọ̀",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Àtúnṣe {count} ní oṣù 3 tó ń bọ̀ yóò ná tó {amount}.} other{Àwọn àtúnṣe {count} ní oṣù 3 tó ń bọ̀ yóò ná tó {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Ọ̀sẹ̀ rẹ",
+  "weeklyRecapNothing": "Kò sí ohun tó ń parí ní ọ̀sẹ̀ yìí.",
+  "weeklyRecapExpiring": "{count, plural, =1{Àkọsílẹ̀ {count} ń parí ní ọ̀sẹ̀ yìí.} other{Àkọsílẹ̀ {count} ń parí ní ọ̀sẹ̀ yìí.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{O tún àkọsílẹ̀ {count} ṣe ní ọ̀sẹ̀ tó kọjá.} other{O tún àkọsílẹ̀ {count} ṣe ní ọ̀sẹ̀ tó kọjá.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Àwọn àtúnṣe ọ̀sẹ̀ tó kọjá ná {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Pa á dé",
+  "timelineUnlockProgress": "Àkọsílẹ̀ {count} nínú {total} tó ní ọjọ́ tó ń bọ̀",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Ń tún ṣẹlẹ̀",
+  "calendarNextExpiry": "Ìparí tó kàn",
+  "calendarViewMonth": "Oṣù",
+  "calendarViewList": "Àtòjọ",
+  "calendarLegendExpiry": "Ń parí",
+  "calendarLegendReminder": "Ìránnilétí",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} ń parí} other{{month}: {count} ń parí}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: kò sí ohun tó ń parí",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Tó {amount} fún àtúnṣe",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Ọ̀sẹ̀ yìí",
+  "calendarNextWeek": "Ọ̀sẹ̀ tó ń bọ̀",
+  "calendarListEmpty": "Kò sí nǹkan ní oṣù 12 tó ń bọ̀.",
+  "calendarDaysLeft": "{count, plural, =1{Ọjọ́ {count} ló kù} other{Ọjọ́ {count} ló kù}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Parí ní ọjọ́ {count} sẹ́yìn} other{Parí ní ọjọ́ {count} sẹ́yìn}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Fi àkọsílẹ̀ tó ń parí lọ́jọ́ yìí kún un",
+  "calendarPickMonth": "Yan oṣù",
+  "calendarReminderFor": "Ìránnilétí: {name} ń parí ní {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

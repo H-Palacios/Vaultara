@@ -8054,4 +8054,174 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get recordsScan => 'Ṣe àyẹ̀wò';
+
+  @override
+  String get insightsCardTitle => 'Àwọn ìmọ̀ràn ọlọ́gbọ́n';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Ìmọ̀ràn $index nínú $total';
+  }
+
+  @override
+  String get insightSnooze => 'Lẹ́yìn náà';
+
+  @override
+  String get insightSnoozed => 'A fi pamọ́ fún ọ̀sẹ̀ kan. Yóò padà tí ó bá ṣì nílò.';
+
+  @override
+  String get insightAsk => 'Béèrè nípa èyí';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Kí ni kí n ṣe?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Àwọn àkọsílẹ̀';
+
+  @override
+  String get insightsSummaryDueSoon => 'Láàárín ọjọ́ 30';
+
+  @override
+  String get insightsSummaryNoReminder => 'Kò sí ìránnilétí';
+
+  @override
+  String get insightsListEmpty => 'Kò sí nǹkan kan níbí báyìí.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Àwọn àtúnṣe tó ń bọ̀';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Àwọn àtúnṣe $count ní oṣù 3 tó ń bọ̀ yóò ná tó $amount.',
+      one: 'Àtúnṣe $count ní oṣù 3 tó ń bọ̀ yóò ná tó $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Ọ̀sẹ̀ rẹ';
+
+  @override
+  String get weeklyRecapNothing => 'Kò sí ohun tó ń parí ní ọ̀sẹ̀ yìí.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Àkọsílẹ̀ $count ń parí ní ọ̀sẹ̀ yìí.',
+      one: 'Àkọsílẹ̀ $count ń parí ní ọ̀sẹ̀ yìí.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'O tún àkọsílẹ̀ $count ṣe ní ọ̀sẹ̀ tó kọjá.',
+      one: 'O tún àkọsílẹ̀ $count ṣe ní ọ̀sẹ̀ tó kọjá.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Àwọn àtúnṣe ọ̀sẹ̀ tó kọjá ná $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Pa á dé';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'Àkọsílẹ̀ $count nínú $total tó ní ọjọ́ tó ń bọ̀';
+  }
+
+  @override
+  String get timelineRepeats => 'Ń tún ṣẹlẹ̀';
+
+  @override
+  String get calendarNextExpiry => 'Ìparí tó kàn';
+
+  @override
+  String get calendarViewMonth => 'Oṣù';
+
+  @override
+  String get calendarViewList => 'Àtòjọ';
+
+  @override
+  String get calendarLegendExpiry => 'Ń parí';
+
+  @override
+  String get calendarLegendReminder => 'Ìránnilétí';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count ń parí',
+      one: '$month: $count ń parí',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: kò sí ohun tó ń parí';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Tó $amount fún àtúnṣe';
+  }
+
+  @override
+  String get calendarThisWeek => 'Ọ̀sẹ̀ yìí';
+
+  @override
+  String get calendarNextWeek => 'Ọ̀sẹ̀ tó ń bọ̀';
+
+  @override
+  String get calendarListEmpty => 'Kò sí nǹkan ní oṣù 12 tó ń bọ̀.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ọjọ́ $count ló kù',
+      one: 'Ọjọ́ $count ló kù',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Parí ní ọjọ́ $count sẹ́yìn',
+      one: 'Parí ní ọjọ́ $count sẹ́yìn',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Fi àkọsílẹ̀ tó ń parí lọ́jọ́ yìí kún un';
+
+  @override
+  String get calendarPickMonth => 'Yan oṣù';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Ìránnilétí: $name ń parí ní $date';
+  }
 }

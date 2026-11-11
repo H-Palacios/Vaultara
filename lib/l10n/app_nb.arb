@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Skann kortet eller dokumentet, eller legg det til manuelt. Vaultara minner deg på det før det utløper.",
-  "recordsScan": "Skann"
+  "recordsScan": "Skann",
+  "insightsCardTitle": "Smarte tips",
+  "insightPosition": "Tips {index} av {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Senere",
+  "insightSnoozed": "Skjult i en uke. Det kommer tilbake hvis det fortsatt trengs.",
+  "insightAsk": "Spør om dette",
+  "insightAskPrompt": "{heading}. {body} Hva bør jeg gjøre?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Oppføringer",
+  "insightsSummaryDueSoon": "Innen 30 dager",
+  "insightsSummaryNoReminder": "Ingen påminnelse",
+  "insightsListEmpty": "Ingenting her akkurat nå.",
+  "smartInsightUpcomingCostHeading": "Kommende fornyelser",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} fornyelse de neste 3 månedene koster omtrent {amount}.} other{{count} fornyelser de neste 3 månedene koster omtrent {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Uken din",
+  "weeklyRecapNothing": "Ingenting utløper denne uken.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} oppføring utløper denne uken.} other{{count} oppføringer utløper denne uken.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Du fornyet {count} oppføring forrige uke.} other{Du fornyet {count} oppføringer forrige uke.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Fornyelsene forrige uke kostet {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Lukk",
+  "timelineUnlockProgress": "{count} av {total} oppføringer med kommende dato",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Gjentas",
+  "calendarNextExpiry": "Neste utløp",
+  "calendarViewMonth": "Måned",
+  "calendarViewList": "Liste",
+  "calendarLegendExpiry": "Utløper",
+  "calendarLegendReminder": "Påminnelse",
+  "calendarMonthSummary": "{count, plural, =1{{count} utløper i {month}} other{{count} utløper i {month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "Ingenting utløper i {month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Omtrent {amount} å fornye",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Denne uken",
+  "calendarNextWeek": "Neste uke",
+  "calendarListEmpty": "Ingenting de neste 12 månedene.",
+  "calendarDaysLeft": "{count, plural, =1{{count} dag igjen} other{{count} dager igjen}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Utløp for {count} dag siden} other{Utløp for {count} dager siden}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Legg til en oppføring som utløper denne dagen",
+  "calendarPickMonth": "Velg en måned",
+  "calendarReminderFor": "Påminnelse: {name} utløper {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "کارڈ یا دستاویز اسکین کریں، یا ہاتھ سے شامل کریں۔ میعاد ختم ہونے سے پہلے Vaultara آپ کو یاد دلائے گا۔",
-  "recordsScan": "اسکین"
+  "recordsScan": "اسکین",
+  "insightsCardTitle": "سمارٹ بصیرتیں",
+  "insightPosition": "بصیرت {index} از {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "بعد میں",
+  "insightSnoozed": "ایک ہفتے کے لیے چھپا دیا گیا۔ اگر ابھی بھی ضرورت ہو تو واپس آئے گا۔",
+  "insightAsk": "اس بارے میں پوچھیں",
+  "insightAskPrompt": "{heading}۔ {body} مجھے کیا کرنا چاہیے؟",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "ریکارڈز",
+  "insightsSummaryDueSoon": "30 دن میں",
+  "insightsSummaryNoReminder": "کوئی یاد دہانی نہیں",
+  "insightsListEmpty": "ابھی یہاں کچھ نہیں۔",
+  "smartInsightUpcomingCostHeading": "آنے والی تجدیدیں",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{اگلے 3 مہینوں میں {count} تجدید پر تقریباً {amount} لاگت آئے گی۔} other{اگلے 3 مہینوں میں {count} تجدیدوں پر تقریباً {amount} لاگت آئے گی۔}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "آپ کا ہفتہ",
+  "weeklyRecapNothing": "اس ہفتے کچھ ختم نہیں ہو رہا۔",
+  "weeklyRecapExpiring": "{count, plural, =1{اس ہفتے {count} ریکارڈ ختم ہو رہا ہے۔} other{اس ہفتے {count} ریکارڈ ختم ہو رہے ہیں۔}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{آپ نے پچھلے ہفتے {count} ریکارڈ کی تجدید کی۔} other{آپ نے پچھلے ہفتے {count} ریکارڈز کی تجدید کی۔}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "پچھلے ہفتے کی تجدیدوں پر {amount} لاگت آئی۔",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "بند کریں",
+  "timelineUnlockProgress": "آنے والی تاریخ والے {total} میں سے {count} ریکارڈ",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "دہرایا جاتا ہے",
+  "calendarNextExpiry": "اگلی میعاد",
+  "calendarViewMonth": "مہینہ",
+  "calendarViewList": "فہرست",
+  "calendarLegendExpiry": "میعاد ختم",
+  "calendarLegendReminder": "یاد دہانی",
+  "calendarMonthSummary": "{count, plural, =1{{month} میں {count} کی میعاد ختم} other{{month} میں {count} کی میعاد ختم}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} میں کچھ ختم نہیں ہو رہا",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "تجدید پر تقریباً {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "اس ہفتے",
+  "calendarNextWeek": "اگلے ہفتے",
+  "calendarListEmpty": "اگلے 12 مہینوں میں کچھ نہیں۔",
+  "calendarDaysLeft": "{count, plural, =1{{count} دن باقی} other{{count} دن باقی}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} دن پہلے میعاد ختم ہوئی} other{{count} دن پہلے میعاد ختم ہوئی}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "اس دن ختم ہونے والا ریکارڈ شامل کریں",
+  "calendarPickMonth": "مہینہ منتخب کریں",
+  "calendarReminderFor": "یاد دہانی: {name} کی میعاد {date} کو ختم ہوگی",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -8036,4 +8036,174 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get recordsScan => 'สแกน';
+
+  @override
+  String get insightsCardTitle => 'ข้อมูลเชิงลึกอัจฉริยะ';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'ข้อมูล $index จาก $total';
+  }
+
+  @override
+  String get insightSnooze => 'ภายหลัง';
+
+  @override
+  String get insightSnoozed => 'ซ่อนไว้หนึ่งสัปดาห์ จะกลับมาถ้ายังต้องจัดการ';
+
+  @override
+  String get insightAsk => 'ถามเรื่องนี้';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading $body ฉันควรทำอย่างไร';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'รายการ';
+
+  @override
+  String get insightsSummaryDueSoon => 'ภายใน 30 วัน';
+
+  @override
+  String get insightsSummaryNoReminder => 'ไม่มีการเตือน';
+
+  @override
+  String get insightsListEmpty => 'ตอนนี้ยังไม่มีอะไรที่นี่';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'การต่ออายุที่ใกล้เข้ามา';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'การต่ออายุ $count รายการใน 3 เดือนข้างหน้าจะมีค่าใช้จ่ายประมาณ $amount',
+      one: 'การต่ออายุ $count รายการใน 3 เดือนข้างหน้าจะมีค่าใช้จ่ายประมาณ $amount',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'สัปดาห์ของคุณ';
+
+  @override
+  String get weeklyRecapNothing => 'สัปดาห์นี้ไม่มีอะไรหมดอายุ';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'สัปดาห์นี้มี $count รายการหมดอายุ',
+      one: 'สัปดาห์นี้มี $count รายการหมดอายุ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'สัปดาห์ที่แล้วคุณต่ออายุ $count รายการ',
+      one: 'สัปดาห์ที่แล้วคุณต่ออายุ $count รายการ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'การต่ออายุสัปดาห์ที่แล้วมีค่าใช้จ่าย $amount';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'ปิด';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count จาก $total รายการที่มีวันที่กำลังจะถึง';
+  }
+
+  @override
+  String get timelineRepeats => 'ซ้ำ';
+
+  @override
+  String get calendarNextExpiry => 'หมดอายุถัดไป';
+
+  @override
+  String get calendarViewMonth => 'เดือน';
+
+  @override
+  String get calendarViewList => 'รายการ';
+
+  @override
+  String get calendarLegendExpiry => 'หมดอายุ';
+
+  @override
+  String get calendarLegendReminder => 'การเตือน';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count รายการหมดอายุใน$month',
+      one: '$count รายการหมดอายุใน$month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'ไม่มีอะไรหมดอายุใน$month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'ค่าต่ออายุประมาณ $amount';
+  }
+
+  @override
+  String get calendarThisWeek => 'สัปดาห์นี้';
+
+  @override
+  String get calendarNextWeek => 'สัปดาห์หน้า';
+
+  @override
+  String get calendarListEmpty => 'ไม่มีอะไรใน 12 เดือนข้างหน้า';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'เหลือ $count วัน',
+      one: 'เหลือ $count วัน',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'หมดอายุแล้ว $count วัน',
+      one: 'หมดอายุแล้ว $count วัน',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'เพิ่มรายการที่หมดอายุในวันนี้';
+
+  @override
+  String get calendarPickMonth => 'เลือกเดือน';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'การเตือน: $name หมดอายุวันที่ $date';
+  }
 }

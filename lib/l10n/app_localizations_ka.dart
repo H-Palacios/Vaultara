@@ -8106,4 +8106,174 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get recordsScan => 'სკანირება';
+
+  @override
+  String get insightsCardTitle => 'ჭკვიანი რჩევები';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'რჩევა $index/$total';
+  }
+
+  @override
+  String get insightSnooze => 'მოგვიანებით';
+
+  @override
+  String get insightSnoozed => 'დაიმალა ერთი კვირით. დაბრუნდება, თუ ჯერ კიდევ საჭიროა.';
+
+  @override
+  String get insightAsk => 'ამაზე კითხვა';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body რა უნდა გავაკეთო?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'ჩანაწერები';
+
+  @override
+  String get insightsSummaryDueSoon => '30 დღეში';
+
+  @override
+  String get insightsSummaryNoReminder => 'შეხსენების გარეშე';
+
+  @override
+  String get insightsListEmpty => 'აქ ჯერ არაფერია.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'მომავალი განახლებები';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'მომდევნო 3 თვის $count განახლება დაჯდება დაახლოებით $amount.',
+      one: 'მომდევნო 3 თვის $count განახლება დაჯდება დაახლოებით $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'თქვენი კვირა';
+
+  @override
+  String get weeklyRecapNothing => 'ამ კვირაში არაფერი იწურება.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ამ კვირაში იწურება $count ჩანაწერი.',
+      one: 'ამ კვირაში იწურება $count ჩანაწერი.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'გასულ კვირას განაახლეთ $count ჩანაწერი.',
+      one: 'გასულ კვირას განაახლეთ $count ჩანაწერი.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'გასული კვირის განახლებები დაჯდა $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'დახურვა';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'მომავალი თარიღით $total-დან $count ჩანაწერი';
+  }
+
+  @override
+  String get timelineRepeats => 'მეორდება';
+
+  @override
+  String get calendarNextExpiry => 'შემდეგი ვადა';
+
+  @override
+  String get calendarViewMonth => 'თვე';
+
+  @override
+  String get calendarViewList => 'სია';
+
+  @override
+  String get calendarLegendExpiry => 'იწურება';
+
+  @override
+  String get calendarLegendReminder => 'შეხსენება';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: იწურება $count',
+      one: '$month: იწურება $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: არაფერი იწურება';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'დაახლოებით $amount განახლებისთვის';
+  }
+
+  @override
+  String get calendarThisWeek => 'ეს კვირა';
+
+  @override
+  String get calendarNextWeek => 'შემდეგი კვირა';
+
+  @override
+  String get calendarListEmpty => 'მომდევნო 12 თვეში არაფერია.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დარჩა $count დღე',
+      one: 'დარჩა $count დღე',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ამოიწურა $count დღის წინ',
+      one: 'ამოიწურა $count დღის წინ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'ამ დღეს ვადაგასული ჩანაწერის დამატება';
+
+  @override
+  String get calendarPickMonth => 'აირჩიეთ თვე';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'შეხსენება: $name-ის ვადა იწურება $date';
+  }
 }

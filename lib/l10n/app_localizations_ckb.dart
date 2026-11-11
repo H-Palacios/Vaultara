@@ -8106,4 +8106,174 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get recordsScan => 'سکان';
+
+  @override
+  String get insightsCardTitle => 'ئامۆژگاریی زیرەک';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'ئامۆژگاری $index لە $total';
+  }
+
+  @override
+  String get insightSnooze => 'دواتر';
+
+  @override
+  String get insightSnoozed => 'بۆ هەفتەیەک شاردرایەوە. ئەگەر هێشتا پێویست بێت دەگەڕێتەوە.';
+
+  @override
+  String get insightAsk => 'لەسەر ئەمە بپرسە';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body چی بکەم؟';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'تۆمارەکان';
+
+  @override
+  String get insightsSummaryDueSoon => 'لە ماوەی 30 ڕۆژدا';
+
+  @override
+  String get insightsSummaryNoReminder => 'بێ بیرخستنەوە';
+
+  @override
+  String get insightsListEmpty => 'ئێستا هیچ لێرە نییە.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'نوێکردنەوەی داهاتوو';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count نوێکردنەوە لە 3 مانگی داهاتوودا نزیکەی $amount تێدەچێت.',
+      one: '$count نوێکردنەوە لە 3 مانگی داهاتوودا نزیکەی $amount تێدەچێت.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'هەفتەکەت';
+
+  @override
+  String get weeklyRecapNothing => 'ئەم هەفتەیە هیچ بەسەرناچێت.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ئەم هەفتەیە $count تۆمار بەسەردەچن.',
+      one: 'ئەم هەفتەیە $count تۆمار بەسەردەچێت.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'هەفتەی ڕابردوو $count تۆمارت نوێکردەوە.',
+      one: 'هەفتەی ڕابردوو $count تۆمارت نوێکردەوە.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'نوێکردنەوەکانی هەفتەی ڕابردوو $amount تێچوون.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'داخستن';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count لە $total تۆمار بە بەرواری داهاتوو';
+  }
+
+  @override
+  String get timelineRepeats => 'دووبارە دەبێتەوە';
+
+  @override
+  String get calendarNextExpiry => 'بەسەرچوونی داهاتوو';
+
+  @override
+  String get calendarViewMonth => 'مانگ';
+
+  @override
+  String get calendarViewList => 'لیست';
+
+  @override
+  String get calendarLegendExpiry => 'بەسەردەچێت';
+
+  @override
+  String get calendarLegendReminder => 'بیرخستنەوە';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count بەسەردەچن',
+      one: '$month: $count بەسەردەچێت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: هیچ بەسەرناچێت';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'نزیکەی $amount بۆ نوێکردنەوە';
+  }
+
+  @override
+  String get calendarThisWeek => 'ئەم هەفتەیە';
+
+  @override
+  String get calendarNextWeek => 'هەفتەی داهاتوو';
+
+  @override
+  String get calendarListEmpty => 'لە 12 مانگی داهاتوودا هیچ نییە.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڕۆژ ماوە',
+      one: '$count ڕۆژ ماوە',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڕۆژ لەمەوبەر بەسەرچوو',
+      one: '$count ڕۆژ لەمەوبەر بەسەرچوو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'تۆمارێک زیاد بکە کە لەم ڕۆژەدا بەسەردەچێت';
+
+  @override
+  String get calendarPickMonth => 'مانگێک هەڵبژێرە';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'بیرخستنەوە: $name لە $date بەسەردەچێت';
+  }
 }

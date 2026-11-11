@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Iska sawir kaarka ama dukumentiga, ama gacanta ku dar. Vaultara ayaa ku xasuusinaysa ka hor inta uusan dhicin.",
-  "recordsScan": "Iska sawir"
+  "recordsScan": "Iska sawir",
+  "insightsCardTitle": "Talooyin caqli leh",
+  "insightPosition": "Talo {index} ee {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Hadhow",
+  "insightSnoozed": "Toddobaad ayaa la qariyay. Way soo noqonaysaa haddii weli loo baahdo.",
+  "insightAsk": "Wax ka weydii",
+  "insightAskPrompt": "{heading}. {body} Maxaan sameeyaa?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Diiwaanno",
+  "insightsSummaryDueSoon": "30 maalmood gudahood",
+  "insightsSummaryNoReminder": "Xusuusin la'aan",
+  "insightsListEmpty": "Halkan wax ma jiraan hadda.",
+  "smartInsightUpcomingCostHeading": "Cusboonaysiinta soo socota",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} cusboonaysiin 3da bilood ee soo socda waxay ku kacaysaa ilaa {amount}.} other{{count} cusboonaysiin 3da bilood ee soo socda waxay ku kacayaan ilaa {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Toddobaadkaaga",
+  "weeklyRecapNothing": "Toddobaadkan waxba ma dhacayaan.",
+  "weeklyRecapExpiring": "{count, plural, =1{{count} diiwaan ayaa dhacaya toddobaadkan.} other{{count} diiwaan ayaa dhacaya toddobaadkan.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Toddobaadkii hore waxaad cusboonaysiisay {count} diiwaan.} other{Toddobaadkii hore waxaad cusboonaysiisay {count} diiwaan.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Cusboonaysiinta toddobaadkii hore waxay ku kacday {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Xir",
+  "timelineUnlockProgress": "{count} ka mid ah {total} diiwaan oo leh taariikh soo socota",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Way soo noqnoqotaa",
+  "calendarNextExpiry": "Dhicitaanka xiga",
+  "calendarViewMonth": "Bil",
+  "calendarViewList": "Liis",
+  "calendarLegendExpiry": "Wuu dhacayaa",
+  "calendarLegendReminder": "Xusuusin",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} ayaa dhacaya} other{{month}: {count} ayaa dhacaya}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: waxba ma dhacayaan",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Ilaa {amount} cusboonaysiin",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Toddobaadkan",
+  "calendarNextWeek": "Toddobaadka soo socda",
+  "calendarListEmpty": "Waxba ma jiraan 12ka bilood ee soo socda.",
+  "calendarDaysLeft": "{count, plural, =1{{count} maalin ayaa hadhay} other{{count} maalmood ayaa hadhay}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Wuu dhacay {count} maalin ka hor} other{Wuu dhacay {count} maalmood ka hor}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Ku dar diiwaan dhacaya maalintan",
+  "calendarPickMonth": "Dooro bil",
+  "calendarReminderFor": "Xusuusin: {name} wuxuu dhacayaa {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

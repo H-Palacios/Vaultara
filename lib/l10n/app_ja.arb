@@ -2728,5 +2728,150 @@
     }
   },
   "recordsEmptyBody": "カードや書類をスキャンするか、手動で追加してください。期限が切れる前にVaultaraがお知らせします。",
-  "recordsScan": "スキャン"
+  "recordsScan": "スキャン",
+  "insightsCardTitle": "スマートインサイト",
+  "insightPosition": "インサイト {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "あとで",
+  "insightSnoozed": "1週間非表示にしました。まだ必要なら再表示されます。",
+  "insightAsk": "これについて質問",
+  "insightAskPrompt": "{heading}。{body} どうすればよいですか？",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "記録",
+  "insightsSummaryDueSoon": "30日以内",
+  "insightsSummaryNoReminder": "リマインダーなし",
+  "insightsListEmpty": "今は何もありません。",
+  "smartInsightUpcomingCostHeading": "今後の更新",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{今後3か月の更新{count}件で約{amount}かかります。} other{今後3か月の更新{count}件で約{amount}かかります。}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "今週のまとめ",
+  "weeklyRecapNothing": "今週期限切れになるものはありません。",
+  "weeklyRecapExpiring": "{count, plural, =1{今週{count}件の期限が切れます。} other{今週{count}件の期限が切れます。}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{先週{count}件を更新しました。} other{先週{count}件を更新しました。}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "先週の更新費用は{amount}でした。",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "閉じる",
+  "timelineUnlockProgress": "今後の日付がある記録 {count}/{total}",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "繰り返し",
+  "calendarNextExpiry": "次の期限",
+  "calendarViewMonth": "月",
+  "calendarViewList": "リスト",
+  "calendarLegendExpiry": "期限",
+  "calendarLegendReminder": "リマインダー",
+  "calendarMonthSummary": "{count, plural, =1{{month}に{count}件期限切れ} other{{month}に{count}件期限切れ}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}に期限切れになるものはありません",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "更新に約{amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "今週",
+  "calendarNextWeek": "来週",
+  "calendarListEmpty": "今後12か月は何もありません。",
+  "calendarDaysLeft": "{count, plural, =1{残り{count}日} other{残り{count}日}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count}日前に期限切れ} other{{count}日前に期限切れ}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "この日に期限が切れる記録を追加",
+  "calendarPickMonth": "月を選択",
+  "calendarReminderFor": "リマインダー：{name}は{date}に期限切れ",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -8110,4 +8110,174 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get recordsScan => 'Eskaneatu';
+
+  @override
+  String get insightsCardTitle => 'Aholku adimendunak';
+
+  @override
+  String insightPosition(int index, int total) {
+    return '$total aholkuetatik $index.a';
+  }
+
+  @override
+  String get insightSnooze => 'Geroago';
+
+  @override
+  String get insightSnoozed => 'Aste batez ezkutatuta. Oraindik behar bada, itzuliko da.';
+
+  @override
+  String get insightAsk => 'Galdetu honi buruz';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Zer egin behar dut?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Erregistroak';
+
+  @override
+  String get insightsSummaryDueSoon => '30 egunetan';
+
+  @override
+  String get insightsSummaryNoReminder => 'Abisurik gabe';
+
+  @override
+  String get insightsListEmpty => 'Hemen ez dago ezer oraingoz.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Hurrengo berritzeak';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hurrengo 3 hilabeteetako $count berritzeek $amount inguru kostatuko dute.',
+      one: 'Hurrengo 3 hilabeteetako $count berritzeak $amount inguru kostatuko du.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Zure astea';
+
+  @override
+  String get weeklyRecapNothing => 'Aste honetan ez da ezer iraungitzen.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aste honetan $count erregistro iraungitzen dira.',
+      one: 'Aste honetan $count erregistro iraungitzen da.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Joan den astean $count erregistro berritu zenituen.',
+      one: 'Joan den astean $count erregistro berritu zenuen.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Joan den asteko berritzeek $amount kostatu zuten.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Itxi';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'Data hurbila duten $total erregistroetatik $count';
+  }
+
+  @override
+  String get timelineRepeats => 'Errepikatzen da';
+
+  @override
+  String get calendarNextExpiry => 'Hurrengo iraungitzea';
+
+  @override
+  String get calendarViewMonth => 'Hilabetea';
+
+  @override
+  String get calendarViewList => 'Zerrenda';
+
+  @override
+  String get calendarLegendExpiry => 'Iraungitzen da';
+
+  @override
+  String get calendarLegendReminder => 'Abisua';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count iraungitzen dira',
+      one: '$month: $count iraungitzen da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: ez da ezer iraungitzen';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return '$amount inguru berritzeko';
+  }
+
+  @override
+  String get calendarThisWeek => 'Aste hau';
+
+  @override
+  String get calendarNextWeek => 'Hurrengo astea';
+
+  @override
+  String get calendarListEmpty => 'Ez dago ezer hurrengo 12 hilabeteetan.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count egun falta dira',
+      one: '$count egun falta da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Duela $count egun iraungi zen',
+      one: 'Duela $count egun iraungi zen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Gehitu egun honetan iraungitzen den erregistroa';
+
+  @override
+  String get calendarPickMonth => 'Aukeratu hilabetea';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Abisua: $name $date iraungitzen da';
+  }
 }

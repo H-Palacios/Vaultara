@@ -2728,5 +2728,150 @@
     }
   },
   "recordsEmptyBody": "کارت یا سند را اسکن کنید یا دستی اضافه کنید. Vaultara پیش از انقضا به شما یادآوری می‌کند.",
-  "recordsScan": "اسکن"
+  "recordsScan": "اسکن",
+  "insightsCardTitle": "بینش‌های هوشمند",
+  "insightPosition": "بینش {index} از {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "بعداً",
+  "insightSnoozed": "به مدت یک هفته پنهان شد. اگر هنوز لازم باشد، برمی‌گردد.",
+  "insightAsk": "درباره این بپرس",
+  "insightAskPrompt": "{heading}. {body} چه کار کنم؟",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "موارد",
+  "insightsSummaryDueSoon": "تا ۳۰ روز آینده",
+  "insightsSummaryNoReminder": "بدون یادآور",
+  "insightsListEmpty": "فعلاً چیزی اینجا نیست.",
+  "smartInsightUpcomingCostHeading": "تمدیدهای پیش رو",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} تمدید در ۳ ماه آینده حدود {amount} هزینه دارد.} other{{count} تمدید در ۳ ماه آینده حدود {amount} هزینه دارد.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "هفته شما",
+  "weeklyRecapNothing": "این هفته چیزی منقضی نمی‌شود.",
+  "weeklyRecapExpiring": "{count, plural, =1{این هفته {count} مورد منقضی می‌شود.} other{این هفته {count} مورد منقضی می‌شود.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{هفته گذشته {count} مورد را تمدید کردید.} other{هفته گذشته {count} مورد را تمدید کردید.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "تمدیدهای هفته گذشته {amount} هزینه داشت.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "بستن",
+  "timelineUnlockProgress": "{count} از {total} مورد با تاریخ پیش رو",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "تکرار می‌شود",
+  "calendarNextExpiry": "انقضای بعدی",
+  "calendarViewMonth": "ماه",
+  "calendarViewList": "فهرست",
+  "calendarLegendExpiry": "منقضی می‌شود",
+  "calendarLegendReminder": "یادآور",
+  "calendarMonthSummary": "{count, plural, =1{{count} مورد در {month} منقضی می‌شود} other{{count} مورد در {month} منقضی می‌شود}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "در {month} چیزی منقضی نمی‌شود",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "حدود {amount} برای تمدید",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "این هفته",
+  "calendarNextWeek": "هفته بعد",
+  "calendarListEmpty": "در ۱۲ ماه آینده چیزی نیست.",
+  "calendarDaysLeft": "{count, plural, =1{{count} روز مانده} other{{count} روز مانده}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} روز پیش منقضی شد} other{{count} روز پیش منقضی شد}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "افزودن موردی که در این روز منقضی می‌شود",
+  "calendarPickMonth": "انتخاب ماه",
+  "calendarReminderFor": "یادآور: {name} در {date} منقضی می‌شود",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -8048,4 +8048,174 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get recordsScan => 'Quét';
+
+  @override
+  String get insightsCardTitle => 'Gợi ý thông minh';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Gợi ý $index/$total';
+  }
+
+  @override
+  String get insightSnooze => 'Để sau';
+
+  @override
+  String get insightSnoozed => 'Đã ẩn một tuần. Nó sẽ quay lại nếu vẫn cần bạn xử lý.';
+
+  @override
+  String get insightAsk => 'Hỏi về việc này';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Tôi nên làm gì?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Hồ sơ';
+
+  @override
+  String get insightsSummaryDueSoon => 'Đến hạn trong 30 ngày';
+
+  @override
+  String get insightsSummaryNoReminder => 'Không có nhắc nhở';
+
+  @override
+  String get insightsListEmpty => 'Hiện chưa có gì ở đây.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Sắp gia hạn';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lần gia hạn trong 3 tháng tới sẽ tốn khoảng $amount.',
+      one: '$count lần gia hạn trong 3 tháng tới sẽ tốn khoảng $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Tuần của bạn';
+
+  @override
+  String get weeklyRecapNothing => 'Tuần này không có gì hết hạn.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hồ sơ hết hạn trong tuần này.',
+      one: '$count hồ sơ hết hạn trong tuần này.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tuần trước bạn đã gia hạn $count hồ sơ.',
+      one: 'Tuần trước bạn đã gia hạn $count hồ sơ.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Gia hạn tuần trước tốn $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Đóng';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count/$total hồ sơ có ngày sắp tới';
+  }
+
+  @override
+  String get timelineRepeats => 'Lặp lại';
+
+  @override
+  String get calendarNextExpiry => 'Hạn tiếp theo';
+
+  @override
+  String get calendarViewMonth => 'Tháng';
+
+  @override
+  String get calendarViewList => 'Danh sách';
+
+  @override
+  String get calendarLegendExpiry => 'Hết hạn';
+
+  @override
+  String get calendarLegendReminder => 'Nhắc nhở';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hết hạn trong $month',
+      one: '$count hết hạn trong $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Không có gì hết hạn trong $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Khoảng $amount để gia hạn';
+  }
+
+  @override
+  String get calendarThisWeek => 'Tuần này';
+
+  @override
+  String get calendarNextWeek => 'Tuần sau';
+
+  @override
+  String get calendarListEmpty => 'Không có gì trong 12 tháng tới.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Còn $count ngày',
+      one: 'Còn $count ngày',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã hết hạn $count ngày trước',
+      one: 'Đã hết hạn $count ngày trước',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Thêm hồ sơ hết hạn vào ngày này';
+
+  @override
+  String get calendarPickMonth => 'Chọn tháng';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Nhắc nhở: $name hết hạn vào $date';
+  }
 }

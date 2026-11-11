@@ -2734,5 +2734,150 @@
     }
   },
   "recordsEmptyBody": "ສະແກນບັດ ຫຼື ເອກະສານ ຫຼື ເພີ່ມເອງ. Vaultara ຈະເຕືອນທ່ານກ່ອນໝົດອາຍຸ.",
-  "recordsScan": "ສະແກນ"
+  "recordsScan": "ສະແກນ",
+  "insightsCardTitle": "ຄຳແນະນຳອັດສະລິຍະ",
+  "insightPosition": "ຄຳແນະນຳ {index} ຈາກ {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "ພາຍຫຼັງ",
+  "insightSnoozed": "ເຊື່ອງໄວ້ໜຶ່ງອາທິດ. ມັນຈະກັບມາຖ້າຍັງຕ້ອງການ.",
+  "insightAsk": "ຖາມກ່ຽວກັບເລື່ອງນີ້",
+  "insightAskPrompt": "{heading}. {body} ຂ້ອຍຄວນເຮັດແນວໃດ?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "ລາຍການ",
+  "insightsSummaryDueSoon": "ພາຍໃນ 30 ມື້",
+  "insightsSummaryNoReminder": "ບໍ່ມີການເຕືອນ",
+  "insightsListEmpty": "ຕອນນີ້ບໍ່ມີຫຍັງຢູ່ນີ້.",
+  "smartInsightUpcomingCostHeading": "ການຕໍ່ອາຍຸທີ່ກຳລັງຈະມາ",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{ການຕໍ່ອາຍຸ {count} ລາຍການໃນ 3 ເດືອນຂ້າງໜ້າຈະມີຄ່າໃຊ້ຈ່າຍປະມານ {amount}.} other{ການຕໍ່ອາຍຸ {count} ລາຍການໃນ 3 ເດືອນຂ້າງໜ້າຈະມີຄ່າໃຊ້ຈ່າຍປະມານ {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "ອາທິດຂອງທ່ານ",
+  "weeklyRecapNothing": "ອາທິດນີ້ບໍ່ມີຫຍັງໝົດອາຍຸ.",
+  "weeklyRecapExpiring": "{count, plural, =1{ອາທິດນີ້ມີ {count} ລາຍການໝົດອາຍຸ.} other{ອາທິດນີ້ມີ {count} ລາຍການໝົດອາຍຸ.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{ອາທິດແລ້ວທ່ານຕໍ່ອາຍຸ {count} ລາຍການ.} other{ອາທິດແລ້ວທ່ານຕໍ່ອາຍຸ {count} ລາຍການ.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "ການຕໍ່ອາຍຸອາທິດແລ້ວມີຄ່າໃຊ້ຈ່າຍ {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "ປິດ",
+  "timelineUnlockProgress": "{count} ຈາກ {total} ລາຍການທີ່ມີວັນທີກຳລັງຈະມາ",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "ຊ້ຳ",
+  "calendarNextExpiry": "ການໝົດອາຍຸຕໍ່ໄປ",
+  "calendarViewMonth": "ເດືອນ",
+  "calendarViewList": "ລາຍຊື່",
+  "calendarLegendExpiry": "ໝົດອາຍຸ",
+  "calendarLegendReminder": "ການເຕືອນ",
+  "calendarMonthSummary": "{count, plural, =1{{month}: ໝົດອາຍຸ {count}} other{{month}: ໝົດອາຍຸ {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: ບໍ່ມີຫຍັງໝົດອາຍຸ",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "ປະມານ {amount} ສຳລັບການຕໍ່ອາຍຸ",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ອາທິດນີ້",
+  "calendarNextWeek": "ອາທິດໜ້າ",
+  "calendarListEmpty": "ບໍ່ມີຫຍັງໃນ 12 ເດືອນຂ້າງໜ້າ.",
+  "calendarDaysLeft": "{count, plural, =1{ເຫຼືອ {count} ມື້} other{ເຫຼືອ {count} ມື້}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{ໝົດອາຍຸແລ້ວ {count} ມື້} other{ໝົດອາຍຸແລ້ວ {count} ມື້}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "ເພີ່ມລາຍການທີ່ໝົດອາຍຸໃນມື້ນີ້",
+  "calendarPickMonth": "ເລືອກເດືອນ",
+  "calendarReminderFor": "ການເຕືອນ: {name} ໝົດອາຍຸວັນທີ {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

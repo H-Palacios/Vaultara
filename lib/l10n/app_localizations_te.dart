@@ -8106,4 +8106,174 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get recordsScan => 'స్కాన్';
+
+  @override
+  String get insightsCardTitle => 'స్మార్ట్ సూచనలు';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'సూచన $index / $total';
+  }
+
+  @override
+  String get insightSnooze => 'తర్వాత';
+
+  @override
+  String get insightSnoozed => 'ఒక వారం పాటు దాచబడింది. ఇంకా అవసరమైతే మళ్లీ కనిపిస్తుంది.';
+
+  @override
+  String get insightAsk => 'దీని గురించి అడగండి';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body నేను ఏం చేయాలి?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'రికార్డులు';
+
+  @override
+  String get insightsSummaryDueSoon => '30 రోజుల్లో';
+
+  @override
+  String get insightsSummaryNoReminder => 'రిమైండర్ లేదు';
+
+  @override
+  String get insightsListEmpty => 'ప్రస్తుతం ఇక్కడ ఏమీ లేదు.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'రాబోయే పునరుద్ధరణలు';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'రాబోయే 3 నెలల్లో $count పునరుద్ధరణలకు సుమారు $amount ఖర్చవుతుంది.',
+      one: 'రాబోయే 3 నెలల్లో $count పునరుద్ధరణకు సుమారు $amount ఖర్చవుతుంది.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'మీ వారం';
+
+  @override
+  String get weeklyRecapNothing => 'ఈ వారం ఏదీ గడువు ముగియదు.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ఈ వారం $count రికార్డుల గడువు ముగుస్తుంది.',
+      one: 'ఈ వారం $count రికార్డ్ గడువు ముగుస్తుంది.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'గత వారం మీరు $count రికార్డులను పునరుద్ధరించారు.',
+      one: 'గత వారం మీరు $count రికార్డును పునరుద్ధరించారు.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'గత వారం పునరుద్ధరణలకు $amount ఖర్చయింది.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'మూసివేయి';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'రాబోయే తేదీ ఉన్న $total లో $count రికార్డులు';
+  }
+
+  @override
+  String get timelineRepeats => 'పునరావృతం';
+
+  @override
+  String get calendarNextExpiry => 'తదుపరి గడువు';
+
+  @override
+  String get calendarViewMonth => 'నెల';
+
+  @override
+  String get calendarViewList => 'జాబితా';
+
+  @override
+  String get calendarLegendExpiry => 'గడువు ముగుస్తుంది';
+
+  @override
+  String get calendarLegendReminder => 'రిమైండర్';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$monthలో $count గడువు ముగుస్తాయి',
+      one: '$monthలో $count గడువు ముగుస్తుంది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$monthలో ఏదీ గడువు ముగియదు';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'పునరుద్ధరణకు సుమారు $amount';
+  }
+
+  @override
+  String get calendarThisWeek => 'ఈ వారం';
+
+  @override
+  String get calendarNextWeek => 'వచ్చే వారం';
+
+  @override
+  String get calendarListEmpty => 'రాబోయే 12 నెలల్లో ఏమీ లేదు.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count రోజులు మిగిలాయి',
+      one: '$count రోజు మిగిలింది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count రోజుల క్రితం గడువు ముగిసింది',
+      one: '$count రోజు క్రితం గడువు ముగిసింది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'ఈ రోజున గడువు ముగిసే రికార్డును జోడించండి';
+
+  @override
+  String get calendarPickMonth => 'నెలను ఎంచుకోండి';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'రిమైండర్: $name గడువు $dateన ముగుస్తుంది';
+  }
 }

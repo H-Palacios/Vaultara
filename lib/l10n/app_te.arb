@@ -2733,5 +2733,150 @@
     }
   },
   "recordsEmptyBody": "కార్డ్ లేదా పత్రాన్ని స్కాన్ చేయండి, లేదా మీరే జోడించండి. గడువు ముగిసేలోపు Vaultara గుర్తు చేస్తుంది.",
-  "recordsScan": "స్కాన్"
+  "recordsScan": "స్కాన్",
+  "insightsCardTitle": "స్మార్ట్ సూచనలు",
+  "insightPosition": "సూచన {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "తర్వాత",
+  "insightSnoozed": "ఒక వారం పాటు దాచబడింది. ఇంకా అవసరమైతే మళ్లీ కనిపిస్తుంది.",
+  "insightAsk": "దీని గురించి అడగండి",
+  "insightAskPrompt": "{heading}. {body} నేను ఏం చేయాలి?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "రికార్డులు",
+  "insightsSummaryDueSoon": "30 రోజుల్లో",
+  "insightsSummaryNoReminder": "రిమైండర్ లేదు",
+  "insightsListEmpty": "ప్రస్తుతం ఇక్కడ ఏమీ లేదు.",
+  "smartInsightUpcomingCostHeading": "రాబోయే పునరుద్ధరణలు",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{రాబోయే 3 నెలల్లో {count} పునరుద్ధరణకు సుమారు {amount} ఖర్చవుతుంది.} other{రాబోయే 3 నెలల్లో {count} పునరుద్ధరణలకు సుమారు {amount} ఖర్చవుతుంది.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "మీ వారం",
+  "weeklyRecapNothing": "ఈ వారం ఏదీ గడువు ముగియదు.",
+  "weeklyRecapExpiring": "{count, plural, =1{ఈ వారం {count} రికార్డ్ గడువు ముగుస్తుంది.} other{ఈ వారం {count} రికార్డుల గడువు ముగుస్తుంది.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{గత వారం మీరు {count} రికార్డును పునరుద్ధరించారు.} other{గత వారం మీరు {count} రికార్డులను పునరుద్ధరించారు.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "గత వారం పునరుద్ధరణలకు {amount} ఖర్చయింది.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "మూసివేయి",
+  "timelineUnlockProgress": "రాబోయే తేదీ ఉన్న {total} లో {count} రికార్డులు",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "పునరావృతం",
+  "calendarNextExpiry": "తదుపరి గడువు",
+  "calendarViewMonth": "నెల",
+  "calendarViewList": "జాబితా",
+  "calendarLegendExpiry": "గడువు ముగుస్తుంది",
+  "calendarLegendReminder": "రిమైండర్",
+  "calendarMonthSummary": "{count, plural, =1{{month}లో {count} గడువు ముగుస్తుంది} other{{month}లో {count} గడువు ముగుస్తాయి}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}లో ఏదీ గడువు ముగియదు",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "పునరుద్ధరణకు సుమారు {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ఈ వారం",
+  "calendarNextWeek": "వచ్చే వారం",
+  "calendarListEmpty": "రాబోయే 12 నెలల్లో ఏమీ లేదు.",
+  "calendarDaysLeft": "{count, plural, =1{{count} రోజు మిగిలింది} other{{count} రోజులు మిగిలాయి}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} రోజు క్రితం గడువు ముగిసింది} other{{count} రోజుల క్రితం గడువు ముగిసింది}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "ఈ రోజున గడువు ముగిసే రికార్డును జోడించండి",
+  "calendarPickMonth": "నెలను ఎంచుకోండి",
+  "calendarReminderFor": "రిమైండర్: {name} గడువు {date}న ముగుస్తుంది",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

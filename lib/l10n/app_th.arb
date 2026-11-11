@@ -2733,5 +2733,150 @@
     }
   },
   "recordsEmptyBody": "สแกนบัตรหรือเอกสาร หรือเพิ่มเอง Vaultara จะเตือนคุณก่อนหมดอายุ",
-  "recordsScan": "สแกน"
+  "recordsScan": "สแกน",
+  "insightsCardTitle": "ข้อมูลเชิงลึกอัจฉริยะ",
+  "insightPosition": "ข้อมูล {index} จาก {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "ภายหลัง",
+  "insightSnoozed": "ซ่อนไว้หนึ่งสัปดาห์ จะกลับมาถ้ายังต้องจัดการ",
+  "insightAsk": "ถามเรื่องนี้",
+  "insightAskPrompt": "{heading} {body} ฉันควรทำอย่างไร",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "รายการ",
+  "insightsSummaryDueSoon": "ภายใน 30 วัน",
+  "insightsSummaryNoReminder": "ไม่มีการเตือน",
+  "insightsListEmpty": "ตอนนี้ยังไม่มีอะไรที่นี่",
+  "smartInsightUpcomingCostHeading": "การต่ออายุที่ใกล้เข้ามา",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{การต่ออายุ {count} รายการใน 3 เดือนข้างหน้าจะมีค่าใช้จ่ายประมาณ {amount}} other{การต่ออายุ {count} รายการใน 3 เดือนข้างหน้าจะมีค่าใช้จ่ายประมาณ {amount}}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "สัปดาห์ของคุณ",
+  "weeklyRecapNothing": "สัปดาห์นี้ไม่มีอะไรหมดอายุ",
+  "weeklyRecapExpiring": "{count, plural, =1{สัปดาห์นี้มี {count} รายการหมดอายุ} other{สัปดาห์นี้มี {count} รายการหมดอายุ}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{สัปดาห์ที่แล้วคุณต่ออายุ {count} รายการ} other{สัปดาห์ที่แล้วคุณต่ออายุ {count} รายการ}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "การต่ออายุสัปดาห์ที่แล้วมีค่าใช้จ่าย {amount}",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "ปิด",
+  "timelineUnlockProgress": "{count} จาก {total} รายการที่มีวันที่กำลังจะถึง",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "ซ้ำ",
+  "calendarNextExpiry": "หมดอายุถัดไป",
+  "calendarViewMonth": "เดือน",
+  "calendarViewList": "รายการ",
+  "calendarLegendExpiry": "หมดอายุ",
+  "calendarLegendReminder": "การเตือน",
+  "calendarMonthSummary": "{count, plural, =1{{count} รายการหมดอายุใน{month}} other{{count} รายการหมดอายุใน{month}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "ไม่มีอะไรหมดอายุใน{month}",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "ค่าต่ออายุประมาณ {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "สัปดาห์นี้",
+  "calendarNextWeek": "สัปดาห์หน้า",
+  "calendarListEmpty": "ไม่มีอะไรใน 12 เดือนข้างหน้า",
+  "calendarDaysLeft": "{count, plural, =1{เหลือ {count} วัน} other{เหลือ {count} วัน}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{หมดอายุแล้ว {count} วัน} other{หมดอายุแล้ว {count} วัน}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "เพิ่มรายการที่หมดอายุในวันนี้",
+  "calendarPickMonth": "เลือกเดือน",
+  "calendarReminderFor": "การเตือน: {name} หมดอายุวันที่ {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

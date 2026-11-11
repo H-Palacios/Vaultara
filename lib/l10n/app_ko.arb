@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "카드나 문서를 스캔하거나 직접 추가하세요. 만료되기 전에 Vaultara가 알려 드립니다.",
-  "recordsScan": "스캔"
+  "recordsScan": "스캔",
+  "insightsCardTitle": "스마트 인사이트",
+  "insightPosition": "인사이트 {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "나중에",
+  "insightSnoozed": "일주일 동안 숨겼습니다. 계속 필요하면 다시 나타납니다.",
+  "insightAsk": "이것에 대해 질문",
+  "insightAskPrompt": "{heading}. {body} 어떻게 해야 하나요?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "기록",
+  "insightsSummaryDueSoon": "30일 이내",
+  "insightsSummaryNoReminder": "알림 없음",
+  "insightsListEmpty": "지금은 아무것도 없습니다.",
+  "smartInsightUpcomingCostHeading": "다가오는 갱신",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{앞으로 3개월간 갱신 {count}건에 약 {amount}이(가) 듭니다.} other{앞으로 3개월간 갱신 {count}건에 약 {amount}이(가) 듭니다.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "이번 주",
+  "weeklyRecapNothing": "이번 주에 만료되는 항목이 없습니다.",
+  "weeklyRecapExpiring": "{count, plural, =1{이번 주에 {count}건이 만료됩니다.} other{이번 주에 {count}건이 만료됩니다.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{지난주에 {count}건을 갱신했습니다.} other{지난주에 {count}건을 갱신했습니다.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "지난주 갱신 비용은 {amount}였습니다.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "닫기",
+  "timelineUnlockProgress": "예정된 날짜가 있는 기록 {count}/{total}",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "반복",
+  "calendarNextExpiry": "다음 만료",
+  "calendarViewMonth": "월",
+  "calendarViewList": "목록",
+  "calendarLegendExpiry": "만료",
+  "calendarLegendReminder": "알림",
+  "calendarMonthSummary": "{count, plural, =1{{month}에 {count}건 만료} other{{month}에 {count}건 만료}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}에는 만료되는 항목이 없습니다",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "갱신 비용 약 {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "이번 주",
+  "calendarNextWeek": "다음 주",
+  "calendarListEmpty": "앞으로 12개월 동안 예정된 항목이 없습니다.",
+  "calendarDaysLeft": "{count, plural, =1{{count}일 남음} other{{count}일 남음}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count}일 전 만료} other{{count}일 전 만료}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "이날 만료되는 기록 추가",
+  "calendarPickMonth": "월 선택",
+  "calendarReminderFor": "알림: {name}이(가) {date}에 만료",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

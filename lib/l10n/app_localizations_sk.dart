@@ -8250,4 +8250,176 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skenovať';
+
+  @override
+  String get insightsCardTitle => 'Šikovné tipy';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Tip $index z $total';
+  }
+
+  @override
+  String get insightSnooze => 'Neskôr';
+
+  @override
+  String get insightSnoozed => 'Skryté na týždeň. Vráti sa, ak bude stále potrebné.';
+
+  @override
+  String get insightAsk => 'Opýtať sa na to';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Čo mám robiť?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Záznamy';
+
+  @override
+  String get insightsSummaryDueSoon => 'Do 30 dní';
+
+  @override
+  String get insightsSummaryNoReminder => 'Bez pripomenutia';
+
+  @override
+  String get insightsListEmpty => 'Zatiaľ tu nič nie je.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Blížiace sa obnovy';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Obnovy v nasledujúcich 3 mesiacoch ($count) budú stáť asi $amount.',
+      one: 'Obnovy v nasledujúcich 3 mesiacoch ($count) budú stáť asi $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Váš týždeň';
+
+  @override
+  String get weeklyRecapNothing => 'Tento týždeň nič nevyprší.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tento týždeň vyprší záznamov: $count.',
+      one: 'Tento týždeň vyprší záznamov: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Minulý týždeň obnovených záznamov: $count.',
+      one: 'Minulý týždeň obnovených záznamov: $count.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Obnovy minulý týždeň stáli $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Zavrieť';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count z $total záznamov s blížiacim sa dátumom';
+  }
+
+  @override
+  String get timelineRepeats => 'Opakuje sa';
+
+  @override
+  String get calendarNextExpiry => 'Najbližší termín';
+
+  @override
+  String get calendarViewMonth => 'Mesiac';
+
+  @override
+  String get calendarViewList => 'Zoznam';
+
+  @override
+  String get calendarLegendExpiry => 'Vyprší';
+
+  @override
+  String get calendarLegendReminder => 'Pripomenutie';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: vyprší $count',
+      one: '$month: vyprší $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'V mesiaci $month nič nevyprší';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Asi $amount na obnovy';
+  }
+
+  @override
+  String get calendarThisWeek => 'Tento týždeň';
+
+  @override
+  String get calendarNextWeek => 'Budúci týždeň';
+
+  @override
+  String get calendarListEmpty => 'V nasledujúcich 12 mesiacoch nič nie je.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zostáva $count dní',
+      many: 'Zostáva $count dňa',
+      few: 'Zostávajú $count dni',
+      one: 'Zostáva $count deň',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vypršalo pred $count dňami',
+      one: 'Vypršalo pred $count dňom',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Pridať záznam, ktorý vyprší v tento deň';
+
+  @override
+  String get calendarPickMonth => 'Vyberte mesiac';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Pripomenutie: $name vyprší $date';
+  }
 }

@@ -8048,4 +8048,174 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get recordsScan => '스캔';
+
+  @override
+  String get insightsCardTitle => '스마트 인사이트';
+
+  @override
+  String insightPosition(int index, int total) {
+    return '인사이트 $index/$total';
+  }
+
+  @override
+  String get insightSnooze => '나중에';
+
+  @override
+  String get insightSnoozed => '일주일 동안 숨겼습니다. 계속 필요하면 다시 나타납니다.';
+
+  @override
+  String get insightAsk => '이것에 대해 질문';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body 어떻게 해야 하나요?';
+  }
+
+  @override
+  String get insightsSummaryRecords => '기록';
+
+  @override
+  String get insightsSummaryDueSoon => '30일 이내';
+
+  @override
+  String get insightsSummaryNoReminder => '알림 없음';
+
+  @override
+  String get insightsListEmpty => '지금은 아무것도 없습니다.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => '다가오는 갱신';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '앞으로 3개월간 갱신 $count건에 약 $amount이(가) 듭니다.',
+      one: '앞으로 3개월간 갱신 $count건에 약 $amount이(가) 듭니다.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => '이번 주';
+
+  @override
+  String get weeklyRecapNothing => '이번 주에 만료되는 항목이 없습니다.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '이번 주에 $count건이 만료됩니다.',
+      one: '이번 주에 $count건이 만료됩니다.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '지난주에 $count건을 갱신했습니다.',
+      one: '지난주에 $count건을 갱신했습니다.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return '지난주 갱신 비용은 $amount였습니다.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => '닫기';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '예정된 날짜가 있는 기록 $count/$total';
+  }
+
+  @override
+  String get timelineRepeats => '반복';
+
+  @override
+  String get calendarNextExpiry => '다음 만료';
+
+  @override
+  String get calendarViewMonth => '월';
+
+  @override
+  String get calendarViewList => '목록';
+
+  @override
+  String get calendarLegendExpiry => '만료';
+
+  @override
+  String get calendarLegendReminder => '알림';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month에 $count건 만료',
+      one: '$month에 $count건 만료',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month에는 만료되는 항목이 없습니다';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return '갱신 비용 약 $amount';
+  }
+
+  @override
+  String get calendarThisWeek => '이번 주';
+
+  @override
+  String get calendarNextWeek => '다음 주';
+
+  @override
+  String get calendarListEmpty => '앞으로 12개월 동안 예정된 항목이 없습니다.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count일 남음',
+      one: '$count일 남음',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count일 전 만료',
+      one: '$count일 전 만료',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => '이날 만료되는 기록 추가';
+
+  @override
+  String get calendarPickMonth => '월 선택';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return '알림: $name이(가) $date에 만료';
+  }
 }

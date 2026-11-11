@@ -2734,5 +2734,150 @@
     }
   },
   "recordsEmptyBody": "Noskenējiet karti vai dokumentu vai pievienojiet manuāli. Vaultara atgādinās, pirms beigsies derīgums.",
-  "recordsScan": "Skenēt"
+  "recordsScan": "Skenēt",
+  "insightsCardTitle": "Gudri padomi",
+  "insightPosition": "Padoms {index} no {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Vēlāk",
+  "insightSnoozed": "Paslēpts uz nedēļu. Atgriezīsies, ja vēl būs vajadzīgs.",
+  "insightAsk": "Jautāt par šo",
+  "insightAskPrompt": "{heading}. {body} Ko man darīt?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Ieraksti",
+  "insightsSummaryDueSoon": "30 dienu laikā",
+  "insightsSummaryNoReminder": "Bez atgādinājuma",
+  "insightsListEmpty": "Pagaidām šeit nekā nav.",
+  "smartInsightUpcomingCostHeading": "Gaidāmās atjaunošanas",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Atjaunošanas nākamajos 3 mēnešos ({count}) maksās ap {amount}.} other{Atjaunošanas nākamajos 3 mēnešos ({count}) maksās ap {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Jūsu nedēļa",
+  "weeklyRecapNothing": "Šonedēļ nekas nebeidzas.",
+  "weeklyRecapExpiring": "{count, plural, =1{Šonedēļ beidzas ieraksti: {count}.} other{Šonedēļ beidzas ieraksti: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Pagājušajā nedēļā atjaunoti ieraksti: {count}.} other{Pagājušajā nedēļā atjaunoti ieraksti: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Pagājušās nedēļas atjaunošanas maksāja {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Aizvērt",
+  "timelineUnlockProgress": "{count} no {total} ierakstiem ar gaidāmu datumu",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Atkārtojas",
+  "calendarNextExpiry": "Nākamais termiņš",
+  "calendarViewMonth": "Mēnesis",
+  "calendarViewList": "Saraksts",
+  "calendarLegendExpiry": "Beidzas",
+  "calendarLegendReminder": "Atgādinājums",
+  "calendarMonthSummary": "{count, plural, =1{{month}: beidzas {count}} other{{month}: beidzas {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: nekas nebeidzas",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Ap {amount} atjaunošanai",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Šī nedēļa",
+  "calendarNextWeek": "Nākamā nedēļa",
+  "calendarListEmpty": "Nākamajos 12 mēnešos nekā nav.",
+  "calendarDaysLeft": "{count, plural, =1{Atlikušas dienas: {count}} other{Atlikušas dienas: {count}}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Beidzies pirms dienām: {count}} other{Beidzies pirms dienām: {count}}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Pievienot ierakstu, kas beidzas šajā dienā",
+  "calendarPickMonth": "Izvēlieties mēnesi",
+  "calendarReminderFor": "Atgādinājums: {name} beidzas {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

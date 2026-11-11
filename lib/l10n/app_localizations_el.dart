@@ -8110,4 +8110,174 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get recordsScan => 'Σάρωση';
+
+  @override
+  String get insightsCardTitle => 'Έξυπνες πληροφορίες';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Πληροφορία $index από $total';
+  }
+
+  @override
+  String get insightSnooze => 'Αργότερα';
+
+  @override
+  String get insightSnoozed => 'Κρύφτηκε για μία εβδομάδα. Θα επιστρέψει αν χρειάζεται ακόμα.';
+
+  @override
+  String get insightAsk => 'Ρώτα γι\' αυτό';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Τι πρέπει να κάνω;';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Εγγραφές';
+
+  @override
+  String get insightsSummaryDueSoon => 'Εντός 30 ημερών';
+
+  @override
+  String get insightsSummaryNoReminder => 'Χωρίς υπενθύμιση';
+
+  @override
+  String get insightsListEmpty => 'Δεν υπάρχει τίποτα εδώ προς το παρόν.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Ανανεώσεις που έρχονται';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ανανεώσεις τους επόμενους 3 μήνες θα κοστίσουν περίπου $amount.',
+      one: '$count ανανέωση τους επόμενους 3 μήνες θα κοστίσει περίπου $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Η εβδομάδα σας';
+
+  @override
+  String get weeklyRecapNothing => 'Τίποτα δεν λήγει αυτή την εβδομάδα.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count εγγραφές λήγουν αυτή την εβδομάδα.',
+      one: '$count εγγραφή λήγει αυτή την εβδομάδα.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ανανεώσατε $count εγγραφές την περασμένη εβδομάδα.',
+      one: 'Ανανεώσατε $count εγγραφή την περασμένη εβδομάδα.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Οι ανανεώσεις της περασμένης εβδομάδας κόστισαν $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Κλείσιμο';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count από $total εγγραφές με επερχόμενη ημερομηνία';
+  }
+
+  @override
+  String get timelineRepeats => 'Επαναλαμβάνεται';
+
+  @override
+  String get calendarNextExpiry => 'Επόμενη λήξη';
+
+  @override
+  String get calendarViewMonth => 'Μήνας';
+
+  @override
+  String get calendarViewList => 'Λίστα';
+
+  @override
+  String get calendarLegendExpiry => 'Λήγει';
+
+  @override
+  String get calendarLegendReminder => 'Υπενθύμιση';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count λήγουν τον $month',
+      one: '$count λήγει τον $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Τίποτα δεν λήγει τον $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Περίπου $amount για ανανεώσεις';
+  }
+
+  @override
+  String get calendarThisWeek => 'Αυτή την εβδομάδα';
+
+  @override
+  String get calendarNextWeek => 'Την επόμενη εβδομάδα';
+
+  @override
+  String get calendarListEmpty => 'Τίποτα τους επόμενους 12 μήνες.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Απομένουν $count ημέρες',
+      one: 'Απομένει $count ημέρα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Έληξε πριν από $count ημέρες',
+      one: 'Έληξε πριν από $count ημέρα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Προσθήκη εγγραφής που λήγει αυτή την ημέρα';
+
+  @override
+  String get calendarPickMonth => 'Επιλογή μήνα';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Υπενθύμιση: $name λήγει στις $date';
+  }
 }

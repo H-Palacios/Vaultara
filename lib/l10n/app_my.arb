@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "ကတ် သို့မဟုတ် စာရွက်စာတမ်းကို စကင်ဖတ်ပါ၊ သို့မဟုတ် ကိုယ်တိုင်ထည့်ပါ။ သက်တမ်းမကုန်မီ Vaultara က သတိပေးပါမည်။",
-  "recordsScan": "စကင်ဖတ်ရန်"
+  "recordsScan": "စကင်ဖတ်ရန်",
+  "insightsCardTitle": "စမတ် အကြံပြုချက်များ",
+  "insightPosition": "အကြံပြုချက် {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "နောက်မှ",
+  "insightSnoozed": "တစ်ပတ် ဖျောက်ထားသည်။ လိုအပ်နေသေးပါက ပြန်ပေါ်လာမည်။",
+  "insightAsk": "ဤအကြောင်း မေးရန်",
+  "insightAskPrompt": "{heading}။ {body} ကျွန်ုပ် ဘာလုပ်သင့်သလဲ။",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "မှတ်တမ်းများ",
+  "insightsSummaryDueSoon": "ရက် 30 အတွင်း",
+  "insightsSummaryNoReminder": "သတိပေးချက် မရှိ",
+  "insightsListEmpty": "ယခု ဤနေရာတွင် ဘာမျှ မရှိပါ။",
+  "smartInsightUpcomingCostHeading": "လာမည့် သက်တမ်းတိုးမှုများ",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{နောက် 3 လအတွင်း သက်တမ်းတိုးမှု {count} ခုအတွက် {amount} ခန့် ကုန်ကျမည်။} other{နောက် 3 လအတွင်း သက်တမ်းတိုးမှု {count} ခုအတွက် {amount} ခန့် ကုန်ကျမည်။}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "သင့်အပတ်",
+  "weeklyRecapNothing": "ဤအပတ်တွင် သက်တမ်းကုန်မည့်အရာ မရှိပါ။",
+  "weeklyRecapExpiring": "{count, plural, =1{ဤအပတ်တွင် မှတ်တမ်း {count} ခု သက်တမ်းကုန်မည်။} other{ဤအပတ်တွင် မှတ်တမ်း {count} ခု သက်တမ်းကုန်မည်။}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{ပြီးခဲ့သည့်အပတ်တွင် မှတ်တမ်း {count} ခု သက်တမ်းတိုးခဲ့သည်။} other{ပြီးခဲ့သည့်အပတ်တွင် မှတ်တမ်း {count} ခု သက်တမ်းတိုးခဲ့သည်။}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "ပြီးခဲ့သည့်အပတ် သက်တမ်းတိုးမှုများအတွက် {amount} ကုန်ကျခဲ့သည်။",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "ပိတ်ရန်",
+  "timelineUnlockProgress": "လာမည့်ရက်ရှိသော {total} ခုအနက် မှတ်တမ်း {count} ခု",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "ထပ်ခါလာသည်",
+  "calendarNextExpiry": "နောက်ထပ် သက်တမ်းကုန်ရက်",
+  "calendarViewMonth": "လ",
+  "calendarViewList": "စာရင်း",
+  "calendarLegendExpiry": "သက်တမ်းကုန်",
+  "calendarLegendReminder": "သတိပေးချက်",
+  "calendarMonthSummary": "{count, plural, =1{{month} တွင် {count} ခု သက်တမ်းကုန်} other{{month} တွင် {count} ခု သက်တမ်းကုန်}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} တွင် သက်တမ်းကုန်မည့်အရာ မရှိ",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "သက်တမ်းတိုးရန် {amount} ခန့်",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ဤအပတ်",
+  "calendarNextWeek": "နောက်အပတ်",
+  "calendarListEmpty": "နောက် 12 လအတွင်း ဘာမျှ မရှိပါ။",
+  "calendarDaysLeft": "{count, plural, =1{{count} ရက် ကျန်} other{{count} ရက် ကျန်}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} ရက်က သက်တမ်းကုန်ခဲ့} other{{count} ရက်က သက်တမ်းကုန်ခဲ့}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "ဤနေ့တွင် သက်တမ်းကုန်မည့် မှတ်တမ်း ထည့်ရန်",
+  "calendarPickMonth": "လ ရွေးရန်",
+  "calendarReminderFor": "သတိပေးချက်: {name} {date} တွင် သက်တမ်းကုန်မည်",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

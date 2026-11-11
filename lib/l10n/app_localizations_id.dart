@@ -8043,4 +8043,174 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get recordsScan => 'Pindai';
+
+  @override
+  String get insightsCardTitle => 'Wawasan pintar';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Wawasan $index dari $total';
+  }
+
+  @override
+  String get insightSnooze => 'Nanti';
+
+  @override
+  String get insightSnoozed => 'Disembunyikan selama seminggu. Akan muncul lagi jika masih perlu.';
+
+  @override
+  String get insightAsk => 'Tanyakan ini';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Apa yang harus saya lakukan?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Catatan';
+
+  @override
+  String get insightsSummaryDueSoon => 'Dalam 30 hari';
+
+  @override
+  String get insightsSummaryNoReminder => 'Tanpa pengingat';
+
+  @override
+  String get insightsListEmpty => 'Belum ada apa-apa di sini.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Perpanjangan mendatang';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count perpanjangan dalam 3 bulan ke depan akan menghabiskan sekitar $amount.',
+      one: '$count perpanjangan dalam 3 bulan ke depan akan menghabiskan sekitar $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Minggu Anda';
+
+  @override
+  String get weeklyRecapNothing => 'Tidak ada yang kedaluwarsa minggu ini.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count catatan kedaluwarsa minggu ini.',
+      one: '$count catatan kedaluwarsa minggu ini.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Anda memperpanjang $count catatan minggu lalu.',
+      one: 'Anda memperpanjang $count catatan minggu lalu.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Perpanjangan minggu lalu menghabiskan $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Tutup';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count dari $total catatan dengan tanggal mendatang';
+  }
+
+  @override
+  String get timelineRepeats => 'Berulang';
+
+  @override
+  String get calendarNextExpiry => 'Kedaluwarsa berikutnya';
+
+  @override
+  String get calendarViewMonth => 'Bulan';
+
+  @override
+  String get calendarViewList => 'Daftar';
+
+  @override
+  String get calendarLegendExpiry => 'Kedaluwarsa';
+
+  @override
+  String get calendarLegendReminder => 'Pengingat';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kedaluwarsa di bulan $month',
+      one: '$count kedaluwarsa di bulan $month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Tidak ada yang kedaluwarsa di bulan $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Sekitar $amount untuk perpanjangan';
+  }
+
+  @override
+  String get calendarThisWeek => 'Minggu ini';
+
+  @override
+  String get calendarNextWeek => 'Minggu depan';
+
+  @override
+  String get calendarListEmpty => 'Tidak ada apa pun dalam 12 bulan ke depan.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hari lagi',
+      one: '$count hari lagi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kedaluwarsa $count hari lalu',
+      one: 'Kedaluwarsa $count hari lalu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Tambahkan catatan yang kedaluwarsa hari ini';
+
+  @override
+  String get calendarPickMonth => 'Pilih bulan';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Pengingat: $name kedaluwarsa pada $date';
+  }
 }

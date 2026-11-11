@@ -2881,5 +2881,150 @@
     }
   },
   "recordsEmptyBody": "Skanni kaart või dokument või lisa see käsitsi. Vaultara tuletab meelde enne aegumist.",
-  "recordsScan": "Skanni"
+  "recordsScan": "Skanni",
+  "insightsCardTitle": "Nutikad vihjed",
+  "insightPosition": "Vihje {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Hiljem",
+  "insightSnoozed": "Peidetud nädalaks. Tuleb tagasi, kui seda veel vaja on.",
+  "insightAsk": "Küsi selle kohta",
+  "insightAskPrompt": "{heading}. {body} Mida ma peaksin tegema?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Kirjed",
+  "insightsSummaryDueSoon": "30 päeva jooksul",
+  "insightsSummaryNoReminder": "Meeldetuletuseta",
+  "insightsListEmpty": "Siin pole praegu midagi.",
+  "smartInsightUpcomingCostHeading": "Tulevad uuendused",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{{count} uuendus järgmise 3 kuu jooksul maksab umbes {amount}.} other{{count} uuendust järgmise 3 kuu jooksul maksab umbes {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Sinu nädal",
+  "weeklyRecapNothing": "Sel nädalal ei aegu midagi.",
+  "weeklyRecapExpiring": "{count, plural, =1{Sel nädalal aegub {count} kirje.} other{Sel nädalal aegub {count} kirjet.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Uuendasid eelmisel nädalal {count} kirje.} other{Uuendasid eelmisel nädalal {count} kirjet.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Eelmise nädala uuendused maksid {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Sulge",
+  "timelineUnlockProgress": "{count}/{total} kirjet tuleva kuupäevaga",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Kordub",
+  "calendarNextExpiry": "Järgmine aegumine",
+  "calendarViewMonth": "Kuu",
+  "calendarViewList": "Loend",
+  "calendarLegendExpiry": "Aegub",
+  "calendarLegendReminder": "Meeldetuletus",
+  "calendarMonthSummary": "{count, plural, =1{{month}: aegub {count}} other{{month}: aegub {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: midagi ei aegu",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Umbes {amount} uuendusteks",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "See nädal",
+  "calendarNextWeek": "Järgmine nädal",
+  "calendarListEmpty": "Järgmise 12 kuu jooksul pole midagi.",
+  "calendarDaysLeft": "{count, plural, =1{{count} päev jäänud} other{{count} päeva jäänud}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Aegus {count} päev tagasi} other{Aegus {count} päeva tagasi}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Lisa kirje, mis aegub sel päeval",
+  "calendarPickMonth": "Vali kuu",
+  "calendarReminderFor": "Meeldetuletus: {name} aegub {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

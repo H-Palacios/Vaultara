@@ -2734,5 +2734,150 @@
     }
   },
   "recordsEmptyBody": "Картаны не құжатты сканерлеңіз немесе қолмен қосыңыз. Мерзімі біткенге дейін Vaultara еске салады.",
-  "recordsScan": "Сканерлеу"
+  "recordsScan": "Сканерлеу",
+  "insightsCardTitle": "Ақылды кеңестер",
+  "insightPosition": "Кеңес {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Кейінірек",
+  "insightSnoozed": "Бір аптаға жасырылды. Әлі қажет болса, қайта шығады.",
+  "insightAsk": "Бұл туралы сұрау",
+  "insightAskPrompt": "{heading}. {body} Не істеуім керек?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Жазбалар",
+  "insightsSummaryDueSoon": "30 күн ішінде",
+  "insightsSummaryNoReminder": "Еске салғышсыз",
+  "insightsListEmpty": "Әзірге мұнда ештеңе жоқ.",
+  "smartInsightUpcomingCostHeading": "Алдағы жаңартулар",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Келесі 3 айдағы {count} жаңарту шамамен {amount} тұрады.} other{Келесі 3 айдағы {count} жаңарту шамамен {amount} тұрады.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Сіздің аптаңыз",
+  "weeklyRecapNothing": "Осы аптада ештеңенің мерзімі бітпейді.",
+  "weeklyRecapExpiring": "{count, plural, =1{Осы аптада {count} жазбаның мерзімі бітеді.} other{Осы аптада {count} жазбаның мерзімі бітеді.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Өткен аптада {count} жазбаны жаңарттыңыз.} other{Өткен аптада {count} жазбаны жаңарттыңыз.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Өткен аптадағы жаңартулар {amount} тұрды.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Жабу",
+  "timelineUnlockProgress": "Алдағы күні бар {total} жазбаның {count}",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Қайталанады",
+  "calendarNextExpiry": "Келесі мерзім",
+  "calendarViewMonth": "Ай",
+  "calendarViewList": "Тізім",
+  "calendarLegendExpiry": "Мерзімі бітеді",
+  "calendarLegendReminder": "Еске салғыш",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} мерзімі бітеді} other{{month}: {count} мерзімі бітеді}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: ештеңенің мерзімі бітпейді",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Жаңартуға шамамен {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Осы апта",
+  "calendarNextWeek": "Келесі апта",
+  "calendarListEmpty": "Келесі 12 айда ештеңе жоқ.",
+  "calendarDaysLeft": "{count, plural, =1{{count} күн қалды} other{{count} күн қалды}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} күн бұрын бітті} other{{count} күн бұрын бітті}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Осы күні мерзімі бітетін жазба қосу",
+  "calendarPickMonth": "Айды таңдаңыз",
+  "calendarReminderFor": "Еске салғыш: {name} мерзімі {date} бітеді",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

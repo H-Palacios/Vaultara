@@ -2734,5 +2734,150 @@
     }
   },
   "recordsEmptyBody": "Szkenneld be a kártyát vagy dokumentumot, vagy add hozzá kézzel. A Vaultara lejárat előtt emlékeztet.",
-  "recordsScan": "Szkennelés"
+  "recordsScan": "Szkennelés",
+  "insightsCardTitle": "Okos tippek",
+  "insightPosition": "{index}. tipp / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Később",
+  "insightSnoozed": "Egy hétre elrejtve. Visszatér, ha még szükség van rá.",
+  "insightAsk": "Kérdezz erről",
+  "insightAskPrompt": "{heading}. {body} Mit tegyek?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Tételek",
+  "insightsSummaryDueSoon": "30 napon belül",
+  "insightsSummaryNoReminder": "Nincs emlékeztető",
+  "insightsListEmpty": "Itt most nincs semmi.",
+  "smartInsightUpcomingCostHeading": "Közelgő megújítások",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{A következő 3 hónap {count} megújítása körülbelül {amount} lesz.} other{A következő 3 hónap {count} megújítása körülbelül {amount} lesz.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "A heted",
+  "weeklyRecapNothing": "Ezen a héten semmi sem jár le.",
+  "weeklyRecapExpiring": "{count, plural, =1{Ezen a héten {count} tétel jár le.} other{Ezen a héten {count} tétel jár le.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Múlt héten {count} tételt újítottál meg.} other{Múlt héten {count} tételt újítottál meg.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "A múlt heti megújítások {amount} összegbe kerültek.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Bezárás",
+  "timelineUnlockProgress": "{total} tételből {count} közelgő dátummal",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Ismétlődik",
+  "calendarNextExpiry": "Következő lejárat",
+  "calendarViewMonth": "Hónap",
+  "calendarViewList": "Lista",
+  "calendarLegendExpiry": "Lejár",
+  "calendarLegendReminder": "Emlékeztető",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} lejár} other{{month}: {count} lejár}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: semmi sem jár le",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Körülbelül {amount} a megújításokra",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Ez a hét",
+  "calendarNextWeek": "Jövő hét",
+  "calendarListEmpty": "A következő 12 hónapban nincs semmi.",
+  "calendarDaysLeft": "{count, plural, =1{Még {count} nap} other{Még {count} nap}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} napja lejárt} other{{count} napja lejárt}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Ezen a napon lejáró tétel hozzáadása",
+  "calendarPickMonth": "Válassz hónapot",
+  "calendarReminderFor": "Emlékeztető: {name} lejár: {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

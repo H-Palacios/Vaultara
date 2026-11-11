@@ -8110,4 +8110,174 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get recordsScan => 'Skannaa';
+
+  @override
+  String get insightsCardTitle => 'Älykkäät vinkit';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Vinkki $index/$total';
+  }
+
+  @override
+  String get insightSnooze => 'Myöhemmin';
+
+  @override
+  String get insightSnoozed => 'Piilotettu viikoksi. Se palaa, jos sitä vielä tarvitaan.';
+
+  @override
+  String get insightAsk => 'Kysy tästä';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Mitä minun pitäisi tehdä?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Tietueet';
+
+  @override
+  String get insightsSummaryDueSoon => '30 päivän sisällä';
+
+  @override
+  String get insightsSummaryNoReminder => 'Ei muistutusta';
+
+  @override
+  String get insightsListEmpty => 'Täällä ei ole nyt mitään.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Tulevat uusinnat';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count uusintaa seuraavien 3 kuukauden aikana maksaa noin $amount.',
+      one: '$count uusinta seuraavien 3 kuukauden aikana maksaa noin $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Viikkosi';
+
+  @override
+  String get weeklyRecapNothing => 'Tällä viikolla ei vanhene mitään.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tietuetta vanhenee tällä viikolla.',
+      one: '$count tietue vanhenee tällä viikolla.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Uusit viime viikolla $count tietuetta.',
+      one: 'Uusit viime viikolla $count tietueen.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Viime viikon uusinnat maksoivat $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Sulje';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return '$count/$total tietuetta, joilla on tuleva päivä';
+  }
+
+  @override
+  String get timelineRepeats => 'Toistuu';
+
+  @override
+  String get calendarNextExpiry => 'Seuraava vanheneminen';
+
+  @override
+  String get calendarViewMonth => 'Kuukausi';
+
+  @override
+  String get calendarViewList => 'Luettelo';
+
+  @override
+  String get calendarLegendExpiry => 'Vanhenee';
+
+  @override
+  String get calendarLegendReminder => 'Muistutus';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: vanhenee $count',
+      one: '$month: vanhenee $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return 'Ei vanhenevia: $month';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Noin $amount uusintoihin';
+  }
+
+  @override
+  String get calendarThisWeek => 'Tämä viikko';
+
+  @override
+  String get calendarNextWeek => 'Ensi viikko';
+
+  @override
+  String get calendarListEmpty => 'Seuraavan 12 kuukauden aikana ei mitään.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count päivää jäljellä',
+      one: '$count päivä jäljellä',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vanheni $count päivää sitten',
+      one: 'Vanheni $count päivä sitten',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Lisää tietue, joka vanhenee tänä päivänä';
+
+  @override
+  String get calendarPickMonth => 'Valitse kuukausi';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Muistutus: $name vanhenee $date';
+  }
 }

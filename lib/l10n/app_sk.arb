@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "Naskenujte kartu alebo doklad, alebo ho pridajte ručne. Vaultara vám pripomenie koniec platnosti.",
-  "recordsScan": "Skenovať"
+  "recordsScan": "Skenovať",
+  "insightsCardTitle": "Šikovné tipy",
+  "insightPosition": "Tip {index} z {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Neskôr",
+  "insightSnoozed": "Skryté na týždeň. Vráti sa, ak bude stále potrebné.",
+  "insightAsk": "Opýtať sa na to",
+  "insightAskPrompt": "{heading}. {body} Čo mám robiť?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Záznamy",
+  "insightsSummaryDueSoon": "Do 30 dní",
+  "insightsSummaryNoReminder": "Bez pripomenutia",
+  "insightsListEmpty": "Zatiaľ tu nič nie je.",
+  "smartInsightUpcomingCostHeading": "Blížiace sa obnovy",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Obnovy v nasledujúcich 3 mesiacoch ({count}) budú stáť asi {amount}.} other{Obnovy v nasledujúcich 3 mesiacoch ({count}) budú stáť asi {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Váš týždeň",
+  "weeklyRecapNothing": "Tento týždeň nič nevyprší.",
+  "weeklyRecapExpiring": "{count, plural, =1{Tento týždeň vyprší záznamov: {count}.} other{Tento týždeň vyprší záznamov: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Minulý týždeň obnovených záznamov: {count}.} other{Minulý týždeň obnovených záznamov: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Obnovy minulý týždeň stáli {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Zavrieť",
+  "timelineUnlockProgress": "{count} z {total} záznamov s blížiacim sa dátumom",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Opakuje sa",
+  "calendarNextExpiry": "Najbližší termín",
+  "calendarViewMonth": "Mesiac",
+  "calendarViewList": "Zoznam",
+  "calendarLegendExpiry": "Vyprší",
+  "calendarLegendReminder": "Pripomenutie",
+  "calendarMonthSummary": "{count, plural, =1{{month}: vyprší {count}} other{{month}: vyprší {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "V mesiaci {month} nič nevyprší",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Asi {amount} na obnovy",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Tento týždeň",
+  "calendarNextWeek": "Budúci týždeň",
+  "calendarListEmpty": "V nasledujúcich 12 mesiacoch nič nie je.",
+  "calendarDaysLeft": "{count, plural, =1{Zostáva {count} deň} few{Zostávajú {count} dni} many{Zostáva {count} dňa} other{Zostáva {count} dní}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Vypršalo pred {count} dňom} other{Vypršalo pred {count} dňami}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Pridať záznam, ktorý vyprší v tento deň",
+  "calendarPickMonth": "Vyberte mesiac",
+  "calendarReminderFor": "Pripomenutie: {name} vyprší {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

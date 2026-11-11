@@ -2709,5 +2709,150 @@
     }
   },
   "recordsEmptyBody": "掃描卡片或文件，或手動新增。Vaultara 會在到期前提醒你。",
-  "recordsScan": "掃描"
+  "recordsScan": "掃描",
+  "insightsCardTitle": "智慧提示",
+  "insightPosition": "第 {index} 則，共 {total} 則",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "稍後",
+  "insightSnoozed": "已隱藏一週。如果仍需處理，會再次出現。",
+  "insightAsk": "就此提問",
+  "insightAskPrompt": "{heading}。{body} 我該怎麼做？",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "紀錄",
+  "insightsSummaryDueSoon": "30 天內到期",
+  "insightsSummaryNoReminder": "沒有提醒",
+  "insightsListEmpty": "這裡目前沒有內容。",
+  "smartInsightUpcomingCostHeading": "即將續約",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{未來 3 個月的 {count} 筆續約約需 {amount}。} other{未來 3 個月的 {count} 筆續約約需 {amount}。}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "本週概覽",
+  "weeklyRecapNothing": "本週沒有到期的紀錄。",
+  "weeklyRecapExpiring": "{count, plural, =1{本週有 {count} 筆紀錄到期。} other{本週有 {count} 筆紀錄到期。}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{上週你續約了 {count} 筆紀錄。} other{上週你續約了 {count} 筆紀錄。}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "上週續約花費 {amount}。",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "關閉",
+  "timelineUnlockProgress": "{count}/{total} 筆紀錄有即將到來的日期",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "重複",
+  "calendarNextExpiry": "下一個到期",
+  "calendarViewMonth": "月",
+  "calendarViewList": "清單",
+  "calendarLegendExpiry": "到期",
+  "calendarLegendReminder": "提醒",
+  "calendarMonthSummary": "{count, plural, =1{{month}有 {count} 筆到期} other{{month}有 {count} 筆到期}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}沒有到期的紀錄",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "續約約需 {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "本週",
+  "calendarNextWeek": "下週",
+  "calendarListEmpty": "未來 12 個月沒有安排。",
+  "calendarDaysLeft": "{count, plural, =1{還剩 {count} 天} other{還剩 {count} 天}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{已過期 {count} 天} other{已過期 {count} 天}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "新增在這一天到期的紀錄",
+  "calendarPickMonth": "選擇月份",
+  "calendarReminderFor": "提醒：{name} 將於 {date} 到期",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

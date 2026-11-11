@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "Kartı və ya sənədi skan edin, ya da əl ilə əlavə edin. Vaultara müddəti bitməzdən əvvəl xatırladacaq.",
-  "recordsScan": "Skan et"
+  "recordsScan": "Skan et",
+  "insightsCardTitle": "Ağıllı tövsiyələr",
+  "insightPosition": "Tövsiyə {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Sonra",
+  "insightSnoozed": "Bir həftəlik gizlədildi. Hələ lazım olsa, geri qayıdacaq.",
+  "insightAsk": "Bu barədə soruş",
+  "insightAskPrompt": "{heading}. {body} Nə etməliyəm?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Qeydlər",
+  "insightsSummaryDueSoon": "30 gün ərzində",
+  "insightsSummaryNoReminder": "Xatırlatma yoxdur",
+  "insightsListEmpty": "Hələ burada heç nə yoxdur.",
+  "smartInsightUpcomingCostHeading": "Qarşıdakı yeniləmələr",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Növbəti 3 aydakı {count} yeniləmə təxminən {amount} olacaq.} other{Növbəti 3 aydakı {count} yeniləmə təxminən {amount} olacaq.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Həftəniz",
+  "weeklyRecapNothing": "Bu həftə heç nəyin müddəti bitmir.",
+  "weeklyRecapExpiring": "{count, plural, =1{Bu həftə {count} qeydin müddəti bitir.} other{Bu həftə {count} qeydin müddəti bitir.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Keçən həftə {count} qeyd yenilədiniz.} other{Keçən həftə {count} qeyd yenilədiniz.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Keçən həftənin yeniləmələri {amount} oldu.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Bağla",
+  "timelineUnlockProgress": "Yaxın tarixi olan {total} qeyddən {count}",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Təkrarlanır",
+  "calendarNextExpiry": "Növbəti bitmə",
+  "calendarViewMonth": "Ay",
+  "calendarViewList": "Siyahı",
+  "calendarLegendExpiry": "Bitir",
+  "calendarLegendReminder": "Xatırlatma",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} bitir} other{{month}: {count} bitir}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: heç nə bitmir",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Yeniləməyə təxminən {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Bu həftə",
+  "calendarNextWeek": "Gələn həftə",
+  "calendarListEmpty": "Növbəti 12 ayda heç nə yoxdur.",
+  "calendarDaysLeft": "{count, plural, =1{{count} gün qalıb} other{{count} gün qalıb}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} gün əvvəl bitib} other{{count} gün əvvəl bitib}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Bu gün bitən qeyd əlavə et",
+  "calendarPickMonth": "Ay seçin",
+  "calendarReminderFor": "Xatırlatma: {name} {date} tarixində bitir",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -2734,5 +2734,150 @@
     }
   },
   "recordsEmptyBody": "დაასკანერეთ ბარათი ან დოკუმენტი, ან დაამატეთ ხელით. Vaultara შეგახსენებთ ვადის ამოწურვამდე.",
-  "recordsScan": "სკანირება"
+  "recordsScan": "სკანირება",
+  "insightsCardTitle": "ჭკვიანი რჩევები",
+  "insightPosition": "რჩევა {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "მოგვიანებით",
+  "insightSnoozed": "დაიმალა ერთი კვირით. დაბრუნდება, თუ ჯერ კიდევ საჭიროა.",
+  "insightAsk": "ამაზე კითხვა",
+  "insightAskPrompt": "{heading}. {body} რა უნდა გავაკეთო?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "ჩანაწერები",
+  "insightsSummaryDueSoon": "30 დღეში",
+  "insightsSummaryNoReminder": "შეხსენების გარეშე",
+  "insightsListEmpty": "აქ ჯერ არაფერია.",
+  "smartInsightUpcomingCostHeading": "მომავალი განახლებები",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{მომდევნო 3 თვის {count} განახლება დაჯდება დაახლოებით {amount}.} other{მომდევნო 3 თვის {count} განახლება დაჯდება დაახლოებით {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "თქვენი კვირა",
+  "weeklyRecapNothing": "ამ კვირაში არაფერი იწურება.",
+  "weeklyRecapExpiring": "{count, plural, =1{ამ კვირაში იწურება {count} ჩანაწერი.} other{ამ კვირაში იწურება {count} ჩანაწერი.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{გასულ კვირას განაახლეთ {count} ჩანაწერი.} other{გასულ კვირას განაახლეთ {count} ჩანაწერი.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "გასული კვირის განახლებები დაჯდა {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "დახურვა",
+  "timelineUnlockProgress": "მომავალი თარიღით {total}-დან {count} ჩანაწერი",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "მეორდება",
+  "calendarNextExpiry": "შემდეგი ვადა",
+  "calendarViewMonth": "თვე",
+  "calendarViewList": "სია",
+  "calendarLegendExpiry": "იწურება",
+  "calendarLegendReminder": "შეხსენება",
+  "calendarMonthSummary": "{count, plural, =1{{month}: იწურება {count}} other{{month}: იწურება {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: არაფერი იწურება",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "დაახლოებით {amount} განახლებისთვის",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "ეს კვირა",
+  "calendarNextWeek": "შემდეგი კვირა",
+  "calendarListEmpty": "მომდევნო 12 თვეში არაფერია.",
+  "calendarDaysLeft": "{count, plural, =1{დარჩა {count} დღე} other{დარჩა {count} დღე}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{ამოიწურა {count} დღის წინ} other{ამოიწურა {count} დღის წინ}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "ამ დღეს ვადაგასული ჩანაწერის დამატება",
+  "calendarPickMonth": "აირჩიეთ თვე",
+  "calendarReminderFor": "შეხსენება: {name}-ის ვადა იწურება {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -2734,5 +2734,150 @@
     }
   },
   "recordsEmptyBody": "Карт эсвэл баримтаа скан хийх эсвэл гараар нэмнэ үү. Хугацаа дуусахаас өмнө Vaultara сануулна.",
-  "recordsScan": "Скан хийх"
+  "recordsScan": "Скан хийх",
+  "insightsCardTitle": "Ухаалаг зөвлөмж",
+  "insightPosition": "Зөвлөмж {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Дараа",
+  "insightSnoozed": "Нэг долоо хоног нуусан. Хэрэгтэй хэвээр бол буцаж гарна.",
+  "insightAsk": "Энэ талаар асуух",
+  "insightAskPrompt": "{heading}. {body} Би юу хийх ёстой вэ?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Бичлэгүүд",
+  "insightsSummaryDueSoon": "30 хоногт",
+  "insightsSummaryNoReminder": "Сануулгагүй",
+  "insightsListEmpty": "Одоогоор энд юу ч алга.",
+  "smartInsightUpcomingCostHeading": "Удахгүй сунгалтууд",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Дараагийн 3 сарын {count} сунгалт ойролцоогоор {amount} болно.} other{Дараагийн 3 сарын {count} сунгалт ойролцоогоор {amount} болно.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Таны долоо хоног",
+  "weeklyRecapNothing": "Энэ долоо хоногт юу ч дуусахгүй.",
+  "weeklyRecapExpiring": "{count, plural, =1{Энэ долоо хоногт {count} бичлэгийн хугацаа дуусна.} other{Энэ долоо хоногт {count} бичлэгийн хугацаа дуусна.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Өнгөрсөн долоо хоногт {count} бичлэг сунгасан.} other{Өнгөрсөн долоо хоногт {count} бичлэг сунгасан.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Өнгөрсөн долоо хоногийн сунгалт {amount} болсон.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Хаах",
+  "timelineUnlockProgress": "Ойрын огноотой {total} бичлэгийн {count}",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Давтагдана",
+  "calendarNextExpiry": "Дараагийн дуусах",
+  "calendarViewMonth": "Сар",
+  "calendarViewList": "Жагсаалт",
+  "calendarLegendExpiry": "Дуусна",
+  "calendarLegendReminder": "Сануулга",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} дуусна} other{{month}: {count} дуусна}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: юу ч дуусахгүй",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Сунгалтад ойролцоогоор {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Энэ долоо хоног",
+  "calendarNextWeek": "Дараа долоо хоног",
+  "calendarListEmpty": "Дараагийн 12 сард юу ч алга.",
+  "calendarDaysLeft": "{count, plural, =1{{count} хоног үлдсэн} other{{count} хоног үлдсэн}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} хоногийн өмнө дууссан} other{{count} хоногийн өмнө дууссан}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Энэ өдөр дуусах бичлэг нэмэх",
+  "calendarPickMonth": "Сар сонгох",
+  "calendarReminderFor": "Сануулга: {name} {date}-нд дуусна",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

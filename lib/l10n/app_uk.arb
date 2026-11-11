@@ -2733,5 +2733,150 @@
     }
   },
   "recordsEmptyBody": "Відскануйте картку чи документ або додайте вручну. Vaultara нагадає до закінчення терміну.",
-  "recordsScan": "Сканувати"
+  "recordsScan": "Сканувати",
+  "insightsCardTitle": "Розумні підказки",
+  "insightPosition": "Підказка {index} з {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Пізніше",
+  "insightSnoozed": "Приховано на тиждень. Повернеться, якщо ще буде потрібно.",
+  "insightAsk": "Запитати про це",
+  "insightAskPrompt": "{heading}. {body} Що мені робити?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Записи",
+  "insightsSummaryDueSoon": "Спливають за 30 днів",
+  "insightsSummaryNoReminder": "Без нагадування",
+  "insightsListEmpty": "Тут поки нічого немає.",
+  "smartInsightUpcomingCostHeading": "Незабаром поновлення",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Поновлення за найближчі 3 місяці ({count}) коштуватиме приблизно {amount}.} other{Поновлення за найближчі 3 місяці ({count}) коштуватимуть приблизно {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Ваш тиждень",
+  "weeklyRecapNothing": "Цього тижня нічого не спливає.",
+  "weeklyRecapExpiring": "{count, plural, =1{Цього тижня спливає записів: {count}.} other{Цього тижня спливає записів: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Минулого тижня поновлено записів: {count}.} other{Минулого тижня поновлено записів: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Поновлення минулого тижня коштували {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Закрити",
+  "timelineUnlockProgress": "{count} з {total} записів із майбутньою датою",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Повторюється",
+  "calendarNextExpiry": "Найближчий термін",
+  "calendarViewMonth": "Місяць",
+  "calendarViewList": "Список",
+  "calendarLegendExpiry": "Спливає",
+  "calendarLegendReminder": "Нагадування",
+  "calendarMonthSummary": "{count, plural, =1{{month}: спливає {count}} other{{month}: спливає {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "У {month} нічого не спливає",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Близько {amount} на поновлення",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Цей тиждень",
+  "calendarNextWeek": "Наступний тиждень",
+  "calendarListEmpty": "У найближчі 12 місяців нічого немає.",
+  "calendarDaysLeft": "{count, plural, =1{Залишився {count} день} one{Залишився {count} день} few{Залишилося {count} дні} many{Залишилося {count} днів} other{Залишилося {count} дня}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Сплив {count} день тому} one{Сплив {count} день тому} few{Сплив {count} дні тому} many{Сплив {count} днів тому} other{Сплив {count} дня тому}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Додати запис, що спливає цього дня",
+  "calendarPickMonth": "Виберіть місяць",
+  "calendarReminderFor": "Нагадування: {name} спливає {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

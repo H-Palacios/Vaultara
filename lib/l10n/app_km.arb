@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "ស្កេនកាត ឬឯកសារ ឬបន្ថែមដោយដៃ។ Vaultara នឹងរំលឹកអ្នកមុនពេលផុតកំណត់។",
-  "recordsScan": "ស្កេន"
+  "recordsScan": "ស្កេន",
+  "insightsCardTitle": "ការណែនាំឆ្លាតវៃ",
+  "insightPosition": "ការណែនាំ {index} ក្នុងចំណោម {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "ពេលក្រោយ",
+  "insightSnoozed": "បានលាក់មួយសប្ដាហ៍។ វានឹងត្រឡប់មកវិញ ប្រសិនបើនៅត្រូវការ។",
+  "insightAsk": "សួរអំពីរឿងនេះ",
+  "insightAskPrompt": "{heading}។ {body} តើខ្ញុំគួរធ្វើអ្វី?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "កំណត់ត្រា",
+  "insightsSummaryDueSoon": "ក្នុងរយៈពេល 30 ថ្ងៃ",
+  "insightsSummaryNoReminder": "គ្មានការរំលឹក",
+  "insightsListEmpty": "មិនទាន់មានអ្វីនៅទីនេះទេ។",
+  "smartInsightUpcomingCostHeading": "ការបន្តដែលនឹងមកដល់",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{ការបន្ត {count} ក្នុង 3 ខែខាងមុខនឹងចំណាយប្រហែល {amount}។} other{ការបន្ត {count} ក្នុង 3 ខែខាងមុខនឹងចំណាយប្រហែល {amount}។}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "សប្ដាហ៍របស់អ្នក",
+  "weeklyRecapNothing": "សប្ដាហ៍នេះគ្មានអ្វីផុតកំណត់ទេ។",
+  "weeklyRecapExpiring": "{count, plural, =1{សប្ដាហ៍នេះ កំណត់ត្រា {count} ផុតកំណត់។} other{សប្ដាហ៍នេះ កំណត់ត្រា {count} ផុតកំណត់។}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{សប្ដាហ៍មុន អ្នកបានបន្តកំណត់ត្រា {count}។} other{សប្ដាហ៍មុន អ្នកបានបន្តកំណត់ត្រា {count}។}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "ការបន្តសប្ដាហ៍មុនបានចំណាយ {amount}។",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "បិទ",
+  "timelineUnlockProgress": "កំណត់ត្រា {count} ក្នុងចំណោម {total} ដែលមានកាលបរិច្ឆេទខាងមុខ",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "កើតឡើងម្ដងទៀត",
+  "calendarNextExpiry": "ការផុតកំណត់បន្ទាប់",
+  "calendarViewMonth": "ខែ",
+  "calendarViewList": "បញ្ជី",
+  "calendarLegendExpiry": "ផុតកំណត់",
+  "calendarLegendReminder": "ការរំលឹក",
+  "calendarMonthSummary": "{count, plural, =1{{month}៖ ផុតកំណត់ {count}} other{{month}៖ ផុតកំណត់ {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}៖ គ្មានអ្វីផុតកំណត់",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "ប្រហែល {amount} សម្រាប់ការបន្ត",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "សប្ដាហ៍នេះ",
+  "calendarNextWeek": "សប្ដាហ៍ក្រោយ",
+  "calendarListEmpty": "គ្មានអ្វីក្នុង 12 ខែខាងមុខទេ។",
+  "calendarDaysLeft": "{count, plural, =1{នៅសល់ {count} ថ្ងៃ} other{នៅសល់ {count} ថ្ងៃ}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{បានផុតកំណត់ {count} ថ្ងៃមុន} other{បានផុតកំណត់ {count} ថ្ងៃមុន}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "បន្ថែមកំណត់ត្រាដែលផុតកំណត់នៅថ្ងៃនេះ",
+  "calendarPickMonth": "ជ្រើសរើសខែ",
+  "calendarReminderFor": "ការរំលឹក៖ {name} ផុតកំណត់នៅ {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

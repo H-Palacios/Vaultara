@@ -2730,5 +2730,150 @@
     }
   },
   "recordsEmptyBody": "Eskaneatu txartela edo dokumentua, edo gehitu eskuz. Vaultarak gogoraraziko dizu iraungi aurretik.",
-  "recordsScan": "Eskaneatu"
+  "recordsScan": "Eskaneatu",
+  "insightsCardTitle": "Aholku adimendunak",
+  "insightPosition": "{total} aholkuetatik {index}.a",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Geroago",
+  "insightSnoozed": "Aste batez ezkutatuta. Oraindik behar bada, itzuliko da.",
+  "insightAsk": "Galdetu honi buruz",
+  "insightAskPrompt": "{heading}. {body} Zer egin behar dut?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Erregistroak",
+  "insightsSummaryDueSoon": "30 egunetan",
+  "insightsSummaryNoReminder": "Abisurik gabe",
+  "insightsListEmpty": "Hemen ez dago ezer oraingoz.",
+  "smartInsightUpcomingCostHeading": "Hurrengo berritzeak",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Hurrengo 3 hilabeteetako {count} berritzeak {amount} inguru kostatuko du.} other{Hurrengo 3 hilabeteetako {count} berritzeek {amount} inguru kostatuko dute.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Zure astea",
+  "weeklyRecapNothing": "Aste honetan ez da ezer iraungitzen.",
+  "weeklyRecapExpiring": "{count, plural, =1{Aste honetan {count} erregistro iraungitzen da.} other{Aste honetan {count} erregistro iraungitzen dira.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Joan den astean {count} erregistro berritu zenuen.} other{Joan den astean {count} erregistro berritu zenituen.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Joan den asteko berritzeek {amount} kostatu zuten.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Itxi",
+  "timelineUnlockProgress": "Data hurbila duten {total} erregistroetatik {count}",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Errepikatzen da",
+  "calendarNextExpiry": "Hurrengo iraungitzea",
+  "calendarViewMonth": "Hilabetea",
+  "calendarViewList": "Zerrenda",
+  "calendarLegendExpiry": "Iraungitzen da",
+  "calendarLegendReminder": "Abisua",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} iraungitzen da} other{{month}: {count} iraungitzen dira}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: ez da ezer iraungitzen",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "{amount} inguru berritzeko",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Aste hau",
+  "calendarNextWeek": "Hurrengo astea",
+  "calendarListEmpty": "Ez dago ezer hurrengo 12 hilabeteetan.",
+  "calendarDaysLeft": "{count, plural, =1{{count} egun falta da} other{{count} egun falta dira}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Duela {count} egun iraungi zen} other{Duela {count} egun iraungi zen}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Gehitu egun honetan iraungitzen den erregistroa",
+  "calendarPickMonth": "Aukeratu hilabetea",
+  "calendarReminderFor": "Abisua: {name} {date} iraungitzen da",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

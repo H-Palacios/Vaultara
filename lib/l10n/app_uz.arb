@@ -2466,5 +2466,150 @@
     }
   },
   "recordsEmptyBody": "Karta yoki hujjatni skanerlang yoki qoʻlda qoʻshing. Muddati tugashidan oldin Vaultara eslatadi.",
-  "recordsScan": "Skanerlash"
+  "recordsScan": "Skanerlash",
+  "insightsCardTitle": "Aqlli maslahatlar",
+  "insightPosition": "Maslahat {index}/{total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Keyinroq",
+  "insightSnoozed": "Bir haftaga yashirildi. Hali kerak boʻlsa, qaytadi.",
+  "insightAsk": "Bu haqda soʻrash",
+  "insightAskPrompt": "{heading}. {body} Nima qilishim kerak?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Yozuvlar",
+  "insightsSummaryDueSoon": "30 kun ichida",
+  "insightsSummaryNoReminder": "Eslatma yoʻq",
+  "insightsListEmpty": "Hozircha bu yerda hech narsa yoʻq.",
+  "smartInsightUpcomingCostHeading": "Yaqinlashayotgan yangilashlar",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Keyingi 3 oydagi {count} ta yangilash taxminan {amount} turadi.} other{Keyingi 3 oydagi {count} ta yangilash taxminan {amount} turadi.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Haftangiz",
+  "weeklyRecapNothing": "Bu hafta hech narsaning muddati tugamaydi.",
+  "weeklyRecapExpiring": "{count, plural, =1{Bu hafta {count} ta yozuv muddati tugaydi.} other{Bu hafta {count} ta yozuv muddati tugaydi.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Oʻtgan hafta {count} ta yozuvni yangiladingiz.} other{Oʻtgan hafta {count} ta yozuvni yangiladingiz.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Oʻtgan hafta yangilashlar {amount} turdi.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Yopish",
+  "timelineUnlockProgress": "Yaqin sanali {total} ta yozuvdan {count} tasi",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Takrorlanadi",
+  "calendarNextExpiry": "Keyingi muddat",
+  "calendarViewMonth": "Oy",
+  "calendarViewList": "Roʻyxat",
+  "calendarLegendExpiry": "Tugaydi",
+  "calendarLegendReminder": "Eslatma",
+  "calendarMonthSummary": "{count, plural, =1{{month}: {count} ta tugaydi} other{{month}: {count} ta tugaydi}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: hech narsa tugamaydi",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Yangilashga taxminan {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Bu hafta",
+  "calendarNextWeek": "Kelasi hafta",
+  "calendarListEmpty": "Keyingi 12 oyda hech narsa yoʻq.",
+  "calendarDaysLeft": "{count, plural, =1{{count} kun qoldi} other{{count} kun qoldi}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} kun oldin tugagan} other{{count} kun oldin tugagan}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Shu kuni tugaydigan yozuv qoʻshish",
+  "calendarPickMonth": "Oyni tanlang",
+  "calendarReminderFor": "Eslatma: {name} {date} kuni tugaydi",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -8106,4 +8106,174 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get recordsScan => 'ஸ்கேன்';
+
+  @override
+  String get insightsCardTitle => 'ஸ்மார்ட் குறிப்புகள்';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'குறிப்பு $index / $total';
+  }
+
+  @override
+  String get insightSnooze => 'பிறகு';
+
+  @override
+  String get insightSnoozed => 'ஒரு வாரத்துக்கு மறைக்கப்பட்டது. இன்னும் தேவைப்பட்டால் மீண்டும் வரும்.';
+
+  @override
+  String get insightAsk => 'இதைப் பற்றிக் கேள்';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body நான் என்ன செய்ய வேண்டும்?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'பதிவுகள்';
+
+  @override
+  String get insightsSummaryDueSoon => '30 நாட்களுக்குள்';
+
+  @override
+  String get insightsSummaryNoReminder => 'நினைவூட்டல் இல்லை';
+
+  @override
+  String get insightsListEmpty => 'இப்போது இங்கே எதுவும் இல்லை.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'வரவிருக்கும் புதுப்பித்தல்கள்';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'அடுத்த 3 மாதங்களில் $count புதுப்பித்தல்களுக்கு சுமார் $amount செலவாகும்.',
+      one: 'அடுத்த 3 மாதங்களில் $count புதுப்பித்தலுக்கு சுமார் $amount செலவாகும்.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'உங்கள் வாரம்';
+
+  @override
+  String get weeklyRecapNothing => 'இந்த வாரம் எதுவும் காலாவதியாகவில்லை.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'இந்த வாரம் $count பதிவுகள் காலாவதியாகின்றன.',
+      one: 'இந்த வாரம் $count பதிவு காலாவதியாகிறது.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'கடந்த வாரம் $count பதிவுகளைப் புதுப்பித்தீர்கள்.',
+      one: 'கடந்த வாரம் $count பதிவைப் புதுப்பித்தீர்கள்.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'கடந்த வாரப் புதுப்பித்தல்களுக்கு $amount செலவானது.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'மூடு';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'வரவிருக்கும் தேதி உள்ள $total இல் $count பதிவுகள்';
+  }
+
+  @override
+  String get timelineRepeats => 'மீண்டும் வரும்';
+
+  @override
+  String get calendarNextExpiry => 'அடுத்த காலாவதி';
+
+  @override
+  String get calendarViewMonth => 'மாதம்';
+
+  @override
+  String get calendarViewList => 'பட்டியல்';
+
+  @override
+  String get calendarLegendExpiry => 'காலாவதி';
+
+  @override
+  String get calendarLegendReminder => 'நினைவூட்டல்';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month இல் $count காலாவதி',
+      one: '$month இல் $count காலாவதி',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month இல் எதுவும் காலாவதியாகவில்லை';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'புதுப்பிக்க சுமார் $amount';
+  }
+
+  @override
+  String get calendarThisWeek => 'இந்த வாரம்';
+
+  @override
+  String get calendarNextWeek => 'அடுத்த வாரம்';
+
+  @override
+  String get calendarListEmpty => 'அடுத்த 12 மாதங்களில் எதுவும் இல்லை.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count நாட்கள் உள்ளன',
+      one: '$count நாள் உள்ளது',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count நாட்கள் முன் காலாவதியானது',
+      one: '$count நாள் முன் காலாவதியானது',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'இந்த நாளில் காலாவதியாகும் பதிவைச் சேர்';
+
+  @override
+  String get calendarPickMonth => 'மாதத்தைத் தேர்ந்தெடு';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'நினைவூட்டல்: $name $date அன்று காலாவதியாகும்';
+  }
 }

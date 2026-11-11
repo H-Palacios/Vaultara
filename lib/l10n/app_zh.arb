@@ -2716,5 +2716,150 @@
     }
   },
   "recordsEmptyBody": "扫描卡片或文件，或手动添加。Vaultara 会在到期前提醒你。",
-  "recordsScan": "扫描"
+  "recordsScan": "扫描",
+  "insightsCardTitle": "智能提示",
+  "insightPosition": "第 {index} 条，共 {total} 条",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "稍后",
+  "insightSnoozed": "已隐藏一周。如果仍需处理，它会再次出现。",
+  "insightAsk": "就此提问",
+  "insightAskPrompt": "{heading}。{body} 我该怎么做？",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "记录",
+  "insightsSummaryDueSoon": "30 天内到期",
+  "insightsSummaryNoReminder": "无提醒",
+  "insightsListEmpty": "这里暂时没有内容。",
+  "smartInsightUpcomingCostHeading": "即将续期",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{未来 3 个月的 {count} 项续期约需 {amount}。} other{未来 3 个月的 {count} 项续期约需 {amount}。}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "本周概览",
+  "weeklyRecapNothing": "本周没有到期的记录。",
+  "weeklyRecapExpiring": "{count, plural, =1{本周有 {count} 条记录到期。} other{本周有 {count} 条记录到期。}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{上周你续期了 {count} 条记录。} other{上周你续期了 {count} 条记录。}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "上周续期花费 {amount}。",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "关闭",
+  "timelineUnlockProgress": "{count}/{total} 条记录有即将到来的日期",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "重复",
+  "calendarNextExpiry": "下一个到期",
+  "calendarViewMonth": "月",
+  "calendarViewList": "列表",
+  "calendarLegendExpiry": "到期",
+  "calendarLegendReminder": "提醒",
+  "calendarMonthSummary": "{count, plural, =1{{month}有 {count} 项到期} other{{month}有 {count} 项到期}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}没有到期的记录",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "续期约需 {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "本周",
+  "calendarNextWeek": "下周",
+  "calendarListEmpty": "未来 12 个月没有安排。",
+  "calendarDaysLeft": "{count, plural, =1{还剩 {count} 天} other{还剩 {count} 天}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{已过期 {count} 天} other{已过期 {count} 天}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "添加在这一天到期的记录",
+  "calendarPickMonth": "选择月份",
+  "calendarReminderFor": "提醒：{name} 将于 {date} 到期",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

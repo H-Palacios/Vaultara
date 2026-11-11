@@ -2728,5 +2728,150 @@
     }
   },
   "recordsEmptyBody": "कार्ड या दस्तावेज़ स्कैन करें, या हाथ से जोड़ें। समाप्ति से पहले Vaultara आपको याद दिलाएगा।",
-  "recordsScan": "स्कैन करें"
+  "recordsScan": "स्कैन करें",
+  "insightsCardTitle": "स्मार्ट सुझाव",
+  "insightPosition": "सुझाव {index} / {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "बाद में",
+  "insightSnoozed": "एक हफ़्ते के लिए छिपाया गया। ज़रूरत रही तो फिर दिखेगा।",
+  "insightAsk": "इसके बारे में पूछें",
+  "insightAskPrompt": "{heading}। {body} मुझे क्या करना चाहिए?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "रिकॉर्ड",
+  "insightsSummaryDueSoon": "30 दिनों में",
+  "insightsSummaryNoReminder": "कोई रिमाइंडर नहीं",
+  "insightsListEmpty": "अभी यहाँ कुछ नहीं है।",
+  "smartInsightUpcomingCostHeading": "आने वाले नवीनीकरण",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{अगले 3 महीनों में {count} नवीनीकरण पर लगभग {amount} लगेंगे।} other{अगले 3 महीनों में {count} नवीनीकरण पर लगभग {amount} लगेंगे।}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "आपका हफ़्ता",
+  "weeklyRecapNothing": "इस हफ़्ते कुछ समाप्त नहीं हो रहा।",
+  "weeklyRecapExpiring": "{count, plural, =1{इस हफ़्ते {count} रिकॉर्ड समाप्त हो रहा है।} other{इस हफ़्ते {count} रिकॉर्ड समाप्त हो रहे हैं।}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{आपने पिछले हफ़्ते {count} रिकॉर्ड नवीनीकृत किया।} other{आपने पिछले हफ़्ते {count} रिकॉर्ड नवीनीकृत किए।}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "पिछले हफ़्ते के नवीनीकरण पर {amount} लगे।",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "बंद करें",
+  "timelineUnlockProgress": "आने वाली तारीख वाले {total} में से {count} रिकॉर्ड",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "दोहराता है",
+  "calendarNextExpiry": "अगली समाप्ति",
+  "calendarViewMonth": "महीना",
+  "calendarViewList": "सूची",
+  "calendarLegendExpiry": "समाप्त होता है",
+  "calendarLegendReminder": "रिमाइंडर",
+  "calendarMonthSummary": "{count, plural, =1{{month} में {count} समाप्त} other{{month} में {count} समाप्त}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month} में कुछ समाप्त नहीं हो रहा",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "नवीनीकरण पर लगभग {amount}",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "इस हफ़्ते",
+  "calendarNextWeek": "अगले हफ़्ते",
+  "calendarListEmpty": "अगले 12 महीनों में कुछ नहीं।",
+  "calendarDaysLeft": "{count, plural, =1{{count} दिन बाकी} other{{count} दिन बाकी}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{{count} दिन पहले समाप्त} other{{count} दिन पहले समाप्त}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "इस दिन समाप्त होने वाला रिकॉर्ड जोड़ें",
+  "calendarPickMonth": "महीना चुनें",
+  "calendarReminderFor": "रिमाइंडर: {name} {date} को समाप्त होगा",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

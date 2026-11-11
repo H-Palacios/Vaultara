@@ -8054,4 +8054,174 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get recordsScan => 'Nyochaa';
+
+  @override
+  String get insightsCardTitle => 'Ndụmọdụ amamihe';
+
+  @override
+  String insightPosition(int index, int total) {
+    return 'Ndụmọdụ $index n\'ime $total';
+  }
+
+  @override
+  String get insightSnooze => 'Emechaa';
+
+  @override
+  String get insightSnoozed => 'E zoro ya otu izu. Ọ ga-alọta ma ọ ka dị mkpa.';
+
+  @override
+  String get insightAsk => 'Jụọ maka nke a';
+
+  @override
+  String insightAskPrompt(String heading, String body) {
+    return '$heading. $body Gịnị ka m kwesịrị ime?';
+  }
+
+  @override
+  String get insightsSummaryRecords => 'Ndekọ';
+
+  @override
+  String get insightsSummaryDueSoon => 'N\'ime ụbọchị 30';
+
+  @override
+  String get insightsSummaryNoReminder => 'Enweghị ihe ncheta';
+
+  @override
+  String get insightsListEmpty => 'Ọ dịghị ihe ebe a ugbu a.';
+
+  @override
+  String get smartInsightUpcomingCostHeading => 'Mmeghari ọhụrụ na-abịa';
+
+  @override
+  String smartInsightUpcomingCostBody(int count, String amount) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mmeghari $count n\'ime ọnwa 3 na-abịa ga-efu ihe dị ka $amount.',
+      one: 'Mmeghari $count n\'ime ọnwa 3 na-abịa ga-efu ihe dị ka $amount.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyRecapTitle => 'Izu gị';
+
+  @override
+  String get weeklyRecapNothing => 'Ọ dịghị ihe na-agwụ n\'izu a.';
+
+  @override
+  String weeklyRecapExpiring(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ndekọ $count na-agwụ n\'izu a.',
+      one: 'Ndekọ $count na-agwụ n\'izu a.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapRenewed(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ị megharịrị ndekọ $count n\'izu gara aga.',
+      one: 'Ị megharịrị ndekọ $count n\'izu gara aga.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String weeklyRecapCost(String amount) {
+    return 'Mmeghari izu gara aga fụrụ $amount.';
+  }
+
+  @override
+  String get weeklyRecapDismiss => 'Mechie';
+
+  @override
+  String timelineUnlockProgress(int count, int total) {
+    return 'Ndekọ $count n\'ime $total nwere ụbọchị na-abịa';
+  }
+
+  @override
+  String get timelineRepeats => 'Na-emegharị';
+
+  @override
+  String get calendarNextExpiry => 'Ngwụcha na-esote';
+
+  @override
+  String get calendarViewMonth => 'Ọnwa';
+
+  @override
+  String get calendarViewList => 'Ndepụta';
+
+  @override
+  String get calendarLegendExpiry => 'Na-agwụ';
+
+  @override
+  String get calendarLegendReminder => 'Ihe ncheta';
+
+  @override
+  String calendarMonthSummary(int count, String month) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count na-agwụ',
+      one: '$month: $count na-agwụ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarMonthNothing(String month) {
+    return '$month: ọ dịghị ihe na-agwụ';
+  }
+
+  @override
+  String calendarMonthCost(String amount) {
+    return 'Ihe dị ka $amount maka mmeghari';
+  }
+
+  @override
+  String get calendarThisWeek => 'Izu a';
+
+  @override
+  String get calendarNextWeek => 'Izu na-abịa';
+
+  @override
+  String get calendarListEmpty => 'Ọ dịghị ihe n\'ime ọnwa 12 na-abịa.';
+
+  @override
+  String calendarDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ụbọchị $count fọdụrụ',
+      one: 'Ụbọchị $count fọdụrụ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String calendarDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gwụrụ ụbọchị $count gara aga',
+      one: 'Gwụrụ ụbọchị $count gara aga',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get calendarAddOnDay => 'Tinye ndekọ na-agwụ n\'ụbọchị a';
+
+  @override
+  String get calendarPickMonth => 'Họrọ ọnwa';
+
+  @override
+  String calendarReminderFor(String name, String date) {
+    return 'Ihe ncheta: $name na-agwụ na $date';
+  }
 }

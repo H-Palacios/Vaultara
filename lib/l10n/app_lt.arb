@@ -2734,5 +2734,150 @@
     }
   },
   "recordsEmptyBody": "Nuskenuokite kortelę ar dokumentą arba pridėkite rankiniu būdu. Vaultara primins prieš baigiantis galiojimui.",
-  "recordsScan": "Skenuoti"
+  "recordsScan": "Skenuoti",
+  "insightsCardTitle": "Išmanūs patarimai",
+  "insightPosition": "Patarimas {index} iš {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Vėliau",
+  "insightSnoozed": "Paslėpta savaitei. Grįš, jei vis dar reikės.",
+  "insightAsk": "Klausti apie tai",
+  "insightAskPrompt": "{heading}. {body} Ką turėčiau daryti?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Įrašai",
+  "insightsSummaryDueSoon": "Per 30 dienų",
+  "insightsSummaryNoReminder": "Be priminimo",
+  "insightsListEmpty": "Kol kas čia nieko nėra.",
+  "smartInsightUpcomingCostHeading": "Artėjantys atnaujinimai",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Atnaujinimai per ateinančius 3 mėnesius ({count}) kainuos apie {amount}.} other{Atnaujinimai per ateinančius 3 mėnesius ({count}) kainuos apie {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Jūsų savaitė",
+  "weeklyRecapNothing": "Šią savaitę niekas nebaigia galioti.",
+  "weeklyRecapExpiring": "{count, plural, =1{Šią savaitę baigia galioti įrašų: {count}.} other{Šią savaitę baigia galioti įrašų: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{Praėjusią savaitę atnaujinta įrašų: {count}.} other{Praėjusią savaitę atnaujinta įrašų: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Praėjusios savaitės atnaujinimai kainavo {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Uždaryti",
+  "timelineUnlockProgress": "{count} iš {total} įrašų su artėjančia data",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Kartojasi",
+  "calendarNextExpiry": "Artimiausia pabaiga",
+  "calendarViewMonth": "Mėnuo",
+  "calendarViewList": "Sąrašas",
+  "calendarLegendExpiry": "Baigia galioti",
+  "calendarLegendReminder": "Priminimas",
+  "calendarMonthSummary": "{count, plural, =1{{month}: baigia galioti {count}} other{{month}: baigia galioti {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "{month}: niekas nebaigia galioti",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Apie {amount} atnaujinimams",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Ši savaitė",
+  "calendarNextWeek": "Kita savaitė",
+  "calendarListEmpty": "Per ateinančius 12 mėnesių nieko nėra.",
+  "calendarDaysLeft": "{count, plural, =1{Liko dienų: {count}} other{Liko dienų: {count}}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Nebegalioja dienų: {count}} other{Nebegalioja dienų: {count}}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Pridėti įrašą, kuris baigia galioti šią dieną",
+  "calendarPickMonth": "Pasirinkite mėnesį",
+  "calendarReminderFor": "Priminimas: {name} baigia galioti {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }

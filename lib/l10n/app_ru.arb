@@ -2691,5 +2691,150 @@
     }
   },
   "recordsEmptyBody": "Отсканируйте карту или документ либо добавьте вручную. Vaultara напомнит до окончания срока.",
-  "recordsScan": "Сканировать"
+  "recordsScan": "Сканировать",
+  "insightsCardTitle": "Умные подсказки",
+  "insightPosition": "Подсказка {index} из {total}",
+  "@insightPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "insightSnooze": "Позже",
+  "insightSnoozed": "Скрыто на неделю. Вернётся, если ещё будет нужно.",
+  "insightAsk": "Спросить об этом",
+  "insightAskPrompt": "{heading}. {body} Что мне делать?",
+  "@insightAskPrompt": {
+    "placeholders": {
+      "heading": {
+        "type": "String"
+      },
+      "body": {
+        "type": "String"
+      }
+    }
+  },
+  "insightsSummaryRecords": "Записи",
+  "insightsSummaryDueSoon": "Истекают за 30 дней",
+  "insightsSummaryNoReminder": "Без напоминания",
+  "insightsListEmpty": "Здесь пока ничего нет.",
+  "smartInsightUpcomingCostHeading": "Скоро продление",
+  "smartInsightUpcomingCostBody": "{count, plural, =1{Продление в ближайшие 3 месяца ({count}) обойдётся примерно в {amount}.} other{Продления в ближайшие 3 месяца ({count}) обойдутся примерно в {amount}.}}",
+  "@smartInsightUpcomingCostBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapTitle": "Ваша неделя",
+  "weeklyRecapNothing": "На этой неделе ничего не истекает.",
+  "weeklyRecapExpiring": "{count, plural, =1{На этой неделе истекает записей: {count}.} other{На этой неделе истекает записей: {count}.}}",
+  "@weeklyRecapExpiring": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapRenewed": "{count, plural, =1{На прошлой неделе продлено записей: {count}.} other{На прошлой неделе продлено записей: {count}.}}",
+  "@weeklyRecapRenewed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyRecapCost": "Продления на прошлой неделе стоили {amount}.",
+  "@weeklyRecapCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyRecapDismiss": "Закрыть",
+  "timelineUnlockProgress": "{count} из {total} записей с предстоящей датой",
+  "@timelineUnlockProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "timelineRepeats": "Повторяется",
+  "calendarNextExpiry": "Ближайший срок",
+  "calendarViewMonth": "Месяц",
+  "calendarViewList": "Список",
+  "calendarLegendExpiry": "Истекает",
+  "calendarLegendReminder": "Напоминание",
+  "calendarMonthSummary": "{count, plural, =1{{month}: истекает {count}} other{{month}: истекает {count}}}",
+  "@calendarMonthSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthNothing": "В {month} ничего не истекает",
+  "@calendarMonthNothing": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarMonthCost": "Около {amount} на продление",
+  "@calendarMonthCost": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "calendarThisWeek": "Эта неделя",
+  "calendarNextWeek": "Следующая неделя",
+  "calendarListEmpty": "В ближайшие 12 месяцев ничего нет.",
+  "calendarDaysLeft": "{count, plural, =1{Остался {count} день} one{Остался {count} день} few{Осталось {count} дня} many{Осталось {count} дней} other{Осталось {count} дня}}",
+  "@calendarDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarDaysAgo": "{count, plural, =1{Истёк {count} день назад} one{Истёк {count} день назад} few{Истёк {count} дня назад} many{Истёк {count} дней назад} other{Истёк {count} дня назад}}",
+  "@calendarDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "calendarAddOnDay": "Добавить запись, которая истекает в этот день",
+  "calendarPickMonth": "Выберите месяц",
+  "calendarReminderFor": "Напоминание: {name} истекает {date}",
+  "@calendarReminderFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
 }
