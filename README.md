@@ -30,9 +30,9 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 ## Features
 
 ### Records and organisation
-- **Categories, groups and records.** Records sit inside groups, and groups sit inside categories. Nine preset categories (including Health and medical, and Memberships and subscriptions) with 34 preset groups cover the common documents, and users can add their own in any language. Custom categories and groups can be renamed, and a "Yours" tag marks them.
+- **Categories, groups and records.** Records sit inside groups, and groups sit inside categories. Nine preset categories (including Health and medical, and Memberships and subscriptions) with 32 preset groups cover the common documents, and users can add their own in any language. Custom categories and groups can be renamed, and a "Yours" tag marks them.
 - **Steady order and pins.** Pinned categories come first and sync across devices, then the presets, then your own by name. The order never reshuffles because something was opened.
-- **Icons picked from the name.** Type a name for a new category and the app guesses an icon on the phone, then asks the `suggestCategoryIcon` Cloud Function, which uses the same Anthropic model as Ask Vaultara to pick from about 40 icons. Tap the icon to change it or its colour.
+- **Icons picked from the name.** Type a name for a new category and the app guesses an icon on the phone, then asks a Cloud Function, which uses the same Anthropic model as Ask Vaultara to pick from about 40 icons. Tap the icon to change it or its colour.
 - **Records screen.** Records are split into Expired, Due soon and Valid, can be sorted by expiry date or name, filtered by person, and selected together to move or delete. Cards show how many records have expired. An empty group offers Scan straight away.
 - **Snap to add.** Scan a card, passport or document with the camera and Vaultara fills in the expiry date, group and document number. Bank card numbers are masked.
 - **Passport MRZ scanning.** Reads the machine-readable zone on the passport photo page for the expiry date, name and country with very few mistakes.
@@ -47,9 +47,9 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 
 ### Home
 - **Greeting by first name** ("Welcome back, Ana").
-- **Next expiry.** The record that expires next, with how long is left, Renew and How to renew, and a chip for anything expired. The overall numbers live in the Insights summary, so Home no longer repeats them.
-- **The runway.** Under Next expiry, the next 30 days drawn as a line from today, with a pin for each record where it expires and a hollow "start by" pin where renewing should begin. The first week gets as much room as the following three, the window widens to 90 days or a year when nothing is close, and "3 expire in the next 30 days" sits above up to three rows. Drag along the line to see dates, press and hold a pin for Open, Renew and How to renew. Locked records show only a lock.
-- **One colour scale.** Red for expired, orange within 7 days, amber within 30 days, green later, always with a word, on badges, the calendar, both runways and widgets. Text keeps a contrast of at least 4.5:1 in light and dark mode.
+- **Next expiry.** The record that expires next, with how long is left, Renew and Renewal checklist, and a chip for anything expired. The overall numbers live in the Insights summary, so Home no longer repeats them.
+- **Coming up.** Under Next expiry, the records due in the next 30 days, grouped under Within 7 days and Within 30 days. Each row has a coloured dot, the name, the date and how many days are left, with a "Start renewing by" line for records with a lead time. Tap a row to open it, or See all for the full list. With nothing due it says "All clear until" the next expiry date. Locked records show only "Locked record".
+- **One colour scale.** Red for expired, orange within 7 days, amber within 30 days, green later, always with a word, on status dots, the calendar, the Coming up list and widgets. Text keeps a contrast of at least 4.5:1 in light and dark mode.
 - **Pinned categories** one tap away, and pull to refresh.
 - **Opens instantly.** Home is drawn from the records already saved on the phone, then refreshed from the server in the background. Opening Home loads once instead of several times, reads run side by side, and reminders are only planned again when something about them changed.
 
@@ -68,16 +68,16 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 
 ### Renewing
 - **One-tap renew.** Suggests the new expiry date from the document type's normal validity and keeps a renewal history.
-- **Renewal guides.** A practical checklist for every preset type, worded to work in any country.
+- **Renewal checklists.** A practical checklist for every preset type, worded to work in any country, that points to the issuing authority for local details.
 - **Renewal costs.** Add a cost to each record and see the 12-month total and the busiest month in Insights.
 
 ### Insights and calendar
 - **Summary at a glance.** Four numbers at the top of Insights (records, expired, due in 30 days and no reminder), each opening the records behind it.
 - **Smart Insights.** Highlights what needs attention first, such as records expiring today, records with no reminder, records to renew together and, on paid plans, what renewals in the next three months will cost. Insights are swiped through one at a time and tinted red, amber or green by urgency. Each has its action, Later (hides it for a week, synced across devices) and, on paid plans, Ask about this. The speaker button reads them all aloud.
 - **Monday recap.** What expires this week and what was renewed last week.
-- **Expiry timeline.** The year ahead as a runway (6, 12 or 24 months, with buttons or a pinch) with a note on the busiest month, then a bar per month in one colour, with repeating records shown every time they come round. Records open from the timeline.
+- **Expiry timeline.** A note on the busiest month in the next year, then a bar per month in one colour, with repeating records shown every time they come round. Records open from the timeline.
 - **Person filter.** On Family and Business plans, Insights and the calendar can show one person's records.
-- **Calendar.** Month and List views. Dots are coloured by urgency (past dates are diamonds), reminder days have a ring and busy days are tinted. Swipe between months, tap the month name to jump, and use Today or Next expiry. Each month shows a summary (with renewal costs on paid plans), each record has Renew and How to renew (or swipe right to renew), and a long press on a day adds a record expiring that day.
+- **Calendar.** Month and List views. Dots are coloured by urgency (past dates are diamonds), reminder days have a ring and busy days are tinted. Swipe between months, tap the month name to jump, and use Today or Next expiry. Each month shows a summary (with renewal costs on paid plans), each record has Renew and Renewal checklist (or swipe right to renew), and a long press on a day adds a record expiring that day.
 - **Calendar export and live calendar link.** Add expiries to Google Calendar, or subscribe to a feed that updates by itself.
 
 ### Documents
@@ -90,7 +90,8 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - Pick a trip, dates, destination and one or more travellers, including people who do not use Vaultara.
 - Checks the passport is valid six months past the return date.
 - **Automatic visa check** using the Passport Index dataset, refreshed weekly by a Cloud Function, with links to official e-visa and ETA sites and an embassy finder fallback.
-- **Purpose-aware visa results**: each trip has a reason (holiday, family, business, study, work). Study and work trips never show a visitor result as the answer, business trips carry a caution, and 198 of the 211 destinations link to the government's own visa rules page (the rest fall back to a search with a warning about agent sites). Official links are only accepted on government domains or a short hand-checked list, enforced by `visaLinkJob`.
+- **Purpose-aware visa results**: each trip has a reason (holiday, family, business, study, work). Study and work trips never show a visitor result as the answer, business trips carry a caution, and 198 of the 211 destinations link to the government's own visa rules page (the rest fall back to a search with a warning about agent sites). Official links are only accepted on government domains or a short hand-checked list.
+- **Guarded visa sync**: the weekly sync holds any update that changes an unusually large share of answers (or makes many easier), keeps the old data live, and emails the admin.
 - Flags travel insurance, driving licence and anything that expires while you are away.
 - **Checklist by reason for the trip**: holiday trips ask for proof of stay and a return ticket, family visits for the host's address and invitation letter, business trips for invitation and employer letters, study trips for the permit, acceptance letter and proof of funds, and work trips for the permit and contract. Trips saved before this get the items once, the first time they are opened.
 - **Flights with connections**: each leg is its own flight, connections are recognised (with the layover time when both times are known), the next leg starts where the last one landed, and the arrival date in each country comes from the flight that lands there. Up to 10 flights per trip.
