@@ -3401,5 +3401,12 @@
   "proofPackColStatus": "وضعیت",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "گزارش",
+  "assistantReportTitle": "گزارش این پاسخ",
+  "assistantReportBody": "پرسش و این پاسخ برای بررسی به Vorkalis فرستاده می‌شوند.",
+  "assistantReportHarmful": "توهین‌آمیز یا آسیب‌زا",
+  "assistantReportWrong": "نادرست یا گمراه‌کننده",
+  "assistantReportOther": "چیز دیگر",
+  "assistantReportThanks": "سپاسگزاریم. این پاسخ را بررسی می‌کنیم."
 }

@@ -8800,4 +8800,25 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Төлөв';
+
+  @override
+  String get assistantReport => 'Мэдээлэх';
+
+  @override
+  String get assistantReportTitle => 'Энэ хариултыг мэдээлэх';
+
+  @override
+  String get assistantReportBody => 'Асуулт болон энэ хариултыг шалгуулахаар Vorkalis руу илгээнэ.';
+
+  @override
+  String get assistantReportHarmful => 'Доромжилсон эсвэл хортой';
+
+  @override
+  String get assistantReportWrong => 'Буруу эсвэл төөрөгдүүлсэн';
+
+  @override
+  String get assistantReportOther => 'Өөр зүйл';
+
+  @override
+  String get assistantReportThanks => 'Баярлалаа. Бид энэ хариултыг шалгана.';
 }

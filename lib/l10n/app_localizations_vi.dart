@@ -8746,4 +8746,25 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Trạng thái';
+
+  @override
+  String get assistantReport => 'Báo cáo';
+
+  @override
+  String get assistantReportTitle => 'Báo cáo câu trả lời này';
+
+  @override
+  String get assistantReportBody => 'Câu hỏi và câu trả lời này được gửi đến Vorkalis để xem xét.';
+
+  @override
+  String get assistantReportHarmful => 'Xúc phạm hoặc có hại';
+
+  @override
+  String get assistantReportWrong => 'Sai hoặc gây hiểu lầm';
+
+  @override
+  String get assistantReportOther => 'Lý do khác';
+
+  @override
+  String get assistantReportThanks => 'Cảm ơn bạn. Chúng tôi sẽ xem xét câu trả lời này.';
 }

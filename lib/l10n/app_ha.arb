@@ -3401,5 +3401,12 @@
   "proofPackColStatus": "Matsayi",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Kai rahoto",
+  "assistantReportTitle": "Kai rahoton wannan amsa",
+  "assistantReportBody": "Ana aika tambayar da wannan amsa zuwa Vorkalis don a duba su.",
+  "assistantReportHarmful": "Mai ɓata rai ko mai cutarwa",
+  "assistantReportWrong": "Ba daidai ba ko mai ɓatarwa",
+  "assistantReportOther": "Wani abu dabam",
+  "assistantReportThanks": "Na gode. Za mu duba wannan amsa."
 }

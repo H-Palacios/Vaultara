@@ -8810,4 +8810,25 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Hali';
+
+  @override
+  String get assistantReport => 'Ripoti';
+
+  @override
+  String get assistantReportTitle => 'Ripoti jibu hili';
+
+  @override
+  String get assistantReportBody => 'Swali na jibu hili hutumwa kwa Vorkalis ili likaguliwe.';
+
+  @override
+  String get assistantReportHarmful => 'Ya kuudhi au yenye madhara';
+
+  @override
+  String get assistantReportWrong => 'Si sahihi au ya kupotosha';
+
+  @override
+  String get assistantReportOther => 'Kitu kingine';
+
+  @override
+  String get assistantReportThanks => 'Asante. Tutakagua jibu hili.';
 }

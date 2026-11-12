@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "ສະຖານະ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "ລາຍງານ",
+  "assistantReportTitle": "ລາຍງານຄຳຕອບນີ້",
+  "assistantReportBody": "ຄຳຖາມ ແລະ ຄຳຕອບນີ້ຈະຖືກສົ່ງໄປໃຫ້ Vorkalis ເພື່ອກວດສອບ.",
+  "assistantReportHarmful": "ໝິ່ນປະໝາດ ຫຼື ເປັນອັນຕະລາຍ",
+  "assistantReportWrong": "ຜິດ ຫຼື ຊວນໃຫ້ເຂົ້າໃຈຜິດ",
+  "assistantReportOther": "ອື່ນໆ",
+  "assistantReportThanks": "ຂອບໃຈ. ພວກເຮົາຈະກວດສອບຄຳຕອບນີ້."
 }

@@ -15012,6 +15012,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Status'**
   String get proofPackColStatus;
+
+  /// Tooltip of the flag button under an Ask Vaultara answer that reports it.
+  ///
+  /// In en, this message translates to:
+  /// **'Report'**
+  String get assistantReport;
+
+  /// Title of the sheet for reporting an Ask Vaultara answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this answer'**
+  String get assistantReportTitle;
+
+  /// Explains what is sent when an answer is reported. Vorkalis is the company name.
+  ///
+  /// In en, this message translates to:
+  /// **'The question and this answer are sent to Vorkalis for review.'**
+  String get assistantReportBody;
+
+  /// Report reason: the answer is offensive or harmful.
+  ///
+  /// In en, this message translates to:
+  /// **'Offensive or harmful'**
+  String get assistantReportHarmful;
+
+  /// Report reason: the answer is wrong or misleading.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong or misleading'**
+  String get assistantReportWrong;
+
+  /// Report reason: any other problem.
+  ///
+  /// In en, this message translates to:
+  /// **'Something else'**
+  String get assistantReportOther;
+
+  /// Shown after an answer was reported.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you. We will review this answer.'**
+  String get assistantReportThanks;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -8810,4 +8810,25 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Állapot';
+
+  @override
+  String get assistantReport => 'Jelentés';
+
+  @override
+  String get assistantReportTitle => 'A válasz jelentése';
+
+  @override
+  String get assistantReportBody => 'A kérdést és ezt a választ ellenőrzésre elküldjük a Vorkalisnak.';
+
+  @override
+  String get assistantReportHarmful => 'Sértő vagy ártalmas';
+
+  @override
+  String get assistantReportWrong => 'Hibás vagy félrevezető';
+
+  @override
+  String get assistantReportOther => 'Valami más';
+
+  @override
+  String get assistantReportThanks => 'Köszönjük. Ellenőrizni fogjuk ezt a választ.';
 }

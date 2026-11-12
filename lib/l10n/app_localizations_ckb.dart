@@ -8810,4 +8810,25 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'دۆخ';
+
+  @override
+  String get assistantReport => 'ڕاپۆرت';
+
+  @override
+  String get assistantReportTitle => 'ڕاپۆرتی ئەم وەڵامە بکە';
+
+  @override
+  String get assistantReportBody => 'پرسیارەکە و ئەم وەڵامە بۆ پێداچوونەوە دەنێردرێن بۆ Vorkalis.';
+
+  @override
+  String get assistantReportHarmful => 'سووکایەتیکەر یان زیانبەخش';
+
+  @override
+  String get assistantReportWrong => 'هەڵە یان چەواشەکەر';
+
+  @override
+  String get assistantReportOther => 'شتێکی تر';
+
+  @override
+  String get assistantReportThanks => 'سوپاس. ئەم وەڵامە پێدا دەچینەوە.';
 }

@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "Állapot",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Jelentés",
+  "assistantReportTitle": "A válasz jelentése",
+  "assistantReportBody": "A kérdést és ezt a választ ellenőrzésre elküldjük a Vorkalisnak.",
+  "assistantReportHarmful": "Sértő vagy ártalmas",
+  "assistantReportWrong": "Hibás vagy félrevezető",
+  "assistantReportOther": "Valami más",
+  "assistantReportThanks": "Köszönjük. Ellenőrizni fogjuk ezt a választ."
 }

@@ -3394,5 +3394,12 @@
   "proofPackColStatus": "Ọnọdụ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Kọọ akụkọ",
+  "assistantReportTitle": "Kọọ banyere azịza a",
+  "assistantReportBody": "A na-eziga ajụjụ ahụ na azịza a na Vorkalis ka e nyochaa ha.",
+  "assistantReportHarmful": "Ihe na-akpasu iwe ma ọ bụ na-emerụ ahụ",
+  "assistantReportWrong": "Ezighi ezi ma ọ bụ na-eduhie eduhie",
+  "assistantReportOther": "Ihe ọzọ",
+  "assistantReportThanks": "Daalụ. Anyị ga-enyocha azịza a."
 }

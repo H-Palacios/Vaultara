@@ -8809,4 +8809,25 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'තත්ත්වය';
+
+  @override
+  String get assistantReport => 'වාර්තා කරන්න';
+
+  @override
+  String get assistantReportTitle => 'මෙම පිළිතුර වාර්තා කරන්න';
+
+  @override
+  String get assistantReportBody => 'ප්‍රශ්නය සහ මෙම පිළිතුර සමාලෝචනය සඳහා Vorkalis වෙත යවනු ලැබේ.';
+
+  @override
+  String get assistantReportHarmful => 'අපහාසාත්මක හෝ හානිකර';
+
+  @override
+  String get assistantReportWrong => 'වැරදි හෝ නොමඟ යවන';
+
+  @override
+  String get assistantReportOther => 'වෙනත් දෙයක්';
+
+  @override
+  String get assistantReportThanks => 'ස්තූතියි. අපි මෙම පිළිතුර සමාලෝචනය කරමු.';
 }

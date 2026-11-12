@@ -8810,4 +8810,25 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Isimo';
+
+  @override
+  String get assistantReport => 'Bika';
+
+  @override
+  String get assistantReportTitle => 'Bika le mpendulo';
+
+  @override
+  String get assistantReportBody => 'Umbuzo nale mpendulo kuthunyelwa ku-Vorkalis ukuze kubuyekezwe.';
+
+  @override
+  String get assistantReportHarmful => 'Iyacasula noma iyalimaza';
+
+  @override
+  String get assistantReportWrong => 'Ayilungile noma iyadukisa';
+
+  @override
+  String get assistantReportOther => 'Okunye';
+
+  @override
+  String get assistantReportThanks => 'Siyabonga. Sizoyibuyekeza le mpendulo.';
 }

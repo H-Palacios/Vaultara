@@ -3420,5 +3420,12 @@
   "proofPackColStatus": "Estat",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Informa",
+  "assistantReportTitle": "Informa d'aquesta resposta",
+  "assistantReportBody": "La pregunta i aquesta resposta s'envien a Vorkalis perquè les revisi.",
+  "assistantReportHarmful": "Ofensiu o perjudicial",
+  "assistantReportWrong": "Incorrecte o enganyós",
+  "assistantReportOther": "Una altra cosa",
+  "assistantReportThanks": "Gràcies. Revisarem aquesta resposta."
 }

@@ -8810,4 +8810,25 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Matsayi';
+
+  @override
+  String get assistantReport => 'Kai rahoto';
+
+  @override
+  String get assistantReportTitle => 'Kai rahoton wannan amsa';
+
+  @override
+  String get assistantReportBody => 'Ana aika tambayar da wannan amsa zuwa Vorkalis don a duba su.';
+
+  @override
+  String get assistantReportHarmful => 'Mai ɓata rai ko mai cutarwa';
+
+  @override
+  String get assistantReportWrong => 'Ba daidai ba ko mai ɓatarwa';
+
+  @override
+  String get assistantReportOther => 'Wani abu dabam';
+
+  @override
+  String get assistantReportThanks => 'Na gode. Za mu duba wannan amsa.';
 }

@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "حیثیت",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "رپورٹ کریں",
+  "assistantReportTitle": "اس جواب کی رپورٹ کریں",
+  "assistantReportBody": "سوال اور یہ جواب جائزے کے لیے Vorkalis کو بھیجے جاتے ہیں۔",
+  "assistantReportHarmful": "توہین آمیز یا نقصان دہ",
+  "assistantReportWrong": "غلط یا گمراہ کن",
+  "assistantReportOther": "کچھ اور",
+  "assistantReportThanks": "شکریہ۔ ہم اس جواب کا جائزہ لیں گے۔"
 }

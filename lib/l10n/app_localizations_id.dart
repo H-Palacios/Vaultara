@@ -8741,4 +8741,25 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Laporkan';
+
+  @override
+  String get assistantReportTitle => 'Laporkan jawaban ini';
+
+  @override
+  String get assistantReportBody => 'Pertanyaan dan jawaban ini dikirim ke Vorkalis untuk ditinjau.';
+
+  @override
+  String get assistantReportHarmful => 'Menyinggung atau berbahaya';
+
+  @override
+  String get assistantReportWrong => 'Salah atau menyesatkan';
+
+  @override
+  String get assistantReportOther => 'Hal lain';
+
+  @override
+  String get assistantReportThanks => 'Terima kasih. Kami akan meninjau jawaban ini.';
 }

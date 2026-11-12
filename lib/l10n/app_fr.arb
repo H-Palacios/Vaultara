@@ -3401,5 +3401,12 @@
   "proofPackColStatus": "Statut",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Signaler",
+  "assistantReportTitle": "Signaler cette réponse",
+  "assistantReportBody": "La question et cette réponse sont envoyées à Vorkalis pour vérification.",
+  "assistantReportHarmful": "Offensante ou nuisible",
+  "assistantReportWrong": "Fausse ou trompeuse",
+  "assistantReportOther": "Autre chose",
+  "assistantReportThanks": "Merci. Nous examinerons cette réponse."
 }

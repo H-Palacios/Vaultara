@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "Абалы",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Даттануу",
+  "assistantReportTitle": "Бул жоопко даттануу",
+  "assistantReportBody": "Суроо жана бул жооп текшерүү үчүн Vorkalis'ке жөнөтүлөт.",
+  "assistantReportHarmful": "Кордогон же зыяндуу",
+  "assistantReportWrong": "Туура эмес же адаштыруучу",
+  "assistantReportOther": "Башка нерсе",
+  "assistantReportThanks": "Рахмат. Бул жоопту текшеребиз."
 }

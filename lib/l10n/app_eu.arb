@@ -3403,5 +3403,12 @@
   "proofPackColStatus": "Egoera",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Salatu",
+  "assistantReportTitle": "Salatu erantzun hau",
+  "assistantReportBody": "Galdera eta erantzun hau Vorkalis-era bidaltzen dira berrikus ditzan.",
+  "assistantReportHarmful": "Iraingarria edo kaltegarria",
+  "assistantReportWrong": "Okerra edo engainagarria",
+  "assistantReportOther": "Beste zerbait",
+  "assistantReportThanks": "Eskerrik asko. Erantzun hau berrikusiko dugu."
 }

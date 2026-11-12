@@ -8816,4 +8816,25 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Denunciar';
+
+  @override
+  String get assistantReportTitle => 'Denunciar esta resposta';
+
+  @override
+  String get assistantReportBody => 'A pergunta e esta resposta são enviadas à Vorkalis para revisão.';
+
+  @override
+  String get assistantReportHarmful => 'Ofensiva ou prejudicial';
+
+  @override
+  String get assistantReportWrong => 'Errada ou enganosa';
+
+  @override
+  String get assistantReportOther => 'Outra coisa';
+
+  @override
+  String get assistantReportThanks => 'Obrigado. Vamos rever esta resposta.';
 }

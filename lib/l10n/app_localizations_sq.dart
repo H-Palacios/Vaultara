@@ -8815,4 +8815,25 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Statusi';
+
+  @override
+  String get assistantReport => 'Raporto';
+
+  @override
+  String get assistantReportTitle => 'Raporto këtë përgjigje';
+
+  @override
+  String get assistantReportBody => 'Pyetja dhe kjo përgjigje i dërgohen Vorkalis për shqyrtim.';
+
+  @override
+  String get assistantReportHarmful => 'Fyese ose e dëmshme';
+
+  @override
+  String get assistantReportWrong => 'E gabuar ose mashtruese';
+
+  @override
+  String get assistantReportOther => 'Diçka tjetër';
+
+  @override
+  String get assistantReportThanks => 'Faleminderit. Do ta shqyrtojmë këtë përgjigje.';
 }

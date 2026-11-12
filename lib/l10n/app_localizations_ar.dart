@@ -9060,4 +9060,25 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'الحالة';
+
+  @override
+  String get assistantReport => 'إبلاغ';
+
+  @override
+  String get assistantReportTitle => 'الإبلاغ عن هذه الإجابة';
+
+  @override
+  String get assistantReportBody => 'يُرسَل السؤال وهذه الإجابة إلى Vorkalis لمراجعتهما.';
+
+  @override
+  String get assistantReportHarmful => 'مسيء أو ضار';
+
+  @override
+  String get assistantReportWrong => 'خاطئ أو مضلل';
+
+  @override
+  String get assistantReportOther => 'شيء آخر';
+
+  @override
+  String get assistantReportThanks => 'شكرًا لك. سنراجع هذه الإجابة.';
 }

@@ -8810,4 +8810,25 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'სტატუსი';
+
+  @override
+  String get assistantReport => 'შეტყობინება';
+
+  @override
+  String get assistantReportTitle => 'ამ პასუხის შესახებ შეტყობინება';
+
+  @override
+  String get assistantReportBody => 'კითხვა და ეს პასუხი გადასამოწმებლად ეგზავნება Vorkalis-ს.';
+
+  @override
+  String get assistantReportHarmful => 'შეურაცხმყოფელი ან საზიანო';
+
+  @override
+  String get assistantReportWrong => 'არასწორი ან შეცდომაში შემყვანი';
+
+  @override
+  String get assistantReportOther => 'სხვა რამ';
+
+  @override
+  String get assistantReportThanks => 'გმადლობთ. ჩვენ გადავამოწმებთ ამ პასუხს.';
 }

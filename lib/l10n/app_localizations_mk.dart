@@ -8809,4 +8809,25 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Статус';
+
+  @override
+  String get assistantReport => 'Пријави';
+
+  @override
+  String get assistantReportTitle => 'Пријавете го овој одговор';
+
+  @override
+  String get assistantReportBody => 'Прашањето и овој одговор се испраќаат до Vorkalis на проверка.';
+
+  @override
+  String get assistantReportHarmful => 'Навредливо или штетно';
+
+  @override
+  String get assistantReportWrong => 'Погрешно или заблудувачко';
+
+  @override
+  String get assistantReportOther => 'Нешто друго';
+
+  @override
+  String get assistantReportThanks => 'Ви благодариме. Ќе го провериме овој одговор.';
 }

@@ -10851,5 +10851,33 @@
   "proofPackColStatus": "Status",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
+  },
+  "assistantReport": "Report",
+  "@assistantReport": {
+    "description": "Tooltip of the flag button under an Ask Vaultara answer that reports it."
+  },
+  "assistantReportTitle": "Report this answer",
+  "@assistantReportTitle": {
+    "description": "Title of the sheet for reporting an Ask Vaultara answer."
+  },
+  "assistantReportBody": "The question and this answer are sent to Vorkalis for review.",
+  "@assistantReportBody": {
+    "description": "Explains what is sent when an answer is reported. Vorkalis is the company name."
+  },
+  "assistantReportHarmful": "Offensive or harmful",
+  "@assistantReportHarmful": {
+    "description": "Report reason: the answer is offensive or harmful."
+  },
+  "assistantReportWrong": "Wrong or misleading",
+  "@assistantReportWrong": {
+    "description": "Report reason: the answer is wrong or misleading."
+  },
+  "assistantReportOther": "Something else",
+  "@assistantReportOther": {
+    "description": "Report reason: any other problem."
+  },
+  "assistantReportThanks": "Thank you. We will review this answer.",
+  "@assistantReportThanks": {
+    "description": "Shown after an answer was reported."
   }
 }

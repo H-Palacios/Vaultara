@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "دۆخ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "ڕاپۆرت",
+  "assistantReportTitle": "ڕاپۆرتی ئەم وەڵامە بکە",
+  "assistantReportBody": "پرسیارەکە و ئەم وەڵامە بۆ پێداچوونەوە دەنێردرێن بۆ Vorkalis.",
+  "assistantReportHarmful": "سووکایەتیکەر یان زیانبەخش",
+  "assistantReportWrong": "هەڵە یان چەواشەکەر",
+  "assistantReportOther": "شتێکی تر",
+  "assistantReportThanks": "سوپاس. ئەم وەڵامە پێدا دەچینەوە."
 }

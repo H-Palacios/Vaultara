@@ -3394,5 +3394,12 @@
   "proofPackColStatus": "Status",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Laporkan",
+  "assistantReportTitle": "Laporkan jawaban ini",
+  "assistantReportBody": "Pertanyaan dan jawaban ini dikirim ke Vorkalis untuk ditinjau.",
+  "assistantReportHarmful": "Menyinggung atau berbahaya",
+  "assistantReportWrong": "Salah atau menyesatkan",
+  "assistantReportOther": "Hal lain",
+  "assistantReportThanks": "Terima kasih. Kami akan meninjau jawaban ini."
 }

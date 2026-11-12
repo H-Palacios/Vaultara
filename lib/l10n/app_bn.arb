@@ -3420,5 +3420,12 @@
   "proofPackColStatus": "অবস্থা",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "রিপোর্ট করুন",
+  "assistantReportTitle": "এই উত্তরটি রিপোর্ট করুন",
+  "assistantReportBody": "প্রশ্ন এবং এই উত্তরটি পর্যালোচনার জন্য Vorkalis-এ পাঠানো হয়।",
+  "assistantReportHarmful": "আপত্তিকর বা ক্ষতিকর",
+  "assistantReportWrong": "ভুল বা বিভ্রান্তিকর",
+  "assistantReportOther": "অন্য কিছু",
+  "assistantReportThanks": "ধন্যবাদ। আমরা এই উত্তরটি পর্যালোচনা করব।"
 }

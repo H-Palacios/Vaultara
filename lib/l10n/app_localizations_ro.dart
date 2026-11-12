@@ -8895,4 +8895,25 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Stare';
+
+  @override
+  String get assistantReport => 'Raportează';
+
+  @override
+  String get assistantReportTitle => 'Raportează acest răspuns';
+
+  @override
+  String get assistantReportBody => 'Întrebarea și acest răspuns sunt trimise către Vorkalis pentru verificare.';
+
+  @override
+  String get assistantReportHarmful => 'Ofensator sau dăunător';
+
+  @override
+  String get assistantReportWrong => 'Greșit sau înșelător';
+
+  @override
+  String get assistantReportOther => 'Altceva';
+
+  @override
+  String get assistantReportThanks => 'Mulțumim. Vom verifica acest răspuns.';
 }

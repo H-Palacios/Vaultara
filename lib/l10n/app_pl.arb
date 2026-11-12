@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Status",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Zgłoś",
+  "assistantReportTitle": "Zgłoś tę odpowiedź",
+  "assistantReportBody": "Pytanie i ta odpowiedź zostaną wysłane do Vorkalis do sprawdzenia.",
+  "assistantReportHarmful": "Obraźliwa lub szkodliwa",
+  "assistantReportWrong": "Błędna lub wprowadzająca w błąd",
+  "assistantReportOther": "Coś innego",
+  "assistantReportThanks": "Dziękujemy. Sprawdzimy tę odpowiedź."
 }

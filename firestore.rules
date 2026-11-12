@@ -450,6 +450,18 @@ service cloud.firestore {
         && assistantExpiryOk(d);
     }
 
+    function validAssistantReport() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['reason', 'question', 'answer', 'chatId', 'createdAt', 'expireAt'])
+        && d.keys().hasAll(['reason', 'question', 'answer', 'createdAt', 'expireAt'])
+        && d.reason in ['harmful', 'wrong', 'other']
+        && d.question is string && d.question.size() <= 2000
+        && d.answer is string && d.answer.size() <= 4000
+        && (!('chatId' in d) || (d.chatId is string && d.chatId.size() <= 40))
+        && d.createdAt == request.time
+        && assistantExpiryOk(d);
+    }
+
     function validAssistantMessage() {
       let d = request.resource.data;
       return d.keys().hasOnly(['role', 'text', 'createdAt', 'expireAt', 'proposals'])
@@ -610,6 +622,12 @@ service cloud.firestore {
       match /assistantFeedback/{messageId} {
         allow read: if isOwner(uid);
         allow create, update: if isOwner(uid) && validAssistantFeedback();
+        allow delete: if isOwner(uid);
+      }
+
+      match /assistantReports/{messageId} {
+        allow read: if isOwner(uid);
+        allow create, update: if isOwner(uid) && validAssistantReport();
         allow delete: if isOwner(uid);
       }
 

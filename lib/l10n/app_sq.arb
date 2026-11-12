@@ -3403,5 +3403,12 @@
   "proofPackColStatus": "Statusi",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Raporto",
+  "assistantReportTitle": "Raporto këtë përgjigje",
+  "assistantReportBody": "Pyetja dhe kjo përgjigje i dërgohen Vorkalis për shqyrtim.",
+  "assistantReportHarmful": "Fyese ose e dëmshme",
+  "assistantReportWrong": "E gabuar ose mashtruese",
+  "assistantReportOther": "Diçka tjetër",
+  "assistantReportThanks": "Faleminderit. Do ta shqyrtojmë këtë përgjigje."
 }

@@ -3382,5 +3382,12 @@
   "proofPackColStatus": "狀態",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "檢舉",
+  "assistantReportTitle": "檢舉此回答",
+  "assistantReportBody": "問題和此回答會傳送給 Vorkalis 進行審查。",
+  "assistantReportHarmful": "冒犯或有害",
+  "assistantReportWrong": "錯誤或誤導",
+  "assistantReportOther": "其他",
+  "assistantReportThanks": "謝謝。我們會審查此回答。"
 }

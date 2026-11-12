@@ -8811,4 +8811,25 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Статус';
+
+  @override
+  String get assistantReport => 'Докладване';
+
+  @override
+  String get assistantReportTitle => 'Докладвайте този отговор';
+
+  @override
+  String get assistantReportBody => 'Въпросът и този отговор се изпращат на Vorkalis за преглед.';
+
+  @override
+  String get assistantReportHarmful => 'Обидно или вредно';
+
+  @override
+  String get assistantReportWrong => 'Грешно или подвеждащо';
+
+  @override
+  String get assistantReportOther => 'Нещо друго';
+
+  @override
+  String get assistantReportThanks => 'Благодарим ви. Ще прегледаме този отговор.';
 }

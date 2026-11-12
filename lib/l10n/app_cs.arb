@@ -3420,5 +3420,12 @@
   "proofPackColStatus": "Stav",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Nahlásit",
+  "assistantReportTitle": "Nahlásit tuto odpověď",
+  "assistantReportBody": "Otázka a tato odpověď se odešlou společnosti Vorkalis ke kontrole.",
+  "assistantReportHarmful": "Urážlivé nebo škodlivé",
+  "assistantReportWrong": "Nesprávné nebo zavádějící",
+  "assistantReportOther": "Něco jiného",
+  "assistantReportThanks": "Děkujeme. Tuto odpověď zkontrolujeme."
 }

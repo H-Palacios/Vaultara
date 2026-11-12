@@ -8988,4 +8988,25 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Zgłoś';
+
+  @override
+  String get assistantReportTitle => 'Zgłoś tę odpowiedź';
+
+  @override
+  String get assistantReportBody => 'Pytanie i ta odpowiedź zostaną wysłane do Vorkalis do sprawdzenia.';
+
+  @override
+  String get assistantReportHarmful => 'Obraźliwa lub szkodliwa';
+
+  @override
+  String get assistantReportWrong => 'Błędna lub wprowadzająca w błąd';
+
+  @override
+  String get assistantReportOther => 'Coś innego';
+
+  @override
+  String get assistantReportThanks => 'Dziękujemy. Sprawdzimy tę odpowiedź.';
 }

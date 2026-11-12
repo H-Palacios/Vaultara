@@ -3396,5 +3396,12 @@
   "proofPackColStatus": "ਸਥਿਤੀ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "ਰਿਪੋਰਟ ਕਰੋ",
+  "assistantReportTitle": "ਇਸ ਜਵਾਬ ਦੀ ਰਿਪੋਰਟ ਕਰੋ",
+  "assistantReportBody": "ਸਵਾਲ ਅਤੇ ਇਹ ਜਵਾਬ ਸਮੀਖਿਆ ਲਈ Vorkalis ਨੂੰ ਭੇਜੇ ਜਾਂਦੇ ਹਨ।",
+  "assistantReportHarmful": "ਅਪਮਾਨਜਨਕ ਜਾਂ ਨੁਕਸਾਨਦੇਹ",
+  "assistantReportWrong": "ਗਲਤ ਜਾਂ ਗੁਮਰਾਹਕੁੰਨ",
+  "assistantReportOther": "ਕੁਝ ਹੋਰ",
+  "assistantReportThanks": "ਧੰਨਵਾਦ। ਅਸੀਂ ਇਸ ਜਵਾਬ ਦੀ ਸਮੀਖਿਆ ਕਰਾਂਗੇ।"
 }

@@ -3403,5 +3403,12 @@
   "proofPackColStatus": "Կարգավիճակ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Բողոքել",
+  "assistantReportTitle": "Բողոքել այս պատասխանի մասին",
+  "assistantReportBody": "Հարցը և այս պատասխանը ուղարկվում են Vorkalis՝ ստուգման համար։",
+  "assistantReportHarmful": "Վիրավորական կամ վնասակար",
+  "assistantReportWrong": "Սխալ կամ մոլորեցնող",
+  "assistantReportOther": "Այլ բան",
+  "assistantReportThanks": "Շնորհակալություն։ Մենք կստուգենք այս պատասխանը։"
 }

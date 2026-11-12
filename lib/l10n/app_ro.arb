@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Stare",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Raportează",
+  "assistantReportTitle": "Raportează acest răspuns",
+  "assistantReportBody": "Întrebarea și acest răspuns sunt trimise către Vorkalis pentru verificare.",
+  "assistantReportHarmful": "Ofensator sau dăunător",
+  "assistantReportWrong": "Greșit sau înșelător",
+  "assistantReportOther": "Altceva",
+  "assistantReportThanks": "Mulțumim. Vom verifica acest răspuns."
 }

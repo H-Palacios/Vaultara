@@ -8734,4 +8734,25 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'สถานะ';
+
+  @override
+  String get assistantReport => 'รายงาน';
+
+  @override
+  String get assistantReportTitle => 'รายงานคำตอบนี้';
+
+  @override
+  String get assistantReportBody => 'คำถามและคำตอบนี้จะถูกส่งไปยัง Vorkalis เพื่อตรวจสอบ';
+
+  @override
+  String get assistantReportHarmful => 'ไม่เหมาะสมหรือเป็นอันตราย';
+
+  @override
+  String get assistantReportWrong => 'ผิดหรือทำให้เข้าใจผิด';
+
+  @override
+  String get assistantReportOther => 'อื่น ๆ';
+
+  @override
+  String get assistantReportThanks => 'ขอบคุณ เราจะตรวจสอบคำตอบนี้';
 }

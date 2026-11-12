@@ -3420,5 +3420,12 @@
   "proofPackColStatus": "Status",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Rapportér",
+  "assistantReportTitle": "Rapportér dette svar",
+  "assistantReportBody": "Spørgsmålet og dette svar sendes til Vorkalis til gennemgang.",
+  "assistantReportHarmful": "Stødende eller skadeligt",
+  "assistantReportWrong": "Forkert eller vildledende",
+  "assistantReportOther": "Noget andet",
+  "assistantReportThanks": "Tak. Vi gennemgår dette svar."
 }

@@ -8964,4 +8964,25 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Būsena';
+
+  @override
+  String get assistantReport => 'Pranešti';
+
+  @override
+  String get assistantReportTitle => 'Pranešti apie šį atsakymą';
+
+  @override
+  String get assistantReportBody => 'Klausimas ir šis atsakymas siunčiami Vorkalis peržiūrėti.';
+
+  @override
+  String get assistantReportHarmful => 'Įžeidžiantis ar žalingas';
+
+  @override
+  String get assistantReportWrong => 'Klaidingas ar klaidinantis';
+
+  @override
+  String get assistantReportOther => 'Kita';
+
+  @override
+  String get assistantReportThanks => 'Ačiū. Peržiūrėsime šį atsakymą.';
 }

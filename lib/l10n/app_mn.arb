@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "Төлөв",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Мэдээлэх",
+  "assistantReportTitle": "Энэ хариултыг мэдээлэх",
+  "assistantReportBody": "Асуулт болон энэ хариултыг шалгуулахаар Vorkalis руу илгээнэ.",
+  "assistantReportHarmful": "Доромжилсон эсвэл хортой",
+  "assistantReportWrong": "Буруу эсвэл төөрөгдүүлсэн",
+  "assistantReportOther": "Өөр зүйл",
+  "assistantReportThanks": "Баярлалаа. Бид энэ хариултыг шалгана."
 }

@@ -3406,5 +3406,12 @@
   "proofPackColStatus": "สถานะ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "รายงาน",
+  "assistantReportTitle": "รายงานคำตอบนี้",
+  "assistantReportBody": "คำถามและคำตอบนี้จะถูกส่งไปยัง Vorkalis เพื่อตรวจสอบ",
+  "assistantReportHarmful": "ไม่เหมาะสมหรือเป็นอันตราย",
+  "assistantReportWrong": "ผิดหรือทำให้เข้าใจผิด",
+  "assistantReportOther": "อื่น ๆ",
+  "assistantReportThanks": "ขอบคุณ เราจะตรวจสอบคำตอบนี้"
 }

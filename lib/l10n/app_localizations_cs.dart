@@ -8968,4 +8968,25 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Stav';
+
+  @override
+  String get assistantReport => 'Nahlásit';
+
+  @override
+  String get assistantReportTitle => 'Nahlásit tuto odpověď';
+
+  @override
+  String get assistantReportBody => 'Otázka a tato odpověď se odešlou společnosti Vorkalis ke kontrole.';
+
+  @override
+  String get assistantReportHarmful => 'Urážlivé nebo škodlivé';
+
+  @override
+  String get assistantReportWrong => 'Nesprávné nebo zavádějící';
+
+  @override
+  String get assistantReportOther => 'Něco jiného';
+
+  @override
+  String get assistantReportThanks => 'Děkujeme. Tuto odpověď zkontrolujeme.';
 }

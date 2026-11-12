@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "Статус",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Пријави",
+  "assistantReportTitle": "Пријавете го овој одговор",
+  "assistantReportBody": "Прашањето и овој одговор се испраќаат до Vorkalis на проверка.",
+  "assistantReportHarmful": "Навредливо или штетно",
+  "assistantReportWrong": "Погрешно или заблудувачко",
+  "assistantReportOther": "Нешто друго",
+  "assistantReportThanks": "Ви благодариме. Ќе го провериме овој одговор."
 }

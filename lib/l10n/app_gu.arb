@@ -3139,5 +3139,12 @@
   "proofPackColStatus": "સ્થિતિ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "રિપોર્ટ કરો",
+  "assistantReportTitle": "આ જવાબની રિપોર્ટ કરો",
+  "assistantReportBody": "પ્રશ્ન અને આ જવાબ સમીક્ષા માટે Vorkalis ને મોકલવામાં આવે છે.",
+  "assistantReportHarmful": "અપમાનજનક અથવા હાનિકારક",
+  "assistantReportWrong": "ખોટું અથવા ગેરમાર્ગે દોરનારું",
+  "assistantReportOther": "બીજું કંઈક",
+  "assistantReportThanks": "આભાર. અમે આ જવાબની સમીક્ષા કરીશું."
 }

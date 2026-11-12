@@ -8810,4 +8810,25 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Rewş';
+
+  @override
+  String get assistantReport => 'Rapor bike';
+
+  @override
+  String get assistantReportTitle => 'Vê bersivê rapor bike';
+
+  @override
+  String get assistantReportBody => 'Pirs û ev bersiv ji bo kontrolê ji Vorkalis re têne şandin.';
+
+  @override
+  String get assistantReportHarmful => 'Heqaretkar an zirardar';
+
+  @override
+  String get assistantReportWrong => 'Şaş an şaşker';
+
+  @override
+  String get assistantReportOther => 'Tiştekî din';
+
+  @override
+  String get assistantReportThanks => 'Spas. Em ê vê bersivê kontrol bikin.';
 }

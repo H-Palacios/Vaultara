@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Rewş",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Rapor bike",
+  "assistantReportTitle": "Vê bersivê rapor bike",
+  "assistantReportBody": "Pirs û ev bersiv ji bo kontrolê ji Vorkalis re têne şandin.",
+  "assistantReportHarmful": "Heqaretkar an zirardar",
+  "assistantReportWrong": "Şaş an şaşker",
+  "assistantReportOther": "Tiştekî din",
+  "assistantReportThanks": "Spas. Em ê vê bersivê kontrol bikin."
 }

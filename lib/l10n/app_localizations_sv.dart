@@ -8814,4 +8814,25 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Rapportera';
+
+  @override
+  String get assistantReportTitle => 'Rapportera det här svaret';
+
+  @override
+  String get assistantReportBody => 'Frågan och det här svaret skickas till Vorkalis för granskning.';
+
+  @override
+  String get assistantReportHarmful => 'Stötande eller skadligt';
+
+  @override
+  String get assistantReportWrong => 'Fel eller vilseledande';
+
+  @override
+  String get assistantReportOther => 'Något annat';
+
+  @override
+  String get assistantReportThanks => 'Tack. Vi granskar det här svaret.';
 }

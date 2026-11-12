@@ -8810,4 +8810,25 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Durum';
+
+  @override
+  String get assistantReport => 'Bildir';
+
+  @override
+  String get assistantReportTitle => 'Bu yanıtı bildir';
+
+  @override
+  String get assistantReportBody => 'Soru ve bu yanıt incelenmek üzere Vorkalis\'e gönderilir.';
+
+  @override
+  String get assistantReportHarmful => 'Saldırgan veya zararlı';
+
+  @override
+  String get assistantReportWrong => 'Yanlış veya yanıltıcı';
+
+  @override
+  String get assistantReportOther => 'Başka bir şey';
+
+  @override
+  String get assistantReportThanks => 'Teşekkürler. Bu yanıtı inceleyeceğiz.';
 }

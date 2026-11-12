@@ -8744,4 +8744,25 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'အခြေအနေ';
+
+  @override
+  String get assistantReport => 'တိုင်ကြားရန်';
+
+  @override
+  String get assistantReportTitle => 'ဤအဖြေကို တိုင်ကြားရန်';
+
+  @override
+  String get assistantReportBody => 'မေးခွန်းနှင့် ဤအဖြေကို စစ်ဆေးရန် Vorkalis ထံ ပို့ပါသည်။';
+
+  @override
+  String get assistantReportHarmful => 'စော်ကားသော သို့မဟုတ် ထိခိုက်စေသော';
+
+  @override
+  String get assistantReportWrong => 'မှားယွင်းသော သို့မဟုတ် လွဲမှားစေသော';
+
+  @override
+  String get assistantReportOther => 'အခြားအရာ';
+
+  @override
+  String get assistantReportThanks => 'ကျေးဇူးတင်ပါသည်။ ဤအဖြေကို ကျွန်ုပ်တို့ စစ်ဆေးပါမည်။';
 }

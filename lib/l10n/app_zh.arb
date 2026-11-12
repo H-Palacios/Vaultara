@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "状态",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "举报",
+  "assistantReportTitle": "举报此回答",
+  "assistantReportBody": "问题和此回答将发送给 Vorkalis 进行审核。",
+  "assistantReportHarmful": "冒犯或有害",
+  "assistantReportWrong": "错误或误导",
+  "assistantReportOther": "其他",
+  "assistantReportThanks": "谢谢。我们会审核此回答。"
 }

@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-/// Copy, read aloud, helpful and not helpful, shown under an answer.
+/// Copy, read aloud, helpful, not helpful and report, shown under an answer.
 class AssistantMessageTools extends StatelessWidget {
   final String text;
   final int rating;
@@ -16,6 +16,9 @@ class AssistantMessageTools extends StatelessWidget {
   /// Whether this answer is being read aloud now.
   final bool speaking;
 
+  final VoidCallback? onReport;
+  final bool reported;
+
   const AssistantMessageTools({
     super.key,
     required this.text,
@@ -23,6 +26,8 @@ class AssistantMessageTools extends StatelessWidget {
     this.onRate,
     this.onSpeak,
     this.speaking = false,
+    this.onReport,
+    this.reported = false,
   });
 
   Future<void> _copy(BuildContext context) async {
@@ -97,6 +102,13 @@ class AssistantMessageTools extends StatelessWidget {
               onPressed: () => onRate!(rating == -1 ? 0 : -1),
             ),
           ],
+          if (onReport != null || reported)
+            tool(
+              icon: reported ? Icons.flag_rounded : Icons.outlined_flag_rounded,
+              tooltip: loc.assistantReport,
+              selected: reported,
+              onPressed: reported ? null : onReport,
+            ),
         ],
       ),
     );

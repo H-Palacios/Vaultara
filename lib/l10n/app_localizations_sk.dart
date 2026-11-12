@@ -8966,4 +8966,25 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Stav';
+
+  @override
+  String get assistantReport => 'Nahlásiť';
+
+  @override
+  String get assistantReportTitle => 'Nahlásiť túto odpoveď';
+
+  @override
+  String get assistantReportBody => 'Otázka a táto odpoveď sa odošlú spoločnosti Vorkalis na kontrolu.';
+
+  @override
+  String get assistantReportHarmful => 'Urážlivé alebo škodlivé';
+
+  @override
+  String get assistantReportWrong => 'Nesprávne alebo zavádzajúce';
+
+  @override
+  String get assistantReportOther => 'Niečo iné';
+
+  @override
+  String get assistantReportThanks => 'Ďakujeme. Túto odpoveď skontrolujeme.';
 }

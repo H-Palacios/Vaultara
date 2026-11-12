@@ -3394,5 +3394,12 @@
   "proofPackColStatus": "Staða",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Tilkynna",
+  "assistantReportTitle": "Tilkynna þetta svar",
+  "assistantReportBody": "Spurningin og þetta svar eru send til Vorkalis til yfirferðar.",
+  "assistantReportHarmful": "Móðgandi eða skaðlegt",
+  "assistantReportWrong": "Rangt eða villandi",
+  "assistantReportOther": "Eitthvað annað",
+  "assistantReportThanks": "Takk fyrir. Við förum yfir þetta svar."
 }

@@ -8815,4 +8815,25 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Estado';
+
+  @override
+  String get assistantReport => 'Denunciar';
+
+  @override
+  String get assistantReportTitle => 'Denunciar esta resposta';
+
+  @override
+  String get assistantReportBody => 'A pregunta e esta resposta envíanse a Vorkalis para que as revise.';
+
+  @override
+  String get assistantReportHarmful => 'Ofensiva ou prexudicial';
+
+  @override
+  String get assistantReportWrong => 'Incorrecta ou enganosa';
+
+  @override
+  String get assistantReportOther => 'Outra cousa';
+
+  @override
+  String get assistantReportThanks => 'Grazas. Revisaremos esta resposta.';
 }

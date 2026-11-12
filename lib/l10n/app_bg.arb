@@ -3139,5 +3139,12 @@
   "proofPackColStatus": "Статус",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Докладване",
+  "assistantReportTitle": "Докладвайте този отговор",
+  "assistantReportBody": "Въпросът и този отговор се изпращат на Vorkalis за преглед.",
+  "assistantReportHarmful": "Обидно или вредно",
+  "assistantReportWrong": "Грешно или подвеждащо",
+  "assistantReportOther": "Нещо друго",
+  "assistantReportThanks": "Благодарим ви. Ще прегледаме този отговор."
 }

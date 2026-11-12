@@ -8983,4 +8983,25 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Статус';
+
+  @override
+  String get assistantReport => 'Поскаржитися';
+
+  @override
+  String get assistantReportTitle => 'Поскаржитися на цю відповідь';
+
+  @override
+  String get assistantReportBody => 'Запитання й цю відповідь буде надіслано до Vorkalis на перевірку.';
+
+  @override
+  String get assistantReportHarmful => 'Образлива або шкідлива';
+
+  @override
+  String get assistantReportWrong => 'Неправильна або оманлива';
+
+  @override
+  String get assistantReportOther => 'Інше';
+
+  @override
+  String get assistantReportThanks => 'Дякуємо. Ми перевіримо цю відповідь.';
 }

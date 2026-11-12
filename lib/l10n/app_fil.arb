@@ -3401,5 +3401,12 @@
   "proofPackColStatus": "Status",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "I-report",
+  "assistantReportTitle": "I-report ang sagot na ito",
+  "assistantReportBody": "Ipinapadala ang tanong at ang sagot na ito sa Vorkalis para masuri.",
+  "assistantReportHarmful": "Nakakasakit o nakakapinsala",
+  "assistantReportWrong": "Mali o nakalilinlang",
+  "assistantReportOther": "Iba pa",
+  "assistantReportThanks": "Salamat. Susuriin namin ang sagot na ito."
 }
