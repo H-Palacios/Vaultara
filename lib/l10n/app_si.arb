@@ -3251,5 +3251,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "දින 7ක් ඇතුළත",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "දින 30ක් ඇතුළත",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "පසුව",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{ඉදිරි දින {days} තුළ කල් ඉකුත් වේ: {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{ඉදිරි වසර තුළ කල් ඉකුත් වේ: {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} තවත්}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "{date} දක්වා සියල්ල හොඳින්",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "සියල්ල බලන්න",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} කාර්යබහුලයි ({count}). පළමු අලුත් කිරීම කලින් අරඹන්න.",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "ගිණුම සහ ආරක්ෂාව",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "පුද්ගලයින්",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "ඔබගේ දත්ත",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "මනාප",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "සංදර්ශකය",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "අපනයනය සහ දින දර්ශනය",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF, දින දර්ශන ගොනුව සහ සජීවී දින දර්ශන සබැඳිය",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "නිබන්ධන, Vaultara ගෙන් අසන්න සහ සහායට ඊමේල්",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "අපට ඊමේල් කරන්න",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "ඔබගේ යෙදුම් අනුවාදය සහ දුරකථන මාදිලිය ස්වයංක්‍රීයව එක් වේ. ඔබගේ වාර්තා කිසිදා නැත.",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "ලිපිනය පිටපත් කරන්න",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "ඊමේල් ලිපිනය පිටපත් විය",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "මෙම දුරකථනයේ ඊමේල් යෙදුමක් හමු නොවීය. ලිපිනය පිටපත් කර ඕනෑම ඊමේල් සේවාවකින් අපට ලියන්න.",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "පිටුව {page} / {total} · Vaultara සමඟ සකස් කළා",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "වාර්තාව",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "හිමිකරු",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "කල් ඉකුත්වීම",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "තත්ත්වය",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

@@ -3269,5 +3269,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "7 napon belül",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "30 napon belül",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "Később",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{{count} lejár a következő {days} napban}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{{count} lejár a következő évben}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} további}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "Minden rendben {date}-ig",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "Összes megtekintése",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "A(z) {month} zsúfolt ({count}). Kezdje korán az első megújítást.",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "Fiók és biztonság",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "Személyek",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "Az Ön adatai",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "Beállítások",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "Megjelenés",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "Exportálás és naptár",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF, naptárfájl és élő naptárhivatkozás",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "Útmutatók, Kérdezze a Vaultarát és e-mail a támogatásnak",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "Írjon nekünk",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "Az alkalmazás verziója és a telefon típusa automatikusan bekerül. A bejegyzései soha.",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "Cím másolása",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "E-mail-cím kimásolva",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "Ezen a telefonon nem található levelezőalkalmazás. Másolja ki a címet, és írjon nekünk bármelyik e-mail-szolgáltatásból.",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "{page}. oldal / {total} · Készült a Vaultarával",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "Bejegyzés",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "Tulajdonos",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "Lejárat",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "Állapot",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

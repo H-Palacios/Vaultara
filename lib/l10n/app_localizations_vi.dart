@@ -8648,4 +8648,112 @@ class AppLocalizationsVi extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Để giữ an toàn cho tài khoản, hãy xác nhận đó là bạn bằng $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'Trong 7 ngày';
+
+  @override
+  String get legendWithinMonth => 'Trong 30 ngày';
+
+  @override
+  String get legendLater => 'Sau này';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mục hết hạn trong $days ngày tới',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mục hết hạn trong năm tới',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count mục nữa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Mọi thứ ổn đến $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Xem tất cả';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month khá bận ($count). Hãy bắt đầu gia hạn mục đầu tiên sớm.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Tài khoản và bảo mật';
+
+  @override
+  String get profileSectionPeople => 'Mọi người';
+
+  @override
+  String get profileSectionYourData => 'Dữ liệu của bạn';
+
+  @override
+  String get profileSectionPreferences => 'Tùy chọn';
+
+  @override
+  String get displayTitle => 'Hiển thị';
+
+  @override
+  String get exportCalendarScreenTitle => 'Xuất và lịch';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, tệp lịch và liên kết lịch trực tiếp';
+
+  @override
+  String get helpTileSubtitle => 'Hướng dẫn, Hỏi Vaultara và email cho bộ phận hỗ trợ';
+
+  @override
+  String get helpEmailTitle => 'Gửi email cho chúng tôi';
+
+  @override
+  String get helpEmailSubtitle => 'Phiên bản ứng dụng và mẫu điện thoại được thêm tự động. Hồ sơ của bạn thì không bao giờ.';
+
+  @override
+  String get helpCopyAddress => 'Sao chép địa chỉ';
+
+  @override
+  String get helpAddressCopied => 'Đã sao chép địa chỉ email';
+
+  @override
+  String get helpNoMailApp => 'Không tìm thấy ứng dụng email trên điện thoại này. Hãy sao chép địa chỉ và viết cho chúng tôi từ bất kỳ dịch vụ email nào.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Trang $page/$total · Chuẩn bị bằng Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Hồ sơ';
+
+  @override
+  String get proofPackColHolder => 'Chủ sở hữu';
+
+  @override
+  String get proofPackColExpires => 'Hết hạn';
+
+  @override
+  String get proofPackColStatus => 'Trạng thái';
 }

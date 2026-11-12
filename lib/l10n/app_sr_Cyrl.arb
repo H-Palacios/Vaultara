@@ -3225,5 +3225,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "У року од 7 дана",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "У року од 30 дана",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "Касније",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{Истиче у наредних {days} дана: {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{Истиче у наредној години: {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} још}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "Све је у реду до {date}",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "Прикажи све",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} је пун обавеза ({count}). Прву обнову почните раније.",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "Налог и безбедност",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "Особе",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "Ваши подаци",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "Подешавања",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "Приказ",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "Извоз и календар",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF, датотека календара и живи линк календара",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "Водичи, Питај Vaultaru и имејл подршци",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "Пишите нам",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "Верзија апликације и модел телефона додају се аутоматски. Ваши записи никада.",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "Копирај адресу",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "Имејл адреса је копирана",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "На овом телефону није пронађена апликација за имејл. Копирајте адресу и пишите нам са било које имејл услуге.",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "Страна {page} од {total} · Припремљено уз Vaultaru",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "Запис",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "Власник",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "Истиче",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "Статус",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

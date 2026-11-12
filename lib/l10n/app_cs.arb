@@ -3282,5 +3282,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "Do 7 dní",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "Do 30 dní",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "Později",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{Vyprší v příštích {days} dnech: {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{Vyprší v příštím roce: {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} další}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "Vše v pořádku do {date}",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "Zobrazit vše",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} je nabitý ({count}). Začněte s první obnovou včas.",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "Účet a zabezpečení",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "Lidé",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "Vaše data",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "Předvolby",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "Zobrazení",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "Export a kalendář",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF, soubor kalendáře a živý odkaz na kalendář",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "Návody, Zeptejte se Vaultary a e-mail podpoře",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "Napište nám",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "Verze aplikace a model telefonu se doplní samy. Vaše záznamy nikdy.",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "Kopírovat adresu",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "E-mailová adresa zkopírována",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "V tomto telefonu nebyla nalezena e-mailová aplikace. Zkopírujte adresu a napište nám z jakékoli e-mailové služby.",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "Strana {page} z {total} · Připraveno ve Vaultaře",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "Záznam",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "Držitel",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "Platnost do",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "Stav",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

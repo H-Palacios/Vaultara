@@ -3251,5 +3251,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "په ۷ ورځو کې",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "په ۳۰ ورځو کې",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "وروسته",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{په راتلونکو {days} ورځو کې پای ته رسېږي: {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{په راتلونکي کال کې پای ته رسېږي: {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} نور}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "تر {date} پورې هر څه سم دي",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "ټول وګورئ",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} بوخت دی ({count}). لومړی نوي کول وختي پیل کړئ.",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "حساب او امنیت",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "خلک",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "ستاسو معلومات",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "غوره توبونه",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "ښودنه",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "صادرول او جنتري",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF، د جنترۍ فایل او ژوندی جنترۍ لینک",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "لارښوونې، له Vaultara وپوښتئ او ملاتړ ته برېښنالیک",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "موږ ته برېښنالیک ولیږئ",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "ستاسو د اپ نسخه او د تلیفون ماډل پخپله اضافه کېږي. ستاسو ریکارډونه هېڅکله نه.",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "پته کاپي کړئ",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "د برېښنالیک پته کاپي شوه",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "په دې تلیفون کې د برېښنالیک اپ ونه موندل شو. پته کاپي کړئ او له هر برېښنالیک خدمت څخه موږ ته ولیکئ.",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "پاڼه {page} له {total} · د Vaultara سره چمتو شوې",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "ریکارډ",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "لرونکی",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "پای",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "حالت",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

@@ -8716,4 +8716,114 @@ class AppLocalizationsEt extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Konto turvalisuse huvides kinnita $provider abil, et see oled sina.';
   }
+
+  @override
+  String get legendWithinWeek => '7 päeva jooksul';
+
+  @override
+  String get legendWithinMonth => '30 päeva jooksul';
+
+  @override
+  String get legendLater => 'Hiljem';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aeguvad järgmise $days päeva jooksul',
+      one: '$count aegub järgmise $days päeva jooksul',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aeguvad järgmise aasta jooksul',
+      one: '$count aegub järgmise aasta jooksul',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count veel',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Kõik korras kuni $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Näita kõiki';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month on tihe ($count). Alusta esimese uuendamisega varakult.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Konto ja turvalisus';
+
+  @override
+  String get profileSectionPeople => 'Inimesed';
+
+  @override
+  String get profileSectionYourData => 'Sinu andmed';
+
+  @override
+  String get profileSectionPreferences => 'Eelistused';
+
+  @override
+  String get displayTitle => 'Kuva';
+
+  @override
+  String get exportCalendarScreenTitle => 'Eksport ja kalender';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, kalendrifail ja otsekalendri link';
+
+  @override
+  String get helpTileSubtitle => 'Õpetused, Küsi Vaultaralt ja e-kiri toele';
+
+  @override
+  String get helpEmailTitle => 'Kirjuta meile';
+
+  @override
+  String get helpEmailSubtitle => 'Rakenduse versioon ja telefoni mudel lisatakse ise. Sinu kirjeid mitte kunagi.';
+
+  @override
+  String get helpCopyAddress => 'Kopeeri aadress';
+
+  @override
+  String get helpAddressCopied => 'E-posti aadress kopeeritud';
+
+  @override
+  String get helpNoMailApp => 'Selles telefonis ei leitud e-posti rakendust. Kopeeri aadress ja kirjuta meile ükskõik millisest e-posti teenusest.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Lehekülg $page/$total · Koostatud Vaultaraga';
+  }
+
+  @override
+  String get proofPackColRecord => 'Kirje';
+
+  @override
+  String get proofPackColHolder => 'Omanik';
+
+  @override
+  String get proofPackColExpires => 'Aegub';
+
+  @override
+  String get proofPackColStatus => 'Olek';
 }

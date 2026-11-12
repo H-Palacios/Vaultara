@@ -8917,4 +8917,112 @@ class AppLocalizationsGa extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Chun do chuntas a choinneáil slán, deimhnigh gur tusa atá ann le $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'Laistigh de 7 lá';
+
+  @override
+  String get legendWithinMonth => 'Laistigh de 30 lá';
+
+  @override
+  String get legendLater => 'Níos déanaí';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ag dul in éag sna $days lá atá romhainn: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ag dul in éag sa bhliain atá romhainn: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count eile',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Gach rud ceart go dtí $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Féach ar fad';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return 'Tá $month gnóthach ($count). Tosaigh an chéad athnuachan go luath.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Cuntas agus slándáil';
+
+  @override
+  String get profileSectionPeople => 'Daoine';
+
+  @override
+  String get profileSectionYourData => 'Do shonraí';
+
+  @override
+  String get profileSectionPreferences => 'Roghanna';
+
+  @override
+  String get displayTitle => 'Taispeáint';
+
+  @override
+  String get exportCalendarScreenTitle => 'Easpórtáil agus féilire';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, comhad féilire agus nasc féilire beo';
+
+  @override
+  String get helpTileSubtitle => 'Ranganna teagaisc, Fiafraigh de Vaultara agus ríomhphost chuig tacaíocht';
+
+  @override
+  String get helpEmailTitle => 'Seol ríomhphost chugainn';
+
+  @override
+  String get helpEmailSubtitle => 'Cuirtear leagan na haipe agus samhail an fhóin leis duit. Do thaifid riamh.';
+
+  @override
+  String get helpCopyAddress => 'Cóipeáil an seoladh';
+
+  @override
+  String get helpAddressCopied => 'Cóipeáladh an seoladh ríomhphoist';
+
+  @override
+  String get helpNoMailApp => 'Níor aimsíodh aip ríomhphoist ar an bhfón seo. Cóipeáil an seoladh agus scríobh chugainn ó aon seirbhís ríomhphoist.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Leathanach $page de $total · Ullmhaithe le Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Taifead';
+
+  @override
+  String get proofPackColHolder => 'Sealbhóir';
+
+  @override
+  String get proofPackColExpires => 'Téann in éag';
+
+  @override
+  String get proofPackColStatus => 'Stádas';
 }

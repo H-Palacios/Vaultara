@@ -8712,4 +8712,112 @@ class AppLocalizationsHu extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'A fiókja védelme érdekében erősítse meg a(z) $provider segítségével, hogy Ön az.';
   }
+
+  @override
+  String get legendWithinWeek => '7 napon belül';
+
+  @override
+  String get legendWithinMonth => '30 napon belül';
+
+  @override
+  String get legendLater => 'Később';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lejár a következő $days napban',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lejár a következő évben',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count további',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Minden rendben $date-ig';
+  }
+
+  @override
+  String get runwaySeeAll => 'Összes megtekintése';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return 'A(z) $month zsúfolt ($count). Kezdje korán az első megújítást.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Fiók és biztonság';
+
+  @override
+  String get profileSectionPeople => 'Személyek';
+
+  @override
+  String get profileSectionYourData => 'Az Ön adatai';
+
+  @override
+  String get profileSectionPreferences => 'Beállítások';
+
+  @override
+  String get displayTitle => 'Megjelenés';
+
+  @override
+  String get exportCalendarScreenTitle => 'Exportálás és naptár';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, naptárfájl és élő naptárhivatkozás';
+
+  @override
+  String get helpTileSubtitle => 'Útmutatók, Kérdezze a Vaultarát és e-mail a támogatásnak';
+
+  @override
+  String get helpEmailTitle => 'Írjon nekünk';
+
+  @override
+  String get helpEmailSubtitle => 'Az alkalmazás verziója és a telefon típusa automatikusan bekerül. A bejegyzései soha.';
+
+  @override
+  String get helpCopyAddress => 'Cím másolása';
+
+  @override
+  String get helpAddressCopied => 'E-mail-cím kimásolva';
+
+  @override
+  String get helpNoMailApp => 'Ezen a telefonon nem található levelezőalkalmazás. Másolja ki a címet, és írjon nekünk bármelyik e-mail-szolgáltatásból.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '$page. oldal / $total · Készült a Vaultarával';
+  }
+
+  @override
+  String get proofPackColRecord => 'Bejegyzés';
+
+  @override
+  String get proofPackColHolder => 'Tulajdonos';
+
+  @override
+  String get proofPackColExpires => 'Lejárat';
+
+  @override
+  String get proofPackColStatus => 'Állapot';
 }

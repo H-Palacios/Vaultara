@@ -8716,4 +8716,114 @@ class AppLocalizationsAf extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Bevestig met $provider dat dit jy is om jou rekening veilig te hou.';
   }
+
+  @override
+  String get legendWithinWeek => 'Binne 7 dae';
+
+  @override
+  String get legendWithinMonth => 'Binne 30 dae';
+
+  @override
+  String get legendLater => 'Later';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verval in die volgende $days dae',
+      one: '$count verval in die volgende $days dae',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count verval in die volgende jaar',
+      one: '$count verval in die volgende jaar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count meer',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Alles in orde tot $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Sien alles';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month is besig ($count). Begin vroeg met die eerste hernuwing.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Rekening en sekuriteit';
+
+  @override
+  String get profileSectionPeople => 'Mense';
+
+  @override
+  String get profileSectionYourData => 'Jou data';
+
+  @override
+  String get profileSectionPreferences => 'Voorkeure';
+
+  @override
+  String get displayTitle => 'Vertoning';
+
+  @override
+  String get exportCalendarScreenTitle => 'Uitvoer en kalender';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, kalenderlêer en lewendige kalenderskakel';
+
+  @override
+  String get helpTileSubtitle => 'Tutoriale, Vra Vaultara en e-pos aan ondersteuning';
+
+  @override
+  String get helpEmailTitle => 'E-pos ons';
+
+  @override
+  String get helpEmailSubtitle => 'Jou programweergawe en foonmodel word vir jou bygevoeg. Jou rekords nooit nie.';
+
+  @override
+  String get helpCopyAddress => 'Kopieer adres';
+
+  @override
+  String get helpAddressCopied => 'E-posadres gekopieer';
+
+  @override
+  String get helpNoMailApp => 'Geen e-posprogram is op hierdie foon gevind nie. Kopieer die adres en skryf aan ons van enige e-posdiens af.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Bladsy $page van $total · Voorberei met Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Rekord';
+
+  @override
+  String get proofPackColHolder => 'Houer';
+
+  @override
+  String get proofPackColExpires => 'Verval';
+
+  @override
+  String get proofPackColStatus => 'Status';
 }

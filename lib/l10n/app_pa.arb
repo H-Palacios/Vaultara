@@ -3258,5 +3258,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "7 ਦਿਨਾਂ ਵਿੱਚ",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "30 ਦਿਨਾਂ ਵਿੱਚ",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "ਬਾਅਦ ਵਿੱਚ",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{ਅਗਲੇ {days} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਖ਼ਤਮ: {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{ਅਗਲੇ ਸਾਲ ਵਿੱਚ ਮਿਆਦ ਖ਼ਤਮ: {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} ਹੋਰ}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "{date} ਤੱਕ ਸਭ ਠੀਕ ਹੈ",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "ਸਭ ਵੇਖੋ",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} ਰੁਝੇਵਿਆਂ ਭਰਿਆ ਹੈ ({count})। ਪਹਿਲਾ ਨਵੀਨੀਕਰਨ ਜਲਦੀ ਸ਼ੁਰੂ ਕਰੋ।",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "ਖਾਤਾ ਅਤੇ ਸੁਰੱਖਿਆ",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "ਲੋਕ",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "ਤੁਹਾਡਾ ਡਾਟਾ",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "ਤਰਜੀਹਾਂ",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "ਡਿਸਪਲੇ",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "ਨਿਰਯਾਤ ਅਤੇ ਕੈਲੰਡਰ",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF, ਕੈਲੰਡਰ ਫ਼ਾਈਲ ਅਤੇ ਲਾਈਵ ਕੈਲੰਡਰ ਲਿੰਕ",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "ਟਿਊਟੋਰੀਅਲ, Vaultara ਨੂੰ ਪੁੱਛੋ ਅਤੇ ਸਹਾਇਤਾ ਨੂੰ ਈਮੇਲ",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "ਸਾਨੂੰ ਈਮੇਲ ਕਰੋ",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "ਤੁਹਾਡੇ ਐਪ ਦਾ ਸੰਸਕਰਨ ਅਤੇ ਫ਼ੋਨ ਮਾਡਲ ਆਪਣੇ ਆਪ ਜੁੜ ਜਾਂਦੇ ਹਨ। ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਕਦੇ ਨਹੀਂ।",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "ਪਤਾ ਕਾਪੀ ਕਰੋ",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "ਈਮੇਲ ਪਤਾ ਕਾਪੀ ਹੋ ਗਿਆ",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "ਇਸ ਫ਼ੋਨ 'ਤੇ ਕੋਈ ਈਮੇਲ ਐਪ ਨਹੀਂ ਮਿਲੀ। ਪਤਾ ਕਾਪੀ ਕਰੋ ਅਤੇ ਕਿਸੇ ਵੀ ਈਮੇਲ ਸੇਵਾ ਤੋਂ ਸਾਨੂੰ ਲਿਖੋ।",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "ਪੰਨਾ {page} / {total} · Vaultara ਨਾਲ ਤਿਆਰ",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "ਰਿਕਾਰਡ",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "ਧਾਰਕ",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "ਮਿਆਦ ਖ਼ਤਮ",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "ਸਥਿਤੀ",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

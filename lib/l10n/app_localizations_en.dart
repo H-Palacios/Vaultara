@@ -549,7 +549,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get softDeleteMove => 'Move';
 
   @override
-  String get recentlyDeletedTitle => 'Recently Deleted';
+  String get recentlyDeletedTitle => 'Recently deleted';
 
   @override
   String get categories => 'Categories';
@@ -8731,4 +8731,114 @@ class AppLocalizationsEn extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'To keep your account safe, confirm it\'s you with $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'Within 7 days';
+
+  @override
+  String get legendWithinMonth => 'Within 30 days';
+
+  @override
+  String get legendLater => 'Later';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expire in the next $days days',
+      one: '$count expires in the next $days days',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expire in the next year',
+      one: '$count expires in the next year',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count more',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'All clear until $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'See all';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month is busy ($count). Start the first renewal early.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Account and security';
+
+  @override
+  String get profileSectionPeople => 'People';
+
+  @override
+  String get profileSectionYourData => 'Your data';
+
+  @override
+  String get profileSectionPreferences => 'Preferences';
+
+  @override
+  String get displayTitle => 'Display';
+
+  @override
+  String get exportCalendarScreenTitle => 'Export and calendar';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, calendar file and live calendar link';
+
+  @override
+  String get helpTileSubtitle => 'Tutorials, Ask Vaultara and email support';
+
+  @override
+  String get helpEmailTitle => 'Email us';
+
+  @override
+  String get helpEmailSubtitle => 'Your app version and phone model are added for you. Your records never are.';
+
+  @override
+  String get helpCopyAddress => 'Copy address';
+
+  @override
+  String get helpAddressCopied => 'Email address copied';
+
+  @override
+  String get helpNoMailApp => 'No email app was found on this phone. Copy the address and write to us from any email service.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Page $page of $total · Prepared with Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Record';
+
+  @override
+  String get proofPackColHolder => 'Holder';
+
+  @override
+  String get proofPackColExpires => 'Expires';
+
+  @override
+  String get proofPackColStatus => 'Status';
 }

@@ -8790,4 +8790,112 @@ class AppLocalizationsHr extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Kako bi vaš račun ostao siguran, potvrdite putem $provider da ste to vi.';
   }
+
+  @override
+  String get legendWithinWeek => 'U roku od 7 dana';
+
+  @override
+  String get legendWithinMonth => 'U roku od 30 dana';
+
+  @override
+  String get legendLater => 'Kasnije';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Istječe u sljedećih $days dana: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Istječe u sljedećoj godini: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count još',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Sve je u redu do $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Prikaži sve';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month je pun obveza ($count). Prvu obnovu počnite ranije.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Račun i sigurnost';
+
+  @override
+  String get profileSectionPeople => 'Osobe';
+
+  @override
+  String get profileSectionYourData => 'Vaši podaci';
+
+  @override
+  String get profileSectionPreferences => 'Postavke';
+
+  @override
+  String get displayTitle => 'Prikaz';
+
+  @override
+  String get exportCalendarScreenTitle => 'Izvoz i kalendar';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, datoteka kalendara i živa poveznica kalendara';
+
+  @override
+  String get helpTileSubtitle => 'Vodiči, Pitaj Vaultaru i e-pošta podršci';
+
+  @override
+  String get helpEmailTitle => 'Pišite nam';
+
+  @override
+  String get helpEmailSubtitle => 'Verzija aplikacije i model telefona dodaju se automatski. Vaši zapisi nikada.';
+
+  @override
+  String get helpCopyAddress => 'Kopiraj adresu';
+
+  @override
+  String get helpAddressCopied => 'Adresa e-pošte kopirana';
+
+  @override
+  String get helpNoMailApp => 'Na ovom telefonu nije pronađena aplikacija za e-poštu. Kopirajte adresu i pišite nam s bilo koje usluge e-pošte.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Stranica $page od $total · Pripremljeno uz Vaultaru';
+  }
+
+  @override
+  String get proofPackColRecord => 'Zapis';
+
+  @override
+  String get proofPackColHolder => 'Vlasnik';
+
+  @override
+  String get proofPackColExpires => 'Istječe';
+
+  @override
+  String get proofPackColStatus => 'Status';
 }

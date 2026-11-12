@@ -8868,4 +8868,112 @@ class AppLocalizationsSk extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Kvôli bezpečnosti účtu potvrďte cez $provider, že ste to vy.';
   }
+
+  @override
+  String get legendWithinWeek => 'Do 7 dní';
+
+  @override
+  String get legendWithinMonth => 'Do 30 dní';
+
+  @override
+  String get legendLater => 'Neskôr';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vyprší v najbližších $days dňoch: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vyprší v nasledujúcom roku: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count ďalšie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Všetko v poriadku do $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Zobraziť všetko';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month je nabitý ($count). Začnite prvú obnovu včas.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Účet a zabezpečenie';
+
+  @override
+  String get profileSectionPeople => 'Ľudia';
+
+  @override
+  String get profileSectionYourData => 'Vaše údaje';
+
+  @override
+  String get profileSectionPreferences => 'Predvoľby';
+
+  @override
+  String get displayTitle => 'Zobrazenie';
+
+  @override
+  String get exportCalendarScreenTitle => 'Export a kalendár';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, súbor kalendára a živý odkaz na kalendár';
+
+  @override
+  String get helpTileSubtitle => 'Návody, Opýtajte sa Vaultary a e-mail podpore';
+
+  @override
+  String get helpEmailTitle => 'Napíšte nám';
+
+  @override
+  String get helpEmailSubtitle => 'Verzia aplikácie a model telefónu sa pridajú automaticky. Vaše záznamy nikdy.';
+
+  @override
+  String get helpCopyAddress => 'Kopírovať adresu';
+
+  @override
+  String get helpAddressCopied => 'E-mailová adresa skopírovaná';
+
+  @override
+  String get helpNoMailApp => 'V tomto telefóne sa nenašla e-mailová aplikácia. Skopírujte adresu a napíšte nám z akejkoľvek e-mailovej služby.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Strana $page z $total · Pripravené vo Vaultare';
+  }
+
+  @override
+  String get proofPackColRecord => 'Záznam';
+
+  @override
+  String get proofPackColHolder => 'Držiteľ';
+
+  @override
+  String get proofPackColExpires => 'Platnosť do';
+
+  @override
+  String get proofPackColStatus => 'Stav';
 }

@@ -1258,7 +1258,7 @@ abstract class AppLocalizations {
   /// No description provided for @recentlyDeletedTitle.
   ///
   /// In en, this message translates to:
-  /// **'Recently Deleted'**
+  /// **'Recently deleted'**
   String get recentlyDeletedTitle;
 
   /// No description provided for @categories.
@@ -14856,6 +14856,168 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'To keep your account safe, confirm it\'s you with {provider}.'**
   String reauthWithProvider(String provider);
+
+  /// Calendar legend: records expiring within 7 days (orange).
+  ///
+  /// In en, this message translates to:
+  /// **'Within 7 days'**
+  String get legendWithinWeek;
+
+  /// Calendar legend: records expiring within 30 days (amber).
+  ///
+  /// In en, this message translates to:
+  /// **'Within 30 days'**
+  String get legendWithinMonth;
+
+  /// Calendar legend: records expiring after 30 days (green).
+  ///
+  /// In en, this message translates to:
+  /// **'Later'**
+  String get legendLater;
+
+  /// Home runway heading, such as "3 expire in the next 30 days". days is 30 or 90.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{count} expires in the next {days} days} other{{count} expire in the next {days} days}}'**
+  String runwayCount(int count, int days);
+
+  /// Runway heading when the window is a year.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{count} expires in the next year} other{{count} expire in the next year}}'**
+  String runwayCountYear(int count);
+
+  /// Under the runway rows: how many more records are not listed.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, other{+{count} more}}'**
+  String runwayMore(int count);
+
+  /// Shown when nothing expires within a year; date is the next expiry.
+  ///
+  /// In en, this message translates to:
+  /// **'All clear until {date}'**
+  String runwayAllClear(String date);
+
+  /// Button that opens the full list of records in the runway window.
+  ///
+  /// In en, this message translates to:
+  /// **'See all'**
+  String get runwaySeeAll;
+
+  /// Insights runway note; month is a month name, count the number of renewals in it.
+  ///
+  /// In en, this message translates to:
+  /// **'{month} is busy ({count}). Start the first renewal early.'**
+  String runwayBusyMonth(String month, int count);
+
+  /// profileSectionAccountSecurity
+  ///
+  /// In en, this message translates to:
+  /// **'Account and security'**
+  String get profileSectionAccountSecurity;
+
+  /// profileSectionPeople
+  ///
+  /// In en, this message translates to:
+  /// **'People'**
+  String get profileSectionPeople;
+
+  /// profileSectionYourData
+  ///
+  /// In en, this message translates to:
+  /// **'Your data'**
+  String get profileSectionYourData;
+
+  /// profileSectionPreferences
+  ///
+  /// In en, this message translates to:
+  /// **'Preferences'**
+  String get profileSectionPreferences;
+
+  /// displayTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Display'**
+  String get displayTitle;
+
+  /// exportCalendarScreenTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Export and calendar'**
+  String get exportCalendarScreenTitle;
+
+  /// exportCalendarTileSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'PDF, calendar file and live calendar link'**
+  String get exportCalendarTileSubtitle;
+
+  /// helpTileSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Tutorials, Ask Vaultara and email support'**
+  String get helpTileSubtitle;
+
+  /// helpEmailTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Email us'**
+  String get helpEmailTitle;
+
+  /// helpEmailSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Your app version and phone model are added for you. Your records never are.'**
+  String get helpEmailSubtitle;
+
+  /// helpCopyAddress
+  ///
+  /// In en, this message translates to:
+  /// **'Copy address'**
+  String get helpCopyAddress;
+
+  /// helpAddressCopied
+  ///
+  /// In en, this message translates to:
+  /// **'Email address copied'**
+  String get helpAddressCopied;
+
+  /// helpNoMailApp
+  ///
+  /// In en, this message translates to:
+  /// **'No email app was found on this phone. Copy the address and write to us from any email service.'**
+  String get helpNoMailApp;
+
+  /// Footer on every page of the proof pack PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page} of {total} · Prepared with Vaultara'**
+  String proofPackFooter(int page, int total);
+
+  /// proofPackColRecord
+  ///
+  /// In en, this message translates to:
+  /// **'Record'**
+  String get proofPackColRecord;
+
+  /// proofPackColHolder
+  ///
+  /// In en, this message translates to:
+  /// **'Holder'**
+  String get proofPackColHolder;
+
+  /// proofPackColExpires
+  ///
+  /// In en, this message translates to:
+  /// **'Expires'**
+  String get proofPackColExpires;
+
+  /// proofPackColStatus
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get proofPackColStatus;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

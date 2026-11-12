@@ -8710,4 +8710,114 @@ class AppLocalizationsMk extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'За вашата сметка да остане безбедна, потврдете преку $provider дека сте вие.';
   }
+
+  @override
+  String get legendWithinWeek => 'Во рок од 7 дена';
+
+  @override
+  String get legendWithinMonth => 'Во рок од 30 дена';
+
+  @override
+  String get legendLater => 'Подоцна';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count истекуваат во следните $days дена',
+      one: '$count истекува во следните $days дена',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count истекуваат во следната година',
+      one: '$count истекува во следната година',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count уште',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Сè е во ред до $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Види ги сите';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month е зафатен ($count). Започнете ја првата обнова навреме.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Сметка и безбедност';
+
+  @override
+  String get profileSectionPeople => 'Луѓе';
+
+  @override
+  String get profileSectionYourData => 'Вашите податоци';
+
+  @override
+  String get profileSectionPreferences => 'Поставки';
+
+  @override
+  String get displayTitle => 'Приказ';
+
+  @override
+  String get exportCalendarScreenTitle => 'Извоз и календар';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, датотека за календар и жива врска до календар';
+
+  @override
+  String get helpTileSubtitle => 'Упатства, Прашај ја Vaultara и е-пошта до поддршка';
+
+  @override
+  String get helpEmailTitle => 'Пишете ни';
+
+  @override
+  String get helpEmailSubtitle => 'Верзијата на апликацијата и моделот на телефонот се додаваат автоматски. Вашите записи никогаш.';
+
+  @override
+  String get helpCopyAddress => 'Копирај адреса';
+
+  @override
+  String get helpAddressCopied => 'Адресата на е-пошта е копирана';
+
+  @override
+  String get helpNoMailApp => 'На овој телефон не е пронајдена апликација за е-пошта. Копирајте ја адресата и пишете ни од која било услуга за е-пошта.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Страница $page од $total · Подготвено со Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Запис';
+
+  @override
+  String get proofPackColHolder => 'Сопственик';
+
+  @override
+  String get proofPackColExpires => 'Истекува';
+
+  @override
+  String get proofPackColStatus => 'Статус';
 }

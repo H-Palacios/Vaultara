@@ -8712,4 +8712,112 @@ class AppLocalizationsKy extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Аккаунтуңуз коопсуз болушу үчүн, $provider аркылуу бул сиз экениңизди ырастаңыз.';
   }
+
+  @override
+  String get legendWithinWeek => '7 күндүн ичинде';
+
+  @override
+  String get legendWithinMonth => '30 күндүн ичинде';
+
+  @override
+  String get legendLater => 'Кийинчерээк';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Кийинки $days күндө мөөнөтү бүтөт: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Кийинки жылы мөөнөтү бүтөт: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count дагы',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date чейин баары жакшы';
+  }
+
+  @override
+  String get runwaySeeAll => 'Баарын көрүү';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month бош эмес ($count). Биринчи жаңылоону эртерээк баштаңыз.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Аккаунт жана коопсуздук';
+
+  @override
+  String get profileSectionPeople => 'Адамдар';
+
+  @override
+  String get profileSectionYourData => 'Маалыматтарыңыз';
+
+  @override
+  String get profileSectionPreferences => 'Жөндөөлөр';
+
+  @override
+  String get displayTitle => 'Көрүнүш';
+
+  @override
+  String get exportCalendarScreenTitle => 'Экспорт жана жылнаама';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, жылнаама файлы жана түз жылнаама шилтемеси';
+
+  @override
+  String get helpTileSubtitle => 'Окуу куралдары, Vaultara-дан сураңыз жана колдоого кат';
+
+  @override
+  String get helpEmailTitle => 'Бизге жазыңыз';
+
+  @override
+  String get helpEmailSubtitle => 'Колдонмонун версиясы жана телефондун модели автоматтык түрдө кошулат. Жазууларыңыз эч качан.';
+
+  @override
+  String get helpCopyAddress => 'Даректи көчүрүү';
+
+  @override
+  String get helpAddressCopied => 'Электрондук почта дареги көчүрүлдү';
+
+  @override
+  String get helpNoMailApp => 'Бул телефондо почта колдонмосу табылган жок. Даректи көчүрүп, каалаган почта кызматынан бизге жазыңыз.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '$page/$total барак · Vaultara менен даярдалды';
+  }
+
+  @override
+  String get proofPackColRecord => 'Жазуу';
+
+  @override
+  String get proofPackColHolder => 'Ээси';
+
+  @override
+  String get proofPackColExpires => 'Мөөнөтү';
+
+  @override
+  String get proofPackColStatus => 'Абалы';
 }

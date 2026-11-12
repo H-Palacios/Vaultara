@@ -8712,4 +8712,114 @@ class AppLocalizationsBg extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'За да е защитен акаунтът ви, потвърдете, че сте вие, с $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'До 7 дни';
+
+  @override
+  String get legendWithinMonth => 'До 30 дни';
+
+  @override
+  String get legendLater => 'По-късно';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count изтичат през следващите $days дни',
+      one: '$count изтича през следващите $days дни',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count изтичат през следващата година',
+      one: '$count изтича през следващата година',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count още',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Всичко е наред до $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Виж всички';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month е натоварен ($count). Започнете първото подновяване рано.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Профил и сигурност';
+
+  @override
+  String get profileSectionPeople => 'Хора';
+
+  @override
+  String get profileSectionYourData => 'Вашите данни';
+
+  @override
+  String get profileSectionPreferences => 'Предпочитания';
+
+  @override
+  String get displayTitle => 'Изглед';
+
+  @override
+  String get exportCalendarScreenTitle => 'Експорт и календар';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, файл за календар и календарна връзка на живо';
+
+  @override
+  String get helpTileSubtitle => 'Ръководства, Попитай Vaultara и имейл до поддръжката';
+
+  @override
+  String get helpEmailTitle => 'Пишете ни';
+
+  @override
+  String get helpEmailSubtitle => 'Версията на приложението и моделът на телефона се добавят автоматично. Вашите записи – никога.';
+
+  @override
+  String get helpCopyAddress => 'Копирай адреса';
+
+  @override
+  String get helpAddressCopied => 'Имейл адресът е копиран';
+
+  @override
+  String get helpNoMailApp => 'На този телефон не е намерено приложение за имейл. Копирайте адреса и ни пишете от която и да е имейл услуга.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Страница $page от $total · Изготвено с Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Запис';
+
+  @override
+  String get proofPackColHolder => 'Притежател';
+
+  @override
+  String get proofPackColExpires => 'Изтича';
+
+  @override
+  String get proofPackColStatus => 'Статус';
 }

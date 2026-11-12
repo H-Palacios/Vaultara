@@ -8712,4 +8712,112 @@ class AppLocalizationsKu extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Ji bo ewlehiya hesabê xwe, bi $provider piştrast bike ku tu yî.';
   }
+
+  @override
+  String get legendWithinWeek => 'Di nav 7 rojan de';
+
+  @override
+  String get legendWithinMonth => 'Di nav 30 rojan de';
+
+  @override
+  String get legendLater => 'Paşê';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Di $days rojên bê de diqede: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Di sala bê de diqede: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count zêdetir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Her tişt baş e heta $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Hemûyan bibîne';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month qelebalix e ($count). Nûkirina yekem zû dest pê bike.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Hesab û ewlehî';
+
+  @override
+  String get profileSectionPeople => 'Mirov';
+
+  @override
+  String get profileSectionYourData => 'Daneyên te';
+
+  @override
+  String get profileSectionPreferences => 'Vebijark';
+
+  @override
+  String get displayTitle => 'Dîmen';
+
+  @override
+  String get exportCalendarScreenTitle => 'Derxistin û salname';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, pelê salnameyê û girêdana salnameya zindî';
+
+  @override
+  String get helpTileSubtitle => 'Rêber, Ji Vaultara bipirse û e-name ji piştgiriyê re';
+
+  @override
+  String get helpEmailTitle => 'Ji me re binivîse';
+
+  @override
+  String get helpEmailSubtitle => 'Guhertoya sepanê û modela telefonê bixweber têne zêdekirin. Tomarên te qet.';
+
+  @override
+  String get helpCopyAddress => 'Navnîşanê kopî bike';
+
+  @override
+  String get helpAddressCopied => 'Navnîşana e-nameyê hate kopîkirin';
+
+  @override
+  String get helpNoMailApp => 'Li ser vê telefonê sepana e-nameyê nehat dîtin. Navnîşanê kopî bike û ji her karûbarekî e-nameyê ji me re binivîse.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Rûpel $page ji $total · Bi Vaultara hatiye amadekirin';
+  }
+
+  @override
+  String get proofPackColRecord => 'Tomar';
+
+  @override
+  String get proofPackColHolder => 'Xwedî';
+
+  @override
+  String get proofPackColExpires => 'Diqede';
+
+  @override
+  String get proofPackColStatus => 'Rewş';
 }

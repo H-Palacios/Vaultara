@@ -8784,4 +8784,112 @@ class AppLocalizationsLv extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Lai jūsu konts būtu drošībā, apstipriniet ar $provider, ka tas esat jūs.';
   }
+
+  @override
+  String get legendWithinWeek => '7 dienu laikā';
+
+  @override
+  String get legendWithinMonth => '30 dienu laikā';
+
+  @override
+  String get legendLater => 'Vēlāk';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Beidzas nākamo $days dienu laikā: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Beidzas nākamā gada laikā: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count vēl',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Viss kārtībā līdz $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Skatīt visu';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month ir aizņemts ($count). Sāciet pirmo atjaunošanu laikus.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Konts un drošība';
+
+  @override
+  String get profileSectionPeople => 'Cilvēki';
+
+  @override
+  String get profileSectionYourData => 'Jūsu dati';
+
+  @override
+  String get profileSectionPreferences => 'Preferences';
+
+  @override
+  String get displayTitle => 'Displejs';
+
+  @override
+  String get exportCalendarScreenTitle => 'Eksports un kalendārs';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, kalendāra fails un tiešsaistes kalendāra saite';
+
+  @override
+  String get helpTileSubtitle => 'Pamācības, Jautājiet Vaultarai un e-pasts atbalstam';
+
+  @override
+  String get helpEmailTitle => 'Rakstiet mums';
+
+  @override
+  String get helpEmailSubtitle => 'Lietotnes versija un tālruņa modelis tiek pievienoti automātiski. Jūsu ieraksti – nekad.';
+
+  @override
+  String get helpCopyAddress => 'Kopēt adresi';
+
+  @override
+  String get helpAddressCopied => 'E-pasta adrese nokopēta';
+
+  @override
+  String get helpNoMailApp => 'Šajā tālrunī netika atrasta e-pasta lietotne. Nokopējiet adresi un rakstiet mums no jebkura e-pasta pakalpojuma.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '$page. lapa no $total · Sagatavots ar Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Ieraksts';
+
+  @override
+  String get proofPackColHolder => 'Turētājs';
+
+  @override
+  String get proofPackColExpires => 'Derīgs līdz';
+
+  @override
+  String get proofPackColStatus => 'Statuss';
 }

@@ -8890,4 +8890,112 @@ class AppLocalizationsPl extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Aby chronić konto, potwierdź przez $provider, że to Ty.';
   }
+
+  @override
+  String get legendWithinWeek => 'W ciągu 7 dni';
+
+  @override
+  String get legendWithinMonth => 'W ciągu 30 dni';
+
+  @override
+  String get legendLater => 'Później';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wygasa w ciągu najbliższych $days dni: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wygasa w ciągu najbliższego roku: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count więcej',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Wszystko w porządku do $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Pokaż wszystko';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month jest pracowity ($count). Zacznij pierwsze odnowienie wcześniej.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Konto i bezpieczeństwo';
+
+  @override
+  String get profileSectionPeople => 'Osoby';
+
+  @override
+  String get profileSectionYourData => 'Twoje dane';
+
+  @override
+  String get profileSectionPreferences => 'Preferencje';
+
+  @override
+  String get displayTitle => 'Wygląd';
+
+  @override
+  String get exportCalendarScreenTitle => 'Eksport i kalendarz';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, plik kalendarza i link do kalendarza na żywo';
+
+  @override
+  String get helpTileSubtitle => 'Samouczki, Zapytaj Vaultarę i e-mail do pomocy';
+
+  @override
+  String get helpEmailTitle => 'Napisz do nas';
+
+  @override
+  String get helpEmailSubtitle => 'Wersja aplikacji i model telefonu są dodawane automatycznie. Twoje wpisy nigdy.';
+
+  @override
+  String get helpCopyAddress => 'Kopiuj adres';
+
+  @override
+  String get helpAddressCopied => 'Skopiowano adres e-mail';
+
+  @override
+  String get helpNoMailApp => 'Na tym telefonie nie znaleziono aplikacji poczty. Skopiuj adres i napisz do nas z dowolnej usługi poczty.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Strona $page z $total · Przygotowano w Vaultarze';
+  }
+
+  @override
+  String get proofPackColRecord => 'Wpis';
+
+  @override
+  String get proofPackColHolder => 'Posiadacz';
+
+  @override
+  String get proofPackColExpires => 'Wygasa';
+
+  @override
+  String get proofPackColStatus => 'Status';
 }

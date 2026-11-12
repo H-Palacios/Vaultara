@@ -8646,4 +8646,112 @@ class AppLocalizationsMy extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'သင့်အကောင့် လုံခြုံစေရန် $provider ဖြင့် သင်ဖြစ်ကြောင်း အတည်ပြုပါ။';
   }
+
+  @override
+  String get legendWithinWeek => '၇ ရက်အတွင်း';
+
+  @override
+  String get legendWithinMonth => '၃၀ ရက်အတွင်း';
+
+  @override
+  String get legendLater => 'နောက်မှ';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'နောက် $days ရက်အတွင်း သက်တမ်းကုန်မည်- $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'နောက်တစ်နှစ်အတွင်း သက်တမ်းကုန်မည်- $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count ထပ်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date အထိ အားလုံးအဆင်ပြေသည်';
+  }
+
+  @override
+  String get runwaySeeAll => 'အားလုံးကြည့်ရန်';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month တွင် အလုပ်များသည် ($count)။ ပထမသက်တမ်းတိုးခြင်းကို စောစောစတင်ပါ။';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'အကောင့်နှင့် လုံခြုံရေး';
+
+  @override
+  String get profileSectionPeople => 'လူများ';
+
+  @override
+  String get profileSectionYourData => 'သင့်ဒေတာ';
+
+  @override
+  String get profileSectionPreferences => 'ရွေးချယ်မှုများ';
+
+  @override
+  String get displayTitle => 'ပြသမှု';
+
+  @override
+  String get exportCalendarScreenTitle => 'ထုတ်ယူခြင်းနှင့် ပြက္ခဒိန်';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF၊ ပြက္ခဒိန်ဖိုင်နှင့် တိုက်ရိုက်ပြက္ခဒိန်လင့်ခ်';
+
+  @override
+  String get helpTileSubtitle => 'သင်ခန်းစာများ၊ Vaultara ကိုမေးရန်နှင့် ပံ့ပိုးမှုသို့ အီးမေးလ်';
+
+  @override
+  String get helpEmailTitle => 'ကျွန်ုပ်တို့ထံ အီးမေးလ်ပို့ပါ';
+
+  @override
+  String get helpEmailSubtitle => 'သင့်အက်ပ်ဗားရှင်းနှင့် ဖုန်းမော်ဒယ်ကို အလိုအလျောက် ထည့်ပေးသည်။ သင့်မှတ်တမ်းများကို ဘယ်တော့မှ မထည့်ပါ။';
+
+  @override
+  String get helpCopyAddress => 'လိပ်စာကူးရန်';
+
+  @override
+  String get helpAddressCopied => 'အီးမေးလ်လိပ်စာ ကူးယူပြီး';
+
+  @override
+  String get helpNoMailApp => 'ဤဖုန်းတွင် အီးမေးလ်အက်ပ် မတွေ့ပါ။ လိပ်စာကိုကူးပြီး မည်သည့်အီးမေးလ်ဝန်ဆောင်မှုမှမဆို ကျွန်ုပ်တို့ထံ ရေးပါ။';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'စာမျက်နှာ $page / $total · Vaultara ဖြင့် ပြင်ဆင်ထားသည်';
+  }
+
+  @override
+  String get proofPackColRecord => 'မှတ်တမ်း';
+
+  @override
+  String get proofPackColHolder => 'ကိုင်ဆောင်သူ';
+
+  @override
+  String get proofPackColExpires => 'သက်တမ်းကုန်';
+
+  @override
+  String get proofPackColStatus => 'အခြေအနေ';
 }

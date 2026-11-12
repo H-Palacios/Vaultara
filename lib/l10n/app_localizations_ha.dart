@@ -8712,4 +8712,112 @@ class AppLocalizationsHa extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Don kiyaye asusunka, tabbatar da cewa kai ne ta hanyar $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'Cikin kwanaki 7';
+
+  @override
+  String get legendWithinMonth => 'Cikin kwanaki 30';
+
+  @override
+  String get legendLater => 'Daga baya';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Za su ƙare cikin kwanaki $days masu zuwa: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Za su ƙare cikin shekara mai zuwa: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count ƙari',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Komai lafiya har zuwa $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Duba duka';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month yana da aiki ($count). Fara sabuntawa na farko da wuri.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Asusu da tsaro';
+
+  @override
+  String get profileSectionPeople => 'Mutane';
+
+  @override
+  String get profileSectionYourData => 'Bayananka';
+
+  @override
+  String get profileSectionPreferences => 'Zaɓuɓɓuka';
+
+  @override
+  String get displayTitle => 'Nuni';
+
+  @override
+  String get exportCalendarScreenTitle => 'Fitarwa da kalanda';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, fayil ɗin kalanda da hanyar kalanda kai tsaye';
+
+  @override
+  String get helpTileSubtitle => 'Koyarwa, Tambayi Vaultara da imel zuwa tallafi';
+
+  @override
+  String get helpEmailTitle => 'Aiko mana da imel';
+
+  @override
+  String get helpEmailSubtitle => 'Ana ƙara sigar manhajarka da samfurin wayarka kai tsaye. Bayananka ba za a taɓa ƙarawa ba.';
+
+  @override
+  String get helpCopyAddress => 'Kwafi adireshi';
+
+  @override
+  String get helpAddressCopied => 'An kwafi adireshin imel';
+
+  @override
+  String get helpNoMailApp => 'Ba a sami manhajar imel a wannan wayar ba. Kwafi adireshin ka rubuto mana daga kowace sabis ɗin imel.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Shafi $page cikin $total · An shirya da Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Bayani';
+
+  @override
+  String get proofPackColHolder => 'Mai shi';
+
+  @override
+  String get proofPackColExpires => 'Ƙarewa';
+
+  @override
+  String get proofPackColStatus => 'Matsayi';
 }

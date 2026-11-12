@@ -8891,4 +8891,112 @@ class AppLocalizationsRu extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Чтобы защитить аккаунт, подтвердите через $provider, что это вы.';
   }
+
+  @override
+  String get legendWithinWeek => 'В течение 7 дней';
+
+  @override
+  String get legendWithinMonth => 'В течение 30 дней';
+
+  @override
+  String get legendLater => 'Позже';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истекает в ближайшие $days дней: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истекает в ближайший год: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ещё $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Всё в порядке до $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Показать все';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month насыщенный ($count). Начните первое продление заранее.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Аккаунт и безопасность';
+
+  @override
+  String get profileSectionPeople => 'Люди';
+
+  @override
+  String get profileSectionYourData => 'Ваши данные';
+
+  @override
+  String get profileSectionPreferences => 'Настройки';
+
+  @override
+  String get displayTitle => 'Оформление';
+
+  @override
+  String get exportCalendarScreenTitle => 'Экспорт и календарь';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, файл календаря и живая ссылка на календарь';
+
+  @override
+  String get helpTileSubtitle => 'Руководства, Спросить Vaultara и письмо в поддержку';
+
+  @override
+  String get helpEmailTitle => 'Написать нам';
+
+  @override
+  String get helpEmailSubtitle => 'Версия приложения и модель телефона добавляются автоматически. Ваши записи — никогда.';
+
+  @override
+  String get helpCopyAddress => 'Копировать адрес';
+
+  @override
+  String get helpAddressCopied => 'Адрес почты скопирован';
+
+  @override
+  String get helpNoMailApp => 'На этом телефоне не найдено почтовое приложение. Скопируйте адрес и напишите нам из любого почтового сервиса.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Страница $page из $total · Подготовлено в Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Запись';
+
+  @override
+  String get proofPackColHolder => 'Владелец';
+
+  @override
+  String get proofPackColExpires => 'Истекает';
+
+  @override
+  String get proofPackColStatus => 'Статус';
 }

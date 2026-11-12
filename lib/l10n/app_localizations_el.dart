@@ -8716,4 +8716,114 @@ class AppLocalizationsEl extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Για την ασφάλεια του λογαριασμού σας, επιβεβαιώστε ότι είστε εσείς με το $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'Εντός 7 ημερών';
+
+  @override
+  String get legendWithinMonth => 'Εντός 30 ημερών';
+
+  @override
+  String get legendLater => 'Αργότερα';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count λήγουν τις επόμενες $days ημέρες',
+      one: '$count λήγει τις επόμενες $days ημέρες',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count λήγουν μέσα στον επόμενο χρόνο',
+      one: '$count λήγει μέσα στον επόμενο χρόνο',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count ακόμη',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Όλα εντάξει έως $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Προβολή όλων';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return 'Ο μήνας $month είναι φορτωμένος ($count). Ξεκινήστε νωρίς την πρώτη ανανέωση.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Λογαριασμός και ασφάλεια';
+
+  @override
+  String get profileSectionPeople => 'Άτομα';
+
+  @override
+  String get profileSectionYourData => 'Τα δεδομένα σας';
+
+  @override
+  String get profileSectionPreferences => 'Προτιμήσεις';
+
+  @override
+  String get displayTitle => 'Εμφάνιση';
+
+  @override
+  String get exportCalendarScreenTitle => 'Εξαγωγή και ημερολόγιο';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, αρχείο ημερολογίου και ζωντανός σύνδεσμος ημερολογίου';
+
+  @override
+  String get helpTileSubtitle => 'Οδηγοί, Ρωτήστε τη Vaultara και email στην υποστήριξη';
+
+  @override
+  String get helpEmailTitle => 'Στείλτε μας email';
+
+  @override
+  String get helpEmailSubtitle => 'Η έκδοση της εφαρμογής και το μοντέλο του τηλεφώνου προστίθενται αυτόματα. Οι εγγραφές σας ποτέ.';
+
+  @override
+  String get helpCopyAddress => 'Αντιγραφή διεύθυνσης';
+
+  @override
+  String get helpAddressCopied => 'Η διεύθυνση email αντιγράφηκε';
+
+  @override
+  String get helpNoMailApp => 'Δεν βρέθηκε εφαρμογή email σε αυτό το τηλέφωνο. Αντιγράψτε τη διεύθυνση και γράψτε μας από οποιαδήποτε υπηρεσία email.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Σελίδα $page από $total · Δημιουργήθηκε με τη Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Εγγραφή';
+
+  @override
+  String get proofPackColHolder => 'Κάτοχος';
+
+  @override
+  String get proofPackColExpires => 'Λήγει';
+
+  @override
+  String get proofPackColStatus => 'Κατάσταση';
 }

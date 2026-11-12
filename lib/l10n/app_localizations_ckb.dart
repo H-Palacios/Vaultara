@@ -8712,4 +8712,112 @@ class AppLocalizationsCkb extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'بۆ پاراستنی هەژمارەکەت، بە $provider پشتڕاستی بکەرەوە کە خۆتی.';
   }
+
+  @override
+  String get legendWithinWeek => 'لە ماوەی 7 ڕۆژدا';
+
+  @override
+  String get legendWithinMonth => 'لە ماوەی 30 ڕۆژدا';
+
+  @override
+  String get legendLater => 'دواتر';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'لە $days ڕۆژی داهاتوودا بەسەردەچێت: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'لە ساڵی داهاتوودا بەسەردەچێت: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count زیاتر',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'هەموو شت باشە تا $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'هەمووی ببینە';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month قەرەباڵغە ($count). یەکەم نوێکردنەوە زوو دەست پێ بکە.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'هەژمار و ئاسایش';
+
+  @override
+  String get profileSectionPeople => 'کەسەکان';
+
+  @override
+  String get profileSectionYourData => 'داتاکانت';
+
+  @override
+  String get profileSectionPreferences => 'ھەڵبژاردەکان';
+
+  @override
+  String get displayTitle => 'پیشاندان';
+
+  @override
+  String get exportCalendarScreenTitle => 'هەناردن و ڕۆژژمێر';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF، فایلی ڕۆژژمێر و بەستەری ڕۆژژمێری ڕاستەوخۆ';
+
+  @override
+  String get helpTileSubtitle => 'فێرکارییەکان، پرسیار لە Vaultara و ئیمەیڵ بۆ پشتیوانی';
+
+  @override
+  String get helpEmailTitle => 'ئیمەیڵمان بۆ بنێرە';
+
+  @override
+  String get helpEmailSubtitle => 'وەشانی ئەپ و مۆدێلی تەلەفۆنەکەت خۆکارانە زیاد دەکرێن. تۆمارەکانت هەرگیز.';
+
+  @override
+  String get helpCopyAddress => 'ناونیشان کۆپی بکە';
+
+  @override
+  String get helpAddressCopied => 'ناونیشانی ئیمەیڵ کۆپی کرا';
+
+  @override
+  String get helpNoMailApp => 'هیچ ئەپێکی ئیمەیڵ لەم تەلەفۆنەدا نەدۆزرایەوە. ناونیشانەکە کۆپی بکە و لە هەر خزمەتگوزارییەکی ئیمەیڵەوە بۆمان بنووسە.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'لاپەڕە $page لە $total · ئامادەکراو بە Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'تۆمار';
+
+  @override
+  String get proofPackColHolder => 'خاوەن';
+
+  @override
+  String get proofPackColExpires => 'بەسەرچوون';
+
+  @override
+  String get proofPackColStatus => 'دۆخ';
 }

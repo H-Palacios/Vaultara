@@ -3001,5 +3001,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "7 ದಿನಗಳೊಳಗೆ",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "30 ದಿನಗಳೊಳಗೆ",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "ನಂತರ",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{ಮುಂದಿನ {days} ದಿನಗಳಲ್ಲಿ ಅವಧಿ ಮುಗಿಯುತ್ತದೆ: {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{ಮುಂದಿನ ವರ್ಷದಲ್ಲಿ ಅವಧಿ ಮುಗಿಯುತ್ತದೆ: {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} ಇನ್ನಷ್ಟು}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "{date} ವರೆಗೆ ಎಲ್ಲವೂ ಸರಿಯಾಗಿದೆ",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "ಎಲ್ಲವನ್ನೂ ನೋಡಿ",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} ಬಿಡುವಿಲ್ಲ ({count}). ಮೊದಲ ನವೀಕರಣವನ್ನು ಬೇಗ ಆರಂಭಿಸಿ.",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "ಖಾತೆ ಮತ್ತು ಭದ್ರತೆ",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "ಜನರು",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "ನಿಮ್ಮ ಡೇಟಾ",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "ಆದ್ಯತೆಗಳು",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "ಪ್ರದರ್ಶನ",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "ರಫ್ತು ಮತ್ತು ಕ್ಯಾಲೆಂಡರ್",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF, ಕ್ಯಾಲೆಂಡರ್ ಫೈಲ್ ಮತ್ತು ಲೈವ್ ಕ್ಯಾಲೆಂಡರ್ ಲಿಂಕ್",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "ಟ್ಯುಟೋರಿಯಲ್‌ಗಳು, Vaultara ಅನ್ನು ಕೇಳಿ ಮತ್ತು ಬೆಂಬಲಕ್ಕೆ ಇಮೇಲ್",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "ನಮಗೆ ಇಮೇಲ್ ಮಾಡಿ",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "ನಿಮ್ಮ ಆ್ಯಪ್ ಆವೃತ್ತಿ ಮತ್ತು ಫೋನ್ ಮಾದರಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸೇರುತ್ತವೆ. ನಿಮ್ಮ ದಾಖಲೆಗಳು ಎಂದಿಗೂ ಇಲ್ಲ.",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "ವಿಳಾಸ ನಕಲಿಸಿ",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "ಇಮೇಲ್ ವಿಳಾಸ ನಕಲಿಸಲಾಗಿದೆ",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "ಈ ಫೋನ್‌ನಲ್ಲಿ ಯಾವುದೇ ಇಮೇಲ್ ಆ್ಯಪ್ ಕಂಡುಬಂದಿಲ್ಲ. ವಿಳಾಸವನ್ನು ನಕಲಿಸಿ ಮತ್ತು ಯಾವುದೇ ಇಮೇಲ್ ಸೇವೆಯಿಂದ ನಮಗೆ ಬರೆಯಿರಿ.",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "ಪುಟ {page} / {total} · Vaultara ಮೂಲಕ ಸಿದ್ಧಪಡಿಸಲಾಗಿದೆ",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "ದಾಖಲೆ",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "ಹೊಂದಿರುವವರು",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "ಅವಧಿ ಮುಕ್ತಾಯ",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "ಸ್ಥಿತಿ",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

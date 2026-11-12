@@ -8866,4 +8866,112 @@ class AppLocalizationsLt extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Kad paskyra būtų saugi, patvirtinkite per $provider, kad tai jūs.';
   }
+
+  @override
+  String get legendWithinWeek => 'Per 7 dienas';
+
+  @override
+  String get legendWithinMonth => 'Per 30 dienų';
+
+  @override
+  String get legendLater => 'Vėliau';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Baigiasi per artimiausias $days dienų: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Baigiasi per ateinančius metus: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count daugiau',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Viskas gerai iki $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Rodyti viską';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month užimtas ($count). Pirmąjį atnaujinimą pradėkite anksčiau.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Paskyra ir sauga';
+
+  @override
+  String get profileSectionPeople => 'Žmonės';
+
+  @override
+  String get profileSectionYourData => 'Jūsų duomenys';
+
+  @override
+  String get profileSectionPreferences => 'Nuostatos';
+
+  @override
+  String get displayTitle => 'Rodinys';
+
+  @override
+  String get exportCalendarScreenTitle => 'Eksportas ir kalendorius';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, kalendoriaus failas ir tiesioginė kalendoriaus nuoroda';
+
+  @override
+  String get helpTileSubtitle => 'Vadovai, Klauskite Vaultaros ir el. laiškas pagalbai';
+
+  @override
+  String get helpEmailTitle => 'Parašykite mums';
+
+  @override
+  String get helpEmailSubtitle => 'Programėlės versija ir telefono modelis pridedami automatiškai. Jūsų įrašai – niekada.';
+
+  @override
+  String get helpCopyAddress => 'Kopijuoti adresą';
+
+  @override
+  String get helpAddressCopied => 'El. pašto adresas nukopijuotas';
+
+  @override
+  String get helpNoMailApp => 'Šiame telefone nerasta el. pašto programėlės. Nukopijuokite adresą ir parašykite mums iš bet kurios el. pašto paslaugos.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '$page psl. iš $total · Paruošta su Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Įrašas';
+
+  @override
+  String get proofPackColHolder => 'Turėtojas';
+
+  @override
+  String get proofPackColExpires => 'Galioja iki';
+
+  @override
+  String get proofPackColStatus => 'Būsena';
 }
