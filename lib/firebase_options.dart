@@ -59,12 +59,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyANlq6sCGAUZmq0S3kxx6GUG7UNgy68xDs',
-    appId: '1:14180323356:ios:0bb83f83863c30d376cfd9',
+    appId: '1:14180323356:ios:890085c129eb8adc76cfd9',
     messagingSenderId: '14180323356',
     projectId: 'vaultara-f49ab',
     storageBucket: 'vaultara-f49ab.firebasestorage.app',
-    iosClientId: '14180323356-brqpkrfbk1hg90q8cj2f7ch0h8efh2cu.apps.googleusercontent.com',
-    iosBundleId: 'com.example.vaultara',
+    iosClientId: '14180323356-qbpk1phpiiif834v8b8am8eeb4g923co.apps.googleusercontent.com',
+    iosBundleId: 'com.vaultara.app',
   );
 
 }

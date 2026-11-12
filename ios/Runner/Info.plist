@@ -43,6 +43,18 @@
 		<string>Vaultara uses your approximate location only to see which country you are in when you ask about trips. Only the country is used and it is not saved.</string>
 		<key>NSFaceIDUsageDescription</key>
 		<string>Vaultara uses biometric authentication to protect your documents.</string>
+		<key>NSCameraUsageDescription</key>
+		<string>Vaultara uses the camera to scan documents and add photos of your records.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>Vaultara lets you choose photos of your documents to add to your records.</string>
+		<key>NSMicrophoneUsageDescription</key>
+		<string>Vaultara uses the microphone when you speak a question to Ask Vaultara.</string>
+		<key>NSSpeechRecognitionUsageDescription</key>
+		<string>Vaultara turns your spoken question into text for Ask Vaultara.</string>
+		<key>UIBackgroundModes</key>
+		<array>
+			<string>remote-notification</string>
+		</array>
 		<key>LSApplicationQueriesSchemes</key>
 		<array>
 			<string>https</string>
@@ -56,7 +68,9 @@
 		<string>Vaultara sends reminders before important items expire.</string>
 		<key>UIStatusBarHidden</key>
 		<false/>
-		<!-- ✅ Custom URL Scheme: vaultara:// -->
+		<!-- vaultara:// links, and the return address for Continue with Google
+		     (the reversed iOS client ID from GoogleService-Info.plist). Universal
+		     links are set in Runner.entitlements. -->
 		<key>CFBundleURLTypes</key>
 		<array>
 			<dict>
@@ -65,11 +79,14 @@
 					<string>vaultara</string>
 				</array>
 			</dict>
-		</array>
-		<!-- ✅ Universal Links -->
-		<key>AssociatedDomains</key>
-		<array>
-			<string>applinks:vaultara.app</string>
+			<dict>
+				<key>CFBundleTypeRole</key>
+				<string>Editor</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>com.googleusercontent.apps.14180323356-qbpk1phpiiif834v8b8am8eeb4g923co</string>
+				</array>
+			</dict>
 		</array>
 	</dict>
 </plist>
