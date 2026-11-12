@@ -1638,7 +1638,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Notaðu varanlegt netfang. Tímabundnar netfangaþjónustur eru ekki studdar.';
 
   @override
-  String get guideTitle => 'Svona endurnýjar þú';
+  String get guideTitle => 'Gátlisti fyrir endurnýjun';
 
   @override
   String get guideWhenToStart => 'Hvenær á að byrja';

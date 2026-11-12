@@ -1639,7 +1639,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Fes servir una adreça de correu permanent. Els serveis de correu temporal no són compatibles.';
 
   @override
-  String get guideTitle => 'Com renovar';
+  String get guideTitle => 'Llista de comprovació de renovació';
 
   @override
   String get guideWhenToStart => 'Quan començar';

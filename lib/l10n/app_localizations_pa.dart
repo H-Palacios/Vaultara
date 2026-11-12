@@ -1639,7 +1639,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get signUpEmailNotAllowed => 'ਕੋਈ ਸਥਾਈ ਈਮੇਲ ਪਤਾ ਵਰਤੋ। ਅਸਥਾਈ ਈਮੇਲ ਸੇਵਾਵਾਂ ਸਮਰਥਿਤ ਨਹੀਂ ਹਨ।';
 
   @override
-  String get guideTitle => 'ਨਵੀਨੀਕਰਨ ਕਿਵੇਂ ਕਰੀਏ';
+  String get guideTitle => 'ਨਵੀਨੀਕਰਨ ਚੈੱਕਲਿਸਟ';
 
   @override
   String get guideWhenToStart => 'ਕਦੋਂ ਸ਼ੁਰੂ ਕਰੀਏ';

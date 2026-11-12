@@ -719,7 +719,7 @@
   "signInWrongDetails": "Λάθος email ή κωδικός",
   "signUpBlocked": "Δεν μπορέσαμε να δημιουργήσουμε τον λογαριασμό σας αυτή τη στιγμή. Δοκιμάστε ξανά αργότερα.",
   "signUpEmailNotAllowed": "Χρησιμοποιήστε μια μόνιμη διεύθυνση email. Οι υπηρεσίες προσωρινού email δεν υποστηρίζονται.",
-  "guideTitle": "Πώς να το ανανεώσετε",
+  "guideTitle": "Λίστα ελέγχου ανανέωσης",
   "guideWhenToStart": "Πότε να ξεκινήσετε",
   "guideChecklist": "Λίστα ελέγχου",
   "guideProgress": "{done} από {total} ολοκληρώθηκαν",

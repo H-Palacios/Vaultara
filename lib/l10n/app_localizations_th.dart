@@ -1626,7 +1626,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get signUpEmailNotAllowed => 'กรุณาใช้อีเมลถาวร ไม่รองรับบริการอีเมลชั่วคราว';
 
   @override
-  String get guideTitle => 'วิธีต่ออายุ';
+  String get guideTitle => 'รายการตรวจสอบการต่ออายุ';
 
   @override
   String get guideWhenToStart => 'ควรเริ่มเมื่อไร';

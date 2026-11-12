@@ -1638,7 +1638,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Байнгын имэйл хаяг ашиглана уу. Түр зуурын имэйл үйлчилгээг дэмждэггүй.';
 
   @override
-  String get guideTitle => 'Хэрхэн сунгах вэ';
+  String get guideTitle => 'Сунгалтын хийх зүйлсийн жагсаалт';
 
   @override
   String get guideWhenToStart => 'Хэзээ эхлэх';

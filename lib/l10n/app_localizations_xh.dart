@@ -1639,7 +1639,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Sebenzisa idilesi ye-imeyile esisigxina. Iinkonzo ze-imeyile zethutyana azixhaswa.';
 
   @override
-  String get guideTitle => 'Indlela yokuvuselela';
+  String get guideTitle => 'Uluhlu lokujonga lokuvuselela';
 
   @override
   String get guideWhenToStart => 'Uqale nini';

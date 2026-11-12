@@ -1633,7 +1633,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Gunakan alamat email permanen. Layanan email sementara tidak didukung.';
 
   @override
-  String get guideTitle => 'Cara memperpanjang';
+  String get guideTitle => 'Daftar periksa perpanjangan';
 
   @override
   String get guideWhenToStart => 'Kapan mulai';

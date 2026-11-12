@@ -1294,7 +1294,7 @@
   "@signUpEmailNotAllowed": {
     "description": "Sign-up error when the email comes from a disposable email service"
   },
-  "guideTitle": "How to renew",
+  "guideTitle": "Renewal checklist",
   "@guideTitle": {
     "description": "Renewal guide: link in the renew sheet and tooltip on the record card guide button"
   },

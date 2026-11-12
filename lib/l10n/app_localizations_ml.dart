@@ -1639,7 +1639,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get signUpEmailNotAllowed => 'സ്ഥിരമായ ഒരു ഇമെയിൽ വിലാസം ഉപയോഗിക്കുക. താൽക്കാലിക ഇമെയിൽ സേവനങ്ങൾ പിന്തുണയ്ക്കുന്നില്ല.';
 
   @override
-  String get guideTitle => 'എങ്ങനെ പുതുക്കാം';
+  String get guideTitle => 'പുതുക്കൽ ചെക്ക്‌ലിസ്റ്റ്';
 
   @override
   String get guideWhenToStart => 'എപ്പോൾ തുടങ്ങണം';

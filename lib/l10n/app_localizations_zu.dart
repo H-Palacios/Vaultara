@@ -1639,7 +1639,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Sebenzisa ikheli le-imeyili elihlala njalo. Amasevisi e-imeyili esikhashana awasekelwa.';
 
   @override
-  String get guideTitle => 'Indlela yokuvuselela';
+  String get guideTitle => 'Uhlu lokuhlola lokuvuselela';
 
   @override
   String get guideWhenToStart => 'Nini ukuqala';

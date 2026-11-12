@@ -1639,7 +1639,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get signUpEmailNotAllowed => 'ස්ථිර ඊමේල් ලිපිනයක් භාවිත කරන්න. තාවකාලික ඊමේල් සේවා සඳහා සහාය නොදක්වයි.';
 
   @override
-  String get guideTitle => 'අලුත් කරන්නේ කෙසේද';
+  String get guideTitle => 'අලුත් කිරීමේ පිරික්සුම් ලැයිස්තුව';
 
   @override
   String get guideWhenToStart => 'ආරම්භ කළ යුත්තේ කවදාද';

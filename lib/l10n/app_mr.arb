@@ -462,7 +462,7 @@
   "signInWrongDetails": "चुकीचा ईमेल किंवा पासवर्ड",
   "signUpBlocked": "आम्ही आत्ता तुमचे खाते तयार करू शकलो नाही. कृपया नंतर पुन्हा प्रयत्न करा.",
   "signUpEmailNotAllowed": "कायमस्वरूपी ईमेल पत्ता वापरा. तात्पुरत्या ईमेल सेवा समर्थित नाहीत.",
-  "guideTitle": "नूतनीकरण कसे करावे",
+  "guideTitle": "नूतनीकरण तपासणी सूची",
   "guideWhenToStart": "कधी सुरू करावे",
   "guideChecklist": "तपासणी सूची",
   "guideProgress": "{total} पैकी {done} पूर्ण",

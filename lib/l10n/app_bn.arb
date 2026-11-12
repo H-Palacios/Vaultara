@@ -743,7 +743,7 @@
   "signInWrongDetails": "ভুল ইমেইল বা পাসওয়ার্ড",
   "signUpBlocked": "এই মুহূর্তে আমরা আপনার অ্যাকাউন্ট তৈরি করতে পারিনি। পরে আবার চেষ্টা করুন।",
   "signUpEmailNotAllowed": "একটি স্থায়ী ইমেইল ঠিকানা ব্যবহার করুন। অস্থায়ী ইমেইল পরিষেবা সমর্থিত নয়।",
-  "guideTitle": "কীভাবে নবায়ন করবেন",
+  "guideTitle": "নবায়নের চেকলিস্ট",
   "guideWhenToStart": "কখন শুরু করবেন",
   "guideChecklist": "চেকলিস্ট",
   "guideProgress": "{total}টির মধ্যে {done}টি সম্পন্ন",

@@ -724,7 +724,7 @@
   "signInWrongDetails": "ایمیل یا رمز عبور نادرست است",
   "signUpBlocked": "در حال حاضر نتوانستیم حساب شما را ایجاد کنیم. لطفاً بعداً دوباره تلاش کنید.",
   "signUpEmailNotAllowed": "از یک آدرس ایمیل دائمی استفاده کنید. سرویس‌های ایمیل موقت پشتیبانی نمی‌شوند.",
-  "guideTitle": "نحوه تمدید",
+  "guideTitle": "فهرست کارهای تمدید",
   "guideWhenToStart": "زمان شروع",
   "guideChecklist": "فهرست کارها",
   "guideProgress": "{done} از {total} انجام شد",

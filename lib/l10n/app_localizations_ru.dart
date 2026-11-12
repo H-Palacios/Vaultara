@@ -1662,7 +1662,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Используйте постоянный адрес электронной почты. Временные почтовые сервисы не поддерживаются.';
 
   @override
-  String get guideTitle => 'Как продлить';
+  String get guideTitle => 'Чек-лист продления';
 
   @override
   String get guideWhenToStart => 'Когда начинать';

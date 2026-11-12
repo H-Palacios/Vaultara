@@ -1639,7 +1639,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Lo adirẹsi imeeli tó wà títí lọ. A kò ṣe àtìlẹ́yìn fún àwọn iṣẹ́ imeeli ìgbà díẹ̀.';
 
   @override
-  String get guideTitle => 'Bí o ṣe lè sọ ọ́ di tuntun';
+  String get guideTitle => 'Àkọsílẹ̀ àyẹ̀wò fún ìsọdọ̀tun';
 
   @override
   String get guideWhenToStart => 'Ìgbà tí o yẹ kí o bẹ̀rẹ̀';

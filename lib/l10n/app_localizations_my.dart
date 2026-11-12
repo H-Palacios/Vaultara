@@ -1636,7 +1636,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get signUpEmailNotAllowed => 'အမြဲတမ်း အီးမေးလ်လိပ်စာကို အသုံးပြုပါ။ ယာယီ အီးမေးလ် ဝန်ဆောင်မှုများကို မပံ့ပိုးပါ။';
 
   @override
-  String get guideTitle => 'သက်တမ်းတိုးနည်း';
+  String get guideTitle => 'သက်တမ်းတိုး စစ်ဆေးစာရင်း';
 
   @override
   String get guideWhenToStart => 'စတင်ရမည့်အချိန်';

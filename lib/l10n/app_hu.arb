@@ -730,7 +730,7 @@
   "signInWrongDetails": "Hibás email vagy jelszó",
   "signUpBlocked": "Most nem tudtuk létrehozni a fiókját. Kérjük, próbálja újra később.",
   "signUpEmailNotAllowed": "Állandó email címet használjon. Az ideiglenes email szolgáltatások nem támogatottak.",
-  "guideTitle": "A megújítás menete",
+  "guideTitle": "Megújítási ellenőrzőlista",
   "guideWhenToStart": "Mikor kezdje",
   "guideChecklist": "Ellenőrzőlista",
   "guideProgress": "{done}/{total} kész",

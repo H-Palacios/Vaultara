@@ -1673,7 +1673,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Użyj stałego adresu e-mail. Tymczasowe usługi e-mail nie są obsługiwane.';
 
   @override
-  String get guideTitle => 'Jak odnowić';
+  String get guideTitle => 'Lista kontrolna odnowienia';
 
   @override
   String get guideWhenToStart => 'Kiedy zacząć';

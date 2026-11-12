@@ -743,7 +743,7 @@
   "signInWrongDetails": "Falsche E-Mail oder falsches Passwort",
   "signUpBlocked": "Wir konnten dein Konto gerade nicht erstellen. Bitte versuche es später noch einmal.",
   "signUpEmailNotAllowed": "Verwende eine dauerhafte E-Mail-Adresse. Temporäre E-Mail-Dienste werden nicht unterstützt.",
-  "guideTitle": "So verlängerst du",
+  "guideTitle": "Checkliste zur Verlängerung",
   "guideWhenToStart": "Wann du anfangen solltest",
   "guideChecklist": "Checkliste",
   "guideProgress": "{done} von {total} erledigt",

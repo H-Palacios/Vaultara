@@ -730,7 +730,7 @@
   "signInWrongDetails": "Väärä sähköposti tai salasana",
   "signUpBlocked": "Emme pystyneet luomaan tiliäsi juuri nyt. Yritä myöhemmin uudelleen.",
   "signUpEmailNotAllowed": "Käytä pysyvää sähköpostiosoitetta. Tilapäisiä sähköpostipalveluja ei tueta.",
-  "guideTitle": "Näin uusit",
+  "guideTitle": "Uusimisen tarkistuslista",
   "guideWhenToStart": "Milloin aloittaa",
   "guideChecklist": "Tarkistuslista",
   "guideProgress": "{done}/{total} tehty",

@@ -719,7 +719,7 @@
   "signInWrongDetails": "ਗਲਤ ਈਮੇਲ ਜਾਂ ਪਾਸਵਰਡ",
   "signUpBlocked": "ਅਸੀਂ ਇਸ ਵੇਲੇ ਤੁਹਾਡਾ ਖਾਤਾ ਨਹੀਂ ਬਣਾ ਸਕੇ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
   "signUpEmailNotAllowed": "ਕੋਈ ਸਥਾਈ ਈਮੇਲ ਪਤਾ ਵਰਤੋ। ਅਸਥਾਈ ਈਮੇਲ ਸੇਵਾਵਾਂ ਸਮਰਥਿਤ ਨਹੀਂ ਹਨ।",
-  "guideTitle": "ਨਵੀਨੀਕਰਨ ਕਿਵੇਂ ਕਰੀਏ",
+  "guideTitle": "ਨਵੀਨੀਕਰਨ ਚੈੱਕਲਿਸਟ",
   "guideWhenToStart": "ਕਦੋਂ ਸ਼ੁਰੂ ਕਰੀਏ",
   "guideChecklist": "ਚੈੱਕਲਿਸਟ",
   "guideProgress": "{total} ਵਿੱਚੋਂ {done} ਪੂਰੇ",

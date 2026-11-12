@@ -1650,7 +1650,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get signUpEmailNotAllowed => 'השתמש בכתובת דוא״ל קבועה. שירותי דוא״ל זמניים אינם נתמכים.';
 
   @override
-  String get guideTitle => 'איך לחדש';
+  String get guideTitle => 'רשימת משימות לחידוש';
 
   @override
   String get guideWhenToStart => 'מתי להתחיל';

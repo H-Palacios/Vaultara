@@ -712,7 +712,7 @@
   "signInWrongDetails": "Nieprawidłowy e-mail lub hasło",
   "signUpBlocked": "Nie udało się teraz utworzyć konta. Spróbuj ponownie później.",
   "signUpEmailNotAllowed": "Użyj stałego adresu e-mail. Tymczasowe usługi e-mail nie są obsługiwane.",
-  "guideTitle": "Jak odnowić",
+  "guideTitle": "Lista kontrolna odnowienia",
   "guideWhenToStart": "Kiedy zacząć",
   "guideChecklist": "Lista kontrolna",
   "guideProgress": "Ukończono {done} z {total}",

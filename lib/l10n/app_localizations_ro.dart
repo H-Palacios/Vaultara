@@ -1649,7 +1649,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Folosește o adresă de email permanentă. Serviciile de email temporar nu sunt acceptate.';
 
   @override
-  String get guideTitle => 'Cum reînnoiești';
+  String get guideTitle => 'Listă de verificare pentru reînnoire';
 
   @override
   String get guideWhenToStart => 'Când să începi';

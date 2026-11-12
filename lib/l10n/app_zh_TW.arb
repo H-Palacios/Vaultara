@@ -705,7 +705,7 @@
   "signInWrongDetails": "電子郵件或密碼錯誤",
   "signUpBlocked": "目前無法建立您的帳戶。請稍後再試一次。",
   "signUpEmailNotAllowed": "請使用長期有效的電子郵件地址。不支援臨時電子郵件服務。",
-  "guideTitle": "如何續期",
+  "guideTitle": "續期檢查清單",
   "guideWhenToStart": "何時開始",
   "guideChecklist": "檢查清單",
   "guideProgress": "已完成 {done}/{total}",

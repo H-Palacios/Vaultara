@@ -1639,7 +1639,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Kasuta püsivat e-posti aadressi. Ajutisi e-posti teenuseid ei toetata.';
 
   @override
-  String get guideTitle => 'Kuidas uuendada';
+  String get guideTitle => 'Uuendamise kontrollnimekiri';
 
   @override
   String get guideWhenToStart => 'Millal alustada';

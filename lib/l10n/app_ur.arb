@@ -712,7 +712,7 @@
   "signInWrongDetails": "غلط ای میل یا پاس ورڈ",
   "signUpBlocked": "ہم ابھی آپ کا اکاؤنٹ نہیں بنا سکے۔ براہ کرم بعد میں دوبارہ کوشش کریں۔",
   "signUpEmailNotAllowed": "مستقل ای میل ایڈریس استعمال کریں۔ عارضی ای میل سروسز سپورٹ نہیں کی جاتیں۔",
-  "guideTitle": "تجدید کیسے کریں",
+  "guideTitle": "تجدید کی چیک لسٹ",
   "guideWhenToStart": "کب شروع کریں",
   "guideChecklist": "چیک لسٹ",
   "guideProgress": "{total} میں سے {done} مکمل",

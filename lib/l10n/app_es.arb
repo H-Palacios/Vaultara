@@ -719,7 +719,7 @@
   "signInWrongDetails": "Correo o contraseña incorrectos",
   "signUpBlocked": "No pudimos crear tu cuenta en este momento. Inténtalo de nuevo más tarde.",
   "signUpEmailNotAllowed": "Usa una dirección de correo permanente. No se admiten servicios de correo temporal.",
-  "guideTitle": "Cómo renovar",
+  "guideTitle": "Lista de pasos para renovar",
   "guideWhenToStart": "Cuándo empezar",
   "guideChecklist": "Lista de pasos",
   "guideProgress": "{done} de {total} hechos",

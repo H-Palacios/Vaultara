@@ -712,7 +712,7 @@
   "signInWrongDetails": "برېښنالیک یا پټ نوم ناسم دی",
   "signUpBlocked": "موږ اوس ستاسو حساب نه شو جوړولای. مهرباني وکړئ وروسته بیا هڅه وکړئ.",
   "signUpEmailNotAllowed": "یو دایمي برېښنالیک وکاروئ. لنډمهاله برېښنالیک خدمتونه نه منل کېږي.",
-  "guideTitle": "څنګه یې نوی کړئ",
+  "guideTitle": "د نوي کولو چک لیست",
   "guideWhenToStart": "کله پیل وکړئ",
   "guideChecklist": "د چک لیست",
   "guideProgress": "له {total} څخه {done} بشپړ شول",

@@ -877,7 +877,7 @@
   "signInWrongDetails": "Vale e-post või parool",
   "signUpBlocked": "Me ei saanud praegu sinu kontot luua. Proovi hiljem uuesti.",
   "signUpEmailNotAllowed": "Kasuta püsivat e-posti aadressi. Ajutisi e-posti teenuseid ei toetata.",
-  "guideTitle": "Kuidas uuendada",
+  "guideTitle": "Uuendamise kontrollnimekiri",
   "guideWhenToStart": "Millal alustada",
   "guideChecklist": "Kontrollnimekiri",
   "guideProgress": "{done}/{total} tehtud",

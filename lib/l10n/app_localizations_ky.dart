@@ -1639,7 +1639,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Туруктуу электрондук почта дарегин колдонуңуз. Убактылуу почта кызматтары колдоого алынбайт.';
 
   @override
-  String get guideTitle => 'Кантип жаңылоо керек';
+  String get guideTitle => 'Жаңылоо үчүн текшерүү тизмеси';
 
   @override
   String get guideWhenToStart => 'Качан баштоо керек';

@@ -1639,7 +1639,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Përdorni një adresë emaili të përhershme. Shërbimet e emailit të përkohshëm nuk mbështeten.';
 
   @override
-  String get guideTitle => 'Si të rinovoni';
+  String get guideTitle => 'Lista e kontrollit për rinovimin';
 
   @override
   String get guideWhenToStart => 'Kur të filloni';

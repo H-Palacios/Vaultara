@@ -1638,7 +1638,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Gunakan alamat e-mel kekal. Perkhidmatan e-mel sementara tidak disokong.';
 
   @override
-  String get guideTitle => 'Cara memperbaharui';
+  String get guideTitle => 'Senarai semak pembaharuan';
 
   @override
   String get guideWhenToStart => 'Bila hendak bermula';

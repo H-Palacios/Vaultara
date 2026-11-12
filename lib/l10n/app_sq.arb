@@ -726,7 +726,7 @@
   "signInWrongDetails": "Email ose fjalëkalim i gabuar",
   "signUpBlocked": "Nuk arritëm ta krijojmë llogarinë tuaj tani. Provoni përsëri më vonë.",
   "signUpEmailNotAllowed": "Përdorni një adresë emaili të përhershme. Shërbimet e emailit të përkohshëm nuk mbështeten.",
-  "guideTitle": "Si të rinovoni",
+  "guideTitle": "Lista e kontrollit për rinovimin",
   "guideWhenToStart": "Kur të filloni",
   "guideChecklist": "Lista e kontrollit",
   "guideProgress": "{done} nga {total} të kryera",

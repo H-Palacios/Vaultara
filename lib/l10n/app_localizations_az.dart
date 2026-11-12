@@ -1639,7 +1639,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Daimi e-poçt ünvanından istifadə edin. Müvəqqəti e-poçt xidmətləri dəstəklənmir.';
 
   @override
-  String get guideTitle => 'Müddəti necə uzatmalı';
+  String get guideTitle => 'Müddətin uzadılması üçün yoxlama siyahısı';
 
   @override
   String get guideWhenToStart => 'Nə vaxt başlamalı';

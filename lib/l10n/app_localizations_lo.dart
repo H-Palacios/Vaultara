@@ -1638,7 +1638,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get signUpEmailNotAllowed => 'ກະລຸນາໃຊ້ອີເມວຖາວອນ. ບໍ່ຮອງຮັບບໍລິການອີເມວຊົ່ວຄາວ.';
 
   @override
-  String get guideTitle => 'ວິທີຕໍ່ອາຍຸ';
+  String get guideTitle => 'ລາຍການກວດສອບການຕໍ່ອາຍຸ';
 
   @override
   String get guideWhenToStart => 'ຄວນເລີ່ມເມື່ອໃດ';

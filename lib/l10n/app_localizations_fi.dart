@@ -1639,7 +1639,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Käytä pysyvää sähköpostiosoitetta. Tilapäisiä sähköpostipalveluja ei tueta.';
 
   @override
-  String get guideTitle => 'Näin uusit';
+  String get guideTitle => 'Uusimisen tarkistuslista';
 
   @override
   String get guideWhenToStart => 'Milloin aloittaa';

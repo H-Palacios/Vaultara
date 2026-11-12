@@ -1639,7 +1639,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Tumia anwani ya barua pepe ya kudumu. Huduma za barua pepe za muda hazitumiki.';
 
   @override
-  String get guideTitle => 'Jinsi ya kuhuisha';
+  String get guideTitle => 'Orodha ya hatua za kuhuisha';
 
   @override
   String get guideWhenToStart => 'Wakati wa kuanza';

@@ -730,7 +730,7 @@
   "signInWrongDetails": "ອີເມວ ຫຼື ລະຫັດຜ່ານບໍ່ຖືກຕ້ອງ",
   "signUpBlocked": "ພວກເຮົາບໍ່ສາມາດສ້າງບັນຊີຂອງທ່ານໄດ້ໃນຕອນນີ້. ກະລຸນາລອງໃໝ່ພາຍຫຼັງ.",
   "signUpEmailNotAllowed": "ກະລຸນາໃຊ້ອີເມວຖາວອນ. ບໍ່ຮອງຮັບບໍລິການອີເມວຊົ່ວຄາວ.",
-  "guideTitle": "ວິທີຕໍ່ອາຍຸ",
+  "guideTitle": "ລາຍການກວດສອບການຕໍ່ອາຍຸ",
   "guideWhenToStart": "ຄວນເລີ່ມເມື່ອໃດ",
   "guideChecklist": "ລາຍການກວດສອບ",
   "guideProgress": "ສຳເລັດ {done} ຈາກ {total}",

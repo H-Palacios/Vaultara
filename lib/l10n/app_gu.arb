@@ -462,7 +462,7 @@
   "signInWrongDetails": "ખોટો ઇમેઇલ અથવા પાસવર્ડ",
   "signUpBlocked": "અમે અત્યારે તમારું એકાઉન્ટ બનાવી શક્યા નથી. કૃપા કરીને થોડી વાર પછી ફરી પ્રયાસ કરો.",
   "signUpEmailNotAllowed": "કાયમી ઇમેઇલ ઍડ્રેસનો ઉપયોગ કરો. અસ્થાયી ઇમેઇલ સેવાઓ સમર્થિત નથી.",
-  "guideTitle": "રિન્યૂ કેવી રીતે કરવું",
+  "guideTitle": "રિન્યૂ ચેકલિસ્ટ",
   "guideWhenToStart": "ક્યારે શરૂ કરવું",
   "guideChecklist": "ચેકલિસ્ટ",
   "guideProgress": "{total}માંથી {done} પૂર્ણ",

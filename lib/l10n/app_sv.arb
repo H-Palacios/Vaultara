@@ -705,7 +705,7 @@
   "signInWrongDetails": "Fel e-postadress eller lösenord",
   "signUpBlocked": "Vi kunde inte skapa ditt konto just nu. Försök igen senare.",
   "signUpEmailNotAllowed": "Använd en permanent e-postadress. Tillfälliga e-posttjänster stöds inte.",
-  "guideTitle": "Så förnyar du",
+  "guideTitle": "Checklista för förnyelse",
   "guideWhenToStart": "När du ska börja",
   "guideChecklist": "Checklista",
   "guideProgress": "{done} av {total} klara",

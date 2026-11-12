@@ -724,7 +724,7 @@
   "signInWrongDetails": "Ríomhphost nó pasfhocal mícheart",
   "signUpBlocked": "Níorbh fhéidir linn do chuntas a chruthú anois. Bain triail eile as ar ball.",
   "signUpEmailNotAllowed": "Úsáid seoladh ríomhphoist buan. Ní thacaítear le seirbhísí ríomhphoist sealadacha.",
-  "guideTitle": "Conas athnuachan",
+  "guideTitle": "Seicliosta athnuachana",
   "guideWhenToStart": "Cathain is ceart tosú",
   "guideChecklist": "Seicliosta",
   "guideProgress": "{done} as {total} déanta",

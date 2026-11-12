@@ -717,7 +717,7 @@
   "signInWrongDetails": "Email o password errati",
   "signUpBlocked": "Non è stato possibile creare il tuo account in questo momento. Riprova più tardi.",
   "signUpEmailNotAllowed": "Usa un indirizzo email permanente. I servizi di email temporanea non sono supportati.",
-  "guideTitle": "Come rinnovare",
+  "guideTitle": "Lista di controllo per il rinnovo",
   "guideWhenToStart": "Quando iniziare",
   "guideChecklist": "Lista di controllo",
   "guideProgress": "{done} di {total} completati",

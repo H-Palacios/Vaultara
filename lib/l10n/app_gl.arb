@@ -724,7 +724,7 @@
   "signInWrongDetails": "Correo ou contrasinal incorrectos",
   "signUpBlocked": "Agora mesmo non puidemos crear a túa conta. Inténtao de novo máis tarde.",
   "signUpEmailNotAllowed": "Usa un enderezo de correo permanente. Os servizos de correo temporal non son compatibles.",
-  "guideTitle": "Como renovar",
+  "guideTitle": "Lista de comprobación da renovación",
   "guideWhenToStart": "Cando comezar",
   "guideChecklist": "Lista de comprobación",
   "guideProgress": "{done} de {total} feitos",

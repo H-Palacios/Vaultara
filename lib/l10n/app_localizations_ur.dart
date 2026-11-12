@@ -1639,7 +1639,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get signUpEmailNotAllowed => 'مستقل ای میل ایڈریس استعمال کریں۔ عارضی ای میل سروسز سپورٹ نہیں کی جاتیں۔';
 
   @override
-  String get guideTitle => 'تجدید کیسے کریں';
+  String get guideTitle => 'تجدید کی چیک لسٹ';
 
   @override
   String get guideWhenToStart => 'کب شروع کریں';

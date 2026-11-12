@@ -1637,7 +1637,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Користете постојана е-пошта. Услугите за привремена е-пошта не се поддржани.';
 
   @override
-  String get guideTitle => 'Како да обновите';
+  String get guideTitle => 'Список за проверка за обновување';
 
   @override
   String get guideWhenToStart => 'Кога да започнете';

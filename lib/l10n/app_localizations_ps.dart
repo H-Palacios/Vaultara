@@ -1639,7 +1639,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get signUpEmailNotAllowed => 'یو دایمي برېښنالیک وکاروئ. لنډمهاله برېښنالیک خدمتونه نه منل کېږي.';
 
   @override
-  String get guideTitle => 'څنګه یې نوی کړئ';
+  String get guideTitle => 'د نوي کولو چک لیست';
 
   @override
   String get guideWhenToStart => 'کله پیل وکړئ';

@@ -1639,7 +1639,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get signUpEmailNotAllowed => 'நிரந்தர மின்னஞ்சல் முகவரியைப் பயன்படுத்தவும். தற்காலிக மின்னஞ்சல் சேவைகள் ஆதரிக்கப்படவில்லை.';
 
   @override
-  String get guideTitle => 'எப்படிப் புதுப்பிப்பது';
+  String get guideTitle => 'புதுப்பித்தல் சரிபார்ப்புப் பட்டியல்';
 
   @override
   String get guideWhenToStart => 'எப்போது தொடங்குவது';

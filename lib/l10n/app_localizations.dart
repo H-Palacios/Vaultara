@@ -3034,7 +3034,7 @@ abstract class AppLocalizations {
   /// Renewal guide: link in the renew sheet and tooltip on the record card guide button
   ///
   /// In en, this message translates to:
-  /// **'How to renew'**
+  /// **'Renewal checklist'**
   String get guideTitle;
 
   /// Renewal guide sheet: heading of the timing callout

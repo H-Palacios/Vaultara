@@ -686,7 +686,7 @@
   "signInWrongDetails": "Pogrešan email ili lozinka",
   "signUpBlocked": "Trenutno ne možemo da kreiramo vaš nalog. Pokušajte ponovo kasnije.",
   "signUpEmailNotAllowed": "Koristite trajnu email adresu. Usluge privremenog emaila nisu podržane.",
-  "guideTitle": "Kako obnoviti",
+  "guideTitle": "Kontrolna lista za obnovu",
   "guideWhenToStart": "Kada početi",
   "guideChecklist": "Kontrolna lista",
   "guideProgress": "Završeno {done} od {total}",

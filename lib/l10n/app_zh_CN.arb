@@ -712,7 +712,7 @@
   "signInWrongDetails": "电子邮箱或密码错误",
   "signUpBlocked": "目前无法创建您的账户。请稍后重试。",
   "signUpEmailNotAllowed": "请使用长期有效的电子邮箱地址。不支持临时邮箱服务。",
-  "guideTitle": "如何续期",
+  "guideTitle": "续期清单",
   "guideWhenToStart": "何时开始",
   "guideChecklist": "清单",
   "guideProgress": "已完成 {done}/{total}",

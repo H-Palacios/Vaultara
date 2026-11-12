@@ -1639,7 +1639,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Isticmaal cinwaan iimayl oo joogto ah. Adeegyada iimaylka ku meel gaarka ah lama taageero.';
 
   @override
-  String get guideTitle => 'Sida loo cusboonaysiiyo';
+  String get guideTitle => 'Liiska hubinta cusboonaysiinta';
 
   @override
   String get guideWhenToStart => 'Goorta la bilaabo';

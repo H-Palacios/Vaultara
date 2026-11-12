@@ -1653,7 +1653,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Naudokite nuolatinį el. pašto adresą. Laikinojo el. pašto paslaugos nepalaikomos.';
 
   @override
-  String get guideTitle => 'Kaip atnaujinti';
+  String get guideTitle => 'Atnaujinimo kontrolinis sąrašas';
 
   @override
   String get guideWhenToStart => 'Kada pradėti';

@@ -717,7 +717,7 @@
   "signInWrongDetails": "Email atau kata sandi salah",
   "signUpBlocked": "Kami tidak dapat membuat akun Anda saat ini. Coba lagi nanti.",
   "signUpEmailNotAllowed": "Gunakan alamat email permanen. Layanan email sementara tidak didukung.",
-  "guideTitle": "Cara memperpanjang",
+  "guideTitle": "Daftar periksa perpanjangan",
   "guideWhenToStart": "Kapan mulai",
   "guideChecklist": "Daftar periksa",
   "guideProgress": "{done} dari {total} selesai",

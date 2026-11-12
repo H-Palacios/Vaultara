@@ -717,7 +717,7 @@
   "signInWrongDetails": "Rangt netfang eða lykilorð",
   "signUpBlocked": "Við gátum ekki búið til reikninginn þinn núna. Reyndu aftur síðar.",
   "signUpEmailNotAllowed": "Notaðu varanlegt netfang. Tímabundnar netfangaþjónustur eru ekki studdar.",
-  "guideTitle": "Svona endurnýjar þú",
+  "guideTitle": "Gátlisti fyrir endurnýjun",
   "guideWhenToStart": "Hvenær á að byrja",
   "guideChecklist": "Gátlisti",
   "guideProgress": "{done} af {total} lokið",

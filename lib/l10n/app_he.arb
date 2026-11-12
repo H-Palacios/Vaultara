@@ -717,7 +717,7 @@
   "signInWrongDetails": "דוא״ל או סיסמה שגויים",
   "signUpBlocked": "לא הצלחנו ליצור את החשבון שלך כרגע. נסה שוב מאוחר יותר.",
   "signUpEmailNotAllowed": "השתמש בכתובת דוא״ל קבועה. שירותי דוא״ל זמניים אינם נתמכים.",
-  "guideTitle": "איך לחדש",
+  "guideTitle": "רשימת משימות לחידוש",
   "guideWhenToStart": "מתי להתחיל",
   "guideChecklist": "רשימת משימות",
   "guideProgress": "{done} מתוך {total} הושלמו",

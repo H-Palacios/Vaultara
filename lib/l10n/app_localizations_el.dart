@@ -1639,7 +1639,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Χρησιμοποιήστε μια μόνιμη διεύθυνση email. Οι υπηρεσίες προσωρινού email δεν υποστηρίζονται.';
 
   @override
-  String get guideTitle => 'Πώς να το ανανεώσετε';
+  String get guideTitle => 'Λίστα ελέγχου ανανέωσης';
 
   @override
   String get guideWhenToStart => 'Πότε να ξεκινήσετε';

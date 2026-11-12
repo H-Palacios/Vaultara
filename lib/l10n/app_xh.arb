@@ -712,7 +712,7 @@
   "signInWrongDetails": "I-imeyile okanye iphasiwedi ayichanekanga",
   "signUpBlocked": "Asikwazanga ukwenza iakhawunti yakho ngoku. Nceda uzame kwakhona emva kwexesha.",
   "signUpEmailNotAllowed": "Sebenzisa idilesi ye-imeyile esisigxina. Iinkonzo ze-imeyile zethutyana azixhaswa.",
-  "guideTitle": "Indlela yokuvuselela",
+  "guideTitle": "Uluhlu lokujonga lokuvuselela",
   "guideWhenToStart": "Uqale nini",
   "guideChecklist": "Uluhlu lokujonga",
   "guideProgress": "{done} kwezi-{total} zenziwe",

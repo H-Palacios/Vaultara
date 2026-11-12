@@ -712,7 +712,7 @@
   "signInWrongDetails": "Feil e-post eller passord",
   "signUpBlocked": "Vi kunne ikke opprette kontoen din akkurat nå. Prøv igjen senere.",
   "signUpEmailNotAllowed": "Bruk en permanent e-postadresse. Midlertidige e-posttjenester støttes ikke.",
-  "guideTitle": "Slik fornyer du",
+  "guideTitle": "Sjekkliste for fornyelse",
   "guideWhenToStart": "Når du bør starte",
   "guideChecklist": "Sjekkliste",
   "guideProgress": "{done} av {total} fullført",

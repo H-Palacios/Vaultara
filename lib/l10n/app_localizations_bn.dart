@@ -1639,7 +1639,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get signUpEmailNotAllowed => 'একটি স্থায়ী ইমেইল ঠিকানা ব্যবহার করুন। অস্থায়ী ইমেইল পরিষেবা সমর্থিত নয়।';
 
   @override
-  String get guideTitle => 'কীভাবে নবায়ন করবেন';
+  String get guideTitle => 'নবায়নের চেকলিস্ট';
 
   @override
   String get guideWhenToStart => 'কখন শুরু করবেন';

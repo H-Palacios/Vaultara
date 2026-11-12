@@ -724,7 +724,7 @@
   "signInWrongDetails": "E-mail ou mot de passe incorrect",
   "signUpBlocked": "Nous n'avons pas pu créer votre compte pour le moment. Veuillez réessayer plus tard.",
   "signUpEmailNotAllowed": "Utilisez une adresse e-mail permanente. Les services d'e-mail temporaire ne sont pas pris en charge.",
-  "guideTitle": "Comment renouveler",
+  "guideTitle": "Liste de contrôle du renouvellement",
   "guideWhenToStart": "Quand commencer",
   "guideChecklist": "Liste de contrôle",
   "guideProgress": "{done} sur {total} terminé(s)",

@@ -1638,7 +1638,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get signUpEmailNotAllowed => '영구적인 이메일 주소를 사용하세요. 임시 이메일 서비스는 지원되지 않습니다.';
 
   @override
-  String get guideTitle => '갱신 방법';
+  String get guideTitle => '갱신 체크리스트';
 
   @override
   String get guideWhenToStart => '시작 시기';

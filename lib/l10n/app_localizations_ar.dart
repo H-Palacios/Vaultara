@@ -1663,7 +1663,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get signUpEmailNotAllowed => 'استخدم عنوان بريد إلكتروني دائمًا. خدمات البريد الإلكتروني المؤقتة غير مدعومة.';
 
   @override
-  String get guideTitle => 'كيفية التجديد';
+  String get guideTitle => 'قائمة التحقق للتجديد';
 
   @override
   String get guideWhenToStart => 'متى تبدأ';

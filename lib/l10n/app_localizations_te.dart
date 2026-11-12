@@ -1639,7 +1639,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get signUpEmailNotAllowed => 'శాశ్వత ఈమెయిల్ చిరునామాను ఉపయోగించండి. తాత్కాలిక ఈమెయిల్ సేవలకు మద్దతు లేదు.';
 
   @override
-  String get guideTitle => 'ఎలా పునరుద్ధరించాలి';
+  String get guideTitle => 'పునరుద్ధరణ చెక్‌లిస్ట్';
 
   @override
   String get guideWhenToStart => 'ఎప్పుడు ప్రారంభించాలి';
