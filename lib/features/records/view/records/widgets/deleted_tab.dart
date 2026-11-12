@@ -4,6 +4,7 @@ import 'package:vaultara/core/view/widgets/confirm_delete_dialog.dart';
 import 'package:vaultara/core/search/text_search.dart';
 import 'package:vaultara/core/view/widgets/search_empty_state.dart';
 import 'package:vaultara/features/records/view/records/widgets/deleted_row.dart';
+
 class DeletedTab<T> extends StatelessWidget {
   final Future<List<T>> future;
 
@@ -21,6 +22,12 @@ class DeletedTab<T> extends StatelessWidget {
   final String emptyText;
   final String noMatchesText;
 
+  /// A second line for an item, such as a record's group and expiry date.
+  final String? Function(T)? subtitleOf;
+
+  /// Days left before an item is deleted for good, when known.
+  final int? Function(T)? daysLeftOf;
+
   const DeletedTab({
     super.key,
     required this.future,
@@ -31,6 +38,8 @@ class DeletedTab<T> extends StatelessWidget {
     required this.onDeleteForever,
     required this.emptyText,
     required this.noMatchesText,
+    this.subtitleOf,
+    this.daysLeftOf,
   });
 
   @override
@@ -66,6 +75,8 @@ class DeletedTab<T> extends StatelessWidget {
 
             return DeletedRow(
               label: labelOf(item),
+              subtitle: subtitleOf?.call(item),
+              daysLeft: daysLeftOf?.call(item),
               target: target,
               onRestore: () => onRestore(item),
               onDeleteForever: () => onDeleteForever(item),

@@ -11,6 +11,11 @@ import 'package:vaultara/features/records/logic/deleted_labels.dart';
 import 'package:vaultara/features/records/logic/recovery_controller.dart';
 import 'package:vaultara/features/records/view/records/widgets/deleted_tab.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:intl/intl.dart';
+import 'package:vaultara/core/data/preset_catalog.dart';
+import 'package:vaultara/core/data/repositories/category_repository.dart';
+import 'package:vaultara/core/util/safe_locale.dart';
+
 class RecentlyDeletedScreen extends StatefulWidget {
   final int initialTabIndex;
 
@@ -53,6 +58,25 @@ class _RecentlyDeletedScreenState extends State<RecentlyDeletedScreen>
     _tabController.dispose();
     _searchController.dispose();
     super.dispose();
+  }
+
+  /// Days before a deleted record is removed for good.
+  static int? _daysLeft(TrackedItem record) {
+    final at = record.deletedAt;
+    if (at == null) return null;
+    final gone = DateUtils.dateOnly(at).add(
+      const Duration(days: CategoryRepository.recentlyDeletedRetentionDays),
+    );
+    final left = gone.difference(DateUtils.dateOnly(DateTime.now())).inDays;
+    return left < 0 ? 0 : left;
+  }
+
+  /// The record's group and expiry date, under its name.
+  String _recordLine(TrackedItem record, AppLocalizations loc) {
+    final format = DateFormat.yMMMd(SafeLocale.date(loc.localeName));
+    final group = PresetCatalog.groupLabelFor(loc, record.subcategoryName);
+    final date = format.format(record.expiryDate);
+    return group.isEmpty ? date : '$group · $date';
   }
 
   String _tabLabel(AppLocalizations loc) {
@@ -138,6 +162,8 @@ class _RecentlyDeletedScreenState extends State<RecentlyDeletedScreen>
                     DeletedTab<TrackedItem>(
                       future: _controller.records,
                       labelOf: (record) => record.name,
+                      subtitleOf: (record) => _recordLine(record, loc),
+                      daysLeftOf: _daysLeft,
                       query: query,
                       target: DeleteTarget.item,
                       emptyText: loc.noDeletedItems(loc.records),
