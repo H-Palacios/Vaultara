@@ -8,6 +8,7 @@ import 'package:vaultara/features/insights/data/models/expiry_timeline_result.da
 import 'package:vaultara/features/insights/data/models/expiry_timeline_view_state.dart';
 import 'package:vaultara/features/insights/logic/expiry_timeline_controller.dart';
 import 'package:vaultara/features/insights/view/widgets/expiry_timeline_month_row.dart';
+import 'package:vaultara/features/runway/view/year_runway.dart';
 
 class ExpiryTimelineCard extends StatefulWidget {
   final ExpiryTimelineResult result;
@@ -16,10 +17,15 @@ class ExpiryTimelineCard extends StatefulWidget {
   /// only, as in the tutorial.
   final void Function(TrackedItem record)? onOpenRecord;
 
+  /// The records for the year runway at the top of the card. Null leaves
+  /// the runway out, as in the tutorial, which shows sample months only.
+  final List<TrackedItem>? runwayRecords;
+
   const ExpiryTimelineCard({
     super.key,
     required this.result,
     this.onOpenRecord,
+    this.runwayRecords,
   });
 
   @override
@@ -67,6 +73,15 @@ class _ExpiryTimelineCardState extends State<ExpiryTimelineCard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // The year ahead as distance, then the months in detail.
+                if (widget.runwayRecords != null &&
+                    widget.onOpenRecord != null) ...[
+                  YearRunway(
+                    records: widget.runwayRecords!,
+                    onOpen: widget.onOpenRecord!,
+                  ),
+                  const Divider(height: 24),
+                ],
                 YearNavigator(
                   year: year,
                   onPrevious: previousYear == null

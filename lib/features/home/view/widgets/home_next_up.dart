@@ -13,9 +13,10 @@ import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:vaultara/features/records/view/record_opener.dart';
 import 'package:vaultara/features/records/view/renew/renew_sheet.dart';
 import 'package:vaultara/features/records/view/search/global_search_sheet.dart';
+import 'package:vaultara/features/runway/view/home_runway.dart';
 
-/// The record that expires next, with Renew and How to renew, and chips for
-/// anything expired or due in 30 days.
+/// The record that expires next, with Renew and How to renew, a chip for
+/// anything expired, and the 30-day runway under it.
 ///
 /// It replaces the four count cards, which repeated the numbers the Insights
 /// summary already shows. Home now answers "what do I do next?" and Insights
@@ -88,12 +89,31 @@ class HomeNextUp extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
 
     if (!RecordRepository.isLoaded) {
-      return Container(
-        height: 112,
-        decoration: BoxDecoration(
-          color: scheme.surfaceContainerHighest.withValues(alpha: 0.6),
-          borderRadius: BorderRadius.circular(14),
-        ),
+      // Shaped like the heading and card it stands in for, so nothing below
+      // moves when the records arrive.
+      final fill = scheme.surfaceContainerHighest.withValues(alpha: 0.6);
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 4, bottom: 8),
+            child: Container(
+              width: 96,
+              height: 16,
+              decoration: BoxDecoration(
+                color: fill,
+                borderRadius: BorderRadius.circular(6),
+              ),
+            ),
+          ),
+          Container(
+            height: 112,
+            decoration: BoxDecoration(
+              color: fill,
+              borderRadius: BorderRadius.circular(14),
+            ),
+          ),
+        ],
       );
     }
 
@@ -101,7 +121,6 @@ class HomeNextUp extends StatelessWidget {
     if (records.isEmpty) return const SizedBox.shrink();
     final next = nextOf(records);
     final expired = totals.expired;
-    final soon = dueSoon(totals);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -145,27 +164,32 @@ class HomeNextUp extends StatelessWidget {
               ],
             ),
           ),
-        if (expired > 0 || soon > 0) ...[
+        if (expired > 0) ...[
           const SizedBox(height: 10),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: [
-              if (expired > 0)
-                _CountChip(
-                  label: loc.expiredBadge(expired),
-                  colour: RecordStatusColours.expired,
-                  onTap: () => _search(context, RecordFilterMode.expired),
-                ),
-              if (soon > 0)
-                _CountChip(
-                  label: loc.homeDueSoonChip(soon),
-                  colour: RecordStatusColours.urgent,
-                  onTap: () => _search(context, RecordFilterMode.expiringSoon),
-                ),
-            ],
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: _CountChip(
+              label: loc.expiredBadge(expired),
+              colour: RecordStatusColours.expired,
+              onTap: () => _search(context, RecordFilterMode.expired),
+            ),
           ),
         ],
+        // The next 30 days as distance. It replaces the "due in 30 days"
+        // chip and adds no extra card.
+        HomeRunway(
+          records: records,
+          nextUp: next,
+          onOpen: (record) => _open(context, record),
+          onRenew: (record) => _renew(context, record),
+          onGuide: (record) => _guide(context, record),
+          onSeeAll: (windowDays) => _search(
+            context,
+            windowDays <= 30
+                ? RecordFilterMode.expiringSoon
+                : RecordFilterMode.all,
+          ),
+        ),
       ],
     );
   }

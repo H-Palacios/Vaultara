@@ -472,6 +472,9 @@ class _InsightsScreenState extends State<InsightsScreen>
           child: ExpiryTimelineCard(
             result: timeline,
             onOpenRecord: widget.isTutorialMode ? null : _openTimelineRecord,
+            runwayRecords: widget.isTutorialMode
+                ? null
+                : RecordRepository.allActive(),
           ),
         ),
         const SizedBox(height: 16),

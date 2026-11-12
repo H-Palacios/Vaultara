@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
-import 'package:vaultara/core/theme/record_status_colours.dart';
-import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/insights/data/models/expiry_timeline_month.dart';
 import 'package:vaultara/features/insights/data/models/expiry_timeline_record.dart';
@@ -14,9 +12,9 @@ import 'package:vaultara/l10n/app_localizations.dart';
   expire in it (against the busiest month in any year) and the count.
   Tapping the row opens the month's records, and tapping a record opens it.
 
-  The bar is red when something in the month expires within a week, amber
-  within 30 days, and the app colour after that, the same colours the
-  record cards use. The current month is in bold.
+  The bars are all the app colour: their length already shows how many
+  records expire that month, and the runway above them shows urgency with
+  the app's colour scale. The current month is in bold.
 */
 class ExpiryTimelineMonthRow extends StatelessWidget {
   final ExpiryTimelineMonth month;
@@ -34,22 +32,13 @@ class ExpiryTimelineMonthRow extends StatelessWidget {
     this.onOpenRecord,
   });
 
-  /// The colour for the soonest record in the month.
+  /// The bar colour: the app colour for every month (see the class
+  /// comment). [month] and [now] stay for callers that pass them.
   static Color barColour(
     ExpiryTimelineMonth month,
     ColorScheme scheme, {
     DateTime? now,
-  }) {
-    final today = Dates.only(now ?? DateTime.now());
-    var soonest = 1 << 30;
-    for (final r in month.records) {
-      final days = Dates.daysBetween(today, r.expiryDate);
-      if (days < soonest) soonest = days;
-    }
-    if (soonest <= 7) return RecordStatusColours.expired;
-    if (soonest <= 30) return RecordStatusColours.urgent;
-    return scheme.primary;
-  }
+  }) => scheme.primary;
 
   @override
   Widget build(BuildContext context) {
