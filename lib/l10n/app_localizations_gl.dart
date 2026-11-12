@@ -1639,7 +1639,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Usa un enderezo de correo permanente. Os servizos de correo temporal non son compatibles.';
 
   @override
-  String get guideTitle => 'Como renovar';
+  String get guideTitle => 'Lista de comprobación da renovación';
 
   @override
   String get guideWhenToStart => 'Cando comezar';

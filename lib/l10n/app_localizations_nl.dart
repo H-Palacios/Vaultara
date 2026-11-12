@@ -1639,7 +1639,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Gebruik een vast e-mailadres. Tijdelijke e-maildiensten worden niet ondersteund.';
 
   @override
-  String get guideTitle => 'Zo vernieuw je';
+  String get guideTitle => 'Checklist voor verlengen';
 
   @override
   String get guideWhenToStart => 'Wanneer beginnen';

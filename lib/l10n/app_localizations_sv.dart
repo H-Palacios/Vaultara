@@ -1639,7 +1639,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Använd en permanent e-postadress. Tillfälliga e-posttjänster stöds inte.';
 
   @override
-  String get guideTitle => 'Så förnyar du';
+  String get guideTitle => 'Checklista för förnyelse';
 
   @override
   String get guideWhenToStart => 'När du ska börja';

@@ -712,7 +712,7 @@
   "signInWrongDetails": "E-posta veya şifre yanlış",
   "signUpBlocked": "Hesabınızı şu anda oluşturamadık. Lütfen daha sonra tekrar deneyin.",
   "signUpEmailNotAllowed": "Kalıcı bir e-posta adresi kullanın. Geçici e-posta hizmetleri desteklenmiyor.",
-  "guideTitle": "Nasıl yenilenir",
+  "guideTitle": "Yenileme kontrol listesi",
   "guideWhenToStart": "Ne zaman başlamalı",
   "guideChecklist": "Kontrol listesi",
   "guideProgress": "{done}/{total} tamamlandı",

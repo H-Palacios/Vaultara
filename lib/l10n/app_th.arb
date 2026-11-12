@@ -729,7 +729,7 @@
   "signInWrongDetails": "อีเมลหรือรหัสผ่านไม่ถูกต้อง",
   "signUpBlocked": "ไม่สามารถสร้างบัญชีของคุณได้ในขณะนี้ กรุณาลองอีกครั้งในภายหลัง",
   "signUpEmailNotAllowed": "กรุณาใช้อีเมลถาวร ไม่รองรับบริการอีเมลชั่วคราว",
-  "guideTitle": "วิธีต่ออายุ",
+  "guideTitle": "รายการตรวจสอบการต่ออายุ",
   "guideWhenToStart": "ควรเริ่มเมื่อไร",
   "guideChecklist": "รายการตรวจสอบ",
   "guideProgress": "เสร็จแล้ว {done} จาก {total}",

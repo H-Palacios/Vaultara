@@ -704,7 +704,7 @@
   "signInWrongDetails": "I-imeyili noma iphasiwedi ayilungile",
   "signUpBlocked": "Asikwazanga ukudala i-akhawunti yakho manje. Sicela uzame futhi emuva kwesikhathi.",
   "signUpEmailNotAllowed": "Sebenzisa ikheli le-imeyili elihlala njalo. Amasevisi e-imeyili esikhashana awasekelwa.",
-  "guideTitle": "Indlela yokuvuselela",
+  "guideTitle": "Uhlu lokuhlola lokuvuselela",
   "guideWhenToStart": "Nini ukuqala",
   "guideChecklist": "Uhlu lokuhlola",
   "guideProgress": "{done} kokungu-{total} kwenziwe",

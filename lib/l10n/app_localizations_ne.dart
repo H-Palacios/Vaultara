@@ -1639,7 +1639,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get signUpEmailNotAllowed => 'स्थायी इमेल ठेगाना प्रयोग गर्नुहोस्। अस्थायी इमेल सेवाहरू समर्थित छैनन्।';
 
   @override
-  String get guideTitle => 'कसरी नवीकरण गर्ने';
+  String get guideTitle => 'नवीकरण चेकलिस्ट';
 
   @override
   String get guideWhenToStart => 'कहिले सुरु गर्ने';

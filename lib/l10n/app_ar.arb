@@ -750,7 +750,7 @@
   "signInWrongDetails": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
   "signUpBlocked": "تعذّر علينا إنشاء حسابك الآن. الرجاء المحاولة مرة أخرى لاحقًا.",
   "signUpEmailNotAllowed": "استخدم عنوان بريد إلكتروني دائمًا. خدمات البريد الإلكتروني المؤقتة غير مدعومة.",
-  "guideTitle": "كيفية التجديد",
+  "guideTitle": "قائمة التحقق للتجديد",
   "guideWhenToStart": "متى تبدأ",
   "guideChecklist": "قائمة التحقق",
   "guideProgress": "تم {done} من {total}",

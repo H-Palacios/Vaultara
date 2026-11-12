@@ -1639,7 +1639,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Тұрақты электрондық пошта мекенжайын пайдаланыңыз. Уақытша пошта қызметтеріне қолдау көрсетілмейді.';
 
   @override
-  String get guideTitle => 'Қалай жаңартуға болады';
+  String get guideTitle => 'Жаңартуға арналған тексеру тізімі';
 
   @override
   String get guideWhenToStart => 'Қашан бастау керек';

@@ -712,7 +712,7 @@
   "signInWrongDetails": "Email hoặc mật khẩu không đúng",
   "signUpBlocked": "Hiện chúng tôi không thể tạo tài khoản của bạn. Vui lòng thử lại sau.",
   "signUpEmailNotAllowed": "Hãy dùng địa chỉ email cố định. Không hỗ trợ dịch vụ email tạm thời.",
-  "guideTitle": "Cách gia hạn",
+  "guideTitle": "Danh sách việc cần làm để gia hạn",
   "guideWhenToStart": "Khi nào bắt đầu",
   "guideChecklist": "Danh sách việc cần làm",
   "guideProgress": "Đã xong {done}/{total}",

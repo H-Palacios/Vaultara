@@ -1645,7 +1645,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Upotrijebite trajnu email adresu. Privremene email usluge nisu podržane.';
 
   @override
-  String get guideTitle => 'Kako obnoviti';
+  String get guideTitle => 'Popis koraka za obnovu';
 
   @override
   String get guideWhenToStart => 'Kada početi';

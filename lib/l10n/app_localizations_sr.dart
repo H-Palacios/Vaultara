@@ -1646,7 +1646,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Користите трајну имејл адресу. Услуге привременог имејла нису подржане.';
 
   @override
-  String get guideTitle => 'Како обновити';
+  String get guideTitle => 'Контролна листа за обнову';
 
   @override
   String get guideWhenToStart => 'Када почети';
@@ -10546,7 +10546,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get signUpEmailNotAllowed => 'Користите трајну имејл адресу. Услуге привременог имејла нису подржане.';
 
   @override
-  String get guideTitle => 'Како обновити';
+  String get guideTitle => 'Контролна листа за обнову';
 
   @override
   String get guideWhenToStart => 'Када почети';
@@ -19446,7 +19446,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get signUpEmailNotAllowed => 'Koristite trajnu email adresu. Usluge privremenog emaila nisu podržane.';
 
   @override
-  String get guideTitle => 'Kako obnoviti';
+  String get guideTitle => 'Kontrolna lista za obnovu';
 
   @override
   String get guideWhenToStart => 'Kada početi';

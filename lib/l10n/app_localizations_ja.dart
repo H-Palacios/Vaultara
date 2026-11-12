@@ -1626,7 +1626,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get signUpEmailNotAllowed => '継続して使えるメールアドレスを使用してください。使い捨てメールサービスには対応していません。';
 
   @override
-  String get guideTitle => '更新の手順';
+  String get guideTitle => '更新のチェックリスト';
 
   @override
   String get guideWhenToStart => '始める時期';

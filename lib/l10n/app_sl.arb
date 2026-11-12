@@ -712,7 +712,7 @@
   "signInWrongDetails": "Napačen e-poštni naslov ali geslo",
   "signUpBlocked": "Vašega računa trenutno ni bilo mogoče ustvariti. Poskusite znova pozneje.",
   "signUpEmailNotAllowed": "Uporabite stalen e-poštni naslov. Začasne e-poštne storitve niso podprte.",
-  "guideTitle": "Kako obnoviti",
+  "guideTitle": "Kontrolni seznam za obnovo",
   "guideWhenToStart": "Kdaj začeti",
   "guideChecklist": "Kontrolni seznam",
   "guideProgress": "Opravljeno: {done} od {total}",

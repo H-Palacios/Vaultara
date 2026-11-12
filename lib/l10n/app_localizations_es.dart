@@ -1643,7 +1643,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Usa una dirección de correo permanente. No se admiten servicios de correo temporal.';
 
   @override
-  String get guideTitle => 'Cómo renovar';
+  String get guideTitle => 'Lista de pasos para renovar';
 
   @override
   String get guideWhenToStart => 'Cuándo empezar';

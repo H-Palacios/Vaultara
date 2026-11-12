@@ -686,7 +686,7 @@
   "signInWrongDetails": "Погрешан имејл или лозинка",
   "signUpBlocked": "Тренутно не можемо да креирамо ваш налог. Покушајте поново касније.",
   "signUpEmailNotAllowed": "Користите трајну имејл адресу. Услуге привременог имејла нису подржане.",
-  "guideTitle": "Како обновити",
+  "guideTitle": "Контролна листа за обнову",
   "guideWhenToStart": "Када почети",
   "guideChecklist": "Контролна листа",
   "guideProgress": "Урађено {done} од {total}",

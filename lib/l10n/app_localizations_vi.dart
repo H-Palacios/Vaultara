@@ -1638,7 +1638,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Hãy dùng địa chỉ email cố định. Không hỗ trợ dịch vụ email tạm thời.';
 
   @override
-  String get guideTitle => 'Cách gia hạn';
+  String get guideTitle => 'Danh sách việc cần làm để gia hạn';
 
   @override
   String get guideWhenToStart => 'Khi nào bắt đầu';

@@ -1637,7 +1637,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Gumamit ng permanenteng email address. Hindi suportado ang mga pansamantalang email service.';
 
   @override
-  String get guideTitle => 'Paano mag-renew';
+  String get guideTitle => 'Listahan ng hakbang sa pag-renew';
 
   @override
   String get guideWhenToStart => 'Kailan magsisimula';

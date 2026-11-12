@@ -724,7 +724,7 @@
   "signInWrongDetails": "Maling email o password",
   "signUpBlocked": "Hindi namin magawa ang account mo sa ngayon. Subukan muli mamaya.",
   "signUpEmailNotAllowed": "Gumamit ng permanenteng email address. Hindi suportado ang mga pansamantalang email service.",
-  "guideTitle": "Paano mag-renew",
+  "guideTitle": "Listahan ng hakbang sa pag-renew",
   "guideWhenToStart": "Kailan magsisimula",
   "guideChecklist": "Listahan ng hakbang",
   "guideProgress": "{done} sa {total} ang tapos",

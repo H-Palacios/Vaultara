@@ -730,7 +730,7 @@
   "signInWrongDetails": "არასწორი ელფოსტა ან პაროლი",
   "signUpBlocked": "ანგარიშის შექმნა ახლა ვერ მოხერხდა. სცადეთ მოგვიანებით.",
   "signUpEmailNotAllowed": "გამოიყენეთ მუდმივი ელფოსტა. დროებითი ელფოსტის სერვისები არ არის მხარდაჭერილი.",
-  "guideTitle": "როგორ განვაახლოთ",
+  "guideTitle": "განახლების საკონტროლო სია",
   "guideWhenToStart": "როდის დავიწყოთ",
   "guideChecklist": "საკონტროლო სია",
   "guideProgress": "შესრულებულია {done} / {total}",

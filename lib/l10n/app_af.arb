@@ -750,7 +750,7 @@
   "signInWrongDetails": "Verkeerde e-pos of wagwoord",
   "signUpBlocked": "Ons kon nie nou jou rekening skep nie. Probeer asseblief later weer.",
   "signUpEmailNotAllowed": "Gebruik 'n permanente e-posadres. Tydelike e-posdienste word nie ondersteun nie.",
-  "guideTitle": "Hoe om te hernu",
+  "guideTitle": "Hernuwingskontrolelys",
   "guideWhenToStart": "Wanneer om te begin",
   "guideChecklist": "Kontrolelys",
   "guideProgress": "{done} van {total} klaar",

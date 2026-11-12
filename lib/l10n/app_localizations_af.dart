@@ -1639,7 +1639,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Gebruik \'n permanente e-posadres. Tydelike e-posdienste word nie ondersteun nie.';
 
   @override
-  String get guideTitle => 'Hoe om te hernu';
+  String get guideTitle => 'Hernuwingskontrolelys';
 
   @override
   String get guideWhenToStart => 'Wanneer om te begin';

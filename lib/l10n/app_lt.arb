@@ -730,7 +730,7 @@
   "signInWrongDetails": "Neteisingas el. pašto adresas arba slaptažodis",
   "signUpBlocked": "Šiuo metu nepavyko sukurti jūsų paskyros. Bandykite dar kartą vėliau.",
   "signUpEmailNotAllowed": "Naudokite nuolatinį el. pašto adresą. Laikinojo el. pašto paslaugos nepalaikomos.",
-  "guideTitle": "Kaip atnaujinti",
+  "guideTitle": "Atnaujinimo kontrolinis sąrašas",
   "guideWhenToStart": "Kada pradėti",
   "guideChecklist": "Kontrolinis sąrašas",
   "guideProgress": "Atlikta {done} iš {total}",

@@ -1639,7 +1639,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get signUpEmailNotAllowed => 'કાયમી ઇમેઇલ ઍડ્રેસનો ઉપયોગ કરો. અસ્થાયી ઇમેઇલ સેવાઓ સમર્થિત નથી.';
 
   @override
-  String get guideTitle => 'રિન્યૂ કેવી રીતે કરવું';
+  String get guideTitle => 'રિન્યૂ ચેકલિસ્ટ';
 
   @override
   String get guideWhenToStart => 'ક્યારે શરૂ કરવું';

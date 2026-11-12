@@ -1639,7 +1639,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Doimiy e-pochta manzilidan foydalaning. Vaqtinchalik e-pochta xizmatlari qoʻllab-quvvatlanmaydi.';
 
   @override
-  String get guideTitle => 'Qanday uzaytirish kerak';
+  String get guideTitle => 'Uzaytirish uchun nazorat roʻyxati';
 
   @override
   String get guideWhenToStart => 'Qachon boshlash kerak';

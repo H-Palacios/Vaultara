@@ -1656,7 +1656,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Použijte trvalou e-mailovou adresu. Dočasné e-mailové služby nejsou podporovány.';
 
   @override
-  String get guideTitle => 'Jak obnovit';
+  String get guideTitle => 'Kontrolní seznam pro obnovení';
 
   @override
   String get guideWhenToStart => 'Kdy začít';

@@ -1639,7 +1639,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Bruk ei permanent e-postadresse. Mellombelse e-posttenester er ikkje støtta.';
 
   @override
-  String get guideTitle => 'Slik fornyar du';
+  String get guideTitle => 'Sjekkliste for fornying';
 
   @override
   String get guideWhenToStart => 'Når du bør byrje';

@@ -1639,7 +1639,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Използвайте постоянен имейл адрес. Временни имейл услуги не се поддържат.';
 
   @override
-  String get guideTitle => 'Как да подновите';
+  String get guideTitle => 'Контролен списък за подновяване';
 
   @override
   String get guideWhenToStart => 'Кога да започнете';

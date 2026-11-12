@@ -712,7 +712,7 @@
   "signInWrongDetails": "Onjuist e-mailadres of wachtwoord",
   "signUpBlocked": "We konden je account nu niet aanmaken. Probeer het later opnieuw.",
   "signUpEmailNotAllowed": "Gebruik een vast e-mailadres. Tijdelijke e-maildiensten worden niet ondersteund.",
-  "guideTitle": "Zo vernieuw je",
+  "guideTitle": "Checklist voor verlengen",
   "guideWhenToStart": "Wanneer beginnen",
   "guideChecklist": "Checklist",
   "guideProgress": "{done} van {total} gedaan",

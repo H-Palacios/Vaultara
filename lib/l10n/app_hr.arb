@@ -717,7 +717,7 @@
   "signInWrongDetails": "Pogrešan email ili lozinka",
   "signUpBlocked": "Trenutačno nismo uspjeli kreirati vaš račun. Pokušajte ponovno kasnije.",
   "signUpEmailNotAllowed": "Upotrijebite trajnu email adresu. Privremene email usluge nisu podržane.",
-  "guideTitle": "Kako obnoviti",
+  "guideTitle": "Popis koraka za obnovu",
   "guideWhenToStart": "Kada početi",
   "guideChecklist": "Popis koraka",
   "guideProgress": "Gotovo {done} od {total}",

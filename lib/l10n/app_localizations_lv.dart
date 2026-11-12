@@ -1642,7 +1642,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Izmantojiet pastāvīgu e-pasta adresi. Pagaidu e-pasta pakalpojumi netiek atbalstīti.';
 
   @override
-  String get guideTitle => 'Kā atjaunot';
+  String get guideTitle => 'Atjaunošanas kontrolsaraksts';
 
   @override
   String get guideWhenToStart => 'Kad sākt';

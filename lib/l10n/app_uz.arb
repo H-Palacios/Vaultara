@@ -462,7 +462,7 @@
   "signInWrongDetails": "E-pochta yoki parol notoʻgʻri",
   "signUpBlocked": "Hozir hisobingizni yarata olmadik. Keyinroq qayta urinib koʻring.",
   "signUpEmailNotAllowed": "Doimiy e-pochta manzilidan foydalaning. Vaqtinchalik e-pochta xizmatlari qoʻllab-quvvatlanmaydi.",
-  "guideTitle": "Qanday uzaytirish kerak",
+  "guideTitle": "Uzaytirish uchun nazorat roʻyxati",
   "guideWhenToStart": "Qachon boshlash kerak",
   "guideChecklist": "Nazorat roʻyxati",
   "guideProgress": "{total} tadan {done} tasi bajarildi",

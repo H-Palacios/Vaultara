@@ -1639,7 +1639,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get signUpEmailNotAllowed => 'कायमस्वरूपी ईमेल पत्ता वापरा. तात्पुरत्या ईमेल सेवा समर्थित नाहीत.';
 
   @override
-  String get guideTitle => 'नूतनीकरण कसे करावे';
+  String get guideTitle => 'नूतनीकरण तपासणी सूची';
 
   @override
   String get guideWhenToStart => 'कधी सुरू करावे';

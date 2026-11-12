@@ -1639,7 +1639,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get signUpEmailNotAllowed => 'ಶಾಶ್ವತ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಬಳಸಿ. ತಾತ್ಕಾಲಿಕ ಇಮೇಲ್ ಸೇವೆಗಳು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.';
 
   @override
-  String get guideTitle => 'ನವೀಕರಿಸುವುದು ಹೇಗೆ';
+  String get guideTitle => 'ನವೀಕರಣ ಪರಿಶೀಲನಾ ಪಟ್ಟಿ';
 
   @override
   String get guideWhenToStart => 'ಯಾವಾಗ ಪ್ರಾರಂಭಿಸಬೇಕು';

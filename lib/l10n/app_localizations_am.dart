@@ -1639,7 +1639,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get signUpEmailNotAllowed => 'ቋሚ የኢሜይል አድራሻ ይጠቀሙ። ጊዜያዊ የኢሜይል አገልግሎቶች አይደገፉም።';
 
   @override
-  String get guideTitle => 'እንዴት ማደስ እንደሚቻል';
+  String get guideTitle => 'የእድሳት ማረጋገጫ ዝርዝር';
 
   @override
   String get guideWhenToStart => 'መቼ መጀመር እንዳለብዎ';

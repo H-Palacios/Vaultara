@@ -1639,7 +1639,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Jiri adreesị email na-adịgide adịgide. Anyị anaghị akwado ọrụ email nwa oge.';
 
   @override
-  String get guideTitle => 'Otu esi emegharị';
+  String get guideTitle => 'Ndepụta nlele maka mmeghari';
 
   @override
   String get guideWhenToStart => 'Mgbe ị ga-amalite';

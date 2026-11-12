@@ -1653,7 +1653,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Uporabite stalen e-poštni naslov. Začasne e-poštne storitve niso podprte.';
 
   @override
-  String get guideTitle => 'Kako obnoviti';
+  String get guideTitle => 'Kontrolni seznam za obnovo';
 
   @override
   String get guideWhenToStart => 'Kdaj začeti';

@@ -1639,7 +1639,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Utilisez une adresse e-mail permanente. Les services d\'e-mail temporaire ne sont pas pris en charge.';
 
   @override
-  String get guideTitle => 'Comment renouveler';
+  String get guideTitle => 'Liste de contrôle du renouvellement';
 
   @override
   String get guideWhenToStart => 'Quand commencer';

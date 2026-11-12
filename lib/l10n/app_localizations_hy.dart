@@ -1639,7 +1639,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Օգտագործեք մշտական էլ. հասցե։ Ժամանակավոր էլ. փոստի ծառայությունները չեն աջակցվում։';
 
   @override
-  String get guideTitle => 'Ինչպես նորացնել';
+  String get guideTitle => 'Նորացման ստուգաթերթ';
 
   @override
   String get guideWhenToStart => 'Երբ սկսել';

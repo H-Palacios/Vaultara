@@ -712,7 +712,7 @@
   "signInWrongDetails": "Nesprávny e-mail alebo heslo",
   "signUpBlocked": "Váš účet sa teraz nepodarilo vytvoriť. Skúste to znova neskôr.",
   "signUpEmailNotAllowed": "Použite trvalú e-mailovú adresu. Dočasné e-mailové služby nie sú podporované.",
-  "guideTitle": "Ako obnoviť",
+  "guideTitle": "Kontrolný zoznam na obnovenie",
   "guideWhenToStart": "Kedy začať",
   "guideChecklist": "Kontrolný zoznam",
   "guideProgress": "Hotovo {done} z {total}",

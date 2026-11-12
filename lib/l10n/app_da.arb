@@ -743,7 +743,7 @@
   "signInWrongDetails": "Forkert e-mail eller adgangskode",
   "signUpBlocked": "Vi kunne ikke oprette din konto lige nu. Prøv igen senere.",
   "signUpEmailNotAllowed": "Brug en permanent e-mailadresse. Midlertidige e-mailtjenester understøttes ikke.",
-  "guideTitle": "Sådan fornyer du",
+  "guideTitle": "Tjekliste til fornyelse",
   "guideWhenToStart": "Hvornår du skal starte",
   "guideChecklist": "Tjekliste",
   "guideProgress": "{done} af {total} udført",

@@ -1654,7 +1654,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Úsáid seoladh ríomhphoist buan. Ní thacaítear le seirbhísí ríomhphoist sealadacha.';
 
   @override
-  String get guideTitle => 'Conas athnuachan';
+  String get guideTitle => 'Seicliosta athnuachana';
 
   @override
   String get guideWhenToStart => 'Cathain is ceart tosú';

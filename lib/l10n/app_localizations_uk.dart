@@ -1660,7 +1660,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Використовуйте постійну електронну адресу. Тимчасові поштові сервіси не підтримуються.';
 
   @override
-  String get guideTitle => 'Як продовжити';
+  String get guideTitle => 'Контрольний список для продовження';
 
   @override
   String get guideWhenToStart => 'Коли почати';

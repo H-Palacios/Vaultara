@@ -1639,7 +1639,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get signUpEmailNotAllowed => 'از یک آدرس ایمیل دائمی استفاده کنید. سرویس‌های ایمیل موقت پشتیبانی نمی‌شوند.';
 
   @override
-  String get guideTitle => 'نحوه تمدید';
+  String get guideTitle => 'فهرست کارهای تمدید';
 
   @override
   String get guideWhenToStart => 'زمان شروع';

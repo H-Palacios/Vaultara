@@ -724,7 +724,7 @@
   "signInWrongDetails": "Imel ko kalmar sirri ba daidai ba",
   "signUpBlocked": "Ba mu iya ƙirƙirar asusunka yanzu ba. Sake gwadawa daga baya.",
   "signUpEmailNotAllowed": "Yi amfani da adireshin imel na dindindin. Ba a tallafa wa sabis na imel na wucin gadi ba.",
-  "guideTitle": "Yadda ake sabuntawa",
+  "guideTitle": "Jerin abubuwan yi don sabuntawa",
   "guideWhenToStart": "Lokacin farawa",
   "guideChecklist": "Jerin abubuwan yi",
   "guideProgress": "{done} cikin {total} an gama",

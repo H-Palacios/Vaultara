@@ -1639,7 +1639,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get signUpEmailNotAllowed => 'ئیمەیڵێکی هەمیشەیی بەکاربهێنە. خزمەتگوزارییەکانی ئیمەیڵی کاتی پشتگیری ناکرێن.';
 
   @override
-  String get guideTitle => 'چۆن نوێی بکەیتەوە';
+  String get guideTitle => 'لیستی هەنگاوەکانی نوێکردنەوە';
 
   @override
   String get guideWhenToStart => 'کەی دەست پێبکەیت';

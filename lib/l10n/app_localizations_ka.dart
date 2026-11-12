@@ -1639,7 +1639,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get signUpEmailNotAllowed => 'გამოიყენეთ მუდმივი ელფოსტა. დროებითი ელფოსტის სერვისები არ არის მხარდაჭერილი.';
 
   @override
-  String get guideTitle => 'როგორ განვაახლოთ';
+  String get guideTitle => 'განახლების საკონტროლო სია';
 
   @override
   String get guideWhenToStart => 'როდის დავიწყოთ';

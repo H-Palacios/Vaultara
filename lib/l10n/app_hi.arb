@@ -724,7 +724,7 @@
   "signInWrongDetails": "गलत ईमेल या पासवर्ड",
   "signUpBlocked": "हम अभी आपका खाता नहीं बना सके। कृपया बाद में फिर से प्रयास करें।",
   "signUpEmailNotAllowed": "स्थायी ईमेल पता इस्तेमाल करें। अस्थायी ईमेल सेवाएँ समर्थित नहीं हैं।",
-  "guideTitle": "नवीनीकरण कैसे करें",
+  "guideTitle": "नवीनीकरण चेकलिस्ट",
   "guideWhenToStart": "कब शुरू करें",
   "guideChecklist": "चेकलिस्ट",
   "guideProgress": "{total} में से {done} पूरे",

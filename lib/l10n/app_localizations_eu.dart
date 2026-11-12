@@ -1639,7 +1639,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Erabili helbide elektroniko iraunkor bat. Aldi baterako posta elektronikoko zerbitzuak ez dira onartzen.';
 
   @override
-  String get guideTitle => 'Nola berritu';
+  String get guideTitle => 'Berritzeko egiaztapen-zerrenda';
 
   @override
   String get guideWhenToStart => 'Noiz hasi';

@@ -1639,7 +1639,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Yi amfani da adireshin imel na dindindin. Ba a tallafa wa sabis na imel na wucin gadi ba.';
 
   @override
-  String get guideTitle => 'Yadda ake sabuntawa';
+  String get guideTitle => 'Jerin abubuwan yi don sabuntawa';
 
   @override
   String get guideWhenToStart => 'Lokacin farawa';

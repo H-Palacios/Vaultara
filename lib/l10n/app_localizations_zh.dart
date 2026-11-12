@@ -1638,7 +1638,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get signUpEmailNotAllowed => '请使用长期有效的电子邮箱地址。不支持临时邮箱服务。';
 
   @override
-  String get guideTitle => '如何续期';
+  String get guideTitle => '续期清单';
 
   @override
   String get guideWhenToStart => '何时开始';
@@ -10380,7 +10380,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get signUpEmailNotAllowed => '请使用长期有效的电子邮箱地址。不支持临时邮箱服务。';
 
   @override
-  String get guideTitle => '如何续期';
+  String get guideTitle => '续期清单';
 
   @override
   String get guideWhenToStart => '何时开始';
@@ -19122,7 +19122,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get signUpEmailNotAllowed => '請使用長期有效的電子郵件地址。不支援臨時電子郵件服務。';
 
   @override
-  String get guideTitle => '如何續期';
+  String get guideTitle => '續期檢查清單';
 
   @override
   String get guideWhenToStart => '何時開始';

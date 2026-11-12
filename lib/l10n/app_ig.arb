@@ -717,7 +717,7 @@
   "signInWrongDetails": "Email ma ọ bụ paswọọdụ ezighi ezi",
   "signUpBlocked": "Anyị enweghị ike ịmepụta akaụntụ gị ugbu a. Biko gbalịa ọzọ ma emechaa.",
   "signUpEmailNotAllowed": "Jiri adreesị email na-adịgide adịgide. Anyị anaghị akwado ọrụ email nwa oge.",
-  "guideTitle": "Otu esi emegharị",
+  "guideTitle": "Ndepụta nlele maka mmeghari",
   "guideWhenToStart": "Mgbe ị ga-amalite",
   "guideChecklist": "Ndepụta nlele",
   "guideProgress": "Emechara {done} n'ime {total}",

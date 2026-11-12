@@ -724,7 +724,7 @@
   "signInWrongDetails": "メールアドレスまたはパスワードが間違っています",
   "signUpBlocked": "現在アカウントを作成できません。しばらくしてからもう一度お試しください。",
   "signUpEmailNotAllowed": "継続して使えるメールアドレスを使用してください。使い捨てメールサービスには対応していません。",
-  "guideTitle": "更新の手順",
+  "guideTitle": "更新のチェックリスト",
   "guideWhenToStart": "始める時期",
   "guideChecklist": "チェックリスト",
   "guideProgress": "{total}件中{done}件完了",

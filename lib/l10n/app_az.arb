@@ -462,7 +462,7 @@
   "signInWrongDetails": "E-poçt və ya şifrə yanlışdır",
   "signUpBlocked": "Hesabınızı hazırda yarada bilmədik. Bir az sonra yenidən cəhd edin.",
   "signUpEmailNotAllowed": "Daimi e-poçt ünvanından istifadə edin. Müvəqqəti e-poçt xidmətləri dəstəklənmir.",
-  "guideTitle": "Müddəti necə uzatmalı",
+  "guideTitle": "Müddətin uzadılması üçün yoxlama siyahısı",
   "guideWhenToStart": "Nə vaxt başlamalı",
   "guideChecklist": "Yoxlama siyahısı",
   "guideProgress": "{done}/{total} tamamlandı",

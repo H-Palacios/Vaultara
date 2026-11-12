@@ -712,7 +712,7 @@
   "signInWrongDetails": "Email sau parolă incorectă",
   "signUpBlocked": "Nu am putut crea contul tău acum. Încearcă din nou mai târziu.",
   "signUpEmailNotAllowed": "Folosește o adresă de email permanentă. Serviciile de email temporar nu sunt acceptate.",
-  "guideTitle": "Cum reînnoiești",
+  "guideTitle": "Listă de verificare pentru reînnoire",
   "guideWhenToStart": "Când să începi",
   "guideChecklist": "Listă de verificare",
   "guideProgress": "{done} din {total} finalizate",

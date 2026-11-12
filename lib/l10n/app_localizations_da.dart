@@ -1639,7 +1639,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Brug en permanent e-mailadresse. Midlertidige e-mailtjenester understøttes ikke.';
 
   @override
-  String get guideTitle => 'Sådan fornyer du';
+  String get guideTitle => 'Tjekliste til fornyelse';
 
   @override
   String get guideWhenToStart => 'Hvornår du skal starte';

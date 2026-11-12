@@ -1639,7 +1639,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Állandó email címet használjon. Az ideiglenes email szolgáltatások nem támogatottak.';
 
   @override
-  String get guideTitle => 'A megújítás menete';
+  String get guideTitle => 'Megújítási ellenőrzőlista';
 
   @override
   String get guideWhenToStart => 'Mikor kezdje';

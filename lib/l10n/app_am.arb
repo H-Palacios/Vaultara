@@ -750,7 +750,7 @@
   "signInWrongDetails": "የተሳሳተ ኢሜይል ወይም የይለፍ ቃል",
   "signUpBlocked": "አሁን መለያዎን መፍጠር አልቻልንም። እባክዎ ቆየት ብለው እንደገና ይሞክሩ።",
   "signUpEmailNotAllowed": "ቋሚ የኢሜይል አድራሻ ይጠቀሙ። ጊዜያዊ የኢሜይል አገልግሎቶች አይደገፉም።",
-  "guideTitle": "እንዴት ማደስ እንደሚቻል",
+  "guideTitle": "የእድሳት ማረጋገጫ ዝርዝር",
   "guideWhenToStart": "መቼ መጀመር እንዳለብዎ",
   "guideChecklist": "የማረጋገጫ ዝርዝር",
   "guideProgress": "ከ{total} {done} ተጠናቋል",

@@ -730,7 +730,7 @@
   "signInWrongDetails": "Nepareiza e-pasta adrese vai parole",
   "signUpBlocked": "Pašlaik nevarējām izveidot jūsu kontu. Lūdzu, mēģiniet vēlreiz vēlāk.",
   "signUpEmailNotAllowed": "Izmantojiet pastāvīgu e-pasta adresi. Pagaidu e-pasta pakalpojumi netiek atbalstīti.",
-  "guideTitle": "Kā atjaunot",
+  "guideTitle": "Atjaunošanas kontrolsaraksts",
   "guideWhenToStart": "Kad sākt",
   "guideChecklist": "Kontrolsaraksts",
   "guideProgress": "Izpildīti {done} no {total}",

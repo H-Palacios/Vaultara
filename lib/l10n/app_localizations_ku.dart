@@ -1639,7 +1639,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get signUpEmailNotAllowed => 'E-nameyeke daîmî bi kar bîne. Xizmetên e-nameyên demkî nayên piştgirîkirin.';
 
   @override
-  String get guideTitle => 'Çawa nû bikî';
+  String get guideTitle => 'Lîsteya kontrolê ya nûkirinê';
 
   @override
   String get guideWhenToStart => 'Kengî dest pê bikî';

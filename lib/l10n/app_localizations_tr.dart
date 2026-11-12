@@ -1639,7 +1639,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Kalıcı bir e-posta adresi kullanın. Geçici e-posta hizmetleri desteklenmiyor.';
 
   @override
-  String get guideTitle => 'Nasıl yenilenir';
+  String get guideTitle => 'Yenileme kontrol listesi';
 
   @override
   String get guideWhenToStart => 'Ne zaman başlamalı';

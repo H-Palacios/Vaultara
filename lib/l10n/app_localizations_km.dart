@@ -1636,7 +1636,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get signUpEmailNotAllowed => 'សូមប្រើអាសយដ្ឋានអ៊ីមែលអចិន្ត្រៃយ៍។ សេវាអ៊ីមែលបណ្ដោះអាសន្នមិនត្រូវបានគាំទ្រទេ។';
 
   @override
-  String get guideTitle => 'របៀបបន្តសុពលភាព';
+  String get guideTitle => 'បញ្ជីត្រួតពិនិត្យសម្រាប់ការបន្តសុពលភាព';
 
   @override
   String get guideWhenToStart => 'ពេលត្រូវចាប់ផ្តើម';

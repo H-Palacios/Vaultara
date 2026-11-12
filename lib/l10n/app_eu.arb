@@ -726,7 +726,7 @@
   "signInWrongDetails": "Helbide elektroniko edo pasahitz okerra",
   "signUpBlocked": "Ezin izan dugu zure kontua sortu oraintxe. Saiatu berriro geroago.",
   "signUpEmailNotAllowed": "Erabili helbide elektroniko iraunkor bat. Aldi baterako posta elektronikoko zerbitzuak ez dira onartzen.",
-  "guideTitle": "Nola berritu",
+  "guideTitle": "Berritzeko egiaztapen-zerrenda",
   "guideWhenToStart": "Noiz hasi",
   "guideChecklist": "Egiaztapen-zerrenda",
   "guideProgress": "{total} urratsetatik {done} eginda",

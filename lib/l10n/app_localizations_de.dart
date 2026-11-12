@@ -1639,7 +1639,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get signUpEmailNotAllowed => 'Verwende eine dauerhafte E-Mail-Adresse. Temporäre E-Mail-Dienste werden nicht unterstützt.';
 
   @override
-  String get guideTitle => 'So verlängerst du';
+  String get guideTitle => 'Checkliste zur Verlängerung';
 
   @override
   String get guideWhenToStart => 'Wann du anfangen solltest';
