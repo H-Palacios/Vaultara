@@ -100,54 +100,73 @@ class TutorialOverlay extends StatelessWidget {
     }
 
     final String message = _messageForStep(loc, step, isPremium, isFullTour);
+
+    // Cancel has nothing left to cancel once Finish is showing. Last steps
+    // without Finish (where the person taps the highlighted button) keep
+    // Cancel as their way out.
+    final bool finishOnly = showNext && isLastStep;
+    final Widget readAloud = ValueListenableBuilder<bool>(
+      valueListenable: TutorialVoice.speaking,
+      builder: (context, speaking, _) => IconButton(
+        tooltip: loc.lifePlanReadAloud,
+        onPressed: () => TutorialVoice.toggle(context, message),
+        icon: Icon(
+          speaking ? Icons.stop_rounded : Icons.volume_up_rounded,
+          color: Colors.white70,
+          size: 22,
+        ),
+      ),
+    );
+    final Widget nextButton = TextButton(
+      onPressed: onNext,
+      child: Text(
+        isLastStep ? loc.tutorialEnd : loc.tutorialNext,
+        style: const TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.w700,
+          decoration: TextDecoration.none,
+        ),
+      ),
+    );
     final Widget messageAndButtons = Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(message, textAlign: TextAlign.center, style: _textStyle),
         const SizedBox(height: _spacingTextToButtons),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ValueListenableBuilder<bool>(
-              valueListenable: TutorialVoice.speaking,
-              builder: (context, speaking, _) => IconButton(
-                tooltip: loc.lifePlanReadAloud,
-                onPressed: () => TutorialVoice.toggle(context, message),
-                icon: Icon(
-                  speaking ? Icons.stop_rounded : Icons.volume_up_rounded,
-                  color: Colors.white70,
-                  size: 22,
-                ),
-              ),
-            ),
-            const SizedBox(width: 8),
-            TextButton(
-              onPressed: onCancel,
-              child: Text(
-                loc.tutorialCancel,
-                style: const TextStyle(
-                  color: Colors.white70,
-                  decoration: TextDecoration.none,
-                ),
-              ),
-            ),
-            if (showNext) ...[
-              const SizedBox(width: 32),
+        if (finishOnly)
+          // The last step: Finish alone, centred. The read-aloud button
+          // sits on the left with an equal space on the right, so it does
+          // not push Finish off centre.
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              readAloud,
+              const SizedBox(width: 24),
+              nextButton,
+              const SizedBox(width: 72),
+            ],
+          )
+        else
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              readAloud,
+              const SizedBox(width: 8),
               TextButton(
-                onPressed: onNext,
+                onPressed: onCancel,
                 child: Text(
-                  isLastStep ? loc.tutorialEnd : loc.tutorialNext,
+                  loc.tutorialCancel,
                   style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w700,
+                    color: Colors.white70,
                     decoration: TextDecoration.none,
                   ),
                 ),
               ),
+              if (showNext) ...[const SizedBox(width: 32), nextButton],
             ],
-          ],
-        ),
+          ),
       ],
     );
 
