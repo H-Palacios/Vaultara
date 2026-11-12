@@ -8712,4 +8712,112 @@ class AppLocalizationsHy extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Ձեր հաշիվը պաշտպանելու համար $provider-ով հաստատեք, որ դա դուք եք։';
   }
+
+  @override
+  String get legendWithinWeek => '7 օրվա ընթացքում';
+
+  @override
+  String get legendWithinMonth => '30 օրվա ընթացքում';
+
+  @override
+  String get legendLater => 'Ավելի ուշ';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Կավարտվի հաջորդ $days օրվա ընթացքում՝ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Կավարտվի հաջորդ տարվա ընթացքում՝ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count ևս',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Ամեն ինչ կարգին է մինչև $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Տեսնել բոլորը';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month-ը զբաղված է ($count)։ Սկսեք առաջին թարմացումը վաղ։';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Հաշիվ և անվտանգություն';
+
+  @override
+  String get profileSectionPeople => 'Մարդիկ';
+
+  @override
+  String get profileSectionYourData => 'Ձեր տվյալները';
+
+  @override
+  String get profileSectionPreferences => 'Նախընտրություններ';
+
+  @override
+  String get displayTitle => 'Ցուցադրում';
+
+  @override
+  String get exportCalendarScreenTitle => 'Արտահանում և օրացույց';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, օրացույցի ֆայլ և օրացույցի կենդանի հղում';
+
+  @override
+  String get helpTileSubtitle => 'Ուղեցույցներ, Հարցրեք Vaultara-ին և նամակ աջակցությանը';
+
+  @override
+  String get helpEmailTitle => 'Գրեք մեզ';
+
+  @override
+  String get helpEmailSubtitle => 'Հավելվածի տարբերակը և հեռախոսի մոդելը ավելացվում են ավտոմատ։ Ձեր գրառումները՝ երբեք։';
+
+  @override
+  String get helpCopyAddress => 'Պատճենել հասցեն';
+
+  @override
+  String get helpAddressCopied => 'Էլ. հասցեն պատճենվեց';
+
+  @override
+  String get helpNoMailApp => 'Այս հեռախոսում էլ. փոստի հավելված չի գտնվել։ Պատճենեք հասցեն և գրեք մեզ ցանկացած էլ. փոստի ծառայությունից։';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Էջ $page/$total · Պատրաստված է Vaultara-ով';
+  }
+
+  @override
+  String get proofPackColRecord => 'Գրառում';
+
+  @override
+  String get proofPackColHolder => 'Տիրապետող';
+
+  @override
+  String get proofPackColExpires => 'Ավարտվում է';
+
+  @override
+  String get proofPackColStatus => 'Կարգավիճակ';
 }

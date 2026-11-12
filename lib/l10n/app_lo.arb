@@ -3269,5 +3269,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "ພາຍໃນ 7 ມື້",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "ພາຍໃນ 30 ມື້",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "ພາຍຫຼັງ",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{ໝົດອາຍຸໃນ {days} ມື້ຂ້າງໜ້າ: {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{ໝົດອາຍຸໃນປີໜ້າ: {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} ອີກ}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "ທຸກຢ່າງດີຈົນຮອດ {date}",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "ເບິ່ງທັງໝົດ",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} ມີວຽກຫຼາຍ ({count}). ເລີ່ມຕໍ່ອາຍຸຄັ້ງທຳອິດແຕ່ເນີ່ນໆ.",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "ບັນຊີ ແລະ ຄວາມປອດໄພ",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "ຜູ້ຄົນ",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "ຂໍ້ມູນຂອງທ່ານ",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "ການຕັ້ງຄ່າ",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "ການສະແດງຜົນ",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "ສົ່ງອອກ ແລະ ປະຕິທິນ",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF, ໄຟລ໌ປະຕິທິນ ແລະ ລິ້ງປະຕິທິນສົດ",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "ບົດສອນ, ຖາມ Vaultara ແລະ ອີເມວຫາຝ່າຍຊ່ວຍເຫຼືອ",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "ສົ່ງອີເມວຫາພວກເຮົາ",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "ເວີຊັນແອັບ ແລະ ລຸ້ນໂທລະສັບຂອງທ່ານຖືກເພີ່ມໃຫ້ອັດຕະໂນມັດ. ບັນທຶກຂອງທ່ານບໍ່ເຄີຍ.",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "ສຳເນົາທີ່ຢູ່",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "ສຳເນົາທີ່ຢູ່ອີເມວແລ້ວ",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "ບໍ່ພົບແອັບອີເມວໃນໂທລະສັບນີ້. ສຳເນົາທີ່ຢູ່ ແລະ ຂຽນຫາພວກເຮົາຈາກບໍລິການອີເມວໃດກໍໄດ້.",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "ໜ້າ {page} ຈາກ {total} · ກະກຽມດ້ວຍ Vaultara",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "ບັນທຶກ",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "ຜູ້ຖື",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "ໝົດອາຍຸ",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "ສະຖານະ",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

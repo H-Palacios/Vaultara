@@ -3001,5 +3001,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "7 ദിവസത്തിനുള്ളിൽ",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "30 ദിവസത്തിനുള്ളിൽ",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "പിന്നീട്",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{അടുത്ത {days} ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടുന്നവ: {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{അടുത്ത വർഷത്തിനുള്ളിൽ കാലഹരണപ്പെടുന്നവ: {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} കൂടി}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "{date} വരെ എല്ലാം ശരിയാണ്",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "എല്ലാം കാണുക",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} തിരക്കുള്ളതാണ് ({count}). ആദ്യ പുതുക്കൽ നേരത്തേ തുടങ്ങുക.",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "അക്കൗണ്ടും സുരക്ഷയും",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "ആളുകൾ",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "നിങ്ങളുടെ ഡാറ്റ",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "മുൻഗണനകൾ",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "ഡിസ്‌പ്ലേ",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "എക്സ്പോർട്ടും കലണ്ടറും",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF, കലണ്ടർ ഫയൽ, ലൈവ് കലണ്ടർ ലിങ്ക്",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "ട്യൂട്ടോറിയലുകൾ, Vaultara-യോട് ചോദിക്കുക, പിന്തുണയ്ക്ക് ഇമെയിൽ",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "ഞങ്ങൾക്ക് ഇമെയിൽ ചെയ്യുക",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "ആപ്പ് പതിപ്പും ഫോൺ മോഡലും സ്വയം ചേർക്കും. നിങ്ങളുടെ രേഖകൾ ഒരിക്കലും ഇല്ല.",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "വിലാസം പകർത്തുക",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "ഇമെയിൽ വിലാസം പകർത്തി",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "ഈ ഫോണിൽ ഇമെയിൽ ആപ്പ് കണ്ടെത്തിയില്ല. വിലാസം പകർത്തി ഏത് ഇമെയിൽ സേവനത്തിൽ നിന്നും ഞങ്ങൾക്ക് എഴുതുക.",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "പേജ് {page} / {total} · Vaultara ഉപയോഗിച്ച് തയ്യാറാക്കിയത്",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "രേഖ",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "ഉടമ",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "കാലാവധി",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "നില",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

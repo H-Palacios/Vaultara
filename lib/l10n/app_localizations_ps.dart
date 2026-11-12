@@ -8712,4 +8712,112 @@ class AppLocalizationsPs extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'د خپل حساب د خوندي ساتلو لپاره، د $provider له لارې تایید کړئ چې تاسو یاست.';
   }
+
+  @override
+  String get legendWithinWeek => 'په ۷ ورځو کې';
+
+  @override
+  String get legendWithinMonth => 'په ۳۰ ورځو کې';
+
+  @override
+  String get legendLater => 'وروسته';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'په راتلونکو $days ورځو کې پای ته رسېږي: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'په راتلونکي کال کې پای ته رسېږي: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count نور',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'تر $date پورې هر څه سم دي';
+  }
+
+  @override
+  String get runwaySeeAll => 'ټول وګورئ';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month بوخت دی ($count). لومړی نوي کول وختي پیل کړئ.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'حساب او امنیت';
+
+  @override
+  String get profileSectionPeople => 'خلک';
+
+  @override
+  String get profileSectionYourData => 'ستاسو معلومات';
+
+  @override
+  String get profileSectionPreferences => 'غوره توبونه';
+
+  @override
+  String get displayTitle => 'ښودنه';
+
+  @override
+  String get exportCalendarScreenTitle => 'صادرول او جنتري';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF، د جنترۍ فایل او ژوندی جنترۍ لینک';
+
+  @override
+  String get helpTileSubtitle => 'لارښوونې، له Vaultara وپوښتئ او ملاتړ ته برېښنالیک';
+
+  @override
+  String get helpEmailTitle => 'موږ ته برېښنالیک ولیږئ';
+
+  @override
+  String get helpEmailSubtitle => 'ستاسو د اپ نسخه او د تلیفون ماډل پخپله اضافه کېږي. ستاسو ریکارډونه هېڅکله نه.';
+
+  @override
+  String get helpCopyAddress => 'پته کاپي کړئ';
+
+  @override
+  String get helpAddressCopied => 'د برېښنالیک پته کاپي شوه';
+
+  @override
+  String get helpNoMailApp => 'په دې تلیفون کې د برېښنالیک اپ ونه موندل شو. پته کاپي کړئ او له هر برېښنالیک خدمت څخه موږ ته ولیکئ.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'پاڼه $page له $total · د Vaultara سره چمتو شوې';
+  }
+
+  @override
+  String get proofPackColRecord => 'ریکارډ';
+
+  @override
+  String get proofPackColHolder => 'لرونکی';
+
+  @override
+  String get proofPackColExpires => 'پای';
+
+  @override
+  String get proofPackColStatus => 'حالت';
 }

@@ -8648,4 +8648,112 @@ class AppLocalizationsKo extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return '계정을 안전하게 지키려면 $provider(으)로 본인임을 확인하세요.';
   }
+
+  @override
+  String get legendWithinWeek => '7일 이내';
+
+  @override
+  String get legendWithinMonth => '30일 이내';
+
+  @override
+  String get legendLater => '이후';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '앞으로 $days일 안에 만료: $count개',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '앞으로 1년 안에 만료: $count개',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '외 $count개',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date까지 모두 괜찮아요';
+  }
+
+  @override
+  String get runwaySeeAll => '모두 보기';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month에 갱신이 몰려 있어요($count개). 첫 갱신을 일찍 시작하세요.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => '계정 및 보안';
+
+  @override
+  String get profileSectionPeople => '사람';
+
+  @override
+  String get profileSectionYourData => '내 데이터';
+
+  @override
+  String get profileSectionPreferences => '환경설정';
+
+  @override
+  String get displayTitle => '디스플레이';
+
+  @override
+  String get exportCalendarScreenTitle => '내보내기 및 캘린더';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, 캘린더 파일, 실시간 캘린더 링크';
+
+  @override
+  String get helpTileSubtitle => '튜토리얼, Vaultara에게 묻기, 지원팀에 이메일';
+
+  @override
+  String get helpEmailTitle => '이메일 보내기';
+
+  @override
+  String get helpEmailSubtitle => '앱 버전과 휴대폰 모델은 자동으로 추가돼요. 기록은 절대 포함되지 않아요.';
+
+  @override
+  String get helpCopyAddress => '주소 복사';
+
+  @override
+  String get helpAddressCopied => '이메일 주소를 복사했어요';
+
+  @override
+  String get helpNoMailApp => '이 휴대폰에서 이메일 앱을 찾을 수 없어요. 주소를 복사해 아무 이메일 서비스에서나 보내 주세요.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '$page/$total페이지 · Vaultara로 작성';
+  }
+
+  @override
+  String get proofPackColRecord => '기록';
+
+  @override
+  String get proofPackColHolder => '소유자';
+
+  @override
+  String get proofPackColExpires => '만료';
+
+  @override
+  String get proofPackColStatus => '상태';
 }

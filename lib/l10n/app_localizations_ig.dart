@@ -8660,4 +8660,112 @@ class AppLocalizationsIg extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Iji chekwaa akaụntụ gị, jiri $provider kwado na ọ bụ gị.';
   }
+
+  @override
+  String get legendWithinWeek => 'N\'ime ụbọchị 7';
+
+  @override
+  String get legendWithinMonth => 'N\'ime ụbọchị 30';
+
+  @override
+  String get legendLater => 'Emesịa';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ga-agwụ n\'ụbọchị $days na-abịa: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ga-agwụ n\'afọ na-abịa: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count ọzọ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Ihe niile dị mma ruo $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Hụ ha niile';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month jupụtara ($count). Malite mmeghari ọhụrụ mbụ n\'oge.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Akaụntụ na nchekwa';
+
+  @override
+  String get profileSectionPeople => 'Ndị mmadụ';
+
+  @override
+  String get profileSectionYourData => 'Data gị';
+
+  @override
+  String get profileSectionPreferences => 'Mmasị';
+
+  @override
+  String get displayTitle => 'Ngosipụta';
+
+  @override
+  String get exportCalendarScreenTitle => 'Mbupụ na kalenda';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, faịlụ kalenda na njikọ kalenda dị ndụ';
+
+  @override
+  String get helpTileSubtitle => 'Nkuzi, Jụọ Vaultara na email nye nkwado';
+
+  @override
+  String get helpEmailTitle => 'Zitere anyị email';
+
+  @override
+  String get helpEmailSubtitle => 'A na-agbakwunye ụdị ngwa gị na ụdị ekwentị gị n\'onwe ha. Ndekọ gị adịghị mgbe ọ bụla.';
+
+  @override
+  String get helpCopyAddress => 'Detuo adreesị';
+
+  @override
+  String get helpAddressCopied => 'E detuola adreesị email';
+
+  @override
+  String get helpNoMailApp => 'Ahụghị ngwa email na ekwentị a. Detuo adreesị ahụ ma degara anyị site na ọrụ email ọ bụla.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Peeji $page n\'ime $total · Ejiri Vaultara kwado ya';
+  }
+
+  @override
+  String get proofPackColRecord => 'Ndekọ';
+
+  @override
+  String get proofPackColHolder => 'Onye nwe ya';
+
+  @override
+  String get proofPackColExpires => 'Ọ ga-agwụ';
+
+  @override
+  String get proofPackColStatus => 'Ọnọdụ';
 }

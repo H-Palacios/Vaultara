@@ -8797,4 +8797,112 @@ class AppLocalizationsRo extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Pentru siguranța contului, confirmă cu $provider că ești tu.';
   }
+
+  @override
+  String get legendWithinWeek => 'În 7 zile';
+
+  @override
+  String get legendWithinMonth => 'În 30 de zile';
+
+  @override
+  String get legendLater => 'Mai târziu';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Expiră în următoarele $days de zile: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Expiră în următorul an: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count în plus',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Totul este în regulă până pe $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Vezi tot';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month e aglomerată ($count). Începe prima reînnoire din timp.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Cont și securitate';
+
+  @override
+  String get profileSectionPeople => 'Persoane';
+
+  @override
+  String get profileSectionYourData => 'Datele tale';
+
+  @override
+  String get profileSectionPreferences => 'Preferințe';
+
+  @override
+  String get displayTitle => 'Afișare';
+
+  @override
+  String get exportCalendarScreenTitle => 'Export și calendar';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, fișier de calendar și link de calendar live';
+
+  @override
+  String get helpTileSubtitle => 'Tutoriale, Întreabă Vaultara și e-mail către asistență';
+
+  @override
+  String get helpEmailTitle => 'Scrie-ne';
+
+  @override
+  String get helpEmailSubtitle => 'Versiunea aplicației și modelul telefonului se adaugă automat. Înregistrările tale, niciodată.';
+
+  @override
+  String get helpCopyAddress => 'Copiază adresa';
+
+  @override
+  String get helpAddressCopied => 'Adresa de e-mail a fost copiată';
+
+  @override
+  String get helpNoMailApp => 'Nu s-a găsit nicio aplicație de e-mail pe acest telefon. Copiază adresa și scrie-ne din orice serviciu de e-mail.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Pagina $page din $total · Pregătit cu Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Înregistrare';
+
+  @override
+  String get proofPackColHolder => 'Titular';
+
+  @override
+  String get proofPackColExpires => 'Expiră';
+
+  @override
+  String get proofPackColStatus => 'Stare';
 }

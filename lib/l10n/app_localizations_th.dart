@@ -8636,4 +8636,112 @@ class AppLocalizationsTh extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'เพื่อความปลอดภัยของบัญชี โปรดยืนยันว่าเป็นคุณด้วย $provider';
   }
+
+  @override
+  String get legendWithinWeek => 'ภายใน 7 วัน';
+
+  @override
+  String get legendWithinMonth => 'ภายใน 30 วัน';
+
+  @override
+  String get legendLater => 'ภายหลัง';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count รายการหมดอายุใน $days วันข้างหน้า',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count รายการหมดอายุในปีหน้า',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'อีก $count รายการ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'ทุกอย่างเรียบร้อยถึง $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'ดูทั้งหมด';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month มีงานเยอะ ($count) เริ่มต่ออายุรายการแรกแต่เนิ่นๆ';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'บัญชีและความปลอดภัย';
+
+  @override
+  String get profileSectionPeople => 'บุคคล';
+
+  @override
+  String get profileSectionYourData => 'ข้อมูลของคุณ';
+
+  @override
+  String get profileSectionPreferences => 'การตั้งค่า';
+
+  @override
+  String get displayTitle => 'การแสดงผล';
+
+  @override
+  String get exportCalendarScreenTitle => 'ส่งออกและปฏิทิน';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF ไฟล์ปฏิทิน และลิงก์ปฏิทินแบบสด';
+
+  @override
+  String get helpTileSubtitle => 'บทแนะนำ ถาม Vaultara และอีเมลถึงฝ่ายสนับสนุน';
+
+  @override
+  String get helpEmailTitle => 'ส่งอีเมลถึงเรา';
+
+  @override
+  String get helpEmailSubtitle => 'ระบบจะใส่เวอร์ชันแอปและรุ่นโทรศัพท์ให้อัตโนมัติ แต่จะไม่ใส่ข้อมูลของคุณเด็ดขาด';
+
+  @override
+  String get helpCopyAddress => 'คัดลอกที่อยู่';
+
+  @override
+  String get helpAddressCopied => 'คัดลอกที่อยู่อีเมลแล้ว';
+
+  @override
+  String get helpNoMailApp => 'ไม่พบแอปอีเมลในโทรศัพท์เครื่องนี้ คัดลอกที่อยู่แล้วเขียนถึงเราจากบริการอีเมลใดก็ได้';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'หน้า $page จาก $total · จัดทำด้วย Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'รายการ';
+
+  @override
+  String get proofPackColHolder => 'ผู้ถือ';
+
+  @override
+  String get proofPackColExpires => 'หมดอายุ';
+
+  @override
+  String get proofPackColStatus => 'สถานะ';
 }

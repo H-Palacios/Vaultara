@@ -8712,4 +8712,112 @@ class AppLocalizationsXh extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Ukugcina i-akhawunti yakho ikhuselekile, qinisekisa nge-$provider ukuba nguwe.';
   }
+
+  @override
+  String get legendWithinWeek => 'Kwiintsuku ezi-7';
+
+  @override
+  String get legendWithinMonth => 'Kwiintsuku ezingama-30';
+
+  @override
+  String get legendLater => 'Kamva';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ziphelelwa kwiintsuku ezingama-$days ezizayo: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ziphelelwa kunyaka ozayo: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count ngaphezulu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Konke kulungile de kube ngu-$date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Bona zonke';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return 'U-$month uxakekile ($count). Qala uhlaziyo lokuqala kwangethuba.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'I-akhawunti nokhuseleko';
+
+  @override
+  String get profileSectionPeople => 'Abantu';
+
+  @override
+  String get profileSectionYourData => 'Idatha yakho';
+
+  @override
+  String get profileSectionPreferences => 'Ukhetho';
+
+  @override
+  String get displayTitle => 'Umboniso';
+
+  @override
+  String get exportCalendarScreenTitle => 'Ukuthumela ngaphandle nekhalenda';
+
+  @override
+  String get exportCalendarTileSubtitle => 'I-PDF, ifayile yekhalenda nekhonkco lekhalenda ebukhoma';
+
+  @override
+  String get helpTileSubtitle => 'Izifundo, Buza iVaultara ne-imeyile kwinkxaso';
+
+  @override
+  String get helpEmailTitle => 'Sithumelele i-imeyile';
+
+  @override
+  String get helpEmailSubtitle => 'Inguqulelo ye-app nomzekelo wefowuni yakho zongezwa ngokuzenzekelayo. Iirekhodi zakho azize zibe njalo.';
+
+  @override
+  String get helpCopyAddress => 'Kopa idilesi';
+
+  @override
+  String get helpAddressCopied => 'Idilesi ye-imeyile ikopiwe';
+
+  @override
+  String get helpNoMailApp => 'Akukho app ye-imeyile efunyenweyo kule fowuni. Kopa idilesi uze usibhalele usebenzisa nayiphi na inkonzo ye-imeyile.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Iphepha $page kwali-$total · Ilungiselelwe ngeVaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Irekhodi';
+
+  @override
+  String get proofPackColHolder => 'Umnini';
+
+  @override
+  String get proofPackColExpires => 'Iphelelwa';
+
+  @override
+  String get proofPackColStatus => 'Ubume';
 }

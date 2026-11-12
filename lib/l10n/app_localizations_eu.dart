@@ -8716,4 +8716,114 @@ class AppLocalizationsEu extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Zure kontua seguru mantentzeko, baieztatu zu zarela $provider bidez.';
   }
+
+  @override
+  String get legendWithinWeek => '7 egun barru';
+
+  @override
+  String get legendWithinMonth => '30 egun barru';
+
+  @override
+  String get legendLater => 'Geroago';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count iraungiko dira hurrengo $days egunetan',
+      one: '$count iraungiko da hurrengo $days egunetan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count iraungiko dira datorren urtean',
+      one: '$count iraungiko da datorren urtean',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count gehiago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Dena ondo $date arte';
+  }
+
+  @override
+  String get runwaySeeAll => 'Ikusi guztiak';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month beteta dago ($count). Hasi lehen berritzea goiz.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Kontua eta segurtasuna';
+
+  @override
+  String get profileSectionPeople => 'Pertsonak';
+
+  @override
+  String get profileSectionYourData => 'Zure datuak';
+
+  @override
+  String get profileSectionPreferences => 'Hobespenak';
+
+  @override
+  String get displayTitle => 'Bistaratzea';
+
+  @override
+  String get exportCalendarScreenTitle => 'Esportatu eta egutegia';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDFa, egutegi-fitxategia eta zuzeneko egutegi-esteka';
+
+  @override
+  String get helpTileSubtitle => 'Tutorialak, Galdetu Vaultarari eta laguntzarako posta';
+
+  @override
+  String get helpEmailTitle => 'Idatzi iezaguzu';
+
+  @override
+  String get helpEmailSubtitle => 'Aplikazioaren bertsioa eta telefono-eredua automatikoki gehitzen dira. Zure erregistroak inoiz ez.';
+
+  @override
+  String get helpCopyAddress => 'Kopiatu helbidea';
+
+  @override
+  String get helpAddressCopied => 'Helbide elektronikoa kopiatu da';
+
+  @override
+  String get helpNoMailApp => 'Ez da posta-aplikaziorik aurkitu telefono honetan. Kopiatu helbidea eta idatzi iezaguzu edozein posta-zerbitzutatik.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '$page/$total orria · Vaultararekin prestatua';
+  }
+
+  @override
+  String get proofPackColRecord => 'Erregistroa';
+
+  @override
+  String get proofPackColHolder => 'Titularra';
+
+  @override
+  String get proofPackColExpires => 'Iraungitzea';
+
+  @override
+  String get proofPackColStatus => 'Egoera';
 }

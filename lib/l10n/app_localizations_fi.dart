@@ -8716,4 +8716,112 @@ class AppLocalizationsFi extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Vahvista $provider-tilillä, että kyse on sinusta, jotta tilisi pysyy turvassa.';
   }
+
+  @override
+  String get legendWithinWeek => '7 päivän sisällä';
+
+  @override
+  String get legendWithinMonth => '30 päivän sisällä';
+
+  @override
+  String get legendLater => 'Myöhemmin';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vanhenee seuraavien $days päivän aikana: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vanhenee seuraavan vuoden aikana: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count lisää',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Kaikki kunnossa $date asti';
+  }
+
+  @override
+  String get runwaySeeAll => 'Näytä kaikki';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month on kiireinen ($count). Aloita ensimmäinen uusiminen ajoissa.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Tili ja turvallisuus';
+
+  @override
+  String get profileSectionPeople => 'Ihmiset';
+
+  @override
+  String get profileSectionYourData => 'Tietosi';
+
+  @override
+  String get profileSectionPreferences => 'Asetukset';
+
+  @override
+  String get displayTitle => 'Näyttö';
+
+  @override
+  String get exportCalendarScreenTitle => 'Vienti ja kalenteri';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, kalenteritiedosto ja reaaliaikainen kalenterilinkki';
+
+  @override
+  String get helpTileSubtitle => 'Opetusohjelmat, Kysy Vaultaralta ja sähköposti tukeen';
+
+  @override
+  String get helpEmailTitle => 'Lähetä meille sähköpostia';
+
+  @override
+  String get helpEmailSubtitle => 'Sovelluksen versio ja puhelimen malli lisätään puolestasi. Tietueitasi ei koskaan.';
+
+  @override
+  String get helpCopyAddress => 'Kopioi osoite';
+
+  @override
+  String get helpAddressCopied => 'Sähköpostiosoite kopioitu';
+
+  @override
+  String get helpNoMailApp => 'Tästä puhelimesta ei löytynyt sähköpostisovellusta. Kopioi osoite ja kirjoita meille mistä tahansa sähköpostipalvelusta.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Sivu $page/$total · Laadittu Vaultaralla';
+  }
+
+  @override
+  String get proofPackColRecord => 'Tietue';
+
+  @override
+  String get proofPackColHolder => 'Haltija';
+
+  @override
+  String get proofPackColExpires => 'Vanhenee';
+
+  @override
+  String get proofPackColStatus => 'Tila';
 }

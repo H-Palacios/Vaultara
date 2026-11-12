@@ -8702,4 +8702,112 @@ class AppLocalizationsMn extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Бүртгэлээ аюулгүй байлгахын тулд $provider-ээр өөрийгөө баталгаажуулна уу.';
   }
+
+  @override
+  String get legendWithinWeek => '7 хоногийн дотор';
+
+  @override
+  String get legendWithinMonth => '30 хоногийн дотор';
+
+  @override
+  String get legendLater => 'Дараа нь';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Дараагийн $days хоногт хугацаа дуусна: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Дараагийн жилд хугацаа дуусна: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count бусад',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date хүртэл бүх зүйл хэвийн';
+  }
+
+  @override
+  String get runwaySeeAll => 'Бүгдийг харах';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month завгүй ($count). Эхний сунгалтыг эрт эхлүүлээрэй.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Бүртгэл ба аюулгүй байдал';
+
+  @override
+  String get profileSectionPeople => 'Хүмүүс';
+
+  @override
+  String get profileSectionYourData => 'Таны өгөгдөл';
+
+  @override
+  String get profileSectionPreferences => 'Тохиргоо';
+
+  @override
+  String get displayTitle => 'Дэлгэц';
+
+  @override
+  String get exportCalendarScreenTitle => 'Экспорт ба хуанли';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, хуанлийн файл ба шууд хуанлийн холбоос';
+
+  @override
+  String get helpTileSubtitle => 'Заавар, Vaultara-аас асуух ба тусламж руу имэйл';
+
+  @override
+  String get helpEmailTitle => 'Бидэнд имэйл бичих';
+
+  @override
+  String get helpEmailSubtitle => 'Аппын хувилбар ба утасны загвар автоматаар нэмэгдэнэ. Таны бичлэгүүд хэзээ ч үгүй.';
+
+  @override
+  String get helpCopyAddress => 'Хаяг хуулах';
+
+  @override
+  String get helpAddressCopied => 'Имэйл хаяг хуулагдлаа';
+
+  @override
+  String get helpNoMailApp => 'Энэ утсанд имэйл апп олдсонгүй. Хаягийг хуулж, ямар ч имэйл үйлчилгээнээс бидэнд бичээрэй.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Хуудас $page/$total · Vaultara-аар бэлтгэсэн';
+  }
+
+  @override
+  String get proofPackColRecord => 'Бичлэг';
+
+  @override
+  String get proofPackColHolder => 'Эзэмшигч';
+
+  @override
+  String get proofPackColExpires => 'Дуусах';
+
+  @override
+  String get proofPackColStatus => 'Төлөв';
 }

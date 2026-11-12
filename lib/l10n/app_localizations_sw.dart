@@ -8712,4 +8712,112 @@ class AppLocalizationsSw extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Ili akaunti yako iwe salama, thibitisha kupitia $provider kuwa ni wewe.';
   }
+
+  @override
+  String get legendWithinWeek => 'Ndani ya siku 7';
+
+  @override
+  String get legendWithinMonth => 'Ndani ya siku 30';
+
+  @override
+  String get legendLater => 'Baadaye';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zinaisha ndani ya siku $days zijazo: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zinaisha ndani ya mwaka ujao: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count zaidi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Kila kitu kiko sawa hadi $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Tazama zote';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month ina shughuli nyingi ($count). Anza usasishaji wa kwanza mapema.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Akaunti na usalama';
+
+  @override
+  String get profileSectionPeople => 'Watu';
+
+  @override
+  String get profileSectionYourData => 'Data yako';
+
+  @override
+  String get profileSectionPreferences => 'Mapendeleo';
+
+  @override
+  String get displayTitle => 'Onyesho';
+
+  @override
+  String get exportCalendarScreenTitle => 'Hamisha na kalenda';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, faili ya kalenda na kiungo cha kalenda moja kwa moja';
+
+  @override
+  String get helpTileSubtitle => 'Mafunzo, Uliza Vaultara na barua pepe kwa usaidizi';
+
+  @override
+  String get helpEmailTitle => 'Tutumie barua pepe';
+
+  @override
+  String get helpEmailSubtitle => 'Toleo la programu na modeli ya simu yako huongezwa kiotomatiki. Rekodi zako kamwe.';
+
+  @override
+  String get helpCopyAddress => 'Nakili anwani';
+
+  @override
+  String get helpAddressCopied => 'Anwani ya barua pepe imenakiliwa';
+
+  @override
+  String get helpNoMailApp => 'Hakuna programu ya barua pepe iliyopatikana kwenye simu hii. Nakili anwani na utuandikie kutoka huduma yoyote ya barua pepe.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Ukurasa $page kati ya $total · Imeandaliwa kwa Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Rekodi';
+
+  @override
+  String get proofPackColHolder => 'Mmiliki';
+
+  @override
+  String get proofPackColExpires => 'Inaisha';
+
+  @override
+  String get proofPackColStatus => 'Hali';
 }

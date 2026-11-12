@@ -8712,4 +8712,112 @@ class AppLocalizationsUz extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Hisobingiz xavfsiz bo‘lishi uchun $provider orqali bu siz ekaningizni tasdiqlang.';
   }
+
+  @override
+  String get legendWithinWeek => '7 kun ichida';
+
+  @override
+  String get legendWithinMonth => '30 kun ichida';
+
+  @override
+  String get legendLater => 'Keyinroq';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Keyingi $days kunda muddati tugaydi: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Keyingi yilda muddati tugaydi: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count yana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date gacha hammasi joyida';
+  }
+
+  @override
+  String get runwaySeeAll => 'Hammasini ko‘rish';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month band ($count). Birinchi yangilashni erta boshlang.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Hisob va xavfsizlik';
+
+  @override
+  String get profileSectionPeople => 'Odamlar';
+
+  @override
+  String get profileSectionYourData => 'Ma’lumotlaringiz';
+
+  @override
+  String get profileSectionPreferences => 'Afzalliklar';
+
+  @override
+  String get displayTitle => 'Ko‘rinish';
+
+  @override
+  String get exportCalendarScreenTitle => 'Eksport va taqvim';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, taqvim fayli va jonli taqvim havolasi';
+
+  @override
+  String get helpTileSubtitle => 'Qo‘llanmalar, Vaultara’dan so‘rang va yordamga e-pochta';
+
+  @override
+  String get helpEmailTitle => 'Bizga yozing';
+
+  @override
+  String get helpEmailSubtitle => 'Ilova versiyasi va telefon modeli avtomatik qo‘shiladi. Yozuvlaringiz hech qachon.';
+
+  @override
+  String get helpCopyAddress => 'Manzilni nusxalash';
+
+  @override
+  String get helpAddressCopied => 'E-pochta manzili nusxalandi';
+
+  @override
+  String get helpNoMailApp => 'Bu telefonda e-pochta ilovasi topilmadi. Manzilni nusxalang va istalgan e-pochta xizmatidan bizga yozing.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '$page/$total-sahifa · Vaultara bilan tayyorlangan';
+  }
+
+  @override
+  String get proofPackColRecord => 'Yozuv';
+
+  @override
+  String get proofPackColHolder => 'Egasi';
+
+  @override
+  String get proofPackColExpires => 'Muddati';
+
+  @override
+  String get proofPackColStatus => 'Holat';
 }

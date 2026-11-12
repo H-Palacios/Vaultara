@@ -8712,4 +8712,112 @@ class AppLocalizationsKa extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'ანგარიშის დასაცავად დაადასტურეთ $provider-ით, რომ ეს თქვენ ხართ.';
   }
+
+  @override
+  String get legendWithinWeek => '7 დღის განმავლობაში';
+
+  @override
+  String get legendWithinMonth => '30 დღის განმავლობაში';
+
+  @override
+  String get legendLater => 'მოგვიანებით';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ვადა გასდის მომდევნო $days დღეში: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ვადა გასდის მომდევნო წელს: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count კიდევ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'ყველაფერი რიგზეა $date-მდე';
+  }
+
+  @override
+  String get runwaySeeAll => 'ყველას ნახვა';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month დატვირთულია ($count). პირველი განახლება ადრე დაიწყეთ.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'ანგარიში და უსაფრთხოება';
+
+  @override
+  String get profileSectionPeople => 'ადამიანები';
+
+  @override
+  String get profileSectionYourData => 'თქვენი მონაცემები';
+
+  @override
+  String get profileSectionPreferences => 'პარამეტრები';
+
+  @override
+  String get displayTitle => 'ეკრანი';
+
+  @override
+  String get exportCalendarScreenTitle => 'ექსპორტი და კალენდარი';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, კალენდრის ფაილი და ცოცხალი კალენდრის ბმული';
+
+  @override
+  String get helpTileSubtitle => 'სახელმძღვანელოები, ჰკითხეთ Vaultara-ს და წერილი მხარდაჭერას';
+
+  @override
+  String get helpEmailTitle => 'მოგვწერეთ';
+
+  @override
+  String get helpEmailSubtitle => 'აპის ვერსია და ტელეფონის მოდელი ავტომატურად ემატება. თქვენი ჩანაწერები — არასოდეს.';
+
+  @override
+  String get helpCopyAddress => 'მისამართის კოპირება';
+
+  @override
+  String get helpAddressCopied => 'ელფოსტის მისამართი დაკოპირდა';
+
+  @override
+  String get helpNoMailApp => 'ამ ტელეფონზე ელფოსტის აპი ვერ მოიძებნა. დააკოპირეთ მისამართი და მოგვწერეთ ნებისმიერი ელფოსტის სერვისიდან.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'გვერდი $page / $total · მომზადებულია Vaultara-ით';
+  }
+
+  @override
+  String get proofPackColRecord => 'ჩანაწერი';
+
+  @override
+  String get proofPackColHolder => 'მფლობელი';
+
+  @override
+  String get proofPackColExpires => 'ვადა';
+
+  @override
+  String get proofPackColStatus => 'სტატუსი';
 }

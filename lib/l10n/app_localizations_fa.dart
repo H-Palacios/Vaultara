@@ -8712,4 +8712,112 @@ class AppLocalizationsFa extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'برای امن ماندن حسابتان، با $provider تأیید کنید که خودتان هستید.';
   }
+
+  @override
+  String get legendWithinWeek => 'ظرف ۷ روز';
+
+  @override
+  String get legendWithinMonth => 'ظرف ۳۰ روز';
+
+  @override
+  String get legendLater => 'بعداً';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد در $days روز آینده منقضی می‌شود',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد در سال آینده منقضی می‌شود',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count مورد دیگر',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'همه‌چیز تا $date مرتب است';
+  }
+
+  @override
+  String get runwaySeeAll => 'مشاهده همه';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month شلوغ است ($count). اولین تمدید را زودتر شروع کنید.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'حساب و امنیت';
+
+  @override
+  String get profileSectionPeople => 'افراد';
+
+  @override
+  String get profileSectionYourData => 'داده‌های شما';
+
+  @override
+  String get profileSectionPreferences => 'ترجیحات';
+
+  @override
+  String get displayTitle => 'نمایش';
+
+  @override
+  String get exportCalendarScreenTitle => 'خروجی و تقویم';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF، فایل تقویم و پیوند زنده تقویم';
+
+  @override
+  String get helpTileSubtitle => 'آموزش‌ها، از Vaultara بپرسید و ایمیل به پشتیبانی';
+
+  @override
+  String get helpEmailTitle => 'به ما ایمیل بزنید';
+
+  @override
+  String get helpEmailSubtitle => 'نسخه برنامه و مدل گوشی شما خودکار اضافه می‌شود. سوابق شما هرگز.';
+
+  @override
+  String get helpCopyAddress => 'کپی نشانی';
+
+  @override
+  String get helpAddressCopied => 'نشانی ایمیل کپی شد';
+
+  @override
+  String get helpNoMailApp => 'هیچ برنامه ایمیلی روی این گوشی پیدا نشد. نشانی را کپی کنید و از هر سرویس ایمیلی برای ما بنویسید.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'صفحه $page از $total · تهیه‌شده با Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'سابقه';
+
+  @override
+  String get proofPackColHolder => 'دارنده';
+
+  @override
+  String get proofPackColExpires => 'انقضا';
+
+  @override
+  String get proofPackColStatus => 'وضعیت';
 }

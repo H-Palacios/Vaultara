@@ -8711,4 +8711,112 @@ class AppLocalizationsSo extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Si koontadaadu u ammaan ahaato, ku xaqiiji $provider inaad adigu tahay.';
   }
+
+  @override
+  String get legendWithinWeek => '7 maalmood gudahood';
+
+  @override
+  String get legendWithinMonth => '30 maalmood gudahood';
+
+  @override
+  String get legendLater => 'Mar dambe';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Waxay dhacayaan $days maalmood ee soo socda: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Waxay dhacayaan sanadka soo socda: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count kale',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Wax walba waa hagaagsan yihiin ilaa $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Arag dhammaan';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month waa mashquul ($count). Bilow cusboonaysiinta ugu horreysa goor hore.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Akoon iyo amni';
+
+  @override
+  String get profileSectionPeople => 'Dad';
+
+  @override
+  String get profileSectionYourData => 'Xogtaada';
+
+  @override
+  String get profileSectionPreferences => 'Doorbidyo';
+
+  @override
+  String get displayTitle => 'Muuqaal';
+
+  @override
+  String get exportCalendarScreenTitle => 'Dhoofin iyo kalandar';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, faylka kalandarka iyo xiriirinta kalandarka tooska ah';
+
+  @override
+  String get helpTileSubtitle => 'Casharro, Weydii Vaultara iyo iimayl taageerada';
+
+  @override
+  String get helpEmailTitle => 'Iimayl noo soo dir';
+
+  @override
+  String get helpEmailSubtitle => 'Nooca abka iyo moodelka taleefankaaga si toos ah ayaa loogu daraa. Diiwaannadaada weligood.';
+
+  @override
+  String get helpCopyAddress => 'Koobiyee cinwaanka';
+
+  @override
+  String get helpAddressCopied => 'Cinwaanka iimaylka waa la koobiyeeyay';
+
+  @override
+  String get helpNoMailApp => 'Ab iimayl lagama helin taleefankan. Koobiyee cinwaanka oo nooga soo qor adeeg kasta oo iimayl ah.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Bogga $page ee $total · Waxaa lagu diyaariyay Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Diiwaan';
+
+  @override
+  String get proofPackColHolder => 'Haystaha';
+
+  @override
+  String get proofPackColExpires => 'Dhacaya';
+
+  @override
+  String get proofPackColStatus => 'Xaalad';
 }

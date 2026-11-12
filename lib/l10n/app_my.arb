@@ -3001,5 +3001,152 @@
         "type": "String"
       }
     }
+  },
+  "legendWithinWeek": "၇ ရက်အတွင်း",
+  "@legendWithinWeek": {
+    "description": "Calendar legend: records expiring within 7 days (orange)."
+  },
+  "legendWithinMonth": "၃၀ ရက်အတွင်း",
+  "@legendWithinMonth": {
+    "description": "Calendar legend: records expiring within 30 days (amber)."
+  },
+  "legendLater": "နောက်မှ",
+  "@legendLater": {
+    "description": "Calendar legend: records expiring after 30 days (green)."
+  },
+  "runwayCount": "{count, plural, other{နောက် {days} ရက်အတွင်း သက်တမ်းကုန်မည်- {count}}}",
+  "@runwayCount": {
+    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayCountYear": "{count, plural, other{နောက်တစ်နှစ်အတွင်း သက်တမ်းကုန်မည်- {count}}}",
+  "@runwayCountYear": {
+    "description": "Runway heading when the window is a year.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayMore": "{count, plural, other{+{count} ထပ်}}",
+  "@runwayMore": {
+    "description": "Under the runway rows: how many more records are not listed.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "runwayAllClear": "{date} အထိ အားလုံးအဆင်ပြေသည်",
+  "@runwayAllClear": {
+    "description": "Shown when nothing expires within a year; date is the next expiry.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "runwaySeeAll": "အားလုံးကြည့်ရန်",
+  "@runwaySeeAll": {
+    "description": "Button that opens the full list of records in the runway window."
+  },
+  "runwayBusyMonth": "{month} တွင် အလုပ်များသည် ({count})။ ပထမသက်တမ်းတိုးခြင်းကို စောစောစတင်ပါ။",
+  "@runwayBusyMonth": {
+    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileSectionAccountSecurity": "အကောင့်နှင့် လုံခြုံရေး",
+  "@profileSectionAccountSecurity": {
+    "description": "profileSectionAccountSecurity"
+  },
+  "profileSectionPeople": "လူများ",
+  "@profileSectionPeople": {
+    "description": "profileSectionPeople"
+  },
+  "profileSectionYourData": "သင့်ဒေတာ",
+  "@profileSectionYourData": {
+    "description": "profileSectionYourData"
+  },
+  "profileSectionPreferences": "ရွေးချယ်မှုများ",
+  "@profileSectionPreferences": {
+    "description": "profileSectionPreferences"
+  },
+  "displayTitle": "ပြသမှု",
+  "@displayTitle": {
+    "description": "displayTitle"
+  },
+  "exportCalendarScreenTitle": "ထုတ်ယူခြင်းနှင့် ပြက္ခဒိန်",
+  "@exportCalendarScreenTitle": {
+    "description": "exportCalendarScreenTitle"
+  },
+  "exportCalendarTileSubtitle": "PDF၊ ပြက္ခဒိန်ဖိုင်နှင့် တိုက်ရိုက်ပြက္ခဒိန်လင့်ခ်",
+  "@exportCalendarTileSubtitle": {
+    "description": "exportCalendarTileSubtitle"
+  },
+  "helpTileSubtitle": "သင်ခန်းစာများ၊ Vaultara ကိုမေးရန်နှင့် ပံ့ပိုးမှုသို့ အီးမေးလ်",
+  "@helpTileSubtitle": {
+    "description": "helpTileSubtitle"
+  },
+  "helpEmailTitle": "ကျွန်ုပ်တို့ထံ အီးမေးလ်ပို့ပါ",
+  "@helpEmailTitle": {
+    "description": "helpEmailTitle"
+  },
+  "helpEmailSubtitle": "သင့်အက်ပ်ဗားရှင်းနှင့် ဖုန်းမော်ဒယ်ကို အလိုအလျောက် ထည့်ပေးသည်။ သင့်မှတ်တမ်းများကို ဘယ်တော့မှ မထည့်ပါ။",
+  "@helpEmailSubtitle": {
+    "description": "helpEmailSubtitle"
+  },
+  "helpCopyAddress": "လိပ်စာကူးရန်",
+  "@helpCopyAddress": {
+    "description": "helpCopyAddress"
+  },
+  "helpAddressCopied": "အီးမေးလ်လိပ်စာ ကူးယူပြီး",
+  "@helpAddressCopied": {
+    "description": "helpAddressCopied"
+  },
+  "helpNoMailApp": "ဤဖုန်းတွင် အီးမေးလ်အက်ပ် မတွေ့ပါ။ လိပ်စာကိုကူးပြီး မည်သည့်အီးမေးလ်ဝန်ဆောင်မှုမှမဆို ကျွန်ုပ်တို့ထံ ရေးပါ။",
+  "@helpNoMailApp": {
+    "description": "helpNoMailApp"
+  },
+  "proofPackFooter": "စာမျက်နှာ {page} / {total} · Vaultara ဖြင့် ပြင်ဆင်ထားသည်",
+  "@proofPackFooter": {
+    "description": "Footer on every page of the proof pack PDF.",
+    "placeholders": {
+      "page": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "proofPackColRecord": "မှတ်တမ်း",
+  "@proofPackColRecord": {
+    "description": "proofPackColRecord"
+  },
+  "proofPackColHolder": "ကိုင်ဆောင်သူ",
+  "@proofPackColHolder": {
+    "description": "proofPackColHolder"
+  },
+  "proofPackColExpires": "သက်တမ်းကုန်",
+  "@proofPackColExpires": {
+    "description": "proofPackColExpires"
+  },
+  "proofPackColStatus": "အခြေအနေ",
+  "@proofPackColStatus": {
+    "description": "proofPackColStatus"
   }
 }

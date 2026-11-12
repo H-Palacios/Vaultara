@@ -8712,4 +8712,112 @@ class AppLocalizationsAm extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'መለያዎ ደህንነቱ እንዲጠበቅ፣ እርስዎ መሆንዎን በ$provider ያረጋግጡ።';
   }
+
+  @override
+  String get legendWithinWeek => 'በ7 ቀናት ውስጥ';
+
+  @override
+  String get legendWithinMonth => 'በ30 ቀናት ውስጥ';
+
+  @override
+  String get legendLater => 'በኋላ';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'በሚቀጥሉት $days ቀናት የሚያበቃ: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'በሚቀጥለው ዓመት የሚያበቃ: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count ተጨማሪ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'እስከ $date ሁሉም ደህና ነው';
+  }
+
+  @override
+  String get runwaySeeAll => 'ሁሉንም ይመልከቱ';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month የተጨናነቀ ነው ($count)። የመጀመሪያውን እድሳት ቀደም ብለው ይጀምሩ።';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'መለያ እና ደህንነት';
+
+  @override
+  String get profileSectionPeople => 'ሰዎች';
+
+  @override
+  String get profileSectionYourData => 'የእርስዎ ውሂብ';
+
+  @override
+  String get profileSectionPreferences => 'ምርጫዎች';
+
+  @override
+  String get displayTitle => 'ማሳያ';
+
+  @override
+  String get exportCalendarScreenTitle => 'ወደ ውጭ መላክ እና ቀን መቁጠሪያ';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF፣ የቀን መቁጠሪያ ፋይል እና የቀጥታ የቀን መቁጠሪያ አገናኝ';
+
+  @override
+  String get helpTileSubtitle => 'መማሪያዎች፣ Vaultaraን ይጠይቁ እና ለድጋፍ ኢሜይል';
+
+  @override
+  String get helpEmailTitle => 'ኢሜይል ይላኩልን';
+
+  @override
+  String get helpEmailSubtitle => 'የመተግበሪያዎ ስሪት እና የስልክ ሞዴል ይታከላሉ። መዝገቦችዎ በጭራሽ አይታከሉም።';
+
+  @override
+  String get helpCopyAddress => 'አድራሻ ቅዳ';
+
+  @override
+  String get helpAddressCopied => 'የኢሜይል አድራሻ ተቀድቷል';
+
+  @override
+  String get helpNoMailApp => 'በዚህ ስልክ ላይ የኢሜይል መተግበሪያ አልተገኘም። አድራሻውን ቀድተው ከማንኛውም የኢሜይል አገልግሎት ይጻፉልን።';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'ገጽ $page ከ$total · በVaultara የተዘጋጀ';
+  }
+
+  @override
+  String get proofPackColRecord => 'መዝገብ';
+
+  @override
+  String get proofPackColHolder => 'ባለቤት';
+
+  @override
+  String get proofPackColExpires => 'የሚያበቃበት';
+
+  @override
+  String get proofPackColStatus => 'ሁኔታ';
 }

@@ -8706,4 +8706,114 @@ class AppLocalizationsFil extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Para manatiling ligtas ang account mo, kumpirmahin gamit ang $provider na ikaw ito.';
   }
+
+  @override
+  String get legendWithinWeek => 'Sa loob ng 7 araw';
+
+  @override
+  String get legendWithinMonth => 'Sa loob ng 30 araw';
+
+  @override
+  String get legendLater => 'Mamaya pa';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ang mag-e-expire sa susunod na $days araw',
+      one: '$count ang mag-e-expire sa susunod na $days araw',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ang mag-e-expire sa susunod na taon',
+      one: '$count ang mag-e-expire sa susunod na taon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count pa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Ayos lahat hanggang $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Tingnan lahat';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return 'Abala ang $month ($count). Simulan nang maaga ang unang pag-renew.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Account at seguridad';
+
+  @override
+  String get profileSectionPeople => 'Mga tao';
+
+  @override
+  String get profileSectionYourData => 'Iyong data';
+
+  @override
+  String get profileSectionPreferences => 'Mga kagustuhan';
+
+  @override
+  String get displayTitle => 'Display';
+
+  @override
+  String get exportCalendarScreenTitle => 'Export at kalendaryo';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, calendar file at live na calendar link';
+
+  @override
+  String get helpTileSubtitle => 'Mga tutorial, Tanungin si Vaultara at email sa suporta';
+
+  @override
+  String get helpEmailTitle => 'Mag-email sa amin';
+
+  @override
+  String get helpEmailSubtitle => 'Kusang idinadagdag ang bersyon ng app at modelo ng telepono mo. Hindi kailanman ang mga record mo.';
+
+  @override
+  String get helpCopyAddress => 'Kopyahin ang address';
+
+  @override
+  String get helpAddressCopied => 'Nakopya ang email address';
+
+  @override
+  String get helpNoMailApp => 'Walang nakitang email app sa teleponong ito. Kopyahin ang address at sumulat sa amin mula sa kahit anong email service.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Pahina $page ng $total · Inihanda gamit ang Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Record';
+
+  @override
+  String get proofPackColHolder => 'May-hawak';
+
+  @override
+  String get proofPackColExpires => 'Mag-e-expire';
+
+  @override
+  String get proofPackColStatus => 'Status';
 }

@@ -8648,4 +8648,112 @@ class AppLocalizationsMs extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Untuk memastikan akaun anda selamat, sahkan bahawa ini anda dengan $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'Dalam 7 hari';
+
+  @override
+  String get legendWithinMonth => 'Dalam 30 hari';
+
+  @override
+  String get legendLater => 'Kemudian';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tamat tempoh dalam $days hari akan datang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tamat tempoh dalam setahun akan datang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count lagi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Semuanya baik sehingga $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Lihat semua';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month sibuk ($count). Mulakan pembaharuan pertama lebih awal.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Akaun dan keselamatan';
+
+  @override
+  String get profileSectionPeople => 'Orang';
+
+  @override
+  String get profileSectionYourData => 'Data anda';
+
+  @override
+  String get profileSectionPreferences => 'Keutamaan';
+
+  @override
+  String get displayTitle => 'Paparan';
+
+  @override
+  String get exportCalendarScreenTitle => 'Eksport dan kalendar';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, fail kalendar dan pautan kalendar langsung';
+
+  @override
+  String get helpTileSubtitle => 'Tutorial, Tanya Vaultara dan e-mel kepada sokongan';
+
+  @override
+  String get helpEmailTitle => 'E-mel kami';
+
+  @override
+  String get helpEmailSubtitle => 'Versi apl dan model telefon anda ditambah secara automatik. Rekod anda tidak sekali-kali.';
+
+  @override
+  String get helpCopyAddress => 'Salin alamat';
+
+  @override
+  String get helpAddressCopied => 'Alamat e-mel disalin';
+
+  @override
+  String get helpNoMailApp => 'Tiada apl e-mel ditemui pada telefon ini. Salin alamat dan tulis kepada kami daripada mana-mana perkhidmatan e-mel.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Halaman $page daripada $total · Disediakan dengan Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Rekod';
+
+  @override
+  String get proofPackColHolder => 'Pemegang';
+
+  @override
+  String get proofPackColExpires => 'Tamat tempoh';
+
+  @override
+  String get proofPackColStatus => 'Status';
 }

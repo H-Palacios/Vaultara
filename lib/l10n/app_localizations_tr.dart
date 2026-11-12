@@ -8712,4 +8712,112 @@ class AppLocalizationsTr extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Hesabınızın güvenliği için $provider ile siz olduğunuzu onaylayın.';
   }
+
+  @override
+  String get legendWithinWeek => '7 gün içinde';
+
+  @override
+  String get legendWithinMonth => '30 gün içinde';
+
+  @override
+  String get legendLater => 'Daha sonra';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Önümüzdeki $days günde sona eriyor: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Önümüzdeki yıl sona eriyor: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count daha',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date tarihine kadar her şey yolunda';
+  }
+
+  @override
+  String get runwaySeeAll => 'Tümünü gör';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month yoğun ($count). İlk yenilemeye erken başlayın.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Hesap ve güvenlik';
+
+  @override
+  String get profileSectionPeople => 'Kişiler';
+
+  @override
+  String get profileSectionYourData => 'Verileriniz';
+
+  @override
+  String get profileSectionPreferences => 'Tercihler';
+
+  @override
+  String get displayTitle => 'Görünüm';
+
+  @override
+  String get exportCalendarScreenTitle => 'Dışa aktarma ve takvim';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, takvim dosyası ve canlı takvim bağlantısı';
+
+  @override
+  String get helpTileSubtitle => 'Eğitimler, Vaultara\'ya sorun ve desteğe e-posta';
+
+  @override
+  String get helpEmailTitle => 'Bize e-posta gönderin';
+
+  @override
+  String get helpEmailSubtitle => 'Uygulama sürümünüz ve telefon modeliniz otomatik eklenir. Kayıtlarınız asla.';
+
+  @override
+  String get helpCopyAddress => 'Adresi kopyala';
+
+  @override
+  String get helpAddressCopied => 'E-posta adresi kopyalandı';
+
+  @override
+  String get helpNoMailApp => 'Bu telefonda e-posta uygulaması bulunamadı. Adresi kopyalayın ve herhangi bir e-posta hizmetinden bize yazın.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Sayfa $page/$total · Vaultara ile hazırlandı';
+  }
+
+  @override
+  String get proofPackColRecord => 'Kayıt';
+
+  @override
+  String get proofPackColHolder => 'Sahibi';
+
+  @override
+  String get proofPackColExpires => 'Bitiş';
+
+  @override
+  String get proofPackColStatus => 'Durum';
 }

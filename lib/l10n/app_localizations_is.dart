@@ -8711,4 +8711,112 @@ class AppLocalizationsIs extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Til að halda reikningnum þínum öruggum skaltu staðfesta með $provider að þetta sért þú.';
   }
+
+  @override
+  String get legendWithinWeek => 'Innan 7 daga';
+
+  @override
+  String get legendWithinMonth => 'Innan 30 daga';
+
+  @override
+  String get legendLater => 'Síðar';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rennur út á næstu $days dögum: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rennur út á næsta ári: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count í viðbót',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Allt í lagi til $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Sjá allt';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month er annasamur ($count). Byrjaðu fyrstu endurnýjunina snemma.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Reikningur og öryggi';
+
+  @override
+  String get profileSectionPeople => 'Fólk';
+
+  @override
+  String get profileSectionYourData => 'Gögnin þín';
+
+  @override
+  String get profileSectionPreferences => 'Kjörstillingar';
+
+  @override
+  String get displayTitle => 'Skjár';
+
+  @override
+  String get exportCalendarScreenTitle => 'Útflutningur og dagatal';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, dagatalsskrá og lifandi dagatalstengill';
+
+  @override
+  String get helpTileSubtitle => 'Leiðbeiningar, Spyrðu Vaultara og tölvupóstur til þjónustu';
+
+  @override
+  String get helpEmailTitle => 'Sendu okkur póst';
+
+  @override
+  String get helpEmailSubtitle => 'Útgáfa forritsins og gerð símans bætast sjálfkrafa við. Færslurnar þínar aldrei.';
+
+  @override
+  String get helpCopyAddress => 'Afrita netfang';
+
+  @override
+  String get helpAddressCopied => 'Netfang afritað';
+
+  @override
+  String get helpNoMailApp => 'Ekkert póstforrit fannst í þessum síma. Afritaðu netfangið og skrifaðu okkur úr hvaða póstþjónustu sem er.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Síða $page af $total · Útbúið með Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Færsla';
+
+  @override
+  String get proofPackColHolder => 'Handhafi';
+
+  @override
+  String get proofPackColExpires => 'Rennur út';
+
+  @override
+  String get proofPackColStatus => 'Staða';
 }

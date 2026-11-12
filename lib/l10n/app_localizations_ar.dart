@@ -8962,4 +8962,112 @@ class AppLocalizationsAr extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'للحفاظ على أمان حسابك، أكّد هويتك باستخدام $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'خلال 7 أيام';
+
+  @override
+  String get legendWithinMonth => 'خلال 30 يومًا';
+
+  @override
+  String get legendLater => 'لاحقًا';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تنتهي خلال الأيام الـ$days القادمة: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تنتهي خلال السنة القادمة: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count أخرى',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'كل شيء على ما يرام حتى $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'عرض الكل';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return 'شهر $month مزدحم ($count). ابدأ التجديد الأول مبكرًا.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'الحساب والأمان';
+
+  @override
+  String get profileSectionPeople => 'الأشخاص';
+
+  @override
+  String get profileSectionYourData => 'بياناتك';
+
+  @override
+  String get profileSectionPreferences => 'التفضيلات';
+
+  @override
+  String get displayTitle => 'العرض';
+
+  @override
+  String get exportCalendarScreenTitle => 'التصدير والتقويم';
+
+  @override
+  String get exportCalendarTileSubtitle => 'ملف PDF وملف تقويم ورابط تقويم مباشر';
+
+  @override
+  String get helpTileSubtitle => 'الدروس، واسأل Vaultara، والبريد إلى الدعم';
+
+  @override
+  String get helpEmailTitle => 'راسلنا';
+
+  @override
+  String get helpEmailSubtitle => 'يُضاف إصدار التطبيق وطراز الهاتف تلقائيًا. أما سجلاتك فلا تُضاف أبدًا.';
+
+  @override
+  String get helpCopyAddress => 'نسخ العنوان';
+
+  @override
+  String get helpAddressCopied => 'تم نسخ عنوان البريد الإلكتروني';
+
+  @override
+  String get helpNoMailApp => 'لم يُعثر على تطبيق بريد إلكتروني على هذا الهاتف. انسخ العنوان وراسلنا من أي خدمة بريد.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'الصفحة $page من $total · أُعدّت باستخدام Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'السجل';
+
+  @override
+  String get proofPackColHolder => 'الحامل';
+
+  @override
+  String get proofPackColExpires => 'ينتهي في';
+
+  @override
+  String get proofPackColStatus => 'الحالة';
 }

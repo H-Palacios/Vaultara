@@ -8726,4 +8726,114 @@ class AppLocalizationsFr extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Pour protéger votre compte, confirmez votre identité avec $provider.';
   }
+
+  @override
+  String get legendWithinWeek => 'Sous 7 jours';
+
+  @override
+  String get legendWithinMonth => 'Sous 30 jours';
+
+  @override
+  String get legendLater => 'Plus tard';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expirent dans les $days prochains jours',
+      one: '$count expire dans les $days prochains jours',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count expirent dans l\'année à venir',
+      one: '$count expire dans l\'année à venir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count de plus',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Tout est en ordre jusqu\'au $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Tout voir';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month est chargé ($count). Commencez tôt le premier renouvellement.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Compte et sécurité';
+
+  @override
+  String get profileSectionPeople => 'Personnes';
+
+  @override
+  String get profileSectionYourData => 'Vos données';
+
+  @override
+  String get profileSectionPreferences => 'Préférences';
+
+  @override
+  String get displayTitle => 'Affichage';
+
+  @override
+  String get exportCalendarScreenTitle => 'Export et calendrier';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, fichier de calendrier et lien de calendrier en direct';
+
+  @override
+  String get helpTileSubtitle => 'Tutoriels, Demander à Vaultara et e-mail au support';
+
+  @override
+  String get helpEmailTitle => 'Nous écrire';
+
+  @override
+  String get helpEmailSubtitle => 'La version de l\'app et le modèle du téléphone sont ajoutés pour vous. Vos fiches, jamais.';
+
+  @override
+  String get helpCopyAddress => 'Copier l\'adresse';
+
+  @override
+  String get helpAddressCopied => 'Adresse e-mail copiée';
+
+  @override
+  String get helpNoMailApp => 'Aucune app de messagerie n\'a été trouvée sur ce téléphone. Copiez l\'adresse et écrivez-nous depuis n\'importe quel service de messagerie.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Page $page sur $total · Préparé avec Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Fiche';
+
+  @override
+  String get proofPackColHolder => 'Titulaire';
+
+  @override
+  String get proofPackColExpires => 'Expire';
+
+  @override
+  String get proofPackColStatus => 'Statut';
 }

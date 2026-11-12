@@ -8648,6 +8648,114 @@ class AppLocalizationsZh extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return '为保护你的账户安全，请使用 $provider 确认是你本人。';
   }
+
+  @override
+  String get legendWithinWeek => '7天内';
+
+  @override
+  String get legendWithinMonth => '30天内';
+
+  @override
+  String get legendLater => '之后';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未来$days天内到期：$count项',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未来一年内到期：$count项',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '另外$count项',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date之前一切正常';
+  }
+
+  @override
+  String get runwaySeeAll => '查看全部';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month比较集中（$count项）。请尽早开始第一项续期。';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => '账户与安全';
+
+  @override
+  String get profileSectionPeople => '人员';
+
+  @override
+  String get profileSectionYourData => '你的数据';
+
+  @override
+  String get profileSectionPreferences => '偏好设置';
+
+  @override
+  String get displayTitle => '显示';
+
+  @override
+  String get exportCalendarScreenTitle => '导出与日历';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF、日历文件和实时日历链接';
+
+  @override
+  String get helpTileSubtitle => '教程、询问 Vaultara 和发邮件给客服';
+
+  @override
+  String get helpEmailTitle => '发送邮件';
+
+  @override
+  String get helpEmailSubtitle => '应用版本和手机型号会自动附上，绝不会附上你的记录。';
+
+  @override
+  String get helpCopyAddress => '复制地址';
+
+  @override
+  String get helpAddressCopied => '已复制邮箱地址';
+
+  @override
+  String get helpNoMailApp => '这部手机上没有找到邮件应用。请复制地址，然后通过任意邮件服务写信给我们。';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '第 $page 页，共 $total 页 · 由 Vaultara 生成';
+  }
+
+  @override
+  String get proofPackColRecord => '记录';
+
+  @override
+  String get proofPackColHolder => '持有人';
+
+  @override
+  String get proofPackColExpires => '到期';
+
+  @override
+  String get proofPackColStatus => '状态';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -17282,6 +17390,114 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String reauthWithProvider(String provider) {
     return '为保护你的账户安全，请使用 $provider 确认是你本人。';
   }
+
+  @override
+  String get legendWithinWeek => '7天内';
+
+  @override
+  String get legendWithinMonth => '30天内';
+
+  @override
+  String get legendLater => '之后';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未来$days天内到期：$count项',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未来一年内到期：$count项',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '另外$count项',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date之前一切正常';
+  }
+
+  @override
+  String get runwaySeeAll => '查看全部';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month比较集中（$count项）。请尽早开始第一项续期。';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => '账户与安全';
+
+  @override
+  String get profileSectionPeople => '人员';
+
+  @override
+  String get profileSectionYourData => '你的数据';
+
+  @override
+  String get profileSectionPreferences => '偏好设置';
+
+  @override
+  String get displayTitle => '显示';
+
+  @override
+  String get exportCalendarScreenTitle => '导出与日历';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF、日历文件和实时日历链接';
+
+  @override
+  String get helpTileSubtitle => '教程、询问 Vaultara 和发邮件给客服';
+
+  @override
+  String get helpEmailTitle => '发送邮件';
+
+  @override
+  String get helpEmailSubtitle => '应用版本和手机型号会自动附上，绝不会附上你的记录。';
+
+  @override
+  String get helpCopyAddress => '复制地址';
+
+  @override
+  String get helpAddressCopied => '已复制邮箱地址';
+
+  @override
+  String get helpNoMailApp => '这部手机上没有找到邮件应用。请复制地址，然后通过任意邮件服务写信给我们。';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '第 $page 页，共 $total 页 · 由 Vaultara 生成';
+  }
+
+  @override
+  String get proofPackColRecord => '记录';
+
+  @override
+  String get proofPackColHolder => '持有人';
+
+  @override
+  String get proofPackColExpires => '到期';
+
+  @override
+  String get proofPackColStatus => '状态';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -25916,4 +26132,112 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String reauthWithProvider(String provider) {
     return '為了保護你的帳戶安全，請使用 $provider 確認是你本人。';
   }
+
+  @override
+  String get legendWithinWeek => '7 天內';
+
+  @override
+  String get legendWithinMonth => '30 天內';
+
+  @override
+  String get legendLater => '之後';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未來 $days 天內到期：$count 項',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '未來一年內到期：$count 項',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '另外 $count 項',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return '$date 之前一切正常';
+  }
+
+  @override
+  String get runwaySeeAll => '查看全部';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month比較集中（$count 項）。請盡早開始第一項續期。';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => '帳戶與安全';
+
+  @override
+  String get profileSectionPeople => '人員';
+
+  @override
+  String get profileSectionYourData => '你的資料';
+
+  @override
+  String get profileSectionPreferences => '偏好設定';
+
+  @override
+  String get displayTitle => '顯示';
+
+  @override
+  String get exportCalendarScreenTitle => '匯出與行事曆';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF、行事曆檔案和即時行事曆連結';
+
+  @override
+  String get helpTileSubtitle => '教學、詢問 Vaultara 和寄信給客服';
+
+  @override
+  String get helpEmailTitle => '寄信給我們';
+
+  @override
+  String get helpEmailSubtitle => '應用程式版本和手機型號會自動附上，絕不會附上你的記錄。';
+
+  @override
+  String get helpCopyAddress => '複製地址';
+
+  @override
+  String get helpAddressCopied => '已複製電子郵件地址';
+
+  @override
+  String get helpNoMailApp => '這支手機上找不到郵件應用程式。請複製地址，然後透過任何郵件服務寫信給我們。';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return '第 $page 頁，共 $total 頁 · 由 Vaultara 製作';
+  }
+
+  @override
+  String get proofPackColRecord => '記錄';
+
+  @override
+  String get proofPackColHolder => '持有人';
+
+  @override
+  String get proofPackColExpires => '到期';
+
+  @override
+  String get proofPackColStatus => '狀態';
 }

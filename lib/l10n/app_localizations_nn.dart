@@ -8716,4 +8716,114 @@ class AppLocalizationsNn extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Stadfest med $provider at det er deg, så kontoen din held seg trygg.';
   }
+
+  @override
+  String get legendWithinWeek => 'Innan 7 dagar';
+
+  @override
+  String get legendWithinMonth => 'Innan 30 dagar';
+
+  @override
+  String get legendLater => 'Seinare';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count går ut i løpet av dei neste $days dagane',
+      one: '$count går ut i løpet av dei neste $days dagane',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count går ut i løpet av det neste året',
+      one: '$count går ut i løpet av det neste året',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count til',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Alt i orden til $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Sjå alle';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return '$month er travel ($count). Start den første fornyinga tidleg.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Konto og tryggleik';
+
+  @override
+  String get profileSectionPeople => 'Personar';
+
+  @override
+  String get profileSectionYourData => 'Dine data';
+
+  @override
+  String get profileSectionPreferences => 'Innstillingar';
+
+  @override
+  String get displayTitle => 'Vising';
+
+  @override
+  String get exportCalendarScreenTitle => 'Eksport og kalender';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, kalenderfil og direkte kalenderlenkje';
+
+  @override
+  String get helpTileSubtitle => 'Rettleiingar, Spør Vaultara og e-post til kundestøtte';
+
+  @override
+  String get helpEmailTitle => 'Send oss e-post';
+
+  @override
+  String get helpEmailSubtitle => 'Appversjonen og telefonmodellen vert lagde til automatisk. Oppføringane dine aldri.';
+
+  @override
+  String get helpCopyAddress => 'Kopier adresse';
+
+  @override
+  String get helpAddressCopied => 'E-postadressa er kopiert';
+
+  @override
+  String get helpNoMailApp => 'Fann ingen e-postapp på denne telefonen. Kopier adressa og skriv til oss frå kva e-postteneste som helst.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Side $page av $total · Laga med Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Oppføring';
+
+  @override
+  String get proofPackColHolder => 'Innehavar';
+
+  @override
+  String get proofPackColExpires => 'Går ut';
+
+  @override
+  String get proofPackColStatus => 'Status';
 }

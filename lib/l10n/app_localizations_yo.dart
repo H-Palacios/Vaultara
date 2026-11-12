@@ -8660,4 +8660,112 @@ class AppLocalizationsYo extends AppLocalizations {
   String reauthWithProvider(String provider) {
     return 'Láti dáàbò bo àkáǹtì rẹ, fi $provider jẹ́rìí pé ìwọ ni.';
   }
+
+  @override
+  String get legendWithinWeek => 'Láàrin ọjọ́ 7';
+
+  @override
+  String get legendWithinMonth => 'Láàrin ọjọ́ 30';
+
+  @override
+  String get legendLater => 'Lẹ́yìn náà';
+
+  @override
+  String runwayCount(int count, int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yóò parí láàrin ọjọ́ $days tó ń bọ̀: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayCountYear(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yóò parí láàrin ọdún tó ń bọ̀: $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '+$count sí i',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String runwayAllClear(String date) {
+    return 'Gbogbo nǹkan dára títí di $date';
+  }
+
+  @override
+  String get runwaySeeAll => 'Wo gbogbo rẹ̀';
+
+  @override
+  String runwayBusyMonth(String month, int count) {
+    return 'Oṣù $month kún ($count). Bẹ̀rẹ̀ ìsọdọ̀tun àkọ́kọ́ ní kùtùkùtù.';
+  }
+
+  @override
+  String get profileSectionAccountSecurity => 'Àkáǹtì àti ààbò';
+
+  @override
+  String get profileSectionPeople => 'Àwọn ènìyàn';
+
+  @override
+  String get profileSectionYourData => 'Dátà rẹ';
+
+  @override
+  String get profileSectionPreferences => 'Àwọn ààyò';
+
+  @override
+  String get displayTitle => 'Ìfihàn';
+
+  @override
+  String get exportCalendarScreenTitle => 'Gbé jáde àti kàlẹ́ńdà';
+
+  @override
+  String get exportCalendarTileSubtitle => 'PDF, fáìlì kàlẹ́ńdà àti ìjápọ̀ kàlẹ́ńdà tààrà';
+
+  @override
+  String get helpTileSubtitle => 'Àwọn ìkẹ́kọ̀ọ́, Béèrè lọ́wọ́ Vaultara àti ímeèlì sí ìrànlọ́wọ́';
+
+  @override
+  String get helpEmailTitle => 'Fi ímeèlì ránṣẹ́ sí wa';
+
+  @override
+  String get helpEmailSubtitle => 'Ẹ̀yà áàpù rẹ àti àwòṣe fóònù rẹ ni a ń fi kún fúnra rẹ̀. Àwọn àkọsílẹ̀ rẹ kò ní sí láé.';
+
+  @override
+  String get helpCopyAddress => 'Ṣẹ̀dà àdírẹ́sì';
+
+  @override
+  String get helpAddressCopied => 'A ti ṣẹ̀dà àdírẹ́sì ímeèlì';
+
+  @override
+  String get helpNoMailApp => 'Kò sí áàpù ímeèlì lórí fóònù yìí. Ṣẹ̀dà àdírẹ́sì náà kí o sì kọ̀wé sí wa láti iṣẹ́ ímeèlì èyíkéyìí.';
+
+  @override
+  String proofPackFooter(int page, int total) {
+    return 'Ojú-ewé $page nínú $total · A pèsè rẹ̀ pẹ̀lú Vaultara';
+  }
+
+  @override
+  String get proofPackColRecord => 'Àkọsílẹ̀';
+
+  @override
+  String get proofPackColHolder => 'Olùní';
+
+  @override
+  String get proofPackColExpires => 'Ìparí';
+
+  @override
+  String get proofPackColStatus => 'Ipò';
 }
