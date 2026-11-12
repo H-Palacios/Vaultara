@@ -1,0 +1,47 @@
+# Builds the iPhone and iPad app on Codemagic's Mac machines and uploads it
+# to TestFlight, so no Mac is needed. Start it from the Codemagic dashboard
+# (Start new build > ios-release). Setup steps are in the README under
+# "Releasing on iPhone and iPad".
+workflows:
+  ios-release:
+    name: iOS release to TestFlight
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    integrations:
+      # The App Store Connect API key added in Codemagic under
+      # Team settings > Team integrations > Developer Portal, with this name.
+      app_store_connect: Vaultara App Store Connect
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.vaultara.app
+      groups:
+        # Holds APP_STORE_APPLE_ID: the number under App Information > Apple ID
+        # in App Store Connect.
+        - app_store
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Use the App Store signing files
+        script: xcode-project use-profiles
+      - name: Get Flutter packages
+        script: flutter pub get
+      - name: Build the strings for every language
+        script: flutter gen-l10n
+      - name: Install CocoaPods
+        script: cd ios && pod install --repo-update
+      - name: Build the app
+        script: |
+          LATEST=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID" || echo 0)
+          flutter build ipa --release \
+            --build-number=$((LATEST + 1)) \
+            --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        submit_to_app_store: false
