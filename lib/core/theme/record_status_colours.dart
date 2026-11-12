@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/item_lifecycle_manager.dart';
 
-/// The one colour scale for how close a record is to expiring. Badges, the
-/// calendar, the runways on Home and Insights, widgets and the legend all
-/// use it, and it always comes with a word, so colour is never the only
-/// signal:
+/// The one colour scale for how close a record is to expiring. Status dots,
+/// the calendar, the Coming up list on Home, widgets and the legend all use
+/// it, and it always comes with a word, so colour is never the only signal:
 ///
 ///   red     expired
 ///   orange  within 7 days

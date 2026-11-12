@@ -4,6 +4,7 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/confirm_delete_dialog.dart';
 import 'package:vaultara/core/theme/record_status_colours.dart';
+import 'package:vaultara/core/view/widgets/status_dot_label.dart';
 
 class DeletedRow extends StatelessWidget {
   final String label;
@@ -116,31 +117,9 @@ class _DaysLeftBadge extends StatelessWidget {
     final colour = days <= RecordStatusColours.urgentDays
         ? RecordStatusColours.urgent
         : RecordStatusColours.expiringSoon;
-    final fg = RecordStatusColours.foreground(
-      colour,
-      Theme.of(context).brightness,
-    );
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-      decoration: BoxDecoration(
-        color: colour.withValues(alpha: 0.14),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(Icons.hourglass_bottom_rounded, size: 13, color: fg),
-          const SizedBox(width: 4),
-          Text(
-            loc.calendarDaysLeft(days < 1 ? 1 : days),
-            style: TextStyle(
-              fontSize: 11.5,
-              fontWeight: FontWeight.w700,
-              color: fg,
-            ),
-          ),
-        ],
-      ),
+    return StatusDotLabel(
+      text: loc.calendarDaysLeft(days < 1 ? 1 : days),
+      colour: colour,
     );
   }
 }

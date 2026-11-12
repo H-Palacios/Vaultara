@@ -7,13 +7,14 @@ import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/theme/record_status_colours.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
+import 'package:vaultara/core/view/widgets/status_dot_label.dart';
 import 'package:vaultara/features/guides/data/renewal_guides.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:vaultara/features/records/view/records/widgets/record_notes_dialog.dart';
 import 'package:vaultara/features/household/view/shared_badge.dart';
 
 /// A record on the calendar: the category's icon in its colour, the name,
-/// how long is left, whose record it is, and Renew and How to renew.
+/// how long is left, whose record it is, and Renew and Renewal checklist.
 /// Swiping it right opens Renew.
 class CalendarRecordCard extends StatelessWidget {
   final TrackedItem record;
@@ -179,27 +180,11 @@ class CalendarRecordCard extends StatelessWidget {
                 crossAxisAlignment: WrapCrossAlignment.center,
                 runSpacing: 2,
                 children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 9,
-                      vertical: 4,
-                    ),
-                    decoration: BoxDecoration(
-                      color: statusColour.withValues(alpha: 0.14),
-                      borderRadius: BorderRadius.circular(999),
-                    ),
-                    child: Text(
-                      statusText,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontSize: 11.5,
-                        fontWeight: FontWeight.w800,
-                        color: RecordStatusColours.foreground(
-                          statusColour,
-                          scheme.brightness,
-                        ),
-                      ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                    child: StatusDotLabel(
+                      text: statusText,
+                      colour: statusColour,
                     ),
                   ),
                   Wrap(

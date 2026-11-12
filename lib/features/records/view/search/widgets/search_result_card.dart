@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/core/view/widgets/status_dot_label.dart';
 import 'package:vaultara/features/records/logic/record_status.dart';
 import 'package:vaultara/features/household/view/shared_badge.dart';
 class SearchResultCard extends StatelessWidget {
@@ -69,29 +70,7 @@ class SearchResultCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                decoration: BoxDecoration(
-                  color: status.colour.withValues(alpha: 0.15),
-                  borderRadius: BorderRadius.circular(999),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(status.labelIcon, size: 13, color: status.colour),
-                    const SizedBox(width: 6),
-                    Text(
-                      status.label,
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        color: status.colour,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              StatusDotLabel(text: status.label, colour: status.colour),
             ],
           ),
         ),

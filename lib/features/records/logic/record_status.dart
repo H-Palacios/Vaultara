@@ -52,15 +52,6 @@ class RecordStatus {
   /// ignored it, which implied a variation that did not exist.
   IconData get icon => Icons.assignment_rounded;
 
-  IconData get labelIcon {
-    if (daysLeft < 0) return Icons.assignment_late_rounded;
-    if (daysLeft == 0) return Icons.event_busy_rounded;
-    if (daysLeft <= ItemLifecycleManager.expiringThresholdDays) {
-      return Icons.hourglass_bottom_rounded;
-    }
-    return Icons.verified_rounded;
-  }
-
   bool get isExpired => daysLeft < 0;
 
   bool get isExpiringSoon =>
