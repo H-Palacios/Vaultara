@@ -171,6 +171,10 @@ class HomeOverviewLoader {
       ]);
     } else {
       await RecordRepository.loadForCurrentUser();
+      // The records are on screen before the profile arrives: work the
+      // counts out now with the names already known, so Next up appears
+      // without waiting for the network.
+      await recompute(allowFirst: true);
     }
 
     final userDoc = await userDocFuture;
@@ -204,10 +208,21 @@ class HomeOverviewLoader {
   /// Works the counts out again from the records already loaded, without
   /// going to the network, after a change made on this phone such as a
   /// renewal from the home screen.
-  static Future<void> recompute() async {
+  static Future<void> recompute({bool allowFirst = false}) async {
     final user = FirebaseAuth.instance.currentUser;
-    final current = _cached;
-    if (user == null || current == null || !RecordRepository.isLoaded) return;
+    var current = _cached;
+    if (user == null || !RecordRepository.isLoaded) return;
+    if (current == null) {
+      if (!allowFirst) return;
+      const empty = HomeOverview.empty();
+      final known = UserName.first;
+      current = empty.copyWith(
+        firstName: known.isNotEmpty
+            ? known
+            : UserName.pick(null, user.displayName),
+        isFirstLogin: false,
+      );
+    }
     final overview = OverviewCalculator.build(
       records: ItemLifecycleManager.getAllItemsFlat(),
       fullName: current.fullName,

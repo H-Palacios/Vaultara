@@ -291,6 +291,44 @@ class CategoryRepository {
     _hasLoadedForUser = true;
   }
 
+  /// Fills the categories from the copy Firestore keeps on the phone, so
+  /// records in custom categories can be shown before the network answers.
+  /// The full load still runs afterwards and replaces this copy.
+  static Future<void> fillFromPhoneCopy() async {
+    final User? user = _auth.currentUser;
+    if (user == null || _hasLoadedForUser) return;
+    try {
+      final results = await Future.wait<Object?>([
+        _firestore
+            .collection(_categoriesPath(user.uid))
+            .get(const GetOptions(source: Source.cache)),
+        _firestore
+            .doc(_pinnedPath(user.uid))
+            .get(const GetOptions(source: Source.cache)),
+      ]);
+      if (_hasLoadedForUser || _auth.currentUser?.uid != user.uid) return;
+      final snap = results[0]! as QuerySnapshot<Map<String, dynamic>>;
+      final pinnedDoc = results[1]! as DocumentSnapshot<Map<String, dynamic>>;
+      if (snap.docs.isEmpty) return;
+      final categories = <CategoryItem>[
+        for (final doc in snap.docs)
+          if (doc.data()['isDeleted'] != true) _categoryFromDoc(doc),
+      ];
+      final pins = pinnedDoc.data()?['pins'];
+      _categories
+        ..clear()
+        ..addAll(categories);
+      _pins.clear();
+      if (pins is List) {
+        for (final key in pins) {
+          if (key is String && !_pins.contains(key)) _pins.add(key);
+        }
+      }
+    } catch (_) {
+      // No copy on the phone yet: the normal load fills the categories.
+    }
+  }
+
   static const int recentlyDeletedRetentionDays = 30;
 
   static Future<List<CategoryItem>> getDeleted() async {

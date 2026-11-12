@@ -497,10 +497,58 @@ class RecordRepository {
 
   static Future<void> _load(User user) async {
     _store.clear();
-    await Future.wait<void>([UserName.load(), NotificationPrefs.load()]);
+    final ref = _firestore.collection(_recordsPath(user.uid));
 
-    // Categories and the profile document do not depend on each other, so
-    // they are read at the same time.
+    // The records Firestore keeps on the phone are read first, together with
+    // the saved settings and the phone's copy of the categories, so Home can
+    // show them without waiting for the network. Categories and the profile
+    // document then load from the server in the background.
+    final phoneCopy = _readPhoneCopy(ref);
+    await Future.wait<void>([
+      UserName.load(),
+      NotificationPrefs.load(),
+      CategoryRepository.fillFromPhoneCopy(),
+    ]);
+    final cached = await phoneCopy;
+    if (_auth.currentUser?.uid != user.uid) return;
+
+    if (cached != null && cached.docs.isNotEmpty) {
+      _fill(cached, user.uid);
+      _hasLoadedForUser = true;
+      _loadedUserId = user.uid;
+      _rollDue();
+      _refreshWidget();
+      unawaited(_finishLoadInBackground(user));
+      return;
+    }
+
+    // A new install has no copy on the phone, so it waits for the server.
+    await _loadProfileAndCategories(user);
+    if (_auth.currentUser?.uid != user.uid) return;
+    final snap = await ref.get();
+    if (_auth.currentUser?.uid != user.uid) return;
+    _fill(snap, user.uid);
+    _hasLoadedForUser = true;
+    _loadedUserId = user.uid;
+    _rollDue();
+    _reminderSignature = _signatureOf(_allRecords());
+    unawaited(_resyncAllReminders());
+    _refreshWidget();
+  }
+
+  static Future<QuerySnapshot<Map<String, dynamic>>?> _readPhoneCopy(
+    CollectionReference<Map<String, dynamic>> ref,
+  ) async {
+    try {
+      return await ref.get(const GetOptions(source: Source.cache));
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// Categories and the profile document, read at the same time since they
+  /// do not depend on each other.
+  static Future<void> _loadProfileAndCategories(User user) async {
     final results = await Future.wait<Object?>([
       CategoryRepository.loadForCurrentUser(),
       _firestore.collection('users').doc(user.uid).get(),
@@ -513,39 +561,19 @@ class RecordRepository {
     await UserName.setFromProfile(userData, user.displayName);
     final raw = userData?['createdItemsCount'];
     _createdRecordsCount = raw is num ? raw.toInt() : int.tryParse('$raw') ?? 0;
+  }
 
-    final ref = _firestore.collection(_recordsPath(user.uid));
-
-    // The copy Firestore keeps on the phone is shown straight away, and the
-    // server copy replaces it when it arrives. A new install has no copy, so
-    // it waits for the server as before.
-    QuerySnapshot<Map<String, dynamic>>? cached;
+  /// After the phone's copy is on screen: the server categories and profile,
+  /// then the server records, which also file records in custom categories
+  /// that the phone's copy did not know yet.
+  static Future<void> _finishLoadInBackground(User user) async {
     try {
-      cached = await ref.get(const GetOptions(source: Source.cache));
+      await _loadProfileAndCategories(user);
     } catch (_) {
-      cached = null;
+      // Offline: the phone's copy stays on screen.
     }
-    if (_auth.currentUser?.uid != user.uid) return;
-
-    if (cached != null && cached.docs.isNotEmpty) {
-      _fill(cached, user.uid);
-      _hasLoadedForUser = true;
-      _loadedUserId = user.uid;
-      _rollDue();
-      _refreshWidget();
-      unawaited(_refreshFromServer(user.uid));
-      return;
-    }
-
-    final snap = await ref.get();
-    if (_auth.currentUser?.uid != user.uid) return;
-    _fill(snap, user.uid);
-    _hasLoadedForUser = true;
-    _loadedUserId = user.uid;
-    _rollDue();
-    _reminderSignature = _signatureOf(_allRecords());
-    unawaited(_resyncAllReminders());
-    _refreshWidget();
+    if (_auth.currentUser?.uid != user.uid || _loadedUserId != user.uid) return;
+    await _refreshFromServer(user.uid);
   }
 
   static void _fill(QuerySnapshot<Map<String, dynamic>> snap, String uid) {
