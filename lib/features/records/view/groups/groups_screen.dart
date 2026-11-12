@@ -239,6 +239,21 @@ class _GroupsScreenState extends State<GroupsScreen> {
     ActionFeedbackSnackbar.showDeleted(context, label);
   }
 
+  Widget _groupCard(String key, {bool compact = false}) {
+    final category = widget.category.key;
+    return GroupCard(
+      groupLabel: _label(key),
+      isCustom: !_isPreset(key),
+      compact: compact,
+      recordCount: ItemLifecycleManager.totalItemsForGroup(category, key),
+      expiringSoon: ItemLifecycleManager.expiringSoonForGroup(category, key),
+      expired: ItemLifecycleManager.expiredForGroup(category, key),
+      onOpen: () => _openRecords(key),
+      onRename: _isPreset(key) ? null : () => _renameGroup(key),
+      onDelete: _isPreset(key) ? null : () => _deleteGroup(key),
+    );
+  }
+
   double _maxContentWidth(BuildContext context) {
     final w = MediaQuery.of(context).size.width;
     if (w >= 1100) return 820;
@@ -268,6 +283,16 @@ class _GroupsScreenState extends State<GroupsScreen> {
       textOf: _label,
       fuzzy: true,
     );
+
+    final used = <String>[];
+    final unused = <String>[];
+    for (final key in result.matches) {
+      final count = ItemLifecycleManager.totalItemsForGroup(
+        widget.category.key,
+        key,
+      );
+      (count > 0 ? used : unused).add(key);
+    }
 
     return Scaffold(
       body: SafeArea(
@@ -351,39 +376,48 @@ class _GroupsScreenState extends State<GroupsScreen> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(16),
                                     child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
                                       children: [
-                                        for (final key in result.matches)
+                                        for (final key in used)
                                           Padding(
                                             padding: const EdgeInsets.only(
                                               bottom: 10,
                                             ),
-                                            child: GroupCard(
-                                              groupLabel: _label(key),
-                                              isCustom: !_isPreset(key),
-                                              recordCount:
-                                                  ItemLifecycleManager.totalItemsForGroup(
-                                                    widget.category.key,
-                                                    key,
-                                                  ),
-                                              expiringSoon:
-                                                  ItemLifecycleManager.expiringSoonForGroup(
-                                                    widget.category.key,
-                                                    key,
-                                                  ),
-                                              expired:
-                                                  ItemLifecycleManager.expiredForGroup(
-                                                    widget.category.key,
-                                                    key,
-                                                  ),
-                                              onOpen: () => _openRecords(key),
-                                              onRename: _isPreset(key)
-                                                  ? null
-                                                  : () => _renameGroup(key),
-                                              onDelete: _isPreset(key)
-                                                  ? null
-                                                  : () => _deleteGroup(key),
-                                            ),
+                                            child: _groupCard(key),
                                           ),
+                                        if (unused.isNotEmpty) ...[
+                                          if (used.isNotEmpty)
+                                            Padding(
+                                              padding:
+                                                  const EdgeInsets.fromLTRB(
+                                                    4,
+                                                    14,
+                                                    4,
+                                                    8,
+                                                  ),
+                                              child: Text(
+                                                loc.groupsNoRecordsSection,
+                                                style: TextStyle(
+                                                  fontSize: 13,
+                                                  fontWeight: FontWeight.w700,
+                                                  color: Theme.of(
+                                                    context,
+                                                  ).colorScheme.onSurfaceVariant,
+                                                ),
+                                              ),
+                                            ),
+                                          for (final key in unused)
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                bottom: 6,
+                                              ),
+                                              child: _groupCard(
+                                                key,
+                                                compact: used.isNotEmpty,
+                                              ),
+                                            ),
+                                        ],
                                       ],
                                     ),
                                   ),
