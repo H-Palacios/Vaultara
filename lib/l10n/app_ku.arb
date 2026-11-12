@@ -67,12 +67,12 @@
   "incorrectPassword": "Şîfre şaş e",
   "signIn": "Têketin",
   "categoryPersonalIdentification": "Nasnameya kesane",
-  "categoryDrivingAndVehicles": "Ajotin û Wesayît",
-  "categoryTravelAndImmigration": "Rêwîtî û Koçberî",
-  "categoryBankingAndCards": "Bank û Kart",
-  "categoryInsuranceAndCover": "Sîgorte û Parastin",
-  "categoryWorkAndProfessional": "Kar û Pîşe",
-  "categoryPropertyAndHousing": "Milk û Xanî",
+  "categoryDrivingAndVehicles": "Ajotin û wesayît",
+  "categoryTravelAndImmigration": "Rêwîtî û koçberî",
+  "categoryBankingAndCards": "Bank û kart",
+  "categoryInsuranceAndCover": "Sîgorte û parastin",
+  "categoryWorkAndProfessional": "Kar û pîşe",
+  "categoryPropertyAndHousing": "Milk û xanî",
   "subcategoryPassports": "Pasaport",
   "subcategoryIdCards": "Karta nasnameyê",
   "subcategoryResidencePermits": "Destûra rûniştinê",
@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "Heqaretkar an zirardar",
   "assistantReportWrong": "Şaş an şaşker",
   "assistantReportOther": "Tiştekî din",
-  "assistantReportThanks": "Spas. Em ê vê bersivê kontrol bikin."
+  "assistantReportThanks": "Spas. Em ê vê bersivê kontrol bikin.",
+  "groupsNoRecordsSection": "Hîn tu tomar tune ne"
 }

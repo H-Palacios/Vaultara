@@ -8767,6 +8767,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantReportThanks => '谢谢。我们会审核此回答。';
+
+  @override
+  String get groupsNoRecordsSection => '暂无记录';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -17520,6 +17523,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantReportThanks => '谢谢。我们会审核此回答。';
+
+  @override
+  String get groupsNoRecordsSection => '暂无记录';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -26273,4 +26279,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantReportThanks => '謝謝。我們會審查此回答。';
+
+  @override
+  String get groupsNoRecordsSection => '尚無記錄';
 }

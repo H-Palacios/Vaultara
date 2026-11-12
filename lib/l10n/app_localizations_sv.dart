@@ -190,25 +190,25 @@ class AppLocalizationsSv extends AppLocalizations {
   String get signIn => 'Logga in';
 
   @override
-  String get categoryPersonalIdentification => 'Personlig Identifiering';
+  String get categoryPersonalIdentification => 'Personlig identifiering';
 
   @override
-  String get categoryDrivingAndVehicles => 'Körning och Fordon';
+  String get categoryDrivingAndVehicles => 'Körning och fordon';
 
   @override
-  String get categoryTravelAndImmigration => 'Resor och Immigration';
+  String get categoryTravelAndImmigration => 'Resor och immigration';
 
   @override
-  String get categoryBankingAndCards => 'Bank och Kort';
+  String get categoryBankingAndCards => 'Bank och kort';
 
   @override
-  String get categoryInsuranceAndCover => 'Försäkring och Skydd';
+  String get categoryInsuranceAndCover => 'Försäkring och skydd';
 
   @override
-  String get categoryWorkAndProfessional => 'Arbete och Yrke';
+  String get categoryWorkAndProfessional => 'Arbete och yrke';
 
   @override
-  String get categoryPropertyAndHousing => 'Fastighet och Bostad';
+  String get categoryPropertyAndHousing => 'Fastighet och bostad';
 
   @override
   String get subcategoryPassports => 'Pass';
@@ -238,7 +238,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get subcategoryWorkPermits => 'Arbetstillstånd';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Betal- och Kreditkort';
+  String get subcategoryDebitAndCreditCards => 'Betal- och kreditkort';
 
   @override
   String get subcategoryStoreCards => 'Butikskort';
@@ -268,7 +268,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get subcategoryLeaseAgreements => 'Hyresavtal';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Åtkomstkort och Taggar';
+  String get subcategoryAccessCardsAndTags => 'Åtkomstkort och taggar';
 
   @override
   String get searchCategories => 'Sök kategorier';
@@ -8835,4 +8835,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Tack. Vi granskar det här svaret.';
+
+  @override
+  String get groupsNoRecordsSection => 'Inga poster ännu';
 }

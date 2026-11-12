@@ -190,85 +190,85 @@ class AppLocalizationsPt extends AppLocalizations {
   String get signIn => 'Iniciar sessão';
 
   @override
-  String get categoryPersonalIdentification => 'Identificação Pessoal';
+  String get categoryPersonalIdentification => 'Identificação pessoal';
 
   @override
-  String get categoryDrivingAndVehicles => 'Condução e Veículos';
+  String get categoryDrivingAndVehicles => 'Condução e veículos';
 
   @override
-  String get categoryTravelAndImmigration => 'Viagens e Imigração';
+  String get categoryTravelAndImmigration => 'Viagens e imigração';
 
   @override
-  String get categoryBankingAndCards => 'Banca e Cartões';
+  String get categoryBankingAndCards => 'Banca e cartões';
 
   @override
-  String get categoryInsuranceAndCover => 'Seguros e Cobertura';
+  String get categoryInsuranceAndCover => 'Seguros e cobertura';
 
   @override
-  String get categoryWorkAndProfessional => 'Trabalho e Profissional';
+  String get categoryWorkAndProfessional => 'Trabalho e profissional';
 
   @override
-  String get categoryPropertyAndHousing => 'Propriedade e Habitação';
+  String get categoryPropertyAndHousing => 'Propriedade e habitação';
 
   @override
   String get subcategoryPassports => 'Passaportes';
 
   @override
-  String get subcategoryIdCards => 'Cartões de Identidade';
+  String get subcategoryIdCards => 'Cartões de identidade';
 
   @override
-  String get subcategoryResidencePermits => 'Autorizações de Residência';
+  String get subcategoryResidencePermits => 'Autorizações de residência';
 
   @override
-  String get subcategoryDrivingLicences => 'Cartas de Condução';
+  String get subcategoryDrivingLicences => 'Cartas de condução';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Registos de Veículos';
+  String get subcategoryVehicleRegistrations => 'Registos de veículos';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Certificados de Inspeção';
+  String get subcategoryRoadworthyCertificates => 'Certificados de inspeção';
 
   @override
   String get subcategoryVisas => 'Vistos';
 
   @override
-  String get subcategoryStudyPermits => 'Autorizações de Estudo';
+  String get subcategoryStudyPermits => 'Autorizações de estudo';
 
   @override
-  String get subcategoryWorkPermits => 'Autorizações de Trabalho';
+  String get subcategoryWorkPermits => 'Autorizações de trabalho';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Cartões de Débito e Crédito';
+  String get subcategoryDebitAndCreditCards => 'Cartões de débito e crédito';
 
   @override
-  String get subcategoryStoreCards => 'Cartões de Loja';
+  String get subcategoryStoreCards => 'Cartões de loja';
 
   @override
-  String get subcategoryVehicleInsurances => 'Seguros de Veículos';
+  String get subcategoryVehicleInsurances => 'Seguros de veículos';
 
   @override
-  String get subcategoryPropertyInsurances => 'Seguros de Propriedade';
+  String get subcategoryPropertyInsurances => 'Seguros de propriedade';
 
   @override
-  String get subcategoryLifeInsurances => 'Seguros de Vida';
+  String get subcategoryLifeInsurances => 'Seguros de vida';
 
   @override
-  String get subcategoryHealthInsurances => 'Seguros de Saúde';
+  String get subcategoryHealthInsurances => 'Seguros de saúde';
 
   @override
-  String get subcategoryTravelInsurances => 'Seguros de Viagem';
+  String get subcategoryTravelInsurances => 'Seguros de viagem';
 
   @override
-  String get subcategoryProfessionalLicences => 'Licenças Profissionais';
+  String get subcategoryProfessionalLicences => 'Licenças profissionais';
 
   @override
-  String get subcategoryWorkAccessCards => 'Cartões de Acesso ao Trabalho';
+  String get subcategoryWorkAccessCards => 'Cartões de acesso ao trabalho';
 
   @override
-  String get subcategoryLeaseAgreements => 'Contratos de Arrendamento';
+  String get subcategoryLeaseAgreements => 'Contratos de arrendamento';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Cartões e Etiquetas de Acesso';
+  String get subcategoryAccessCardsAndTags => 'Cartões e etiquetas de acesso';
 
   @override
   String get searchCategories => 'Pesquisar categorias';
@@ -8837,4 +8837,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Obrigado. Vamos rever esta resposta.';
+
+  @override
+  String get groupsNoRecordsSection => 'Ainda não existem registos';
 }

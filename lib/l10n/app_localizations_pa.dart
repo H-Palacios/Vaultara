@@ -8831,4 +8831,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'ਧੰਨਵਾਦ। ਅਸੀਂ ਇਸ ਜਵਾਬ ਦੀ ਸਮੀਖਿਆ ਕਰਾਂਗੇ।';
+
+  @override
+  String get groupsNoRecordsSection => 'ਹੁਣ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਨਹੀਂ';
 }

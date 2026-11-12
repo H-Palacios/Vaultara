@@ -8755,4 +8755,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'ありがとうございます。この回答を確認します。';
+
+  @override
+  String get groupsNoRecordsSection => 'まだ記録がありません';
 }

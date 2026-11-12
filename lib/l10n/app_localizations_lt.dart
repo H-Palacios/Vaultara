@@ -8985,4 +8985,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Ačiū. Peržiūrėsime šį atsakymą.';
+
+  @override
+  String get groupsNoRecordsSection => 'Įrašų dar nėra';
 }

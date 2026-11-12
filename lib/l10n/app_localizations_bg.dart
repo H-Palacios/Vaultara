@@ -8832,4 +8832,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Благодарим ви. Ще прегледаме този отговор.';
+
+  @override
+  String get groupsNoRecordsSection => 'Все още няма записи';
 }

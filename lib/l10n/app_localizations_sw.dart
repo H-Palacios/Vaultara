@@ -190,25 +190,25 @@ class AppLocalizationsSw extends AppLocalizations {
   String get signIn => 'Ingia';
 
   @override
-  String get categoryPersonalIdentification => 'Utambulisho wa Kibinafsi';
+  String get categoryPersonalIdentification => 'Utambulisho wa kibinafsi';
 
   @override
-  String get categoryDrivingAndVehicles => 'Uendeshaji na Magari';
+  String get categoryDrivingAndVehicles => 'Uendeshaji na magari';
 
   @override
-  String get categoryTravelAndImmigration => 'Safari na Uhamiaji';
+  String get categoryTravelAndImmigration => 'Safari na uhamiaji';
 
   @override
-  String get categoryBankingAndCards => 'Benki na Kadi';
+  String get categoryBankingAndCards => 'Benki na kadi';
 
   @override
-  String get categoryInsuranceAndCover => 'Bima na Ulinzi';
+  String get categoryInsuranceAndCover => 'Bima na ulinzi';
 
   @override
-  String get categoryWorkAndProfessional => 'Kazi na Taaluma';
+  String get categoryWorkAndProfessional => 'Kazi na taaluma';
 
   @override
-  String get categoryPropertyAndHousing => 'Mali na Makazi';
+  String get categoryPropertyAndHousing => 'Mali na makazi';
 
   @override
   String get subcategoryPassports => 'Pasipoti';
@@ -217,58 +217,58 @@ class AppLocalizationsSw extends AppLocalizations {
   String get subcategoryIdCards => 'Vitambulisho';
 
   @override
-  String get subcategoryResidencePermits => 'Vibali vya Makazi';
+  String get subcategoryResidencePermits => 'Vibali vya makazi';
 
   @override
-  String get subcategoryDrivingLicences => 'Leseni za Kuendesha';
+  String get subcategoryDrivingLicences => 'Leseni za kuendesha';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Usajili wa Magari';
+  String get subcategoryVehicleRegistrations => 'Usajili wa magari';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Vyeti vya Ustahiki wa Barabara';
+  String get subcategoryRoadworthyCertificates => 'Vyeti vya ustahiki wa barabara';
 
   @override
   String get subcategoryVisas => 'Viza';
 
   @override
-  String get subcategoryStudyPermits => 'Vibali vya Masomo';
+  String get subcategoryStudyPermits => 'Vibali vya masomo';
 
   @override
-  String get subcategoryWorkPermits => 'Vibali vya Kazi';
+  String get subcategoryWorkPermits => 'Vibali vya kazi';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Kadi za Debiti na za Mkopo';
+  String get subcategoryDebitAndCreditCards => 'Kadi za debiti na za mkopo';
 
   @override
-  String get subcategoryStoreCards => 'Kadi za Maduka';
+  String get subcategoryStoreCards => 'Kadi za maduka';
 
   @override
-  String get subcategoryVehicleInsurances => 'Bima za Magari';
+  String get subcategoryVehicleInsurances => 'Bima za magari';
 
   @override
-  String get subcategoryPropertyInsurances => 'Bima za Mali';
+  String get subcategoryPropertyInsurances => 'Bima za mali';
 
   @override
-  String get subcategoryLifeInsurances => 'Bima za Maisha';
+  String get subcategoryLifeInsurances => 'Bima za maisha';
 
   @override
-  String get subcategoryHealthInsurances => 'Bima za Afya';
+  String get subcategoryHealthInsurances => 'Bima za afya';
 
   @override
-  String get subcategoryTravelInsurances => 'Bima za Safari';
+  String get subcategoryTravelInsurances => 'Bima za safari';
 
   @override
-  String get subcategoryProfessionalLicences => 'Leseni za Kitaaluma';
+  String get subcategoryProfessionalLicences => 'Leseni za kitaaluma';
 
   @override
-  String get subcategoryWorkAccessCards => 'Kadi za Ufikiaji wa Kazi';
+  String get subcategoryWorkAccessCards => 'Kadi za ufikiaji wa kazi';
 
   @override
-  String get subcategoryLeaseAgreements => 'Mikataba ya Kodi';
+  String get subcategoryLeaseAgreements => 'Mikataba ya kodi';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Kadi na Vitambulisho vya Ufikiaji';
+  String get subcategoryAccessCardsAndTags => 'Kadi na vitambulisho vya ufikiaji';
 
   @override
   String get searchCategories => 'Tafuta kategoria';
@@ -8831,4 +8831,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Asante. Tutakagua jibu hili.';
+
+  @override
+  String get groupsNoRecordsSection => 'Bado hakuna rekodi';
 }

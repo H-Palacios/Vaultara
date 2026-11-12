@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "අපහාසාත්මක හෝ හානිකර",
   "assistantReportWrong": "වැරදි හෝ නොමඟ යවන",
   "assistantReportOther": "වෙනත් දෙයක්",
-  "assistantReportThanks": "ස්තූතියි. අපි මෙම පිළිතුර සමාලෝචනය කරමු."
+  "assistantReportThanks": "ස්තූතියි. අපි මෙම පිළිතුර සමාලෝචනය කරමු.",
+  "groupsNoRecordsSection": "තවම වාර්තා නැත"
 }

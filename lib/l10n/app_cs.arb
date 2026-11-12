@@ -3427,5 +3427,6 @@
   "assistantReportHarmful": "Urážlivé nebo škodlivé",
   "assistantReportWrong": "Nesprávné nebo zavádějící",
   "assistantReportOther": "Něco jiného",
-  "assistantReportThanks": "Děkujeme. Tuto odpověď zkontrolujeme."
+  "assistantReportThanks": "Děkujeme. Tuto odpověď zkontrolujeme.",
+  "groupsNoRecordsSection": "Zatím žádné záznamy"
 }

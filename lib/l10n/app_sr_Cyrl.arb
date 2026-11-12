@@ -3370,5 +3370,6 @@
   "assistantReportHarmful": "Увредљиво или штетно",
   "assistantReportWrong": "Погрешно или обмањујуће",
   "assistantReportOther": "Нешто друго",
-  "assistantReportThanks": "Хвала вам. Проверићемо овај одговор."
+  "assistantReportThanks": "Хвала вам. Проверићемо овај одговор.",
+  "groupsNoRecordsSection": "Још нема записа"
 }

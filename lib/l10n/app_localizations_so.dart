@@ -190,85 +190,85 @@ class AppLocalizationsSo extends AppLocalizations {
   String get signIn => 'Soo gal';
 
   @override
-  String get categoryPersonalIdentification => 'Aqoonsiga Shakhsiyeed';
+  String get categoryPersonalIdentification => 'Aqoonsiga shakhsiyeed';
 
   @override
-  String get categoryDrivingAndVehicles => 'Wadista iyo Gaadiidka';
+  String get categoryDrivingAndVehicles => 'Wadista iyo gaadiidka';
 
   @override
-  String get categoryTravelAndImmigration => 'Safar iyo Socdaal';
+  String get categoryTravelAndImmigration => 'Safar iyo socdaal';
 
   @override
-  String get categoryBankingAndCards => 'Bangiyada iyo Kaararka';
+  String get categoryBankingAndCards => 'Bangiyada iyo kaararka';
 
   @override
-  String get categoryInsuranceAndCover => 'Caymis iyo Dabool';
+  String get categoryInsuranceAndCover => 'Caymis iyo dabool';
 
   @override
-  String get categoryWorkAndProfessional => 'Shaqo iyo Xirfadeed';
+  String get categoryWorkAndProfessional => 'Shaqo iyo xirfadeed';
 
   @override
-  String get categoryPropertyAndHousing => 'Hanti iyo Hoy';
+  String get categoryPropertyAndHousing => 'Hanti iyo hoy';
 
   @override
   String get subcategoryPassports => 'Baasaboorrada';
 
   @override
-  String get subcategoryIdCards => 'Kaararka Aqoonsiga';
+  String get subcategoryIdCards => 'Kaararka aqoonsiga';
 
   @override
-  String get subcategoryResidencePermits => 'Ogolaanshaha Deganaanshaha';
+  String get subcategoryResidencePermits => 'Ogolaanshaha deganaanshaha';
 
   @override
-  String get subcategoryDrivingLicences => 'Ruqsadaha Wadista';
+  String get subcategoryDrivingLicences => 'Ruqsadaha wadista';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Diiwaangelinta Gaadiidka';
+  String get subcategoryVehicleRegistrations => 'Diiwaangelinta gaadiidka';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Shahaadooyinka U-qalmitaanka Waddo';
+  String get subcategoryRoadworthyCertificates => 'Shahaadooyinka u-qalmitaanka waddo';
 
   @override
   String get subcategoryVisas => 'Fiisooyin';
 
   @override
-  String get subcategoryStudyPermits => 'Ogolaanshaha Waxbarashada';
+  String get subcategoryStudyPermits => 'Ogolaanshaha waxbarashada';
 
   @override
-  String get subcategoryWorkPermits => 'Ogolaanshaha Shaqada';
+  String get subcategoryWorkPermits => 'Ogolaanshaha shaqada';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Kaararka Debit iyo Credit';
+  String get subcategoryDebitAndCreditCards => 'Kaararka debit iyo credit';
 
   @override
-  String get subcategoryStoreCards => 'Kaararka Dukaamada';
+  String get subcategoryStoreCards => 'Kaararka dukaamada';
 
   @override
-  String get subcategoryVehicleInsurances => 'Caymiska Gaadiidka';
+  String get subcategoryVehicleInsurances => 'Caymiska gaadiidka';
 
   @override
-  String get subcategoryPropertyInsurances => 'Caymiska Hantida';
+  String get subcategoryPropertyInsurances => 'Caymiska hantida';
 
   @override
-  String get subcategoryLifeInsurances => 'Caymiska Nolosha';
+  String get subcategoryLifeInsurances => 'Caymiska nolosha';
 
   @override
-  String get subcategoryHealthInsurances => 'Caymiska Caafimaadka';
+  String get subcategoryHealthInsurances => 'Caymiska caafimaadka';
 
   @override
-  String get subcategoryTravelInsurances => 'Caymiska Safarka';
+  String get subcategoryTravelInsurances => 'Caymiska safarka';
 
   @override
-  String get subcategoryProfessionalLicences => 'Ruqsadaha Xirfadeed';
+  String get subcategoryProfessionalLicences => 'Ruqsadaha xirfadeed';
 
   @override
-  String get subcategoryWorkAccessCards => 'Kaararka Gelitaanka Shaqada';
+  String get subcategoryWorkAccessCards => 'Kaararka gelitaanka shaqada';
 
   @override
-  String get subcategoryLeaseAgreements => 'Heshiisyada Kirada';
+  String get subcategoryLeaseAgreements => 'Heshiisyada kirada';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Kaararka iyo Calaamadaha Gelitaanka';
+  String get subcategoryAccessCardsAndTags => 'Kaararka iyo calaamadaha gelitaanka';
 
   @override
   String get searchCategories => 'Raadi qaybaha';
@@ -8830,4 +8830,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Mahadsanid. Waan eegi doonnaa jawaabtan.';
+
+  @override
+  String get groupsNoRecordsSection => 'Weli ma jiraan diiwaanno';
 }

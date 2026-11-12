@@ -3410,5 +3410,6 @@
   "assistantReportHarmful": "Վիրավորական կամ վնասակար",
   "assistantReportWrong": "Սխալ կամ մոլորեցնող",
   "assistantReportOther": "Այլ բան",
-  "assistantReportThanks": "Շնորհակալություն։ Մենք կստուգենք այս պատասխանը։"
+  "assistantReportThanks": "Շնորհակալություն։ Մենք կստուգենք այս պատասխանը։",
+  "groupsNoRecordsSection": "Դեռ գրառումներ չկան։"
 }

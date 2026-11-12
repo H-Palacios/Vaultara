@@ -8989,4 +8989,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Děkujeme. Tuto odpověď zkontrolujeme.';
+
+  @override
+  String get groupsNoRecordsSection => 'Zatím žádné záznamy';
 }

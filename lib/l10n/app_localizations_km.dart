@@ -8765,4 +8765,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'សូមអរគុណ។ យើងនឹងពិនិត្យចម្លើយនេះ។';
+
+  @override
+  String get groupsNoRecordsSection => 'មិនទាន់មានកំណត់ត្រានៅឡើយទេ។';
 }

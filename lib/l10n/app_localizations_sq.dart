@@ -8836,4 +8836,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Faleminderit. Do ta shqyrtojmë këtë përgjigje.';
+
+  @override
+  String get groupsNoRecordsSection => 'Ende asnjë regjistrim';
 }

@@ -8913,4 +8913,7 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Hvala vam. Provjerit ćemo ovaj odgovor.';
+
+  @override
+  String get groupsNoRecordsSection => 'Još nema zapisa';
 }

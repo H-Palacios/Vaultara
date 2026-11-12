@@ -3146,5 +3146,6 @@
   "assistantReportHarmful": "Haqoratli yoki zararli",
   "assistantReportWrong": "Notoʻgʻri yoki chalgʻituvchi",
   "assistantReportOther": "Boshqa narsa",
-  "assistantReportThanks": "Rahmat. Bu javobni tekshiramiz."
+  "assistantReportThanks": "Rahmat. Bu javobni tekshiramiz.",
+  "groupsNoRecordsSection": "Hozircha yozuvlar yoʻq"
 }

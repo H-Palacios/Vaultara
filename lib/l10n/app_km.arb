@@ -3146,5 +3146,6 @@
   "assistantReportHarmful": "ប្រមាថ ឬបង្កគ្រោះថ្នាក់",
   "assistantReportWrong": "ខុស ឬបំភាន់",
   "assistantReportOther": "អ្វីផ្សេងទៀត",
-  "assistantReportThanks": "សូមអរគុណ។ យើងនឹងពិនិត្យចម្លើយនេះ។"
+  "assistantReportThanks": "សូមអរគុណ។ យើងនឹងពិនិត្យចម្លើយនេះ។",
+  "groupsNoRecordsSection": "មិនទាន់មានកំណត់ត្រានៅឡើយទេ។"
 }

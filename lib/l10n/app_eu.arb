@@ -3410,5 +3410,6 @@
   "assistantReportHarmful": "Iraingarria edo kaltegarria",
   "assistantReportWrong": "Okerra edo engainagarria",
   "assistantReportOther": "Beste zerbait",
-  "assistantReportThanks": "Eskerrik asko. Erantzun hau berrikusiko dugu."
+  "assistantReportThanks": "Eskerrik asko. Erantzun hau berrikusiko dugu.",
+  "groupsNoRecordsSection": "Oraindik ez dago erregistrorik"
 }

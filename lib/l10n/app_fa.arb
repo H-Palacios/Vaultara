@@ -3408,5 +3408,6 @@
   "assistantReportHarmful": "توهین‌آمیز یا آسیب‌زا",
   "assistantReportWrong": "نادرست یا گمراه‌کننده",
   "assistantReportOther": "چیز دیگر",
-  "assistantReportThanks": "سپاسگزاریم. این پاسخ را بررسی می‌کنیم."
+  "assistantReportThanks": "سپاسگزاریم. این پاسخ را بررسی می‌کنیم.",
+  "groupsNoRecordsSection": "هنوز رکوردی وجود ندارد"
 }

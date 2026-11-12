@@ -3427,5 +3427,6 @@
   "assistantReportHarmful": "Stødende eller skadeligt",
   "assistantReportWrong": "Forkert eller vildledende",
   "assistantReportOther": "Noget andet",
-  "assistantReportThanks": "Tak. Vi gennemgår dette svar."
+  "assistantReportThanks": "Tak. Vi gennemgår dette svar.",
+  "groupsNoRecordsSection": "Ingen poster endnu"
 }

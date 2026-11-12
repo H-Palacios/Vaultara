@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "ໝິ່ນປະໝາດ ຫຼື ເປັນອັນຕະລາຍ",
   "assistantReportWrong": "ຜິດ ຫຼື ຊວນໃຫ້ເຂົ້າໃຈຜິດ",
   "assistantReportOther": "ອື່ນໆ",
-  "assistantReportThanks": "ຂອບໃຈ. ພວກເຮົາຈະກວດສອບຄຳຕອບນີ້."
+  "assistantReportThanks": "ຂອບໃຈ. ພວກເຮົາຈະກວດສອບຄຳຕອບນີ້.",
+  "groupsNoRecordsSection": "ຍັງບໍ່ມີບັນທຶກ"
 }

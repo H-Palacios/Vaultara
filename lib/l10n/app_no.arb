@@ -3403,5 +3403,6 @@
   "assistantReportHarmful": "Støtende eller skadelig",
   "assistantReportWrong": "Feil eller villedende",
   "assistantReportOther": "Noe annet",
-  "assistantReportThanks": "Takk. Vi går gjennom dette svaret."
+  "assistantReportThanks": "Takk. Vi går gjennom dette svaret.",
+  "groupsNoRecordsSection": "Ingen oppføringer ennå"
 }

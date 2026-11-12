@@ -190,85 +190,85 @@ class AppLocalizationsZu extends AppLocalizations {
   String get signIn => 'Ngena';
 
   @override
-  String get categoryPersonalIdentification => 'Ukuhlonza Komuntu';
+  String get categoryPersonalIdentification => 'Ukuhlonza komuntu';
 
   @override
-  String get categoryDrivingAndVehicles => 'Ukushayela Nezimoto';
+  String get categoryDrivingAndVehicles => 'Ukushayela nezimoto';
 
   @override
-  String get categoryTravelAndImmigration => 'Ukuhamba Nokufuduka';
+  String get categoryTravelAndImmigration => 'Ukuhamba nokufuduka';
 
   @override
-  String get categoryBankingAndCards => 'Amabhange Namakhadi';
+  String get categoryBankingAndCards => 'Amabhange namakhadi';
 
   @override
-  String get categoryInsuranceAndCover => 'Umshwalense Nokuvikelwa';
+  String get categoryInsuranceAndCover => 'Umshwalense nokuvikelwa';
 
   @override
-  String get categoryWorkAndProfessional => 'Umsebenzi Nobungcweti';
+  String get categoryWorkAndProfessional => 'Umsebenzi nobungcweti';
 
   @override
-  String get categoryPropertyAndHousing => 'Impahla Nezindlu';
+  String get categoryPropertyAndHousing => 'Impahla nezindlu';
 
   @override
   String get subcategoryPassports => 'Amaphasipoti';
 
   @override
-  String get subcategoryIdCards => 'Amakhadi Okuzazisa';
+  String get subcategoryIdCards => 'Amakhadi okuzazisa';
 
   @override
-  String get subcategoryResidencePermits => 'Izimvume Zokuhlala';
+  String get subcategoryResidencePermits => 'Izimvume zokuhlala';
 
   @override
-  String get subcategoryDrivingLicences => 'Izincwadi Zokushayela';
+  String get subcategoryDrivingLicences => 'Izincwadi zokushayela';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Ukubhaliswa Kwezimoto';
+  String get subcategoryVehicleRegistrations => 'Ukubhaliswa kwezimoto';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Izitifiketi Zokufaneleka Emgwaqeni';
+  String get subcategoryRoadworthyCertificates => 'Izitifiketi zokufaneleka emgwaqeni';
 
   @override
   String get subcategoryVisas => 'AmaVisa';
 
   @override
-  String get subcategoryStudyPermits => 'Izimvume Zokufunda';
+  String get subcategoryStudyPermits => 'Izimvume zokufunda';
 
   @override
-  String get subcategoryWorkPermits => 'Izimvume Zokusebenza';
+  String get subcategoryWorkPermits => 'Izimvume zokusebenza';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Amakhadi Ebhange Nawakweletu';
+  String get subcategoryDebitAndCreditCards => 'Amakhadi ebhange nawakweletu';
 
   @override
-  String get subcategoryStoreCards => 'Amakhadi Ezitolo';
+  String get subcategoryStoreCards => 'Amakhadi ezitolo';
 
   @override
-  String get subcategoryVehicleInsurances => 'Imishwalense Yezimoto';
+  String get subcategoryVehicleInsurances => 'Imishwalense yezimoto';
 
   @override
-  String get subcategoryPropertyInsurances => 'Imishwalense Yezakhiwo';
+  String get subcategoryPropertyInsurances => 'Imishwalense yezakhiwo';
 
   @override
-  String get subcategoryLifeInsurances => 'Imishwalense Yokuphila';
+  String get subcategoryLifeInsurances => 'Imishwalense yokuphila';
 
   @override
-  String get subcategoryHealthInsurances => 'Imishwalense Yezempilo';
+  String get subcategoryHealthInsurances => 'Imishwalense yezempilo';
 
   @override
-  String get subcategoryTravelInsurances => 'Imishwalense Yohambo';
+  String get subcategoryTravelInsurances => 'Imishwalense yohambo';
 
   @override
-  String get subcategoryProfessionalLicences => 'Izincwadi Zobungcweti';
+  String get subcategoryProfessionalLicences => 'Izincwadi zobungcweti';
 
   @override
-  String get subcategoryWorkAccessCards => 'Amakhadi Okungena Emsebenzini';
+  String get subcategoryWorkAccessCards => 'Amakhadi okungena emsebenzini';
 
   @override
-  String get subcategoryLeaseAgreements => 'Izivumelwano Zokuqasha';
+  String get subcategoryLeaseAgreements => 'Izivumelwano zokuqasha';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Amakhadi Nezimpawu Zokungena';
+  String get subcategoryAccessCardsAndTags => 'Amakhadi nezimpawu zokungena';
 
   @override
   String get searchCategories => 'Sesha izigaba';
@@ -8831,4 +8831,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Siyabonga. Sizoyibuyekeza le mpendulo.';
+
+  @override
+  String get groupsNoRecordsSection => 'Akukho marekhodi okwamanje';
 }

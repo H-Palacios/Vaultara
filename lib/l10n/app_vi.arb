@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "Xúc phạm hoặc có hại",
   "assistantReportWrong": "Sai hoặc gây hiểu lầm",
   "assistantReportOther": "Lý do khác",
-  "assistantReportThanks": "Cảm ơn bạn. Chúng tôi sẽ xem xét câu trả lời này."
+  "assistantReportThanks": "Cảm ơn bạn. Chúng tôi sẽ xem xét câu trả lời này.",
+  "groupsNoRecordsSection": "Chưa có bản ghi nào"
 }

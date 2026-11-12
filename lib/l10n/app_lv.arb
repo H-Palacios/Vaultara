@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "Aizskarošs vai kaitīgs",
   "assistantReportWrong": "Nepareizs vai maldinošs",
   "assistantReportOther": "Kas cits",
-  "assistantReportThanks": "Paldies. Mēs pārskatīsim šo atbildi."
+  "assistantReportThanks": "Paldies. Mēs pārskatīsim šo atbildi.",
+  "groupsNoRecordsSection": "Vēl nav ierakstu"
 }

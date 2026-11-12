@@ -190,85 +190,85 @@ class AppLocalizationsFil extends AppLocalizations {
   String get signIn => 'Mag-sign in';
 
   @override
-  String get categoryPersonalIdentification => 'Personal na Pagkakakilanlan';
+  String get categoryPersonalIdentification => 'Personal na pagkakakilanlan';
 
   @override
-  String get categoryDrivingAndVehicles => 'Pagmamaneho at mga Sasakyan';
+  String get categoryDrivingAndVehicles => 'Pagmamaneho at mga sasakyan';
 
   @override
-  String get categoryTravelAndImmigration => 'Paglalakbay at Imigrasyon';
+  String get categoryTravelAndImmigration => 'Paglalakbay at imigrasyon';
 
   @override
-  String get categoryBankingAndCards => 'Pagbabangko at mga Card';
+  String get categoryBankingAndCards => 'Pagbabangko at mga card';
 
   @override
-  String get categoryInsuranceAndCover => 'Seguro at Proteksyon';
+  String get categoryInsuranceAndCover => 'Seguro at proteksyon';
 
   @override
-  String get categoryWorkAndProfessional => 'Trabaho at Propesyonal';
+  String get categoryWorkAndProfessional => 'Trabaho at propesyonal';
 
   @override
-  String get categoryPropertyAndHousing => 'Ari-arian at Pabahay';
+  String get categoryPropertyAndHousing => 'Ari-arian at pabahay';
 
   @override
-  String get subcategoryPassports => 'Mga Pasaporte';
+  String get subcategoryPassports => 'Mga pasaporte';
 
   @override
-  String get subcategoryIdCards => 'Mga ID Card';
+  String get subcategoryIdCards => 'Mga ID card';
 
   @override
-  String get subcategoryResidencePermits => 'Mga Permit sa Paninirahan';
+  String get subcategoryResidencePermits => 'Mga permit sa paninirahan';
 
   @override
-  String get subcategoryDrivingLicences => 'Mga Lisensya sa Pagmamaneho';
+  String get subcategoryDrivingLicences => 'Mga lisensya sa pagmamaneho';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Mga Rehistro ng Sasakyan';
+  String get subcategoryVehicleRegistrations => 'Mga rehistro ng sasakyan';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Mga Sertipiko ng Kaligtasan ng Sasakyan';
+  String get subcategoryRoadworthyCertificates => 'Mga sertipiko ng kaligtasan ng sasakyan';
 
   @override
-  String get subcategoryVisas => 'Mga Visa';
+  String get subcategoryVisas => 'Mga visa';
 
   @override
-  String get subcategoryStudyPermits => 'Mga Permit sa Pag-aaral';
+  String get subcategoryStudyPermits => 'Mga permit sa pag-aaral';
 
   @override
-  String get subcategoryWorkPermits => 'Mga Permit sa Trabaho';
+  String get subcategoryWorkPermits => 'Mga permit sa trabaho';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Mga Debit at Credit Card';
+  String get subcategoryDebitAndCreditCards => 'Mga debit at credit card';
 
   @override
-  String get subcategoryStoreCards => 'Mga Store Card';
+  String get subcategoryStoreCards => 'Mga store card';
 
   @override
-  String get subcategoryVehicleInsurances => 'Mga Seguro ng Sasakyan';
+  String get subcategoryVehicleInsurances => 'Mga seguro ng sasakyan';
 
   @override
-  String get subcategoryPropertyInsurances => 'Mga Seguro ng Ari-arian';
+  String get subcategoryPropertyInsurances => 'Mga seguro ng ari-arian';
 
   @override
-  String get subcategoryLifeInsurances => 'Mga Seguro sa Buhay';
+  String get subcategoryLifeInsurances => 'Mga seguro sa buhay';
 
   @override
-  String get subcategoryHealthInsurances => 'Mga Seguro sa Kalusugan';
+  String get subcategoryHealthInsurances => 'Mga seguro sa kalusugan';
 
   @override
-  String get subcategoryTravelInsurances => 'Mga Seguro sa Paglalakbay';
+  String get subcategoryTravelInsurances => 'Mga seguro sa paglalakbay';
 
   @override
-  String get subcategoryProfessionalLicences => 'Mga Propesyonal na Lisensya';
+  String get subcategoryProfessionalLicences => 'Mga propesyonal na lisensya';
 
   @override
-  String get subcategoryWorkAccessCards => 'Mga Access Card sa Trabaho';
+  String get subcategoryWorkAccessCards => 'Mga access card sa trabaho';
 
   @override
-  String get subcategoryLeaseAgreements => 'Mga Kasunduan sa Pag-upa';
+  String get subcategoryLeaseAgreements => 'Mga kasunduan sa pag-upa';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Mga Access Card at Tag';
+  String get subcategoryAccessCardsAndTags => 'Mga access card at tag';
 
   @override
   String get searchCategories => 'Maghanap ng mga kategorya';
@@ -8826,4 +8826,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Salamat. Susuriin namin ang sagot na ito.';
+
+  @override
+  String get groupsNoRecordsSection => 'Wala pang mga rekord';
 }

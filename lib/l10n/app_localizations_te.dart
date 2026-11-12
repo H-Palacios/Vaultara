@@ -8831,4 +8831,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'ధన్యవాదాలు. మేము ఈ సమాధానాన్ని సమీక్షిస్తాము.';
+
+  @override
+  String get groupsNoRecordsSection => 'ఇంకా రికార్డులు లేవు';
 }

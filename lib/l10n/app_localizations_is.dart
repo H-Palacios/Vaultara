@@ -8830,4 +8830,7 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Takk fyrir. Við förum yfir þetta svar.';
+
+  @override
+  String get groupsNoRecordsSection => 'Engar færslur enn';
 }

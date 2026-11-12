@@ -3371,5 +3371,6 @@
   "assistantReportHarmful": "Оскорбительный или вредный",
   "assistantReportWrong": "Неверный или вводящий в заблуждение",
   "assistantReportOther": "Другое",
-  "assistantReportThanks": "Спасибо. Мы проверим этот ответ."
+  "assistantReportThanks": "Спасибо. Мы проверим этот ответ.",
+  "groupsNoRecordsSection": "Записей пока нет"
 }

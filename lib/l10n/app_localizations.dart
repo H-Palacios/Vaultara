@@ -622,37 +622,37 @@ abstract class AppLocalizations {
   /// No description provided for @categoryDrivingAndVehicles.
   ///
   /// In en, this message translates to:
-  /// **'Driving and Vehicles'**
+  /// **'Driving and vehicles'**
   String get categoryDrivingAndVehicles;
 
   /// No description provided for @categoryTravelAndImmigration.
   ///
   /// In en, this message translates to:
-  /// **'Travel and Immigration'**
+  /// **'Travel and immigration'**
   String get categoryTravelAndImmigration;
 
   /// No description provided for @categoryBankingAndCards.
   ///
   /// In en, this message translates to:
-  /// **'Banking and Cards'**
+  /// **'Banking and cards'**
   String get categoryBankingAndCards;
 
   /// No description provided for @categoryInsuranceAndCover.
   ///
   /// In en, this message translates to:
-  /// **'Insurance and Cover'**
+  /// **'Insurance and cover'**
   String get categoryInsuranceAndCover;
 
   /// No description provided for @categoryWorkAndProfessional.
   ///
   /// In en, this message translates to:
-  /// **'Work and Professional'**
+  /// **'Work and professional'**
   String get categoryWorkAndProfessional;
 
   /// No description provided for @categoryPropertyAndHousing.
   ///
   /// In en, this message translates to:
-  /// **'Property and Housing'**
+  /// **'Property and housing'**
   String get categoryPropertyAndHousing;
 
   /// No description provided for @subcategoryPassports.
@@ -664,31 +664,31 @@ abstract class AppLocalizations {
   /// No description provided for @subcategoryIdCards.
   ///
   /// In en, this message translates to:
-  /// **'ID Cards'**
+  /// **'ID cards'**
   String get subcategoryIdCards;
 
   /// No description provided for @subcategoryResidencePermits.
   ///
   /// In en, this message translates to:
-  /// **'Residence Permits'**
+  /// **'Residence permits'**
   String get subcategoryResidencePermits;
 
   /// No description provided for @subcategoryDrivingLicences.
   ///
   /// In en, this message translates to:
-  /// **'Driving Licences'**
+  /// **'Driving licences'**
   String get subcategoryDrivingLicences;
 
   /// No description provided for @subcategoryVehicleRegistrations.
   ///
   /// In en, this message translates to:
-  /// **'Vehicle Registrations'**
+  /// **'Vehicle registrations'**
   String get subcategoryVehicleRegistrations;
 
   /// No description provided for @subcategoryRoadworthyCertificates.
   ///
   /// In en, this message translates to:
-  /// **'Roadworthy Certificates'**
+  /// **'Roadworthy certificates'**
   String get subcategoryRoadworthyCertificates;
 
   /// No description provided for @subcategoryVisas.
@@ -700,43 +700,43 @@ abstract class AppLocalizations {
   /// No description provided for @subcategoryStudyPermits.
   ///
   /// In en, this message translates to:
-  /// **'Study Permits'**
+  /// **'Study permits'**
   String get subcategoryStudyPermits;
 
   /// No description provided for @subcategoryWorkPermits.
   ///
   /// In en, this message translates to:
-  /// **'Work Permits'**
+  /// **'Work permits'**
   String get subcategoryWorkPermits;
 
   /// No description provided for @subcategoryDebitAndCreditCards.
   ///
   /// In en, this message translates to:
-  /// **'Debit and Credit Cards'**
+  /// **'Debit and credit cards'**
   String get subcategoryDebitAndCreditCards;
 
   /// No description provided for @subcategoryStoreCards.
   ///
   /// In en, this message translates to:
-  /// **'Store Cards'**
+  /// **'Store cards'**
   String get subcategoryStoreCards;
 
   /// No description provided for @subcategoryVehicleInsurances.
   ///
   /// In en, this message translates to:
-  /// **'Vehicle Insurances'**
+  /// **'Vehicle insurances'**
   String get subcategoryVehicleInsurances;
 
   /// No description provided for @subcategoryPropertyInsurances.
   ///
   /// In en, this message translates to:
-  /// **'Property Insurances'**
+  /// **'Property insurances'**
   String get subcategoryPropertyInsurances;
 
   /// No description provided for @subcategoryLifeInsurances.
   ///
   /// In en, this message translates to:
-  /// **'Life Insurances'**
+  /// **'Life insurances'**
   String get subcategoryLifeInsurances;
 
   /// No description provided for @subcategoryHealthInsurances.
@@ -15054,6 +15054,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Thank you. We will review this answer.'**
   String get assistantReportThanks;
+
+  /// Heading above the groups in a category that have no records yet.
+  ///
+  /// In en, this message translates to:
+  /// **'No records yet'**
+  String get groupsNoRecordsSection;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

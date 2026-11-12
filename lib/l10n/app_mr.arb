@@ -3146,5 +3146,6 @@
   "assistantReportHarmful": "आक्षेपार्ह किंवा हानिकारक",
   "assistantReportWrong": "चुकीचे किंवा दिशाभूल करणारे",
   "assistantReportOther": "दुसरे काहीतरी",
-  "assistantReportThanks": "धन्यवाद. आम्ही हे उत्तर तपासू."
+  "assistantReportThanks": "धन्यवाद. आम्ही हे उत्तर तपासू.",
+  "groupsNoRecordsSection": "अद्याप कोणत्याही नोंदी नाहीत"
 }

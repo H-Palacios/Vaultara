@@ -190,85 +190,85 @@ class AppLocalizationsTr extends AppLocalizations {
   String get signIn => 'Giriş yap';
 
   @override
-  String get categoryPersonalIdentification => 'Kişisel Kimlik';
+  String get categoryPersonalIdentification => 'Kişisel kimlik';
 
   @override
-  String get categoryDrivingAndVehicles => 'Sürüş ve Araçlar';
+  String get categoryDrivingAndVehicles => 'Sürüş ve araçlar';
 
   @override
-  String get categoryTravelAndImmigration => 'Seyahat ve Göç';
+  String get categoryTravelAndImmigration => 'Seyahat ve göç';
 
   @override
-  String get categoryBankingAndCards => 'Bankacılık ve Kartlar';
+  String get categoryBankingAndCards => 'Bankacılık ve kartlar';
 
   @override
-  String get categoryInsuranceAndCover => 'Sigorta ve Teminat';
+  String get categoryInsuranceAndCover => 'Sigorta ve teminat';
 
   @override
-  String get categoryWorkAndProfessional => 'İş ve Profesyonel';
+  String get categoryWorkAndProfessional => 'İş ve profesyonel';
 
   @override
-  String get categoryPropertyAndHousing => 'Mülk ve Konut';
+  String get categoryPropertyAndHousing => 'Mülk ve konut';
 
   @override
   String get subcategoryPassports => 'Pasaportlar';
 
   @override
-  String get subcategoryIdCards => 'Kimlik Kartları';
+  String get subcategoryIdCards => 'Kimlik kartları';
 
   @override
-  String get subcategoryResidencePermits => 'Oturma İzinleri';
+  String get subcategoryResidencePermits => 'Oturma izinleri';
 
   @override
-  String get subcategoryDrivingLicences => 'Sürücü Belgeleri';
+  String get subcategoryDrivingLicences => 'Sürücü belgeleri';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Araç Kayıtları';
+  String get subcategoryVehicleRegistrations => 'Araç kayıtları';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Yola Uygunluk Belgeleri';
+  String get subcategoryRoadworthyCertificates => 'Yola uygunluk belgeleri';
 
   @override
   String get subcategoryVisas => 'Vizeler';
 
   @override
-  String get subcategoryStudyPermits => 'Öğrenim İzinleri';
+  String get subcategoryStudyPermits => 'Öğrenim izinleri';
 
   @override
-  String get subcategoryWorkPermits => 'Çalışma İzinleri';
+  String get subcategoryWorkPermits => 'Çalışma izinleri';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Banka ve Kredi Kartları';
+  String get subcategoryDebitAndCreditCards => 'Banka ve kredi kartları';
 
   @override
-  String get subcategoryStoreCards => 'Mağaza Kartları';
+  String get subcategoryStoreCards => 'Mağaza kartları';
 
   @override
-  String get subcategoryVehicleInsurances => 'Araç Sigortaları';
+  String get subcategoryVehicleInsurances => 'Araç sigortaları';
 
   @override
-  String get subcategoryPropertyInsurances => 'Mülk Sigortaları';
+  String get subcategoryPropertyInsurances => 'Mülk sigortaları';
 
   @override
-  String get subcategoryLifeInsurances => 'Hayat Sigortaları';
+  String get subcategoryLifeInsurances => 'Hayat sigortaları';
 
   @override
-  String get subcategoryHealthInsurances => 'Sağlık Sigortaları';
+  String get subcategoryHealthInsurances => 'Sağlık sigortaları';
 
   @override
-  String get subcategoryTravelInsurances => 'Seyahat Sigortaları';
+  String get subcategoryTravelInsurances => 'Seyahat sigortaları';
 
   @override
-  String get subcategoryProfessionalLicences => 'Profesyonel Lisanslar';
+  String get subcategoryProfessionalLicences => 'Profesyonel lisanslar';
 
   @override
-  String get subcategoryWorkAccessCards => 'İş Erişim Kartları';
+  String get subcategoryWorkAccessCards => 'İş erişim kartları';
 
   @override
-  String get subcategoryLeaseAgreements => 'Kira Sözleşmeleri';
+  String get subcategoryLeaseAgreements => 'Kira sözleşmeleri';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Erişim Kartları ve Etiketler';
+  String get subcategoryAccessCardsAndTags => 'Erişim kartları ve etiketler';
 
   @override
   String get searchCategories => 'Kategorileri ara';
@@ -8831,4 +8831,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Teşekkürler. Bu yanıtı inceleyeceğiz.';
+
+  @override
+  String get groupsNoRecordsSection => 'Henüz kayıt yok';
 }

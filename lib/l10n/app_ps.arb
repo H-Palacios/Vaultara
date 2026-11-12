@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "سپکاوی یا زیانمن",
   "assistantReportWrong": "غلط یا ګمراه کوونکی",
   "assistantReportOther": "بل څه",
-  "assistantReportThanks": "مننه. موږ به دا ځواب وګورو."
+  "assistantReportThanks": "مننه. موږ به دا ځواب وګورو.",
+  "groupsNoRecordsSection": "تر اوسه هېڅ ریکارډ نشته"
 }

@@ -190,85 +190,85 @@ class AppLocalizationsYo extends AppLocalizations {
   String get signIn => 'Wọlé';
 
   @override
-  String get categoryPersonalIdentification => 'Idanimọ Ara ẹni';
+  String get categoryPersonalIdentification => 'Idanimọ ara ẹni';
 
   @override
-  String get categoryDrivingAndVehicles => 'Iwakọ ati Awọn Ọkọ';
+  String get categoryDrivingAndVehicles => 'Iwakọ ati awọn ọkọ';
 
   @override
-  String get categoryTravelAndImmigration => 'Irin-ajo ati Iṣilọ';
+  String get categoryTravelAndImmigration => 'Irin-ajo ati iṣilọ';
 
   @override
-  String get categoryBankingAndCards => 'Ile-ifowopamọ ati Awọn Kaadi';
+  String get categoryBankingAndCards => 'Ile-ifowopamọ ati awọn kaadi';
 
   @override
-  String get categoryInsuranceAndCover => 'Iṣeduro ati Idaabobo';
+  String get categoryInsuranceAndCover => 'Iṣeduro ati idaabobo';
 
   @override
-  String get categoryWorkAndProfessional => 'Iṣẹ ati Ọjọgbọn';
+  String get categoryWorkAndProfessional => 'Iṣẹ ati ọjọgbọn';
 
   @override
-  String get categoryPropertyAndHousing => 'Ohun-ini ati Ile';
+  String get categoryPropertyAndHousing => 'Ohun-ini ati ile';
 
   @override
-  String get subcategoryPassports => 'Awọn Iwe Irinna';
+  String get subcategoryPassports => 'Awọn iwe irinna';
 
   @override
-  String get subcategoryIdCards => 'Awọn Kaadi Idanimọ';
+  String get subcategoryIdCards => 'Awọn kaadi idanimọ';
 
   @override
-  String get subcategoryResidencePermits => 'Awọn Iwe-aṣẹ Ibugbe';
+  String get subcategoryResidencePermits => 'Awọn iwe-aṣẹ ibugbe';
 
   @override
-  String get subcategoryDrivingLicences => 'Awọn Iwe-aṣẹ Iwakọ';
+  String get subcategoryDrivingLicences => 'Awọn iwe-aṣẹ iwakọ';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Iforukọsilẹ Awọn Ọkọ';
+  String get subcategoryVehicleRegistrations => 'Iforukọsilẹ awọn ọkọ';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Awọn Ijẹrisi Ibaramu Opopona';
+  String get subcategoryRoadworthyCertificates => 'Awọn ijẹrisi ibaramu opopona';
 
   @override
-  String get subcategoryVisas => 'Awọn Fisa';
+  String get subcategoryVisas => 'Awọn fisa';
 
   @override
-  String get subcategoryStudyPermits => 'Awọn Iwe-aṣẹ Ikẹkọ';
+  String get subcategoryStudyPermits => 'Awọn iwe-aṣẹ ikẹkọ';
 
   @override
-  String get subcategoryWorkPermits => 'Awọn Iwe-aṣẹ Iṣẹ';
+  String get subcategoryWorkPermits => 'Awọn iwe-aṣẹ iṣẹ';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Awọn Kaadi Debiti ati Kirẹditi';
+  String get subcategoryDebitAndCreditCards => 'Awọn kaadi debiti ati kirẹditi';
 
   @override
-  String get subcategoryStoreCards => 'Awọn Kaadi Ile-itaja';
+  String get subcategoryStoreCards => 'Awọn kaadi ile-itaja';
 
   @override
-  String get subcategoryVehicleInsurances => 'Iṣeduro Awọn Ọkọ';
+  String get subcategoryVehicleInsurances => 'Iṣeduro awọn ọkọ';
 
   @override
-  String get subcategoryPropertyInsurances => 'Iṣeduro Ohun-ini';
+  String get subcategoryPropertyInsurances => 'Iṣeduro ohun-ini';
 
   @override
-  String get subcategoryLifeInsurances => 'Iṣeduro Iye-aye';
+  String get subcategoryLifeInsurances => 'Iṣeduro iye-aye';
 
   @override
-  String get subcategoryHealthInsurances => 'Iṣeduro Ilera';
+  String get subcategoryHealthInsurances => 'Iṣeduro ilera';
 
   @override
-  String get subcategoryTravelInsurances => 'Iṣeduro Irin-ajo';
+  String get subcategoryTravelInsurances => 'Iṣeduro irin-ajo';
 
   @override
-  String get subcategoryProfessionalLicences => 'Awọn Iwe-aṣẹ Ọjọgbọn';
+  String get subcategoryProfessionalLicences => 'Awọn iwe-aṣẹ ọjọgbọn';
 
   @override
-  String get subcategoryWorkAccessCards => 'Awọn Kaadi Wiwọle Iṣẹ';
+  String get subcategoryWorkAccessCards => 'Awọn kaadi wiwọle iṣẹ';
 
   @override
-  String get subcategoryLeaseAgreements => 'Awọn Adehun Iyalo';
+  String get subcategoryLeaseAgreements => 'Awọn adehun iyalo';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Awọn Kaadi ati Ami Wiwọle';
+  String get subcategoryAccessCardsAndTags => 'Awọn kaadi ati ami wiwọle';
 
   @override
   String get searchCategories => 'Wa àwọn ẹka';
@@ -8779,4 +8779,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'A dúpẹ́. A máa ṣàyẹ̀wò ìdáhùn yìí.';
+
+  @override
+  String get groupsNoRecordsSection => 'Ko si awọn igbasilẹ sibẹsibẹ';
 }

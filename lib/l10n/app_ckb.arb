@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "سووکایەتیکەر یان زیانبەخش",
   "assistantReportWrong": "هەڵە یان چەواشەکەر",
   "assistantReportOther": "شتێکی تر",
-  "assistantReportThanks": "سوپاس. ئەم وەڵامە پێدا دەچینەوە."
+  "assistantReportThanks": "سوپاس. ئەم وەڵامە پێدا دەچینەوە.",
+  "groupsNoRecordsSection": "هێشتا هیچ تۆمارێک نییە"
 }

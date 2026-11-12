@@ -3408,5 +3408,6 @@
   "assistantReportHarmful": "Offensante ou nuisible",
   "assistantReportWrong": "Fausse ou trompeuse",
   "assistantReportOther": "Autre chose",
-  "assistantReportThanks": "Merci. Nous examinerons cette réponse."
+  "assistantReportThanks": "Merci. Nous examinerons cette réponse.",
+  "groupsNoRecordsSection": "Aucun enregistrement pour le moment"
 }

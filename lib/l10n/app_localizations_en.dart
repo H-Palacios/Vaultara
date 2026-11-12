@@ -193,64 +193,64 @@ class AppLocalizationsEn extends AppLocalizations {
   String get categoryPersonalIdentification => 'Personal identification';
 
   @override
-  String get categoryDrivingAndVehicles => 'Driving and Vehicles';
+  String get categoryDrivingAndVehicles => 'Driving and vehicles';
 
   @override
-  String get categoryTravelAndImmigration => 'Travel and Immigration';
+  String get categoryTravelAndImmigration => 'Travel and immigration';
 
   @override
-  String get categoryBankingAndCards => 'Banking and Cards';
+  String get categoryBankingAndCards => 'Banking and cards';
 
   @override
-  String get categoryInsuranceAndCover => 'Insurance and Cover';
+  String get categoryInsuranceAndCover => 'Insurance and cover';
 
   @override
-  String get categoryWorkAndProfessional => 'Work and Professional';
+  String get categoryWorkAndProfessional => 'Work and professional';
 
   @override
-  String get categoryPropertyAndHousing => 'Property and Housing';
+  String get categoryPropertyAndHousing => 'Property and housing';
 
   @override
   String get subcategoryPassports => 'Passports';
 
   @override
-  String get subcategoryIdCards => 'ID Cards';
+  String get subcategoryIdCards => 'ID cards';
 
   @override
-  String get subcategoryResidencePermits => 'Residence Permits';
+  String get subcategoryResidencePermits => 'Residence permits';
 
   @override
-  String get subcategoryDrivingLicences => 'Driving Licences';
+  String get subcategoryDrivingLicences => 'Driving licences';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Vehicle Registrations';
+  String get subcategoryVehicleRegistrations => 'Vehicle registrations';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Roadworthy Certificates';
+  String get subcategoryRoadworthyCertificates => 'Roadworthy certificates';
 
   @override
   String get subcategoryVisas => 'Visas';
 
   @override
-  String get subcategoryStudyPermits => 'Study Permits';
+  String get subcategoryStudyPermits => 'Study permits';
 
   @override
-  String get subcategoryWorkPermits => 'Work Permits';
+  String get subcategoryWorkPermits => 'Work permits';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Debit and Credit Cards';
+  String get subcategoryDebitAndCreditCards => 'Debit and credit cards';
 
   @override
-  String get subcategoryStoreCards => 'Store Cards';
+  String get subcategoryStoreCards => 'Store cards';
 
   @override
-  String get subcategoryVehicleInsurances => 'Vehicle Insurances';
+  String get subcategoryVehicleInsurances => 'Vehicle insurances';
 
   @override
-  String get subcategoryPropertyInsurances => 'Property Insurances';
+  String get subcategoryPropertyInsurances => 'Property insurances';
 
   @override
-  String get subcategoryLifeInsurances => 'Life Insurances';
+  String get subcategoryLifeInsurances => 'Life insurances';
 
   @override
   String get subcategoryHealthInsurances => 'Health insurances';
@@ -8851,4 +8851,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Thank you. We will review this answer.';
+
+  @override
+  String get groupsNoRecordsSection => 'No records yet';
 }

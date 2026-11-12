@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "Įžeidžiantis ar žalingas",
   "assistantReportWrong": "Klaidingas ar klaidinantis",
   "assistantReportOther": "Kita",
-  "assistantReportThanks": "Ačiū. Peržiūrėsime šį atsakymą."
+  "assistantReportThanks": "Ačiū. Peržiūrėsime šį atsakymą.",
+  "groupsNoRecordsSection": "Įrašų dar nėra"
 }

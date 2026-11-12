@@ -8767,4 +8767,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantReportThanks => '감사합니다. 이 답변을 검토하겠습니다.';
+
+  @override
+  String get groupsNoRecordsSection => '아직 기록이 없습니다';
 }

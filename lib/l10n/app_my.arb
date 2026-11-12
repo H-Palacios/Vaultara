@@ -3146,5 +3146,6 @@
   "assistantReportHarmful": "စော်ကားသော သို့မဟုတ် ထိခိုက်စေသော",
   "assistantReportWrong": "မှားယွင်းသော သို့မဟုတ် လွဲမှားစေသော",
   "assistantReportOther": "အခြားအရာ",
-  "assistantReportThanks": "ကျေးဇူးတင်ပါသည်။ ဤအဖြေကို ကျွန်ုပ်တို့ စစ်ဆေးပါမည်။"
+  "assistantReportThanks": "ကျေးဇူးတင်ပါသည်။ ဤအဖြေကို ကျွန်ုပ်တို့ စစ်ဆေးပါမည်။",
+  "groupsNoRecordsSection": "မှတ်တမ်း မရှိသေးပါ။"
 }

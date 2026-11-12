@@ -73,13 +73,13 @@
   "emailNotFound": "I-imeyile ayichanekanga.\nAkukho akhawunti yeVaultara ngale imeyile",
   "incorrectPassword": "Iphasiwedi ayichanekanga",
   "signIn": "Ngena",
-  "categoryPersonalIdentification": "Isazisi Sobuqu",
-  "categoryDrivingAndVehicles": "Ukuqhuba Nezithuthi",
-  "categoryTravelAndImmigration": "Uhambo Nokufuduka",
-  "categoryBankingAndCards": "Iibhanki Namakhadi",
-  "categoryInsuranceAndCover": "I-inshurensi Nokhuseleko",
-  "categoryWorkAndProfessional": "Umsebenzi Nobungcali",
-  "categoryPropertyAndHousing": "Ipropati Nezindlu",
+  "categoryPersonalIdentification": "Isazisi sobuqu",
+  "categoryDrivingAndVehicles": "Ukuqhuba nezithuthi",
+  "categoryTravelAndImmigration": "Uhambo nokufuduka",
+  "categoryBankingAndCards": "Iibhanki namakhadi",
+  "categoryInsuranceAndCover": "I-inshurensi nokhuseleko",
+  "categoryWorkAndProfessional": "Umsebenzi nobungcali",
+  "categoryPropertyAndHousing": "Ipropati nezindlu",
   "subcategoryPassports": "Iipasipoti",
   "subcategoryIdCards": "Amakhadi esazisi",
   "subcategoryResidencePermits": "Iimvume zokuhlala",
@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "Ikhubekisa okanye inobungozi",
   "assistantReportWrong": "Ayichanekanga okanye iyalahlekisa",
   "assistantReportOther": "Enye into",
-  "assistantReportThanks": "Enkosi. Siza kuyihlola le mpendulo."
+  "assistantReportThanks": "Enkosi. Siza kuyihlola le mpendulo.",
+  "groupsNoRecordsSection": "Akukabikho zirekhodi"
 }

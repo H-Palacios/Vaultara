@@ -8830,4 +8830,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Ви благодариме. Ќе го провериме овој одговор.';
+
+  @override
+  String get groupsNoRecordsSection => 'Сè уште нема записи';
 }
