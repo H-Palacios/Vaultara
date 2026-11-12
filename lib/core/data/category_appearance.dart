@@ -69,6 +69,22 @@ class CategoryAppearance {
     'purple': Color(0xFF7E57C2),
   };
 
+  static const Map<String, String> presetColours = <String, String>{
+    'personal_identification': 'blue',
+    'driving_and_vehicles': 'teal',
+    'travel_and_immigration': 'purple',
+    'insurance_and_cover': 'green',
+    'banking_and_cards': 'pink',
+    'work_and_professional': 'blue',
+    'property_and_housing': 'teal',
+    'health_and_medical': 'pink',
+    'memberships_and_subscriptions': 'purple',
+  };
+
+  static Color? colourForCategory(String categoryKey, String? colourKey) {
+    return colourFor(colourKey) ?? colourFor(presetColours[categoryKey]);
+  }
+
   static IconData? iconFor(String? key) => key == null ? null : icons[key];
 
   static Color? colourFor(String? key) => key == null ? null : colours[key];
