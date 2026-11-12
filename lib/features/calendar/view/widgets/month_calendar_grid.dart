@@ -7,10 +7,10 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 /// The month grid.
 ///
-/// Each day shows up to three markers for what expires on it, coloured like
-/// the record cards: red for a date that has passed, orange or amber within
-/// 30 days, the app colour after that. Past dates use a diamond instead of
-/// a dot so colour is not the only signal. A ring around the number marks a
+/// Each day shows up to three markers for what expires on it, in the app's
+/// one colour scale: red for a date that has passed, orange within 7 days,
+/// amber within 30 days and green after that. Past dates use a diamond
+/// instead of a dot so colour is not the only signal. A ring around the number marks a
 /// reminder day, and days with four or more records get a light tint.
 class MonthCalendarGrid extends StatelessWidget {
   /// First day of the month being displayed.
@@ -59,13 +59,8 @@ class MonthCalendarGrid extends StatelessWidget {
   static const int busyDay = 4;
 
   /// The marker colour for a date [daysFromToday] away.
-  static Color markerColour(int daysFromToday, ColorScheme scheme) {
-    if (daysFromToday < 0) return RecordStatusColours.expired;
-    if (daysFromToday <= 30) {
-      return RecordStatusColours.fromDaysLeft(daysFromToday);
-    }
-    return scheme.primary;
-  }
+  static Color markerColour(int daysFromToday, ColorScheme scheme) =>
+      RecordStatusColours.fromDaysLeft(daysFromToday);
 
   @override
   Widget build(BuildContext context) {
@@ -407,7 +402,8 @@ class _Markers extends StatelessWidget {
   }
 }
 
-/// The key under the grid.
+/// The key under the grid: every colour of the scale with its own word,
+/// then the reminder ring.
 class CalendarLegend extends StatelessWidget {
   const CalendarLegend({super.key});
 
@@ -417,10 +413,25 @@ class CalendarLegend extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
     final style = TextStyle(fontSize: 11.5, color: scheme.onSurfaceVariant);
 
+    Widget item(Widget marker, String label) => Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        marker,
+        const SizedBox(width: 5),
+        Text(label, style: style),
+      ],
+    );
+
     Widget dot(Color c) => Container(
-      width: 6,
-      height: 6,
+      width: 7,
+      height: 7,
       decoration: BoxDecoration(color: c, shape: BoxShape.circle),
+    );
+
+    // Past dates use a diamond, as in the grid.
+    final diamond = Transform.rotate(
+      angle: 0.785398,
+      child: Container(width: 6, height: 6, color: RecordStatusColours.expired),
     );
 
     return Wrap(
@@ -428,32 +439,20 @@ class CalendarLegend extends StatelessWidget {
       runSpacing: 6,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            dot(RecordStatusColours.expired),
-            const SizedBox(width: 2),
-            dot(RecordStatusColours.expiringSoon),
-            const SizedBox(width: 2),
-            dot(scheme.primary),
-            const SizedBox(width: 6),
-            Text(loc.calendarLegendExpiry, style: style),
-          ],
-        ),
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Container(
-              width: 12,
-              height: 12,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(color: scheme.primary, width: 1.5),
-              ),
+        item(diamond, loc.statusExpired),
+        item(dot(RecordStatusColours.urgent), loc.legendWithinWeek),
+        item(dot(RecordStatusColours.expiringSoon), loc.legendWithinMonth),
+        item(dot(RecordStatusColours.valid), loc.legendLater),
+        item(
+          Container(
+            width: 12,
+            height: 12,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: scheme.primary, width: 1.5),
             ),
-            const SizedBox(width: 6),
-            Text(loc.calendarLegendReminder, style: style),
-          ],
+          ),
+          loc.calendarLegendReminder,
         ),
       ],
     );
