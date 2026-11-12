@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
+import 'package:vaultara/features/auth/services/provider_reauth.dart';
 import 'package:vaultara/features/auth/services/reauth_service.dart';
+import 'package:vaultara/features/auth/services/social_sign_in.dart';
 import 'package:vaultara/features/auth/logic/auth_error_mapper.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 
@@ -23,6 +25,10 @@ class ReauthPasswordForm extends StatefulWidget {
 }
 
 class _ReauthPasswordFormState extends State<ReauthPasswordForm> {
+  // Accounts made with Google or Apple have no password; they confirm with
+  // their provider instead.
+  final SocialProvider? _provider = ProviderReauth.providerFor();
+
   final TextEditingController _passwordController = TextEditingController();
   final FocusNode _passwordFocus = FocusNode();
 
@@ -87,6 +93,97 @@ class _ReauthPasswordFormState extends State<ReauthPasswordForm> {
     }
   }
 
+  Future<void> _submitWithProvider(SocialProvider provider) async {
+    final loc = AppLocalizations.of(context)!;
+    setState(() {
+      _busy = true;
+      _passwordError = null;
+    });
+    try {
+      await ProviderReauth.confirm(provider, context: context);
+      await widget.onConfirmed();
+    } on FirebaseAuthException catch (e) {
+      if (!mounted || MfaChallenge.isCancelled(e)) return;
+      final outcome = SocialSignIn.outcomeFor(e.code);
+      if (outcome == SocialSignInOutcome.cancelled) return;
+      setState(
+        () => _passwordError = outcome == SocialSignInOutcome.network
+            ? loc.authErrorNetwork
+            : loc.authErrorSignInFailed,
+      );
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => _passwordError = loc.authErrorSignInFailed);
+    } finally {
+      if (mounted) setState(() => _busy = false);
+    }
+  }
+
+  Widget _providerButton(AppLocalizations loc, SocialProvider provider) {
+    final apple = provider == SocialProvider.apple;
+    return FilledButton.icon(
+      style: FilledButton.styleFrom(
+        backgroundColor: apple ? Colors.black : Colors.white,
+        foregroundColor: apple ? Colors.white : Colors.black87,
+        side: apple ? null : const BorderSide(color: Color(0xFFDADCE0)),
+        minimumSize: const Size.fromHeight(48),
+      ),
+      onPressed: _busy ? null : () => _submitWithProvider(provider),
+      icon: _busy
+          ? const SizedBox(
+              width: 18,
+              height: 18,
+              child: CircularProgressIndicator(strokeWidth: 2),
+            )
+          : apple
+          ? const Icon(Icons.apple, size: 22)
+          : const Text(
+              'G',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w800,
+                color: Color(0xFF4285F4),
+              ),
+            ),
+      label: Text(apple ? loc.socialContinueApple : loc.socialContinueGoogle),
+    );
+  }
+
+  Widget _buildForProvider(AppLocalizations loc, SocialProvider provider) {
+    final scheme = Theme.of(context).colorScheme;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          loc.reauthWithProvider(ProviderReauth.providerName(provider)),
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 13.5,
+            height: 1.35,
+            color: scheme.onSurfaceVariant,
+          ),
+        ),
+        const SizedBox(height: 14),
+        _providerButton(loc, provider),
+        if (_passwordError != null) ...[
+          const SizedBox(height: 8),
+          Text(
+            _passwordError!,
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 13, color: scheme.error),
+          ),
+        ],
+        if (widget.onCancel != null) ...[
+          const SizedBox(height: 6),
+          TextButton(
+            onPressed: _busy ? null : widget.onCancel,
+            child: Text(loc.cancel),
+          ),
+        ],
+      ],
+    );
+  }
+
   Widget _confirmButton(AppLocalizations loc) {
     return FilledButton(
       onPressed: _busy ? null : _submit,
@@ -103,6 +200,8 @@ class _ReauthPasswordFormState extends State<ReauthPasswordForm> {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final provider = _provider;
+    if (provider != null) return _buildForProvider(loc, provider);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -119,7 +218,9 @@ class _ReauthPasswordFormState extends State<ReauthPasswordForm> {
             focused: _passwordFocus.hasFocus,
             errorText: _passwordError,
             suffixIcon: IconButton(
-              tooltip: _passwordVisible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
+              tooltip: _passwordVisible
+                  ? AppLocalizations.of(context)!.hidePassword
+                  : AppLocalizations.of(context)!.showPassword,
               icon: Icon(
                 _passwordVisible
                     ? Icons.visibility_rounded
@@ -132,10 +233,7 @@ class _ReauthPasswordFormState extends State<ReauthPasswordForm> {
         ),
         const SizedBox(height: 14),
         if (widget.onCancel == null)
-          SizedBox(
-            width: double.infinity,
-            child: _confirmButton(loc),
-          )
+          SizedBox(width: double.infinity, child: _confirmButton(loc))
         else
           Row(
             children: [

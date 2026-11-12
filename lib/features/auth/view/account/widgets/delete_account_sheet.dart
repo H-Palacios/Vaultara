@@ -6,6 +6,8 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/features/auth/logic/auth_error_mapper.dart';
 import 'package:vaultara/features/auth/services/account_deletion_service.dart';
+import 'package:vaultara/features/auth/services/provider_reauth.dart';
+import 'package:vaultara/features/auth/services/social_sign_in.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 
 class DeleteAccountSheet extends StatefulWidget {
@@ -18,6 +20,10 @@ class DeleteAccountSheet extends StatefulWidget {
 class _DeleteAccountSheetState extends State<DeleteAccountSheet> {
   final TextEditingController _passwordController = TextEditingController();
   final FocusNode _passwordFocus = FocusNode();
+
+  // Google and Apple accounts have no password: deleting confirms with the
+  // provider instead of the password field.
+  final SocialProvider? _provider = ProviderReauth.providerFor();
 
   bool _loading = false;
   bool _obscurePassword = true;
@@ -46,7 +52,7 @@ class _DeleteAccountSheetState extends State<DeleteAccountSheet> {
 
     setState(() => _passwordError = null);
 
-    if (password.isEmpty) {
+    if (_provider == null && password.isEmpty) {
       setState(() => _passwordError = loc.passwordRequired);
       return;
     }
@@ -54,12 +60,19 @@ class _DeleteAccountSheetState extends State<DeleteAccountSheet> {
     setState(() => _loading = true);
 
     try {
-      await AccountDeletionService.deleteAccount(currentPassword: password);
+      await AccountDeletionService.deleteAccount(
+        currentPassword: _provider == null ? password : null,
+        context: context,
+      );
 
       if (!mounted) return;
       Navigator.of(context).pop();
     } on FirebaseAuthException catch (e) {
       if (!mounted || MfaChallenge.isCancelled(e)) return;
+      if (_provider != null &&
+          SocialSignIn.outcomeFor(e.code) == SocialSignInOutcome.cancelled) {
+        return;
+      }
 
       if (e.code == 'requires-recent-login') {
         setState(() => _passwordError = loc.authErrorSignInFailed);
@@ -83,6 +96,7 @@ class _DeleteAccountSheetState extends State<DeleteAccountSheet> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
+    final provider = _provider;
 
     return Padding(
       padding: EdgeInsets.fromLTRB(
@@ -105,28 +119,49 @@ class _DeleteAccountSheetState extends State<DeleteAccountSheet> {
           const SizedBox(height: 12),
           Text(loc.deleteAccountWarning, textAlign: TextAlign.center),
           const SizedBox(height: 16),
-          TextField(
-            controller: _passwordController,
-            focusNode: _passwordFocus,
-            obscureText: _obscurePassword,
-            decoration: AppInputDecorations.field(
-              context,
-              labelText: loc.passwordLabel,
-              hintText: loc.loginPasswordHint,
-              focused: _passwordFocus.hasFocus,
-              errorText: _passwordError,
-              suffixIcon: IconButton(
-                tooltip: _obscurePassword ? AppLocalizations.of(context)!.showPassword : AppLocalizations.of(context)!.hidePassword,
-                icon: Icon(
-                  _obscurePassword
-                      ? Icons.visibility_off_rounded
-                      : Icons.visibility_rounded,
-                ),
-                onPressed: () =>
-                    setState(() => _obscurePassword = !_obscurePassword),
+          if (provider != null) ...[
+            Text(
+              loc.reauthWithProvider(ProviderReauth.providerName(provider)),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 13.5,
+                height: 1.35,
+                color: scheme.onSurfaceVariant,
               ),
             ),
-          ),
+            if (_passwordError != null) ...[
+              const SizedBox(height: 8),
+              Text(
+                _passwordError!,
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 13, color: scheme.error),
+              ),
+            ],
+          ] else
+            TextField(
+              controller: _passwordController,
+              focusNode: _passwordFocus,
+              obscureText: _obscurePassword,
+              decoration: AppInputDecorations.field(
+                context,
+                labelText: loc.passwordLabel,
+                hintText: loc.loginPasswordHint,
+                focused: _passwordFocus.hasFocus,
+                errorText: _passwordError,
+                suffixIcon: IconButton(
+                  tooltip: _obscurePassword
+                      ? AppLocalizations.of(context)!.showPassword
+                      : AppLocalizations.of(context)!.hidePassword,
+                  icon: Icon(
+                    _obscurePassword
+                        ? Icons.visibility_off_rounded
+                        : Icons.visibility_rounded,
+                  ),
+                  onPressed: () =>
+                      setState(() => _obscurePassword = !_obscurePassword),
+                ),
+              ),
+            ),
           const SizedBox(height: 20),
           SizedBox(
             width: double.infinity,

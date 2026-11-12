@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
+import 'package:vaultara/features/auth/services/provider_reauth.dart';
 import 'package:vaultara/features/auth/view/widget/reauth_password_form.dart';
 
 Future<bool> showConfirmIdentitySheet(BuildContext context) async {
@@ -53,16 +54,20 @@ class ConfirmIdentityPanel extends StatelessWidget {
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
           ),
-          const SizedBox(height: 6),
-          Text(
-            error ?? loc.twoStepConfirmBody,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13.5,
-              height: 1.35,
-              color: error == null ? scheme.onSurfaceVariant : scheme.error,
+          // Google and Apple accounts get their own line from the form, so
+          // the "enter your password" text is only for password accounts.
+          if (error != null || ProviderReauth.providerFor() == null) ...[
+            const SizedBox(height: 6),
+            Text(
+              error ?? loc.twoStepConfirmBody,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 13.5,
+                height: 1.35,
+                color: error == null ? scheme.onSurfaceVariant : scheme.error,
+              ),
             ),
-          ),
+          ],
           const SizedBox(height: 16),
           ReauthPasswordForm(onConfirmed: onConfirmed, onCancel: onCancel),
         ],

@@ -33,13 +33,17 @@ class AccountScreen extends StatelessWidget {
           children: [
             ScreenHeader(title: loc.accountManagementTitle),
             const SizedBox(height: 16),
-            SettingsTile(
-              icon: Icons.email_outlined,
-              title: loc.changeEmailTitle,
-              subtitle: loc.changeEmailSubtitle,
-              onTap: () => _openSheet(context, const ChangeEmailSheet()),
-            ),
-            const SizedBox(height: 8),
+            // Changing the email needs the password, and a Google or Apple
+            // account takes its email from that provider.
+            if (StrongPasswordFlag.hasPasswordSignIn()) ...[
+              SettingsTile(
+                icon: Icons.email_outlined,
+                title: loc.changeEmailTitle,
+                subtitle: loc.changeEmailSubtitle,
+                onTap: () => _openSheet(context, const ChangeEmailSheet()),
+              ),
+              const SizedBox(height: 8),
+            ],
             if (StrongPasswordFlag.hasPasswordSignIn()) ...[
               SettingsTile(
                 icon: Icons.lock_outline,
