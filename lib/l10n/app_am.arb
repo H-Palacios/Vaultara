@@ -3427,5 +3427,12 @@
   "proofPackColStatus": "ሁኔታ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "ሪፖርት አድርግ",
+  "assistantReportTitle": "ይህን መልስ ሪፖርት ያድርጉ",
+  "assistantReportBody": "ጥያቄው እና ይህ መልስ ለግምገማ ወደ Vorkalis ይላካሉ።",
+  "assistantReportHarmful": "አጸያፊ ወይም ጎጂ",
+  "assistantReportWrong": "የተሳሳተ ወይም አሳሳች",
+  "assistantReportOther": "ሌላ ነገር",
+  "assistantReportThanks": "እናመሰግናለን። ይህን መልስ እንገመግማለን።"
 }

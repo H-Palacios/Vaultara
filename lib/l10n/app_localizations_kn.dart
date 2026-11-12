@@ -8810,4 +8810,25 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'ಸ್ಥಿತಿ';
+
+  @override
+  String get assistantReport => 'ವರದಿ ಮಾಡಿ';
+
+  @override
+  String get assistantReportTitle => 'ಈ ಉತ್ತರವನ್ನು ವರದಿ ಮಾಡಿ';
+
+  @override
+  String get assistantReportBody => 'ಪ್ರಶ್ನೆ ಮತ್ತು ಈ ಉತ್ತರವನ್ನು ಪರಿಶೀಲನೆಗಾಗಿ Vorkalis ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get assistantReportHarmful => 'ಆಕ್ಷೇಪಾರ್ಹ ಅಥವಾ ಹಾನಿಕಾರಕ';
+
+  @override
+  String get assistantReportWrong => 'ತಪ್ಪು ಅಥವಾ ದಾರಿತಪ್ಪಿಸುವ';
+
+  @override
+  String get assistantReportOther => 'ಬೇರೆ ಏನಾದರೂ';
+
+  @override
+  String get assistantReportThanks => 'ಧನ್ಯವಾದಗಳು. ನಾವು ಈ ಉತ್ತರವನ್ನು ಪರಿಶೀಲಿಸುತ್ತೇವೆ.';
 }

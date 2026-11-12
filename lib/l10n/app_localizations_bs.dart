@@ -8892,4 +8892,25 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Prijavi';
+
+  @override
+  String get assistantReportTitle => 'Prijavite ovaj odgovor';
+
+  @override
+  String get assistantReportBody => 'Pitanje i ovaj odgovor šalju se kompaniji Vorkalis na provjeru.';
+
+  @override
+  String get assistantReportHarmful => 'Uvredljivo ili štetno';
+
+  @override
+  String get assistantReportWrong => 'Pogrešno ili obmanjujuće';
+
+  @override
+  String get assistantReportOther => 'Nešto drugo';
+
+  @override
+  String get assistantReportThanks => 'Hvala vam. Provjerit ćemo ovaj odgovor.';
 }

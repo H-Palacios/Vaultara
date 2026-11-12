@@ -74,6 +74,7 @@ class AssistantMessage {
 
   /// 1 for helpful, -1 for not helpful, 0 when not rated.
   int rating = 0;
+  bool reported = false;
   String? id;
 
   AssistantMessage({

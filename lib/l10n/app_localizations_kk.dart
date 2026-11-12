@@ -8810,4 +8810,25 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Күйі';
+
+  @override
+  String get assistantReport => 'Шағымдану';
+
+  @override
+  String get assistantReportTitle => 'Бұл жауапқа шағымдану';
+
+  @override
+  String get assistantReportBody => 'Сұрақ пен осы жауап тексеру үшін Vorkalis-ке жіберіледі.';
+
+  @override
+  String get assistantReportHarmful => 'Қорлайтын немесе зиянды';
+
+  @override
+  String get assistantReportWrong => 'Қате немесе адастыратын';
+
+  @override
+  String get assistantReportOther => 'Басқа нәрсе';
+
+  @override
+  String get assistantReportThanks => 'Рахмет. Бұл жауапты тексереміз.';
 }

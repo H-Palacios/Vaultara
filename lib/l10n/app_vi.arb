@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Trạng thái",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Báo cáo",
+  "assistantReportTitle": "Báo cáo câu trả lời này",
+  "assistantReportBody": "Câu hỏi và câu trả lời này được gửi đến Vorkalis để xem xét.",
+  "assistantReportHarmful": "Xúc phạm hoặc có hại",
+  "assistantReportWrong": "Sai hoặc gây hiểu lầm",
+  "assistantReportOther": "Lý do khác",
+  "assistantReportThanks": "Cảm ơn bạn. Chúng tôi sẽ xem xét câu trả lời này."
 }

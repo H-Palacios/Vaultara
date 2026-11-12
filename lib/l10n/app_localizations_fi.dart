@@ -8814,4 +8814,25 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Tila';
+
+  @override
+  String get assistantReport => 'Ilmoita';
+
+  @override
+  String get assistantReportTitle => 'Ilmoita tästä vastauksesta';
+
+  @override
+  String get assistantReportBody => 'Kysymys ja tämä vastaus lähetetään Vorkalisille tarkistettavaksi.';
+
+  @override
+  String get assistantReportHarmful => 'Loukkaava tai haitallinen';
+
+  @override
+  String get assistantReportWrong => 'Väärä tai harhaanjohtava';
+
+  @override
+  String get assistantReportOther => 'Jotain muuta';
+
+  @override
+  String get assistantReportThanks => 'Kiitos. Tarkistamme tämän vastauksen.';
 }

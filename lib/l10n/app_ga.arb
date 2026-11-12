@@ -3401,5 +3401,12 @@
   "proofPackColStatus": "Stádas",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Tuairiscigh",
+  "assistantReportTitle": "Tuairiscigh an freagra seo",
+  "assistantReportBody": "Seoltar an cheist agus an freagra seo chuig Vorkalis lena n-athbhreithniú.",
+  "assistantReportHarmful": "Maslach nó díobhálach",
+  "assistantReportWrong": "Mícheart nó míthreorach",
+  "assistantReportOther": "Rud éigin eile",
+  "assistantReportThanks": "Go raibh maith agat. Déanfaimid athbhreithniú ar an bhfreagra seo."
 }

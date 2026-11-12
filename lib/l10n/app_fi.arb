@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "Tila",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Ilmoita",
+  "assistantReportTitle": "Ilmoita tästä vastauksesta",
+  "assistantReportBody": "Kysymys ja tämä vastaus lähetetään Vorkalisille tarkistettavaksi.",
+  "assistantReportHarmful": "Loukkaava tai haitallinen",
+  "assistantReportWrong": "Väärä tai harhaanjohtava",
+  "assistantReportOther": "Jotain muuta",
+  "assistantReportThanks": "Kiitos. Tarkistamme tämän vastauksen."
 }

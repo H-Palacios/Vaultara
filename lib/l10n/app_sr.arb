@@ -3363,5 +3363,12 @@
   "proofPackColStatus": "Статус",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Пријави",
+  "assistantReportTitle": "Пријавите овај одговор",
+  "assistantReportBody": "Питање и овај одговор шаљу се компанији Vorkalis на проверу.",
+  "assistantReportHarmful": "Увредљиво или штетно",
+  "assistantReportWrong": "Погрешно или обмањујуће",
+  "assistantReportOther": "Нешто друго",
+  "assistantReportThanks": "Хвала вам. Проверићемо овај одговор."
 }

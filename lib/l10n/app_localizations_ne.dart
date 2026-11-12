@@ -8810,4 +8810,25 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'स्थिति';
+
+  @override
+  String get assistantReport => 'रिपोर्ट गर्नुहोस्';
+
+  @override
+  String get assistantReportTitle => 'यो उत्तर रिपोर्ट गर्नुहोस्';
+
+  @override
+  String get assistantReportBody => 'प्रश्न र यो उत्तर समीक्षाका लागि Vorkalis लाई पठाइन्छ।';
+
+  @override
+  String get assistantReportHarmful => 'आपत्तिजनक वा हानिकारक';
+
+  @override
+  String get assistantReportWrong => 'गलत वा भ्रामक';
+
+  @override
+  String get assistantReportOther => 'अरू केही';
+
+  @override
+  String get assistantReportThanks => 'धन्यवाद। हामी यो उत्तर समीक्षा गर्नेछौं।';
 }

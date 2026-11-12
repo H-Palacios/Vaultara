@@ -8805,4 +8805,25 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'I-report';
+
+  @override
+  String get assistantReportTitle => 'I-report ang sagot na ito';
+
+  @override
+  String get assistantReportBody => 'Ipinapadala ang tanong at ang sagot na ito sa Vorkalis para masuri.';
+
+  @override
+  String get assistantReportHarmful => 'Nakakasakit o nakakapinsala';
+
+  @override
+  String get assistantReportWrong => 'Mali o nakalilinlang';
+
+  @override
+  String get assistantReportOther => 'Iba pa';
+
+  @override
+  String get assistantReportThanks => 'Salamat. Susuriin namin ang sagot na ito.';
 }

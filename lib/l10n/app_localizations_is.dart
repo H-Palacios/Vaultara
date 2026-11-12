@@ -8809,4 +8809,25 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Staða';
+
+  @override
+  String get assistantReport => 'Tilkynna';
+
+  @override
+  String get assistantReportTitle => 'Tilkynna þetta svar';
+
+  @override
+  String get assistantReportBody => 'Spurningin og þetta svar eru send til Vorkalis til yfirferðar.';
+
+  @override
+  String get assistantReportHarmful => 'Móðgandi eða skaðlegt';
+
+  @override
+  String get assistantReportWrong => 'Rangt eða villandi';
+
+  @override
+  String get assistantReportOther => 'Eitthvað annað';
+
+  @override
+  String get assistantReportThanks => 'Takk fyrir. Við förum yfir þetta svar.';
 }

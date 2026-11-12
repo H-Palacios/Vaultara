@@ -8815,4 +8815,25 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Egoera';
+
+  @override
+  String get assistantReport => 'Salatu';
+
+  @override
+  String get assistantReportTitle => 'Salatu erantzun hau';
+
+  @override
+  String get assistantReportBody => 'Galdera eta erantzun hau Vorkalis-era bidaltzen dira berrikus ditzan.';
+
+  @override
+  String get assistantReportHarmful => 'Iraingarria edo kaltegarria';
+
+  @override
+  String get assistantReportWrong => 'Okerra edo engainagarria';
+
+  @override
+  String get assistantReportOther => 'Beste zerbait';
+
+  @override
+  String get assistantReportThanks => 'Eskerrik asko. Erantzun hau berrikusiko dugu.';
 }

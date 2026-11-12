@@ -3427,5 +3427,12 @@
   "proofPackColStatus": "Status",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Rapporteer",
+  "assistantReportTitle": "Rapporteer hierdie antwoord",
+  "assistantReportBody": "Die vraag en hierdie antwoord word na Vorkalis gestuur om na te gaan.",
+  "assistantReportHarmful": "Aanstootlik of skadelik",
+  "assistantReportWrong": "Verkeerd of misleidend",
+  "assistantReportOther": "Iets anders",
+  "assistantReportThanks": "Dankie. Ons sal hierdie antwoord nagaan."
 }

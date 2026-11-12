@@ -8746,4 +8746,25 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Laporkan';
+
+  @override
+  String get assistantReportTitle => 'Laporkan jawapan ini';
+
+  @override
+  String get assistantReportBody => 'Soalan dan jawapan ini dihantar kepada Vorkalis untuk disemak.';
+
+  @override
+  String get assistantReportHarmful => 'Menyinggung atau berbahaya';
+
+  @override
+  String get assistantReportWrong => 'Salah atau mengelirukan';
+
+  @override
+  String get assistantReportOther => 'Lain-lain';
+
+  @override
+  String get assistantReportThanks => 'Terima kasih. Kami akan menyemak jawapan ini.';
 }

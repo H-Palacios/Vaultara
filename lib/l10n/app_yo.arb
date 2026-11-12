@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Ipò",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Jábọ̀",
+  "assistantReportTitle": "Jábọ̀ ìdáhùn yìí",
+  "assistantReportBody": "A máa fi ìbéèrè náà àti ìdáhùn yìí ránṣẹ́ sí Vorkalis fún àyẹ̀wò.",
+  "assistantReportHarmful": "Ó ń bínú tàbí ó lè pa lára",
+  "assistantReportWrong": "Ó ṣàṣìṣe tàbí ó ń ṣini lọ́nà",
+  "assistantReportOther": "Nǹkan mìíràn",
+  "assistantReportThanks": "A dúpẹ́. A máa ṣàyẹ̀wò ìdáhùn yìí."
 }

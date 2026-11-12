@@ -8882,4 +8882,25 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Statuss';
+
+  @override
+  String get assistantReport => 'Ziņot';
+
+  @override
+  String get assistantReportTitle => 'Ziņot par šo atbildi';
+
+  @override
+  String get assistantReportBody => 'Jautājums un šī atbilde tiek nosūtīti Vorkalis pārskatīšanai.';
+
+  @override
+  String get assistantReportHarmful => 'Aizskarošs vai kaitīgs';
+
+  @override
+  String get assistantReportWrong => 'Nepareizs vai maldinošs';
+
+  @override
+  String get assistantReportOther => 'Kas cits';
+
+  @override
+  String get assistantReportThanks => 'Paldies. Mēs pārskatīsim šo atbildi.';
 }

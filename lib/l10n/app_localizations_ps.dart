@@ -8810,4 +8810,25 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'حالت';
+
+  @override
+  String get assistantReport => 'راپور ورکړئ';
+
+  @override
+  String get assistantReportTitle => 'د دې ځواب راپور ورکړئ';
+
+  @override
+  String get assistantReportBody => 'پوښتنه او دا ځواب د بیاکتنې لپاره Vorkalis ته لیږل کیږي.';
+
+  @override
+  String get assistantReportHarmful => 'سپکاوی یا زیانمن';
+
+  @override
+  String get assistantReportWrong => 'غلط یا ګمراه کوونکی';
+
+  @override
+  String get assistantReportOther => 'بل څه';
+
+  @override
+  String get assistantReportThanks => 'مننه. موږ به دا ځواب وګورو.';
 }

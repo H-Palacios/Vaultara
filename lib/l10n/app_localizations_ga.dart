@@ -9015,4 +9015,25 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Stádas';
+
+  @override
+  String get assistantReport => 'Tuairiscigh';
+
+  @override
+  String get assistantReportTitle => 'Tuairiscigh an freagra seo';
+
+  @override
+  String get assistantReportBody => 'Seoltar an cheist agus an freagra seo chuig Vorkalis lena n-athbhreithniú.';
+
+  @override
+  String get assistantReportHarmful => 'Maslach nó díobhálach';
+
+  @override
+  String get assistantReportWrong => 'Mícheart nó míthreorach';
+
+  @override
+  String get assistantReportOther => 'Rud éigin eile';
+
+  @override
+  String get assistantReportThanks => 'Go raibh maith agat. Déanfaimid athbhreithniú ar an bhfreagra seo.';
 }

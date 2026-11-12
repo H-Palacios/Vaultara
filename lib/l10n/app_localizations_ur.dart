@@ -8810,4 +8810,25 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'حیثیت';
+
+  @override
+  String get assistantReport => 'رپورٹ کریں';
+
+  @override
+  String get assistantReportTitle => 'اس جواب کی رپورٹ کریں';
+
+  @override
+  String get assistantReportBody => 'سوال اور یہ جواب جائزے کے لیے Vorkalis کو بھیجے جاتے ہیں۔';
+
+  @override
+  String get assistantReportHarmful => 'توہین آمیز یا نقصان دہ';
+
+  @override
+  String get assistantReportWrong => 'غلط یا گمراہ کن';
+
+  @override
+  String get assistantReportOther => 'کچھ اور';
+
+  @override
+  String get assistantReportThanks => 'شکریہ۔ ہم اس جواب کا جائزہ لیں گے۔';
 }

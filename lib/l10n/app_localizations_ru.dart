@@ -8989,4 +8989,25 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Статус';
+
+  @override
+  String get assistantReport => 'Пожаловаться';
+
+  @override
+  String get assistantReportTitle => 'Пожаловаться на этот ответ';
+
+  @override
+  String get assistantReportBody => 'Вопрос и этот ответ отправляются в Vorkalis на проверку.';
+
+  @override
+  String get assistantReportHarmful => 'Оскорбительный или вредный';
+
+  @override
+  String get assistantReportWrong => 'Неверный или вводящий в заблуждение';
+
+  @override
+  String get assistantReportOther => 'Другое';
+
+  @override
+  String get assistantReportThanks => 'Спасибо. Мы проверим этот ответ.';
 }

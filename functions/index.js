@@ -505,4 +505,4 @@ exports.revokeShareLink = onCall(CALLABLE, async (request) => {
   logger.info("revokeShareLink revoked", { uid });
 
   return { revoked: true };
-});
+});exports.onAssistantReportCreated = require("./assistant-reports").onAssistantReportCreated;

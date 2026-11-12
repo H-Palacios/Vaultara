@@ -8810,4 +8810,25 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'অবস্থা';
+
+  @override
+  String get assistantReport => 'রিপোর্ট করুন';
+
+  @override
+  String get assistantReportTitle => 'এই উত্তরটি রিপোর্ট করুন';
+
+  @override
+  String get assistantReportBody => 'প্রশ্ন এবং এই উত্তরটি পর্যালোচনার জন্য Vorkalis-এ পাঠানো হয়।';
+
+  @override
+  String get assistantReportHarmful => 'আপত্তিকর বা ক্ষতিকর';
+
+  @override
+  String get assistantReportWrong => 'ভুল বা বিভ্রান্তিকর';
+
+  @override
+  String get assistantReportOther => 'অন্য কিছু';
+
+  @override
+  String get assistantReportThanks => 'ধন্যবাদ। আমরা এই উত্তরটি পর্যালোচনা করব।';
 }

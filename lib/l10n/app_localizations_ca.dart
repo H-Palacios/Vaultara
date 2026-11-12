@@ -8815,4 +8815,25 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Estat';
+
+  @override
+  String get assistantReport => 'Informa';
+
+  @override
+  String get assistantReportTitle => 'Informa d\'aquesta resposta';
+
+  @override
+  String get assistantReportBody => 'La pregunta i aquesta resposta s\'envien a Vorkalis perquè les revisi.';
+
+  @override
+  String get assistantReportHarmful => 'Ofensiu o perjudicial';
+
+  @override
+  String get assistantReportWrong => 'Incorrecte o enganyós';
+
+  @override
+  String get assistantReportOther => 'Una altra cosa';
+
+  @override
+  String get assistantReportThanks => 'Gràcies. Revisarem aquesta resposta.';
 }

@@ -3396,5 +3396,12 @@
   "proofPackColStatus": "Κατάσταση",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Αναφορά",
+  "assistantReportTitle": "Αναφορά αυτής της απάντησης",
+  "assistantReportBody": "Η ερώτηση και αυτή η απάντηση αποστέλλονται στη Vorkalis για έλεγχο.",
+  "assistantReportHarmful": "Προσβλητικό ή επιβλαβές",
+  "assistantReportWrong": "Λάθος ή παραπλανητικό",
+  "assistantReportOther": "Κάτι άλλο",
+  "assistantReportThanks": "Ευχαριστούμε. Θα ελέγξουμε αυτή την απάντηση."
 }

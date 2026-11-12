@@ -3139,5 +3139,12 @@
   "proofPackColStatus": "Status",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Şikayət et",
+  "assistantReportTitle": "Bu cavabdan şikayət edin",
+  "assistantReportBody": "Sual və bu cavab yoxlanılması üçün Vorkalis-ə göndərilir.",
+  "assistantReportHarmful": "Təhqiredici və ya zərərli",
+  "assistantReportWrong": "Səhv və ya çaşdırıcı",
+  "assistantReportOther": "Başqa bir şey",
+  "assistantReportThanks": "Təşəkkür edirik. Bu cavabı yoxlayacağıq."
 }

@@ -8810,4 +8810,25 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'وضعیت';
+
+  @override
+  String get assistantReport => 'گزارش';
+
+  @override
+  String get assistantReportTitle => 'گزارش این پاسخ';
+
+  @override
+  String get assistantReportBody => 'پرسش و این پاسخ برای بررسی به Vorkalis فرستاده می‌شوند.';
+
+  @override
+  String get assistantReportHarmful => 'توهین‌آمیز یا آسیب‌زا';
+
+  @override
+  String get assistantReportWrong => 'نادرست یا گمراه‌کننده';
+
+  @override
+  String get assistantReportOther => 'چیز دیگر';
+
+  @override
+  String get assistantReportThanks => 'سپاسگزاریم. این پاسخ را بررسی می‌کنیم.';
 }

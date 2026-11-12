@@ -8810,4 +8810,25 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'நிலை';
+
+  @override
+  String get assistantReport => 'புகாரளி';
+
+  @override
+  String get assistantReportTitle => 'இந்தப் பதிலைப் புகாரளி';
+
+  @override
+  String get assistantReportBody => 'கேள்வியும் இந்தப் பதிலும் மதிப்பாய்வுக்காக Vorkalis-க்கு அனுப்பப்படும்.';
+
+  @override
+  String get assistantReportHarmful => 'புண்படுத்தும் அல்லது தீங்கானது';
+
+  @override
+  String get assistantReportWrong => 'தவறானது அல்லது தவறாக வழிநடத்துவது';
+
+  @override
+  String get assistantReportOther => 'வேறு ஏதாவது';
+
+  @override
+  String get assistantReportThanks => 'நன்றி. இந்தப் பதிலை மதிப்பாய்வு செய்வோம்.';
 }

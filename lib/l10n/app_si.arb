@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "තත්ත්වය",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "වාර්තා කරන්න",
+  "assistantReportTitle": "මෙම පිළිතුර වාර්තා කරන්න",
+  "assistantReportBody": "ප්‍රශ්නය සහ මෙම පිළිතුර සමාලෝචනය සඳහා Vorkalis වෙත යවනු ලැබේ.",
+  "assistantReportHarmful": "අපහාසාත්මක හෝ හානිකර",
+  "assistantReportWrong": "වැරදි හෝ නොමඟ යවන",
+  "assistantReportOther": "වෙනත් දෙයක්",
+  "assistantReportThanks": "ස්තූතියි. අපි මෙම පිළිතුර සමාලෝචනය කරමු."
 }

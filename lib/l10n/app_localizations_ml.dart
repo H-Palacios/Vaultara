@@ -8810,4 +8810,25 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'നില';
+
+  @override
+  String get assistantReport => 'റിപ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get assistantReportTitle => 'ഈ ഉത്തരം റിപ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get assistantReportBody => 'ചോദ്യവും ഈ ഉത്തരവും പരിശോധനയ്ക്കായി Vorkalis-ലേക്ക് അയയ്ക്കുന്നു.';
+
+  @override
+  String get assistantReportHarmful => 'അധിക്ഷേപകരമോ ദോഷകരമോ';
+
+  @override
+  String get assistantReportWrong => 'തെറ്റോ തെറ്റിദ്ധരിപ്പിക്കുന്നതോ';
+
+  @override
+  String get assistantReportOther => 'മറ്റെന്തെങ്കിലും';
+
+  @override
+  String get assistantReportThanks => 'നന്ദി. ഞങ്ങൾ ഈ ഉത്തരം പരിശോധിക്കും.';
 }

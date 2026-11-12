@@ -8758,4 +8758,25 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Ipò';
+
+  @override
+  String get assistantReport => 'Jábọ̀';
+
+  @override
+  String get assistantReportTitle => 'Jábọ̀ ìdáhùn yìí';
+
+  @override
+  String get assistantReportBody => 'A máa fi ìbéèrè náà àti ìdáhùn yìí ránṣẹ́ sí Vorkalis fún àyẹ̀wò.';
+
+  @override
+  String get assistantReportHarmful => 'Ó ń bínú tàbí ó lè pa lára';
+
+  @override
+  String get assistantReportWrong => 'Ó ṣàṣìṣe tàbí ó ń ṣini lọ́nà';
+
+  @override
+  String get assistantReportOther => 'Nǹkan mìíràn';
+
+  @override
+  String get assistantReportThanks => 'A dúpẹ́. A máa ṣàyẹ̀wò ìdáhùn yìí.';
 }

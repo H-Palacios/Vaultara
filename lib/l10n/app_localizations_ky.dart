@@ -8810,4 +8810,25 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Абалы';
+
+  @override
+  String get assistantReport => 'Даттануу';
+
+  @override
+  String get assistantReportTitle => 'Бул жоопко даттануу';
+
+  @override
+  String get assistantReportBody => 'Суроо жана бул жооп текшерүү үчүн Vorkalis\'ке жөнөтүлөт.';
+
+  @override
+  String get assistantReportHarmful => 'Кордогон же зыяндуу';
+
+  @override
+  String get assistantReportWrong => 'Туура эмес же адаштыруучу';
+
+  @override
+  String get assistantReportOther => 'Башка нерсе';
+
+  @override
+  String get assistantReportThanks => 'Рахмат. Бул жоопту текшеребиз.';
 }

@@ -8810,4 +8810,25 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Ubume';
+
+  @override
+  String get assistantReport => 'Xela';
+
+  @override
+  String get assistantReportTitle => 'Xela le mpendulo';
+
+  @override
+  String get assistantReportBody => 'Umbuzo nale mpendulo zithunyelwa kwaVorkalis ukuze zihlolwe.';
+
+  @override
+  String get assistantReportHarmful => 'Ikhubekisa okanye inobungozi';
+
+  @override
+  String get assistantReportWrong => 'Ayichanekanga okanye iyalahlekisa';
+
+  @override
+  String get assistantReportOther => 'Enye into';
+
+  @override
+  String get assistantReportThanks => 'Enkosi. Siza kuyihlola le mpendulo.';
 }

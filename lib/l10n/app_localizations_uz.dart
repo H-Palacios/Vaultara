@@ -8810,4 +8810,25 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Holat';
+
+  @override
+  String get assistantReport => 'Shikoyat qilish';
+
+  @override
+  String get assistantReportTitle => 'Bu javob ustidan shikoyat qilish';
+
+  @override
+  String get assistantReportBody => 'Savol va bu javob tekshirish uchun Vorkalis’ga yuboriladi.';
+
+  @override
+  String get assistantReportHarmful => 'Haqoratli yoki zararli';
+
+  @override
+  String get assistantReportWrong => 'Notoʻgʻri yoki chalgʻituvchi';
+
+  @override
+  String get assistantReportOther => 'Boshqa narsa';
+
+  @override
+  String get assistantReportThanks => 'Rahmat. Bu javobni tekshiramiz.';
 }

@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "Statuss",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Ziņot",
+  "assistantReportTitle": "Ziņot par šo atbildi",
+  "assistantReportBody": "Jautājums un šī atbilde tiek nosūtīti Vorkalis pārskatīšanai.",
+  "assistantReportHarmful": "Aizskarošs vai kaitīgs",
+  "assistantReportWrong": "Nepareizs vai maldinošs",
+  "assistantReportOther": "Kas cits",
+  "assistantReportThanks": "Paldies. Mēs pārskatīsim šo atbildi."
 }

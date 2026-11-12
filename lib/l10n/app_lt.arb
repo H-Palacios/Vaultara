@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "Būsena",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Pranešti",
+  "assistantReportTitle": "Pranešti apie šį atsakymą",
+  "assistantReportBody": "Klausimas ir šis atsakymas siunčiami Vorkalis peržiūrėti.",
+  "assistantReportHarmful": "Įžeidžiantis ar žalingas",
+  "assistantReportWrong": "Klaidingas ar klaidinantis",
+  "assistantReportOther": "Kita",
+  "assistantReportThanks": "Ačiū. Peržiūrėsime šį atsakymą."
 }

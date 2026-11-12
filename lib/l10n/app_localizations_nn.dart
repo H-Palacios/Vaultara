@@ -8815,4 +8815,25 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Rapporter';
+
+  @override
+  String get assistantReportTitle => 'Rapporter dette svaret';
+
+  @override
+  String get assistantReportBody => 'Spørsmålet og dette svaret blir sende til Vorkalis for gjennomgang.';
+
+  @override
+  String get assistantReportHarmful => 'Støytande eller skadeleg';
+
+  @override
+  String get assistantReportWrong => 'Feil eller villeiande';
+
+  @override
+  String get assistantReportOther => 'Noko anna';
+
+  @override
+  String get assistantReportThanks => 'Takk. Vi går gjennom dette svaret.';
 }

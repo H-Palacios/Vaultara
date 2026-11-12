@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Stanje",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Prijavi",
+  "assistantReportTitle": "Prijavite ta odgovor",
+  "assistantReportBody": "Vprašanje in ta odgovor se pošljeta podjetju Vorkalis v pregled.",
+  "assistantReportHarmful": "Žaljivo ali škodljivo",
+  "assistantReportWrong": "Napačno ali zavajajoče",
+  "assistantReportOther": "Nekaj drugega",
+  "assistantReportThanks": "Hvala. Ta odgovor bomo pregledali."
 }

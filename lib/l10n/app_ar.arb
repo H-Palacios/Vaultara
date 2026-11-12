@@ -3427,5 +3427,12 @@
   "proofPackColStatus": "الحالة",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "إبلاغ",
+  "assistantReportTitle": "الإبلاغ عن هذه الإجابة",
+  "assistantReportBody": "يُرسَل السؤال وهذه الإجابة إلى Vorkalis لمراجعتهما.",
+  "assistantReportHarmful": "مسيء أو ضار",
+  "assistantReportWrong": "خاطئ أو مضلل",
+  "assistantReportOther": "شيء آخر",
+  "assistantReportThanks": "شكرًا لك. سنراجع هذه الإجابة."
 }

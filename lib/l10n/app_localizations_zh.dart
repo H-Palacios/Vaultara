@@ -8746,6 +8746,27 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get proofPackColStatus => '状态';
+
+  @override
+  String get assistantReport => '举报';
+
+  @override
+  String get assistantReportTitle => '举报此回答';
+
+  @override
+  String get assistantReportBody => '问题和此回答将发送给 Vorkalis 进行审核。';
+
+  @override
+  String get assistantReportHarmful => '冒犯或有害';
+
+  @override
+  String get assistantReportWrong => '错误或误导';
+
+  @override
+  String get assistantReportOther => '其他';
+
+  @override
+  String get assistantReportThanks => '谢谢。我们会审核此回答。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -17478,6 +17499,27 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get proofPackColStatus => '状态';
+
+  @override
+  String get assistantReport => '举报';
+
+  @override
+  String get assistantReportTitle => '举报此回答';
+
+  @override
+  String get assistantReportBody => '问题和此回答将发送给 Vorkalis 进行审核。';
+
+  @override
+  String get assistantReportHarmful => '冒犯或有害';
+
+  @override
+  String get assistantReportWrong => '错误或误导';
+
+  @override
+  String get assistantReportOther => '其他';
+
+  @override
+  String get assistantReportThanks => '谢谢。我们会审核此回答。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -26210,4 +26252,25 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get proofPackColStatus => '狀態';
+
+  @override
+  String get assistantReport => '檢舉';
+
+  @override
+  String get assistantReportTitle => '檢舉此回答';
+
+  @override
+  String get assistantReportBody => '問題和此回答會傳送給 Vorkalis 進行審查。';
+
+  @override
+  String get assistantReportHarmful => '冒犯或有害';
+
+  @override
+  String get assistantReportWrong => '錯誤或誤導';
+
+  @override
+  String get assistantReportOther => '其他';
+
+  @override
+  String get assistantReportThanks => '謝謝。我們會審查此回答。';
 }

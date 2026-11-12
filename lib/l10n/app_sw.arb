@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Hali",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Ripoti",
+  "assistantReportTitle": "Ripoti jibu hili",
+  "assistantReportBody": "Swali na jibu hili hutumwa kwa Vorkalis ili likaguliwe.",
+  "assistantReportHarmful": "Ya kuudhi au yenye madhara",
+  "assistantReportWrong": "Si sahihi au ya kupotosha",
+  "assistantReportOther": "Kitu kingine",
+  "assistantReportThanks": "Asante. Tutakagua jibu hili."
 }

@@ -3407,5 +3407,12 @@
   "proofPackColStatus": "Күйі",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Шағымдану",
+  "assistantReportTitle": "Бұл жауапқа шағымдану",
+  "assistantReportBody": "Сұрақ пен осы жауап тексеру үшін Vorkalis-ке жіберіледі.",
+  "assistantReportHarmful": "Қорлайтын немесе зиянды",
+  "assistantReportWrong": "Қате немесе адастыратын",
+  "assistantReportOther": "Басқа нәрсе",
+  "assistantReportThanks": "Рахмет. Бұл жауапты тексереміз."
 }

@@ -8810,4 +8810,25 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'સ્થિતિ';
+
+  @override
+  String get assistantReport => 'રિપોર્ટ કરો';
+
+  @override
+  String get assistantReportTitle => 'આ જવાબની રિપોર્ટ કરો';
+
+  @override
+  String get assistantReportBody => 'પ્રશ્ન અને આ જવાબ સમીક્ષા માટે Vorkalis ને મોકલવામાં આવે છે.';
+
+  @override
+  String get assistantReportHarmful => 'અપમાનજનક અથવા હાનિકારક';
+
+  @override
+  String get assistantReportWrong => 'ખોટું અથવા ગેરમાર્ગે દોરનારું';
+
+  @override
+  String get assistantReportOther => 'બીજું કંઈક';
+
+  @override
+  String get assistantReportThanks => 'આભાર. અમે આ જવાબની સમીક્ષા કરીશું.';
 }

@@ -8744,4 +8744,25 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'ស្ថានភាព';
+
+  @override
+  String get assistantReport => 'រាយការណ៍';
+
+  @override
+  String get assistantReportTitle => 'រាយការណ៍ចម្លើយនេះ';
+
+  @override
+  String get assistantReportBody => 'សំណួរ និងចម្លើយនេះត្រូវបានផ្ញើទៅ Vorkalis ដើម្បីពិនិត្យ។';
+
+  @override
+  String get assistantReportHarmful => 'ប្រមាថ ឬបង្កគ្រោះថ្នាក់';
+
+  @override
+  String get assistantReportWrong => 'ខុស ឬបំភាន់';
+
+  @override
+  String get assistantReportOther => 'អ្វីផ្សេងទៀត';
+
+  @override
+  String get assistantReportThanks => 'សូមអរគុណ។ យើងនឹងពិនិត្យចម្លើយនេះ។';
 }

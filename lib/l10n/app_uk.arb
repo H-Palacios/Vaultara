@@ -3406,5 +3406,12 @@
   "proofPackColStatus": "Статус",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Поскаржитися",
+  "assistantReportTitle": "Поскаржитися на цю відповідь",
+  "assistantReportBody": "Запитання й цю відповідь буде надіслано до Vorkalis на перевірку.",
+  "assistantReportHarmful": "Образлива або шкідлива",
+  "assistantReportWrong": "Неправильна або оманлива",
+  "assistantReportOther": "Інше",
+  "assistantReportThanks": "Дякуємо. Ми перевіримо цю відповідь."
 }

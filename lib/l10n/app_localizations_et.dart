@@ -8815,4 +8815,25 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Olek';
+
+  @override
+  String get assistantReport => 'Teata';
+
+  @override
+  String get assistantReportTitle => 'Teata sellest vastusest';
+
+  @override
+  String get assistantReportBody => 'Küsimus ja see vastus saadetakse ülevaatamiseks Vorkalisele.';
+
+  @override
+  String get assistantReportHarmful => 'Solvav või kahjulik';
+
+  @override
+  String get assistantReportWrong => 'Vale või eksitav';
+
+  @override
+  String get assistantReportOther => 'Midagi muud';
+
+  @override
+  String get assistantReportThanks => 'Aitäh. Vaatame selle vastuse üle.';
 }

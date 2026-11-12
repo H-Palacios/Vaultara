@@ -8746,4 +8746,25 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'ສະຖານະ';
+
+  @override
+  String get assistantReport => 'ລາຍງານ';
+
+  @override
+  String get assistantReportTitle => 'ລາຍງານຄຳຕອບນີ້';
+
+  @override
+  String get assistantReportBody => 'ຄຳຖາມ ແລະ ຄຳຕອບນີ້ຈະຖືກສົ່ງໄປໃຫ້ Vorkalis ເພື່ອກວດສອບ.';
+
+  @override
+  String get assistantReportHarmful => 'ໝິ່ນປະໝາດ ຫຼື ເປັນອັນຕະລາຍ';
+
+  @override
+  String get assistantReportWrong => 'ຜິດ ຫຼື ຊວນໃຫ້ເຂົ້າໃຈຜິດ';
+
+  @override
+  String get assistantReportOther => 'ອື່ນໆ';
+
+  @override
+  String get assistantReportThanks => 'ຂອບໃຈ. ພວກເຮົາຈະກວດສອບຄຳຕອບນີ້.';
 }

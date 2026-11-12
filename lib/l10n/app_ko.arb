@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "상태",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "신고",
+  "assistantReportTitle": "이 답변 신고",
+  "assistantReportBody": "질문과 이 답변은 검토를 위해 Vorkalis에 전송됩니다.",
+  "assistantReportHarmful": "불쾌하거나 해로움",
+  "assistantReportWrong": "틀리거나 오해의 소지가 있음",
+  "assistantReportOther": "기타",
+  "assistantReportThanks": "감사합니다. 이 답변을 검토하겠습니다."
 }

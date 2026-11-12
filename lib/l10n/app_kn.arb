@@ -3139,5 +3139,12 @@
   "proofPackColStatus": "ಸ್ಥಿತಿ",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "ವರದಿ ಮಾಡಿ",
+  "assistantReportTitle": "ಈ ಉತ್ತರವನ್ನು ವರದಿ ಮಾಡಿ",
+  "assistantReportBody": "ಪ್ರಶ್ನೆ ಮತ್ತು ಈ ಉತ್ತರವನ್ನು ಪರಿಶೀಲನೆಗಾಗಿ Vorkalis ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.",
+  "assistantReportHarmful": "ಆಕ್ಷೇಪಾರ್ಹ ಅಥವಾ ಹಾನಿಕಾರಕ",
+  "assistantReportWrong": "ತಪ್ಪು ಅಥವಾ ದಾರಿತಪ್ಪಿಸುವ",
+  "assistantReportOther": "ಬೇರೆ ಏನಾದರೂ",
+  "assistantReportThanks": "ಧನ್ಯವಾದಗಳು. ನಾವು ಈ ಉತ್ತರವನ್ನು ಪರಿಶೀಲಿಸುತ್ತೇವೆ."
 }

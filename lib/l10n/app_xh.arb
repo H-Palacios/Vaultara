@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Ubume",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Xela",
+  "assistantReportTitle": "Xela le mpendulo",
+  "assistantReportBody": "Umbuzo nale mpendulo zithunyelwa kwaVorkalis ukuze zihlolwe.",
+  "assistantReportHarmful": "Ikhubekisa okanye inobungozi",
+  "assistantReportWrong": "Ayichanekanga okanye iyalahlekisa",
+  "assistantReportOther": "Enye into",
+  "assistantReportThanks": "Enkosi. Siza kuyihlola le mpendulo."
 }

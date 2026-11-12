@@ -8810,4 +8810,25 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Կարգավիճակ';
+
+  @override
+  String get assistantReport => 'Բողոքել';
+
+  @override
+  String get assistantReportTitle => 'Բողոքել այս պատասխանի մասին';
+
+  @override
+  String get assistantReportBody => 'Հարցը և այս պատասխանը ուղարկվում են Vorkalis՝ ստուգման համար։';
+
+  @override
+  String get assistantReportHarmful => 'Վիրավորական կամ վնասակար';
+
+  @override
+  String get assistantReportWrong => 'Սխալ կամ մոլորեցնող';
+
+  @override
+  String get assistantReportOther => 'Այլ բան';
+
+  @override
+  String get assistantReportThanks => 'Շնորհակալություն։ Մենք կստուգենք այս պատասխանը։';
 }

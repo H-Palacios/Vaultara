@@ -14,6 +14,7 @@ import 'package:vaultara/features/assistant/services/assistant_chat_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_feedback_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_run.dart';
 import 'package:vaultara/features/assistant/services/assistant_open_chat.dart';
+import 'package:vaultara/features/assistant/services/assistant_report_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_service.dart';
 import 'package:vaultara/features/assistant/services/voice_input.dart';
 import 'package:vaultara/features/assistant/view/assistant_chat_panel.dart';
@@ -23,6 +24,7 @@ import 'package:vaultara/features/assistant/view/widgets/assistant_bubble.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_input_bar.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_linked_text.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_message_tools.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_report_sheet.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_voice_panel.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/features/assistant/logic/assistant_plain_text.dart';
@@ -658,24 +660,24 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     });
   }
 
+  String _questionFor(AssistantMessage message) {
+    final at = _messages.indexOf(message);
+    for (var i = at - 1; i >= 0; i--) {
+      if (_messages[i].isUser) return _messages[i].sentText;
+    }
+    return '';
+  }
+
   void _rate(AssistantMessage message, int rating) {
     final loc = AppLocalizations.of(context)!;
     setState(() => message.rating = rating);
     if (rating == 0) return;
-    final at = _messages.indexOf(message);
-    String question = '';
-    for (var i = at - 1; i >= 0; i--) {
-      if (_messages[i].isUser) {
-        question = _messages[i].sentText;
-        break;
-      }
-    }
     final id = message.id ?? AssistantRun.newId();
     message.id ??= id;
     AssistantFeedbackStore.save(
       messageId: id,
       rating: rating,
-      question: question,
+      question: _questionFor(message),
       answer: message.text,
       chatId: _chatId,
     );
@@ -685,6 +687,37 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       icon: rating == 1
           ? Icons.thumb_up_alt_rounded
           : Icons.thumb_down_alt_rounded,
+    );
+  }
+
+  Future<void> _report(AssistantMessage message) async {
+    if (message.reported) return;
+    final reason = await AssistantReportSheet.show(context);
+    if (reason == null || !mounted) return;
+    final loc = AppLocalizations.of(context)!;
+    final id = message.id ?? AssistantRun.newId();
+    message.id ??= id;
+    final saved = await AssistantReportStore.save(
+      messageId: id,
+      reason: reason,
+      question: _questionFor(message),
+      answer: message.text,
+      chatId: _chatId,
+    );
+    if (!mounted) return;
+    if (!saved) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.assistantErrorFailed,
+        icon: Icons.error_outline_rounded,
+      );
+      return;
+    }
+    setState(() => message.reported = true);
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      loc.assistantReportThanks,
+      icon: Icons.flag_rounded,
     );
   }
 
@@ -1010,6 +1043,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
             onRate: (rating) => _rate(message, rating),
             onSpeak: () => _speak(message),
             speaking: identical(_speakingMessage, message),
+            onReport: () => _report(message),
+            reported: message.reported,
           ),
         ),
         if (extras.isNotEmpty)

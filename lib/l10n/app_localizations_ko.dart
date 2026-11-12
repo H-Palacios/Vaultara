@@ -8746,4 +8746,25 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get proofPackColStatus => '상태';
+
+  @override
+  String get assistantReport => '신고';
+
+  @override
+  String get assistantReportTitle => '이 답변 신고';
+
+  @override
+  String get assistantReportBody => '질문과 이 답변은 검토를 위해 Vorkalis에 전송됩니다.';
+
+  @override
+  String get assistantReportHarmful => '불쾌하거나 해로움';
+
+  @override
+  String get assistantReportWrong => '틀리거나 오해의 소지가 있음';
+
+  @override
+  String get assistantReportOther => '기타';
+
+  @override
+  String get assistantReportThanks => '감사합니다. 이 답변을 검토하겠습니다.';
 }

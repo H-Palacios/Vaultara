@@ -8809,4 +8809,25 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Xaalad';
+
+  @override
+  String get assistantReport => 'Soo sheeg';
+
+  @override
+  String get assistantReportTitle => 'Soo sheeg jawaabtan';
+
+  @override
+  String get assistantReportBody => 'Su\'aasha iyo jawaabtan waxaa loo diraa Vorkalis si loo eego.';
+
+  @override
+  String get assistantReportHarmful => 'Aflagaado ama waxyeello leh';
+
+  @override
+  String get assistantReportWrong => 'Khalad ama marin habaabin ah';
+
+  @override
+  String get assistantReportOther => 'Wax kale';
+
+  @override
+  String get assistantReportThanks => 'Mahadsanid. Waan eegi doonnaa jawaabtan.';
 }

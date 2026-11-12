@@ -3389,5 +3389,12 @@
   "proofPackColStatus": "Xaalad",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Soo sheeg",
+  "assistantReportTitle": "Soo sheeg jawaabtan",
+  "assistantReportBody": "Su'aasha iyo jawaabtan waxaa loo diraa Vorkalis si loo eego.",
+  "assistantReportHarmful": "Aflagaado ama waxyeello leh",
+  "assistantReportWrong": "Khalad ama marin habaabin ah",
+  "assistantReportOther": "Wax kale",
+  "assistantReportThanks": "Mahadsanid. Waan eegi doonnaa jawaabtan."
 }

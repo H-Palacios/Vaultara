@@ -8815,4 +8815,25 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Rapporteer';
+
+  @override
+  String get assistantReportTitle => 'Rapporteer hierdie antwoord';
+
+  @override
+  String get assistantReportBody => 'Die vraag en hierdie antwoord word na Vorkalis gestuur om na te gaan.';
+
+  @override
+  String get assistantReportHarmful => 'Aanstootlik of skadelik';
+
+  @override
+  String get assistantReportWrong => 'Verkeerd of misleidend';
+
+  @override
+  String get assistantReportOther => 'Iets anders';
+
+  @override
+  String get assistantReportThanks => 'Dankie. Ons sal hierdie antwoord nagaan.';
 }

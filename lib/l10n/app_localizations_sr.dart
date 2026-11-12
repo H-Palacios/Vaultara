@@ -8893,6 +8893,27 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Статус';
+
+  @override
+  String get assistantReport => 'Пријави';
+
+  @override
+  String get assistantReportTitle => 'Пријавите овај одговор';
+
+  @override
+  String get assistantReportBody => 'Питање и овај одговор шаљу се компанији Vorkalis на проверу.';
+
+  @override
+  String get assistantReportHarmful => 'Увредљиво или штетно';
+
+  @override
+  String get assistantReportWrong => 'Погрешно или обмањујуће';
+
+  @override
+  String get assistantReportOther => 'Нешто друго';
+
+  @override
+  String get assistantReportThanks => 'Хвала вам. Проверићемо овај одговор.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -17783,6 +17804,27 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get proofPackColStatus => 'Статус';
+
+  @override
+  String get assistantReport => 'Пријави';
+
+  @override
+  String get assistantReportTitle => 'Пријавите овај одговор';
+
+  @override
+  String get assistantReportBody => 'Питање и овај одговор шаљу се компанији Vorkalis на проверу.';
+
+  @override
+  String get assistantReportHarmful => 'Увредљиво или штетно';
+
+  @override
+  String get assistantReportWrong => 'Погрешно или обмањујуће';
+
+  @override
+  String get assistantReportOther => 'Нешто друго';
+
+  @override
+  String get assistantReportThanks => 'Хвала вам. Проверићемо овај одговор.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -26669,4 +26711,25 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Prijavi';
+
+  @override
+  String get assistantReportTitle => 'Prijavite ovaj odgovor';
+
+  @override
+  String get assistantReportBody => 'Pitanje i ovaj odgovor šalju se kompaniji Vorkalis na proveru.';
+
+  @override
+  String get assistantReportHarmful => 'Uvredljivo ili štetno';
+
+  @override
+  String get assistantReportWrong => 'Pogrešno ili obmanjujuće';
+
+  @override
+  String get assistantReportOther => 'Nešto drugo';
+
+  @override
+  String get assistantReportThanks => 'Hvala vam. Proverićemo ovaj odgovor.';
 }

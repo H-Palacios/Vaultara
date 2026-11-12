@@ -8810,4 +8810,25 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Status';
+
+  @override
+  String get assistantReport => 'Şikayət et';
+
+  @override
+  String get assistantReportTitle => 'Bu cavabdan şikayət edin';
+
+  @override
+  String get assistantReportBody => 'Sual və bu cavab yoxlanılması üçün Vorkalis-ə göndərilir.';
+
+  @override
+  String get assistantReportHarmful => 'Təhqiredici və ya zərərli';
+
+  @override
+  String get assistantReportWrong => 'Səhv və ya çaşdırıcı';
+
+  @override
+  String get assistantReportOther => 'Başqa bir şey';
+
+  @override
+  String get assistantReportThanks => 'Təşəkkür edirik. Bu cavabı yoxlayacağıq.';
 }

@@ -3139,5 +3139,12 @@
   "proofPackColStatus": "Holat",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Shikoyat qilish",
+  "assistantReportTitle": "Bu javob ustidan shikoyat qilish",
+  "assistantReportBody": "Savol va bu javob tekshirish uchun Vorkalis’ga yuboriladi.",
+  "assistantReportHarmful": "Haqoratli yoki zararli",
+  "assistantReportWrong": "Notoʻgʻri yoki chalgʻituvchi",
+  "assistantReportOther": "Boshqa narsa",
+  "assistantReportThanks": "Rahmat. Bu javobni tekshiramiz."
 }

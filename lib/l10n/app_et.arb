@@ -3554,5 +3554,12 @@
   "proofPackColStatus": "Olek",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Teata",
+  "assistantReportTitle": "Teata sellest vastusest",
+  "assistantReportBody": "Küsimus ja see vastus saadetakse ülevaatamiseks Vorkalisele.",
+  "assistantReportHarmful": "Solvav või kahjulik",
+  "assistantReportWrong": "Vale või eksitav",
+  "assistantReportOther": "Midagi muud",
+  "assistantReportThanks": "Aitäh. Vaatame selle vastuse üle."
 }

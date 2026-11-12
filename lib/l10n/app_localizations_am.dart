@@ -8810,4 +8810,25 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'ሁኔታ';
+
+  @override
+  String get assistantReport => 'ሪፖርት አድርግ';
+
+  @override
+  String get assistantReportTitle => 'ይህን መልስ ሪፖርት ያድርጉ';
+
+  @override
+  String get assistantReportBody => 'ጥያቄው እና ይህ መልስ ለግምገማ ወደ Vorkalis ይላካሉ።';
+
+  @override
+  String get assistantReportHarmful => 'አጸያፊ ወይም ጎጂ';
+
+  @override
+  String get assistantReportWrong => 'የተሳሳተ ወይም አሳሳች';
+
+  @override
+  String get assistantReportOther => 'ሌላ ነገር';
+
+  @override
+  String get assistantReportThanks => 'እናመሰግናለን። ይህን መልስ እንገመግማለን።';
 }

@@ -8758,4 +8758,25 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get proofPackColStatus => 'Ọnọdụ';
+
+  @override
+  String get assistantReport => 'Kọọ akụkọ';
+
+  @override
+  String get assistantReportTitle => 'Kọọ banyere azịza a';
+
+  @override
+  String get assistantReportBody => 'A na-eziga ajụjụ ahụ na azịza a na Vorkalis ka e nyochaa ha.';
+
+  @override
+  String get assistantReportHarmful => 'Ihe na-akpasu iwe ma ọ bụ na-emerụ ahụ';
+
+  @override
+  String get assistantReportWrong => 'Ezighi ezi ma ọ bụ na-eduhie eduhie';
+
+  @override
+  String get assistantReportOther => 'Ihe ọzọ';
+
+  @override
+  String get assistantReportThanks => 'Daalụ. Anyị ga-enyocha azịza a.';
 }

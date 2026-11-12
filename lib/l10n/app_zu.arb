@@ -3381,5 +3381,12 @@
   "proofPackColStatus": "Isimo",
   "@proofPackColStatus": {
     "description": "proofPackColStatus"
-  }
+  },
+  "assistantReport": "Bika",
+  "assistantReportTitle": "Bika le mpendulo",
+  "assistantReportBody": "Umbuzo nale mpendulo kuthunyelwa ku-Vorkalis ukuze kubuyekezwe.",
+  "assistantReportHarmful": "Iyacasula noma iyalimaza",
+  "assistantReportWrong": "Ayilungile noma iyadukisa",
+  "assistantReportOther": "Okunye",
+  "assistantReportThanks": "Siyabonga. Sizoyibuyekeza le mpendulo."
 }
