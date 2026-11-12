@@ -3273,5 +3273,14 @@
   "socialContinueApple": "Weiter mit Apple",
   "socialOr": "oder",
   "socialNotAvailable": "Diese Anmeldeart ist gerade nicht verfügbar. Nutze stattdessen deine E-Mail-Adresse und dein Passwort.",
-  "socialAccountExists": "Diese E-Mail-Adresse hat schon ein Vaultara-Konto. Melde dich mit deiner E-Mail-Adresse und deinem Passwort an."
+  "socialAccountExists": "Diese E-Mail-Adresse hat schon ein Vaultara-Konto. Melde dich mit deiner E-Mail-Adresse und deinem Passwort an.",
+  "reauthWithProvider": "Bestätige zum Schutz deines Kontos mit {provider}, dass du es bist.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

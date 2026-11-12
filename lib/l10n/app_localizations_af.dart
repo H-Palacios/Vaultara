@@ -8711,4 +8711,9 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Hierdie e-pos het reeds \'n Vaultara-rekening. Meld aan met jou e-pos en wagwoord.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Bevestig met $provider dat dit jy is om jou rekening veilig te hou.';
+  }
 }

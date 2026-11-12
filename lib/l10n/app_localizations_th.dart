@@ -8631,4 +8631,9 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'อีเมลนี้มีบัญชี Vaultara อยู่แล้ว ลงชื่อเข้าใช้ด้วยอีเมลและรหัสผ่านของคุณ';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'เพื่อความปลอดภัยของบัญชี โปรดยืนยันว่าเป็นคุณด้วย $provider';
+  }
 }

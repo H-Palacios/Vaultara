@@ -3259,5 +3259,14 @@
   "socialContinueApple": "ดำเนินการต่อด้วย Apple",
   "socialOr": "หรือ",
   "socialNotAvailable": "ตัวเลือกการลงชื่อเข้าใช้นี้ไม่พร้อมใช้งานในขณะนี้ ใช้อีเมลและรหัสผ่านของคุณแทน",
-  "socialAccountExists": "อีเมลนี้มีบัญชี Vaultara อยู่แล้ว ลงชื่อเข้าใช้ด้วยอีเมลและรหัสผ่านของคุณ"
+  "socialAccountExists": "อีเมลนี้มีบัญชี Vaultara อยู่แล้ว ลงชื่อเข้าใช้ด้วยอีเมลและรหัสผ่านของคุณ",
+  "reauthWithProvider": "เพื่อความปลอดภัยของบัญชี โปรดยืนยันว่าเป็นคุณด้วย {provider}",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

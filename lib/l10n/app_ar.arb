@@ -3280,5 +3280,14 @@
   "socialContinueApple": "المتابعة باستخدام Apple",
   "socialOr": "أو",
   "socialNotAvailable": "خيار تسجيل الدخول هذا غير متاح الآن. استخدم بريدك الإلكتروني وكلمة المرور بدلًا منه.",
-  "socialAccountExists": "لهذا البريد حساب في Vaultara بالفعل. سجّل الدخول ببريدك الإلكتروني وكلمة المرور."
+  "socialAccountExists": "لهذا البريد حساب في Vaultara بالفعل. سجّل الدخول ببريدك الإلكتروني وكلمة المرور.",
+  "reauthWithProvider": "للحفاظ على أمان حسابك، أكّد هويتك باستخدام {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

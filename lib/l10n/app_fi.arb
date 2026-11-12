@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Jatka Applella",
   "socialOr": "tai",
   "socialNotAvailable": "Tämä kirjautumistapa ei ole nyt käytettävissä. Käytä sen sijaan sähköpostia ja salasanaa.",
-  "socialAccountExists": "Tällä sähköpostilla on jo Vaultara-tili. Kirjaudu sähköpostillasi ja salasanallasi."
+  "socialAccountExists": "Tällä sähköpostilla on jo Vaultara-tili. Kirjaudu sähköpostillasi ja salasanallasi.",
+  "reauthWithProvider": "Vahvista {provider}-tilillä, että kyse on sinusta, jotta tilisi pysyy turvassa.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

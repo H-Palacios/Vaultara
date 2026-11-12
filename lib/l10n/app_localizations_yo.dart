@@ -8655,4 +8655,9 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Ímeèlì yìí ti ní àkáǹtì Vaultara tẹ́lẹ̀. Wọlé pẹ̀lú ímeèlì àti ọ̀rọ̀ aṣínà rẹ.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Láti dáàbò bo àkáǹtì rẹ, fi $provider jẹ́rìí pé ìwọ ni.';
+  }
 }

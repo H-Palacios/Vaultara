@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Folytatás Apple-fiókkal",
   "socialOr": "vagy",
   "socialNotAvailable": "Ez a bejelentkezési mód most nem érhető el. Használd helyette az e-mail-címedet és a jelszavadat.",
-  "socialAccountExists": "Ehhez az e-mail-címhez már tartozik Vaultara-fiók. Jelentkezz be az e-mail-címeddel és a jelszavaddal."
+  "socialAccountExists": "Ehhez az e-mail-címhez már tartozik Vaultara-fiók. Jelentkezz be az e-mail-címeddel és a jelszavaddal.",
+  "reauthWithProvider": "A fiókja védelme érdekében erősítse meg a(z) {provider} segítségével, hogy Ön az.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

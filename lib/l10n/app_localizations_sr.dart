@@ -8790,6 +8790,11 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Овај имејл већ има Vaultara налог. Пријавите се имејлом и лозинком.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Да би ваш налог остао безбедан, потврдите преко $provider да сте то ви.';
+  }
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -17577,6 +17582,11 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get socialAccountExists => 'Овај имејл већ има Vaultara налог. Пријавите се имејлом и лозинком.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Да би ваш налог остао безбедан, потврдите преко $provider да сте то ви.';
+  }
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -26360,4 +26370,9 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get socialAccountExists => 'Ovaj imejl već ima Vaultara nalog. Prijavite se imejlom i lozinkom.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Da bi vaš nalog ostao bezbedan, potvrdite preko $provider da ste to vi.';
+  }
 }

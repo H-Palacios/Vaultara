@@ -8957,4 +8957,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'لهذا البريد حساب في Vaultara بالفعل. سجّل الدخول ببريدك الإلكتروني وكلمة المرور.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'للحفاظ على أمان حسابك، أكّد هويتك باستخدام $provider.';
+  }
 }

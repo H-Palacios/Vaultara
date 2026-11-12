@@ -3254,5 +3254,14 @@
   "socialContinueApple": "Magpatuloy gamit ang Apple",
   "socialOr": "o",
   "socialNotAvailable": "Hindi available ngayon ang opsyong ito sa pag-sign in. Gamitin na lang ang iyong email at password.",
-  "socialAccountExists": "May Vaultara account na ang email na ito. Mag-sign in gamit ang iyong email at password."
+  "socialAccountExists": "May Vaultara account na ang email na ito. Mag-sign in gamit ang iyong email at password.",
+  "reauthWithProvider": "Para manatiling ligtas ang account mo, kumpirmahin gamit ang {provider} na ikaw ito.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

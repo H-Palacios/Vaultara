@@ -8707,4 +8707,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'ይህ ኢሜይል አስቀድሞ የVaultara መለያ አለው። በኢሜይልዎ እና በይለፍ ቃልዎ ይግቡ።';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'መለያዎ ደህንነቱ እንዲጠበቅ፣ እርስዎ መሆንዎን በ$provider ያረጋግጡ።';
+  }
 }

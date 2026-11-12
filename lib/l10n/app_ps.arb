@@ -3242,5 +3242,14 @@
   "socialContinueApple": "له Apple سره دوام ورکړئ",
   "socialOr": "یا",
   "socialNotAvailable": "د ننوتلو دا لاره اوس شتون نه لري. پر ځای یې خپل برېښنالیک او پټنوم وکاروئ.",
-  "socialAccountExists": "دا برېښنالیک دمخه د Vaultara حساب لري. په خپل برېښنالیک او پټنوم ننوځئ."
+  "socialAccountExists": "دا برېښنالیک دمخه د Vaultara حساب لري. په خپل برېښنالیک او پټنوم ننوځئ.",
+  "reauthWithProvider": "د خپل حساب د خوندي ساتلو لپاره، د {provider} له لارې تایید کړئ چې تاسو یاست.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

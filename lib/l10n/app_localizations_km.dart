@@ -8641,4 +8641,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'អ៊ីមែលនេះមានគណនី Vaultara រួចហើយ។ សូមចូលដោយប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'ដើម្បីរក្សាគណនីរបស់អ្នកឱ្យមានសុវត្ថិភាព សូមបញ្ជាក់ថាជាអ្នកតាមរយៈ $provider។';
+  }
 }

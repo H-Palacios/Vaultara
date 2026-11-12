@@ -8707,4 +8707,9 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Ev e-name berê hesabekî Vaultara heye. Bi e-name û şîfreya xwe têkeve.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Ji bo ewlehiya hesabê xwe, bi $provider piştrast bike ku tu yî.';
+  }
 }

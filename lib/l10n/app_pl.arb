@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Kontynuuj z Apple",
   "socialOr": "lub",
   "socialNotAvailable": "Ten sposób logowania jest teraz niedostępny. Zamiast tego użyj adresu e-mail i hasła.",
-  "socialAccountExists": "Ten adres ma już konto Vaultara. Zaloguj się adresem e-mail i hasłem."
+  "socialAccountExists": "Ten adres ma już konto Vaultara. Zaloguj się adresem e-mail i hasłem.",
+  "reauthWithProvider": "Aby chronić konto, potwierdź przez {provider}, że to Ty.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

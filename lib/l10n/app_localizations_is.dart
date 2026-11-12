@@ -8706,4 +8706,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Þetta netfang er nú þegar með Vaultara-aðgang. Skráðu þig inn með netfangi og lykilorði.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Til að halda reikningnum þínum öruggum skaltu staðfesta með $provider að þetta sért þú.';
+  }
 }

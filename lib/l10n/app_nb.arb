@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Fortsett med Apple",
   "socialOr": "eller",
   "socialNotAvailable": "Dette påloggingsalternativet er ikke tilgjengelig nå. Bruk e-post og passord i stedet.",
-  "socialAccountExists": "Denne e-postadressen har allerede en Vaultara-konto. Logg på med e-post og passord."
+  "socialAccountExists": "Denne e-postadressen har allerede en Vaultara-konto. Logg på med e-post og passord.",
+  "reauthWithProvider": "Bekreft med {provider} at det er deg, så kontoen din holdes trygg.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

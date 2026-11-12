@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Apple-ით გაგრძელება",
   "socialOr": "ან",
   "socialNotAvailable": "შესვლის ეს გზა ახლა მიუწვდომელია. ამის ნაცვლად გამოიყენეთ ელფოსტა და პაროლი.",
-  "socialAccountExists": "ამ ელფოსტას უკვე აქვს Vaultara-ს ანგარიში. შედით ელფოსტითა და პაროლით."
+  "socialAccountExists": "ამ ელფოსტას უკვე აქვს Vaultara-ს ანგარიში. შედით ელფოსტითა და პაროლით.",
+  "reauthWithProvider": "ანგარიშის დასაცავად დაადასტურეთ {provider}-ით, რომ ეს თქვენ ხართ.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -3280,5 +3280,14 @@
   "socialContinueApple": "በApple ይቀጥሉ",
   "socialOr": "ወይም",
   "socialNotAvailable": "ይህ የመግቢያ አማራጭ አሁን አይገኝም። በምትኩ ኢሜይልዎን እና የይለፍ ቃልዎን ይጠቀሙ።",
-  "socialAccountExists": "ይህ ኢሜይል አስቀድሞ የVaultara መለያ አለው። በኢሜይልዎ እና በይለፍ ቃልዎ ይግቡ።"
+  "socialAccountExists": "ይህ ኢሜይል አስቀድሞ የVaultara መለያ አለው። በኢሜይልዎ እና በይለፍ ቃልዎ ይግቡ።",
+  "reauthWithProvider": "መለያዎ ደህንነቱ እንዲጠበቅ፣ እርስዎ መሆንዎን በ{provider} ያረጋግጡ።",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

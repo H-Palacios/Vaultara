@@ -3247,5 +3247,14 @@
   "socialContinueApple": "Gaa n'ihu na Apple",
   "socialOr": "ma ọ bụ",
   "socialNotAvailable": "Ụzọ mbanye a adịghị ugbu a. Jiri email na paswọọdụ gị kama.",
-  "socialAccountExists": "Email a nwere akaụntụ Vaultara. Banye site na email na paswọọdụ gị."
+  "socialAccountExists": "Email a nwere akaụntụ Vaultara. Banye site na email na paswọọdụ gị.",
+  "reauthWithProvider": "Iji chekwaa akaụntụ gị, jiri {provider} kwado na ọ bụ gị.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

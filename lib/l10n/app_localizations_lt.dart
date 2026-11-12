@@ -8861,4 +8861,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Šis el. paštas jau turi Vaultara paskyrą. Prisijunkite el. paštu ir slaptažodžiu.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Kad paskyra būtų saugi, patvirtinkite per $provider, kad tai jūs.';
+  }
 }

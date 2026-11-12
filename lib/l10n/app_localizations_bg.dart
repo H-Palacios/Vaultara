@@ -8707,4 +8707,9 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Този имейл вече има акаунт във Vaultara. Влезте с имейла и паролата си.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'За да е защитен акаунтът ви, потвърдете, че сте вие, с $provider.';
+  }
 }

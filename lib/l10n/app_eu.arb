@@ -3256,5 +3256,14 @@
   "socialContinueApple": "Jarraitu Apple-rekin",
   "socialOr": "edo",
   "socialNotAvailable": "Saioa hasteko aukera hau ez dago erabilgarri orain. Erabili zure posta eta pasahitza.",
-  "socialAccountExists": "Posta honek dagoeneko badu Vaultara kontu bat. Hasi saioa zure posta eta pasahitzarekin."
+  "socialAccountExists": "Posta honek dagoeneko badu Vaultara kontu bat. Hasi saioa zure posta eta pasahitzarekin.",
+  "reauthWithProvider": "Zure kontua seguru mantentzeko, baieztatu zu zarela {provider} bidez.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

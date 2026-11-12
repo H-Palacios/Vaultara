@@ -8707,4 +8707,9 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'ഈ ഇമെയിലിന് ഇതിനകം Vaultara അക്കൗണ്ട് ഉണ്ട്. ഇമെയിലും പാസ്‌വേഡും ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'നിങ്ങളുടെ അക്കൗണ്ട് സുരക്ഷിതമാക്കാൻ, ഇത് നിങ്ങളാണെന്ന് $provider ഉപയോഗിച്ച് സ്ഥിരീകരിക്കുക.';
+  }
 }

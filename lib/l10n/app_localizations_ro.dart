@@ -8792,4 +8792,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Acest e-mail are deja un cont Vaultara. Conectează-te cu e-mailul și parola.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Pentru siguranța contului, confirmă cu $provider că ești tu.';
+  }
 }

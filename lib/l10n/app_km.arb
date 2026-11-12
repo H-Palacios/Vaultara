@@ -2992,5 +2992,14 @@
   "socialContinueApple": "បន្តជាមួយ Apple",
   "socialOr": "ឬ",
   "socialNotAvailable": "ជម្រើសចូលនេះមិនអាចប្រើបានឥឡូវនេះទេ។ សូមប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នកជំនួសវិញ។",
-  "socialAccountExists": "អ៊ីមែលនេះមានគណនី Vaultara រួចហើយ។ សូមចូលដោយប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។"
+  "socialAccountExists": "អ៊ីមែលនេះមានគណនី Vaultara រួចហើយ។ សូមចូលដោយប្រើអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។",
+  "reauthWithProvider": "ដើម្បីរក្សាគណនីរបស់អ្នកឱ្យមានសុវត្ថិភាព សូមបញ្ជាក់ថាជាអ្នកតាមរយៈ {provider}។",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

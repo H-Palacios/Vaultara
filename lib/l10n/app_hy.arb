@@ -3256,5 +3256,14 @@
   "socialContinueApple": "Շարունակել Apple-ով",
   "socialOr": "կամ",
   "socialNotAvailable": "Մուտքի այս տարբերակը հիմա հասանելի չէ։ Փոխարենն օգտագործեք ձեր էլ. հասցեն և գաղտնաբառը։",
-  "socialAccountExists": "Այս էլ. հասցեն արդեն ունի Vaultara հաշիվ։ Մուտք գործեք ձեր էլ. հասցեով ու գաղտնաբառով։"
+  "socialAccountExists": "Այս էլ. հասցեն արդեն ունի Vaultara հաշիվ։ Մուտք գործեք ձեր էլ. հասցեով ու գաղտնաբառով։",
+  "reauthWithProvider": "Ձեր հաշիվը պաշտպանելու համար {provider}-ով հաստատեք, որ դա դուք եք։",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

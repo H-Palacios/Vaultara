@@ -8707,4 +8707,9 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'ਇਸ ਈਮੇਲ ਦਾ ਪਹਿਲਾਂ ਹੀ Vaultara ਖਾਤਾ ਹੈ। ਆਪਣੀ ਈਮੇਲ ਅਤੇ ਪਾਸਵਰਡ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋ।';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'ਆਪਣਾ ਖਾਤਾ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਲਈ, $provider ਨਾਲ ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਇਹ ਤੁਸੀਂ ਹੀ ਹੋ।';
+  }
 }

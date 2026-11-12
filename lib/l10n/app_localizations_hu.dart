@@ -8707,4 +8707,9 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Ehhez az e-mail-címhez már tartozik Vaultara-fiók. Jelentkezz be az e-mail-címeddel és a jelszavaddal.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'A fiókja védelme érdekében erősítse meg a(z) $provider segítségével, hogy Ön az.';
+  }
 }

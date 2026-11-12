@@ -8711,4 +8711,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Aquest correu ja té un compte de Vaultara. Inicia la sessió amb el correu i la contrasenya.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Per mantenir el compte segur, confirma que ets tu amb $provider.';
+  }
 }

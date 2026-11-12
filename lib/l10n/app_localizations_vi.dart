@@ -8643,4 +8643,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Email này đã có tài khoản Vaultara. Hãy đăng nhập bằng email và mật khẩu.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Để giữ an toàn cho tài khoản, hãy xác nhận đó là bạn bằng $provider.';
+  }
 }

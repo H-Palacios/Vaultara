@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Pokračovať cez Apple",
   "socialOr": "alebo",
   "socialNotAvailable": "Tento spôsob prihlásenia teraz nie je dostupný. Použite namiesto toho e-mail a heslo.",
-  "socialAccountExists": "Tento e-mail už má účet Vaultara. Prihláste sa e-mailom a heslom."
+  "socialAccountExists": "Tento e-mail už má účet Vaultara. Prihláste sa e-mailom a heslom.",
+  "reauthWithProvider": "Kvôli bezpečnosti účtu potvrďte cez {provider}, že ste to vy.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

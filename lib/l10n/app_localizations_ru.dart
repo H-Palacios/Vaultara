@@ -8886,4 +8886,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'У этого адреса уже есть аккаунт Vaultara. Войдите с помощью почты и пароля.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Чтобы защитить аккаунт, подтвердите через $provider, что это вы.';
+  }
 }

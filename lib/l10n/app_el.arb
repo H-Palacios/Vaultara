@@ -3249,5 +3249,14 @@
   "socialContinueApple": "Συνέχεια με Apple",
   "socialOr": "ή",
   "socialNotAvailable": "Αυτή η επιλογή σύνδεσης δεν είναι διαθέσιμη τώρα. Χρησιμοποιήστε το email και τον κωδικό πρόσβασής σας.",
-  "socialAccountExists": "Αυτό το email έχει ήδη λογαριασμό Vaultara. Συνδεθείτε με το email και τον κωδικό πρόσβασής σας."
+  "socialAccountExists": "Αυτό το email έχει ήδη λογαριασμό Vaultara. Συνδεθείτε με το email και τον κωδικό πρόσβασής σας.",
+  "reauthWithProvider": "Για την ασφάλεια του λογαριασμού σας, επιβεβαιώστε ότι είστε εσείς με το {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

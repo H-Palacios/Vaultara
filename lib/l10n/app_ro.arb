@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Continuă cu Apple",
   "socialOr": "sau",
   "socialNotAvailable": "Această opțiune de conectare nu este disponibilă acum. Folosește în schimb e-mailul și parola.",
-  "socialAccountExists": "Acest e-mail are deja un cont Vaultara. Conectează-te cu e-mailul și parola."
+  "socialAccountExists": "Acest e-mail are deja un cont Vaultara. Conectează-te cu e-mailul și parola.",
+  "reauthWithProvider": "Pentru siguranța contului, confirmă cu {provider} că ești tu.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

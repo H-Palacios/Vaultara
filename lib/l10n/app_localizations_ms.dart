@@ -8643,4 +8643,9 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'E-mel ini sudah mempunyai akaun Vaultara. Log masuk dengan e-mel dan kata laluan anda.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Untuk memastikan akaun anda selamat, sahkan bahawa ini anda dengan $provider.';
+  }
 }

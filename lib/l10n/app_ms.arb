@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Teruskan dengan Apple",
   "socialOr": "atau",
   "socialNotAvailable": "Pilihan log masuk ini tidak tersedia sekarang. Gunakan e-mel dan kata laluan anda.",
-  "socialAccountExists": "E-mel ini sudah mempunyai akaun Vaultara. Log masuk dengan e-mel dan kata laluan anda."
+  "socialAccountExists": "E-mel ini sudah mempunyai akaun Vaultara. Log masuk dengan e-mel dan kata laluan anda.",
+  "reauthWithProvider": "Untuk memastikan akaun anda selamat, sahkan bahawa ini anda dengan {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

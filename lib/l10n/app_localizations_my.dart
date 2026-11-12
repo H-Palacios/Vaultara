@@ -8641,4 +8641,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'ဤအီးမေးလ်တွင် Vaultara အကောင့် ရှိပြီးသားဖြစ်သည်။ အီးမေးလ်နှင့် စကားဝှက်ဖြင့် ဝင်ရောက်ပါ။';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'သင့်အကောင့် လုံခြုံစေရန် $provider ဖြင့် သင်ဖြစ်ကြောင်း အတည်ပြုပါ။';
+  }
 }

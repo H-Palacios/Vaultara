@@ -3247,5 +3247,14 @@
   "socialContinueApple": "Lanjutkan dengan Apple",
   "socialOr": "atau",
   "socialNotAvailable": "Opsi masuk ini sedang tidak tersedia. Gunakan email dan kata sandi Anda.",
-  "socialAccountExists": "Email ini sudah punya akun Vaultara. Masuk dengan email dan kata sandi Anda."
+  "socialAccountExists": "Email ini sudah punya akun Vaultara. Masuk dengan email dan kata sandi Anda.",
+  "reauthWithProvider": "Agar akun Anda tetap aman, konfirmasi bahwa ini Anda dengan {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

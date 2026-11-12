@@ -3273,5 +3273,14 @@
   "socialContinueApple": "Fortsæt med Apple",
   "socialOr": "eller",
   "socialNotAvailable": "Denne loginmulighed er ikke tilgængelig lige nu. Brug din e-mail og adgangskode i stedet.",
-  "socialAccountExists": "Denne e-mail har allerede en Vaultara-konto. Log ind med din e-mail og adgangskode."
+  "socialAccountExists": "Denne e-mail har allerede en Vaultara-konto. Log ind med din e-mail og adgangskode.",
+  "reauthWithProvider": "Bekræft med {provider}, at det er dig, så din konto forbliver sikker.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

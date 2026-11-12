@@ -2992,5 +2992,14 @@
   "socialContinueApple": "Apple orqali davom etish",
   "socialOr": "yoki",
   "socialNotAvailable": "Bu kirish usuli hozir mavjud emas. Buning o‘rniga pochtangiz va parolingizdan foydalaning.",
-  "socialAccountExists": "Bu pochtada allaqachon Vaultara hisobi bor. Pochtangiz va parolingiz bilan kiring."
+  "socialAccountExists": "Bu pochtada allaqachon Vaultara hisobi bor. Pochtangiz va parolingiz bilan kiring.",
+  "reauthWithProvider": "Hisobingiz xavfsiz bo‘lishi uchun {provider} orqali bu siz ekaningizni tasdiqlang.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

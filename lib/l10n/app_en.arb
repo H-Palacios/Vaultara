@@ -10704,5 +10704,14 @@
   "socialAccountExists": "This email already has a Vaultara account. Sign in with your email and password.",
   "@socialAccountExists": {
     "description": "Shown when Google or Apple sign-in uses an email that already has a password account."
+  },
+  "reauthWithProvider": "To keep your account safe, confirm it's you with {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
   }
 }

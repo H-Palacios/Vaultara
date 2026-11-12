@@ -8779,4 +8779,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Šai e-pasta adresei jau ir Vaultara konts. Pierakstieties ar savu e-pastu un paroli.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Lai jūsu konts būtu drošībā, apstipriniet ar $provider, ka tas esat jūs.';
+  }
 }

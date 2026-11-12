@@ -8863,4 +8863,9 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Tento e-mail už má účet Vaultara. Prihláste sa e-mailom a heslom.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Kvôli bezpečnosti účtu potvrďte cez $provider, že ste to vy.';
+  }
 }

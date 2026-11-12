@@ -8697,4 +8697,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Энэ имэйл аль хэдийн Vaultara бүртгэлтэй. Имэйл, нууц үгээрээ нэвтэрнэ үү.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Бүртгэлээ аюулгүй байлгахын тулд $provider-ээр өөрийгөө баталгаажуулна уу.';
+  }
 }

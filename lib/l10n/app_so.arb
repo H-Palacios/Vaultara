@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Ku sii wad Apple",
   "socialOr": "ama",
   "socialNotAvailable": "Habkan galitaanku hadda lama heli karo. Beddelkeeda isticmaal iimaylkaaga iyo eraygaaga sirta ah.",
-  "socialAccountExists": "Iimaylkan wuxuu horey u leeyahay akoon Vaultara. Ku gal iimaylkaaga iyo eraygaaga sirta ah."
+  "socialAccountExists": "Iimaylkan wuxuu horey u leeyahay akoon Vaultara. Ku gal iimaylkaaga iyo eraygaaga sirta ah.",
+  "reauthWithProvider": "Si koontadaadu u ammaan ahaato, ku xaqiiji {provider} inaad adigu tahay.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

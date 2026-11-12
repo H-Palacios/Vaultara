@@ -3254,5 +3254,14 @@
   "socialContinueApple": "Lean ar aghaidh le Apple",
   "socialOr": "nó",
   "socialNotAvailable": "Níl an rogha síniú isteach seo ar fáil faoi láthair. Úsáid do ríomhphost agus do phasfhocal ina ionad.",
-  "socialAccountExists": "Tá cuntas Vaultara ag an ríomhphost seo cheana. Sínigh isteach le do ríomhphost agus do phasfhocal."
+  "socialAccountExists": "Tá cuntas Vaultara ag an ríomhphost seo cheana. Sínigh isteach le do ríomhphost agus do phasfhocal.",
+  "reauthWithProvider": "Chun do chuntas a choinneáil slán, deimhnigh gur tusa atá ann le {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

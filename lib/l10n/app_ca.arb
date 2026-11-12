@@ -3273,5 +3273,14 @@
   "socialContinueApple": "Continua amb Apple",
   "socialOr": "o",
   "socialNotAvailable": "Aquesta opció d'inici de sessió no està disponible ara mateix. Fes servir el correu i la contrasenya.",
-  "socialAccountExists": "Aquest correu ja té un compte de Vaultara. Inicia la sessió amb el correu i la contrasenya."
+  "socialAccountExists": "Aquest correu ja té un compte de Vaultara. Inicia la sessió amb el correu i la contrasenya.",
+  "reauthWithProvider": "Per mantenir el compte segur, confirma que ets tu amb {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

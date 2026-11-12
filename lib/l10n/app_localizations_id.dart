@@ -8638,4 +8638,9 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Email ini sudah punya akun Vaultara. Masuk dengan email dan kata sandi Anda.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Agar akun Anda tetap aman, konfirmasi bahwa ini Anda dengan $provider.';
+  }
 }

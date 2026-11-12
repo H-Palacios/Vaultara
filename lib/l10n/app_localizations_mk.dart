@@ -8705,4 +8705,9 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Оваа е-пошта веќе има сметка во Vaultara. Најавете се со е-пошта и лозинка.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'За вашата сметка да остане безбедна, потврдете преку $provider дека сте вие.';
+  }
 }

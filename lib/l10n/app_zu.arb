@@ -3234,5 +3234,14 @@
   "socialContinueApple": "Qhubeka nge-Apple",
   "socialOr": "noma",
   "socialNotAvailable": "Le ndlela yokungena ayitholakali okwamanje. Sebenzisa i-imeyili nephasiwedi yakho esikhundleni salokho.",
-  "socialAccountExists": "Le imeyili isivele ine-akhawunti ye-Vaultara. Ngena nge-imeyili nephasiwedi yakho."
+  "socialAccountExists": "Le imeyili isivele ine-akhawunti ye-Vaultara. Ngena nge-imeyili nephasiwedi yakho.",
+  "reauthWithProvider": "Ukuze i-akhawunti yakho iphephe, qinisekisa nge-{provider} ukuthi nguwe.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

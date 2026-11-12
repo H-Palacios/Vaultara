@@ -14850,6 +14850,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This email already has a Vaultara account. Sign in with your email and password.'**
   String get socialAccountExists;
+
+  /// Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.
+  ///
+  /// In en, this message translates to:
+  /// **'To keep your account safe, confirm it\'s you with {provider}.'**
+  String reauthWithProvider(String provider);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

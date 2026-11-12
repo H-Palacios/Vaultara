@@ -8707,4 +8707,9 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'دا برېښنالیک دمخه د Vaultara حساب لري. په خپل برېښنالیک او پټنوم ننوځئ.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'د خپل حساب د خوندي ساتلو لپاره، د $provider له لارې تایید کړئ چې تاسو یاست.';
+  }
 }

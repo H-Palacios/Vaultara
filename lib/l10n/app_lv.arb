@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Turpināt ar Apple",
   "socialOr": "vai",
   "socialNotAvailable": "Šī pierakstīšanās iespēja pašlaik nav pieejama. Tā vietā izmantojiet savu e-pastu un paroli.",
-  "socialAccountExists": "Šai e-pasta adresei jau ir Vaultara konts. Pierakstieties ar savu e-pastu un paroli."
+  "socialAccountExists": "Šai e-pasta adresei jau ir Vaultara konts. Pierakstieties ar savu e-pastu un paroli.",
+  "reauthWithProvider": "Lai jūsu konts būtu drošībā, apstipriniet ar {provider}, ka tas esat jūs.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -3247,5 +3247,14 @@
   "socialContinueApple": "המשך עם Apple",
   "socialOr": "או",
   "socialNotAvailable": "אפשרות ההתחברות הזו לא זמינה כרגע. השתמשו באימייל ובסיסמה במקום.",
-  "socialAccountExists": "לאימייל הזה כבר יש חשבון Vaultara. התחברו עם האימייל והסיסמה."
+  "socialAccountExists": "לאימייל הזה כבר יש חשבון Vaultara. התחברו עם האימייל והסיסמה.",
+  "reauthWithProvider": "כדי לשמור על החשבון שלך, אשר/י באמצעות {provider} שזה אכן את/ה.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -8912,4 +8912,9 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Tá cuntas Vaultara ag an ríomhphost seo cheana. Sínigh isteach le do ríomhphost agus do phasfhocal.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Chun do chuntas a choinneáil slán, deimhnigh gur tusa atá ann le $provider.';
+  }
 }

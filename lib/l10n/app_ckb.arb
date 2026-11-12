@@ -3242,5 +3242,14 @@
   "socialContinueApple": "بەردەوامبوون بە Apple",
   "socialOr": "یان",
   "socialNotAvailable": "ئەم ڕێگای چوونەژوورەوەیە ئێستا بەردەست نییە. لە جیاتی ئەوە ئیمەیڵ و وشەی نهێنییەکەت بەکاربهێنە.",
-  "socialAccountExists": "ئەم ئیمەیڵە پێشتر هەژماری Vaultara ی هەیە. بە ئیمەیڵ و وشەی نهێنییەکەت بچۆ ژوورەوە."
+  "socialAccountExists": "ئەم ئیمەیڵە پێشتر هەژماری Vaultara ی هەیە. بە ئیمەیڵ و وشەی نهێنییەکەت بچۆ ژوورەوە.",
+  "reauthWithProvider": "بۆ پاراستنی هەژمارەکەت، بە {provider} پشتڕاستی بکەرەوە کە خۆتی.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }
