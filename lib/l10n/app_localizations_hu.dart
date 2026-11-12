@@ -8723,7 +8723,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get legendLater => 'Később';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8733,17 +8733,7 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count lejár a következő évben',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8743,15 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Minden rendben $date-ig';
   }
 
   @override
-  String get runwaySeeAll => 'Összes megtekintése';
+  String get comingUpSeeAll => 'Összes megtekintése';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return 'A(z) $month zsúfolt ($count). Kezdje korán az első megújítást.';
   }
 

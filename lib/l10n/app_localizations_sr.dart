@@ -8806,7 +8806,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get legendLater => 'Касније';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8816,17 +8816,7 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Истиче у наредној години: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8836,15 +8826,15 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Све је у реду до $date';
   }
 
   @override
-  String get runwaySeeAll => 'Прикажи све';
+  String get comingUpSeeAll => 'Прикажи све';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month је пун обавеза ($count). Прву обнову почните раније.';
   }
 
@@ -17706,7 +17696,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get legendLater => 'Касније';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -17716,17 +17706,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Истиче у наредној години: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -17736,15 +17716,15 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Све је у реду до $date';
   }
 
   @override
-  String get runwaySeeAll => 'Прикажи све';
+  String get comingUpSeeAll => 'Прикажи све';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month је пун обавеза ($count). Прву обнову почните раније.';
   }
 
@@ -26602,7 +26582,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get legendLater => 'Kasnije';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -26612,17 +26592,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Ističe u narednoj godini: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -26632,15 +26602,15 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Sve je u redu do $date';
   }
 
   @override
-  String get runwaySeeAll => 'Prikaži sve';
+  String get comingUpSeeAll => 'Prikaži sve';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month je pun obaveza ($count). Prvu obnovu počnite ranije.';
   }
 

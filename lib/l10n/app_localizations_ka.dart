@@ -8723,7 +8723,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get legendLater => 'მოგვიანებით';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8733,17 +8733,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ვადა გასდის მომდევნო წელს: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8743,15 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'ყველაფერი რიგზეა $date-მდე';
   }
 
   @override
-  String get runwaySeeAll => 'ყველას ნახვა';
+  String get comingUpSeeAll => 'ყველას ნახვა';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month დატვირთულია ($count). პირველი განახლება ადრე დაიწყეთ.';
   }
 

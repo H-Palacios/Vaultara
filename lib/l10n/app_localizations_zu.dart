@@ -8723,7 +8723,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get legendLater => 'Kamuva';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8733,17 +8733,7 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Ziphelelwa yisikhathi onyakeni ozayo: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8743,15 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Konke kulungile kuze kube ngu-$date';
   }
 
   @override
-  String get runwaySeeAll => 'Bona konke';
+  String get comingUpSeeAll => 'Bona konke';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return 'U-$month umatasa ($count). Qala ukuvuselela kokuqala kusenesikhathi.';
   }
 

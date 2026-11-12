@@ -14875,41 +14875,35 @@ abstract class AppLocalizations {
   /// **'Later'**
   String get legendLater;
 
-  /// Home runway heading, such as "3 expire in the next 30 days". days is 30 or 90.
+  /// Heading of the Coming up list on Home, such as "3 expire in the next 30 days". days is 30.
   ///
   /// In en, this message translates to:
   /// **'{count, plural, =1{{count} expires in the next {days} days} other{{count} expire in the next {days} days}}'**
-  String runwayCount(int count, int days);
+  String comingUpCount(int count, int days);
 
-  /// Runway heading when the window is a year.
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, =1{{count} expires in the next year} other{{count} expire in the next year}}'**
-  String runwayCountYear(int count);
-
-  /// Under the runway rows: how many more records are not listed.
+  /// Under the Coming up rows on Home: how many more records are not listed.
   ///
   /// In en, this message translates to:
   /// **'{count, plural, other{+{count} more}}'**
-  String runwayMore(int count);
+  String comingUpMore(int count);
 
-  /// Shown when nothing expires within a year; date is the next expiry.
+  /// Shown on Home when nothing expires within 30 days; date is the next expiry.
   ///
   /// In en, this message translates to:
   /// **'All clear until {date}'**
-  String runwayAllClear(String date);
+  String comingUpAllClear(String date);
 
-  /// Button that opens the full list of records in the runway window.
+  /// Button beside the Coming up heading that opens the records expiring in the next 30 days.
   ///
   /// In en, this message translates to:
   /// **'See all'**
-  String get runwaySeeAll;
+  String get comingUpSeeAll;
 
-  /// Insights runway note; month is a month name, count the number of renewals in it.
+  /// Insights note above the month bars; month is a month and year such as "March 2027", count the number of renewals in it.
   ///
   /// In en, this message translates to:
   /// **'{month} is busy ({count}). Start the first renewal early.'**
-  String runwayBusyMonth(String month, int count);
+  String insightsBusyMonth(String month, int count);
 
   /// profileSectionAccountSecurity
   ///

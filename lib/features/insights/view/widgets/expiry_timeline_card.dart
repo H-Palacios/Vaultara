@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/core/view/widgets/year_navigator.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/insights/data/models/expiry_timeline_month.dart';
@@ -8,7 +10,7 @@ import 'package:vaultara/features/insights/data/models/expiry_timeline_result.da
 import 'package:vaultara/features/insights/data/models/expiry_timeline_view_state.dart';
 import 'package:vaultara/features/insights/logic/expiry_timeline_controller.dart';
 import 'package:vaultara/features/insights/view/widgets/expiry_timeline_month_row.dart';
-import 'package:vaultara/features/runway/view/year_runway.dart';
+import 'package:vaultara/features/insights/logic/busy_month.dart';
 
 class ExpiryTimelineCard extends StatefulWidget {
   final ExpiryTimelineResult result;
@@ -17,15 +19,15 @@ class ExpiryTimelineCard extends StatefulWidget {
   /// only, as in the tutorial.
   final void Function(TrackedItem record)? onOpenRecord;
 
-  /// The records for the year runway at the top of the card. Null leaves
-  /// the runway out, as in the tutorial, which shows sample months only.
-  final List<TrackedItem>? runwayRecords;
+  /// The records behind the busy-month note above the months. Null leaves
+  /// the note out, as in the tutorial, which shows sample months only.
+  final List<TrackedItem>? upcomingRecords;
 
   const ExpiryTimelineCard({
     super.key,
     required this.result,
     this.onOpenRecord,
-    this.runwayRecords,
+    this.upcomingRecords,
   });
 
   @override
@@ -73,15 +75,8 @@ class _ExpiryTimelineCardState extends State<ExpiryTimelineCard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // The year ahead as distance, then the months in detail.
-                if (widget.runwayRecords != null &&
-                    widget.onOpenRecord != null) ...[
-                  YearRunway(
-                    records: widget.runwayRecords!,
-                    onOpen: widget.onOpenRecord!,
-                  ),
-                  const Divider(height: 24),
-                ],
+                if (widget.upcomingRecords != null)
+                  _BusyMonthNote(records: widget.upcomingRecords!),
                 YearNavigator(
                   year: year,
                   onPrevious: previousYear == null
@@ -103,6 +98,46 @@ class _ExpiryTimelineCardState extends State<ExpiryTimelineCard> {
             ),
           ),
       },
+    );
+  }
+}
+
+class _BusyMonthNote extends StatelessWidget {
+  final List<TrackedItem> records;
+
+  const _BusyMonthNote({required this.records});
+
+  @override
+  Widget build(BuildContext context) {
+    final busy = BusyMonth.of(records);
+    if (busy == null) {
+      return const SizedBox.shrink();
+    }
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    final month = DateFormat.yMMMM(
+      SafeLocale.date(loc.localeName),
+    ).format(busy.month);
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(
+            Icons.lightbulb_outline_rounded,
+            size: 16,
+            color: scheme.onSurfaceVariant,
+          ),
+          const SizedBox(width: 6),
+          Expanded(
+            child: Text(
+              loc.insightsBusyMonth(month, busy.count),
+              style: TextStyle(fontSize: 12.5, color: scheme.onSurfaceVariant),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

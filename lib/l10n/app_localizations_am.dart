@@ -8723,7 +8723,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get legendLater => 'በኋላ';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8733,17 +8733,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'በሚቀጥለው ዓመት የሚያበቃ: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8743,15 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'እስከ $date ሁሉም ደህና ነው';
   }
 
   @override
-  String get runwaySeeAll => 'ሁሉንም ይመልከቱ';
+  String get comingUpSeeAll => 'ሁሉንም ይመልከቱ';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month የተጨናነቀ ነው ($count)። የመጀመሪያውን እድሳት ቀደም ብለው ይጀምሩ።';
   }
 

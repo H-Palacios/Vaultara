@@ -8647,7 +8647,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get legendLater => 'それ以降';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8657,17 +8657,7 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '今後1年以内に期限切れ：$count件',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8677,15 +8667,15 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return '$dateまで問題ありません';
   }
 
   @override
-  String get runwaySeeAll => 'すべて表示';
+  String get comingUpSeeAll => 'すべて表示';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$monthは更新が集中しています（$count件）。最初の更新は早めに始めましょう。';
   }
 

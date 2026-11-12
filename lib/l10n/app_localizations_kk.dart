@@ -8723,7 +8723,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get legendLater => 'Кейінірек';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8733,17 +8733,7 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Келесі жылы мерзімі бітеді: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8743,15 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return '$date дейін бәрі жақсы';
   }
 
   @override
-  String get runwaySeeAll => 'Барлығын көру';
+  String get comingUpSeeAll => 'Барлығын көру';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month айы тығыз ($count). Алғашқы жаңартуды ерте бастаңыз.';
   }
 

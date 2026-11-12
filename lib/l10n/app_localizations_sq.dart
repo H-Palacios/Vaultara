@@ -8727,7 +8727,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get legendLater => 'Më vonë';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8738,18 +8738,7 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count skadojnë në vitin e ardhshëm',
-      one: '$count skadon në vitin e ardhshëm',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8759,15 +8748,15 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Gjithçka në rregull deri më $date';
   }
 
   @override
-  String get runwaySeeAll => 'Shiko të gjitha';
+  String get comingUpSeeAll => 'Shiko të gjitha';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month është i ngarkuar ($count). Fillo herët rinovimin e parë.';
   }
 

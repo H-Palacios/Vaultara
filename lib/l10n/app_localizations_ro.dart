@@ -8808,7 +8808,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get legendLater => 'Mai târziu';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8818,17 +8818,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Expiră în următorul an: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8838,15 +8828,15 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Totul este în regulă până pe $date';
   }
 
   @override
-  String get runwaySeeAll => 'Vezi tot';
+  String get comingUpSeeAll => 'Vezi tot';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month e aglomerată ($count). Începe prima reînnoire din timp.';
   }
 

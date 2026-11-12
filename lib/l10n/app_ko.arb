@@ -3264,9 +3264,9 @@
   "@legendLater": {
     "description": "Calendar legend: records expiring after 30 days (green)."
   },
-  "runwayCount": "{count, plural, other{앞으로 {days}일 안에 만료: {count}개}}",
-  "@runwayCount": {
-    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+  "comingUpCount": "{count, plural, other{앞으로 {days}일 안에 만료: {count}개}}",
+  "@comingUpCount": {
+    "description": "Heading of the Coming up list on Home, such as \"3 expire in the next 30 days\". days is 30.",
     "placeholders": {
       "count": {
         "type": "int"
@@ -3276,40 +3276,31 @@
       }
     }
   },
-  "runwayCountYear": "{count, plural, other{앞으로 1년 안에 만료: {count}개}}",
-  "@runwayCountYear": {
-    "description": "Runway heading when the window is a year.",
+  "comingUpMore": "{count, plural, other{외 {count}개}}",
+  "@comingUpMore": {
+    "description": "Under the Coming up rows on Home: how many more records are not listed.",
     "placeholders": {
       "count": {
         "type": "int"
       }
     }
   },
-  "runwayMore": "{count, plural, other{외 {count}개}}",
-  "@runwayMore": {
-    "description": "Under the runway rows: how many more records are not listed.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "runwayAllClear": "{date}까지 모두 괜찮아요",
-  "@runwayAllClear": {
-    "description": "Shown when nothing expires within a year; date is the next expiry.",
+  "comingUpAllClear": "{date}까지 모두 괜찮아요",
+  "@comingUpAllClear": {
+    "description": "Shown on Home when nothing expires within 30 days; date is the next expiry.",
     "placeholders": {
       "date": {
         "type": "String"
       }
     }
   },
-  "runwaySeeAll": "모두 보기",
-  "@runwaySeeAll": {
-    "description": "Button that opens the full list of records in the runway window."
+  "comingUpSeeAll": "모두 보기",
+  "@comingUpSeeAll": {
+    "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "runwayBusyMonth": "{month}에 갱신이 몰려 있어요({count}개). 첫 갱신을 일찍 시작하세요.",
-  "@runwayBusyMonth": {
-    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+  "insightsBusyMonth": "{month}에 갱신이 몰려 있어요({count}개). 첫 갱신을 일찍 시작하세요.",
+  "@insightsBusyMonth": {
+    "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {
       "month": {
         "type": "String"

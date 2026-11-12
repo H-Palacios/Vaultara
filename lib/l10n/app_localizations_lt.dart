@@ -8877,7 +8877,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get legendLater => 'Vėliau';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8887,17 +8887,7 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Baigiasi per ateinančius metus: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8907,15 +8897,15 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Viskas gerai iki $date';
   }
 
   @override
-  String get runwaySeeAll => 'Rodyti viską';
+  String get comingUpSeeAll => 'Rodyti viską';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month užimtas ($count). Pirmąjį atnaujinimą pradėkite anksčiau.';
   }
 

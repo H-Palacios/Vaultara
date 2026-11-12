@@ -8723,7 +8723,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get legendLater => 'بعد میں';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8733,17 +8733,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'اگلے سال میں ختم ہو رہے ہیں: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8743,15 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return '$date تک سب ٹھیک ہے';
   }
 
   @override
-  String get runwaySeeAll => 'سب دیکھیں';
+  String get comingUpSeeAll => 'سب دیکھیں';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month مصروف ہے ($count)۔ پہلی تجدید جلد شروع کریں۔';
   }
 

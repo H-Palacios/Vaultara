@@ -3276,9 +3276,9 @@
   "@legendLater": {
     "description": "Calendar legend: records expiring after 30 days (green)."
   },
-  "runwayCount": "{count, plural, other{अगले {days} दिनों में समाप्त: {count}}}",
-  "@runwayCount": {
-    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+  "comingUpCount": "{count, plural, other{अगले {days} दिनों में समाप्त: {count}}}",
+  "@comingUpCount": {
+    "description": "Heading of the Coming up list on Home, such as \"3 expire in the next 30 days\". days is 30.",
     "placeholders": {
       "count": {
         "type": "int"
@@ -3288,40 +3288,31 @@
       }
     }
   },
-  "runwayCountYear": "{count, plural, other{अगले साल में समाप्त: {count}}}",
-  "@runwayCountYear": {
-    "description": "Runway heading when the window is a year.",
+  "comingUpMore": "{count, plural, other{+{count} और}}",
+  "@comingUpMore": {
+    "description": "Under the Coming up rows on Home: how many more records are not listed.",
     "placeholders": {
       "count": {
         "type": "int"
       }
     }
   },
-  "runwayMore": "{count, plural, other{+{count} और}}",
-  "@runwayMore": {
-    "description": "Under the runway rows: how many more records are not listed.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "runwayAllClear": "{date} तक सब ठीक है",
-  "@runwayAllClear": {
-    "description": "Shown when nothing expires within a year; date is the next expiry.",
+  "comingUpAllClear": "{date} तक सब ठीक है",
+  "@comingUpAllClear": {
+    "description": "Shown on Home when nothing expires within 30 days; date is the next expiry.",
     "placeholders": {
       "date": {
         "type": "String"
       }
     }
   },
-  "runwaySeeAll": "सभी देखें",
-  "@runwaySeeAll": {
-    "description": "Button that opens the full list of records in the runway window."
+  "comingUpSeeAll": "सभी देखें",
+  "@comingUpSeeAll": {
+    "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "runwayBusyMonth": "{month} व्यस्त है ({count})। पहला नवीनीकरण जल्दी शुरू करें।",
-  "@runwayBusyMonth": {
-    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+  "insightsBusyMonth": "{month} व्यस्त है ({count})। पहला नवीनीकरण जल्दी शुरू करें।",
+  "@insightsBusyMonth": {
+    "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {
       "month": {
         "type": "String"

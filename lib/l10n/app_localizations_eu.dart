@@ -8727,7 +8727,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get legendLater => 'Geroago';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8738,18 +8738,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count iraungiko dira datorren urtean',
-      one: '$count iraungiko da datorren urtean',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8759,15 +8748,15 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Dena ondo $date arte';
   }
 
   @override
-  String get runwaySeeAll => 'Ikusi guztiak';
+  String get comingUpSeeAll => 'Ikusi guztiak';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month beteta dago ($count). Hasi lehen berritzea goiz.';
   }
 

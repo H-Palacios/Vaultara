@@ -8717,7 +8717,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get legendLater => 'Mamaya pa';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8728,18 +8728,7 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count ang mag-e-expire sa susunod na taon',
-      one: '$count ang mag-e-expire sa susunod na taon',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8749,15 +8738,15 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Ayos lahat hanggang $date';
   }
 
   @override
-  String get runwaySeeAll => 'Tingnan lahat';
+  String get comingUpSeeAll => 'Tingnan lahat';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return 'Abala ang $month ($count). Simulan nang maaga ang unang pag-renew.';
   }
 
