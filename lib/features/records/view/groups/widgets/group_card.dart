@@ -13,6 +13,7 @@ class GroupCard extends StatelessWidget {
   final VoidCallback onOpen;
   final VoidCallback? onRename;
   final VoidCallback? onDelete;
+  final bool compact;
 
   const GroupCard({
     super.key,
@@ -24,6 +25,7 @@ class GroupCard extends StatelessWidget {
     this.isCustom = false,
     this.onRename,
     this.onDelete,
+    this.compact = false,
   });
 
   @override
@@ -39,11 +41,9 @@ class GroupCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(14),
         onTap: onOpen,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(12, 10, 4, 10),
+          padding: EdgeInsets.fromLTRB(16, compact ? 4 : 12, 4, compact ? 4 : 12),
           child: Row(
             children: [
-              Icon(Icons.folder_rounded, color: scheme.primary),
-              const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -56,9 +56,11 @@ class GroupCard extends StatelessWidget {
                             groupLabel,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                              fontSize: 14.5,
-                              fontWeight: FontWeight.w800,
+                            style: TextStyle(
+                              fontSize: compact ? 14 : 14.5,
+                              fontWeight: compact
+                                  ? FontWeight.w600
+                                  : FontWeight.w800,
                             ),
                           ),
                         ),
@@ -68,15 +70,17 @@ class GroupCard extends StatelessWidget {
                         ],
                       ],
                     ),
-                    const SizedBox(height: 2),
-                    Text(
-                      loc.recordsLabel(recordCount),
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: scheme.onSurfaceVariant,
+                    if (!compact) ...[
+                      const SizedBox(height: 2),
+                      Text(
+                        loc.recordsLabel(recordCount),
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: scheme.onSurfaceVariant,
+                        ),
                       ),
-                    ),
-                    if (expired > 0 || expiringSoon > 0) ...[
+                    ],
+                    if (!compact && (expired > 0 || expiringSoon > 0)) ...[
                       const SizedBox(height: 6),
                       RecordCountBadges(
                         expired: expired,
