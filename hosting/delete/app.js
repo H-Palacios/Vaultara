@@ -21,6 +21,7 @@ var FALLBACK={
 "item3":"Your people, trips and settings",
 "item4":"Your share links, calendar links and household membership",
 "item5":"Your sign-in details and account",
+"item6":"Your life plans and assistant chats",
 "subscriptionNote":"Deleting your account does not cancel a subscription. Cancel it in Google Play or the App Store so you are not charged again.",
 "confirmCheck":"I understand that this cannot be undone.",
 "confirmRequired":"Tick the box to confirm.",
@@ -212,7 +213,7 @@ function fillText(){
 document.title=pick("page");
 setText("loadingText",pick("loading"));
 ["requestTitle","requestBody","emailLabel","send","privacy","sentTitle","sentBody","reviewTitle","reviewIntro",
-"item1","item2","item3","item4","item5","subscriptionNote","confirmCheck","doneTitle","newLink"].forEach(function(key){
+"item1","item2","item3","item4","item5","item6","subscriptionNote","confirmCheck","doneTitle","newLink"].forEach(function(key){
 setText(key,pick(key));
 });
 setText("delete",pick("deleteButton"));
