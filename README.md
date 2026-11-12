@@ -47,7 +47,9 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 
 ### Home
 - **Greeting by first name** ("Welcome back, Ana").
-- **Next expiry.** The record that expires next, with how long is left, Renew and How to renew, and chips for anything expired or due in 30 days that open those records. The overall numbers live in the Insights summary, so Home no longer repeats them.
+- **Next expiry.** The record that expires next, with how long is left, Renew and How to renew, and a chip for anything expired. The overall numbers live in the Insights summary, so Home no longer repeats them.
+- **The runway.** Under Next expiry, the next 30 days drawn as a line from today, with a pin for each record where it expires and a hollow "start by" pin where renewing should begin. The first week gets as much room as the following three, the window widens to 90 days or a year when nothing is close, and "3 expire in the next 30 days" sits above up to three rows. Drag along the line to see dates, press and hold a pin for Open, Renew and How to renew. Locked records show only a lock.
+- **One colour scale.** Red for expired, orange within 7 days, amber within 30 days, green later, always with a word, on badges, the calendar, both runways and widgets. Text keeps a contrast of at least 4.5:1 in light and dark mode.
 - **Pinned categories** one tap away, and pull to refresh.
 - **Opens instantly.** Home is drawn from the records already saved on the phone, then refreshed from the server in the background. Opening Home loads once instead of several times, reads run side by side, and reminders are only planned again when something about them changed.
 
@@ -73,7 +75,7 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - **Summary at a glance.** Four numbers at the top of Insights (records, expired, due in 30 days and no reminder), each opening the records behind it.
 - **Smart Insights.** Highlights what needs attention first, such as records expiring today, records with no reminder, records to renew together and, on paid plans, what renewals in the next three months will cost. Insights are swiped through one at a time and tinted red, amber or green by urgency. Each has its action, Later (hides it for a week, synced across devices) and, on paid plans, Ask about this. The speaker button reads them all aloud.
 - **Monday recap.** What expires this week and what was renewed last week.
-- **Expiry timeline.** A bar per month, coloured by how soon the first record is, with repeating records shown every time they come round. Records open from the timeline.
+- **Expiry timeline.** The year ahead as a runway (6, 12 or 24 months, with buttons or a pinch) with a note on the busiest month, then a bar per month in one colour, with repeating records shown every time they come round. Records open from the timeline.
 - **Person filter.** On Family and Business plans, Insights and the calendar can show one person's records.
 - **Calendar.** Month and List views. Dots are coloured by urgency (past dates are diamonds), reminder days have a ring and busy days are tinted. Swipe between months, tap the month name to jump, and use Today or Next expiry. Each month shows a summary (with renewal costs on paid plans), each record has Renew and How to renew (or swipe right to renew), and a long press on a day adds a record expiring that day.
 - **Calendar export and live calendar link.** Add expiries to Google Calendar, or subscribe to a feed that updates by itself.
