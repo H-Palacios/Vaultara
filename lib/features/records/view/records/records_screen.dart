@@ -71,6 +71,8 @@ class RecordsScreen extends StatefulWidget {
 enum _RecordsMenu { sortExpiry, sortName, select }
 
 class _RecordsScreenState extends State<RecordsScreen> {
+  static const int _searchFrom = 6;
+
   final TextEditingController _searchController = TextEditingController();
 
   String _userFirstName = '';
@@ -632,6 +634,8 @@ class _RecordsScreenState extends State<RecordsScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   if (!groupEmpty) ...[
+                                    if (all.length > _searchFrom ||
+                                        _searchController.text.isNotEmpty)
                                     Padding(
                                       padding: const EdgeInsets.fromLTRB(
                                         0,
