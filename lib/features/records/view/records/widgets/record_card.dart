@@ -13,7 +13,15 @@ import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/vault/view/record_photos_button.dart';
 import 'package:vaultara/features/household/view/shared_badge.dart';
 
-enum _RecordMenuAction { notes, guide, share, requestUpdate, calendar, delete }
+enum _RecordMenuAction {
+  edit,
+  notes,
+  guide,
+  share,
+  requestUpdate,
+  calendar,
+  delete,
+}
 
 class RecordCard extends StatelessWidget {
   final TrackedItem record;
@@ -55,6 +63,8 @@ class RecordCard extends StatelessWidget {
 
   void _onMenuSelected(_RecordMenuAction action) {
     switch (action) {
+      case _RecordMenuAction.edit:
+        onEdit();
       case _RecordMenuAction.notes:
         onViewNotes?.call();
       case _RecordMenuAction.guide:
@@ -113,15 +123,15 @@ class RecordCard extends StatelessWidget {
         clipBehavior: Clip.antiAlias,
         child: InkWell(
           onLongPress: onLongPress,
-          onTap: selecting ? onToggleSelect : null,
+          onTap: selecting ? onToggleSelect : onEdit,
           child: Padding(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.fromLTRB(14, 12, 4, 4),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
-                    if (selecting)
+                    if (selecting) ...[
                       Icon(
                         selected
                             ? Icons.check_circle_rounded
@@ -130,10 +140,9 @@ class RecordCard extends StatelessWidget {
                             ? scheme.primary
                             : scheme.onSurfaceVariant,
                         size: 22,
-                      )
-                    else
-                      Icon(status.icon, color: scheme.primary, size: 22),
-                    const SizedBox(width: 8),
+                      ),
+                      const SizedBox(width: 8),
+                    ],
                     Expanded(
                       child: Text(
                         record.name,
@@ -177,6 +186,8 @@ class RecordCard extends StatelessWidget {
                     ],
                   ],
                 ),
+                const SizedBox(height: 4),
+                _ExpiryDateLine(date: record.expiryDate),
                 if (_startBy(record) != null) ...[
                   const SizedBox(height: 6),
                   _StartByLine(date: _startBy(record)!),
@@ -189,7 +200,7 @@ class RecordCard extends StatelessWidget {
                     record: record,
                     onTap: onHowToRenew!,
                   ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 4),
                 IgnorePointer(
                   ignoring: selecting,
                   child: Row(
@@ -204,23 +215,14 @@ class RecordCard extends StatelessWidget {
                         ),
                       ),
                       RecordPhotosButton(record: record),
-                      IconButton(
-                        tooltip: loc.renewAction,
-                        icon: Icon(
-                          Icons.autorenew_rounded,
-                          size: 20,
-                          color: scheme.primary,
-                        ),
+                      TextButton.icon(
                         onPressed: onRenew,
-                      ),
-                      IconButton(
-                        tooltip: loc.edit,
-                        icon: Icon(
-                          Icons.edit_rounded,
-                          size: 20,
-                          color: scheme.onSurfaceVariant,
+                        style: TextButton.styleFrom(
+                          visualDensity: VisualDensity.compact,
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
                         ),
-                        onPressed: onEdit,
+                        icon: const Icon(Icons.autorenew_rounded, size: 18),
+                        label: Text(loc.renewAction),
                       ),
                       PopupMenuButton<_RecordMenuAction>(
                         tooltip: loc.recordMenuMore,
@@ -234,6 +236,12 @@ class RecordCard extends StatelessWidget {
                         ),
                         onSelected: _onMenuSelected,
                         itemBuilder: (menuContext) => [
+                          _menuItem(
+                            _RecordMenuAction.edit,
+                            Icons.edit_rounded,
+                            loc.edit,
+                            scheme.onSurfaceVariant,
+                          ),
                           if (onViewNotes != null)
                             _menuItem(
                               _RecordMenuAction.notes,
@@ -296,6 +304,38 @@ DateTime? _startBy(TrackedItem record) {
   final expiry = DateUtils.dateOnly(record.expiryDate);
   if (expiry.isBefore(today)) return null;
   return DateTime(expiry.year, expiry.month, expiry.day - lead);
+}
+
+class _ExpiryDateLine extends StatelessWidget {
+  final DateTime date;
+
+  const _ExpiryDateLine({required this.date});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final muted = Theme.of(context).colorScheme.onSurfaceVariant;
+    final text = DateFormat.yMMMd(SafeLocale.date(loc.localeName)).format(date);
+
+    return Row(
+      children: [
+        Icon(Icons.event_rounded, size: 14, color: muted),
+        const SizedBox(width: 6),
+        Flexible(
+          child: Text(
+            text,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              fontSize: 12.5,
+              fontWeight: FontWeight.w500,
+              color: muted,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
 }
 
 class _StartByLine extends StatelessWidget {
