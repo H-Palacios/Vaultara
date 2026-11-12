@@ -31,6 +31,57 @@ class CategoryCard extends StatelessWidget {
     this.onDelete,
   });
 
+  Future<void> _showActions(BuildContext context) async {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+
+    final action = await showModalBottomSheet<String>(
+      context: context,
+      useSafeArea: true,
+      showDragHandle: true,
+      builder: (sheetContext) {
+        Widget tile(String value, IconData icon, String label) {
+          return ListTile(
+            leading: Icon(icon, color: scheme.onSurfaceVariant),
+            title: Text(label),
+            onTap: () => Navigator.of(sheetContext).pop(value),
+          );
+        }
+
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              tile(
+                'pin',
+                isPinned ? Icons.push_pin_outlined : Icons.push_pin_rounded,
+                isPinned ? loc.unpinCategory : loc.pinCategory,
+              ),
+              if (isCustom && onRename != null)
+                tile('rename', Icons.edit_rounded, loc.familyRename),
+              if (isCustom && onChangeLook != null)
+                tile('look', Icons.palette_rounded, loc.changeIcon),
+              if (isCustom && onDelete != null)
+                tile('delete', Icons.delete_outline_rounded, loc.delete),
+            ],
+          ),
+        );
+      },
+    );
+
+    switch (action) {
+      case 'pin':
+        onPinnedToggle();
+      case 'rename':
+        onRename?.call();
+      case 'look':
+        onChangeLook?.call();
+      case 'delete':
+        onDelete?.call();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
@@ -55,67 +106,72 @@ class CategoryCard extends StatelessWidget {
       child: InkWell(
         borderRadius: BorderRadius.circular(16),
         onTap: onOpen,
+        onLongPress: () => _showActions(context),
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(12, 8, 2, 12),
+          padding: const EdgeInsets.fromLTRB(12, 10, 2, 12),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  CategoryIconBadge(
-                    icon: icon,
-                    colour: CategoryAppearance.colourFor(category.colourKey),
-                    size: 34,
-                  ),
-                  const Spacer(),
-                  IconButton(
-                    tooltip: isPinned ? loc.unpinCategory : loc.pinCategory,
-                    visualDensity: VisualDensity.compact,
-                    icon: Icon(
-                      isPinned
-                          ? Icons.push_pin_rounded
-                          : Icons.push_pin_outlined,
-                      size: 18,
-                      color: isPinned
-                          ? scheme.primary
-                          : scheme.onSurfaceVariant,
-                    ),
-                    onPressed: onPinnedToggle,
-                  ),
-                  if (isCustom)
-                    PopupMenuButton<_CategoryAction>(
-                      tooltip: loc.recordMenuMore,
-                      icon: Icon(
-                        Icons.more_vert_rounded,
-                        size: 18,
-                        color: scheme.onSurfaceVariant,
+              SizedBox(
+                height: 40,
+                child: Row(
+                  children: [
+                    CategoryIconBadge(
+                      icon: icon,
+                      colour: CategoryAppearance.colourForCategory(
+                        category.key,
+                        category.colourKey,
                       ),
-                      onSelected: (action) {
-                        switch (action) {
-                          case _CategoryAction.rename:
-                            onRename?.call();
-                          case _CategoryAction.look:
-                            onChangeLook?.call();
-                          case _CategoryAction.delete:
-                            onDelete?.call();
-                        }
-                      },
-                      itemBuilder: (_) => [
-                        PopupMenuItem(
-                          value: _CategoryAction.rename,
-                          child: Text(loc.familyRename),
-                        ),
-                        PopupMenuItem(
-                          value: _CategoryAction.look,
-                          child: Text(loc.changeIcon),
-                        ),
-                        PopupMenuItem(
-                          value: _CategoryAction.delete,
-                          child: Text(loc.delete),
-                        ),
-                      ],
+                      size: 34,
                     ),
-                ],
+                    const Spacer(),
+                    if (isPinned)
+                      IconButton(
+                        tooltip: loc.unpinCategory,
+                        visualDensity: VisualDensity.compact,
+                        icon: Icon(
+                          Icons.push_pin_rounded,
+                          size: 18,
+                          color: scheme.primary,
+                        ),
+                        onPressed: onPinnedToggle,
+                      ),
+                    if (isCustom)
+                      PopupMenuButton<_CategoryAction>(
+                        tooltip: loc.recordMenuMore,
+                        icon: Icon(
+                          Icons.more_vert_rounded,
+                          size: 18,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                        onSelected: (action) {
+                          switch (action) {
+                            case _CategoryAction.rename:
+                              onRename?.call();
+                            case _CategoryAction.look:
+                              onChangeLook?.call();
+                            case _CategoryAction.delete:
+                              onDelete?.call();
+                          }
+                        },
+                        itemBuilder: (_) => [
+                          PopupMenuItem(
+                            value: _CategoryAction.rename,
+                            child: Text(loc.familyRename),
+                          ),
+                          PopupMenuItem(
+                            value: _CategoryAction.look,
+                            child: Text(loc.changeIcon),
+                          ),
+                          PopupMenuItem(
+                            value: _CategoryAction.delete,
+                            child: Text(loc.delete),
+                          ),
+                        ],
+                      ),
+                  ],
+                ),
               ),
               const SizedBox(height: 6),
               Padding(
@@ -147,14 +203,16 @@ class CategoryCard extends StatelessWidget {
                   if (isCustom) ...[const SizedBox(width: 6), const YoursTag()],
                 ],
               ),
-              const Spacer(),
-              Padding(
-                padding: const EdgeInsets.only(right: 8),
-                child: RecordCountBadges(
-                  expired: expired,
-                  expiringSoon: expiringSoon,
+              if (expired > 0 || expiringSoon > 0) ...[
+                const SizedBox(height: 8),
+                Padding(
+                  padding: const EdgeInsets.only(right: 8),
+                  child: RecordCountBadges(
+                    expired: expired,
+                    expiringSoon: expiringSoon,
+                  ),
                 ),
-              ),
+              ],
             ],
           ),
         ),

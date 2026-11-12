@@ -40,8 +40,6 @@ class CategoriesScreen extends StatefulWidget {
 }
 
 class _CategoriesScreenState extends State<CategoriesScreen> {
-  static const double _cardHeight = 180;
-
   final TextEditingController _searchController = TextEditingController();
 
   @override
@@ -333,17 +331,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
               onChanged: () => setState(() {}),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Align(
-              alignment: Alignment.centerRight,
-              child: FilledButton.icon(
-                onPressed: _openAddCategorySheet,
-                icon: const Icon(Icons.add_rounded, size: 18),
-                label: Text(loc.addCategoryTitle),
-              ),
-            ),
-          ),
           Expanded(
             child: result.isEmpty
                 ? SingleChildScrollView(
@@ -353,39 +340,119 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                       emptyText: loc.noCategoriesFound,
                     ),
                   )
-                : GridView.builder(
-                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 140),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: crossAxisCount,
-                      crossAxisSpacing: 12,
-                      mainAxisSpacing: 12,
-                      mainAxisExtent: _cardHeight,
-                    ),
-                    itemCount: result.matches.length,
-                    itemBuilder: (context, index) {
-                      final category = result.matches[index];
-                      final isCustom = customKeys.contains(category.key);
-
-                      return CategoryCard(
-                        category: category,
-                        isPinned: CategoryRepository.isPinned(category.key),
-                        isCustom: isCustom,
-                        onPinnedToggle: () => _togglePin(category),
-                        onRename: isCustom
-                            ? () => _renameCategory(category)
-                            : null,
-                        onChangeLook: isCustom
-                            ? () => _changeLook(category)
-                            : null,
-                        onDelete: isCustom
-                            ? () => _deleteCustomCategory(category)
-                            : null,
-                        onOpen: () => _openCategory(category),
-                      );
-                    },
+                : _CategoryRows(
+                    columns: crossAxisCount,
+                    children: [
+                      for (final category in result.matches)
+                        CategoryCard(
+                          category: category,
+                          isPinned: CategoryRepository.isPinned(category.key),
+                          isCustom: customKeys.contains(category.key),
+                          onPinnedToggle: () => _togglePin(category),
+                          onRename: customKeys.contains(category.key)
+                              ? () => _renameCategory(category)
+                              : null,
+                          onChangeLook: customKeys.contains(category.key)
+                              ? () => _changeLook(category)
+                              : null,
+                          onDelete: customKeys.contains(category.key)
+                              ? () => _deleteCustomCategory(category)
+                              : null,
+                          onOpen: () => _openCategory(category),
+                        ),
+                      if (!result.hasQuery)
+                        _AddCategoryTile(
+                          label: loc.addCategoryTitle,
+                          onTap: _openAddCategorySheet,
+                        ),
+                    ],
                   ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _CategoryRows extends StatelessWidget {
+  final int columns;
+  final List<Widget> children;
+
+  const _CategoryRows({required this.columns, required this.children});
+
+  @override
+  Widget build(BuildContext context) {
+    final rowCount = (children.length + columns - 1) ~/ columns;
+
+    return ListView.separated(
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 140),
+      itemCount: rowCount,
+      separatorBuilder: (_, _) => const SizedBox(height: 12),
+      itemBuilder: (context, row) {
+        final cells = <Widget>[];
+        for (var column = 0; column < columns; column++) {
+          final index = row * columns + column;
+          if (column > 0) cells.add(const SizedBox(width: 12));
+          cells.add(
+            Expanded(
+              child: index < children.length
+                  ? children[index]
+                  : const SizedBox.shrink(),
+            ),
+          );
+        }
+        return IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: cells,
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _AddCategoryTile extends StatelessWidget {
+  final String label;
+  final VoidCallback onTap;
+
+  const _AddCategoryTile({required this.label, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+
+    return Material(
+      color: Colors.transparent,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: BorderSide(color: scheme.primary.withValues(alpha: 0.45), width: 1.5),
+      ),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(16),
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.add_rounded, color: scheme.primary, size: 28),
+              const SizedBox(height: 6),
+              Text(
+                label,
+                textAlign: TextAlign.center,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 14,
+                  color: scheme.primary,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
