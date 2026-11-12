@@ -19,7 +19,7 @@
       <a href="/terms/">Terms of Service</a>
     </nav>
     <h1 id="top">Privacy Policy</h1>
-    <p class="meta"><span>Version 2026-11-11</span><span>Last updated 11 November 2026</span></p>
+    <p class="meta"><span>Version 2026-11-13</span><span>Last updated 13 November 2026</span></p>
   </div>
 </header>
 
@@ -117,6 +117,7 @@
   <li><strong>Staff details (Business plan):</strong> staff names, records and the email addresses you enter so that we can send them reminders.</li>
   <li><strong>Shared links:</strong> the links you create to share a record, and what each link gives access to.</li>
   <li><strong>Messages to the Ask Vaultara assistant (paid plans):</strong> the text you type or dictate to it, and the answers it gives. These are saved to your account as chat history so that you can come back to them (see <a href="#ai-assistant">section 13</a>). You cannot send images or files to the assistant.</li>
+  <li><strong>Ratings and reports of assistant answers:</strong> if you mark an answer as helpful or not helpful, or report it, we save your rating or the reason for the report, the question you asked and the answer (see <a href="#ai-assistant">section 13</a>).</li>
   <li><strong>Support messages:</strong> anything you send us when you contact us. When you email us from the app's Help screen, the message already contains your app version, phone model, system version, language and whether you are on a free or paid plan, so we can help without asking. It never contains your records, and you can delete those lines before sending.</li>
 </ul>
 
@@ -131,6 +132,7 @@
   <li><strong>Insights you put off:</strong> which insights you chose to see later and until when, so they stay hidden on all your devices for that week.</li>
   <li><strong>Pinned categories:</strong> which categories you pinned to the top of the Categories screen, so that the order is the same on all your devices.</li>
   <li><strong>Tutorial progress:</strong> which tutorials you finished, which chapters of the full tour you skipped and which "New here?" tips you closed, so that they are not shown again on your other devices.</li>
+  <li><strong>Invitations:</strong> if you invite friends, your invite code and which accounts joined with it. If you join with someone's code, the code you used, who invited you and the free Premium months each of you received. To stop the same person claiming the invite reward twice, we also keep a one-way scrambled (hashed) copy of the verified email address that claimed it. It cannot be turned back into your email address.</li>
   <li><strong>Consent records:</strong> what you agreed to (for example, this policy, the Terms of Service or analytics) and when.</li>
   <li><strong>Analytics and advertising measurement:</strong> information about how the app is used, if analytics is turned on, and on Android your device's advertising ID, if you allow it (see <a href="#analytics">section 14</a>).</li>
   <li><strong>App integrity checks:</strong> Firebase App Check confirms that requests come from a genuine copy of the app on a genuine device. To do this it uses Google Play Integrity on Android and Apple App Attest on iOS, with DeviceCheck used on devices that do not support App Attest.</li>
@@ -376,6 +378,14 @@
       <td>2 months (the Google Analytics default). Advertising measurement data held by Google Ads, including the advertising ID if you allowed it, is kept under Google's own retention rules. It does not include your records, name or email address.</td>
     </tr>
     <tr>
+      <td>Ratings and reports of assistant answers</td>
+      <td>90 days, then deleted automatically. Deleting your account deletes them sooner. The email we receive about a report is kept only for as long as we need it to review the answer.</td>
+    </tr>
+    <tr>
+      <td>Invitation records</td>
+      <td>Your invite code and invitations until you delete your account. The scrambled copy of the email address that claimed an invite reward is kept after that, so that the reward cannot be claimed again with the same address.</td>
+    </tr>
+    <tr>
       <td>Messages to the Ask Vaultara assistant</td>
       <td>Your chats are saved to your account so that you can come back to them. Each chat is deleted automatically 90 days after its last message, and each message 90 days after it was sent. You can delete any chat, or all chats, at any time, and deleting your account deletes them. Anthropic deletes the messages and answers it processes for us within 30 days by default, unless it needs to keep them longer for trust and safety reasons or because the law requires it.</td>
     </tr>
@@ -427,6 +437,8 @@
   <li>Anthropic does not use data sent through its commercial API to train its models by default.</li>
   <li>Do not send end-to-end encrypted photos or anything you would not want processed by Anthropic. Only send what you need for your question.</li>
   <li>Answers can be wrong. Always confirm important information with an official source.</li>
+  <li>When you dictate a message, your phone's own speech recognition turns your voice into text (Google on Android, Apple on iOS, under their privacy terms). Vaultara receives only the text, never the recording.</li>
+  <li>Under each answer you can mark it as helpful or not helpful, or report it with the flag button if it is offensive, harmful, wrong or misleading. Your rating or report is saved to your account with the question and the answer, so that we can review it and improve the assistant. For a report, we also receive an email with the reason, the question, the answer and your account's user ID, but not your name or email address. Ratings and reports are deleted automatically after 90 days, and we keep the report email only for as long as we need it to review the answer.</li>
 </ul>
 
 <h3 id="icon-suggestions">13.1 Icon suggestions for new categories</h3>
@@ -442,6 +454,7 @@
 <!-- 14 -->
 <h2 id="analytics">14. Analytics and advertising measurement</h2>
 <p>We use Firebase Analytics to understand how people use Vaultara, for example which screens are used and where the app has problems. We do not use analytics to see the contents of your records.</p>
+<p>When something goes wrong in the app, an error report is sent through Firebase Analytics, only if analytics is on. It contains only a short name for the place in the app where the error happened (for example "records_stream") and the type of error. It never contains the error message, your records, your name or anything you typed.</p>
 <ul>
   <li>If you are in the EEA, the UK or Switzerland, analytics is <strong>off</strong> until you choose to turn it on.</li>
   <li>Everywhere else, analytics is on by default until you turn it off. The app decides which applies from the country and region settings of your phone.</li>
@@ -503,11 +516,12 @@
   <li>a photo or PDF: open the record, tap the file, then Delete;</li>
   <li>a family member and their records: Profile, then Family, open the person, then Delete;</li>
   <li>a trip: open the trip, tap the menu, then Delete;</li>
+  <li>a life event plan: open the plan, then Delete plan;</li>
   <li>a shared link: Profile, then Shared links, then Stop sharing;</li>
   <li>an Ask Vaultara chat: open Ask Vaultara, tap Chat history, then delete the chat, or choose Delete all chats;</li>
   <li>your profile photo: Profile, tap your photo, then Remove.</li>
 </ul>
-<p>Deleted items are removed from our database and storage straight away. Copies may remain in backups for a limited time, as described in <a href="#retention">section 11</a>. If you cannot find an option, contact us at <a href="mailto:support@vorkalis.com">support@vorkalis.com</a> and we will delete the data for you.</p>
+<p>Deleted records, groups and categories first move to Recently deleted in the Recovery Centre, so that you can bring them back if you deleted them by mistake. They are deleted permanently after 30 days, the next time you open the app, or straight away if you delete them from Recently deleted. Other items are removed from our database and storage straight away. Copies may remain in backups for a limited time, as described in <a href="#retention">section 11</a>. If you cannot find an option, contact us at <a href="mailto:support@vorkalis.com">support@vorkalis.com</a> and we will delete the data for you.</p>
 <p>When you delete your account, we delete your database records and all files in storage linked to your account. If part of the deletion fails, our system retries until it is complete. Some information may remain for a limited time in backups and in the records described in <a href="#retention">section 11</a>.</p>
 <p><strong>Deleting your account does not cancel your subscription.</strong> Cancel it first in Google Play or the App Store, otherwise the store may continue to charge you.</p>
 <p>If you are the owner of a Family plan, deleting your account ends access for your household members. If you are a member, deleting your account removes your own data but not the owner's.</p>
