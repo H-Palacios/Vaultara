@@ -3273,5 +3273,14 @@
   "socialContinueApple": "Apple দিয়ে চালিয়ে যান",
   "socialOr": "অথবা",
   "socialNotAvailable": "এই সাইন ইন বিকল্পটি এখন উপলব্ধ নেই। এর বদলে আপনার ইমেল ও পাসওয়ার্ড ব্যবহার করুন।",
-  "socialAccountExists": "এই ইমেলের আগেই একটি Vaultara অ্যাকাউন্ট আছে। আপনার ইমেল ও পাসওয়ার্ড দিয়ে সাইন ইন করুন।"
+  "socialAccountExists": "এই ইমেলের আগেই একটি Vaultara অ্যাকাউন্ট আছে। আপনার ইমেল ও পাসওয়ার্ড দিয়ে সাইন ইন করুন।",
+  "reauthWithProvider": "আপনার অ্যাকাউন্ট সুরক্ষিত রাখতে {provider} দিয়ে নিশ্চিত করুন যে এটি আপনি।",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

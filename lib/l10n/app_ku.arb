@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Bi Apple berdewam bike",
   "socialOr": "an",
   "socialNotAvailable": "Ev rêya têketinê niha ne berdest e. Li şûna wê e-name û şîfreya xwe bi kar bîne.",
-  "socialAccountExists": "Ev e-name berê hesabekî Vaultara heye. Bi e-name û şîfreya xwe têkeve."
+  "socialAccountExists": "Ev e-name berê hesabekî Vaultara heye. Bi e-name û şîfreya xwe têkeve.",
+  "reauthWithProvider": "Ji bo ewlehiya hesabê xwe, bi {provider} piştrast bike ku tu yî.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

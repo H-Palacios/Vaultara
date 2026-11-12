@@ -3216,5 +3216,14 @@
   "socialContinueApple": "Настави помоћу Apple-а",
   "socialOr": "или",
   "socialNotAvailable": "Ова опција пријаве тренутно није доступна. Уместо тога користите имејл и лозинку.",
-  "socialAccountExists": "Овај имејл већ има Vaultara налог. Пријавите се имејлом и лозинком."
+  "socialAccountExists": "Овај имејл већ има Vaultara налог. Пријавите се имејлом и лозинком.",
+  "reauthWithProvider": "Да би ваш налог остао безбедан, потврдите преко {provider} да сте то ви.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

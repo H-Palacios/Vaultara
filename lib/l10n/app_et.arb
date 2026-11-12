@@ -3407,5 +3407,14 @@
   "socialContinueApple": "Jätka Apple'iga",
   "socialOr": "või",
   "socialNotAvailable": "See sisselogimisviis pole praegu saadaval. Kasuta selle asemel oma e-posti ja parooli.",
-  "socialAccountExists": "Sellel e-postil on juba Vaultara konto. Logi sisse oma e-posti ja parooliga."
+  "socialAccountExists": "Sellel e-postil on juba Vaultara konto. Logi sisse oma e-posti ja parooliga.",
+  "reauthWithProvider": "Konto turvalisuse huvides kinnita {provider} abil, et see oled sina.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

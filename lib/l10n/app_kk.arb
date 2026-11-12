@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Apple арқылы жалғастыру",
   "socialOr": "немесе",
   "socialNotAvailable": "Бұл кіру әдісі қазір қолжетімсіз. Оның орнына поштаңыз бен құпия сөзіңізді пайдаланыңыз.",
-  "socialAccountExists": "Бұл поштаның Vaultara есептік жазбасы бар. Поштаңыз бен құпия сөзіңізбен кіріңіз."
+  "socialAccountExists": "Бұл поштаның Vaultara есептік жазбасы бар. Поштаңыз бен құпия сөзіңізбен кіріңіз.",
+  "reauthWithProvider": "Есептік жазбаңыз қауіпсіз болуы үшін {provider} арқылы бұл сіз екеніңізді растаңыз.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

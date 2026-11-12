@@ -8707,4 +8707,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Le imeyili isivele ine-akhawunti ye-Vaultara. Ngena nge-imeyili nephasiwedi yakho.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Ukuze i-akhawunti yakho iphephe, qinisekisa nge-$provider ukuthi nguwe.';
+  }
 }

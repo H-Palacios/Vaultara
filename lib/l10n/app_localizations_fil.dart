@@ -8701,4 +8701,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'May Vaultara account na ang email na ito. Mag-sign in gamit ang iyong email at password.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Para manatiling ligtas ang account mo, kumpirmahin gamit ang $provider na ikaw ito.';
+  }
 }

@@ -3216,5 +3216,14 @@
   "socialContinueApple": "Nastavi pomoću Apple-a",
   "socialOr": "ili",
   "socialNotAvailable": "Ova opcija prijave trenutno nije dostupna. Umesto toga koristite imejl i lozinku.",
-  "socialAccountExists": "Ovaj imejl već ima Vaultara nalog. Prijavite se imejlom i lozinkom."
+  "socialAccountExists": "Ovaj imejl već ima Vaultara nalog. Prijavite se imejlom i lozinkom.",
+  "reauthWithProvider": "Da bi vaš nalog ostao bezbedan, potvrdite preko {provider} da ste to vi.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

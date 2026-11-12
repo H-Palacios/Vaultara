@@ -8707,4 +8707,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Այս էլ. հասցեն արդեն ունի Vaultara հաշիվ։ Մուտք գործեք ձեր էլ. հասցեով ու գաղտնաբառով։';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Ձեր հաշիվը պաշտպանելու համար $provider-ով հաստատեք, որ դա դուք եք։';
+  }
 }

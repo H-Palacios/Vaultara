@@ -8707,4 +8707,9 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Бұл поштаның Vaultara есептік жазбасы бар. Поштаңыз бен құпия сөзіңізбен кіріңіз.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Есептік жазбаңыз қауіпсіз болуы үшін $provider арқылы бұл сіз екеніңізді растаңыз.';
+  }
 }

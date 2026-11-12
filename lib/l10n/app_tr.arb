@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Apple ile devam et",
   "socialOr": "veya",
   "socialNotAvailable": "Bu giriş seçeneği şu anda kullanılamıyor. Bunun yerine e-postanızı ve şifrenizi kullanın.",
-  "socialAccountExists": "Bu e-postanın zaten bir Vaultara hesabı var. E-postanız ve şifrenizle giriş yapın."
+  "socialAccountExists": "Bu e-postanın zaten bir Vaultara hesabı var. E-postanız ve şifrenizle giriş yapın.",
+  "reauthWithProvider": "Hesabınızın güvenliği için {provider} ile siz olduğunuzu onaylayın.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

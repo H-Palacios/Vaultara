@@ -8711,4 +8711,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Posta honek dagoeneko badu Vaultara kontu bat. Hasi saioa zure posta eta pasahitzarekin.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Zure kontua seguru mantentzeko, baieztatu zu zarela $provider bidez.';
+  }
 }

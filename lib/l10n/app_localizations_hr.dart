@@ -8785,4 +8785,9 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Ova e-pošta već ima Vaultara račun. Prijavite se e-poštom i lozinkom.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Kako bi vaš račun ostao siguran, potvrdite putem $provider da ste to vi.';
+  }
 }

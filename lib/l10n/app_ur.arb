@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Apple کے ساتھ جاری رکھیں",
   "socialOr": "یا",
   "socialNotAvailable": "سائن ان کا یہ طریقہ ابھی دستیاب نہیں ہے۔ اس کے بجائے اپنی ای میل اور پاس ورڈ استعمال کریں۔",
-  "socialAccountExists": "اس ای میل کا پہلے سے Vaultara اکاؤنٹ ہے۔ اپنی ای میل اور پاس ورڈ سے سائن ان کریں۔"
+  "socialAccountExists": "اس ای میل کا پہلے سے Vaultara اکاؤنٹ ہے۔ اپنی ای میل اور پاس ورڈ سے سائن ان کریں۔",
+  "reauthWithProvider": "اپنے اکاؤنٹ کو محفوظ رکھنے کے لیے، {provider} کے ذریعے تصدیق کریں کہ یہ آپ ہیں۔",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

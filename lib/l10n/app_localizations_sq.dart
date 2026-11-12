@@ -8711,4 +8711,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Ky email ka tashmë llogari Vaultara. Hyni me email-in dhe fjalëkalimin.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Për ta mbajtur llogarinë tënde të sigurt, konfirmo me $provider se je ti.';
+  }
 }

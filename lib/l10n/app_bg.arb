@@ -2992,5 +2992,14 @@
   "socialContinueApple": "Продължаване с Apple",
   "socialOr": "или",
   "socialNotAvailable": "Тази опция за влизане не е налична в момента. Използвайте имейла и паролата си.",
-  "socialAccountExists": "Този имейл вече има акаунт във Vaultara. Влезте с имейла и паролата си."
+  "socialAccountExists": "Този имейл вече има акаунт във Vaultara. Влезте с имейла и паролата си.",
+  "reauthWithProvider": "За да е защитен акаунтът ви, потвърдете, че сте вие, с {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

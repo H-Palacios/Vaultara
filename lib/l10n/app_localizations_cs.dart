@@ -8865,4 +8865,9 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Tento e-mail už má účet Vaultara. Přihlaste se e-mailem a heslem.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Kvůli bezpečnosti účtu potvrďte přes $provider, že jste to vy.';
+  }
 }

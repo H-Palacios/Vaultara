@@ -8643,4 +8643,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get socialAccountExists => '이 이메일에는 이미 Vaultara 계정이 있습니다. 이메일과 비밀번호로 로그인하세요.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return '계정을 안전하게 지키려면 $provider(으)로 본인임을 확인하세요.';
+  }
 }

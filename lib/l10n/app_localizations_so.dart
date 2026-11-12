@@ -8706,4 +8706,9 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Iimaylkan wuxuu horey u leeyahay akoon Vaultara. Ku gal iimaylkaaga iyo eraygaaga sirta ah.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Si koontadaadu u ammaan ahaato, ku xaqiiji $provider inaad adigu tahay.';
+  }
 }

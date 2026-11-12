@@ -8707,4 +8707,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Barua pepe hii tayari ina akaunti ya Vaultara. Ingia kwa barua pepe na nenosiri lako.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Ili akaunti yako iwe salama, thibitisha kupitia $provider kuwa ni wewe.';
+  }
 }

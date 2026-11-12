@@ -3235,5 +3235,14 @@
   "socialContinueApple": "Fortsätt med Apple",
   "socialOr": "eller",
   "socialNotAvailable": "Det här inloggningsalternativet är inte tillgängligt just nu. Använd din e-post och ditt lösenord i stället.",
-  "socialAccountExists": "Den här e-postadressen har redan ett Vaultara-konto. Logga in med din e-post och ditt lösenord."
+  "socialAccountExists": "Den här e-postadressen har redan ett Vaultara-konto. Logga in med din e-post och ditt lösenord.",
+  "reauthWithProvider": "Bekräfta med {provider} att det är du, så att ditt konto förblir säkert.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

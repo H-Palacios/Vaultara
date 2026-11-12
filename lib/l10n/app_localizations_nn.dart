@@ -8711,4 +8711,9 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Denne e-postadressa har allereie ein Vaultara-konto. Logg på med e-post og passord.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Stadfest med $provider at det er deg, så kontoen din held seg trygg.';
+  }
 }

@@ -8880,4 +8880,9 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Ця адреса вже має обліковий запис Vaultara. Увійдіть за допомогою пошти й пароля.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Щоб захистити обліковий запис, підтвердьте через $provider, що це ви.';
+  }
 }

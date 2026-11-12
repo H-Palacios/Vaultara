@@ -3242,5 +3242,14 @@
   "socialContinueApple": "使用 Apple 继续",
   "socialOr": "或",
   "socialNotAvailable": "此登录方式目前不可用。请改用邮箱和密码。",
-  "socialAccountExists": "这个邮箱已经有 Vaultara 账户。请使用邮箱和密码登录。"
+  "socialAccountExists": "这个邮箱已经有 Vaultara 账户。请使用邮箱和密码登录。",
+  "reauthWithProvider": "为保护你的账户安全，请使用 {provider} 确认是你本人。",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

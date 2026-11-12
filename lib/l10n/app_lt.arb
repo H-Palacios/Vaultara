@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Tęsti su Apple",
   "socialOr": "arba",
   "socialNotAvailable": "Šis prisijungimo būdas šiuo metu nepasiekiamas. Vietoj to naudokite el. paštą ir slaptažodį.",
-  "socialAccountExists": "Šis el. paštas jau turi Vaultara paskyrą. Prisijunkite el. paštu ir slaptažodžiu."
+  "socialAccountExists": "Šis el. paštas jau turi Vaultara paskyrą. Prisijunkite el. paštu ir slaptažodžiu.",
+  "reauthWithProvider": "Kad paskyra būtų saugi, patvirtinkite per {provider}, kad tai jūs.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

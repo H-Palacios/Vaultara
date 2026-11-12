@@ -8711,4 +8711,9 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Αυτό το email έχει ήδη λογαριασμό Vaultara. Συνδεθείτε με το email και τον κωδικό πρόσβασής σας.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Για την ασφάλεια του λογαριασμού σας, επιβεβαιώστε ότι είστε εσείς με το $provider.';
+  }
 }

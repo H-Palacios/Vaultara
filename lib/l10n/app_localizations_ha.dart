@@ -8707,4 +8707,9 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Wannan imel yana da asusun Vaultara tuni. Shiga da imel ɗinka da kalmar sirrinka.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Don kiyaye asusunka, tabbatar da cewa kai ne ta hanyar $provider.';
+  }
 }

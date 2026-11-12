@@ -3254,5 +3254,14 @@
   "socialContinueApple": "Ci gaba da Apple",
   "socialOr": "ko",
   "socialNotAvailable": "Wannan hanyar shiga ba ta samuwa yanzu. Yi amfani da imel ɗinka da kalmar sirrinka a madadin haka.",
-  "socialAccountExists": "Wannan imel yana da asusun Vaultara tuni. Shiga da imel ɗinka da kalmar sirrinka."
+  "socialAccountExists": "Wannan imel yana da asusun Vaultara tuni. Shiga da imel ɗinka da kalmar sirrinka.",
+  "reauthWithProvider": "Don kiyaye asusunka, tabbatar da cewa kai ne ta hanyar {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

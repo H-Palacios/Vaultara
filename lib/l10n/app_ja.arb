@@ -3254,5 +3254,14 @@
   "socialContinueApple": "Apple で続ける",
   "socialOr": "または",
   "socialNotAvailable": "このログイン方法は現在ご利用いただけません。メールアドレスとパスワードをお使いください。",
-  "socialAccountExists": "このメールアドレスにはすでに Vaultara アカウントがあります。メールアドレスとパスワードでログインしてください。"
+  "socialAccountExists": "このメールアドレスにはすでに Vaultara アカウントがあります。メールアドレスとパスワードでログインしてください。",
+  "reauthWithProvider": "アカウントを守るため、{provider} で本人であることを確認してください。",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

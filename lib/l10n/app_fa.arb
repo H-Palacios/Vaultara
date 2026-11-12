@@ -3254,5 +3254,14 @@
   "socialContinueApple": "ادامه با Apple",
   "socialOr": "یا",
   "socialNotAvailable": "این روش ورود اکنون در دسترس نیست. به‌جای آن از ایمیل و رمز عبور خود استفاده کنید.",
-  "socialAccountExists": "این ایمیل از قبل حساب Vaultara دارد. با ایمیل و رمز عبور خود وارد شوید."
+  "socialAccountExists": "این ایمیل از قبل حساب Vaultara دارد. با ایمیل و رمز عبور خود وارد شوید.",
+  "reauthWithProvider": "برای امن ماندن حسابتان، با {provider} تأیید کنید که خودتان هستید.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

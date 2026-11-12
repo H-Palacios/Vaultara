@@ -8726,4 +8726,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'This email already has a Vaultara account. Sign in with your email and password.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'To keep your account safe, confirm it\'s you with $provider.';
+  }
 }

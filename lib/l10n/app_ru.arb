@@ -3217,5 +3217,14 @@
   "socialContinueApple": "Продолжить с Apple",
   "socialOr": "или",
   "socialNotAvailable": "Этот способ входа сейчас недоступен. Используйте вместо него почту и пароль.",
-  "socialAccountExists": "У этого адреса уже есть аккаунт Vaultara. Войдите с помощью почты и пароля."
+  "socialAccountExists": "У этого адреса уже есть аккаунт Vaultara. Войдите с помощью почты и пароля.",
+  "reauthWithProvider": "Чтобы защитить аккаунт, подтвердите через {provider}, что это вы.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

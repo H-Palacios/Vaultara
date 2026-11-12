@@ -8655,4 +8655,9 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Email a nwere akaụntụ Vaultara. Banye site na email na paswọọdụ gị.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Iji chekwaa akaụntụ gị, jiri $provider kwado na ọ bụ gị.';
+  }
 }

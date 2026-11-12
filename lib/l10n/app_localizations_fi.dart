@@ -8711,4 +8711,9 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Tällä sähköpostilla on jo Vaultara-tili. Kirjaudu sähköpostillasi ja salasanallasi.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Vahvista $provider-tilillä, että kyse on sinusta, jotta tilisi pysyy turvassa.';
+  }
 }

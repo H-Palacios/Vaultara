@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Apple менен улантуу",
   "socialOr": "же",
   "socialNotAvailable": "Бул кирүү ыкмасы азыр жеткиликсиз. Анын ордуна почтаңызды жана сырсөзүңүздү колдонуңуз.",
-  "socialAccountExists": "Бул почтанын Vaultara аккаунту мурунтан бар. Почтаңыз жана сырсөзүңүз менен кириңиз."
+  "socialAccountExists": "Бул почтанын Vaultara аккаунту мурунтан бар. Почтаңыз жана сырсөзүңүз менен кириңиз.",
+  "reauthWithProvider": "Аккаунтуңуз коопсуз болушу үчүн, {provider} аркылуу бул сиз экениңизди ырастаңыз.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

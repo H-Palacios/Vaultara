@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Tẹ̀síwájú pẹ̀lú Apple",
   "socialOr": "tàbí",
   "socialNotAvailable": "Ọ̀nà ìwọlé yìí kò sí báyìí. Lo ímeèlì àti ọ̀rọ̀ aṣínà rẹ dípò rẹ̀.",
-  "socialAccountExists": "Ímeèlì yìí ti ní àkáǹtì Vaultara tẹ́lẹ̀. Wọlé pẹ̀lú ímeèlì àti ọ̀rọ̀ aṣínà rẹ."
+  "socialAccountExists": "Ímeèlì yìí ti ní àkáǹtì Vaultara tẹ́lẹ̀. Wọlé pẹ̀lú ímeèlì àti ọ̀rọ̀ aṣínà rẹ.",
+  "reauthWithProvider": "Láti dáàbò bo àkáǹtì rẹ, fi {provider} jẹ́rìí pé ìwọ ni.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

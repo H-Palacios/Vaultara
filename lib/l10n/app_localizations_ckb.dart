@@ -8707,4 +8707,9 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'ئەم ئیمەیڵە پێشتر هەژماری Vaultara ی هەیە. بە ئیمەیڵ و وشەی نهێنییەکەت بچۆ ژوورەوە.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'بۆ پاراستنی هەژمارەکەت، بە $provider پشتڕاستی بکەرەوە کە خۆتی.';
+  }
 }

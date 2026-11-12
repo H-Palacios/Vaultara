@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Endelea na Apple",
   "socialOr": "au",
   "socialNotAvailable": "Njia hii ya kuingia haipatikani sasa. Tumia barua pepe na nenosiri lako badala yake.",
-  "socialAccountExists": "Barua pepe hii tayari ina akaunti ya Vaultara. Ingia kwa barua pepe na nenosiri lako."
+  "socialAccountExists": "Barua pepe hii tayari ina akaunti ya Vaultara. Ingia kwa barua pepe na nenosiri lako.",
+  "reauthWithProvider": "Ili akaunti yako iwe salama, thibitisha kupitia {provider} kuwa ni wewe.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

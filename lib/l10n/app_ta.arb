@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Apple மூலம் தொடரவும்",
   "socialOr": "அல்லது",
   "socialNotAvailable": "இந்த உள்நுழைவு விருப்பம் இப்போது கிடைக்கவில்லை. அதற்குப் பதிலாக உங்கள் மின்னஞ்சல் மற்றும் கடவுச்சொல்லைப் பயன்படுத்தவும்.",
-  "socialAccountExists": "இந்த மின்னஞ்சலுக்கு ஏற்கனவே Vaultara கணக்கு உள்ளது. உங்கள் மின்னஞ்சல் மற்றும் கடவுச்சொல்லுடன் உள்நுழையவும்."
+  "socialAccountExists": "இந்த மின்னஞ்சலுக்கு ஏற்கனவே Vaultara கணக்கு உள்ளது. உங்கள் மின்னஞ்சல் மற்றும் கடவுச்சொல்லுடன் உள்நுழையவும்.",
+  "reauthWithProvider": "உங்கள் கணக்கைப் பாதுகாப்பாக வைத்திருக்க, இது நீங்கள்தான் என்பதை {provider} மூலம் உறுதிப்படுத்தவும்.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

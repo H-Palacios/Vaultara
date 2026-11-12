@@ -3259,5 +3259,14 @@
   "socialContinueApple": "Продовжити з Apple",
   "socialOr": "або",
   "socialNotAvailable": "Цей спосіб входу зараз недоступний. Натомість використайте пошту й пароль.",
-  "socialAccountExists": "Ця адреса вже має обліковий запис Vaultara. Увійдіть за допомогою пошти й пароля."
+  "socialAccountExists": "Ця адреса вже має обліковий запис Vaultara. Увійдіть за допомогою пошти й пароля.",
+  "reauthWithProvider": "Щоб захистити обліковий запис, підтвердьте через {provider}, що це ви.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

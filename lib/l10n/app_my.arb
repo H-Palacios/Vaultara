@@ -2992,5 +2992,14 @@
   "socialContinueApple": "Apple ဖြင့် ဆက်လုပ်ရန်",
   "socialOr": "သို့မဟုတ်",
   "socialNotAvailable": "ဤဝင်ရောက်နည်းကို ယခု အသုံးမပြုနိုင်ပါ။ အစား သင့်အီးမေးလ်နှင့် စကားဝှက်ကို သုံးပါ။",
-  "socialAccountExists": "ဤအီးမေးလ်တွင် Vaultara အကောင့် ရှိပြီးသားဖြစ်သည်။ အီးမေးလ်နှင့် စကားဝှက်ဖြင့် ဝင်ရောက်ပါ။"
+  "socialAccountExists": "ဤအီးမေးလ်တွင် Vaultara အကောင့် ရှိပြီးသားဖြစ်သည်။ အီးမေးလ်နှင့် စကားဝှက်ဖြင့် ဝင်ရောက်ပါ။",
+  "reauthWithProvider": "သင့်အကောင့် လုံခြုံစေရန် {provider} ဖြင့် သင်ဖြစ်ကြောင်း အတည်ပြုပါ။",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -8707,4 +8707,9 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Бул почтанын Vaultara аккаунту мурунтан бар. Почтаңыз жана сырсөзүңүз менен кириңиз.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Аккаунтуңуз коопсуз болушу үчүн, $provider аркылуу бул сиз экениңизди ырастаңыз.';
+  }
 }

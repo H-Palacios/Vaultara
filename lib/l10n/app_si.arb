@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Apple සමඟ ඉදිරියට යන්න",
   "socialOr": "හෝ",
   "socialNotAvailable": "මෙම පුරනය වීමේ විකල්පය දැන් ලබා ගත නොහැක. ඒ වෙනුවට ඔබේ ඊමේලය සහ මුරපදය භාවිත කරන්න.",
-  "socialAccountExists": "මෙම ඊමේලයට දැනටමත් Vaultara ගිණුමක් ඇත. ඔබේ ඊමේලය සහ මුරපදයෙන් පුරනය වන්න."
+  "socialAccountExists": "මෙම ඊමේලයට දැනටමත් Vaultara ගිණුමක් ඇත. ඔබේ ඊමේලය සහ මුරපදයෙන් පුරනය වන්න.",
+  "reauthWithProvider": "ඔබගේ ගිණුම ආරක්ෂිතව තබා ගැනීමට, මෙය ඔබ බව {provider} මගින් තහවුරු කරන්න.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

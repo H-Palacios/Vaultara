@@ -3247,5 +3247,14 @@
   "socialContinueApple": "Halda áfram með Apple",
   "socialOr": "eða",
   "socialNotAvailable": "Þessi innskráningarleið er ekki í boði núna. Notaðu frekar netfang og lykilorð.",
-  "socialAccountExists": "Þetta netfang er nú þegar með Vaultara-aðgang. Skráðu þig inn með netfangi og lykilorði."
+  "socialAccountExists": "Þetta netfang er nú þegar með Vaultara-aðgang. Skráðu þig inn með netfangi og lykilorði.",
+  "reauthWithProvider": "Til að halda reikningnum þínum öruggum skaltu staðfesta með {provider} að þetta sért þú.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

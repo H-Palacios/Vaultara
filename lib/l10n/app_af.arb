@@ -3280,5 +3280,14 @@
   "socialContinueApple": "Gaan voort met Apple",
   "socialOr": "of",
   "socialNotAvailable": "Hierdie aanmeldopsie is nie nou beskikbaar nie. Gebruik eerder jou e-pos en wagwoord.",
-  "socialAccountExists": "Hierdie e-pos het reeds 'n Vaultara-rekening. Meld aan met jou e-pos en wagwoord."
+  "socialAccountExists": "Hierdie e-pos het reeds 'n Vaultara-rekening. Meld aan met jou e-pos en wagwoord.",
+  "reauthWithProvider": "Bevestig met {provider} dat dit jy is om jou rekening veilig te hou.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

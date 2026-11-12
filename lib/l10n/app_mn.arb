@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Apple-ээр үргэлжлүүлэх",
   "socialOr": "эсвэл",
   "socialNotAvailable": "Энэ нэвтрэх сонголт одоогоор боломжгүй байна. Оронд нь имэйл, нууц үгээ ашиглана уу.",
-  "socialAccountExists": "Энэ имэйл аль хэдийн Vaultara бүртгэлтэй. Имэйл, нууц үгээрээ нэвтэрнэ үү."
+  "socialAccountExists": "Энэ имэйл аль хэдийн Vaultara бүртгэлтэй. Имэйл, нууц үгээрээ нэвтэрнэ үү.",
+  "reauthWithProvider": "Бүртгэлээ аюулгүй байлгахын тулд {provider}-ээр өөрийгөө баталгаажуулна уу.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

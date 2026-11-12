@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Doorgaan met Apple",
   "socialOr": "of",
   "socialNotAvailable": "Deze inlogoptie is nu niet beschikbaar. Gebruik in plaats daarvan je e-mailadres en wachtwoord.",
-  "socialAccountExists": "Dit e-mailadres heeft al een Vaultara-account. Log in met je e-mailadres en wachtwoord."
+  "socialAccountExists": "Dit e-mailadres heeft al een Vaultara-account. Log in met je e-mailadres en wachtwoord.",
+  "reauthWithProvider": "Bevestig met {provider} dat jij het bent, zodat je account veilig blijft.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

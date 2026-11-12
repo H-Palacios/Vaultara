@@ -8707,4 +8707,9 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Bu e-postanın zaten bir Vaultara hesabı var. E-postanız ve şifrenizle giriş yapın.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Hesabınızın güvenliği için $provider ile siz olduğunuzu onaylayın.';
+  }
 }

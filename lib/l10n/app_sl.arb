@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Nadaljuj z Applom",
   "socialOr": "ali",
   "socialNotAvailable": "Ta način prijave trenutno ni na voljo. Namesto tega uporabite e-pošto in geslo.",
-  "socialAccountExists": "Ta e-poštni naslov že ima račun Vaultara. Prijavite se z e-pošto in geslom."
+  "socialAccountExists": "Ta e-poštni naslov že ima račun Vaultara. Prijavite se z e-pošto in geslom.",
+  "reauthWithProvider": "Da bo vaš račun varen, s {provider} potrdite, da ste to vi.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

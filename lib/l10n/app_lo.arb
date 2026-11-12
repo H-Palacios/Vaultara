@@ -3260,5 +3260,14 @@
   "socialContinueApple": "ສືບຕໍ່ດ້ວຍ Apple",
   "socialOr": "ຫຼື",
   "socialNotAvailable": "ຕົວເລືອກການເຂົ້າສູ່ລະບົບນີ້ບໍ່ມີໃຫ້ໃຊ້ຕອນນີ້. ໃຊ້ອີເມວ ແລະ ລະຫັດຜ່ານຂອງທ່ານແທນ.",
-  "socialAccountExists": "ອີເມວນີ້ມີບັນຊີ Vaultara ຢູ່ແລ້ວ. ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວ ແລະ ລະຫັດຜ່ານຂອງທ່ານ."
+  "socialAccountExists": "ອີເມວນີ້ມີບັນຊີ Vaultara ຢູ່ແລ້ວ. ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວ ແລະ ລະຫັດຜ່ານຂອງທ່ານ.",
+  "reauthWithProvider": "ເພື່ອຮັກສາບັນຊີຂອງທ່ານໃຫ້ປອດໄພ, ກະລຸນາຢືນຢັນວ່າແມ່ນທ່ານດ້ວຍ {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

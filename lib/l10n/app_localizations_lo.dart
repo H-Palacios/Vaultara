@@ -8643,4 +8643,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'ອີເມວນີ້ມີບັນຊີ Vaultara ຢູ່ແລ້ວ. ເຂົ້າສູ່ລະບົບດ້ວຍອີເມວ ແລະ ລະຫັດຜ່ານຂອງທ່ານ.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'ເພື່ອຮັກສາບັນຊີຂອງທ່ານໃຫ້ປອດໄພ, ກະລຸນາຢືນຢັນວ່າແມ່ນທ່ານດ້ວຍ $provider.';
+  }
 }

@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Continuar com a Apple",
   "socialOr": "ou",
   "socialNotAvailable": "Esta opção de login não está disponível agora. Use seu e-mail e senha.",
-  "socialAccountExists": "Este e-mail já tem uma conta Vaultara. Entre com seu e-mail e senha."
+  "socialAccountExists": "Este e-mail já tem uma conta Vaultara. Entre com seu e-mail e senha.",
+  "reauthWithProvider": "Para manter sua conta segura, confirme que é você com {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

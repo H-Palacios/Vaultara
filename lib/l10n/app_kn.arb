@@ -2992,5 +2992,14 @@
   "socialContinueApple": "Apple ಮೂಲಕ ಮುಂದುವರಿಯಿರಿ",
   "socialOr": "ಅಥವಾ",
   "socialNotAvailable": "ಈ ಸೈನ್ ಇನ್ ಆಯ್ಕೆ ಈಗ ಲಭ್ಯವಿಲ್ಲ. ಬದಲಿಗೆ ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್ ಬಳಸಿ.",
-  "socialAccountExists": "ಈ ಇಮೇಲ್‌ಗೆ ಈಗಾಗಲೇ Vaultara ಖಾತೆ ಇದೆ. ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್‌ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ."
+  "socialAccountExists": "ಈ ಇಮೇಲ್‌ಗೆ ಈಗಾಗಲೇ Vaultara ಖಾತೆ ಇದೆ. ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್‌ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ.",
+  "reauthWithProvider": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಸುರಕ್ಷಿತವಾಗಿಡಲು, ಇದು ನೀವೇ ಎಂದು {provider} ಮೂಲಕ ದೃಢೀಕರಿಸಿ.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

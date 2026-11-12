@@ -8707,4 +8707,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'ამ ელფოსტას უკვე აქვს Vaultara-ს ანგარიში. შედით ელფოსტითა და პაროლით.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'ანგარიშის დასაცავად დაადასტურეთ $provider-ით, რომ ეს თქვენ ხართ.';
+  }
 }

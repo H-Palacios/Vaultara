@@ -8707,4 +8707,9 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Le imeyile sele ine-akhawunti ye-Vaultara. Ngena nge-imeyile negama lokugqitha lakho.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Ukugcina i-akhawunti yakho ikhuselekile, qinisekisa nge-$provider ukuba nguwe.';
+  }
 }

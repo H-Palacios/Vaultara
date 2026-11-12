@@ -3242,5 +3242,14 @@
   "socialContinueApple": "Tiếp tục với Apple",
   "socialOr": "hoặc",
   "socialNotAvailable": "Cách đăng nhập này hiện không khả dụng. Hãy dùng email và mật khẩu thay thế.",
-  "socialAccountExists": "Email này đã có tài khoản Vaultara. Hãy đăng nhập bằng email và mật khẩu."
+  "socialAccountExists": "Email này đã có tài khoản Vaultara. Hãy đăng nhập bằng email và mật khẩu.",
+  "reauthWithProvider": "Để giữ an toàn cho tài khoản, hãy xác nhận đó là bạn bằng {provider}.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

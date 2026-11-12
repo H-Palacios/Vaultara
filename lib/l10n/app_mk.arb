@@ -3260,5 +3260,14 @@
   "socialContinueApple": "Продолжи со Apple",
   "socialOr": "или",
   "socialNotAvailable": "Оваа опција за најава моментално не е достапна. Наместо тоа, користете е-пошта и лозинка.",
-  "socialAccountExists": "Оваа е-пошта веќе има сметка во Vaultara. Најавете се со е-пошта и лозинка."
+  "socialAccountExists": "Оваа е-пошта веќе има сметка во Vaultara. Најавете се со е-пошта и лозинка.",
+  "reauthWithProvider": "За вашата сметка да остане безбедна, потврдете преку {provider} дека сте вие.",
+  "@reauthWithProvider": {
+    "description": "Shown when an account made with Google or Apple must confirm it is the owner, above the Continue with Google or Apple button. {provider} is Google or Apple.",
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  }
 }

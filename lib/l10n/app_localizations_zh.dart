@@ -8643,6 +8643,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get socialAccountExists => '这个邮箱已经有 Vaultara 账户。请使用邮箱和密码登录。';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return '为保护你的账户安全，请使用 $provider 确认是你本人。';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -17272,6 +17277,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get socialAccountExists => '这个邮箱已经有 Vaultara 账户。请使用邮箱和密码登录。';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return '为保护你的账户安全，请使用 $provider 确认是你本人。';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -25901,4 +25911,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get socialAccountExists => '這個電子郵件已經有 Vaultara 帳戶。請使用電子郵件和密碼登入。';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return '為了保護你的帳戶安全，請使用 $provider 確認是你本人。';
+  }
 }

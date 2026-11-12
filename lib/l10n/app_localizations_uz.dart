@@ -8707,4 +8707,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get socialAccountExists => 'Bu pochtada allaqachon Vaultara hisobi bor. Pochtangiz va parolingiz bilan kiring.';
+
+  @override
+  String reauthWithProvider(String provider) {
+    return 'Hisobingiz xavfsiz bo‘lishi uchun $provider orqali bu siz ekaningizni tasdiqlang.';
+  }
 }
