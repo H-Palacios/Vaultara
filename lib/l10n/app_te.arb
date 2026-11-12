@@ -3281,9 +3281,9 @@
   "@legendLater": {
     "description": "Calendar legend: records expiring after 30 days (green)."
   },
-  "runwayCount": "{count, plural, other{తదుపరి {days} రోజుల్లో గడువు ముగుస్తుంది: {count}}}",
-  "@runwayCount": {
-    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+  "comingUpCount": "{count, plural, other{తదుపరి {days} రోజుల్లో గడువు ముగుస్తుంది: {count}}}",
+  "@comingUpCount": {
+    "description": "Heading of the Coming up list on Home, such as \"3 expire in the next 30 days\". days is 30.",
     "placeholders": {
       "count": {
         "type": "int"
@@ -3293,40 +3293,31 @@
       }
     }
   },
-  "runwayCountYear": "{count, plural, other{వచ్చే సంవత్సరంలో గడువు ముగుస్తుంది: {count}}}",
-  "@runwayCountYear": {
-    "description": "Runway heading when the window is a year.",
+  "comingUpMore": "{count, plural, other{+{count} మరిన్ని}}",
+  "@comingUpMore": {
+    "description": "Under the Coming up rows on Home: how many more records are not listed.",
     "placeholders": {
       "count": {
         "type": "int"
       }
     }
   },
-  "runwayMore": "{count, plural, other{+{count} మరిన్ని}}",
-  "@runwayMore": {
-    "description": "Under the runway rows: how many more records are not listed.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "runwayAllClear": "{date} వరకు అంతా బాగుంది",
-  "@runwayAllClear": {
-    "description": "Shown when nothing expires within a year; date is the next expiry.",
+  "comingUpAllClear": "{date} వరకు అంతా బాగుంది",
+  "@comingUpAllClear": {
+    "description": "Shown on Home when nothing expires within 30 days; date is the next expiry.",
     "placeholders": {
       "date": {
         "type": "String"
       }
     }
   },
-  "runwaySeeAll": "అన్నీ చూడండి",
-  "@runwaySeeAll": {
-    "description": "Button that opens the full list of records in the runway window."
+  "comingUpSeeAll": "అన్నీ చూడండి",
+  "@comingUpSeeAll": {
+    "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "runwayBusyMonth": "{month} బిజీగా ఉంది ({count}). మొదటి పునరుద్ధరణను ముందుగానే ప్రారంభించండి.",
-  "@runwayBusyMonth": {
-    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+  "insightsBusyMonth": "{month} బిజీగా ఉంది ({count}). మొదటి పునరుద్ధరణను ముందుగానే ప్రారంభించండి.",
+  "@insightsBusyMonth": {
+    "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {
       "month": {
         "type": "String"

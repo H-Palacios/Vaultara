@@ -8723,7 +8723,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get legendLater => 'Keyinroq';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8733,17 +8733,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Keyingi yilda muddati tugaydi: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8743,15 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return '$date gacha hammasi joyida';
   }
 
   @override
-  String get runwaySeeAll => 'Hammasini ko‘rish';
+  String get comingUpSeeAll => 'Hammasini ko‘rish';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month band ($count). Birinchi yangilashni erta boshlang.';
   }
 

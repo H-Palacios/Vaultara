@@ -8,15 +8,15 @@ import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/calendar/view/widgets/calendar_record_card.dart';
 import 'package:vaultara/features/guides/view/renewal_guide_sheet.dart';
 import 'package:vaultara/features/home/data/record_totals.dart';
+import 'package:vaultara/features/home/view/widgets/home_coming_up.dart';
 import 'package:vaultara/features/records/data/enums/record_filter_mode.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:vaultara/features/records/view/record_opener.dart';
 import 'package:vaultara/features/records/view/renew/renew_sheet.dart';
 import 'package:vaultara/features/records/view/search/global_search_sheet.dart';
-import 'package:vaultara/features/runway/view/home_runway.dart';
 
-/// The record that expires next, with Renew and How to renew, a chip for
-/// anything expired, and the 30-day runway under it.
+/// The record that expires next, with Renew and Renewal checklist, a chip
+/// for anything expired, and the Coming up list for the next 30 days.
 ///
 /// It replaces the four count cards, which repeated the numbers the Insights
 /// summary already shows. Home now answers "what do I do next?" and Insights
@@ -175,20 +175,10 @@ class HomeNextUp extends StatelessWidget {
             ),
           ),
         ],
-        // The next 30 days as distance. It replaces the "due in 30 days"
-        // chip and adds no extra card.
-        HomeRunway(
+        HomeComingUp(
           records: records,
-          nextUp: next,
           onOpen: (record) => _open(context, record),
-          onRenew: (record) => _renew(context, record),
-          onGuide: (record) => _guide(context, record),
-          onSeeAll: (windowDays) => _search(
-            context,
-            windowDays <= 30
-                ? RecordFilterMode.expiringSoon
-                : RecordFilterMode.all,
-          ),
+          onSeeAll: () => _search(context, RecordFilterMode.expiringSoon),
         ),
       ],
     );

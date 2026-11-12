@@ -8728,7 +8728,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get legendLater => 'Mais tarde';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8739,18 +8739,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count vencem no próximo ano',
-      one: '$count vence no próximo ano',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8760,15 +8749,15 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Tudo certo até $date';
   }
 
   @override
-  String get runwaySeeAll => 'Ver tudo';
+  String get comingUpSeeAll => 'Ver tudo';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month está cheio ($count). Comece cedo a primeira renovação.';
   }
 

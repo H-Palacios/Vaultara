@@ -3014,9 +3014,9 @@
   "@legendLater": {
     "description": "Calendar legend: records expiring after 30 days (green)."
   },
-  "runwayCount": "{count, plural, other{နောက် {days} ရက်အတွင်း သက်တမ်းကုန်မည်- {count}}}",
-  "@runwayCount": {
-    "description": "Home runway heading, such as \"3 expire in the next 30 days\". days is 30 or 90.",
+  "comingUpCount": "{count, plural, other{နောက် {days} ရက်အတွင်း သက်တမ်းကုန်မည်- {count}}}",
+  "@comingUpCount": {
+    "description": "Heading of the Coming up list on Home, such as \"3 expire in the next 30 days\". days is 30.",
     "placeholders": {
       "count": {
         "type": "int"
@@ -3026,40 +3026,31 @@
       }
     }
   },
-  "runwayCountYear": "{count, plural, other{နောက်တစ်နှစ်အတွင်း သက်တမ်းကုန်မည်- {count}}}",
-  "@runwayCountYear": {
-    "description": "Runway heading when the window is a year.",
+  "comingUpMore": "{count, plural, other{+{count} ထပ်}}",
+  "@comingUpMore": {
+    "description": "Under the Coming up rows on Home: how many more records are not listed.",
     "placeholders": {
       "count": {
         "type": "int"
       }
     }
   },
-  "runwayMore": "{count, plural, other{+{count} ထပ်}}",
-  "@runwayMore": {
-    "description": "Under the runway rows: how many more records are not listed.",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "runwayAllClear": "{date} အထိ အားလုံးအဆင်ပြေသည်",
-  "@runwayAllClear": {
-    "description": "Shown when nothing expires within a year; date is the next expiry.",
+  "comingUpAllClear": "{date} အထိ အားလုံးအဆင်ပြေသည်",
+  "@comingUpAllClear": {
+    "description": "Shown on Home when nothing expires within 30 days; date is the next expiry.",
     "placeholders": {
       "date": {
         "type": "String"
       }
     }
   },
-  "runwaySeeAll": "အားလုံးကြည့်ရန်",
-  "@runwaySeeAll": {
-    "description": "Button that opens the full list of records in the runway window."
+  "comingUpSeeAll": "အားလုံးကြည့်ရန်",
+  "@comingUpSeeAll": {
+    "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "runwayBusyMonth": "{month} တွင် အလုပ်များသည် ({count})။ ပထမသက်တမ်းတိုးခြင်းကို စောစောစတင်ပါ။",
-  "@runwayBusyMonth": {
-    "description": "Insights runway note; month is a month name, count the number of renewals in it.",
+  "insightsBusyMonth": "{month} တွင် အလုပ်များသည် ({count})။ ပထမသက်တမ်းတိုးခြင်းကို စောစောစတင်ပါ။",
+  "@insightsBusyMonth": {
+    "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {
       "month": {
         "type": "String"

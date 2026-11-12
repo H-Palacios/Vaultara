@@ -8881,7 +8881,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get legendLater => 'Později';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8891,17 +8891,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'Vyprší v příštím roce: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8911,15 +8901,15 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Vše v pořádku do $date';
   }
 
   @override
-  String get runwaySeeAll => 'Zobrazit vše';
+  String get comingUpSeeAll => 'Zobrazit vše';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month je nabitý ($count). Začněte s první obnovou včas.';
   }
 

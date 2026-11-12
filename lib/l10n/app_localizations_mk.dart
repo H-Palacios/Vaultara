@@ -8721,7 +8721,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get legendLater => 'Подоцна';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8732,18 +8732,7 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count истекуваат во следната година',
-      one: '$count истекува во следната година',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8742,15 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Сè е во ред до $date';
   }
 
   @override
-  String get runwaySeeAll => 'Види ги сите';
+  String get comingUpSeeAll => 'Види ги сите';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month е зафатен ($count). Започнете ја првата обнова навреме.';
   }
 

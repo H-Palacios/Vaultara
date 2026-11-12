@@ -13,8 +13,8 @@ import 'package:vaultara/l10n/app_localizations.dart';
   Tapping the row opens the month's records, and tapping a record opens it.
 
   The bars are all the app colour: their length already shows how many
-  records expire that month, and the runway above them shows urgency with
-  the app's colour scale. The current month is in bold.
+  records expire that month, and urgency is shown with the app's colour
+  scale on the records themselves. The current month is in bold.
 */
 class ExpiryTimelineMonthRow extends StatelessWidget {
   final ExpiryTimelineMonth month;

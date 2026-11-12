@@ -8647,7 +8647,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get legendLater => 'ภายหลัง';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8657,17 +8657,7 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count รายการหมดอายุในปีหน้า',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8677,15 +8667,15 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'ทุกอย่างเรียบร้อยถึง $date';
   }
 
   @override
-  String get runwaySeeAll => 'ดูทั้งหมด';
+  String get comingUpSeeAll => 'ดูทั้งหมด';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month มีงานเยอะ ($count) เริ่มต่ออายุรายการแรกแต่เนิ่นๆ';
   }
 

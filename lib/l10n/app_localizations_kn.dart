@@ -8723,7 +8723,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get legendLater => 'ನಂತರ';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8733,17 +8733,7 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ಮುಂದಿನ ವರ್ಷದಲ್ಲಿ ಅವಧಿ ಮುಗಿಯುತ್ತದೆ: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8753,15 +8743,15 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return '$date ವರೆಗೆ ಎಲ್ಲವೂ ಸರಿಯಾಗಿದೆ';
   }
 
   @override
-  String get runwaySeeAll => 'ಎಲ್ಲವನ್ನೂ ನೋಡಿ';
+  String get comingUpSeeAll => 'ಎಲ್ಲವನ್ನೂ ನೋಡಿ';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month ಬಿಡುವಿಲ್ಲ ($count). ಮೊದಲ ನವೀಕರಣವನ್ನು ಬೇಗ ಆರಂಭಿಸಿ.';
   }
 

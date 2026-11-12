@@ -8727,7 +8727,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get legendLater => 'Hiljem';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8738,18 +8738,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count aeguvad järgmise aasta jooksul',
-      one: '$count aegub järgmise aasta jooksul',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8759,15 +8748,15 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Kõik korras kuni $date';
   }
 
   @override
-  String get runwaySeeAll => 'Näita kõiki';
+  String get comingUpSeeAll => 'Näita kõiki';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month on tihe ($count). Alusta esimese uuendamisega varakult.';
   }
 

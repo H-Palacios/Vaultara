@@ -8659,7 +8659,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get legendLater => 'ພາຍຫຼັງ';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8669,17 +8669,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'ໝົດອາຍຸໃນປີໜ້າ: $count',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8689,15 +8679,15 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'ທຸກຢ່າງດີຈົນຮອດ $date';
   }
 
   @override
-  String get runwaySeeAll => 'ເບິ່ງທັງໝົດ';
+  String get comingUpSeeAll => 'ເບິ່ງທັງໝົດ';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month ມີວຽກຫຼາຍ ($count). ເລີ່ມຕໍ່ອາຍຸຄັ້ງທຳອິດແຕ່ເນີ່ນໆ.';
   }
 

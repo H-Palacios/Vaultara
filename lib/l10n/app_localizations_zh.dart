@@ -8659,7 +8659,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get legendLater => '之后';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8669,17 +8669,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '未来一年内到期：$count项',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8689,15 +8679,15 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return '$date之前一切正常';
   }
 
   @override
-  String get runwaySeeAll => '查看全部';
+  String get comingUpSeeAll => '查看全部';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month比较集中（$count项）。请尽早开始第一项续期。';
   }
 
@@ -17401,7 +17391,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get legendLater => '之后';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -17411,17 +17401,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '未来一年内到期：$count项',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -17431,15 +17411,15 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return '$date之前一切正常';
   }
 
   @override
-  String get runwaySeeAll => '查看全部';
+  String get comingUpSeeAll => '查看全部';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month比较集中（$count项）。请尽早开始第一项续期。';
   }
 
@@ -26143,7 +26123,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get legendLater => '之後';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -26153,17 +26133,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '未來一年內到期：$count 項',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -26173,15 +26143,15 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return '$date 之前一切正常';
   }
 
   @override
-  String get runwaySeeAll => '查看全部';
+  String get comingUpSeeAll => '查看全部';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return '$month比較集中（$count 項）。請盡早開始第一項續期。';
   }
 

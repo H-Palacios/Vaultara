@@ -8727,7 +8727,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get legendLater => 'Αργότερα';
 
   @override
-  String runwayCount(int count, int days) {
+  String comingUpCount(int count, int days) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8738,18 +8738,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String runwayCountYear(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count λήγουν μέσα στον επόμενο χρόνο',
-      one: '$count λήγει μέσα στον επόμενο χρόνο',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String runwayMore(int count) {
+  String comingUpMore(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
@@ -8759,15 +8748,15 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String runwayAllClear(String date) {
+  String comingUpAllClear(String date) {
     return 'Όλα εντάξει έως $date';
   }
 
   @override
-  String get runwaySeeAll => 'Προβολή όλων';
+  String get comingUpSeeAll => 'Προβολή όλων';
 
   @override
-  String runwayBusyMonth(String month, int count) {
+  String insightsBusyMonth(String month, int count) {
     return 'Ο μήνας $month είναι φορτωμένος ($count). Ξεκινήστε νωρίς την πρώτη ανανέωση.';
   }
 
