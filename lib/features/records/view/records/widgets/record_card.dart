@@ -6,6 +6,7 @@ import 'package:vaultara/core/l10n/plural_labels.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/features/records/logic/record_status.dart';
 import 'package:vaultara/core/theme/record_status_colours.dart';
+import 'package:vaultara/core/view/widgets/status_dot_label.dart';
 import 'package:vaultara/features/family/view/person_chip.dart';
 import 'package:vaultara/features/guides/data/renewal_guides.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
@@ -93,11 +94,6 @@ class RecordCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final loc = AppLocalizations.of(context)!;
-
-    final fg = RecordStatusColours.foreground(
-      status.colour,
-      Theme.of(context).brightness,
-    );
 
     final bool showGuide =
         onHowToRenew != null && RenewalGuides.has(record.subcategoryName);
@@ -201,34 +197,9 @@ class RecordCard extends StatelessWidget {
                       Expanded(
                         child: Align(
                           alignment: AlignmentDirectional.centerStart,
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 5,
-                            ),
-                            decoration: BoxDecoration(
-                              color: status.colour.withValues(alpha: 0.15),
-                              borderRadius: BorderRadius.circular(999),
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Icon(status.labelIcon, size: 13, color: fg),
-                                const SizedBox(width: 6),
-                                Flexible(
-                                  child: Text(
-                                    status.label,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
-                                      color: fg,
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
+                          child: StatusDotLabel(
+                            text: status.label,
+                            colour: status.colour,
                           ),
                         ),
                       ),
