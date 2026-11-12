@@ -3146,5 +3146,6 @@
   "assistantReportHarmful": "അധിക്ഷേപകരമോ ദോഷകരമോ",
   "assistantReportWrong": "തെറ്റോ തെറ്റിദ്ധരിപ്പിക്കുന്നതോ",
   "assistantReportOther": "മറ്റെന്തെങ്കിലും",
-  "assistantReportThanks": "നന്ദി. ഞങ്ങൾ ഈ ഉത്തരം പരിശോധിക്കും."
+  "assistantReportThanks": "നന്ദി. ഞങ്ങൾ ഈ ഉത്തരം പരിശോധിക്കും.",
+  "groupsNoRecordsSection": "ഇതുവരെ റെക്കോർഡുകളൊന്നുമില്ല"
 }

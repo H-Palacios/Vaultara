@@ -8767,4 +8767,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Cảm ơn bạn. Chúng tôi sẽ xem xét câu trả lời này.';
+
+  @override
+  String get groupsNoRecordsSection => 'Chưa có bản ghi nào';
 }

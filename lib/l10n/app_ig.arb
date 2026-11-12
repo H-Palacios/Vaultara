@@ -3401,5 +3401,6 @@
   "assistantReportHarmful": "Ihe na-akpasu iwe ma ọ bụ na-emerụ ahụ",
   "assistantReportWrong": "Ezighi ezi ma ọ bụ na-eduhie eduhie",
   "assistantReportOther": "Ihe ọzọ",
-  "assistantReportThanks": "Daalụ. Anyị ga-enyocha azịza a."
+  "assistantReportThanks": "Daalụ. Anyị ga-enyocha azịza a.",
+  "groupsNoRecordsSection": "Enweghị ndekọ ka ọ dị"
 }

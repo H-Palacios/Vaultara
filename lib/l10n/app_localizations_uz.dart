@@ -8831,4 +8831,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Rahmat. Bu javobni tekshiramiz.';
+
+  @override
+  String get groupsNoRecordsSection => 'Hozircha yozuvlar yoʻq';
 }

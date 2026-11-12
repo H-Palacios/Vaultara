@@ -190,25 +190,25 @@ class AppLocalizationsSl extends AppLocalizations {
   String get signIn => 'Prijava';
 
   @override
-  String get categoryPersonalIdentification => 'Osebna Identifikacija';
+  String get categoryPersonalIdentification => 'Osebna identifikacija';
 
   @override
-  String get categoryDrivingAndVehicles => 'Vožnja in Vozila';
+  String get categoryDrivingAndVehicles => 'Vožnja in vozila';
 
   @override
-  String get categoryTravelAndImmigration => 'Potovanja in Priseljevanje';
+  String get categoryTravelAndImmigration => 'Potovanja in priseljevanje';
 
   @override
-  String get categoryBankingAndCards => 'Bančništvo in Kartice';
+  String get categoryBankingAndCards => 'Bančništvo in kartice';
 
   @override
-  String get categoryInsuranceAndCover => 'Zavarovanja in Kritje';
+  String get categoryInsuranceAndCover => 'Zavarovanja in kritje';
 
   @override
-  String get categoryWorkAndProfessional => 'Delo in Poklicno';
+  String get categoryWorkAndProfessional => 'Delo in poklicno';
 
   @override
-  String get categoryPropertyAndHousing => 'Lastnina in Stanovanje';
+  String get categoryPropertyAndHousing => 'Lastnina in stanovanje';
 
   @override
   String get subcategoryPassports => 'Potni listi';
@@ -8995,4 +8995,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Hvala. Ta odgovor bomo pregledali.';
+
+  @override
+  String get groupsNoRecordsSection => 'Zaenkrat še ni zapisov';
 }

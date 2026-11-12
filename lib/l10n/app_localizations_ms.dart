@@ -190,85 +190,85 @@ class AppLocalizationsMs extends AppLocalizations {
   String get signIn => 'Log masuk';
 
   @override
-  String get categoryPersonalIdentification => 'Pengenalan Diri';
+  String get categoryPersonalIdentification => 'Pengenalan diri';
 
   @override
-  String get categoryDrivingAndVehicles => 'Pemanduan dan Kenderaan';
+  String get categoryDrivingAndVehicles => 'Pemanduan dan kenderaan';
 
   @override
-  String get categoryTravelAndImmigration => 'Perjalanan dan Imigresen';
+  String get categoryTravelAndImmigration => 'Perjalanan dan imigresen';
 
   @override
-  String get categoryBankingAndCards => 'Perbankan dan Kad';
+  String get categoryBankingAndCards => 'Perbankan dan kad';
 
   @override
-  String get categoryInsuranceAndCover => 'Insurans dan Perlindungan';
+  String get categoryInsuranceAndCover => 'Insurans dan perlindungan';
 
   @override
-  String get categoryWorkAndProfessional => 'Kerja dan Profesional';
+  String get categoryWorkAndProfessional => 'Kerja dan profesional';
 
   @override
-  String get categoryPropertyAndHousing => 'Harta dan Perumahan';
+  String get categoryPropertyAndHousing => 'Harta dan perumahan';
 
   @override
   String get subcategoryPassports => 'Pasport';
 
   @override
-  String get subcategoryIdCards => 'Kad Pengenalan';
+  String get subcategoryIdCards => 'Kad pengenalan';
 
   @override
-  String get subcategoryResidencePermits => 'Permit Kediaman';
+  String get subcategoryResidencePermits => 'Permit kediaman';
 
   @override
-  String get subcategoryDrivingLicences => 'Lesen Memandu';
+  String get subcategoryDrivingLicences => 'Lesen memandu';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Pendaftaran Kenderaan';
+  String get subcategoryVehicleRegistrations => 'Pendaftaran kenderaan';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Sijil Kelayakan Jalan';
+  String get subcategoryRoadworthyCertificates => 'Sijil kelayakan jalan';
 
   @override
   String get subcategoryVisas => 'Visa';
 
   @override
-  String get subcategoryStudyPermits => 'Permit Pengajian';
+  String get subcategoryStudyPermits => 'Permit pengajian';
 
   @override
-  String get subcategoryWorkPermits => 'Permit Kerja';
+  String get subcategoryWorkPermits => 'Permit kerja';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Kad Debit dan Kredit';
+  String get subcategoryDebitAndCreditCards => 'Kad debit dan kredit';
 
   @override
-  String get subcategoryStoreCards => 'Kad Kedai';
+  String get subcategoryStoreCards => 'Kad kedai';
 
   @override
-  String get subcategoryVehicleInsurances => 'Insurans Kenderaan';
+  String get subcategoryVehicleInsurances => 'Insurans kenderaan';
 
   @override
-  String get subcategoryPropertyInsurances => 'Insurans Harta';
+  String get subcategoryPropertyInsurances => 'Insurans harta';
 
   @override
-  String get subcategoryLifeInsurances => 'Insurans Hayat';
+  String get subcategoryLifeInsurances => 'Insurans hayat';
 
   @override
-  String get subcategoryHealthInsurances => 'Insurans Kesihatan';
+  String get subcategoryHealthInsurances => 'Insurans kesihatan';
 
   @override
-  String get subcategoryTravelInsurances => 'Insurans Perjalanan';
+  String get subcategoryTravelInsurances => 'Insurans perjalanan';
 
   @override
-  String get subcategoryProfessionalLicences => 'Lesen Profesional';
+  String get subcategoryProfessionalLicences => 'Lesen profesional';
 
   @override
-  String get subcategoryWorkAccessCards => 'Kad Akses Kerja';
+  String get subcategoryWorkAccessCards => 'Kad akses kerja';
 
   @override
-  String get subcategoryLeaseAgreements => 'Perjanjian Sewa';
+  String get subcategoryLeaseAgreements => 'Perjanjian sewa';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Kad dan Tag Akses';
+  String get subcategoryAccessCardsAndTags => 'Kad dan tag akses';
 
   @override
   String get searchCategories => 'Cari kategori';
@@ -8767,4 +8767,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Terima kasih. Kami akan menyemak jawapan ini.';
+
+  @override
+  String get groupsNoRecordsSection => 'Tiada rekod lagi';
 }

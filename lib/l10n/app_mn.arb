@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "Доромжилсон эсвэл хортой",
   "assistantReportWrong": "Буруу эсвэл төөрөгдүүлсэн",
   "assistantReportOther": "Өөр зүйл",
-  "assistantReportThanks": "Баярлалаа. Бид энэ хариултыг шалгана."
+  "assistantReportThanks": "Баярлалаа. Бид энэ хариултыг шалгана.",
+  "groupsNoRecordsSection": "Одоогоор бичлэг алга"
 }

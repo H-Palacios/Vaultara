@@ -3427,5 +3427,6 @@
   "assistantReportHarmful": "Ofensiu o perjudicial",
   "assistantReportWrong": "Incorrecte o enganyós",
   "assistantReportOther": "Una altra cosa",
-  "assistantReportThanks": "Gràcies. Revisarem aquesta resposta."
+  "assistantReportThanks": "Gràcies. Revisarem aquesta resposta.",
+  "groupsNoRecordsSection": "Encara no hi ha registres"
 }

@@ -190,85 +190,85 @@ class AppLocalizationsSk extends AppLocalizations {
   String get signIn => 'Prihlásiť sa';
 
   @override
-  String get categoryPersonalIdentification => 'Osobná Identifikácia';
+  String get categoryPersonalIdentification => 'Osobná identifikácia';
 
   @override
-  String get categoryDrivingAndVehicles => 'Vedenie Vozidiel a Vozidlá';
+  String get categoryDrivingAndVehicles => 'Vedenie vozidiel a vozidlá';
 
   @override
-  String get categoryTravelAndImmigration => 'Cestovanie a Imigrácia';
+  String get categoryTravelAndImmigration => 'Cestovanie a imigrácia';
 
   @override
-  String get categoryBankingAndCards => 'Bankovníctvo a Karty';
+  String get categoryBankingAndCards => 'Bankovníctvo a karty';
 
   @override
-  String get categoryInsuranceAndCover => 'Poistenie a Krytie';
+  String get categoryInsuranceAndCover => 'Poistenie a krytie';
 
   @override
-  String get categoryWorkAndProfessional => 'Práca a Profesijné';
+  String get categoryWorkAndProfessional => 'Práca a profesijné';
 
   @override
-  String get categoryPropertyAndHousing => 'Nehnuteľnosti a Bývanie';
+  String get categoryPropertyAndHousing => 'Nehnuteľnosti a bývanie';
 
   @override
   String get subcategoryPassports => 'Pasy';
 
   @override
-  String get subcategoryIdCards => 'Občianske Preukazy';
+  String get subcategoryIdCards => 'Občianske preukazy';
 
   @override
-  String get subcategoryResidencePermits => 'Povolenia na Pobyt';
+  String get subcategoryResidencePermits => 'Povolenia na pobyt';
 
   @override
-  String get subcategoryDrivingLicences => 'Vodičské Preukazy';
+  String get subcategoryDrivingLicences => 'Vodičské preukazy';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Registrácie Vozidiel';
+  String get subcategoryVehicleRegistrations => 'Registrácie vozidiel';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Technické Certifikáty';
+  String get subcategoryRoadworthyCertificates => 'Technické certifikáty';
 
   @override
   String get subcategoryVisas => 'Vízá';
 
   @override
-  String get subcategoryStudyPermits => 'Povolenia na Štúdium';
+  String get subcategoryStudyPermits => 'Povolenia na štúdium';
 
   @override
-  String get subcategoryWorkPermits => 'Pracovné Povolenia';
+  String get subcategoryWorkPermits => 'Pracovné povolenia';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Debetné a Kreditné Karty';
+  String get subcategoryDebitAndCreditCards => 'Debetné a kreditné karty';
 
   @override
-  String get subcategoryStoreCards => 'Obchodné Karty';
+  String get subcategoryStoreCards => 'Obchodné karty';
 
   @override
-  String get subcategoryVehicleInsurances => 'Poistenia Vozidiel';
+  String get subcategoryVehicleInsurances => 'Poistenia vozidiel';
 
   @override
-  String get subcategoryPropertyInsurances => 'Poistenia Nehnuteľností';
+  String get subcategoryPropertyInsurances => 'Poistenia nehnuteľností';
 
   @override
-  String get subcategoryLifeInsurances => 'Životné Poistenia';
+  String get subcategoryLifeInsurances => 'Životné poistenia';
 
   @override
-  String get subcategoryHealthInsurances => 'Zdravotné Poistenia';
+  String get subcategoryHealthInsurances => 'Zdravotné poistenia';
 
   @override
-  String get subcategoryTravelInsurances => 'Cestovné Poistenia';
+  String get subcategoryTravelInsurances => 'Cestovné poistenia';
 
   @override
-  String get subcategoryProfessionalLicences => 'Profesijné Licencie';
+  String get subcategoryProfessionalLicences => 'Profesijné licencie';
 
   @override
-  String get subcategoryWorkAccessCards => 'Prístupové Karty do Práce';
+  String get subcategoryWorkAccessCards => 'Prístupové karty do práce';
 
   @override
-  String get subcategoryLeaseAgreements => 'Nájomné Zmluvy';
+  String get subcategoryLeaseAgreements => 'Nájomné zmluvy';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Prístupové Karty a Štítky';
+  String get subcategoryAccessCardsAndTags => 'Prístupové karty a štítky';
 
   @override
   String get searchCategories => 'Vyhľadať kategórie';
@@ -8987,4 +8987,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Ďakujeme. Túto odpoveď skontrolujeme.';
+
+  @override
+  String get groupsNoRecordsSection => 'Zatiaľ žiadne záznamy';
 }

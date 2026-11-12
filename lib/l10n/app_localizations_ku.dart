@@ -193,22 +193,22 @@ class AppLocalizationsKu extends AppLocalizations {
   String get categoryPersonalIdentification => 'Nasnameya kesane';
 
   @override
-  String get categoryDrivingAndVehicles => 'Ajotin û Wesayît';
+  String get categoryDrivingAndVehicles => 'Ajotin û wesayît';
 
   @override
-  String get categoryTravelAndImmigration => 'Rêwîtî û Koçberî';
+  String get categoryTravelAndImmigration => 'Rêwîtî û koçberî';
 
   @override
-  String get categoryBankingAndCards => 'Bank û Kart';
+  String get categoryBankingAndCards => 'Bank û kart';
 
   @override
-  String get categoryInsuranceAndCover => 'Sîgorte û Parastin';
+  String get categoryInsuranceAndCover => 'Sîgorte û parastin';
 
   @override
-  String get categoryWorkAndProfessional => 'Kar û Pîşe';
+  String get categoryWorkAndProfessional => 'Kar û pîşe';
 
   @override
-  String get categoryPropertyAndHousing => 'Milk û Xanî';
+  String get categoryPropertyAndHousing => 'Milk û xanî';
 
   @override
   String get subcategoryPassports => 'Pasaport';
@@ -8831,4 +8831,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Spas. Em ê vê bersivê kontrol bikin.';
+
+  @override
+  String get groupsNoRecordsSection => 'Hîn tu tomar tune ne';
 }

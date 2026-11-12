@@ -8767,4 +8767,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'ຂອບໃຈ. ພວກເຮົາຈະກວດສອບຄຳຕອບນີ້.';
+
+  @override
+  String get groupsNoRecordsSection => 'ຍັງບໍ່ມີບັນທຶກ';
 }

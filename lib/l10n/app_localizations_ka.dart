@@ -8831,4 +8831,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'გმადლობთ. ჩვენ გადავამოწმებთ ამ პასუხს.';
+
+  @override
+  String get groupsNoRecordsSection => 'ჩანაწერები ჯერ არ არის';
 }

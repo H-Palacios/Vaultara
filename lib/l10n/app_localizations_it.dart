@@ -8843,4 +8843,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Grazie. Esamineremo questa risposta.';
+
+  @override
+  String get groupsNoRecordsSection => 'Nessun record presente';
 }

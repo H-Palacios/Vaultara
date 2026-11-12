@@ -3401,5 +3401,6 @@
   "assistantReportHarmful": "פוגעני או מזיק",
   "assistantReportWrong": "שגוי או מטעה",
   "assistantReportOther": "משהו אחר",
-  "assistantReportThanks": "תודה. נבדוק את התשובה הזו."
+  "assistantReportThanks": "תודה. נבדוק את התשובה הזו.",
+  "groupsNoRecordsSection": "אין רשומות עדיין"
 }

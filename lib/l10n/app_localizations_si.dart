@@ -8830,4 +8830,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'ස්තූතියි. අපි මෙම පිළිතුර සමාලෝචනය කරමු.';
+
+  @override
+  String get groupsNoRecordsSection => 'තවම වාර්තා නැත';
 }

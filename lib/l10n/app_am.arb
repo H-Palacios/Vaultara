@@ -3434,5 +3434,6 @@
   "assistantReportHarmful": "አጸያፊ ወይም ጎጂ",
   "assistantReportWrong": "የተሳሳተ ወይም አሳሳች",
   "assistantReportOther": "ሌላ ነገር",
-  "assistantReportThanks": "እናመሰግናለን። ይህን መልስ እንገመግማለን።"
+  "assistantReportThanks": "እናመሰግናለን። ይህን መልስ እንገመግማለን።",
+  "groupsNoRecordsSection": "ገና ምንም መዝገቦች የሉም"
 }

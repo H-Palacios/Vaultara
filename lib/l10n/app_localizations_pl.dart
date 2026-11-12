@@ -190,85 +190,85 @@ class AppLocalizationsPl extends AppLocalizations {
   String get signIn => 'Zaloguj się';
 
   @override
-  String get categoryPersonalIdentification => 'Identyfikacja Osobista';
+  String get categoryPersonalIdentification => 'Identyfikacja osobista';
 
   @override
-  String get categoryDrivingAndVehicles => 'Prawo Jazdy i Pojazdy';
+  String get categoryDrivingAndVehicles => 'Prawo jazdy i pojazdy';
 
   @override
-  String get categoryTravelAndImmigration => 'Podróże i Imigracja';
+  String get categoryTravelAndImmigration => 'Podróże i imigracja';
 
   @override
-  String get categoryBankingAndCards => 'Bankowość i Karty';
+  String get categoryBankingAndCards => 'Bankowość i karty';
 
   @override
-  String get categoryInsuranceAndCover => 'Ubezpieczenia i Ochrona';
+  String get categoryInsuranceAndCover => 'Ubezpieczenia i ochrona';
 
   @override
-  String get categoryWorkAndProfessional => 'Praca i Zawód';
+  String get categoryWorkAndProfessional => 'Praca i zawód';
 
   @override
-  String get categoryPropertyAndHousing => 'Nieruchomości i Mieszkanie';
+  String get categoryPropertyAndHousing => 'Nieruchomości i mieszkanie';
 
   @override
   String get subcategoryPassports => 'Paszporty';
 
   @override
-  String get subcategoryIdCards => 'Dowody Osobiste';
+  String get subcategoryIdCards => 'Dowody osobiste';
 
   @override
-  String get subcategoryResidencePermits => 'Zezwolenia na Pobyt';
+  String get subcategoryResidencePermits => 'Zezwolenia na pobyt';
 
   @override
-  String get subcategoryDrivingLicences => 'Prawa Jazdy';
+  String get subcategoryDrivingLicences => 'Prawa jazdy';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Rejestracje Pojazdów';
+  String get subcategoryVehicleRegistrations => 'Rejestracje pojazdów';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Certyfikaty Zdatności Drogowej';
+  String get subcategoryRoadworthyCertificates => 'Certyfikaty zdatności drogowej';
 
   @override
   String get subcategoryVisas => 'Wizy';
 
   @override
-  String get subcategoryStudyPermits => 'Zezwolenia na Naukę';
+  String get subcategoryStudyPermits => 'Zezwolenia na naukę';
 
   @override
-  String get subcategoryWorkPermits => 'Zezwolenia na Pracę';
+  String get subcategoryWorkPermits => 'Zezwolenia na pracę';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Karty Debetowe i Kredytowe';
+  String get subcategoryDebitAndCreditCards => 'Karty debetowe i kredytowe';
 
   @override
-  String get subcategoryStoreCards => 'Karty Sklepowe';
+  String get subcategoryStoreCards => 'Karty sklepowe';
 
   @override
-  String get subcategoryVehicleInsurances => 'Ubezpieczenia Pojazdów';
+  String get subcategoryVehicleInsurances => 'Ubezpieczenia pojazdów';
 
   @override
-  String get subcategoryPropertyInsurances => 'Ubezpieczenia Nieruchomości';
+  String get subcategoryPropertyInsurances => 'Ubezpieczenia nieruchomości';
 
   @override
-  String get subcategoryLifeInsurances => 'Ubezpieczenia na Życie';
+  String get subcategoryLifeInsurances => 'Ubezpieczenia na życie';
 
   @override
-  String get subcategoryHealthInsurances => 'Ubezpieczenia Zdrowotne';
+  String get subcategoryHealthInsurances => 'Ubezpieczenia zdrowotne';
 
   @override
-  String get subcategoryTravelInsurances => 'Ubezpieczenia Podróżne';
+  String get subcategoryTravelInsurances => 'Ubezpieczenia podróżne';
 
   @override
-  String get subcategoryProfessionalLicences => 'Licencje Zawodowe';
+  String get subcategoryProfessionalLicences => 'Licencje zawodowe';
 
   @override
-  String get subcategoryWorkAccessCards => 'Karty Dostępu do Pracy';
+  String get subcategoryWorkAccessCards => 'Karty dostępu do pracy';
 
   @override
-  String get subcategoryLeaseAgreements => 'Umowy Najmu';
+  String get subcategoryLeaseAgreements => 'Umowy najmu';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Karty i Tagi Dostępu';
+  String get subcategoryAccessCardsAndTags => 'Karty i tagi dostępu';
 
   @override
   String get searchCategories => 'Szukaj kategorii';
@@ -9009,4 +9009,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Dziękujemy. Sprawdzimy tę odpowiedź.';
+
+  @override
+  String get groupsNoRecordsSection => 'Brak rekordów';
 }

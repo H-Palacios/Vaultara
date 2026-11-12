@@ -190,85 +190,85 @@ class AppLocalizationsHa extends AppLocalizations {
   String get signIn => 'Shiga';
 
   @override
-  String get categoryPersonalIdentification => 'Shaidar Kai';
+  String get categoryPersonalIdentification => 'Shaidar kai';
 
   @override
-  String get categoryDrivingAndVehicles => 'Tuki da Motoci';
+  String get categoryDrivingAndVehicles => 'Tuki da motoci';
 
   @override
-  String get categoryTravelAndImmigration => 'Tafiya da Shige da Fice';
+  String get categoryTravelAndImmigration => 'Tafiya da shige da fice';
 
   @override
-  String get categoryBankingAndCards => 'Harkokin Banki da Katuna';
+  String get categoryBankingAndCards => 'Harkokin banki da katuna';
 
   @override
-  String get categoryInsuranceAndCover => 'Inshora da Kariya';
+  String get categoryInsuranceAndCover => 'Inshora da kariya';
 
   @override
-  String get categoryWorkAndProfessional => 'Aiki da Sana\'a';
+  String get categoryWorkAndProfessional => 'Aiki da sana\'a';
 
   @override
-  String get categoryPropertyAndHousing => 'Dukiya da Gidaje';
+  String get categoryPropertyAndHousing => 'Dukiya da gidaje';
 
   @override
   String get subcategoryPassports => 'Fasfo';
 
   @override
-  String get subcategoryIdCards => 'Katunan Shaida';
+  String get subcategoryIdCards => 'Katunan shaida';
 
   @override
-  String get subcategoryResidencePermits => 'Izinin Zama';
+  String get subcategoryResidencePermits => 'Izinin zama';
 
   @override
-  String get subcategoryDrivingLicences => 'Lasin Tuki';
+  String get subcategoryDrivingLicences => 'Lasin tuki';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Rajistar Motoci';
+  String get subcategoryVehicleRegistrations => 'Rajistar motoci';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Takardun Cancanta na Mota';
+  String get subcategoryRoadworthyCertificates => 'Takardun cancanta na mota';
 
   @override
   String get subcategoryVisas => 'Biza';
 
   @override
-  String get subcategoryStudyPermits => 'Izinin Karatu';
+  String get subcategoryStudyPermits => 'Izinin karatu';
 
   @override
-  String get subcategoryWorkPermits => 'Izinin Aiki';
+  String get subcategoryWorkPermits => 'Izinin aiki';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Katunan Cire Kuɗi da Bashi';
+  String get subcategoryDebitAndCreditCards => 'Katunan cire kuɗi da bashi';
 
   @override
-  String get subcategoryStoreCards => 'Katunan Shago';
+  String get subcategoryStoreCards => 'Katunan shago';
 
   @override
-  String get subcategoryVehicleInsurances => 'Inshorar Mota';
+  String get subcategoryVehicleInsurances => 'Inshorar mota';
 
   @override
-  String get subcategoryPropertyInsurances => 'Inshorar Dukiya';
+  String get subcategoryPropertyInsurances => 'Inshorar dukiya';
 
   @override
-  String get subcategoryLifeInsurances => 'Inshorar Rayuwa';
+  String get subcategoryLifeInsurances => 'Inshorar rayuwa';
 
   @override
-  String get subcategoryHealthInsurances => 'Inshorar Lafiya';
+  String get subcategoryHealthInsurances => 'Inshorar lafiya';
 
   @override
-  String get subcategoryTravelInsurances => 'Inshorar Tafiya';
+  String get subcategoryTravelInsurances => 'Inshorar tafiya';
 
   @override
-  String get subcategoryProfessionalLicences => 'Lasisin Sana\'a';
+  String get subcategoryProfessionalLicences => 'Lasisin sana\'a';
 
   @override
-  String get subcategoryWorkAccessCards => 'Katunan Shiga Aiki';
+  String get subcategoryWorkAccessCards => 'Katunan shiga aiki';
 
   @override
-  String get subcategoryLeaseAgreements => 'Yarjejeniyar Hayar Gida';
+  String get subcategoryLeaseAgreements => 'Yarjejeniyar hayar gida';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Katuna da Alamar Shiga';
+  String get subcategoryAccessCardsAndTags => 'Katuna da alamar shiga';
 
   @override
   String get searchCategories => 'Bincika rukunoni';
@@ -8831,4 +8831,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Na gode. Za mu duba wannan amsa.';
+
+  @override
+  String get groupsNoRecordsSection => 'Babu rikodi tukuna';
 }

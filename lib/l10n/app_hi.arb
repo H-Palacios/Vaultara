@@ -3408,5 +3408,6 @@
   "assistantReportHarmful": "आपत्तिजनक या हानिकारक",
   "assistantReportWrong": "गलत या भ्रामक",
   "assistantReportOther": "कुछ और",
-  "assistantReportThanks": "धन्यवाद। हम इस जवाब की समीक्षा करेंगे।"
+  "assistantReportThanks": "धन्यवाद। हम इस जवाब की समीक्षा करेंगे।",
+  "groupsNoRecordsSection": "अभी कोई रिकॉर्ड नहीं है"
 }

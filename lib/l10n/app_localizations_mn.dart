@@ -8821,4 +8821,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Баярлалаа. Бид энэ хариултыг шалгана.';
+
+  @override
+  String get groupsNoRecordsSection => 'Одоогоор бичлэг алга';
 }

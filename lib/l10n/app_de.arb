@@ -3427,5 +3427,6 @@
   "assistantReportHarmful": "Anstößig oder schädlich",
   "assistantReportWrong": "Falsch oder irreführend",
   "assistantReportOther": "Etwas anderes",
-  "assistantReportThanks": "Danke. Wir prüfen diese Antwort."
+  "assistantReportThanks": "Danke. Wir prüfen diese Antwort.",
+  "groupsNoRecordsSection": "Noch keine Einträge"
 }

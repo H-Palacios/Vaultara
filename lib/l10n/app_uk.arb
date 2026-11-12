@@ -3413,5 +3413,6 @@
   "assistantReportHarmful": "Образлива або шкідлива",
   "assistantReportWrong": "Неправильна або оманлива",
   "assistantReportOther": "Інше",
-  "assistantReportThanks": "Дякуємо. Ми перевіримо цю відповідь."
+  "assistantReportThanks": "Дякуємо. Ми перевіримо цю відповідь.",
+  "groupsNoRecordsSection": "Записів поки немає"
 }

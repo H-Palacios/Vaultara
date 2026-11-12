@@ -8836,4 +8836,7 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Eskerrik asko. Erantzun hau berrikusiko dugu.';
+
+  @override
+  String get groupsNoRecordsSection => 'Oraindik ez dago erregistrorik';
 }

@@ -3413,5 +3413,6 @@
   "assistantReportHarmful": "అభ్యంతరకరమైనది లేదా హానికరమైనది",
   "assistantReportWrong": "తప్పు లేదా తప్పుదారి పట్టించేది",
   "assistantReportOther": "ఇంకేదైనా",
-  "assistantReportThanks": "ధన్యవాదాలు. మేము ఈ సమాధానాన్ని సమీక్షిస్తాము."
+  "assistantReportThanks": "ధన్యవాదాలు. మేము ఈ సమాధానాన్ని సమీక్షిస్తాము.",
+  "groupsNoRecordsSection": "ఇంకా రికార్డులు లేవు"
 }

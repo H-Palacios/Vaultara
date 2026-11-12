@@ -8831,4 +8831,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'നന്ദി. ഞങ്ങൾ ഈ ഉത്തരം പരിശോധിക്കും.';
+
+  @override
+  String get groupsNoRecordsSection => 'ഇതുവരെ റെക്കോർഡുകളൊന്നുമില്ല';
 }

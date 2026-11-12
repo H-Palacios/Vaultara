@@ -8890,4 +8890,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'תודה. נבדוק את התשובה הזו.';
+
+  @override
+  String get groupsNoRecordsSection => 'אין רשומות עדיין';
 }

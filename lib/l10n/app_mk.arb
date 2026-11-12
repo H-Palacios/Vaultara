@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "Навредливо или штетно",
   "assistantReportWrong": "Погрешно или заблудувачко",
   "assistantReportOther": "Нешто друго",
-  "assistantReportThanks": "Ви благодариме. Ќе го провериме овој одговор."
+  "assistantReportThanks": "Ви благодариме. Ќе го провериме овој одговор.",
+  "groupsNoRecordsSection": "Сè уште нема записи"
 }

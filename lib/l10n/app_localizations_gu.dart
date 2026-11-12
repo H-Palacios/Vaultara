@@ -8831,4 +8831,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'આભાર. અમે આ જવાબની સમીક્ષા કરીશું.';
+
+  @override
+  String get groupsNoRecordsSection => 'હજુ સુધી કોઈ રેકોર્ડ નથી';
 }

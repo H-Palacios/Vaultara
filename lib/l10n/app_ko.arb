@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "불쾌하거나 해로움",
   "assistantReportWrong": "틀리거나 오해의 소지가 있음",
   "assistantReportOther": "기타",
-  "assistantReportThanks": "감사합니다. 이 답변을 검토하겠습니다."
+  "assistantReportThanks": "감사합니다. 이 답변을 검토하겠습니다.",
+  "groupsNoRecordsSection": "아직 기록이 없습니다"
 }

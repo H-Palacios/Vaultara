@@ -3408,5 +3408,6 @@
   "assistantReportHarmful": "Ofensiva ou prexudicial",
   "assistantReportWrong": "Incorrecta ou enganosa",
   "assistantReportOther": "Outra cousa",
-  "assistantReportThanks": "Grazas. Revisaremos esta resposta."
+  "assistantReportThanks": "Grazas. Revisaremos esta resposta.",
+  "groupsNoRecordsSection": "Aínda non hai rexistros"
 }

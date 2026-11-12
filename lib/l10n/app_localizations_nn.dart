@@ -190,25 +190,25 @@ class AppLocalizationsNn extends AppLocalizations {
   String get signIn => 'Logg inn';
 
   @override
-  String get categoryPersonalIdentification => 'Personleg Identifikasjon';
+  String get categoryPersonalIdentification => 'Personleg identifikasjon';
 
   @override
-  String get categoryDrivingAndVehicles => 'Køyring og Køyretøy';
+  String get categoryDrivingAndVehicles => 'Køyring og køyretøy';
 
   @override
-  String get categoryTravelAndImmigration => 'Reise og Immigrasjon';
+  String get categoryTravelAndImmigration => 'Reise og immigrasjon';
 
   @override
-  String get categoryBankingAndCards => 'Bank og Kort';
+  String get categoryBankingAndCards => 'Bank og kort';
 
   @override
-  String get categoryInsuranceAndCover => 'Forsikring og Dekning';
+  String get categoryInsuranceAndCover => 'Forsikring og dekning';
 
   @override
-  String get categoryWorkAndProfessional => 'Arbeid og Profesjonelt';
+  String get categoryWorkAndProfessional => 'Arbeid og profesjonelt';
 
   @override
-  String get categoryPropertyAndHousing => 'Eigedom og Bustad';
+  String get categoryPropertyAndHousing => 'Eigedom og bustad';
 
   @override
   String get subcategoryPassports => 'Pass';
@@ -238,7 +238,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get subcategoryWorkPermits => 'Arbeidstillatingar';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Debet- og Kredittkort';
+  String get subcategoryDebitAndCreditCards => 'Debet- og kredittkort';
 
   @override
   String get subcategoryStoreCards => 'Butikkort';
@@ -259,7 +259,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get subcategoryTravelInsurances => 'Reiseforsikringar';
 
   @override
-  String get subcategoryProfessionalLicences => 'Profesjonelle Lisensar';
+  String get subcategoryProfessionalLicences => 'Profesjonelle lisensar';
 
   @override
   String get subcategoryWorkAccessCards => 'Arbeidstilgangskort';
@@ -268,7 +268,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get subcategoryLeaseAgreements => 'Leigeavtalar';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Tilgangskort og Brikker';
+  String get subcategoryAccessCardsAndTags => 'Tilgangskort og brikker';
 
   @override
   String get searchCategories => 'Søk i kategoriar';
@@ -8836,4 +8836,7 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Takk. Vi går gjennom dette svaret.';
+
+  @override
+  String get groupsNoRecordsSection => 'Ingen oppføringar enno';
 }

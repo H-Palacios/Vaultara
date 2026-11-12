@@ -8831,4 +8831,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Köszönjük. Ellenőrizni fogjuk ezt a választ.';
+
+  @override
+  String get groupsNoRecordsSection => 'Még nincsenek bejegyzések';
 }

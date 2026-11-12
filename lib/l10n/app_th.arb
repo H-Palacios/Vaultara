@@ -3413,5 +3413,6 @@
   "assistantReportHarmful": "ไม่เหมาะสมหรือเป็นอันตราย",
   "assistantReportWrong": "ผิดหรือทำให้เข้าใจผิด",
   "assistantReportOther": "อื่น ๆ",
-  "assistantReportThanks": "ขอบคุณ เราจะตรวจสอบคำตอบนี้"
+  "assistantReportThanks": "ขอบคุณ เราจะตรวจสอบคำตอบนี้",
+  "groupsNoRecordsSection": "ยังไม่มีรายการ"
 }

@@ -8831,4 +8831,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'سوپاس. ئەم وەڵامە پێدا دەچینەوە.';
+
+  @override
+  String get groupsNoRecordsSection => 'هێشتا هیچ تۆمارێک نییە';
 }

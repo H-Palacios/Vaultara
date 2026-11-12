@@ -9081,4 +9081,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'شكرًا لك. سنراجع هذه الإجابة.';
+
+  @override
+  String get groupsNoRecordsSection => 'لا توجد سجلات بعد';
 }

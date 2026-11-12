@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "შეურაცხმყოფელი ან საზიანო",
   "assistantReportWrong": "არასწორი ან შეცდომაში შემყვანი",
   "assistantReportOther": "სხვა რამ",
-  "assistantReportThanks": "გმადლობთ. ჩვენ გადავამოწმებთ ამ პასუხს."
+  "assistantReportThanks": "გმადლობთ. ჩვენ გადავამოწმებთ ამ პასუხს.",
+  "groupsNoRecordsSection": "ჩანაწერები ჯერ არ არის"
 }

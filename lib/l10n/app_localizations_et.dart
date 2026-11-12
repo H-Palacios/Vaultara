@@ -8836,4 +8836,7 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Aitäh. Vaatame selle vastuse üle.';
+
+  @override
+  String get groupsNoRecordsSection => 'Kirjeid pole veel';
 }

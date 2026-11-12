@@ -190,85 +190,85 @@ class AppLocalizationsGa extends AppLocalizations {
   String get signIn => 'Sínigh isteach';
 
   @override
-  String get categoryPersonalIdentification => 'Aitheantas Pearsanta';
+  String get categoryPersonalIdentification => 'Aitheantas pearsanta';
 
   @override
-  String get categoryDrivingAndVehicles => 'Tiomáint agus Feithiclí';
+  String get categoryDrivingAndVehicles => 'Tiomáint agus feithiclí';
 
   @override
-  String get categoryTravelAndImmigration => 'Taisteal agus Inimirce';
+  String get categoryTravelAndImmigration => 'Taisteal agus inimirce';
 
   @override
-  String get categoryBankingAndCards => 'Baincéireacht agus Cártaí';
+  String get categoryBankingAndCards => 'Baincéireacht agus cártaí';
 
   @override
-  String get categoryInsuranceAndCover => 'Árachas agus Clúdach';
+  String get categoryInsuranceAndCover => 'Árachas agus clúdach';
 
   @override
-  String get categoryWorkAndProfessional => 'Obair agus Gairmiúil';
+  String get categoryWorkAndProfessional => 'Obair agus gairmiúil';
 
   @override
-  String get categoryPropertyAndHousing => 'Maoin agus Tithíocht';
+  String get categoryPropertyAndHousing => 'Maoin agus tithíocht';
 
   @override
   String get subcategoryPassports => 'Pasanna';
 
   @override
-  String get subcategoryIdCards => 'Cártaí Aitheantais';
+  String get subcategoryIdCards => 'Cártaí aitheantais';
 
   @override
-  String get subcategoryResidencePermits => 'Ceadanna Cónaithe';
+  String get subcategoryResidencePermits => 'Ceadanna cónaithe';
 
   @override
-  String get subcategoryDrivingLicences => 'Ceadúnais Tiomána';
+  String get subcategoryDrivingLicences => 'Ceadúnais tiomána';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Clárúcháin Feithicle';
+  String get subcategoryVehicleRegistrations => 'Clárúcháin feithicle';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Teastais Incháilitheachta';
+  String get subcategoryRoadworthyCertificates => 'Teastais incháilitheachta';
 
   @override
   String get subcategoryVisas => 'Víosaí';
 
   @override
-  String get subcategoryStudyPermits => 'Ceadanna Staidéir';
+  String get subcategoryStudyPermits => 'Ceadanna staidéir';
 
   @override
-  String get subcategoryWorkPermits => 'Ceadanna Oibre';
+  String get subcategoryWorkPermits => 'Ceadanna oibre';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Cártaí Dochair agus Creidmheasa';
+  String get subcategoryDebitAndCreditCards => 'Cártaí dochair agus creidmheasa';
 
   @override
-  String get subcategoryStoreCards => 'Cártaí Siopa';
+  String get subcategoryStoreCards => 'Cártaí siopa';
 
   @override
-  String get subcategoryVehicleInsurances => 'Árachais Feithicle';
+  String get subcategoryVehicleInsurances => 'Árachais feithicle';
 
   @override
-  String get subcategoryPropertyInsurances => 'Árachais Maoine';
+  String get subcategoryPropertyInsurances => 'Árachais maoine';
 
   @override
-  String get subcategoryLifeInsurances => 'Árachais Saoil';
+  String get subcategoryLifeInsurances => 'Árachais saoil';
 
   @override
-  String get subcategoryHealthInsurances => 'Árachais Sláinte';
+  String get subcategoryHealthInsurances => 'Árachais sláinte';
 
   @override
-  String get subcategoryTravelInsurances => 'Árachais Taistil';
+  String get subcategoryTravelInsurances => 'Árachais taistil';
 
   @override
-  String get subcategoryProfessionalLicences => 'Ceadúnais Ghairmiúla';
+  String get subcategoryProfessionalLicences => 'Ceadúnais ghairmiúla';
 
   @override
-  String get subcategoryWorkAccessCards => 'Cártaí Rochtana Oibre';
+  String get subcategoryWorkAccessCards => 'Cártaí rochtana oibre';
 
   @override
-  String get subcategoryLeaseAgreements => 'Comhaontuithe Léasa';
+  String get subcategoryLeaseAgreements => 'Comhaontuithe léasa';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Cártaí agus Clibeanna Rochtana';
+  String get subcategoryAccessCardsAndTags => 'Cártaí agus clibeanna rochtana';
 
   @override
   String get searchCategories => 'Cuardaigh catagóirí';
@@ -9036,4 +9036,7 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Go raibh maith agat. Déanfaimid athbhreithniú ar an bhfreagra seo.';
+
+  @override
+  String get groupsNoRecordsSection => 'Níl aon taifid ann fós';
 }

@@ -190,25 +190,25 @@ class AppLocalizationsXh extends AppLocalizations {
   String get signIn => 'Ngena';
 
   @override
-  String get categoryPersonalIdentification => 'Isazisi Sobuqu';
+  String get categoryPersonalIdentification => 'Isazisi sobuqu';
 
   @override
-  String get categoryDrivingAndVehicles => 'Ukuqhuba Nezithuthi';
+  String get categoryDrivingAndVehicles => 'Ukuqhuba nezithuthi';
 
   @override
-  String get categoryTravelAndImmigration => 'Uhambo Nokufuduka';
+  String get categoryTravelAndImmigration => 'Uhambo nokufuduka';
 
   @override
-  String get categoryBankingAndCards => 'Iibhanki Namakhadi';
+  String get categoryBankingAndCards => 'Iibhanki namakhadi';
 
   @override
-  String get categoryInsuranceAndCover => 'I-inshurensi Nokhuseleko';
+  String get categoryInsuranceAndCover => 'I-inshurensi nokhuseleko';
 
   @override
-  String get categoryWorkAndProfessional => 'Umsebenzi Nobungcali';
+  String get categoryWorkAndProfessional => 'Umsebenzi nobungcali';
 
   @override
-  String get categoryPropertyAndHousing => 'Ipropati Nezindlu';
+  String get categoryPropertyAndHousing => 'Ipropati nezindlu';
 
   @override
   String get subcategoryPassports => 'Iipasipoti';
@@ -8831,4 +8831,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Enkosi. Siza kuyihlola le mpendulo.';
+
+  @override
+  String get groupsNoRecordsSection => 'Akukabikho zirekhodi';
 }

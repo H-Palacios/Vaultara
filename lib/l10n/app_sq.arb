@@ -3410,5 +3410,6 @@
   "assistantReportHarmful": "Fyese ose e dëmshme",
   "assistantReportWrong": "E gabuar ose mashtruese",
   "assistantReportOther": "Diçka tjetër",
-  "assistantReportThanks": "Faleminderit. Do ta shqyrtojmë këtë përgjigje."
+  "assistantReportThanks": "Faleminderit. Do ta shqyrtojmë këtë përgjigje.",
+  "groupsNoRecordsSection": "Ende asnjë regjistrim"
 }

@@ -3561,5 +3561,6 @@
   "assistantReportHarmful": "Solvav või kahjulik",
   "assistantReportWrong": "Vale või eksitav",
   "assistantReportOther": "Midagi muud",
-  "assistantReportThanks": "Aitäh. Vaatame selle vastuse üle."
+  "assistantReportThanks": "Aitäh. Vaatame selle vastuse üle.",
+  "groupsNoRecordsSection": "Kirjeid pole veel"
 }

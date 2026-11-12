@@ -3146,5 +3146,6 @@
   "assistantReportHarmful": "Təhqiredici və ya zərərli",
   "assistantReportWrong": "Səhv və ya çaşdırıcı",
   "assistantReportOther": "Başqa bir şey",
-  "assistantReportThanks": "Təşəkkür edirik. Bu cavabı yoxlayacağıq."
+  "assistantReportThanks": "Təşəkkür edirik. Bu cavabı yoxlayacağıq.",
+  "groupsNoRecordsSection": "Hələ sənəd yoxdur"
 }

@@ -8914,6 +8914,9 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Хвала вам. Проверићемо овај одговор.';
+
+  @override
+  String get groupsNoRecordsSection => 'Још нема записа';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -17825,6 +17828,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get assistantReportThanks => 'Хвала вам. Проверићемо овај одговор.';
+
+  @override
+  String get groupsNoRecordsSection => 'Још нема записа';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -26732,4 +26738,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get assistantReportThanks => 'Hvala vam. Proverićemo ovaj odgovor.';
+
+  @override
+  String get groupsNoRecordsSection => 'Još nema zapisa';
 }

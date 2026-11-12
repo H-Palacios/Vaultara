@@ -66,13 +66,13 @@
   "emailNotFound": "Napačen e-poštni naslov.\nZa ta e-poštni naslov ne obstaja račun Vaultara",
   "incorrectPassword": "Napačno geslo",
   "signIn": "Prijava",
-  "categoryPersonalIdentification": "Osebna Identifikacija",
-  "categoryDrivingAndVehicles": "Vožnja in Vozila",
-  "categoryTravelAndImmigration": "Potovanja in Priseljevanje",
-  "categoryBankingAndCards": "Bančništvo in Kartice",
-  "categoryInsuranceAndCover": "Zavarovanja in Kritje",
-  "categoryWorkAndProfessional": "Delo in Poklicno",
-  "categoryPropertyAndHousing": "Lastnina in Stanovanje",
+  "categoryPersonalIdentification": "Osebna identifikacija",
+  "categoryDrivingAndVehicles": "Vožnja in vozila",
+  "categoryTravelAndImmigration": "Potovanja in priseljevanje",
+  "categoryBankingAndCards": "Bančništvo in kartice",
+  "categoryInsuranceAndCover": "Zavarovanja in kritje",
+  "categoryWorkAndProfessional": "Delo in poklicno",
+  "categoryPropertyAndHousing": "Lastnina in stanovanje",
   "subcategoryPassports": "Potni listi",
   "subcategoryIdCards": "Osebne izkaznice",
   "subcategoryResidencePermits": "Dovoljenja za bivanje",
@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "Žaljivo ali škodljivo",
   "assistantReportWrong": "Napačno ali zavajajoče",
   "assistantReportOther": "Nekaj drugega",
-  "assistantReportThanks": "Hvala. Ta odgovor bomo pregledali."
+  "assistantReportThanks": "Hvala. Ta odgovor bomo pregledali.",
+  "groupsNoRecordsSection": "Zaenkrat še ni zapisov"
 }

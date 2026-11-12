@@ -3396,5 +3396,6 @@
   "assistantReportHarmful": "冒犯或有害",
   "assistantReportWrong": "错误或误导",
   "assistantReportOther": "其他",
-  "assistantReportThanks": "谢谢。我们会审核此回答。"
+  "assistantReportThanks": "谢谢。我们会审核此回答。",
+  "groupsNoRecordsSection": "暂无记录"
 }

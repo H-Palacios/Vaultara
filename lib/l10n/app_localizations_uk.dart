@@ -9004,4 +9004,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Дякуємо. Ми перевіримо цю відповідь.';
+
+  @override
+  String get groupsNoRecordsSection => 'Записів поки немає';
 }

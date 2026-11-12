@@ -3403,5 +3403,6 @@
   "assistantReportHarmful": "Προσβλητικό ή επιβλαβές",
   "assistantReportWrong": "Λάθος ή παραπλανητικό",
   "assistantReportOther": "Κάτι άλλο",
-  "assistantReportThanks": "Ευχαριστούμε. Θα ελέγξουμε αυτή την απάντηση."
+  "assistantReportThanks": "Ευχαριστούμε. Θα ελέγξουμε αυτή την απάντηση.",
+  "groupsNoRecordsSection": "Δεν υπάρχουν εγγραφές ακόμα"
 }

@@ -3434,5 +3434,6 @@
   "assistantReportHarmful": "مسيء أو ضار",
   "assistantReportWrong": "خاطئ أو مضلل",
   "assistantReportOther": "شيء آخر",
-  "assistantReportThanks": "شكرًا لك. سنراجع هذه الإجابة."
+  "assistantReportThanks": "شكرًا لك. سنراجع هذه الإجابة.",
+  "groupsNoRecordsSection": "لا توجد سجلات بعد"
 }

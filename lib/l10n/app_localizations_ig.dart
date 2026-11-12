@@ -8779,4 +8779,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Daalụ. Anyị ga-enyocha azịza a.';
+
+  @override
+  String get groupsNoRecordsSection => 'Enweghị ndekọ ka ọ dị';
 }

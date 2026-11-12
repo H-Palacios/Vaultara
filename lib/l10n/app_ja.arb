@@ -3408,5 +3408,6 @@
   "assistantReportHarmful": "不快または有害",
   "assistantReportWrong": "間違っている、または誤解を招く",
   "assistantReportOther": "その他",
-  "assistantReportThanks": "ありがとうございます。この回答を確認します。"
+  "assistantReportThanks": "ありがとうございます。この回答を確認します。",
+  "groupsNoRecordsSection": "まだ記録がありません"
 }

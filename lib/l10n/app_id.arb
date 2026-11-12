@@ -3401,5 +3401,6 @@
   "assistantReportHarmful": "Menyinggung atau berbahaya",
   "assistantReportWrong": "Salah atau menyesatkan",
   "assistantReportOther": "Hal lain",
-  "assistantReportThanks": "Terima kasih. Kami akan meninjau jawaban ini."
+  "assistantReportThanks": "Terima kasih. Kami akan meninjau jawaban ini.",
+  "groupsNoRecordsSection": "Belum ada catatan"
 }

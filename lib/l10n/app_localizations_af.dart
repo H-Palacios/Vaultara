@@ -193,22 +193,22 @@ class AppLocalizationsAf extends AppLocalizations {
   String get categoryPersonalIdentification => 'Persoonlike identifikasie';
 
   @override
-  String get categoryDrivingAndVehicles => 'Bestuur en Voertuie';
+  String get categoryDrivingAndVehicles => 'Bestuur en voertuie';
 
   @override
-  String get categoryTravelAndImmigration => 'Reis en Immigrasie';
+  String get categoryTravelAndImmigration => 'Reis en immigrasie';
 
   @override
-  String get categoryBankingAndCards => 'Bankwese en Kaarte';
+  String get categoryBankingAndCards => 'Bankwese en kaarte';
 
   @override
-  String get categoryInsuranceAndCover => 'Versekering en Dekking';
+  String get categoryInsuranceAndCover => 'Versekering en dekking';
 
   @override
-  String get categoryWorkAndProfessional => 'Werk en Professioneel';
+  String get categoryWorkAndProfessional => 'Werk en professioneel';
 
   @override
-  String get categoryPropertyAndHousing => 'Eiendom en Behuising';
+  String get categoryPropertyAndHousing => 'Eiendom en behuising';
 
   @override
   String get subcategoryPassports => 'Paspoorte';
@@ -238,7 +238,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get subcategoryWorkPermits => 'Werkpermitte';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Debiet- en Kredietkaarte';
+  String get subcategoryDebitAndCreditCards => 'Debiet- en kredietkaarte';
 
   @override
   String get subcategoryStoreCards => 'Winkelkaarte';
@@ -8836,4 +8836,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Dankie. Ons sal hierdie antwoord nagaan.';
+
+  @override
+  String get groupsNoRecordsSection => 'Nog geen rekords nie';
 }

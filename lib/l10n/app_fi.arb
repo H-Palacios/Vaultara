@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "Loukkaava tai haitallinen",
   "assistantReportWrong": "Väärä tai harhaanjohtava",
   "assistantReportOther": "Jotain muuta",
-  "assistantReportThanks": "Kiitos. Tarkistamme tämän vastauksen."
+  "assistantReportThanks": "Kiitos. Tarkistamme tämän vastauksen.",
+  "groupsNoRecordsSection": "Ei vielä tietueita"
 }

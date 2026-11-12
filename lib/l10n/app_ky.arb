@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "Кордогон же зыяндуу",
   "assistantReportWrong": "Туура эмес же адаштыруучу",
   "assistantReportOther": "Башка нерсе",
-  "assistantReportThanks": "Рахмат. Бул жоопту текшеребиз."
+  "assistantReportThanks": "Рахмат. Бул жоопту текшеребиз.",
+  "groupsNoRecordsSection": "Азырынча жазуулар жок"
 }

@@ -9010,4 +9010,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Спасибо. Мы проверим этот ответ.';
+
+  @override
+  String get groupsNoRecordsSection => 'Записей пока нет';
 }

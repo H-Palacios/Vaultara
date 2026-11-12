@@ -8903,4 +8903,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Paldies. Mēs pārskatīsim šo atbildi.';
+
+  @override
+  String get groupsNoRecordsSection => 'Vēl nav ierakstu';
 }

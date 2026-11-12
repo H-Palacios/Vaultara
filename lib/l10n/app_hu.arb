@@ -3414,5 +3414,6 @@
   "assistantReportHarmful": "Sértő vagy ártalmas",
   "assistantReportWrong": "Hibás vagy félrevezető",
   "assistantReportOther": "Valami más",
-  "assistantReportThanks": "Köszönjük. Ellenőrizni fogjuk ezt a választ."
+  "assistantReportThanks": "Köszönjük. Ellenőrizni fogjuk ezt a választ.",
+  "groupsNoRecordsSection": "Még nincsenek bejegyzések"
 }

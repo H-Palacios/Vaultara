@@ -190,85 +190,85 @@ class AppLocalizationsRo extends AppLocalizations {
   String get signIn => 'Autentificare';
 
   @override
-  String get categoryPersonalIdentification => 'Identificare Personală';
+  String get categoryPersonalIdentification => 'Identificare personală';
 
   @override
-  String get categoryDrivingAndVehicles => 'Conducere și Vehicule';
+  String get categoryDrivingAndVehicles => 'Conducere și vehicule';
 
   @override
-  String get categoryTravelAndImmigration => 'Călătorii și Imigrare';
+  String get categoryTravelAndImmigration => 'Călătorii și imigrare';
 
   @override
-  String get categoryBankingAndCards => 'Bancar și Carduri';
+  String get categoryBankingAndCards => 'Bancar și carduri';
 
   @override
-  String get categoryInsuranceAndCover => 'Asigurări și Acoperire';
+  String get categoryInsuranceAndCover => 'Asigurări și acoperire';
 
   @override
-  String get categoryWorkAndProfessional => 'Muncă și Profesional';
+  String get categoryWorkAndProfessional => 'Muncă și profesional';
 
   @override
-  String get categoryPropertyAndHousing => 'Proprietăți și Locuință';
+  String get categoryPropertyAndHousing => 'Proprietăți și locuință';
 
   @override
   String get subcategoryPassports => 'Pașapoarte';
 
   @override
-  String get subcategoryIdCards => 'Cărți de Identitate';
+  String get subcategoryIdCards => 'Cărți de identitate';
 
   @override
-  String get subcategoryResidencePermits => 'Permise de Ședere';
+  String get subcategoryResidencePermits => 'Permise de ședere';
 
   @override
-  String get subcategoryDrivingLicences => 'Permise de Conducere';
+  String get subcategoryDrivingLicences => 'Permise de conducere';
 
   @override
-  String get subcategoryVehicleRegistrations => 'Înmatriculări Vehicule';
+  String get subcategoryVehicleRegistrations => 'Înmatriculări vehicule';
 
   @override
-  String get subcategoryRoadworthyCertificates => 'Certificate de Inspecție Tehnică';
+  String get subcategoryRoadworthyCertificates => 'Certificate de inspecție tehnică';
 
   @override
   String get subcategoryVisas => 'Vize';
 
   @override
-  String get subcategoryStudyPermits => 'Permise de Studii';
+  String get subcategoryStudyPermits => 'Permise de studii';
 
   @override
-  String get subcategoryWorkPermits => 'Permise de Muncă';
+  String get subcategoryWorkPermits => 'Permise de muncă';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Carduri de Debit și Credit';
+  String get subcategoryDebitAndCreditCards => 'Carduri de debit și credit';
 
   @override
-  String get subcategoryStoreCards => 'Carduri de Magazin';
+  String get subcategoryStoreCards => 'Carduri de magazin';
 
   @override
-  String get subcategoryVehicleInsurances => 'Asigurări Auto';
+  String get subcategoryVehicleInsurances => 'Asigurări auto';
 
   @override
-  String get subcategoryPropertyInsurances => 'Asigurări de Proprietate';
+  String get subcategoryPropertyInsurances => 'Asigurări de proprietate';
 
   @override
-  String get subcategoryLifeInsurances => 'Asigurări de Viață';
+  String get subcategoryLifeInsurances => 'Asigurări de viață';
 
   @override
-  String get subcategoryHealthInsurances => 'Asigurări de Sănătate';
+  String get subcategoryHealthInsurances => 'Asigurări de sănătate';
 
   @override
-  String get subcategoryTravelInsurances => 'Asigurări de Călătorie';
+  String get subcategoryTravelInsurances => 'Asigurări de călătorie';
 
   @override
-  String get subcategoryProfessionalLicences => 'Licențe Profesionale';
+  String get subcategoryProfessionalLicences => 'Licențe profesionale';
 
   @override
-  String get subcategoryWorkAccessCards => 'Carduri de Acces la Muncă';
+  String get subcategoryWorkAccessCards => 'Carduri de acces la muncă';
 
   @override
-  String get subcategoryLeaseAgreements => 'Contracte de Închiriere';
+  String get subcategoryLeaseAgreements => 'Contracte de închiriere';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Carduri și Etichete de Acces';
+  String get subcategoryAccessCardsAndTags => 'Carduri și etichete de acces';
 
   @override
   String get searchCategories => 'Caută categorii';
@@ -8916,4 +8916,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Mulțumim. Vom verifica acest răspuns.';
+
+  @override
+  String get groupsNoRecordsSection => 'Nu există încă înregistrări';
 }

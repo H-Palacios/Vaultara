@@ -190,25 +190,25 @@ class AppLocalizationsNl extends AppLocalizations {
   String get signIn => 'Inloggen';
 
   @override
-  String get categoryPersonalIdentification => 'Persoonlijke Identificatie';
+  String get categoryPersonalIdentification => 'Persoonlijke identificatie';
 
   @override
-  String get categoryDrivingAndVehicles => 'Rijden en Voertuigen';
+  String get categoryDrivingAndVehicles => 'Rijden en voertuigen';
 
   @override
-  String get categoryTravelAndImmigration => 'Reizen en Immigratie';
+  String get categoryTravelAndImmigration => 'Reizen en immigratie';
 
   @override
-  String get categoryBankingAndCards => 'Bankieren en Kaarten';
+  String get categoryBankingAndCards => 'Bankieren en kaarten';
 
   @override
-  String get categoryInsuranceAndCover => 'Verzekeringen en Dekking';
+  String get categoryInsuranceAndCover => 'Verzekeringen en dekking';
 
   @override
-  String get categoryWorkAndProfessional => 'Werk en Professioneel';
+  String get categoryWorkAndProfessional => 'Werk en professioneel';
 
   @override
-  String get categoryPropertyAndHousing => 'Eigendom en Huisvesting';
+  String get categoryPropertyAndHousing => 'Eigendom en huisvesting';
 
   @override
   String get subcategoryPassports => 'Paspoorten';
@@ -238,7 +238,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get subcategoryWorkPermits => 'Werkvergunningen';
 
   @override
-  String get subcategoryDebitAndCreditCards => 'Debit- en Creditcards';
+  String get subcategoryDebitAndCreditCards => 'Debit- en creditcards';
 
   @override
   String get subcategoryStoreCards => 'Winkelkaarten';
@@ -259,7 +259,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get subcategoryTravelInsurances => 'Reisverzekeringen';
 
   @override
-  String get subcategoryProfessionalLicences => 'Professionele Licenties';
+  String get subcategoryProfessionalLicences => 'Professionele licenties';
 
   @override
   String get subcategoryWorkAccessCards => 'Werktoegangspassen';
@@ -268,7 +268,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get subcategoryLeaseAgreements => 'Huurovereenkomsten';
 
   @override
-  String get subcategoryAccessCardsAndTags => 'Toegangskaarten en Tags';
+  String get subcategoryAccessCardsAndTags => 'Toegangskaarten en tags';
 
   @override
   String get searchCategories => 'Categorieën zoeken';
@@ -8836,4 +8836,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Bedankt. We bekijken dit antwoord.';
+
+  @override
+  String get groupsNoRecordsSection => 'Nog geen records';
 }

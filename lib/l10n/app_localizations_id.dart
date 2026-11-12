@@ -8762,4 +8762,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get assistantReportThanks => 'Terima kasih. Kami akan meninjau jawaban ini.';
+
+  @override
+  String get groupsNoRecordsSection => 'Belum ada catatan';
 }
