@@ -12,6 +12,7 @@ import 'package:vaultara/core/view/widgets/search_empty_state.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/features/records/logic/name_validator.dart';
 import 'package:vaultara/features/records/services/icon_suggest_service.dart';
+import 'package:vaultara/features/records/view/widgets/add_tile.dart';
 import 'package:vaultara/features/records/view/recently_deleted_screen.dart';
 import 'package:vaultara/features/records/view/widgets/name_entry_sheet.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -361,7 +362,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                           onOpen: () => _openCategory(category),
                         ),
                       if (!result.hasQuery)
-                        _AddCategoryTile(
+                        AddTile(
                           label: loc.addCategoryTitle,
                           onTap: _openAddCategorySheet,
                         ),
@@ -408,52 +409,6 @@ class _CategoryRows extends StatelessWidget {
           ),
         );
       },
-    );
-  }
-}
-
-class _AddCategoryTile extends StatelessWidget {
-  final String label;
-  final VoidCallback onTap;
-
-  const _AddCategoryTile({required this.label, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-
-    return Material(
-      color: Colors.transparent,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-        side: BorderSide(color: scheme.primary.withValues(alpha: 0.45), width: 1.5),
-      ),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(16),
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.add_rounded, color: scheme.primary, size: 28),
-              const SizedBox(height: 6),
-              Text(
-                label,
-                textAlign: TextAlign.center,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  fontWeight: FontWeight.w700,
-                  fontSize: 14,
-                  color: scheme.primary,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }

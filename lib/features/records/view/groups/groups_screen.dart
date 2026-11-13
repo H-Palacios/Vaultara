@@ -14,6 +14,7 @@ import 'package:vaultara/core/data/item_lifecycle_manager.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/confirm_soft_delete_dialog.dart';
 import 'package:vaultara/features/billing/view/plans_screen.dart';
+import 'package:vaultara/features/records/view/widgets/add_tile.dart';
 import 'package:vaultara/features/records/view/widgets/name_entry_sheet.dart';
 
 import '../../logic/category_order.dart';
@@ -333,25 +334,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
                                           onChanged: () => setState(() {}),
                                         ),
                                       ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        16,
-                                        10,
-                                        16,
-                                        0,
-                                      ),
-                                      child: Align(
-                                        alignment: Alignment.centerRight,
-                                        child: FilledButton.icon(
-                                          onPressed: _openAddGroupSheet,
-                                          icon: const Icon(
-                                            Icons.add_rounded,
-                                            size: 18,
-                                          ),
-                                          label: Text(loc.addGroupTitle),
-                                        ),
-                                      ),
-                                    ),
+                                    const SizedBox(height: 10),
                                   ],
                                 ),
                               ),
@@ -364,6 +347,11 @@ class _GroupsScreenState extends State<GroupsScreen> {
                                 reason: result.emptyReason,
                                 noMatchesText: loc.groupsNoMatch(result.query),
                                 emptyText: loc.noGroupFound,
+                                action: FilledButton.icon(
+                                  onPressed: _openAddGroupSheet,
+                                  icon: const Icon(Icons.add_rounded, size: 18),
+                                  label: Text(loc.addGroupTitle),
+                                ),
                               ),
                             )
                           else
@@ -385,6 +373,17 @@ class _GroupsScreenState extends State<GroupsScreen> {
                                               bottom: 10,
                                             ),
                                             child: _groupCard(key),
+                                          ),
+                                        if (!result.hasQuery)
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                              bottom: 10,
+                                            ),
+                                            child: AddTile(
+                                              label: loc.addGroupTitle,
+                                              onTap: _openAddGroupSheet,
+                                              inRow: true,
+                                            ),
                                           ),
                                         if (unused.isNotEmpty) ...[
                                           if (used.isNotEmpty)
