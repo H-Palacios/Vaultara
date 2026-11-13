@@ -21,6 +21,7 @@ import 'package:vaultara/core/view/widgets/search_empty_state.dart';
 import 'package:vaultara/core/util/day_clock.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
+import 'package:vaultara/features/records/view/widgets/header_add_button.dart';
 import 'package:vaultara/features/records/view/record_editor_launcher.dart';
 import 'package:vaultara/core/view/widgets/confirm_soft_delete_dialog.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -482,7 +483,15 @@ class _RecordsScreenState extends State<RecordsScreen> {
               padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
               child: ScreenHeader(
                 title: groupName,
-                trailing: PopupMenuButton<_RecordsMenu>(
+                titleMaxLines: 2,
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    HeaderAddButton(
+                      label: loc.addRecord,
+                      onPressed: _openAddRecordSheet,
+                    ),
+                    PopupMenuButton<_RecordsMenu>(
                   tooltip: loc.recordMenuMore,
                   icon: Icon(Icons.more_vert_rounded, color: scheme.onSurface),
                   onSelected: (choice) {
@@ -514,6 +523,8 @@ class _RecordsScreenState extends State<RecordsScreen> {
                       value: _RecordsMenu.select,
                       child: Text(loc.recordsSelect),
                     ),
+                  ],
+                ),
                   ],
                 ),
               ),
@@ -666,15 +677,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
                                               ),
                                             ),
                                           ),
-                                          const SizedBox(width: 8),
-                                          FilledButton.icon(
-                                            onPressed: _openAddRecordSheet,
-                                            icon: const Icon(
-                                              Icons.add_rounded,
-                                              size: 16,
-                                            ),
-                                            label: Text(loc.addRecord),
-                                          ),
                                         ],
                                       ),
                                     ),
@@ -705,7 +707,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
                                         groupName: groupName,
                                         onScan: () =>
                                             _openAddRecordSheet(scan: true),
-                                        onAdd: _openAddRecordSheet,
                                       )
                                     : result.isEmpty
                                     ? SearchEmptyState(
@@ -777,13 +778,8 @@ class _SectionHeader extends StatelessWidget {
 class _EmptyGroup extends StatelessWidget {
   final String groupName;
   final VoidCallback onScan;
-  final VoidCallback onAdd;
 
-  const _EmptyGroup({
-    required this.groupName,
-    required this.onScan,
-    required this.onAdd,
-  });
+  const _EmptyGroup({required this.groupName, required this.onScan});
 
   @override
   Widget build(BuildContext context) {
@@ -820,22 +816,10 @@ class _EmptyGroup extends StatelessWidget {
             style: TextStyle(fontSize: 14, color: scheme.onSurfaceVariant),
           ),
           const SizedBox(height: 20),
-          Wrap(
-            alignment: WrapAlignment.center,
-            spacing: 12,
-            runSpacing: 8,
-            children: [
-              FilledButton.icon(
-                onPressed: onScan,
-                icon: const Icon(Icons.photo_camera_outlined, size: 18),
-                label: Text(loc.recordsScan),
-              ),
-              OutlinedButton.icon(
-                onPressed: onAdd,
-                icon: const Icon(Icons.edit_note_rounded, size: 18),
-                label: Text(loc.addRecord),
-              ),
-            ],
+          FilledButton.icon(
+            onPressed: onScan,
+            icon: const Icon(Icons.photo_camera_outlined, size: 18),
+            label: Text(loc.recordsScan),
           ),
         ],
       ),
