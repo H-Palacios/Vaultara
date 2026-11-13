@@ -154,17 +154,6 @@ class RecordCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    if (record.repeatMonths != null) ...[
-                      const SizedBox(width: 6),
-                      Tooltip(
-                        message: loc.repeatEvery(record.repeatMonths!),
-                        child: Icon(
-                          Icons.repeat_rounded,
-                          size: 16,
-                          color: scheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
                     if (record.locked) ...[
                       const SizedBox(width: 6),
                       Tooltip(
@@ -187,7 +176,10 @@ class RecordCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 4),
-                _ExpiryDateLine(date: record.expiryDate),
+                _ExpiryDateLine(
+                  date: record.expiryDate,
+                  repeatMonths: record.repeatMonths,
+                ),
                 if (_startBy(record) != null) ...[
                   const SizedBox(height: 6),
                   _StartByLine(date: _startBy(record)!),
@@ -308,14 +300,20 @@ DateTime? _startBy(TrackedItem record) {
 
 class _ExpiryDateLine extends StatelessWidget {
   final DateTime date;
+  final int? repeatMonths;
 
-  const _ExpiryDateLine({required this.date});
+  const _ExpiryDateLine({required this.date, this.repeatMonths});
 
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final muted = Theme.of(context).colorScheme.onSurfaceVariant;
-    final text = DateFormat.yMMMd(SafeLocale.date(loc.localeName)).format(date);
+    final dateText = DateFormat.yMMMd(
+      SafeLocale.date(loc.localeName),
+    ).format(date);
+    final text = repeatMonths == null
+        ? dateText
+        : '$dateText · ${loc.repeatEvery(repeatMonths!)}';
 
     return Row(
       children: [
