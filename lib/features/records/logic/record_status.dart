@@ -38,7 +38,7 @@ class RecordStatus {
   }
 
   static String labelFor(int daysLeft, AppLocalizations loc) {
-    if (daysLeft < 0) return loc.statusExpired;
+    if (daysLeft < 0) return loc.calendarDaysAgo(-daysLeft);
     if (daysLeft == 0) return loc.statusExpiresToday;
     if (daysLeft == 1) return loc.statusExpiresInOneDay;
     if (daysLeft <= ItemLifecycleManager.expiringThresholdDays) {

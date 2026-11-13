@@ -612,7 +612,6 @@ class _RecordsScreenState extends State<RecordsScreen> {
                               _SectionHeader(
                                 title: _sectionTitle(loc, section.key),
                                 count: section.value.length,
-                                warn: section.key == RecordSection.expired,
                               ),
                             );
                             for (final record in section.value) {
@@ -754,18 +753,12 @@ class _RecordsScreenState extends State<RecordsScreen> {
 class _SectionHeader extends StatelessWidget {
   final String title;
   final int count;
-  final bool warn;
 
-  const _SectionHeader({
-    required this.title,
-    required this.count,
-    required this.warn,
-  });
+  const _SectionHeader({required this.title, required this.count});
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final colour = warn ? scheme.error : scheme.onSurfaceVariant;
+    final colour = Theme.of(context).colorScheme.onSurfaceVariant;
     return Padding(
       padding: const EdgeInsets.fromLTRB(4, 10, 4, 8),
       child: Text(
