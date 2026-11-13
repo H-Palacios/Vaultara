@@ -5,6 +5,7 @@ class ScreenHeader extends StatelessWidget {
   final Widget? trailing;
   final VoidCallback? onBack;
   final bool? centerTitle;
+  final int titleMaxLines;
 
   const ScreenHeader({
     super.key,
@@ -13,6 +14,7 @@ class ScreenHeader extends StatelessWidget {
     this.trailing,
     this.onBack,
     this.centerTitle,
+    this.titleMaxLines = 1,
   });
 
   bool _resolveCenterTitle(BuildContext context) {
@@ -58,7 +60,7 @@ class ScreenHeader extends StatelessWidget {
                 Text(
                   title,
                   textAlign: centered ? TextAlign.center : TextAlign.start,
-                  maxLines: 1,
+                  maxLines: titleMaxLines,
                   overflow: TextOverflow.ellipsis,
                   style: const TextStyle(
                     fontSize: 20,

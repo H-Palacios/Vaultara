@@ -12,7 +12,7 @@ import 'package:vaultara/core/view/widgets/search_empty_state.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/features/records/logic/name_validator.dart';
 import 'package:vaultara/features/records/services/icon_suggest_service.dart';
-import 'package:vaultara/features/records/view/widgets/add_tile.dart';
+import 'package:vaultara/features/records/view/widgets/header_add_button.dart';
 import 'package:vaultara/features/records/view/recently_deleted_screen.dart';
 import 'package:vaultara/features/records/view/widgets/name_entry_sheet.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -295,6 +295,10 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     ),
                   ),
                 ),
+                HeaderAddButton(
+                  label: loc.addCategoryTitle,
+                  onPressed: _openAddCategorySheet,
+                ),
                 PopupMenuButton<_CategoriesMenu>(
                   tooltip: loc.recordMenuMore,
                   icon: Icon(Icons.more_vert_rounded, color: scheme.onSurface),
@@ -360,11 +364,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                               ? () => _deleteCustomCategory(category)
                               : null,
                           onOpen: () => _openCategory(category),
-                        ),
-                      if (!result.hasQuery)
-                        AddTile(
-                          label: loc.addCategoryTitle,
-                          onTap: _openAddCategorySheet,
                         ),
                     ],
                   ),
