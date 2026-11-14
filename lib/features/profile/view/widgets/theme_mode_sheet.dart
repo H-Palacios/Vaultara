@@ -12,7 +12,7 @@ Future<void> showThemeModeSheet(BuildContext context) {
     builder: (sheetContext) {
       final t = AppLocalizations.of(sheetContext)!;
 
-      return SafeArea(
+      return SingleChildScrollView(
         child: ValueListenableBuilder<ThemeMode>(
           valueListenable: ThemePreference.mode,
           builder: (_, current, __) {

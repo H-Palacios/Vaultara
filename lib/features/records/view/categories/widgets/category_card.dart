@@ -48,7 +48,7 @@ class CategoryCard extends StatelessWidget {
           );
         }
 
-        return Padding(
+        return SingleChildScrollView(
           padding: const EdgeInsets.only(bottom: 12),
           child: Column(
             mainAxisSize: MainAxisSize.min,

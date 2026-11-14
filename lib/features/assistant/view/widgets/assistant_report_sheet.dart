@@ -10,7 +10,9 @@ class AssistantReportSheet extends StatelessWidget {
     return AppSheet.show<String>(
       context: context,
       showDragHandle: true,
-      builder: (_) => const AssistantReportSheet(),
+      builder: (_) => const SingleChildScrollView(
+        child: AssistantReportSheet(),
+      ),
     );
   }
 

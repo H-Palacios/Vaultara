@@ -47,7 +47,7 @@ class NotificationAsk {
     final allow = await AppSheet.show<bool>(
       context: context,
       showDragHandle: true,
-      builder: (_) => const _AskSheet(),
+      builder: (_) => const SingleChildScrollView(child: _AskSheet()),
     );
     if (allow != true) {
       await prefs.setInt(_notNowKey, DateTime.now().millisecondsSinceEpoch);
