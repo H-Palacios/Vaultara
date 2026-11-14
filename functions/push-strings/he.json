@@ -14,5 +14,12 @@
   "updateReceivedBody": "התקבל עדכון מאת {person} עבור {name}. בדוק אותו במסך משפחה.",
   "securityNewSignInTitle": "התחברות חדשה לחשבון שלך",
   "securityNewSignInBody": "בוצעה התחברות לחשבון Vaultara שלך מהמכשיר {device}. אם זה לא היית אתה, בדוק את הדוא״ל שלך.",
-  "securityNewSignInBodyNoDevice": "בוצעה התחברות לחשבון Vaultara שלך ממכשיר חדש. אם זה לא היית אתה, בדוק את הדוא״ל שלך."
+  "securityNewSignInBodyNoDevice": "בוצעה התחברות לחשבון Vaultara שלך ממכשיר חדש. אם זה לא היית אתה, בדוק את הדוא״ל שלך.",
+  "householdSomeone": "מישהו ממשק הבית שלך",
+  "sharedAddedTitle": "רשומה משותפת חדשה",
+  "sharedAddedBody": "{person} הוסיף/ה את {name}.",
+  "sharedExpiryTitle": "תאריך התפוגה השתנה",
+  "sharedExpiryBody": "{person} שינה/תה את תאריך התפוגה של {name}.",
+  "sharedDeletedTitle": "רשומה משותפת נמחקה",
+  "sharedDeletedBody": "{person} מחק/ה את {name}. אפשר לשחזר אותה מ״נמחקו לאחרונה״ במשך 30 יום."
 }

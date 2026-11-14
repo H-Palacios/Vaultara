@@ -14,5 +14,12 @@
   "updateReceivedBody": "Asmuo {person} atsiuntė atnaujinimą. Įrašas: {name}. Peržiūrėkite jį ekrane Šeima.",
   "securityNewSignInTitle": "Naujas prisijungimas prie jūsų paskyros",
   "securityNewSignInBody": "Prie jūsų Vaultara paskyros prisijungta įrenginyje {device}. Jei tai buvote ne jūs, patikrinkite el. paštą.",
-  "securityNewSignInBodyNoDevice": "Prie jūsų Vaultara paskyros prisijungta naujame įrenginyje. Jei tai buvote ne jūs, patikrinkite el. paštą."
+  "securityNewSignInBodyNoDevice": "Prie jūsų Vaultara paskyros prisijungta naujame įrenginyje. Jei tai buvote ne jūs, patikrinkite el. paštą.",
+  "householdSomeone": "Kažkas iš jūsų namų ūkio",
+  "sharedAddedTitle": "Naujas bendrinamas įrašas",
+  "sharedAddedBody": "{person} pridėjo {name}.",
+  "sharedExpiryTitle": "Galiojimo data pakeista",
+  "sharedExpiryBody": "{person} pakeitė {name} galiojimo datą.",
+  "sharedDeletedTitle": "Bendrinamas įrašas ištrintas",
+  "sharedDeletedBody": "{person} ištrynė {name}. Jį galima atkurti iš Neseniai ištrintų 30 dienų."
 }

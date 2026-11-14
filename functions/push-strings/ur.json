@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} نے {name} کے لیے اپ ڈیٹ بھیجی ہے۔ اسے خاندان اسکرین پر دیکھیں۔",
   "securityNewSignInTitle": "آپ کے اکاؤنٹ میں نیا سائن ان",
   "securityNewSignInBody": "آپ کے Vaultara اکاؤنٹ میں {device} پر سائن ان کیا گیا۔ اگر یہ آپ نہیں تھے تو اپنی ای میل چیک کریں۔",
-  "securityNewSignInBodyNoDevice": "آپ کے Vaultara اکاؤنٹ میں ایک نئی ڈیوائس پر سائن ان کیا گیا۔ اگر یہ آپ نہیں تھے تو اپنی ای میل چیک کریں۔"
+  "securityNewSignInBodyNoDevice": "آپ کے Vaultara اکاؤنٹ میں ایک نئی ڈیوائس پر سائن ان کیا گیا۔ اگر یہ آپ نہیں تھے تو اپنی ای میل چیک کریں۔",
+  "householdSomeone": "آپ کے گھر کا کوئی فرد",
+  "sharedAddedTitle": "نیا مشترکہ ریکارڈ",
+  "sharedAddedBody": "{person} نے {name} شامل کیا۔",
+  "sharedExpiryTitle": "میعاد ختم ہونے کی تاریخ بدل گئی",
+  "sharedExpiryBody": "{person} نے {name} کی میعاد ختم ہونے کی تاریخ بدلی۔",
+  "sharedDeletedTitle": "مشترکہ ریکارڈ حذف ہو گیا",
+  "sharedDeletedBody": "{person} نے {name} حذف کیا۔ اسے 30 دن تک حال ہی میں حذف شدہ سے بحال کیا جا سکتا ہے۔"
 }

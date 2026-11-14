@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} envió una actualización de {name}. Revísala en la pantalla Familia.",
   "securityNewSignInTitle": "Nuevo inicio de sesión en tu cuenta",
   "securityNewSignInBody": "Se inició sesión en tu cuenta de Vaultara en {device}. Si no fuiste tú, revisa tu correo electrónico.",
-  "securityNewSignInBodyNoDevice": "Se inició sesión en tu cuenta de Vaultara en un dispositivo nuevo. Si no fuiste tú, revisa tu correo electrónico."
+  "securityNewSignInBodyNoDevice": "Se inició sesión en tu cuenta de Vaultara en un dispositivo nuevo. Si no fuiste tú, revisa tu correo electrónico.",
+  "householdSomeone": "Alguien de tu hogar",
+  "sharedAddedTitle": "Nuevo registro compartido",
+  "sharedAddedBody": "{person} añadió {name}.",
+  "sharedExpiryTitle": "Fecha de vencimiento cambiada",
+  "sharedExpiryBody": "{person} cambió la fecha de vencimiento de {name}.",
+  "sharedDeletedTitle": "Registro compartido eliminado",
+  "sharedDeletedBody": "{person} eliminó {name}. Se puede recuperar desde Eliminados recientemente durante 30 días."
 }

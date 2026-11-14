@@ -14,5 +14,12 @@
   "updateReceivedBody": "Sheol {person} nuashonrú le haghaidh {name}. Athbhreithnigh é ar scáileán an Teaghlaigh.",
   "securityNewSignInTitle": "Síniú isteach nua i do chuntas",
   "securityNewSignInBody": "Síníodh isteach i do chuntas Vaultara ar {device}. Murab tusa a bhí ann, seiceáil do ríomhphost.",
-  "securityNewSignInBodyNoDevice": "Síníodh isteach i do chuntas Vaultara ar ghléas nua. Murab tusa a bhí ann, seiceáil do ríomhphost."
+  "securityNewSignInBodyNoDevice": "Síníodh isteach i do chuntas Vaultara ar ghléas nua. Murab tusa a bhí ann, seiceáil do ríomhphost.",
+  "householdSomeone": "Duine i do theaghlach",
+  "sharedAddedTitle": "Taifead comhroinnte nua",
+  "sharedAddedBody": "Chuir {person} {name} leis.",
+  "sharedExpiryTitle": "Athraíodh an dáta éaga",
+  "sharedExpiryBody": "D’athraigh {person} dáta éaga {name}.",
+  "sharedDeletedTitle": "Scriosadh taifead comhroinnte",
+  "sharedDeletedBody": "Scrios {person} {name}. Is féidir é a athchóiriú ó Scriosta le déanaí go ceann 30 lá."
 }

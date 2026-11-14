@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} испрати ажурирање за {name}. Прегледајте го на екранот Семејство.",
   "securityNewSignInTitle": "Нова најава на вашата сметка",
   "securityNewSignInBody": "Беше извршена најава на вашата сметка на Vaultara на {device}. Ако ова не бевте вие, проверете ја вашата е-пошта.",
-  "securityNewSignInBodyNoDevice": "Беше извршена најава на вашата сметка на Vaultara на нов уред. Ако ова не бевте вие, проверете ја вашата е-пошта."
+  "securityNewSignInBodyNoDevice": "Беше извршена најава на вашата сметка на Vaultara на нов уред. Ако ова не бевте вие, проверете ја вашата е-пошта.",
+  "householdSomeone": "Некој од вашето домаќинство",
+  "sharedAddedTitle": "Нов заеднички запис",
+  "sharedAddedBody": "{person}: додаден запис {name}.",
+  "sharedExpiryTitle": "Датумот на истекување е променет",
+  "sharedExpiryBody": "{person}: променет датум на истекување за {name}.",
+  "sharedDeletedTitle": "Заеднички запис е избришан",
+  "sharedDeletedBody": "{person}: избришан запис {name}. Може да се врати од Неодамна избришани во рок од 30 дена."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "أرسل {person} تحديثًا لـ {name}. راجعه في شاشة العائلة.",
   "securityNewSignInTitle": "تسجيل دخول جديد إلى حسابك",
   "securityNewSignInBody": "تم تسجيل الدخول إلى حسابك في Vaultara على {device}. إذا لم تكن أنت، فتحقق من بريدك الإلكتروني.",
-  "securityNewSignInBodyNoDevice": "تم تسجيل الدخول إلى حسابك في Vaultara على جهاز جديد. إذا لم تكن أنت، فتحقق من بريدك الإلكتروني."
+  "securityNewSignInBodyNoDevice": "تم تسجيل الدخول إلى حسابك في Vaultara على جهاز جديد. إذا لم تكن أنت، فتحقق من بريدك الإلكتروني.",
+  "householdSomeone": "أحد أفراد أسرتك",
+  "sharedAddedTitle": "سجل مشترك جديد",
+  "sharedAddedBody": "أضاف {person} {name}.",
+  "sharedExpiryTitle": "تغيّر تاريخ الانتهاء",
+  "sharedExpiryBody": "غيّر {person} تاريخ انتهاء {name}.",
+  "sharedDeletedTitle": "حُذف سجل مشترك",
+  "sharedDeletedBody": "حذف {person} {name}. يمكن استعادته من المحذوفة مؤخرًا خلال 30 يومًا."
 }

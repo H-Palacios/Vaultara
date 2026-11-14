@@ -14,5 +14,12 @@
   "updateReceivedBody": "Osoba {person} poslala aktualizaci položky {name}. Zkontrolujte ji na obrazovce Rodina.",
   "securityNewSignInTitle": "Nové přihlášení k vašemu účtu",
   "securityNewSignInBody": "K vašemu účtu Vaultara se přihlásilo zařízení {device}. Pokud jste to nebyli vy, zkontrolujte e-mail.",
-  "securityNewSignInBodyNoDevice": "K vašemu účtu Vaultara se přihlásilo nové zařízení. Pokud jste to nebyli vy, zkontrolujte e-mail."
+  "securityNewSignInBodyNoDevice": "K vašemu účtu Vaultara se přihlásilo nové zařízení. Pokud jste to nebyli vy, zkontrolujte e-mail.",
+  "householdSomeone": "Někdo z vaší domácnosti",
+  "sharedAddedTitle": "Nový sdílený záznam",
+  "sharedAddedBody": "{person}: přidán záznam {name}.",
+  "sharedExpiryTitle": "Datum platnosti změněno",
+  "sharedExpiryBody": "{person}: změněno datum platnosti záznamu {name}.",
+  "sharedDeletedTitle": "Sdílený záznam smazán",
+  "sharedDeletedBody": "{person}: smazán záznam {name}. Lze ho obnovit z Nedávno smazaných do 30 dnů."
 }

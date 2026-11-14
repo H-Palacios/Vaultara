@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} lähetti päivityksen kohteelle {name}. Tarkista se Perhe-näytössä.",
   "securityNewSignInTitle": "Uusi kirjautuminen tilillesi",
   "securityNewSignInBody": "Vaultara-tilillesi kirjauduttiin laitteella {device}. Jos tämä et ollut sinä, tarkista sähköpostisi.",
-  "securityNewSignInBodyNoDevice": "Vaultara-tilillesi kirjauduttiin uudella laitteella. Jos tämä et ollut sinä, tarkista sähköpostisi."
+  "securityNewSignInBodyNoDevice": "Vaultara-tilillesi kirjauduttiin uudella laitteella. Jos tämä et ollut sinä, tarkista sähköpostisi.",
+  "householdSomeone": "Joku kotitaloudestasi",
+  "sharedAddedTitle": "Uusi jaettu tietue",
+  "sharedAddedBody": "{person} lisäsi tietueen {name}.",
+  "sharedExpiryTitle": "Vanhenemispäivä muuttui",
+  "sharedExpiryBody": "{person} muutti tietueen {name} vanhenemispäivää.",
+  "sharedDeletedTitle": "Jaettu tietue poistettu",
+  "sharedDeletedBody": "{person} poisti tietueen {name}. Sen voi palauttaa 30 päivän ajan kohdasta Äskettäin poistetut."
 }

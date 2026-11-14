@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} het 'n opdatering vir {name} gestuur. Gaan dit na op die Gesin-skerm.",
   "securityNewSignInTitle": "Nuwe aanmelding by jou rekening",
   "securityNewSignInBody": "Daar is by jou Vaultara-rekening aangemeld op {device}. As dit nie jy was nie, gaan jou e-pos na.",
-  "securityNewSignInBodyNoDevice": "Daar is by jou Vaultara-rekening aangemeld op 'n nuwe toestel. As dit nie jy was nie, gaan jou e-pos na."
+  "securityNewSignInBodyNoDevice": "Daar is by jou Vaultara-rekening aangemeld op 'n nuwe toestel. As dit nie jy was nie, gaan jou e-pos na.",
+  "householdSomeone": "Iemand in jou huishouding",
+  "sharedAddedTitle": "Nuwe gedeelde rekord",
+  "sharedAddedBody": "{person} het {name} bygevoeg.",
+  "sharedExpiryTitle": "Vervaldatum verander",
+  "sharedExpiryBody": "{person} het die vervaldatum van {name} verander.",
+  "sharedDeletedTitle": "Gedeelde rekord uitgevee",
+  "sharedDeletedBody": "{person} het {name} uitgevee. Dit kan vir 30 dae uit Onlangs uitgevee teruggesit word."
 }

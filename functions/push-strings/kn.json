@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} ಅವರು {name} ಗಾಗಿ ಅಪ್‌ಡೇಟ್ ಕಳುಹಿಸಿದ್ದಾರೆ. ಕುಟುಂಬ ಪರದೆಯಲ್ಲಿ ಪರಿಶೀಲಿಸಿ.",
   "securityNewSignInTitle": "ನಿಮ್ಮ ಖಾತೆಗೆ ಹೊಸ ಸೈನ್-ಇನ್",
   "securityNewSignInBody": "{device} ನಲ್ಲಿ ನಿಮ್ಮ Vaultara ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ. ಇದು ನೀವು ಅಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ.",
-  "securityNewSignInBodyNoDevice": "ಹೊಸ ಸಾಧನದಲ್ಲಿ ನಿಮ್ಮ Vaultara ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ. ಇದು ನೀವು ಅಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ."
+  "securityNewSignInBodyNoDevice": "ಹೊಸ ಸಾಧನದಲ್ಲಿ ನಿಮ್ಮ Vaultara ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ. ಇದು ನೀವು ಅಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಇಮೇಲ್ ಪರಿಶೀಲಿಸಿ.",
+  "householdSomeone": "ನಿಮ್ಮ ಮನೆಯ ಯಾರೋ",
+  "sharedAddedTitle": "ಹೊಸ ಹಂಚಿದ ದಾಖಲೆ",
+  "sharedAddedBody": "{person} {name} ಸೇರಿಸಿದ್ದಾರೆ.",
+  "sharedExpiryTitle": "ಮುಕ್ತಾಯ ದಿನಾಂಕ ಬದಲಾಗಿದೆ",
+  "sharedExpiryBody": "{person} {name} ನ ಮುಕ್ತಾಯ ದಿನಾಂಕ ಬದಲಿಸಿದ್ದಾರೆ.",
+  "sharedDeletedTitle": "ಹಂಚಿದ ದಾಖಲೆ ಅಳಿಸಲಾಗಿದೆ",
+  "sharedDeletedBody": "{person} {name} ಅಳಿಸಿದ್ದಾರೆ. 30 ದಿನಗಳವರೆಗೆ ಇತ್ತೀಚೆಗೆ ಅಳಿಸಿದವುಗಳಿಂದ ಮರುಸ್ಥಾಪಿಸಬಹುದು."
 }

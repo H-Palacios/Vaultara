@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} {name} үшін жаңарту жіберді. Оны Отбасы экранында қарап шығыңыз.",
   "securityNewSignInTitle": "Тіркелгіңізге жаңа кіру",
   "securityNewSignInBody": "Vaultara тіркелгіңізге {device} құрылғысынан кірді. Егер бұл сіз болмасаңыз, электрондық поштаңызды тексеріңіз.",
-  "securityNewSignInBodyNoDevice": "Vaultara тіркелгіңізге жаңа құрылғыдан кірді. Егер бұл сіз болмасаңыз, электрондық поштаңызды тексеріңіз."
+  "securityNewSignInBodyNoDevice": "Vaultara тіркелгіңізге жаңа құрылғыдан кірді. Егер бұл сіз болмасаңыз, электрондық поштаңызды тексеріңіз.",
+  "householdSomeone": "Отбасыңыздағы біреу",
+  "sharedAddedTitle": "Жаңа ортақ жазба",
+  "sharedAddedBody": "{person} {name} қосты.",
+  "sharedExpiryTitle": "Мерзім өзгерді",
+  "sharedExpiryBody": "{person} {name} мерзімін өзгертті.",
+  "sharedDeletedTitle": "Ортақ жазба жойылды",
+  "sharedDeletedBody": "{person} {name} жойды. Оны 30 күн ішінде Жақында жойылғандардан қалпына келтіруге болады."
 }

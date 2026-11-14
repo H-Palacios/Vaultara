@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} ለ{name} ዝማኔ ልከዋል። በቤተሰብ ማያ ገጽ ላይ ይገምግሙት።",
   "securityNewSignInTitle": "ወደ መለያዎ አዲስ መግቢያ",
   "securityNewSignInBody": "በ{device} ላይ ወደ Vaultara መለያዎ ተገብቷል። ይህ እርስዎ ካልሆኑ ኢሜይልዎን ይመልከቱ።",
-  "securityNewSignInBodyNoDevice": "በአዲስ መሣሪያ ላይ ወደ Vaultara መለያዎ ተገብቷል። ይህ እርስዎ ካልሆኑ ኢሜይልዎን ይመልከቱ።"
+  "securityNewSignInBodyNoDevice": "በአዲስ መሣሪያ ላይ ወደ Vaultara መለያዎ ተገብቷል። ይህ እርስዎ ካልሆኑ ኢሜይልዎን ይመልከቱ።",
+  "householdSomeone": "በቤተሰብዎ ውስጥ ያለ ሰው",
+  "sharedAddedTitle": "አዲስ የተጋራ መዝገብ",
+  "sharedAddedBody": "{person} {name}ን አክሏል።",
+  "sharedExpiryTitle": "የማብቂያ ቀን ተቀይሯል",
+  "sharedExpiryBody": "{person} የ{name}ን የማብቂያ ቀን ቀይሯል።",
+  "sharedDeletedTitle": "የተጋራ መዝገብ ተሰርዟል",
+  "sharedDeletedBody": "{person} {name}ን ሰርዟል። ለ30 ቀናት ከቅርብ ጊዜ የተሰረዙ ውስጥ መመለስ ይቻላል።"
 }

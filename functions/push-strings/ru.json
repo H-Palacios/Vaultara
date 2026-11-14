@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} отправил(а) обновление для «{name}». Посмотрите его на экране Семья.",
   "securityNewSignInTitle": "Новый вход в ваш аккаунт",
   "securityNewSignInBody": "В ваш аккаунт Vaultara выполнен вход на устройстве {device}. Если это были не вы, проверьте почту.",
-  "securityNewSignInBodyNoDevice": "В ваш аккаунт Vaultara выполнен вход на новом устройстве. Если это были не вы, проверьте почту."
+  "securityNewSignInBodyNoDevice": "В ваш аккаунт Vaultara выполнен вход на новом устройстве. Если это были не вы, проверьте почту.",
+  "householdSomeone": "Кто-то из вашей семьи",
+  "sharedAddedTitle": "Новая общая запись",
+  "sharedAddedBody": "{person}: добавлена запись {name}.",
+  "sharedExpiryTitle": "Срок действия изменён",
+  "sharedExpiryBody": "{person}: изменён срок действия записи {name}.",
+  "sharedDeletedTitle": "Общая запись удалена",
+  "sharedDeletedBody": "{person}: удалена запись {name}. Её можно восстановить из Недавно удалённых в течение 30 дней."
 }

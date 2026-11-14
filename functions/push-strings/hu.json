@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} frissítést küldött ehhez: {name}. Tekintse át a Család képernyőn.",
   "securityNewSignInTitle": "Új bejelentkezés a fiókjába",
   "securityNewSignInBody": "Bejelentkeztek a Vaultara-fiókjába ezen az eszközön: {device}. Ha nem Ön volt, nézze meg az emailjeit.",
-  "securityNewSignInBodyNoDevice": "Bejelentkeztek a Vaultara-fiókjába egy új eszközön. Ha nem Ön volt, nézze meg az emailjeit."
+  "securityNewSignInBodyNoDevice": "Bejelentkeztek a Vaultara-fiókjába egy új eszközön. Ha nem Ön volt, nézze meg az emailjeit.",
+  "householdSomeone": "Valaki a háztartásodból",
+  "sharedAddedTitle": "Új megosztott bejegyzés",
+  "sharedAddedBody": "{person} hozzáadta: {name}.",
+  "sharedExpiryTitle": "Megváltozott a lejárati dátum",
+  "sharedExpiryBody": "{person} módosította ennek a lejárati dátumát: {name}.",
+  "sharedDeletedTitle": "Megosztott bejegyzés törölve",
+  "sharedDeletedBody": "{person} törölte: {name}. 30 napig visszaállítható a Nemrég törölt elemek közül."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "Від {person} надійшло оновлення для {name}. Перегляньте його на екрані Сім'я.",
   "securityNewSignInTitle": "Новий вхід у ваш обліковий запис",
   "securityNewSignInBody": "У ваш обліковий запис Vaultara виконано вхід на пристрої {device}. Якщо це були не ви, перевірте електронну пошту.",
-  "securityNewSignInBodyNoDevice": "У ваш обліковий запис Vaultara виконано вхід на новому пристрої. Якщо це були не ви, перевірте електронну пошту."
+  "securityNewSignInBodyNoDevice": "У ваш обліковий запис Vaultara виконано вхід на новому пристрої. Якщо це були не ви, перевірте електронну пошту.",
+  "householdSomeone": "Хтось із вашої родини",
+  "sharedAddedTitle": "Новий спільний запис",
+  "sharedAddedBody": "{person}: додано запис {name}.",
+  "sharedExpiryTitle": "Дату завершення змінено",
+  "sharedExpiryBody": "{person}: змінено дату завершення запису {name}.",
+  "sharedDeletedTitle": "Спільний запис видалено",
+  "sharedDeletedBody": "{person}: видалено запис {name}. Його можна відновити з Нещодавно видалених протягом 30 днів."
 }

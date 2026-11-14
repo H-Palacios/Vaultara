@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} அவர்கள் {name} க்கான புதுப்பிப்பை அனுப்பியுள்ளார். குடும்பம் திரையில் சரிபார்க்கவும்.",
   "securityNewSignInTitle": "உங்கள் கணக்கில் புதிய உள்நுழைவு",
   "securityNewSignInBody": "{device} இல் உங்கள் Vaultara கணக்கில் உள்நுழையப்பட்டது. இது நீங்கள் இல்லை என்றால், உங்கள் மின்னஞ்சலைப் பாருங்கள்.",
-  "securityNewSignInBodyNoDevice": "புதிய சாதனத்தில் உங்கள் Vaultara கணக்கில் உள்நுழையப்பட்டது. இது நீங்கள் இல்லை என்றால், உங்கள் மின்னஞ்சலைப் பாருங்கள்."
+  "securityNewSignInBodyNoDevice": "புதிய சாதனத்தில் உங்கள் Vaultara கணக்கில் உள்நுழையப்பட்டது. இது நீங்கள் இல்லை என்றால், உங்கள் மின்னஞ்சலைப் பாருங்கள்.",
+  "householdSomeone": "உங்கள் குடும்பத்தில் ஒருவர்",
+  "sharedAddedTitle": "புதிய பகிர்ந்த பதிவு",
+  "sharedAddedBody": "{person} {name} ஐச் சேர்த்தார்.",
+  "sharedExpiryTitle": "காலாவதி தேதி மாறியது",
+  "sharedExpiryBody": "{person} {name} இன் காலாவதி தேதியை மாற்றினார்.",
+  "sharedDeletedTitle": "பகிர்ந்த பதிவு நீக்கப்பட்டது",
+  "sharedDeletedBody": "{person} {name} ஐ நீக்கினார். 30 நாட்கள் வரை சமீபத்தில் நீக்கியவை இலிருந்து மீட்டெடுக்கலாம்."
 }

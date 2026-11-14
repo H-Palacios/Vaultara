@@ -228,7 +228,7 @@ async function moveRecordTo(hid, doc, target) {
     fromPrefix: `households/${hid}/records/${doc.id}/`,
     toPrefix: `users/${target}/records/${doc.id}/`,
     extra: { overLimit: false, movedFromHousehold: true },
-    drop: ["createdBy"],
+    drop: ["createdBy", "createdAt", "updatedBy", "updatedAt"],
   });
 }
 
@@ -680,7 +680,11 @@ exports.shareRecord = onCall(CALLABLE, async (request) => {
     toRef,
     fromPrefix: `users/${uid}/records/${recordId}/`,
     toPrefix: `households/${hid}/records/${recordId}/`,
-    extra: { createdBy: uid, overLimit: false },
+    extra: {
+      createdBy: uid,
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      overLimit: false,
+    },
   });
 
   return { householdId: hid, recordId };
@@ -712,4 +716,5 @@ exports.unshareRecord = onCall(CALLABLE, async (request) => {
 });
 
 exports.cleanupForDeletedUser = cleanupForDeletedUser;
+exports.displayNameFor = displayNameFor;
 exports.dissolveHousehold = dissolveHousehold;

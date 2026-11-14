@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} က {name} အတွက် အပ်ဒိတ် ပို့ထားသည်။ မိသားစု စာမျက်နှာတွင် စစ်ဆေးပါ။",
   "securityNewSignInTitle": "သင့်အကောင့်သို့ လက်မှတ်ထိုးဝင်မှုအသစ်",
   "securityNewSignInBody": "{device} တွင် သင့် Vaultara အကောင့်သို့ လက်မှတ်ထိုးဝင်ခဲ့သည်။ ဤအရာသည် သင် မဟုတ်ပါက သင့်အီးမေးလ်ကို စစ်ဆေးပါ။",
-  "securityNewSignInBodyNoDevice": "စက်ပစ္စည်းအသစ်တစ်ခုတွင် သင့် Vaultara အကောင့်သို့ လက်မှတ်ထိုးဝင်ခဲ့သည်။ ဤအရာသည် သင် မဟုတ်ပါက သင့်အီးမေးလ်ကို စစ်ဆေးပါ။"
+  "securityNewSignInBodyNoDevice": "စက်ပစ္စည်းအသစ်တစ်ခုတွင် သင့် Vaultara အကောင့်သို့ လက်မှတ်ထိုးဝင်ခဲ့သည်။ ဤအရာသည် သင် မဟုတ်ပါက သင့်အီးမေးလ်ကို စစ်ဆေးပါ။",
+  "householdSomeone": "သင့်အိမ်ထောင်စုမှ တစ်ဦးဦး",
+  "sharedAddedTitle": "မျှဝေထားသော မှတ်တမ်းအသစ်",
+  "sharedAddedBody": "{person} က {name} ကို ထည့်ခဲ့သည်။",
+  "sharedExpiryTitle": "သက်တမ်းကုန်ရက် ပြောင်းသွားသည်",
+  "sharedExpiryBody": "{person} က {name} ၏ သက်တမ်းကုန်ရက်ကို ပြောင်းခဲ့သည်။",
+  "sharedDeletedTitle": "မျှဝေထားသော မှတ်တမ်း ဖျက်လိုက်သည်",
+  "sharedDeletedBody": "{person} က {name} ကို ဖျက်ခဲ့သည်။ ရက် 30 အတွင်း မကြာသေးမီက ဖျက်ထားသည်များမှ ပြန်ယူနိုင်သည်။"
 }

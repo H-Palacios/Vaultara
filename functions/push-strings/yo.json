@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} fi àtúnṣe ránṣẹ́ fún {name}. Yẹ̀ ẹ́ wò lórí ojú-ìwé Ẹbí.",
   "securityNewSignInTitle": "Wíwọlé tuntun sí akọọlẹ rẹ",
   "securityNewSignInBody": "Ẹnì kan wọlé sí akọọlẹ Vaultara rẹ lórí {device}. Bí kì í bá ṣe ìwọ, ṣàyẹ̀wò imeeli rẹ.",
-  "securityNewSignInBodyNoDevice": "Ẹnì kan wọlé sí akọọlẹ Vaultara rẹ lórí ẹ̀rọ tuntun. Bí kì í bá ṣe ìwọ, ṣàyẹ̀wò imeeli rẹ."
+  "securityNewSignInBodyNoDevice": "Ẹnì kan wọlé sí akọọlẹ Vaultara rẹ lórí ẹ̀rọ tuntun. Bí kì í bá ṣe ìwọ, ṣàyẹ̀wò imeeli rẹ.",
+  "householdSomeone": "Ẹnìkan nínú ilé rẹ",
+  "sharedAddedTitle": "Ìgbasilẹ̀ tuntun tí a pín",
+  "sharedAddedBody": "{person} fi {name} kún un.",
+  "sharedExpiryTitle": "Ọjọ́ ìparí yí padà",
+  "sharedExpiryBody": "{person} yí ọjọ́ ìparí {name} padà.",
+  "sharedDeletedTitle": "A ti pa ìgbasilẹ̀ tí a pín rẹ́",
+  "sharedDeletedBody": "{person} pa {name} rẹ́. A lè dá a padà láti Àwọn tí a pa rẹ́ láìpẹ́ fún ọjọ́ 30."
 }

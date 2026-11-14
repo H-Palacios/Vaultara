@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} a trimis o actualizare pentru {name}. Verifică-o pe ecranul Familie.",
   "securityNewSignInTitle": "Autentificare nouă în contul tău",
   "securityNewSignInBody": "Cineva s-a autentificat în contul tău Vaultara pe {device}. Dacă nu ai fost tu, verifică-ți emailul.",
-  "securityNewSignInBodyNoDevice": "Cineva s-a autentificat în contul tău Vaultara pe un dispozitiv nou. Dacă nu ai fost tu, verifică-ți emailul."
+  "securityNewSignInBodyNoDevice": "Cineva s-a autentificat în contul tău Vaultara pe un dispozitiv nou. Dacă nu ai fost tu, verifică-ți emailul.",
+  "householdSomeone": "Cineva din gospodăria ta",
+  "sharedAddedTitle": "Înregistrare comună nouă",
+  "sharedAddedBody": "{person} a adăugat {name}.",
+  "sharedExpiryTitle": "Data de expirare s-a schimbat",
+  "sharedExpiryBody": "{person} a schimbat data de expirare pentru {name}.",
+  "sharedDeletedTitle": "Înregistrare comună ștearsă",
+  "sharedDeletedBody": "{person} a șters {name}. Poate fi restaurată din Șterse recent timp de 30 de zile."
 }

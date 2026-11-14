@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} ji bo {name} nûvekirinek şand. Li ser ekrana Malbat kontrol bike.",
   "securityNewSignInTitle": "Têketineke nû li hesabê te",
   "securityNewSignInBody": "Li ser {device} têketin li hesabê te yê Vaultara hat kirin. Heke ev ne tu bûyî, e-nameya xwe kontrol bike.",
-  "securityNewSignInBodyNoDevice": "Li ser amûreke nû têketin li hesabê te yê Vaultara hat kirin. Heke ev ne tu bûyî, e-nameya xwe kontrol bike."
+  "securityNewSignInBodyNoDevice": "Li ser amûreke nû têketin li hesabê te yê Vaultara hat kirin. Heke ev ne tu bûyî, e-nameya xwe kontrol bike.",
+  "householdSomeone": "Kesek ji mala te",
+  "sharedAddedTitle": "Tomareke hevpar a nû",
+  "sharedAddedBody": "{person} {name} zêde kir.",
+  "sharedExpiryTitle": "Dîroka qedandinê hat guhertin",
+  "sharedExpiryBody": "{person} dîroka qedandinê ya {name} guhert.",
+  "sharedDeletedTitle": "Tomareke hevpar hat jêbirin",
+  "sharedDeletedBody": "{person} {name} jê bir. Heta 30 rojan ji Yên dawî hatine jêbirin dikare were vegerandin."
 }

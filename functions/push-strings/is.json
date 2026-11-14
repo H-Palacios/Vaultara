@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} sendi uppfærslu fyrir {name}. Yfirfarðu hana á skjánum Fjölskylda.",
   "securityNewSignInTitle": "Ný innskráning á reikninginn þinn",
   "securityNewSignInBody": "Skráð var inn á Vaultara-reikninginn þinn á {device}. Ef þetta varst ekki þú skaltu athuga tölvupóstinn þinn.",
-  "securityNewSignInBodyNoDevice": "Skráð var inn á Vaultara-reikninginn þinn á nýju tæki. Ef þetta varst ekki þú skaltu athuga tölvupóstinn þinn."
+  "securityNewSignInBodyNoDevice": "Skráð var inn á Vaultara-reikninginn þinn á nýju tæki. Ef þetta varst ekki þú skaltu athuga tölvupóstinn þinn.",
+  "householdSomeone": "Einhver á heimilinu þínu",
+  "sharedAddedTitle": "Ný sameiginleg færsla",
+  "sharedAddedBody": "{person} bætti við {name}.",
+  "sharedExpiryTitle": "Gildislokadagsetning breyttist",
+  "sharedExpiryBody": "{person} breytti gildislokadagsetningu {name}.",
+  "sharedDeletedTitle": "Sameiginlegri færslu eytt",
+  "sharedDeletedBody": "{person} eyddi {name}. Hægt er að endurheimta hana úr Nýlega eytt í 30 daga."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} har sendt en opdatering til {name}. Se den på skærmen Familie.",
   "securityNewSignInTitle": "Nyt login på din konto",
   "securityNewSignInBody": "Der blev logget ind på din Vaultara-konto på {device}. Hvis det ikke var dig, så tjek din e-mail.",
-  "securityNewSignInBodyNoDevice": "Der blev logget ind på din Vaultara-konto på en ny enhed. Hvis det ikke var dig, så tjek din e-mail."
+  "securityNewSignInBodyNoDevice": "Der blev logget ind på din Vaultara-konto på en ny enhed. Hvis det ikke var dig, så tjek din e-mail.",
+  "householdSomeone": "En i din husstand",
+  "sharedAddedTitle": "Ny delt post",
+  "sharedAddedBody": "{person} tilføjede {name}.",
+  "sharedExpiryTitle": "Udløbsdato ændret",
+  "sharedExpiryBody": "{person} ændrede udløbsdatoen for {name}.",
+  "sharedDeletedTitle": "Delt post slettet",
+  "sharedDeletedBody": "{person} slettede {name}. Den kan gendannes fra Nyligt slettet i 30 dage."
 }

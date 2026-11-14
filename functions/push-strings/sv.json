@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} skickade en uppdatering för {name}. Granska den på skärmen Familj.",
   "securityNewSignInTitle": "Ny inloggning på ditt konto",
   "securityNewSignInBody": "Någon loggade in på ditt Vaultara-konto på {device}. Om det inte var du, kolla din e-post.",
-  "securityNewSignInBodyNoDevice": "Någon loggade in på ditt Vaultara-konto på en ny enhet. Om det inte var du, kolla din e-post."
+  "securityNewSignInBodyNoDevice": "Någon loggade in på ditt Vaultara-konto på en ny enhet. Om det inte var du, kolla din e-post.",
+  "householdSomeone": "Någon i ditt hushåll",
+  "sharedAddedTitle": "Ny delad post",
+  "sharedAddedBody": "{person} lade till {name}.",
+  "sharedExpiryTitle": "Utgångsdatum ändrat",
+  "sharedExpiryBody": "{person} ändrade utgångsdatumet för {name}.",
+  "sharedDeletedTitle": "Delad post borttagen",
+  "sharedDeletedBody": "{person} tog bort {name}. Den kan återställas från Nyligen borttagna i 30 dagar."
 }
