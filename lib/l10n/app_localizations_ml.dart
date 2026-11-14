@@ -7934,13 +7934,52 @@ class AppLocalizationsMl extends AppLocalizations {
   String get changeIcon => 'ഐക്കൺ മാറ്റുക';
 
   @override
-  String get categoryLookTitle => 'ഐക്കണും നിറവും';
-
-  @override
-  String get categoryLookAppColour => 'ആപ്പിന്റെ നിറം';
-
-  @override
   String get categoryLookHint => 'പേരിൽ നിന്ന് തിരഞ്ഞെടുത്തു. മാറ്റാൻ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get iconSuggestions => 'നിർദ്ദേശിച്ചവ';
+
+  @override
+  String get iconSearchHint => 'ഐക്കൺ വിവരിക്കുക';
+
+  @override
+  String get iconSearchResults => 'മികച്ച പൊരുത്തങ്ങൾ';
+
+  @override
+  String get iconSearchEmpty => 'പൊരുത്തപ്പെടുന്ന ഐക്കൺ ഇല്ല. മറ്റൊരു വാക്ക് ശ്രമിക്കുക.';
+
+  @override
+  String get iconAllTitle => 'എല്ലാ ഐക്കണുകളും';
+
+  @override
+  String get iconThemeDocuments => 'രേഖകൾ';
+
+  @override
+  String get iconThemeVehicles => 'വാഹനങ്ങൾ';
+
+  @override
+  String get iconThemeTravel => 'യാത്ര';
+
+  @override
+  String get iconThemeHealth => 'ആരോഗ്യം';
+
+  @override
+  String get iconThemeHome => 'വീട്';
+
+  @override
+  String get iconThemeMoney => 'പണവും ഷോപ്പിംഗും';
+
+  @override
+  String get iconThemeWork => 'ജോലിയും പഠനവും';
+
+  @override
+  String get iconThemeFamily => 'കുടുംബവും ആളുകളും';
+
+  @override
+  String get iconThemeLeisure => 'കായികവും ഹോബികളും';
+
+  @override
+  String get iconThemeOther => 'മറ്റുള്ളവ';
 
   @override
   String get renameCategoryTitle => 'വിഭാഗത്തിന്റെ പേര് മാറ്റുക';

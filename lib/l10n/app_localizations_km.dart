@@ -7874,13 +7874,52 @@ class AppLocalizationsKm extends AppLocalizations {
   String get changeIcon => 'ប្ដូររូបតំណាង';
 
   @override
-  String get categoryLookTitle => 'រូបតំណាង និងពណ៌';
-
-  @override
-  String get categoryLookAppColour => 'ពណ៌កម្មវិធី';
-
-  @override
   String get categoryLookHint => 'បានជ្រើសតាមឈ្មោះ។ ចុចដើម្បីប្ដូរ។';
+
+  @override
+  String get iconSuggestions => 'បានណែនាំ';
+
+  @override
+  String get iconSearchHint => 'ពិពណ៌នារូបតំណាង';
+
+  @override
+  String get iconSearchResults => 'ត្រូវគ្នាបំផុត';
+
+  @override
+  String get iconSearchEmpty => 'គ្មានរូបតំណាងត្រូវគ្នាទេ។ សាកពាក្យផ្សេង។';
+
+  @override
+  String get iconAllTitle => 'រូបតំណាងទាំងអស់';
+
+  @override
+  String get iconThemeDocuments => 'ឯកសារ';
+
+  @override
+  String get iconThemeVehicles => 'យានយន្ត';
+
+  @override
+  String get iconThemeTravel => 'ការធ្វើដំណើរ';
+
+  @override
+  String get iconThemeHealth => 'សុខភាព';
+
+  @override
+  String get iconThemeHome => 'ផ្ទះ';
+
+  @override
+  String get iconThemeMoney => 'លុយ និងការទិញទំនិញ';
+
+  @override
+  String get iconThemeWork => 'ការងារ និងការសិក្សា';
+
+  @override
+  String get iconThemeFamily => 'គ្រួសារ និងមនុស្ស';
+
+  @override
+  String get iconThemeLeisure => 'កីឡា និងចំណូលចិត្ត';
+
+  @override
+  String get iconThemeOther => 'ផ្សេងៗ';
 
   @override
   String get renameCategoryTitle => 'ប្ដូរឈ្មោះប្រភេទ';

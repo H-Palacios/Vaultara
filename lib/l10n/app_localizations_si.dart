@@ -7933,13 +7933,52 @@ class AppLocalizationsSi extends AppLocalizations {
   String get changeIcon => 'නිරූපකය වෙනස් කරන්න';
 
   @override
-  String get categoryLookTitle => 'නිරූපකය සහ වර්ණය';
-
-  @override
-  String get categoryLookAppColour => 'යෙදුමේ වර්ණය';
-
-  @override
   String get categoryLookHint => 'නමින් තෝරා ගන්නා ලදී. වෙනස් කිරීමට තට්ටු කරන්න.';
+
+  @override
+  String get iconSuggestions => 'යෝජිත';
+
+  @override
+  String get iconSearchHint => 'අයිකනය විස්තර කරන්න';
+
+  @override
+  String get iconSearchResults => 'හොඳම ගැළපීම්';
+
+  @override
+  String get iconSearchEmpty => 'කිසිදු අයිකනයක් නොගැළපේ. වෙනත් වචනයක් උත්සාහ කරන්න.';
+
+  @override
+  String get iconAllTitle => 'සියලු අයිකන';
+
+  @override
+  String get iconThemeDocuments => 'ලේඛන';
+
+  @override
+  String get iconThemeVehicles => 'වාහන';
+
+  @override
+  String get iconThemeTravel => 'සංචාර';
+
+  @override
+  String get iconThemeHealth => 'සෞඛ්‍යය';
+
+  @override
+  String get iconThemeHome => 'නිවස';
+
+  @override
+  String get iconThemeMoney => 'මුදල් සහ සාප්පු යාම';
+
+  @override
+  String get iconThemeWork => 'රැකියාව සහ අධ්‍යාපනය';
+
+  @override
+  String get iconThemeFamily => 'පවුල සහ මිනිසුන්';
+
+  @override
+  String get iconThemeLeisure => 'ක්‍රීඩා සහ විනෝදාංශ';
+
+  @override
+  String get iconThemeOther => 'වෙනත්';
 
   @override
   String get renameCategoryTitle => 'කාණ්ඩය නැවත නම් කරන්න';

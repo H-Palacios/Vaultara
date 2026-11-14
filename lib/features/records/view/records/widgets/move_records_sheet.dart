@@ -65,7 +65,6 @@ class MoveRecordsSheet extends StatelessWidget {
           key: seed.key,
           label: seed.label,
           icon: seed.icon,
-          colour: null,
           groups: <String>[
             ...seed.groupKeys,
             ...GroupRepository.getForCategory(seed.key),
@@ -79,7 +78,6 @@ class MoveRecordsSheet extends StatelessWidget {
               CategoryAppearance.iconFor(custom.iconKey) ??
               custom.icon ??
               Icons.folder_rounded,
-          colour: CategoryAppearance.colourFor(custom.colourKey),
           groups: GroupRepository.getForCategory(custom.key),
         ),
     ];
@@ -110,7 +108,7 @@ class MoveRecordsSheet extends StatelessWidget {
           ))
             ExpansionTile(
               initiallyExpanded: entry.key == fromCategoryKey,
-              leading: Icon(entry.icon, color: entry.colour ?? scheme.primary),
+              leading: Icon(entry.icon, color: scheme.primary),
               title: Text(
                 entry.label,
                 style: const TextStyle(fontWeight: FontWeight.w700),
@@ -149,14 +147,12 @@ class _CategoryEntry {
   final String key;
   final String label;
   final IconData icon;
-  final Color? colour;
   final List<String> groups;
 
   const _CategoryEntry({
     required this.key,
     required this.label,
     required this.icon,
-    required this.colour,
     required this.groups,
   });
 }

@@ -1,24 +1,19 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/category_appearance.dart';
 import 'package:vaultara/features/records/services/icon_suggest_service.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-/// A category icon on a soft tint of its colour.
 class CategoryIconBadge extends StatelessWidget {
   final IconData icon;
-  final Color? colour;
   final double size;
 
-  const CategoryIconBadge({
-    super.key,
-    required this.icon,
-    this.colour,
-    this.size = 36,
-  });
+  const CategoryIconBadge({super.key, required this.icon, this.size = 36});
 
   @override
   Widget build(BuildContext context) {
-    final tone = colour ?? Theme.of(context).colorScheme.primary;
+    final tone = Theme.of(context).colorScheme.primary;
     return Container(
       width: size,
       height: size,
@@ -32,21 +27,27 @@ class CategoryIconBadge extends StatelessWidget {
   }
 }
 
-/// Lets the user change a category's icon and colour.
 class CategoryLookSheet extends StatefulWidget {
   final CategoryLook initial;
+  final String categoryName;
 
-  const CategoryLookSheet({super.key, required this.initial});
+  const CategoryLookSheet({
+    super.key,
+    required this.initial,
+    required this.categoryName,
+  });
 
   static Future<CategoryLook?> show(
     BuildContext context, {
     required CategoryLook initial,
+    required String categoryName,
   }) {
     return showModalBottomSheet<CategoryLook>(
       context: context,
       isScrollControlled: true,
       showDragHandle: true,
-      builder: (_) => CategoryLookSheet(initial: initial),
+      builder: (_) =>
+          CategoryLookSheet(initial: initial, categoryName: categoryName),
     );
   }
 
@@ -55,144 +56,327 @@ class CategoryLookSheet extends StatefulWidget {
 }
 
 class _CategoryLookSheetState extends State<CategoryLookSheet> {
+  static const int _suggestionCount = 6;
+  static const int _resultCount = 12;
+
+  final TextEditingController _search = TextEditingController();
   late String _icon = widget.initial.icon;
-  late String? _colour = widget.initial.colour;
+  late List<String> _suggestions = _localSuggestions();
+  List<String> _results = const <String>[];
+  Timer? _debounce;
+  int _searchRound = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _loadSuggestions());
+  }
+
+  @override
+  void dispose() {
+    _debounce?.cancel();
+    _search.dispose();
+    super.dispose();
+  }
+
+  String get _locale => Localizations.localeOf(context).toLanguageTag();
+
+  List<String> _localSuggestions() {
+    final guess = IconSuggestService.guess(widget.categoryName).icon;
+    final theme = CategoryAppearance.themes.firstWhere(
+      (t) => t.icons.contains(guess),
+      orElse: () => CategoryAppearance.themes.first,
+    );
+    return _merge(<String>[
+      widget.initial.icon,
+      guess,
+      ...theme.icons,
+    ], _suggestionCount);
+  }
+
+  Future<void> _loadSuggestions() async {
+    final icons = await IconSuggestService.suggestIcons(
+      widget.categoryName,
+      locale: _locale,
+    );
+    if (!mounted || icons == null) return;
+    setState(() {
+      _suggestions = _merge(<String>[
+        widget.initial.icon,
+        ...icons,
+        ..._suggestions,
+      ], _suggestionCount);
+    });
+  }
+
+  void _onSearch() {
+    final query = _search.text;
+    final round = ++_searchRound;
+    setState(() => _results = IconSuggestService.searchOffline(query));
+    _debounce?.cancel();
+    if (query.trim().length < 2) return;
+    _debounce = Timer(const Duration(milliseconds: 600), () async {
+      if (!mounted) return;
+      final icons = await IconSuggestService.search(query, locale: _locale);
+      if (!mounted || icons == null || round != _searchRound) return;
+      setState(
+        () => _results = _merge(<String>[...icons, ..._results], _resultCount),
+      );
+    });
+  }
+
+  static List<String> _merge(List<String> icons, int limit) {
+    final seen = <String>{};
+    return <String>[
+      for (final icon in icons)
+        if (CategoryAppearance.isIcon(icon) && seen.add(icon)) icon,
+    ].take(limit).toList();
+  }
+
+  String _themeLabel(AppLocalizations loc, String key) {
+    switch (key) {
+      case 'documents':
+        return loc.iconThemeDocuments;
+      case 'vehicles':
+        return loc.iconThemeVehicles;
+      case 'travel':
+        return loc.iconThemeTravel;
+      case 'health':
+        return loc.iconThemeHealth;
+      case 'home':
+        return loc.iconThemeHome;
+      case 'money':
+        return loc.iconThemeMoney;
+      case 'work':
+        return loc.iconThemeWork;
+      case 'family':
+        return loc.iconThemeFamily;
+      case 'leisure':
+        return loc.iconThemeLeisure;
+      default:
+        return loc.iconThemeOther;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    final tone = CategoryAppearance.colourFor(_colour) ?? scheme.primary;
+    final media = MediaQuery.of(context);
+    final searching = _search.text.trim().isNotEmpty;
 
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              loc.categoryLookTitle,
-              textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-            ),
-            const SizedBox(height: 12),
-            SizedBox(
-              height: 44,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  _Swatch(
-                    colour: scheme.primary,
-                    selected: _colour == null,
-                    tooltip: loc.categoryLookAppColour,
-                    onTap: () => setState(() => _colour = null),
-                  ),
-                  for (final entry in CategoryAppearance.colours.entries)
-                    _Swatch(
-                      colour: entry.value,
-                      selected: _colour == entry.key,
-                      onTap: () => setState(() => _colour = entry.key),
+    return Padding(
+      padding: EdgeInsets.only(bottom: media.viewInsets.bottom),
+      child: SafeArea(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: media.size.height * 0.85),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                child: Row(
+                  children: [
+                    CategoryIconBadge(
+                      icon:
+                          CategoryAppearance.iconFor(_icon) ??
+                          Icons.folder_rounded,
+                      size: 40,
                     ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 12),
-            Flexible(
-              child: GridView.count(
-                shrinkWrap: true,
-                crossAxisCount: 6,
-                mainAxisSpacing: 8,
-                crossAxisSpacing: 8,
-                children: [
-                  for (final entry in CategoryAppearance.icons.entries)
-                    InkWell(
-                      borderRadius: BorderRadius.circular(12),
-                      onTap: () => setState(() => _icon = entry.key),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: _icon == entry.key
-                              ? tone.withValues(alpha: 0.16)
-                              : null,
-                          border: Border.all(
-                            color: _icon == entry.key
-                                ? tone
-                                : scheme.outline.withValues(alpha: 0.25),
-                          ),
-                        ),
-                        child: Icon(
-                          entry.value,
-                          color: _icon == entry.key
-                              ? tone
-                              : scheme.onSurfaceVariant,
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Text(
+                        loc.changeIcon,
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 16),
-            Row(
-              children: [
-                TextButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: Text(loc.cancel),
-                ),
-                const Spacer(),
-                FilledButton(
-                  onPressed: () => Navigator.pop(
-                    context,
-                    CategoryLook(icon: _icon, colour: _colour),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: TextField(
+                  controller: _search,
+                  onChanged: (_) => _onSearch(),
+                  textInputAction: TextInputAction.search,
+                  decoration: InputDecoration(
+                    hintText: loc.iconSearchHint,
+                    prefixIcon: const Icon(Icons.search_rounded),
+                    suffixIcon: searching
+                        ? IconButton(
+                            tooltip: loc.clearSearch,
+                            icon: const Icon(Icons.close_rounded, size: 18),
+                            onPressed: () {
+                              _search.clear();
+                              _onSearch();
+                            },
+                          )
+                        : null,
+                    isDense: true,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(999),
+                    ),
                   ),
-                  child: Text(loc.save),
                 ),
-              ],
-            ),
-          ],
+              ),
+              const SizedBox(height: 8),
+              Flexible(
+                child: ListView(
+                  shrinkWrap: true,
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  children: searching
+                      ? <Widget>[
+                          _Heading(loc.iconSearchResults),
+                          if (_results.isEmpty)
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 16),
+                              child: Text(
+                                loc.iconSearchEmpty,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: scheme.onSurfaceVariant,
+                                ),
+                              ),
+                            )
+                          else
+                            _IconGrid(
+                              icons: _results,
+                              selected: _icon,
+                              onTap: (icon) => setState(() => _icon = icon),
+                            ),
+                        ]
+                      : <Widget>[
+                          _Heading(loc.iconSuggestions),
+                          _IconGrid(
+                            icons: _suggestions,
+                            selected: _icon,
+                            onTap: (icon) => setState(() => _icon = icon),
+                          ),
+                          _Heading(loc.iconAllTitle),
+                          for (final theme in CategoryAppearance.themes)
+                            Theme(
+                              data: Theme.of(
+                                context,
+                              ).copyWith(dividerColor: Colors.transparent),
+                              child: ExpansionTile(
+                                tilePadding: EdgeInsets.zero,
+                                childrenPadding: const EdgeInsets.only(
+                                  bottom: 8,
+                                ),
+                                title: Text(_themeLabel(loc, theme.key)),
+                                children: [
+                                  _IconGrid(
+                                    icons: theme.icons,
+                                    selected: _icon,
+                                    onTap: (icon) =>
+                                        setState(() => _icon = icon),
+                                  ),
+                                ],
+                              ),
+                            ),
+                        ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                child: Row(
+                  children: [
+                    TextButton(
+                      onPressed: () => Navigator.pop(context),
+                      child: Text(loc.cancel),
+                    ),
+                    const Spacer(),
+                    FilledButton(
+                      onPressed: () =>
+                          Navigator.pop(context, CategoryLook(icon: _icon)),
+                      child: Text(loc.save),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
 
-class _Swatch extends StatelessWidget {
-  final Color colour;
-  final bool selected;
-  final String? tooltip;
-  final VoidCallback onTap;
+class _Heading extends StatelessWidget {
+  final String text;
 
-  const _Swatch({
-    required this.colour,
+  const _Heading(this.text);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 12, bottom: 8),
+      child: Text(
+        text,
+        style: TextStyle(
+          fontSize: 13,
+          fontWeight: FontWeight.w700,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
+        ),
+      ),
+    );
+  }
+}
+
+class _IconGrid extends StatelessWidget {
+  final List<String> icons;
+  final String selected;
+  final ValueChanged<String> onTap;
+
+  const _IconGrid({
+    required this.icons,
     required this.selected,
     required this.onTap,
-    this.tooltip,
   });
 
   @override
   Widget build(BuildContext context) {
-    final dot = InkWell(
-      customBorder: const CircleBorder(),
-      onTap: onTap,
-      child: Container(
-        width: 36,
-        height: 36,
-        margin: const EdgeInsets.only(right: 8),
-        decoration: BoxDecoration(
-          color: colour,
-          shape: BoxShape.circle,
-          border: Border.all(
-            color: selected
-                ? Theme.of(context).colorScheme.onSurface
-                : Colors.transparent,
-            width: 2.5,
+    final scheme = Theme.of(context).colorScheme;
+    return GridView.count(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      crossAxisCount: 6,
+      mainAxisSpacing: 8,
+      crossAxisSpacing: 8,
+      children: [
+        for (final key in icons)
+          Semantics(
+            button: true,
+            selected: key == selected,
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => onTap(key),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: key == selected
+                      ? scheme.primary.withValues(alpha: 0.16)
+                      : null,
+                  border: Border.all(
+                    color: key == selected
+                        ? scheme.primary
+                        : scheme.outline.withValues(alpha: 0.25),
+                  ),
+                ),
+                child: Icon(
+                  CategoryAppearance.iconFor(key) ?? Icons.folder_rounded,
+                  color: key == selected
+                      ? scheme.primary
+                      : scheme.onSurfaceVariant,
+                ),
+              ),
+            ),
           ),
-        ),
-        child: selected
-            ? const Icon(Icons.check_rounded, color: Colors.white, size: 18)
-            : null,
-      ),
+      ],
     );
-    return tooltip == null ? dot : Tooltip(message: tooltip!, child: dot);
   }
 }

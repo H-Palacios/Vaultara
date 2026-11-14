@@ -7876,13 +7876,52 @@ class AppLocalizationsMs extends AppLocalizations {
   String get changeIcon => 'Tukar ikon';
 
   @override
-  String get categoryLookTitle => 'Ikon dan warna';
-
-  @override
-  String get categoryLookAppColour => 'Warna apl';
-
-  @override
   String get categoryLookHint => 'Dipilih berdasarkan nama. Ketik untuk menukar.';
+
+  @override
+  String get iconSuggestions => 'Dicadangkan';
+
+  @override
+  String get iconSearchHint => 'Terangkan ikon';
+
+  @override
+  String get iconSearchResults => 'Padanan terbaik';
+
+  @override
+  String get iconSearchEmpty => 'Tiada ikon yang sepadan. Cuba perkataan lain.';
+
+  @override
+  String get iconAllTitle => 'Semua ikon';
+
+  @override
+  String get iconThemeDocuments => 'Dokumen';
+
+  @override
+  String get iconThemeVehicles => 'Kenderaan';
+
+  @override
+  String get iconThemeTravel => 'Perjalanan';
+
+  @override
+  String get iconThemeHealth => 'Kesihatan';
+
+  @override
+  String get iconThemeHome => 'Rumah';
+
+  @override
+  String get iconThemeMoney => 'Wang dan membeli-belah';
+
+  @override
+  String get iconThemeWork => 'Kerja dan pengajian';
+
+  @override
+  String get iconThemeFamily => 'Keluarga dan orang';
+
+  @override
+  String get iconThemeLeisure => 'Sukan dan hobi';
+
+  @override
+  String get iconThemeOther => 'Lain-lain';
 
   @override
   String get renameCategoryTitle => 'Namakan semula kategori';

@@ -8006,13 +8006,52 @@ class AppLocalizationsSr extends AppLocalizations {
   String get changeIcon => 'Промени икону';
 
   @override
-  String get categoryLookTitle => 'Икона и боја';
-
-  @override
-  String get categoryLookAppColour => 'Боја апликације';
-
-  @override
   String get categoryLookHint => 'Изабрано према називу. Додирните за промену.';
+
+  @override
+  String get iconSuggestions => 'Предлози';
+
+  @override
+  String get iconSearchHint => 'Опишите икону';
+
+  @override
+  String get iconSearchResults => 'Најбоља подударања';
+
+  @override
+  String get iconSearchEmpty => 'Ниједна икона не одговара. Покушајте другу реч.';
+
+  @override
+  String get iconAllTitle => 'Све иконе';
+
+  @override
+  String get iconThemeDocuments => 'Документи';
+
+  @override
+  String get iconThemeVehicles => 'Возила';
+
+  @override
+  String get iconThemeTravel => 'Путовања';
+
+  @override
+  String get iconThemeHealth => 'Здравље';
+
+  @override
+  String get iconThemeHome => 'Дом';
+
+  @override
+  String get iconThemeMoney => 'Новац и куповина';
+
+  @override
+  String get iconThemeWork => 'Посао и студије';
+
+  @override
+  String get iconThemeFamily => 'Породица и људи';
+
+  @override
+  String get iconThemeLeisure => 'Спорт и хобији';
+
+  @override
+  String get iconThemeOther => 'Остало';
 
   @override
   String get renameCategoryTitle => 'Преименуј категорију';
@@ -16920,13 +16959,52 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get changeIcon => 'Промени икону';
 
   @override
-  String get categoryLookTitle => 'Икона и боја';
-
-  @override
-  String get categoryLookAppColour => 'Боја апликације';
-
-  @override
   String get categoryLookHint => 'Изабрано према називу. Додирните за промену.';
+
+  @override
+  String get iconSuggestions => 'Предлози';
+
+  @override
+  String get iconSearchHint => 'Опишите икону';
+
+  @override
+  String get iconSearchResults => 'Најбоља подударања';
+
+  @override
+  String get iconSearchEmpty => 'Ниједна икона не одговара. Покушајте другу реч.';
+
+  @override
+  String get iconAllTitle => 'Све иконе';
+
+  @override
+  String get iconThemeDocuments => 'Документи';
+
+  @override
+  String get iconThemeVehicles => 'Возила';
+
+  @override
+  String get iconThemeTravel => 'Путовања';
+
+  @override
+  String get iconThemeHealth => 'Здравље';
+
+  @override
+  String get iconThemeHome => 'Дом';
+
+  @override
+  String get iconThemeMoney => 'Новац и куповина';
+
+  @override
+  String get iconThemeWork => 'Посао и студије';
+
+  @override
+  String get iconThemeFamily => 'Породица и људи';
+
+  @override
+  String get iconThemeLeisure => 'Спорт и хобији';
+
+  @override
+  String get iconThemeOther => 'Остало';
 
   @override
   String get renameCategoryTitle => 'Преименуј категорију';
@@ -25830,13 +25908,52 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get changeIcon => 'Promeni ikonu';
 
   @override
-  String get categoryLookTitle => 'Ikona i boja';
-
-  @override
-  String get categoryLookAppColour => 'Boja aplikacije';
-
-  @override
   String get categoryLookHint => 'Izabrano prema nazivu. Dodirnite za promenu.';
+
+  @override
+  String get iconSuggestions => 'Predlozi';
+
+  @override
+  String get iconSearchHint => 'Opišite ikonu';
+
+  @override
+  String get iconSearchResults => 'Najbolja podudaranja';
+
+  @override
+  String get iconSearchEmpty => 'Nijedna ikona ne odgovara. Pokušajte drugu reč.';
+
+  @override
+  String get iconAllTitle => 'Sve ikone';
+
+  @override
+  String get iconThemeDocuments => 'Dokumenti';
+
+  @override
+  String get iconThemeVehicles => 'Vozila';
+
+  @override
+  String get iconThemeTravel => 'Putovanja';
+
+  @override
+  String get iconThemeHealth => 'Zdravlje';
+
+  @override
+  String get iconThemeHome => 'Dom';
+
+  @override
+  String get iconThemeMoney => 'Novac i kupovina';
+
+  @override
+  String get iconThemeWork => 'Posao i studije';
+
+  @override
+  String get iconThemeFamily => 'Porodica i ljudi';
+
+  @override
+  String get iconThemeLeisure => 'Sport i hobiji';
+
+  @override
+  String get iconThemeOther => 'Ostalo';
 
   @override
   String get renameCategoryTitle => 'Preimenuj kategoriju';

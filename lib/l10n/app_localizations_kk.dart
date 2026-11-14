@@ -7934,13 +7934,52 @@ class AppLocalizationsKk extends AppLocalizations {
   String get changeIcon => 'Белгішені өзгерту';
 
   @override
-  String get categoryLookTitle => 'Белгіше және түс';
-
-  @override
-  String get categoryLookAppColour => 'Қолданба түсі';
-
-  @override
   String get categoryLookHint => 'Атауына қарай таңдалды. Өзгерту үшін түртіңіз.';
+
+  @override
+  String get iconSuggestions => 'Ұсынылған';
+
+  @override
+  String get iconSearchHint => 'Белгішені сипаттаңыз';
+
+  @override
+  String get iconSearchResults => 'Ең жақсы сәйкестіктер';
+
+  @override
+  String get iconSearchEmpty => 'Сәйкес белгіше жоқ. Басқа сөзді көріңіз.';
+
+  @override
+  String get iconAllTitle => 'Барлық белгішелер';
+
+  @override
+  String get iconThemeDocuments => 'Құжаттар';
+
+  @override
+  String get iconThemeVehicles => 'Көліктер';
+
+  @override
+  String get iconThemeTravel => 'Саяхат';
+
+  @override
+  String get iconThemeHealth => 'Денсаулық';
+
+  @override
+  String get iconThemeHome => 'Үй';
+
+  @override
+  String get iconThemeMoney => 'Ақша және сатып алу';
+
+  @override
+  String get iconThemeWork => 'Жұмыс және оқу';
+
+  @override
+  String get iconThemeFamily => 'Отбасы және адамдар';
+
+  @override
+  String get iconThemeLeisure => 'Спорт және хобби';
+
+  @override
+  String get iconThemeOther => 'Басқа';
 
   @override
   String get renameCategoryTitle => 'Санат атауын өзгерту';

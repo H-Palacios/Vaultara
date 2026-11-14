@@ -7934,13 +7934,52 @@ class AppLocalizationsAz extends AppLocalizations {
   String get changeIcon => 'İkonu dəyiş';
 
   @override
-  String get categoryLookTitle => 'İkon və rəng';
-
-  @override
-  String get categoryLookAppColour => 'Tətbiqin rəngi';
-
-  @override
   String get categoryLookHint => 'Ada görə seçildi. Dəyişmək üçün toxunun.';
+
+  @override
+  String get iconSuggestions => 'Təklif olunan';
+
+  @override
+  String get iconSearchHint => 'İkonu təsvir edin';
+
+  @override
+  String get iconSearchResults => 'Ən uyğunlar';
+
+  @override
+  String get iconSearchEmpty => 'Uyğun ikon yoxdur. Başqa söz yoxlayın.';
+
+  @override
+  String get iconAllTitle => 'Bütün ikonlar';
+
+  @override
+  String get iconThemeDocuments => 'Sənədlər';
+
+  @override
+  String get iconThemeVehicles => 'Nəqliyyat vasitələri';
+
+  @override
+  String get iconThemeTravel => 'Səyahət';
+
+  @override
+  String get iconThemeHealth => 'Sağlamlıq';
+
+  @override
+  String get iconThemeHome => 'Ev';
+
+  @override
+  String get iconThemeMoney => 'Pul və alış-veriş';
+
+  @override
+  String get iconThemeWork => 'İş və təhsil';
+
+  @override
+  String get iconThemeFamily => 'Ailə və insanlar';
+
+  @override
+  String get iconThemeLeisure => 'İdman və hobbilər';
+
+  @override
+  String get iconThemeOther => 'Digər';
 
   @override
   String get renameCategoryTitle => 'Kateqoriyanın adını dəyiş';

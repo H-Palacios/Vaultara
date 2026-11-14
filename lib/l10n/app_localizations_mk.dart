@@ -7932,13 +7932,52 @@ class AppLocalizationsMk extends AppLocalizations {
   String get changeIcon => 'Промени икона';
 
   @override
-  String get categoryLookTitle => 'Икона и боја';
-
-  @override
-  String get categoryLookAppColour => 'Боја на апликацијата';
-
-  @override
   String get categoryLookHint => 'Избрано според името. Допрете за промена.';
+
+  @override
+  String get iconSuggestions => 'Предложени';
+
+  @override
+  String get iconSearchHint => 'Опишете ја иконата';
+
+  @override
+  String get iconSearchResults => 'Најдобри совпаѓања';
+
+  @override
+  String get iconSearchEmpty => 'Ниедна икона не одговара. Обидете се со друг збор.';
+
+  @override
+  String get iconAllTitle => 'Сите икони';
+
+  @override
+  String get iconThemeDocuments => 'Документи';
+
+  @override
+  String get iconThemeVehicles => 'Возила';
+
+  @override
+  String get iconThemeTravel => 'Патување';
+
+  @override
+  String get iconThemeHealth => 'Здравје';
+
+  @override
+  String get iconThemeHome => 'Дом';
+
+  @override
+  String get iconThemeMoney => 'Пари и купување';
+
+  @override
+  String get iconThemeWork => 'Работа и учење';
+
+  @override
+  String get iconThemeFamily => 'Семејство и луѓе';
+
+  @override
+  String get iconThemeLeisure => 'Спорт и хоби';
+
+  @override
+  String get iconThemeOther => 'Друго';
 
   @override
   String get renameCategoryTitle => 'Преименувај категорија';

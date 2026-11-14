@@ -11,8 +11,8 @@ import 'package:vaultara/features/records/view/categories/widgets/category_look_
 import 'package:vaultara/features/records/view/widgets/name_entry_sheet.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-/// Makes a custom category. The user types a name; an icon and colour are
-/// picked for it as they type, and they can tap the icon to change it.
+/// Makes a custom category. The user types a name; an icon is picked for it
+/// as they type, and they can tap the icon to change it.
 class AddCategorySheet extends StatefulWidget {
   final bool isPremium;
   final int currentCount;
@@ -36,7 +36,7 @@ class AddCategorySheet extends StatefulWidget {
 class _AddCategorySheetState extends State<AddCategorySheet> {
   CategoryLook _look = const CategoryLook(icon: CategoryAppearance.defaultIcon);
 
-  /// Set once the user picks a look themselves, so a late suggestion never
+  /// Set once the user picks an icon themselves, so a late suggestion never
   /// replaces their choice.
   bool _chosenByUser = false;
 
@@ -72,7 +72,11 @@ class _AddCategorySheetState extends State<AddCategorySheet> {
   }
 
   Future<void> _pickLook() async {
-    final picked = await CategoryLookSheet.show(context, initial: _look);
+    final picked = await CategoryLookSheet.show(
+      context,
+      initial: _look,
+      categoryName: _lastName,
+    );
     if (picked == null || !mounted) return;
     setState(() {
       _look = picked;
@@ -114,7 +118,6 @@ class _AddCategorySheetState extends State<AddCategorySheet> {
                   icon:
                       CategoryAppearance.iconFor(_look.icon) ??
                       Icons.folder_rounded,
-                  colour: CategoryAppearance.colourFor(_look.colour),
                   size: 44,
                 ),
                 const SizedBox(width: 12),
@@ -156,7 +159,6 @@ class _AddCategorySheetState extends State<AddCategorySheet> {
                 CategoryAppearance.iconFor(_look.icon) ?? Icons.folder_rounded,
             groupKeys: const <String>[],
             iconKey: _look.icon,
-            colourKey: _look.colour,
           ),
         );
       },

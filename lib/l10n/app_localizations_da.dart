@@ -7938,13 +7938,52 @@ class AppLocalizationsDa extends AppLocalizations {
   String get changeIcon => 'Skift ikon';
 
   @override
-  String get categoryLookTitle => 'Ikon og farve';
-
-  @override
-  String get categoryLookAppColour => 'Appens farve';
-
-  @override
   String get categoryLookHint => 'Valgt ud fra navnet. Tryk for at ændre.';
+
+  @override
+  String get iconSuggestions => 'Forslag';
+
+  @override
+  String get iconSearchHint => 'Beskriv ikonet';
+
+  @override
+  String get iconSearchResults => 'Bedste match';
+
+  @override
+  String get iconSearchEmpty => 'Ingen ikoner passer. Prøv et andet ord.';
+
+  @override
+  String get iconAllTitle => 'Alle ikoner';
+
+  @override
+  String get iconThemeDocuments => 'Dokumenter';
+
+  @override
+  String get iconThemeVehicles => 'Køretøjer';
+
+  @override
+  String get iconThemeTravel => 'Rejser';
+
+  @override
+  String get iconThemeHealth => 'Sundhed';
+
+  @override
+  String get iconThemeHome => 'Hjem';
+
+  @override
+  String get iconThemeMoney => 'Penge og indkøb';
+
+  @override
+  String get iconThemeWork => 'Arbejde og studier';
+
+  @override
+  String get iconThemeFamily => 'Familie og mennesker';
+
+  @override
+  String get iconThemeLeisure => 'Sport og hobbyer';
+
+  @override
+  String get iconThemeOther => 'Andet';
 
   @override
   String get renameCategoryTitle => 'Omdøb kategori';

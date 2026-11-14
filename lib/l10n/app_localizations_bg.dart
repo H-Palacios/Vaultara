@@ -7934,13 +7934,52 @@ class AppLocalizationsBg extends AppLocalizations {
   String get changeIcon => 'Смяна на иконата';
 
   @override
-  String get categoryLookTitle => 'Икона и цвят';
-
-  @override
-  String get categoryLookAppColour => 'Цвят на приложението';
-
-  @override
   String get categoryLookHint => 'Избрана според името. Докоснете, за да смените.';
+
+  @override
+  String get iconSuggestions => 'Предложени';
+
+  @override
+  String get iconSearchHint => 'Опишете иконата';
+
+  @override
+  String get iconSearchResults => 'Най-добри съвпадения';
+
+  @override
+  String get iconSearchEmpty => 'Няма подходящи икони. Опитайте друга дума.';
+
+  @override
+  String get iconAllTitle => 'Всички икони';
+
+  @override
+  String get iconThemeDocuments => 'Документи';
+
+  @override
+  String get iconThemeVehicles => 'Превозни средства';
+
+  @override
+  String get iconThemeTravel => 'Пътуване';
+
+  @override
+  String get iconThemeHealth => 'Здраве';
+
+  @override
+  String get iconThemeHome => 'Дом';
+
+  @override
+  String get iconThemeMoney => 'Пари и пазаруване';
+
+  @override
+  String get iconThemeWork => 'Работа и учене';
+
+  @override
+  String get iconThemeFamily => 'Семейство и хора';
+
+  @override
+  String get iconThemeLeisure => 'Спорт и хобита';
+
+  @override
+  String get iconThemeOther => 'Други';
 
   @override
   String get renameCategoryTitle => 'Преименуване на категория';

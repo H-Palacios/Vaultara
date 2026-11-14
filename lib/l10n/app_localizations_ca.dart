@@ -7938,13 +7938,52 @@ class AppLocalizationsCa extends AppLocalizations {
   String get changeIcon => 'Canvia la icona';
 
   @override
-  String get categoryLookTitle => 'Icona i color';
-
-  @override
-  String get categoryLookAppColour => 'Color de l\'app';
-
-  @override
   String get categoryLookHint => 'Triada segons el nom. Toca per canviar-la.';
+
+  @override
+  String get iconSuggestions => 'Suggerides';
+
+  @override
+  String get iconSearchHint => 'Descriu la icona';
+
+  @override
+  String get iconSearchResults => 'Millors coincidències';
+
+  @override
+  String get iconSearchEmpty => 'Cap icona coincideix. Prova una altra paraula.';
+
+  @override
+  String get iconAllTitle => 'Totes les icones';
+
+  @override
+  String get iconThemeDocuments => 'Documents';
+
+  @override
+  String get iconThemeVehicles => 'Vehicles';
+
+  @override
+  String get iconThemeTravel => 'Viatges';
+
+  @override
+  String get iconThemeHealth => 'Salut';
+
+  @override
+  String get iconThemeHome => 'Llar';
+
+  @override
+  String get iconThemeMoney => 'Diners i compres';
+
+  @override
+  String get iconThemeWork => 'Feina i estudis';
+
+  @override
+  String get iconThemeFamily => 'Família i persones';
+
+  @override
+  String get iconThemeLeisure => 'Esport i aficions';
+
+  @override
+  String get iconThemeOther => 'Altres';
 
   @override
   String get renameCategoryTitle => 'Canvia el nom de la categoria';

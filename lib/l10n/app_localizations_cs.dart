@@ -8072,13 +8072,52 @@ class AppLocalizationsCs extends AppLocalizations {
   String get changeIcon => 'Změnit ikonu';
 
   @override
-  String get categoryLookTitle => 'Ikona a barva';
-
-  @override
-  String get categoryLookAppColour => 'Barva aplikace';
-
-  @override
   String get categoryLookHint => 'Vybráno podle názvu. Klepnutím změníte.';
+
+  @override
+  String get iconSuggestions => 'Navrhované';
+
+  @override
+  String get iconSearchHint => 'Popište ikonu';
+
+  @override
+  String get iconSearchResults => 'Nejlepší shody';
+
+  @override
+  String get iconSearchEmpty => 'Žádná ikona neodpovídá. Zkuste jiné slovo.';
+
+  @override
+  String get iconAllTitle => 'Všechny ikony';
+
+  @override
+  String get iconThemeDocuments => 'Dokumenty';
+
+  @override
+  String get iconThemeVehicles => 'Vozidla';
+
+  @override
+  String get iconThemeTravel => 'Cestování';
+
+  @override
+  String get iconThemeHealth => 'Zdraví';
+
+  @override
+  String get iconThemeHome => 'Domov';
+
+  @override
+  String get iconThemeMoney => 'Peníze a nákupy';
+
+  @override
+  String get iconThemeWork => 'Práce a studium';
+
+  @override
+  String get iconThemeFamily => 'Rodina a lidé';
+
+  @override
+  String get iconThemeLeisure => 'Sport a koníčky';
+
+  @override
+  String get iconThemeOther => 'Ostatní';
 
   @override
   String get renameCategoryTitle => 'Přejmenovat kategorii';

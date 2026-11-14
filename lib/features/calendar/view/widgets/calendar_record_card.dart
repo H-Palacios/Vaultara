@@ -53,9 +53,6 @@ class CalendarRecordCard extends StatelessWidget {
       context,
       record.categoryKey,
     );
-    final categoryColour =
-        CategoryResolver.categoryColour(context, record.categoryKey) ??
-        scheme.primary;
     final groupLabel = CategoryResolver.groupLabel(
       context,
       record.subcategoryName,
@@ -96,10 +93,10 @@ class CalendarRecordCard extends StatelessWidget {
                     width: 36,
                     height: 36,
                     decoration: BoxDecoration(
-                      color: categoryColour.withValues(alpha: 0.14),
+                      color: scheme.primary.withValues(alpha: 0.14),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: Icon(categoryIcon, color: categoryColour, size: 20),
+                    child: Icon(categoryIcon, color: scheme.primary, size: 20),
                   ),
                   const SizedBox(width: 10),
                   Expanded(

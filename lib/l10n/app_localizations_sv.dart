@@ -7937,13 +7937,52 @@ class AppLocalizationsSv extends AppLocalizations {
   String get changeIcon => 'Byt ikon';
 
   @override
-  String get categoryLookTitle => 'Ikon och färg';
-
-  @override
-  String get categoryLookAppColour => 'Appens färg';
-
-  @override
   String get categoryLookHint => 'Vald utifrån namnet. Tryck för att ändra.';
+
+  @override
+  String get iconSuggestions => 'Förslag';
+
+  @override
+  String get iconSearchHint => 'Beskriv ikonen';
+
+  @override
+  String get iconSearchResults => 'Bästa träffar';
+
+  @override
+  String get iconSearchEmpty => 'Inga ikoner passar. Prova ett annat ord.';
+
+  @override
+  String get iconAllTitle => 'Alla ikoner';
+
+  @override
+  String get iconThemeDocuments => 'Dokument';
+
+  @override
+  String get iconThemeVehicles => 'Fordon';
+
+  @override
+  String get iconThemeTravel => 'Resor';
+
+  @override
+  String get iconThemeHealth => 'Hälsa';
+
+  @override
+  String get iconThemeHome => 'Hem';
+
+  @override
+  String get iconThemeMoney => 'Pengar och shopping';
+
+  @override
+  String get iconThemeWork => 'Arbete och studier';
+
+  @override
+  String get iconThemeFamily => 'Familj och människor';
+
+  @override
+  String get iconThemeLeisure => 'Sport och hobbyer';
+
+  @override
+  String get iconThemeOther => 'Övrigt';
 
   @override
   String get renameCategoryTitle => 'Byt namn på kategori';

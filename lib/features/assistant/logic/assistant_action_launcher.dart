@@ -340,7 +340,6 @@ class AssistantActionLauncher {
         icon: CategoryAppearance.iconFor(look.icon) ?? Icons.folder_rounded,
         groupKeys: const <String>[],
         iconKey: look.icon,
-        colourKey: look.colour,
       ),
       isPremium: shell.isPremium,
     );

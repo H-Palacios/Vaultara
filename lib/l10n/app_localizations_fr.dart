@@ -7948,13 +7948,52 @@ class AppLocalizationsFr extends AppLocalizations {
   String get changeIcon => 'Changer l\'icône';
 
   @override
-  String get categoryLookTitle => 'Icône et couleur';
-
-  @override
-  String get categoryLookAppColour => 'Couleur de l\'app';
-
-  @override
   String get categoryLookHint => 'Choisie d\'après le nom. Touchez pour la changer.';
+
+  @override
+  String get iconSuggestions => 'Suggestions';
+
+  @override
+  String get iconSearchHint => 'Décrivez l’icône';
+
+  @override
+  String get iconSearchResults => 'Meilleures correspondances';
+
+  @override
+  String get iconSearchEmpty => 'Aucune icône ne correspond. Essayez un autre mot.';
+
+  @override
+  String get iconAllTitle => 'Toutes les icônes';
+
+  @override
+  String get iconThemeDocuments => 'Documents';
+
+  @override
+  String get iconThemeVehicles => 'Véhicules';
+
+  @override
+  String get iconThemeTravel => 'Voyages';
+
+  @override
+  String get iconThemeHealth => 'Santé';
+
+  @override
+  String get iconThemeHome => 'Maison';
+
+  @override
+  String get iconThemeMoney => 'Argent et achats';
+
+  @override
+  String get iconThemeWork => 'Travail et études';
+
+  @override
+  String get iconThemeFamily => 'Famille et proches';
+
+  @override
+  String get iconThemeLeisure => 'Sport et loisirs';
+
+  @override
+  String get iconThemeOther => 'Autres';
 
   @override
   String get renameCategoryTitle => 'Renommer la catégorie';

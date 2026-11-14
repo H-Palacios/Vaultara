@@ -7934,13 +7934,52 @@ class AppLocalizationsXh extends AppLocalizations {
   String get changeIcon => 'Tshintsha uphawu';
 
   @override
-  String get categoryLookTitle => 'Uphawu nombala';
-
-  @override
-  String get categoryLookAppColour => 'Umbala we-app';
-
-  @override
   String get categoryLookHint => 'Lukhethwe ngegama. Cofa ukuze utshintshe.';
+
+  @override
+  String get iconSuggestions => 'Ezicetyiswayo';
+
+  @override
+  String get iconSearchHint => 'Chaza i-icon';
+
+  @override
+  String get iconSearchResults => 'Ezona zifanelekileyo';
+
+  @override
+  String get iconSearchEmpty => 'Akukho i-icon efanelekileyo. Zama elinye igama.';
+
+  @override
+  String get iconAllTitle => 'Zonke ii-icon';
+
+  @override
+  String get iconThemeDocuments => 'Amaxwebhu';
+
+  @override
+  String get iconThemeVehicles => 'Izithuthi';
+
+  @override
+  String get iconThemeTravel => 'Uhambo';
+
+  @override
+  String get iconThemeHealth => 'Impilo';
+
+  @override
+  String get iconThemeHome => 'Ikhaya';
+
+  @override
+  String get iconThemeMoney => 'Imali nokuthenga';
+
+  @override
+  String get iconThemeWork => 'Umsebenzi nezifundo';
+
+  @override
+  String get iconThemeFamily => 'Usapho nabantu';
+
+  @override
+  String get iconThemeLeisure => 'Ezemidlalo nezinto zokuzonwabisa';
+
+  @override
+  String get iconThemeOther => 'Ezinye';
 
   @override
   String get renameCategoryTitle => 'Thiya kwakhona udidi';

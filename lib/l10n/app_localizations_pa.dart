@@ -7934,13 +7934,52 @@ class AppLocalizationsPa extends AppLocalizations {
   String get changeIcon => 'ਆਈਕਨ ਬਦਲੋ';
 
   @override
-  String get categoryLookTitle => 'ਆਈਕਨ ਅਤੇ ਰੰਗ';
-
-  @override
-  String get categoryLookAppColour => 'ਐਪ ਦਾ ਰੰਗ';
-
-  @override
   String get categoryLookHint => 'ਨਾਮ ਦੇ ਆਧਾਰ \'ਤੇ ਚੁਣਿਆ ਗਿਆ। ਬਦਲਣ ਲਈ ਟੈਪ ਕਰੋ।';
+
+  @override
+  String get iconSuggestions => 'ਸੁਝਾਏ ਗਏ';
+
+  @override
+  String get iconSearchHint => 'ਆਈਕਨ ਦਾ ਵਰਣਨ ਕਰੋ';
+
+  @override
+  String get iconSearchResults => 'ਸਭ ਤੋਂ ਵਧੀਆ ਮੇਲ';
+
+  @override
+  String get iconSearchEmpty => 'ਕੋਈ ਆਈਕਨ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ। ਕੋਈ ਹੋਰ ਸ਼ਬਦ ਅਜ਼ਮਾਓ।';
+
+  @override
+  String get iconAllTitle => 'ਸਾਰੇ ਆਈਕਨ';
+
+  @override
+  String get iconThemeDocuments => 'ਦਸਤਾਵੇਜ਼';
+
+  @override
+  String get iconThemeVehicles => 'ਵਾਹਨ';
+
+  @override
+  String get iconThemeTravel => 'ਯਾਤਰਾ';
+
+  @override
+  String get iconThemeHealth => 'ਸਿਹਤ';
+
+  @override
+  String get iconThemeHome => 'ਘਰ';
+
+  @override
+  String get iconThemeMoney => 'ਪੈਸਾ ਅਤੇ ਖਰੀਦਦਾਰੀ';
+
+  @override
+  String get iconThemeWork => 'ਕੰਮ ਅਤੇ ਪੜ੍ਹਾਈ';
+
+  @override
+  String get iconThemeFamily => 'ਪਰਿਵਾਰ ਅਤੇ ਲੋਕ';
+
+  @override
+  String get iconThemeLeisure => 'ਖੇਡਾਂ ਅਤੇ ਸ਼ੌਕ';
+
+  @override
+  String get iconThemeOther => 'ਹੋਰ';
 
   @override
   String get renameCategoryTitle => 'ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਬਦਲੋ';

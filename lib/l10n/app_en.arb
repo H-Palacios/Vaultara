@@ -9616,19 +9616,71 @@
   },
   "changeIcon": "Change icon",
   "@changeIcon": {
-    "description": "Menu item to change a custom category's icon and colour."
-  },
-  "categoryLookTitle": "Icon and colour",
-  "@categoryLookTitle": {
-    "description": "Title of the sheet to pick a category's icon and colour."
-  },
-  "categoryLookAppColour": "App colour",
-  "@categoryLookAppColour": {
-    "description": "Tooltip of the colour swatch that uses the app's own colour."
+    "description": "Menu item and sheet title for changing a custom category's icon."
   },
   "categoryLookHint": "Picked from the name. Tap to change it.",
   "@categoryLookHint": {
     "description": "Under the icon preview when making a category."
+  },
+  "iconSuggestions": "Suggested",
+  "@iconSuggestions": {
+    "description": "Heading above the icons suggested for a category name in the Change icon sheet."
+  },
+  "iconSearchHint": "Describe the icon",
+  "@iconSearchHint": {
+    "description": "Hint in the search field of the Change icon sheet. People can type in any language."
+  },
+  "iconSearchResults": "Best matches",
+  "@iconSearchResults": {
+    "description": "Heading above the icons that match the search in the Change icon sheet."
+  },
+  "iconSearchEmpty": "No icons match. Try another word.",
+  "@iconSearchEmpty": {
+    "description": "Shown in the Change icon sheet when no icon matches the search."
+  },
+  "iconAllTitle": "All icons",
+  "@iconAllTitle": {
+    "description": "Heading above the folded icon themes in the Change icon sheet."
+  },
+  "iconThemeDocuments": "Documents",
+  "@iconThemeDocuments": {
+    "description": "Icon theme in the Change icon sheet: documents, IDs and security."
+  },
+  "iconThemeVehicles": "Vehicles",
+  "@iconThemeVehicles": {
+    "description": "Icon theme in the Change icon sheet: cars, bikes and other vehicles."
+  },
+  "iconThemeTravel": "Travel",
+  "@iconThemeTravel": {
+    "description": "Icon theme in the Change icon sheet: flights, hotels and trips."
+  },
+  "iconThemeHealth": "Health",
+  "@iconThemeHealth": {
+    "description": "Icon theme in the Change icon sheet: medical and wellbeing."
+  },
+  "iconThemeHome": "Home",
+  "@iconThemeHome": {
+    "description": "Icon theme in the Change icon sheet: house, utilities and repairs."
+  },
+  "iconThemeMoney": "Money and shopping",
+  "@iconThemeMoney": {
+    "description": "Icon theme in the Change icon sheet: banking, payments and shopping."
+  },
+  "iconThemeWork": "Work and study",
+  "@iconThemeWork": {
+    "description": "Icon theme in the Change icon sheet: jobs, business and school."
+  },
+  "iconThemeFamily": "Family and people",
+  "@iconThemeFamily": {
+    "description": "Icon theme in the Change icon sheet: family, pets, faith and community."
+  },
+  "iconThemeLeisure": "Sport and hobbies",
+  "@iconThemeLeisure": {
+    "description": "Icon theme in the Change icon sheet: sport, music and hobbies."
+  },
+  "iconThemeOther": "Other",
+  "@iconThemeOther": {
+    "description": "Icon theme in the Change icon sheet: anything else."
   },
   "renameCategoryTitle": "Rename category",
   "@renameCategoryTitle": {

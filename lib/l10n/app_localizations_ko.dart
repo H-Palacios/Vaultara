@@ -7876,13 +7876,52 @@ class AppLocalizationsKo extends AppLocalizations {
   String get changeIcon => '아이콘 변경';
 
   @override
-  String get categoryLookTitle => '아이콘 및 색상';
-
-  @override
-  String get categoryLookAppColour => '앱 색상';
-
-  @override
   String get categoryLookHint => '이름에 맞춰 골랐어요. 탭하여 변경하세요.';
+
+  @override
+  String get iconSuggestions => '추천';
+
+  @override
+  String get iconSearchHint => '아이콘 설명하기';
+
+  @override
+  String get iconSearchResults => '가장 잘 맞는 아이콘';
+
+  @override
+  String get iconSearchEmpty => '맞는 아이콘이 없습니다. 다른 단어를 입력해 보세요.';
+
+  @override
+  String get iconAllTitle => '모든 아이콘';
+
+  @override
+  String get iconThemeDocuments => '문서';
+
+  @override
+  String get iconThemeVehicles => '차량';
+
+  @override
+  String get iconThemeTravel => '여행';
+
+  @override
+  String get iconThemeHealth => '건강';
+
+  @override
+  String get iconThemeHome => '집';
+
+  @override
+  String get iconThemeMoney => '돈과 쇼핑';
+
+  @override
+  String get iconThemeWork => '일과 공부';
+
+  @override
+  String get iconThemeFamily => '가족과 사람';
+
+  @override
+  String get iconThemeLeisure => '스포츠와 취미';
+
+  @override
+  String get iconThemeOther => '기타';
 
   @override
   String get renameCategoryTitle => '카테고리 이름 변경';

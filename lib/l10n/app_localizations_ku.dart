@@ -7934,13 +7934,52 @@ class AppLocalizationsKu extends AppLocalizations {
   String get changeIcon => 'Îkonê biguherîne';
 
   @override
-  String get categoryLookTitle => 'Îkon û reng';
-
-  @override
-  String get categoryLookAppColour => 'Rengê sepanê';
-
-  @override
   String get categoryLookHint => 'Li gorî navî hat hilbijartin. Ji bo guhertinê bitikîne.';
+
+  @override
+  String get iconSuggestions => 'Pêşniyarkirî';
+
+  @override
+  String get iconSearchHint => 'Îkonê rave bike';
+
+  @override
+  String get iconSearchResults => 'Lihevhatinên herî baş';
+
+  @override
+  String get iconSearchEmpty => 'Tu îkon li hev nayê. Peyveke din biceribîne.';
+
+  @override
+  String get iconAllTitle => 'Hemû îkon';
+
+  @override
+  String get iconThemeDocuments => 'Belge';
+
+  @override
+  String get iconThemeVehicles => 'Wesayît';
+
+  @override
+  String get iconThemeTravel => 'Rêwîtî';
+
+  @override
+  String get iconThemeHealth => 'Tenduristî';
+
+  @override
+  String get iconThemeHome => 'Mal';
+
+  @override
+  String get iconThemeMoney => 'Pere û kirîn';
+
+  @override
+  String get iconThemeWork => 'Kar û xwendin';
+
+  @override
+  String get iconThemeFamily => 'Malbat û mirov';
+
+  @override
+  String get iconThemeLeisure => 'Werziş û hobî';
+
+  @override
+  String get iconThemeOther => 'Yên din';
 
   @override
   String get renameCategoryTitle => 'Navê kategoriyê biguherîne';

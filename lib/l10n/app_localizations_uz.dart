@@ -7934,13 +7934,52 @@ class AppLocalizationsUz extends AppLocalizations {
   String get changeIcon => 'Belgini almashtirish';
 
   @override
-  String get categoryLookTitle => 'Belgi va rang';
-
-  @override
-  String get categoryLookAppColour => 'Ilova rangi';
-
-  @override
   String get categoryLookHint => 'Nomga qarab tanlandi. Almashtirish uchun bosing.';
+
+  @override
+  String get iconSuggestions => 'Tavsiya etilgan';
+
+  @override
+  String get iconSearchHint => 'Belgini tasvirlang';
+
+  @override
+  String get iconSearchResults => 'Eng mos kelganlar';
+
+  @override
+  String get iconSearchEmpty => 'Mos belgi topilmadi. Boshqa so‘z bilan urinib ko‘ring.';
+
+  @override
+  String get iconAllTitle => 'Barcha belgilar';
+
+  @override
+  String get iconThemeDocuments => 'Hujjatlar';
+
+  @override
+  String get iconThemeVehicles => 'Transport vositalari';
+
+  @override
+  String get iconThemeTravel => 'Sayohat';
+
+  @override
+  String get iconThemeHealth => 'Salomatlik';
+
+  @override
+  String get iconThemeHome => 'Uy';
+
+  @override
+  String get iconThemeMoney => 'Pul va xaridlar';
+
+  @override
+  String get iconThemeWork => 'Ish va o‘qish';
+
+  @override
+  String get iconThemeFamily => 'Oila va odamlar';
+
+  @override
+  String get iconThemeLeisure => 'Sport va xobbilar';
+
+  @override
+  String get iconThemeOther => 'Boshqa';
 
   @override
   String get renameCategoryTitle => 'Turkum nomini oʻzgartirish';

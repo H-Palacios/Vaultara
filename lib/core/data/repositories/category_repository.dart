@@ -224,7 +224,6 @@ class CategoryRepository {
     final key = data['key'] as String? ?? doc.id;
 
     final iconKey = data['iconKey'] as String?;
-    final colourKey = data['colourKey'] as String?;
 
     return CategoryItem(
       key: key,
@@ -232,7 +231,6 @@ class CategoryRepository {
       icon: _iconFromMap(data),
       groupKeys: List<String>.from(data['subcategories'] ?? <String>[]),
       iconKey: CategoryAppearance.isIcon(iconKey) ? iconKey : null,
-      colourKey: CategoryAppearance.isColour(colourKey) ? colourKey : null,
     );
   }
 
@@ -421,12 +419,11 @@ class CategoryRepository {
     }, SetOptions(merge: true)).ignore();
   }
 
-  /// Saves a new icon and colour for a custom category. A null [colourKey]
-  /// goes back to the app's own colour.
+  /// Saves a new icon for a custom category. Any colour saved by an older
+  /// version is removed, since categories now all use the app's blue.
   static Future<void> updateAppearance(
     String key, {
     required String iconKey,
-    required String? colourKey,
   }) async {
     final index = _categories.indexWhere((c) => c.key == key);
     if (index < 0) return;
@@ -437,7 +434,6 @@ class CategoryRepository {
       icon: CategoryAppearance.iconFor(iconKey) ?? old.icon,
       groupKeys: old.groupKeys,
       iconKey: iconKey,
-      colourKey: colourKey,
     );
 
     final User? user = _auth.currentUser;
@@ -445,7 +441,7 @@ class CategoryRepository {
 
     _firestore.collection(_categoriesPath(user.uid)).doc(key).set({
       'iconKey': iconKey,
-      'colourKey': colourKey,
+      'colourKey': FieldValue.delete(),
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true)).ignore();
   }
@@ -474,7 +470,6 @@ class CategoryRepository {
       'label': item.label,
       'subcategories': item.groupKeys,
       'iconKey': iconKey,
-      'colourKey': item.colourKey,
       'iconCodePoint': item.icon?.codePoint,
       'iconFontFamily': item.icon?.fontFamily,
       'iconFontPackage': item.icon?.fontPackage,

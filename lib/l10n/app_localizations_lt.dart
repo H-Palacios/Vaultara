@@ -8078,13 +8078,52 @@ class AppLocalizationsLt extends AppLocalizations {
   String get changeIcon => 'Keisti piktogramą';
 
   @override
-  String get categoryLookTitle => 'Piktograma ir spalva';
-
-  @override
-  String get categoryLookAppColour => 'Programėlės spalva';
-
-  @override
   String get categoryLookHint => 'Parinkta pagal pavadinimą. Bakstelėkite, kad pakeistumėte.';
+
+  @override
+  String get iconSuggestions => 'Siūlomos';
+
+  @override
+  String get iconSearchHint => 'Apibūdinkite piktogramą';
+
+  @override
+  String get iconSearchResults => 'Geriausi atitikmenys';
+
+  @override
+  String get iconSearchEmpty => 'Jokia piktograma netinka. Pabandykite kitą žodį.';
+
+  @override
+  String get iconAllTitle => 'Visos piktogramos';
+
+  @override
+  String get iconThemeDocuments => 'Dokumentai';
+
+  @override
+  String get iconThemeVehicles => 'Transporto priemonės';
+
+  @override
+  String get iconThemeTravel => 'Kelionės';
+
+  @override
+  String get iconThemeHealth => 'Sveikata';
+
+  @override
+  String get iconThemeHome => 'Namai';
+
+  @override
+  String get iconThemeMoney => 'Pinigai ir apsipirkimas';
+
+  @override
+  String get iconThemeWork => 'Darbas ir mokslai';
+
+  @override
+  String get iconThemeFamily => 'Šeima ir žmonės';
+
+  @override
+  String get iconThemeLeisure => 'Sportas ir pomėgiai';
+
+  @override
+  String get iconThemeOther => 'Kita';
 
   @override
   String get renameCategoryTitle => 'Pervadinti kategoriją';

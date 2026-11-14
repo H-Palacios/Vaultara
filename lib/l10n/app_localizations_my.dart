@@ -7874,13 +7874,52 @@ class AppLocalizationsMy extends AppLocalizations {
   String get changeIcon => 'အိုင်ကွန် ပြောင်းရန်';
 
   @override
-  String get categoryLookTitle => 'အိုင်ကွန်နှင့် အရောင်';
-
-  @override
-  String get categoryLookAppColour => 'အက်ပ်အရောင်';
-
-  @override
   String get categoryLookHint => 'အမည်မှ ရွေးထားသည်။ ပြောင်းရန် တို့ပါ။';
+
+  @override
+  String get iconSuggestions => 'အကြံပြုထားသည်';
+
+  @override
+  String get iconSearchHint => 'အိုင်ကွန်ကို ဖော်ပြပါ';
+
+  @override
+  String get iconSearchResults => 'အကိုက်ညီဆုံး';
+
+  @override
+  String get iconSearchEmpty => 'ကိုက်ညီသော အိုင်ကွန် မရှိပါ။ အခြားစကားလုံး စမ်းကြည့်ပါ။';
+
+  @override
+  String get iconAllTitle => 'အိုင်ကွန်အားလုံး';
+
+  @override
+  String get iconThemeDocuments => 'စာရွက်စာတမ်းများ';
+
+  @override
+  String get iconThemeVehicles => 'ယာဉ်များ';
+
+  @override
+  String get iconThemeTravel => 'ခရီးသွား';
+
+  @override
+  String get iconThemeHealth => 'ကျန်းမာရေး';
+
+  @override
+  String get iconThemeHome => 'အိမ်';
+
+  @override
+  String get iconThemeMoney => 'ငွေနှင့် စျေးဝယ်';
+
+  @override
+  String get iconThemeWork => 'အလုပ်နှင့် ပညာရေး';
+
+  @override
+  String get iconThemeFamily => 'မိသားစုနှင့် လူများ';
+
+  @override
+  String get iconThemeLeisure => 'အားကစားနှင့် ဝါသနာ';
+
+  @override
+  String get iconThemeOther => 'အခြား';
 
   @override
   String get renameCategoryTitle => 'အမျိုးအစားအမည် ပြောင်းရန်';

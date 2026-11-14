@@ -147,25 +147,36 @@ void main() {
       expect(CategoryAppearance.guessIcon('Scarves'), isNull);
     });
 
-    test('every guess is a real icon with a colour', () {
+    test('every guess is a real icon', () {
       for (final name in ['Dog', 'Fibre', 'Boat', 'Warranty', 'Baby']) {
         final icon = CategoryAppearance.guessIcon(name);
         expect(CategoryAppearance.isIcon(icon), isTrue, reason: name);
-        expect(
-          CategoryAppearance.isColour(CategoryAppearance.colourForIcon(icon!)),
-          isTrue,
-          reason: name,
-        );
       }
+    });
+
+    test('every icon sits in exactly one theme', () {
+      final themed = [
+        for (final theme in CategoryAppearance.themes) ...theme.icons,
+      ];
+      expect(themed.toSet(), CategoryAppearance.icons.keys.toSet());
+      expect(themed.length, CategoryAppearance.icons.length);
+    });
+
+    test('no two icons share a glyph', () {
+      final glyphs = CategoryAppearance.icons.values.toSet();
+      expect(glyphs.length, CategoryAppearance.icons.length);
+    });
+
+    test('the phone search finds icons by English words', () {
+      expect(CategoryAppearance.searchIcons('bicyc'), contains('bike'));
+      expect(CategoryAppearance.searchIcons('Passport'), contains('passport'));
+      expect(CategoryAppearance.searchIcons('qqqq'), isEmpty);
     });
 
     test('the server knows the same icons as the app', () {
       final js = File('functions/icon-suggest.js').readAsStringSync();
       for (final key in CategoryAppearance.icons.keys) {
-        expect(js, contains('$key:'), reason: key);
-      }
-      for (final key in CategoryAppearance.colours.keys) {
-        expect(js, contains('"$key"'), reason: key);
+        expect(js, contains('  $key:'), reason: key);
       }
     });
   });

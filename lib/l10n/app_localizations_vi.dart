@@ -7876,13 +7876,52 @@ class AppLocalizationsVi extends AppLocalizations {
   String get changeIcon => 'Đổi biểu tượng';
 
   @override
-  String get categoryLookTitle => 'Biểu tượng và màu';
-
-  @override
-  String get categoryLookAppColour => 'Màu của ứng dụng';
-
-  @override
   String get categoryLookHint => 'Được chọn theo tên. Nhấn để đổi.';
+
+  @override
+  String get iconSuggestions => 'Đề xuất';
+
+  @override
+  String get iconSearchHint => 'Mô tả biểu tượng';
+
+  @override
+  String get iconSearchResults => 'Phù hợp nhất';
+
+  @override
+  String get iconSearchEmpty => 'Không có biểu tượng phù hợp. Hãy thử từ khác.';
+
+  @override
+  String get iconAllTitle => 'Tất cả biểu tượng';
+
+  @override
+  String get iconThemeDocuments => 'Giấy tờ';
+
+  @override
+  String get iconThemeVehicles => 'Phương tiện';
+
+  @override
+  String get iconThemeTravel => 'Du lịch';
+
+  @override
+  String get iconThemeHealth => 'Sức khỏe';
+
+  @override
+  String get iconThemeHome => 'Nhà ở';
+
+  @override
+  String get iconThemeMoney => 'Tiền và mua sắm';
+
+  @override
+  String get iconThemeWork => 'Công việc và học tập';
+
+  @override
+  String get iconThemeFamily => 'Gia đình và mọi người';
+
+  @override
+  String get iconThemeLeisure => 'Thể thao và sở thích';
+
+  @override
+  String get iconThemeOther => 'Khác';
 
   @override
   String get renameCategoryTitle => 'Đổi tên danh mục';

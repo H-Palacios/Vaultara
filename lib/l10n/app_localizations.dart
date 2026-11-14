@@ -13705,29 +13705,107 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{{count} expired} other{{count} expired}}'**
   String expiredBadge(int count);
 
-  /// Menu item to change a custom category's icon and colour.
+  /// Menu item and sheet title for changing a custom category's icon.
   ///
   /// In en, this message translates to:
   /// **'Change icon'**
   String get changeIcon;
-
-  /// Title of the sheet to pick a category's icon and colour.
-  ///
-  /// In en, this message translates to:
-  /// **'Icon and colour'**
-  String get categoryLookTitle;
-
-  /// Tooltip of the colour swatch that uses the app's own colour.
-  ///
-  /// In en, this message translates to:
-  /// **'App colour'**
-  String get categoryLookAppColour;
 
   /// Under the icon preview when making a category.
   ///
   /// In en, this message translates to:
   /// **'Picked from the name. Tap to change it.'**
   String get categoryLookHint;
+
+  /// Heading above the icons suggested for a category name in the Change icon sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggested'**
+  String get iconSuggestions;
+
+  /// Hint in the search field of the Change icon sheet. People can type in any language.
+  ///
+  /// In en, this message translates to:
+  /// **'Describe the icon'**
+  String get iconSearchHint;
+
+  /// Heading above the icons that match the search in the Change icon sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Best matches'**
+  String get iconSearchResults;
+
+  /// Shown in the Change icon sheet when no icon matches the search.
+  ///
+  /// In en, this message translates to:
+  /// **'No icons match. Try another word.'**
+  String get iconSearchEmpty;
+
+  /// Heading above the folded icon themes in the Change icon sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'All icons'**
+  String get iconAllTitle;
+
+  /// Icon theme in the Change icon sheet: documents, IDs and security.
+  ///
+  /// In en, this message translates to:
+  /// **'Documents'**
+  String get iconThemeDocuments;
+
+  /// Icon theme in the Change icon sheet: cars, bikes and other vehicles.
+  ///
+  /// In en, this message translates to:
+  /// **'Vehicles'**
+  String get iconThemeVehicles;
+
+  /// Icon theme in the Change icon sheet: flights, hotels and trips.
+  ///
+  /// In en, this message translates to:
+  /// **'Travel'**
+  String get iconThemeTravel;
+
+  /// Icon theme in the Change icon sheet: medical and wellbeing.
+  ///
+  /// In en, this message translates to:
+  /// **'Health'**
+  String get iconThemeHealth;
+
+  /// Icon theme in the Change icon sheet: house, utilities and repairs.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get iconThemeHome;
+
+  /// Icon theme in the Change icon sheet: banking, payments and shopping.
+  ///
+  /// In en, this message translates to:
+  /// **'Money and shopping'**
+  String get iconThemeMoney;
+
+  /// Icon theme in the Change icon sheet: jobs, business and school.
+  ///
+  /// In en, this message translates to:
+  /// **'Work and study'**
+  String get iconThemeWork;
+
+  /// Icon theme in the Change icon sheet: family, pets, faith and community.
+  ///
+  /// In en, this message translates to:
+  /// **'Family and people'**
+  String get iconThemeFamily;
+
+  /// Icon theme in the Change icon sheet: sport, music and hobbies.
+  ///
+  /// In en, this message translates to:
+  /// **'Sport and hobbies'**
+  String get iconThemeLeisure;
+
+  /// Icon theme in the Change icon sheet: anything else.
+  ///
+  /// In en, this message translates to:
+  /// **'Other'**
+  String get iconThemeOther;
 
   /// Title of the sheet to rename a category.
   ///

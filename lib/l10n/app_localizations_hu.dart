@@ -7934,13 +7934,52 @@ class AppLocalizationsHu extends AppLocalizations {
   String get changeIcon => 'Ikon módosítása';
 
   @override
-  String get categoryLookTitle => 'Ikon és szín';
-
-  @override
-  String get categoryLookAppColour => 'Az app színe';
-
-  @override
   String get categoryLookHint => 'A név alapján választva. Koppints a módosításhoz.';
+
+  @override
+  String get iconSuggestions => 'Javasolt';
+
+  @override
+  String get iconSearchHint => 'Írd le az ikont';
+
+  @override
+  String get iconSearchResults => 'Legjobb találatok';
+
+  @override
+  String get iconSearchEmpty => 'Egy ikon sem illik. Próbálj másik szót.';
+
+  @override
+  String get iconAllTitle => 'Összes ikon';
+
+  @override
+  String get iconThemeDocuments => 'Dokumentumok';
+
+  @override
+  String get iconThemeVehicles => 'Járművek';
+
+  @override
+  String get iconThemeTravel => 'Utazás';
+
+  @override
+  String get iconThemeHealth => 'Egészség';
+
+  @override
+  String get iconThemeHome => 'Otthon';
+
+  @override
+  String get iconThemeMoney => 'Pénz és vásárlás';
+
+  @override
+  String get iconThemeWork => 'Munka és tanulás';
+
+  @override
+  String get iconThemeFamily => 'Család és emberek';
+
+  @override
+  String get iconThemeLeisure => 'Sport és hobbi';
+
+  @override
+  String get iconThemeOther => 'Egyéb';
 
   @override
   String get renameCategoryTitle => 'Kategória átnevezése';

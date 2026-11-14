@@ -7934,13 +7934,52 @@ class AppLocalizationsKn extends AppLocalizations {
   String get changeIcon => 'ಐಕಾನ್ ಬದಲಿಸಿ';
 
   @override
-  String get categoryLookTitle => 'ಐಕಾನ್ ಮತ್ತು ಬಣ್ಣ';
-
-  @override
-  String get categoryLookAppColour => 'ಆ್ಯಪ್ ಬಣ್ಣ';
-
-  @override
   String get categoryLookHint => 'ಹೆಸರಿನಿಂದ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ. ಬದಲಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+
+  @override
+  String get iconSuggestions => 'ಸೂಚಿಸಿದವು';
+
+  @override
+  String get iconSearchHint => 'ಐಕಾನ್ ವಿವರಿಸಿ';
+
+  @override
+  String get iconSearchResults => 'ಅತ್ಯುತ್ತಮ ಹೊಂದಾಣಿಕೆಗಳು';
+
+  @override
+  String get iconSearchEmpty => 'ಯಾವುದೇ ಐಕಾನ್ ಹೊಂದುತ್ತಿಲ್ಲ. ಬೇರೆ ಪದ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get iconAllTitle => 'ಎಲ್ಲಾ ಐಕಾನ್‌ಗಳು';
+
+  @override
+  String get iconThemeDocuments => 'ದಾಖಲೆಗಳು';
+
+  @override
+  String get iconThemeVehicles => 'ವಾಹನಗಳು';
+
+  @override
+  String get iconThemeTravel => 'ಪ್ರಯಾಣ';
+
+  @override
+  String get iconThemeHealth => 'ಆರೋಗ್ಯ';
+
+  @override
+  String get iconThemeHome => 'ಮನೆ';
+
+  @override
+  String get iconThemeMoney => 'ಹಣ ಮತ್ತು ಶಾಪಿಂಗ್';
+
+  @override
+  String get iconThemeWork => 'ಕೆಲಸ ಮತ್ತು ಅಧ್ಯಯನ';
+
+  @override
+  String get iconThemeFamily => 'ಕುಟುಂಬ ಮತ್ತು ಜನರು';
+
+  @override
+  String get iconThemeLeisure => 'ಕ್ರೀಡೆ ಮತ್ತು ಹವ್ಯಾಸಗಳು';
+
+  @override
+  String get iconThemeOther => 'ಇತರೆ';
 
   @override
   String get renameCategoryTitle => 'ವರ್ಗದ ಹೆಸರು ಬದಲಿಸಿ';

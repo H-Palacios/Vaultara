@@ -8001,13 +8001,52 @@ class AppLocalizationsLv extends AppLocalizations {
   String get changeIcon => 'Mainīt ikonu';
 
   @override
-  String get categoryLookTitle => 'Ikona un krāsa';
-
-  @override
-  String get categoryLookAppColour => 'Lietotnes krāsa';
-
-  @override
   String get categoryLookHint => 'Izvēlēta pēc nosaukuma. Pieskarieties, lai mainītu.';
+
+  @override
+  String get iconSuggestions => 'Ieteiktās';
+
+  @override
+  String get iconSearchHint => 'Aprakstiet ikonu';
+
+  @override
+  String get iconSearchResults => 'Labākās atbilstības';
+
+  @override
+  String get iconSearchEmpty => 'Neviena ikona neatbilst. Izmēģiniet citu vārdu.';
+
+  @override
+  String get iconAllTitle => 'Visas ikonas';
+
+  @override
+  String get iconThemeDocuments => 'Dokumenti';
+
+  @override
+  String get iconThemeVehicles => 'Transportlīdzekļi';
+
+  @override
+  String get iconThemeTravel => 'Ceļošana';
+
+  @override
+  String get iconThemeHealth => 'Veselība';
+
+  @override
+  String get iconThemeHome => 'Mājas';
+
+  @override
+  String get iconThemeMoney => 'Nauda un iepirkšanās';
+
+  @override
+  String get iconThemeWork => 'Darbs un mācības';
+
+  @override
+  String get iconThemeFamily => 'Ģimene un cilvēki';
+
+  @override
+  String get iconThemeLeisure => 'Sports un hobiji';
+
+  @override
+  String get iconThemeOther => 'Citas';
 
   @override
   String get renameCategoryTitle => 'Pārdēvēt kategoriju';

@@ -7934,13 +7934,52 @@ class AppLocalizationsHa extends AppLocalizations {
   String get changeIcon => 'Canza alama';
 
   @override
-  String get categoryLookTitle => 'Alama da launi';
-
-  @override
-  String get categoryLookAppColour => 'Launin manhaja';
-
-  @override
   String get categoryLookHint => 'An zaɓa daga sunan. Taɓa don canzawa.';
+
+  @override
+  String get iconSuggestions => 'Shawarwari';
+
+  @override
+  String get iconSearchHint => 'Bayyana alamar';
+
+  @override
+  String get iconSearchResults => 'Mafi dacewa';
+
+  @override
+  String get iconSearchEmpty => 'Babu alamar da ta dace. Gwada wata kalma.';
+
+  @override
+  String get iconAllTitle => 'Duk alamomi';
+
+  @override
+  String get iconThemeDocuments => 'Takardu';
+
+  @override
+  String get iconThemeVehicles => 'Ababen hawa';
+
+  @override
+  String get iconThemeTravel => 'Tafiya';
+
+  @override
+  String get iconThemeHealth => 'Lafiya';
+
+  @override
+  String get iconThemeHome => 'Gida';
+
+  @override
+  String get iconThemeMoney => 'Kuɗi da sayayya';
+
+  @override
+  String get iconThemeWork => 'Aiki da karatu';
+
+  @override
+  String get iconThemeFamily => 'Iyali da mutane';
+
+  @override
+  String get iconThemeLeisure => 'Wasanni da sha’awa';
+
+  @override
+  String get iconThemeOther => 'Sauran';
 
   @override
   String get renameCategoryTitle => 'Sake sunan rukuni';

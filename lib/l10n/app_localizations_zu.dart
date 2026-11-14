@@ -7934,13 +7934,52 @@ class AppLocalizationsZu extends AppLocalizations {
   String get changeIcon => 'Shintsha isithonjana';
 
   @override
-  String get categoryLookTitle => 'Isithonjana nombala';
-
-  @override
-  String get categoryLookAppColour => 'Umbala wohlelo';
-
-  @override
   String get categoryLookHint => 'Kukhethwe ngegama. Thepha ukuze ushintshe.';
+
+  @override
+  String get iconSuggestions => 'Okuphakanyisiwe';
+
+  @override
+  String get iconSearchHint => 'Chaza isithonjana';
+
+  @override
+  String get iconSearchResults => 'Okufana kakhulu';
+
+  @override
+  String get iconSearchEmpty => 'Asikho isithonjana esifanayo. Zama elinye igama.';
+
+  @override
+  String get iconAllTitle => 'Zonke izithonjana';
+
+  @override
+  String get iconThemeDocuments => 'Amadokhumenti';
+
+  @override
+  String get iconThemeVehicles => 'Izimoto';
+
+  @override
+  String get iconThemeTravel => 'Ukuhamba';
+
+  @override
+  String get iconThemeHealth => 'Impilo';
+
+  @override
+  String get iconThemeHome => 'Ikhaya';
+
+  @override
+  String get iconThemeMoney => 'Imali nokuthenga';
+
+  @override
+  String get iconThemeWork => 'Umsebenzi nezifundo';
+
+  @override
+  String get iconThemeFamily => 'Umndeni nabantu';
+
+  @override
+  String get iconThemeLeisure => 'Ezemidlalo nezinto ozithandayo';
+
+  @override
+  String get iconThemeOther => 'Okunye';
 
   @override
   String get renameCategoryTitle => 'Qamba kabusha isigaba';

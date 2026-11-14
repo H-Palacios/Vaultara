@@ -8121,13 +8121,52 @@ class AppLocalizationsGa extends AppLocalizations {
   String get changeIcon => 'Athraigh an deilbhín';
 
   @override
-  String get categoryLookTitle => 'Deilbhín agus dath';
-
-  @override
-  String get categoryLookAppColour => 'Dath na haipe';
-
-  @override
   String get categoryLookHint => 'Roghnaithe ón ainm. Tapáil chun é a athrú.';
+
+  @override
+  String get iconSuggestions => 'Molta';
+
+  @override
+  String get iconSearchHint => 'Déan cur síos ar an deilbhín';
+
+  @override
+  String get iconSearchResults => 'Na meaitseálacha is fearr';
+
+  @override
+  String get iconSearchEmpty => 'Níl aon deilbhín ag teacht leis. Bain triail as focal eile.';
+
+  @override
+  String get iconAllTitle => 'Gach deilbhín';
+
+  @override
+  String get iconThemeDocuments => 'Doiciméid';
+
+  @override
+  String get iconThemeVehicles => 'Feithiclí';
+
+  @override
+  String get iconThemeTravel => 'Taisteal';
+
+  @override
+  String get iconThemeHealth => 'Sláinte';
+
+  @override
+  String get iconThemeHome => 'Baile';
+
+  @override
+  String get iconThemeMoney => 'Airgead agus siopadóireacht';
+
+  @override
+  String get iconThemeWork => 'Obair agus staidéar';
+
+  @override
+  String get iconThemeFamily => 'Teaghlach agus daoine';
+
+  @override
+  String get iconThemeLeisure => 'Spórt agus caitheamh aimsire';
+
+  @override
+  String get iconThemeOther => 'Eile';
 
   @override
   String get renameCategoryTitle => 'Athainmnigh an chatagóir';

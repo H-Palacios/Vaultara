@@ -7938,13 +7938,52 @@ class AppLocalizationsEu extends AppLocalizations {
   String get changeIcon => 'Aldatu ikonoa';
 
   @override
-  String get categoryLookTitle => 'Ikonoa eta kolorea';
-
-  @override
-  String get categoryLookAppColour => 'Aplikazioaren kolorea';
-
-  @override
   String get categoryLookHint => 'Izenaren arabera aukeratua. Sakatu aldatzeko.';
+
+  @override
+  String get iconSuggestions => 'Iradokitakoak';
+
+  @override
+  String get iconSearchHint => 'Deskribatu ikonoa';
+
+  @override
+  String get iconSearchResults => 'Bat-etortze onenak';
+
+  @override
+  String get iconSearchEmpty => 'Ez dago bat datorren ikonorik. Saiatu beste hitz batekin.';
+
+  @override
+  String get iconAllTitle => 'Ikono guztiak';
+
+  @override
+  String get iconThemeDocuments => 'Dokumentuak';
+
+  @override
+  String get iconThemeVehicles => 'Ibilgailuak';
+
+  @override
+  String get iconThemeTravel => 'Bidaiak';
+
+  @override
+  String get iconThemeHealth => 'Osasuna';
+
+  @override
+  String get iconThemeHome => 'Etxea';
+
+  @override
+  String get iconThemeMoney => 'Dirua eta erosketak';
+
+  @override
+  String get iconThemeWork => 'Lana eta ikasketak';
+
+  @override
+  String get iconThemeFamily => 'Familia eta jendea';
+
+  @override
+  String get iconThemeLeisure => 'Kirola eta zaletasunak';
+
+  @override
+  String get iconThemeOther => 'Beste batzuk';
 
   @override
   String get renameCategoryTitle => 'Aldatu kategoriaren izena';
