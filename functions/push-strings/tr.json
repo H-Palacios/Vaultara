@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person}, {name} için bir güncelleme gönderdi. Aile ekranından inceleyin.",
   "securityNewSignInTitle": "Hesabınızda yeni giriş",
   "securityNewSignInBody": "Vaultara hesabınıza {device} cihazında giriş yapıldı. Bu siz değilseniz e-postanızı kontrol edin.",
-  "securityNewSignInBodyNoDevice": "Vaultara hesabınıza yeni bir cihazda giriş yapıldı. Bu siz değilseniz e-postanızı kontrol edin."
+  "securityNewSignInBodyNoDevice": "Vaultara hesabınıza yeni bir cihazda giriş yapıldı. Bu siz değilseniz e-postanızı kontrol edin.",
+  "householdSomeone": "Hanenizden biri",
+  "sharedAddedTitle": "Yeni paylaşılan kayıt",
+  "sharedAddedBody": "{person}, {name} kaydını ekledi.",
+  "sharedExpiryTitle": "Son kullanma tarihi değişti",
+  "sharedExpiryBody": "{person}, {name} kaydının son kullanma tarihini değiştirdi.",
+  "sharedDeletedTitle": "Paylaşılan kayıt silindi",
+  "sharedDeletedBody": "{person}, {name} kaydını sildi. 30 gün boyunca Son silinenler bölümünden geri yüklenebilir."
 }

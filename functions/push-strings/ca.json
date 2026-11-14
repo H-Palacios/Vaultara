@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} ha enviat una actualització de {name}. Revisa-la a la pantalla Família.",
   "securityNewSignInTitle": "Nou inici de sessió al teu compte",
   "securityNewSignInBody": "S'ha iniciat la sessió al teu compte de Vaultara a {device}. Si no has estat tu, revisa el correu.",
-  "securityNewSignInBodyNoDevice": "S'ha iniciat la sessió al teu compte de Vaultara en un dispositiu nou. Si no has estat tu, revisa el correu."
+  "securityNewSignInBodyNoDevice": "S'ha iniciat la sessió al teu compte de Vaultara en un dispositiu nou. Si no has estat tu, revisa el correu.",
+  "householdSomeone": "Algú de la teva llar",
+  "sharedAddedTitle": "Nou registre compartit",
+  "sharedAddedBody": "{person} ha afegit {name}.",
+  "sharedExpiryTitle": "Data de venciment canviada",
+  "sharedExpiryBody": "{person} ha canviat la data de venciment de {name}.",
+  "sharedDeletedTitle": "Registre compartit eliminat",
+  "sharedDeletedBody": "{person} ha eliminat {name}. Es pot recuperar des d’Eliminats recentment durant 30 dies."
 }

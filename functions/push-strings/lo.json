@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} ສົ່ງການອັບເດດສຳລັບ {name}. ກວດເບິ່ງໃນໜ້າຄອບຄົວ.",
   "securityNewSignInTitle": "ມີການເຂົ້າລະບົບໃໝ່ໃນບັນຊີຂອງທ່ານ",
   "securityNewSignInBody": "ບັນຊີ Vaultara ຂອງທ່ານຖືກເຂົ້າລະບົບໃນ {device}. ຖ້າບໍ່ແມ່ນທ່ານ, ກວດເບິ່ງອີເມວຂອງທ່ານ.",
-  "securityNewSignInBodyNoDevice": "ບັນຊີ Vaultara ຂອງທ່ານຖືກເຂົ້າລະບົບໃນອຸປະກອນໃໝ່. ຖ້າບໍ່ແມ່ນທ່ານ, ກວດເບິ່ງອີເມວຂອງທ່ານ."
+  "securityNewSignInBodyNoDevice": "ບັນຊີ Vaultara ຂອງທ່ານຖືກເຂົ້າລະບົບໃນອຸປະກອນໃໝ່. ຖ້າບໍ່ແມ່ນທ່ານ, ກວດເບິ່ງອີເມວຂອງທ່ານ.",
+  "householdSomeone": "ໃຜຜູ້ໜຶ່ງໃນຄອບຄົວຂອງທ່ານ",
+  "sharedAddedTitle": "ບັນທຶກແບ່ງປັນໃໝ່",
+  "sharedAddedBody": "{person} ໄດ້ເພີ່ມ {name}.",
+  "sharedExpiryTitle": "ວັນໝົດອາຍຸປ່ຽນແລ້ວ",
+  "sharedExpiryBody": "{person} ໄດ້ປ່ຽນວັນໝົດອາຍຸຂອງ {name}.",
+  "sharedDeletedTitle": "ບັນທຶກແບ່ງປັນຖືກລຶບ",
+  "sharedDeletedBody": "{person} ໄດ້ລຶບ {name}. ສາມາດກູ້ຄືນຈາກ ລຶບຫຼ້າສຸດ ໄດ້ພາຍໃນ 30 ມື້."
 }

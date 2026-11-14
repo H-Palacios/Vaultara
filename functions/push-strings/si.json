@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} විසින් {name} සඳහා යාවත්කාලීනයක් එවා ඇත. එය පවුල තිරයේ පරීක්ෂා කරන්න.",
   "securityNewSignInTitle": "ඔබේ ගිණුමට නව පිවිසීමක්",
   "securityNewSignInBody": "{device} මත ඔබේ Vaultara ගිණුමට පිවිසී ඇත. මෙය ඔබ නොවේ නම්, ඔබේ ඊමේල් පරීක්ෂා කරන්න.",
-  "securityNewSignInBodyNoDevice": "නව උපාංගයක් මත ඔබේ Vaultara ගිණුමට පිවිසී ඇත. මෙය ඔබ නොවේ නම්, ඔබේ ඊමේල් පරීක්ෂා කරන්න."
+  "securityNewSignInBodyNoDevice": "නව උපාංගයක් මත ඔබේ Vaultara ගිණුමට පිවිසී ඇත. මෙය ඔබ නොවේ නම්, ඔබේ ඊමේල් පරීක්ෂා කරන්න.",
+  "householdSomeone": "ඔබේ නිවසේ කෙනෙක්",
+  "sharedAddedTitle": "නව බෙදාගත් වාර්තාව",
+  "sharedAddedBody": "{person} {name} එක් කළා.",
+  "sharedExpiryTitle": "කල් ඉකුත් දිනය වෙනස් විය",
+  "sharedExpiryBody": "{person} {name} හි කල් ඉකුත් දිනය වෙනස් කළා.",
+  "sharedDeletedTitle": "බෙදාගත් වාර්තාව මකා දැමිණි",
+  "sharedDeletedBody": "{person} {name} මකා දැමුවා. දින 30ක් තුළ මෑතදී මැකූ ඒවායින් ප්‍රතිසාධනය කළ හැක."
 }

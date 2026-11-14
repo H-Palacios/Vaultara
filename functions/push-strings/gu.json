@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} એ {name} માટે અપડેટ મોકલ્યું. તેને પરિવાર સ્ક્રીન પર જુઓ.",
   "securityNewSignInTitle": "તમારા એકાઉન્ટમાં નવું સાઇન-ઇન",
   "securityNewSignInBody": "તમારા Vaultara એકાઉન્ટમાં {device} પર સાઇન ઇન થયું. જો આ તમે ન હતા, તો તમારો ઇમેઇલ તપાસો.",
-  "securityNewSignInBodyNoDevice": "તમારા Vaultara એકાઉન્ટમાં નવા ડિવાઇસ પર સાઇન ઇન થયું. જો આ તમે ન હતા, તો તમારો ઇમેઇલ તપાસો."
+  "securityNewSignInBodyNoDevice": "તમારા Vaultara એકાઉન્ટમાં નવા ડિવાઇસ પર સાઇન ઇન થયું. જો આ તમે ન હતા, તો તમારો ઇમેઇલ તપાસો.",
+  "householdSomeone": "તમારા ઘરમાંથી કોઈ",
+  "sharedAddedTitle": "નવો શેર કરેલો રેકોર્ડ",
+  "sharedAddedBody": "{person}એ {name} ઉમેર્યું.",
+  "sharedExpiryTitle": "સમાપ્તિ તારીખ બદલાઈ",
+  "sharedExpiryBody": "{person}એ {name}ની સમાપ્તિ તારીખ બદલી.",
+  "sharedDeletedTitle": "શેર કરેલો રેકોર્ડ કાઢી નખાયો",
+  "sharedDeletedBody": "{person}એ {name} કાઢી નાખ્યું. 30 દિવસ સુધી તાજેતરમાં કાઢેલામાંથી પાછું લાવી શકાય છે."
 }

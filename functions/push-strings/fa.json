@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} یک به‌روزرسانی برای {name} فرستاد. آن را در صفحه خانواده بررسی کنید.",
   "securityNewSignInTitle": "ورود جدید به حساب شما",
   "securityNewSignInBody": "به حساب Vaultara شما در {device} وارد شدند. اگر این شما نبودید، ایمیل خود را بررسی کنید.",
-  "securityNewSignInBodyNoDevice": "به حساب Vaultara شما در یک دستگاه جدید وارد شدند. اگر این شما نبودید، ایمیل خود را بررسی کنید."
+  "securityNewSignInBodyNoDevice": "به حساب Vaultara شما در یک دستگاه جدید وارد شدند. اگر این شما نبودید، ایمیل خود را بررسی کنید.",
+  "householdSomeone": "یکی از اعضای خانواده‌تان",
+  "sharedAddedTitle": "مورد مشترک جدید",
+  "sharedAddedBody": "{person} {name} را افزود.",
+  "sharedExpiryTitle": "تاریخ انقضا تغییر کرد",
+  "sharedExpiryBody": "{person} تاریخ انقضای {name} را تغییر داد.",
+  "sharedDeletedTitle": "مورد مشترک حذف شد",
+  "sharedDeletedBody": "{person} {name} را حذف کرد. تا ۳۰ روز از «اخیراً حذف‌شده» قابل بازگرداندن است."
 }

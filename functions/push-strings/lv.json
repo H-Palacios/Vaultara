@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} nosūtīja atjauninājumu ierakstam {name}. Pārbaudiet to ekrānā Ģimene.",
   "securityNewSignInTitle": "Jauna pieteikšanās jūsu kontā",
   "securityNewSignInBody": "Jūsu Vaultara kontā tika veikta pieteikšanās ierīcē {device}. Ja tas nebijāt jūs, pārbaudiet savu e-pastu.",
-  "securityNewSignInBodyNoDevice": "Jūsu Vaultara kontā tika veikta pieteikšanās jaunā ierīcē. Ja tas nebijāt jūs, pārbaudiet savu e-pastu."
+  "securityNewSignInBodyNoDevice": "Jūsu Vaultara kontā tika veikta pieteikšanās jaunā ierīcē. Ja tas nebijāt jūs, pārbaudiet savu e-pastu.",
+  "householdSomeone": "Kāds no jūsu mājsaimniecības",
+  "sharedAddedTitle": "Jauns kopīgots ieraksts",
+  "sharedAddedBody": "{person} pievienoja {name}.",
+  "sharedExpiryTitle": "Derīguma termiņš mainīts",
+  "sharedExpiryBody": "{person} mainīja {name} derīguma termiņu.",
+  "sharedDeletedTitle": "Kopīgots ieraksts dzēsts",
+  "sharedDeletedBody": "{person} izdzēsa {name}. To var atjaunot no Nesen dzēstajiem 30 dienas."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} 님이 {name}에 대한 업데이트를 보냈습니다. 가족 화면에서 확인하세요.",
   "securityNewSignInTitle": "계정에 새로운 로그인",
   "securityNewSignInBody": "{device}에서 Vaultara 계정에 로그인했습니다. 본인이 아니라면 이메일을 확인하세요.",
-  "securityNewSignInBodyNoDevice": "새 기기에서 Vaultara 계정에 로그인했습니다. 본인이 아니라면 이메일을 확인하세요."
+  "securityNewSignInBodyNoDevice": "새 기기에서 Vaultara 계정에 로그인했습니다. 본인이 아니라면 이메일을 확인하세요.",
+  "householdSomeone": "가구 구성원 중 한 명",
+  "sharedAddedTitle": "새 공유 기록",
+  "sharedAddedBody": "{person}님이 {name}을(를) 추가했습니다.",
+  "sharedExpiryTitle": "만료일 변경",
+  "sharedExpiryBody": "{person}님이 {name}의 만료일을 변경했습니다.",
+  "sharedDeletedTitle": "공유 기록 삭제됨",
+  "sharedDeletedBody": "{person}님이 {name}을(를) 삭제했습니다. 30일 동안 최근 삭제됨에서 복원할 수 있습니다."
 }

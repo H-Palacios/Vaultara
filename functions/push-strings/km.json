@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} បានផ្ញើការអាប់ដេតសម្រាប់ {name}។ សូមពិនិត្យវានៅលើអេក្រង់គ្រួសារ។",
   "securityNewSignInTitle": "ការចូលគណនីថ្មីទៅកាន់គណនីរបស់អ្នក",
   "securityNewSignInBody": "គណនី Vaultara របស់អ្នកត្រូវបានចូលនៅលើ {device}។ ប្រសិនបើនេះមិនមែនជាអ្នកទេ សូមពិនិត្យអ៊ីមែលរបស់អ្នក។",
-  "securityNewSignInBodyNoDevice": "គណនី Vaultara របស់អ្នកត្រូវបានចូលនៅលើឧបករណ៍ថ្មីមួយ។ ប្រសិនបើនេះមិនមែនជាអ្នកទេ សូមពិនិត្យអ៊ីមែលរបស់អ្នក។"
+  "securityNewSignInBodyNoDevice": "គណនី Vaultara របស់អ្នកត្រូវបានចូលនៅលើឧបករណ៍ថ្មីមួយ។ ប្រសិនបើនេះមិនមែនជាអ្នកទេ សូមពិនិត្យអ៊ីមែលរបស់អ្នក។",
+  "householdSomeone": "នរណាម្នាក់ក្នុងគ្រួសាររបស់អ្នក",
+  "sharedAddedTitle": "កំណត់ត្រាចែករំលែកថ្មី",
+  "sharedAddedBody": "{person} បានបន្ថែម {name}។",
+  "sharedExpiryTitle": "កាលបរិច្ឆេទផុតកំណត់បានប្ដូរ",
+  "sharedExpiryBody": "{person} បានប្ដូរកាលបរិច្ឆេទផុតកំណត់របស់ {name}។",
+  "sharedDeletedTitle": "កំណត់ត្រាចែករំលែកត្រូវបានលុប",
+  "sharedDeletedBody": "{person} បានលុប {name}។ អាចស្ដារវាមកវិញពី ទើបលុបថ្មីៗ ក្នុងរយៈពេល 30 ថ្ងៃ។"
 }

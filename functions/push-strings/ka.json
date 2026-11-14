@@ -14,5 +14,12 @@
   "updateReceivedBody": "მიღებულია განახლება ჩანაწერისთვის {name}, გამომგზავნი: {person}. გადახედეთ მას ოჯახის ეკრანზე.",
   "securityNewSignInTitle": "ახალი შესვლა თქვენს ანგარიშზე",
   "securityNewSignInBody": "თქვენს Vaultara ანგარიშზე შევიდნენ მოწყობილობიდან {device}. თუ ეს თქვენ არ იყავით, შეამოწმეთ ელფოსტა.",
-  "securityNewSignInBodyNoDevice": "თქვენს Vaultara ანგარიშზე შევიდნენ ახალი მოწყობილობიდან. თუ ეს თქვენ არ იყავით, შეამოწმეთ ელფოსტა."
+  "securityNewSignInBodyNoDevice": "თქვენს Vaultara ანგარიშზე შევიდნენ ახალი მოწყობილობიდან. თუ ეს თქვენ არ იყავით, შეამოწმეთ ელფოსტა.",
+  "householdSomeone": "ვინმე თქვენი ოჯახიდან",
+  "sharedAddedTitle": "ახალი საერთო ჩანაწერი",
+  "sharedAddedBody": "{person}-მა დაამატა {name}.",
+  "sharedExpiryTitle": "ვადა შეიცვალა",
+  "sharedExpiryBody": "{person}-მა შეცვალა {name}-ის ვადა.",
+  "sharedDeletedTitle": "საერთო ჩანაწერი წაიშალა",
+  "sharedDeletedBody": "{person}-მა წაშალა {name}. 30 დღის განმავლობაში შეიძლება აღდგეს ბოლოს წაშლილებიდან."
 }

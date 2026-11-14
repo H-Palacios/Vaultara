@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person}-ը {name}-ի համար թարմացում է ուղարկել։ Դիտեք այն Ընտանիք էկրանում։",
   "securityNewSignInTitle": "Նոր մուտք ձեր հաշիվ",
   "securityNewSignInBody": "Ձեր Vaultara հաշիվ մուտք են գործել {device} սարքից։ Եթե դա դուք չէիք, ստուգեք ձեր էլ. փոստը։",
-  "securityNewSignInBodyNoDevice": "Ձեր Vaultara հաշիվ մուտք են գործել նոր սարքից։ Եթե դա դուք չէիք, ստուգեք ձեր էլ. փոստը։"
+  "securityNewSignInBodyNoDevice": "Ձեր Vaultara հաշիվ մուտք են գործել նոր սարքից։ Եթե դա դուք չէիք, ստուգեք ձեր էլ. փոստը։",
+  "householdSomeone": "Ձեր ընտանիքից մեկը",
+  "sharedAddedTitle": "Նոր ընդհանուր գրառում",
+  "sharedAddedBody": "{person}-ն ավելացրեց {name}։",
+  "sharedExpiryTitle": "Ժամկետը փոխվեց",
+  "sharedExpiryBody": "{person}-ը փոխեց {name}-ի ժամկետը։",
+  "sharedDeletedTitle": "Ընդհանուր գրառումը ջնջվեց",
+  "sharedDeletedBody": "{person}-ը ջնջեց {name}։ Այն կարելի է վերականգնել Վերջերս ջնջվածներից 30 օրվա ընթացքում։"
 }

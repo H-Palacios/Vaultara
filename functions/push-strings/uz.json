@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} {name} uchun yangilanish yubordi. Uni Oila ekranida koʻrib chiqing.",
   "securityNewSignInTitle": "Hisobingizga yangi kirish",
   "securityNewSignInBody": "Vaultara hisobingizga {device} qurilmasida kirildi. Agar bu siz boʻlmasangiz, e-pochtangizni tekshiring.",
-  "securityNewSignInBodyNoDevice": "Vaultara hisobingizga yangi qurilmada kirildi. Agar bu siz boʻlmasangiz, e-pochtangizni tekshiring."
+  "securityNewSignInBodyNoDevice": "Vaultara hisobingizga yangi qurilmada kirildi. Agar bu siz boʻlmasangiz, e-pochtangizni tekshiring.",
+  "householdSomeone": "Oilangizdan kimdir",
+  "sharedAddedTitle": "Yangi umumiy yozuv",
+  "sharedAddedBody": "{person} {name} qo‘shdi.",
+  "sharedExpiryTitle": "Muddat o‘zgardi",
+  "sharedExpiryBody": "{person} {name} muddatini o‘zgartirdi.",
+  "sharedDeletedTitle": "Umumiy yozuv o‘chirildi",
+  "sharedDeletedBody": "{person} {name} o‘chirdi. Uni 30 kun ichida Yaqinda o‘chirilganlardan tiklash mumkin."
 }

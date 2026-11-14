@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} نوێکردنەوەیەکی بۆ {name} ناردووە. لە شاشەی خێزان بیپشکنە.",
   "securityNewSignInTitle": "چوونەژوورەوەیەکی نوێ بۆ هەژمارەکەت",
   "securityNewSignInBody": "لەسەر {device} چوونە ناو هەژماری Vaultaraـەکەتەوە. ئەگەر ئەمە تۆ نەبوویت، ئیمەیڵەکەت بپشکنە.",
-  "securityNewSignInBodyNoDevice": "لەسەر ئامێرێکی نوێ چوونە ناو هەژماری Vaultaraـەکەتەوە. ئەگەر ئەمە تۆ نەبوویت، ئیمەیڵەکەت بپشکنە."
+  "securityNewSignInBodyNoDevice": "لەسەر ئامێرێکی نوێ چوونە ناو هەژماری Vaultaraـەکەتەوە. ئەگەر ئەمە تۆ نەبوویت، ئیمەیڵەکەت بپشکنە.",
+  "householdSomeone": "کەسێک لە خێزانەکەت",
+  "sharedAddedTitle": "تۆمارێکی هاوبەشی نوێ",
+  "sharedAddedBody": "{person} {name}ی زیادکرد.",
+  "sharedExpiryTitle": "بەرواری بەسەرچوون گۆڕدرا",
+  "sharedExpiryBody": "{person} بەرواری بەسەرچوونی {name}ی گۆڕی.",
+  "sharedDeletedTitle": "تۆمارێکی هاوبەش سڕایەوە",
+  "sharedDeletedBody": "{person} {name}ی سڕییەوە. تا 30 ڕۆژ لە تازە سڕاوەکان دەگەڕێنرێتەوە."
 }

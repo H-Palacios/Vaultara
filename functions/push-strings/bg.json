@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} изпрати актуализация за {name}. Прегледайте я на екрана Семейство.",
   "securityNewSignInTitle": "Нов вход в акаунта ви",
   "securityNewSignInBody": "Извършен е вход в акаунта ви във Vaultara на {device}. Ако това не сте били вие, проверете имейла си.",
-  "securityNewSignInBodyNoDevice": "Извършен е вход в акаунта ви във Vaultara на ново устройство. Ако това не сте били вие, проверете имейла си."
+  "securityNewSignInBodyNoDevice": "Извършен е вход в акаунта ви във Vaultara на ново устройство. Ако това не сте били вие, проверете имейла си.",
+  "householdSomeone": "Някой от вашето домакинство",
+  "sharedAddedTitle": "Нов споделен запис",
+  "sharedAddedBody": "{person} добави {name}.",
+  "sharedExpiryTitle": "Датата на изтичане е променена",
+  "sharedExpiryBody": "{person} промени датата на изтичане на {name}.",
+  "sharedDeletedTitle": "Споделен запис е изтрит",
+  "sharedDeletedBody": "{person} изтри {name}. Може да се възстанови от Наскоро изтрити в рамките на 30 дни."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} {name}-এর জন্য একটি আপডেট পাঠিয়েছেন। পরিবার স্ক্রিনে এটি দেখুন।",
   "securityNewSignInTitle": "আপনার অ্যাকাউন্টে নতুন সাইন ইন",
   "securityNewSignInBody": "{device}-এ আপনার Vaultara অ্যাকাউন্টে সাইন ইন করা হয়েছে। এটি যদি আপনি না হয়ে থাকেন, তাহলে আপনার ইমেইল দেখুন।",
-  "securityNewSignInBodyNoDevice": "একটি নতুন ডিভাইসে আপনার Vaultara অ্যাকাউন্টে সাইন ইন করা হয়েছে। এটি যদি আপনি না হয়ে থাকেন, তাহলে আপনার ইমেইল দেখুন।"
+  "securityNewSignInBodyNoDevice": "একটি নতুন ডিভাইসে আপনার Vaultara অ্যাকাউন্টে সাইন ইন করা হয়েছে। এটি যদি আপনি না হয়ে থাকেন, তাহলে আপনার ইমেইল দেখুন।",
+  "householdSomeone": "আপনার পরিবারের কেউ",
+  "sharedAddedTitle": "নতুন শেয়ার করা রেকর্ড",
+  "sharedAddedBody": "{person} {name} যোগ করেছেন।",
+  "sharedExpiryTitle": "মেয়াদ শেষের তারিখ বদলেছে",
+  "sharedExpiryBody": "{person} {name}-এর মেয়াদ শেষের তারিখ বদলেছেন।",
+  "sharedDeletedTitle": "শেয়ার করা রেকর্ড মুছে ফেলা হয়েছে",
+  "sharedDeletedBody": "{person} {name} মুছে ফেলেছেন। ৩০ দিনের মধ্যে সম্প্রতি মোছা থেকে ফেরানো যাবে।"
 }

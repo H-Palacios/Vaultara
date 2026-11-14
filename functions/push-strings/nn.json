@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} sende ei oppdatering for {name}. Sjekk ho på Familie-skjermen.",
   "securityNewSignInTitle": "Ny innlogging på kontoen din",
   "securityNewSignInBody": "Nokon logga inn på Vaultara-kontoen din på {device}. Om dette ikkje var deg, sjekk e-posten din.",
-  "securityNewSignInBodyNoDevice": "Nokon logga inn på Vaultara-kontoen din på ei ny eining. Om dette ikkje var deg, sjekk e-posten din."
+  "securityNewSignInBodyNoDevice": "Nokon logga inn på Vaultara-kontoen din på ei ny eining. Om dette ikkje var deg, sjekk e-posten din.",
+  "householdSomeone": "Nokon i hushaldet ditt",
+  "sharedAddedTitle": "Ny delt oppføring",
+  "sharedAddedBody": "{person} la til {name}.",
+  "sharedExpiryTitle": "Utløpsdato endra",
+  "sharedExpiryBody": "{person} endra utløpsdatoen for {name}.",
+  "sharedDeletedTitle": "Delt oppføring sletta",
+  "sharedDeletedBody": "{person} sletta {name}. Ho kan gjenopprettast frå Nyleg sletta i 30 dagar."
 }

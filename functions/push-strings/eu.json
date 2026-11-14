@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} pertsonak eguneratze bat bidali du {name} erregistrorako. Berrikusi Familia pantailan.",
   "securityNewSignInTitle": "Saio-hasiera berria zure kontuan",
   "securityNewSignInBody": "Zure Vaultara kontuan saioa hasi da {device} gailuan. Zu izan ez bazara, begiratu zure posta elektronikoa.",
-  "securityNewSignInBodyNoDevice": "Zure Vaultara kontuan saioa hasi da gailu berri batean. Zu izan ez bazara, begiratu zure posta elektronikoa."
+  "securityNewSignInBodyNoDevice": "Zure Vaultara kontuan saioa hasi da gailu berri batean. Zu izan ez bazara, begiratu zure posta elektronikoa.",
+  "householdSomeone": "Zure etxeko norbait",
+  "sharedAddedTitle": "Partekatutako erregistro berria",
+  "sharedAddedBody": "{person}(e)k {name} gehitu du.",
+  "sharedExpiryTitle": "Iraungitze-data aldatu da",
+  "sharedExpiryBody": "{person}(e)k {name} erregistroaren iraungitze-data aldatu du.",
+  "sharedDeletedTitle": "Partekatutako erregistroa ezabatu da",
+  "sharedDeletedBody": "{person}(e)k {name} ezabatu du. 30 egunez berreskura daiteke Duela gutxi ezabatuak atalean."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} dërgoi një përditësim për {name}. Shqyrtojeni te ekrani Familja.",
   "securityNewSignInTitle": "Hyrje e re në llogarinë tuaj",
   "securityNewSignInBody": "U hyrë në llogarinë tuaj Vaultara në {device}. Nëse nuk ishit ju, kontrolloni emailin.",
-  "securityNewSignInBodyNoDevice": "U hyrë në llogarinë tuaj Vaultara në një pajisje të re. Nëse nuk ishit ju, kontrolloni emailin."
+  "securityNewSignInBodyNoDevice": "U hyrë në llogarinë tuaj Vaultara në një pajisje të re. Nëse nuk ishit ju, kontrolloni emailin.",
+  "householdSomeone": "Dikush nga familja juaj",
+  "sharedAddedTitle": "Regjistrim i ri i përbashkët",
+  "sharedAddedBody": "{person} shtoi {name}.",
+  "sharedExpiryTitle": "Data e skadimit ndryshoi",
+  "sharedExpiryBody": "{person} ndryshoi datën e skadimit të {name}.",
+  "sharedDeletedTitle": "Regjistrimi i përbashkët u fshi",
+  "sharedDeletedBody": "{person} fshiu {name}. Mund të rikthehet nga Të fshirat së fundi për 30 ditë."
 }

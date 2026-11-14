@@ -14,5 +14,12 @@
   "updateReceivedBody": "Ажурирање за {name} стигло је од особе {person}. Прегледајте га на екрану Породица.",
   "securityNewSignInTitle": "Нова пријава на ваш налог",
   "securityNewSignInBody": "Неко се пријавио на ваш Vaultara налог на уређају {device}. Ако то нисте били ви, проверите имејл.",
-  "securityNewSignInBodyNoDevice": "Неко се пријавио на ваш Vaultara налог на новом уређају. Ако то нисте били ви, проверите имејл."
+  "securityNewSignInBodyNoDevice": "Неко се пријавио на ваш Vaultara налог на новом уређају. Ако то нисте били ви, проверите имејл.",
+  "householdSomeone": "Неко из вашег домаћинства",
+  "sharedAddedTitle": "Нови заједнички запис",
+  "sharedAddedBody": "{person}: додат запис {name}.",
+  "sharedExpiryTitle": "Датум истека промењен",
+  "sharedExpiryBody": "{person}: промењен датум истека за {name}.",
+  "sharedDeletedTitle": "Заједнички запис избрисан",
+  "sharedDeletedBody": "{person}: избрисан запис {name}. Може се вратити из Недавно избрисаног у року од 30 дана."
 }

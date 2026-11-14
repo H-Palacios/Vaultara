@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} saatis uuenduse kirje {name} kohta. Vaata see üle ekraanil Pere.",
   "securityNewSignInTitle": "Uus sisselogimine sinu kontole",
   "securityNewSignInBody": "Sinu Vaultara kontole logiti sisse seadmest {device}. Kui see ei olnud sina, kontrolli oma e-posti.",
-  "securityNewSignInBodyNoDevice": "Sinu Vaultara kontole logiti sisse uuest seadmest. Kui see ei olnud sina, kontrolli oma e-posti."
+  "securityNewSignInBodyNoDevice": "Sinu Vaultara kontole logiti sisse uuest seadmest. Kui see ei olnud sina, kontrolli oma e-posti.",
+  "householdSomeone": "Keegi sinu leibkonnast",
+  "sharedAddedTitle": "Uus jagatud kirje",
+  "sharedAddedBody": "{person} lisas {name}.",
+  "sharedExpiryTitle": "Aegumiskuupäev muutus",
+  "sharedExpiryBody": "{person} muutis kirje {name} aegumiskuupäeva.",
+  "sharedDeletedTitle": "Jagatud kirje kustutati",
+  "sharedDeletedBody": "{person} kustutas {name}. Selle saab 30 päeva jooksul taastada jaotisest Hiljuti kustutatud."
 }

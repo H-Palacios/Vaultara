@@ -14,5 +14,12 @@
   "updateReceivedBody": "Oseba {person} je poslala posodobitev za zapis {name}. Preglejte jo na zaslonu Družina.",
   "securityNewSignInTitle": "Nova prijava v vaš račun",
   "securityNewSignInBody": "V vaš račun Vaultara se je nekdo prijavil v napravi {device}. Če to niste bili vi, preverite e-pošto.",
-  "securityNewSignInBodyNoDevice": "V vaš račun Vaultara se je nekdo prijavil v novi napravi. Če to niste bili vi, preverite e-pošto."
+  "securityNewSignInBodyNoDevice": "V vaš račun Vaultara se je nekdo prijavil v novi napravi. Če to niste bili vi, preverite e-pošto.",
+  "householdSomeone": "Nekdo iz vašega gospodinjstva",
+  "sharedAddedTitle": "Nov skupni zapis",
+  "sharedAddedBody": "{person}: dodan zapis {name}.",
+  "sharedExpiryTitle": "Datum poteka spremenjen",
+  "sharedExpiryBody": "{person}: spremenjen datum poteka zapisa {name}.",
+  "sharedDeletedTitle": "Skupni zapis izbrisan",
+  "sharedDeletedBody": "{person}: izbrisan zapis {name}. Obnoviti ga je mogoče iz Nedavno izbrisanih v 30 dneh."
 }

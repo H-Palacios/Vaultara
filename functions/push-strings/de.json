@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} hat ein Update für {name} gesendet. Prüfe es auf dem Bildschirm Familie.",
   "securityNewSignInTitle": "Neue Anmeldung bei deinem Konto",
   "securityNewSignInBody": "Dein Vaultara-Konto wurde auf {device} angemeldet. Wenn du das nicht warst, prüfe deine E-Mails.",
-  "securityNewSignInBodyNoDevice": "Dein Vaultara-Konto wurde auf einem neuen Gerät angemeldet. Wenn du das nicht warst, prüfe deine E-Mails."
+  "securityNewSignInBodyNoDevice": "Dein Vaultara-Konto wurde auf einem neuen Gerät angemeldet. Wenn du das nicht warst, prüfe deine E-Mails.",
+  "householdSomeone": "Jemand aus deinem Haushalt",
+  "sharedAddedTitle": "Neuer geteilter Eintrag",
+  "sharedAddedBody": "{person} hat {name} hinzugefügt.",
+  "sharedExpiryTitle": "Ablaufdatum geändert",
+  "sharedExpiryBody": "{person} hat das Ablaufdatum von {name} geändert.",
+  "sharedDeletedTitle": "Geteilter Eintrag gelöscht",
+  "sharedDeletedBody": "{person} hat {name} gelöscht. Er kann 30 Tage lang unter Zuletzt gelöscht wiederhergestellt werden."
 }

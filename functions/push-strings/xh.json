@@ -14,5 +14,12 @@
   "updateReceivedBody": "U-{person} uthumele uhlaziyo lwe-{name}. Lujonge kwisikrini sikaSapho.",
   "securityNewSignInTitle": "Ukungena okutsha kwiakhawunti yakho",
   "securityNewSignInBody": "Kungenwe kwiakhawunti yakho ye-Vaultara ku-{device}. Ukuba ibingengowe, jonga i-imeyile yakho.",
-  "securityNewSignInBodyNoDevice": "Kungenwe kwiakhawunti yakho ye-Vaultara kwisixhobo esitsha. Ukuba ibingengowe, jonga i-imeyile yakho."
+  "securityNewSignInBodyNoDevice": "Kungenwe kwiakhawunti yakho ye-Vaultara kwisixhobo esitsha. Ukuba ibingengowe, jonga i-imeyile yakho.",
+  "householdSomeone": "Umntu ekhayeni lakho",
+  "sharedAddedTitle": "Irekhodi entsha ekwabelwana ngayo",
+  "sharedAddedBody": "U-{person} wongeze {name}.",
+  "sharedExpiryTitle": "Umhla wokuphelelwa utshintshile",
+  "sharedExpiryBody": "U-{person} utshintshe umhla wokuphelelwa ka-{name}.",
+  "sharedDeletedTitle": "Irekhodi ekwabelwana ngayo icinyiwe",
+  "sharedDeletedBody": "U-{person} ucime {name}. Inokubuyiselwa kwi-Ezicinywe kutshanje iintsuku ezingama-30."
 }

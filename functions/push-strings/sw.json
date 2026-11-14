@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} ametuma usasishaji wa {name}. Uukague kwenye skrini ya Familia.",
   "securityNewSignInTitle": "Kuingia kupya kwenye akaunti yako",
   "securityNewSignInBody": "Mtu ameingia kwenye akaunti yako ya Vaultara kwenye {device}. Ikiwa si wewe, angalia barua pepe yako.",
-  "securityNewSignInBodyNoDevice": "Mtu ameingia kwenye akaunti yako ya Vaultara kwenye kifaa kipya. Ikiwa si wewe, angalia barua pepe yako."
+  "securityNewSignInBodyNoDevice": "Mtu ameingia kwenye akaunti yako ya Vaultara kwenye kifaa kipya. Ikiwa si wewe, angalia barua pepe yako.",
+  "householdSomeone": "Mtu katika kaya yako",
+  "sharedAddedTitle": "Rekodi mpya inayoshirikiwa",
+  "sharedAddedBody": "{person} ameongeza {name}.",
+  "sharedExpiryTitle": "Tarehe ya kuisha imebadilika",
+  "sharedExpiryBody": "{person} amebadilisha tarehe ya kuisha ya {name}.",
+  "sharedDeletedTitle": "Rekodi inayoshirikiwa imefutwa",
+  "sharedDeletedBody": "{person} amefuta {name}. Inaweza kurejeshwa kutoka Zilizofutwa hivi karibuni kwa siku 30."
 }

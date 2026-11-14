@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} zipụrụ mmelite maka {name}. Lelee ya na ihuenyo Ezinụlọ.",
   "securityNewSignInTitle": "Nbanye ọhụrụ n'akaụntụ gị",
   "securityNewSignInBody": "Mmadụ banyere n'akaụntụ Vaultara gị na {device}. Ọ bụrụ na ọ bụghị gị, lelee email gị.",
-  "securityNewSignInBodyNoDevice": "Mmadụ banyere n'akaụntụ Vaultara gị na ngwaọrụ ọhụrụ. Ọ bụrụ na ọ bụghị gị, lelee email gị."
+  "securityNewSignInBodyNoDevice": "Mmadụ banyere n'akaụntụ Vaultara gị na ngwaọrụ ọhụrụ. Ọ bụrụ na ọ bụghị gị, lelee email gị.",
+  "householdSomeone": "Onye nọ n’ezinụlọ gị",
+  "sharedAddedTitle": "Ndekọ ọhụrụ a na-ekerịta",
+  "sharedAddedBody": "{person} tinyere {name}.",
+  "sharedExpiryTitle": "Ụbọchị njedebe agbanweela",
+  "sharedExpiryBody": "{person} gbanwere ụbọchị njedebe nke {name}.",
+  "sharedDeletedTitle": "E hichapụrụ ndekọ a na-ekerịta",
+  "sharedDeletedBody": "{person} hichapụrụ {name}. Enwere ike iweghachi ya site na Ndị e hichapụrụ na nso nso a n’ime ụbọchị 30."
 }

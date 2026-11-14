@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} {name} కోసం అప్‌డేట్ పంపారు. కుటుంబం స్క్రీన్‌లో దాన్ని సమీక్షించండి.",
   "securityNewSignInTitle": "మీ ఖాతాలో కొత్త సైన్ ఇన్",
   "securityNewSignInBody": "మీ Vaultara ఖాతాలో {device}లో సైన్ ఇన్ చేయబడింది. ఇది మీరు కాకపోతే, మీ ఈమెయిల్‌ను తనిఖీ చేయండి.",
-  "securityNewSignInBodyNoDevice": "మీ Vaultara ఖాతాలో కొత్త పరికరంలో సైన్ ఇన్ చేయబడింది. ఇది మీరు కాకపోతే, మీ ఈమెయిల్‌ను తనిఖీ చేయండి."
+  "securityNewSignInBodyNoDevice": "మీ Vaultara ఖాతాలో కొత్త పరికరంలో సైన్ ఇన్ చేయబడింది. ఇది మీరు కాకపోతే, మీ ఈమెయిల్‌ను తనిఖీ చేయండి.",
+  "householdSomeone": "మీ ఇంట్లో ఎవరో",
+  "sharedAddedTitle": "కొత్త షేర్ చేసిన రికార్డ్",
+  "sharedAddedBody": "{person} {name} ను జోడించారు.",
+  "sharedExpiryTitle": "గడువు తేదీ మారింది",
+  "sharedExpiryBody": "{person} {name} గడువు తేదీని మార్చారు.",
+  "sharedDeletedTitle": "షేర్ చేసిన రికార్డ్ తొలగించబడింది",
+  "sharedDeletedBody": "{person} {name} ను తొలగించారు. 30 రోజుల వరకు ఇటీవల తొలగించినవి నుండి తిరిగి తేవచ్చు."
 }

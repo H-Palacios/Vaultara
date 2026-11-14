@@ -14,5 +14,12 @@
   "updateReceivedBody": "Cusboonaysiin ayaa laga helay {person} oo ku saabsan {name}. Ka eeg shaashadda Qoyska.",
   "securityNewSignInTitle": "Gelitaan cusub oo akoonkaaga ah",
   "securityNewSignInBody": "Akoonkaaga Vaultara waxaa laga soo galay {device}. Haddii aysan adiga ahayn, hubi iimaylkaaga.",
-  "securityNewSignInBodyNoDevice": "Akoonkaaga Vaultara waxaa laga soo galay qalab cusub. Haddii aysan adiga ahayn, hubi iimaylkaaga."
+  "securityNewSignInBodyNoDevice": "Akoonkaaga Vaultara waxaa laga soo galay qalab cusub. Haddii aysan adiga ahayn, hubi iimaylkaaga.",
+  "householdSomeone": "Qof ka mid ah qoyskaaga",
+  "sharedAddedTitle": "Diiwaan cusub oo la wadaago",
+  "sharedAddedBody": "{person} ayaa ku daray {name}.",
+  "sharedExpiryTitle": "Taariikhda dhicitaanka waa la beddelay",
+  "sharedExpiryBody": "{person} ayaa beddelay taariikhda dhicitaanka {name}.",
+  "sharedDeletedTitle": "Diiwaan la wadaago waa la tirtiray",
+  "sharedDeletedBody": "{person} ayaa tirtiray {name}. Waxaa laga soo celin karaa Dhawaan la tirtiray muddo 30 maalmood ah."
 }

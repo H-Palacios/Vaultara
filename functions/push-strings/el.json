@@ -14,5 +14,12 @@
   "updateReceivedBody": "Το άτομο {person} έστειλε ενημέρωση για το {name}. Ελέγξτε την στην οθόνη Οικογένεια.",
   "securityNewSignInTitle": "Νέα σύνδεση στον λογαριασμό σας",
   "securityNewSignInBody": "Έγινε σύνδεση στον λογαριασμό σας στο Vaultara από {device}. Αν δεν ήσασταν εσείς, ελέγξτε το email σας.",
-  "securityNewSignInBodyNoDevice": "Έγινε σύνδεση στον λογαριασμό σας στο Vaultara από νέα συσκευή. Αν δεν ήσασταν εσείς, ελέγξτε το email σας."
+  "securityNewSignInBodyNoDevice": "Έγινε σύνδεση στον λογαριασμό σας στο Vaultara από νέα συσκευή. Αν δεν ήσασταν εσείς, ελέγξτε το email σας.",
+  "householdSomeone": "Κάποιος από το νοικοκυριό σας",
+  "sharedAddedTitle": "Νέα κοινόχρηστη εγγραφή",
+  "sharedAddedBody": "{person}: προστέθηκε {name}.",
+  "sharedExpiryTitle": "Η ημερομηνία λήξης άλλαξε",
+  "sharedExpiryBody": "{person}: άλλαξε η ημερομηνία λήξης για {name}.",
+  "sharedDeletedTitle": "Κοινόχρηστη εγγραφή διαγράφηκε",
+  "sharedDeletedBody": "{person}: διαγράφηκε {name}. Μπορεί να επανέλθει από τα Πρόσφατα διαγραμμένα για 30 ημέρες."
 }

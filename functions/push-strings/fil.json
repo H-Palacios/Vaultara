@@ -14,5 +14,12 @@
   "updateReceivedBody": "Nagpadala si {person} ng update para sa {name}. Suriin ito sa screen na Pamilya.",
   "securityNewSignInTitle": "Bagong pag-sign in sa account mo",
   "securityNewSignInBody": "May nag-sign in sa Vaultara account mo sa {device}. Kung hindi ikaw ito, tingnan ang email mo.",
-  "securityNewSignInBodyNoDevice": "May nag-sign in sa Vaultara account mo sa isang bagong device. Kung hindi ikaw ito, tingnan ang email mo."
+  "securityNewSignInBodyNoDevice": "May nag-sign in sa Vaultara account mo sa isang bagong device. Kung hindi ikaw ito, tingnan ang email mo.",
+  "householdSomeone": "Isang tao sa sambahayan mo",
+  "sharedAddedTitle": "Bagong shared na rekord",
+  "sharedAddedBody": "Idinagdag ni {person} ang {name}.",
+  "sharedExpiryTitle": "Nagbago ang petsa ng pag-expire",
+  "sharedExpiryBody": "Binago ni {person} ang petsa ng pag-expire ng {name}.",
+  "sharedDeletedTitle": "Binura ang shared na rekord",
+  "sharedDeletedBody": "Binura ni {person} ang {name}. Puwede itong ibalik mula sa Kamakailang binura sa loob ng 30 araw."
 }

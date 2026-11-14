@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} sent an update for {name}. Review it on the Family screen.",
   "securityNewSignInTitle": "New sign-in to your account",
   "securityNewSignInBody": "Your Vaultara account was signed in to on {device}. If this was not you, check your email.",
-  "securityNewSignInBodyNoDevice": "Your Vaultara account was signed in to on a new device. If this was not you, check your email."
+  "securityNewSignInBodyNoDevice": "Your Vaultara account was signed in to on a new device. If this was not you, check your email.",
+  "householdSomeone": "Someone in your household",
+  "sharedAddedTitle": "New shared record",
+  "sharedAddedBody": "{person} added {name}.",
+  "sharedExpiryTitle": "Expiry date changed",
+  "sharedExpiryBody": "{person} changed the expiry date of {name}.",
+  "sharedDeletedTitle": "Shared record deleted",
+  "sharedDeletedBody": "{person} deleted {name}. It can be restored from Recently deleted for 30 days."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} {name} үчүн жаңыртуу жөнөттү. Аны Үй-бүлө экранынан карап чыгыңыз.",
   "securityNewSignInTitle": "Каттоо эсебиңизге жаңы кирүү",
   "securityNewSignInBody": "Vaultara каттоо эсебиңизге {device} түзмөгүнөн кирилди. Эгер бул сиз болбосоңуз, электрондук почтаңызды текшериңиз.",
-  "securityNewSignInBodyNoDevice": "Vaultara каттоо эсебиңизге жаңы түзмөктөн кирилди. Эгер бул сиз болбосоңуз, электрондук почтаңызды текшериңиз."
+  "securityNewSignInBodyNoDevice": "Vaultara каттоо эсебиңизге жаңы түзмөктөн кирилди. Эгер бул сиз болбосоңуз, электрондук почтаңызды текшериңиз.",
+  "householdSomeone": "Үй-бүлөңүздөн бирөө",
+  "sharedAddedTitle": "Жаңы жалпы жазуу",
+  "sharedAddedBody": "{person} {name} кошту.",
+  "sharedExpiryTitle": "Мөөнөт өзгөрдү",
+  "sharedExpiryBody": "{person} {name} мөөнөтүн өзгөрттү.",
+  "sharedDeletedTitle": "Жалпы жазуу өчүрүлдү",
+  "sharedDeletedBody": "{person} {name} өчүрдү. Аны 30 күн ичинде Жакында өчүрүлгөндөрдөн калыбына келтирсе болот."
 }

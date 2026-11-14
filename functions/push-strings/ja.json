@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person}さんが{name}の更新を送信しました。家族画面で確認してください。",
   "securityNewSignInTitle": "アカウントへの新しいサインイン",
   "securityNewSignInBody": "{device} から Vaultara アカウントにサインインがありました。ご自身による操作でない場合は、メールを確認してください。",
-  "securityNewSignInBodyNoDevice": "新しいデバイスから Vaultara アカウントにサインインがありました。ご自身による操作でない場合は、メールを確認してください。"
+  "securityNewSignInBodyNoDevice": "新しいデバイスから Vaultara アカウントにサインインがありました。ご自身による操作でない場合は、メールを確認してください。",
+  "householdSomeone": "世帯の誰か",
+  "sharedAddedTitle": "新しい共有の記録",
+  "sharedAddedBody": "{person}さんが{name}を追加しました。",
+  "sharedExpiryTitle": "期限が変わりました",
+  "sharedExpiryBody": "{person}さんが{name}の期限を変更しました。",
+  "sharedDeletedTitle": "共有の記録が削除されました",
+  "sharedDeletedBody": "{person}さんが{name}を削除しました。30日間は「最近削除した項目」から戻せます。"
 }

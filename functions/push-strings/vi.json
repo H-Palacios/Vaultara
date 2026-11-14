@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} đã gửi cập nhật cho {name}. Hãy xem trên màn hình Gia đình.",
   "securityNewSignInTitle": "Lần đăng nhập mới vào tài khoản của bạn",
   "securityNewSignInBody": "Tài khoản Vaultara của bạn đã được đăng nhập trên {device}. Nếu đó không phải là bạn, hãy kiểm tra email.",
-  "securityNewSignInBodyNoDevice": "Tài khoản Vaultara của bạn đã được đăng nhập trên một thiết bị mới. Nếu đó không phải là bạn, hãy kiểm tra email."
+  "securityNewSignInBodyNoDevice": "Tài khoản Vaultara của bạn đã được đăng nhập trên một thiết bị mới. Nếu đó không phải là bạn, hãy kiểm tra email.",
+  "householdSomeone": "Một người trong gia đình bạn",
+  "sharedAddedTitle": "Bản ghi chia sẻ mới",
+  "sharedAddedBody": "{person} đã thêm {name}.",
+  "sharedExpiryTitle": "Ngày hết hạn đã thay đổi",
+  "sharedExpiryBody": "{person} đã thay đổi ngày hết hạn của {name}.",
+  "sharedDeletedTitle": "Bản ghi chia sẻ đã bị xóa",
+  "sharedDeletedBody": "{person} đã xóa {name}. Có thể khôi phục từ Đã xóa gần đây trong 30 ngày."
 }

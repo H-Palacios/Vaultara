@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} 发来了 {name} 的更新。请在家庭页面查看。",
   "securityNewSignInTitle": "您的账户有新的登录",
   "securityNewSignInBody": "您的 Vaultara 账户已在 {device} 上登录。如果这不是您本人的操作，请查看您的电子邮件。",
-  "securityNewSignInBodyNoDevice": "您的 Vaultara 账户已在一台新设备上登录。如果这不是您本人的操作，请查看您的电子邮件。"
+  "securityNewSignInBodyNoDevice": "您的 Vaultara 账户已在一台新设备上登录。如果这不是您本人的操作，请查看您的电子邮件。",
+  "householdSomeone": "你家中的某人",
+  "sharedAddedTitle": "新的共享记录",
+  "sharedAddedBody": "{person} 添加了 {name}。",
+  "sharedExpiryTitle": "到期日已更改",
+  "sharedExpiryBody": "{person} 更改了 {name} 的到期日。",
+  "sharedDeletedTitle": "共享记录已删除",
+  "sharedDeletedBody": "{person} 删除了 {name}。30 天内可从“最近删除”中恢复。"
 }

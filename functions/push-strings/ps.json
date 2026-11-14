@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} د {name} لپاره اپډېټ واستاوه. په کورنۍ سکرین کې یې وګورئ.",
   "securityNewSignInTitle": "ستاسو حساب ته نوی ننوتل",
   "securityNewSignInBody": "ستاسو د Vaultara حساب ته په {device} کې ننوتل شوي. که دا تاسو نه وئ، خپل برېښنالیک وګورئ.",
-  "securityNewSignInBodyNoDevice": "ستاسو د Vaultara حساب ته په یوه نوې وسیله کې ننوتل شوي. که دا تاسو نه وئ، خپل برېښنالیک وګورئ."
+  "securityNewSignInBodyNoDevice": "ستاسو د Vaultara حساب ته په یوه نوې وسیله کې ننوتل شوي. که دا تاسو نه وئ، خپل برېښنالیک وګورئ.",
+  "householdSomeone": "ستاسو د کورنۍ یو څوک",
+  "sharedAddedTitle": "نوی شریک ریکارډ",
+  "sharedAddedBody": "{person} {name} زیات کړ.",
+  "sharedExpiryTitle": "د پای نیټه بدله شوه",
+  "sharedExpiryBody": "{person} د {name} د پای نیټه بدله کړه.",
+  "sharedDeletedTitle": "شریک ریکارډ ړنګ شو",
+  "sharedDeletedBody": "{person} {name} ړنګ کړ. تر 30 ورځو پورې له وروستیو ړنګ شویو بیرته راګرځول کیدی شي."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} ya aiko da sabuntawa na {name}. Duba shi a shafin Iyali.",
   "securityNewSignInTitle": "Sabon shiga a asusunka",
   "securityNewSignInBody": "An shiga asusunka na Vaultara a {device}. Idan ba kai ba ne, duba imel ɗinka.",
-  "securityNewSignInBodyNoDevice": "An shiga asusunka na Vaultara a sabuwar na'ura. Idan ba kai ba ne, duba imel ɗinka."
+  "securityNewSignInBodyNoDevice": "An shiga asusunka na Vaultara a sabuwar na'ura. Idan ba kai ba ne, duba imel ɗinka.",
+  "householdSomeone": "Wani a gidanku",
+  "sharedAddedTitle": "Sabon rikodin da aka raba",
+  "sharedAddedBody": "{person} ya ƙara {name}.",
+  "sharedExpiryTitle": "An canza ranar ƙarewa",
+  "sharedExpiryBody": "{person} ya canza ranar ƙarewar {name}.",
+  "sharedDeletedTitle": "An goge rikodin da aka raba",
+  "sharedDeletedBody": "{person} ya goge {name}. Ana iya dawo da shi daga Waɗanda aka goge kwanan nan cikin kwanaki 30."
 }

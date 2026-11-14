@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} {name}-д зориулсан шинэчлэл илгээлээ. Гэр бүл дэлгэц дээр шалгана уу.",
   "securityNewSignInTitle": "Таны бүртгэлд шинэ нэвтрэлт",
   "securityNewSignInBody": "Таны Vaultara бүртгэлд {device} төхөөрөмжөөс нэвтэрсэн байна. Хэрэв энэ та биш байсан бол имэйлээ шалгана уу.",
-  "securityNewSignInBodyNoDevice": "Таны Vaultara бүртгэлд шинэ төхөөрөмжөөс нэвтэрсэн байна. Хэрэв энэ та биш байсан бол имэйлээ шалгана уу."
+  "securityNewSignInBodyNoDevice": "Таны Vaultara бүртгэлд шинэ төхөөрөмжөөс нэвтэрсэн байна. Хэрэв энэ та биш байсан бол имэйлээ шалгана уу.",
+  "householdSomeone": "Таны гэр бүлийн хэн нэгэн",
+  "sharedAddedTitle": "Шинэ хуваалцсан бичлэг",
+  "sharedAddedBody": "{person} {name} нэмлээ.",
+  "sharedExpiryTitle": "Дуусах огноо өөрчлөгдлөө",
+  "sharedExpiryBody": "{person} {name}-ийн дуусах огноог өөрчиллөө.",
+  "sharedDeletedTitle": "Хуваалцсан бичлэг устлаа",
+  "sharedDeletedBody": "{person} {name} устгалаа. 30 хоногийн дотор Саяхан устгасан хэсгээс сэргээж болно."
 }

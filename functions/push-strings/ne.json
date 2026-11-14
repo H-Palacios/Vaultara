@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} ले {name} को अद्यावधिक पठाउनुभयो। परिवार स्क्रिनमा जाँच्नुहोस्।",
   "securityNewSignInTitle": "तपाईंको खातामा नयाँ साइन इन",
   "securityNewSignInBody": "{device} मा तपाईंको Vaultara खातामा साइन इन गरियो। यो तपाईं हुनुहुन्नथ्यो भने आफ्नो इमेल हेर्नुहोस्।",
-  "securityNewSignInBodyNoDevice": "नयाँ उपकरणमा तपाईंको Vaultara खातामा साइन इन गरियो। यो तपाईं हुनुहुन्नथ्यो भने आफ्नो इमेल हेर्नुहोस्।"
+  "securityNewSignInBodyNoDevice": "नयाँ उपकरणमा तपाईंको Vaultara खातामा साइन इन गरियो। यो तपाईं हुनुहुन्नथ्यो भने आफ्नो इमेल हेर्नुहोस्।",
+  "householdSomeone": "तपाईंको घरको कोही",
+  "sharedAddedTitle": "नयाँ साझा रेकर्ड",
+  "sharedAddedBody": "{person} ले {name} थप्नुभयो।",
+  "sharedExpiryTitle": "म्याद सकिने मिति बदलियो",
+  "sharedExpiryBody": "{person} ले {name} को म्याद सकिने मिति बदल्नुभयो।",
+  "sharedDeletedTitle": "साझा रेकर्ड मेटियो",
+  "sharedDeletedBody": "{person} ले {name} मेटाउनुभयो। ३० दिनसम्म हालै मेटिएकाबाट फर्काउन सकिन्छ।"
 }

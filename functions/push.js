@@ -83,6 +83,7 @@ function localParams(params, s) {
     if (typeof value === "number" && Number.isFinite(value)) out[key] = value;
     else if (typeof value === "string") out[key] = cleanName(value);
   }
+  if (params && "person" in params && !out.person) out.person = s.t("householdSomeone");
   if (params?.record) out.name = recordLabel(params.record, s);
   if (Array.isArray(params?.records)) {
     const records = params.records;

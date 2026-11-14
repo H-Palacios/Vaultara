@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} mengirim pembaruan untuk {name}. Periksa di layar Keluarga.",
   "securityNewSignInTitle": "Aktivitas masuk baru ke akun Anda",
   "securityNewSignInBody": "Akun Vaultara Anda dimasuki di {device}. Jika ini bukan Anda, periksa email Anda.",
-  "securityNewSignInBodyNoDevice": "Akun Vaultara Anda dimasuki di perangkat baru. Jika ini bukan Anda, periksa email Anda."
+  "securityNewSignInBodyNoDevice": "Akun Vaultara Anda dimasuki di perangkat baru. Jika ini bukan Anda, periksa email Anda.",
+  "householdSomeone": "Seseorang di rumah tangga Anda",
+  "sharedAddedTitle": "Catatan bersama baru",
+  "sharedAddedBody": "{person} menambahkan {name}.",
+  "sharedExpiryTitle": "Tanggal kedaluwarsa diubah",
+  "sharedExpiryBody": "{person} mengubah tanggal kedaluwarsa {name}.",
+  "sharedDeletedTitle": "Catatan bersama dihapus",
+  "sharedDeletedBody": "{person} menghapus {name}. Catatan ini bisa dipulihkan dari Baru dihapus selama 30 hari."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "{person} a envoyé une mise à jour pour {name}. Vérifiez-la sur l’écran Famille.",
   "securityNewSignInTitle": "Nouvelle connexion à votre compte",
   "securityNewSignInBody": "Une connexion à votre compte Vaultara a eu lieu sur {device}. Si ce n'était pas vous, consultez vos e-mails.",
-  "securityNewSignInBodyNoDevice": "Une connexion à votre compte Vaultara a eu lieu sur un nouvel appareil. Si ce n'était pas vous, consultez vos e-mails."
+  "securityNewSignInBodyNoDevice": "Une connexion à votre compte Vaultara a eu lieu sur un nouvel appareil. Si ce n'était pas vous, consultez vos e-mails.",
+  "householdSomeone": "Quelqu’un de votre foyer",
+  "sharedAddedTitle": "Nouvel élément partagé",
+  "sharedAddedBody": "{person} a ajouté {name}.",
+  "sharedExpiryTitle": "Date d’expiration modifiée",
+  "sharedExpiryBody": "{person} a modifié la date d’expiration de {name}.",
+  "sharedDeletedTitle": "Élément partagé supprimé",
+  "sharedDeletedBody": "{person} a supprimé {name}. Il peut être restauré depuis Récemment supprimés pendant 30 jours."
 }

@@ -14,5 +14,12 @@
   "updateReceivedBody": "Ažuriranje za {name} stiglo je od osobe {person}. Pregledajte ga na zaslonu Obitelj.",
   "securityNewSignInTitle": "Nova prijava u vaš račun",
   "securityNewSignInBody": "Netko se prijavio u vaš Vaultara račun na uređaju {device}. Ako to niste bili vi, provjerite svoju email poštu.",
-  "securityNewSignInBodyNoDevice": "Netko se prijavio u vaš Vaultara račun na novom uređaju. Ako to niste bili vi, provjerite svoju email poštu."
+  "securityNewSignInBodyNoDevice": "Netko se prijavio u vaš Vaultara račun na novom uređaju. Ako to niste bili vi, provjerite svoju email poštu.",
+  "householdSomeone": "Netko iz vašeg kućanstva",
+  "sharedAddedTitle": "Novi zajednički zapis",
+  "sharedAddedBody": "{person}: dodan zapis {name}.",
+  "sharedExpiryTitle": "Datum isteka promijenjen",
+  "sharedExpiryBody": "{person}: promijenjen datum isteka za {name}.",
+  "sharedDeletedTitle": "Zajednički zapis izbrisan",
+  "sharedDeletedBody": "{person}: izbrisan zapis {name}. Može se vratiti iz Nedavno izbrisanog u roku od 30 dana."
 }

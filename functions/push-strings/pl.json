@@ -14,5 +14,12 @@
   "updateReceivedBody": "Aktualizacja dla: {name}, od: {person}. Sprawdź ją na ekranie Rodzina.",
   "securityNewSignInTitle": "Nowe logowanie na twoje konto",
   "securityNewSignInBody": "Ktoś zalogował się na twoje konto Vaultara na urządzeniu {device}. Jeśli to nie byłeś ty, sprawdź pocztę e-mail.",
-  "securityNewSignInBodyNoDevice": "Ktoś zalogował się na twoje konto Vaultara na nowym urządzeniu. Jeśli to nie byłeś ty, sprawdź pocztę e-mail."
+  "securityNewSignInBodyNoDevice": "Ktoś zalogował się na twoje konto Vaultara na nowym urządzeniu. Jeśli to nie byłeś ty, sprawdź pocztę e-mail.",
+  "householdSomeone": "Ktoś z twojego gospodarstwa",
+  "sharedAddedTitle": "Nowy udostępniony rekord",
+  "sharedAddedBody": "{person}: dodano {name}.",
+  "sharedExpiryTitle": "Zmieniono datę ważności",
+  "sharedExpiryBody": "{person}: zmieniono datę ważności {name}.",
+  "sharedDeletedTitle": "Usunięto udostępniony rekord",
+  "sharedDeletedBody": "{person}: usunięto {name}. Można go przywrócić z Ostatnio usuniętych przez 30 dni."
 }
