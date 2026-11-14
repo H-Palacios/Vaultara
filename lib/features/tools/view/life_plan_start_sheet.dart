@@ -3,7 +3,7 @@ import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
-import 'package:vaultara/features/family/logic/person_colours.dart';
+import 'package:vaultara/features/family/view/person_avatar.dart';
 import 'package:vaultara/features/tools/data/life_plan.dart';
 import 'package:vaultara/features/tools/data/life_plan_repository.dart';
 import 'package:vaultara/features/tools/logic/life_events.dart';
@@ -407,12 +407,16 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
                   runSpacing: 8,
                   children: [
                     if (!LifeEvents.aboutSomeoneElse(widget.event))
-                      _personChip(LifePlan.meKey, loc.familyMe, scheme.primary),
+                      _personChip(
+                        LifePlan.meKey,
+                        loc.familyMe,
+                        const PersonAvatar(person: null, size: 20),
+                      ),
                     for (final person in people)
                       _personChip(
                         person.id,
                         person.name,
-                        PersonColours.of(person.colourIndex, scheme),
+                        PersonAvatar(person: person, size: 20),
                       ),
                   ],
                 ),
@@ -439,13 +443,9 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
     );
   }
 
-  Widget _personChip(String id, String name, Color colour) {
+  Widget _personChip(String id, String name, Widget avatar) {
     return FilterChip(
-      avatar: Container(
-        width: 12,
-        height: 12,
-        decoration: BoxDecoration(color: colour, shape: BoxShape.circle),
-      ),
+      avatar: avatar,
       label: Text(name),
       selected: _people.contains(id),
       showCheckmark: !_single,

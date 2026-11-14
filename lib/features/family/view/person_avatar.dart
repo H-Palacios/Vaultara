@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/person.dart';
-import 'package:vaultara/features/family/logic/person_colours.dart';
 import 'package:vaultara/features/profile/view/widgets/my_avatar.dart';
 
 class PersonAvatar extends StatelessWidget {
@@ -28,7 +27,7 @@ class PersonAvatar extends StatelessWidget {
       width: size,
       height: size,
       decoration: BoxDecoration(
-        color: PersonColours.of(p.colourIndex, scheme),
+        color: scheme.primary.withValues(alpha: 0.14),
         shape: BoxShape.circle,
       ),
       alignment: Alignment.center,
@@ -37,7 +36,7 @@ class PersonAvatar extends StatelessWidget {
         style: TextStyle(
           fontSize: size * 0.42,
           fontWeight: FontWeight.w800,
-          color: PersonColours.onColour(scheme),
+          color: scheme.primary,
           height: 1,
         ),
       ),
