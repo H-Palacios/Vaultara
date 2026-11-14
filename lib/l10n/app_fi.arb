@@ -1681,6 +1681,19 @@
   "scanUpdateExisting": "Päivitä",
   "duplicateRecordTitle": "Jo lisätty",
   "duplicateRecordBody": "Sinulla on jo tietue {name}, joka vanhenee {date}.",
+  "recordNameNeedsLetter": "Käytä vähintään yhtä kirjainta tai numeroa.",
+  "recordSaveFailed": "Tallennus epäonnistui. Tarkista yhteys ja yritä uudelleen.",
+  "duplicateRecordElsewhere": "Sinulla on jo {name} ryhmässä {group}, vanhenee {date}.",
+  "expiryGuessedHint": "Arvasimme tämän päivämäärän asiakirjastasi. Tarkista, että se täsmää.",
+  "expiryOtherDates": "Muut päivämäärät tässä asiakirjassa",
+  "scanPhotoSaved": "Kuvasi on tallennettu tämän tiedon kanssa.",
+  "scanPhotoNotSaved": "Kuvaasi ei tallennettu, koska tässä tiedossa on jo suurin sallittu määrä kuvia.",
+  "scanReadOnlineTitle": "Luetaanko asiakirja verkossa?",
+  "scanReadOnlineBody": "Puhelimesi ei pystynyt lukemaan tätä asiakirjaa varmasti. Vaultara voi lähettää kuvan tekstin palvelimelleen luettavaksi. Kuva pysyy puhelimessasi, ja pitkät numerot piilotetaan.",
+  "scanReadOnlineNo": "Ei nyt",
+  "scanReadOnlineYes": "Lue",
+  "scanReadOnlineNote": "Luimme tämän asiakirjan verkossa.",
+  "scanNoExpiryNote": "Tällä asiakirjalla ei näytä olevan vanhenemispäivää. Lisää päivä, josta haluat muistutuksen.",
   "duplicateKeepBoth": "Säilytä molemmat",
   "duplicateUpdateExisting": "Päivitä olemassa oleva",
   "editorDefaultsHint": "Täytettiin ryhmän {group} tyypilliset asetukset. Voit muuttaa niitä kohdassa Lisätiedot.",
@@ -3228,36 +3241,8 @@
   "twoStepSkipForNow": "Ohita nyt",
   "twoStepOffTitle": "Kaksivaiheinen vahvistus on pois päältä",
   "twoStepOffBody": "Kirjauduit varakoodilla, joten kaksivaiheinen vahvistus poistettiin käytöstä. Ota se uudelleen käyttöön tässä puhelimessa, jotta tilisi pysyy suojattuna.",
-  "expiryPlusYears": "{years, plural, =1{+{years} vuosi} other{+{years} vuotta}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Kirjoita päivämäärä",
-  "expiryTypeTitle": "Kirjoita vanhenemispäivä",
-  "expiryTypeHint": "Esimerkiksi {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Päivämäärä ei näytä oikealta. Kokeile {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Tämä päivä on mennyt, joten tietue tallennetaan vanhentuneena.",
   "expiryEndsToday": "Tämä vanhenee tänään.",
-  "saveAndAddAnother": "Tallenna ja lisää toinen",
-  "quickStartTitle": "Pika-aloitus",
   "categoryCreatedAddGroup": "{name} luotu. Lisätäänkö siihen ryhmä?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

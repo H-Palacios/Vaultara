@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "Yangilash",
   "duplicateRecordTitle": "Allaqachon qoʻshilgan",
   "duplicateRecordBody": "{name} yozuvi sizda allaqachon bor, tugash sanasi {date}.",
+  "recordNameNeedsLetter": "Kamida bitta harf yoki raqam ishlating.",
+  "recordSaveFailed": "Saqlab bo‘lmadi. Ulanishni tekshirib, qayta urinib ko‘ring.",
+  "duplicateRecordElsewhere": "Sizda allaqachon {group} guruhida {name} bor, {date} kuni tugaydi.",
+  "expiryGuessedHint": "Bu sanani hujjatingizdan taxmin qildik. Mos kelishini tekshiring.",
+  "expiryOtherDates": "Bu hujjatdagi boshqa sanalar",
+  "scanPhotoSaved": "Rasmingiz shu yozuv bilan saqlandi.",
+  "scanPhotoNotSaved": "Rasmingiz saqlanmadi, chunki bu yozuvda ruxsat etilgan eng ko‘p rasm bor.",
+  "scanReadOnlineTitle": "Bu hujjat onlayn o‘qilsinmi?",
+  "scanReadOnlineBody": "Telefoningiz bu hujjatni aniq o‘qiy olmadi. Vaultara rasmdagi matnni o‘qish uchun o‘z serveriga yuborishi mumkin. Rasm telefoningizda qoladi, uzun raqamlar esa yashiriladi.",
+  "scanReadOnlineNo": "Hozir emas",
+  "scanReadOnlineYes": "O‘qish",
+  "scanReadOnlineNote": "Bu hujjatni onlayn o‘qidik.",
+  "scanNoExpiryNote": "Bu hujjatda tugash sanasi yo‘qqa o‘xshaydi. Eslatma olmoqchi bo‘lgan sanani qo‘shing.",
   "duplicateKeepBoth": "Ikkalasini saqlash",
   "duplicateUpdateExisting": "Mavjudini yangilash",
   "editorDefaultsHint": "{group} uchun odatiy sozlamalar toʻldirildi. Ularni Batafsil boʻlimida oʻzgartirishingiz mumkin.",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "Hozircha o‘tkazib yuborish",
   "twoStepOffTitle": "Ikki bosqichli tasdiqlash o‘chirilgan",
   "twoStepOffBody": "Siz zaxira kod bilan kirdingiz, shuning uchun ikki bosqichli tasdiqlash o‘chirildi. Hisobingiz himoyalangan bo‘lishi uchun uni bu telefonda qayta sozlang.",
-  "expiryPlusYears": "{years, plural, one{+{years} yil} other{+{years} yil}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Sanani yozish",
-  "expiryTypeTitle": "Amal qilish muddati tugash sanasini yozing",
-  "expiryTypeHint": "Masalan {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Bu sana to‘g‘ri emasga o‘xshaydi. {example} sinab ko‘ring.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Bu sana o‘tib ketgan, shuning uchun yozuv muddati o‘tgan sifatida saqlanadi.",
   "expiryEndsToday": "Buning muddati bugun tugaydi.",
-  "saveAndAddAnother": "Saqlash va yana bittasini qo‘shish",
-  "quickStartTitle": "Tez boshlash",
   "categoryCreatedAddGroup": "{name} yaratildi. Unga guruh qo‘shilsinmi?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

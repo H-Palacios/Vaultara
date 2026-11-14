@@ -42,8 +42,11 @@ import 'package:vaultara/features/scan/logic/scan_parser.dart';
 import 'package:vaultara/features/records/logic/name_validator.dart';
 import 'package:vaultara/features/scan/services/document_scanner.dart';
 import 'package:vaultara/features/records/view/editor/editor_actions_row.dart';
-import 'package:vaultara/features/records/view/editor/editor_expiry_quick.dart';
-import 'package:vaultara/features/records/view/editor/editor_quick_start.dart';
+import 'package:vaultara/features/records/view/editor/editor_expiry_help.dart';
+import 'package:vaultara/features/scan/logic/document_names.dart';
+import 'package:vaultara/features/scan/services/document_reader.dart';
+import 'package:vaultara/features/scan/view/scan_review_banner.dart';
+import 'package:vaultara/core/util/input_validator.dart';
 import 'package:vaultara/features/records/logic/expiry_dates.dart';
 import 'package:vaultara/features/records/view/editor/editor_category_group_fields.dart';
 import 'package:vaultara/features/records/view/editor/editor_free_limit_banner.dart';
@@ -208,6 +211,12 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   ScanParseResult? scanBanner;
   String? scannedNationality;
   bool scanFailed = false;
+  ScanPhotoNote scanPhoto = ScanPhotoNote.none;
+  bool scanReadOnline = false;
+  bool scanNoExpiry = false;
+  List<DateTime> _scanDates = <DateTime>[];
+  bool _expiryGuessed = false;
+  String? saveError;
   bool _leadTouched = false;
   bool _repeatTouched = false;
   bool _walletTouched = false;
@@ -534,7 +543,105 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       return;
     }
 
-    _applyScan(outcome);
+    final ScanOutcome read = await _readOnlineIfUnsure(outcome);
+    if (!mounted) return;
+    _applyScan(read);
+  }
+
+  /// Sends the text of the photo, never the photo, to be read online when the
+  /// phone could not read it with certainty. Asks once before the first time.
+  /// Keeps what the phone read when the person says no, there is no internet,
+  /// or the answer has nothing new.
+  Future<ScanOutcome> _readOnlineIfUnsure(ScanOutcome outcome) async {
+    scanReadOnline = false;
+    scanNoExpiry = false;
+    if (!DocumentReader.worthReading(outcome.result, outcome.rawText)) {
+      return outcome;
+    }
+    if (!await DocumentReader.allowed()) {
+      if (!mounted) return outcome;
+      final bool ok = await _askReadOnline();
+      if (!ok) return outcome;
+      await DocumentReader.allow();
+    }
+    if (!mounted) return outcome;
+
+    final loc = AppLocalizations.of(context)!;
+    final List<String> groups = <String>[
+      for (final String category in _buildCategoryKeyList())
+        if (PresetCatalog.groupsByCategory.containsKey(category))
+          ...PresetCatalog.groupsByCategory[category]!,
+    ];
+    final DocumentReading? reading = await DocumentReader.read(
+      outcome.rawText,
+      locale: loc.localeName,
+      groupKeys: groups,
+    );
+    if (reading == null) return outcome;
+
+    final ScanParseResult r = outcome.result;
+    final String? group = reading.groupKey ?? r.groupKey;
+    final DateTime? expiry = reading.expiryDate ?? r.expiryDate;
+    final bool newDate = reading.expiryDate != null;
+    final List<DateTime> dates = <DateTime>{
+      ...reading.otherDates,
+      ...r.otherDates,
+      if (newDate && r.expiryDate != null) DateUtils.dateOnly(r.expiryDate!),
+    }.where((d) => expiry == null || !DateUtils.isSameDay(d, expiry)).toList()
+      ..sort();
+
+    scanReadOnline = true;
+    scanNoExpiry = reading.noExpiry && expiry == null;
+    return ScanOutcome(
+      imagePath: outcome.imagePath,
+      rawText: outcome.rawText,
+      failed: outcome.failed,
+      result: ScanParseResult(
+        expiryDate: expiry,
+        groupKey: group,
+        categoryKey: group != null
+            ? (GroupSuggester.categoryFor(group) ?? r.categoryKey)
+            : r.categoryKey,
+        suggestedName: reading.name ?? r.suggestedName,
+        documentNumber: r.documentNumber,
+        confidence: newDate ? 0.7 : r.confidence,
+        dateSource: newDate ? ScanDateSource.online : r.dateSource,
+        kind: r.kind,
+        holderSurname: r.holderSurname,
+        holderGivenNames: r.holderGivenNames,
+        issuingCountry: r.issuingCountry,
+        nationality: r.nationality,
+        mrzVerified: r.mrzVerified,
+        otherDates: dates.length > 4 ? dates.sublist(0, 4) : dates,
+      ),
+    );
+  }
+
+  Future<bool> _askReadOnline() async {
+    final loc = AppLocalizations.of(context)!;
+    final bool? ok = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: Text(
+          loc.scanReadOnlineTitle,
+          textAlign: TextAlign.center,
+          style: const TextStyle(fontWeight: FontWeight.w800),
+        ),
+        content: Text(loc.scanReadOnlineBody),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, false),
+            child: Text(loc.scanReadOnlineNo),
+          ),
+          FilledButton(
+            autofocus: true,
+            onPressed: () => Navigator.pop(dialogContext, true),
+            child: Text(loc.scanReadOnlineYes),
+          ),
+        ],
+      ),
+    );
+    return ok == true;
   }
 
   void _applyScan(ScanOutcome outcome) {
@@ -573,6 +680,13 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         appliedExpiry = d;
       }
     }
+    final DateTime? chosenExpiry = appliedExpiry;
+    _scanDates = <DateTime>[
+      if (chosenExpiry != null) chosenExpiry,
+      for (final DateTime d in r.otherDates)
+        if (ExpiryDates.inRange(d)) d,
+    ];
+    _expiryGuessed = appliedExpiry != null && r.expiryGuessed;
 
     if (nameController.text.trim().isEmpty) {
       final String? groupForName = appliedGroup ?? selectedSubcategory;
@@ -587,7 +701,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
               ? _subcategoryLabelForKey(context, groupForName)
               : null);
       if (name != null && name.trim().isNotEmpty) {
-        nameController.text = name;
+        nameController.text = name.length > NameValidator.maxLength
+            ? name.substring(0, NameValidator.maxLength).trimRight()
+            : name;
         nameError = null;
       }
     }
@@ -643,17 +759,24 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       notesController.text = current.isEmpty ? line : '$current\n$line';
     }
 
+    ScanPhotoNote photo = ScanPhotoNote.none;
     if (outcome.hasImage) {
       final int limit = AttachmentRepository.limitFor(isPremium: isPremium);
       final int count = attachments.length + newAttachmentPaths.length;
-      if (count < limit && !newAttachmentPaths.contains(outcome.imagePath)) {
+      if (newAttachmentPaths.contains(outcome.imagePath)) {
+        photo = ScanPhotoNote.saved;
+      } else if (count < limit) {
         newAttachmentPaths = <String>[...newAttachmentPaths, outcome.imagePath];
+        photo = ScanPhotoNote.saved;
+      } else {
+        photo = ScanPhotoNote.full;
       }
     }
 
     setState(() {
       scanBusy = false;
       scanFailed = false;
+      scanPhoto = photo;
       scanBanner = ScanParseResult(
         expiryDate: appliedExpiry,
         groupKey: appliedGroup,
@@ -802,10 +925,16 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           style: const TextStyle(fontWeight: FontWeight.w800),
         ),
         content: Text(
-          loc.duplicateRecordBody(
-            existing.name,
-            _formatDate(existing.expiryDate),
-          ),
+          existing.subcategoryName == selectedSubcategory
+              ? loc.duplicateRecordBody(
+                  existing.name,
+                  _formatDate(existing.expiryDate),
+                )
+              : loc.duplicateRecordElsewhere(
+                  existing.name,
+                  _subcategoryLabelForKey(context, existing.subcategoryName),
+                  _formatDate(existing.expiryDate),
+                ),
         ),
         actions: [
           TextButton(
@@ -855,9 +984,17 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   String? _scanKindName(AppLocalizations loc, ScanParseResult r) {
     switch (r.kind) {
       case ScanDocumentKind.passport:
-        return loc.scanNamePassport;
+        return DocumentNames.forCountry(
+          loc.scanNamePassport,
+          mrzCountry: r.issuingCountry ?? r.nationality,
+          languageCode: Localizations.localeOf(context).languageCode,
+        );
       case ScanDocumentKind.idCard:
-        return loc.scanNameIdCard;
+        return DocumentNames.forCountry(
+          loc.scanNameIdCard,
+          mrzCountry: r.issuingCountry ?? r.nationality,
+          languageCode: Localizations.localeOf(context).languageCode,
+        );
       case ScanDocumentKind.licenceDisc:
         return _licenceDiscName(loc, r);
       case ScanDocumentKind.licenceCard:
@@ -1064,7 +1201,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       });
       return;
     }
-    _applyScan(outcome);
+    final ScanOutcome read = await _readOnlineIfUnsure(outcome);
+    if (!mounted) return;
+    _applyScan(read);
     if (isPdf && outcome.failed && mounted) {
       setState(() {
         scanBanner = null;
@@ -1099,22 +1238,6 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
   }
 
-  void _onQuickStart(QuickStartItem item) {
-    final loc = AppLocalizations.of(context)!;
-    final bool known = _buildCategoryKeyList().contains(item.categoryKey);
-    if (!known) return;
-    _onCategoryChanged(item.categoryKey);
-    _onGroupChanged(item.groupKey);
-    if (nameController.text.trim().isEmpty) {
-      final String? name = switch (item.groupKey) {
-        'passports' => loc.scanNamePassport,
-        'id_cards' => loc.scanNameIdCard,
-        _ => null,
-      };
-      if (name != null) nameController.text = name;
-    }
-    nameFocus.requestFocus();
-  }
 
   void _onNameEdited(String _) {
     if (nameError != null) {
@@ -1130,7 +1253,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       initialDate: ExpiryDates.pickerInitial(expiryDate),
       firstDate: ExpiryDates.first(),
       lastDate: ExpiryDates.last(),
-      initialEntryMode: DatePickerEntryMode.calendar,
+      initialEntryMode: DatePickerEntryMode.input,
     );
 
     if (selected != null && mounted) _setExpiry(selected);
@@ -1139,6 +1262,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   void _setExpiry(DateTime day) {
     final DateTime normalized = DateUtils.dateOnly(day);
     setState(() {
+      _expiryGuessed = false;
       expiryDate = normalized;
       expiryController.text = ExpiryDates.iso(normalized);
       expiryError = null;
@@ -1239,7 +1363,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
   }
 
-  Future<void> _onSavePressed({bool addAnother = false}) async {
+  Future<void> _onSavePressed() async {
     if (isTutorialMode) {
       final bool fullTour = TutorialController.instance.isFullTour;
       final BuildContext? rootCtx = fullTour
@@ -1265,6 +1389,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final loc = AppLocalizations.of(context)!;
 
     _clearErrorsOnInput();
+    saveError = null;
 
     final formattedName = normaliseTitleCase(nameController.text);
 
@@ -1277,6 +1402,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           : null;
       nameError = formattedName.trim().isEmpty
           ? loc.recordEditorErrorName
+          : !InputValidator.hasLetterOrNumber(formattedName)
+          ? loc.recordNameNeedsLetter
           : null;
     }
 
@@ -1291,6 +1418,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         nameError != null ||
         expiryError != null) {
       setState(() {});
+      _showFirstError();
       return;
     }
 
@@ -1299,6 +1427,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         name: formattedName,
         groupKey: selectedSubcategory!,
         holderId: holderId,
+        anyGroup: true,
       );
       if (existing != null && existing.id != _declinedMatchId) {
         final choice = await _askDuplicate(existing);
@@ -1350,7 +1479,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       );
     } catch (_) {
       if (!mounted) return;
-      setState(() => isSaving = false);
+      setState(() {
+        isSaving = false;
+        saveError = loc.recordSaveFailed;
+      });
       return;
     }
 
@@ -1367,38 +1499,32 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       ActionFeedbackSnackbar.showAdded(context, formattedName);
     }
 
-    if (addAnother && !isEditMode) {
-      _resetForNext();
-      return;
-    }
-
     Navigator.pop(context);
   }
 
-  /// Clears what belongs to the record just saved and keeps what the next
-  /// one is likely to share: category, group, person, reminder and repeat.
-  void _resetForNext() {
-    setState(() {
-      isSaving = false;
-      nameController.clear();
-      notesController.clear();
-      expiryController.clear();
-      lostLineController.clear();
-      expiryDate = null;
-      renewalCost = null;
-      attachments = <RecordAttachment>[];
-      newAttachmentPaths = <String>[];
-      scanBanner = null;
-      scanFailed = false;
-      scannedNationality = null;
-      _declinedMatchId = null;
-      _assistHint = null;
-      _groupSuggestion = null;
-      nameError = null;
-      expiryError = null;
+  /// Scrolls to the first field with an error and puts the cursor in the name
+  /// when that is the one, so an error above the visible part is not missed.
+  void _showFirstError() {
+    final GlobalKey? key = categoryError != null
+        ? categoryFieldKey
+        : subcategoryError != null
+        ? subcategoryFieldKey
+        : nameError != null
+        ? nameFieldKey
+        : expiryError != null
+        ? expiryFieldKey
+        : null;
+    if (key == null) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final BuildContext? target = key.currentContext;
+      if (target == null || !mounted) return;
+      Scrollable.ensureVisible(
+        target,
+        duration: const Duration(milliseconds: 250),
+        alignment: 0.2,
+      );
+      if (key == nameFieldKey) nameFocus.requestFocus();
     });
-    _initialSignature = _signature();
-    nameFocus.requestFocus();
   }
 
   String? _initialSignature;
@@ -1649,6 +1775,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                                   busy: scanBusy,
                                   banner: scanBanner,
                                   failed: scanFailed,
+                                  photo: scanPhoto,
+                                  readOnline: scanReadOnline,
+                                  noExpiry: scanNoExpiry,
                                   onScan: _scanToFill,
                                   onDismissBanner: () => setState(() {
                                     scanBanner = null;
@@ -1680,15 +1809,6 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                                 const SizedBox(height: 12),
                               ],
                               if (!isEditMode) ...[
-                                if (_canAssist &&
-                                    selectedCategoryKey == null &&
-                                    selectedSubcategory == null &&
-                                    widget.prefill == null &&
-                                    widget.sharedFilePath == null)
-                                  EditorQuickStart(
-                                    enabled: !isSaving && !scanBusy,
-                                    onPicked: _onQuickStart,
-                                  ),
                                 EditorCategoryGroupFields(
                                   categoryFieldKey: categoryFieldKey,
                                   subcategoryFieldKey: subcategoryFieldKey,
@@ -1764,12 +1884,15 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                                 fieldKey: expiryFieldKey,
                                 controller: expiryController,
                                 errorText: expiryError,
+                                needsCheck: _expiryGuessed,
                                 hintSize: hintSize,
                                 onTap: _onExpiryTapped,
                               ),
                               if (!isAnyTutorialMode)
-                                EditorExpiryQuick(
+                                EditorExpiryHelp(
                                   expiryDate: expiryDate,
+                                  guessed: _expiryGuessed,
+                                  foundDates: _scanDates,
                                   enabled: !isSaving,
                                   onPicked: _setExpiry,
                                 ),
@@ -1812,6 +1935,31 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                   ),
                 ),
                 Divider(height: 1, color: scheme.outlineVariant),
+                if (saveError != null)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Icon(
+                          Icons.error_outline_rounded,
+                          size: 18,
+                          color: scheme.error,
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            saveError!,
+                            style: TextStyle(
+                              fontSize: 13,
+                              height: 1.35,
+                              color: scheme.error,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 10, 16, 12),
                   child: EditorActionsRow(
@@ -1819,9 +1967,6 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                     isSaving: isSaving,
                     onCancel: _onCancelPressed,
                     onSave: _onSavePressed,
-                    onSaveAndAddAnother: isEditMode || isAnyTutorialMode
-                        ? null
-                        : () => _onSavePressed(addAnother: true),
                   ),
                 ),
               ],

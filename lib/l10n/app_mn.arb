@@ -1681,6 +1681,19 @@
   "scanUpdateExisting": "Шинэчлэх",
   "duplicateRecordTitle": "Аль хэдийн нэмсэн",
   "duplicateRecordBody": "Танд {date} дуусах {name} аль хэдийн байна.",
+  "recordNameNeedsLetter": "Дор хаяж нэг үсэг эсвэл тоо ашиглана уу.",
+  "recordSaveFailed": "Хадгалж чадсангүй. Холболтоо шалгаад дахин оролдоно уу.",
+  "duplicateRecordElsewhere": "Танд {group}-д {name} аль хэдийн байна, {date}-нд дуусна.",
+  "expiryGuessedHint": "Энэ огноог таны баримтаас таамагласан. Таарч байгаа эсэхийг шалгана уу.",
+  "expiryOtherDates": "Энэ баримт дээрх бусад огноо",
+  "scanPhotoSaved": "Таны зураг энэ бичлэгтэй хамт хадгалагдлаа.",
+  "scanPhotoNotSaved": "Энэ бичлэгт зөвшөөрөгдсөн хамгийн их зураг байгаа тул таны зураг хадгалагдсангүй.",
+  "scanReadOnlineTitle": "Энэ баримтыг онлайнаар уншуулах уу?",
+  "scanReadOnlineBody": "Таны утас энэ баримтыг итгэлтэй уншиж чадсангүй. Vaultara зургийн бичвэрийг унших зорилгоор серверт илгээж болно. Зураг таны утсанд үлдэх ба урт дугаарууд нуугдана.",
+  "scanReadOnlineNo": "Одоо биш",
+  "scanReadOnlineYes": "Унших",
+  "scanReadOnlineNote": "Бид энэ баримтыг онлайнаар уншлаа.",
+  "scanNoExpiryNote": "Энэ баримтад дуусах огноо байхгүй бололтой. Сануулга авах огноогоо нэмнэ үү.",
   "duplicateKeepBoth": "Хоёуланг хадгалах",
   "duplicateUpdateExisting": "Байгааг шинэчлэх",
   "editorDefaultsHint": "{group}-ийн ердийн тохиргоог бөглөлөө. Та тэдгээрийг Дэлгэрэнгүй хэсэгт өөрчилж болно.",
@@ -3228,36 +3241,8 @@
   "twoStepSkipForNow": "Одоохондоо алгасах",
   "twoStepOffTitle": "Хоёр алхамт баталгаажуулалт унтарсан",
   "twoStepOffBody": "Та нөөц кодоор нэвтэрсэн тул хоёр алхамт баталгаажуулалтыг унтраасан. Бүртгэлээ хамгаалахын тулд энэ утсан дээр дахин тохируулна уу.",
-  "expiryPlusYears": "{years, plural, =1{+{years} жил} other{+{years} жил}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Огноо бичих",
-  "expiryTypeTitle": "Дуусах огноог бичнэ үү",
-  "expiryTypeHint": "Жишээ нь {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Тэр огноо зөв биш бололтой. {example} гэж оролдоно уу.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Энэ огноо өнгөрсөн тул бичлэг хугацаа нь дууссан гэж хадгалагдана.",
   "expiryEndsToday": "Үүний хугацаа өнөөдөр дуусна.",
-  "saveAndAddAnother": "Хадгалаад өөр нэгийг нэмэх",
-  "quickStartTitle": "Хурдан эхлэл",
   "categoryCreatedAddGroup": "{name} үүслээ. Бүлэг нэмэх үү?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

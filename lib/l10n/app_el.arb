@@ -1670,6 +1670,19 @@
   "scanUpdateExisting": "Ενημέρωση",
   "duplicateRecordTitle": "Έχει ήδη προστεθεί",
   "duplicateRecordBody": "Έχετε ήδη την εγγραφή {name} που λήγει στις {date}.",
+  "recordNameNeedsLetter": "Χρησιμοποιήστε τουλάχιστον ένα γράμμα ή αριθμό.",
+  "recordSaveFailed": "Δεν ήταν δυνατή η αποθήκευση. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+  "duplicateRecordElsewhere": "Έχετε ήδη {name} στην ομάδα {group}, λήγει στις {date}.",
+  "expiryGuessedHint": "Μαντέψαμε αυτή την ημερομηνία από το έγγραφό σας. Ελέγξτε ότι ταιριάζει.",
+  "expiryOtherDates": "Άλλες ημερομηνίες σε αυτό το έγγραφο",
+  "scanPhotoSaved": "Η φωτογραφία σας αποθηκεύτηκε με αυτή την εγγραφή.",
+  "scanPhotoNotSaved": "Η φωτογραφία σας δεν αποθηκεύτηκε, επειδή αυτή η εγγραφή έχει ήδη τον μέγιστο αριθμό φωτογραφιών.",
+  "scanReadOnlineTitle": "Ανάγνωση του εγγράφου online;",
+  "scanReadOnlineBody": "Το τηλέφωνό σας δεν μπόρεσε να διαβάσει με βεβαιότητα αυτό το έγγραφο. Το Vaultara μπορεί να στείλει το κείμενο της φωτογραφίας στον διακομιστή του για να το διαβάσει. Η φωτογραφία μένει στο τηλέφωνό σας και οι μεγάλοι αριθμοί κρύβονται.",
+  "scanReadOnlineNo": "Όχι τώρα",
+  "scanReadOnlineYes": "Ανάγνωση",
+  "scanReadOnlineNote": "Διαβάσαμε αυτό το έγγραφο online.",
+  "scanNoExpiryNote": "Αυτό το έγγραφο δεν φαίνεται να έχει ημερομηνία λήξης. Προσθέστε την ημερομηνία για την οποία θέλετε υπενθύμιση.",
   "duplicateKeepBoth": "Διατήρηση και των δύο",
   "duplicateUpdateExisting": "Ενημέρωση υπάρχουσας",
   "editorDefaultsHint": "Συμπληρώθηκαν οι τυπικές ρυθμίσεις για {group}. Μπορείτε να τις αλλάξετε στις Περισσότερες λεπτομέρειες.",
@@ -3217,36 +3230,8 @@
   "twoStepSkipForNow": "Παράλειψη προς το παρόν",
   "twoStepOffTitle": "Η επαλήθευση δύο βημάτων είναι απενεργοποιημένη",
   "twoStepOffBody": "Συνδεθήκατε με εφεδρικό κωδικό, οπότε η επαλήθευση δύο βημάτων απενεργοποιήθηκε. Ρυθμίστε την ξανά σε αυτό το τηλέφωνο για να μείνει προστατευμένος ο λογαριασμός σας.",
-  "expiryPlusYears": "{years, plural, =1{+{years} έτος} other{+{years} έτη}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Πληκτρολόγηση ημερομηνίας",
-  "expiryTypeTitle": "Πληκτρολογήστε την ημερομηνία λήξης",
-  "expiryTypeHint": "Για παράδειγμα {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Αυτή η ημερομηνία δεν φαίνεται σωστή. Δοκιμάστε {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Αυτή η ημερομηνία έχει περάσει, οπότε η εγγραφή θα αποθηκευτεί ως ληγμένη.",
   "expiryEndsToday": "Λήγει σήμερα.",
-  "saveAndAddAnother": "Αποθήκευση και προσθήκη άλλου",
-  "quickStartTitle": "Γρήγορη έναρξη",
   "categoryCreatedAddGroup": "Η κατηγορία {name} δημιουργήθηκε. Να προστεθεί ομάδα;",
   "@categoryCreatedAddGroup": {
     "placeholders": {

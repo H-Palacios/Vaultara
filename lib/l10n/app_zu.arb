@@ -1655,6 +1655,19 @@
   "scanUpdateExisting": "Buyekeza",
   "duplicateRecordTitle": "Selivele lingeziwe",
   "duplicateRecordBody": "Usunalo kakade irekhodi le-{name} eliphelelwa ngomhlaka-{date}.",
+  "recordNameNeedsLetter": "Sebenzisa okungenani uhlamvu olulodwa noma inombolo.",
+  "recordSaveFailed": "Akukwazanga ukulondoloza. Hlola uxhumano lwakho bese uzama futhi.",
+  "duplicateRecordElsewhere": "Usunayo i-{name} ku-{group}, iphelelwa ngo-{date}.",
+  "expiryGuessedHint": "Lolu suku silucabange embhalweni wakho. Hlola ukuthi luyafana.",
+  "expiryOtherDates": "Ezinye izinsuku kulo mbhalo",
+  "scanPhotoSaved": "Isithombe sakho silondolozwe nale rekhodi.",
+  "scanPhotoNotSaved": "Isithombe sakho asilondolozwanga ngoba le rekhodi isinazo izithombe eziningi ezivunyelwe.",
+  "scanReadOnlineTitle": "Funda lo mbhalo ku-inthanethi?",
+  "scanReadOnlineBody": "Ifoni yakho ayikwazanga ukufunda lo mbhalo ngokuqinisekile. I-Vaultara ingathumela umbhalo osesithombeni kuseva yayo ukuze iwufunde. Isithombe sihlala efonini yakho, futhi izinombolo ezinde ziyafihlwa.",
+  "scanReadOnlineNo": "Hhayi manje",
+  "scanReadOnlineYes": "Yifunde",
+  "scanReadOnlineNote": "Lo mbhalo siwufunde ku-inthanethi.",
+  "scanNoExpiryNote": "Kubonakala sengathi lo mbhalo awunalo usuku lokuphelelwa. Engeza usuku ofuna ukukhunjuzwa ngalo.",
   "duplicateKeepBoth": "Gcina zombili",
   "duplicateUpdateExisting": "Buyekeza elikhona",
   "editorDefaultsHint": "Sigcwalise izilungiselelo ezijwayelekile ze-{group}. Ungazishintsha ku-Imininingwane eyengeziwe.",
@@ -3202,36 +3215,8 @@
   "twoStepSkipForNow": "Yeqa okwamanje",
   "twoStepOffTitle": "Ukuqinisekisa ngezinyathelo ezimbili kuvaliwe",
   "twoStepOffBody": "Ungene ngekhodi yokulondoloza, ngakho ukuqinisekisa ngezinyathelo ezimbili kwavalwa. Kusethe futhi kule foni ukuze i-akhawunti yakho ihlale ivikelekile.",
-  "expiryPlusYears": "{years, plural, one{+unyaka ongu-{years}} other{+iminyaka engu-{years}}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Thayipha usuku",
-  "expiryTypeTitle": "Thayipha usuku lokuphelelwa",
-  "expiryTypeHint": "Isibonelo {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Lolo suku alubukeki luqondile. Zama u-{example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Lolu suku seludlulile, ngakho irekhodi lizolondolozwa njengeliphelelwe yisikhathi.",
   "expiryEndsToday": "Lokhu kuphelelwa namuhla.",
-  "saveAndAddAnother": "Londoloza bese wengeza enye",
-  "quickStartTitle": "Ukuqala ngokushesha",
   "categoryCreatedAddGroup": "I-{name} yenziwe. Ingezwe iqembu?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

@@ -5063,6 +5063,47 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'کم از کم ایک حرف یا عدد استعمال کریں۔';
+
+  @override
+  String get recordSaveFailed => 'محفوظ نہیں ہو سکا۔ اپنا کنکشن چیک کریں اور دوبارہ کوشش کریں۔';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'آپ کے پاس پہلے سے $group میں $name ہے، جس کی میعاد $date کو ختم ہوگی۔';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ہم نے یہ تاریخ آپ کی دستاویز سے اندازاً لی ہے۔ چیک کریں کہ یہ درست ہے۔';
+
+  @override
+  String get expiryOtherDates => 'اس دستاویز پر دیگر تاریخیں';
+
+  @override
+  String get scanPhotoSaved => 'آپ کی تصویر اس ریکارڈ کے ساتھ محفوظ ہو گئی ہے۔';
+
+  @override
+  String get scanPhotoNotSaved => 'آپ کی تصویر محفوظ نہیں ہوئی کیونکہ اس ریکارڈ میں پہلے سے زیادہ سے زیادہ اجازت شدہ تصاویر ہیں۔';
+
+  @override
+  String get scanReadOnlineTitle => 'یہ دستاویز آن لائن پڑھیں؟';
+
+  @override
+  String get scanReadOnlineBody => 'آپ کا فون یہ دستاویز یقینی طور پر نہیں پڑھ سکا۔ Vaultara پڑھنے کے لیے تصویر کا متن اپنے سرور پر بھیج سکتا ہے۔ تصویر آپ کے فون پر ہی رہتی ہے، اور لمبے نمبر چھپا دیے جاتے ہیں۔';
+
+  @override
+  String get scanReadOnlineNo => 'ابھی نہیں';
+
+  @override
+  String get scanReadOnlineYes => 'پڑھیں';
+
+  @override
+  String get scanReadOnlineNote => 'ہم نے یہ دستاویز آن لائن پڑھی۔';
+
+  @override
+  String get scanNoExpiryNote => 'لگتا ہے اس دستاویز کی کوئی میعاد ختم ہونے کی تاریخ نہیں ہے۔ وہ تاریخ شامل کریں جس کی آپ یاد دہانی چاہتے ہیں۔';
+
+  @override
   String get duplicateKeepBoth => 'دونوں رکھیں';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get twoStepOffBody => 'آپ نے بیک اپ کوڈ سے سائن ان کیا، اس لیے دو مرحلہ تصدیق بند کر دی گئی۔ اپنا اکاؤنٹ محفوظ رکھنے کے لیے اس فون پر اسے دوبارہ سیٹ کریں۔';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years سال',
-      one: '+$years سال',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'تاریخ ٹائپ کریں';
-
-  @override
-  String get expiryTypeTitle => 'میعاد ختم ہونے کی تاریخ ٹائپ کریں';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'مثال کے طور پر $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'وہ تاریخ درست نہیں لگتی۔ $example آزمائیں۔';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'یہ تاریخ گزر چکی ہے، اس لیے ریکارڈ میعاد ختم کے طور پر محفوظ ہوگا۔';
 
   @override
   String get expiryEndsToday => 'اس کی میعاد آج ختم ہو رہی ہے۔';
-
-  @override
-  String get saveAndAddAnother => 'محفوظ کریں اور ایک اور شامل کریں';
-
-  @override
-  String get quickStartTitle => 'فوری آغاز';
 
   @override
   String categoryCreatedAddGroup(String name) {

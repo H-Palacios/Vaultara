@@ -1701,6 +1701,19 @@
   "scanUpdateExisting": "Dateer op",
   "duplicateRecordTitle": "Reeds bygevoeg",
   "duplicateRecordBody": "Jy het reeds {name} wat {date} verval.",
+  "recordNameNeedsLetter": "Gebruik minstens een letter of syfer.",
+  "recordSaveFailed": "Kon nie stoor nie. Kontroleer jou verbinding en probeer weer.",
+  "duplicateRecordElsewhere": "Jy het reeds {name} in {group}, wat op {date} verval.",
+  "expiryGuessedHint": "Ons het hierdie datum uit jou dokument geraai. Kontroleer dat dit klop.",
+  "expiryOtherDates": "Ander datums op hierdie dokument",
+  "scanPhotoSaved": "Jou foto is saam met hierdie inskrywing gestoor.",
+  "scanPhotoNotSaved": "Jou foto is nie gestoor nie, want hierdie inskrywing het reeds die meeste foto's wat toegelaat word.",
+  "scanReadOnlineTitle": "Lees hierdie dokument aanlyn?",
+  "scanReadOnlineBody": "Jou foon kon nie hierdie dokument met sekerheid lees nie. Vaultara kan die teks van die foto na sy bediener stuur om dit te lees. Die foto bly op jou foon, en lang nommers word versteek.",
+  "scanReadOnlineNo": "Nie nou nie",
+  "scanReadOnlineYes": "Lees dit",
+  "scanReadOnlineNote": "Ons het hierdie dokument aanlyn gelees.",
+  "scanNoExpiryNote": "Dit lyk nie of hierdie dokument 'n vervaldatum het nie. Voeg die datum by waaraan jy herinner wil word.",
   "duplicateKeepBoth": "Hou albei",
   "duplicateUpdateExisting": "Dateer bestaande op",
   "editorDefaultsHint": "Tipiese instellings vir {group} is ingevul. Jy kan dit in Meer besonderhede verander.",
@@ -3248,36 +3261,8 @@
   "twoStepSkipForNow": "Slaan nou oor",
   "twoStepOffTitle": "Tweestapverifikasie is af",
   "twoStepOffBody": "Jy het met 'n rugsteunkode aangemeld, dus is tweestapverifikasie afgeskakel. Stel dit weer op hierdie foon op om jou rekening beskerm te hou.",
-  "expiryPlusYears": "{years, plural, =1{+{years} jaar} other{+{years} jaar}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Tik datum",
-  "expiryTypeTitle": "Tik die vervaldatum",
-  "expiryTypeHint": "Byvoorbeeld {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Daardie datum lyk nie reg nie. Probeer {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Hierdie datum is verby, dus sal die rekord as verval gestoor word.",
   "expiryEndsToday": "Dit verval vandag.",
-  "saveAndAddAnother": "Stoor en voeg nog een by",
-  "quickStartTitle": "Vinnige begin",
   "categoryCreatedAddGroup": "{name} geskep. Voeg 'n groep daarby?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

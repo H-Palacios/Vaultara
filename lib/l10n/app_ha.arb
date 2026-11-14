@@ -1675,6 +1675,19 @@
   "scanUpdateExisting": "Sabunta",
   "duplicateRecordTitle": "An riga an ƙara shi",
   "duplicateRecordBody": "Kana da {name} tuni da zai ƙare a {date}.",
+  "recordNameNeedsLetter": "Yi amfani da aƙalla harafi ko lamba ɗaya.",
+  "recordSaveFailed": "Ba a iya ajiyewa ba. Duba haɗinka ka sake gwadawa.",
+  "duplicateRecordElsewhere": "Kana da {name} a {group} tuni, zai ƙare a {date}.",
+  "expiryGuessedHint": "Mun yi hasashen wannan kwanan wata daga takardarka. Duba ko ya dace.",
+  "expiryOtherDates": "Wasu kwanakin wata a wannan takarda",
+  "scanPhotoSaved": "An ajiye hotonka tare da wannan bayani.",
+  "scanPhotoNotSaved": "Ba a ajiye hotonka ba saboda wannan bayani ya riga ya kai iyakar hotunan da aka yarda.",
+  "scanReadOnlineTitle": "A karanta wannan takarda ta intanet?",
+  "scanReadOnlineBody": "Wayarka ba ta iya karanta wannan takarda da tabbas ba. Vaultara na iya aika rubutun hoton zuwa sabar ta don karanta shi. Hoton yana zama a wayarka, kuma ana ɓoye dogayen lambobi.",
+  "scanReadOnlineNo": "Ba yanzu ba",
+  "scanReadOnlineYes": "Karanta",
+  "scanReadOnlineNote": "Mun karanta wannan takarda ta intanet.",
+  "scanNoExpiryNote": "Da alama wannan takarda ba ta da ranar ƙarewa. Ƙara ranar da kake son a tunatar da kai.",
   "duplicateKeepBoth": "Ajiye duka biyu",
   "duplicateUpdateExisting": "Sabunta wanda yake akwai",
   "editorDefaultsHint": "An cika saitunan da aka saba na {group}. Za ka iya canza su a Ƙarin bayani.",
@@ -3222,36 +3235,8 @@
   "twoStepSkipForNow": "Tsallake yanzu",
   "twoStepOffTitle": "An kashe tabbatarwa ta matakai biyu",
   "twoStepOffBody": "Ka shiga da lambar ajiya, don haka an kashe tabbatarwa ta matakai biyu. Sake saita ta a wannan wayar don asusunka ya kasance a kare.",
-  "expiryPlusYears": "{years, plural, =1{+shekara {years}} other{+shekaru {years}}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Rubuta kwanan wata",
-  "expiryTypeTitle": "Rubuta ranar ƙarewa",
-  "expiryTypeHint": "Misali {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Wannan kwanan wata bai yi daidai ba. Gwada {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Wannan kwanan wata ya wuce, don haka za a ajiye bayanin a matsayin wanda ya ƙare.",
   "expiryEndsToday": "Wannan yana ƙarewa yau.",
-  "saveAndAddAnother": "Ajiye ka ƙara wani",
-  "quickStartTitle": "Farawa da sauri",
   "categoryCreatedAddGroup": "An ƙirƙiri {name}. A ƙara mata rukuni?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

@@ -1677,6 +1677,19 @@
   "scanUpdateExisting": "Eguneratu",
   "duplicateRecordTitle": "Dagoeneko gehituta dago",
   "duplicateRecordBody": "Dagoeneko baduzu {name}, {date} egunean iraungitzen dena.",
+  "recordNameNeedsLetter": "Erabili gutxienez letra edo zenbaki bat.",
+  "recordSaveFailed": "Ezin izan da gorde. Egiaztatu konexioa eta saiatu berriro.",
+  "duplicateRecordElsewhere": "Dagoeneko baduzu {name} {group} taldean, {date}(e)an iraungitzen da.",
+  "expiryGuessedHint": "Data hau zure dokumentutik asmatu dugu. Egiaztatu bat datorrela.",
+  "expiryOtherDates": "Dokumentu honetako beste datak",
+  "scanPhotoSaved": "Zure argazkia erregistro honekin gorde da.",
+  "scanPhotoNotSaved": "Zure argazkia ez da gorde, erregistro honek baimendutako gehieneko argazki kopurua duelako.",
+  "scanReadOnlineTitle": "Dokumentu hau linean irakurri?",
+  "scanReadOnlineBody": "Zure telefonoak ezin izan du dokumentu hau ziurtasunez irakurri. Vaultarak argazkiko testua bere zerbitzarira bidal dezake irakurtzeko. Argazkia zure telefonoan geratzen da, eta zenbaki luzeak ezkutatzen dira.",
+  "scanReadOnlineNo": "Orain ez",
+  "scanReadOnlineYes": "Irakurri",
+  "scanReadOnlineNote": "Dokumentu hau linean irakurri dugu.",
+  "scanNoExpiryNote": "Badirudi dokumentu honek ez duela iraungitze-datarik. Gehitu zein datatan nahi duzun gogorarazpena.",
   "duplicateKeepBoth": "Mantendu biak",
   "duplicateUpdateExisting": "Eguneratu dagoena",
   "editorDefaultsHint": "{group} taldearen ohiko ezarpenak bete dira. Xehetasun gehiago atalean alda ditzakezu.",
@@ -3224,36 +3237,8 @@
   "twoStepSkipForNow": "Saltatu oraingoz",
   "twoStepOffTitle": "Bi urratseko egiaztapena desaktibatuta dago",
   "twoStepOffBody": "Babeskopia-kode batekin hasi duzu saioa; beraz, bi urratseko egiaztapena desaktibatu da. Konfiguratu berriro telefono honetan kontua babestuta mantentzeko.",
-  "expiryPlusYears": "{years, plural, =1{+{years} urte} other{+{years} urte}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Idatzi data",
-  "expiryTypeTitle": "Idatzi iraungitze-data",
-  "expiryTypeHint": "Adibidez {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Data hori ez dirudi zuzena. Probatu {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Data hori igaro da; beraz, erregistroa iraungita gisa gordeko da.",
   "expiryEndsToday": "Gaur iraungitzen da.",
-  "saveAndAddAnother": "Gorde eta gehitu beste bat",
-  "quickStartTitle": "Hasiera azkarra",
   "categoryCreatedAddGroup": "{name} sortu da. Talde bat gehitu nahi diozu?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

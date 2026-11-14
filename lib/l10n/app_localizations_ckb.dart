@@ -5063,6 +5063,47 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'لانیکەم یەک پیت یان ژمارە بەکاربهێنە.';
+
+  @override
+  String get recordSaveFailed => 'پاشەکەوت نەکرا. پەیوەندییەکەت بپشکنە و دووبارە هەوڵبدەرەوە.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'پێشتر $nameت لە $group هەیە، لە $date بەسەردەچێت.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ئەم بەروارەمان لە بەڵگەنامەکەتەوە مەزەندە کرد. بپشکنە کە دەگونجێت.';
+
+  @override
+  String get expiryOtherDates => 'بەروارەکانی تری ئەم بەڵگەنامەیە';
+
+  @override
+  String get scanPhotoSaved => 'وێنەکەت لەگەڵ ئەم تۆمارە پاشەکەوت کرا.';
+
+  @override
+  String get scanPhotoNotSaved => 'وێنەکەت پاشەکەوت نەکرا چونکە ئەم تۆمارە پێشتر زۆرترین وێنەی ڕێگەپێدراوی هەیە.';
+
+  @override
+  String get scanReadOnlineTitle => 'ئەم بەڵگەنامەیە بە ئۆنلاین بخوێنرێتەوە؟';
+
+  @override
+  String get scanReadOnlineBody => 'مۆبایلەکەت نەیتوانی ئەم بەڵگەنامەیە بە دڵنیاییەوە بخوێنێتەوە. Vaultara دەتوانێت دەقی وێنەکە بۆ ڕاژەکارەکەی بنێرێت بۆ خوێندنەوەی. وێنەکە لەسەر مۆبایلەکەت دەمێنێتەوە و ژمارە درێژەکان دەشاردرێنەوە.';
+
+  @override
+  String get scanReadOnlineNo => 'ئێستا نا';
+
+  @override
+  String get scanReadOnlineYes => 'بیخوێنەوە';
+
+  @override
+  String get scanReadOnlineNote => 'ئەم بەڵگەنامەیەمان بە ئۆنلاین خوێندەوە.';
+
+  @override
+  String get scanNoExpiryNote => 'وا دیارە ئەم بەڵگەنامەیە بەرواری بەسەرچوونی نییە. ئەو بەروارە زیاد بکە کە دەتەوێت بیرت بخرێتەوە.';
+
+  @override
   String get duplicateKeepBoth => 'هەردووکیان بهێڵەرەوە';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get twoStepOffBody => 'بە کۆدێکی یەدەگ چوویتە ژوورەوە، بۆیە پشتڕاستکردنەوەی دوو هەنگاو کوژێنرایەوە. لەم مۆبایلەدا دووبارە ڕێکی بخەرەوە بۆ ئەوەی هەژمارەکەت پارێزراو بمێنێت.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ساڵ',
-      one: '+$years ساڵ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'بەروار بنووسە';
-
-  @override
-  String get expiryTypeTitle => 'بەرواری بەسەرچوون بنووسە';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'بۆ نموونە $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ئەو بەروارە دروست دیار نییە. $example تاقی بکەرەوە.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ئەم بەروارە تێپەڕیوە، بۆیە تۆمارەکە وەک بەسەرچوو هەڵدەگیرێت.';
 
   @override
   String get expiryEndsToday => 'ئەمڕۆ بەسەردەچێت.';
-
-  @override
-  String get saveAndAddAnother => 'هەڵگرتن و زیادکردنی یەکێکی تر';
-
-  @override
-  String get quickStartTitle => 'دەستپێکی خێرا';
 
   @override
   String categoryCreatedAddGroup(String name) {

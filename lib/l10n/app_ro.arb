@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Actualizează",
   "duplicateRecordTitle": "Deja adăugat",
   "duplicateRecordBody": "Ai deja {name}, care expiră pe {date}.",
+  "recordNameNeedsLetter": "Folosește cel puțin o literă sau o cifră.",
+  "recordSaveFailed": "Nu s-a putut salva. Verifică conexiunea și încearcă din nou.",
+  "duplicateRecordElsewhere": "Ai deja {name} în {group}, care expiră pe {date}.",
+  "expiryGuessedHint": "Am dedus această dată din documentul tău. Verifică dacă se potrivește.",
+  "expiryOtherDates": "Alte date de pe acest document",
+  "scanPhotoSaved": "Fotografia ta a fost salvată cu această înregistrare.",
+  "scanPhotoNotSaved": "Fotografia ta nu a fost salvată, deoarece această înregistrare are deja numărul maxim de fotografii.",
+  "scanReadOnlineTitle": "Citim documentul online?",
+  "scanReadOnlineBody": "Telefonul tău nu a putut citi sigur acest document. Vaultara poate trimite textul din fotografie la serverul său pentru a-l citi. Fotografia rămâne pe telefonul tău, iar numerele lungi sunt ascunse.",
+  "scanReadOnlineNo": "Nu acum",
+  "scanReadOnlineYes": "Citește",
+  "scanReadOnlineNote": "Am citit acest document online.",
+  "scanNoExpiryNote": "Se pare că acest document nu are dată de expirare. Adaugă data pentru care vrei un memento.",
   "duplicateKeepBoth": "Păstrează ambele",
   "duplicateUpdateExisting": "Actualizează existentul",
   "editorDefaultsHint": "Am completat setările obișnuite pentru {group}. Le poți schimba la Mai multe detalii.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Omite deocamdată",
   "twoStepOffTitle": "Verificarea în doi pași este dezactivată",
   "twoStepOffBody": "Te-ai conectat cu un cod de rezervă, așa că verificarea în doi pași a fost dezactivată. Configureaz-o din nou pe acest telefon ca să-ți păstrezi contul protejat.",
-  "expiryPlusYears": "{years, plural, one{+{years} an} few{+{years} ani} other{+{years} de ani}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Scrie data",
-  "expiryTypeTitle": "Scrie data expirării",
-  "expiryTypeHint": "De exemplu {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Data nu pare corectă. Încearcă {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Această dată a trecut, așa că înregistrarea va fi salvată ca expirată.",
   "expiryEndsToday": "Expiră astăzi.",
-  "saveAndAddAnother": "Salvează și adaugă încă unul",
-  "quickStartTitle": "Pornire rapidă",
   "categoryCreatedAddGroup": "{name} a fost creată. Adaugi un grup?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

@@ -5063,6 +5063,47 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'دست‌کم یک حرف یا عدد به کار ببرید.';
+
+  @override
+  String get recordSaveFailed => 'ذخیره نشد. اتصال خود را بررسی کنید و دوباره امتحان کنید.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'شما از قبل $name را در $group دارید که در $date منقضی می‌شود.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'این تاریخ را از سند شما حدس زدیم. بررسی کنید که درست باشد.';
+
+  @override
+  String get expiryOtherDates => 'تاریخ‌های دیگر این سند';
+
+  @override
+  String get scanPhotoSaved => 'عکس شما همراه این مورد ذخیره شد.';
+
+  @override
+  String get scanPhotoNotSaved => 'عکس شما ذخیره نشد، چون این مورد از قبل حداکثر تعداد عکس مجاز را دارد.';
+
+  @override
+  String get scanReadOnlineTitle => 'این سند آنلاین خوانده شود؟';
+
+  @override
+  String get scanReadOnlineBody => 'گوشی شما نتوانست این سند را با اطمینان بخواند. Vaultara می‌تواند متن عکس را برای خواندن به سرور خود بفرستد. عکس روی گوشی شما می‌ماند و شماره‌های طولانی پنهان می‌شوند.';
+
+  @override
+  String get scanReadOnlineNo => 'حالا نه';
+
+  @override
+  String get scanReadOnlineYes => 'بخوان';
+
+  @override
+  String get scanReadOnlineNote => 'این سند را آنلاین خواندیم.';
+
+  @override
+  String get scanNoExpiryNote => 'به نظر می‌رسد این سند تاریخ انقضا ندارد. تاریخی را که می‌خواهید یادآوری شود اضافه کنید.';
+
+  @override
   String get duplicateKeepBoth => 'نگه داشتن هر دو';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get twoStepOffBody => 'با کد پشتیبان وارد شدید، بنابراین تأیید دومرحله‌ای خاموش شد. برای محافظت از حساب، آن را روی این تلفن دوباره راه‌اندازی کنید.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years سال',
-      one: '+$years سال',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'نوشتن تاریخ';
-
-  @override
-  String get expiryTypeTitle => 'تاریخ انقضا را بنویسید';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'برای مثال $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'این تاریخ درست به نظر نمی‌رسد. $example را امتحان کنید.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'این تاریخ گذشته است، بنابراین سابقه به‌عنوان منقضی ذخیره می‌شود.';
 
   @override
   String get expiryEndsToday => 'امروز منقضی می‌شود.';
-
-  @override
-  String get saveAndAddAnother => 'ذخیره و افزودن مورد دیگر';
-
-  @override
-  String get quickStartTitle => 'شروع سریع';
 
   @override
   String categoryCreatedAddGroup(String name) {

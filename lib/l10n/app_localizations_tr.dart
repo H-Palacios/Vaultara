@@ -5063,6 +5063,47 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'En az bir harf veya rakam kullanın.';
+
+  @override
+  String get recordSaveFailed => 'Kaydedilemedi. Bağlantınızı kontrol edip tekrar deneyin.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '$group grubunda zaten $name var, $date tarihinde sona eriyor.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Bu tarihi belgenizden tahmin ettik. Doğru olup olmadığını kontrol edin.';
+
+  @override
+  String get expiryOtherDates => 'Bu belgedeki diğer tarihler';
+
+  @override
+  String get scanPhotoSaved => 'Fotoğrafınız bu kayıtla birlikte kaydedildi.';
+
+  @override
+  String get scanPhotoNotSaved => 'Bu kayıtta izin verilen en fazla fotoğraf zaten olduğu için fotoğrafınız kaydedilmedi.';
+
+  @override
+  String get scanReadOnlineTitle => 'Bu belge çevrimiçi okunsun mu?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefonunuz bu belgeyi kesin olarak okuyamadı. Vaultara, okumak için fotoğraftaki metni sunucusuna gönderebilir. Fotoğraf telefonunuzda kalır ve uzun numaralar gizlenir.';
+
+  @override
+  String get scanReadOnlineNo => 'Şimdi değil';
+
+  @override
+  String get scanReadOnlineYes => 'Oku';
+
+  @override
+  String get scanReadOnlineNote => 'Bu belgeyi çevrimiçi okuduk.';
+
+  @override
+  String get scanNoExpiryNote => 'Bu belgenin bir son kullanma tarihi yok gibi görünüyor. Hatırlatılmak istediğiniz tarihi ekleyin.';
+
+  @override
   String get duplicateKeepBoth => 'İkisini de tut';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get twoStepOffBody => 'Yedek kodla giriş yaptığınız için iki adımlı doğrulama kapatıldı. Hesabınızı korumak için bu telefonda yeniden kurun.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years yıl',
-      one: '+$years yıl',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Tarihi yaz';
-
-  @override
-  String get expiryTypeTitle => 'Son kullanma tarihini yazın';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Örneğin $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Bu tarih doğru görünmüyor. $example deneyin.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Bu tarih geçti, bu yüzden kayıt süresi dolmuş olarak kaydedilecek.';
 
   @override
   String get expiryEndsToday => 'Bunun süresi bugün doluyor.';
-
-  @override
-  String get saveAndAddAnother => 'Kaydet ve bir tane daha ekle';
-
-  @override
-  String get quickStartTitle => 'Hızlı başlangıç';
 
   @override
   String categoryCreatedAddGroup(String name) {

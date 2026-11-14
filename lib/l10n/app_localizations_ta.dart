@@ -5063,6 +5063,47 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'குறைந்தது ஒரு எழுத்து அல்லது எண்ணைப் பயன்படுத்தவும்.';
+
+  @override
+  String get recordSaveFailed => 'சேமிக்க முடியவில்லை. இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'உங்களிடம் ஏற்கெனவே $group-இல் $name உள்ளது, $date அன்று காலாவதியாகும்.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'இந்தத் தேதியை உங்கள் ஆவணத்திலிருந்து ஊகித்தோம். பொருந்துகிறதா எனச் சரிபார்க்கவும்.';
+
+  @override
+  String get expiryOtherDates => 'இந்த ஆவணத்தில் உள்ள பிற தேதிகள்';
+
+  @override
+  String get scanPhotoSaved => 'உங்கள் படம் இந்தப் பதிவுடன் சேமிக்கப்பட்டது.';
+
+  @override
+  String get scanPhotoNotSaved => 'இந்தப் பதிவில் ஏற்கெனவே அனுமதிக்கப்பட்ட அதிகபட்ச படங்கள் உள்ளதால் உங்கள் படம் சேமிக்கப்படவில்லை.';
+
+  @override
+  String get scanReadOnlineTitle => 'இந்த ஆவணத்தை ஆன்லைனில் படிக்கலாமா?';
+
+  @override
+  String get scanReadOnlineBody => 'உங்கள் ஃபோனால் இந்த ஆவணத்தை உறுதியாகப் படிக்க முடியவில்லை. படிப்பதற்காக Vaultara படத்தின் உரையைத் தனது சர்வருக்கு அனுப்பலாம். படம் உங்கள் ஃபோனிலேயே இருக்கும், நீண்ட எண்கள் மறைக்கப்படும்.';
+
+  @override
+  String get scanReadOnlineNo => 'இப்போது வேண்டாம்';
+
+  @override
+  String get scanReadOnlineYes => 'படி';
+
+  @override
+  String get scanReadOnlineNote => 'இந்த ஆவணத்தை ஆன்லைனில் படித்தோம்.';
+
+  @override
+  String get scanNoExpiryNote => 'இந்த ஆவணத்துக்குக் காலாவதி தேதி இல்லை போல் தெரிகிறது. நினைவூட்ட வேண்டிய தேதியைச் சேர்க்கவும்.';
+
+  @override
   String get duplicateKeepBoth => 'இரண்டையும் வைத்திரு';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get twoStepOffBody => 'காப்புக் குறியீட்டுடன் உள்நுழைந்ததால் இரண்டு படிச் சரிபார்ப்பு அணைக்கப்பட்டது. கணக்கைப் பாதுகாப்பாக வைக்க இந்த ஃபோனில் மீண்டும் அமைக்கவும்.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ஆண்டுகள்',
-      one: '+$years ஆண்டு',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'தேதியைத் தட்டச்சு செய்';
-
-  @override
-  String get expiryTypeTitle => 'காலாவதி தேதியைத் தட்டச்சு செய்யவும்';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'எடுத்துக்காட்டு $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'அந்தத் தேதி சரியாகத் தெரியவில்லை. $example முயலவும்.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'இந்தத் தேதி கடந்துவிட்டது, எனவே பதிவு காலாவதியானதாகச் சேமிக்கப்படும்.';
 
   @override
   String get expiryEndsToday => 'இது இன்று காலாவதியாகிறது.';
-
-  @override
-  String get saveAndAddAnother => 'சேமித்து மற்றொன்றைச் சேர்';
-
-  @override
-  String get quickStartTitle => 'விரைவுத் தொடக்கம்';
 
   @override
   String categoryCreatedAddGroup(String name) {

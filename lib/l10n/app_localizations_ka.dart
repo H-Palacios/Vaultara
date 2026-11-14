@@ -5063,6 +5063,47 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'გამოიყენეთ მინიმუმ ერთი ასო ან ციფრი.';
+
+  @override
+  String get recordSaveFailed => 'შენახვა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '$name უკვე გაქვთ ჯგუფში $group, ვადა გასდის $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ეს თარიღი თქვენი დოკუმენტიდან გამოვიცანით. შეამოწმეთ, ემთხვევა თუ არა.';
+
+  @override
+  String get expiryOtherDates => 'სხვა თარიღები ამ დოკუმენტზე';
+
+  @override
+  String get scanPhotoSaved => 'თქვენი ფოტო ამ ჩანაწერთან ერთად შეინახა.';
+
+  @override
+  String get scanPhotoNotSaved => 'თქვენი ფოტო არ შეინახა, რადგან ამ ჩანაწერს უკვე აქვს ფოტოების მაქსიმალური რაოდენობა.';
+
+  @override
+  String get scanReadOnlineTitle => 'წავიკითხოთ ეს დოკუმენტი ონლაინ?';
+
+  @override
+  String get scanReadOnlineBody => 'თქვენმა ტელეფონმა ვერ წაიკითხა ეს დოკუმენტი დარწმუნებით. Vaultara-ს შეუძლია ფოტოს ტექსტი თავის სერვერზე გააგზავნოს წასაკითხად. ფოტო თქვენს ტელეფონზე რჩება, გრძელი ნომრები კი იმალება.';
+
+  @override
+  String get scanReadOnlineNo => 'ახლა არა';
+
+  @override
+  String get scanReadOnlineYes => 'წაკითხვა';
+
+  @override
+  String get scanReadOnlineNote => 'ეს დოკუმენტი ონლაინ წავიკითხეთ.';
+
+  @override
+  String get scanNoExpiryNote => 'როგორც ჩანს, ამ დოკუმენტს ვადის გასვლის თარიღი არ აქვს. დაამატეთ თარიღი, რომელზეც შეხსენება გსურთ.';
+
+  @override
   String get duplicateKeepBoth => 'ორივეს დატოვება';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get twoStepOffBody => 'სარეზერვო კოდით შეხვედით, ამიტომ ორსაფეხურიანი დადასტურება გამოირთო. თავიდან დააყენეთ ამ ტელეფონზე, რომ ანგარიში დაცული დარჩეს.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years წელი',
-      one: '+$years წელი',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'თარიღის აკრეფა';
-
-  @override
-  String get expiryTypeTitle => 'აკრიფეთ ვადის გასვლის თარიღი';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'მაგალითად $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ეს თარიღი სწორად არ გამოიყურება. სცადეთ $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ეს თარიღი გავიდა, ამიტომ ჩანაწერი შეინახება როგორც ვადაგასული.';
 
   @override
   String get expiryEndsToday => 'ვადა დღეს გადის.';
-
-  @override
-  String get saveAndAddAnother => 'შენახვა და კიდევ ერთის დამატება';
-
-  @override
-  String get quickStartTitle => 'სწრაფი დაწყება';
 
   @override
   String categoryCreatedAddGroup(String name) {

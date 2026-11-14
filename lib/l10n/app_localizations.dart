@@ -8737,6 +8737,84 @@ abstract class AppLocalizations {
   /// **'You already have {name} expiring {date}.'**
   String duplicateRecordBody(String name, String date);
 
+  /// Error under the record name when it has only symbols or spaces.
+  ///
+  /// In en, this message translates to:
+  /// **'Use at least one letter or number.'**
+  String get recordNameNeedsLetter;
+
+  /// Shown above Save in the record sheet when saving failed. Everything typed stays.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t save. Check your connection and try again.'**
+  String get recordSaveFailed;
+
+  /// Body of the Already added dialog when the same name for the same person is in another group.
+  ///
+  /// In en, this message translates to:
+  /// **'You already have {name} in {group}, expiring {date}.'**
+  String duplicateRecordElsewhere(String name, String group, String date);
+
+  /// Under the expiry date when Snap to add took the latest date on the page because no word like Expiry was next to any date.
+  ///
+  /// In en, this message translates to:
+  /// **'We guessed this date from your document. Check that it matches.'**
+  String get expiryGuessedHint;
+
+  /// Title above tappable chips with the other dates found on a scanned document.
+  ///
+  /// In en, this message translates to:
+  /// **'Other dates on this document'**
+  String get expiryOtherDates;
+
+  /// Scan banner: the scanned photo was added to the record photos.
+  ///
+  /// In en, this message translates to:
+  /// **'Your photo is saved with this record.'**
+  String get scanPhotoSaved;
+
+  /// Scan banner: the scanned photo was not added because the record has the maximum number of photos.
+  ///
+  /// In en, this message translates to:
+  /// **'Your photo wasn\'t saved because this record already has the most photos allowed.'**
+  String get scanPhotoNotSaved;
+
+  /// Title of the dialog asking once before the text of a scanned document is sent to the server.
+  ///
+  /// In en, this message translates to:
+  /// **'Read this document online?'**
+  String get scanReadOnlineTitle;
+
+  /// Body of that dialog. Only text is sent, never the photo; long numbers are hidden.
+  ///
+  /// In en, this message translates to:
+  /// **'Your phone couldn\'t read this document with certainty. Vaultara can send the text from the photo to its server to read it. The photo stays on your phone, and long numbers are hidden.'**
+  String get scanReadOnlineBody;
+
+  /// Button: do not read online this time.
+  ///
+  /// In en, this message translates to:
+  /// **'Not now'**
+  String get scanReadOnlineNo;
+
+  /// Button: allow reading the document text online.
+  ///
+  /// In en, this message translates to:
+  /// **'Read it'**
+  String get scanReadOnlineYes;
+
+  /// Scan banner line when the document was read online.
+  ///
+  /// In en, this message translates to:
+  /// **'We read this document online.'**
+  String get scanReadOnlineNote;
+
+  /// Scan banner line when the document appears to have no expiry date.
+  ///
+  /// In en, this message translates to:
+  /// **'This document doesn\'t seem to have an expiry date. Add the date you want to be reminded about.'**
+  String get scanNoExpiryNote;
+
   /// Dialog button: save the new record anyway
   ///
   /// In en, this message translates to:
@@ -14947,36 +15025,6 @@ abstract class AppLocalizations {
   /// **'You signed in with a backup code, so two-step verification was turned off. Set it up again on this phone to keep your account protected.'**
   String get twoStepOffBody;
 
-  /// Quick button under the expiry date that adds years.
-  ///
-  /// In en, this message translates to:
-  /// **'{years, plural, =1{+{years} year} other{+{years} years}}'**
-  String expiryPlusYears(int years);
-
-  /// Quick button that lets the user type the expiry date.
-  ///
-  /// In en, this message translates to:
-  /// **'Type date'**
-  String get expiryTypeDate;
-
-  /// Title of the dialog for typing a date.
-  ///
-  /// In en, this message translates to:
-  /// **'Type the expiry date'**
-  String get expiryTypeTitle;
-
-  /// Helper text in the typed date field.
-  ///
-  /// In en, this message translates to:
-  /// **'For example {example}'**
-  String expiryTypeHint(String example);
-
-  /// Error when the typed date cannot be read or is out of range.
-  ///
-  /// In en, this message translates to:
-  /// **'That date doesn\'t look right. Try {example}.'**
-  String expiryTypeInvalid(String example);
-
   /// Note under the expiry date when it is in the past.
   ///
   /// In en, this message translates to:
@@ -14988,18 +15036,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This expires today.'**
   String get expiryEndsToday;
-
-  /// Button that saves a record and clears the form for the next one.
-  ///
-  /// In en, this message translates to:
-  /// **'Save and add another'**
-  String get saveAndAddAnother;
-
-  /// Heading above the common document buttons on an empty Add record sheet.
-  ///
-  /// In en, this message translates to:
-  /// **'Quick start'**
-  String get quickStartTitle;
 
   /// Shown after a category is made.
   ///

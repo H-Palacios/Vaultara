@@ -1677,6 +1677,19 @@
   "scanUpdateExisting": "Përditëso",
   "duplicateRecordTitle": "Është shtuar tashmë",
   "duplicateRecordBody": "Keni tashmë {name} që skadon më {date}.",
+  "recordNameNeedsLetter": "Përdor të paktën një shkronjë ose numër.",
+  "recordSaveFailed": "Nuk u ruajt dot. Kontrollo lidhjen dhe provo sërish.",
+  "duplicateRecordElsewhere": "Ke tashmë {name} te {group}, që skadon më {date}.",
+  "expiryGuessedHint": "Këtë datë e hamendësuam nga dokumenti yt. Kontrollo që përputhet.",
+  "expiryOtherDates": "Data të tjera në këtë dokument",
+  "scanPhotoSaved": "Fotoja jote u ruajt me këtë regjistrim.",
+  "scanPhotoNotSaved": "Fotoja jote nuk u ruajt, sepse ky regjistrim ka tashmë numrin maksimal të fotove.",
+  "scanReadOnlineTitle": "Ta lexojmë këtë dokument në internet?",
+  "scanReadOnlineBody": "Telefoni yt nuk e lexoi dot me siguri këtë dokument. Vaultara mund ta dërgojë tekstin e fotos te serveri i vet për ta lexuar. Fotoja mbetet në telefonin tënd dhe numrat e gjatë fshihen.",
+  "scanReadOnlineNo": "Jo tani",
+  "scanReadOnlineYes": "Lexoje",
+  "scanReadOnlineNote": "E lexuam këtë dokument në internet.",
+  "scanNoExpiryNote": "Duket se ky dokument nuk ka datë skadimi. Shto datën për të cilën do kujtesë.",
   "duplicateKeepBoth": "Mbaji të dyja",
   "duplicateUpdateExisting": "Përditëso ekzistuesin",
   "editorDefaultsHint": "U plotësuan cilësimet tipike për {group}. Mund t'i ndryshoni te Më shumë detaje.",
@@ -3224,36 +3237,8 @@
   "twoStepSkipForNow": "Kapërce tani",
   "twoStepOffTitle": "Verifikimi me dy hapa është çaktivizuar",
   "twoStepOffBody": "Hytë me një kod rezervë, prandaj verifikimi me dy hapa u çaktivizua. Konfigurojeni sërish në këtë telefon që llogaria të mbetet e mbrojtur.",
-  "expiryPlusYears": "{years, plural, one{+{years} vit} other{+{years} vjet}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Shkruaj datën",
-  "expiryTypeTitle": "Shkruani datën e skadimit",
-  "expiryTypeHint": "Për shembull {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Kjo datë nuk duket e saktë. Provoni {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Kjo datë ka kaluar, prandaj regjistrimi do të ruhet si i skaduar.",
   "expiryEndsToday": "Skadon sot.",
-  "saveAndAddAnother": "Ruaj dhe shto një tjetër",
-  "quickStartTitle": "Fillim i shpejtë",
   "categoryCreatedAddGroup": "{name} u krijua. Të shtohet një grup?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

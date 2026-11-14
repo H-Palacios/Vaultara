@@ -1675,6 +1675,19 @@
   "scanUpdateExisting": "Actualizar",
   "duplicateRecordTitle": "Xa engadido",
   "duplicateRecordBody": "Xa tes {name} con caducidade o {date}.",
+  "recordNameNeedsLetter": "Usa polo menos unha letra ou un número.",
+  "recordSaveFailed": "Non se puido gardar. Comproba a conexión e téntao de novo.",
+  "duplicateRecordElsewhere": "Xa tes {name} en {group}, que caduca o {date}.",
+  "expiryGuessedHint": "Deducimos esta data do teu documento. Comproba que coincide.",
+  "expiryOtherDates": "Outras datas deste documento",
+  "scanPhotoSaved": "A túa foto gardouse con este rexistro.",
+  "scanPhotoNotSaved": "A túa foto non se gardou porque este rexistro xa ten o máximo de fotos permitidas.",
+  "scanReadOnlineTitle": "Ler este documento en liña?",
+  "scanReadOnlineBody": "O teu teléfono non puido ler este documento con seguridade. Vaultara pode enviar o texto da foto ao seu servidor para lelo. A foto queda no teu teléfono e os números longos ocúltanse.",
+  "scanReadOnlineNo": "Agora non",
+  "scanReadOnlineYes": "Leelo",
+  "scanReadOnlineNote": "Lemos este documento en liña.",
+  "scanNoExpiryNote": "Parece que este documento non ten data de caducidade. Engade a data da que queres un recordatorio.",
   "duplicateKeepBoth": "Manter ambos",
   "duplicateUpdateExisting": "Actualizar o existente",
   "editorDefaultsHint": "Cubrimos os axustes habituais para {group}. Podes cambialos en Máis detalles.",
@@ -3222,36 +3235,8 @@
   "twoStepSkipForNow": "Omitir polo de agora",
   "twoStepOffTitle": "A verificación en dous pasos está desactivada",
   "twoStepOffBody": "Iniciaches sesión cun código de seguranza, así que se desactivou a verificación en dous pasos. Configúraa de novo neste teléfono para manter a conta protexida.",
-  "expiryPlusYears": "{years, plural, =1{+{years} ano} other{+{years} anos}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Escribir a data",
-  "expiryTypeTitle": "Escribe a data de caducidade",
-  "expiryTypeHint": "Por exemplo {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Esa data non parece correcta. Proba {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Esta data xa pasou, así que o rexistro gardarase como caducado.",
   "expiryEndsToday": "Caduca hoxe.",
-  "saveAndAddAnother": "Gardar e engadir outro",
-  "quickStartTitle": "Inicio rápido",
   "categoryCreatedAddGroup": "Creouse {name}. Engadir un grupo?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

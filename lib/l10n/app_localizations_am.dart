@@ -5063,6 +5063,47 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'ቢያንስ አንድ ፊደል ወይም ቁጥር ይጠቀሙ።';
+
+  @override
+  String get recordSaveFailed => 'ማስቀመጥ አልተቻለም። ግንኙነትዎን ያረጋግጡና እንደገና ይሞክሩ።';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '$name አስቀድሞ በ$group ውስጥ አለዎት፣ በ$date ያበቃል።';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ይህን ቀን ከሰነድዎ ገምተናል። መዛመዱን ያረጋግጡ።';
+
+  @override
+  String get expiryOtherDates => 'በዚህ ሰነድ ላይ ያሉ ሌሎች ቀኖች';
+
+  @override
+  String get scanPhotoSaved => 'ፎቶዎ ከዚህ መዝገብ ጋር ተቀምጧል።';
+
+  @override
+  String get scanPhotoNotSaved => 'ይህ መዝገብ የተፈቀደውን ከፍተኛ የፎቶ ብዛት ስለያዘ ፎቶዎ አልተቀመጠም።';
+
+  @override
+  String get scanReadOnlineTitle => 'ይህን ሰነድ በመስመር ላይ ይነበብ?';
+
+  @override
+  String get scanReadOnlineBody => 'ስልክዎ ይህን ሰነድ በእርግጠኝነት ማንበብ አልቻለም። Vaultara ከፎቶው ያለውን ጽሑፍ ለማንበብ ወደ አገልጋዩ መላክ ይችላል። ፎቶው በስልክዎ ላይ ይቆያል፣ ረጃጅም ቁጥሮችም ይደበቃሉ።';
+
+  @override
+  String get scanReadOnlineNo => 'አሁን አይደለም';
+
+  @override
+  String get scanReadOnlineYes => 'አንብብ';
+
+  @override
+  String get scanReadOnlineNote => 'ይህን ሰነድ በመስመር ላይ አንብበናል።';
+
+  @override
+  String get scanNoExpiryNote => 'ይህ ሰነድ የሚያበቃበት ቀን ያለው አይመስልም። እንዲያስታውስዎ የሚፈልጉትን ቀን ያክሉ።';
+
+  @override
   String get duplicateKeepBoth => 'ሁለቱንም አቆይ';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get twoStepOffBody => 'በመጠባበቂያ ኮድ ስለገቡ ባለሁለት ደረጃ ማረጋገጫ ጠፍቷል። መለያዎ እንደተጠበቀ እንዲቆይ በዚህ ስልክ ላይ እንደገና ያዋቅሩት።';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ዓመታት',
-      one: '+$years ዓመት',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'ቀን ጻፍ';
-
-  @override
-  String get expiryTypeTitle => 'የሚያበቃበትን ቀን ይጻፉ';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ለምሳሌ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ያ ቀን ትክክል አይመስልም። $example ይሞክሩ።';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ይህ ቀን አልፏል፣ ስለዚህ መዝገቡ እንደጊዜው ያለፈበት ሆኖ ይቀመጣል።';
 
   @override
   String get expiryEndsToday => 'ይህ ዛሬ ያበቃል።';
-
-  @override
-  String get saveAndAddAnother => 'አስቀምጥና ሌላ አክል';
-
-  @override
-  String get quickStartTitle => 'ፈጣን ጅምር';
 
   @override
   String categoryCreatedAddGroup(String name) {

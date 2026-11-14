@@ -1680,6 +1680,19 @@
   "scanUpdateExisting": "Оновити",
   "duplicateRecordTitle": "Уже додано",
   "duplicateRecordBody": "У вас уже є {name}, що закінчується {date}.",
+  "recordNameNeedsLetter": "Використайте принаймні одну літеру або цифру.",
+  "recordSaveFailed": "Не вдалося зберегти. Перевірте з'єднання й спробуйте ще раз.",
+  "duplicateRecordElsewhere": "У вас уже є {name} у групі «{group}», спливає {date}.",
+  "expiryGuessedHint": "Цю дату ми вгадали з вашого документа. Перевірте, чи вона правильна.",
+  "expiryOtherDates": "Інші дати в цьому документі",
+  "scanPhotoSaved": "Ваше фото збережено разом із цим записом.",
+  "scanPhotoNotSaved": "Ваше фото не збережено, бо цей запис уже має максимальну кількість фото.",
+  "scanReadOnlineTitle": "Прочитати документ онлайн?",
+  "scanReadOnlineBody": "Телефону не вдалося точно прочитати цей документ. Vaultara може надіслати текст із фото на свій сервер, щоб прочитати його. Фото залишається на вашому телефоні, а довгі номери приховуються.",
+  "scanReadOnlineNo": "Не зараз",
+  "scanReadOnlineYes": "Прочитати",
+  "scanReadOnlineNote": "Ми прочитали цей документ онлайн.",
+  "scanNoExpiryNote": "Схоже, цей документ не має терміну дії. Додайте дату, про яку хочете отримати нагадування.",
   "duplicateKeepBoth": "Залишити обидва",
   "duplicateUpdateExisting": "Оновити наявний",
   "editorDefaultsHint": "Заповнено типові налаштування для групи {group}. Ви можете змінити їх у розділі Більше деталей.",
@@ -3227,36 +3240,8 @@
   "twoStepSkipForNow": "Пропустити поки",
   "twoStepOffTitle": "Двоетапну перевірку вимкнено",
   "twoStepOffBody": "Ви увійшли з резервним кодом, тому двоетапну перевірку було вимкнено. Налаштуйте її знову на цьому телефоні, щоб обліковий запис залишався захищеним.",
-  "expiryPlusYears": "{years, plural, one{+{years} рік} few{+{years} роки} many{+{years} років} other{+{years} року}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Ввести дату",
-  "expiryTypeTitle": "Введіть дату закінчення терміну",
-  "expiryTypeHint": "Наприклад {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Ця дата виглядає неправильно. Спробуйте {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Ця дата вже минула, тому запис буде збережено як прострочений.",
   "expiryEndsToday": "Термін спливає сьогодні.",
-  "saveAndAddAnother": "Зберегти й додати ще",
-  "quickStartTitle": "Швидкий старт",
   "categoryCreatedAddGroup": "{name}: категорію створено. Додати групу?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

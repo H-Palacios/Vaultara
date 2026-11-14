@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Hlaziya",
   "duplicateRecordTitle": "Sele ikho",
   "duplicateRecordBody": "Sele unayo i-{name} ephelelwa ngomhla: {date}.",
+  "recordNameNeedsLetter": "Sebenzisa ubuncinane unobumba omnye okanye inombolo.",
+  "recordSaveFailed": "Ayikwazanga ukugcina. Jonga uqhagamshelo lwakho uzame kwakhona.",
+  "duplicateRecordElsewhere": "Sele unayo i-{name} ku-{group}, iphelelwa ngo-{date}.",
+  "expiryGuessedHint": "Lo mhla siwuqikelele kuxwebhu lwakho. Jonga ukuba uyahambelana.",
+  "expiryOtherDates": "Eminye imihla kolu xwebhu",
+  "scanPhotoSaved": "Ifoto yakho igcinwe kunye nale rekhodi.",
+  "scanPhotoNotSaved": "Ifoto yakho ayigcinwanga kuba le rekhodi sele ineefoto ezininzi ezivumelekileyo.",
+  "scanReadOnlineTitle": "Funda olu xwebhu kwi-intanethi?",
+  "scanReadOnlineBody": "Ifowuni yakho ayikwazanga ukulufunda olu xwebhu ngokuqinisekileyo. I-Vaultara ingathumela umbhalo wefoto kwiseva yayo ukuze iwufunde. Ifoto ihlala kwifowuni yakho, kwaye iinombolo ezinde ziyafihlwa.",
+  "scanReadOnlineNo": "Hayi ngoku",
+  "scanReadOnlineYes": "Yifunde",
+  "scanReadOnlineNote": "Olu xwebhu silufunde kwi-intanethi.",
+  "scanNoExpiryNote": "Kubonakala ngathi olu xwebhu alunamhla wokuphelelwa. Yongeza umhla ofuna ukukhunjuzwa ngawo.",
   "duplicateKeepBoth": "Gcina zozibini",
   "duplicateUpdateExisting": "Hlaziya esele ikho",
   "editorDefaultsHint": "Kuzaliswe useto oluqhelekileyo lwe-{group}. Ungalutshintsha kwiinkcukacha ezongezelelweyo.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Tsiba okwangoku",
   "twoStepOffTitle": "Ukuqinisekiswa ngamanyathelo amabini kucinyiwe",
   "twoStepOffBody": "Ungene ngekhowudi yogcino, ngoko ukuqinisekiswa ngamanyathelo amabini kucinyiwe. Kumisele kwakhona kule fowuni ukuze i-akhawunti yakho ihlale ikhuselekile.",
-  "expiryPlusYears": "{years, plural, =1{+unyaka o-{years}} other{+iminyaka e-{years}}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Chwetheza umhla",
-  "expiryTypeTitle": "Chwetheza umhla wokuphelelwa",
-  "expiryTypeHint": "Umzekelo {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Lo mhla awubonakali uchanekile. Zama u-{example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Lo mhla sele udlulile, ngoko irekhodi iza kugcinwa njengephelelwe lixesha.",
   "expiryEndsToday": "Oku kuphelelwa namhlanje.",
-  "saveAndAddAnother": "Gcina wongeze enye",
-  "quickStartTitle": "Ukuqala ngokukhawuleza",
   "categoryCreatedAddGroup": "I-{name} yenziwe. Yongeze iqela kuyo?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

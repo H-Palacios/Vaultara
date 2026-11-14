@@ -5024,6 +5024,47 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => '문자나 숫자를 하나 이상 사용하세요.';
+
+  @override
+  String get recordSaveFailed => '저장하지 못했습니다. 연결을 확인하고 다시 시도하세요.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '$group에 이미 $name이(가) 있습니다. $date에 만료됩니다.';
+  }
+
+  @override
+  String get expiryGuessedHint => '이 날짜는 문서에서 추측한 것입니다. 맞는지 확인하세요.';
+
+  @override
+  String get expiryOtherDates => '이 문서의 다른 날짜';
+
+  @override
+  String get scanPhotoSaved => '사진이 이 기록과 함께 저장되었습니다.';
+
+  @override
+  String get scanPhotoNotSaved => '이 기록에 이미 허용된 최대 사진 수가 있어 사진이 저장되지 않았습니다.';
+
+  @override
+  String get scanReadOnlineTitle => '이 문서를 온라인으로 읽을까요?';
+
+  @override
+  String get scanReadOnlineBody => '휴대전화가 이 문서를 확실하게 읽지 못했습니다. Vaultara가 사진 속 글자를 서버로 보내 읽을 수 있습니다. 사진은 휴대전화에 남고 긴 번호는 가려집니다.';
+
+  @override
+  String get scanReadOnlineNo => '나중에';
+
+  @override
+  String get scanReadOnlineYes => '읽기';
+
+  @override
+  String get scanReadOnlineNote => '이 문서를 온라인으로 읽었습니다.';
+
+  @override
+  String get scanNoExpiryNote => '이 문서에는 만료일이 없는 것 같습니다. 알림을 받고 싶은 날짜를 추가하세요.';
+
+  @override
   String get duplicateKeepBoth => '둘 다 유지';
 
   @override
@@ -8705,42 +8746,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get twoStepOffBody => '백업 코드로 로그인하여 2단계 인증이 꺼졌습니다. 계정을 보호하려면 이 휴대전화에서 다시 설정하세요.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years년',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => '날짜 입력';
-
-  @override
-  String get expiryTypeTitle => '만료일 입력';
-
-  @override
-  String expiryTypeHint(String example) {
-    return '예: $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return '날짜가 올바르지 않은 것 같습니다. $example 형식으로 입력해 보세요.';
-  }
-
-  @override
   String get expiryAlreadyPassed => '이 날짜는 이미 지났으므로 기록이 만료됨으로 저장됩니다.';
 
   @override
   String get expiryEndsToday => '오늘 만료됩니다.';
-
-  @override
-  String get saveAndAddAnother => '저장하고 하나 더 추가';
-
-  @override
-  String get quickStartTitle => '빠른 시작';
 
   @override
   String categoryCreatedAddGroup(String name) {

@@ -5063,6 +5063,47 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Yi amfani da aƙalla harafi ko lamba ɗaya.';
+
+  @override
+  String get recordSaveFailed => 'Ba a iya ajiyewa ba. Duba haɗinka ka sake gwadawa.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Kana da $name a $group tuni, zai ƙare a $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Mun yi hasashen wannan kwanan wata daga takardarka. Duba ko ya dace.';
+
+  @override
+  String get expiryOtherDates => 'Wasu kwanakin wata a wannan takarda';
+
+  @override
+  String get scanPhotoSaved => 'An ajiye hotonka tare da wannan bayani.';
+
+  @override
+  String get scanPhotoNotSaved => 'Ba a ajiye hotonka ba saboda wannan bayani ya riga ya kai iyakar hotunan da aka yarda.';
+
+  @override
+  String get scanReadOnlineTitle => 'A karanta wannan takarda ta intanet?';
+
+  @override
+  String get scanReadOnlineBody => 'Wayarka ba ta iya karanta wannan takarda da tabbas ba. Vaultara na iya aika rubutun hoton zuwa sabar ta don karanta shi. Hoton yana zama a wayarka, kuma ana ɓoye dogayen lambobi.';
+
+  @override
+  String get scanReadOnlineNo => 'Ba yanzu ba';
+
+  @override
+  String get scanReadOnlineYes => 'Karanta';
+
+  @override
+  String get scanReadOnlineNote => 'Mun karanta wannan takarda ta intanet.';
+
+  @override
+  String get scanNoExpiryNote => 'Da alama wannan takarda ba ta da ranar ƙarewa. Ƙara ranar da kake son a tunatar da kai.';
+
+  @override
   String get duplicateKeepBoth => 'Ajiye duka biyu';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get twoStepOffBody => 'Ka shiga da lambar ajiya, don haka an kashe tabbatarwa ta matakai biyu. Sake saita ta a wannan wayar don asusunka ya kasance a kare.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+shekaru $years',
-      one: '+shekara $years',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Rubuta kwanan wata';
-
-  @override
-  String get expiryTypeTitle => 'Rubuta ranar ƙarewa';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Misali $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Wannan kwanan wata bai yi daidai ba. Gwada $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Wannan kwanan wata ya wuce, don haka za a ajiye bayanin a matsayin wanda ya ƙare.';
 
   @override
   String get expiryEndsToday => 'Wannan yana ƙarewa yau.';
-
-  @override
-  String get saveAndAddAnother => 'Ajiye ka ƙara wani';
-
-  @override
-  String get quickStartTitle => 'Farawa da sauri';
 
   @override
   String categoryCreatedAddGroup(String name) {

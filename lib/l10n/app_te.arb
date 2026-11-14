@@ -1680,6 +1680,19 @@
   "scanUpdateExisting": "అప్‌డేట్ చేయండి",
   "duplicateRecordTitle": "ఇప్పటికే జోడించబడింది",
   "duplicateRecordBody": "మీ దగ్గర ఇప్పటికే {name} ఉంది, దాని గడువు {date}న ముగుస్తుంది.",
+  "recordNameNeedsLetter": "కనీసం ఒక అక్షరం లేదా అంకె వాడండి.",
+  "recordSaveFailed": "సేవ్ చేయలేకపోయాము. మీ కనెక్షన్ తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.",
+  "duplicateRecordElsewhere": "మీ వద్ద ఇప్పటికే {group}లో {name} ఉంది, {date}న గడువు ముగుస్తుంది.",
+  "expiryGuessedHint": "ఈ తేదీని మీ పత్రం నుండి ఊహించాము. సరిపోతుందో తనిఖీ చేయండి.",
+  "expiryOtherDates": "ఈ పత్రంలోని ఇతర తేదీలు",
+  "scanPhotoSaved": "మీ ఫోటో ఈ రికార్డుతో సేవ్ అయింది.",
+  "scanPhotoNotSaved": "ఈ రికార్డులో ఇప్పటికే అనుమతించిన గరిష్ట ఫోటోలు ఉన్నందున మీ ఫోటో సేవ్ కాలేదు.",
+  "scanReadOnlineTitle": "ఈ పత్రాన్ని ఆన్‌లైన్‌లో చదవాలా?",
+  "scanReadOnlineBody": "మీ ఫోన్ ఈ పత్రాన్ని ఖచ్చితంగా చదవలేకపోయింది. చదవడానికి Vaultara ఫోటోలోని వచనాన్ని తన సర్వర్‌కు పంపగలదు. ఫోటో మీ ఫోన్‌లోనే ఉంటుంది, పొడవైన నంబర్లు దాచబడతాయి.",
+  "scanReadOnlineNo": "ఇప్పుడు వద్దు",
+  "scanReadOnlineYes": "చదవండి",
+  "scanReadOnlineNote": "ఈ పత్రాన్ని ఆన్‌లైన్‌లో చదివాము.",
+  "scanNoExpiryNote": "ఈ పత్రానికి గడువు తేదీ లేనట్లుంది. మీకు గుర్తు చేయాల్సిన తేదీని జోడించండి.",
   "duplicateKeepBoth": "రెండింటినీ ఉంచండి",
   "duplicateUpdateExisting": "ఉన్నదాన్ని అప్‌డేట్ చేయండి",
   "editorDefaultsHint": "{group} కోసం సాధారణ సెట్టింగ్‌లు నింపాము. మీరు వాటిని మరిన్ని వివరాలలో మార్చవచ్చు.",
@@ -3227,36 +3240,8 @@
   "twoStepSkipForNow": "ఇప్పుడు దాటవేయండి",
   "twoStepOffTitle": "రెండు దశల ధృవీకరణ ఆఫ్‌లో ఉంది",
   "twoStepOffBody": "మీరు బ్యాకప్ కోడ్‌తో సైన్ ఇన్ చేశారు, కాబట్టి రెండు దశల ధృవీకరణ ఆఫ్ చేయబడింది. మీ ఖాతాను సురక్షితంగా ఉంచడానికి ఈ ఫోన్‌లో మళ్లీ సెటప్ చేయండి.",
-  "expiryPlusYears": "{years, plural, =1{+{years} సంవత్సరం} other{+{years} సంవత్సరాలు}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "తేదీని టైప్ చేయండి",
-  "expiryTypeTitle": "గడువు తేదీని టైప్ చేయండి",
-  "expiryTypeHint": "ఉదాహరణకు {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ఆ తేదీ సరిగ్గా కనిపించడం లేదు. {example} ప్రయత్నించండి.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ఈ తేదీ గడిచిపోయింది, కాబట్టి రికార్డ్ గడువు ముగిసినదిగా సేవ్ అవుతుంది.",
   "expiryEndsToday": "ఇది ఈరోజు గడువు ముగుస్తుంది.",
-  "saveAndAddAnother": "సేవ్ చేసి మరొకటి జోడించండి",
-  "quickStartTitle": "త్వరిత ప్రారంభం",
   "categoryCreatedAddGroup": "{name} సృష్టించబడింది. దానికి సమూహాన్ని జోడించాలా?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

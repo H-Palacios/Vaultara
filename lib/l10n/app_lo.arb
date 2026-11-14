@@ -1681,6 +1681,19 @@
   "scanUpdateExisting": "ອັບເດດ",
   "duplicateRecordTitle": "ເພີ່ມແລ້ວ",
   "duplicateRecordBody": "ທ່ານມີ {name} ທີ່ໝົດອາຍຸ {date} ຢູ່ແລ້ວ.",
+  "recordNameNeedsLetter": "ໃຊ້ຕົວອັກສອນ ຫຼື ຕົວເລກຢ່າງໜ້ອຍໜຶ່ງຕົວ.",
+  "recordSaveFailed": "ບັນທຶກບໍ່ໄດ້. ກວດເບິ່ງການເຊື່ອມຕໍ່ ແລ້ວລອງໃໝ່.",
+  "duplicateRecordElsewhere": "ທ່ານມີ {name} ໃນ {group} ແລ້ວ, ໝົດອາຍຸ {date}.",
+  "expiryGuessedHint": "ພວກເຮົາເດົາວັນທີນີ້ຈາກເອກະສານຂອງທ່ານ. ກວດເບິ່ງວ່າຖືກຕ້ອງ.",
+  "expiryOtherDates": "ວັນທີອື່ນໃນເອກະສານນີ້",
+  "scanPhotoSaved": "ຮູບຂອງທ່ານຖືກບັນທຶກພ້ອມກັບລາຍການນີ້ແລ້ວ.",
+  "scanPhotoNotSaved": "ຮູບຂອງທ່ານບໍ່ໄດ້ຖືກບັນທຶກ ເພາະລາຍການນີ້ມີຮູບເຕັມຈຳນວນທີ່ອະນຸຍາດແລ້ວ.",
+  "scanReadOnlineTitle": "ອ່ານເອກະສານນີ້ທາງອອນລາຍບໍ?",
+  "scanReadOnlineBody": "ໂທລະສັບຂອງທ່ານອ່ານເອກະສານນີ້ບໍ່ໄດ້ແນ່ນອນ. Vaultara ສາມາດສົ່ງຂໍ້ຄວາມຈາກຮູບໄປຫາເຊີບເວີຂອງມັນເພື່ອອ່ານ. ຮູບຢູ່ໃນໂທລະສັບຂອງທ່ານ ແລະ ຕົວເລກຍາວຈະຖືກເຊື່ອງໄວ້.",
+  "scanReadOnlineNo": "ບໍ່ແມ່ນຕອນນີ້",
+  "scanReadOnlineYes": "ອ່ານ",
+  "scanReadOnlineNote": "ພວກເຮົາອ່ານເອກະສານນີ້ທາງອອນລາຍແລ້ວ.",
+  "scanNoExpiryNote": "ເບິ່ງຄືວ່າເອກະສານນີ້ບໍ່ມີວັນໝົດອາຍຸ. ເພີ່ມວັນທີທີ່ທ່ານຢາກໃຫ້ແຈ້ງເຕືອນ.",
   "duplicateKeepBoth": "ເກັບທັງສອງ",
   "duplicateUpdateExisting": "ອັບເດດອັນທີ່ມີ",
   "editorDefaultsHint": "ຕື່ມການຕັ້ງຄ່າທົ່ວໄປສຳລັບ {group} ແລ້ວ. ທ່ານປ່ຽນໄດ້ໃນ ລາຍລະອຽດເພີ່ມເຕີມ.",
@@ -3228,36 +3241,8 @@
   "twoStepSkipForNow": "ຂ້າມໄປກ່ອນ",
   "twoStepOffTitle": "ການຢືນຢັນສອງຂັ້ນຕອນປິດຢູ່",
   "twoStepOffBody": "ທ່ານເຂົ້າສູ່ລະບົບດ້ວຍລະຫັດສຳຮອງ ດັ່ງນັ້ນການຢືນຢັນສອງຂັ້ນຕອນຈຶ່ງຖືກປິດ. ຕັ້ງຄ່າໃໝ່ໃນໂທລະສັບນີ້ເພື່ອປົກປ້ອງບັນຊີຂອງທ່ານ.",
-  "expiryPlusYears": "{years, plural, other{+{years} ປີ}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "ພິມວັນທີ",
-  "expiryTypeTitle": "ພິມວັນໝົດອາຍຸ",
-  "expiryTypeHint": "ຕົວຢ່າງ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ວັນທີນັ້ນເບິ່ງຄືບໍ່ຖືກຕ້ອງ. ລອງ {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ວັນທີນີ້ຜ່ານໄປແລ້ວ ດັ່ງນັ້ນບັນທຶກຈະຖືກເກັບເປັນໝົດອາຍຸ.",
   "expiryEndsToday": "ອັນນີ້ໝົດອາຍຸມື້ນີ້.",
-  "saveAndAddAnother": "ບັນທຶກ ແລະ ເພີ່ມອີກອັນ",
-  "quickStartTitle": "ເລີ່ມດ່ວນ",
   "categoryCreatedAddGroup": "ສ້າງ {name} ແລ້ວ. ເພີ່ມກຸ່ມໃສ່ບໍ?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

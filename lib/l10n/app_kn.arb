@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "ಅಪ್‌ಡೇಟ್ ಮಾಡಿ",
   "duplicateRecordTitle": "ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ",
   "duplicateRecordBody": "{date} ರಂದು ಮುಕ್ತಾಯವಾಗುವ {name} ನಿಮ್ಮಲ್ಲಿ ಈಗಾಗಲೇ ಇದೆ.",
+  "recordNameNeedsLetter": "ಕನಿಷ್ಠ ಒಂದು ಅಕ್ಷರ ಅಥವಾ ಸಂಖ್ಯೆ ಬಳಸಿ.",
+  "recordSaveFailed": "ಉಳಿಸಲಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+  "duplicateRecordElsewhere": "ನಿಮ್ಮ ಬಳಿ ಈಗಾಗಲೇ {group}ನಲ್ಲಿ {name} ಇದೆ, {date} ರಂದು ಮುಕ್ತಾಯ.",
+  "expiryGuessedHint": "ಈ ದಿನಾಂಕವನ್ನು ನಿಮ್ಮ ದಾಖಲೆಯಿಂದ ಊಹಿಸಿದ್ದೇವೆ. ಹೊಂದುತ್ತದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ.",
+  "expiryOtherDates": "ಈ ದಾಖಲೆಯಲ್ಲಿನ ಇತರ ದಿನಾಂಕಗಳು",
+  "scanPhotoSaved": "ನಿಮ್ಮ ಫೋಟೋವನ್ನು ಈ ದಾಖಲೆಯೊಂದಿಗೆ ಉಳಿಸಲಾಗಿದೆ.",
+  "scanPhotoNotSaved": "ಈ ದಾಖಲೆಯಲ್ಲಿ ಈಗಾಗಲೇ ಅನುಮತಿಸಿದ ಗರಿಷ್ಠ ಫೋಟೋಗಳು ಇರುವುದರಿಂದ ನಿಮ್ಮ ಫೋಟೋ ಉಳಿಸಲಾಗಲಿಲ್ಲ.",
+  "scanReadOnlineTitle": "ಈ ದಾಖಲೆಯನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಓದಬೇಕೆ?",
+  "scanReadOnlineBody": "ನಿಮ್ಮ ಫೋನ್ ಈ ದಾಖಲೆಯನ್ನು ಖಚಿತವಾಗಿ ಓದಲಾಗಲಿಲ್ಲ. ಓದಲು Vaultara ಫೋಟೋದ ಪಠ್ಯವನ್ನು ತನ್ನ ಸರ್ವರ್‌ಗೆ ಕಳುಹಿಸಬಹುದು. ಫೋಟೋ ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲೇ ಇರುತ್ತದೆ, ಉದ್ದ ಸಂಖ್ಯೆಗಳನ್ನು ಮರೆಮಾಡಲಾಗುತ್ತದೆ.",
+  "scanReadOnlineNo": "ಈಗ ಬೇಡ",
+  "scanReadOnlineYes": "ಓದಿ",
+  "scanReadOnlineNote": "ಈ ದಾಖಲೆಯನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಓದಿದ್ದೇವೆ.",
+  "scanNoExpiryNote": "ಈ ದಾಖಲೆಗೆ ಮುಕ್ತಾಯ ದಿನಾಂಕ ಇಲ್ಲದಂತೆ ತೋರುತ್ತದೆ. ನಿಮಗೆ ನೆನಪಿಸಬೇಕಾದ ದಿನಾಂಕ ಸೇರಿಸಿ.",
   "duplicateKeepBoth": "ಎರಡನ್ನೂ ಇರಿಸಿ",
   "duplicateUpdateExisting": "ಈಗಿರುವುದನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಿ",
   "editorDefaultsHint": "{group} ಗಾಗಿ ಸಾಮಾನ್ಯ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತುಂಬಲಾಗಿದೆ. ಇನ್ನಷ್ಟು ವಿವರಗಳಲ್ಲಿ ನೀವು ಅವುಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು.",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "ಈಗ ಬಿಟ್ಟುಬಿಡಿ",
   "twoStepOffTitle": "ಎರಡು ಹಂತದ ಪರಿಶೀಲನೆ ಆಫ್ ಆಗಿದೆ",
   "twoStepOffBody": "ನೀವು ಬ್ಯಾಕಪ್ ಕೋಡ್ ಬಳಸಿ ಸೈನ್ ಇನ್ ಮಾಡಿದ್ದರಿಂದ ಎರಡು ಹಂತದ ಪರಿಶೀಲನೆ ಆಫ್ ಆಗಿದೆ. ನಿಮ್ಮ ಖಾತೆ ಸುರಕ್ಷಿತವಾಗಿರಲು ಈ ಫೋನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಹೊಂದಿಸಿ.",
-  "expiryPlusYears": "{years, plural, =1{+{years} ವರ್ಷ} other{+{years} ವರ್ಷಗಳು}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "ದಿನಾಂಕ ಟೈಪ್ ಮಾಡಿ",
-  "expiryTypeTitle": "ಮುಕ್ತಾಯ ದಿನಾಂಕ ಟೈಪ್ ಮಾಡಿ",
-  "expiryTypeHint": "ಉದಾಹರಣೆಗೆ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ಆ ದಿನಾಂಕ ಸರಿಯಾಗಿ ಕಾಣುತ್ತಿಲ್ಲ. {example} ಪ್ರಯತ್ನಿಸಿ.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ಈ ದಿನಾಂಕ ಕಳೆದಿದೆ, ಆದ್ದರಿಂದ ದಾಖಲೆಯನ್ನು ಅವಧಿ ಮುಗಿದಂತೆ ಉಳಿಸಲಾಗುತ್ತದೆ.",
   "expiryEndsToday": "ಇದು ಇಂದು ಮುಕ್ತಾಯವಾಗುತ್ತದೆ.",
-  "saveAndAddAnother": "ಉಳಿಸಿ ಮತ್ತು ಇನ್ನೊಂದು ಸೇರಿಸಿ",
-  "quickStartTitle": "ತ್ವರಿತ ಆರಂಭ",
   "categoryCreatedAddGroup": "{name} ರಚಿಸಲಾಗಿದೆ. ಅದಕ್ಕೆ ಗುಂಪು ಸೇರಿಸಬೇಕೆ?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

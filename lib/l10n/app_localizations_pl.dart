@@ -5181,6 +5181,47 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Użyj co najmniej jednej litery lub cyfry.';
+
+  @override
+  String get recordSaveFailed => 'Nie udało się zapisać. Sprawdź połączenie i spróbuj ponownie.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Masz już $name w grupie $group, wygasa $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Tę datę odgadliśmy z Twojego dokumentu. Sprawdź, czy się zgadza.';
+
+  @override
+  String get expiryOtherDates => 'Inne daty na tym dokumencie';
+
+  @override
+  String get scanPhotoSaved => 'Twoje zdjęcie jest zapisane z tym wpisem.';
+
+  @override
+  String get scanPhotoNotSaved => 'Twoje zdjęcie nie zostało zapisane, bo ten wpis ma już maksymalną liczbę zdjęć.';
+
+  @override
+  String get scanReadOnlineTitle => 'Odczytać ten dokument online?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefon nie zdołał pewnie odczytać tego dokumentu. Vaultara może wysłać tekst ze zdjęcia na swój serwer, aby go odczytać. Zdjęcie zostaje w telefonie, a długie numery są ukrywane.';
+
+  @override
+  String get scanReadOnlineNo => 'Nie teraz';
+
+  @override
+  String get scanReadOnlineYes => 'Odczytaj';
+
+  @override
+  String get scanReadOnlineNote => 'Odczytaliśmy ten dokument online.';
+
+  @override
+  String get scanNoExpiryNote => 'Ten dokument chyba nie ma daty ważności. Dodaj datę, o której chcesz otrzymać przypomnienie.';
+
+  @override
   String get duplicateKeepBoth => 'Zachowaj oba';
 
   @override
@@ -8939,45 +8980,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get twoStepOffBody => 'Zalogowano się kodem zapasowym, więc weryfikacja dwuetapowa została wyłączona. Skonfiguruj ją ponownie na tym telefonie, aby konto pozostało chronione.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years roku',
-      many: '+$years lat',
-      few: '+$years lata',
-      one: '+$years rok',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Wpisz datę';
-
-  @override
-  String get expiryTypeTitle => 'Wpisz datę ważności';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Na przykład $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ta data nie wygląda poprawnie. Spróbuj $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ta data już minęła, więc wpis zostanie zapisany jako wygasły.';
 
   @override
   String get expiryEndsToday => 'Wygasa dzisiaj.';
-
-  @override
-  String get saveAndAddAnother => 'Zapisz i dodaj kolejny';
-
-  @override
-  String get quickStartTitle => 'Szybki start';
 
   @override
   String categoryCreatedAddGroup(String name) {

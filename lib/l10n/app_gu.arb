@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "અપડેટ કરો",
   "duplicateRecordTitle": "પહેલેથી ઉમેરેલું છે",
   "duplicateRecordBody": "તમારી પાસે {name} પહેલેથી છે, જે {date} ના રોજ સમાપ્ત થાય છે.",
+  "recordNameNeedsLetter": "ઓછામાં ઓછો એક અક્ષર અથવા અંક વાપરો.",
+  "recordSaveFailed": "સાચવી શકાયું નથી. તમારું કનેક્શન તપાસો અને ફરી પ્રયાસ કરો.",
+  "duplicateRecordElsewhere": "તમારી પાસે પહેલેથી {group}માં {name} છે, જે {date}એ સમાપ્ત થાય છે.",
+  "expiryGuessedHint": "અમે આ તારીખ તમારા દસ્તાવેજ પરથી અનુમાનિત કરી છે. મેળ ખાય છે કે નહીં તે તપાસો.",
+  "expiryOtherDates": "આ દસ્તાવેજ પરની અન્ય તારીખો",
+  "scanPhotoSaved": "તમારો ફોટો આ રેકોર્ડ સાથે સાચવાયો છે.",
+  "scanPhotoNotSaved": "તમારો ફોટો સાચવાયો નથી, કારણ કે આ રેકોર્ડમાં પહેલેથી મહત્તમ મંજૂર ફોટા છે.",
+  "scanReadOnlineTitle": "આ દસ્તાવેજ ઑનલાઇન વાંચીએ?",
+  "scanReadOnlineBody": "તમારો ફોન આ દસ્તાવેજ ખાતરીપૂર્વક વાંચી શક્યો નથી. Vaultara ફોટાનું લખાણ વાંચવા માટે તેના સર્વર પર મોકલી શકે છે. ફોટો તમારા ફોન પર જ રહે છે, અને લાંબા નંબરો છુપાવવામાં આવે છે.",
+  "scanReadOnlineNo": "હમણાં નહીં",
+  "scanReadOnlineYes": "વાંચો",
+  "scanReadOnlineNote": "અમે આ દસ્તાવેજ ઑનલાઇન વાંચ્યો.",
+  "scanNoExpiryNote": "આ દસ્તાવેજમાં સમાપ્તિ તારીખ હોય એવું લાગતું નથી. જે તારીખે યાદ અપાવવું હોય તે ઉમેરો.",
   "duplicateKeepBoth": "બંને રાખો",
   "duplicateUpdateExisting": "હાલનું અપડેટ કરો",
   "editorDefaultsHint": "{group} માટેના સામાન્ય સેટિંગ ભરી દીધા છે. તમે તેને વધુ વિગતોમાં બદલી શકો છો.",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "હમણાં માટે છોડો",
   "twoStepOffTitle": "બે-પગલાંની ચકાસણી બંધ છે",
   "twoStepOffBody": "તમે બેકઅપ કોડથી સાઇન ઇન કર્યું, તેથી બે-પગલાંની ચકાસણી બંધ કરવામાં આવી. તમારું એકાઉન્ટ સુરક્ષિત રાખવા આ ફોન પર તેને ફરી સેટ કરો.",
-  "expiryPlusYears": "{years, plural, =1{+{years} વર્ષ} other{+{years} વર્ષ}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "તારીખ લખો",
-  "expiryTypeTitle": "સમાપ્તિ તારીખ લખો",
-  "expiryTypeHint": "ઉદાહરણ તરીકે {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "તે તારીખ સાચી લાગતી નથી. {example} અજમાવો.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "આ તારીખ વીતી ગઈ છે, તેથી રેકોર્ડ સમાપ્ત તરીકે સાચવાશે.",
   "expiryEndsToday": "આ આજે સમાપ્ત થાય છે.",
-  "saveAndAddAnother": "સાચવો અને બીજું ઉમેરો",
-  "quickStartTitle": "ઝડપી શરૂઆત",
   "categoryCreatedAddGroup": "{name} બનાવ્યું. તેમાં જૂથ ઉમેરીએ?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

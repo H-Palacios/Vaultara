@@ -5160,6 +5160,47 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Použite aspoň jedno písmeno alebo číslicu.';
+
+  @override
+  String get recordSaveFailed => 'Uloženie zlyhalo. Skontrolujte pripojenie a skúste to znova.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '$name už máte v skupine $group, platnosť vyprší $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Tento dátum sme odhadli z vášho dokumentu. Skontrolujte, či sedí.';
+
+  @override
+  String get expiryOtherDates => 'Ďalšie dátumy na tomto dokumente';
+
+  @override
+  String get scanPhotoSaved => 'Vaša fotka je uložená pri tomto zázname.';
+
+  @override
+  String get scanPhotoNotSaved => 'Vaša fotka nebola uložená, pretože tento záznam už má najvyšší povolený počet fotiek.';
+
+  @override
+  String get scanReadOnlineTitle => 'Prečítať tento dokument online?';
+
+  @override
+  String get scanReadOnlineBody => 'Váš telefón nedokázal tento dokument spoľahlivo prečítať. Vaultara môže poslať text z fotky na svoj server, aby ho prečítal. Fotka zostane vo vašom telefóne a dlhé čísla sa skryjú.';
+
+  @override
+  String get scanReadOnlineNo => 'Teraz nie';
+
+  @override
+  String get scanReadOnlineYes => 'Prečítať';
+
+  @override
+  String get scanReadOnlineNote => 'Tento dokument sme prečítali online.';
+
+  @override
+  String get scanNoExpiryNote => 'Zdá sa, že tento dokument nemá dátum vypršania. Pridajte dátum, na ktorý chcete pripomenutie.';
+
+  @override
   String get duplicateKeepBoth => 'Ponechať oba';
 
   @override
@@ -8918,45 +8959,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get twoStepOffBody => 'Prihlásili ste sa záložným kódom, preto bolo dvojstupňové overenie vypnuté. Nastavte ho znova na tomto telefóne, aby bol váš účet chránený.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years rokov',
-      many: '+$years roka',
-      few: '+$years roky',
-      one: '+$years rok',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Napísať dátum';
-
-  @override
-  String get expiryTypeTitle => 'Napíšte dátum skončenia platnosti';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Napríklad $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Tento dátum nevyzerá správne. Skúste $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Tento dátum už uplynul, takže záznam sa uloží ako neplatný.';
 
   @override
   String get expiryEndsToday => 'Platnosť končí dnes.';
-
-  @override
-  String get saveAndAddAnother => 'Uložiť a pridať ďalší';
-
-  @override
-  String get quickStartTitle => 'Rýchly štart';
 
   @override
   String categoryCreatedAddGroup(String name) {

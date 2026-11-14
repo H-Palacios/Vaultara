@@ -5063,6 +5063,47 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Кемінде бір әріп немесе сан қолданыңыз.';
+
+  @override
+  String get recordSaveFailed => 'Сақтау мүмкін болмады. Байланысты тексеріп, қайталап көріңіз.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Сізде $group тобында $name бар, $date күні бітеді.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Бұл күнді құжатыңыздан болжадық. Сәйкес келетінін тексеріңіз.';
+
+  @override
+  String get expiryOtherDates => 'Осы құжаттағы басқа күндер';
+
+  @override
+  String get scanPhotoSaved => 'Фотоңыз осы жазбамен бірге сақталды.';
+
+  @override
+  String get scanPhotoNotSaved => 'Фотоңыз сақталмады, себебі бұл жазбада рұқсат етілген ең көп фото бар.';
+
+  @override
+  String get scanReadOnlineTitle => 'Бұл құжатты онлайн оқу керек пе?';
+
+  @override
+  String get scanReadOnlineBody => 'Телефоныңыз бұл құжатты сенімді оқи алмады. Vaultara фотодағы мәтінді оқу үшін өз серверіне жібере алады. Фото телефоныңызда қалады, ал ұзын нөмірлер жасырылады.';
+
+  @override
+  String get scanReadOnlineNo => 'Қазір емес';
+
+  @override
+  String get scanReadOnlineYes => 'Оқу';
+
+  @override
+  String get scanReadOnlineNote => 'Бұл құжатты онлайн оқыдық.';
+
+  @override
+  String get scanNoExpiryNote => 'Бұл құжатта аяқталу күні жоқ сияқты. Еске салғыңыз келетін күнді қосыңыз.';
+
+  @override
   String get duplicateKeepBoth => 'Екеуін де сақтау';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsKk extends AppLocalizations {
   String get twoStepOffBody => 'Сіз сақтық кодпен кірдіңіз, сондықтан екі қадамды растау өшірілді. Есептік жазбаңыз қорғалуы үшін оны осы телефонда қайта баптаңыз.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years жыл',
-      one: '+$years жыл',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Күнді жазу';
-
-  @override
-  String get expiryTypeTitle => 'Мерзімі біту күнін жазыңыз';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Мысалы $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Бұл күн дұрыс емес сияқты. $example көріңіз.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Бұл күн өтіп кеткен, сондықтан жазба мерзімі өткен ретінде сақталады.';
 
   @override
   String get expiryEndsToday => 'Мерзімі бүгін бітеді.';
-
-  @override
-  String get saveAndAddAnother => 'Сақтап, тағы біреуін қосу';
-
-  @override
-  String get quickStartTitle => 'Жылдам бастау';
 
   @override
   String categoryCreatedAddGroup(String name) {

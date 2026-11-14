@@ -5063,6 +5063,47 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'لږ تر لږه یو توری یا شمېره وکاروئ.';
+
+  @override
+  String get recordSaveFailed => 'خوندي نه شو. خپل اړیکه وګورئ او بیا هڅه وکړئ.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'تاسو دمخه په $group کې $name لرئ، چې په $date پای ته رسیږي.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'دا نېټه مو ستاسو له سند څخه اټکل کړه. وګورئ چې سمه ده.';
+
+  @override
+  String get expiryOtherDates => 'په دې سند کې نورې نېټې';
+
+  @override
+  String get scanPhotoSaved => 'ستاسو انځور له دې ثبت سره خوندي شو.';
+
+  @override
+  String get scanPhotoNotSaved => 'ستاسو انځور خوندي نه شو، ځکه چې دا ثبت دمخه د اجازه لرونکو انځورونو تر ټولو ډېر شمېر لري.';
+
+  @override
+  String get scanReadOnlineTitle => 'دا سند آنلاین ولوستل شي؟';
+
+  @override
+  String get scanReadOnlineBody => 'ستاسو تلیفون ونه شو کولی دا سند په ډاډ سره ولولي. Vaultara کولی شي د انځور متن د لوستلو لپاره خپل سرور ته ولېږي. انځور ستاسو په تلیفون کې پاتې کېږي، او اوږدې شمېرې پټېږي.';
+
+  @override
+  String get scanReadOnlineNo => 'اوس نه';
+
+  @override
+  String get scanReadOnlineYes => 'ولولئ';
+
+  @override
+  String get scanReadOnlineNote => 'موږ دا سند آنلاین ولوست.';
+
+  @override
+  String get scanNoExpiryNote => 'داسې ښکاري چې دا سند د پای نېټه نه لري. هغه نېټه زیاته کړئ چې غواړئ یادونه یې درته وشي.';
+
+  @override
   String get duplicateKeepBoth => 'دواړه وساتئ';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get twoStepOffBody => 'تاسو په بیک اپ کوډ ننوتلي، نو دوه ګامي تصدیق بند شو. د خپل حساب د ساتنې لپاره یې په دې تلیفون کې بیا تنظیم کړئ.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years کاله',
-      one: '+$years کال',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'نېټه ولیکئ';
-
-  @override
-  String get expiryTypeTitle => 'د پای نېټه ولیکئ';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'د بېلګې په توګه $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'هغه نېټه سمه نه ښکاري. $example وازمویئ.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'دا نېټه تېره شوې، نو ریکارډ به د پای ته رسېدلي په توګه خوندي شي.';
 
   @override
   String get expiryEndsToday => 'دا نن پای ته رسېږي.';
-
-  @override
-  String get saveAndAddAnother => 'خوندي کړئ او بل یو زیات کړئ';
-
-  @override
-  String get quickStartTitle => 'چټک پیل';
 
   @override
   String categoryCreatedAddGroup(String name) {

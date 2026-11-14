@@ -5208,6 +5208,47 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Úsáid litir nó uimhir amháin ar a laghad.';
+
+  @override
+  String get recordSaveFailed => 'Níorbh fhéidir sábháil. Seiceáil do cheangal agus bain triail eile as.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Tá $name agat cheana in $group, ag dul in éag ar $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Thomhaiseamar an dáta seo ó do dhoiciméad. Seiceáil go bhfuil sé ceart.';
+
+  @override
+  String get expiryOtherDates => 'Dátaí eile ar an doiciméad seo';
+
+  @override
+  String get scanPhotoSaved => 'Tá do ghrianghraf sábháilte leis an taifead seo.';
+
+  @override
+  String get scanPhotoNotSaved => 'Níor sábháladh do ghrianghraf mar go bhfuil an líon uasta grianghraf ag an taifead seo cheana.';
+
+  @override
+  String get scanReadOnlineTitle => 'An doiciméad seo a léamh ar líne?';
+
+  @override
+  String get scanReadOnlineBody => 'Níorbh fhéidir le do ghuthán an doiciméad seo a léamh go cinnte. Is féidir le Vaultara an téacs ón ngrianghraf a sheoladh chuig a fhreastalaí chun é a léamh. Fanann an grianghraf ar do ghuthán, agus cuirtear uimhreacha fada i bhfolach.';
+
+  @override
+  String get scanReadOnlineNo => 'Ní anois';
+
+  @override
+  String get scanReadOnlineYes => 'Léigh é';
+
+  @override
+  String get scanReadOnlineNote => 'Léamar an doiciméad seo ar líne.';
+
+  @override
+  String get scanNoExpiryNote => 'Is cosúil nach bhfuil dáta éaga ar an doiciméad seo. Cuir an dáta leis ar mhaith leat meabhrúchán faoi.';
+
+  @override
   String get duplicateKeepBoth => 'Coinnigh an dá cheann';
 
   @override
@@ -8966,46 +9007,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get twoStepOffBody => 'Shínigh tú isteach le cód cúltaca, mar sin casadh fíorú dhá chéim as. Socraigh arís é ar an bhfón seo chun do chuntas a choinneáil slán.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years bliain',
-      many: '+$years mbliana',
-      few: '+$years bliana',
-      two: '+$years bhliain',
-      one: '+$years bhliain',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Clóscríobh dáta';
-
-  @override
-  String get expiryTypeTitle => 'Clóscríobh an dáta éaga';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Mar shampla $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ní cosúil go bhfuil an dáta sin ceart. Bain triail as $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Tá an dáta seo caite, mar sin sábhálfar an taifead mar thaifead imithe in éag.';
 
   @override
   String get expiryEndsToday => 'Rachaidh sé seo in éag inniu.';
-
-  @override
-  String get saveAndAddAnother => 'Sábháil agus cuir ceann eile leis';
-
-  @override
-  String get quickStartTitle => 'Tús tapa';
 
   @override
   String categoryCreatedAddGroup(String name) {

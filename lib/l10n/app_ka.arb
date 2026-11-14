@@ -1681,6 +1681,19 @@
   "scanUpdateExisting": "განახლება",
   "duplicateRecordTitle": "უკვე დამატებულია",
   "duplicateRecordBody": "თქვენ უკვე გაქვთ {name}, რომლის ვადა იწურება {date}.",
+  "recordNameNeedsLetter": "გამოიყენეთ მინიმუმ ერთი ასო ან ციფრი.",
+  "recordSaveFailed": "შენახვა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.",
+  "duplicateRecordElsewhere": "{name} უკვე გაქვთ ჯგუფში {group}, ვადა გასდის {date}.",
+  "expiryGuessedHint": "ეს თარიღი თქვენი დოკუმენტიდან გამოვიცანით. შეამოწმეთ, ემთხვევა თუ არა.",
+  "expiryOtherDates": "სხვა თარიღები ამ დოკუმენტზე",
+  "scanPhotoSaved": "თქვენი ფოტო ამ ჩანაწერთან ერთად შეინახა.",
+  "scanPhotoNotSaved": "თქვენი ფოტო არ შეინახა, რადგან ამ ჩანაწერს უკვე აქვს ფოტოების მაქსიმალური რაოდენობა.",
+  "scanReadOnlineTitle": "წავიკითხოთ ეს დოკუმენტი ონლაინ?",
+  "scanReadOnlineBody": "თქვენმა ტელეფონმა ვერ წაიკითხა ეს დოკუმენტი დარწმუნებით. Vaultara-ს შეუძლია ფოტოს ტექსტი თავის სერვერზე გააგზავნოს წასაკითხად. ფოტო თქვენს ტელეფონზე რჩება, გრძელი ნომრები კი იმალება.",
+  "scanReadOnlineNo": "ახლა არა",
+  "scanReadOnlineYes": "წაკითხვა",
+  "scanReadOnlineNote": "ეს დოკუმენტი ონლაინ წავიკითხეთ.",
+  "scanNoExpiryNote": "როგორც ჩანს, ამ დოკუმენტს ვადის გასვლის თარიღი არ აქვს. დაამატეთ თარიღი, რომელზეც შეხსენება გსურთ.",
   "duplicateKeepBoth": "ორივეს დატოვება",
   "duplicateUpdateExisting": "არსებულის განახლება",
   "editorDefaultsHint": "შევავსეთ {group}-ის ტიპური პარამეტრები. მათი შეცვლა შეგიძლიათ განყოფილებაში „დამატებითი დეტალები“.",
@@ -3228,36 +3241,8 @@
   "twoStepSkipForNow": "ახლა გამოტოვება",
   "twoStepOffTitle": "ორსაფეხურიანი დადასტურება გამორთულია",
   "twoStepOffBody": "სარეზერვო კოდით შეხვედით, ამიტომ ორსაფეხურიანი დადასტურება გამოირთო. თავიდან დააყენეთ ამ ტელეფონზე, რომ ანგარიში დაცული დარჩეს.",
-  "expiryPlusYears": "{years, plural, =1{+{years} წელი} other{+{years} წელი}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "თარიღის აკრეფა",
-  "expiryTypeTitle": "აკრიფეთ ვადის გასვლის თარიღი",
-  "expiryTypeHint": "მაგალითად {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ეს თარიღი სწორად არ გამოიყურება. სცადეთ {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ეს თარიღი გავიდა, ამიტომ ჩანაწერი შეინახება როგორც ვადაგასული.",
   "expiryEndsToday": "ვადა დღეს გადის.",
-  "saveAndAddAnother": "შენახვა და კიდევ ერთის დამატება",
-  "quickStartTitle": "სწრაფი დაწყება",
   "categoryCreatedAddGroup": "{name} შეიქმნა. დაემატოს ჯგუფი?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

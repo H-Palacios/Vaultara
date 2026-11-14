@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "نوێکردنەوە",
   "duplicateRecordTitle": "پێشتر زیاد کراوە",
   "duplicateRecordBody": "پێشتر {name}ت هەیە کە لە {date} بەسەر دەچێت.",
+  "recordNameNeedsLetter": "لانیکەم یەک پیت یان ژمارە بەکاربهێنە.",
+  "recordSaveFailed": "پاشەکەوت نەکرا. پەیوەندییەکەت بپشکنە و دووبارە هەوڵبدەرەوە.",
+  "duplicateRecordElsewhere": "پێشتر {name}ت لە {group} هەیە، لە {date} بەسەردەچێت.",
+  "expiryGuessedHint": "ئەم بەروارەمان لە بەڵگەنامەکەتەوە مەزەندە کرد. بپشکنە کە دەگونجێت.",
+  "expiryOtherDates": "بەروارەکانی تری ئەم بەڵگەنامەیە",
+  "scanPhotoSaved": "وێنەکەت لەگەڵ ئەم تۆمارە پاشەکەوت کرا.",
+  "scanPhotoNotSaved": "وێنەکەت پاشەکەوت نەکرا چونکە ئەم تۆمارە پێشتر زۆرترین وێنەی ڕێگەپێدراوی هەیە.",
+  "scanReadOnlineTitle": "ئەم بەڵگەنامەیە بە ئۆنلاین بخوێنرێتەوە؟",
+  "scanReadOnlineBody": "مۆبایلەکەت نەیتوانی ئەم بەڵگەنامەیە بە دڵنیاییەوە بخوێنێتەوە. Vaultara دەتوانێت دەقی وێنەکە بۆ ڕاژەکارەکەی بنێرێت بۆ خوێندنەوەی. وێنەکە لەسەر مۆبایلەکەت دەمێنێتەوە و ژمارە درێژەکان دەشاردرێنەوە.",
+  "scanReadOnlineNo": "ئێستا نا",
+  "scanReadOnlineYes": "بیخوێنەوە",
+  "scanReadOnlineNote": "ئەم بەڵگەنامەیەمان بە ئۆنلاین خوێندەوە.",
+  "scanNoExpiryNote": "وا دیارە ئەم بەڵگەنامەیە بەرواری بەسەرچوونی نییە. ئەو بەروارە زیاد بکە کە دەتەوێت بیرت بخرێتەوە.",
   "duplicateKeepBoth": "هەردووکیان بهێڵەرەوە",
   "duplicateUpdateExisting": "ئەوەی هەیە نوێ بکەرەوە",
   "editorDefaultsHint": "ڕێکخستنە ئاساییەکانی {group} پڕکرانەوە. دەتوانیت لە وردەکاری زیاتر بیانگۆڕیت.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "ئێستا تێپەڕێنە",
   "twoStepOffTitle": "پشتڕاستکردنەوەی دوو هەنگاو کوژاوەتەوە",
   "twoStepOffBody": "بە کۆدێکی یەدەگ چوویتە ژوورەوە، بۆیە پشتڕاستکردنەوەی دوو هەنگاو کوژێنرایەوە. لەم مۆبایلەدا دووبارە ڕێکی بخەرەوە بۆ ئەوەی هەژمارەکەت پارێزراو بمێنێت.",
-  "expiryPlusYears": "{years, plural, =1{+{years} ساڵ} other{+{years} ساڵ}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "بەروار بنووسە",
-  "expiryTypeTitle": "بەرواری بەسەرچوون بنووسە",
-  "expiryTypeHint": "بۆ نموونە {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ئەو بەروارە دروست دیار نییە. {example} تاقی بکەرەوە.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ئەم بەروارە تێپەڕیوە، بۆیە تۆمارەکە وەک بەسەرچوو هەڵدەگیرێت.",
   "expiryEndsToday": "ئەمڕۆ بەسەردەچێت.",
-  "saveAndAddAnother": "هەڵگرتن و زیادکردنی یەکێکی تر",
-  "quickStartTitle": "دەستپێکی خێرا",
   "categoryCreatedAddGroup": "{name} دروستکرا. گرووپێکی بۆ زیاد بکرێت؟",
   "@categoryCreatedAddGroup": {
     "placeholders": {

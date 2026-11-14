@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/records/logic/name_validator.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -158,6 +159,18 @@ class EditorCategoryGroupFields extends StatelessWidget {
             controller: nameController,
             focusNode: nameFocus,
             onChanged: onNameChanged,
+            maxLength: NameValidator.maxLength,
+            buildCounter: (
+              context, {
+              required currentLength,
+              required isFocused,
+              required maxLength,
+            }) {
+              if (maxLength == null || currentLength < maxLength - 5) {
+                return null;
+              }
+              return Text('$currentLength/$maxLength');
+            },
             decoration: AppInputDecorations.field(
               context,
               labelText: loc.editorRecordName,

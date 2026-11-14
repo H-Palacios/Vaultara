@@ -5174,6 +5174,47 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Використайте принаймні одну літеру або цифру.';
+
+  @override
+  String get recordSaveFailed => 'Не вдалося зберегти. Перевірте з\'єднання й спробуйте ще раз.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'У вас уже є $name у групі «$group», спливає $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Цю дату ми вгадали з вашого документа. Перевірте, чи вона правильна.';
+
+  @override
+  String get expiryOtherDates => 'Інші дати в цьому документі';
+
+  @override
+  String get scanPhotoSaved => 'Ваше фото збережено разом із цим записом.';
+
+  @override
+  String get scanPhotoNotSaved => 'Ваше фото не збережено, бо цей запис уже має максимальну кількість фото.';
+
+  @override
+  String get scanReadOnlineTitle => 'Прочитати документ онлайн?';
+
+  @override
+  String get scanReadOnlineBody => 'Телефону не вдалося точно прочитати цей документ. Vaultara може надіслати текст із фото на свій сервер, щоб прочитати його. Фото залишається на вашому телефоні, а довгі номери приховуються.';
+
+  @override
+  String get scanReadOnlineNo => 'Не зараз';
+
+  @override
+  String get scanReadOnlineYes => 'Прочитати';
+
+  @override
+  String get scanReadOnlineNote => 'Ми прочитали цей документ онлайн.';
+
+  @override
+  String get scanNoExpiryNote => 'Схоже, цей документ не має терміну дії. Додайте дату, про яку хочете отримати нагадування.';
+
+  @override
   String get duplicateKeepBoth => 'Залишити обидва';
 
   @override
@@ -8934,45 +8975,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get twoStepOffBody => 'Ви увійшли з резервним кодом, тому двоетапну перевірку було вимкнено. Налаштуйте її знову на цьому телефоні, щоб обліковий запис залишався захищеним.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years року',
-      many: '+$years років',
-      few: '+$years роки',
-      one: '+$years рік',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Ввести дату';
-
-  @override
-  String get expiryTypeTitle => 'Введіть дату закінчення терміну';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Наприклад $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ця дата виглядає неправильно. Спробуйте $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ця дата вже минула, тому запис буде збережено як прострочений.';
 
   @override
   String get expiryEndsToday => 'Термін спливає сьогодні.';
-
-  @override
-  String get saveAndAddAnother => 'Зберегти й додати ще';
-
-  @override
-  String get quickStartTitle => 'Швидкий старт';
 
   @override
   String categoryCreatedAddGroup(String name) {

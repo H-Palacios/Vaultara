@@ -5063,6 +5063,47 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Tumia angalau herufi au namba moja.';
+
+  @override
+  String get recordSaveFailed => 'Imeshindwa kuhifadhi. Angalia muunganisho wako kisha ujaribu tena.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Tayari una $name katika $group, itaisha $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Tumekisia tarehe hii kutoka kwenye hati yako. Hakikisha inalingana.';
+
+  @override
+  String get expiryOtherDates => 'Tarehe nyingine kwenye hati hii';
+
+  @override
+  String get scanPhotoSaved => 'Picha yako imehifadhiwa pamoja na rekodi hii.';
+
+  @override
+  String get scanPhotoNotSaved => 'Picha yako haikuhifadhiwa kwa sababu rekodi hii tayari ina idadi ya juu ya picha zinazoruhusiwa.';
+
+  @override
+  String get scanReadOnlineTitle => 'Soma hati hii mtandaoni?';
+
+  @override
+  String get scanReadOnlineBody => 'Simu yako haikuweza kusoma hati hii kwa uhakika. Vaultara inaweza kutuma maandishi ya picha kwenye seva yake ili kuyasoma. Picha inabaki kwenye simu yako, na namba ndefu zinafichwa.';
+
+  @override
+  String get scanReadOnlineNo => 'Si sasa';
+
+  @override
+  String get scanReadOnlineYes => 'Soma';
+
+  @override
+  String get scanReadOnlineNote => 'Tumesoma hati hii mtandaoni.';
+
+  @override
+  String get scanNoExpiryNote => 'Inaonekana hati hii haina tarehe ya kuisha. Ongeza tarehe unayotaka kukumbushwa.';
+
+  @override
   String get duplicateKeepBoth => 'Weka zote mbili';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get twoStepOffBody => 'Uliingia kwa msimbo wa akiba, kwa hivyo uthibitishaji wa hatua mbili ulizimwa. Uweke tena kwenye simu hii ili akaunti yako ibaki salama.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+miaka $years',
-      one: '+mwaka $years',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Andika tarehe';
-
-  @override
-  String get expiryTypeTitle => 'Andika tarehe ya kuisha';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Kwa mfano $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Tarehe hiyo haionekani sahihi. Jaribu $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Tarehe hii imepita, kwa hivyo rekodi itahifadhiwa kama iliyoisha muda.';
 
   @override
   String get expiryEndsToday => 'Hii inaisha leo.';
-
-  @override
-  String get saveAndAddAnother => 'Hifadhi na uongeze nyingine';
-
-  @override
-  String get quickStartTitle => 'Anza haraka';
 
   @override
   String categoryCreatedAddGroup(String name) {

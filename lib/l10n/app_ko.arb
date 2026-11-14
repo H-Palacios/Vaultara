@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "업데이트",
   "duplicateRecordTitle": "이미 추가됨",
   "duplicateRecordBody": "만료일이 {date}인 {name}이(가) 이미 있습니다.",
+  "recordNameNeedsLetter": "문자나 숫자를 하나 이상 사용하세요.",
+  "recordSaveFailed": "저장하지 못했습니다. 연결을 확인하고 다시 시도하세요.",
+  "duplicateRecordElsewhere": "{group}에 이미 {name}이(가) 있습니다. {date}에 만료됩니다.",
+  "expiryGuessedHint": "이 날짜는 문서에서 추측한 것입니다. 맞는지 확인하세요.",
+  "expiryOtherDates": "이 문서의 다른 날짜",
+  "scanPhotoSaved": "사진이 이 기록과 함께 저장되었습니다.",
+  "scanPhotoNotSaved": "이 기록에 이미 허용된 최대 사진 수가 있어 사진이 저장되지 않았습니다.",
+  "scanReadOnlineTitle": "이 문서를 온라인으로 읽을까요?",
+  "scanReadOnlineBody": "휴대전화가 이 문서를 확실하게 읽지 못했습니다. Vaultara가 사진 속 글자를 서버로 보내 읽을 수 있습니다. 사진은 휴대전화에 남고 긴 번호는 가려집니다.",
+  "scanReadOnlineNo": "나중에",
+  "scanReadOnlineYes": "읽기",
+  "scanReadOnlineNote": "이 문서를 온라인으로 읽었습니다.",
+  "scanNoExpiryNote": "이 문서에는 만료일이 없는 것 같습니다. 알림을 받고 싶은 날짜를 추가하세요.",
   "duplicateKeepBoth": "둘 다 유지",
   "duplicateUpdateExisting": "기존 항목 업데이트",
   "editorDefaultsHint": "{group}의 일반적인 설정으로 채웠습니다. 추가 정보에서 변경할 수 있습니다.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "지금은 건너뛰기",
   "twoStepOffTitle": "2단계 인증이 꺼져 있습니다",
   "twoStepOffBody": "백업 코드로 로그인하여 2단계 인증이 꺼졌습니다. 계정을 보호하려면 이 휴대전화에서 다시 설정하세요.",
-  "expiryPlusYears": "{years, plural, other{+{years}년}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "날짜 입력",
-  "expiryTypeTitle": "만료일 입력",
-  "expiryTypeHint": "예: {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "날짜가 올바르지 않은 것 같습니다. {example} 형식으로 입력해 보세요.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "이 날짜는 이미 지났으므로 기록이 만료됨으로 저장됩니다.",
   "expiryEndsToday": "오늘 만료됩니다.",
-  "saveAndAddAnother": "저장하고 하나 더 추가",
-  "quickStartTitle": "빠른 시작",
   "categoryCreatedAddGroup": "{name}을(를) 만들었습니다. 그룹을 추가할까요?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

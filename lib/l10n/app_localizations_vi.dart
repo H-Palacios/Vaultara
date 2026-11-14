@@ -5024,6 +5024,47 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Dùng ít nhất một chữ cái hoặc chữ số.';
+
+  @override
+  String get recordSaveFailed => 'Không lưu được. Hãy kiểm tra kết nối rồi thử lại.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Bạn đã có $name trong $group, hết hạn vào $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Chúng tôi đoán ngày này từ giấy tờ của bạn. Hãy kiểm tra xem có khớp không.';
+
+  @override
+  String get expiryOtherDates => 'Các ngày khác trên giấy tờ này';
+
+  @override
+  String get scanPhotoSaved => 'Ảnh của bạn đã được lưu cùng mục này.';
+
+  @override
+  String get scanPhotoNotSaved => 'Ảnh của bạn chưa được lưu vì mục này đã có số ảnh tối đa.';
+
+  @override
+  String get scanReadOnlineTitle => 'Đọc giấy tờ này trực tuyến?';
+
+  @override
+  String get scanReadOnlineBody => 'Điện thoại của bạn không đọc chắc chắn được giấy tờ này. Vaultara có thể gửi chữ trong ảnh đến máy chủ để đọc. Ảnh vẫn ở trên điện thoại của bạn, và các số dài được ẩn đi.';
+
+  @override
+  String get scanReadOnlineNo => 'Để sau';
+
+  @override
+  String get scanReadOnlineYes => 'Đọc';
+
+  @override
+  String get scanReadOnlineNote => 'Chúng tôi đã đọc giấy tờ này trực tuyến.';
+
+  @override
+  String get scanNoExpiryNote => 'Có vẻ giấy tờ này không có ngày hết hạn. Hãy thêm ngày bạn muốn được nhắc.';
+
+  @override
   String get duplicateKeepBoth => 'Giữ cả hai';
 
   @override
@@ -8705,42 +8746,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get twoStepOffBody => 'Bạn đã đăng nhập bằng mã dự phòng nên xác minh hai bước đã bị tắt. Hãy thiết lập lại trên điện thoại này để bảo vệ tài khoản.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years năm',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Nhập ngày';
-
-  @override
-  String get expiryTypeTitle => 'Nhập ngày hết hạn';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Ví dụ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ngày đó có vẻ không đúng. Hãy thử $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ngày này đã qua nên mục sẽ được lưu là đã hết hạn.';
 
   @override
   String get expiryEndsToday => 'Mục này hết hạn hôm nay.';
-
-  @override
-  String get saveAndAddAnother => 'Lưu và thêm mục khác';
-
-  @override
-  String get quickStartTitle => 'Bắt đầu nhanh';
 
   @override
   String categoryCreatedAddGroup(String name) {

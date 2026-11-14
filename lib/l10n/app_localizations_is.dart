@@ -5062,6 +5062,47 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Notaðu að minnsta kosti einn staf eða tölu.';
+
+  @override
+  String get recordSaveFailed => 'Ekki tókst að vista. Athugaðu tenginguna og reyndu aftur.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Þú ert nú þegar með $name í $group, rennur út $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Við giskuðum á þessa dagsetningu út frá skjalinu þínu. Athugaðu að hún passi.';
+
+  @override
+  String get expiryOtherDates => 'Aðrar dagsetningar á þessu skjali';
+
+  @override
+  String get scanPhotoSaved => 'Myndin þín er vistuð með þessari færslu.';
+
+  @override
+  String get scanPhotoNotSaved => 'Myndin þín var ekki vistuð því þessi færsla er nú þegar með hámarksfjölda mynda.';
+
+  @override
+  String get scanReadOnlineTitle => 'Lesa þetta skjal á netinu?';
+
+  @override
+  String get scanReadOnlineBody => 'Síminn þinn gat ekki lesið þetta skjal með vissu. Vaultara getur sent textann af myndinni á netþjón sinn til að lesa hann. Myndin verður áfram í símanum þínum og löng númer eru falin.';
+
+  @override
+  String get scanReadOnlineNo => 'Ekki núna';
+
+  @override
+  String get scanReadOnlineYes => 'Lesa';
+
+  @override
+  String get scanReadOnlineNote => 'Við lásum þetta skjal á netinu.';
+
+  @override
+  String get scanNoExpiryNote => 'Þetta skjal virðist ekki hafa gildistíma. Bættu við dagsetningunni sem þú vilt fá áminningu um.';
+
+  @override
   String get duplicateKeepBoth => 'Halda báðum';
 
   @override
@@ -8766,43 +8807,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get twoStepOffBody => 'Þú skráðir þig inn með varakóða og því var slökkt á tveggja þrepa staðfestingu. Settu hana upp aftur á þessum síma til að halda aðganginum vernduðum.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ár',
-      one: '+$years ár',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Slá inn dagsetningu';
-
-  @override
-  String get expiryTypeTitle => 'Sláðu inn gildislok';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Til dæmis $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Þessi dagsetning lítur ekki rétt út. Prófaðu $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Þessi dagsetning er liðin, svo færslan verður vistuð sem útrunnin.';
 
   @override
   String get expiryEndsToday => 'Þetta rennur út í dag.';
-
-  @override
-  String get saveAndAddAnother => 'Vista og bæta við annarri';
-
-  @override
-  String get quickStartTitle => 'Fljótleg byrjun';
 
   @override
   String categoryCreatedAddGroup(String name) {

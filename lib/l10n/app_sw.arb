@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Sasisha",
   "duplicateRecordTitle": "Tayari imeongezwa",
   "duplicateRecordBody": "Tayari una {name} inayoisha muda {date}.",
+  "recordNameNeedsLetter": "Tumia angalau herufi au namba moja.",
+  "recordSaveFailed": "Imeshindwa kuhifadhi. Angalia muunganisho wako kisha ujaribu tena.",
+  "duplicateRecordElsewhere": "Tayari una {name} katika {group}, itaisha {date}.",
+  "expiryGuessedHint": "Tumekisia tarehe hii kutoka kwenye hati yako. Hakikisha inalingana.",
+  "expiryOtherDates": "Tarehe nyingine kwenye hati hii",
+  "scanPhotoSaved": "Picha yako imehifadhiwa pamoja na rekodi hii.",
+  "scanPhotoNotSaved": "Picha yako haikuhifadhiwa kwa sababu rekodi hii tayari ina idadi ya juu ya picha zinazoruhusiwa.",
+  "scanReadOnlineTitle": "Soma hati hii mtandaoni?",
+  "scanReadOnlineBody": "Simu yako haikuweza kusoma hati hii kwa uhakika. Vaultara inaweza kutuma maandishi ya picha kwenye seva yake ili kuyasoma. Picha inabaki kwenye simu yako, na namba ndefu zinafichwa.",
+  "scanReadOnlineNo": "Si sasa",
+  "scanReadOnlineYes": "Soma",
+  "scanReadOnlineNote": "Tumesoma hati hii mtandaoni.",
+  "scanNoExpiryNote": "Inaonekana hati hii haina tarehe ya kuisha. Ongeza tarehe unayotaka kukumbushwa.",
   "duplicateKeepBoth": "Weka zote mbili",
   "duplicateUpdateExisting": "Sasisha iliyopo",
   "editorDefaultsHint": "Mipangilio ya kawaida ya {group} imejazwa. Unaweza kuibadilisha kwenye Maelezo zaidi.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Ruka kwa sasa",
   "twoStepOffTitle": "Uthibitishaji wa hatua mbili umezimwa",
   "twoStepOffBody": "Uliingia kwa msimbo wa akiba, kwa hivyo uthibitishaji wa hatua mbili ulizimwa. Uweke tena kwenye simu hii ili akaunti yako ibaki salama.",
-  "expiryPlusYears": "{years, plural, =1{+mwaka {years}} other{+miaka {years}}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Andika tarehe",
-  "expiryTypeTitle": "Andika tarehe ya kuisha",
-  "expiryTypeHint": "Kwa mfano {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Tarehe hiyo haionekani sahihi. Jaribu {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Tarehe hii imepita, kwa hivyo rekodi itahifadhiwa kama iliyoisha muda.",
   "expiryEndsToday": "Hii inaisha leo.",
-  "saveAndAddAnother": "Hifadhi na uongeze nyingine",
-  "quickStartTitle": "Anza haraka",
   "categoryCreatedAddGroup": "{name} imeundwa. Iongezewe kikundi?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

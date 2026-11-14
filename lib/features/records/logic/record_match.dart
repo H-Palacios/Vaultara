@@ -14,22 +14,50 @@ class RecordMatch {
   static String _compact(String value) =>
       value.replaceAll(RegExp(r'[\s\-]'), '').toUpperCase();
 
+  /// A record with the same name for the same person. With [anyGroup] it
+  /// looks in every group, preferring one in [groupKey]; records for other
+  /// people never count.
   static TrackedItem? duplicateOf({
     required String name,
     required String groupKey,
     required String? holderId,
+    bool anyGroup = false,
+  }) {
+    return duplicateIn(
+      RecordRepository.allActive(),
+      name: name,
+      groupKey: groupKey,
+      holderId: holderId,
+      anyGroup: anyGroup,
+    );
+  }
+
+  static TrackedItem? duplicateIn(
+    Iterable<TrackedItem> records, {
+    required String name,
+    required String groupKey,
+    required String? holderId,
+    bool anyGroup = false,
   }) {
     final wanted = _name(name);
     if (wanted.isEmpty) return null;
     TrackedItem? best;
-    for (final record in RecordRepository.allActive()) {
+    for (final record in records) {
       if (record.isDeleted) continue;
-      if (record.subcategoryName != groupKey) continue;
+      if (!anyGroup && record.subcategoryName != groupKey) continue;
       if (record.holderId != holderId) continue;
       if (_name(record.name) != wanted) continue;
-      if (best == null || record.expiryDate.isAfter(best.expiryDate)) {
+      if (best == null) {
         best = record;
+        continue;
       }
+      final bool sameGroup = record.subcategoryName == groupKey;
+      final bool bestSameGroup = best.subcategoryName == groupKey;
+      if (sameGroup != bestSameGroup) {
+        if (sameGroup) best = record;
+        continue;
+      }
+      if (record.expiryDate.isAfter(best.expiryDate)) best = record;
     }
     return best;
   }

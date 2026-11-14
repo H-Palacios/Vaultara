@@ -1675,6 +1675,19 @@
   "scanUpdateExisting": "به‌روزرسانی",
   "duplicateRecordTitle": "قبلاً اضافه شده",
   "duplicateRecordBody": "شما از قبل {name} را دارید که {date} منقضی می‌شود.",
+  "recordNameNeedsLetter": "دست‌کم یک حرف یا عدد به کار ببرید.",
+  "recordSaveFailed": "ذخیره نشد. اتصال خود را بررسی کنید و دوباره امتحان کنید.",
+  "duplicateRecordElsewhere": "شما از قبل {name} را در {group} دارید که در {date} منقضی می‌شود.",
+  "expiryGuessedHint": "این تاریخ را از سند شما حدس زدیم. بررسی کنید که درست باشد.",
+  "expiryOtherDates": "تاریخ‌های دیگر این سند",
+  "scanPhotoSaved": "عکس شما همراه این مورد ذخیره شد.",
+  "scanPhotoNotSaved": "عکس شما ذخیره نشد، چون این مورد از قبل حداکثر تعداد عکس مجاز را دارد.",
+  "scanReadOnlineTitle": "این سند آنلاین خوانده شود؟",
+  "scanReadOnlineBody": "گوشی شما نتوانست این سند را با اطمینان بخواند. Vaultara می‌تواند متن عکس را برای خواندن به سرور خود بفرستد. عکس روی گوشی شما می‌ماند و شماره‌های طولانی پنهان می‌شوند.",
+  "scanReadOnlineNo": "حالا نه",
+  "scanReadOnlineYes": "بخوان",
+  "scanReadOnlineNote": "این سند را آنلاین خواندیم.",
+  "scanNoExpiryNote": "به نظر می‌رسد این سند تاریخ انقضا ندارد. تاریخی را که می‌خواهید یادآوری شود اضافه کنید.",
   "duplicateKeepBoth": "نگه داشتن هر دو",
   "duplicateUpdateExisting": "به‌روزرسانی موجود",
   "editorDefaultsHint": "تنظیمات معمول برای {group} پر شد. می‌توانید آن‌ها را در جزئیات بیشتر تغییر دهید.",
@@ -3222,36 +3235,8 @@
   "twoStepSkipForNow": "فعلاً رد شو",
   "twoStepOffTitle": "تأیید دومرحله‌ای خاموش است",
   "twoStepOffBody": "با کد پشتیبان وارد شدید، بنابراین تأیید دومرحله‌ای خاموش شد. برای محافظت از حساب، آن را روی این تلفن دوباره راه‌اندازی کنید.",
-  "expiryPlusYears": "{years, plural, =1{+{years} سال} other{+{years} سال}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "نوشتن تاریخ",
-  "expiryTypeTitle": "تاریخ انقضا را بنویسید",
-  "expiryTypeHint": "برای مثال {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "این تاریخ درست به نظر نمی‌رسد. {example} را امتحان کنید.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "این تاریخ گذشته است، بنابراین سابقه به‌عنوان منقضی ذخیره می‌شود.",
   "expiryEndsToday": "امروز منقضی می‌شود.",
-  "saveAndAddAnother": "ذخیره و افزودن مورد دیگر",
-  "quickStartTitle": "شروع سریع",
   "categoryCreatedAddGroup": "{name} ساخته شد. گروهی به آن اضافه شود؟",
   "@categoryCreatedAddGroup": {
     "placeholders": {

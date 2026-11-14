@@ -5063,6 +5063,47 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'കുറഞ്ഞത് ഒരു അക്ഷരമോ അക്കമോ ഉപയോഗിക്കുക.';
+
+  @override
+  String get recordSaveFailed => 'സംരക്ഷിക്കാനായില്ല. കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'നിങ്ങൾക്ക് ഇതിനകം $group-ൽ $name ഉണ്ട്, $date-ന് കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ഈ തീയതി നിങ്ങളുടെ രേഖയിൽ നിന്ന് ഊഹിച്ചതാണ്. ശരിയാണോ എന്ന് പരിശോധിക്കുക.';
+
+  @override
+  String get expiryOtherDates => 'ഈ രേഖയിലെ മറ്റ് തീയതികൾ';
+
+  @override
+  String get scanPhotoSaved => 'നിങ്ങളുടെ ഫോട്ടോ ഈ റെക്കോർഡിനൊപ്പം സംരക്ഷിച്ചു.';
+
+  @override
+  String get scanPhotoNotSaved => 'ഈ റെക്കോർഡിൽ അനുവദനീയമായ പരമാവധി ഫോട്ടോകൾ ഇതിനകം ഉള്ളതിനാൽ നിങ്ങളുടെ ഫോട്ടോ സംരക്ഷിച്ചില്ല.';
+
+  @override
+  String get scanReadOnlineTitle => 'ഈ രേഖ ഓൺലൈനായി വായിക്കണോ?';
+
+  @override
+  String get scanReadOnlineBody => 'നിങ്ങളുടെ ഫോണിന് ഈ രേഖ ഉറപ്പോടെ വായിക്കാനായില്ല. വായിക്കാനായി ഫോട്ടോയിലെ എഴുത്ത് Vaultara-ക്ക് അതിന്റെ സെർവറിലേക്ക് അയക്കാം. ഫോട്ടോ നിങ്ങളുടെ ഫോണിൽ തന്നെ ഇരിക്കും, നീണ്ട നമ്പറുകൾ മറയ്ക്കും.';
+
+  @override
+  String get scanReadOnlineNo => 'ഇപ്പോൾ വേണ്ട';
+
+  @override
+  String get scanReadOnlineYes => 'വായിക്കുക';
+
+  @override
+  String get scanReadOnlineNote => 'ഈ രേഖ ഞങ്ങൾ ഓൺലൈനായി വായിച്ചു.';
+
+  @override
+  String get scanNoExpiryNote => 'ഈ രേഖയ്ക്ക് കാലഹരണ തീയതി ഇല്ലെന്ന് തോന്നുന്നു. ഓർമ്മിപ്പിക്കേണ്ട തീയതി ചേർക്കുക.';
+
+  @override
   String get duplicateKeepBoth => 'രണ്ടും നിലനിർത്തുക';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsMl extends AppLocalizations {
   String get twoStepOffBody => 'നിങ്ങൾ ബാക്കപ്പ് കോഡ് ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്തതിനാൽ രണ്ട്-ഘട്ട പരിശോധന ഓഫാക്കി. അക്കൗണ്ട് സുരക്ഷിതമായി നിലനിർത്താൻ ഈ ഫോണിൽ വീണ്ടും സജ്ജീകരിക്കുക.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years വർഷം',
-      one: '+$years വർഷം',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'തീയതി ടൈപ്പ് ചെയ്യുക';
-
-  @override
-  String get expiryTypeTitle => 'കാലാവധി തീരുന്ന തീയതി ടൈപ്പ് ചെയ്യുക';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ഉദാഹരണത്തിന് $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ആ തീയതി ശരിയായി തോന്നുന്നില്ല. $example ശ്രമിക്കുക.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ഈ തീയതി കഴിഞ്ഞു, അതിനാൽ റെക്കോർഡ് കാലഹരണപ്പെട്ടതായി സംരക്ഷിക്കും.';
 
   @override
   String get expiryEndsToday => 'ഇത് ഇന്ന് കാലഹരണപ്പെടുന്നു.';
-
-  @override
-  String get saveAndAddAnother => 'സംരക്ഷിച്ച് മറ്റൊന്ന് ചേർക്കുക';
-
-  @override
-  String get quickStartTitle => 'വേഗത്തിൽ തുടങ്ങാം';
 
   @override
   String categoryCreatedAddGroup(String name) {

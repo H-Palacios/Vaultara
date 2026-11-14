@@ -5022,6 +5022,47 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'ប្រើយ៉ាងហោចណាស់អក្សរ ឬលេខមួយ។';
+
+  @override
+  String get recordSaveFailed => 'មិនអាចរក្សាទុកបានទេ។ សូមពិនិត្យការតភ្ជាប់ ហើយព្យាយាមម្តងទៀត។';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'អ្នកមាន $name នៅក្នុង $group រួចហើយ ផុតកំណត់នៅ $date។';
+  }
+
+  @override
+  String get expiryGuessedHint => 'យើងបានទាយកាលបរិច្ឆេទនេះពីឯកសាររបស់អ្នក។ សូមពិនិត្យថាវាត្រូវគ្នា។';
+
+  @override
+  String get expiryOtherDates => 'កាលបរិច្ឆេទផ្សេងទៀតនៅលើឯកសារនេះ';
+
+  @override
+  String get scanPhotoSaved => 'រូបថតរបស់អ្នកត្រូវបានរក្សាទុកជាមួយកំណត់ត្រានេះ។';
+
+  @override
+  String get scanPhotoNotSaved => 'រូបថតរបស់អ្នកមិនត្រូវបានរក្សាទុកទេ ព្រោះកំណត់ត្រានេះមានរូបថតដល់ចំនួនអតិបរមារួចហើយ។';
+
+  @override
+  String get scanReadOnlineTitle => 'អានឯកសារនេះតាមអ៊ីនធឺណិត?';
+
+  @override
+  String get scanReadOnlineBody => 'ទូរសព្ទរបស់អ្នកមិនអាចអានឯកសារនេះបានច្បាស់លាស់ទេ។ Vaultara អាចផ្ញើអត្ថបទពីរូបថតទៅម៉ាស៊ីនមេរបស់វាដើម្បីអាន។ រូបថតនៅលើទូរសព្ទរបស់អ្នក ហើយលេខវែងៗត្រូវបានលាក់។';
+
+  @override
+  String get scanReadOnlineNo => 'មិនមែនឥឡូវ';
+
+  @override
+  String get scanReadOnlineYes => 'អាន';
+
+  @override
+  String get scanReadOnlineNote => 'យើងបានអានឯកសារនេះតាមអ៊ីនធឺណិត។';
+
+  @override
+  String get scanNoExpiryNote => 'ឯកសារនេះហាក់ដូចជាគ្មានកាលបរិច្ឆេទផុតកំណត់ទេ។ សូមបន្ថែមកាលបរិច្ឆេទដែលអ្នកចង់ឱ្យរំលឹក។';
+
+  @override
   String get duplicateKeepBoth => 'រក្សាទុកទាំងពីរ';
 
   @override
@@ -8703,42 +8744,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get twoStepOffBody => 'អ្នកបានចូលដោយកូដបម្រុង ដូច្នេះការផ្ទៀងផ្ទាត់ពីរជំហានត្រូវបានបិទ។ សូមរៀបចំវាឡើងវិញនៅលើទូរសព្ទនេះ ដើម្បីការពារគណនីរបស់អ្នក។';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ឆ្នាំ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'វាយកាលបរិច្ឆេទ';
-
-  @override
-  String get expiryTypeTitle => 'វាយកាលបរិច្ឆេទផុតកំណត់';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ឧទាហរណ៍ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'កាលបរិច្ឆេទនោះមើលទៅមិនត្រឹមត្រូវ។ សាកល្បង $example។';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'កាលបរិច្ឆេទនេះបានកន្លងផុតហើយ ដូច្នេះកំណត់ត្រានឹងត្រូវរក្សាទុកថាផុតកំណត់។';
 
   @override
   String get expiryEndsToday => 'វាផុតកំណត់ថ្ងៃនេះ។';
-
-  @override
-  String get saveAndAddAnother => 'រក្សាទុក ហើយបន្ថែមមួយទៀត';
-
-  @override
-  String get quickStartTitle => 'ចាប់ផ្តើមរហ័ស';
 
   @override
   String categoryCreatedAddGroup(String name) {

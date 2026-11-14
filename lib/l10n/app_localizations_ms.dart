@@ -5024,6 +5024,47 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Gunakan sekurang-kurangnya satu huruf atau nombor.';
+
+  @override
+  String get recordSaveFailed => 'Tidak dapat disimpan. Semak sambungan anda dan cuba lagi.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Anda sudah mempunyai $name dalam $group, tamat pada $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Kami meneka tarikh ini daripada dokumen anda. Semak sama ada ia sepadan.';
+
+  @override
+  String get expiryOtherDates => 'Tarikh lain pada dokumen ini';
+
+  @override
+  String get scanPhotoSaved => 'Foto anda disimpan bersama rekod ini.';
+
+  @override
+  String get scanPhotoNotSaved => 'Foto anda tidak disimpan kerana rekod ini sudah mempunyai bilangan foto maksimum.';
+
+  @override
+  String get scanReadOnlineTitle => 'Baca dokumen ini dalam talian?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefon anda tidak dapat membaca dokumen ini dengan pasti. Vaultara boleh menghantar teks daripada foto ke pelayannya untuk dibaca. Foto kekal pada telefon anda, dan nombor panjang disembunyikan.';
+
+  @override
+  String get scanReadOnlineNo => 'Bukan sekarang';
+
+  @override
+  String get scanReadOnlineYes => 'Baca';
+
+  @override
+  String get scanReadOnlineNote => 'Kami membaca dokumen ini dalam talian.';
+
+  @override
+  String get scanNoExpiryNote => 'Dokumen ini nampaknya tiada tarikh tamat. Tambah tarikh yang anda mahu diingatkan.';
+
+  @override
   String get duplicateKeepBoth => 'Simpan kedua-duanya';
 
   @override
@@ -8705,42 +8746,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get twoStepOffBody => 'Anda log masuk dengan kod sandaran, jadi pengesahan dua langkah telah dimatikan. Sediakannya semula pada telefon ini supaya akaun anda kekal dilindungi.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years tahun',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Taip tarikh';
-
-  @override
-  String get expiryTypeTitle => 'Taip tarikh tamat tempoh';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Contohnya $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Tarikh itu nampaknya tidak betul. Cuba $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Tarikh ini sudah berlalu, jadi rekod akan disimpan sebagai tamat tempoh.';
 
   @override
   String get expiryEndsToday => 'Ini tamat tempoh hari ini.';
-
-  @override
-  String get saveAndAddAnother => 'Simpan dan tambah satu lagi';
-
-  @override
-  String get quickStartTitle => 'Mula pantas';
 
   @override
   String categoryCreatedAddGroup(String name) {

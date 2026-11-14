@@ -1828,6 +1828,19 @@
   "scanUpdateExisting": "Uuenda",
   "duplicateRecordTitle": "Juba lisatud",
   "duplicateRecordBody": "Sul on juba {name}, mis aegub {date}.",
+  "recordNameNeedsLetter": "Kasuta vähemalt üht tähte või numbrit.",
+  "recordSaveFailed": "Salvestamine ebaõnnestus. Kontrolli ühendust ja proovi uuesti.",
+  "duplicateRecordElsewhere": "Sul on juba {name} grupis {group}, aegub {date}.",
+  "expiryGuessedHint": "Arvasime selle kuupäeva sinu dokumendi põhjal. Kontrolli, kas see klapib.",
+  "expiryOtherDates": "Muud kuupäevad selles dokumendis",
+  "scanPhotoSaved": "Sinu foto on selle kirjega salvestatud.",
+  "scanPhotoNotSaved": "Sinu fotot ei salvestatud, sest sellel kirjel on juba lubatud maksimaalne arv fotosid.",
+  "scanReadOnlineTitle": "Kas lugeda see dokument võrgus?",
+  "scanReadOnlineBody": "Sinu telefon ei suutnud seda dokumenti kindlalt lugeda. Vaultara saab saata foto teksti oma serverisse, et seda lugeda. Foto jääb sinu telefoni ja pikad numbrid peidetakse.",
+  "scanReadOnlineNo": "Mitte praegu",
+  "scanReadOnlineYes": "Loe",
+  "scanReadOnlineNote": "Lugesime selle dokumendi võrgus.",
+  "scanNoExpiryNote": "Tundub, et sellel dokumendil pole aegumiskuupäeva. Lisa kuupäev, mille kohta soovid meeldetuletust.",
   "duplicateKeepBoth": "Hoia mõlemad",
   "duplicateUpdateExisting": "Uuenda olemasolevat",
   "editorDefaultsHint": "Täitsime grupi {group} tavapärased seaded. Saad neid muuta jaotises Rohkem üksikasju.",
@@ -3375,36 +3388,8 @@
   "twoStepSkipForNow": "Jäta praegu vahele",
   "twoStepOffTitle": "Kaheastmeline kinnitamine on väljas",
   "twoStepOffBody": "Logisid sisse varukoodiga, seega lülitati kaheastmeline kinnitamine välja. Seadista see selles telefonis uuesti, et konto jääks kaitstuks.",
-  "expiryPlusYears": "{years, plural, =1{+{years} aasta} other{+{years} aastat}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Kirjuta kuupäev",
-  "expiryTypeTitle": "Kirjuta aegumiskuupäev",
-  "expiryTypeHint": "Näiteks {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "See kuupäev ei tundu õige. Proovi {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "See kuupäev on möödas, seega salvestatakse kirje aegununa.",
   "expiryEndsToday": "See aegub täna.",
-  "saveAndAddAnother": "Salvesta ja lisa veel üks",
-  "quickStartTitle": "Kiire algus",
   "categoryCreatedAddGroup": "{name} loodud. Kas lisada sinna rühm?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

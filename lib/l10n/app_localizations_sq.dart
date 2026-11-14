@@ -5063,6 +5063,47 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Përdor të paktën një shkronjë ose numër.';
+
+  @override
+  String get recordSaveFailed => 'Nuk u ruajt dot. Kontrollo lidhjen dhe provo sërish.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Ke tashmë $name te $group, që skadon më $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Këtë datë e hamendësuam nga dokumenti yt. Kontrollo që përputhet.';
+
+  @override
+  String get expiryOtherDates => 'Data të tjera në këtë dokument';
+
+  @override
+  String get scanPhotoSaved => 'Fotoja jote u ruajt me këtë regjistrim.';
+
+  @override
+  String get scanPhotoNotSaved => 'Fotoja jote nuk u ruajt, sepse ky regjistrim ka tashmë numrin maksimal të fotove.';
+
+  @override
+  String get scanReadOnlineTitle => 'Ta lexojmë këtë dokument në internet?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefoni yt nuk e lexoi dot me siguri këtë dokument. Vaultara mund ta dërgojë tekstin e fotos te serveri i vet për ta lexuar. Fotoja mbetet në telefonin tënd dhe numrat e gjatë fshihen.';
+
+  @override
+  String get scanReadOnlineNo => 'Jo tani';
+
+  @override
+  String get scanReadOnlineYes => 'Lexoje';
+
+  @override
+  String get scanReadOnlineNote => 'E lexuam këtë dokument në internet.';
+
+  @override
+  String get scanNoExpiryNote => 'Duket se ky dokument nuk ka datë skadimi. Shto datën për të cilën do kujtesë.';
+
+  @override
   String get duplicateKeepBoth => 'Mbaji të dyja';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get twoStepOffBody => 'Hytë me një kod rezervë, prandaj verifikimi me dy hapa u çaktivizua. Konfigurojeni sërish në këtë telefon që llogaria të mbetet e mbrojtur.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years vjet',
-      one: '+$years vit',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Shkruaj datën';
-
-  @override
-  String get expiryTypeTitle => 'Shkruani datën e skadimit';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Për shembull $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Kjo datë nuk duket e saktë. Provoni $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Kjo datë ka kaluar, prandaj regjistrimi do të ruhet si i skaduar.';
 
   @override
   String get expiryEndsToday => 'Skadon sot.';
-
-  @override
-  String get saveAndAddAnother => 'Ruaj dhe shto një tjetër';
-
-  @override
-  String get quickStartTitle => 'Fillim i shpejtë';
 
   @override
   String categoryCreatedAddGroup(String name) {

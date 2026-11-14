@@ -5063,6 +5063,47 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Verwende mindestens einen Buchstaben oder eine Zahl.';
+
+  @override
+  String get recordSaveFailed => 'Speichern fehlgeschlagen. Prüfe deine Verbindung und versuche es erneut.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Du hast $name bereits in $group, läuft am $date ab.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Dieses Datum haben wir aus deinem Dokument geschätzt. Prüfe, ob es stimmt.';
+
+  @override
+  String get expiryOtherDates => 'Weitere Daten auf diesem Dokument';
+
+  @override
+  String get scanPhotoSaved => 'Dein Foto ist bei diesem Eintrag gespeichert.';
+
+  @override
+  String get scanPhotoNotSaved => 'Dein Foto wurde nicht gespeichert, weil dieser Eintrag schon die maximale Anzahl an Fotos hat.';
+
+  @override
+  String get scanReadOnlineTitle => 'Dieses Dokument online lesen?';
+
+  @override
+  String get scanReadOnlineBody => 'Dein Handy konnte dieses Dokument nicht sicher lesen. Vaultara kann den Text aus dem Foto an seinen Server senden, um ihn zu lesen. Das Foto bleibt auf deinem Handy, lange Nummern werden ausgeblendet.';
+
+  @override
+  String get scanReadOnlineNo => 'Nicht jetzt';
+
+  @override
+  String get scanReadOnlineYes => 'Lesen';
+
+  @override
+  String get scanReadOnlineNote => 'Wir haben dieses Dokument online gelesen.';
+
+  @override
+  String get scanNoExpiryNote => 'Dieses Dokument scheint kein Ablaufdatum zu haben. Füge das Datum hinzu, an das du erinnert werden möchtest.';
+
+  @override
   String get duplicateKeepBoth => 'Beide behalten';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get twoStepOffBody => 'Du hast dich mit einem Backup-Code angemeldet, deshalb wurde die Bestätigung in zwei Schritten ausgeschaltet. Richte sie auf diesem Handy neu ein, damit dein Konto geschützt bleibt.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years Jahre',
-      one: '+$years Jahr',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Datum eingeben';
-
-  @override
-  String get expiryTypeTitle => 'Ablaufdatum eingeben';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Zum Beispiel $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Dieses Datum sieht nicht richtig aus. Versuche $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Dieses Datum liegt in der Vergangenheit, daher wird der Eintrag als abgelaufen gespeichert.';
 
   @override
   String get expiryEndsToday => 'Das läuft heute ab.';
-
-  @override
-  String get saveAndAddAnother => 'Speichern und weiteren hinzufügen';
-
-  @override
-  String get quickStartTitle => 'Schnellstart';
 
   @override
   String categoryCreatedAddGroup(String name) {

@@ -1681,6 +1681,19 @@
   "scanUpdateExisting": "Жаңыртуу",
   "duplicateRecordTitle": "Мурунтан кошулган",
   "duplicateRecordBody": "Сизде {name} мурунтан бар, анын мөөнөтү {date} күнү бүтөт.",
+  "recordNameNeedsLetter": "Жок дегенде бир тамга же сан колдонуңуз.",
+  "recordSaveFailed": "Сакталган жок. Байланышты текшерип, кайра аракет кылыңыз.",
+  "duplicateRecordElsewhere": "Сизде {group} тобунда {name} бар, {date} бүтөт.",
+  "expiryGuessedHint": "Бул күндү документиңизден болжолдодук. Туура келерин текшериңиз.",
+  "expiryOtherDates": "Бул документтеги башка күндөр",
+  "scanPhotoSaved": "Сүрөтүңүз бул жазуу менен сакталды.",
+  "scanPhotoNotSaved": "Сүрөтүңүз сакталган жок, анткени бул жазууда уруксат берилген эң көп сүрөт бар.",
+  "scanReadOnlineTitle": "Бул документти онлайн окуйлубу?",
+  "scanReadOnlineBody": "Телефонуңуз бул документти так окуй алган жок. Vaultara сүрөттөгү текстти окуу үчүн өз серверине жөнөтө алат. Сүрөт телефонуңузда калат, узун номерлер жашырылат.",
+  "scanReadOnlineNo": "Азыр эмес",
+  "scanReadOnlineYes": "Окуу",
+  "scanReadOnlineNote": "Бул документти онлайн окудук.",
+  "scanNoExpiryNote": "Бул документте бүтүү күнү жок окшойт. Эскертүү алгыңыз келген күндү кошуңуз.",
   "duplicateKeepBoth": "Экөөнү тең калтыруу",
   "duplicateUpdateExisting": "Барын жаңыртуу",
   "editorDefaultsHint": "{group} тобу үчүн типтүү жөндөөлөр толтурулду. Аларды Кошумча маалымат бөлүмүндө өзгөртө аласыз.",
@@ -3228,36 +3241,8 @@
   "twoStepSkipForNow": "Азырынча өткөрүп жиберүү",
   "twoStepOffTitle": "Эки баскычтуу текшерүү өчүк",
   "twoStepOffBody": "Сиз камдык код менен кирдиңиз, ошондуктан эки баскычтуу текшерүү өчүрүлдү. Аккаунтуңуз корголуп турушу үчүн аны бул телефондо кайра орнотуңуз.",
-  "expiryPlusYears": "{years, plural, =1{+{years} жыл} other{+{years} жыл}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Күндү жазуу",
-  "expiryTypeTitle": "Мөөнөтү бүтүүчү күндү жазыңыз",
-  "expiryTypeHint": "Мисалы {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Бул күн туура эмес окшойт. {example} аракет кылыңыз.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Бул күн өтүп кеткен, ошондуктан жазуу мөөнөтү өткөн катары сакталат.",
   "expiryEndsToday": "Мунун мөөнөтү бүгүн бүтөт.",
-  "saveAndAddAnother": "Сактап, дагы бирөөнү кошуу",
-  "quickStartTitle": "Тез баштоо",
   "categoryCreatedAddGroup": "{name} түзүлдү. Ага топ кошулсунбу?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

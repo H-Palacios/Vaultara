@@ -5063,6 +5063,47 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Χρησιμοποιήστε τουλάχιστον ένα γράμμα ή αριθμό.';
+
+  @override
+  String get recordSaveFailed => 'Δεν ήταν δυνατή η αποθήκευση. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Έχετε ήδη $name στην ομάδα $group, λήγει στις $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Μαντέψαμε αυτή την ημερομηνία από το έγγραφό σας. Ελέγξτε ότι ταιριάζει.';
+
+  @override
+  String get expiryOtherDates => 'Άλλες ημερομηνίες σε αυτό το έγγραφο';
+
+  @override
+  String get scanPhotoSaved => 'Η φωτογραφία σας αποθηκεύτηκε με αυτή την εγγραφή.';
+
+  @override
+  String get scanPhotoNotSaved => 'Η φωτογραφία σας δεν αποθηκεύτηκε, επειδή αυτή η εγγραφή έχει ήδη τον μέγιστο αριθμό φωτογραφιών.';
+
+  @override
+  String get scanReadOnlineTitle => 'Ανάγνωση του εγγράφου online;';
+
+  @override
+  String get scanReadOnlineBody => 'Το τηλέφωνό σας δεν μπόρεσε να διαβάσει με βεβαιότητα αυτό το έγγραφο. Το Vaultara μπορεί να στείλει το κείμενο της φωτογραφίας στον διακομιστή του για να το διαβάσει. Η φωτογραφία μένει στο τηλέφωνό σας και οι μεγάλοι αριθμοί κρύβονται.';
+
+  @override
+  String get scanReadOnlineNo => 'Όχι τώρα';
+
+  @override
+  String get scanReadOnlineYes => 'Ανάγνωση';
+
+  @override
+  String get scanReadOnlineNote => 'Διαβάσαμε αυτό το έγγραφο online.';
+
+  @override
+  String get scanNoExpiryNote => 'Αυτό το έγγραφο δεν φαίνεται να έχει ημερομηνία λήξης. Προσθέστε την ημερομηνία για την οποία θέλετε υπενθύμιση.';
+
+  @override
   String get duplicateKeepBoth => 'Διατήρηση και των δύο';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get twoStepOffBody => 'Συνδεθήκατε με εφεδρικό κωδικό, οπότε η επαλήθευση δύο βημάτων απενεργοποιήθηκε. Ρυθμίστε την ξανά σε αυτό το τηλέφωνο για να μείνει προστατευμένος ο λογαριασμός σας.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years έτη',
-      one: '+$years έτος',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Πληκτρολόγηση ημερομηνίας';
-
-  @override
-  String get expiryTypeTitle => 'Πληκτρολογήστε την ημερομηνία λήξης';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Για παράδειγμα $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Αυτή η ημερομηνία δεν φαίνεται σωστή. Δοκιμάστε $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Αυτή η ημερομηνία έχει περάσει, οπότε η εγγραφή θα αποθηκευτεί ως ληγμένη.';
 
   @override
   String get expiryEndsToday => 'Λήγει σήμερα.';
-
-  @override
-  String get saveAndAddAnother => 'Αποθήκευση και προσθήκη άλλου';
-
-  @override
-  String get quickStartTitle => 'Γρήγορη έναρξη';
 
   @override
   String categoryCreatedAddGroup(String name) {

@@ -5025,6 +5025,47 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Jiri opekata otu mkpụrụedemede ma ọ bụ nọmba.';
+
+  @override
+  String get recordSaveFailed => 'Enweghị ike ịchekwa. Lelee njikọ gị ma nwaa ọzọ.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Ị nweelarị $name na $group, ọ ga-agwụ na $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Anyị chere ụbọchị a site na akwụkwọ gị. Lelee na ọ kwekọrọ.';
+
+  @override
+  String get expiryOtherDates => 'Ụbọchị ndị ọzọ dị n\'akwụkwọ a';
+
+  @override
+  String get scanPhotoSaved => 'Echekwala foto gị na ndekọ a.';
+
+  @override
+  String get scanPhotoNotSaved => 'Echekwaghị foto gị n\'ihi na ndekọ a enweelarị ọnụọgụ foto kachasị ekwe.';
+
+  @override
+  String get scanReadOnlineTitle => 'Gụọ akwụkwọ a n\'ịntanetị?';
+
+  @override
+  String get scanReadOnlineBody => 'Ekwentị gị enweghị ike ịgụ akwụkwọ a nke ọma. Vaultara nwere ike iziga ederede foto ahụ na sava ya ka ọ gụọ ya. Foto ahụ na-anọ na ekwentị gị, a na-ezokwa nọmba ogologo.';
+
+  @override
+  String get scanReadOnlineNo => 'Ọ bụghị ugbu a';
+
+  @override
+  String get scanReadOnlineYes => 'Gụọ ya';
+
+  @override
+  String get scanReadOnlineNote => 'Anyị gụrụ akwụkwọ a n\'ịntanetị.';
+
+  @override
+  String get scanNoExpiryNote => 'Ọ dị ka akwụkwọ a enweghị ụbọchị ọ ga-agwụ. Tinye ụbọchị ị chọrọ ka a chetara gị.';
+
+  @override
   String get duplicateKeepBoth => 'Debe abụọ';
 
   @override
@@ -8715,43 +8756,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get twoStepOffBody => 'Ị banyere site na koodu ndabere, ya mere a gbanyụrụ nkwenye nzọụkwụ abụọ. Tọgharịa ya na ekwentị a ka akaụntụ gị nọrọ na nchebe.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+afọ $years',
-      one: '+afọ $years',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Dee ụbọchị';
-
-  @override
-  String get expiryTypeTitle => 'Dee ụbọchị njedebe';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Dịka ọmụmaatụ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ụbọchị ahụ adịghị ka ọ ziri ezi. Nwaa $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ụbọchị a agafeela, ya mere a ga-echekwa ndekọ ahụ dị ka nke gwụrụ.';
 
   @override
   String get expiryEndsToday => 'Nke a na-agwụ taa.';
-
-  @override
-  String get saveAndAddAnother => 'Chekwaa ma tinye ọzọ';
-
-  @override
-  String get quickStartTitle => 'Mmalite ngwa ngwa';
 
   @override
   String categoryCreatedAddGroup(String name) {

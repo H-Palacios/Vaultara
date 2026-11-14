@@ -5012,6 +5012,47 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'ใช้ตัวอักษรหรือตัวเลขอย่างน้อยหนึ่งตัว';
+
+  @override
+  String get recordSaveFailed => 'บันทึกไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'คุณมี $name ใน $group อยู่แล้ว หมดอายุวันที่ $date';
+  }
+
+  @override
+  String get expiryGuessedHint => 'เราเดาวันที่นี้จากเอกสารของคุณ โปรดตรวจสอบว่าตรงกัน';
+
+  @override
+  String get expiryOtherDates => 'วันที่อื่นในเอกสารนี้';
+
+  @override
+  String get scanPhotoSaved => 'บันทึกรูปของคุณไว้กับรายการนี้แล้ว';
+
+  @override
+  String get scanPhotoNotSaved => 'ไม่ได้บันทึกรูปของคุณ เพราะรายการนี้มีรูปครบจำนวนสูงสุดแล้ว';
+
+  @override
+  String get scanReadOnlineTitle => 'อ่านเอกสารนี้ทางออนไลน์ไหม';
+
+  @override
+  String get scanReadOnlineBody => 'โทรศัพท์ของคุณอ่านเอกสารนี้ได้ไม่แน่ชัด Vaultara ส่งข้อความจากรูปไปยังเซิร์ฟเวอร์เพื่ออ่านได้ รูปจะอยู่ในโทรศัพท์ของคุณ และตัวเลขยาวๆ จะถูกซ่อน';
+
+  @override
+  String get scanReadOnlineNo => 'ไว้ทีหลัง';
+
+  @override
+  String get scanReadOnlineYes => 'อ่าน';
+
+  @override
+  String get scanReadOnlineNote => 'เราอ่านเอกสารนี้ทางออนไลน์แล้ว';
+
+  @override
+  String get scanNoExpiryNote => 'ดูเหมือนเอกสารนี้ไม่มีวันหมดอายุ เพิ่มวันที่ที่คุณอยากให้เตือน';
+
+  @override
   String get duplicateKeepBoth => 'เก็บไว้ทั้งสอง';
 
   @override
@@ -8693,42 +8734,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get twoStepOffBody => 'คุณลงชื่อเข้าใช้ด้วยรหัสสำรอง จึงมีการปิดการยืนยันแบบสองขั้นตอน โปรดตั้งค่าใหม่บนโทรศัพท์เครื่องนี้เพื่อปกป้องบัญชีของคุณ';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ปี',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'พิมพ์วันที่';
-
-  @override
-  String get expiryTypeTitle => 'พิมพ์วันหมดอายุ';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ตัวอย่าง $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'วันที่นี้ดูไม่ถูกต้อง ลอง $example';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'วันที่นี้ผ่านไปแล้ว รายการจะถูกบันทึกเป็นหมดอายุ';
 
   @override
   String get expiryEndsToday => 'รายการนี้หมดอายุวันนี้';
-
-  @override
-  String get saveAndAddAnother => 'บันทึกและเพิ่มอีกรายการ';
-
-  @override
-  String get quickStartTitle => 'เริ่มต้นอย่างรวดเร็ว';
 
   @override
   String categoryCreatedAddGroup(String name) {

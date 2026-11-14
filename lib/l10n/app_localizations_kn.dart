@@ -5063,6 +5063,47 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'ಕನಿಷ್ಠ ಒಂದು ಅಕ್ಷರ ಅಥವಾ ಸಂಖ್ಯೆ ಬಳಸಿ.';
+
+  @override
+  String get recordSaveFailed => 'ಉಳಿಸಲಾಗಲಿಲ್ಲ. ನಿಮ್ಮ ಸಂಪರ್ಕ ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'ನಿಮ್ಮ ಬಳಿ ಈಗಾಗಲೇ $groupನಲ್ಲಿ $name ಇದೆ, $date ರಂದು ಮುಕ್ತಾಯ.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ಈ ದಿನಾಂಕವನ್ನು ನಿಮ್ಮ ದಾಖಲೆಯಿಂದ ಊಹಿಸಿದ್ದೇವೆ. ಹೊಂದುತ್ತದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ.';
+
+  @override
+  String get expiryOtherDates => 'ಈ ದಾಖಲೆಯಲ್ಲಿನ ಇತರ ದಿನಾಂಕಗಳು';
+
+  @override
+  String get scanPhotoSaved => 'ನಿಮ್ಮ ಫೋಟೋವನ್ನು ಈ ದಾಖಲೆಯೊಂದಿಗೆ ಉಳಿಸಲಾಗಿದೆ.';
+
+  @override
+  String get scanPhotoNotSaved => 'ಈ ದಾಖಲೆಯಲ್ಲಿ ಈಗಾಗಲೇ ಅನುಮತಿಸಿದ ಗರಿಷ್ಠ ಫೋಟೋಗಳು ಇರುವುದರಿಂದ ನಿಮ್ಮ ಫೋಟೋ ಉಳಿಸಲಾಗಲಿಲ್ಲ.';
+
+  @override
+  String get scanReadOnlineTitle => 'ಈ ದಾಖಲೆಯನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಓದಬೇಕೆ?';
+
+  @override
+  String get scanReadOnlineBody => 'ನಿಮ್ಮ ಫೋನ್ ಈ ದಾಖಲೆಯನ್ನು ಖಚಿತವಾಗಿ ಓದಲಾಗಲಿಲ್ಲ. ಓದಲು Vaultara ಫೋಟೋದ ಪಠ್ಯವನ್ನು ತನ್ನ ಸರ್ವರ್‌ಗೆ ಕಳುಹಿಸಬಹುದು. ಫೋಟೋ ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲೇ ಇರುತ್ತದೆ, ಉದ್ದ ಸಂಖ್ಯೆಗಳನ್ನು ಮರೆಮಾಡಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get scanReadOnlineNo => 'ಈಗ ಬೇಡ';
+
+  @override
+  String get scanReadOnlineYes => 'ಓದಿ';
+
+  @override
+  String get scanReadOnlineNote => 'ಈ ದಾಖಲೆಯನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಓದಿದ್ದೇವೆ.';
+
+  @override
+  String get scanNoExpiryNote => 'ಈ ದಾಖಲೆಗೆ ಮುಕ್ತಾಯ ದಿನಾಂಕ ಇಲ್ಲದಂತೆ ತೋರುತ್ತದೆ. ನಿಮಗೆ ನೆನಪಿಸಬೇಕಾದ ದಿನಾಂಕ ಸೇರಿಸಿ.';
+
+  @override
   String get duplicateKeepBoth => 'ಎರಡನ್ನೂ ಇರಿಸಿ';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsKn extends AppLocalizations {
   String get twoStepOffBody => 'ನೀವು ಬ್ಯಾಕಪ್ ಕೋಡ್ ಬಳಸಿ ಸೈನ್ ಇನ್ ಮಾಡಿದ್ದರಿಂದ ಎರಡು ಹಂತದ ಪರಿಶೀಲನೆ ಆಫ್ ಆಗಿದೆ. ನಿಮ್ಮ ಖಾತೆ ಸುರಕ್ಷಿತವಾಗಿರಲು ಈ ಫೋನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಹೊಂದಿಸಿ.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ವರ್ಷಗಳು',
-      one: '+$years ವರ್ಷ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'ದಿನಾಂಕ ಟೈಪ್ ಮಾಡಿ';
-
-  @override
-  String get expiryTypeTitle => 'ಮುಕ್ತಾಯ ದಿನಾಂಕ ಟೈಪ್ ಮಾಡಿ';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ಉದಾಹರಣೆಗೆ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ಆ ದಿನಾಂಕ ಸರಿಯಾಗಿ ಕಾಣುತ್ತಿಲ್ಲ. $example ಪ್ರಯತ್ನಿಸಿ.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ಈ ದಿನಾಂಕ ಕಳೆದಿದೆ, ಆದ್ದರಿಂದ ದಾಖಲೆಯನ್ನು ಅವಧಿ ಮುಗಿದಂತೆ ಉಳಿಸಲಾಗುತ್ತದೆ.';
 
   @override
   String get expiryEndsToday => 'ಇದು ಇಂದು ಮುಕ್ತಾಯವಾಗುತ್ತದೆ.';
-
-  @override
-  String get saveAndAddAnother => 'ಉಳಿಸಿ ಮತ್ತು ಇನ್ನೊಂದು ಸೇರಿಸಿ';
-
-  @override
-  String get quickStartTitle => 'ತ್ವರಿತ ಆರಂಭ';
 
   @override
   String categoryCreatedAddGroup(String name) {

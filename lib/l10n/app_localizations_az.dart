@@ -5063,6 +5063,47 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Ən azı bir hərf və ya rəqəm istifadə edin.';
+
+  @override
+  String get recordSaveFailed => 'Yadda saxlamaq mümkün olmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Sizdə artıq $group qrupunda $name var, $date tarixində bitir.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Bu tarixi sənədinizdən təxmin etdik. Uyğun olduğunu yoxlayın.';
+
+  @override
+  String get expiryOtherDates => 'Bu sənəddəki digər tarixlər';
+
+  @override
+  String get scanPhotoSaved => 'Şəkliniz bu qeydlə birlikdə saxlanıldı.';
+
+  @override
+  String get scanPhotoNotSaved => 'Şəkliniz saxlanılmadı, çünki bu qeyddə artıq icazə verilən maksimum şəkil var.';
+
+  @override
+  String get scanReadOnlineTitle => 'Bu sənəd onlayn oxunsun?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefonunuz bu sənədi əminliklə oxuya bilmədi. Vaultara oxumaq üçün şəkildəki mətni öz serverinə göndərə bilər. Şəkil telefonunuzda qalır, uzun nömrələr gizlədilir.';
+
+  @override
+  String get scanReadOnlineNo => 'İndi yox';
+
+  @override
+  String get scanReadOnlineYes => 'Oxu';
+
+  @override
+  String get scanReadOnlineNote => 'Bu sənədi onlayn oxuduq.';
+
+  @override
+  String get scanNoExpiryNote => 'Görünür, bu sənədin bitmə tarixi yoxdur. Xatırlatma istədiyiniz tarixi əlavə edin.';
+
+  @override
   String get duplicateKeepBoth => 'İkisini də saxla';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsAz extends AppLocalizations {
   String get twoStepOffBody => 'Ehtiyat kodla daxil oldunuz, ona görə iki addımlı doğrulama söndürüldü. Hesabınızı qorumaq üçün onu bu telefonda yenidən qurun.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years il',
-      one: '+$years il',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Tarixi yaz';
-
-  @override
-  String get expiryTypeTitle => 'Bitmə tarixini yazın';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Məsələn $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Bu tarix düzgün görünmür. $example sınayın.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Bu tarix keçib, ona görə qeyd müddəti bitmiş kimi saxlanacaq.';
 
   @override
   String get expiryEndsToday => 'Bunun müddəti bu gün bitir.';
-
-  @override
-  String get saveAndAddAnother => 'Saxla və başqasını əlavə et';
-
-  @override
-  String get quickStartTitle => 'Sürətli başlanğıc';
 
   @override
   String categoryCreatedAddGroup(String name) {

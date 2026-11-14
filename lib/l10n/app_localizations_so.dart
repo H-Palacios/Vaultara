@@ -5062,6 +5062,47 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Isticmaal ugu yaraan hal xaraf ama tiro.';
+
+  @override
+  String get recordSaveFailed => 'Lama kaydin karin. Hubi xiriirkaaga oo isku day mar kale.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Horey ayaad ugu haysay $name $group, wuxuu dhacayaa $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Taariikhdan waxaan ka qiyaasnay dukumentigaaga. Hubi inay waafaqsan tahay.';
+
+  @override
+  String get expiryOtherDates => 'Taariikhaha kale ee dukumentigan';
+
+  @override
+  String get scanPhotoSaved => 'Sawirkaaga waxaa lagu kaydiyay diiwaankan.';
+
+  @override
+  String get scanPhotoNotSaved => 'Sawirkaaga lama kaydin sababtoo ah diiwaankan wuxuu horey u haystay tirada ugu badan ee sawirada la oggol yahay.';
+
+  @override
+  String get scanReadOnlineTitle => 'Dukumentigan ma la akhriyaa online?';
+
+  @override
+  String get scanReadOnlineBody => 'Taleefankaagu si hubaal ah uma akhrin karin dukumentigan. Vaultara wuxuu qoraalka sawirka u diri karaa server-kiisa si uu u akhriyo. Sawirku wuxuu ku jiraa taleefankaaga, lambarada dhaadheerna waa la qariyaa.';
+
+  @override
+  String get scanReadOnlineNo => 'Hadda maya';
+
+  @override
+  String get scanReadOnlineYes => 'Akhri';
+
+  @override
+  String get scanReadOnlineNote => 'Dukumentigan online ayaan ku akhrinay.';
+
+  @override
+  String get scanNoExpiryNote => 'Waxay u egtahay in dukumentigan aanu lahayn taariikh dhicid. Ku dar taariikhda aad rabto in laguu xusuusiyo.';
+
+  @override
   String get duplicateKeepBoth => 'Hay labadaba';
 
   @override
@@ -8766,43 +8807,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get twoStepOffBody => 'Waxaad ku gashay kood kayd ah, sidaas darteed xaqiijinta laba-tallaabo waa la damiyay. Mar kale ku deji taleefankan si xisaabtaadu u ahaato mid la ilaaliyo.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years sano',
-      one: '+$years sano',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Qor taariikhda';
-
-  @override
-  String get expiryTypeTitle => 'Qor taariikhda dhicitaanka';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Tusaale $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Taariikhdaasi uma muuqato mid sax ah. Isku day $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Taariikhdani way dhaaftay, sidaas darteed diiwaanka waxaa loo kaydin doonaa sidii mid dhacay.';
 
   @override
   String get expiryEndsToday => 'Kani maanta ayuu dhacayaa.';
-
-  @override
-  String get saveAndAddAnother => 'Kaydi oo ku dar mid kale';
-
-  @override
-  String get quickStartTitle => 'Bilow degdeg ah';
 
   @override
   String categoryCreatedAddGroup(String name) {

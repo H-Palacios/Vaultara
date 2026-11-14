@@ -5063,6 +5063,47 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Käytä vähintään yhtä kirjainta tai numeroa.';
+
+  @override
+  String get recordSaveFailed => 'Tallennus epäonnistui. Tarkista yhteys ja yritä uudelleen.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Sinulla on jo $name ryhmässä $group, vanhenee $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Arvasimme tämän päivämäärän asiakirjastasi. Tarkista, että se täsmää.';
+
+  @override
+  String get expiryOtherDates => 'Muut päivämäärät tässä asiakirjassa';
+
+  @override
+  String get scanPhotoSaved => 'Kuvasi on tallennettu tämän tiedon kanssa.';
+
+  @override
+  String get scanPhotoNotSaved => 'Kuvaasi ei tallennettu, koska tässä tiedossa on jo suurin sallittu määrä kuvia.';
+
+  @override
+  String get scanReadOnlineTitle => 'Luetaanko asiakirja verkossa?';
+
+  @override
+  String get scanReadOnlineBody => 'Puhelimesi ei pystynyt lukemaan tätä asiakirjaa varmasti. Vaultara voi lähettää kuvan tekstin palvelimelleen luettavaksi. Kuva pysyy puhelimessasi, ja pitkät numerot piilotetaan.';
+
+  @override
+  String get scanReadOnlineNo => 'Ei nyt';
+
+  @override
+  String get scanReadOnlineYes => 'Lue';
+
+  @override
+  String get scanReadOnlineNote => 'Luimme tämän asiakirjan verkossa.';
+
+  @override
+  String get scanNoExpiryNote => 'Tällä asiakirjalla ei näytä olevan vanhenemispäivää. Lisää päivä, josta haluat muistutuksen.';
+
+  @override
   String get duplicateKeepBoth => 'Säilytä molemmat';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get twoStepOffBody => 'Kirjauduit varakoodilla, joten kaksivaiheinen vahvistus poistettiin käytöstä. Ota se uudelleen käyttöön tässä puhelimessa, jotta tilisi pysyy suojattuna.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years vuotta',
-      one: '+$years vuosi',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Kirjoita päivämäärä';
-
-  @override
-  String get expiryTypeTitle => 'Kirjoita vanhenemispäivä';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Esimerkiksi $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Päivämäärä ei näytä oikealta. Kokeile $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Tämä päivä on mennyt, joten tietue tallennetaan vanhentuneena.';
 
   @override
   String get expiryEndsToday => 'Tämä vanhenee tänään.';
-
-  @override
-  String get saveAndAddAnother => 'Tallenna ja lisää toinen';
-
-  @override
-  String get quickStartTitle => 'Pika-aloitus';
 
   @override
   String categoryCreatedAddGroup(String name) {

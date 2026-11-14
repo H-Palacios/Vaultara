@@ -5058,6 +5058,47 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Дор хаяж нэг үсэг эсвэл тоо ашиглана уу.';
+
+  @override
+  String get recordSaveFailed => 'Хадгалж чадсангүй. Холболтоо шалгаад дахин оролдоно уу.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Танд $group-д $name аль хэдийн байна, $date-нд дуусна.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Энэ огноог таны баримтаас таамагласан. Таарч байгаа эсэхийг шалгана уу.';
+
+  @override
+  String get expiryOtherDates => 'Энэ баримт дээрх бусад огноо';
+
+  @override
+  String get scanPhotoSaved => 'Таны зураг энэ бичлэгтэй хамт хадгалагдлаа.';
+
+  @override
+  String get scanPhotoNotSaved => 'Энэ бичлэгт зөвшөөрөгдсөн хамгийн их зураг байгаа тул таны зураг хадгалагдсангүй.';
+
+  @override
+  String get scanReadOnlineTitle => 'Энэ баримтыг онлайнаар уншуулах уу?';
+
+  @override
+  String get scanReadOnlineBody => 'Таны утас энэ баримтыг итгэлтэй уншиж чадсангүй. Vaultara зургийн бичвэрийг унших зорилгоор серверт илгээж болно. Зураг таны утсанд үлдэх ба урт дугаарууд нуугдана.';
+
+  @override
+  String get scanReadOnlineNo => 'Одоо биш';
+
+  @override
+  String get scanReadOnlineYes => 'Унших';
+
+  @override
+  String get scanReadOnlineNote => 'Бид энэ баримтыг онлайнаар уншлаа.';
+
+  @override
+  String get scanNoExpiryNote => 'Энэ баримтад дуусах огноо байхгүй бололтой. Сануулга авах огноогоо нэмнэ үү.';
+
+  @override
   String get duplicateKeepBoth => 'Хоёуланг хадгалах';
 
   @override
@@ -8757,43 +8798,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get twoStepOffBody => 'Та нөөц кодоор нэвтэрсэн тул хоёр алхамт баталгаажуулалтыг унтраасан. Бүртгэлээ хамгаалахын тулд энэ утсан дээр дахин тохируулна уу.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years жил',
-      one: '+$years жил',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Огноо бичих';
-
-  @override
-  String get expiryTypeTitle => 'Дуусах огноог бичнэ үү';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Жишээ нь $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Тэр огноо зөв биш бололтой. $example гэж оролдоно уу.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Энэ огноо өнгөрсөн тул бичлэг хугацаа нь дууссан гэж хадгалагдана.';
 
   @override
   String get expiryEndsToday => 'Үүний хугацаа өнөөдөр дуусна.';
-
-  @override
-  String get saveAndAddAnother => 'Хадгалаад өөр нэгийг нэмэх';
-
-  @override
-  String get quickStartTitle => 'Хурдан эхлэл';
 
   @override
   String categoryCreatedAddGroup(String name) {

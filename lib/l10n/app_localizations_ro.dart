@@ -5118,6 +5118,47 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Folosește cel puțin o literă sau o cifră.';
+
+  @override
+  String get recordSaveFailed => 'Nu s-a putut salva. Verifică conexiunea și încearcă din nou.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Ai deja $name în $group, care expiră pe $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Am dedus această dată din documentul tău. Verifică dacă se potrivește.';
+
+  @override
+  String get expiryOtherDates => 'Alte date de pe acest document';
+
+  @override
+  String get scanPhotoSaved => 'Fotografia ta a fost salvată cu această înregistrare.';
+
+  @override
+  String get scanPhotoNotSaved => 'Fotografia ta nu a fost salvată, deoarece această înregistrare are deja numărul maxim de fotografii.';
+
+  @override
+  String get scanReadOnlineTitle => 'Citim documentul online?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefonul tău nu a putut citi sigur acest document. Vaultara poate trimite textul din fotografie la serverul său pentru a-l citi. Fotografia rămâne pe telefonul tău, iar numerele lungi sunt ascunse.';
+
+  @override
+  String get scanReadOnlineNo => 'Nu acum';
+
+  @override
+  String get scanReadOnlineYes => 'Citește';
+
+  @override
+  String get scanReadOnlineNote => 'Am citit acest document online.';
+
+  @override
+  String get scanNoExpiryNote => 'Se pare că acest document nu are dată de expirare. Adaugă data pentru care vrei un memento.';
+
+  @override
   String get duplicateKeepBoth => 'Păstrează ambele';
 
   @override
@@ -8849,44 +8890,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get twoStepOffBody => 'Te-ai conectat cu un cod de rezervă, așa că verificarea în doi pași a fost dezactivată. Configureaz-o din nou pe acest telefon ca să-ți păstrezi contul protejat.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years de ani',
-      few: '+$years ani',
-      one: '+$years an',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Scrie data';
-
-  @override
-  String get expiryTypeTitle => 'Scrie data expirării';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'De exemplu $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Data nu pare corectă. Încearcă $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Această dată a trecut, așa că înregistrarea va fi salvată ca expirată.';
 
   @override
   String get expiryEndsToday => 'Expiră astăzi.';
-
-  @override
-  String get saveAndAddAnother => 'Salvează și adaugă încă unul';
-
-  @override
-  String get quickStartTitle => 'Pornire rapidă';
 
   @override
   String categoryCreatedAddGroup(String name) {

@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "ပြင်ရန်",
   "duplicateRecordTitle": "ထည့်ပြီးသား",
   "duplicateRecordBody": "{date} တွင် သက်တမ်းကုန်မည့် {name} ကို သင့်တွင် ရှိပြီးသားဖြစ်သည်။",
+  "recordNameNeedsLetter": "အနည်းဆုံး စာလုံး သို့မဟုတ် ဂဏန်းတစ်ခု သုံးပါ။",
+  "recordSaveFailed": "သိမ်းဆည်း၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်ကြိုးစားပါ။",
+  "duplicateRecordElsewhere": "{group} တွင် {name} ရှိပြီးသားဖြစ်ပြီး {date} တွင် သက်တမ်းကုန်မည်။",
+  "expiryGuessedHint": "ဤရက်စွဲကို သင့်စာရွက်စာတမ်းမှ ခန့်မှန်းထားပါသည်။ ကိုက်ညီမှု ရှိမရှိ စစ်ဆေးပါ။",
+  "expiryOtherDates": "ဤစာရွက်စာတမ်းပေါ်ရှိ အခြားရက်စွဲများ",
+  "scanPhotoSaved": "သင့်ဓာတ်ပုံကို ဤမှတ်တမ်းနှင့်အတူ သိမ်းဆည်းပြီးပါပြီ။",
+  "scanPhotoNotSaved": "ဤမှတ်တမ်းတွင် ခွင့်ပြုထားသော ဓာတ်ပုံအများဆုံး ရှိပြီးဖြစ်၍ သင့်ဓာတ်ပုံကို မသိမ်းဆည်းပါ။",
+  "scanReadOnlineTitle": "ဤစာရွက်စာတမ်းကို အွန်လိုင်းတွင် ဖတ်မလား။",
+  "scanReadOnlineBody": "သင့်ဖုန်းသည် ဤစာရွက်စာတမ်းကို သေချာစွာ မဖတ်နိုင်ပါ။ Vaultara သည် ဖတ်ရန် ဓာတ်ပုံမှ စာသားကို ၎င်း၏ ဆာဗာသို့ ပို့နိုင်သည်။ ဓာတ်ပုံသည် သင့်ဖုန်းတွင်သာ ရှိနေပြီး နံပါတ်ရှည်များကို ဖုံးကွယ်ထားမည်။",
+  "scanReadOnlineNo": "ယခု မဟုတ်",
+  "scanReadOnlineYes": "ဖတ်ရန်",
+  "scanReadOnlineNote": "ဤစာရွက်စာတမ်းကို အွန်လိုင်းတွင် ဖတ်ပြီးပါပြီ။",
+  "scanNoExpiryNote": "ဤစာရွက်စာတမ်းတွင် သက်တမ်းကုန်ရက် မရှိပုံရသည်။ သတိပေးစေလိုသော ရက်စွဲကို ထည့်ပါ။",
   "duplicateKeepBoth": "နှစ်ခုလုံး ထားရန်",
   "duplicateUpdateExisting": "ရှိပြီးသားကို ပြင်ရန်",
   "editorDefaultsHint": "{group} အတွက် ပုံမှန်ဆက်တင်များကို ဖြည့်ထားသည်။ နောက်ထပ် အသေးစိတ် တွင် ပြောင်းနိုင်သည်။",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "ယခု ကျော်ရန်",
   "twoStepOffTitle": "နှစ်ဆင့်အတည်ပြုခြင်း ပိတ်ထားပါသည်",
   "twoStepOffBody": "အရန်ကုဒ်ဖြင့် ဝင်ရောက်ခဲ့သဖြင့် နှစ်ဆင့်အတည်ပြုခြင်းကို ပိတ်လိုက်ပါသည်။ အကောင့်ကို ကာကွယ်ထားရန် ဤဖုန်းတွင် ပြန်လည်သတ်မှတ်ပါ။",
-  "expiryPlusYears": "{years, plural, other{+{years} နှစ်}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "ရက်စွဲ ရိုက်ထည့်ရန်",
-  "expiryTypeTitle": "သက်တမ်းကုန်ရက်ကို ရိုက်ထည့်ပါ",
-  "expiryTypeHint": "ဥပမာ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ထိုရက်စွဲ မှန်ပုံမရပါ။ {example} ကို စမ်းကြည့်ပါ။",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ဤရက်စွဲ ကျော်လွန်သွားပြီဖြစ်၍ မှတ်တမ်းကို သက်တမ်းကုန်အဖြစ် သိမ်းပါမည်။",
   "expiryEndsToday": "ဤအရာသည် ယနေ့ သက်တမ်းကုန်ပါသည်။",
-  "saveAndAddAnother": "သိမ်းပြီး နောက်တစ်ခု ထည့်ရန်",
-  "quickStartTitle": "အမြန်စတင်ရန်",
   "categoryCreatedAddGroup": "{name} ကို ပြုလုပ်ပြီးပါပြီ။ အုပ်စုတစ်ခု ထည့်မလား။",
   "@categoryCreatedAddGroup": {
     "placeholders": {

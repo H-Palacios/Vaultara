@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Bijwerken",
   "duplicateRecordTitle": "Al toegevoegd",
   "duplicateRecordBody": "Je hebt {name} al, verloopt op {date}.",
+  "recordNameNeedsLetter": "Gebruik minstens één letter of cijfer.",
+  "recordSaveFailed": "Opslaan is mislukt. Controleer je verbinding en probeer het opnieuw.",
+  "duplicateRecordElsewhere": "Je hebt al {name} in {group}, verloopt op {date}.",
+  "expiryGuessedHint": "Deze datum hebben we uit je document geraden. Controleer of hij klopt.",
+  "expiryOtherDates": "Andere datums op dit document",
+  "scanPhotoSaved": "Je foto is bij dit item opgeslagen.",
+  "scanPhotoNotSaved": "Je foto is niet opgeslagen, omdat dit item al het maximale aantal foto's heeft.",
+  "scanReadOnlineTitle": "Dit document online laten lezen?",
+  "scanReadOnlineBody": "Je telefoon kon dit document niet met zekerheid lezen. Vaultara kan de tekst van de foto naar zijn server sturen om die te lezen. De foto blijft op je telefoon en lange nummers worden verborgen.",
+  "scanReadOnlineNo": "Niet nu",
+  "scanReadOnlineYes": "Lezen",
+  "scanReadOnlineNote": "We hebben dit document online gelezen.",
+  "scanNoExpiryNote": "Dit document lijkt geen vervaldatum te hebben. Voeg de datum toe waaraan je herinnerd wilt worden.",
   "duplicateKeepBoth": "Beide bewaren",
   "duplicateUpdateExisting": "Bestaande bijwerken",
   "editorDefaultsHint": "Gebruikelijke instellingen voor {group} ingevuld. Je kunt ze wijzigen bij Meer details.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Nu overslaan",
   "twoStepOffTitle": "Verificatie in twee stappen staat uit",
   "twoStepOffBody": "Je hebt ingelogd met een back-upcode, daarom is verificatie in twee stappen uitgezet. Stel het opnieuw in op deze telefoon om je account beschermd te houden.",
-  "expiryPlusYears": "{years, plural, =1{+{years} jaar} other{+{years} jaar}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Datum typen",
-  "expiryTypeTitle": "Typ de vervaldatum",
-  "expiryTypeHint": "Bijvoorbeeld {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Die datum lijkt niet te kloppen. Probeer {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Deze datum is al voorbij, dus het item wordt als verlopen opgeslagen.",
   "expiryEndsToday": "Dit verloopt vandaag.",
-  "saveAndAddAnother": "Opslaan en nog een toevoegen",
-  "quickStartTitle": "Snel starten",
   "categoryCreatedAddGroup": "{name} aangemaakt. Een groep toevoegen?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

@@ -5111,6 +5111,47 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Izmantojiet vismaz vienu burtu vai ciparu.';
+
+  @override
+  String get recordSaveFailed => 'Neizdevās saglabāt. Pārbaudiet savienojumu un mēģiniet vēlreiz.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Jums jau ir $name grupā $group, beidzas $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Šo datumu uzminējām no jūsu dokumenta. Pārbaudiet, vai tas atbilst.';
+
+  @override
+  String get expiryOtherDates => 'Citi datumi šajā dokumentā';
+
+  @override
+  String get scanPhotoSaved => 'Jūsu fotoattēls saglabāts kopā ar šo ierakstu.';
+
+  @override
+  String get scanPhotoNotSaved => 'Jūsu fotoattēls netika saglabāts, jo šim ierakstam jau ir maksimālais atļautais fotoattēlu skaits.';
+
+  @override
+  String get scanReadOnlineTitle => 'Vai nolasīt šo dokumentu tiešsaistē?';
+
+  @override
+  String get scanReadOnlineBody => 'Jūsu tālrunis nevarēja droši nolasīt šo dokumentu. Vaultara var nosūtīt fotoattēla tekstu uz savu serveri, lai to nolasītu. Fotoattēls paliek jūsu tālrunī, un garie numuri tiek paslēpti.';
+
+  @override
+  String get scanReadOnlineNo => 'Ne tagad';
+
+  @override
+  String get scanReadOnlineYes => 'Nolasīt';
+
+  @override
+  String get scanReadOnlineNote => 'Šo dokumentu nolasījām tiešsaistē.';
+
+  @override
+  String get scanNoExpiryNote => 'Šķiet, ka šim dokumentam nav derīguma beigu datuma. Pievienojiet datumu, par kuru vēlaties atgādinājumu.';
+
+  @override
   String get duplicateKeepBoth => 'Paturēt abus';
 
   @override
@@ -8837,44 +8878,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get twoStepOffBody => 'Jūs pierakstījāties ar rezerves kodu, tāpēc divpakāpju verifikācija tika izslēgta. Iestatiet to no jauna šajā tālrunī, lai konts paliktu aizsargāts.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years gadi',
-      one: '+$years gads',
-      zero: '+$years gadi',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Ierakstīt datumu';
-
-  @override
-  String get expiryTypeTitle => 'Ierakstiet derīguma beigu datumu';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Piemēram, $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Šis datums neizskatās pareizs. Mēģiniet $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Šis datums ir pagājis, tāpēc ieraksts tiks saglabāts kā beidzies.';
 
   @override
   String get expiryEndsToday => 'Tas beidzas šodien.';
-
-  @override
-  String get saveAndAddAnother => 'Saglabāt un pievienot vēl vienu';
-
-  @override
-  String get quickStartTitle => 'Ātrais sākums';
 
   @override
   String categoryCreatedAddGroup(String name) {

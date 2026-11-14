@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Ṣe àtúnṣe",
   "duplicateRecordTitle": "A ti fi kún un tẹ́lẹ̀",
   "duplicateRecordBody": "O ti ní {name} tó ń parí ní {date}.",
+  "recordNameNeedsLetter": "Lo ó kéré tán lẹ́tà kan tàbí nọ́ńbà kan.",
+  "recordSaveFailed": "A kò lè fi pamọ́. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú.",
+  "duplicateRecordElsewhere": "O ti ní {name} nínú {group}, yóò parí ní {date}.",
+  "expiryGuessedHint": "A fojú díwọ̀n ọjọ́ yìí láti inú ìwé rẹ. Ṣàyẹ̀wò pé ó bá a mu.",
+  "expiryOtherDates": "Àwọn ọjọ́ mìíràn lórí ìwé yìí",
+  "scanPhotoSaved": "A ti fi fọ́tò rẹ pamọ́ pẹ̀lú àkọsílẹ̀ yìí.",
+  "scanPhotoNotSaved": "A kò fi fọ́tò rẹ pamọ́ nítorí àkọsílẹ̀ yìí ti ní iye fọ́tò tó pọ̀ jùlọ tí a gbà láàyè.",
+  "scanReadOnlineTitle": "Ka ìwé yìí lórí ayélujára?",
+  "scanReadOnlineBody": "Fóònù rẹ kò lè ka ìwé yìí dájúdájú. Vaultara lè fi ọ̀rọ̀ inú fọ́tò ránṣẹ́ sí sáfà rẹ̀ láti kà á. Fọ́tò náà máa wà lórí fóònù rẹ, a sì máa fi àwọn nọ́ńbà gígùn pamọ́.",
+  "scanReadOnlineNo": "Kì í ṣe báyìí",
+  "scanReadOnlineYes": "Kà á",
+  "scanReadOnlineNote": "A ti ka ìwé yìí lórí ayélujára.",
+  "scanNoExpiryNote": "Ó dà bí ẹni pé ìwé yìí kò ní ọjọ́ ìparí. Fi ọjọ́ tí o fẹ́ kí a rán ọ létí kún un.",
   "duplicateKeepBoth": "Pa méjèèjì mọ́",
   "duplicateUpdateExisting": "Ṣe àtúnṣe èyí tó wà",
   "editorDefaultsHint": "A ti kún àwọn ètò àdáyébá fún {group}. O lè yí wọn padà nínú Àlàyé síwájú sí i.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Fò ó fún báyìí",
   "twoStepOffTitle": "Ìjẹ́rìísí ìgbésẹ̀-méjì ti wà ní pípa",
   "twoStepOffBody": "O wọlé pẹ̀lú kóòdù àfipamọ́, nítorí náà a pa ìjẹ́rìísí ìgbésẹ̀-méjì. Tún un ṣètò lórí fóònù yìí kí àkáǹtì rẹ lè wà ní ààbò.",
-  "expiryPlusYears": "{years, plural, =1{+ọdún {years}} other{+ọdún {years}}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Tẹ ọjọ́",
-  "expiryTypeTitle": "Tẹ ọjọ́ ìparí",
-  "expiryTypeHint": "Fún àpẹẹrẹ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Ọjọ́ yẹn kò dàbí pé ó tọ̀nà. Gbìyànjú {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Ọjọ́ yìí ti kọjá, nítorí náà a ó fi àkọsílẹ̀ náà pamọ́ bí èyí tó ti parí.",
   "expiryEndsToday": "Èyí ń parí lónìí.",
-  "saveAndAddAnother": "Fi pamọ́ kí o sì fi òmíràn kún un",
-  "quickStartTitle": "Ìbẹ̀rẹ̀ kíákíá",
   "categoryCreatedAddGroup": "A ti ṣe {name}. Fi ẹgbẹ́ kún un?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

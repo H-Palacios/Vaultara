@@ -5211,6 +5211,47 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'استخدم حرفًا أو رقمًا واحدًا على الأقل.';
+
+  @override
+  String get recordSaveFailed => 'تعذّر الحفظ. تحقّق من اتصالك وحاول مرة أخرى.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'لديك بالفعل $name في $group، وينتهي في $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'خمّنّا هذا التاريخ من مستندك. تحقّق من أنه مطابق.';
+
+  @override
+  String get expiryOtherDates => 'تواريخ أخرى في هذا المستند';
+
+  @override
+  String get scanPhotoSaved => 'تم حفظ صورتك مع هذا السجل.';
+
+  @override
+  String get scanPhotoNotSaved => 'لم تُحفظ صورتك لأن هذا السجل يحتوي بالفعل على الحد الأقصى المسموح به من الصور.';
+
+  @override
+  String get scanReadOnlineTitle => 'قراءة هذا المستند عبر الإنترنت؟';
+
+  @override
+  String get scanReadOnlineBody => 'لم يتمكن هاتفك من قراءة هذا المستند بثقة. يمكن لـ Vaultara إرسال النص الموجود في الصورة إلى خادمه لقراءته. تبقى الصورة على هاتفك، وتُخفى الأرقام الطويلة.';
+
+  @override
+  String get scanReadOnlineNo => 'ليس الآن';
+
+  @override
+  String get scanReadOnlineYes => 'اقرأه';
+
+  @override
+  String get scanReadOnlineNote => 'قرأنا هذا المستند عبر الإنترنت.';
+
+  @override
+  String get scanNoExpiryNote => 'لا يبدو أن لهذا المستند تاريخ انتهاء. أضف التاريخ الذي تريد أن نذكّرك به.';
+
+  @override
   String get duplicateKeepBoth => 'الاحتفاظ بكليهما';
 
   @override
@@ -9006,47 +9047,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get twoStepOffBody => 'سجّلت الدخول برمز احتياطي، لذلك تم إيقاف التحقق بخطوتين. أعد إعداده على هذا الهاتف ليبقى حسابك محميًا.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years سنة',
-      many: '+$years سنة',
-      few: '+$years سنوات',
-      two: '+$years سنتان',
-      one: '+$years سنة',
-      zero: '+$years سنة',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'كتابة التاريخ';
-
-  @override
-  String get expiryTypeTitle => 'اكتب تاريخ الانتهاء';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'مثال: $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'لا يبدو هذا التاريخ صحيحًا. جرّب $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'هذا التاريخ قد مضى، لذلك سيُحفظ السجل على أنه منتهٍ.';
 
   @override
   String get expiryEndsToday => 'تنتهي صلاحيته اليوم.';
-
-  @override
-  String get saveAndAddAnother => 'حفظ وإضافة آخر';
-
-  @override
-  String get quickStartTitle => 'بداية سريعة';
 
   @override
   String categoryCreatedAddGroup(String name) {

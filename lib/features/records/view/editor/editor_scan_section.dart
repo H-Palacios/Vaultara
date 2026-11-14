@@ -9,6 +9,9 @@ class EditorScanSection extends StatelessWidget {
   final bool busy;
   final ScanParseResult? banner;
   final bool failed;
+  final ScanPhotoNote photo;
+  final bool readOnline;
+  final bool noExpiry;
   final VoidCallback onScan;
   final VoidCallback onDismissBanner;
   final Widget? extraAction;
@@ -20,6 +23,9 @@ class EditorScanSection extends StatelessWidget {
     required this.busy,
     required this.banner,
     required this.failed,
+    this.photo = ScanPhotoNote.none,
+    this.readOnline = false,
+    this.noExpiry = false,
     required this.onScan,
     required this.onDismissBanner,
     this.extraAction,
@@ -50,6 +56,9 @@ class EditorScanSection extends StatelessWidget {
           ScanFoundBanner(
             result: shownBanner,
             failed: failed,
+            photo: photo,
+            readOnline: readOnline,
+            noExpiry: noExpiry,
             onDismiss: onDismissBanner,
           ),
           const SizedBox(height: 12),

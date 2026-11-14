@@ -5063,6 +5063,47 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Fes servir almenys una lletra o un número.';
+
+  @override
+  String get recordSaveFailed => 'No s\'ha pogut desar. Comprova la connexió i torna-ho a provar.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Ja tens $name a $group, que venç el $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Hem deduït aquesta data del teu document. Comprova que coincideix.';
+
+  @override
+  String get expiryOtherDates => 'Altres dates d\'aquest document';
+
+  @override
+  String get scanPhotoSaved => 'La teva foto s\'ha desat amb aquest registre.';
+
+  @override
+  String get scanPhotoNotSaved => 'La teva foto no s\'ha desat perquè aquest registre ja té el màxim de fotos permeses.';
+
+  @override
+  String get scanReadOnlineTitle => 'Vols llegir aquest document en línia?';
+
+  @override
+  String get scanReadOnlineBody => 'El teu telèfon no ha pogut llegir aquest document amb seguretat. Vaultara pot enviar el text de la foto al seu servidor per llegir-lo. La foto es queda al teu telèfon i els números llargs s\'amaguen.';
+
+  @override
+  String get scanReadOnlineNo => 'Ara no';
+
+  @override
+  String get scanReadOnlineYes => 'Llegeix-lo';
+
+  @override
+  String get scanReadOnlineNote => 'Hem llegit aquest document en línia.';
+
+  @override
+  String get scanNoExpiryNote => 'Sembla que aquest document no té data de venciment. Afegeix la data de la qual vols un recordatori.';
+
+  @override
   String get duplicateKeepBoth => 'Conserva’ls tots dos';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get twoStepOffBody => 'Has iniciat la sessió amb un codi de seguretat, així que la verificació en dos passos s\'ha desactivat. Torna-la a configurar en aquest telèfon per mantenir el compte protegit.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years anys',
-      one: '+$years any',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Escriu la data';
-
-  @override
-  String get expiryTypeTitle => 'Escriu la data de caducitat';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Per exemple $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Aquesta data no sembla correcta. Prova $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Aquesta data ja ha passat, així que el registre es desarà com a caducat.';
 
   @override
   String get expiryEndsToday => 'Caduca avui.';
-
-  @override
-  String get saveAndAddAnother => 'Desa i afegeix-ne un altre';
-
-  @override
-  String get quickStartTitle => 'Inici ràpid';
 
   @override
   String categoryCreatedAddGroup(String name) {

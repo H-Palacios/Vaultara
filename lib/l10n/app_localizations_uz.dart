@@ -5063,6 +5063,47 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Kamida bitta harf yoki raqam ishlating.';
+
+  @override
+  String get recordSaveFailed => 'Saqlab bo‘lmadi. Ulanishni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Sizda allaqachon $group guruhida $name bor, $date kuni tugaydi.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Bu sanani hujjatingizdan taxmin qildik. Mos kelishini tekshiring.';
+
+  @override
+  String get expiryOtherDates => 'Bu hujjatdagi boshqa sanalar';
+
+  @override
+  String get scanPhotoSaved => 'Rasmingiz shu yozuv bilan saqlandi.';
+
+  @override
+  String get scanPhotoNotSaved => 'Rasmingiz saqlanmadi, chunki bu yozuvda ruxsat etilgan eng ko‘p rasm bor.';
+
+  @override
+  String get scanReadOnlineTitle => 'Bu hujjat onlayn o‘qilsinmi?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefoningiz bu hujjatni aniq o‘qiy olmadi. Vaultara rasmdagi matnni o‘qish uchun o‘z serveriga yuborishi mumkin. Rasm telefoningizda qoladi, uzun raqamlar esa yashiriladi.';
+
+  @override
+  String get scanReadOnlineNo => 'Hozir emas';
+
+  @override
+  String get scanReadOnlineYes => 'O‘qish';
+
+  @override
+  String get scanReadOnlineNote => 'Bu hujjatni onlayn o‘qidik.';
+
+  @override
+  String get scanNoExpiryNote => 'Bu hujjatda tugash sanasi yo‘qqa o‘xshaydi. Eslatma olmoqchi bo‘lgan sanani qo‘shing.';
+
+  @override
   String get duplicateKeepBoth => 'Ikkalasini saqlash';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get twoStepOffBody => 'Siz zaxira kod bilan kirdingiz, shuning uchun ikki bosqichli tasdiqlash o‘chirildi. Hisobingiz himoyalangan bo‘lishi uchun uni bu telefonda qayta sozlang.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years yil',
-      one: '+$years yil',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Sanani yozish';
-
-  @override
-  String get expiryTypeTitle => 'Amal qilish muddati tugash sanasini yozing';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Masalan $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Bu sana to‘g‘ri emasga o‘xshaydi. $example sinab ko‘ring.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Bu sana o‘tib ketgan, shuning uchun yozuv muddati o‘tgan sifatida saqlanadi.';
 
   @override
   String get expiryEndsToday => 'Buning muddati bugun tugaydi.';
-
-  @override
-  String get saveAndAddAnother => 'Saqlash va yana bittasini qo‘shish';
-
-  @override
-  String get quickStartTitle => 'Tez boshlash';
 
   @override
   String categoryCreatedAddGroup(String name) {

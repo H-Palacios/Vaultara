@@ -5063,6 +5063,47 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Erabili gutxienez letra edo zenbaki bat.';
+
+  @override
+  String get recordSaveFailed => 'Ezin izan da gorde. Egiaztatu konexioa eta saiatu berriro.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Dagoeneko baduzu $name $group taldean, $date(e)an iraungitzen da.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Data hau zure dokumentutik asmatu dugu. Egiaztatu bat datorrela.';
+
+  @override
+  String get expiryOtherDates => 'Dokumentu honetako beste datak';
+
+  @override
+  String get scanPhotoSaved => 'Zure argazkia erregistro honekin gorde da.';
+
+  @override
+  String get scanPhotoNotSaved => 'Zure argazkia ez da gorde, erregistro honek baimendutako gehieneko argazki kopurua duelako.';
+
+  @override
+  String get scanReadOnlineTitle => 'Dokumentu hau linean irakurri?';
+
+  @override
+  String get scanReadOnlineBody => 'Zure telefonoak ezin izan du dokumentu hau ziurtasunez irakurri. Vaultarak argazkiko testua bere zerbitzarira bidal dezake irakurtzeko. Argazkia zure telefonoan geratzen da, eta zenbaki luzeak ezkutatzen dira.';
+
+  @override
+  String get scanReadOnlineNo => 'Orain ez';
+
+  @override
+  String get scanReadOnlineYes => 'Irakurri';
+
+  @override
+  String get scanReadOnlineNote => 'Dokumentu hau linean irakurri dugu.';
+
+  @override
+  String get scanNoExpiryNote => 'Badirudi dokumentu honek ez duela iraungitze-datarik. Gehitu zein datatan nahi duzun gogorarazpena.';
+
+  @override
   String get duplicateKeepBoth => 'Mantendu biak';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get twoStepOffBody => 'Babeskopia-kode batekin hasi duzu saioa; beraz, bi urratseko egiaztapena desaktibatu da. Konfiguratu berriro telefono honetan kontua babestuta mantentzeko.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years urte',
-      one: '+$years urte',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Idatzi data';
-
-  @override
-  String get expiryTypeTitle => 'Idatzi iraungitze-data';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Adibidez $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Data hori ez dirudi zuzena. Probatu $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Data hori igaro da; beraz, erregistroa iraungita gisa gordeko da.';
 
   @override
   String get expiryEndsToday => 'Gaur iraungitzen da.';
-
-  @override
-  String get saveAndAddAnother => 'Gorde eta gehitu beste bat';
-
-  @override
-  String get quickStartTitle => 'Hasiera azkarra';
 
   @override
   String categoryCreatedAddGroup(String name) {

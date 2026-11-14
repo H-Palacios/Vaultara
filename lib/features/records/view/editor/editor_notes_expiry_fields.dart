@@ -50,11 +50,16 @@ class EditorExpiryField extends StatelessWidget {
   final double hintSize;
   final VoidCallback onTap;
 
+  /// The date was guessed from a photo: the outline stays highlighted until
+  /// the person picks a date themselves.
+  final bool needsCheck;
+
   const EditorExpiryField({
     super.key,
     required this.fieldKey,
     required this.controller,
     required this.errorText,
+    this.needsCheck = false,
     required this.hintSize,
     required this.onTap,
   });
@@ -63,6 +68,21 @@ class EditorExpiryField extends StatelessWidget {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
+    final decoration = AppInputDecorations.field(
+      context,
+      labelText: loc.editorExpiryDate,
+      hintText: loc.editorExpiryDateHint,
+      showLabel: controller.text.isNotEmpty,
+      errorText: errorText,
+      hintFontSize: hintSize,
+      prefixIcon: const Icon(Icons.event_rounded),
+      suffixIcon: const Icon(Icons.arrow_drop_down_rounded),
+      suffixIconColor: scheme.onSurfaceVariant,
+    );
+    final highlight = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(12),
+      borderSide: BorderSide(color: scheme.primary, width: 1.6),
+    );
 
     return Container(
       key: fieldKey,
@@ -70,17 +90,9 @@ class EditorExpiryField extends StatelessWidget {
         controller: controller,
         readOnly: true,
         onTap: onTap,
-        decoration: AppInputDecorations.field(
-          context,
-          labelText: loc.editorExpiryDate,
-          hintText: loc.editorExpiryDateHint,
-          showLabel: controller.text.isNotEmpty,
-          errorText: errorText,
-          hintFontSize: hintSize,
-          prefixIcon: const Icon(Icons.event_rounded),
-          suffixIcon: const Icon(Icons.arrow_drop_down_rounded),
-          suffixIconColor: scheme.onSurfaceVariant,
-        ),
+        decoration: needsCheck && errorText == null
+            ? decoration.copyWith(enabledBorder: highlight, border: highlight)
+            : decoration,
       ),
     );
   }

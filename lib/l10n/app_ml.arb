@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "അപ്‌ഡേറ്റ് ചെയ്യുക",
   "duplicateRecordTitle": "ഇതിനകം ചേർത്തിട്ടുണ്ട്",
   "duplicateRecordBody": "{date}-ന് കാലഹരണപ്പെടുന്ന {name} നിങ്ങൾക്ക് ഇതിനകം ഉണ്ട്.",
+  "recordNameNeedsLetter": "കുറഞ്ഞത് ഒരു അക്ഷരമോ അക്കമോ ഉപയോഗിക്കുക.",
+  "recordSaveFailed": "സംരക്ഷിക്കാനായില്ല. കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.",
+  "duplicateRecordElsewhere": "നിങ്ങൾക്ക് ഇതിനകം {group}-ൽ {name} ഉണ്ട്, {date}-ന് കാലഹരണപ്പെടും.",
+  "expiryGuessedHint": "ഈ തീയതി നിങ്ങളുടെ രേഖയിൽ നിന്ന് ഊഹിച്ചതാണ്. ശരിയാണോ എന്ന് പരിശോധിക്കുക.",
+  "expiryOtherDates": "ഈ രേഖയിലെ മറ്റ് തീയതികൾ",
+  "scanPhotoSaved": "നിങ്ങളുടെ ഫോട്ടോ ഈ റെക്കോർഡിനൊപ്പം സംരക്ഷിച്ചു.",
+  "scanPhotoNotSaved": "ഈ റെക്കോർഡിൽ അനുവദനീയമായ പരമാവധി ഫോട്ടോകൾ ഇതിനകം ഉള്ളതിനാൽ നിങ്ങളുടെ ഫോട്ടോ സംരക്ഷിച്ചില്ല.",
+  "scanReadOnlineTitle": "ഈ രേഖ ഓൺലൈനായി വായിക്കണോ?",
+  "scanReadOnlineBody": "നിങ്ങളുടെ ഫോണിന് ഈ രേഖ ഉറപ്പോടെ വായിക്കാനായില്ല. വായിക്കാനായി ഫോട്ടോയിലെ എഴുത്ത് Vaultara-ക്ക് അതിന്റെ സെർവറിലേക്ക് അയക്കാം. ഫോട്ടോ നിങ്ങളുടെ ഫോണിൽ തന്നെ ഇരിക്കും, നീണ്ട നമ്പറുകൾ മറയ്ക്കും.",
+  "scanReadOnlineNo": "ഇപ്പോൾ വേണ്ട",
+  "scanReadOnlineYes": "വായിക്കുക",
+  "scanReadOnlineNote": "ഈ രേഖ ഞങ്ങൾ ഓൺലൈനായി വായിച്ചു.",
+  "scanNoExpiryNote": "ഈ രേഖയ്ക്ക് കാലഹരണ തീയതി ഇല്ലെന്ന് തോന്നുന്നു. ഓർമ്മിപ്പിക്കേണ്ട തീയതി ചേർക്കുക.",
   "duplicateKeepBoth": "രണ്ടും നിലനിർത്തുക",
   "duplicateUpdateExisting": "നിലവിലുള്ളത് അപ്‌ഡേറ്റ് ചെയ്യുക",
   "editorDefaultsHint": "{group}-നുള്ള സാധാരണ ക്രമീകരണങ്ങൾ പൂരിപ്പിച്ചു. കൂടുതൽ വിവരങ്ങളിൽ നിങ്ങൾക്ക് അവ മാറ്റാം.",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "ഇപ്പോൾ ഒഴിവാക്കുക",
   "twoStepOffTitle": "രണ്ട്-ഘട്ട പരിശോധന ഓഫാണ്",
   "twoStepOffBody": "നിങ്ങൾ ബാക്കപ്പ് കോഡ് ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്തതിനാൽ രണ്ട്-ഘട്ട പരിശോധന ഓഫാക്കി. അക്കൗണ്ട് സുരക്ഷിതമായി നിലനിർത്താൻ ഈ ഫോണിൽ വീണ്ടും സജ്ജീകരിക്കുക.",
-  "expiryPlusYears": "{years, plural, =1{+{years} വർഷം} other{+{years} വർഷം}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "തീയതി ടൈപ്പ് ചെയ്യുക",
-  "expiryTypeTitle": "കാലാവധി തീരുന്ന തീയതി ടൈപ്പ് ചെയ്യുക",
-  "expiryTypeHint": "ഉദാഹരണത്തിന് {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ആ തീയതി ശരിയായി തോന്നുന്നില്ല. {example} ശ്രമിക്കുക.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ഈ തീയതി കഴിഞ്ഞു, അതിനാൽ റെക്കോർഡ് കാലഹരണപ്പെട്ടതായി സംരക്ഷിക്കും.",
   "expiryEndsToday": "ഇത് ഇന്ന് കാലഹരണപ്പെടുന്നു.",
-  "saveAndAddAnother": "സംരക്ഷിച്ച് മറ്റൊന്ന് ചേർക്കുക",
-  "quickStartTitle": "വേഗത്തിൽ തുടങ്ങാം",
   "categoryCreatedAddGroup": "{name} ഉണ്ടാക്കി. ഇതിൽ ഒരു ഗ്രൂപ്പ് ചേർക്കണോ?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

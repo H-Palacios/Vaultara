@@ -5063,6 +5063,47 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Gebruik minstens een letter of syfer.';
+
+  @override
+  String get recordSaveFailed => 'Kon nie stoor nie. Kontroleer jou verbinding en probeer weer.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Jy het reeds $name in $group, wat op $date verval.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Ons het hierdie datum uit jou dokument geraai. Kontroleer dat dit klop.';
+
+  @override
+  String get expiryOtherDates => 'Ander datums op hierdie dokument';
+
+  @override
+  String get scanPhotoSaved => 'Jou foto is saam met hierdie inskrywing gestoor.';
+
+  @override
+  String get scanPhotoNotSaved => 'Jou foto is nie gestoor nie, want hierdie inskrywing het reeds die meeste foto\'s wat toegelaat word.';
+
+  @override
+  String get scanReadOnlineTitle => 'Lees hierdie dokument aanlyn?';
+
+  @override
+  String get scanReadOnlineBody => 'Jou foon kon nie hierdie dokument met sekerheid lees nie. Vaultara kan die teks van die foto na sy bediener stuur om dit te lees. Die foto bly op jou foon, en lang nommers word versteek.';
+
+  @override
+  String get scanReadOnlineNo => 'Nie nou nie';
+
+  @override
+  String get scanReadOnlineYes => 'Lees dit';
+
+  @override
+  String get scanReadOnlineNote => 'Ons het hierdie dokument aanlyn gelees.';
+
+  @override
+  String get scanNoExpiryNote => 'Dit lyk nie of hierdie dokument \'n vervaldatum het nie. Voeg die datum by waaraan jy herinner wil word.';
+
+  @override
   String get duplicateKeepBoth => 'Hou albei';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get twoStepOffBody => 'Jy het met \'n rugsteunkode aangemeld, dus is tweestapverifikasie afgeskakel. Stel dit weer op hierdie foon op om jou rekening beskerm te hou.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years jaar',
-      one: '+$years jaar',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Tik datum';
-
-  @override
-  String get expiryTypeTitle => 'Tik die vervaldatum';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Byvoorbeeld $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Daardie datum lyk nie reg nie. Probeer $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Hierdie datum is verby, dus sal die rekord as verval gestoor word.';
 
   @override
   String get expiryEndsToday => 'Dit verval vandag.';
-
-  @override
-  String get saveAndAddAnother => 'Stoor en voeg nog een by';
-
-  @override
-  String get quickStartTitle => 'Vinnige begin';
 
   @override
   String categoryCreatedAddGroup(String name) {

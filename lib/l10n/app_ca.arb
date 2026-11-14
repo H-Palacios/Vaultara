@@ -1694,6 +1694,19 @@
   "scanUpdateExisting": "Actualitza",
   "duplicateRecordTitle": "Ja afegit",
   "duplicateRecordBody": "Ja tens {name} que caduca el {date}.",
+  "recordNameNeedsLetter": "Fes servir almenys una lletra o un número.",
+  "recordSaveFailed": "No s'ha pogut desar. Comprova la connexió i torna-ho a provar.",
+  "duplicateRecordElsewhere": "Ja tens {name} a {group}, que venç el {date}.",
+  "expiryGuessedHint": "Hem deduït aquesta data del teu document. Comprova que coincideix.",
+  "expiryOtherDates": "Altres dates d'aquest document",
+  "scanPhotoSaved": "La teva foto s'ha desat amb aquest registre.",
+  "scanPhotoNotSaved": "La teva foto no s'ha desat perquè aquest registre ja té el màxim de fotos permeses.",
+  "scanReadOnlineTitle": "Vols llegir aquest document en línia?",
+  "scanReadOnlineBody": "El teu telèfon no ha pogut llegir aquest document amb seguretat. Vaultara pot enviar el text de la foto al seu servidor per llegir-lo. La foto es queda al teu telèfon i els números llargs s'amaguen.",
+  "scanReadOnlineNo": "Ara no",
+  "scanReadOnlineYes": "Llegeix-lo",
+  "scanReadOnlineNote": "Hem llegit aquest document en línia.",
+  "scanNoExpiryNote": "Sembla que aquest document no té data de venciment. Afegeix la data de la qual vols un recordatori.",
   "duplicateKeepBoth": "Conserva’ls tots dos",
   "duplicateUpdateExisting": "Actualitza l’existent",
   "editorDefaultsHint": "S’ha omplert amb la configuració habitual per a {group}. Pots canviar-la a Més detalls.",
@@ -3241,36 +3254,8 @@
   "twoStepSkipForNow": "Omet per ara",
   "twoStepOffTitle": "La verificació en dos passos està desactivada",
   "twoStepOffBody": "Has iniciat la sessió amb un codi de seguretat, així que la verificació en dos passos s'ha desactivat. Torna-la a configurar en aquest telèfon per mantenir el compte protegit.",
-  "expiryPlusYears": "{years, plural, =1{+{years} any} other{+{years} anys}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Escriu la data",
-  "expiryTypeTitle": "Escriu la data de caducitat",
-  "expiryTypeHint": "Per exemple {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Aquesta data no sembla correcta. Prova {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Aquesta data ja ha passat, així que el registre es desarà com a caducat.",
   "expiryEndsToday": "Caduca avui.",
-  "saveAndAddAnother": "Desa i afegeix-ne un altre",
-  "quickStartTitle": "Inici ràpid",
   "categoryCreatedAddGroup": "S'ha creat {name}. Vols afegir-hi un grup?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

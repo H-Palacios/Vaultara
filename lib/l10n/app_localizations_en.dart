@@ -5078,6 +5078,47 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Use at least one letter or number.';
+
+  @override
+  String get recordSaveFailed => 'Couldn\'t save. Check your connection and try again.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'You already have $name in $group, expiring $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'We guessed this date from your document. Check that it matches.';
+
+  @override
+  String get expiryOtherDates => 'Other dates on this document';
+
+  @override
+  String get scanPhotoSaved => 'Your photo is saved with this record.';
+
+  @override
+  String get scanPhotoNotSaved => 'Your photo wasn\'t saved because this record already has the most photos allowed.';
+
+  @override
+  String get scanReadOnlineTitle => 'Read this document online?';
+
+  @override
+  String get scanReadOnlineBody => 'Your phone couldn\'t read this document with certainty. Vaultara can send the text from the photo to its server to read it. The photo stays on your phone, and long numbers are hidden.';
+
+  @override
+  String get scanReadOnlineNo => 'Not now';
+
+  @override
+  String get scanReadOnlineYes => 'Read it';
+
+  @override
+  String get scanReadOnlineNote => 'We read this document online.';
+
+  @override
+  String get scanNoExpiryNote => 'This document doesn\'t seem to have an expiry date. Add the date you want to be reminded about.';
+
+  @override
   String get duplicateKeepBoth => 'Keep both';
 
   @override
@@ -8786,43 +8827,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get twoStepOffBody => 'You signed in with a backup code, so two-step verification was turned off. Set it up again on this phone to keep your account protected.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years years',
-      one: '+$years year',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Type date';
-
-  @override
-  String get expiryTypeTitle => 'Type the expiry date';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'For example $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'That date doesn\'t look right. Try $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'This date has passed, so the record will be saved as expired.';
 
   @override
   String get expiryEndsToday => 'This expires today.';
-
-  @override
-  String get saveAndAddAnother => 'Save and add another';
-
-  @override
-  String get quickStartTitle => 'Quick start';
 
   @override
   String categoryCreatedAddGroup(String name) {

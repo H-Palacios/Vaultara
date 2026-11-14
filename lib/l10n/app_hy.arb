@@ -1677,6 +1677,19 @@
   "scanUpdateExisting": "Թարմացնել",
   "duplicateRecordTitle": "Արդեն ավելացված է",
   "duplicateRecordBody": "Դուք արդեն ունեք {name}, որի ժամկետը լրանում է {date}։",
+  "recordNameNeedsLetter": "Օգտագործեք առնվազն մեկ տառ կամ թիվ։",
+  "recordSaveFailed": "Չհաջողվեց պահել։ Ստուգեք կապը և նորից փորձեք։",
+  "duplicateRecordElsewhere": "Դուք արդեն ունեք {name} {group}-ում, ժամկետը լրանում է {date}։",
+  "expiryGuessedHint": "Այս ամսաթիվը կռահեցինք ձեր փաստաթղթից։ Ստուգեք, որ համընկնում է։",
+  "expiryOtherDates": "Այս փաստաթղթի այլ ամսաթվեր",
+  "scanPhotoSaved": "Ձեր լուսանկարը պահվել է այս գրառման հետ։",
+  "scanPhotoNotSaved": "Ձեր լուսանկարը չի պահվել, քանի որ այս գրառումն արդեն ունի թույլատրված առավելագույն լուսանկարները։",
+  "scanReadOnlineTitle": "Կարդա՞լ այս փաստաթուղթը առցանց։",
+  "scanReadOnlineBody": "Ձեր հեռախոսը չկարողացավ վստահորեն կարդալ այս փաստաթուղթը։ Vaultara-ն կարող է լուսանկարի տեքստն ուղարկել իր սերվերին՝ կարդալու համար։ Լուսանկարը մնում է ձեր հեռախոսում, իսկ երկար համարները թաքցվում են։",
+  "scanReadOnlineNo": "Ոչ հիմա",
+  "scanReadOnlineYes": "Կարդալ",
+  "scanReadOnlineNote": "Այս փաստաթուղթը կարդացինք առցանց։",
+  "scanNoExpiryNote": "Կարծես այս փաստաթուղթը ժամկետի ավարտի ամսաթիվ չունի։ Ավելացրեք այն ամսաթիվը, որի մասին ուզում եք հիշեցում։",
   "duplicateKeepBoth": "Պահել երկուսն էլ",
   "duplicateUpdateExisting": "Թարմացնել առկան",
   "editorDefaultsHint": "{group}-ի համար լրացվել են սովորական կարգավորումները։ Դրանք կարող եք փոխել Լրացուցիչ մանրամասներում։",
@@ -3224,36 +3237,8 @@
   "twoStepSkipForNow": "Բաց թողնել հիմա",
   "twoStepOffTitle": "Երկքայլ հաստատումն անջատված է",
   "twoStepOffBody": "Դուք մուտք եք գործել պահուստային կոդով, ուստի երկքայլ հաստատումն անջատվել է։ Նորից կարգավորեք այն այս հեռախոսում՝ հաշիվը պաշտպանված պահելու համար։",
-  "expiryPlusYears": "{years, plural, one{+{years} տարի} other{+{years} տարի}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Գրել ամսաթիվը",
-  "expiryTypeTitle": "Գրեք ժամկետի ավարտի ամսաթիվը",
-  "expiryTypeHint": "Օրինակ՝ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Այդ ամսաթիվը ճիշտ չի թվում։ Փորձեք {example}։",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Այս ամսաթիվն անցել է, ուստի գրառումը կպահվի որպես ժամկետանց։",
   "expiryEndsToday": "Այն լրանում է այսօր։",
-  "saveAndAddAnother": "Պահել և ավելացնել ևս մեկը",
-  "quickStartTitle": "Արագ սկիզբ",
   "categoryCreatedAddGroup": "{name}-ը ստեղծվեց։ Ավելացնե՞լ խումբ։",
   "@categoryCreatedAddGroup": {
     "placeholders": {

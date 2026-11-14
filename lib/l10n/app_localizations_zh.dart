@@ -5024,6 +5024,47 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => '请至少使用一个字母或数字。';
+
+  @override
+  String get recordSaveFailed => '无法保存。请检查网络连接后重试。';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '你在$group中已有$name，将于$date到期。';
+  }
+
+  @override
+  String get expiryGuessedHint => '这个日期是根据你的文件推测的。请核对是否正确。';
+
+  @override
+  String get expiryOtherDates => '此文件上的其他日期';
+
+  @override
+  String get scanPhotoSaved => '你的照片已随此记录保存。';
+
+  @override
+  String get scanPhotoNotSaved => '此记录的照片已达上限，因此你的照片未保存。';
+
+  @override
+  String get scanReadOnlineTitle => '要在线读取此文件吗？';
+
+  @override
+  String get scanReadOnlineBody => '你的手机无法准确读取此文件。Vaultara 可以将照片中的文字发送到服务器读取。照片会留在你的手机上，较长的号码会被隐藏。';
+
+  @override
+  String get scanReadOnlineNo => '以后再说';
+
+  @override
+  String get scanReadOnlineYes => '读取';
+
+  @override
+  String get scanReadOnlineNote => '我们已在线读取此文件。';
+
+  @override
+  String get scanNoExpiryNote => '此文件似乎没有到期日期。请添加你希望收到提醒的日期。';
+
+  @override
   String get duplicateKeepBoth => '都保留';
 
   @override
@@ -8705,42 +8746,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get twoStepOffBody => '你使用备用码登录，因此两步验证已关闭。请在这部手机上重新设置，以保护你的账户。';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years 年',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => '输入日期';
-
-  @override
-  String get expiryTypeTitle => '输入到期日期';
-
-  @override
-  String expiryTypeHint(String example) {
-    return '例如 $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return '该日期似乎不正确。请试试 $example。';
-  }
-
-  @override
   String get expiryAlreadyPassed => '该日期已过，因此记录将保存为已过期。';
 
   @override
   String get expiryEndsToday => '今天到期。';
-
-  @override
-  String get saveAndAddAnother => '保存并继续添加';
-
-  @override
-  String get quickStartTitle => '快速开始';
 
   @override
   String categoryCreatedAddGroup(String name) {
@@ -13984,6 +13993,47 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
+  String get recordNameNeedsLetter => '请至少使用一个字母或数字。';
+
+  @override
+  String get recordSaveFailed => '无法保存。请检查网络连接后重试。';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '你在$group中已有$name，将于$date到期。';
+  }
+
+  @override
+  String get expiryGuessedHint => '这个日期是根据你的文件推测的。请核对是否正确。';
+
+  @override
+  String get expiryOtherDates => '此文件上的其他日期';
+
+  @override
+  String get scanPhotoSaved => '你的照片已随此记录保存。';
+
+  @override
+  String get scanPhotoNotSaved => '此记录的照片已达上限，因此你的照片未保存。';
+
+  @override
+  String get scanReadOnlineTitle => '要在线读取此文件吗？';
+
+  @override
+  String get scanReadOnlineBody => '你的手机无法准确读取此文件。Vaultara 可以将照片中的文字发送到服务器读取。照片会留在你的手机上，较长的号码会被隐藏。';
+
+  @override
+  String get scanReadOnlineNo => '以后再说';
+
+  @override
+  String get scanReadOnlineYes => '读取';
+
+  @override
+  String get scanReadOnlineNote => '我们已在线读取此文件。';
+
+  @override
+  String get scanNoExpiryNote => '此文件似乎没有到期日期。请添加你希望收到提醒的日期。';
+
+  @override
   String get duplicateKeepBoth => '两者都保留';
 
   @override
@@ -17665,42 +17715,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get twoStepOffBody => '你使用备用码登录，因此两步验证已关闭。请在这部手机上重新设置，以保护你的账户。';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years 年',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => '输入日期';
-
-  @override
-  String get expiryTypeTitle => '输入到期日期';
-
-  @override
-  String expiryTypeHint(String example) {
-    return '例如 $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return '该日期似乎不正确。请试试 $example。';
-  }
-
-  @override
   String get expiryAlreadyPassed => '该日期已过，因此记录将保存为已过期。';
 
   @override
   String get expiryEndsToday => '今天到期。';
-
-  @override
-  String get saveAndAddAnother => '保存并继续添加';
-
-  @override
-  String get quickStartTitle => '快速开始';
 
   @override
   String categoryCreatedAddGroup(String name) {
@@ -22944,6 +22962,47 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
+  String get recordNameNeedsLetter => '請至少使用一個字母或數字。';
+
+  @override
+  String get recordSaveFailed => '無法儲存。請檢查網路連線後再試一次。';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '你在$group中已有$name，將於$date到期。';
+  }
+
+  @override
+  String get expiryGuessedHint => '這個日期是根據你的文件推測的。請核對是否正確。';
+
+  @override
+  String get expiryOtherDates => '此文件上的其他日期';
+
+  @override
+  String get scanPhotoSaved => '你的照片已隨此記錄儲存。';
+
+  @override
+  String get scanPhotoNotSaved => '此記錄的照片已達上限，因此你的照片未儲存。';
+
+  @override
+  String get scanReadOnlineTitle => '要在線上讀取此文件嗎？';
+
+  @override
+  String get scanReadOnlineBody => '你的手機無法準確讀取此文件。Vaultara 可以將照片中的文字傳送到伺服器讀取。照片會留在你的手機上，較長的號碼會被隱藏。';
+
+  @override
+  String get scanReadOnlineNo => '稍後再說';
+
+  @override
+  String get scanReadOnlineYes => '讀取';
+
+  @override
+  String get scanReadOnlineNote => '我們已在線上讀取此文件。';
+
+  @override
+  String get scanNoExpiryNote => '此文件似乎沒有到期日期。請新增你希望收到提醒的日期。';
+
+  @override
   String get duplicateKeepBoth => '兩筆都保留';
 
   @override
@@ -26625,42 +26684,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get twoStepOffBody => '你使用備用碼登入，因此兩步驟驗證已關閉。請在這支手機上重新設定，以保護你的帳戶。';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years 年',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => '輸入日期';
-
-  @override
-  String get expiryTypeTitle => '輸入到期日';
-
-  @override
-  String expiryTypeHint(String example) {
-    return '例如 $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return '這個日期似乎不正確。請試試 $example。';
-  }
-
-  @override
   String get expiryAlreadyPassed => '這個日期已過，因此記錄會儲存為已過期。';
 
   @override
   String get expiryEndsToday => '今天到期。';
-
-  @override
-  String get saveAndAddAnother => '儲存並繼續新增';
-
-  @override
-  String get quickStartTitle => '快速開始';
 
   @override
   String categoryCreatedAddGroup(String name) {

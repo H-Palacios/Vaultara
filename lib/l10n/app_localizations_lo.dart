@@ -5024,6 +5024,47 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'ໃຊ້ຕົວອັກສອນ ຫຼື ຕົວເລກຢ່າງໜ້ອຍໜຶ່ງຕົວ.';
+
+  @override
+  String get recordSaveFailed => 'ບັນທຶກບໍ່ໄດ້. ກວດເບິ່ງການເຊື່ອມຕໍ່ ແລ້ວລອງໃໝ່.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'ທ່ານມີ $name ໃນ $group ແລ້ວ, ໝົດອາຍຸ $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ພວກເຮົາເດົາວັນທີນີ້ຈາກເອກະສານຂອງທ່ານ. ກວດເບິ່ງວ່າຖືກຕ້ອງ.';
+
+  @override
+  String get expiryOtherDates => 'ວັນທີອື່ນໃນເອກະສານນີ້';
+
+  @override
+  String get scanPhotoSaved => 'ຮູບຂອງທ່ານຖືກບັນທຶກພ້ອມກັບລາຍການນີ້ແລ້ວ.';
+
+  @override
+  String get scanPhotoNotSaved => 'ຮູບຂອງທ່ານບໍ່ໄດ້ຖືກບັນທຶກ ເພາະລາຍການນີ້ມີຮູບເຕັມຈຳນວນທີ່ອະນຸຍາດແລ້ວ.';
+
+  @override
+  String get scanReadOnlineTitle => 'ອ່ານເອກະສານນີ້ທາງອອນລາຍບໍ?';
+
+  @override
+  String get scanReadOnlineBody => 'ໂທລະສັບຂອງທ່ານອ່ານເອກະສານນີ້ບໍ່ໄດ້ແນ່ນອນ. Vaultara ສາມາດສົ່ງຂໍ້ຄວາມຈາກຮູບໄປຫາເຊີບເວີຂອງມັນເພື່ອອ່ານ. ຮູບຢູ່ໃນໂທລະສັບຂອງທ່ານ ແລະ ຕົວເລກຍາວຈະຖືກເຊື່ອງໄວ້.';
+
+  @override
+  String get scanReadOnlineNo => 'ບໍ່ແມ່ນຕອນນີ້';
+
+  @override
+  String get scanReadOnlineYes => 'ອ່ານ';
+
+  @override
+  String get scanReadOnlineNote => 'ພວກເຮົາອ່ານເອກະສານນີ້ທາງອອນລາຍແລ້ວ.';
+
+  @override
+  String get scanNoExpiryNote => 'ເບິ່ງຄືວ່າເອກະສານນີ້ບໍ່ມີວັນໝົດອາຍຸ. ເພີ່ມວັນທີທີ່ທ່ານຢາກໃຫ້ແຈ້ງເຕືອນ.';
+
+  @override
   String get duplicateKeepBoth => 'ເກັບທັງສອງ';
 
   @override
@@ -8705,42 +8746,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get twoStepOffBody => 'ທ່ານເຂົ້າສູ່ລະບົບດ້ວຍລະຫັດສຳຮອງ ດັ່ງນັ້ນການຢືນຢັນສອງຂັ້ນຕອນຈຶ່ງຖືກປິດ. ຕັ້ງຄ່າໃໝ່ໃນໂທລະສັບນີ້ເພື່ອປົກປ້ອງບັນຊີຂອງທ່ານ.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ປີ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'ພິມວັນທີ';
-
-  @override
-  String get expiryTypeTitle => 'ພິມວັນໝົດອາຍຸ';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ຕົວຢ່າງ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ວັນທີນັ້ນເບິ່ງຄືບໍ່ຖືກຕ້ອງ. ລອງ $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ວັນທີນີ້ຜ່ານໄປແລ້ວ ດັ່ງນັ້ນບັນທຶກຈະຖືກເກັບເປັນໝົດອາຍຸ.';
 
   @override
   String get expiryEndsToday => 'ອັນນີ້ໝົດອາຍຸມື້ນີ້.';
-
-  @override
-  String get saveAndAddAnother => 'ບັນທຶກ ແລະ ເພີ່ມອີກອັນ';
-
-  @override
-  String get quickStartTitle => 'ເລີ່ມດ່ວນ';
 
   @override
   String categoryCreatedAddGroup(String name) {

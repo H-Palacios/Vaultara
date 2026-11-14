@@ -5059,6 +5059,47 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Gumamit ng kahit isang titik o numero.';
+
+  @override
+  String get recordSaveFailed => 'Hindi na-save. Tingnan ang iyong koneksyon at subukan ulit.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Mayroon ka nang $name sa $group, mag-e-expire sa $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Hinulaan namin ang petsang ito mula sa iyong dokumento. Tingnan kung tugma.';
+
+  @override
+  String get expiryOtherDates => 'Iba pang petsa sa dokumentong ito';
+
+  @override
+  String get scanPhotoSaved => 'Naka-save ang iyong larawan kasama ng record na ito.';
+
+  @override
+  String get scanPhotoNotSaved => 'Hindi na-save ang iyong larawan dahil nasa pinakamaraming pinapayagang larawan na ang record na ito.';
+
+  @override
+  String get scanReadOnlineTitle => 'Basahin online ang dokumentong ito?';
+
+  @override
+  String get scanReadOnlineBody => 'Hindi tiyak na nabasa ng iyong phone ang dokumentong ito. Maaaring ipadala ng Vaultara ang text mula sa larawan sa server nito para basahin. Mananatili sa phone mo ang larawan, at itatago ang mahahabang numero.';
+
+  @override
+  String get scanReadOnlineNo => 'Hindi ngayon';
+
+  @override
+  String get scanReadOnlineYes => 'Basahin';
+
+  @override
+  String get scanReadOnlineNote => 'Binasa namin online ang dokumentong ito.';
+
+  @override
+  String get scanNoExpiryNote => 'Mukhang walang petsa ng pag-expire ang dokumentong ito. Idagdag ang petsang gusto mong ipaalala.';
+
+  @override
   String get duplicateKeepBoth => 'Panatilihin ang dalawa';
 
   @override
@@ -8761,43 +8802,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get twoStepOffBody => 'Nag-sign in ka gamit ang backup code, kaya na-off ang two-step verification. I-set up ito ulit sa teleponong ito para manatiling protektado ang account mo.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years taon',
-      one: '+$years taon',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'I-type ang petsa';
-
-  @override
-  String get expiryTypeTitle => 'I-type ang petsa ng pag-expire';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Halimbawa $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Mukhang hindi tama ang petsang iyon. Subukan ang $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Lumipas na ang petsang ito, kaya ise-save ang record bilang expired.';
 
   @override
   String get expiryEndsToday => 'Mag-e-expire ito ngayon.';
-
-  @override
-  String get saveAndAddAnother => 'I-save at magdagdag ng isa pa';
-
-  @override
-  String get quickStartTitle => 'Mabilis na simula';
 
   @override
   String categoryCreatedAddGroup(String name) {

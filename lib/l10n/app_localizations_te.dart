@@ -5063,6 +5063,47 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'కనీసం ఒక అక్షరం లేదా అంకె వాడండి.';
+
+  @override
+  String get recordSaveFailed => 'సేవ్ చేయలేకపోయాము. మీ కనెక్షన్ తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'మీ వద్ద ఇప్పటికే $groupలో $name ఉంది, $dateన గడువు ముగుస్తుంది.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ఈ తేదీని మీ పత్రం నుండి ఊహించాము. సరిపోతుందో తనిఖీ చేయండి.';
+
+  @override
+  String get expiryOtherDates => 'ఈ పత్రంలోని ఇతర తేదీలు';
+
+  @override
+  String get scanPhotoSaved => 'మీ ఫోటో ఈ రికార్డుతో సేవ్ అయింది.';
+
+  @override
+  String get scanPhotoNotSaved => 'ఈ రికార్డులో ఇప్పటికే అనుమతించిన గరిష్ట ఫోటోలు ఉన్నందున మీ ఫోటో సేవ్ కాలేదు.';
+
+  @override
+  String get scanReadOnlineTitle => 'ఈ పత్రాన్ని ఆన్‌లైన్‌లో చదవాలా?';
+
+  @override
+  String get scanReadOnlineBody => 'మీ ఫోన్ ఈ పత్రాన్ని ఖచ్చితంగా చదవలేకపోయింది. చదవడానికి Vaultara ఫోటోలోని వచనాన్ని తన సర్వర్‌కు పంపగలదు. ఫోటో మీ ఫోన్‌లోనే ఉంటుంది, పొడవైన నంబర్లు దాచబడతాయి.';
+
+  @override
+  String get scanReadOnlineNo => 'ఇప్పుడు వద్దు';
+
+  @override
+  String get scanReadOnlineYes => 'చదవండి';
+
+  @override
+  String get scanReadOnlineNote => 'ఈ పత్రాన్ని ఆన్‌లైన్‌లో చదివాము.';
+
+  @override
+  String get scanNoExpiryNote => 'ఈ పత్రానికి గడువు తేదీ లేనట్లుంది. మీకు గుర్తు చేయాల్సిన తేదీని జోడించండి.';
+
+  @override
   String get duplicateKeepBoth => 'రెండింటినీ ఉంచండి';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get twoStepOffBody => 'మీరు బ్యాకప్ కోడ్‌తో సైన్ ఇన్ చేశారు, కాబట్టి రెండు దశల ధృవీకరణ ఆఫ్ చేయబడింది. మీ ఖాతాను సురక్షితంగా ఉంచడానికి ఈ ఫోన్‌లో మళ్లీ సెటప్ చేయండి.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years సంవత్సరాలు',
-      one: '+$years సంవత్సరం',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'తేదీని టైప్ చేయండి';
-
-  @override
-  String get expiryTypeTitle => 'గడువు తేదీని టైప్ చేయండి';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ఉదాహరణకు $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ఆ తేదీ సరిగ్గా కనిపించడం లేదు. $example ప్రయత్నించండి.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ఈ తేదీ గడిచిపోయింది, కాబట్టి రికార్డ్ గడువు ముగిసినదిగా సేవ్ అవుతుంది.';
 
   @override
   String get expiryEndsToday => 'ఇది ఈరోజు గడువు ముగుస్తుంది.';
-
-  @override
-  String get saveAndAddAnother => 'సేవ్ చేసి మరొకటి జోడించండి';
-
-  @override
-  String get quickStartTitle => 'త్వరిత ప్రారంభం';
 
   @override
   String categoryCreatedAddGroup(String name) {

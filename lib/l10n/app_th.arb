@@ -1680,6 +1680,19 @@
   "scanUpdateExisting": "อัปเดต",
   "duplicateRecordTitle": "เพิ่มไว้แล้ว",
   "duplicateRecordBody": "คุณมี {name} ที่หมดอายุ {date} อยู่แล้ว",
+  "recordNameNeedsLetter": "ใช้ตัวอักษรหรือตัวเลขอย่างน้อยหนึ่งตัว",
+  "recordSaveFailed": "บันทึกไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง",
+  "duplicateRecordElsewhere": "คุณมี {name} ใน {group} อยู่แล้ว หมดอายุวันที่ {date}",
+  "expiryGuessedHint": "เราเดาวันที่นี้จากเอกสารของคุณ โปรดตรวจสอบว่าตรงกัน",
+  "expiryOtherDates": "วันที่อื่นในเอกสารนี้",
+  "scanPhotoSaved": "บันทึกรูปของคุณไว้กับรายการนี้แล้ว",
+  "scanPhotoNotSaved": "ไม่ได้บันทึกรูปของคุณ เพราะรายการนี้มีรูปครบจำนวนสูงสุดแล้ว",
+  "scanReadOnlineTitle": "อ่านเอกสารนี้ทางออนไลน์ไหม",
+  "scanReadOnlineBody": "โทรศัพท์ของคุณอ่านเอกสารนี้ได้ไม่แน่ชัด Vaultara ส่งข้อความจากรูปไปยังเซิร์ฟเวอร์เพื่ออ่านได้ รูปจะอยู่ในโทรศัพท์ของคุณ และตัวเลขยาวๆ จะถูกซ่อน",
+  "scanReadOnlineNo": "ไว้ทีหลัง",
+  "scanReadOnlineYes": "อ่าน",
+  "scanReadOnlineNote": "เราอ่านเอกสารนี้ทางออนไลน์แล้ว",
+  "scanNoExpiryNote": "ดูเหมือนเอกสารนี้ไม่มีวันหมดอายุ เพิ่มวันที่ที่คุณอยากให้เตือน",
   "duplicateKeepBoth": "เก็บไว้ทั้งสอง",
   "duplicateUpdateExisting": "อัปเดตรายการเดิม",
   "editorDefaultsHint": "กรอกการตั้งค่าทั่วไปของ {group} ให้แล้ว คุณเปลี่ยนได้ในรายละเอียดเพิ่มเติม",
@@ -3227,36 +3240,8 @@
   "twoStepSkipForNow": "ข้ามไปก่อน",
   "twoStepOffTitle": "การยืนยันแบบสองขั้นตอนปิดอยู่",
   "twoStepOffBody": "คุณลงชื่อเข้าใช้ด้วยรหัสสำรอง จึงมีการปิดการยืนยันแบบสองขั้นตอน โปรดตั้งค่าใหม่บนโทรศัพท์เครื่องนี้เพื่อปกป้องบัญชีของคุณ",
-  "expiryPlusYears": "{years, plural, other{+{years} ปี}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "พิมพ์วันที่",
-  "expiryTypeTitle": "พิมพ์วันหมดอายุ",
-  "expiryTypeHint": "ตัวอย่าง {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "วันที่นี้ดูไม่ถูกต้อง ลอง {example}",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "วันที่นี้ผ่านไปแล้ว รายการจะถูกบันทึกเป็นหมดอายุ",
   "expiryEndsToday": "รายการนี้หมดอายุวันนี้",
-  "saveAndAddAnother": "บันทึกและเพิ่มอีกรายการ",
-  "quickStartTitle": "เริ่มต้นอย่างรวดเร็ว",
   "categoryCreatedAddGroup": "สร้าง {name} แล้ว เพิ่มกลุ่มไหม",
   "@categoryCreatedAddGroup": {
     "placeholders": {

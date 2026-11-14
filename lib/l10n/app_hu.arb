@@ -1681,6 +1681,19 @@
   "scanUpdateExisting": "Frissítés",
   "duplicateRecordTitle": "Már hozzáadva",
   "duplicateRecordBody": "Már van ilyen bejegyzése: {name}, lejárat: {date}.",
+  "recordNameNeedsLetter": "Használj legalább egy betűt vagy számot.",
+  "recordSaveFailed": "Nem sikerült menteni. Ellenőrizd a kapcsolatot, és próbáld újra.",
+  "duplicateRecordElsewhere": "Már van {name} a(z) {group} csoportban, lejár: {date}.",
+  "expiryGuessedHint": "Ezt a dátumot a dokumentumodból tippeltük. Ellenőrizd, hogy egyezik-e.",
+  "expiryOtherDates": "További dátumok ezen a dokumentumon",
+  "scanPhotoSaved": "A fotód ezzel a bejegyzéssel együtt mentve.",
+  "scanPhotoNotSaved": "A fotód nem lett mentve, mert ennél a bejegyzésnél már megvan a megengedett legtöbb fotó.",
+  "scanReadOnlineTitle": "Online olvassuk be ezt a dokumentumot?",
+  "scanReadOnlineBody": "A telefonod nem tudta biztosan elolvasni ezt a dokumentumot. A Vaultara elküldheti a fotó szövegét a szerverére, hogy elolvassa. A fotó a telefonodon marad, a hosszú számokat elrejtjük.",
+  "scanReadOnlineNo": "Most nem",
+  "scanReadOnlineYes": "Olvasd be",
+  "scanReadOnlineNote": "Ezt a dokumentumot online olvastuk be.",
+  "scanNoExpiryNote": "Úgy tűnik, ennek a dokumentumnak nincs lejárati dátuma. Add meg a dátumot, amelyről emlékeztetőt szeretnél.",
   "duplicateKeepBoth": "Mindkettő megtartása",
   "duplicateUpdateExisting": "Meglévő frissítése",
   "editorDefaultsHint": "Kitöltöttük a(z) {group} jellemző beállításait. A További részletek résznél módosíthatja őket.",
@@ -3228,36 +3241,8 @@
   "twoStepSkipForNow": "Most kihagyom",
   "twoStepOffTitle": "A kétlépcsős azonosítás ki van kapcsolva",
   "twoStepOffBody": "Tartalékkóddal jelentkeztél be, ezért a kétlépcsős azonosítás kikapcsolt. Állítsd be újra ezen a telefonon, hogy a fiókod védett maradjon.",
-  "expiryPlusYears": "{years, plural, =1{+{years} év} other{+{years} év}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Dátum beírása",
-  "expiryTypeTitle": "Írd be a lejárati dátumot",
-  "expiryTypeHint": "Például {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Ez a dátum nem tűnik helyesnek. Próbáld így: {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Ez a dátum már elmúlt, ezért a tétel lejártként lesz mentve.",
   "expiryEndsToday": "Ez ma jár le.",
-  "saveAndAddAnother": "Mentés és újabb hozzáadása",
-  "quickStartTitle": "Gyors kezdés",
   "categoryCreatedAddGroup": "{name} létrehozva. Hozzáadsz egy csoportot?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

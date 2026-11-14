@@ -6000,6 +6000,69 @@
       }
     }
   },
+  "recordNameNeedsLetter": "Use at least one letter or number.",
+  "@recordNameNeedsLetter": {
+    "description": "Error under the record name when it has only symbols or spaces."
+  },
+  "recordSaveFailed": "Couldn't save. Check your connection and try again.",
+  "@recordSaveFailed": {
+    "description": "Shown above Save in the record sheet when saving failed. Everything typed stays."
+  },
+  "duplicateRecordElsewhere": "You already have {name} in {group}, expiring {date}.",
+  "@duplicateRecordElsewhere": {
+    "description": "Body of the Already added dialog when the same name for the same person is in another group.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "group": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "expiryGuessedHint": "We guessed this date from your document. Check that it matches.",
+  "@expiryGuessedHint": {
+    "description": "Under the expiry date when Snap to add took the latest date on the page because no word like Expiry was next to any date."
+  },
+  "expiryOtherDates": "Other dates on this document",
+  "@expiryOtherDates": {
+    "description": "Title above tappable chips with the other dates found on a scanned document."
+  },
+  "scanPhotoSaved": "Your photo is saved with this record.",
+  "@scanPhotoSaved": {
+    "description": "Scan banner: the scanned photo was added to the record photos."
+  },
+  "scanPhotoNotSaved": "Your photo wasn't saved because this record already has the most photos allowed.",
+  "@scanPhotoNotSaved": {
+    "description": "Scan banner: the scanned photo was not added because the record has the maximum number of photos."
+  },
+  "scanReadOnlineTitle": "Read this document online?",
+  "@scanReadOnlineTitle": {
+    "description": "Title of the dialog asking once before the text of a scanned document is sent to the server."
+  },
+  "scanReadOnlineBody": "Your phone couldn't read this document with certainty. Vaultara can send the text from the photo to its server to read it. The photo stays on your phone, and long numbers are hidden.",
+  "@scanReadOnlineBody": {
+    "description": "Body of that dialog. Only text is sent, never the photo; long numbers are hidden."
+  },
+  "scanReadOnlineNo": "Not now",
+  "@scanReadOnlineNo": {
+    "description": "Button: do not read online this time."
+  },
+  "scanReadOnlineYes": "Read it",
+  "@scanReadOnlineYes": {
+    "description": "Button: allow reading the document text online."
+  },
+  "scanReadOnlineNote": "We read this document online.",
+  "@scanReadOnlineNote": {
+    "description": "Scan banner line when the document was read online."
+  },
+  "scanNoExpiryNote": "This document doesn't seem to have an expiry date. Add the date you want to be reminded about.",
+  "@scanNoExpiryNote": {
+    "description": "Scan banner line when the document appears to have no expiry date."
+  },
   "duplicateKeepBoth": "Keep both",
   "@duplicateKeepBoth": {
     "description": "Dialog button: save the new record anyway"
@@ -10787,41 +10850,6 @@
   "@twoStepOffBody": {
     "description": "Text of the dialog after signing in with a backup code."
   },
-  "expiryPlusYears": "{years, plural, =1{+{years} year} other{+{years} years}}",
-  "@expiryPlusYears": {
-    "description": "Quick button under the expiry date that adds years.",
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Type date",
-  "@expiryTypeDate": {
-    "description": "Quick button that lets the user type the expiry date."
-  },
-  "expiryTypeTitle": "Type the expiry date",
-  "@expiryTypeTitle": {
-    "description": "Title of the dialog for typing a date."
-  },
-  "expiryTypeHint": "For example {example}",
-  "@expiryTypeHint": {
-    "description": "Helper text in the typed date field.",
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "That date doesn't look right. Try {example}.",
-  "@expiryTypeInvalid": {
-    "description": "Error when the typed date cannot be read or is out of range.",
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "This date has passed, so the record will be saved as expired.",
   "@expiryAlreadyPassed": {
     "description": "Note under the expiry date when it is in the past."
@@ -10829,14 +10857,6 @@
   "expiryEndsToday": "This expires today.",
   "@expiryEndsToday": {
     "description": "Note under the expiry date when it is today."
-  },
-  "saveAndAddAnother": "Save and add another",
-  "@saveAndAddAnother": {
-    "description": "Button that saves a record and clears the form for the next one."
-  },
-  "quickStartTitle": "Quick start",
-  "@quickStartTitle": {
-    "description": "Heading above the common document buttons on an empty Add record sheet."
   },
   "categoryCreatedAddGroup": "{name} created. Add a group to it?",
   "@categoryCreatedAddGroup": {

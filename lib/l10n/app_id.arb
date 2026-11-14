@@ -1668,6 +1668,19 @@
   "scanUpdateExisting": "Perbarui",
   "duplicateRecordTitle": "Sudah ditambahkan",
   "duplicateRecordBody": "Anda sudah memiliki {name} yang kedaluwarsa {date}.",
+  "recordNameNeedsLetter": "Gunakan setidaknya satu huruf atau angka.",
+  "recordSaveFailed": "Tidak bisa menyimpan. Periksa koneksi Anda lalu coba lagi.",
+  "duplicateRecordElsewhere": "Anda sudah memiliki {name} di {group}, kedaluwarsa {date}.",
+  "expiryGuessedHint": "Kami menebak tanggal ini dari dokumen Anda. Periksa apakah sudah cocok.",
+  "expiryOtherDates": "Tanggal lain di dokumen ini",
+  "scanPhotoSaved": "Foto Anda disimpan bersama catatan ini.",
+  "scanPhotoNotSaved": "Foto Anda tidak disimpan karena catatan ini sudah memiliki jumlah foto maksimum.",
+  "scanReadOnlineTitle": "Baca dokumen ini secara online?",
+  "scanReadOnlineBody": "Ponsel Anda tidak dapat membaca dokumen ini dengan pasti. Vaultara dapat mengirim teks dari foto ke servernya untuk dibaca. Foto tetap di ponsel Anda, dan nomor panjang disembunyikan.",
+  "scanReadOnlineNo": "Nanti saja",
+  "scanReadOnlineYes": "Baca",
+  "scanReadOnlineNote": "Kami membaca dokumen ini secara online.",
+  "scanNoExpiryNote": "Dokumen ini sepertinya tidak memiliki tanggal kedaluwarsa. Tambahkan tanggal yang ingin Anda ingat.",
   "duplicateKeepBoth": "Simpan keduanya",
   "duplicateUpdateExisting": "Perbarui yang ada",
   "editorDefaultsHint": "Pengaturan umum untuk {group} sudah diisi. Anda dapat mengubahnya di Detail lainnya.",
@@ -3215,36 +3228,8 @@
   "twoStepSkipForNow": "Lewati dulu",
   "twoStepOffTitle": "Verifikasi dua langkah nonaktif",
   "twoStepOffBody": "Anda masuk dengan kode cadangan, sehingga verifikasi dua langkah dinonaktifkan. Siapkan lagi di ponsel ini agar akun Anda tetap terlindungi.",
-  "expiryPlusYears": "{years, plural, other{+{years} tahun}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Ketik tanggal",
-  "expiryTypeTitle": "Ketik tanggal kedaluwarsa",
-  "expiryTypeHint": "Misalnya {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Tanggal itu sepertinya tidak benar. Coba {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Tanggal ini sudah lewat, jadi catatan akan disimpan sebagai kedaluwarsa.",
   "expiryEndsToday": "Ini kedaluwarsa hari ini.",
-  "saveAndAddAnother": "Simpan dan tambah lagi",
-  "quickStartTitle": "Mulai cepat",
   "categoryCreatedAddGroup": "{name} dibuat. Tambahkan grup ke dalamnya?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

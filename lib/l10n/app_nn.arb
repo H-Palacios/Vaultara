@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Oppdater",
   "duplicateRecordTitle": "Allereie lagd til",
   "duplicateRecordBody": "Du har allereie {name} som går ut {date}.",
+  "recordNameNeedsLetter": "Bruk minst éin bokstav eller eitt tal.",
+  "recordSaveFailed": "Kunne ikkje lagre. Sjekk tilkoplinga og prøv igjen.",
+  "duplicateRecordElsewhere": "Du har alt {name} i {group}, som går ut {date}.",
+  "expiryGuessedHint": "Vi gjetta denne datoen ut frå dokumentet ditt. Sjekk at han stemmer.",
+  "expiryOtherDates": "Andre datoar på dette dokumentet",
+  "scanPhotoSaved": "Biletet ditt er lagra saman med denne oppføringa.",
+  "scanPhotoNotSaved": "Biletet ditt vart ikkje lagra fordi denne oppføringa alt har flest moglege bilete.",
+  "scanReadOnlineTitle": "Lese dette dokumentet på nett?",
+  "scanReadOnlineBody": "Telefonen din klarte ikkje å lese dette dokumentet sikkert. Vaultara kan sende teksten frå biletet til serveren sin for å lese han. Biletet blir på telefonen din, og lange nummer blir gøymde.",
+  "scanReadOnlineNo": "Ikkje no",
+  "scanReadOnlineYes": "Les det",
+  "scanReadOnlineNote": "Vi las dette dokumentet på nett.",
+  "scanNoExpiryNote": "Dette dokumentet ser ikkje ut til å ha ein utløpsdato. Legg til datoen du vil bli minna på.",
   "duplicateKeepBoth": "Behald begge",
   "duplicateUpdateExisting": "Oppdater eksisterande",
   "editorDefaultsHint": "Fylte ut vanlege innstillingar for {group}. Du kan endre dei under Fleire detaljar.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Hopp over no",
   "twoStepOffTitle": "Tostegsstadfesting er av",
   "twoStepOffBody": "Du logga på med ein reservekode, så tostegsstadfesting vart slått av. Set ho opp på nytt på denne telefonen for å halde kontoen verna.",
-  "expiryPlusYears": "{years, plural, =1{+{years} år} other{+{years} år}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Skriv dato",
-  "expiryTypeTitle": "Skriv utløpsdatoen",
-  "expiryTypeHint": "Til dømes {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Den datoen ser ikkje rett ut. Prøv {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Denne datoen har passert, så oppføringa blir lagra som utgått.",
   "expiryEndsToday": "Denne går ut i dag.",
-  "saveAndAddAnother": "Lagre og legg til ein til",
-  "quickStartTitle": "Hurtigstart",
   "categoryCreatedAddGroup": "{name} er oppretta. Leggje til ei gruppe?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

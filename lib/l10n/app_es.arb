@@ -1670,6 +1670,19 @@
   "scanUpdateExisting": "Actualizar",
   "duplicateRecordTitle": "Ya está añadido",
   "duplicateRecordBody": "Ya tienes {name} con vencimiento el {date}.",
+  "recordNameNeedsLetter": "Usa al menos una letra o un número.",
+  "recordSaveFailed": "No se pudo guardar. Revisa tu conexión e inténtalo de nuevo.",
+  "duplicateRecordElsewhere": "Ya tienes {name} en {group}, que vence el {date}.",
+  "expiryGuessedHint": "Hemos deducido esta fecha de tu documento. Comprueba que coincide.",
+  "expiryOtherDates": "Otras fechas de este documento",
+  "scanPhotoSaved": "Tu foto se ha guardado con este registro.",
+  "scanPhotoNotSaved": "Tu foto no se ha guardado porque este registro ya tiene el máximo de fotos permitidas.",
+  "scanReadOnlineTitle": "¿Leer este documento en línea?",
+  "scanReadOnlineBody": "Tu teléfono no pudo leer este documento con seguridad. Vaultara puede enviar el texto de la foto a su servidor para leerlo. La foto se queda en tu teléfono y los números largos se ocultan.",
+  "scanReadOnlineNo": "Ahora no",
+  "scanReadOnlineYes": "Leerlo",
+  "scanReadOnlineNote": "Hemos leído este documento en línea.",
+  "scanNoExpiryNote": "Este documento no parece tener fecha de vencimiento. Añade la fecha de la que quieres un recordatorio.",
   "duplicateKeepBoth": "Conservar ambos",
   "duplicateUpdateExisting": "Actualizar el existente",
   "editorDefaultsHint": "Se rellenaron los ajustes habituales para {group}. Puedes cambiarlos en Más detalles.",
@@ -3217,36 +3230,8 @@
   "twoStepSkipForNow": "Omitir por ahora",
   "twoStepOffTitle": "La verificación en dos pasos está desactivada",
   "twoStepOffBody": "Iniciaste sesión con un código de respaldo, así que se desactivó la verificación en dos pasos. Vuelve a configurarla en este teléfono para mantener tu cuenta protegida.",
-  "expiryPlusYears": "{years, plural, =1{+{years} año} other{+{years} años}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Escribir fecha",
-  "expiryTypeTitle": "Escribe la fecha de caducidad",
-  "expiryTypeHint": "Por ejemplo {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Esa fecha no parece correcta. Prueba {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Esta fecha ya pasó, así que el registro se guardará como caducado.",
   "expiryEndsToday": "Caduca hoy.",
-  "saveAndAddAnother": "Guardar y añadir otro",
-  "quickStartTitle": "Inicio rápido",
   "categoryCreatedAddGroup": "Se creó {name}. ¿Añadir un grupo?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

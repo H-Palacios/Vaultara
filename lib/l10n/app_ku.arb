@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Nûve bike",
   "duplicateRecordTitle": "Jixwe hatiye zêdekirin",
   "duplicateRecordBody": "{name} jixwe di tomarên te de ye, dîroka bidawîbûnê {date}.",
+  "recordNameNeedsLetter": "Herî kêm tîpek an hejmarek bi kar bîne.",
+  "recordSaveFailed": "Nehat tomarkirin. Girêdana xwe kontrol bike û dîsa biceribîne.",
+  "duplicateRecordElsewhere": "Te berê {name} di {group} de heye, di {date} de diqede.",
+  "expiryGuessedHint": "Me ev dîrok ji belgeya te texmîn kir. Kontrol bike ku li hev tê.",
+  "expiryOtherDates": "Dîrokên din ên vê belgeyê",
+  "scanPhotoSaved": "Wêneyê te bi vê tomarê re hat tomarkirin.",
+  "scanPhotoNotSaved": "Wêneyê te nehat tomarkirin ji ber ku vê tomarê berê herî zêde wêneyên destûrdayî hene.",
+  "scanReadOnlineTitle": "Vê belgeyê serhêl bixwîne?",
+  "scanReadOnlineBody": "Telefona te nekarî vê belgeyê bi teqez bixwîne. Vaultara dikare nivîsa wêneyê ji bo xwendinê bişîne servera xwe. Wêne li ser telefona te dimîne, û hejmarên dirêj tên veşartin.",
+  "scanReadOnlineNo": "Ne niha",
+  "scanReadOnlineYes": "Bixwîne",
+  "scanReadOnlineNote": "Me ev belge serhêl xwend.",
+  "scanNoExpiryNote": "Wisa xuya dike ku dîroka qedandinê ya vê belgeyê tune. Dîroka ku tu dixwazî bîra te were xistin lê zêde bike.",
   "duplicateKeepBoth": "Herduyan bihêle",
   "duplicateUpdateExisting": "A heyî nûve bike",
   "editorDefaultsHint": "Sazkirinên tîpîk ji bo {group} hatin tije kirin. Tu dikarî wan di Hûrguliyên din de biguherînî.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Niha derbas bike",
   "twoStepOffTitle": "Piştrastkirina du-gavî girtî ye",
   "twoStepOffBody": "Tu bi kodek yedek ketî, loma piştrastkirina du-gavî hate girtin. Ji bo ku hesabê te parastî bimîne wê li ser vê telefonê dîsa saz bike.",
-  "expiryPlusYears": "{years, plural, =1{+{years} sal} other{+{years} sal}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Dîrokê binivîse",
-  "expiryTypeTitle": "Dîroka qedandinê binivîse",
-  "expiryTypeHint": "Mînak {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Ew dîrok rast xuya nake. {example} biceribîne.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Ev dîrok derbas bûye, loma tomar wek qediyayî tê tomarkirin.",
   "expiryEndsToday": "Ev îro diqede.",
-  "saveAndAddAnother": "Tomar bike û yekî din lê zêde bike",
-  "quickStartTitle": "Destpêka bilez",
   "categoryCreatedAddGroup": "{name} hate çêkirin. Komek lê zêde bibe?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

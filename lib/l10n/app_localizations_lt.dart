@@ -5168,6 +5168,47 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Naudokite bent vieną raidę ar skaičių.';
+
+  @override
+  String get recordSaveFailed => 'Nepavyko išsaugoti. Patikrinkite ryšį ir bandykite dar kartą.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Jau turite $name grupėje $group, baigiasi $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Šią datą atspėjome iš jūsų dokumento. Patikrinkite, ar ji tinka.';
+
+  @override
+  String get expiryOtherDates => 'Kitos šio dokumento datos';
+
+  @override
+  String get scanPhotoSaved => 'Jūsų nuotrauka išsaugota su šiuo įrašu.';
+
+  @override
+  String get scanPhotoNotSaved => 'Jūsų nuotrauka neišsaugota, nes šiame įraše jau yra didžiausias leidžiamas nuotraukų skaičius.';
+
+  @override
+  String get scanReadOnlineTitle => 'Perskaityti šį dokumentą internetu?';
+
+  @override
+  String get scanReadOnlineBody => 'Jūsų telefonas negalėjo patikimai perskaityti šio dokumento. Vaultara gali nusiųsti nuotraukos tekstą į savo serverį, kad jį perskaitytų. Nuotrauka lieka jūsų telefone, o ilgi numeriai paslepiami.';
+
+  @override
+  String get scanReadOnlineNo => 'Ne dabar';
+
+  @override
+  String get scanReadOnlineYes => 'Skaityti';
+
+  @override
+  String get scanReadOnlineNote => 'Šį dokumentą perskaitėme internetu.';
+
+  @override
+  String get scanNoExpiryNote => 'Atrodo, kad šis dokumentas neturi galiojimo pabaigos datos. Pridėkite datą, apie kurią norite priminimo.';
+
+  @override
   String get duplicateKeepBoth => 'Palikti abu';
 
   @override
@@ -8916,45 +8957,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get twoStepOffBody => 'Prisijungėte atsarginiu kodu, todėl patvirtinimas dviem veiksmais buvo išjungtas. Nustatykite jį iš naujo šiame telefone, kad paskyra liktų apsaugota.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years metų',
-      many: '+$years metų',
-      few: '+$years metai',
-      one: '+$years metai',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Įvesti datą';
-
-  @override
-  String get expiryTypeTitle => 'Įveskite galiojimo pabaigos datą';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Pavyzdžiui $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ši data neatrodo teisinga. Pabandykite $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ši data jau praėjo, todėl įrašas bus išsaugotas kaip pasibaigęs.';
 
   @override
   String get expiryEndsToday => 'Galioja iki šiandien.';
-
-  @override
-  String get saveAndAddAnother => 'Išsaugoti ir pridėti kitą';
-
-  @override
-  String get quickStartTitle => 'Greita pradžia';
 
   @override
   String categoryCreatedAddGroup(String name) {

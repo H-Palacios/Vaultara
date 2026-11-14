@@ -5063,6 +5063,47 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Sebenzisa okungenani uhlamvu olulodwa noma inombolo.';
+
+  @override
+  String get recordSaveFailed => 'Akukwazanga ukulondoloza. Hlola uxhumano lwakho bese uzama futhi.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Usunayo i-$name ku-$group, iphelelwa ngo-$date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Lolu suku silucabange embhalweni wakho. Hlola ukuthi luyafana.';
+
+  @override
+  String get expiryOtherDates => 'Ezinye izinsuku kulo mbhalo';
+
+  @override
+  String get scanPhotoSaved => 'Isithombe sakho silondolozwe nale rekhodi.';
+
+  @override
+  String get scanPhotoNotSaved => 'Isithombe sakho asilondolozwanga ngoba le rekhodi isinazo izithombe eziningi ezivunyelwe.';
+
+  @override
+  String get scanReadOnlineTitle => 'Funda lo mbhalo ku-inthanethi?';
+
+  @override
+  String get scanReadOnlineBody => 'Ifoni yakho ayikwazanga ukufunda lo mbhalo ngokuqinisekile. I-Vaultara ingathumela umbhalo osesithombeni kuseva yayo ukuze iwufunde. Isithombe sihlala efonini yakho, futhi izinombolo ezinde ziyafihlwa.';
+
+  @override
+  String get scanReadOnlineNo => 'Hhayi manje';
+
+  @override
+  String get scanReadOnlineYes => 'Yifunde';
+
+  @override
+  String get scanReadOnlineNote => 'Lo mbhalo siwufunde ku-inthanethi.';
+
+  @override
+  String get scanNoExpiryNote => 'Kubonakala sengathi lo mbhalo awunalo usuku lokuphelelwa. Engeza usuku ofuna ukukhunjuzwa ngalo.';
+
+  @override
   String get duplicateKeepBoth => 'Gcina zombili';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get twoStepOffBody => 'Ungene ngekhodi yokulondoloza, ngakho ukuqinisekisa ngezinyathelo ezimbili kwavalwa. Kusethe futhi kule foni ukuze i-akhawunti yakho ihlale ivikelekile.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+iminyaka engu-$years',
-      one: '+unyaka ongu-$years',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Thayipha usuku';
-
-  @override
-  String get expiryTypeTitle => 'Thayipha usuku lokuphelelwa';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Isibonelo $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Lolo suku alubukeki luqondile. Zama u-$example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Lolu suku seludlulile, ngakho irekhodi lizolondolozwa njengeliphelelwe yisikhathi.';
 
   @override
   String get expiryEndsToday => 'Lokhu kuphelelwa namuhla.';
-
-  @override
-  String get saveAndAddAnother => 'Londoloza bese wengeza enye';
-
-  @override
-  String get quickStartTitle => 'Ukuqala ngokushesha';
 
   @override
   String categoryCreatedAddGroup(String name) {

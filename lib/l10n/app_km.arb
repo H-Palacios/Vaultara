@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "អាប់ដេត",
   "duplicateRecordTitle": "បានបន្ថែមរួចហើយ",
   "duplicateRecordBody": "អ្នកមាន {name} រួចហើយ ដែលផុតកំណត់ {date}។",
+  "recordNameNeedsLetter": "ប្រើយ៉ាងហោចណាស់អក្សរ ឬលេខមួយ។",
+  "recordSaveFailed": "មិនអាចរក្សាទុកបានទេ។ សូមពិនិត្យការតភ្ជាប់ ហើយព្យាយាមម្តងទៀត។",
+  "duplicateRecordElsewhere": "អ្នកមាន {name} នៅក្នុង {group} រួចហើយ ផុតកំណត់នៅ {date}។",
+  "expiryGuessedHint": "យើងបានទាយកាលបរិច្ឆេទនេះពីឯកសាររបស់អ្នក។ សូមពិនិត្យថាវាត្រូវគ្នា។",
+  "expiryOtherDates": "កាលបរិច្ឆេទផ្សេងទៀតនៅលើឯកសារនេះ",
+  "scanPhotoSaved": "រូបថតរបស់អ្នកត្រូវបានរក្សាទុកជាមួយកំណត់ត្រានេះ។",
+  "scanPhotoNotSaved": "រូបថតរបស់អ្នកមិនត្រូវបានរក្សាទុកទេ ព្រោះកំណត់ត្រានេះមានរូបថតដល់ចំនួនអតិបរមារួចហើយ។",
+  "scanReadOnlineTitle": "អានឯកសារនេះតាមអ៊ីនធឺណិត?",
+  "scanReadOnlineBody": "ទូរសព្ទរបស់អ្នកមិនអាចអានឯកសារនេះបានច្បាស់លាស់ទេ។ Vaultara អាចផ្ញើអត្ថបទពីរូបថតទៅម៉ាស៊ីនមេរបស់វាដើម្បីអាន។ រូបថតនៅលើទូរសព្ទរបស់អ្នក ហើយលេខវែងៗត្រូវបានលាក់។",
+  "scanReadOnlineNo": "មិនមែនឥឡូវ",
+  "scanReadOnlineYes": "អាន",
+  "scanReadOnlineNote": "យើងបានអានឯកសារនេះតាមអ៊ីនធឺណិត។",
+  "scanNoExpiryNote": "ឯកសារនេះហាក់ដូចជាគ្មានកាលបរិច្ឆេទផុតកំណត់ទេ។ សូមបន្ថែមកាលបរិច្ឆេទដែលអ្នកចង់ឱ្យរំលឹក។",
   "duplicateKeepBoth": "រក្សាទុកទាំងពីរ",
   "duplicateUpdateExisting": "អាប់ដេតអ្វីដែលមានស្រាប់",
   "editorDefaultsHint": "បានបំពេញការកំណត់ធម្មតាសម្រាប់ {group}។ អ្នកអាចប្តូរវាបាននៅក្នុង ព័ត៌មានលម្អិតបន្ថែម។",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "រំលងសិន",
   "twoStepOffTitle": "ការផ្ទៀងផ្ទាត់ពីរជំហានត្រូវបានបិទ",
   "twoStepOffBody": "អ្នកបានចូលដោយកូដបម្រុង ដូច្នេះការផ្ទៀងផ្ទាត់ពីរជំហានត្រូវបានបិទ។ សូមរៀបចំវាឡើងវិញនៅលើទូរសព្ទនេះ ដើម្បីការពារគណនីរបស់អ្នក។",
-  "expiryPlusYears": "{years, plural, other{+{years} ឆ្នាំ}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "វាយកាលបរិច្ឆេទ",
-  "expiryTypeTitle": "វាយកាលបរិច្ឆេទផុតកំណត់",
-  "expiryTypeHint": "ឧទាហរណ៍ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "កាលបរិច្ឆេទនោះមើលទៅមិនត្រឹមត្រូវ។ សាកល្បង {example}។",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "កាលបរិច្ឆេទនេះបានកន្លងផុតហើយ ដូច្នេះកំណត់ត្រានឹងត្រូវរក្សាទុកថាផុតកំណត់។",
   "expiryEndsToday": "វាផុតកំណត់ថ្ងៃនេះ។",
-  "saveAndAddAnother": "រក្សាទុក ហើយបន្ថែមមួយទៀត",
-  "quickStartTitle": "ចាប់ផ្តើមរហ័ស",
   "categoryCreatedAddGroup": "បានបង្កើត {name}។ បន្ថែមក្រុមទៅវាឬ?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

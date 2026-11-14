@@ -1681,6 +1681,19 @@
   "scanUpdateExisting": "Atjaunināt",
   "duplicateRecordTitle": "Jau pievienots",
   "duplicateRecordBody": "Jums jau ir ieraksts {name}, kura termiņš beidzas {date}.",
+  "recordNameNeedsLetter": "Izmantojiet vismaz vienu burtu vai ciparu.",
+  "recordSaveFailed": "Neizdevās saglabāt. Pārbaudiet savienojumu un mēģiniet vēlreiz.",
+  "duplicateRecordElsewhere": "Jums jau ir {name} grupā {group}, beidzas {date}.",
+  "expiryGuessedHint": "Šo datumu uzminējām no jūsu dokumenta. Pārbaudiet, vai tas atbilst.",
+  "expiryOtherDates": "Citi datumi šajā dokumentā",
+  "scanPhotoSaved": "Jūsu fotoattēls saglabāts kopā ar šo ierakstu.",
+  "scanPhotoNotSaved": "Jūsu fotoattēls netika saglabāts, jo šim ierakstam jau ir maksimālais atļautais fotoattēlu skaits.",
+  "scanReadOnlineTitle": "Vai nolasīt šo dokumentu tiešsaistē?",
+  "scanReadOnlineBody": "Jūsu tālrunis nevarēja droši nolasīt šo dokumentu. Vaultara var nosūtīt fotoattēla tekstu uz savu serveri, lai to nolasītu. Fotoattēls paliek jūsu tālrunī, un garie numuri tiek paslēpti.",
+  "scanReadOnlineNo": "Ne tagad",
+  "scanReadOnlineYes": "Nolasīt",
+  "scanReadOnlineNote": "Šo dokumentu nolasījām tiešsaistē.",
+  "scanNoExpiryNote": "Šķiet, ka šim dokumentam nav derīguma beigu datuma. Pievienojiet datumu, par kuru vēlaties atgādinājumu.",
   "duplicateKeepBoth": "Paturēt abus",
   "duplicateUpdateExisting": "Atjaunināt esošo",
   "editorDefaultsHint": "Aizpildīti tipiski iestatījumi grupai {group}. Tos varat mainīt sadaļā Vairāk informācijas.",
@@ -3228,36 +3241,8 @@
   "twoStepSkipForNow": "Pagaidām izlaist",
   "twoStepOffTitle": "Divpakāpju verifikācija ir izslēgta",
   "twoStepOffBody": "Jūs pierakstījāties ar rezerves kodu, tāpēc divpakāpju verifikācija tika izslēgta. Iestatiet to no jauna šajā tālrunī, lai konts paliktu aizsargāts.",
-  "expiryPlusYears": "{years, plural, zero{+{years} gadi} one{+{years} gads} other{+{years} gadi}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Ierakstīt datumu",
-  "expiryTypeTitle": "Ierakstiet derīguma beigu datumu",
-  "expiryTypeHint": "Piemēram, {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Šis datums neizskatās pareizs. Mēģiniet {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Šis datums ir pagājis, tāpēc ieraksts tiks saglabāts kā beidzies.",
   "expiryEndsToday": "Tas beidzas šodien.",
-  "saveAndAddAnother": "Saglabāt un pievienot vēl vienu",
-  "quickStartTitle": "Ātrais sākums",
   "categoryCreatedAddGroup": "{name} izveidota. Pievienot grupu?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

@@ -2,16 +2,34 @@ import 'package:flutter/material.dart';
 import 'package:vaultara/features/scan/logic/scan_parser.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
+/// What happened to the photo that was scanned.
+enum ScanPhotoNote {
+  /// Nothing to say, for example when no photo was taken.
+  none,
+
+  /// Added to the record's photos.
+  saved,
+
+  /// Not added because the record already has as many photos as allowed.
+  full,
+}
+
 class ScanFoundBanner extends StatelessWidget {
   final ScanParseResult result;
   final VoidCallback onDismiss;
   final bool failed;
+  final ScanPhotoNote photo;
+  final bool readOnline;
+  final bool noExpiry;
 
   const ScanFoundBanner({
     super.key,
     required this.result,
     required this.onDismiss,
     this.failed = false,
+    this.photo = ScanPhotoNote.none,
+    this.readOnline = false,
+    this.noExpiry = false,
   });
 
   bool get _filledMain =>
@@ -59,6 +77,12 @@ class ScanFoundBanner extends StatelessWidget {
     final String? holder = result.matchedPersonName;
     final bool showLicenceCardNote =
         result.kind == ScanDocumentKind.licenceCard;
+    final List<String> notes = <String>[
+      if (readOnline) loc.scanReadOnlineNote,
+      if (noExpiry) loc.scanNoExpiryNote,
+      if (photo == ScanPhotoNote.saved) loc.scanPhotoSaved,
+      if (photo == ScanPhotoNote.full) loc.scanPhotoNotSaved,
+    ];
 
     return Container(
       padding: const EdgeInsets.fromLTRB(12, 10, 4, 10),
@@ -138,6 +162,17 @@ class ScanFoundBanner extends StatelessWidget {
                     const SizedBox(height: 2),
                     Text(
                       loc.scanFoundNumberAdded,
+                      style: TextStyle(
+                        fontSize: 12,
+                        height: 1.4,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ],
+                  for (final String note in notes) ...[
+                    const SizedBox(height: 2),
+                    Text(
+                      note,
                       style: TextStyle(
                         fontSize: 12,
                         height: 1.4,

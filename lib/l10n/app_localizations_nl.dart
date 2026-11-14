@@ -5063,6 +5063,47 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Gebruik minstens één letter of cijfer.';
+
+  @override
+  String get recordSaveFailed => 'Opslaan is mislukt. Controleer je verbinding en probeer het opnieuw.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Je hebt al $name in $group, verloopt op $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Deze datum hebben we uit je document geraden. Controleer of hij klopt.';
+
+  @override
+  String get expiryOtherDates => 'Andere datums op dit document';
+
+  @override
+  String get scanPhotoSaved => 'Je foto is bij dit item opgeslagen.';
+
+  @override
+  String get scanPhotoNotSaved => 'Je foto is niet opgeslagen, omdat dit item al het maximale aantal foto\'s heeft.';
+
+  @override
+  String get scanReadOnlineTitle => 'Dit document online laten lezen?';
+
+  @override
+  String get scanReadOnlineBody => 'Je telefoon kon dit document niet met zekerheid lezen. Vaultara kan de tekst van de foto naar zijn server sturen om die te lezen. De foto blijft op je telefoon en lange nummers worden verborgen.';
+
+  @override
+  String get scanReadOnlineNo => 'Niet nu';
+
+  @override
+  String get scanReadOnlineYes => 'Lezen';
+
+  @override
+  String get scanReadOnlineNote => 'We hebben dit document online gelezen.';
+
+  @override
+  String get scanNoExpiryNote => 'Dit document lijkt geen vervaldatum te hebben. Voeg de datum toe waaraan je herinnerd wilt worden.';
+
+  @override
   String get duplicateKeepBoth => 'Beide bewaren';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get twoStepOffBody => 'Je hebt ingelogd met een back-upcode, daarom is verificatie in twee stappen uitgezet. Stel het opnieuw in op deze telefoon om je account beschermd te houden.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years jaar',
-      one: '+$years jaar',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Datum typen';
-
-  @override
-  String get expiryTypeTitle => 'Typ de vervaldatum';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Bijvoorbeeld $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Die datum lijkt niet te kloppen. Probeer $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Deze datum is al voorbij, dus het item wordt als verlopen opgeslagen.';
 
   @override
   String get expiryEndsToday => 'Dit verloopt vandaag.';
-
-  @override
-  String get saveAndAddAnother => 'Opslaan en nog een toevoegen';
-
-  @override
-  String get quickStartTitle => 'Snel starten';
 
   @override
   String categoryCreatedAddGroup(String name) {

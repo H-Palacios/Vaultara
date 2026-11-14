@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Güncelle",
   "duplicateRecordTitle": "Zaten eklendi",
   "duplicateRecordBody": "Son kullanma tarihi {date} olan {name} kaydınız zaten var.",
+  "recordNameNeedsLetter": "En az bir harf veya rakam kullanın.",
+  "recordSaveFailed": "Kaydedilemedi. Bağlantınızı kontrol edip tekrar deneyin.",
+  "duplicateRecordElsewhere": "{group} grubunda zaten {name} var, {date} tarihinde sona eriyor.",
+  "expiryGuessedHint": "Bu tarihi belgenizden tahmin ettik. Doğru olup olmadığını kontrol edin.",
+  "expiryOtherDates": "Bu belgedeki diğer tarihler",
+  "scanPhotoSaved": "Fotoğrafınız bu kayıtla birlikte kaydedildi.",
+  "scanPhotoNotSaved": "Bu kayıtta izin verilen en fazla fotoğraf zaten olduğu için fotoğrafınız kaydedilmedi.",
+  "scanReadOnlineTitle": "Bu belge çevrimiçi okunsun mu?",
+  "scanReadOnlineBody": "Telefonunuz bu belgeyi kesin olarak okuyamadı. Vaultara, okumak için fotoğraftaki metni sunucusuna gönderebilir. Fotoğraf telefonunuzda kalır ve uzun numaralar gizlenir.",
+  "scanReadOnlineNo": "Şimdi değil",
+  "scanReadOnlineYes": "Oku",
+  "scanReadOnlineNote": "Bu belgeyi çevrimiçi okuduk.",
+  "scanNoExpiryNote": "Bu belgenin bir son kullanma tarihi yok gibi görünüyor. Hatırlatılmak istediğiniz tarihi ekleyin.",
   "duplicateKeepBoth": "İkisini de tut",
   "duplicateUpdateExisting": "Mevcut olanı güncelle",
   "editorDefaultsHint": "{group} için tipik ayarları doldurduk. Bunları Daha fazla ayrıntı bölümünden değiştirebilirsiniz.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Şimdilik atla",
   "twoStepOffTitle": "İki adımlı doğrulama kapalı",
   "twoStepOffBody": "Yedek kodla giriş yaptığınız için iki adımlı doğrulama kapatıldı. Hesabınızı korumak için bu telefonda yeniden kurun.",
-  "expiryPlusYears": "{years, plural, one{+{years} yıl} other{+{years} yıl}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Tarihi yaz",
-  "expiryTypeTitle": "Son kullanma tarihini yazın",
-  "expiryTypeHint": "Örneğin {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Bu tarih doğru görünmüyor. {example} deneyin.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Bu tarih geçti, bu yüzden kayıt süresi dolmuş olarak kaydedilecek.",
   "expiryEndsToday": "Bunun süresi bugün doluyor.",
-  "saveAndAddAnother": "Kaydet ve bir tane daha ekle",
-  "quickStartTitle": "Hızlı başlangıç",
   "categoryCreatedAddGroup": "{name} oluşturuldu. Bir grup eklensin mi?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

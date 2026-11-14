@@ -5022,6 +5022,47 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'အနည်းဆုံး စာလုံး သို့မဟုတ် ဂဏန်းတစ်ခု သုံးပါ။';
+
+  @override
+  String get recordSaveFailed => 'သိမ်းဆည်း၍ မရပါ။ ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ထပ်ကြိုးစားပါ။';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '$group တွင် $name ရှိပြီးသားဖြစ်ပြီး $date တွင် သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ဤရက်စွဲကို သင့်စာရွက်စာတမ်းမှ ခန့်မှန်းထားပါသည်။ ကိုက်ညီမှု ရှိမရှိ စစ်ဆေးပါ။';
+
+  @override
+  String get expiryOtherDates => 'ဤစာရွက်စာတမ်းပေါ်ရှိ အခြားရက်စွဲများ';
+
+  @override
+  String get scanPhotoSaved => 'သင့်ဓာတ်ပုံကို ဤမှတ်တမ်းနှင့်အတူ သိမ်းဆည်းပြီးပါပြီ။';
+
+  @override
+  String get scanPhotoNotSaved => 'ဤမှတ်တမ်းတွင် ခွင့်ပြုထားသော ဓာတ်ပုံအများဆုံး ရှိပြီးဖြစ်၍ သင့်ဓာတ်ပုံကို မသိမ်းဆည်းပါ။';
+
+  @override
+  String get scanReadOnlineTitle => 'ဤစာရွက်စာတမ်းကို အွန်လိုင်းတွင် ဖတ်မလား။';
+
+  @override
+  String get scanReadOnlineBody => 'သင့်ဖုန်းသည် ဤစာရွက်စာတမ်းကို သေချာစွာ မဖတ်နိုင်ပါ။ Vaultara သည် ဖတ်ရန် ဓာတ်ပုံမှ စာသားကို ၎င်း၏ ဆာဗာသို့ ပို့နိုင်သည်။ ဓာတ်ပုံသည် သင့်ဖုန်းတွင်သာ ရှိနေပြီး နံပါတ်ရှည်များကို ဖုံးကွယ်ထားမည်။';
+
+  @override
+  String get scanReadOnlineNo => 'ယခု မဟုတ်';
+
+  @override
+  String get scanReadOnlineYes => 'ဖတ်ရန်';
+
+  @override
+  String get scanReadOnlineNote => 'ဤစာရွက်စာတမ်းကို အွန်လိုင်းတွင် ဖတ်ပြီးပါပြီ။';
+
+  @override
+  String get scanNoExpiryNote => 'ဤစာရွက်စာတမ်းတွင် သက်တမ်းကုန်ရက် မရှိပုံရသည်။ သတိပေးစေလိုသော ရက်စွဲကို ထည့်ပါ။';
+
+  @override
   String get duplicateKeepBoth => 'နှစ်ခုလုံး ထားရန်';
 
   @override
@@ -8703,42 +8744,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get twoStepOffBody => 'အရန်ကုဒ်ဖြင့် ဝင်ရောက်ခဲ့သဖြင့် နှစ်ဆင့်အတည်ပြုခြင်းကို ပိတ်လိုက်ပါသည်။ အကောင့်ကို ကာကွယ်ထားရန် ဤဖုန်းတွင် ပြန်လည်သတ်မှတ်ပါ။';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years နှစ်',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'ရက်စွဲ ရိုက်ထည့်ရန်';
-
-  @override
-  String get expiryTypeTitle => 'သက်တမ်းကုန်ရက်ကို ရိုက်ထည့်ပါ';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ဥပမာ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ထိုရက်စွဲ မှန်ပုံမရပါ။ $example ကို စမ်းကြည့်ပါ။';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ဤရက်စွဲ ကျော်လွန်သွားပြီဖြစ်၍ မှတ်တမ်းကို သက်တမ်းကုန်အဖြစ် သိမ်းပါမည်။';
 
   @override
   String get expiryEndsToday => 'ဤအရာသည် ယနေ့ သက်တမ်းကုန်ပါသည်။';
-
-  @override
-  String get saveAndAddAnother => 'သိမ်းပြီး နောက်တစ်ခု ထည့်ရန်';
-
-  @override
-  String get quickStartTitle => 'အမြန်စတင်ရန်';
 
   @override
   String categoryCreatedAddGroup(String name) {

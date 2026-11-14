@@ -5063,6 +5063,47 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'ઓછામાં ઓછો એક અક્ષર અથવા અંક વાપરો.';
+
+  @override
+  String get recordSaveFailed => 'સાચવી શકાયું નથી. તમારું કનેક્શન તપાસો અને ફરી પ્રયાસ કરો.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'તમારી પાસે પહેલેથી $groupમાં $name છે, જે $dateએ સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'અમે આ તારીખ તમારા દસ્તાવેજ પરથી અનુમાનિત કરી છે. મેળ ખાય છે કે નહીં તે તપાસો.';
+
+  @override
+  String get expiryOtherDates => 'આ દસ્તાવેજ પરની અન્ય તારીખો';
+
+  @override
+  String get scanPhotoSaved => 'તમારો ફોટો આ રેકોર્ડ સાથે સાચવાયો છે.';
+
+  @override
+  String get scanPhotoNotSaved => 'તમારો ફોટો સાચવાયો નથી, કારણ કે આ રેકોર્ડમાં પહેલેથી મહત્તમ મંજૂર ફોટા છે.';
+
+  @override
+  String get scanReadOnlineTitle => 'આ દસ્તાવેજ ઑનલાઇન વાંચીએ?';
+
+  @override
+  String get scanReadOnlineBody => 'તમારો ફોન આ દસ્તાવેજ ખાતરીપૂર્વક વાંચી શક્યો નથી. Vaultara ફોટાનું લખાણ વાંચવા માટે તેના સર્વર પર મોકલી શકે છે. ફોટો તમારા ફોન પર જ રહે છે, અને લાંબા નંબરો છુપાવવામાં આવે છે.';
+
+  @override
+  String get scanReadOnlineNo => 'હમણાં નહીં';
+
+  @override
+  String get scanReadOnlineYes => 'વાંચો';
+
+  @override
+  String get scanReadOnlineNote => 'અમે આ દસ્તાવેજ ઑનલાઇન વાંચ્યો.';
+
+  @override
+  String get scanNoExpiryNote => 'આ દસ્તાવેજમાં સમાપ્તિ તારીખ હોય એવું લાગતું નથી. જે તારીખે યાદ અપાવવું હોય તે ઉમેરો.';
+
+  @override
   String get duplicateKeepBoth => 'બંને રાખો';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsGu extends AppLocalizations {
   String get twoStepOffBody => 'તમે બેકઅપ કોડથી સાઇન ઇન કર્યું, તેથી બે-પગલાંની ચકાસણી બંધ કરવામાં આવી. તમારું એકાઉન્ટ સુરક્ષિત રાખવા આ ફોન પર તેને ફરી સેટ કરો.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years વર્ષ',
-      one: '+$years વર્ષ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'તારીખ લખો';
-
-  @override
-  String get expiryTypeTitle => 'સમાપ્તિ તારીખ લખો';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ઉદાહરણ તરીકે $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'તે તારીખ સાચી લાગતી નથી. $example અજમાવો.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'આ તારીખ વીતી ગઈ છે, તેથી રેકોર્ડ સમાપ્ત તરીકે સાચવાશે.';
 
   @override
   String get expiryEndsToday => 'આ આજે સમાપ્ત થાય છે.';
-
-  @override
-  String get saveAndAddAnother => 'સાચવો અને બીજું ઉમેરો';
-
-  @override
-  String get quickStartTitle => 'ઝડપી શરૂઆત';
 
   @override
   String categoryCreatedAddGroup(String name) {

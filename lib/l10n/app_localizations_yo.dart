@@ -5025,6 +5025,47 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Lo ó kéré tán lẹ́tà kan tàbí nọ́ńbà kan.';
+
+  @override
+  String get recordSaveFailed => 'A kò lè fi pamọ́. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì tún gbìyànjú.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'O ti ní $name nínú $group, yóò parí ní $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'A fojú díwọ̀n ọjọ́ yìí láti inú ìwé rẹ. Ṣàyẹ̀wò pé ó bá a mu.';
+
+  @override
+  String get expiryOtherDates => 'Àwọn ọjọ́ mìíràn lórí ìwé yìí';
+
+  @override
+  String get scanPhotoSaved => 'A ti fi fọ́tò rẹ pamọ́ pẹ̀lú àkọsílẹ̀ yìí.';
+
+  @override
+  String get scanPhotoNotSaved => 'A kò fi fọ́tò rẹ pamọ́ nítorí àkọsílẹ̀ yìí ti ní iye fọ́tò tó pọ̀ jùlọ tí a gbà láàyè.';
+
+  @override
+  String get scanReadOnlineTitle => 'Ka ìwé yìí lórí ayélujára?';
+
+  @override
+  String get scanReadOnlineBody => 'Fóònù rẹ kò lè ka ìwé yìí dájúdájú. Vaultara lè fi ọ̀rọ̀ inú fọ́tò ránṣẹ́ sí sáfà rẹ̀ láti kà á. Fọ́tò náà máa wà lórí fóònù rẹ, a sì máa fi àwọn nọ́ńbà gígùn pamọ́.';
+
+  @override
+  String get scanReadOnlineNo => 'Kì í ṣe báyìí';
+
+  @override
+  String get scanReadOnlineYes => 'Kà á';
+
+  @override
+  String get scanReadOnlineNote => 'A ti ka ìwé yìí lórí ayélujára.';
+
+  @override
+  String get scanNoExpiryNote => 'Ó dà bí ẹni pé ìwé yìí kò ní ọjọ́ ìparí. Fi ọjọ́ tí o fẹ́ kí a rán ọ létí kún un.';
+
+  @override
   String get duplicateKeepBoth => 'Pa méjèèjì mọ́';
 
   @override
@@ -8715,43 +8756,10 @@ class AppLocalizationsYo extends AppLocalizations {
   String get twoStepOffBody => 'O wọlé pẹ̀lú kóòdù àfipamọ́, nítorí náà a pa ìjẹ́rìísí ìgbésẹ̀-méjì. Tún un ṣètò lórí fóònù yìí kí àkáǹtì rẹ lè wà ní ààbò.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+ọdún $years',
-      one: '+ọdún $years',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Tẹ ọjọ́';
-
-  @override
-  String get expiryTypeTitle => 'Tẹ ọjọ́ ìparí';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Fún àpẹẹrẹ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ọjọ́ yẹn kò dàbí pé ó tọ̀nà. Gbìyànjú $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ọjọ́ yìí ti kọjá, nítorí náà a ó fi àkọsílẹ̀ náà pamọ́ bí èyí tó ti parí.';
 
   @override
   String get expiryEndsToday => 'Èyí ń parí lónìí.';
-
-  @override
-  String get saveAndAddAnother => 'Fi pamọ́ kí o sì fi òmíràn kún un';
-
-  @override
-  String get quickStartTitle => 'Ìbẹ̀rẹ̀ kíákíá';
 
   @override
   String categoryCreatedAddGroup(String name) {

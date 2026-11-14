@@ -5167,6 +5167,47 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Uporabite vsaj eno črko ali številko.';
+
+  @override
+  String get recordSaveFailed => 'Shranjevanje ni uspelo. Preverite povezavo in poskusite znova.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '$name že imate v skupini $group, poteče $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Ta datum smo uganili iz vašega dokumenta. Preverite, ali se ujema.';
+
+  @override
+  String get expiryOtherDates => 'Drugi datumi na tem dokumentu';
+
+  @override
+  String get scanPhotoSaved => 'Vaša fotografija je shranjena pri tem zapisu.';
+
+  @override
+  String get scanPhotoNotSaved => 'Vaša fotografija ni bila shranjena, ker ima ta zapis že največje dovoljeno število fotografij.';
+
+  @override
+  String get scanReadOnlineTitle => 'Želite ta dokument prebrati prek spleta?';
+
+  @override
+  String get scanReadOnlineBody => 'Vaš telefon tega dokumenta ni mogel zanesljivo prebrati. Vaultara lahko pošlje besedilo s fotografije na svoj strežnik, da ga prebere. Fotografija ostane v vašem telefonu, dolge številke pa so skrite.';
+
+  @override
+  String get scanReadOnlineNo => 'Ne zdaj';
+
+  @override
+  String get scanReadOnlineYes => 'Preberi';
+
+  @override
+  String get scanReadOnlineNote => 'Ta dokument smo prebrali prek spleta.';
+
+  @override
+  String get scanNoExpiryNote => 'Zdi se, da ta dokument nima datuma poteka. Dodajte datum, na katerega želite opomnik.';
+
+  @override
   String get duplicateKeepBoth => 'Obdrži oba';
 
   @override
@@ -8925,45 +8966,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get twoStepOffBody => 'Prijavili ste se z rezervno kodo, zato je bilo preverjanje v dveh korakih izklopljeno. Znova ga nastavite na tem telefonu, da bo račun ostal zaščiten.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years let',
-      few: '+$years leta',
-      two: '+$years leti',
-      one: '+$years leto',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Vpiši datum';
-
-  @override
-  String get expiryTypeTitle => 'Vpišite datum poteka';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Na primer $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ta datum se ne zdi pravilen. Poskusite $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ta datum je že mimo, zato bo zapis shranjen kot potekel.';
 
   @override
   String get expiryEndsToday => 'To poteče danes.';
-
-  @override
-  String get saveAndAddAnother => 'Shrani in dodaj še enega';
-
-  @override
-  String get quickStartTitle => 'Hiter začetek';
 
   @override
   String categoryCreatedAddGroup(String name) {

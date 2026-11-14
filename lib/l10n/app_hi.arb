@@ -1675,6 +1675,19 @@
   "scanUpdateExisting": "अपडेट करें",
   "duplicateRecordTitle": "पहले से जोड़ा गया है",
   "duplicateRecordBody": "आपके पास पहले से {name} है, जो {date} को समाप्त होता है।",
+  "recordNameNeedsLetter": "कम से कम एक अक्षर या अंक इस्तेमाल करें।",
+  "recordSaveFailed": "सेव नहीं हो सका। अपना कनेक्शन जाँचें और फिर से कोशिश करें।",
+  "duplicateRecordElsewhere": "आपके पास पहले से {group} में {name} है, जो {date} को समाप्त होगा।",
+  "expiryGuessedHint": "हमने यह तारीख आपके दस्तावेज़ से अनुमान लगाई है। जाँच लें कि यह सही है।",
+  "expiryOtherDates": "इस दस्तावेज़ की दूसरी तारीखें",
+  "scanPhotoSaved": "आपकी फ़ोटो इस रिकॉर्ड के साथ सेव हो गई है।",
+  "scanPhotoNotSaved": "आपकी फ़ोटो सेव नहीं हुई, क्योंकि इस रिकॉर्ड में पहले से अधिकतम अनुमत फ़ोटो हैं।",
+  "scanReadOnlineTitle": "यह दस्तावेज़ ऑनलाइन पढ़ें?",
+  "scanReadOnlineBody": "आपका फ़ोन यह दस्तावेज़ पक्के तौर पर नहीं पढ़ सका। Vaultara पढ़ने के लिए फ़ोटो का टेक्स्ट अपने सर्वर पर भेज सकता है। फ़ोटो आपके फ़ोन पर ही रहती है, और लंबे नंबर छिपा दिए जाते हैं।",
+  "scanReadOnlineNo": "अभी नहीं",
+  "scanReadOnlineYes": "पढ़ें",
+  "scanReadOnlineNote": "हमने यह दस्तावेज़ ऑनलाइन पढ़ा।",
+  "scanNoExpiryNote": "लगता है इस दस्तावेज़ पर कोई समाप्ति तिथि नहीं है। वह तारीख जोड़ें जिसकी आपको याद दिलानी है।",
   "duplicateKeepBoth": "दोनों रखें",
   "duplicateUpdateExisting": "मौजूदा अपडेट करें",
   "editorDefaultsHint": "{group} के लिए सामान्य सेटिंग भर दी गई हैं। आप उन्हें और विवरण में बदल सकते हैं।",
@@ -3222,36 +3235,8 @@
   "twoStepSkipForNow": "अभी छोड़ें",
   "twoStepOffTitle": "दो-चरणीय सत्यापन बंद है",
   "twoStepOffBody": "आपने बैकअप कोड से साइन इन किया, इसलिए दो-चरणीय सत्यापन बंद कर दिया गया। अपना खाता सुरक्षित रखने के लिए इस फ़ोन पर इसे फिर से सेट करें।",
-  "expiryPlusYears": "{years, plural, one{+{years} साल} other{+{years} साल}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "तारीख लिखें",
-  "expiryTypeTitle": "समाप्ति तिथि लिखें",
-  "expiryTypeHint": "उदाहरण के लिए {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "यह तारीख सही नहीं लग रही। {example} आज़माएं।",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "यह तारीख बीत चुकी है, इसलिए रिकॉर्ड समाप्त के रूप में सहेजा जाएगा।",
   "expiryEndsToday": "यह आज समाप्त हो रहा है।",
-  "saveAndAddAnother": "सहेजें और दूसरा जोड़ें",
-  "quickStartTitle": "झटपट शुरुआत",
   "categoryCreatedAddGroup": "{name} बन गई। इसमें समूह जोड़ें?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

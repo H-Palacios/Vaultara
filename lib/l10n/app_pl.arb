@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Aktualizuj",
   "duplicateRecordTitle": "Już dodano",
   "duplicateRecordBody": "Masz już rekord {name}, który wygasa {date}.",
+  "recordNameNeedsLetter": "Użyj co najmniej jednej litery lub cyfry.",
+  "recordSaveFailed": "Nie udało się zapisać. Sprawdź połączenie i spróbuj ponownie.",
+  "duplicateRecordElsewhere": "Masz już {name} w grupie {group}, wygasa {date}.",
+  "expiryGuessedHint": "Tę datę odgadliśmy z Twojego dokumentu. Sprawdź, czy się zgadza.",
+  "expiryOtherDates": "Inne daty na tym dokumencie",
+  "scanPhotoSaved": "Twoje zdjęcie jest zapisane z tym wpisem.",
+  "scanPhotoNotSaved": "Twoje zdjęcie nie zostało zapisane, bo ten wpis ma już maksymalną liczbę zdjęć.",
+  "scanReadOnlineTitle": "Odczytać ten dokument online?",
+  "scanReadOnlineBody": "Telefon nie zdołał pewnie odczytać tego dokumentu. Vaultara może wysłać tekst ze zdjęcia na swój serwer, aby go odczytać. Zdjęcie zostaje w telefonie, a długie numery są ukrywane.",
+  "scanReadOnlineNo": "Nie teraz",
+  "scanReadOnlineYes": "Odczytaj",
+  "scanReadOnlineNote": "Odczytaliśmy ten dokument online.",
+  "scanNoExpiryNote": "Ten dokument chyba nie ma daty ważności. Dodaj datę, o której chcesz otrzymać przypomnienie.",
   "duplicateKeepBoth": "Zachowaj oba",
   "duplicateUpdateExisting": "Aktualizuj istniejący",
   "editorDefaultsHint": "Uzupełniono typowe ustawienia dla grupy {group}. Możesz je zmienić w sekcji Więcej szczegółów.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Pomiń na razie",
   "twoStepOffTitle": "Weryfikacja dwuetapowa jest wyłączona",
   "twoStepOffBody": "Zalogowano się kodem zapasowym, więc weryfikacja dwuetapowa została wyłączona. Skonfiguruj ją ponownie na tym telefonie, aby konto pozostało chronione.",
-  "expiryPlusYears": "{years, plural, one{+{years} rok} few{+{years} lata} many{+{years} lat} other{+{years} roku}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Wpisz datę",
-  "expiryTypeTitle": "Wpisz datę ważności",
-  "expiryTypeHint": "Na przykład {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Ta data nie wygląda poprawnie. Spróbuj {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Ta data już minęła, więc wpis zostanie zapisany jako wygasły.",
   "expiryEndsToday": "Wygasa dzisiaj.",
-  "saveAndAddAnother": "Zapisz i dodaj kolejny",
-  "quickStartTitle": "Szybki start",
   "categoryCreatedAddGroup": "Utworzono {name}. Dodać grupę?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

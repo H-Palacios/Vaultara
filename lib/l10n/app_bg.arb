@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "Обнови",
   "duplicateRecordTitle": "Вече е добавено",
   "duplicateRecordBody": "Вече имате {name}, който изтича на {date}.",
+  "recordNameNeedsLetter": "Използвайте поне една буква или цифра.",
+  "recordSaveFailed": "Неуспешно запазване. Проверете връзката си и опитайте отново.",
+  "duplicateRecordElsewhere": "Вече имате {name} в {group}, изтича на {date}.",
+  "expiryGuessedHint": "Познахме тази дата от документа ви. Проверете дали съвпада.",
+  "expiryOtherDates": "Други дати в този документ",
+  "scanPhotoSaved": "Снимката ви е запазена към този запис.",
+  "scanPhotoNotSaved": "Снимката ви не е запазена, защото този запис вече има максималния брой снимки.",
+  "scanReadOnlineTitle": "Да се прочете ли документът онлайн?",
+  "scanReadOnlineBody": "Телефонът ви не можа да прочете този документ със сигурност. Vaultara може да изпрати текста от снимката до своя сървър, за да го прочете. Снимката остава на телефона ви, а дългите номера се скриват.",
+  "scanReadOnlineNo": "Не сега",
+  "scanReadOnlineYes": "Прочети",
+  "scanReadOnlineNote": "Прочетохме този документ онлайн.",
+  "scanNoExpiryNote": "Изглежда този документ няма дата на изтичане. Добавете датата, за която искате напомняне.",
   "duplicateKeepBoth": "Запази и двата",
   "duplicateUpdateExisting": "Обнови съществуващия",
   "editorDefaultsHint": "Попълнени са типични настройки за {group}. Можете да ги промените в Още подробности.",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "Пропускане засега",
   "twoStepOffTitle": "Потвърждаването в две стъпки е изключено",
   "twoStepOffBody": "Влязохте с резервен код, затова потвърждаването в две стъпки беше изключено. Настройте го отново на този телефон, за да остане акаунтът ви защитен.",
-  "expiryPlusYears": "{years, plural, =1{+{years} година} other{+{years} години}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Въвеждане на дата",
-  "expiryTypeTitle": "Въведете датата на изтичане",
-  "expiryTypeHint": "Например {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Тази дата не изглежда правилна. Опитайте {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Тази дата е минала, така че записът ще бъде запазен като изтекъл.",
   "expiryEndsToday": "Изтича днес.",
-  "saveAndAddAnother": "Запазване и добавяне на друг",
-  "quickStartTitle": "Бърз старт",
   "categoryCreatedAddGroup": "{name} е създадена. Да се добави ли група?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

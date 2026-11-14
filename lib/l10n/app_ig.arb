@@ -1668,6 +1668,19 @@
   "scanUpdateExisting": "Melite",
   "duplicateRecordTitle": "Etinyelarị ya",
   "duplicateRecordBody": "Ị nwerelarị {name} nke ga-agwụ {date}.",
+  "recordNameNeedsLetter": "Jiri opekata otu mkpụrụedemede ma ọ bụ nọmba.",
+  "recordSaveFailed": "Enweghị ike ịchekwa. Lelee njikọ gị ma nwaa ọzọ.",
+  "duplicateRecordElsewhere": "Ị nweelarị {name} na {group}, ọ ga-agwụ na {date}.",
+  "expiryGuessedHint": "Anyị chere ụbọchị a site na akwụkwọ gị. Lelee na ọ kwekọrọ.",
+  "expiryOtherDates": "Ụbọchị ndị ọzọ dị n'akwụkwọ a",
+  "scanPhotoSaved": "Echekwala foto gị na ndekọ a.",
+  "scanPhotoNotSaved": "Echekwaghị foto gị n'ihi na ndekọ a enweelarị ọnụọgụ foto kachasị ekwe.",
+  "scanReadOnlineTitle": "Gụọ akwụkwọ a n'ịntanetị?",
+  "scanReadOnlineBody": "Ekwentị gị enweghị ike ịgụ akwụkwọ a nke ọma. Vaultara nwere ike iziga ederede foto ahụ na sava ya ka ọ gụọ ya. Foto ahụ na-anọ na ekwentị gị, a na-ezokwa nọmba ogologo.",
+  "scanReadOnlineNo": "Ọ bụghị ugbu a",
+  "scanReadOnlineYes": "Gụọ ya",
+  "scanReadOnlineNote": "Anyị gụrụ akwụkwọ a n'ịntanetị.",
+  "scanNoExpiryNote": "Ọ dị ka akwụkwọ a enweghị ụbọchị ọ ga-agwụ. Tinye ụbọchị ị chọrọ ka a chetara gị.",
   "duplicateKeepBoth": "Debe abụọ",
   "duplicateUpdateExisting": "Melite nke dị",
   "editorDefaultsHint": "Ejuputala ntọala ndị a na-ahụkarị maka {group}. Ị nwere ike ịgbanwe ha na Nkọwa ndị ọzọ.",
@@ -3215,36 +3228,8 @@
   "twoStepSkipForNow": "Wụfee ugbu a",
   "twoStepOffTitle": "Nkwenye nzọụkwụ abụọ agbanyụọla",
   "twoStepOffBody": "Ị banyere site na koodu ndabere, ya mere a gbanyụrụ nkwenye nzọụkwụ abụọ. Tọgharịa ya na ekwentị a ka akaụntụ gị nọrọ na nchebe.",
-  "expiryPlusYears": "{years, plural, =1{+afọ {years}} other{+afọ {years}}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Dee ụbọchị",
-  "expiryTypeTitle": "Dee ụbọchị njedebe",
-  "expiryTypeHint": "Dịka ọmụmaatụ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Ụbọchị ahụ adịghị ka ọ ziri ezi. Nwaa {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Ụbọchị a agafeela, ya mere a ga-echekwa ndekọ ahụ dị ka nke gwụrụ.",
   "expiryEndsToday": "Nke a na-agwụ taa.",
-  "saveAndAddAnother": "Chekwaa ma tinye ọzọ",
-  "quickStartTitle": "Mmalite ngwa ngwa",
   "categoryCreatedAddGroup": "E mepụtala {name}. Tinye otu na ya?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

@@ -1694,6 +1694,19 @@
   "scanUpdateExisting": "Opdater",
   "duplicateRecordTitle": "Allerede tilføjet",
   "duplicateRecordBody": "Du har allerede {name}, som udløber {date}.",
+  "recordNameNeedsLetter": "Brug mindst ét bogstav eller tal.",
+  "recordSaveFailed": "Kunne ikke gemme. Tjek din forbindelse, og prøv igen.",
+  "duplicateRecordElsewhere": "Du har allerede {name} i {group}, som udløber {date}.",
+  "expiryGuessedHint": "Vi har gættet denne dato ud fra dit dokument. Tjek, at den passer.",
+  "expiryOtherDates": "Andre datoer på dette dokument",
+  "scanPhotoSaved": "Dit billede er gemt sammen med denne post.",
+  "scanPhotoNotSaved": "Dit billede blev ikke gemt, fordi denne post allerede har det højeste antal billeder.",
+  "scanReadOnlineTitle": "Læs dette dokument online?",
+  "scanReadOnlineBody": "Din telefon kunne ikke læse dette dokument med sikkerhed. Vaultara kan sende teksten fra billedet til sin server for at læse den. Billedet bliver på din telefon, og lange numre skjules.",
+  "scanReadOnlineNo": "Ikke nu",
+  "scanReadOnlineYes": "Læs det",
+  "scanReadOnlineNote": "Vi har læst dette dokument online.",
+  "scanNoExpiryNote": "Dette dokument ser ikke ud til at have en udløbsdato. Tilføj den dato, du vil mindes om.",
   "duplicateKeepBoth": "Behold begge",
   "duplicateUpdateExisting": "Opdater eksisterende",
   "editorDefaultsHint": "Typiske indstillinger for {group} er udfyldt. Du kan ændre dem under Flere detaljer.",
@@ -3241,36 +3254,8 @@
   "twoStepSkipForNow": "Spring over for nu",
   "twoStepOffTitle": "Totrinsbekræftelse er slået fra",
   "twoStepOffBody": "Du loggede ind med en backupkode, så totrinsbekræftelse blev slået fra. Konfigurer den igen på denne telefon for at holde din konto beskyttet.",
-  "expiryPlusYears": "{years, plural, =1{+{years} år} other{+{years} år}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Skriv dato",
-  "expiryTypeTitle": "Skriv udløbsdatoen",
-  "expiryTypeHint": "For eksempel {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Den dato ser ikke rigtig ud. Prøv {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Denne dato er passeret, så posten gemmes som udløbet.",
   "expiryEndsToday": "Den udløber i dag.",
-  "saveAndAddAnother": "Gem og tilføj en til",
-  "quickStartTitle": "Hurtig start",
   "categoryCreatedAddGroup": "{name} er oprettet. Vil du tilføje en gruppe?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

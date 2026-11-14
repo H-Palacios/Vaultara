@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "புதுப்பி",
   "duplicateRecordTitle": "ஏற்கெனவே சேர்க்கப்பட்டுள்ளது",
   "duplicateRecordBody": "{date} அன்று காலாவதியாகும் {name} உங்களிடம் ஏற்கெனவே உள்ளது.",
+  "recordNameNeedsLetter": "குறைந்தது ஒரு எழுத்து அல்லது எண்ணைப் பயன்படுத்தவும்.",
+  "recordSaveFailed": "சேமிக்க முடியவில்லை. இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.",
+  "duplicateRecordElsewhere": "உங்களிடம் ஏற்கெனவே {group}-இல் {name} உள்ளது, {date} அன்று காலாவதியாகும்.",
+  "expiryGuessedHint": "இந்தத் தேதியை உங்கள் ஆவணத்திலிருந்து ஊகித்தோம். பொருந்துகிறதா எனச் சரிபார்க்கவும்.",
+  "expiryOtherDates": "இந்த ஆவணத்தில் உள்ள பிற தேதிகள்",
+  "scanPhotoSaved": "உங்கள் படம் இந்தப் பதிவுடன் சேமிக்கப்பட்டது.",
+  "scanPhotoNotSaved": "இந்தப் பதிவில் ஏற்கெனவே அனுமதிக்கப்பட்ட அதிகபட்ச படங்கள் உள்ளதால் உங்கள் படம் சேமிக்கப்படவில்லை.",
+  "scanReadOnlineTitle": "இந்த ஆவணத்தை ஆன்லைனில் படிக்கலாமா?",
+  "scanReadOnlineBody": "உங்கள் ஃபோனால் இந்த ஆவணத்தை உறுதியாகப் படிக்க முடியவில்லை. படிப்பதற்காக Vaultara படத்தின் உரையைத் தனது சர்வருக்கு அனுப்பலாம். படம் உங்கள் ஃபோனிலேயே இருக்கும், நீண்ட எண்கள் மறைக்கப்படும்.",
+  "scanReadOnlineNo": "இப்போது வேண்டாம்",
+  "scanReadOnlineYes": "படி",
+  "scanReadOnlineNote": "இந்த ஆவணத்தை ஆன்லைனில் படித்தோம்.",
+  "scanNoExpiryNote": "இந்த ஆவணத்துக்குக் காலாவதி தேதி இல்லை போல் தெரிகிறது. நினைவூட்ட வேண்டிய தேதியைச் சேர்க்கவும்.",
   "duplicateKeepBoth": "இரண்டையும் வைத்திரு",
   "duplicateUpdateExisting": "உள்ளதைப் புதுப்பி",
   "editorDefaultsHint": "{group} க்கான வழக்கமான அமைப்புகள் நிரப்பப்பட்டுள்ளன. அவற்றை மேலும் விவரங்களில் மாற்றலாம்.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "இப்போது தவிர்",
   "twoStepOffTitle": "இரண்டு படிச் சரிபார்ப்பு அணைக்கப்பட்டுள்ளது",
   "twoStepOffBody": "காப்புக் குறியீட்டுடன் உள்நுழைந்ததால் இரண்டு படிச் சரிபார்ப்பு அணைக்கப்பட்டது. கணக்கைப் பாதுகாப்பாக வைக்க இந்த ஃபோனில் மீண்டும் அமைக்கவும்.",
-  "expiryPlusYears": "{years, plural, =1{+{years} ஆண்டு} other{+{years} ஆண்டுகள்}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "தேதியைத் தட்டச்சு செய்",
-  "expiryTypeTitle": "காலாவதி தேதியைத் தட்டச்சு செய்யவும்",
-  "expiryTypeHint": "எடுத்துக்காட்டு {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "அந்தத் தேதி சரியாகத் தெரியவில்லை. {example} முயலவும்.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "இந்தத் தேதி கடந்துவிட்டது, எனவே பதிவு காலாவதியானதாகச் சேமிக்கப்படும்.",
   "expiryEndsToday": "இது இன்று காலாவதியாகிறது.",
-  "saveAndAddAnother": "சேமித்து மற்றொன்றைச் சேர்",
-  "quickStartTitle": "விரைவுத் தொடக்கம்",
   "categoryCreatedAddGroup": "{name} உருவாக்கப்பட்டது. குழுவைச் சேர்க்கவா?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

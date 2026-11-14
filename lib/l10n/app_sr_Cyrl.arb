@@ -1637,6 +1637,19 @@
   "scanUpdateExisting": "Ажурирај",
   "duplicateRecordTitle": "Већ додато",
   "duplicateRecordBody": "Већ имате запис {name} који истиче {date}.",
+  "recordNameNeedsLetter": "Користите бар једно слово или број.",
+  "recordSaveFailed": "Чување није успело. Проверите везу и покушајте поново.",
+  "duplicateRecordElsewhere": "Већ имате {name} у групи {group}, истиче {date}.",
+  "expiryGuessedHint": "Овај датум смо погодили из вашег документа. Проверите да ли одговара.",
+  "expiryOtherDates": "Остали датуми на овом документу",
+  "scanPhotoSaved": "Ваша фотографија је сачувана уз овај запис.",
+  "scanPhotoNotSaved": "Ваша фотографија није сачувана јер овај запис већ има највећи дозвољени број фотографија.",
+  "scanReadOnlineTitle": "Прочитати овај документ онлајн?",
+  "scanReadOnlineBody": "Ваш телефон није могао поуздано да прочита овај документ. Vaultara може да пошаље текст са фотографије на свој сервер да га прочита. Фотографија остаје на вашем телефону, а дуги бројеви се сакривају.",
+  "scanReadOnlineNo": "Не сада",
+  "scanReadOnlineYes": "Прочитај",
+  "scanReadOnlineNote": "Овај документ смо прочитали онлајн.",
+  "scanNoExpiryNote": "Изгледа да овај документ нема датум истека. Додајте датум на који желите подсетник.",
   "duplicateKeepBoth": "Задржи оба",
   "duplicateUpdateExisting": "Ажурирај постојећи",
   "editorDefaultsHint": "Попуњена су уобичајена подешавања за групу {group}. Можете их променити у одељку Више детаља.",
@@ -3184,36 +3197,8 @@
   "twoStepSkipForNow": "Прескочи за сада",
   "twoStepOffTitle": "Верификација у два корака је искључена",
   "twoStepOffBody": "Пријавили сте се резервним кодом, па је верификација у два корака искључена. Поново је подесите на овом телефону да би налог остао заштићен.",
-  "expiryPlusYears": "{years, plural, one{+{years} година} few{+{years} године} other{+{years} година}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Упиши датум",
-  "expiryTypeTitle": "Упишите датум истека",
-  "expiryTypeHint": "На пример {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Тај датум не изгледа исправно. Покушајте {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Овај датум је прошао, па ће запис бити сачуван као истекао.",
   "expiryEndsToday": "Ово истиче данас.",
-  "saveAndAddAnother": "Сачувај и додај још један",
-  "quickStartTitle": "Брзи почетак",
   "categoryCreatedAddGroup": "{name} је направљена. Додати групу?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

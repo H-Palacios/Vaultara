@@ -5063,6 +5063,47 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'किमान एक अक्षर किंवा अंक वापरा.';
+
+  @override
+  String get recordSaveFailed => 'सेव्ह करता आले नाही. तुमचे कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'तुमच्याकडे आधीच $group मध्ये $name आहे, $date रोजी संपते.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ही तारीख आम्ही तुमच्या दस्तऐवजावरून अंदाजे घेतली आहे. जुळते का ते तपासा.';
+
+  @override
+  String get expiryOtherDates => 'या दस्तऐवजावरील इतर तारखा';
+
+  @override
+  String get scanPhotoSaved => 'तुमचा फोटो या नोंदीसोबत सेव्ह झाला आहे.';
+
+  @override
+  String get scanPhotoNotSaved => 'या नोंदीत आधीच कमाल परवानगी असलेले फोटो असल्याने तुमचा फोटो सेव्ह झाला नाही.';
+
+  @override
+  String get scanReadOnlineTitle => 'हा दस्तऐवज ऑनलाइन वाचायचा?';
+
+  @override
+  String get scanReadOnlineBody => 'तुमचा फोन हा दस्तऐवज खात्रीने वाचू शकला नाही. Vaultara वाचण्यासाठी फोटोतील मजकूर त्याच्या सर्व्हरवर पाठवू शकते. फोटो तुमच्या फोनवरच राहतो, आणि लांब क्रमांक लपवले जातात.';
+
+  @override
+  String get scanReadOnlineNo => 'आता नाही';
+
+  @override
+  String get scanReadOnlineYes => 'वाचा';
+
+  @override
+  String get scanReadOnlineNote => 'आम्ही हा दस्तऐवज ऑनलाइन वाचला.';
+
+  @override
+  String get scanNoExpiryNote => 'या दस्तऐवजावर समाप्ती तारीख नाही असे दिसते. ज्या तारखेची आठवण हवी ती जोडा.';
+
+  @override
   String get duplicateKeepBoth => 'दोन्ही ठेवा';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsMr extends AppLocalizations {
   String get twoStepOffBody => 'तुम्ही बॅकअप कोडने साइन इन केले, म्हणून द्वि-चरण पडताळणी बंद केली गेली. तुमचे खाते सुरक्षित ठेवण्यासाठी या फोनवर ती पुन्हा सेट करा.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years वर्षे',
-      one: '+$years वर्ष',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'तारीख टाइप करा';
-
-  @override
-  String get expiryTypeTitle => 'समाप्ती तारीख टाइप करा';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'उदाहरणार्थ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ती तारीख बरोबर दिसत नाही. $example वापरून पहा.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ही तारीख उलटून गेली आहे, म्हणून नोंद कालबाह्य म्हणून जतन होईल.';
 
   @override
   String get expiryEndsToday => 'याची मुदत आज संपते.';
-
-  @override
-  String get saveAndAddAnother => 'जतन करा आणि आणखी एक जोडा';
-
-  @override
-  String get quickStartTitle => 'झटपट सुरुवात';
 
   @override
   String categoryCreatedAddGroup(String name) {

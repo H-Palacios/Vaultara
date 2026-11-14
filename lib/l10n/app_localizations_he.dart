@@ -5099,6 +5099,47 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'השתמשו לפחות באות או בספרה אחת.';
+
+  @override
+  String get recordSaveFailed => 'השמירה נכשלה. בדקו את החיבור ונסו שוב.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'כבר יש לכם $name ב$group, שפג ב־$date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ניחשנו את התאריך הזה מהמסמך שלכם. בדקו שהוא תואם.';
+
+  @override
+  String get expiryOtherDates => 'תאריכים נוספים במסמך הזה';
+
+  @override
+  String get scanPhotoSaved => 'התמונה שלכם נשמרה עם הרשומה הזו.';
+
+  @override
+  String get scanPhotoNotSaved => 'התמונה שלכם לא נשמרה כי לרשומה הזו כבר יש את מספר התמונות המרבי.';
+
+  @override
+  String get scanReadOnlineTitle => 'לקרוא את המסמך הזה באינטרנט?';
+
+  @override
+  String get scanReadOnlineBody => 'הטלפון שלכם לא הצליח לקרוא את המסמך הזה בוודאות. Vaultara יכולה לשלוח את הטקסט מהתמונה לשרת שלה כדי לקרוא אותו. התמונה נשארת בטלפון, ומספרים ארוכים מוסתרים.';
+
+  @override
+  String get scanReadOnlineNo => 'לא עכשיו';
+
+  @override
+  String get scanReadOnlineYes => 'לקרוא';
+
+  @override
+  String get scanReadOnlineNote => 'קראנו את המסמך הזה באינטרנט.';
+
+  @override
+  String get scanNoExpiryNote => 'נראה שלמסמך הזה אין תאריך תפוגה. הוסיפו את התאריך שעליו תרצו תזכורת.';
+
+  @override
   String get duplicateKeepBoth => 'השאר את שניהם';
 
   @override
@@ -8824,44 +8865,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get twoStepOffBody => 'התחברתם עם קוד גיבוי, ולכן האימות הדו-שלבי כובה. הגדירו אותו מחדש בטלפון הזה כדי שהחשבון יישאר מוגן.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years שנים',
-      two: '+$years שנים',
-      one: '+שנה $years',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'הקלדת תאריך';
-
-  @override
-  String get expiryTypeTitle => 'הקלידו את תאריך התפוגה';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'לדוגמה $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'התאריך לא נראה תקין. נסו $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'התאריך הזה עבר, ולכן הרשומה תישמר כפגת תוקף.';
 
   @override
   String get expiryEndsToday => 'התוקף פג היום.';
-
-  @override
-  String get saveAndAddAnother => 'שמירה והוספת עוד אחת';
-
-  @override
-  String get quickStartTitle => 'התחלה מהירה';
 
   @override
   String categoryCreatedAddGroup(String name) {

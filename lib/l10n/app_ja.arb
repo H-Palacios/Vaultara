@@ -1675,6 +1675,19 @@
   "scanUpdateExisting": "更新",
   "duplicateRecordTitle": "すでに追加されています",
   "duplicateRecordBody": "{date}が期限の{name}がすでにあります。",
+  "recordNameNeedsLetter": "文字または数字を1つ以上使ってください。",
+  "recordSaveFailed": "保存できませんでした。接続を確認して、もう一度お試しください。",
+  "duplicateRecordElsewhere": "{group}にはすでに{name}があります（{date}に期限切れ）。",
+  "expiryGuessedHint": "この日付は書類から推測しました。合っているか確認してください。",
+  "expiryOtherDates": "この書類にあるほかの日付",
+  "scanPhotoSaved": "写真はこの記録と一緒に保存されました。",
+  "scanPhotoNotSaved": "この記録はすでに写真の上限に達しているため、写真は保存されませんでした。",
+  "scanReadOnlineTitle": "この書類をオンラインで読み取りますか？",
+  "scanReadOnlineBody": "スマートフォンでこの書類を確実に読み取れませんでした。Vaultaraは写真の文字をサーバーに送って読み取れます。写真はスマートフォンに残り、長い番号は隠されます。",
+  "scanReadOnlineNo": "今はしない",
+  "scanReadOnlineYes": "読み取る",
+  "scanReadOnlineNote": "この書類はオンラインで読み取りました。",
+  "scanNoExpiryNote": "この書類には有効期限がないようです。リマインドしてほしい日付を追加してください。",
   "duplicateKeepBoth": "両方残す",
   "duplicateUpdateExisting": "既存の記録を更新",
   "editorDefaultsHint": "{group}の一般的な設定を入力しました。その他の詳細で変更できます。",
@@ -3222,36 +3235,8 @@
   "twoStepSkipForNow": "今はスキップ",
   "twoStepOffTitle": "2 段階認証はオフです",
   "twoStepOffBody": "バックアップコードでログインしたため、2 段階認証がオフになりました。アカウントを守るため、このスマートフォンで設定し直してください。",
-  "expiryPlusYears": "{years, plural, other{+{years} 年}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "日付を入力",
-  "expiryTypeTitle": "有効期限を入力",
-  "expiryTypeHint": "例: {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "その日付は正しくないようです。{example} の形式で入力してください。",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "この日付は過ぎているため、記録は期限切れとして保存されます。",
   "expiryEndsToday": "今日が期限です。",
-  "saveAndAddAnother": "保存してもう 1 件追加",
-  "quickStartTitle": "クイックスタート",
   "categoryCreatedAddGroup": "{name} を作成しました。グループを追加しますか？",
   "@categoryCreatedAddGroup": {
     "placeholders": {

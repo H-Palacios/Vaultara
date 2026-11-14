@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Kemas kini",
   "duplicateRecordTitle": "Sudah ditambah",
   "duplicateRecordBody": "Anda sudah mempunyai {name} yang tamat tempoh pada {date}.",
+  "recordNameNeedsLetter": "Gunakan sekurang-kurangnya satu huruf atau nombor.",
+  "recordSaveFailed": "Tidak dapat disimpan. Semak sambungan anda dan cuba lagi.",
+  "duplicateRecordElsewhere": "Anda sudah mempunyai {name} dalam {group}, tamat pada {date}.",
+  "expiryGuessedHint": "Kami meneka tarikh ini daripada dokumen anda. Semak sama ada ia sepadan.",
+  "expiryOtherDates": "Tarikh lain pada dokumen ini",
+  "scanPhotoSaved": "Foto anda disimpan bersama rekod ini.",
+  "scanPhotoNotSaved": "Foto anda tidak disimpan kerana rekod ini sudah mempunyai bilangan foto maksimum.",
+  "scanReadOnlineTitle": "Baca dokumen ini dalam talian?",
+  "scanReadOnlineBody": "Telefon anda tidak dapat membaca dokumen ini dengan pasti. Vaultara boleh menghantar teks daripada foto ke pelayannya untuk dibaca. Foto kekal pada telefon anda, dan nombor panjang disembunyikan.",
+  "scanReadOnlineNo": "Bukan sekarang",
+  "scanReadOnlineYes": "Baca",
+  "scanReadOnlineNote": "Kami membaca dokumen ini dalam talian.",
+  "scanNoExpiryNote": "Dokumen ini nampaknya tiada tarikh tamat. Tambah tarikh yang anda mahu diingatkan.",
   "duplicateKeepBoth": "Simpan kedua-duanya",
   "duplicateUpdateExisting": "Kemas kini yang sedia ada",
   "editorDefaultsHint": "Tetapan biasa untuk {group} telah diisi. Anda boleh mengubahnya dalam Butiran lanjut.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Langkau dahulu",
   "twoStepOffTitle": "Pengesahan dua langkah dimatikan",
   "twoStepOffBody": "Anda log masuk dengan kod sandaran, jadi pengesahan dua langkah telah dimatikan. Sediakannya semula pada telefon ini supaya akaun anda kekal dilindungi.",
-  "expiryPlusYears": "{years, plural, other{+{years} tahun}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Taip tarikh",
-  "expiryTypeTitle": "Taip tarikh tamat tempoh",
-  "expiryTypeHint": "Contohnya {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Tarikh itu nampaknya tidak betul. Cuba {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Tarikh ini sudah berlalu, jadi rekod akan disimpan sebagai tamat tempoh.",
   "expiryEndsToday": "Ini tamat tempoh hari ini.",
-  "saveAndAddAnother": "Simpan dan tambah satu lagi",
-  "quickStartTitle": "Mula pantas",
   "categoryCreatedAddGroup": "{name} dibuat. Tambah kumpulan padanya?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

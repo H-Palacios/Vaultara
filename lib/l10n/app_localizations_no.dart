@@ -5063,6 +5063,47 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Bruk minst én bokstav eller ett tall.';
+
+  @override
+  String get recordSaveFailed => 'Kunne ikke lagre. Sjekk tilkoblingen og prøv igjen.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Du har allerede $name i $group, som utløper $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Vi gjettet denne datoen ut fra dokumentet ditt. Sjekk at den stemmer.';
+
+  @override
+  String get expiryOtherDates => 'Andre datoer på dette dokumentet';
+
+  @override
+  String get scanPhotoSaved => 'Bildet ditt er lagret sammen med denne oppføringen.';
+
+  @override
+  String get scanPhotoNotSaved => 'Bildet ditt ble ikke lagret fordi denne oppføringen allerede har flest mulig bilder.';
+
+  @override
+  String get scanReadOnlineTitle => 'Lese dette dokumentet på nett?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefonen din klarte ikke å lese dette dokumentet sikkert. Vaultara kan sende teksten fra bildet til serveren sin for å lese den. Bildet blir på telefonen din, og lange numre skjules.';
+
+  @override
+  String get scanReadOnlineNo => 'Ikke nå';
+
+  @override
+  String get scanReadOnlineYes => 'Les det';
+
+  @override
+  String get scanReadOnlineNote => 'Vi leste dette dokumentet på nett.';
+
+  @override
+  String get scanNoExpiryNote => 'Dette dokumentet ser ikke ut til å ha en utløpsdato. Legg til datoen du vil bli påminnet om.';
+
+  @override
   String get duplicateKeepBoth => 'Behold begge';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get twoStepOffBody => 'Du logget på med en reservekode, så totrinnsbekreftelse ble slått av. Konfigurer den på nytt på denne telefonen for å holde kontoen beskyttet.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years år',
-      one: '+$years år',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Skriv dato';
-
-  @override
-  String get expiryTypeTitle => 'Skriv utløpsdatoen';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'For eksempel $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Den datoen ser ikke riktig ut. Prøv $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Denne datoen har passert, så oppføringen lagres som utløpt.';
 
   @override
   String get expiryEndsToday => 'Denne utløper i dag.';
-
-  @override
-  String get saveAndAddAnother => 'Lagre og legg til en til';
-
-  @override
-  String get quickStartTitle => 'Hurtigstart';
 
   @override
   String categoryCreatedAddGroup(String name) {

@@ -1638,6 +1638,19 @@
   "scanUpdateExisting": "Обновить",
   "duplicateRecordTitle": "Уже добавлено",
   "duplicateRecordBody": "У вас уже есть «{name}» со сроком до {date}.",
+  "recordNameNeedsLetter": "Используйте хотя бы одну букву или цифру.",
+  "recordSaveFailed": "Не удалось сохранить. Проверьте подключение и повторите попытку.",
+  "duplicateRecordElsewhere": "У вас уже есть {name} в группе «{group}», истекает {date}.",
+  "expiryGuessedHint": "Эту дату мы угадали по вашему документу. Проверьте, что она верна.",
+  "expiryOtherDates": "Другие даты в этом документе",
+  "scanPhotoSaved": "Ваше фото сохранено вместе с этой записью.",
+  "scanPhotoNotSaved": "Ваше фото не сохранено, потому что у этой записи уже максимальное число фото.",
+  "scanReadOnlineTitle": "Прочитать документ онлайн?",
+  "scanReadOnlineBody": "Телефону не удалось точно прочитать этот документ. Vaultara может отправить текст с фото на свой сервер, чтобы прочитать его. Фото остаётся на вашем телефоне, а длинные номера скрываются.",
+  "scanReadOnlineNo": "Не сейчас",
+  "scanReadOnlineYes": "Прочитать",
+  "scanReadOnlineNote": "Мы прочитали этот документ онлайн.",
+  "scanNoExpiryNote": "Похоже, у этого документа нет срока действия. Добавьте дату, о которой хотите получить напоминание.",
   "duplicateKeepBoth": "Оставить обе",
   "duplicateUpdateExisting": "Обновить имеющуюся",
   "editorDefaultsHint": "Подставлены типичные настройки для группы «{group}». Их можно изменить в разделе Подробнее.",
@@ -3185,36 +3198,8 @@
   "twoStepSkipForNow": "Пропустить пока",
   "twoStepOffTitle": "Двухэтапная проверка отключена",
   "twoStepOffBody": "Вы вошли с резервным кодом, поэтому двухэтапная проверка была отключена. Настройте её заново на этом телефоне, чтобы аккаунт оставался защищённым.",
-  "expiryPlusYears": "{years, plural, one{+{years} год} few{+{years} года} many{+{years} лет} other{+{years} года}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Ввести дату",
-  "expiryTypeTitle": "Введите дату окончания срока",
-  "expiryTypeHint": "Например {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Эта дата выглядит неверно. Попробуйте {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Эта дата уже прошла, поэтому запись будет сохранена как просроченная.",
   "expiryEndsToday": "Срок истекает сегодня.",
-  "saveAndAddAnother": "Сохранить и добавить ещё",
-  "quickStartTitle": "Быстрый старт",
   "categoryCreatedAddGroup": "{name}: категория создана. Добавить группу?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

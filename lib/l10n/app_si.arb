@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "යාවත්කාලීන කරන්න",
   "duplicateRecordTitle": "දැනටමත් එක් කර ඇත",
   "duplicateRecordBody": "ඔබ සතුව {date} දින කල් ඉකුත් වන {name} දැනටමත් ඇත.",
+  "recordNameNeedsLetter": "අවම වශයෙන් එක් අකුරක් හෝ අංකයක් භාවිත කරන්න.",
+  "recordSaveFailed": "සුරැකීමට නොහැකි විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.",
+  "duplicateRecordElsewhere": "ඔබට දැනටමත් {group} තුළ {name} ඇත, {date} දින ඉකුත් වේ.",
+  "expiryGuessedHint": "අපි මෙම දිනය ඔබේ ලේඛනයෙන් අනුමාන කළෙමු. එය ගැළපේදැයි පරීක්ෂා කරන්න.",
+  "expiryOtherDates": "මෙම ලේඛනයේ වෙනත් දින",
+  "scanPhotoSaved": "ඔබේ ඡායාරූපය මෙම වාර්තාව සමඟ සුරැකිණි.",
+  "scanPhotoNotSaved": "මෙම වාර්තාවට දැනටමත් අවසර ඇති උපරිම ඡායාරූප ඇති බැවින් ඔබේ ඡායාරූපය සුරැකුණේ නැත.",
+  "scanReadOnlineTitle": "මෙම ලේඛනය මාර්ගගතව කියවන්නද?",
+  "scanReadOnlineBody": "ඔබේ දුරකථනයට මෙම ලේඛනය නිසැකව කියවීමට නොහැකි විය. කියවීමට Vaultara හට ඡායාරූපයේ පෙළ එහි සේවාදායකයට යැවිය හැක. ඡායාරූපය ඔබේ දුරකථනයේම පවතින අතර දිගු අංක සඟවනු ලැබේ.",
+  "scanReadOnlineNo": "දැන් නොවේ",
+  "scanReadOnlineYes": "කියවන්න",
+  "scanReadOnlineNote": "අපි මෙම ලේඛනය මාර්ගගතව කියෙව්වෙමු.",
+  "scanNoExpiryNote": "මෙම ලේඛනයට ඉකුත් වන දිනයක් නැති බව පෙනේ. ඔබට මතක් කළ යුතු දිනය එක් කරන්න.",
   "duplicateKeepBoth": "දෙකම තබා ගන්න",
   "duplicateUpdateExisting": "දැනට ඇති එක යාවත්කාලීන කරන්න",
   "editorDefaultsHint": "{group} සඳහා සාමාන්‍ය සැකසුම් පුරවා ඇත. ඔබට ඒවා තවත් විස්තර තුළ වෙනස් කළ හැක.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "දැනට මඟ හරින්න",
   "twoStepOffTitle": "පියවර දෙකේ සත්‍යාපනය අක්‍රියයි",
   "twoStepOffBody": "ඔබ උපස්ථ කේතයකින් පුරනය වූ බැවින් පියවර දෙකේ සත්‍යාපනය අක්‍රිය කෙරිණි. ගිණුම ආරක්ෂිතව තබා ගැනීමට මෙම දුරකථනයේ එය නැවත සකසන්න.",
-  "expiryPlusYears": "{years, plural, one{+වසර {years}} other{+වසර {years}}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "දිනය ටයිප් කරන්න",
-  "expiryTypeTitle": "කල් ඉකුත් වන දිනය ටයිප් කරන්න",
-  "expiryTypeHint": "උදාහරණයක් ලෙස {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "එම දිනය නිවැරදි ලෙස නොපෙනේ. {example} උත්සාහ කරන්න.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "මෙම දිනය පසු වී ඇති බැවින් වාර්තාව කල් ඉකුත් වූ ලෙස සුරැකේ.",
   "expiryEndsToday": "මෙය අද කල් ඉකුත් වේ.",
-  "saveAndAddAnother": "සුරකින්න සහ තවත් එකක් එක් කරන්න",
-  "quickStartTitle": "ඉක්මන් ආරම්භය",
   "categoryCreatedAddGroup": "{name} සාදන ලදී. එයට කණ්ඩායමක් එක් කරන්නද?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

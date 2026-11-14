@@ -1701,6 +1701,19 @@
   "scanUpdateExisting": "تحديث",
   "duplicateRecordTitle": "تمت إضافته مسبقًا",
   "duplicateRecordBody": "لديك بالفعل {name} ينتهي في {date}.",
+  "recordNameNeedsLetter": "استخدم حرفًا أو رقمًا واحدًا على الأقل.",
+  "recordSaveFailed": "تعذّر الحفظ. تحقّق من اتصالك وحاول مرة أخرى.",
+  "duplicateRecordElsewhere": "لديك بالفعل {name} في {group}، وينتهي في {date}.",
+  "expiryGuessedHint": "خمّنّا هذا التاريخ من مستندك. تحقّق من أنه مطابق.",
+  "expiryOtherDates": "تواريخ أخرى في هذا المستند",
+  "scanPhotoSaved": "تم حفظ صورتك مع هذا السجل.",
+  "scanPhotoNotSaved": "لم تُحفظ صورتك لأن هذا السجل يحتوي بالفعل على الحد الأقصى المسموح به من الصور.",
+  "scanReadOnlineTitle": "قراءة هذا المستند عبر الإنترنت؟",
+  "scanReadOnlineBody": "لم يتمكن هاتفك من قراءة هذا المستند بثقة. يمكن لـ Vaultara إرسال النص الموجود في الصورة إلى خادمه لقراءته. تبقى الصورة على هاتفك، وتُخفى الأرقام الطويلة.",
+  "scanReadOnlineNo": "ليس الآن",
+  "scanReadOnlineYes": "اقرأه",
+  "scanReadOnlineNote": "قرأنا هذا المستند عبر الإنترنت.",
+  "scanNoExpiryNote": "لا يبدو أن لهذا المستند تاريخ انتهاء. أضف التاريخ الذي تريد أن نذكّرك به.",
   "duplicateKeepBoth": "الاحتفاظ بكليهما",
   "duplicateUpdateExisting": "تحديث الموجود",
   "editorDefaultsHint": "تم ملء الإعدادات المعتادة لـ {group}. يمكنك تغييرها في مزيد من التفاصيل.",
@@ -3248,36 +3261,8 @@
   "twoStepSkipForNow": "التخطي الآن",
   "twoStepOffTitle": "التحقق بخطوتين متوقف",
   "twoStepOffBody": "سجّلت الدخول برمز احتياطي، لذلك تم إيقاف التحقق بخطوتين. أعد إعداده على هذا الهاتف ليبقى حسابك محميًا.",
-  "expiryPlusYears": "{years, plural, =0{+{years} سنة} =1{+{years} سنة} two{+{years} سنتان} few{+{years} سنوات} many{+{years} سنة} other{+{years} سنة}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "كتابة التاريخ",
-  "expiryTypeTitle": "اكتب تاريخ الانتهاء",
-  "expiryTypeHint": "مثال: {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "لا يبدو هذا التاريخ صحيحًا. جرّب {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "هذا التاريخ قد مضى، لذلك سيُحفظ السجل على أنه منتهٍ.",
   "expiryEndsToday": "تنتهي صلاحيته اليوم.",
-  "saveAndAddAnother": "حفظ وإضافة آخر",
-  "quickStartTitle": "بداية سريعة",
   "categoryCreatedAddGroup": "تم إنشاء {name}. هل تريد إضافة مجموعة إليه؟",
   "@categoryCreatedAddGroup": {
     "placeholders": {

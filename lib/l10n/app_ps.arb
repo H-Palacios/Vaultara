@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "اپډېټ",
   "duplicateRecordTitle": "لا دمخه اضافه شوی",
   "duplicateRecordBody": "تاسو لا دمخه {name} لرئ چې په {date} پای ته رسیږي.",
+  "recordNameNeedsLetter": "لږ تر لږه یو توری یا شمېره وکاروئ.",
+  "recordSaveFailed": "خوندي نه شو. خپل اړیکه وګورئ او بیا هڅه وکړئ.",
+  "duplicateRecordElsewhere": "تاسو دمخه په {group} کې {name} لرئ، چې په {date} پای ته رسیږي.",
+  "expiryGuessedHint": "دا نېټه مو ستاسو له سند څخه اټکل کړه. وګورئ چې سمه ده.",
+  "expiryOtherDates": "په دې سند کې نورې نېټې",
+  "scanPhotoSaved": "ستاسو انځور له دې ثبت سره خوندي شو.",
+  "scanPhotoNotSaved": "ستاسو انځور خوندي نه شو، ځکه چې دا ثبت دمخه د اجازه لرونکو انځورونو تر ټولو ډېر شمېر لري.",
+  "scanReadOnlineTitle": "دا سند آنلاین ولوستل شي؟",
+  "scanReadOnlineBody": "ستاسو تلیفون ونه شو کولی دا سند په ډاډ سره ولولي. Vaultara کولی شي د انځور متن د لوستلو لپاره خپل سرور ته ولېږي. انځور ستاسو په تلیفون کې پاتې کېږي، او اوږدې شمېرې پټېږي.",
+  "scanReadOnlineNo": "اوس نه",
+  "scanReadOnlineYes": "ولولئ",
+  "scanReadOnlineNote": "موږ دا سند آنلاین ولوست.",
+  "scanNoExpiryNote": "داسې ښکاري چې دا سند د پای نېټه نه لري. هغه نېټه زیاته کړئ چې غواړئ یادونه یې درته وشي.",
   "duplicateKeepBoth": "دواړه وساتئ",
   "duplicateUpdateExisting": "شته اپډېټ کړئ",
   "editorDefaultsHint": "د {group} لپاره عادي تنظیمات ډک شول. تاسو یې په نور جزئیات کې بدلولی شئ.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "اوس یې پرېږدئ",
   "twoStepOffTitle": "دوه ګامي تصدیق بند دی",
   "twoStepOffBody": "تاسو په بیک اپ کوډ ننوتلي، نو دوه ګامي تصدیق بند شو. د خپل حساب د ساتنې لپاره یې په دې تلیفون کې بیا تنظیم کړئ.",
-  "expiryPlusYears": "{years, plural, =1{+{years} کال} other{+{years} کاله}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "نېټه ولیکئ",
-  "expiryTypeTitle": "د پای نېټه ولیکئ",
-  "expiryTypeHint": "د بېلګې په توګه {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "هغه نېټه سمه نه ښکاري. {example} وازمویئ.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "دا نېټه تېره شوې، نو ریکارډ به د پای ته رسېدلي په توګه خوندي شي.",
   "expiryEndsToday": "دا نن پای ته رسېږي.",
-  "saveAndAddAnother": "خوندي کړئ او بل یو زیات کړئ",
-  "quickStartTitle": "چټک پیل",
   "categoryCreatedAddGroup": "{name} جوړ شو. ګروپ ورته زیات شي؟",
   "@categoryCreatedAddGroup": {
     "placeholders": {

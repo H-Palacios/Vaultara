@@ -1656,6 +1656,19 @@
   "scanUpdateExisting": "Uppdatera",
   "duplicateRecordTitle": "Redan tillagd",
   "duplicateRecordBody": "Du har redan {name} som går ut {date}.",
+  "recordNameNeedsLetter": "Använd minst en bokstav eller siffra.",
+  "recordSaveFailed": "Det gick inte att spara. Kontrollera anslutningen och försök igen.",
+  "duplicateRecordElsewhere": "Du har redan {name} i {group}, som går ut {date}.",
+  "expiryGuessedHint": "Vi gissade det här datumet utifrån ditt dokument. Kontrollera att det stämmer.",
+  "expiryOtherDates": "Andra datum på det här dokumentet",
+  "scanPhotoSaved": "Ditt foto har sparats med den här posten.",
+  "scanPhotoNotSaved": "Ditt foto sparades inte eftersom den här posten redan har max antal foton.",
+  "scanReadOnlineTitle": "Läsa det här dokumentet online?",
+  "scanReadOnlineBody": "Din telefon kunde inte läsa dokumentet säkert. Vaultara kan skicka texten från fotot till sin server för att läsa den. Fotot stannar i din telefon och långa nummer döljs.",
+  "scanReadOnlineNo": "Inte nu",
+  "scanReadOnlineYes": "Läs det",
+  "scanReadOnlineNote": "Vi läste det här dokumentet online.",
+  "scanNoExpiryNote": "Det här dokumentet verkar inte ha något utgångsdatum. Lägg till det datum du vill bli påmind om.",
   "duplicateKeepBoth": "Behåll båda",
   "duplicateUpdateExisting": "Uppdatera befintlig",
   "editorDefaultsHint": "Vanliga inställningar för {group} är ifyllda. Du kan ändra dem under Fler detaljer.",
@@ -3203,36 +3216,8 @@
   "twoStepSkipForNow": "Hoppa över nu",
   "twoStepOffTitle": "Tvåstegsverifiering är avstängd",
   "twoStepOffBody": "Du loggade in med en reservkod, så tvåstegsverifiering stängdes av. Konfigurera den igen på den här telefonen för att hålla kontot skyddat.",
-  "expiryPlusYears": "{years, plural, =1{+{years} år} other{+{years} år}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Skriv datum",
-  "expiryTypeTitle": "Skriv utgångsdatumet",
-  "expiryTypeHint": "Till exempel {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Det datumet ser inte rätt ut. Prova {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Det här datumet har passerat, så posten sparas som utgången.",
   "expiryEndsToday": "Det här går ut i dag.",
-  "saveAndAddAnother": "Spara och lägg till en till",
-  "quickStartTitle": "Snabbstart",
   "categoryCreatedAddGroup": "{name} har skapats. Lägga till en grupp?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

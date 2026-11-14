@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "Yenilə",
   "duplicateRecordTitle": "Artıq əlavə edilib",
   "duplicateRecordBody": "{name} sənədiniz artıq var, bitmə tarixi {date}.",
+  "recordNameNeedsLetter": "Ən azı bir hərf və ya rəqəm istifadə edin.",
+  "recordSaveFailed": "Yadda saxlamaq mümkün olmadı. Bağlantınızı yoxlayın və yenidən cəhd edin.",
+  "duplicateRecordElsewhere": "Sizdə artıq {group} qrupunda {name} var, {date} tarixində bitir.",
+  "expiryGuessedHint": "Bu tarixi sənədinizdən təxmin etdik. Uyğun olduğunu yoxlayın.",
+  "expiryOtherDates": "Bu sənəddəki digər tarixlər",
+  "scanPhotoSaved": "Şəkliniz bu qeydlə birlikdə saxlanıldı.",
+  "scanPhotoNotSaved": "Şəkliniz saxlanılmadı, çünki bu qeyddə artıq icazə verilən maksimum şəkil var.",
+  "scanReadOnlineTitle": "Bu sənəd onlayn oxunsun?",
+  "scanReadOnlineBody": "Telefonunuz bu sənədi əminliklə oxuya bilmədi. Vaultara oxumaq üçün şəkildəki mətni öz serverinə göndərə bilər. Şəkil telefonunuzda qalır, uzun nömrələr gizlədilir.",
+  "scanReadOnlineNo": "İndi yox",
+  "scanReadOnlineYes": "Oxu",
+  "scanReadOnlineNote": "Bu sənədi onlayn oxuduq.",
+  "scanNoExpiryNote": "Görünür, bu sənədin bitmə tarixi yoxdur. Xatırlatma istədiyiniz tarixi əlavə edin.",
   "duplicateKeepBoth": "İkisini də saxla",
   "duplicateUpdateExisting": "Mövcudu yenilə",
   "editorDefaultsHint": "{group} üçün tipik ayarlar dolduruldu. Onları Ətraflı məlumat bölməsində dəyişə bilərsiniz.",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "İndilik keç",
   "twoStepOffTitle": "İki addımlı doğrulama söndürülüb",
   "twoStepOffBody": "Ehtiyat kodla daxil oldunuz, ona görə iki addımlı doğrulama söndürüldü. Hesabınızı qorumaq üçün onu bu telefonda yenidən qurun.",
-  "expiryPlusYears": "{years, plural, =1{+{years} il} other{+{years} il}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Tarixi yaz",
-  "expiryTypeTitle": "Bitmə tarixini yazın",
-  "expiryTypeHint": "Məsələn {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Bu tarix düzgün görünmür. {example} sınayın.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Bu tarix keçib, ona görə qeyd müddəti bitmiş kimi saxlanacaq.",
   "expiryEndsToday": "Bunun müddəti bu gün bitir.",
-  "saveAndAddAnother": "Saxla və başqasını əlavə et",
-  "quickStartTitle": "Sürətli başlanğıc",
   "categoryCreatedAddGroup": "{name} yaradıldı. Ona qrup əlavə edilsin?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

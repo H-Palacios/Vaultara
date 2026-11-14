@@ -5062,6 +5062,47 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'අවම වශයෙන් එක් අකුරක් හෝ අංකයක් භාවිත කරන්න.';
+
+  @override
+  String get recordSaveFailed => 'සුරැකීමට නොහැකි විය. ඔබේ සම්බන්ධතාව පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'ඔබට දැනටමත් $group තුළ $name ඇත, $date දින ඉකුත් වේ.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'අපි මෙම දිනය ඔබේ ලේඛනයෙන් අනුමාන කළෙමු. එය ගැළපේදැයි පරීක්ෂා කරන්න.';
+
+  @override
+  String get expiryOtherDates => 'මෙම ලේඛනයේ වෙනත් දින';
+
+  @override
+  String get scanPhotoSaved => 'ඔබේ ඡායාරූපය මෙම වාර්තාව සමඟ සුරැකිණි.';
+
+  @override
+  String get scanPhotoNotSaved => 'මෙම වාර්තාවට දැනටමත් අවසර ඇති උපරිම ඡායාරූප ඇති බැවින් ඔබේ ඡායාරූපය සුරැකුණේ නැත.';
+
+  @override
+  String get scanReadOnlineTitle => 'මෙම ලේඛනය මාර්ගගතව කියවන්නද?';
+
+  @override
+  String get scanReadOnlineBody => 'ඔබේ දුරකථනයට මෙම ලේඛනය නිසැකව කියවීමට නොහැකි විය. කියවීමට Vaultara හට ඡායාරූපයේ පෙළ එහි සේවාදායකයට යැවිය හැක. ඡායාරූපය ඔබේ දුරකථනයේම පවතින අතර දිගු අංක සඟවනු ලැබේ.';
+
+  @override
+  String get scanReadOnlineNo => 'දැන් නොවේ';
+
+  @override
+  String get scanReadOnlineYes => 'කියවන්න';
+
+  @override
+  String get scanReadOnlineNote => 'අපි මෙම ලේඛනය මාර්ගගතව කියෙව්වෙමු.';
+
+  @override
+  String get scanNoExpiryNote => 'මෙම ලේඛනයට ඉකුත් වන දිනයක් නැති බව පෙනේ. ඔබට මතක් කළ යුතු දිනය එක් කරන්න.';
+
+  @override
   String get duplicateKeepBoth => 'දෙකම තබා ගන්න';
 
   @override
@@ -8766,43 +8807,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get twoStepOffBody => 'ඔබ උපස්ථ කේතයකින් පුරනය වූ බැවින් පියවර දෙකේ සත්‍යාපනය අක්‍රිය කෙරිණි. ගිණුම ආරක්ෂිතව තබා ගැනීමට මෙම දුරකථනයේ එය නැවත සකසන්න.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+වසර $years',
-      one: '+වසර $years',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'දිනය ටයිප් කරන්න';
-
-  @override
-  String get expiryTypeTitle => 'කල් ඉකුත් වන දිනය ටයිප් කරන්න';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'උදාහරණයක් ලෙස $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'එම දිනය නිවැරදි ලෙස නොපෙනේ. $example උත්සාහ කරන්න.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'මෙම දිනය පසු වී ඇති බැවින් වාර්තාව කල් ඉකුත් වූ ලෙස සුරැකේ.';
 
   @override
   String get expiryEndsToday => 'මෙය අද කල් ඉකුත් වේ.';
-
-  @override
-  String get saveAndAddAnother => 'සුරකින්න සහ තවත් එකක් එක් කරන්න';
-
-  @override
-  String get quickStartTitle => 'ඉක්මන් ආරම්භය';
 
   @override
   String categoryCreatedAddGroup(String name) {

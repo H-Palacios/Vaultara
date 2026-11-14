@@ -1675,6 +1675,19 @@
   "scanUpdateExisting": "I-update",
   "duplicateRecordTitle": "Naidagdag na",
   "duplicateRecordBody": "May {name} ka na na mag-e-expire sa {date}.",
+  "recordNameNeedsLetter": "Gumamit ng kahit isang titik o numero.",
+  "recordSaveFailed": "Hindi na-save. Tingnan ang iyong koneksyon at subukan ulit.",
+  "duplicateRecordElsewhere": "Mayroon ka nang {name} sa {group}, mag-e-expire sa {date}.",
+  "expiryGuessedHint": "Hinulaan namin ang petsang ito mula sa iyong dokumento. Tingnan kung tugma.",
+  "expiryOtherDates": "Iba pang petsa sa dokumentong ito",
+  "scanPhotoSaved": "Naka-save ang iyong larawan kasama ng record na ito.",
+  "scanPhotoNotSaved": "Hindi na-save ang iyong larawan dahil nasa pinakamaraming pinapayagang larawan na ang record na ito.",
+  "scanReadOnlineTitle": "Basahin online ang dokumentong ito?",
+  "scanReadOnlineBody": "Hindi tiyak na nabasa ng iyong phone ang dokumentong ito. Maaaring ipadala ng Vaultara ang text mula sa larawan sa server nito para basahin. Mananatili sa phone mo ang larawan, at itatago ang mahahabang numero.",
+  "scanReadOnlineNo": "Hindi ngayon",
+  "scanReadOnlineYes": "Basahin",
+  "scanReadOnlineNote": "Binasa namin online ang dokumentong ito.",
+  "scanNoExpiryNote": "Mukhang walang petsa ng pag-expire ang dokumentong ito. Idagdag ang petsang gusto mong ipaalala.",
   "duplicateKeepBoth": "Panatilihin ang dalawa",
   "duplicateUpdateExisting": "I-update ang kasalukuyan",
   "editorDefaultsHint": "Napunan ang karaniwang mga setting para sa {group}. Mababago mo ang mga ito sa Higit pang detalye.",
@@ -3222,36 +3235,8 @@
   "twoStepSkipForNow": "Laktawan muna",
   "twoStepOffTitle": "Naka-off ang two-step verification",
   "twoStepOffBody": "Nag-sign in ka gamit ang backup code, kaya na-off ang two-step verification. I-set up ito ulit sa teleponong ito para manatiling protektado ang account mo.",
-  "expiryPlusYears": "{years, plural, one{+{years} taon} other{+{years} taon}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "I-type ang petsa",
-  "expiryTypeTitle": "I-type ang petsa ng pag-expire",
-  "expiryTypeHint": "Halimbawa {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Mukhang hindi tama ang petsang iyon. Subukan ang {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Lumipas na ang petsang ito, kaya ise-save ang record bilang expired.",
   "expiryEndsToday": "Mag-e-expire ito ngayon.",
-  "saveAndAddAnother": "I-save at magdagdag ng isa pa",
-  "quickStartTitle": "Mabilis na simula",
   "categoryCreatedAddGroup": "Nagawa ang {name}. Magdagdag ng grupo dito?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

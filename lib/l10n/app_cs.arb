@@ -1694,6 +1694,19 @@
   "scanUpdateExisting": "Aktualizovat",
   "duplicateRecordTitle": "Už přidáno",
   "duplicateRecordBody": "Záznam {name} s datem expirace {date} už máte.",
+  "recordNameNeedsLetter": "Použijte alespoň jedno písmeno nebo číslici.",
+  "recordSaveFailed": "Uložení se nezdařilo. Zkontrolujte připojení a zkuste to znovu.",
+  "duplicateRecordElsewhere": "{name} už máte ve skupině {group}, platnost vyprší {date}.",
+  "expiryGuessedHint": "Toto datum jsme odhadli z vašeho dokumentu. Zkontrolujte, že sedí.",
+  "expiryOtherDates": "Další data na tomto dokumentu",
+  "scanPhotoSaved": "Vaše fotka je uložená u tohoto záznamu.",
+  "scanPhotoNotSaved": "Vaše fotka nebyla uložena, protože tento záznam už má nejvyšší povolený počet fotek.",
+  "scanReadOnlineTitle": "Přečíst tento dokument online?",
+  "scanReadOnlineBody": "Váš telefon nedokázal tento dokument spolehlivě přečíst. Vaultara může poslat text z fotky na svůj server, aby ho přečetl. Fotka zůstane ve vašem telefonu a dlouhá čísla se skryjí.",
+  "scanReadOnlineNo": "Teď ne",
+  "scanReadOnlineYes": "Přečíst",
+  "scanReadOnlineNote": "Tento dokument jsme přečetli online.",
+  "scanNoExpiryNote": "Zdá se, že tento dokument nemá datum vypršení. Přidejte datum, na které chcete připomenutí.",
   "duplicateKeepBoth": "Ponechat oba",
   "duplicateUpdateExisting": "Aktualizovat stávající",
   "editorDefaultsHint": "Vyplnili jsme typické nastavení pro skupinu {group}. Můžete ho změnit v části Další podrobnosti.",
@@ -3241,36 +3254,8 @@
   "twoStepSkipForNow": "Teď přeskočit",
   "twoStepOffTitle": "Dvoufázové ověření je vypnuté",
   "twoStepOffBody": "Přihlásili jste se záložním kódem, proto bylo dvoufázové ověření vypnuto. Nastavte ho znovu na tomto telefonu, aby byl váš účet chráněný.",
-  "expiryPlusYears": "{years, plural, =1{+{years} rok} few{+{years} roky} many{+{years} roku} other{+{years} let}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Napsat datum",
-  "expiryTypeTitle": "Napište datum vypršení",
-  "expiryTypeHint": "Například {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Toto datum nevypadá správně. Zkuste {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Toto datum už uplynulo, takže se záznam uloží jako prošlý.",
   "expiryEndsToday": "Platnost končí dnes.",
-  "saveAndAddAnother": "Uložit a přidat další",
-  "quickStartTitle": "Rychlý start",
   "categoryCreatedAddGroup": "Kategorie {name} vytvořena. Přidat do ní skupinu?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

@@ -5063,6 +5063,47 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Herî kêm tîpek an hejmarek bi kar bîne.';
+
+  @override
+  String get recordSaveFailed => 'Nehat tomarkirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Te berê $name di $group de heye, di $date de diqede.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Me ev dîrok ji belgeya te texmîn kir. Kontrol bike ku li hev tê.';
+
+  @override
+  String get expiryOtherDates => 'Dîrokên din ên vê belgeyê';
+
+  @override
+  String get scanPhotoSaved => 'Wêneyê te bi vê tomarê re hat tomarkirin.';
+
+  @override
+  String get scanPhotoNotSaved => 'Wêneyê te nehat tomarkirin ji ber ku vê tomarê berê herî zêde wêneyên destûrdayî hene.';
+
+  @override
+  String get scanReadOnlineTitle => 'Vê belgeyê serhêl bixwîne?';
+
+  @override
+  String get scanReadOnlineBody => 'Telefona te nekarî vê belgeyê bi teqez bixwîne. Vaultara dikare nivîsa wêneyê ji bo xwendinê bişîne servera xwe. Wêne li ser telefona te dimîne, û hejmarên dirêj tên veşartin.';
+
+  @override
+  String get scanReadOnlineNo => 'Ne niha';
+
+  @override
+  String get scanReadOnlineYes => 'Bixwîne';
+
+  @override
+  String get scanReadOnlineNote => 'Me ev belge serhêl xwend.';
+
+  @override
+  String get scanNoExpiryNote => 'Wisa xuya dike ku dîroka qedandinê ya vê belgeyê tune. Dîroka ku tu dixwazî bîra te were xistin lê zêde bike.';
+
+  @override
   String get duplicateKeepBoth => 'Herduyan bihêle';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get twoStepOffBody => 'Tu bi kodek yedek ketî, loma piştrastkirina du-gavî hate girtin. Ji bo ku hesabê te parastî bimîne wê li ser vê telefonê dîsa saz bike.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years sal',
-      one: '+$years sal',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Dîrokê binivîse';
-
-  @override
-  String get expiryTypeTitle => 'Dîroka qedandinê binivîse';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Mînak $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ew dîrok rast xuya nake. $example biceribîne.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ev dîrok derbas bûye, loma tomar wek qediyayî tê tomarkirin.';
 
   @override
   String get expiryEndsToday => 'Ev îro diqede.';
-
-  @override
-  String get saveAndAddAnother => 'Tomar bike û yekî din lê zêde bike';
-
-  @override
-  String get quickStartTitle => 'Destpêka bilez';
 
   @override
   String categoryCreatedAddGroup(String name) {

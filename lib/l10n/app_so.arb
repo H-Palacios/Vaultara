@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Cusboonaysii",
   "duplicateRecordTitle": "Hore ayaa loogu daray",
   "duplicateRecordBody": "Hore ayaad u haysataa {name} oo dhacaya {date}.",
+  "recordNameNeedsLetter": "Isticmaal ugu yaraan hal xaraf ama tiro.",
+  "recordSaveFailed": "Lama kaydin karin. Hubi xiriirkaaga oo isku day mar kale.",
+  "duplicateRecordElsewhere": "Horey ayaad ugu haysay {name} {group}, wuxuu dhacayaa {date}.",
+  "expiryGuessedHint": "Taariikhdan waxaan ka qiyaasnay dukumentigaaga. Hubi inay waafaqsan tahay.",
+  "expiryOtherDates": "Taariikhaha kale ee dukumentigan",
+  "scanPhotoSaved": "Sawirkaaga waxaa lagu kaydiyay diiwaankan.",
+  "scanPhotoNotSaved": "Sawirkaaga lama kaydin sababtoo ah diiwaankan wuxuu horey u haystay tirada ugu badan ee sawirada la oggol yahay.",
+  "scanReadOnlineTitle": "Dukumentigan ma la akhriyaa online?",
+  "scanReadOnlineBody": "Taleefankaagu si hubaal ah uma akhrin karin dukumentigan. Vaultara wuxuu qoraalka sawirka u diri karaa server-kiisa si uu u akhriyo. Sawirku wuxuu ku jiraa taleefankaaga, lambarada dhaadheerna waa la qariyaa.",
+  "scanReadOnlineNo": "Hadda maya",
+  "scanReadOnlineYes": "Akhri",
+  "scanReadOnlineNote": "Dukumentigan online ayaan ku akhrinay.",
+  "scanNoExpiryNote": "Waxay u egtahay in dukumentigan aanu lahayn taariikh dhicid. Ku dar taariikhda aad rabto in laguu xusuusiyo.",
   "duplicateKeepBoth": "Hay labadaba",
   "duplicateUpdateExisting": "Cusboonaysii kii jiray",
   "editorDefaultsHint": "Waxaan buuxinnay dejinta caadiga ah ee {group}. Waad beddeli kartaa Faahfaahin dheeraad ah.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Ka bood hadda",
   "twoStepOffTitle": "Xaqiijinta laba-tallaabo waa dansan tahay",
   "twoStepOffBody": "Waxaad ku gashay kood kayd ah, sidaas darteed xaqiijinta laba-tallaabo waa la damiyay. Mar kale ku deji taleefankan si xisaabtaadu u ahaato mid la ilaaliyo.",
-  "expiryPlusYears": "{years, plural, =1{+{years} sano} other{+{years} sano}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Qor taariikhda",
-  "expiryTypeTitle": "Qor taariikhda dhicitaanka",
-  "expiryTypeHint": "Tusaale {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Taariikhdaasi uma muuqato mid sax ah. Isku day {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Taariikhdani way dhaaftay, sidaas darteed diiwaanka waxaa loo kaydin doonaa sidii mid dhacay.",
   "expiryEndsToday": "Kani maanta ayuu dhacayaa.",
-  "saveAndAddAnother": "Kaydi oo ku dar mid kale",
-  "quickStartTitle": "Bilow degdeg ah",
   "categoryCreatedAddGroup": "{name} waa la sameeyay. Koox ma lagu daraa?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

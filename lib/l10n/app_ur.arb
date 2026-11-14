@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "اپ ڈیٹ کریں",
   "duplicateRecordTitle": "پہلے ہی شامل ہے",
   "duplicateRecordBody": "آپ کے پاس پہلے سے {name} ہے جو {date} کو ختم ہوتا ہے۔",
+  "recordNameNeedsLetter": "کم از کم ایک حرف یا عدد استعمال کریں۔",
+  "recordSaveFailed": "محفوظ نہیں ہو سکا۔ اپنا کنکشن چیک کریں اور دوبارہ کوشش کریں۔",
+  "duplicateRecordElsewhere": "آپ کے پاس پہلے سے {group} میں {name} ہے، جس کی میعاد {date} کو ختم ہوگی۔",
+  "expiryGuessedHint": "ہم نے یہ تاریخ آپ کی دستاویز سے اندازاً لی ہے۔ چیک کریں کہ یہ درست ہے۔",
+  "expiryOtherDates": "اس دستاویز پر دیگر تاریخیں",
+  "scanPhotoSaved": "آپ کی تصویر اس ریکارڈ کے ساتھ محفوظ ہو گئی ہے۔",
+  "scanPhotoNotSaved": "آپ کی تصویر محفوظ نہیں ہوئی کیونکہ اس ریکارڈ میں پہلے سے زیادہ سے زیادہ اجازت شدہ تصاویر ہیں۔",
+  "scanReadOnlineTitle": "یہ دستاویز آن لائن پڑھیں؟",
+  "scanReadOnlineBody": "آپ کا فون یہ دستاویز یقینی طور پر نہیں پڑھ سکا۔ Vaultara پڑھنے کے لیے تصویر کا متن اپنے سرور پر بھیج سکتا ہے۔ تصویر آپ کے فون پر ہی رہتی ہے، اور لمبے نمبر چھپا دیے جاتے ہیں۔",
+  "scanReadOnlineNo": "ابھی نہیں",
+  "scanReadOnlineYes": "پڑھیں",
+  "scanReadOnlineNote": "ہم نے یہ دستاویز آن لائن پڑھی۔",
+  "scanNoExpiryNote": "لگتا ہے اس دستاویز کی کوئی میعاد ختم ہونے کی تاریخ نہیں ہے۔ وہ تاریخ شامل کریں جس کی آپ یاد دہانی چاہتے ہیں۔",
   "duplicateKeepBoth": "دونوں رکھیں",
   "duplicateUpdateExisting": "موجودہ کو اپ ڈیٹ کریں",
   "editorDefaultsHint": "{group} کے لیے عام ترتیبات بھر دی گئیں۔ آپ انہیں مزید تفصیلات میں بدل سکتے ہیں۔",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "ابھی چھوڑ دیں",
   "twoStepOffTitle": "دو مرحلہ تصدیق بند ہے",
   "twoStepOffBody": "آپ نے بیک اپ کوڈ سے سائن ان کیا، اس لیے دو مرحلہ تصدیق بند کر دی گئی۔ اپنا اکاؤنٹ محفوظ رکھنے کے لیے اس فون پر اسے دوبارہ سیٹ کریں۔",
-  "expiryPlusYears": "{years, plural, one{+{years} سال} other{+{years} سال}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "تاریخ ٹائپ کریں",
-  "expiryTypeTitle": "میعاد ختم ہونے کی تاریخ ٹائپ کریں",
-  "expiryTypeHint": "مثال کے طور پر {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "وہ تاریخ درست نہیں لگتی۔ {example} آزمائیں۔",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "یہ تاریخ گزر چکی ہے، اس لیے ریکارڈ میعاد ختم کے طور پر محفوظ ہوگا۔",
   "expiryEndsToday": "اس کی میعاد آج ختم ہو رہی ہے۔",
-  "saveAndAddAnother": "محفوظ کریں اور ایک اور شامل کریں",
-  "quickStartTitle": "فوری آغاز",
   "categoryCreatedAddGroup": "{name} بن گیا۔ اس میں گروپ شامل کریں؟",
   "@categoryCreatedAddGroup": {
     "placeholders": {

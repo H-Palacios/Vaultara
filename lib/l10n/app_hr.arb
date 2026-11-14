@@ -1668,6 +1668,19 @@
   "scanUpdateExisting": "Ažuriraj",
   "duplicateRecordTitle": "Već dodano",
   "duplicateRecordBody": "Već imate zapis {name} koji istječe {date}.",
+  "recordNameNeedsLetter": "Upotrijebite barem jedno slovo ili broj.",
+  "recordSaveFailed": "Spremanje nije uspjelo. Provjerite vezu i pokušajte ponovno.",
+  "duplicateRecordElsewhere": "Već imate {name} u grupi {group}, istječe {date}.",
+  "expiryGuessedHint": "Ovaj smo datum pogodili iz vašeg dokumenta. Provjerite odgovara li.",
+  "expiryOtherDates": "Ostali datumi na ovom dokumentu",
+  "scanPhotoSaved": "Vaša je fotografija spremljena uz ovaj zapis.",
+  "scanPhotoNotSaved": "Vaša fotografija nije spremljena jer ovaj zapis već ima najveći dopušteni broj fotografija.",
+  "scanReadOnlineTitle": "Pročitati ovaj dokument online?",
+  "scanReadOnlineBody": "Vaš telefon nije mogao sa sigurnošću pročitati ovaj dokument. Vaultara može poslati tekst s fotografije na svoj poslužitelj da ga pročita. Fotografija ostaje na vašem telefonu, a dugi brojevi se skrivaju.",
+  "scanReadOnlineNo": "Ne sada",
+  "scanReadOnlineYes": "Pročitaj",
+  "scanReadOnlineNote": "Ovaj smo dokument pročitali online.",
+  "scanNoExpiryNote": "Čini se da ovaj dokument nema datum isteka. Dodajte datum na koji želite podsjetnik.",
   "duplicateKeepBoth": "Zadrži oba",
   "duplicateUpdateExisting": "Ažuriraj postojeći",
   "editorDefaultsHint": "Popunjene uobičajene postavke za grupu {group}. Možete ih promijeniti u dijelu Više pojedinosti.",
@@ -3215,36 +3228,8 @@
   "twoStepSkipForNow": "Preskoči zasad",
   "twoStepOffTitle": "Provjera u dva koraka je isključena",
   "twoStepOffBody": "Prijavili ste se pričuvnim kodom pa je provjera u dva koraka isključena. Ponovno je postavite na ovom telefonu kako bi vaš račun ostao zaštićen.",
-  "expiryPlusYears": "{years, plural, =1{+{years} godina} few{+{years} godine} other{+{years} godina}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Upiši datum",
-  "expiryTypeTitle": "Upišite datum isteka",
-  "expiryTypeHint": "Na primjer {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Taj datum ne izgleda ispravno. Pokušajte {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Ovaj je datum prošao pa će zapis biti spremljen kao istekao.",
   "expiryEndsToday": "Ovo istječe danas.",
-  "saveAndAddAnother": "Spremi i dodaj još jedan",
-  "quickStartTitle": "Brzi početak",
   "categoryCreatedAddGroup": "{name} je izrađena. Dodati joj grupu?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

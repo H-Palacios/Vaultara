@@ -5063,6 +5063,47 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Használj legalább egy betűt vagy számot.';
+
+  @override
+  String get recordSaveFailed => 'Nem sikerült menteni. Ellenőrizd a kapcsolatot, és próbáld újra.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Már van $name a(z) $group csoportban, lejár: $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Ezt a dátumot a dokumentumodból tippeltük. Ellenőrizd, hogy egyezik-e.';
+
+  @override
+  String get expiryOtherDates => 'További dátumok ezen a dokumentumon';
+
+  @override
+  String get scanPhotoSaved => 'A fotód ezzel a bejegyzéssel együtt mentve.';
+
+  @override
+  String get scanPhotoNotSaved => 'A fotód nem lett mentve, mert ennél a bejegyzésnél már megvan a megengedett legtöbb fotó.';
+
+  @override
+  String get scanReadOnlineTitle => 'Online olvassuk be ezt a dokumentumot?';
+
+  @override
+  String get scanReadOnlineBody => 'A telefonod nem tudta biztosan elolvasni ezt a dokumentumot. A Vaultara elküldheti a fotó szövegét a szerverére, hogy elolvassa. A fotó a telefonodon marad, a hosszú számokat elrejtjük.';
+
+  @override
+  String get scanReadOnlineNo => 'Most nem';
+
+  @override
+  String get scanReadOnlineYes => 'Olvasd be';
+
+  @override
+  String get scanReadOnlineNote => 'Ezt a dokumentumot online olvastuk be.';
+
+  @override
+  String get scanNoExpiryNote => 'Úgy tűnik, ennek a dokumentumnak nincs lejárati dátuma. Add meg a dátumot, amelyről emlékeztetőt szeretnél.';
+
+  @override
   String get duplicateKeepBoth => 'Mindkettő megtartása';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get twoStepOffBody => 'Tartalékkóddal jelentkeztél be, ezért a kétlépcsős azonosítás kikapcsolt. Állítsd be újra ezen a telefonon, hogy a fiókod védett maradjon.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years év',
-      one: '+$years év',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Dátum beírása';
-
-  @override
-  String get expiryTypeTitle => 'Írd be a lejárati dátumot';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Például $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Ez a dátum nem tűnik helyesnek. Próbáld így: $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Ez a dátum már elmúlt, ezért a tétel lejártként lesz mentve.';
 
   @override
   String get expiryEndsToday => 'Ez ma jár le.';
-
-  @override
-  String get saveAndAddAnother => 'Mentés és újabb hozzáadása';
-
-  @override
-  String get quickStartTitle => 'Gyors kezdés';
 
   @override
   String categoryCreatedAddGroup(String name) {

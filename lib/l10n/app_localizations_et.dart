@@ -5063,6 +5063,47 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Kasuta vähemalt üht tähte või numbrit.';
+
+  @override
+  String get recordSaveFailed => 'Salvestamine ebaõnnestus. Kontrolli ühendust ja proovi uuesti.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Sul on juba $name grupis $group, aegub $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Arvasime selle kuupäeva sinu dokumendi põhjal. Kontrolli, kas see klapib.';
+
+  @override
+  String get expiryOtherDates => 'Muud kuupäevad selles dokumendis';
+
+  @override
+  String get scanPhotoSaved => 'Sinu foto on selle kirjega salvestatud.';
+
+  @override
+  String get scanPhotoNotSaved => 'Sinu fotot ei salvestatud, sest sellel kirjel on juba lubatud maksimaalne arv fotosid.';
+
+  @override
+  String get scanReadOnlineTitle => 'Kas lugeda see dokument võrgus?';
+
+  @override
+  String get scanReadOnlineBody => 'Sinu telefon ei suutnud seda dokumenti kindlalt lugeda. Vaultara saab saata foto teksti oma serverisse, et seda lugeda. Foto jääb sinu telefoni ja pikad numbrid peidetakse.';
+
+  @override
+  String get scanReadOnlineNo => 'Mitte praegu';
+
+  @override
+  String get scanReadOnlineYes => 'Loe';
+
+  @override
+  String get scanReadOnlineNote => 'Lugesime selle dokumendi võrgus.';
+
+  @override
+  String get scanNoExpiryNote => 'Tundub, et sellel dokumendil pole aegumiskuupäeva. Lisa kuupäev, mille kohta soovid meeldetuletust.';
+
+  @override
   String get duplicateKeepBoth => 'Hoia mõlemad';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get twoStepOffBody => 'Logisid sisse varukoodiga, seega lülitati kaheastmeline kinnitamine välja. Seadista see selles telefonis uuesti, et konto jääks kaitstuks.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years aastat',
-      one: '+$years aasta',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Kirjuta kuupäev';
-
-  @override
-  String get expiryTypeTitle => 'Kirjuta aegumiskuupäev';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Näiteks $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'See kuupäev ei tundu õige. Proovi $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'See kuupäev on möödas, seega salvestatakse kirje aegununa.';
 
   @override
   String get expiryEndsToday => 'See aegub täna.';
-
-  @override
-  String get saveAndAddAnother => 'Salvesta ja lisa veel üks';
-
-  @override
-  String get quickStartTitle => 'Kiire algus';
 
   @override
   String categoryCreatedAddGroup(String name) {

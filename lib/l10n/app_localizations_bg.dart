@@ -5063,6 +5063,47 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Използвайте поне една буква или цифра.';
+
+  @override
+  String get recordSaveFailed => 'Неуспешно запазване. Проверете връзката си и опитайте отново.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Вече имате $name в $group, изтича на $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Познахме тази дата от документа ви. Проверете дали съвпада.';
+
+  @override
+  String get expiryOtherDates => 'Други дати в този документ';
+
+  @override
+  String get scanPhotoSaved => 'Снимката ви е запазена към този запис.';
+
+  @override
+  String get scanPhotoNotSaved => 'Снимката ви не е запазена, защото този запис вече има максималния брой снимки.';
+
+  @override
+  String get scanReadOnlineTitle => 'Да се прочете ли документът онлайн?';
+
+  @override
+  String get scanReadOnlineBody => 'Телефонът ви не можа да прочете този документ със сигурност. Vaultara може да изпрати текста от снимката до своя сървър, за да го прочете. Снимката остава на телефона ви, а дългите номера се скриват.';
+
+  @override
+  String get scanReadOnlineNo => 'Не сега';
+
+  @override
+  String get scanReadOnlineYes => 'Прочети';
+
+  @override
+  String get scanReadOnlineNote => 'Прочетохме този документ онлайн.';
+
+  @override
+  String get scanNoExpiryNote => 'Изглежда този документ няма дата на изтичане. Добавете датата, за която искате напомняне.';
+
+  @override
   String get duplicateKeepBoth => 'Запази и двата';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get twoStepOffBody => 'Влязохте с резервен код, затова потвърждаването в две стъпки беше изключено. Настройте го отново на този телефон, за да остане акаунтът ви защитен.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years години',
-      one: '+$years година',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Въвеждане на дата';
-
-  @override
-  String get expiryTypeTitle => 'Въведете датата на изтичане';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Например $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Тази дата не изглежда правилна. Опитайте $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Тази дата е минала, така че записът ще бъде запазен като изтекъл.';
 
   @override
   String get expiryEndsToday => 'Изтича днес.';
-
-  @override
-  String get saveAndAddAnother => 'Запазване и добавяне на друг';
-
-  @override
-  String get quickStartTitle => 'Бърз старт';
 
   @override
   String categoryCreatedAddGroup(String name) {

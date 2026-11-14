@@ -5063,6 +5063,47 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Օգտագործեք առնվազն մեկ տառ կամ թիվ։';
+
+  @override
+  String get recordSaveFailed => 'Չհաջողվեց պահել։ Ստուգեք կապը և նորից փորձեք։';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Դուք արդեն ունեք $name $group-ում, ժամկետը լրանում է $date։';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Այս ամսաթիվը կռահեցինք ձեր փաստաթղթից։ Ստուգեք, որ համընկնում է։';
+
+  @override
+  String get expiryOtherDates => 'Այս փաստաթղթի այլ ամսաթվեր';
+
+  @override
+  String get scanPhotoSaved => 'Ձեր լուսանկարը պահվել է այս գրառման հետ։';
+
+  @override
+  String get scanPhotoNotSaved => 'Ձեր լուսանկարը չի պահվել, քանի որ այս գրառումն արդեն ունի թույլատրված առավելագույն լուսանկարները։';
+
+  @override
+  String get scanReadOnlineTitle => 'Կարդա՞լ այս փաստաթուղթը առցանց։';
+
+  @override
+  String get scanReadOnlineBody => 'Ձեր հեռախոսը չկարողացավ վստահորեն կարդալ այս փաստաթուղթը։ Vaultara-ն կարող է լուսանկարի տեքստն ուղարկել իր սերվերին՝ կարդալու համար։ Լուսանկարը մնում է ձեր հեռախոսում, իսկ երկար համարները թաքցվում են։';
+
+  @override
+  String get scanReadOnlineNo => 'Ոչ հիմա';
+
+  @override
+  String get scanReadOnlineYes => 'Կարդալ';
+
+  @override
+  String get scanReadOnlineNote => 'Այս փաստաթուղթը կարդացինք առցանց։';
+
+  @override
+  String get scanNoExpiryNote => 'Կարծես այս փաստաթուղթը ժամկետի ավարտի ամսաթիվ չունի։ Ավելացրեք այն ամսաթիվը, որի մասին ուզում եք հիշեցում։';
+
+  @override
   String get duplicateKeepBoth => 'Պահել երկուսն էլ';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get twoStepOffBody => 'Դուք մուտք եք գործել պահուստային կոդով, ուստի երկքայլ հաստատումն անջատվել է։ Նորից կարգավորեք այն այս հեռախոսում՝ հաշիվը պաշտպանված պահելու համար։';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years տարի',
-      one: '+$years տարի',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Գրել ամսաթիվը';
-
-  @override
-  String get expiryTypeTitle => 'Գրեք ժամկետի ավարտի ամսաթիվը';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Օրինակ՝ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Այդ ամսաթիվը ճիշտ չի թվում։ Փորձեք $example։';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Այս ամսաթիվն անցել է, ուստի գրառումը կպահվի որպես ժամկետանց։';
 
   @override
   String get expiryEndsToday => 'Այն լրանում է այսօր։';
-
-  @override
-  String get saveAndAddAnother => 'Պահել և ավելացնել ևս մեկը';
-
-  @override
-  String get quickStartTitle => 'Արագ սկիզբ';
 
   @override
   String categoryCreatedAddGroup(String name) {

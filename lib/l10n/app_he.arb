@@ -1668,6 +1668,19 @@
   "scanUpdateExisting": "עדכן",
   "duplicateRecordTitle": "כבר נוסף",
   "duplicateRecordBody": "כבר יש לך {name} עם תאריך תפוגה {date}.",
+  "recordNameNeedsLetter": "השתמשו לפחות באות או בספרה אחת.",
+  "recordSaveFailed": "השמירה נכשלה. בדקו את החיבור ונסו שוב.",
+  "duplicateRecordElsewhere": "כבר יש לכם {name} ב{group}, שפג ב־{date}.",
+  "expiryGuessedHint": "ניחשנו את התאריך הזה מהמסמך שלכם. בדקו שהוא תואם.",
+  "expiryOtherDates": "תאריכים נוספים במסמך הזה",
+  "scanPhotoSaved": "התמונה שלכם נשמרה עם הרשומה הזו.",
+  "scanPhotoNotSaved": "התמונה שלכם לא נשמרה כי לרשומה הזו כבר יש את מספר התמונות המרבי.",
+  "scanReadOnlineTitle": "לקרוא את המסמך הזה באינטרנט?",
+  "scanReadOnlineBody": "הטלפון שלכם לא הצליח לקרוא את המסמך הזה בוודאות. Vaultara יכולה לשלוח את הטקסט מהתמונה לשרת שלה כדי לקרוא אותו. התמונה נשארת בטלפון, ומספרים ארוכים מוסתרים.",
+  "scanReadOnlineNo": "לא עכשיו",
+  "scanReadOnlineYes": "לקרוא",
+  "scanReadOnlineNote": "קראנו את המסמך הזה באינטרנט.",
+  "scanNoExpiryNote": "נראה שלמסמך הזה אין תאריך תפוגה. הוסיפו את התאריך שעליו תרצו תזכורת.",
   "duplicateKeepBoth": "השאר את שניהם",
   "duplicateUpdateExisting": "עדכן את הקיים",
   "editorDefaultsHint": "מילאנו הגדרות אופייניות עבור {group}. אפשר לשנות אותן בפרטים נוספים.",
@@ -3215,36 +3228,8 @@
   "twoStepSkipForNow": "דילוג לעכשיו",
   "twoStepOffTitle": "האימות הדו-שלבי כבוי",
   "twoStepOffBody": "התחברתם עם קוד גיבוי, ולכן האימות הדו-שלבי כובה. הגדירו אותו מחדש בטלפון הזה כדי שהחשבון יישאר מוגן.",
-  "expiryPlusYears": "{years, plural, =1{+שנה {years}} two{+{years} שנים} other{+{years} שנים}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "הקלדת תאריך",
-  "expiryTypeTitle": "הקלידו את תאריך התפוגה",
-  "expiryTypeHint": "לדוגמה {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "התאריך לא נראה תקין. נסו {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "התאריך הזה עבר, ולכן הרשומה תישמר כפגת תוקף.",
   "expiryEndsToday": "התוקף פג היום.",
-  "saveAndAddAnother": "שמירה והוספת עוד אחת",
-  "quickStartTitle": "התחלה מהירה",
   "categoryCreatedAddGroup": "{name} נוצרה. להוסיף לה קבוצה?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

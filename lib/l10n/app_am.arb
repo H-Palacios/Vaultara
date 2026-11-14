@@ -1701,6 +1701,19 @@
   "scanUpdateExisting": "አዘምን",
   "duplicateRecordTitle": "አስቀድሞ ታክሏል",
   "duplicateRecordBody": "በ{date} የሚያበቃ {name} አስቀድሞ አለዎት።",
+  "recordNameNeedsLetter": "ቢያንስ አንድ ፊደል ወይም ቁጥር ይጠቀሙ።",
+  "recordSaveFailed": "ማስቀመጥ አልተቻለም። ግንኙነትዎን ያረጋግጡና እንደገና ይሞክሩ።",
+  "duplicateRecordElsewhere": "{name} አስቀድሞ በ{group} ውስጥ አለዎት፣ በ{date} ያበቃል።",
+  "expiryGuessedHint": "ይህን ቀን ከሰነድዎ ገምተናል። መዛመዱን ያረጋግጡ።",
+  "expiryOtherDates": "በዚህ ሰነድ ላይ ያሉ ሌሎች ቀኖች",
+  "scanPhotoSaved": "ፎቶዎ ከዚህ መዝገብ ጋር ተቀምጧል።",
+  "scanPhotoNotSaved": "ይህ መዝገብ የተፈቀደውን ከፍተኛ የፎቶ ብዛት ስለያዘ ፎቶዎ አልተቀመጠም።",
+  "scanReadOnlineTitle": "ይህን ሰነድ በመስመር ላይ ይነበብ?",
+  "scanReadOnlineBody": "ስልክዎ ይህን ሰነድ በእርግጠኝነት ማንበብ አልቻለም። Vaultara ከፎቶው ያለውን ጽሑፍ ለማንበብ ወደ አገልጋዩ መላክ ይችላል። ፎቶው በስልክዎ ላይ ይቆያል፣ ረጃጅም ቁጥሮችም ይደበቃሉ።",
+  "scanReadOnlineNo": "አሁን አይደለም",
+  "scanReadOnlineYes": "አንብብ",
+  "scanReadOnlineNote": "ይህን ሰነድ በመስመር ላይ አንብበናል።",
+  "scanNoExpiryNote": "ይህ ሰነድ የሚያበቃበት ቀን ያለው አይመስልም። እንዲያስታውስዎ የሚፈልጉትን ቀን ያክሉ።",
   "duplicateKeepBoth": "ሁለቱንም አቆይ",
   "duplicateUpdateExisting": "ያለውን አዘምን",
   "editorDefaultsHint": "ለ{group} የተለመዱ ቅንብሮች ተሞልተዋል። በተጨማሪ ዝርዝሮች ውስጥ መቀየር ይችላሉ።",
@@ -3248,36 +3261,8 @@
   "twoStepSkipForNow": "ለአሁን ዝለል",
   "twoStepOffTitle": "ባለሁለት ደረጃ ማረጋገጫ ጠፍቷል",
   "twoStepOffBody": "በመጠባበቂያ ኮድ ስለገቡ ባለሁለት ደረጃ ማረጋገጫ ጠፍቷል። መለያዎ እንደተጠበቀ እንዲቆይ በዚህ ስልክ ላይ እንደገና ያዋቅሩት።",
-  "expiryPlusYears": "{years, plural, =1{+{years} ዓመት} other{+{years} ዓመታት}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "ቀን ጻፍ",
-  "expiryTypeTitle": "የሚያበቃበትን ቀን ይጻፉ",
-  "expiryTypeHint": "ለምሳሌ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ያ ቀን ትክክል አይመስልም። {example} ይሞክሩ።",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ይህ ቀን አልፏል፣ ስለዚህ መዝገቡ እንደጊዜው ያለፈበት ሆኖ ይቀመጣል።",
   "expiryEndsToday": "ይህ ዛሬ ያበቃል።",
-  "saveAndAddAnother": "አስቀምጥና ሌላ አክል",
-  "quickStartTitle": "ፈጣን ጅምር",
   "categoryCreatedAddGroup": "{name} ተፈጥሯል። ቡድን ይጨመርበት?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

@@ -1675,6 +1675,19 @@
   "scanUpdateExisting": "Nuashonraigh",
   "duplicateRecordTitle": "Curtha leis cheana",
   "duplicateRecordBody": "Tá {name} agat cheana a théann in éag an {date}.",
+  "recordNameNeedsLetter": "Úsáid litir nó uimhir amháin ar a laghad.",
+  "recordSaveFailed": "Níorbh fhéidir sábháil. Seiceáil do cheangal agus bain triail eile as.",
+  "duplicateRecordElsewhere": "Tá {name} agat cheana in {group}, ag dul in éag ar {date}.",
+  "expiryGuessedHint": "Thomhaiseamar an dáta seo ó do dhoiciméad. Seiceáil go bhfuil sé ceart.",
+  "expiryOtherDates": "Dátaí eile ar an doiciméad seo",
+  "scanPhotoSaved": "Tá do ghrianghraf sábháilte leis an taifead seo.",
+  "scanPhotoNotSaved": "Níor sábháladh do ghrianghraf mar go bhfuil an líon uasta grianghraf ag an taifead seo cheana.",
+  "scanReadOnlineTitle": "An doiciméad seo a léamh ar líne?",
+  "scanReadOnlineBody": "Níorbh fhéidir le do ghuthán an doiciméad seo a léamh go cinnte. Is féidir le Vaultara an téacs ón ngrianghraf a sheoladh chuig a fhreastalaí chun é a léamh. Fanann an grianghraf ar do ghuthán, agus cuirtear uimhreacha fada i bhfolach.",
+  "scanReadOnlineNo": "Ní anois",
+  "scanReadOnlineYes": "Léigh é",
+  "scanReadOnlineNote": "Léamar an doiciméad seo ar líne.",
+  "scanNoExpiryNote": "Is cosúil nach bhfuil dáta éaga ar an doiciméad seo. Cuir an dáta leis ar mhaith leat meabhrúchán faoi.",
   "duplicateKeepBoth": "Coinnigh an dá cheann",
   "duplicateUpdateExisting": "Nuashonraigh an ceann atá ann",
   "editorDefaultsHint": "Líonadh socruithe tipiciúla do {group}. Is féidir leat iad a athrú i dTuilleadh sonraí.",
@@ -3222,36 +3235,8 @@
   "twoStepSkipForNow": "Scipeáil anois",
   "twoStepOffTitle": "Tá fíorú dhá chéim casta as",
   "twoStepOffBody": "Shínigh tú isteach le cód cúltaca, mar sin casadh fíorú dhá chéim as. Socraigh arís é ar an bhfón seo chun do chuntas a choinneáil slán.",
-  "expiryPlusYears": "{years, plural, =1{+{years} bhliain} two{+{years} bhliain} few{+{years} bliana} many{+{years} mbliana} other{+{years} bliain}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Clóscríobh dáta",
-  "expiryTypeTitle": "Clóscríobh an dáta éaga",
-  "expiryTypeHint": "Mar shampla {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Ní cosúil go bhfuil an dáta sin ceart. Bain triail as {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Tá an dáta seo caite, mar sin sábhálfar an taifead mar thaifead imithe in éag.",
   "expiryEndsToday": "Rachaidh sé seo in éag inniu.",
-  "saveAndAddAnother": "Sábháil agus cuir ceann eile leis",
-  "quickStartTitle": "Tús tapa",
   "categoryCreatedAddGroup": "Cruthaíodh {name}. Grúpa a chur leis?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

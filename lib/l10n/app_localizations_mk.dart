@@ -5061,6 +5061,47 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Користете барем една буква или број.';
+
+  @override
+  String get recordSaveFailed => 'Не можеше да се зачува. Проверете ја врската и обидете се повторно.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Веќе имате $name во $group, истекува на $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Овој датум го погодивме од вашиот документ. Проверете дали одговара.';
+
+  @override
+  String get expiryOtherDates => 'Други датуми на овој документ';
+
+  @override
+  String get scanPhotoSaved => 'Вашата фотографија е зачувана со овој запис.';
+
+  @override
+  String get scanPhotoNotSaved => 'Вашата фотографија не е зачувана бидејќи овој запис веќе го има најголемиот дозволен број фотографии.';
+
+  @override
+  String get scanReadOnlineTitle => 'Да се прочита ли документов онлајн?';
+
+  @override
+  String get scanReadOnlineBody => 'Вашиот телефон не можеше со сигурност да го прочита овој документ. Vaultara може да го испрати текстот од фотографијата до својот сервер за да го прочита. Фотографијата останува на вашиот телефон, а долгите броеви се скриваат.';
+
+  @override
+  String get scanReadOnlineNo => 'Не сега';
+
+  @override
+  String get scanReadOnlineYes => 'Прочитај';
+
+  @override
+  String get scanReadOnlineNote => 'Го прочитавме овој документ онлајн.';
+
+  @override
+  String get scanNoExpiryNote => 'Се чини дека овој документ нема датум на истекување. Додадете датум за кој сакате потсетник.';
+
+  @override
   String get duplicateKeepBoth => 'Задржи ги двата';
 
   @override
@@ -8765,43 +8806,10 @@ class AppLocalizationsMk extends AppLocalizations {
   String get twoStepOffBody => 'Се најавивте со резервен код, па потврдата во два чекора е исклучена. Поставете ја повторно на овој телефон за сметката да остане заштитена.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years години',
-      one: '+$years година',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Внеси датум';
-
-  @override
-  String get expiryTypeTitle => 'Внесете го датумот на истекување';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'На пример $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Тој датум не изгледа точно. Обидете се со $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Овој датум помина, па записот ќе биде зачуван како истечен.';
 
   @override
   String get expiryEndsToday => 'Ова истекува денес.';
-
-  @override
-  String get saveAndAddAnother => 'Зачувај и додај уште еден';
-
-  @override
-  String get quickStartTitle => 'Брз почеток';
 
   @override
   String categoryCreatedAddGroup(String name) {

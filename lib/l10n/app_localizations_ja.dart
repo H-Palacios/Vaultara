@@ -5012,6 +5012,47 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => '文字または数字を1つ以上使ってください。';
+
+  @override
+  String get recordSaveFailed => '保存できませんでした。接続を確認して、もう一度お試しください。';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return '$groupにはすでに$nameがあります（$dateに期限切れ）。';
+  }
+
+  @override
+  String get expiryGuessedHint => 'この日付は書類から推測しました。合っているか確認してください。';
+
+  @override
+  String get expiryOtherDates => 'この書類にあるほかの日付';
+
+  @override
+  String get scanPhotoSaved => '写真はこの記録と一緒に保存されました。';
+
+  @override
+  String get scanPhotoNotSaved => 'この記録はすでに写真の上限に達しているため、写真は保存されませんでした。';
+
+  @override
+  String get scanReadOnlineTitle => 'この書類をオンラインで読み取りますか？';
+
+  @override
+  String get scanReadOnlineBody => 'スマートフォンでこの書類を確実に読み取れませんでした。Vaultaraは写真の文字をサーバーに送って読み取れます。写真はスマートフォンに残り、長い番号は隠されます。';
+
+  @override
+  String get scanReadOnlineNo => '今はしない';
+
+  @override
+  String get scanReadOnlineYes => '読み取る';
+
+  @override
+  String get scanReadOnlineNote => 'この書類はオンラインで読み取りました。';
+
+  @override
+  String get scanNoExpiryNote => 'この書類には有効期限がないようです。リマインドしてほしい日付を追加してください。';
+
+  @override
   String get duplicateKeepBoth => '両方残す';
 
   @override
@@ -8693,42 +8734,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get twoStepOffBody => 'バックアップコードでログインしたため、2 段階認証がオフになりました。アカウントを守るため、このスマートフォンで設定し直してください。';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years 年',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => '日付を入力';
-
-  @override
-  String get expiryTypeTitle => '有効期限を入力';
-
-  @override
-  String expiryTypeHint(String example) {
-    return '例: $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'その日付は正しくないようです。$example の形式で入力してください。';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'この日付は過ぎているため、記録は期限切れとして保存されます。';
 
   @override
   String get expiryEndsToday => '今日が期限です。';
-
-  @override
-  String get saveAndAddAnother => '保存してもう 1 件追加';
-
-  @override
-  String get quickStartTitle => 'クイックスタート';
 
   @override
   String categoryCreatedAddGroup(String name) {

@@ -1681,6 +1681,19 @@
   "scanUpdateExisting": "Жаңарту",
   "duplicateRecordTitle": "Бұрыннан қосылған",
   "duplicateRecordBody": "Сізде мерзімі {date} күні бітетін {name} бұрыннан бар.",
+  "recordNameNeedsLetter": "Кемінде бір әріп немесе сан қолданыңыз.",
+  "recordSaveFailed": "Сақтау мүмкін болмады. Байланысты тексеріп, қайталап көріңіз.",
+  "duplicateRecordElsewhere": "Сізде {group} тобында {name} бар, {date} күні бітеді.",
+  "expiryGuessedHint": "Бұл күнді құжатыңыздан болжадық. Сәйкес келетінін тексеріңіз.",
+  "expiryOtherDates": "Осы құжаттағы басқа күндер",
+  "scanPhotoSaved": "Фотоңыз осы жазбамен бірге сақталды.",
+  "scanPhotoNotSaved": "Фотоңыз сақталмады, себебі бұл жазбада рұқсат етілген ең көп фото бар.",
+  "scanReadOnlineTitle": "Бұл құжатты онлайн оқу керек пе?",
+  "scanReadOnlineBody": "Телефоныңыз бұл құжатты сенімді оқи алмады. Vaultara фотодағы мәтінді оқу үшін өз серверіне жібере алады. Фото телефоныңызда қалады, ал ұзын нөмірлер жасырылады.",
+  "scanReadOnlineNo": "Қазір емес",
+  "scanReadOnlineYes": "Оқу",
+  "scanReadOnlineNote": "Бұл құжатты онлайн оқыдық.",
+  "scanNoExpiryNote": "Бұл құжатта аяқталу күні жоқ сияқты. Еске салғыңыз келетін күнді қосыңыз.",
   "duplicateKeepBoth": "Екеуін де сақтау",
   "duplicateUpdateExisting": "Барын жаңарту",
   "editorDefaultsHint": "{group} тобына арналған әдеттегі параметрлер толтырылды. Оларды Қосымша мәліметтер бөлімінде өзгертуге болады.",
@@ -3228,36 +3241,8 @@
   "twoStepSkipForNow": "Әзірге өткізіп жіберу",
   "twoStepOffTitle": "Екі қадамды растау өшірулі",
   "twoStepOffBody": "Сіз сақтық кодпен кірдіңіз, сондықтан екі қадамды растау өшірілді. Есептік жазбаңыз қорғалуы үшін оны осы телефонда қайта баптаңыз.",
-  "expiryPlusYears": "{years, plural, =1{+{years} жыл} other{+{years} жыл}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Күнді жазу",
-  "expiryTypeTitle": "Мерзімі біту күнін жазыңыз",
-  "expiryTypeHint": "Мысалы {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Бұл күн дұрыс емес сияқты. {example} көріңіз.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Бұл күн өтіп кеткен, сондықтан жазба мерзімі өткен ретінде сақталады.",
   "expiryEndsToday": "Мерзімі бүгін бітеді.",
-  "saveAndAddAnother": "Сақтап, тағы біреуін қосу",
-  "quickStartTitle": "Жылдам бастау",
   "categoryCreatedAddGroup": "{name} жасалды. Топ қосылсын ба?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

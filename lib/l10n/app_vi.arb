@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "Cập nhật",
   "duplicateRecordTitle": "Đã thêm rồi",
   "duplicateRecordBody": "Bạn đã có {name} hết hạn vào {date}.",
+  "recordNameNeedsLetter": "Dùng ít nhất một chữ cái hoặc chữ số.",
+  "recordSaveFailed": "Không lưu được. Hãy kiểm tra kết nối rồi thử lại.",
+  "duplicateRecordElsewhere": "Bạn đã có {name} trong {group}, hết hạn vào {date}.",
+  "expiryGuessedHint": "Chúng tôi đoán ngày này từ giấy tờ của bạn. Hãy kiểm tra xem có khớp không.",
+  "expiryOtherDates": "Các ngày khác trên giấy tờ này",
+  "scanPhotoSaved": "Ảnh của bạn đã được lưu cùng mục này.",
+  "scanPhotoNotSaved": "Ảnh của bạn chưa được lưu vì mục này đã có số ảnh tối đa.",
+  "scanReadOnlineTitle": "Đọc giấy tờ này trực tuyến?",
+  "scanReadOnlineBody": "Điện thoại của bạn không đọc chắc chắn được giấy tờ này. Vaultara có thể gửi chữ trong ảnh đến máy chủ để đọc. Ảnh vẫn ở trên điện thoại của bạn, và các số dài được ẩn đi.",
+  "scanReadOnlineNo": "Để sau",
+  "scanReadOnlineYes": "Đọc",
+  "scanReadOnlineNote": "Chúng tôi đã đọc giấy tờ này trực tuyến.",
+  "scanNoExpiryNote": "Có vẻ giấy tờ này không có ngày hết hạn. Hãy thêm ngày bạn muốn được nhắc.",
   "duplicateKeepBoth": "Giữ cả hai",
   "duplicateUpdateExisting": "Cập nhật mục hiện có",
   "editorDefaultsHint": "Đã điền các thiết lập thường dùng cho {group}. Bạn có thể thay đổi trong Thêm chi tiết.",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "Bỏ qua lúc này",
   "twoStepOffTitle": "Xác minh hai bước đang tắt",
   "twoStepOffBody": "Bạn đã đăng nhập bằng mã dự phòng nên xác minh hai bước đã bị tắt. Hãy thiết lập lại trên điện thoại này để bảo vệ tài khoản.",
-  "expiryPlusYears": "{years, plural, other{+{years} năm}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Nhập ngày",
-  "expiryTypeTitle": "Nhập ngày hết hạn",
-  "expiryTypeHint": "Ví dụ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Ngày đó có vẻ không đúng. Hãy thử {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Ngày này đã qua nên mục sẽ được lưu là đã hết hạn.",
   "expiryEndsToday": "Mục này hết hạn hôm nay.",
-  "saveAndAddAnother": "Lưu và thêm mục khác",
-  "quickStartTitle": "Bắt đầu nhanh",
   "categoryCreatedAddGroup": "Đã tạo {name}. Thêm nhóm vào đó?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

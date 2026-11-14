@@ -5063,6 +5063,47 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'ਘੱਟੋ-ਘੱਟ ਇੱਕ ਅੱਖਰ ਜਾਂ ਅੰਕ ਵਰਤੋ।';
+
+  @override
+  String get recordSaveFailed => 'ਸੇਵ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ $group ਵਿੱਚ $name ਹੈ, ਜਿਸਦੀ ਮਿਆਦ $date ਨੂੰ ਪੁੱਗਦੀ ਹੈ।';
+  }
+
+  @override
+  String get expiryGuessedHint => 'ਅਸੀਂ ਇਹ ਤਾਰੀਖ ਤੁਹਾਡੇ ਦਸਤਾਵੇਜ਼ ਤੋਂ ਅੰਦਾਜ਼ੇ ਨਾਲ ਲਈ ਹੈ। ਜਾਂਚੋ ਕਿ ਇਹ ਮੇਲ ਖਾਂਦੀ ਹੈ।';
+
+  @override
+  String get expiryOtherDates => 'ਇਸ ਦਸਤਾਵੇਜ਼ ਦੀਆਂ ਹੋਰ ਤਾਰੀਖਾਂ';
+
+  @override
+  String get scanPhotoSaved => 'ਤੁਹਾਡੀ ਫ਼ੋਟੋ ਇਸ ਰਿਕਾਰਡ ਨਾਲ ਸੇਵ ਹੋ ਗਈ ਹੈ।';
+
+  @override
+  String get scanPhotoNotSaved => 'ਤੁਹਾਡੀ ਫ਼ੋਟੋ ਸੇਵ ਨਹੀਂ ਹੋਈ, ਕਿਉਂਕਿ ਇਸ ਰਿਕਾਰਡ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਵੱਧ ਤੋਂ ਵੱਧ ਮਨਜ਼ੂਰ ਫ਼ੋਟੋਆਂ ਹਨ।';
+
+  @override
+  String get scanReadOnlineTitle => 'ਇਹ ਦਸਤਾਵੇਜ਼ ਆਨਲਾਈਨ ਪੜ੍ਹੀਏ?';
+
+  @override
+  String get scanReadOnlineBody => 'ਤੁਹਾਡਾ ਫ਼ੋਨ ਇਹ ਦਸਤਾਵੇਜ਼ ਪੱਕੇ ਤੌਰ ’ਤੇ ਨਹੀਂ ਪੜ੍ਹ ਸਕਿਆ। Vaultara ਪੜ੍ਹਨ ਲਈ ਫ਼ੋਟੋ ਦਾ ਟੈਕਸਟ ਆਪਣੇ ਸਰਵਰ ’ਤੇ ਭੇਜ ਸਕਦਾ ਹੈ। ਫ਼ੋਟੋ ਤੁਹਾਡੇ ਫ਼ੋਨ ’ਤੇ ਹੀ ਰਹਿੰਦੀ ਹੈ, ਅਤੇ ਲੰਬੇ ਨੰਬਰ ਲੁਕਾਏ ਜਾਂਦੇ ਹਨ।';
+
+  @override
+  String get scanReadOnlineNo => 'ਹੁਣ ਨਹੀਂ';
+
+  @override
+  String get scanReadOnlineYes => 'ਪੜ੍ਹੋ';
+
+  @override
+  String get scanReadOnlineNote => 'ਅਸੀਂ ਇਹ ਦਸਤਾਵੇਜ਼ ਆਨਲਾਈਨ ਪੜ੍ਹਿਆ।';
+
+  @override
+  String get scanNoExpiryNote => 'ਲੱਗਦਾ ਹੈ ਇਸ ਦਸਤਾਵੇਜ਼ ਦੀ ਕੋਈ ਮਿਆਦ ਪੁੱਗਣ ਦੀ ਤਾਰੀਖ ਨਹੀਂ ਹੈ। ਉਹ ਤਾਰੀਖ ਜੋੜੋ ਜਿਸ ਬਾਰੇ ਯਾਦ ਕਰਵਾਉਣਾ ਹੈ।';
+
+  @override
   String get duplicateKeepBoth => 'ਦੋਵੇਂ ਰੱਖੋ';
 
   @override
@@ -8767,43 +8808,10 @@ class AppLocalizationsPa extends AppLocalizations {
   String get twoStepOffBody => 'ਤੁਸੀਂ ਬੈਕਅੱਪ ਕੋਡ ਨਾਲ ਸਾਈਨ ਇਨ ਕੀਤਾ, ਇਸ ਲਈ ਦੋ-ਪੜਾਵੀ ਪੁਸ਼ਟੀ ਬੰਦ ਕਰ ਦਿੱਤੀ ਗਈ। ਆਪਣਾ ਖਾਤਾ ਸੁਰੱਖਿਅਤ ਰੱਖਣ ਲਈ ਇਸ ਫ਼ੋਨ \'ਤੇ ਇਸਨੂੰ ਦੁਬਾਰਾ ਸੈੱਟ ਕਰੋ।';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years ਸਾਲ',
-      one: '+$years ਸਾਲ',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'ਮਿਤੀ ਟਾਈਪ ਕਰੋ';
-
-  @override
-  String get expiryTypeTitle => 'ਮਿਆਦ ਖਤਮ ਹੋਣ ਦੀ ਮਿਤੀ ਟਾਈਪ ਕਰੋ';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'ਉਦਾਹਰਨ ਲਈ $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'ਉਹ ਮਿਤੀ ਸਹੀ ਨਹੀਂ ਲੱਗਦੀ। $example ਅਜ਼ਮਾਓ।';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'ਇਹ ਮਿਤੀ ਲੰਘ ਚੁੱਕੀ ਹੈ, ਇਸ ਲਈ ਰਿਕਾਰਡ ਮਿਆਦ-ਪੁੱਗੇ ਵਜੋਂ ਸੰਭਾਲਿਆ ਜਾਵੇਗਾ।';
 
   @override
   String get expiryEndsToday => 'ਇਸਦੀ ਮਿਆਦ ਅੱਜ ਖਤਮ ਹੁੰਦੀ ਹੈ।';
-
-  @override
-  String get saveAndAddAnother => 'ਸੰਭਾਲੋ ਅਤੇ ਇੱਕ ਹੋਰ ਜੋੜੋ';
-
-  @override
-  String get quickStartTitle => 'ਤੁਰੰਤ ਸ਼ੁਰੂਆਤ';
 
   @override
   String categoryCreatedAddGroup(String name) {

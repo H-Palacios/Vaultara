@@ -1413,6 +1413,19 @@
   "scanUpdateExisting": "अपडेट करा",
   "duplicateRecordTitle": "आधीच जोडले आहे",
   "duplicateRecordBody": "तुमच्याकडे {name} आधीच आहे, ज्याची मुदत {date} रोजी संपते.",
+  "recordNameNeedsLetter": "किमान एक अक्षर किंवा अंक वापरा.",
+  "recordSaveFailed": "सेव्ह करता आले नाही. तुमचे कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.",
+  "duplicateRecordElsewhere": "तुमच्याकडे आधीच {group} मध्ये {name} आहे, {date} रोजी संपते.",
+  "expiryGuessedHint": "ही तारीख आम्ही तुमच्या दस्तऐवजावरून अंदाजे घेतली आहे. जुळते का ते तपासा.",
+  "expiryOtherDates": "या दस्तऐवजावरील इतर तारखा",
+  "scanPhotoSaved": "तुमचा फोटो या नोंदीसोबत सेव्ह झाला आहे.",
+  "scanPhotoNotSaved": "या नोंदीत आधीच कमाल परवानगी असलेले फोटो असल्याने तुमचा फोटो सेव्ह झाला नाही.",
+  "scanReadOnlineTitle": "हा दस्तऐवज ऑनलाइन वाचायचा?",
+  "scanReadOnlineBody": "तुमचा फोन हा दस्तऐवज खात्रीने वाचू शकला नाही. Vaultara वाचण्यासाठी फोटोतील मजकूर त्याच्या सर्व्हरवर पाठवू शकते. फोटो तुमच्या फोनवरच राहतो, आणि लांब क्रमांक लपवले जातात.",
+  "scanReadOnlineNo": "आता नाही",
+  "scanReadOnlineYes": "वाचा",
+  "scanReadOnlineNote": "आम्ही हा दस्तऐवज ऑनलाइन वाचला.",
+  "scanNoExpiryNote": "या दस्तऐवजावर समाप्ती तारीख नाही असे दिसते. ज्या तारखेची आठवण हवी ती जोडा.",
   "duplicateKeepBoth": "दोन्ही ठेवा",
   "duplicateUpdateExisting": "सध्याचे अपडेट करा",
   "editorDefaultsHint": "{group} साठी नेहमीच्या सेटिंग भरल्या आहेत. तुम्ही त्या अधिक तपशील मध्ये बदलू शकता.",
@@ -2960,36 +2973,8 @@
   "twoStepSkipForNow": "आत्ता वगळा",
   "twoStepOffTitle": "द्वि-चरण पडताळणी बंद आहे",
   "twoStepOffBody": "तुम्ही बॅकअप कोडने साइन इन केले, म्हणून द्वि-चरण पडताळणी बंद केली गेली. तुमचे खाते सुरक्षित ठेवण्यासाठी या फोनवर ती पुन्हा सेट करा.",
-  "expiryPlusYears": "{years, plural, =1{+{years} वर्ष} other{+{years} वर्षे}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "तारीख टाइप करा",
-  "expiryTypeTitle": "समाप्ती तारीख टाइप करा",
-  "expiryTypeHint": "उदाहरणार्थ {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "ती तारीख बरोबर दिसत नाही. {example} वापरून पहा.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "ही तारीख उलटून गेली आहे, म्हणून नोंद कालबाह्य म्हणून जतन होईल.",
   "expiryEndsToday": "याची मुदत आज संपते.",
-  "saveAndAddAnother": "जतन करा आणि आणखी एक जोडा",
-  "quickStartTitle": "झटपट सुरुवात",
   "categoryCreatedAddGroup": "{name} तयार झाले. त्यात गट जोडायचा?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

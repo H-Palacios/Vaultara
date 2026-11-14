@@ -1675,6 +1675,19 @@
   "scanUpdateExisting": "Mettre à jour",
   "duplicateRecordTitle": "Déjà ajouté",
   "duplicateRecordBody": "Vous avez déjà {name} qui expire le {date}.",
+  "recordNameNeedsLetter": "Utilisez au moins une lettre ou un chiffre.",
+  "recordSaveFailed": "Impossible d'enregistrer. Vérifiez votre connexion et réessayez.",
+  "duplicateRecordElsewhere": "Vous avez déjà {name} dans {group}, qui expire le {date}.",
+  "expiryGuessedHint": "Nous avons deviné cette date à partir de votre document. Vérifiez qu'elle correspond.",
+  "expiryOtherDates": "Autres dates sur ce document",
+  "scanPhotoSaved": "Votre photo est enregistrée avec cet élément.",
+  "scanPhotoNotSaved": "Votre photo n'a pas été enregistrée, car cet élément a déjà le nombre maximal de photos.",
+  "scanReadOnlineTitle": "Lire ce document en ligne ?",
+  "scanReadOnlineBody": "Votre téléphone n'a pas pu lire ce document avec certitude. Vaultara peut envoyer le texte de la photo à son serveur pour le lire. La photo reste sur votre téléphone et les longs numéros sont masqués.",
+  "scanReadOnlineNo": "Pas maintenant",
+  "scanReadOnlineYes": "Le lire",
+  "scanReadOnlineNote": "Nous avons lu ce document en ligne.",
+  "scanNoExpiryNote": "Ce document ne semble pas avoir de date d'expiration. Ajoutez la date pour laquelle vous voulez un rappel.",
   "duplicateKeepBoth": "Garder les deux",
   "duplicateUpdateExisting": "Mettre à jour l’existant",
   "editorDefaultsHint": "Réglages habituels remplis pour {group}. Vous pouvez les modifier dans Plus de détails.",
@@ -3222,36 +3235,8 @@
   "twoStepSkipForNow": "Ignorer pour l'instant",
   "twoStepOffTitle": "La validation en deux étapes est désactivée",
   "twoStepOffBody": "Vous vous êtes connecté avec un code de secours, la validation en deux étapes a donc été désactivée. Configurez-la à nouveau sur ce téléphone pour garder votre compte protégé.",
-  "expiryPlusYears": "{years, plural, one{+{years} an} other{+{years} ans}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "Saisir la date",
-  "expiryTypeTitle": "Saisissez la date d'expiration",
-  "expiryTypeHint": "Par exemple {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "Cette date ne semble pas correcte. Essayez {example}.",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "Cette date est passée, l'élément sera donc enregistré comme expiré.",
   "expiryEndsToday": "Expire aujourd'hui.",
-  "saveAndAddAnother": "Enregistrer et en ajouter un autre",
-  "quickStartTitle": "Démarrage rapide",
   "categoryCreatedAddGroup": "{name} créé. Ajouter un groupe ?",
   "@categoryCreatedAddGroup": {
     "placeholders": {

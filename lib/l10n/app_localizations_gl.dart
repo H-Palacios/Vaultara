@@ -5063,6 +5063,47 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get recordNameNeedsLetter => 'Usa polo menos unha letra ou un número.';
+
+  @override
+  String get recordSaveFailed => 'Non se puido gardar. Comproba a conexión e téntao de novo.';
+
+  @override
+  String duplicateRecordElsewhere(String name, String group, String date) {
+    return 'Xa tes $name en $group, que caduca o $date.';
+  }
+
+  @override
+  String get expiryGuessedHint => 'Deducimos esta data do teu documento. Comproba que coincide.';
+
+  @override
+  String get expiryOtherDates => 'Outras datas deste documento';
+
+  @override
+  String get scanPhotoSaved => 'A túa foto gardouse con este rexistro.';
+
+  @override
+  String get scanPhotoNotSaved => 'A túa foto non se gardou porque este rexistro xa ten o máximo de fotos permitidas.';
+
+  @override
+  String get scanReadOnlineTitle => 'Ler este documento en liña?';
+
+  @override
+  String get scanReadOnlineBody => 'O teu teléfono non puido ler este documento con seguridade. Vaultara pode enviar o texto da foto ao seu servidor para lelo. A foto queda no teu teléfono e os números longos ocúltanse.';
+
+  @override
+  String get scanReadOnlineNo => 'Agora non';
+
+  @override
+  String get scanReadOnlineYes => 'Leelo';
+
+  @override
+  String get scanReadOnlineNote => 'Lemos este documento en liña.';
+
+  @override
+  String get scanNoExpiryNote => 'Parece que este documento non ten data de caducidade. Engade a data da que queres un recordatorio.';
+
+  @override
   String get duplicateKeepBoth => 'Manter ambos';
 
   @override
@@ -8771,43 +8812,10 @@ class AppLocalizationsGl extends AppLocalizations {
   String get twoStepOffBody => 'Iniciaches sesión cun código de seguranza, así que se desactivou a verificación en dous pasos. Configúraa de novo neste teléfono para manter a conta protexida.';
 
   @override
-  String expiryPlusYears(int years) {
-    String _temp0 = intl.Intl.pluralLogic(
-      years,
-      locale: localeName,
-      other: '+$years anos',
-      one: '+$years ano',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get expiryTypeDate => 'Escribir a data';
-
-  @override
-  String get expiryTypeTitle => 'Escribe a data de caducidade';
-
-  @override
-  String expiryTypeHint(String example) {
-    return 'Por exemplo $example';
-  }
-
-  @override
-  String expiryTypeInvalid(String example) {
-    return 'Esa data non parece correcta. Proba $example.';
-  }
-
-  @override
   String get expiryAlreadyPassed => 'Esta data xa pasou, así que o rexistro gardarase como caducado.';
 
   @override
   String get expiryEndsToday => 'Caduca hoxe.';
-
-  @override
-  String get saveAndAddAnother => 'Gardar e engadir outro';
-
-  @override
-  String get quickStartTitle => 'Inicio rápido';
 
   @override
   String categoryCreatedAddGroup(String name) {

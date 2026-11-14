@@ -1663,6 +1663,19 @@
   "scanUpdateExisting": "更新",
   "duplicateRecordTitle": "已添加过",
   "duplicateRecordBody": "您已有 {name}，到期日期为 {date}。",
+  "recordNameNeedsLetter": "请至少使用一个字母或数字。",
+  "recordSaveFailed": "无法保存。请检查网络连接后重试。",
+  "duplicateRecordElsewhere": "你在{group}中已有{name}，将于{date}到期。",
+  "expiryGuessedHint": "这个日期是根据你的文件推测的。请核对是否正确。",
+  "expiryOtherDates": "此文件上的其他日期",
+  "scanPhotoSaved": "你的照片已随此记录保存。",
+  "scanPhotoNotSaved": "此记录的照片已达上限，因此你的照片未保存。",
+  "scanReadOnlineTitle": "要在线读取此文件吗？",
+  "scanReadOnlineBody": "你的手机无法准确读取此文件。Vaultara 可以将照片中的文字发送到服务器读取。照片会留在你的手机上，较长的号码会被隐藏。",
+  "scanReadOnlineNo": "以后再说",
+  "scanReadOnlineYes": "读取",
+  "scanReadOnlineNote": "我们已在线读取此文件。",
+  "scanNoExpiryNote": "此文件似乎没有到期日期。请添加你希望收到提醒的日期。",
   "duplicateKeepBoth": "两者都保留",
   "duplicateUpdateExisting": "更新已有记录",
   "editorDefaultsHint": "已填入{group}的常用设置。您可以在“更多详情”中更改。",
@@ -3210,36 +3223,8 @@
   "twoStepSkipForNow": "暂时跳过",
   "twoStepOffTitle": "两步验证已关闭",
   "twoStepOffBody": "你使用备用码登录，因此两步验证已关闭。请在这部手机上重新设置，以保护你的账户。",
-  "expiryPlusYears": "{years, plural, other{+{years} 年}}",
-  "@expiryPlusYears": {
-    "placeholders": {
-      "years": {
-        "type": "int"
-      }
-    }
-  },
-  "expiryTypeDate": "输入日期",
-  "expiryTypeTitle": "输入到期日期",
-  "expiryTypeHint": "例如 {example}",
-  "@expiryTypeHint": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
-  "expiryTypeInvalid": "该日期似乎不正确。请试试 {example}。",
-  "@expiryTypeInvalid": {
-    "placeholders": {
-      "example": {
-        "type": "String"
-      }
-    }
-  },
   "expiryAlreadyPassed": "该日期已过，因此记录将保存为已过期。",
   "expiryEndsToday": "今天到期。",
-  "saveAndAddAnother": "保存并继续添加",
-  "quickStartTitle": "快速开始",
   "categoryCreatedAddGroup": "已创建 {name}。要添加一个分组吗？",
   "@categoryCreatedAddGroup": {
     "placeholders": {
