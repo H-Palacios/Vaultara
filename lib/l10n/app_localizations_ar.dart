@@ -8161,13 +8161,52 @@ class AppLocalizationsAr extends AppLocalizations {
   String get changeIcon => 'تغيير الأيقونة';
 
   @override
-  String get categoryLookTitle => 'الأيقونة واللون';
-
-  @override
-  String get categoryLookAppColour => 'لون التطبيق';
-
-  @override
   String get categoryLookHint => 'اختيرت حسب الاسم. انقر لتغييرها.';
+
+  @override
+  String get iconSuggestions => 'مقترحة';
+
+  @override
+  String get iconSearchHint => 'صف الأيقونة';
+
+  @override
+  String get iconSearchResults => 'أفضل النتائج';
+
+  @override
+  String get iconSearchEmpty => 'لا توجد أيقونات مطابقة. جرّب كلمة أخرى.';
+
+  @override
+  String get iconAllTitle => 'كل الأيقونات';
+
+  @override
+  String get iconThemeDocuments => 'المستندات';
+
+  @override
+  String get iconThemeVehicles => 'المركبات';
+
+  @override
+  String get iconThemeTravel => 'السفر';
+
+  @override
+  String get iconThemeHealth => 'الصحة';
+
+  @override
+  String get iconThemeHome => 'المنزل';
+
+  @override
+  String get iconThemeMoney => 'المال والتسوق';
+
+  @override
+  String get iconThemeWork => 'العمل والدراسة';
+
+  @override
+  String get iconThemeFamily => 'العائلة والناس';
+
+  @override
+  String get iconThemeLeisure => 'الرياضة والهوايات';
+
+  @override
+  String get iconThemeOther => 'أخرى';
 
   @override
   String get renameCategoryTitle => 'إعادة تسمية الفئة';

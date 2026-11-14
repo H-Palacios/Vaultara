@@ -7938,13 +7938,52 @@ class AppLocalizationsEl extends AppLocalizations {
   String get changeIcon => 'Αλλαγή εικονιδίου';
 
   @override
-  String get categoryLookTitle => 'Εικονίδιο και χρώμα';
-
-  @override
-  String get categoryLookAppColour => 'Χρώμα εφαρμογής';
-
-  @override
   String get categoryLookHint => 'Επιλέχθηκε από το όνομα. Πατήστε για αλλαγή.';
+
+  @override
+  String get iconSuggestions => 'Προτεινόμενα';
+
+  @override
+  String get iconSearchHint => 'Περιγράψτε το εικονίδιο';
+
+  @override
+  String get iconSearchResults => 'Καλύτερες αντιστοιχίες';
+
+  @override
+  String get iconSearchEmpty => 'Κανένα εικονίδιο δεν ταιριάζει. Δοκιμάστε άλλη λέξη.';
+
+  @override
+  String get iconAllTitle => 'Όλα τα εικονίδια';
+
+  @override
+  String get iconThemeDocuments => 'Έγγραφα';
+
+  @override
+  String get iconThemeVehicles => 'Οχήματα';
+
+  @override
+  String get iconThemeTravel => 'Ταξίδια';
+
+  @override
+  String get iconThemeHealth => 'Υγεία';
+
+  @override
+  String get iconThemeHome => 'Σπίτι';
+
+  @override
+  String get iconThemeMoney => 'Χρήματα και αγορές';
+
+  @override
+  String get iconThemeWork => 'Εργασία και σπουδές';
+
+  @override
+  String get iconThemeFamily => 'Οικογένεια και άνθρωποι';
+
+  @override
+  String get iconThemeLeisure => 'Αθλητισμός και χόμπι';
+
+  @override
+  String get iconThemeOther => 'Άλλα';
 
   @override
   String get renameCategoryTitle => 'Μετονομασία κατηγορίας';

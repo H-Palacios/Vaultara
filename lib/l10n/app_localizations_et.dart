@@ -7938,13 +7938,52 @@ class AppLocalizationsEt extends AppLocalizations {
   String get changeIcon => 'Muuda ikooni';
 
   @override
-  String get categoryLookTitle => 'Ikoon ja värv';
-
-  @override
-  String get categoryLookAppColour => 'Rakenduse värv';
-
-  @override
   String get categoryLookHint => 'Valitud nime järgi. Muutmiseks puuduta.';
+
+  @override
+  String get iconSuggestions => 'Soovitatud';
+
+  @override
+  String get iconSearchHint => 'Kirjelda ikooni';
+
+  @override
+  String get iconSearchResults => 'Parimad vasted';
+
+  @override
+  String get iconSearchEmpty => 'Ükski ikoon ei sobi. Proovi teist sõna.';
+
+  @override
+  String get iconAllTitle => 'Kõik ikoonid';
+
+  @override
+  String get iconThemeDocuments => 'Dokumendid';
+
+  @override
+  String get iconThemeVehicles => 'Sõidukid';
+
+  @override
+  String get iconThemeTravel => 'Reisimine';
+
+  @override
+  String get iconThemeHealth => 'Tervis';
+
+  @override
+  String get iconThemeHome => 'Kodu';
+
+  @override
+  String get iconThemeMoney => 'Raha ja ostlemine';
+
+  @override
+  String get iconThemeWork => 'Töö ja õpingud';
+
+  @override
+  String get iconThemeFamily => 'Pere ja inimesed';
+
+  @override
+  String get iconThemeLeisure => 'Sport ja hobid';
+
+  @override
+  String get iconThemeOther => 'Muu';
 
   @override
   String get renameCategoryTitle => 'Nimeta kategooria ümber';

@@ -7882,13 +7882,52 @@ class AppLocalizationsIg extends AppLocalizations {
   String get changeIcon => 'Gbanwee akara ngosi';
 
   @override
-  String get categoryLookTitle => 'Akara ngosi na agba';
-
-  @override
-  String get categoryLookAppColour => 'Agba ngwa';
-
-  @override
   String get categoryLookHint => 'Ahọrọ ya site n\'aha. Pịa ka ịgbanwee.';
+
+  @override
+  String get iconSuggestions => 'Ndị a tụrụ aro';
+
+  @override
+  String get iconSearchHint => 'Kọwaa akara ngosi ahụ';
+
+  @override
+  String get iconSearchResults => 'Ndị kacha dabara';
+
+  @override
+  String get iconSearchEmpty => 'Enweghị akara ngosi dabara. Nwaa okwu ọzọ.';
+
+  @override
+  String get iconAllTitle => 'Akara ngosi niile';
+
+  @override
+  String get iconThemeDocuments => 'Akwụkwọ';
+
+  @override
+  String get iconThemeVehicles => 'Ụgbọ ala';
+
+  @override
+  String get iconThemeTravel => 'Njem';
+
+  @override
+  String get iconThemeHealth => 'Ahụike';
+
+  @override
+  String get iconThemeHome => 'Ụlọ';
+
+  @override
+  String get iconThemeMoney => 'Ego na ịzụ ahịa';
+
+  @override
+  String get iconThemeWork => 'Ọrụ na ọmụmụ';
+
+  @override
+  String get iconThemeFamily => 'Ezinụlọ na ndị mmadụ';
+
+  @override
+  String get iconThemeLeisure => 'Egwuregwu na ihe ntụrụndụ';
+
+  @override
+  String get iconThemeOther => 'Ndị ọzọ';
 
   @override
   String get renameCategoryTitle => 'Gbanwee aha ụdị';

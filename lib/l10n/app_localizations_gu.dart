@@ -7934,13 +7934,52 @@ class AppLocalizationsGu extends AppLocalizations {
   String get changeIcon => 'આઇકન બદલો';
 
   @override
-  String get categoryLookTitle => 'આઇકન અને રંગ';
-
-  @override
-  String get categoryLookAppColour => 'ઍપનો રંગ';
-
-  @override
   String get categoryLookHint => 'નામના આધારે પસંદ કર્યું. બદલવા માટે ટૅપ કરો.';
+
+  @override
+  String get iconSuggestions => 'સૂચવેલ';
+
+  @override
+  String get iconSearchHint => 'આઇકન વર્ણવો';
+
+  @override
+  String get iconSearchResults => 'શ્રેષ્ઠ મેળ';
+
+  @override
+  String get iconSearchEmpty => 'કોઈ આઇકન મેળ ખાતું નથી. બીજો શબ્દ અજમાવો.';
+
+  @override
+  String get iconAllTitle => 'બધા આઇકન';
+
+  @override
+  String get iconThemeDocuments => 'દસ્તાવેજો';
+
+  @override
+  String get iconThemeVehicles => 'વાહનો';
+
+  @override
+  String get iconThemeTravel => 'મુસાફરી';
+
+  @override
+  String get iconThemeHealth => 'આરોગ્ય';
+
+  @override
+  String get iconThemeHome => 'ઘર';
+
+  @override
+  String get iconThemeMoney => 'પૈસા અને ખરીદી';
+
+  @override
+  String get iconThemeWork => 'કામ અને અભ્યાસ';
+
+  @override
+  String get iconThemeFamily => 'કુટુંબ અને લોકો';
+
+  @override
+  String get iconThemeLeisure => 'રમતગમત અને શોખ';
+
+  @override
+  String get iconThemeOther => 'અન્ય';
 
   @override
   String get renameCategoryTitle => 'કૅટેગરીનું નામ બદલો';

@@ -7938,13 +7938,52 @@ class AppLocalizationsFi extends AppLocalizations {
   String get changeIcon => 'Vaihda kuvake';
 
   @override
-  String get categoryLookTitle => 'Kuvake ja väri';
-
-  @override
-  String get categoryLookAppColour => 'Sovelluksen väri';
-
-  @override
   String get categoryLookHint => 'Valittu nimen perusteella. Vaihda napauttamalla.';
+
+  @override
+  String get iconSuggestions => 'Ehdotetut';
+
+  @override
+  String get iconSearchHint => 'Kuvaile kuvaketta';
+
+  @override
+  String get iconSearchResults => 'Parhaat osumat';
+
+  @override
+  String get iconSearchEmpty => 'Mikään kuvake ei sovi. Kokeile toista sanaa.';
+
+  @override
+  String get iconAllTitle => 'Kaikki kuvakkeet';
+
+  @override
+  String get iconThemeDocuments => 'Asiakirjat';
+
+  @override
+  String get iconThemeVehicles => 'Ajoneuvot';
+
+  @override
+  String get iconThemeTravel => 'Matkailu';
+
+  @override
+  String get iconThemeHealth => 'Terveys';
+
+  @override
+  String get iconThemeHome => 'Koti';
+
+  @override
+  String get iconThemeMoney => 'Raha ja ostokset';
+
+  @override
+  String get iconThemeWork => 'Työ ja opiskelu';
+
+  @override
+  String get iconThemeFamily => 'Perhe ja ihmiset';
+
+  @override
+  String get iconThemeLeisure => 'Urheilu ja harrastukset';
+
+  @override
+  String get iconThemeOther => 'Muut';
 
   @override
   String get renameCategoryTitle => 'Nimeä luokka uudelleen';

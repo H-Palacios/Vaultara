@@ -7876,13 +7876,52 @@ class AppLocalizationsLo extends AppLocalizations {
   String get changeIcon => 'ປ່ຽນໄອຄອນ';
 
   @override
-  String get categoryLookTitle => 'ໄອຄອນ ແລະ ສີ';
-
-  @override
-  String get categoryLookAppColour => 'ສີຂອງແອັບ';
-
-  @override
   String get categoryLookHint => 'ເລືອກຕາມຊື່. ແຕະເພື່ອປ່ຽນ.';
+
+  @override
+  String get iconSuggestions => 'ແນະນຳ';
+
+  @override
+  String get iconSearchHint => 'ອະທິບາຍໄອຄອນ';
+
+  @override
+  String get iconSearchResults => 'ກົງກັນທີ່ສຸດ';
+
+  @override
+  String get iconSearchEmpty => 'ບໍ່ມີໄອຄອນທີ່ກົງກັນ. ລອງຄຳອື່ນ.';
+
+  @override
+  String get iconAllTitle => 'ໄອຄອນທັງໝົດ';
+
+  @override
+  String get iconThemeDocuments => 'ເອກະສານ';
+
+  @override
+  String get iconThemeVehicles => 'ຍານພາຫະນະ';
+
+  @override
+  String get iconThemeTravel => 'ການເດີນທາງ';
+
+  @override
+  String get iconThemeHealth => 'ສຸຂະພາບ';
+
+  @override
+  String get iconThemeHome => 'ເຮືອນ';
+
+  @override
+  String get iconThemeMoney => 'ເງິນ ແລະ ການຊື້ເຄື່ອງ';
+
+  @override
+  String get iconThemeWork => 'ວຽກ ແລະ ການຮຽນ';
+
+  @override
+  String get iconThemeFamily => 'ຄອບຄົວ ແລະ ຜູ້ຄົນ';
+
+  @override
+  String get iconThemeLeisure => 'ກິລາ ແລະ ງານອະດິເລກ';
+
+  @override
+  String get iconThemeOther => 'ອື່ນໆ';
 
   @override
   String get renameCategoryTitle => 'ປ່ຽນຊື່ໝວດ';

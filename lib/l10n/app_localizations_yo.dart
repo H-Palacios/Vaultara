@@ -7882,13 +7882,52 @@ class AppLocalizationsYo extends AppLocalizations {
   String get changeIcon => 'Yí àmì padà';
 
   @override
-  String get categoryLookTitle => 'Àmì àti àwọ̀';
-
-  @override
-  String get categoryLookAppColour => 'Àwọ̀ áàpù';
-
-  @override
   String get categoryLookHint => 'A yàn án láti orúkọ. Tẹ̀ láti yí i padà.';
+
+  @override
+  String get iconSuggestions => 'Àwọn àbá';
+
+  @override
+  String get iconSearchHint => 'Ṣàpèjúwe àmì náà';
+
+  @override
+  String get iconSearchResults => 'Àwọn tó bá a mu jùlọ';
+
+  @override
+  String get iconSearchEmpty => 'Kò sí àmì tó bá a mu. Gbìyànjú ọ̀rọ̀ míràn.';
+
+  @override
+  String get iconAllTitle => 'Gbogbo àmì';
+
+  @override
+  String get iconThemeDocuments => 'Àwọn ìwé';
+
+  @override
+  String get iconThemeVehicles => 'Àwọn ọkọ̀';
+
+  @override
+  String get iconThemeTravel => 'Ìrìnàjò';
+
+  @override
+  String get iconThemeHealth => 'Ìlera';
+
+  @override
+  String get iconThemeHome => 'Ilé';
+
+  @override
+  String get iconThemeMoney => 'Owó àti rírajà';
+
+  @override
+  String get iconThemeWork => 'Iṣẹ́ àti ẹ̀kọ́';
+
+  @override
+  String get iconThemeFamily => 'Ẹbí àti ènìyàn';
+
+  @override
+  String get iconThemeLeisure => 'Eré ìdárayá àti ìfẹ́';
+
+  @override
+  String get iconThemeOther => 'Òmíràn';
 
   @override
   String get renameCategoryTitle => 'Yí orúkọ ẹ̀ka padà';

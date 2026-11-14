@@ -8085,13 +8085,52 @@ class AppLocalizationsUk extends AppLocalizations {
   String get changeIcon => 'Змінити значок';
 
   @override
-  String get categoryLookTitle => 'Значок і колір';
-
-  @override
-  String get categoryLookAppColour => 'Колір застосунку';
-
-  @override
   String get categoryLookHint => 'Вибрано за назвою. Торкніться, щоб змінити.';
+
+  @override
+  String get iconSuggestions => 'Запропоновані';
+
+  @override
+  String get iconSearchHint => 'Опишіть значок';
+
+  @override
+  String get iconSearchResults => 'Найкращі збіги';
+
+  @override
+  String get iconSearchEmpty => 'Жоден значок не підходить. Спробуйте інше слово.';
+
+  @override
+  String get iconAllTitle => 'Усі значки';
+
+  @override
+  String get iconThemeDocuments => 'Документи';
+
+  @override
+  String get iconThemeVehicles => 'Транспорт';
+
+  @override
+  String get iconThemeTravel => 'Подорожі';
+
+  @override
+  String get iconThemeHealth => 'Здоровʼя';
+
+  @override
+  String get iconThemeHome => 'Дім';
+
+  @override
+  String get iconThemeMoney => 'Гроші та покупки';
+
+  @override
+  String get iconThemeWork => 'Робота й навчання';
+
+  @override
+  String get iconThemeFamily => 'Родина й люди';
+
+  @override
+  String get iconThemeLeisure => 'Спорт і хобі';
+
+  @override
+  String get iconThemeOther => 'Інше';
 
   @override
   String get renameCategoryTitle => 'Перейменувати категорію';

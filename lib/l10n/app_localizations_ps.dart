@@ -7934,13 +7934,52 @@ class AppLocalizationsPs extends AppLocalizations {
   String get changeIcon => 'نښه بدله کړئ';
 
   @override
-  String get categoryLookTitle => 'نښه او رنګ';
-
-  @override
-  String get categoryLookAppColour => 'د اپ رنګ';
-
-  @override
   String get categoryLookHint => 'د نوم له مخې غوره شو. د بدلولو لپاره ټک وکړئ.';
+
+  @override
+  String get iconSuggestions => 'وړاندیز شوي';
+
+  @override
+  String get iconSearchHint => 'نښه تشریح کړئ';
+
+  @override
+  String get iconSearchResults => 'غوره سمون';
+
+  @override
+  String get iconSearchEmpty => 'هیڅ نښه سمون نه خوري. بله کلمه وازمویئ.';
+
+  @override
+  String get iconAllTitle => 'ټولې نښې';
+
+  @override
+  String get iconThemeDocuments => 'اسناد';
+
+  @override
+  String get iconThemeVehicles => 'موټرونه';
+
+  @override
+  String get iconThemeTravel => 'سفر';
+
+  @override
+  String get iconThemeHealth => 'روغتیا';
+
+  @override
+  String get iconThemeHome => 'کور';
+
+  @override
+  String get iconThemeMoney => 'پیسې او پیرودل';
+
+  @override
+  String get iconThemeWork => 'کار او زده کړه';
+
+  @override
+  String get iconThemeFamily => 'کورنۍ او خلک';
+
+  @override
+  String get iconThemeLeisure => 'سپورت او شوقونه';
+
+  @override
+  String get iconThemeOther => 'نور';
 
   @override
   String get renameCategoryTitle => 'د کټګورۍ نوم بدل کړئ';

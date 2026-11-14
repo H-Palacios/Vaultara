@@ -7876,13 +7876,52 @@ class AppLocalizationsZh extends AppLocalizations {
   String get changeIcon => '更换图标';
 
   @override
-  String get categoryLookTitle => '图标和颜色';
-
-  @override
-  String get categoryLookAppColour => '应用颜色';
-
-  @override
   String get categoryLookHint => '已根据名称选择。点按可更改。';
+
+  @override
+  String get iconSuggestions => '推荐';
+
+  @override
+  String get iconSearchHint => '描述图标';
+
+  @override
+  String get iconSearchResults => '最佳匹配';
+
+  @override
+  String get iconSearchEmpty => '没有匹配的图标。请换个词试试。';
+
+  @override
+  String get iconAllTitle => '全部图标';
+
+  @override
+  String get iconThemeDocuments => '证件文件';
+
+  @override
+  String get iconThemeVehicles => '交通工具';
+
+  @override
+  String get iconThemeTravel => '旅行';
+
+  @override
+  String get iconThemeHealth => '健康';
+
+  @override
+  String get iconThemeHome => '家居';
+
+  @override
+  String get iconThemeMoney => '钱财与购物';
+
+  @override
+  String get iconThemeWork => '工作与学习';
+
+  @override
+  String get iconThemeFamily => '家人与社交';
+
+  @override
+  String get iconThemeLeisure => '运动与爱好';
+
+  @override
+  String get iconThemeOther => '其他';
 
   @override
   String get renameCategoryTitle => '重命名类别';
@@ -16632,13 +16671,52 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get changeIcon => '更换图标';
 
   @override
-  String get categoryLookTitle => '图标和颜色';
-
-  @override
-  String get categoryLookAppColour => '应用颜色';
-
-  @override
   String get categoryLookHint => '已根据名称选择。点按可更改。';
+
+  @override
+  String get iconSuggestions => '推荐';
+
+  @override
+  String get iconSearchHint => '描述图标';
+
+  @override
+  String get iconSearchResults => '最佳匹配';
+
+  @override
+  String get iconSearchEmpty => '没有匹配的图标。请换个词试试。';
+
+  @override
+  String get iconAllTitle => '全部图标';
+
+  @override
+  String get iconThemeDocuments => '证件文件';
+
+  @override
+  String get iconThemeVehicles => '交通工具';
+
+  @override
+  String get iconThemeTravel => '旅行';
+
+  @override
+  String get iconThemeHealth => '健康';
+
+  @override
+  String get iconThemeHome => '家居';
+
+  @override
+  String get iconThemeMoney => '钱财与购物';
+
+  @override
+  String get iconThemeWork => '工作与学习';
+
+  @override
+  String get iconThemeFamily => '家人与社交';
+
+  @override
+  String get iconThemeLeisure => '运动与爱好';
+
+  @override
+  String get iconThemeOther => '其他';
 
   @override
   String get renameCategoryTitle => '重命名类别';
@@ -25388,13 +25466,52 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get changeIcon => '更換圖示';
 
   @override
-  String get categoryLookTitle => '圖示與顏色';
-
-  @override
-  String get categoryLookAppColour => 'App 顏色';
-
-  @override
   String get categoryLookHint => '已依名稱選擇。輕觸即可更改。';
+
+  @override
+  String get iconSuggestions => '推薦';
+
+  @override
+  String get iconSearchHint => '描述圖示';
+
+  @override
+  String get iconSearchResults => '最佳相符';
+
+  @override
+  String get iconSearchEmpty => '沒有相符的圖示。請換個詞試試。';
+
+  @override
+  String get iconAllTitle => '所有圖示';
+
+  @override
+  String get iconThemeDocuments => '證件文件';
+
+  @override
+  String get iconThemeVehicles => '交通工具';
+
+  @override
+  String get iconThemeTravel => '旅行';
+
+  @override
+  String get iconThemeHealth => '健康';
+
+  @override
+  String get iconThemeHome => '居家';
+
+  @override
+  String get iconThemeMoney => '金錢與購物';
+
+  @override
+  String get iconThemeWork => '工作與學習';
+
+  @override
+  String get iconThemeFamily => '家人與社交';
+
+  @override
+  String get iconThemeLeisure => '運動與嗜好';
+
+  @override
+  String get iconThemeOther => '其他';
 
   @override
   String get renameCategoryTitle => '重新命名類別';

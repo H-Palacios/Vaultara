@@ -7933,13 +7933,52 @@ class AppLocalizationsSo extends AppLocalizations {
   String get changeIcon => 'Beddel astaanta';
 
   @override
-  String get categoryLookTitle => 'Astaanta iyo midabka';
-
-  @override
-  String get categoryLookAppColour => 'Midabka abka';
-
-  @override
   String get categoryLookHint => 'Waxaa laga doortay magaca. Taabo si aad u beddesho.';
+
+  @override
+  String get iconSuggestions => 'La soo jeediyay';
+
+  @override
+  String get iconSearchHint => 'Sharax astaanta';
+
+  @override
+  String get iconSearchResults => 'Kuwa ugu habboon';
+
+  @override
+  String get iconSearchEmpty => 'Ma jirto astaan ku habboon. Isku day eray kale.';
+
+  @override
+  String get iconAllTitle => 'Dhammaan astaamaha';
+
+  @override
+  String get iconThemeDocuments => 'Dukumentiyo';
+
+  @override
+  String get iconThemeVehicles => 'Gaadiid';
+
+  @override
+  String get iconThemeTravel => 'Safar';
+
+  @override
+  String get iconThemeHealth => 'Caafimaad';
+
+  @override
+  String get iconThemeHome => 'Guri';
+
+  @override
+  String get iconThemeMoney => 'Lacag iyo wax iibsi';
+
+  @override
+  String get iconThemeWork => 'Shaqo iyo waxbarasho';
+
+  @override
+  String get iconThemeFamily => 'Qoys iyo dad';
+
+  @override
+  String get iconThemeLeisure => 'Isboorti iyo hiwaayado';
+
+  @override
+  String get iconThemeOther => 'Kale';
 
   @override
   String get renameCategoryTitle => 'Magaca qaybta beddel';

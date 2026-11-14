@@ -8013,13 +8013,52 @@ class AppLocalizationsRo extends AppLocalizations {
   String get changeIcon => 'Schimbă pictograma';
 
   @override
-  String get categoryLookTitle => 'Pictogramă și culoare';
-
-  @override
-  String get categoryLookAppColour => 'Culoarea aplicației';
-
-  @override
   String get categoryLookHint => 'Aleasă după nume. Atinge pentru a o schimba.';
+
+  @override
+  String get iconSuggestions => 'Sugerate';
+
+  @override
+  String get iconSearchHint => 'Descrie pictograma';
+
+  @override
+  String get iconSearchResults => 'Cele mai bune potriviri';
+
+  @override
+  String get iconSearchEmpty => 'Nicio pictogramă nu se potrivește. Încearcă alt cuvânt.';
+
+  @override
+  String get iconAllTitle => 'Toate pictogramele';
+
+  @override
+  String get iconThemeDocuments => 'Documente';
+
+  @override
+  String get iconThemeVehicles => 'Vehicule';
+
+  @override
+  String get iconThemeTravel => 'Călătorii';
+
+  @override
+  String get iconThemeHealth => 'Sănătate';
+
+  @override
+  String get iconThemeHome => 'Casă';
+
+  @override
+  String get iconThemeMoney => 'Bani și cumpărături';
+
+  @override
+  String get iconThemeWork => 'Muncă și studii';
+
+  @override
+  String get iconThemeFamily => 'Familie și oameni';
+
+  @override
+  String get iconThemeLeisure => 'Sport și hobby-uri';
+
+  @override
+  String get iconThemeOther => 'Altele';
 
   @override
   String get renameCategoryTitle => 'Redenumește categoria';

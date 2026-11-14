@@ -7934,13 +7934,52 @@ class AppLocalizationsHy extends AppLocalizations {
   String get changeIcon => 'Փոխել պատկերակը';
 
   @override
-  String get categoryLookTitle => 'Պատկերակ և գույն';
-
-  @override
-  String get categoryLookAppColour => 'Հավելվածի գույնը';
-
-  @override
   String get categoryLookHint => 'Ընտրված է ըստ անվան։ Հպեք՝ փոխելու համար։';
+
+  @override
+  String get iconSuggestions => 'Առաջարկվող';
+
+  @override
+  String get iconSearchHint => 'Նկարագրեք պատկերակը';
+
+  @override
+  String get iconSearchResults => 'Լավագույն համընկնումներ';
+
+  @override
+  String get iconSearchEmpty => 'Համապատասխան պատկերակ չկա։ Փորձեք այլ բառ։';
+
+  @override
+  String get iconAllTitle => 'Բոլոր պատկերակները';
+
+  @override
+  String get iconThemeDocuments => 'Փաստաթղթեր';
+
+  @override
+  String get iconThemeVehicles => 'Տրանսպորտային միջոցներ';
+
+  @override
+  String get iconThemeTravel => 'Ճամփորդություն';
+
+  @override
+  String get iconThemeHealth => 'Առողջություն';
+
+  @override
+  String get iconThemeHome => 'Տուն';
+
+  @override
+  String get iconThemeMoney => 'Գումար և գնումներ';
+
+  @override
+  String get iconThemeWork => 'Աշխատանք և ուսում';
+
+  @override
+  String get iconThemeFamily => 'Ընտանիք և մարդիկ';
+
+  @override
+  String get iconThemeLeisure => 'Սպորտ և հոբբիներ';
+
+  @override
+  String get iconThemeOther => 'Այլ';
 
   @override
   String get renameCategoryTitle => 'Վերանվանել կատեգորիան';

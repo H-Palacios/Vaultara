@@ -7924,13 +7924,52 @@ class AppLocalizationsMn extends AppLocalizations {
   String get changeIcon => 'Дүрс солих';
 
   @override
-  String get categoryLookTitle => 'Дүрс ба өнгө';
-
-  @override
-  String get categoryLookAppColour => 'Аппын өнгө';
-
-  @override
   String get categoryLookHint => 'Нэрээр нь сонгосон. Солихын тулд товшино уу.';
+
+  @override
+  String get iconSuggestions => 'Санал болгосон';
+
+  @override
+  String get iconSearchHint => 'Дүрс тэмдгийг тайлбарлана уу';
+
+  @override
+  String get iconSearchResults => 'Хамгийн тохирох';
+
+  @override
+  String get iconSearchEmpty => 'Тохирох дүрс тэмдэг алга. Өөр үг оролдоно уу.';
+
+  @override
+  String get iconAllTitle => 'Бүх дүрс тэмдэг';
+
+  @override
+  String get iconThemeDocuments => 'Бичиг баримт';
+
+  @override
+  String get iconThemeVehicles => 'Тээврийн хэрэгсэл';
+
+  @override
+  String get iconThemeTravel => 'Аялал';
+
+  @override
+  String get iconThemeHealth => 'Эрүүл мэнд';
+
+  @override
+  String get iconThemeHome => 'Гэр';
+
+  @override
+  String get iconThemeMoney => 'Мөнгө ба худалдан авалт';
+
+  @override
+  String get iconThemeWork => 'Ажил ба сургууль';
+
+  @override
+  String get iconThemeFamily => 'Гэр бүл ба хүмүүс';
+
+  @override
+  String get iconThemeLeisure => 'Спорт ба хобби';
+
+  @override
+  String get iconThemeOther => 'Бусад';
 
   @override
   String get renameCategoryTitle => 'Ангиллын нэрийг өөрчлөх';

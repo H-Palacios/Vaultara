@@ -7934,13 +7934,52 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get changeIcon => 'گۆڕینی ئایکۆن';
 
   @override
-  String get categoryLookTitle => 'ئایکۆن و ڕەنگ';
-
-  @override
-  String get categoryLookAppColour => 'ڕەنگی ئەپ';
-
-  @override
   String get categoryLookHint => 'بەپێی ناو هەڵبژێردرا. بۆ گۆڕین دەستی لێبدە.';
+
+  @override
+  String get iconSuggestions => 'پێشنیارکراو';
+
+  @override
+  String get iconSearchHint => 'ئایکۆنەکە وەسف بکە';
+
+  @override
+  String get iconSearchResults => 'باشترین هاوتاکان';
+
+  @override
+  String get iconSearchEmpty => 'هیچ ئایکۆنێک هاوتا نییە. وشەیەکی تر تاقی بکەرەوە.';
+
+  @override
+  String get iconAllTitle => 'هەموو ئایکۆنەکان';
+
+  @override
+  String get iconThemeDocuments => 'بەڵگەنامەکان';
+
+  @override
+  String get iconThemeVehicles => 'ئۆتۆمبێلەکان';
+
+  @override
+  String get iconThemeTravel => 'گەشت';
+
+  @override
+  String get iconThemeHealth => 'تەندروستی';
+
+  @override
+  String get iconThemeHome => 'ماڵ';
+
+  @override
+  String get iconThemeMoney => 'پارە و بازاڕکردن';
+
+  @override
+  String get iconThemeWork => 'کار و خوێندن';
+
+  @override
+  String get iconThemeFamily => 'خێزان و خەڵک';
+
+  @override
+  String get iconThemeLeisure => 'وەرزش و خولیا';
+
+  @override
+  String get iconThemeOther => 'هیتر';
 
   @override
   String get renameCategoryTitle => 'گۆڕینی ناوی هاوپۆل';

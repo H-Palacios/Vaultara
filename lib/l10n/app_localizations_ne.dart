@@ -7934,13 +7934,52 @@ class AppLocalizationsNe extends AppLocalizations {
   String get changeIcon => 'आइकन बदल्नुहोस्';
 
   @override
-  String get categoryLookTitle => 'आइकन र रङ';
-
-  @override
-  String get categoryLookAppColour => 'एपको रङ';
-
-  @override
   String get categoryLookHint => 'नामका आधारमा छानियो। बदल्न ट्याप गर्नुहोस्।';
+
+  @override
+  String get iconSuggestions => 'सुझाव गरिएका';
+
+  @override
+  String get iconSearchHint => 'आइकनको वर्णन गर्नुहोस्';
+
+  @override
+  String get iconSearchResults => 'उत्तम मेलहरू';
+
+  @override
+  String get iconSearchEmpty => 'कुनै आइकन मेल खाएन। अर्को शब्द प्रयास गर्नुहोस्।';
+
+  @override
+  String get iconAllTitle => 'सबै आइकन';
+
+  @override
+  String get iconThemeDocuments => 'कागजातहरू';
+
+  @override
+  String get iconThemeVehicles => 'सवारी साधन';
+
+  @override
+  String get iconThemeTravel => 'यात्रा';
+
+  @override
+  String get iconThemeHealth => 'स्वास्थ्य';
+
+  @override
+  String get iconThemeHome => 'घर';
+
+  @override
+  String get iconThemeMoney => 'पैसा र किनमेल';
+
+  @override
+  String get iconThemeWork => 'काम र अध्ययन';
+
+  @override
+  String get iconThemeFamily => 'परिवार र मानिसहरू';
+
+  @override
+  String get iconThemeLeisure => 'खेलकुद र सोख';
+
+  @override
+  String get iconThemeOther => 'अन्य';
 
   @override
   String get renameCategoryTitle => 'श्रेणीको नाम बदल्नुहोस्';

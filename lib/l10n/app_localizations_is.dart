@@ -7933,13 +7933,52 @@ class AppLocalizationsIs extends AppLocalizations {
   String get changeIcon => 'Breyta tákni';
 
   @override
-  String get categoryLookTitle => 'Tákn og litur';
-
-  @override
-  String get categoryLookAppColour => 'Litur forritsins';
-
-  @override
   String get categoryLookHint => 'Valið út frá nafninu. Ýttu til að breyta.';
+
+  @override
+  String get iconSuggestions => 'Tillögur';
+
+  @override
+  String get iconSearchHint => 'Lýstu tákninu';
+
+  @override
+  String get iconSearchResults => 'Bestu samsvörun';
+
+  @override
+  String get iconSearchEmpty => 'Ekkert tákn passar. Prófaðu annað orð.';
+
+  @override
+  String get iconAllTitle => 'Öll tákn';
+
+  @override
+  String get iconThemeDocuments => 'Skjöl';
+
+  @override
+  String get iconThemeVehicles => 'Ökutæki';
+
+  @override
+  String get iconThemeTravel => 'Ferðalög';
+
+  @override
+  String get iconThemeHealth => 'Heilsa';
+
+  @override
+  String get iconThemeHome => 'Heimili';
+
+  @override
+  String get iconThemeMoney => 'Peningar og innkaup';
+
+  @override
+  String get iconThemeWork => 'Vinna og nám';
+
+  @override
+  String get iconThemeFamily => 'Fjölskylda og fólk';
+
+  @override
+  String get iconThemeLeisure => 'Íþróttir og áhugamál';
+
+  @override
+  String get iconThemeOther => 'Annað';
 
   @override
   String get renameCategoryTitle => 'Endurnefna flokk';

@@ -7938,13 +7938,52 @@ class AppLocalizationsSq extends AppLocalizations {
   String get changeIcon => 'Ndrysho ikonën';
 
   @override
-  String get categoryLookTitle => 'Ikona dhe ngjyra';
-
-  @override
-  String get categoryLookAppColour => 'Ngjyra e aplikacionit';
-
-  @override
   String get categoryLookHint => 'Zgjedhur sipas emrit. Prek për ta ndryshuar.';
+
+  @override
+  String get iconSuggestions => 'Të sugjeruara';
+
+  @override
+  String get iconSearchHint => 'Përshkruani ikonën';
+
+  @override
+  String get iconSearchResults => 'Përputhjet më të mira';
+
+  @override
+  String get iconSearchEmpty => 'Asnjë ikonë nuk përputhet. Provoni një fjalë tjetër.';
+
+  @override
+  String get iconAllTitle => 'Të gjitha ikonat';
+
+  @override
+  String get iconThemeDocuments => 'Dokumente';
+
+  @override
+  String get iconThemeVehicles => 'Automjete';
+
+  @override
+  String get iconThemeTravel => 'Udhëtime';
+
+  @override
+  String get iconThemeHealth => 'Shëndet';
+
+  @override
+  String get iconThemeHome => 'Shtëpi';
+
+  @override
+  String get iconThemeMoney => 'Para dhe blerje';
+
+  @override
+  String get iconThemeWork => 'Punë dhe studime';
+
+  @override
+  String get iconThemeFamily => 'Familje dhe njerëz';
+
+  @override
+  String get iconThemeLeisure => 'Sport dhe hobi';
+
+  @override
+  String get iconThemeOther => 'Të tjera';
 
   @override
   String get renameCategoryTitle => 'Riemërto kategorinë';

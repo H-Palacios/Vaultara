@@ -7864,13 +7864,52 @@ class AppLocalizationsJa extends AppLocalizations {
   String get changeIcon => 'アイコンを変更';
 
   @override
-  String get categoryLookTitle => 'アイコンと色';
-
-  @override
-  String get categoryLookAppColour => 'アプリの色';
-
-  @override
   String get categoryLookHint => '名前から選びました。タップして変更できます。';
+
+  @override
+  String get iconSuggestions => 'おすすめ';
+
+  @override
+  String get iconSearchHint => 'アイコンを説明';
+
+  @override
+  String get iconSearchResults => '一致するアイコン';
+
+  @override
+  String get iconSearchEmpty => '一致するアイコンがありません。別の言葉で試してください。';
+
+  @override
+  String get iconAllTitle => 'すべてのアイコン';
+
+  @override
+  String get iconThemeDocuments => '書類';
+
+  @override
+  String get iconThemeVehicles => '乗り物';
+
+  @override
+  String get iconThemeTravel => '旅行';
+
+  @override
+  String get iconThemeHealth => '健康';
+
+  @override
+  String get iconThemeHome => '住まい';
+
+  @override
+  String get iconThemeMoney => 'お金と買い物';
+
+  @override
+  String get iconThemeWork => '仕事と勉強';
+
+  @override
+  String get iconThemeFamily => '家族と人';
+
+  @override
+  String get iconThemeLeisure => 'スポーツと趣味';
+
+  @override
+  String get iconThemeOther => 'その他';
 
   @override
   String get renameCategoryTitle => 'カテゴリ名を変更';

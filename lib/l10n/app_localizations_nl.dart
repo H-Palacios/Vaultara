@@ -7938,13 +7938,52 @@ class AppLocalizationsNl extends AppLocalizations {
   String get changeIcon => 'Icoon wijzigen';
 
   @override
-  String get categoryLookTitle => 'Icoon en kleur';
-
-  @override
-  String get categoryLookAppColour => 'App-kleur';
-
-  @override
   String get categoryLookHint => 'Gekozen op basis van de naam. Tik om te wijzigen.';
+
+  @override
+  String get iconSuggestions => 'Voorgesteld';
+
+  @override
+  String get iconSearchHint => 'Beschrijf het pictogram';
+
+  @override
+  String get iconSearchResults => 'Beste overeenkomsten';
+
+  @override
+  String get iconSearchEmpty => 'Geen pictogrammen gevonden. Probeer een ander woord.';
+
+  @override
+  String get iconAllTitle => 'Alle pictogrammen';
+
+  @override
+  String get iconThemeDocuments => 'Documenten';
+
+  @override
+  String get iconThemeVehicles => 'Voertuigen';
+
+  @override
+  String get iconThemeTravel => 'Reizen';
+
+  @override
+  String get iconThemeHealth => 'Gezondheid';
+
+  @override
+  String get iconThemeHome => 'Thuis';
+
+  @override
+  String get iconThemeMoney => 'Geld en winkelen';
+
+  @override
+  String get iconThemeWork => 'Werk en studie';
+
+  @override
+  String get iconThemeFamily => 'Familie en mensen';
+
+  @override
+  String get iconThemeLeisure => 'Sport en hobby’s';
+
+  @override
+  String get iconThemeOther => 'Overig';
 
   @override
   String get renameCategoryTitle => 'Categorie hernoemen';

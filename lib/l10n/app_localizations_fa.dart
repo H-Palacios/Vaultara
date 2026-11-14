@@ -7934,13 +7934,52 @@ class AppLocalizationsFa extends AppLocalizations {
   String get changeIcon => 'تغییر نماد';
 
   @override
-  String get categoryLookTitle => 'نماد و رنگ';
-
-  @override
-  String get categoryLookAppColour => 'رنگ برنامه';
-
-  @override
   String get categoryLookHint => 'از روی نام انتخاب شد. برای تغییر ضربه بزنید.';
+
+  @override
+  String get iconSuggestions => 'پیشنهادی';
+
+  @override
+  String get iconSearchHint => 'نماد را توصیف کنید';
+
+  @override
+  String get iconSearchResults => 'بهترین موارد';
+
+  @override
+  String get iconSearchEmpty => 'هیچ نمادی پیدا نشد. کلمه دیگری را امتحان کنید.';
+
+  @override
+  String get iconAllTitle => 'همه نمادها';
+
+  @override
+  String get iconThemeDocuments => 'اسناد';
+
+  @override
+  String get iconThemeVehicles => 'وسایل نقلیه';
+
+  @override
+  String get iconThemeTravel => 'سفر';
+
+  @override
+  String get iconThemeHealth => 'سلامت';
+
+  @override
+  String get iconThemeHome => 'خانه';
+
+  @override
+  String get iconThemeMoney => 'پول و خرید';
+
+  @override
+  String get iconThemeWork => 'کار و تحصیل';
+
+  @override
+  String get iconThemeFamily => 'خانواده و مردم';
+
+  @override
+  String get iconThemeLeisure => 'ورزش و سرگرمی';
+
+  @override
+  String get iconThemeOther => 'سایر';
 
   @override
   String get renameCategoryTitle => 'تغییر نام دسته';

@@ -7938,13 +7938,52 @@ class AppLocalizationsNo extends AppLocalizations {
   String get changeIcon => 'Bytt ikon';
 
   @override
-  String get categoryLookTitle => 'Ikon og farge';
-
-  @override
-  String get categoryLookAppColour => 'Appens farge';
-
-  @override
   String get categoryLookHint => 'Valgt ut fra navnet. Trykk for å endre.';
+
+  @override
+  String get iconSuggestions => 'Forslag';
+
+  @override
+  String get iconSearchHint => 'Beskriv ikonet';
+
+  @override
+  String get iconSearchResults => 'Beste treff';
+
+  @override
+  String get iconSearchEmpty => 'Ingen ikoner passer. Prøv et annet ord.';
+
+  @override
+  String get iconAllTitle => 'Alle ikoner';
+
+  @override
+  String get iconThemeDocuments => 'Dokumenter';
+
+  @override
+  String get iconThemeVehicles => 'Kjøretøy';
+
+  @override
+  String get iconThemeTravel => 'Reise';
+
+  @override
+  String get iconThemeHealth => 'Helse';
+
+  @override
+  String get iconThemeHome => 'Hjem';
+
+  @override
+  String get iconThemeMoney => 'Penger og innkjøp';
+
+  @override
+  String get iconThemeWork => 'Jobb og studier';
+
+  @override
+  String get iconThemeFamily => 'Familie og folk';
+
+  @override
+  String get iconThemeLeisure => 'Sport og hobbyer';
+
+  @override
+  String get iconThemeOther => 'Annet';
 
   @override
   String get renameCategoryTitle => 'Gi kategorien nytt navn';

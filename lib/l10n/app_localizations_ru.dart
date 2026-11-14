@@ -8089,13 +8089,52 @@ class AppLocalizationsRu extends AppLocalizations {
   String get changeIcon => 'Сменить значок';
 
   @override
-  String get categoryLookTitle => 'Значок и цвет';
-
-  @override
-  String get categoryLookAppColour => 'Цвет приложения';
-
-  @override
   String get categoryLookHint => 'Подобран по названию. Нажмите, чтобы изменить.';
+
+  @override
+  String get iconSuggestions => 'Предложенные';
+
+  @override
+  String get iconSearchHint => 'Опишите значок';
+
+  @override
+  String get iconSearchResults => 'Лучшие совпадения';
+
+  @override
+  String get iconSearchEmpty => 'Подходящих значков нет. Попробуйте другое слово.';
+
+  @override
+  String get iconAllTitle => 'Все значки';
+
+  @override
+  String get iconThemeDocuments => 'Документы';
+
+  @override
+  String get iconThemeVehicles => 'Транспорт';
+
+  @override
+  String get iconThemeTravel => 'Путешествия';
+
+  @override
+  String get iconThemeHealth => 'Здоровье';
+
+  @override
+  String get iconThemeHome => 'Дом';
+
+  @override
+  String get iconThemeMoney => 'Деньги и покупки';
+
+  @override
+  String get iconThemeWork => 'Работа и учёба';
+
+  @override
+  String get iconThemeFamily => 'Семья и люди';
+
+  @override
+  String get iconThemeLeisure => 'Спорт и хобби';
+
+  @override
+  String get iconThemeOther => 'Другое';
 
   @override
   String get renameCategoryTitle => 'Переименовать категорию';

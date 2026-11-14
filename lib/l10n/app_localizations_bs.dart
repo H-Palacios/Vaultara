@@ -8005,13 +8005,52 @@ class AppLocalizationsBs extends AppLocalizations {
   String get changeIcon => 'Promijeni ikonu';
 
   @override
-  String get categoryLookTitle => 'Ikona i boja';
-
-  @override
-  String get categoryLookAppColour => 'Boja aplikacije';
-
-  @override
   String get categoryLookHint => 'Odabrano prema nazivu. Dodirnite za promjenu.';
+
+  @override
+  String get iconSuggestions => 'Prijedlozi';
+
+  @override
+  String get iconSearchHint => 'Opišite ikonu';
+
+  @override
+  String get iconSearchResults => 'Najbolja podudaranja';
+
+  @override
+  String get iconSearchEmpty => 'Nijedna ikona ne odgovara. Pokušajte drugu riječ.';
+
+  @override
+  String get iconAllTitle => 'Sve ikone';
+
+  @override
+  String get iconThemeDocuments => 'Dokumenti';
+
+  @override
+  String get iconThemeVehicles => 'Vozila';
+
+  @override
+  String get iconThemeTravel => 'Putovanja';
+
+  @override
+  String get iconThemeHealth => 'Zdravlje';
+
+  @override
+  String get iconThemeHome => 'Dom';
+
+  @override
+  String get iconThemeMoney => 'Novac i kupovina';
+
+  @override
+  String get iconThemeWork => 'Posao i studij';
+
+  @override
+  String get iconThemeFamily => 'Porodica i ljudi';
+
+  @override
+  String get iconThemeLeisure => 'Sport i hobiji';
+
+  @override
+  String get iconThemeOther => 'Ostalo';
 
   @override
   String get renameCategoryTitle => 'Preimenuj kategoriju';

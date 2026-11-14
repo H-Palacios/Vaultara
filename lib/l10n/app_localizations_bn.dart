@@ -7934,13 +7934,52 @@ class AppLocalizationsBn extends AppLocalizations {
   String get changeIcon => 'আইকন বদলান';
 
   @override
-  String get categoryLookTitle => 'আইকন ও রং';
-
-  @override
-  String get categoryLookAppColour => 'অ্যাপের রং';
-
-  @override
   String get categoryLookHint => 'নাম দেখে বাছাই করা হয়েছে। বদলাতে ট্যাপ করুন।';
+
+  @override
+  String get iconSuggestions => 'প্রস্তাবিত';
+
+  @override
+  String get iconSearchHint => 'আইকনটি বর্ণনা করুন';
+
+  @override
+  String get iconSearchResults => 'সেরা মিল';
+
+  @override
+  String get iconSearchEmpty => 'কোনো আইকন মেলেনি। অন্য শব্দ চেষ্টা করুন।';
+
+  @override
+  String get iconAllTitle => 'সব আইকন';
+
+  @override
+  String get iconThemeDocuments => 'নথি';
+
+  @override
+  String get iconThemeVehicles => 'যানবাহন';
+
+  @override
+  String get iconThemeTravel => 'ভ্রমণ';
+
+  @override
+  String get iconThemeHealth => 'স্বাস্থ্য';
+
+  @override
+  String get iconThemeHome => 'বাড়ি';
+
+  @override
+  String get iconThemeMoney => 'টাকা ও কেনাকাটা';
+
+  @override
+  String get iconThemeWork => 'কাজ ও পড়াশোনা';
+
+  @override
+  String get iconThemeFamily => 'পরিবার ও মানুষ';
+
+  @override
+  String get iconThemeLeisure => 'খেলাধুলা ও শখ';
+
+  @override
+  String get iconThemeOther => 'অন্যান্য';
 
   @override
   String get renameCategoryTitle => 'বিভাগের নাম বদলান';

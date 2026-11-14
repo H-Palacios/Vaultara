@@ -7934,13 +7934,52 @@ class AppLocalizationsKa extends AppLocalizations {
   String get changeIcon => 'ხატულის შეცვლა';
 
   @override
-  String get categoryLookTitle => 'ხატულა და ფერი';
-
-  @override
-  String get categoryLookAppColour => 'აპის ფერი';
-
-  @override
   String get categoryLookHint => 'შერჩეულია სახელის მიხედვით. შესაცვლელად შეეხეთ.';
+
+  @override
+  String get iconSuggestions => 'შემოთავაზებული';
+
+  @override
+  String get iconSearchHint => 'აღწერეთ ხატულა';
+
+  @override
+  String get iconSearchResults => 'საუკეთესო დამთხვევები';
+
+  @override
+  String get iconSearchEmpty => 'შესაბამისი ხატულა ვერ მოიძებნა. სცადეთ სხვა სიტყვა.';
+
+  @override
+  String get iconAllTitle => 'ყველა ხატულა';
+
+  @override
+  String get iconThemeDocuments => 'დოკუმენტები';
+
+  @override
+  String get iconThemeVehicles => 'ტრანსპორტი';
+
+  @override
+  String get iconThemeTravel => 'მოგზაურობა';
+
+  @override
+  String get iconThemeHealth => 'ჯანმრთელობა';
+
+  @override
+  String get iconThemeHome => 'სახლი';
+
+  @override
+  String get iconThemeMoney => 'ფული და შოპინგი';
+
+  @override
+  String get iconThemeWork => 'სამსახური და სწავლა';
+
+  @override
+  String get iconThemeFamily => 'ოჯახი და ადამიანები';
+
+  @override
+  String get iconThemeLeisure => 'სპორტი და ჰობი';
+
+  @override
+  String get iconThemeOther => 'სხვა';
 
   @override
   String get renameCategoryTitle => 'კატეგორიის გადარქმევა';

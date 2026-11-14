@@ -7987,13 +7987,52 @@ class AppLocalizationsHe extends AppLocalizations {
   String get changeIcon => 'שינוי סמל';
 
   @override
-  String get categoryLookTitle => 'סמל וצבע';
-
-  @override
-  String get categoryLookAppColour => 'צבע האפליקציה';
-
-  @override
   String get categoryLookHint => 'נבחר לפי השם. הקש כדי לשנות.';
+
+  @override
+  String get iconSuggestions => 'מוצעים';
+
+  @override
+  String get iconSearchHint => 'תארו את הסמל';
+
+  @override
+  String get iconSearchResults => 'ההתאמות הטובות ביותר';
+
+  @override
+  String get iconSearchEmpty => 'אין סמלים מתאימים. נסו מילה אחרת.';
+
+  @override
+  String get iconAllTitle => 'כל הסמלים';
+
+  @override
+  String get iconThemeDocuments => 'מסמכים';
+
+  @override
+  String get iconThemeVehicles => 'כלי רכב';
+
+  @override
+  String get iconThemeTravel => 'נסיעות';
+
+  @override
+  String get iconThemeHealth => 'בריאות';
+
+  @override
+  String get iconThemeHome => 'בית';
+
+  @override
+  String get iconThemeMoney => 'כסף וקניות';
+
+  @override
+  String get iconThemeWork => 'עבודה ולימודים';
+
+  @override
+  String get iconThemeFamily => 'משפחה ואנשים';
+
+  @override
+  String get iconThemeLeisure => 'ספורט ותחביבים';
+
+  @override
+  String get iconThemeOther => 'אחר';
 
   @override
   String get renameCategoryTitle => 'שינוי שם הקטגוריה';

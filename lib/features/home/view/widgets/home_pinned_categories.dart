@@ -56,14 +56,11 @@ class HomePinnedCategories extends StatelessWidget {
             separatorBuilder: (context, index) => const SizedBox(width: 8),
             itemBuilder: (context, i) {
               final category = pinned[i];
-              final colour =
-                  CategoryResolver.categoryColour(context, category.key) ??
-                  scheme.primary;
               return ActionChip(
                 avatar: Icon(
                   CategoryResolver.categoryIcon(context, category.key),
                   size: 18,
-                  color: colour,
+                  color: scheme.primary,
                 ),
                 label: Text(
                   CategoryResolver.categoryLabel(context, category.key),

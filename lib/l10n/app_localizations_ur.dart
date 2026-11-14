@@ -7934,13 +7934,52 @@ class AppLocalizationsUr extends AppLocalizations {
   String get changeIcon => 'آئیکن بدلیں';
 
   @override
-  String get categoryLookTitle => 'آئیکن اور رنگ';
-
-  @override
-  String get categoryLookAppColour => 'ایپ کا رنگ';
-
-  @override
   String get categoryLookHint => 'نام کی بنیاد پر چنا گیا۔ بدلنے کے لیے ٹیپ کریں۔';
+
+  @override
+  String get iconSuggestions => 'تجویز کردہ';
+
+  @override
+  String get iconSearchHint => 'آئیکن کی وضاحت کریں';
+
+  @override
+  String get iconSearchResults => 'بہترین مماثلت';
+
+  @override
+  String get iconSearchEmpty => 'کوئی آئیکن مماثل نہیں۔ کوئی اور لفظ آزمائیں۔';
+
+  @override
+  String get iconAllTitle => 'تمام آئیکنز';
+
+  @override
+  String get iconThemeDocuments => 'دستاویزات';
+
+  @override
+  String get iconThemeVehicles => 'گاڑیاں';
+
+  @override
+  String get iconThemeTravel => 'سفر';
+
+  @override
+  String get iconThemeHealth => 'صحت';
+
+  @override
+  String get iconThemeHome => 'گھر';
+
+  @override
+  String get iconThemeMoney => 'پیسہ اور خریداری';
+
+  @override
+  String get iconThemeWork => 'کام اور تعلیم';
+
+  @override
+  String get iconThemeFamily => 'خاندان اور لوگ';
+
+  @override
+  String get iconThemeLeisure => 'کھیل اور مشاغل';
+
+  @override
+  String get iconThemeOther => 'دیگر';
 
   @override
   String get renameCategoryTitle => 'زمرے کا نام بدلیں';

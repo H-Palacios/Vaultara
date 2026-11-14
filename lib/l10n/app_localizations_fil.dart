@@ -7928,13 +7928,52 @@ class AppLocalizationsFil extends AppLocalizations {
   String get changeIcon => 'Palitan ang icon';
 
   @override
-  String get categoryLookTitle => 'Icon at kulay';
-
-  @override
-  String get categoryLookAppColour => 'Kulay ng app';
-
-  @override
   String get categoryLookHint => 'Pinili batay sa pangalan. I-tap para palitan.';
+
+  @override
+  String get iconSuggestions => 'Iminumungkahi';
+
+  @override
+  String get iconSearchHint => 'Ilarawan ang icon';
+
+  @override
+  String get iconSearchResults => 'Pinakamagandang tugma';
+
+  @override
+  String get iconSearchEmpty => 'Walang tugmang icon. Subukan ang ibang salita.';
+
+  @override
+  String get iconAllTitle => 'Lahat ng icon';
+
+  @override
+  String get iconThemeDocuments => 'Mga dokumento';
+
+  @override
+  String get iconThemeVehicles => 'Mga sasakyan';
+
+  @override
+  String get iconThemeTravel => 'Paglalakbay';
+
+  @override
+  String get iconThemeHealth => 'Kalusugan';
+
+  @override
+  String get iconThemeHome => 'Tahanan';
+
+  @override
+  String get iconThemeMoney => 'Pera at pamimili';
+
+  @override
+  String get iconThemeWork => 'Trabaho at pag-aaral';
+
+  @override
+  String get iconThemeFamily => 'Pamilya at mga tao';
+
+  @override
+  String get iconThemeLeisure => 'Sports at libangan';
+
+  @override
+  String get iconThemeOther => 'Iba pa';
 
   @override
   String get renameCategoryTitle => 'Palitan ang pangalan ng kategorya';

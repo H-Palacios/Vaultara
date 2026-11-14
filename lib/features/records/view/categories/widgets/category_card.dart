@@ -117,11 +117,7 @@ class CategoryCard extends StatelessWidget {
                 height: 40,
                 child: Row(
                   children: [
-                    CategoryIconBadge(
-                      icon: icon,
-                      colour: CategoryAppearance.colourFor(category.colourKey),
-                      size: 34,
-                    ),
+                    CategoryIconBadge(icon: icon, size: 34),
                     const Spacer(),
                     if (isPinned)
                       IconButton(

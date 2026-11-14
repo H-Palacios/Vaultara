@@ -7864,13 +7864,52 @@ class AppLocalizationsTh extends AppLocalizations {
   String get changeIcon => 'เปลี่ยนไอคอน';
 
   @override
-  String get categoryLookTitle => 'ไอคอนและสี';
-
-  @override
-  String get categoryLookAppColour => 'สีของแอป';
-
-  @override
   String get categoryLookHint => 'เลือกจากชื่อแล้ว แตะเพื่อเปลี่ยน';
+
+  @override
+  String get iconSuggestions => 'แนะนำ';
+
+  @override
+  String get iconSearchHint => 'อธิบายไอคอน';
+
+  @override
+  String get iconSearchResults => 'ตรงที่สุด';
+
+  @override
+  String get iconSearchEmpty => 'ไม่พบไอคอนที่ตรงกัน ลองคำอื่น';
+
+  @override
+  String get iconAllTitle => 'ไอคอนทั้งหมด';
+
+  @override
+  String get iconThemeDocuments => 'เอกสาร';
+
+  @override
+  String get iconThemeVehicles => 'ยานพาหนะ';
+
+  @override
+  String get iconThemeTravel => 'การเดินทาง';
+
+  @override
+  String get iconThemeHealth => 'สุขภาพ';
+
+  @override
+  String get iconThemeHome => 'บ้าน';
+
+  @override
+  String get iconThemeMoney => 'เงินและการช้อปปิ้ง';
+
+  @override
+  String get iconThemeWork => 'งานและการเรียน';
+
+  @override
+  String get iconThemeFamily => 'ครอบครัวและผู้คน';
+
+  @override
+  String get iconThemeLeisure => 'กีฬาและงานอดิเรก';
+
+  @override
+  String get iconThemeOther => 'อื่นๆ';
 
   @override
   String get renameCategoryTitle => 'เปลี่ยนชื่อหมวดหมู่';

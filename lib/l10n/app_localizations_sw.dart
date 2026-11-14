@@ -7934,13 +7934,52 @@ class AppLocalizationsSw extends AppLocalizations {
   String get changeIcon => 'Badilisha aikoni';
 
   @override
-  String get categoryLookTitle => 'Aikoni na rangi';
-
-  @override
-  String get categoryLookAppColour => 'Rangi ya programu';
-
-  @override
   String get categoryLookHint => 'Imechaguliwa kutokana na jina. Gusa ili kubadilisha.';
+
+  @override
+  String get iconSuggestions => 'Zilizopendekezwa';
+
+  @override
+  String get iconSearchHint => 'Eleza aikoni';
+
+  @override
+  String get iconSearchResults => 'Zinazolingana zaidi';
+
+  @override
+  String get iconSearchEmpty => 'Hakuna aikoni inayolingana. Jaribu neno lingine.';
+
+  @override
+  String get iconAllTitle => 'Aikoni zote';
+
+  @override
+  String get iconThemeDocuments => 'Hati';
+
+  @override
+  String get iconThemeVehicles => 'Magari';
+
+  @override
+  String get iconThemeTravel => 'Usafiri';
+
+  @override
+  String get iconThemeHealth => 'Afya';
+
+  @override
+  String get iconThemeHome => 'Nyumbani';
+
+  @override
+  String get iconThemeMoney => 'Pesa na ununuzi';
+
+  @override
+  String get iconThemeWork => 'Kazi na masomo';
+
+  @override
+  String get iconThemeFamily => 'Familia na watu';
+
+  @override
+  String get iconThemeLeisure => 'Michezo na mambo ya kujifurahisha';
+
+  @override
+  String get iconThemeOther => 'Nyingine';
 
   @override
   String get renameCategoryTitle => 'Badilisha jina la kategoria';

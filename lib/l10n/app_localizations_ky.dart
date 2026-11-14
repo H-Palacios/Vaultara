@@ -7934,13 +7934,52 @@ class AppLocalizationsKy extends AppLocalizations {
   String get changeIcon => 'Сүрөтчөнү өзгөртүү';
 
   @override
-  String get categoryLookTitle => 'Сүрөтчө жана түс';
-
-  @override
-  String get categoryLookAppColour => 'Колдонмонун түсү';
-
-  @override
   String get categoryLookHint => 'Аталышына жараша тандалды. Өзгөртүү үчүн таптаңыз.';
+
+  @override
+  String get iconSuggestions => 'Сунушталган';
+
+  @override
+  String get iconSearchHint => 'Сөлөкөттү сүрөттөңүз';
+
+  @override
+  String get iconSearchResults => 'Эң жакшы дал келүүлөр';
+
+  @override
+  String get iconSearchEmpty => 'Дал келген сөлөкөт жок. Башка сөздү байкап көрүңүз.';
+
+  @override
+  String get iconAllTitle => 'Бардык сөлөкөттөр';
+
+  @override
+  String get iconThemeDocuments => 'Документтер';
+
+  @override
+  String get iconThemeVehicles => 'Унаалар';
+
+  @override
+  String get iconThemeTravel => 'Саякат';
+
+  @override
+  String get iconThemeHealth => 'Ден соолук';
+
+  @override
+  String get iconThemeHome => 'Үй';
+
+  @override
+  String get iconThemeMoney => 'Акча жана соода';
+
+  @override
+  String get iconThemeWork => 'Иш жана окуу';
+
+  @override
+  String get iconThemeFamily => 'Үй-бүлө жана адамдар';
+
+  @override
+  String get iconThemeLeisure => 'Спорт жана хобби';
+
+  @override
+  String get iconThemeOther => 'Башка';
 
   @override
   String get renameCategoryTitle => 'Категориянын атын өзгөртүү';

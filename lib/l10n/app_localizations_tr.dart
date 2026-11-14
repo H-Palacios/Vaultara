@@ -7934,13 +7934,52 @@ class AppLocalizationsTr extends AppLocalizations {
   String get changeIcon => 'Simgeyi değiştir';
 
   @override
-  String get categoryLookTitle => 'Simge ve renk';
-
-  @override
-  String get categoryLookAppColour => 'Uygulama rengi';
-
-  @override
   String get categoryLookHint => 'Adına göre seçildi. Değiştirmek için dokunun.';
+
+  @override
+  String get iconSuggestions => 'Önerilenler';
+
+  @override
+  String get iconSearchHint => 'Simgeyi tarif edin';
+
+  @override
+  String get iconSearchResults => 'En iyi eşleşmeler';
+
+  @override
+  String get iconSearchEmpty => 'Eşleşen simge yok. Başka bir kelime deneyin.';
+
+  @override
+  String get iconAllTitle => 'Tüm simgeler';
+
+  @override
+  String get iconThemeDocuments => 'Belgeler';
+
+  @override
+  String get iconThemeVehicles => 'Araçlar';
+
+  @override
+  String get iconThemeTravel => 'Seyahat';
+
+  @override
+  String get iconThemeHealth => 'Sağlık';
+
+  @override
+  String get iconThemeHome => 'Ev';
+
+  @override
+  String get iconThemeMoney => 'Para ve alışveriş';
+
+  @override
+  String get iconThemeWork => 'İş ve eğitim';
+
+  @override
+  String get iconThemeFamily => 'Aile ve insanlar';
+
+  @override
+  String get iconThemeLeisure => 'Spor ve hobiler';
+
+  @override
+  String get iconThemeOther => 'Diğer';
 
   @override
   String get renameCategoryTitle => 'Kategoriyi yeniden adlandır';

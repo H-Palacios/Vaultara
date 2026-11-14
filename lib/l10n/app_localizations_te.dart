@@ -7934,13 +7934,52 @@ class AppLocalizationsTe extends AppLocalizations {
   String get changeIcon => 'చిహ్నం మార్చు';
 
   @override
-  String get categoryLookTitle => 'చిహ్నం మరియు రంగు';
-
-  @override
-  String get categoryLookAppColour => 'యాప్ రంగు';
-
-  @override
   String get categoryLookHint => 'పేరు ఆధారంగా ఎంచుకున్నాం. మార్చడానికి నొక్కండి.';
+
+  @override
+  String get iconSuggestions => 'సూచించినవి';
+
+  @override
+  String get iconSearchHint => 'ఐకాన్‌ను వివరించండి';
+
+  @override
+  String get iconSearchResults => 'ఉత్తమ సరిపోలికలు';
+
+  @override
+  String get iconSearchEmpty => 'ఏ ఐకాన్ సరిపోలలేదు. మరో పదం ప్రయత్నించండి.';
+
+  @override
+  String get iconAllTitle => 'అన్ని ఐకాన్‌లు';
+
+  @override
+  String get iconThemeDocuments => 'పత్రాలు';
+
+  @override
+  String get iconThemeVehicles => 'వాహనాలు';
+
+  @override
+  String get iconThemeTravel => 'ప్రయాణం';
+
+  @override
+  String get iconThemeHealth => 'ఆరోగ్యం';
+
+  @override
+  String get iconThemeHome => 'ఇల్లు';
+
+  @override
+  String get iconThemeMoney => 'డబ్బు మరియు షాపింగ్';
+
+  @override
+  String get iconThemeWork => 'పని మరియు చదువు';
+
+  @override
+  String get iconThemeFamily => 'కుటుంబం మరియు వ్యక్తులు';
+
+  @override
+  String get iconThemeLeisure => 'క్రీడలు మరియు అభిరుచులు';
+
+  @override
+  String get iconThemeOther => 'ఇతరాలు';
 
   @override
   String get renameCategoryTitle => 'వర్గం పేరు మార్చు';

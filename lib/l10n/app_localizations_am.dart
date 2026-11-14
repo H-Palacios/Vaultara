@@ -7934,13 +7934,52 @@ class AppLocalizationsAm extends AppLocalizations {
   String get changeIcon => 'አዶ ቀይር';
 
   @override
-  String get categoryLookTitle => 'አዶ እና ቀለም';
-
-  @override
-  String get categoryLookAppColour => 'የመተግበሪያው ቀለም';
-
-  @override
   String get categoryLookHint => 'ከስሙ ተመርጧል። ለመቀየር ይንኩ።';
+
+  @override
+  String get iconSuggestions => 'የተጠቆሙ';
+
+  @override
+  String get iconSearchHint => 'አዶውን ይግለጹ';
+
+  @override
+  String get iconSearchResults => 'ምርጥ ተዛማጆች';
+
+  @override
+  String get iconSearchEmpty => 'ምንም አዶ አልተገኘም። ሌላ ቃል ይሞክሩ።';
+
+  @override
+  String get iconAllTitle => 'ሁሉም አዶዎች';
+
+  @override
+  String get iconThemeDocuments => 'ሰነዶች';
+
+  @override
+  String get iconThemeVehicles => 'ተሽከርካሪዎች';
+
+  @override
+  String get iconThemeTravel => 'ጉዞ';
+
+  @override
+  String get iconThemeHealth => 'ጤና';
+
+  @override
+  String get iconThemeHome => 'ቤት';
+
+  @override
+  String get iconThemeMoney => 'ገንዘብ እና ግብይት';
+
+  @override
+  String get iconThemeWork => 'ሥራ እና ትምህርት';
+
+  @override
+  String get iconThemeFamily => 'ቤተሰብ እና ሰዎች';
+
+  @override
+  String get iconThemeLeisure => 'ስፖርት እና የትርፍ ጊዜ';
+
+  @override
+  String get iconThemeOther => 'ሌላ';
 
   @override
   String get renameCategoryTitle => 'ምድቡን እንደገና ሰይም';

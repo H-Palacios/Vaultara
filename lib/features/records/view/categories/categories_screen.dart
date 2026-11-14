@@ -153,14 +153,13 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       context,
       initial: CategoryLook(
         icon: category.iconKey ?? IconSuggestService.guess(category.label).icon,
-        colour: category.colourKey,
       ),
+      categoryName: category.label,
     );
     if (picked == null) return;
     await CategoryRepository.updateAppearance(
       category.key,
       iconKey: picked.icon,
-      colourKey: picked.colour,
     );
     if (mounted) setState(() {});
   }

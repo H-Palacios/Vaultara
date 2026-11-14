@@ -7934,13 +7934,52 @@ class AppLocalizationsHi extends AppLocalizations {
   String get changeIcon => 'आइकन बदलें';
 
   @override
-  String get categoryLookTitle => 'आइकन और रंग';
-
-  @override
-  String get categoryLookAppColour => 'ऐप का रंग';
-
-  @override
   String get categoryLookHint => 'नाम के आधार पर चुना गया। बदलने के लिए टैप करें।';
+
+  @override
+  String get iconSuggestions => 'सुझाए गए';
+
+  @override
+  String get iconSearchHint => 'आइकन का वर्णन करें';
+
+  @override
+  String get iconSearchResults => 'सबसे अच्छे मेल';
+
+  @override
+  String get iconSearchEmpty => 'कोई आइकन मेल नहीं खाता। कोई और शब्द आज़माएँ।';
+
+  @override
+  String get iconAllTitle => 'सभी आइकन';
+
+  @override
+  String get iconThemeDocuments => 'दस्तावेज़';
+
+  @override
+  String get iconThemeVehicles => 'वाहन';
+
+  @override
+  String get iconThemeTravel => 'यात्रा';
+
+  @override
+  String get iconThemeHealth => 'स्वास्थ्य';
+
+  @override
+  String get iconThemeHome => 'घर';
+
+  @override
+  String get iconThemeMoney => 'पैसा और खरीदारी';
+
+  @override
+  String get iconThemeWork => 'काम और पढ़ाई';
+
+  @override
+  String get iconThemeFamily => 'परिवार और लोग';
+
+  @override
+  String get iconThemeLeisure => 'खेल और शौक';
+
+  @override
+  String get iconThemeOther => 'अन्य';
 
   @override
   String get renameCategoryTitle => 'श्रेणी का नाम बदलें';

@@ -1,75 +1,86 @@
-import 'dart:async';
 
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:vaultara/core/data/category_appearance.dart';
 
-/// An icon and colour picked for a category name.
 class CategoryLook {
   final String icon;
-  final String? colour;
 
-  const CategoryLook({required this.icon, this.colour});
-
-  @override
-  bool operator ==(Object other) =>
-      other is CategoryLook && other.icon == icon && other.colour == colour;
+  const CategoryLook({required this.icon});
 
   @override
-  int get hashCode => Object.hash(icon, colour);
+  bool operator ==(Object other) => other is CategoryLook && other.icon == icon;
+
+  @override
+  int get hashCode => icon.hashCode;
 }
 
-/// Picks an icon and colour for a new category from its name.
-///
-/// [guess] answers at once from English words on the phone. [suggest] asks
-/// the suggestCategoryIcon Cloud Function, which reads names in any
-/// language. Only the name is sent. If the server is slow, offline or says
-/// no, the guess stands, so making a category never waits on it.
 class IconSuggestService {
   const IconSuggestService._();
 
   static const String region = 'us-central1';
   static const Duration _timeout = Duration(seconds: 6);
 
-  static final Map<String, CategoryLook> _cache = <String, CategoryLook>{};
+  static final Map<String, List<String>> _cache = <String, List<String>>{};
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
 
-  /// The instant guess. Falls back to a folder in the app's colour.
   static CategoryLook guess(String name) {
-    final icon = CategoryAppearance.guessIcon(name);
-    if (icon == null) {
-      return const CategoryLook(icon: CategoryAppearance.defaultIcon);
-    }
     return CategoryLook(
-      icon: icon,
-      colour: CategoryAppearance.colourForIcon(icon),
+      icon: CategoryAppearance.guessIcon(name) ?? CategoryAppearance.defaultIcon,
     );
   }
 
-  /// The server's pick, or null when it could not answer.
+  static List<String> searchOffline(String query) {
+    return CategoryAppearance.searchIcons(query);
+  }
+
   static Future<CategoryLook?> suggest(String name, {String? locale}) async {
-    final key = name.trim().toLowerCase();
-    if (key.length < 2) return null;
+    final icons = await suggestIcons(name, locale: locale);
+    if (icons == null || icons.isEmpty) return null;
+    return CategoryLook(icon: icons.first);
+  }
+
+  static Future<List<String>?> suggestIcons(String name, {String? locale}) {
+    return _ask(name, mode: 'name', locale: locale);
+  }
+
+  static Future<List<String>?> search(String query, {String? locale}) {
+    return _ask(query, mode: 'search', locale: locale);
+  }
+
+  static Future<List<String>?> _ask(
+    String text, {
+    required String mode,
+    String? locale,
+  }) async {
+    final trimmed = text.trim();
+    final key = '$mode:${trimmed.toLowerCase()}';
+    if (trimmed.length < 2) return null;
     final cached = _cache[key];
     if (cached != null) return cached;
 
     try {
       final response = await _functions
           .httpsCallable('suggestCategoryIcon')
-          .call(<String, dynamic>{'name': name.trim(), 'locale': locale})
+          .call(<String, dynamic>{
+            'name': trimmed,
+            'mode': mode,
+            'locale': locale,
+          })
           .timeout(_timeout);
       final data = response.data;
       if (data is! Map) return null;
-      final icon = data['icon'] is String ? data['icon'] as String : null;
-      final colour = data['colour'] is String ? data['colour'] as String : null;
-      if (icon == null || !CategoryAppearance.isIcon(icon)) return null;
-      final look = CategoryLook(
-        icon: icon,
-        colour: CategoryAppearance.isColour(colour) ? colour : null,
-      );
-      _cache[key] = look;
-      return look;
+      final raw = data['icons'] is List
+          ? data['icons'] as List
+          : <Object?>[data['icon']];
+      final icons = <String>[
+        for (final item in raw)
+          if (item is String && CategoryAppearance.isIcon(item)) item,
+      ];
+      if (icons.isEmpty) return null;
+      _cache[key] = icons;
+      return icons;
     } catch (_) {
       return null;
     }

@@ -7934,13 +7934,52 @@ class AppLocalizationsTa extends AppLocalizations {
   String get changeIcon => 'ஐகானை மாற்று';
 
   @override
-  String get categoryLookTitle => 'ஐகான் மற்றும் நிறம்';
-
-  @override
-  String get categoryLookAppColour => 'ஆப்ஸ் நிறம்';
-
-  @override
   String get categoryLookHint => 'பெயரை வைத்துத் தேர்ந்தெடுக்கப்பட்டது. மாற்ற தட்டவும்.';
+
+  @override
+  String get iconSuggestions => 'பரிந்துரைக்கப்பட்டவை';
+
+  @override
+  String get iconSearchHint => 'ஐகானை விவரிக்கவும்';
+
+  @override
+  String get iconSearchResults => 'சிறந்த பொருத்தங்கள்';
+
+  @override
+  String get iconSearchEmpty => 'பொருந்தும் ஐகான் இல்லை. வேறு சொல்லை முயலவும்.';
+
+  @override
+  String get iconAllTitle => 'எல்லா ஐகான்களும்';
+
+  @override
+  String get iconThemeDocuments => 'ஆவணங்கள்';
+
+  @override
+  String get iconThemeVehicles => 'வாகனங்கள்';
+
+  @override
+  String get iconThemeTravel => 'பயணம்';
+
+  @override
+  String get iconThemeHealth => 'உடல்நலம்';
+
+  @override
+  String get iconThemeHome => 'வீடு';
+
+  @override
+  String get iconThemeMoney => 'பணமும் ஷாப்பிங்கும்';
+
+  @override
+  String get iconThemeWork => 'வேலையும் படிப்பும்';
+
+  @override
+  String get iconThemeFamily => 'குடும்பமும் மக்களும்';
+
+  @override
+  String get iconThemeLeisure => 'விளையாட்டும் பொழுதுபோக்கும்';
+
+  @override
+  String get iconThemeOther => 'மற்றவை';
 
   @override
   String get renameCategoryTitle => 'வகையின் பெயரை மாற்று';
