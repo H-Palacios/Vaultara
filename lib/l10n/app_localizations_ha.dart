@@ -7982,6 +7982,40 @@ class AppLocalizationsHa extends AppLocalizations {
   String get iconThemeOther => 'Sauran';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name ne ya ƙara, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name ne ya ƙara';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return '$name ne ya canza na ƙarshe, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Kai ne ka ƙara, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Kai ne ka ƙara';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Kai ne ka canza na ƙarshe, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'wani ɗan gida';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Wanda ya ƙara wannan rikodi ko mai gidan ne kaɗai zai iya goge shi.';
+
+  @override
   String get renameCategoryTitle => 'Sake sunan rukuni';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get notifHouseholdTitle => 'Rikodin da aka raba';
 
   @override
-  String get notifHouseholdSubtitle => 'Idan rikodin da aka raba ya kusa ƙarewa kuma babu wanda ya sabunta shi';
+  String get notifHouseholdSubtitle => 'Idan aka ƙara rikodin da aka raba, aka canza ranar ƙarewarsa ko aka goge shi, ko zai ƙare nan ba da jimawa ba kuma babu wanda ya sabunta shi';
 
   @override
   String get notifUpdatesTitle => 'Sabuntawar da ka nema';

@@ -7982,6 +7982,40 @@ class AppLocalizationsMl extends AppLocalizations {
   String get iconThemeOther => 'മറ്റുള്ളവ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name ചേർത്തു, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name ചേർത്തു';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'അവസാനം മാറ്റിയത് $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'നിങ്ങൾ ചേർത്തു, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'നിങ്ങൾ ചേർത്തു';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'അവസാനം നിങ്ങൾ മാറ്റി, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'വീട്ടിലെ ഒരു അംഗം';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ഈ റെക്കോർഡ് ചേർത്തയാൾക്കോ വീടിന്റെ ഉടമയ്ക്കോ മാത്രമേ ഇത് ഇല്ലാതാക്കാനാകൂ.';
+
+  @override
   String get renameCategoryTitle => 'വിഭാഗത്തിന്റെ പേര് മാറ്റുക';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get notifHouseholdTitle => 'പങ്കിട്ട റെക്കോർഡുകൾ';
 
   @override
-  String get notifHouseholdSubtitle => 'പങ്കിട്ട റെക്കോർഡ് കാലഹരണപ്പെടാറായിട്ടും ആരും പുതുക്കാത്തപ്പോൾ';
+  String get notifHouseholdSubtitle => 'പങ്കിട്ട റെക്കോർഡ് ചേർക്കുമ്പോഴോ പുതിയ കാലഹരണ തീയതി കിട്ടുമ്പോഴോ ഇല്ലാതാക്കുമ്പോഴോ, അല്ലെങ്കിൽ ഉടൻ കാലഹരണപ്പെടുകയും ആരും പുതുക്കാതിരിക്കുകയും ചെയ്യുമ്പോൾ';
 
   @override
   String get notifUpdatesTitle => 'നിങ്ങൾ ആവശ്യപ്പെട്ട അപ്ഡേറ്റുകൾ';

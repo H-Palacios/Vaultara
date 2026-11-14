@@ -7986,6 +7986,40 @@ class AppLocalizationsAf extends AppLocalizations {
   String get iconThemeOther => 'Ander';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Bygevoeg deur $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Bygevoeg deur $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Laas verander deur $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Deur jou bygevoeg, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Deur jou bygevoeg';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Laas deur jou verander, $date';
+  }
+
+  @override
+  String get recordUnknownMember => '’n huishoudlid';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Net die persoon wat hierdie rekord bygevoeg het, of die eienaar van die huishouding, kan dit uitvee.';
+
+  @override
   String get renameCategoryTitle => 'Hernoem kategorie';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get notifHouseholdTitle => 'Gedeelde rekords';
 
   @override
-  String get notifHouseholdSubtitle => 'Wanneer \'n gedeelde rekord amper verval en niemand dit hernu het nie';
+  String get notifHouseholdSubtitle => 'Wanneer ’n gedeelde rekord bygevoeg word, ’n nuwe vervaldatum kry of uitgevee word, of binnekort verval en niemand dit hernu het nie';
 
   @override
   String get notifUpdatesTitle => 'Opdaterings wat jy gevra het';

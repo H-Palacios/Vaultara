@@ -7982,6 +7982,40 @@ class AppLocalizationsXh extends AppLocalizations {
   String get iconThemeOther => 'Ezinye';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Yongezwe ngu-$name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Yongezwe ngu-$name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Itshintshwe okokugqibela ngu-$name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Yongezwe nguwe, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Yongezwe nguwe';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Itshintshwe okokugqibela nguwe, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ilungu lekhaya';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Ngumntu owongeze le rekhodi kuphela, okanye umnini wekhaya, onokuyicima.';
+
+  @override
   String get renameCategoryTitle => 'Thiya kwakhona udidi';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get notifHouseholdTitle => 'Iirekhodi ezabelwene';
 
   @override
-  String get notifHouseholdSubtitle => 'Xa irekhodi ekwabelwana ngayo iza kuphelelwa kwaye akukho mntu uyivuselelayo';
+  String get notifHouseholdSubtitle => 'Xa irekhodi ekwabelwana ngayo yongezwa, ifumana umhla omtsha wokuphelelwa okanye icinywa, okanye iza kuphelelwa kungekudala kwaye akukho mntu uyihlaziyileyo';
 
   @override
   String get notifUpdatesTitle => 'Uhlaziyo oluceleyo';

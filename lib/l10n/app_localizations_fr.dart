@@ -7996,6 +7996,40 @@ class AppLocalizationsFr extends AppLocalizations {
   String get iconThemeOther => 'Autres';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Ajouté par $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Ajouté par $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Dernière modification par $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Ajouté par vous, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Ajouté par vous';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Dernière modification par vous, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'un membre du foyer';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Seule la personne qui a ajouté cet élément, ou le propriétaire du foyer, peut le supprimer.';
+
+  @override
   String get renameCategoryTitle => 'Renommer la catégorie';
 
   @override
@@ -8425,7 +8459,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notifHouseholdTitle => 'Enregistrements partagés';
 
   @override
-  String get notifHouseholdSubtitle => 'Quand un enregistrement partagé va bientôt expirer et que personne ne l\'a renouvelé';
+  String get notifHouseholdSubtitle => 'Quand un élément partagé est ajouté, reçoit une nouvelle date d’expiration ou est supprimé, ou expire bientôt sans que personne ne l’ait renouvelé';
 
   @override
   String get notifUpdatesTitle => 'Mises à jour demandées';

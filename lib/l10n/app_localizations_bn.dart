@@ -7982,6 +7982,40 @@ class AppLocalizationsBn extends AppLocalizations {
   String get iconThemeOther => 'অন্যান্য';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name যোগ করেছেন, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name যোগ করেছেন';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'শেষ পরিবর্তন করেছেন $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'আপনি যোগ করেছেন, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'আপনি যোগ করেছেন';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'শেষ পরিবর্তন আপনার, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'পরিবারের একজন সদস্য';
+
+  @override
+  String get recordDeleteOnlyCreator => 'যিনি এই রেকর্ড যোগ করেছেন তিনি অথবা পরিবারের মালিক শুধু এটি মুছতে পারেন।';
+
+  @override
   String get renameCategoryTitle => 'বিভাগের নাম বদলান';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get notifHouseholdTitle => 'শেয়ার করা রেকর্ড';
 
   @override
-  String get notifHouseholdSubtitle => 'যখন কোনো শেয়ার করা রেকর্ডের মেয়াদ শেষ হওয়ার কাছাকাছি এবং কেউ নবায়ন করেনি';
+  String get notifHouseholdSubtitle => 'যখন কোনো শেয়ার করা রেকর্ড যোগ হয়, নতুন মেয়াদ শেষের তারিখ পায় বা মুছে যায়, অথবা শীঘ্রই মেয়াদ শেষ হয় এবং কেউ নবায়ন করেনি';
 
   @override
   String get notifUpdatesTitle => 'আপনার চাওয়া আপডেট';

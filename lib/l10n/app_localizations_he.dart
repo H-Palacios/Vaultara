@@ -8035,6 +8035,40 @@ class AppLocalizationsHe extends AppLocalizations {
   String get iconThemeOther => 'אחר';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'נוסף על ידי $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'נוסף על ידי $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'שונה לאחרונה על ידי $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'נוסף על ידיך, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'נוסף על ידיך';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'שונה לאחרונה על ידיך, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'אחד מבני הבית';
+
+  @override
+  String get recordDeleteOnlyCreator => 'רק מי שהוסיף את הרשומה הזו או בעל משק הבית יכולים למחוק אותה.';
+
+  @override
   String get renameCategoryTitle => 'שינוי שם הקטגוריה';
 
   @override
@@ -8465,7 +8499,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notifHouseholdTitle => 'רשומות משותפות';
 
   @override
-  String get notifHouseholdSubtitle => 'כשתוקף של רשומה משותפת עומד לפוג ואף אחד לא חידש אותה';
+  String get notifHouseholdSubtitle => 'כשרשומה משותפת נוספת, מקבלת תאריך תפוגה חדש או נמחקת, או עומדת לפוג ואף אחד לא חידש אותה';
 
   @override
   String get notifUpdatesTitle => 'עדכונים שביקשת';

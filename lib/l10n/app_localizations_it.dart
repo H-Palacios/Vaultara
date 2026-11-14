@@ -7993,6 +7993,40 @@ class AppLocalizationsIt extends AppLocalizations {
   String get iconThemeOther => 'Altro';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Aggiunto da $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Aggiunto da $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Ultima modifica di $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Aggiunto da te, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Aggiunto da te';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Ultima modifica tua, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'un membro del nucleo';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Solo chi ha aggiunto questo documento, o il proprietario del nucleo, può eliminarlo.';
+
+  @override
   String get renameCategoryTitle => 'Rinomina categoria';
 
   @override
@@ -8422,7 +8456,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get notifHouseholdTitle => 'Record condivisi';
 
   @override
-  String get notifHouseholdSubtitle => 'Quando un record condiviso sta per scadere e nessuno l\'ha rinnovato';
+  String get notifHouseholdSubtitle => 'Quando un documento condiviso viene aggiunto, riceve una nuova data di scadenza o viene eliminato, oppure scade presto e nessuno lo ha rinnovato';
 
   @override
   String get notifUpdatesTitle => 'Aggiornamenti richiesti';

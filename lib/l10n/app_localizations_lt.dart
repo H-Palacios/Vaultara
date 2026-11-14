@@ -8126,6 +8126,40 @@ class AppLocalizationsLt extends AppLocalizations {
   String get iconThemeOther => 'Kita';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Pridėjo $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Pridėjo $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Paskutinį kartą pakeitė $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Pridėjote jūs, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Pridėjote jūs';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Paskutinį kartą pakeitėte jūs, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'namų ūkio narys';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Ištrinti šį įrašą gali tik jį pridėjęs asmuo arba namų ūkio savininkas.';
+
+  @override
   String get renameCategoryTitle => 'Pervadinti kategoriją';
 
   @override
@@ -8556,7 +8590,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get notifHouseholdTitle => 'Bendrinami įrašai';
 
   @override
-  String get notifHouseholdSubtitle => 'Kai bendrinamo įrašo galiojimas tuoj baigsis, o niekas jo neatnaujino';
+  String get notifHouseholdSubtitle => 'Kai bendrinamas įrašas pridedamas, gauna naują galiojimo datą ar yra ištrinamas, arba greitai baigia galioti ir niekas jo neatnaujino';
 
   @override
   String get notifUpdatesTitle => 'Jūsų prašyti atnaujinimai';

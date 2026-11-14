@@ -7982,6 +7982,40 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get iconThemeOther => 'هیتر';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'زیادکراوە لەلایەن $name، $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'زیادکراوە لەلایەن $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'دوایین گۆڕین لەلایەن $name، $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'لەلایەن تۆوە زیادکراوە، $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'لەلایەن تۆوە زیادکراوە';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'دوایین گۆڕین لەلایەن تۆوە، $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ئەندامێکی خێزان';
+
+  @override
+  String get recordDeleteOnlyCreator => 'تەنها ئەو کەسەی ئەم تۆمارەی زیادکردووە یان خاوەنی خێزانەکە دەتوانێت بیسڕێتەوە.';
+
+  @override
   String get renameCategoryTitle => 'گۆڕینی ناوی هاوپۆل';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get notifHouseholdTitle => 'تۆمارە هاوبەشکراوەکان';
 
   @override
-  String get notifHouseholdSubtitle => 'کاتێک تۆمارێکی هاوبەشکراو نزیکە بەسەربچێت و کەس نوێی نەکردۆتەوە';
+  String get notifHouseholdSubtitle => 'کاتێک تۆمارێکی هاوبەش زیاد دەکرێت، بەرواری بەسەرچوونی نوێ وەردەگرێت یان دەسڕدرێتەوە، یان بەم زووانە بەسەردەچێت و کەس نوێی نەکردۆتەوە';
 
   @override
   String get notifUpdatesTitle => 'ئەو نوێکارییانەی داوات کردوون';

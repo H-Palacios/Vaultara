@@ -191,6 +191,13 @@ class HouseholdRepository {
 
   static bool canEdit(TrackedItem record) => !record.isShared || canEditShared;
 
+  static bool canDelete(TrackedItem record) {
+    if (!record.isShared) return true;
+    if (!canEditShared) return false;
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    return uid != null && (record.createdBy == uid || isOwner);
+  }
+
   static List<TrackedItem> get activeShared => _items.values
       .where((r) => !r.isDeleted)
       .toList(growable: false);
@@ -250,6 +257,7 @@ class HouseholdRepository {
   static void _follow(String? hid) {
     if (hid == _hid) return;
     _detachHousehold();
+    _memberNames = null;
     _hid = hid;
     _items = <String, TrackedItem>{};
     household.value = null;
@@ -429,6 +437,25 @@ class HouseholdRepository {
 
   static Future<void> removeMember(String uid) async {
     await _call('removeMember', <String, dynamic>{'uid': uid});
+  }
+
+  static Future<Map<String, String>>? _memberNames;
+
+  static Future<Map<String, String>> memberNames() {
+    return _memberNames ??= _loadMemberNames();
+  }
+
+  static Future<Map<String, String>> _loadMemberNames() async {
+    try {
+      final info = await details();
+      return <String, String>{
+        for (final member in info?.members ?? const <HouseholdMember>[])
+          if (member.name.isNotEmpty) member.uid: member.name,
+      };
+    } catch (_) {
+      _memberNames = null;
+      return const <String, String>{};
+    }
   }
 
   static Future<HouseholdDetails?> details() async {

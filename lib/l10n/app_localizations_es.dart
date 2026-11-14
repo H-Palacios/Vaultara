@@ -8010,6 +8010,40 @@ class AppLocalizationsEs extends AppLocalizations {
   String get iconThemeOther => 'Otros';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Añadido por $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Añadido por $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Último cambio de $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Añadido por ti, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Añadido por ti';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Último cambio tuyo, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'un miembro del hogar';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Solo quien añadió este registro, o el propietario del hogar, puede eliminarlo.';
+
+  @override
   String get renameCategoryTitle => 'Cambiar nombre de la categoría';
 
   @override
@@ -8439,7 +8473,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notifHouseholdTitle => 'Registros compartidos';
 
   @override
-  String get notifHouseholdSubtitle => 'Cuando un registro compartido está a punto de vencer y nadie lo ha renovado';
+  String get notifHouseholdSubtitle => 'Cuando un registro compartido se añade, recibe una nueva fecha de vencimiento o se elimina, o vence pronto y nadie lo ha renovado';
 
   @override
   String get notifUpdatesTitle => 'Actualizaciones que pediste';

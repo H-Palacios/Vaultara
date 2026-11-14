@@ -131,6 +131,22 @@ class RecordRepository {
   static bool canEdit(TrackedItem record) =>
       HouseholdRepository.canEdit(record);
 
+  static bool canDelete(TrackedItem record) =>
+      HouseholdRepository.canDelete(record);
+
+  static Map<String, dynamic> _stamped(
+    TrackedItem record,
+    Map<String, dynamic> changes,
+  ) {
+    final uid = _auth.currentUser?.uid;
+    if (!record.isShared || uid == null) return changes;
+    return <String, dynamic>{
+      ...changes,
+      'updatedBy': uid,
+      'updatedAt': FieldValue.serverTimestamp(),
+    };
+  }
+
   static Set<int> _privateBaseIds() => <int>{
     for (final record in _allRecords())
       if (!record.isShared) record.reminderBaseId,
@@ -747,7 +763,7 @@ class RecordRepository {
       final deletedAt = record.deletedAt;
       if (deletedAt != null &&
           deletedAt.isBefore(cutoff) &&
-          HouseholdRepository.canEditShared) {
+          canDelete(record)) {
         _docFor(record)?.delete().ignore();
         for (final attachment in record.attachments) {
           AttachmentRepository.delete(
@@ -847,6 +863,7 @@ class RecordRepository {
       ref.set(<String, dynamic>{
         ...record.toMap(),
         'createdBy': user.uid,
+        'createdAt': FieldValue.serverTimestamp(),
       }).ignore();
 
       AnalyticsService.logRecordAdded(categoryKey: record.categoryKey).ignore();
@@ -903,7 +920,7 @@ class RecordRepository {
     _remove(oldRecord);
     _add(saved);
 
-    _docFor(saved)?.update(_writeMap(saved)).ignore();
+    _docFor(saved)?.update(_stamped(saved, _writeMap(saved))).ignore();
     if (saved.isShared && saved.id != null) {
       _sharedSignatures[saved.id!] = _signature(saved);
     }
@@ -957,9 +974,13 @@ class RecordRepository {
     _remove(record);
     _add(updated);
 
-    _docFor(
-      updated,
-    )?.update({'attachments': next.map((a) => a.toMap()).toList()}).ignore();
+    _docFor(updated)
+        ?.update(
+          _stamped(updated, {
+            'attachments': next.map((a) => a.toMap()).toList(),
+          }),
+        )
+        .ignore();
     return updated;
   }
 
@@ -970,7 +991,9 @@ class RecordRepository {
       _remove(record);
       _add(updated);
       if (canEdit(record)) {
-        _docFor(record)?.update({'holderId': null}).ignore();
+        _docFor(
+          record,
+        )?.update(_stamped(record, {'holderId': null})).ignore();
       }
     }
   }
@@ -1004,6 +1027,7 @@ class RecordRepository {
   }
 
   static Future<void> softDeleteRecord(TrackedItem record) async {
+    if (!canDelete(record)) return;
     await ReminderScheduler.cancelSeries(record.reminderBaseId);
     _remove(record);
     if (record.isShared && record.id != null) {
@@ -1011,14 +1035,18 @@ class RecordRepository {
     }
     _refreshWidget();
 
-    _docFor(
-      record,
-    )?.update({'isDeleted': true, 'deletedAt': Timestamp.now()}).ignore();
+    _docFor(record)
+        ?.update(
+          _stamped(record, {'isDeleted': true, 'deletedAt': Timestamp.now()}),
+        )
+        .ignore();
   }
 
   static Future<void> restoreRecord(TrackedItem record) async {
     if (!canEdit(record)) return;
-    _docFor(record)?.update({'isDeleted': false, 'deletedAt': null}).ignore();
+    _docFor(record)
+        ?.update(_stamped(record, {'isDeleted': false, 'deletedAt': null}))
+        .ignore();
 
     var restored = _localShared(record.copyWith(isDeleted: false));
     _add(restored);
@@ -1034,7 +1062,7 @@ class RecordRepository {
   }
 
   static Future<void> permanentlyDeleteRecord(TrackedItem record) async {
-    if (!canEdit(record)) return;
+    if (!canDelete(record)) return;
     await ReminderScheduler.cancelSeries(record.reminderBaseId);
     for (final attachment in record.attachments) {
       await AttachmentRepository.delete(

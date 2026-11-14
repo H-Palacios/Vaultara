@@ -7986,6 +7986,40 @@ class AppLocalizationsEu extends AppLocalizations {
   String get iconThemeOther => 'Beste batzuk';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name(e)k gehitua, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name(e)k gehitua';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Azken aldaketa: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Zuk gehitua, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Zuk gehitua';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Azken aldaketa: zu, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'etxeko kide bat';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Erregistro hau gehitu zuenak edo etxeko jabeak bakarrik ezaba dezake.';
+
+  @override
   String get renameCategoryTitle => 'Aldatu kategoriaren izena';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get notifHouseholdTitle => 'Partekatutako erregistroak';
 
   @override
-  String get notifHouseholdSubtitle => 'Partekatutako erregistro bat iraungitzear dagoenean eta inork berritu ez duenean';
+  String get notifHouseholdSubtitle => 'Partekatutako erregistro bat gehitzen denean, iraungitze-data berria duenean edo ezabatzen denean, edo laster iraungitzen denean eta inork berritu ez duenean';
 
   @override
   String get notifUpdatesTitle => 'Eskatu dituzun eguneraketak';

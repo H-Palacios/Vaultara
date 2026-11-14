@@ -36,6 +36,9 @@ class TrackedItem {
 
   final String? householdId;
   final String? createdBy;
+  final DateTime? createdAt;
+  final String? updatedBy;
+  final DateTime? updatedAt;
 
   bool get isShared => householdId != null;
 
@@ -68,6 +71,9 @@ class TrackedItem {
     this.deletedAt,
     this.householdId,
     this.createdBy,
+    this.createdAt,
+    this.updatedBy,
+    this.updatedAt,
   }) : keptIn = KeptIn.clean(keptIn),
        lostLine = KeptIn.cleanLine(lostLine);
 
@@ -145,6 +151,9 @@ class TrackedItem {
       deletedAt: deletedAt ?? this.deletedAt,
       householdId: clearHousehold ? null : (householdId ?? this.householdId),
       createdBy: clearHousehold ? null : (createdBy ?? this.createdBy),
+      createdAt: clearHousehold ? null : createdAt,
+      updatedBy: clearHousehold ? null : updatedBy,
+      updatedAt: clearHousehold ? null : updatedAt,
     );
   }
 
@@ -208,6 +217,12 @@ class TrackedItem {
     return null;
   }
 
+  static DateTime? _readTime(Object? value) {
+    if (value is Timestamp) return value.toDate();
+    if (value is String) return DateTime.tryParse(value);
+    return null;
+  }
+
   factory TrackedItem.fromMap(String id, Map<String, dynamic> map) {
     final dynamic expiryField = map['expiryDate'];
     final dynamic renewedField = map['lastRenewedAt'];
@@ -264,6 +279,9 @@ class TrackedItem {
       isDeleted: map['isDeleted'] as bool? ?? false,
       deletedAt: deletedAt,
       createdBy: map['createdBy'] is String ? map['createdBy'] as String : null,
+      createdAt: _readTime(map['createdAt']),
+      updatedBy: map['updatedBy'] is String ? map['updatedBy'] as String : null,
+      updatedAt: _readTime(map['updatedAt']),
     );
   }
 

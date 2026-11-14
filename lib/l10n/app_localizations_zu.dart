@@ -7982,6 +7982,40 @@ class AppLocalizationsZu extends AppLocalizations {
   String get iconThemeOther => 'Okunye';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Kungezwe ngu-$name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Kungezwe ngu-$name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Kushintshwe okokugcina ngu-$name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Kungezwe nguwe, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Kungezwe nguwe';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Kushintshwe okokugcina nguwe, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ilungu lekhaya';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Ngumuntu owengeze leli rekhodi kuphela, noma umnikazi wekhaya, ongalisusa.';
+
+  @override
   String get renameCategoryTitle => 'Qamba kabusha isigaba';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get notifHouseholdTitle => 'Amarekhodi abiwe';
 
   @override
-  String get notifHouseholdSubtitle => 'Uma irekhodi elabiwe selizophelelwa yisikhathi futhi kungekho olivuselele';
+  String get notifHouseholdSubtitle => 'Uma irekhodi okwabelwana ngalo lengezwa, lithola usuku olusha lokuphelelwa noma lisuswa, noma lizophelelwa maduze futhi akekho oselivuselele';
 
   @override
   String get notifUpdatesTitle => 'Izibuyekezo ozicelile';

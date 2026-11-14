@@ -7982,6 +7982,40 @@ class AppLocalizationsAm extends AppLocalizations {
   String get iconThemeOther => 'ሌላ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'በ$name ታክሏል፣ $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'በ$name ታክሏል';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'ለመጨረሻ ጊዜ በ$name ተቀይሯል፣ $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'በእርስዎ ታክሏል፣ $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'በእርስዎ ታክሏል';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'ለመጨረሻ ጊዜ በእርስዎ ተቀይሯል፣ $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'የቤተሰብ አባል';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ይህን መዝገብ ያከለው ሰው ወይም የቤተሰቡ ባለቤት ብቻ ሊሰርዘው ይችላል።';
+
+  @override
   String get renameCategoryTitle => 'ምድቡን እንደገና ሰይም';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get notifHouseholdTitle => 'የተጋሩ መዝገቦች';
 
   @override
-  String get notifHouseholdSubtitle => 'የተጋራ መዝገብ ሊያበቃ ሲቃረብ እና ማንም ሳያድሰው ሲቀር';
+  String get notifHouseholdSubtitle => 'የተጋራ መዝገብ ሲታከል፣ አዲስ የማብቂያ ቀን ሲያገኝ ወይም ሲሰረዝ፣ ወይም በቅርቡ ሲያበቃ እና ማንም ሳያድሰው';
 
   @override
   String get notifUpdatesTitle => 'የጠየቋቸው ዝማኔዎች';

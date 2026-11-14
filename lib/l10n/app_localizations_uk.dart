@@ -8133,6 +8133,40 @@ class AppLocalizationsUk extends AppLocalizations {
   String get iconThemeOther => 'Інше';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Додано: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Додано: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Остання зміна: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Додано вами, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Додано вами';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Остання зміна: ви, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'учасник родини';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Видалити цей запис може лише той, хто його додав, або власник родини.';
+
+  @override
   String get renameCategoryTitle => 'Перейменувати категорію';
 
   @override
@@ -8574,7 +8608,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get notifHouseholdTitle => 'Спільні записи';
 
   @override
-  String get notifHouseholdSubtitle => 'Коли термін спільного запису майже сплив, а ніхто його не продовжив';
+  String get notifHouseholdSubtitle => 'Коли спільний запис додано, він отримав нову дату завершення або його видалено, або він скоро спливає і ніхто його не поновив';
 
   @override
   String get notifUpdatesTitle => 'Запитані оновлення';

@@ -13807,6 +13807,54 @@ abstract class AppLocalizations {
   /// **'Other'**
   String get iconThemeOther;
 
+  /// Shown at the bottom of a shared record in the editor. name = first name of the household member who added it, date = the date it was added
+  ///
+  /// In en, this message translates to:
+  /// **'Added by {name}, {date}'**
+  String recordAddedBy(String name, String date);
+
+  /// Shown at the bottom of a shared record that was added before Vaultara saved the date. name = first name of the household member who added it
+  ///
+  /// In en, this message translates to:
+  /// **'Added by {name}'**
+  String recordAddedByNoDate(String name);
+
+  /// Shown at the bottom of a shared record in the editor. name = first name of the household member who changed it last, date = the date of that change
+  ///
+  /// In en, this message translates to:
+  /// **'Last changed by {name}, {date}'**
+  String recordChangedBy(String name, String date);
+
+  /// Shown at the bottom of a shared record you added. date = the date it was added
+  ///
+  /// In en, this message translates to:
+  /// **'Added by you, {date}'**
+  String recordAddedByYou(String date);
+
+  /// Shown at the bottom of a shared record you added before Vaultara saved the date
+  ///
+  /// In en, this message translates to:
+  /// **'Added by you'**
+  String get recordAddedByYouNoDate;
+
+  /// Shown at the bottom of a shared record you changed last. date = the date of that change
+  ///
+  /// In en, this message translates to:
+  /// **'Last changed by you, {date}'**
+  String recordChangedByYou(String date);
+
+  /// Used as the name in the added by and changed by lines when the member has left the household or has no name
+  ///
+  /// In en, this message translates to:
+  /// **'a household member'**
+  String get recordUnknownMember;
+
+  /// Shown when a household member tries to delete a shared record someone else added
+  ///
+  /// In en, this message translates to:
+  /// **'Only the person who added this record, or the household owner, can delete it.'**
+  String get recordDeleteOnlyCreator;
+
   /// Title of the sheet to rename a category.
   ///
   /// In en, this message translates to:
@@ -14368,7 +14416,7 @@ abstract class AppLocalizations {
   /// Subtitle of the shared records switch.
   ///
   /// In en, this message translates to:
-  /// **'When a shared record is close to expiring and nobody has renewed it'**
+  /// **'When a shared record is added, gets a new expiry date or is deleted, or expires soon and nobody has renewed it'**
   String get notifHouseholdSubtitle;
 
   /// Switch for notifications when someone sends an update that was requested.

@@ -9682,6 +9682,69 @@
   "@iconThemeOther": {
     "description": "Icon theme in the Change icon sheet: anything else."
   },
+  "recordAddedBy": "Added by {name}, {date}",
+  "@recordAddedBy": {
+    "description": "Shown at the bottom of a shared record in the editor. name = first name of the household member who added it, date = the date it was added",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "recordAddedByNoDate": "Added by {name}",
+  "@recordAddedByNoDate": {
+    "description": "Shown at the bottom of a shared record that was added before Vaultara saved the date. name = first name of the household member who added it",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recordChangedBy": "Last changed by {name}, {date}",
+  "@recordChangedBy": {
+    "description": "Shown at the bottom of a shared record in the editor. name = first name of the household member who changed it last, date = the date of that change",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "recordAddedByYou": "Added by you, {date}",
+  "@recordAddedByYou": {
+    "description": "Shown at the bottom of a shared record you added. date = the date it was added",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "recordAddedByYouNoDate": "Added by you",
+  "@recordAddedByYouNoDate": {
+    "description": "Shown at the bottom of a shared record you added before Vaultara saved the date"
+  },
+  "recordChangedByYou": "Last changed by you, {date}",
+  "@recordChangedByYou": {
+    "description": "Shown at the bottom of a shared record you changed last. date = the date of that change",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "recordUnknownMember": "a household member",
+  "@recordUnknownMember": {
+    "description": "Used as the name in the added by and changed by lines when the member has left the household or has no name"
+  },
+  "recordDeleteOnlyCreator": "Only the person who added this record, or the household owner, can delete it.",
+  "@recordDeleteOnlyCreator": {
+    "description": "Shown when a household member tries to delete a shared record someone else added"
+  },
   "renameCategoryTitle": "Rename category",
   "@renameCategoryTitle": {
     "description": "Title of the sheet to rename a category."
@@ -10318,7 +10381,7 @@
   "@notifHouseholdTitle": {
     "description": "Switch for notifications about shared household records nobody has renewed."
   },
-  "notifHouseholdSubtitle": "When a shared record is close to expiring and nobody has renewed it",
+  "notifHouseholdSubtitle": "When a shared record is added, gets a new expiry date or is deleted, or expires soon and nobody has renewed it",
   "@notifHouseholdSubtitle": {
     "description": "Subtitle of the shared records switch."
   },

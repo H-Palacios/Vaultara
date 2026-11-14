@@ -16,4 +16,15 @@ class HouseholdAccess {
     );
     return false;
   }
+
+  static bool canDelete(BuildContext context, TrackedItem record) {
+    if (!canEdit(context, record)) return false;
+    if (HouseholdRepository.canDelete(record)) return true;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      AppLocalizations.of(context)!.recordDeleteOnlyCreator,
+      icon: Icons.lock_outline_rounded,
+    );
+    return false;
+  }
 }

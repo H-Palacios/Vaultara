@@ -8209,6 +8209,40 @@ class AppLocalizationsAr extends AppLocalizations {
   String get iconThemeOther => 'أخرى';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'أضافه $name، $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'أضافه $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'آخر تغيير بواسطة $name، $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'أضفته أنت، $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'أضفته أنت';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'آخر تغيير بواسطتك، $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'أحد أفراد الأسرة';
+
+  @override
+  String get recordDeleteOnlyCreator => 'لا يمكن حذف هذا السجل إلا لمن أضافه أو لمالك الأسرة.';
+
+  @override
   String get renameCategoryTitle => 'إعادة تسمية الفئة';
 
   @override
@@ -8642,7 +8676,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notifHouseholdTitle => 'السجلات المشتركة';
 
   @override
-  String get notifHouseholdSubtitle => 'عندما يقترب سجل مشترك من الانتهاء ولم يجدده أحد';
+  String get notifHouseholdSubtitle => 'عند إضافة سجل مشترك أو تغيير تاريخ انتهائه أو حذفه، أو عندما يقترب انتهاؤه ولم يجدده أحد';
 
   @override
   String get notifUpdatesTitle => 'التحديثات التي طلبتها';

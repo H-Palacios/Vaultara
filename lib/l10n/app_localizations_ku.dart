@@ -7982,6 +7982,40 @@ class AppLocalizationsKu extends AppLocalizations {
   String get iconThemeOther => 'Yên din';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Ji aliyê $name ve hat zêdekirin, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Ji aliyê $name ve hat zêdekirin';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Guhertina dawî: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Te zêde kir, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Te zêde kir';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Guhertina dawî: tu, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'endamekî malê';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Tenê kesê ku ev tomar zêde kiriye, an xwediyê malê, dikare wê jê bibe.';
+
+  @override
   String get renameCategoryTitle => 'Navê kategoriyê biguherîne';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get notifHouseholdTitle => 'Tomarên parvekirî';
 
   @override
-  String get notifHouseholdSubtitle => 'Dema ku tomareke parvekirî nêzî dawîbûnê ye û kesî nû nekiriye';
+  String get notifHouseholdSubtitle => 'Dema tomareke hevpar tê zêdekirin, dîroka qedandinê ya nû digire an tê jêbirin, an jî zû diqede û kesî nû nekiriye';
 
   @override
   String get notifUpdatesTitle => 'Nûkirinên ku te xwestin';

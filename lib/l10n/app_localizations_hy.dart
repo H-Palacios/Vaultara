@@ -7982,6 +7982,40 @@ class AppLocalizationsHy extends AppLocalizations {
   String get iconThemeOther => 'Այլ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Ավելացրել է $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Ավելացրել է $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Վերջին փոփոխությունը՝ $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Ավելացրել եք դուք, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Ավելացրել եք դուք';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Վերջին փոփոխությունը՝ դուք, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ընտանիքի անդամ';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Այս գրառումը կարող է ջնջել միայն այն ավելացնողը կամ ընտանիքի սեփականատերը։';
+
+  @override
   String get renameCategoryTitle => 'Վերանվանել կատեգորիան';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get notifHouseholdTitle => 'Կիսված գրառումներ';
 
   @override
-  String get notifHouseholdSubtitle => 'Երբ կիսված գրառման ժամկետը մոտենում է ավարտին, և ոչ ոք այն չի նորացրել';
+  String get notifHouseholdSubtitle => 'Երբ ընդհանուր գրառումն ավելացվում է, ստանում է նոր ժամկետ կամ ջնջվում է, կամ շուտով լրանում է, և ոչ ոք այն չի թարմացրել';
 
   @override
   String get notifUpdatesTitle => 'Ձեր խնդրած թարմացումները';

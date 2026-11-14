@@ -7982,6 +7982,40 @@ class AppLocalizationsUr extends AppLocalizations {
   String get iconThemeOther => 'دیگر';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name نے شامل کیا، $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name نے شامل کیا';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'آخری تبدیلی $name، $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'آپ نے شامل کیا، $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'آپ نے شامل کیا';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'آخری تبدیلی آپ نے کی، $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'گھر کا ایک فرد';
+
+  @override
+  String get recordDeleteOnlyCreator => 'یہ ریکارڈ صرف شامل کرنے والا شخص یا گھر کا مالک ہی حذف کر سکتا ہے۔';
+
+  @override
   String get renameCategoryTitle => 'زمرے کا نام بدلیں';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get notifHouseholdTitle => 'شیئر کیے گئے ریکارڈ';
 
   @override
-  String get notifHouseholdSubtitle => 'جب کسی شیئر کیے گئے ریکارڈ کی میعاد قریب ہو اور کسی نے تجدید نہ کی ہو';
+  String get notifHouseholdSubtitle => 'جب کوئی مشترکہ ریکارڈ شامل ہو، اسے نئی میعاد ختم ہونے کی تاریخ ملے یا حذف ہو، یا جلد میعاد ختم ہو رہی ہو اور کسی نے تجدید نہ کی ہو';
 
   @override
   String get notifUpdatesTitle => 'آپ کی مانگی گئی اپ ڈیٹس';

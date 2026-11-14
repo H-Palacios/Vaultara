@@ -7982,6 +7982,40 @@ class AppLocalizationsHu extends AppLocalizations {
   String get iconThemeOther => 'Egyéb';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Hozzáadta: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Hozzáadta: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Utoljára módosította: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Te adtad hozzá, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Te adtad hozzá';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Utoljára te módosítottad, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'egy háztartástag';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Ezt a bejegyzést csak az törölheti, aki hozzáadta, vagy a háztartás tulajdonosa.';
+
+  @override
   String get renameCategoryTitle => 'Kategória átnevezése';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get notifHouseholdTitle => 'Megosztott bejegyzések';
 
   @override
-  String get notifHouseholdSubtitle => 'Ha egy megosztott bejegyzés hamarosan lejár, és senki sem újította meg';
+  String get notifHouseholdSubtitle => 'Amikor egy megosztott bejegyzés bekerül, új lejárati dátumot kap vagy törlődik, illetve hamarosan lejár, és senki nem újította meg';
 
   @override
   String get notifUpdatesTitle => 'Kért frissítések';

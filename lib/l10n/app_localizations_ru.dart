@@ -8137,6 +8137,40 @@ class AppLocalizationsRu extends AppLocalizations {
   String get iconThemeOther => 'Другое';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Добавлено: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Добавлено: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Последнее изменение: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Добавлено вами, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Добавлено вами';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Последнее изменение: вы, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'участник семьи';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Удалить эту запись может только тот, кто её добавил, или владелец семьи.';
+
+  @override
   String get renameCategoryTitle => 'Переименовать категорию';
 
   @override
@@ -8580,7 +8614,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get notifHouseholdTitle => 'Общие записи';
 
   @override
-  String get notifHouseholdSubtitle => 'Когда срок общей записи почти истёк, а продлением никто не занялся';
+  String get notifHouseholdSubtitle => 'Когда общая запись добавлена, получила новый срок действия или удалена, или скоро истекает и никто её не продлил';
 
   @override
   String get notifUpdatesTitle => 'Запрошенные обновления';

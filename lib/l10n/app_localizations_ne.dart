@@ -7982,6 +7982,40 @@ class AppLocalizationsNe extends AppLocalizations {
   String get iconThemeOther => 'अन्य';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name ले थप्नुभयो, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name ले थप्नुभयो';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'अन्तिम परिवर्तन $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'तपाईंले थप्नुभयो, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'तपाईंले थप्नुभयो';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'अन्तिम परिवर्तन तपाईंले, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'घरका एक सदस्य';
+
+  @override
+  String get recordDeleteOnlyCreator => 'यो रेकर्ड थप्ने व्यक्ति वा घरका मालिकले मात्र यसलाई मेटाउन सक्नुहुन्छ।';
+
+  @override
   String get renameCategoryTitle => 'श्रेणीको नाम बदल्नुहोस्';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get notifHouseholdTitle => 'सेयर गरिएका रेकर्डहरू';
 
   @override
-  String get notifHouseholdSubtitle => 'सेयर गरिएको रेकर्ड समाप्त हुन लाग्दा र कसैले नवीकरण नगर्दा';
+  String get notifHouseholdSubtitle => 'साझा रेकर्ड थपिँदा, नयाँ म्याद सकिने मिति पाउँदा वा मेटिँदा, वा छिट्टै म्याद सकिँदै गर्दा र कसैले नवीकरण नगर्दा';
 
   @override
   String get notifUpdatesTitle => 'तपाईंले मागेका अद्यावधिकहरू';

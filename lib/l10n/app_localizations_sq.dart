@@ -7986,6 +7986,40 @@ class AppLocalizationsSq extends AppLocalizations {
   String get iconThemeOther => 'Të tjera';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Shtuar nga $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Shtuar nga $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Ndryshuar së fundi nga $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Shtuar nga ju, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Shtuar nga ju';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Ndryshuar së fundi nga ju, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'një anëtar i familjes';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Këtë regjistrim mund ta fshijë vetëm ai që e shtoi ose pronari i familjes.';
+
+  @override
   String get renameCategoryTitle => 'Riemërto kategorinë';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get notifHouseholdTitle => 'Regjistrimet e ndara';
 
   @override
-  String get notifHouseholdSubtitle => 'Kur një regjistrim i ndarë është gati të skadojë dhe askush nuk e ka rinovuar';
+  String get notifHouseholdSubtitle => 'Kur një regjistrim i përbashkët shtohet, merr datë të re skadimi ose fshihet, ose skadon së shpejti dhe askush nuk e ka rinovuar';
 
   @override
   String get notifUpdatesTitle => 'Përditësimet që kërkuat';

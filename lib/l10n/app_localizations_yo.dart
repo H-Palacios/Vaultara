@@ -7930,6 +7930,40 @@ class AppLocalizationsYo extends AppLocalizations {
   String get iconThemeOther => 'Òmíràn';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name ló fi kún un, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name ló fi kún un';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return '$name ló yí i padà kẹ́yìn, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Ìwọ ló fi kún un, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Ìwọ ló fi kún un';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Ìwọ ló yí i padà kẹ́yìn, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ọmọ ẹgbẹ́ ilé kan';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Ẹni tó fi ìgbasilẹ̀ yìí kún nìkan, tàbí olórí ilé, ló lè pa á rẹ́.';
+
+  @override
   String get renameCategoryTitle => 'Yí orúkọ ẹ̀ka padà';
 
   @override
@@ -8359,7 +8393,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get notifHouseholdTitle => 'Àwọn igbasilẹ tí a pín';
 
   @override
-  String get notifHouseholdSubtitle => 'Nígbà tí igbasilẹ tí a pín bá fẹ́ parí tí kò sí ẹni tí ó sọ ọ́ di tuntun';
+  String get notifHouseholdSubtitle => 'Nígbà tí a bá fi ìgbasilẹ̀ tí a pín kún, tó gba ọjọ́ ìparí tuntun tàbí tí a pa á rẹ́, tàbí tó fẹ́rẹ̀ parí tí kò sí ẹni tó sọ ọ́ dọ̀tun';
 
   @override
   String get notifUpdatesTitle => 'Àwọn imudojuiwọn tí o béèrè';

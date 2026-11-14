@@ -7976,6 +7976,40 @@ class AppLocalizationsFil extends AppLocalizations {
   String get iconThemeOther => 'Iba pa';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Idinagdag ni $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Idinagdag ni $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Huling binago ni $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Idinagdag mo, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Idinagdag mo';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Huling binago mo, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'isang miyembro ng sambahayan';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Ang nagdagdag lang ng rekord na ito, o ang may-ari ng sambahayan, ang puwedeng magbura nito.';
+
+  @override
   String get renameCategoryTitle => 'Palitan ang pangalan ng kategorya';
 
   @override
@@ -8405,7 +8439,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get notifHouseholdTitle => 'Mga ibinahaging rekord';
 
   @override
-  String get notifHouseholdSubtitle => 'Kapag malapit nang mag-expire ang isang ibinahaging rekord at walang nag-renew nito';
+  String get notifHouseholdSubtitle => 'Kapag may shared na rekord na idinagdag, nagkaroon ng bagong petsa ng pag-expire o binura, o malapit nang mag-expire at walang nag-renew';
 
   @override
   String get notifUpdatesTitle => 'Mga update na hiniling mo';

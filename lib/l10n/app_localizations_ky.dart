@@ -7982,6 +7982,40 @@ class AppLocalizationsKy extends AppLocalizations {
   String get iconThemeOther => 'Башка';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Кошкон: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Кошкон: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Акыркы өзгөрткөн: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Сиз коштуңуз, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Сиз коштуңуз';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Акыркы жолу сиз өзгөрттүңүз, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'үй-бүлө мүчөсү';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Бул жазууну аны кошкон адам же үй-бүлөнүн ээси гана өчүрө алат.';
+
+  @override
   String get renameCategoryTitle => 'Категориянын атын өзгөртүү';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get notifHouseholdTitle => 'Бөлүшүлгөн жазуулар';
 
   @override
-  String get notifHouseholdSubtitle => 'Бөлүшүлгөн жазуунун мөөнөтү бүтөйүн деп, аны эч ким жаңылабаганда';
+  String get notifHouseholdSubtitle => 'Жалпы жазуу кошулганда, жаңы мөөнөт алганда же өчүрүлгөндө, же мөөнөтү жакында бүтүп, аны эч ким жаңыртпаганда';
 
   @override
   String get notifUpdatesTitle => 'Сиз сураган жаңыртуулар';

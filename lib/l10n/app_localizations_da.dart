@@ -7986,6 +7986,40 @@ class AppLocalizationsDa extends AppLocalizations {
   String get iconThemeOther => 'Andet';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Tilføjet af $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Tilføjet af $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Sidst ændret af $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Tilføjet af dig, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Tilføjet af dig';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Sidst ændret af dig, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'et medlem af husstanden';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Kun den, der tilføjede denne post, eller ejeren af husstanden kan slette den.';
+
+  @override
   String get renameCategoryTitle => 'Omdøb kategori';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get notifHouseholdTitle => 'Delte poster';
 
   @override
-  String get notifHouseholdSubtitle => 'Når en delt post snart udløber, og ingen har fornyet den';
+  String get notifHouseholdSubtitle => 'Når en delt post tilføjes, får en ny udløbsdato eller slettes, eller snart udløber og ingen har fornyet den';
 
   @override
   String get notifUpdatesTitle => 'Opdateringer, du har bedt om';

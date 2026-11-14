@@ -7972,6 +7972,40 @@ class AppLocalizationsMn extends AppLocalizations {
   String get iconThemeOther => 'Бусад';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Нэмсэн: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Нэмсэн: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Сүүлд өөрчилсөн: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Та нэмсэн, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Та нэмсэн';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Сүүлд та өөрчилсөн, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'гэр бүлийн гишүүн';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Энэ бичлэгийг зөвхөн нэмсэн хүн эсвэл гэр бүлийн эзэн устгаж болно.';
+
+  @override
   String get renameCategoryTitle => 'Ангиллын нэрийг өөрчлөх';
 
   @override
@@ -8401,7 +8435,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get notifHouseholdTitle => 'Хуваалцсан бичлэгүүд';
 
   @override
-  String get notifHouseholdSubtitle => 'Хуваалцсан бичлэгийн хугацаа дуусах дөхөж, хэн ч сунгаагүй үед';
+  String get notifHouseholdSubtitle => 'Хуваалцсан бичлэг нэмэгдэх, шинэ дуусах огноо авах, устгагдах, эсвэл удахгүй дуусах ба хэн ч сунгаагүй үед';
 
   @override
   String get notifUpdatesTitle => 'Таны хүссэн шинэчлэлүүд';

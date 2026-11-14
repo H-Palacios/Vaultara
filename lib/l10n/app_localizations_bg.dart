@@ -7982,6 +7982,40 @@ class AppLocalizationsBg extends AppLocalizations {
   String get iconThemeOther => 'Други';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Добавено от $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Добавено от $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Последно променено от $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Добавено от вас, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Добавено от вас';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Последно променено от вас, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'член на домакинството';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Само човекът, който е добавил този запис, или собственикът на домакинството може да го изтрие.';
+
+  @override
   String get renameCategoryTitle => 'Преименуване на категория';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get notifHouseholdTitle => 'Споделени записи';
 
   @override
-  String get notifHouseholdSubtitle => 'Когато споделен запис скоро изтича и никой не го е подновил';
+  String get notifHouseholdSubtitle => 'Когато споделен запис бъде добавен, получи нова дата на изтичане или бъде изтрит, или скоро изтича и никой не го е подновил';
 
   @override
   String get notifUpdatesTitle => 'Поискани актуализации';

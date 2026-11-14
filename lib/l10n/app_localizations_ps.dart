@@ -7982,6 +7982,40 @@ class AppLocalizationsPs extends AppLocalizations {
   String get iconThemeOther => 'نور';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'د $name لخوا زیات شو، $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'د $name لخوا زیات شو';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'وروستی بدلون د $name لخوا، $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'تاسو زیات کړ، $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'تاسو زیات کړ';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'وروستی بدلون ستاسو لخوا، $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'د کورنۍ یو غړی';
+
+  @override
+  String get recordDeleteOnlyCreator => 'دا ریکارډ یوازې هغه کس چې زیات کړی یا د کورنۍ مالک ړنګولی شي.';
+
+  @override
   String get renameCategoryTitle => 'د کټګورۍ نوم بدل کړئ';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get notifHouseholdTitle => 'شریک شوي ریکارډونه';
 
   @override
-  String get notifHouseholdSubtitle => 'کله چې یو شریک شوی ریکارډ پای ته نږدې وي او هیچا نوی کړی نه وي';
+  String get notifHouseholdSubtitle => 'کله چې یو شریک ریکارډ زیات شي، د پای نوې نیټه ومومي یا ړنګ شي، یا ژر پای ته رسیږي او هیچا نوی کړی نه وي';
 
   @override
   String get notifUpdatesTitle => 'هغه تازه معلومات چې تاسو غوښتي';

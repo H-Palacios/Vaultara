@@ -14,6 +14,7 @@ import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/data/repositories/category_repository.dart';
+import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
 
 class RecentlyDeletedScreen extends StatefulWidget {
@@ -170,6 +171,7 @@ class _RecentlyDeletedScreenState extends State<RecentlyDeletedScreen>
                       noMatchesText: loc.recordsNoMatch(query),
                       onRestore: _controller.restoreRecord,
                       onDeleteForever: _controller.deleteRecord,
+                      canDeleteForever: RecordRepository.canDelete,
                     ),
                   ],
                 ),

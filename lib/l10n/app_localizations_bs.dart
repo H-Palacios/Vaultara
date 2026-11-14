@@ -8053,6 +8053,40 @@ class AppLocalizationsBs extends AppLocalizations {
   String get iconThemeOther => 'Ostalo';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Dodao/la: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Dodao/la: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Zadnja izmjena: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Vi ste dodali, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Vi ste dodali';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Zadnja izmjena: vi, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'član domaćinstva';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Samo osoba koja je dodala ovaj zapis ili vlasnik domaćinstva ga može izbrisati.';
+
+  @override
   String get renameCategoryTitle => 'Preimenuj kategoriju';
 
   @override
@@ -8488,7 +8522,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get notifHouseholdTitle => 'Podijeljeni zapisi';
 
   @override
-  String get notifHouseholdSubtitle => 'Kada podijeljeni zapis uskoro ističe, a niko ga nije obnovio';
+  String get notifHouseholdSubtitle => 'Kada se zajednički zapis doda, dobije novi datum isteka ili se izbriše, ili uskoro ističe a niko ga nije obnovio';
 
   @override
   String get notifUpdatesTitle => 'Ažuriranja koja ste tražili';

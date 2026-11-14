@@ -7982,6 +7982,40 @@ class AppLocalizationsMr extends AppLocalizations {
   String get iconThemeOther => 'इतर';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name यांनी जोडले, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name यांनी जोडले';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'शेवटचा बदल $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'तुम्ही जोडले, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'तुम्ही जोडले';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'शेवटचा बदल तुम्ही, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'घरातील एक सदस्य';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ही नोंद जोडणारी व्यक्ती किंवा घराचे मालकच ती हटवू शकतात.';
+
+  @override
   String get renameCategoryTitle => 'श्रेणीचे नाव बदला';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get notifHouseholdTitle => 'शेअर केलेल्या नोंदी';
 
   @override
-  String get notifHouseholdSubtitle => 'शेअर केलेल्या नोंदीची मुदत संपत आली असेल आणि कोणी नूतनीकरण केले नसेल तेव्हा';
+  String get notifHouseholdSubtitle => 'शेअर केलेली नोंद जोडली गेल्यावर, नवीन मुदत संपण्याची तारीख मिळाल्यावर किंवा हटवल्यावर, किंवा लवकरच संपत असून कोणी नूतनीकरण केले नसल्यास';
 
   @override
   String get notifUpdatesTitle => 'तुम्ही मागितलेले अपडेट्स';

@@ -7982,6 +7982,40 @@ class AppLocalizationsTe extends AppLocalizations {
   String get iconThemeOther => 'ఇతరాలు';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name జోడించారు, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name జోడించారు';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'చివరిగా మార్చినవారు $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'మీరు జోడించారు, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'మీరు జోడించారు';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'చివరిగా మీరు మార్చారు, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ఇంటి సభ్యుడు ఒకరు';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ఈ రికార్డ్‌ను జోడించినవారు లేదా ఇంటి యజమాని మాత్రమే దీన్ని తొలగించగలరు.';
+
+  @override
   String get renameCategoryTitle => 'వర్గం పేరు మార్చు';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get notifHouseholdTitle => 'షేర్ చేసిన రికార్డులు';
 
   @override
-  String get notifHouseholdSubtitle => 'షేర్ చేసిన రికార్డు గడువు ముగియబోతుండగా ఎవరూ పునరుద్ధరించనప్పుడు';
+  String get notifHouseholdSubtitle => 'షేర్ చేసిన రికార్డ్ జోడించినప్పుడు, కొత్త గడువు తేదీ వచ్చినప్పుడు లేదా తొలగించినప్పుడు, లేదా త్వరలో గడువు ముగుస్తూ ఎవరూ పునరుద్ధరించనప్పుడు';
 
   @override
   String get notifUpdatesTitle => 'మీరు అడిగిన అప్‌డేట్‌లు';

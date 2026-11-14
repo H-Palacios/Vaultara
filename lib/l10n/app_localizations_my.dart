@@ -7922,6 +7922,40 @@ class AppLocalizationsMy extends AppLocalizations {
   String get iconThemeOther => 'အခြား';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name ထည့်ခဲ့သည်၊ $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name ထည့်ခဲ့သည်';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'နောက်ဆုံးပြင်ဆင်သူ $name၊ $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'သင်ထည့်ခဲ့သည်၊ $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'သင်ထည့်ခဲ့သည်';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'နောက်ဆုံး သင်ပြင်ဆင်ခဲ့သည်၊ $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'အိမ်ထောင်စုဝင်တစ်ဦး';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ဤမှတ်တမ်းကို ထည့်ခဲ့သူ သို့မဟုတ် အိမ်ထောင်စုပိုင်ရှင်သာ ဖျက်နိုင်သည်။';
+
+  @override
   String get renameCategoryTitle => 'အမျိုးအစားအမည် ပြောင်းရန်';
 
   @override
@@ -8350,7 +8384,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get notifHouseholdTitle => 'မျှဝေထားသော မှတ်တမ်းများ';
 
   @override
-  String get notifHouseholdSubtitle => 'မျှဝေထားသော မှတ်တမ်းတစ်ခု သက်တမ်းကုန်ခါနီးပြီး မည်သူမျှ သက်တမ်းမတိုးရသေးသည့်အခါ';
+  String get notifHouseholdSubtitle => 'မျှဝေထားသော မှတ်တမ်း ထည့်သည့်အခါ၊ သက်တမ်းကုန်ရက်အသစ် ရသည့်အခါ သို့မဟုတ် ဖျက်သည့်အခါ၊ သို့မဟုတ် မကြာမီ သက်တမ်းကုန်မည်ဖြစ်ပြီး မည်သူမျှ သက်တမ်းမတိုးရသေးသည့်အခါ';
 
   @override
   String get notifUpdatesTitle => 'သင်တောင်းဆိုထားသော အပ်ဒိတ်များ';

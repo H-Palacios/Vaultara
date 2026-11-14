@@ -18,6 +18,7 @@ class DeletedTab<T> extends StatelessWidget {
 
   final Future<void> Function(T) onRestore;
   final Future<void> Function(T) onDeleteForever;
+  final bool Function(T)? canDeleteForever;
 
   final String emptyText;
   final String noMatchesText;
@@ -36,6 +37,7 @@ class DeletedTab<T> extends StatelessWidget {
     required this.target,
     required this.onRestore,
     required this.onDeleteForever,
+    this.canDeleteForever,
     required this.emptyText,
     required this.noMatchesText,
     this.subtitleOf,
@@ -79,7 +81,9 @@ class DeletedTab<T> extends StatelessWidget {
               daysLeft: daysLeftOf?.call(item),
               target: target,
               onRestore: () => onRestore(item),
-              onDeleteForever: () => onDeleteForever(item),
+              onDeleteForever: (canDeleteForever?.call(item) ?? true)
+                  ? () => onDeleteForever(item)
+                  : null,
             );
           },
         );
