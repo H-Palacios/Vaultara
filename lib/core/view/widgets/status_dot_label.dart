@@ -4,12 +4,14 @@ class StatusDotLabel extends StatelessWidget {
   final String text;
   final Color colour;
   final double fontSize;
+  final bool wrap;
 
   const StatusDotLabel({
     super.key,
     required this.text,
     required this.colour,
     this.fontSize = 12.5,
+    this.wrap = false,
   });
 
   @override
@@ -18,21 +20,26 @@ class StatusDotLabel extends StatelessWidget {
 
     return Row(
       mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          width: 8,
-          height: 8,
-          decoration: BoxDecoration(color: colour, shape: BoxShape.circle),
+        Padding(
+          padding: EdgeInsets.only(top: (fontSize * 1.3 - 8) / 2),
+          child: Container(
+            width: 8,
+            height: 8,
+            decoration: BoxDecoration(color: colour, shape: BoxShape.circle),
+          ),
         ),
         const SizedBox(width: 6),
         Flexible(
           child: Text(
             text,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
+            maxLines: wrap ? null : 1,
+            overflow: wrap ? TextOverflow.visible : TextOverflow.ellipsis,
             style: TextStyle(
               fontSize: fontSize,
               fontWeight: FontWeight.w600,
+              height: 1.3,
               color: scheme.onSurface,
             ),
           ),
