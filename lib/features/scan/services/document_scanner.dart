@@ -8,6 +8,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:printing/printing.dart';
 import 'package:vaultara/features/scan/logic/licence_disc_parser.dart';
 import 'package:vaultara/features/scan/logic/scan_parser.dart';
+import 'package:vaultara/features/scan/services/document_camera.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
@@ -50,6 +51,16 @@ class DocumentScanner {
 
     final ImageSource? source = await _chooseSource(context);
     if (source == null) return null;
+
+    if (source == ImageSource.camera && DocumentCamera.available) {
+      final DocumentCameraResult camera = await DocumentCamera.capture();
+      if (camera.opened) {
+        final String? path = camera.path;
+        if (path == null) return null;
+        onReading?.call();
+        return _process(path, monthFirst);
+      }
+    }
 
     XFile? picked;
     try {
