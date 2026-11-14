@@ -4,21 +4,20 @@ import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/features/billing/services/entitlement_service.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<void> showJoinHouseholdSheet(
   BuildContext context, {
   String? initialCode,
 }) {
-  return showModalBottomSheet<void>(
+  return AppSheet.show<void>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
     builder: (_) => JoinHouseholdSheet(initialCode: initialCode),
-  );
+    );
 }
 
 String householdErrorText(AppLocalizations loc, HouseholdError error) {

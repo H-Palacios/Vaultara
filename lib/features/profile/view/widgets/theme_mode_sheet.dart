@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/theme/theme_preference.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /// One choice from three, so a sheet, not a screen.
 Future<void> showThemeModeSheet(BuildContext context) {
-  return showModalBottomSheet<void>(
+  return AppSheet.show<void>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (sheetContext) {
       final t = AppLocalizations.of(sheetContext)!;
@@ -58,7 +57,7 @@ Future<void> showThemeModeSheet(BuildContext context) {
         ),
       );
     },
-  );
+    );
 }
 
 String themeModeLabel(AppLocalizations t, ThemeMode mode) {

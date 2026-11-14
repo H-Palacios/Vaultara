@@ -6,6 +6,7 @@ import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/records/logic/record_status.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /// A list of records in a sheet, for the numbers at the top of Insights.
 /// Tapping a record closes the sheet and returns it.
@@ -17,9 +18,8 @@ class RecordListSheet {
     required String title,
     required List<TrackedItem> records,
   }) {
-    return showModalBottomSheet<TrackedItem>(
+    return AppSheet.show<TrackedItem>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (sheetContext) => _Body(title: title, records: records),
     );

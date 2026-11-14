@@ -9,6 +9,7 @@ import 'package:printing/printing.dart';
 import 'package:vaultara/features/scan/logic/licence_disc_parser.dart';
 import 'package:vaultara/features/scan/logic/scan_parser.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class ScanOutcome {
   final String imagePath;
@@ -239,10 +240,8 @@ class DocumentScanner {
     final AppLocalizations loc = AppLocalizations.of(context)!;
     final ColorScheme scheme = Theme.of(context).colorScheme;
 
-    return showModalBottomSheet<ImageSource>(
+    return AppSheet.show<ImageSource>(
       context: context,
-      isScrollControlled: true,
-      useSafeArea: true,
       showDragHandle: true,
       backgroundColor: scheme.surface,
       shape: const RoundedRectangleBorder(

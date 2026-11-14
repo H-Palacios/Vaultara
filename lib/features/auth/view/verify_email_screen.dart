@@ -15,6 +15,7 @@ import 'package:vaultara/features/auth/services/verification_code_clipboard.dart
 import 'package:vaultara/features/auth/services/verification_link_service.dart';
 import 'package:vaultara/features/auth/view/widget/branded_background.dart';
 import 'package:vaultara/features/auth/view/widget/discard_account_dialog.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class VerifyEmailScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
@@ -291,10 +292,8 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
   Future<EmailInboxApp?> _pickEmailApp(List<EmailInboxApp> apps) {
     final loc = AppLocalizations.of(context)!;
 
-    return showModalBottomSheet<EmailInboxApp>(
+    return AppSheet.show<EmailInboxApp>(
       context: context,
-      isScrollControlled: true,
-      useSafeArea: true,
       showDragHandle: true,
       backgroundColor: Colors.white,
       builder: (sheetContext) => Theme(

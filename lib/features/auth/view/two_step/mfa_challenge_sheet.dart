@@ -9,6 +9,7 @@ import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/features/auth/services/backup_code_service.dart';
 import 'package:vaultara/features/auth/services/two_step_service.dart';
 import 'package:vaultara/features/support/services/support_email_service.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class MfaChallenge {
   const MfaChallenge._();
@@ -37,13 +38,11 @@ class MfaChallenge {
       }
       final account = (email ?? FirebaseAuth.instance.currentUser?.email ?? '')
           .trim();
-      final result = await showModalBottomSheet<Object>(
+      final result = await AppSheet.show<Object>(
         context: ctx,
-        isScrollControlled: true,
         showDragHandle: true,
         isDismissible: false,
         enableDrag: false,
-        useSafeArea: true,
         backgroundColor: light ? Colors.white : null,
         builder: (_) {
           final sheet = MfaChallengeSheet(
@@ -52,7 +51,7 @@ class MfaChallenge {
           );
           return light ? Theme(data: AppThemes.light(), child: sheet) : sheet;
         },
-      );
+    );
       if (result is UserCredential) return result;
       if (identical(result, backupCodeUsed)) return _retryAfterBackup(action);
       throw FirebaseAuthException(code: cancelledCode);

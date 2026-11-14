@@ -7,6 +7,7 @@ import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
 import 'package:vaultara/features/travel/view/travel_widgets.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class TripFlightText {
   const TripFlightText._();
@@ -107,17 +108,16 @@ Future<TripFlight?> showTripFlightSheet(
   DateTime? suggestedDate,
   TripFlightLimits limits = const TripFlightLimits(),
 }) {
-  return showModalBottomSheet<TripFlight>(
+  return AppSheet.show<TripFlight>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
+      showDragHandle: false,
     enableDrag: false,
     builder: (_) => _FlightSheet(
       flight: flight,
       suggestedDate: suggestedDate,
       limits: limits,
     ),
-  );
+    );
 }
 
 class _FlightSheet extends StatefulWidget {

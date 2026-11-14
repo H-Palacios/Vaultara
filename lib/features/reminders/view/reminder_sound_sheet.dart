@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:vaultara/features/reminders/logic/reminder_sounds.dart';
 import 'package:vaultara/features/reminders/view/reminder_sound_names.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class ReminderSoundSheet extends StatefulWidget {
   final String title;
@@ -25,9 +26,8 @@ class ReminderSoundSheet extends StatefulWidget {
     required String selected,
     required bool includeFun,
   }) {
-    return showModalBottomSheet<String>(
+    return AppSheet.show<String>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => ReminderSoundSheet(
         title: title,

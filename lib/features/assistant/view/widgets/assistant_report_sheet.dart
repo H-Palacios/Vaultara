@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/features/assistant/services/assistant_report_store.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class AssistantReportSheet extends StatelessWidget {
   const AssistantReportSheet({super.key});
 
   static Future<String?> show(BuildContext context) {
-    return showModalBottomSheet<String>(
+    return AppSheet.show<String>(
       context: context,
-      useSafeArea: true,
       showDragHandle: true,
       builder: (_) => const AssistantReportSheet(),
     );

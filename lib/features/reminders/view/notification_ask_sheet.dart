@@ -5,6 +5,7 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /// Asks for notifications at the moment they matter: after the person saves
 /// a record with a reminder. A short sheet says why first, then the phone's
@@ -43,9 +44,8 @@ class NotificationAsk {
         quietAfterNotNow.inMilliseconds;
     if (quiet || !context.mounted) return;
 
-    final allow = await showModalBottomSheet<bool>(
+    final allow = await AppSheet.show<bool>(
       context: context,
-      useSafeArea: true,
       showDragHandle: true,
       builder: (_) => const _AskSheet(),
     );

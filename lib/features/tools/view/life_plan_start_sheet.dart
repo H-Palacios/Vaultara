@@ -14,6 +14,7 @@ import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /// Starts a plan for [event] and opens it. If a plan for the same event is
 /// already in progress, that one opens instead.
@@ -44,10 +45,8 @@ Future<void> startLifePlan(
     );
     return;
   }
-  final draft = await showModalBottomSheet<LifePlan>(
+  final draft = await AppSheet.show<LifePlan>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (_) => _LifePlanStartSheet(
       event: event,
@@ -57,7 +56,7 @@ Future<void> startLifePlan(
       people: people,
       variant: variant,
     ),
-  );
+    );
   if (draft == null || !context.mounted) return;
   try {
     final plan = await LifePlanRepository.startPlan(draft);
@@ -77,10 +76,8 @@ Future<void> startLifePlan(
 /// Changes the date, people or country of a plan.
 Future<void> editLifePlan(BuildContext context, LifePlan plan) async {
   final loc = AppLocalizations.of(context)!;
-  final edited = await showModalBottomSheet<LifePlan>(
+  final edited = await AppSheet.show<LifePlan>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (_) => _LifePlanStartSheet(
       event: plan.event,
@@ -90,7 +87,7 @@ Future<void> editLifePlan(BuildContext context, LifePlan plan) async {
       people: plan.people,
       variant: plan.variant,
     ),
-  );
+    );
   if (edited == null) return;
   // Records that only now belong to the plan, because someone was added or
   // the answer changed from bought to sold, start as they are now.

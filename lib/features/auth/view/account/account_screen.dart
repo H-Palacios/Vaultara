@@ -8,13 +8,13 @@ import 'package:vaultara/features/auth/view/account/widgets/change_email_sheet.d
 import 'package:vaultara/features/auth/view/account/widgets/change_password_sheet.dart';
 import 'package:vaultara/features/auth/view/two_step/two_step_tile.dart';
 import 'package:vaultara/features/security/services/strong_password_flag.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({super.key});
   void _openSheet(BuildContext context, Widget child) {
-    showModalBottomSheet<void>(
+    AppSheet.show<void>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       isDismissible: false,
       enableDrag: false,

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/category_appearance.dart';
 import 'package:vaultara/features/records/services/icon_suggest_service.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class CategoryIconBadge extends StatelessWidget {
   final IconData icon;
@@ -42,9 +43,8 @@ class CategoryLookSheet extends StatefulWidget {
     required CategoryLook initial,
     required String categoryName,
   }) {
-    return showModalBottomSheet<CategoryLook>(
+    return AppSheet.show<CategoryLook>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (_) =>
           CategoryLookSheet(initial: initial, categoryName: categoryName),

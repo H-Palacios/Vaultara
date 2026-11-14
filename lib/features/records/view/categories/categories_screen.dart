@@ -23,6 +23,7 @@ import '../groups/groups_screen.dart';
 import 'widgets/add_category_sheet.dart';
 import 'widgets/category_card.dart';
 import 'widgets/category_look_sheet.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 enum _CategoriesMenu { recentlyDeleted }
 
@@ -116,9 +117,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     final loc = AppLocalizations.of(context)!;
     final presetLabels = PresetCatalog.categoriesLocalized(context);
 
-    showModalBottomSheet<void>(
+    AppSheet.show<void>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => NameEntrySheet(
         title: loc.renameCategoryTitle,
@@ -182,9 +182,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
       return;
     }
 
-    showModalBottomSheet<void>(
+    AppSheet.show<void>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => AddCategorySheet(
         isPremium: widget.isPremium,

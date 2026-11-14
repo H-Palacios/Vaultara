@@ -8,6 +8,7 @@ import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/profile/data/avatar_repository.dart';
 import 'package:vaultara/features/profile/view/widgets/my_avatar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 enum _AvatarAction { camera, gallery, remove }
 
@@ -48,10 +49,8 @@ class _ProfileAvatarButtonState extends State<ProfileAvatarButton> {
   }
 
   Future<_AvatarAction?> _chooseAction(bool hasPhoto) {
-    return showModalBottomSheet<_AvatarAction>(
+    return AppSheet.show<_AvatarAction>(
       context: context,
-      isScrollControlled: true,
-      useSafeArea: true,
       showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

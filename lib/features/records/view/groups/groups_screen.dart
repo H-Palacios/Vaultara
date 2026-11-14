@@ -22,6 +22,7 @@ import '../../logic/group_ideas.dart';
 import '../records/records_screen.dart';
 import 'widgets/add_group_sheet.dart';
 import 'widgets/group_card.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class GroupsScreen extends StatefulWidget {
   final CategoryItem category;
@@ -147,9 +148,8 @@ class _GroupsScreenState extends State<GroupsScreen> {
     final used = GroupRepository.customGroupCount();
     const limit = GroupRepository.freeGroupLimit;
 
-    await showModalBottomSheet<void>(
+    await AppSheet.show<void>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => AddGroupSheet(
         limit: widget.isPremium
@@ -200,9 +200,8 @@ class _GroupsScreenState extends State<GroupsScreen> {
   Future<void> _renameGroup(String key) async {
     final current = _label(key);
 
-    await showModalBottomSheet<void>(
+    await AppSheet.show<void>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => AddGroupSheet(
         initialName: current,

@@ -5,6 +5,7 @@ import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/features/guides/data/renewal_guides.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/records/view/renew/renew_sheet.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<void> showRenewalGuide(
   BuildContext context, {
@@ -15,11 +16,9 @@ Future<void> showRenewalGuide(
 }) async {
   final guide = RenewalGuides.forGroup(groupKey);
   if (guide == null) return;
-  final markRenewed = await showModalBottomSheet<bool>(
+  final markRenewed = await AppSheet.show<bool>(
     context: context,
-    isScrollControlled: true,
     showDragHandle: true,
-    useSafeArea: true,
     builder: (_) => DraggableScrollableSheet(
       expand: false,
       // Opens at full height: the guide is long and was cut off at three
@@ -36,7 +35,7 @@ Future<void> showRenewalGuide(
         controller: controller,
       ),
     ),
-  );
+    );
   final target = record;
   if (markRenewed == true && target != null && context.mounted) {
     await showRenewSheet(context, target);

@@ -10,6 +10,7 @@ import 'package:vaultara/features/travel/logic/visa_check.dart';
 import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
 import 'package:vaultara/features/travel/view/travel_widgets.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 String _place(String code) =>
     '${Countries.flag(code)} ${Countries.name(code)}'.trim();
@@ -24,13 +25,11 @@ List<TrackedItem> _savedPassports(String? holderId) =>
       ..sort((a, b) => b.expiryDate.compareTo(a.expiryDate));
 
 Future<void> showPassportsSheet(BuildContext context, String? holderId) {
-  return showModalBottomSheet<void>(
+  return AppSheet.show<void>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (_) => _PassportsSheet(holderId: holderId),
-  );
+    );
 }
 
 class _PassportsSheet extends StatelessWidget {
@@ -63,10 +62,8 @@ class _PassportsSheet extends StatelessWidget {
       );
       return;
     }
-    final id = await showModalBottomSheet<String>(
+    final id = await AppSheet.show<String>(
       context: context,
-      isScrollControlled: true,
-      useSafeArea: true,
       showDragHandle: true,
       builder: (_) => _SavedPassportSheet(records: saved),
     );
@@ -306,10 +303,8 @@ class PassportChoice {
     required DestinationVisa destination,
     required String Function(PassportOption) describe,
   }) {
-    return showModalBottomSheet<String>(
+    return AppSheet.show<String>(
       context: context,
-      isScrollControlled: true,
-      useSafeArea: true,
       showDragHandle: true,
       builder: (_) => _ChoiceSheet(
         destination: destination,

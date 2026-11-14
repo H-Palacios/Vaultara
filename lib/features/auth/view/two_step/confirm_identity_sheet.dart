@@ -3,13 +3,12 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/features/auth/services/provider_reauth.dart';
 import 'package:vaultara/features/auth/view/widget/reauth_password_form.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<bool> showConfirmIdentitySheet(BuildContext context) async {
-  final ok = await showModalBottomSheet<bool>(
+  final ok = await AppSheet.show<bool>(
     context: context,
-    isScrollControlled: true,
     showDragHandle: true,
-    useSafeArea: true,
     builder: (sheetContext) => ConfirmIdentityPanel(
       onConfirmed: () async => Navigator.of(sheetContext).pop(true),
       onCancel: () => Navigator.of(sheetContext).pop(false),
@@ -20,7 +19,7 @@ Future<bool> showConfirmIdentitySheet(BuildContext context) async {
         MediaQuery.of(sheetContext).viewInsets.bottom + 20,
       ),
     ),
-  );
+    );
   return ok == true;
 }
 

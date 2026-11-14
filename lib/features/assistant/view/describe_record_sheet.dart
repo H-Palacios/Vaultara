@@ -7,15 +7,15 @@ import 'package:vaultara/features/assistant/services/assistant_service.dart';
 import 'package:vaultara/features/assistant/services/voice_input.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_voice_panel.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<AssistantAction?> showDescribeRecordSheet(BuildContext context) {
-  return showModalBottomSheet<AssistantAction>(
+  return AppSheet.show<AssistantAction>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
+      showDragHandle: false,
     enableDrag: false,
     builder: (_) => const _DescribeRecordSheet(),
-  );
+    );
 }
 
 class _DescribeRecordSheet extends StatefulWidget {

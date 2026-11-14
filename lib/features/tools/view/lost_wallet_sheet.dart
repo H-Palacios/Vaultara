@@ -6,6 +6,7 @@ import 'package:vaultara/features/tools/data/life_plan.dart';
 import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /// Asks whether the wallet was lost or stolen, when, and what went missing.
 /// Returns the plan to start, or the edited plan.
@@ -14,13 +15,11 @@ Future<LifePlan?> showLostWalletSheet(
   LifePlan? plan,
   String? variant,
 }) {
-  return showModalBottomSheet<LifePlan>(
+  return AppSheet.show<LifePlan>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (_) => _LostWalletSheet(plan: plan, variant: variant),
-  );
+    );
 }
 
 class _LostWalletSheet extends StatefulWidget {

@@ -5,6 +5,7 @@ import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/settings_tile.dart';
 import 'package:vaultara/features/profile/data/user_profile.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class CompanyNameTile extends StatefulWidget {
   const CompanyNameTile({super.key});
@@ -24,10 +25,8 @@ class _CompanyNameTileState extends State<CompanyNameTile> {
 
   Future<void> _edit(String current) async {
     final loc = AppLocalizations.of(context)!;
-    final value = await showModalBottomSheet<String>(
+    final value = await AppSheet.show<String>(
       context: context,
-      useSafeArea: true,
-      isScrollControlled: true,
       showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

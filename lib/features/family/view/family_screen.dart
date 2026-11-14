@@ -25,6 +25,7 @@ import 'package:vaultara/features/travel/view/visa_section.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 enum _PersonAction { rename, nationality, remove }
 
@@ -667,9 +668,9 @@ Future<_PersonInput?> _showNameSheet(
   String? initialEmail,
   bool initialReminders = true,
 }) {
-  return showModalBottomSheet<_PersonInput>(
+  return AppSheet.show<_PersonInput>(
     context: context,
-    isScrollControlled: true,
+      showDragHandle: false,
     enableDrag: false,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
@@ -681,7 +682,7 @@ Future<_PersonInput?> _showNameSheet(
       initialEmail: initialEmail,
       initialReminders: initialReminders,
     ),
-  );
+    );
 }
 
 class _NameSheet extends StatefulWidget {

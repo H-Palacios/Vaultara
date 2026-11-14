@@ -26,6 +26,7 @@ import 'package:vaultara/features/travel/view/passports_sheet.dart';
 import 'package:vaultara/features/travel/view/travel_actions.dart';
 import 'package:vaultara/features/travel/view/travel_widgets.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class VisaText {
   const VisaText._();
@@ -261,11 +262,9 @@ class VisaActions {
     VisaLink link, {
     bool rules = false,
   }) async {
-    final go = await showModalBottomSheet<bool>(
+    final go = await AppSheet.show<bool>(
       context: context,
       showDragHandle: true,
-      useSafeArea: true,
-      isScrollControlled: true,
       builder: (_) => _LeavingSheet(country: country, link: link, rules: rules),
     );
     if (go != true || !context.mounted) return;
@@ -371,11 +370,9 @@ class VisaActions {
     final loc = AppLocalizations.of(context)!;
     final visas = TripVisas.savedVisas(holderId);
     if (visas.isEmpty) return;
-    final picked = await showModalBottomSheet<String>(
+    final picked = await AppSheet.show<String>(
       context: context,
       showDragHandle: true,
-      useSafeArea: true,
-      isScrollControlled: true,
       builder: (_) => _SavedVisaSheet(visas: visas),
     );
     if (picked == null) return;

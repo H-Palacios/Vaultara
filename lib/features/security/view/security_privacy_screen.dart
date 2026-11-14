@@ -30,6 +30,7 @@ import 'package:vaultara/features/sharing/data_export.dart';
 import 'package:vaultara/features/travel/services/location_country.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 String autoLockLabel(AppLocalizations loc, AutoLockDelay delay) {
   switch (delay) {
@@ -181,11 +182,9 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
   Future<void> _chooseAutoLock() async {
     final loc = AppLocalizations.of(context)!;
     final current = AutoLockPreference.delay.value;
-    final picked = await showModalBottomSheet<AutoLockDelay>(
+    final picked = await AppSheet.show<AutoLockDelay>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
-      useSafeArea: true,
       builder: (sheetContext) => SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(8, 0, 8, 16),
         child: Column(
@@ -230,10 +229,8 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
   }
 
   void _openDeleteAccount() {
-    showModalBottomSheet<void>(
+    AppSheet.show<void>(
       context: context,
-      useSafeArea: true,
-      isScrollControlled: true,
       showDragHandle: true,
       isDismissible: false,
       enableDrag: false,

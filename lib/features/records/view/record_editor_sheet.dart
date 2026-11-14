@@ -63,6 +63,7 @@ import 'package:vaultara/features/assistant/logic/group_suggester.dart';
 import 'package:vaultara/features/assistant/view/describe_record_sheet.dart';
 import 'package:vaultara/features/assistant/view/widgets/editor_assist_widgets.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<void> showRecordEditorSheet({
   required BuildContext context,
@@ -87,10 +88,8 @@ Future<void> showRecordEditorSheet({
 }) {
   final bool isAnyTutorialMode = isTutorialMode || isReminderTutorialMode;
 
-  return showModalBottomSheet<void>(
+  return AppSheet.show<void>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     isDismissible: !isAnyTutorialMode,
     enableDrag: false,
     showDragHandle: false,
@@ -116,7 +115,7 @@ Future<void> showRecordEditorSheet({
         onSave: onSave,
       );
     },
-  );
+    );
 }
 
 class _RecordEditorSheet extends StatefulWidget {

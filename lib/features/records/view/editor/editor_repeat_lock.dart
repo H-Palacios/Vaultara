@@ -5,6 +5,7 @@ import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/l10n/plural_labels.dart';
 import 'package:vaultara/features/records/view/kept_in_text.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class EditorRepeatField extends StatelessWidget {
   final int? value;
@@ -145,10 +146,9 @@ class EditorWalletTile extends StatelessWidget {
 
   Future<void> _pick(BuildContext context) async {
     final loc = AppLocalizations.of(context)!;
-    final picked = await showModalBottomSheet<String>(
+    final picked = await AppSheet.show<String>(
       context: context,
       showDragHandle: true,
-      useSafeArea: true,
       builder: (sheetContext) {
         final scheme = Theme.of(sheetContext).colorScheme;
         Widget option(String? place) {

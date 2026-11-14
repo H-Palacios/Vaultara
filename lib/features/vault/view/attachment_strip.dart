@@ -11,6 +11,7 @@ import 'package:vaultara/features/security/view/recovery_key_entry_screen.dart';
 import 'package:vaultara/features/vault/view/attachment_image.dart';
 import 'package:vaultara/features/vault/view/attachment_viewer.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class AttachmentStrip extends StatelessWidget {
   final List<RecordAttachment> existing;
@@ -135,10 +136,8 @@ class AttachmentStrip extends StatelessWidget {
   Future<ImageSource?> _chooseSource(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    return showModalBottomSheet<ImageSource>(
+    return AppSheet.show<ImageSource>(
       context: context,
-      isScrollControlled: true,
-      useSafeArea: true,
       showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

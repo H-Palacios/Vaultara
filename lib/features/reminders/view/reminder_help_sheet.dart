@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /*
   Some Android phones stop apps in the background to save battery, which can
@@ -11,13 +12,11 @@ import 'package:vaultara/l10n/app_localizations.dart';
   two system screens that fix it.
 */
 Future<void> showReminderHelpSheet(BuildContext context) {
-  return showModalBottomSheet<void>(
+  return AppSheet.show<void>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (_) => const _ReminderHelpSheet(),
-  );
+    );
 }
 
 class _ReminderHelpSheet extends StatelessWidget {

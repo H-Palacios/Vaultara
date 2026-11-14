@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /* Bottom sheet prompting the user to upgrade to Premium.
 
@@ -10,10 +11,8 @@ void showUpgradePromptSheet(BuildContext context) {
   final loc = AppLocalizations.of(context)!;
   final scheme = Theme.of(context).colorScheme;
 
-  showModalBottomSheet(
+  AppSheet.show(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (ctx) {
       return SingleChildScrollView(
@@ -56,5 +55,5 @@ void showUpgradePromptSheet(BuildContext context) {
         ),
       );
     },
-  );
+    );
 }

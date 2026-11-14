@@ -16,15 +16,15 @@ import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/guides/view/renewal_guide_sheet.dart';
 import 'package:vaultara/features/household/logic/household_access.dart';
 import 'package:vaultara/shell/shell_state.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<bool> showRenewSheet(BuildContext context, TrackedItem record) async {
   if (!HouseholdAccess.canEdit(context, record)) return false;
-  final renewed = await showModalBottomSheet<bool>(
+  final renewed = await AppSheet.show<bool>(
     context: context,
-    isScrollControlled: true,
     showDragHandle: true,
     builder: (_) => _RenewSheet(record: record),
-  );
+    );
   if (renewed == true && context.mounted) {
     ActionFeedbackSnackbar.showInfo(
       context,

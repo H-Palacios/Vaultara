@@ -15,6 +15,7 @@ import 'package:vaultara/features/reminders/view/widgets/cascade_toggle.dart';
 import 'package:vaultara/features/reminders/view/widgets/cascade_editor.dart';
 import 'package:vaultara/features/reminders/view/widgets/upgrade_prompt_sheet.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<int?> showReminderSelectorSheet({
   required BuildContext context,
@@ -59,9 +60,8 @@ Future<int?> showReminderSelectorSheet({
     registerTutorialKeys();
   }
 
-  return showModalBottomSheet<int?>(
+  return AppSheet.show<int?>(
     context: context,
-    isScrollControlled: true,
     isDismissible: !isTutorialMode,
     enableDrag: !isTutorialMode,
     showDragHandle: true,
@@ -423,7 +423,7 @@ Future<int?> showReminderSelectorSheet({
         ),
       );
     },
-  ).whenComplete(() {
+    ).whenComplete(() {
     if (isTutorialMode) {
       unregisterTutorialKeys();
     }

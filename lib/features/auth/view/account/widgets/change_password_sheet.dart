@@ -10,17 +10,16 @@ import 'package:vaultara/features/auth/services/password_reset_service.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 import 'package:vaultara/features/auth/view/widget/password_strength_meter.dart';
 import 'package:vaultara/features/security/logic/pwned_passwords.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<bool> showChangePasswordSheet(BuildContext context) async {
-  final changed = await showModalBottomSheet<bool>(
+  final changed = await AppSheet.show<bool>(
     context: context,
-    isScrollControlled: true,
     showDragHandle: true,
     isDismissible: false,
     enableDrag: false,
-    useSafeArea: true,
     builder: (_) => const ChangePasswordSheet(),
-  );
+    );
   return changed == true;
 }
 

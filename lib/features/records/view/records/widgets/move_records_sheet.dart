@@ -4,6 +4,7 @@ import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/data/repositories/category_repository.dart';
 import 'package:vaultara/core/data/repositories/group_repository.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /// Where chosen records should go.
 class MoveTarget {
@@ -35,9 +36,8 @@ class MoveRecordsSheet extends StatelessWidget {
     required String fromCategoryKey,
     required String fromGroupKey,
   }) {
-    return showModalBottomSheet<MoveTarget>(
+    return AppSheet.show<MoveTarget>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => DraggableScrollableSheet(
         expand: false,

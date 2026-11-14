@@ -3,16 +3,14 @@ import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<List<String>?> showCountryPickerSheet(
   BuildContext context, {
   required List<String> selected,
 }) {
-  return showModalBottomSheet<List<String>>(
+  return AppSheet.show<List<String>>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
-    showDragHandle: true,
     builder: (_) => _CountryPickerSheet(initial: selected),
   );
 }
@@ -23,14 +21,12 @@ Future<String?> showPassportCountryPicker(
   String? title,
   String? hint,
 }) {
-  return showModalBottomSheet<String>(
+  return AppSheet.show<String>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (_) =>
         _PassportCountrySheet(selected: selected, title: title, hint: hint),
-  );
+    );
 }
 
 class _PassportCountrySheet extends StatefulWidget {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /*
   The iPhone side of reminders that do not arrive: notification settings
@@ -8,13 +9,11 @@ import 'package:vaultara/l10n/app_localizations.dart';
   plan ahead, which is why opening the app now and then helps.
 */
 Future<void> showIosReminderHelpSheet(BuildContext context) {
-  return showModalBottomSheet<void>(
+  return AppSheet.show<void>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
     showDragHandle: true,
     builder: (_) => const _IosReminderHelpSheet(),
-  );
+    );
 }
 
 class _IosReminderHelpSheet extends StatelessWidget {

@@ -17,18 +17,18 @@ import 'package:vaultara/features/travel/view/trip_flight_sheet.dart';
 import 'package:vaultara/features/travel/view/trip_purpose_picker.dart';
 import 'package:vaultara/features/travel/view/visa_section.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 Future<SavedTrip?> showTripEditorSheet(
   BuildContext context, {
   SavedTrip? trip,
 }) {
-  return showModalBottomSheet<SavedTrip>(
+  return AppSheet.show<SavedTrip>(
     context: context,
-    isScrollControlled: true,
-    useSafeArea: true,
+      showDragHandle: false,
     enableDrag: false,
     builder: (_) => _TripEditorSheet(trip: trip),
-  );
+    );
 }
 
 class _TripEditorSheet extends StatefulWidget {

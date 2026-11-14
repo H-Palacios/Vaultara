@@ -12,6 +12,7 @@ import 'package:vaultara/features/auth/services/sign_up_service.dart';
 import 'package:vaultara/features/auth/services/verification_code_clipboard.dart';
 import 'package:vaultara/features/auth/view/widget/branded_background.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 /// The second step of creating an account. The same screen shows whether or
 /// not the email already had an account: a new address gets a code, an
@@ -231,7 +232,7 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
       case EmailLaunchFailed():
         notFound();
       case EmailLaunchChoice(:final apps):
-        final chosen = await showModalBottomSheet<EmailInboxApp>(
+        final chosen = await AppSheet.show<EmailInboxApp>(
           context: context,
           showDragHandle: true,
           backgroundColor: Colors.white,
@@ -264,7 +265,7 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
               ),
             ),
           ),
-        );
+    );
         if (chosen == null) return;
         final opened = await EmailAppLauncher.open(chosen);
         if (!mounted || opened) return;

@@ -15,6 +15,7 @@ import 'package:vaultara/features/security/services/strong_password_flag.dart';
 import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:vaultara/core/view/widgets/load_error_view.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class DevicesScreen extends StatefulWidget {
   const DevicesScreen({super.key});
@@ -122,11 +123,9 @@ class _DevicesScreenState extends State<DevicesScreen> {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     String? entered;
-    return showModalBottomSheet<String>(
+    return AppSheet.show<String>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
-      useSafeArea: true,
       builder: (sheetContext) => Padding(
         padding: EdgeInsets.fromLTRB(
           20,

@@ -20,6 +20,7 @@ import '../records/records_screen.dart';
 import 'package:vaultara/features/household/view/household_records_screen.dart';
 import 'widgets/record_filter_bar.dart';
 import 'widgets/search_result_card.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class GlobalSearchSheet extends StatefulWidget {
   final bool isPremium;
@@ -45,9 +46,8 @@ class GlobalSearchSheet extends StatefulWidget {
       return;
     }
 
-    showModalBottomSheet<void>(
+    AppSheet.show<void>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       builder: (_) => GlobalSearchSheet(
         isPremium: isPremium,

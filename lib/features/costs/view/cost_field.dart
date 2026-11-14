@@ -8,6 +8,7 @@ import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/costs/data/display_currency.dart';
 import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class CostField extends StatefulWidget {
   final double? amount;
@@ -249,9 +250,8 @@ class _CostFieldState extends State<CostField> {
 
   Future<void> _pickCurrency() async {
     FocusScope.of(context).unfocus();
-    final picked = await showModalBottomSheet<String>(
+    final picked = await AppSheet.show<String>(
       context: context,
-      isScrollControlled: true,
       showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
@@ -353,17 +353,15 @@ Future<String?> showCurrencyPicker(
   required String selected,
   Iterable<String>? available,
 }) {
-  return showModalBottomSheet<String>(
+  return AppSheet.show<String>(
     context: context,
-    isScrollControlled: true,
     showDragHandle: true,
-    useSafeArea: true,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
     ),
     builder: (_) =>
         CurrencyPickerSheet(selected: selected, available: available?.toSet()),
-  );
+    );
 }
 
 class CurrencyPickerSheet extends StatefulWidget {

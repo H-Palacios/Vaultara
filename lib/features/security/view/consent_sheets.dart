@@ -5,6 +5,7 @@ import 'package:vaultara/features/auth/services/sign_out_service.dart';
 import 'package:vaultara/features/security/services/analytics_consent.dart';
 import 'package:vaultara/features/security/services/legal_consent.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class LegalAgreementText extends StatefulWidget {
   final TextStyle? style;
@@ -89,14 +90,13 @@ class _LegalAgreementTextState extends State<LegalAgreementText> {
 }
 
 Future<void> showUpdatedTermsSheet(BuildContext context) {
-  return showModalBottomSheet<void>(
+  return AppSheet.show<void>(
     context: context,
-    isScrollControlled: true,
+      showDragHandle: false,
     isDismissible: false,
     enableDrag: false,
-    useSafeArea: true,
     builder: (_) => const PopScope(canPop: false, child: _UpdatedTermsSheet()),
-  );
+    );
 }
 
 class _UpdatedTermsSheet extends StatefulWidget {
@@ -219,15 +219,13 @@ class _UpdatedTermsSheetState extends State<_UpdatedTermsSheet> {
 }
 
 Future<void> showAnalyticsConsentSheet(BuildContext context) async {
-  final allow = await showModalBottomSheet<bool>(
+  final allow = await AppSheet.show<bool>(
     context: context,
-    isScrollControlled: true,
     showDragHandle: true,
-    useSafeArea: true,
     builder: (sheetContext) => _AnalyticsConsentSheet(
       onChoice: (value) => Navigator.of(sheetContext).pop(value),
     ),
-  );
+    );
   await AnalyticsConsent.setChoice(allow == true);
 }
 
