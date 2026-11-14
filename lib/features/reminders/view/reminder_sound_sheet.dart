@@ -47,6 +47,14 @@ class _ReminderSoundSheetState extends State<ReminderSoundSheet> {
   late String _selected = widget.selected;
 
   @override
+  void initState() {
+    super.initState();
+    _player
+        .setAudioContext(AudioContextConfig(respectSilence: true).build())
+        .catchError((Object _) {});
+  }
+
+  @override
   void dispose() {
     _player.dispose();
     super.dispose();
