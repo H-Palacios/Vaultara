@@ -7982,6 +7982,40 @@ class AppLocalizationsUz extends AppLocalizations {
   String get iconThemeOther => 'Boshqa';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Qo‘shgan: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Qo‘shgan: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Oxirgi o‘zgartirgan: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Siz qo‘shdingiz, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Siz qo‘shdingiz';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Oxirgi marta siz o‘zgartirdingiz, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'oila a’zosi';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Bu yozuvni faqat uni qo‘shgan kishi yoki oila egasi o‘chira oladi.';
+
+  @override
   String get renameCategoryTitle => 'Turkum nomini oʻzgartirish';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get notifHouseholdTitle => 'Ulashilgan yozuvlar';
 
   @override
-  String get notifHouseholdSubtitle => 'Ulashilgan yozuv muddati tugash arafasida va uni hech kim uzaytirmaganda';
+  String get notifHouseholdSubtitle => 'Umumiy yozuv qo‘shilganda, yangi muddat olganda yoki o‘chirilganda, yoki muddati tez orada tugab, uni hech kim yangilamaganda';
 
   @override
   String get notifUpdatesTitle => 'Siz so\'ragan yangilanishlar';

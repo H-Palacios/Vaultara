@@ -8049,6 +8049,40 @@ class AppLocalizationsLv extends AppLocalizations {
   String get iconThemeOther => 'Citas';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Pievienoja $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Pievienoja $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Pēdējo reizi mainīja $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Pievienojāt jūs, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Pievienojāt jūs';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Pēdējo reizi mainījāt jūs, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'mājsaimniecības loceklis';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Dzēst šo ierakstu var tikai tā pievienotājs vai mājsaimniecības īpašnieks.';
+
+  @override
   String get renameCategoryTitle => 'Pārdēvēt kategoriju';
 
   @override
@@ -8479,7 +8513,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get notifHouseholdTitle => 'Kopīgotie ieraksti';
 
   @override
-  String get notifHouseholdSubtitle => 'Kad kopīgota ieraksta termiņš drīz beigsies un neviens to nav atjaunojis';
+  String get notifHouseholdSubtitle => 'Kad kopīgots ieraksts tiek pievienots, saņem jaunu derīguma termiņu vai tiek dzēsts, vai drīz beidzas un neviens to nav atjaunojis';
 
   @override
   String get notifUpdatesTitle => 'Jūsu pieprasītie atjauninājumi';

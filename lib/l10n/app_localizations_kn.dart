@@ -7982,6 +7982,40 @@ class AppLocalizationsKn extends AppLocalizations {
   String get iconThemeOther => 'ಇತರೆ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name ಸೇರಿಸಿದ್ದಾರೆ, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name ಸೇರಿಸಿದ್ದಾರೆ';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'ಕೊನೆಯ ಬದಲಾವಣೆ $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'ನೀವು ಸೇರಿಸಿದ್ದೀರಿ, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'ನೀವು ಸೇರಿಸಿದ್ದೀರಿ';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'ಕೊನೆಯ ಬದಲಾವಣೆ ನೀವು, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ಮನೆಯ ಒಬ್ಬ ಸದಸ್ಯರು';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ಈ ದಾಖಲೆಯನ್ನು ಸೇರಿಸಿದವರು ಅಥವಾ ಮನೆಯ ಮಾಲೀಕರು ಮಾತ್ರ ಅಳಿಸಬಹುದು.';
+
+  @override
   String get renameCategoryTitle => 'ವರ್ಗದ ಹೆಸರು ಬದಲಿಸಿ';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get notifHouseholdTitle => 'ಹಂಚಿದ ದಾಖಲೆಗಳು';
 
   @override
-  String get notifHouseholdSubtitle => 'ಹಂಚಿದ ದಾಖಲೆ ಮುಕ್ತಾಯಕ್ಕೆ ಹತ್ತಿರವಿದ್ದು ಯಾರೂ ನವೀಕರಿಸದಿದ್ದಾಗ';
+  String get notifHouseholdSubtitle => 'ಹಂಚಿದ ದಾಖಲೆ ಸೇರಿಸಿದಾಗ, ಹೊಸ ಮುಕ್ತಾಯ ದಿನಾಂಕ ಪಡೆದಾಗ ಅಥವಾ ಅಳಿಸಿದಾಗ, ಅಥವಾ ಶೀಘ್ರದಲ್ಲೇ ಮುಕ್ತಾಯವಾಗುತ್ತಿದ್ದು ಯಾರೂ ನವೀಕರಿಸದಿದ್ದಾಗ';
 
   @override
   String get notifUpdatesTitle => 'ನೀವು ಕೇಳಿದ ಅಪ್‌ಡೇಟ್‌ಗಳು';

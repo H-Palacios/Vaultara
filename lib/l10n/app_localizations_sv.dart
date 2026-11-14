@@ -7985,6 +7985,40 @@ class AppLocalizationsSv extends AppLocalizations {
   String get iconThemeOther => 'Övrigt';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Tillagd av $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Tillagd av $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Senast ändrad av $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Tillagd av dig, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Tillagd av dig';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Senast ändrad av dig, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'en hushållsmedlem';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Bara den som lade till den här posten, eller hushållets ägare, kan ta bort den.';
+
+  @override
   String get renameCategoryTitle => 'Byt namn på kategori';
 
   @override
@@ -8414,7 +8448,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get notifHouseholdTitle => 'Delade poster';
 
   @override
-  String get notifHouseholdSubtitle => 'När en delad post snart går ut och ingen har förnyat den';
+  String get notifHouseholdSubtitle => 'När en delad post läggs till, får ett nytt utgångsdatum eller tas bort, eller snart går ut och ingen har förnyat den';
 
   @override
   String get notifUpdatesTitle => 'Uppdateringar du bad om';

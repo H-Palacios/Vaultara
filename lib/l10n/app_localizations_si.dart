@@ -7981,6 +7981,40 @@ class AppLocalizationsSi extends AppLocalizations {
   String get iconThemeOther => 'වෙනත්';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name එක් කළා, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name එක් කළා';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'අවසන් වරට වෙනස් කළේ $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'ඔබ එක් කළා, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'ඔබ එක් කළා';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'අවසන් වරට ඔබ වෙනස් කළා, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'නිවසේ සාමාජිකයෙක්';
+
+  @override
+  String get recordDeleteOnlyCreator => 'මෙම වාර්තාව එක් කළ පුද්ගලයාට හෝ නිවසේ හිමිකරුට පමණක් එය මැකිය හැක.';
+
+  @override
   String get renameCategoryTitle => 'කාණ්ඩය නැවත නම් කරන්න';
 
   @override
@@ -8410,7 +8444,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get notifHouseholdTitle => 'බෙදාගත් වාර්තා';
 
   @override
-  String get notifHouseholdSubtitle => 'බෙදාගත් වාර්තාවක් කල් ඉකුත් වීමට ආසන්නව කිසිවෙක් අලුත් නොකළ විට';
+  String get notifHouseholdSubtitle => 'බෙදාගත් වාර්තාවක් එක් කළ විට, නව කල් ඉකුත් දිනයක් ලැබුණු විට හෝ මැකූ විට, හෝ ඉක්මනින් කල් ඉකුත් වන අතර කිසිවෙක් අලුත් නොකළ විට';
 
   @override
   String get notifUpdatesTitle => 'ඔබ ඉල්ලූ යාවත්කාලීන';

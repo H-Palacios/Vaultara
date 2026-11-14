@@ -7982,6 +7982,40 @@ class AppLocalizationsTa extends AppLocalizations {
   String get iconThemeOther => 'மற்றவை';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name சேர்த்தார், $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name சேர்த்தார்';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'கடைசியாக மாற்றியவர் $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'நீங்கள் சேர்த்தீர்கள், $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'நீங்கள் சேர்த்தீர்கள்';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'கடைசியாக நீங்கள் மாற்றினீர்கள், $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'குடும்ப உறுப்பினர் ஒருவர்';
+
+  @override
+  String get recordDeleteOnlyCreator => 'இந்தப் பதிவைச் சேர்த்தவர் அல்லது குடும்ப உரிமையாளர் மட்டுமே இதை நீக்க முடியும்.';
+
+  @override
   String get renameCategoryTitle => 'வகையின் பெயரை மாற்று';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get notifHouseholdTitle => 'பகிரப்பட்ட பதிவுகள்';
 
   @override
-  String get notifHouseholdSubtitle => 'பகிரப்பட்ட பதிவு காலாவதியாகும் நிலையில் யாரும் புதுப்பிக்காதபோது';
+  String get notifHouseholdSubtitle => 'பகிர்ந்த பதிவு சேர்க்கப்படும்போது, புதிய காலாவதி தேதி பெறும்போது அல்லது நீக்கப்படும்போது, அல்லது விரைவில் காலாவதியாகி யாரும் புதுப்பிக்காதபோது';
 
   @override
   String get notifUpdatesTitle => 'நீங்கள் கேட்ட புதுப்பிப்புகள்';

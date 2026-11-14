@@ -55,6 +55,7 @@ import 'package:vaultara/features/records/view/editor/editor_reminder_tile.dart'
 import 'package:vaultara/features/records/view/editor/editor_scan_section.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/household/view/household_share_tile.dart';
+import 'package:vaultara/features/household/view/record_history_lines.dart';
 import 'package:vaultara/features/records/data/models/record_prefill.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
@@ -81,6 +82,7 @@ Future<void> showRecordEditorSheet({
   VoidCallback? onExistingUpdated,
   RecordPrefill? prefill,
   String? sharedFilePath,
+  TrackedItem? editedRecord,
   required Future<void> Function(RecordInput) onSave,
 }) {
   final bool isAnyTutorialMode = isTutorialMode || isReminderTutorialMode;
@@ -110,6 +112,7 @@ Future<void> showRecordEditorSheet({
         onExistingUpdated: onExistingUpdated,
         prefill: prefill,
         sharedFilePath: sharedFilePath,
+        editedRecord: editedRecord,
         onSave: onSave,
       );
     },
@@ -133,6 +136,7 @@ class _RecordEditorSheet extends StatefulWidget {
   final VoidCallback? onExistingUpdated;
   final RecordPrefill? prefill;
   final String? sharedFilePath;
+  final TrackedItem? editedRecord;
   final Future<void> Function(RecordInput) onSave;
 
   const _RecordEditorSheet({
@@ -152,6 +156,7 @@ class _RecordEditorSheet extends StatefulWidget {
     this.onExistingUpdated,
     this.prefill,
     this.sharedFilePath,
+    this.editedRecord,
     required this.onSave,
   });
 
@@ -1801,6 +1806,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                             ),
                           ),
                         ),
+                        if (widget.editedRecord != null)
+                          RecordHistoryLines(record: widget.editedRecord!),
                       ],
                     ),
                   ),

@@ -7986,6 +7986,40 @@ class AppLocalizationsEt extends AppLocalizations {
   String get iconThemeOther => 'Muu';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Lisas $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Lisas $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Viimati muutis $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Lisasid sina, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Lisasid sina';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Viimati muutsid sina, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'leibkonna liige';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Seda kirjet saab kustutada ainult selle lisaja või leibkonna omanik.';
+
+  @override
   String get renameCategoryTitle => 'Nimeta kategooria ümber';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get notifHouseholdTitle => 'Jagatud kirjed';
 
   @override
-  String get notifHouseholdSubtitle => 'Kui jagatud kirje on aegumas ja keegi pole seda uuendanud';
+  String get notifHouseholdSubtitle => 'Kui jagatud kirje lisatakse, saab uue aegumiskuupäeva või kustutatakse, või aegub peagi ja keegi pole seda uuendanud';
 
   @override
   String get notifUpdatesTitle => 'Sinu küsitud uuendused';

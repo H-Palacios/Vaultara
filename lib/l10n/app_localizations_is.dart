@@ -7981,6 +7981,40 @@ class AppLocalizationsIs extends AppLocalizations {
   String get iconThemeOther => 'Annað';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Bætt við af $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Bætt við af $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Síðast breytt af $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Þú bættir við, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Þú bættir við';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Síðast breytt af þér, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'heimilismaður';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Aðeins sá sem bætti þessari færslu við, eða eigandi heimilisins, getur eytt henni.';
+
+  @override
   String get renameCategoryTitle => 'Endurnefna flokk';
 
   @override
@@ -8410,7 +8444,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get notifHouseholdTitle => 'Sameiginlegar færslur';
 
   @override
-  String get notifHouseholdSubtitle => 'Þegar sameiginleg færsla er að renna út og enginn hefur endurnýjað hana';
+  String get notifHouseholdSubtitle => 'Þegar sameiginlegri færslu er bætt við, hún fær nýja gildislokadagsetningu eða er eytt, eða hún rennur brátt út og enginn hefur endurnýjað hana';
 
   @override
   String get notifUpdatesTitle => 'Uppfærslur sem þú baðst um';

@@ -7924,6 +7924,40 @@ class AppLocalizationsZh extends AppLocalizations {
   String get iconThemeOther => '其他';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '由 $name 添加，$date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '由 $name 添加';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return '最后由 $name 修改，$date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return '由你添加，$date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => '由你添加';
+
+  @override
+  String recordChangedByYou(String date) {
+    return '最后由你修改，$date';
+  }
+
+  @override
+  String get recordUnknownMember => '一位家庭成员';
+
+  @override
+  String get recordDeleteOnlyCreator => '只有添加此记录的人或家庭所有者可以删除它。';
+
+  @override
   String get renameCategoryTitle => '重命名类别';
 
   @override
@@ -8352,7 +8386,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get notifHouseholdTitle => '共享记录';
 
   @override
-  String get notifHouseholdSubtitle => '共享记录即将到期且无人续期时';
+  String get notifHouseholdSubtitle => '当共享记录被添加、到期日被更改或被删除，或即将到期但无人续期时';
 
   @override
   String get notifUpdatesTitle => '你请求的更新';
@@ -16719,6 +16753,40 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get iconThemeOther => '其他';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '由 $name 添加，$date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '由 $name 添加';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return '最后由 $name 修改，$date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return '由你添加，$date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => '由你添加';
+
+  @override
+  String recordChangedByYou(String date) {
+    return '最后由你修改，$date';
+  }
+
+  @override
+  String get recordUnknownMember => '一位家庭成员';
+
+  @override
+  String get recordDeleteOnlyCreator => '只有添加此记录的人或家庭所有者可以删除它。';
+
+  @override
   String get renameCategoryTitle => '重命名类别';
 
   @override
@@ -17147,7 +17215,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get notifHouseholdTitle => '共享记录';
 
   @override
-  String get notifHouseholdSubtitle => '共享记录即将到期且无人续期时';
+  String get notifHouseholdSubtitle => '当共享记录被添加、到期日被更改或被删除，或即将到期但无人续期时';
 
   @override
   String get notifUpdatesTitle => '你请求的更新';
@@ -25514,6 +25582,40 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get iconThemeOther => '其他';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '由 $name 新增，$date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '由 $name 新增';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return '最後由 $name 修改，$date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return '由你新增，$date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => '由你新增';
+
+  @override
+  String recordChangedByYou(String date) {
+    return '最後由你修改，$date';
+  }
+
+  @override
+  String get recordUnknownMember => '一位家庭成員';
+
+  @override
+  String get recordDeleteOnlyCreator => '只有新增此記錄的人或家庭擁有者可以刪除它。';
+
+  @override
   String get renameCategoryTitle => '重新命名類別';
 
   @override
@@ -25942,7 +26044,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get notifHouseholdTitle => '已分享的記錄';
 
   @override
-  String get notifHouseholdSubtitle => '已分享的記錄即將到期且無人續期時';
+  String get notifHouseholdSubtitle => '當共享記錄被新增、到期日被更改或被刪除，或即將到期但無人續期時';
 
   @override
   String get notifUpdatesTitle => '你要求的更新';

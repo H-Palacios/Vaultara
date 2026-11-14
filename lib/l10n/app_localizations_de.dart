@@ -7986,6 +7986,40 @@ class AppLocalizationsDe extends AppLocalizations {
   String get iconThemeOther => 'Sonstiges';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Hinzugefügt von $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Hinzugefügt von $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Zuletzt geändert von $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Von dir hinzugefügt, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Von dir hinzugefügt';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Zuletzt von dir geändert, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ein Haushaltsmitglied';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Nur die Person, die diesen Eintrag hinzugefügt hat, oder der Haushaltsinhaber kann ihn löschen.';
+
+  @override
   String get renameCategoryTitle => 'Kategorie umbenennen';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get notifHouseholdTitle => 'Geteilte Einträge';
 
   @override
-  String get notifHouseholdSubtitle => 'Wenn ein geteilter Eintrag bald abläuft und ihn niemand verlängert hat';
+  String get notifHouseholdSubtitle => 'Wenn ein geteilter Eintrag hinzugefügt wird, ein neues Ablaufdatum bekommt oder gelöscht wird, oder bald abläuft und ihn niemand verlängert hat';
 
   @override
   String get notifUpdatesTitle => 'Angeforderte Updates';

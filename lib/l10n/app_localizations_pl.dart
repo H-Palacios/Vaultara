@@ -8140,6 +8140,40 @@ class AppLocalizationsPl extends AppLocalizations {
   String get iconThemeOther => 'Inne';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Dodane przez: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Dodane przez: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Ostatnia zmiana: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Dodane przez ciebie, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Dodane przez ciebie';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Ostatnia zmiana: ty, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'członek gospodarstwa';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Usunąć ten rekord może tylko osoba, która go dodała, lub właściciel gospodarstwa.';
+
+  @override
   String get renameCategoryTitle => 'Zmień nazwę kategorii';
 
   @override
@@ -8579,7 +8613,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get notifHouseholdTitle => 'Udostępnione rekordy';
 
   @override
-  String get notifHouseholdSubtitle => 'Gdy udostępniony rekord zaraz wygaśnie, a nikt go nie odnowił';
+  String get notifHouseholdSubtitle => 'Gdy udostępniony rekord zostanie dodany, dostanie nową datę ważności lub zostanie usunięty, albo wkrótce wygasa i nikt go nie odnowił';
 
   @override
   String get notifUpdatesTitle => 'Aktualizacje, o które prosisz';

@@ -7982,6 +7982,40 @@ class AppLocalizationsSw extends AppLocalizations {
   String get iconThemeOther => 'Nyingine';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Imeongezwa na $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Imeongezwa na $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Ilibadilishwa mwisho na $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Imeongezwa na wewe, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Imeongezwa na wewe';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Ilibadilishwa mwisho na wewe, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'mwanakaya';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Ni aliyeongeza rekodi hii pekee, au mmiliki wa kaya, anayeweza kuifuta.';
+
+  @override
   String get renameCategoryTitle => 'Badilisha jina la kategoria';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get notifHouseholdTitle => 'Rekodi zilizoshirikiwa';
 
   @override
-  String get notifHouseholdSubtitle => 'Rekodi iliyoshirikiwa inapokaribia kuisha muda na hakuna aliyeihuisha';
+  String get notifHouseholdSubtitle => 'Rekodi inayoshirikiwa inapoongezwa, inapopata tarehe mpya ya kuisha au kufutwa, au inapokaribia kuisha na hakuna aliyeisasisha';
 
   @override
   String get notifUpdatesTitle => 'Masasisho uliyoomba';

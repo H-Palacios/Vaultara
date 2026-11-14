@@ -8118,6 +8118,40 @@ class AppLocalizationsSk extends AppLocalizations {
   String get iconThemeOther => 'Ostatné';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Pridal(a) $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Pridal(a) $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Naposledy zmenil(a) $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Pridali ste vy, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Pridali ste vy';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Naposledy ste zmenili vy, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'člen domácnosti';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Odstrániť tento záznam môže len ten, kto ho pridal, alebo vlastník domácnosti.';
+
+  @override
   String get renameCategoryTitle => 'Premenovať kategóriu';
 
   @override
@@ -8557,7 +8591,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get notifHouseholdTitle => 'Zdieľané záznamy';
 
   @override
-  String get notifHouseholdSubtitle => 'Keď zdieľaný záznam čoskoro vyprší a nikto ho neobnovil';
+  String get notifHouseholdSubtitle => 'Keď sa zdieľaný záznam pridá, dostane nový dátum platnosti alebo sa odstráni, alebo čoskoro vyprší a nikto ho neobnovil';
 
   @override
   String get notifUpdatesTitle => 'Aktualizácie, o ktoré ste požiadali';

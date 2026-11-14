@@ -7982,6 +7982,40 @@ class AppLocalizationsKk extends AppLocalizations {
   String get iconThemeOther => 'Басқа';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Қосқан: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Қосқан: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Соңғы өзгерткен: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Сіз қостыңыз, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Сіз қостыңыз';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Соңғы рет сіз өзгерттіңіз, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'отбасы мүшесі';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Бұл жазбаны оны қосқан адам немесе отбасы иесі ғана жоя алады.';
+
+  @override
   String get renameCategoryTitle => 'Санат атауын өзгерту';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get notifHouseholdTitle => 'Бөлісілген жазбалар';
 
   @override
-  String get notifHouseholdSubtitle => 'Бөлісілген жазбаның мерзімі бітуге жақын және оны ешкім жаңартпаса';
+  String get notifHouseholdSubtitle => 'Ортақ жазба қосылғанда, жаңа мерзім алғанда немесе жойылғанда, не мерзімі жақында бітіп, оны ешкім жаңартпағанда';
 
   @override
   String get notifUpdatesTitle => 'Сіз сұраған жаңартулар';

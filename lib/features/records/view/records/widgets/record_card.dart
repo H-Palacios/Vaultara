@@ -12,6 +12,7 @@ import 'package:vaultara/features/guides/data/renewal_guides.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/vault/view/record_photos_button.dart';
 import 'package:vaultara/features/household/view/shared_badge.dart';
+import 'package:vaultara/features/household/data/household_repository.dart';
 
 enum _RecordMenuAction {
   edit,
@@ -269,12 +270,13 @@ class RecordCard extends StatelessWidget {
                               loc.exportCalendarTitle,
                               scheme.onSurfaceVariant,
                             ),
-                          _menuItem(
-                            _RecordMenuAction.delete,
-                            Icons.delete_outline_rounded,
-                            loc.delete,
-                            scheme.error,
-                          ),
+                          if (HouseholdRepository.canDelete(record))
+                            _menuItem(
+                              _RecordMenuAction.delete,
+                              Icons.delete_outline_rounded,
+                              loc.delete,
+                              scheme.error,
+                            ),
                         ],
                       ),
                     ],

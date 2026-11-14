@@ -259,7 +259,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
   }
 
   Future<void> _deleteRecord(TrackedItem record) async {
-    if (!HouseholdAccess.canEdit(context, record)) return;
+    if (!HouseholdAccess.canDelete(context, record)) return;
     final confirmed = await ConfirmSoftDeleteDialog.show(
       context,
       type: SoftDeleteTarget.item,
@@ -327,8 +327,17 @@ class _RecordsScreenState extends State<RecordsScreen> {
 
   Future<void> _deleteSelected(List<TrackedItem> shown) async {
     final loc = AppLocalizations.of(context)!;
-    final records = await _editableSelection(shown);
-    if (records == null || records.isEmpty || !mounted) return;
+    final editable = await _editableSelection(shown);
+    if (editable == null || !mounted) return;
+    final records = editable.where(RecordRepository.canDelete).toList();
+    if (records.length < editable.length) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.recordDeleteOnlyCreator,
+        icon: Icons.lock_outline_rounded,
+      );
+    }
+    if (records.isEmpty) return;
 
     final confirmed = await showDialog<bool>(
       context: context,

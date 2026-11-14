@@ -18,14 +18,14 @@ class DeletedRow extends StatelessWidget {
   final int? daysLeft;
 
   final Future<void> Function() onRestore;
-  final Future<void> Function() onDeleteForever;
+  final Future<void> Function()? onDeleteForever;
 
   const DeletedRow({
     super.key,
     required this.label,
     required this.target,
     required this.onRestore,
-    required this.onDeleteForever,
+    this.onDeleteForever,
     this.subtitle,
     this.daysLeft,
   });
@@ -44,7 +44,7 @@ class DeletedRow extends StatelessWidget {
     );
     if (!confirmed) return;
 
-    await onDeleteForever();
+    await onDeleteForever?.call();
     if (!context.mounted) return;
     ActionFeedbackSnackbar.showPermanentlyDeleted(context, label);
   }
@@ -94,11 +94,12 @@ class DeletedRow extends StatelessWidget {
               icon: Icon(Icons.restore_rounded, color: scheme.primary),
               onPressed: () => _restore(context),
             ),
-            IconButton(
-              tooltip: loc.deletePermanently,
-              icon: Icon(Icons.delete_forever_rounded, color: scheme.error),
-              onPressed: () => _deleteForever(context),
-            ),
+            if (onDeleteForever != null)
+              IconButton(
+                tooltip: loc.deletePermanently,
+                icon: Icon(Icons.delete_forever_rounded, color: scheme.error),
+                onPressed: () => _deleteForever(context),
+              ),
           ],
         ),
       ),

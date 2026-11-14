@@ -7982,6 +7982,40 @@ class AppLocalizationsKa extends AppLocalizations {
   String get iconThemeOther => 'სხვა';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'დაამატა $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'დაამატა $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'ბოლოს შეცვალა $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'თქვენ დაამატეთ, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'თქვენ დაამატეთ';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'ბოლოს თქვენ შეცვალეთ, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ოჯახის წევრი';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ამ ჩანაწერის წაშლა შეუძლია მხოლოდ მის დამმატებელს ან ოჯახის მფლობელს.';
+
+  @override
   String get renameCategoryTitle => 'კატეგორიის გადარქმევა';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get notifHouseholdTitle => 'გაზიარებული ჩანაწერები';
 
   @override
-  String get notifHouseholdSubtitle => 'როცა გაზიარებული ჩანაწერის ვადა იწურება და არავის განუახლებია';
+  String get notifHouseholdSubtitle => 'როცა საერთო ჩანაწერი ემატება, ახალ ვადას იღებს ან იშლება, ან მალე იწურება და არავის განუახლებია';
 
   @override
   String get notifUpdatesTitle => 'თქვენ მიერ მოთხოვნილი განახლებები';

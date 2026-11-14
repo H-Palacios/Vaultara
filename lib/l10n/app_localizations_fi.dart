@@ -7986,6 +7986,40 @@ class AppLocalizationsFi extends AppLocalizations {
   String get iconThemeOther => 'Muut';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Lisääjä: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Lisääjä: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Viimeksi muuttanut: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Sinä lisäsit, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Sinä lisäsit';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Viimeksi muutit sinä, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'kotitalouden jäsen';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Vain tämän tietueen lisännyt henkilö tai kotitalouden omistaja voi poistaa sen.';
+
+  @override
   String get renameCategoryTitle => 'Nimeä luokka uudelleen';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get notifHouseholdTitle => 'Jaetut tietueet';
 
   @override
-  String get notifHouseholdSubtitle => 'Kun jaettu tietue on vanhenemassa eikä kukaan ole uusinut sitä';
+  String get notifHouseholdSubtitle => 'Kun jaettu tietue lisätään, saa uuden vanhenemispäivän tai poistetaan, tai vanhenee pian eikä kukaan ole uusinut sitä';
 
   @override
   String get notifUpdatesTitle => 'Pyytämäsi päivitykset';

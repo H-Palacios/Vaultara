@@ -7982,6 +7982,40 @@ class AppLocalizationsAz extends AppLocalizations {
   String get iconThemeOther => 'Digər';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Əlavə edən: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Əlavə edən: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Son dəyişən: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Siz əlavə etdiniz, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Siz əlavə etdiniz';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Son dəfə siz dəyişdiniz, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ailə üzvü';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Bu qeydi yalnız onu əlavə edən şəxs və ya ailənin sahibi silə bilər.';
+
+  @override
   String get renameCategoryTitle => 'Kateqoriyanın adını dəyiş';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get notifHouseholdTitle => 'Paylaşılan sənədlər';
 
   @override
-  String get notifHouseholdSubtitle => 'Paylaşılan sənədin müddəti bitmək üzrə olanda və heç kim onu yeniləməyəndə';
+  String get notifHouseholdSubtitle => 'Paylaşılan qeyd əlavə ediləndə, yeni bitmə tarixi alanda və ya silinəndə, ya da tezliklə bitəndə və heç kim yeniləməyəndə';
 
   @override
   String get notifUpdatesTitle => 'İstədiyiniz yeniləmələr';

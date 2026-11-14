@@ -7924,6 +7924,40 @@ class AppLocalizationsLo extends AppLocalizations {
   String get iconThemeOther => 'ອື່ນໆ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'ເພີ່ມໂດຍ $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'ເພີ່ມໂດຍ $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'ປ່ຽນລ່າສຸດໂດຍ $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'ທ່ານເພີ່ມ, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'ທ່ານເພີ່ມ';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'ທ່ານປ່ຽນລ່າສຸດ, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ສະມາຊິກຄອບຄົວ';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ມີແຕ່ຜູ້ທີ່ເພີ່ມບັນທຶກນີ້ ຫຼື ເຈົ້າຂອງຄອບຄົວເທົ່ານັ້ນທີ່ລຶບໄດ້.';
+
+  @override
   String get renameCategoryTitle => 'ປ່ຽນຊື່ໝວດ';
 
   @override
@@ -8352,7 +8386,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get notifHouseholdTitle => 'ບັນທຶກທີ່ແບ່ງປັນ';
 
   @override
-  String get notifHouseholdSubtitle => 'ເມື່ອບັນທຶກທີ່ແບ່ງປັນໃກ້ໝົດອາຍຸ ແລະ ບໍ່ມີໃຜຕໍ່ອາຍຸ';
+  String get notifHouseholdSubtitle => 'ເມື່ອບັນທຶກທີ່ແບ່ງປັນຖືກເພີ່ມ, ໄດ້ວັນໝົດອາຍຸໃໝ່ ຫຼື ຖືກລຶບ, ຫຼື ໃກ້ໝົດອາຍຸແລະບໍ່ມີໃຜຕໍ່ອາຍຸ';
 
   @override
   String get notifUpdatesTitle => 'ການອັບເດດທີ່ທ່ານຂໍ';

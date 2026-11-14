@@ -7924,6 +7924,40 @@ class AppLocalizationsVi extends AppLocalizations {
   String get iconThemeOther => 'Khác';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Do $name thêm, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Do $name thêm';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Thay đổi gần nhất bởi $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Do bạn thêm, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Do bạn thêm';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Bạn thay đổi gần nhất, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'một thành viên gia đình';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Chỉ người đã thêm bản ghi này, hoặc chủ gia đình, mới có thể xóa nó.';
+
+  @override
   String get renameCategoryTitle => 'Đổi tên danh mục';
 
   @override
@@ -8352,7 +8386,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get notifHouseholdTitle => 'Bản ghi chia sẻ';
 
   @override
-  String get notifHouseholdSubtitle => 'Khi một bản ghi chia sẻ sắp hết hạn và chưa ai gia hạn';
+  String get notifHouseholdSubtitle => 'Khi một bản ghi chia sẻ được thêm, có ngày hết hạn mới hoặc bị xóa, hoặc sắp hết hạn mà chưa ai gia hạn';
 
   @override
   String get notifUpdatesTitle => 'Cập nhật bạn đã yêu cầu';

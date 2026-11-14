@@ -7987,6 +7987,40 @@ class AppLocalizationsPt extends AppLocalizations {
   String get iconThemeOther => 'Outros';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Adicionado por $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Adicionado por $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Última alteração por $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Adicionado por você, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Adicionado por você';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Última alteração por você, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'um membro da família';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Só quem adicionou este registro, ou o dono da família, pode excluí-lo.';
+
+  @override
   String get renameCategoryTitle => 'Renomear categoria';
 
   @override
@@ -8416,7 +8450,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notifHouseholdTitle => 'Registos partilhados';
 
   @override
-  String get notifHouseholdSubtitle => 'Quando um registo partilhado está quase a expirar e ninguém o renovou';
+  String get notifHouseholdSubtitle => 'Quando um registro compartilhado é adicionado, recebe uma nova data de vencimento ou é excluído, ou vence em breve e ninguém o renovou';
 
   @override
   String get notifUpdatesTitle => 'Atualizações que pediu';

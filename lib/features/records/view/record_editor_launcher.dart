@@ -26,6 +26,7 @@ Future<void> openRecordEditor({
     context: context,
     mode: RecordEditorMode.scoped,
     isPremium: isPremium,
+    editedRecord: record,
     initialInput: RecordInput(
       name: record.name,
       expiryDate: proposedExpiry != null

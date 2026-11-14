@@ -7981,6 +7981,40 @@ class AppLocalizationsSo extends AppLocalizations {
   String get iconThemeOther => 'Kale';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Waxaa ku daray $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Waxaa ku daray $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Waxaa ugu dambeyn beddelay $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Adiga ayaa ku daray, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Adiga ayaa ku daray';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Adiga ayaa ugu dambeyn beddelay, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'xubin qoyska ka mid ah';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Kaliya qofka ku daray diiwaankan, ama milkiilaha qoyska, ayaa tirtiri kara.';
+
+  @override
   String get renameCategoryTitle => 'Magaca qaybta beddel';
 
   @override
@@ -8410,7 +8444,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get notifHouseholdTitle => 'Diiwaannada la wadaagay';
 
   @override
-  String get notifHouseholdSubtitle => 'Marka diiwaan la wadaagay uu ku dhow yahay inuu dhaco oo aan cidna cusboonaysiin';
+  String get notifHouseholdSubtitle => 'Marka diiwaan la wadaago lagu daro, uu helo taariikh dhicitaan cusub ama la tirtiro, ama uu dhowaan dhacayo oo aan cidna cusboonaysiin';
 
   @override
   String get notifUpdatesTitle => 'Cusboonaysiinta aad codsatay';

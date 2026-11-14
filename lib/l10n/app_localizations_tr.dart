@@ -7982,6 +7982,40 @@ class AppLocalizationsTr extends AppLocalizations {
   String get iconThemeOther => 'Diğer';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Ekleyen: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Ekleyen: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Son değiştiren: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Siz eklediniz, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Siz eklediniz';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Son olarak siz değiştirdiniz, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'bir hane üyesi';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Bu kaydı yalnızca ekleyen kişi veya hane sahibi silebilir.';
+
+  @override
   String get renameCategoryTitle => 'Kategoriyi yeniden adlandır';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get notifHouseholdTitle => 'Paylaşılan kayıtlar';
 
   @override
-  String get notifHouseholdSubtitle => 'Paylaşılan bir kaydın süresi dolmak üzereyken ve kimse yenilemediğinde';
+  String get notifHouseholdSubtitle => 'Paylaşılan bir kayıt eklendiğinde, yeni bir son kullanma tarihi aldığında veya silindiğinde ya da yakında sona erip kimse yenilemediğinde';
 
   @override
   String get notifUpdatesTitle => 'İstediğiniz güncellemeler';

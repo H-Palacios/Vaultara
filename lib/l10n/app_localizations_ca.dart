@@ -7986,6 +7986,40 @@ class AppLocalizationsCa extends AppLocalizations {
   String get iconThemeOther => 'Altres';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Afegit per $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Afegit per $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Últim canvi de $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Afegit per tu, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Afegit per tu';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Últim canvi teu, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'un membre de la llar';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Només la persona que ha afegit aquest registre, o el propietari de la llar, el pot eliminar.';
+
+  @override
   String get renameCategoryTitle => 'Canvia el nom de la categoria';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get notifHouseholdTitle => 'Registres compartits';
 
   @override
-  String get notifHouseholdSubtitle => 'Quan un registre compartit està a punt de vèncer i ningú no l\'ha renovat';
+  String get notifHouseholdSubtitle => 'Quan un registre compartit s’afegeix, té una nova data de venciment o s’elimina, o venç aviat i ningú no l’ha renovat';
 
   @override
   String get notifUpdatesTitle => 'Actualitzacions que has demanat';

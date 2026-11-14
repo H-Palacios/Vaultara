@@ -7912,6 +7912,40 @@ class AppLocalizationsTh extends AppLocalizations {
   String get iconThemeOther => 'อื่นๆ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'เพิ่มโดย $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'เพิ่มโดย $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'เปลี่ยนล่าสุดโดย $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'คุณเพิ่ม, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'คุณเพิ่ม';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'คุณเปลี่ยนล่าสุด, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'สมาชิกในบ้าน';
+
+  @override
+  String get recordDeleteOnlyCreator => 'มีเพียงผู้ที่เพิ่มรายการนี้หรือเจ้าของบ้านเท่านั้นที่ลบได้';
+
+  @override
   String get renameCategoryTitle => 'เปลี่ยนชื่อหมวดหมู่';
 
   @override
@@ -8340,7 +8374,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get notifHouseholdTitle => 'รายการที่แชร์';
 
   @override
-  String get notifHouseholdSubtitle => 'เมื่อรายการที่แชร์ใกล้หมดอายุและยังไม่มีใครต่ออายุ';
+  String get notifHouseholdSubtitle => 'เมื่อมีการเพิ่มรายการที่แชร์ ได้วันหมดอายุใหม่ หรือถูกลบ หรือใกล้หมดอายุและยังไม่มีใครต่ออายุ';
 
   @override
   String get notifUpdatesTitle => 'การอัปเดตที่คุณขอ';

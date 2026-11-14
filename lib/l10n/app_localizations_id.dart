@@ -7919,6 +7919,40 @@ class AppLocalizationsId extends AppLocalizations {
   String get iconThemeOther => 'Lainnya';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Ditambahkan oleh $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Ditambahkan oleh $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Terakhir diubah oleh $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Ditambahkan oleh Anda, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Ditambahkan oleh Anda';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Terakhir diubah oleh Anda, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'anggota rumah tangga';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Hanya orang yang menambahkan catatan ini, atau pemilik rumah tangga, yang dapat menghapusnya.';
+
+  @override
   String get renameCategoryTitle => 'Ganti nama kategori';
 
   @override
@@ -8347,7 +8381,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get notifHouseholdTitle => 'Catatan bersama';
 
   @override
-  String get notifHouseholdSubtitle => 'Saat catatan bersama hampir kedaluwarsa dan belum ada yang memperpanjangnya';
+  String get notifHouseholdSubtitle => 'Saat catatan bersama ditambahkan, mendapat tanggal kedaluwarsa baru atau dihapus, atau segera kedaluwarsa dan belum ada yang memperpanjangnya';
 
   @override
   String get notifUpdatesTitle => 'Pembaruan yang Anda minta';

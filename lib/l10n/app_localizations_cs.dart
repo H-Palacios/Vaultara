@@ -8120,6 +8120,40 @@ class AppLocalizationsCs extends AppLocalizations {
   String get iconThemeOther => 'Ostatní';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Přidal(a) $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Přidal(a) $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Naposledy změnil(a) $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Přidali jste vy, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Přidali jste vy';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Naposledy jste změnili vy, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'člen domácnosti';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Smazat tento záznam může jen ten, kdo ho přidal, nebo vlastník domácnosti.';
+
+  @override
   String get renameCategoryTitle => 'Přejmenovat kategorii';
 
   @override
@@ -8559,7 +8593,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get notifHouseholdTitle => 'Sdílené záznamy';
 
   @override
-  String get notifHouseholdSubtitle => 'Když sdílený záznam brzy vyprší a nikdo ho neobnovil';
+  String get notifHouseholdSubtitle => 'Když je sdílený záznam přidán, dostane nové datum platnosti nebo je smazán, nebo brzy vyprší a nikdo ho neobnovil';
 
   @override
   String get notifUpdatesTitle => 'Aktualizace, o které jste požádali';

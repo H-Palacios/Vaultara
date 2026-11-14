@@ -103,7 +103,7 @@ class _HouseholdRecordsScreenState extends State<HouseholdRecordsScreen> {
   }
 
   Future<void> _delete(TrackedItem record) async {
-    if (!HouseholdAccess.canEdit(context, record)) return;
+    if (!HouseholdAccess.canDelete(context, record)) return;
     final confirmed = await ConfirmSoftDeleteDialog.show(
       context,
       type: SoftDeleteTarget.item,

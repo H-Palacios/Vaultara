@@ -7986,6 +7986,40 @@ class AppLocalizationsGl extends AppLocalizations {
   String get iconThemeOther => 'Outras';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Engadido por $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Engadido por $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Último cambio de $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Engadido por ti, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Engadido por ti';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Último cambio teu, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'un membro do fogar';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Só quen engadiu este rexistro, ou o propietario do fogar, pode eliminalo.';
+
+  @override
   String get renameCategoryTitle => 'Cambiar o nome da categoría';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get notifHouseholdTitle => 'Rexistros compartidos';
 
   @override
-  String get notifHouseholdSubtitle => 'Cando un rexistro compartido está a piques de caducar e ninguén o renovou';
+  String get notifHouseholdSubtitle => 'Cando un rexistro compartido se engade, recibe unha nova data de caducidade ou se elimina, ou caduca pronto e ninguén o renovou';
 
   @override
   String get notifUpdatesTitle => 'Actualizacións que pediches';

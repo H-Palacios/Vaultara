@@ -752,6 +752,9 @@ class AssistantActionLauncher {
   ) async {
     final record = await _editableRecord(context, action.recordId);
     if (record == null || !context.mounted) return AssistantApplyResult.failed;
+    if (!HouseholdAccess.canDelete(context, record)) {
+      return AssistantApplyResult.failed;
+    }
     await RecordRepository.softDeleteRecord(record);
     slot.undo = () async {
       await RecordRepository.restoreRecord(record);

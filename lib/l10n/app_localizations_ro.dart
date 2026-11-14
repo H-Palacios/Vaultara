@@ -8061,6 +8061,40 @@ class AppLocalizationsRo extends AppLocalizations {
   String get iconThemeOther => 'Altele';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Adăugat de $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Adăugat de $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Ultima modificare de $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Adăugat de tine, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Adăugat de tine';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Ultima modificare făcută de tine, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'un membru al gospodăriei';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Doar persoana care a adăugat această înregistrare sau proprietarul gospodăriei o poate șterge.';
+
+  @override
   String get renameCategoryTitle => 'Redenumește categoria';
 
   @override
@@ -8491,7 +8525,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get notifHouseholdTitle => 'Înregistrări partajate';
 
   @override
-  String get notifHouseholdSubtitle => 'Când o înregistrare partajată e pe cale să expire și nimeni nu a reînnoit-o';
+  String get notifHouseholdSubtitle => 'Când o înregistrare comună este adăugată, primește o nouă dată de expirare sau este ștearsă, ori expiră curând și nimeni nu a reînnoit-o';
 
   @override
   String get notifUpdatesTitle => 'Actualizări cerute de tine';

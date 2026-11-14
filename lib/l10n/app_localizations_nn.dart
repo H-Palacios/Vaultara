@@ -7986,6 +7986,40 @@ class AppLocalizationsNn extends AppLocalizations {
   String get iconThemeOther => 'Anna';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Lagt til av $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Lagt til av $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Sist endra av $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Lagt til av deg, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Lagt til av deg';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Sist endra av deg, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'eit hushaldsmedlem';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Berre personen som la til denne oppføringa, eller eigaren av hushaldet, kan slette ho.';
+
+  @override
   String get renameCategoryTitle => 'Gi kategorien nytt namn';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get notifHouseholdTitle => 'Delte oppføringar';
 
   @override
-  String get notifHouseholdSubtitle => 'Når ei delt oppføring snart går ut og ingen har fornya ho';
+  String get notifHouseholdSubtitle => 'Når ei delt oppføring vert lagd til, får ny utløpsdato eller vert sletta, eller snart går ut og ingen har fornya ho';
 
   @override
   String get notifUpdatesTitle => 'Oppdateringar du bad om';

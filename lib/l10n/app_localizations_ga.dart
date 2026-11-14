@@ -8169,6 +8169,40 @@ class AppLocalizationsGa extends AppLocalizations {
   String get iconThemeOther => 'Eile';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Curtha leis ag $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Curtha leis ag $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Athraithe go deireanach ag $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Curtha leis agat, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Curtha leis agat';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Athraithe go deireanach agat, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ball den teaghlach';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Níl ach an duine a chuir an taifead seo leis, nó úinéir an teaghlaigh, in ann é a scriosadh.';
+
+  @override
   String get renameCategoryTitle => 'Athainmnigh an chatagóir';
 
   @override
@@ -8601,7 +8635,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get notifHouseholdTitle => 'Taifid roinnte';
 
   @override
-  String get notifHouseholdSubtitle => 'Nuair atá taifead roinnte ar tí dul in éag agus nár athnuaigh aon duine é';
+  String get notifHouseholdSubtitle => 'Nuair a chuirtear taifead comhroinnte leis, nuair a fhaigheann sé dáta éaga nua nó nuair a scriostar é, nó nuair a bheidh sé ag dul in éag go luath gan athnuachan';
 
   @override
   String get notifUpdatesTitle => 'Nuashonruithe a d\'iarr tú';

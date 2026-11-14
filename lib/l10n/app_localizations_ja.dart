@@ -7912,6 +7912,40 @@ class AppLocalizationsJa extends AppLocalizations {
   String get iconThemeOther => 'その他';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$nameが追加、$date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$nameが追加';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return '最終変更：$name、$date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'あなたが追加、$date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'あなたが追加';
+
+  @override
+  String recordChangedByYou(String date) {
+    return '最終変更：あなた、$date';
+  }
+
+  @override
+  String get recordUnknownMember => '世帯のメンバー';
+
+  @override
+  String get recordDeleteOnlyCreator => 'この記録を削除できるのは、追加した人か世帯のオーナーだけです。';
+
+  @override
   String get renameCategoryTitle => 'カテゴリ名を変更';
 
   @override
@@ -8340,7 +8374,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get notifHouseholdTitle => '共有された記録';
 
   @override
-  String get notifHouseholdSubtitle => '共有された記録の期限が近く、誰も更新していないとき';
+  String get notifHouseholdSubtitle => '共有の記録が追加されたとき、期限が変わったとき、削除されたとき、または期限が近いのに誰も更新していないとき';
 
   @override
   String get notifUpdatesTitle => '依頼したアップデート';

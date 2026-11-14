@@ -7982,6 +7982,40 @@ class AppLocalizationsFa extends AppLocalizations {
   String get iconThemeOther => 'سایر';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'افزوده‌شده توسط $name، $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'افزوده‌شده توسط $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'آخرین تغییر توسط $name، $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'افزوده‌شده توسط شما، $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'افزوده‌شده توسط شما';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'آخرین تغییر توسط شما، $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'یکی از اعضای خانواده';
+
+  @override
+  String get recordDeleteOnlyCreator => 'فقط کسی که این مورد را افزوده یا مالک خانواده می‌تواند آن را حذف کند.';
+
+  @override
   String get renameCategoryTitle => 'تغییر نام دسته';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get notifHouseholdTitle => 'رکوردهای مشترک';
 
   @override
-  String get notifHouseholdSubtitle => 'وقتی یک رکورد مشترک نزدیک انقضا است و کسی آن را تمدید نکرده';
+  String get notifHouseholdSubtitle => 'وقتی مورد مشترکی افزوده می‌شود، تاریخ انقضای جدید می‌گیرد یا حذف می‌شود، یا به‌زودی منقضی می‌شود و کسی آن را تمدید نکرده است';
 
   @override
   String get notifUpdatesTitle => 'به‌روزرسانی‌هایی که خواستید';

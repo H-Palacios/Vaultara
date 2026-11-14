@@ -7924,6 +7924,40 @@ class AppLocalizationsKo extends AppLocalizations {
   String get iconThemeOther => '기타';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name님이 추가, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name님이 추가';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return '마지막 변경: $name님, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return '내가 추가, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => '내가 추가';
+
+  @override
+  String recordChangedByYou(String date) {
+    return '마지막 변경: 나, $date';
+  }
+
+  @override
+  String get recordUnknownMember => '가구 구성원';
+
+  @override
+  String get recordDeleteOnlyCreator => '이 기록은 추가한 사람이나 가구 소유자만 삭제할 수 있습니다.';
+
+  @override
   String get renameCategoryTitle => '카테고리 이름 변경';
 
   @override
@@ -8352,7 +8386,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notifHouseholdTitle => '공유 기록';
 
   @override
-  String get notifHouseholdSubtitle => '공유 기록이 곧 만료되는데 아무도 갱신하지 않았을 때';
+  String get notifHouseholdSubtitle => '공유 기록이 추가되거나, 만료일이 바뀌거나, 삭제될 때, 또는 곧 만료되는데 아무도 갱신하지 않았을 때';
 
   @override
   String get notifUpdatesTitle => '요청한 업데이트';

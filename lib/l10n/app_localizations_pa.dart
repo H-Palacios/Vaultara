@@ -7982,6 +7982,40 @@ class AppLocalizationsPa extends AppLocalizations {
   String get iconThemeOther => 'ਹੋਰ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name ਨੇ ਜੋੜਿਆ, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name ਨੇ ਜੋੜਿਆ';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'ਆਖਰੀ ਬਦਲਾਅ $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'ਤੁਸੀਂ ਜੋੜਿਆ, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'ਤੁਸੀਂ ਜੋੜਿਆ';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'ਆਖਰੀ ਬਦਲਾਅ ਤੁਸੀਂ ਕੀਤਾ, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ਘਰ ਦਾ ਇੱਕ ਮੈਂਬਰ';
+
+  @override
+  String get recordDeleteOnlyCreator => 'ਇਹ ਰਿਕਾਰਡ ਸਿਰਫ਼ ਇਸਨੂੰ ਜੋੜਨ ਵਾਲਾ ਵਿਅਕਤੀ ਜਾਂ ਘਰ ਦਾ ਮਾਲਕ ਹੀ ਮਿਟਾ ਸਕਦਾ ਹੈ।';
+
+  @override
   String get renameCategoryTitle => 'ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਬਦਲੋ';
 
   @override
@@ -8411,7 +8445,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get notifHouseholdTitle => 'ਸਾਂਝੇ ਕੀਤੇ ਰਿਕਾਰਡ';
 
   @override
-  String get notifHouseholdSubtitle => 'ਜਦੋਂ ਕੋਈ ਸਾਂਝਾ ਰਿਕਾਰਡ ਖਤਮ ਹੋਣ ਵਾਲਾ ਹੋਵੇ ਅਤੇ ਕਿਸੇ ਨੇ ਨਵੀਨੀਕਰਨ ਨਾ ਕੀਤਾ ਹੋਵੇ';
+  String get notifHouseholdSubtitle => 'ਜਦੋਂ ਕੋਈ ਸਾਂਝਾ ਰਿਕਾਰਡ ਜੋੜਿਆ ਜਾਵੇ, ਨਵੀਂ ਮਿਆਦ ਪੁੱਗਣ ਦੀ ਤਾਰੀਖ ਮਿਲੇ ਜਾਂ ਮਿਟਾਇਆ ਜਾਵੇ, ਜਾਂ ਜਲਦੀ ਮਿਆਦ ਪੁੱਗ ਰਹੀ ਹੋਵੇ ਅਤੇ ਕਿਸੇ ਨੇ ਨਵਿਆਇਆ ਨਾ ਹੋਵੇ';
 
   @override
   String get notifUpdatesTitle => 'ਤੁਹਾਡੇ ਮੰਗੇ ਅੱਪਡੇਟ';

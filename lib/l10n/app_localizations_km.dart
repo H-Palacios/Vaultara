@@ -7922,6 +7922,40 @@ class AppLocalizationsKm extends AppLocalizations {
   String get iconThemeOther => 'ផ្សេងៗ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'បន្ថែមដោយ $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'បន្ថែមដោយ $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'កែចុងក្រោយដោយ $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'អ្នកបានបន្ថែម, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'អ្នកបានបន្ថែម';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'អ្នកបានកែចុងក្រោយ, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'សមាជិកគ្រួសារម្នាក់';
+
+  @override
+  String get recordDeleteOnlyCreator => 'មានតែអ្នកដែលបានបន្ថែមកំណត់ត្រានេះ ឬម្ចាស់គ្រួសារប៉ុណ្ណោះ ដែលអាចលុបវាបាន។';
+
+  @override
   String get renameCategoryTitle => 'ប្ដូរឈ្មោះប្រភេទ';
 
   @override
@@ -8350,7 +8384,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get notifHouseholdTitle => 'កំណត់ត្រាដែលបានចែករំលែក';
 
   @override
-  String get notifHouseholdSubtitle => 'នៅពេលកំណត់ត្រាដែលបានចែករំលែកជិតផុតកំណត់ ហើយគ្មាននរណាបានបន្ត';
+  String get notifHouseholdSubtitle => 'នៅពេលកំណត់ត្រាដែលបានចែករំលែកត្រូវបានបន្ថែម ទទួលបានកាលបរិច្ឆេទផុតកំណត់ថ្មី ឬត្រូវបានលុប ឬជិតផុតកំណត់ ហើយគ្មាននរណាបន្តវា';
 
   @override
   String get notifUpdatesTitle => 'បច្ចុប្បន្នភាពដែលអ្នកបានស្នើ';

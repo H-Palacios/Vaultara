@@ -8001,6 +8001,40 @@ class AppLocalizationsEn extends AppLocalizations {
   String get iconThemeOther => 'Other';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Added by $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Added by $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Last changed by $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Added by you, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Added by you';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Last changed by you, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'a household member';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Only the person who added this record, or the household owner, can delete it.';
+
+  @override
   String get renameCategoryTitle => 'Rename category';
 
   @override
@@ -8430,7 +8464,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifHouseholdTitle => 'Shared records';
 
   @override
-  String get notifHouseholdSubtitle => 'When a shared record is close to expiring and nobody has renewed it';
+  String get notifHouseholdSubtitle => 'When a shared record is added, gets a new expiry date or is deleted, or expires soon and nobody has renewed it';
 
   @override
   String get notifUpdatesTitle => 'Updates you asked for';

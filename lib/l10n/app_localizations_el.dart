@@ -7986,6 +7986,40 @@ class AppLocalizationsEl extends AppLocalizations {
   String get iconThemeOther => 'Άλλα';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Προστέθηκε από $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Προστέθηκε από $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Τελευταία αλλαγή από $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Προστέθηκε από εσάς, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Προστέθηκε από εσάς';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Τελευταία αλλαγή από εσάς, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'ένα μέλος του νοικοκυριού';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Μόνο όποιος πρόσθεσε αυτή την εγγραφή ή ο κάτοχος του νοικοκυριού μπορεί να τη διαγράψει.';
+
+  @override
   String get renameCategoryTitle => 'Μετονομασία κατηγορίας';
 
   @override
@@ -8415,7 +8449,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get notifHouseholdTitle => 'Κοινόχρηστες εγγραφές';
 
   @override
-  String get notifHouseholdSubtitle => 'Όταν μια κοινόχρηστη εγγραφή πλησιάζει στη λήξη και κανείς δεν την έχει ανανεώσει';
+  String get notifHouseholdSubtitle => 'Όταν μια κοινόχρηστη εγγραφή προστίθεται, παίρνει νέα ημερομηνία λήξης ή διαγράφεται, ή λήγει σύντομα και κανείς δεν την ανανέωσε';
 
   @override
   String get notifUpdatesTitle => 'Ενημερώσεις που ζητήσατε';

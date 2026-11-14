@@ -7930,6 +7930,40 @@ class AppLocalizationsIg extends AppLocalizations {
   String get iconThemeOther => 'Ndị ọzọ';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return '$name tinyere ya, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return '$name tinyere ya';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return '$name gbanwere ya n’ikpeazụ, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Ị tinyere ya, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Ị tinyere ya';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Ị gbanwere ya n’ikpeazụ, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'onye otu ezinụlọ';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Naanị onye tinyere ndekọ a, ma ọ bụ onye nwe ezinụlọ, nwere ike ihichapụ ya.';
+
+  @override
   String get renameCategoryTitle => 'Gbanwee aha ụdị';
 
   @override
@@ -8359,7 +8393,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get notifHouseholdTitle => 'Ndekọ ekesara';
 
   @override
-  String get notifHouseholdSubtitle => 'Mgbe ndekọ ekesara na-achọ ịgwụ ma ọ dịghị onye megharịrị ya';
+  String get notifHouseholdSubtitle => 'Mgbe a tinyere ndekọ a na-ekerịta, ọ nwetara ụbọchị njedebe ọhụrụ ma ọ bụ e hichapụrụ ya, ma ọ bụ ọ na-aga ịgwụ ma onweghị onye mere ya ọhụrụ';
 
   @override
   String get notifUpdatesTitle => 'Mmelite ị rịọrọ';

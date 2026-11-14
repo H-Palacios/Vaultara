@@ -8054,6 +8054,40 @@ class AppLocalizationsSr extends AppLocalizations {
   String get iconThemeOther => 'Остало';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Додао/ла: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Додао/ла: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Последња измена: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Ви сте додали, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Ви сте додали';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Последња измена: ви, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'члан домаћинства';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Само особа која је додала овај запис или власник домаћинства може да га избрише.';
+
+  @override
   String get renameCategoryTitle => 'Преименуј категорију';
 
   @override
@@ -8489,7 +8523,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get notifHouseholdTitle => 'Подељени записи';
 
   @override
-  String get notifHouseholdSubtitle => 'Када подељени запис ускоро истиче, а нико га није обновио';
+  String get notifHouseholdSubtitle => 'Када се заједнички запис дода, добије нови датум истека или се избрише, или ускоро истиче а нико га није обновио';
 
   @override
   String get notifUpdatesTitle => 'Ажурирања која сте тражили';
@@ -17007,6 +17041,40 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get iconThemeOther => 'Остало';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Додао/ла: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Додао/ла: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Последња измена: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Ви сте додали, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Ви сте додали';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Последња измена: ви, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'члан домаћинства';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Само особа која је додала овај запис или власник домаћинства може да га избрише.';
+
+  @override
   String get renameCategoryTitle => 'Преименуј категорију';
 
   @override
@@ -17442,7 +17510,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get notifHouseholdTitle => 'Подељени записи';
 
   @override
-  String get notifHouseholdSubtitle => 'Када подељени запис ускоро истиче, а нико га није обновио';
+  String get notifHouseholdSubtitle => 'Када се заједнички запис дода, добије нови датум истека или се избрише, или ускоро истиче а нико га није обновио';
 
   @override
   String get notifUpdatesTitle => 'Ажурирања која сте тражили';
@@ -25956,6 +26024,40 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get iconThemeOther => 'Ostalo';
 
   @override
+  String recordAddedBy(String name, String date) {
+    return 'Dodao/la: $name, $date';
+  }
+
+  @override
+  String recordAddedByNoDate(String name) {
+    return 'Dodao/la: $name';
+  }
+
+  @override
+  String recordChangedBy(String name, String date) {
+    return 'Poslednja izmena: $name, $date';
+  }
+
+  @override
+  String recordAddedByYou(String date) {
+    return 'Vi ste dodali, $date';
+  }
+
+  @override
+  String get recordAddedByYouNoDate => 'Vi ste dodali';
+
+  @override
+  String recordChangedByYou(String date) {
+    return 'Poslednja izmena: vi, $date';
+  }
+
+  @override
+  String get recordUnknownMember => 'član domaćinstva';
+
+  @override
+  String get recordDeleteOnlyCreator => 'Samo osoba koja je dodala ovaj zapis ili vlasnik domaćinstva može da ga izbriše.';
+
+  @override
   String get renameCategoryTitle => 'Preimenuj kategoriju';
 
   @override
@@ -26391,7 +26493,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get notifHouseholdTitle => 'Podeljeni zapisi';
 
   @override
-  String get notifHouseholdSubtitle => 'Kada podeljeni zapis uskoro ističe, a niko ga nije obnovio';
+  String get notifHouseholdSubtitle => 'Kada se zajednički zapis doda, dobije novi datum isteka ili se izbriše, ili uskoro ističe a niko ga nije obnovio';
 
   @override
   String get notifUpdatesTitle => 'Ažuriranja koja ste tražili';
