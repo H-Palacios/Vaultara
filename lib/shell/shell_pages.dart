@@ -14,6 +14,7 @@ List<Widget> buildShellPages(ShellState s) => [
         isPremium: s.isPremium,
         fabKey: s.fabKey,
         onUpgrade: () => s.update(() => s.isPremium = true),
+        onOpenCategories: () => s.onNavTap(1),
       ),
       CategoriesScreen(
         key: const ValueKey('categories-screen'),

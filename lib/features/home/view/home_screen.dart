@@ -28,12 +28,14 @@ class HomeScreen extends StatefulWidget {
   final bool isPremium;
   final GlobalKey? fabKey;
   final VoidCallback onUpgrade;
+  final VoidCallback? onOpenCategories;
   const HomeScreen({
     super.key,
     this.isNewUser = false,
     required this.isPremium,
     this.fabKey,
     required this.onUpgrade,
+    this.onOpenCategories,
   });
 
   @override
@@ -144,7 +146,7 @@ class HomeScreenState extends State<HomeScreen>
         child: ListView(
           controller: _scrollController,
           physics: const AlwaysScrollableScrollPhysics(),
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 120),
           children: [
             Row(
               children: [
@@ -199,7 +201,10 @@ class HomeScreenState extends State<HomeScreen>
               onChanged: () => HomeOverviewLoader.recompute(),
             ),
             const SizedBox(height: 16),
-            HomePinnedCategories(isPremium: widget.isPremium),
+            HomePinnedCategories(
+              isPremium: widget.isPremium,
+              onOpenCategories: widget.onOpenCategories,
+            ),
             const SizedBox(height: 16),
             TravelCheckCard(isPremium: widget.isPremium),
             const LifePlansHomeSection(),

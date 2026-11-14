@@ -5,8 +5,9 @@ import 'package:vaultara/core/data/models/category_item.dart';
 import 'package:vaultara/features/records/view/categories/widgets/category_look_sheet.dart';
 import 'package:vaultara/features/records/view/widgets/record_count_badges.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
-enum _CategoryAction { rename, look, delete }
+enum _CategoryAction { pin, rename, look, delete }
 
 class CategoryCard extends StatelessWidget {
   final CategoryItem category;
@@ -35,9 +36,8 @@ class CategoryCard extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
 
-    final action = await showModalBottomSheet<String>(
+    final action = await AppSheet.show<String>(
       context: context,
-      useSafeArea: true,
       showDragHandle: true,
       builder: (sheetContext) {
         Widget tile(String value, IconData icon, String label) {
@@ -61,7 +61,7 @@ class CategoryCard extends StatelessWidget {
               if (isCustom && onRename != null)
                 tile('rename', Icons.edit_rounded, loc.familyRename),
               if (isCustom && onChangeLook != null)
-                tile('look', Icons.palette_rounded, loc.changeIcon),
+                tile('look', Icons.category_rounded, loc.changeIcon),
               if (isCustom && onDelete != null)
                 tile('delete', Icons.delete_outline_rounded, loc.delete),
             ],
@@ -120,49 +120,71 @@ class CategoryCard extends StatelessWidget {
                     CategoryIconBadge(icon: icon, size: 34),
                     const Spacer(),
                     if (isPinned)
-                      IconButton(
-                        tooltip: loc.unpinCategory,
-                        visualDensity: VisualDensity.compact,
-                        icon: Icon(
+                      Tooltip(
+                        message: loc.pinnedToHome,
+                        child: Icon(
                           Icons.push_pin_rounded,
                           size: 18,
                           color: scheme.primary,
                         ),
-                        onPressed: onPinnedToggle,
                       ),
-                    if (isCustom)
-                      PopupMenuButton<_CategoryAction>(
-                        tooltip: loc.recordMenuMore,
-                        icon: Icon(
-                          Icons.more_vert_rounded,
-                          size: 18,
-                          color: scheme.onSurfaceVariant,
+                    PopupMenuButton<_CategoryAction>(
+                      tooltip: loc.recordMenuMore,
+                      icon: Icon(
+                        Icons.more_vert_rounded,
+                        size: 18,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                      onSelected: (action) {
+                        switch (action) {
+                          case _CategoryAction.pin:
+                            onPinnedToggle();
+                          case _CategoryAction.rename:
+                            onRename?.call();
+                          case _CategoryAction.look:
+                            onChangeLook?.call();
+                          case _CategoryAction.delete:
+                            onDelete?.call();
+                        }
+                      },
+                      itemBuilder: (_) => [
+                        PopupMenuItem(
+                          value: _CategoryAction.pin,
+                          child: _MenuRow(
+                            icon: isPinned
+                                ? Icons.push_pin_outlined
+                                : Icons.push_pin_rounded,
+                            label: isPinned
+                                ? loc.unpinCategory
+                                : loc.pinCategory,
+                          ),
                         ),
-                        onSelected: (action) {
-                          switch (action) {
-                            case _CategoryAction.rename:
-                              onRename?.call();
-                            case _CategoryAction.look:
-                              onChangeLook?.call();
-                            case _CategoryAction.delete:
-                              onDelete?.call();
-                          }
-                        },
-                        itemBuilder: (_) => [
+                        if (isCustom && onRename != null)
                           PopupMenuItem(
                             value: _CategoryAction.rename,
-                            child: Text(loc.familyRename),
+                            child: _MenuRow(
+                              icon: Icons.edit_rounded,
+                              label: loc.familyRename,
+                            ),
                           ),
+                        if (isCustom && onChangeLook != null)
                           PopupMenuItem(
                             value: _CategoryAction.look,
-                            child: Text(loc.changeIcon),
+                            child: _MenuRow(
+                              icon: Icons.category_rounded,
+                              label: loc.changeIcon,
+                            ),
                           ),
+                        if (isCustom && onDelete != null)
                           PopupMenuItem(
                             value: _CategoryAction.delete,
-                            child: Text(loc.delete),
+                            child: _MenuRow(
+                              icon: Icons.delete_outline_rounded,
+                              label: loc.delete,
+                            ),
                           ),
-                        ],
-                      ),
+                      ],
+                    ),
                   ],
                 ),
               ),
@@ -214,6 +236,28 @@ class CategoryCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class _MenuRow extends StatelessWidget {
+  final IconData icon;
+  final String label;
+
+  const _MenuRow({required this.icon, required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Icon(
+          icon,
+          size: 20,
+          color: Theme.of(context).colorScheme.onSurfaceVariant,
+        ),
+        const SizedBox(width: 12),
+        Flexible(child: Text(label)),
+      ],
     );
   }
 }
