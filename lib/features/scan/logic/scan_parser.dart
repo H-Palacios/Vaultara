@@ -3,7 +3,7 @@ import 'dart:math' as math;
 import 'package:vaultara/features/scan/logic/licence_disc_parser.dart';
 import 'package:vaultara/features/scan/logic/mrz_parser.dart';
 
-enum ScanDateSource { none, mrz, barcode, keyword, fallback }
+enum ScanDateSource { none, mrz, barcode, keyword, fallback, online }
 
 enum ScanDocumentKind { general, passport, idCard, licenceDisc, licenceCard }
 
@@ -26,6 +26,13 @@ class ScanParseResult {
   final String? vehicleColour;
   final String? matchedPersonName;
 
+  /// The check digits in the code lines agreed with what was read.
+  final bool mrzVerified;
+
+  /// Other future dates printed on the document, soonest first, so the person
+  /// can switch to one with a tap when the filled in date is the wrong one.
+  final List<DateTime> otherDates;
+
   const ScanParseResult({
     this.expiryDate,
     this.groupKey,
@@ -44,6 +51,8 @@ class ScanParseResult {
     this.vehicleModel,
     this.vehicleColour,
     this.matchedPersonName,
+    this.mrzVerified = false,
+    this.otherDates = const <DateTime>[],
   });
 
   static const ScanParseResult empty = ScanParseResult();
@@ -61,6 +70,16 @@ class ScanParseResult {
   bool get hasHolderName =>
       (holderSurname != null && holderSurname!.isNotEmpty) ||
       (holderGivenNames != null && holderGivenNames!.isNotEmpty);
+  /// The date was taken because it was the latest one on the page, not
+  /// because a word such as "Expiry" stood next to it.
+  bool get expiryGuessed => dateSource == ScanDateSource.fallback;
+
+  /// Read in a way that checks itself: code lines whose check digits match,
+  /// or a licence disc barcode. Nothing else needs to look at these.
+  bool get verified =>
+      (dateSource == ScanDateSource.mrz && mrzVerified) ||
+      dateSource == ScanDateSource.barcode;
+
   String? get vehicleSummary => LicenceDiscParser.summary(
         make: vehicleMake,
         model: vehicleModel,
@@ -77,6 +96,7 @@ class ScanParseResult {
     ScanDateSource? dateSource,
     ScanDocumentKind? kind,
     String? matchedPersonName,
+    List<DateTime>? otherDates,
   }) {
     return ScanParseResult(
       expiryDate: expiryDate ?? this.expiryDate,
@@ -96,6 +116,8 @@ class ScanParseResult {
       vehicleModel: vehicleModel,
       vehicleColour: vehicleColour,
       matchedPersonName: matchedPersonName ?? this.matchedPersonName,
+      mrzVerified: mrzVerified,
+      otherDates: otherDates ?? this.otherDates,
     );
   }
 
@@ -168,6 +190,20 @@ class ScanParser {
     'renewal date',
     'renew by',
     'end date',
+    'ends on',
+    'cover ends',
+    'cover end date',
+    'end of cover',
+    'covered until',
+    'cover until',
+    'insured until',
+    'policy ends',
+    'membership ends',
+    'subscription ends',
+    'paid until',
+    'paid up to',
+    'next renewal',
+    'renews on',
     'vervaldatum',
     'vervaldag',
     'verval',
@@ -460,6 +496,9 @@ class ScanParser {
       case ScanDateSource.fallback:
         confidence = 0.45;
         break;
+      case ScanDateSource.online:
+        confidence = 0.7;
+        break;
       case ScanDateSource.none:
         confidence = groupKey != null
             ? 0.25
@@ -490,7 +529,40 @@ class ScanParser {
       holderGivenNames: _nonEmpty(mrz?.givenNames),
       issuingCountry: mrz?.issuingCountry,
       nationality: mrz?.nationality,
+      mrzVerified: source == ScanDateSource.mrz && mrzChecked,
+      otherDates: source == ScanDateSource.mrz
+          ? const <DateTime>[]
+          : otherDatesIn(lower, today, monthFirst, chosen: expiry),
     );
+  }
+
+  /// Future dates on the page apart from [chosen], soonest first, at most
+  /// [limit].
+  static List<DateTime> otherDatesIn(
+    String lower,
+    DateTime today,
+    bool monthFirst, {
+    DateTime? chosen,
+    int limit = 4,
+  }) {
+    final DateTime maxDate = _maxDate(today);
+    final Set<DateTime> seen = <DateTime>{};
+    for (final _DateHit hit in _findDates(
+      lower,
+      today,
+      monthFirst,
+      allowShortYear: false,
+    )) {
+      final DateTime d = DateTime(hit.date.year, hit.date.month, hit.date.day);
+      if (d.isBefore(today) || d.isAfter(maxDate)) continue;
+      if (chosen != null &&
+          d == DateTime(chosen.year, chosen.month, chosen.day)) {
+        continue;
+      }
+      seen.add(d);
+    }
+    final List<DateTime> out = seen.toList()..sort();
+    return out.length > limit ? out.sublist(0, limit) : out;
   }
 
   static ScanParseResult fromLicenceDisc(LicenceDisc disc) {
