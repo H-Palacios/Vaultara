@@ -3,6 +3,9 @@ import 'package:vaultara/core/theme/record_status_colours.dart';
 import 'package:vaultara/core/view/widgets/status_dot_label.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
+/// What needs attention on a category or group card: every status that has
+/// records, most urgent first, so the card never hides one. There are only
+/// three, so at most three lines.
 class RecordCountBadges extends StatelessWidget {
   final int total;
   final int expired;
@@ -16,8 +19,6 @@ class RecordCountBadges extends StatelessWidget {
     required this.expiringSoon,
     required this.urgent,
   });
-
-  static const int _maxShown = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +80,7 @@ class RecordCountBadges extends StatelessWidget {
     return Wrap(
       spacing: 12,
       runSpacing: 4,
-      children: items.take(_maxShown).toList(),
+      children: items,
     );
   }
 }

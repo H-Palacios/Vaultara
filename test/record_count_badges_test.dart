@@ -18,7 +18,7 @@ List<String> _texts(WidgetTester tester) => tester
     .toList();
 
 void main() {
-  testWidgets('the two most urgent groups show, most urgent first', (
+  testWidgets('every status shows, most urgent first', (
     tester,
   ) async {
     await tester.pumpWidget(
@@ -31,7 +31,11 @@ void main() {
         ),
       ),
     );
-    expect(_texts(tester), ['2 expired', '1 expires within 7 days']);
+    expect(_texts(tester), [
+      '2 expired',
+      '1 expires within 7 days',
+      '3 expire within 30 days',
+    ]);
   });
 
   testWidgets('records within 7 days are not counted again in 30 days', (
