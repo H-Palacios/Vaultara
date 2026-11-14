@@ -19,7 +19,7 @@
       <a href="/terms/">Terms of Service</a>
     </nav>
     <h1 id="top">Privacy Policy</h1>
-    <p class="meta"><span>Version 2026-11-13</span><span>Last updated 13 November 2026</span></p>
+    <p class="meta"><span>Version 2026-11-14</span><span>Last updated 14 November 2026</span></p>
   </div>
 </header>
 
@@ -88,7 +88,7 @@
     <li>We do not sell your personal information. We do not see or store your card details. Google Play and Apple handle payments.</li>
     <li>Vaultara does not show adverts. If you allow usage data on Android, we also collect your device's advertising ID, only to measure how well our own adverts for Vaultara, shown on other websites and apps, lead to installs and purchases. You can say no, and you can change your mind at any time.</li>
     <li>If you turn on end-to-end encryption for photos, the photos are encrypted on your phone with a key only you hold. We cannot read them.</li>
-    <li>Passport and ID scanning happens on your phone. The scan image is not sent to us for text recognition.</li>
+    <li>Passport and ID scanning happens on your phone. The scan image is not sent to us for text recognition. If your phone cannot read a document with certainty, you can choose to have the text from the photo read online. The photo itself is never sent (see <a href="#document-reading">section 13.2</a>).</li>
     <li>Your data is stored on Google Cloud servers in the United States.</li>
     <li>You can export your data in the app and delete your account at any time, in the app or at <a href="https://vaultara-f49ab.web.app/delete">vaultara-f49ab.web.app/delete</a>.</li>
   </ul>
@@ -157,7 +157,7 @@
 <ul>
   <li><strong>Payment card details.</strong> Google Play and Apple are the merchants of record and process all payments.</li>
   <li><strong>The contents of encrypted photos.</strong> If you use end-to-end encryption, we store only the encrypted file. We do not have the key.</li>
-  <li><strong>Scan images for text recognition.</strong> Passport, ID and barcode scanning uses Google ML Kit, which runs on your phone. The camera image is processed on the device. Only the details you choose to save are stored in your account. If you also attach the photo to a record, it is uploaded like any other attachment.</li>
+  <li><strong>Scan images for text recognition.</strong> Passport, ID and barcode scanning uses Google ML Kit, which runs on your phone. The camera image is processed on the device. Only the details you choose to save are stored in your account. If you also attach the photo to a record, it is uploaded like any other attachment. If your phone cannot read a document with certainty and you agree, the text it recognised is sent to Anthropic to be read, without the machine readable code lines and with long numbers hidden. The image itself is never sent (see <a href="#document-reading">section 13.2</a>).</li>
   <li><strong>Precise location or location history.</strong> If you turn on Use my location for trips, only the country you are in is used, and it is not stored (see section 4.3).</li>
   <li><strong>Biometric data.</strong> If you use fingerprint or face unlock for the app lock, your phone's operating system checks it. Vaultara and Vorkalis never receive your fingerprint or face data.</li>
 </ul>
@@ -294,8 +294,8 @@
     </tr>
     <tr>
       <td>Anthropic PBC</td>
-      <td>Powers the optional Ask Vaultara assistant on paid plans, and suggests an icon for a new category</td>
-      <td>The messages you send to the assistant, and the details of your records, people and trips that the assistant looks up to answer them (see <a href="#ai-assistant">section 13</a>). Nothing is sent if you do not use it. When you type a name for a new category or words into the icon search, that text only (see <a href="#icon-suggestions">section 13.1</a>).</td>
+      <td>Powers the optional Ask Vaultara assistant on paid plans, suggests an icon for a new category, and reads documents that your phone could not read with certainty</td>
+      <td>The messages you send to the assistant, and the details of your records, people and trips that the assistant looks up to answer them (see <a href="#ai-assistant">section 13</a>). Nothing is sent if you do not use it. When you type a name for a new category or words into the icon search, that text only (see <a href="#icon-suggestions">section 13.1</a>). If you agree when scanning a document, the text read from the photo, with long numbers hidden (see <a href="#document-reading">section 13.2</a>).</td>
       <td>United States</td>
     </tr>
     <tr>
@@ -330,7 +330,7 @@
 
 <!-- 10 -->
 <h2 id="transfers">10. Transfers outside South Africa</h2>
-<p>Your information is stored on Google Cloud servers in the United States. If you use the Ask Vaultara assistant, your messages and the record details it looks up are also sent to Anthropic in the United States, as is the name you type for a new category, or the words you type into the icon search, so that icons can be suggested.</p>
+<p>Your information is stored on Google Cloud servers in the United States. If you use the Ask Vaultara assistant, your messages and the record details it looks up are also sent to Anthropic in the United States, as is the name you type for a new category, or the words you type into the icon search, so that icons can be suggested, and, if you agree, the text read from a document photo that your phone could not read with certainty.</p>
 <h3>Under POPIA</h3>
 <p>Section 72 of POPIA allows us to transfer personal information to another country if certain conditions are met. We rely on:</p>
 <ul>
@@ -426,7 +426,7 @@
 <h2 id="ai-assistant">13. The Ask Vaultara assistant</h2>
 <p>Ask Vaultara is an optional assistant available on paid plans. It uses an AI model provided by Anthropic.</p>
 <ul>
-  <li>Nothing from your records or chats is sent to Anthropic unless you use the assistant. The only other things Vaultara sends to Anthropic are the name of a new category and the words you type into the icon search, for icon suggestions (see <a href="#icon-suggestions">section 13.1</a>).</li>
+  <li>Nothing from your records or chats is sent to Anthropic unless you use the assistant. The only other things Vaultara sends to Anthropic are the name of a new category and the words you type into the icon search, for icon suggestions (see <a href="#icon-suggestions">section 13.1</a>), and, if you agree, the text of a document your phone could not read (see <a href="#document-reading">section 13.2</a>).</li>
   <li>When you use it, your messages in the current chat are sent to Anthropic so that it can produce an answer. If you continue a saved chat, its earlier messages are sent too. You cannot send images or files to the assistant.</li>
   <li>To answer your question, the assistant can look up your information in Vaultara and send it to Anthropic. This can include the names, groups, categories, expiry dates, notes, renewal costs and reminder settings of your records and of records shared with your household, the names of the people you track records for, the passport countries and country of residence you saved for yourself and for them, your trips (dates, countries, cities or towns, travellers, reason for the trip, flights and arrival dates), and which plan you have. It does not look up document numbers or attachments. For locked records, it sees only that a locked record exists and its expiry date, not its name, group or notes.</li>
   <li>If you turned on Use my location for trips, the country your phone is in (for example "JP") is sent with each message, so that the assistant can tell whether you are at home or travelling. Your coordinates are never sent (see section 4.3).</li>
@@ -448,6 +448,15 @@
   <li>Only that text is sent to Anthropic. No records, people, dates, document numbers or photos are sent, and your account is not identified to Anthropic.</li>
   <li>We do not save the text with the request. The name is saved in your account only when you create the category, together with the icon. Search words are never saved.</li>
   <li>You can change the icon at any time. If you do not want the text sent, do not type anything you would not want processed by Anthropic; the same deletion and training terms apply as for the assistant above.</li>
+</ul>
+<h3 id="document-reading">13.2 Reading documents that your phone could not read</h3>
+<p>Snap to add reads a photo of a document on your phone with Google ML Kit, on all plans. Passports, ID cards with machine readable code lines and vehicle licence discs are read and checked on your phone. For other documents, or when the check fails, your phone may not be able to tell which date is the expiry date or what the document is.</p>
+<ul>
+  <li>In that case, and only after you agree the first time, the text your phone recognised is sent through our servers to Anthropic's AI model, which says what the document is, which country issued it and which printed date is the expiry date.</li>
+  <li>The photo is never sent. Before the text is sent, the app removes the machine readable code lines and replaces every long number, such as ID, passport, policy, account and card numbers, with # characters. Dates, names and other words on the document are sent as they appear.</li>
+  <li>We do not save the text with the request and do not log it. Only the details you choose to save in the record are stored in your account.</li>
+  <li>The answer only fills in the form. You check it before saving, and an expiry date is used only if it is printed in the text.</li>
+  <li>If you do not agree, or have no internet connection, the app keeps what your phone read. The same deletion and training terms apply as for the assistant above.</li>
 </ul>
 <p class="back-top"><a href="#top">Back to top</a></p>
 
