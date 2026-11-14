@@ -6265,10 +6265,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get hidePassword => 'Ascunde parola';
 
   @override
-  String get pinCategory => 'Fixează sus';
+  String get pinCategory => 'Fixează pe Acasă';
 
   @override
-  String get unpinCategory => 'Anulează fixarea';
+  String get unpinCategory => 'Anulează fixarea pe Acasă';
 
   @override
   String get clearSearch => 'Șterge căutarea';
@@ -8021,6 +8021,42 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Totul e la zi';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A expirat acum $count zile',
+      one: 'A expirat ieri',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Expiră în $count zile',
+      one: 'Expiră mâine',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Nimic nu expiră în 30 de zile';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Următorul: $name expiră pe $date';
+  }
+
+  @override
+  String get homePinHint => 'Fixează categoriile pe care le folosești cel mai des. Atinge ⋮ la o categorie.';
+
+  @override
+  String get pinnedToHome => 'Fixată pe Acasă';
 
   @override
   String get changeIcon => 'Schimbă pictograma';

@@ -1977,8 +1977,8 @@
   "reminderHelpOpenApp": "ਐਪ ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
   "showPassword": "ਪਾਸਵਰਡ ਦਿਖਾਓ",
   "hidePassword": "ਪਾਸਵਰਡ ਲੁਕਾਓ",
-  "pinCategory": "ਉੱਪਰ ਪਿੰਨ ਕਰੋ",
-  "unpinCategory": "ਪਿੰਨ ਹਟਾਓ",
+  "pinCategory": "ਹੋਮ ’ਤੇ ਪਿੰਨ ਕਰੋ",
+  "unpinCategory": "ਹੋਮ ਤੋਂ ਹਟਾਓ",
   "clearSearch": "ਖੋਜ ਸਾਫ਼ ਕਰੋ",
   "tripPurposeTitle": "ਯਾਤਰਾ ਦਾ ਕਾਰਨ",
   "tripPurposeHoliday": "ਛੁੱਟੀ",
@@ -2625,6 +2625,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ} other{{count} 7 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ} other{{count} 30 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ}}",
   "allUpToDate": "ਸਭ ਅੱਪ ਟੂ ਡੇਟ",
+  "homeExpiredDaysAgo": "{count, plural, =1{ਕੱਲ੍ਹ ਮਿਆਦ ਪੁੱਗੀ} other{{count} ਦਿਨ ਪਹਿਲਾਂ ਮਿਆਦ ਪੁੱਗੀ}}",
+  "homeExpiresInDays": "{count, plural, =1{ਕੱਲ੍ਹ ਮਿਆਦ ਪੁੱਗੇਗੀ} other{{count} ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗੇਗੀ}}",
+  "homeAllClearTitle": "30 ਦਿਨਾਂ ਵਿੱਚ ਕਿਸੇ ਦੀ ਮਿਆਦ ਨਹੀਂ ਪੁੱਗਦੀ",
+  "homeAllClearNext": "ਅਗਲਾ: {name} ਦੀ ਮਿਆਦ {date} ਨੂੰ ਪੁੱਗਦੀ ਹੈ",
+  "homePinHint": "ਸਭ ਤੋਂ ਵੱਧ ਵਰਤੀਆਂ ਸ਼੍ਰੇਣੀਆਂ ਪਿੰਨ ਕਰੋ। ਕਿਸੇ ਸ਼੍ਰੇਣੀ ’ਤੇ ⋮ ਟੈਪ ਕਰੋ।",
+  "pinnedToHome": "ਹੋਮ ’ਤੇ ਪਿੰਨ ਕੀਤਾ",
   "@expiredBadge": {
     "placeholders": {
       "count": {

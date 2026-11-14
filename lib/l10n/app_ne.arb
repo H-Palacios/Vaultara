@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "एप सेटिङ खोल्नुहोस्",
   "showPassword": "पासवर्ड देखाउनुहोस्",
   "hidePassword": "पासवर्ड लुकाउनुहोस्",
-  "pinCategory": "माथि पिन गर्नुहोस्",
-  "unpinCategory": "पिन हटाउनुहोस्",
+  "pinCategory": "होममा पिन गर्नुहोस्",
+  "unpinCategory": "होमबाट हटाउनुहोस्",
   "clearSearch": "खोज मेटाउनुहोस्",
   "tripPurposeTitle": "यात्राको कारण",
   "tripPurposeHoliday": "बिदा",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ७ दिनभित्र सकिन्छ} other{{count} ७ दिनभित्र सकिन्छन्}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ३० दिनभित्र सकिन्छ} other{{count} ३० दिनभित्र सकिन्छन्}}",
   "allUpToDate": "सबै अद्यावधिक",
+  "homeExpiredDaysAgo": "{count, plural, =1{हिजो सकियो} other{{count} दिनअघि सकियो}}",
+  "homeExpiresInDays": "{count, plural, =1{भोलि सकिन्छ} other{{count} दिनमा सकिन्छ}}",
+  "homeAllClearTitle": "३० दिनभित्र केही सकिँदैन",
+  "homeAllClearNext": "अर्को: {name} {date} मा सकिन्छ",
+  "homePinHint": "सबैभन्दा बढी प्रयोग गर्ने वर्गहरू पिन गर्नुहोस्। वर्गमा ⋮ ट्याप गर्नुहोस्।",
+  "pinnedToHome": "होममा पिन गरिएको",
   "@expiredBadge": {
     "placeholders": {
       "count": {

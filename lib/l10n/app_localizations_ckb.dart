@@ -6198,10 +6198,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get hidePassword => 'پاسۆرد بشارەوە';
 
   @override
-  String get pinCategory => 'لە سەرەوە جێگیر بکە';
+  String get pinCategory => 'جێگیرکردن لە سەرەکی';
 
   @override
-  String get unpinCategory => 'جێگیرکردن لابە';
+  String get unpinCategory => 'لابردن لە سەرەکی';
 
   @override
   String get clearSearch => 'گەڕان پاک بکەرەوە';
@@ -7943,6 +7943,42 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get allUpToDate => 'هەموو شت نوێیە';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڕۆژ لەمەوبەر بەسەرچوو',
+      one: 'دوێنێ بەسەرچوو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'دوای $count ڕۆژ بەسەردەچێت',
+      one: 'سبەی بەسەردەچێت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'هیچ شتێک لە ماوەی 30 ڕۆژدا بەسەرناچێت';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'دواتر: $name لە $date بەسەردەچێت';
+  }
+
+  @override
+  String get homePinHint => 'ئەو پۆلانەی زۆرتر بەکاریان دەهێنیت جێگیر بکە. دەست لە ⋮ ی پۆلێک بدە.';
+
+  @override
+  String get pinnedToHome => 'لە سەرەکی جێگیرکراوە';
 
   @override
   String get changeIcon => 'گۆڕینی ئایکۆن';

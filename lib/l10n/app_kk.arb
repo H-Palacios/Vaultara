@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "Қолданба параметрлерін ашу",
   "showPassword": "Құпиясөзді көрсету",
   "hidePassword": "Құпиясөзді жасыру",
-  "pinCategory": "Жоғарыға бекіту",
-  "unpinCategory": "Бекітуді алып тастау",
+  "pinCategory": "Басты бетке бекіту",
+  "unpinCategory": "Басты беттен алу",
   "clearSearch": "Іздеуді тазалау",
   "tripPurposeTitle": "Сапар себебі",
   "tripPurposeHoliday": "Демалыс",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 күн ішінде бітеді} other{{count} 7 күн ішінде бітеді}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 күн ішінде бітеді} other{{count} 30 күн ішінде бітеді}}",
   "allUpToDate": "Бәрі жаңартылған",
+  "homeExpiredDaysAgo": "{count, plural, =1{Кеше бітті} other{{count} күн бұрын бітті}}",
+  "homeExpiresInDays": "{count, plural, =1{Ертең бітеді} other{{count} күннен кейін бітеді}}",
+  "homeAllClearTitle": "30 күн ішінде ештеңе бітпейді",
+  "homeAllClearNext": "Келесі: {name} {date} күні бітеді",
+  "homePinHint": "Жиі қолданатын санаттарды бекітіңіз. Санаттағы ⋮ белгісін түртіңіз.",
+  "pinnedToHome": "Басты бетке бекітілген",
   "@expiredBadge": {
     "placeholders": {
       "count": {

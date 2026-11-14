@@ -6198,10 +6198,10 @@ class AppLocalizationsGl extends AppLocalizations {
   String get hidePassword => 'Ocultar contrasinal';
 
   @override
-  String get pinCategory => 'Fixar arriba';
+  String get pinCategory => 'Fixar en Inicio';
 
   @override
-  String get unpinCategory => 'Desfixar';
+  String get unpinCategory => 'Quitar de Inicio';
 
   @override
   String get clearSearch => 'Borrar a busca';
@@ -7947,6 +7947,42 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Todo ao día';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Caducou hai $count días',
+      one: 'Caducou onte',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Caduca en $count días',
+      one: 'Caduca mañá',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Nada caduca en 30 días';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Seguinte: $name caduca o $date';
+  }
+
+  @override
+  String get homePinHint => 'Fixa as categorías que máis usas. Toca ⋮ nunha categoría.';
+
+  @override
+  String get pinnedToHome => 'Fixada en Inicio';
 
   @override
   String get changeIcon => 'Cambiar a icona';

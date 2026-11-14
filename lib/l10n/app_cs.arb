@@ -2001,8 +2001,8 @@
   "reminderHelpOpenApp": "Otevřít nastavení aplikace",
   "showPassword": "Zobrazit heslo",
   "hidePassword": "Skrýt heslo",
-  "pinCategory": "Připnout nahoru",
-  "unpinCategory": "Odepnout",
+  "pinCategory": "Připnout na Domů",
+  "unpinCategory": "Odepnout z Domů",
   "clearSearch": "Smazat hledání",
   "tripPurposeTitle": "Důvod cesty",
   "tripPurposeHoliday": "Dovolená",
@@ -2649,6 +2649,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} vyprší do 7 dnů} other{{count} vyprší do 7 dnů}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} vyprší do 30 dnů} other{{count} vyprší do 30 dnů}}",
   "allUpToDate": "Vše je aktuální",
+  "homeExpiredDaysAgo": "{count, plural, =1{Vypršelo včera} other{Vypršelo před {count} dny}}",
+  "homeExpiresInDays": "{count, plural, =1{Vyprší zítra} other{Vyprší za {count} dní}}",
+  "homeAllClearTitle": "Do 30 dnů nic nevyprší",
+  "homeAllClearNext": "Další: {name} vyprší {date}",
+  "homePinHint": "Připněte kategorie, které používáte nejčastěji. Klepněte na ⋮ u kategorie.",
+  "pinnedToHome": "Připnuto na Domů",
   "@expiredBadge": {
     "placeholders": {
       "count": {

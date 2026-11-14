@@ -6196,10 +6196,10 @@ class AppLocalizationsMk extends AppLocalizations {
   String get hidePassword => 'Сокриј лозинка';
 
   @override
-  String get pinCategory => 'Закачи горе';
+  String get pinCategory => 'Закачи на Почетна';
 
   @override
-  String get unpinCategory => 'Откачи';
+  String get unpinCategory => 'Откачи од Почетна';
 
   @override
   String get clearSearch => 'Исчисти пребарување';
@@ -7941,6 +7941,42 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Сè е ажурно';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истече пред $count дена',
+      one: 'Истече вчера',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истекува за $count дена',
+      one: 'Истекува утре',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Ништо не истекува за 30 дена';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Следно: $name истекува на $date';
+  }
+
+  @override
+  String get homePinHint => 'Закачете ги категориите што најчесто ги користите. Допрете ⋮ на категорија.';
+
+  @override
+  String get pinnedToHome => 'Закачено на Почетна';
 
   @override
   String get changeIcon => 'Промени икона';

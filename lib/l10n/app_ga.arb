@@ -1982,8 +1982,8 @@
   "reminderHelpOpenApp": "Oscail socruithe na haipe",
   "showPassword": "Taispeáin an focal faire",
   "hidePassword": "Folaigh an focal faire",
-  "pinCategory": "Bioráin ag an mbarr",
-  "unpinCategory": "Bain an bhioráin",
+  "pinCategory": "Pionnáil ar an mBaile",
+  "unpinCategory": "Díphionnáil ón mBaile",
   "clearSearch": "Glan an cuardach",
   "tripPurposeTitle": "Cúis an turais",
   "tripPurposeHoliday": "Saoire",
@@ -2630,6 +2630,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ag dul in éag laistigh de 7 lá} other{{count} ag dul in éag laistigh de 7 lá}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ag dul in éag laistigh de 30 lá} other{{count} ag dul in éag laistigh de 30 lá}}",
   "allUpToDate": "Gach rud cothrom le dáta",
+  "homeExpiredDaysAgo": "{count, plural, =1{Chuaigh in éag inné} other{Chuaigh in éag {count} lá ó shin}}",
+  "homeExpiresInDays": "{count, plural, =1{Ag dul in éag amárach} other{Ag dul in éag i gceann {count} lá}}",
+  "homeAllClearTitle": "Níl aon rud ag dul in éag laistigh de 30 lá",
+  "homeAllClearNext": "Ar aghaidh: rachaidh {name} in éag ar {date}",
+  "homePinHint": "Pionnáil na catagóirí is mó a úsáideann tú. Tapáil ⋮ ar chatagóir.",
+  "pinnedToHome": "Pionnáilte ar an mBaile",
   "@expiredBadge": {
     "placeholders": {
       "count": {

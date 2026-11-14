@@ -1975,8 +1975,8 @@
   "reminderHelpOpenApp": "Opna stillingar forrits",
   "showPassword": "Sýna lykilorð",
   "hidePassword": "Fela lykilorð",
-  "pinCategory": "Festa efst",
-  "unpinCategory": "Losa",
+  "pinCategory": "Festa á Heim",
+  "unpinCategory": "Losa af Heim",
   "clearSearch": "Hreinsa leit",
   "tripPurposeTitle": "Tilgangur ferðar",
   "tripPurposeHoliday": "Frí",
@@ -2623,6 +2623,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} rennur út innan 7 daga} other{{count} renna út innan 7 daga}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} rennur út innan 30 daga} other{{count} renna út innan 30 daga}}",
   "allUpToDate": "Allt uppfært",
+  "homeExpiredDaysAgo": "{count, plural, =1{Rann út í gær} other{Rann út fyrir {count} dögum}}",
+  "homeExpiresInDays": "{count, plural, =1{Rennur út á morgun} other{Rennur út eftir {count} daga}}",
+  "homeAllClearTitle": "Ekkert rennur út innan 30 daga",
+  "homeAllClearNext": "Næst: {name} rennur út {date}",
+  "homePinHint": "Festu flokkana sem þú notar mest. Ýttu á ⋮ við flokk.",
+  "pinnedToHome": "Fest á Heim",
   "@expiredBadge": {
     "placeholders": {
       "count": {

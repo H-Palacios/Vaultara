@@ -1987,8 +1987,8 @@
   "reminderHelpOpenApp": "เปิดการตั้งค่าแอป",
   "showPassword": "แสดงรหัสผ่าน",
   "hidePassword": "ซ่อนรหัสผ่าน",
-  "pinCategory": "ปักหมุดไว้ด้านบน",
-  "unpinCategory": "เลิกปักหมุด",
+  "pinCategory": "ปักหมุดที่หน้าแรก",
+  "unpinCategory": "เลิกปักหมุดจากหน้าแรก",
   "clearSearch": "ล้างการค้นหา",
   "tripPurposeTitle": "เหตุผลในการเดินทาง",
   "tripPurposeHoliday": "พักผ่อน",
@@ -2635,6 +2635,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} รายการหมดอายุภายใน 7 วัน} other{{count} รายการหมดอายุภายใน 7 วัน}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} รายการหมดอายุภายใน 30 วัน} other{{count} รายการหมดอายุภายใน 30 วัน}}",
   "allUpToDate": "ทุกอย่างเป็นปัจจุบัน",
+  "homeExpiredDaysAgo": "{count, plural, =1{หมดอายุเมื่อวาน} other{หมดอายุเมื่อ {count} วันก่อน}}",
+  "homeExpiresInDays": "{count, plural, =1{หมดอายุพรุ่งนี้} other{หมดอายุในอีก {count} วัน}}",
+  "homeAllClearTitle": "ไม่มีอะไรหมดอายุภายใน 30 วัน",
+  "homeAllClearNext": "ถัดไป: {name} หมดอายุวันที่ {date}",
+  "homePinHint": "ปักหมุดหมวดที่คุณใช้บ่อยที่สุด แตะ ⋮ ที่หมวดหมู่",
+  "pinnedToHome": "ปักหมุดไว้ที่หน้าแรก",
   "@expiredBadge": {
     "placeholders": {
       "count": {

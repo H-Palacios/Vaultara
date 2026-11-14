@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "செயலி அமைப்புகளைத் திற",
   "showPassword": "கடவுச்சொல்லைக் காட்டு",
   "hidePassword": "கடவுச்சொல்லை மறை",
-  "pinCategory": "மேலே பின் செய்",
-  "unpinCategory": "பின்னை நீக்கு",
+  "pinCategory": "முகப்பில் பின் செய்",
+  "unpinCategory": "முகப்பிலிருந்து நீக்கு",
   "clearSearch": "தேடலை அழி",
   "tripPurposeTitle": "பயணத்தின் காரணம்",
   "tripPurposeHoliday": "விடுமுறை",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 நாட்களுக்குள் காலாவதியாகும்} other{{count} 7 நாட்களுக்குள் காலாவதியாகும்}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 நாட்களுக்குள் காலாவதியாகும்} other{{count} 30 நாட்களுக்குள் காலாவதியாகும்}}",
   "allUpToDate": "அனைத்தும் புதுப்பித்த நிலையில்",
+  "homeExpiredDaysAgo": "{count, plural, =1{நேற்று காலாவதியானது} other{{count} நாட்களுக்கு முன் காலாவதியானது}}",
+  "homeExpiresInDays": "{count, plural, =1{நாளை காலாவதியாகும்} other{{count} நாட்களில் காலாவதியாகும்}}",
+  "homeAllClearTitle": "30 நாட்களுக்குள் எதுவும் காலாவதியாகவில்லை",
+  "homeAllClearNext": "அடுத்தது: {name} {date} அன்று காலாவதியாகும்",
+  "homePinHint": "அதிகம் பயன்படுத்தும் வகைகளைப் பின் செய்யவும். ஒரு வகையில் ⋮ தட்டவும்.",
+  "pinnedToHome": "முகப்பில் பின் செய்யப்பட்டது",
   "@expiredBadge": {
     "placeholders": {
       "count": {

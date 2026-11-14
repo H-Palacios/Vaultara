@@ -2008,8 +2008,8 @@
   "reminderHelpOpenApp": "የመተግበሪያ ቅንብሮችን ክፈት",
   "showPassword": "የይለፍ ቃል አሳይ",
   "hidePassword": "የይለፍ ቃል ደብቅ",
-  "pinCategory": "ከላይ ሰካ",
-  "unpinCategory": "ንቀል",
+  "pinCategory": "በመነሻ ላይ ሰካ",
+  "unpinCategory": "ከመነሻ ንቀል",
   "clearSearch": "ፍለጋን አጽዳ",
   "tripPurposeTitle": "የጉዞው ምክንያት",
   "tripPurposeHoliday": "የዕረፍት ጊዜ",
@@ -2656,6 +2656,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} በ7 ቀናት ውስጥ ያበቃል} other{{count} በ7 ቀናት ውስጥ ያበቃሉ}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} በ30 ቀናት ውስጥ ያበቃል} other{{count} በ30 ቀናት ውስጥ ያበቃሉ}}",
   "allUpToDate": "ሁሉም የተዘመነ ነው",
+  "homeExpiredDaysAgo": "{count, plural, =1{ትናንት አብቅቷል} other{ከ{count} ቀናት በፊት አብቅቷል}}",
+  "homeExpiresInDays": "{count, plural, =1{ነገ ያበቃል} other{በ{count} ቀናት ውስጥ ያበቃል}}",
+  "homeAllClearTitle": "በ30 ቀናት ውስጥ የሚያበቃ የለም",
+  "homeAllClearNext": "ቀጣይ፦ {name} በ{date} ያበቃል",
+  "homePinHint": "በብዛት የሚጠቀሙባቸውን ምድቦች ይሰኩ። በምድብ ላይ ⋮ ይንኩ።",
+  "pinnedToHome": "በመነሻ ላይ ተሰክቷል",
   "@expiredBadge": {
     "placeholders": {
       "count": {

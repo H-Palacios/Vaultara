@@ -6198,10 +6198,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get hidePassword => 'Amaga la contrasenya';
 
   @override
-  String get pinCategory => 'Fixa a la part superior';
+  String get pinCategory => 'Fixa a l’Inici';
 
   @override
-  String get unpinCategory => 'Deixa de fixar';
+  String get unpinCategory => 'Deixa de fixar a l’Inici';
 
   @override
   String get clearSearch => 'Esborra la cerca';
@@ -7947,6 +7947,42 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Tot al dia';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Va vèncer fa $count dies',
+      one: 'Va vèncer ahir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Venç d’aquí a $count dies',
+      one: 'Venç demà',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'No venç res en 30 dies';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Següent: $name venç el $date';
+  }
+
+  @override
+  String get homePinHint => 'Fixa les categories que més fas servir. Toca ⋮ en una categoria.';
+
+  @override
+  String get pinnedToHome => 'Fixada a l’Inici';
 
   @override
   String get changeIcon => 'Canvia la icona';

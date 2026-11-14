@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Fur dejinta abka",
   "showPassword": "Tus erayga sirta ah",
   "hidePassword": "Qari erayga sirta ah",
-  "pinCategory": "Sare ku xidh",
-  "unpinCategory": "Ka saar xidhka",
+  "pinCategory": "Ku dheji Hoyga",
+  "unpinCategory": "Ka saar Hoyga",
   "clearSearch": "Nadiifi raadinta",
   "tripPurposeTitle": "Sababta safarka",
   "tripPurposeHoliday": "Fasax",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} wuxuu dhacayaa 7 maalmood gudahood} other{{count} waxay dhacayaan 7 maalmood gudahood}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} wuxuu dhacayaa 30 maalmood gudahood} other{{count} waxay dhacayaan 30 maalmood gudahood}}",
   "allUpToDate": "Wax walba waa cusub yihiin",
+  "homeExpiredDaysAgo": "{count, plural, =1{Shalay ayuu dhacay} other{{count} maalmood ka hor ayuu dhacay}}",
+  "homeExpiresInDays": "{count, plural, =1{Berri ayuu dhacayaa} other{{count} maalmood kadib ayuu dhacayaa}}",
+  "homeAllClearTitle": "Waxba ma dhacayaan 30 maalmood gudahood",
+  "homeAllClearNext": "Xiga: {name} wuxuu dhacayaa {date}",
+  "homePinHint": "Ku dheji qaybaha aad inta badan isticmaasho. Taabo ⋮ qayb kasta.",
+  "pinnedToHome": "Lagu dhejiyay Hoyga",
   "@expiredBadge": {
     "placeholders": {
       "count": {

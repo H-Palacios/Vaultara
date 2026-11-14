@@ -1720,8 +1720,8 @@
   "reminderHelpOpenApp": "એપ સેટિંગ્સ ખોલો",
   "showPassword": "પાસવર્ડ બતાવો",
   "hidePassword": "પાસવર્ડ છુપાવો",
-  "pinCategory": "ટોચ પર પિન કરો",
-  "unpinCategory": "પિન દૂર કરો",
+  "pinCategory": "હોમ પર પિન કરો",
+  "unpinCategory": "હોમમાંથી અનપિન કરો",
   "clearSearch": "શોધ સાફ કરો",
   "tripPurposeTitle": "પ્રવાસનું કારણ",
   "tripPurposeHoliday": "રજા",
@@ -2368,6 +2368,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 દિવસમાં સમાપ્ત થાય છે} other{{count} 7 દિવસમાં સમાપ્ત થાય છે}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 દિવસમાં સમાપ્ત થાય છે} other{{count} 30 દિવસમાં સમાપ્ત થાય છે}}",
   "allUpToDate": "બધું અપ ટુ ડેટ",
+  "homeExpiredDaysAgo": "{count, plural, =1{ગઈકાલે સમાપ્ત} other{{count} દિવસ પહેલાં સમાપ્ત}}",
+  "homeExpiresInDays": "{count, plural, =1{આવતીકાલે સમાપ્ત થાય છે} other{{count} દિવસમાં સમાપ્ત થાય છે}}",
+  "homeAllClearTitle": "30 દિવસમાં કંઈ સમાપ્ત થતું નથી",
+  "homeAllClearNext": "આગળ: {name} {date}એ સમાપ્ત થાય છે",
+  "homePinHint": "તમે સૌથી વધુ વાપરો છો તે શ્રેણીઓ પિન કરો. શ્રેણી પર ⋮ ટૅપ કરો.",
+  "pinnedToHome": "હોમ પર પિન કરેલું",
   "@expiredBadge": {
     "placeholders": {
       "count": {

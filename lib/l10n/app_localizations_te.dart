@@ -6198,10 +6198,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get hidePassword => 'పాస్‌వర్డ్ దాచు';
 
   @override
-  String get pinCategory => 'పైన పిన్ చేయి';
+  String get pinCategory => 'హోమ్‌కు పిన్ చేయండి';
 
   @override
-  String get unpinCategory => 'పిన్ తీసివేయి';
+  String get unpinCategory => 'హోమ్ నుండి అన్‌పిన్ చేయండి';
 
   @override
   String get clearSearch => 'శోధనను తొలగించు';
@@ -7943,6 +7943,42 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get allUpToDate => 'అన్నీ తాజాగా ఉన్నాయి';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count రోజుల క్రితం గడువు ముగిసింది',
+      one: 'నిన్న గడువు ముగిసింది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count రోజుల్లో గడువు ముగుస్తుంది',
+      one: 'రేపు గడువు ముగుస్తుంది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 రోజుల్లో దేని గడువూ ముగియదు';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'తదుపరి: $name గడువు $dateన ముగుస్తుంది';
+  }
+
+  @override
+  String get homePinHint => 'ఎక్కువగా వాడే వర్గాలను పిన్ చేయండి. వర్గంపై ⋮ ట్యాప్ చేయండి.';
+
+  @override
+  String get pinnedToHome => 'హోమ్‌కు పిన్ చేశారు';
 
   @override
   String get changeIcon => 'చిహ్నం మార్చు';

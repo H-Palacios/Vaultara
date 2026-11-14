@@ -1982,8 +1982,8 @@
   "reminderHelpOpenApp": "Buɗe saitunan manhaja",
   "showPassword": "Nuna kalmar sirri",
   "hidePassword": "Ɓoye kalmar sirri",
-  "pinCategory": "Maƙala a sama",
-  "unpinCategory": "Cire maƙala",
+  "pinCategory": "Maƙala a Gida",
+  "unpinCategory": "Cire daga Gida",
   "clearSearch": "Share bincike",
   "tripPurposeTitle": "Dalilin tafiya",
   "tripPurposeHoliday": "Hutu",
@@ -2630,6 +2630,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} zai ƙare cikin kwanaki 7} other{{count} za su ƙare cikin kwanaki 7}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} zai ƙare cikin kwanaki 30} other{{count} za su ƙare cikin kwanaki 30}}",
   "allUpToDate": "Komai ya daidaita",
+  "homeExpiredDaysAgo": "{count, plural, =1{Ya ƙare jiya} other{Ya ƙare kwanaki {count} da suka wuce}}",
+  "homeExpiresInDays": "{count, plural, =1{Zai ƙare gobe} other{Zai ƙare cikin kwanaki {count}}}",
+  "homeAllClearTitle": "Babu abin da zai ƙare cikin kwanaki 30",
+  "homeAllClearNext": "Na gaba: {name} zai ƙare a {date}",
+  "homePinHint": "Maƙala nau’ukan da kake amfani da su sosai. Taɓa ⋮ a kan nau’i.",
+  "pinnedToHome": "An maƙala a Gida",
   "@expiredBadge": {
     "placeholders": {
       "count": {

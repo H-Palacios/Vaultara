@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "ایپ سیٹنگز کھولیں",
   "showPassword": "پاس ورڈ دکھائیں",
   "hidePassword": "پاس ورڈ چھپائیں",
-  "pinCategory": "اوپر پن کریں",
-  "unpinCategory": "پن ہٹائیں",
+  "pinCategory": "ہوم پر پن کریں",
+  "unpinCategory": "ہوم سے ہٹائیں",
   "clearSearch": "تلاش صاف کریں",
   "tripPurposeTitle": "سفر کی وجہ",
   "tripPurposeHoliday": "چھٹی",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} کی میعاد 7 دن میں ختم} other{{count} کی میعاد 7 دن میں ختم}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} کی میعاد 30 دن میں ختم} other{{count} کی میعاد 30 دن میں ختم}}",
   "allUpToDate": "سب اپ ٹو ڈیٹ",
+  "homeExpiredDaysAgo": "{count, plural, =1{کل میعاد ختم ہوئی} other{{count} دن پہلے میعاد ختم ہوئی}}",
+  "homeExpiresInDays": "{count, plural, =1{کل میعاد ختم ہوگی} other{{count} دن میں میعاد ختم ہوگی}}",
+  "homeAllClearTitle": "30 دن میں کسی کی میعاد ختم نہیں ہو رہی",
+  "homeAllClearNext": "اگلا: {name} کی میعاد {date} کو ختم ہوگی",
+  "homePinHint": "سب سے زیادہ استعمال ہونے والی زمرے پن کریں۔ کسی زمرے پر ⋮ ٹیپ کریں۔",
+  "pinnedToHome": "ہوم پر پن ہے",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -1720,8 +1720,8 @@
   "reminderHelpOpenApp": "Ilova sozlamalarini ochish",
   "showPassword": "Parolni ko‘rsatish",
   "hidePassword": "Parolni yashirish",
-  "pinCategory": "Tepaga mahkamlash",
-  "unpinCategory": "Mahkamlashni olib tashlash",
+  "pinCategory": "Bosh sahifaga qadash",
+  "unpinCategory": "Bosh sahifadan olish",
   "clearSearch": "Qidiruvni tozalash",
   "tripPurposeTitle": "Safar sababi",
   "tripPurposeHoliday": "Dam olish",
@@ -2368,6 +2368,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ta 7 kun ichida tugaydi} other{{count} ta 7 kun ichida tugaydi}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ta 30 kun ichida tugaydi} other{{count} ta 30 kun ichida tugaydi}}",
   "allUpToDate": "Hammasi joyida",
+  "homeExpiredDaysAgo": "{count, plural, =1{Kecha tugagan} other{{count} kun oldin tugagan}}",
+  "homeExpiresInDays": "{count, plural, =1{Ertaga tugaydi} other{{count} kundan keyin tugaydi}}",
+  "homeAllClearTitle": "30 kun ichida hech narsa tugamaydi",
+  "homeAllClearNext": "Keyingisi: {name} {date} kuni tugaydi",
+  "homePinHint": "Eng ko‘p ishlatadigan turkumlarni qadang. Turkumdagi ⋮ belgisiga bosing.",
+  "pinnedToHome": "Bosh sahifaga qadalgan",
   "@expiredBadge": {
     "placeholders": {
       "count": {

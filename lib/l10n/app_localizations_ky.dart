@@ -6198,10 +6198,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get hidePassword => 'Сырсөздү жашыруу';
 
   @override
-  String get pinCategory => 'Жогоруга кадоо';
+  String get pinCategory => 'Башкы бетке бекитүү';
 
   @override
-  String get unpinCategory => 'Кадоону алып салуу';
+  String get unpinCategory => 'Башкы беттен алуу';
 
   @override
   String get clearSearch => 'Издөөнү тазалоо';
@@ -7943,6 +7943,42 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Баары жаңыланган';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count күн мурун бүткөн',
+      one: 'Кечээ бүткөн',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count күндөн кийин бүтөт',
+      one: 'Эртең бүтөт',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 күндүн ичинде эч нерсе бүтпөйт';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Кийинки: $name $date бүтөт';
+  }
+
+  @override
+  String get homePinHint => 'Көп колдонгон категорияларды бекитиңиз. Категориядагы ⋮ басыңыз.';
+
+  @override
+  String get pinnedToHome => 'Башкы бетке бекитилген';
 
   @override
   String get changeIcon => 'Сүрөтчөнү өзгөртүү';

@@ -1720,8 +1720,8 @@
   "reminderHelpOpenApp": "Отвори настройките на приложението",
   "showPassword": "Покажи паролата",
   "hidePassword": "Скрий паролата",
-  "pinCategory": "Закачи най-горе",
-  "unpinCategory": "Откачи",
+  "pinCategory": "Закачи в Начало",
+  "unpinCategory": "Откачи от Начало",
   "clearSearch": "Изчисти търсенето",
   "tripPurposeTitle": "Причина за пътуването",
   "tripPurposeHoliday": "Почивка",
@@ -2368,6 +2368,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} изтича до 7 дни} other{{count} изтичат до 7 дни}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} изтича до 30 дни} other{{count} изтичат до 30 дни}}",
   "allUpToDate": "Всичко е наред",
+  "homeExpiredDaysAgo": "{count, plural, =1{Изтекъл вчера} other{Изтекъл преди {count} дни}}",
+  "homeExpiresInDays": "{count, plural, =1{Изтича утре} other{Изтича след {count} дни}}",
+  "homeAllClearTitle": "Нищо не изтича до 30 дни",
+  "homeAllClearNext": "Следващо: {name} изтича на {date}",
+  "homePinHint": "Закачете категориите, които ползвате най-често. Докоснете ⋮ на категория.",
+  "pinnedToHome": "Закачено в Начало",
   "@expiredBadge": {
     "placeholders": {
       "count": {

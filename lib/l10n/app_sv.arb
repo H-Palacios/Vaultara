@@ -1963,8 +1963,8 @@
   "reminderHelpOpenApp": "Öppna appinställningar",
   "showPassword": "Visa lösenord",
   "hidePassword": "Dölj lösenord",
-  "pinCategory": "Fäst högst upp",
-  "unpinCategory": "Lossa",
+  "pinCategory": "Fäst på Hem",
+  "unpinCategory": "Lossa från Hem",
   "clearSearch": "Rensa sökning",
   "tripPurposeTitle": "Syfte med resan",
   "tripPurposeHoliday": "Semester",
@@ -2611,6 +2611,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} går ut inom 7 dagar} other{{count} går ut inom 7 dagar}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} går ut inom 30 dagar} other{{count} går ut inom 30 dagar}}",
   "allUpToDate": "Allt är uppdaterat",
+  "homeExpiredDaysAgo": "{count, plural, =1{Gick ut i går} other{Gick ut för {count} dagar sedan}}",
+  "homeExpiresInDays": "{count, plural, =1{Går ut i morgon} other{Går ut om {count} dagar}}",
+  "homeAllClearTitle": "Inget går ut inom 30 dagar",
+  "homeAllClearNext": "Nästa: {name} går ut {date}",
+  "homePinHint": "Fäst de kategorier du använder mest. Tryck på ⋮ vid en kategori.",
+  "pinnedToHome": "Fäst på Hem",
   "@expiredBadge": {
     "placeholders": {
       "count": {

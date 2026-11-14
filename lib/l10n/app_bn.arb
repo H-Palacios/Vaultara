@@ -2001,8 +2001,8 @@
   "reminderHelpOpenApp": "অ্যাপ সেটিংস খুলুন",
   "showPassword": "পাসওয়ার্ড দেখান",
   "hidePassword": "পাসওয়ার্ড লুকান",
-  "pinCategory": "উপরে পিন করুন",
-  "unpinCategory": "পিন সরান",
+  "pinCategory": "হোমে পিন করুন",
+  "unpinCategory": "হোম থেকে আনপিন করুন",
   "clearSearch": "অনুসন্ধান মুছুন",
   "tripPurposeTitle": "ভ্রমণের কারণ",
   "tripPurposeHoliday": "ছুটি",
@@ -2649,6 +2649,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count}টির মেয়াদ ৭ দিনের মধ্যে শেষ} other{{count}টির মেয়াদ ৭ দিনের মধ্যে শেষ}}",
   "expiresWithin30Badge": "{count, plural, =1{{count}টির মেয়াদ ৩০ দিনের মধ্যে শেষ} other{{count}টির মেয়াদ ৩০ দিনের মধ্যে শেষ}}",
   "allUpToDate": "সব হালনাগাদ",
+  "homeExpiredDaysAgo": "{count, plural, =1{গতকাল মেয়াদ শেষ} other{{count} দিন আগে মেয়াদ শেষ}}",
+  "homeExpiresInDays": "{count, plural, =1{আগামীকাল মেয়াদ শেষ} other{{count} দিন পরে মেয়াদ শেষ}}",
+  "homeAllClearTitle": "৩০ দিনের মধ্যে কিছুর মেয়াদ শেষ হচ্ছে না",
+  "homeAllClearNext": "পরবর্তী: {name}-এর মেয়াদ শেষ {date}",
+  "homePinHint": "যে বিভাগগুলো বেশি ব্যবহার করেন সেগুলো পিন করুন। কোনো বিভাগে ⋮ ট্যাপ করুন।",
+  "pinnedToHome": "হোমে পিন করা",
   "@expiredBadge": {
     "placeholders": {
       "count": {

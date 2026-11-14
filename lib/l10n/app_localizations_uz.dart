@@ -6198,10 +6198,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get hidePassword => 'Parolni yashirish';
 
   @override
-  String get pinCategory => 'Tepaga mahkamlash';
+  String get pinCategory => 'Bosh sahifaga qadash';
 
   @override
-  String get unpinCategory => 'Mahkamlashni olib tashlash';
+  String get unpinCategory => 'Bosh sahifadan olish';
 
   @override
   String get clearSearch => 'Qidiruvni tozalash';
@@ -7943,6 +7943,42 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Hammasi joyida';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kun oldin tugagan',
+      one: 'Kecha tugagan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kundan keyin tugaydi',
+      one: 'Ertaga tugaydi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 kun ichida hech narsa tugamaydi';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Keyingisi: $name $date kuni tugaydi';
+  }
+
+  @override
+  String get homePinHint => 'Eng ko‘p ishlatadigan turkumlarni qadang. Turkumdagi ⋮ belgisiga bosing.';
+
+  @override
+  String get pinnedToHome => 'Bosh sahifaga qadalgan';
 
   @override
   String get changeIcon => 'Belgini almashtirish';

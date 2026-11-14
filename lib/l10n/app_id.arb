@@ -1975,8 +1975,8 @@
   "reminderHelpOpenApp": "Buka pengaturan aplikasi",
   "showPassword": "Tampilkan kata sandi",
   "hidePassword": "Sembunyikan kata sandi",
-  "pinCategory": "Sematkan di atas",
-  "unpinCategory": "Lepas sematan",
+  "pinCategory": "Sematkan ke Beranda",
+  "unpinCategory": "Lepas dari Beranda",
   "clearSearch": "Hapus pencarian",
   "tripPurposeTitle": "Alasan perjalanan",
   "tripPurposeHoliday": "Liburan",
@@ -2623,6 +2623,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} kedaluwarsa dalam 7 hari} other{{count} kedaluwarsa dalam 7 hari}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} kedaluwarsa dalam 30 hari} other{{count} kedaluwarsa dalam 30 hari}}",
   "allUpToDate": "Semua sudah beres",
+  "homeExpiredDaysAgo": "{count, plural, =1{Kedaluwarsa kemarin} other{Kedaluwarsa {count} hari lalu}}",
+  "homeExpiresInDays": "{count, plural, =1{Kedaluwarsa besok} other{Kedaluwarsa dalam {count} hari}}",
+  "homeAllClearTitle": "Tidak ada yang kedaluwarsa dalam 30 hari",
+  "homeAllClearNext": "Berikutnya: {name} kedaluwarsa pada {date}",
+  "homePinHint": "Sematkan kategori yang paling sering Anda gunakan. Ketuk ⋮ pada kategori.",
+  "pinnedToHome": "Disematkan ke Beranda",
   "@expiredBadge": {
     "placeholders": {
       "count": {

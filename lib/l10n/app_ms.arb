@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Buka tetapan aplikasi",
   "showPassword": "Tunjukkan kata laluan",
   "hidePassword": "Sembunyikan kata laluan",
-  "pinCategory": "Semat di atas",
-  "unpinCategory": "Nyahsemat",
+  "pinCategory": "Semat ke Utama",
+  "unpinCategory": "Nyahsemat dari Utama",
   "clearSearch": "Kosongkan carian",
   "tripPurposeTitle": "Sebab perjalanan",
   "tripPurposeHoliday": "Percutian",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} tamat dalam 7 hari} other{{count} tamat dalam 7 hari}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} tamat dalam 30 hari} other{{count} tamat dalam 30 hari}}",
   "allUpToDate": "Semua terkini",
+  "homeExpiredDaysAgo": "{count, plural, =1{Tamat semalam} other{Tamat {count} hari lalu}}",
+  "homeExpiresInDays": "{count, plural, =1{Tamat esok} other{Tamat dalam {count} hari}}",
+  "homeAllClearTitle": "Tiada yang tamat dalam 30 hari",
+  "homeAllClearNext": "Seterusnya: {name} tamat pada {date}",
+  "homePinHint": "Semat kategori yang paling kerap anda gunakan. Ketik ⋮ pada kategori.",
+  "pinnedToHome": "Disemat ke Utama",
   "@expiredBadge": {
     "placeholders": {
       "count": {

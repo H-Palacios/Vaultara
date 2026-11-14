@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "Аппын тохиргоог нээх",
   "showPassword": "Нууц үгийг харуулах",
   "hidePassword": "Нууц үгийг нуух",
-  "pinCategory": "Дээр нь бэхлэх",
-  "unpinCategory": "Бэхлэлтийг арилгах",
+  "pinCategory": "Нүүрэнд бэхлэх",
+  "unpinCategory": "Нүүрнээс авах",
   "clearSearch": "Хайлтыг цэвэрлэх",
   "tripPurposeTitle": "Аяллын шалтгаан",
   "tripPurposeHoliday": "Амралт",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 хоногт дуусна} other{{count} 7 хоногт дуусна}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 хоногт дуусна} other{{count} 30 хоногт дуусна}}",
   "allUpToDate": "Бүгд шинэчлэгдсэн",
+  "homeExpiredDaysAgo": "{count, plural, =1{Өчигдөр дууссан} other{{count} хоногийн өмнө дууссан}}",
+  "homeExpiresInDays": "{count, plural, =1{Маргааш дуусна} other{{count} хоногийн дараа дуусна}}",
+  "homeAllClearTitle": "30 хоногт юу ч дуусахгүй",
+  "homeAllClearNext": "Дараагийнх: {name} {date}-нд дуусна",
+  "homePinHint": "Хамгийн их ашигладаг ангиллаа бэхлээрэй. Ангилал дээрх ⋮-г дарна уу.",
+  "pinnedToHome": "Нүүрэнд бэхэлсэн",
   "@expiredBadge": {
     "placeholders": {
       "count": {

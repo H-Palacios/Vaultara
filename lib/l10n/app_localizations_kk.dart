@@ -6198,10 +6198,10 @@ class AppLocalizationsKk extends AppLocalizations {
   String get hidePassword => 'Құпиясөзді жасыру';
 
   @override
-  String get pinCategory => 'Жоғарыға бекіту';
+  String get pinCategory => 'Басты бетке бекіту';
 
   @override
-  String get unpinCategory => 'Бекітуді алып тастау';
+  String get unpinCategory => 'Басты беттен алу';
 
   @override
   String get clearSearch => 'Іздеуді тазалау';
@@ -7943,6 +7943,42 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Бәрі жаңартылған';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count күн бұрын бітті',
+      one: 'Кеше бітті',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count күннен кейін бітеді',
+      one: 'Ертең бітеді',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 күн ішінде ештеңе бітпейді';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Келесі: $name $date күні бітеді';
+  }
+
+  @override
+  String get homePinHint => 'Жиі қолданатын санаттарды бекітіңіз. Санаттағы ⋮ белгісін түртіңіз.';
+
+  @override
+  String get pinnedToHome => 'Басты бетке бекітілген';
 
   @override
   String get changeIcon => 'Белгішені өзгерту';

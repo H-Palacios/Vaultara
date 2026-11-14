@@ -1720,8 +1720,8 @@
   "reminderHelpOpenApp": "Tətbiq ayarlarını aç",
   "showPassword": "Parolu göstər",
   "hidePassword": "Parolu gizlət",
-  "pinCategory": "Yuxarıya sancaqla",
-  "unpinCategory": "Sancağı götür",
+  "pinCategory": "Ana səhifəyə bərkit",
+  "unpinCategory": "Ana səhifədən çıxar",
   "clearSearch": "Axtarışı təmizlə",
   "tripPurposeTitle": "Səfərin səbəbi",
   "tripPurposeHoliday": "Tətil",
@@ -2368,6 +2368,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 gün ərzində bitir} other{{count} 7 gün ərzində bitir}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 gün ərzində bitir} other{{count} 30 gün ərzində bitir}}",
   "allUpToDate": "Hamısı qaydasındadır",
+  "homeExpiredDaysAgo": "{count, plural, =1{Dünən bitib} other{{count} gün əvvəl bitib}}",
+  "homeExpiresInDays": "{count, plural, =1{Sabah bitir} other{{count} gün sonra bitir}}",
+  "homeAllClearTitle": "30 gün ərzində heç nə bitmir",
+  "homeAllClearNext": "Növbəti: {name} {date} tarixində bitir",
+  "homePinHint": "Ən çox istifadə etdiyiniz kateqoriyaları bərkidin. Kateqoriyada ⋮ işarəsinə toxunun.",
+  "pinnedToHome": "Ana səhifəyə bərkidilib",
   "@expiredBadge": {
     "placeholders": {
       "count": {

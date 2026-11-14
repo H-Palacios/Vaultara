@@ -1982,8 +1982,8 @@
   "reminderHelpOpenApp": "Abrir axustes da aplicación",
   "showPassword": "Amosar contrasinal",
   "hidePassword": "Ocultar contrasinal",
-  "pinCategory": "Fixar arriba",
-  "unpinCategory": "Desfixar",
+  "pinCategory": "Fixar en Inicio",
+  "unpinCategory": "Quitar de Inicio",
   "clearSearch": "Borrar a busca",
   "tripPurposeTitle": "Motivo da viaxe",
   "tripPurposeHoliday": "Vacacións",
@@ -2630,6 +2630,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} caduca en 7 días} other{{count} caducan en 7 días}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} caduca en 30 días} other{{count} caducan en 30 días}}",
   "allUpToDate": "Todo ao día",
+  "homeExpiredDaysAgo": "{count, plural, =1{Caducou onte} other{Caducou hai {count} días}}",
+  "homeExpiresInDays": "{count, plural, =1{Caduca mañá} other{Caduca en {count} días}}",
+  "homeAllClearTitle": "Nada caduca en 30 días",
+  "homeAllClearNext": "Seguinte: {name} caduca o {date}",
+  "homePinHint": "Fixa as categorías que máis usas. Toca ⋮ nunha categoría.",
+  "pinnedToHome": "Fixada en Inicio",
   "@expiredBadge": {
     "placeholders": {
       "count": {

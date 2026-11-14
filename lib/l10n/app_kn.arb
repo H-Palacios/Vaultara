@@ -1720,8 +1720,8 @@
   "reminderHelpOpenApp": "ಆ್ಯಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ",
   "showPassword": "ಪಾಸ್‌ವರ್ಡ್ ತೋರಿಸಿ",
   "hidePassword": "ಪಾಸ್‌ವರ್ಡ್ ಮರೆಮಾಡಿ",
-  "pinCategory": "ಮೇಲೆ ಪಿನ್ ಮಾಡಿ",
-  "unpinCategory": "ಪಿನ್ ತೆಗೆಯಿರಿ",
+  "pinCategory": "ಮುಖಪುಟಕ್ಕೆ ಪಿನ್ ಮಾಡಿ",
+  "unpinCategory": "ಮುಖಪುಟದಿಂದ ಅನ್‌ಪಿನ್ ಮಾಡಿ",
   "clearSearch": "ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸಿ",
   "tripPurposeTitle": "ಪ್ರಯಾಣದ ಕಾರಣ",
   "tripPurposeHoliday": "ರಜೆ",
@@ -2368,6 +2368,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ} other{{count} 7 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ} other{{count} 30 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ}}",
   "allUpToDate": "ಎಲ್ಲವೂ ನವೀಕೃತ",
+  "homeExpiredDaysAgo": "{count, plural, =1{ನಿನ್ನೆ ಮುಕ್ತಾಯವಾಯಿತು} other{{count} ದಿನಗಳ ಹಿಂದೆ ಮುಕ್ತಾಯವಾಯಿತು}}",
+  "homeExpiresInDays": "{count, plural, =1{ನಾಳೆ ಮುಕ್ತಾಯ} other{{count} ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ}}",
+  "homeAllClearTitle": "30 ದಿನಗಳಲ್ಲಿ ಏನೂ ಮುಕ್ತಾಯವಾಗುತ್ತಿಲ್ಲ",
+  "homeAllClearNext": "ಮುಂದಿನದು: {name} {date} ರಂದು ಮುಕ್ತಾಯ",
+  "homePinHint": "ಹೆಚ್ಚು ಬಳಸುವ ವರ್ಗಗಳನ್ನು ಪಿನ್ ಮಾಡಿ. ವರ್ಗದಲ್ಲಿ ⋮ ಟ್ಯಾಪ್ ಮಾಡಿ.",
+  "pinnedToHome": "ಮುಖಪುಟಕ್ಕೆ ಪಿನ್ ಮಾಡಲಾಗಿದೆ",
   "@expiredBadge": {
     "placeholders": {
       "count": {

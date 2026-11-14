@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "Alkalmazásbeállítások megnyitása",
   "showPassword": "Jelszó megjelenítése",
   "hidePassword": "Jelszó elrejtése",
-  "pinCategory": "Kitűzés felülre",
-  "unpinCategory": "Kitűzés megszüntetése",
+  "pinCategory": "Rögzítés a Kezdőlapon",
+  "unpinCategory": "Rögzítés feloldása",
   "clearSearch": "Keresés törlése",
   "tripPurposeTitle": "Az utazás célja",
   "tripPurposeHoliday": "Nyaralás",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 napon belül lejár} other{{count} 7 napon belül lejár}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 napon belül lejár} other{{count} 30 napon belül lejár}}",
   "allUpToDate": "Minden naprakész",
+  "homeExpiredDaysAgo": "{count, plural, =1{Tegnap lejárt} other{{count} napja lejárt}}",
+  "homeExpiresInDays": "{count, plural, =1{Holnap lejár} other{{count} nap múlva lejár}}",
+  "homeAllClearTitle": "30 napon belül semmi sem jár le",
+  "homeAllClearNext": "Következő: {name} lejár: {date}",
+  "homePinHint": "Rögzítsd a legtöbbet használt kategóriákat. Koppints a ⋮ ikonra egy kategóriánál.",
+  "pinnedToHome": "Rögzítve a Kezdőlapon",
   "@expiredBadge": {
     "placeholders": {
       "count": {

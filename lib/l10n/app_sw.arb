@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Fungua mipangilio ya programu",
   "showPassword": "Onyesha nenosiri",
   "hidePassword": "Ficha nenosiri",
-  "pinCategory": "Bandika juu",
-  "unpinCategory": "Ondoa kubandika",
+  "pinCategory": "Bandika Nyumbani",
+  "unpinCategory": "Ondoa Nyumbani",
   "clearSearch": "Futa utafutaji",
   "tripPurposeTitle": "Sababu ya safari",
   "tripPurposeHoliday": "Likizo",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} itaisha ndani ya siku 7} other{{count} zitaisha ndani ya siku 7}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} itaisha ndani ya siku 30} other{{count} zitaisha ndani ya siku 30}}",
   "allUpToDate": "Kila kitu kiko sawa",
+  "homeExpiredDaysAgo": "{count, plural, =1{Iliisha jana} other{Iliisha siku {count} zilizopita}}",
+  "homeExpiresInDays": "{count, plural, =1{Itaisha kesho} other{Itaisha baada ya siku {count}}}",
+  "homeAllClearTitle": "Hakuna kitakachoisha ndani ya siku 30",
+  "homeAllClearNext": "Inayofuata: {name} itaisha tarehe {date}",
+  "homePinHint": "Bandika aina unazotumia zaidi. Gusa ⋮ kwenye aina.",
+  "pinnedToHome": "Imebandikwa Nyumbani",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Mở cài đặt ứng dụng",
   "showPassword": "Hiện mật khẩu",
   "hidePassword": "Ẩn mật khẩu",
-  "pinCategory": "Ghim lên đầu",
-  "unpinCategory": "Bỏ ghim",
+  "pinCategory": "Ghim vào Trang chủ",
+  "unpinCategory": "Bỏ ghim khỏi Trang chủ",
   "clearSearch": "Xóa tìm kiếm",
   "tripPurposeTitle": "Lý do chuyến đi",
   "tripPurposeHoliday": "Nghỉ dưỡng",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} hết hạn trong 7 ngày} other{{count} hết hạn trong 7 ngày}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} hết hạn trong 30 ngày} other{{count} hết hạn trong 30 ngày}}",
   "allUpToDate": "Mọi thứ đều cập nhật",
+  "homeExpiredDaysAgo": "{count, plural, =1{Đã hết hạn hôm qua} other{Đã hết hạn {count} ngày trước}}",
+  "homeExpiresInDays": "{count, plural, =1{Hết hạn ngày mai} other{Hết hạn sau {count} ngày}}",
+  "homeAllClearTitle": "Không có gì hết hạn trong 30 ngày",
+  "homeAllClearNext": "Tiếp theo: {name} hết hạn vào {date}",
+  "homePinHint": "Ghim các danh mục bạn dùng nhiều nhất. Chạm ⋮ trên một danh mục.",
+  "pinnedToHome": "Đã ghim vào Trang chủ",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -6198,10 +6198,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get hidePassword => 'Wachtwoord verbergen';
 
   @override
-  String get pinCategory => 'Bovenaan vastzetten';
+  String get pinCategory => 'Vastzetten op Start';
 
   @override
-  String get unpinCategory => 'Losmaken';
+  String get unpinCategory => 'Losmaken van Start';
 
   @override
   String get clearSearch => 'Zoekopdracht wissen';
@@ -7947,6 +7947,42 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Alles is bijgewerkt';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dagen geleden verlopen',
+      one: 'Gisteren verlopen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Verloopt over $count dagen',
+      one: 'Verloopt morgen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Niets verloopt binnen 30 dagen';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Volgende: $name verloopt op $date';
+  }
+
+  @override
+  String get homePinHint => 'Maak de categorieën vast die je het meest gebruikt. Tik op ⋮ bij een categorie.';
+
+  @override
+  String get pinnedToHome => 'Vastgezet op Start';
 
   @override
   String get changeIcon => 'Icoon wijzigen';

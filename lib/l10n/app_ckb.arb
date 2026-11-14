@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "کردنەوەی ڕێکخستنەکانی بەرنامە",
   "showPassword": "پاسۆرد نیشان بدە",
   "hidePassword": "پاسۆرد بشارەوە",
-  "pinCategory": "لە سەرەوە جێگیر بکە",
-  "unpinCategory": "جێگیرکردن لابە",
+  "pinCategory": "جێگیرکردن لە سەرەکی",
+  "unpinCategory": "لابردن لە سەرەکی",
   "clearSearch": "گەڕان پاک بکەرەوە",
   "tripPurposeTitle": "هۆی گەشتەکە",
   "tripPurposeHoliday": "پشوو",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} لە ماوەی 7 ڕۆژدا بەسەردەچێت} other{{count} لە ماوەی 7 ڕۆژدا بەسەردەچن}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} لە ماوەی 30 ڕۆژدا بەسەردەچێت} other{{count} لە ماوەی 30 ڕۆژدا بەسەردەچن}}",
   "allUpToDate": "هەموو شت نوێیە",
+  "homeExpiredDaysAgo": "{count, plural, =1{دوێنێ بەسەرچوو} other{{count} ڕۆژ لەمەوبەر بەسەرچوو}}",
+  "homeExpiresInDays": "{count, plural, =1{سبەی بەسەردەچێت} other{دوای {count} ڕۆژ بەسەردەچێت}}",
+  "homeAllClearTitle": "هیچ شتێک لە ماوەی 30 ڕۆژدا بەسەرناچێت",
+  "homeAllClearNext": "دواتر: {name} لە {date} بەسەردەچێت",
+  "homePinHint": "ئەو پۆلانەی زۆرتر بەکاریان دەهێنیت جێگیر بکە. دەست لە ⋮ ی پۆلێک بدە.",
+  "pinnedToHome": "لە سەرەکی جێگیرکراوە",
   "@expiredBadge": {
     "placeholders": {
       "count": {

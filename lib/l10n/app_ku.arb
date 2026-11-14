@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Mîhengên sepanê veke",
   "showPassword": "Şîfreyê nîşan bide",
   "hidePassword": "Şîfreyê veşêre",
-  "pinCategory": "Li jor bi pîne bike",
-  "unpinCategory": "Pînê rake",
+  "pinCategory": "Li Malê bi derzî bike",
+  "unpinCategory": "Ji Malê rake",
   "clearSearch": "Lêgerînê paqij bike",
   "tripPurposeTitle": "Sedema rêwîtiyê",
   "tripPurposeHoliday": "Betlane",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} di nav 7 rojan de diqede} other{{count} di nav 7 rojan de diqedin}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} di nav 30 rojan de diqede} other{{count} di nav 30 rojan de diqedin}}",
   "allUpToDate": "Hemû rojane ye",
+  "homeExpiredDaysAgo": "{count, plural, =1{Duh qediya} other{{count} roj berê qediya}}",
+  "homeExpiresInDays": "{count, plural, =1{Sibê diqede} other{Piştî {count} rojan diqede}}",
+  "homeAllClearTitle": "Di nav 30 rojan de tiştek naqede",
+  "homeAllClearNext": "Paşê: {name} di {date} de diqede",
+  "homePinHint": "Kategoriyên ku herî zêde bi kar tînî bi derzî bike. Li ser kategoriyekê ⋮ bitikîne.",
+  "pinnedToHome": "Li Malê bi derzî ye",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Ṣí àwọn ètò ohun èlò",
   "showPassword": "Fi ọ̀rọ̀ìpamọ́ hàn",
   "hidePassword": "Fi ọ̀rọ̀ìpamọ́ pamọ́",
-  "pinCategory": "Dì mọ́ òkè",
-  "unpinCategory": "Yọ ìdìmọ́ kúrò",
+  "pinCategory": "So mọ́ Ilé",
+  "unpinCategory": "Yọ kúrò ní Ilé",
   "clearSearch": "Pa àwárí rẹ́",
   "tripPurposeTitle": "Ìdí ìrìnàjò",
   "tripPurposeHoliday": "Ìsinmi",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} máa parí láàrin ọjọ́ 7} other{{count} máa parí láàrin ọjọ́ 7}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} máa parí láàrin ọjọ́ 30} other{{count} máa parí láàrin ọjọ́ 30}}",
   "allUpToDate": "Gbogbo nǹkan wà ní ìmúdójúìwọ̀n",
+  "homeExpiredDaysAgo": "{count, plural, =1{Ó parí lánàá} other{Ó parí ní ọjọ́ {count} sẹ́yìn}}",
+  "homeExpiresInDays": "{count, plural, =1{Ó máa parí lọ́la} other{Ó máa parí ní ọjọ́ {count}}}",
+  "homeAllClearTitle": "Kò sí ohun tó máa parí láàrin ọjọ́ 30",
+  "homeAllClearNext": "Èyí tó kàn: {name} máa parí ní {date}",
+  "homePinHint": "So àwọn ẹ̀ka tí o máa ń lò jùlọ mọ́. Tẹ ⋮ lórí ẹ̀ka kan.",
+  "pinnedToHome": "A so mọ́ Ilé",
   "@expiredBadge": {
     "placeholders": {
       "count": {

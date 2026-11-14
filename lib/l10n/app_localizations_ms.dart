@@ -6147,10 +6147,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get hidePassword => 'Sembunyikan kata laluan';
 
   @override
-  String get pinCategory => 'Semat di atas';
+  String get pinCategory => 'Semat ke Utama';
 
   @override
-  String get unpinCategory => 'Nyahsemat';
+  String get unpinCategory => 'Nyahsemat dari Utama';
 
   @override
   String get clearSearch => 'Kosongkan carian';
@@ -7885,6 +7885,42 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Semua terkini';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tamat $count hari lalu',
+      one: 'Tamat semalam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tamat dalam $count hari',
+      one: 'Tamat esok',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Tiada yang tamat dalam 30 hari';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Seterusnya: $name tamat pada $date';
+  }
+
+  @override
+  String get homePinHint => 'Semat kategori yang paling kerap anda gunakan. Ketik ⋮ pada kategori.';
+
+  @override
+  String get pinnedToHome => 'Disemat ke Utama';
 
   @override
   String get changeIcon => 'Tukar ikon';

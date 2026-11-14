@@ -6147,10 +6147,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get hidePassword => '隐藏密码';
 
   @override
-  String get pinCategory => '置顶';
+  String get pinCategory => '固定到首页';
 
   @override
-  String get unpinCategory => '取消置顶';
+  String get unpinCategory => '从首页取消固定';
 
   @override
   String get clearSearch => '清除搜索';
@@ -7885,6 +7885,42 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get allUpToDate => '全部正常';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天前到期',
+      one: '昨天到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天后到期',
+      one: '明天到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 天内没有到期的项目';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return '下一个：$name 将于 $date 到期';
+  }
+
+  @override
+  String get homePinHint => '把最常用的类别固定到首页。点按类别上的 ⋮。';
+
+  @override
+  String get pinnedToHome => '已固定到首页';
 
   @override
   String get changeIcon => '更换图标';
@@ -15071,10 +15107,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get hidePassword => '隐藏密码';
 
   @override
-  String get pinCategory => '置顶';
+  String get pinCategory => '固定到首页';
 
   @override
-  String get unpinCategory => '取消置顶';
+  String get unpinCategory => '从首页取消固定';
 
   @override
   String get clearSearch => '清除搜索';
@@ -16809,6 +16845,42 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get allUpToDate => '全部正常';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天前到期',
+      one: '昨天到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天后到期',
+      one: '明天到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 天内没有到期的项目';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return '下一个：$name 将于 $date 到期';
+  }
+
+  @override
+  String get homePinHint => '把最常用的类别固定到首页。点按类别上的 ⋮。';
+
+  @override
+  String get pinnedToHome => '已固定到首页';
 
   @override
   String get changeIcon => '更换图标';
@@ -23995,10 +24067,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get hidePassword => '隱藏密碼';
 
   @override
-  String get pinCategory => '置頂';
+  String get pinCategory => '釘選到首頁';
 
   @override
-  String get unpinCategory => '取消置頂';
+  String get unpinCategory => '從首頁取消釘選';
 
   @override
   String get clearSearch => '清除搜尋';
@@ -25733,6 +25805,42 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get allUpToDate => '全部正常';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天前到期',
+      one: '昨天到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 天後到期',
+      one: '明天到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 天內沒有到期的項目';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return '下一個：$name 將於 $date 到期';
+  }
+
+  @override
+  String get homePinHint => '把最常用的類別釘選到首頁。點一下類別上的 ⋮。';
+
+  @override
+  String get pinnedToHome => '已釘選到首頁';
 
   @override
   String get changeIcon => '更換圖示';

@@ -6198,10 +6198,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get hidePassword => 'Versteek wagwoord';
 
   @override
-  String get pinCategory => 'Speld bo vas';
+  String get pinCategory => 'Speld op Tuis vas';
 
   @override
-  String get unpinCategory => 'Maak los';
+  String get unpinCategory => 'Maak los van Tuis';
 
   @override
   String get clearSearch => 'Maak soektog skoon';
@@ -7947,6 +7947,42 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Alles op datum';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dae gelede verval',
+      one: 'Gister verval',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Verval oor $count dae',
+      one: 'Verval môre',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Niks verval binne 30 dae nie';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Volgende: $name verval op $date';
+  }
+
+  @override
+  String get homePinHint => 'Speld die kategorieë vas wat jy die meeste gebruik. Tik op ⋮ by ’n kategorie.';
+
+  @override
+  String get pinnedToHome => 'Op Tuis vasgespeld';
 
   @override
   String get changeIcon => 'Verander ikoon';

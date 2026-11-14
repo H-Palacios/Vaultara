@@ -1982,8 +1982,8 @@
   "reminderHelpOpenApp": "باز کردن تنظیمات برنامه",
   "showPassword": "نمایش گذرواژه",
   "hidePassword": "پنهان کردن گذرواژه",
-  "pinCategory": "سنجاق در بالا",
-  "unpinCategory": "برداشتن سنجاق",
+  "pinCategory": "سنجاق در خانه",
+  "unpinCategory": "برداشتن سنجاق از خانه",
   "clearSearch": "پاک کردن جستجو",
   "tripPurposeTitle": "دلیل سفر",
   "tripPurposeHoliday": "تعطیلات",
@@ -2630,6 +2630,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} مورد ظرف ۷ روز منقضی می‌شود} other{{count} مورد ظرف ۷ روز منقضی می‌شوند}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} مورد ظرف ۳۰ روز منقضی می‌شود} other{{count} مورد ظرف ۳۰ روز منقضی می‌شوند}}",
   "allUpToDate": "همه‌چیز به‌روز است",
+  "homeExpiredDaysAgo": "{count, plural, =1{دیروز منقضی شد} other{{count} روز پیش منقضی شد}}",
+  "homeExpiresInDays": "{count, plural, =1{فردا منقضی می‌شود} other{{count} روز دیگر منقضی می‌شود}}",
+  "homeAllClearTitle": "چیزی ظرف ۳۰ روز منقضی نمی‌شود",
+  "homeAllClearNext": "بعدی: {name} در {date} منقضی می‌شود",
+  "homePinHint": "دسته‌هایی را که بیشتر استفاده می‌کنید سنجاق کنید. روی ⋮ یک دسته بزنید.",
+  "pinnedToHome": "سنجاق‌شده در خانه",
   "@expiredBadge": {
     "placeholders": {
       "count": {

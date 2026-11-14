@@ -6148,10 +6148,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get hidePassword => 'Zoo okwuntughe';
 
   @override
-  String get pinCategory => 'Kpọchie n’elu';
+  String get pinCategory => 'Jikọta na Ụlọ';
 
   @override
-  String get unpinCategory => 'Wepụ nkpọchi';
+  String get unpinCategory => 'Wepụ na Ụlọ';
 
   @override
   String get clearSearch => 'Hichapụ ọchụchọ';
@@ -7891,6 +7891,42 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Ihe niile dị ọhụrụ';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gwụrụ ụbọchị $count gara aga',
+      one: 'Gwụrụ ụnyaahụ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ga-agwụ n’ime ụbọchị $count',
+      one: 'Ga-agwụ echi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Ọ dịghị ihe ga-agwụ n’ime ụbọchị 30';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Ọzọ: $name ga-agwụ na $date';
+  }
+
+  @override
+  String get homePinHint => 'Pịnụ ụdị ndị ị na-ejikarị. Pịa ⋮ n’otu ụdị.';
+
+  @override
+  String get pinnedToHome => 'Ejikọtara na Ụlọ';
 
   @override
   String get changeIcon => 'Gbanwee akara ngosi';

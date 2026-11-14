@@ -1720,8 +1720,8 @@
   "reminderHelpOpenApp": "ആപ്പ് ക്രമീകരണങ്ങൾ തുറക്കുക",
   "showPassword": "പാസ്‌വേഡ് കാണിക്കുക",
   "hidePassword": "പാസ്‌വേഡ് മറയ്ക്കുക",
-  "pinCategory": "മുകളിൽ പിൻ ചെയ്യുക",
-  "unpinCategory": "പിൻ നീക്കം ചെയ്യുക",
+  "pinCategory": "ഹോമിൽ പിൻ ചെയ്യുക",
+  "unpinCategory": "ഹോമിൽ നിന്ന് അൺപിൻ ചെയ്യുക",
   "clearSearch": "തിരയൽ മായ്ക്കുക",
   "tripPurposeTitle": "യാത്രയുടെ കാരണം",
   "tripPurposeHoliday": "അവധി",
@@ -2368,6 +2368,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 ദിവസത്തിനകം കാലഹരണപ്പെടും} other{{count} 7 ദിവസത്തിനകം കാലഹരണപ്പെടും}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 ദിവസത്തിനകം കാലഹരണപ്പെടും} other{{count} 30 ദിവസത്തിനകം കാലഹരണപ്പെടും}}",
   "allUpToDate": "എല്ലാം കാലികം",
+  "homeExpiredDaysAgo": "{count, plural, =1{ഇന്നലെ കാലഹരണപ്പെട്ടു} other{{count} ദിവസം മുമ്പ് കാലഹരണപ്പെട്ടു}}",
+  "homeExpiresInDays": "{count, plural, =1{നാളെ കാലഹരണപ്പെടും} other{{count} ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും}}",
+  "homeAllClearTitle": "30 ദിവസത്തിനകം ഒന്നും കാലഹരണപ്പെടുന്നില്ല",
+  "homeAllClearNext": "അടുത്തത്: {name} {date}-ന് കാലഹരണപ്പെടും",
+  "homePinHint": "കൂടുതൽ ഉപയോഗിക്കുന്ന വിഭാഗങ്ങൾ പിൻ ചെയ്യുക. ഒരു വിഭാഗത്തിൽ ⋮ ടാപ്പ് ചെയ്യുക.",
+  "pinnedToHome": "ഹോമിൽ പിൻ ചെയ്തു",
   "@expiredBadge": {
     "placeholders": {
       "count": {

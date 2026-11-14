@@ -6197,10 +6197,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get hidePassword => 'Fela lykilorð';
 
   @override
-  String get pinCategory => 'Festa efst';
+  String get pinCategory => 'Festa á Heim';
 
   @override
-  String get unpinCategory => 'Losa';
+  String get unpinCategory => 'Losa af Heim';
 
   @override
   String get clearSearch => 'Hreinsa leit';
@@ -7942,6 +7942,42 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Allt uppfært';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rann út fyrir $count dögum',
+      one: 'Rann út í gær',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rennur út eftir $count daga',
+      one: 'Rennur út á morgun',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Ekkert rennur út innan 30 daga';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Næst: $name rennur út $date';
+  }
+
+  @override
+  String get homePinHint => 'Festu flokkana sem þú notar mest. Ýttu á ⋮ við flokk.';
+
+  @override
+  String get pinnedToHome => 'Fest á Heim';
 
   @override
   String get changeIcon => 'Breyta tákni';

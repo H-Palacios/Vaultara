@@ -1984,8 +1984,8 @@
   "reminderHelpOpenApp": "Բացել հավելվածի կարգավորումները",
   "showPassword": "Ցույց տալ գաղտնաբառը",
   "hidePassword": "Թաքցնել գաղտնաբառը",
-  "pinCategory": "Ամրացնել վերևում",
-  "unpinCategory": "Ապամրացնել",
+  "pinCategory": "Ամրացնել Գլխավորում",
+  "unpinCategory": "Ապամրացնել Գլխավորից",
   "clearSearch": "Մաքրել որոնումը",
   "tripPurposeTitle": "Ճամփորդության պատճառը",
   "tripPurposeHoliday": "Արձակուրդ",
@@ -2632,6 +2632,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count}-ի ժամկետը լրանում է 7 օրում} other{{count}-ի ժամկետը լրանում է 7 օրում}}",
   "expiresWithin30Badge": "{count, plural, =1{{count}-ի ժամկետը լրանում է 30 օրում} other{{count}-ի ժամկետը լրանում է 30 օրում}}",
   "allUpToDate": "Ամեն ինչ արդիական է",
+  "homeExpiredDaysAgo": "{count, plural, =1{Ժամկետը լրացել է երեկ} other{Ժամկետը լրացել է {count} օր առաջ}}",
+  "homeExpiresInDays": "{count, plural, =1{Ժամկետը լրանում է վաղը} other{Ժամկետը լրանում է {count} օրից}}",
+  "homeAllClearTitle": "30 օրում ոչինչ չի լրանում",
+  "homeAllClearNext": "Հաջորդը՝ {name}-ի ժամկետը լրանում է {date}",
+  "homePinHint": "Ամրացրեք ամենաշատ օգտագործվող կատեգորիաները։ Հպեք կատեգորիայի ⋮-ին։",
+  "pinnedToHome": "Ամրացված է Գլխավորում",
   "@expiredBadge": {
     "placeholders": {
       "count": {

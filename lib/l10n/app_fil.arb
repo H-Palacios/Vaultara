@@ -1982,8 +1982,8 @@
   "reminderHelpOpenApp": "Buksan ang mga setting ng app",
   "showPassword": "Ipakita ang password",
   "hidePassword": "Itago ang password",
-  "pinCategory": "I-pin sa itaas",
-  "unpinCategory": "I-unpin",
+  "pinCategory": "I-pin sa Home",
+  "unpinCategory": "Alisin sa Home",
   "clearSearch": "I-clear ang paghahanap",
   "tripPurposeTitle": "Dahilan ng biyahe",
   "tripPurposeHoliday": "Bakasyon",
@@ -2630,6 +2630,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} mag-e-expire sa loob ng 7 araw} other{{count} mag-e-expire sa loob ng 7 araw}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} mag-e-expire sa loob ng 30 araw} other{{count} mag-e-expire sa loob ng 30 araw}}",
   "allUpToDate": "Updated lahat",
+  "homeExpiredDaysAgo": "{count, plural, =1{Nag-expire kahapon} other{Nag-expire {count} araw na ang nakalipas}}",
+  "homeExpiresInDays": "{count, plural, =1{Mag-e-expire bukas} other{Mag-e-expire sa loob ng {count} araw}}",
+  "homeAllClearTitle": "Walang mag-e-expire sa loob ng 30 araw",
+  "homeAllClearNext": "Susunod: mag-e-expire ang {name} sa {date}",
+  "homePinHint": "I-pin ang mga kategoryang madalas mong gamitin. I-tap ang ⋮ sa isang kategorya.",
+  "pinnedToHome": "Naka-pin sa Home",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -1982,8 +1982,8 @@
   "reminderHelpOpenApp": "アプリの設定を開く",
   "showPassword": "パスワードを表示",
   "hidePassword": "パスワードを非表示",
-  "pinCategory": "先頭に固定",
-  "unpinCategory": "固定を解除",
+  "pinCategory": "ホームに固定",
+  "unpinCategory": "ホームから固定解除",
   "clearSearch": "検索をクリア",
   "tripPurposeTitle": "旅行の目的",
   "tripPurposeHoliday": "休暇",
@@ -2630,6 +2630,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count}件が7日以内に期限切れ} other{{count}件が7日以内に期限切れ}}",
   "expiresWithin30Badge": "{count, plural, =1{{count}件が30日以内に期限切れ} other{{count}件が30日以内に期限切れ}}",
   "allUpToDate": "すべて最新です",
+  "homeExpiredDaysAgo": "{count, plural, =1{昨日期限切れ} other{{count}日前に期限切れ}}",
+  "homeExpiresInDays": "{count, plural, =1{明日期限切れ} other{{count}日後に期限切れ}}",
+  "homeAllClearTitle": "30日以内に期限が来るものはありません",
+  "homeAllClearNext": "次：{name}は{date}に期限切れ",
+  "homePinHint": "よく使うカテゴリを固定しましょう。カテゴリの⋮をタップします。",
+  "pinnedToHome": "ホームに固定中",
   "@expiredBadge": {
     "placeholders": {
       "count": {

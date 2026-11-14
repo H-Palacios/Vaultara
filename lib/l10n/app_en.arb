@@ -7579,8 +7579,8 @@
   "reminderHelpOpenApp": "Open app settings",
   "showPassword": "Show password",
   "hidePassword": "Hide password",
-  "pinCategory": "Pin to top",
-  "unpinCategory": "Unpin",
+  "pinCategory": "Pin to Home",
+  "unpinCategory": "Unpin from Home",
   "clearSearch": "Clear search",
   "tripPurposeTitle": "Reason for the trip",
   "@tripPurposeTitle": {
@@ -9625,6 +9625,48 @@
   "allUpToDate": "All up to date",
   "@allUpToDate": {
     "description": "Status on a category or group card when nothing has expired or expires within 30 days."
+  },
+  "homeExpiredDaysAgo": "{count, plural, =1{Expired yesterday} other{Expired {count} days ago}}",
+  "@homeExpiredDaysAgo": {
+    "description": "Home list: when a record expired. count is days ago; 1 reads as yesterday.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeExpiresInDays": "{count, plural, =1{Expires tomorrow} other{Expires in {count} days}}",
+  "@homeExpiresInDays": {
+    "description": "Home list: when a record expires. count is days from today; 1 reads as tomorrow.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeAllClearTitle": "Nothing expires within 30 days",
+  "@homeAllClearTitle": {
+    "description": "Home, when nothing has expired and nothing expires within 30 days."
+  },
+  "homeAllClearNext": "Next: {name} expires on {date}",
+  "@homeAllClearNext": {
+    "description": "Home, under the all clear title: the next record to expire and its date.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "homePinHint": "Pin categories you use most. Tap ⋮ on a category.",
+  "@homePinHint": {
+    "description": "Home, in Pinned categories when nothing is pinned. Tapping it opens Categories. ⋮ is the menu button on a category card."
+  },
+  "pinnedToHome": "Pinned to Home",
+  "@pinnedToHome": {
+    "description": "Tooltip on the pin shown on a pinned category card."
   },
   "changeIcon": "Change icon",
   "@changeIcon": {

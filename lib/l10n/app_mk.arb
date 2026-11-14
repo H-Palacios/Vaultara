@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "Отвори ги поставките на апликацијата",
   "showPassword": "Прикажи лозинка",
   "hidePassword": "Сокриј лозинка",
-  "pinCategory": "Закачи горе",
-  "unpinCategory": "Откачи",
+  "pinCategory": "Закачи на Почетна",
+  "unpinCategory": "Откачи од Почетна",
   "clearSearch": "Исчисти пребарување",
   "tripPurposeTitle": "Причина за патувањето",
   "tripPurposeHoliday": "Одмор",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} истекува за 7 дена} other{{count} истекуваат за 7 дена}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} истекува за 30 дена} other{{count} истекуваат за 30 дена}}",
   "allUpToDate": "Сè е ажурно",
+  "homeExpiredDaysAgo": "{count, plural, =1{Истече вчера} other{Истече пред {count} дена}}",
+  "homeExpiresInDays": "{count, plural, =1{Истекува утре} other{Истекува за {count} дена}}",
+  "homeAllClearTitle": "Ништо не истекува за 30 дена",
+  "homeAllClearNext": "Следно: {name} истекува на {date}",
+  "homePinHint": "Закачете ги категориите што најчесто ги користите. Допрете ⋮ на категорија.",
+  "pinnedToHome": "Закачено на Почетна",
   "@expiredBadge": {
     "placeholders": {
       "count": {

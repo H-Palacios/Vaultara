@@ -3,6 +3,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/theme/record_status_colours.dart';
 import 'package:vaultara/features/home/logic/coming_up.dart';
+import 'package:vaultara/features/home/view/widgets/home_coming_up.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/insights/logic/busy_month.dart';
 
 TrackedItem _record(String name, DateTime expiry, {int? leadDays, int id = 1}) {
@@ -176,6 +178,48 @@ void main() {
           _record('R$i', DateTime(2028, 3, 5 + i), id: i + 1),
       ];
       expect(BusyMonth.of(far, today: today), isNull);
+    });
+  });
+
+  group('Home expiry list', () {
+    final records = [
+      _record('Old', today.subtract(const Duration(days: 3)), id: 1),
+      _record('Passport', today.add(const Duration(days: 2)), id: 2),
+      _record('Licence', today.add(const Duration(days: 18)), id: 3),
+      _record('Far', today.add(const Duration(days: 90)), id: 4),
+    ];
+    final loc = lookupAppLocalizations(const Locale('en'));
+
+    test('expired records come first, then by date', () {
+      final data = ComingUp.of(records, today: today);
+      expect(data.byUrgency.map((e) => e.record.name).toList(), [
+        'Old',
+        'Passport',
+        'Licence',
+      ]);
+    });
+
+    test('the heading gives exact counts', () {
+      final data = ComingUp.of(records, today: today);
+      expect(
+        HomeComingUp.headingOf(loc, data),
+        '1 expired · 2 expire within 30 days',
+      );
+    });
+
+    test('each row says exactly when', () {
+      expect([-1, -3, 0, 1, 6].map((d) => HomeComingUp.whenOf(loc, d)), [
+        'Expired yesterday',
+        'Expired 3 days ago',
+        'Expires today',
+        'Expires tomorrow',
+        'Expires in 6 days',
+      ]);
+    });
+
+    test('nothing to do when nothing expired or expires within 30 days', () {
+      final data = ComingUp.of([records.last], today: today);
+      expect(data.nothingToDo, isTrue);
     });
   });
 }

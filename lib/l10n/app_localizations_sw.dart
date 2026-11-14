@@ -6198,10 +6198,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get hidePassword => 'Ficha nenosiri';
 
   @override
-  String get pinCategory => 'Bandika juu';
+  String get pinCategory => 'Bandika Nyumbani';
 
   @override
-  String get unpinCategory => 'Ondoa kubandika';
+  String get unpinCategory => 'Ondoa Nyumbani';
 
   @override
   String get clearSearch => 'Futa utafutaji';
@@ -7943,6 +7943,42 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Kila kitu kiko sawa';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iliisha siku $count zilizopita',
+      one: 'Iliisha jana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Itaisha baada ya siku $count',
+      one: 'Itaisha kesho',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Hakuna kitakachoisha ndani ya siku 30';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Inayofuata: $name itaisha tarehe $date';
+  }
+
+  @override
+  String get homePinHint => 'Bandika aina unazotumia zaidi. Gusa ⋮ kwenye aina.';
+
+  @override
+  String get pinnedToHome => 'Imebandikwa Nyumbani';
 
   @override
   String get changeIcon => 'Badilisha aikoni';

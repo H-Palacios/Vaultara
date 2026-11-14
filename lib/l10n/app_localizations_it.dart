@@ -6205,10 +6205,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get hidePassword => 'Nascondi password';
 
   @override
-  String get pinCategory => 'Fissa in alto';
+  String get pinCategory => 'Fissa nella Home';
 
   @override
-  String get unpinCategory => 'Rimuovi dall’alto';
+  String get unpinCategory => 'Togli dalla Home';
 
   @override
   String get clearSearch => 'Cancella ricerca';
@@ -7954,6 +7954,42 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Tutto in regola';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Scaduto $count giorni fa',
+      one: 'Scaduto ieri',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Scade tra $count giorni',
+      one: 'Scade domani',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Niente scade entro 30 giorni';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Prossimo: $name scade il $date';
+  }
+
+  @override
+  String get homePinHint => 'Fissa le categorie che usi di più. Tocca ⋮ su una categoria.';
+
+  @override
+  String get pinnedToHome => 'Fissata nella Home';
 
   @override
   String get changeIcon => 'Cambia icona';

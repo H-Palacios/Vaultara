@@ -6198,10 +6198,10 @@ class AppLocalizationsXh extends AppLocalizations {
   String get hidePassword => 'Fihla igama lokugqitha';
 
   @override
-  String get pinCategory => 'Ncamathelisa phezulu';
+  String get pinCategory => 'Bethelela eKhaya';
 
   @override
-  String get unpinCategory => 'Susa ukuncamathelisa';
+  String get unpinCategory => 'Susa eKhaya';
 
   @override
   String get clearSearch => 'Cima ukukhangela';
@@ -7943,6 +7943,42 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Konke kuhlaziyiwe';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iphelelwe kwiintsuku ezi-$count ezidlulileyo',
+      one: 'Iphelelwe izolo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iphelelwa kwiintsuku ezi-$count',
+      one: 'Iphelelwa ngomso',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Akukho nto iphelelwa kwiintsuku ezingama-30';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Okulandelayo: $name iphelelwa ngomhla $date';
+  }
+
+  @override
+  String get homePinHint => 'Bethelela iindidi ozisebenzisa kakhulu. Cofa ⋮ kudidi.';
+
+  @override
+  String get pinnedToHome => 'Ibethelelwe eKhaya';
 
   @override
   String get changeIcon => 'Tshintsha uphawu';

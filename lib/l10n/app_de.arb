@@ -2001,8 +2001,8 @@
   "reminderHelpOpenApp": "App-Einstellungen öffnen",
   "showPassword": "Passwort anzeigen",
   "hidePassword": "Passwort ausblenden",
-  "pinCategory": "Oben anheften",
-  "unpinCategory": "Lösen",
+  "pinCategory": "An Start anheften",
+  "unpinCategory": "Von Start lösen",
   "clearSearch": "Suche löschen",
   "tripPurposeTitle": "Reisegrund",
   "tripPurposeHoliday": "Urlaub",
@@ -2649,6 +2649,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} läuft innerhalb von 7 Tagen ab} other{{count} laufen innerhalb von 7 Tagen ab}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} läuft innerhalb von 30 Tagen ab} other{{count} laufen innerhalb von 30 Tagen ab}}",
   "allUpToDate": "Alles aktuell",
+  "homeExpiredDaysAgo": "{count, plural, =1{Gestern abgelaufen} other{Vor {count} Tagen abgelaufen}}",
+  "homeExpiresInDays": "{count, plural, =1{Läuft morgen ab} other{Läuft in {count} Tagen ab}}",
+  "homeAllClearTitle": "Innerhalb von 30 Tagen läuft nichts ab",
+  "homeAllClearNext": "Als Nächstes: {name} läuft am {date} ab",
+  "homePinHint": "Hefte die Kategorien an, die du am meisten nutzt. Tippe bei einer Kategorie auf ⋮.",
+  "pinnedToHome": "An Start angeheftet",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -6198,10 +6198,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get hidePassword => 'Piilota salasana';
 
   @override
-  String get pinCategory => 'Kiinnitä ylös';
+  String get pinCategory => 'Kiinnitä Kotiin';
 
   @override
-  String get unpinCategory => 'Poista kiinnitys';
+  String get unpinCategory => 'Poista kiinnitys Kotiin';
 
   @override
   String get clearSearch => 'Tyhjennä haku';
@@ -7947,6 +7947,42 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Kaikki ajan tasalla';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vanheni $count päivää sitten',
+      one: 'Vanheni eilen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vanhenee $count päivän päästä',
+      one: 'Vanhenee huomenna',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Mikään ei vanhene 30 päivän kuluessa';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Seuraavaksi: $name vanhenee $date';
+  }
+
+  @override
+  String get homePinHint => 'Kiinnitä eniten käyttämäsi luokat. Napauta luokan kohdalla ⋮.';
+
+  @override
+  String get pinnedToHome => 'Kiinnitetty Kotiin';
 
   @override
   String get changeIcon => 'Vaihda kuvake';

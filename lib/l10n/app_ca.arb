@@ -2001,8 +2001,8 @@
   "reminderHelpOpenApp": "Obre la configuració de l’aplicació",
   "showPassword": "Mostra la contrasenya",
   "hidePassword": "Amaga la contrasenya",
-  "pinCategory": "Fixa a la part superior",
-  "unpinCategory": "Deixa de fixar",
+  "pinCategory": "Fixa a l’Inici",
+  "unpinCategory": "Deixa de fixar a l’Inici",
   "clearSearch": "Esborra la cerca",
   "tripPurposeTitle": "Motiu del viatge",
   "tripPurposeHoliday": "Vacances",
@@ -2649,6 +2649,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} venç en 7 dies} other{{count} vencen en 7 dies}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} venç en 30 dies} other{{count} vencen en 30 dies}}",
   "allUpToDate": "Tot al dia",
+  "homeExpiredDaysAgo": "{count, plural, =1{Va vèncer ahir} other{Va vèncer fa {count} dies}}",
+  "homeExpiresInDays": "{count, plural, =1{Venç demà} other{Venç d’aquí a {count} dies}}",
+  "homeAllClearTitle": "No venç res en 30 dies",
+  "homeAllClearNext": "Següent: {name} venç el {date}",
+  "homePinHint": "Fixa les categories que més fas servir. Toca ⋮ en una categoria.",
+  "pinnedToHome": "Fixada a l’Inici",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "앱 설정 열기",
   "showPassword": "비밀번호 표시",
   "hidePassword": "비밀번호 숨기기",
-  "pinCategory": "맨 위에 고정",
-  "unpinCategory": "고정 해제",
+  "pinCategory": "홈에 고정",
+  "unpinCategory": "홈에서 고정 해제",
   "clearSearch": "검색어 지우기",
   "tripPurposeTitle": "여행 목적",
   "tripPurposeHoliday": "휴가",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count}개가 7일 이내 만료} other{{count}개가 7일 이내 만료}}",
   "expiresWithin30Badge": "{count, plural, =1{{count}개가 30일 이내 만료} other{{count}개가 30일 이내 만료}}",
   "allUpToDate": "모두 최신 상태",
+  "homeExpiredDaysAgo": "{count, plural, =1{어제 만료됨} other{{count}일 전에 만료됨}}",
+  "homeExpiresInDays": "{count, plural, =1{내일 만료} other{{count}일 후 만료}}",
+  "homeAllClearTitle": "30일 이내에 만료되는 항목이 없습니다",
+  "homeAllClearNext": "다음: {name} {date} 만료",
+  "homePinHint": "자주 쓰는 카테고리를 고정하세요. 카테고리의 ⋮을 탭하세요.",
+  "pinnedToHome": "홈에 고정됨",
   "@expiredBadge": {
     "placeholders": {
       "count": {

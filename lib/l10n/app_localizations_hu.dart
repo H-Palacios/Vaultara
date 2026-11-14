@@ -6198,10 +6198,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get hidePassword => 'Jelszó elrejtése';
 
   @override
-  String get pinCategory => 'Kitűzés felülre';
+  String get pinCategory => 'Rögzítés a Kezdőlapon';
 
   @override
-  String get unpinCategory => 'Kitűzés megszüntetése';
+  String get unpinCategory => 'Rögzítés feloldása';
 
   @override
   String get clearSearch => 'Keresés törlése';
@@ -7943,6 +7943,42 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Minden naprakész';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count napja lejárt',
+      one: 'Tegnap lejárt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nap múlva lejár',
+      one: 'Holnap lejár',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 napon belül semmi sem jár le';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Következő: $name lejár: $date';
+  }
+
+  @override
+  String get homePinHint => 'Rögzítsd a legtöbbet használt kategóriákat. Koppints a ⋮ ikonra egy kategóriánál.';
+
+  @override
+  String get pinnedToHome => 'Rögzítve a Kezdőlapon';
 
   @override
   String get changeIcon => 'Ikon módosítása';

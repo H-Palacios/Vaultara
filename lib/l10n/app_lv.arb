@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "Atvērt lietotnes iestatījumus",
   "showPassword": "Rādīt paroli",
   "hidePassword": "Slēpt paroli",
-  "pinCategory": "Piespraust augšā",
-  "unpinCategory": "Atspraust",
+  "pinCategory": "Piespraust Sākumam",
+  "unpinCategory": "Atspraust no Sākuma",
   "clearSearch": "Notīrīt meklēšanu",
   "tripPurposeTitle": "Ceļojuma iemesls",
   "tripPurposeHoliday": "Atvaļinājums",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} beidzas 7 dienu laikā} other{{count} beidzas 7 dienu laikā}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} beidzas 30 dienu laikā} other{{count} beidzas 30 dienu laikā}}",
   "allUpToDate": "Viss ir aktuāls",
+  "homeExpiredDaysAgo": "{count, plural, =1{Beidzās vakar} other{Beidzās pirms {count} dienām}}",
+  "homeExpiresInDays": "{count, plural, =1{Beidzas rīt} other{Beidzas pēc {count} dienām}}",
+  "homeAllClearTitle": "30 dienu laikā nekas nebeidzas",
+  "homeAllClearNext": "Nākamais: {name} beidzas {date}",
+  "homePinHint": "Piespraudiet visbiežāk lietotās kategorijas. Pieskarieties ⋮ pie kategorijas.",
+  "pinnedToHome": "Piesprausts Sākumam",
   "@expiredBadge": {
     "placeholders": {
       "count": {

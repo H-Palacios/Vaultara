@@ -1987,8 +1987,8 @@
   "reminderHelpOpenApp": "Відкрити налаштування застосунку",
   "showPassword": "Показати пароль",
   "hidePassword": "Сховати пароль",
-  "pinCategory": "Закріпити вгорі",
-  "unpinCategory": "Відкріпити",
+  "pinCategory": "Закріпити на головній",
+  "unpinCategory": "Відкріпити з головної",
   "clearSearch": "Очистити пошук",
   "tripPurposeTitle": "Мета поїздки",
   "tripPurposeHoliday": "Відпочинок",
@@ -2635,6 +2635,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} спливає протягом 7 днів} other{{count} спливають протягом 7 днів}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} спливає протягом 30 днів} other{{count} спливають протягом 30 днів}}",
   "allUpToDate": "Усе актуально",
+  "homeExpiredDaysAgo": "{count, plural, =1{Сплив учора} other{Сплив {count} дн. тому}}",
+  "homeExpiresInDays": "{count, plural, =1{Спливає завтра} other{Спливає через {count} дн.}}",
+  "homeAllClearTitle": "За 30 днів нічого не спливає",
+  "homeAllClearNext": "Далі: {name} спливає {date}",
+  "homePinHint": "Закріпіть категорії, якими користуєтеся найчастіше. Торкніться ⋮ біля категорії.",
+  "pinnedToHome": "Закріплено на головній",
   "@expiredBadge": {
     "placeholders": {
       "count": {

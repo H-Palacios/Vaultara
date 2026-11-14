@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "ເປີດການຕັ້ງຄ່າແອັບ",
   "showPassword": "ສະແດງລະຫັດຜ່ານ",
   "hidePassword": "ເຊື່ອງລະຫັດຜ່ານ",
-  "pinCategory": "ປັກໝຸດຢູ່ເທິງ",
-  "unpinCategory": "ຖອນໝຸດ",
+  "pinCategory": "ປັກໝຸດໄວ້ໜ້າຫຼັກ",
+  "unpinCategory": "ຖອນອອກຈາກໜ້າຫຼັກ",
   "clearSearch": "ລຶບການຄົ້ນຫາ",
   "tripPurposeTitle": "ເຫດຜົນຂອງການເດີນທາງ",
   "tripPurposeHoliday": "ພັກຜ່ອນ",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ໝົດອາຍຸພາຍໃນ 7 ມື້} other{{count} ໝົດອາຍຸພາຍໃນ 7 ມື້}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ໝົດອາຍຸພາຍໃນ 30 ມື້} other{{count} ໝົດອາຍຸພາຍໃນ 30 ມື້}}",
   "allUpToDate": "ທຸກຢ່າງເປັນປັດຈຸບັນ",
+  "homeExpiredDaysAgo": "{count, plural, =1{ໝົດອາຍຸມື້ວານ} other{ໝົດອາຍຸ {count} ມື້ກ່ອນ}}",
+  "homeExpiresInDays": "{count, plural, =1{ໝົດອາຍຸມື້ອື່ນ} other{ໝົດອາຍຸໃນ {count} ມື້}}",
+  "homeAllClearTitle": "ບໍ່ມີຫຍັງໝົດອາຍຸພາຍໃນ 30 ມື້",
+  "homeAllClearNext": "ຕໍ່ໄປ: {name} ໝົດອາຍຸວັນທີ {date}",
+  "homePinHint": "ປັກໝຸດໝວດທີ່ທ່ານໃຊ້ຫຼາຍທີ່ສຸດ. ແຕະ ⋮ ຢູ່ໝວດໃດໜຶ່ງ.",
+  "pinnedToHome": "ປັກໝຸດໄວ້ໜ້າຫຼັກ",
   "@expiredBadge": {
     "placeholders": {
       "count": {

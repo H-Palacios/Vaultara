@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "Колдонмонун жөндөөлөрүн ачуу",
   "showPassword": "Сырсөздү көрсөтүү",
   "hidePassword": "Сырсөздү жашыруу",
-  "pinCategory": "Жогоруга кадоо",
-  "unpinCategory": "Кадоону алып салуу",
+  "pinCategory": "Башкы бетке бекитүү",
+  "unpinCategory": "Башкы беттен алуу",
   "clearSearch": "Издөөнү тазалоо",
   "tripPurposeTitle": "Сапардын себеби",
   "tripPurposeHoliday": "Эс алуу",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 күндүн ичинде бүтөт} other{{count} 7 күндүн ичинде бүтөт}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 күндүн ичинде бүтөт} other{{count} 30 күндүн ичинде бүтөт}}",
   "allUpToDate": "Баары жаңыланган",
+  "homeExpiredDaysAgo": "{count, plural, =1{Кечээ бүткөн} other{{count} күн мурун бүткөн}}",
+  "homeExpiresInDays": "{count, plural, =1{Эртең бүтөт} other{{count} күндөн кийин бүтөт}}",
+  "homeAllClearTitle": "30 күндүн ичинде эч нерсе бүтпөйт",
+  "homeAllClearNext": "Кийинки: {name} {date} бүтөт",
+  "homePinHint": "Көп колдонгон категорияларды бекитиңиз. Категориядагы ⋮ басыңыз.",
+  "pinnedToHome": "Башкы бетке бекитилген",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -6198,10 +6198,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get hidePassword => 'Ezkutatu pasahitza';
 
   @override
-  String get pinCategory => 'Finkatu goian';
+  String get pinCategory => 'Ainguratu Hasieran';
 
   @override
-  String get unpinCategory => 'Desfinkatu';
+  String get unpinCategory => 'Kendu Hasieratik';
 
   @override
   String get clearSearch => 'Garbitu bilaketa';
@@ -7947,6 +7947,42 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Dena eguneratuta';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Duela $count egun iraungi zen',
+      one: 'Atzo iraungi zen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count egun barru iraungitzen da',
+      one: 'Bihar iraungitzen da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Ez da ezer iraungitzen 30 egunean';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Hurrengoa: $name $date(e)an iraungitzen da';
+  }
+
+  @override
+  String get homePinHint => 'Ainguratu gehien erabiltzen dituzun kategoriak. Sakatu ⋮ kategoria batean.';
+
+  @override
+  String get pinnedToHome => 'Hasieran ainguratuta';
 
   @override
   String get changeIcon => 'Aldatu ikonoa';

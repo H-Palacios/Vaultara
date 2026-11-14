@@ -1982,8 +1982,8 @@
   "reminderHelpOpenApp": "ऐप सेटिंग खोलें",
   "showPassword": "पासवर्ड दिखाएं",
   "hidePassword": "पासवर्ड छिपाएं",
-  "pinCategory": "ऊपर पिन करें",
-  "unpinCategory": "पिन हटाएं",
+  "pinCategory": "होम पर पिन करें",
+  "unpinCategory": "होम से हटाएँ",
   "clearSearch": "खोज साफ़ करें",
   "tripPurposeTitle": "यात्रा का कारण",
   "tripPurposeHoliday": "छुट्टी",
@@ -2630,6 +2630,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 दिनों में समाप्त} other{{count} 7 दिनों में समाप्त}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 दिनों में समाप्त} other{{count} 30 दिनों में समाप्त}}",
   "allUpToDate": "सब अप टू डेट",
+  "homeExpiredDaysAgo": "{count, plural, =1{कल समाप्त हुआ} other{{count} दिन पहले समाप्त हुआ}}",
+  "homeExpiresInDays": "{count, plural, =1{कल समाप्त होगा} other{{count} दिनों में समाप्त होगा}}",
+  "homeAllClearTitle": "30 दिनों में कुछ समाप्त नहीं हो रहा",
+  "homeAllClearNext": "अगला: {name} {date} को समाप्त होगा",
+  "homePinHint": "सबसे ज़्यादा इस्तेमाल होने वाली श्रेणियाँ पिन करें। किसी श्रेणी पर ⋮ टैप करें।",
+  "pinnedToHome": "होम पर पिन है",
   "@expiredBadge": {
     "placeholders": {
       "count": {

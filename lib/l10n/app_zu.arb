@@ -1962,8 +1962,8 @@
   "reminderHelpOpenApp": "Vula amasethingi ohlelo lokusebenza",
   "showPassword": "Bonisa iphasiwedi",
   "hidePassword": "Fihla iphasiwedi",
-  "pinCategory": "Phina ngaphezulu",
-  "unpinCategory": "Susa ukuphina",
+  "pinCategory": "Phina eKhaya",
+  "unpinCategory": "Susa eKhaya",
   "clearSearch": "Cisha ukusesha",
   "tripPurposeTitle": "Isizathu sohambo",
   "tripPurposeHoliday": "Iholide",
@@ -2610,6 +2610,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} iphelelwa ezinsukwini ezi-7} other{{count} ziphelelwa ezinsukwini ezi-7}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} iphelelwa ezinsukwini ezingu-30} other{{count} ziphelelwa ezinsukwini ezingu-30}}",
   "allUpToDate": "Konke kusesikhathini",
+  "homeExpiredDaysAgo": "{count, plural, =1{Iphelelwe izolo} other{Iphelelwe ezinsukwini ezingu-{count} ezedlule}}",
+  "homeExpiresInDays": "{count, plural, =1{Iphelelwa kusasa} other{Iphelelwa ezinsukwini ezingu-{count}}}",
+  "homeAllClearTitle": "Akukho okuphelelwa ezinsukwini ezingu-30",
+  "homeAllClearNext": "Okulandelayo: {name} iphelelwa ngo-{date}",
+  "homePinHint": "Phina izigaba ozisebenzisa kakhulu. Thepha ⋮ esigabeni.",
+  "pinnedToHome": "Kuphiniwe eKhaya",
   "@expiredBadge": {
     "placeholders": {
       "count": {

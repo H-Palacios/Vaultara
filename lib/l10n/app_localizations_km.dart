@@ -6145,10 +6145,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get hidePassword => 'លាក់ពាក្យសម្ងាត់';
 
   @override
-  String get pinCategory => 'ខ្ទាស់នៅខាងលើ';
+  String get pinCategory => 'ខ្ទាស់នៅទំព័រដើម';
 
   @override
-  String get unpinCategory => 'ដកការខ្ទាស់';
+  String get unpinCategory => 'ដកចេញពីទំព័រដើម';
 
   @override
   String get clearSearch => 'សម្អាតការស្វែងរក';
@@ -7883,6 +7883,42 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get allUpToDate => 'ទាន់សម័យទាំងអស់';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ផុតកំណត់ $count ថ្ងៃមុន',
+      one: 'ផុតកំណត់ម្សិលមិញ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ផុតកំណត់ក្នុង $count ថ្ងៃ',
+      one: 'ផុតកំណត់ថ្ងៃស្អែក',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'គ្មានអ្វីផុតកំណត់ក្នុង 30 ថ្ងៃ';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'បន្ទាប់៖ $name ផុតកំណត់នៅ $date';
+  }
+
+  @override
+  String get homePinHint => 'ខ្ទាស់ប្រភេទដែលអ្នកប្រើច្រើនបំផុត។ ចុច ⋮ លើប្រភេទមួយ។';
+
+  @override
+  String get pinnedToHome => 'បានខ្ទាស់នៅទំព័រដើម';
 
   @override
   String get changeIcon => 'ប្ដូររូបតំណាង';

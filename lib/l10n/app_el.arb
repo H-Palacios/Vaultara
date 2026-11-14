@@ -1977,8 +1977,8 @@
   "reminderHelpOpenApp": "Άνοιγμα ρυθμίσεων εφαρμογής",
   "showPassword": "Εμφάνιση κωδικού",
   "hidePassword": "Απόκρυψη κωδικού",
-  "pinCategory": "Καρφίτσωμα στην κορυφή",
-  "unpinCategory": "Ξεκαρφίτσωμα",
+  "pinCategory": "Καρφίτσωμα στην Αρχική",
+  "unpinCategory": "Ξεκαρφίτσωμα από την Αρχική",
   "clearSearch": "Εκκαθάριση αναζήτησης",
   "tripPurposeTitle": "Λόγος ταξιδιού",
   "tripPurposeHoliday": "Διακοπές",
@@ -2625,6 +2625,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} λήγει μέσα σε 7 ημέρες} other{{count} λήγουν μέσα σε 7 ημέρες}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} λήγει μέσα σε 30 ημέρες} other{{count} λήγουν μέσα σε 30 ημέρες}}",
   "allUpToDate": "Όλα ενημερωμένα",
+  "homeExpiredDaysAgo": "{count, plural, =1{Έληξε χθες} other{Έληξε πριν από {count} ημέρες}}",
+  "homeExpiresInDays": "{count, plural, =1{Λήγει αύριο} other{Λήγει σε {count} ημέρες}}",
+  "homeAllClearTitle": "Τίποτα δεν λήγει μέσα σε 30 ημέρες",
+  "homeAllClearNext": "Επόμενο: {name} λήγει στις {date}",
+  "homePinHint": "Καρφιτσώστε τις κατηγορίες που χρησιμοποιείτε περισσότερο. Πατήστε ⋮ σε μια κατηγορία.",
+  "pinnedToHome": "Καρφιτσωμένο στην Αρχική",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "යෙදුම් සැකසුම් විවෘත කරන්න",
   "showPassword": "මුරපදය පෙන්වන්න",
   "hidePassword": "මුරපදය සඟවන්න",
-  "pinCategory": "ඉහළට පින් කරන්න",
-  "unpinCategory": "පින් ඉවත් කරන්න",
+  "pinCategory": "මුල් පිටුවට අමුණන්න",
+  "unpinCategory": "මුල් පිටුවෙන් ඉවත් කරන්න",
   "clearSearch": "සෙවුම හිස් කරන්න",
   "tripPurposeTitle": "ගමනේ හේතුව",
   "tripPurposeHoliday": "නිවාඩුව",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} දින 7ක් තුළ ඉකුත් වේ} other{{count} දින 7ක් තුළ ඉකුත් වේ}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} දින 30ක් තුළ ඉකුත් වේ} other{{count} දින 30ක් තුළ ඉකුත් වේ}}",
   "allUpToDate": "සියල්ල යාවත්කාලීනයි",
+  "homeExpiredDaysAgo": "{count, plural, =1{ඊයේ ඉකුත් විය} other{දින {count}කට පෙර ඉකුත් විය}}",
+  "homeExpiresInDays": "{count, plural, =1{හෙට ඉකුත් වේ} other{දින {count}කින් ඉකුත් වේ}}",
+  "homeAllClearTitle": "දින 30ක් තුළ කිසිවක් ඉකුත් නොවේ",
+  "homeAllClearNext": "ඊළඟ: {name} {date} දින ඉකුත් වේ",
+  "homePinHint": "වැඩිපුරම භාවිත කරන කාණ්ඩ අමුණන්න. කාණ්ඩයක ⋮ තට්ටු කරන්න.",
+  "pinnedToHome": "මුල් පිටුවට අමුණා ඇත",
   "@expiredBadge": {
     "placeholders": {
       "count": {

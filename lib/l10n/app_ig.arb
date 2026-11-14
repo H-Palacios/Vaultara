@@ -1975,8 +1975,8 @@
   "reminderHelpOpenApp": "Meghee ntọala ngwa",
   "showPassword": "Gosi okwuntughe",
   "hidePassword": "Zoo okwuntughe",
-  "pinCategory": "Kpọchie n’elu",
-  "unpinCategory": "Wepụ nkpọchi",
+  "pinCategory": "Jikọta na Ụlọ",
+  "unpinCategory": "Wepụ na Ụlọ",
   "clearSearch": "Hichapụ ọchụchọ",
   "tripPurposeTitle": "Ihe kpatara njem",
   "tripPurposeHoliday": "Ezumike",
@@ -2623,6 +2623,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ga-agwụ n’ime ụbọchị 7} other{{count} ga-agwụ n’ime ụbọchị 7}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ga-agwụ n’ime ụbọchị 30} other{{count} ga-agwụ n’ime ụbọchị 30}}",
   "allUpToDate": "Ihe niile dị ọhụrụ",
+  "homeExpiredDaysAgo": "{count, plural, =1{Gwụrụ ụnyaahụ} other{Gwụrụ ụbọchị {count} gara aga}}",
+  "homeExpiresInDays": "{count, plural, =1{Ga-agwụ echi} other{Ga-agwụ n’ime ụbọchị {count}}}",
+  "homeAllClearTitle": "Ọ dịghị ihe ga-agwụ n’ime ụbọchị 30",
+  "homeAllClearNext": "Ọzọ: {name} ga-agwụ na {date}",
+  "homePinHint": "Pịnụ ụdị ndị ị na-ejikarị. Pịa ⋮ n’otu ụdị.",
+  "pinnedToHome": "Ejikọtara na Ụlọ",
   "@expiredBadge": {
     "placeholders": {
       "count": {

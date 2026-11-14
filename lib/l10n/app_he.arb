@@ -1975,8 +1975,8 @@
   "reminderHelpOpenApp": "פתח הגדרות אפליקציה",
   "showPassword": "הצג סיסמה",
   "hidePassword": "הסתר סיסמה",
-  "pinCategory": "הצמד למעלה",
-  "unpinCategory": "בטל הצמדה",
+  "pinCategory": "הצמדה לבית",
+  "unpinCategory": "ביטול הצמדה לבית",
   "clearSearch": "נקה חיפוש",
   "tripPurposeTitle": "סיבת הנסיעה",
   "tripPurposeHoliday": "חופשה",
@@ -2623,6 +2623,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} פג בתוך 7 ימים} other{{count} פגים בתוך 7 ימים}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} פג בתוך 30 ימים} other{{count} פגים בתוך 30 ימים}}",
   "allUpToDate": "הכול מעודכן",
+  "homeExpiredDaysAgo": "{count, plural, =1{פג אתמול} other{פג לפני {count} ימים}}",
+  "homeExpiresInDays": "{count, plural, =1{פג מחר} other{פג בעוד {count} ימים}}",
+  "homeAllClearTitle": "שום דבר לא פג בתוך 30 ימים",
+  "homeAllClearNext": "הבא: {name} פג ב־{date}",
+  "homePinHint": "הצמידו את הקטגוריות שבהן אתם משתמשים הכי הרבה. הקישו ⋮ בקטגוריה.",
+  "pinnedToHome": "מוצמד לבית",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -6198,10 +6198,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get hidePassword => 'Peida parool';
 
   @override
-  String get pinCategory => 'Kinnita üles';
+  String get pinCategory => 'Kinnita avalehele';
 
   @override
-  String get unpinCategory => 'Eemalda kinnitus';
+  String get unpinCategory => 'Eemalda avalehelt';
 
   @override
   String get clearSearch => 'Tühjenda otsing';
@@ -7947,6 +7947,42 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Kõik on korras';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aegus $count päeva tagasi',
+      one: 'Aegus eile',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aegub $count päeva pärast',
+      one: 'Aegub homme',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 päeva jooksul ei aegu midagi';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Järgmine: $name aegub $date';
+  }
+
+  @override
+  String get homePinHint => 'Kinnita kategooriad, mida kõige rohkem kasutad. Puuduta kategooria juures ⋮.';
+
+  @override
+  String get pinnedToHome => 'Avalehele kinnitatud';
 
   @override
   String get changeIcon => 'Muuda ikooni';

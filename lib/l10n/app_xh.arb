@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Vula iisetingi zesicelo",
   "showPassword": "Bonisa igama lokugqitha",
   "hidePassword": "Fihla igama lokugqitha",
-  "pinCategory": "Ncamathelisa phezulu",
-  "unpinCategory": "Susa ukuncamathelisa",
+  "pinCategory": "Bethelela eKhaya",
+  "unpinCategory": "Susa eKhaya",
   "clearSearch": "Cima ukukhangela",
   "tripPurposeTitle": "Isizathu sohambo",
   "tripPurposeHoliday": "Iholide",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} iphelelwa kwiintsuku ezi-7} other{{count} ziphelelwa kwiintsuku ezi-7}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} iphelelwa kwiintsuku ezingama-30} other{{count} ziphelelwa kwiintsuku ezingama-30}}",
   "allUpToDate": "Konke kuhlaziyiwe",
+  "homeExpiredDaysAgo": "{count, plural, =1{Iphelelwe izolo} other{Iphelelwe kwiintsuku ezi-{count} ezidlulileyo}}",
+  "homeExpiresInDays": "{count, plural, =1{Iphelelwa ngomso} other{Iphelelwa kwiintsuku ezi-{count}}}",
+  "homeAllClearTitle": "Akukho nto iphelelwa kwiintsuku ezingama-30",
+  "homeAllClearNext": "Okulandelayo: {name} iphelelwa ngomhla {date}",
+  "homePinHint": "Bethelela iindidi ozisebenzisa kakhulu. Cofa ⋮ kudidi.",
+  "pinnedToHome": "Ibethelelwe eKhaya",
   "@expiredBadge": {
     "placeholders": {
       "count": {

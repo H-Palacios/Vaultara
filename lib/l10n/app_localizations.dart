@@ -10582,13 +10582,13 @@ abstract class AppLocalizations {
   /// No description provided for @pinCategory.
   ///
   /// In en, this message translates to:
-  /// **'Pin to top'**
+  /// **'Pin to Home'**
   String get pinCategory;
 
   /// No description provided for @unpinCategory.
   ///
   /// In en, this message translates to:
-  /// **'Unpin'**
+  /// **'Unpin from Home'**
   String get unpinCategory;
 
   /// No description provided for @clearSearch.
@@ -13716,6 +13716,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'All up to date'**
   String get allUpToDate;
+
+  /// Home list: when a record expired. count is days ago; 1 reads as yesterday.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Expired yesterday} other{Expired {count} days ago}}'**
+  String homeExpiredDaysAgo(int count);
+
+  /// Home list: when a record expires. count is days from today; 1 reads as tomorrow.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Expires tomorrow} other{Expires in {count} days}}'**
+  String homeExpiresInDays(int count);
+
+  /// Home, when nothing has expired and nothing expires within 30 days.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing expires within 30 days'**
+  String get homeAllClearTitle;
+
+  /// Home, under the all clear title: the next record to expire and its date.
+  ///
+  /// In en, this message translates to:
+  /// **'Next: {name} expires on {date}'**
+  String homeAllClearNext(String name, String date);
+
+  /// Home, in Pinned categories when nothing is pinned. Tapping it opens Categories. ⋮ is the menu button on a category card.
+  ///
+  /// In en, this message translates to:
+  /// **'Pin categories you use most. Tap ⋮ on a category.'**
+  String get homePinHint;
+
+  /// Tooltip on the pin shown on a pinned category card.
+  ///
+  /// In en, this message translates to:
+  /// **'Pinned to Home'**
+  String get pinnedToHome;
 
   /// Menu item and sheet title for changing a custom category's icon.
   ///

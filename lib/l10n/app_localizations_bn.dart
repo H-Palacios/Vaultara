@@ -6198,10 +6198,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String get hidePassword => 'পাসওয়ার্ড লুকান';
 
   @override
-  String get pinCategory => 'উপরে পিন করুন';
+  String get pinCategory => 'হোমে পিন করুন';
 
   @override
-  String get unpinCategory => 'পিন সরান';
+  String get unpinCategory => 'হোম থেকে আনপিন করুন';
 
   @override
   String get clearSearch => 'অনুসন্ধান মুছুন';
@@ -7943,6 +7943,42 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get allUpToDate => 'সব হালনাগাদ';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count দিন আগে মেয়াদ শেষ',
+      one: 'গতকাল মেয়াদ শেষ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count দিন পরে মেয়াদ শেষ',
+      one: 'আগামীকাল মেয়াদ শেষ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '৩০ দিনের মধ্যে কিছুর মেয়াদ শেষ হচ্ছে না';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'পরবর্তী: $name-এর মেয়াদ শেষ $date';
+  }
+
+  @override
+  String get homePinHint => 'যে বিভাগগুলো বেশি ব্যবহার করেন সেগুলো পিন করুন। কোনো বিভাগে ⋮ ট্যাপ করুন।';
+
+  @override
+  String get pinnedToHome => 'হোমে পিন করা';
 
   @override
   String get changeIcon => 'আইকন বদলান';

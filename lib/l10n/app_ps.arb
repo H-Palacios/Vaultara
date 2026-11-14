@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "د اپلیکېشن تنظیمات پرانیزئ",
   "showPassword": "پاسورډ ښکاره کړئ",
   "hidePassword": "پاسورډ پټ کړئ",
-  "pinCategory": "په سر کې ټینګ کړئ",
-  "unpinCategory": "ټینګښت لرې کړئ",
+  "pinCategory": "کور ته پن کړه",
+  "unpinCategory": "له کوره لرې کړه",
   "clearSearch": "لټون پاک کړئ",
   "tripPurposeTitle": "د سفر لامل",
   "tripPurposeHoliday": "رخصتي",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} په 7 ورځو کې پای ته رسیږي} other{{count} په 7 ورځو کې پای ته رسیږي}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} په 30 ورځو کې پای ته رسیږي} other{{count} په 30 ورځو کې پای ته رسیږي}}",
   "allUpToDate": "ټول تازه دي",
+  "homeExpiredDaysAgo": "{count, plural, =1{پرون پای ته ورسید} other{{count} ورځې مخکې پای ته ورسید}}",
+  "homeExpiresInDays": "{count, plural, =1{سبا پای ته رسیږي} other{په {count} ورځو کې پای ته رسیږي}}",
+  "homeAllClearTitle": "په 30 ورځو کې هیڅ پای ته نه رسیږي",
+  "homeAllClearNext": "بل: {name} په {date} پای ته رسیږي",
+  "homePinHint": "هغه کټګورۍ چې ډېرې یې کاروئ پن کړئ. په کټګورۍ ⋮ ټک کړئ.",
+  "pinnedToHome": "کور ته پن شوی",
   "@expiredBadge": {
     "placeholders": {
       "count": {

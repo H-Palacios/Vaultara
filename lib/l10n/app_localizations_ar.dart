@@ -6394,10 +6394,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get hidePassword => 'إخفاء كلمة المرور';
 
   @override
-  String get pinCategory => 'تثبيت في الأعلى';
+  String get pinCategory => 'تثبيت في الرئيسية';
 
   @override
-  String get unpinCategory => 'إلغاء التثبيت';
+  String get unpinCategory => 'إلغاء التثبيت من الرئيسية';
 
   @override
   String get clearSearch => 'مسح البحث';
@@ -8167,6 +8167,42 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get allUpToDate => 'كل شيء محدّث';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'انتهى قبل $count يومًا',
+      one: 'انتهى أمس',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ينتهي بعد $count يومًا',
+      one: 'ينتهي غدًا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'لا شيء ينتهي خلال 30 يومًا';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'التالي: $name ينتهي في $date';
+  }
+
+  @override
+  String get homePinHint => 'ثبّت الفئات التي تستخدمها كثيرًا. اضغط ⋮ على أي فئة.';
+
+  @override
+  String get pinnedToHome => 'مثبّتة في الرئيسية';
 
   @override
   String get changeIcon => 'تغيير الأيقونة';

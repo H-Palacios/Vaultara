@@ -6135,10 +6135,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get hidePassword => 'ซ่อนรหัสผ่าน';
 
   @override
-  String get pinCategory => 'ปักหมุดไว้ด้านบน';
+  String get pinCategory => 'ปักหมุดที่หน้าแรก';
 
   @override
-  String get unpinCategory => 'เลิกปักหมุด';
+  String get unpinCategory => 'เลิกปักหมุดจากหน้าแรก';
 
   @override
   String get clearSearch => 'ล้างการค้นหา';
@@ -7873,6 +7873,42 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get allUpToDate => 'ทุกอย่างเป็นปัจจุบัน';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'หมดอายุเมื่อ $count วันก่อน',
+      one: 'หมดอายุเมื่อวาน',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'หมดอายุในอีก $count วัน',
+      one: 'หมดอายุพรุ่งนี้',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'ไม่มีอะไรหมดอายุภายใน 30 วัน';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'ถัดไป: $name หมดอายุวันที่ $date';
+  }
+
+  @override
+  String get homePinHint => 'ปักหมุดหมวดที่คุณใช้บ่อยที่สุด แตะ ⋮ ที่หมวดหมู่';
+
+  @override
+  String get pinnedToHome => 'ปักหมุดไว้ที่หน้าแรก';
 
   @override
   String get changeIcon => 'เปลี่ยนไอคอน';

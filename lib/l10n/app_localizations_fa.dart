@@ -6198,10 +6198,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get hidePassword => 'پنهان کردن گذرواژه';
 
   @override
-  String get pinCategory => 'سنجاق در بالا';
+  String get pinCategory => 'سنجاق در خانه';
 
   @override
-  String get unpinCategory => 'برداشتن سنجاق';
+  String get unpinCategory => 'برداشتن سنجاق از خانه';
 
   @override
   String get clearSearch => 'پاک کردن جستجو';
@@ -7943,6 +7943,42 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get allUpToDate => 'همه‌چیز به‌روز است';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count روز پیش منقضی شد',
+      one: 'دیروز منقضی شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count روز دیگر منقضی می‌شود',
+      one: 'فردا منقضی می‌شود',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'چیزی ظرف ۳۰ روز منقضی نمی‌شود';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'بعدی: $name در $date منقضی می‌شود';
+  }
+
+  @override
+  String get homePinHint => 'دسته‌هایی را که بیشتر استفاده می‌کنید سنجاق کنید. روی ⋮ یک دسته بزنید.';
+
+  @override
+  String get pinnedToHome => 'سنجاق‌شده در خانه';
 
   @override
   String get changeIcon => 'تغییر نماد';

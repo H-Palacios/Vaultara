@@ -6198,10 +6198,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get hidePassword => 'Թաքցնել գաղտնաբառը';
 
   @override
-  String get pinCategory => 'Ամրացնել վերևում';
+  String get pinCategory => 'Ամրացնել Գլխավորում';
 
   @override
-  String get unpinCategory => 'Ապամրացնել';
+  String get unpinCategory => 'Ապամրացնել Գլխավորից';
 
   @override
   String get clearSearch => 'Մաքրել որոնումը';
@@ -7943,6 +7943,42 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Ամեն ինչ արդիական է';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ժամկետը լրացել է $count օր առաջ',
+      one: 'Ժամկետը լրացել է երեկ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ժամկետը լրանում է $count օրից',
+      one: 'Ժամկետը լրանում է վաղը',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 օրում ոչինչ չի լրանում';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Հաջորդը՝ $name-ի ժամկետը լրանում է $date';
+  }
+
+  @override
+  String get homePinHint => 'Ամրացրեք ամենաշատ օգտագործվող կատեգորիաները։ Հպեք կատեգորիայի ⋮-ին։';
+
+  @override
+  String get pinnedToHome => 'Ամրացված է Գլխավորում';
 
   @override
   String get changeIcon => 'Փոխել պատկերակը';

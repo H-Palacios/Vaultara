@@ -1720,8 +1720,8 @@
   "reminderHelpOpenApp": "បើកការកំណត់កម្មវិធី",
   "showPassword": "បង្ហាញពាក្យសម្ងាត់",
   "hidePassword": "លាក់ពាក្យសម្ងាត់",
-  "pinCategory": "ខ្ទាស់នៅខាងលើ",
-  "unpinCategory": "ដកការខ្ទាស់",
+  "pinCategory": "ខ្ទាស់នៅទំព័រដើម",
+  "unpinCategory": "ដកចេញពីទំព័រដើម",
   "clearSearch": "សម្អាតការស្វែងរក",
   "tripPurposeTitle": "មូលហេតុនៃការធ្វើដំណើរ",
   "tripPurposeHoliday": "វិស្សមកាល",
@@ -2368,6 +2368,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ផុតកំណត់ក្នុង 7 ថ្ងៃ} other{{count} ផុតកំណត់ក្នុង 7 ថ្ងៃ}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ផុតកំណត់ក្នុង 30 ថ្ងៃ} other{{count} ផុតកំណត់ក្នុង 30 ថ្ងៃ}}",
   "allUpToDate": "ទាន់សម័យទាំងអស់",
+  "homeExpiredDaysAgo": "{count, plural, =1{ផុតកំណត់ម្សិលមិញ} other{ផុតកំណត់ {count} ថ្ងៃមុន}}",
+  "homeExpiresInDays": "{count, plural, =1{ផុតកំណត់ថ្ងៃស្អែក} other{ផុតកំណត់ក្នុង {count} ថ្ងៃ}}",
+  "homeAllClearTitle": "គ្មានអ្វីផុតកំណត់ក្នុង 30 ថ្ងៃ",
+  "homeAllClearNext": "បន្ទាប់៖ {name} ផុតកំណត់នៅ {date}",
+  "homePinHint": "ខ្ទាស់ប្រភេទដែលអ្នកប្រើច្រើនបំផុត។ ចុច ⋮ លើប្រភេទមួយ។",
+  "pinnedToHome": "បានខ្ទាស់នៅទំព័រដើម",
   "@expiredBadge": {
     "placeholders": {
       "count": {

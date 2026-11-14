@@ -6197,10 +6197,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get hidePassword => 'Qari erayga sirta ah';
 
   @override
-  String get pinCategory => 'Sare ku xidh';
+  String get pinCategory => 'Ku dheji Hoyga';
 
   @override
-  String get unpinCategory => 'Ka saar xidhka';
+  String get unpinCategory => 'Ka saar Hoyga';
 
   @override
   String get clearSearch => 'Nadiifi raadinta';
@@ -7942,6 +7942,42 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Wax walba waa cusub yihiin';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count maalmood ka hor ayuu dhacay',
+      one: 'Shalay ayuu dhacay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count maalmood kadib ayuu dhacayaa',
+      one: 'Berri ayuu dhacayaa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Waxba ma dhacayaan 30 maalmood gudahood';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Xiga: $name wuxuu dhacayaa $date';
+  }
+
+  @override
+  String get homePinHint => 'Ku dheji qaybaha aad inta badan isticmaasho. Taabo ⋮ qayb kasta.';
+
+  @override
+  String get pinnedToHome => 'Lagu dhejiyay Hoyga';
 
   @override
   String get changeIcon => 'Beddel astaanta';

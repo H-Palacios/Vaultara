@@ -1975,8 +1975,8 @@
   "reminderHelpOpenApp": "Apri impostazioni app",
   "showPassword": "Mostra password",
   "hidePassword": "Nascondi password",
-  "pinCategory": "Fissa in alto",
-  "unpinCategory": "Rimuovi dall’alto",
+  "pinCategory": "Fissa nella Home",
+  "unpinCategory": "Togli dalla Home",
   "clearSearch": "Cancella ricerca",
   "tripPurposeTitle": "Motivo del viaggio",
   "tripPurposeHoliday": "Vacanza",
@@ -2623,6 +2623,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} scade entro 7 giorni} other{{count} scadono entro 7 giorni}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} scade entro 30 giorni} other{{count} scadono entro 30 giorni}}",
   "allUpToDate": "Tutto in regola",
+  "homeExpiredDaysAgo": "{count, plural, =1{Scaduto ieri} other{Scaduto {count} giorni fa}}",
+  "homeExpiresInDays": "{count, plural, =1{Scade domani} other{Scade tra {count} giorni}}",
+  "homeAllClearTitle": "Niente scade entro 30 giorni",
+  "homeAllClearNext": "Prossimo: {name} scade il {date}",
+  "homePinHint": "Fissa le categorie che usi di più. Tocca ⋮ su una categoria.",
+  "pinnedToHome": "Fissata nella Home",
   "@expiredBadge": {
     "placeholders": {
       "count": {

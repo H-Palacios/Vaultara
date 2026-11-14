@@ -2008,8 +2008,8 @@
   "reminderHelpOpenApp": "Maak programinstellings oop",
   "showPassword": "Wys wagwoord",
   "hidePassword": "Versteek wagwoord",
-  "pinCategory": "Speld bo vas",
-  "unpinCategory": "Maak los",
+  "pinCategory": "Speld op Tuis vas",
+  "unpinCategory": "Maak los van Tuis",
   "clearSearch": "Maak soektog skoon",
   "tripPurposeTitle": "Rede vir die reis",
   "tripPurposeHoliday": "Vakansie",
@@ -2656,6 +2656,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} verval binne 7 dae} other{{count} verval binne 7 dae}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} verval binne 30 dae} other{{count} verval binne 30 dae}}",
   "allUpToDate": "Alles op datum",
+  "homeExpiredDaysAgo": "{count, plural, =1{Gister verval} other{{count} dae gelede verval}}",
+  "homeExpiresInDays": "{count, plural, =1{Verval môre} other{Verval oor {count} dae}}",
+  "homeAllClearTitle": "Niks verval binne 30 dae nie",
+  "homeAllClearNext": "Volgende: {name} verval op {date}",
+  "homePinHint": "Speld die kategorieë vas wat jy die meeste gebruik. Tik op ⋮ by ’n kategorie.",
+  "pinnedToHome": "Op Tuis vasgespeld",
   "@expiredBadge": {
     "placeholders": {
       "count": {

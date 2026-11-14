@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "Avaa sovelluksen asetukset",
   "showPassword": "Näytä salasana",
   "hidePassword": "Piilota salasana",
-  "pinCategory": "Kiinnitä ylös",
-  "unpinCategory": "Poista kiinnitys",
+  "pinCategory": "Kiinnitä Kotiin",
+  "unpinCategory": "Poista kiinnitys Kotiin",
   "clearSearch": "Tyhjennä haku",
   "tripPurposeTitle": "Matkan syy",
   "tripPurposeHoliday": "Loma",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} vanhenee 7 päivän kuluessa} other{{count} vanhenee 7 päivän kuluessa}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} vanhenee 30 päivän kuluessa} other{{count} vanhenee 30 päivän kuluessa}}",
   "allUpToDate": "Kaikki ajan tasalla",
+  "homeExpiredDaysAgo": "{count, plural, =1{Vanheni eilen} other{Vanheni {count} päivää sitten}}",
+  "homeExpiresInDays": "{count, plural, =1{Vanhenee huomenna} other{Vanhenee {count} päivän päästä}}",
+  "homeAllClearTitle": "Mikään ei vanhene 30 päivän kuluessa",
+  "homeAllClearNext": "Seuraavaksi: {name} vanhenee {date}",
+  "homePinHint": "Kiinnitä eniten käyttämäsi luokat. Napauta luokan kohdalla ⋮.",
+  "pinnedToHome": "Kiinnitetty Kotiin",
   "@expiredBadge": {
     "placeholders": {
       "count": {

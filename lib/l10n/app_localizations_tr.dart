@@ -6198,10 +6198,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get hidePassword => 'Parolayı gizle';
 
   @override
-  String get pinCategory => 'En üste sabitle';
+  String get pinCategory => 'Ana sayfaya sabitle';
 
   @override
-  String get unpinCategory => 'Sabitlemeyi kaldır';
+  String get unpinCategory => 'Ana sayfadan kaldır';
 
   @override
   String get clearSearch => 'Aramayı temizle';
@@ -7943,6 +7943,42 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Her şey güncel';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count gün önce sona erdi',
+      one: 'Dün sona erdi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count gün içinde sona eriyor',
+      one: 'Yarın sona eriyor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 gün içinde süresi dolan yok';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Sıradaki: $name $date tarihinde sona eriyor';
+  }
+
+  @override
+  String get homePinHint => 'En çok kullandığınız kategorileri sabitleyin. Bir kategoride ⋮ simgesine dokunun.';
+
+  @override
+  String get pinnedToHome => 'Ana sayfaya sabitlendi';
 
   @override
   String get changeIcon => 'Simgeyi değiştir';

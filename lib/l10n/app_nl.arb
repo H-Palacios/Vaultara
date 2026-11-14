@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "App-instellingen openen",
   "showPassword": "Wachtwoord tonen",
   "hidePassword": "Wachtwoord verbergen",
-  "pinCategory": "Bovenaan vastzetten",
-  "unpinCategory": "Losmaken",
+  "pinCategory": "Vastzetten op Start",
+  "unpinCategory": "Losmaken van Start",
   "clearSearch": "Zoekopdracht wissen",
   "tripPurposeTitle": "Reden van de reis",
   "tripPurposeHoliday": "Vakantie",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} verloopt binnen 7 dagen} other{{count} verlopen binnen 7 dagen}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} verloopt binnen 30 dagen} other{{count} verlopen binnen 30 dagen}}",
   "allUpToDate": "Alles is bijgewerkt",
+  "homeExpiredDaysAgo": "{count, plural, =1{Gisteren verlopen} other{{count} dagen geleden verlopen}}",
+  "homeExpiresInDays": "{count, plural, =1{Verloopt morgen} other{Verloopt over {count} dagen}}",
+  "homeAllClearTitle": "Niets verloopt binnen 30 dagen",
+  "homeAllClearNext": "Volgende: {name} verloopt op {date}",
+  "homePinHint": "Maak de categorieën vast die je het meest gebruikt. Tik op ⋮ bij een categorie.",
+  "pinnedToHome": "Vastgezet op Start",
   "@expiredBadge": {
     "placeholders": {
       "count": {

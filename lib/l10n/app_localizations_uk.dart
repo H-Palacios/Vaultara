@@ -6333,10 +6333,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get hidePassword => 'Сховати пароль';
 
   @override
-  String get pinCategory => 'Закріпити вгорі';
+  String get pinCategory => 'Закріпити на головній';
 
   @override
-  String get unpinCategory => 'Відкріпити';
+  String get unpinCategory => 'Відкріпити з головної';
 
   @override
   String get clearSearch => 'Очистити пошук';
@@ -8092,6 +8092,42 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Усе актуально';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Сплив $count дн. тому',
+      one: 'Сплив учора',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Спливає через $count дн.',
+      one: 'Спливає завтра',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'За 30 днів нічого не спливає';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Далі: $name спливає $date';
+  }
+
+  @override
+  String get homePinHint => 'Закріпіть категорії, якими користуєтеся найчастіше. Торкніться ⋮ біля категорії.';
+
+  @override
+  String get pinnedToHome => 'Закріплено на головній';
 
   @override
   String get changeIcon => 'Змінити значок';

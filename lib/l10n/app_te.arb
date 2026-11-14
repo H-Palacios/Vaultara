@@ -1987,8 +1987,8 @@
   "reminderHelpOpenApp": "యాప్ సెట్టింగ్‌లను తెరవండి",
   "showPassword": "పాస్‌వర్డ్ చూపించు",
   "hidePassword": "పాస్‌వర్డ్ దాచు",
-  "pinCategory": "పైన పిన్ చేయి",
-  "unpinCategory": "పిన్ తీసివేయి",
+  "pinCategory": "హోమ్‌కు పిన్ చేయండి",
+  "unpinCategory": "హోమ్ నుండి అన్‌పిన్ చేయండి",
   "clearSearch": "శోధనను తొలగించు",
   "tripPurposeTitle": "ప్రయాణ కారణం",
   "tripPurposeHoliday": "సెలవు",
@@ -2635,6 +2635,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 రోజుల్లో గడువు ముగుస్తుంది} other{{count} 7 రోజుల్లో గడువు ముగుస్తాయి}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 రోజుల్లో గడువు ముగుస్తుంది} other{{count} 30 రోజుల్లో గడువు ముగుస్తాయి}}",
   "allUpToDate": "అన్నీ తాజాగా ఉన్నాయి",
+  "homeExpiredDaysAgo": "{count, plural, =1{నిన్న గడువు ముగిసింది} other{{count} రోజుల క్రితం గడువు ముగిసింది}}",
+  "homeExpiresInDays": "{count, plural, =1{రేపు గడువు ముగుస్తుంది} other{{count} రోజుల్లో గడువు ముగుస్తుంది}}",
+  "homeAllClearTitle": "30 రోజుల్లో దేని గడువూ ముగియదు",
+  "homeAllClearNext": "తదుపరి: {name} గడువు {date}న ముగుస్తుంది",
+  "homePinHint": "ఎక్కువగా వాడే వర్గాలను పిన్ చేయండి. వర్గంపై ⋮ ట్యాప్ చేయండి.",
+  "pinnedToHome": "హోమ్‌కు పిన్ చేశారు",
   "@expiredBadge": {
     "placeholders": {
       "count": {

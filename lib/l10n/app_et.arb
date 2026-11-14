@@ -2135,8 +2135,8 @@
   "reminderHelpOpenApp": "Ava rakenduse seaded",
   "showPassword": "Näita parooli",
   "hidePassword": "Peida parool",
-  "pinCategory": "Kinnita üles",
-  "unpinCategory": "Eemalda kinnitus",
+  "pinCategory": "Kinnita avalehele",
+  "unpinCategory": "Eemalda avalehelt",
   "clearSearch": "Tühjenda otsing",
   "tripPurposeTitle": "Reisi põhjus",
   "tripPurposeHoliday": "Puhkus",
@@ -2783,6 +2783,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} aegub 7 päeva jooksul} other{{count} aeguvad 7 päeva jooksul}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} aegub 30 päeva jooksul} other{{count} aeguvad 30 päeva jooksul}}",
   "allUpToDate": "Kõik on korras",
+  "homeExpiredDaysAgo": "{count, plural, =1{Aegus eile} other{Aegus {count} päeva tagasi}}",
+  "homeExpiresInDays": "{count, plural, =1{Aegub homme} other{Aegub {count} päeva pärast}}",
+  "homeAllClearTitle": "30 päeva jooksul ei aegu midagi",
+  "homeAllClearNext": "Järgmine: {name} aegub {date}",
+  "homePinHint": "Kinnita kategooriad, mida kõige rohkem kasutad. Puuduta kategooria juures ⋮.",
+  "pinnedToHome": "Avalehele kinnitatud",
   "@expiredBadge": {
     "placeholders": {
       "count": {

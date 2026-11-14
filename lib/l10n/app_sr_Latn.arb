@@ -1944,8 +1944,8 @@
   "reminderHelpOpenApp": "Otvori podešavanja aplikacije",
   "showPassword": "Prikaži lozinku",
   "hidePassword": "Sakrij lozinku",
-  "pinCategory": "Zakači pri vrhu",
-  "unpinCategory": "Otkači",
+  "pinCategory": "Zakači na Početnu",
+  "unpinCategory": "Otkači sa Početne",
   "clearSearch": "Obriši pretragu",
   "tripPurposeTitle": "Razlog putovanja",
   "tripPurposeHoliday": "Odmor",
@@ -2592,6 +2592,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ističe u roku od 7 dana} other{{count} ističe u roku od 7 dana}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ističe u roku od 30 dana} other{{count} ističe u roku od 30 dana}}",
   "allUpToDate": "Sve je ažurno",
+  "homeExpiredDaysAgo": "{count, plural, =1{Isteklo juče} other{Isteklo pre {count} dana}}",
+  "homeExpiresInDays": "{count, plural, =1{Ističe sutra} other{Ističe za {count} dana}}",
+  "homeAllClearTitle": "Ništa ne ističe u roku od 30 dana",
+  "homeAllClearNext": "Sledeće: {name} ističe {date}",
+  "homePinHint": "Zakačite kategorije koje najčešće koristite. Dodirnite ⋮ na kategoriji.",
+  "pinnedToHome": "Zakačeno na Početnu",
   "@expiredBadge": {
     "placeholders": {
       "count": {

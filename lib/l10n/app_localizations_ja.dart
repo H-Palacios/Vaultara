@@ -6135,10 +6135,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get hidePassword => 'パスワードを非表示';
 
   @override
-  String get pinCategory => '先頭に固定';
+  String get pinCategory => 'ホームに固定';
 
   @override
-  String get unpinCategory => '固定を解除';
+  String get unpinCategory => 'ホームから固定解除';
 
   @override
   String get clearSearch => '検索をクリア';
@@ -7873,6 +7873,42 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get allUpToDate => 'すべて最新です';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count日前に期限切れ',
+      one: '昨日期限切れ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count日後に期限切れ',
+      one: '明日期限切れ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30日以内に期限が来るものはありません';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return '次：$nameは$dateに期限切れ';
+  }
+
+  @override
+  String get homePinHint => 'よく使うカテゴリを固定しましょう。カテゴリの⋮をタップします。';
+
+  @override
+  String get pinnedToHome => 'ホームに固定中';
 
   @override
   String get changeIcon => 'アイコンを変更';

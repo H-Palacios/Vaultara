@@ -1720,8 +1720,8 @@
   "reminderHelpOpenApp": "အက်ပ်ဆက်တင်များ ဖွင့်ပါ",
   "showPassword": "စကားဝှက် ပြပါ",
   "hidePassword": "စကားဝှက် ဖျောက်ပါ",
-  "pinCategory": "အပေါ်တွင် ပင်ထိုးပါ",
-  "unpinCategory": "ပင်ဖြုတ်ပါ",
+  "pinCategory": "ပင်မစာမျက်နှာတွင် ပင်ထိုးရန်",
+  "unpinCategory": "ပင်မစာမျက်နှာမှ ဖြုတ်ရန်",
   "clearSearch": "ရှာဖွေမှု ရှင်းပါ",
   "tripPurposeTitle": "ခရီးသွားရသည့် အကြောင်းရင်း",
   "tripPurposeHoliday": "အားလပ်ရက်",
@@ -2368,6 +2368,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ခု ရက် 7 အတွင်း သက်တမ်းကုန်} other{{count} ခု ရက် 7 အတွင်း သက်တမ်းကုန်}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ခု ရက် 30 အတွင်း သက်တမ်းကုန်} other{{count} ခု ရက် 30 အတွင်း သက်တမ်းကုန်}}",
   "allUpToDate": "အားလုံး နောက်ဆုံးအခြေအနေ",
+  "homeExpiredDaysAgo": "{count, plural, =1{မနေ့က သက်တမ်းကုန်} other{လွန်ခဲ့သော {count} ရက်က သက်တမ်းကုန်}}",
+  "homeExpiresInDays": "{count, plural, =1{မနက်ဖြန် သက်တမ်းကုန်မည်} other{{count} ရက်အတွင်း သက်တမ်းကုန်မည်}}",
+  "homeAllClearTitle": "ရက် 30 အတွင်း ဘာမျှ သက်တမ်းမကုန်ပါ",
+  "homeAllClearNext": "နောက်တစ်ခု- {name} သည် {date} တွင် သက်တမ်းကုန်မည်",
+  "homePinHint": "အသုံးအများဆုံး အမျိုးအစားများကို ပင်ထိုးပါ။ အမျိုးအစားပေါ်ရှိ ⋮ ကို တို့ပါ။",
+  "pinnedToHome": "ပင်မစာမျက်နှာတွင် ပင်ထိုးထားသည်",
   "@expiredBadge": {
     "placeholders": {
       "count": {

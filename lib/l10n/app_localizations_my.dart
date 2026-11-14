@@ -6145,10 +6145,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get hidePassword => 'စကားဝှက် ဖျောက်ပါ';
 
   @override
-  String get pinCategory => 'အပေါ်တွင် ပင်ထိုးပါ';
+  String get pinCategory => 'ပင်မစာမျက်နှာတွင် ပင်ထိုးရန်';
 
   @override
-  String get unpinCategory => 'ပင်ဖြုတ်ပါ';
+  String get unpinCategory => 'ပင်မစာမျက်နှာမှ ဖြုတ်ရန်';
 
   @override
   String get clearSearch => 'ရှာဖွေမှု ရှင်းပါ';
@@ -7883,6 +7883,42 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get allUpToDate => 'အားလုံး နောက်ဆုံးအခြေအနေ';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'လွန်ခဲ့သော $count ရက်က သက်တမ်းကုန်',
+      one: 'မနေ့က သက်တမ်းကုန်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ရက်အတွင်း သက်တမ်းကုန်မည်',
+      one: 'မနက်ဖြန် သက်တမ်းကုန်မည်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'ရက် 30 အတွင်း ဘာမျှ သက်တမ်းမကုန်ပါ';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'နောက်တစ်ခု- $name သည် $date တွင် သက်တမ်းကုန်မည်';
+  }
+
+  @override
+  String get homePinHint => 'အသုံးအများဆုံး အမျိုးအစားများကို ပင်ထိုးပါ။ အမျိုးအစားပေါ်ရှိ ⋮ ကို တို့ပါ။';
+
+  @override
+  String get pinnedToHome => 'ပင်မစာမျက်နှာတွင် ပင်ထိုးထားသည်';
 
   @override
   String get changeIcon => 'အိုင်ကွန် ပြောင်းရန်';

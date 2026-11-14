@@ -22,11 +22,13 @@ class ComingUpEntry {
 class ComingUp {
   static const int windowDays = ItemLifecycleManager.expiringThresholdDays;
 
+  final List<ComingUpEntry> expired;
   final List<ComingUpEntry> withinWeek;
   final List<ComingUpEntry> withinMonth;
   final TrackedItem? nextAfter;
 
   const ComingUp({
+    this.expired = const <ComingUpEntry>[],
     required this.withinWeek,
     required this.withinMonth,
     this.nextAfter,
@@ -36,13 +38,20 @@ class ComingUp {
 
   bool get isEmpty => count == 0;
 
+  bool get nothingToDo => expired.isEmpty && isEmpty;
+
+  List<ComingUpEntry> get byUrgency => <ComingUpEntry>[
+    ...expired,
+    ...withinWeek,
+    ...withinMonth,
+  ];
+
   static ComingUp of(Iterable<TrackedItem> records, {DateTime? today}) {
     final day = Dates.only(today ?? DateTime.now());
     final entries = <ComingUpEntry>[];
     for (final record in records) {
       if (record.isDeleted) continue;
       final daysLeft = Dates.daysBetween(day, record.expiryDate);
-      if (daysLeft < 0) continue;
       final lead = record.leadDays;
       entries.add(
         ComingUpEntry(
@@ -54,11 +63,14 @@ class ComingUp {
     }
     entries.sort((a, b) => a.daysLeft.compareTo(b.daysLeft));
 
+    final expired = <ComingUpEntry>[];
     final withinWeek = <ComingUpEntry>[];
     final withinMonth = <ComingUpEntry>[];
     TrackedItem? nextAfter;
     for (final entry in entries) {
-      if (entry.daysLeft <= RecordStatusColours.urgentDays) {
+      if (entry.daysLeft < 0) {
+        expired.add(entry);
+      } else if (entry.daysLeft <= RecordStatusColours.urgentDays) {
         withinWeek.add(entry);
       } else if (entry.daysLeft <= windowDays) {
         withinMonth.add(entry);
@@ -68,6 +80,7 @@ class ComingUp {
     }
 
     return ComingUp(
+      expired: expired,
       withinWeek: withinWeek,
       withinMonth: withinMonth,
       nextAfter: nextAfter,

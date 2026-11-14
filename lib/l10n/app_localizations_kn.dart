@@ -6198,10 +6198,10 @@ class AppLocalizationsKn extends AppLocalizations {
   String get hidePassword => 'ಪಾಸ್‌ವರ್ಡ್ ಮರೆಮಾಡಿ';
 
   @override
-  String get pinCategory => 'ಮೇಲೆ ಪಿನ್ ಮಾಡಿ';
+  String get pinCategory => 'ಮುಖಪುಟಕ್ಕೆ ಪಿನ್ ಮಾಡಿ';
 
   @override
-  String get unpinCategory => 'ಪಿನ್ ತೆಗೆಯಿರಿ';
+  String get unpinCategory => 'ಮುಖಪುಟದಿಂದ ಅನ್‌ಪಿನ್ ಮಾಡಿ';
 
   @override
   String get clearSearch => 'ಹುಡುಕಾಟ ತೆರವುಗೊಳಿಸಿ';
@@ -7943,6 +7943,42 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get allUpToDate => 'ಎಲ್ಲವೂ ನವೀಕೃತ';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ದಿನಗಳ ಹಿಂದೆ ಮುಕ್ತಾಯವಾಯಿತು',
+      one: 'ನಿನ್ನೆ ಮುಕ್ತಾಯವಾಯಿತು',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ',
+      one: 'ನಾಳೆ ಮುಕ್ತಾಯ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 ದಿನಗಳಲ್ಲಿ ಏನೂ ಮುಕ್ತಾಯವಾಗುತ್ತಿಲ್ಲ';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'ಮುಂದಿನದು: $name $date ರಂದು ಮುಕ್ತಾಯ';
+  }
+
+  @override
+  String get homePinHint => 'ಹೆಚ್ಚು ಬಳಸುವ ವರ್ಗಗಳನ್ನು ಪಿನ್ ಮಾಡಿ. ವರ್ಗದಲ್ಲಿ ⋮ ಟ್ಯಾಪ್ ಮಾಡಿ.';
+
+  @override
+  String get pinnedToHome => 'ಮುಖಪುಟಕ್ಕೆ ಪಿನ್ ಮಾಡಲಾಗಿದೆ';
 
   @override
   String get changeIcon => 'ಐಕಾನ್ ಬದಲಿಸಿ';

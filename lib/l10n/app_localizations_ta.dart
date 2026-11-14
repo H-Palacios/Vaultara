@@ -6198,10 +6198,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get hidePassword => 'கடவுச்சொல்லை மறை';
 
   @override
-  String get pinCategory => 'மேலே பின் செய்';
+  String get pinCategory => 'முகப்பில் பின் செய்';
 
   @override
-  String get unpinCategory => 'பின்னை நீக்கு';
+  String get unpinCategory => 'முகப்பிலிருந்து நீக்கு';
 
   @override
   String get clearSearch => 'தேடலை அழி';
@@ -7943,6 +7943,42 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get allUpToDate => 'அனைத்தும் புதுப்பித்த நிலையில்';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count நாட்களுக்கு முன் காலாவதியானது',
+      one: 'நேற்று காலாவதியானது',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count நாட்களில் காலாவதியாகும்',
+      one: 'நாளை காலாவதியாகும்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 நாட்களுக்குள் எதுவும் காலாவதியாகவில்லை';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'அடுத்தது: $name $date அன்று காலாவதியாகும்';
+  }
+
+  @override
+  String get homePinHint => 'அதிகம் பயன்படுத்தும் வகைகளைப் பின் செய்யவும். ஒரு வகையில் ⋮ தட்டவும்.';
+
+  @override
+  String get pinnedToHome => 'முகப்பில் பின் செய்யப்பட்டது';
 
   @override
   String get changeIcon => 'ஐகானை மாற்று';

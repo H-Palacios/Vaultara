@@ -1963,8 +1963,8 @@
   "reminderHelpOpenApp": "開啟應用程式設定",
   "showPassword": "顯示密碼",
   "hidePassword": "隱藏密碼",
-  "pinCategory": "置頂",
-  "unpinCategory": "取消置頂",
+  "pinCategory": "釘選到首頁",
+  "unpinCategory": "從首頁取消釘選",
   "clearSearch": "清除搜尋",
   "tripPurposeTitle": "旅行目的",
   "tripPurposeHoliday": "度假",
@@ -2611,6 +2611,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 項在 7 天內到期} other{{count} 項在 7 天內到期}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 項在 30 天內到期} other{{count} 項在 30 天內到期}}",
   "allUpToDate": "全部正常",
+  "homeExpiredDaysAgo": "{count, plural, =1{昨天到期} other{{count} 天前到期}}",
+  "homeExpiresInDays": "{count, plural, =1{明天到期} other{{count} 天後到期}}",
+  "homeAllClearTitle": "30 天內沒有到期的項目",
+  "homeAllClearNext": "下一個：{name} 將於 {date} 到期",
+  "homePinHint": "把最常用的類別釘選到首頁。點一下類別上的 ⋮。",
+  "pinnedToHome": "已釘選到首頁",
   "@expiredBadge": {
     "placeholders": {
       "count": {

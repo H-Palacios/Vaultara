@@ -6198,10 +6198,10 @@ class AppLocalizationsNe extends AppLocalizations {
   String get hidePassword => 'पासवर्ड लुकाउनुहोस्';
 
   @override
-  String get pinCategory => 'माथि पिन गर्नुहोस्';
+  String get pinCategory => 'होममा पिन गर्नुहोस्';
 
   @override
-  String get unpinCategory => 'पिन हटाउनुहोस्';
+  String get unpinCategory => 'होमबाट हटाउनुहोस्';
 
   @override
   String get clearSearch => 'खोज मेटाउनुहोस्';
@@ -7943,6 +7943,42 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get allUpToDate => 'सबै अद्यावधिक';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count दिनअघि सकियो',
+      one: 'हिजो सकियो',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count दिनमा सकिन्छ',
+      one: 'भोलि सकिन्छ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '३० दिनभित्र केही सकिँदैन';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'अर्को: $name $date मा सकिन्छ';
+  }
+
+  @override
+  String get homePinHint => 'सबैभन्दा बढी प्रयोग गर्ने वर्गहरू पिन गर्नुहोस्। वर्गमा ⋮ ट्याप गर्नुहोस्।';
+
+  @override
+  String get pinnedToHome => 'होममा पिन गरिएको';
 
   @override
   String get changeIcon => 'आइकन बदल्नुहोस्';

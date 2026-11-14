@@ -6335,10 +6335,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get hidePassword => 'Скрыть пароль';
 
   @override
-  String get pinCategory => 'Закрепить сверху';
+  String get pinCategory => 'Закрепить на главной';
 
   @override
-  String get unpinCategory => 'Открепить';
+  String get unpinCategory => 'Открепить с главной';
 
   @override
   String get clearSearch => 'Очистить поиск';
@@ -8096,6 +8096,42 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Всё в порядке';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истёк $count дн. назад',
+      one: 'Истёк вчера',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истекает через $count дн.',
+      one: 'Истекает завтра',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'За 30 дней ничего не истекает';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Далее: $name истекает $date';
+  }
+
+  @override
+  String get homePinHint => 'Закрепите категории, которыми пользуетесь чаще всего. Нажмите ⋮ у категории.';
+
+  @override
+  String get pinnedToHome => 'Закреплено на главной';
 
   @override
   String get changeIcon => 'Сменить значок';

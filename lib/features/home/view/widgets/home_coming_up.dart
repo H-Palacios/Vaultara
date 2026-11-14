@@ -3,23 +3,24 @@ import 'package:intl/intl.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/theme/record_status_colours.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
+import 'package:vaultara/core/view/widgets/app_sheet.dart';
 import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/home/logic/coming_up.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 class HomeComingUp extends StatelessWidget {
-  final List<TrackedItem> records;
+  final ComingUp data;
   final void Function(TrackedItem record) onOpen;
-  final VoidCallback onSeeAll;
+  final void Function(TrackedItem record) onRenew;
 
   const HomeComingUp({
     super.key,
-    required this.records,
+    required this.data,
     required this.onOpen,
-    required this.onSeeAll,
+    required this.onRenew,
   });
 
-  static const int maxRows = 5;
+  static const int maxRows = 4;
 
   static String nameOf(TrackedItem record, AppLocalizations loc) {
     if (record.locked) {
@@ -29,61 +30,40 @@ class HomeComingUp extends StatelessWidget {
   }
 
   static String whenOf(AppLocalizations loc, int daysLeft) {
-    if (daysLeft <= 0) {
-      return loc.statusExpiresToday;
-    }
-    return loc.calendarDaysLeft(daysLeft);
+    if (daysLeft < 0) return loc.homeExpiredDaysAgo(-daysLeft);
+    if (daysLeft == 0) return loc.statusExpiresToday;
+    return loc.homeExpiresInDays(daysLeft);
+  }
+
+  static String headingOf(AppLocalizations loc, ComingUp data) {
+    return <String>[
+      if (data.expired.isNotEmpty) loc.expiredBadge(data.expired.length),
+      if (data.count > 0) loc.expiresWithin30Badge(data.count),
+    ].join(' · ');
+  }
+
+  void _seeAll(BuildContext context) {
+    AppSheet.show<void>(
+      context: context,
+      builder: (sheetContext) => _AllExpiriesSheet(
+        data: data,
+        onOpen: (record) {
+          Navigator.pop(sheetContext);
+          onOpen(record);
+        },
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    final data = ComingUp.of(records);
-
-    if (data.isEmpty) {
-      final next = data.nextAfter;
-      if (next == null) {
-        return const SizedBox.shrink();
-      }
-      return Padding(
-        padding: const EdgeInsets.only(top: 12, left: 4),
-        child: Row(
-          children: [
-            const Icon(
-              Icons.check_circle_rounded,
-              size: 18,
-              color: RecordStatusColours.valid,
-            ),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                loc.comingUpAllClear(
-                  DateFormat.yMMMd(
-                    SafeLocale.date(loc.localeName),
-                  ).format(next.expiryDate),
-                ),
-                style: TextStyle(
-                  fontSize: 13.5,
-                  fontWeight: FontWeight.w600,
-                  color: scheme.onSurfaceVariant,
-                ),
-              ),
-            ),
-          ],
-        ),
-      );
-    }
-
-    var remaining = maxRows;
-    final week = data.withinWeek.take(remaining).toList();
-    remaining -= week.length;
-    final month = data.withinMonth.take(remaining).toList();
-    final more = data.count - week.length - month.length;
+    final entries = data.byUrgency;
+    final shown = entries.take(maxRows).toList();
 
     return Container(
-      margin: const EdgeInsets.only(top: 12),
-      padding: const EdgeInsets.fromLTRB(14, 6, 6, 8),
+      padding: const EdgeInsets.fromLTRB(14, 8, 6, 8),
       decoration: BoxDecoration(
         color: scheme.surfaceContainerHighest.withValues(alpha: 0.45),
         borderRadius: BorderRadius.circular(16),
@@ -95,43 +75,30 @@ class HomeComingUp extends StatelessWidget {
             children: [
               Expanded(
                 child: Text(
-                  loc.comingUpCount(data.count, ComingUp.windowDays),
+                  headingOf(loc, data),
                   style: const TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w800,
+                    height: 1.3,
                   ),
                 ),
               ),
-              TextButton(
-                onPressed: onSeeAll,
-                style: TextButton.styleFrom(
-                  visualDensity: VisualDensity.compact,
+              if (entries.length > maxRows)
+                TextButton(
+                  onPressed: () => _seeAll(context),
+                  style: TextButton.styleFrom(
+                    visualDensity: VisualDensity.compact,
+                  ),
+                  child: Text(loc.comingUpSeeAll),
                 ),
-                child: Text(loc.comingUpSeeAll),
-              ),
             ],
           ),
-          if (week.isNotEmpty) ...[
-            _GroupHeading(text: loc.legendWithinWeek),
-            for (final entry in week)
-              _ComingUpRow(entry: entry, onTap: () => onOpen(entry.record)),
-          ],
-          if (month.isNotEmpty) ...[
-            _GroupHeading(text: loc.legendWithinMonth),
-            for (final entry in month)
-              _ComingUpRow(entry: entry, onTap: () => onOpen(entry.record)),
-          ],
-          if (more > 0)
-            Align(
-              alignment: AlignmentDirectional.centerStart,
-              child: TextButton(
-                onPressed: onSeeAll,
-                style: TextButton.styleFrom(
-                  visualDensity: VisualDensity.compact,
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                ),
-                child: Text(loc.comingUpMore(more)),
-              ),
+          const SizedBox(height: 4),
+          for (var i = 0; i < shown.length; i++)
+            HomeExpiryRow(
+              entry: shown[i],
+              onTap: () => onOpen(shown[i].record),
+              onRenew: i == 0 ? () => onRenew(shown[i].record) : null,
             ),
         ],
       ),
@@ -139,38 +106,17 @@ class HomeComingUp extends StatelessWidget {
   }
 }
 
-class _GroupHeading extends StatelessWidget {
-  final String text;
-
-  const _GroupHeading({required this.text});
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-
-    return Padding(
-      padding: const EdgeInsets.only(top: 8, bottom: 2),
-      child: Semantics(
-        header: true,
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w700,
-            letterSpacing: 0.3,
-            color: scheme.onSurfaceVariant,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _ComingUpRow extends StatelessWidget {
+class HomeExpiryRow extends StatelessWidget {
   final ComingUpEntry entry;
   final VoidCallback onTap;
+  final VoidCallback? onRenew;
 
-  const _ComingUpRow({required this.entry, required this.onTap});
+  const HomeExpiryRow({
+    super.key,
+    required this.entry,
+    required this.onTap,
+    this.onRenew,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -178,14 +124,11 @@ class _ComingUpRow extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final localeTag = SafeLocale.date(loc.localeName);
     final colour = RecordStatusColours.fromDaysLeft(entry.daysLeft);
-    final expiry = entry.record.expiryDate;
-    final trailing =
-        '${DateFormat('EEE d MMM', localeTag).format(expiry)} · ${HomeComingUp.whenOf(loc, entry.daysLeft)}';
 
     String? startLine;
-    if (entry.startNow) {
+    if (entry.daysLeft >= 0 && entry.startNow) {
       startLine = loc.startRenewingNow;
-    } else if (entry.hasStartBy) {
+    } else if (entry.daysLeft >= 0 && entry.hasStartBy) {
       final start = DateTime.now().add(Duration(days: entry.startByDays!));
       startLine = loc.startRenewingBy(DateFormat.yMMMd(localeTag).format(start));
     }
@@ -199,7 +142,7 @@ class _ComingUpRow extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 5),
+              padding: const EdgeInsets.only(top: 6),
               child: Container(
                 width: 8,
                 height: 8,
@@ -211,17 +154,25 @@ class _ComingUpRow extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             Expanded(
-              flex: 5,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     HomeComingUp.nameOf(entry.record, loc),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w700,
+                      height: 1.3,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    HomeComingUp.whenOf(loc, entry.daysLeft),
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                      height: 1.3,
+                      color: scheme.onSurface,
                     ),
                   ),
                   if (startLine != null)
@@ -229,10 +180,9 @@ class _ComingUpRow extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 2),
                       child: Text(
                         startLine,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                           fontSize: 12,
+                          height: 1.3,
                           fontWeight: entry.startNow
                               ? FontWeight.w700
                               : FontWeight.w500,
@@ -243,23 +193,57 @@ class _ComingUpRow extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(width: 10),
-            Flexible(
-              flex: 4,
-              child: Text(
-                trailing,
-                textAlign: TextAlign.end,
-                maxLines: 2,
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                  color: scheme.onSurface,
+            if (onRenew != null) ...[
+              const SizedBox(width: 8),
+              FilledButton.tonal(
+                onPressed: onRenew,
+                style: FilledButton.styleFrom(
+                  visualDensity: VisualDensity.compact,
                 ),
+                child: Text(loc.renewAction),
               ),
-            ),
+            ],
           ],
         ),
       ),
+    );
+  }
+}
+
+class _AllExpiriesSheet extends StatelessWidget {
+  final ComingUp data;
+  final void Function(TrackedItem record) onOpen;
+
+  const _AllExpiriesSheet({required this.data, required this.onOpen});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final entries = data.byUrgency;
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+          child: Text(
+            HomeComingUp.headingOf(loc, data),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+          ),
+        ),
+        Flexible(
+          child: ListView.builder(
+            shrinkWrap: true,
+            padding: const EdgeInsets.fromLTRB(20, 0, 12, 16),
+            itemCount: entries.length,
+            itemBuilder: (context, i) => HomeExpiryRow(
+              entry: entries[i],
+              onTap: () => onOpen(entries[i].record),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

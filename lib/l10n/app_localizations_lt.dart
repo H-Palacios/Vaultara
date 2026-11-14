@@ -6327,10 +6327,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get hidePassword => 'Slėpti slaptažodį';
 
   @override
-  String get pinCategory => 'Prisegti viršuje';
+  String get pinCategory => 'Prisegti prie Pradžios';
 
   @override
-  String get unpinCategory => 'Atsegti';
+  String get unpinCategory => 'Atsegti nuo Pradžios';
 
   @override
   String get clearSearch => 'Išvalyti paiešką';
@@ -8086,6 +8086,42 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Viskas atnaujinta';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Baigėsi prieš $count d.',
+      one: 'Baigėsi vakar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Baigiasi po $count d.',
+      one: 'Baigiasi rytoj',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Per 30 dienų niekas nesibaigia';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Kitas: $name baigiasi $date';
+  }
+
+  @override
+  String get homePinHint => 'Prisekite dažniausiai naudojamas kategorijas. Bakstelėkite kategorijos ⋮.';
+
+  @override
+  String get pinnedToHome => 'Prisegta prie Pradžios';
 
   @override
   String get changeIcon => 'Keisti piktogramą';

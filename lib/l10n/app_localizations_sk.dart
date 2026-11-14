@@ -6319,10 +6319,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get hidePassword => 'Skryť heslo';
 
   @override
-  String get pinCategory => 'Pripnúť hore';
+  String get pinCategory => 'Pripnúť na Domov';
 
   @override
-  String get unpinCategory => 'Odopnúť';
+  String get unpinCategory => 'Odopnúť z Domov';
 
   @override
   String get clearSearch => 'Vymazať hľadanie';
@@ -8078,6 +8078,42 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Všetko je aktuálne';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vypršalo pred $count dňami',
+      one: 'Vypršalo včera',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vyprší o $count dní',
+      one: 'Vyprší zajtra',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Do 30 dní nič nevyprší';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Ďalšie: $name vyprší $date';
+  }
+
+  @override
+  String get homePinHint => 'Pripnite kategórie, ktoré používate najčastejšie. Ťuknite na ⋮ pri kategórii.';
+
+  @override
+  String get pinnedToHome => 'Pripnuté na Domov';
 
   @override
   String get changeIcon => 'Zmeniť ikonu';

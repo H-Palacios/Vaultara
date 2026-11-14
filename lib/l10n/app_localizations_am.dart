@@ -6198,10 +6198,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get hidePassword => 'የይለፍ ቃል ደብቅ';
 
   @override
-  String get pinCategory => 'ከላይ ሰካ';
+  String get pinCategory => 'በመነሻ ላይ ሰካ';
 
   @override
-  String get unpinCategory => 'ንቀል';
+  String get unpinCategory => 'ከመነሻ ንቀል';
 
   @override
   String get clearSearch => 'ፍለጋን አጽዳ';
@@ -7943,6 +7943,42 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get allUpToDate => 'ሁሉም የተዘመነ ነው';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ከ$count ቀናት በፊት አብቅቷል',
+      one: 'ትናንት አብቅቷል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'በ$count ቀናት ውስጥ ያበቃል',
+      one: 'ነገ ያበቃል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'በ30 ቀናት ውስጥ የሚያበቃ የለም';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'ቀጣይ፦ $name በ$date ያበቃል';
+  }
+
+  @override
+  String get homePinHint => 'በብዛት የሚጠቀሙባቸውን ምድቦች ይሰኩ። በምድብ ላይ ⋮ ይንኩ።';
+
+  @override
+  String get pinnedToHome => 'በመነሻ ላይ ተሰክቷል';
 
   @override
   String get changeIcon => 'አዶ ቀይር';

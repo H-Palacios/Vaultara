@@ -6379,10 +6379,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get hidePassword => 'Folaigh an focal faire';
 
   @override
-  String get pinCategory => 'Bioráin ag an mbarr';
+  String get pinCategory => 'Pionnáil ar an mBaile';
 
   @override
-  String get unpinCategory => 'Bain an bhioráin';
+  String get unpinCategory => 'Díphionnáil ón mBaile';
 
   @override
   String get clearSearch => 'Glan an cuardach';
@@ -8130,6 +8130,42 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Gach rud cothrom le dáta';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Chuaigh in éag $count lá ó shin',
+      one: 'Chuaigh in éag inné',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ag dul in éag i gceann $count lá',
+      one: 'Ag dul in éag amárach',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Níl aon rud ag dul in éag laistigh de 30 lá';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Ar aghaidh: rachaidh $name in éag ar $date';
+  }
+
+  @override
+  String get homePinHint => 'Pionnáil na catagóirí is mó a úsáideann tú. Tapáil ⋮ ar chatagóir.';
+
+  @override
+  String get pinnedToHome => 'Pionnáilte ar an mBaile';
 
   @override
   String get changeIcon => 'Athraigh an deilbhín';

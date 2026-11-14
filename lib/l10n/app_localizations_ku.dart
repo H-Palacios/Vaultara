@@ -6198,10 +6198,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get hidePassword => 'Şîfreyê veşêre';
 
   @override
-  String get pinCategory => 'Li jor bi pîne bike';
+  String get pinCategory => 'Li Malê bi derzî bike';
 
   @override
-  String get unpinCategory => 'Pînê rake';
+  String get unpinCategory => 'Ji Malê rake';
 
   @override
   String get clearSearch => 'Lêgerînê paqij bike';
@@ -7943,6 +7943,42 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Hemû rojane ye';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count roj berê qediya',
+      one: 'Duh qediya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Piştî $count rojan diqede',
+      one: 'Sibê diqede',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Di nav 30 rojan de tiştek naqede';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Paşê: $name di $date de diqede';
+  }
+
+  @override
+  String get homePinHint => 'Kategoriyên ku herî zêde bi kar tînî bi derzî bike. Li ser kategoriyekê ⋮ bitikîne.';
+
+  @override
+  String get pinnedToHome => 'Li Malê bi derzî ye';
 
   @override
   String get changeIcon => 'Îkonê biguherîne';

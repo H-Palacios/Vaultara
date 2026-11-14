@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Opne appinnstillingar",
   "showPassword": "Vis passord",
   "hidePassword": "Skjul passord",
-  "pinCategory": "Fest øvst",
-  "unpinCategory": "Løys",
+  "pinCategory": "Fest til Heim",
+  "unpinCategory": "Løys frå Heim",
   "clearSearch": "Tøm søk",
   "tripPurposeTitle": "Føremål med reisa",
   "tripPurposeHoliday": "Ferie",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} går ut innan 7 dagar} other{{count} går ut innan 7 dagar}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} går ut innan 30 dagar} other{{count} går ut innan 30 dagar}}",
   "allUpToDate": "Alt er oppdatert",
+  "homeExpiredDaysAgo": "{count, plural, =1{Gjekk ut i går} other{Gjekk ut for {count} dagar sidan}}",
+  "homeExpiresInDays": "{count, plural, =1{Går ut i morgon} other{Går ut om {count} dagar}}",
+  "homeAllClearTitle": "Ingenting går ut innan 30 dagar",
+  "homeAllClearNext": "Neste: {name} går ut {date}",
+  "homePinHint": "Fest kategoriane du brukar mest. Trykk på ⋮ ved ein kategori.",
+  "pinnedToHome": "Festa til Heim",
   "@expiredBadge": {
     "placeholders": {
       "count": {

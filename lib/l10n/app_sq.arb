@@ -1984,8 +1984,8 @@
   "reminderHelpOpenApp": "Hap cilësimet e aplikacionit",
   "showPassword": "Shfaq fjalëkalimin",
   "hidePassword": "Fshih fjalëkalimin",
-  "pinCategory": "Gozhdo lart",
-  "unpinCategory": "Hiq gozhdimin",
+  "pinCategory": "Fikso në Kreu",
+  "unpinCategory": "Hiq nga Kreu",
   "clearSearch": "Pastro kërkimin",
   "tripPurposeTitle": "Arsyeja e udhëtimit",
   "tripPurposeHoliday": "Pushime",
@@ -2632,6 +2632,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} skadon brenda 7 ditëve} other{{count} skadojnë brenda 7 ditëve}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} skadon brenda 30 ditëve} other{{count} skadojnë brenda 30 ditëve}}",
   "allUpToDate": "Gjithçka e përditësuar",
+  "homeExpiredDaysAgo": "{count, plural, =1{Skadoi dje} other{Skadoi para {count} ditësh}}",
+  "homeExpiresInDays": "{count, plural, =1{Skadon nesër} other{Skadon pas {count} ditësh}}",
+  "homeAllClearTitle": "Asgjë nuk skadon brenda 30 ditëve",
+  "homeAllClearNext": "Tjetra: {name} skadon më {date}",
+  "homePinHint": "Fikso kategoritë që përdor më shumë. Prek ⋮ te një kategori.",
+  "pinnedToHome": "Fiksuar në Kreu",
   "@expiredBadge": {
     "placeholders": {
       "count": {

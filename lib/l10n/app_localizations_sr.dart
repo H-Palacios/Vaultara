@@ -6262,10 +6262,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get hidePassword => 'Сакриј лозинку';
 
   @override
-  String get pinCategory => 'Закачи при врху';
+  String get pinCategory => 'Закачи на Почетну';
 
   @override
-  String get unpinCategory => 'Откачи';
+  String get unpinCategory => 'Откачи са Почетне';
 
   @override
   String get clearSearch => 'Обриши претрагу';
@@ -8014,6 +8014,42 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Све је ажурно';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истекло пре $count дана',
+      one: 'Истекло јуче',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истиче за $count дана',
+      one: 'Истиче сутра',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Ништа не истиче у року од 30 дана';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Следеће: $name истиче $date';
+  }
+
+  @override
+  String get homePinHint => 'Закачите категорије које најчешће користите. Додирните ⋮ на категорији.';
+
+  @override
+  String get pinnedToHome => 'Закачено на Почетну';
 
   @override
   String get changeIcon => 'Промени икону';
@@ -15343,10 +15379,10 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get hidePassword => 'Сакриј лозинку';
 
   @override
-  String get pinCategory => 'Закачи при врху';
+  String get pinCategory => 'Закачи на Почетну';
 
   @override
-  String get unpinCategory => 'Откачи';
+  String get unpinCategory => 'Откачи са Почетне';
 
   @override
   String get clearSearch => 'Обриши претрагу';
@@ -17095,6 +17131,42 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get allUpToDate => 'Све је ажурно';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истекло пре $count дана',
+      one: 'Истекло јуче',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Истиче за $count дана',
+      one: 'Истиче сутра',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Ништа не истиче у року од 30 дана';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Следеће: $name истиче $date';
+  }
+
+  @override
+  String get homePinHint => 'Закачите категорије које најчешће користите. Додирните ⋮ на категорији.';
+
+  @override
+  String get pinnedToHome => 'Закачено на Почетну';
 
   @override
   String get changeIcon => 'Промени икону';
@@ -24420,10 +24492,10 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get hidePassword => 'Sakrij lozinku';
 
   @override
-  String get pinCategory => 'Zakači pri vrhu';
+  String get pinCategory => 'Zakači na Početnu';
 
   @override
-  String get unpinCategory => 'Otkači';
+  String get unpinCategory => 'Otkači sa Početne';
 
   @override
   String get clearSearch => 'Obriši pretragu';
@@ -26172,6 +26244,42 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get allUpToDate => 'Sve je ažurno';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Isteklo pre $count dana',
+      one: 'Isteklo juče',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ističe za $count dana',
+      one: 'Ističe sutra',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Ništa ne ističe u roku od 30 dana';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Sledeće: $name ističe $date';
+  }
+
+  @override
+  String get homePinHint => 'Zakačite kategorije koje najčešće koristite. Dodirnite ⋮ na kategoriji.';
+
+  @override
+  String get pinnedToHome => 'Zakačeno na Početnu';
 
   @override
   String get changeIcon => 'Promeni ikonu';

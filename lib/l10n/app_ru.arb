@@ -1945,8 +1945,8 @@
   "reminderHelpOpenApp": "Открыть настройки приложения",
   "showPassword": "Показать пароль",
   "hidePassword": "Скрыть пароль",
-  "pinCategory": "Закрепить сверху",
-  "unpinCategory": "Открепить",
+  "pinCategory": "Закрепить на главной",
+  "unpinCategory": "Открепить с главной",
   "clearSearch": "Очистить поиск",
   "tripPurposeTitle": "Цель поездки",
   "tripPurposeHoliday": "Отпуск",
@@ -2593,6 +2593,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} истекает в течение 7 дней} other{{count} истекают в течение 7 дней}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} истекает в течение 30 дней} other{{count} истекают в течение 30 дней}}",
   "allUpToDate": "Всё в порядке",
+  "homeExpiredDaysAgo": "{count, plural, =1{Истёк вчера} other{Истёк {count} дн. назад}}",
+  "homeExpiresInDays": "{count, plural, =1{Истекает завтра} other{Истекает через {count} дн.}}",
+  "homeAllClearTitle": "За 30 дней ничего не истекает",
+  "homeAllClearNext": "Далее: {name} истекает {date}",
+  "homePinHint": "Закрепите категории, которыми пользуетесь чаще всего. Нажмите ⋮ у категории.",
+  "pinnedToHome": "Закреплено на главной",
   "@expiredBadge": {
     "placeholders": {
       "count": {

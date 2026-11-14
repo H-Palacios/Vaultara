@@ -2001,8 +2001,8 @@
   "reminderHelpOpenApp": "Åbn appindstillinger",
   "showPassword": "Vis adgangskode",
   "hidePassword": "Skjul adgangskode",
-  "pinCategory": "Fastgør øverst",
-  "unpinCategory": "Frigør",
+  "pinCategory": "Fastgør til Hjem",
+  "unpinCategory": "Frigør fra Hjem",
   "clearSearch": "Ryd søgning",
   "tripPurposeTitle": "Formål med rejsen",
   "tripPurposeHoliday": "Ferie",
@@ -2649,6 +2649,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} udløber inden for 7 dage} other{{count} udløber inden for 7 dage}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} udløber inden for 30 dage} other{{count} udløber inden for 30 dage}}",
   "allUpToDate": "Alt er opdateret",
+  "homeExpiredDaysAgo": "{count, plural, =1{Udløb i går} other{Udløb for {count} dage siden}}",
+  "homeExpiresInDays": "{count, plural, =1{Udløber i morgen} other{Udløber om {count} dage}}",
+  "homeAllClearTitle": "Intet udløber inden for 30 dage",
+  "homeAllClearNext": "Næste: {name} udløber {date}",
+  "homePinHint": "Fastgør de kategorier, du bruger mest. Tryk på ⋮ ved en kategori.",
+  "pinnedToHome": "Fastgjort til Hjem",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -6206,10 +6206,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get hidePassword => 'Masquer le mot de passe';
 
   @override
-  String get pinCategory => 'Épingler en haut';
+  String get pinCategory => 'Épingler à l’accueil';
 
   @override
-  String get unpinCategory => 'Désépingler';
+  String get unpinCategory => 'Retirer de l’accueil';
 
   @override
   String get clearSearch => 'Effacer la recherche';
@@ -7957,6 +7957,42 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Tout est à jour';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A expiré il y a $count jours',
+      one: 'A expiré hier',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Expire dans $count jours',
+      one: 'Expire demain',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Rien n’expire dans les 30 jours';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Prochain : $name expire le $date';
+  }
+
+  @override
+  String get homePinHint => 'Épinglez les catégories que vous utilisez le plus. Touchez ⋮ sur une catégorie.';
+
+  @override
+  String get pinnedToHome => 'Épinglée à l’accueil';
 
   @override
   String get changeIcon => 'Changer l\'icône';

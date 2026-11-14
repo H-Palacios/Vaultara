@@ -6147,10 +6147,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get hidePassword => '비밀번호 숨기기';
 
   @override
-  String get pinCategory => '맨 위에 고정';
+  String get pinCategory => '홈에 고정';
 
   @override
-  String get unpinCategory => '고정 해제';
+  String get unpinCategory => '홈에서 고정 해제';
 
   @override
   String get clearSearch => '검색어 지우기';
@@ -7885,6 +7885,42 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get allUpToDate => '모두 최신 상태';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count일 전에 만료됨',
+      one: '어제 만료됨',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count일 후 만료',
+      one: '내일 만료',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30일 이내에 만료되는 항목이 없습니다';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return '다음: $name $date 만료';
+  }
+
+  @override
+  String get homePinHint => '자주 쓰는 카테고리를 고정하세요. 카테고리의 ⋮을 탭하세요.';
+
+  @override
+  String get pinnedToHome => '홈에 고정됨';
 
   @override
   String get changeIcon => '아이콘 변경';

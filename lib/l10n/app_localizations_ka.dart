@@ -6198,10 +6198,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get hidePassword => 'პაროლის დამალვა';
 
   @override
-  String get pinCategory => 'ზემოთ ჩამაგრება';
+  String get pinCategory => 'მიმაგრება მთავარზე';
 
   @override
-  String get unpinCategory => 'ჩამაგრების მოხსნა';
+  String get unpinCategory => 'მოხსნა მთავარიდან';
 
   @override
   String get clearSearch => 'ძიების გასუფთავება';
@@ -7943,6 +7943,42 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get allUpToDate => 'ყველაფერი განახლებულია';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ვადა $count დღის წინ გავიდა',
+      one: 'ვადა გუშინ გავიდა',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ვადა $count დღეში გადის',
+      one: 'ვადა ხვალ გადის',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 დღეში არაფერს გასდის ვადა';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'შემდეგი: $name-ს ვადა გასდის $date';
+  }
+
+  @override
+  String get homePinHint => 'მიამაგრეთ ყველაზე ხშირად გამოყენებული კატეგორიები. შეეხეთ კატეგორიის ⋮-ს.';
+
+  @override
+  String get pinnedToHome => 'მიმაგრებულია მთავარზე';
 
   @override
   String get changeIcon => 'ხატულის შეცვლა';

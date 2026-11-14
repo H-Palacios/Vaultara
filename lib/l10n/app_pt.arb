@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Abrir definições da aplicação",
   "showPassword": "Mostrar palavra-passe",
   "hidePassword": "Ocultar palavra-passe",
-  "pinCategory": "Fixar no topo",
-  "unpinCategory": "Desafixar",
+  "pinCategory": "Fixar no Início",
+  "unpinCategory": "Desafixar do Início",
   "clearSearch": "Limpar pesquisa",
   "tripPurposeTitle": "Motivo da viagem",
   "tripPurposeHoliday": "Férias",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} vence em até 7 dias} other{{count} vencem em até 7 dias}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} vence em até 30 dias} other{{count} vencem em até 30 dias}}",
   "allUpToDate": "Tudo em dia",
+  "homeExpiredDaysAgo": "{count, plural, =1{Venceu ontem} other{Venceu há {count} dias}}",
+  "homeExpiresInDays": "{count, plural, =1{Vence amanhã} other{Vence em {count} dias}}",
+  "homeAllClearTitle": "Nada vence em até 30 dias",
+  "homeAllClearNext": "Próximo: {name} vence em {date}",
+  "homePinHint": "Fixe as categorias que você mais usa. Toque em ⋮ em uma categoria.",
+  "pinnedToHome": "Fixada no Início",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -6148,10 +6148,10 @@ class AppLocalizationsYo extends AppLocalizations {
   String get hidePassword => 'Fi ọ̀rọ̀ìpamọ́ pamọ́';
 
   @override
-  String get pinCategory => 'Dì mọ́ òkè';
+  String get pinCategory => 'So mọ́ Ilé';
 
   @override
-  String get unpinCategory => 'Yọ ìdìmọ́ kúrò';
+  String get unpinCategory => 'Yọ kúrò ní Ilé';
 
   @override
   String get clearSearch => 'Pa àwárí rẹ́';
@@ -7891,6 +7891,42 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Gbogbo nǹkan wà ní ìmúdójúìwọ̀n';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ó parí ní ọjọ́ $count sẹ́yìn',
+      one: 'Ó parí lánàá',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ó máa parí ní ọjọ́ $count',
+      one: 'Ó máa parí lọ́la',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Kò sí ohun tó máa parí láàrin ọjọ́ 30';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Èyí tó kàn: $name máa parí ní $date';
+  }
+
+  @override
+  String get homePinHint => 'So àwọn ẹ̀ka tí o máa ń lò jùlọ mọ́. Tẹ ⋮ lórí ẹ̀ka kan.';
+
+  @override
+  String get pinnedToHome => 'A so mọ́ Ilé';
 
   @override
   String get changeIcon => 'Yí àmì padà';

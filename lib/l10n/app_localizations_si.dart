@@ -6197,10 +6197,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get hidePassword => 'මුරපදය සඟවන්න';
 
   @override
-  String get pinCategory => 'ඉහළට පින් කරන්න';
+  String get pinCategory => 'මුල් පිටුවට අමුණන්න';
 
   @override
-  String get unpinCategory => 'පින් ඉවත් කරන්න';
+  String get unpinCategory => 'මුල් පිටුවෙන් ඉවත් කරන්න';
 
   @override
   String get clearSearch => 'සෙවුම හිස් කරන්න';
@@ -7942,6 +7942,42 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get allUpToDate => 'සියල්ල යාවත්කාලීනයි';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දින $countකට පෙර ඉකුත් විය',
+      one: 'ඊයේ ඉකුත් විය',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'දින $countකින් ඉකුත් වේ',
+      one: 'හෙට ඉකුත් වේ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'දින 30ක් තුළ කිසිවක් ඉකුත් නොවේ';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'ඊළඟ: $name $date දින ඉකුත් වේ';
+  }
+
+  @override
+  String get homePinHint => 'වැඩිපුරම භාවිත කරන කාණ්ඩ අමුණන්න. කාණ්ඩයක ⋮ තට්ටු කරන්න.';
+
+  @override
+  String get pinnedToHome => 'මුල් පිටුවට අමුණා ඇත';
 
   @override
   String get changeIcon => 'නිරූපකය වෙනස් කරන්න';

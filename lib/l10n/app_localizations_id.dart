@@ -6142,10 +6142,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get hidePassword => 'Sembunyikan kata sandi';
 
   @override
-  String get pinCategory => 'Sematkan di atas';
+  String get pinCategory => 'Sematkan ke Beranda';
 
   @override
-  String get unpinCategory => 'Lepas sematan';
+  String get unpinCategory => 'Lepas dari Beranda';
 
   @override
   String get clearSearch => 'Hapus pencarian';
@@ -7880,6 +7880,42 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Semua sudah beres';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kedaluwarsa $count hari lalu',
+      one: 'Kedaluwarsa kemarin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kedaluwarsa dalam $count hari',
+      one: 'Kedaluwarsa besok',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Tidak ada yang kedaluwarsa dalam 30 hari';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Berikutnya: $name kedaluwarsa pada $date';
+  }
+
+  @override
+  String get homePinHint => 'Sematkan kategori yang paling sering Anda gunakan. Ketuk ⋮ pada kategori.';
+
+  @override
+  String get pinnedToHome => 'Disematkan ke Beranda';
 
   @override
   String get changeIcon => 'Ganti ikon';

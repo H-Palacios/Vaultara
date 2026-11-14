@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Deschide setările aplicației",
   "showPassword": "Afișează parola",
   "hidePassword": "Ascunde parola",
-  "pinCategory": "Fixează sus",
-  "unpinCategory": "Anulează fixarea",
+  "pinCategory": "Fixează pe Acasă",
+  "unpinCategory": "Anulează fixarea pe Acasă",
   "clearSearch": "Șterge căutarea",
   "tripPurposeTitle": "Motivul călătoriei",
   "tripPurposeHoliday": "Vacanță",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} expiră în 7 zile} other{{count} expiră în 7 zile}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} expiră în 30 de zile} other{{count} expiră în 30 de zile}}",
   "allUpToDate": "Totul e la zi",
+  "homeExpiredDaysAgo": "{count, plural, =1{A expirat ieri} other{A expirat acum {count} zile}}",
+  "homeExpiresInDays": "{count, plural, =1{Expiră mâine} other{Expiră în {count} zile}}",
+  "homeAllClearTitle": "Nimic nu expiră în 30 de zile",
+  "homeAllClearNext": "Următorul: {name} expiră pe {date}",
+  "homePinHint": "Fixează categoriile pe care le folosești cel mai des. Atinge ⋮ la o categorie.",
+  "pinnedToHome": "Fixată pe Acasă",
   "@expiredBadge": {
     "placeholders": {
       "count": {

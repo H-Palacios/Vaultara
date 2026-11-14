@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "Atidaryti programos nustatymus",
   "showPassword": "Rodyti slaptažodį",
   "hidePassword": "Slėpti slaptažodį",
-  "pinCategory": "Prisegti viršuje",
-  "unpinCategory": "Atsegti",
+  "pinCategory": "Prisegti prie Pradžios",
+  "unpinCategory": "Atsegti nuo Pradžios",
   "clearSearch": "Išvalyti paiešką",
   "tripPurposeTitle": "Kelionės tikslas",
   "tripPurposeHoliday": "Atostogos",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} baigia galioti per 7 dienas} other{{count} baigia galioti per 7 dienas}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} baigia galioti per 30 dienų} other{{count} baigia galioti per 30 dienų}}",
   "allUpToDate": "Viskas atnaujinta",
+  "homeExpiredDaysAgo": "{count, plural, =1{Baigėsi vakar} other{Baigėsi prieš {count} d.}}",
+  "homeExpiresInDays": "{count, plural, =1{Baigiasi rytoj} other{Baigiasi po {count} d.}}",
+  "homeAllClearTitle": "Per 30 dienų niekas nesibaigia",
+  "homeAllClearNext": "Kitas: {name} baigiasi {date}",
+  "homePinHint": "Prisekite dažniausiai naudojamas kategorijas. Bakstelėkite kategorijos ⋮.",
+  "pinnedToHome": "Prisegta prie Pradžios",
   "@expiredBadge": {
     "placeholders": {
       "count": {

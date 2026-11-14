@@ -6198,10 +6198,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get hidePassword => 'Απόκρυψη κωδικού';
 
   @override
-  String get pinCategory => 'Καρφίτσωμα στην κορυφή';
+  String get pinCategory => 'Καρφίτσωμα στην Αρχική';
 
   @override
-  String get unpinCategory => 'Ξεκαρφίτσωμα';
+  String get unpinCategory => 'Ξεκαρφίτσωμα από την Αρχική';
 
   @override
   String get clearSearch => 'Εκκαθάριση αναζήτησης';
@@ -7947,6 +7947,42 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Όλα ενημερωμένα';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Έληξε πριν από $count ημέρες',
+      one: 'Έληξε χθες',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Λήγει σε $count ημέρες',
+      one: 'Λήγει αύριο',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Τίποτα δεν λήγει μέσα σε 30 ημέρες';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Επόμενο: $name λήγει στις $date';
+  }
+
+  @override
+  String get homePinHint => 'Καρφιτσώστε τις κατηγορίες που χρησιμοποιείτε περισσότερο. Πατήστε ⋮ σε μια κατηγορία.';
+
+  @override
+  String get pinnedToHome => 'Καρφιτσωμένο στην Αρχική';
 
   @override
   String get changeIcon => 'Αλλαγή εικονιδίου';

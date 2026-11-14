@@ -1988,8 +1988,8 @@
   "reminderHelpOpenApp": "აპის პარამეტრების გახსნა",
   "showPassword": "პაროლის ჩვენება",
   "hidePassword": "პაროლის დამალვა",
-  "pinCategory": "ზემოთ ჩამაგრება",
-  "unpinCategory": "ჩამაგრების მოხსნა",
+  "pinCategory": "მიმაგრება მთავარზე",
+  "unpinCategory": "მოხსნა მთავარიდან",
   "clearSearch": "ძიების გასუფთავება",
   "tripPurposeTitle": "მოგზაურობის მიზეზი",
   "tripPurposeHoliday": "დასვენება",
@@ -2636,6 +2636,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count}-ს 7 დღეში გასდის ვადა} other{{count}-ს 7 დღეში გასდის ვადა}}",
   "expiresWithin30Badge": "{count, plural, =1{{count}-ს 30 დღეში გასდის ვადა} other{{count}-ს 30 დღეში გასდის ვადა}}",
   "allUpToDate": "ყველაფერი განახლებულია",
+  "homeExpiredDaysAgo": "{count, plural, =1{ვადა გუშინ გავიდა} other{ვადა {count} დღის წინ გავიდა}}",
+  "homeExpiresInDays": "{count, plural, =1{ვადა ხვალ გადის} other{ვადა {count} დღეში გადის}}",
+  "homeAllClearTitle": "30 დღეში არაფერს გასდის ვადა",
+  "homeAllClearNext": "შემდეგი: {name}-ს ვადა გასდის {date}",
+  "homePinHint": "მიამაგრეთ ყველაზე ხშირად გამოყენებული კატეგორიები. შეეხეთ კატეგორიის ⋮-ს.",
+  "pinnedToHome": "მიმაგრებულია მთავარზე",
   "@expiredBadge": {
     "placeholders": {
       "count": {

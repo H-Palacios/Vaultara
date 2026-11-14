@@ -6198,10 +6198,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get hidePassword => 'پاسورډ پټ کړئ';
 
   @override
-  String get pinCategory => 'په سر کې ټینګ کړئ';
+  String get pinCategory => 'کور ته پن کړه';
 
   @override
-  String get unpinCategory => 'ټینګښت لرې کړئ';
+  String get unpinCategory => 'له کوره لرې کړه';
 
   @override
   String get clearSearch => 'لټون پاک کړئ';
@@ -7943,6 +7943,42 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get allUpToDate => 'ټول تازه دي';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ورځې مخکې پای ته ورسید',
+      one: 'پرون پای ته ورسید',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'په $count ورځو کې پای ته رسیږي',
+      one: 'سبا پای ته رسیږي',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'په 30 ورځو کې هیڅ پای ته نه رسیږي';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'بل: $name په $date پای ته رسیږي';
+  }
+
+  @override
+  String get homePinHint => 'هغه کټګورۍ چې ډېرې یې کاروئ پن کړئ. په کټګورۍ ⋮ ټک کړئ.';
+
+  @override
+  String get pinnedToHome => 'کور ته پن شوی';
 
   @override
   String get changeIcon => 'نښه بدله کړئ';

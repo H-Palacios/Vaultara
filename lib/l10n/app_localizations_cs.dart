@@ -6321,10 +6321,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get hidePassword => 'Skrýt heslo';
 
   @override
-  String get pinCategory => 'Připnout nahoru';
+  String get pinCategory => 'Připnout na Domů';
 
   @override
-  String get unpinCategory => 'Odepnout';
+  String get unpinCategory => 'Odepnout z Domů';
 
   @override
   String get clearSearch => 'Smazat hledání';
@@ -8080,6 +8080,42 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Vše je aktuální';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vypršelo před $count dny',
+      one: 'Vypršelo včera',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vyprší za $count dní',
+      one: 'Vyprší zítra',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Do 30 dnů nic nevyprší';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Další: $name vyprší $date';
+  }
+
+  @override
+  String get homePinHint => 'Připněte kategorie, které používáte nejčastěji. Klepněte na ⋮ u kategorie.';
+
+  @override
+  String get pinnedToHome => 'Připnuto na Domů';
 
   @override
   String get changeIcon => 'Změnit ikonu';

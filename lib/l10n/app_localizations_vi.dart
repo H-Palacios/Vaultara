@@ -6147,10 +6147,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get hidePassword => 'Ẩn mật khẩu';
 
   @override
-  String get pinCategory => 'Ghim lên đầu';
+  String get pinCategory => 'Ghim vào Trang chủ';
 
   @override
-  String get unpinCategory => 'Bỏ ghim';
+  String get unpinCategory => 'Bỏ ghim khỏi Trang chủ';
 
   @override
   String get clearSearch => 'Xóa tìm kiếm';
@@ -7885,6 +7885,42 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Mọi thứ đều cập nhật';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã hết hạn $count ngày trước',
+      one: 'Đã hết hạn hôm qua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hết hạn sau $count ngày',
+      one: 'Hết hạn ngày mai',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Không có gì hết hạn trong 30 ngày';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Tiếp theo: $name hết hạn vào $date';
+  }
+
+  @override
+  String get homePinHint => 'Ghim các danh mục bạn dùng nhiều nhất. Chạm ⋮ trên một danh mục.';
+
+  @override
+  String get pinnedToHome => 'Đã ghim vào Trang chủ';
 
   @override
   String get changeIcon => 'Đổi biểu tượng';

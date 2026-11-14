@@ -6188,10 +6188,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get hidePassword => 'Нууц үгийг нуух';
 
   @override
-  String get pinCategory => 'Дээр нь бэхлэх';
+  String get pinCategory => 'Нүүрэнд бэхлэх';
 
   @override
-  String get unpinCategory => 'Бэхлэлтийг арилгах';
+  String get unpinCategory => 'Нүүрнээс авах';
 
   @override
   String get clearSearch => 'Хайлтыг цэвэрлэх';
@@ -7933,6 +7933,42 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Бүгд шинэчлэгдсэн';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count хоногийн өмнө дууссан',
+      one: 'Өчигдөр дууссан',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count хоногийн дараа дуусна',
+      one: 'Маргааш дуусна',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 хоногт юу ч дуусахгүй';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Дараагийнх: $name $date-нд дуусна';
+  }
+
+  @override
+  String get homePinHint => 'Хамгийн их ашигладаг ангиллаа бэхлээрэй. Ангилал дээрх ⋮-г дарна уу.';
+
+  @override
+  String get pinnedToHome => 'Нүүрэнд бэхэлсэн';
 
   @override
   String get changeIcon => 'Дүрс солих';

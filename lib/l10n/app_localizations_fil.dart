@@ -6194,10 +6194,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get hidePassword => 'Itago ang password';
 
   @override
-  String get pinCategory => 'I-pin sa itaas';
+  String get pinCategory => 'I-pin sa Home';
 
   @override
-  String get unpinCategory => 'I-unpin';
+  String get unpinCategory => 'Alisin sa Home';
 
   @override
   String get clearSearch => 'I-clear ang paghahanap';
@@ -7937,6 +7937,42 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Updated lahat';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nag-expire $count araw na ang nakalipas',
+      one: 'Nag-expire kahapon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mag-e-expire sa loob ng $count araw',
+      one: 'Mag-e-expire bukas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Walang mag-e-expire sa loob ng 30 araw';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Susunod: mag-e-expire ang $name sa $date';
+  }
+
+  @override
+  String get homePinHint => 'I-pin ang mga kategoryang madalas mong gamitin. I-tap ang ⋮ sa isang kategorya.';
+
+  @override
+  String get pinnedToHome => 'Naka-pin sa Home';
 
   @override
   String get changeIcon => 'Palitan ang icon';

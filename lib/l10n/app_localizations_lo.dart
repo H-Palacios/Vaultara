@@ -6147,10 +6147,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get hidePassword => 'ເຊື່ອງລະຫັດຜ່ານ';
 
   @override
-  String get pinCategory => 'ປັກໝຸດຢູ່ເທິງ';
+  String get pinCategory => 'ປັກໝຸດໄວ້ໜ້າຫຼັກ';
 
   @override
-  String get unpinCategory => 'ຖອນໝຸດ';
+  String get unpinCategory => 'ຖອນອອກຈາກໜ້າຫຼັກ';
 
   @override
   String get clearSearch => 'ລຶບການຄົ້ນຫາ';
@@ -7885,6 +7885,42 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get allUpToDate => 'ທຸກຢ່າງເປັນປັດຈຸບັນ';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ໝົດອາຍຸ $count ມື້ກ່ອນ',
+      one: 'ໝົດອາຍຸມື້ວານ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ໝົດອາຍຸໃນ $count ມື້',
+      one: 'ໝົດອາຍຸມື້ອື່ນ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'ບໍ່ມີຫຍັງໝົດອາຍຸພາຍໃນ 30 ມື້';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'ຕໍ່ໄປ: $name ໝົດອາຍຸວັນທີ $date';
+  }
+
+  @override
+  String get homePinHint => 'ປັກໝຸດໝວດທີ່ທ່ານໃຊ້ຫຼາຍທີ່ສຸດ. ແຕະ ⋮ ຢູ່ໝວດໃດໜຶ່ງ.';
+
+  @override
+  String get pinnedToHome => 'ປັກໝຸດໄວ້ໜ້າຫຼັກ';
 
   @override
   String get changeIcon => 'ປ່ຽນໄອຄອນ';

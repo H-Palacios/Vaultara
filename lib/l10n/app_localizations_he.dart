@@ -6244,10 +6244,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get hidePassword => 'הסתר סיסמה';
 
   @override
-  String get pinCategory => 'הצמד למעלה';
+  String get pinCategory => 'הצמדה לבית';
 
   @override
-  String get unpinCategory => 'בטל הצמדה';
+  String get unpinCategory => 'ביטול הצמדה לבית';
 
   @override
   String get clearSearch => 'נקה חיפוש';
@@ -7996,6 +7996,42 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get allUpToDate => 'הכול מעודכן';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'פג לפני $count ימים',
+      one: 'פג אתמול',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'פג בעוד $count ימים',
+      one: 'פג מחר',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'שום דבר לא פג בתוך 30 ימים';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'הבא: $name פג ב־$date';
+  }
+
+  @override
+  String get homePinHint => 'הצמידו את הקטגוריות שבהן אתם משתמשים הכי הרבה. הקישו ⋮ בקטגוריה.';
+
+  @override
+  String get pinnedToHome => 'מוצמד לבית';
 
   @override
   String get changeIcon => 'שינוי סמל';

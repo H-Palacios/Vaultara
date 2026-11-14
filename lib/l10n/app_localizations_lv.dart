@@ -6258,10 +6258,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get hidePassword => 'Slēpt paroli';
 
   @override
-  String get pinCategory => 'Piespraust augšā';
+  String get pinCategory => 'Piespraust Sākumam';
 
   @override
-  String get unpinCategory => 'Atspraust';
+  String get unpinCategory => 'Atspraust no Sākuma';
 
   @override
   String get clearSearch => 'Notīrīt meklēšanu';
@@ -8010,6 +8010,42 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Viss ir aktuāls';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Beidzās pirms $count dienām',
+      one: 'Beidzās vakar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Beidzas pēc $count dienām',
+      one: 'Beidzas rīt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 dienu laikā nekas nebeidzas';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Nākamais: $name beidzas $date';
+  }
+
+  @override
+  String get homePinHint => 'Piespraudiet visbiežāk lietotās kategorijas. Pieskarieties ⋮ pie kategorijas.';
+
+  @override
+  String get pinnedToHome => 'Piesprausts Sākumam';
 
   @override
   String get changeIcon => 'Mainīt ikonu';

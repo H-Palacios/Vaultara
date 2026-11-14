@@ -2008,8 +2008,8 @@
   "reminderHelpOpenApp": "فتح إعدادات التطبيق",
   "showPassword": "إظهار كلمة المرور",
   "hidePassword": "إخفاء كلمة المرور",
-  "pinCategory": "تثبيت في الأعلى",
-  "unpinCategory": "إلغاء التثبيت",
+  "pinCategory": "تثبيت في الرئيسية",
+  "unpinCategory": "إلغاء التثبيت من الرئيسية",
   "clearSearch": "مسح البحث",
   "tripPurposeTitle": "سبب الرحلة",
   "tripPurposeHoliday": "عطلة",
@@ -2656,6 +2656,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} ينتهي خلال 7 أيام} other{{count} تنتهي خلال 7 أيام}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} ينتهي خلال 30 يومًا} other{{count} تنتهي خلال 30 يومًا}}",
   "allUpToDate": "كل شيء محدّث",
+  "homeExpiredDaysAgo": "{count, plural, =1{انتهى أمس} other{انتهى قبل {count} يومًا}}",
+  "homeExpiresInDays": "{count, plural, =1{ينتهي غدًا} other{ينتهي بعد {count} يومًا}}",
+  "homeAllClearTitle": "لا شيء ينتهي خلال 30 يومًا",
+  "homeAllClearNext": "التالي: {name} ينتهي في {date}",
+  "homePinHint": "ثبّت الفئات التي تستخدمها كثيرًا. اضغط ⋮ على أي فئة.",
+  "pinnedToHome": "مثبّتة في الرئيسية",
   "@expiredBadge": {
     "placeholders": {
       "count": {

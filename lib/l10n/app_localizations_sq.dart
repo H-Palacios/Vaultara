@@ -6198,10 +6198,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get hidePassword => 'Fshih fjalëkalimin';
 
   @override
-  String get pinCategory => 'Gozhdo lart';
+  String get pinCategory => 'Fikso në Kreu';
 
   @override
-  String get unpinCategory => 'Hiq gozhdimin';
+  String get unpinCategory => 'Hiq nga Kreu';
 
   @override
   String get clearSearch => 'Pastro kërkimin';
@@ -7947,6 +7947,42 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Gjithçka e përditësuar';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Skadoi para $count ditësh',
+      one: 'Skadoi dje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Skadon pas $count ditësh',
+      one: 'Skadon nesër',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Asgjë nuk skadon brenda 30 ditëve';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Tjetra: $name skadon më $date';
+  }
+
+  @override
+  String get homePinHint => 'Fikso kategoritë që përdor më shumë. Prek ⋮ te një kategori.';
+
+  @override
+  String get pinnedToHome => 'Fiksuar në Kreu';
 
   @override
   String get changeIcon => 'Ndrysho ikonën';

@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "Uygulama ayarlarını aç",
   "showPassword": "Parolayı göster",
   "hidePassword": "Parolayı gizle",
-  "pinCategory": "En üste sabitle",
-  "unpinCategory": "Sabitlemeyi kaldır",
+  "pinCategory": "Ana sayfaya sabitle",
+  "unpinCategory": "Ana sayfadan kaldır",
   "clearSearch": "Aramayı temizle",
   "tripPurposeTitle": "Seyahat nedeni",
   "tripPurposeHoliday": "Tatil",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} kaydın süresi 7 gün içinde doluyor} other{{count} kaydın süresi 7 gün içinde doluyor}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} kaydın süresi 30 gün içinde doluyor} other{{count} kaydın süresi 30 gün içinde doluyor}}",
   "allUpToDate": "Her şey güncel",
+  "homeExpiredDaysAgo": "{count, plural, =1{Dün sona erdi} other{{count} gün önce sona erdi}}",
+  "homeExpiresInDays": "{count, plural, =1{Yarın sona eriyor} other{{count} gün içinde sona eriyor}}",
+  "homeAllClearTitle": "30 gün içinde süresi dolan yok",
+  "homeAllClearNext": "Sıradaki: {name} {date} tarihinde sona eriyor",
+  "homePinHint": "En çok kullandığınız kategorileri sabitleyin. Bir kategoride ⋮ simgesine dokunun.",
+  "pinnedToHome": "Ana sayfaya sabitlendi",
   "@expiredBadge": {
     "placeholders": {
       "count": {

@@ -1970,8 +1970,8 @@
   "reminderHelpOpenApp": "打开应用设置",
   "showPassword": "显示密码",
   "hidePassword": "隐藏密码",
-  "pinCategory": "置顶",
-  "unpinCategory": "取消置顶",
+  "pinCategory": "固定到首页",
+  "unpinCategory": "从首页取消固定",
   "clearSearch": "清除搜索",
   "tripPurposeTitle": "出行目的",
   "tripPurposeHoliday": "度假",
@@ -2618,6 +2618,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 项在 7 天内到期} other{{count} 项在 7 天内到期}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 项在 30 天内到期} other{{count} 项在 30 天内到期}}",
   "allUpToDate": "全部正常",
+  "homeExpiredDaysAgo": "{count, plural, =1{昨天到期} other{{count} 天前到期}}",
+  "homeExpiresInDays": "{count, plural, =1{明天到期} other{{count} 天后到期}}",
+  "homeAllClearTitle": "30 天内没有到期的项目",
+  "homeAllClearNext": "下一个：{name} 将于 {date} 到期",
+  "homePinHint": "把最常用的类别固定到首页。点按类别上的 ⋮。",
+  "pinnedToHome": "已固定到首页",
   "@expiredBadge": {
     "placeholders": {
       "count": {

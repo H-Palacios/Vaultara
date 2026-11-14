@@ -6198,10 +6198,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get hidePassword => 'Ɓoye kalmar sirri';
 
   @override
-  String get pinCategory => 'Maƙala a sama';
+  String get pinCategory => 'Maƙala a Gida';
 
   @override
-  String get unpinCategory => 'Cire maƙala';
+  String get unpinCategory => 'Cire daga Gida';
 
   @override
   String get clearSearch => 'Share bincike';
@@ -7943,6 +7943,42 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Komai ya daidaita';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ya ƙare kwanaki $count da suka wuce',
+      one: 'Ya ƙare jiya',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Zai ƙare cikin kwanaki $count',
+      one: 'Zai ƙare gobe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Babu abin da zai ƙare cikin kwanaki 30';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Na gaba: $name zai ƙare a $date';
+  }
+
+  @override
+  String get homePinHint => 'Maƙala nau’ukan da kake amfani da su sosai. Taɓa ⋮ a kan nau’i.';
+
+  @override
+  String get pinnedToHome => 'An maƙala a Gida';
 
   @override
   String get changeIcon => 'Canza alama';

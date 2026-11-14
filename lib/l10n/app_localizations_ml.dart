@@ -6198,10 +6198,10 @@ class AppLocalizationsMl extends AppLocalizations {
   String get hidePassword => 'പാസ്‌വേഡ് മറയ്ക്കുക';
 
   @override
-  String get pinCategory => 'മുകളിൽ പിൻ ചെയ്യുക';
+  String get pinCategory => 'ഹോമിൽ പിൻ ചെയ്യുക';
 
   @override
-  String get unpinCategory => 'പിൻ നീക്കം ചെയ്യുക';
+  String get unpinCategory => 'ഹോമിൽ നിന്ന് അൺപിൻ ചെയ്യുക';
 
   @override
   String get clearSearch => 'തിരയൽ മായ്ക്കുക';
@@ -7943,6 +7943,42 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get allUpToDate => 'എല്ലാം കാലികം';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ദിവസം മുമ്പ് കാലഹരണപ്പെട്ടു',
+      one: 'ഇന്നലെ കാലഹരണപ്പെട്ടു',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും',
+      one: 'നാളെ കാലഹരണപ്പെടും',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 ദിവസത്തിനകം ഒന്നും കാലഹരണപ്പെടുന്നില്ല';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'അടുത്തത്: $name $date-ന് കാലഹരണപ്പെടും';
+  }
+
+  @override
+  String get homePinHint => 'കൂടുതൽ ഉപയോഗിക്കുന്ന വിഭാഗങ്ങൾ പിൻ ചെയ്യുക. ഒരു വിഭാഗത്തിൽ ⋮ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get pinnedToHome => 'ഹോമിൽ പിൻ ചെയ്തു';
 
   @override
   String get changeIcon => 'ഐക്കൺ മാറ്റുക';

@@ -6198,10 +6198,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get hidePassword => 'Скрий паролата';
 
   @override
-  String get pinCategory => 'Закачи най-горе';
+  String get pinCategory => 'Закачи в Начало';
 
   @override
-  String get unpinCategory => 'Откачи';
+  String get unpinCategory => 'Откачи от Начало';
 
   @override
   String get clearSearch => 'Изчисти търсенето';
@@ -7943,6 +7943,42 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Всичко е наред';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Изтекъл преди $count дни',
+      one: 'Изтекъл вчера',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Изтича след $count дни',
+      one: 'Изтича утре',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Нищо не изтича до 30 дни';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Следващо: $name изтича на $date';
+  }
+
+  @override
+  String get homePinHint => 'Закачете категориите, които ползвате най-често. Докоснете ⋮ на категория.';
+
+  @override
+  String get pinnedToHome => 'Закачено в Начало';
 
   @override
   String get changeIcon => 'Смяна на иконата';

@@ -6198,10 +6198,10 @@ class AppLocalizationsNn extends AppLocalizations {
   String get hidePassword => 'Skjul passord';
 
   @override
-  String get pinCategory => 'Fest øvst';
+  String get pinCategory => 'Fest til Heim';
 
   @override
-  String get unpinCategory => 'Løys';
+  String get unpinCategory => 'Løys frå Heim';
 
   @override
   String get clearSearch => 'Tøm søk';
@@ -7947,6 +7947,42 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get allUpToDate => 'Alt er oppdatert';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gjekk ut for $count dagar sidan',
+      one: 'Gjekk ut i går',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Går ut om $count dagar',
+      one: 'Går ut i morgon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => 'Ingenting går ut innan 30 dagar';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'Neste: $name går ut $date';
+  }
+
+  @override
+  String get homePinHint => 'Fest kategoriane du brukar mest. Trykk på ⋮ ved ein kategori.';
+
+  @override
+  String get pinnedToHome => 'Festa til Heim';
 
   @override
   String get changeIcon => 'Byt ikon';

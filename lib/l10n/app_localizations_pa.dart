@@ -6198,10 +6198,10 @@ class AppLocalizationsPa extends AppLocalizations {
   String get hidePassword => 'ਪਾਸਵਰਡ ਲੁਕਾਓ';
 
   @override
-  String get pinCategory => 'ਉੱਪਰ ਪਿੰਨ ਕਰੋ';
+  String get pinCategory => 'ਹੋਮ ’ਤੇ ਪਿੰਨ ਕਰੋ';
 
   @override
-  String get unpinCategory => 'ਪਿੰਨ ਹਟਾਓ';
+  String get unpinCategory => 'ਹੋਮ ਤੋਂ ਹਟਾਓ';
 
   @override
   String get clearSearch => 'ਖੋਜ ਸਾਫ਼ ਕਰੋ';
@@ -7943,6 +7943,42 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get allUpToDate => 'ਸਭ ਅੱਪ ਟੂ ਡੇਟ';
+
+  @override
+  String homeExpiredDaysAgo(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਦਿਨ ਪਹਿਲਾਂ ਮਿਆਦ ਪੁੱਗੀ',
+      one: 'ਕੱਲ੍ਹ ਮਿਆਦ ਪੁੱਗੀ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String homeExpiresInDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗੇਗੀ',
+      one: 'ਕੱਲ੍ਹ ਮਿਆਦ ਪੁੱਗੇਗੀ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeAllClearTitle => '30 ਦਿਨਾਂ ਵਿੱਚ ਕਿਸੇ ਦੀ ਮਿਆਦ ਨਹੀਂ ਪੁੱਗਦੀ';
+
+  @override
+  String homeAllClearNext(String name, String date) {
+    return 'ਅਗਲਾ: $name ਦੀ ਮਿਆਦ $date ਨੂੰ ਪੁੱਗਦੀ ਹੈ';
+  }
+
+  @override
+  String get homePinHint => 'ਸਭ ਤੋਂ ਵੱਧ ਵਰਤੀਆਂ ਸ਼੍ਰੇਣੀਆਂ ਪਿੰਨ ਕਰੋ। ਕਿਸੇ ਸ਼੍ਰੇਣੀ ’ਤੇ ⋮ ਟੈਪ ਕਰੋ।';
+
+  @override
+  String get pinnedToHome => 'ਹੋਮ ’ਤੇ ਪਿੰਨ ਕੀਤਾ';
 
   @override
   String get changeIcon => 'ਆਈਕਨ ਬਦਲੋ';

@@ -1984,8 +1984,8 @@
   "reminderHelpOpenApp": "Ireki aplikazioaren ezarpenak",
   "showPassword": "Erakutsi pasahitza",
   "hidePassword": "Ezkutatu pasahitza",
-  "pinCategory": "Finkatu goian",
-  "unpinCategory": "Desfinkatu",
+  "pinCategory": "Ainguratu Hasieran",
+  "unpinCategory": "Kendu Hasieratik",
   "clearSearch": "Garbitu bilaketa",
   "tripPurposeTitle": "Bidaiaren arrazoia",
   "tripPurposeHoliday": "Oporrak",
@@ -2632,6 +2632,12 @@
   "expiresWithin7Badge": "{count, plural, =1{{count} 7 egunean iraungitzen da} other{{count} 7 egunean iraungitzen dira}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} 30 egunean iraungitzen da} other{{count} 30 egunean iraungitzen dira}}",
   "allUpToDate": "Dena eguneratuta",
+  "homeExpiredDaysAgo": "{count, plural, =1{Atzo iraungi zen} other{Duela {count} egun iraungi zen}}",
+  "homeExpiresInDays": "{count, plural, =1{Bihar iraungitzen da} other{{count} egun barru iraungitzen da}}",
+  "homeAllClearTitle": "Ez da ezer iraungitzen 30 egunean",
+  "homeAllClearNext": "Hurrengoa: {name} {date}(e)an iraungitzen da",
+  "homePinHint": "Ainguratu gehien erabiltzen dituzun kategoriak. Sakatu ⋮ kategoria batean.",
+  "pinnedToHome": "Hasieran ainguratuta",
   "@expiredBadge": {
     "placeholders": {
       "count": {
