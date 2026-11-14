@@ -5,7 +5,6 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/l10n/plural_labels.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/features/records/logic/record_status.dart';
-import 'package:vaultara/core/theme/record_status_colours.dart';
 import 'package:vaultara/core/view/widgets/status_dot_label.dart';
 import 'package:vaultara/features/family/view/person_chip.dart';
 import 'package:vaultara/features/guides/data/renewal_guides.dart';
@@ -349,7 +348,7 @@ class _StartByLine extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final today = DateUtils.dateOnly(DateTime.now());
     final due = !date.isAfter(today);
-    final colour = due ? RecordStatusColours.urgent : scheme.onSurfaceVariant;
+    final colour = due ? scheme.primary : scheme.onSurfaceVariant;
     final text = due
         ? loc.startRenewingNow
         : loc.startRenewingBy(

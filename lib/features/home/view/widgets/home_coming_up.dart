@@ -186,7 +186,9 @@ class HomeExpiryRow extends StatelessWidget {
                           fontWeight: entry.startNow
                               ? FontWeight.w700
                               : FontWeight.w500,
-                          color: scheme.onSurfaceVariant,
+                          color: entry.startNow
+                              ? scheme.primary
+                              : scheme.onSurfaceVariant,
                         ),
                       ),
                     ),
