@@ -413,7 +413,8 @@ service cloud.firestore {
       // snoozed holds insights put off with Later, for preferences/insights.
       // afterExpiry, weekly, household and updates are on/off choices, for
       // preferences/notifications; the push functions read household and
-      // updates before sending.
+      // updates before sending. reminderSound and urgentSound are the sound
+      // keys picked for reminders.
       return smallDoc(20)
         && optionalList('labels', 100)
         && optionalList('pins', 100)
@@ -423,7 +424,16 @@ service cloud.firestore {
         && optionalBool('afterExpiry')
         && optionalBool('weekly')
         && optionalBool('household')
-        && optionalBool('updates');
+        && optionalBool('updates')
+        && optionalSoundKey('reminderSound')
+        && optionalSoundKey('urgentSound');
+    }
+
+    function optionalSoundKey(field) {
+      return !(field in request.resource.data)
+        || request.resource.data[field] == null
+        || (request.resource.data[field] is string
+            && request.resource.data[field].matches('^[a-z_]{1,24}$'));
     }
 
     function assistantExpiryOk(d) {
