@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
-import 'package:vaultara/features/family/logic/person_colours.dart';
+import 'package:vaultara/features/family/view/person_avatar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 class PersonPicker extends StatelessWidget {
@@ -15,12 +15,6 @@ class PersonPicker extends StatelessWidget {
     required this.onChanged,
     this.enabled = true,
   });
-
-  Widget _dot(Color colour) => Container(
-        width: 12,
-        height: 12,
-        decoration: BoxDecoration(color: colour, shape: BoxShape.circle),
-      );
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +44,7 @@ class PersonPicker extends StatelessWidget {
               runSpacing: 8,
               children: [
                 ChoiceChip(
-                  avatar: _dot(scheme.primary),
+                  avatar: const PersonAvatar(person: null, size: 20),
                   label: Text(loc.familyMe),
                   selected: holderId == null,
                   showCheckmark: false,
@@ -61,7 +55,7 @@ class PersonPicker extends StatelessWidget {
                 ),
                 for (final person in people)
                   ChoiceChip(
-                    avatar: _dot(PersonColours.of(person.colourIndex, scheme)),
+                    avatar: PersonAvatar(person: person, size: 20),
                     label: Text(
                       person.name,
                       maxLines: 1,
