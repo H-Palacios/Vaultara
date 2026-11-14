@@ -4941,7 +4941,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get requestUpdateNoEmail => 'سەرەتا ناونیشانی ئیمەیڵی ئەم کەسە لە شاشەی خێزان زیاد بکە.';
 
   @override
-  String get dailyDigestSwitchTitle => 'پوختەیەکی ڕۆژانە لە جیاتی بیرخەرەوەی جیا';
+  String get dailyDigestSwitchTitle => 'پوختەی ڕۆژانە';
 
   @override
   String get dailyDigestSwitchSubtitle => 'لە کاتی بیرخەرەوەکەتدا یەک ئاگادارکردنەوە وەربگرە کە هەموو ئەو شتانە دەژمێرێت کە ئەو ڕۆژە کاتیانە.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get notifTestSent => 'تاقیکردنەوە نێردرا. دەبێت لە چەند چرکەیەکدا بگات.';
 
   @override
-  String get notifAfterExpiryTitle => 'دوای بەسەرچوونی تۆمار بیرم بخەرەوە';
+  String get notifAfterExpiryTitle => 'دوای بەسەرچوون';
 
   @override
-  String get notifAfterExpirySubtitle => '3 و 14 ڕۆژ دواتر، ئەگەر نوێ نەکرابێتەوە';
+  String get notifAfterExpirySubtitle => 'بیرخستنەوە 3 و 14 ڕۆژ دوای بەسەرچوونی تۆمار، ئەگەر نوێ نەکرابێتەوە';
 
   @override
   String get notifWeeklyTitle => 'پوختەی دووشەممە';
@@ -8511,7 +8511,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get notifWeeklySubtitle => 'پەیامێک بەیانی دووشەممە کاتێک شتێک لەو هەفتەیەدا بەسەردەچێت';
 
   @override
-  String get notifPushSection => 'خێزان و نوێکارییەکان';
+  String get notifPushSection => 'خێزان';
 
   @override
   String get notifHouseholdTitle => 'تۆمارە هاوبەشکراوەکان';
@@ -8527,6 +8527,18 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'ئاگادارکردنەوەکانی چوونەژوورەوەی نوێ بۆ هەژمارەکەت هەمیشە دەنێردرێن.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'ئاگادارکردنەوەکانی چوونەژوورەوەی نوێ و ئەو نوێکارییانەی داوات کردووە هەمیشە دەنێردرێن.';
+
+  @override
+  String get batteryWarningText => 'پاشەکەوتی پاتری Vaultara سنووردار دەکات، بۆیە لەوانەیە بیرخستنەوەکان نەگەن.';
+
+  @override
+  String get batteryWarningFix => 'چاککردن';
+
+  @override
+  String get notifHelpSection => 'یارمەتی';
 
   @override
   String get notifIosHelpTitle => 'بیرخستنەوەت پێناگات؟';

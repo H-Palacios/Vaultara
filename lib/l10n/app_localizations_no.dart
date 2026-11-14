@@ -4941,7 +4941,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get requestUpdateNoEmail => 'Legg først til en e-postadresse for denne personen på Familie-skjermen.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Én daglig oppsummering i stedet for egne påminnelser';
+  String get dailyDigestSwitchTitle => 'Daglig oppsummering';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Få ett varsel på påminnelsestidspunktet som viser alt som skal skje den dagen.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get notifTestSent => 'Test sendt. Den skal komme om noen sekunder.';
 
   @override
-  String get notifAfterExpiryTitle => 'Påminn meg etter at en oppføring har utløpt';
+  String get notifAfterExpiryTitle => 'Etter utløp';
 
   @override
-  String get notifAfterExpirySubtitle => '3 og 14 dager etter, hvis den ikke er fornyet';
+  String get notifAfterExpirySubtitle => 'Påminnelser 3 og 14 dager etter at en oppføring er utløpt, hvis den ikke er fornyet';
 
   @override
   String get notifWeeklyTitle => 'Mandagsoversikt';
@@ -8515,7 +8515,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get notifWeeklySubtitle => 'En melding mandag morgen når noe utløper den uken';
 
   @override
-  String get notifPushSection => 'Husstand og oppdateringer';
+  String get notifPushSection => 'Husstand';
 
   @override
   String get notifHouseholdTitle => 'Delte oppføringer';
@@ -8531,6 +8531,18 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Varsler om nye pålogginger på kontoen din sendes alltid.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Varsler om nye pålogginger og oppdateringer du har bedt om, sendes alltid.';
+
+  @override
+  String get batteryWarningText => 'Batterisparing begrenser Vaultara, så påminnelser kommer kanskje ikke frem.';
+
+  @override
+  String get batteryWarningFix => 'Fiks';
+
+  @override
+  String get notifHelpSection => 'Hjelp';
 
   @override
   String get notifIosHelpTitle => 'Får du ikke påminnelser?';

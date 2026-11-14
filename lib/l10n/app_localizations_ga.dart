@@ -5074,7 +5074,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get requestUpdateNoEmail => 'Cuir seoladh ríomhphoist leis don duine seo ar scáileán an Teaghlaigh ar dtús.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Achoimre laethúil amháin in ionad meabhrúchán ar leith';
+  String get dailyDigestSwitchTitle => 'Achoimre laethúil';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Faigh fógra amháin ag am do mheabhrúcháin a liostaíonn gach rud atá le déanamh an lá sin.';
@@ -8689,10 +8689,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get notifTestSent => 'Tástáil seolta. Ba cheart di teacht i gceann cúpla soicind.';
 
   @override
-  String get notifAfterExpiryTitle => 'Cuir i gcuimhne dom tar éis do thaifead dul in éag';
+  String get notifAfterExpiryTitle => 'Tar éis dul in éag';
 
   @override
-  String get notifAfterExpirySubtitle => '3 agus 14 lá ina dhiaidh, mura bhfuil sé athnuaite';
+  String get notifAfterExpirySubtitle => 'Meabhrúcháin 3 agus 14 lá tar éis do thaifead dul in éag, mura bhfuil sé athnuaite';
 
   @override
   String get notifWeeklyTitle => 'Achoimre an Luain';
@@ -8701,7 +8701,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get notifWeeklySubtitle => 'Nóta maidin Dé Luain nuair a rachaidh rud éigin in éag an tseachtain sin';
 
   @override
-  String get notifPushSection => 'Teaghlach agus nuashonruithe';
+  String get notifPushSection => 'Teaghlach';
 
   @override
   String get notifHouseholdTitle => 'Taifid roinnte';
@@ -8717,6 +8717,18 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Seoltar foláirimh faoi shínithe isteach nua ar do chuntas i gcónaí.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Seoltar foláirimh faoi shínithe isteach nua agus faoi nuashonruithe a d’iarr tú i gcónaí.';
+
+  @override
+  String get batteryWarningText => 'Tá coigilt ceallraí ag cur srian ar Vaultara, mar sin b’fhéidir nach dtiocfaidh meabhrúcháin.';
+
+  @override
+  String get batteryWarningFix => 'Socraigh';
+
+  @override
+  String get notifHelpSection => 'Cabhair';
 
   @override
   String get notifIosHelpTitle => 'Gan meabhrúcháin a fháil?';

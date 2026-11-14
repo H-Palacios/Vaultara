@@ -5808,7 +5808,7 @@
   "@requestUpdateNoEmail": {
     "description": ""
   },
-  "dailyDigestSwitchTitle": "One daily summary instead of separate reminders",
+  "dailyDigestSwitchTitle": "Daily summary",
   "@dailyDigestSwitchTitle": {
     "description": "Notification settings: title of the switch that replaces separate record reminders with one daily summary notification"
   },
@@ -10453,11 +10453,11 @@
   "@notifTestSent": {
     "description": "Shown after sending a test notification."
   },
-  "notifAfterExpiryTitle": "Remind me after a record expires",
+  "notifAfterExpiryTitle": "After expiry",
   "@notifAfterExpiryTitle": {
     "description": "Switch for reminders after the expiry date."
   },
-  "notifAfterExpirySubtitle": "3 and 14 days after, if it has not been renewed",
+  "notifAfterExpirySubtitle": "Reminders 3 and 14 days after a record expires, if it has not been renewed",
   "@notifAfterExpirySubtitle": {
     "description": "Subtitle of the after expiry switch."
   },
@@ -10469,9 +10469,9 @@
   "@notifWeeklySubtitle": {
     "description": "Subtitle of the Monday summary switch."
   },
-  "notifPushSection": "Household and updates",
+  "notifPushSection": "Household",
   "@notifPushSection": {
-    "description": "Heading above the household and update notification switches."
+    "description": "Heading above the shared records switch, shown only to people in a household."
   },
   "notifHouseholdTitle": "Shared records",
   "@notifHouseholdTitle": {
@@ -10492,6 +10492,22 @@
   "notifSecurityNote": "Alerts about new sign-ins to your account are always sent.",
   "@notifSecurityNote": {
     "description": "Note under the notification switches."
+  },
+  "notifSecurityNoteBusiness": "Alerts about new sign-ins and updates you asked for are always sent.",
+  "@notifSecurityNoteBusiness": {
+    "description": "Note at the bottom of Notifications on the Business plan. Updates you asked for are pushes when someone sends the new details of a record you requested."
+  },
+  "batteryWarningText": "Battery saving is limiting Vaultara, so reminders may not arrive.",
+  "@batteryWarningText": {
+    "description": "Warning at the top of Notifications, shown only on Android when the phone restricts Vaultara in the background."
+  },
+  "batteryWarningFix": "Fix",
+  "@batteryWarningFix": {
+    "description": "Button on the battery warning that opens the steps to fix it. Keep it short."
+  },
+  "notifHelpSection": "Help",
+  "@notifHelpSection": {
+    "description": "Heading above the help row at the bottom of Notifications."
   },
   "notifIosHelpTitle": "Not getting reminders?",
   "@notifIosHelpTitle": {

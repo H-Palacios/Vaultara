@@ -4939,7 +4939,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get requestUpdateNoEmail => 'Прво додајте адреса на е-пошта за ова лице на екранот Семејство.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Еден дневен преглед наместо одделни потсетници';
+  String get dailyDigestSwitchTitle => 'Дневен преглед';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Добивајте едно известување во времето на потсетникот што наведува сè за тој ден.';
@@ -8497,10 +8497,10 @@ class AppLocalizationsMk extends AppLocalizations {
   String get notifTestSent => 'Пробата е испратена. Треба да стигне за неколку секунди.';
 
   @override
-  String get notifAfterExpiryTitle => 'Потсети ме по истекот на запис';
+  String get notifAfterExpiryTitle => 'По истекувањето';
 
   @override
-  String get notifAfterExpirySubtitle => '3 и 14 дена потоа, ако не е обновен';
+  String get notifAfterExpirySubtitle => 'Потсетници 3 и 14 дена по истекувањето на записот, ако не е обновен';
 
   @override
   String get notifWeeklyTitle => 'Преглед во понеделник';
@@ -8509,7 +8509,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get notifWeeklySubtitle => 'Порака во понеделник наутро кога нешто истекува таа недела';
 
   @override
-  String get notifPushSection => 'Домаќинство и ажурирања';
+  String get notifPushSection => 'Домаќинство';
 
   @override
   String get notifHouseholdTitle => 'Споделени записи';
@@ -8525,6 +8525,18 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Предупредувањата за нови најавувања на вашата сметка секогаш се испраќаат.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Предупредувањата за нови најавувања и за ажурирањата што ги побаравте секогаш се испраќаат.';
+
+  @override
+  String get batteryWarningText => 'Штедењето батерија ја ограничува Vaultara, па потсетниците можеби нема да стигнат.';
+
+  @override
+  String get batteryWarningFix => 'Поправи';
+
+  @override
+  String get notifHelpSection => 'Помош';
 
   @override
   String get notifIosHelpTitle => 'Не стигнуваат потсетници?';

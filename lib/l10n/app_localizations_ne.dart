@@ -4941,7 +4941,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get requestUpdateNoEmail => 'पहिले परिवार स्क्रिनमा यो व्यक्तिको इमेल ठेगाना थप्नुहोस्।';
 
   @override
-  String get dailyDigestSwitchTitle => 'अलग-अलग रिमाइन्डरको सट्टा दैनिक एउटा सारांश';
+  String get dailyDigestSwitchTitle => 'दैनिक सारांश';
 
   @override
   String get dailyDigestSwitchSubtitle => 'आफ्नो रिमाइन्डरको समयमा त्यस दिन म्याद पुग्ने सबै कुरा देखाउने एउटा सूचना पाउनुहोस्।';
@@ -8499,10 +8499,10 @@ class AppLocalizationsNe extends AppLocalizations {
   String get notifTestSent => 'परीक्षण पठाइयो। केही सेकेन्डमा आइपुग्नुपर्छ।';
 
   @override
-  String get notifAfterExpiryTitle => 'रेकर्ड समाप्त भएपछि सम्झाउनुहोस्';
+  String get notifAfterExpiryTitle => 'म्याद सकिएपछि';
 
   @override
-  String get notifAfterExpirySubtitle => '3 र 14 दिनपछि, नवीकरण नभएको खण्डमा';
+  String get notifAfterExpirySubtitle => 'रेकर्डको म्याद सकिएको ३ र १४ दिनपछि रिमाइन्डर, नवीकरण नभएमा';
 
   @override
   String get notifWeeklyTitle => 'सोमबारको सारांश';
@@ -8511,7 +8511,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get notifWeeklySubtitle => 'त्यो हप्ता केही समाप्त हुँदा सोमबार बिहान एउटा सन्देश';
 
   @override
-  String get notifPushSection => 'परिवार र अद्यावधिकहरू';
+  String get notifPushSection => 'घर';
 
   @override
   String get notifHouseholdTitle => 'सेयर गरिएका रेकर्डहरू';
@@ -8527,6 +8527,18 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'तपाईंको खातामा नयाँ साइन-इनका चेतावनीहरू सधैं पठाइन्छन्।';
+
+  @override
+  String get notifSecurityNoteBusiness => 'नयाँ साइन-इन र तपाईंले मागेका अपडेटबारे सूचनाहरू सधैँ पठाइन्छन्।';
+
+  @override
+  String get batteryWarningText => 'ब्याट्री बचतले Vaultara लाई सीमित गरिरहेको छ, त्यसैले रिमाइन्डर नआउन सक्छन्।';
+
+  @override
+  String get batteryWarningFix => 'मिलाउनुहोस्';
+
+  @override
+  String get notifHelpSection => 'मद्दत';
 
   @override
   String get notifIosHelpTitle => 'रिमाइन्डर आइरहेका छैनन्?';

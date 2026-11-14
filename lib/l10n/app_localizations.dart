@@ -8584,7 +8584,7 @@ abstract class AppLocalizations {
   /// Notification settings: title of the switch that replaces separate record reminders with one daily summary notification
   ///
   /// In en, this message translates to:
-  /// **'One daily summary instead of separate reminders'**
+  /// **'Daily summary'**
   String get dailyDigestSwitchTitle;
 
   /// Notification settings: subtitle under the daily summary switch
@@ -14524,13 +14524,13 @@ abstract class AppLocalizations {
   /// Switch for reminders after the expiry date.
   ///
   /// In en, this message translates to:
-  /// **'Remind me after a record expires'**
+  /// **'After expiry'**
   String get notifAfterExpiryTitle;
 
   /// Subtitle of the after expiry switch.
   ///
   /// In en, this message translates to:
-  /// **'3 and 14 days after, if it has not been renewed'**
+  /// **'Reminders 3 and 14 days after a record expires, if it has not been renewed'**
   String get notifAfterExpirySubtitle;
 
   /// Switch for the Monday summary notification.
@@ -14545,10 +14545,10 @@ abstract class AppLocalizations {
   /// **'A note on Monday morning when something expires that week'**
   String get notifWeeklySubtitle;
 
-  /// Heading above the household and update notification switches.
+  /// Heading above the shared records switch, shown only to people in a household.
   ///
   /// In en, this message translates to:
-  /// **'Household and updates'**
+  /// **'Household'**
   String get notifPushSection;
 
   /// Switch for notifications about shared household records nobody has renewed.
@@ -14580,6 +14580,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Alerts about new sign-ins to your account are always sent.'**
   String get notifSecurityNote;
+
+  /// Note at the bottom of Notifications on the Business plan. Updates you asked for are pushes when someone sends the new details of a record you requested.
+  ///
+  /// In en, this message translates to:
+  /// **'Alerts about new sign-ins and updates you asked for are always sent.'**
+  String get notifSecurityNoteBusiness;
+
+  /// Warning at the top of Notifications, shown only on Android when the phone restricts Vaultara in the background.
+  ///
+  /// In en, this message translates to:
+  /// **'Battery saving is limiting Vaultara, so reminders may not arrive.'**
+  String get batteryWarningText;
+
+  /// Button on the battery warning that opens the steps to fix it. Keep it short.
+  ///
+  /// In en, this message translates to:
+  /// **'Fix'**
+  String get batteryWarningFix;
+
+  /// Heading above the help row at the bottom of Notifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Help'**
+  String get notifHelpSection;
 
   /// Settings row and sheet title for iPhone reminder help.
   ///

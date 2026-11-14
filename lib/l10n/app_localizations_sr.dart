@@ -4990,7 +4990,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get requestUpdateNoEmail => 'Прво додајте имејл адресу ове особе на екрану Породица.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Један дневни сажетак уместо засебних подсетника';
+  String get dailyDigestSwitchTitle => 'Дневни преглед';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Примајте једно обавештење у време подсетника са свиме што истиче тог дана.';
@@ -8577,10 +8577,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get notifTestSent => 'Проба послата. Требало би да стигне за неколико секунди.';
 
   @override
-  String get notifAfterExpiryTitle => 'Подсети ме после истека записа';
+  String get notifAfterExpiryTitle => 'Након истека';
 
   @override
-  String get notifAfterExpirySubtitle => '3 и 14 дана после, ако није обновљен';
+  String get notifAfterExpirySubtitle => 'Подсетници 3 и 14 дана након истека записа, ако није обновљен';
 
   @override
   String get notifWeeklyTitle => 'Понедељни преглед';
@@ -8589,7 +8589,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get notifWeeklySubtitle => 'Порука у понедељак ујутру када нешто истиче те недеље';
 
   @override
-  String get notifPushSection => 'Домаћинство и ажурирања';
+  String get notifPushSection => 'Домаћинство';
 
   @override
   String get notifHouseholdTitle => 'Подељени записи';
@@ -8605,6 +8605,18 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Упозорења о новим пријавама на ваш налог увек се шаљу.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Упозорења о новим пријавама и ажурирањима која сте тражили увек се шаљу.';
+
+  @override
+  String get batteryWarningText => 'Уштеда батерије ограничава Vaultaru, па подсетници можда неће стићи.';
+
+  @override
+  String get batteryWarningFix => 'Поправи';
+
+  @override
+  String get notifHelpSection => 'Помоћ';
 
   @override
   String get notifIosHelpTitle => 'Не стижу вам подсетници?';
@@ -14049,7 +14061,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get requestUpdateNoEmail => 'Прво додајте имејл адресу за ову особу на екрану Породица.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Један дневни сажетак уместо одвојених подсетника';
+  String get dailyDigestSwitchTitle => 'Дневни преглед';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Добијате једно обавештење у време подсетника са листом свега што истиче тог дана.';
@@ -17636,10 +17648,10 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get notifTestSent => 'Проба послата. Требало би да стигне за неколико секунди.';
 
   @override
-  String get notifAfterExpiryTitle => 'Подсети ме после истека записа';
+  String get notifAfterExpiryTitle => 'Након истека';
 
   @override
-  String get notifAfterExpirySubtitle => '3 и 14 дана после, ако није обновљен';
+  String get notifAfterExpirySubtitle => 'Подсетници 3 и 14 дана након истека записа, ако није обновљен';
 
   @override
   String get notifWeeklyTitle => 'Понедељни преглед';
@@ -17648,7 +17660,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get notifWeeklySubtitle => 'Порука у понедељак ујутру када нешто истиче те недеље';
 
   @override
-  String get notifPushSection => 'Домаћинство и ажурирања';
+  String get notifPushSection => 'Домаћинство';
 
   @override
   String get notifHouseholdTitle => 'Подељени записи';
@@ -17664,6 +17676,18 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get notifSecurityNote => 'Упозорења о новим пријавама на ваш налог увек се шаљу.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Упозорења о новим пријавама и ажурирањима која сте тражили увек се шаљу.';
+
+  @override
+  String get batteryWarningText => 'Уштеда батерије ограничава Vaultaru, па подсетници можда неће стићи.';
+
+  @override
+  String get batteryWarningFix => 'Поправи';
+
+  @override
+  String get notifHelpSection => 'Помоћ';
 
   @override
   String get notifIosHelpTitle => 'Не стижу вам подсетници?';
@@ -23104,7 +23128,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get requestUpdateNoEmail => 'Prvo dodajte adresu e-pošte za ovu osobu na ekranu Porodica.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Jedan dnevni pregled umesto zasebnih podsetnika';
+  String get dailyDigestSwitchTitle => 'Dnevni pregled';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Dobijte jedno obaveštenje u vreme podsetnika sa svime što dospeva tog dana.';
@@ -26691,10 +26715,10 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get notifTestSent => 'Proba poslata. Trebalo bi da stigne za nekoliko sekundi.';
 
   @override
-  String get notifAfterExpiryTitle => 'Podseti me posle isteka zapisa';
+  String get notifAfterExpiryTitle => 'Nakon isteka';
 
   @override
-  String get notifAfterExpirySubtitle => '3 i 14 dana posle, ako nije obnovljen';
+  String get notifAfterExpirySubtitle => 'Podsetnici 3 i 14 dana nakon isteka zapisa, ako nije obnovljen';
 
   @override
   String get notifWeeklyTitle => 'Ponedeljni pregled';
@@ -26703,7 +26727,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get notifWeeklySubtitle => 'Poruka u ponedeljak ujutru kada nešto ističe te nedelje';
 
   @override
-  String get notifPushSection => 'Domaćinstvo i ažuriranja';
+  String get notifPushSection => 'Domaćinstvo';
 
   @override
   String get notifHouseholdTitle => 'Podeljeni zapisi';
@@ -26719,6 +26743,18 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get notifSecurityNote => 'Upozorenja o novim prijavama na vaš nalog uvek se šalju.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Upozorenja o novim prijavama i ažuriranjima koja ste tražili uvek se šalju.';
+
+  @override
+  String get batteryWarningText => 'Ušteda baterije ograničava Vaultaru, pa podsetnici možda neće stići.';
+
+  @override
+  String get batteryWarningFix => 'Popravi';
+
+  @override
+  String get notifHelpSection => 'Pomoć';
 
   @override
   String get notifIosHelpTitle => 'Ne stižu vam podsetnici?';

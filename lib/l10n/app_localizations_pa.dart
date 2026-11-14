@@ -4941,7 +4941,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get requestUpdateNoEmail => 'ਪਹਿਲਾਂ ਪਰਿਵਾਰ ਸਕ੍ਰੀਨ \'ਤੇ ਇਸ ਵਿਅਕਤੀ ਦਾ ਈਮੇਲ ਪਤਾ ਜੋੜੋ।';
 
   @override
-  String get dailyDigestSwitchTitle => 'ਵੱਖਰੇ ਰਿਮਾਈਂਡਰਾਂ ਦੀ ਥਾਂ ਇੱਕ ਰੋਜ਼ਾਨਾ ਸਾਰ';
+  String get dailyDigestSwitchTitle => 'ਰੋਜ਼ਾਨਾ ਸਾਰ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'ਆਪਣੇ ਰਿਮਾਈਂਡਰ ਦੇ ਸਮੇਂ \'ਤੇ ਇੱਕ ਨੋਟੀਫਿਕੇਸ਼ਨ ਪਾਓ, ਜਿਸ ਵਿੱਚ ਉਸ ਦਿਨ ਦੀਆਂ ਸਾਰੀਆਂ ਚੀਜ਼ਾਂ ਹੋਣ।';
@@ -8499,10 +8499,10 @@ class AppLocalizationsPa extends AppLocalizations {
   String get notifTestSent => 'ਟੈਸਟ ਭੇਜਿਆ ਗਿਆ। ਇਹ ਕੁਝ ਸਕਿੰਟਾਂ ਵਿੱਚ ਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।';
 
   @override
-  String get notifAfterExpiryTitle => 'ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਖਤਮ ਹੋਣ ਤੋਂ ਬਾਅਦ ਯਾਦ ਦਿਵਾਓ';
+  String get notifAfterExpiryTitle => 'ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਬਾਅਦ';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ਅਤੇ 14 ਦਿਨਾਂ ਬਾਅਦ, ਜੇ ਨਵੀਨੀਕਰਨ ਨਾ ਹੋਇਆ ਹੋਵੇ';
+  String get notifAfterExpirySubtitle => 'ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ 3 ਅਤੇ 14 ਦਿਨ ਬਾਅਦ ਰਿਮਾਈਂਡਰ, ਜੇ ਨਵਿਆਇਆ ਨਹੀਂ ਗਿਆ';
 
   @override
   String get notifWeeklyTitle => 'ਸੋਮਵਾਰ ਦਾ ਸਾਰ';
@@ -8511,7 +8511,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get notifWeeklySubtitle => 'ਸੋਮਵਾਰ ਸਵੇਰੇ ਇੱਕ ਸੁਨੇਹਾ ਜਦੋਂ ਉਸ ਹਫ਼ਤੇ ਕੁਝ ਖਤਮ ਹੋ ਰਿਹਾ ਹੋਵੇ';
 
   @override
-  String get notifPushSection => 'ਪਰਿਵਾਰ ਅਤੇ ਅੱਪਡੇਟ';
+  String get notifPushSection => 'ਘਰ';
 
   @override
   String get notifHouseholdTitle => 'ਸਾਂਝੇ ਕੀਤੇ ਰਿਕਾਰਡ';
@@ -8527,6 +8527,18 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਨਵੇਂ ਸਾਈਨ-ਇਨ ਦੀਆਂ ਚੇਤਾਵਨੀਆਂ ਹਮੇਸ਼ਾ ਭੇਜੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।';
+
+  @override
+  String get notifSecurityNoteBusiness => 'ਨਵੇਂ ਸਾਈਨ-ਇਨ ਅਤੇ ਤੁਹਾਡੇ ਵੱਲੋਂ ਮੰਗੇ ਅੱਪਡੇਟਾਂ ਬਾਰੇ ਸੂਚਨਾਵਾਂ ਹਮੇਸ਼ਾਂ ਭੇਜੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।';
+
+  @override
+  String get batteryWarningText => 'ਬੈਟਰੀ ਬਚਤ Vaultara ਨੂੰ ਸੀਮਿਤ ਕਰ ਰਹੀ ਹੈ, ਇਸ ਲਈ ਰਿਮਾਈਂਡਰ ਸ਼ਾਇਦ ਨਾ ਪਹੁੰਚਣ।';
+
+  @override
+  String get batteryWarningFix => 'ਠੀਕ ਕਰੋ';
+
+  @override
+  String get notifHelpSection => 'ਮਦਦ';
 
   @override
   String get notifIosHelpTitle => 'ਰਿਮਾਈਂਡਰ ਨਹੀਂ ਮਿਲ ਰਹੇ?';

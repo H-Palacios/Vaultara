@@ -4940,7 +4940,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get requestUpdateNoEmail => 'පළමුව පවුල තිරයේ මෙම පුද්ගලයා සඳහා ඊමේල් ලිපිනයක් එක් කරන්න.';
 
   @override
-  String get dailyDigestSwitchTitle => 'වෙන වෙනම මතක් කිරීම් වෙනුවට දිනපතා එක් සාරාංශයක්';
+  String get dailyDigestSwitchTitle => 'දෛනික සාරාංශය';
 
   @override
   String get dailyDigestSwitchSubtitle => 'ඔබේ මතක් කිරීමේ වේලාවට, එදිනට නියමිත සියල්ල ලැයිස්තුගත කළ දැනුම්දීමක් ලබා ගන්න.';
@@ -8498,10 +8498,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get notifTestSent => 'පරීක්ෂණය යැව්වා. තත්පර කිහිපයකින් පැමිණිය යුතුයි.';
 
   @override
-  String get notifAfterExpiryTitle => 'වාර්තාවක් කල් ඉකුත් වූ පසු මතක් කරන්න';
+  String get notifAfterExpiryTitle => 'කල් ඉකුත් වූ පසු';
 
   @override
-  String get notifAfterExpirySubtitle => 'දින 3 සහ 14 කට පසු, අලුත් කර නැත්නම්';
+  String get notifAfterExpirySubtitle => 'වාර්තාවක කල් ඉකුත් වී දින 3 සහ 14කට පසු සිහිකැඳවීම්, අලුත් කර නැත්නම්';
 
   @override
   String get notifWeeklyTitle => 'සඳුදා සාරාංශය';
@@ -8510,7 +8510,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get notifWeeklySubtitle => 'එම සතියේ යමක් කල් ඉකුත් වන විට සඳුදා උදෑසන පණිවිඩයක්';
 
   @override
-  String get notifPushSection => 'පවුල සහ යාවත්කාලීන';
+  String get notifPushSection => 'නිවස';
 
   @override
   String get notifHouseholdTitle => 'බෙදාගත් වාර්තා';
@@ -8526,6 +8526,18 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'ඔබේ ගිණුමට නව පිවිසීම් ගැන ඇඟවීම් සැමවිටම යවනු ලැබේ.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'නව පිවිසීම් සහ ඔබ ඉල්ලූ යාවත්කාලීන ගැන ඇඟවීම් සැමවිටම යවනු ලැබේ.';
+
+  @override
+  String get batteryWarningText => 'බැටරි ඉතිරිකිරීම Vaultara සීමා කරයි, එබැවින් සිහිකැඳවීම් නොලැබිය හැක.';
+
+  @override
+  String get batteryWarningFix => 'නිවැරදි කරන්න';
+
+  @override
+  String get notifHelpSection => 'උදව්';
 
   @override
   String get notifIosHelpTitle => 'සිහිකැඳවීම් ලැබෙන්නේ නැද්ද?';

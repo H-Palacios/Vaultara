@@ -4894,7 +4894,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get requestUpdateNoEmail => '先に、家族画面でこの人のメールアドレスを追加してください。';
 
   @override
-  String get dailyDigestSwitchTitle => '個別のリマインダーの代わりに毎日1回のまとめ通知';
+  String get dailyDigestSwitchTitle => '毎日のまとめ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'リマインダーの時刻に、その日が期限のものをまとめた通知が1回届きます。';
@@ -8428,10 +8428,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get notifTestSent => 'テストを送信しました。数秒で届きます。';
 
   @override
-  String get notifAfterExpiryTitle => '期限が切れた後にも知らせる';
+  String get notifAfterExpiryTitle => '期限切れの後';
 
   @override
-  String get notifAfterExpirySubtitle => '更新されていなければ、3日後と14日後に';
+  String get notifAfterExpirySubtitle => '記録の期限が切れてから3日後と14日後のリマインダー（更新されていない場合）';
 
   @override
   String get notifWeeklyTitle => '月曜日のまとめ';
@@ -8440,7 +8440,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get notifWeeklySubtitle => 'その週に期限が来るものがあるとき、月曜の朝にお知らせ';
 
   @override
-  String get notifPushSection => '世帯とアップデート';
+  String get notifPushSection => '世帯';
 
   @override
   String get notifHouseholdTitle => '共有された記録';
@@ -8456,6 +8456,18 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'アカウントへの新しいサインインの通知は常に送信されます。';
+
+  @override
+  String get notifSecurityNoteBusiness => '新しいサインインと依頼した更新のお知らせは常に送信されます。';
+
+  @override
+  String get batteryWarningText => 'バッテリーの節約機能がVaultaraを制限しているため、リマインダーが届かない可能性があります。';
+
+  @override
+  String get batteryWarningFix => '修正';
+
+  @override
+  String get notifHelpSection => 'ヘルプ';
 
   @override
   String get notifIosHelpTitle => 'リマインダーが届きませんか？';

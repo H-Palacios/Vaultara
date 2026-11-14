@@ -4941,7 +4941,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get requestUpdateNoEmail => 'Tilføj først en e-mailadresse til denne person på skærmen Familie.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Én daglig oversigt i stedet for separate påmindelser';
+  String get dailyDigestSwitchTitle => 'Daglig oversigt';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Få én meddelelse på dit påmindelsestidspunkt med alt, der skal ordnes den dag.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get notifTestSent => 'Test sendt. Den bør komme om få sekunder.';
 
   @override
-  String get notifAfterExpiryTitle => 'Påmind mig, når en post er udløbet';
+  String get notifAfterExpiryTitle => 'Efter udløb';
 
   @override
-  String get notifAfterExpirySubtitle => '3 og 14 dage efter, hvis den ikke er fornyet';
+  String get notifAfterExpirySubtitle => 'Påmindelser 3 og 14 dage efter en post er udløbet, hvis den ikke er fornyet';
 
   @override
   String get notifWeeklyTitle => 'Mandagsoversigt';
@@ -8515,7 +8515,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get notifWeeklySubtitle => 'En besked mandag morgen, når noget udløber den uge';
 
   @override
-  String get notifPushSection => 'Husstand og opdateringer';
+  String get notifPushSection => 'Husstand';
 
   @override
   String get notifHouseholdTitle => 'Delte poster';
@@ -8531,6 +8531,18 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Advarsler om nye logins på din konto sendes altid.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Advarsler om nye logins og opdateringer, du har bedt om, sendes altid.';
+
+  @override
+  String get batteryWarningText => 'Batterisparing begrænser Vaultara, så påmindelser når måske ikke frem.';
+
+  @override
+  String get batteryWarningFix => 'Ret';
+
+  @override
+  String get notifHelpSection => 'Hjælp';
 
   @override
   String get notifIosHelpTitle => 'Får du ikke påmindelser?';

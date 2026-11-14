@@ -4941,7 +4941,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get requestUpdateNoEmail => 'Pêşî li ser ekrana Malbat navnîşana e-nameyê ji vî kesî re zêde bike.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Yek kurteya rojane li şûna bîrxistinên cuda';
+  String get dailyDigestSwitchTitle => 'Kurteya rojane';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Di dema bîrxistina xwe de yek agahdarî bistîne ku her tiştê wê rojê lê tê rêzkirin.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get notifTestSent => 'Ceribandin hat şandin. Divê di çend çirkeyan de bigihîje.';
 
   @override
-  String get notifAfterExpiryTitle => 'Piştî ku tomarek bi dawî bû bîne bîra min';
+  String get notifAfterExpiryTitle => 'Piştî qedandinê';
 
   @override
-  String get notifAfterExpirySubtitle => '3 û 14 roj piştî wê, heke nehatibe nûkirin';
+  String get notifAfterExpirySubtitle => 'Bîranîn 3 û 14 roj piştî ku tomar diqede, heke nehatibe nûkirin';
 
   @override
   String get notifWeeklyTitle => 'Kurteya Duşemê';
@@ -8511,7 +8511,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get notifWeeklySubtitle => 'Peyamek sibeha Duşemê dema ku tiştek wê hefteyê bi dawî dibe';
 
   @override
-  String get notifPushSection => 'Malbat û nûkirin';
+  String get notifPushSection => 'Mal';
 
   @override
   String get notifHouseholdTitle => 'Tomarên parvekirî';
@@ -8527,6 +8527,18 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Hişyariyên têketinên nû li hesabê te her tim têne şandin.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Hişyariyên derbarê têketinên nû û nûvekirinên ku te xwestine her tim têne şandin.';
+
+  @override
+  String get batteryWarningText => 'Parastina pîlê Vaultara sînordar dike, ji ber vê bîranîn dibe ku negihîjin.';
+
+  @override
+  String get batteryWarningFix => 'Çêke';
+
+  @override
+  String get notifHelpSection => 'Alîkarî';
 
   @override
   String get notifIosHelpTitle => 'Bîranîn nayên?';

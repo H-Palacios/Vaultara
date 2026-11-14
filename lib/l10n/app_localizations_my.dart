@@ -4904,7 +4904,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get requestUpdateNoEmail => 'ဦးစွာ မိသားစု စာမျက်နှာတွင် ဤလူ၏ အီးမေးလ်လိပ်စာကို ထည့်ပါ။';
 
   @override
-  String get dailyDigestSwitchTitle => 'သတိပေးချက်များ သီးခြားစီမဟုတ်ဘဲ နေ့စဉ် အကျဉ်းချုပ် တစ်ခုတည်း';
+  String get dailyDigestSwitchTitle => 'နေ့စဉ် အနှစ်ချုပ်';
 
   @override
   String get dailyDigestSwitchSubtitle => 'သင့်သတိပေးချက်အချိန်တွင် ထိုနေ့ ကျရောက်သမျှကို စာရင်းပြသော အကြောင်းကြားချက် တစ်ခုတည်း ရယူပါ။';
@@ -8438,10 +8438,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get notifTestSent => 'စမ်းသပ်မှု ပို့ပြီးပါပြီ။ စက္ကန့်အနည်းငယ်အတွင်း ရောက်လာပါမည်။';
 
   @override
-  String get notifAfterExpiryTitle => 'မှတ်တမ်း သက်တမ်းကုန်ပြီးနောက် သတိပေးပါ';
+  String get notifAfterExpiryTitle => 'သက်တမ်းကုန်ပြီးနောက်';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ရက်နှင့် 14 ရက်အကြာ၊ သက်တမ်းမတိုးရသေးပါက';
+  String get notifAfterExpirySubtitle => 'မှတ်တမ်း သက်တမ်းကုန်ပြီး 3 ရက်နှင့် 14 ရက်အကြာ သတိပေးချက်များ၊ သက်တမ်းမတိုးရသေးလျှင်';
 
   @override
   String get notifWeeklyTitle => 'တနင်္လာနေ့ အနှစ်ချုပ်';
@@ -8450,7 +8450,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get notifWeeklySubtitle => 'ထိုအပတ်တွင် တစ်ခုခု သက်တမ်းကုန်မည်ဆိုပါက တနင်္လာနေ့မနက် မက်ဆေ့ချ်';
 
   @override
-  String get notifPushSection => 'မိသားစုနှင့် အပ်ဒိတ်များ';
+  String get notifPushSection => 'အိမ်ထောင်စု';
 
   @override
   String get notifHouseholdTitle => 'မျှဝေထားသော မှတ်တမ်းများ';
@@ -8466,6 +8466,18 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'သင့်အကောင့်သို့ ဝင်ရောက်မှုအသစ်များအကြောင်း သတိပေးချက်များကို အမြဲပို့ပါသည်။';
+
+  @override
+  String get notifSecurityNoteBusiness => 'အကောင့်ဝင်ရောက်မှုအသစ်များနှင့် သင်တောင်းထားသော အပ်ဒိတ်များအကြောင်း သတိပေးချက်များကို အမြဲပို့သည်။';
+
+  @override
+  String get batteryWarningText => 'ဘက်ထရီချွေတာမှုက Vaultara ကို ကန့်သတ်နေသဖြင့် သတိပေးချက်များ မရောက်နိုင်ပါ။';
+
+  @override
+  String get batteryWarningFix => 'ပြင်ရန်';
+
+  @override
+  String get notifHelpSection => 'အကူအညီ';
 
   @override
   String get notifIosHelpTitle => 'သတိပေးချက်များ မရောက်ဘူးလား။';

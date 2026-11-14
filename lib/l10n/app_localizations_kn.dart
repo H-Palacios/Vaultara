@@ -4941,7 +4941,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get requestUpdateNoEmail => 'ಮೊದಲು ಕುಟುಂಬ ಪರದೆಯಲ್ಲಿ ಈ ವ್ಯಕ್ತಿಗೆ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಸೇರಿಸಿ.';
 
   @override
-  String get dailyDigestSwitchTitle => 'ಪ್ರತ್ಯೇಕ ರಿಮೈಂಡರ್‌ಗಳ ಬದಲು ಒಂದು ದೈನಂದಿನ ಸಾರಾಂಶ';
+  String get dailyDigestSwitchTitle => 'ದೈನಂದಿನ ಸಾರಾಂಶ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'ನಿಮ್ಮ ರಿಮೈಂಡರ್ ಸಮಯದಲ್ಲಿ ಆ ದಿನ ಬರಬೇಕಾದ ಎಲ್ಲವನ್ನೂ ಪಟ್ಟಿ ಮಾಡುವ ಒಂದು ಅಧಿಸೂಚನೆ ಪಡೆಯಿರಿ.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsKn extends AppLocalizations {
   String get notifTestSent => 'ಪರೀಕ್ಷೆ ಕಳುಹಿಸಲಾಗಿದೆ. ಕೆಲವು ಸೆಕೆಂಡುಗಳಲ್ಲಿ ಬರಬೇಕು.';
 
   @override
-  String get notifAfterExpiryTitle => 'ದಾಖಲೆ ಮುಕ್ತಾಯಗೊಂಡ ನಂತರ ನೆನಪಿಸಿ';
+  String get notifAfterExpiryTitle => 'ಮುಕ್ತಾಯದ ನಂತರ';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ಮತ್ತು 14 ದಿನಗಳ ನಂತರ, ನವೀಕರಿಸದಿದ್ದರೆ';
+  String get notifAfterExpirySubtitle => 'ದಾಖಲೆ ಮುಕ್ತಾಯವಾದ 3 ಮತ್ತು 14 ದಿನಗಳ ನಂತರ ಜ್ಞಾಪನೆಗಳು, ನವೀಕರಿಸದಿದ್ದರೆ';
 
   @override
   String get notifWeeklyTitle => 'ಸೋಮವಾರದ ಸಾರಾಂಶ';
@@ -8511,7 +8511,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get notifWeeklySubtitle => 'ಆ ವಾರ ಏನಾದರೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವಾಗ ಸೋಮವಾರ ಬೆಳಿಗ್ಗೆ ಒಂದು ಸಂದೇಶ';
 
   @override
-  String get notifPushSection => 'ಕುಟುಂಬ ಮತ್ತು ಅಪ್‌ಡೇಟ್‌ಗಳು';
+  String get notifPushSection => 'ಮನೆ';
 
   @override
   String get notifHouseholdTitle => 'ಹಂಚಿದ ದಾಖಲೆಗಳು';
@@ -8527,6 +8527,18 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'ನಿಮ್ಮ ಖಾತೆಗೆ ಹೊಸ ಸೈನ್-ಇನ್‌ಗಳ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಯಾವಾಗಲೂ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'ಹೊಸ ಸೈನ್-ಇನ್‌ಗಳು ಮತ್ತು ನೀವು ಕೇಳಿದ ಅಪ್‌ಡೇಟ್‌ಗಳ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಯಾವಾಗಲೂ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get batteryWarningText => 'ಬ್ಯಾಟರಿ ಉಳಿತಾಯ Vaultara ಅನ್ನು ಮಿತಿಗೊಳಿಸುತ್ತಿದೆ, ಆದ್ದರಿಂದ ಜ್ಞಾಪನೆಗಳು ಬರದೇ ಇರಬಹುದು.';
+
+  @override
+  String get batteryWarningFix => 'ಸರಿಪಡಿಸಿ';
+
+  @override
+  String get notifHelpSection => 'ಸಹಾಯ';
 
   @override
   String get notifIosHelpTitle => 'ಜ್ಞಾಪನೆಗಳು ಬರುತ್ತಿಲ್ಲವೇ?';

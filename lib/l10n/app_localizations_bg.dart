@@ -4941,7 +4941,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get requestUpdateNoEmail => 'Първо добавете имейл адрес за този човек на екрана Семейство.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Едно дневно резюме вместо отделни напомняния';
+  String get dailyDigestSwitchTitle => 'Дневно обобщение';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Получавайте едно известие в часа на напомнянето, което изброява всичко за деня.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get notifTestSent => 'Тестът е изпратен. Трябва да пристигне след няколко секунди.';
 
   @override
-  String get notifAfterExpiryTitle => 'Напомняй ми след изтичане на запис';
+  String get notifAfterExpiryTitle => 'След изтичане';
 
   @override
-  String get notifAfterExpirySubtitle => '3 и 14 дни след това, ако не е подновен';
+  String get notifAfterExpirySubtitle => 'Напомняния 3 и 14 дни след изтичане на запис, ако не е подновен';
 
   @override
   String get notifWeeklyTitle => 'Обобщение в понеделник';
@@ -8511,7 +8511,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get notifWeeklySubtitle => 'Съобщение в понеделник сутрин, когато нещо изтича през седмицата';
 
   @override
-  String get notifPushSection => 'Домакинство и актуализации';
+  String get notifPushSection => 'Домакинство';
 
   @override
   String get notifHouseholdTitle => 'Споделени записи';
@@ -8527,6 +8527,18 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Сигналите за нови влизания в профила ви се изпращат винаги.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Сигналите за нови влизания и за поисканите от вас актуализации се изпращат винаги.';
+
+  @override
+  String get batteryWarningText => 'Пестенето на батерия ограничава Vaultara, така че напомнянията може да не пристигнат.';
+
+  @override
+  String get batteryWarningFix => 'Поправи';
+
+  @override
+  String get notifHelpSection => 'Помощ';
 
   @override
   String get notifIosHelpTitle => 'Не получавате напомняния?';

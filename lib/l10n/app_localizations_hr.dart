@@ -4985,7 +4985,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get requestUpdateNoEmail => 'Prvo dodajte e-adresu ove osobe na zaslonu Obitelj.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Jedan dnevni sažetak umjesto zasebnih podsjetnika';
+  String get dailyDigestSwitchTitle => 'Dnevni sažetak';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Primajte jednu obavijest u vrijeme podsjetnika sa svime što istječe tog dana.';
@@ -8572,10 +8572,10 @@ class AppLocalizationsHr extends AppLocalizations {
   String get notifTestSent => 'Proba poslana. Trebala bi stići za nekoliko sekundi.';
 
   @override
-  String get notifAfterExpiryTitle => 'Podsjeti me nakon isteka zapisa';
+  String get notifAfterExpiryTitle => 'Nakon isteka';
 
   @override
-  String get notifAfterExpirySubtitle => '3 i 14 dana nakon toga, ako nije obnovljen';
+  String get notifAfterExpirySubtitle => 'Podsjetnici 3 i 14 dana nakon isteka zapisa, ako nije obnovljen';
 
   @override
   String get notifWeeklyTitle => 'Ponedjeljkom sažetak';
@@ -8584,7 +8584,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get notifWeeklySubtitle => 'Poruka u ponedjeljak ujutro kada nešto istječe tog tjedna';
 
   @override
-  String get notifPushSection => 'Kućanstvo i ažuriranja';
+  String get notifPushSection => 'Kućanstvo';
 
   @override
   String get notifHouseholdTitle => 'Podijeljeni zapisi';
@@ -8600,6 +8600,18 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Upozorenja o novim prijavama na vaš račun uvijek se šalju.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Upozorenja o novim prijavama i ažuriranjima koja ste tražili uvijek se šalju.';
+
+  @override
+  String get batteryWarningText => 'Ušteda baterije ograničava Vaultaru, pa podsjetnici možda neće stići.';
+
+  @override
+  String get batteryWarningFix => 'Popravi';
+
+  @override
+  String get notifHelpSection => 'Pomoć';
 
   @override
   String get notifIosHelpTitle => 'Ne stižu vam podsjetnici?';

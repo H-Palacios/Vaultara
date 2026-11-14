@@ -5046,7 +5046,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get requestUpdateNoEmail => 'Спершу додайте адресу електронної пошти цієї людини на екрані Сім\'я.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Одне щоденне зведення замість окремих нагадувань';
+  String get dailyDigestSwitchTitle => 'Щоденне зведення';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Отримуйте одне сповіщення в час нагадування зі списком усього, що настає цього дня.';
@@ -8662,10 +8662,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get notifTestSent => 'Тест надіслано. Він надійде за кілька секунд.';
 
   @override
-  String get notifAfterExpiryTitle => 'Нагадувати після закінчення терміну';
+  String get notifAfterExpiryTitle => 'Після завершення терміну';
 
   @override
-  String get notifAfterExpirySubtitle => 'Через 3 і 14 днів, якщо запис не продовжено';
+  String get notifAfterExpirySubtitle => 'Нагадування через 3 і 14 днів після завершення терміну запису, якщо його не поновили';
 
   @override
   String get notifWeeklyTitle => 'Підсумок у понеділок';
@@ -8674,7 +8674,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get notifWeeklySubtitle => 'Повідомлення в понеділок зранку, якщо цього тижня щось закінчується';
 
   @override
-  String get notifPushSection => 'Родина й оновлення';
+  String get notifPushSection => 'Родина';
 
   @override
   String get notifHouseholdTitle => 'Спільні записи';
@@ -8690,6 +8690,18 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Сповіщення про нові входи у ваш обліковий запис надсилаються завжди.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Сповіщення про нові входи та запитані вами оновлення надсилаються завжди.';
+
+  @override
+  String get batteryWarningText => 'Економія заряду обмежує Vaultara, тому нагадування можуть не надходити.';
+
+  @override
+  String get batteryWarningFix => 'Виправити';
+
+  @override
+  String get notifHelpSection => 'Довідка';
 
   @override
   String get notifIosHelpTitle => 'Не надходять нагадування?';

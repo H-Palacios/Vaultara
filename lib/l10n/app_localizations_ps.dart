@@ -4941,7 +4941,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get requestUpdateNoEmail => 'لومړی د کورنۍ په سکرین کې د دې کس لپاره برېښنالیک پته اضافه کړئ.';
 
   @override
-  String get dailyDigestSwitchTitle => 'د جلا یادونو پر ځای یو ورځنی لنډیز';
+  String get dailyDigestSwitchTitle => 'ورځنی لنډیز';
 
   @override
   String get dailyDigestSwitchSubtitle => 'ستاسو د یادونې په وخت کې یو خبرتیا ترلاسه کړئ چې په هغه ورځ هر څه چې اړین دي لیست کوي.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get notifTestSent => 'ازمایښت ولېږل شو. باید په څو ثانیو کې ورسیږي.';
 
   @override
-  String get notifAfterExpiryTitle => 'د ریکارډ له پای ته رسېدو وروسته یادونه وکړه';
+  String get notifAfterExpiryTitle => 'له پای وروسته';
 
   @override
-  String get notifAfterExpirySubtitle => '3 او 14 ورځې وروسته، که نوی شوی نه وي';
+  String get notifAfterExpirySubtitle => 'د ریکارډ له پای ته رسیدو 3 او 14 ورځې وروسته یادونې، که نوی شوی نه وي';
 
   @override
   String get notifWeeklyTitle => 'د دوشنبې لنډیز';
@@ -8511,7 +8511,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get notifWeeklySubtitle => 'د دوشنبې په سهار یو پیغام کله چې په هغه اونۍ کې څه پای ته رسیږي';
 
   @override
-  String get notifPushSection => 'کورنۍ او تازه معلومات';
+  String get notifPushSection => 'کورنۍ';
 
   @override
   String get notifHouseholdTitle => 'شریک شوي ریکارډونه';
@@ -8527,6 +8527,18 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'ستاسو حساب ته د نویو ننوتنو خبرتیاوې تل لېږل کیږي.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'د نویو ننوتنو او هغو تازه معلوماتو خبرتیاوې چې تاسو غوښتي تل لېږل کیږي.';
+
+  @override
+  String get batteryWarningText => 'د بیټرۍ سپما Vaultara محدودوي، نو ښايي یادونې ونه رسیږي.';
+
+  @override
+  String get batteryWarningFix => 'سمول';
+
+  @override
+  String get notifHelpSection => 'مرسته';
 
   @override
   String get notifIosHelpTitle => 'یادونې نه درځي؟';

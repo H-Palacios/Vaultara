@@ -4946,7 +4946,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get requestUpdateNoEmail => 'Ajoutez d’abord une adresse e-mail pour cette personne sur l’écran Famille.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Un seul résumé quotidien au lieu de rappels séparés';
+  String get dailyDigestSwitchTitle => 'Résumé quotidien';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Recevez une seule notification à l’heure de votre rappel, qui liste tout ce qui est à renouveler ce jour-là.';
@@ -8513,10 +8513,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notifTestSent => 'Test envoyé. Il devrait arriver dans quelques secondes.';
 
   @override
-  String get notifAfterExpiryTitle => 'Me rappeler après l\'expiration';
+  String get notifAfterExpiryTitle => 'Après expiration';
 
   @override
-  String get notifAfterExpirySubtitle => '3 et 14 jours après, s\'il n\'a pas été renouvelé';
+  String get notifAfterExpirySubtitle => 'Rappels 3 et 14 jours après l’expiration d’un élément, s’il n’a pas été renouvelé';
 
   @override
   String get notifWeeklyTitle => 'Résumé du lundi';
@@ -8525,7 +8525,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notifWeeklySubtitle => 'Un message le lundi matin quand quelque chose expire dans la semaine';
 
   @override
-  String get notifPushSection => 'Foyer et mises à jour';
+  String get notifPushSection => 'Foyer';
 
   @override
   String get notifHouseholdTitle => 'Enregistrements partagés';
@@ -8541,6 +8541,18 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Les alertes de nouvelle connexion à votre compte sont toujours envoyées.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Les alertes sur les nouvelles connexions et les mises à jour que vous avez demandées sont toujours envoyées.';
+
+  @override
+  String get batteryWarningText => 'L’économie de batterie limite Vaultara, les rappels risquent de ne pas arriver.';
+
+  @override
+  String get batteryWarningFix => 'Corriger';
+
+  @override
+  String get notifHelpSection => 'Aide';
 
   @override
   String get notifIosHelpTitle => 'Vous ne recevez pas les rappels ?';

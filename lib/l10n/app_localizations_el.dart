@@ -4941,7 +4941,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get requestUpdateNoEmail => 'Προσθέστε πρώτα μια διεύθυνση email για αυτό το άτομο στην οθόνη Οικογένεια.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Μία ημερήσια σύνοψη αντί για ξεχωριστές υπενθυμίσεις';
+  String get dailyDigestSwitchTitle => 'Ημερήσια σύνοψη';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Λάβετε μία ειδοποίηση την ώρα της υπενθύμισής σας με ό,τι λήγει εκείνη την ημέρα.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get notifTestSent => 'Η δοκιμή στάλθηκε. Θα φτάσει σε λίγα δευτερόλεπτα.';
 
   @override
-  String get notifAfterExpiryTitle => 'Υπενθύμιση μετά τη λήξη μιας εγγραφής';
+  String get notifAfterExpiryTitle => 'Μετά τη λήξη';
 
   @override
-  String get notifAfterExpirySubtitle => '3 και 14 ημέρες μετά, αν δεν έχει ανανεωθεί';
+  String get notifAfterExpirySubtitle => 'Υπενθυμίσεις 3 και 14 ημέρες μετά τη λήξη μιας εγγραφής, αν δεν ανανεώθηκε';
 
   @override
   String get notifWeeklyTitle => 'Σύνοψη Δευτέρας';
@@ -8515,7 +8515,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get notifWeeklySubtitle => 'Ένα μήνυμα τη Δευτέρα το πρωί όταν κάτι λήγει εκείνη την εβδομάδα';
 
   @override
-  String get notifPushSection => 'Νοικοκυριό και ενημερώσεις';
+  String get notifPushSection => 'Νοικοκυριό';
 
   @override
   String get notifHouseholdTitle => 'Κοινόχρηστες εγγραφές';
@@ -8531,6 +8531,18 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Οι ειδοποιήσεις για νέες συνδέσεις στον λογαριασμό σας στέλνονται πάντα.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Οι ειδοποιήσεις για νέες συνδέσεις και για ενημερώσεις που ζητήσατε στέλνονται πάντα.';
+
+  @override
+  String get batteryWarningText => 'Η εξοικονόμηση μπαταρίας περιορίζει το Vaultara, οπότε οι υπενθυμίσεις μπορεί να μη φτάνουν.';
+
+  @override
+  String get batteryWarningFix => 'Διόρθωση';
+
+  @override
+  String get notifHelpSection => 'Βοήθεια';
 
   @override
   String get notifIosHelpTitle => 'Δεν λαμβάνετε υπενθυμίσεις;';

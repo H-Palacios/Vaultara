@@ -5053,7 +5053,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get requestUpdateNoEmail => 'Najpierw dodaj adres e-mail tej osoby na ekranie Rodzina.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Jedno codzienne podsumowanie zamiast osobnych przypomnień';
+  String get dailyDigestSwitchTitle => 'Podsumowanie dnia';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Otrzymuj jedno powiadomienie o godzinie przypomnienia z listą wszystkiego, co wygasa tego dnia.';
@@ -8667,10 +8667,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get notifTestSent => 'Test wysłany. Powinien dotrzeć za kilka sekund.';
 
   @override
-  String get notifAfterExpiryTitle => 'Przypominaj po wygaśnięciu rekordu';
+  String get notifAfterExpiryTitle => 'Po wygaśnięciu';
 
   @override
-  String get notifAfterExpirySubtitle => '3 i 14 dni później, jeśli nie został odnowiony';
+  String get notifAfterExpirySubtitle => 'Przypomnienia 3 i 14 dni po wygaśnięciu rekordu, jeśli nie został odnowiony';
 
   @override
   String get notifWeeklyTitle => 'Podsumowanie poniedziałkowe';
@@ -8679,7 +8679,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get notifWeeklySubtitle => 'Wiadomość w poniedziałek rano, gdy coś wygasa w tym tygodniu';
 
   @override
-  String get notifPushSection => 'Gospodarstwo i aktualizacje';
+  String get notifPushSection => 'Gospodarstwo';
 
   @override
   String get notifHouseholdTitle => 'Udostępnione rekordy';
@@ -8695,6 +8695,18 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Alerty o nowych logowaniach na Twoje konto są wysyłane zawsze.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Alerty o nowych logowaniach i aktualizacjach, o które prosiłeś, są wysyłane zawsze.';
+
+  @override
+  String get batteryWarningText => 'Oszczędzanie baterii ogranicza Vaultarę, więc przypomnienia mogą nie dotrzeć.';
+
+  @override
+  String get batteryWarningFix => 'Napraw';
+
+  @override
+  String get notifHelpSection => 'Pomoc';
 
   @override
   String get notifIosHelpTitle => 'Nie dostajesz przypomnień?';

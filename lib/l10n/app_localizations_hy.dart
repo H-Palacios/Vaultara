@@ -4941,7 +4941,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get requestUpdateNoEmail => 'Նախ ավելացրեք այս անձի էլ. փոստի հասցեն Ընտանիք էկրանում։';
 
   @override
-  String get dailyDigestSwitchTitle => 'Մեկ օրական ամփոփում առանձին հիշեցումների փոխարեն';
+  String get dailyDigestSwitchTitle => 'Օրվա ամփոփում';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Ստացեք մեկ ծանուցում ձեր հիշեցման ժամին, որտեղ կթվարկվի այդ օրվա ամեն ինչ։';
@@ -8499,10 +8499,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get notifTestSent => 'Փորձն ուղարկվեց: Այն պետք է գա մի քանի վայրկյանից:';
 
   @override
-  String get notifAfterExpiryTitle => 'Հիշեցնել գրառման ժամկետի ավարտից հետո';
+  String get notifAfterExpiryTitle => 'Ժամկետը լրանալուց հետո';
 
   @override
-  String get notifAfterExpirySubtitle => '3 և 14 օր անց, եթե այն չի նորացվել';
+  String get notifAfterExpirySubtitle => 'Հիշեցումներ գրառման ժամկետը լրանալուց 3 և 14 օր անց, եթե այն չի թարմացվել';
 
   @override
   String get notifWeeklyTitle => 'Երկուշաբթիի ամփոփում';
@@ -8511,7 +8511,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get notifWeeklySubtitle => 'Հաղորդագրություն երկուշաբթի առավոտյան, երբ այդ շաբաթ ինչ-որ բան ավարտվում է';
 
   @override
-  String get notifPushSection => 'Ընտանիք և թարմացումներ';
+  String get notifPushSection => 'Ընտանիք';
 
   @override
   String get notifHouseholdTitle => 'Կիսված գրառումներ';
@@ -8527,6 +8527,18 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Ձեր հաշվին նոր մուտքերի մասին զգուշացումները միշտ ուղարկվում են:';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Նոր մուտքերի և ձեր խնդրած թարմացումների մասին ծանուցումները միշտ ուղարկվում են։';
+
+  @override
+  String get batteryWarningText => 'Մարտկոցի տնտեսումը սահմանափակում է Vaultara-ն, ուստի հիշեցումները կարող են չհասնել։';
+
+  @override
+  String get batteryWarningFix => 'Ուղղել';
+
+  @override
+  String get notifHelpSection => 'Օգնություն';
 
   @override
   String get notifIosHelpTitle => 'Հիշեցումներ չե՞ք ստանում:';

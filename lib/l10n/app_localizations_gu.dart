@@ -4941,7 +4941,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get requestUpdateNoEmail => 'પહેલાં પરિવાર સ્ક્રીન પર આ વ્યક્તિનું ઇમેઇલ સરનામું ઉમેરો.';
 
   @override
-  String get dailyDigestSwitchTitle => 'અલગ રિમાઇન્ડરને બદલે એક દૈનિક સારાંશ';
+  String get dailyDigestSwitchTitle => 'દૈનિક સારાંશ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'તમારા રિમાઇન્ડરના સમયે એક નોટિફિકેશન મેળવો, જેમાં તે દિવસે બાકી બધું હોય.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsGu extends AppLocalizations {
   String get notifTestSent => 'પરીક્ષણ મોકલ્યું. તે થોડી સેકન્ડમાં આવવું જોઈએ.';
 
   @override
-  String get notifAfterExpiryTitle => 'રેકોર્ડ સમાપ્ત થયા પછી યાદ અપાવો';
+  String get notifAfterExpiryTitle => 'સમાપ્તિ પછી';
 
   @override
-  String get notifAfterExpirySubtitle => '3 અને 14 દિવસ પછી, જો રિન્યૂ ન થયો હોય';
+  String get notifAfterExpirySubtitle => 'રેકોર્ડ સમાપ્ત થયાના 3 અને 14 દિવસ પછી રિમાઇન્ડર, જો રિન્યૂ ન થયો હોય';
 
   @override
   String get notifWeeklyTitle => 'સોમવારનો સારાંશ';
@@ -8511,7 +8511,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get notifWeeklySubtitle => 'તે અઠવાડિયે કંઈક સમાપ્ત થતું હોય ત્યારે સોમવારે સવારે એક સંદેશ';
 
   @override
-  String get notifPushSection => 'કુટુંબ અને અપડેટ';
+  String get notifPushSection => 'ઘર';
 
   @override
   String get notifHouseholdTitle => 'શેર કરેલા રેકોર્ડ';
@@ -8527,6 +8527,18 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'તમારા એકાઉન્ટમાં નવા સાઇન-ઇનની ચેતવણીઓ હંમેશા મોકલવામાં આવે છે.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'નવા સાઇન-ઇન અને તમે માગેલા અપડેટ વિશેની ચેતવણીઓ હંમેશાં મોકલવામાં આવે છે.';
+
+  @override
+  String get batteryWarningText => 'બૅટરી બચત Vaultaraને મર્યાદિત કરી રહી છે, તેથી રિમાઇન્ડર કદાચ ન આવે.';
+
+  @override
+  String get batteryWarningFix => 'ઠીક કરો';
+
+  @override
+  String get notifHelpSection => 'મદદ';
 
   @override
   String get notifIosHelpTitle => 'રિમાઇન્ડર મળતા નથી?';

@@ -4906,7 +4906,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get requestUpdateNoEmail => 'Hãy thêm địa chỉ email cho người này trên màn hình Gia đình trước.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Một bản tóm tắt mỗi ngày thay cho các lời nhắc riêng lẻ';
+  String get dailyDigestSwitchTitle => 'Tóm tắt hằng ngày';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Nhận một thông báo vào giờ nhắc của bạn, liệt kê mọi thứ đến hạn trong ngày đó.';
@@ -8440,10 +8440,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get notifTestSent => 'Đã gửi thử. Nó sẽ đến sau vài giây.';
 
   @override
-  String get notifAfterExpiryTitle => 'Nhắc tôi sau khi bản ghi hết hạn';
+  String get notifAfterExpiryTitle => 'Sau khi hết hạn';
 
   @override
-  String get notifAfterExpirySubtitle => '3 và 14 ngày sau, nếu chưa được gia hạn';
+  String get notifAfterExpirySubtitle => 'Nhắc nhở 3 và 14 ngày sau khi bản ghi hết hạn, nếu chưa được gia hạn';
 
   @override
   String get notifWeeklyTitle => 'Tóm tắt thứ Hai';
@@ -8452,7 +8452,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get notifWeeklySubtitle => 'Một tin nhắn sáng thứ Hai khi có thứ gì đó hết hạn trong tuần';
 
   @override
-  String get notifPushSection => 'Hộ gia đình và cập nhật';
+  String get notifPushSection => 'Gia đình';
 
   @override
   String get notifHouseholdTitle => 'Bản ghi chia sẻ';
@@ -8468,6 +8468,18 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Cảnh báo về lần đăng nhập mới vào tài khoản của bạn luôn được gửi.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Cảnh báo về lần đăng nhập mới và cập nhật bạn đã yêu cầu luôn được gửi.';
+
+  @override
+  String get batteryWarningText => 'Chế độ tiết kiệm pin đang giới hạn Vaultara, nên lời nhắc có thể không đến.';
+
+  @override
+  String get batteryWarningFix => 'Khắc phục';
+
+  @override
+  String get notifHelpSection => 'Trợ giúp';
 
   @override
   String get notifIosHelpTitle => 'Không nhận được lời nhắc?';

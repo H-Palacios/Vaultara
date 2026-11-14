@@ -4906,7 +4906,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get requestUpdateNoEmail => '请先在家庭页面为此人添加电子邮件地址。';
 
   @override
-  String get dailyDigestSwitchTitle => '每天一条汇总，代替分开的提醒';
+  String get dailyDigestSwitchTitle => '每日汇总';
 
   @override
   String get dailyDigestSwitchSubtitle => '在您设定的提醒时间收到一条通知，列出当天到期的所有内容。';
@@ -8440,10 +8440,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get notifTestSent => '测试已发送，几秒内应会送达。';
 
   @override
-  String get notifAfterExpiryTitle => '记录到期后也提醒我';
+  String get notifAfterExpiryTitle => '到期后';
 
   @override
-  String get notifAfterExpirySubtitle => '如未续期，在到期后第 3 天和第 14 天提醒';
+  String get notifAfterExpirySubtitle => '记录到期后第 3 天和第 14 天提醒（如果尚未续期）';
 
   @override
   String get notifWeeklyTitle => '周一摘要';
@@ -8452,7 +8452,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get notifWeeklySubtitle => '当周有内容到期时，周一早上发送提醒';
 
   @override
-  String get notifPushSection => '家庭与更新';
+  String get notifPushSection => '家庭';
 
   @override
   String get notifHouseholdTitle => '共享记录';
@@ -8468,6 +8468,18 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get notifSecurityNote => '有关你账户新登录的提醒始终会发送。';
+
+  @override
+  String get notifSecurityNoteBusiness => '新登录提醒和你请求的更新通知总会发送。';
+
+  @override
+  String get batteryWarningText => '省电功能正在限制 Vaultara，提醒可能无法送达。';
+
+  @override
+  String get batteryWarningFix => '修复';
+
+  @override
+  String get notifHelpSection => '帮助';
 
   @override
   String get notifIosHelpTitle => '收不到提醒？';
@@ -13807,7 +13819,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get requestUpdateNoEmail => '请先在“家庭”页面为此人添加电子邮件地址。';
 
   @override
-  String get dailyDigestSwitchTitle => '每日一条汇总，代替分开的提醒';
+  String get dailyDigestSwitchTitle => '每日汇总';
 
   @override
   String get dailyDigestSwitchSubtitle => '在您设定的提醒时间收到一条通知，列出当天到期的所有项目。';
@@ -17341,10 +17353,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get notifTestSent => '测试已发送，几秒内应会送达。';
 
   @override
-  String get notifAfterExpiryTitle => '记录到期后也提醒我';
+  String get notifAfterExpiryTitle => '到期后';
 
   @override
-  String get notifAfterExpirySubtitle => '如未续期，在到期后第 3 天和第 14 天提醒';
+  String get notifAfterExpirySubtitle => '记录到期后第 3 天和第 14 天提醒（如果尚未续期）';
 
   @override
   String get notifWeeklyTitle => '周一摘要';
@@ -17353,7 +17365,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get notifWeeklySubtitle => '当周有内容到期时，周一早上发送提醒';
 
   @override
-  String get notifPushSection => '家庭与更新';
+  String get notifPushSection => '家庭';
 
   @override
   String get notifHouseholdTitle => '共享记录';
@@ -17369,6 +17381,18 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get notifSecurityNote => '有关你账户新登录的提醒始终会发送。';
+
+  @override
+  String get notifSecurityNoteBusiness => '新登录提醒和你请求的更新通知总会发送。';
+
+  @override
+  String get batteryWarningText => '省电功能正在限制 Vaultara，提醒可能无法送达。';
+
+  @override
+  String get batteryWarningFix => '修复';
+
+  @override
+  String get notifHelpSection => '帮助';
 
   @override
   String get notifIosHelpTitle => '收不到提醒？';
@@ -22708,7 +22732,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get requestUpdateNoEmail => '請先在「家人」畫面為這位成員新增電子郵件地址。';
 
   @override
-  String get dailyDigestSwitchTitle => '用每日一次的摘要取代個別提醒';
+  String get dailyDigestSwitchTitle => '每日摘要';
 
   @override
   String get dailyDigestSwitchSubtitle => '在您設定的提醒時間收到一則通知，列出當天所有到期的項目。';
@@ -26242,10 +26266,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get notifTestSent => '已傳送測試，幾秒內應會送達。';
 
   @override
-  String get notifAfterExpiryTitle => '記錄到期後也提醒我';
+  String get notifAfterExpiryTitle => '到期後';
 
   @override
-  String get notifAfterExpirySubtitle => '如未續期，在到期後第 3 天和第 14 天提醒';
+  String get notifAfterExpirySubtitle => '記錄到期後第 3 天和第 14 天提醒（如果尚未續期）';
 
   @override
   String get notifWeeklyTitle => '週一摘要';
@@ -26254,7 +26278,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get notifWeeklySubtitle => '當週有項目到期時，週一早上傳送提醒';
 
   @override
-  String get notifPushSection => '家庭與更新';
+  String get notifPushSection => '家庭';
 
   @override
   String get notifHouseholdTitle => '已分享的記錄';
@@ -26270,6 +26294,18 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get notifSecurityNote => '有關你帳戶新登入的提醒一律會傳送。';
+
+  @override
+  String get notifSecurityNoteBusiness => '新登入提醒和你要求的更新通知一律會傳送。';
+
+  @override
+  String get batteryWarningText => '省電功能正在限制 Vaultara，提醒可能無法送達。';
+
+  @override
+  String get batteryWarningFix => '修正';
+
+  @override
+  String get notifHelpSection => '說明';
 
   @override
   String get notifIosHelpTitle => '收不到提醒？';

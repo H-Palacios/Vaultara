@@ -4906,7 +4906,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get requestUpdateNoEmail => '먼저 가족 화면에서 이 사람의 이메일 주소를 추가하세요.';
 
   @override
-  String get dailyDigestSwitchTitle => '개별 알림 대신 하루에 한 번 요약';
+  String get dailyDigestSwitchTitle => '일일 요약';
 
   @override
   String get dailyDigestSwitchSubtitle => '알림 시간에 그날 기한인 항목을 모두 나열한 알림을 하나 받습니다.';
@@ -8440,10 +8440,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notifTestSent => '테스트를 보냈습니다. 몇 초 안에 도착합니다.';
 
   @override
-  String get notifAfterExpiryTitle => '기록이 만료된 후에도 알림';
+  String get notifAfterExpiryTitle => '만료 후';
 
   @override
-  String get notifAfterExpirySubtitle => '갱신되지 않았다면 3일과 14일 후';
+  String get notifAfterExpirySubtitle => '기록이 만료된 지 3일, 14일 후 알림(갱신하지 않은 경우)';
 
   @override
   String get notifWeeklyTitle => '월요일 요약';
@@ -8452,7 +8452,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notifWeeklySubtitle => '그 주에 만료되는 항목이 있을 때 월요일 아침에 알림';
 
   @override
-  String get notifPushSection => '가족 및 업데이트';
+  String get notifPushSection => '가구';
 
   @override
   String get notifHouseholdTitle => '공유 기록';
@@ -8468,6 +8468,18 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get notifSecurityNote => '계정의 새 로그인 알림은 항상 전송됩니다.';
+
+  @override
+  String get notifSecurityNoteBusiness => '새 로그인과 요청한 업데이트에 관한 알림은 항상 전송됩니다.';
+
+  @override
+  String get batteryWarningText => '배터리 절약이 Vaultara를 제한하고 있어 알림이 오지 않을 수 있습니다.';
+
+  @override
+  String get batteryWarningFix => '해결';
+
+  @override
+  String get notifHelpSection => '도움말';
 
   @override
   String get notifIosHelpTitle => '알림이 오지 않나요?';

@@ -4941,7 +4941,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get requestUpdateNoEmail => 'መጀመሪያ በቤተሰብ ማያ ገጽ ላይ ለዚህ ሰው የኢሜይል አድራሻ ያክሉ።';
 
   @override
-  String get dailyDigestSwitchTitle => 'ከተለያዩ አስታዋሾች ይልቅ አንድ ዕለታዊ ማጠቃለያ';
+  String get dailyDigestSwitchTitle => 'ዕለታዊ ማጠቃለያ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'በአስታዋሽ ሰዓትዎ በዚያ ቀን የሚደርሱትን ሁሉ የሚዘረዝር አንድ ማሳወቂያ ያግኙ።';
@@ -8499,10 +8499,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get notifTestSent => 'ሙከራው ተልኳል። በጥቂት ሰከንዶች ውስጥ መድረስ አለበት።';
 
   @override
-  String get notifAfterExpiryTitle => 'መዝገብ ካበቃ በኋላ አስታውሰኝ';
+  String get notifAfterExpiryTitle => 'ካበቃ በኋላ';
 
   @override
-  String get notifAfterExpirySubtitle => 'ከ3 እና 14 ቀናት በኋላ፣ ካልታደሰ';
+  String get notifAfterExpirySubtitle => 'መዝገብ ካበቃ በኋላ በ3 እና በ14 ቀናት ማስታወሻዎች፣ ካልታደሰ';
 
   @override
   String get notifWeeklyTitle => 'የሰኞ ማጠቃለያ';
@@ -8511,7 +8511,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get notifWeeklySubtitle => 'በዚያ ሳምንት የሚያበቃ ነገር ሲኖር ሰኞ ጠዋት መልዕክት';
 
   @override
-  String get notifPushSection => 'ቤተሰብ እና ዝማኔዎች';
+  String get notifPushSection => 'ቤተሰብ';
 
   @override
   String get notifHouseholdTitle => 'የተጋሩ መዝገቦች';
@@ -8527,6 +8527,18 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'ወደ መለያዎ ስለሚደረጉ አዲስ መግቢያዎች የሚላኩ ማንቂያዎች ሁልጊዜ ይላካሉ።';
+
+  @override
+  String get notifSecurityNoteBusiness => 'ስለ አዲስ መግቢያዎች እና ስለጠየቁት ዝማኔ ማንቂያዎች ሁልጊዜ ይላካሉ።';
+
+  @override
+  String get batteryWarningText => 'የባትሪ ቁጠባ Vaultaraን እየገደበ ነው፣ ስለዚህ ማስታወሻዎች ላይደርሱ ይችላሉ።';
+
+  @override
+  String get batteryWarningFix => 'አስተካክል';
+
+  @override
+  String get notifHelpSection => 'እገዛ';
 
   @override
   String get notifIosHelpTitle => 'አስታዋሾች አይደርሱዎትም?';

@@ -4939,7 +4939,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get requestUpdateNoEmail => 'Magdagdag muna ng email address para sa taong ito sa screen na Pamilya.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Isang pang-araw-araw na buod sa halip na magkakahiwalay na paalala';
+  String get dailyDigestSwitchTitle => 'Pang-araw-araw na buod';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Makatanggap ng isang notification sa oras ng paalala mo na naglilista ng lahat ng due sa araw na iyon.';
@@ -8493,10 +8493,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get notifTestSent => 'Naipadala ang pagsubok. Darating ito sa loob ng ilang segundo.';
 
   @override
-  String get notifAfterExpiryTitle => 'Paalalahanan ako pagkatapos mag-expire ng rekord';
+  String get notifAfterExpiryTitle => 'Pagkatapos mag-expire';
 
   @override
-  String get notifAfterExpirySubtitle => '3 at 14 na araw pagkatapos, kung hindi pa na-renew';
+  String get notifAfterExpirySubtitle => 'Mga paalala 3 at 14 na araw matapos mag-expire ang rekord, kung hindi pa nare-renew';
 
   @override
   String get notifWeeklyTitle => 'Buod tuwing Lunes';
@@ -8505,7 +8505,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get notifWeeklySubtitle => 'Isang mensahe tuwing Lunes ng umaga kapag may mag-e-expire sa linggong iyon';
 
   @override
-  String get notifPushSection => 'Sambahayan at mga update';
+  String get notifPushSection => 'Sambahayan';
 
   @override
   String get notifHouseholdTitle => 'Mga ibinahaging rekord';
@@ -8521,6 +8521,18 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Laging ipinapadala ang mga alerto tungkol sa mga bagong pag-sign in sa iyong account.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Laging ipinapadala ang mga alerto tungkol sa mga bagong pag-sign in at sa mga update na hiniling mo.';
+
+  @override
+  String get batteryWarningText => 'Nililimitahan ng pagtitipid ng baterya ang Vaultara, kaya baka hindi dumating ang mga paalala.';
+
+  @override
+  String get batteryWarningFix => 'Ayusin';
+
+  @override
+  String get notifHelpSection => 'Tulong';
 
   @override
   String get notifIosHelpTitle => 'Hindi nakakatanggap ng mga paalala?';

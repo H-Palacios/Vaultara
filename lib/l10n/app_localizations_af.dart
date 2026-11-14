@@ -4941,7 +4941,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get requestUpdateNoEmail => 'Voeg eers \'n e-posadres vir hierdie persoon op die Gesin-skerm by.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Een daaglikse opsomming in plaas van aparte herinnerings';
+  String get dailyDigestSwitchTitle => 'Daaglikse opsomming';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Kry een kennisgewing op jou herinneringstyd wat alles lys wat daardie dag verskuldig is.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get notifTestSent => 'Toets gestuur. Dit behoort binne \'n paar sekondes aan te kom.';
 
   @override
-  String get notifAfterExpiryTitle => 'Herinner my nadat \'n rekord verval het';
+  String get notifAfterExpiryTitle => 'Ná verval';
 
   @override
-  String get notifAfterExpirySubtitle => '3 en 14 dae daarna, as dit nie hernu is nie';
+  String get notifAfterExpirySubtitle => 'Herinneringe 3 en 14 dae nadat ’n rekord verval het, as dit nie hernu is nie';
 
   @override
   String get notifWeeklyTitle => 'Maandag-opsomming';
@@ -8515,7 +8515,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get notifWeeklySubtitle => '\'n Nota Maandagoggend wanneer iets daardie week verval';
 
   @override
-  String get notifPushSection => 'Huishouding en opdaterings';
+  String get notifPushSection => 'Huishouding';
 
   @override
   String get notifHouseholdTitle => 'Gedeelde rekords';
@@ -8531,6 +8531,18 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Waarskuwings oor nuwe aanmeldings op jou rekening word altyd gestuur.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Waarskuwings oor nuwe aanmeldings en opdaterings wat jy gevra het, word altyd gestuur.';
+
+  @override
+  String get batteryWarningText => 'Batterybesparing beperk Vaultara, so herinneringe kom dalk nie aan nie.';
+
+  @override
+  String get batteryWarningFix => 'Herstel';
+
+  @override
+  String get notifHelpSection => 'Hulp';
 
   @override
   String get notifIosHelpTitle => 'Kry jy nie herinneringe nie?';

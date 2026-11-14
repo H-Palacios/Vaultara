@@ -4941,7 +4941,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get requestUpdateNoEmail => 'Primer afegeix una adreça electrònica per a aquesta persona a la pantalla Família.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Un resum diari en lloc de recordatoris separats';
+  String get dailyDigestSwitchTitle => 'Resum diari';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Rep una notificació a l’hora del recordatori amb tot el que venç aquell dia.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get notifTestSent => 'Prova enviada. Hauria d\'arribar en uns segons.';
 
   @override
-  String get notifAfterExpiryTitle => 'Recorda-m\'ho després del venciment';
+  String get notifAfterExpiryTitle => 'Després del venciment';
 
   @override
-  String get notifAfterExpirySubtitle => '3 i 14 dies després, si no s\'ha renovat';
+  String get notifAfterExpirySubtitle => 'Recordatoris 3 i 14 dies després que venci un registre, si no s’ha renovat';
 
   @override
   String get notifWeeklyTitle => 'Resum del dilluns';
@@ -8515,7 +8515,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get notifWeeklySubtitle => 'Un avís el dilluns al matí quan alguna cosa venç aquella setmana';
 
   @override
-  String get notifPushSection => 'Llar i actualitzacions';
+  String get notifPushSection => 'Llar';
 
   @override
   String get notifHouseholdTitle => 'Registres compartits';
@@ -8531,6 +8531,18 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Els avisos de nous inicis de sessió al teu compte s\'envien sempre.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Les alertes de nous inicis de sessió i de les actualitzacions que has demanat s’envien sempre.';
+
+  @override
+  String get batteryWarningText => 'L’estalvi de bateria limita Vaultara, i és possible que els recordatoris no arribin.';
+
+  @override
+  String get batteryWarningFix => 'Arregla';
+
+  @override
+  String get notifHelpSection => 'Ajuda';
 
   @override
   String get notifIosHelpTitle => 'No et arriben els recordatoris?';

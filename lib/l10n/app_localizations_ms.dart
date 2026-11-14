@@ -4906,7 +4906,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get requestUpdateNoEmail => 'Tambah alamat e-mel untuk orang ini pada skrin Keluarga dahulu.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Satu ringkasan harian menggantikan peringatan berasingan';
+  String get dailyDigestSwitchTitle => 'Ringkasan harian';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Terima satu pemberitahuan pada waktu peringatan anda yang menyenaraikan semua yang perlu diurus pada hari itu.';
@@ -8440,10 +8440,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get notifTestSent => 'Ujian dihantar. Ia sepatutnya tiba dalam beberapa saat.';
 
   @override
-  String get notifAfterExpiryTitle => 'Ingatkan saya selepas rekod tamat tempoh';
+  String get notifAfterExpiryTitle => 'Selepas tamat';
 
   @override
-  String get notifAfterExpirySubtitle => '3 dan 14 hari selepasnya, jika belum diperbaharui';
+  String get notifAfterExpirySubtitle => 'Peringatan 3 dan 14 hari selepas rekod tamat, jika belum diperbaharui';
 
   @override
   String get notifWeeklyTitle => 'Ringkasan Isnin';
@@ -8452,7 +8452,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get notifWeeklySubtitle => 'Mesej pada pagi Isnin apabila sesuatu tamat tempoh minggu itu';
 
   @override
-  String get notifPushSection => 'Isi rumah dan kemas kini';
+  String get notifPushSection => 'Isi rumah';
 
   @override
   String get notifHouseholdTitle => 'Rekod dikongsi';
@@ -8468,6 +8468,18 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Amaran tentang log masuk baharu ke akaun anda sentiasa dihantar.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Amaran tentang log masuk baharu dan kemas kini yang anda minta sentiasa dihantar.';
+
+  @override
+  String get batteryWarningText => 'Penjimatan bateri mengehadkan Vaultara, jadi peringatan mungkin tidak tiba.';
+
+  @override
+  String get batteryWarningFix => 'Betulkan';
+
+  @override
+  String get notifHelpSection => 'Bantuan';
 
   @override
   String get notifIosHelpTitle => 'Tidak menerima peringatan?';

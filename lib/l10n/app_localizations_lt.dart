@@ -5039,7 +5039,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get requestUpdateNoEmail => 'Pirmiausia pridėkite šio asmens el. pašto adresą ekrane Šeima.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Viena dienos santrauka vietoj atskirų priminimų';
+  String get dailyDigestSwitchTitle => 'Dienos suvestinė';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Gaukite vieną pranešimą priminimo metu su viskuo, kas tą dieną baigia galioti.';
@@ -8644,10 +8644,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get notifTestSent => 'Bandymas išsiųstas. Jis turėtų ateiti po kelių sekundžių.';
 
   @override
-  String get notifAfterExpiryTitle => 'Priminti pasibaigus įrašo galiojimui';
+  String get notifAfterExpiryTitle => 'Pasibaigus galiojimui';
 
   @override
-  String get notifAfterExpirySubtitle => 'Po 3 ir 14 dienų, jei jis neatnaujintas';
+  String get notifAfterExpirySubtitle => 'Priminimai praėjus 3 ir 14 dienų po įrašo galiojimo pabaigos, jei jis neatnaujintas';
 
   @override
   String get notifWeeklyTitle => 'Pirmadienio santrauka';
@@ -8656,7 +8656,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get notifWeeklySubtitle => 'Žinutė pirmadienio rytą, kai tą savaitę kas nors baigiasi';
 
   @override
-  String get notifPushSection => 'Namų ūkis ir atnaujinimai';
+  String get notifPushSection => 'Namų ūkis';
 
   @override
   String get notifHouseholdTitle => 'Bendrinami įrašai';
@@ -8672,6 +8672,18 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Įspėjimai apie naujus prisijungimus prie jūsų paskyros siunčiami visada.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Įspėjimai apie naujus prisijungimus ir jūsų prašytus atnaujinimus siunčiami visada.';
+
+  @override
+  String get batteryWarningText => 'Akumuliatoriaus taupymas riboja Vaultara, todėl priminimai gali neateiti.';
+
+  @override
+  String get batteryWarningFix => 'Taisyti';
+
+  @override
+  String get notifHelpSection => 'Pagalba';
 
   @override
   String get notifIosHelpTitle => 'Negaunate priminimų?';

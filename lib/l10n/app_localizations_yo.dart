@@ -4907,7 +4907,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get requestUpdateNoEmail => 'Kọ́kọ́ ṣafikun àdírẹ́sì ímeèlì fún ẹni yìí lórí ojú-ìwé Ẹbí.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Àkópọ̀ ojoojúmọ́ kan dípò àwọn ìránnilétí lọ́tọ̀ọ̀tọ̀';
+  String get dailyDigestSwitchTitle => 'Àkópọ̀ ojoojúmọ́';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Gba ìfitónilétí kan ní àkókò ìránnilétí rẹ tó ń ṣàkójọ gbogbo ohun tó yẹ ní ọjọ́ náà.';
@@ -8447,10 +8447,10 @@ class AppLocalizationsYo extends AppLocalizations {
   String get notifTestSent => 'A ti fi ìdánwò ránṣẹ́. Ó yẹ kí ó dé láàrin ìṣẹ́jú-àáyá díẹ̀.';
 
   @override
-  String get notifAfterExpiryTitle => 'Rán mi létí lẹ́yìn tí igbasilẹ bá parí';
+  String get notifAfterExpiryTitle => 'Lẹ́yìn ìparí';
 
   @override
-  String get notifAfterExpirySubtitle => 'Ọjọ́ 3 àti 14 lẹ́yìn náà, bí a kò bá sọ ọ́ di tuntun';
+  String get notifAfterExpirySubtitle => 'Ìrántí ọjọ́ 3 àti 14 lẹ́yìn tí ìgbasilẹ̀ parí, tí a kò bá sọ ọ́ dọ̀tun';
 
   @override
   String get notifWeeklyTitle => 'Àkópọ̀ Ọjọ́ Ajé';
@@ -8459,7 +8459,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get notifWeeklySubtitle => 'Ìfiránṣẹ́ ní àárọ̀ Ọjọ́ Ajé nígbà tí nǹkan bá ń parí ní ọ̀sẹ̀ náà';
 
   @override
-  String get notifPushSection => 'Ìdílé àti àwọn imudojuiwọn';
+  String get notifPushSection => 'Ilé';
 
   @override
   String get notifHouseholdTitle => 'Àwọn igbasilẹ tí a pín';
@@ -8475,6 +8475,18 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'A máa ń fi ìkìlọ̀ nípa ìwọlé tuntun sínú àkáǹtì rẹ ránṣẹ́ nígbà gbogbo.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'A máa ń fi ìkìlọ̀ nípa wíwọlé tuntun àti àwọn àtúnṣe tí o béèrè ránṣẹ́ nígbà gbogbo.';
+
+  @override
+  String get batteryWarningText => 'Ìfipamọ́ bátìrì ń dín Vaultara kù, nítorí náà ìrántí lè má dé.';
+
+  @override
+  String get batteryWarningFix => 'Ṣàtúnṣe';
+
+  @override
+  String get notifHelpSection => 'Ìrànlọ́wọ́';
 
   @override
   String get notifIosHelpTitle => 'O kò rí àwọn ìránnilétí gbà?';

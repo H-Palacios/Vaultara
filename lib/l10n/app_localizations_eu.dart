@@ -4941,7 +4941,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get requestUpdateNoEmail => 'Gehitu lehenik pertsona honen posta elektronikoko helbidea Familia pantailan.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Eguneko laburpen bakarra gogorarazle bereizien ordez';
+  String get dailyDigestSwitchTitle => 'Eguneko laburpena';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Jaso jakinarazpen bakarra zure gogorarazlearen orduan, egun horretako guztia zerrendatuta.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get notifTestSent => 'Proba bidali da. Segundo batzuetan iritsi beharko litzateke.';
 
   @override
-  String get notifAfterExpiryTitle => 'Gogorarazi erregistro bat iraungi ondoren';
+  String get notifAfterExpiryTitle => 'Iraungi ondoren';
 
   @override
-  String get notifAfterExpirySubtitle => '3 eta 14 egun geroago, berritu ez bada';
+  String get notifAfterExpirySubtitle => 'Oroigarriak erregistro bat iraungi eta 3 eta 14 egunera, berritu ez bada';
 
   @override
   String get notifWeeklyTitle => 'Asteleheneko laburpena';
@@ -8515,7 +8515,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get notifWeeklySubtitle => 'Mezu bat astelehen goizean aste horretan zerbait iraungitzen denean';
 
   @override
-  String get notifPushSection => 'Etxea eta eguneraketak';
+  String get notifPushSection => 'Etxea';
 
   @override
   String get notifHouseholdTitle => 'Partekatutako erregistroak';
@@ -8531,6 +8531,18 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Zure kontuan saio-hasiera berriei buruzko alertak beti bidaltzen dira.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Saio-hasiera berriei eta eskatu dituzun eguneratzeei buruzko alertak beti bidaltzen dira.';
+
+  @override
+  String get batteryWarningText => 'Bateria aurrezteak Vaultara mugatzen du, eta baliteke oroigarriak ez iristea.';
+
+  @override
+  String get batteryWarningFix => 'Konpondu';
+
+  @override
+  String get notifHelpSection => 'Laguntza';
 
   @override
   String get notifIosHelpTitle => 'Ez zaizkizu oroigarriak iristen?';

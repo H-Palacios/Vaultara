@@ -4941,7 +4941,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get requestUpdateNoEmail => 'ابتدا در صفحه خانواده یک نشانی ایمیل برای این فرد اضافه کنید.';
 
   @override
-  String get dailyDigestSwitchTitle => 'یک خلاصه روزانه به‌جای یادآوری‌های جداگانه';
+  String get dailyDigestSwitchTitle => 'خلاصه روزانه';
 
   @override
   String get dailyDigestSwitchSubtitle => 'در زمان یادآوری یک اعلان دریافت کنید که هر چه در آن روز سررسید دارد را فهرست می‌کند.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get notifTestSent => 'آزمایش ارسال شد. باید ظرف چند ثانیه برسد.';
 
   @override
-  String get notifAfterExpiryTitle => 'پس از انقضای رکورد یادآوری کن';
+  String get notifAfterExpiryTitle => 'پس از انقضا';
 
   @override
-  String get notifAfterExpirySubtitle => '۳ و ۱۴ روز بعد، اگر تمدید نشده باشد';
+  String get notifAfterExpirySubtitle => 'یادآورها ۳ و ۱۴ روز پس از انقضای مورد، اگر تمدید نشده باشد';
 
   @override
   String get notifWeeklyTitle => 'خلاصهٔ دوشنبه';
@@ -8511,7 +8511,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get notifWeeklySubtitle => 'یک پیام صبح دوشنبه وقتی چیزی در آن هفته منقضی می‌شود';
 
   @override
-  String get notifPushSection => 'خانواده و به‌روزرسانی‌ها';
+  String get notifPushSection => 'خانواده';
 
   @override
   String get notifHouseholdTitle => 'رکوردهای مشترک';
@@ -8527,6 +8527,18 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'هشدارهای ورود جدید به حساب شما همیشه ارسال می‌شوند.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'هشدارهای ورودهای جدید و به‌روزرسانی‌هایی که خواسته‌اید همیشه ارسال می‌شوند.';
+
+  @override
+  String get batteryWarningText => 'صرفه‌جویی باتری Vaultara را محدود کرده است، پس ممکن است یادآورها نرسند.';
+
+  @override
+  String get batteryWarningFix => 'رفع';
+
+  @override
+  String get notifHelpSection => 'راهنما';
 
   @override
   String get notifIosHelpTitle => 'یادآوری دریافت نمی‌کنید؟';

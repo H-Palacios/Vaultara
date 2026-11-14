@@ -5031,7 +5031,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get requestUpdateNoEmail => 'Najprv pridajte e-mailovú adresu tejto osoby na obrazovke Rodina.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Jeden denný súhrn namiesto samostatných pripomienok';
+  String get dailyDigestSwitchTitle => 'Denný prehľad';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Dostanete jedno oznámenie v čase pripomienky so zoznamom všetkého, čo je ten deň na rade.';
@@ -8645,10 +8645,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get notifTestSent => 'Test odoslaný. Mal by prísť o pár sekúnd.';
 
   @override
-  String get notifAfterExpiryTitle => 'Pripomenúť po vypršaní záznamu';
+  String get notifAfterExpiryTitle => 'Po vypršaní';
 
   @override
-  String get notifAfterExpirySubtitle => '3 a 14 dní potom, ak nebol obnovený';
+  String get notifAfterExpirySubtitle => 'Pripomienky 3 a 14 dní po vypršaní záznamu, ak nebol obnovený';
 
   @override
   String get notifWeeklyTitle => 'Pondelkový súhrn';
@@ -8657,7 +8657,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get notifWeeklySubtitle => 'Správa v pondelok ráno, keď v ten týždeň niečo vyprší';
 
   @override
-  String get notifPushSection => 'Domácnosť a aktualizácie';
+  String get notifPushSection => 'Domácnosť';
 
   @override
   String get notifHouseholdTitle => 'Zdieľané záznamy';
@@ -8673,6 +8673,18 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Upozornenia na nové prihlásenia do vášho účtu sa posielajú vždy.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Upozornenia na nové prihlásenia a na aktualizácie, o ktoré ste požiadali, sa posielajú vždy.';
+
+  @override
+  String get batteryWarningText => 'Šetrenie batérie obmedzuje Vaultaru, takže pripomienky nemusia prísť.';
+
+  @override
+  String get batteryWarningFix => 'Opraviť';
+
+  @override
+  String get notifHelpSection => 'Pomoc';
 
   @override
   String get notifIosHelpTitle => 'Nechodia vám pripomienky?';

@@ -4940,7 +4940,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get requestUpdateNoEmail => 'Эхлээд Гэр бүл дэлгэц дээр энэ хүний и-мэйл хаягийг нэмнэ үү.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Тусдаа сануулгын оронд өдөр бүр нэг хураангуй';
+  String get dailyDigestSwitchTitle => 'Өдрийн хураангуй';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Сануулгын цагт тухайн өдөр дуусах бүхнийг жагсаасан нэг мэдэгдэл аваарай.';
@@ -8489,10 +8489,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get notifTestSent => 'Туршилт илгээгдлээ. Хэдхэн секундэд ирэх ёстой.';
 
   @override
-  String get notifAfterExpiryTitle => 'Бичлэгийн хугацаа дууссаны дараа сануулах';
+  String get notifAfterExpiryTitle => 'Хугацаа дууссаны дараа';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ба 14 хоногийн дараа, хэрэв сунгаагүй бол';
+  String get notifAfterExpirySubtitle => 'Бичлэгийн хугацаа дууссанаас хойш 3 ба 14 хоногийн дараах сануулга, сунгаагүй бол';
 
   @override
   String get notifWeeklyTitle => 'Даваа гарагийн тойм';
@@ -8501,7 +8501,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get notifWeeklySubtitle => 'Тэр долоо хоногт ямар нэг зүйлийн хугацаа дуусах бол даваа гарагийн өглөө мэдэгдэл';
 
   @override
-  String get notifPushSection => 'Гэр бүл ба шинэчлэлүүд';
+  String get notifPushSection => 'Гэр бүл';
 
   @override
   String get notifHouseholdTitle => 'Хуваалцсан бичлэгүүд';
@@ -8517,6 +8517,18 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Таны бүртгэлд шинээр нэвтэрсэн тухай сэрэмжлүүлэг үргэлж илгээгдэнэ.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Шинэ нэвтрэлт болон таны хүссэн шинэчлэлийн мэдэгдлийг үргэлж илгээнэ.';
+
+  @override
+  String get batteryWarningText => 'Батарей хэмнэлт Vaultara-г хязгаарлаж байгаа тул сануулга ирэхгүй байж магадгүй.';
+
+  @override
+  String get batteryWarningFix => 'Засах';
+
+  @override
+  String get notifHelpSection => 'Тусламж';
 
   @override
   String get notifIosHelpTitle => 'Сануулга ирэхгүй байна уу?';

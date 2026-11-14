@@ -4985,7 +4985,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get requestUpdateNoEmail => 'Vispirms ekrānā Ģimene pievienojiet šai personai e-pasta adresi.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Viens dienas kopsavilkums atsevišķu atgādinājumu vietā';
+  String get dailyDigestSwitchTitle => 'Dienas kopsavilkums';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Saņemiet vienu paziņojumu atgādinājuma laikā ar visu, kam termiņš iestājas tajā dienā.';
@@ -8567,10 +8567,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get notifTestSent => 'Tests nosūtīts. Tam vajadzētu pienākt pēc dažām sekundēm.';
 
   @override
-  String get notifAfterExpiryTitle => 'Atgādināt pēc ieraksta termiņa beigām';
+  String get notifAfterExpiryTitle => 'Pēc termiņa beigām';
 
   @override
-  String get notifAfterExpirySubtitle => '3 un 14 dienas pēc tam, ja tas nav atjaunots';
+  String get notifAfterExpirySubtitle => 'Atgādinājumi 3 un 14 dienas pēc ieraksta termiņa beigām, ja tas nav atjaunots';
 
   @override
   String get notifWeeklyTitle => 'Pirmdienas kopsavilkums';
@@ -8579,7 +8579,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get notifWeeklySubtitle => 'Ziņa pirmdienas rītā, ja tajā nedēļā kaut kam beidzas termiņš';
 
   @override
-  String get notifPushSection => 'Mājsaimniecība un atjauninājumi';
+  String get notifPushSection => 'Mājsaimniecība';
 
   @override
   String get notifHouseholdTitle => 'Kopīgotie ieraksti';
@@ -8595,6 +8595,18 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Brīdinājumi par jauniem pieteikumiem jūsu kontā tiek sūtīti vienmēr.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Brīdinājumi par jaunām pierakstīšanās reizēm un jūsu pieprasītajiem atjauninājumiem tiek sūtīti vienmēr.';
+
+  @override
+  String get batteryWarningText => 'Akumulatora taupīšana ierobežo Vaultara, tāpēc atgādinājumi var nepienākt.';
+
+  @override
+  String get batteryWarningFix => 'Labot';
+
+  @override
+  String get notifHelpSection => 'Palīdzība';
 
   @override
   String get notifIosHelpTitle => 'Nesaņemat atgādinājumus?';

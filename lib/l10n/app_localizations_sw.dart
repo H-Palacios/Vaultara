@@ -4941,7 +4941,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get requestUpdateNoEmail => 'Kwanza ongeza anwani ya barua pepe ya mtu huyu kwenye skrini ya Familia.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Muhtasari mmoja wa kila siku badala ya vikumbusho tofauti';
+  String get dailyDigestSwitchTitle => 'Muhtasari wa kila siku';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Pata arifa moja wakati wa ukumbusho wako inayoorodhesha kila kitu kinachofaa kushughulikiwa siku hiyo.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get notifTestSent => 'Jaribio limetumwa. Linapaswa kufika baada ya sekunde chache.';
 
   @override
-  String get notifAfterExpiryTitle => 'Nikumbushe baada ya rekodi kuisha muda';
+  String get notifAfterExpiryTitle => 'Baada ya kuisha';
 
   @override
-  String get notifAfterExpirySubtitle => 'Siku 3 na 14 baadaye, kama haijahuishwa';
+  String get notifAfterExpirySubtitle => 'Vikumbusho siku 3 na 14 baada ya rekodi kuisha, kama haijasasishwa';
 
   @override
   String get notifWeeklyTitle => 'Muhtasari wa Jumatatu';
@@ -8511,7 +8511,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get notifWeeklySubtitle => 'Ujumbe Jumatatu asubuhi kitu kinapoisha muda wiki hiyo';
 
   @override
-  String get notifPushSection => 'Kaya na masasisho';
+  String get notifPushSection => 'Kaya';
 
   @override
   String get notifHouseholdTitle => 'Rekodi zilizoshirikiwa';
@@ -8527,6 +8527,18 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Tahadhari kuhusu kuingia upya kwenye akaunti yako hutumwa kila wakati.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Arifa kuhusu kuingia upya na masasisho uliyoomba hutumwa kila wakati.';
+
+  @override
+  String get batteryWarningText => 'Kiokoa betri kinaizuia Vaultara, kwa hiyo vikumbusho huenda visifike.';
+
+  @override
+  String get batteryWarningFix => 'Rekebisha';
+
+  @override
+  String get notifHelpSection => 'Msaada';
 
   @override
   String get notifIosHelpTitle => 'Hupati vikumbusho?';

@@ -4941,7 +4941,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get requestUpdateNoEmail => 'पहले परिवार स्क्रीन पर इस व्यक्ति का ईमेल पता जोड़ें।';
 
   @override
-  String get dailyDigestSwitchTitle => 'अलग-अलग रिमाइंडर की जगह एक दैनिक सारांश';
+  String get dailyDigestSwitchTitle => 'दैनिक सारांश';
 
   @override
   String get dailyDigestSwitchSubtitle => 'अपने रिमाइंडर के समय पर एक सूचना पाएँ, जिसमें उस दिन की सभी चीज़ें हों।';
@@ -8499,10 +8499,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get notifTestSent => 'परीक्षण भेजा गया। यह कुछ सेकंड में आना चाहिए।';
 
   @override
-  String get notifAfterExpiryTitle => 'रिकॉर्ड समाप्त होने के बाद याद दिलाएं';
+  String get notifAfterExpiryTitle => 'समाप्ति के बाद';
 
   @override
-  String get notifAfterExpirySubtitle => '3 और 14 दिन बाद, अगर नवीनीकरण न हुआ हो';
+  String get notifAfterExpirySubtitle => 'रिकॉर्ड समाप्त होने के 3 और 14 दिन बाद रिमाइंडर, अगर नवीनीकरण नहीं हुआ';
 
   @override
   String get notifWeeklyTitle => 'सोमवार का सारांश';
@@ -8511,7 +8511,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get notifWeeklySubtitle => 'सोमवार सुबह एक संदेश जब उस सप्ताह कुछ समाप्त हो रहा हो';
 
   @override
-  String get notifPushSection => 'परिवार और अपडेट';
+  String get notifPushSection => 'परिवार';
 
   @override
   String get notifHouseholdTitle => 'साझा रिकॉर्ड';
@@ -8527,6 +8527,18 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'आपके खाते में नए साइन-इन की चेतावनियां हमेशा भेजी जाती हैं।';
+
+  @override
+  String get notifSecurityNoteBusiness => 'नए साइन-इन और आपके माँगे गए अपडेट की सूचनाएँ हमेशा भेजी जाती हैं।';
+
+  @override
+  String get batteryWarningText => 'बैटरी बचत Vaultara को सीमित कर रही है, इसलिए रिमाइंडर शायद न पहुँचें।';
+
+  @override
+  String get batteryWarningFix => 'ठीक करें';
+
+  @override
+  String get notifHelpSection => 'सहायता';
 
   @override
   String get notifIosHelpTitle => 'रिमाइंडर नहीं मिल रहे?';

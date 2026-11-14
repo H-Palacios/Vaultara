@@ -4941,7 +4941,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get requestUpdateNoEmail => 'Füge zuerst auf dem Bildschirm Familie eine E-Mail-Adresse für diese Person hinzu.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Eine tägliche Zusammenfassung statt einzelner Erinnerungen';
+  String get dailyDigestSwitchTitle => 'Tägliche Übersicht';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Erhalte zur Zeit deiner Erinnerung eine Benachrichtigung, die alles auflistet, was an dem Tag fällig ist.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get notifTestSent => 'Test gesendet. Er sollte in wenigen Sekunden ankommen.';
 
   @override
-  String get notifAfterExpiryTitle => 'Nach dem Ablauf eines Eintrags erinnern';
+  String get notifAfterExpiryTitle => 'Nach Ablauf';
 
   @override
-  String get notifAfterExpirySubtitle => '3 und 14 Tage danach, falls er nicht verlängert wurde';
+  String get notifAfterExpirySubtitle => 'Erinnerungen 3 und 14 Tage nach Ablauf eines Eintrags, falls er nicht verlängert wurde';
 
   @override
   String get notifWeeklyTitle => 'Montagsübersicht';
@@ -8515,7 +8515,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get notifWeeklySubtitle => 'Ein Hinweis am Montagmorgen, wenn in der Woche etwas abläuft';
 
   @override
-  String get notifPushSection => 'Haushalt und Updates';
+  String get notifPushSection => 'Haushalt';
 
   @override
   String get notifHouseholdTitle => 'Geteilte Einträge';
@@ -8531,6 +8531,18 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Hinweise zu neuen Anmeldungen bei deinem Konto werden immer gesendet.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Hinweise zu neuen Anmeldungen und zu Updates, um die du gebeten hast, werden immer gesendet.';
+
+  @override
+  String get batteryWarningText => 'Der Energiesparmodus schränkt Vaultara ein, daher kommen Erinnerungen vielleicht nicht an.';
+
+  @override
+  String get batteryWarningFix => 'Beheben';
+
+  @override
+  String get notifHelpSection => 'Hilfe';
 
   @override
   String get notifIosHelpTitle => 'Keine Erinnerungen erhalten?';

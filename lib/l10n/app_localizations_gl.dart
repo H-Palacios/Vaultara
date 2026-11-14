@@ -4941,7 +4941,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get requestUpdateNoEmail => 'Primeiro engade un enderezo de correo para esta persoa na pantalla Familia.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Un resumo diario en lugar de lembretes separados';
+  String get dailyDigestSwitchTitle => 'Resumo diario';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Recibe unha notificación á hora do lembrete cunha lista de todo o que vence ese día.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsGl extends AppLocalizations {
   String get notifTestSent => 'Proba enviada. Debería chegar nuns segundos.';
 
   @override
-  String get notifAfterExpiryTitle => 'Lembrarme despois da caducidade';
+  String get notifAfterExpiryTitle => 'Despois da caducidade';
 
   @override
-  String get notifAfterExpirySubtitle => '3 e 14 días despois, se non se renovou';
+  String get notifAfterExpirySubtitle => 'Recordatorios 3 e 14 días despois de que caduque un rexistro, se non se renovou';
 
   @override
   String get notifWeeklyTitle => 'Resumo do luns';
@@ -8515,7 +8515,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get notifWeeklySubtitle => 'Un aviso o luns pola mañá cando algo caduca esa semana';
 
   @override
-  String get notifPushSection => 'Fogar e actualizacións';
+  String get notifPushSection => 'Fogar';
 
   @override
   String get notifHouseholdTitle => 'Rexistros compartidos';
@@ -8531,6 +8531,18 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Os avisos de novos inicios de sesión na túa conta envíanse sempre.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'As alertas de novos inicios de sesión e das actualizacións que pediches envíanse sempre.';
+
+  @override
+  String get batteryWarningText => 'O aforro de batería está limitando Vaultara, así que pode que os recordatorios non cheguen.';
+
+  @override
+  String get batteryWarningFix => 'Arranxar';
+
+  @override
+  String get notifHelpSection => 'Axuda';
 
   @override
   String get notifIosHelpTitle => 'Non che chegan os recordatorios?';

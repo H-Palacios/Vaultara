@@ -4941,7 +4941,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get requestUpdateNoEmail => 'ჯერ ამ პირისთვის დაამატეთ ელფოსტის მისამართი ოჯახის ეკრანზე.';
 
   @override
-  String get dailyDigestSwitchTitle => 'ერთი ყოველდღიური შეჯამება ცალკე შეხსენებების ნაცვლად';
+  String get dailyDigestSwitchTitle => 'დღის შეჯამება';
 
   @override
   String get dailyDigestSwitchSubtitle => 'მიიღეთ ერთი შეტყობინება შეხსენების დროს, სადაც ჩამოთვლილია იმ დღის ყველა საქმე.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get notifTestSent => 'ტესტი გაიგზავნა. რამდენიმე წამში უნდა მოვიდეს.';
 
   @override
-  String get notifAfterExpiryTitle => 'შემახსენე ჩანაწერის ვადის ამოწურვის შემდეგ';
+  String get notifAfterExpiryTitle => 'ვადის გასვლის შემდეგ';
 
   @override
-  String get notifAfterExpirySubtitle => '3 და 14 დღის შემდეგ, თუ არ განახლებულა';
+  String get notifAfterExpirySubtitle => 'შეხსენებები ჩანაწერის ვადის გასვლიდან 3 და 14 დღეში, თუ არ განახლებულა';
 
   @override
   String get notifWeeklyTitle => 'ორშაბათის შეჯამება';
@@ -8511,7 +8511,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get notifWeeklySubtitle => 'შეტყობინება ორშაბათს დილით, როცა იმ კვირაში რაიმეს ვადა იწურება';
 
   @override
-  String get notifPushSection => 'ოჯახი და განახლებები';
+  String get notifPushSection => 'ოჯახი';
 
   @override
   String get notifHouseholdTitle => 'გაზიარებული ჩანაწერები';
@@ -8527,6 +8527,18 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'გაფრთხილებები თქვენს ანგარიშზე ახალი შესვლების შესახებ ყოველთვის იგზავნება.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'შეტყობინებები ახალ შესვლებსა და თქვენ მიერ მოთხოვნილ განახლებებზე ყოველთვის იგზავნება.';
+
+  @override
+  String get batteryWarningText => 'ბატარეის დაზოგვა ზღუდავს Vaultara-ს, ამიტომ შეხსენებები შეიძლება არ მოვიდეს.';
+
+  @override
+  String get batteryWarningFix => 'გასწორება';
+
+  @override
+  String get notifHelpSection => 'დახმარება';
 
   @override
   String get notifIosHelpTitle => 'შეხსენებები არ მოდის?';

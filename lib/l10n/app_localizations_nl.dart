@@ -4941,7 +4941,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get requestUpdateNoEmail => 'Voeg eerst een e-mailadres toe voor deze persoon op het scherm Gezin.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Eén dagelijks overzicht in plaats van aparte herinneringen';
+  String get dailyDigestSwitchTitle => 'Dagelijks overzicht';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Ontvang op je herinneringstijd één melding met alles wat die dag aan de beurt is.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get notifTestSent => 'Test verstuurd. Hij komt binnen een paar seconden binnen.';
 
   @override
-  String get notifAfterExpiryTitle => 'Herinner me nadat een record is verlopen';
+  String get notifAfterExpiryTitle => 'Na verlopen';
 
   @override
-  String get notifAfterExpirySubtitle => '3 en 14 dagen erna, als het niet is vernieuwd';
+  String get notifAfterExpirySubtitle => 'Herinneringen 3 en 14 dagen nadat een item is verlopen, als het niet is verlengd';
 
   @override
   String get notifWeeklyTitle => 'Maandagoverzicht';
@@ -8515,7 +8515,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get notifWeeklySubtitle => 'Een melding op maandagochtend als er die week iets verloopt';
 
   @override
-  String get notifPushSection => 'Huishouden en updates';
+  String get notifPushSection => 'Huishouden';
 
   @override
   String get notifHouseholdTitle => 'Gedeelde records';
@@ -8531,6 +8531,18 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Meldingen over nieuwe aanmeldingen op je account worden altijd verstuurd.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Meldingen over nieuwe aanmeldingen en updates waar je om hebt gevraagd, worden altijd verstuurd.';
+
+  @override
+  String get batteryWarningText => 'Batterijbesparing beperkt Vaultara, waardoor herinneringen mogelijk niet aankomen.';
+
+  @override
+  String get batteryWarningFix => 'Oplossen';
+
+  @override
+  String get notifHelpSection => 'Hulp';
 
   @override
   String get notifIosHelpTitle => 'Krijg je geen herinneringen?';

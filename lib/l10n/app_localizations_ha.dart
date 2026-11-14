@@ -4941,7 +4941,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get requestUpdateNoEmail => 'Da farko ƙara adireshin imel na wannan mutumin a shafin Iyali.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Taƙaitaccen bayani na kowace rana maimakon tunatarwa daban-daban';
+  String get dailyDigestSwitchTitle => 'Takaitaccen yau da kullum';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Karɓi sanarwa ɗaya a lokacin tunatarwarka da ke lissafa duk abin da lokacinsa ya yi a ranar.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get notifTestSent => 'An aika gwaji. Ya kamata ya iso cikin ɗan daƙiƙa.';
 
   @override
-  String get notifAfterExpiryTitle => 'Tunatar da ni bayan rikodi ya ƙare';
+  String get notifAfterExpiryTitle => 'Bayan ƙarewa';
 
   @override
-  String get notifAfterExpirySubtitle => 'Kwana 3 da 14 bayan haka, idan ba a sabunta ba';
+  String get notifAfterExpirySubtitle => 'Tunatarwa kwanaki 3 da 14 bayan rikodi ya ƙare, idan ba a sabunta shi ba';
 
   @override
   String get notifWeeklyTitle => 'Taƙaitawar Litinin';
@@ -8511,7 +8511,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get notifWeeklySubtitle => 'Saƙo da safiyar Litinin idan wani abu zai ƙare a wannan makon';
 
   @override
-  String get notifPushSection => 'Gida da sabuntawa';
+  String get notifPushSection => 'Gida';
 
   @override
   String get notifHouseholdTitle => 'Rikodin da aka raba';
@@ -8527,6 +8527,18 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Ana aika faɗakarwa game da sabbin shiga cikin asusunka koyaushe.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Ana aika sanarwar sabbin shiga da sabuntawar da ka nema koyaushe.';
+
+  @override
+  String get batteryWarningText => 'Ajiye batir yana takura Vaultara, don haka tunatarwa ba za su iya zuwa ba.';
+
+  @override
+  String get batteryWarningFix => 'Gyara';
+
+  @override
+  String get notifHelpSection => 'Taimako';
 
   @override
   String get notifIosHelpTitle => 'Ba ka samun tunatarwa?';

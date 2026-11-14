@@ -4941,7 +4941,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get requestUpdateNoEmail => 'আগে পরিবার স্ক্রিনে এই ব্যক্তির ইমেইল ঠিকানা যোগ করুন।';
 
   @override
-  String get dailyDigestSwitchTitle => 'আলাদা রিমাইন্ডারের বদলে একটি দৈনিক সারাংশ';
+  String get dailyDigestSwitchTitle => 'দৈনিক সারাংশ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'আপনার রিমাইন্ডারের সময়ে একটি বিজ্ঞপ্তি পান, যাতে সেদিনের সব কিছু তালিকাভুক্ত থাকে।';
@@ -8499,10 +8499,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String get notifTestSent => 'পরীক্ষা পাঠানো হয়েছে। কয়েক সেকেন্ডের মধ্যে আসা উচিত।';
 
   @override
-  String get notifAfterExpiryTitle => 'রেকর্ডের মেয়াদ শেষ হওয়ার পর মনে করিয়ে দিন';
+  String get notifAfterExpiryTitle => 'মেয়াদ শেষের পর';
 
   @override
-  String get notifAfterExpirySubtitle => '৩ ও ১৪ দিন পরে, যদি নবায়ন না হয়ে থাকে';
+  String get notifAfterExpirySubtitle => 'রেকর্ডের মেয়াদ শেষের ৩ ও ১৪ দিন পরে রিমাইন্ডার, যদি নবায়ন না হয়';
 
   @override
   String get notifWeeklyTitle => 'সোমবারের সারসংক্ষেপ';
@@ -8511,7 +8511,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get notifWeeklySubtitle => 'সোমবার সকালে একটি বার্তা, যখন সেই সপ্তাহে কিছুর মেয়াদ শেষ হচ্ছে';
 
   @override
-  String get notifPushSection => 'পরিবার ও আপডেট';
+  String get notifPushSection => 'পরিবার';
 
   @override
   String get notifHouseholdTitle => 'শেয়ার করা রেকর্ড';
@@ -8527,6 +8527,18 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'আপনার অ্যাকাউন্টে নতুন সাইন-ইনের সতর্কতা সবসময় পাঠানো হয়।';
+
+  @override
+  String get notifSecurityNoteBusiness => 'নতুন সাইন-ইন এবং আপনার চাওয়া আপডেটের সতর্কতা সবসময় পাঠানো হয়।';
+
+  @override
+  String get batteryWarningText => 'ব্যাটারি সাশ্রয় Vaultara-কে সীমিত করছে, তাই রিমাইন্ডার নাও আসতে পারে।';
+
+  @override
+  String get batteryWarningFix => 'ঠিক করুন';
+
+  @override
+  String get notifHelpSection => 'সহায়তা';
 
   @override
   String get notifIosHelpTitle => 'রিমাইন্ডার পাচ্ছেন না?';

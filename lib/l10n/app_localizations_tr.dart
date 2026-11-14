@@ -4941,7 +4941,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get requestUpdateNoEmail => 'Önce Aile ekranında bu kişi için bir e-posta adresi ekleyin.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Ayrı hatırlatmalar yerine günlük tek özet';
+  String get dailyDigestSwitchTitle => 'Günlük özet';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Hatırlatma saatinde o gün zamanı gelen her şeyi listeleyen tek bir bildirim alın.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get notifTestSent => 'Test gönderildi. Birkaç saniye içinde gelmeli.';
 
   @override
-  String get notifAfterExpiryTitle => 'Bir kaydın süresi dolduktan sonra hatırlat';
+  String get notifAfterExpiryTitle => 'Süre dolduktan sonra';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ve 14 gün sonra, yenilenmediyse';
+  String get notifAfterExpirySubtitle => 'Bir kaydın süresi dolduktan 3 ve 14 gün sonra hatırlatmalar, yenilenmediyse';
 
   @override
   String get notifWeeklyTitle => 'Pazartesi özeti';
@@ -8511,7 +8511,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get notifWeeklySubtitle => 'O hafta bir şeyin süresi dolacaksa pazartesi sabahı bir not';
 
   @override
-  String get notifPushSection => 'Hane ve güncellemeler';
+  String get notifPushSection => 'Hane';
 
   @override
   String get notifHouseholdTitle => 'Paylaşılan kayıtlar';
@@ -8527,6 +8527,18 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Hesabınıza yeni girişlerle ilgili uyarılar her zaman gönderilir.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Yeni girişler ve istediğiniz güncellemeler hakkındaki uyarılar her zaman gönderilir.';
+
+  @override
+  String get batteryWarningText => 'Pil tasarrufu Vaultara’yı kısıtlıyor, bu yüzden hatırlatmalar gelmeyebilir.';
+
+  @override
+  String get batteryWarningFix => 'Düzelt';
+
+  @override
+  String get notifHelpSection => 'Yardım';
 
   @override
   String get notifIosHelpTitle => 'Hatırlatma gelmiyor mu?';

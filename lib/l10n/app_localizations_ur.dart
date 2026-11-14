@@ -4941,7 +4941,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get requestUpdateNoEmail => 'پہلے خاندان اسکرین پر اس فرد کا ای میل پتہ شامل کریں۔';
 
   @override
-  String get dailyDigestSwitchTitle => 'الگ الگ یاد دہانیوں کی جگہ ایک روزانہ خلاصہ';
+  String get dailyDigestSwitchTitle => 'روزانہ خلاصہ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'اپنی یاد دہانی کے وقت ایک اطلاع حاصل کریں جس میں اس دن کی تمام مدتیں درج ہوں۔';
@@ -8499,10 +8499,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get notifTestSent => 'آزمائش بھیج دی گئی۔ چند سیکنڈ میں پہنچ جانی چاہیے۔';
 
   @override
-  String get notifAfterExpiryTitle => 'ریکارڈ کی میعاد ختم ہونے کے بعد یاد دلائیں';
+  String get notifAfterExpiryTitle => 'میعاد ختم ہونے کے بعد';
 
   @override
-  String get notifAfterExpirySubtitle => '3 اور 14 دن بعد، اگر تجدید نہ ہوئی ہو';
+  String get notifAfterExpirySubtitle => 'ریکارڈ کی میعاد ختم ہونے کے 3 اور 14 دن بعد یاددہانیاں، اگر تجدید نہ ہوئی ہو';
 
   @override
   String get notifWeeklyTitle => 'پیر کا خلاصہ';
@@ -8511,7 +8511,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get notifWeeklySubtitle => 'پیر کی صبح ایک پیغام جب اس ہفتے کسی چیز کی میعاد ختم ہو رہی ہو';
 
   @override
-  String get notifPushSection => 'گھرانہ اور اپ ڈیٹس';
+  String get notifPushSection => 'گھر';
 
   @override
   String get notifHouseholdTitle => 'شیئر کیے گئے ریکارڈ';
@@ -8527,6 +8527,18 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'آپ کے اکاؤنٹ میں نئے سائن اِنز کے الرٹس ہمیشہ بھیجے جاتے ہیں۔';
+
+  @override
+  String get notifSecurityNoteBusiness => 'نئے سائن اِن اور آپ کی مانگی گئی اپڈیٹس کے بارے میں الرٹس ہمیشہ بھیجے جاتے ہیں۔';
+
+  @override
+  String get batteryWarningText => 'بیٹری کی بچت Vaultara کو محدود کر رہی ہے، اس لیے یاددہانیاں شاید نہ پہنچیں۔';
+
+  @override
+  String get batteryWarningFix => 'ٹھیک کریں';
+
+  @override
+  String get notifHelpSection => 'مدد';
 
   @override
   String get notifIosHelpTitle => 'یاد دہانیاں نہیں مل رہیں؟';

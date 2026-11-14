@@ -4941,7 +4941,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get requestUpdateNoEmail => 'आधी कुटुंब स्क्रीनवर या व्यक्तीसाठी ईमेल पत्ता जोडा.';
 
   @override
-  String get dailyDigestSwitchTitle => 'वेगळ्या रिमाइंडरऐवजी एक दैनिक सारांश';
+  String get dailyDigestSwitchTitle => 'दैनिक सारांश';
 
   @override
   String get dailyDigestSwitchSubtitle => 'तुमच्या रिमाइंडरच्या वेळी त्या दिवशी देय असलेल्या सर्व गोष्टींची यादी असलेली एक सूचना मिळवा.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsMr extends AppLocalizations {
   String get notifTestSent => 'चाचणी पाठवली. काही सेकंदांत यायला हवी.';
 
   @override
-  String get notifAfterExpiryTitle => 'नोंदीची मुदत संपल्यानंतर आठवण करून द्या';
+  String get notifAfterExpiryTitle => 'मुदत संपल्यानंतर';
 
   @override
-  String get notifAfterExpirySubtitle => '3 आणि 14 दिवसांनी, नूतनीकरण झाले नसल्यास';
+  String get notifAfterExpirySubtitle => 'नोंदीची मुदत संपल्यानंतर 3 आणि 14 दिवसांनी रिमाइंडर, नूतनीकरण न झाल्यास';
 
   @override
   String get notifWeeklyTitle => 'सोमवारचा सारांश';
@@ -8511,7 +8511,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get notifWeeklySubtitle => 'त्या आठवड्यात काहीतरी संपत असल्यास सोमवारी सकाळी एक संदेश';
 
   @override
-  String get notifPushSection => 'कुटुंब आणि अपडेट्स';
+  String get notifPushSection => 'घर';
 
   @override
   String get notifHouseholdTitle => 'शेअर केलेल्या नोंदी';
@@ -8527,6 +8527,18 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'तुमच्या खात्यातील नवीन साइन-इनच्या सूचना नेहमी पाठवल्या जातात.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'नवीन साइन-इन आणि तुम्ही मागितलेल्या अपडेटच्या सूचना नेहमी पाठवल्या जातात.';
+
+  @override
+  String get batteryWarningText => 'बॅटरी बचत Vaultara ला मर्यादित करत आहे, त्यामुळे रिमाइंडर कदाचित येणार नाहीत.';
+
+  @override
+  String get batteryWarningFix => 'दुरुस्त करा';
+
+  @override
+  String get notifHelpSection => 'मदत';
 
   @override
   String get notifIosHelpTitle => 'स्मरणपत्रे मिळत नाहीत?';

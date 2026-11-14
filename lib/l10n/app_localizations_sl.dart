@@ -5039,7 +5039,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get requestUpdateNoEmail => 'Najprej dodajte e-poštni naslov te osebe na zaslonu Družina.';
 
   @override
-  String get dailyDigestSwitchTitle => 'En dnevni povzetek namesto ločenih opomnikov';
+  String get dailyDigestSwitchTitle => 'Dnevni povzetek';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Ob uri opomnika prejmite eno obvestilo s seznamom vsega, kar zapade tisti dan.';
@@ -8653,10 +8653,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get notifTestSent => 'Preskus poslan. Prispel bo v nekaj sekundah.';
 
   @override
-  String get notifAfterExpiryTitle => 'Opomni me po poteku zapisa';
+  String get notifAfterExpiryTitle => 'Po poteku';
 
   @override
-  String get notifAfterExpirySubtitle => '3 in 14 dni pozneje, če ni bil obnovljen';
+  String get notifAfterExpirySubtitle => 'Opomniki 3 in 14 dni po poteku zapisa, če ni bil obnovljen';
 
   @override
   String get notifWeeklyTitle => 'Ponedeljkov povzetek';
@@ -8665,7 +8665,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get notifWeeklySubtitle => 'Sporočilo v ponedeljek zjutraj, ko kaj poteče tisti teden';
 
   @override
-  String get notifPushSection => 'Gospodinjstvo in posodobitve';
+  String get notifPushSection => 'Gospodinjstvo';
 
   @override
   String get notifHouseholdTitle => 'Deljeni zapisi';
@@ -8681,6 +8681,18 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Opozorila o novih prijavah v vaš račun so vedno poslana.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Opozorila o novih prijavah in posodobitvah, ki ste jih zahtevali, so vedno poslana.';
+
+  @override
+  String get batteryWarningText => 'Varčevanje z baterijo omejuje Vaultaro, zato opomniki morda ne bodo prispeli.';
+
+  @override
+  String get batteryWarningFix => 'Popravi';
+
+  @override
+  String get notifHelpSection => 'Pomoč';
 
   @override
   String get notifIosHelpTitle => 'Ne prejemate opomnikov?';

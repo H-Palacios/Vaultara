@@ -5076,7 +5076,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get requestUpdateNoEmail => 'أضف أولًا عنوان بريد إلكتروني لهذا الشخص في شاشة العائلة.';
 
   @override
-  String get dailyDigestSwitchTitle => 'ملخص يومي واحد بدلًا من تذكيرات منفصلة';
+  String get dailyDigestSwitchTitle => 'ملخص يومي';
 
   @override
   String get dailyDigestSwitchSubtitle => 'احصل على إشعار واحد في وقت التذكير يعرض كل ما يستحق في ذلك اليوم.';
@@ -8730,10 +8730,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notifTestSent => 'تم إرسال التجربة. يجب أن تصل خلال ثوانٍ.';
 
   @override
-  String get notifAfterExpiryTitle => 'ذكّرني بعد انتهاء السجل';
+  String get notifAfterExpiryTitle => 'بعد الانتهاء';
 
   @override
-  String get notifAfterExpirySubtitle => 'بعد 3 و14 يومًا إن لم يُجدَّد';
+  String get notifAfterExpirySubtitle => 'تذكيرات بعد 3 و14 يومًا من انتهاء السجل إذا لم يُجدَّد';
 
   @override
   String get notifWeeklyTitle => 'ملخص يوم الاثنين';
@@ -8742,7 +8742,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notifWeeklySubtitle => 'رسالة صباح الاثنين عندما ينتهي شيء في ذلك الأسبوع';
 
   @override
-  String get notifPushSection => 'الأسرة والتحديثات';
+  String get notifPushSection => 'الأسرة';
 
   @override
   String get notifHouseholdTitle => 'السجلات المشتركة';
@@ -8758,6 +8758,18 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'تُرسل دائمًا تنبيهات تسجيلات الدخول الجديدة إلى حسابك.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'تُرسل دائمًا التنبيهات عن تسجيلات الدخول الجديدة والتحديثات التي طلبتها.';
+
+  @override
+  String get batteryWarningText => 'توفير البطارية يقيّد Vaultara، لذا قد لا تصل التذكيرات.';
+
+  @override
+  String get batteryWarningFix => 'إصلاح';
+
+  @override
+  String get notifHelpSection => 'مساعدة';
 
   @override
   String get notifIosHelpTitle => 'لا تصلك التذكيرات؟';

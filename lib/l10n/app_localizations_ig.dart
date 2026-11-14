@@ -4907,7 +4907,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get requestUpdateNoEmail => 'Buru ụzọ tinye adreesị email maka onye a na ihuenyo Ezinụlọ.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Nchịkọta otu kwa ụbọchị kama ihe ncheta dị iche iche';
+  String get dailyDigestSwitchTitle => 'Nchịkọta kwa ụbọchị';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Nweta otu ọkwa n’oge ncheta gị nke depụtara ihe niile ga-emezu n’ụbọchị ahụ.';
@@ -8447,10 +8447,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get notifTestSent => 'Ezipụla nnwale. O kwesịrị ịbịa n\'ime sekọnd ole na ole.';
 
   @override
-  String get notifAfterExpiryTitle => 'Chetara m mgbe ndekọ gwụrụ';
+  String get notifAfterExpiryTitle => 'Mgbe ọ gwụsịrị';
 
   @override
-  String get notifAfterExpirySubtitle => 'Ụbọchị 3 na 14 mgbe nke ahụ gasịrị, ma ọ bụrụ na a megharịghị ya';
+  String get notifAfterExpirySubtitle => 'Ncheta ụbọchị 3 na 14 mgbe ndekọ gwụsịrị, ọ bụrụ na e meghị ya ọhụrụ';
 
   @override
   String get notifWeeklyTitle => 'Nchịkọta Mọnde';
@@ -8459,7 +8459,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get notifWeeklySubtitle => 'Ozi n\'ụtụtụ Mọnde mgbe ihe ga-agwụ n\'izu ahụ';
 
   @override
-  String get notifPushSection => 'Ezinụlọ na mmelite';
+  String get notifPushSection => 'Ezinụlọ';
 
   @override
   String get notifHouseholdTitle => 'Ndekọ ekesara';
@@ -8475,6 +8475,18 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'A na-ezipụ ịdọ aka ná ntị gbasara ịbanye ọhụrụ n\'akaụntụ gị mgbe niile.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'A na-ezipụ ọkwa gbasara nbanye ọhụrụ na mmelite ị rịọrọ mgbe niile.';
+
+  @override
+  String get batteryWarningText => 'Nchekwa batrị na-egbochi Vaultara, ya mere ncheta nwere ike ọ gaghị abịa.';
+
+  @override
+  String get batteryWarningFix => 'Dozie';
+
+  @override
+  String get notifHelpSection => 'Enyemaka';
 
   @override
   String get notifIosHelpTitle => 'Ị naghị enweta ncheta?';

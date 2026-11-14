@@ -4941,7 +4941,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get requestUpdateNoEmail => 'Lisa esmalt sellele inimesele e-posti aadress ekraanil Pere.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Üks päevakokkuvõte eraldi meeldetuletuste asemel';
+  String get dailyDigestSwitchTitle => 'Päeva kokkuvõte';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Saa meeldetuletuse ajal üks teavitus, mis loetleb kõik, mis sel päeval aegub.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get notifTestSent => 'Test saadetud. See peaks saabuma mõne sekundi pärast.';
 
   @override
-  String get notifAfterExpiryTitle => 'Tuleta meelde pärast kirje aegumist';
+  String get notifAfterExpiryTitle => 'Pärast aegumist';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ja 14 päeva hiljem, kui seda pole uuendatud';
+  String get notifAfterExpirySubtitle => 'Meeldetuletused 3 ja 14 päeva pärast kirje aegumist, kui seda pole uuendatud';
 
   @override
   String get notifWeeklyTitle => 'Esmaspäeva kokkuvõte';
@@ -8515,7 +8515,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get notifWeeklySubtitle => 'Teade esmaspäeva hommikul, kui sel nädalal midagi aegub';
 
   @override
-  String get notifPushSection => 'Leibkond ja uuendused';
+  String get notifPushSection => 'Leibkond';
 
   @override
   String get notifHouseholdTitle => 'Jagatud kirjed';
@@ -8531,6 +8531,18 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Teated uute sisselogimiste kohta sinu kontole saadetakse alati.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Teated uute sisselogimiste ja sinu küsitud uuenduste kohta saadetakse alati.';
+
+  @override
+  String get batteryWarningText => 'Akusäästja piirab Vaultarat, seega ei pruugi meeldetuletused kohale jõuda.';
+
+  @override
+  String get batteryWarningFix => 'Paranda';
+
+  @override
+  String get notifHelpSection => 'Abi';
 
   @override
   String get notifIosHelpTitle => 'Meeldetuletusi ei tule?';

@@ -4941,7 +4941,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get requestUpdateNoEmail => 'முதலில் குடும்பம் திரையில் இந்த நபருக்கு மின்னஞ்சல் முகவரியைச் சேர்க்கவும்.';
 
   @override
-  String get dailyDigestSwitchTitle => 'தனித்தனி நினைவூட்டல்களுக்குப் பதிலாக ஒரு தினசரிச் சுருக்கம்';
+  String get dailyDigestSwitchTitle => 'தினசரி சுருக்கம்';
 
   @override
   String get dailyDigestSwitchSubtitle => 'உங்கள் நினைவூட்டல் நேரத்தில், அன்றைய தினம் உரிய அனைத்தையும் பட்டியலிடும் ஒரு அறிவிப்பைப் பெறுங்கள்.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get notifTestSent => 'சோதனை அனுப்பப்பட்டது. சில வினாடிகளில் வர வேண்டும்.';
 
   @override
-  String get notifAfterExpiryTitle => 'பதிவு காலாவதியான பின் நினைவூட்டு';
+  String get notifAfterExpiryTitle => 'காலாவதிக்குப் பிறகு';
 
   @override
-  String get notifAfterExpirySubtitle => '3 மற்றும் 14 நாட்களுக்குப் பிறகு, புதுப்பிக்கப்படவில்லை என்றால்';
+  String get notifAfterExpirySubtitle => 'பதிவு காலாவதியாகி 3 மற்றும் 14 நாட்களுக்குப் பிறகு நினைவூட்டல்கள், புதுப்பிக்கப்படவில்லை என்றால்';
 
   @override
   String get notifWeeklyTitle => 'திங்கள் சுருக்கம்';
@@ -8511,7 +8511,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get notifWeeklySubtitle => 'அந்த வாரம் ஏதாவது காலாவதியாகும்போது திங்கள் காலை ஒரு செய்தி';
 
   @override
-  String get notifPushSection => 'குடும்பம் மற்றும் புதுப்பிப்புகள்';
+  String get notifPushSection => 'குடும்பம்';
 
   @override
   String get notifHouseholdTitle => 'பகிரப்பட்ட பதிவுகள்';
@@ -8527,6 +8527,18 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'உங்கள் கணக்கில் புதிய உள்நுழைவுகள் பற்றிய எச்சரிக்கைகள் எப்போதும் அனுப்பப்படும்.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'புதிய உள்நுழைவுகள் மற்றும் நீங்கள் கேட்ட புதுப்பிப்புகள் பற்றிய எச்சரிக்கைகள் எப்போதும் அனுப்பப்படும்.';
+
+  @override
+  String get batteryWarningText => 'பேட்டரி சேமிப்பு Vaultara-வைக் கட்டுப்படுத்துகிறது, அதனால் நினைவூட்டல்கள் வராமல் போகலாம்.';
+
+  @override
+  String get batteryWarningFix => 'சரிசெய்';
+
+  @override
+  String get notifHelpSection => 'உதவி';
 
   @override
   String get notifIosHelpTitle => 'நினைவூட்டல்கள் வரவில்லையா?';

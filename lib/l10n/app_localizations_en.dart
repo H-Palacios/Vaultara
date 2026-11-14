@@ -4956,7 +4956,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get requestUpdateNoEmail => 'Add an email address for this person on the Family screen first.';
 
   @override
-  String get dailyDigestSwitchTitle => 'One daily summary instead of separate reminders';
+  String get dailyDigestSwitchTitle => 'Daily summary';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Get one notification at your reminder time that lists everything due that day.';
@@ -8518,10 +8518,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifTestSent => 'Test sent. It should arrive in a few seconds.';
 
   @override
-  String get notifAfterExpiryTitle => 'Remind me after a record expires';
+  String get notifAfterExpiryTitle => 'After expiry';
 
   @override
-  String get notifAfterExpirySubtitle => '3 and 14 days after, if it has not been renewed';
+  String get notifAfterExpirySubtitle => 'Reminders 3 and 14 days after a record expires, if it has not been renewed';
 
   @override
   String get notifWeeklyTitle => 'Monday summary';
@@ -8530,7 +8530,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifWeeklySubtitle => 'A note on Monday morning when something expires that week';
 
   @override
-  String get notifPushSection => 'Household and updates';
+  String get notifPushSection => 'Household';
 
   @override
   String get notifHouseholdTitle => 'Shared records';
@@ -8546,6 +8546,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Alerts about new sign-ins to your account are always sent.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Alerts about new sign-ins and updates you asked for are always sent.';
+
+  @override
+  String get batteryWarningText => 'Battery saving is limiting Vaultara, so reminders may not arrive.';
+
+  @override
+  String get batteryWarningFix => 'Fix';
+
+  @override
+  String get notifHelpSection => 'Help';
 
   @override
   String get notifIosHelpTitle => 'Not getting reminders?';

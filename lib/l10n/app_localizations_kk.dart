@@ -4941,7 +4941,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get requestUpdateNoEmail => 'Алдымен Отбасы экранында осы адамның электрондық пошта мекенжайын қосыңыз.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Бөлек еске салғыштардың орнына бір күндік қорытынды';
+  String get dailyDigestSwitchTitle => 'Күнделікті жиынтық';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Еске салғыш уақытында сол күнгі барлық нәрсені көрсететін бір хабарландыру алыңыз.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsKk extends AppLocalizations {
   String get notifTestSent => 'Сынақ жіберілді. Бірнеше секундта келуі керек.';
 
   @override
-  String get notifAfterExpiryTitle => 'Жазба мерзімі аяқталғаннан кейін еске салу';
+  String get notifAfterExpiryTitle => 'Мерзімі біткен соң';
 
   @override
-  String get notifAfterExpirySubtitle => '3 және 14 күннен кейін, егер жаңартылмаса';
+  String get notifAfterExpirySubtitle => 'Жазбаның мерзімі біткеннен кейін 3 және 14 күннен соң еске салулар, егер жаңартылмаса';
 
   @override
   String get notifWeeklyTitle => 'Дүйсенбі шолуы';
@@ -8511,7 +8511,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get notifWeeklySubtitle => 'Сол аптада бірдеңенің мерзімі аяқталса, дүйсенбі таңертең хабар';
 
   @override
-  String get notifPushSection => 'Отбасы және жаңартулар';
+  String get notifPushSection => 'Отбасы';
 
   @override
   String get notifHouseholdTitle => 'Бөлісілген жазбалар';
@@ -8527,6 +8527,18 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Аккаунтыңызға жаңа кірулер туралы ескертулер әрқашан жіберіледі.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Жаңа кірулер және сіз сұраған жаңартулар туралы хабарландырулар әрдайым жіберіледі.';
+
+  @override
+  String get batteryWarningText => 'Батареяны үнемдеу Vaultara-ны шектеп тұр, сондықтан еске салулар келмеуі мүмкін.';
+
+  @override
+  String get batteryWarningFix => 'Түзету';
+
+  @override
+  String get notifHelpSection => 'Анықтама';
 
   @override
   String get notifIosHelpTitle => 'Еске салғыштар келмей ме?';

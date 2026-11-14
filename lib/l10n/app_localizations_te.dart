@@ -4941,7 +4941,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get requestUpdateNoEmail => 'ముందుగా కుటుంబం స్క్రీన్‌లో ఈ వ్యక్తికి ఇమెయిల్ చిరునామా జోడించండి.';
 
   @override
-  String get dailyDigestSwitchTitle => 'వేర్వేరు రిమైండర్‌లకు బదులుగా రోజుకు ఒక సారాంశం';
+  String get dailyDigestSwitchTitle => 'రోజువారీ సారాంశం';
 
   @override
   String get dailyDigestSwitchSubtitle => 'మీ రిమైండర్ సమయంలో ఆ రోజు గడువు ఉన్నవన్నీ జాబితా చేసే ఒక నోటిఫికేషన్ పొందండి.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsTe extends AppLocalizations {
   String get notifTestSent => 'పరీక్ష పంపబడింది. కొన్ని సెకన్లలో రావాలి.';
 
   @override
-  String get notifAfterExpiryTitle => 'రికార్డు గడువు ముగిసిన తర్వాత గుర్తు చేయండి';
+  String get notifAfterExpiryTitle => 'గడువు ముగిసిన తర్వాత';
 
   @override
-  String get notifAfterExpirySubtitle => '3 మరియు 14 రోజుల తర్వాత, పునరుద్ధరించకపోతే';
+  String get notifAfterExpirySubtitle => 'రికార్డ్ గడువు ముగిసిన 3 మరియు 14 రోజుల తర్వాత రిమైండర్‌లు, పునరుద్ధరించకపోతే';
 
   @override
   String get notifWeeklyTitle => 'సోమవారం సారాంశం';
@@ -8511,7 +8511,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get notifWeeklySubtitle => 'ఆ వారం ఏదైనా గడువు ముగిసేటప్పుడు సోమవారం ఉదయం ఒక సందేశం';
 
   @override
-  String get notifPushSection => 'కుటుంబం మరియు అప్‌డేట్‌లు';
+  String get notifPushSection => 'ఇల్లు';
 
   @override
   String get notifHouseholdTitle => 'షేర్ చేసిన రికార్డులు';
@@ -8527,6 +8527,18 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'మీ ఖాతాలో కొత్త సైన్-ఇన్‌ల హెచ్చరికలు ఎల్లప్పుడూ పంపబడతాయి.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'కొత్త సైన్-ఇన్‌లు మరియు మీరు అడిగిన అప్‌డేట్‌ల గురించి హెచ్చరికలు ఎల్లప్పుడూ పంపబడతాయి.';
+
+  @override
+  String get batteryWarningText => 'బ్యాటరీ ఆదా Vaultaraను పరిమితం చేస్తోంది, కాబట్టి రిమైండర్‌లు రాకపోవచ్చు.';
+
+  @override
+  String get batteryWarningFix => 'సరిచేయండి';
+
+  @override
+  String get notifHelpSection => 'సహాయం';
 
   @override
   String get notifIosHelpTitle => 'రిమైండర్‌లు రావడం లేదా?';

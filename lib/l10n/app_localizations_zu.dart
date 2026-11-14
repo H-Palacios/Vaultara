@@ -4941,7 +4941,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get requestUpdateNoEmail => 'Qala ngokwengeza ikheli le-imeyili lalo muntu esikrinini Somndeni.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Isifinyezo esisodwa sansuku zonke esikhundleni sezikhumbuzo ezihlukene';
+  String get dailyDigestSwitchTitle => 'Isifinyezo sansuku zonke';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Thola isaziso esisodwa ngesikhathi sesikhumbuzo esidwebula konke okufanele kwenziwe ngalolo suku.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get notifTestSent => 'Ukuhlola kuthunyelwe. Kufanele kufike emizuzwaneni embalwa.';
 
   @override
-  String get notifAfterExpiryTitle => 'Ngikhumbuze ngemva kokuba irekhodi liphelelwe yisikhathi';
+  String get notifAfterExpiryTitle => 'Ngemva kokuphelelwa';
 
   @override
-  String get notifAfterExpirySubtitle => 'Izinsuku ezi-3 nezi-14 ngemva kwalokho, uma lingavuselelwanga';
+  String get notifAfterExpirySubtitle => 'Izikhumbuzo ezinsukwini ezi-3 nezi-14 ngemva kokuba irekhodi liphelelwe, uma lingavuselelwanga';
 
   @override
   String get notifWeeklyTitle => 'Isifinyezo sangoMsombuluko';
@@ -8511,7 +8511,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get notifWeeklySubtitle => 'Umlayezo ngoMsombuluko ekuseni uma okuthile kuphelelwa yisikhathi ngalelo sonto';
 
   @override
-  String get notifPushSection => 'Umndeni nezibuyekezo';
+  String get notifPushSection => 'Ikhaya';
 
   @override
   String get notifHouseholdTitle => 'Amarekhodi abiwe';
@@ -8527,6 +8527,18 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Izexwayiso mayelana nokungena okusha ku-akhawunti yakho zihlala zithunyelwa.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Izexwayiso mayelana nokungena okusha nezibuyekezo ozicelile zihlala zithunyelwa.';
+
+  @override
+  String get batteryWarningText => 'Ukonga ibhethri kunciphisa i-Vaultara, ngakho izikhumbuzo zingase zingafiki.';
+
+  @override
+  String get batteryWarningFix => 'Lungisa';
+
+  @override
+  String get notifHelpSection => 'Usizo';
 
   @override
   String get notifIosHelpTitle => 'Awutholi izikhumbuzo?';

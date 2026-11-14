@@ -4941,7 +4941,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get requestUpdateNoEmail => 'Lisää ensin tälle henkilölle sähköpostiosoite Perhe-näytössä.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Yksi päivittäinen yhteenveto erillisten muistutusten sijaan';
+  String get dailyDigestSwitchTitle => 'Päivän yhteenveto';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Saat yhden ilmoituksen muistutusaikanasi, ja siinä on kaikki sinä päivänä erääntyvä.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get notifTestSent => 'Testi lähetetty. Sen pitäisi tulla muutamassa sekunnissa.';
 
   @override
-  String get notifAfterExpiryTitle => 'Muistuta, kun tietue on vanhentunut';
+  String get notifAfterExpiryTitle => 'Vanhenemisen jälkeen';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ja 14 päivää jälkeen, jos sitä ei ole uusittu';
+  String get notifAfterExpirySubtitle => 'Muistutukset 3 ja 14 päivää tietueen vanhenemisen jälkeen, jos sitä ei ole uusittu';
 
   @override
   String get notifWeeklyTitle => 'Maanantain yhteenveto';
@@ -8515,7 +8515,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get notifWeeklySubtitle => 'Viesti maanantaiaamuna, kun jotain vanhenee sillä viikolla';
 
   @override
-  String get notifPushSection => 'Kotitalous ja päivitykset';
+  String get notifPushSection => 'Kotitalous';
 
   @override
   String get notifHouseholdTitle => 'Jaetut tietueet';
@@ -8531,6 +8531,18 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Ilmoitukset uusista kirjautumisista tilillesi lähetetään aina.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Ilmoitukset uusista kirjautumisista ja pyytämistäsi päivityksistä lähetetään aina.';
+
+  @override
+  String get batteryWarningText => 'Virransäästö rajoittaa Vaultaraa, joten muistutukset eivät ehkä tule perille.';
+
+  @override
+  String get batteryWarningFix => 'Korjaa';
+
+  @override
+  String get notifHelpSection => 'Ohje';
 
   @override
   String get notifIosHelpTitle => 'Eivätkö muistutukset tule?';

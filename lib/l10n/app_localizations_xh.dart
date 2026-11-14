@@ -4941,7 +4941,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get requestUpdateNoEmail => 'Okokuqala yongeza idilesi ye-imeyile yalo mntu kwisikrini sikaSapho.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Isishwankathelo sosuku olunye endaweni yezikhumbuzo ezahlukeneyo';
+  String get dailyDigestSwitchTitle => 'Isishwankathelo semihla ngemihla';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Fumana isaziso esinye ngexesha lesikhumbuzo sakho esidwelisa yonke into efuneka ngalo mhla.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsXh extends AppLocalizations {
   String get notifTestSent => 'Uvavanyo luthunyelwe. Kufuneka lufike kwimizuzwana embalwa.';
 
   @override
-  String get notifAfterExpiryTitle => 'Ndikhumbuze emva kokuba irekhodi iphelelwe';
+  String get notifAfterExpiryTitle => 'Emva kokuphelelwa';
 
   @override
-  String get notifAfterExpirySubtitle => 'Iintsuku ezi-3 nezi-14 emva koko, ukuba ayivuselelwanga';
+  String get notifAfterExpirySubtitle => 'Izikhumbuzo kwiintsuku ezi-3 nezi-14 emva kokuba irekhodi iphelelwe, ukuba ayihlaziywanga';
 
   @override
   String get notifWeeklyTitle => 'Isishwankathelo sangoMvulo';
@@ -8511,7 +8511,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get notifWeeklySubtitle => 'Umyalezo ngoMvulo kusasa xa into iphelelwa kuloo veki';
 
   @override
-  String get notifPushSection => 'Usapho nohlaziyo';
+  String get notifPushSection => 'Ikhaya';
 
   @override
   String get notifHouseholdTitle => 'Iirekhodi ezabelwene';
@@ -8527,6 +8527,18 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Izilumkiso malunga nokungena okutsha kwi-akhawunti yakho zihlala zithunyelwa.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Izilumkiso malunga nokungena okutsha nohlaziyo olucelileyo zihlala zithunyelwa.';
+
+  @override
+  String get batteryWarningText => 'Ukonga ibhetri kunciphisa iVaultara, ngoko izikhumbuzo zisenokungafiki.';
+
+  @override
+  String get batteryWarningFix => 'Lungisa';
+
+  @override
+  String get notifHelpSection => 'Uncedo';
 
   @override
   String get notifIosHelpTitle => 'Awufumani zikhumbuzo?';

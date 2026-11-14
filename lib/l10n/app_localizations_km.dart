@@ -4904,7 +4904,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get requestUpdateNoEmail => 'សូមបន្ថែមអាសយដ្ឋានអ៊ីមែលសម្រាប់មនុស្សនេះនៅលើអេក្រង់គ្រួសារជាមុនសិន។';
 
   @override
-  String get dailyDigestSwitchTitle => 'សេចក្តីសង្ខេបប្រចាំថ្ងៃមួយ ជំនួសការរំលឹកដាច់ដោយឡែក';
+  String get dailyDigestSwitchTitle => 'សង្ខេបប្រចាំថ្ងៃ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'ទទួលការជូនដំណឹងមួយនៅម៉ោងរំលឹករបស់អ្នក ដែលរាយបញ្ជីអ្វីៗដែលដល់ពេលក្នុងថ្ងៃនោះ។';
@@ -8438,10 +8438,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get notifTestSent => 'បានផ្ញើការសាកល្បង។ វាគួរតែមកដល់ក្នុងរយៈពេលពីរបីវិនាទី។';
 
   @override
-  String get notifAfterExpiryTitle => 'រំលឹកខ្ញុំក្រោយកំណត់ត្រាផុតកំណត់';
+  String get notifAfterExpiryTitle => 'ក្រោយផុតកំណត់';
 
   @override
-  String get notifAfterExpirySubtitle => '3 និង 14 ថ្ងៃក្រោយ ប្រសិនបើមិនទាន់បន្ត';
+  String get notifAfterExpirySubtitle => 'ការរំលឹក 3 និង 14 ថ្ងៃ ក្រោយកំណត់ត្រាផុតកំណត់ ប្រសិនបើមិនទាន់បន្ត';
 
   @override
   String get notifWeeklyTitle => 'សេចក្ដីសង្ខេបថ្ងៃច័ន្ទ';
@@ -8450,7 +8450,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get notifWeeklySubtitle => 'សារមួយនៅព្រឹកថ្ងៃច័ន្ទ នៅពេលមានអ្វីផុតកំណត់ក្នុងសប្ដាហ៍នោះ';
 
   @override
-  String get notifPushSection => 'គ្រួសារ និងបច្ចុប្បន្នភាព';
+  String get notifPushSection => 'គ្រួសារ';
 
   @override
   String get notifHouseholdTitle => 'កំណត់ត្រាដែលបានចែករំលែក';
@@ -8466,6 +8466,18 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'ការជូនដំណឹងអំពីការចូលថ្មីទៅគណនីរបស់អ្នកតែងតែត្រូវបានផ្ញើ។';
+
+  @override
+  String get notifSecurityNoteBusiness => 'ការជូនដំណឹងអំពីការចូលគណនីថ្មី និងបច្ចុប្បន្នភាពដែលអ្នកបានស្នើ ត្រូវបានផ្ញើជានិច្ច។';
+
+  @override
+  String get batteryWarningText => 'ការសន្សំថ្មកំពុងកំណត់ Vaultara ដូច្នេះការរំលឹកអាចមិនមកដល់។';
+
+  @override
+  String get batteryWarningFix => 'ជួសជុល';
+
+  @override
+  String get notifHelpSection => 'ជំនួយ';
 
   @override
   String get notifIosHelpTitle => 'មិនទទួលបានការរំលឹកទេឬ?';

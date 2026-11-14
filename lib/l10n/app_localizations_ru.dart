@@ -5048,7 +5048,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get requestUpdateNoEmail => 'Сначала добавьте адрес эл. почты этого человека на экране Семья.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Одна ежедневная сводка вместо отдельных напоминаний';
+  String get dailyDigestSwitchTitle => 'Ежедневная сводка';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Получайте одно уведомление в заданное время напоминания со списком всего, что нужно сделать в этот день.';
@@ -8668,10 +8668,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get notifTestSent => 'Тест отправлен. Он придёт через несколько секунд.';
 
   @override
-  String get notifAfterExpiryTitle => 'Напоминать после окончания срока';
+  String get notifAfterExpiryTitle => 'После окончания срока';
 
   @override
-  String get notifAfterExpirySubtitle => 'Через 3 и 14 дней, если запись не продлена';
+  String get notifAfterExpirySubtitle => 'Напоминания через 3 и 14 дней после окончания срока записи, если её не продлили';
 
   @override
   String get notifWeeklyTitle => 'Сводка по понедельникам';
@@ -8680,7 +8680,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get notifWeeklySubtitle => 'Сообщение в понедельник утром, если на этой неделе что-то истекает';
 
   @override
-  String get notifPushSection => 'Семья и обновления';
+  String get notifPushSection => 'Семья';
 
   @override
   String get notifHouseholdTitle => 'Общие записи';
@@ -8696,6 +8696,18 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Оповещения о новых входах в ваш аккаунт отправляются всегда.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Уведомления о новых входах и о запрошенных вами обновлениях отправляются всегда.';
+
+  @override
+  String get batteryWarningText => 'Экономия заряда ограничивает Vaultara, поэтому напоминания могут не приходить.';
+
+  @override
+  String get batteryWarningFix => 'Исправить';
+
+  @override
+  String get notifHelpSection => 'Справка';
 
   @override
   String get notifIosHelpTitle => 'Не приходят напоминания?';

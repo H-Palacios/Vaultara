@@ -4894,7 +4894,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get requestUpdateNoEmail => 'ไปที่หน้าครอบครัวเพื่อเพิ่มที่อยู่อีเมลของบุคคลนี้ก่อน';
 
   @override
-  String get dailyDigestSwitchTitle => 'สรุปรายวันหนึ่งครั้งแทนการเตือนแยกกัน';
+  String get dailyDigestSwitchTitle => 'สรุปรายวัน';
 
   @override
   String get dailyDigestSwitchSubtitle => 'รับการแจ้งเตือนหนึ่งครั้งในเวลาเตือนของคุณ โดยแสดงทุกอย่างที่ครบกำหนดในวันนั้น';
@@ -8428,10 +8428,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get notifTestSent => 'ส่งการทดสอบแล้ว ควรมาถึงภายในไม่กี่วินาที';
 
   @override
-  String get notifAfterExpiryTitle => 'เตือนฉันหลังรายการหมดอายุ';
+  String get notifAfterExpiryTitle => 'หลังหมดอายุ';
 
   @override
-  String get notifAfterExpirySubtitle => '3 และ 14 วันหลังจากนั้น หากยังไม่ได้ต่ออายุ';
+  String get notifAfterExpirySubtitle => 'การแจ้งเตือน 3 และ 14 วันหลังรายการหมดอายุ หากยังไม่ได้ต่ออายุ';
 
   @override
   String get notifWeeklyTitle => 'สรุปวันจันทร์';
@@ -8440,7 +8440,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get notifWeeklySubtitle => 'ข้อความเช้าวันจันทร์เมื่อมีบางอย่างหมดอายุในสัปดาห์นั้น';
 
   @override
-  String get notifPushSection => 'ครัวเรือนและการอัปเดต';
+  String get notifPushSection => 'บ้าน';
 
   @override
   String get notifHouseholdTitle => 'รายการที่แชร์';
@@ -8456,6 +8456,18 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'การแจ้งเตือนการลงชื่อเข้าใช้ใหม่ในบัญชีของคุณจะถูกส่งเสมอ';
+
+  @override
+  String get notifSecurityNoteBusiness => 'การแจ้งเตือนเกี่ยวกับการลงชื่อเข้าใช้ใหม่และการอัปเดตที่คุณขอจะถูกส่งเสมอ';
+
+  @override
+  String get batteryWarningText => 'การประหยัดแบตเตอรี่กำลังจำกัด Vaultara การแจ้งเตือนจึงอาจไม่มาถึง';
+
+  @override
+  String get batteryWarningFix => 'แก้ไข';
+
+  @override
+  String get notifHelpSection => 'ความช่วยเหลือ';
 
   @override
   String get notifIosHelpTitle => 'ไม่ได้รับการแจ้งเตือนใช่ไหม';

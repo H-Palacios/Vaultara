@@ -4942,7 +4942,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get requestUpdateNoEmail => 'Adicione primeiro um endereço de email para esta pessoa no ecrã Família.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Um resumo diário em vez de lembretes separados';
+  String get dailyDigestSwitchTitle => 'Resumo diário';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Receba uma notificação à hora do lembrete com tudo o que termina nesse dia.';
@@ -8504,10 +8504,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notifTestSent => 'Teste enviado. Deve chegar dentro de segundos.';
 
   @override
-  String get notifAfterExpiryTitle => 'Lembrar-me depois de expirar';
+  String get notifAfterExpiryTitle => 'Após o vencimento';
 
   @override
-  String get notifAfterExpirySubtitle => '3 e 14 dias depois, se não tiver sido renovado';
+  String get notifAfterExpirySubtitle => 'Lembretes 3 e 14 dias depois que um registro vence, se não tiver sido renovado';
 
   @override
   String get notifWeeklyTitle => 'Resumo de segunda-feira';
@@ -8516,7 +8516,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notifWeeklySubtitle => 'Um aviso na segunda de manhã quando algo expira nessa semana';
 
   @override
-  String get notifPushSection => 'Agregado e atualizações';
+  String get notifPushSection => 'Família';
 
   @override
   String get notifHouseholdTitle => 'Registos partilhados';
@@ -8532,6 +8532,18 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Os alertas de novos inícios de sessão na sua conta são sempre enviados.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Alertas sobre novos acessos e atualizações que você pediu são sempre enviados.';
+
+  @override
+  String get batteryWarningText => 'A economia de bateria está limitando o Vaultara, então os lembretes podem não chegar.';
+
+  @override
+  String get batteryWarningFix => 'Corrigir';
+
+  @override
+  String get notifHelpSection => 'Ajuda';
 
   @override
   String get notifIosHelpTitle => 'Não recebe lembretes?';

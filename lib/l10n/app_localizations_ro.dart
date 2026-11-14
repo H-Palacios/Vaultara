@@ -4993,7 +4993,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get requestUpdateNoEmail => 'Mai întâi adaugă o adresă de email pentru această persoană, pe ecranul Familie.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Un rezumat zilnic în loc de mementouri separate';
+  String get dailyDigestSwitchTitle => 'Rezumat zilnic';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Primești o singură notificare la ora mementoului, cu tot ce expiră în ziua respectivă.';
@@ -8579,10 +8579,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get notifTestSent => 'Test trimis. Ar trebui să ajungă în câteva secunde.';
 
   @override
-  String get notifAfterExpiryTitle => 'Amintește-mi după ce o înregistrare expiră';
+  String get notifAfterExpiryTitle => 'După expirare';
 
   @override
-  String get notifAfterExpirySubtitle => 'La 3 și 14 zile după, dacă nu a fost reînnoită';
+  String get notifAfterExpirySubtitle => 'Mementouri la 3 și 14 zile după ce o înregistrare a expirat, dacă nu a fost reînnoită';
 
   @override
   String get notifWeeklyTitle => 'Rezumatul de luni';
@@ -8591,7 +8591,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get notifWeeklySubtitle => 'Un mesaj luni dimineață când ceva expiră în acea săptămână';
 
   @override
-  String get notifPushSection => 'Gospodărie și actualizări';
+  String get notifPushSection => 'Gospodărie';
 
   @override
   String get notifHouseholdTitle => 'Înregistrări partajate';
@@ -8607,6 +8607,18 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Alertele despre conectări noi în contul tău sunt trimise mereu.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Alertele despre conectări noi și despre actualizările cerute de tine sunt trimise mereu.';
+
+  @override
+  String get batteryWarningText => 'Economisirea bateriei limitează Vaultara, așa că mementourile s-ar putea să nu ajungă.';
+
+  @override
+  String get batteryWarningFix => 'Rezolvă';
+
+  @override
+  String get notifHelpSection => 'Ajutor';
 
   @override
   String get notifIosHelpTitle => 'Nu primești mementouri?';

@@ -4941,7 +4941,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get requestUpdateNoEmail => 'Avval Oila ekranida bu shaxs uchun e-pochta manzilini qoʻshing.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Alohida eslatmalar oʻrniga bitta kunlik xulosa';
+  String get dailyDigestSwitchTitle => 'Kunlik xulosa';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Eslatma vaqtida oʻsha kuni muddati keladigan hamma narsa roʻyxatlangan bitta bildirishnoma oling.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get notifTestSent => 'Sinov yuborildi. Bir necha soniyada kelishi kerak.';
 
   @override
-  String get notifAfterExpiryTitle => 'Yozuv muddati tugagach eslatish';
+  String get notifAfterExpiryTitle => 'Muddat tugagandan keyin';
 
   @override
-  String get notifAfterExpirySubtitle => '3 va 14 kundan keyin, agar uzaytirilmagan bo\'lsa';
+  String get notifAfterExpirySubtitle => 'Yozuv muddati tugagandan 3 va 14 kun keyin eslatmalar, agar yangilanmagan bo‘lsa';
 
   @override
   String get notifWeeklyTitle => 'Dushanba xulosasi';
@@ -8511,7 +8511,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get notifWeeklySubtitle => 'O\'sha haftada biror narsaning muddati tugasa, dushanba ertalab xabar';
 
   @override
-  String get notifPushSection => 'Oila va yangilanishlar';
+  String get notifPushSection => 'Oila';
 
   @override
   String get notifHouseholdTitle => 'Ulashilgan yozuvlar';
@@ -8527,6 +8527,18 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Hisobingizga yangi kirishlar haqidagi ogohlantirishlar doim yuboriladi.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Yangi kirishlar va siz so‘ragan yangilanishlar haqidagi bildirishnomalar doim yuboriladi.';
+
+  @override
+  String get batteryWarningText => 'Batareyani tejash Vaultara’ni cheklayapti, shuning uchun eslatmalar kelmasligi mumkin.';
+
+  @override
+  String get batteryWarningFix => 'Tuzatish';
+
+  @override
+  String get notifHelpSection => 'Yordam';
 
   @override
   String get notifIosHelpTitle => 'Eslatmalar kelmayaptimi?';

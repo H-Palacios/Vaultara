@@ -4941,7 +4941,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get requestUpdateNoEmail => 'Először adjon meg egy e-mail-címet ehhez a személyhez a Család képernyőn.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Egy napi összefoglaló külön emlékeztetők helyett';
+  String get dailyDigestSwitchTitle => 'Napi összefoglaló';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Egyetlen értesítést kap az emlékeztető idejében, amely felsorol mindent, ami aznap esedékes.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get notifTestSent => 'Teszt elküldve. Néhány másodpercen belül meg kell érkeznie.';
 
   @override
-  String get notifAfterExpiryTitle => 'Emlékeztessen a lejárat után';
+  String get notifAfterExpiryTitle => 'Lejárat után';
 
   @override
-  String get notifAfterExpirySubtitle => '3 és 14 nappal utána, ha nem újították meg';
+  String get notifAfterExpirySubtitle => 'Emlékeztetők a lejárat után 3 és 14 nappal, ha nem újítottad meg';
 
   @override
   String get notifWeeklyTitle => 'Hétfői összefoglaló';
@@ -8511,7 +8511,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get notifWeeklySubtitle => 'Üzenet hétfő reggel, ha azon a héten valami lejár';
 
   @override
-  String get notifPushSection => 'Háztartás és frissítések';
+  String get notifPushSection => 'Háztartás';
 
   @override
   String get notifHouseholdTitle => 'Megosztott bejegyzések';
@@ -8527,6 +8527,18 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Az új bejelentkezésekről szóló figyelmeztetéseket mindig elküldjük.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Az új bejelentkezésekről és a kért frissítésekről mindig küldünk értesítést.';
+
+  @override
+  String get batteryWarningText => 'Az akkumulátorkímélő korlátozza a Vaultarát, ezért előfordulhat, hogy az emlékeztetők nem érkeznek meg.';
+
+  @override
+  String get batteryWarningFix => 'Javítás';
+
+  @override
+  String get notifHelpSection => 'Súgó';
 
   @override
   String get notifIosHelpTitle => 'Nem kap emlékeztetőket?';

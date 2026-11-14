@@ -4940,7 +4940,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get requestUpdateNoEmail => 'Marka hore ku dar ciwaanka iimaylka qofkan shaashadda Qoyska.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Koobitaan maalinle ah oo keliya halkii xasuusin gaar ah';
+  String get dailyDigestSwitchTitle => 'Soo koobid maalinle ah';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Hel hal ogeysiis waqtiga xasuusinta oo taxaya wax kasta oo maalintaas dhacaya.';
@@ -8498,10 +8498,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get notifTestSent => 'Tijaabada waa la diray. Waa inay timaadaa dhowr ilbiriqsi gudahood.';
 
   @override
-  String get notifAfterExpiryTitle => 'I xusuusi kadib marka diiwaan dhaco';
+  String get notifAfterExpiryTitle => 'Kadib dhicitaanka';
 
   @override
-  String get notifAfterExpirySubtitle => '3 iyo 14 maalmood kadib, haddii aan la cusboonaysiin';
+  String get notifAfterExpirySubtitle => 'Xasuusin 3 iyo 14 maalmood kadib marka diiwaanku dhaco, haddii aan la cusboonaysiin';
 
   @override
   String get notifWeeklyTitle => 'Soo koobidda Isniinta';
@@ -8510,7 +8510,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get notifWeeklySubtitle => 'Fariin subaxa Isniinta marka wax dhacayaan toddobaadkaas';
 
   @override
-  String get notifPushSection => 'Qoyska iyo cusboonaysiinta';
+  String get notifPushSection => 'Qoys';
 
   @override
   String get notifHouseholdTitle => 'Diiwaannada la wadaagay';
@@ -8526,6 +8526,18 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Digniinaha ku saabsan galitaannada cusub ee akoonkaaga had iyo jeer waa la diraa.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Digniinaha ku saabsan galitaannada cusub iyo cusboonaysiinta aad codsatay had iyo jeer waa la diraa.';
+
+  @override
+  String get batteryWarningText => 'Keydinta baytariga ayaa xaddidaysa Vaultara, sidaa darteed xasuusintu waxay noqon kartaa inaysan iman.';
+
+  @override
+  String get batteryWarningFix => 'Hagaaji';
+
+  @override
+  String get notifHelpSection => 'Caawimaad';
 
   @override
   String get notifIosHelpTitle => 'Ma helaysid xusuusin?';

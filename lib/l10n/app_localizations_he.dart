@@ -4977,7 +4977,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get requestUpdateNoEmail => 'קודם הוסף כתובת אימייל לאדם הזה במסך משפחה.';
 
   @override
-  String get dailyDigestSwitchTitle => 'סיכום יומי אחד במקום תזכורות נפרדות';
+  String get dailyDigestSwitchTitle => 'סיכום יומי';
 
   @override
   String get dailyDigestSwitchSubtitle => 'קבל התראה אחת בשעת התזכורת שמפרטת את כל מה שצריך לטפל בו באותו יום.';
@@ -8553,10 +8553,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notifTestSent => 'הבדיקה נשלחה. היא אמורה להגיע בעוד כמה שניות.';
 
   @override
-  String get notifAfterExpiryTitle => 'להזכיר לי אחרי שתוקף רשומה פג';
+  String get notifAfterExpiryTitle => 'אחרי התפוגה';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ו-14 ימים אחרי, אם לא חודשה';
+  String get notifAfterExpirySubtitle => 'תזכורות 3 ו־14 ימים אחרי שרשומה פגה, אם לא חודשה';
 
   @override
   String get notifWeeklyTitle => 'סיכום יום שני';
@@ -8565,7 +8565,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notifWeeklySubtitle => 'הודעה ביום שני בבוקר כשמשהו פג באותו שבוע';
 
   @override
-  String get notifPushSection => 'משק הבית ועדכונים';
+  String get notifPushSection => 'משק בית';
 
   @override
   String get notifHouseholdTitle => 'רשומות משותפות';
@@ -8581,6 +8581,18 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'התראות על כניסות חדשות לחשבון שלך נשלחות תמיד.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'התראות על כניסות חדשות ועל עדכונים שביקשת נשלחות תמיד.';
+
+  @override
+  String get batteryWarningText => 'חיסכון בסוללה מגביל את Vaultara, ולכן ייתכן שתזכורות לא יגיעו.';
+
+  @override
+  String get batteryWarningFix => 'תיקון';
+
+  @override
+  String get notifHelpSection => 'עזרה';
 
   @override
   String get notifIosHelpTitle => 'לא מקבל תזכורות?';

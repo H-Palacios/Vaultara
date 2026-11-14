@@ -5042,7 +5042,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get requestUpdateNoEmail => 'Nejprve přidejte e-mailovou adresu této osoby na obrazovce Rodina.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Jedno denní shrnutí místo samostatných připomenutí';
+  String get dailyDigestSwitchTitle => 'Denní souhrn';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Dostanete jedno oznámení v čase připomenutí se seznamem všeho, co ten den vyprší.';
@@ -8647,10 +8647,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get notifTestSent => 'Test odeslán. Měl by přijít během několika sekund.';
 
   @override
-  String get notifAfterExpiryTitle => 'Připomenout po vypršení záznamu';
+  String get notifAfterExpiryTitle => 'Po vypršení';
 
   @override
-  String get notifAfterExpirySubtitle => '3 a 14 dní poté, pokud nebyl obnoven';
+  String get notifAfterExpirySubtitle => 'Připomenutí 3 a 14 dní po vypršení záznamu, pokud nebyl obnoven';
 
   @override
   String get notifWeeklyTitle => 'Pondělní souhrn';
@@ -8659,7 +8659,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get notifWeeklySubtitle => 'Zpráva v pondělí ráno, když ten týden něco vyprší';
 
   @override
-  String get notifPushSection => 'Domácnost a aktualizace';
+  String get notifPushSection => 'Domácnost';
 
   @override
   String get notifHouseholdTitle => 'Sdílené záznamy';
@@ -8675,6 +8675,18 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Upozornění na nová přihlášení k vašemu účtu se posílají vždy.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Upozornění na nová přihlášení a na aktualizace, o které jste požádali, se posílají vždy.';
+
+  @override
+  String get batteryWarningText => 'Úspora baterie omezuje Vaultaru, takže připomenutí nemusí dorazit.';
+
+  @override
+  String get batteryWarningFix => 'Opravit';
+
+  @override
+  String get notifHelpSection => 'Nápověda';
 
   @override
   String get notifIosHelpTitle => 'Nechodí vám připomínky?';

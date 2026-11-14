@@ -4940,7 +4940,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get requestUpdateNoEmail => 'Bættu fyrst við netfangi fyrir þessa manneskju á skjánum Fjölskylda.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Ein dagleg samantekt í stað aðskilinna áminninga';
+  String get dailyDigestSwitchTitle => 'Dagleg samantekt';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Fáðu eina tilkynningu á áminningartímanum með öllu sem er á gjalddaga þann dag.';
@@ -8498,10 +8498,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get notifTestSent => 'Prófun send. Hún ætti að berast eftir nokkrar sekúndur.';
 
   @override
-  String get notifAfterExpiryTitle => 'Minna mig á eftir að færsla rennur út';
+  String get notifAfterExpiryTitle => 'Eftir gildislok';
 
   @override
-  String get notifAfterExpirySubtitle => '3 og 14 dögum síðar, ef hún hefur ekki verið endurnýjuð';
+  String get notifAfterExpirySubtitle => 'Áminningar 3 og 14 dögum eftir að færsla rennur út, ef hún hefur ekki verið endurnýjuð';
 
   @override
   String get notifWeeklyTitle => 'Mánudagsyfirlit';
@@ -8510,7 +8510,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get notifWeeklySubtitle => 'Skilaboð á mánudagsmorgni þegar eitthvað rennur út í vikunni';
 
   @override
-  String get notifPushSection => 'Heimili og uppfærslur';
+  String get notifPushSection => 'Heimili';
 
   @override
   String get notifHouseholdTitle => 'Sameiginlegar færslur';
@@ -8526,6 +8526,18 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Viðvaranir um nýjar innskráningar á reikninginn þinn eru alltaf sendar.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Viðvaranir um nýjar innskráningar og uppfærslur sem þú baðst um eru alltaf sendar.';
+
+  @override
+  String get batteryWarningText => 'Rafhlöðusparnaður takmarkar Vaultara, svo áminningar berast ef til vill ekki.';
+
+  @override
+  String get batteryWarningFix => 'Laga';
+
+  @override
+  String get notifHelpSection => 'Hjálp';
 
   @override
   String get notifIosHelpTitle => 'Færðu ekki áminningar?';

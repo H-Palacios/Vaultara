@@ -4941,7 +4941,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get requestUpdateNoEmail => 'ആദ്യം കുടുംബം സ്‌ക്രീനിൽ ഈ ആളുടെ ഇമെയിൽ വിലാസം ചേർക്കുക.';
 
   @override
-  String get dailyDigestSwitchTitle => 'പ്രത്യേക റിമൈൻഡറുകൾക്ക് പകരം ഒരു ദൈനംദിന സംഗ്രഹം';
+  String get dailyDigestSwitchTitle => 'ദൈനംദിന സംഗ്രഹം';
 
   @override
   String get dailyDigestSwitchSubtitle => 'നിങ്ങളുടെ റിമൈൻഡർ സമയത്ത് ആ ദിവസം വരാനുള്ള എല്ലാം പട്ടികപ്പെടുത്തുന്ന ഒരു അറിയിപ്പ് നേടുക.';
@@ -8499,10 +8499,10 @@ class AppLocalizationsMl extends AppLocalizations {
   String get notifTestSent => 'ടെസ്റ്റ് അയച്ചു. കുറച്ച് സെക്കൻഡിനുള്ളിൽ എത്തണം.';
 
   @override
-  String get notifAfterExpiryTitle => 'റെക്കോർഡ് കാലഹരണപ്പെട്ട ശേഷം ഓർമ്മിപ്പിക്കുക';
+  String get notifAfterExpiryTitle => 'കാലഹരണപ്പെട്ട ശേഷം';
 
   @override
-  String get notifAfterExpirySubtitle => '3-ഉം 14-ഉം ദിവസത്തിന് ശേഷം, പുതുക്കിയിട്ടില്ലെങ്കിൽ';
+  String get notifAfterExpirySubtitle => 'റെക്കോർഡ് കാലഹരണപ്പെട്ട് 3, 14 ദിവസങ്ങൾക്ക് ശേഷം ഓർമ്മപ്പെടുത്തലുകൾ, പുതുക്കിയിട്ടില്ലെങ്കിൽ';
 
   @override
   String get notifWeeklyTitle => 'തിങ്കളാഴ്ചത്തെ സംഗ്രഹം';
@@ -8511,7 +8511,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get notifWeeklySubtitle => 'ആ ആഴ്ച എന്തെങ്കിലും കാലഹരണപ്പെടുമ്പോൾ തിങ്കളാഴ്ച രാവിലെ ഒരു സന്ദേശം';
 
   @override
-  String get notifPushSection => 'കുടുംബവും അപ്ഡേറ്റുകളും';
+  String get notifPushSection => 'വീട്';
 
   @override
   String get notifHouseholdTitle => 'പങ്കിട്ട റെക്കോർഡുകൾ';
@@ -8527,6 +8527,18 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'നിങ്ങളുടെ അക്കൗണ്ടിലെ പുതിയ സൈൻ-ഇന്നുകളെക്കുറിച്ചുള്ള മുന്നറിയിപ്പുകൾ എപ്പോഴും അയയ്ക്കും.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'പുതിയ സൈൻ-ഇന്നുകളെയും നിങ്ങൾ ചോദിച്ച അപ്‌ഡേറ്റുകളെയും കുറിച്ചുള്ള അലേർട്ടുകൾ എപ്പോഴും അയയ്ക്കും.';
+
+  @override
+  String get batteryWarningText => 'ബാറ്ററി ലാഭിക്കൽ Vaultara-യെ പരിമിതപ്പെടുത്തുന്നു, അതിനാൽ ഓർമ്മപ്പെടുത്തലുകൾ എത്താതിരിക്കാം.';
+
+  @override
+  String get batteryWarningFix => 'ശരിയാക്കുക';
+
+  @override
+  String get notifHelpSection => 'സഹായം';
 
   @override
   String get notifIosHelpTitle => 'ഓർമ്മപ്പെടുത്തലുകൾ ലഭിക്കുന്നില്ലേ?';

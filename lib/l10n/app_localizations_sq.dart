@@ -4941,7 +4941,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get requestUpdateNoEmail => 'Fillimisht shtoni një adresë emaili për këtë person te ekrani Familja.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Një përmbledhje ditore në vend të kujtesave të veçanta';
+  String get dailyDigestSwitchTitle => 'Përmbledhje ditore';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Merrni një njoftim në orën e kujtesës suaj që rendit gjithçka që ka afat atë ditë.';
@@ -8503,10 +8503,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get notifTestSent => 'Prova u dërgua. Duhet të arrijë pas pak sekondash.';
 
   @override
-  String get notifAfterExpiryTitle => 'Më kujto pasi një regjistrim skadon';
+  String get notifAfterExpiryTitle => 'Pas skadimit';
 
   @override
-  String get notifAfterExpirySubtitle => '3 dhe 14 ditë më pas, nëse nuk është rinovuar';
+  String get notifAfterExpirySubtitle => 'Kujtesa 3 dhe 14 ditë pasi skadon një regjistrim, nëse nuk është rinovuar';
 
   @override
   String get notifWeeklyTitle => 'Përmbledhja e së hënës';
@@ -8515,7 +8515,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get notifWeeklySubtitle => 'Një shënim të hënën në mëngjes kur diçka skadon atë javë';
 
   @override
-  String get notifPushSection => 'Familja dhe përditësimet';
+  String get notifPushSection => 'Familja';
 
   @override
   String get notifHouseholdTitle => 'Regjistrimet e ndara';
@@ -8531,6 +8531,18 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Sinjalizimet për hyrje të reja në llogarinë tuaj dërgohen gjithmonë.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Sinjalizimet për hyrje të reja dhe për përditësimet që kërkuat dërgohen gjithmonë.';
+
+  @override
+  String get batteryWarningText => 'Kursimi i baterisë po e kufizon Vaultara-n, prandaj kujtesat mund të mos mbërrijnë.';
+
+  @override
+  String get batteryWarningFix => 'Rregullo';
+
+  @override
+  String get notifHelpSection => 'Ndihmë';
 
   @override
   String get notifIosHelpTitle => 'Nuk po merrni kujtues?';

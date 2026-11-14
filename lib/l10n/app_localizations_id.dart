@@ -4901,7 +4901,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get requestUpdateNoEmail => 'Tambahkan dulu alamat email orang ini di layar Keluarga.';
 
   @override
-  String get dailyDigestSwitchTitle => 'Satu ringkasan harian, bukan pengingat terpisah';
+  String get dailyDigestSwitchTitle => 'Ringkasan harian';
 
   @override
   String get dailyDigestSwitchSubtitle => 'Terima satu notifikasi pada waktu pengingat Anda yang mencantumkan semua yang jatuh tempo hari itu.';
@@ -8435,10 +8435,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get notifTestSent => 'Uji terkirim. Seharusnya tiba dalam beberapa detik.';
 
   @override
-  String get notifAfterExpiryTitle => 'Ingatkan saya setelah catatan kedaluwarsa';
+  String get notifAfterExpiryTitle => 'Setelah kedaluwarsa';
 
   @override
-  String get notifAfterExpirySubtitle => '3 dan 14 hari setelahnya, jika belum diperpanjang';
+  String get notifAfterExpirySubtitle => 'Pengingat 3 dan 14 hari setelah catatan kedaluwarsa, jika belum diperpanjang';
 
   @override
   String get notifWeeklyTitle => 'Ringkasan Senin';
@@ -8447,7 +8447,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get notifWeeklySubtitle => 'Pesan pada Senin pagi jika ada yang kedaluwarsa minggu itu';
 
   @override
-  String get notifPushSection => 'Rumah tangga dan pembaruan';
+  String get notifPushSection => 'Rumah tangga';
 
   @override
   String get notifHouseholdTitle => 'Catatan bersama';
@@ -8463,6 +8463,18 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'Peringatan tentang login baru ke akun Anda selalu dikirim.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'Peringatan tentang login baru dan pembaruan yang Anda minta selalu dikirim.';
+
+  @override
+  String get batteryWarningText => 'Penghemat baterai membatasi Vaultara, jadi pengingat mungkin tidak sampai.';
+
+  @override
+  String get batteryWarningFix => 'Perbaiki';
+
+  @override
+  String get notifHelpSection => 'Bantuan';
 
   @override
   String get notifIosHelpTitle => 'Tidak menerima pengingat?';

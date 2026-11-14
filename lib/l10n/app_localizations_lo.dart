@@ -4906,7 +4906,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get requestUpdateNoEmail => 'ເພີ່ມທີ່ຢູ່ອີເມວຂອງຄົນນີ້ໃນໜ້າຄອບຄົວກ່ອນ.';
 
   @override
-  String get dailyDigestSwitchTitle => 'ສະຫຼຸບລາຍວັນອັນດຽວແທນການເຕືອນແຍກ';
+  String get dailyDigestSwitchTitle => 'ສະຫຼຸບປະຈຳວັນ';
 
   @override
   String get dailyDigestSwitchSubtitle => 'ຮັບການແຈ້ງເຕືອນອັນດຽວໃນເວລາເຕືອນຂອງທ່ານ ທີ່ລະບຸທຸກຢ່າງທີ່ຮອດກຳນົດໃນມື້ນັ້ນ.';
@@ -8440,10 +8440,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get notifTestSent => 'ສົ່ງການທົດສອບແລ້ວ. ຄວນມາຮອດພາຍໃນບໍ່ເທົ່າໃດວິນາທີ.';
 
   @override
-  String get notifAfterExpiryTitle => 'ເຕືອນຂ້ອຍຫຼັງບັນທຶກໝົດອາຍຸ';
+  String get notifAfterExpiryTitle => 'ຫຼັງໝົດອາຍຸ';
 
   @override
-  String get notifAfterExpirySubtitle => '3 ແລະ 14 ມື້ຫຼັງຈາກນັ້ນ, ຖ້າຍັງບໍ່ໄດ້ຕໍ່ອາຍຸ';
+  String get notifAfterExpirySubtitle => 'ການແຈ້ງເຕືອນ 3 ແລະ 14 ມື້ຫຼັງບັນທຶກໝົດອາຍຸ ຖ້າຍັງບໍ່ໄດ້ຕໍ່';
 
   @override
   String get notifWeeklyTitle => 'ສະຫຼຸບວັນຈັນ';
@@ -8452,7 +8452,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get notifWeeklySubtitle => 'ຂໍ້ຄວາມເຊົ້າວັນຈັນເມື່ອມີບາງຢ່າງໝົດອາຍຸໃນອາທິດນັ້ນ';
 
   @override
-  String get notifPushSection => 'ຄອບຄົວ ແລະ ການອັບເດດ';
+  String get notifPushSection => 'ຄອບຄົວ';
 
   @override
   String get notifHouseholdTitle => 'ບັນທຶກທີ່ແບ່ງປັນ';
@@ -8468,6 +8468,18 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get notifSecurityNote => 'ການແຈ້ງເຕືອນການເຂົ້າສູ່ລະບົບໃໝ່ໃນບັນຊີຂອງທ່ານຈະຖືກສົ່ງສະເໝີ.';
+
+  @override
+  String get notifSecurityNoteBusiness => 'ການແຈ້ງເຕືອນກ່ຽວກັບການເຂົ້າລະບົບໃໝ່ ແລະ ການອັບເດດທີ່ທ່ານຂໍ ຈະຖືກສົ່ງສະເໝີ.';
+
+  @override
+  String get batteryWarningText => 'ການປະຫຍັດແບັດເຕີຣີກຳລັງຈຳກັດ Vaultara ສະນັ້ນການແຈ້ງເຕືອນອາດບໍ່ມາຮອດ.';
+
+  @override
+  String get batteryWarningFix => 'ແກ້ໄຂ';
+
+  @override
+  String get notifHelpSection => 'ຊ່ວຍເຫຼືອ';
 
   @override
   String get notifIosHelpTitle => 'ບໍ່ໄດ້ຮັບການແຈ້ງເຕືອນບໍ?';
