@@ -8035,6 +8035,78 @@ class AppLocalizationsEn extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Only the person who added this record, or the household owner, can delete it.';
 
   @override
+  String get reminderSoundTitle => 'Reminder sound';
+
+  @override
+  String get reminderSoundHint => 'Plays for reminders before a record expires. Tap a sound to hear it.';
+
+  @override
+  String get urgentSoundTitle => 'Urgent sound';
+
+  @override
+  String get urgentSoundHint => 'Plays when a record has expired or is due within 7 days. Tap a sound to hear it.';
+
+  @override
+  String get reminderSoundNote => 'Expired records and records due within 7 days use your urgent sound. Security and household alerts always use your phone’s own sound.';
+
+  @override
+  String get soundPhoneDefault => 'Phone default';
+
+  @override
+  String get soundGroupCalm => 'Calm';
+
+  @override
+  String get soundGroupFun => 'Fun';
+
+  @override
+  String get soundChannelGroup => 'Reminder sounds';
+
+  @override
+  String get soundChime => 'Chime';
+
+  @override
+  String get soundBell => 'Bell';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Glow';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Unlock pop';
+
+  @override
+  String get soundBubbles => 'Bubbles';
+
+  @override
+  String get soundWhistle => 'Whistle';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Xylophone';
+
+  @override
+  String get soundCoin => 'Coin';
+
+  @override
+  String get soundBoop => 'Boop';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Quack';
+
+  @override
   String get renameCategoryTitle => 'Rename category';
 
   @override

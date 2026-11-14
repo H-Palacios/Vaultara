@@ -8016,6 +8016,78 @@ class AppLocalizationsUz extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Bu yozuvni faqat uni qo‘shgan kishi yoki oila egasi o‘chira oladi.';
 
   @override
+  String get reminderSoundTitle => 'Eslatma ovozi';
+
+  @override
+  String get reminderSoundHint => 'Yozuv muddati tugashidan oldingi eslatmalarda chalinadi. Eshitish uchun ovozga bosing.';
+
+  @override
+  String get urgentSoundTitle => 'Shoshilinch ovoz';
+
+  @override
+  String get urgentSoundHint => 'Yozuv muddati tugaganda yoki 7 kun ichida tugaganda chalinadi. Eshitish uchun ovozga bosing.';
+
+  @override
+  String get reminderSoundNote => 'Muddati tugagan va 7 kun ichida tugaydigan yozuvlar shoshilinch ovozingizdan foydalanadi. Xavfsizlik va oila bildirishnomalari doim telefoningizning o‘z ovozidan foydalanadi.';
+
+  @override
+  String get soundPhoneDefault => 'Telefon ovozi';
+
+  @override
+  String get soundGroupCalm => 'Sokin';
+
+  @override
+  String get soundGroupFun => 'Quvnoq';
+
+  @override
+  String get soundChannelGroup => 'Eslatma ovozlari';
+
+  @override
+  String get soundChime => 'Qo‘ng‘iroqcha';
+
+  @override
+  String get soundBell => 'Qo‘ng‘iroq';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Yog‘du';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Ochilish popi';
+
+  @override
+  String get soundBubbles => 'Pufakchalar';
+
+  @override
+  String get soundWhistle => 'Hushtak';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Ksilofon';
+
+  @override
+  String get soundCoin => 'Tanga';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'G‘aq';
+
+  @override
   String get renameCategoryTitle => 'Turkum nomini oʻzgartirish';
 
   @override

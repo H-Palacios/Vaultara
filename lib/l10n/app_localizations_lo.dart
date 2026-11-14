@@ -7958,6 +7958,78 @@ class AppLocalizationsLo extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'ມີແຕ່ຜູ້ທີ່ເພີ່ມບັນທຶກນີ້ ຫຼື ເຈົ້າຂອງຄອບຄົວເທົ່ານັ້ນທີ່ລຶບໄດ້.';
 
   @override
+  String get reminderSoundTitle => 'ສຽງແຈ້ງເຕືອນ';
+
+  @override
+  String get reminderSoundHint => 'ດັງສຳລັບການແຈ້ງເຕືອນກ່ອນບັນທຶກໝົດອາຍຸ. ແຕະສຽງເພື່ອຟັງ.';
+
+  @override
+  String get urgentSoundTitle => 'ສຽງດ່ວນ';
+
+  @override
+  String get urgentSoundHint => 'ດັງເມື່ອບັນທຶກໝົດອາຍຸແລ້ວ ຫຼື ຈະໝົດອາຍຸພາຍໃນ 7 ມື້. ແຕະສຽງເພື່ອຟັງ.';
+
+  @override
+  String get reminderSoundNote => 'ບັນທຶກທີ່ໝົດອາຍຸແລ້ວ ແລະ ທີ່ຈະໝົດອາຍຸພາຍໃນ 7 ມື້ ໃຊ້ສຽງດ່ວນຂອງທ່ານ. ການແຈ້ງເຕືອນຄວາມປອດໄພ ແລະ ຄອບຄົວໃຊ້ສຽງຂອງໂທລະສັບທ່ານສະເໝີ.';
+
+  @override
+  String get soundPhoneDefault => 'ສຽງໂທລະສັບ';
+
+  @override
+  String get soundGroupCalm => 'ສະຫງົບ';
+
+  @override
+  String get soundGroupFun => 'ມ່ວນ';
+
+  @override
+  String get soundChannelGroup => 'ສຽງແຈ້ງເຕືອນ';
+
+  @override
+  String get soundChime => 'ລະຄັງນ້ອຍ';
+
+  @override
+  String get soundBell => 'ລະຄັງ';
+
+  @override
+  String get soundMarimba => 'ມາຣິມບາ';
+
+  @override
+  String get soundDingDong => 'ດິງ-ດອງ';
+
+  @override
+  String get soundGlow => 'ແສງເຫຼື້ອມ';
+
+  @override
+  String get soundBoing => 'ບອຍ';
+
+  @override
+  String get soundUnlockPop => 'ປົດລັອກປັອບ';
+
+  @override
+  String get soundBubbles => 'ຟອງ';
+
+  @override
+  String get soundWhistle => 'ນົກຫວີດ';
+
+  @override
+  String get soundTada => 'ຕາ-ດາ';
+
+  @override
+  String get soundXylophone => 'ລະນາດ';
+
+  @override
+  String get soundCoin => 'ຫຼຽນ';
+
+  @override
+  String get soundBoop => 'ບູບ';
+
+  @override
+  String get soundBaDumTss => 'ບາ-ດຸມ-ຊ';
+
+  @override
+  String get soundQuack => 'ກ້າບໆ';
+
+  @override
   String get renameCategoryTitle => 'ປ່ຽນຊື່ໝວດ';
 
   @override

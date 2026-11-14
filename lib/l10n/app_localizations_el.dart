@@ -8020,6 +8020,78 @@ class AppLocalizationsEl extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Μόνο όποιος πρόσθεσε αυτή την εγγραφή ή ο κάτοχος του νοικοκυριού μπορεί να τη διαγράψει.';
 
   @override
+  String get reminderSoundTitle => 'Ήχος υπενθύμισης';
+
+  @override
+  String get reminderSoundHint => 'Ακούγεται στις υπενθυμίσεις πριν λήξει μια εγγραφή. Πατήστε έναν ήχο για να τον ακούσετε.';
+
+  @override
+  String get urgentSoundTitle => 'Επείγων ήχος';
+
+  @override
+  String get urgentSoundHint => 'Ακούγεται όταν μια εγγραφή έχει λήξει ή λήγει μέσα σε 7 ημέρες. Πατήστε έναν ήχο για να τον ακούσετε.';
+
+  @override
+  String get reminderSoundNote => 'Οι εγγραφές που έχουν λήξει και όσες λήγουν μέσα σε 7 ημέρες χρησιμοποιούν τον επείγοντα ήχο σας. Οι ειδοποιήσεις ασφαλείας και νοικοκυριού χρησιμοποιούν πάντα τον ήχο του τηλεφώνου σας.';
+
+  @override
+  String get soundPhoneDefault => 'Ήχος τηλεφώνου';
+
+  @override
+  String get soundGroupCalm => 'Ήρεμοι';
+
+  @override
+  String get soundGroupFun => 'Αστείοι';
+
+  @override
+  String get soundChannelGroup => 'Ήχοι υπενθύμισης';
+
+  @override
+  String get soundChime => 'Καμπανάκι';
+
+  @override
+  String get soundBell => 'Καμπάνα';
+
+  @override
+  String get soundMarimba => 'Μαρίμπα';
+
+  @override
+  String get soundDingDong => 'Ντινγκ-ντονγκ';
+
+  @override
+  String get soundGlow => 'Λάμψη';
+
+  @override
+  String get soundBoing => 'Μπόινγκ';
+
+  @override
+  String get soundUnlockPop => 'Ξεκλείδωμα';
+
+  @override
+  String get soundBubbles => 'Φυσαλίδες';
+
+  @override
+  String get soundWhistle => 'Σφυρίχτρα';
+
+  @override
+  String get soundTada => 'Τα-ντα';
+
+  @override
+  String get soundXylophone => 'Ξυλόφωνο';
+
+  @override
+  String get soundCoin => 'Νόμισμα';
+
+  @override
+  String get soundBoop => 'Μπουπ';
+
+  @override
+  String get soundBaDumTss => 'Μπα-ντουμ-τσς';
+
+  @override
+  String get soundQuack => 'Κουάκ';
+
+  @override
   String get renameCategoryTitle => 'Μετονομασία κατηγορίας';
 
   @override

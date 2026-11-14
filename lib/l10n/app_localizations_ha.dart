@@ -8016,6 +8016,78 @@ class AppLocalizationsHa extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Wanda ya ƙara wannan rikodi ko mai gidan ne kaɗai zai iya goge shi.';
 
   @override
+  String get reminderSoundTitle => 'Sautin tunatarwa';
+
+  @override
+  String get reminderSoundHint => 'Yana kara wa tunatarwa kafin rikodi ya ƙare. Taɓa sauti don ji.';
+
+  @override
+  String get urgentSoundTitle => 'Sautin gaggawa';
+
+  @override
+  String get urgentSoundHint => 'Yana kara idan rikodi ya ƙare ko zai ƙare cikin kwanaki 7. Taɓa sauti don ji.';
+
+  @override
+  String get reminderSoundNote => 'Rikodin da suka ƙare da waɗanda za su ƙare cikin kwanaki 7 suna amfani da sautin gaggawarka. Sanarwar tsaro da ta gida koyaushe suna amfani da sautin wayarka.';
+
+  @override
+  String get soundPhoneDefault => 'Sautin waya';
+
+  @override
+  String get soundGroupCalm => 'Natsuwa';
+
+  @override
+  String get soundGroupFun => 'Nishaɗi';
+
+  @override
+  String get soundChannelGroup => 'Sautukan tunatarwa';
+
+  @override
+  String get soundChime => 'Ƙararrawa';
+
+  @override
+  String get soundBell => 'Kararrawa';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Haske';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Buɗewa da pop';
+
+  @override
+  String get soundBubbles => 'Kumfa';
+
+  @override
+  String get soundWhistle => 'Usur';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Zailofon';
+
+  @override
+  String get soundCoin => 'Tsabar kuɗi';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Sake sunan rukuni';
 
   @override

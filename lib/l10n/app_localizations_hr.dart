@@ -8083,6 +8083,78 @@ class AppLocalizationsHr extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Samo osoba koja je dodala ovaj zapis ili vlasnik kućanstva može ga izbrisati.';
 
   @override
+  String get reminderSoundTitle => 'Zvuk podsjetnika';
+
+  @override
+  String get reminderSoundHint => 'Svira za podsjetnike prije isteka zapisa. Dodirnite zvuk da ga čujete.';
+
+  @override
+  String get urgentSoundTitle => 'Hitni zvuk';
+
+  @override
+  String get urgentSoundHint => 'Svira kad je zapis istekao ili istječe u roku od 7 dana. Dodirnite zvuk da ga čujete.';
+
+  @override
+  String get reminderSoundNote => 'Istekli zapisi i zapisi koji istječu u roku od 7 dana koriste vaš hitni zvuk. Sigurnosna upozorenja i upozorenja kućanstva uvijek koriste zvuk vašeg telefona.';
+
+  @override
+  String get soundPhoneDefault => 'Zvuk telefona';
+
+  @override
+  String get soundGroupCalm => 'Mirni';
+
+  @override
+  String get soundGroupFun => 'Zabavni';
+
+  @override
+  String get soundChannelGroup => 'Zvukovi podsjetnika';
+
+  @override
+  String get soundChime => 'Zvončić';
+
+  @override
+  String get soundBell => 'Zvono';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Sjaj';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Otključavanje';
+
+  @override
+  String get soundBubbles => 'Mjehurići';
+
+  @override
+  String get soundWhistle => 'Zviždaljka';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Ksilofon';
+
+  @override
+  String get soundCoin => 'Kovanica';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kva';
+
+  @override
   String get renameCategoryTitle => 'Preimenuj kategoriju';
 
   @override

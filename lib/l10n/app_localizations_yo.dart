@@ -7964,6 +7964,78 @@ class AppLocalizationsYo extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Ẹni tó fi ìgbasilẹ̀ yìí kún nìkan, tàbí olórí ilé, ló lè pa á rẹ́.';
 
   @override
+  String get reminderSoundTitle => 'Ohùn ìrántí';
+
+  @override
+  String get reminderSoundHint => 'Ó máa ń dún fún ìrántí kí ìgbasilẹ̀ tó parí. Tẹ ohùn kan láti gbọ́ ọ.';
+
+  @override
+  String get urgentSoundTitle => 'Ohùn kánjúkánjú';
+
+  @override
+  String get urgentSoundHint => 'Ó máa ń dún nígbà tí ìgbasilẹ̀ bá ti parí tàbí tó máa parí láàrin ọjọ́ 7. Tẹ ohùn kan láti gbọ́ ọ.';
+
+  @override
+  String get reminderSoundNote => 'Àwọn ìgbasilẹ̀ tó ti parí àti èyí tó máa parí láàrin ọjọ́ 7 máa ń lo ohùn kánjúkánjú rẹ. Ìkìlọ̀ ààbò àti ti ilé máa ń lo ohùn fóònù rẹ nígbà gbogbo.';
+
+  @override
+  String get soundPhoneDefault => 'Ohùn fóònù';
+
+  @override
+  String get soundGroupCalm => 'Píparọ́rọ́';
+
+  @override
+  String get soundGroupFun => 'Aláwàdà';
+
+  @override
+  String get soundChannelGroup => 'Àwọn ohùn ìrántí';
+
+  @override
+  String get soundChime => 'Agogo kékeré';
+
+  @override
+  String get soundBell => 'Agogo';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Ìmọ́lẹ̀';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Ṣíṣí pop';
+
+  @override
+  String get soundBubbles => 'Ìfọ́fọ́';
+
+  @override
+  String get soundWhistle => 'Fèrè';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Sailofóònù';
+
+  @override
+  String get soundCoin => 'Owó ẹyọ';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Yí orúkọ ẹ̀ka padà';
 
   @override

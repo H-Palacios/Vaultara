@@ -8016,6 +8016,78 @@ class AppLocalizationsGu extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'આ રેકોર્ડ ઉમેરનાર વ્યક્તિ અથવા ઘરના માલિક જ તેને કાઢી શકે છે.';
 
   @override
+  String get reminderSoundTitle => 'રિમાઇન્ડર અવાજ';
+
+  @override
+  String get reminderSoundHint => 'રેકોર્ડ સમાપ્ત થાય તે પહેલાંના રિમાઇન્ડર માટે વાગે છે. સાંભળવા માટે અવાજ પર ટૅપ કરો.';
+
+  @override
+  String get urgentSoundTitle => 'તાત્કાલિક અવાજ';
+
+  @override
+  String get urgentSoundHint => 'રેકોર્ડ સમાપ્ત થયો હોય અથવા 7 દિવસમાં સમાપ્ત થતો હોય ત્યારે વાગે છે. સાંભળવા માટે અવાજ પર ટૅપ કરો.';
+
+  @override
+  String get reminderSoundNote => 'સમાપ્ત થયેલા રેકોર્ડ અને 7 દિવસમાં સમાપ્ત થતા રેકોર્ડ તમારો તાત્કાલિક અવાજ વાપરે છે. સુરક્ષા અને ઘરની ચેતવણીઓ હંમેશાં તમારા ફોનનો પોતાનો અવાજ વાપરે છે.';
+
+  @override
+  String get soundPhoneDefault => 'ફોનનો અવાજ';
+
+  @override
+  String get soundGroupCalm => 'શાંત';
+
+  @override
+  String get soundGroupFun => 'મજેદાર';
+
+  @override
+  String get soundChannelGroup => 'રિમાઇન્ડર અવાજો';
+
+  @override
+  String get soundChime => 'ચાઇમ';
+
+  @override
+  String get soundBell => 'ઘંટ';
+
+  @override
+  String get soundMarimba => 'મરિમ્બા';
+
+  @override
+  String get soundDingDong => 'ડિંગ-ડોંગ';
+
+  @override
+  String get soundGlow => 'ઝળહળ';
+
+  @override
+  String get soundBoing => 'બોઇંગ';
+
+  @override
+  String get soundUnlockPop => 'અનલૉક પૉપ';
+
+  @override
+  String get soundBubbles => 'પરપોટા';
+
+  @override
+  String get soundWhistle => 'સીટી';
+
+  @override
+  String get soundTada => 'ટા-ડા';
+
+  @override
+  String get soundXylophone => 'ઝાયલોફોન';
+
+  @override
+  String get soundCoin => 'સિક્કો';
+
+  @override
+  String get soundBoop => 'બૂપ';
+
+  @override
+  String get soundBaDumTss => 'બા-ડુમ-ટ્સ';
+
+  @override
+  String get soundQuack => 'ક્વેક';
+
+  @override
   String get renameCategoryTitle => 'કૅટેગરીનું નામ બદલો';
 
   @override

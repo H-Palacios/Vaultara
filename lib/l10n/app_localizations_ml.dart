@@ -8016,6 +8016,78 @@ class AppLocalizationsMl extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'ഈ റെക്കോർഡ് ചേർത്തയാൾക്കോ വീടിന്റെ ഉടമയ്ക്കോ മാത്രമേ ഇത് ഇല്ലാതാക്കാനാകൂ.';
 
   @override
+  String get reminderSoundTitle => 'ഓർമ്മപ്പെടുത്തൽ ശബ്ദം';
+
+  @override
+  String get reminderSoundHint => 'റെക്കോർഡ് കാലഹരണപ്പെടുന്നതിന് മുമ്പുള്ള ഓർമ്മപ്പെടുത്തലുകൾക്ക് മുഴങ്ങും. കേൾക്കാൻ ശബ്ദത്തിൽ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get urgentSoundTitle => 'അടിയന്തര ശബ്ദം';
+
+  @override
+  String get urgentSoundHint => 'റെക്കോർഡ് കാലഹരണപ്പെട്ടാലോ 7 ദിവസത്തിനകം കാലഹരണപ്പെടുമ്പോഴോ മുഴങ്ങും. കേൾക്കാൻ ശബ്ദത്തിൽ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get reminderSoundNote => 'കാലഹരണപ്പെട്ട റെക്കോർഡുകളും 7 ദിവസത്തിനകം കാലഹരണപ്പെടുന്നവയും നിങ്ങളുടെ അടിയന്തര ശബ്ദം ഉപയോഗിക്കുന്നു. സുരക്ഷാ, വീട്ടിലെ അലേർട്ടുകൾ എപ്പോഴും നിങ്ങളുടെ ഫോണിന്റെ സ്വന്തം ശബ്ദം ഉപയോഗിക്കുന്നു.';
+
+  @override
+  String get soundPhoneDefault => 'ഫോൺ ശബ്ദം';
+
+  @override
+  String get soundGroupCalm => 'ശാന്തം';
+
+  @override
+  String get soundGroupFun => 'രസകരം';
+
+  @override
+  String get soundChannelGroup => 'ഓർമ്മപ്പെടുത്തൽ ശബ്ദങ്ങൾ';
+
+  @override
+  String get soundChime => 'ചൈം';
+
+  @override
+  String get soundBell => 'മണി';
+
+  @override
+  String get soundMarimba => 'മരിംബ';
+
+  @override
+  String get soundDingDong => 'ഡിംഗ്-ഡോംഗ്';
+
+  @override
+  String get soundGlow => 'തിളക്കം';
+
+  @override
+  String get soundBoing => 'ബോയിംഗ്';
+
+  @override
+  String get soundUnlockPop => 'അൺലോക്ക് പോപ്പ്';
+
+  @override
+  String get soundBubbles => 'കുമിളകൾ';
+
+  @override
+  String get soundWhistle => 'വിസിൽ';
+
+  @override
+  String get soundTada => 'ടാ-ഡാ';
+
+  @override
+  String get soundXylophone => 'സൈലോഫോൺ';
+
+  @override
+  String get soundCoin => 'നാണയം';
+
+  @override
+  String get soundBoop => 'ബൂപ്പ്';
+
+  @override
+  String get soundBaDumTss => 'ബാ-ഡും-ട്സ്';
+
+  @override
+  String get soundQuack => 'ക്വാക്ക്';
+
+  @override
   String get renameCategoryTitle => 'വിഭാഗത്തിന്റെ പേര് മാറ്റുക';
 
   @override

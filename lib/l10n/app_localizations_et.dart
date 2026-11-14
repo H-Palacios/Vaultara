@@ -8020,6 +8020,78 @@ class AppLocalizationsEt extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Seda kirjet saab kustutada ainult selle lisaja või leibkonna omanik.';
 
   @override
+  String get reminderSoundTitle => 'Meeldetuletuse heli';
+
+  @override
+  String get reminderSoundHint => 'Kõlab meeldetuletuste puhul enne kirje aegumist. Puuduta heli, et seda kuulda.';
+
+  @override
+  String get urgentSoundTitle => 'Kiireloomuline heli';
+
+  @override
+  String get urgentSoundHint => 'Kõlab, kui kirje on aegunud või aegub 7 päeva jooksul. Puuduta heli, et seda kuulda.';
+
+  @override
+  String get reminderSoundNote => 'Aegunud kirjed ja 7 päeva jooksul aeguvad kirjed kasutavad sinu kiireloomulist heli. Turva- ja leibkonnateated kasutavad alati telefoni enda heli.';
+
+  @override
+  String get soundPhoneDefault => 'Telefoni heli';
+
+  @override
+  String get soundGroupCalm => 'Rahulikud';
+
+  @override
+  String get soundGroupFun => 'Lõbusad';
+
+  @override
+  String get soundChannelGroup => 'Meeldetuletuste helid';
+
+  @override
+  String get soundChime => 'Kõlin';
+
+  @override
+  String get soundBell => 'Kell';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Kuma';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Avamise plõks';
+
+  @override
+  String get soundBubbles => 'Mullid';
+
+  @override
+  String get soundWhistle => 'Vile';
+
+  @override
+  String get soundTada => 'Ta-daa';
+
+  @override
+  String get soundXylophone => 'Ksülofon';
+
+  @override
+  String get soundCoin => 'Münt';
+
+  @override
+  String get soundBoop => 'Buup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Prääks';
+
+  @override
   String get renameCategoryTitle => 'Nimeta kategooria ümber';
 
   @override

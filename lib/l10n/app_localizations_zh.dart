@@ -7958,6 +7958,78 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recordDeleteOnlyCreator => '只有添加此记录的人或家庭所有者可以删除它。';
 
   @override
+  String get reminderSoundTitle => '提醒声音';
+
+  @override
+  String get reminderSoundHint => '在记录到期前的提醒时播放。点按声音即可试听。';
+
+  @override
+  String get urgentSoundTitle => '紧急声音';
+
+  @override
+  String get urgentSoundHint => '在记录已到期或 7 天内到期时播放。点按声音即可试听。';
+
+  @override
+  String get reminderSoundNote => '已到期的记录和 7 天内到期的记录使用你的紧急声音。安全和家庭提醒始终使用手机自带的声音。';
+
+  @override
+  String get soundPhoneDefault => '手机默认';
+
+  @override
+  String get soundGroupCalm => '舒缓';
+
+  @override
+  String get soundGroupFun => '有趣';
+
+  @override
+  String get soundChannelGroup => '提醒声音';
+
+  @override
+  String get soundChime => '风铃';
+
+  @override
+  String get soundBell => '铃声';
+
+  @override
+  String get soundMarimba => '马林巴';
+
+  @override
+  String get soundDingDong => '叮咚';
+
+  @override
+  String get soundGlow => '微光';
+
+  @override
+  String get soundBoing => '啵嘤';
+
+  @override
+  String get soundUnlockPop => '开锁啵';
+
+  @override
+  String get soundBubbles => '泡泡';
+
+  @override
+  String get soundWhistle => '哨子';
+
+  @override
+  String get soundTada => '当当当';
+
+  @override
+  String get soundXylophone => '木琴';
+
+  @override
+  String get soundCoin => '金币';
+
+  @override
+  String get soundBoop => '哔啵';
+
+  @override
+  String get soundBaDumTss => '咚咚锵';
+
+  @override
+  String get soundQuack => '嘎嘎';
+
+  @override
   String get renameCategoryTitle => '重命名类别';
 
   @override
@@ -16787,6 +16859,78 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get recordDeleteOnlyCreator => '只有添加此记录的人或家庭所有者可以删除它。';
 
   @override
+  String get reminderSoundTitle => '提醒声音';
+
+  @override
+  String get reminderSoundHint => '在记录到期前的提醒时播放。点按声音即可试听。';
+
+  @override
+  String get urgentSoundTitle => '紧急声音';
+
+  @override
+  String get urgentSoundHint => '在记录已到期或 7 天内到期时播放。点按声音即可试听。';
+
+  @override
+  String get reminderSoundNote => '已到期的记录和 7 天内到期的记录使用你的紧急声音。安全和家庭提醒始终使用手机自带的声音。';
+
+  @override
+  String get soundPhoneDefault => '手机默认';
+
+  @override
+  String get soundGroupCalm => '舒缓';
+
+  @override
+  String get soundGroupFun => '有趣';
+
+  @override
+  String get soundChannelGroup => '提醒声音';
+
+  @override
+  String get soundChime => '风铃';
+
+  @override
+  String get soundBell => '铃声';
+
+  @override
+  String get soundMarimba => '马林巴';
+
+  @override
+  String get soundDingDong => '叮咚';
+
+  @override
+  String get soundGlow => '微光';
+
+  @override
+  String get soundBoing => '啵嘤';
+
+  @override
+  String get soundUnlockPop => '开锁啵';
+
+  @override
+  String get soundBubbles => '泡泡';
+
+  @override
+  String get soundWhistle => '哨子';
+
+  @override
+  String get soundTada => '当当当';
+
+  @override
+  String get soundXylophone => '木琴';
+
+  @override
+  String get soundCoin => '金币';
+
+  @override
+  String get soundBoop => '哔啵';
+
+  @override
+  String get soundBaDumTss => '咚咚锵';
+
+  @override
+  String get soundQuack => '嘎嘎';
+
+  @override
   String get renameCategoryTitle => '重命名类别';
 
   @override
@@ -25614,6 +25758,78 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get recordDeleteOnlyCreator => '只有新增此記錄的人或家庭擁有者可以刪除它。';
+
+  @override
+  String get reminderSoundTitle => '提醒音效';
+
+  @override
+  String get reminderSoundHint => '在記錄到期前的提醒時播放。點一下音效即可試聽。';
+
+  @override
+  String get urgentSoundTitle => '緊急音效';
+
+  @override
+  String get urgentSoundHint => '在記錄已到期或 7 天內到期時播放。點一下音效即可試聽。';
+
+  @override
+  String get reminderSoundNote => '已到期的記錄和 7 天內到期的記錄使用你的緊急音效。安全和家庭提醒一律使用手機本身的音效。';
+
+  @override
+  String get soundPhoneDefault => '手機預設';
+
+  @override
+  String get soundGroupCalm => '舒緩';
+
+  @override
+  String get soundGroupFun => '有趣';
+
+  @override
+  String get soundChannelGroup => '提醒音效';
+
+  @override
+  String get soundChime => '風鈴';
+
+  @override
+  String get soundBell => '鈴聲';
+
+  @override
+  String get soundMarimba => '馬林巴';
+
+  @override
+  String get soundDingDong => '叮咚';
+
+  @override
+  String get soundGlow => '微光';
+
+  @override
+  String get soundBoing => '啵嚶';
+
+  @override
+  String get soundUnlockPop => '開鎖啵';
+
+  @override
+  String get soundBubbles => '泡泡';
+
+  @override
+  String get soundWhistle => '哨子';
+
+  @override
+  String get soundTada => '鏘鏘';
+
+  @override
+  String get soundXylophone => '木琴';
+
+  @override
+  String get soundCoin => '金幣';
+
+  @override
+  String get soundBoop => '嗶啵';
+
+  @override
+  String get soundBaDumTss => '咚咚鏘';
+
+  @override
+  String get soundQuack => '嘎嘎';
 
   @override
   String get renameCategoryTitle => '重新命名類別';

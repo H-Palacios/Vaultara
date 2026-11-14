@@ -8044,6 +8044,78 @@ class AppLocalizationsEs extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Solo quien añadió este registro, o el propietario del hogar, puede eliminarlo.';
 
   @override
+  String get reminderSoundTitle => 'Sonido del recordatorio';
+
+  @override
+  String get reminderSoundHint => 'Suena en los recordatorios antes de que venza un registro. Toca un sonido para escucharlo.';
+
+  @override
+  String get urgentSoundTitle => 'Sonido urgente';
+
+  @override
+  String get urgentSoundHint => 'Suena cuando un registro ha vencido o vence en 7 días. Toca un sonido para escucharlo.';
+
+  @override
+  String get reminderSoundNote => 'Los registros vencidos y los que vencen en 7 días usan tu sonido urgente. Las alertas de seguridad y del hogar siempre usan el sonido de tu teléfono.';
+
+  @override
+  String get soundPhoneDefault => 'Sonido del teléfono';
+
+  @override
+  String get soundGroupCalm => 'Tranquilos';
+
+  @override
+  String get soundGroupFun => 'Divertidos';
+
+  @override
+  String get soundChannelGroup => 'Sonidos de recordatorio';
+
+  @override
+  String get soundChime => 'Carillón';
+
+  @override
+  String get soundBell => 'Campana';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Din-don';
+
+  @override
+  String get soundGlow => 'Destello';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop de desbloqueo';
+
+  @override
+  String get soundBubbles => 'Burbujas';
+
+  @override
+  String get soundWhistle => 'Silbato';
+
+  @override
+  String get soundTada => 'Ta-chán';
+
+  @override
+  String get soundXylophone => 'Xilófono';
+
+  @override
+  String get soundCoin => 'Moneda';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Cuac';
+
+  @override
   String get renameCategoryTitle => 'Cambiar nombre de la categoría';
 
   @override

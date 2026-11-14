@@ -8069,6 +8069,78 @@ class AppLocalizationsHe extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'רק מי שהוסיף את הרשומה הזו או בעל משק הבית יכולים למחוק אותה.';
 
   @override
+  String get reminderSoundTitle => 'צליל תזכורת';
+
+  @override
+  String get reminderSoundHint => 'מושמע בתזכורות לפני שרשומה פגה. הקישו על צליל כדי לשמוע אותו.';
+
+  @override
+  String get urgentSoundTitle => 'צליל דחוף';
+
+  @override
+  String get urgentSoundHint => 'מושמע כשרשומה פגה או תפוג בתוך 7 ימים. הקישו על צליל כדי לשמוע אותו.';
+
+  @override
+  String get reminderSoundNote => 'רשומות שפג תוקפן ורשומות שיפוגו בתוך 7 ימים משתמשות בצליל הדחוף שלך. התראות אבטחה ומשק בית תמיד משתמשות בצליל של הטלפון.';
+
+  @override
+  String get soundPhoneDefault => 'צליל הטלפון';
+
+  @override
+  String get soundGroupCalm => 'רגועים';
+
+  @override
+  String get soundGroupFun => 'משעשעים';
+
+  @override
+  String get soundChannelGroup => 'צלילי תזכורת';
+
+  @override
+  String get soundChime => 'צלצול';
+
+  @override
+  String get soundBell => 'פעמון';
+
+  @override
+  String get soundMarimba => 'מרימבה';
+
+  @override
+  String get soundDingDong => 'דינג-דונג';
+
+  @override
+  String get soundGlow => 'זוהר';
+
+  @override
+  String get soundBoing => 'בוינג';
+
+  @override
+  String get soundUnlockPop => 'פתיחה ופופ';
+
+  @override
+  String get soundBubbles => 'בועות';
+
+  @override
+  String get soundWhistle => 'משרוקית';
+
+  @override
+  String get soundTada => 'טה-דה';
+
+  @override
+  String get soundXylophone => 'קסילופון';
+
+  @override
+  String get soundCoin => 'מטבע';
+
+  @override
+  String get soundBoop => 'בופ';
+
+  @override
+  String get soundBaDumTss => 'בה-דום-טס';
+
+  @override
+  String get soundQuack => 'קוואק';
+
+  @override
   String get renameCategoryTitle => 'שינוי שם הקטגוריה';
 
   @override

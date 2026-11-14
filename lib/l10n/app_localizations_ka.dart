@@ -8016,6 +8016,78 @@ class AppLocalizationsKa extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'ამ ჩანაწერის წაშლა შეუძლია მხოლოდ მის დამმატებელს ან ოჯახის მფლობელს.';
 
   @override
+  String get reminderSoundTitle => 'შეხსენების ხმა';
+
+  @override
+  String get reminderSoundHint => 'ისმის შეხსენებებზე ჩანაწერის ვადის გასვლამდე. შეეხეთ ხმას მოსასმენად.';
+
+  @override
+  String get urgentSoundTitle => 'სასწრაფო ხმა';
+
+  @override
+  String get urgentSoundHint => 'ისმის, როცა ჩანაწერს ვადა გაუვიდა ან 7 დღეში გასდის. შეეხეთ ხმას მოსასმენად.';
+
+  @override
+  String get reminderSoundNote => 'ვადაგასული ჩანაწერები და 7 დღეში ვადაგასასვლელი ჩანაწერები იყენებს თქვენს სასწრაფო ხმას. უსაფრთხოებისა და ოჯახის შეტყობინებები ყოველთვის ტელეფონის საკუთარ ხმას იყენებს.';
+
+  @override
+  String get soundPhoneDefault => 'ტელეფონის ხმა';
+
+  @override
+  String get soundGroupCalm => 'მშვიდი';
+
+  @override
+  String get soundGroupFun => 'მხიარული';
+
+  @override
+  String get soundChannelGroup => 'შეხსენების ხმები';
+
+  @override
+  String get soundChime => 'ზარუნა';
+
+  @override
+  String get soundBell => 'ზარი';
+
+  @override
+  String get soundMarimba => 'მარიმბა';
+
+  @override
+  String get soundDingDong => 'დინგ-დონგ';
+
+  @override
+  String get soundGlow => 'ნათება';
+
+  @override
+  String get soundBoing => 'ბოინგ';
+
+  @override
+  String get soundUnlockPop => 'გაღების პოპი';
+
+  @override
+  String get soundBubbles => 'ბუშტები';
+
+  @override
+  String get soundWhistle => 'სასტვენი';
+
+  @override
+  String get soundTada => 'ტა-და';
+
+  @override
+  String get soundXylophone => 'ქსილოფონი';
+
+  @override
+  String get soundCoin => 'მონეტა';
+
+  @override
+  String get soundBoop => 'ბუპ';
+
+  @override
+  String get soundBaDumTss => 'ბა-დუმ-ტს';
+
+  @override
+  String get soundQuack => 'კრიახ';
+
+  @override
   String get renameCategoryTitle => 'კატეგორიის გადარქმევა';
 
   @override

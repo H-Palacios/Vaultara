@@ -8016,6 +8016,78 @@ class AppLocalizationsKk extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Бұл жазбаны оны қосқан адам немесе отбасы иесі ғана жоя алады.';
 
   @override
+  String get reminderSoundTitle => 'Еске салу дыбысы';
+
+  @override
+  String get reminderSoundHint => 'Жазбаның мерзімі біткенге дейінгі еске салуларда ойнайды. Тыңдау үшін дыбысты түртіңіз.';
+
+  @override
+  String get urgentSoundTitle => 'Шұғыл дыбыс';
+
+  @override
+  String get urgentSoundHint => 'Жазбаның мерзімі біткенде немесе 7 күн ішінде біткенде ойнайды. Тыңдау үшін дыбысты түртіңіз.';
+
+  @override
+  String get reminderSoundNote => 'Мерзімі біткен және 7 күн ішінде бітетін жазбалар шұғыл дыбысыңызды пайдаланады. Қауіпсіздік және отбасы хабарландырулары әрдайым телефонның өз дыбысын пайдаланады.';
+
+  @override
+  String get soundPhoneDefault => 'Телефон дыбысы';
+
+  @override
+  String get soundGroupCalm => 'Байсалды';
+
+  @override
+  String get soundGroupFun => 'Көңілді';
+
+  @override
+  String get soundChannelGroup => 'Еске салу дыбыстары';
+
+  @override
+  String get soundChime => 'Сыңғыр';
+
+  @override
+  String get soundBell => 'Қоңырау';
+
+  @override
+  String get soundMarimba => 'Маримба';
+
+  @override
+  String get soundDingDong => 'Дің-дон';
+
+  @override
+  String get soundGlow => 'Жарқыл';
+
+  @override
+  String get soundBoing => 'Боинг';
+
+  @override
+  String get soundUnlockPop => 'Ашылу попы';
+
+  @override
+  String get soundBubbles => 'Көпіршіктер';
+
+  @override
+  String get soundWhistle => 'Ысқырық';
+
+  @override
+  String get soundTada => 'Та-да';
+
+  @override
+  String get soundXylophone => 'Ксилофон';
+
+  @override
+  String get soundCoin => 'Тиын';
+
+  @override
+  String get soundBoop => 'Буп';
+
+  @override
+  String get soundBaDumTss => 'Ба-дум-тсс';
+
+  @override
+  String get soundQuack => 'Бақ-бақ';
+
+  @override
   String get renameCategoryTitle => 'Санат атауын өзгерту';
 
   @override

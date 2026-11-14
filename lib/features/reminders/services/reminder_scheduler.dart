@@ -26,6 +26,11 @@ import 'package:vaultara/core/navigation/navigator_key.dart';
 import 'package:vaultara/features/reminders/logic/reminder_plan.dart';
 import 'package:vaultara/features/reminders/logic/reminder_timing.dart';
 import 'package:vaultara/features/reminders/services/notification_prefs.dart';
+import 'package:vaultara/features/reminders/logic/reminder_sounds.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_channels.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_details.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_prefs.dart';
+import 'package:vaultara/features/reminders/view/reminder_sound_names.dart';
 
 class ReminderScheduler {
   static final FlutterLocalNotificationsPlugin _plugin =
@@ -41,12 +46,15 @@ class ReminderScheduler {
   static NotificationDetails _detailsFor(
     AppLocalizations loc, {
     required bool withActions,
+    String sound = ReminderSounds.phoneDefault,
   }) {
+    final custom = ReminderSoundDetails.isCustom(sound);
     return NotificationDetails(
       android: AndroidNotificationDetails(
-        kNotificationChannelId,
-        loc.notifChannelName,
+        ReminderSoundDetails.channelId(sound),
+        custom ? ReminderSoundNames.of(loc, sound) : loc.notifChannelName,
         channelDescription: loc.notifChannelDescription,
+        sound: ReminderSoundDetails.android(sound),
         importance: Importance.high,
         priority: Priority.high,
         icon: _kNotificationIcon,
@@ -71,6 +79,7 @@ class ReminderScheduler {
       ),
       iOS: DarwinNotificationDetails(
         categoryIdentifier: withActions ? _kIosActionsCategory : null,
+        sound: ReminderSoundDetails.ios(sound),
       ),
     );
   }
@@ -323,6 +332,7 @@ class ReminderScheduler {
       return;
     }
     await localiseChannel(loc);
+    await ReminderSoundChannels.prepare(loc);
 
     var plan = planFor(item);
     if (maxSteps != null && plan.length > maxSteps) {
@@ -334,7 +344,11 @@ class ReminderScheduler {
         ? firstName!.trim()
         : UserName.first;
     final person = PeopleRepository.byId(item.holderId)?.name;
-    final details = _detailsFor(loc, withActions: item.id != null);
+    final details = <String, NotificationDetails>{};
+    NotificationDetails detailsFor(String sound) => details.putIfAbsent(
+      sound,
+      () => _detailsFor(loc, withActions: item.id != null, sound: sound),
+    );
     final at = await ReminderTimeService.getTime();
     final now = DateTime.now();
     final log = await _todayLog(now);
@@ -375,7 +389,7 @@ class ReminderScheduler {
         text.title,
         text.body,
         tz.TZDateTime.from(fire, tz.local),
-        details,
+        detailsFor(ReminderSoundPrefs.forDaysLeft(step.offsetDays)),
         payload: item.id == null
             ? null
             : encodeNotificationPayload(
@@ -387,6 +401,7 @@ class ReminderScheduler {
                 snoozeLabel: loc.notificationActionTomorrow,
                 hour: at.hour,
                 minute: at.minute,
+                sound: ReminderSoundPrefs.effectiveUrgent,
               ),
         androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
         uiLocalNotificationDateInterpretation:
@@ -428,11 +443,16 @@ class ReminderScheduler {
     await init();
     if (!await ensurePermissions()) return false;
     await localiseChannel(loc);
+    await ReminderSoundChannels.prepare(loc);
     await _plugin.show(
       kTestNotificationId,
       loc.notifTestTitle,
       loc.notifTestBody,
-      _detailsFor(loc, withActions: false),
+      _detailsFor(
+        loc,
+        withActions: false,
+        sound: ReminderSoundPrefs.reminder,
+      ),
     );
     return true;
   }
@@ -489,13 +509,17 @@ class ReminderScheduler {
     );
     final title = text.title;
     final body = text.body;
+    await ReminderSoundChannels.prepare(loc);
+    final sound = ReminderSoundPrefs.forDaysLeft(
+      Dates.daysBetween(Dates.only(fire), item.expiryDate),
+    );
 
     await _plugin.zonedSchedule(
       _id(item.reminderBaseId, _snoozeSlot),
       title,
       body,
       tz.TZDateTime.from(fire, tz.local),
-      _detailsFor(loc, withActions: item.id != null),
+      _detailsFor(loc, withActions: item.id != null, sound: sound),
       payload: item.id == null
           ? null
           : encodeNotificationPayload(
@@ -507,6 +531,7 @@ class ReminderScheduler {
               snoozeLabel: loc.notificationActionTomorrow,
               hour: at.hour,
               minute: at.minute,
+              sound: ReminderSoundPrefs.effectiveUrgent,
             ),
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
       uiLocalNotificationDateInterpretation:

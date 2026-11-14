@@ -8020,6 +8020,78 @@ class AppLocalizationsGl extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Só quen engadiu este rexistro, ou o propietario do fogar, pode eliminalo.';
 
   @override
+  String get reminderSoundTitle => 'Son do recordatorio';
+
+  @override
+  String get reminderSoundHint => 'Soa nos recordatorios antes de que caduque un rexistro. Toca un son para escoitalo.';
+
+  @override
+  String get urgentSoundTitle => 'Son urxente';
+
+  @override
+  String get urgentSoundHint => 'Soa cando un rexistro caducou ou caduca en 7 días. Toca un son para escoitalo.';
+
+  @override
+  String get reminderSoundNote => 'Os rexistros caducados e os que caducan en 7 días usan o teu son urxente. As alertas de seguridade e do fogar sempre usan o son do teu teléfono.';
+
+  @override
+  String get soundPhoneDefault => 'Son do teléfono';
+
+  @override
+  String get soundGroupCalm => 'Tranquilos';
+
+  @override
+  String get soundGroupFun => 'Divertidos';
+
+  @override
+  String get soundChannelGroup => 'Sons dos recordatorios';
+
+  @override
+  String get soundChime => 'Carrillón';
+
+  @override
+  String get soundBell => 'Campá';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Din-don';
+
+  @override
+  String get soundGlow => 'Brillo';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop de desbloqueo';
+
+  @override
+  String get soundBubbles => 'Burbullas';
+
+  @override
+  String get soundWhistle => 'Asubío';
+
+  @override
+  String get soundTada => 'Ta-chán';
+
+  @override
+  String get soundXylophone => 'Xilófono';
+
+  @override
+  String get soundCoin => 'Moeda';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Cuac';
+
+  @override
   String get renameCategoryTitle => 'Cambiar o nome da categoría';
 
   @override

@@ -8010,6 +8010,78 @@ class AppLocalizationsFil extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Ang nagdagdag lang ng rekord na ito, o ang may-ari ng sambahayan, ang puwedeng magbura nito.';
 
   @override
+  String get reminderSoundTitle => 'Tunog ng paalala';
+
+  @override
+  String get reminderSoundHint => 'Tumutunog para sa mga paalala bago mag-expire ang rekord. I-tap ang tunog para marinig.';
+
+  @override
+  String get urgentSoundTitle => 'Tunog na apurahan';
+
+  @override
+  String get urgentSoundHint => 'Tumutunog kapag nag-expire na ang rekord o mag-e-expire sa loob ng 7 araw. I-tap ang tunog para marinig.';
+
+  @override
+  String get reminderSoundNote => 'Ang mga expired na rekord at ang mag-e-expire sa loob ng 7 araw ay gumagamit ng tunog mo na apurahan. Ang mga alerto sa seguridad at sambahayan ay laging gumagamit ng sariling tunog ng telepono mo.';
+
+  @override
+  String get soundPhoneDefault => 'Tunog ng telepono';
+
+  @override
+  String get soundGroupCalm => 'Kalmado';
+
+  @override
+  String get soundGroupFun => 'Masaya';
+
+  @override
+  String get soundChannelGroup => 'Mga tunog ng paalala';
+
+  @override
+  String get soundChime => 'Chime';
+
+  @override
+  String get soundBell => 'Kampana';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Liwanag';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Unlock pop';
+
+  @override
+  String get soundBubbles => 'Mga bula';
+
+  @override
+  String get soundWhistle => 'Silbato';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Xylophone';
+
+  @override
+  String get soundCoin => 'Barya';
+
+  @override
+  String get soundBoop => 'Boop';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Palitan ang pangalan ng kategorya';
 
   @override

@@ -7956,6 +7956,78 @@ class AppLocalizationsMy extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'ဤမှတ်တမ်းကို ထည့်ခဲ့သူ သို့မဟုတ် အိမ်ထောင်စုပိုင်ရှင်သာ ဖျက်နိုင်သည်။';
 
   @override
+  String get reminderSoundTitle => 'သတိပေးချက် အသံ';
+
+  @override
+  String get reminderSoundHint => 'မှတ်တမ်း သက်တမ်းမကုန်မီ သတိပေးချက်များအတွက် မြည်သည်။ နားထောင်ရန် အသံကို တို့ပါ။';
+
+  @override
+  String get urgentSoundTitle => 'အရေးပေါ် အသံ';
+
+  @override
+  String get urgentSoundHint => 'မှတ်တမ်း သက်တမ်းကုန်သွားသည့်အခါ သို့မဟုတ် ရက် 7 အတွင်း ကုန်မည့်အခါ မြည်သည်။ နားထောင်ရန် အသံကို တို့ပါ။';
+
+  @override
+  String get reminderSoundNote => 'သက်တမ်းကုန်ပြီးသော မှတ်တမ်းများနှင့် ရက် 7 အတွင်း ကုန်မည့် မှတ်တမ်းများသည် သင့်အရေးပေါ်အသံကို သုံးသည်။ လုံခြုံရေးနှင့် အိမ်ထောင်စု သတိပေးချက်များသည် သင့်ဖုန်း၏ ကိုယ်ပိုင်အသံကို အမြဲသုံးသည်။';
+
+  @override
+  String get soundPhoneDefault => 'ဖုန်းအသံ';
+
+  @override
+  String get soundGroupCalm => 'တည်ငြိမ်';
+
+  @override
+  String get soundGroupFun => 'ပျော်စရာ';
+
+  @override
+  String get soundChannelGroup => 'သတိပေးချက် အသံများ';
+
+  @override
+  String get soundChime => 'ချိုင်း';
+
+  @override
+  String get soundBell => 'ခေါင်းလောင်း';
+
+  @override
+  String get soundMarimba => 'မာရင်ဘာ';
+
+  @override
+  String get soundDingDong => 'ဒင်-ဒေါင်';
+
+  @override
+  String get soundGlow => 'အလင်း';
+
+  @override
+  String get soundBoing => 'ဘွိုင်း';
+
+  @override
+  String get soundUnlockPop => 'သော့ဖွင့် ပေါက်';
+
+  @override
+  String get soundBubbles => 'ပူဖောင်းများ';
+
+  @override
+  String get soundWhistle => 'ခရာ';
+
+  @override
+  String get soundTada => 'တာ-ဒါ';
+
+  @override
+  String get soundXylophone => 'ပတ္တလား';
+
+  @override
+  String get soundCoin => 'အကြွေစေ့';
+
+  @override
+  String get soundBoop => 'ဘူး';
+
+  @override
+  String get soundBaDumTss => 'ဘာ-ဒမ်-တ်စ်';
+
+  @override
+  String get soundQuack => 'ဘဲအော်';
+
+  @override
   String get renameCategoryTitle => 'အမျိုးအစားအမည် ပြောင်းရန်';
 
   @override

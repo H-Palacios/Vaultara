@@ -8160,6 +8160,78 @@ class AppLocalizationsLt extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Ištrinti šį įrašą gali tik jį pridėjęs asmuo arba namų ūkio savininkas.';
 
   @override
+  String get reminderSoundTitle => 'Priminimo garsas';
+
+  @override
+  String get reminderSoundHint => 'Skamba priminimuose prieš baigiantis įrašo galiojimui. Bakstelėkite garsą, kad išgirstumėte.';
+
+  @override
+  String get urgentSoundTitle => 'Skubus garsas';
+
+  @override
+  String get urgentSoundHint => 'Skamba, kai įrašo galiojimas baigėsi arba baigsis per 7 dienas. Bakstelėkite garsą, kad išgirstumėte.';
+
+  @override
+  String get reminderSoundNote => 'Pasibaigę įrašai ir įrašai, kurių galiojimas baigsis per 7 dienas, naudoja jūsų skubų garsą. Saugos ir namų ūkio įspėjimai visada naudoja telefono garsą.';
+
+  @override
+  String get soundPhoneDefault => 'Telefono garsas';
+
+  @override
+  String get soundGroupCalm => 'Ramūs';
+
+  @override
+  String get soundGroupFun => 'Linksmi';
+
+  @override
+  String get soundChannelGroup => 'Priminimų garsai';
+
+  @override
+  String get soundChime => 'Skambalėliai';
+
+  @override
+  String get soundBell => 'Varpas';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Din-don';
+
+  @override
+  String get soundGlow => 'Švytėjimas';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Atrakinimo pop';
+
+  @override
+  String get soundBubbles => 'Burbulai';
+
+  @override
+  String get soundWhistle => 'Švilpukas';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Ksilofonas';
+
+  @override
+  String get soundCoin => 'Moneta';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Krykt';
+
+  @override
   String get renameCategoryTitle => 'Pervadinti kategoriją';
 
   @override

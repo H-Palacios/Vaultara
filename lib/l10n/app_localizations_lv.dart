@@ -8083,6 +8083,78 @@ class AppLocalizationsLv extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Dzēst šo ierakstu var tikai tā pievienotājs vai mājsaimniecības īpašnieks.';
 
   @override
+  String get reminderSoundTitle => 'Atgādinājuma skaņa';
+
+  @override
+  String get reminderSoundHint => 'Skan atgādinājumos pirms ieraksta termiņa beigām. Pieskarieties skaņai, lai to dzirdētu.';
+
+  @override
+  String get urgentSoundTitle => 'Steidzamā skaņa';
+
+  @override
+  String get urgentSoundHint => 'Skan, kad ieraksta termiņš ir beidzies vai beigsies 7 dienu laikā. Pieskarieties skaņai, lai to dzirdētu.';
+
+  @override
+  String get reminderSoundNote => 'Beigušies ieraksti un ieraksti, kuru termiņš beigsies 7 dienu laikā, izmanto jūsu steidzamo skaņu. Drošības un mājsaimniecības brīdinājumi vienmēr izmanto tālruņa skaņu.';
+
+  @override
+  String get soundPhoneDefault => 'Tālruņa skaņa';
+
+  @override
+  String get soundGroupCalm => 'Mierīgas';
+
+  @override
+  String get soundGroupFun => 'Jautras';
+
+  @override
+  String get soundChannelGroup => 'Atgādinājumu skaņas';
+
+  @override
+  String get soundChime => 'Zvaniņi';
+
+  @override
+  String get soundBell => 'Zvans';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Mirdzums';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Atslēgšanas pop';
+
+  @override
+  String get soundBubbles => 'Burbuļi';
+
+  @override
+  String get soundWhistle => 'Svilpe';
+
+  @override
+  String get soundTada => 'Ta-dā';
+
+  @override
+  String get soundXylophone => 'Ksilofons';
+
+  @override
+  String get soundCoin => 'Monēta';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Pēk';
+
+  @override
   String get renameCategoryTitle => 'Pārdēvēt kategoriju';
 
   @override

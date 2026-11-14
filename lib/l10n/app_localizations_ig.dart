@@ -7964,6 +7964,78 @@ class AppLocalizationsIg extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Naanị onye tinyere ndekọ a, ma ọ bụ onye nwe ezinụlọ, nwere ike ihichapụ ya.';
 
   @override
+  String get reminderSoundTitle => 'Ụda ncheta';
+
+  @override
+  String get reminderSoundHint => 'Na-akpọ maka ncheta tupu ndekọ agwụ. Pịa ụda iji nụ ya.';
+
+  @override
+  String get urgentSoundTitle => 'Ụda ngwa ngwa';
+
+  @override
+  String get urgentSoundHint => 'Na-akpọ mgbe ndekọ agwụla ma ọ bụ ga-agwụ n’ime ụbọchị 7. Pịa ụda iji nụ ya.';
+
+  @override
+  String get reminderSoundNote => 'Ndekọ gwụrụ agwụ na ndị ga-agwụ n’ime ụbọchị 7 na-eji ụda ngwa ngwa gị. Ọkwa nchekwa na nke ezinụlọ na-eji ụda ekwentị gị mgbe niile.';
+
+  @override
+  String get soundPhoneDefault => 'Ụda ekwentị';
+
+  @override
+  String get soundGroupCalm => 'Nwayọọ';
+
+  @override
+  String get soundGroupFun => 'Egwuregwu';
+
+  @override
+  String get soundChannelGroup => 'Ụda ncheta';
+
+  @override
+  String get soundChime => 'Mgbịrịgba nta';
+
+  @override
+  String get soundBell => 'Mgbịrịgba';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Nchapụta';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Mmeghe na pop';
+
+  @override
+  String get soundBubbles => 'Afụfụ';
+
+  @override
+  String get soundWhistle => 'Opi';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Ngedegwu';
+
+  @override
+  String get soundCoin => 'Mkpụrụ ego';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Gbanwee aha ụdị';
 
   @override

@@ -15,6 +15,10 @@ import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/platform/background_notification_actions.dart';
 import 'package:vaultara/features/reminders/logic/reminder_offsets.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_channels.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_details.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_prefs.dart';
+import 'package:vaultara/features/reminders/view/reminder_sound_names.dart';
 import 'package:vaultara/features/reminders/services/push_router.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
@@ -225,20 +229,27 @@ class DailyDigestService {
     return (loc.dailyDigestTitle(due.length), body);
   }
 
-  static NotificationDetails _details(AppLocalizations loc, String body) =>
-      NotificationDetails(
+  static NotificationDetails _details(
+    AppLocalizations loc,
+    String body,
+    String sound,
+  ) => NotificationDetails(
         android: AndroidNotificationDetails(
-          kNotificationChannelId,
-          loc.notifChannelName,
+          ReminderSoundDetails.channelId(sound),
+          ReminderSoundDetails.isCustom(sound)
+              ? ReminderSoundNames.of(loc, sound)
+              : loc.notifChannelName,
           channelDescription: loc.notifChannelDescription,
+          sound: ReminderSoundDetails.android(sound),
           importance: Importance.high,
           priority: Priority.high,
           icon: kNotificationIcon,
           visibility: NotificationVisibility.private,
           styleInformation: BigTextStyleInformation(body),
         ),
-        iOS: const DarwinNotificationDetails(
+        iOS: DarwinNotificationDetails(
           threadIdentifier: 'vaultara-digest',
+          sound: ReminderSoundDetails.ios(sound),
         ),
       );
 
@@ -249,12 +260,17 @@ class DailyDigestService {
     DateTime fire,
   ) async {
     final text = _text(loc, due);
+    await ReminderSoundChannels.prepare(loc);
+    final day = Dates.only(fire);
+    final soonest = due
+        .map((record) => Dates.daysBetween(day, record.expiryDate))
+        .fold<int>(1 << 30, (a, b) => a < b ? a : b);
     await _plugin.zonedSchedule(
       id,
       text.$1,
       text.$2,
       tz.TZDateTime.from(fire, tz.local),
-      _details(loc, text.$2),
+      _details(loc, text.$2, ReminderSoundPrefs.forDaysLeft(soonest)),
       payload: PushRouter.homePayload,
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
       uiLocalNotificationDateInterpretation:

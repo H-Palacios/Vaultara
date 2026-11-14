@@ -8016,6 +8016,78 @@ class AppLocalizationsPa extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'ਇਹ ਰਿਕਾਰਡ ਸਿਰਫ਼ ਇਸਨੂੰ ਜੋੜਨ ਵਾਲਾ ਵਿਅਕਤੀ ਜਾਂ ਘਰ ਦਾ ਮਾਲਕ ਹੀ ਮਿਟਾ ਸਕਦਾ ਹੈ।';
 
   @override
+  String get reminderSoundTitle => 'ਰਿਮਾਈਂਡਰ ਦੀ ਆਵਾਜ਼';
+
+  @override
+  String get reminderSoundHint => 'ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਦੇ ਰਿਮਾਈਂਡਰਾਂ ਲਈ ਵੱਜਦੀ ਹੈ। ਸੁਣਨ ਲਈ ਆਵਾਜ਼ ’ਤੇ ਟੈਪ ਕਰੋ।';
+
+  @override
+  String get urgentSoundTitle => 'ਜ਼ਰੂਰੀ ਆਵਾਜ਼';
+
+  @override
+  String get urgentSoundHint => 'ਜਦੋਂ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗ ਗਈ ਹੋਵੇ ਜਾਂ 7 ਦਿਨਾਂ ਵਿੱਚ ਪੁੱਗ ਰਹੀ ਹੋਵੇ ਤਾਂ ਵੱਜਦੀ ਹੈ। ਸੁਣਨ ਲਈ ਆਵਾਜ਼ ’ਤੇ ਟੈਪ ਕਰੋ।';
+
+  @override
+  String get reminderSoundNote => 'ਮਿਆਦ ਪੁੱਗ ਚੁੱਕੇ ਰਿਕਾਰਡ ਅਤੇ 7 ਦਿਨਾਂ ਵਿੱਚ ਪੁੱਗਣ ਵਾਲੇ ਰਿਕਾਰਡ ਤੁਹਾਡੀ ਜ਼ਰੂਰੀ ਆਵਾਜ਼ ਵਰਤਦੇ ਹਨ। ਸੁਰੱਖਿਆ ਅਤੇ ਘਰ ਦੀਆਂ ਸੂਚਨਾਵਾਂ ਹਮੇਸ਼ਾਂ ਤੁਹਾਡੇ ਫ਼ੋਨ ਦੀ ਆਪਣੀ ਆਵਾਜ਼ ਵਰਤਦੀਆਂ ਹਨ।';
+
+  @override
+  String get soundPhoneDefault => 'ਫ਼ੋਨ ਦੀ ਆਵਾਜ਼';
+
+  @override
+  String get soundGroupCalm => 'ਸ਼ਾਂਤ';
+
+  @override
+  String get soundGroupFun => 'ਮਜ਼ੇਦਾਰ';
+
+  @override
+  String get soundChannelGroup => 'ਰਿਮਾਈਂਡਰ ਦੀਆਂ ਆਵਾਜ਼ਾਂ';
+
+  @override
+  String get soundChime => 'ਚਾਈਮ';
+
+  @override
+  String get soundBell => 'ਘੰਟੀ';
+
+  @override
+  String get soundMarimba => 'ਮਰਿੰਬਾ';
+
+  @override
+  String get soundDingDong => 'ਡਿੰਗ-ਡੌਂਗ';
+
+  @override
+  String get soundGlow => 'ਚਮਕ';
+
+  @override
+  String get soundBoing => 'ਬੋਇੰਗ';
+
+  @override
+  String get soundUnlockPop => 'ਅਨਲੌਕ ਪੌਪ';
+
+  @override
+  String get soundBubbles => 'ਬੁਲਬੁਲੇ';
+
+  @override
+  String get soundWhistle => 'ਸੀਟੀ';
+
+  @override
+  String get soundTada => 'ਟਾ-ਡਾ';
+
+  @override
+  String get soundXylophone => 'ਜ਼ਾਈਲੋਫ਼ੋਨ';
+
+  @override
+  String get soundCoin => 'ਸਿੱਕਾ';
+
+  @override
+  String get soundBoop => 'ਬੂਪ';
+
+  @override
+  String get soundBaDumTss => 'ਬਾ-ਡੁਮ-ਟਸ';
+
+  @override
+  String get soundQuack => 'ਕੁਐਕ';
+
+  @override
   String get renameCategoryTitle => 'ਸ਼੍ਰੇਣੀ ਦਾ ਨਾਮ ਬਦਲੋ';
 
   @override

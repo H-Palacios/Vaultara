@@ -8015,6 +8015,78 @@ class AppLocalizationsIs extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Aðeins sá sem bætti þessari færslu við, eða eigandi heimilisins, getur eytt henni.';
 
   @override
+  String get reminderSoundTitle => 'Áminningarhljóð';
+
+  @override
+  String get reminderSoundHint => 'Spilast fyrir áminningar áður en færsla rennur út. Ýttu á hljóð til að heyra það.';
+
+  @override
+  String get urgentSoundTitle => 'Áríðandi hljóð';
+
+  @override
+  String get urgentSoundHint => 'Spilast þegar færsla er útrunnin eða rennur út innan 7 daga. Ýttu á hljóð til að heyra það.';
+
+  @override
+  String get reminderSoundNote => 'Útrunnar færslur og færslur sem renna út innan 7 daga nota áríðandi hljóðið þitt. Öryggis- og heimilisviðvaranir nota alltaf hljóð símans.';
+
+  @override
+  String get soundPhoneDefault => 'Hljóð símans';
+
+  @override
+  String get soundGroupCalm => 'Róleg';
+
+  @override
+  String get soundGroupFun => 'Skemmtileg';
+
+  @override
+  String get soundChannelGroup => 'Áminningarhljóð';
+
+  @override
+  String get soundChime => 'Klukknaspil';
+
+  @override
+  String get soundBell => 'Bjalla';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Ljómi';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Opnunarpopp';
+
+  @override
+  String get soundBubbles => 'Loftbólur';
+
+  @override
+  String get soundWhistle => 'Flauta';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Sílófónn';
+
+  @override
+  String get soundCoin => 'Mynt';
+
+  @override
+  String get soundBoop => 'Búp';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Bra';
+
+  @override
   String get renameCategoryTitle => 'Endurnefna flokk';
 
   @override

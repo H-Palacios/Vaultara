@@ -8167,6 +8167,78 @@ class AppLocalizationsUk extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Видалити цей запис може лише той, хто його додав, або власник родини.';
 
   @override
+  String get reminderSoundTitle => 'Звук нагадування';
+
+  @override
+  String get reminderSoundHint => 'Звучить у нагадуваннях до завершення терміну запису. Торкніться звуку, щоб послухати.';
+
+  @override
+  String get urgentSoundTitle => 'Терміновий звук';
+
+  @override
+  String get urgentSoundHint => 'Звучить, коли термін запису минув або спливає протягом 7 днів. Торкніться звуку, щоб послухати.';
+
+  @override
+  String get reminderSoundNote => 'Прострочені записи та записи, термін яких спливає протягом 7 днів, використовують терміновий звук. Сповіщення про безпеку та родину завжди використовують звук самого телефона.';
+
+  @override
+  String get soundPhoneDefault => 'Звук телефона';
+
+  @override
+  String get soundGroupCalm => 'Спокійні';
+
+  @override
+  String get soundGroupFun => 'Веселі';
+
+  @override
+  String get soundChannelGroup => 'Звуки нагадувань';
+
+  @override
+  String get soundChime => 'Дзвіночки';
+
+  @override
+  String get soundBell => 'Дзвін';
+
+  @override
+  String get soundMarimba => 'Маримба';
+
+  @override
+  String get soundDingDong => 'Дінь-дон';
+
+  @override
+  String get soundGlow => 'Сяйво';
+
+  @override
+  String get soundBoing => 'Бойнг';
+
+  @override
+  String get soundUnlockPop => 'Клацання замка';
+
+  @override
+  String get soundBubbles => 'Бульбашки';
+
+  @override
+  String get soundWhistle => 'Свисток';
+
+  @override
+  String get soundTada => 'Та-да';
+
+  @override
+  String get soundXylophone => 'Ксилофон';
+
+  @override
+  String get soundCoin => 'Монетка';
+
+  @override
+  String get soundBoop => 'Біп-буп';
+
+  @override
+  String get soundBaDumTss => 'Ба-дум-тсс';
+
+  @override
+  String get soundQuack => 'Кря';
+
+  @override
   String get renameCategoryTitle => 'Перейменувати категорію';
 
   @override

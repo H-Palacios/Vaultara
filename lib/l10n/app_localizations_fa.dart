@@ -8016,6 +8016,78 @@ class AppLocalizationsFa extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'فقط کسی که این مورد را افزوده یا مالک خانواده می‌تواند آن را حذف کند.';
 
   @override
+  String get reminderSoundTitle => 'صدای یادآور';
+
+  @override
+  String get reminderSoundHint => 'برای یادآورهای پیش از انقضای مورد پخش می‌شود. برای شنیدن روی صدا بزنید.';
+
+  @override
+  String get urgentSoundTitle => 'صدای فوری';
+
+  @override
+  String get urgentSoundHint => 'وقتی موردی منقضی شده یا ظرف ۷ روز منقضی می‌شود پخش می‌شود. برای شنیدن روی صدا بزنید.';
+
+  @override
+  String get reminderSoundNote => 'موارد منقضی‌شده و مواردی که ظرف ۷ روز منقضی می‌شوند از صدای فوری شما استفاده می‌کنند. هشدارهای امنیتی و خانوادگی همیشه از صدای خود گوشی استفاده می‌کنند.';
+
+  @override
+  String get soundPhoneDefault => 'صدای گوشی';
+
+  @override
+  String get soundGroupCalm => 'آرام';
+
+  @override
+  String get soundGroupFun => 'سرگرم‌کننده';
+
+  @override
+  String get soundChannelGroup => 'صداهای یادآور';
+
+  @override
+  String get soundChime => 'زنگوله';
+
+  @override
+  String get soundBell => 'زنگ';
+
+  @override
+  String get soundMarimba => 'ماریمبا';
+
+  @override
+  String get soundDingDong => 'دینگ دانگ';
+
+  @override
+  String get soundGlow => 'درخشش';
+
+  @override
+  String get soundBoing => 'بوینگ';
+
+  @override
+  String get soundUnlockPop => 'باز شدن و پاپ';
+
+  @override
+  String get soundBubbles => 'حباب‌ها';
+
+  @override
+  String get soundWhistle => 'سوت';
+
+  @override
+  String get soundTada => 'تا-دا';
+
+  @override
+  String get soundXylophone => 'زیلوفون';
+
+  @override
+  String get soundCoin => 'سکه';
+
+  @override
+  String get soundBoop => 'بوپ';
+
+  @override
+  String get soundBaDumTss => 'با-دام-تس';
+
+  @override
+  String get soundQuack => 'کواک';
+
+  @override
   String get renameCategoryTitle => 'تغییر نام دسته';
 
   @override

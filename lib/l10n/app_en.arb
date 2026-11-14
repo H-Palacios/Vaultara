@@ -9745,6 +9745,102 @@
   "@recordDeleteOnlyCreator": {
     "description": "Shown when a household member tries to delete a shared record someone else added"
   },
+  "reminderSoundTitle": "Reminder sound",
+  "@reminderSoundTitle": {
+    "description": "Notifications settings: the sound that plays for reminders. Also the title of the sound picker."
+  },
+  "reminderSoundHint": "Plays for reminders before a record expires. Tap a sound to hear it.",
+  "@reminderSoundHint": {
+    "description": "Shown at the top of the reminder sound picker."
+  },
+  "urgentSoundTitle": "Urgent sound",
+  "@urgentSoundTitle": {
+    "description": "Notifications settings: the calm sound used for expired records and records due within 7 days when a fun reminder sound is picked."
+  },
+  "urgentSoundHint": "Plays when a record has expired or is due within 7 days. Tap a sound to hear it.",
+  "@urgentSoundHint": {
+    "description": "Shown at the top of the urgent sound picker."
+  },
+  "reminderSoundNote": "Expired records and records due within 7 days use your urgent sound. Security and household alerts always use your phone’s own sound.",
+  "@reminderSoundNote": {
+    "description": "Shown under the reminder sound when a fun sound is picked. Keep it complete; it wraps onto more lines."
+  },
+  "soundPhoneDefault": "Phone default",
+  "@soundPhoneDefault": {
+    "description": "Sound option: the phone’s own notification sound."
+  },
+  "soundGroupCalm": "Calm",
+  "@soundGroupCalm": {
+    "description": "Heading above the calm sounds in the sound picker."
+  },
+  "soundGroupFun": "Fun",
+  "@soundGroupFun": {
+    "description": "Heading above the playful sounds in the sound picker."
+  },
+  "soundChannelGroup": "Reminder sounds",
+  "@soundChannelGroup": {
+    "description": "Android shows this as the group name of Vaultara’s sound channels in the phone’s notification settings."
+  },
+  "soundChime": "Chime",
+  "@soundChime": {
+    "description": "Sound name: two soft rising notes."
+  },
+  "soundBell": "Bell",
+  "@soundBell": {
+    "description": "Sound name: one soft bell."
+  },
+  "soundMarimba": "Marimba",
+  "@soundMarimba": {
+    "description": "Sound name: two wooden marimba notes."
+  },
+  "soundDingDong": "Ding-dong",
+  "@soundDingDong": {
+    "description": "Sound name: a gentle doorbell."
+  },
+  "soundGlow": "Glow",
+  "@soundGlow": {
+    "description": "Sound name: a soft chord that fades out."
+  },
+  "soundBoing": "Boing",
+  "@soundBoing": {
+    "description": "Sound name: a cartoon spring."
+  },
+  "soundUnlockPop": "Unlock pop",
+  "@soundUnlockPop": {
+    "description": "Sound name: a lock clicking open, then a happy pop."
+  },
+  "soundBubbles": "Bubbles",
+  "@soundBubbles": {
+    "description": "Sound name: three rising bubbles."
+  },
+  "soundWhistle": "Whistle",
+  "@soundWhistle": {
+    "description": "Sound name: a cartoon slide whistle."
+  },
+  "soundTada": "Ta-da",
+  "@soundTada": {
+    "description": "Sound name: a short fanfare."
+  },
+  "soundXylophone": "Xylophone",
+  "@soundXylophone": {
+    "description": "Sound name: four xylophone notes."
+  },
+  "soundCoin": "Coin",
+  "@soundCoin": {
+    "description": "Sound name: a game coin sparkle."
+  },
+  "soundBoop": "Boop",
+  "@soundBoop": {
+    "description": "Sound name: a cute robot boop boop."
+  },
+  "soundBaDumTss": "Ba-dum-tss",
+  "@soundBaDumTss": {
+    "description": "Sound name: the joke drum."
+  },
+  "soundQuack": "Quack",
+  "@soundQuack": {
+    "description": "Sound name: a cartoon duck."
+  },
   "renameCategoryTitle": "Rename category",
   "@renameCategoryTitle": {
     "description": "Title of the sheet to rename a category."

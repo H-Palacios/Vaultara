@@ -8020,6 +8020,78 @@ class AppLocalizationsNl extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Alleen degene die dit item heeft toegevoegd, of de eigenaar van het huishouden, kan het verwijderen.';
 
   @override
+  String get reminderSoundTitle => 'Herinneringsgeluid';
+
+  @override
+  String get reminderSoundHint => 'Klinkt bij herinneringen voordat een item verloopt. Tik op een geluid om het te horen.';
+
+  @override
+  String get urgentSoundTitle => 'Dringend geluid';
+
+  @override
+  String get urgentSoundHint => 'Klinkt als een item is verlopen of binnen 7 dagen verloopt. Tik op een geluid om het te horen.';
+
+  @override
+  String get reminderSoundNote => 'Verlopen items en items die binnen 7 dagen verlopen gebruiken je dringende geluid. Beveiligings- en huishoudmeldingen gebruiken altijd het eigen geluid van je telefoon.';
+
+  @override
+  String get soundPhoneDefault => 'Telefoongeluid';
+
+  @override
+  String get soundGroupCalm => 'Rustig';
+
+  @override
+  String get soundGroupFun => 'Grappig';
+
+  @override
+  String get soundChannelGroup => 'Herinneringsgeluiden';
+
+  @override
+  String get soundChime => 'Klokkenspel';
+
+  @override
+  String get soundBell => 'Bel';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Gloed';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Ontgrendel-pop';
+
+  @override
+  String get soundBubbles => 'Bubbels';
+
+  @override
+  String get soundWhistle => 'Fluitje';
+
+  @override
+  String get soundTada => 'Tadaa';
+
+  @override
+  String get soundXylophone => 'Xylofoon';
+
+  @override
+  String get soundCoin => 'Munt';
+
+  @override
+  String get soundBoop => 'Boep';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Categorie hernoemen';
 
   @override

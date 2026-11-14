@@ -7958,6 +7958,78 @@ class AppLocalizationsKo extends AppLocalizations {
   String get recordDeleteOnlyCreator => '이 기록은 추가한 사람이나 가구 소유자만 삭제할 수 있습니다.';
 
   @override
+  String get reminderSoundTitle => '알림 소리';
+
+  @override
+  String get reminderSoundHint => '기록이 만료되기 전 알림에 재생됩니다. 소리를 탭하면 들을 수 있습니다.';
+
+  @override
+  String get urgentSoundTitle => '긴급 소리';
+
+  @override
+  String get urgentSoundHint => '기록이 만료되었거나 7일 안에 만료될 때 재생됩니다. 소리를 탭하면 들을 수 있습니다.';
+
+  @override
+  String get reminderSoundNote => '만료된 기록과 7일 안에 만료되는 기록은 긴급 소리를 사용합니다. 보안 및 가구 알림은 항상 휴대전화의 기본 소리를 사용합니다.';
+
+  @override
+  String get soundPhoneDefault => '휴대전화 기본음';
+
+  @override
+  String get soundGroupCalm => '차분한 소리';
+
+  @override
+  String get soundGroupFun => '재미있는 소리';
+
+  @override
+  String get soundChannelGroup => '알림 소리';
+
+  @override
+  String get soundChime => '차임';
+
+  @override
+  String get soundBell => '종';
+
+  @override
+  String get soundMarimba => '마림바';
+
+  @override
+  String get soundDingDong => '딩동';
+
+  @override
+  String get soundGlow => '은은한 빛';
+
+  @override
+  String get soundBoing => '뾰잉';
+
+  @override
+  String get soundUnlockPop => '찰칵 뿅';
+
+  @override
+  String get soundBubbles => '보글보글';
+
+  @override
+  String get soundWhistle => '호루라기';
+
+  @override
+  String get soundTada => '짜잔';
+
+  @override
+  String get soundXylophone => '실로폰';
+
+  @override
+  String get soundCoin => '동전';
+
+  @override
+  String get soundBoop => '삐뽀';
+
+  @override
+  String get soundBaDumTss => '바둠츠';
+
+  @override
+  String get soundQuack => '꽥꽥';
+
+  @override
   String get renameCategoryTitle => '카테고리 이름 변경';
 
   @override

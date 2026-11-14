@@ -8015,6 +8015,78 @@ class AppLocalizationsSo extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Kaliya qofka ku daray diiwaankan, ama milkiilaha qoyska, ayaa tirtiri kara.';
 
   @override
+  String get reminderSoundTitle => 'Codka xasuusinta';
+
+  @override
+  String get reminderSoundHint => 'Wuxuu u dhawaaqaa xasuusinta ka hor inta diiwaanku uusan dhicin. Taabo cod si aad u maqasho.';
+
+  @override
+  String get urgentSoundTitle => 'Codka degdegga';
+
+  @override
+  String get urgentSoundHint => 'Wuxuu dhawaaqaa marka diiwaanku dhacay ama uu dhacayo 7 maalmood gudahood. Taabo cod si aad u maqasho.';
+
+  @override
+  String get reminderSoundNote => 'Diiwaannada dhacay iyo kuwa dhacaya 7 maalmood gudahood waxay isticmaalaan codkaaga degdegga. Digniinaha amniga iyo qoyska had iyo jeer waxay isticmaalaan codka taleefankaaga.';
+
+  @override
+  String get soundPhoneDefault => 'Codka taleefanka';
+
+  @override
+  String get soundGroupCalm => 'Deggan';
+
+  @override
+  String get soundGroupFun => 'Madadaalo';
+
+  @override
+  String get soundChannelGroup => 'Codadka xasuusinta';
+
+  @override
+  String get soundChime => 'Jalaska yar';
+
+  @override
+  String get soundBell => 'Gambaleel';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Iftiin';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Furitaan pop';
+
+  @override
+  String get soundBubbles => 'Xumbo';
+
+  @override
+  String get soundWhistle => 'Foodhi';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Saylofoon';
+
+  @override
+  String get soundCoin => 'Qadaadiic';
+
+  @override
+  String get soundBoop => 'Buub';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Magaca qaybta beddel';
 
   @override

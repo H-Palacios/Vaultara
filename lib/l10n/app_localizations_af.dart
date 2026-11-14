@@ -8020,6 +8020,78 @@ class AppLocalizationsAf extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Net die persoon wat hierdie rekord bygevoeg het, of die eienaar van die huishouding, kan dit uitvee.';
 
   @override
+  String get reminderSoundTitle => 'Herinneringsklank';
+
+  @override
+  String get reminderSoundHint => 'Speel vir herinneringe voordat ’n rekord verval. Tik op ’n klank om dit te hoor.';
+
+  @override
+  String get urgentSoundTitle => 'Dringende klank';
+
+  @override
+  String get urgentSoundHint => 'Speel wanneer ’n rekord verval het of binne 7 dae verval. Tik op ’n klank om dit te hoor.';
+
+  @override
+  String get reminderSoundNote => 'Rekords wat verval het en rekords wat binne 7 dae verval, gebruik jou dringende klank. Sekuriteits- en huishoudingwaarskuwings gebruik altyd jou foon se eie klank.';
+
+  @override
+  String get soundPhoneDefault => 'Foon se klank';
+
+  @override
+  String get soundGroupCalm => 'Kalm';
+
+  @override
+  String get soundGroupFun => 'Pret';
+
+  @override
+  String get soundChannelGroup => 'Herinneringsklanke';
+
+  @override
+  String get soundChime => 'Klokkie';
+
+  @override
+  String get soundBell => 'Klok';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Gloed';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Oopsluit-pop';
+
+  @override
+  String get soundBubbles => 'Borrels';
+
+  @override
+  String get soundWhistle => 'Fluitjie';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Xilofoon';
+
+  @override
+  String get soundCoin => 'Muntstuk';
+
+  @override
+  String get soundBoop => 'Boep';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Hernoem kategorie';
 
   @override

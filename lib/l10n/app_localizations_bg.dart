@@ -8016,6 +8016,78 @@ class AppLocalizationsBg extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Само човекът, който е добавил този запис, или собственикът на домакинството може да го изтрие.';
 
   @override
+  String get reminderSoundTitle => 'Звук за напомняне';
+
+  @override
+  String get reminderSoundHint => 'Звучи при напомняния преди изтичането на запис. Докоснете звук, за да го чуете.';
+
+  @override
+  String get urgentSoundTitle => 'Спешен звук';
+
+  @override
+  String get urgentSoundHint => 'Звучи, когато запис е изтекъл или изтича до 7 дни. Докоснете звук, за да го чуете.';
+
+  @override
+  String get reminderSoundNote => 'Изтеклите записи и тези, които изтичат до 7 дни, използват спешния ви звук. Сигналите за сигурност и за домакинството винаги използват собствения звук на телефона.';
+
+  @override
+  String get soundPhoneDefault => 'Звук на телефона';
+
+  @override
+  String get soundGroupCalm => 'Спокойни';
+
+  @override
+  String get soundGroupFun => 'Забавни';
+
+  @override
+  String get soundChannelGroup => 'Звуци за напомняне';
+
+  @override
+  String get soundChime => 'Звънче';
+
+  @override
+  String get soundBell => 'Камбана';
+
+  @override
+  String get soundMarimba => 'Маримба';
+
+  @override
+  String get soundDingDong => 'Динг-донг';
+
+  @override
+  String get soundGlow => 'Сияние';
+
+  @override
+  String get soundBoing => 'Бойнг';
+
+  @override
+  String get soundUnlockPop => 'Отключване';
+
+  @override
+  String get soundBubbles => 'Мехурчета';
+
+  @override
+  String get soundWhistle => 'Свирка';
+
+  @override
+  String get soundTada => 'Та-да';
+
+  @override
+  String get soundXylophone => 'Ксилофон';
+
+  @override
+  String get soundCoin => 'Монета';
+
+  @override
+  String get soundBoop => 'Бип-буп';
+
+  @override
+  String get soundBaDumTss => 'Ба-дум-тсс';
+
+  @override
+  String get soundQuack => 'Квак';
+
+  @override
   String get renameCategoryTitle => 'Преименуване на категория';
 
   @override

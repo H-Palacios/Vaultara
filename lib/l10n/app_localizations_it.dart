@@ -8027,6 +8027,78 @@ class AppLocalizationsIt extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Solo chi ha aggiunto questo documento, o il proprietario del nucleo, può eliminarlo.';
 
   @override
+  String get reminderSoundTitle => 'Suono del promemoria';
+
+  @override
+  String get reminderSoundHint => 'Suona per i promemoria prima che un documento scada. Tocca un suono per ascoltarlo.';
+
+  @override
+  String get urgentSoundTitle => 'Suono urgente';
+
+  @override
+  String get urgentSoundHint => 'Suona quando un documento è scaduto o scade entro 7 giorni. Tocca un suono per ascoltarlo.';
+
+  @override
+  String get reminderSoundNote => 'I documenti scaduti e quelli che scadono entro 7 giorni usano il tuo suono urgente. Gli avvisi di sicurezza e del nucleo usano sempre il suono del telefono.';
+
+  @override
+  String get soundPhoneDefault => 'Suono del telefono';
+
+  @override
+  String get soundGroupCalm => 'Tranquilli';
+
+  @override
+  String get soundGroupFun => 'Divertenti';
+
+  @override
+  String get soundChannelGroup => 'Suoni dei promemoria';
+
+  @override
+  String get soundChime => 'Carillon';
+
+  @override
+  String get soundBell => 'Campana';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Din-don';
+
+  @override
+  String get soundGlow => 'Bagliore';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop di sblocco';
+
+  @override
+  String get soundBubbles => 'Bolle';
+
+  @override
+  String get soundWhistle => 'Fischietto';
+
+  @override
+  String get soundTada => 'Ta-dà';
+
+  @override
+  String get soundXylophone => 'Xilofono';
+
+  @override
+  String get soundCoin => 'Moneta';
+
+  @override
+  String get soundBoop => 'Bip-bop';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Qua qua';
+
+  @override
   String get renameCategoryTitle => 'Rinomina categoria';
 
   @override

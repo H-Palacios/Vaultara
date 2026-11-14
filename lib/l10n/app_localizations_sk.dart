@@ -8152,6 +8152,78 @@ class AppLocalizationsSk extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Odstrániť tento záznam môže len ten, kto ho pridal, alebo vlastník domácnosti.';
 
   @override
+  String get reminderSoundTitle => 'Zvuk pripomienky';
+
+  @override
+  String get reminderSoundHint => 'Hrá pri pripomienkach pred vypršaním záznamu. Klepnutím si zvuk vypočujete.';
+
+  @override
+  String get urgentSoundTitle => 'Naliehavý zvuk';
+
+  @override
+  String get urgentSoundHint => 'Hrá, keď záznam vypršal alebo vyprší do 7 dní. Klepnutím si zvuk vypočujete.';
+
+  @override
+  String get reminderSoundNote => 'Vypršané záznamy a záznamy, ktoré vypršia do 7 dní, používajú váš naliehavý zvuk. Bezpečnostné upozornenia a upozornenia domácnosti vždy používajú vlastný zvuk telefónu.';
+
+  @override
+  String get soundPhoneDefault => 'Zvuk telefónu';
+
+  @override
+  String get soundGroupCalm => 'Pokojné';
+
+  @override
+  String get soundGroupFun => 'Zábavné';
+
+  @override
+  String get soundChannelGroup => 'Zvuky pripomienok';
+
+  @override
+  String get soundChime => 'Zvonkohra';
+
+  @override
+  String get soundBell => 'Zvon';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Žiara';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Odomknutie';
+
+  @override
+  String get soundBubbles => 'Bublinky';
+
+  @override
+  String get soundWhistle => 'Píšťalka';
+
+  @override
+  String get soundTada => 'Ta-dá';
+
+  @override
+  String get soundXylophone => 'Xylofón';
+
+  @override
+  String get soundCoin => 'Minca';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kvák';
+
+  @override
   String get renameCategoryTitle => 'Premenovať kategóriu';
 
   @override

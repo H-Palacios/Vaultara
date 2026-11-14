@@ -8016,6 +8016,78 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'تەنها ئەو کەسەی ئەم تۆمارەی زیادکردووە یان خاوەنی خێزانەکە دەتوانێت بیسڕێتەوە.';
 
   @override
+  String get reminderSoundTitle => 'دەنگی بیرخستنەوە';
+
+  @override
+  String get reminderSoundHint => 'بۆ بیرخستنەوەکان پێش بەسەرچوونی تۆمار لێدەدات. بۆ بیستن دەست لە دەنگێک بدە.';
+
+  @override
+  String get urgentSoundTitle => 'دەنگی بەپەلە';
+
+  @override
+  String get urgentSoundHint => 'کاتێک تۆمارێک بەسەرچووە یان لە ماوەی 7 ڕۆژدا بەسەردەچێت لێدەدات. بۆ بیستن دەست لە دەنگێک بدە.';
+
+  @override
+  String get reminderSoundNote => 'تۆمارە بەسەرچووەکان و ئەوانەی لە ماوەی 7 ڕۆژدا بەسەردەچن دەنگی بەپەلەکەت بەکاردەهێنن. ئاگادارکردنەوەکانی ئاسایش و خێزان هەمیشە دەنگی مۆبایلەکەت بەکاردەهێنن.';
+
+  @override
+  String get soundPhoneDefault => 'دەنگی مۆبایل';
+
+  @override
+  String get soundGroupCalm => 'ئارام';
+
+  @override
+  String get soundGroupFun => 'خۆش';
+
+  @override
+  String get soundChannelGroup => 'دەنگەکانی بیرخستنەوە';
+
+  @override
+  String get soundChime => 'زەنگۆڵە';
+
+  @override
+  String get soundBell => 'زەنگ';
+
+  @override
+  String get soundMarimba => 'ماریمبا';
+
+  @override
+  String get soundDingDong => 'دینگ-دۆنگ';
+
+  @override
+  String get soundGlow => 'درەوشانەوە';
+
+  @override
+  String get soundBoing => 'بۆینگ';
+
+  @override
+  String get soundUnlockPop => 'کردنەوە و پۆپ';
+
+  @override
+  String get soundBubbles => 'بڵق';
+
+  @override
+  String get soundWhistle => 'فیکە';
+
+  @override
+  String get soundTada => 'تا-دا';
+
+  @override
+  String get soundXylophone => 'زایلۆفۆن';
+
+  @override
+  String get soundCoin => 'دراو';
+
+  @override
+  String get soundBoop => 'بووپ';
+
+  @override
+  String get soundBaDumTss => 'با-دوم-تس';
+
+  @override
+  String get soundQuack => 'قاق';
+
+  @override
   String get renameCategoryTitle => 'گۆڕینی ناوی هاوپۆل';
 
   @override

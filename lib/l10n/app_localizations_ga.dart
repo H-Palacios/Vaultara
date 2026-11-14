@@ -8203,6 +8203,78 @@ class AppLocalizationsGa extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Níl ach an duine a chuir an taifead seo leis, nó úinéir an teaghlaigh, in ann é a scriosadh.';
 
   @override
+  String get reminderSoundTitle => 'Fuaim an mheabhrúcháin';
+
+  @override
+  String get reminderSoundHint => 'Seinntear í do mheabhrúcháin roimh dhul in éag do thaifead. Tapáil fuaim chun í a chloisteáil.';
+
+  @override
+  String get urgentSoundTitle => 'Fuaim phráinneach';
+
+  @override
+  String get urgentSoundHint => 'Seinntear í nuair atá taifead imithe in éag nó ag dul in éag laistigh de 7 lá. Tapáil fuaim chun í a chloisteáil.';
+
+  @override
+  String get reminderSoundNote => 'Úsáideann taifid atá imithe in éag agus taifid a rachaidh in éag laistigh de 7 lá d’fhuaim phráinneach. Úsáideann foláirimh slándála agus teaghlaigh fuaim an fhóin féin i gcónaí.';
+
+  @override
+  String get soundPhoneDefault => 'Fuaim an fhóin';
+
+  @override
+  String get soundGroupCalm => 'Socair';
+
+  @override
+  String get soundGroupFun => 'Spraíúil';
+
+  @override
+  String get soundChannelGroup => 'Fuaimeanna meabhrúcháin';
+
+  @override
+  String get soundChime => 'Cling';
+
+  @override
+  String get soundBell => 'Clog';
+
+  @override
+  String get soundMarimba => 'Mairimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Lonradh';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop díghlasála';
+
+  @override
+  String get soundBubbles => 'Boilgeoga';
+
+  @override
+  String get soundWhistle => 'Feadóg';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Xileafón';
+
+  @override
+  String get soundCoin => 'Bonn';
+
+  @override
+  String get soundBoop => 'Búp';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Vác';
+
+  @override
   String get renameCategoryTitle => 'Athainmnigh an chatagóir';
 
   @override

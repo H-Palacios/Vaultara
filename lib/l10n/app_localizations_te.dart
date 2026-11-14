@@ -8016,6 +8016,78 @@ class AppLocalizationsTe extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'ఈ రికార్డ్‌ను జోడించినవారు లేదా ఇంటి యజమాని మాత్రమే దీన్ని తొలగించగలరు.';
 
   @override
+  String get reminderSoundTitle => 'రిమైండర్ శబ్దం';
+
+  @override
+  String get reminderSoundHint => 'రికార్డ్ గడువు ముగిసే ముందు రిమైండర్‌లకు మోగుతుంది. వినడానికి శబ్దాన్ని ట్యాప్ చేయండి.';
+
+  @override
+  String get urgentSoundTitle => 'అత్యవసర శబ్దం';
+
+  @override
+  String get urgentSoundHint => 'రికార్డ్ గడువు ముగిసినప్పుడు లేదా 7 రోజుల్లో ముగుస్తున్నప్పుడు మోగుతుంది. వినడానికి శబ్దాన్ని ట్యాప్ చేయండి.';
+
+  @override
+  String get reminderSoundNote => 'గడువు ముగిసిన రికార్డులు, 7 రోజుల్లో గడువు ముగిసే రికార్డులు మీ అత్యవసర శబ్దాన్ని ఉపయోగిస్తాయి. భద్రత మరియు ఇంటి హెచ్చరికలు ఎల్లప్పుడూ మీ ఫోన్ సొంత శబ్దాన్ని ఉపయోగిస్తాయి.';
+
+  @override
+  String get soundPhoneDefault => 'ఫోన్ శబ్దం';
+
+  @override
+  String get soundGroupCalm => 'ప్రశాంతం';
+
+  @override
+  String get soundGroupFun => 'సరదా';
+
+  @override
+  String get soundChannelGroup => 'రిమైండర్ శబ్దాలు';
+
+  @override
+  String get soundChime => 'చైమ్';
+
+  @override
+  String get soundBell => 'గంట';
+
+  @override
+  String get soundMarimba => 'మరింబా';
+
+  @override
+  String get soundDingDong => 'డింగ్-డాంగ్';
+
+  @override
+  String get soundGlow => 'మెరుపు';
+
+  @override
+  String get soundBoing => 'బోయింగ్';
+
+  @override
+  String get soundUnlockPop => 'అన్‌లాక్ పాప్';
+
+  @override
+  String get soundBubbles => 'బుడగలు';
+
+  @override
+  String get soundWhistle => 'విజిల్';
+
+  @override
+  String get soundTada => 'టా-డా';
+
+  @override
+  String get soundXylophone => 'జైలోఫోన్';
+
+  @override
+  String get soundCoin => 'నాణెం';
+
+  @override
+  String get soundBoop => 'బూప్';
+
+  @override
+  String get soundBaDumTss => 'బా-డుమ్-ట్స్';
+
+  @override
+  String get soundQuack => 'క్వాక్';
+
+  @override
   String get renameCategoryTitle => 'వర్గం పేరు మార్చు';
 
   @override

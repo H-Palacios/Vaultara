@@ -8016,6 +8016,78 @@ class AppLocalizationsBn extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'যিনি এই রেকর্ড যোগ করেছেন তিনি অথবা পরিবারের মালিক শুধু এটি মুছতে পারেন।';
 
   @override
+  String get reminderSoundTitle => 'রিমাইন্ডার সাউন্ড';
+
+  @override
+  String get reminderSoundHint => 'রেকর্ডের মেয়াদ শেষ হওয়ার আগের রিমাইন্ডারে বাজে। শুনতে একটি সাউন্ডে ট্যাপ করুন।';
+
+  @override
+  String get urgentSoundTitle => 'জরুরি সাউন্ড';
+
+  @override
+  String get urgentSoundHint => 'রেকর্ডের মেয়াদ শেষ হলে বা ৭ দিনের মধ্যে শেষ হলে বাজে। শুনতে একটি সাউন্ডে ট্যাপ করুন।';
+
+  @override
+  String get reminderSoundNote => 'মেয়াদ শেষ হওয়া রেকর্ড এবং ৭ দিনের মধ্যে মেয়াদ শেষ হওয়া রেকর্ড আপনার জরুরি সাউন্ড ব্যবহার করে। নিরাপত্তা ও পরিবারের সতর্কতা সবসময় আপনার ফোনের নিজস্ব সাউন্ড ব্যবহার করে।';
+
+  @override
+  String get soundPhoneDefault => 'ফোনের ডিফল্ট';
+
+  @override
+  String get soundGroupCalm => 'শান্ত';
+
+  @override
+  String get soundGroupFun => 'মজার';
+
+  @override
+  String get soundChannelGroup => 'রিমাইন্ডার সাউন্ড';
+
+  @override
+  String get soundChime => 'চাইম';
+
+  @override
+  String get soundBell => 'ঘণ্টা';
+
+  @override
+  String get soundMarimba => 'মারিম্বা';
+
+  @override
+  String get soundDingDong => 'ডিং-ডং';
+
+  @override
+  String get soundGlow => 'আভা';
+
+  @override
+  String get soundBoing => 'বোয়িং';
+
+  @override
+  String get soundUnlockPop => 'আনলক পপ';
+
+  @override
+  String get soundBubbles => 'বুদবুদ';
+
+  @override
+  String get soundWhistle => 'বাঁশি';
+
+  @override
+  String get soundTada => 'টা-ডা';
+
+  @override
+  String get soundXylophone => 'জাইলোফোন';
+
+  @override
+  String get soundCoin => 'কয়েন';
+
+  @override
+  String get soundBoop => 'বুপ';
+
+  @override
+  String get soundBaDumTss => 'বা-ডুম-টস';
+
+  @override
+  String get soundQuack => 'প্যাঁক';
+
+  @override
   String get renameCategoryTitle => 'বিভাগের নাম বদলান';
 
   @override

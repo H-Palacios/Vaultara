@@ -8016,6 +8016,78 @@ class AppLocalizationsSw extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Ni aliyeongeza rekodi hii pekee, au mmiliki wa kaya, anayeweza kuifuta.';
 
   @override
+  String get reminderSoundTitle => 'Sauti ya kikumbusho';
+
+  @override
+  String get reminderSoundHint => 'Hulia kwa vikumbusho kabla rekodi haijaisha. Gusa sauti ili uisikie.';
+
+  @override
+  String get urgentSoundTitle => 'Sauti ya dharura';
+
+  @override
+  String get urgentSoundHint => 'Hulia rekodi ikiwa imeisha au itaisha ndani ya siku 7. Gusa sauti ili uisikie.';
+
+  @override
+  String get reminderSoundNote => 'Rekodi zilizoisha na zitakazoisha ndani ya siku 7 hutumia sauti yako ya dharura. Arifa za usalama na za kaya hutumia sauti ya simu yako kila wakati.';
+
+  @override
+  String get soundPhoneDefault => 'Sauti ya simu';
+
+  @override
+  String get soundGroupCalm => 'Tulivu';
+
+  @override
+  String get soundGroupFun => 'Za kufurahisha';
+
+  @override
+  String get soundChannelGroup => 'Sauti za vikumbusho';
+
+  @override
+  String get soundChime => 'Kengele ndogo';
+
+  @override
+  String get soundBell => 'Kengele';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Mng’ao';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Kufungua pop';
+
+  @override
+  String get soundBubbles => 'Mapovu';
+
+  @override
+  String get soundWhistle => 'Filimbi';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Zeze';
+
+  @override
+  String get soundCoin => 'Sarafu';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwaa';
+
+  @override
   String get renameCategoryTitle => 'Badilisha jina la kategoria';
 
   @override

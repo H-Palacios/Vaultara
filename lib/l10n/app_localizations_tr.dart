@@ -8016,6 +8016,78 @@ class AppLocalizationsTr extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Bu kaydı yalnızca ekleyen kişi veya hane sahibi silebilir.';
 
   @override
+  String get reminderSoundTitle => 'Hatırlatma sesi';
+
+  @override
+  String get reminderSoundHint => 'Bir kaydın süresi dolmadan önceki hatırlatmalarda çalar. Dinlemek için bir sese dokunun.';
+
+  @override
+  String get urgentSoundTitle => 'Acil ses';
+
+  @override
+  String get urgentSoundHint => 'Bir kaydın süresi dolduğunda veya 7 gün içinde dolacağında çalar. Dinlemek için bir sese dokunun.';
+
+  @override
+  String get reminderSoundNote => 'Süresi dolmuş kayıtlar ve 7 gün içinde dolacak kayıtlar acil sesinizi kullanır. Güvenlik ve hane uyarıları her zaman telefonunuzun kendi sesini kullanır.';
+
+  @override
+  String get soundPhoneDefault => 'Telefonun sesi';
+
+  @override
+  String get soundGroupCalm => 'Sakin';
+
+  @override
+  String get soundGroupFun => 'Eğlenceli';
+
+  @override
+  String get soundChannelGroup => 'Hatırlatma sesleri';
+
+  @override
+  String get soundChime => 'Çan sesi';
+
+  @override
+  String get soundBell => 'Zil';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Işıltı';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Kilit açma';
+
+  @override
+  String get soundBubbles => 'Baloncuklar';
+
+  @override
+  String get soundWhistle => 'Düdük';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Ksilofon';
+
+  @override
+  String get soundCoin => 'Bozuk para';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Vak';
+
+  @override
   String get renameCategoryTitle => 'Kategoriyi yeniden adlandır';
 
   @override

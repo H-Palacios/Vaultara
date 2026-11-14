@@ -8020,6 +8020,78 @@ class AppLocalizationsDe extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Nur die Person, die diesen Eintrag hinzugefügt hat, oder der Haushaltsinhaber kann ihn löschen.';
 
   @override
+  String get reminderSoundTitle => 'Erinnerungston';
+
+  @override
+  String get reminderSoundHint => 'Ertönt bei Erinnerungen, bevor ein Eintrag abläuft. Tippe auf einen Ton, um ihn zu hören.';
+
+  @override
+  String get urgentSoundTitle => 'Dringender Ton';
+
+  @override
+  String get urgentSoundHint => 'Ertönt, wenn ein Eintrag abgelaufen ist oder innerhalb von 7 Tagen abläuft. Tippe auf einen Ton, um ihn zu hören.';
+
+  @override
+  String get reminderSoundNote => 'Abgelaufene Einträge und Einträge, die innerhalb von 7 Tagen ablaufen, nutzen deinen dringenden Ton. Sicherheits- und Haushaltsmeldungen nutzen immer den eigenen Ton deines Handys.';
+
+  @override
+  String get soundPhoneDefault => 'Handy-Standard';
+
+  @override
+  String get soundGroupCalm => 'Ruhig';
+
+  @override
+  String get soundGroupFun => 'Lustig';
+
+  @override
+  String get soundChannelGroup => 'Erinnerungstöne';
+
+  @override
+  String get soundChime => 'Glockenspiel';
+
+  @override
+  String get soundBell => 'Glocke';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-Dong';
+
+  @override
+  String get soundGlow => 'Leuchten';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Aufschließen';
+
+  @override
+  String get soundBubbles => 'Blubbern';
+
+  @override
+  String get soundWhistle => 'Pfeife';
+
+  @override
+  String get soundTada => 'Tadaa';
+
+  @override
+  String get soundXylophone => 'Xylofon';
+
+  @override
+  String get soundCoin => 'Münze';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Quak';
+
+  @override
   String get renameCategoryTitle => 'Kategorie umbenennen';
 
   @override

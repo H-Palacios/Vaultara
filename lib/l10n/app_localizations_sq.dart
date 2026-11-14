@@ -8020,6 +8020,78 @@ class AppLocalizationsSq extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Këtë regjistrim mund ta fshijë vetëm ai që e shtoi ose pronari i familjes.';
 
   @override
+  String get reminderSoundTitle => 'Tingulli i kujtesës';
+
+  @override
+  String get reminderSoundHint => 'Bie për kujtesat para se të skadojë një regjistrim. Prekni një tingull për ta dëgjuar.';
+
+  @override
+  String get urgentSoundTitle => 'Tingulli urgjent';
+
+  @override
+  String get urgentSoundHint => 'Bie kur një regjistrim ka skaduar ose skadon brenda 7 ditëve. Prekni një tingull për ta dëgjuar.';
+
+  @override
+  String get reminderSoundNote => 'Regjistrimet e skaduara dhe ato që skadojnë brenda 7 ditëve përdorin tingullin tuaj urgjent. Sinjalizimet e sigurisë dhe të familjes përdorin gjithmonë tingullin e telefonit.';
+
+  @override
+  String get soundPhoneDefault => 'Tingulli i telefonit';
+
+  @override
+  String get soundGroupCalm => 'Të qeta';
+
+  @override
+  String get soundGroupFun => 'Argëtuese';
+
+  @override
+  String get soundChannelGroup => 'Tingujt e kujtesave';
+
+  @override
+  String get soundChime => 'Kambanëza';
+
+  @override
+  String get soundBell => 'Zile';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Shkëlqim';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop i hapjes';
+
+  @override
+  String get soundBubbles => 'Flluska';
+
+  @override
+  String get soundWhistle => 'Bilbil';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Ksilofon';
+
+  @override
+  String get soundCoin => 'Monedhë';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kuak';
+
+  @override
   String get renameCategoryTitle => 'Riemërto kategorinë';
 
   @override

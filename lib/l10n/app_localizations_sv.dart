@@ -8019,6 +8019,78 @@ class AppLocalizationsSv extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Bara den som lade till den här posten, eller hushållets ägare, kan ta bort den.';
 
   @override
+  String get reminderSoundTitle => 'Påminnelseljud';
+
+  @override
+  String get reminderSoundHint => 'Spelas för påminnelser innan en post går ut. Tryck på ett ljud för att höra det.';
+
+  @override
+  String get urgentSoundTitle => 'Brådskande ljud';
+
+  @override
+  String get urgentSoundHint => 'Spelas när en post har gått ut eller går ut inom 7 dagar. Tryck på ett ljud för att höra det.';
+
+  @override
+  String get reminderSoundNote => 'Utgångna poster och poster som går ut inom 7 dagar använder ditt brådskande ljud. Säkerhets- och hushållsaviseringar använder alltid telefonens eget ljud.';
+
+  @override
+  String get soundPhoneDefault => 'Telefonens ljud';
+
+  @override
+  String get soundGroupCalm => 'Lugna';
+
+  @override
+  String get soundGroupFun => 'Roliga';
+
+  @override
+  String get soundChannelGroup => 'Påminnelseljud';
+
+  @override
+  String get soundChime => 'Klockspel';
+
+  @override
+  String get soundBell => 'Klocka';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Glöd';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Upplåsningspop';
+
+  @override
+  String get soundBubbles => 'Bubblor';
+
+  @override
+  String get soundWhistle => 'Visselpipa';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Xylofon';
+
+  @override
+  String get soundCoin => 'Mynt';
+
+  @override
+  String get soundBoop => 'Bupp';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kvack';
+
+  @override
   String get renameCategoryTitle => 'Byt namn på kategori';
 
   @override

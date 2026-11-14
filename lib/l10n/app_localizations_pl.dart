@@ -8174,6 +8174,78 @@ class AppLocalizationsPl extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Usunąć ten rekord może tylko osoba, która go dodała, lub właściciel gospodarstwa.';
 
   @override
+  String get reminderSoundTitle => 'Dźwięk przypomnienia';
+
+  @override
+  String get reminderSoundHint => 'Odtwarzany przy przypomnieniach, zanim rekord wygaśnie. Dotknij dźwięku, aby go usłyszeć.';
+
+  @override
+  String get urgentSoundTitle => 'Dźwięk pilny';
+
+  @override
+  String get urgentSoundHint => 'Odtwarzany, gdy rekord wygasł lub wygaśnie w ciągu 7 dni. Dotknij dźwięku, aby go usłyszeć.';
+
+  @override
+  String get reminderSoundNote => 'Wygasłe rekordy i rekordy wygasające w ciągu 7 dni używają dźwięku pilnego. Alerty bezpieczeństwa i gospodarstwa zawsze używają własnego dźwięku telefonu.';
+
+  @override
+  String get soundPhoneDefault => 'Dźwięk telefonu';
+
+  @override
+  String get soundGroupCalm => 'Spokojne';
+
+  @override
+  String get soundGroupFun => 'Zabawne';
+
+  @override
+  String get soundChannelGroup => 'Dźwięki przypomnień';
+
+  @override
+  String get soundChime => 'Kurant';
+
+  @override
+  String get soundBell => 'Dzwon';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Blask';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Odblokowanie';
+
+  @override
+  String get soundBubbles => 'Bąbelki';
+
+  @override
+  String get soundWhistle => 'Gwizdek';
+
+  @override
+  String get soundTada => 'Ta-dam';
+
+  @override
+  String get soundXylophone => 'Ksylofon';
+
+  @override
+  String get soundCoin => 'Moneta';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwa';
+
+  @override
   String get renameCategoryTitle => 'Zmień nazwę kategorii';
 
   @override

@@ -8095,6 +8095,78 @@ class AppLocalizationsRo extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Doar persoana care a adăugat această înregistrare sau proprietarul gospodăriei o poate șterge.';
 
   @override
+  String get reminderSoundTitle => 'Sunetul mementoului';
+
+  @override
+  String get reminderSoundHint => 'Se aude la mementourile dinainte să expire o înregistrare. Atinge un sunet ca să-l auzi.';
+
+  @override
+  String get urgentSoundTitle => 'Sunet urgent';
+
+  @override
+  String get urgentSoundHint => 'Se aude când o înregistrare a expirat sau expiră în 7 zile. Atinge un sunet ca să-l auzi.';
+
+  @override
+  String get reminderSoundNote => 'Înregistrările expirate și cele care expiră în 7 zile folosesc sunetul tău urgent. Alertele de securitate și ale gospodăriei folosesc mereu sunetul telefonului.';
+
+  @override
+  String get soundPhoneDefault => 'Sunetul telefonului';
+
+  @override
+  String get soundGroupCalm => 'Calme';
+
+  @override
+  String get soundGroupFun => 'Amuzante';
+
+  @override
+  String get soundChannelGroup => 'Sunete pentru mementouri';
+
+  @override
+  String get soundChime => 'Clopoței';
+
+  @override
+  String get soundBell => 'Clopot';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Strălucire';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop de deblocare';
+
+  @override
+  String get soundBubbles => 'Bule';
+
+  @override
+  String get soundWhistle => 'Fluier';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Xilofon';
+
+  @override
+  String get soundCoin => 'Monedă';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Mac-mac';
+
+  @override
   String get renameCategoryTitle => 'Redenumește categoria';
 
   @override

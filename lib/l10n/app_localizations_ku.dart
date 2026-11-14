@@ -8016,6 +8016,78 @@ class AppLocalizationsKu extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Tenê kesê ku ev tomar zêde kiriye, an xwediyê malê, dikare wê jê bibe.';
 
   @override
+  String get reminderSoundTitle => 'Dengê bîranînê';
+
+  @override
+  String get reminderSoundHint => 'Ji bo bîranînan berî ku tomar biqede lê dide. Ji bo guhdariyê li dengekî bitikîne.';
+
+  @override
+  String get urgentSoundTitle => 'Dengê lezgîn';
+
+  @override
+  String get urgentSoundHint => 'Dema tomar qediyabe an di nav 7 rojan de biqede lê dide. Ji bo guhdariyê li dengekî bitikîne.';
+
+  @override
+  String get reminderSoundNote => 'Tomarên qediyayî û yên ku di nav 7 rojan de diqedin dengê te yê lezgîn bi kar tînin. Hişyariyên ewlehiyê û malê her tim dengê telefona te bi kar tînin.';
+
+  @override
+  String get soundPhoneDefault => 'Dengê telefonê';
+
+  @override
+  String get soundGroupCalm => 'Aram';
+
+  @override
+  String get soundGroupFun => 'Kêfxweş';
+
+  @override
+  String get soundChannelGroup => 'Dengên bîranînê';
+
+  @override
+  String get soundChime => 'Zengilok';
+
+  @override
+  String get soundBell => 'Zengil';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Ronahî';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Vekirin û pop';
+
+  @override
+  String get soundBubbles => 'Bilbilk';
+
+  @override
+  String get soundWhistle => 'Fîk';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Ksîlofon';
+
+  @override
+  String get soundCoin => 'Pere';
+
+  @override
+  String get soundBoop => 'Bûp';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Qaq';
+
+  @override
   String get renameCategoryTitle => 'Navê kategoriyê biguherîne';
 
   @override

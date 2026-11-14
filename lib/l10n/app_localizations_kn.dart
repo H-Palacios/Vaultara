@@ -8016,6 +8016,78 @@ class AppLocalizationsKn extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'ಈ ದಾಖಲೆಯನ್ನು ಸೇರಿಸಿದವರು ಅಥವಾ ಮನೆಯ ಮಾಲೀಕರು ಮಾತ್ರ ಅಳಿಸಬಹುದು.';
 
   @override
+  String get reminderSoundTitle => 'ಜ್ಞಾಪನೆ ಧ್ವನಿ';
+
+  @override
+  String get reminderSoundHint => 'ದಾಖಲೆ ಮುಕ್ತಾಯವಾಗುವ ಮೊದಲು ಜ್ಞಾಪನೆಗಳಿಗೆ ಮೊಳಗುತ್ತದೆ. ಕೇಳಲು ಧ್ವನಿಯನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+
+  @override
+  String get urgentSoundTitle => 'ತುರ್ತು ಧ್ವನಿ';
+
+  @override
+  String get urgentSoundHint => 'ದಾಖಲೆ ಮುಕ್ತಾಯವಾದಾಗ ಅಥವಾ 7 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯವಾಗುವಾಗ ಮೊಳಗುತ್ತದೆ. ಕೇಳಲು ಧ್ವನಿಯನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+
+  @override
+  String get reminderSoundNote => 'ಮುಕ್ತಾಯವಾದ ದಾಖಲೆಗಳು ಮತ್ತು 7 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯವಾಗುವ ದಾಖಲೆಗಳು ನಿಮ್ಮ ತುರ್ತು ಧ್ವನಿಯನ್ನು ಬಳಸುತ್ತವೆ. ಭದ್ರತೆ ಮತ್ತು ಮನೆಯ ಎಚ್ಚರಿಕೆಗಳು ಯಾವಾಗಲೂ ನಿಮ್ಮ ಫೋನಿನ ಸ್ವಂತ ಧ್ವನಿಯನ್ನು ಬಳಸುತ್ತವೆ.';
+
+  @override
+  String get soundPhoneDefault => 'ಫೋನ್ ಧ್ವನಿ';
+
+  @override
+  String get soundGroupCalm => 'ಶಾಂತ';
+
+  @override
+  String get soundGroupFun => 'ಮೋಜಿನ';
+
+  @override
+  String get soundChannelGroup => 'ಜ್ಞಾಪನೆ ಧ್ವನಿಗಳು';
+
+  @override
+  String get soundChime => 'ಚೈಮ್';
+
+  @override
+  String get soundBell => 'ಗಂಟೆ';
+
+  @override
+  String get soundMarimba => 'ಮರಿಂಬಾ';
+
+  @override
+  String get soundDingDong => 'ಡಿಂಗ್-ಡಾಂಗ್';
+
+  @override
+  String get soundGlow => 'ಹೊಳಪು';
+
+  @override
+  String get soundBoing => 'ಬೋಯಿಂಗ್';
+
+  @override
+  String get soundUnlockPop => 'ಅನ್‌ಲಾಕ್ ಪಾಪ್';
+
+  @override
+  String get soundBubbles => 'ಗುಳ್ಳೆಗಳು';
+
+  @override
+  String get soundWhistle => 'ಸೀಟಿ';
+
+  @override
+  String get soundTada => 'ಟಾ-ಡಾ';
+
+  @override
+  String get soundXylophone => 'ಕ್ಸೈಲೋಫೋನ್';
+
+  @override
+  String get soundCoin => 'ನಾಣ್ಯ';
+
+  @override
+  String get soundBoop => 'ಬೂಪ್';
+
+  @override
+  String get soundBaDumTss => 'ಬಾ-ಡುಮ್-ಟ್ಸ್';
+
+  @override
+  String get soundQuack => 'ಕ್ವಾಕ್';
+
+  @override
   String get renameCategoryTitle => 'ವರ್ಗದ ಹೆಸರು ಬದಲಿಸಿ';
 
   @override

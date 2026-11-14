@@ -8015,6 +8015,78 @@ class AppLocalizationsSi extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'මෙම වාර්තාව එක් කළ පුද්ගලයාට හෝ නිවසේ හිමිකරුට පමණක් එය මැකිය හැක.';
 
   @override
+  String get reminderSoundTitle => 'සිහිකැඳවීමේ හඬ';
+
+  @override
+  String get reminderSoundHint => 'වාර්තාවක කල් ඉකුත් වීමට පෙර සිහිකැඳවීම් සඳහා වාදනය වේ. ඇසීමට හඬක් තට්ටු කරන්න.';
+
+  @override
+  String get urgentSoundTitle => 'හදිසි හඬ';
+
+  @override
+  String get urgentSoundHint => 'වාර්තාවක කල් ඉකුත් වූ විට හෝ දින 7ක් තුළ ඉකුත් වන විට වාදනය වේ. ඇසීමට හඬක් තට්ටු කරන්න.';
+
+  @override
+  String get reminderSoundNote => 'කල් ඉකුත් වූ වාර්තා සහ දින 7ක් තුළ ඉකුත් වන වාර්තා ඔබේ හදිසි හඬ භාවිත කරයි. ආරක්ෂක සහ නිවසේ ඇඟවීම් සැමවිටම ඔබේ දුරකථනයේම හඬ භාවිත කරයි.';
+
+  @override
+  String get soundPhoneDefault => 'දුරකථන හඬ';
+
+  @override
+  String get soundGroupCalm => 'සන්සුන්';
+
+  @override
+  String get soundGroupFun => 'විනෝදජනක';
+
+  @override
+  String get soundChannelGroup => 'සිහිකැඳවීමේ හඬ';
+
+  @override
+  String get soundChime => 'චයිම්';
+
+  @override
+  String get soundBell => 'සීනුව';
+
+  @override
+  String get soundMarimba => 'මරිම්බා';
+
+  @override
+  String get soundDingDong => 'ඩිං-ඩොං';
+
+  @override
+  String get soundGlow => 'දීප්තිය';
+
+  @override
+  String get soundBoing => 'බොයිං';
+
+  @override
+  String get soundUnlockPop => 'අගුළු හැරීමේ පොප්';
+
+  @override
+  String get soundBubbles => 'බුබුළු';
+
+  @override
+  String get soundWhistle => 'විසිල්';
+
+  @override
+  String get soundTada => 'ටා-ඩා';
+
+  @override
+  String get soundXylophone => 'සයිලෆෝනය';
+
+  @override
+  String get soundCoin => 'කාසිය';
+
+  @override
+  String get soundBoop => 'බූප්';
+
+  @override
+  String get soundBaDumTss => 'බා-ඩම්-ට්ස්';
+
+  @override
+  String get soundQuack => 'ක්වැක්';
+
+  @override
   String get renameCategoryTitle => 'කාණ්ඩය නැවත නම් කරන්න';
 
   @override

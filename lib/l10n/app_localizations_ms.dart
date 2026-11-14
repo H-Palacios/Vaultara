@@ -7958,6 +7958,78 @@ class AppLocalizationsMs extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Hanya orang yang menambah rekod ini, atau pemilik isi rumah, boleh memadamnya.';
 
   @override
+  String get reminderSoundTitle => 'Bunyi peringatan';
+
+  @override
+  String get reminderSoundHint => 'Berbunyi untuk peringatan sebelum rekod tamat. Ketik bunyi untuk mendengarnya.';
+
+  @override
+  String get urgentSoundTitle => 'Bunyi segera';
+
+  @override
+  String get urgentSoundHint => 'Berbunyi apabila rekod telah tamat atau tamat dalam 7 hari. Ketik bunyi untuk mendengarnya.';
+
+  @override
+  String get reminderSoundNote => 'Rekod yang telah tamat dan rekod yang tamat dalam 7 hari menggunakan bunyi segera anda. Amaran keselamatan dan isi rumah sentiasa menggunakan bunyi telefon anda sendiri.';
+
+  @override
+  String get soundPhoneDefault => 'Bunyi telefon';
+
+  @override
+  String get soundGroupCalm => 'Tenang';
+
+  @override
+  String get soundGroupFun => 'Seronok';
+
+  @override
+  String get soundChannelGroup => 'Bunyi peringatan';
+
+  @override
+  String get soundChime => 'Loceng kecil';
+
+  @override
+  String get soundBell => 'Loceng';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Cahaya';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Buka kunci';
+
+  @override
+  String get soundBubbles => 'Buih';
+
+  @override
+  String get soundWhistle => 'Wisel';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Zilofon';
+
+  @override
+  String get soundCoin => 'Syiling';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kuek';
+
+  @override
   String get renameCategoryTitle => 'Namakan semula kategori';
 
   @override

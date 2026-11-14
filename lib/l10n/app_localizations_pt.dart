@@ -8021,6 +8021,78 @@ class AppLocalizationsPt extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Só quem adicionou este registro, ou o dono da família, pode excluí-lo.';
 
   @override
+  String get reminderSoundTitle => 'Som do lembrete';
+
+  @override
+  String get reminderSoundHint => 'Toca nos lembretes antes de um registro vencer. Toque em um som para ouvi-lo.';
+
+  @override
+  String get urgentSoundTitle => 'Som urgente';
+
+  @override
+  String get urgentSoundHint => 'Toca quando um registro venceu ou vence em até 7 dias. Toque em um som para ouvi-lo.';
+
+  @override
+  String get reminderSoundNote => 'Registros vencidos e registros que vencem em até 7 dias usam seu som urgente. Alertas de segurança e da família sempre usam o som do próprio celular.';
+
+  @override
+  String get soundPhoneDefault => 'Som do celular';
+
+  @override
+  String get soundGroupCalm => 'Tranquilos';
+
+  @override
+  String get soundGroupFun => 'Divertidos';
+
+  @override
+  String get soundChannelGroup => 'Sons dos lembretes';
+
+  @override
+  String get soundChime => 'Carrilhão';
+
+  @override
+  String get soundBell => 'Sino';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Brilho';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop de desbloqueio';
+
+  @override
+  String get soundBubbles => 'Bolhas';
+
+  @override
+  String get soundWhistle => 'Apito';
+
+  @override
+  String get soundTada => 'Tcharam';
+
+  @override
+  String get soundXylophone => 'Xilofone';
+
+  @override
+  String get soundCoin => 'Moeda';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Quac';
+
+  @override
   String get renameCategoryTitle => 'Renomear categoria';
 
   @override

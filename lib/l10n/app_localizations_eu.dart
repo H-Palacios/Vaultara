@@ -8020,6 +8020,78 @@ class AppLocalizationsEu extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Erregistro hau gehitu zuenak edo etxeko jabeak bakarrik ezaba dezake.';
 
   @override
+  String get reminderSoundTitle => 'Oroigarriaren soinua';
+
+  @override
+  String get reminderSoundHint => 'Erregistro bat iraungi aurreko oroigarrietan jotzen du. Ukitu soinu bat entzuteko.';
+
+  @override
+  String get urgentSoundTitle => 'Soinu larria';
+
+  @override
+  String get urgentSoundHint => 'Erregistro bat iraungi denean edo 7 egunean iraungiko denean jotzen du. Ukitu soinu bat entzuteko.';
+
+  @override
+  String get reminderSoundNote => 'Iraungitako erregistroek eta 7 egunean iraungiko direnek zure soinu larria erabiltzen dute. Segurtasun- eta etxeko alertek beti telefonoaren soinua erabiltzen dute.';
+
+  @override
+  String get soundPhoneDefault => 'Telefonoaren soinua';
+
+  @override
+  String get soundGroupCalm => 'Lasaiak';
+
+  @override
+  String get soundGroupFun => 'Dibertigarriak';
+
+  @override
+  String get soundChannelGroup => 'Oroigarrien soinuak';
+
+  @override
+  String get soundChime => 'Kanpaitxoa';
+
+  @override
+  String get soundBell => 'Kanpaia';
+
+  @override
+  String get soundMarimba => 'Marinba';
+
+  @override
+  String get soundDingDong => 'Din-don';
+
+  @override
+  String get soundGlow => 'Distira';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Desblokeatze-pop';
+
+  @override
+  String get soundBubbles => 'Burbuilak';
+
+  @override
+  String get soundWhistle => 'Txistua';
+
+  @override
+  String get soundTada => 'Ta-txan';
+
+  @override
+  String get soundXylophone => 'Xilofonoa';
+
+  @override
+  String get soundCoin => 'Txanpona';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kua';
+
+  @override
   String get renameCategoryTitle => 'Aldatu kategoriaren izena';
 
   @override

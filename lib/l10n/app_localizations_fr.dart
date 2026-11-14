@@ -8030,6 +8030,78 @@ class AppLocalizationsFr extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Seule la personne qui a ajouté cet élément, ou le propriétaire du foyer, peut le supprimer.';
 
   @override
+  String get reminderSoundTitle => 'Son des rappels';
+
+  @override
+  String get reminderSoundHint => 'Joué pour les rappels avant l’expiration d’un élément. Touchez un son pour l’écouter.';
+
+  @override
+  String get urgentSoundTitle => 'Son urgent';
+
+  @override
+  String get urgentSoundHint => 'Joué quand un élément a expiré ou expire dans les 7 jours. Touchez un son pour l’écouter.';
+
+  @override
+  String get reminderSoundNote => 'Les éléments expirés et ceux qui expirent dans les 7 jours utilisent votre son urgent. Les alertes de sécurité et du foyer utilisent toujours le son de votre téléphone.';
+
+  @override
+  String get soundPhoneDefault => 'Son du téléphone';
+
+  @override
+  String get soundGroupCalm => 'Calmes';
+
+  @override
+  String get soundGroupFun => 'Amusants';
+
+  @override
+  String get soundChannelGroup => 'Sons des rappels';
+
+  @override
+  String get soundChime => 'Carillon';
+
+  @override
+  String get soundBell => 'Cloche';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Lueur';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop de déverrouillage';
+
+  @override
+  String get soundBubbles => 'Bulles';
+
+  @override
+  String get soundWhistle => 'Sifflet';
+
+  @override
+  String get soundTada => 'Tada';
+
+  @override
+  String get soundXylophone => 'Xylophone';
+
+  @override
+  String get soundCoin => 'Pièce';
+
+  @override
+  String get soundBoop => 'Bip-boup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Coin-coin';
+
+  @override
   String get renameCategoryTitle => 'Renommer la catégorie';
 
   @override

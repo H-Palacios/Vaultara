@@ -8016,6 +8016,78 @@ class AppLocalizationsZu extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Ngumuntu owengeze leli rekhodi kuphela, noma umnikazi wekhaya, ongalisusa.';
 
   @override
+  String get reminderSoundTitle => 'Umsindo wesikhumbuzo';
+
+  @override
+  String get reminderSoundHint => 'Udlala ezikhumbuzweni ngaphambi kokuba irekhodi liphelelwe. Thepha umsindo ukuze uwuzwe.';
+
+  @override
+  String get urgentSoundTitle => 'Umsindo ophuthumayo';
+
+  @override
+  String get urgentSoundHint => 'Udlala uma irekhodi seliphelelwe noma lizophelelwa phakathi kwezinsuku ezi-7. Thepha umsindo ukuze uwuzwe.';
+
+  @override
+  String get reminderSoundNote => 'Amarekhodi aphelelwe nalawo azophelelwa phakathi kwezinsuku ezi-7 asebenzisa umsindo wakho ophuthumayo. Izexwayiso zokuphepha nezekhaya zihlala zisebenzisa umsindo wefoni yakho.';
+
+  @override
+  String get soundPhoneDefault => 'Umsindo wefoni';
+
+  @override
+  String get soundGroupCalm => 'Ezizolile';
+
+  @override
+  String get soundGroupFun => 'Ezijabulisayo';
+
+  @override
+  String get soundChannelGroup => 'Imisindo yezikhumbuzo';
+
+  @override
+  String get soundChime => 'Insimbi encane';
+
+  @override
+  String get soundBell => 'Insimbi';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Ukukhanya';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Ukuvula pop';
+
+  @override
+  String get soundBubbles => 'Amagwebu';
+
+  @override
+  String get soundWhistle => 'Impempe';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Isayilofoni';
+
+  @override
+  String get soundCoin => 'Uhlamvu lwemali';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Qamba kabusha isigaba';
 
   @override

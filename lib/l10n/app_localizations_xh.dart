@@ -8016,6 +8016,78 @@ class AppLocalizationsXh extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Ngumntu owongeze le rekhodi kuphela, okanye umnini wekhaya, onokuyicima.';
 
   @override
+  String get reminderSoundTitle => 'Isandi sesikhumbuzo';
+
+  @override
+  String get reminderSoundHint => 'Sidlala kwizikhumbuzo phambi kokuba irekhodi iphelelwe. Cofa isandi ukuze usive.';
+
+  @override
+  String get urgentSoundTitle => 'Isandi esingxamisekileyo';
+
+  @override
+  String get urgentSoundHint => 'Sidlala xa irekhodi iphelelwe okanye iza kuphelelwa kwiintsuku ezi-7. Cofa isandi ukuze usive.';
+
+  @override
+  String get reminderSoundNote => 'Iirekhodi eziphelelweyo nezo ziza kuphelelwa kwiintsuku ezi-7 zisebenzisa isandi sakho esingxamisekileyo. Izilumkiso zokhuseleko nezekhaya zihlala zisebenzisa isandi sefowuni yakho.';
+
+  @override
+  String get soundPhoneDefault => 'Isandi sefowuni';
+
+  @override
+  String get soundGroupCalm => 'Ezizolileyo';
+
+  @override
+  String get soundGroupFun => 'Ezonwabisayo';
+
+  @override
+  String get soundChannelGroup => 'Izandi zezikhumbuzo';
+
+  @override
+  String get soundChime => 'Intsimbi encinci';
+
+  @override
+  String get soundBell => 'Intsimbi';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Ukukhanya';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Ukuvula pop';
+
+  @override
+  String get soundBubbles => 'Amaqamza';
+
+  @override
+  String get soundWhistle => 'Impempe';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Isilofoni';
+
+  @override
+  String get soundCoin => 'Ingqekembe';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwak';
+
+  @override
   String get renameCategoryTitle => 'Thiya kwakhona udidi';
 
   @override

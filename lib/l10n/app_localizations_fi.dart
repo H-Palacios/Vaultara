@@ -8020,6 +8020,78 @@ class AppLocalizationsFi extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Vain tämän tietueen lisännyt henkilö tai kotitalouden omistaja voi poistaa sen.';
 
   @override
+  String get reminderSoundTitle => 'Muistutusääni';
+
+  @override
+  String get reminderSoundHint => 'Soi muistutuksissa ennen tietueen vanhenemista. Napauta ääntä kuullaksesi sen.';
+
+  @override
+  String get urgentSoundTitle => 'Kiireellinen ääni';
+
+  @override
+  String get urgentSoundHint => 'Soi, kun tietue on vanhentunut tai vanhenee 7 päivän kuluessa. Napauta ääntä kuullaksesi sen.';
+
+  @override
+  String get reminderSoundNote => 'Vanhentuneet tietueet ja 7 päivän kuluessa vanhenevat tietueet käyttävät kiireellistä ääntäsi. Tietoturva- ja kotitaloushälytykset käyttävät aina puhelimen omaa ääntä.';
+
+  @override
+  String get soundPhoneDefault => 'Puhelimen ääni';
+
+  @override
+  String get soundGroupCalm => 'Rauhalliset';
+
+  @override
+  String get soundGroupFun => 'Hauskat';
+
+  @override
+  String get soundChannelGroup => 'Muistutusäänet';
+
+  @override
+  String get soundChime => 'Kilinä';
+
+  @override
+  String get soundBell => 'Kello';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Hehku';
+
+  @override
+  String get soundBoing => 'Poing';
+
+  @override
+  String get soundUnlockPop => 'Lukon pop';
+
+  @override
+  String get soundBubbles => 'Kuplat';
+
+  @override
+  String get soundWhistle => 'Pilli';
+
+  @override
+  String get soundTada => 'Tadaa';
+
+  @override
+  String get soundXylophone => 'Ksylofoni';
+
+  @override
+  String get soundCoin => 'Kolikko';
+
+  @override
+  String get soundBoop => 'Puup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kvaak';
+
+  @override
   String get renameCategoryTitle => 'Nimeä luokka uudelleen';
 
   @override

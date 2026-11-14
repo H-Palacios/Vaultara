@@ -8016,6 +8016,78 @@ class AppLocalizationsHy extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Այս գրառումը կարող է ջնջել միայն այն ավելացնողը կամ ընտանիքի սեփականատերը։';
 
   @override
+  String get reminderSoundTitle => 'Հիշեցման ձայն';
+
+  @override
+  String get reminderSoundHint => 'Հնչում է հիշեցումների համար՝ նախքան գրառման ժամկետի լրանալը։ Հպեք ձայնին՝ լսելու համար։';
+
+  @override
+  String get urgentSoundTitle => 'Շտապ ձայն';
+
+  @override
+  String get urgentSoundHint => 'Հնչում է, երբ գրառման ժամկետը լրացել է կամ լրանում է 7 օրվա ընթացքում։ Հպեք ձայնին՝ լսելու համար։';
+
+  @override
+  String get reminderSoundNote => 'Ժամկետանց գրառումները և 7 օրվա ընթացքում լրացողներն օգտագործում են ձեր շտապ ձայնը։ Անվտանգության և ընտանիքի ծանուցումները միշտ օգտագործում են հեռախոսի սեփական ձայնը։';
+
+  @override
+  String get soundPhoneDefault => 'Հեռախոսի ձայն';
+
+  @override
+  String get soundGroupCalm => 'Հանգիստ';
+
+  @override
+  String get soundGroupFun => 'Զվարճալի';
+
+  @override
+  String get soundChannelGroup => 'Հիշեցման ձայներ';
+
+  @override
+  String get soundChime => 'Զնգոց';
+
+  @override
+  String get soundBell => 'Զանգ';
+
+  @override
+  String get soundMarimba => 'Մարիմբա';
+
+  @override
+  String get soundDingDong => 'Դինգ-դոնգ';
+
+  @override
+  String get soundGlow => 'Փայլ';
+
+  @override
+  String get soundBoing => 'Բոյնգ';
+
+  @override
+  String get soundUnlockPop => 'Բացման պոպ';
+
+  @override
+  String get soundBubbles => 'Պղպջակներ';
+
+  @override
+  String get soundWhistle => 'Սուլիչ';
+
+  @override
+  String get soundTada => 'Տա-դա';
+
+  @override
+  String get soundXylophone => 'Քսիլոֆոն';
+
+  @override
+  String get soundCoin => 'Մետաղադրամ';
+
+  @override
+  String get soundBoop => 'Բուպ';
+
+  @override
+  String get soundBaDumTss => 'Բա-դում-թս';
+
+  @override
+  String get soundQuack => 'Կրյա';
+
+  @override
   String get renameCategoryTitle => 'Վերանվանել կատեգորիան';
 
   @override

@@ -8016,6 +8016,78 @@ class AppLocalizationsAm extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'ይህን መዝገብ ያከለው ሰው ወይም የቤተሰቡ ባለቤት ብቻ ሊሰርዘው ይችላል።';
 
   @override
+  String get reminderSoundTitle => 'የማስታወሻ ድምፅ';
+
+  @override
+  String get reminderSoundHint => 'መዝገብ ከማብቃቱ በፊት ለሚመጡ ማስታወሻዎች ይጫወታል። ለመስማት ድምፅ ይንኩ።';
+
+  @override
+  String get urgentSoundTitle => 'የአስቸኳይ ድምፅ';
+
+  @override
+  String get urgentSoundHint => 'መዝገብ ሲያበቃ ወይም በ7 ቀናት ውስጥ ሲያበቃ ይጫወታል። ለመስማት ድምፅ ይንኩ።';
+
+  @override
+  String get reminderSoundNote => 'ያበቁ መዝገቦች እና በ7 ቀናት ውስጥ የሚያበቁ መዝገቦች የአስቸኳይ ድምፅዎን ይጠቀማሉ። የደህንነት እና የቤተሰብ ማንቂያዎች ሁልጊዜ የስልክዎን ድምፅ ይጠቀማሉ።';
+
+  @override
+  String get soundPhoneDefault => 'የስልክ ነባሪ';
+
+  @override
+  String get soundGroupCalm => 'የተረጋጋ';
+
+  @override
+  String get soundGroupFun => 'አዝናኝ';
+
+  @override
+  String get soundChannelGroup => 'የማስታወሻ ድምፆች';
+
+  @override
+  String get soundChime => 'ጩኸት';
+
+  @override
+  String get soundBell => 'ደወል';
+
+  @override
+  String get soundMarimba => 'ማሪምባ';
+
+  @override
+  String get soundDingDong => 'ዲንግ-ዶንግ';
+
+  @override
+  String get soundGlow => 'ብርሃን';
+
+  @override
+  String get soundBoing => 'ቦይንግ';
+
+  @override
+  String get soundUnlockPop => 'የመክፈቻ ፖፕ';
+
+  @override
+  String get soundBubbles => 'አረፋዎች';
+
+  @override
+  String get soundWhistle => 'ፊሽካ';
+
+  @override
+  String get soundTada => 'ታ-ዳ';
+
+  @override
+  String get soundXylophone => 'ዛይሎፎን';
+
+  @override
+  String get soundCoin => 'ሳንቲም';
+
+  @override
+  String get soundBoop => 'ቡፕ';
+
+  @override
+  String get soundBaDumTss => 'ባ-ዱም-ትስ';
+
+  @override
+  String get soundQuack => 'ኳክ';
+
+  @override
   String get renameCategoryTitle => 'ምድቡን እንደገና ሰይም';
 
   @override

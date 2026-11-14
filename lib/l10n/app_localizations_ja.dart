@@ -7946,6 +7946,78 @@ class AppLocalizationsJa extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'この記録を削除できるのは、追加した人か世帯のオーナーだけです。';
 
   @override
+  String get reminderSoundTitle => 'リマインダーの音';
+
+  @override
+  String get reminderSoundHint => '期限が来る前のリマインダーで鳴ります。音をタップすると聞けます。';
+
+  @override
+  String get urgentSoundTitle => '緊急時の音';
+
+  @override
+  String get urgentSoundHint => '期限切れ、または7日以内に期限が来る記録で鳴ります。音をタップすると聞けます。';
+
+  @override
+  String get reminderSoundNote => '期限切れの記録と7日以内に期限が来る記録は緊急時の音を使います。セキュリティと世帯の通知は常にスマートフォン本体の音を使います。';
+
+  @override
+  String get soundPhoneDefault => 'スマートフォンの音';
+
+  @override
+  String get soundGroupCalm => '落ち着いた音';
+
+  @override
+  String get soundGroupFun => '楽しい音';
+
+  @override
+  String get soundChannelGroup => 'リマインダーの音';
+
+  @override
+  String get soundChime => 'チャイム';
+
+  @override
+  String get soundBell => 'ベル';
+
+  @override
+  String get soundMarimba => 'マリンバ';
+
+  @override
+  String get soundDingDong => 'ピンポーン';
+
+  @override
+  String get soundGlow => 'きらめき';
+
+  @override
+  String get soundBoing => 'ボヨーン';
+
+  @override
+  String get soundUnlockPop => 'カチャッとポン';
+
+  @override
+  String get soundBubbles => 'あわあわ';
+
+  @override
+  String get soundWhistle => 'ホイッスル';
+
+  @override
+  String get soundTada => 'ジャジャーン';
+
+  @override
+  String get soundXylophone => '木琴';
+
+  @override
+  String get soundCoin => 'コイン';
+
+  @override
+  String get soundBoop => 'ピポッ';
+
+  @override
+  String get soundBaDumTss => 'ドゥンドゥン・チー';
+
+  @override
+  String get soundQuack => 'ガーガー';
+
+  @override
   String get renameCategoryTitle => 'カテゴリ名を変更';
 
   @override

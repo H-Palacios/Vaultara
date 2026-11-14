@@ -7953,6 +7953,78 @@ class AppLocalizationsId extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Hanya orang yang menambahkan catatan ini, atau pemilik rumah tangga, yang dapat menghapusnya.';
 
   @override
+  String get reminderSoundTitle => 'Suara pengingat';
+
+  @override
+  String get reminderSoundHint => 'Diputar untuk pengingat sebelum catatan kedaluwarsa. Ketuk suara untuk mendengarnya.';
+
+  @override
+  String get urgentSoundTitle => 'Suara mendesak';
+
+  @override
+  String get urgentSoundHint => 'Diputar saat catatan sudah kedaluwarsa atau kedaluwarsa dalam 7 hari. Ketuk suara untuk mendengarnya.';
+
+  @override
+  String get reminderSoundNote => 'Catatan yang sudah kedaluwarsa dan yang kedaluwarsa dalam 7 hari memakai suara mendesak Anda. Peringatan keamanan dan rumah tangga selalu memakai suara bawaan ponsel Anda.';
+
+  @override
+  String get soundPhoneDefault => 'Suara ponsel';
+
+  @override
+  String get soundGroupCalm => 'Tenang';
+
+  @override
+  String get soundGroupFun => 'Seru';
+
+  @override
+  String get soundChannelGroup => 'Suara pengingat';
+
+  @override
+  String get soundChime => 'Lonceng kecil';
+
+  @override
+  String get soundBell => 'Lonceng';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Cahaya';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Buka kunci';
+
+  @override
+  String get soundBubbles => 'Gelembung';
+
+  @override
+  String get soundWhistle => 'Peluit';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Gambang';
+
+  @override
+  String get soundCoin => 'Koin';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kwek';
+
+  @override
   String get renameCategoryTitle => 'Ganti nama kategori';
 
   @override

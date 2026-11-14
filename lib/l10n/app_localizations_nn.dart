@@ -8020,6 +8020,78 @@ class AppLocalizationsNn extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Berre personen som la til denne oppføringa, eller eigaren av hushaldet, kan slette ho.';
 
   @override
+  String get reminderSoundTitle => 'Påminningslyd';
+
+  @override
+  String get reminderSoundHint => 'Vert spela av for påminningar før ei oppføring går ut. Trykk på ein lyd for å høyre han.';
+
+  @override
+  String get urgentSoundTitle => 'Hastelyd';
+
+  @override
+  String get urgentSoundHint => 'Vert spela av når ei oppføring har gått ut eller går ut innan 7 dagar. Trykk på ein lyd for å høyre han.';
+
+  @override
+  String get reminderSoundNote => 'Utgåtte oppføringar og oppføringar som går ut innan 7 dagar, brukar hastelyden din. Tryggleiks- og hushaldsvarsel brukar alltid lyden til telefonen.';
+
+  @override
+  String get soundPhoneDefault => 'Lyden til telefonen';
+
+  @override
+  String get soundGroupCalm => 'Rolege';
+
+  @override
+  String get soundGroupFun => 'Morosame';
+
+  @override
+  String get soundChannelGroup => 'Påminningslydar';
+
+  @override
+  String get soundChime => 'Klokkespel';
+
+  @override
+  String get soundBell => 'Bjølle';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Glød';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Opplåsingspop';
+
+  @override
+  String get soundBubbles => 'Bobler';
+
+  @override
+  String get soundWhistle => 'Fløyte';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Xylofon';
+
+  @override
+  String get soundCoin => 'Mynt';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Kvakk';
+
+  @override
   String get renameCategoryTitle => 'Gi kategorien nytt namn';
 
   @override

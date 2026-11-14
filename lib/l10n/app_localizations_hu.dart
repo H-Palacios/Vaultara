@@ -8016,6 +8016,78 @@ class AppLocalizationsHu extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Ezt a bejegyzést csak az törölheti, aki hozzáadta, vagy a háztartás tulajdonosa.';
 
   @override
+  String get reminderSoundTitle => 'Emlékeztető hangja';
+
+  @override
+  String get reminderSoundHint => 'Az emlékeztetőknél szól, mielőtt egy bejegyzés lejár. Koppints egy hangra a meghallgatáshoz.';
+
+  @override
+  String get urgentSoundTitle => 'Sürgős hang';
+
+  @override
+  String get urgentSoundHint => 'Akkor szól, ha egy bejegyzés lejárt vagy 7 napon belül lejár. Koppints egy hangra a meghallgatáshoz.';
+
+  @override
+  String get reminderSoundNote => 'A lejárt és a 7 napon belül lejáró bejegyzések a sürgős hangodat használják. A biztonsági és háztartási értesítések mindig a telefon saját hangját használják.';
+
+  @override
+  String get soundPhoneDefault => 'A telefon hangja';
+
+  @override
+  String get soundGroupCalm => 'Nyugodt';
+
+  @override
+  String get soundGroupFun => 'Vicces';
+
+  @override
+  String get soundChannelGroup => 'Emlékeztető hangok';
+
+  @override
+  String get soundChime => 'Csengettyű';
+
+  @override
+  String get soundBell => 'Harang';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Ragyogás';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Nyitás-pukk';
+
+  @override
+  String get soundBubbles => 'Buborékok';
+
+  @override
+  String get soundWhistle => 'Síp';
+
+  @override
+  String get soundTada => 'Tádám';
+
+  @override
+  String get soundXylophone => 'Xilofon';
+
+  @override
+  String get soundCoin => 'Érme';
+
+  @override
+  String get soundBoop => 'Búp';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Háp';
+
+  @override
   String get renameCategoryTitle => 'Kategória átnevezése';
 
   @override

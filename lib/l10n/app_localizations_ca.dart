@@ -8020,6 +8020,78 @@ class AppLocalizationsCa extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Només la persona que ha afegit aquest registre, o el propietari de la llar, el pot eliminar.';
 
   @override
+  String get reminderSoundTitle => 'So del recordatori';
+
+  @override
+  String get reminderSoundHint => 'Sona en els recordatoris abans que venci un registre. Toca un so per escoltar-lo.';
+
+  @override
+  String get urgentSoundTitle => 'So urgent';
+
+  @override
+  String get urgentSoundHint => 'Sona quan un registre ha vençut o venç en 7 dies. Toca un so per escoltar-lo.';
+
+  @override
+  String get reminderSoundNote => 'Els registres vençuts i els que vencen en 7 dies fan servir el teu so urgent. Les alertes de seguretat i de la llar sempre fan servir el so del teu telèfon.';
+
+  @override
+  String get soundPhoneDefault => 'So del telèfon';
+
+  @override
+  String get soundGroupCalm => 'Tranquils';
+
+  @override
+  String get soundGroupFun => 'Divertits';
+
+  @override
+  String get soundChannelGroup => 'Sons dels recordatoris';
+
+  @override
+  String get soundChime => 'Carilló';
+
+  @override
+  String get soundBell => 'Campana';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Resplendor';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Pop de desbloqueig';
+
+  @override
+  String get soundBubbles => 'Bombolles';
+
+  @override
+  String get soundWhistle => 'Xiulet';
+
+  @override
+  String get soundTada => 'Ta-xan';
+
+  @override
+  String get soundXylophone => 'Xilòfon';
+
+  @override
+  String get soundCoin => 'Moneda';
+
+  @override
+  String get soundBoop => 'Bup';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Quac';
+
+  @override
   String get renameCategoryTitle => 'Canvia el nom de la categoria';
 
   @override

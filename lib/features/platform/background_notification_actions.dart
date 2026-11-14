@@ -6,6 +6,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as tzdata;
 import 'package:timezone/timezone.dart' as tz;
+import 'package:vaultara/features/reminders/logic/reminder_sounds.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_details.dart';
 
 const String kNotificationRenewActionId = 'renew';
 const String kNotificationSnoozeActionId = 'snooze';
@@ -29,6 +31,7 @@ class NotificationPayload {
     required this.snoozeLabel,
     this.hour = 9,
     this.minute = 0,
+    this.sound = 'default',
   });
 
   final String id;
@@ -39,6 +42,7 @@ class NotificationPayload {
   final String snoozeLabel;
   final int hour;
   final int minute;
+  final String sound;
 
   String encode() => encodeNotificationPayload(
         id: id,
@@ -49,6 +53,7 @@ class NotificationPayload {
         snoozeLabel: snoozeLabel,
         hour: hour,
         minute: minute,
+        sound: sound,
       );
 }
 
@@ -61,6 +66,7 @@ String encodeNotificationPayload({
   required String snoozeLabel,
   int hour = 9,
   int minute = 0,
+  String sound = 'default',
 }) {
   return jsonEncode(<String, Object>{
     'id': id,
@@ -71,7 +77,14 @@ String encodeNotificationPayload({
     'snoozeLabel': snoozeLabel,
     'hour': hour,
     'minute': minute,
+    'sound': sound,
   });
+}
+
+String _soundOf(Object? value) {
+  return value is String && ReminderSounds.isUrgentSound(value)
+      ? value
+      : ReminderSounds.phoneDefault;
 }
 
 NotificationPayload? decodeNotificationPayload(String? raw) {
@@ -92,6 +105,7 @@ NotificationPayload? decodeNotificationPayload(String? raw) {
       snoozeLabel: _asString(data['snoozeLabel']),
       hour: _bounded(_asInt(data['hour'], 9), 0, 23),
       minute: _bounded(_asInt(data['minute'], 0), 0, 59),
+      sound: _soundOf(data['sound']),
     );
   } catch (_) {
     return null;
@@ -165,9 +179,10 @@ Future<void> _snoozeInBackground(NotificationPayload payload) async {
       fireAt,
       NotificationDetails(
         android: AndroidNotificationDetails(
-          kNotificationChannelId,
+          ReminderSoundDetails.channelId(payload.sound),
           kNotificationChannelName,
           channelDescription: kNotificationChannelDescription,
+          sound: ReminderSoundDetails.android(payload.sound),
           importance: Importance.high,
           priority: Priority.high,
           icon: kNotificationIcon,
@@ -188,8 +203,9 @@ Future<void> _snoozeInBackground(NotificationPayload payload) async {
             ),
           ],
         ),
-        iOS: const DarwinNotificationDetails(
+        iOS: DarwinNotificationDetails(
           categoryIdentifier: kIosActionsCategory,
+          sound: ReminderSoundDetails.ios(payload.sound),
         ),
       ),
       payload: payload.encode(),

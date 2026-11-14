@@ -8016,6 +8016,78 @@ class AppLocalizationsTa extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'இந்தப் பதிவைச் சேர்த்தவர் அல்லது குடும்ப உரிமையாளர் மட்டுமே இதை நீக்க முடியும்.';
 
   @override
+  String get reminderSoundTitle => 'நினைவூட்டல் ஒலி';
+
+  @override
+  String get reminderSoundHint => 'பதிவு காலாவதியாகும் முன் வரும் நினைவூட்டல்களுக்கு ஒலிக்கும். கேட்க ஒலியைத் தட்டவும்.';
+
+  @override
+  String get urgentSoundTitle => 'அவசர ஒலி';
+
+  @override
+  String get urgentSoundHint => 'பதிவு காலாவதியானபோது அல்லது 7 நாட்களுக்குள் காலாவதியாகும்போது ஒலிக்கும். கேட்க ஒலியைத் தட்டவும்.';
+
+  @override
+  String get reminderSoundNote => 'காலாவதியான பதிவுகளும் 7 நாட்களுக்குள் காலாவதியாகும் பதிவுகளும் உங்கள் அவசர ஒலியைப் பயன்படுத்தும். பாதுகாப்பு மற்றும் குடும்ப எச்சரிக்கைகள் எப்போதும் உங்கள் ஃபோனின் சொந்த ஒலியைப் பயன்படுத்தும்.';
+
+  @override
+  String get soundPhoneDefault => 'ஃபோன் ஒலி';
+
+  @override
+  String get soundGroupCalm => 'அமைதியான';
+
+  @override
+  String get soundGroupFun => 'வேடிக்கையான';
+
+  @override
+  String get soundChannelGroup => 'நினைவூட்டல் ஒலிகள்';
+
+  @override
+  String get soundChime => 'சைம்';
+
+  @override
+  String get soundBell => 'மணி';
+
+  @override
+  String get soundMarimba => 'மரிம்பா';
+
+  @override
+  String get soundDingDong => 'டிங்-டாங்';
+
+  @override
+  String get soundGlow => 'ஒளிர்வு';
+
+  @override
+  String get soundBoing => 'போயிங்';
+
+  @override
+  String get soundUnlockPop => 'அன்லாக் பாப்';
+
+  @override
+  String get soundBubbles => 'குமிழிகள்';
+
+  @override
+  String get soundWhistle => 'விசில்';
+
+  @override
+  String get soundTada => 'டா-டா';
+
+  @override
+  String get soundXylophone => 'சைலோஃபோன்';
+
+  @override
+  String get soundCoin => 'நாணயம்';
+
+  @override
+  String get soundBoop => 'பூப்';
+
+  @override
+  String get soundBaDumTss => 'பா-டும்-ட்ஸ்';
+
+  @override
+  String get soundQuack => 'க்வாக்';
+
+  @override
   String get renameCategoryTitle => 'வகையின் பெயரை மாற்று';
 
   @override

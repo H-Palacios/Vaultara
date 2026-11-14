@@ -13855,6 +13855,150 @@ abstract class AppLocalizations {
   /// **'Only the person who added this record, or the household owner, can delete it.'**
   String get recordDeleteOnlyCreator;
 
+  /// Notifications settings: the sound that plays for reminders. Also the title of the sound picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder sound'**
+  String get reminderSoundTitle;
+
+  /// Shown at the top of the reminder sound picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Plays for reminders before a record expires. Tap a sound to hear it.'**
+  String get reminderSoundHint;
+
+  /// Notifications settings: the calm sound used for expired records and records due within 7 days when a fun reminder sound is picked.
+  ///
+  /// In en, this message translates to:
+  /// **'Urgent sound'**
+  String get urgentSoundTitle;
+
+  /// Shown at the top of the urgent sound picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Plays when a record has expired or is due within 7 days. Tap a sound to hear it.'**
+  String get urgentSoundHint;
+
+  /// Shown under the reminder sound when a fun sound is picked. Keep it complete; it wraps onto more lines.
+  ///
+  /// In en, this message translates to:
+  /// **'Expired records and records due within 7 days use your urgent sound. Security and household alerts always use your phone’s own sound.'**
+  String get reminderSoundNote;
+
+  /// Sound option: the phone’s own notification sound.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone default'**
+  String get soundPhoneDefault;
+
+  /// Heading above the calm sounds in the sound picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Calm'**
+  String get soundGroupCalm;
+
+  /// Heading above the playful sounds in the sound picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Fun'**
+  String get soundGroupFun;
+
+  /// Android shows this as the group name of Vaultara’s sound channels in the phone’s notification settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder sounds'**
+  String get soundChannelGroup;
+
+  /// Sound name: two soft rising notes.
+  ///
+  /// In en, this message translates to:
+  /// **'Chime'**
+  String get soundChime;
+
+  /// Sound name: one soft bell.
+  ///
+  /// In en, this message translates to:
+  /// **'Bell'**
+  String get soundBell;
+
+  /// Sound name: two wooden marimba notes.
+  ///
+  /// In en, this message translates to:
+  /// **'Marimba'**
+  String get soundMarimba;
+
+  /// Sound name: a gentle doorbell.
+  ///
+  /// In en, this message translates to:
+  /// **'Ding-dong'**
+  String get soundDingDong;
+
+  /// Sound name: a soft chord that fades out.
+  ///
+  /// In en, this message translates to:
+  /// **'Glow'**
+  String get soundGlow;
+
+  /// Sound name: a cartoon spring.
+  ///
+  /// In en, this message translates to:
+  /// **'Boing'**
+  String get soundBoing;
+
+  /// Sound name: a lock clicking open, then a happy pop.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlock pop'**
+  String get soundUnlockPop;
+
+  /// Sound name: three rising bubbles.
+  ///
+  /// In en, this message translates to:
+  /// **'Bubbles'**
+  String get soundBubbles;
+
+  /// Sound name: a cartoon slide whistle.
+  ///
+  /// In en, this message translates to:
+  /// **'Whistle'**
+  String get soundWhistle;
+
+  /// Sound name: a short fanfare.
+  ///
+  /// In en, this message translates to:
+  /// **'Ta-da'**
+  String get soundTada;
+
+  /// Sound name: four xylophone notes.
+  ///
+  /// In en, this message translates to:
+  /// **'Xylophone'**
+  String get soundXylophone;
+
+  /// Sound name: a game coin sparkle.
+  ///
+  /// In en, this message translates to:
+  /// **'Coin'**
+  String get soundCoin;
+
+  /// Sound name: a cute robot boop boop.
+  ///
+  /// In en, this message translates to:
+  /// **'Boop'**
+  String get soundBoop;
+
+  /// Sound name: the joke drum.
+  ///
+  /// In en, this message translates to:
+  /// **'Ba-dum-tss'**
+  String get soundBaDumTss;
+
+  /// Sound name: a cartoon duck.
+  ///
+  /// In en, this message translates to:
+  /// **'Quack'**
+  String get soundQuack;
+
   /// Title of the sheet to rename a category.
   ///
   /// In en, this message translates to:

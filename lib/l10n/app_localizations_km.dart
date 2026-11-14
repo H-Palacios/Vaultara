@@ -7956,6 +7956,78 @@ class AppLocalizationsKm extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'មានតែអ្នកដែលបានបន្ថែមកំណត់ត្រានេះ ឬម្ចាស់គ្រួសារប៉ុណ្ណោះ ដែលអាចលុបវាបាន។';
 
   @override
+  String get reminderSoundTitle => 'សំឡេងរំលឹក';
+
+  @override
+  String get reminderSoundHint => 'លេងសម្រាប់ការរំលឹកមុនពេលកំណត់ត្រាផុតកំណត់។ ចុចលើសំឡេងដើម្បីស្ដាប់។';
+
+  @override
+  String get urgentSoundTitle => 'សំឡេងបន្ទាន់';
+
+  @override
+  String get urgentSoundHint => 'លេងនៅពេលកំណត់ត្រាផុតកំណត់ ឬនឹងផុតកំណត់ក្នុង 7 ថ្ងៃ។ ចុចលើសំឡេងដើម្បីស្ដាប់។';
+
+  @override
+  String get reminderSoundNote => 'កំណត់ត្រាដែលផុតកំណត់ និងកំណត់ត្រាដែលនឹងផុតកំណត់ក្នុង 7 ថ្ងៃ ប្រើសំឡេងបន្ទាន់របស់អ្នក។ ការជូនដំណឹងសុវត្ថិភាព និងគ្រួសារ តែងតែប្រើសំឡេងទូរសព្ទរបស់អ្នក។';
+
+  @override
+  String get soundPhoneDefault => 'សំឡេងទូរសព្ទ';
+
+  @override
+  String get soundGroupCalm => 'ស្ងប់';
+
+  @override
+  String get soundGroupFun => 'កំប្លែង';
+
+  @override
+  String get soundChannelGroup => 'សំឡេងរំលឹក';
+
+  @override
+  String get soundChime => 'កណ្ដឹងតូច';
+
+  @override
+  String get soundBell => 'កណ្ដឹង';
+
+  @override
+  String get soundMarimba => 'ម៉ារីមបា';
+
+  @override
+  String get soundDingDong => 'ឌីង-ដុង';
+
+  @override
+  String get soundGlow => 'ពន្លឺ';
+
+  @override
+  String get soundBoing => 'បូអ៊ីង';
+
+  @override
+  String get soundUnlockPop => 'បើកសោ';
+
+  @override
+  String get soundBubbles => 'ពពុះ';
+
+  @override
+  String get soundWhistle => 'កញ្ចែ';
+
+  @override
+  String get soundTada => 'តា-ដា';
+
+  @override
+  String get soundXylophone => 'រនាត';
+
+  @override
+  String get soundCoin => 'កាក់';
+
+  @override
+  String get soundBoop => 'ប៊ូប';
+
+  @override
+  String get soundBaDumTss => 'បា-ឌុម-ត្ស';
+
+  @override
+  String get soundQuack => 'ក្វាក';
+
+  @override
   String get renameCategoryTitle => 'ប្ដូរឈ្មោះប្រភេទ';
 
   @override

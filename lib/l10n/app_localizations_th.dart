@@ -7946,6 +7946,78 @@ class AppLocalizationsTh extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'มีเพียงผู้ที่เพิ่มรายการนี้หรือเจ้าของบ้านเท่านั้นที่ลบได้';
 
   @override
+  String get reminderSoundTitle => 'เสียงแจ้งเตือน';
+
+  @override
+  String get reminderSoundHint => 'ดังสำหรับการแจ้งเตือนก่อนรายการหมดอายุ แตะเสียงเพื่อฟัง';
+
+  @override
+  String get urgentSoundTitle => 'เสียงเร่งด่วน';
+
+  @override
+  String get urgentSoundHint => 'ดังเมื่อรายการหมดอายุแล้วหรือจะหมดอายุภายใน 7 วัน แตะเสียงเพื่อฟัง';
+
+  @override
+  String get reminderSoundNote => 'รายการที่หมดอายุแล้วและรายการที่จะหมดอายุภายใน 7 วันจะใช้เสียงเร่งด่วนของคุณ การแจ้งเตือนด้านความปลอดภัยและของบ้านจะใช้เสียงของโทรศัพท์เสมอ';
+
+  @override
+  String get soundPhoneDefault => 'เสียงโทรศัพท์';
+
+  @override
+  String get soundGroupCalm => 'สงบ';
+
+  @override
+  String get soundGroupFun => 'สนุก';
+
+  @override
+  String get soundChannelGroup => 'เสียงแจ้งเตือน';
+
+  @override
+  String get soundChime => 'กระดิ่งลม';
+
+  @override
+  String get soundBell => 'ระฆัง';
+
+  @override
+  String get soundMarimba => 'มาริมบา';
+
+  @override
+  String get soundDingDong => 'ติ๊งต่อง';
+
+  @override
+  String get soundGlow => 'แสงนวล';
+
+  @override
+  String get soundBoing => 'ดึ๋ง';
+
+  @override
+  String get soundUnlockPop => 'ปลดล็อกป๊อป';
+
+  @override
+  String get soundBubbles => 'ฟองสบู่';
+
+  @override
+  String get soundWhistle => 'นกหวีด';
+
+  @override
+  String get soundTada => 'ทาดา';
+
+  @override
+  String get soundXylophone => 'ระนาด';
+
+  @override
+  String get soundCoin => 'เหรียญ';
+
+  @override
+  String get soundBoop => 'บี๊บ';
+
+  @override
+  String get soundBaDumTss => 'บาดุมซ';
+
+  @override
+  String get soundQuack => 'ก๊าบ ๆ';
+
+  @override
   String get renameCategoryTitle => 'เปลี่ยนชื่อหมวดหมู่';
 
   @override

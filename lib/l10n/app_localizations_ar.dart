@@ -8243,6 +8243,78 @@ class AppLocalizationsAr extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'لا يمكن حذف هذا السجل إلا لمن أضافه أو لمالك الأسرة.';
 
   @override
+  String get reminderSoundTitle => 'صوت التذكير';
+
+  @override
+  String get reminderSoundHint => 'يُشغَّل للتذكيرات قبل انتهاء السجل. اضغط على صوت لسماعه.';
+
+  @override
+  String get urgentSoundTitle => 'الصوت العاجل';
+
+  @override
+  String get urgentSoundHint => 'يُشغَّل عندما ينتهي السجل أو يقترب انتهاؤه خلال 7 أيام. اضغط على صوت لسماعه.';
+
+  @override
+  String get reminderSoundNote => 'السجلات المنتهية والسجلات التي تنتهي خلال 7 أيام تستخدم صوتك العاجل. تنبيهات الأمان والأسرة تستخدم دائمًا صوت هاتفك.';
+
+  @override
+  String get soundPhoneDefault => 'صوت الهاتف';
+
+  @override
+  String get soundGroupCalm => 'هادئ';
+
+  @override
+  String get soundGroupFun => 'مرح';
+
+  @override
+  String get soundChannelGroup => 'أصوات التذكير';
+
+  @override
+  String get soundChime => 'رنين';
+
+  @override
+  String get soundBell => 'جرس';
+
+  @override
+  String get soundMarimba => 'ماريمبا';
+
+  @override
+  String get soundDingDong => 'دينغ دونغ';
+
+  @override
+  String get soundGlow => 'توهج';
+
+  @override
+  String get soundBoing => 'بوينغ';
+
+  @override
+  String get soundUnlockPop => 'فتح وفرقعة';
+
+  @override
+  String get soundBubbles => 'فقاعات';
+
+  @override
+  String get soundWhistle => 'صفّارة';
+
+  @override
+  String get soundTada => 'تا-دا';
+
+  @override
+  String get soundXylophone => 'إكسيليفون';
+
+  @override
+  String get soundCoin => 'عملة';
+
+  @override
+  String get soundBoop => 'بوب';
+
+  @override
+  String get soundBaDumTss => 'با-دوم-تس';
+
+  @override
+  String get soundQuack => 'كواك';
+
+  @override
   String get renameCategoryTitle => 'إعادة تسمية الفئة';
 
   @override

@@ -8006,6 +8006,78 @@ class AppLocalizationsMn extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Энэ бичлэгийг зөвхөн нэмсэн хүн эсвэл гэр бүлийн эзэн устгаж болно.';
 
   @override
+  String get reminderSoundTitle => 'Сануулгын дуу';
+
+  @override
+  String get reminderSoundHint => 'Бичлэгийн хугацаа дуусахаас өмнөх сануулгад тоглоно. Сонсохын тулд дуун дээр дарна уу.';
+
+  @override
+  String get urgentSoundTitle => 'Яаралтай дуу';
+
+  @override
+  String get urgentSoundHint => 'Бичлэгийн хугацаа дууссан эсвэл 7 хоногт дуусах үед тоглоно. Сонсохын тулд дуун дээр дарна уу.';
+
+  @override
+  String get reminderSoundNote => 'Хугацаа дууссан болон 7 хоногт дуусах бичлэгүүд таны яаралтай дууг ашиглана. Аюулгүй байдал болон гэр бүлийн мэдэгдлүүд үргэлж утасны өөрийн дууг ашиглана.';
+
+  @override
+  String get soundPhoneDefault => 'Утасны дуу';
+
+  @override
+  String get soundGroupCalm => 'Тайван';
+
+  @override
+  String get soundGroupFun => 'Хөгжилтэй';
+
+  @override
+  String get soundChannelGroup => 'Сануулгын дуунууд';
+
+  @override
+  String get soundChime => 'Хонхны ая';
+
+  @override
+  String get soundBell => 'Хонх';
+
+  @override
+  String get soundMarimba => 'Маримба';
+
+  @override
+  String get soundDingDong => 'Динг-донг';
+
+  @override
+  String get soundGlow => 'Гэрэлтэлт';
+
+  @override
+  String get soundBoing => 'Боинг';
+
+  @override
+  String get soundUnlockPop => 'Онгойх поп';
+
+  @override
+  String get soundBubbles => 'Бөмбөлөг';
+
+  @override
+  String get soundWhistle => 'Шүгэл';
+
+  @override
+  String get soundTada => 'Та-да';
+
+  @override
+  String get soundXylophone => 'Ксилофон';
+
+  @override
+  String get soundCoin => 'Зоос';
+
+  @override
+  String get soundBoop => 'Буп';
+
+  @override
+  String get soundBaDumTss => 'Ба-дум-тсс';
+
+  @override
+  String get soundQuack => 'Ганг';
+
+  @override
   String get renameCategoryTitle => 'Ангиллын нэрийг өөрчлөх';
 
   @override

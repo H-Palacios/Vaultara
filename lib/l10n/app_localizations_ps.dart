@@ -8016,6 +8016,78 @@ class AppLocalizationsPs extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'دا ریکارډ یوازې هغه کس چې زیات کړی یا د کورنۍ مالک ړنګولی شي.';
 
   @override
+  String get reminderSoundTitle => 'د یادونې غږ';
+
+  @override
+  String get reminderSoundHint => 'د ریکارډ له پای ته رسیدو مخکې د یادونو لپاره غږیږي. د اورېدو لپاره پر غږ ټک وکړئ.';
+
+  @override
+  String get urgentSoundTitle => 'بیړنی غږ';
+
+  @override
+  String get urgentSoundHint => 'کله چې ریکارډ پای ته رسېدلی وي یا په 7 ورځو کې پای ته رسېږي غږیږي. د اورېدو لپاره پر غږ ټک وکړئ.';
+
+  @override
+  String get reminderSoundNote => 'پای ته رسېدلي ریکارډونه او هغه چې په 7 ورځو کې پای ته رسېږي ستاسو بیړنی غږ کاروي. د امنیت او کورنۍ خبرتیاوې تل ستاسو د تلیفون خپل غږ کاروي.';
+
+  @override
+  String get soundPhoneDefault => 'د تلیفون غږ';
+
+  @override
+  String get soundGroupCalm => 'آرام';
+
+  @override
+  String get soundGroupFun => 'ساتېري';
+
+  @override
+  String get soundChannelGroup => 'د یادونې غږونه';
+
+  @override
+  String get soundChime => 'زنګوله';
+
+  @override
+  String get soundBell => 'زنګ';
+
+  @override
+  String get soundMarimba => 'ماریمبا';
+
+  @override
+  String get soundDingDong => 'ډینګ-ډونګ';
+
+  @override
+  String get soundGlow => 'ځلا';
+
+  @override
+  String get soundBoing => 'بوینګ';
+
+  @override
+  String get soundUnlockPop => 'د خلاصېدو پاپ';
+
+  @override
+  String get soundBubbles => 'پوکڼي';
+
+  @override
+  String get soundWhistle => 'شپېلۍ';
+
+  @override
+  String get soundTada => 'تا-دا';
+
+  @override
+  String get soundXylophone => 'زایلوفون';
+
+  @override
+  String get soundCoin => 'سکه';
+
+  @override
+  String get soundBoop => 'بوپ';
+
+  @override
+  String get soundBaDumTss => 'با-ډوم-ټس';
+
+  @override
+  String get soundQuack => 'کواک';
+
+  @override
   String get renameCategoryTitle => 'د کټګورۍ نوم بدل کړئ';
 
   @override

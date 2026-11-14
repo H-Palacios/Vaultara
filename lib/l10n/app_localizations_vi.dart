@@ -7958,6 +7958,78 @@ class AppLocalizationsVi extends AppLocalizations {
   String get recordDeleteOnlyCreator => 'Chỉ người đã thêm bản ghi này, hoặc chủ gia đình, mới có thể xóa nó.';
 
   @override
+  String get reminderSoundTitle => 'Âm báo nhắc nhở';
+
+  @override
+  String get reminderSoundHint => 'Phát cho các lời nhắc trước khi bản ghi hết hạn. Chạm vào âm thanh để nghe.';
+
+  @override
+  String get urgentSoundTitle => 'Âm báo khẩn';
+
+  @override
+  String get urgentSoundHint => 'Phát khi bản ghi đã hết hạn hoặc sắp hết hạn trong 7 ngày. Chạm vào âm thanh để nghe.';
+
+  @override
+  String get reminderSoundNote => 'Bản ghi đã hết hạn và bản ghi hết hạn trong 7 ngày dùng âm báo khẩn của bạn. Cảnh báo bảo mật và gia đình luôn dùng âm thanh của điện thoại.';
+
+  @override
+  String get soundPhoneDefault => 'Âm của điện thoại';
+
+  @override
+  String get soundGroupCalm => 'Nhẹ nhàng';
+
+  @override
+  String get soundGroupFun => 'Vui nhộn';
+
+  @override
+  String get soundChannelGroup => 'Âm báo nhắc nhở';
+
+  @override
+  String get soundChime => 'Chuông gió';
+
+  @override
+  String get soundBell => 'Chuông';
+
+  @override
+  String get soundMarimba => 'Marimba';
+
+  @override
+  String get soundDingDong => 'Ding-dong';
+
+  @override
+  String get soundGlow => 'Ánh sáng';
+
+  @override
+  String get soundBoing => 'Boing';
+
+  @override
+  String get soundUnlockPop => 'Mở khóa pop';
+
+  @override
+  String get soundBubbles => 'Bong bóng';
+
+  @override
+  String get soundWhistle => 'Còi';
+
+  @override
+  String get soundTada => 'Ta-da';
+
+  @override
+  String get soundXylophone => 'Mộc cầm';
+
+  @override
+  String get soundCoin => 'Đồng xu';
+
+  @override
+  String get soundBoop => 'Bíp bíp';
+
+  @override
+  String get soundBaDumTss => 'Ba-dum-tss';
+
+  @override
+  String get soundQuack => 'Cạc cạc';
+
+  @override
   String get renameCategoryTitle => 'Đổi tên danh mục';
 
   @override
