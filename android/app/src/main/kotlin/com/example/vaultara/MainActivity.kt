@@ -1,5 +1,6 @@
 package com.vaultara.app
 
+import android.app.ActivityManager
 import android.content.ClipData
 import android.content.ClipDescription
 import android.content.ClipboardManager
@@ -50,6 +51,7 @@ class MainActivity : FlutterFragmentActivity() {
                     }
                     "clearClipboardIf" -> result.success(clearClipboardIf(call.arguments as? String))
                     "regionHints" -> result.success(regionHints())
+                    "backgroundRestricted" -> result.success(backgroundRestricted())
                     else -> result.notImplemented()
                 }
             }
@@ -129,6 +131,16 @@ class MainActivity : FlutterFragmentActivity() {
             "cleared"
         } catch (e: Exception) {
             "unavailable"
+        }
+    }
+
+    private fun backgroundRestricted(): Boolean {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P) return false
+        val manager = getSystemService(Context.ACTIVITY_SERVICE) as? ActivityManager ?: return false
+        return try {
+            manager.isBackgroundRestricted
+        } catch (e: Exception) {
+            false
         }
     }
 
