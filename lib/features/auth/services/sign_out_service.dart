@@ -22,6 +22,7 @@ import 'package:vaultara/features/reminders/services/push_service.dart';
 import 'package:vaultara/features/insights/services/insight_snoozes.dart';
 import 'package:vaultara/core/data/user_name.dart';
 import 'package:vaultara/features/reminders/services/notification_prefs.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_prefs.dart';
 import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
 
 class SignOutService {
@@ -42,6 +43,7 @@ class SignOutService {
     await WeeklyRecapNotifier.clearForSignOut();
     await UserName.clear();
     NotificationPrefs.clearForSignOut();
+    ReminderSoundPrefs.clearForSignOut();
 
     CategoryRepository.clearForSignOut();
     RecordRepository.clearForSignOut();

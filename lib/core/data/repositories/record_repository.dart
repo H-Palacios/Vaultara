@@ -26,6 +26,7 @@ import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
 import 'package:vaultara/core/data/user_name.dart';
 import 'package:vaultara/features/reminders/logic/reminder_budget.dart';
 import 'package:vaultara/features/reminders/services/notification_prefs.dart';
+import 'package:vaultara/features/reminders/services/reminder_sound_prefs.dart';
 import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
 import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
 
@@ -523,8 +524,14 @@ class RecordRepository {
     await Future.wait<void>([
       UserName.load(),
       NotificationPrefs.load(),
+      ReminderSoundPrefs.ensureLoaded(),
       CategoryRepository.fillFromPhoneCopy(),
     ]);
+    unawaited(
+      ReminderSoundPrefs.load().then((changed) {
+        if (changed && _hasLoadedForUser) _resyncAllReminders();
+      }),
+    );
     final cached = await phoneCopy;
     if (_auth.currentUser?.uid != user.uid) return;
 
