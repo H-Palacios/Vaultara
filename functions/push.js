@@ -132,9 +132,9 @@ function isSessionDevice(doc, device) {
   return SESSION_DEVICE_ID.test(doc.id) || device.lastSeenAt !== undefined;
 }
 
-// Kinds of push the user can turn off in Notifications. Sign-in alerts are
-// not listed, so they are always sent.
-const MUTABLE_CATEGORIES = new Set(["household", "updates"]);
+// Kinds of push the user can turn off in Notifications. Sign-in alerts and
+// updates the person asked for are not listed, so they are always sent.
+const MUTABLE_CATEGORIES = new Set(["household"]);
 
 // True when users/{uid}/preferences/notifications has the category set to
 // false. A missing document or field means the default, which is on. If the

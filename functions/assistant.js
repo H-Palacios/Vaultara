@@ -543,7 +543,7 @@ const SETTINGS = [
   "reminder_time",
 ];
 // Two more notification choices, only for clients on protocol 10.
-const SETTINGS_V10 = [...SETTINGS, "after_expiry", "weekly"];
+const SETTINGS_V10 = [...SETTINGS, "after_expiry"];
 // Security settings and notifications are only turned on from the chat.
 // Turning them off stays in the settings screens.
 const ONLY_ON_SETTINGS = new Set(["app_lock", "privacy_screen", "block_screenshots", "notifications"]);
@@ -622,7 +622,7 @@ const PROPOSE_SETTING_V10 = {
   ...PROPOSE_SETTING,
   description:
     PROPOSE_SETTING.description +
-    " after_expiry: reminders 3 and 14 days after a record expired without being renewed (on by default). weekly: a note on Monday morning when something expires that week (off by default).",
+    " after_expiry: reminders 3 and 14 days after a record expired without being renewed (on by default).",
   input_schema: {
     ...PROPOSE_SETTING.input_schema,
     properties: { ...PROPOSE_SETTING.input_schema.properties, setting: { type: "string", enum: SETTINGS_V10 } },
