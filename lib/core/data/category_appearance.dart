@@ -57,33 +57,14 @@ class CategoryAppearance {
   };
 
   /// Colours that read well on light and dark cards. Null means the app's
-  /// own colour.
+  /// own colour. Red, orange, amber and green are left out on purpose:
+  /// they mean how urgent a record is.
   static const Map<String, Color> colours = <String, Color>{
     'blue': Color(0xFF3B7DD8),
     'teal': Color(0xFF14A098),
-    'green': Color(0xFF3E9B4F),
-    'amber': Color(0xFFD99A1E),
-    'orange': Color(0xFFE2702F),
-    'red': Color(0xFFD9473F),
     'pink': Color(0xFFD14D8C),
     'purple': Color(0xFF7E57C2),
   };
-
-  static const Map<String, String> presetColours = <String, String>{
-    'personal_identification': 'blue',
-    'driving_and_vehicles': 'teal',
-    'travel_and_immigration': 'purple',
-    'insurance_and_cover': 'green',
-    'banking_and_cards': 'pink',
-    'work_and_professional': 'blue',
-    'property_and_housing': 'teal',
-    'health_and_medical': 'pink',
-    'memberships_and_subscriptions': 'purple',
-  };
-
-  static Color? colourForCategory(String categoryKey, String? colourKey) {
-    return colourFor(colourKey) ?? colourFor(presetColours[categoryKey]);
-  }
 
   static IconData? iconFor(String? key) => key == null ? null : icons[key];
 
@@ -185,35 +166,35 @@ class CategoryAppearance {
   /// the same colour when nothing better is known.
   static String colourForIcon(String icon) {
     const byIcon = <String, String>{
-      'health': 'red',
-      'medicine': 'red',
-      'vaccine': 'red',
-      'hospital': 'red',
-      'gym': 'orange',
-      'sport': 'orange',
-      'pet': 'amber',
+      'health': 'pink',
+      'medicine': 'pink',
+      'vaccine': 'pink',
+      'hospital': 'pink',
+      'gym': 'purple',
+      'sport': 'purple',
+      'pet': 'teal',
       'car': 'blue',
       'motorbike': 'blue',
       'boat': 'teal',
       'flight': 'teal',
       'luggage': 'teal',
-      'home': 'green',
-      'apartment': 'green',
-      'key': 'green',
-      'power': 'amber',
+      'home': 'teal',
+      'apartment': 'teal',
+      'key': 'teal',
+      'power': 'purple',
       'internet': 'purple',
       'phone': 'purple',
       'subscription': 'pink',
       'membership': 'pink',
       'event': 'pink',
       'school': 'purple',
-      'award': 'amber',
+      'award': 'purple',
       'certificate': 'teal',
-      'savings': 'green',
+      'savings': 'blue',
       'bank': 'blue',
       'card': 'blue',
-      'receipt': 'amber',
-      'fire': 'red',
+      'receipt': 'blue',
+      'fire': 'pink',
       'child': 'pink',
       'family': 'pink',
     };

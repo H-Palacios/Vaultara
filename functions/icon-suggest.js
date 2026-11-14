@@ -70,7 +70,7 @@ const ICONS = {
   lock: "security, passwords, safes",
 };
 
-const COLOURS = ["blue", "teal", "green", "amber", "orange", "red", "pink", "purple"];
+const COLOURS = ["blue", "teal", "pink", "purple"];
 
 const SYSTEM = [
   "You pick an icon and a colour for a category in a document reminder app.",

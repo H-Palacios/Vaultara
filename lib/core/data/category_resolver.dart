@@ -56,13 +56,9 @@ class CategoryResolver {
     return category(context, key)?.icon ?? Icons.category_rounded;
   }
 
-  /// The colour of a category: the one chosen for a custom category, or the
-  /// preset's own colour.
+  /// The colour chosen for a custom category, or null to use the app's.
   static Color? categoryColour(BuildContext context, String key) {
-    return CategoryAppearance.colourForCategory(
-      key,
-      category(context, key)?.colourKey,
-    );
+    return CategoryAppearance.colourFor(category(context, key)?.colourKey);
   }
 
   /// Display label for a group. Presets resolve through the catalog; custom

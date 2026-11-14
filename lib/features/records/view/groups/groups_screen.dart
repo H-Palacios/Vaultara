@@ -248,6 +248,7 @@ class _GroupsScreenState extends State<GroupsScreen> {
       compact: compact,
       recordCount: ItemLifecycleManager.totalItemsForGroup(category, key),
       expiringSoon: ItemLifecycleManager.expiringSoonForGroup(category, key),
+      urgent: ItemLifecycleManager.urgentForGroup(category, key) > 0,
       expired: ItemLifecycleManager.expiredForGroup(category, key),
       onOpen: () => _openRecords(key),
       onRename: _isPreset(key) ? null : () => _renameGroup(key),
