@@ -23,6 +23,10 @@ import '../services/monthly_summary_service.dart';
 import '../services/push_service.dart';
 import '../services/reminder_scheduler.dart';
 import '../services/reminder_time_service.dart';
+import '../logic/reminder_sounds.dart';
+import '../services/reminder_sound_prefs.dart';
+import 'reminder_sound_names.dart';
+import 'reminder_sound_sheet.dart';
 
 class NotificationSettingsScreen extends StatefulWidget {
   const NotificationSettingsScreen({super.key});
@@ -73,6 +77,12 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
     final time = await ReminderTimeService.getTime();
     final digest = await DailyDigestService.isEnabled();
     await NotificationPrefs.load();
+    await ReminderSoundPrefs.ensureLoaded();
+    unawaited(
+      ReminderSoundPrefs.load().then((changed) {
+        if (changed) RecordRepository.resyncAllReminders();
+      }),
+    );
 
     if (!mounted) return;
     setState(() {
@@ -198,6 +208,72 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
       ),
       onTap: _loading ? null : () => _setKind(kind, !value),
     );
+  }
+
+  Widget _soundTiles(AppLocalizations t, ColorScheme scheme) {
+    final reminder = ReminderSoundPrefs.reminder;
+    final fun = ReminderSounds.isFun(reminder);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        const SizedBox(height: 12),
+        SettingsTile(
+          icon: Icons.music_note_rounded,
+          title: t.reminderSoundTitle,
+          subtitle: ReminderSoundNames.of(t, reminder),
+          onTap: _loading ? null : _pickReminderSound,
+        ),
+        if (fun) ...[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+            child: Text(
+              t.reminderSoundNote,
+              softWrap: true,
+              style: TextStyle(
+                fontSize: 12.5,
+                height: 1.4,
+                color: scheme.onSurfaceVariant,
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          SettingsTile(
+            icon: Icons.notification_important_rounded,
+            title: t.urgentSoundTitle,
+            subtitle: ReminderSoundNames.of(t, ReminderSoundPrefs.urgent),
+            onTap: _loading ? null : _pickUrgentSound,
+          ),
+        ],
+      ],
+    );
+  }
+
+  Future<void> _pickReminderSound() async {
+    final t = AppLocalizations.of(context)!;
+    final picked = await ReminderSoundSheet.show(
+      context,
+      title: t.reminderSoundTitle,
+      hint: t.reminderSoundHint,
+      selected: ReminderSoundPrefs.reminder,
+      includeFun: true,
+    );
+    if (picked == null || picked == ReminderSoundPrefs.reminder) return;
+    await ReminderSoundPrefs.setReminder(picked);
+    unawaited(RecordRepository.resyncAllReminders());
+  }
+
+  Future<void> _pickUrgentSound() async {
+    final t = AppLocalizations.of(context)!;
+    final picked = await ReminderSoundSheet.show(
+      context,
+      title: t.urgentSoundTitle,
+      hint: t.urgentSoundHint,
+      selected: ReminderSoundPrefs.urgent,
+      includeFun: false,
+    );
+    if (picked == null || picked == ReminderSoundPrefs.urgent) return;
+    await ReminderSoundPrefs.setUrgent(picked);
+    unawaited(RecordRepository.resyncAllReminders());
   }
 
   Widget _sectionTitle(String text) {
@@ -329,6 +405,24 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
               subtitle: _reminderTime.format(context),
               onTap: _pickReminderTime,
             ),
+            ValueListenableBuilder<int>(
+              valueListenable: ReminderSoundPrefs.revision,
+              builder: (context, revision, child) => _soundTiles(t, scheme),
+            ),
+            const SizedBox(height: 12),
+            SettingsTile(
+              icon: Icons.notification_add_rounded,
+              title: t.notifTestAction,
+              subtitle: t.notifTestSubtitle,
+              trailing: _sendingTest
+                  ? const SizedBox(
+                      width: 20,
+                      height: 20,
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    )
+                  : null,
+              onTap: _sendingTest ? null : _sendTest,
+            ),
             const SizedBox(height: 12),
             SettingsTile(
               icon: Icons.view_agenda_rounded,
@@ -368,20 +462,6 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
                   ),
                 ],
               ),
-            ),
-            const SizedBox(height: 12),
-            SettingsTile(
-              icon: Icons.notification_add_rounded,
-              title: t.notifTestAction,
-              subtitle: t.notifTestSubtitle,
-              trailing: _sendingTest
-                  ? const SizedBox(
-                      width: 20,
-                      height: 20,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    )
-                  : null,
-              onTap: _sendingTest ? null : _sendTest,
             ),
             if (Platform.isAndroid) ...[
               const SizedBox(height: 12),
