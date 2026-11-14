@@ -52,7 +52,7 @@ void main() {
       );
     });
 
-    test('restore and the two new settings', () {
+    test('restore and the after expiry setting', () {
       final restore = AssistantAction.fromMap(<String, Object?>{
         'type': 'restore',
         'recordId': 'r4',
@@ -63,7 +63,7 @@ void main() {
         'setting': 'weekly',
         'on': true,
       });
-      expect(weekly?.setting, 'weekly');
+      expect(weekly, isNull);
       final after = AssistantAction.fromMap(<String, Object?>{
         'type': 'setting',
         'setting': 'after_expiry',

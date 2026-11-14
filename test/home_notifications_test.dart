@@ -12,7 +12,6 @@ import 'package:vaultara/features/reminders/logic/reminder_budget.dart';
 import 'package:vaultara/features/reminders/logic/reminder_copy.dart';
 import 'package:vaultara/features/reminders/logic/reminder_plan.dart';
 import 'package:vaultara/features/reminders/logic/reminder_timing.dart';
-import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 var _ids = 0;
@@ -436,21 +435,6 @@ void main() {
       final cached = HomeOverview.fromCacheMap(overview.toCacheMap());
       expect(cached.firstName, 'Ana');
       expect(cached.totals.total, 3);
-    });
-
-    test('the Monday summary goes out on the next Monday morning', () {
-      expect(
-        WeeklyRecapNotifier.nextMonday(DateTime(2026, 11, 11, 10), 9, 0),
-        DateTime(2026, 11, 16, 9, 0),
-      );
-      expect(
-        WeeklyRecapNotifier.nextMonday(DateTime(2026, 11, 16, 8), 9, 0),
-        DateTime(2026, 11, 16, 9, 0),
-      );
-      expect(
-        WeeklyRecapNotifier.nextMonday(DateTime(2026, 11, 16, 10), 9, 0),
-        DateTime(2026, 11, 23, 9, 0),
-      );
     });
   });
 }

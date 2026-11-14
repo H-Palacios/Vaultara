@@ -10,7 +10,6 @@ import 'package:vaultara/features/platform/privacy_screen.dart';
 import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
 import 'package:vaultara/features/reminders/services/monthly_summary_service.dart';
 import 'package:vaultara/features/reminders/services/notification_prefs.dart';
-import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
 import 'package:vaultara/features/reminders/services/push_service.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
@@ -55,8 +54,6 @@ class AssistantSettings {
         return loc.reminderTimeTitle;
       case 'after_expiry':
         return loc.notifAfterExpiryTitle;
-      case 'weekly':
-        return loc.notifWeeklyTitle;
     }
     return '';
   }
@@ -79,8 +76,6 @@ class AssistantSettings {
         return Icons.schedule_rounded;
       case 'after_expiry':
         return Icons.event_busy_rounded;
-      case 'weekly':
-        return Icons.calendar_view_week_rounded;
     }
     return Icons.settings_rounded;
   }
@@ -179,17 +174,9 @@ class AssistantSettings {
       case 'reminder_time':
         return _reminderTime(context, timeOf(action.settingTime));
       case 'after_expiry':
-      case 'weekly':
         final kindOn = action.settingOn;
         if (kindOn == null) break;
-        return _kind(
-          context,
-          setting,
-          setting == 'weekly'
-              ? NotificationKind.weekly
-              : NotificationKind.afterExpiry,
-          kindOn,
-        );
+        return _kind(context, setting, NotificationKind.afterExpiry, kindOn);
     }
     return const AssistantSettingResult(AssistantSettingOutcome.failed);
   }
@@ -224,12 +211,7 @@ class AssistantSettings {
     }
     Future<void> write(bool value) async {
       await NotificationPrefs.set(kind, value);
-      if (kind == NotificationKind.weekly) {
-        if (value) await ReminderScheduler.ensurePermissions();
-        unawaited(WeeklyRecapNotifier.rebuild());
-      } else {
-        unawaited(RecordRepository.resyncAllReminders());
-      }
+      unawaited(RecordRepository.resyncAllReminders());
     }
 
     return _toggle(

@@ -190,7 +190,6 @@ class AssistantAction {
     'monthly_summary',
     'reminder_time',
     'after_expiry',
-    'weekly',
   ];
 
   static const Set<String> onlyOn = <String>{
