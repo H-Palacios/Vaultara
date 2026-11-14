@@ -24,7 +24,7 @@ class RecordStatusColours {
   static const Color valid = Color(0xFF22C55E);
 
   /// Days that count as "within a week" and turn a record orange.
-  static const int urgentDays = 7;
+  static const int urgentDays = ItemLifecycleManager.urgentThresholdDays;
 
   static Color fromDaysLeft(int daysLeft) {
     if (daysLeft < 0) return expired;

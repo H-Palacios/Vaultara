@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 class ItemLifecycleManager {
   static const int expiringThresholdDays = 30;
+  static const int urgentThresholdDays = 7;
 
   static List<TrackedItem> getAllItemsFlat() {
     final store = RecordRepository.storeSnapshot;
@@ -96,6 +97,33 @@ class ItemLifecycleManager {
       }
     }
 
+    return count;
+  }
+
+  static int urgentForGroup(String categoryKey, String groupKey) {
+    final today = DateUtils.dateOnly(DateTime.now());
+    return getItemsForGroup(categoryKey, groupKey).where((item) {
+      final daysLeft = DateUtils.dateOnly(
+        item.expiryDate,
+      ).difference(today).inDays;
+      return daysLeft >= 0 && daysLeft <= urgentThresholdDays;
+    }).length;
+  }
+
+  static int urgentForCategory(String categoryKey) {
+    final byCategory = RecordRepository.storeSnapshot[categoryKey];
+    if (byCategory == null) return 0;
+
+    final today = DateUtils.dateOnly(DateTime.now());
+    var count = 0;
+    for (final list in byCategory.values) {
+      for (final item in list) {
+        final daysLeft = DateUtils.dateOnly(
+          item.expiryDate,
+        ).difference(today).inDays;
+        if (daysLeft >= 0 && daysLeft <= urgentThresholdDays) count++;
+      }
+    }
     return count;
   }
 

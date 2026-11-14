@@ -6,11 +6,13 @@ import 'package:vaultara/l10n/app_localizations.dart';
 class RecordCountBadges extends StatelessWidget {
   final int expired;
   final int expiringSoon;
+  final bool urgent;
 
   const RecordCountBadges({
     super.key,
     required this.expired,
     required this.expiringSoon,
+    this.urgent = false,
   });
 
   @override
@@ -30,7 +32,9 @@ class RecordCountBadges extends StatelessWidget {
         if (expiringSoon > 0)
           StatusDotLabel(
             text: loc.expiringBadge(expiringSoon),
-            colour: RecordStatusColours.expiringSoon,
+            colour: urgent
+                ? RecordStatusColours.urgent
+                : RecordStatusColours.expiringSoon,
             fontSize: 12,
           ),
       ],

@@ -119,10 +119,7 @@ class CategoryCard extends StatelessWidget {
                   children: [
                     CategoryIconBadge(
                       icon: icon,
-                      colour: CategoryAppearance.colourForCategory(
-                        category.key,
-                        category.colourKey,
-                      ),
+                      colour: CategoryAppearance.colourFor(category.colourKey),
                       size: 34,
                     ),
                     const Spacer(),
@@ -210,6 +207,9 @@ class CategoryCard extends StatelessWidget {
                   child: RecordCountBadges(
                     expired: expired,
                     expiringSoon: expiringSoon,
+                    urgent:
+                        ItemLifecycleManager.urgentForCategory(category.key) >
+                        0,
                   ),
                 ),
               ],

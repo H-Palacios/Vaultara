@@ -1,3 +1,4 @@
+import 'package:vaultara/core/data/item_lifecycle_manager.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/util/dates.dart';
 
@@ -12,6 +13,9 @@ class InsightsSummary {
   /// Records that expire today or within [soonDays] days, soonest first.
   final List<TrackedItem> dueSoon;
 
+  /// Whether any record in [dueSoon] expires within [urgentDays] days.
+  final bool hasUrgent;
+
   /// Upcoming records with no reminder, soonest first. Repeating records
   /// are left out because they move on by themselves.
   final List<TrackedItem> noReminder;
@@ -21,9 +25,11 @@ class InsightsSummary {
     required this.expired,
     required this.dueSoon,
     required this.noReminder,
+    this.hasUrgent = false,
   });
 
-  static const int soonDays = 30;
+  static const int soonDays = ItemLifecycleManager.expiringThresholdDays;
+  static const int urgentDays = ItemLifecycleManager.urgentThresholdDays;
 
   factory InsightsSummary.of(List<TrackedItem> records, {DateTime? now}) {
     final today = Dates.only(now ?? DateTime.now());
@@ -32,6 +38,7 @@ class InsightsSummary {
     final expired = <TrackedItem>[];
     final dueSoon = <TrackedItem>[];
     final noReminder = <TrackedItem>[];
+    var hasUrgent = false;
     for (final r in all) {
       final days = Dates.daysBetween(today, r.expiryDate);
       if (days < 0) {
@@ -39,6 +46,7 @@ class InsightsSummary {
         continue;
       }
       if (days <= soonDays) dueSoon.add(r);
+      if (days <= urgentDays) hasUrgent = true;
       if (r.reminderOffsetDays == null && r.repeatMonths == null) {
         noReminder.add(r);
       }
@@ -48,6 +56,7 @@ class InsightsSummary {
       expired: expired,
       dueSoon: dueSoon,
       noReminder: noReminder,
+      hasUrgent: hasUrgent,
     );
   }
 }

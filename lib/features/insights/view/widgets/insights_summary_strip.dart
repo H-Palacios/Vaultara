@@ -32,7 +32,9 @@ class InsightsSummaryStrip extends StatelessWidget {
       _TileData(
         loc.insightsSummaryDueSoon,
         summary.dueSoon,
-        RecordStatusColours.urgent,
+        summary.hasUrgent
+            ? RecordStatusColours.urgent
+            : RecordStatusColours.expiringSoon,
         Icons.hourglass_bottom_rounded,
       ),
       _TileData(
