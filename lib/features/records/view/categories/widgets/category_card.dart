@@ -206,7 +206,9 @@ class CategoryCard extends StatelessWidget {
                 children: [
                   Flexible(
                     child: Text(
-                      loc.recordsLabel(totalRecords),
+                      totalRecords == 0
+                          ? loc.groupsNoRecordsSection
+                          : loc.recordsLabel(totalRecords),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
