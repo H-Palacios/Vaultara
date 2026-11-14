@@ -1260,17 +1260,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Sii sug';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count ayaa dhawaan dhacaya',
-      one: '$count ayaa dhawaan dhacaya',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Waxba ma dhacayo maanta';
 
   @override
@@ -7930,6 +7919,31 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count waxay dhacayaan 7 maalmood gudahood',
+      one: '$count wuxuu dhacayaa 7 maalmood gudahood',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count waxay dhacayaan 30 maalmood gudahood',
+      one: '$count wuxuu dhacayaa 30 maalmood gudahood',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Wax walba waa cusub yihiin';
+
+  @override
   String get changeIcon => 'Beddel astaanta';
 
   @override
@@ -8168,9 +8182,6 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Dhowaan ayuu dhacayaa';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8218,7 +8229,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get insightsSummaryRecords => 'Diiwaanno';
 
   @override
-  String get insightsSummaryDueSoon => '30 maalmood gudahood';
+  String get insightsSummaryDueSoon => 'Waxay dhacayaan 30 maalmood gudahood';
 
   @override
   String get insightsSummaryNoReminder => 'Xusuusin la\'aan';

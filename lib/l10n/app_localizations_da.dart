@@ -1260,17 +1260,6 @@ class AppLocalizationsDa extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Bliv ved med at vente';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count udløber snart',
-      one: '$count udløber snart',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Intet udløber i dag';
 
   @override
@@ -7935,6 +7924,31 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count udløber inden for 7 dage',
+      one: '$count udløber inden for 7 dage',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count udløber inden for 30 dage',
+      one: '$count udløber inden for 30 dage',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Alt er opdateret';
+
+  @override
   String get changeIcon => 'Skift ikon';
 
   @override
@@ -8173,9 +8187,6 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Udløber snart';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8223,7 +8234,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get insightsSummaryRecords => 'Poster';
 
   @override
-  String get insightsSummaryDueSoon => 'Inden for 30 dage';
+  String get insightsSummaryDueSoon => 'Udløber inden for 30 dage';
 
   @override
   String get insightsSummaryNoReminder => 'Ingen påmindelse';

@@ -625,7 +625,6 @@
   "verifyEmailDiscardBody": "ఈ ఖాతా ధృవీకరించబడలేదు. ఇప్పుడు నిష్క్రమిస్తే ఇది తొలగించబడుతుంది, ఆపై మీరు ఏ ఈమెయిల్ చిరునామాతోనైనా మళ్లీ సైన్ అప్ చేయవచ్చు.",
   "verifyEmailDiscardAction": "తొలగించు",
   "verifyEmailKeepWaiting": "వేచి ఉండండి",
-  "expiringBadge": "{count, plural, =1{{count} గడువు త్వరలో ముగుస్తుంది} other{{count} గడువులు త్వరలో ముగుస్తాయి}}",
   "noRecordsToday": "ఈరోజు ఏ గడువూ ముగియదు",
   "noRecordsTomorrow": "రేపు ఏ గడువూ ముగియదు",
   "cascadeFinalStepTitle": "చివరి రిమైండర్: {recordName}",
@@ -2633,6 +2632,9 @@
   "subcategoryWarranties": "వారంటీలు మరియు గ్యారంటీలు",
   "yoursTag": "మీది",
   "expiredBadge": "{count, plural, =1{{count} గడువు ముగిసింది} other{{count} గడువు ముగిశాయి}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 రోజుల్లో గడువు ముగుస్తుంది} other{{count} 7 రోజుల్లో గడువు ముగుస్తాయి}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 రోజుల్లో గడువు ముగుస్తుంది} other{{count} 30 రోజుల్లో గడువు ముగుస్తాయి}}",
+  "allUpToDate": "అన్నీ తాజాగా ఉన్నాయి",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2749,7 +2751,6 @@
       }
     }
   },
-  "recordsSectionSoon": "త్వరలో గడువు",
   "recordsShowAll": "{count, plural, =1{అన్ని రికార్డులు చూపు} other{మొత్తం {count} రికార్డులు చూపు}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2795,7 +2796,7 @@
     }
   },
   "insightsSummaryRecords": "రికార్డులు",
-  "insightsSummaryDueSoon": "30 రోజుల్లో",
+  "insightsSummaryDueSoon": "30 రోజుల్లో గడువు ముగుస్తాయి",
   "insightsSummaryNoReminder": "రిమైండర్ లేదు",
   "insightsListEmpty": "ప్రస్తుతం ఇక్కడ ఏమీ లేదు.",
   "smartInsightUpcomingCostHeading": "రాబోయే పునరుద్ధరణలు",

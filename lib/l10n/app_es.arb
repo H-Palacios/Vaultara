@@ -615,7 +615,6 @@
   "verifyEmailDiscardBody": "Esta cuenta no está verificada. Salir ahora la eliminará y podrás registrarte de nuevo con cualquier dirección de correo electrónico.",
   "verifyEmailDiscardAction": "Descartar",
   "verifyEmailKeepWaiting": "Seguir esperando",
-  "expiringBadge": "{count, plural, =1{{count} por vencer} other{{count} por vencer}}",
   "noRecordsToday": "Nada vence hoy",
   "noRecordsTomorrow": "Nada vence mañana",
   "cascadeFinalStepTitle": "Último recordatorio: {recordName}",
@@ -2623,6 +2622,9 @@
   "subcategoryWarranties": "Garantías",
   "yoursTag": "Tuyo",
   "expiredBadge": "{count, plural, =1{{count} vencido} other{{count} vencidos}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} vence en 7 días} other{{count} vencen en 7 días}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} vence en 30 días} other{{count} vencen en 30 días}}",
+  "allUpToDate": "Todo al día",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2739,7 +2741,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Vence pronto",
   "recordsShowAll": "{count, plural, =1{Mostrar todos los registros} other{Mostrar los {count} registros}}",
   "@recordsShowAll": {
     "placeholders": {

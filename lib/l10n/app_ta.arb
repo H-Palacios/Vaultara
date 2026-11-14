@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "இந்தக் கணக்கு இன்னும் சரிபார்க்கப்படவில்லை. இப்போது வெளியேறினால் இது நீக்கப்படும், அதன் பிறகு நீங்கள் எந்த மின்னஞ்சல் முகவரியைப் பயன்படுத்தியும் மீண்டும் பதிவு செய்யலாம்.",
   "verifyEmailDiscardAction": "நீக்கு",
   "verifyEmailKeepWaiting": "தொடர்ந்து காத்திரு",
-  "expiringBadge": "{count, plural, =1{{count} விரைவில் காலாவதியாகிறது} other{{count} விரைவில் காலாவதியாகின்றன}}",
   "noRecordsToday": "இன்று எதுவும் காலாவதியாகாது",
   "noRecordsTomorrow": "நாளை எதுவும் காலாவதியாகாது",
   "cascadeFinalStepTitle": "இறுதி நினைவூட்டல்: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "உத்தரவாதங்கள்",
   "yoursTag": "உங்களுடையது",
   "expiredBadge": "{count, plural, =1{{count} காலாவதி} other{{count} காலாவதி}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 நாட்களுக்குள் காலாவதியாகும்} other{{count} 7 நாட்களுக்குள் காலாவதியாகும்}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 நாட்களுக்குள் காலாவதியாகும்} other{{count} 30 நாட்களுக்குள் காலாவதியாகும்}}",
+  "allUpToDate": "அனைத்தும் புதுப்பித்த நிலையில்",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "விரைவில் காலாவதி",
   "recordsShowAll": "{count, plural, =1{எல்லாப் பதிவுகளையும் காட்டு} other{{count} பதிவுகளையும் காட்டு}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "பதிவுகள்",
-  "insightsSummaryDueSoon": "30 நாட்களுக்குள்",
+  "insightsSummaryDueSoon": "30 நாட்களுக்குள் காலாவதி",
   "insightsSummaryNoReminder": "நினைவூட்டல் இல்லை",
   "insightsListEmpty": "இப்போது இங்கே எதுவும் இல்லை.",
   "smartInsightUpcomingCostHeading": "வரவிருக்கும் புதுப்பித்தல்கள்",

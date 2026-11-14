@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "دا حساب تایید شوی نه دی. اوس وتل دا لیرې کوي، او تاسو کولی شئ بیا د هر برېښنالیک پته سره راجستر شئ.",
   "verifyEmailDiscardAction": "لغوه کول",
   "verifyEmailKeepWaiting": "انتظار ته دوام ورکړئ",
-  "expiringBadge": "{count, plural, =1{{count} ژر پای ته رسیږي} other{{count} ژر پای ته رسیږي}}",
   "noRecordsToday": "نن هیڅ شی نه پای ته رسیږي",
   "noRecordsTomorrow": "سبا هیڅ شی نه پای ته رسیږي",
   "cascadeFinalStepTitle": "وروستی یادونه: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "تضمینونه",
   "yoursTag": "ستاسو",
   "expiredBadge": "{count, plural, =1{{count} پای ته رسېدلی} other{{count} پای ته رسېدلي}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} په 7 ورځو کې پای ته رسیږي} other{{count} په 7 ورځو کې پای ته رسیږي}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} په 30 ورځو کې پای ته رسیږي} other{{count} په 30 ورځو کې پای ته رسیږي}}",
+  "allUpToDate": "ټول تازه دي",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ژر پای ته رسېږي",
   "recordsShowAll": "{count, plural, =1{ټول ریکارډونه وښایاست} other{ټول {count} ریکارډونه وښایاست}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "ریکارډونه",
-  "insightsSummaryDueSoon": "په 30 ورځو کې",
+  "insightsSummaryDueSoon": "په 30 ورځو کې پای ته رسیږي",
   "insightsSummaryNoReminder": "بې یادونې",
   "insightsListEmpty": "اوس دلته هیڅ نشته.",
   "smartInsightUpcomingCostHeading": "راتلونکي نوي کول",

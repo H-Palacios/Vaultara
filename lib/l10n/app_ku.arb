@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Ev hesab nehatiye piştrastkirin. Heke tu niha derkevî, ew ê were jêbirin, û tu dikarî dîsa bi her navnîşaneke e-nameyê qeyd bibî.",
   "verifyEmailDiscardAction": "Jê bibe",
   "verifyEmailKeepWaiting": "Li bendê bimîne",
-  "expiringBadge": "{count, plural, =1{{count} nêzîkê bidawîbûnê ye} other{{count} nêzîkê bidawîbûnê ne}}",
   "noRecordsToday": "Îro tu tişt bidawî nabe",
   "noRecordsTomorrow": "Sibê tu tişt bidawî nabe",
   "cascadeFinalStepTitle": "Bîrxistina dawî: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Garantî",
   "yoursTag": "Ya te",
   "expiredBadge": "{count, plural, =1{{count} dema wê derbas bûye} other{{count} dema wan derbas bûye}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} di nav 7 rojan de diqede} other{{count} di nav 7 rojan de diqedin}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} di nav 30 rojan de diqede} other{{count} di nav 30 rojan de diqedin}}",
+  "allUpToDate": "Hemû rojane ye",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Zû diqede",
   "recordsShowAll": "{count, plural, =1{Hemû tomaran nîşan bide} other{Hemû {count} tomaran nîşan bide}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Tomar",
-  "insightsSummaryDueSoon": "Di 30 rojan de",
+  "insightsSummaryDueSoon": "Di nav 30 rojan de diqedin",
   "insightsSummaryNoReminder": "Bê bîrxistin",
   "insightsListEmpty": "Niha li vir tiştek tune.",
   "smartInsightUpcomingCostHeading": "Nûkirinên tên",

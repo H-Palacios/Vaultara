@@ -626,7 +626,6 @@
   "verifyEmailDiscardBody": "Šis konts nav verificēts. Ja pamesiet lapu tagad, tas tiks dzēsts, un jūs varēsiet reģistrēties no jauna ar jebkuru e-pasta adresi.",
   "verifyEmailDiscardAction": "Atmest",
   "verifyEmailKeepWaiting": "Turpināt gaidīt",
-  "expiringBadge": "{count, plural, =1{{count} drīz beigsies} other{{count} drīz beigsies}}",
   "noRecordsToday": "Šodien nekas nebeidzas",
   "noRecordsTomorrow": "Rīt nekas nebeigsies",
   "cascadeFinalStepTitle": "Pēdējais atgādinājums: {recordName}",
@@ -2634,6 +2633,9 @@
   "subcategoryWarranties": "Garantijas",
   "yoursTag": "Jūsu",
   "expiredBadge": "{count, plural, =1{{count} beidzies} other{Beigušies: {count}}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} beidzas 7 dienu laikā} other{{count} beidzas 7 dienu laikā}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} beidzas 30 dienu laikā} other{{count} beidzas 30 dienu laikā}}",
+  "allUpToDate": "Viss ir aktuāls",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2750,7 +2752,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Drīz beigsies",
   "recordsShowAll": "{count, plural, =1{Rādīt visus ierakstus} other{Rādīt visus ierakstus ({count})}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2796,7 +2797,7 @@
     }
   },
   "insightsSummaryRecords": "Ieraksti",
-  "insightsSummaryDueSoon": "30 dienu laikā",
+  "insightsSummaryDueSoon": "Beidzas 30 dienu laikā",
   "insightsSummaryNoReminder": "Bez atgādinājuma",
   "insightsListEmpty": "Pagaidām šeit nekā nav.",
   "smartInsightUpcomingCostHeading": "Gaidāmās atjaunošanas",

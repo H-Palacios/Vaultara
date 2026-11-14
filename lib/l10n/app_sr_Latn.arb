@@ -582,7 +582,6 @@
   "verifyEmailDiscardBody": "Ovaj nalog nije verifikovan. Ako sada odete, nalog će biti uklonjen, a možete se ponovo registrovati sa bilo kojom e-mail adresom.",
   "verifyEmailDiscardAction": "Odbaci",
   "verifyEmailKeepWaiting": "Nastavi sa čekanjem",
-  "expiringBadge": "{count, plural, =1{{count} uskoro ističe} few{{count} uskoro ističu} other{{count} uskoro ističe}}",
   "noRecordsToday": "Danas ništa ne ističe",
   "noRecordsTomorrow": "Sutra ništa ne ističe",
   "cascadeFinalStepTitle": "Poslednje podsećanje: {recordName}",
@@ -2590,6 +2589,9 @@
   "subcategoryWarranties": "Garancije",
   "yoursTag": "Vaše",
   "expiredBadge": "{count, plural, =1{{count} isteklo} other{Isteklo: {count}}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} ističe u roku od 7 dana} other{{count} ističe u roku od 7 dana}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} ističe u roku od 30 dana} other{{count} ističe u roku od 30 dana}}",
+  "allUpToDate": "Sve je ažurno",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2706,7 +2708,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Uskoro ističe",
   "recordsShowAll": "{count, plural, =1{Prikaži sve zapise} other{Prikaži sve zapise ({count})}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2752,7 +2753,7 @@
     }
   },
   "insightsSummaryRecords": "Zapisi",
-  "insightsSummaryDueSoon": "U 30 dana",
+  "insightsSummaryDueSoon": "Ističe u roku od 30 dana",
   "insightsSummaryNoReminder": "Bez podsetnika",
   "insightsListEmpty": "Ovde zasad nema ničega.",
   "smartInsightUpcomingCostHeading": "Predstojeće obnove",

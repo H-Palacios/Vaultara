@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Acest cont nu este verificat. Dacă pleci acum, contul va fi șters, iar tu te vei putea înregistra din nou cu orice adresă de e-mail.",
   "verifyEmailDiscardAction": "Renunță",
   "verifyEmailKeepWaiting": "Continuă să aștepți",
-  "expiringBadge": "{count, plural, =1{{count} expiră în curând} few{{count} expiră în curând} other{{count} expiră în curând}}",
   "noRecordsToday": "Nimic nu expiră astăzi",
   "noRecordsTomorrow": "Nimic nu expiră mâine",
   "cascadeFinalStepTitle": "Ultimul memento: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Garanții",
   "yoursTag": "Al tău",
   "expiredBadge": "{count, plural, =1{{count} expirat} other{{count} expirate}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} expiră în 7 zile} other{{count} expiră în 7 zile}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} expiră în 30 de zile} other{{count} expiră în 30 de zile}}",
+  "allUpToDate": "Totul e la zi",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Expiră curând",
   "recordsShowAll": "{count, plural, =1{Arată toate înregistrările} other{Arată toate cele {count} înregistrări}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Înregistrări",
-  "insightsSummaryDueSoon": "În 30 de zile",
+  "insightsSummaryDueSoon": "Expiră în 30 de zile",
   "insightsSummaryNoReminder": "Fără memento",
   "insightsListEmpty": "Nu e nimic aici deocamdată.",
   "smartInsightUpcomingCostHeading": "Reînnoiri în curând",

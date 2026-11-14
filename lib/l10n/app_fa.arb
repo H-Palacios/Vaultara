@@ -620,7 +620,6 @@
   "verifyEmailDiscardBody": "این حساب تأیید نشده است. خروج در این لحظه باعث حذف آن می‌شود و می‌توانید دوباره با هر آدرس ایمیل دیگری ثبت‌نام کنید.",
   "verifyEmailDiscardAction": "لغو",
   "verifyEmailKeepWaiting": "منتظر بمانید",
-  "expiringBadge": "{count, plural, =1{{count} مورد به‌زودی منقضی می‌شود} other{{count} مورد به‌زودی منقضی می‌شوند}}",
   "noRecordsToday": "امروز چیزی منقضی نمی‌شود",
   "noRecordsTomorrow": "فردا چیزی منقضی نمی‌شود",
   "cascadeFinalStepTitle": "آخرین یادآوری: {recordName}",
@@ -2628,6 +2627,9 @@
   "subcategoryWarranties": "ضمانت‌نامه‌ها",
   "yoursTag": "مال شما",
   "expiredBadge": "{count, plural, =1{{count} منقضی} other{{count} منقضی}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} مورد ظرف ۷ روز منقضی می‌شود} other{{count} مورد ظرف ۷ روز منقضی می‌شوند}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} مورد ظرف ۳۰ روز منقضی می‌شود} other{{count} مورد ظرف ۳۰ روز منقضی می‌شوند}}",
+  "allUpToDate": "همه‌چیز به‌روز است",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2744,7 +2746,6 @@
       }
     }
   },
-  "recordsSectionSoon": "به‌زودی منقضی می‌شود",
   "recordsShowAll": "{count, plural, =1{نمایش همه موارد} other{نمایش همه {count} مورد}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2790,7 +2791,7 @@
     }
   },
   "insightsSummaryRecords": "موارد",
-  "insightsSummaryDueSoon": "تا ۳۰ روز آینده",
+  "insightsSummaryDueSoon": "ظرف ۳۰ روز منقضی می‌شوند",
   "insightsSummaryNoReminder": "بدون یادآور",
   "insightsListEmpty": "فعلاً چیزی اینجا نیست.",
   "smartInsightUpcomingCostHeading": "تمدیدهای پیش رو",

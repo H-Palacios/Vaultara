@@ -622,7 +622,6 @@
   "verifyEmailDiscardBody": "Kontu hau ez dago egiaztatuta. Orain irteten bazara ezabatu egingo da, eta berriro erregistratu ahal izango zara edozein posta helbiderekin.",
   "verifyEmailDiscardAction": "Baztertu",
   "verifyEmailKeepWaiting": "Jarraitu itxaroten",
-  "expiringBadge": "{count, plural, =1{{count} laster iraungiko da} other{{count} laster iraungiko dira}}",
   "noRecordsToday": "Ezer ez da gaur iraungitzen",
   "noRecordsTomorrow": "Ezer ez da bihar iraungitzen",
   "cascadeFinalStepTitle": "Azken gogorarazlea: {recordName}",
@@ -2630,6 +2629,9 @@
   "subcategoryWarranties": "Bermeak",
   "yoursTag": "Zurea",
   "expiredBadge": "{count, plural, =1{{count} iraungita} other{{count} iraungita}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 egunean iraungitzen da} other{{count} 7 egunean iraungitzen dira}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 egunean iraungitzen da} other{{count} 30 egunean iraungitzen dira}}",
+  "allUpToDate": "Dena eguneratuta",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2746,7 +2748,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Laster iraungiko da",
   "recordsShowAll": "{count, plural, =1{Erakutsi erregistro guztiak} other{Erakutsi {count} erregistroak}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2792,7 +2793,7 @@
     }
   },
   "insightsSummaryRecords": "Erregistroak",
-  "insightsSummaryDueSoon": "30 egunetan",
+  "insightsSummaryDueSoon": "30 egunean iraungitzen dira",
   "insightsSummaryNoReminder": "Abisurik gabe",
   "insightsListEmpty": "Hemen ez dago ezer oraingoz.",
   "smartInsightUpcomingCostHeading": "Hurrengo berritzeak",

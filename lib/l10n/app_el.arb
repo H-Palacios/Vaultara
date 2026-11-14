@@ -615,7 +615,6 @@
   "verifyEmailDiscardBody": "Αυτός ο λογαριασμός δεν έχει επαληθευτεί. Αν αποχωρήσετε τώρα θα διαγραφεί και θα μπορείτε να εγγραφείτε ξανά με οποιαδήποτε διεύθυνση email.",
   "verifyEmailDiscardAction": "Απόρριψη",
   "verifyEmailKeepWaiting": "Συνέχεια αναμονής",
-  "expiringBadge": "{count, plural, =1{{count} λήγει σύντομα} other{{count} λήγουν σύντομα}}",
   "noRecordsToday": "Τίποτα δεν λήγει σήμερα",
   "noRecordsTomorrow": "Τίποτα δεν λήγει αύριο",
   "cascadeFinalStepTitle": "Τελευταία υπενθύμιση: {recordName}",
@@ -2623,6 +2622,9 @@
   "subcategoryWarranties": "Εγγυήσεις",
   "yoursTag": "Δικό σας",
   "expiredBadge": "{count, plural, =1{{count} έληξε} other{{count} έληξαν}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} λήγει μέσα σε 7 ημέρες} other{{count} λήγουν μέσα σε 7 ημέρες}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} λήγει μέσα σε 30 ημέρες} other{{count} λήγουν μέσα σε 30 ημέρες}}",
+  "allUpToDate": "Όλα ενημερωμένα",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2739,7 +2741,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Λήγει σύντομα",
   "recordsShowAll": "{count, plural, =1{Εμφάνιση όλων των εγγραφών} other{Εμφάνιση και των {count} εγγραφών}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2785,7 +2786,7 @@
     }
   },
   "insightsSummaryRecords": "Εγγραφές",
-  "insightsSummaryDueSoon": "Εντός 30 ημερών",
+  "insightsSummaryDueSoon": "Λήγουν μέσα σε 30 ημέρες",
   "insightsSummaryNoReminder": "Χωρίς υπενθύμιση",
   "insightsListEmpty": "Δεν υπάρχει τίποτα εδώ προς το παρόν.",
   "smartInsightUpcomingCostHeading": "Ανανεώσεις που έρχονται",

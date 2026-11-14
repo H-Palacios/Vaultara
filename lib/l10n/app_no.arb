@@ -615,7 +615,6 @@
   "verifyEmailDiscardBody": "Denne kontoen er ikke verifisert. Hvis du forlater siden nå vil den bli slettet, og du kan registrere deg på nytt med en hvilken som helst e-postadresse.",
   "verifyEmailDiscardAction": "Slett",
   "verifyEmailKeepWaiting": "Fortsett å vente",
-  "expiringBadge": "{count, plural, =1{{count} utløper snart} other{{count} utløper snart}}",
   "noRecordsToday": "Ingenting utløper i dag",
   "noRecordsTomorrow": "Ingenting utløper i morgen",
   "cascadeFinalStepTitle": "Siste påminnelse: {recordName}",
@@ -2623,6 +2622,9 @@
   "subcategoryWarranties": "Garantier",
   "yoursTag": "Ditt",
   "expiredBadge": "{count, plural, =1{{count} utløpt} other{{count} utløpt}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} utløper innen 7 dager} other{{count} utløper innen 7 dager}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} utløper innen 30 dager} other{{count} utløper innen 30 dager}}",
+  "allUpToDate": "Alt er oppdatert",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2739,7 +2741,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Utløper snart",
   "recordsShowAll": "{count, plural, =1{Vis alle oppføringer} other{Vis alle {count} oppføringer}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2785,7 +2786,7 @@
     }
   },
   "insightsSummaryRecords": "Oppføringer",
-  "insightsSummaryDueSoon": "Innen 30 dager",
+  "insightsSummaryDueSoon": "Utløper innen 30 dager",
   "insightsSummaryNoReminder": "Ingen påminnelse",
   "insightsListEmpty": "Ingenting her akkurat nå.",
   "smartInsightUpcomingCostHeading": "Kommende fornyelser",

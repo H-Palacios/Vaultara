@@ -626,7 +626,6 @@
   "verifyEmailDiscardBody": "Бул аккаунт ырастала элек. Азыр чыгып кетсеңиз, ал өчүрүлөт жана каалаган электрондук почта дареги менен кайра каттала аласыз.",
   "verifyEmailDiscardAction": "Өчүрүү",
   "verifyEmailKeepWaiting": "Күте туруу",
-  "expiringBadge": "{count, plural, =1{{count} мөөнөтү жакында бүтөт} other{{count} мөөнөтү жакында бүтөт}}",
   "noRecordsToday": "Бүгүн эч нерсенин мөөнөтү бүтпөйт",
   "noRecordsTomorrow": "Эртең эч нерсенин мөөнөтү бүтпөйт",
   "cascadeFinalStepTitle": "Соңку эскертүү: {recordName}",
@@ -2634,6 +2633,9 @@
   "subcategoryWarranties": "Кепилдиктер",
   "yoursTag": "Сиздики",
   "expiredBadge": "{count, plural, =1{{count} мөөнөтү өткөн} other{{count} мөөнөтү өткөн}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 күндүн ичинде бүтөт} other{{count} 7 күндүн ичинде бүтөт}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 күндүн ичинде бүтөт} other{{count} 30 күндүн ичинде бүтөт}}",
+  "allUpToDate": "Баары жаңыланган",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2750,7 +2752,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Жакында мөөнөтү бүтөт",
   "recordsShowAll": "{count, plural, =1{Бардык жазууларды көрсөтүү} other{Бардык {count} жазууну көрсөтүү}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2796,7 +2797,7 @@
     }
   },
   "insightsSummaryRecords": "Жазуулар",
-  "insightsSummaryDueSoon": "30 күндүн ичинде",
+  "insightsSummaryDueSoon": "30 күндүн ичинде бүтөт",
   "insightsSummaryNoReminder": "Эскертүүсүз",
   "insightsListEmpty": "Азырынча бул жерде эч нерсе жок.",
   "smartInsightUpcomingCostHeading": "Алдыдагы жаңыртуулар",

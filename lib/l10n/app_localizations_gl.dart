@@ -1260,17 +1260,6 @@ class AppLocalizationsGl extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Seguir agardando';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count a punto de caducar',
-      one: '$count a punto de caducar',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Nada caduca hoxe';
 
   @override
@@ -7935,6 +7924,31 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count caducan en 7 días',
+      one: '$count caduca en 7 días',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count caducan en 30 días',
+      one: '$count caduca en 30 días',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Todo ao día';
+
+  @override
   String get changeIcon => 'Cambiar a icona';
 
   @override
@@ -8173,9 +8187,6 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Caduca pronto';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8223,7 +8234,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get insightsSummaryRecords => 'Rexistros';
 
   @override
-  String get insightsSummaryDueSoon => 'En 30 días';
+  String get insightsSummaryDueSoon => 'Caducan en 30 días';
 
   @override
   String get insightsSummaryNoReminder => 'Sen recordatorio';

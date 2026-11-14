@@ -600,7 +600,6 @@
   "verifyEmailDiscardBody": "Le akhawunti ayikaqinisekiswa. Ukuhamba manje kuzoyisusa, futhi ungaphinda ubhalise nganoma yiliphi ikheli le-imeyili.",
   "verifyEmailDiscardAction": "Lahlana nayo",
   "verifyEmailKeepWaiting": "Qhubeka ulindile",
-  "expiringBadge": "{count, plural, =1{{count} okuphelelwa yisikhathi maduze} other{{count} okuphelelwa yisikhathi maduze}}",
   "noRecordsToday": "Akukho okuphelelwa yisikhathi namhlanje",
   "noRecordsTomorrow": "Akukho okuphelelwa yisikhathi kusasa",
   "cascadeFinalStepTitle": "Isikhumbuzo sokugcina: {recordName}",
@@ -2608,6 +2607,9 @@
   "subcategoryWarranties": "Iziqinisekiso",
   "yoursTag": "Okwakho",
   "expiredBadge": "{count, plural, =1{{count} iphelelwe yisikhathi} other{{count} ziphelelwe yisikhathi}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} iphelelwa ezinsukwini ezi-7} other{{count} ziphelelwa ezinsukwini ezi-7}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} iphelelwa ezinsukwini ezingu-30} other{{count} ziphelelwa ezinsukwini ezingu-30}}",
+  "allUpToDate": "Konke kusesikhathini",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2724,7 +2726,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Kuzophelelwa maduze",
   "recordsShowAll": "{count, plural, =1{Bonisa wonke amarekhodi} other{Bonisa wonke amarekhodi angu-{count}}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2770,7 +2771,7 @@
     }
   },
   "insightsSummaryRecords": "Amarekhodi",
-  "insightsSummaryDueSoon": "Ezinsukwini ezingu-30",
+  "insightsSummaryDueSoon": "Ziphelelwa ezinsukwini ezingu-30",
   "insightsSummaryNoReminder": "Asikho isikhumbuzo",
   "insightsListEmpty": "Akukho lutho lapha okwamanje.",
   "smartInsightUpcomingCostHeading": "Ukuvuselelwa okuzayo",

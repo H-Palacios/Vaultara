@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Akaun ini belum disahkan. Meninggalkan halaman sekarang akan memadamkannya, dan anda boleh mendaftar semula dengan mana-mana alamat emel.",
   "verifyEmailDiscardAction": "Buang",
   "verifyEmailKeepWaiting": "Teruskan menunggu",
-  "expiringBadge": "{count, plural, =1{{count} hampir tamat tempoh} other{{count} hampir tamat tempoh}}",
   "noRecordsToday": "Tiada apa yang tamat tempoh hari ini",
   "noRecordsTomorrow": "Tiada apa yang tamat tempoh esok",
   "cascadeFinalStepTitle": "Peringatan terakhir: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Waranti dan jaminan",
   "yoursTag": "Milik anda",
   "expiredBadge": "{count, plural, =1{{count} tamat tempoh} other{{count} tamat tempoh}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} tamat dalam 7 hari} other{{count} tamat dalam 7 hari}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} tamat dalam 30 hari} other{{count} tamat dalam 30 hari}}",
+  "allUpToDate": "Semua terkini",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Hampir tamat tempoh",
   "recordsShowAll": "{count, plural, =1{Tunjukkan semua rekod} other{Tunjukkan semua {count} rekod}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Rekod",
-  "insightsSummaryDueSoon": "Dalam 30 hari",
+  "insightsSummaryDueSoon": "Tamat dalam 30 hari",
   "insightsSummaryNoReminder": "Tiada peringatan",
   "insightsListEmpty": "Tiada apa-apa di sini buat masa ini.",
   "smartInsightUpcomingCostHeading": "Pembaharuan akan datang",

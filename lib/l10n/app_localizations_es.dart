@@ -1260,17 +1260,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Seguir esperando';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count por vencer',
-      one: '$count por vencer',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Nada vence hoy';
 
   @override
@@ -7959,6 +7948,31 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vencen en 7 días',
+      one: '$count vence en 7 días',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vencen en 30 días',
+      one: '$count vence en 30 días',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Todo al día';
+
+  @override
   String get changeIcon => 'Cambiar icono';
 
   @override
@@ -8195,9 +8209,6 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get recordsSectionSoon => 'Vence pronto';
 
   @override
   String recordsShowAll(int count) {

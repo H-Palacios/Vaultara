@@ -626,7 +626,6 @@
   "verifyEmailDiscardBody": "ეს ანგარიში არ არის დადასტურებული. ახლა გასვლა წაშლის მას და თქვენ შეძლებთ ხელახლა დარეგისტრირდეთ ნებისმიერი ელფოსტის მისამართით.",
   "verifyEmailDiscardAction": "გაუქმება",
   "verifyEmailKeepWaiting": "ლოდინის გაგრძელება",
-  "expiringBadge": "{count, plural, =1{{count} მალე იწურება} other{{count} მალე იწურება}}",
   "noRecordsToday": "დღეს არაფერს ეწურება ვადა",
   "noRecordsTomorrow": "ხვალ არაფერს ეწურება ვადა",
   "cascadeFinalStepTitle": "ბოლო შეხსენება: {recordName}",
@@ -2634,6 +2633,9 @@
   "subcategoryWarranties": "გარანტიები",
   "yoursTag": "თქვენი",
   "expiredBadge": "{count, plural, =1{{count} ვადაგასული} other{{count} ვადაგასული}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count}-ს 7 დღეში გასდის ვადა} other{{count}-ს 7 დღეში გასდის ვადა}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count}-ს 30 დღეში გასდის ვადა} other{{count}-ს 30 დღეში გასდის ვადა}}",
+  "allUpToDate": "ყველაფერი განახლებულია",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2750,7 +2752,6 @@
       }
     }
   },
-  "recordsSectionSoon": "მალე იწურება",
   "recordsShowAll": "{count, plural, =1{ყველა ჩანაწერის ჩვენება} other{ყველა {count} ჩანაწერის ჩვენება}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2796,7 +2797,7 @@
     }
   },
   "insightsSummaryRecords": "ჩანაწერები",
-  "insightsSummaryDueSoon": "30 დღეში",
+  "insightsSummaryDueSoon": "ვადა 30 დღეში გადის",
   "insightsSummaryNoReminder": "შეხსენების გარეშე",
   "insightsListEmpty": "აქ ჯერ არაფერია.",
   "smartInsightUpcomingCostHeading": "მომავალი განახლებები",

@@ -620,7 +620,6 @@
   "verifyEmailDiscardBody": "Ce compte n'est pas vérifié. Quitter maintenant le supprimera, et vous pourrez vous inscrire à nouveau avec n'importe quelle adresse e-mail.",
   "verifyEmailDiscardAction": "Abandonner",
   "verifyEmailKeepWaiting": "Continuer d'attendre",
-  "expiringBadge": "{count, plural, =1{{count} expire bientôt} other{{count} expirent bientôt}}",
   "noRecordsToday": "Rien n'expire aujourd'hui",
   "noRecordsTomorrow": "Rien n'expire demain",
   "cascadeFinalStepTitle": "Dernier rappel : {recordName}",
@@ -2628,6 +2627,9 @@
   "subcategoryWarranties": "Garanties",
   "yoursTag": "À vous",
   "expiredBadge": "{count, plural, =1{{count} expiré} other{{count} expirés}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} expire dans les 7 jours} other{{count} expirent dans les 7 jours}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} expire dans les 30 jours} other{{count} expirent dans les 30 jours}}",
+  "allUpToDate": "Tout est à jour",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2744,7 +2746,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Bientôt à échéance",
   "recordsShowAll": "{count, plural, =1{Afficher tous les éléments} other{Afficher les {count} éléments}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2790,7 +2791,7 @@
     }
   },
   "insightsSummaryRecords": "Éléments",
-  "insightsSummaryDueSoon": "À échéance sous 30 jours",
+  "insightsSummaryDueSoon": "Expirent dans les 30 jours",
   "insightsSummaryNoReminder": "Sans rappel",
   "insightsListEmpty": "Rien ici pour le moment.",
   "smartInsightUpcomingCostHeading": "Renouvellements à venir",

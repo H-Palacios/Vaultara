@@ -358,7 +358,6 @@
   "verifyEmailDiscardBody": "ഈ അക്കൗണ്ട് പരിശോധിച്ചുറപ്പിച്ചിട്ടില്ല. ഇപ്പോൾ പുറത്തുപോയാൽ അത് ഇല്ലാതാക്കും, തുടർന്ന് ഏത് ഇമെയിൽ വിലാസം ഉപയോഗിച്ചും നിങ്ങൾക്ക് വീണ്ടും സൈൻ അപ്പ് ചെയ്യാം.",
   "verifyEmailDiscardAction": "ഉപേക്ഷിക്കുക",
   "verifyEmailKeepWaiting": "കാത്തിരിപ്പ് തുടരുക",
-  "expiringBadge": "{count, plural, =1{{count} എണ്ണം കാലഹരണപ്പെടുന്നു} other{{count} എണ്ണം കാലഹരണപ്പെടുന്നു}}",
   "noRecordsToday": "ഇന്ന് ഒന്നും കാലഹരണപ്പെടുന്നില്ല",
   "noRecordsTomorrow": "നാളെ ഒന്നും കാലഹരണപ്പെടുന്നില്ല",
   "cascadeFinalStepTitle": "അവസാന റിമൈൻഡർ: {recordName}",
@@ -2366,6 +2365,9 @@
   "subcategoryWarranties": "വാറന്റികളും ഗ്യാരന്റികളും",
   "yoursTag": "നിങ്ങളുടേത്",
   "expiredBadge": "{count, plural, =1{{count} കാലഹരണപ്പെട്ടു} other{{count} കാലഹരണപ്പെട്ടു}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 ദിവസത്തിനകം കാലഹരണപ്പെടും} other{{count} 7 ദിവസത്തിനകം കാലഹരണപ്പെടും}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 ദിവസത്തിനകം കാലഹരണപ്പെടും} other{{count} 30 ദിവസത്തിനകം കാലഹരണപ്പെടും}}",
+  "allUpToDate": "എല്ലാം കാലികം",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2482,7 +2484,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ഉടൻ കാലഹരണപ്പെടും",
   "recordsShowAll": "{count, plural, =1{എല്ലാ റെക്കോർഡുകളും കാണിക്കുക} other{എല്ലാ {count} റെക്കോർഡുകളും കാണിക്കുക}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2528,7 +2529,7 @@
     }
   },
   "insightsSummaryRecords": "റെക്കോർഡുകൾ",
-  "insightsSummaryDueSoon": "30 ദിവസത്തിനുള്ളിൽ",
+  "insightsSummaryDueSoon": "30 ദിവസത്തിനകം കാലഹരണപ്പെടും",
   "insightsSummaryNoReminder": "ഓർമ്മപ്പെടുത്തൽ ഇല്ല",
   "insightsListEmpty": "ഇപ്പോൾ ഇവിടെ ഒന്നുമില്ല.",
   "smartInsightUpcomingCostHeading": "വരാനിരിക്കുന്ന പുതുക്കലുകൾ",

@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "To konto nie jest zweryfikowane. Wyjście teraz spowoduje jego usunięcie, a Rejestracji będzie można dokonać ponownie przy użyciu dowolnego adresu e-mail.",
   "verifyEmailDiscardAction": "Odrzuć",
   "verifyEmailKeepWaiting": "Czekaj dalej",
-  "expiringBadge": "{count, plural, =1{{count} wkrótce wygasa} few{{count} wkrótce wygasają} many{{count} wkrótce wygasa} other{{count} wkrótce wygasa}}",
   "noRecordsToday": "Dzisiaj nic nie wygasa",
   "noRecordsTomorrow": "Jutro nic nie wygasa",
   "cascadeFinalStepTitle": "Ostatnie przypomnienie: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Gwarancje",
   "yoursTag": "Twoje",
   "expiredBadge": "{count, plural, =1{{count} wygasło} other{Wygasło: {count}}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} wygasa w ciągu 7 dni} other{{count} wygasa w ciągu 7 dni}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} wygasa w ciągu 30 dni} other{{count} wygasa w ciągu 30 dni}}",
+  "allUpToDate": "Wszystko aktualne",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Wkrótce wygasa",
   "recordsShowAll": "{count, plural, =1{Pokaż wszystkie wpisy} other{Pokaż wszystkie wpisy ({count})}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Wpisy",
-  "insightsSummaryDueSoon": "W ciągu 30 dni",
+  "insightsSummaryDueSoon": "Wygasa w ciągu 30 dni",
   "insightsSummaryNoReminder": "Bez przypomnienia",
   "insightsListEmpty": "Na razie nic tu nie ma.",
   "smartInsightUpcomingCostHeading": "Nadchodzące odnowienia",

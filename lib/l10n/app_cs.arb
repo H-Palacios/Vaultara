@@ -639,7 +639,6 @@
   "verifyEmailDiscardBody": "Tento účet není ověřen. Pokud nyní odejdete, bude odstraněn a budete se moci znovu zaregistrovat s jakoukoli e-mailovou adresou.",
   "verifyEmailDiscardAction": "Zahodit",
   "verifyEmailKeepWaiting": "Počkat",
-  "expiringBadge": "{count, plural, =1{{count} brzy vyprší} few{{count} brzy vyprší} other{{count} brzy vyprší}}",
   "noRecordsToday": "Dnes nic nevyprší",
   "noRecordsTomorrow": "Zítra nic nevyprší",
   "cascadeFinalStepTitle": "Poslední připomínka: {recordName}",
@@ -2647,6 +2646,9 @@
   "subcategoryWarranties": "Záruky",
   "yoursTag": "Vaše",
   "expiredBadge": "{count, plural, =1{{count} propadlé} other{Propadlé: {count}}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} vyprší do 7 dnů} other{{count} vyprší do 7 dnů}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} vyprší do 30 dnů} other{{count} vyprší do 30 dnů}}",
+  "allUpToDate": "Vše je aktuální",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2763,7 +2765,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Brzy vyprší",
   "recordsShowAll": "{count, plural, =1{Zobrazit všechny záznamy} other{Zobrazit všechny záznamy ({count})}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2809,7 +2810,7 @@
     }
   },
   "insightsSummaryRecords": "Záznamy",
-  "insightsSummaryDueSoon": "Do 30 dnů",
+  "insightsSummaryDueSoon": "Vyprší do 30 dnů",
   "insightsSummaryNoReminder": "Bez připomenutí",
   "insightsListEmpty": "Zatím tu nic není.",
   "smartInsightUpcomingCostHeading": "Blížící se obnovy",

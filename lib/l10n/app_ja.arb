@@ -620,7 +620,6 @@
   "verifyEmailDiscardBody": "このアカウントは確認されていません。今終了するとアカウントが削除され、任意のメールアドレスで再度登録できるようになります。",
   "verifyEmailDiscardAction": "破棄",
   "verifyEmailKeepWaiting": "このまま待つ",
-  "expiringBadge": "{count, plural, =1{1件がまもなく期限切れ} other{{count}件がまもなく期限切れ}}",
   "noRecordsToday": "本日期限切れになるものはありません",
   "noRecordsTomorrow": "明日期限切れになるものはありません",
   "cascadeFinalStepTitle": "最終リマインダー: {recordName}",
@@ -2628,6 +2627,9 @@
   "subcategoryWarranties": "保証書",
   "yoursTag": "自分用",
   "expiredBadge": "{count, plural, =1{期限切れ {count}件} other{期限切れ {count}件}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count}件が7日以内に期限切れ} other{{count}件が7日以内に期限切れ}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count}件が30日以内に期限切れ} other{{count}件が30日以内に期限切れ}}",
+  "allUpToDate": "すべて最新です",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2744,7 +2746,6 @@
       }
     }
   },
-  "recordsSectionSoon": "まもなく期限",
   "recordsShowAll": "{count, plural, =1{すべての記録を表示} other{{count}件すべてを表示}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2790,7 +2791,7 @@
     }
   },
   "insightsSummaryRecords": "記録",
-  "insightsSummaryDueSoon": "30日以内",
+  "insightsSummaryDueSoon": "30日以内に期限切れ",
   "insightsSummaryNoReminder": "リマインダーなし",
   "insightsListEmpty": "今は何もありません。",
   "smartInsightUpcomingCostHeading": "今後の更新",

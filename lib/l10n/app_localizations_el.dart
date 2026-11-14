@@ -1260,17 +1260,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Συνέχεια αναμονής';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count λήγουν σύντομα',
-      one: '$count λήγει σύντομα',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Τίποτα δεν λήγει σήμερα';
 
   @override
@@ -7935,6 +7924,31 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count λήγουν μέσα σε 7 ημέρες',
+      one: '$count λήγει μέσα σε 7 ημέρες',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count λήγουν μέσα σε 30 ημέρες',
+      one: '$count λήγει μέσα σε 30 ημέρες',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Όλα ενημερωμένα';
+
+  @override
   String get changeIcon => 'Αλλαγή εικονιδίου';
 
   @override
@@ -8173,9 +8187,6 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Λήγει σύντομα';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8223,7 +8234,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get insightsSummaryRecords => 'Εγγραφές';
 
   @override
-  String get insightsSummaryDueSoon => 'Εντός 30 ημερών';
+  String get insightsSummaryDueSoon => 'Λήγουν μέσα σε 30 ημέρες';
 
   @override
   String get insightsSummaryNoReminder => 'Χωρίς υπενθύμιση';

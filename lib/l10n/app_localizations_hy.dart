@@ -1260,17 +1260,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Շարունակել սպասել';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count-ի ժամկետը շուտով ավարտվում է',
-      one: '$count-ի ժամկետը շուտով ավարտվում է',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Այսօր ոչինչ չի ավարտվում';
 
   @override
@@ -7931,6 +7920,31 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count-ի ժամկետը լրանում է 7 օրում',
+      one: '$count-ի ժամկետը լրանում է 7 օրում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count-ի ժամկետը լրանում է 30 օրում',
+      one: '$count-ի ժամկետը լրանում է 30 օրում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Ամեն ինչ արդիական է';
+
+  @override
   String get changeIcon => 'Փոխել պատկերակը';
 
   @override
@@ -8169,9 +8183,6 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Շուտով կլրանա';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8219,7 +8230,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get insightsSummaryRecords => 'Գրառումներ';
 
   @override
-  String get insightsSummaryDueSoon => '30 օրվա ընթացքում';
+  String get insightsSummaryDueSoon => 'Լրանում են 30 օրում';
 
   @override
   String get insightsSummaryNoReminder => 'Առանց հիշեցման';

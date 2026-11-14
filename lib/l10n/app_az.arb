@@ -358,7 +358,6 @@
   "verifyEmailDiscardBody": "Bu hesab doğrulanmayıb. İndi çıxsanız, hesab silinəcək və istənilən e-poçt ünvanı ilə yenidən qeydiyyatdan keçə bilərsiniz.",
   "verifyEmailDiscardAction": "İmtina et",
   "verifyEmailKeepWaiting": "Gözləməyə davam et",
-  "expiringBadge": "{count, plural, =1{Müddəti bitən: {count}} other{Müddəti bitən: {count}}}",
   "noRecordsToday": "Bu gün heç nəyin müddəti bitmir",
   "noRecordsTomorrow": "Sabah heç nəyin müddəti bitmir",
   "cascadeFinalStepTitle": "Son xatırlatma: {recordName}",
@@ -2366,6 +2365,9 @@
   "subcategoryWarranties": "Zəmanətlər",
   "yoursTag": "Sizin",
   "expiredBadge": "{count, plural, =1{{count} müddəti bitib} other{{count} müddəti bitib}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 gün ərzində bitir} other{{count} 7 gün ərzində bitir}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 gün ərzində bitir} other{{count} 30 gün ərzində bitir}}",
+  "allUpToDate": "Hamısı qaydasındadır",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2482,7 +2484,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Tezliklə bitir",
   "recordsShowAll": "{count, plural, =1{Bütün qeydləri göstər} other{Bütün {count} qeydi göstər}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2528,7 +2529,7 @@
     }
   },
   "insightsSummaryRecords": "Qeydlər",
-  "insightsSummaryDueSoon": "30 gün ərzində",
+  "insightsSummaryDueSoon": "30 gün ərzində bitir",
   "insightsSummaryNoReminder": "Xatırlatma yoxdur",
   "insightsListEmpty": "Hələ burada heç nə yoxdur.",
   "smartInsightUpcomingCostHeading": "Qarşıdakı yeniləmələr",

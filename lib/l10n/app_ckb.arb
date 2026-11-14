@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "ئەم هەژمارە پشتڕاست نەکراوەتەوە. جێهێشتنی ئێستا دەبێتە هۆی سڕینەوەی، و دەتوانیت دووبارە بە هەر ناونیشانێکی ئیمەیڵ تۆمار بکەیتەوە.",
   "verifyEmailDiscardAction": "سڕینەوە",
   "verifyEmailKeepWaiting": "بەردەوام بە لە چاوەڕوانیکردن",
-  "expiringBadge": "{count, plural, =1{{count} بەزوویی بەسەردەچێت} other{{count} بەزوویی بەسەردەچن}}",
   "noRecordsToday": "ئەمڕۆ هیچ بەسەرناچێت",
   "noRecordsTomorrow": "سبەینێ هیچ بەسەرناچێت",
   "cascadeFinalStepTitle": "دواین بیرخستنەوە: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "گەرەنتی",
   "yoursTag": "هی تۆ",
   "expiredBadge": "{count, plural, =1{{count} بەسەرچووە} other{{count} بەسەرچوون}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} لە ماوەی 7 ڕۆژدا بەسەردەچێت} other{{count} لە ماوەی 7 ڕۆژدا بەسەردەچن}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} لە ماوەی 30 ڕۆژدا بەسەردەچێت} other{{count} لە ماوەی 30 ڕۆژدا بەسەردەچن}}",
+  "allUpToDate": "هەموو شت نوێیە",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "بەم زووانە بەسەردەچێت",
   "recordsShowAll": "{count, plural, =1{پیشاندانی هەموو تۆمارەکان} other{پیشاندانی هەموو {count} تۆمارەکە}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "تۆمارەکان",
-  "insightsSummaryDueSoon": "لە ماوەی 30 ڕۆژدا",
+  "insightsSummaryDueSoon": "لە ماوەی 30 ڕۆژدا بەسەردەچن",
   "insightsSummaryNoReminder": "بێ بیرخستنەوە",
   "insightsListEmpty": "ئێستا هیچ لێرە نییە.",
   "smartInsightUpcomingCostHeading": "نوێکردنەوەی داهاتوو",

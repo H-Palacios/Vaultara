@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Bu hesap doğrulanmadı. Şimdi çıkarsanız hesap kaldırılır ve herhangi bir e-posta adresiyle tekrar kaydolabilirsiniz.",
   "verifyEmailDiscardAction": "Vazgeç",
   "verifyEmailKeepWaiting": "Beklemeye devam et",
-  "expiringBadge": "{count, plural, =1{{count} kaydın süresi dolmak üzere} other{{count} kaydın süresi dolmak üzere}}",
   "noRecordsToday": "Bugün süresi dolan hiçbir şey yok",
   "noRecordsTomorrow": "Yarın süresi dolan hiçbir şey yok",
   "cascadeFinalStepTitle": "Son hatırlatma: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Garantiler",
   "yoursTag": "Sizin",
   "expiredBadge": "{count, plural, =1{{count} süresi doldu} other{{count} süresi doldu}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} kaydın süresi 7 gün içinde doluyor} other{{count} kaydın süresi 7 gün içinde doluyor}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} kaydın süresi 30 gün içinde doluyor} other{{count} kaydın süresi 30 gün içinde doluyor}}",
+  "allUpToDate": "Her şey güncel",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Yakında doluyor",
   "recordsShowAll": "{count, plural, =1{Tüm kayıtları göster} other{{count} kaydın tümünü göster}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Kayıtlar",
-  "insightsSummaryDueSoon": "30 gün içinde",
+  "insightsSummaryDueSoon": "30 gün içinde doluyor",
   "insightsSummaryNoReminder": "Hatırlatıcı yok",
   "insightsListEmpty": "Şu anda burada bir şey yok.",
   "smartInsightUpcomingCostHeading": "Yaklaşan yenilemeler",

@@ -1259,17 +1259,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Tiếp tục chờ';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count sắp hết hạn',
-      one: '$count sắp hết hạn',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Không có gì hết hạn hôm nay';
 
   @override
@@ -7873,6 +7862,31 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hết hạn trong 7 ngày',
+      one: '$count hết hạn trong 7 ngày',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hết hạn trong 30 ngày',
+      one: '$count hết hạn trong 30 ngày',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Mọi thứ đều cập nhật';
+
+  @override
   String get changeIcon => 'Đổi biểu tượng';
 
   @override
@@ -8111,9 +8125,6 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Sắp hết hạn';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8161,7 +8172,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get insightsSummaryRecords => 'Hồ sơ';
 
   @override
-  String get insightsSummaryDueSoon => 'Đến hạn trong 30 ngày';
+  String get insightsSummaryDueSoon => 'Hết hạn trong 30 ngày';
 
   @override
   String get insightsSummaryNoReminder => 'Không có nhắc nhở';

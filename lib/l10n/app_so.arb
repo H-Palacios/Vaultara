@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Akoonkan lama xaqiijin. Ka bixitaanka hadda wuu tirtiri doonaa, waxaadna mar kale is diiwaangelin kartaa cinwaan kasta oo iimayl ah.",
   "verifyEmailDiscardAction": "Tuur",
   "verifyEmailKeepWaiting": "Sii sug",
-  "expiringBadge": "{count, plural, =1{{count} ayaa dhawaan dhacaya} other{{count} ayaa dhawaan dhacaya}}",
   "noRecordsToday": "Waxba ma dhacayo maanta",
   "noRecordsTomorrow": "Waxba ma dhacayo berri",
   "cascadeFinalStepTitle": "Xasuusinta ugu dambaysa: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Dammaanadaha",
   "yoursTag": "Adiga",
   "expiredBadge": "{count, plural, =1{{count} waa dhacay} other{{count} waa dhaceen}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} wuxuu dhacayaa 7 maalmood gudahood} other{{count} waxay dhacayaan 7 maalmood gudahood}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} wuxuu dhacayaa 30 maalmood gudahood} other{{count} waxay dhacayaan 30 maalmood gudahood}}",
+  "allUpToDate": "Wax walba waa cusub yihiin",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Dhowaan ayuu dhacayaa",
   "recordsShowAll": "{count, plural, =1{Tus dhammaan diiwaannada} other{Tus dhammaan {count} diiwaan}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Diiwaanno",
-  "insightsSummaryDueSoon": "30 maalmood gudahood",
+  "insightsSummaryDueSoon": "Waxay dhacayaan 30 maalmood gudahood",
   "insightsSummaryNoReminder": "Xusuusin la'aan",
   "insightsListEmpty": "Halkan wax ma jiraan hadda.",
   "smartInsightUpcomingCostHeading": "Cusboonaysiinta soo socota",

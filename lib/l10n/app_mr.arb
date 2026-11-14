@@ -358,7 +358,6 @@
   "verifyEmailDiscardBody": "या खात्याची पडताळणी झालेली नाही. आता बाहेर पडल्यास ते काढून टाकले जाईल आणि तुम्ही कोणत्याही ईमेल पत्त्याने पुन्हा साइन अप करू शकता.",
   "verifyEmailDiscardAction": "टाकून द्या",
   "verifyEmailKeepWaiting": "वाट पाहत राहा",
-  "expiringBadge": "{count, plural, =1{{count} नोंदीची मुदत संपत आहे} other{{count} नोंदींची मुदत संपत आहे}}",
   "noRecordsToday": "आज कशाचीही मुदत संपत नाही",
   "noRecordsTomorrow": "उद्या कशाचीही मुदत संपत नाही",
   "cascadeFinalStepTitle": "शेवटचा रिमाइंडर: {recordName}",
@@ -2366,6 +2365,9 @@
   "subcategoryWarranties": "वॉरंटी आणि गॅरंटी",
   "yoursTag": "तुमचे",
   "expiredBadge": "{count, plural, =1{{count} ची मुदत संपली} other{{count} ची मुदत संपली}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 दिवसांत संपते} other{{count} 7 दिवसांत संपतात}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 दिवसांत संपते} other{{count} 30 दिवसांत संपतात}}",
+  "allUpToDate": "सर्व अद्ययावत",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2482,7 +2484,6 @@
       }
     }
   },
-  "recordsSectionSoon": "लवकरच मुदत संपेल",
   "recordsShowAll": "{count, plural, =1{सर्व नोंदी दाखवा} other{सर्व {count} नोंदी दाखवा}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2528,7 +2529,7 @@
     }
   },
   "insightsSummaryRecords": "नोंदी",
-  "insightsSummaryDueSoon": "30 दिवसांत",
+  "insightsSummaryDueSoon": "30 दिवसांत संपतात",
   "insightsSummaryNoReminder": "स्मरणपत्र नाही",
   "insightsListEmpty": "सध्या इथे काही नाही.",
   "smartInsightUpcomingCostHeading": "येणारी नूतनीकरणे",

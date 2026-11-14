@@ -601,7 +601,6 @@
   "verifyEmailDiscardBody": "此帳戶尚未驗證。現在離開將刪除該帳戶，您可以之後使用任何電子郵件地址重新註冊。",
   "verifyEmailDiscardAction": "放棄",
   "verifyEmailKeepWaiting": "繼續等待",
-  "expiringBadge": "{count, plural, =1{{count} 個項目即將到期} other{{count} 個項目即將到期}}",
   "noRecordsToday": "今天沒有到期的項目",
   "noRecordsTomorrow": "明天沒有到期的項目",
   "cascadeFinalStepTitle": "最後提醒：{recordName}",
@@ -2609,6 +2608,9 @@
   "subcategoryWarranties": "保固與保證",
   "yoursTag": "我的",
   "expiredBadge": "{count, plural, =1{{count} 項已過期} other{{count} 項已過期}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 項在 7 天內到期} other{{count} 項在 7 天內到期}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 項在 30 天內到期} other{{count} 項在 30 天內到期}}",
+  "allUpToDate": "全部正常",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2725,7 +2727,6 @@
       }
     }
   },
-  "recordsSectionSoon": "即將到期",
   "recordsShowAll": "{count, plural, =1{顯示所有紀錄} other{顯示全部 {count} 筆紀錄}}",
   "@recordsShowAll": {
     "placeholders": {

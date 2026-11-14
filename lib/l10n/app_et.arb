@@ -773,7 +773,6 @@
   "verifyEmailDiscardBody": "See konto pole kinnitatud. Praegu lahkudes see eemaldatakse ja saad uuesti registreeruda mis tahes e-posti aadressiga.",
   "verifyEmailDiscardAction": "Loobu",
   "verifyEmailKeepWaiting": "Oota veel",
-  "expiringBadge": "{count, plural, =1{{count} aegub peatselt} other{{count} aeguvad peatselt}}",
   "noRecordsToday": "Täna ei aegu midagi",
   "noRecordsTomorrow": "Homme ei aegu midagi",
   "cascadeFinalStepTitle": "Viimane meeldetuletus: {recordName}",
@@ -2781,6 +2780,9 @@
   "subcategoryWarranties": "Garantiid",
   "yoursTag": "Sinu",
   "expiredBadge": "{count, plural, =1{{count} aegunud} other{{count} aegunud}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} aegub 7 päeva jooksul} other{{count} aeguvad 7 päeva jooksul}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} aegub 30 päeva jooksul} other{{count} aeguvad 30 päeva jooksul}}",
+  "allUpToDate": "Kõik on korras",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2897,7 +2899,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Aegub peagi",
   "recordsShowAll": "{count, plural, =1{Näita kõiki kirjeid} other{Näita kõiki {count} kirjet}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2943,7 +2944,7 @@
     }
   },
   "insightsSummaryRecords": "Kirjed",
-  "insightsSummaryDueSoon": "30 päeva jooksul",
+  "insightsSummaryDueSoon": "Aeguvad 30 päeva jooksul",
   "insightsSummaryNoReminder": "Meeldetuletuseta",
   "insightsListEmpty": "Siin pole praegu midagi.",
   "smartInsightUpcomingCostHeading": "Tulevad uuendused",

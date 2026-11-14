@@ -583,7 +583,6 @@
   "verifyEmailDiscardBody": "Этот аккаунт не подтвержден. Если вы выйдете сейчас, он будет удален, и вы сможете зарегистрироваться снова с любым адресом электронной почты.",
   "verifyEmailDiscardAction": "Удалить",
   "verifyEmailKeepWaiting": "Продолжить ожидание",
-  "expiringBadge": "{count, plural, =1{{count} истекает скоро} few{{count} истекают скоро} many{{count} истекают скоро} other{{count} истекают скоро}}",
   "noRecordsToday": "Сегодня ничего не истекает",
   "noRecordsTomorrow": "Завтра ничего не истекает",
   "cascadeFinalStepTitle": "Последнее напоминание: {recordName}",
@@ -2591,6 +2590,9 @@
   "subcategoryWarranties": "Гарантии",
   "yoursTag": "Ваше",
   "expiredBadge": "{count, plural, =1{{count} истёк} one{{count} истёк} few{{count} истекли} many{{count} истекли} other{{count} истекли}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} истекает в течение 7 дней} other{{count} истекают в течение 7 дней}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} истекает в течение 30 дней} other{{count} истекают в течение 30 дней}}",
+  "allUpToDate": "Всё в порядке",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2707,7 +2709,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Скоро истекает",
   "recordsShowAll": "{count, plural, =1{Показать все записи} other{Показать все записи ({count})}}",
   "@recordsShowAll": {
     "placeholders": {

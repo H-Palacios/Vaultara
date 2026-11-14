@@ -626,7 +626,6 @@
   "verifyEmailDiscardBody": "Tätä tiliä ei ole vahvistettu. Poistuminen nyt poistaa sen, ja voit rekisteröityä uudelleen millä tahansa sähköpostiosoitteella.",
   "verifyEmailDiscardAction": "Hylkää",
   "verifyEmailKeepWaiting": "Jatka odottamista",
-  "expiringBadge": "{count, plural, =1{{count} vanhenee kohta} other{{count} vanhenee kohta}}",
   "noRecordsToday": "Mikään ei vanhene tänään",
   "noRecordsTomorrow": "Mikään ei vanhene huomenna",
   "cascadeFinalStepTitle": "Viimeinen muistutus: {recordName}",
@@ -2634,6 +2633,9 @@
   "subcategoryWarranties": "Takuut",
   "yoursTag": "Oma",
   "expiredBadge": "{count, plural, =1{{count} vanhentunut} other{{count} vanhentunutta}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} vanhenee 7 päivän kuluessa} other{{count} vanhenee 7 päivän kuluessa}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} vanhenee 30 päivän kuluessa} other{{count} vanhenee 30 päivän kuluessa}}",
+  "allUpToDate": "Kaikki ajan tasalla",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2750,7 +2752,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Vanhenee pian",
   "recordsShowAll": "{count, plural, =1{Näytä kaikki tietueet} other{Näytä kaikki {count} tietuetta}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2796,7 +2797,7 @@
     }
   },
   "insightsSummaryRecords": "Tietueet",
-  "insightsSummaryDueSoon": "30 päivän sisällä",
+  "insightsSummaryDueSoon": "Vanhenee 30 päivän kuluessa",
   "insightsSummaryNoReminder": "Ei muistutusta",
   "insightsListEmpty": "Täällä ei ole nyt mitään.",
   "smartInsightUpcomingCostHeading": "Tulevat uusinnat",

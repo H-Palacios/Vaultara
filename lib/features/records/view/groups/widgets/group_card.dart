@@ -9,7 +9,7 @@ class GroupCard extends StatelessWidget {
   final int recordCount;
   final int expiringSoon;
   final int expired;
-  final bool urgent;
+  final int urgent;
   final bool isCustom;
   final VoidCallback onOpen;
   final VoidCallback? onRename;
@@ -21,7 +21,7 @@ class GroupCard extends StatelessWidget {
     required this.groupLabel,
     required this.recordCount,
     required this.expiringSoon,
-    this.urgent = false,
+    this.urgent = 0,
     required this.onOpen,
     this.expired = 0,
     this.isCustom = false,
@@ -82,9 +82,10 @@ class GroupCard extends StatelessWidget {
                         ),
                       ),
                     ],
-                    if (!compact && (expired > 0 || expiringSoon > 0)) ...[
+                    if (!compact && recordCount > 0) ...[
                       const SizedBox(height: 6),
                       RecordCountBadges(
+                        total: recordCount,
                         expired: expired,
                         expiringSoon: expiringSoon,
                         urgent: urgent,

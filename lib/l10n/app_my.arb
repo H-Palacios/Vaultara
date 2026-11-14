@@ -358,7 +358,6 @@
   "verifyEmailDiscardBody": "ဤအကောင့်ကို မစိစစ်အတည်ပြုရသေးပါ။ ယခု ထွက်လိုက်ပါက ၎င်းကို ဖယ်ရှားမည်ဖြစ်ပြီး မည်သည့် အီးမေးလ်လိပ်စာဖြင့်မဆို အကောင့် ပြန်ပြုလုပ်နိုင်သည်။",
   "verifyEmailDiscardAction": "ဖယ်ပစ်ရန်",
   "verifyEmailKeepWaiting": "ဆက်စောင့်ရန်",
-  "expiringBadge": "{count, plural, =1{{count} ခု သက်တမ်းကုန်မည်} other{{count} ခု သက်တမ်းကုန်မည်}}",
   "noRecordsToday": "ယနေ့ သက်တမ်းကုန်မည့်အရာ မရှိပါ",
   "noRecordsTomorrow": "မနက်ဖြန် သက်တမ်းကုန်မည့်အရာ မရှိပါ",
   "cascadeFinalStepTitle": "နောက်ဆုံး သတိပေးချက်: {recordName}",
@@ -2366,6 +2365,9 @@
   "subcategoryWarranties": "အာမခံချက်များ",
   "yoursTag": "သင့်ဟာ",
   "expiredBadge": "{count, plural, =1{{count} ခု သက်တမ်းကုန်} other{{count} ခု သက်တမ်းကုန်}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} ခု ရက် 7 အတွင်း သက်တမ်းကုန်} other{{count} ခု ရက် 7 အတွင်း သက်တမ်းကုန်}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} ခု ရက် 30 အတွင်း သက်တမ်းကုန်} other{{count} ခု ရက် 30 အတွင်း သက်တမ်းကုန်}}",
+  "allUpToDate": "အားလုံး နောက်ဆုံးအခြေအနေ",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2482,7 +2484,6 @@
       }
     }
   },
-  "recordsSectionSoon": "မကြာမီ သက်တမ်းကုန်မည်",
   "recordsShowAll": "{count, plural, =1{မှတ်တမ်းအားလုံး ပြရန်} other{မှတ်တမ်း {count} ခုလုံး ပြရန်}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2528,7 +2529,7 @@
     }
   },
   "insightsSummaryRecords": "မှတ်တမ်းများ",
-  "insightsSummaryDueSoon": "ရက် 30 အတွင်း",
+  "insightsSummaryDueSoon": "ရက် 30 အတွင်း သက်တမ်းကုန်",
   "insightsSummaryNoReminder": "သတိပေးချက် မရှိ",
   "insightsListEmpty": "ယခု ဤနေရာတွင် ဘာမျှ မရှိပါ။",
   "smartInsightUpcomingCostHeading": "လာမည့် သက်တမ်းတိုးမှုများ",

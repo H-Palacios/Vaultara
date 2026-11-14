@@ -1260,17 +1260,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Várakozás folytatása';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count hamarosan lejár',
-      one: '$count hamarosan lejár',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Ma semmi sem jár le';
 
   @override
@@ -7931,6 +7920,31 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 7 napon belül lejár',
+      one: '$count 7 napon belül lejár',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 30 napon belül lejár',
+      one: '$count 30 napon belül lejár',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Minden naprakész';
+
+  @override
   String get changeIcon => 'Ikon módosítása';
 
   @override
@@ -8169,9 +8183,6 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Hamarosan lejár';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8219,7 +8230,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get insightsSummaryRecords => 'Tételek';
 
   @override
-  String get insightsSummaryDueSoon => '30 napon belül';
+  String get insightsSummaryDueSoon => '30 napon belül lejár';
 
   @override
   String get insightsSummaryNoReminder => 'Nincs emlékeztető';

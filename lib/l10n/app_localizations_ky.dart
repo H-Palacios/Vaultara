@@ -1260,17 +1260,6 @@ class AppLocalizationsKy extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Күте туруу';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count мөөнөтү жакында бүтөт',
-      one: '$count мөөнөтү жакында бүтөт',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Бүгүн эч нерсенин мөөнөтү бүтпөйт';
 
   @override
@@ -7931,6 +7920,31 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 7 күндүн ичинде бүтөт',
+      one: '$count 7 күндүн ичинде бүтөт',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 30 күндүн ичинде бүтөт',
+      one: '$count 30 күндүн ичинде бүтөт',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Баары жаңыланган';
+
+  @override
   String get changeIcon => 'Сүрөтчөнү өзгөртүү';
 
   @override
@@ -8169,9 +8183,6 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Жакында мөөнөтү бүтөт';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8219,7 +8230,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get insightsSummaryRecords => 'Жазуулар';
 
   @override
-  String get insightsSummaryDueSoon => '30 күндүн ичинде';
+  String get insightsSummaryDueSoon => '30 күндүн ичинде бүтөт';
 
   @override
   String get insightsSummaryNoReminder => 'Эскертүүсүз';

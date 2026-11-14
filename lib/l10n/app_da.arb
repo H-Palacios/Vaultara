@@ -639,7 +639,6 @@
   "verifyEmailDiscardBody": "Denne konto er ikke verificeret. Hvis du forlader siden nu, fjernes den, og du kan tilmelde dig igen med en hvilken som helst e-mailadresse.",
   "verifyEmailDiscardAction": "Kasser",
   "verifyEmailKeepWaiting": "Bliv ved med at vente",
-  "expiringBadge": "{count, plural, =1{{count} udløber snart} other{{count} udløber snart}}",
   "noRecordsToday": "Intet udløber i dag",
   "noRecordsTomorrow": "Intet udløber i morgen",
   "cascadeFinalStepTitle": "Sidste påmindelse: {recordName}",
@@ -2647,6 +2646,9 @@
   "subcategoryWarranties": "Garantier",
   "yoursTag": "Dit",
   "expiredBadge": "{count, plural, =1{{count} udløbet} other{{count} udløbet}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} udløber inden for 7 dage} other{{count} udløber inden for 7 dage}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} udløber inden for 30 dage} other{{count} udløber inden for 30 dage}}",
+  "allUpToDate": "Alt er opdateret",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2763,7 +2765,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Udløber snart",
   "recordsShowAll": "{count, plural, =1{Vis alle poster} other{Vis alle {count} poster}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2809,7 +2810,7 @@
     }
   },
   "insightsSummaryRecords": "Poster",
-  "insightsSummaryDueSoon": "Inden for 30 dage",
+  "insightsSummaryDueSoon": "Udløber inden for 30 dage",
   "insightsSummaryNoReminder": "Ingen påmindelse",
   "insightsListEmpty": "Her er intet lige nu.",
   "smartInsightUpcomingCostHeading": "Kommende fornyelser",

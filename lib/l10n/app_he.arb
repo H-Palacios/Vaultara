@@ -613,7 +613,6 @@
   "verifyEmailDiscardBody": "חשבון זה אינו מאומת. עזיבה כעת תסיר אותו, ותוכל להירשם מחדש עם כל כתובת אימייל.",
   "verifyEmailDiscardAction": "למחוק",
   "verifyEmailKeepWaiting": "להמשיך להמתין",
-  "expiringBadge": "{count, plural, =1{תוקף של פריט אחד יפוג בקרוב} other{תוקף של {count} פריטים יפוג בקרוב}}",
   "noRecordsToday": "שום דבר לא פג תוקף היום",
   "noRecordsTomorrow": "שום דבר לא פג תוקף מחר",
   "cascadeFinalStepTitle": "תזכורת אחרונה: {recordName}",
@@ -2621,6 +2620,9 @@
   "subcategoryWarranties": "אחריות",
   "yoursTag": "שלך",
   "expiredBadge": "{count, plural, =1{פג תוקף: {count}} other{פג תוקף: {count}}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} פג בתוך 7 ימים} other{{count} פגים בתוך 7 ימים}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} פג בתוך 30 ימים} other{{count} פגים בתוך 30 ימים}}",
+  "allUpToDate": "הכול מעודכן",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2737,7 +2739,6 @@
       }
     }
   },
-  "recordsSectionSoon": "יפוג בקרוב",
   "recordsShowAll": "{count, plural, =1{הצגת כל הרשומות} other{הצגת כל {count} הרשומות}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2783,7 +2784,7 @@
     }
   },
   "insightsSummaryRecords": "רשומות",
-  "insightsSummaryDueSoon": "תוך 30 יום",
+  "insightsSummaryDueSoon": "פגים בתוך 30 ימים",
   "insightsSummaryNoReminder": "ללא תזכורת",
   "insightsListEmpty": "אין כאן כלום כרגע.",
   "smartInsightUpcomingCostHeading": "חידושים קרובים",

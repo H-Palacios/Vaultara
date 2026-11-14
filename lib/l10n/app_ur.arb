@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "اس اکاؤنٹ کی تصدیق نہیں ہوئی ہے۔ ابھی چھوڑنے سے یہ حذف ہو جائے گا، اور آپ کسی بھی ای میل ایڈریس کے ساتھ دوبارہ سائن اپ کر سکتے ہیں۔",
   "verifyEmailDiscardAction": "ختم کریں",
   "verifyEmailKeepWaiting": "انتظار جاری رکھیں",
-  "expiringBadge": "{count, plural, =1{{count} ریکارڈ کی میعاد جلد ختم ہو رہی ہے} other{{count} ریکارڈز کی میعاد جلد ختم ہو رہی ہے}}",
   "noRecordsToday": "آج کسی چیز کی میعاد ختم نہیں ہو رہی",
   "noRecordsTomorrow": "کل کسی چیز کی میعاد ختم نہیں ہو رہی",
   "cascadeFinalStepTitle": "آخری یاد دہانی: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "وارنٹی اور گارنٹی",
   "yoursTag": "آپ کا",
   "expiredBadge": "{count, plural, =1{{count} میعاد ختم} other{{count} میعاد ختم}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} کی میعاد 7 دن میں ختم} other{{count} کی میعاد 7 دن میں ختم}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} کی میعاد 30 دن میں ختم} other{{count} کی میعاد 30 دن میں ختم}}",
+  "allUpToDate": "سب اپ ٹو ڈیٹ",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "جلد ختم ہونے والا",
   "recordsShowAll": "{count, plural, =1{تمام ریکارڈ دکھائیں} other{تمام {count} ریکارڈ دکھائیں}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "ریکارڈز",
-  "insightsSummaryDueSoon": "30 دن میں",
+  "insightsSummaryDueSoon": "30 دن میں میعاد ختم",
   "insightsSummaryNoReminder": "کوئی یاد دہانی نہیں",
   "insightsListEmpty": "ابھی یہاں کچھ نہیں۔",
   "smartInsightUpcomingCostHeading": "آنے والی تجدیدیں",

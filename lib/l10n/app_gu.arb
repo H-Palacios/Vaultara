@@ -358,7 +358,6 @@
   "verifyEmailDiscardBody": "આ એકાઉન્ટ ચકાસાયેલું નથી. અત્યારે બહાર નીકળવાથી તે કાઢી નાખવામાં આવશે, અને તમે કોઈ પણ ઇમેઇલ ઍડ્રેસ વડે ફરીથી સાઇન અપ કરી શકો છો.",
   "verifyEmailDiscardAction": "કાઢી નાખો",
   "verifyEmailKeepWaiting": "રાહ જોતા રહો",
-  "expiringBadge": "{count, plural, one{{count} સમાપ્ત થશે} other{{count} સમાપ્ત થશે}}",
   "noRecordsToday": "આજે કંઈ સમાપ્ત થતું નથી",
   "noRecordsTomorrow": "આવતીકાલે કંઈ સમાપ્ત થતું નથી",
   "cascadeFinalStepTitle": "છેલ્લું રિમાઇન્ડર: \"{recordName}\"",
@@ -2366,6 +2365,9 @@
   "subcategoryWarranties": "વૉરંટી અને ગૅરંટી",
   "yoursTag": "તમારું",
   "expiredBadge": "{count, plural, =1{{count}ની મુદત પૂરી} other{{count}ની મુદત પૂરી}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 દિવસમાં સમાપ્ત થાય છે} other{{count} 7 દિવસમાં સમાપ્ત થાય છે}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 દિવસમાં સમાપ્ત થાય છે} other{{count} 30 દિવસમાં સમાપ્ત થાય છે}}",
+  "allUpToDate": "બધું અપ ટુ ડેટ",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2482,7 +2484,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ટૂંક સમયમાં મુદત પૂરી",
   "recordsShowAll": "{count, plural, =1{બધા રેકોર્ડ બતાવો} other{બધા {count} રેકોર્ડ બતાવો}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2528,7 +2529,7 @@
     }
   },
   "insightsSummaryRecords": "રેકોર્ડ",
-  "insightsSummaryDueSoon": "30 દિવસમાં",
+  "insightsSummaryDueSoon": "30 દિવસમાં સમાપ્ત થાય છે",
   "insightsSummaryNoReminder": "કોઈ રિમાઇન્ડર નથી",
   "insightsListEmpty": "અહીં હમણાં કંઈ નથી.",
   "smartInsightUpcomingCostHeading": "આવનારા નવીનીકરણ",

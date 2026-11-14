@@ -1265,18 +1265,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Laukti toliau';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count greitai baigs galiojimą',
-      few: '$count greitai baigs galiojimą',
-      one: '$count greitai baigs galiojimą',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Šiandien niekas nebaigia galiojimo';
 
   @override
@@ -8075,6 +8063,31 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count baigia galioti per 7 dienas',
+      one: '$count baigia galioti per 7 dienas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count baigia galioti per 30 dienų',
+      one: '$count baigia galioti per 30 dienų',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Viskas atnaujinta';
+
+  @override
   String get changeIcon => 'Keisti piktogramą';
 
   @override
@@ -8313,9 +8326,6 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Greitai baigs galioti';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8363,7 +8373,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get insightsSummaryRecords => 'Įrašai';
 
   @override
-  String get insightsSummaryDueSoon => 'Per 30 dienų';
+  String get insightsSummaryDueSoon => 'Baigia galioti per 30 dienų';
 
   @override
   String get insightsSummaryNoReminder => 'Be priminimo';

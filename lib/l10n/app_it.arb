@@ -613,7 +613,6 @@
   "verifyEmailDiscardBody": "Questo account non è verificato. Uscendo ora verrà rimosso e potrai registrarti di nuovo con qualsiasi indirizzo email.",
   "verifyEmailDiscardAction": "Elimina",
   "verifyEmailKeepWaiting": "Continua ad attendere",
-  "expiringBadge": "{count, plural, =1{{count} in scadenza} other{{count} in scadenza}}",
   "noRecordsToday": "Niente scade oggi",
   "noRecordsTomorrow": "Niente scade domani",
   "cascadeFinalStepTitle": "Ultimo promemoria: {recordName}",
@@ -2621,6 +2620,9 @@
   "subcategoryWarranties": "Garanzie",
   "yoursTag": "Tuo",
   "expiredBadge": "{count, plural, =1{{count} scaduto} other{{count} scaduti}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} scade entro 7 giorni} other{{count} scadono entro 7 giorni}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} scade entro 30 giorni} other{{count} scadono entro 30 giorni}}",
+  "allUpToDate": "Tutto in regola",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2737,7 +2739,6 @@
       }
     }
   },
-  "recordsSectionSoon": "In scadenza",
   "recordsShowAll": "{count, plural, =1{Mostra tutti gli elementi} other{Mostra tutti i {count} elementi}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2783,7 +2784,7 @@
     }
   },
   "insightsSummaryRecords": "Elementi",
-  "insightsSummaryDueSoon": "In scadenza entro 30 giorni",
+  "insightsSummaryDueSoon": "Scadono entro 30 giorni",
   "insightsSummaryNoReminder": "Senza promemoria",
   "insightsListEmpty": "Qui non c'è niente per ora.",
   "smartInsightUpcomingCostHeading": "Rinnovi in arrivo",

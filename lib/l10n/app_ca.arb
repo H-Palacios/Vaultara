@@ -639,7 +639,6 @@
   "verifyEmailDiscardBody": "Aquest compte no està verificat. Sortir ara el suprimirà, i podràs tornar a registrar-te amb qualsevol adreça de correu electrònic.",
   "verifyEmailDiscardAction": "Descarta",
   "verifyEmailKeepWaiting": "Continua esperant",
-  "expiringBadge": "{count, plural, =1{{count} venç aviat} other{{count} vencen aviat}}",
   "noRecordsToday": "Res no venç avui",
   "noRecordsTomorrow": "Res no venç demà",
   "cascadeFinalStepTitle": "Últim recordatori: {recordName}",
@@ -2647,6 +2646,9 @@
   "subcategoryWarranties": "Garanties",
   "yoursTag": "Teu",
   "expiredBadge": "{count, plural, =1{{count} caducat} other{{count} caducats}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} venç en 7 dies} other{{count} vencen en 7 dies}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} venç en 30 dies} other{{count} vencen en 30 dies}}",
+  "allUpToDate": "Tot al dia",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2763,7 +2765,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Caduca aviat",
   "recordsShowAll": "{count, plural, =1{Mostra tots els registres} other{Mostra els {count} registres}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2809,7 +2810,7 @@
     }
   },
   "insightsSummaryRecords": "Registres",
-  "insightsSummaryDueSoon": "En 30 dies",
+  "insightsSummaryDueSoon": "Vencen en 30 dies",
   "insightsSummaryNoReminder": "Sense recordatori",
   "insightsListEmpty": "Aquí no hi ha res ara mateix.",
   "smartInsightUpcomingCostHeading": "Renovacions properes",

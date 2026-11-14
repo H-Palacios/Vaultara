@@ -601,7 +601,6 @@
   "verifyEmailDiscardBody": "Det här kontot är inte verifierat. Om du lämnar sidan nu raderas det, och du kan registrera dig igen med vilken e-postadress som helst.",
   "verifyEmailDiscardAction": "Släng",
   "verifyEmailKeepWaiting": "Fortsätt vänta",
-  "expiringBadge": "{count, plural, =1{{count} går ut snart} other{{count} går ut snart}}",
   "noRecordsToday": "Inget går ut i dag",
   "noRecordsTomorrow": "Inget går ut i morgon",
   "cascadeFinalStepTitle": "Sista påminnelsen: {recordName}",
@@ -2609,6 +2608,9 @@
   "subcategoryWarranties": "Garantier",
   "yoursTag": "Ditt",
   "expiredBadge": "{count, plural, =1{{count} har gått ut} other{{count} har gått ut}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} går ut inom 7 dagar} other{{count} går ut inom 7 dagar}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} går ut inom 30 dagar} other{{count} går ut inom 30 dagar}}",
+  "allUpToDate": "Allt är uppdaterat",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2725,7 +2727,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Går snart ut",
   "recordsShowAll": "{count, plural, =1{Visa alla poster} other{Visa alla {count} poster}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2771,7 +2772,7 @@
     }
   },
   "insightsSummaryRecords": "Poster",
-  "insightsSummaryDueSoon": "Inom 30 dagar",
+  "insightsSummaryDueSoon": "Går ut inom 30 dagar",
   "insightsSummaryNoReminder": "Ingen påminnelse",
   "insightsListEmpty": "Här finns inget just nu.",
   "smartInsightUpcomingCostHeading": "Förnyelser på väg",

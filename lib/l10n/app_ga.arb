@@ -620,7 +620,6 @@
   "verifyEmailDiscardBody": "Níl an cuntas seo fíoraithe. Má fhágann tú anois, bainfear é, agus is féidir leat clárú arís le haon seoladh ríomhphoist.",
   "verifyEmailDiscardAction": "Cuir i leataobh",
   "verifyEmailKeepWaiting": "Lean ort ag fanacht",
-  "expiringBadge": "{count, plural, =1{{count} ag dul in éag go luath} other{{count} ag dul in éag go luath}}",
   "noRecordsToday": "Níl aon rud ag dul in éag inniu",
   "noRecordsTomorrow": "Níl aon rud ag dul in éag amárach",
   "cascadeFinalStepTitle": "Meabhrúchán deiridh: {recordName}",
@@ -2628,6 +2627,9 @@
   "subcategoryWarranties": "Barántais",
   "yoursTag": "Leatsa",
   "expiredBadge": "{count, plural, =1{{count} imithe in éag} other{{count} imithe in éag}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} ag dul in éag laistigh de 7 lá} other{{count} ag dul in éag laistigh de 7 lá}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} ag dul in éag laistigh de 30 lá} other{{count} ag dul in éag laistigh de 30 lá}}",
+  "allUpToDate": "Gach rud cothrom le dáta",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2744,7 +2746,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Ag dul in éag go luath",
   "recordsShowAll": "{count, plural, =1{Taispeáin gach taifead} other{Taispeáin na {count} taifead}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2790,7 +2791,7 @@
     }
   },
   "insightsSummaryRecords": "Taifid",
-  "insightsSummaryDueSoon": "Laistigh de 30 lá",
+  "insightsSummaryDueSoon": "Ag dul in éag laistigh de 30 lá",
   "insightsSummaryNoReminder": "Gan meabhrúchán",
   "insightsListEmpty": "Níl aon rud anseo faoi láthair.",
   "smartInsightUpcomingCostHeading": "Athnuachain le teacht",

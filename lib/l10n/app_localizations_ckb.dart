@@ -1260,17 +1260,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'بەردەوام بە لە چاوەڕوانیکردن';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count بەزوویی بەسەردەچن',
-      one: '$count بەزوویی بەسەردەچێت',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'ئەمڕۆ هیچ بەسەرناچێت';
 
   @override
@@ -7931,6 +7920,31 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count لە ماوەی 7 ڕۆژدا بەسەردەچن',
+      one: '$count لە ماوەی 7 ڕۆژدا بەسەردەچێت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count لە ماوەی 30 ڕۆژدا بەسەردەچن',
+      one: '$count لە ماوەی 30 ڕۆژدا بەسەردەچێت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'هەموو شت نوێیە';
+
+  @override
   String get changeIcon => 'گۆڕینی ئایکۆن';
 
   @override
@@ -8169,9 +8183,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'بەم زووانە بەسەردەچێت';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8219,7 +8230,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get insightsSummaryRecords => 'تۆمارەکان';
 
   @override
-  String get insightsSummaryDueSoon => 'لە ماوەی 30 ڕۆژدا';
+  String get insightsSummaryDueSoon => 'لە ماوەی 30 ڕۆژدا بەسەردەچن';
 
   @override
   String get insightsSummaryNoReminder => 'بێ بیرخستنەوە';

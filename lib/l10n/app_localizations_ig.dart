@@ -1260,17 +1260,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Nọgide na-eche';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count na-agwụ n\'oge na-adịghị anya',
-      one: '$count na-agwụ n\'oge na-adịghị anya',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Enweghị ihe na-agwụ taa';
 
   @override
@@ -7879,6 +7868,31 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ga-agwụ n’ime ụbọchị 7',
+      one: '$count ga-agwụ n’ime ụbọchị 7',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ga-agwụ n’ime ụbọchị 30',
+      one: '$count ga-agwụ n’ime ụbọchị 30',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Ihe niile dị ọhụrụ';
+
+  @override
   String get changeIcon => 'Gbanwee akara ngosi';
 
   @override
@@ -8117,9 +8131,6 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Ọ ga-agwụ n\'oge na-adịghị anya';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8167,7 +8178,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get insightsSummaryRecords => 'Ndekọ';
 
   @override
-  String get insightsSummaryDueSoon => 'N\'ime ụbọchị 30';
+  String get insightsSummaryDueSoon => 'Ga-agwụ n’ime ụbọchị 30';
 
   @override
   String get insightsSummaryNoReminder => 'Enweghị ihe ncheta';

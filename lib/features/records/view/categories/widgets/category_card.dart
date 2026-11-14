@@ -196,16 +196,17 @@ class CategoryCard extends StatelessWidget {
                   if (isCustom) ...[const SizedBox(width: 6), const YoursTag()],
                 ],
               ),
-              if (expired > 0 || expiringSoon > 0) ...[
+              if (totalRecords > 0) ...[
                 const SizedBox(height: 8),
                 Padding(
                   padding: const EdgeInsets.only(right: 8),
                   child: RecordCountBadges(
+                    total: totalRecords,
                     expired: expired,
                     expiringSoon: expiringSoon,
-                    urgent:
-                        ItemLifecycleManager.urgentForCategory(category.key) >
-                        0,
+                    urgent: ItemLifecycleManager.urgentForCategory(
+                      category.key,
+                    ),
                   ),
                 ),
               ],

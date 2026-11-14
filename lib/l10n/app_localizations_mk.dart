@@ -1258,17 +1258,6 @@ class AppLocalizationsMk extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Продолжи со чекање';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count истекуваат наскоро',
-      one: '$count истекува наскоро',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Ништо не истекува денес';
 
   @override
@@ -7929,6 +7918,31 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count истекуваат за 7 дена',
+      one: '$count истекува за 7 дена',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count истекуваат за 30 дена',
+      one: '$count истекува за 30 дена',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Сè е ажурно';
+
+  @override
   String get changeIcon => 'Промени икона';
 
   @override
@@ -8167,9 +8181,6 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Наскоро истекува';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8217,7 +8228,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get insightsSummaryRecords => 'Записи';
 
   @override
-  String get insightsSummaryDueSoon => 'За 30 дена';
+  String get insightsSummaryDueSoon => 'Истекуваат за 30 дена';
 
   @override
   String get insightsSummaryNoReminder => 'Без потсетник';

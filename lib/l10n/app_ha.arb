@@ -620,7 +620,6 @@
   "verifyEmailDiscardBody": "Wannan asusun ba a tabbatar da shi ba. Barin shi yanzu zai cire shi, kuma zaka iya sake yin rajista da kowane adireshin imel.",
   "verifyEmailDiscardAction": "Watsar",
   "verifyEmailKeepWaiting": "Ci gaba da jira",
-  "expiringBadge": "{count, plural, =1{{count} zai ƙare nan ba da daɗewa ba} other{{count} za su ƙare nan ba da daɗewa ba}}",
   "noRecordsToday": "Babu abin da zai ƙare yau",
   "noRecordsTomorrow": "Babu abin da zai ƙare gobe",
   "cascadeFinalStepTitle": "Tunatarwa ta ƙarshe: {recordName}",
@@ -2628,6 +2627,9 @@
   "subcategoryWarranties": "Garanti",
   "yoursTag": "Naka",
   "expiredBadge": "{count, plural, =1{{count} ya ƙare} other{{count} sun ƙare}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} zai ƙare cikin kwanaki 7} other{{count} za su ƙare cikin kwanaki 7}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} zai ƙare cikin kwanaki 30} other{{count} za su ƙare cikin kwanaki 30}}",
+  "allUpToDate": "Komai ya daidaita",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2744,7 +2746,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Zai ƙare nan ba da daɗewa ba",
   "recordsShowAll": "{count, plural, =1{Nuna dukkan bayanai} other{Nuna dukkan bayanai {count}}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2790,7 +2791,7 @@
     }
   },
   "insightsSummaryRecords": "Bayanai",
-  "insightsSummaryDueSoon": "Cikin kwana 30",
+  "insightsSummaryDueSoon": "Za su ƙare cikin kwanaki 30",
   "insightsSummaryNoReminder": "Babu tunatarwa",
   "insightsListEmpty": "Babu komai a nan yanzu.",
   "smartInsightUpcomingCostHeading": "Sabuntawa masu zuwa",

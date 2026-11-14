@@ -358,7 +358,6 @@
   "verifyEmailDiscardBody": "ಈ ಖಾತೆಯನ್ನು ಪರಿಶೀಲಿಸಲಾಗಿಲ್ಲ. ಈಗ ಹೊರಹೋದರೆ ಅದನ್ನು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ, ಮತ್ತು ನೀವು ಯಾವುದೇ ಇಮೇಲ್ ವಿಳಾಸದೊಂದಿಗೆ ಮತ್ತೆ ಸೈನ್ ಅಪ್ ಮಾಡಬಹುದು.",
   "verifyEmailDiscardAction": "ತ್ಯಜಿಸಿ",
   "verifyEmailKeepWaiting": "ಕಾಯುತ್ತಿರಿ",
-  "expiringBadge": "{count, plural, one{{count} ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತಿವೆ} other{{count} ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತಿವೆ}}",
   "noRecordsToday": "ಇಂದು ಯಾವುದೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದಿಲ್ಲ",
   "noRecordsTomorrow": "ನಾಳೆ ಯಾವುದೂ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದಿಲ್ಲ",
   "cascadeFinalStepTitle": "ಕೊನೆಯ ರಿಮೈಂಡರ್: {recordName}",
@@ -2366,6 +2365,9 @@
   "subcategoryWarranties": "ವಾರಂಟಿ ಮತ್ತು ಗ್ಯಾರಂಟಿ",
   "yoursTag": "ನಿಮ್ಮದು",
   "expiredBadge": "{count, plural, =1{{count} ಅವಧಿ ಮುಗಿದಿದೆ} other{{count} ಅವಧಿ ಮುಗಿದಿವೆ}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ} other{{count} 7 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ} other{{count} 30 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ}}",
+  "allUpToDate": "ಎಲ್ಲವೂ ನವೀಕೃತ",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2482,7 +2484,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ಶೀಘ್ರದಲ್ಲೇ ಅವಧಿ ಮುಗಿಯುತ್ತದೆ",
   "recordsShowAll": "{count, plural, =1{ಎಲ್ಲಾ ದಾಖಲೆಗಳನ್ನು ತೋರಿಸಿ} other{ಎಲ್ಲಾ {count} ದಾಖಲೆಗಳನ್ನು ತೋರಿಸಿ}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2528,7 +2529,7 @@
     }
   },
   "insightsSummaryRecords": "ದಾಖಲೆಗಳು",
-  "insightsSummaryDueSoon": "30 ದಿನಗಳಲ್ಲಿ",
+  "insightsSummaryDueSoon": "30 ದಿನಗಳಲ್ಲಿ ಮುಕ್ತಾಯ",
   "insightsSummaryNoReminder": "ಜ್ಞಾಪನೆ ಇಲ್ಲ",
   "insightsListEmpty": "ಈಗ ಇಲ್ಲಿ ಏನೂ ಇಲ್ಲ.",
   "smartInsightUpcomingCostHeading": "ಮುಂಬರುವ ನವೀಕರಣಗಳು",

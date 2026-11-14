@@ -639,7 +639,6 @@
   "verifyEmailDiscardBody": "Dieses Konto ist nicht verifiziert. Wenn du jetzt gehst, wird es gelöscht und du kannst dich mit einer beliebigen E-Mail-Adresse neu registrieren.",
   "verifyEmailDiscardAction": "Verwerfen",
   "verifyEmailKeepWaiting": "Weiter warten",
-  "expiringBadge": "{count, plural, =1{{count} läuft bald ab} other{{count} laufen bald ab}}",
   "noRecordsToday": "Heute läuft nichts ab",
   "noRecordsTomorrow": "Morgen läuft nichts ab",
   "cascadeFinalStepTitle": "Letzte Erinnerung: {recordName}",
@@ -2647,6 +2646,9 @@
   "subcategoryWarranties": "Garantien",
   "yoursTag": "Deins",
   "expiredBadge": "{count, plural, =1{{count} abgelaufen} other{{count} abgelaufen}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} läuft innerhalb von 7 Tagen ab} other{{count} laufen innerhalb von 7 Tagen ab}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} läuft innerhalb von 30 Tagen ab} other{{count} laufen innerhalb von 30 Tagen ab}}",
+  "allUpToDate": "Alles aktuell",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2763,7 +2765,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Bald fällig",
   "recordsShowAll": "{count, plural, =1{Alle Einträge anzeigen} other{Alle {count} Einträge anzeigen}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2809,7 +2810,7 @@
     }
   },
   "insightsSummaryRecords": "Einträge",
-  "insightsSummaryDueSoon": "In 30 Tagen fällig",
+  "insightsSummaryDueSoon": "Laufen in 30 Tagen ab",
   "insightsSummaryNoReminder": "Keine Erinnerung",
   "insightsListEmpty": "Hier ist gerade nichts.",
   "smartInsightUpcomingCostHeading": "Anstehende Verlängerungen",

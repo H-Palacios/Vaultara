@@ -646,7 +646,6 @@
   "verifyEmailDiscardBody": "Hierdie rekening is nie geverifieer nie. As jy nou weggaan, sal dit verwyder word, en jy kan weer met enige e-posadres registreer.",
   "verifyEmailDiscardAction": "Verwerp",
   "verifyEmailKeepWaiting": "Hou aan wag",
-  "expiringBadge": "{count, plural, =1{{count} verval binnekort} other{{count} verval binnekort}}",
   "noRecordsToday": "Niks verval vandag nie",
   "noRecordsTomorrow": "Niks verval môre nie",
   "cascadeFinalStepTitle": "Laaste herinnering: {recordName}",
@@ -2654,6 +2653,9 @@
   "subcategoryWarranties": "Waarborge",
   "yoursTag": "Joune",
   "expiredBadge": "{count, plural, =1{{count} verval} other{{count} verval}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} verval binne 7 dae} other{{count} verval binne 7 dae}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} verval binne 30 dae} other{{count} verval binne 30 dae}}",
+  "allUpToDate": "Alles op datum",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2770,7 +2772,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Verval binnekort",
   "recordsShowAll": "{count, plural, =1{Wys alle inskrywings} other{Wys al {count} inskrywings}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2816,7 +2817,7 @@
     }
   },
   "insightsSummaryRecords": "Inskrywings",
-  "insightsSummaryDueSoon": "Binne 30 dae",
+  "insightsSummaryDueSoon": "Verval binne 30 dae",
   "insightsSummaryNoReminder": "Geen herinnering",
   "insightsListEmpty": "Hier is tans niks nie.",
   "smartInsightUpcomingCostHeading": "Hernuwings op pad",

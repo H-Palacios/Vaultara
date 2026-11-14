@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "මෙම ගිණුම සත්‍යාපනය කර නොමැත. දැන් පිටවීමෙන් එය මකා දැමෙන අතර, ඔබට ඕනෑම විද්‍යුත් තැපැල් ලිපිනයක් භාවිතයෙන් නැවත ලියාපදිංචි විය හැක.",
   "verifyEmailDiscardAction": "ඉවත් කරන්න",
   "verifyEmailKeepWaiting": "දිගටම රැඳී සිටින්න",
-  "expiringBadge": "{count, plural, =1{{count} ළඟදීම කල් ඉකුත් වේ} other{{count} ළඟදීම කල් ඉකුත් වේ}}",
   "noRecordsToday": "අද කිසිවක් කල් ඉකුත් නොවේ",
   "noRecordsTomorrow": "හෙට කිසිවක් කල් ඉකුත් නොවේ",
   "cascadeFinalStepTitle": "අවසාන මතක් කිරීම: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "වගකීම් සහ සහතික",
   "yoursTag": "ඔබේ",
   "expiredBadge": "{count, plural, =1{{count}ක් කල් ඉකුත් වී ඇත} other{{count}ක් කල් ඉකුත් වී ඇත}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} දින 7ක් තුළ ඉකුත් වේ} other{{count} දින 7ක් තුළ ඉකුත් වේ}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} දින 30ක් තුළ ඉකුත් වේ} other{{count} දින 30ක් තුළ ඉකුත් වේ}}",
+  "allUpToDate": "සියල්ල යාවත්කාලීනයි",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ඉක්මනින් කල් ඉකුත් වේ",
   "recordsShowAll": "{count, plural, =1{සියලු වාර්තා පෙන්වන්න} other{වාර්තා {count}ම පෙන්වන්න}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "වාර්තා",
-  "insightsSummaryDueSoon": "දින 30ක් ඇතුළත",
+  "insightsSummaryDueSoon": "දින 30ක් තුළ ඉකුත් වේ",
   "insightsSummaryNoReminder": "සිහිකැඳවීමක් නැත",
   "insightsListEmpty": "දැනට මෙහි කිසිවක් නැත.",
   "smartInsightUpcomingCostHeading": "ඉදිරි අලුත් කිරීම්",

@@ -358,7 +358,6 @@
   "verifyEmailDiscardBody": "គណនីនេះមិនទាន់បានផ្ទៀងផ្ទាត់ទេ។ ប្រសិនបើអ្នកចេញពីទំព័រនេះឥឡូវ គណនីនឹងត្រូវបានលុប ហើយអ្នកអាចចុះឈ្មោះម្ដងទៀតដោយប្រើអាសយដ្ឋានអ៊ីមែលណាមួយ។",
   "verifyEmailDiscardAction": "បោះចោល",
   "verifyEmailKeepWaiting": "បន្តរង់ចាំ",
-  "expiringBadge": "{count, plural, =1{{count} ជិតផុតកំណត់} other{{count} ជិតផុតកំណត់}}",
   "noRecordsToday": "គ្មានអ្វីផុតកំណត់ថ្ងៃនេះទេ",
   "noRecordsTomorrow": "គ្មានអ្វីផុតកំណត់ថ្ងៃស្អែកទេ",
   "cascadeFinalStepTitle": "ការរំលឹកចុងក្រោយ៖ {recordName}",
@@ -2366,6 +2365,9 @@
   "subcategoryWarranties": "ការធានា",
   "yoursTag": "របស់អ្នក",
   "expiredBadge": "{count, plural, =1{ផុតកំណត់ {count}} other{ផុតកំណត់ {count}}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} ផុតកំណត់ក្នុង 7 ថ្ងៃ} other{{count} ផុតកំណត់ក្នុង 7 ថ្ងៃ}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} ផុតកំណត់ក្នុង 30 ថ្ងៃ} other{{count} ផុតកំណត់ក្នុង 30 ថ្ងៃ}}",
+  "allUpToDate": "ទាន់សម័យទាំងអស់",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2482,7 +2484,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ជិតផុតកំណត់",
   "recordsShowAll": "{count, plural, =1{បង្ហាញកំណត់ត្រាទាំងអស់} other{បង្ហាញកំណត់ត្រាទាំង {count}}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2528,7 +2529,7 @@
     }
   },
   "insightsSummaryRecords": "កំណត់ត្រា",
-  "insightsSummaryDueSoon": "ក្នុងរយៈពេល 30 ថ្ងៃ",
+  "insightsSummaryDueSoon": "ផុតកំណត់ក្នុង 30 ថ្ងៃ",
   "insightsSummaryNoReminder": "គ្មានការរំលឹក",
   "insightsListEmpty": "មិនទាន់មានអ្វីនៅទីនេះទេ។",
   "smartInsightUpcomingCostHeading": "ការបន្តដែលនឹងមកដល់",

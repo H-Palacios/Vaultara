@@ -620,7 +620,6 @@
   "verifyEmailDiscardBody": "यह खाता सत्यापित नहीं है। अभी छोड़ने पर यह हट जाएगा, और आप किसी भी ईमेल पते से दोबारा साइन अप कर सकते हैं।",
   "verifyEmailDiscardAction": "हटाएं",
   "verifyEmailKeepWaiting": "प्रतीक्षा करते रहें",
-  "expiringBadge": "{count, plural, =1{{count} की वैधता जल्द समाप्त हो रही है} other{{count} की वैधता जल्द समाप्त हो रही है}}",
   "noRecordsToday": "आज किसी की वैधता समाप्त नहीं हो रही",
   "noRecordsTomorrow": "कल किसी की वैधता समाप्त नहीं हो रही",
   "cascadeFinalStepTitle": "अंतिम रिमाइंडर: {recordName}",
@@ -2628,6 +2627,9 @@
   "subcategoryWarranties": "वारंटी और गारंटी",
   "yoursTag": "आपका",
   "expiredBadge": "{count, plural, =1{{count} की अवधि खत्म} other{{count} की अवधि खत्म}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 दिनों में समाप्त} other{{count} 7 दिनों में समाप्त}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 दिनों में समाप्त} other{{count} 30 दिनों में समाप्त}}",
+  "allUpToDate": "सब अप टू डेट",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2744,7 +2746,6 @@
       }
     }
   },
-  "recordsSectionSoon": "जल्द समाप्त",
   "recordsShowAll": "{count, plural, =1{सभी रिकॉर्ड दिखाएँ} other{सभी {count} रिकॉर्ड दिखाएँ}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2790,7 +2791,7 @@
     }
   },
   "insightsSummaryRecords": "रिकॉर्ड",
-  "insightsSummaryDueSoon": "30 दिनों में",
+  "insightsSummaryDueSoon": "30 दिनों में समाप्त",
   "insightsSummaryNoReminder": "कोई रिमाइंडर नहीं",
   "insightsListEmpty": "अभी यहाँ कुछ नहीं है।",
   "smartInsightUpcomingCostHeading": "आने वाले नवीनीकरण",

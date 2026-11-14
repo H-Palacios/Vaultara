@@ -646,7 +646,6 @@
   "verifyEmailDiscardBody": "هذا الحساب غير متحقق منه. المغادرة الآن ستؤدي إلى إزالته، ويمكنك التسجيل مرة أخرى بأي عنوان بريد إلكتروني.",
   "verifyEmailDiscardAction": "تخلص منه",
   "verifyEmailKeepWaiting": "استمر في الانتظار",
-  "expiringBadge": "{count, plural, =1{{count} ينتهي قريبًا} two{{count} تنتهيان قريبًا} few{{count} تنتهي قريبًا} many{{count} تنتهي قريبًا} other{{count} تنتهي قريبًا}}",
   "noRecordsToday": "لا شيء ينتهي اليوم",
   "noRecordsTomorrow": "لا شيء ينتهي غدًا",
   "cascadeFinalStepTitle": "تذكير أخير: {recordName}",
@@ -2654,6 +2653,9 @@
   "subcategoryWarranties": "الضمانات",
   "yoursTag": "خاص بك",
   "expiredBadge": "{count, plural, =1{{count} منتهي} other{{count} منتهية}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} ينتهي خلال 7 أيام} other{{count} تنتهي خلال 7 أيام}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} ينتهي خلال 30 يومًا} other{{count} تنتهي خلال 30 يومًا}}",
+  "allUpToDate": "كل شيء محدّث",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2770,7 +2772,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ينتهي قريبًا",
   "recordsShowAll": "{count, plural, =1{عرض كل السجلات} other{عرض كل السجلات ({count})}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2816,7 +2817,7 @@
     }
   },
   "insightsSummaryRecords": "السجلات",
-  "insightsSummaryDueSoon": "خلال 30 يومًا",
+  "insightsSummaryDueSoon": "تنتهي خلال 30 يومًا",
   "insightsSummaryNoReminder": "بلا تذكير",
   "insightsListEmpty": "لا يوجد شيء هنا الآن.",
   "smartInsightUpcomingCostHeading": "تجديدات قادمة",

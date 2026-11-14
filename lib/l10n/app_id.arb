@@ -613,7 +613,6 @@
   "verifyEmailDiscardBody": "Akun ini belum diverifikasi. Keluar sekarang akan menghapusnya, dan Anda dapat mendaftar kembali dengan alamat email apa pun.",
   "verifyEmailDiscardAction": "Buang",
   "verifyEmailKeepWaiting": "Tetap menunggu",
-  "expiringBadge": "{count, plural, =1{{count} segera kedaluwarsa} other{{count} segera kedaluwarsa}}",
   "noRecordsToday": "Tidak ada yang kedaluwarsa hari ini",
   "noRecordsTomorrow": "Tidak ada yang kedaluwarsa besok",
   "cascadeFinalStepTitle": "Pengingat terakhir: {recordName}",
@@ -2621,6 +2620,9 @@
   "subcategoryWarranties": "Garansi dan jaminan",
   "yoursTag": "Milik Anda",
   "expiredBadge": "{count, plural, =1{{count} kedaluwarsa} other{{count} kedaluwarsa}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} kedaluwarsa dalam 7 hari} other{{count} kedaluwarsa dalam 7 hari}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} kedaluwarsa dalam 30 hari} other{{count} kedaluwarsa dalam 30 hari}}",
+  "allUpToDate": "Semua sudah beres",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2737,7 +2739,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Segera kedaluwarsa",
   "recordsShowAll": "{count, plural, =1{Tampilkan semua catatan} other{Tampilkan semua {count} catatan}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2783,7 +2784,7 @@
     }
   },
   "insightsSummaryRecords": "Catatan",
-  "insightsSummaryDueSoon": "Dalam 30 hari",
+  "insightsSummaryDueSoon": "Kedaluwarsa dalam 30 hari",
   "insightsSummaryNoReminder": "Tanpa pengingat",
   "insightsListEmpty": "Belum ada apa-apa di sini.",
   "smartInsightUpcomingCostHeading": "Perpanjangan mendatang",

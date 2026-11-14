@@ -1260,17 +1260,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'રાહ જોતા રહો';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count સમાપ્ત થશે',
-      one: '$count સમાપ્ત થશે',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'આજે કંઈ સમાપ્ત થતું નથી';
 
   @override
@@ -7931,6 +7920,31 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 7 દિવસમાં સમાપ્ત થાય છે',
+      one: '$count 7 દિવસમાં સમાપ્ત થાય છે',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 30 દિવસમાં સમાપ્ત થાય છે',
+      one: '$count 30 દિવસમાં સમાપ્ત થાય છે',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'બધું અપ ટુ ડેટ';
+
+  @override
   String get changeIcon => 'આઇકન બદલો';
 
   @override
@@ -8169,9 +8183,6 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'ટૂંક સમયમાં મુદત પૂરી';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8219,7 +8230,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get insightsSummaryRecords => 'રેકોર્ડ';
 
   @override
-  String get insightsSummaryDueSoon => '30 દિવસમાં';
+  String get insightsSummaryDueSoon => '30 દિવસમાં સમાપ્ત થાય છે';
 
   @override
   String get insightsSummaryNoReminder => 'કોઈ રિમાઇન્ડર નથી';

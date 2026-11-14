@@ -1260,17 +1260,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Oota veel';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count aeguvad peatselt',
-      one: '$count aegub peatselt',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Täna ei aegu midagi';
 
   @override
@@ -7935,6 +7924,31 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aeguvad 7 päeva jooksul',
+      one: '$count aegub 7 päeva jooksul',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aeguvad 30 päeva jooksul',
+      one: '$count aegub 30 päeva jooksul',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Kõik on korras';
+
+  @override
   String get changeIcon => 'Muuda ikooni';
 
   @override
@@ -8173,9 +8187,6 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Aegub peagi';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8223,7 +8234,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get insightsSummaryRecords => 'Kirjed';
 
   @override
-  String get insightsSummaryDueSoon => '30 päeva jooksul';
+  String get insightsSummaryDueSoon => 'Aeguvad 30 päeva jooksul';
 
   @override
   String get insightsSummaryNoReminder => 'Meeldetuletuseta';

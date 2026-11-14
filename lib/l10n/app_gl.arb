@@ -620,7 +620,6 @@
   "verifyEmailDiscardBody": "Esta conta non está verificada. Saír agora eliminaraa e poderás rexistrarte de novo con calquera enderezo de correo electrónico.",
   "verifyEmailDiscardAction": "Desbotar",
   "verifyEmailKeepWaiting": "Seguir agardando",
-  "expiringBadge": "{count, plural, =1{{count} a punto de caducar} other{{count} a punto de caducar}}",
   "noRecordsToday": "Nada caduca hoxe",
   "noRecordsTomorrow": "Nada caduca mañá",
   "cascadeFinalStepTitle": "Último lembrete: {recordName}",
@@ -2628,6 +2627,9 @@
   "subcategoryWarranties": "Garantías",
   "yoursTag": "Teu",
   "expiredBadge": "{count, plural, =1{{count} caducado} other{{count} caducados}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} caduca en 7 días} other{{count} caducan en 7 días}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} caduca en 30 días} other{{count} caducan en 30 días}}",
+  "allUpToDate": "Todo ao día",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2744,7 +2746,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Caduca pronto",
   "recordsShowAll": "{count, plural, =1{Mostrar todos os rexistros} other{Mostrar os {count} rexistros}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2790,7 +2791,7 @@
     }
   },
   "insightsSummaryRecords": "Rexistros",
-  "insightsSummaryDueSoon": "En 30 días",
+  "insightsSummaryDueSoon": "Caducan en 30 días",
   "insightsSummaryNoReminder": "Sen recordatorio",
   "insightsListEmpty": "Aquí non hai nada agora mesmo.",
   "smartInsightUpcomingCostHeading": "Renovacións próximas",

@@ -869,16 +869,6 @@
   "@verifyEmailKeepWaiting": {
     "description": "Cancel action on the discard account dialog"
   },
-  "expiringBadge": "{count, plural, =1{{count} expiring} other{{count} expiring}}",
-  "@expiringBadge": {
-    "description": "Badge on a category or group card showing how many records expire soon",
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "example": "3"
-      }
-    }
-  },
   "noRecordsToday": "Nothing expires today",
   "@noRecordsToday": {
     "description": "Empty state under the calendar when the selected day is today and no records expire on it"
@@ -9614,6 +9604,28 @@
       }
     }
   },
+  "expiresWithin7Badge": "{count, plural, =1{{count} expires within 7 days} other{{count} expire within 7 days}}",
+  "@expiresWithin7Badge": {
+    "description": "Status on a category or group card: records expiring in the next 7 days (orange dot).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "expiresWithin30Badge": "{count, plural, =1{{count} expires within 30 days} other{{count} expire within 30 days}}",
+  "@expiresWithin30Badge": {
+    "description": "Status on a category or group card: records expiring in 8 to 30 days (amber dot). Records within 7 days are counted in the 7 days badge instead.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "allUpToDate": "All up to date",
+  "@allUpToDate": {
+    "description": "Status on a category or group card when nothing has expired or expires within 30 days."
+  },
   "changeIcon": "Change icon",
   "@changeIcon": {
     "description": "Menu item and sheet title for changing a custom category's icon."
@@ -9934,10 +9946,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Due soon",
-  "@recordsSectionSoon": {
-    "description": "Section heading for records that expire within 30 days."
-  },
   "recordsShowAll": "{count, plural, =1{Show all records} other{Show all {count} records}}",
   "@recordsShowAll": {
     "description": "Button to show every record in the group after opening one from search.",
@@ -10008,7 +10016,7 @@
   "@insightsSummaryRecords": {
     "description": "Label of the total records number at the top of Insights."
   },
-  "insightsSummaryDueSoon": "Due in 30 days",
+  "insightsSummaryDueSoon": "Expire within 30 days",
   "@insightsSummaryDueSoon": {
     "description": "Label of the number of records expiring within 30 days."
   },

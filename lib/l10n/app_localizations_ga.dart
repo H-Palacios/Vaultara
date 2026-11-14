@@ -1263,17 +1263,6 @@ class AppLocalizationsGa extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Lean ort ag fanacht';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count ag dul in éag go luath',
-      one: '$count ag dul in éag go luath',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Níl aon rud ag dul in éag inniu';
 
   @override
@@ -8118,6 +8107,31 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ag dul in éag laistigh de 7 lá',
+      one: '$count ag dul in éag laistigh de 7 lá',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ag dul in éag laistigh de 30 lá',
+      one: '$count ag dul in éag laistigh de 30 lá',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Gach rud cothrom le dáta';
+
+  @override
   String get changeIcon => 'Athraigh an deilbhín';
 
   @override
@@ -8356,9 +8370,6 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Ag dul in éag go luath';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8406,7 +8417,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get insightsSummaryRecords => 'Taifid';
 
   @override
-  String get insightsSummaryDueSoon => 'Laistigh de 30 lá';
+  String get insightsSummaryDueSoon => 'Ag dul in éag laistigh de 30 lá';
 
   @override
   String get insightsSummaryNoReminder => 'Gan meabhrúchán';

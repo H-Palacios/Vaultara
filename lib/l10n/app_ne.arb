@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "यो खाता प्रमाणित गरिएको छैन। अहिले छोड्दा यो हट्नेछ र तपाईंले जुनसुकै इमेल ठेगाना प्रयोग गरेर पुन: साइन अप गर्न सक्नुहुन्छ।",
   "verifyEmailDiscardAction": "खारेज गर्नुहोस्",
   "verifyEmailKeepWaiting": "प्रतीक्षा गरिरहनुहोस्",
-  "expiringBadge": "{count, plural, =1{{count} म्याद सकिँदैछ} other{{count} म्याद सकिँदैछ}}",
   "noRecordsToday": "आज केही पनि म्याद सकिँदैन",
   "noRecordsTomorrow": "भोलि केही पनि म्याद सकिँदैन",
   "cascadeFinalStepTitle": "अन्तिम रिमाइन्डर: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "वारेन्टी र ग्यारेन्टी",
   "yoursTag": "तपाईंको",
   "expiredBadge": "{count, plural, =1{{count} को म्याद सकियो} other{{count} को म्याद सकियो}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} ७ दिनभित्र सकिन्छ} other{{count} ७ दिनभित्र सकिन्छन्}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} ३० दिनभित्र सकिन्छ} other{{count} ३० दिनभित्र सकिन्छन्}}",
+  "allUpToDate": "सबै अद्यावधिक",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "छिट्टै म्याद सकिँदै",
   "recordsShowAll": "{count, plural, =1{सबै रेकर्ड देखाउनुहोस्} other{सबै {count} रेकर्ड देखाउनुहोस्}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "रेकर्ड",
-  "insightsSummaryDueSoon": "30 दिनभित्र",
+  "insightsSummaryDueSoon": "३० दिनभित्र सकिन्छन्",
   "insightsSummaryNoReminder": "रिमाइन्डर छैन",
   "insightsListEmpty": "अहिले यहाँ केही छैन।",
   "smartInsightUpcomingCostHeading": "आउँदै गरेका नवीकरण",

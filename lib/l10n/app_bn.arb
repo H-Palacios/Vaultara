@@ -639,7 +639,6 @@
   "verifyEmailDiscardBody": "এই অ্যাকাউন্টটি যাচাই করা হয়নি। এখন চলে গেলে এটি মুছে ফেলা হবে এবং আপনি যেকোনো ইমেল ঠিকানা দিয়ে আবার সাইন আপ করতে পারবেন।",
   "verifyEmailDiscardAction": "বাতিল করুন",
   "verifyEmailKeepWaiting": "অপেক্ষা করতে থাকুন",
-  "expiringBadge": "{count, plural, =1{1টির মেয়াদ শীঘ্রই শেষ হচ্ছে} other{{count}টির মেয়াদ শীঘ্রই শেষ হচ্ছে}}",
   "noRecordsToday": "আজ কোনো কিছুর মেয়াদ শেষ হচ্ছে না",
   "noRecordsTomorrow": "আগামীকাল কোনো কিছুর মেয়াদ শেষ হচ্ছে না",
   "cascadeFinalStepTitle": "শেষ রিমাইন্ডার: {recordName}",
@@ -2647,6 +2646,9 @@
   "subcategoryWarranties": "ওয়ারেন্টি ও গ্যারান্টি",
   "yoursTag": "আপনার",
   "expiredBadge": "{count, plural, =1{{count}টির মেয়াদ শেষ} other{{count}টির মেয়াদ শেষ}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count}টির মেয়াদ ৭ দিনের মধ্যে শেষ} other{{count}টির মেয়াদ ৭ দিনের মধ্যে শেষ}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count}টির মেয়াদ ৩০ দিনের মধ্যে শেষ} other{{count}টির মেয়াদ ৩০ দিনের মধ্যে শেষ}}",
+  "allUpToDate": "সব হালনাগাদ",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2763,7 +2765,6 @@
       }
     }
   },
-  "recordsSectionSoon": "শীঘ্রই মেয়াদ শেষ",
   "recordsShowAll": "{count, plural, =1{সব রেকর্ড দেখান} other{সব {count}টি রেকর্ড দেখান}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2809,7 +2810,7 @@
     }
   },
   "insightsSummaryRecords": "রেকর্ড",
-  "insightsSummaryDueSoon": "30 দিনের মধ্যে",
+  "insightsSummaryDueSoon": "৩০ দিনের মধ্যে মেয়াদ শেষ",
   "insightsSummaryNoReminder": "কোনো রিমাইন্ডার নেই",
   "insightsListEmpty": "এখানে এখন কিছু নেই।",
   "smartInsightUpcomingCostHeading": "আসন্ন নবায়ন",

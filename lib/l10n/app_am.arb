@@ -646,7 +646,6 @@
   "verifyEmailDiscardBody": "ይህ መለያ አልተረጋገጠም። አሁን መውጣት መለያውን ያስወግደዋል፣ እና በማንኛውም ኢሜይል አድራሻ እንደገና መመዝገብ ይችላሉ።",
   "verifyEmailDiscardAction": "አስወግድ",
   "verifyEmailKeepWaiting": "መጠበቅ ቀጥል",
-  "expiringBadge": "{count, plural, =1{{count} በቅርቡ ያበቃል} other{{count} በቅርቡ ያበቃሉ}}",
   "noRecordsToday": "ዛሬ ምንም የሚያበቃ የለም",
   "noRecordsTomorrow": "ነገ ምንም የሚያበቃ የለም",
   "cascadeFinalStepTitle": "የመጨረሻ አስታዋሽ፡ {recordName}",
@@ -2654,6 +2653,9 @@
   "subcategoryWarranties": "ዋስትናዎች",
   "yoursTag": "የእርስዎ",
   "expiredBadge": "{count, plural, =1{{count} ጊዜው አልፏል} other{{count} ጊዜያቸው አልፏል}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} በ7 ቀናት ውስጥ ያበቃል} other{{count} በ7 ቀናት ውስጥ ያበቃሉ}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} በ30 ቀናት ውስጥ ያበቃል} other{{count} በ30 ቀናት ውስጥ ያበቃሉ}}",
+  "allUpToDate": "ሁሉም የተዘመነ ነው",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2770,7 +2772,6 @@
       }
     }
   },
-  "recordsSectionSoon": "በቅርቡ ያበቃል",
   "recordsShowAll": "{count, plural, =1{ሁሉንም መዝገቦች አሳይ} other{ሁሉንም {count} መዝገቦች አሳይ}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2816,7 +2817,7 @@
     }
   },
   "insightsSummaryRecords": "መዝገቦች",
-  "insightsSummaryDueSoon": "በ30 ቀናት ውስጥ",
+  "insightsSummaryDueSoon": "በ30 ቀናት ውስጥ የሚያበቁ",
   "insightsSummaryNoReminder": "አስታዋሽ የለም",
   "insightsListEmpty": "እዚህ አሁን ምንም የለም።",
   "smartInsightUpcomingCostHeading": "የሚመጡ እድሳቶች",

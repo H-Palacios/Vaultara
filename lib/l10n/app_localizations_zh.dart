@@ -1259,17 +1259,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get verifyEmailKeepWaiting => '继续等待';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 个项目即将到期',
-      one: '$count 个项目即将到期',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => '今天没有到期的项目';
 
   @override
@@ -7873,6 +7862,31 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 项在 7 天内到期',
+      one: '$count 项在 7 天内到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 项在 30 天内到期',
+      one: '$count 项在 30 天内到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => '全部正常';
+
+  @override
   String get changeIcon => '更换图标';
 
   @override
@@ -8109,9 +8123,6 @@ class AppLocalizationsZh extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get recordsSectionSoon => '即将到期';
 
   @override
   String recordsShowAll(int count) {
@@ -10170,17 +10181,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get verifyEmailKeepWaiting => '继续等待';
-
-  @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 个项目即将到期',
-      one: '$count 个项目即将到期',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get noRecordsToday => '今天没有到期的项目';
@@ -16786,6 +16786,31 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 项在 7 天内到期',
+      one: '$count 项在 7 天内到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 项在 30 天内到期',
+      one: '$count 项在 30 天内到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => '全部正常';
+
+  @override
   String get changeIcon => '更换图标';
 
   @override
@@ -17022,9 +17047,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
     );
     return '$_temp0';
   }
-
-  @override
-  String get recordsSectionSoon => '即将到期';
 
   @override
   String recordsShowAll(int count) {
@@ -19083,17 +19105,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get verifyEmailKeepWaiting => '繼續等待';
-
-  @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count 個項目即將到期',
-      one: '$count 個項目即將到期',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get noRecordsToday => '今天沒有到期的項目';
@@ -25699,6 +25710,31 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 項在 7 天內到期',
+      one: '$count 項在 7 天內到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 項在 30 天內到期',
+      one: '$count 項在 30 天內到期',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => '全部正常';
+
+  @override
   String get changeIcon => '更換圖示';
 
   @override
@@ -25935,9 +25971,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
     );
     return '$_temp0';
   }
-
-  @override
-  String get recordsSectionSoon => '即將到期';
 
   @override
   String recordsShowAll(int count) {

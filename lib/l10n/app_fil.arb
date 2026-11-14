@@ -620,7 +620,6 @@
   "verifyEmailDiscardBody": "Hindi pa na-verify ang account na ito. Ang pag-alis ngayon ay magtatanggal dito, at maaari kang mag-sign up ulit gamit ang anumang email address.",
   "verifyEmailDiscardAction": "I-discard",
   "verifyEmailKeepWaiting": "Patuloy na maghintay",
-  "expiringBadge": "{count, plural, =1{{count} ang malapit nang mag-expire} other{{count} ang malapit nang mag-expire}}",
   "noRecordsToday": "Walang mag-e-expire ngayon",
   "noRecordsTomorrow": "Walang mag-e-expire bukas",
   "cascadeFinalStepTitle": "Huling paalala: {recordName}",
@@ -2628,6 +2627,9 @@
   "subcategoryWarranties": "Mga warranty at garantiya",
   "yoursTag": "Iyo",
   "expiredBadge": "{count, plural, =1{{count} expired} other{{count} expired}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} mag-e-expire sa loob ng 7 araw} other{{count} mag-e-expire sa loob ng 7 araw}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} mag-e-expire sa loob ng 30 araw} other{{count} mag-e-expire sa loob ng 30 araw}}",
+  "allUpToDate": "Updated lahat",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2744,7 +2746,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Malapit nang mag-expire",
   "recordsShowAll": "{count, plural, =1{Ipakita ang lahat ng record} other{Ipakita ang lahat ng {count} record}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2790,7 +2791,7 @@
     }
   },
   "insightsSummaryRecords": "Mga record",
-  "insightsSummaryDueSoon": "Sa loob ng 30 araw",
+  "insightsSummaryDueSoon": "Mag-e-expire sa loob ng 30 araw",
   "insightsSummaryNoReminder": "Walang paalala",
   "insightsListEmpty": "Wala pang laman dito.",
   "smartInsightUpcomingCostHeading": "Mga paparating na renewal",

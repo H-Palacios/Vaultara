@@ -1271,19 +1271,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Продовжувати очікування';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count скоро закінчуються',
-      many: '$count скоро закінчуються',
-      few: '$count скоро закінчуються',
-      one: '$count скоро закінчується',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Сьогодні нічого не закінчується';
 
   @override
@@ -8082,6 +8069,31 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count спливають протягом 7 днів',
+      one: '$count спливає протягом 7 днів',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count спливають протягом 30 днів',
+      one: '$count спливає протягом 30 днів',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Усе актуально';
+
+  @override
   String get changeIcon => 'Змінити значок';
 
   @override
@@ -8324,9 +8336,6 @@ class AppLocalizationsUk extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get recordsSectionSoon => 'Скоро спливає';
 
   @override
   String recordsShowAll(int count) {

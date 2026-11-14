@@ -626,7 +626,6 @@
   "verifyEmailDiscardBody": "Энэ бүртгэл баталгаажаагүй байна. Одоо гарвал бүртгэл устах бөгөөд та дурын имэйл хаягаар дахин бүртгүүлэх боломжтой.",
   "verifyEmailDiscardAction": "Устгах",
   "verifyEmailKeepWaiting": "Үргэлжлүүлэн хүлээх",
-  "expiringBadge": "{count, plural, =1{{count} хугацаа дуусах гэж байна} other{{count} хугацаа дуусах гэж байна}}",
   "noRecordsToday": "Өнөөдөр юу ч дуусахгүй",
   "noRecordsTomorrow": "Маргааш юу ч дуусахгүй",
   "cascadeFinalStepTitle": "Сүүлчийн сануулга: {recordName}",
@@ -2634,6 +2633,9 @@
   "subcategoryWarranties": "Баталгаа",
   "yoursTag": "Таных",
   "expiredBadge": "{count, plural, =1{{count} хугацаа дууссан} other{{count} хугацаа дууссан}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 хоногт дуусна} other{{count} 7 хоногт дуусна}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 хоногт дуусна} other{{count} 30 хоногт дуусна}}",
+  "allUpToDate": "Бүгд шинэчлэгдсэн",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2750,7 +2752,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Удахгүй дуусна",
   "recordsShowAll": "{count, plural, =1{Бүх бичлэгийг харуулах} other{Бүх {count} бичлэгийг харуулах}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2796,7 +2797,7 @@
     }
   },
   "insightsSummaryRecords": "Бичлэгүүд",
-  "insightsSummaryDueSoon": "30 хоногт",
+  "insightsSummaryDueSoon": "30 хоногт дуусна",
   "insightsSummaryNoReminder": "Сануулгагүй",
   "insightsListEmpty": "Одоогоор энд юу ч алга.",
   "smartInsightUpcomingCostHeading": "Удахгүй сунгалтууд",

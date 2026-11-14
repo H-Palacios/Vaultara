@@ -622,7 +622,6 @@
   "verifyEmailDiscardBody": "Այս հաշիվը հաստատված չէ: Հիմա դուրս գալը կհեռացնի այն, և դուք կկարողանաք նորից գրանցվել ցանկացած էլ. փոստի հասցեով:",
   "verifyEmailDiscardAction": "Հեռացնել",
   "verifyEmailKeepWaiting": "Շարունակել սպասել",
-  "expiringBadge": "{count, plural, =1{{count}-ի ժամկետը շուտով ավարտվում է} other{{count}-ի ժամկետը շուտով ավարտվում է}}",
   "noRecordsToday": "Այսօր ոչինչ չի ավարտվում",
   "noRecordsTomorrow": "Վաղը ոչինչ չի ավարտվում",
   "cascadeFinalStepTitle": "Վերջին հիշեցում՝ {recordName}",
@@ -2630,6 +2629,9 @@
   "subcategoryWarranties": "Երաշխիքներ",
   "yoursTag": "Ձերը",
   "expiredBadge": "{count, plural, =1{{count}-ի ժամկետն անցել է} other{{count}-ի ժամկետն անցել է}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count}-ի ժամկետը լրանում է 7 օրում} other{{count}-ի ժամկետը լրանում է 7 օրում}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count}-ի ժամկետը լրանում է 30 օրում} other{{count}-ի ժամկետը լրանում է 30 օրում}}",
+  "allUpToDate": "Ամեն ինչ արդիական է",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2746,7 +2748,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Շուտով կլրանա",
   "recordsShowAll": "{count, plural, =1{Ցույց տալ բոլոր գրառումները} other{Ցույց տալ բոլոր {count} գրառումները}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2792,7 +2793,7 @@
     }
   },
   "insightsSummaryRecords": "Գրառումներ",
-  "insightsSummaryDueSoon": "30 օրվա ընթացքում",
+  "insightsSummaryDueSoon": "Լրանում են 30 օրում",
   "insightsSummaryNoReminder": "Առանց հիշեցման",
   "insightsListEmpty": "Այստեղ դեռ ոչինչ չկա։",
   "smartInsightUpcomingCostHeading": "Մոտալուտ թարմացումներ",

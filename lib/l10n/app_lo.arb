@@ -626,7 +626,6 @@
   "verifyEmailDiscardBody": "ບັນຊີນີ້ຍັງບໍ່ທັນໄດ້ຮັບການຢືນຢັນເທື່ອ. ການອອກດຽວນີ້ຈະລຶບມັນອອກ, ແລະ ທ່ານສາມາດລົງທະບຽນໃໝ່ໄດ້ດ້ວຍທີ່ຢູ່ອີເມວໃດກໍໄດ້.",
   "verifyEmailDiscardAction": "ຖິ້ມ",
   "verifyEmailKeepWaiting": "ລໍຖ້າຕໍ່ໄປ",
-  "expiringBadge": "{count, plural, =1{{count} ໃກ້ຈະໝົດອາຍຸ} other{{count} ໃກ້ຈະໝົດອາຍຸ}}",
   "noRecordsToday": "ມື້ນີ້ບໍ່ມີຫຍັງໝົດອາຍຸ",
   "noRecordsTomorrow": "ມື້ອື່ນບໍ່ມີຫຍັງໝົດອາຍຸ",
   "cascadeFinalStepTitle": "ການເຕືອນຄັ້ງສຸດທ້າຍ: {recordName}",
@@ -2634,6 +2633,9 @@
   "subcategoryWarranties": "ການຮັບປະກັນ",
   "yoursTag": "ຂອງທ່ານ",
   "expiredBadge": "{count, plural, =1{ໝົດອາຍຸ {count}} other{ໝົດອາຍຸ {count}}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} ໝົດອາຍຸພາຍໃນ 7 ມື້} other{{count} ໝົດອາຍຸພາຍໃນ 7 ມື້}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} ໝົດອາຍຸພາຍໃນ 30 ມື້} other{{count} ໝົດອາຍຸພາຍໃນ 30 ມື້}}",
+  "allUpToDate": "ທຸກຢ່າງເປັນປັດຈຸບັນ",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2750,7 +2752,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ໃກ້ໝົດອາຍຸ",
   "recordsShowAll": "{count, plural, =1{ສະແດງທຸກລາຍການ} other{ສະແດງທັງໝົດ {count} ລາຍການ}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2796,7 +2797,7 @@
     }
   },
   "insightsSummaryRecords": "ລາຍການ",
-  "insightsSummaryDueSoon": "ພາຍໃນ 30 ມື້",
+  "insightsSummaryDueSoon": "ໝົດອາຍຸພາຍໃນ 30 ມື້",
   "insightsSummaryNoReminder": "ບໍ່ມີການເຕືອນ",
   "insightsListEmpty": "ຕອນນີ້ບໍ່ມີຫຍັງຢູ່ນີ້.",
   "smartInsightUpcomingCostHeading": "ການຕໍ່ອາຍຸທີ່ກຳລັງຈະມາ",

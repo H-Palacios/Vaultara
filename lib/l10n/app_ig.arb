@@ -613,7 +613,6 @@
   "verifyEmailDiscardBody": "Akaụntụ a enwebeghị nkwenye. Ịpụ ugbu a ga-eme ka e wepụ ya, ị nwere ike iji email ọ bụla debanye aha ọzọ.",
   "verifyEmailDiscardAction": "Wepụ",
   "verifyEmailKeepWaiting": "Nọgide na-eche",
-  "expiringBadge": "{count, plural, =1{{count} na-agwụ n'oge na-adịghị anya} other{{count} na-agwụ n'oge na-adịghị anya}}",
   "noRecordsToday": "Enweghị ihe na-agwụ taa",
   "noRecordsTomorrow": "Enweghị ihe na-agwụ echi",
   "cascadeFinalStepTitle": "Ncheta ikpeazụ: {recordName}",
@@ -2621,6 +2620,9 @@
   "subcategoryWarranties": "Nkwa",
   "yoursTag": "Nke gị",
   "expiredBadge": "{count, plural, =1{{count} agwụla} other{{count} agwụla}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} ga-agwụ n’ime ụbọchị 7} other{{count} ga-agwụ n’ime ụbọchị 7}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} ga-agwụ n’ime ụbọchị 30} other{{count} ga-agwụ n’ime ụbọchị 30}}",
+  "allUpToDate": "Ihe niile dị ọhụrụ",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2737,7 +2739,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Ọ ga-agwụ n'oge na-adịghị anya",
   "recordsShowAll": "{count, plural, =1{Gosi ndekọ niile} other{Gosi ndekọ {count} niile}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2783,7 +2784,7 @@
     }
   },
   "insightsSummaryRecords": "Ndekọ",
-  "insightsSummaryDueSoon": "N'ime ụbọchị 30",
+  "insightsSummaryDueSoon": "Ga-agwụ n’ime ụbọchị 30",
   "insightsSummaryNoReminder": "Enweghị ihe ncheta",
   "insightsListEmpty": "Ọ dịghị ihe ebe a ugbu a.",
   "smartInsightUpcomingCostHeading": "Mmeghari ọhụrụ na-abịa",

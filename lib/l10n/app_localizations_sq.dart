@@ -1260,17 +1260,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Vazhdoni të prisni';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count skadojnë së shpejti',
-      one: '$count skadon së shpejti',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Asgjë nuk skadon sot';
 
   @override
@@ -7935,6 +7924,31 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count skadojnë brenda 7 ditëve',
+      one: '$count skadon brenda 7 ditëve',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count skadojnë brenda 30 ditëve',
+      one: '$count skadon brenda 30 ditëve',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Gjithçka e përditësuar';
+
+  @override
   String get changeIcon => 'Ndrysho ikonën';
 
   @override
@@ -8173,9 +8187,6 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Skadon së shpejti';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8223,7 +8234,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get insightsSummaryRecords => 'Regjistrime';
 
   @override
-  String get insightsSummaryDueSoon => 'Brenda 30 ditëve';
+  String get insightsSummaryDueSoon => 'Skadojnë brenda 30 ditëve';
 
   @override
   String get insightsSummaryNoReminder => 'Pa kujtesë';

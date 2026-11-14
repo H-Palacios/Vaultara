@@ -622,7 +622,6 @@
   "verifyEmailDiscardBody": "Kjo llogari nuk është e verifikuar. Largimi tani do ta fshijë atë dhe ju mund të regjistroheni sërish me cilëndo adresë emaili.",
   "verifyEmailDiscardAction": "Hidh poshtë",
   "verifyEmailKeepWaiting": "Vazhdoni të prisni",
-  "expiringBadge": "{count, plural, =1{{count} skadon së shpejti} other{{count} skadojnë së shpejti}}",
   "noRecordsToday": "Asgjë nuk skadon sot",
   "noRecordsTomorrow": "Asgjë nuk skadon nesër",
   "cascadeFinalStepTitle": "Kujtesa e fundit: {recordName}",
@@ -2630,6 +2629,9 @@
   "subcategoryWarranties": "Garanci",
   "yoursTag": "Juaji",
   "expiredBadge": "{count, plural, =1{{count} i skaduar} other{{count} të skaduar}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} skadon brenda 7 ditëve} other{{count} skadojnë brenda 7 ditëve}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} skadon brenda 30 ditëve} other{{count} skadojnë brenda 30 ditëve}}",
+  "allUpToDate": "Gjithçka e përditësuar",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2746,7 +2748,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Skadon së shpejti",
   "recordsShowAll": "{count, plural, =1{Shfaq të gjitha regjistrimet} other{Shfaq të {count} regjistrimet}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2792,7 +2793,7 @@
     }
   },
   "insightsSummaryRecords": "Regjistrime",
-  "insightsSummaryDueSoon": "Brenda 30 ditëve",
+  "insightsSummaryDueSoon": "Skadojnë brenda 30 ditëve",
   "insightsSummaryNoReminder": "Pa kujtesë",
   "insightsListEmpty": "Nuk ka asgjë këtu tani.",
   "smartInsightUpcomingCostHeading": "Rinovime në pritje",

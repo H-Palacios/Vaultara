@@ -1260,17 +1260,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'ლოდინის გაგრძელება';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count მალე იწურება',
-      one: '$count მალე იწურება',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'დღეს არაფერს ეწურება ვადა';
 
   @override
@@ -7931,6 +7920,31 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count-ს 7 დღეში გასდის ვადა',
+      one: '$count-ს 7 დღეში გასდის ვადა',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count-ს 30 დღეში გასდის ვადა',
+      one: '$count-ს 30 დღეში გასდის ვადა',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'ყველაფერი განახლებულია';
+
+  @override
   String get changeIcon => 'ხატულის შეცვლა';
 
   @override
@@ -8169,9 +8183,6 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'მალე იწურება';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8219,7 +8230,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get insightsSummaryRecords => 'ჩანაწერები';
 
   @override
-  String get insightsSummaryDueSoon => '30 დღეში';
+  String get insightsSummaryDueSoon => 'ვადა 30 დღეში გადის';
 
   @override
   String get insightsSummaryNoReminder => 'შეხსენების გარეშე';

@@ -410,7 +410,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
       case RecordSection.expired:
         return loc.statusExpired;
       case RecordSection.soon:
-        return loc.recordsSectionSoon;
+        return loc.legendWithinMonth;
       case RecordSection.valid:
         return loc.statusValid;
     }

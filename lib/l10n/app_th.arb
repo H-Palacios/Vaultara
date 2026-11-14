@@ -625,7 +625,6 @@
   "verifyEmailDiscardBody": "บัญชีนี้ยังไม่ได้รับการยืนยัน หากคุณออกตอนนี้ บัญชีจะถูกลบออก และคุณสามารถลงทะเบียนใหม่ด้วยอีเมลใดก็ได้",
   "verifyEmailDiscardAction": "ละทิ้ง",
   "verifyEmailKeepWaiting": "รอต่อไป",
-  "expiringBadge": "{count, plural, =1{{count} รายการกำลังจะหมดอายุ} other{{count} รายการกำลังจะหมดอายุ}}",
   "noRecordsToday": "ไม่มีรายการหมดอายุในวันนี้",
   "noRecordsTomorrow": "ไม่มีรายการหมดอายุในพรุ่งนี้",
   "cascadeFinalStepTitle": "การแจ้งเตือนครั้งสุดท้าย: {recordName}",
@@ -2633,6 +2632,9 @@
   "subcategoryWarranties": "การรับประกัน",
   "yoursTag": "ของคุณ",
   "expiredBadge": "{count, plural, =1{หมดอายุ {count} รายการ} other{หมดอายุ {count} รายการ}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} รายการหมดอายุภายใน 7 วัน} other{{count} รายการหมดอายุภายใน 7 วัน}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} รายการหมดอายุภายใน 30 วัน} other{{count} รายการหมดอายุภายใน 30 วัน}}",
+  "allUpToDate": "ทุกอย่างเป็นปัจจุบัน",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2749,7 +2751,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ใกล้หมดอายุ",
   "recordsShowAll": "{count, plural, =1{แสดงทุกรายการ} other{แสดงทั้งหมด {count} รายการ}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2795,7 +2796,7 @@
     }
   },
   "insightsSummaryRecords": "รายการ",
-  "insightsSummaryDueSoon": "ภายใน 30 วัน",
+  "insightsSummaryDueSoon": "หมดอายุภายใน 30 วัน",
   "insightsSummaryNoReminder": "ไม่มีการเตือน",
   "insightsListEmpty": "ตอนนี้ยังไม่มีอะไรที่นี่",
   "smartInsightUpcomingCostHeading": "การต่ออายุที่ใกล้เข้ามา",

@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Tài khoản này chưa được xác minh. Rời đi bây giờ sẽ xóa tài khoản, và bạn có thể đăng ký lại bằng bất kỳ địa chỉ email nào.",
   "verifyEmailDiscardAction": "Hủy bỏ",
   "verifyEmailKeepWaiting": "Tiếp tục chờ",
-  "expiringBadge": "{count, plural, =1{{count} sắp hết hạn} other{{count} sắp hết hạn}}",
   "noRecordsToday": "Không có gì hết hạn hôm nay",
   "noRecordsTomorrow": "Không có gì hết hạn ngày mai",
   "cascadeFinalStepTitle": "Lời nhắc cuối cùng: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Bảo hành",
   "yoursTag": "Của bạn",
   "expiredBadge": "{count, plural, =1{{count} đã hết hạn} other{{count} đã hết hạn}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} hết hạn trong 7 ngày} other{{count} hết hạn trong 7 ngày}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} hết hạn trong 30 ngày} other{{count} hết hạn trong 30 ngày}}",
+  "allUpToDate": "Mọi thứ đều cập nhật",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Sắp hết hạn",
   "recordsShowAll": "{count, plural, =1{Hiện tất cả hồ sơ} other{Hiện tất cả {count} hồ sơ}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Hồ sơ",
-  "insightsSummaryDueSoon": "Đến hạn trong 30 ngày",
+  "insightsSummaryDueSoon": "Hết hạn trong 30 ngày",
   "insightsSummaryNoReminder": "Không có nhắc nhở",
   "insightsListEmpty": "Hiện chưa có gì ở đây.",
   "smartInsightUpcomingCostHeading": "Sắp gia hạn",

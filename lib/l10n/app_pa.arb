@@ -615,7 +615,6 @@
   "verifyEmailDiscardBody": "ਇਹ ਅਕਾਊਂਟ ਵੈਰੀਫਾਈਡ ਨਹੀਂ ਹੈ। ਹੁਣੇ ਛੱਡਣ 'ਤੇ ਇਹ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ, ਅਤੇ ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਈਮੇਲ ਪਤੇ ਨਾਲ ਦੁਬਾਰਾ ਸਾਈਨ ਅੱਪ ਕਰ ਸਕਦੇ ਹੋ।",
   "verifyEmailDiscardAction": "ਰੱਦ ਕਰੋ",
   "verifyEmailKeepWaiting": "ਉਡੀਕ ਕਰਦੇ ਰਹੋ",
-  "expiringBadge": "{count, plural, =1{{count} ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ} other{{count} ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ}}",
   "noRecordsToday": "ਅੱਜ ਕੁਝ ਵੀ ਮਿਆਦ ਪੁੱਗਣ ਵਾਲਾ ਨਹੀਂ ਹੈ",
   "noRecordsTomorrow": "ਕੱਲ੍ਹ ਕੁਝ ਵੀ ਮਿਆਦ ਪੁੱਗਣ ਵਾਲਾ ਨਹੀਂ ਹੈ",
   "cascadeFinalStepTitle": "ਆਖਰੀ ਰਿਮਾਈਂਡਰ: {recordName}",
@@ -2623,6 +2622,9 @@
   "subcategoryWarranties": "ਵਾਰੰਟੀ ਅਤੇ ਗਾਰੰਟੀ",
   "yoursTag": "ਤੁਹਾਡਾ",
   "expiredBadge": "{count, plural, =1{{count} ਦੀ ਮਿਆਦ ਖ਼ਤਮ} other{{count} ਦੀ ਮਿਆਦ ਖ਼ਤਮ}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 7 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ} other{{count} 7 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 30 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ} other{{count} 30 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ}}",
+  "allUpToDate": "ਸਭ ਅੱਪ ਟੂ ਡੇਟ",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2739,7 +2741,6 @@
       }
     }
   },
-  "recordsSectionSoon": "ਜਲਦੀ ਮਿਆਦ ਖ਼ਤਮ",
   "recordsShowAll": "{count, plural, =1{ਸਾਰੇ ਰਿਕਾਰਡ ਦਿਖਾਓ} other{ਸਾਰੇ {count} ਰਿਕਾਰਡ ਦਿਖਾਓ}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2785,7 +2786,7 @@
     }
   },
   "insightsSummaryRecords": "ਰਿਕਾਰਡ",
-  "insightsSummaryDueSoon": "30 ਦਿਨਾਂ ਵਿੱਚ",
+  "insightsSummaryDueSoon": "30 ਦਿਨਾਂ ਵਿੱਚ ਮਿਆਦ ਪੁੱਗਦੀ",
   "insightsSummaryNoReminder": "ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ",
   "insightsListEmpty": "ਹਾਲੇ ਇੱਥੇ ਕੁਝ ਨਹੀਂ।",
   "smartInsightUpcomingCostHeading": "ਆਉਣ ਵਾਲੇ ਨਵੀਨੀਕਰਨ",

@@ -613,7 +613,6 @@
   "verifyEmailDiscardBody": "Þessi aðgangur er ekki staðfestur. Ef þú ferð núna verður honum eytt og þú getur skráð þig aftur með hvaða netfangi sem er.",
   "verifyEmailDiscardAction": "Henda",
   "verifyEmailKeepWaiting": "Bíða áfram",
-  "expiringBadge": "{count, plural, =1{{count} rennur senn út} other{{count} renna senn út}}",
   "noRecordsToday": "Ekkert rennur út í dag",
   "noRecordsTomorrow": "Ekkert rennur út á morgun",
   "cascadeFinalStepTitle": "Síðasta áminning: {recordName}",
@@ -2621,6 +2620,9 @@
   "subcategoryWarranties": "Ábyrgðir",
   "yoursTag": "Þitt",
   "expiredBadge": "{count, plural, =1{{count} útrunnið} other{{count} útrunnin}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} rennur út innan 7 daga} other{{count} renna út innan 7 daga}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} rennur út innan 30 daga} other{{count} renna út innan 30 daga}}",
+  "allUpToDate": "Allt uppfært",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2737,7 +2739,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Rennur brátt út",
   "recordsShowAll": "{count, plural, =1{Sýna allar færslur} other{Sýna allar {count} færslur}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2783,7 +2784,7 @@
     }
   },
   "insightsSummaryRecords": "Færslur",
-  "insightsSummaryDueSoon": "Innan 30 daga",
+  "insightsSummaryDueSoon": "Renna út innan 30 daga",
   "insightsSummaryNoReminder": "Engin áminning",
   "insightsListEmpty": "Hér er ekkert í bili.",
   "smartInsightUpcomingCostHeading": "Endurnýjanir fram undan",

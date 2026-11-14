@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Esta conta não está verificada. Sair agora irá removê-la e poderá registar-se novamente com qualquer endereço de e-mail.",
   "verifyEmailDiscardAction": "Descartar",
   "verifyEmailKeepWaiting": "Continuar a esperar",
-  "expiringBadge": "{count, plural, =1{{count} a expirar em breve} other{{count} a expirar em breve}}",
   "noRecordsToday": "Nada expira hoje",
   "noRecordsTomorrow": "Nada expira amanhã",
   "cascadeFinalStepTitle": "Último lembrete: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Garantias",
   "yoursTag": "Seu",
   "expiredBadge": "{count, plural, =1{{count} vencido} other{{count} vencidos}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} vence em até 7 dias} other{{count} vencem em até 7 dias}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} vence em até 30 dias} other{{count} vencem em até 30 dias}}",
+  "allUpToDate": "Tudo em dia",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Vence em breve",
   "recordsShowAll": "{count, plural, =1{Mostrar todos os registros} other{Mostrar todos os {count} registros}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Registros",
-  "insightsSummaryDueSoon": "Vencem em 30 dias",
+  "insightsSummaryDueSoon": "Vencem em até 30 dias",
   "insightsSummaryNoReminder": "Sem lembrete",
   "insightsListEmpty": "Nada aqui por enquanto.",
   "smartInsightUpcomingCostHeading": "Renovações chegando",

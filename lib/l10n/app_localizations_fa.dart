@@ -1260,17 +1260,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'منتظر بمانید';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count مورد به‌زودی منقضی می‌شوند',
-      one: '$count مورد به‌زودی منقضی می‌شود',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'امروز چیزی منقضی نمی‌شود';
 
   @override
@@ -7931,6 +7920,31 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد ظرف ۷ روز منقضی می‌شوند',
+      one: '$count مورد ظرف ۷ روز منقضی می‌شود',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count مورد ظرف ۳۰ روز منقضی می‌شوند',
+      one: '$count مورد ظرف ۳۰ روز منقضی می‌شود',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'همه‌چیز به‌روز است';
+
+  @override
   String get changeIcon => 'تغییر نماد';
 
   @override
@@ -8169,9 +8183,6 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'به‌زودی منقضی می‌شود';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8219,7 +8230,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get insightsSummaryRecords => 'موارد';
 
   @override
-  String get insightsSummaryDueSoon => 'تا ۳۰ روز آینده';
+  String get insightsSummaryDueSoon => 'ظرف ۳۰ روز منقضی می‌شوند';
 
   @override
   String get insightsSummaryNoReminder => 'بدون یادآور';

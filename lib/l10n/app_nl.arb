@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Dit account is niet geverifieerd. Als je nu weggaat, wordt het verwijderd en kun je je opnieuw registreren met elk gewenst e-mailadres.",
   "verifyEmailDiscardAction": "Weggooien",
   "verifyEmailKeepWaiting": "Blijven wachten",
-  "expiringBadge": "{count, plural, =1{{count} verloopt binnenkort} other{{count} verlopen binnenkort}}",
   "noRecordsToday": "Er verloopt vandaag niets",
   "noRecordsTomorrow": "Er verloopt morgen niets",
   "cascadeFinalStepTitle": "Laatste herinnering: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Garanties",
   "yoursTag": "Van jou",
   "expiredBadge": "{count, plural, =1{{count} verlopen} other{{count} verlopen}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} verloopt binnen 7 dagen} other{{count} verlopen binnen 7 dagen}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} verloopt binnen 30 dagen} other{{count} verlopen binnen 30 dagen}}",
+  "allUpToDate": "Alles is bijgewerkt",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Verloopt binnenkort",
   "recordsShowAll": "{count, plural, =1{Alle items tonen} other{Alle {count} items tonen}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Items",
-  "insightsSummaryDueSoon": "Binnen 30 dagen",
+  "insightsSummaryDueSoon": "Verlopen binnen 30 dagen",
   "insightsSummaryNoReminder": "Geen herinnering",
   "insightsListEmpty": "Hier staat nu niets.",
   "smartInsightUpcomingCostHeading": "Verlengingen op komst",

@@ -358,7 +358,6 @@
   "verifyEmailDiscardBody": "Този акаунт не е потвърден. Ако напуснете сега, той ще бъде премахнат и ще можете да създадете акаунт отново с всеки имейл адрес.",
   "verifyEmailDiscardAction": "Отхвърляне",
   "verifyEmailKeepWaiting": "Ще изчакам",
-  "expiringBadge": "{count, plural, =1{{count} изтича} other{{count} изтичат}}",
   "noRecordsToday": "Нищо не изтича днес",
   "noRecordsTomorrow": "Нищо не изтича утре",
   "cascadeFinalStepTitle": "Последно напомняне: {recordName}",
@@ -2366,6 +2365,9 @@
   "subcategoryWarranties": "Гаранции",
   "yoursTag": "Ваше",
   "expiredBadge": "{count, plural, =1{{count} изтекъл} other{{count} изтекли}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} изтича до 7 дни} other{{count} изтичат до 7 дни}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} изтича до 30 дни} other{{count} изтичат до 30 дни}}",
+  "allUpToDate": "Всичко е наред",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2482,7 +2484,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Изтича скоро",
   "recordsShowAll": "{count, plural, =1{Показване на всички записи} other{Показване на всички {count} записа}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2528,7 +2529,7 @@
     }
   },
   "insightsSummaryRecords": "Записи",
-  "insightsSummaryDueSoon": "До 30 дни",
+  "insightsSummaryDueSoon": "Изтичат до 30 дни",
   "insightsSummaryNoReminder": "Без напомняне",
   "insightsListEmpty": "Тук засега няма нищо.",
   "smartInsightUpcomingCostHeading": "Предстоящи подновявания",

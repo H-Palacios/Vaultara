@@ -1261,18 +1261,6 @@ class AppLocalizationsHr extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Nastavi čekati';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count uskoro istječe',
-      few: '$count uskoro istječu',
-      one: '$count uskoro istječe',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Danas ništa ne istječe';
 
   @override
@@ -7998,6 +7986,31 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count istječe u roku od 7 dana',
+      one: '$count istječe u roku od 7 dana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count istječe u roku od 30 dana',
+      one: '$count istječe u roku od 30 dana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Sve je ažurno';
+
+  @override
   String get changeIcon => 'Promijeni ikonu';
 
   @override
@@ -8239,9 +8252,6 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Uskoro istječe';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8289,7 +8299,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get insightsSummaryRecords => 'Zapisi';
 
   @override
-  String get insightsSummaryDueSoon => 'U 30 dana';
+  String get insightsSummaryDueSoon => 'Istječe u roku od 30 dana';
 
   @override
   String get insightsSummaryNoReminder => 'Bez podsjetnika';

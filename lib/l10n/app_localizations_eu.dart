@@ -1260,17 +1260,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Jarraitu itxaroten';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count laster iraungiko dira',
-      one: '$count laster iraungiko da',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Ezer ez da gaur iraungitzen';
 
   @override
@@ -7935,6 +7924,31 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 7 egunean iraungitzen dira',
+      one: '$count 7 egunean iraungitzen da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 30 egunean iraungitzen dira',
+      one: '$count 30 egunean iraungitzen da',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Dena eguneratuta';
+
+  @override
   String get changeIcon => 'Aldatu ikonoa';
 
   @override
@@ -8173,9 +8187,6 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Laster iraungiko da';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8223,7 +8234,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get insightsSummaryRecords => 'Erregistroak';
 
   @override
-  String get insightsSummaryDueSoon => '30 egunetan';
+  String get insightsSummaryDueSoon => '30 egunean iraungitzen dira';
 
   @override
   String get insightsSummaryNoReminder => 'Abisurik gabe';

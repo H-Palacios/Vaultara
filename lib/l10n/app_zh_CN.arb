@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "此账号尚未验证。现在离开将删除该账号，您可以之后使用任何电子邮件地址重新注册。",
   "verifyEmailDiscardAction": "放弃",
   "verifyEmailKeepWaiting": "继续等待",
-  "expiringBadge": "{count, plural, =1{{count} 个项目即将到期} other{{count} 个项目即将到期}}",
   "noRecordsToday": "今天没有到期的项目",
   "noRecordsTomorrow": "明天没有到期的项目",
   "cascadeFinalStepTitle": "最后提醒：{recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "保修与保证",
   "yoursTag": "我的",
   "expiredBadge": "{count, plural, =1{{count} 项已过期} other{{count} 项已过期}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} 项在 7 天内到期} other{{count} 项在 7 天内到期}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} 项在 30 天内到期} other{{count} 项在 30 天内到期}}",
+  "allUpToDate": "全部正常",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "即将到期",
   "recordsShowAll": "{count, plural, =1{显示所有记录} other{显示全部 {count} 条记录}}",
   "@recordsShowAll": {
     "placeholders": {

@@ -2407,12 +2407,6 @@ abstract class AppLocalizations {
   /// **'Keep waiting'**
   String get verifyEmailKeepWaiting;
 
-  /// Badge on a category or group card showing how many records expire soon
-  ///
-  /// In en, this message translates to:
-  /// **'{count, plural, =1{{count} expiring} other{{count} expiring}}'**
-  String expiringBadge(int count);
-
   /// Empty state under the calendar when the selected day is today and no records expire on it
   ///
   /// In en, this message translates to:
@@ -13705,6 +13699,24 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{{count} expired} other{{count} expired}}'**
   String expiredBadge(int count);
 
+  /// Status on a category or group card: records expiring in the next 7 days (orange dot).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{count} expires within 7 days} other{{count} expire within 7 days}}'**
+  String expiresWithin7Badge(int count);
+
+  /// Status on a category or group card: records expiring in 8 to 30 days (amber dot). Records within 7 days are counted in the 7 days badge instead.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{{count} expires within 30 days} other{{count} expire within 30 days}}'**
+  String expiresWithin30Badge(int count);
+
+  /// Status on a category or group card when nothing has expired or expires within 30 days.
+  ///
+  /// In en, this message translates to:
+  /// **'All up to date'**
+  String get allUpToDate;
+
   /// Menu item and sheet title for changing a custom category's icon.
   ///
   /// In en, this message translates to:
@@ -14089,12 +14101,6 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Deleted {count} record} other{Deleted {count} records}}'**
   String recordsDeletedMany(int count);
 
-  /// Section heading for records that expire within 30 days.
-  ///
-  /// In en, this message translates to:
-  /// **'Due soon'**
-  String get recordsSectionSoon;
-
   /// Button to show every record in the group after opening one from search.
   ///
   /// In en, this message translates to:
@@ -14164,7 +14170,7 @@ abstract class AppLocalizations {
   /// Label of the number of records expiring within 30 days.
   ///
   /// In en, this message translates to:
-  /// **'Due in 30 days'**
+  /// **'Expire within 30 days'**
   String get insightsSummaryDueSoon;
 
   /// Label of the number of upcoming records without a reminder.

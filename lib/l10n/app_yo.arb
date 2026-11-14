@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "A kò tíì fìdí akọọlẹ yìí múlẹ̀. Lílọ kúrò nísìnsìnyí yóò mú un kúrò, o sì le tún forúkọsílẹ̀ pẹ̀lú àdírẹ́sì imeeli èyíkéyìí.",
   "verifyEmailDiscardAction": "Pa rẹ́",
   "verifyEmailKeepWaiting": "Sì máa dúró",
-  "expiringBadge": "{count, plural, =1{{count} yóò parí láìpẹ́} other{{count} yóò parí láìpẹ́}}",
   "noRecordsToday": "Kò sí ohun tí ń parí lónìí",
   "noRecordsTomorrow": "Kò sí ohun tí ń parí lọ́la",
   "cascadeFinalStepTitle": "Iranti ikẹhin: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Ìdánilójú",
   "yoursTag": "Tìrẹ",
   "expiredBadge": "{count, plural, =1{{count} ti parí} other{{count} ti parí}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} máa parí láàrin ọjọ́ 7} other{{count} máa parí láàrin ọjọ́ 7}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} máa parí láàrin ọjọ́ 30} other{{count} máa parí láàrin ọjọ́ 30}}",
+  "allUpToDate": "Gbogbo nǹkan wà ní ìmúdójúìwọ̀n",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Yóò parí láìpẹ́",
   "recordsShowAll": "{count, plural, =1{Fi gbogbo àkọsílẹ̀ hàn} other{Fi gbogbo àkọsílẹ̀ {count} hàn}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Àwọn àkọsílẹ̀",
-  "insightsSummaryDueSoon": "Láàárín ọjọ́ 30",
+  "insightsSummaryDueSoon": "Máa parí láàrin ọjọ́ 30",
   "insightsSummaryNoReminder": "Kò sí ìránnilétí",
   "insightsListEmpty": "Kò sí nǹkan kan níbí báyìí.",
   "smartInsightUpcomingCostHeading": "Àwọn àtúnṣe tó ń bọ̀",

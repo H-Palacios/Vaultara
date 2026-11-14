@@ -626,7 +626,6 @@
   "verifyEmailDiscardBody": "Оваа сметка не е верификувана. Ако излезете сега, таа ќе биде отстранета, а вие ќе можете повторно да се регистрирате со која било е-адреса.",
   "verifyEmailDiscardAction": "Отфрли",
   "verifyEmailKeepWaiting": "Продолжи со чекање",
-  "expiringBadge": "{count, plural, =1{{count} истекува наскоро} other{{count} истекуваат наскоро}}",
   "noRecordsToday": "Ништо не истекува денес",
   "noRecordsTomorrow": "Ништо не истекува утре",
   "cascadeFinalStepTitle": "Последен потсетник: {recordName}",
@@ -2634,6 +2633,9 @@
   "subcategoryWarranties": "Гаранции",
   "yoursTag": "Ваше",
   "expiredBadge": "{count, plural, =1{{count} истечено} other{{count} истечени}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} истекува за 7 дена} other{{count} истекуваат за 7 дена}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} истекува за 30 дена} other{{count} истекуваат за 30 дена}}",
+  "allUpToDate": "Сè е ажурно",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2750,7 +2752,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Наскоро истекува",
   "recordsShowAll": "{count, plural, =1{Прикажи ги сите записи} other{Прикажи ги сите {count} записи}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2796,7 +2797,7 @@
     }
   },
   "insightsSummaryRecords": "Записи",
-  "insightsSummaryDueSoon": "За 30 дена",
+  "insightsSummaryDueSoon": "Истекуваат за 30 дена",
   "insightsSummaryNoReminder": "Без потсетник",
   "insightsListEmpty": "Тука засега нема ништо.",
   "smartInsightUpcomingCostHeading": "Претстојни обновувања",

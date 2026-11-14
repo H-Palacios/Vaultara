@@ -608,7 +608,6 @@
   "verifyEmailDiscardBody": "Akaunti hii haijathibitishwa. Kuondoka sasa kutaiondoa, na unaweza kujisajili tena kwa anwani yoyote ya barua pepe.",
   "verifyEmailDiscardAction": "Futa",
   "verifyEmailKeepWaiting": "Endelea kusubiri",
-  "expiringBadge": "{count, plural, =1{{count} inayoisha hivi karibuni} other{{count} zinazoisha hivi karibuni}}",
   "noRecordsToday": "Hakuna kinachoisha leo",
   "noRecordsTomorrow": "Hakuna kinachoisha kesho",
   "cascadeFinalStepTitle": "Kikumbusho cha mwisho: {recordName}",
@@ -2616,6 +2615,9 @@
   "subcategoryWarranties": "Dhamana na waranti",
   "yoursTag": "Yako",
   "expiredBadge": "{count, plural, =1{{count} imeisha muda} other{{count} zimeisha muda}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} itaisha ndani ya siku 7} other{{count} zitaisha ndani ya siku 7}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} itaisha ndani ya siku 30} other{{count} zitaisha ndani ya siku 30}}",
+  "allUpToDate": "Kila kitu kiko sawa",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2732,7 +2734,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Inaisha hivi karibuni",
   "recordsShowAll": "{count, plural, =1{Onyesha rekodi zote} other{Onyesha rekodi zote {count}}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2778,7 +2779,7 @@
     }
   },
   "insightsSummaryRecords": "Rekodi",
-  "insightsSummaryDueSoon": "Ndani ya siku 30",
+  "insightsSummaryDueSoon": "Zitaisha ndani ya siku 30",
   "insightsSummaryNoReminder": "Hakuna kikumbusho",
   "insightsListEmpty": "Hakuna kitu hapa kwa sasa.",
   "smartInsightUpcomingCostHeading": "Usasishaji unaokuja",

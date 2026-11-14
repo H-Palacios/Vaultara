@@ -626,7 +626,6 @@
   "verifyEmailDiscardBody": "Ši paskyra nepatvirtinta. Jei išeisite dabar, ji bus pašalinta, o vėliau galėsite užsiregistruoti iš naujo naudodami bet kurį el. pašto adresą.",
   "verifyEmailDiscardAction": "Atmesti",
   "verifyEmailKeepWaiting": "Laukti toliau",
-  "expiringBadge": "{count, plural, =1{{count} greitai baigs galiojimą} few{{count} greitai baigs galiojimą} other{{count} greitai baigs galiojimą}}",
   "noRecordsToday": "Šiandien niekas nebaigia galiojimo",
   "noRecordsTomorrow": "Rytoj niekas nebaigia galiojimo",
   "cascadeFinalStepTitle": "Paskutinis priminimas: {recordName}",
@@ -2634,6 +2633,9 @@
   "subcategoryWarranties": "Garantijos",
   "yoursTag": "Jūsų",
   "expiredBadge": "{count, plural, =1{{count} nebegalioja} other{Nebegalioja: {count}}}",
+  "expiresWithin7Badge": "{count, plural, =1{{count} baigia galioti per 7 dienas} other{{count} baigia galioti per 7 dienas}}",
+  "expiresWithin30Badge": "{count, plural, =1{{count} baigia galioti per 30 dienų} other{{count} baigia galioti per 30 dienų}}",
+  "allUpToDate": "Viskas atnaujinta",
   "@expiredBadge": {
     "placeholders": {
       "count": {
@@ -2750,7 +2752,6 @@
       }
     }
   },
-  "recordsSectionSoon": "Greitai baigs galioti",
   "recordsShowAll": "{count, plural, =1{Rodyti visus įrašus} other{Rodyti visus įrašus ({count})}}",
   "@recordsShowAll": {
     "placeholders": {
@@ -2796,7 +2797,7 @@
     }
   },
   "insightsSummaryRecords": "Įrašai",
-  "insightsSummaryDueSoon": "Per 30 dienų",
+  "insightsSummaryDueSoon": "Baigia galioti per 30 dienų",
   "insightsSummaryNoReminder": "Be priminimo",
   "insightsListEmpty": "Kol kas čia nieko nėra.",
   "smartInsightUpcomingCostHeading": "Artėjantys atnaujinimai",

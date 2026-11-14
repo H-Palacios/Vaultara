@@ -1268,18 +1268,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String get verifyEmailKeepWaiting => 'Počkat';
 
   @override
-  String expiringBadge(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count brzy vyprší',
-      few: '$count brzy vyprší',
-      one: '$count brzy vyprší',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get noRecordsToday => 'Dnes nic nevyprší';
 
   @override
@@ -8069,6 +8057,31 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String expiresWithin7Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vyprší do 7 dnů',
+      one: '$count vyprší do 7 dnů',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String expiresWithin30Badge(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vyprší do 30 dnů',
+      one: '$count vyprší do 30 dnů',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get allUpToDate => 'Vše je aktuální';
+
+  @override
   String get changeIcon => 'Změnit ikonu';
 
   @override
@@ -8313,9 +8326,6 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get recordsSectionSoon => 'Brzy vyprší';
-
-  @override
   String recordsShowAll(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -8363,7 +8373,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get insightsSummaryRecords => 'Záznamy';
 
   @override
-  String get insightsSummaryDueSoon => 'Do 30 dnů';
+  String get insightsSummaryDueSoon => 'Vyprší do 30 dnů';
 
   @override
   String get insightsSummaryNoReminder => 'Bez připomenutí';
