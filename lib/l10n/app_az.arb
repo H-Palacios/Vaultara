@@ -3509,5 +3509,43 @@
   "talkStopWords": "dayan,bu qədər,sağ ol,hələlik,danışıq rejimini bitir",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Müraciət ölkəsi",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Yoxlanılıb: {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Bu plan düzgün idi?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Bildirdiyiniz üçün təşəkkür edirik.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Yenidən yoxla",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "{name} üçün yeniləmə planı səhv görünür. Zəhmət olmasa rəsmi addımları yenidən yoxla.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Rəsmi sayt",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

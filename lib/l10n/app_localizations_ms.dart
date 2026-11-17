@@ -9267,4 +9267,29 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get talkStopWords => 'berhenti,cukup,itu sahaja,selamat tinggal,bye,tamatkan mod bercakap';
+
+  @override
+  String get coachApplyInLabel => 'Mohon dari';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Disemak $date';
+  }
+
+  @override
+  String get coachWasRight => 'Adakah pelan ini betul?';
+
+  @override
+  String get coachThanks => 'Terima kasih kerana memberitahu kami.';
+
+  @override
+  String get coachRecheck => 'Semak semula';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Pelan pembaharuan untuk $name saya nampak salah. Sila semak semula langkah rasmi.';
+  }
+
+  @override
+  String get coachOfficial => 'Laman rasmi';
 }

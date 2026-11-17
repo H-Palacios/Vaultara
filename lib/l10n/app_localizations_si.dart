@@ -9329,4 +9329,29 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get talkStopWords => 'නවත්වන්න,ඇති,එච්චරයි,ආයුබෝවන්,බායි,කතා ප්‍රකාරය අවසන් කරන්න';
+
+  @override
+  String get coachApplyInLabel => 'අයදුම් කරන රට';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'පරීක්ෂා කළේ $date';
+  }
+
+  @override
+  String get coachWasRight => 'මෙම සැලැස්ම නිවැරදිද?';
+
+  @override
+  String get coachThanks => 'අපට දැනුම් දීමට ස්තූතියි.';
+
+  @override
+  String get coachRecheck => 'නැවත පරීක්ෂා කරන්න';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'මගේ $name අලුත් කිරීමේ සැලැස්ම වැරදි ලෙස පෙනේ. කරුණාකර නිල පියවර නැවත පරීක්ෂා කරන්න.';
+  }
+
+  @override
+  String get coachOfficial => 'නිල අඩවිය';
 }

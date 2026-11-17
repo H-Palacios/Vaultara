@@ -9335,4 +9335,29 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'para,ja està,adéu,fins aviat,acaba el mode conversa';
+
+  @override
+  String get coachApplyInLabel => 'Sol·licitud des de';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Comprovat el $date';
+  }
+
+  @override
+  String get coachWasRight => 'Era correcte aquest pla?';
+
+  @override
+  String get coachThanks => 'Gràcies per dir-nos-ho.';
+
+  @override
+  String get coachRecheck => 'Torna a comprovar';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'El pla de renovació del meu $name sembla incorrecte. Torna a comprovar els passos oficials.';
+  }
+
+  @override
+  String get coachOfficial => 'Lloc oficial';
 }

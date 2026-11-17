@@ -9535,4 +9535,29 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,sin é,sin a bhfuil,slán,slán leat,críochnaigh mód cainte';
+
+  @override
+  String get coachApplyInLabel => 'Iarratas ó';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Seiceáilte $date';
+  }
+
+  @override
+  String get coachWasRight => 'An raibh an plean seo ceart?';
+
+  @override
+  String get coachThanks => 'Go raibh maith agat as insint dúinn.';
+
+  @override
+  String get coachRecheck => 'Seiceáil arís';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Is cosúil go bhfuil an plean athnuachana do mo $name mícheart. Seiceáil na céimeanna oifigiúla arís, le do thoil.';
+  }
+
+  @override
+  String get coachOfficial => 'Suíomh oifigiúil';
 }

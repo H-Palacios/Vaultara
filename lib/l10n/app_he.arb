@@ -3764,5 +3764,43 @@
   "talkStopWords": "עצור,די,זה הכול,להתראות,ביי,סיים מצב שיחה",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "מדינת ההגשה",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "נבדק {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "האם התוכנית הזו הייתה נכונה?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "תודה שסיפרת לנו.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "בדיקה חוזרת",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "תוכנית החידוש של {name} שלי נראית שגויה. בדוק שוב את השלבים הרשמיים.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "אתר רשמי",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

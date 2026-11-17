@@ -3759,5 +3759,43 @@
   "talkStopWords": "yima,kwanele,kuphelele apho,sala kakuhle,bhayi,gqiba imowudi yokuthetha",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Faka isicelo usuka",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Kujongwe nge-{date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Ingaba esi sicwangciso besichanekile?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Enkosi ngokusazisa.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Jonga kwakhona",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Isicwangciso sokuhlaziya i-{name} yam sibonakala singachanekanga. Nceda ujonge kwakhona amanyathelo asemthethweni.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Isayithi esemthethweni",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

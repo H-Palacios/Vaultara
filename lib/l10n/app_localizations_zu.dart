@@ -9330,4 +9330,29 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get talkStopWords => 'yima,kwanele,yilokho,hamba kahle,bhayi,qeda imodi yokukhuluma';
+
+  @override
+  String get coachApplyInLabel => 'Faka isicelo usuka';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Kuhlolwe ngo-$date';
+  }
+
+  @override
+  String get coachWasRight => 'Ingabe lolu hlelo beluqondile?';
+
+  @override
+  String get coachThanks => 'Siyabonga ngokusitshela.';
+
+  @override
+  String get coachRecheck => 'Hlola futhi';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Uhlelo lokuvuselela i-$name yami lubonakala lungalungile. Sicela uhlole futhi izinyathelo ezisemthethweni.';
+  }
+
+  @override
+  String get coachOfficial => 'Isayithi elisemthethweni';
 }

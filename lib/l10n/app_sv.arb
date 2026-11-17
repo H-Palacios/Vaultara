@@ -3752,5 +3752,43 @@
   "talkStopWords": "stopp,det var allt,hej då,hejdå,avsluta samtalsläge",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Ansök från",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Kontrollerad {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Var den här planen rätt?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Tack för att du berättade.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Kontrollera igen",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Förnyelseplanen för mitt {name} ser fel ut. Kontrollera de officiella stegen igen.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Officiell sida",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -9330,4 +9330,29 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get talkStopWords => 'to‘xta,bo‘ldi,shu xolos,xayr,bay,suhbat rejimini tugat';
+
+  @override
+  String get coachApplyInLabel => 'Ariza beriladigan davlat';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Tekshirilgan: $date';
+  }
+
+  @override
+  String get coachWasRight => 'Bu reja to‘g‘ri edimi?';
+
+  @override
+  String get coachThanks => 'Xabar berganingiz uchun rahmat.';
+
+  @override
+  String get coachRecheck => 'Qayta tekshirish';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '$name yangilash rejasi noto‘g‘ri ko‘rinadi. Iltimos, rasmiy qadamlarni qayta tekshir.';
+  }
+
+  @override
+  String get coachOfficial => 'Rasmiy sayt';
 }

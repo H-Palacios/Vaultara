@@ -9511,4 +9511,29 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get talkStopWords => 'стоп,хватит,это всё,пока,до свидания,заверши разговор';
+
+  @override
+  String get coachApplyInLabel => 'Подача из';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Проверено $date';
+  }
+
+  @override
+  String get coachWasRight => 'Этот план был верным?';
+
+  @override
+  String get coachThanks => 'Спасибо, что сообщили.';
+
+  @override
+  String get coachRecheck => 'Проверить снова';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'План продления для $name выглядит неверным. Пожалуйста, проверь официальные шаги ещё раз.';
+  }
+
+  @override
+  String get coachOfficial => 'Официальный сайт';
 }

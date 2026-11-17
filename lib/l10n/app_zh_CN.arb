@@ -3759,5 +3759,43 @@
   "talkStopWords": "停,停止,就这样,再见,拜拜,结束对话模式",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "申请所在国",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "核实于 {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "这个计划正确吗？",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "感谢您告诉我们。",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "重新核实",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "我的{name}续期计划好像不对。请重新核实官方步骤。",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "官方网站",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

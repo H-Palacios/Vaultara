@@ -9587,4 +9587,29 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get talkStopWords => 'توقف,هذا كل شيء,مع السلامة,وداعا,أنهِ وضع المحادثة';
+
+  @override
+  String get coachApplyInLabel => 'التقديم من';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'تم التحقق في $date';
+  }
+
+  @override
+  String get coachWasRight => 'هل كانت هذه الخطة صحيحة؟';
+
+  @override
+  String get coachThanks => 'شكرًا لإخبارنا.';
+
+  @override
+  String get coachRecheck => 'تحقق مرة أخرى';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'تبدو خطة تجديد $name غير صحيحة. يرجى التحقق من الخطوات الرسمية مرة أخرى.';
+  }
+
+  @override
+  String get coachOfficial => 'موقع رسمي';
 }

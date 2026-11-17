@@ -9496,4 +9496,29 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,dovolj,to je vse,adijo,nasvidenje,končaj pogovor';
+
+  @override
+  String get coachApplyInLabel => 'Prijava iz';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Preverjeno $date';
+  }
+
+  @override
+  String get coachWasRight => 'Je bil ta načrt pravilen?';
+
+  @override
+  String get coachThanks => 'Hvala, da ste nam sporočili.';
+
+  @override
+  String get coachRecheck => 'Preveri znova';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Načrt podaljšanja za $name se zdi napačen. Prosim, znova preveri uradne korake.';
+  }
+
+  @override
+  String get coachOfficial => 'Uradna stran';
 }

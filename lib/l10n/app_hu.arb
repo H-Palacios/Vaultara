@@ -3777,5 +3777,43 @@
   "talkStopWords": "állj,elég,ennyi,viszlát,szia,beszélgetés vége",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Igénylés innen",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Ellenőrizve: {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Helyes volt ez a terv?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Köszönjük, hogy szóltál.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Ellenőrizd újra",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "A(z) {name} megújítási terve hibásnak tűnik. Kérlek, ellenőrizd újra a hivatalos lépéseket.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Hivatalos oldal",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -3759,5 +3759,43 @@
   "talkStopWords": "بوەستە,ئەوەندە,خوات لەگەڵ,بای,دۆخی قسەکردن کۆتایی پێبهێنە",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "داواکاری لە",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "پشکنراوە لە {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "ئەم پلانە دروست بوو؟",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "سوپاس بۆ ئاگادارکردنەوەمان.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "دووبارە بپشکنە",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "پلانی نوێکردنەوەی {name} هەڵە دیارە. تکایە هەنگاوە فەرمییەکان دووبارە بپشکنە.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "ماڵپەڕی فەرمی",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

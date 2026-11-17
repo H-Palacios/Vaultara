@@ -9265,4 +9265,29 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ឈប់,គ្រប់ហើយ,លាហើយ,បាយបាយ,បញ្ចប់របៀបសន្ទនា';
+
+  @override
+  String get coachApplyInLabel => 'ដាក់ពាក្យពី';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'បានពិនិត្យ $date';
+  }
+
+  @override
+  String get coachWasRight => 'តើផែនការនេះត្រឹមត្រូវទេ?';
+
+  @override
+  String get coachThanks => 'អរគុណដែលបានប្រាប់យើង។';
+
+  @override
+  String get coachRecheck => 'ពិនិត្យម្តងទៀត';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'ផែនការបន្តសម្រាប់ $name របស់ខ្ញុំហាក់ដូចជាខុស។ សូមពិនិត្យជំហានផ្លូវការម្តងទៀត។';
+  }
+
+  @override
+  String get coachOfficial => 'គេហទំព័រផ្លូវការ';
 }

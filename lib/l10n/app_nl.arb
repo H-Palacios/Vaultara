@@ -3759,5 +3759,43 @@
   "talkStopWords": "stop,dat is alles,doei,tot ziens,spreekmodus stoppen",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Aanvragen vanuit",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Gecontroleerd op {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Was dit plan juist?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Bedankt dat je het ons laat weten.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Opnieuw controleren",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Het verlengingsplan voor mijn {name} lijkt niet te kloppen. Controleer de officiële stappen opnieuw.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Officiële site",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

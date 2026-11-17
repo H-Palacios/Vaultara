@@ -9330,4 +9330,29 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get talkStopWords => 'रोक,पुग्यो,यत्ति हो,बिदा,बाइ,कुराकानी मोड बन्द गर';
+
+  @override
+  String get coachApplyInLabel => 'आवेदन गर्ने देश';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'जाँचिएको $date';
+  }
+
+  @override
+  String get coachWasRight => 'के यो योजना सही थियो?';
+
+  @override
+  String get coachThanks => 'बताइदिनुभएकोमा धन्यवाद।';
+
+  @override
+  String get coachRecheck => 'फेरि जाँच्नुहोस्';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'मेरो $name को नवीकरण योजना गलत देखिन्छ। कृपया आधिकारिक चरणहरू फेरि जाँच्नुहोस्।';
+  }
+
+  @override
+  String get coachOfficial => 'आधिकारिक साइट';
 }

@@ -3509,5 +3509,43 @@
   "talkStopWords": "стоп,това е всичко,чао,довиждане,край на разговора",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Кандидатствате от",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Проверено на {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Правилен ли беше този план?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Благодарим, че ни казахте.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Провери отново",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Планът за подновяване на {name} изглежда грешен. Моля, провери отново официалните стъпки.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Официален сайт",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

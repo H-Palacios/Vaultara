@@ -9267,4 +9267,29 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get talkStopWords => '그만,멈춰,됐어,안녕,바이,대화 모드 종료';
+
+  @override
+  String get coachApplyInLabel => '신청 국가';
+
+  @override
+  String coachCheckedOn(String date) {
+    return '확인일 $date';
+  }
+
+  @override
+  String get coachWasRight => '이 계획이 맞았나요?';
+
+  @override
+  String get coachThanks => '알려 주셔서 감사합니다.';
+
+  @override
+  String get coachRecheck => '다시 확인';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '$name 갱신 계획이 틀린 것 같아. 공식 절차를 다시 확인해 줘.';
+  }
+
+  @override
+  String get coachOfficial => '공식 사이트';
 }

@@ -9329,4 +9329,29 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stopp,hættu,þetta er allt,bless,bæ,ljúka talstillingu';
+
+  @override
+  String get coachApplyInLabel => 'Sótt um frá';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Athugað $date';
+  }
+
+  @override
+  String get coachWasRight => 'Var þessi áætlun rétt?';
+
+  @override
+  String get coachThanks => 'Takk fyrir að láta okkur vita.';
+
+  @override
+  String get coachRecheck => 'Athuga aftur';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Endurnýjunaráætlunin fyrir $name virðist röng. Athugaðu opinberu skrefin aftur.';
+  }
+
+  @override
+  String get coachOfficial => 'Opinber vefur';
 }

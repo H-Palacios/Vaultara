@@ -3764,5 +3764,43 @@
   "talkStopWords": "kwụsị,nke ahụ zuru,ka ọ dị,bye,kwụsị ụdị mkparịta ụka",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Tinye akwụkwọ site na",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Elelere {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Atụmatụ a ọ ziri ezi?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Daalụ maka ịgwa anyị.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Lelee ọzọ",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Atụmatụ mmeghari maka {name} m yiri ka ọ dị njọ. Biko lelee nzọụkwụ gọọmentị ọzọ.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Saịtị gọọmentị",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

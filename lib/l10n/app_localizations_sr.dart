@@ -9414,6 +9414,31 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get talkStopWords => 'стоп,то је све,ћао,довиђења,заврши разговор';
+
+  @override
+  String get coachApplyInLabel => 'Пријава из';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Проверено $date';
+  }
+
+  @override
+  String get coachWasRight => 'Да ли је овај план био тачан?';
+
+  @override
+  String get coachThanks => 'Хвала што сте нам рекли.';
+
+  @override
+  String get coachRecheck => 'Провери поново';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'План обнове за $name изгледа погрешно. Молим те, поново провери званичне кораке.';
+  }
+
+  @override
+  String get coachOfficial => 'Званични сајт';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -18825,6 +18850,31 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get talkStopWords => 'стоп,то је све,ћао,довиђења,заврши разговор';
+
+  @override
+  String get coachApplyInLabel => 'Пријава из';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Проверено $date';
+  }
+
+  @override
+  String get coachWasRight => 'Да ли је овај план био тачан?';
+
+  @override
+  String get coachThanks => 'Хвала што сте нам рекли.';
+
+  @override
+  String get coachRecheck => 'Провери поново';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'План обнове за $name изгледа погрешно. Молим те, поново провери званичне кораке.';
+  }
+
+  @override
+  String get coachOfficial => 'Званични сајт';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -28232,4 +28282,29 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get talkStopWords => 'stop,to je sve,ćao,doviđenja,završi razgovor';
+
+  @override
+  String get coachApplyInLabel => 'Prijava iz';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Provereno $date';
+  }
+
+  @override
+  String get coachWasRight => 'Da li je ovaj plan bio tačan?';
+
+  @override
+  String get coachThanks => 'Hvala što ste nam rekli.';
+
+  @override
+  String get coachRecheck => 'Proveri ponovo';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Plan obnove za $name izgleda pogrešno. Molim te, ponovo proveri zvanične korake.';
+  }
+
+  @override
+  String get coachOfficial => 'Zvanični sajt';
 }

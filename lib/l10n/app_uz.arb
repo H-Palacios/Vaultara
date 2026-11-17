@@ -3509,5 +3509,43 @@
   "talkStopWords": "to‘xta,bo‘ldi,shu xolos,xayr,bay,suhbat rejimini tugat",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Ariza beriladigan davlat",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Tekshirilgan: {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Bu reja to‘g‘ri edimi?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Xabar berganingiz uchun rahmat.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Qayta tekshirish",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "{name} yangilash rejasi noto‘g‘ri ko‘rinadi. Iltimos, rasmiy qadamlarni qayta tekshir.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Rasmiy sayt",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -9267,4 +9267,29 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ຢຸດ,ພໍແລ້ວ,ແຄ່ນີ້,ລາກ່ອນ,ບາຍ,ສິ້ນສຸດໂໝດສົນທະນາ';
+
+  @override
+  String get coachApplyInLabel => 'ຍື່ນຈາກ';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'ກວດເມື່ອ $date';
+  }
+
+  @override
+  String get coachWasRight => 'ແຜນນີ້ຖືກຕ້ອງບໍ?';
+
+  @override
+  String get coachThanks => 'ຂອບໃຈທີ່ບອກພວກເຮົາ.';
+
+  @override
+  String get coachRecheck => 'ກວດອີກຄັ້ງ';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'ແຜນຕໍ່ອາຍຸ $name ຂອງຂ້ອຍເບິ່ງຄືຜິດ. ກະລຸນາກວດຂັ້ນຕອນທາງການອີກຄັ້ງ.';
+  }
+
+  @override
+  String get coachOfficial => 'ເວັບໄຊທາງການ';
 }

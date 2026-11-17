@@ -9329,4 +9329,29 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get talkStopWords => 'jooji,waa intaas,nabadgelyo,bay,dhammee habka wada hadalka';
+
+  @override
+  String get coachApplyInLabel => 'Ka codso';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'La hubiyay $date';
+  }
+
+  @override
+  String get coachWasRight => 'Qorshahan ma saxsanaa?';
+
+  @override
+  String get coachThanks => 'Waad ku mahadsan tahay inaad noo sheegtay.';
+
+  @override
+  String get coachRecheck => 'Hubi mar kale';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Qorshaha cusboonaysiinta $name-kayga wuxuu u muuqdaa mid khaldan. Fadlan mar kale hubi tallaabooyinka rasmiga ah.';
+  }
+
+  @override
+  String get coachOfficial => 'Bog rasmi ah';
 }

@@ -3509,5 +3509,43 @@
   "talkStopWords": "ឈប់,គ្រប់ហើយ,លាហើយ,បាយបាយ,បញ្ចប់របៀបសន្ទនា",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "ដាក់ពាក្យពី",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "បានពិនិត្យ {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "តើផែនការនេះត្រឹមត្រូវទេ?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "អរគុណដែលបានប្រាប់យើង។",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "ពិនិត្យម្តងទៀត",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "ផែនការបន្តសម្រាប់ {name} របស់ខ្ញុំហាក់ដូចជាខុស។ សូមពិនិត្យជំហានផ្លូវការម្តងទៀត។",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "គេហទំព័រផ្លូវការ",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

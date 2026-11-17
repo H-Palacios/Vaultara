@@ -9330,4 +9330,29 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get talkStopWords => 'yima,kwanele,kuphelele apho,sala kakuhle,bhayi,gqiba imowudi yokuthetha';
+
+  @override
+  String get coachApplyInLabel => 'Faka isicelo usuka';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Kujongwe nge-$date';
+  }
+
+  @override
+  String get coachWasRight => 'Ingaba esi sicwangciso besichanekile?';
+
+  @override
+  String get coachThanks => 'Enkosi ngokusazisa.';
+
+  @override
+  String get coachRecheck => 'Jonga kwakhona';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Isicwangciso sokuhlaziya i-$name yam sibonakala singachanekanga. Nceda ujonge kwakhona amanyathelo asemthethweni.';
+  }
+
+  @override
+  String get coachOfficial => 'Isayithi esemthethweni';
 }

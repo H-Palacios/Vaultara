@@ -9262,4 +9262,29 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get talkStopWords => 'berhenti,stop,sudah itu saja,dah,sampai jumpa,akhiri mode bicara';
+
+  @override
+  String get coachApplyInLabel => 'Ajukan dari';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Diperiksa $date';
+  }
+
+  @override
+  String get coachWasRight => 'Apakah rencana ini benar?';
+
+  @override
+  String get coachThanks => 'Terima kasih sudah memberi tahu kami.';
+
+  @override
+  String get coachRecheck => 'Periksa lagi';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Rencana perpanjangan untuk $name saya tampaknya salah. Tolong periksa lagi langkah resminya.';
+  }
+
+  @override
+  String get coachOfficial => 'Situs resmi';
 }

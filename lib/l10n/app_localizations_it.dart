@@ -9342,4 +9342,29 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,basta,è tutto,ciao,arrivederci,termina conversazione';
+
+  @override
+  String get coachApplyInLabel => 'Richiesta da';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Verificato il $date';
+  }
+
+  @override
+  String get coachWasRight => 'Questo piano era corretto?';
+
+  @override
+  String get coachThanks => 'Grazie per avercelo detto.';
+
+  @override
+  String get coachRecheck => 'Ricontrolla';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Il piano di rinnovo del mio $name sembra sbagliato. Ricontrolla i passaggi ufficiali.';
+  }
+
+  @override
+  String get coachOfficial => 'Sito ufficiale';
 }

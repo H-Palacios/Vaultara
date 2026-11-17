@@ -9325,4 +9325,29 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get talkStopWords => 'tigil,stop,iyon lang,paalam,bye,tapusin ang talk mode';
+
+  @override
+  String get coachApplyInLabel => 'Mag-apply mula sa';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Tiningnan noong $date';
+  }
+
+  @override
+  String get coachWasRight => 'Tama ba ang planong ito?';
+
+  @override
+  String get coachThanks => 'Salamat sa pagsabi sa amin.';
+
+  @override
+  String get coachRecheck => 'Tingnan ulit';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Mukhang mali ang renewal plan para sa $name ko. Pakitingnan ulit ang opisyal na mga hakbang.';
+  }
+
+  @override
+  String get coachOfficial => 'Opisyal na site';
 }

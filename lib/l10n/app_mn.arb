@@ -3777,5 +3777,43 @@
   "talkStopWords": "зогс,болно,ингээд,баяртай,бай,ярианы горимыг дуусга",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Өргөдөл гаргах улс",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Шалгасан: {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Энэ төлөвлөгөө зөв байсан уу?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Мэдэгдсэнд баярлалаа.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Дахин шалгах",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Миний {name}-н сунгалтын төлөвлөгөө буруу юм шиг байна. Албан ёсны алхмуудыг дахин шалгаарай.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Албан ёсны сайт",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

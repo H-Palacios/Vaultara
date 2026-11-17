@@ -3759,5 +3759,43 @@
   "talkStopWords": "stop,gata,asta e tot,pa,la revedere,termină conversația",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Aplici din",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Verificat pe {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "A fost corect acest plan?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Mulțumim că ne-ai spus.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Verifică din nou",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Planul de reînnoire pentru {name} pare greșit. Te rog verifică din nou pașii oficiali.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Site oficial",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

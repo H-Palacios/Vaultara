@@ -9335,4 +9335,29 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stopp,stop,das wars,das ist alles,tschüss,sprechmodus beenden';
+
+  @override
+  String get coachApplyInLabel => 'Antrag aus';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Geprüft am $date';
+  }
+
+  @override
+  String get coachWasRight => 'War dieser Plan richtig?';
+
+  @override
+  String get coachThanks => 'Danke für deine Rückmeldung.';
+
+  @override
+  String get coachRecheck => 'Erneut prüfen';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Der Erneuerungsplan für mein $name scheint falsch zu sein. Bitte prüfe die offiziellen Schritte erneut.';
+  }
+
+  @override
+  String get coachOfficial => 'Offizielle Seite';
 }

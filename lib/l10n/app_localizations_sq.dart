@@ -9335,4 +9335,29 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ndalo,mjaft,kaq,mirupafshim,pa,mbyll bisedën';
+
+  @override
+  String get coachApplyInLabel => 'Apliko nga';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Kontrolluar më $date';
+  }
+
+  @override
+  String get coachWasRight => 'A ishte i saktë ky plan?';
+
+  @override
+  String get coachThanks => 'Faleminderit që na treguat.';
+
+  @override
+  String get coachRecheck => 'Kontrollo sërish';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Plani i rinovimit për $name duket i gabuar. Të lutem kontrollo sërish hapat zyrtarë.';
+  }
+
+  @override
+  String get coachOfficial => 'Faqe zyrtare';
 }

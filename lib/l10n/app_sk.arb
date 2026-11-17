@@ -3759,5 +3759,43 @@
   "talkStopWords": "stop,to je všetko,koniec,ahoj,dovidenia,ukončiť rozhovor",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Žiadosť z",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Skontrolované {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Bol tento plán správny?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Ďakujeme, že ste nám dali vedieť.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Skontrolovať znova",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Plán obnovy pre {name} vyzerá nesprávne. Prosím, skontroluj znova oficiálne kroky.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Oficiálna stránka",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

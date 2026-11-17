@@ -9335,4 +9335,29 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get talkStopWords => 'σταμάτα,στοπ,αυτά,αντίο,γεια,τέλος ομιλίας';
+
+  @override
+  String get coachApplyInLabel => 'Αίτηση από';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Ελέγχθηκε $date';
+  }
+
+  @override
+  String get coachWasRight => 'Ήταν σωστό αυτό το πλάνο;';
+
+  @override
+  String get coachThanks => 'Ευχαριστούμε που μας το είπατε.';
+
+  @override
+  String get coachRecheck => 'Έλεγχος ξανά';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Το πλάνο ανανέωσης για το $name φαίνεται λάθος. Έλεγξε ξανά τα επίσημα βήματα.';
+  }
+
+  @override
+  String get coachOfficial => 'Επίσημος ιστότοπος';
 }

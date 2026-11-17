@@ -9329,4 +9329,29 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get talkStopWords => 'токто,болду,ушул,кош бол,сүйлөшүү режимин бүтүр';
+
+  @override
+  String get coachApplyInLabel => 'Арыз берүүчү өлкө';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Текшерилди: $date';
+  }
+
+  @override
+  String get coachWasRight => 'Бул план туурабы?';
+
+  @override
+  String get coachThanks => 'Айтканыңыз үчүн рахмат.';
+
+  @override
+  String get coachRecheck => 'Кайра текшерүү';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '$name жаңыртуу планы туура эмес көрүнөт. Расмий кадамдарды кайра текшерип бер.';
+  }
+
+  @override
+  String get coachOfficial => 'Расмий сайт';
 }

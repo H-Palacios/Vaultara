@@ -9267,6 +9267,31 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get talkStopWords => '停,停止,就这样,再见,拜拜,结束对话模式';
+
+  @override
+  String get coachApplyInLabel => '申请所在国';
+
+  @override
+  String coachCheckedOn(String date) {
+    return '核实于 $date';
+  }
+
+  @override
+  String get coachWasRight => '这个计划正确吗？';
+
+  @override
+  String get coachThanks => '感谢您告诉我们。';
+
+  @override
+  String get coachRecheck => '重新核实';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '我的$name续期计划好像不对。请重新核实官方步骤。';
+  }
+
+  @override
+  String get coachOfficial => '官方网站';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18520,6 +18545,31 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get talkStopWords => '停,停止,就这样,再见,拜拜,结束对话模式';
+
+  @override
+  String get coachApplyInLabel => '申请所在国';
+
+  @override
+  String coachCheckedOn(String date) {
+    return '核实于 $date';
+  }
+
+  @override
+  String get coachWasRight => '这个计划正确吗？';
+
+  @override
+  String get coachThanks => '感谢您告诉我们。';
+
+  @override
+  String get coachRecheck => '重新核实';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '我的$name续期计划好像不对。请重新核实官方步骤。';
+  }
+
+  @override
+  String get coachOfficial => '官方网站';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -27773,4 +27823,29 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get talkStopWords => '停,停止,就這樣,再見,掰掰,結束對話模式';
+
+  @override
+  String get coachApplyInLabel => '申請所在國';
+
+  @override
+  String coachCheckedOn(String date) {
+    return '核實於 $date';
+  }
+
+  @override
+  String get coachWasRight => '這個計畫正確嗎？';
+
+  @override
+  String get coachThanks => '感謝您告訴我們。';
+
+  @override
+  String get coachRecheck => '重新核實';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '我的$name續期計畫好像不對。請重新核實官方步驟。';
+  }
+
+  @override
+  String get coachOfficial => '官方網站';
 }

@@ -9330,4 +9330,29 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'بس کن,توقف,همین,خداحافظ,بای,پایان حالت گفتگو';
+
+  @override
+  String get coachApplyInLabel => 'درخواست از';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'بررسی‌شده در $date';
+  }
+
+  @override
+  String get coachWasRight => 'آیا این برنامه درست بود؟';
+
+  @override
+  String get coachThanks => 'از اینکه به ما گفتید سپاسگزاریم.';
+
+  @override
+  String get coachRecheck => 'دوباره بررسی کن';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'برنامه تمدید $name من اشتباه به نظر می‌رسد. لطفاً مراحل رسمی را دوباره بررسی کن.';
+  }
+
+  @override
+  String get coachOfficial => 'سایت رسمی';
 }

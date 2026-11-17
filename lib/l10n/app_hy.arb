@@ -3773,5 +3773,43 @@
   "talkStopWords": "կանգ,վերջ,այսքանը,ցտեսություն,հաջող,ավարտել խոսակցությունը",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Դիմել երկրից",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Ստուգվել է {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Այս պլանը ճի՞շտ էր։",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Շնորհակալություն, որ տեղեկացրիք։",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Կրկին ստուգել",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "{name}-ի թարմացման պլանը սխալ է թվում։ Խնդրում եմ կրկին ստուգիր պաշտոնական քայլերը։",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Պաշտոնական կայք",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

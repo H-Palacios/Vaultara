@@ -9329,4 +9329,29 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get talkStopWords => 'አቁም,በቃ,ደህና ሁን,ቻው,የንግግር ሁነታን ጨርስ';
+
+  @override
+  String get coachApplyInLabel => 'ያመልክቱበት አገር';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'የተፈተሸው $date';
+  }
+
+  @override
+  String get coachWasRight => 'ይህ እቅድ ትክክል ነበር?';
+
+  @override
+  String get coachThanks => 'ስለነገሩን እናመሰግናለን።';
+
+  @override
+  String get coachRecheck => 'እንደገና ፈትሽ';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'ለእኔ $name ያለው የእድሳት እቅድ የተሳሳተ ይመስላል። እባክዎ ኦፊሴላዊ ደረጃዎችን እንደገና ይፈትሹ።';
+  }
+
+  @override
+  String get coachOfficial => 'ኦፊሴላዊ ድረ-ገጽ';
 }

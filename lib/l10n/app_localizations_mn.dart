@@ -9320,4 +9320,29 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get talkStopWords => 'зогс,болно,ингээд,баяртай,бай,ярианы горимыг дуусга';
+
+  @override
+  String get coachApplyInLabel => 'Өргөдөл гаргах улс';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Шалгасан: $date';
+  }
+
+  @override
+  String get coachWasRight => 'Энэ төлөвлөгөө зөв байсан уу?';
+
+  @override
+  String get coachThanks => 'Мэдэгдсэнд баярлалаа.';
+
+  @override
+  String get coachRecheck => 'Дахин шалгах';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Миний $name-н сунгалтын төлөвлөгөө буруу юм шиг байна. Албан ёсны алхмуудыг дахин шалгаарай.';
+  }
+
+  @override
+  String get coachOfficial => 'Албан ёсны сайт';
 }

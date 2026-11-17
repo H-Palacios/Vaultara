@@ -9330,4 +9330,29 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ودرېږه,بس,همدومره,خدای پامان,د خبرو حالت پای ته ورسوه';
+
+  @override
+  String get coachApplyInLabel => 'غوښتنه له';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'کتل شوی $date';
+  }
+
+  @override
+  String get coachWasRight => 'ایا دا پلان سم و؟';
+
+  @override
+  String get coachThanks => 'مننه چې مو راته وویل.';
+
+  @override
+  String get coachRecheck => 'بیا یې وګورئ';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'زما د $name د نوي کولو پلان غلط ښکاري. مهرباني وکړئ رسمي ګامونه بیا وګورئ.';
+  }
+
+  @override
+  String get coachOfficial => 'رسمي سایټ';
 }

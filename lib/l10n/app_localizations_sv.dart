@@ -9334,4 +9334,29 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stopp,det var allt,hej då,hejdå,avsluta samtalsläge';
+
+  @override
+  String get coachApplyInLabel => 'Ansök från';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Kontrollerad $date';
+  }
+
+  @override
+  String get coachWasRight => 'Var den här planen rätt?';
+
+  @override
+  String get coachThanks => 'Tack för att du berättade.';
+
+  @override
+  String get coachRecheck => 'Kontrollera igen';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Förnyelseplanen för mitt $name ser fel ut. Kontrollera de officiella stegen igen.';
+  }
+
+  @override
+  String get coachOfficial => 'Officiell sida';
 }

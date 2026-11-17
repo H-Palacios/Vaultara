@@ -9401,4 +9401,29 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,pietiek,tas ir viss,atā,uz redzēšanos,beigt sarunu';
+
+  @override
+  String get coachApplyInLabel => 'Pieteikties no';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Pārbaudīts $date';
+  }
+
+  @override
+  String get coachWasRight => 'Vai šis plāns bija pareizs?';
+
+  @override
+  String get coachThanks => 'Paldies, ka pastāstījāt.';
+
+  @override
+  String get coachRecheck => 'Pārbaudīt vēlreiz';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Mana $name atjaunošanas plāns šķiet nepareizs. Lūdzu, vēlreiz pārbaudi oficiālos soļus.';
+  }
+
+  @override
+  String get coachOfficial => 'Oficiālā vietne';
 }

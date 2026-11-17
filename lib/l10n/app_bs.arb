@@ -3790,5 +3790,43 @@
   "talkStopWords": "stop,to je sve,ćao,doviđenja,završi razgovor",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Prijava iz",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Provjereno {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Je li ovaj plan bio tačan?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Hvala što ste nam rekli.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Provjeri ponovo",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Plan obnove za {name} izgleda pogrešno. Molim te, ponovo provjeri službene korake.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Službena stranica",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

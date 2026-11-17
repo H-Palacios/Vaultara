@@ -3777,5 +3777,43 @@
   "talkStopWords": "ຢຸດ,ພໍແລ້ວ,ແຄ່ນີ້,ລາກ່ອນ,ບາຍ,ສິ້ນສຸດໂໝດສົນທະນາ",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "ຍື່ນຈາກ",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "ກວດເມື່ອ {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "ແຜນນີ້ຖືກຕ້ອງບໍ?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "ຂອບໃຈທີ່ບອກພວກເຮົາ.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "ກວດອີກຄັ້ງ",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "ແຜນຕໍ່ອາຍຸ {name} ຂອງຂ້ອຍເບິ່ງຄືຜິດ. ກະລຸນາກວດຂັ້ນຕອນທາງການອີກຄັ້ງ.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "ເວັບໄຊທາງການ",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

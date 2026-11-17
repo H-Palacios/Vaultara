@@ -9330,4 +9330,29 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'გაჩერდი,სტოპ,სულ ესაა,ნახვამდის,კარგად,საუბრის დასრულება';
+
+  @override
+  String get coachApplyInLabel => 'განაცხადი ქვეყნიდან';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'შემოწმდა $date';
+  }
+
+  @override
+  String get coachWasRight => 'ეს გეგმა სწორი იყო?';
+
+  @override
+  String get coachThanks => 'გმადლობთ, რომ გვითხარით.';
+
+  @override
+  String get coachRecheck => 'ხელახლა შემოწმება';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'ჩემი $name-ის განახლების გეგმა არასწორი ჩანს. გთხოვ, ხელახლა შეამოწმე ოფიციალური ნაბიჯები.';
+  }
+
+  @override
+  String get coachOfficial => 'ოფიციალური საიტი';
 }

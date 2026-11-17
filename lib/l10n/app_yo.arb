@@ -3759,5 +3759,43 @@
   "talkStopWords": "dúró,ó tó,ìyẹn nìkan,ó dàbọ̀,bye,parí ipò ìsọ̀rọ̀",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Fi ìwé sílẹ̀ láti",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "A ṣàyẹ̀wò rẹ̀ ní {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Ṣé ètò yìí tọ̀nà?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "A dúpẹ́ pé o sọ fún wa.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Ṣàyẹ̀wò lẹ́ẹ̀kan sí i",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Ètò ìsọdọ̀tun {name} mi dà bí ẹni pé kò tọ̀nà. Jọ̀wọ́ ṣàyẹ̀wò àwọn ìgbésẹ̀ ìjọba lẹ́ẹ̀kan sí i.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Ojú-òpó ìjọba",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -9255,4 +9255,29 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get talkStopWords => 'หยุด,พอแล้ว,แค่นี้,ลาก่อน,บาย,จบโหมดสนทนา';
+
+  @override
+  String get coachApplyInLabel => 'ยื่นจากประเทศ';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'ตรวจสอบเมื่อ $date';
+  }
+
+  @override
+  String get coachWasRight => 'แผนนี้ถูกต้องไหม';
+
+  @override
+  String get coachThanks => 'ขอบคุณที่บอกเรา';
+
+  @override
+  String get coachRecheck => 'ตรวจสอบอีกครั้ง';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'แผนต่ออายุ$nameของฉันดูไม่ถูกต้อง ช่วยตรวจสอบขั้นตอนทางการอีกครั้ง';
+  }
+
+  @override
+  String get coachOfficial => 'เว็บไซต์ทางการ';
 }

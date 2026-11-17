@@ -3797,5 +3797,43 @@
   "talkStopWords": "stop,dis al,totsiens,koebaai,beëindig praatmodus",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Doen aansoek vanuit",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Nagegaan {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Was hierdie plan reg?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Dankie dat jy ons laat weet.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Gaan weer na",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Die hernuwingsplan vir my {name} lyk verkeerd. Gaan asseblief weer die amptelike stappe na.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Amptelike webwerf",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

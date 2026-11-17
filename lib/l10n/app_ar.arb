@@ -3797,5 +3797,43 @@
   "talkStopWords": "توقف,هذا كل شيء,مع السلامة,وداعا,أنهِ وضع المحادثة",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "التقديم من",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "تم التحقق في {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "هل كانت هذه الخطة صحيحة؟",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "شكرًا لإخبارنا.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "تحقق مرة أخرى",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "تبدو خطة تجديد {name} غير صحيحة. يرجى التحقق من الخطوات الرسمية مرة أخرى.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "موقع رسمي",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

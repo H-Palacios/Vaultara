@@ -3509,5 +3509,43 @@
   "talkStopWords": "ನಿಲ್ಲಿಸು,ಅಷ್ಟೇ,ವಿದಾಯ,ಬಾಯ್,ಮಾತಿನ ಮೋಡ್ ಮುಗಿಸು",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ದೇಶ",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "ಪರಿಶೀಲಿಸಲಾಗಿದೆ {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "ಈ ಯೋಜನೆ ಸರಿಯಾಗಿತ್ತೇ?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "ತಿಳಿಸಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "ನನ್ನ {name} ನವೀಕರಣ ಯೋಜನೆ ತಪ್ಪಾಗಿ ಕಾಣುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಅಧಿಕೃತ ಹಂತಗಳನ್ನು ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "ಅಧಿಕೃತ ಸೈಟ್",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

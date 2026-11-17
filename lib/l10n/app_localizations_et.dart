@@ -9335,4 +9335,29 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stopp,aitab,see on kõik,head aega,tšau,lõpeta vestlus';
+
+  @override
+  String get coachApplyInLabel => 'Taotlus riigist';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Kontrollitud $date';
+  }
+
+  @override
+  String get coachWasRight => 'Kas see plaan oli õige?';
+
+  @override
+  String get coachThanks => 'Aitäh, et andsid teada.';
+
+  @override
+  String get coachRecheck => 'Kontrolli uuesti';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Minu $name uuendamise plaan tundub vale. Palun kontrolli ametlikke samme uuesti.';
+  }
+
+  @override
+  String get coachOfficial => 'Ametlik sait';
 }

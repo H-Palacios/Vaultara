@@ -9335,4 +9335,29 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stopp,det var alt,ha det,hadet,avslutt samtalemodus';
+
+  @override
+  String get coachApplyInLabel => 'Søk frå';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Sjekka $date';
+  }
+
+  @override
+  String get coachWasRight => 'Var denne planen rett?';
+
+  @override
+  String get coachThanks => 'Takk for at du sa frå.';
+
+  @override
+  String get coachRecheck => 'Sjekk igjen';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Fornyingsplanen for $name ser feil ut. Sjekk dei offisielle stega igjen.';
+  }
+
+  @override
+  String get coachOfficial => 'Offisiell side';
 }

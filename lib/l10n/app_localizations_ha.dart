@@ -9330,4 +9330,29 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'tsaya,ya isa,shi ke nan,sai anjima,bye,ƙare yanayin magana';
+
+  @override
+  String get coachApplyInLabel => 'Nema daga';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'An duba $date';
+  }
+
+  @override
+  String get coachWasRight => 'Wannan tsarin ya yi daidai?';
+
+  @override
+  String get coachThanks => 'Mun gode da ka gaya mana.';
+
+  @override
+  String get coachRecheck => 'Sake dubawa';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Tsarin sabunta $name na yana kama da ba daidai ba. Don Allah ka sake duba matakan hukuma.';
+  }
+
+  @override
+  String get coachOfficial => 'Shafin hukuma';
 }

@@ -3773,5 +3773,43 @@
   "talkStopWords": "gelditu,nahikoa,hori da dena,agur,aio,amaitu elkarrizketa",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Eskaera hemendik",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Egiaztatuta: {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Zuzena zen plan hau?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Eskerrik asko esateagatik.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Egiaztatu berriro",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Nire {name} berritzeko plana okerra dirudi. Egiaztatu berriro urrats ofizialak, mesedez.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Webgune ofiziala",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

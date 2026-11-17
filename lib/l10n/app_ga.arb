@@ -3771,5 +3771,43 @@
   "talkStopWords": "stop,sin é,sin a bhfuil,slán,slán leat,críochnaigh mód cainte",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Iarratas ó",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Seiceáilte {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "An raibh an plean seo ceart?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Go raibh maith agat as insint dúinn.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Seiceáil arís",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Is cosúil go bhfuil an plean athnuachana do mo {name} mícheart. Seiceáil na céimeanna oifigiúla arís, le do thoil.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Suíomh oifigiúil",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

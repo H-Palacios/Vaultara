@@ -3759,5 +3759,43 @@
   "talkStopWords": "நிறுத்து,போதும்,அவ்வளவுதான்,பை,போய் வருகிறேன்,பேச்சு பயன்முறையை முடி",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "விண்ணப்பிக்கும் நாடு",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "சரிபார்க்கப்பட்டது {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "இந்தத் திட்டம் சரியாக இருந்ததா?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "சொன்னதற்கு நன்றி.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "மீண்டும் சரிபார்",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "என் {name} புதுப்பிப்பு திட்டம் தவறாகத் தெரிகிறது. அதிகாரப்பூர்வ படிகளை மீண்டும் சரிபாருங்கள்.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "அதிகாரப்பூர்வ தளம்",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

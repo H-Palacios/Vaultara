@@ -9392,4 +9392,29 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get talkStopWords => 'עצור,די,זה הכול,להתראות,ביי,סיים מצב שיחה';
+
+  @override
+  String get coachApplyInLabel => 'מדינת ההגשה';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'נבדק $date';
+  }
+
+  @override
+  String get coachWasRight => 'האם התוכנית הזו הייתה נכונה?';
+
+  @override
+  String get coachThanks => 'תודה שסיפרת לנו.';
+
+  @override
+  String get coachRecheck => 'בדיקה חוזרת';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'תוכנית החידוש של $name שלי נראית שגויה. בדוק שוב את השלבים הרשמיים.';
+  }
+
+  @override
+  String get coachOfficial => 'אתר רשמי';
 }

@@ -9329,4 +9329,29 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get talkStopWords => 'بوەستە,ئەوەندە,خوات لەگەڵ,بای,دۆخی قسەکردن کۆتایی پێبهێنە';
+
+  @override
+  String get coachApplyInLabel => 'داواکاری لە';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'پشکنراوە لە $date';
+  }
+
+  @override
+  String get coachWasRight => 'ئەم پلانە دروست بوو؟';
+
+  @override
+  String get coachThanks => 'سوپاس بۆ ئاگادارکردنەوەمان.';
+
+  @override
+  String get coachRecheck => 'دووبارە بپشکنە';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'پلانی نوێکردنەوەی $name هەڵە دیارە. تکایە هەنگاوە فەرمییەکان دووبارە بپشکنە.';
+  }
+
+  @override
+  String get coachOfficial => 'ماڵپەڕی فەرمی';
 }

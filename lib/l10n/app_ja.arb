@@ -3771,5 +3771,43 @@
   "talkStopWords": "ストップ,止めて,以上,さようなら,バイバイ,会話モード終了",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "申請する国",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "確認日 {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "このプランは正しかったですか？",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "お知らせいただきありがとうございます。",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "もう一度確認",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "{name}の更新プランが間違っているようです。公式の手順をもう一度確認してください。",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "公式サイト",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

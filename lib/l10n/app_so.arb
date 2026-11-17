@@ -3759,5 +3759,43 @@
   "talkStopWords": "jooji,waa intaas,nabadgelyo,bay,dhammee habka wada hadalka",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Ka codso",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "La hubiyay {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Qorshahan ma saxsanaa?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Waad ku mahadsan tahay inaad noo sheegtay.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Hubi mar kale",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Qorshaha cusboonaysiinta {name}-kayga wuxuu u muuqdaa mid khaldan. Fadlan mar kale hubi tallaabooyinka rasmiga ah.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Bog rasmi ah",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

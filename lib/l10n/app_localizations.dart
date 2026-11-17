@@ -15894,6 +15894,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'stop,that is all,bye,goodbye,end talk mode'**
   String get talkStopWords;
+
+  /// Label: the country the holder applies from (where they live).
+  ///
+  /// In en, this message translates to:
+  /// **'Apply from'**
+  String get coachApplyInLabel;
+
+  /// When the renewal plan was checked on official sites; date is already formatted.
+  ///
+  /// In en, this message translates to:
+  /// **'Checked {date}'**
+  String coachCheckedOn(String date);
+
+  /// coachWasRight
+  ///
+  /// In en, this message translates to:
+  /// **'Was this plan right?'**
+  String get coachWasRight;
+
+  /// coachThanks
+  ///
+  /// In en, this message translates to:
+  /// **'Thanks for telling us.'**
+  String get coachThanks;
+
+  /// coachRecheck
+  ///
+  /// In en, this message translates to:
+  /// **'Check again'**
+  String get coachRecheck;
+
+  /// Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.
+  ///
+  /// In en, this message translates to:
+  /// **'The renewal plan for my {name} looks wrong. Please check the official steps again.'**
+  String coachRecheckPrompt(String name);
+
+  /// coachOfficial
+  ///
+  /// In en, this message translates to:
+  /// **'Official site'**
+  String get coachOfficial;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

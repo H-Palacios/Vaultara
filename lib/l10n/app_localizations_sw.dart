@@ -9330,4 +9330,29 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get talkStopWords => 'simama,acha,inatosha,kwaheri,bai,maliza mazungumzo';
+
+  @override
+  String get coachApplyInLabel => 'Omba ukiwa';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Imekaguliwa $date';
+  }
+
+  @override
+  String get coachWasRight => 'Je, mpango huu ulikuwa sahihi?';
+
+  @override
+  String get coachThanks => 'Asante kwa kutuambia.';
+
+  @override
+  String get coachRecheck => 'Kagua tena';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Mpango wa kuhuisha $name yangu unaonekana si sahihi. Tafadhali kagua tena hatua rasmi.';
+  }
+
+  @override
+  String get coachOfficial => 'Tovuti rasmi';
 }

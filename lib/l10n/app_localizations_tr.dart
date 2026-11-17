@@ -9330,4 +9330,29 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get talkStopWords => 'dur,yeter,bu kadar,hoşça kal,bay,konuşma modunu bitir';
+
+  @override
+  String get coachApplyInLabel => 'Başvuru ülkesi';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Kontrol edildi: $date';
+  }
+
+  @override
+  String get coachWasRight => 'Bu plan doğru muydu?';
+
+  @override
+  String get coachThanks => 'Bize bildirdiğiniz için teşekkürler.';
+
+  @override
+  String get coachRecheck => 'Tekrar kontrol et';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '$name yenileme planı yanlış görünüyor. Lütfen resmi adımları tekrar kontrol et.';
+  }
+
+  @override
+  String get coachOfficial => 'Resmi site';
 }

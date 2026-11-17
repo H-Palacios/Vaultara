@@ -9278,4 +9278,29 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get talkStopWords => 'dúró,ó tó,ìyẹn nìkan,ó dàbọ̀,bye,parí ipò ìsọ̀rọ̀';
+
+  @override
+  String get coachApplyInLabel => 'Fi ìwé sílẹ̀ láti';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'A ṣàyẹ̀wò rẹ̀ ní $date';
+  }
+
+  @override
+  String get coachWasRight => 'Ṣé ètò yìí tọ̀nà?';
+
+  @override
+  String get coachThanks => 'A dúpẹ́ pé o sọ fún wa.';
+
+  @override
+  String get coachRecheck => 'Ṣàyẹ̀wò lẹ́ẹ̀kan sí i';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Ètò ìsọdọ̀tun $name mi dà bí ẹni pé kò tọ̀nà. Jọ̀wọ́ ṣàyẹ̀wò àwọn ìgbésẹ̀ ìjọba lẹ́ẹ̀kan sí i.';
+  }
+
+  @override
+  String get coachOfficial => 'Ojú-òpó ìjọba';
 }

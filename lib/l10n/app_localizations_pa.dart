@@ -9330,4 +9330,29 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ਰੁਕੋ,ਬੱਸ,ਬੱਸ ਇੰਨਾ ਹੀ,ਅਲਵਿਦਾ,ਬਾਏ,ਗੱਲਬਾਤ ਮੋਡ ਬੰਦ ਕਰੋ';
+
+  @override
+  String get coachApplyInLabel => 'ਅਰਜ਼ੀ ਦੇਣ ਵਾਲਾ ਦੇਸ਼';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'ਜਾਂਚਿਆ $date';
+  }
+
+  @override
+  String get coachWasRight => 'ਕੀ ਇਹ ਯੋਜਨਾ ਸਹੀ ਸੀ?';
+
+  @override
+  String get coachThanks => 'ਦੱਸਣ ਲਈ ਧੰਨਵਾਦ।';
+
+  @override
+  String get coachRecheck => 'ਦੁਬਾਰਾ ਜਾਂਚੋ';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'ਮੇਰੇ $name ਦੀ ਨਵੀਨੀਕਰਨ ਯੋਜਨਾ ਗਲਤ ਲੱਗਦੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਅਧਿਕਾਰਤ ਕਦਮ ਦੁਬਾਰਾ ਜਾਂਚੋ।';
+  }
+
+  @override
+  String get coachOfficial => 'ਅਧਿਕਾਰਤ ਸਾਈਟ';
 }

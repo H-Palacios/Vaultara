@@ -9335,4 +9335,29 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get talkStopWords => 'gelditu,nahikoa,hori da dena,agur,aio,amaitu elkarrizketa';
+
+  @override
+  String get coachApplyInLabel => 'Eskaera hemendik';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Egiaztatuta: $date';
+  }
+
+  @override
+  String get coachWasRight => 'Zuzena zen plan hau?';
+
+  @override
+  String get coachThanks => 'Eskerrik asko esateagatik.';
+
+  @override
+  String get coachRecheck => 'Egiaztatu berriro';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Nire $name berritzeko plana okerra dirudi. Egiaztatu berriro urrats ofizialak, mesedez.';
+  }
+
+  @override
+  String get coachOfficial => 'Webgune ofiziala';
 }

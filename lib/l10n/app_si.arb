@@ -3759,5 +3759,43 @@
   "talkStopWords": "නවත්වන්න,ඇති,එච්චරයි,ආයුබෝවන්,බායි,කතා ප්‍රකාරය අවසන් කරන්න",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "අයදුම් කරන රට",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "පරීක්ෂා කළේ {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "මෙම සැලැස්ම නිවැරදිද?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "අපට දැනුම් දීමට ස්තූතියි.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "නැවත පරීක්ෂා කරන්න",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "මගේ {name} අලුත් කිරීමේ සැලැස්ම වැරදි ලෙස පෙනේ. කරුණාකර නිල පියවර නැවත පරීක්ෂා කරන්න.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "නිල අඩවිය",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

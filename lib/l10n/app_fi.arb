@@ -3777,5 +3777,43 @@
   "talkStopWords": "lopeta,seis,siinä kaikki,heippa,näkemiin,lopeta puhetila",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Haku maasta",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Tarkistettu {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Oliko tämä suunnitelma oikein?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Kiitos, että kerroit.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Tarkista uudelleen",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "{name}-uusimissuunnitelma näyttää väärältä. Tarkista viralliset vaiheet uudelleen.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Virallinen sivusto",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

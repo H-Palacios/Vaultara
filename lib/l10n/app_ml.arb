@@ -3509,5 +3509,43 @@
   "talkStopWords": "നിർത്തൂ,മതി,അത്രയേ ഉള്ളൂ,വിട,ബൈ,സംസാര മോഡ് അവസാനിപ്പിക്കുക",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "അപേക്ഷിക്കുന്ന രാജ്യം",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "പരിശോധിച്ചത് {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "ഈ പ്ലാൻ ശരിയായിരുന്നോ?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "അറിയിച്ചതിന് നന്ദി.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "വീണ്ടും പരിശോധിക്കുക",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "എന്റെ {name} പുതുക്കൽ പ്ലാൻ തെറ്റാണെന്ന് തോന്നുന്നു. ദയവായി ഔദ്യോഗിക ഘട്ടങ്ങൾ വീണ്ടും പരിശോധിക്കൂ.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "ഔദ്യോഗിക സൈറ്റ്",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

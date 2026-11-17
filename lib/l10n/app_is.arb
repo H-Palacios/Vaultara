@@ -3764,5 +3764,43 @@
   "talkStopWords": "stopp,hættu,þetta er allt,bless,bæ,ljúka talstillingu",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Sótt um frá",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Athugað {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Var þessi áætlun rétt?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Takk fyrir að láta okkur vita.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Athuga aftur",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Endurnýjunaráætlunin fyrir {name} virðist röng. Athugaðu opinberu skrefin aftur.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Opinber vefur",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -9335,4 +9335,29 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,det var det,farvel,hej hej,afslut samtale';
+
+  @override
+  String get coachApplyInLabel => 'Ansøg fra';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Tjekket $date';
+  }
+
+  @override
+  String get coachWasRight => 'Var denne plan rigtig?';
+
+  @override
+  String get coachThanks => 'Tak, fordi du sagde det.';
+
+  @override
+  String get coachRecheck => 'Tjek igen';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Fornyelsesplanen for mit $name ser forkert ud. Tjek venligst de officielle trin igen.';
+  }
+
+  @override
+  String get coachOfficial => 'Officiel side';
 }

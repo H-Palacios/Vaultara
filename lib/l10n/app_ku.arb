@@ -3759,5 +3759,43 @@
   "talkStopWords": "raweste,bes e,ev hemû ye,xatirê te,bay,moda axaftinê biqedîne",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Serlêdan ji",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Hate kontrolkirin {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Ev plan rast bû?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Spas ku te ji me re got.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Dîsa kontrol bike",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Plana nûkirinê ya {name} ya min şaş xuya dike. Ji kerema xwe gavên fermî dîsa kontrol bike.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Malpera fermî",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

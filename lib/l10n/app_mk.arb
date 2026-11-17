@@ -3777,5 +3777,43 @@
   "talkStopWords": "стоп,доволно,тоа е сè,чао,довидување,заврши разговор",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Аплицирање од",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Проверено {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Дали овој план беше точен?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Ви благодариме што ни кажавте.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Провери повторно",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Планот за обновување на {name} изгледа погрешно. Те молам, повторно провери ги официјалните чекори.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Официјална страница",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -3777,5 +3777,43 @@
   "talkStopWords": "токто,болду,ушул,кош бол,сүйлөшүү режимин бүтүр",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Арыз берүүчү өлкө",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Текшерилди: {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Бул план туурабы?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Айтканыңыз үчүн рахмат.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Кайра текшерүү",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "{name} жаңыртуу планы туура эмес көрүнөт. Расмий кадамдарды кайра текшерип бер.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Расмий сайт",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -3773,5 +3773,43 @@
   "talkStopWords": "ndalo,mjaft,kaq,mirupafshim,pa,mbyll bisedën",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Apliko nga",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Kontrolluar më {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "A ishte i saktë ky plan?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Faleminderit që na treguat.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Kontrollo sërish",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Plani i rinovimit për {name} duket i gabuar. Të lutem kontrollo sërish hapat zyrtarë.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Faqe zyrtare",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

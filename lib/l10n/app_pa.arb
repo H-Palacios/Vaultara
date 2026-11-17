@@ -3766,5 +3766,43 @@
   "talkStopWords": "ਰੁਕੋ,ਬੱਸ,ਬੱਸ ਇੰਨਾ ਹੀ,ਅਲਵਿਦਾ,ਬਾਏ,ਗੱਲਬਾਤ ਮੋਡ ਬੰਦ ਕਰੋ",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "ਅਰਜ਼ੀ ਦੇਣ ਵਾਲਾ ਦੇਸ਼",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "ਜਾਂਚਿਆ {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "ਕੀ ਇਹ ਯੋਜਨਾ ਸਹੀ ਸੀ?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "ਦੱਸਣ ਲਈ ਧੰਨਵਾਦ।",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "ਦੁਬਾਰਾ ਜਾਂਚੋ",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "ਮੇਰੇ {name} ਦੀ ਨਵੀਨੀਕਰਨ ਯੋਜਨਾ ਗਲਤ ਲੱਗਦੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਅਧਿਕਾਰਤ ਕਦਮ ਦੁਬਾਰਾ ਜਾਂਚੋ।",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "ਅਧਿਕਾਰਤ ਸਾਈਟ",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

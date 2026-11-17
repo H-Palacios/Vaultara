@@ -9413,4 +9413,29 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,to je sve,ćao,doviđenja,završi razgovor';
+
+  @override
+  String get coachApplyInLabel => 'Prijava iz';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Provjereno $date';
+  }
+
+  @override
+  String get coachWasRight => 'Je li ovaj plan bio tačan?';
+
+  @override
+  String get coachThanks => 'Hvala što ste nam rekli.';
+
+  @override
+  String get coachRecheck => 'Provjeri ponovo';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Plan obnove za $name izgleda pogrešno. Molim te, ponovo provjeri službene korake.';
+  }
+
+  @override
+  String get coachOfficial => 'Službena stranica';
 }

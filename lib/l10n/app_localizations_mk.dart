@@ -9329,4 +9329,29 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get talkStopWords => 'стоп,доволно,тоа е сè,чао,довидување,заврши разговор';
+
+  @override
+  String get coachApplyInLabel => 'Аплицирање од';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Проверено $date';
+  }
+
+  @override
+  String get coachWasRight => 'Дали овој план беше точен?';
+
+  @override
+  String get coachThanks => 'Ви благодариме што ни кажавте.';
+
+  @override
+  String get coachRecheck => 'Провери повторно';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Планот за обновување на $name изгледа погрешно. Те молам, повторно провери ги официјалните чекори.';
+  }
+
+  @override
+  String get coachOfficial => 'Официјална страница';
 }

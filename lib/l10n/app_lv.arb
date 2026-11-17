@@ -3777,5 +3777,43 @@
   "talkStopWords": "stop,pietiek,tas ir viss,atā,uz redzēšanos,beigt sarunu",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Pieteikties no",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Pārbaudīts {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Vai šis plāns bija pareizs?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Paldies, ka pastāstījāt.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Pārbaudīt vēlreiz",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Mana {name} atjaunošanas plāns šķiet nepareizs. Lūdzu, vēlreiz pārbaudi oficiālos soļus.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Oficiālā vietne",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -9330,4 +9330,29 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ನಿಲ್ಲಿಸು,ಅಷ್ಟೇ,ವಿದಾಯ,ಬಾಯ್,ಮಾತಿನ ಮೋಡ್ ಮುಗಿಸು';
+
+  @override
+  String get coachApplyInLabel => 'ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ದೇಶ';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'ಪರಿಶೀಲಿಸಲಾಗಿದೆ $date';
+  }
+
+  @override
+  String get coachWasRight => 'ಈ ಯೋಜನೆ ಸರಿಯಾಗಿತ್ತೇ?';
+
+  @override
+  String get coachThanks => 'ತಿಳಿಸಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು.';
+
+  @override
+  String get coachRecheck => 'ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'ನನ್ನ $name ನವೀಕರಣ ಯೋಜನೆ ತಪ್ಪಾಗಿ ಕಾಣುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಅಧಿಕೃತ ಹಂತಗಳನ್ನು ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ.';
+  }
+
+  @override
+  String get coachOfficial => 'ಅಧಿಕೃತ ಸೈಟ್';
 }

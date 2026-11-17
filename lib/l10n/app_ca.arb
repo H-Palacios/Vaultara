@@ -3790,5 +3790,43 @@
   "talkStopWords": "para,ja està,adéu,fins aviat,acaba el mode conversa",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Sol·licitud des de",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Comprovat el {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Era correcte aquest pla?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Gràcies per dir-nos-ho.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Torna a comprovar",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "El pla de renovació del meu {name} sembla incorrecte. Torna a comprovar els passos oficials.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Lloc oficial",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

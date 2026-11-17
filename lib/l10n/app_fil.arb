@@ -3771,5 +3771,43 @@
   "talkStopWords": "tigil,stop,iyon lang,paalam,bye,tapusin ang talk mode",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Mag-apply mula sa",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Tiningnan noong {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Tama ba ang planong ito?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Salamat sa pagsabi sa amin.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Tingnan ulit",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Mukhang mali ang renewal plan para sa {name} ko. Pakitingnan ulit ang opisyal na mga hakbang.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Opisyal na site",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

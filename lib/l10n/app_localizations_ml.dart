@@ -9330,4 +9330,29 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get talkStopWords => 'നിർത്തൂ,മതി,അത്രയേ ഉള്ളൂ,വിട,ബൈ,സംസാര മോഡ് അവസാനിപ്പിക്കുക';
+
+  @override
+  String get coachApplyInLabel => 'അപേക്ഷിക്കുന്ന രാജ്യം';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'പരിശോധിച്ചത് $date';
+  }
+
+  @override
+  String get coachWasRight => 'ഈ പ്ലാൻ ശരിയായിരുന്നോ?';
+
+  @override
+  String get coachThanks => 'അറിയിച്ചതിന് നന്ദി.';
+
+  @override
+  String get coachRecheck => 'വീണ്ടും പരിശോധിക്കുക';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'എന്റെ $name പുതുക്കൽ പ്ലാൻ തെറ്റാണെന്ന് തോന്നുന്നു. ദയവായി ഔദ്യോഗിക ഘട്ടങ്ങൾ വീണ്ടും പരിശോധിക്കൂ.';
+  }
+
+  @override
+  String get coachOfficial => 'ഔദ്യോഗിക സൈറ്റ്';
 }

@@ -3771,5 +3771,43 @@
   "talkStopWords": "para,abonda,iso é todo,adeus,chao,remata o modo conversa",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Solicitar desde",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Comprobado o {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Era correcto este plan?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Grazas por dicírnolo.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Comprobar de novo",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "O plan de renovación do meu {name} parece incorrecto. Comproba de novo os pasos oficiais.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Sitio oficial",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

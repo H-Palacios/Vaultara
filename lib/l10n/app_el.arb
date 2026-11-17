@@ -3766,5 +3766,43 @@
   "talkStopWords": "σταμάτα,στοπ,αυτά,αντίο,γεια,τέλος ομιλίας",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Αίτηση από",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Ελέγχθηκε {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Ήταν σωστό αυτό το πλάνο;",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Ευχαριστούμε που μας το είπατε.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Έλεγχος ξανά",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Το πλάνο ανανέωσης για το {name} φαίνεται λάθος. Έλεγξε ξανά τα επίσημα βήματα.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Επίσημος ιστότοπος",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -3790,5 +3790,43 @@
   "talkStopWords": "stop,det var det,farvel,hej hej,afslut samtale",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Ansøg fra",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Tjekket {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Var denne plan rigtig?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Tak, fordi du sagde det.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Tjek igen",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Fornyelsesplanen for mit {name} ser forkert ud. Tjek venligst de officielle trin igen.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Officiel side",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

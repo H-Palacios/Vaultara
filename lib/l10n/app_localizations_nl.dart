@@ -9335,4 +9335,29 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,dat is alles,doei,tot ziens,spreekmodus stoppen';
+
+  @override
+  String get coachApplyInLabel => 'Aanvragen vanuit';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Gecontroleerd op $date';
+  }
+
+  @override
+  String get coachWasRight => 'Was dit plan juist?';
+
+  @override
+  String get coachThanks => 'Bedankt dat je het ons laat weten.';
+
+  @override
+  String get coachRecheck => 'Opnieuw controleren';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Het verlengingsplan voor mijn $name lijkt niet te kloppen. Controleer de officiële stappen opnieuw.';
+  }
+
+  @override
+  String get coachOfficial => 'Officiële site';
 }

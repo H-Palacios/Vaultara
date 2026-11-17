@@ -9330,4 +9330,29 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get talkStopWords => 'raweste,bes e,ev hemû ye,xatirê te,bay,moda axaftinê biqedîne';
+
+  @override
+  String get coachApplyInLabel => 'Serlêdan ji';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Hate kontrolkirin $date';
+  }
+
+  @override
+  String get coachWasRight => 'Ev plan rast bû?';
+
+  @override
+  String get coachThanks => 'Spas ku te ji me re got.';
+
+  @override
+  String get coachRecheck => 'Dîsa kontrol bike';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Plana nûkirinê ya $name ya min şaş xuya dike. Ji kerema xwe gavên fermî dîsa kontrol bike.';
+  }
+
+  @override
+  String get coachOfficial => 'Malpera fermî';
 }

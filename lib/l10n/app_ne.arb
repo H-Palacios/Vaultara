@@ -3759,5 +3759,43 @@
   "talkStopWords": "रोक,पुग्यो,यत्ति हो,बिदा,बाइ,कुराकानी मोड बन्द गर",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "आवेदन गर्ने देश",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "जाँचिएको {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "के यो योजना सही थियो?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "बताइदिनुभएकोमा धन्यवाद।",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "फेरि जाँच्नुहोस्",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "मेरो {name} को नवीकरण योजना गलत देखिन्छ। कृपया आधिकारिक चरणहरू फेरि जाँच्नुहोस्।",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "आधिकारिक साइट",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

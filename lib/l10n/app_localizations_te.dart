@@ -9330,4 +9330,29 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ఆపు,చాలు,అంతే,వీడ్కోలు,బై,సంభాషణ మోడ్ ముగించు';
+
+  @override
+  String get coachApplyInLabel => 'దరఖాస్తు చేసే దేశం';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'తనిఖీ చేసినది $date';
+  }
+
+  @override
+  String get coachWasRight => 'ఈ ప్లాన్ సరైనదేనా?';
+
+  @override
+  String get coachThanks => 'చెప్పినందుకు ధన్యవాదాలు.';
+
+  @override
+  String get coachRecheck => 'మళ్లీ తనిఖీ చేయి';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'నా $name పునరుద్ధరణ ప్లాన్ తప్పుగా కనిపిస్తోంది. దయచేసి అధికారిక దశలను మళ్లీ తనిఖీ చేయండి.';
+  }
+
+  @override
+  String get coachOfficial => 'అధికారిక సైట్';
 }

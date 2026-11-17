@@ -9416,4 +9416,29 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,gata,asta e tot,pa,la revedere,termină conversația';
+
+  @override
+  String get coachApplyInLabel => 'Aplici din';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Verificat pe $date';
+  }
+
+  @override
+  String get coachWasRight => 'A fost corect acest plan?';
+
+  @override
+  String get coachThanks => 'Mulțumim că ne-ai spus.';
+
+  @override
+  String get coachRecheck => 'Verifică din nou';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Planul de reînnoire pentru $name pare greșit. Te rog verifică din nou pașii oficiali.';
+  }
+
+  @override
+  String get coachOfficial => 'Site oficial';
 }

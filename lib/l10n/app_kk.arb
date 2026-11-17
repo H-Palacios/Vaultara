@@ -3777,5 +3777,43 @@
   "talkStopWords": "тоқта,болды,осы ғана,сау бол,сөйлесу режимін аяқта",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Өтінім беретін ел",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Тексерілді: {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Бұл жоспар дұрыс па еді?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Хабарлағаныңызға рахмет.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Қайта тексеру",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "{name} жаңарту жоспары қате сияқты. Ресми қадамдарды қайта тексеріп бер.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Ресми сайт",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

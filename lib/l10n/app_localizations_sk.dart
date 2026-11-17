@@ -9489,4 +9489,29 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,to je všetko,koniec,ahoj,dovidenia,ukončiť rozhovor';
+
+  @override
+  String get coachApplyInLabel => 'Žiadosť z';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Skontrolované $date';
+  }
+
+  @override
+  String get coachWasRight => 'Bol tento plán správny?';
+
+  @override
+  String get coachThanks => 'Ďakujeme, že ste nám dali vedieť.';
+
+  @override
+  String get coachRecheck => 'Skontrolovať znova';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Plán obnovy pre $name vyzerá nesprávne. Prosím, skontroluj znova oficiálne kroky.';
+  }
+
+  @override
+  String get coachOfficial => 'Oficiálna stránka';
 }

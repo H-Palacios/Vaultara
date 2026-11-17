@@ -9267,4 +9267,29 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get talkStopWords => 'dừng,đủ rồi,vậy thôi,tạm biệt,bai,kết thúc trò chuyện';
+
+  @override
+  String get coachApplyInLabel => 'Nộp từ';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Đã kiểm tra $date';
+  }
+
+  @override
+  String get coachWasRight => 'Kế hoạch này có đúng không?';
+
+  @override
+  String get coachThanks => 'Cảm ơn bạn đã cho chúng tôi biết.';
+
+  @override
+  String get coachRecheck => 'Kiểm tra lại';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Kế hoạch gia hạn $name của tôi có vẻ sai. Hãy kiểm tra lại các bước chính thức.';
+  }
+
+  @override
+  String get coachOfficial => 'Trang chính thức';
 }

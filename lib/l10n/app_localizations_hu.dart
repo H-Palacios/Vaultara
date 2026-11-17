@@ -9330,4 +9330,29 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get talkStopWords => 'állj,elég,ennyi,viszlát,szia,beszélgetés vége';
+
+  @override
+  String get coachApplyInLabel => 'Igénylés innen';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Ellenőrizve: $date';
+  }
+
+  @override
+  String get coachWasRight => 'Helyes volt ez a terv?';
+
+  @override
+  String get coachThanks => 'Köszönjük, hogy szóltál.';
+
+  @override
+  String get coachRecheck => 'Ellenőrizd újra';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'A(z) $name megújítási terve hibásnak tűnik. Kérlek, ellenőrizd újra a hivatalos lépéseket.';
+  }
+
+  @override
+  String get coachOfficial => 'Hivatalos oldal';
 }

@@ -9330,4 +9330,29 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get talkStopWords => 'رکو,بس,بس اتنا ہی,خدا حافظ,بائے,گفتگو موڈ ختم کرو';
+
+  @override
+  String get coachApplyInLabel => 'درخواست کا ملک';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'جانچا گیا $date';
+  }
+
+  @override
+  String get coachWasRight => 'کیا یہ منصوبہ درست تھا؟';
+
+  @override
+  String get coachThanks => 'بتانے کا شکریہ۔';
+
+  @override
+  String get coachRecheck => 'دوبارہ جانچیں';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'میرے $name کا تجدید کا منصوبہ غلط لگ رہا ہے۔ براہ کرم سرکاری اقدامات دوبارہ جانچیں۔';
+  }
+
+  @override
+  String get coachOfficial => 'سرکاری سائٹ';
 }

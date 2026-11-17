@@ -9330,4 +9330,29 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'நிறுத்து,போதும்,அவ்வளவுதான்,பை,போய் வருகிறேன்,பேச்சு பயன்முறையை முடி';
+
+  @override
+  String get coachApplyInLabel => 'விண்ணப்பிக்கும் நாடு';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'சரிபார்க்கப்பட்டது $date';
+  }
+
+  @override
+  String get coachWasRight => 'இந்தத் திட்டம் சரியாக இருந்ததா?';
+
+  @override
+  String get coachThanks => 'சொன்னதற்கு நன்றி.';
+
+  @override
+  String get coachRecheck => 'மீண்டும் சரிபார்';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'என் $name புதுப்பிப்பு திட்டம் தவறாகத் தெரிகிறது. அதிகாரப்பூர்வ படிகளை மீண்டும் சரிபாருங்கள்.';
+  }
+
+  @override
+  String get coachOfficial => 'அதிகாரப்பூர்வ தளம்';
 }

@@ -9350,4 +9350,29 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,that is all,bye,goodbye,end talk mode';
+
+  @override
+  String get coachApplyInLabel => 'Apply from';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Checked $date';
+  }
+
+  @override
+  String get coachWasRight => 'Was this plan right?';
+
+  @override
+  String get coachThanks => 'Thanks for telling us.';
+
+  @override
+  String get coachRecheck => 'Check again';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'The renewal plan for my $name looks wrong. Please check the official steps again.';
+  }
+
+  @override
+  String get coachOfficial => 'Official site';
 }

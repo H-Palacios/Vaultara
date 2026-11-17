@@ -9510,4 +9510,29 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,koniec,to wszystko,pa,do widzenia,zakończ rozmowę';
+
+  @override
+  String get coachApplyInLabel => 'Wniosek z kraju';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Sprawdzono $date';
+  }
+
+  @override
+  String get coachWasRight => 'Czy ten plan był poprawny?';
+
+  @override
+  String get coachThanks => 'Dziękujemy za informację.';
+
+  @override
+  String get coachRecheck => 'Sprawdź ponownie';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Plan odnowienia dla $name wygląda na błędny. Sprawdź ponownie oficjalne kroki.';
+  }
+
+  @override
+  String get coachOfficial => 'Oficjalna strona';
 }

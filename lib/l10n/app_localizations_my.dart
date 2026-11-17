@@ -9265,4 +9265,29 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ရပ်,တော်ပြီ,ဒါပဲ,နှုတ်ဆက်ပါတယ်,ဘိုင်,စကားပြောမုဒ်ပိတ်';
+
+  @override
+  String get coachApplyInLabel => 'လျှောက်ထားမည့်နိုင်ငံ';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'စစ်ဆေးခဲ့သည် $date';
+  }
+
+  @override
+  String get coachWasRight => 'ဤအစီအစဉ် မှန်ကန်ခဲ့ပါသလား?';
+
+  @override
+  String get coachThanks => 'ပြောပြပေးသည့်အတွက် ကျေးဇူးတင်ပါသည်။';
+
+  @override
+  String get coachRecheck => 'ထပ်စစ်ရန်';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'ကျွန်ုပ်၏ $name သက်တမ်းတိုးအစီအစဉ် မှားနေပုံရသည်။ တရားဝင်အဆင့်များကို ထပ်စစ်ပေးပါ။';
+  }
+
+  @override
+  String get coachOfficial => 'တရားဝင်ဆိုက်';
 }

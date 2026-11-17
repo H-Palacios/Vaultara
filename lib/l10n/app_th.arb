@@ -3776,5 +3776,43 @@
   "talkStopWords": "หยุด,พอแล้ว,แค่นี้,ลาก่อน,บาย,จบโหมดสนทนา",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "ยื่นจากประเทศ",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "ตรวจสอบเมื่อ {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "แผนนี้ถูกต้องไหม",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "ขอบคุณที่บอกเรา",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "ตรวจสอบอีกครั้ง",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "แผนต่ออายุ{name}ของฉันดูไม่ถูกต้อง ช่วยตรวจสอบขั้นตอนทางการอีกครั้ง",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "เว็บไซต์ทางการ",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

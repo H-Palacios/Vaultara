@@ -9331,4 +9331,29 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get talkStopWords => 'стоп,това е всичко,чао,довиждане,край на разговора';
+
+  @override
+  String get coachApplyInLabel => 'Кандидатствате от';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Проверено на $date';
+  }
+
+  @override
+  String get coachWasRight => 'Правилен ли беше този план?';
+
+  @override
+  String get coachThanks => 'Благодарим, че ни казахте.';
+
+  @override
+  String get coachRecheck => 'Провери отново';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Планът за подновяване на $name изглежда грешен. Моля, провери отново официалните стъпки.';
+  }
+
+  @override
+  String get coachOfficial => 'Официален сайт';
 }

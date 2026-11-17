@@ -9255,4 +9255,29 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get talkStopWords => 'ストップ,止めて,以上,さようなら,バイバイ,会話モード終了';
+
+  @override
+  String get coachApplyInLabel => '申請する国';
+
+  @override
+  String coachCheckedOn(String date) {
+    return '確認日 $date';
+  }
+
+  @override
+  String get coachWasRight => 'このプランは正しかったですか？';
+
+  @override
+  String get coachThanks => 'お知らせいただきありがとうございます。';
+
+  @override
+  String get coachRecheck => 'もう一度確認';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '$nameの更新プランが間違っているようです。公式の手順をもう一度確認してください。';
+  }
+
+  @override
+  String get coachOfficial => '公式サイト';
 }

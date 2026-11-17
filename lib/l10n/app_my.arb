@@ -3509,5 +3509,43 @@
   "talkStopWords": "ရပ်,တော်ပြီ,ဒါပဲ,နှုတ်ဆက်ပါတယ်,ဘိုင်,စကားပြောမုဒ်ပိတ်",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "လျှောက်ထားမည့်နိုင်ငံ",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "စစ်ဆေးခဲ့သည် {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "ဤအစီအစဉ် မှန်ကန်ခဲ့ပါသလား?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "ပြောပြပေးသည့်အတွက် ကျေးဇူးတင်ပါသည်။",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "ထပ်စစ်ရန်",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "ကျွန်ုပ်၏ {name} သက်တမ်းတိုးအစီအစဉ် မှားနေပုံရသည်။ တရားဝင်အဆင့်များကို ထပ်စစ်ပေးပါ။",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "တရားဝင်ဆိုက်",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

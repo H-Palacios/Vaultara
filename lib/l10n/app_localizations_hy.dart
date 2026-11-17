@@ -9330,4 +9330,29 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get talkStopWords => 'կանգ,վերջ,այսքանը,ցտեսություն,հաջող,ավարտել խոսակցությունը';
+
+  @override
+  String get coachApplyInLabel => 'Դիմել երկրից';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Ստուգվել է $date';
+  }
+
+  @override
+  String get coachWasRight => 'Այս պլանը ճի՞շտ էր։';
+
+  @override
+  String get coachThanks => 'Շնորհակալություն, որ տեղեկացրիք։';
+
+  @override
+  String get coachRecheck => 'Կրկին ստուգել';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '$name-ի թարմացման պլանը սխալ է թվում։ Խնդրում եմ կրկին ստուգիր պաշտոնական քայլերը։';
+  }
+
+  @override
+  String get coachOfficial => 'Պաշտոնական կայք';
 }

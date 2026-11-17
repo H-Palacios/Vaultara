@@ -9334,4 +9334,29 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get talkStopWords => 'lopeta,seis,siinä kaikki,heippa,näkemiin,lopeta puhetila';
+
+  @override
+  String get coachApplyInLabel => 'Haku maasta';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Tarkistettu $date';
+  }
+
+  @override
+  String get coachWasRight => 'Oliko tämä suunnitelma oikein?';
+
+  @override
+  String get coachThanks => 'Kiitos, että kerroit.';
+
+  @override
+  String get coachRecheck => 'Tarkista uudelleen';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '$name-uusimissuunnitelma näyttää väärältä. Tarkista viralliset vaiheet uudelleen.';
+  }
+
+  @override
+  String get coachOfficial => 'Virallinen sivusto';
 }

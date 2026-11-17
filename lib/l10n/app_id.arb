@@ -3764,5 +3764,43 @@
   "talkStopWords": "berhenti,stop,sudah itu saja,dah,sampai jumpa,akhiri mode bicara",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Ajukan dari",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Diperiksa {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Apakah rencana ini benar?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Terima kasih sudah memberi tahu kami.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Periksa lagi",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Rencana perpanjangan untuk {name} saya tampaknya salah. Tolong periksa lagi langkah resminya.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Situs resmi",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -9505,4 +9505,29 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get talkStopWords => 'стоп,досить,це все,бувай,до побачення,заверши розмову';
+
+  @override
+  String get coachApplyInLabel => 'Подання з';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Перевірено $date';
+  }
+
+  @override
+  String get coachWasRight => 'Цей план був правильним?';
+
+  @override
+  String get coachThanks => 'Дякуємо, що повідомили.';
+
+  @override
+  String get coachRecheck => 'Перевірити знову';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'План поновлення для $name виглядає неправильним. Будь ласка, перевір офіційні кроки ще раз.';
+  }
+
+  @override
+  String get coachOfficial => 'Офіційний сайт';
 }

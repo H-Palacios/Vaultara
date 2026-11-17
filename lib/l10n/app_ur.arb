@@ -3759,5 +3759,43 @@
   "talkStopWords": "رکو,بس,بس اتنا ہی,خدا حافظ,بائے,گفتگو موڈ ختم کرو",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "درخواست کا ملک",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "جانچا گیا {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "کیا یہ منصوبہ درست تھا؟",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "بتانے کا شکریہ۔",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "دوبارہ جانچیں",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "میرے {name} کا تجدید کا منصوبہ غلط لگ رہا ہے۔ براہ کرم سرکاری اقدامات دوبارہ جانچیں۔",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "سرکاری سائٹ",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

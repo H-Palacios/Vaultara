@@ -3790,5 +3790,43 @@
   "talkStopWords": "থামো,এটুকুই,বিদায়,বাই,কথা বলার মোড শেষ করো",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "আবেদন করবেন যেখান থেকে",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "যাচাই করা হয়েছে {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "এই পরিকল্পনা কি সঠিক ছিল?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "জানানোর জন্য ধন্যবাদ।",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "আবার দেখুন",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "আমার {name}-এর নবায়ন পরিকল্পনা ভুল মনে হচ্ছে। দয়া করে সরকারি ধাপগুলো আবার দেখুন।",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "সরকারি সাইট",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

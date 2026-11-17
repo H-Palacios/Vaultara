@@ -9329,4 +9329,29 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get talkStopWords => 'тоқта,болды,осы ғана,сау бол,сөйлесу режимін аяқта';
+
+  @override
+  String get coachApplyInLabel => 'Өтінім беретін ел';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Тексерілді: $date';
+  }
+
+  @override
+  String get coachWasRight => 'Бұл жоспар дұрыс па еді?';
+
+  @override
+  String get coachThanks => 'Хабарлағаныңызға рахмет.';
+
+  @override
+  String get coachRecheck => 'Қайта тексеру';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return '$name жаңарту жоспары қате сияқты. Ресми қадамдарды қайта тексеріп бер.';
+  }
+
+  @override
+  String get coachOfficial => 'Ресми сайт';
 }

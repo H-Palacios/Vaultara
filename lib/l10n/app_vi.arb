@@ -3759,5 +3759,43 @@
   "talkStopWords": "dừng,đủ rồi,vậy thôi,tạm biệt,bai,kết thúc trò chuyện",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Nộp từ",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Đã kiểm tra {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Kế hoạch này có đúng không?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Cảm ơn bạn đã cho chúng tôi biết.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Kiểm tra lại",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Kế hoạch gia hạn {name} của tôi có vẻ sai. Hãy kiểm tra lại các bước chính thức.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Trang chính thức",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -9336,4 +9336,29 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get talkStopWords => 'para,pára,é tudo,adeus,tchau,terminar modo conversa';
+
+  @override
+  String get coachApplyInLabel => 'Pedir a partir de';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Verificado a $date';
+  }
+
+  @override
+  String get coachWasRight => 'Este plano estava certo?';
+
+  @override
+  String get coachThanks => 'Obrigado por nos dizer.';
+
+  @override
+  String get coachRecheck => 'Verificar de novo';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'O plano de renovação do meu $name parece errado. Verifique de novo os passos oficiais.';
+  }
+
+  @override
+  String get coachOfficial => 'Site oficial';
 }

@@ -9409,4 +9409,29 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,dosta,to je sve,bok,doviđenja,završi razgovor';
+
+  @override
+  String get coachApplyInLabel => 'Prijava iz';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Provjereno $date';
+  }
+
+  @override
+  String get coachWasRight => 'Je li ovaj plan bio točan?';
+
+  @override
+  String get coachThanks => 'Hvala što ste nam rekli.';
+
+  @override
+  String get coachRecheck => 'Provjeri ponovno';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Plan obnove za $name izgleda pogrešno. Molim te, ponovno provjeri službene korake.';
+  }
+
+  @override
+  String get coachOfficial => 'Službena stranica';
 }

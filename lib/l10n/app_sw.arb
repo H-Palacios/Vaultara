@@ -3759,5 +3759,43 @@
   "talkStopWords": "simama,acha,inatosha,kwaheri,bai,maliza mazungumzo",
   "@talkStopWords": {
     "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
+  },
+  "coachApplyInLabel": "Omba ukiwa",
+  "@coachApplyInLabel": {
+    "description": "Label: the country the holder applies from (where they live)."
+  },
+  "coachCheckedOn": "Imekaguliwa {date}",
+  "@coachCheckedOn": {
+    "description": "When the renewal plan was checked on official sites; date is already formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "coachWasRight": "Je, mpango huu ulikuwa sahihi?",
+  "@coachWasRight": {
+    "description": "coachWasRight"
+  },
+  "coachThanks": "Asante kwa kutuambia.",
+  "@coachThanks": {
+    "description": "coachThanks"
+  },
+  "coachRecheck": "Kagua tena",
+  "@coachRecheck": {
+    "description": "coachRecheck"
+  },
+  "coachRecheckPrompt": "Mpango wa kuhuisha {name} yangu unaonekana si sahihi. Tafadhali kagua tena hatua rasmi.",
+  "@coachRecheckPrompt": {
+    "description": "Message sent to Ask Vaultara when the user says a plan is wrong; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachOfficial": "Tovuti rasmi",
+  "@coachOfficial": {
+    "description": "coachOfficial"
   }
 }

@@ -9491,4 +9491,29 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get talkStopWords => 'stop,to je vše,ahoj,na shledanou,ukončit konverzaci';
+
+  @override
+  String get coachApplyInLabel => 'Žádost z';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Zkontrolováno $date';
+  }
+
+  @override
+  String get coachWasRight => 'Byl tento plán správný?';
+
+  @override
+  String get coachThanks => 'Děkujeme, že jste nám dali vědět.';
+
+  @override
+  String get coachRecheck => 'Zkontrolovat znovu';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Plán obnovy pro $name vypadá špatně. Zkontroluj prosím znovu oficiální kroky.';
+  }
+
+  @override
+  String get coachOfficial => 'Oficiální stránka';
 }

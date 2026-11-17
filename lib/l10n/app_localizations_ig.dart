@@ -9278,4 +9278,29 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get talkStopWords => 'kwụsị,nke ahụ zuru,ka ọ dị,bye,kwụsị ụdị mkparịta ụka';
+
+  @override
+  String get coachApplyInLabel => 'Tinye akwụkwọ site na';
+
+  @override
+  String coachCheckedOn(String date) {
+    return 'Elelere $date';
+  }
+
+  @override
+  String get coachWasRight => 'Atụmatụ a ọ ziri ezi?';
+
+  @override
+  String get coachThanks => 'Daalụ maka ịgwa anyị.';
+
+  @override
+  String get coachRecheck => 'Lelee ọzọ';
+
+  @override
+  String coachRecheckPrompt(String name) {
+    return 'Atụmatụ mmeghari maka $name m yiri ka ọ dị njọ. Biko lelee nzọụkwụ gọọmentị ọzọ.';
+  }
+
+  @override
+  String get coachOfficial => 'Saịtị gọọmentị';
 }
