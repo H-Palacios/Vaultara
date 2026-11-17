@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:speech_to_text/speech_recognition_error.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:speech_to_text/speech_to_text.dart';
@@ -33,7 +34,24 @@ class VoiceInput {
 
   /// Set when a session ends because nothing was heard or the recogniser
   /// failed. Cleared when listening starts again.
-  final ValueNotifier<VoiceProblem?> problem = ValueNotifier<VoiceProblem?>(null);
+  final ValueNotifier<VoiceProblem?> problem = ValueNotifier<VoiceProblem?>(
+    null,
+  );
+
+  /// Set when the phone cannot listen in the app's language: the name of
+  /// the language it listens in instead. The voice panel says so and offers
+  /// to pick another one. Null when the app's language, or a language the
+  /// user picked, is used.
+  final ValueNotifier<String?> fallbackLanguage = ValueNotifier<String?>(null);
+
+  static const String _chosenKey = 'voiceLocaleId';
+  List<LocaleName> _locales = const <LocaleName>[];
+
+  /// The languages the phone can listen in, sorted by name.
+  List<LocaleName> get locales => _locales;
+
+  /// The language being listened in, when known.
+  String? get localeId => _localeId;
 
   double _quiet = double.infinity;
   double _loud = double.negativeInfinity;
@@ -71,22 +89,66 @@ class VoiceInput {
   Future<String?> _pickLocale(Locale locale) async {
     try {
       final locales = await _speech.locales();
-      final language = locale.languageCode.toLowerCase();
-      final country = (locale.countryCode ?? '').toUpperCase();
-      String? languageOnly;
-      for (final item in locales) {
-        final parts = item.localeId.replaceAll('-', '_').split('_');
-        if (parts.isEmpty || parts.first.toLowerCase() != language) continue;
-        if (country.isNotEmpty &&
-            parts.length > 1 &&
-            parts[1].toUpperCase() == country) {
-          return item.localeId;
-        }
-        languageOnly ??= item.localeId;
+      _locales = List<LocaleName>.of(locales)
+        ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+
+      // A language the user picked before wins, if the phone still has it.
+      final prefs = await SharedPreferences.getInstance();
+      final chosen = prefs.getString(_chosenKey);
+      if (chosen != null && locales.any((l) => l.localeId == chosen)) {
+        fallbackLanguage.value = null;
+        return chosen;
       }
-      return languageOnly;
+
+      final match = matchLocale(
+        locales.map((l) => l.localeId).toList(),
+        locale,
+      );
+      if (match != null) {
+        fallbackLanguage.value = null;
+        return match;
+      }
+
+      // The phone cannot listen in the app's language. Say so instead of
+      // quietly writing out another language.
+      final system = await _speech.systemLocale();
+      final fallback = system ?? (locales.isEmpty ? null : locales.first);
+      fallbackLanguage.value = fallback?.name;
+      return fallback?.localeId;
     } catch (_) {
       return null;
+    }
+  }
+
+  /// The phone language that matches [locale]: the same language and
+  /// country first, then the same language. Null when there is none.
+  @visibleForTesting
+  static String? matchLocale(List<String> localeIds, Locale locale) {
+    final language = locale.languageCode.toLowerCase();
+    final country = (locale.countryCode ?? '').toUpperCase();
+    String? languageOnly;
+    for (final id in localeIds) {
+      final parts = id.replaceAll('-', '_').split('_');
+      if (parts.isEmpty || parts.first.toLowerCase() != language) continue;
+      if (country.isNotEmpty &&
+          parts.length > 1 &&
+          parts[1].toUpperCase() == country) {
+        return id;
+      }
+      languageOnly ??= id;
+    }
+    return languageOnly;
+  }
+
+  /// Listens in [localeId] from now on, and remembers the choice.
+  Future<void> chooseLocale(String localeId) async {
+    _localeId = localeId;
+    fallbackLanguage.value = null;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_chosenKey, localeId);
+    } catch (_) {
+      // Used for this session even if it cannot be saved.
     }
   }
 
@@ -306,5 +368,6 @@ class VoiceInput {
     level.dispose();
     words.dispose();
     problem.dispose();
+    fallbackLanguage.dispose();
   }
 }

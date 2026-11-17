@@ -12,6 +12,9 @@ class AssistantInputBar extends StatelessWidget {
   final VoidCallback onSend;
   final VoidCallback onMic;
 
+  /// Takes or picks a photo of a document to add. Hidden when null.
+  final VoidCallback? onPhoto;
+
   /// Set while an answer is being worked out; turns Send into Stop.
   final VoidCallback? onStop;
 
@@ -24,6 +27,7 @@ class AssistantInputBar extends StatelessWidget {
     required this.hintText,
     required this.onSend,
     required this.onMic,
+    this.onPhoto,
     this.onStop,
   });
 
@@ -39,6 +43,18 @@ class AssistantInputBar extends StatelessWidget {
         return Row(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
+            if (onPhoto != null)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 4, right: 4),
+                child: IconButton(
+                  tooltip: loc.assistantPhotoButton,
+                  onPressed: busy ? null : onPhoto,
+                  icon: Icon(
+                    Icons.photo_camera_outlined,
+                    color: busy ? null : scheme.primary,
+                  ),
+                ),
+              ),
             Expanded(
               child: TextField(
                 controller: controller,
@@ -46,20 +62,21 @@ class AssistantInputBar extends StatelessWidget {
                 minLines: 1,
                 maxLines: 4,
                 maxLength: AssistantService.maxChars,
-                buildCounter: (
-                  context, {
-                  required currentLength,
-                  required isFocused,
-                  maxLength,
-                }) =>
-                    null,
+                buildCounter:
+                    (
+                      context, {
+                      required currentLength,
+                      required isFocused,
+                      maxLength,
+                    }) => null,
                 textInputAction: TextInputAction.send,
                 textCapitalization: TextCapitalization.sentences,
                 autocorrect: true,
                 enableSuggestions: true,
                 // The phone's own spell checker underlines typos before
                 // sending. Only where the phone has one (Android and iOS).
-                spellCheckConfiguration: WidgetsBinding
+                spellCheckConfiguration:
+                    WidgetsBinding
                         .instance
                         .platformDispatcher
                         .nativeSpellCheckServiceDefined
@@ -68,23 +85,26 @@ class AssistantInputBar extends StatelessWidget {
                 onSubmitted: (_) {
                   if (canSend) onSend();
                 },
-                decoration: AppInputDecorations.field(
-                  context,
-                  hintText: listening ? loc.assistantListening : hintText,
-                  hintFontSize: 14,
-                  suffixIcon: IconButton(
-                    tooltip: listening
-                        ? loc.assistantStopListening
-                        : loc.assistantSpeak,
-                    onPressed: busy ? null : onMic,
-                    icon: Icon(
-                      listening ? Icons.stop_circle_rounded : Icons.mic_rounded,
-                      color: listening ? scheme.error : scheme.primary,
+                decoration:
+                    AppInputDecorations.field(
+                      context,
+                      hintText: listening ? loc.assistantListening : hintText,
+                      hintFontSize: 14,
+                      suffixIcon: IconButton(
+                        tooltip: listening
+                            ? loc.assistantStopListening
+                            : loc.assistantSpeak,
+                        onPressed: busy ? null : onMic,
+                        icon: Icon(
+                          listening
+                              ? Icons.stop_circle_rounded
+                              : Icons.mic_rounded,
+                          color: listening ? scheme.error : scheme.primary,
+                        ),
+                      ),
+                    ).copyWith(
+                      contentPadding: const EdgeInsets.fromLTRB(14, 14, 8, 14),
                     ),
-                  ),
-                ).copyWith(
-                  contentPadding: const EdgeInsets.fromLTRB(14, 14, 8, 14),
-                ),
               ),
             ),
             const SizedBox(width: 8),

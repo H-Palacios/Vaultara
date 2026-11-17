@@ -1,3 +1,5 @@
+import 'package:vaultara/features/scan/services/document_reader.dart';
+import 'package:vaultara/features/scan/services/document_scanner.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -162,6 +164,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   @override
   void dispose() {
+    AssistantActionLauncher.pendingPhotoPath = null;
     final run = _run;
     if (_busy && run != null) {
       // Leaving stops the answer. The chat keeps a note so it can be
@@ -399,7 +402,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       proposals: <StoredProposal>[
         for (final action in result.actions) _storedFor(action, 'pending'),
       ],
-    );
+    )..truncated = result.truncated;
     setState(() {
       _busy = false;
       _messages.add(message);
@@ -459,6 +462,111 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       text: _voiceBase,
       selection: TextSelection.collapsed(offset: _voiceBase.length),
     );
+  }
+
+  /// Takes or picks a photo of a document and asks Ask Vaultara to add it.
+  /// The text is read on the phone; only that text goes to the server, with
+  /// long numbers hidden, as with scanning. The photo itself stays on the
+  /// phone and is attached to the record if the user adds it from the card.
+  Future<void> _takePhoto() async {
+    if (_busy || _loadingChat) return;
+    final loc = AppLocalizations.of(context)!;
+    final outcome = await DocumentScanner.scan(context);
+    if (outcome == null || !mounted) return;
+    final result = outcome.result;
+    final text = DocumentReader.prepare(outcome.rawText);
+    if (outcome.failed || (text.length < 10 && result.isEmpty)) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.assistantPhotoUnreadable,
+        icon: Icons.no_photography_outlined,
+      );
+      return;
+    }
+    AssistantActionLauncher.pendingPhotoPath = outcome.hasImage
+        ? outcome.imagePath
+        : null;
+    final lines = <String>['[Photo]'];
+    if (result.groupKey != null) lines.add('Kind: ${result.groupKey}');
+    if (result.suggestedName != null)
+      lines.add('Name: ${result.suggestedName}');
+    if (result.expiryDate != null) {
+      lines.add(
+        'Expiry date: ${result.expiryDate!.toIso8601String().substring(0, 10)}',
+      );
+    }
+    if (result.issuingCountry != null) {
+      lines.add('Issued by: ${result.issuingCountry}');
+    }
+    if (text.isNotEmpty) {
+      lines.add(
+        'Text on the document:\n'
+        '${text.length > 1500 ? text.substring(0, 1500) : text}',
+      );
+    }
+    await _send(loc.assistantPhotoMessage, prompt: lines.join('\n'));
+  }
+
+  /// Lets the user pick the language voice typing listens in, when the
+  /// phone cannot listen in the app's language. The choice is remembered.
+  Future<void> _chooseVoiceLanguage() async {
+    final loc = AppLocalizations.of(context)!;
+    final options = _voice.locales;
+    if (options.isEmpty) return;
+    final picked = await showModalBottomSheet<String>(
+      context: context,
+      showDragHandle: true,
+      isScrollControlled: true,
+      builder: (sheetContext) => SafeArea(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxHeight: MediaQuery.of(sheetContext).size.height * 0.7,
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+                child: Text(
+                  loc.voiceLanguageTitle,
+                  style: const TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+              Flexible(
+                child: ListView(
+                  shrinkWrap: true,
+                  children: [
+                    for (final option in options)
+                      ListTile(
+                        title: Text(option.name),
+                        trailing: option.localeId == _voice.localeId
+                            ? Icon(
+                                Icons.check_rounded,
+                                color: Theme.of(
+                                  sheetContext,
+                                ).colorScheme.primary,
+                              )
+                            : null,
+                        onTap: () =>
+                            Navigator.of(sheetContext).pop(option.localeId),
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (picked == null || !mounted) return;
+    await _cancelVoice();
+    await _voice.chooseLocale(picked);
+    if (!mounted) return;
+    await _toggleMic();
   }
 
   /// The tick: the only way spoken words are sent.
@@ -743,6 +851,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   void _newChat() {
     if (_busy) return;
     _voice.cancel();
+    AssistantActionLauncher.pendingPhotoPath = null;
     setState(() {
       _messages.clear();
       _input.clear();
@@ -911,6 +1020,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                               confirmLabel: loc.assistantSend,
                               confirmNeedsWords: true,
                               onEdit: _editVoice,
+                              onChangeLanguage: _chooseVoiceLanguage,
                             )
                           : AssistantInputBar(
                               key: const ValueKey<String>('text'),
@@ -921,6 +1031,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                               hintText: loc.assistantHint,
                               onSend: () => _send(_input.text),
                               onMic: _toggleMic,
+                              onPhoto: _takePhoto,
                               onStop: _busy ? _stop : null,
                             ),
                     ),
@@ -1063,6 +1174,19 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
               children: extras,
             ),
           ),
+        // The task did not fit in one answer: one tap asks for the rest.
+        if (newest && message.truncated && !_busy)
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 2, bottom: 6),
+              child: OutlinedButton.icon(
+                onPressed: () => _send(loc.assistantContinue),
+                icon: const Icon(Icons.play_arrow_rounded, size: 18),
+                label: Text(loc.assistantContinue),
+              ),
+            ),
+          ),
         if (newest && message.replies.isNotEmpty)
           AssistantReplyChips(
             replies: message.replies,
@@ -1098,14 +1222,43 @@ class _LiveThinking extends StatelessWidget {
     if (current == null) {
       return AssistantThinkingBubble(label: loc.assistantStepThinking);
     }
-    return ValueListenableBuilder<AssistantStep?>(
-      valueListenable: current.step,
-      builder: (context, step, _) => ValueListenableBuilder<bool>(
-        valueListenable: current.slow,
-        builder: (context, slow, _) => AssistantThinkingBubble(
-          label: AssistantStepLabel.of(loc, step, slow: slow),
-        ),
-      ),
+    return ValueListenableBuilder<String>(
+      valueListenable: current.partial,
+      builder: (context, partial, _) {
+        // The answer appears as it is written; the step line stays under
+        // it until the answer is complete.
+        final text = AssistantPlainText.clean(partial).trim();
+        return ValueListenableBuilder<AssistantStep?>(
+          valueListenable: current.step,
+          builder: (context, step, _) => ValueListenableBuilder<bool>(
+            valueListenable: current.slow,
+            builder: (context, slow, _) {
+              final label = AssistantStepLabel.of(loc, step, slow: slow);
+              if (text.isEmpty) return AssistantThinkingBubble(label: label);
+              final scheme = Theme.of(context).colorScheme;
+              return AssistantBubble(
+                fromUser: false,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(text),
+                    const SizedBox(height: 6),
+                    SizedBox(
+                      width: 14,
+                      height: 14,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: scheme.primary,
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        );
+      },
     );
   }
 }

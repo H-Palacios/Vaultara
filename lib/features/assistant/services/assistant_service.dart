@@ -34,17 +34,23 @@ class AssistantReply {
   final List<String> replies;
   final AssistantFailure? failure;
 
+  /// The answer stopped before the whole task was done, because of its
+  /// length or the number of steps or cards. The app offers Continue.
+  final bool truncated;
+
   const AssistantReply({
     this.reply = '',
     this.actions = const <AssistantAction>[],
     this.replies = const <String>[],
     this.failure,
+    this.truncated = false,
   });
 
   const AssistantReply.failed(AssistantFailure this.failure)
     : reply = '',
       actions = const <AssistantAction>[],
-      replies = const <String>[];
+      replies = const <String>[],
+      truncated = false;
 
   static List<String> repliesFrom(Object? raw) {
     if (raw is! List) return const <String>[];
@@ -70,7 +76,7 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 10;
+  static const int protocolVersion = 11;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
@@ -127,6 +133,7 @@ class AssistantService {
         reply: reply is String ? reply.trim() : '',
         actions: AssistantAction.listFrom(data['actions']),
         replies: AssistantReply.repliesFrom(data['replies']),
+        truncated: data['truncated'] == true,
       );
     } on FirebaseFunctionsException catch (e) {
       final failure = _mapCode(e.code);
@@ -163,6 +170,17 @@ class AssistantService {
       locale: locale,
       propose: true,
     );
+  }
+
+  /// Clears every word Ask Vaultara learned for this account. Returns false
+  /// when it could not be done.
+  static Future<bool> forgetLearnedWords() async {
+    try {
+      await _functions.httpsCallable('forgetAssistantWords').call<void>();
+      return true;
+    } catch (_) {
+      return false;
+    }
   }
 
   static Future<bool> _online() async {

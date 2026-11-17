@@ -1,3 +1,4 @@
+import 'package:vaultara/features/assistant/services/assistant_service.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -66,6 +67,41 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
   }
 
   void _close() => Scaffold.maybeOf(context)?.closeEndDrawer();
+
+  /// Clears the words Ask Vaultara learned from the user's corrections,
+  /// after asking.
+  Future<void> _forgetWords() async {
+    final loc = AppLocalizations.of(context)!;
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: Text(loc.assistantForgetWords),
+        content: Text(loc.assistantForgetWordsBody),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: Text(loc.cancel),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            child: Text(loc.assistantForgetWordsConfirm),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    setState(() => _working = true);
+    final done = await AssistantService.forgetLearnedWords();
+    if (!mounted) return;
+    setState(() => _working = false);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          done ? loc.assistantForgetWordsDone : loc.assistantErrorFailed,
+        ),
+      ),
+    );
+  }
 
   void _open(String id) {
     _close();
@@ -228,11 +264,17 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
                     ),
                   ),
                   PopupMenuButton<String>(
-                    enabled: !_working && (chats?.isNotEmpty ?? false),
-                    onSelected: (_) => _deleteAll(),
+                    enabled: !_working,
+                    onSelected: (value) =>
+                        value == 'words' ? _forgetWords() : _deleteAll(),
                     itemBuilder: (_) => [
                       PopupMenuItem<String>(
+                        value: 'words',
+                        child: Text(loc.assistantForgetWords),
+                      ),
+                      PopupMenuItem<String>(
                         value: 'all',
+                        enabled: chats?.isNotEmpty ?? false,
                         child: Text(
                           loc.assistantHistoryDeleteAll,
                           style: TextStyle(color: scheme.error),

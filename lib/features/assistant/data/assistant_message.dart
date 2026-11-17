@@ -26,10 +26,10 @@ class StoredProposal {
       StoredProposal(type: type, summary: summary, status: next);
 
   Map<String, String> toMap() => <String, String>{
-        'type': type,
-        'summary': summary,
-        'status': status,
-      };
+    'type': type,
+    'summary': summary,
+    'status': status,
+  };
 
   static StoredProposal? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -72,6 +72,10 @@ class AssistantMessage {
   /// Cards in a combined card that the user unticked.
   final Set<int> unchecked = <int>{};
 
+  /// The answer stopped before the whole task was done; the newest one
+  /// shows a Continue button. Kept only while the chat is open.
+  bool truncated = false;
+
   /// 1 for helpful, -1 for not helpful, 0 when not rated.
   int rating = 0;
   bool reported = false;
@@ -87,15 +91,15 @@ class AssistantMessage {
     List<String> replies = const <String>[],
     this.failure,
     this.id,
-  })  : actions = List<AssistantAction>.unmodifiable(actions),
-        undos = List<AssistantUndo?>.filled(actions.length, null),
-        replies = List<String>.of(replies),
-        actionStates = List<AssistantActionState>.filled(
-          actions.length,
-          AssistantActionState.pending,
-        ),
-        proposals = List<StoredProposal>.of(proposals),
-        archived = List<StoredProposal>.unmodifiable(archived);
+  }) : actions = List<AssistantAction>.unmodifiable(actions),
+       undos = List<AssistantUndo?>.filled(actions.length, null),
+       replies = List<String>.of(replies),
+       actionStates = List<AssistantActionState>.filled(
+         actions.length,
+         AssistantActionState.pending,
+       ),
+       proposals = List<StoredProposal>.of(proposals),
+       archived = List<StoredProposal>.unmodifiable(archived);
 
   bool get isUser => role == AssistantRole.user;
   bool get isFailure => failure != null;

@@ -78,6 +78,10 @@ class AssistantRun {
   );
   final ValueNotifier<bool> slow = ValueNotifier<bool>(false);
 
+  /// The answer so far, as the function writes it. Empty until the first
+  /// words arrive and between steps.
+  final ValueNotifier<String> partial = ValueNotifier<String>('');
+
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _sub;
   Timer? _slowTimer;
   bool _stopped = false;
@@ -106,6 +110,12 @@ class AssistantRun {
   void start() {
     _armSlowTimer();
     _sub = _ref?.snapshots().listen((snap) {
+      final text = snap.data()?['partial'];
+      if (text is String && text != partial.value) {
+        partial.value = text;
+        slow.value = false;
+        _armSlowTimer();
+      }
       final next = AssistantStep.fromMap(snap.data());
       if (next == null) return;
       final current = step.value;
@@ -145,5 +155,6 @@ class AssistantRun {
     _sub?.cancel();
     step.dispose();
     slow.dispose();
+    partial.dispose();
   }
 }

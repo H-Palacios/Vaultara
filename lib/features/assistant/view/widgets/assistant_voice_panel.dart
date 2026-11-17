@@ -34,6 +34,10 @@ class AssistantVoicePanel extends StatelessWidget {
   /// Stops and keeps the words in the text field to check or edit.
   final VoidCallback? onEdit;
 
+  /// Opens the list of languages the phone can listen in. Offered when the
+  /// phone cannot listen in the app's language. Hidden when null.
+  final VoidCallback? onChangeLanguage;
+
   const AssistantVoicePanel({
     super.key,
     required this.voice,
@@ -42,6 +46,7 @@ class AssistantVoicePanel extends StatelessWidget {
     required this.confirmLabel,
     this.confirmNeedsWords = false,
     this.onEdit,
+    this.onChangeLanguage,
   });
 
   @override
@@ -53,6 +58,44 @@ class AssistantVoicePanel extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        // The phone cannot listen in the app's language: say which language
+        // it is listening in, and let the user pick another.
+        if (onChangeLanguage != null)
+          ValueListenableBuilder<String?>(
+            valueListenable: voice.fallbackLanguage,
+            builder: (context, fallback, _) {
+              if (fallback == null) return const SizedBox.shrink();
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.translate_rounded,
+                      size: 16,
+                      color: scheme.onSurfaceVariant,
+                    ),
+                    const SizedBox(width: 6),
+                    Expanded(
+                      child: Text(
+                        loc.voiceLanguageFallback(fallback),
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: onChangeLanguage,
+                      style: TextButton.styleFrom(
+                        visualDensity: VisualDensity.compact,
+                      ),
+                      child: Text(loc.voiceLanguageChange),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
         ValueListenableBuilder<bool>(
           valueListenable: voice.recording,
           builder: (context, recording, _) => Row(
@@ -351,8 +394,9 @@ class _WavePainter extends CustomPainter {
     final barWidth = math.max(2.0, slot * 0.55);
     final middle = size.height / 2;
     final minHeight = barWidth;
-    final shader = LinearGradient(colors: [start, end])
-        .createShader(Offset.zero & size);
+    final shader = LinearGradient(
+      colors: [start, end],
+    ).createShader(Offset.zero & size);
 
     for (var i = 0; i < count; i++) {
       final age = i / (count - 1);
@@ -412,8 +456,9 @@ class _DoneButton extends StatelessWidget {
               height: size + 6 + value * 22,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: const Color(0xFF00AAFF)
-                    .withValues(alpha: 0.12 + value * 0.18),
+                color: const Color(
+                  0xFF00AAFF,
+                ).withValues(alpha: 0.12 + value * 0.18),
               ),
             ),
             child!,
@@ -423,33 +468,33 @@ class _DoneButton extends StatelessWidget {
           duration: const Duration(milliseconds: 150),
           opacity: onPressed == null ? 0.45 : 1,
           child: Tooltip(
-          message: tooltip,
-          child: Material(
-            color: Colors.transparent,
-            shape: const CircleBorder(),
-            clipBehavior: Clip.antiAlias,
-            child: Ink(
-              width: size,
-              height: size,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [Color(0xFF8B5CF6), Color(0xFF00AAFF)],
+            message: tooltip,
+            child: Material(
+              color: Colors.transparent,
+              shape: const CircleBorder(),
+              clipBehavior: Clip.antiAlias,
+              child: Ink(
+                width: size,
+                height: size,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [Color(0xFF8B5CF6), Color(0xFF00AAFF)],
+                  ),
                 ),
-              ),
-              child: InkWell(
-                customBorder: const CircleBorder(),
-                onTap: onPressed,
-                child: const Icon(
-                  Icons.check_rounded,
-                  color: Colors.white,
-                  size: 30,
+                child: InkWell(
+                  customBorder: const CircleBorder(),
+                  onTap: onPressed,
+                  child: const Icon(
+                    Icons.check_rounded,
+                    color: Colors.white,
+                    size: 30,
+                  ),
                 ),
               ),
             ),
-          ),
           ),
         ),
       ),

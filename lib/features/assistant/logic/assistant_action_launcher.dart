@@ -1,3 +1,4 @@
+import 'package:vaultara/core/data/repositories/attachment_repository.dart';
 import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/person.dart';
@@ -180,6 +181,10 @@ class AssistantActionLauncher {
       return true;
     };
   }
+
+  /// A photo the user took in the chat, attached to the next record added
+  /// from a card. Cleared once used.
+  static String? pendingPhotoPath;
 
   static Future<AssistantApplyResult> apply(
     BuildContext context,
@@ -601,7 +606,22 @@ class AssistantActionLauncher {
       return AssistantApplyResult.failed;
     }
     _refreshHome();
-    final added = RecordRepository.stored(record);
+    var added = RecordRepository.stored(record);
+    // The photo from the chat goes on the new record, within the plan's
+    // photo limit.
+    final photo = pendingPhotoPath;
+    pendingPhotoPath = null;
+    if (photo != null &&
+        photo.isNotEmpty &&
+        added.attachments.length <
+            AttachmentRepository.limitFor(isPremium: shell.isPremium)) {
+      added = await RecordRepository.applyAttachments(
+        added,
+        keep: added.attachments,
+        newPaths: <String>[photo],
+      );
+      if (!context.mounted) return AssistantApplyResult.applied;
+    }
     slot.undo = () async {
       final id = added.id;
       final current = id == null ? null : RecordRepository.findById(id);
