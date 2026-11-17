@@ -239,7 +239,8 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
                     ),
                   if (plan.livesIn != null &&
                       plan.applyIn != null &&
-                      plan.livesIn != plan.applyIn)
+                      plan.livesIn != plan.applyIn &&
+                      plan.livesIn != country)
                     Text(
                       '${loc.visaResidenceTitle}: '
                       '${Countries.flag(plan.livesIn!)} '

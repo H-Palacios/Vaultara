@@ -379,7 +379,14 @@ class AssistantOpenButton extends StatelessWidget {
 class AssistantArchivedProposal extends StatelessWidget {
   final StoredProposal proposal;
 
-  const AssistantArchivedProposal({super.key, required this.proposal});
+  /// Shown for a card that was never confirmed: asks the question again.
+  final VoidCallback? onAskAgain;
+
+  const AssistantArchivedProposal({
+    super.key,
+    required this.proposal,
+    this.onAskAgain,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -423,10 +430,21 @@ class AssistantArchivedProposal extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          Text(
-            status,
-            style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
-          ),
+          if (onAskAgain == null)
+            Text(
+              status,
+              style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+            )
+          else
+            TextButton.icon(
+              onPressed: onAskAgain,
+              style: TextButton.styleFrom(
+                visualDensity: VisualDensity.compact,
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+              ),
+              icon: const Icon(Icons.refresh_rounded, size: 16),
+              label: Text(loc.assistantRetry),
+            ),
         ],
       ),
     );

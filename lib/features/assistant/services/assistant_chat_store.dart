@@ -49,8 +49,7 @@ class AssistantChatStore {
     return _db.collection('users').doc(uid).collection('assistantChats');
   }
 
-  static Timestamp _expiry() =>
-      Timestamp.fromDate(DateTime.now().add(keepFor));
+  static Timestamp _expiry() => Timestamp.fromDate(DateTime.now().add(keepFor));
 
   static String _clip(String text, int max) {
     final trimmed = text.trim();
@@ -89,11 +88,7 @@ class AssistantChatStore {
       if (proposals.isNotEmpty)
         'proposals': proposals
             .take(5)
-            .map((p) => StoredProposal(
-                  type: p.type,
-                  summary: summaryFrom(p.summary),
-                  status: p.status,
-                ).toMap())
+            .map((p) => p.withSummary(summaryFrom(p.summary)).toMap())
             .toList(),
     };
   }
@@ -145,15 +140,12 @@ class AssistantChatStore {
           .collection('messages')
           .doc(messageId)
           .update(<String, dynamic>{
-        'proposals': proposals
-            .take(5)
-            .map((p) => StoredProposal(
-                  type: p.type,
-                  summary: summaryFrom(p.summary),
-                  status: p.status,
-                ).toMap())
-            .toList(),
-      }).catchError(_log),
+            'proposals': proposals
+                .take(5)
+                .map((p) => p.withSummary(summaryFrom(p.summary)).toMap())
+                .toList(),
+          })
+          .catchError(_log),
     );
   }
 
@@ -173,11 +165,15 @@ class AssistantChatStore {
     for (final doc in snap.docs) {
       final data = doc.data();
       final title = data['title'];
-      out.add(AssistantChatSummary(
-        id: doc.id,
-        title: title is String && title.trim().isNotEmpty ? title.trim() : '-',
-        updatedAt: _time(data['updatedAt']),
-      ));
+      out.add(
+        AssistantChatSummary(
+          id: doc.id,
+          title: title is String && title.trim().isNotEmpty
+              ? title.trim()
+              : '-',
+          updatedAt: _time(data['updatedAt']),
+        ),
+      );
     }
     return out;
   }
@@ -186,8 +182,10 @@ class AssistantChatStore {
   static Future<AssistantChatSummary?> latest() async {
     final chats = _chats();
     if (chats == null) return null;
-    final snap =
-        await chats.orderBy('updatedAt', descending: true).limit(1).get();
+    final snap = await chats
+        .orderBy('updatedAt', descending: true)
+        .limit(1)
+        .get();
     if (snap.docs.isEmpty) return null;
     final doc = snap.docs.first;
     final title = doc.data()['title'];
@@ -214,12 +212,14 @@ class AssistantChatStore {
       final text = data['text'];
       if (role != 'user' && role != 'assistant') continue;
       if (text is! String || text.trim().isEmpty) continue;
-      out.add(StoredChatMessage(
-        id: doc.id,
-        fromUser: role == 'user',
-        text: text,
-        proposals: StoredProposal.listFrom(data['proposals']),
-      ));
+      out.add(
+        StoredChatMessage(
+          id: doc.id,
+          fromUser: role == 'user',
+          text: text,
+          proposals: StoredProposal.listFrom(data['proposals']),
+        ),
+      );
     }
     return out;
   }

@@ -510,7 +510,38 @@ class AssistantAction {
     return out.isEmpty ? null : out;
   }
 
+  /// The card as the server sent it, kept so an unconfirmed card can be
+  /// shown again when the chat is opened later.
+  static final Expando<Map<String, dynamic>> _sent =
+      Expando<Map<String, dynamic>>('sent');
+
+  /// The map this card was read from, with plain string keys.
+  Map<String, dynamic>? get sent => _sent[this];
+
   static AssistantAction? fromMap(Object? raw) {
+    final action = _parse(raw);
+    if (action != null && raw is Map) {
+      final plain = _plain(raw);
+      if (plain is Map<String, dynamic>) _sent[action] = plain;
+    }
+    return action;
+  }
+
+  static Object? _plain(Object? value) {
+    if (value is Map) {
+      return <String, dynamic>{
+        for (final entry in value.entries)
+          if (entry.key is String) entry.key as String: _plain(entry.value),
+      };
+    }
+    if (value is List) return value.map(_plain).toList();
+    if (value == null || value is String || value is num || value is bool) {
+      return value;
+    }
+    return null;
+  }
+
+  static AssistantAction? _parse(Object? raw) {
     if (raw is! Map) return null;
     switch (raw['type']) {
       case 'add':

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/platform/privacy_screen.dart';
@@ -1278,7 +1279,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   Future<void> _onExpiryTapped() async {
     if (isAnyTutorialMode) return;
 
-    final selected = await showDatePicker(
+    final selected = await showAppDatePicker(
       context: context,
       initialDate: ExpiryDates.pickerInitial(expiryDate),
       firstDate: ExpiryDates.first(),
@@ -1810,36 +1811,39 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Text(
-                        isEditMode ? loc.editRecordTitle : loc.addRecord,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                      if (widget.editedRecord != null)
-                        Center(
-                          child: RecordHistoryLines(
-                            record: widget.editedRecord!,
-                            centred: true,
-                          ),
-                        ),
-                    ],
-                  ),
-                ),
-                Divider(height: 1, color: scheme.outlineVariant),
                 Flexible(
                   child: SingleChildScrollView(
                     padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
+                        // The title scrolls with the form, so with the
+                        // keyboard open only the buttons stay fixed.
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(4, 4, 4, 12),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Text(
+                                isEditMode
+                                    ? loc.editRecordTitle
+                                    : loc.addRecord,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                              if (widget.editedRecord != null)
+                                Center(
+                                  child: RecordHistoryLines(
+                                    record: widget.editedRecord!,
+                                    centred: true,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
                         IgnorePointer(
                           ignoring: isAnyTutorialMode,
                           child: Column(

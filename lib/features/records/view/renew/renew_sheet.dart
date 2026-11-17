@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -24,7 +25,7 @@ Future<bool> showRenewSheet(BuildContext context, TrackedItem record) async {
     context: context,
     showDragHandle: true,
     builder: (_) => _RenewSheet(record: record),
-    );
+  );
   if (renewed == true && context.mounted) {
     ActionFeedbackSnackbar.showInfo(
       context,
@@ -90,14 +91,11 @@ class _RenewSheetState extends State<_RenewSheet> {
   void initState() {
     super.initState();
     _isPremium = ShellState.current?.isPremium ?? false;
-    _premiumSub = PlanRepository.premiumStream().listen(
-      (value) {
-        if (mounted && value != _isPremium) {
-          setState(() => _isPremium = value);
-        }
-      },
-      onError: (_) {},
-    );
+    _premiumSub = PlanRepository.premiumStream().listen((value) {
+      if (mounted && value != _isPremium) {
+        setState(() => _isPremium = value);
+      }
+    }, onError: (_) {});
     _plan = RenewalSuggestion.suggest(widget.record);
     _newExpiry = _plan?.date;
     _previousCost = RenewalCostHistory.previous(widget.record);
@@ -139,10 +137,11 @@ class _RenewSheetState extends State<_RenewSheet> {
     final today = DateUtils.dateOnly(DateTime.now());
     final earliest = DateTime(base.year, base.month, base.day + 1);
     final current = _newExpiry;
-    final initial =
-        current == null || current.isBefore(earliest) ? earliest : current;
+    final initial = current == null || current.isBefore(earliest)
+        ? earliest
+        : current;
     final horizon = DateTime(today.year + 30);
-    final picked = await showDatePicker(
+    final picked = await showAppDatePicker(
       context: context,
       initialDate: initial,
       firstDate: earliest,
@@ -162,12 +161,12 @@ class _RenewSheetState extends State<_RenewSheet> {
     final updated = !withCost
         ? widget.record.copyWith(expiryDate: expiry)
         : cost == null
-            ? widget.record.copyWith(expiryDate: expiry, clearCost: true)
-            : widget.record.copyWith(
-                expiryDate: expiry,
-                renewalCost: cost,
-                costCurrency: _currencyOrDefault(),
-              );
+        ? widget.record.copyWith(expiryDate: expiry, clearCost: true)
+        : widget.record.copyWith(
+            expiryDate: expiry,
+            renewalCost: cost,
+            costCurrency: _currencyOrDefault(),
+          );
     try {
       await RecordRepository.updateRecord(widget.record, updated);
     } catch (_) {
@@ -212,8 +211,10 @@ class _RenewSheetState extends State<_RenewSheet> {
               Text(
                 loc.renewSheetTitle,
                 textAlign: TextAlign.center,
-                style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w800,
+                ),
               ),
               const SizedBox(height: 4),
               Text(
@@ -252,12 +253,12 @@ class _RenewSheetState extends State<_RenewSheet> {
                     onPressed: _saving
                         ? null
                         : () => showRenewalGuide(
-                              context,
-                              groupKey: widget.record.subcategoryName,
-                              recordName: widget.record.name,
-                              record: widget.record,
-                              showRenewButton: false,
-                            ),
+                            context,
+                            groupKey: widget.record.subcategoryName,
+                            recordName: widget.record.name,
+                            record: widget.record,
+                            showRenewButton: false,
+                          ),
                     icon: const Icon(Icons.menu_book_rounded, size: 18),
                     label: Text(loc.guideTitle),
                   ),
@@ -343,8 +344,10 @@ class _RenewSheetState extends State<_RenewSheet> {
               ],
               Text(
                 newExpiry == null ? loc.renewPickDateHint : loc.renewChangeHint,
-                style:
-                    TextStyle(fontSize: 12.5, color: scheme.onSurfaceVariant),
+                style: TextStyle(
+                  fontSize: 12.5,
+                  color: scheme.onSurfaceVariant,
+                ),
               ),
               if (isPremium) ...[
                 const SizedBox(height: 18),
@@ -437,8 +440,9 @@ class _RenewSheetState extends State<_RenewSheet> {
               Row(
                 children: [
                   TextButton(
-                    onPressed:
-                        _saving ? null : () => Navigator.pop(context, false),
+                    onPressed: _saving
+                        ? null
+                        : () => Navigator.pop(context, false),
                     child: Text(loc.cancel),
                   ),
                   const Spacer(),

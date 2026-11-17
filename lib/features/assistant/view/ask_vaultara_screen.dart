@@ -9,6 +9,7 @@ import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/data/assistant_message.dart';
+import 'package:vaultara/features/assistant/logic/assistant_card_restore.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_preview.dart';
 import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
@@ -366,10 +367,20 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
         status: status,
       );
     }
-    return AssistantActionPreview.build(
+    final stored = AssistantActionPreview.build(
       context,
       action,
     ).stored(loc, action.type, status);
+    // The card itself is kept while it waits, so it comes back when the
+    // chat is opened again.
+    return StoredProposal(
+      type: stored.type,
+      summary: stored.summary,
+      status: stored.status,
+      action: action.sent,
+      at: DateTime.now().millisecondsSinceEpoch,
+      stamp: AssistantCardRestore.stampFor(action.recordId),
+    );
   }
 
   Future<AssistantMessage?> _send(String text, {String? prompt}) async {
@@ -1218,11 +1229,17 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       // Filled even if the screen was closed meanwhile, so the chat is
       // there when it opens again.
       for (final item in stored) {
+        // Cards still waiting for Confirm come back as cards when they are
+        // recent and their record has not changed; others stay as notes.
+        final cards = item.fromUser
+            ? null
+            : AssistantCardRestore.restore(item.proposals);
         _messages.add(
           AssistantMessage(
             role: item.fromUser ? AssistantRole.user : AssistantRole.assistant,
             text: item.text,
-            archived: item.proposals,
+            actions: cards ?? const <AssistantAction>[],
+            archived: cards == null ? item.proposals : const <StoredProposal>[],
             proposals: item.proposals,
             id: item.id,
           ),
@@ -1381,6 +1398,22 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     );
   }
 
+  /// For a card that was never confirmed: asks the question that led to it
+  /// again, so a fresh card comes back. Null when there is no question.
+  VoidCallback? _askAgainFor(AssistantMessage message) {
+    final at = _messages.indexOf(message);
+    for (var i = at - 1; i >= 0; i--) {
+      final earlier = _messages[i];
+      if (earlier.role != AssistantRole.user) continue;
+      final question = earlier.text.trim();
+      if (question.isEmpty) return null;
+      return () {
+        if (!_busy && !_loadingChat) _send(question);
+      };
+    }
+    return null;
+  }
+
   Widget _buildMessage(
     BuildContext context,
     AssistantMessage message, {
@@ -1478,7 +1511,14 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
         );
         continue;
       }
-      extras.add(AssistantArchivedProposal(proposal: proposal));
+      extras.add(
+        AssistantArchivedProposal(
+          proposal: proposal,
+          onAskAgain: proposal.status == 'pending'
+              ? _askAgainFor(message)
+              : null,
+        ),
+      );
     }
 
     return Column(
@@ -1585,14 +1625,32 @@ class _LiveThinking extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(text),
-                    const SizedBox(height: 6),
-                    SizedBox(
-                      width: 14,
-                      height: 14,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: scheme.primary,
-                      ),
+                    const SizedBox(height: 8),
+                    // What it is doing now (for example searching official
+                    // sites), so a pause after the first words does not
+                    // look like it stopped.
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        SizedBox(
+                          width: 14,
+                          height: 14,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: scheme.primary,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Flexible(
+                          child: Text(
+                            label,
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: scheme.onSurfaceVariant,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

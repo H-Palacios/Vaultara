@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart';
@@ -17,20 +19,65 @@ class StoredProposal {
   final String summary;
   final String status;
 
+  /// The card itself while it waits for Confirm, so it can be shown again
+  /// later. Dropped once it is confirmed or cancelled.
+  final Map<String, dynamic>? action;
+
+  /// When the card was made, in milliseconds since 1970.
+  final int? at;
+
+  /// A fingerprint of the record the card changes, to tell whether the
+  /// record was edited since.
+  final String? stamp;
+
+  /// Cards bigger than this are not kept (a long plan with many sources).
+  static const int maxActionChars = 20000;
+
   const StoredProposal({
     required this.type,
     required this.summary,
     required this.status,
+    this.action,
+    this.at,
+    this.stamp,
   });
 
-  StoredProposal withStatus(String next) =>
-      StoredProposal(type: type, summary: summary, status: next);
+  StoredProposal withStatus(String next) => next == 'pending'
+      ? StoredProposal(
+          type: type,
+          summary: summary,
+          status: next,
+          action: action,
+          at: at,
+          stamp: stamp,
+        )
+      : StoredProposal(type: type, summary: summary, status: next);
 
-  Map<String, String> toMap() => <String, String>{
-    'type': type,
-    'summary': summary,
-    'status': status,
-  };
+  /// The same proposal with a shorter summary, for saving.
+  StoredProposal withSummary(String next) => StoredProposal(
+    type: type,
+    summary: next,
+    status: status,
+    action: action,
+    at: at,
+    stamp: stamp,
+  );
+
+  Map<String, dynamic> toMap() {
+    final card = action;
+    final keep =
+        status == 'pending' &&
+        card != null &&
+        jsonEncode(card).length <= maxActionChars;
+    return <String, dynamic>{
+      'type': type,
+      'summary': summary,
+      'status': status,
+      if (keep) 'action': card,
+      if (keep && at != null) 'at': at,
+      if (keep && stamp != null) 'stamp': stamp,
+    };
+  }
 
   static StoredProposal? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -41,7 +88,17 @@ class StoredProposal {
       return null;
     }
     if (!statuses.contains(status)) return null;
-    return StoredProposal(type: type, summary: summary, status: status);
+    final action = raw['action'];
+    final at = raw['at'];
+    final stamp = raw['stamp'];
+    return StoredProposal(
+      type: type,
+      summary: summary,
+      status: status,
+      action: action is Map ? Map<String, dynamic>.from(action) : null,
+      at: at is int ? at : null,
+      stamp: stamp is String ? stamp : null,
+    );
   }
 
   static List<StoredProposal> listFrom(Object? raw) {

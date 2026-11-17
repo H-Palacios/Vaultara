@@ -271,21 +271,28 @@ class AssistantActionPreview {
         action.planApplyIn != null &&
         action.planLivesIn != null &&
         action.planApplyIn != action.planLivesIn;
+    // Each country once: where the holder lives and where they apply are
+    // shown only when they differ from the record's country.
+    final lines = RenewalCountryLines.of(
+      country: action.planCountry,
+      livesIn: action.planLivesIn,
+      applyIn: action.planApplyIn,
+    );
     final rows = <AssistantChangeRow>[
-      if (action.planCountry != null)
+      if (lines.country != null)
         AssistantChangeRow(
           label: loc.coachCountryLabel,
-          after: f.country(action.planCountry),
+          after: f.country(lines.country),
         ),
-      if (action.planLivesIn != null)
+      if (lines.livesIn != null)
         AssistantChangeRow(
           label: loc.visaResidenceTitle,
-          after: f.country(action.planLivesIn),
+          after: f.country(lines.livesIn),
         ),
-      if (action.planApplyIn != null)
+      if (lines.applyIn != null)
         AssistantChangeRow(
           label: loc.coachApplyInLabel,
-          after: f.country(action.planApplyIn),
+          after: f.country(lines.applyIn),
         ),
       if (action.fee != null)
         AssistantChangeRow(label: loc.coachFeeLabel, after: action.fee!),

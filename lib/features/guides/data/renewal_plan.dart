@@ -355,3 +355,28 @@ class RenewalCoachPlan {
     );
   }
 }
+
+/// Which country lines a renewal plan shows, so the same country is never
+/// listed twice: the record's country always (or where they apply when it
+/// is not known), where they apply only when it is another country, and
+/// where they live only when it is neither of those.
+class RenewalCountryLines {
+  final String? country;
+  final String? livesIn;
+  final String? applyIn;
+
+  const RenewalCountryLines._(this.country, this.livesIn, this.applyIn);
+
+  factory RenewalCountryLines.of({
+    String? country,
+    String? livesIn,
+    String? applyIn,
+  }) {
+    final main = country ?? applyIn ?? livesIn;
+    final apply = applyIn != null && applyIn != main ? applyIn : null;
+    final lives = livesIn != null && livesIn != main && livesIn != applyIn
+        ? livesIn
+        : null;
+    return RenewalCountryLines._(main, lives, apply);
+  }
+}
