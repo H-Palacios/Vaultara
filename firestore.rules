@@ -493,13 +493,18 @@ service cloud.firestore {
     function assistantProposalOk(list, i) {
       return list.size() <= i
         || (list[i] is map
-            && list[i].keys().hasOnly(['type', 'summary', 'status'])
+            && list[i].keys().hasOnly(['type', 'summary', 'status', 'action', 'at', 'stamp'])
             && list[i].keys().hasAll(['type', 'summary', 'status'])
             && list[i].get('type', null) is string
             && list[i].get('type', '').size() <= 24
             && list[i].get('summary', null) is string
             && list[i].get('summary', '').size() <= 200
-            && list[i].get('status', '') in ['pending', 'applied', 'opened', 'cancelled']);
+            && list[i].get('status', '') in ['pending', 'applied', 'opened', 'cancelled']
+            && (!('action' in list[i]) || (list[i].action is map
+                && list[i].get('status', '') == 'pending'
+                && list[i].action.size() <= 60))
+            && (!('at' in list[i]) || list[i].at is int)
+            && (!('stamp' in list[i]) || (list[i].stamp is string && list[i].stamp.size() <= 40)));
     }
 
     function assistantProposalsOk(d) {
