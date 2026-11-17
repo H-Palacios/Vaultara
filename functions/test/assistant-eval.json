@@ -1233,6 +1233,107 @@
     "list_deleted"
    ],
    "smart": false
+  },
+  {
+   "id": "coach-01",
+   "lang": "en",
+   "message": "How do I renew my passport? I live in South Africa.",
+   "tools": [
+    "list_records",
+    "get_renewal_plan"
+   ],
+   "smart": true
+  },
+  {
+   "id": "coach-02",
+   "lang": "en",
+   "message": "how to renew my driving licence",
+   "tools": [
+    "list_records",
+    "get_renewal_plan"
+   ],
+   "smart": true
+  },
+  {
+   "id": "coach-03",
+   "lang": "en",
+   "message": "What is the next step for my passport renewal?",
+   "tools": [
+    "list_records",
+    "get_renewal_plan"
+   ],
+   "smart": true
+  },
+  {
+   "id": "coach-04",
+   "lang": "en",
+   "message": "I booked my appointment for 3 December at 10 at Home Affairs",
+   "tools": [
+    "propose_appointment",
+    "list_records",
+    "get_renewal_plan"
+   ],
+   "smart": false
+  },
+  {
+   "id": "coach-05",
+   "lang": "en",
+   "message": "I did step 2 for my passport",
+   "tools": [
+    "propose_plan_step",
+    "list_records",
+    "get_renewal_plan"
+   ],
+   "smart": false
+  },
+  {
+   "id": "coach-06",
+   "lang": "en",
+   "message": "How can I renew my work permit and what will it cost?",
+   "tools": [
+    "list_records",
+    "get_renewal_plan",
+    "web_search"
+   ],
+   "smart": true
+  },
+  {
+   "id": "coach-07",
+   "lang": "de",
+   "message": "Wie erneuere ich meinen Reisepass?",
+   "tools": [
+    "list_records",
+    "get_renewal_plan"
+   ],
+   "smart": true
+  },
+  {
+   "id": "coach-08",
+   "lang": "en",
+   "message": "I got the new passport, it expires in 2036",
+   "tools": [
+    "propose_renew_record",
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "talk-01",
+   "lang": "en",
+   "message": "[Talk start] What is coming up for me?",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "talk-02",
+   "lang": "en",
+   "message": "um add my gym membership it runs out end of june",
+   "tools": [
+    "propose_record"
+   ],
+   "smart": false
   }
  ]
 }

@@ -54,10 +54,10 @@ async function checkLive(c, client) {
       { type: "text", text: assistant.STATIC_PROMPT_V10, cache_control: { type: "ephemeral" } },
       { type: "text", text: `Today is ${today}. App language: ${c.lang}. This is a test account.` },
     ],
-    tools: assistant.TOOLS_V11,
+    tools: [...(assistant.TOOLS_V12 || assistant.TOOLS_V11), require("../assistant-coach").WEB_SEARCH_TOOL],
     messages: [{ role: "user", content: c.message }],
   });
-  const first = response.content.find((b) => b.type === "tool_use");
+  const first = response.content.find((b) => b.type === "tool_use" || b.type === "server_tool_use");
   const got = first ? first.name : "(no tool)";
   return { ok: c.tools.includes(got), got, model };
 }
