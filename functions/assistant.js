@@ -712,6 +712,10 @@ const TOOLS_V12 = [
 const NAMES_V12 = new Set(TOOLS_V12.map((t) => t.name));
 let webSearchOff = false;
 
+// Sent when a turn ended with no words and no card.
+const EMPTY_RETRY =
+  "[The app] Your last turn had no answer for the user. Answer their last message now in plain words, using what you found. If something stopped you, say what, and what they can do instead.";
+
 function cleanWord(value) {
   return typo.fold(value).replace(/^(my|mine)\s+/, "").slice(0, LEARNED_WORD_MAX).trim();
 }
@@ -2218,6 +2222,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
         ? COACH_MODULE.COACH_PROMPT
         : COACH_MODULE.COACH_PROMPT.replace(/web_search/g, "your own knowledge (web search is not available right now, so say the steps are general and point to the official site)")
     );
+    dynamic.push(COACH_MODULE.HISTORY_PROMPT);
     if (ctx.talk) dynamic.push(COACH_MODULE.TALK_PROMPT);
   }
   if (intent === "propose") {
@@ -2600,6 +2605,8 @@ exports.askVaultara = onCall(
     const usedModels = new Set();
     const sources = [];
     let searches = 0;
+    let lastStop = null;
+    let retried = false;
 
     try {
       for (let i = 0; i < MAX_ITERATIONS; i++) {
@@ -2625,6 +2632,7 @@ exports.askVaultara = onCall(
         inputTokens += Number(response.usage?.input_tokens) || 0;
         outputTokens += Number(response.usage?.output_tokens) || 0;
         cachedTokens += Number(response.usage?.cache_read_input_tokens) || 0;
+        lastStop = response.stop_reason || null;
 
         const content = Array.isArray(response.content) ? response.content : [];
         COACH_MODULE.mergeSources(sources, COACH_MODULE.citationsOf(content));
@@ -2695,6 +2703,35 @@ exports.askVaultara = onCall(
     }
 
     if (!reply) reply = intent === "propose" ? "" : lastText;
+
+    // Nothing to say and nothing to confirm: ask once more for a plain
+    // answer, so the user never gets an empty reply.
+    if (!reply && actions.length === 0 && intent !== "propose") {
+      logger.warn("askVaultara empty answer, asking again", { iterations, stop: lastStop, tools: toolCounts });
+      retried = true;
+      try {
+        const again = await callModel({
+          model: models.smart,
+          max_tokens: MAX_TOKENS,
+          system,
+          tools,
+          tool_choice: { type: "none" },
+          messages: withCacheBreakpoint([
+            ...conversation,
+            { role: "user", content: [{ type: "text", text: EMPTY_RETRY }] },
+          ]),
+        }, progress);
+        inputTokens += Number(again.usage?.input_tokens) || 0;
+        outputTokens += Number(again.usage?.output_tokens) || 0;
+        const content = Array.isArray(again.content) ? again.content : [];
+        COACH_MODULE.mergeSources(sources, COACH_MODULE.citationsOf(content));
+        const blocks = content.filter((b) => b.type === "text" && typeof b.text === "string");
+        const cited = blocks.some((b) => Array.isArray(b.citations) && b.citations.length > 0);
+        reply = blocks.map((b) => b.text).join(cited ? "" : "\n").trim();
+      } catch (err) {
+        logger.warn("askVaultara second try failed", { status: Number(err?.status) || null });
+      }
+    }
     await progress.finish();
 
     logger.info("askVaultara done", {
@@ -2708,6 +2745,8 @@ exports.askVaultara = onCall(
       truncated,
       searches,
       talk: ctx.talk,
+      stop: lastStop,
+      retried,
       inputTokens,
       outputTokens,
       cachedTokens,
