@@ -49,6 +49,44 @@ void main() {
       expect(again.sources.single.host, 'example.gov');
     });
 
+    test('keeps where to apply from, the checked day and the rating', () {
+      final plan = RenewalCoachPlan.fromMap('r1', <String, dynamic>{
+        'expiry': '2027-03-01',
+        'country': 'FR',
+        'applyIn': 'ZA',
+        'checked': '2026-11-17',
+        'rating': -1,
+        'steps': <Object>[
+          <String, dynamic>{'text': 'Apply on France-Visas'},
+        ],
+        'sources': <Object>[
+          <String, dynamic>{
+            'title': 'France-Visas',
+            'url': 'https://france-visas.gouv.fr',
+            'official': true,
+          },
+        ],
+      })!;
+      expect(plan.applyIn, 'ZA');
+      expect(plan.checked, '2026-11-17');
+      expect(plan.rating, -1);
+      expect(plan.sources.single.official, isTrue);
+      final again = RenewalCoachPlan.fromMap(
+        'r1',
+        plan.copyWith(rating: 1).toMap(),
+      )!;
+      expect(again.rating, 1);
+      expect(again.applyIn, 'ZA');
+      expect(
+        RenewalCoachPlan.fromMap('r1', <String, dynamic>{
+          ...plan.toMap(),
+          'applyIn': 'south africa',
+          'rating': 7,
+        })!.applyIn,
+        isNull,
+      );
+    });
+
     test('rejects plans without steps or a valid expiry', () {
       expect(
         RenewalCoachPlan.fromMap('r1', <String, dynamic>{

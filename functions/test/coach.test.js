@@ -1,7 +1,7 @@
 // Run with: node functions/test/coach.test.js (no packages needed)
 const assert = require("assert");
 const coach = require("../assistant-coach");
-const { cleanUrl, cleanSteps, cleanSources, cleanBring, citationsOf, isWebSearchOff } = coach._test;
+const { cleanUrl, cleanSteps, cleanSources, cleanBring, citationsOf, isWebSearchOff, isOfficial } = coach._test;
 
 // Only https links are kept.
 assert.strictEqual(cleanUrl("https://www.dha.gov.za/index.php/civic-services/passports"), "https://www.dha.gov.za/index.php/civic-services/passports");
@@ -33,7 +33,15 @@ assert.deepStrictEqual(cleanSources([
   { url: "https://a.gov/x", title: "A again" },
   { url: "https://b.gov/y" },
   { url: "http://c.gov" },
-]), [{ title: "A", url: "https://a.gov/x" }, { title: "b.gov", url: "https://b.gov/y" }]);
+  ]), [{ title: "A", url: "https://a.gov/x", official: true }, { title: "b.gov", url: "https://b.gov/y", official: true }]);
+
+// Official sites.
+for (const url of ["https://france-visas.gouv.fr/", "https://www.dha.gov.za/", "https://www.gov.uk/x", "https://za.tlscontact.com/", "https://visa.vfsglobal.com/zaf", "https://za.ambafrance.org/"]) {
+  assert.ok(isOfficial(url), url);
+}
+for (const url of ["https://www.reddit.com/r/schengen", "https://visa-blog.example.com/"]) {
+  assert.ok(!isOfficial(url), url);
+}
 
 assert.deepStrictEqual(cleanBring(["Old passport", "Old passport", "", "2 photos"]), ["Old passport", "2 photos"]);
 
@@ -45,8 +53,8 @@ const content = [
   { type: "text", text: "plain" },
 ];
 assert.deepStrictEqual(citationsOf(content), [
-  { title: "Fees", url: "https://a.gov/fees" },
-  { title: "b.gov", url: "https://b.gov/t" },
+  { title: "Fees", url: "https://a.gov/fees", official: true },
+  { title: "b.gov", url: "https://b.gov/t", official: true },
 ]);
 
 // Web search turned off for the organisation.
@@ -83,8 +91,37 @@ const ctx = {
   // A plan needs sources from the search.
   let r = await tools.run(ctx, "propose_renewal_plan", { record_id: "r1", steps: ["a", "b"], sources: [] }, actions);
   assert.ok(r.error);
+  // The country the holder applies from is required, and must be where
+  // they live unless the user said otherwise.
+  const planInput = {
+    record_id: "r1",
+    country: "pt",
+    steps: ["Book at the consulate", "Go with photos"],
+    sources: [{ title: "Consulate", url: "https://example.gov" }],
+  };
+  r = await tools.run(ctx, "propose_renewal_plan", planInput, actions);
+  assert.ok(/apply_in/.test(r.error));
+  ctx.me = { residence: "ZA" };
+  r = await tools.run(ctx, "propose_renewal_plan", { ...planInput, apply_in: "US" }, actions);
+  assert.ok(/lives in ZA/.test(r.error));
+  // Another country is fine when the official page sends people there.
+  ctx.me = { residence: "BS" };
+  r = await tools.run(ctx, "propose_renewal_plan", { ...planInput, apply_in: "US", apply_in_reason: "No visa office in the Bahamas; apply at VFS Miami" }, actions);
+  assert.strictEqual(r.status, "draft_ready");
+  assert.strictEqual(actions[0].livesIn, "BS");
+  assert.strictEqual(actions[0].applyIn, "US");
+  assert.ok(/Miami/.test(actions[0].applyReason));
+  actions.length = 0;
+  ctx.me = { residence: "ZA" };
+  r = await tools.run(ctx, "propose_renewal_plan", { ...planInput, apply_in: "ZA", sources: [{ url: "https://www.reddit.com/r/x" }] }, actions);
+  assert.ok(/official/.test(r.error));
+  assert.strictEqual(actions.length, 0);
+  // Where the holder lives is told to the model.
+  assert.strictEqual((await tools.run(ctx, "get_renewal_plan", { record_id: "r1" }, actions)).holder_lives_in, "ZA");
+
   r = await tools.run(ctx, "propose_renewal_plan", {
     record_id: "r1",
+    apply_in: "za",
     country: "pt",
     steps: [{ text: "Book at the consulate", url: "https://example.gov/book" }, "Go with photos"],
     booking_url: "https://example.gov/book",
@@ -95,6 +132,7 @@ const ctx = {
   assert.strictEqual(r.status, "draft_ready");
   assert.strictEqual(actions[0].type, "renewal_plan");
   assert.strictEqual(actions[0].country, "PT");
+  assert.strictEqual(actions[0].applyIn, "ZA");
   assert.strictEqual(actions[0].expiry, "2027-03-01");
   assert.strictEqual(actions[0].steps.length, 2);
 
