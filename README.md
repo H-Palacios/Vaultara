@@ -148,6 +148,13 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - Understands other spellings and languages when looking for records: "license", "Reisepass" and "permis de conduire" all find the right group.
 - Adds flights to a trip from plain words, connections included ("Johannesburg to Tokyo through Dubai on 10 March"), and the date you reach each country on trips with several countries.
 - New trip and record cards show their details in two columns, and the countries label matches the number of countries.
+- Answers appear word by word as they are written, with what it is doing shown underneath.
+- Uses a quicker model for simple questions and a more capable one for planning, trips, visas, costs and longer tasks. Long tasks get more room, and a Continue button appears if an answer still stops early.
+- Learns your own words: correct it once ("green book is my passport") and it remembers for your account. Forget learned words is in the Chat history menu.
+- Photo in chat: the camera button reads a document on the phone and offers a card to add it, with the photo attached.
+- Voice typing says so when the phone cannot listen in the app's language, and lets you pick one of the phone's languages.
+- Typo matching works in every script: keyboard slips on AZERTY, QWERTZ, Russian, Greek, Arabic and Hebrew keyboards, Arabic and Hebrew letter forms, Greek accents, Korean letter by letter, hiragana and katakana, Chinese, Japanese and Thai character by character, and Latin spellings of Russian and Greek words ("pasport").
+- App search offers "Did you mean …?" when nothing matches.
 
 ### Experience
 - **Tutorials.** Seventeen tutorials in four groups (the basics, staying on top, travel and family, life events and emergencies) plus paid features, on a Tutorials screen with a progress ring, the length of each tutorial and a badge on paid ones.
