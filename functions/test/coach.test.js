@@ -171,6 +171,59 @@ const ctx = {
   assert.deepStrictEqual(await tools.step(ctx, "get_renewal_plan", { record_id: "r2" }), { step: "renewal", name: null });
   assert.strictEqual(await tools.step(ctx, "list_records", {}), undefined);
 
+  // Cards, insurance and memberships: the company's own site counts.
+  const { isProviderSite, recordKind } = coach._test;
+  assert.ok(isProviderSite("https://www.capitecbank.co.za/cards", "Capitec"));
+  assert.ok(isProviderSite("https://www.fnb.co.za/", "FNB"));
+  assert.ok(!isProviderSite("https://www.reddit.com/r/fnb", "AB"));
+  assert.strictEqual(recordKind({ group: "debit_and_credit_cards" }).provider, "bank");
+  assert.strictEqual(recordKind({ group: "vehicle_registrations" }).kind, "vehicle");
+  assert.strictEqual(recordKind({ group: "passports" }).kind, "document");
+  assert.strictEqual(recordKind({ group: "my own group" }).kind, "other");
+
+  const cards = { id: "c1", name: "Cheque card", day: parseDay("2027-02-01"), group: "debit_and_credit_cards", locked: false };
+  const car = { id: "v1", name: "VW Polo Licence Disc", day: parseDay("2027-01-10"), group: "vehicle_registrations", locked: false };
+  const ctx2 = {
+    today,
+    me: { residence: "BS" },
+    findRecord: async (id) => (id === "c1" ? cards : id === "v1" ? car : null),
+    userRef: ctx.userRef,
+  };
+  planData = null;
+  const cardActions = [];
+  const plan2 = await tools.run(ctx2, "get_renewal_plan", { record_id: "c1" }, cardActions);
+  assert.ok(/bank is not saved/.test(plan2.ask));
+  r = await tools.run(ctx2, "propose_renewal_plan", {
+    record_id: "c1", apply_in: "BS", steps: ["Order a new card", "Activate it"],
+    sources: [{ url: "https://www.capitecbank.co.za/cards" }],
+  }, cardActions);
+  assert.ok(/Ask which bank/.test(r.error));
+  r = await tools.run(ctx2, "propose_renewal_plan", {
+    record_id: "c1", apply_in: "BS", provider: "Capitec", steps: ["Order a new card", "Activate it"],
+    sources: [{ url: "https://www.capitecbank.co.za/cards" }],
+  }, cardActions);
+  assert.strictEqual(r.status, "draft_ready");
+  assert.strictEqual(cardActions[0].sources[0].official, true);
+
+  // Saving the bank on the record.
+  r = await tools.run(ctx2, "propose_record_details", { record_id: "c1", provider: "Capitec" }, cardActions);
+  assert.strictEqual(r.status, "draft_ready");
+  assert.strictEqual(cardActions[1].type, "record_details");
+  assert.strictEqual(cardActions[1].provider, "Capitec");
+  r = await tools.run(ctx2, "propose_record_details", { record_id: "v1", issued_in: "Narnia" }, cardActions);
+  assert.ok(r.error);
+
+  // A vehicle is planned where it is registered, not where the owner lives.
+  car.issuedIn = "ZA";
+  const plan3 = await tools.run(ctx2, "get_renewal_plan", { record_id: "v1" }, cardActions);
+  assert.strictEqual(plan3.holder_lives_in, "ZA");
+  assert.strictEqual(plan3.record_country, "ZA");
+  r = await tools.run(ctx2, "propose_renewal_plan", {
+    record_id: "v1", apply_in: "ZA", steps: ["Renew online", "Collect the disc"],
+    sources: [{ url: "https://online.natis.gov.za/" }],
+  }, cardActions);
+  assert.strictEqual(r.status, "draft_ready");
+
   // The web search tool definition.
   assert.strictEqual(coach.WEB_SEARCH_TOOL.type, "web_search_20250305");
   assert.ok(coach.WEB_SEARCH_TOOL.max_uses <= 5);
