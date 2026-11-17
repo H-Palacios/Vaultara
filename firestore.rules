@@ -658,6 +658,13 @@ service cloud.firestore {
         allow create, delete: if false;
       }
 
+      // Words Ask Vaultara learned for this user's records. Written and
+      // cleared only by the Cloud Functions.
+      match /assistantMemory/{docId} {
+        allow read: if isOwner(uid);
+        allow write: if false;
+      }
+
       // Thumbs up or down on an answer, so weak answers can be found.
       match /assistantFeedback/{messageId} {
         allow read: if isOwner(uid);

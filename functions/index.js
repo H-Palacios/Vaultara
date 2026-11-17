@@ -71,6 +71,7 @@ exports.summaryUnsubscribe = require("./summary").summaryUnsubscribe;
 exports.householdEscalationJob = require("./push").householdEscalationJob;
 exports.onSharedRecordChanged = require("./household-changes").onSharedRecordChanged;
 exports.askVaultara = require("./assistant").askVaultara;
+exports.forgetAssistantWords = require("./assistant").forgetAssistantWords;
 exports.suggestCategoryIcon = require("./icon-suggest").suggestCategoryIcon;
 exports.readDocument = require("./document-read").readDocument;
 exports.staffReminderJob = require("./staff").staffReminderJob;

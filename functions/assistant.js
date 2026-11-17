@@ -21,10 +21,12 @@ const DEFAULT_GLOBAL_DAILY_CAP = 3000;
 const MAX_MESSAGES = 20;
 const MAX_TEXT = 2000;
 const MAX_TOTAL_TEXT = 16000;
-const MAX_TOKENS = 900;
-const MAX_ITERATIONS = 6;
+const MAX_TOKENS = 1600;
+const MAX_ITERATIONS = 8;
 const MAX_RESULTS = 50;
-const MAX_ACTIONS = 5;
+const MAX_ACTIONS = 8;
+const MAX_LEARNED_WORDS = 100;
+const LEARNED_WORD_MAX = 40;
 const NAME_MAX = 30;
 const NOTES_MAX = 1000;
 const PERSON_NAME_MAX = 40;
@@ -46,7 +48,14 @@ const PEOPLE_LIMITS = { family: 5, business: 25 };
 const PAST_DAYS_ALLOWED = 3650;
 const FUTURE_DAYS_ALLOWED = 365 * 30;
 const LOCKED_LABEL = "Locked record";
-const DEFAULT_MODEL = "claude-haiku-4-5-20251001";
+// Two models: a fast one for quick questions, settings and screens, and a
+// smarter one for trips, visas, plans and anything with several steps.
+// ASSISTANT_FAST_MODEL and ASSISTANT_SMART_MODEL in functions/.env change
+// them. When a model is not available on the account, the older Haiku is
+// used instead, so the assistant keeps working.
+const FAST_MODEL = "claude-haiku-5-5";
+const SMART_MODEL = "claude-sonnet-5-5";
+const FALLBACK_MODEL = "claude-haiku-4-5-20251001";
 const MAX_REPLIES = 4;
 const REPLY_MAX = 40;
 const RUN_ID_PATTERN = /^[A-Za-z0-9]{10,40}$/;
@@ -660,6 +669,81 @@ const TOOLS_V10 = [
 ];
 const NAMES_V10 = new Set(TOOLS_V10.map((t) => t.name));
 
+// Protocol 11: learning the user's own words for records.
+const REMEMBER_WORD = {
+  name: "remember_word",
+  description:
+    "Save the user's own word for one of their records, so you understand it next time. Use it when the user corrects you about which record they meant (for example you picked the wrong record for \"my blue book\" and they say they meant the passport), or when they tell you what they call a record. Only save once it is clear which record they mean. It is saved for this account only, and the user can clear learned words from the chat history menu. Mention in a few words that you will remember it.",
+  input_schema: {
+    type: "object",
+    properties: {
+      word: { type: "string", description: "The user's word or phrase as they wrote it, one to four words, without \"my\"." },
+      record_id: { type: "string", description: "Record id from list_records." },
+    },
+    required: ["word", "record_id"],
+  },
+};
+const FORGET_WORD = {
+  name: "forget_word",
+  description: "Stop using a word you learned for a record, when the user asks you to forget it or says it means something else now.",
+  input_schema: {
+    type: "object",
+    properties: { word: { type: "string", description: "The learned word." } },
+    required: ["word"],
+  },
+};
+const TOOLS_V11 = [
+  ...TOOLS_V10.filter((t) => t.name !== "suggest_replies"),
+  REMEMBER_WORD,
+  FORGET_WORD,
+  SUGGEST_REPLIES,
+];
+const NAMES_V11 = new Set(TOOLS_V11.map((t) => t.name));
+
+function cleanWord(value) {
+  return typo.fold(value).replace(/^(my|mine)\s+/, "").slice(0, LEARNED_WORD_MAX).trim();
+}
+
+async function rememberWord(ctx, input) {
+  const word = cleanWord(input?.word);
+  if (!word) return { error: "Give the user's word." };
+  const record = await ctx.findRecord(input?.record_id);
+  if (!record) return { error: "No record with that id. Call list_records first." };
+  const list = (ctx.learned || []).filter((e) => cleanWord(e.word) !== word);
+  list.unshift({ word, recordId: record.id });
+  ctx.learned = list.slice(0, MAX_LEARNED_WORDS);
+  await ctx.wordsRef.set({
+    entries: ctx.learned.map((e) => ({ word: e.word, recordId: e.recordId })),
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+  return { status: "saved", word, record: record.locked ? LOCKED_LABEL : record.name };
+}
+
+async function forgetWord(ctx, input) {
+  const word = cleanWord(input?.word);
+  const before = (ctx.learned || []).length;
+  ctx.learned = (ctx.learned || []).filter((e) => cleanWord(e.word) !== word);
+  if (ctx.learned.length === before) return { status: "not_found" };
+  await ctx.wordsRef.set({
+    entries: ctx.learned.map((e) => ({ word: e.word, recordId: e.recordId })),
+    updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+  });
+  return { status: "forgotten", word };
+}
+
+// The records a learned word points to, when the search phrase is one of
+// the user's own words (allowing small typing mistakes).
+function learnedRecordIds(ctx, query) {
+  const wanted = cleanWord(query);
+  if (!wanted || !(ctx.learned || []).length) return null;
+  const ids = new Set();
+  for (const entry of ctx.learned) {
+    const word = cleanWord(entry.word);
+    if (word === wanted || typo.phraseScore(wanted, word) >= 0.86) ids.add(entry.recordId);
+  }
+  return ids.size ? ids : null;
+}
+
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
   "- Vaultara tracks expiry dates of records (passports, ID cards, licences, permits, visas, insurance policies, bank and store cards, leases, subscriptions, medical aid cards, prescriptions, vaccinations, memberships and warranties) and reminds the user before they expire.",
@@ -684,6 +768,7 @@ const APP_GUIDE = [
   "- Security and privacy (Profile > Security and privacy): security checkup, change password, two-step sign-in with an authenticator app, Your devices (see and sign out devices), Security history (last 90 days), App lock with fingerprint or face, Lock again, Privacy screen, Block screenshots, Encrypted photos (only the user's recovery key can unlock them; it cannot be reset), Share usage data, Privacy Policy, Terms of Service, Download my data, Use my location for trips (off by default: only the country is used, to tell if the user is at home or travelling, and it is not saved), and Delete account.",
   "- Delete account: Profile > Security and privacy > Delete account, or on the web at vaultara-f49ab.web.app/delete. It does not cancel a subscription; cancel that in Google Play or the App Store first.",
   "- Privacy: data is stored on Google Cloud in the United States and is not sold. Scanning happens on the phone. Ask Vaultara sends the user's messages and the record details it looks up to Anthropic to answer. Chats are saved to the account so the user can come back to them; they are deleted automatically after 90 days, and the user can delete one chat or all chats at any time in the chat history. Under each answer there are buttons to copy it, read it aloud, mark it helpful or not helpful, and report it with the flag button (offensive or harmful, wrong or misleading, or something else); a report sends the question and the answer to Vorkalis for review.",
+  "- Ask Vaultara screen: the camera button left of the text field takes or picks a photo of a document; the text is read on the phone and Ask Vaultara offers a card to add the record, and the photo is attached when the user confirms. When an answer stops before the task is done, a Continue button under it asks for the rest. Ask Vaultara learns the user's own words for records when they correct it (for example \"green book\" for a passport); the menu in Chat history has Forget learned words. If the phone cannot listen in the app's language, the voice panel says which language it is listening in and has Change to pick another; the choice is remembered.",
   "- Help: Profile > Help has Tutorials, Ask Vaultara and Email us (support@vorkalis.com; the app version and phone model are added, never records). Appearance and Currency are in Profile > Preferences > Display.",
 ].join("\n");
 
@@ -851,6 +936,27 @@ class UserData {
 
   get me() {
     return homeFields(this.userData);
+  }
+
+  get wordsRef() {
+    return admin.firestore().collection("users").doc(this.uid).collection("assistantMemory").doc("words");
+  }
+
+  // The user's own words for records, learned when they corrected the
+  // assistant: [{ word, recordId }]. Kept for this account only.
+  async learnedWords() {
+    try {
+      const snap = await this.wordsRef.get();
+      const list = snap.exists ? snap.get("entries") : null;
+      if (!Array.isArray(list)) return [];
+      return list
+        .filter((e) => e && typeof e.word === "string" && typeof e.recordId === "string")
+        .slice(0, MAX_LEARNED_WORDS)
+        .map((e) => ({ word: e.word, recordId: e.recordId }));
+    } catch (err) {
+      logger.warn("askVaultara learned words read failed", { code: err?.code || null });
+      return [];
+    }
   }
 
   get userRef() {
@@ -1308,7 +1414,14 @@ async function listRecords(ctx, input) {
     records = records.filter((r) => !r.locked && (match.me ? !r.holderId : r.holderId === match.person.id));
   }
   let closeSpelling = false;
-  if (str(input?.group)) {
+  let learned = false;
+  const learnedIds = str(input?.group) ? learnedRecordIds(ctx, input.group) : null;
+  if (learnedIds) {
+    // The user's own word for a record, learned earlier.
+    records = records.filter((r) => learnedIds.has(r.id));
+    learned = records.length > 0;
+  }
+  if (str(input?.group) && !learned) {
     const open = records.filter((r) => !r.locked);
     let found = open.filter((r) => groupMatches(r, input.group));
     if (!found.length) {
@@ -1330,6 +1443,9 @@ async function listRecords(ctx, input) {
   const views = [];
   for (const record of shown) views.push(await ctx.view(record));
   const out = { total: records.length, returned: views.length, records: views };
+  if (learned) {
+    out.note = "These are the records the user's own word refers to, learned from an earlier correction.";
+  }
   if (closeSpelling) {
     out.note = "Nothing matched these words exactly, so these are the closest matches, allowing for typing mistakes. If you show them, say in a few words what you took the user's words to mean.";
   }
@@ -1920,6 +2036,10 @@ async function runTool(ctx, name, input, actions, allowed) {
         return await openScreen(ctx, input, actions);
       case "propose_setting":
         return proposeSetting(input, actions, ctx.v10 ? SETTINGS_V10 : SETTINGS);
+      case "remember_word":
+        return await rememberWord(ctx, input);
+      case "forget_word":
+        return await forgetWord(ctx, input);
       case "use_location": {
         if (ctx.here) return { error: "The current country is already known: " + ctx.here + "." };
         if (actions.some((a) => a.type === "location")) return { error: "The card is already shown." };
@@ -2063,6 +2183,17 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
         : "No life event plans are in progress."
     );
   }
+  if (ctx.v11) {
+    const learned = (ctx.learned || []).slice(0, 40);
+    dynamic.push(
+      learned.length
+        ? `Words this user uses for their records (learned from their corrections; pass the word as the group to list_records to find the record): ${learned.map((e) => `"${e.word}"`).join(", ")}.`
+        : "No learned words yet.",
+      "When the user corrects which record they meant, or tells you what they call a record, call remember_word. When they ask you to forget a word, call forget_word.",
+      "A message starting with [Photo] comes from a photo the user took in the chat: the phone read the document's text on the device and sends only that text, with long numbers hidden. Offer to add it as a record with propose_record, using what was read; if the expiry date or the kind of document is unclear, ask one short question. If they already have a record like it, offer to renew that record instead.",
+      "If a task needs more cards or steps than fit in one answer, do the first part and say that they can tap Continue for the rest."
+    );
+  }
   if (intent === "propose") {
     dynamic.push(
       "The user is filling in the add record form. Call propose_record exactly once with your best guess from their text. Do not ask questions."
@@ -2159,12 +2290,146 @@ async function stepFor(ctx, name, input) {
   }
 }
 
+// ---------------------------------------------------------------- models
+
+const missingModels = new Set();
+
+function modelChoice() {
+  return {
+    fast: str(process.env.ASSISTANT_FAST_MODEL) || FAST_MODEL,
+    smart: str(process.env.ASSISTANT_SMART_MODEL) || SMART_MODEL,
+  };
+}
+
+// Words that usually mean a request with several steps or some reasoning.
+// The fast model also hands over by itself (see SMART_TOOLS and the round
+// count), so this list only needs the common cases.
+const COMPLEX_HINTS = new RegExp(
+  "\\b(?:" +
+    [
+      "plan(?:s|ned|ning)?", "trips?", "travel\\w*", "visas?", "compare", "which", "why",
+      "all my", "every", "each", "schedule", "budget", "total", "life event", "move to",
+      "moving", "abroad", "emigrat\\w*", "relocat\\w*", "study", "wedding", "baby",
+      "before i", "by the time", "what do i need",
+      "reise\\w*", "reis", "voyage\\w*", "viajes?", "viage[mn]s?", "viaggi\\w*", "visum",
+      "planifi\\w*", "planear", "planen", "planeje\\w*",
+    ].join("|") +
+    ")\\b",
+  "i",
+);
+
+// Tools whose results need careful reasoning to answer well.
+// Tools whose use means the task is planning or adding up: trips, visas,
+// costs, history and moving many records at once.
+const SMART_TOOLS = new Set([
+  "list_trips",
+  "propose_create_trip",
+  "propose_update_trip",
+  "visa_check",
+  "renewal_costs",
+  "renewal_history",
+  "propose_move_records",
+]);
+
+function lastUserText(messages) {
+  for (let i = messages.length - 1; i >= 0; i--) {
+    const m = messages[i];
+    if (m.role === "user" && typeof m.content === "string") return m.content;
+  }
+  return "";
+}
+
+// Whether to start with the smarter model.
+function startsSmart(messages, intent) {
+  if (intent === "propose") return false;
+  const text = lastUserText(messages);
+  if (!text) return false;
+  if (text.length > 220) return true;
+  if ((text.match(/[?？؟]/g) || []).length >= 2) return true;
+  return COMPLEX_HINTS.test(text);
+}
+
+function isModelMissing(err) {
+  const status = Number(err?.status) || 0;
+  const type = err?.error?.error?.type || err?.error?.type || "";
+  const message = String(err?.error?.error?.message || err?.message || "");
+  return status === 404 || type === "not_found_error" || (status === 400 && /model/i.test(message));
+}
+
+// The last message marked for prompt caching, so each round of a tool loop
+// reads the conversation so far from the cache instead of paying for it
+// again.
+function withCacheBreakpoint(conversation) {
+  if (!conversation.length) return conversation;
+  const out = conversation.slice();
+  const last = out[out.length - 1];
+  const blocks = typeof last.content === "string"
+    ? [{ type: "text", text: last.content }]
+    : last.content.map((b) => ({ ...b }));
+  if (!blocks.length) return conversation;
+  blocks[blocks.length - 1] = { ...blocks[blocks.length - 1], cache_control: { type: "ephemeral" } };
+  out[out.length - 1] = { ...last, content: blocks };
+  return out;
+}
+
+// One model call. With a run document the answer is streamed, and the text
+// so far is written there a few times a second so the app can show it as it
+// is written. A model the account cannot use falls back to the older Haiku.
+async function callModel(params, progress) {
+  const model = missingModels.has(params.model) ? FALLBACK_MODEL : params.model;
+  const request = { ...params, model };
+  try {
+    if (!progress.ref) return await client().messages.create(request);
+    const stream = client().messages.stream(request);
+    let text = "";
+    let lastWrite = 0;
+    stream.on("text", (delta) => {
+      text += delta;
+      const now = Date.now();
+      if (now - lastWrite >= 350) {
+        lastWrite = now;
+        progress.partial(text);
+      }
+    });
+    const message = await stream.finalMessage();
+    if (text) progress.partial(text);
+    return message;
+  } catch (err) {
+    if (model !== FALLBACK_MODEL && isModelMissing(err)) {
+      logger.warn("askVaultara model not available, using the fallback", { model });
+      missingModels.add(model);
+      return callModel({ ...params, model: FALLBACK_MODEL }, progress);
+    }
+    throw err;
+  }
+}
+
 class RunProgress {
   constructor(uid, runId) {
     this.ref = runId
       ? admin.firestore().collection("users").doc(uid).collection("assistantRuns").doc(runId)
       : null;
     this.last = "";
+    this.partialText = "";
+    this.writes = Promise.resolve();
+  }
+
+  // The answer so far, for the app to show while it is being written.
+  // Writes are chained so they arrive in order.
+  partial(text) {
+    if (!this.ref) return;
+    const value = String(text || "").slice(0, 4000);
+    if (value === this.partialText) return;
+    this.partialText = value;
+    const ref = this.ref;
+    this.writes = this.writes
+      .then(() =>
+        ref.set({
+          partial: value,
+          expireAt: admin.firestore.Timestamp.fromMillis(Date.now() + RUN_KEEP_MS),
+        }, { merge: true }),
+      )
+      .catch(() => {});
   }
 
   async show(status) {
@@ -2198,6 +2463,11 @@ class RunProgress {
   async finish() {
     if (!this.ref) return;
     try {
+      await this.writes;
+    } catch (_) {
+      // Ignored: the document is deleted next.
+    }
+    try {
       await this.ref.delete();
     } catch (_) {
       // The document expires by itself.
@@ -2220,6 +2490,7 @@ exports.askVaultara = onCall(
     const v4 = version >= 4 && intent === "chat";
     const v5 = version >= 5 && intent === "chat";
     const v6 = version >= 6 && intent === "chat";
+    const v11 = version >= 11 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
@@ -2246,7 +2517,8 @@ exports.askVaultara = onCall(
 
     const lang = cleanLanguage(request.data?.locale) || userLanguage(userData);
     const ctx = new UserData(uid, userData);
-    const model = str(process.env.ANTHROPIC_MODEL) || DEFAULT_MODEL;
+    const models = modelChoice();
+    let smart = startsSmart(messages, intent);
     ctx.tripExtras = v5;
     ctx.tripPlaces = v6;
     ctx.here = v6 ? countryCode(request.data?.here) : null;
@@ -2254,11 +2526,13 @@ exports.askVaultara = onCall(
     ctx.tutorials = v8;
     ctx.groups = v9 ? GROUPS_V9 : GROUPS;
     ctx.v10 = v10;
+    ctx.v11 = v11;
+    ctx.learned = v11 ? await ctx.learnedWords() : [];
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
-    const baseTools = v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const baseTools = v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
     const tools = v9 ? withGroupsV9(baseTools) : baseTools;
-    const allowed = v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const allowed = v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
@@ -2270,6 +2544,8 @@ exports.askVaultara = onCall(
     let inputTokens = 0;
     let outputTokens = 0;
     let cachedTokens = 0;
+    let truncated = false;
+    const usedModels = new Set();
 
     try {
       for (let i = 0; i < MAX_ITERATIONS; i++) {
@@ -2279,14 +2555,19 @@ exports.askVaultara = onCall(
         }
         const forced = intent === "propose" && i === 0;
         const last = i === MAX_ITERATIONS - 1;
-        const response = await client().messages.create({
+        // From the third round on the request clearly has several steps.
+        if (i >= 2) smart = true;
+        const model = smart ? models.smart : models.fast;
+        usedModels.add(model);
+        if (i > 0) progress.partial("");
+        const response = await callModel({
           model,
           max_tokens: MAX_TOKENS,
           system,
           tools,
           tool_choice: forced ? { type: "tool", name: "propose_record" } : last ? { type: "none" } : { type: "auto" },
-          messages: conversation,
-        });
+          messages: withCacheBreakpoint(conversation),
+        }, progress);
         inputTokens += Number(response.usage?.input_tokens) || 0;
         outputTokens += Number(response.usage?.output_tokens) || 0;
         cachedTokens += Number(response.usage?.cache_read_input_tokens) || 0;
@@ -2306,8 +2587,14 @@ exports.askVaultara = onCall(
         const toolUses = allUses.filter((b) => b.name !== "suggest_replies");
         if (response.stop_reason !== "tool_use" || toolUses.length === 0) {
           reply = text;
+          // Cut off by the length limit, or by the last round, which may not
+          // use tools: the user can ask it to continue.
+          if (response.stop_reason === "max_tokens" || (last && i > 0)) truncated = true;
           break;
         }
+        // Several lookups at once, or one that needs reasoning: the smarter
+        // model takes over for the rest of this answer.
+        if (toolUses.length >= 2 || toolUses.some((u) => SMART_TOOLS.has(u.name))) smart = true;
 
         conversation.push({ role: "assistant", content });
         const results = [];
@@ -2315,6 +2602,7 @@ exports.askVaultara = onCall(
           toolCounts[use.name] = (toolCounts[use.name] || 0) + 1;
           if (allowed.has(use.name)) await progress.show(await stepFor(ctx, use.name, use.input).catch(() => null));
           const result = await runTool(ctx, use.name, use.input, actions, allowed);
+          if (result && result.error && /Too many cards/.test(result.error)) truncated = true;
           results.push({
             type: "tool_result",
             tool_use_id: use.id,
@@ -2351,6 +2639,8 @@ exports.askVaultara = onCall(
       tools: toolCounts,
       actions: actions.length,
       replies: replies.length,
+      models: [...usedModels],
+      truncated,
       inputTokens,
       outputTokens,
       cachedTokens,
@@ -2360,9 +2650,35 @@ exports.askVaultara = onCall(
       reply: reply.slice(0, 4000),
       actions: actions.map(cleanAction),
       ...(v3 ? { replies } : {}),
+      ...(v11 ? { truncated } : {}),
     };
   }
 );
 
+// Clears every word Ask Vaultara learned for this account.
+exports.forgetAssistantWords = onCall(CALLABLE, async (request) => {
+  const uid = request.auth?.uid;
+  if (!uid) throw new HttpsError("unauthenticated", "Sign in first.");
+  await admin.firestore().collection("users").doc(uid).collection("assistantMemory").doc("words").delete();
+  return { ok: true };
+});
+
 // For unit tests only.
-exports._test = { runTool, UserData, groupMatches, resolveGroup, TOOLS_V10, NAMES_V10, STATIC_PROMPT_V10 };
+exports._test = {
+  runTool,
+  UserData,
+  groupMatches,
+  resolveGroup,
+  TOOLS_V10,
+  NAMES_V10,
+  TOOLS_V11,
+  NAMES_V11,
+  STATIC_PROMPT_V10,
+  startsSmart,
+  withCacheBreakpoint,
+  isModelMissing,
+  learnedRecordIds,
+  cleanWord,
+  SMART_TOOLS,
+  COMPLEX_HINTS,
+};

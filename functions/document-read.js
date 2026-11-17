@@ -15,7 +15,7 @@ const { ENFORCE_APP_CHECK, consumeRateLimit } = require("./shared");
 
 const ANTHROPIC_API_KEY = defineSecret("ANTHROPIC_API_KEY");
 
-const DEFAULT_MODEL = "claude-haiku-4-5-20251001";
+const { modelFor, createMessage } = require("./models");
 const HOUR_MS = 60 * 60 * 1000;
 const DAY_MS = 24 * HOUR_MS;
 const PER_HOUR = 20;
@@ -179,9 +179,9 @@ exports.readDocument = onCall(
       throw new HttpsError("resource-exhausted", "limit-global");
     }
 
-    const model = String(process.env.ANTHROPIC_MODEL || "").trim() || DEFAULT_MODEL;
+    const model = modelFor("SCAN_MODEL");
     try {
-      const response = await client().messages.create({
+      const response = await createMessage(client(), {
         model,
         max_tokens: 400,
         temperature: 0,

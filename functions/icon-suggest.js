@@ -18,7 +18,7 @@ const ANTHROPIC_API_KEY = defineSecret("ANTHROPIC_API_KEY");
 
 // The same model Ask Vaultara uses by default. The answer is a few words, so
 // each call costs a tiny fraction of a chat message.
-const DEFAULT_MODEL = "claude-haiku-4-5-20251001";
+const { modelFor, createMessage } = require("./models");
 const HOUR_MS = 60 * 60 * 1000;
 const DAY_MS = 24 * HOUR_MS;
 const PER_HOUR = 60;
@@ -310,9 +310,9 @@ exports.suggestCategoryIcon = onCall(
       throw new HttpsError("resource-exhausted", "limit-global");
     }
 
-    const model = String(process.env.ANTHROPIC_MODEL || "").trim() || DEFAULT_MODEL;
+    const model = modelFor("ICON_MODEL");
     try {
-      const response = await client().messages.create({
+      const response = await createMessage(client(), {
         model,
         max_tokens: 120,
         temperature: 0,
