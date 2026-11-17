@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_source_links.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/data/assistant_message.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_preview.dart';
@@ -29,23 +30,42 @@ class AssistantActionCard extends StatelessWidget {
     final out = <Widget>[
       Divider(height: 12, color: scheme.outlineVariant.withValues(alpha: 0.6)),
     ];
-    final rows = preview.rows;
-    for (var i = 0; i < rows.length; i += 2) {
-      out.add(
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(child: _ChangeRowView(row: rows[i])),
-            const SizedBox(width: 12),
-            Expanded(
-              child: i + 1 < rows.length
-                  ? _ChangeRowView(row: rows[i + 1])
-                  : const SizedBox.shrink(),
-            ),
-          ],
-        ),
-      );
+    // Short rows go in pairs; a wide row takes the whole width.
+    final pending = <AssistantChangeRow>[];
+    void flush() {
+      for (var i = 0; i < pending.length; i += 2) {
+        out.add(
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(child: _ChangeRowView(row: pending[i])),
+              const SizedBox(width: 12),
+              Expanded(
+                child: i + 1 < pending.length
+                    ? _ChangeRowView(row: pending[i + 1])
+                    : const SizedBox.shrink(),
+              ),
+            ],
+          ),
+        );
+      }
+      pending.clear();
     }
+
+    for (final row in preview.rows) {
+      if (row.wide) {
+        flush();
+        out.add(
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: _ChangeRowView(row: row),
+          ),
+        );
+      } else {
+        pending.add(row);
+      }
+    }
+    flush();
     return out;
   }
 
@@ -103,6 +123,10 @@ class AssistantActionCard extends StatelessWidget {
             ..._pairs(scheme)
           else
             for (final row in preview.rows) _ChangeRowView(row: row),
+          if (preview.links.isNotEmpty) ...[
+            const SizedBox(height: 6),
+            AssistantSourceLinks(sources: preview.links),
+          ],
           if (preview.note != null) ...[
             const SizedBox(height: 6),
             Text(

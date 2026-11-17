@@ -288,6 +288,12 @@ class AssistantAction {
   /// and the pages it came from.
   final String? planExpiry;
   final String? planCountry;
+
+  /// Where the holder lives, where they apply, and why that differs when
+  /// an official page sends them to another country.
+  final String? planLivesIn;
+  final String? planApplyIn;
+  final String? planApplyReason;
   final List<RenewalPlanStep> planSteps;
   final String? bookingUrl;
   final String? fee;
@@ -351,6 +357,9 @@ class AssistantAction {
     this.recordNames = const <String>[],
     this.planExpiry,
     this.planCountry,
+    this.planLivesIn,
+    this.planApplyIn,
+    this.planApplyReason,
     this.planSteps = const <RenewalPlanStep>[],
     this.bookingUrl,
     this.fee,
@@ -629,6 +638,12 @@ class AssistantAction {
       name: text(raw['name'], 60),
       planExpiry: expiry,
       planCountry: country(raw['country']),
+      planLivesIn: country(raw['livesIn']),
+      planApplyIn: country(raw['applyIn']),
+      planApplyReason: RenewalCoachPlan.line(
+        raw['applyReason'],
+        RenewalCoachPlan.maxNote,
+      ),
       planSteps: steps,
       bookingUrl: RenewalCoachPlan.link(raw['bookingUrl']),
       fee: RenewalCoachPlan.line(raw['fee'], RenewalCoachPlan.maxNote),

@@ -31,12 +31,23 @@ class RenewalSource {
   final String title;
   final String url;
 
-  const RenewalSource({required this.title, required this.url});
+  /// A government, embassy or official visa centre page.
+  final bool official;
+
+  const RenewalSource({
+    required this.title,
+    required this.url,
+    this.official = false,
+  });
 
   /// The site name shown when the title is long or missing.
   String get host => Uri.tryParse(url)?.host ?? url;
 
-  Map<String, dynamic> toMap() => <String, dynamic>{'title': title, 'url': url};
+  Map<String, dynamic> toMap() => <String, dynamic>{
+    'title': title,
+    'url': url,
+    if (official) 'official': true,
+  };
 
   static RenewalSource? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -44,7 +55,11 @@ class RenewalSource {
     if (url == null) return null;
     final title =
         RenewalCoachPlan.line(raw['title'], maxTitle) ?? Uri.parse(url).host;
-    return RenewalSource(title: title, url: url);
+    return RenewalSource(
+      title: title,
+      url: url,
+      official: raw['official'] == true,
+    );
   }
 
   static List<RenewalSource> listFrom(Object? raw, {int max = 5}) {
@@ -167,6 +182,18 @@ class RenewalCoachPlan {
   /// The record's expiry date the plan was made for, as YYYY-MM-DD.
   final String expiry;
   final String? country;
+
+  /// Where the holder lives and where they apply, with the reason when an
+  /// official page sends them to another country.
+  final String? livesIn;
+  final String? applyIn;
+  final String? applyReason;
+
+  /// The day the steps were checked on official sites, as YYYY-MM-DD.
+  final String? checked;
+
+  /// The user's answer to "Was this plan right?": 1, -1, or 0 for none.
+  final int rating;
   final List<RenewalPlanStep> steps;
   final Set<int> done;
   final String? bookingUrl;
@@ -180,6 +207,11 @@ class RenewalCoachPlan {
     required this.expiry,
     required this.steps,
     this.country,
+    this.livesIn,
+    this.applyIn,
+    this.applyReason,
+    this.checked,
+    this.rating = 0,
     this.done = const <int>{},
     this.bookingUrl,
     this.fee,
@@ -203,10 +235,16 @@ class RenewalCoachPlan {
     Set<int>? done,
     RenewalAppointment? appointment,
     bool clearAppointment = false,
+    int? rating,
   }) => RenewalCoachPlan(
     recordId: recordId,
     expiry: expiry,
     country: country,
+    livesIn: livesIn,
+    applyIn: applyIn,
+    applyReason: applyReason,
+    checked: checked,
+    rating: rating ?? this.rating,
     steps: steps,
     done: done ?? this.done,
     bookingUrl: bookingUrl,
@@ -254,6 +292,11 @@ class RenewalCoachPlan {
   Map<String, dynamic> toMap() => <String, dynamic>{
     'expiry': expiry,
     'country': country,
+    'livesIn': livesIn,
+    'applyIn': applyIn,
+    'applyReason': applyReason,
+    'checked': checked,
+    'rating': rating,
     'steps': steps.map((s) => s.toMap()).toList(),
     'done': (done.toList()..sort()),
     'bookingUrl': bookingUrl,
@@ -281,12 +324,27 @@ class RenewalCoachPlan {
           if (value is int && value >= 0 && value < steps.length) value,
     };
     final country = data['country'];
+    final applyIn = data['applyIn'];
+    final livesIn = data['livesIn'];
+    final checked = data['checked'];
+    final rating = data['rating'];
     return RenewalCoachPlan(
       recordId: recordId,
       expiry: expiry,
       country: country is String && RegExp(r'^[A-Z]{2}$').hasMatch(country)
           ? country
           : null,
+      applyIn: applyIn is String && RegExp(r'^[A-Z]{2}$').hasMatch(applyIn)
+          ? applyIn
+          : null,
+      livesIn: livesIn is String && RegExp(r'^[A-Z]{2}$').hasMatch(livesIn)
+          ? livesIn
+          : null,
+      applyReason: line(data['applyReason'], maxNote),
+      checked: checked is String && RenewalAppointment.parseDay(checked) != null
+          ? checked
+          : null,
+      rating: rating is int && rating >= -1 && rating <= 1 ? rating : 0,
       steps: steps,
       done: done,
       bookingUrl: link(data['bookingUrl']),

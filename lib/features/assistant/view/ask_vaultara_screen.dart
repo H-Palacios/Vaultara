@@ -314,7 +314,12 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       if (message.isFailure) continue;
       final text = message.sentText.trim();
       if (text.isEmpty) continue;
-      turns.add(AssistantTurn(fromUser: message.isUser, text: text));
+      // An answer from official pages keeps them, so a later answer knows
+      // where it came from.
+      final sources = message.isUser || message.sources.isEmpty
+          ? ''
+          : '\n\n[Sources: ${message.sources.map((s) => s.url).join(' ')}]';
+      turns.add(AssistantTurn(fromUser: message.isUser, text: '$text$sources'));
     }
     return turns;
   }

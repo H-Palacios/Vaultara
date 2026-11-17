@@ -88,6 +88,15 @@ class RenewalPlanStore {
     return await save(updated) ? updated : null;
   }
 
+  /// Saves the user's answer to "Was this plan right?".
+  static Future<RenewalCoachPlan?> setRating(
+    RenewalCoachPlan plan,
+    int rating,
+  ) async {
+    final updated = plan.copyWith(rating: rating.clamp(-1, 1));
+    return await save(updated) ? updated : null;
+  }
+
   /// Saves the appointment and its reminders. [name] is null for a locked
   /// record, whose name never shows in a notification.
   static Future<RenewalCoachPlan?> setAppointment(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/data/repositories/group_repository.dart';
@@ -24,10 +25,15 @@ class AssistantChangeRow {
   final String? before;
   final String after;
 
+  /// Long values, such as a list of steps, take the full width of a card
+  /// that otherwise shows its rows in two columns.
+  final bool wide;
+
   const AssistantChangeRow({
     required this.label,
     required this.after,
     this.before,
+    this.wide = false,
   });
 }
 
@@ -40,6 +46,10 @@ class AssistantActionPreview {
   final bool destructive;
   final bool private;
 
+  /// Official pages shown on the card as links the user can open before
+  /// confirming.
+  final List<RenewalSource> links;
+
   const AssistantActionPreview({
     required this.title,
     required this.icon,
@@ -48,6 +58,7 @@ class AssistantActionPreview {
     this.note,
     this.destructive = false,
     this.private = false,
+    this.links = const <RenewalSource>[],
   });
 
   String get summary => '$title: $subject';
@@ -247,18 +258,30 @@ class AssistantActionPreview {
     final record = _record(action);
     final steps = <String>[
       for (var i = 0; i < action.planSteps.length; i++)
-        '${i + 1}. ${action.planSteps[i].text}',
+        '${i + 1}.  ${action.planSteps[i].text}',
     ];
+    // Short facts in two columns first, then the steps across the whole
+    // card, and the official pages as links under them.
+    final applyElsewhere =
+        action.planApplyIn != null &&
+        action.planLivesIn != null &&
+        action.planApplyIn != action.planLivesIn;
     final rows = <AssistantChangeRow>[
       if (action.planCountry != null)
         AssistantChangeRow(
           label: loc.coachCountryLabel,
           after: f.country(action.planCountry),
         ),
-      AssistantChangeRow(
-        label: loc.coachStepsLabel(action.planSteps.length),
-        after: steps.join('\n'),
-      ),
+      if (action.planLivesIn != null)
+        AssistantChangeRow(
+          label: loc.visaResidenceTitle,
+          after: f.country(action.planLivesIn),
+        ),
+      if (action.planApplyIn != null)
+        AssistantChangeRow(
+          label: loc.coachApplyInLabel,
+          after: f.country(action.planApplyIn),
+        ),
       if (action.fee != null)
         AssistantChangeRow(label: loc.coachFeeLabel, after: action.fee!),
       if (action.processing != null)
@@ -266,16 +289,30 @@ class AssistantActionPreview {
           label: loc.coachProcessingLabel,
           after: action.processing!,
         ),
-      if (action.bookingUrl != null)
+      if (applyElsewhere && action.planApplyReason != null)
         AssistantChangeRow(
-          label: loc.coachBookingLabel,
-          after: Uri.tryParse(action.bookingUrl!)?.host ?? action.bookingUrl!,
+          label: loc.coachApplyInLabel,
+          after: action.planApplyReason!,
+          wide: true,
         ),
-      if (action.sources.isNotEmpty)
-        AssistantChangeRow(
-          label: loc.coachSourcesLabel,
-          after: action.sources.map((s) => s.host).toSet().join(', '),
+      AssistantChangeRow(
+        label: loc.coachStepsLabel(action.planSteps.length),
+        after: steps.join('\n\n'),
+        wide: true,
+      ),
+    ];
+    final booking = action.bookingUrl;
+    final bookingHost = booking == null ? null : Uri.tryParse(booking)?.host;
+    final links = <RenewalSource>[
+      if (booking != null)
+        RenewalSource(
+          title: loc.coachBookOnSite,
+          url: booking,
+          official: action.sources.any(
+            (s) => s.official && s.host == bookingHost,
+          ),
         ),
+      ...action.sources.where((s) => s.url != booking),
     ];
     return AssistantActionPreview(
       title: loc.coachPlanTitle,
@@ -284,6 +321,7 @@ class AssistantActionPreview {
       rows: rows,
       note: loc.coachPlanNote,
       private: record?.locked ?? action.name == null,
+      links: links,
     );
   }
 

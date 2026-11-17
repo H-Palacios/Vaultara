@@ -58,7 +58,9 @@ class AssistantSourceLinks extends StatelessWidget {
               for (final source in sources)
                 ActionChip(
                   avatar: Icon(
-                    Icons.open_in_new_rounded,
+                    source.official
+                        ? Icons.verified_rounded
+                        : Icons.open_in_new_rounded,
                     size: 15,
                     color: scheme.primary,
                   ),
@@ -70,7 +72,9 @@ class AssistantSourceLinks extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  tooltip: source.url,
+                  tooltip: source.official
+                      ? '${loc.coachOfficial} · ${source.url}'
+                      : source.url,
                   onPressed: () => openOfficialLink(context, source.url),
                 ),
             ],

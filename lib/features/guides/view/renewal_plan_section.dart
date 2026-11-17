@@ -90,16 +90,48 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
     });
   }
 
-  void _askCoach() {
+  void _askCoach({bool recheck = false}) {
     final loc = AppLocalizations.of(context)!;
     final name = widget.record.name.trim();
     openAskVaultara(
       context,
       isPremium: ShellState.current?.isPremium ?? false,
-      sharedText: _plan == null
+      sharedText: recheck
+          ? loc.coachRecheckPrompt(name)
+          : _plan == null
           ? loc.coachAskPrompt(name)
           : loc.coachAskNextPrompt(name),
       sendShared: true,
+    );
+  }
+
+  /// "Was this plan right?" A no offers to check the official steps again.
+  Future<void> _rate(int rating) async {
+    final plan = _plan;
+    if (plan == null || _saving) return;
+    final loc = AppLocalizations.of(context)!;
+    final next = plan.rating == rating ? 0 : rating;
+    setState(() {
+      _saving = true;
+      _plan = plan.copyWith(rating: next);
+    });
+    final saved = await RenewalPlanStore.setRating(plan, next);
+    if (!mounted) return;
+    setState(() {
+      _saving = false;
+      _plan = saved ?? plan;
+    });
+    if (next == 0) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(loc.coachThanks),
+        action: next < 0 && !widget.record.locked
+            ? SnackBarAction(
+                label: loc.coachRecheck,
+                onPressed: () => _askCoach(recheck: true),
+              )
+            : null,
+      ),
     );
   }
 
@@ -189,10 +221,63 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
               ),
             ],
           ),
-          if (country != null) ...[
+          if (country != null || plan.applyIn != null || plan.checked != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 4),
+              child: Wrap(
+                spacing: 12,
+                runSpacing: 2,
+                children: [
+                  if (country != null)
+                    Text(
+                      '${Countries.flag(country)} ${Countries.name(country)}'
+                          .trim(),
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                  if (plan.livesIn != null &&
+                      plan.applyIn != null &&
+                      plan.livesIn != plan.applyIn)
+                    Text(
+                      '${loc.visaResidenceTitle}: '
+                      '${Countries.flag(plan.livesIn!)} '
+                      '${Countries.name(plan.livesIn!)}',
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                  if (plan.applyIn != null && plan.applyIn != country)
+                    Text(
+                      '${loc.coachApplyInLabel}: '
+                      '${Countries.flag(plan.applyIn!)} '
+                      '${Countries.name(plan.applyIn!)}',
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                  if (plan.checked != null)
+                    Text(
+                      loc.coachCheckedOn(
+                        _date(loc, RenewalAppointment.parseDay(plan.checked)!),
+                      ),
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                ],
+              ),
+            ),
+          if (plan.applyReason != null &&
+              plan.livesIn != null &&
+              plan.applyIn != plan.livesIn) ...[
             const SizedBox(height: 4),
             Text(
-              '${Countries.flag(country)} ${Countries.name(country)}'.trim(),
+              plan.applyReason!,
               style: TextStyle(fontSize: 13, color: scheme.onSurfaceVariant),
             ),
           ],
@@ -298,6 +383,42 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
           Text(
             loc.coachRulesChange,
             style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+          ),
+          const SizedBox(height: 6),
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  loc.coachWasRight,
+                  style: const TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              IconButton(
+                tooltip: loc.assistantHelpful,
+                onPressed: _saving ? null : () => _rate(1),
+                icon: Icon(
+                  plan.rating > 0
+                      ? Icons.thumb_up_alt_rounded
+                      : Icons.thumb_up_alt_outlined,
+                  size: 20,
+                  color: plan.rating > 0 ? scheme.primary : null,
+                ),
+              ),
+              IconButton(
+                tooltip: loc.assistantNotHelpful,
+                onPressed: _saving ? null : () => _rate(-1),
+                icon: Icon(
+                  plan.rating < 0
+                      ? Icons.thumb_down_alt_rounded
+                      : Icons.thumb_down_alt_outlined,
+                  size: 20,
+                  color: plan.rating < 0 ? scheme.error : null,
+                ),
+              ),
+            ],
           ),
           if (!widget.record.locked)
             Align(
