@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
 import 'package:vaultara/features/tools/data/life_plan_repository.dart';
 import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,7 @@ const String kUserFirstNameKey = 'userFirstName';
 const String _kShortcutAdd = 'add_record';
 const String _kShortcutScan = 'scan_record';
 const String _kShortcutWallet = 'lost_wallet';
+const String _kShortcutTalk = 'talk_vaultara';
 
 class ShellState extends State<Shell> {
   static ShellState? current;
@@ -160,6 +162,11 @@ class ShellState extends State<Shell> {
       LifePlanRepository.start();
       unawaited(openLostWallet(context, start: true));
     }
+    if (type == _kShortcutTalk) {
+      unawaited(
+        openAskVaultara(context, isPremium: isPremium, startTalk: true),
+      );
+    }
   }
 
   Future<void> _preload() async {
@@ -204,6 +211,7 @@ class ShellState extends State<Shell> {
           type: _kShortcutWallet,
           localizedTitle: loc.lostWalletTitle,
         ),
+        ShortcutItem(type: _kShortcutTalk, localizedTitle: loc.talkShortcut),
       ]);
     } catch (_) {}
   }

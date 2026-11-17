@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:vaultara/features/scan/services/document_reader.dart';
 import 'package:vaultara/features/scan/services/document_scanner.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +20,11 @@ import 'package:vaultara/features/assistant/services/assistant_run.dart';
 import 'package:vaultara/features/assistant/services/assistant_open_chat.dart';
 import 'package:vaultara/features/assistant/services/assistant_report_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_service.dart';
+import 'package:vaultara/features/assistant/services/talk_voice.dart';
 import 'package:vaultara/features/assistant/services/voice_input.dart';
+import 'package:vaultara/features/assistant/logic/talk_words.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_source_links.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_talk_panel.dart';
 import 'package:vaultara/features/assistant/view/assistant_chat_panel.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_action_card.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_batch_card.dart';
@@ -40,6 +46,7 @@ Future<void> openAskVaultara(
   required bool isPremium,
   String? sharedText,
   bool sendShared = false,
+  bool startTalk = false,
 }) {
   return Navigator.of(context, rootNavigator: true).push(
     MaterialPageRoute(
@@ -49,6 +56,7 @@ Future<void> openAskVaultara(
           isPremium: premium,
           sharedText: sharedText,
           sendShared: sendShared,
+          startTalk: startTalk,
         ),
       ),
     ),
@@ -63,11 +71,15 @@ class AskVaultaraScreen extends StatefulWidget {
   /// an insight, instead of leaving it in the text box to send by hand.
   final bool sendShared;
 
+  /// Opens straight into Talk mode, as from the app icon shortcut.
+  final bool startTalk;
+
   const AskVaultaraScreen({
     super.key,
     required this.isPremium,
     this.sharedText,
     this.sendShared = false,
+    this.startTalk = false,
   });
 
   @override
@@ -99,6 +111,26 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   AssistantMessage? _speakingMessage;
   AssistantMessage? _pendingSpeech;
 
+  // Talk mode: listen, answer out loud, listen again. A new token stops any
+  // turn still running from before.
+  bool _talk = false;
+  int _talkToken = 0;
+  final TalkVoice _talkVoice = TalkVoice();
+  final ValueNotifier<TalkPhase> _talkPhase = ValueNotifier<TalkPhase>(
+    TalkPhase.idle,
+  );
+  final ValueNotifier<String> _talkCaption = ValueNotifier<String>('');
+  Timer? _talkSilence;
+  Timer? _talkIdle;
+  bool _talkConfirming = false;
+  bool _talkHandling = false;
+
+  /// How long a pause ends what the user is saying.
+  static const Duration _talkPause = Duration(milliseconds: 1600);
+
+  /// How long Talk mode waits for the user to start speaking.
+  static const Duration _talkWait = Duration(seconds: 10);
+
   @override
   void initState() {
     super.initState();
@@ -126,6 +158,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       _jumpToEnd();
     }
     WidgetsBinding.instance.addPostFrameCallback((_) => _prefillSharedText());
+    if (widget.startTalk) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _enterTalk());
+    }
   }
 
   /// After the app starts, reopens the last chat if it is recent.
@@ -164,6 +199,12 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   @override
   void dispose() {
+    _talkToken++;
+    _talkSilence?.cancel();
+    _talkIdle?.cancel();
+    _talkVoice.dispose();
+    _talkPhase.dispose();
+    _talkCaption.dispose();
     AssistantActionLauncher.pendingPhotoPath = null;
     final run = _run;
     if (_busy && run != null) {
@@ -326,11 +367,11 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     ).stored(loc, action.type, status);
   }
 
-  Future<void> _send(String text, {String? prompt}) async {
+  Future<AssistantMessage?> _send(String text, {String? prompt}) async {
     final trimmed = text.trim();
-    if (trimmed.isEmpty || _busy || _loadingChat) return;
+    if (trimmed.isEmpty || _busy || _loadingChat) return null;
     if (_voice.open.value) await _voice.finish();
-    if (!mounted) return;
+    if (!mounted) return null;
 
     final message = AssistantMessage(
       role: AssistantRole.user,
@@ -344,11 +385,13 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       _voiceBase = '';
     });
     _saveUserMessage(message);
-    await _request();
+    return _request();
   }
 
-  Future<void> _request() async {
-    if (_busy) return;
+  /// Asks for an answer to the conversation so far. Returns the answer, or
+  /// null when it failed or was stopped.
+  Future<AssistantMessage?> _request() async {
+    if (_busy) return null;
     final loc = AppLocalizations.of(context)!;
     _stoppedText = loc.assistantStopped;
     final run = AssistantRun()..start();
@@ -356,21 +399,23 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       _busy = true;
       _run = run;
     });
+    if (_talk) _talkPhase.value = TalkPhase.thinking;
     _scrollToEnd();
 
     // Only the country, and only when the user turned this on.
     final here = await LocationCountry.current();
-    if (!mounted) return;
+    if (!mounted) return null;
     final result = await AssistantService.ask(
       _turns(),
       locale: loc.localeName,
       runId: run.id,
       here: here,
+      talk: _talk,
     );
     // Disposed after the next frame, once the waiting bubble that listens
     // to it is gone.
     WidgetsBinding.instance.addPostFrameCallback((_) => run.dispose());
-    if (run.stopped || !mounted) return;
+    if (run.stopped || !mounted) return null;
     _run = null;
 
     if (!result.ok) {
@@ -385,7 +430,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
         );
       });
       _scrollToEnd();
-      return;
+      return null;
     }
 
     String reply = result.reply;
@@ -394,21 +439,26 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
           ? loc.assistantEmptyReply
           : loc.assistantDraftReady;
     }
-    final message = AssistantMessage(
-      role: AssistantRole.assistant,
-      text: reply,
-      actions: result.actions,
-      replies: result.replies,
-      proposals: <StoredProposal>[
-        for (final action in result.actions) _storedFor(action, 'pending'),
-      ],
-    )..truncated = result.truncated;
+    final message =
+        AssistantMessage(
+            role: AssistantRole.assistant,
+            text: reply,
+            actions: result.actions,
+            replies: result.replies,
+            proposals: <StoredProposal>[
+              for (final action in result.actions)
+                _storedFor(action, 'pending'),
+            ],
+          )
+          ..truncated = result.truncated
+          ..sources = result.sources;
     setState(() {
       _busy = false;
       _messages.add(message);
     });
     _saveAssistantMessage(message);
     _scrollToEnd();
+    return message;
   }
 
   /// Stops waiting for the current answer. The function is asked to stop
@@ -488,8 +538,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
         : null;
     final lines = <String>['[Photo]'];
     if (result.groupKey != null) lines.add('Kind: ${result.groupKey}');
-    if (result.suggestedName != null)
+    if (result.suggestedName != null) {
       lines.add('Name: ${result.suggestedName}');
+    }
     if (result.expiryDate != null) {
       lines.add(
         'Expiry date: ${result.expiryDate!.toIso8601String().substring(0, 10)}',
@@ -567,6 +618,267 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     await _voice.chooseLocale(picked);
     if (!mounted) return;
     await _toggleMic();
+  }
+
+  // ---------------------------------------------------------------- talk
+
+  /// Starts Talk mode: Vaultara answers out loud and listens again after
+  /// each answer. A new chat starts with a short briefing.
+  Future<void> _enterTalk() async {
+    if (!mounted || _talk || !widget.isPremium) return;
+    if (_loadingChat) {
+      // Opened from the shortcut while the last chat is still loading.
+      Future<void>.delayed(const Duration(milliseconds: 300), () {
+        if (mounted && !_talk) _enterTalk();
+      });
+      return;
+    }
+    final loc = AppLocalizations.of(context)!;
+    final locale = Localizations.localeOf(context);
+    HapticFeedback.mediumImpact();
+    _pendingSpeech = null;
+    _tts.stop();
+    _focus.unfocus();
+    if (_voice.open.value) await _voice.cancel();
+    if (!mounted) return;
+    final token = ++_talkToken;
+    setState(() {
+      _talk = true;
+      _speakingMessage = null;
+    });
+    _talkCaption.value = '';
+    _talkPhase.value = TalkPhase.thinking;
+    final voiceOk = await _talkVoice.init(locale);
+    if (!mounted || !_talkLive(token)) return;
+    if (!voiceOk) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.talkNoVoice,
+        icon: Icons.volume_off_rounded,
+      );
+    }
+    if (_busy) {
+      _talkPhase.value = TalkPhase.idle;
+      return;
+    }
+    if (!_messages.any((m) => m.isUser)) {
+      await _talkSend(
+        loc.talkBriefingAsk,
+        prompt: '[Talk start] ${loc.talkBriefingAsk}',
+        token: token,
+      );
+    } else {
+      await _talkSay(loc.talkReady, token);
+      await _talkListen(token);
+    }
+  }
+
+  void _exitTalk() {
+    if (!_talk) return;
+    _talkToken++;
+    _talkSilence?.cancel();
+    _talkIdle?.cancel();
+    _talkConfirming = false;
+    _talkHandling = false;
+    unawaited(_talkVoice.stop());
+    if (_voice.open.value) unawaited(_voice.cancel());
+    _talkPhase.value = TalkPhase.idle;
+    _talkCaption.value = '';
+    setState(() => _talk = false);
+  }
+
+  /// True while the Talk mode turn started with [token] should go on.
+  bool _talkLive(int token) => mounted && _talk && token == _talkToken;
+
+  Future<void> _talkSay(String text, int token) async {
+    if (!_talkLive(token)) return;
+    _talkPhase.value = TalkPhase.speaking;
+    await _talkVoice.speak(text);
+  }
+
+  Future<void> _talkSend(
+    String text, {
+    String? prompt,
+    required int token,
+  }) async {
+    if (!_talkLive(token)) return;
+    _talkPhase.value = TalkPhase.thinking;
+    _talkCaption.value = text;
+    final reply = await _send(text, prompt: prompt);
+    if (!_talkLive(token)) return;
+    if (reply == null) {
+      final last = _messages.isEmpty ? null : _messages.last;
+      if (last != null && last.isFailure) {
+        _talkCaption.value = last.text;
+        await _talkSay(AssistantPlainText.speech(last.text), token);
+      }
+      if (_talkLive(token)) _talkPhase.value = TalkPhase.idle;
+      return;
+    }
+    await _talkAnswer(reply, token);
+  }
+
+  List<int> _pendingCards(AssistantMessage message) => <int>[
+    for (var i = 0; i < message.actions.length; i++)
+      if (!message.actions[i].isOpen &&
+          message.actionStates[i] == AssistantActionState.pending)
+        i,
+  ];
+
+  /// Says the answer, asks for a yes when it prepared a card, and listens.
+  Future<void> _talkAnswer(AssistantMessage message, int token) async {
+    if (!_talkLive(token)) return;
+    final loc = AppLocalizations.of(context)!;
+    final speech = AssistantPlainText.speech(message.text).trim();
+    final pending = _pendingCards(message);
+    final asks =
+        speech.endsWith('?') || speech.endsWith('？') || speech.endsWith('؟');
+    _talkCaption.value = AssistantPlainText.clean(message.text).trim();
+    await _talkSay(
+      pending.isNotEmpty && !asks ? '$speech ${loc.talkConfirmAsk}' : speech,
+      token,
+    );
+    if (!_talkLive(token)) return;
+    _talkConfirming = pending.isNotEmpty;
+    await _talkListen(token);
+  }
+
+  Future<void> _talkListen(int token) async {
+    if (!_talkLive(token)) return;
+    final loc = AppLocalizations.of(context)!;
+    final locale = Localizations.localeOf(context);
+    _talkSilence?.cancel();
+    _talkIdle?.cancel();
+    _talkHandling = false;
+    _talkPhase.value = TalkPhase.listening;
+    _talkCaption.value = '';
+    HapticFeedback.selectionClick();
+    final started = await _voice.start(
+      locale: locale,
+      onWords: (words, isFinal) {
+        if (!_talkLive(token) || isFinal) {
+          return;
+        }
+        _talkCaption.value = words;
+        _talkIdle?.cancel();
+        _talkSilence?.cancel();
+        if (words.trim().isNotEmpty) {
+          _talkSilence = Timer(_talkPause, () => _talkHeard(token));
+        }
+      },
+    );
+    if (!_talkLive(token)) {
+      if (started) unawaited(_voice.cancel());
+      return;
+    }
+    if (!started) {
+      _talkPhase.value = TalkPhase.idle;
+      _talkCaption.value = loc.assistantMicUnavailable;
+      return;
+    }
+    _talkIdle = Timer(_talkWait, () {
+      if (!_talkLive(token) || _talkPhase.value != TalkPhase.listening) {
+        return;
+      }
+      if (_voice.words.value.trim().isNotEmpty) return;
+      unawaited(_voice.cancel());
+      _talkPhase.value = TalkPhase.idle;
+      _talkCaption.value = '';
+    });
+  }
+
+  /// The user stopped speaking: a yes or no to a card, stop, or a new
+  /// request.
+  Future<void> _talkHeard(int token) async {
+    if (!_talkLive(token) || _talkHandling) return;
+    _talkHandling = true;
+    _talkSilence?.cancel();
+    _talkIdle?.cancel();
+    final loc = AppLocalizations.of(context)!;
+    final heard = (await _voice.finish()).trim();
+    if (!_talkLive(token)) return;
+    if (heard.isEmpty) {
+      _talkPhase.value = TalkPhase.idle;
+      _talkCaption.value = '';
+      return;
+    }
+    _talkCaption.value = heard;
+    if (TalkWords.isStop(heard, loc.talkStopWords)) {
+      await _talkSay(loc.talkBye, token);
+      if (_talkLive(token)) _exitTalk();
+      return;
+    }
+    final confirming = _talkConfirming;
+    _talkConfirming = false;
+    final last = _messages.isEmpty ? null : _messages.last;
+    if (confirming && last != null && !last.isUser && !last.isFailure) {
+      final pending = _pendingCards(last);
+      if (pending.isNotEmpty && TalkWords.isYes(heard, loc.talkYesWords)) {
+        _talkPhase.value = TalkPhase.thinking;
+        for (final i in pending) {
+          await _confirm(last, i);
+          if (!_talkLive(token)) return;
+        }
+        final done = pending.every(
+          (i) =>
+              last.actionStates[i] == AssistantActionState.applied ||
+              last.actionStates[i] == AssistantActionState.opened,
+        );
+        await _talkSay(done ? loc.talkDone : loc.talkNotDone, token);
+        await _talkListen(token);
+        return;
+      }
+      if (pending.isNotEmpty && TalkWords.isNo(heard, loc.talkNoWords)) {
+        for (final i in pending) {
+          _cancel(last, i);
+        }
+        await _talkSay(loc.talkSkipped, token);
+        await _talkListen(token);
+        return;
+      }
+    }
+    await _talkSend(heard, token: token);
+  }
+
+  /// The big button: interrupts Vaultara, sends what was said straight
+  /// away, or starts listening again.
+  void _talkOrb() {
+    final token = _talkToken;
+    switch (_talkPhase.value) {
+      case TalkPhase.speaking:
+        // The turn waiting for the speech goes on to listen by itself.
+        unawaited(_talkVoice.stop());
+      case TalkPhase.listening:
+        unawaited(_talkHeard(token));
+      case TalkPhase.idle:
+        unawaited(_talkListen(token));
+      case TalkPhase.thinking:
+        break;
+    }
+  }
+
+  /// A photo in Talk mode: the answer about it is said out loud.
+  Future<void> _talkPhoto() async {
+    if (_busy || !_talk) return;
+    final token = ++_talkToken;
+    _talkSilence?.cancel();
+    _talkIdle?.cancel();
+    _talkConfirming = false;
+    await _talkVoice.stop();
+    if (_voice.open.value) await _voice.cancel();
+    if (!_talkLive(token)) return;
+    _talkPhase.value = TalkPhase.idle;
+    _talkCaption.value = '';
+    final before = _messages.length;
+    await _takePhoto();
+    if (!_talkLive(token)) return;
+    final last = _messages.isEmpty ? null : _messages.last;
+    if (_messages.length > before &&
+        last != null &&
+        !last.isUser &&
+        !last.isFailure) {
+      await _talkAnswer(last, token);
+    }
   }
 
   /// The tick: the only way spoken words are sent.
@@ -956,6 +1268,17 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                     : Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
+                          IconButton(
+                            tooltip: loc.talkTitle,
+                            onPressed: _loadingChat
+                                ? null
+                                : (_talk ? _exitTalk : _enterTalk),
+                            icon: Icon(
+                              _talk
+                                  ? Icons.voice_over_off_rounded
+                                  : Icons.record_voice_over_rounded,
+                            ),
+                          ),
                           if (_messages.isNotEmpty)
                             IconButton(
                               tooltip: loc.assistantNewChat,
@@ -1001,42 +1324,51 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                   color: scheme.surface,
                   border: Border(top: BorderSide(color: scheme.outlineVariant)),
                 ),
-                child: ValueListenableBuilder<bool>(
-                  valueListenable: _voice.open,
-                  builder: (context, listening, _) => AnimatedSize(
-                    duration: const Duration(milliseconds: 220),
-                    curve: Curves.easeOutCubic,
-                    alignment: Alignment.bottomCenter,
-                    child: AnimatedSwitcher(
-                      duration: const Duration(milliseconds: 220),
-                      switchInCurve: Curves.easeOutCubic,
-                      switchOutCurve: Curves.easeInCubic,
-                      child: listening
-                          ? AssistantVoicePanel(
-                              key: const ValueKey<String>('voice'),
-                              voice: _voice,
-                              onCancel: _cancelVoice,
-                              onConfirm: _sendVoice,
-                              confirmLabel: loc.assistantSend,
-                              confirmNeedsWords: true,
-                              onEdit: _editVoice,
-                              onChangeLanguage: _chooseVoiceLanguage,
-                            )
-                          : AssistantInputBar(
-                              key: const ValueKey<String>('text'),
-                              controller: _input,
-                              focusNode: _focus,
-                              busy: _busy || _loadingChat,
-                              listening: listening,
-                              hintText: loc.assistantHint,
-                              onSend: () => _send(_input.text),
-                              onMic: _toggleMic,
-                              onPhoto: _takePhoto,
-                              onStop: _busy ? _stop : null,
-                            ),
-                    ),
-                  ),
-                ),
+                child: _talk
+                    ? AssistantTalkPanel(
+                        phase: _talkPhase,
+                        caption: _talkCaption,
+                        level: _voice.level,
+                        onOrb: _talkOrb,
+                        onEnd: _exitTalk,
+                        onPhoto: _talkPhoto,
+                      )
+                    : ValueListenableBuilder<bool>(
+                        valueListenable: _voice.open,
+                        builder: (context, listening, _) => AnimatedSize(
+                          duration: const Duration(milliseconds: 220),
+                          curve: Curves.easeOutCubic,
+                          alignment: Alignment.bottomCenter,
+                          child: AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 220),
+                            switchInCurve: Curves.easeOutCubic,
+                            switchOutCurve: Curves.easeInCubic,
+                            child: listening
+                                ? AssistantVoicePanel(
+                                    key: const ValueKey<String>('voice'),
+                                    voice: _voice,
+                                    onCancel: _cancelVoice,
+                                    onConfirm: _sendVoice,
+                                    confirmLabel: loc.assistantSend,
+                                    confirmNeedsWords: true,
+                                    onEdit: _editVoice,
+                                    onChangeLanguage: _chooseVoiceLanguage,
+                                  )
+                                : AssistantInputBar(
+                                    key: const ValueKey<String>('text'),
+                                    controller: _input,
+                                    focusNode: _focus,
+                                    busy: _busy || _loadingChat,
+                                    listening: listening,
+                                    hintText: loc.assistantHint,
+                                    onSend: () => _send(_input.text),
+                                    onMic: _toggleMic,
+                                    onPhoto: _takePhoto,
+                                    onStop: _busy ? _stop : null,
+                                  ),
+                          ),
+                        ),
+                      ),
               ),
           ],
         ),
@@ -1166,6 +1498,11 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
             reported: message.reported,
           ),
         ),
+        if (message.sources.isNotEmpty)
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: AssistantSourceLinks(sources: message.sources),
+          ),
         if (extras.isNotEmpty)
           Padding(
             padding: const EdgeInsetsDirectional.only(end: 32, bottom: 4),
