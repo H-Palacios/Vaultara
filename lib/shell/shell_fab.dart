@@ -82,6 +82,8 @@ void openAddRecord(
         inWallet: draft.inWallet,
         keptIn: draft.keptIn,
         lostLine: draft.lostLine,
+        issuedIn: draft.issuedIn,
+        provider: draft.provider,
         leadDays: draft.leadDays,
         reminderBaseId: DateTime.now().millisecondsSinceEpoch % 2147483647,
         householdId: draft.shared ? HouseholdRepository.householdId : null,

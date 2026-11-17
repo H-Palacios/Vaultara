@@ -24,6 +24,11 @@ class RecordInput {
 
   /// The phone number for blocking it if it is lost.
   final String? lostLine;
+
+  /// The country that issued it or where a vehicle is registered, and the
+  /// bank, insurer or company it is with.
+  final String? issuedIn;
+  final String? provider;
   final int? leadDays;
   final bool shared;
 
@@ -47,6 +52,8 @@ class RecordInput {
     this.inWallet = false,
     this.keptIn,
     this.lostLine,
+    this.issuedIn,
+    this.provider,
     this.leadDays,
     this.shared = false,
   });

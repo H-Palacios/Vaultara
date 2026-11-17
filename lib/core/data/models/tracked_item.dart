@@ -35,6 +35,29 @@ class TrackedItem {
 
   /// The phone number to call to block it if it is lost, for cards.
   final String? lostLine;
+
+  /// The country that issued it, or where a vehicle is registered: an ISO
+  /// alpha-2 code. Optional; which records show it depends on the group.
+  final String? issuedIn;
+
+  /// The bank, insurer, store or company it is with. Optional.
+  final String? provider;
+
+  static const int maxProvider = 60;
+
+  static String? cleanCountry(Object? value) {
+    if (value is! String) return null;
+    final code = value.trim().toUpperCase();
+    return RegExp(r'^[A-Z]{2}$').hasMatch(code) ? code : null;
+  }
+
+  static String? cleanProvider(Object? value) {
+    if (value is! String) return null;
+    final text = value.replaceAll(RegExp(r'\s+'), ' ').trim();
+    if (text.isEmpty) return null;
+    return text.length > maxProvider ? text.substring(0, maxProvider) : text;
+  }
+
   final int? leadDays;
 
   final bool isDeleted;
@@ -74,6 +97,8 @@ class TrackedItem {
     this.inWallet = false,
     String? keptIn,
     String? lostLine,
+    String? issuedIn,
+    String? provider,
     this.leadDays,
     this.isDeleted = false,
     this.deletedAt,
@@ -83,7 +108,9 @@ class TrackedItem {
     this.updatedBy,
     this.updatedAt,
   }) : keptIn = KeptIn.clean(keptIn),
-       lostLine = KeptIn.cleanLine(lostLine);
+       lostLine = KeptIn.cleanLine(lostLine),
+       issuedIn = cleanCountry(issuedIn),
+       provider = cleanProvider(provider);
 
   TrackedItem copyWith({
     String? id,
@@ -115,6 +142,10 @@ class TrackedItem {
     bool clearKeptIn = false,
     String? lostLine,
     bool clearLostLine = false,
+    String? issuedIn,
+    bool clearIssuedIn = false,
+    String? provider,
+    bool clearProvider = false,
     int? leadDays,
     bool clearLeadDays = false,
     bool? isDeleted,
@@ -158,6 +189,8 @@ class TrackedItem {
       inWallet: nextWallet,
       keptIn: nextPlace,
       lostLine: clearLostLine ? null : (lostLine ?? this.lostLine),
+      issuedIn: clearIssuedIn ? null : (issuedIn ?? this.issuedIn),
+      provider: clearProvider ? null : (provider ?? this.provider),
       leadDays: clearLeadDays ? null : (leadDays ?? this.leadDays),
       isDeleted: isDeleted ?? this.isDeleted,
       deletedAt: deletedAt ?? this.deletedAt,
@@ -194,6 +227,8 @@ class TrackedItem {
       'inWallet': inWallet,
       'keptIn': keptIn,
       'lostLine': lostLine,
+      'issuedIn': issuedIn,
+      'provider': provider,
       'leadDays': leadDays,
       'isDeleted': isDeleted,
       'deletedAt': deletedAt != null ? Timestamp.fromDate(deletedAt!) : null,
@@ -295,6 +330,8 @@ class TrackedItem {
       inWallet: map['inWallet'] == true,
       keptIn: map['keptIn'] is String ? map['keptIn'] as String : null,
       lostLine: map['lostLine'] is String ? map['lostLine'] as String : null,
+      issuedIn: cleanCountry(map['issuedIn']),
+      provider: cleanProvider(map['provider']),
       leadDays: _readLeadDays(map['leadDays']),
       isDeleted: map['isDeleted'] as bool? ?? false,
       deletedAt: deletedAt,

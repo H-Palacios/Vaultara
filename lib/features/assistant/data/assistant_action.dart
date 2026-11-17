@@ -25,6 +25,7 @@ enum AssistantActionType {
   renewalPlan,
   appointment,
   planStep,
+  recordDetails,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -303,6 +304,16 @@ class AssistantAction {
   /// An appointment card.
   final RenewalAppointment? appointment;
 
+  /// A record details card: the country that issued the record and the
+  /// company it is with. [setsIssuedIn] and [setsProvider] say which change;
+  /// a null value with the flag set removes it.
+  final bool setsIssuedIn;
+  final String? detailsIssuedIn;
+  final String? previousIssuedIn;
+  final bool setsProvider;
+  final String? detailsProvider;
+  final String? previousProvider;
+
   /// A plan step card: which step (from 0), ticked or unticked, its text.
   final int? stepIndex;
   final bool stepDone;
@@ -369,6 +380,12 @@ class AssistantAction {
     this.stepIndex,
     this.stepDone = true,
     this.stepText,
+    this.setsIssuedIn = false,
+    this.detailsIssuedIn,
+    this.previousIssuedIn,
+    this.setsProvider = false,
+    this.detailsProvider,
+    this.previousProvider,
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -581,6 +598,24 @@ class AssistantAction {
         }
       case 'renewal_plan':
         return _fromRenewalPlan(raw);
+      case 'record_details':
+        {
+          final id = text(raw['recordId'], 200);
+          final setsIssuedIn = raw.containsKey('issuedIn');
+          final setsProvider = raw.containsKey('provider');
+          if (id == null || (!setsIssuedIn && !setsProvider)) return null;
+          return AssistantAction(
+            type: AssistantActionType.recordDetails,
+            recordId: id,
+            name: text(raw['name'], 60),
+            setsIssuedIn: setsIssuedIn,
+            detailsIssuedIn: country(raw['issuedIn']),
+            previousIssuedIn: country(raw['previousIssuedIn']),
+            setsProvider: setsProvider,
+            detailsProvider: text(raw['provider'], 60),
+            previousProvider: text(raw['previousProvider'], 60),
+          );
+        }
       case 'appointment':
         {
           final id = text(raw['recordId'], 200);

@@ -183,6 +183,8 @@ class _RecordsScreenState extends State<RecordsScreen> {
           inWallet: draft.inWallet,
           keptIn: draft.keptIn,
           lostLine: draft.lostLine,
+          issuedIn: draft.issuedIn,
+          provider: draft.provider,
           leadDays: draft.leadDays,
           isDeleted: false,
           householdId: draft.shared ? HouseholdRepository.householdId : null,
@@ -501,39 +503,42 @@ class _RecordsScreenState extends State<RecordsScreen> {
                       onPressed: _openAddRecordSheet,
                     ),
                     PopupMenuButton<_RecordsMenu>(
-                  tooltip: loc.recordMenuMore,
-                  icon: Icon(Icons.more_vert_rounded, color: scheme.onSurface),
-                  onSelected: (choice) {
-                    switch (choice) {
-                      case _RecordsMenu.sortExpiry:
-                        setState(() => _sortByName = false);
-                      case _RecordsMenu.sortName:
-                        setState(() => _sortByName = true);
-                      case _RecordsMenu.select:
-                        setState(() {
-                          _selecting = true;
-                          _selected.clear();
-                        });
-                    }
-                  },
-                  itemBuilder: (_) => [
-                    CheckedPopupMenuItem(
-                      value: _RecordsMenu.sortExpiry,
-                      checked: !_sortByName,
-                      child: Text(loc.recordsSortExpiry),
+                      tooltip: loc.recordMenuMore,
+                      icon: Icon(
+                        Icons.more_vert_rounded,
+                        color: scheme.onSurface,
+                      ),
+                      onSelected: (choice) {
+                        switch (choice) {
+                          case _RecordsMenu.sortExpiry:
+                            setState(() => _sortByName = false);
+                          case _RecordsMenu.sortName:
+                            setState(() => _sortByName = true);
+                          case _RecordsMenu.select:
+                            setState(() {
+                              _selecting = true;
+                              _selected.clear();
+                            });
+                        }
+                      },
+                      itemBuilder: (_) => [
+                        CheckedPopupMenuItem(
+                          value: _RecordsMenu.sortExpiry,
+                          checked: !_sortByName,
+                          child: Text(loc.recordsSortExpiry),
+                        ),
+                        CheckedPopupMenuItem(
+                          value: _RecordsMenu.sortName,
+                          checked: _sortByName,
+                          child: Text(loc.recordsSortName),
+                        ),
+                        const PopupMenuDivider(),
+                        PopupMenuItem(
+                          value: _RecordsMenu.select,
+                          child: Text(loc.recordsSelect),
+                        ),
+                      ],
                     ),
-                    CheckedPopupMenuItem(
-                      value: _RecordsMenu.sortName,
-                      checked: _sortByName,
-                      child: Text(loc.recordsSortName),
-                    ),
-                    const PopupMenuDivider(),
-                    PopupMenuItem(
-                      value: _RecordsMenu.select,
-                      child: Text(loc.recordsSelect),
-                    ),
-                  ],
-                ),
                   ],
                 ),
               ),
@@ -655,19 +660,19 @@ class _RecordsScreenState extends State<RecordsScreen> {
                                   if (!groupEmpty) ...[
                                     if (all.length > _searchFrom ||
                                         _searchController.text.isNotEmpty)
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        0,
-                                        12,
-                                        0,
-                                        4,
+                                      Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                          0,
+                                          12,
+                                          0,
+                                          4,
+                                        ),
+                                        child: SearchField(
+                                          controller: _searchController,
+                                          hintText: loc.searchRecords,
+                                          onChanged: () => setState(() {}),
+                                        ),
                                       ),
-                                      child: SearchField(
-                                        controller: _searchController,
-                                        hintText: loc.searchRecords,
-                                        onChanged: () => setState(() {}),
-                                      ),
-                                    ),
                                     Padding(
                                       padding: const EdgeInsets.fromLTRB(
                                         0,

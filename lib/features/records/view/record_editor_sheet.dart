@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/platform/privacy_screen.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
@@ -51,6 +52,8 @@ import 'package:vaultara/features/records/logic/expiry_dates.dart';
 import 'package:vaultara/features/records/view/editor/editor_category_group_fields.dart';
 import 'package:vaultara/features/records/view/editor/editor_free_limit_banner.dart';
 import 'package:vaultara/features/records/view/editor/editor_more_details.dart';
+import 'package:vaultara/features/records/view/editor/editor_details_fields.dart';
+import 'package:vaultara/features/records/logic/record_details.dart';
 import 'package:vaultara/features/records/view/editor/editor_repeat_lock.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:vaultara/features/records/view/editor/editor_notes_expiry_fields.dart';
@@ -118,7 +121,7 @@ Future<void> showRecordEditorSheet({
         onSave: onSave,
       );
     },
-    );
+  );
 }
 
 class _RecordEditorSheet extends StatefulWidget {
@@ -205,6 +208,12 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   bool locked = false;
   String? keptIn;
   late final TextEditingController lostLineController;
+
+  /// The country that issued it (or where a vehicle is registered), and
+  /// the bank, insurer or company. Shown by group; filled in where known.
+  String? issuedIn;
+  bool _issuedTouched = false;
+  late final TextEditingController providerController;
   int? leadDays;
   bool shared = false;
   bool scanBusy = false;
@@ -277,6 +286,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         ? null
         : (draft.keptIn ?? (draft.inWallet ? KeptIn.wallet : null));
     lostLineController = TextEditingController(text: draft?.lostLine ?? '');
+    issuedIn = draft?.issuedIn;
+    _issuedTouched = draft?.issuedIn != null;
+    providerController = TextEditingController(text: draft?.provider ?? '');
     leadDays = draft?.leadDays;
     shared = draft?.shared ?? false;
     renewalCost = draft?.renewalCost;
@@ -308,6 +320,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         locked ||
         keptIn != null ||
         lostLineController.text.trim().isNotEmpty ||
+        providerController.text.trim().isNotEmpty ||
         leadDays != null ||
         notesController.text.trim().isNotEmpty ||
         (renewalCost ?? 0) > 0 ||
@@ -404,6 +417,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     nameController.dispose();
     notesController.dispose();
     lostLineController.dispose();
+    providerController.dispose();
     expiryController.dispose();
 
     if (isEditMode) PrivacyScreen.release();
@@ -583,12 +597,16 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final String? group = reading.groupKey ?? r.groupKey;
     final DateTime? expiry = reading.expiryDate ?? r.expiryDate;
     final bool newDate = reading.expiryDate != null;
-    final List<DateTime> dates = <DateTime>{
-      ...reading.otherDates,
-      ...r.otherDates,
-      if (newDate && r.expiryDate != null) DateUtils.dateOnly(r.expiryDate!),
-    }.where((d) => expiry == null || !DateUtils.isSameDay(d, expiry)).toList()
-      ..sort();
+    final List<DateTime> dates =
+        <DateTime>{
+              ...reading.otherDates,
+              ...r.otherDates,
+              if (newDate && r.expiryDate != null)
+                DateUtils.dateOnly(r.expiryDate!),
+            }
+            .where((d) => expiry == null || !DateUtils.isSameDay(d, expiry))
+            .toList()
+          ..sort();
 
     scanReadOnline = true;
     scanNoExpiry = reading.noExpiry && expiry == null;
@@ -713,6 +731,14 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     if (r.kind == ScanDocumentKind.passport) {
       scannedNationality = r.nationality ?? r.issuingCountry;
     }
+    // The country read from the document is the one that issued it.
+    final scannedCountry = Countries.fromMrz(r.issuingCountry);
+    if (scannedCountry != null &&
+        RecordDetails.countryKind(selectedSubcategory ?? r.groupKey) ==
+            RecordCountryKind.issued) {
+      issuedIn = scannedCountry;
+      _issuedTouched = true;
+    }
     if (holderId == null && r.hasHolderName) {
       final people = PeopleRepository.people.value;
       // The saved full name: the account's display name was never set for
@@ -820,6 +846,11 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
     if (!reminderTouched && reminderOffsetDays == null) {
       reminderOffsetDays = RecordDefaults.reminderDays;
+    }
+    // The country: the holder's passport country for passports, otherwise
+    // where they live, until the user picks one.
+    if (!_issuedTouched) {
+      issuedIn = RecordDetails.defaultCountry(groupKey, holderId);
     }
     if (filled &&
         (_defaultsHintGroup != null || !_defaultsHintShownThisSession)) {
@@ -1238,7 +1269,6 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
   }
 
-
   void _onNameEdited(String _) {
     if (nameError != null) {
       setState(() => nameError = null);
@@ -1473,6 +1503,12 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           inWallet: keptIn == KeptIn.wallet,
           keptIn: keptIn,
           lostLine: KeptIn.cleanLine(lostLineController.text),
+          issuedIn: RecordDetails.countryKind(selectedSubcategory) == null
+              ? null
+              : issuedIn,
+          provider: RecordDetails.providerKind(selectedSubcategory) == null
+              ? null
+              : TrackedItem.cleanProvider(providerController.text),
           leadDays: leadDays,
           shared: shared && HouseholdRepository.canEditShared,
         ),
@@ -1546,6 +1582,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       locked,
       keptIn,
       lostLineController.text.trim(),
+      issuedIn,
+      providerController.text.trim(),
       leadDays,
       shared,
     ].join('|');
@@ -1614,6 +1652,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       repeatMonths != null,
       locked,
       keptIn != null,
+      providerController.text.trim().isNotEmpty,
       leadDays != null,
       notesController.text.trim().isNotEmpty,
       renewalCost != null && renewalCost! > 0,
@@ -1627,7 +1666,33 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     final bool showShared =
         showExtras && !isAnyTutorialMode && HouseholdRepository.canEditShared;
 
+    final RecordCountryKind? countryKind = RecordDetails.countryKind(
+      selectedSubcategory,
+    );
+    final RecordProviderKind? providerKind = RecordDetails.providerKind(
+      selectedSubcategory,
+    );
     final List<Widget> moreChildren = [
+      if (showExtras && (countryKind != null || providerKind != null)) ...[
+        if (countryKind != null)
+          EditorCountryField(
+            kind: countryKind,
+            value: issuedIn,
+            enabled: !isSaving,
+            onChanged: (code) => setState(() {
+              _issuedTouched = true;
+              issuedIn = code;
+            }),
+          ),
+        if (providerKind != null)
+          EditorProviderField(
+            kind: providerKind,
+            controller: providerController,
+            enabled: !isSaving,
+            onChanged: (_) => setState(() {}),
+          ),
+        const SizedBox(height: 10),
+      ],
       if (showExtras) ...[
         KeyedSubtree(
           key: repeatLeadKey,

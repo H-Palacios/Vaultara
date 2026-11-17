@@ -1,3 +1,4 @@
+import 'package:vaultara/features/records/logic/record_details.dart';
 import 'package:vaultara/core/data/repositories/attachment_repository.dart';
 import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
 import 'package:flutter/material.dart';
@@ -115,6 +116,7 @@ class AssistantActionLauncher {
       locked: action.locked,
       inWallet: action.inWallet ?? defaults.inWallet,
       leadDays: action.leadDays ?? defaults.leadDays,
+      issuedIn: RecordDetails.defaultCountry(groupKey, action.personId),
       reminderBaseId: DateTime.now().millisecondsSinceEpoch % 2147483647,
     );
   }
@@ -257,6 +259,8 @@ class AssistantActionLauncher {
           return await _saveAppointment(context, action, slot);
         case AssistantActionType.planStep:
           return await _tickStep(context, action, slot);
+        case AssistantActionType.recordDetails:
+          return await _saveDetails(context, action, slot);
       }
     } catch (_) {
       if (context.mounted) {
@@ -366,6 +370,45 @@ class AssistantActionLauncher {
         context,
         loc.coachAppointmentSaved,
         icon: Icons.event_available_rounded,
+      );
+    }
+    return AssistantApplyResult.applied;
+  }
+
+  /// Saves the country and the company the user told Ask Vaultara about.
+  static Future<AssistantApplyResult> _saveDetails(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final record = await _editableRecord(context, action.recordId);
+    if (record == null) return AssistantApplyResult.failed;
+    final updated = record.copyWith(
+      issuedIn: action.setsIssuedIn ? action.detailsIssuedIn : null,
+      clearIssuedIn: action.setsIssuedIn && action.detailsIssuedIn == null,
+      provider: action.setsProvider ? action.detailsProvider : null,
+      clearProvider: action.setsProvider && action.detailsProvider == null,
+    );
+    await RecordRepository.updateRecord(record, updated);
+    final stored = RecordRepository.stored(updated);
+    slot.undo = () async {
+      await RecordRepository.updateRecord(
+        stored,
+        stored.copyWith(
+          issuedIn: record.issuedIn,
+          clearIssuedIn: record.issuedIn == null,
+          provider: record.provider,
+          clearProvider: record.provider == null,
+        ),
+      );
+      return true;
+    };
+    if (context.mounted) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.detailsSaved,
+        icon: Icons.fact_check_outlined,
       );
     }
     return AssistantApplyResult.applied;

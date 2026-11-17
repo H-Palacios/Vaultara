@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:vaultara/features/records/logic/record_details.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
@@ -116,6 +117,8 @@ class AssistantActionPreview {
         return 'appointment';
       case AssistantActionType.planStep:
         return 'plan_step';
+      case AssistantActionType.recordDetails:
+        return 'record_details';
     }
   }
 
@@ -224,6 +227,8 @@ class AssistantActionPreview {
         );
       case AssistantActionType.renewalPlan:
         return _renewalPlan(f, action);
+      case AssistantActionType.recordDetails:
+        return _recordDetails(f, action);
       case AssistantActionType.appointment:
         return _appointment(f, action);
       case AssistantActionType.planStep:
@@ -322,6 +327,57 @@ class AssistantActionPreview {
       note: loc.coachPlanNote,
       private: record?.locked ?? action.name == null,
       links: links,
+    );
+  }
+
+  static AssistantActionPreview _recordDetails(
+    _Formatter f,
+    AssistantAction action,
+  ) {
+    final loc = f.loc;
+    final record = _record(action);
+    final group = record?.subcategoryName;
+    final countryKind = RecordDetails.countryKind(group);
+    final providerKind = RecordDetails.providerKind(group);
+    String providerLabel() {
+      switch (providerKind) {
+        case RecordProviderKind.bank:
+          return loc.detailsBank;
+        case RecordProviderKind.store:
+          return loc.detailsStore;
+        case RecordProviderKind.insurer:
+          return loc.detailsInsurer;
+        case RecordProviderKind.storeBrand:
+          return loc.detailsStoreBrand;
+        case RecordProviderKind.provider:
+        case null:
+          return loc.detailsProvider;
+      }
+    }
+
+    return AssistantActionPreview(
+      title: loc.detailsCardTitle,
+      icon: Icons.fact_check_outlined,
+      subject: _recordName(loc, record, action.name),
+      rows: <AssistantChangeRow>[
+        if (action.setsIssuedIn)
+          AssistantChangeRow(
+            label: countryKind == RecordCountryKind.registered
+                ? loc.detailsRegisteredIn
+                : loc.detailsIssuedBy,
+            before: action.previousIssuedIn == null
+                ? null
+                : f.country(action.previousIssuedIn),
+            after: f.country(action.detailsIssuedIn),
+          ),
+        if (action.setsProvider)
+          AssistantChangeRow(
+            label: providerLabel(),
+            before: action.previousProvider,
+            after: action.detailsProvider ?? loc.assistantValueNone,
+          ),
+      ],
+      private: record?.locked ?? action.name == null,
     );
   }
 
