@@ -31,6 +31,54 @@ const WEB_SEARCH_TOOL = {
 
 const TIME_PATTERN = /^([01]\d|2[0-3]):([0-5]\d)$/;
 
+// What a record's group says about where and with whom it is renewed.
+// Government documents are renewed with the country that issued them;
+// vehicles where they are registered; cards, insurance and memberships
+// with the company they are with.
+const ISSUED_GROUPS = new Set([
+  "passports", "id_cards", "residence_permits", "firearm_licences", "driving_licences",
+  "international_driving_permits", "boat_and_pilot_licences", "visas", "study_permits",
+  "work_permits", "professional_licences",
+]);
+const VEHICLE_GROUPS = new Set(["vehicle_registrations", "roadworthy_certificates"]);
+const PROVIDER_KINDS = {
+  debit_and_credit_cards: "bank",
+  store_cards: "store",
+  vehicle_insurances: "insurer",
+  property_insurances: "insurer",
+  life_insurances: "insurer",
+  health_insurances: "insurer",
+  travel_insurances: "insurer",
+  medical_aid_cards: "insurer",
+  gym_memberships: "company",
+  club_memberships: "company",
+  subscriptions: "company",
+  lease_agreements: "company",
+  warranties: "store or brand",
+};
+
+function recordKind(record) {
+  const group = typeof record?.group === "string" ? record.group : "";
+  if (VEHICLE_GROUPS.has(group)) return { kind: "vehicle" };
+  if (ISSUED_GROUPS.has(group)) return { kind: "document" };
+  if (PROVIDER_KINDS[group]) return { kind: "provider", provider: PROVIDER_KINDS[group] };
+  return { kind: "other" };
+}
+
+// The provider's own site: its name, without spaces, appears in the host
+// ("Capitec" and capitecbank.co.za, "FNB" and fnb.co.za).
+function isProviderSite(url, provider) {
+  if (typeof provider !== "string") return false;
+  const name = provider.toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (name.length < 3) return false;
+  try {
+    const host = new URL(url).hostname.toLowerCase().replace(/[^a-z0-9]/g, "");
+    return host.includes(name);
+  } catch (_) {
+    return false;
+  }
+}
+
 // Only https links, without spaces or credentials, as found in search
 // results. Anything else is dropped rather than shown to the user.
 function cleanUrl(value) {
@@ -162,6 +210,8 @@ const COACH_PROMPT = [
   "4. Answer with the steps in short, the fee and the processing time when the official page gives them, then call propose_renewal_plan with apply_in set to the country the holder applies from, the steps, the official booking link when one was found, and the pages used as sources. Only use links that appeared in the search results; never make one up. Say that rules and fees can change, so check the official page before paying.",
   "5. Vaultara never books appointments. When the user says they booked one, call propose_appointment with the date, the time, the place and what to bring. When they finish a step, call propose_plan_step. When they ask what is next, call get_renewal_plan and give only the next step that is not done.",
   "6. When the user has the new document, offer propose_renew_record with the new expiry date.",
+  "7. Vehicle licence discs and registrations are renewed in the country where the vehicle is registered (record_country), not where the holder lives.",
+  "8. Bank and store cards, insurance, medical aid, memberships, subscriptions, leases and warranties are renewed with the company they are with (provider): use that company's own website as the official source. If get_renewal_plan says the provider is missing, ask which bank, insurer or company it is with before searching, then offer propose_record_details to save it on the record so you never ask again. Do the same for a vehicle's country when record_country is missing.",
 ].join("\n");
 
 module.exports = function build(h) {
@@ -191,6 +241,8 @@ module.exports = function build(h) {
   // Where the record's holder lives: their saved home country, or for the
   // user, the phone's current country as a hint. Null when unknown.
   async function holderHome(ctx, record) {
+    // A vehicle belongs to the country it is registered in.
+    if (recordKind(record).kind === "vehicle" && record.issuedIn) return record.issuedIn;
     if (record.holderId) {
       try {
         const people = typeof ctx.people === "function" ? await ctx.people() : [];
@@ -207,9 +259,22 @@ module.exports = function build(h) {
     const record = await ctx.findRecord(input?.record_id);
     if (!record) return { error: "Unknown record_id. Call list_records first." };
     const home = await holderHome(ctx, record);
-    const where = home
-      ? { holder_lives_in: home }
-      : { holder_lives_in: null, ask: "Where the holder lives is not saved. Ask the user before searching." };
+    const info = recordKind(record);
+    const where = {
+      holder_lives_in: home,
+      record_kind: info.kind,
+      record_country: record.issuedIn || null,
+      provider: record.provider || null,
+    };
+    const asks = [];
+    if (!home) asks.push("Where the holder lives is not saved. Ask the user before searching.");
+    if (info.kind === "provider" && !record.provider) {
+      asks.push(`The ${info.provider} is not saved. Ask which ${info.provider} it is with, then offer propose_record_details to save it.`);
+    }
+    if (info.kind === "vehicle" && !record.issuedIn) {
+      asks.push("The country the vehicle is registered in is not saved. Ask, then offer propose_record_details to save it.");
+    }
+    if (asks.length) where.ask = asks.join(" ");
     const data = await currentPlan(ctx, record);
     if (!data) {
       return {
@@ -257,7 +322,19 @@ module.exports = function build(h) {
     if (!sources.length) {
       return { error: "Add the official pages you used as sources (from web_search results). Search first if you have not." };
     }
-    if (!sources.some((s) => s.official)) {
+    const info = recordKind(record);
+    const provider = str(input?.provider, 60) || record.provider || null;
+    if (info.kind === "provider") {
+      if (!provider) {
+        return { error: `Ask which ${info.provider} it is with before making the plan, and offer propose_record_details to save it.` };
+      }
+      for (const source of sources) {
+        if (isProviderSite(source.url, provider)) source.official = true;
+      }
+      if (!sources.some((s) => s.official)) {
+        return { error: `Use ${provider}'s own website (or a government page) as a source. Search ${provider}'s site.` };
+      }
+    } else if (!sources.some((s) => s.official)) {
       return { error: "None of the sources is an official government, embassy or visa centre page. Search the official sites and use those as sources." };
     }
     const country = h.countryCode(input?.country);
@@ -318,6 +395,30 @@ module.exports = function build(h) {
     };
   }
 
+  async function proposeRecordDetails(ctx, input, actions) {
+    const record = await ctx.findRecord(input?.record_id);
+    if (!record) return { error: "Unknown record_id. Call list_records first." };
+    const issuedIn = input?.issued_in === undefined ? undefined : h.countryCode(input.issued_in);
+    if (input?.issued_in !== undefined && input.issued_in !== "" && !issuedIn) {
+      return { error: "issued_in must be an ISO alpha-2 country code." };
+    }
+    const provider = input?.provider === undefined ? undefined : str(input.provider, 60);
+    const changes = {};
+    if (issuedIn !== undefined && issuedIn !== (record.issuedIn || null)) changes.issuedIn = issuedIn || null;
+    if (provider !== undefined && (provider || null) !== (record.provider || null)) changes.provider = provider || null;
+    if (!Object.keys(changes).length) return { error: "Nothing would change." };
+    const failed = pushAction(actions, {
+      type: "record_details",
+      recordId: record.id,
+      name: recordName(record),
+      ...changes,
+      previousIssuedIn: record.issuedIn || null,
+      previousProvider: record.locked ? null : record.provider || null,
+    });
+    if (failed) return failed;
+    return draftReady();
+  }
+
   async function proposePlanStep(ctx, input, actions) {
     const record = await ctx.findRecord(input?.record_id);
     if (!record) return { error: "Unknown record_id. Call list_records first." };
@@ -355,6 +456,7 @@ module.exports = function build(h) {
           record_id: { type: "string" },
           country: { type: "string", description: "ISO alpha-2 code of the country whose document it is." },
           apply_in: { type: "string", description: "ISO alpha-2 code of the country where the holder applies: where they live, unless an official page sends people living there to another country." },
+          provider: { type: "string", description: "The bank, insurer or company, when the user just told you and it is not saved yet." },
           apply_in_reason: { type: "string", description: "Only when apply_in is not where the holder lives: what the official page says, for example \"No visa office in the Bahamas; residents apply at VFS Miami\"." },
           steps: {
             type: "array",
@@ -402,6 +504,19 @@ module.exports = function build(h) {
       },
     },
     {
+      name: "propose_record_details",
+      description: "Prepare saving on a record the country that issued it (or where a vehicle is registered) and/or the bank, insurer or company it is with, after the user told you. The user confirms in the app.",
+      input_schema: {
+        type: "object",
+        properties: {
+          record_id: { type: "string" },
+          issued_in: { type: "string", description: "ISO alpha-2 country code. Empty string removes it." },
+          provider: { type: "string", description: "Bank, insurer, store or company name. Empty string removes it." },
+        },
+        required: ["record_id"],
+      },
+    },
+    {
       name: "propose_plan_step",
       description: "Prepare ticking off (or unticking) a step of a record's saved renewal plan, when the user says they did it.",
       input_schema: {
@@ -428,6 +543,8 @@ module.exports = function build(h) {
         return proposeAppointment(ctx, input, actions);
       case "propose_plan_step":
         return proposePlanStep(ctx, input, actions);
+      case "propose_record_details":
+        return proposeRecordDetails(ctx, input, actions);
       default:
         return undefined;
     }
@@ -449,4 +566,4 @@ module.exports.HISTORY_PROMPT = HISTORY_PROMPT;
 module.exports.citationsOf = citationsOf;
 module.exports.mergeSources = mergeSources;
 module.exports.isWebSearchOff = isWebSearchOff;
-module.exports._test = { cleanUrl, cleanSteps, cleanSources, cleanBring, citationsOf, isWebSearchOff, isOfficial };
+module.exports._test = { cleanUrl, cleanSteps, cleanSources, cleanBring, citationsOf, isWebSearchOff, isOfficial, isProviderSite, recordKind };

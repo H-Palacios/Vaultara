@@ -1121,6 +1121,9 @@ class UserData {
       keptIn: KEPT_IN.includes(data.keptIn) ? data.keptIn : data.inWallet === true ? "wallet" : null,
       reminderDays: reminder !== null && reminder >= 0 ? reminder : null,
       leadDays: lead !== null && lead > 0 && lead <= MAX_LEAD_DAYS ? lead : null,
+      issuedIn: countryCode(data.issuedIn),
+      // A locked record keeps who it is with private, like its name.
+      provider: data.locked === true ? null : str(data.provider, 60) || null,
     };
   }
 
@@ -1151,6 +1154,8 @@ class UserData {
     };
     if (!record.locked) {
       out.person = record.shared ? null : await this.personName(record.holderId);
+      if (record.issuedIn) out.issued_in = record.issuedIn;
+      if (record.provider) out.provider = record.provider;
     }
     if (withDetails) {
       out.repeats_every_months = record.repeatMonths;
