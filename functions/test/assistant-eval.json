@@ -1,0 +1,1238 @@
+{
+ "_about": "Ask Vaultara quality set. Offline: node functions/test/assistant-eval.js (routing and record matching). Live: add --live with ANTHROPIC_API_KEY set (checks the first tool the model picks).",
+ "records": [
+  {
+   "id": "r1",
+   "name": "Portuguese Passport",
+   "also": [
+    "Паспорт",
+    "Pasaporte",
+    "Passeport",
+    "Reisepass",
+    "Passaporto",
+    "Paspoort",
+    "جواز السفر",
+    "דרכון",
+    "Διαβατήριο",
+    "여권",
+    "パスポート",
+    "护照",
+    "หนังสือเดินทาง",
+    "पासपोर्ट",
+    "Paszport",
+    "Pasaport"
+   ]
+  },
+  {
+   "id": "r2",
+   "name": "Driving Licence",
+   "also": [
+    "Führerschein",
+    "Permis de conduire",
+    "Licencia de conducir",
+    "Carta de condução",
+    "Patente",
+    "Rijbewijs",
+    "Водительское удостоверение",
+    "Prawo jazdy",
+    "Ehliyet",
+    "رخصة القيادة",
+    "運転免許証",
+    "驾照",
+    "운전면허증"
+   ]
+  },
+  {
+   "id": "r3",
+   "name": "Netflix",
+   "also": []
+  },
+  {
+   "id": "r4",
+   "name": "Car Insurance",
+   "also": [
+    "Autoversicherung",
+    "Assurance auto",
+    "Seguro del coche",
+    "Seguro auto",
+    "Assicurazione auto",
+    "Страховка автомобиля"
+   ]
+  },
+  {
+   "id": "r5",
+   "name": "Gym Membership",
+   "also": [
+    "Fitnessstudio",
+    "Abonnement salle de sport",
+    "Membresía del gimnasio",
+    "Academia"
+   ]
+  },
+  {
+   "id": "r6",
+   "name": "Work Permit",
+   "also": [
+    "Arbeitserlaubnis",
+    "Permis de travail",
+    "Permiso de trabajo",
+    "Разрешение на работу"
+   ]
+  },
+  {
+   "id": "r7",
+   "name": "Medical Aid",
+   "also": [
+    "Krankenversicherung",
+    "Mutuelle",
+    "Seguro médico",
+    "Plano de saúde"
+   ]
+  },
+  {
+   "id": "r8",
+   "name": "ID Card",
+   "also": [
+    "Personalausweis",
+    "Carte d'identité",
+    "DNI",
+    "Cartão de cidadão",
+    "Carta d'identità",
+    "Удостоверение личности",
+    "بطاقة الهوية",
+    "身分証明書",
+    "身份证",
+    "신분증"
+   ]
+  }
+ ],
+ "cases": [
+  {
+   "id": "typo-01",
+   "lang": "en",
+   "message": "when does my pasport expire",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "pasport",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-02",
+   "lang": "en",
+   "message": "show me my drivng licnse",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "drivng licnse",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-03",
+   "lang": "en",
+   "message": "is my netflx still active",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "netflx",
+   "find": "Netflix"
+  },
+  {
+   "id": "typo-04",
+   "lang": "en",
+   "message": "car insurnce renewal date",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "car insurnce",
+   "find": "Car Insurance"
+  },
+  {
+   "id": "typo-05",
+   "lang": "en",
+   "message": "whens my jym membership up",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "jym membership",
+   "find": "Gym Membership"
+  },
+  {
+   "id": "typo-06",
+   "lang": "en",
+   "message": "work permt expiry",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "work permt",
+   "find": "Work Permit"
+  },
+  {
+   "id": "typo-07",
+   "lang": "en",
+   "message": "medicl aid",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "medicl aid",
+   "find": "Medical Aid"
+  },
+  {
+   "id": "typo-08",
+   "lang": "en",
+   "message": "my id crad",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "id crad",
+   "find": "ID Card"
+  },
+  {
+   "id": "typo-09",
+   "lang": "fr",
+   "message": "quand expire mon passeprot",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "passeprot",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-10",
+   "lang": "fr",
+   "message": "mon permis de condiure",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "permis de condiure",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-11",
+   "lang": "fr",
+   "message": "assurence auto",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "assurence auto",
+   "find": "Car Insurance"
+  },
+  {
+   "id": "typo-12",
+   "lang": "de",
+   "message": "wann läuft mein reispass ab",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "reispass",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-13",
+   "lang": "de",
+   "message": "mein fuhrerschein",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "fuhrerschein",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-14",
+   "lang": "de",
+   "message": "autoversicherng",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "autoversicherng",
+   "find": "Car Insurance"
+  },
+  {
+   "id": "typo-15",
+   "lang": "de",
+   "message": "personalauswies",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "personalauswies",
+   "find": "ID Card"
+  },
+  {
+   "id": "typo-16",
+   "lang": "es",
+   "message": "cuándo vence mi pasaprote",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "pasaprote",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-17",
+   "lang": "es",
+   "message": "mi licencia de conduicr",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "licencia de conduicr",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-18",
+   "lang": "es",
+   "message": "permiso de trabjo",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "permiso de trabjo",
+   "find": "Work Permit"
+  },
+  {
+   "id": "typo-19",
+   "lang": "pt",
+   "message": "quando expira a minha carta de conduçao",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "carta de conduçao",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-20",
+   "lang": "pt",
+   "message": "plano de saude",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "plano de saude",
+   "find": "Medical Aid"
+  },
+  {
+   "id": "typo-21",
+   "lang": "it",
+   "message": "il mio pasaporto",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "pasaporto",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-22",
+   "lang": "it",
+   "message": "assicurazone auto",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "assicurazone auto",
+   "find": "Car Insurance"
+  },
+  {
+   "id": "typo-23",
+   "lang": "nl",
+   "message": "mijn rijbwijs",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "rijbwijs",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-24",
+   "lang": "pl",
+   "message": "mój paszprot",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "paszprot",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-25",
+   "lang": "tr",
+   "message": "ehliyetm ne zaman bitiyor",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "ehliyet",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-26",
+   "lang": "ru",
+   "message": "когда истекает мой паспорт",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "паспорт",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-27",
+   "lang": "ru",
+   "message": "мой пасспорт",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "пасспорт",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-28",
+   "lang": "ru",
+   "message": "pasport",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "pasport",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-29",
+   "lang": "ru",
+   "message": "разрешение на роботу",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "разрешение на роботу",
+   "find": "Work Permit"
+  },
+  {
+   "id": "typo-30",
+   "lang": "ar",
+   "message": "متى ينتهي جواز السفر",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "جواز السفر",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-31",
+   "lang": "ar",
+   "message": "رخصه القياده",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "رخصه القياده",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-32",
+   "lang": "ar",
+   "message": "بطاقه الهويه",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "بطاقه الهويه",
+   "find": "ID Card"
+  },
+  {
+   "id": "typo-33",
+   "lang": "he",
+   "message": "מתי הדרכון שלי פג",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "דרכון",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-34",
+   "lang": "el",
+   "message": "διαβατηριο",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "διαβατηριο",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-35",
+   "lang": "el",
+   "message": "diavatirio",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "diavatirio",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-36",
+   "lang": "ko",
+   "message": "여꿘 언제 만료돼",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "여꿘",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-37",
+   "lang": "ko",
+   "message": "운전면허증",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "운전면허증",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-38",
+   "lang": "ja",
+   "message": "ぱすぽーと",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "ぱすぽーと",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-39",
+   "lang": "ja",
+   "message": "運転免許",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "運転免許",
+   "find": "Driving Licence"
+  },
+  {
+   "id": "typo-40",
+   "lang": "zh",
+   "message": "我的护照什么时候过期",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "护照",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-41",
+   "lang": "zh",
+   "message": "身份证",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "身份证",
+   "find": "ID Card"
+  },
+  {
+   "id": "typo-42",
+   "lang": "th",
+   "message": "หนังสือเดินทาง",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "หนังสือเดินทาง",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-43",
+   "lang": "hi",
+   "message": "पासपोर्ट",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "पासपोर्ट",
+   "find": "Portuguese Passport"
+  },
+  {
+   "id": "typo-44",
+   "lang": "en",
+   "message": "ＮＥＴＦＬＩＸ",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false,
+   "query": "ＮＥＴＦＬＩＸ",
+   "find": "Netflix"
+  },
+  {
+   "id": "nomatch-01",
+   "lang": "en",
+   "message": "my boat licence",
+   "tools": [
+    "list_records",
+    "suggest_replies",
+    "propose_record"
+   ],
+   "smart": false,
+   "query": "boat licence",
+   "find": null
+  },
+  {
+   "id": "nomatch-02",
+   "lang": "en",
+   "message": "spotify",
+   "tools": [
+    "list_records",
+    "suggest_replies",
+    "propose_record"
+   ],
+   "smart": false,
+   "query": "spotify",
+   "find": null
+  },
+  {
+   "id": "nomatch-03",
+   "lang": "de",
+   "message": "hundesteuer",
+   "tools": [
+    "list_records",
+    "suggest_replies",
+    "propose_record"
+   ],
+   "smart": false,
+   "query": "hundesteuer",
+   "find": null
+  },
+  {
+   "id": "nomatch-04",
+   "lang": "ru",
+   "message": "квартира",
+   "tools": [
+    "list_records",
+    "suggest_replies",
+    "propose_record"
+   ],
+   "smart": false,
+   "query": "квартира",
+   "find": null
+  },
+  {
+   "id": "nomatch-05",
+   "lang": "zh",
+   "message": "银行卡",
+   "tools": [
+    "list_records",
+    "suggest_replies",
+    "propose_record"
+   ],
+   "smart": false,
+   "query": "银行卡",
+   "find": null
+  },
+  {
+   "id": "nomatch-06",
+   "lang": "ko",
+   "message": "보험료",
+   "tools": [
+    "list_records",
+    "suggest_replies",
+    "propose_record"
+   ],
+   "smart": false,
+   "query": "보험료",
+   "find": null
+  },
+  {
+   "id": "nomatch-07",
+   "lang": "ar",
+   "message": "عقد الإيجار",
+   "tools": [
+    "list_records",
+    "suggest_replies",
+    "propose_record"
+   ],
+   "smart": false,
+   "query": "عقد الإيجار",
+   "find": null
+  },
+  {
+   "id": "simple-01",
+   "lang": "en",
+   "message": "what expires this month",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-02",
+   "lang": "en",
+   "message": "how many records do I have",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-03",
+   "lang": "en",
+   "message": "open settings",
+   "tools": [
+    "open_screen"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-04",
+   "lang": "en",
+   "message": "turn on dark mode",
+   "tools": [
+    "propose_setting"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-05",
+   "lang": "en",
+   "message": "add my gym membership expiring 3 March",
+   "tools": [
+    "propose_record"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-06",
+   "lang": "en",
+   "message": "renew my netflix",
+   "tools": [
+    "propose_renew_record",
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-07",
+   "lang": "en",
+   "message": "delete the netflix record",
+   "tools": [
+    "propose_delete_record",
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-08",
+   "lang": "en",
+   "message": "change the reminder on my passport to 60 days",
+   "tools": [
+    "propose_update_record",
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-09",
+   "lang": "fr",
+   "message": "ouvre les paramètres",
+   "tools": [
+    "open_screen"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-10",
+   "lang": "fr",
+   "message": "qu'est-ce qui expire bientôt",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-11",
+   "lang": "de",
+   "message": "was läuft bald ab",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-12",
+   "lang": "de",
+   "message": "öffne die Einstellungen",
+   "tools": [
+    "open_screen"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-13",
+   "lang": "es",
+   "message": "qué vence pronto",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-14",
+   "lang": "es",
+   "message": "activa el modo oscuro",
+   "tools": [
+    "propose_setting"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-15",
+   "lang": "pt",
+   "message": "o que expira em breve",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-16",
+   "lang": "it",
+   "message": "cosa scade presto",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-17",
+   "lang": "ru",
+   "message": "что скоро истекает",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-18",
+   "lang": "ar",
+   "message": "ما الذي ينتهي قريبا",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-19",
+   "lang": "ja",
+   "message": "もうすぐ期限が切れるものは",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-20",
+   "lang": "zh",
+   "message": "什么快过期了",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-21",
+   "lang": "ko",
+   "message": "곧 만료되는 거 있어",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-22",
+   "lang": "hi",
+   "message": "जल्द क्या खत्म हो रहा है",
+   "tools": [
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-23",
+   "lang": "en",
+   "message": "who are the people on my account",
+   "tools": [
+    "list_people"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-24",
+   "lang": "en",
+   "message": "add my son Leo",
+   "tools": [
+    "propose_create_person"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-25",
+   "lang": "en",
+   "message": "remember that 'green book' means my passport",
+   "tools": [
+    "remember_word",
+    "list_records"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-26",
+   "lang": "en",
+   "message": "forget what green book means",
+   "tools": [
+    "forget_word"
+   ],
+   "smart": false
+  },
+  {
+   "id": "hard-01",
+   "lang": "en",
+   "message": "I'm planning a trip to Japan in April, what do I need to renew before I go?",
+   "tools": [
+    "list_trips",
+    "list_records",
+    "propose_create_trip"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-02",
+   "lang": "en",
+   "message": "compare what I spend on subscriptions with last year",
+   "tools": [
+    "list_records",
+    "renewal_costs"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-03",
+   "lang": "en",
+   "message": "which of my documents should I renew first and why?",
+   "tools": [
+    "list_records"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-04",
+   "lang": "en",
+   "message": "we're moving abroad to Portugal next year, what do we need to sort out?",
+   "tools": [
+    "list_records",
+    "list_people"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-05",
+   "lang": "en",
+   "message": "does my passport last until the end of my Spain trip?",
+   "tools": [
+    "list_trips",
+    "list_records"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-06",
+   "lang": "en",
+   "message": "plan my renewals for the rest of the year",
+   "tools": [
+    "list_records"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-07",
+   "lang": "en",
+   "message": "what's the total cost of all my renewals?",
+   "tools": [
+    "list_records",
+    "renewal_costs"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-08",
+   "lang": "en",
+   "message": "add a trip to Kenya from 2 to 20 June with my wife",
+   "tools": [
+    "propose_create_trip",
+    "list_people"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-09",
+   "lang": "en",
+   "message": "do I need a visa for Brazil? and is my passport valid long enough?",
+   "tools": [
+    "list_records",
+    "list_trips",
+    "visa_check"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-10",
+   "lang": "en",
+   "message": "we're having a baby in May, what documents will we need?",
+   "tools": [
+    "list_records",
+    "list_people"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-11",
+   "lang": "fr",
+   "message": "je planifie un voyage en Italie, que dois-je renouveler ?",
+   "tools": [
+    "list_trips",
+    "list_records",
+    "propose_create_trip"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-12",
+   "lang": "de",
+   "message": "ich plane eine Reise nach Kanada, brauche ich ein Visum?",
+   "tools": [
+    "list_records",
+    "list_trips",
+    "visa_check"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-13",
+   "lang": "es",
+   "message": "voy de viaje a México en julio, ¿qué tengo que renovar?",
+   "tools": [
+    "list_trips",
+    "list_records"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-14",
+   "lang": "pt",
+   "message": "vou fazer uma viagem ao Brasil, o meu passaporte chega?",
+   "tools": [
+    "list_trips",
+    "list_records"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-15",
+   "lang": "it",
+   "message": "viaggio in Grecia ad agosto, il passaporto è valido?",
+   "tools": [
+    "list_trips",
+    "list_records"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-16",
+   "lang": "nl",
+   "message": "ik ga op reis naar Thailand, heb ik een visum nodig?",
+   "tools": [
+    "list_records",
+    "list_trips",
+    "visa_check"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-17",
+   "lang": "en",
+   "message": "My passport expires in March, my licence in May and my work permit in June. Which order should I renew them in, how long does each take, and what will it all cost if I do them together?",
+   "tools": [
+    "list_records",
+    "renewal_costs"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-18",
+   "lang": "en",
+   "message": "why did my car insurance reminder not come? and when will the next one be?",
+   "tools": [
+    "list_records",
+    "renewal_history"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-19",
+   "lang": "en",
+   "message": "every record that expires before my wedding in October",
+   "tools": [
+    "list_records"
+   ],
+   "smart": true
+  },
+  {
+   "id": "hard-20",
+   "lang": "en",
+   "message": "budget for all renewals next year",
+   "tools": [
+    "list_records",
+    "renewal_costs"
+   ],
+   "smart": true
+  },
+  {
+   "id": "voice-01",
+   "lang": "en",
+   "message": "um so when does uh my passport expire",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false
+  },
+  {
+   "id": "voice-02",
+   "lang": "en",
+   "message": "hey can you add my car insurance it expires on the fifth of august",
+   "tools": [
+    "propose_record"
+   ],
+   "smart": false
+  },
+  {
+   "id": "voice-03",
+   "lang": "es",
+   "message": "oye cuando vence mi licencia de conducir",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false
+  },
+  {
+   "id": "voice-04",
+   "lang": "de",
+   "message": "sag mal wann läuft mein führerschein ab",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false
+  },
+  {
+   "id": "voice-05",
+   "lang": "fr",
+   "message": "euh mon passeport il expire quand",
+   "tools": [
+    "list_records",
+    "get_record"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-27",
+   "lang": "en",
+   "message": "make a new category called Pets",
+   "tools": [
+    "list_categories",
+    "propose_create_category"
+   ],
+   "smart": false
+  },
+  {
+   "id": "simple-28",
+   "lang": "en",
+   "message": "what did I delete recently",
+   "tools": [
+    "list_deleted"
+   ],
+   "smart": false
+  }
+ ]
+}

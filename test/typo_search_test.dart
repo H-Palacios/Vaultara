@@ -41,4 +41,25 @@ void main() {
     );
     expect(TextSearch.distance('pasprot', 'pasport'), 0.5);
   });
+
+  test('Arabic, Hebrew and Japanese spellings fold together', () {
+    expect(TextSearch.fold('أحمد'), TextSearch.fold('احمد'));
+    expect(TextSearch.fold('إقامة'), TextSearch.fold('اقامه'));
+    expect(TextSearch.fold('مُسْتَنَد'), TextSearch.fold('مستند'));
+    expect(TextSearch.fold('ספרך'), TextSearch.fold('ספרכ'));
+    expect(TextSearch.fold('パスポート'), TextSearch.fold('ぱすぽーと'));
+  });
+
+  test('did you mean suggests only a clear winner', () {
+    final names = ['Passport', 'Gym card', 'Driving Licence', 'Medical Aid'];
+    expect(TextSearch.suggest(candidates: names, query: 'pasport'), 'Passport');
+    expect(
+      TextSearch.suggest(candidates: names, query: 'medicl'),
+      'Medical Aid',
+    );
+    expect(TextSearch.suggest(candidates: names, query: 'qwxyzk'), isNull);
+    expect(TextSearch.suggest(candidates: names, query: 'ab'), isNull);
+    // An exact name is a match, not a suggestion.
+    expect(TextSearch.suggest(candidates: names, query: 'passport'), isNull);
+  });
 }

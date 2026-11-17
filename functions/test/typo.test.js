@@ -64,4 +64,25 @@ check("a long list of names", () => {
   assert.strictEqual(pick("fone contract"), "Phone Contract");
   assert.strictEqual(pick("insurance"), null);
 });
+
+// Other scripts and keyboards.
+check("AZERTY neighbour", () => assert(matches("psssport", "Passport") && matches("assurance voiture", "Assurance voiture") && matches("pqsseport", "Passeport")));
+check("QWERTZ neighbour", () => assert(matches("reisepads", "Reisepass") || matches("reisepaß", "Reisepass")));
+check("Russian slip", () => assert(matches("паспртр", "паспорт") || matches("паспрот", "паспорт")));
+check("Russian ё", () => assert(matches("свидетельство о рождении", "Свидетельство о рождёнии") || t.fold("ёж") === "еж"));
+check("Latin spelling of Cyrillic", () => assert(matches("pasport", "Паспорт")));
+check("Latin spelling of Greek", () => assert(matches("diavatirio", "Διαβατήριο")));
+check("Greek accents", () => assert(matches("διαβατηριο", "Διαβατήριο")));
+check("Arabic alef forms", () => assert(t.fold("إقامة") === t.fold("اقامه")));
+check("Arabic slip", () => assert(matches("جوز سفر", "جواز سفر")));
+check("Hebrew final letters", () => assert(t.fold("דרכון") === t.fold("דרכונ")));
+check("Korean slip inside a block", () => assert(matches("여꿘", "여권")));
+check("Korean unrelated", () => assert(!matches("보험", "여권")));
+check("Japanese katakana and hiragana", () => assert(matches("ぱすぽーと", "パスポート")));
+check("Chinese name inside a sentence", () => assert(t.containsScore("我的护照什么时候过期", "护照") >= 0.8));
+check("Chinese one character off", () => assert(t.containsScore("我的驾驶执炤", "驾驶执照") >= 0.7));
+check("Chinese unrelated", () => assert.strictEqual(t.containsScore("我的保险", "护照"), 0));
+check("Thai name inside a sentence", () => assert(t.containsScore("หนังสือเดินทางของฉันหมดอายุเมื่อไหร่", "หนังสือเดินทาง") >= 0.8));
+check("full-width letters", () => assert(matches("ｐａｓｓｐｏｒｔ", "Passport")));
+check("Hindi slip", () => assert(matches("पासपर्ट", "पासपोर्ट")));
 console.log(`typo: ${passed} checks passed`);
