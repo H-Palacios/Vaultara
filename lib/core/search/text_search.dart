@@ -127,7 +127,35 @@ class TextSearch {
     'ό': 'ο',
     'ύ': 'υ',
     'ώ': 'ω',
+    'ϊ': 'ι',
+    'ΐ': 'ι',
+    'ϋ': 'υ',
+    'ΰ': 'υ',
+    'ς': 'σ',
+    // Arabic and Persian letters read as the same letter.
+    'أ': 'ا',
+    'إ': 'ا',
+    'آ': 'ا',
+    'ٱ': 'ا',
+    'ة': 'ه',
+    'ى': 'ي',
+    'ی': 'ي',
+    'ئ': 'ي',
+    'ؤ': 'و',
+    'ک': 'ك',
+    // Hebrew final letters.
+    'ך': 'כ',
+    'ם': 'מ',
+    'ן': 'נ',
+    'ף': 'פ',
+    'ץ': 'צ',
   };
+
+  /// Arabic short vowels, tatweel and Hebrew vowel points, which people
+  /// rarely type and which should not stop a match.
+  static final RegExp _marks = RegExp(
+    '[\u064B-\u065F\u0670\u0640\u0591-\u05C7]',
+  );
 
   /// Folds British and American spellings together, so "license" finds
   /// "Driving Licence" and the other way round. Expects folded text.
@@ -139,13 +167,57 @@ class TextSearch {
 
   /// Lower case with common accents removed, for comparing text.
   static String fold(String input) {
-    final lower = input.toLowerCase();
+    final lower = input.toLowerCase().replaceAll(_marks, '');
     final out = StringBuffer();
     for (final rune in lower.runes) {
+      // Katakana to hiragana, so either spelling of a Japanese word matches.
+      if (rune >= 0x30A1 && rune <= 0x30F6) {
+        out.writeCharCode(rune - 0x60);
+        continue;
+      }
       final char = String.fromCharCode(rune);
       out.write(_accents[char] ?? char);
     }
     return out.toString();
+  }
+
+  /// A "Did you mean …?" suggestion for a search that found nothing: the
+  /// candidate closest to [query], allowing more slips than the search
+  /// itself (about one in three letters). Returns null when nothing is close
+  /// enough or when two candidates are about as close, so it never guesses.
+  static String? suggest({
+    required Iterable<String> candidates,
+    required String query,
+  }) {
+    final needle = spelling(fold(query.trim()));
+    if (needle.runes.length < 3) return null;
+    String? best;
+    var bestScore = double.infinity;
+    var second = double.infinity;
+    final seen = <String>{};
+    for (final candidate in candidates) {
+      final text = spelling(fold(candidate.trim()));
+      if (text.isEmpty || !seen.add(text)) continue;
+      // Compare with the whole name and with each of its words.
+      final options = <String>[text, ..._words(text)];
+      var score = double.infinity;
+      for (final option in options) {
+        if ((option.length - needle.length).abs() > 3) continue;
+        final d = distance(needle, option) / math.max(needle.length, 1);
+        if (d < score) score = d;
+      }
+      if (score < bestScore) {
+        second = bestScore;
+        bestScore = score;
+        best = candidate.trim();
+      } else if (score < second) {
+        second = score;
+      }
+    }
+    if (best == null || bestScore > 0.34 || bestScore == 0) return null;
+    // Two about as close: do not guess.
+    if (second - bestScore < 0.08) return null;
+    return best;
   }
 
   static List<String> _words(String text) => text
@@ -195,7 +267,8 @@ class TextSearch {
     final m = b.length;
     double indel(String word, int i) {
       final c = word[i];
-      final repeat = (i > 0 && word[i - 1] == c) ||
+      final repeat =
+          (i > 0 && word[i - 1] == c) ||
           (i + 1 < word.length && word[i + 1] == c);
       return repeat ? 0.3 : 1;
     }
@@ -238,32 +311,40 @@ class TextSearch {
     return best;
   }
 
-  static const List<String> _keyboardRows = <String>[
-    '1234567890',
-    'qwertyuiop',
-    'asdfghjkl',
-    'zxcvbnm',
+  // Phone keyboard rows: QWERTY, AZERTY, QWERTZ, Russian, Ukrainian,
+  // Greek, Arabic and Hebrew. Keys next to each other in any of them count
+  // as a small slip.
+  static const List<List<String>> _keyboardLayouts = <List<String>>[
+    <String>['1234567890', 'qwertyuiop', 'asdfghjkl', 'zxcvbnm'],
+    <String>['1234567890', 'azertyuiop', 'qsdfghjklm', 'wxcvbn'],
+    <String>['1234567890', 'qwertzuiopü', 'asdfghjklöä', 'yxcvbnm'],
+    <String>['йцукенгшщзхъ', 'фывапролджэ', 'ячсмитьбю'],
+    <String>['йцукенгшщзхї', 'фівапролджє', 'ячсмитьбю'],
+    <String>['ςερτυθιοπ', 'ασδφγηξκλ', 'ζχψωβνμ'],
+    <String>['ضصثقفغعهخحج', 'شسيبلاتنمكط', 'ئءؤرلاىةوزظ'],
+    <String>['קראטוןםפ', 'שדגכעיחלךף', 'זסבהנמצתץ'],
   ];
 
   static final Map<String, Set<String>> _neighbours = () {
-    final at = <String, List<double>>{};
-    for (var r = 0; r < _keyboardRows.length; r++) {
-      final row = _keyboardRows[r];
-      for (var c = 0; c < row.length; c++) {
-        at[row[c]] = <double>[r.toDouble(), c + r * 0.5];
-      }
-    }
     final out = <String, Set<String>>{};
-    at.forEach((key, pos) {
-      final set = <String>{};
-      at.forEach((other, p) {
-        if (other == key) return;
-        if ((pos[0] - p[0]).abs() <= 1 && (pos[1] - p[1]).abs() <= 1.01) {
-          set.add(other);
+    for (final rows in _keyboardLayouts) {
+      final at = <String, List<double>>{};
+      for (var r = 0; r < rows.length; r++) {
+        final keys = rows[r].split('');
+        for (var c = 0; c < keys.length; c++) {
+          at[keys[c]] = <double>[r.toDouble(), c + r * 0.5];
         }
+      }
+      at.forEach((key, pos) {
+        final set = out.putIfAbsent(key, () => <String>{});
+        at.forEach((other, p) {
+          if (other == key) return;
+          if ((pos[0] - p[0]).abs() <= 1 && (pos[1] - p[1]).abs() <= 1.01) {
+            set.add(other);
+          }
+        });
       });
-      out[key] = set;
-    });
+    }
     return out;
   }();
 

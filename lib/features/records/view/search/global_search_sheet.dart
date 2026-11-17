@@ -183,10 +183,56 @@ class _GlobalSearchSheetState extends State<GlobalSearchSheet> {
             const SizedBox(height: 12),
             Expanded(
               child: result.isEmpty
-                  ? SearchEmptyState(
-                      reason: result.emptyReason,
-                      noMatchesText: loc.recordsNoMatch(result.query),
-                      emptyText: loc.globalSearchNoMatches,
+                  ? Column(
+                      children: [
+                        // A tap-able "Did you mean Passport?" when a typo
+                        // found nothing.
+                        if (result.emptyReason == SearchEmptyReason.noMatches)
+                          Builder(
+                            builder: (context) {
+                              final suggestion = TextSearch.suggest(
+                                query: result.query,
+                                candidates: <String>[
+                                  for (final r in pool) ...[
+                                    if (!r.locked) r.name,
+                                    CategoryResolver.groupLabel(
+                                      context,
+                                      r.subcategoryName,
+                                    ),
+                                  ],
+                                ],
+                              );
+                              if (suggestion == null) {
+                                return const SizedBox.shrink();
+                              }
+                              return Padding(
+                                padding: const EdgeInsets.only(bottom: 8),
+                                child: ActionChip(
+                                  avatar: const Icon(
+                                    Icons.auto_fix_high_rounded,
+                                    size: 18,
+                                  ),
+                                  label: Text(loc.emailDidYouMean(suggestion)),
+                                  onPressed: () {
+                                    _searchController.text = suggestion;
+                                    _searchController.selection =
+                                        TextSelection.collapsed(
+                                          offset: suggestion.length,
+                                        );
+                                    setState(() {});
+                                  },
+                                ),
+                              );
+                            },
+                          ),
+                        Expanded(
+                          child: SearchEmptyState(
+                            reason: result.emptyReason,
+                            noMatchesText: loc.recordsNoMatch(result.query),
+                            emptyText: loc.globalSearchNoMatches,
+                          ),
+                        ),
+                      ],
                     )
                   : ListView.builder(
                       itemCount: result.matches.length,

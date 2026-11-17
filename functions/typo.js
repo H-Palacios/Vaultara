@@ -24,26 +24,87 @@
 // Picking a match: best() only returns a candidate when it is clearly the
 // closest one. When two are about as close, it returns both as ambiguous so
 // the assistant asks instead of guessing.
+//
+// Other scripts get the same care:
+// - Keyboard slips use the layout people actually type on: QWERTY, AZERTY
+//   and QWERTZ for Latin letters, ЙЦУКЕН for Cyrillic, and the standard
+//   Greek, Arabic and Hebrew phone keyboards.
+// - Letters native speakers treat as the same are folded together: Arabic
+//   أ إ آ ٱ to ا, ة to ه, ى and ی to ي, ک to ك, and the short-vowel marks
+//   removed; Hebrew final letters (ך ם ן ף ץ); Greek accents and final ς;
+//   Russian ё; Japanese katakana and hiragana; full-width letters.
+// - Korean is compared letter by letter inside each syllable block, so one
+//   wrong letter in a block is one small mistake, not a whole wrong block.
+// - Chinese, Japanese, Thai, Lao, Khmer and Burmese do not put spaces
+//   between words, so names are found inside the text character by
+//   character.
+// - Cyrillic and Greek names also match their spelling in Latin letters,
+//   so "pasport" finds "паспорт" and "diavatirio" finds "διαβατήριο".
 
-const KEYBOARD_ROWS = ["1234567890", "qwertyuiop", "asdfghjkl", "zxcvbnm"];
+// Phone keyboard rows. Keys next to each other in any of them count as a
+// small slip, so a French or German keyboard is treated as fairly as an
+// English one.
+const KEYBOARD_LAYOUTS = [
+  ["1234567890", "qwertyuiop", "asdfghjkl", "zxcvbnm"], // QWERTY
+  ["1234567890", "azertyuiop", "qsdfghjklm", "wxcvbn"], // AZERTY
+  ["1234567890", "qwertzuiopü", "asdfghjklöä", "yxcvbnm"], // QWERTZ
+  ["йцукенгшщзхъ", "фывапролджэ", "ячсмитьбю"], // ЙЦУКЕН (Russian)
+  ["йцукенгшщзхї", "фівапролджє", "ячсмитьбю"], // Ukrainian
+  ["ςερτυθιοπ", "ασδφγηξκλ", "ζχψωβνμ"], // Greek
+  ["ضصثقفغعهخحج", "شسيبلاتنمكط", "ئءؤرلاىةوزظ"], // Arabic
+  ["קראטוןםפ", "שדגכעיחלךף", "זסבהנמצתץ"], // Hebrew
+];
 
 // Keys next to each other on a phone keyboard, including diagonals.
 const NEIGHBOURS = (() => {
   const map = new Map();
-  const at = new Map();
-  KEYBOARD_ROWS.forEach((row, r) => {
-    for (let c = 0; c < row.length; c++) at.set(row[c], [r, c + r * 0.5]);
-  });
-  for (const [a, [ra, ca]] of at) {
-    const set = new Set();
-    for (const [b, [rb, cb]] of at) {
-      if (a === b) continue;
-      if (Math.abs(ra - rb) <= 1 && Math.abs(ca - cb) <= 1.01) set.add(b);
+  for (const rows of KEYBOARD_LAYOUTS) {
+    const at = new Map();
+    rows.forEach((row, r) => {
+      const keys = Array.from(row);
+      for (let c = 0; c < keys.length; c++) at.set(keys[c], [r, c + r * 0.5]);
+    });
+    for (const [a, [ra, ca]] of at) {
+      const set = map.get(a) || new Set();
+      for (const [b, [rb, cb]] of at) {
+        if (a === b) continue;
+        if (Math.abs(ra - rb) <= 1 && Math.abs(ca - cb) <= 1.01) set.add(b);
+      }
+      map.set(a, set);
     }
-    map.set(a, set);
   }
   return map;
 })();
+
+// Letters that are written differently but read as the same letter.
+const SAME_LETTER = new Map(
+  Object.entries({
+    // Arabic and Persian
+    "أ": "ا", "إ": "ا", "آ": "ا", "ٱ": "ا", "ة": "ه", "ى": "ي", "ی": "ي", "ئ": "ي",
+    "ؤ": "و", "ک": "ك", "ګ": "گ",
+    // Hebrew final forms
+    "ך": "כ", "ם": "מ", "ן": "נ", "ף": "פ", "ץ": "צ",
+    // Greek final sigma
+    "ς": "σ",
+    // Russian and Belarusian
+    "ё": "е",
+  }),
+);
+
+// Cyrillic and Greek letters spelled in Latin letters, for matching a name
+// typed on a Latin keyboard ("pasport" for "паспорт").
+const TO_LATIN = new Map(
+  Object.entries({
+    а: "a", б: "b", в: "v", г: "g", ґ: "g", д: "d", е: "e", є: "ye", ж: "zh", з: "z", и: "i",
+    і: "i", ї: "yi", й: "y", к: "k", л: "l", м: "m", н: "n", о: "o", п: "p", р: "r", с: "s",
+    т: "t", у: "u", ф: "f", х: "kh", ц: "ts", ч: "ch", ш: "sh", щ: "shch", ъ: "", ы: "y",
+    ь: "", э: "e", ю: "yu", я: "ya", ђ: "dj", ј: "j", љ: "lj", њ: "nj", ћ: "c", џ: "dz",
+    ў: "u", қ: "k", ғ: "g", ү: "u", ұ: "u", ң: "n", ө: "o", һ: "h", ә: "a",
+    α: "a", β: "v", γ: "g", δ: "d", ε: "e", ζ: "z", η: "i", θ: "th", ι: "i", κ: "k",
+    λ: "l", μ: "m", ν: "n", ξ: "x", ο: "o", π: "p", ρ: "r", σ: "s", τ: "t", υ: "i",
+    φ: "f", χ: "ch", ψ: "ps", ω: "o",
+  }),
+);
 
 const VOWELS = new Set(["a", "e", "i", "o", "u", "y"]);
 
@@ -66,10 +127,24 @@ const STOP_WORDS = new Set([
 ]);
 
 function fold(value) {
-  return String(value ?? "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
+  return Array.from(
+    String(value ?? "")
+      .normalize("NFKC")
+      .toLowerCase()
+      .normalize("NFD")
+      // Accents, Arabic short vowels and tatweel, Hebrew vowel points.
+      .replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640\u0591-\u05c7]/g, ""),
+  )
+    .map((ch) => {
+      const same = SAME_LETTER.get(ch);
+      if (same) return same;
+      // Katakana to hiragana, so either spelling of a Japanese word matches.
+      const code = ch.codePointAt(0);
+      if (code >= 0x30a1 && code <= 0x30f6) return String.fromCodePoint(code - 0x60);
+      return ch;
+    })
+    .join("")
+    .normalize("NFC")
     .replace(/ß/g, "ss")
     .replace(/æ/g, "ae")
     .replace(/œ/g, "oe")
@@ -78,6 +153,94 @@ function fold(value) {
     .replace(/['’`]/g, "")
     .replace(/[^\p{L}\p{N}]+/gu, " ")
     .trim();
+}
+
+// Scripts written without spaces between words.
+const NO_SPACE = /[\u3040-\u30ff\u3400-\u9fff\uf900-\ufaff\u0e00-\u0e7f\u0e80-\u0eff\u1780-\u17ff\u1000-\u109f]/u;
+const HANGUL = /[\uac00-\ud7a3]/u;
+const TRANSLITERABLE = /^[\u0400-\u04ff\u0370-\u03ff]+$/u;
+
+function noSpaceScript(word) {
+  return NO_SPACE.test(word);
+}
+
+// Korean syllable blocks split into their letters (jamo), so a slip inside
+// a block is one letter: "여권" and "여꿘" differ by one letter, not one block.
+function jamo(word) {
+  let out = "";
+  for (const ch of word) {
+    const code = ch.codePointAt(0) - 0xac00;
+    if (code < 0 || code > 11171) {
+      out += ch;
+      continue;
+    }
+    const lead = Math.floor(code / 588);
+    const vowel = Math.floor((code % 588) / 28);
+    const tail = code % 28;
+    out += String.fromCodePoint(0x1100 + lead, 0x1161 + vowel);
+    if (tail) out += String.fromCodePoint(0x11a7 + tail);
+  }
+  return out;
+}
+
+function toLatin(word) {
+  let out = "";
+  for (const ch of word) out += TO_LATIN.has(ch) ? TO_LATIN.get(ch) : ch;
+  return out;
+}
+
+// Character-by-character closeness for scripts without spaces: the share of
+// pairs of neighbouring characters both texts have (Dice coefficient), or
+// the share of single characters for very short words.
+function charSimilarity(a, b) {
+  const ca = Array.from(a);
+  const cb = Array.from(b);
+  if (!ca.length || !cb.length) return 0;
+  if (ca.length < 2 || cb.length < 2) {
+    const set = new Set(cb);
+    const hits = ca.filter((c) => set.has(c)).length;
+    return hits / Math.max(ca.length, cb.length);
+  }
+  const pairs = (list) => {
+    const m = new Map();
+    for (let i = 0; i + 1 < list.length; i++) {
+      const k = list[i] + list[i + 1];
+      m.set(k, (m.get(k) || 0) + 1);
+    }
+    return m;
+  };
+  const pa = pairs(ca);
+  const pb = pairs(cb);
+  let common = 0;
+  for (const [k, n] of pa) common += Math.min(n, pb.get(k) || 0);
+  return (2 * common) / (ca.length - 1 + cb.length - 1);
+}
+
+// The best match of a short name inside a longer run of characters with no
+// spaces: the window of the same length that differs the least.
+function bestWindow(text, name) {
+  const t = Array.from(text);
+  const n = Array.from(name);
+  if (n.length > t.length) return text === name ? 1 : 0;
+  const whole = n.join("");
+  if (text.includes(whole)) return 1;
+  let best = 0;
+  for (let i = 0; i + n.length <= t.length; i++) {
+    const window = t.slice(i, i + n.length).join("");
+    const d = distance(window, whole);
+    // One character off is allowed in names of three or more characters.
+    if (n.length >= 3 && d <= 1) best = Math.max(best, 1 - d / n.length);
+  }
+  return best;
+}
+
+// Whether a word is too short for typo tolerance. A Korean syllable block
+// holds two or three letters and a Chinese character a whole word, so those
+// are measured by their letters or treated as long enough.
+function isShort(word, below) {
+  if (noSpaceScript(word)) return false;
+  if (HANGUL.test(word)) return Array.from(jamo(word)).length < below;
+  return Array.from(word).length < below;
 }
 
 function words(value) {
@@ -180,12 +343,42 @@ function wordScore(typed, word, { prefix = true } = {}) {
   if (typed === word) return 1;
   if (prefix && typed.length >= 3 && word.startsWith(typed)) return 0.92;
   if (squeeze(typed) === squeeze(word)) return 0.97;
-  const latin = /^[a-z0-9]+$/.test(typed) && /^[a-z0-9]+$/.test(word);
+  const latinOnly = (w) => /^[a-z0-9]+$/.test(w);
+  const latin = latinOnly(typed) && latinOnly(word);
   if (!latin) {
-    // Other scripts: only small slips, no keyboard or sound rules.
-    const allowed = typed.length >= 4 ? 1 : 0;
-    const d = distance(typed, word);
-    return d <= allowed ? 1 - d / Math.max(typed.length, word.length) : 0;
+    // A Cyrillic or Greek name typed in Latin letters, or the other way
+    // round: compare both in Latin letters, a little below a direct match.
+    if (latinOnly(typed) && TRANSLITERABLE.test(word)) {
+      return wordScore(typed, toLatin(word), { prefix }) * 0.95;
+    }
+    if (TRANSLITERABLE.test(typed) && latinOnly(word)) {
+      return wordScore(toLatin(typed), word, { prefix }) * 0.95;
+    }
+    // Chinese, Japanese, Thai and the like: character by character.
+    if (noSpaceScript(typed) || noSpaceScript(word)) {
+      const inside = Math.max(bestWindow(word, typed), bestWindow(typed, word));
+      if (inside >= 0.66) return Math.min(1, inside) * 0.98;
+      const sim = charSimilarity(typed, word);
+      return sim >= 0.6 ? sim * 0.95 : 0;
+    }
+    // Korean: letter by letter inside the syllable blocks.
+    if (HANGUL.test(typed) || HANGUL.test(word)) {
+      const a = jamo(typed);
+      const b = jamo(word);
+      if (prefix && a.length >= 4 && b.startsWith(a)) return 0.92;
+      const d = distance(a, b);
+      const allowed = allowance(Math.max(Array.from(a).length, Array.from(b).length));
+      return d <= allowed ? Math.max(0, 1 - d / Math.max(Array.from(a).length, 4)) : 0;
+    }
+    // Other alphabets (Cyrillic, Greek, Arabic, Hebrew, Indian scripts and
+    // more): the same weighted slips as Latin letters, with their own
+    // keyboard neighbours, but no English sound rules.
+    const lt = Array.from(typed).length;
+    const lw = Array.from(word).length;
+    if (prefix && lt >= 3 && word.startsWith(typed)) return 0.92;
+    const d = distance(Array.from(typed), Array.from(word), lt <= 5 ? 1.3 : 1);
+    const allowed = allowance(Math.max(lt, Math.min(lw, lt + 2)));
+    return d <= allowed ? Math.max(0, 1 - d / Math.max(lt, lw, 4)) : 0;
   }
   if (/^\d+$/.test(typed) || /^\d+$/.test(word)) return 0;
   // In short words a random wrong letter usually makes another real word
@@ -248,7 +441,7 @@ function phraseScore(query, candidate) {
   let counted = 0;
   for (const word of typed) {
     const score = bestWordScore(word, target);
-    if (word.length < 3) {
+    if (isShort(word, 3)) {
       // Short words must match exactly or start a word, and count less.
       if (!target.some((w) => w.startsWith(word))) return 0;
       continue;
@@ -270,10 +463,18 @@ function containsScore(text, candidate) {
   const target = words(candidate);
   if (!typed.length || !target.length) return 0;
   let total = 0;
+  const joinedText = typed.join("");
   for (const word of target) {
     let best = 0;
+    // Scripts without spaces: look for the name inside the run of text.
+    if (noSpaceScript(word)) {
+      best = bestWindow(joinedText, word);
+      if (best === 0) return 0;
+      total += best;
+      continue;
+    }
     for (let i = 0; i < typed.length; i++) {
-      if (word.length < 4) {
+      if (isShort(word, 4)) {
         if (typed[i] === word) best = 1;
       } else {
         best = Math.max(best, wordScore(typed[i], word, { prefix: false }));
@@ -310,6 +511,9 @@ function best(query, items, textsOf, { min = 0.72, margin = 0.08 } = {}) {
 
 module.exports = {
   best,
+  charSimilarity,
+  jamo,
+  toLatin,
   containsScore,
   distance,
   fold,
