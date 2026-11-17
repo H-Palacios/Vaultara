@@ -4,6 +4,7 @@ import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/features/guides/data/renewal_guides.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
+import 'package:vaultara/features/guides/view/renewal_plan_section.dart';
 import 'package:vaultara/features/records/view/renew/renew_sheet.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
@@ -15,7 +16,8 @@ Future<void> showRenewalGuide(
   bool showRenewButton = true,
 }) async {
   final guide = RenewalGuides.forGroup(groupKey);
-  if (guide == null) return;
+  // Records without a general guide still get the renewal coach.
+  if (guide == null && record == null) return;
   final markRenewed = await AppSheet.show<bool>(
     context: context,
     showDragHandle: true,
@@ -35,7 +37,7 @@ Future<void> showRenewalGuide(
         controller: controller,
       ),
     ),
-    );
+  );
   final target = record;
   if (markRenewed == true && target != null && context.mounted) {
     await showRenewSheet(context, target);
@@ -43,7 +45,7 @@ Future<void> showRenewalGuide(
 }
 
 class _RenewalGuideSheet extends StatefulWidget {
-  final RenewalGuide guide;
+  final RenewalGuide? guide;
   final String groupKey;
   final String recordName;
   final TrackedItem? record;
@@ -104,7 +106,8 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     final guide = widget.guide;
-    final steps = guide.steps;
+    final steps = guide?.steps ?? const [];
+    final record = widget.record;
 
     return ListView(
       controller: widget.controller,
@@ -141,139 +144,142 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
           ),
         ],
         const SizedBox(height: 18),
-        Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: scheme.primary.withValues(alpha: 0.08),
-            borderRadius: BorderRadius.circular(14),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(Icons.schedule_rounded, color: scheme.primary, size: 22),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      loc.guideWhenToStart,
-                      style: TextStyle(
-                        fontSize: 12.5,
-                        fontWeight: FontWeight.w700,
-                        color: scheme.primary,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      guide.whenToStart(loc),
-                      style: TextStyle(fontSize: 14, color: scheme.onSurface),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 20),
-        Row(
-          children: [
-            Expanded(
-              child: Text(
-                loc.guideChecklist,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  fontWeight: FontWeight.w700,
-                  color: scheme.onSurfaceVariant,
-                ),
-              ),
-            ),
-            Text(
-              loc.guideProgress(_ticked.length, steps.length),
-              style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
-            ),
-          ],
-        ),
-        const SizedBox(height: 6),
-        for (var i = 0; i < steps.length; i++)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 6),
-            child: Material(
-              color: scheme.surfaceContainerHighest.withValues(alpha: 0.5),
+        if (record != null) RenewalPlanSection(record: record),
+        if (guide != null) ...[
+          Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              color: scheme.primary.withValues(alpha: 0.08),
               borderRadius: BorderRadius.circular(14),
-              child: InkWell(
-                borderRadius: BorderRadius.circular(14),
-                onTap: () => _toggle(i),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(4, 4, 14, 4),
-                  child: Row(
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Icon(Icons.schedule_rounded, color: scheme.primary, size: 22),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Checkbox(
-                        value: _ticked.contains(i),
-                        onChanged: (_) => _toggle(i),
-                      ),
-                      const SizedBox(width: 4),
-                      Expanded(
-                        child: Text(
-                          steps[i](loc),
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: _ticked.contains(i)
-                                ? scheme.onSurfaceVariant
-                                : scheme.onSurface,
-                            decoration: _ticked.contains(i)
-                                ? TextDecoration.lineThrough
-                                : TextDecoration.none,
-                          ),
+                      Text(
+                        loc.guideWhenToStart,
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          fontWeight: FontWeight.w700,
+                          color: scheme.primary,
                         ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        guide.whenToStart(loc),
+                        style: TextStyle(fontSize: 14, color: scheme.onSurface),
                       ),
                     ],
                   ),
                 ),
-              ),
+              ],
             ),
           ),
-        const SizedBox(height: 14),
-        Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(
-              color: scheme.onSurfaceVariant.withValues(alpha: 0.25),
-            ),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          const SizedBox(height: 20),
+          Row(
             children: [
-              Icon(
-                Icons.lightbulb_outline_rounded,
-                color: scheme.primary,
-                size: 22,
-              ),
-              const SizedBox(width: 12),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      loc.guideTipTitle,
-                      style: TextStyle(
-                        fontSize: 12.5,
-                        fontWeight: FontWeight.w700,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      guide.tip(loc),
-                      style: TextStyle(fontSize: 14, color: scheme.onSurface),
-                    ),
-                  ],
+                child: Text(
+                  loc.guideChecklist,
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    fontWeight: FontWeight.w700,
+                    color: scheme.onSurfaceVariant,
+                  ),
                 ),
+              ),
+              Text(
+                loc.guideProgress(_ticked.length, steps.length),
+                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
               ),
             ],
           ),
-        ),
+          const SizedBox(height: 6),
+          for (var i = 0; i < steps.length; i++)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: Material(
+                color: scheme.surfaceContainerHighest.withValues(alpha: 0.5),
+                borderRadius: BorderRadius.circular(14),
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(14),
+                  onTap: () => _toggle(i),
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(4, 4, 14, 4),
+                    child: Row(
+                      children: [
+                        Checkbox(
+                          value: _ticked.contains(i),
+                          onChanged: (_) => _toggle(i),
+                        ),
+                        const SizedBox(width: 4),
+                        Expanded(
+                          child: Text(
+                            steps[i](loc),
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: _ticked.contains(i)
+                                  ? scheme.onSurfaceVariant
+                                  : scheme.onSurface,
+                              decoration: _ticked.contains(i)
+                                  ? TextDecoration.lineThrough
+                                  : TextDecoration.none,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          const SizedBox(height: 14),
+          Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(
+                color: scheme.onSurfaceVariant.withValues(alpha: 0.25),
+              ),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.lightbulb_outline_rounded,
+                  color: scheme.primary,
+                  size: 22,
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        loc.guideTipTitle,
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          fontWeight: FontWeight.w700,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        guide.tip(loc),
+                        style: TextStyle(fontSize: 14, color: scheme.onSurface),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
         const SizedBox(height: 14),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,3 +1,4 @@
+import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/records/data/models/record_prefill.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_purpose.dart';
@@ -21,6 +22,9 @@ enum AssistantActionType {
   groupRename,
   move,
   restore,
+  renewalPlan,
+  appointment,
+  planStep,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -278,6 +282,26 @@ class AssistantAction {
   final List<String> recordIds;
   final List<String> recordNames;
 
+  /// A renewal plan card: the record's expiry date it was made for
+  /// (YYYY-MM-DD), the country whose rules it follows, its steps, the
+  /// official booking page, the fee and processing time as written there,
+  /// and the pages it came from.
+  final String? planExpiry;
+  final String? planCountry;
+  final List<RenewalPlanStep> planSteps;
+  final String? bookingUrl;
+  final String? fee;
+  final String? processing;
+  final List<RenewalSource> sources;
+
+  /// An appointment card.
+  final RenewalAppointment? appointment;
+
+  /// A plan step card: which step (from 0), ticked or unticked, its text.
+  final int? stepIndex;
+  final bool stepDone;
+  final String? stepText;
+
   const AssistantAction({
     required this.type,
     this.name,
@@ -325,6 +349,17 @@ class AssistantAction {
     this.groupName,
     this.recordIds = const <String>[],
     this.recordNames = const <String>[],
+    this.planExpiry,
+    this.planCountry,
+    this.planSteps = const <RenewalPlanStep>[],
+    this.bookingUrl,
+    this.fee,
+    this.processing,
+    this.sources = const <RenewalSource>[],
+    this.appointment,
+    this.stepIndex,
+    this.stepDone = true,
+    this.stepText,
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -535,8 +570,74 @@ class AssistantAction {
             name: text(raw['name'], 60),
           );
         }
+      case 'renewal_plan':
+        return _fromRenewalPlan(raw);
+      case 'appointment':
+        {
+          final id = text(raw['recordId'], 200);
+          final day = RenewalAppointment.parseDay(raw['date']);
+          if (id == null || day == null) return null;
+          return AssistantAction(
+            type: AssistantActionType.appointment,
+            recordId: id,
+            name: text(raw['name'], 60),
+            appointment: RenewalAppointment(
+              day: day,
+              time: RenewalAppointment.parseTime(raw['time']),
+              place: RenewalCoachPlan.line(
+                raw['place'],
+                RenewalAppointment.maxPlace,
+              ),
+              bring: RenewalAppointment.bringFrom(raw['bring']),
+            ),
+          );
+        }
+      case 'plan_step':
+        {
+          final id = text(raw['recordId'], 200);
+          final step = intIn(raw['step'], 0, RenewalCoachPlan.maxSteps - 1);
+          if (id == null || step == null) return null;
+          return AssistantAction(
+            type: AssistantActionType.planStep,
+            recordId: id,
+            name: text(raw['name'], 60),
+            stepIndex: step,
+            stepDone: raw['done'] != false,
+            stepText: RenewalCoachPlan.line(
+              raw['text'],
+              RenewalPlanStep.maxText,
+            ),
+          );
+        }
     }
     return null;
+  }
+
+  static AssistantAction? _fromRenewalPlan(Map<dynamic, dynamic> raw) {
+    final id = text(raw['recordId'], 200);
+    final expiry = raw['expiry'];
+    final steps = RenewalCoachPlan.stepsFrom(raw['steps']);
+    if (id == null ||
+        expiry is! String ||
+        RenewalAppointment.parseDay(expiry) == null ||
+        steps.isEmpty) {
+      return null;
+    }
+    return AssistantAction(
+      type: AssistantActionType.renewalPlan,
+      recordId: id,
+      name: text(raw['name'], 60),
+      planExpiry: expiry,
+      planCountry: country(raw['country']),
+      planSteps: steps,
+      bookingUrl: RenewalCoachPlan.link(raw['bookingUrl']),
+      fee: RenewalCoachPlan.line(raw['fee'], RenewalCoachPlan.maxNote),
+      processing: RenewalCoachPlan.line(
+        raw['processing'],
+        RenewalCoachPlan.maxNote,
+      ),
+      sources: RenewalSource.listFrom(raw['sources']),
+    );
   }
 
   static const int maxMove = 25;

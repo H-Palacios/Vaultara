@@ -70,6 +70,10 @@ class AssistantStepLabel {
         return loc.assistantStepCosts;
       case 'visa':
         return loc.assistantStepVisa;
+      case 'web':
+        return loc.assistantStepWeb;
+      case 'renewal':
+        return loc.assistantStepRenewal;
     }
     return loc.assistantStepThinking;
   }

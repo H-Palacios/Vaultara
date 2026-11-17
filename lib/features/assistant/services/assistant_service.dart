@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
+import 'package:vaultara/features/guides/data/renewal_plan.dart';
 
 enum AssistantFailure {
   offline,
@@ -38,19 +39,24 @@ class AssistantReply {
   /// length or the number of steps or cards. The app offers Continue.
   final bool truncated;
 
+  /// Official pages the answer was written from, shown under it as links.
+  final List<RenewalSource> sources;
+
   const AssistantReply({
     this.reply = '',
     this.actions = const <AssistantAction>[],
     this.replies = const <String>[],
     this.failure,
     this.truncated = false,
+    this.sources = const <RenewalSource>[],
   });
 
   const AssistantReply.failed(AssistantFailure this.failure)
     : reply = '',
       actions = const <AssistantAction>[],
       replies = const <String>[],
-      truncated = false;
+      truncated = false,
+      sources = const <RenewalSource>[];
 
   static List<String> repliesFrom(Object? raw) {
     if (raw is! List) return const <String>[];
@@ -76,7 +82,7 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 11;
+  static const int protocolVersion = 12;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
@@ -92,6 +98,7 @@ class AssistantService {
     bool propose = false,
     String? runId,
     String? here,
+    bool talk = false,
   }) async {
     final cleaned = turns
         .where((t) => t.text.trim().isNotEmpty)
@@ -114,7 +121,8 @@ class AssistantService {
     try {
       final callable = _functions.httpsCallable(
         'askVaultara',
-        options: HttpsCallableOptions(timeout: const Duration(seconds: 90)),
+        // Answers that search official sites can take longer.
+        options: HttpsCallableOptions(timeout: const Duration(seconds: 120)),
       );
       final response = await callable.call(<String, dynamic>{
         'messages': recent.map((t) => t.toMap()).toList(),
@@ -123,6 +131,7 @@ class AssistantService {
         if (propose) 'intent': 'propose',
         if (runId != null) 'runId': runId,
         if (here != null) 'here': here,
+        if (talk) 'mode': 'talk',
       });
       final data = response.data;
       if (data is! Map) {
@@ -134,6 +143,7 @@ class AssistantService {
         actions: AssistantAction.listFrom(data['actions']),
         replies: AssistantReply.repliesFrom(data['replies']),
         truncated: data['truncated'] == true,
+        sources: RenewalSource.listFrom(data['sources']),
       );
     } on FirebaseFunctionsException catch (e) {
       final failure = _mapCode(e.code);

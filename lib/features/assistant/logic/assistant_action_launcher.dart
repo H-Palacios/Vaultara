@@ -19,7 +19,9 @@ import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
 import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
+import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
+import 'package:vaultara/features/guides/services/renewal_plan_store.dart';
 import 'package:vaultara/features/household/logic/household_access.dart';
 import 'package:vaultara/features/records/logic/record_defaults.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
@@ -249,6 +251,12 @@ class AssistantActionLauncher {
           return await _move(context, action, slot);
         case AssistantActionType.restore:
           return await _restore(context, action, slot);
+        case AssistantActionType.renewalPlan:
+          return await _savePlan(context, action, slot);
+        case AssistantActionType.appointment:
+          return await _saveAppointment(context, action, slot);
+        case AssistantActionType.planStep:
+          return await _tickStep(context, action, slot);
       }
     } catch (_) {
       if (context.mounted) {
@@ -256,6 +264,140 @@ class AssistantActionLauncher {
       }
       return AssistantApplyResult.failed;
     }
+  }
+
+  /// Saves the renewal coach's plan as the record's renewal checklist. An
+  /// appointment already saved for the same expiry date is kept.
+  static Future<AssistantApplyResult> _savePlan(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final id = action.recordId;
+    final expiry = action.planExpiry;
+    final record = id == null ? null : RecordRepository.findById(id);
+    if (id == null || expiry == null || record == null) {
+      _info(context, loc.assistantActionFailed);
+      return AssistantApplyResult.failed;
+    }
+    final previous = await RenewalPlanStore.load(id);
+    final keep = previous != null && previous.expiry == expiry
+        ? previous.appointment
+        : null;
+    final plan = RenewalCoachPlan(
+      recordId: id,
+      expiry: expiry,
+      country: action.planCountry,
+      steps: action.planSteps,
+      bookingUrl: action.bookingUrl,
+      fee: action.fee,
+      processing: action.processing,
+      sources: action.sources,
+      appointment: keep,
+    );
+    if (!await RenewalPlanStore.save(plan)) {
+      if (context.mounted) _info(context, loc.assistantActionFailed);
+      return AssistantApplyResult.failed;
+    }
+    slot.undo = () async => previous == null
+        ? RenewalPlanStore.delete(id)
+        : RenewalPlanStore.save(previous);
+    if (context.mounted) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.coachPlanSaved,
+        icon: Icons.checklist_rounded,
+      );
+    }
+    return AssistantApplyResult.applied;
+  }
+
+  /// Saves an appointment the user booked, with its reminders. A record
+  /// without a plan gets a one-step plan to hold it.
+  static Future<AssistantApplyResult> _saveAppointment(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final id = action.recordId;
+    final appointment = action.appointment;
+    final record = id == null ? null : RecordRepository.findById(id);
+    if (id == null || appointment == null || record == null) {
+      _info(context, loc.assistantActionFailed);
+      return AssistantApplyResult.failed;
+    }
+    final name = record.locked ? null : record.name;
+    final plan =
+        await RenewalPlanStore.current(id, record.expiryDate) ??
+        RenewalCoachPlan(
+          recordId: id,
+          expiry: RenewalAppointment.dayKey(record.expiryDate),
+          steps: <RenewalPlanStep>[
+            RenewalPlanStep(text: loc.coachAppointmentStep),
+          ],
+        );
+    final previous = plan.appointment;
+    final saved = await RenewalPlanStore.setAppointment(
+      plan,
+      appointment,
+      loc: loc,
+      name: name,
+    );
+    if (saved == null) {
+      if (context.mounted) _info(context, loc.assistantActionFailed);
+      return AssistantApplyResult.failed;
+    }
+    slot.undo = () async =>
+        await RenewalPlanStore.setAppointment(
+          saved,
+          previous,
+          loc: loc,
+          name: name,
+        ) !=
+        null;
+    if (context.mounted) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.coachAppointmentSaved,
+        icon: Icons.event_available_rounded,
+      );
+    }
+    return AssistantApplyResult.applied;
+  }
+
+  static Future<AssistantApplyResult> _tickStep(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final id = action.recordId;
+    final index = action.stepIndex;
+    final record = id == null ? null : RecordRepository.findById(id);
+    if (id == null || index == null || record == null) {
+      _info(context, loc.assistantActionFailed);
+      return AssistantApplyResult.failed;
+    }
+    final plan = await RenewalPlanStore.current(id, record.expiryDate);
+    if (plan == null || index >= plan.steps.length) {
+      if (context.mounted) _info(context, loc.coachNoPlan);
+      return AssistantApplyResult.failed;
+    }
+    final wasDone = plan.done.contains(index);
+    final saved = await RenewalPlanStore.setDone(
+      plan,
+      index,
+      done: action.stepDone,
+    );
+    if (saved == null) {
+      if (context.mounted) _info(context, loc.assistantActionFailed);
+      return AssistantApplyResult.failed;
+    }
+    slot.undo = () async =>
+        await RenewalPlanStore.setDone(saved, index, done: wasDone) != null;
+    return AssistantApplyResult.applied;
   }
 
   /// The name shown for a category, preset or the user's own.

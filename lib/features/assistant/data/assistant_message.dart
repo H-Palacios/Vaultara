@@ -1,3 +1,4 @@
+import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart';
 import 'package:vaultara/features/assistant/services/assistant_service.dart';
@@ -75,6 +76,10 @@ class AssistantMessage {
   /// The answer stopped before the whole task was done; the newest one
   /// shows a Continue button. Kept only while the chat is open.
   bool truncated = false;
+
+  /// Official pages the answer was written from. Kept only while the chat
+  /// is open.
+  List<RenewalSource> sources = const <RenewalSource>[];
 
   /// 1 for helpful, -1 for not helpful, 0 when not rated.
   int rating = 0;

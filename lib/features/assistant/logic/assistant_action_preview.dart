@@ -99,6 +99,12 @@ class AssistantActionPreview {
         return 'move';
       case AssistantActionType.restore:
         return 'restore';
+      case AssistantActionType.renewalPlan:
+        return 'renewal_plan';
+      case AssistantActionType.appointment:
+        return 'appointment';
+      case AssistantActionType.planStep:
+        return 'plan_step';
     }
   }
 
@@ -205,7 +211,126 @@ class AssistantActionPreview {
           note: f.loc.assistantRestoreNote,
           private: action.name == null,
         );
+      case AssistantActionType.renewalPlan:
+        return _renewalPlan(f, action);
+      case AssistantActionType.appointment:
+        return _appointment(f, action);
+      case AssistantActionType.planStep:
+        return AssistantActionPreview(
+          title: action.stepDone
+              ? f.loc.coachStepDoneTitle
+              : f.loc.coachStepUndoTitle,
+          icon: action.stepDone
+              ? Icons.check_circle_outline_rounded
+              : Icons.radio_button_unchecked_rounded,
+          subject: _recordName(f.loc, _record(action), action.name),
+          rows: <AssistantChangeRow>[
+            AssistantChangeRow(
+              label: f.loc.coachStepLabel((action.stepIndex ?? 0) + 1),
+              after: action.stepText ?? '',
+            ),
+          ],
+          private: _record(action)?.locked ?? action.name == null,
+        );
     }
+  }
+
+  static TrackedItem? _record(AssistantAction action) => action.recordId == null
+      ? null
+      : RecordRepository.findById(action.recordId!);
+
+  static AssistantActionPreview _renewalPlan(
+    _Formatter f,
+    AssistantAction action,
+  ) {
+    final loc = f.loc;
+    final record = _record(action);
+    final steps = <String>[
+      for (var i = 0; i < action.planSteps.length; i++)
+        '${i + 1}. ${action.planSteps[i].text}',
+    ];
+    final rows = <AssistantChangeRow>[
+      if (action.planCountry != null)
+        AssistantChangeRow(
+          label: loc.coachCountryLabel,
+          after: f.country(action.planCountry),
+        ),
+      AssistantChangeRow(
+        label: loc.coachStepsLabel(action.planSteps.length),
+        after: steps.join('\n'),
+      ),
+      if (action.fee != null)
+        AssistantChangeRow(label: loc.coachFeeLabel, after: action.fee!),
+      if (action.processing != null)
+        AssistantChangeRow(
+          label: loc.coachProcessingLabel,
+          after: action.processing!,
+        ),
+      if (action.bookingUrl != null)
+        AssistantChangeRow(
+          label: loc.coachBookingLabel,
+          after: Uri.tryParse(action.bookingUrl!)?.host ?? action.bookingUrl!,
+        ),
+      if (action.sources.isNotEmpty)
+        AssistantChangeRow(
+          label: loc.coachSourcesLabel,
+          after: action.sources.map((s) => s.host).toSet().join(', '),
+        ),
+    ];
+    return AssistantActionPreview(
+      title: loc.coachPlanTitle,
+      icon: Icons.checklist_rounded,
+      subject: _recordName(loc, record, action.name),
+      rows: rows,
+      note: loc.coachPlanNote,
+      private: record?.locked ?? action.name == null,
+    );
+  }
+
+  static AssistantActionPreview _appointment(
+    _Formatter f,
+    AssistantAction action,
+  ) {
+    final loc = f.loc;
+    final record = _record(action);
+    final appointment = action.appointment;
+    final rows = <AssistantChangeRow>[];
+    if (appointment != null) {
+      final time = appointment.time;
+      rows.add(
+        AssistantChangeRow(
+          label: loc.coachAppointmentWhen,
+          after: time == null
+              ? f.date(appointment.day)
+              : '${f.date(appointment.day)}, '
+                    '${MaterialLocalizations.of(f.context).formatTimeOfDay(time, alwaysUse24HourFormat: MediaQuery.maybeOf(f.context)?.alwaysUse24HourFormat ?? false)}',
+        ),
+      );
+      if (appointment.place != null) {
+        rows.add(
+          AssistantChangeRow(
+            label: loc.coachAppointmentWhere,
+            after: appointment.place!,
+          ),
+        );
+      }
+      if (appointment.bring.isNotEmpty) {
+        rows.add(
+          AssistantChangeRow(
+            label: loc.coachAppointmentBring,
+            after: appointment.bring.join(', '),
+          ),
+        );
+      }
+    }
+    return AssistantActionPreview(
+      title: loc.coachAppointmentTitle,
+      icon: Icons.event_available_rounded,
+      subject: _recordName(loc, record, action.name),
+      rows: rows,
+      note: loc.coachAppointmentNote,
+      private: record?.locked ?? action.name == null,
+    );
   }
 
   static AssistantActionPreview _move(_Formatter f, AssistantAction action) {
