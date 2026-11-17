@@ -9146,4 +9146,192 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Opitut sanat unohdettu';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Ota mukaan: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Uusimisaika';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: aikasi on kello $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: aikasi on huomenna.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Teen uusimissuunnitelmaa';
+
+  @override
+  String get assistantStepWeb => 'Tarkistan virallisia lähteitä';
+
+  @override
+  String get coachAppointmentBring => 'Ota mukaan';
+
+  @override
+  String get coachAppointmentNote => 'Saat muistutuksen edellisenä iltana ja kaksi tuntia ennen, jos kellonaika on asetettu.';
+
+  @override
+  String get coachAppointmentRemove => 'Poista aika';
+
+  @override
+  String get coachAppointmentSaved => 'Aika tallennettu';
+
+  @override
+  String get coachAppointmentStep => 'Mene tapaamiseen';
+
+  @override
+  String get coachAppointmentTitle => 'Aika';
+
+  @override
+  String get coachAppointmentWhen => 'Milloin';
+
+  @override
+  String get coachAppointmentWhere => 'Missä';
+
+  @override
+  String get coachAskNext => 'Kysy Vaultaralta seuraava vaihe';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Mikä on seuraava vaihe, jotta voin uusia $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Miten uusin $name? Tee minulle uusimissuunnitelma virallisilla vaiheilla.';
+  }
+
+  @override
+  String get coachBookNote => 'Varaat ajan virallisella sivulla. Vaultara ei koskaan varaa puolestasi.';
+
+  @override
+  String get coachBookOnSite => 'Varaa virallisella sivulla';
+
+  @override
+  String get coachBookingLabel => 'Varaus';
+
+  @override
+  String get coachCountryLabel => 'Maa';
+
+  @override
+  String get coachFeeLabel => 'Maksu';
+
+  @override
+  String get coachGetSteps => 'Hae vaiheet maalleni';
+
+  @override
+  String get coachLinkFailed => 'Linkkiä ei voitu avata.';
+
+  @override
+  String get coachNoPlan => 'Tällä tietueella ei ole vielä uusimissuunnitelmaa.';
+
+  @override
+  String get coachOpenLink => 'Avaa virallinen sivu';
+
+  @override
+  String get coachPlanNote => 'Vaiheista tulee tämän tietueen uusimisen tarkistuslista virallisine linkkeineen.';
+
+  @override
+  String get coachPlanSaved => 'Uusimissuunnitelma tallennettu';
+
+  @override
+  String get coachPlanTitle => 'Uusimissuunnitelmasi';
+
+  @override
+  String get coachProcessingLabel => 'Käsittelyaika';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara löytää maasi todelliset vaiheet virallisilta sivuilta, maksuineen, kestoineen ja varauspaikkoineen.';
+
+  @override
+  String get coachPromoTitle => 'Uusimisavustaja';
+
+  @override
+  String get coachRulesChange => 'Säännöt ja maksut voivat muuttua. Tarkista virallinen sivu ennen maksamista.';
+
+  @override
+  String get coachSourcesLabel => 'Lähteet';
+
+  @override
+  String get coachStepDoneTitle => 'Merkitse vaihe tehdyksi';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Vaihe $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Merkitse vaihe tekemättömäksi';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count vaihetta',
+      one: '1 vaihe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Mitä minulla on tulossa?';
+
+  @override
+  String get talkBye => 'Näkemiin.';
+
+  @override
+  String get talkConfirmAsk => 'Sano kyllä vahvistaaksesi tai ei ohittaaksesi.';
+
+  @override
+  String get talkDone => 'Valmis.';
+
+  @override
+  String get talkEnd => 'Lopeta';
+
+  @override
+  String get talkListening => 'Kuuntelee…';
+
+  @override
+  String get talkNoVoice => 'Puhelimessa ei ole ääntä tälle kielelle, joten vastaukset näytetään mutta niitä ei lueta ääneen.';
+
+  @override
+  String get talkNotDone => 'Se ei onnistunut. Tarkista kortti näytöltä.';
+
+  @override
+  String get talkReady => 'Kuuntelen.';
+
+  @override
+  String get talkShortcut => 'Puhu Vaultaralle';
+
+  @override
+  String get talkSkipped => 'Selvä, ohitettu.';
+
+  @override
+  String get talkSpeaking => 'Puhuu. Keskeytä napauttamalla';
+
+  @override
+  String get talkTapToSpeak => 'Puhu napauttamalla';
+
+  @override
+  String get talkThinking => 'Miettii…';
+
+  @override
+  String get talkTitle => 'Puhetila';
+
+  @override
+  String get talkYesWords => 'kyllä,joo,juu,toki,ok,okei,vahvista,tee se';
+
+  @override
+  String get talkNoWords => 'ei,eikä,peruuta,ohita,ei nyt';
+
+  @override
+  String get talkStopWords => 'lopeta,seis,siinä kaikki,heippa,näkemiin,lopeta puhetila';
 }

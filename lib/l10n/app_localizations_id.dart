@@ -9075,4 +9075,191 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Kata yang dipelajari telah dilupakan';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Bawa: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Janji temu perpanjangan';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: janji temu Anda pukul $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: janji temu Anda besok.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Menyusun rencana perpanjangan';
+
+  @override
+  String get assistantStepWeb => 'Memeriksa sumber resmi';
+
+  @override
+  String get coachAppointmentBring => 'Bawa';
+
+  @override
+  String get coachAppointmentNote => 'Anda mendapat pengingat malam sebelumnya, dan dua jam sebelumnya jika waktunya diatur.';
+
+  @override
+  String get coachAppointmentRemove => 'Hapus janji temu';
+
+  @override
+  String get coachAppointmentSaved => 'Janji temu disimpan';
+
+  @override
+  String get coachAppointmentStep => 'Pergi ke janji temu';
+
+  @override
+  String get coachAppointmentTitle => 'Janji temu';
+
+  @override
+  String get coachAppointmentWhen => 'Kapan';
+
+  @override
+  String get coachAppointmentWhere => 'Di mana';
+
+  @override
+  String get coachAskNext => 'Tanya Vaultara langkah berikutnya';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Apa langkah berikutnya untuk memperpanjang $name saya?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Bagaimana cara memperpanjang $name saya? Buatkan rencana perpanjangan dengan langkah resmi.';
+  }
+
+  @override
+  String get coachBookNote => 'Anda memesan di situs resmi. Vaultara tidak pernah memesan untuk Anda.';
+
+  @override
+  String get coachBookOnSite => 'Pesan di situs resmi';
+
+  @override
+  String get coachBookingLabel => 'Pemesanan';
+
+  @override
+  String get coachCountryLabel => 'Negara';
+
+  @override
+  String get coachFeeLabel => 'Biaya';
+
+  @override
+  String get coachGetSteps => 'Dapatkan langkah untuk negara saya';
+
+  @override
+  String get coachLinkFailed => 'Tautan tidak dapat dibuka.';
+
+  @override
+  String get coachNoPlan => 'Catatan ini belum punya rencana perpanjangan.';
+
+  @override
+  String get coachOpenLink => 'Buka halaman resmi';
+
+  @override
+  String get coachPlanNote => 'Langkah-langkah menjadi daftar periksa perpanjangan catatan ini, dengan tautan resmi.';
+
+  @override
+  String get coachPlanSaved => 'Rencana perpanjangan disimpan';
+
+  @override
+  String get coachPlanTitle => 'Rencana perpanjangan Anda';
+
+  @override
+  String get coachProcessingLabel => 'Waktu proses';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara menemukan langkah sebenarnya untuk negara Anda di situs resmi, dengan biaya, lama proses, dan tempat memesan.';
+
+  @override
+  String get coachPromoTitle => 'Pelatih perpanjangan';
+
+  @override
+  String get coachRulesChange => 'Aturan dan biaya bisa berubah. Periksa halaman resmi sebelum membayar.';
+
+  @override
+  String get coachSourcesLabel => 'Sumber';
+
+  @override
+  String get coachStepDoneTitle => 'Tandai langkah selesai';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Langkah $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Tandai langkah belum selesai';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count langkah',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Apa yang akan datang untuk saya?';
+
+  @override
+  String get talkBye => 'Sampai jumpa.';
+
+  @override
+  String get talkConfirmAsk => 'Katakan ya untuk mengonfirmasi, atau tidak untuk melewati.';
+
+  @override
+  String get talkDone => 'Selesai.';
+
+  @override
+  String get talkEnd => 'Akhiri';
+
+  @override
+  String get talkListening => 'Mendengarkan…';
+
+  @override
+  String get talkNoVoice => 'Ponsel Anda tidak punya suara untuk bahasa ini, jadi jawaban ditampilkan tetapi tidak dibacakan.';
+
+  @override
+  String get talkNotDone => 'Itu gagal. Periksa kartu di layar.';
+
+  @override
+  String get talkReady => 'Saya mendengarkan.';
+
+  @override
+  String get talkShortcut => 'Bicara dengan Vaultara';
+
+  @override
+  String get talkSkipped => 'Oke, dilewati.';
+
+  @override
+  String get talkSpeaking => 'Berbicara. Ketuk untuk menyela';
+
+  @override
+  String get talkTapToSpeak => 'Ketuk untuk bicara';
+
+  @override
+  String get talkThinking => 'Berpikir…';
+
+  @override
+  String get talkTitle => 'Mode bicara';
+
+  @override
+  String get talkYesWords => 'ya,iya,boleh,ok,oke,konfirmasi,lakukan,lanjut';
+
+  @override
+  String get talkNoWords => 'tidak,nggak,batal,lewati,jangan sekarang';
+
+  @override
+  String get talkStopWords => 'berhenti,stop,sudah itu saja,dah,sampai jumpa,akhiri mode bicara';
 }

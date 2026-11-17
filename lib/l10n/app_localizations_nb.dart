@@ -9147,4 +9147,192 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Lærte ord glemt';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Ta med: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Time for fornyelse';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: timen din er kl. $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: timen din er i morgen.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Lager fornyelsesplanen din';
+
+  @override
+  String get assistantStepWeb => 'Sjekker offisielle kilder';
+
+  @override
+  String get coachAppointmentBring => 'Ta med';
+
+  @override
+  String get coachAppointmentNote => 'Du får en påminnelse kvelden før, og to timer før hvis klokkeslett er satt.';
+
+  @override
+  String get coachAppointmentRemove => 'Fjern timen';
+
+  @override
+  String get coachAppointmentSaved => 'Time lagret';
+
+  @override
+  String get coachAppointmentStep => 'Gå til timen';
+
+  @override
+  String get coachAppointmentTitle => 'Time';
+
+  @override
+  String get coachAppointmentWhen => 'Når';
+
+  @override
+  String get coachAppointmentWhere => 'Hvor';
+
+  @override
+  String get coachAskNext => 'Spør Vaultara om neste steg';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Hva er neste steg for å fornye $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Hvordan fornyer jeg $name? Lag en fornyelsesplan med de offisielle stegene.';
+  }
+
+  @override
+  String get coachBookNote => 'Du bestiller på den offisielle siden. Vaultara bestiller aldri for deg.';
+
+  @override
+  String get coachBookOnSite => 'Bestill på den offisielle siden';
+
+  @override
+  String get coachBookingLabel => 'Bestilling';
+
+  @override
+  String get coachCountryLabel => 'Land';
+
+  @override
+  String get coachFeeLabel => 'Gebyr';
+
+  @override
+  String get coachGetSteps => 'Finn stegene for mitt land';
+
+  @override
+  String get coachLinkFailed => 'Lenken kunne ikke åpnes.';
+
+  @override
+  String get coachNoPlan => 'Denne oppføringen har ingen fornyelsesplan ennå.';
+
+  @override
+  String get coachOpenLink => 'Åpne den offisielle siden';
+
+  @override
+  String get coachPlanNote => 'Stegene blir oppføringens sjekkliste for fornyelse, med de offisielle lenkene.';
+
+  @override
+  String get coachPlanSaved => 'Fornyelsesplan lagret';
+
+  @override
+  String get coachPlanTitle => 'Fornyelsesplanen din';
+
+  @override
+  String get coachProcessingLabel => 'Behandlingstid';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara finner de riktige stegene for landet ditt på offisielle sider, med gebyr, behandlingstid og hvor du bestiller.';
+
+  @override
+  String get coachPromoTitle => 'Fornyelsescoach';
+
+  @override
+  String get coachRulesChange => 'Regler og gebyrer kan endres. Sjekk den offisielle siden før du betaler.';
+
+  @override
+  String get coachSourcesLabel => 'Kilder';
+
+  @override
+  String get coachStepDoneTitle => 'Merk steg som fullført';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Steg $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Merk steg som ikke fullført';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count steg',
+      one: '1 steg',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Hva har jeg foran meg?';
+
+  @override
+  String get talkBye => 'Ha det.';
+
+  @override
+  String get talkConfirmAsk => 'Si ja for å bekrefte eller nei for å hoppe over.';
+
+  @override
+  String get talkDone => 'Ferdig.';
+
+  @override
+  String get talkEnd => 'Avslutt';
+
+  @override
+  String get talkListening => 'Lytter…';
+
+  @override
+  String get talkNoVoice => 'Telefonen har ingen stemme for dette språket, så svarene vises, men leses ikke opp.';
+
+  @override
+  String get talkNotDone => 'Det gikk ikke. Sjekk kortet på skjermen.';
+
+  @override
+  String get talkReady => 'Jeg lytter.';
+
+  @override
+  String get talkShortcut => 'Snakk med Vaultara';
+
+  @override
+  String get talkSkipped => 'Greit, hoppet over.';
+
+  @override
+  String get talkSpeaking => 'Snakker. Trykk for å avbryte';
+
+  @override
+  String get talkTapToSpeak => 'Trykk for å snakke';
+
+  @override
+  String get talkThinking => 'Tenker…';
+
+  @override
+  String get talkTitle => 'Samtalemodus';
+
+  @override
+  String get talkYesWords => 'ja,jo,javisst,ok,greit,bekreft,gjør det,kjør';
+
+  @override
+  String get talkNoWords => 'nei,avbryt,hopp over,ikke nå,la være';
+
+  @override
+  String get talkStopWords => 'stopp,det var alt,ha det,hadet,avslutt samtalemodus';
 }

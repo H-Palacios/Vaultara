@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "Lærte ord gløymde",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Ta med: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Time for fornying",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: timen din er kl. {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: timen din er i morgon.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Lagar fornyingsplanen din",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Sjekkar offisielle kjelder",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Ta med",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Du får ei påminning kvelden før, og to timar før om klokkeslett er sett.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Fjern timen",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Time lagra",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Gå til timen",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Time",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Når",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Kvar",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Spør Vaultara om neste steg",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Kva er neste steg for å fornya {name}?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Korleis fornyar eg {name}? Lag ein fornyingsplan med dei offisielle stega.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Du bestiller på den offisielle sida. Vaultara bestiller aldri for deg.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Bestill på den offisielle sida",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Bestilling",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Land",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Gebyr",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Finn stega for landet mitt",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Lenkja kunne ikkje opnast.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Denne oppføringa har ingen fornyingsplan enno.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Opna den offisielle sida",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Stega blir oppføringa si sjekkliste for fornying, med dei offisielle lenkjene.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Fornyingsplan lagra",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Fornyingsplanen din",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Handsamingstid",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara finn dei rette stega for landet ditt på offisielle sider, med gebyr, handsamingstid og kvar du bestiller.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Fornyingscoach",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Reglar og gebyr kan endrast. Sjekk den offisielle sida før du betaler.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Kjelder",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Merk steg som fullført",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Steg {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Merk steg som ikkje fullført",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 steg} other{{count} steg}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Kva har eg framfor meg?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Ha det.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Sei ja for å stadfesta eller nei for å hoppa over.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Ferdig.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Avslutt",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Lyttar…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Telefonen har inga stemme for dette språket, så svara blir viste, men ikkje lesne opp.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Det gjekk ikkje. Sjekk kortet på skjermen.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Eg lyttar.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Snakk med Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Greitt, hoppa over.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Snakkar. Trykk for å avbryta",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Trykk for å snakka",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Tenkjer…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Samtalemodus",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ja,jo,javisst,ok,greitt,stadfest,gjer det,køyr",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "nei,avbryt,hopp over,ikkje no,la vera",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "stopp,det var alt,ha det,hadet,avslutt samtalemodus",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

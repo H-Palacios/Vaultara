@@ -9142,4 +9142,192 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'واژه‌های آموخته فراموش شدند';
+
+  @override
+  String appointmentBring(String items) {
+    return 'همراه بیاورید: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'وقت تمدید';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: وقت شما ساعت $time است.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: وقت شما فرداست.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'در حال آماده‌سازی برنامه تمدید';
+
+  @override
+  String get assistantStepWeb => 'در حال بررسی منابع رسمی';
+
+  @override
+  String get coachAppointmentBring => 'همراه بیاورید';
+
+  @override
+  String get coachAppointmentNote => 'شب قبل یادآوری دریافت می‌کنید، و اگر ساعت تعیین شده باشد دو ساعت قبل هم.';
+
+  @override
+  String get coachAppointmentRemove => 'حذف وقت';
+
+  @override
+  String get coachAppointmentSaved => 'وقت ذخیره شد';
+
+  @override
+  String get coachAppointmentStep => 'به محل وقت بروید';
+
+  @override
+  String get coachAppointmentTitle => 'وقت';
+
+  @override
+  String get coachAppointmentWhen => 'کی';
+
+  @override
+  String get coachAppointmentWhere => 'کجا';
+
+  @override
+  String get coachAskNext => 'گام بعدی را از Vaultara بپرسید';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'گام بعدی برای تمدید $name من چیست؟';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'چطور $name خود را تمدید کنم؟ یک برنامه تمدید با مراحل رسمی برایم بساز.';
+  }
+
+  @override
+  String get coachBookNote => 'وقت را در سایت رسمی رزرو می‌کنید. Vaultara هرگز به جای شما رزرو نمی‌کند.';
+
+  @override
+  String get coachBookOnSite => 'رزرو در سایت رسمی';
+
+  @override
+  String get coachBookingLabel => 'رزرو';
+
+  @override
+  String get coachCountryLabel => 'کشور';
+
+  @override
+  String get coachFeeLabel => 'هزینه';
+
+  @override
+  String get coachGetSteps => 'مراحل کشور من را پیدا کن';
+
+  @override
+  String get coachLinkFailed => 'پیوند باز نشد.';
+
+  @override
+  String get coachNoPlan => 'این سابقه هنوز برنامه تمدید ندارد.';
+
+  @override
+  String get coachOpenLink => 'باز کردن صفحه رسمی';
+
+  @override
+  String get coachPlanNote => 'مراحل با پیوندهای رسمی، فهرست تمدید این سابقه می‌شوند.';
+
+  @override
+  String get coachPlanSaved => 'برنامه تمدید ذخیره شد';
+
+  @override
+  String get coachPlanTitle => 'برنامه تمدید شما';
+
+  @override
+  String get coachProcessingLabel => 'مدت رسیدگی';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara مراحل واقعی کشور شما را در سایت‌های رسمی پیدا می‌کند، همراه با هزینه، مدت و محل رزرو.';
+
+  @override
+  String get coachPromoTitle => 'راهنمای تمدید';
+
+  @override
+  String get coachRulesChange => 'قوانین و هزینه‌ها ممکن است تغییر کنند. پیش از پرداخت صفحه رسمی را بررسی کنید.';
+
+  @override
+  String get coachSourcesLabel => 'منابع';
+
+  @override
+  String get coachStepDoneTitle => 'علامت‌گذاری گام به‌عنوان انجام‌شده';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'گام $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'علامت‌گذاری گام به‌عنوان انجام‌نشده';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count گام',
+      one: '1 گام',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'چه چیزهایی پیش رو دارم؟';
+
+  @override
+  String get talkBye => 'خداحافظ.';
+
+  @override
+  String get talkConfirmAsk => 'برای تأیید بگویید بله، یا برای رد شدن بگویید نه.';
+
+  @override
+  String get talkDone => 'انجام شد.';
+
+  @override
+  String get talkEnd => 'پایان';
+
+  @override
+  String get talkListening => 'در حال گوش دادن…';
+
+  @override
+  String get talkNoVoice => 'تلفن شما صدایی برای این زبان ندارد، پس پاسخ‌ها نمایش داده می‌شوند اما خوانده نمی‌شوند.';
+
+  @override
+  String get talkNotDone => 'انجام نشد. کارت روی صفحه را بررسی کنید.';
+
+  @override
+  String get talkReady => 'گوش می‌دهم.';
+
+  @override
+  String get talkShortcut => 'با Vaultara صحبت کنید';
+
+  @override
+  String get talkSkipped => 'باشه، رد شد.';
+
+  @override
+  String get talkSpeaking => 'در حال صحبت. برای قطع ضربه بزنید';
+
+  @override
+  String get talkTapToSpeak => 'برای صحبت ضربه بزنید';
+
+  @override
+  String get talkThinking => 'در حال فکر کردن…';
+
+  @override
+  String get talkTitle => 'حالت گفتگو';
+
+  @override
+  String get talkYesWords => 'بله,آره,حتما,باشه,اوکی,تأیید,انجامش بده,ادامه بده';
+
+  @override
+  String get talkNoWords => 'نه,خیر,لغو,رد کن,الان نه';
+
+  @override
+  String get talkStopWords => 'بس کن,توقف,همین,خداحافظ,بای,پایان حالت گفتگو';
 }

@@ -9225,6 +9225,195 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Научене речи су заборављене';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Понесите: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Термин за обнову';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: ваш термин је у $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: ваш термин је сутра.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Припремам план обнове';
+
+  @override
+  String get assistantStepWeb => 'Проверавам званичне изворе';
+
+  @override
+  String get coachAppointmentBring => 'Понесите';
+
+  @override
+  String get coachAppointmentNote => 'Добићете подсетник вече пре, и два сата пре ако је време постављено.';
+
+  @override
+  String get coachAppointmentRemove => 'Уклони термин';
+
+  @override
+  String get coachAppointmentSaved => 'Термин је сачуван';
+
+  @override
+  String get coachAppointmentStep => 'Идите на термин';
+
+  @override
+  String get coachAppointmentTitle => 'Термин';
+
+  @override
+  String get coachAppointmentWhen => 'Када';
+
+  @override
+  String get coachAppointmentWhere => 'Где';
+
+  @override
+  String get coachAskNext => 'Питај Vaultara за следећи корак';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Који је следећи корак за обнову $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Како да обновим $name? Направи ми план обнове са званичним корацима.';
+  }
+
+  @override
+  String get coachBookNote => 'Термин заказујете на званичном сајту. Vaultara никад не заказује уместо вас.';
+
+  @override
+  String get coachBookOnSite => 'Закажи на званичном сајту';
+
+  @override
+  String get coachBookingLabel => 'Заказивање';
+
+  @override
+  String get coachCountryLabel => 'Држава';
+
+  @override
+  String get coachFeeLabel => 'Такса';
+
+  @override
+  String get coachGetSteps => 'Прикажи кораке за моју државу';
+
+  @override
+  String get coachLinkFailed => 'Линк није могуће отворити.';
+
+  @override
+  String get coachNoPlan => 'Овај запис још нема план обнове.';
+
+  @override
+  String get coachOpenLink => 'Отвори званичну страницу';
+
+  @override
+  String get coachPlanNote => 'Кораци постају листа за обнову овог записа, са званичним линковима.';
+
+  @override
+  String get coachPlanSaved => 'План обнове је сачуван';
+
+  @override
+  String get coachPlanTitle => 'Ваш план обнове';
+
+  @override
+  String get coachProcessingLabel => 'Време обраде';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara проналази праве кораке за вашу државу на званичним сајтовима, са таксом, трајањем и местом заказивања.';
+
+  @override
+  String get coachPromoTitle => 'Помоћник за обнову';
+
+  @override
+  String get coachRulesChange => 'Правила и таксе се могу променити. Проверите званичну страницу пре плаћања.';
+
+  @override
+  String get coachSourcesLabel => 'Извори';
+
+  @override
+  String get coachStepDoneTitle => 'Означи корак као завршен';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Корак $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Означи корак као незавршен';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count корака',
+      few: '$count корака',
+      one: '1 корак',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Шта ме чека?';
+
+  @override
+  String get talkBye => 'Довиђења.';
+
+  @override
+  String get talkConfirmAsk => 'Реците да за потврду или не за прескакање.';
+
+  @override
+  String get talkDone => 'Готово.';
+
+  @override
+  String get talkEnd => 'Крај';
+
+  @override
+  String get talkListening => 'Слушам…';
+
+  @override
+  String get talkNoVoice => 'Ваш телефон нема глас за овај језик, па се одговори приказују, али не читају.';
+
+  @override
+  String get talkNotDone => 'Није успело. Проверите картицу на екрану.';
+
+  @override
+  String get talkReady => 'Слушам.';
+
+  @override
+  String get talkShortcut => 'Разговарај са Vaultara';
+
+  @override
+  String get talkSkipped => 'У реду, прескочено.';
+
+  @override
+  String get talkSpeaking => 'Говори. Додирните да прекинете';
+
+  @override
+  String get talkTapToSpeak => 'Додирните да говорите';
+
+  @override
+  String get talkThinking => 'Размишља…';
+
+  @override
+  String get talkTitle => 'Режим разговора';
+
+  @override
+  String get talkYesWords => 'да,може,наравно,ок,важи,потврди,уради то,само напред';
+
+  @override
+  String get talkNoWords => 'не,нема,откажи,прескочи,не сада';
+
+  @override
+  String get talkStopWords => 'стоп,то је све,ћао,довиђења,заврши разговор';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -18447,6 +18636,195 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get assistantForgetWordsDone => 'Научене речи су заборављене';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Понесите: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Термин за обнову';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: ваш термин је у $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: ваш термин је сутра.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Припремам план обнове';
+
+  @override
+  String get assistantStepWeb => 'Проверавам званичне изворе';
+
+  @override
+  String get coachAppointmentBring => 'Понесите';
+
+  @override
+  String get coachAppointmentNote => 'Добићете подсетник вече пре, и два сата пре ако је време постављено.';
+
+  @override
+  String get coachAppointmentRemove => 'Уклони термин';
+
+  @override
+  String get coachAppointmentSaved => 'Термин је сачуван';
+
+  @override
+  String get coachAppointmentStep => 'Идите на термин';
+
+  @override
+  String get coachAppointmentTitle => 'Термин';
+
+  @override
+  String get coachAppointmentWhen => 'Када';
+
+  @override
+  String get coachAppointmentWhere => 'Где';
+
+  @override
+  String get coachAskNext => 'Питај Vaultara за следећи корак';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Који је следећи корак за обнову $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Како да обновим $name? Направи ми план обнове са званичним корацима.';
+  }
+
+  @override
+  String get coachBookNote => 'Термин заказујете на званичном сајту. Vaultara никад не заказује уместо вас.';
+
+  @override
+  String get coachBookOnSite => 'Закажи на званичном сајту';
+
+  @override
+  String get coachBookingLabel => 'Заказивање';
+
+  @override
+  String get coachCountryLabel => 'Држава';
+
+  @override
+  String get coachFeeLabel => 'Такса';
+
+  @override
+  String get coachGetSteps => 'Прикажи кораке за моју државу';
+
+  @override
+  String get coachLinkFailed => 'Линк није могуће отворити.';
+
+  @override
+  String get coachNoPlan => 'Овај запис још нема план обнове.';
+
+  @override
+  String get coachOpenLink => 'Отвори званичну страницу';
+
+  @override
+  String get coachPlanNote => 'Кораци постају листа за обнову овог записа, са званичним линковима.';
+
+  @override
+  String get coachPlanSaved => 'План обнове је сачуван';
+
+  @override
+  String get coachPlanTitle => 'Ваш план обнове';
+
+  @override
+  String get coachProcessingLabel => 'Време обраде';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara проналази праве кораке за вашу државу на званичним сајтовима, са таксом, трајањем и местом заказивања.';
+
+  @override
+  String get coachPromoTitle => 'Помоћник за обнову';
+
+  @override
+  String get coachRulesChange => 'Правила и таксе се могу променити. Проверите званичну страницу пре плаћања.';
+
+  @override
+  String get coachSourcesLabel => 'Извори';
+
+  @override
+  String get coachStepDoneTitle => 'Означи корак као завршен';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Корак $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Означи корак као незавршен';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count корака',
+      few: '$count корака',
+      one: '1 корак',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Шта ме чека?';
+
+  @override
+  String get talkBye => 'Довиђења.';
+
+  @override
+  String get talkConfirmAsk => 'Реците да за потврду или не за прескакање.';
+
+  @override
+  String get talkDone => 'Готово.';
+
+  @override
+  String get talkEnd => 'Крај';
+
+  @override
+  String get talkListening => 'Слушам…';
+
+  @override
+  String get talkNoVoice => 'Ваш телефон нема глас за овај језик, па се одговори приказују, али не читају.';
+
+  @override
+  String get talkNotDone => 'Није успело. Проверите картицу на екрану.';
+
+  @override
+  String get talkReady => 'Слушам.';
+
+  @override
+  String get talkShortcut => 'Разговарај са Vaultara';
+
+  @override
+  String get talkSkipped => 'У реду, прескочено.';
+
+  @override
+  String get talkSpeaking => 'Говори. Додирните да прекинете';
+
+  @override
+  String get talkTapToSpeak => 'Додирните да говорите';
+
+  @override
+  String get talkThinking => 'Размишља…';
+
+  @override
+  String get talkTitle => 'Режим разговора';
+
+  @override
+  String get talkYesWords => 'да,може,наравно,ок,важи,потврди,уради то,само напред';
+
+  @override
+  String get talkNoWords => 'не,нема,откажи,прескочи,не сада';
+
+  @override
+  String get talkStopWords => 'стоп,то је све,ћао,довиђења,заврши разговор';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -27665,4 +28043,193 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get assistantForgetWordsDone => 'Naučene reči su zaboravljene';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Ponesite: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Termin za obnovu';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: vaš termin je u $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: vaš termin je sutra.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Pripremam plan obnove';
+
+  @override
+  String get assistantStepWeb => 'Proveravam zvanične izvore';
+
+  @override
+  String get coachAppointmentBring => 'Ponesite';
+
+  @override
+  String get coachAppointmentNote => 'Dobićete podsetnik veče pre, i dva sata pre ako je vreme postavljeno.';
+
+  @override
+  String get coachAppointmentRemove => 'Ukloni termin';
+
+  @override
+  String get coachAppointmentSaved => 'Termin je sačuvan';
+
+  @override
+  String get coachAppointmentStep => 'Idite na termin';
+
+  @override
+  String get coachAppointmentTitle => 'Termin';
+
+  @override
+  String get coachAppointmentWhen => 'Kada';
+
+  @override
+  String get coachAppointmentWhere => 'Gde';
+
+  @override
+  String get coachAskNext => 'Pitaj Vaultara za sledeći korak';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Koji je sledeći korak za obnovu $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Kako da obnovim $name? Napravi mi plan obnove sa zvaničnim koracima.';
+  }
+
+  @override
+  String get coachBookNote => 'Termin zakazujete na zvaničnom sajtu. Vaultara nikad ne zakazuje umesto vas.';
+
+  @override
+  String get coachBookOnSite => 'Zakaži na zvaničnom sajtu';
+
+  @override
+  String get coachBookingLabel => 'Zakazivanje';
+
+  @override
+  String get coachCountryLabel => 'Država';
+
+  @override
+  String get coachFeeLabel => 'Taksa';
+
+  @override
+  String get coachGetSteps => 'Prikaži korake za moju državu';
+
+  @override
+  String get coachLinkFailed => 'Link nije moguće otvoriti.';
+
+  @override
+  String get coachNoPlan => 'Ovaj zapis još nema plan obnove.';
+
+  @override
+  String get coachOpenLink => 'Otvori zvaničnu stranicu';
+
+  @override
+  String get coachPlanNote => 'Koraci postaju lista za obnovu ovog zapisa, sa zvaničnim linkovima.';
+
+  @override
+  String get coachPlanSaved => 'Plan obnove je sačuvan';
+
+  @override
+  String get coachPlanTitle => 'Vaš plan obnove';
+
+  @override
+  String get coachProcessingLabel => 'Vreme obrade';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara pronalazi prave korake za vašu državu na zvaničnim sajtovima, sa taksom, trajanjem i mestom zakazivanja.';
+
+  @override
+  String get coachPromoTitle => 'Pomoćnik za obnovu';
+
+  @override
+  String get coachRulesChange => 'Pravila i takse se mogu promeniti. Proverite zvaničnu stranicu pre plaćanja.';
+
+  @override
+  String get coachSourcesLabel => 'Izvori';
+
+  @override
+  String get coachStepDoneTitle => 'Označi korak kao završen';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Korak $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Označi korak kao nezavršen';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count koraka',
+      few: '$count koraka',
+      one: '1 korak',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Šta me čeka?';
+
+  @override
+  String get talkBye => 'Doviđenja.';
+
+  @override
+  String get talkConfirmAsk => 'Recite da za potvrdu ili ne za preskakanje.';
+
+  @override
+  String get talkDone => 'Gotovo.';
+
+  @override
+  String get talkEnd => 'Kraj';
+
+  @override
+  String get talkListening => 'Slušam…';
+
+  @override
+  String get talkNoVoice => 'Vaš telefon nema glas za ovaj jezik, pa se odgovori prikazuju, ali ne čitaju.';
+
+  @override
+  String get talkNotDone => 'Nije uspelo. Proverite karticu na ekranu.';
+
+  @override
+  String get talkReady => 'Slušam.';
+
+  @override
+  String get talkShortcut => 'Razgovaraj sa Vaultara';
+
+  @override
+  String get talkSkipped => 'U redu, preskočeno.';
+
+  @override
+  String get talkSpeaking => 'Govori. Dodirnite da prekinete';
+
+  @override
+  String get talkTapToSpeak => 'Dodirnite da govorite';
+
+  @override
+  String get talkThinking => 'Razmišlja…';
+
+  @override
+  String get talkTitle => 'Režim razgovora';
+
+  @override
+  String get talkYesWords => 'da,može,naravno,ok,važi,potvrdi,uradi to,samo napred';
+
+  @override
+  String get talkNoWords => 'ne,nema,otkaži,preskoči,ne sada';
+
+  @override
+  String get talkStopWords => 'stop,to je sve,ćao,doviđenja,završi razgovor';
 }

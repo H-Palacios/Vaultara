@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "Maneno yaliyojifunzwa yamesahauliwa",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Leta: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Miadi ya kuhuisha",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: miadi yako ni saa {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: miadi yako ni kesho.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Inaandaa mpango wako wa kuhuisha",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Inakagua vyanzo rasmi",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Leta",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Utapata kikumbusho jioni iliyotangulia, na saa mbili kabla ikiwa muda umewekwa.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Ondoa miadi",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Miadi imehifadhiwa",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Nenda kwenye miadi",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Miadi",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Lini",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Wapi",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Uliza Vaultara hatua inayofuata",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Hatua inayofuata ya kuhuisha {name} yangu ni ipi?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Nitahuishaje {name} yangu? Nitengenezee mpango wa kuhuisha wenye hatua rasmi.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Unaweka miadi kwenye tovuti rasmi. Vaultara haiwekei miadi kwa niaba yako kamwe.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Weka miadi kwenye tovuti rasmi",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Kuweka miadi",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Nchi",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Ada",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Pata hatua za nchi yangu",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Kiungo hakikuweza kufunguliwa.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Rekodi hii bado haina mpango wa kuhuisha.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Fungua ukurasa rasmi",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Hatua zinakuwa orodha ya kuhuisha ya rekodi hii, pamoja na viungo rasmi.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Mpango wa kuhuisha umehifadhiwa",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Mpango wako wa kuhuisha",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Muda wa kushughulikia",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara inapata hatua halisi za nchi yako kwenye tovuti rasmi, pamoja na ada, muda na mahali pa kuweka miadi.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Kocha wa kuhuisha",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Sheria na ada zinaweza kubadilika. Kagua ukurasa rasmi kabla ya kulipa.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Vyanzo",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Weka alama kuwa hatua imekamilika",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Hatua ya {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Weka alama kuwa hatua haijakamilika",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{hatua 1} other{hatua {count}}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Nini kinanijia?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Kwaheri.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Sema ndiyo kuthibitisha, au hapana kuruka.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Imekamilika.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Maliza",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Inasikiliza…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Simu yako haina sauti ya lugha hii, kwa hivyo majibu yanaonyeshwa lakini hayasomwi.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Haikufanikiwa. Angalia kadi kwenye skrini.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Ninasikiliza.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Ongea na Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Sawa, imerukwa.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Inaongea. Gusa ili kukatiza",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Gusa ili kuongea",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Inafikiri…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Hali ya mazungumzo",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ndiyo,ndio,sawa,hakika,ok,thibitisha,fanya,endelea",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "hapana,la,ghairi,ruka,si sasa",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "simama,acha,inatosha,kwaheri,bai,maliza mazungumzo",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

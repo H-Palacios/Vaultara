@@ -9091,4 +9091,191 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'A ti gbàgbé àwọn ọ̀rọ̀ tí a kọ́';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Mú wá: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Ìpàdé fún ìsọdọ̀tun';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: ìpàdé rẹ jẹ́ ní agogo $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: ìpàdé rẹ jẹ́ ọ̀la.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Ń ṣe ètò ìsọdọ̀tun rẹ';
+
+  @override
+  String get assistantStepWeb => 'Ń ṣàyẹ̀wò àwọn orísun ìjọba';
+
+  @override
+  String get coachAppointmentBring => 'Mú wá';
+
+  @override
+  String get coachAppointmentNote => 'Ìránnilétí yóò dé ní ìrọ̀lẹ́ ọjọ́ tó ṣáájú, àti wákàtí méjì ṣáájú tí a bá ṣètò àkókò.';
+
+  @override
+  String get coachAppointmentRemove => 'Yọ ìpàdé kúrò';
+
+  @override
+  String get coachAppointmentSaved => 'A ti fi ìpàdé pamọ́';
+
+  @override
+  String get coachAppointmentStep => 'Lọ sí ìpàdé';
+
+  @override
+  String get coachAppointmentTitle => 'Ìpàdé';
+
+  @override
+  String get coachAppointmentWhen => 'Nígbà wo';
+
+  @override
+  String get coachAppointmentWhere => 'Níbo';
+
+  @override
+  String get coachAskNext => 'Béèrè ìgbésẹ̀ tó kàn lọ́wọ́ Vaultara';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Kí ni ìgbésẹ̀ tó kàn láti sọ $name mi dọ̀tun?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Báwo ni mo ṣe lè sọ $name mi dọ̀tun? Ṣe ètò ìsọdọ̀tun fún mi pẹ̀lú àwọn ìgbésẹ̀ ìjọba.';
+  }
+
+  @override
+  String get coachBookNote => 'O máa ń ṣe ìfiṣẹ̀ṣẹ̀ lórí ojú-òpó ìjọba. Vaultara kì í ṣe é fún ọ láé.';
+
+  @override
+  String get coachBookOnSite => 'Fi orúkọ sílẹ̀ lórí ojú-òpó ìjọba';
+
+  @override
+  String get coachBookingLabel => 'Ìfiṣẹ̀ṣẹ̀';
+
+  @override
+  String get coachCountryLabel => 'Orílẹ̀-èdè';
+
+  @override
+  String get coachFeeLabel => 'Owó';
+
+  @override
+  String get coachGetSteps => 'Gba àwọn ìgbésẹ̀ fún orílẹ̀-èdè mi';
+
+  @override
+  String get coachLinkFailed => 'A kò lè ṣí ìsopọ̀ náà.';
+
+  @override
+  String get coachNoPlan => 'Àkọsílẹ̀ yìí kò tíì ní ètò ìsọdọ̀tun.';
+
+  @override
+  String get coachOpenLink => 'Ṣí ojú-ìwé ìjọba';
+
+  @override
+  String get coachPlanNote => 'Àwọn ìgbésẹ̀ náà di àkójọ ìsọdọ̀tun àkọsílẹ̀ yìí, pẹ̀lú àwọn ìsopọ̀ ìjọba.';
+
+  @override
+  String get coachPlanSaved => 'A ti fi ètò ìsọdọ̀tun pamọ́';
+
+  @override
+  String get coachPlanTitle => 'Ètò ìsọdọ̀tun rẹ';
+
+  @override
+  String get coachProcessingLabel => 'Àkókò ìṣiṣẹ́';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara ń rí àwọn ìgbésẹ̀ gidi fún orílẹ̀-èdè rẹ lórí àwọn ojú-òpó ìjọba, pẹ̀lú owó, àkókò àti ibi tí o ti lè fi orúkọ sílẹ̀.';
+
+  @override
+  String get coachPromoTitle => 'Olùkọ́ ìsọdọ̀tun';
+
+  @override
+  String get coachRulesChange => 'Àwọn òfin àti owó lè yí padà. Ṣàyẹ̀wò ojú-ìwé ìjọba kí o tó sanwó.';
+
+  @override
+  String get coachSourcesLabel => 'Àwọn orísun';
+
+  @override
+  String get coachStepDoneTitle => 'Sàmì sí ìgbésẹ̀ pé ó ti parí';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Ìgbésẹ̀ $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Sàmì sí ìgbésẹ̀ pé kò tíì parí';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ìgbésẹ̀ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Kí ló ń bọ̀ fún mi?';
+
+  @override
+  String get talkBye => 'Ó dàbọ̀.';
+
+  @override
+  String get talkConfirmAsk => 'Sọ bẹ́ẹ̀ni láti jẹ́rìí, tàbí rárá láti fò ó.';
+
+  @override
+  String get talkDone => 'Ó ti parí.';
+
+  @override
+  String get talkEnd => 'Parí';
+
+  @override
+  String get talkListening => 'Ń gbọ́…';
+
+  @override
+  String get talkNoVoice => 'Fóònù rẹ kò ní ohùn fún èdè yìí, nítorí náà a ń fi ìdáhùn hàn ṣùgbọ́n a kì í kà wọ́n.';
+
+  @override
+  String get talkNotDone => 'Kò ṣẹlẹ̀. Ṣàyẹ̀wò káàdì lórí ìbòjú.';
+
+  @override
+  String get talkReady => 'Mo ń gbọ́.';
+
+  @override
+  String get talkShortcut => 'Bá Vaultara sọ̀rọ̀';
+
+  @override
+  String get talkSkipped => 'Ó dáa, a ti fò ó.';
+
+  @override
+  String get talkSpeaking => 'Ń sọ̀rọ̀. Tẹ̀ láti dá a dúró';
+
+  @override
+  String get talkTapToSpeak => 'Tẹ̀ láti sọ̀rọ̀';
+
+  @override
+  String get talkThinking => 'Ń ronú…';
+
+  @override
+  String get talkTitle => 'Ipò ìsọ̀rọ̀';
+
+  @override
+  String get talkYesWords => 'bẹ́ẹ̀ni,bẹẹni,ó dáa,dájúdájú,ok,jẹ́rìí,ṣe é,tẹ̀síwájú';
+
+  @override
+  String get talkNoWords => 'rárá,rara,fagilé,fò ó,kì í ṣe báyìí';
+
+  @override
+  String get talkStopWords => 'dúró,ó tó,ìyẹn nìkan,ó dàbọ̀,bye,parí ipò ìsọ̀rọ̀';
 }

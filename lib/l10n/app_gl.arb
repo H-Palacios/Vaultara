@@ -3509,5 +3509,267 @@
   "assistantForgetWordsDone": "Palabras aprendidas esquecidas",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Leva: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Cita para a renovación",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: a túa cita é ás {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: a túa cita é mañá.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Preparando o teu plan de renovación",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Consultando fontes oficiais",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Leva",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Recibirás un recordatorio a noite anterior, e dúas horas antes se hai hora fixada.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Quitar cita",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Cita gardada",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Vai á cita",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Cita",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Cando",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Onde",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Pregunta a Vaultara o seguinte paso",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Cal é o seguinte paso para renovar o meu {name}?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Como renovo o meu {name}? Faime un plan de renovación cos pasos oficiais.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "A cita resérvase no sitio oficial. Vaultara nunca reserva por ti.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Reservar no sitio oficial",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Reserva",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "País",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Taxa",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Ver os pasos para o meu país",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Non se puido abrir a ligazón.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Este rexistro aínda non ten plan de renovación.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Abrir a páxina oficial",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Os pasos pasan a ser a lista de renovación deste rexistro, coas ligazóns oficiais.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Plan de renovación gardado",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "O teu plan de renovación",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Tempo de tramitación",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara atopa os pasos reais para o teu país en sitios oficiais, coa taxa, o prazo e onde reservar.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Asistente de renovación",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "As normas e taxas poden cambiar. Revisa a páxina oficial antes de pagar.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Fontes",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Marcar paso como feito",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Paso {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Marcar paso como non feito",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 paso} other{{count} pasos}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Que teño por diante?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Adeus.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Di si para confirmar ou non para omitir.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Feito.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Rematar",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Escoitando…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "O teléfono non ten voz para este idioma, así que as respostas amósanse pero non se len.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Non se puido facer. Revisa a tarxeta na pantalla.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Escóitote.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Fala con Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Vale, omitido.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Falando. Toca para interromper",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Toca para falar",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Pensando…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Modo conversa",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "si,claro,vale,ok,de acordo,confirma,faino,adiante",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "non,cancela,omite,salta,agora non",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "para,abonda,iso é todo,adeus,chao,remata o modo conversa",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

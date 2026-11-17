@@ -9157,4 +9157,192 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Mots appris oubliés';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Apportez : $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Rendez-vous de renouvellement';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name : votre rendez-vous est à $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name : votre rendez-vous est demain.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Préparation de votre plan de renouvellement';
+
+  @override
+  String get assistantStepWeb => 'Vérification des sources officielles';
+
+  @override
+  String get coachAppointmentBring => 'Apportez';
+
+  @override
+  String get coachAppointmentNote => 'Vous recevez un rappel la veille au soir, et deux heures avant si l\'heure est indiquée.';
+
+  @override
+  String get coachAppointmentRemove => 'Supprimer le rendez-vous';
+
+  @override
+  String get coachAppointmentSaved => 'Rendez-vous enregistré';
+
+  @override
+  String get coachAppointmentStep => 'Allez au rendez-vous';
+
+  @override
+  String get coachAppointmentTitle => 'Rendez-vous';
+
+  @override
+  String get coachAppointmentWhen => 'Quand';
+
+  @override
+  String get coachAppointmentWhere => 'Où';
+
+  @override
+  String get coachAskNext => 'Demander l\'étape suivante à Vaultara';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Quelle est l\'étape suivante pour renouveler mon $name ?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Comment renouveler mon $name ? Fais-moi un plan de renouvellement avec les étapes officielles.';
+  }
+
+  @override
+  String get coachBookNote => 'Vous réservez sur le site officiel. Vaultara ne réserve jamais à votre place.';
+
+  @override
+  String get coachBookOnSite => 'Réserver sur le site officiel';
+
+  @override
+  String get coachBookingLabel => 'Réservation';
+
+  @override
+  String get coachCountryLabel => 'Pays';
+
+  @override
+  String get coachFeeLabel => 'Frais';
+
+  @override
+  String get coachGetSteps => 'Voir les étapes pour mon pays';
+
+  @override
+  String get coachLinkFailed => 'Le lien n\'a pas pu être ouvert.';
+
+  @override
+  String get coachNoPlan => 'Cette fiche n\'a pas encore de plan de renouvellement.';
+
+  @override
+  String get coachOpenLink => 'Ouvrir la page officielle';
+
+  @override
+  String get coachPlanNote => 'Les étapes deviennent la liste de renouvellement de cette fiche, avec les liens officiels.';
+
+  @override
+  String get coachPlanSaved => 'Plan de renouvellement enregistré';
+
+  @override
+  String get coachPlanTitle => 'Votre plan de renouvellement';
+
+  @override
+  String get coachProcessingLabel => 'Délai de traitement';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara trouve les vraies étapes pour votre pays sur les sites officiels, avec les frais, le délai et où réserver.';
+
+  @override
+  String get coachPromoTitle => 'Coach de renouvellement';
+
+  @override
+  String get coachRulesChange => 'Les règles et les frais peuvent changer. Vérifiez la page officielle avant de payer.';
+
+  @override
+  String get coachSourcesLabel => 'Sources';
+
+  @override
+  String get coachStepDoneTitle => 'Marquer l\'étape comme faite';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Étape $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Marquer l\'étape comme non faite';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count étapes',
+      one: '1 étape',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Qu\'est-ce qui m\'attend ?';
+
+  @override
+  String get talkBye => 'Au revoir.';
+
+  @override
+  String get talkConfirmAsk => 'Dites oui pour confirmer ou non pour passer.';
+
+  @override
+  String get talkDone => 'C\'est fait.';
+
+  @override
+  String get talkEnd => 'Terminer';
+
+  @override
+  String get talkListening => 'À l\'écoute…';
+
+  @override
+  String get talkNoVoice => 'Votre téléphone n\'a pas de voix pour cette langue : les réponses s\'affichent mais ne sont pas lues.';
+
+  @override
+  String get talkNotDone => 'Cela n\'a pas abouti. Regardez la carte à l\'écran.';
+
+  @override
+  String get talkReady => 'Je vous écoute.';
+
+  @override
+  String get talkShortcut => 'Parler à Vaultara';
+
+  @override
+  String get talkSkipped => 'D\'accord, ignoré.';
+
+  @override
+  String get talkSpeaking => 'Parle. Touchez pour interrompre';
+
+  @override
+  String get talkTapToSpeak => 'Touchez pour parler';
+
+  @override
+  String get talkThinking => 'Réflexion…';
+
+  @override
+  String get talkTitle => 'Mode conversation';
+
+  @override
+  String get talkYesWords => 'oui,ouais,bien sûr,d\'accord,ok,confirme,vas-y,fais-le';
+
+  @override
+  String get talkNoWords => 'non,annule,passe,pas maintenant,laisse tomber';
+
+  @override
+  String get talkStopWords => 'stop,arrête,c\'est tout,au revoir,salut,termine le mode conversation';
 }

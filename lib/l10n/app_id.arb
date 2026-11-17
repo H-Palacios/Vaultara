@@ -3502,5 +3502,267 @@
   "assistantForgetWordsDone": "Kata yang dipelajari telah dilupakan",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Bawa: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Janji temu perpanjangan",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: janji temu Anda pukul {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: janji temu Anda besok.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Menyusun rencana perpanjangan",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Memeriksa sumber resmi",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Bawa",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Anda mendapat pengingat malam sebelumnya, dan dua jam sebelumnya jika waktunya diatur.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Hapus janji temu",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Janji temu disimpan",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Pergi ke janji temu",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Janji temu",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Kapan",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Di mana",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Tanya Vaultara langkah berikutnya",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Apa langkah berikutnya untuk memperpanjang {name} saya?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Bagaimana cara memperpanjang {name} saya? Buatkan rencana perpanjangan dengan langkah resmi.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Anda memesan di situs resmi. Vaultara tidak pernah memesan untuk Anda.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Pesan di situs resmi",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Pemesanan",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Negara",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Biaya",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Dapatkan langkah untuk negara saya",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Tautan tidak dapat dibuka.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Catatan ini belum punya rencana perpanjangan.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Buka halaman resmi",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Langkah-langkah menjadi daftar periksa perpanjangan catatan ini, dengan tautan resmi.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Rencana perpanjangan disimpan",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Rencana perpanjangan Anda",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Waktu proses",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara menemukan langkah sebenarnya untuk negara Anda di situs resmi, dengan biaya, lama proses, dan tempat memesan.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Pelatih perpanjangan",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Aturan dan biaya bisa berubah. Periksa halaman resmi sebelum membayar.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Sumber",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Tandai langkah selesai",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Langkah {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Tandai langkah belum selesai",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, other{{count} langkah}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Apa yang akan datang untuk saya?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Sampai jumpa.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Katakan ya untuk mengonfirmasi, atau tidak untuk melewati.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Selesai.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Akhiri",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Mendengarkan…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Ponsel Anda tidak punya suara untuk bahasa ini, jadi jawaban ditampilkan tetapi tidak dibacakan.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Itu gagal. Periksa kartu di layar.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Saya mendengarkan.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Bicara dengan Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Oke, dilewati.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Berbicara. Ketuk untuk menyela",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Ketuk untuk bicara",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Berpikir…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Mode bicara",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ya,iya,boleh,ok,oke,konfirmasi,lakukan,lanjut",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "tidak,nggak,batal,lewati,jangan sekarang",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "berhenti,stop,sudah itu saja,dah,sampai jumpa,akhiri mode bicara",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

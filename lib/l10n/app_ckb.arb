@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "وشە فێربووەکان لەبیر کران",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "بهێنە: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "کاتی نوێکردنەوە",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: کاتەکەت لە {time}دایە.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: کاتەکەت سبەینێیە.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "پلانی نوێکردنەوەکەت ئامادە دەکرێت",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "سەرچاوە فەرمییەکان دەپشکنرێن",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "بهێنە",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "ئێوارەی ڕۆژی پێشتر بیرخستنەوەیەک وەردەگریت، و ئەگەر کات دانرابێت دوو کاتژمێر پێشتریش.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "کاتەکە بسڕەوە",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "کاتەکە پاشەکەوت کرا",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "بڕۆ بۆ کاتەکە",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "کات",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "کەی",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "لە کوێ",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "هەنگاوی داهاتوو لە Vaultara بپرسە",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "هەنگاوی داهاتوو بۆ نوێکردنەوەی {name} چییە؟",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "چۆن {name} نوێ بکەمەوە؟ پلانێکی نوێکردنەوە بە هەنگاوە فەرمییەکان بۆم دروست بکە.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "لە ماڵپەڕی فەرمی کات دەگریت. Vaultara هەرگیز لە جیاتی تۆ کات ناگرێت.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "لە ماڵپەڕی فەرمی کات بگرە",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "کاتگرتن",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "وڵات",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "باج",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "هەنگاوەکان بۆ وڵاتەکەم پیشان بدە",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "بەستەرەکە نەکرایەوە.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "ئەم تۆمارە هێشتا پلانی نوێکردنەوەی نییە.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "پەڕە فەرمییەکە بکەرەوە",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "هەنگاوەکان دەبنە لیستی نوێکردنەوەی ئەم تۆمارە، لەگەڵ بەستەرە فەرمییەکان.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "پلانی نوێکردنەوە پاشەکەوت کرا",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "پلانی نوێکردنەوەکەت",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "ماوەی جێبەجێکردن",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara هەنگاوە ڕاستەقینەکان بۆ وڵاتەکەت لە ماڵپەڕە فەرمییەکان دەدۆزێتەوە، لەگەڵ باج، ماوە و شوێنی کاتگرتن.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "ڕاهێنەری نوێکردنەوە",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "یاسا و باجەکان دەگۆڕێن. پێش پارەدان پەڕە فەرمییەکە بپشکنە.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "سەرچاوەکان",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "هەنگاوەکە وەک تەواوبوو نیشان بکە",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "هەنگاوی {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "هەنگاوەکە وەک تەواونەبوو نیشان بکە",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, other{{count} هەنگاو}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "چی چاوەڕێم دەکات؟",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "خوات لەگەڵ.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "بڵێ بەڵێ بۆ پشتڕاستکردنەوە، یان نەخێر بۆ تێپەڕاندن.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "تەواو.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "کۆتایی",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "گوێ دەگرێت…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "مۆبایلەکەت دەنگی ئەم زمانەی نییە، بۆیە وەڵامەکان پیشان دەدرێن بەڵام ناخوێندرێنەوە.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "سەرکەوتوو نەبوو. کارتەکەی سەر شاشە بپشکنە.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "گوێ دەگرم.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "لەگەڵ Vaultara قسە بکە",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "باشە، تێپەڕێندرا.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "قسە دەکات. دەست لێبدە بۆ بڕین",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "دەست لێبدە بۆ قسەکردن",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "بیر دەکاتەوە…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "دۆخی قسەکردن",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "بەڵێ,ئا,دڵنیام,باشە,ئۆکەی,پشتڕاستی بکەرەوە,بیکە",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "نەخێر,نا,هەڵیوەشێنەوە,تێپەڕێنە,ئێستا نا",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "بوەستە,ئەوەندە,خوات لەگەڵ,بای,دۆخی قسەکردن کۆتایی پێبهێنە",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

@@ -9147,4 +9147,192 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Paraules apreses oblidades';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Porta: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Cita per a la renovació';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: la teva cita és a les $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: la teva cita és demà.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Preparant el pla de renovació';
+
+  @override
+  String get assistantStepWeb => 'Consultant fonts oficials';
+
+  @override
+  String get coachAppointmentBring => 'Porta';
+
+  @override
+  String get coachAppointmentNote => 'Rebràs un recordatori el vespre abans, i dues hores abans si hi ha hora.';
+
+  @override
+  String get coachAppointmentRemove => 'Elimina la cita';
+
+  @override
+  String get coachAppointmentSaved => 'Cita desada';
+
+  @override
+  String get coachAppointmentStep => 'Ves a la cita';
+
+  @override
+  String get coachAppointmentTitle => 'Cita';
+
+  @override
+  String get coachAppointmentWhen => 'Quan';
+
+  @override
+  String get coachAppointmentWhere => 'On';
+
+  @override
+  String get coachAskNext => 'Demana a Vaultara el pas següent';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Quin és el pas següent per renovar el meu $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Com renovo el meu $name? Fes-me un pla de renovació amb els passos oficials.';
+  }
+
+  @override
+  String get coachBookNote => 'La cita es reserva al lloc oficial. Vaultara mai reserva per tu.';
+
+  @override
+  String get coachBookOnSite => 'Reserva al lloc oficial';
+
+  @override
+  String get coachBookingLabel => 'Reserva';
+
+  @override
+  String get coachCountryLabel => 'País';
+
+  @override
+  String get coachFeeLabel => 'Taxa';
+
+  @override
+  String get coachGetSteps => 'Mostra els passos per al meu país';
+
+  @override
+  String get coachLinkFailed => 'No s\'ha pogut obrir l\'enllaç.';
+
+  @override
+  String get coachNoPlan => 'Aquest registre encara no té pla de renovació.';
+
+  @override
+  String get coachOpenLink => 'Obre la pàgina oficial';
+
+  @override
+  String get coachPlanNote => 'Els passos es converteixen en la llista de renovació d\'aquest registre, amb els enllaços oficials.';
+
+  @override
+  String get coachPlanSaved => 'Pla de renovació desat';
+
+  @override
+  String get coachPlanTitle => 'El teu pla de renovació';
+
+  @override
+  String get coachProcessingLabel => 'Temps de tramitació';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara troba els passos reals per al teu país en llocs oficials, amb la taxa, quant tarda i on reservar.';
+
+  @override
+  String get coachPromoTitle => 'Assistent de renovació';
+
+  @override
+  String get coachRulesChange => 'Les normes i les taxes poden canviar. Consulta la pàgina oficial abans de pagar.';
+
+  @override
+  String get coachSourcesLabel => 'Fonts';
+
+  @override
+  String get coachStepDoneTitle => 'Marca el pas com a fet';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Pas $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Marca el pas com a no fet';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count passos',
+      one: '1 pas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Què tinc a prop?';
+
+  @override
+  String get talkBye => 'Adéu.';
+
+  @override
+  String get talkConfirmAsk => 'Digues sí per confirmar o no per ometre.';
+
+  @override
+  String get talkDone => 'Fet.';
+
+  @override
+  String get talkEnd => 'Acaba';
+
+  @override
+  String get talkListening => 'Escoltant…';
+
+  @override
+  String get talkNoVoice => 'El telèfon no té veu per a aquest idioma, així que les respostes es mostren però no es llegeixen.';
+
+  @override
+  String get talkNotDone => 'No s\'ha pogut fer. Revisa la targeta de la pantalla.';
+
+  @override
+  String get talkReady => 'T\'escolto.';
+
+  @override
+  String get talkShortcut => 'Parla amb Vaultara';
+
+  @override
+  String get talkSkipped => 'D\'acord, omès.';
+
+  @override
+  String get talkSpeaking => 'Parlant. Toca per interrompre';
+
+  @override
+  String get talkTapToSpeak => 'Toca per parlar';
+
+  @override
+  String get talkThinking => 'Pensant…';
+
+  @override
+  String get talkTitle => 'Mode conversa';
+
+  @override
+  String get talkYesWords => 'sí,si,és clar,d\'acord,ok,confirma,fes-ho,endavant';
+
+  @override
+  String get talkNoWords => 'no,cancel·la,omet,ara no';
+
+  @override
+  String get talkStopWords => 'para,ja està,adéu,fins aviat,acaba el mode conversa';
 }

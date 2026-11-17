@@ -9137,4 +9137,192 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Nakalimutan na ang mga natutunang salita';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Dalhin: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Appointment sa pag-renew';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: ang appointment mo ay sa $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: ang appointment mo ay bukas.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Inihahanda ang renewal plan mo';
+
+  @override
+  String get assistantStepWeb => 'Tinitingnan ang mga opisyal na source';
+
+  @override
+  String get coachAppointmentBring => 'Dalhin';
+
+  @override
+  String get coachAppointmentNote => 'Makakatanggap ka ng paalala sa gabi bago nito, at dalawang oras bago kung may oras na nakatakda.';
+
+  @override
+  String get coachAppointmentRemove => 'Alisin ang appointment';
+
+  @override
+  String get coachAppointmentSaved => 'Na-save ang appointment';
+
+  @override
+  String get coachAppointmentStep => 'Pumunta sa appointment';
+
+  @override
+  String get coachAppointmentTitle => 'Appointment';
+
+  @override
+  String get coachAppointmentWhen => 'Kailan';
+
+  @override
+  String get coachAppointmentWhere => 'Saan';
+
+  @override
+  String get coachAskNext => 'Itanong sa Vaultara ang susunod na hakbang';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Ano ang susunod na hakbang para i-renew ang $name ko?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Paano ko ire-renew ang $name ko? Gawan mo ako ng renewal plan na may opisyal na mga hakbang.';
+  }
+
+  @override
+  String get coachBookNote => 'Sa opisyal na site ka magbu-book. Hindi kailanman nagbu-book ang Vaultara para sa iyo.';
+
+  @override
+  String get coachBookOnSite => 'Mag-book sa opisyal na site';
+
+  @override
+  String get coachBookingLabel => 'Booking';
+
+  @override
+  String get coachCountryLabel => 'Bansa';
+
+  @override
+  String get coachFeeLabel => 'Bayad';
+
+  @override
+  String get coachGetSteps => 'Kunin ang mga hakbang para sa bansa ko';
+
+  @override
+  String get coachLinkFailed => 'Hindi mabuksan ang link.';
+
+  @override
+  String get coachNoPlan => 'Wala pang renewal plan ang record na ito.';
+
+  @override
+  String get coachOpenLink => 'Buksan ang opisyal na page';
+
+  @override
+  String get coachPlanNote => 'Ang mga hakbang ay magiging renewal checklist ng record na ito, kasama ang opisyal na mga link.';
+
+  @override
+  String get coachPlanSaved => 'Na-save ang renewal plan';
+
+  @override
+  String get coachPlanTitle => 'Ang renewal plan mo';
+
+  @override
+  String get coachProcessingLabel => 'Tagal ng proseso';
+
+  @override
+  String get coachPromoBody => 'Hinahanap ng Ask Vaultara ang tunay na mga hakbang para sa bansa mo sa opisyal na mga site, kasama ang bayad, tagal at kung saan magbu-book.';
+
+  @override
+  String get coachPromoTitle => 'Renewal coach';
+
+  @override
+  String get coachRulesChange => 'Maaaring magbago ang mga patakaran at bayad. Tingnan ang opisyal na page bago magbayad.';
+
+  @override
+  String get coachSourcesLabel => 'Mga source';
+
+  @override
+  String get coachStepDoneTitle => 'Markahang tapos ang hakbang';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Hakbang $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Markahang hindi pa tapos ang hakbang';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hakbang',
+      one: '1 hakbang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Ano ang paparating para sa akin?';
+
+  @override
+  String get talkBye => 'Paalam.';
+
+  @override
+  String get talkConfirmAsk => 'Sabihin ang oo para kumpirmahin, o hindi para laktawan.';
+
+  @override
+  String get talkDone => 'Tapos na.';
+
+  @override
+  String get talkEnd => 'Tapusin';
+
+  @override
+  String get talkListening => 'Nakikinig…';
+
+  @override
+  String get talkNoVoice => 'Walang boses ang telepono mo para sa wikang ito, kaya ipinapakita ang mga sagot pero hindi binabasa.';
+
+  @override
+  String get talkNotDone => 'Hindi natuloy. Tingnan ang card sa screen.';
+
+  @override
+  String get talkReady => 'Nakikinig ako.';
+
+  @override
+  String get talkShortcut => 'Kausapin ang Vaultara';
+
+  @override
+  String get talkSkipped => 'Sige, nilaktawan.';
+
+  @override
+  String get talkSpeaking => 'Nagsasalita. I-tap para putulin';
+
+  @override
+  String get talkTapToSpeak => 'I-tap para magsalita';
+
+  @override
+  String get talkThinking => 'Nag-iisip…';
+
+  @override
+  String get talkTitle => 'Talk mode';
+
+  @override
+  String get talkYesWords => 'oo,opo,sige,ok,okay,kumpirmahin,gawin mo,tuloy';
+
+  @override
+  String get talkNoWords => 'hindi,hindi po,kanselahin,laktawan,hindi muna';
+
+  @override
+  String get talkStopWords => 'tigil,stop,iyon lang,paalam,bye,tapusin ang talk mode';
 }

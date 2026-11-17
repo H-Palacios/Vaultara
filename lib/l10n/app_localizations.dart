@@ -15558,6 +15558,342 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Learned words forgotten'**
   String get assistantForgetWordsDone;
+
+  /// appointmentBring
+  ///
+  /// In en, this message translates to:
+  /// **'Bring: {items}'**
+  String appointmentBring(String items);
+
+  /// appointmentReminderTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Renewal appointment'**
+  String get appointmentReminderTitle;
+
+  /// Notification body two hours before; name is the record, time is HH:MM.
+  ///
+  /// In en, this message translates to:
+  /// **'{name}: your appointment is at {time}.'**
+  String appointmentSoon(String name, String time);
+
+  /// appointmentTomorrow
+  ///
+  /// In en, this message translates to:
+  /// **'{name}: your appointment is tomorrow.'**
+  String appointmentTomorrow(String name);
+
+  /// assistantStepRenewal
+  ///
+  /// In en, this message translates to:
+  /// **'Working on your renewal plan'**
+  String get assistantStepRenewal;
+
+  /// assistantStepWeb
+  ///
+  /// In en, this message translates to:
+  /// **'Checking official sources'**
+  String get assistantStepWeb;
+
+  /// coachAppointmentBring
+  ///
+  /// In en, this message translates to:
+  /// **'Bring'**
+  String get coachAppointmentBring;
+
+  /// coachAppointmentNote
+  ///
+  /// In en, this message translates to:
+  /// **'You get a reminder the evening before, and two hours before if the time is set.'**
+  String get coachAppointmentNote;
+
+  /// coachAppointmentRemove
+  ///
+  /// In en, this message translates to:
+  /// **'Remove appointment'**
+  String get coachAppointmentRemove;
+
+  /// coachAppointmentSaved
+  ///
+  /// In en, this message translates to:
+  /// **'Appointment saved'**
+  String get coachAppointmentSaved;
+
+  /// coachAppointmentStep
+  ///
+  /// In en, this message translates to:
+  /// **'Go to the appointment'**
+  String get coachAppointmentStep;
+
+  /// coachAppointmentTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Appointment'**
+  String get coachAppointmentTitle;
+
+  /// coachAppointmentWhen
+  ///
+  /// In en, this message translates to:
+  /// **'When'**
+  String get coachAppointmentWhen;
+
+  /// coachAppointmentWhere
+  ///
+  /// In en, this message translates to:
+  /// **'Where'**
+  String get coachAppointmentWhere;
+
+  /// coachAskNext
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Vaultara for the next step'**
+  String get coachAskNext;
+
+  /// Message sent to Ask Vaultara from a saved plan; name is the record name.
+  ///
+  /// In en, this message translates to:
+  /// **'What is the next step to renew my {name}?'**
+  String coachAskNextPrompt(String name);
+
+  /// Message sent to Ask Vaultara from the renewal guide; name is the record name.
+  ///
+  /// In en, this message translates to:
+  /// **'How do I renew my {name}? Make me a renewal plan with the official steps.'**
+  String coachAskPrompt(String name);
+
+  /// coachBookNote
+  ///
+  /// In en, this message translates to:
+  /// **'You book on the official site. Vaultara never books for you.'**
+  String get coachBookNote;
+
+  /// coachBookOnSite
+  ///
+  /// In en, this message translates to:
+  /// **'Book on the official site'**
+  String get coachBookOnSite;
+
+  /// coachBookingLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Booking'**
+  String get coachBookingLabel;
+
+  /// coachCountryLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get coachCountryLabel;
+
+  /// coachFeeLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Fee'**
+  String get coachFeeLabel;
+
+  /// coachGetSteps
+  ///
+  /// In en, this message translates to:
+  /// **'Get the steps for my country'**
+  String get coachGetSteps;
+
+  /// coachLinkFailed
+  ///
+  /// In en, this message translates to:
+  /// **'The link could not be opened.'**
+  String get coachLinkFailed;
+
+  /// coachNoPlan
+  ///
+  /// In en, this message translates to:
+  /// **'This record has no renewal plan yet.'**
+  String get coachNoPlan;
+
+  /// coachOpenLink
+  ///
+  /// In en, this message translates to:
+  /// **'Open the official page'**
+  String get coachOpenLink;
+
+  /// coachPlanNote
+  ///
+  /// In en, this message translates to:
+  /// **'The steps become this record\'s renewal checklist, with the official links.'**
+  String get coachPlanNote;
+
+  /// coachPlanSaved
+  ///
+  /// In en, this message translates to:
+  /// **'Renewal plan saved'**
+  String get coachPlanSaved;
+
+  /// coachPlanTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Your renewal plan'**
+  String get coachPlanTitle;
+
+  /// coachProcessingLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Processing time'**
+  String get coachProcessingLabel;
+
+  /// coachPromoBody
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Vaultara finds the real steps for your country on official sites, with the fee, how long it takes and where to book.'**
+  String get coachPromoBody;
+
+  /// coachPromoTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Renewal coach'**
+  String get coachPromoTitle;
+
+  /// coachRulesChange
+  ///
+  /// In en, this message translates to:
+  /// **'Rules and fees can change. Check the official page before you pay.'**
+  String get coachRulesChange;
+
+  /// coachSourcesLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get coachSourcesLabel;
+
+  /// coachStepDoneTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Mark step as done'**
+  String get coachStepDoneTitle;
+
+  /// coachStepLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Step {number}'**
+  String coachStepLabel(int number);
+
+  /// coachStepUndoTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Mark step as not done'**
+  String get coachStepUndoTitle;
+
+  /// coachStepsLabel
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 step} other{{count} steps}}'**
+  String coachStepsLabel(int count);
+
+  /// talkBriefingAsk
+  ///
+  /// In en, this message translates to:
+  /// **'What is coming up for me?'**
+  String get talkBriefingAsk;
+
+  /// talkBye
+  ///
+  /// In en, this message translates to:
+  /// **'Goodbye.'**
+  String get talkBye;
+
+  /// talkConfirmAsk
+  ///
+  /// In en, this message translates to:
+  /// **'Say yes to confirm, or no to skip.'**
+  String get talkConfirmAsk;
+
+  /// talkDone
+  ///
+  /// In en, this message translates to:
+  /// **'Done.'**
+  String get talkDone;
+
+  /// talkEnd
+  ///
+  /// In en, this message translates to:
+  /// **'End'**
+  String get talkEnd;
+
+  /// talkListening
+  ///
+  /// In en, this message translates to:
+  /// **'Listening…'**
+  String get talkListening;
+
+  /// talkNoVoice
+  ///
+  /// In en, this message translates to:
+  /// **'Your phone has no voice for this language, so answers are shown but not read aloud.'**
+  String get talkNoVoice;
+
+  /// talkNotDone
+  ///
+  /// In en, this message translates to:
+  /// **'That did not go through. Check the card on the screen.'**
+  String get talkNotDone;
+
+  /// talkReady
+  ///
+  /// In en, this message translates to:
+  /// **'I am listening.'**
+  String get talkReady;
+
+  /// talkShortcut
+  ///
+  /// In en, this message translates to:
+  /// **'Talk to Vaultara'**
+  String get talkShortcut;
+
+  /// talkSkipped
+  ///
+  /// In en, this message translates to:
+  /// **'Okay, skipped.'**
+  String get talkSkipped;
+
+  /// talkSpeaking
+  ///
+  /// In en, this message translates to:
+  /// **'Speaking. Tap to interrupt'**
+  String get talkSpeaking;
+
+  /// talkTapToSpeak
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to speak'**
+  String get talkTapToSpeak;
+
+  /// talkThinking
+  ///
+  /// In en, this message translates to:
+  /// **'Thinking…'**
+  String get talkThinking;
+
+  /// talkTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Talk mode'**
+  String get talkTitle;
+
+  /// Talk mode: comma-separated words that mean YES when spoken in this language. Not shown.
+  ///
+  /// In en, this message translates to:
+  /// **'yes,yeah,sure,ok,okay,confirm,do it,go ahead'**
+  String get talkYesWords;
+
+  /// Talk mode: comma-separated words that mean NO when spoken in this language. Not shown.
+  ///
+  /// In en, this message translates to:
+  /// **'no,nope,cancel,skip,not now'**
+  String get talkNoWords;
+
+  /// Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown.
+  ///
+  /// In en, this message translates to:
+  /// **'stop,that is all,bye,goodbye,end talk mode'**
+  String get talkStopWords;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

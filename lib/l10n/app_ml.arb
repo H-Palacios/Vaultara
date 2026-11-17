@@ -3247,5 +3247,267 @@
   "assistantForgetWordsDone": "പഠിച്ച വാക്കുകൾ മറന്നു",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "കൊണ്ടുവരിക: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "പുതുക്കൽ അപ്പോയിന്റ്മെന്റ്",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: നിങ്ങളുടെ അപ്പോയിന്റ്മെന്റ് {time}-ന്.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: നിങ്ങളുടെ അപ്പോയിന്റ്മെന്റ് നാളെയാണ്.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "നിങ്ങളുടെ പുതുക്കൽ പ്ലാൻ തയ്യാറാക്കുന്നു",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "ഔദ്യോഗിക ഉറവിടങ്ങൾ പരിശോധിക്കുന്നു",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "കൊണ്ടുവരിക",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "തലേന്ന് വൈകുന്നേരവും, സമയം നൽകിയിട്ടുണ്ടെങ്കിൽ രണ്ട് മണിക്കൂർ മുമ്പും ഓർമ്മപ്പെടുത്തൽ ലഭിക്കും.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "അപ്പോയിന്റ്മെന്റ് നീക്കുക",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "അപ്പോയിന്റ്മെന്റ് സേവ് ചെയ്തു",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "അപ്പോയിന്റ്മെന്റിന് പോകുക",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "അപ്പോയിന്റ്മെന്റ്",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "എപ്പോൾ",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "എവിടെ",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "അടുത്ത ഘട്ടം Vaultara-യോട് ചോദിക്കുക",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "എന്റെ {name} പുതുക്കാനുള്ള അടുത്ത ഘട്ടം എന്താണ്?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "എന്റെ {name} എങ്ങനെ പുതുക്കാം? ഔദ്യോഗിക ഘട്ടങ്ങളോടെ ഒരു പുതുക്കൽ പ്ലാൻ ഉണ്ടാക്കൂ.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "ബുക്കിംഗ് ഔദ്യോഗിക സൈറ്റിലാണ്. Vaultara ഒരിക്കലും നിങ്ങൾക്കായി ബുക്ക് ചെയ്യില്ല.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "ഔദ്യോഗിക സൈറ്റിൽ ബുക്ക് ചെയ്യുക",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "ബുക്കിംഗ്",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "രാജ്യം",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "ഫീസ്",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "എന്റെ രാജ്യത്തെ ഘട്ടങ്ങൾ നേടുക",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "ലിങ്ക് തുറക്കാനായില്ല.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "ഈ റെക്കോർഡിന് ഇതുവരെ പുതുക്കൽ പ്ലാൻ ഇല്ല.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "ഔദ്യോഗിക പേജ് തുറക്കുക",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "ഘട്ടങ്ങൾ ഔദ്യോഗിക ലിങ്കുകളോടെ ഈ റെക്കോർഡിന്റെ പുതുക്കൽ ചെക്ക്‌ലിസ്റ്റ് ആകുന്നു.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "പുതുക്കൽ പ്ലാൻ സേവ് ചെയ്തു",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "നിങ്ങളുടെ പുതുക്കൽ പ്ലാൻ",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "പ്രോസസ്സിംഗ് സമയം",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara ഔദ്യോഗിക സൈറ്റുകളിൽ നിന്ന് നിങ്ങളുടെ രാജ്യത്തെ യഥാർത്ഥ ഘട്ടങ്ങൾ കണ്ടെത്തുന്നു, ഫീസ്, സമയം, ബുക്ക് ചെയ്യേണ്ട ഇടം എന്നിവയോടെ.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "പുതുക്കൽ കോച്ച്",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "നിയമങ്ങളും ഫീസും മാറാം. പണമടയ്ക്കുന്നതിന് മുമ്പ് ഔദ്യോഗിക പേജ് പരിശോധിക്കുക.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "ഉറവിടങ്ങൾ",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "ഘട്ടം പൂർത്തിയായതായി അടയാളപ്പെടുത്തുക",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "ഘട്ടം {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "ഘട്ടം പൂർത്തിയാകാത്തതായി അടയാളപ്പെടുത്തുക",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 ഘട്ടം} other{{count} ഘട്ടങ്ങൾ}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "എനിക്ക് വരാനിരിക്കുന്നത് എന്താണ്?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "വിട.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "സ്ഥിരീകരിക്കാൻ അതെ, ഒഴിവാക്കാൻ ഇല്ല എന്ന് പറയുക.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "ചെയ്തു.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "അവസാനിപ്പിക്കുക",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "കേൾക്കുന്നു…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "നിങ്ങളുടെ ഫോണിൽ ഈ ഭാഷയ്ക്ക് ശബ്ദമില്ല, അതിനാൽ ഉത്തരങ്ങൾ കാണിക്കും പക്ഷേ വായിക്കില്ല.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "അത് നടന്നില്ല. സ്ക്രീനിലെ കാർഡ് പരിശോധിക്കുക.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "ഞാൻ കേൾക്കുന്നു.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Vaultara-യോട് സംസാരിക്കുക",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "ശരി, ഒഴിവാക്കി.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "സംസാരിക്കുന്നു. തടസ്സപ്പെടുത്താൻ ടാപ്പ് ചെയ്യുക",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "സംസാരിക്കാൻ ടാപ്പ് ചെയ്യുക",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "ചിന്തിക്കുന്നു…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "സംസാര മോഡ്",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "അതെ,ഉവ്വ്,തീർച്ചയായും,ശരി,ഓക്കേ,സ്ഥിരീകരിക്കുക,ചെയ്യൂ",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "ഇല്ല,വേണ്ട,റദ്ദാക്കുക,ഒഴിവാക്കുക,ഇപ്പോൾ വേണ്ട",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "നിർത്തൂ,മതി,അത്രയേ ഉള്ളൂ,വിട,ബൈ,സംസാര മോഡ് അവസാനിപ്പിക്കുക",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

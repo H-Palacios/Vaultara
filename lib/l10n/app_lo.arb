@@ -3515,5 +3515,267 @@
   "assistantForgetWordsDone": "ລືມຄຳທີ່ຮຽນມາແລ້ວ",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "ນຳມາ: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "ນັດໝາຍຕໍ່ອາຍຸ",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: ນັດໝາຍຂອງທ່ານເວລາ {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: ນັດໝາຍຂອງທ່ານແມ່ນມື້ອື່ນ.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "ກຳລັງກະກຽມແຜນຕໍ່ອາຍຸ",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "ກຳລັງກວດແຫຼ່ງທາງການ",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "ນຳມາ",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "ທ່ານຈະໄດ້ຮັບການແຈ້ງເຕືອນໃນຕອນແລງກ່ອນມື້, ແລະສອງຊົ່ວໂມງກ່ອນຖ້າຕັ້ງເວລາໄວ້.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "ລຶບນັດໝາຍ",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "ບັນທຶກນັດໝາຍແລ້ວ",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "ໄປຫານັດໝາຍ",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "ນັດໝາຍ",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "ເມື່ອໃດ",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "ບ່ອນໃດ",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "ຖາມ Vaultara ຂັ້ນຕອນຕໍ່ໄປ",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "ຂັ້ນຕອນຕໍ່ໄປໃນການຕໍ່ອາຍຸ {name} ຂອງຂ້ອຍແມ່ນຫຍັງ?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "ຂ້ອຍຈະຕໍ່ອາຍຸ {name} ແນວໃດ? ຊ່ວຍເຮັດແຜນຕໍ່ອາຍຸພ້ອມຂັ້ນຕອນທາງການ.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "ທ່ານຈອງຢູ່ເວັບໄຊທາງການ. Vaultara ບໍ່ເຄີຍຈອງແທນທ່ານ.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "ຈອງຢູ່ເວັບໄຊທາງການ",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "ການຈອງ",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "ປະເທດ",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "ຄ່າທຳນຽມ",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "ຫາຂັ້ນຕອນສຳລັບປະເທດຂອງຂ້ອຍ",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "ບໍ່ສາມາດເປີດລິ້ງໄດ້.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "ບັນທຶກນີ້ຍັງບໍ່ມີແຜນຕໍ່ອາຍຸ.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "ເປີດໜ້າທາງການ",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "ຂັ້ນຕອນຈະກາຍເປັນລາຍການຕໍ່ອາຍຸຂອງບັນທຶກນີ້ ພ້ອມລິ້ງທາງການ.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "ບັນທຶກແຜນຕໍ່ອາຍຸແລ້ວ",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "ແຜນຕໍ່ອາຍຸຂອງທ່ານ",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "ໄລຍະດຳເນີນການ",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara ຊອກຫາຂັ້ນຕອນແທ້ສຳລັບປະເທດຂອງທ່ານໃນເວັບໄຊທາງການ ພ້ອມຄ່າທຳນຽມ, ໄລຍະເວລາ ແລະບ່ອນຈອງ.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "ຜູ້ຊ່ວຍຕໍ່ອາຍຸ",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "ກົດລະບຽບ ແລະຄ່າທຳນຽມອາດປ່ຽນ. ກວດໜ້າທາງການກ່ອນຈ່າຍ.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "ແຫຼ່ງທີ່ມາ",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "ໝາຍຂັ້ນຕອນວ່າສຳເລັດ",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "ຂັ້ນຕອນ {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "ໝາຍຂັ້ນຕອນວ່າຍັງບໍ່ສຳເລັດ",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, other{{count} ຂັ້ນຕອນ}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "ມີຫຍັງລໍຖ້າຂ້ອຍຢູ່?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "ລາກ່ອນ.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "ເວົ້າ ແມ່ນ ເພື່ອຢືນຢັນ, ຫຼື ບໍ່ ເພື່ອຂ້າມ.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "ສຳເລັດແລ້ວ.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "ສິ້ນສຸດ",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "ກຳລັງຟັງ…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "ໂທລະສັບຂອງທ່ານບໍ່ມີສຽງສຳລັບພາສານີ້, ສະນັ້ນຄຳຕອບຈະສະແດງແຕ່ບໍ່ອ່ານອອກສຽງ.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "ບໍ່ສຳເລັດ. ກວດບັດໃນໜ້າຈໍ.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "ຂ້ອຍກຳລັງຟັງ.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "ລົມກັບ Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "ໄດ້, ຂ້າມແລ້ວ.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "ກຳລັງເວົ້າ. ແຕະເພື່ອຂັດ",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "ແຕະເພື່ອເວົ້າ",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "ກຳລັງຄິດ…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "ໂໝດສົນທະນາ",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ແມ່ນ,ໂດຍ,ເຈົ້າ,ໄດ້,ໂອເຄ,ຢືນຢັນ,ເຮັດເລີຍ",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "ບໍ່,ບໍ່ແມ່ນ,ຍົກເລີກ,ຂ້າມ,ບໍ່ແມ່ນຕອນນີ້",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "ຢຸດ,ພໍແລ້ວ,ແຄ່ນີ້,ລາກ່ອນ,ບາຍ,ສິ້ນສຸດໂໝດສົນທະນາ",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

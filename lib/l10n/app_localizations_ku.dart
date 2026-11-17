@@ -9142,4 +9142,192 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Peyvên hînbûyî hatin jibîrkirin';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Bîne: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Randevûya nûkirinê';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: randevûya te saet $time e.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: randevûya te sibê ye.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Plana nûkirinê tê amadekirin';
+
+  @override
+  String get assistantStepWeb => 'Çavkaniyên fermî têne kontrolkirin';
+
+  @override
+  String get coachAppointmentBring => 'Bîne';
+
+  @override
+  String get coachAppointmentNote => 'Êvara berê bîranînek digihîje te, û ger dem hatibe danîn du saet berê jî.';
+
+  @override
+  String get coachAppointmentRemove => 'Randevûyê jê bibe';
+
+  @override
+  String get coachAppointmentSaved => 'Randevû hate tomarkirin';
+
+  @override
+  String get coachAppointmentStep => 'Here randevûyê';
+
+  @override
+  String get coachAppointmentTitle => 'Randevû';
+
+  @override
+  String get coachAppointmentWhen => 'Kengî';
+
+  @override
+  String get coachAppointmentWhere => 'Li ku';
+
+  @override
+  String get coachAskNext => 'Gava din ji Vaultara bipirse';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Gava din ji bo nûkirina $name ya min çi ye?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Ez çawa $name ya xwe nû bikim? Ji min re planeke nûkirinê bi gavên fermî çêke.';
+  }
+
+  @override
+  String get coachBookNote => 'Tu li malpera fermî randevû digirî. Vaultara qet li şûna te randevû nagire.';
+
+  @override
+  String get coachBookOnSite => 'Li malpera fermî randevû bigire';
+
+  @override
+  String get coachBookingLabel => 'Randevûgirtin';
+
+  @override
+  String get coachCountryLabel => 'Welat';
+
+  @override
+  String get coachFeeLabel => 'Xerc';
+
+  @override
+  String get coachGetSteps => 'Gavên ji bo welatê min bibîne';
+
+  @override
+  String get coachLinkFailed => 'Girêdan nehat vekirin.';
+
+  @override
+  String get coachNoPlan => 'Ev tomar hîn plana nûkirinê tune.';
+
+  @override
+  String get coachOpenLink => 'Rûpela fermî veke';
+
+  @override
+  String get coachPlanNote => 'Gav dibin lîsteya nûkirinê ya vê tomarê, bi girêdanên fermî.';
+
+  @override
+  String get coachPlanSaved => 'Plana nûkirinê hate tomarkirin';
+
+  @override
+  String get coachPlanTitle => 'Plana te ya nûkirinê';
+
+  @override
+  String get coachProcessingLabel => 'Dema pêvajoyê';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara gavên rastîn ji bo welatê te li ser malperên fermî dibîne, bi xerc, dem û cihê randevûyê.';
+
+  @override
+  String get coachPromoTitle => 'Rêberê nûkirinê';
+
+  @override
+  String get coachRulesChange => 'Qanûn û xerc dikarin biguherin. Berî dayînê rûpela fermî kontrol bike.';
+
+  @override
+  String get coachSourcesLabel => 'Çavkanî';
+
+  @override
+  String get coachStepDoneTitle => 'Gavê wekî qediyayî nîşan bike';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Gav $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Gavê wekî neqediyayî nîşan bike';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count gav',
+      one: '1 gav',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Çi li pêşiya min e?';
+
+  @override
+  String get talkBye => 'Xatirê te.';
+
+  @override
+  String get talkConfirmAsk => 'Ji bo pejirandinê erê, ji bo derbaskirinê na bêje.';
+
+  @override
+  String get talkDone => 'Qediya.';
+
+  @override
+  String get talkEnd => 'Biqedîne';
+
+  @override
+  String get talkListening => 'Guhdarî dike…';
+
+  @override
+  String get talkNoVoice => 'Telefona te ji bo vê zimanî deng tune, ji ber vê bersiv têne nîşandan lê nayên xwendin.';
+
+  @override
+  String get talkNotDone => 'Ev nebû. Karta li ser ekranê kontrol bike.';
+
+  @override
+  String get talkReady => 'Ez guhdarî dikim.';
+
+  @override
+  String get talkShortcut => 'Bi Vaultara re biaxive';
+
+  @override
+  String get talkSkipped => 'Baş e, derbas bû.';
+
+  @override
+  String get talkSpeaking => 'Diaxive. Ji bo birînê bitikîne';
+
+  @override
+  String get talkTapToSpeak => 'Ji bo axaftinê bitikîne';
+
+  @override
+  String get talkThinking => 'Difikire…';
+
+  @override
+  String get talkTitle => 'Moda axaftinê';
+
+  @override
+  String get talkYesWords => 'erê,belê,bê guman,baş e,ok,bipejirîne,bike,berdewam bike';
+
+  @override
+  String get talkNoWords => 'na,nexêr,betal bike,derbas bike,niha na';
+
+  @override
+  String get talkStopWords => 'raweste,bes e,ev hemû ye,xatirê te,bay,moda axaftinê biqedîne';
 }

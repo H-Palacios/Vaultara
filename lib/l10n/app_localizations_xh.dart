@@ -9142,4 +9142,192 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Amagama afundiweyo alityelwe';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Yiza ne: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Idinga lokuhlaziya';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: idinga lakho ngo-$time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: idinga lakho ngomso.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Kulungiswa isicwangciso sakho sokuhlaziya';
+
+  @override
+  String get assistantStepWeb => 'Kujongwa imithombo esemthethweni';
+
+  @override
+  String get coachAppointmentBring => 'Yiza ne';
+
+  @override
+  String get coachAppointmentNote => 'Uza kufumana isikhumbuzo ngorhatya lwangaphambili, kunye neeyure ezimbini ngaphambili ukuba ixesha libekiwe.';
+
+  @override
+  String get coachAppointmentRemove => 'Susa idinga';
+
+  @override
+  String get coachAppointmentSaved => 'Idinga ligciniwe';
+
+  @override
+  String get coachAppointmentStep => 'Yiya edingeni';
+
+  @override
+  String get coachAppointmentTitle => 'Idinga';
+
+  @override
+  String get coachAppointmentWhen => 'Nini';
+
+  @override
+  String get coachAppointmentWhere => 'Phi';
+
+  @override
+  String get coachAskNext => 'Buza uVaultara inyathelo elilandelayo';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Lithini inyathelo elilandelayo lokuhlaziya i-$name yam?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Ndiyihlaziya njani i-$name yam? Ndenzele isicwangciso sokuhlaziya esinamanyathelo asemthethweni.';
+  }
+
+  @override
+  String get coachBookNote => 'Ubhukisha kwisayithi esemthethweni. UVaultara akaze abhukishe endaweni yakho.';
+
+  @override
+  String get coachBookOnSite => 'Bhukisha kwisayithi esemthethweni';
+
+  @override
+  String get coachBookingLabel => 'Ukubhukisha';
+
+  @override
+  String get coachCountryLabel => 'Ilizwe';
+
+  @override
+  String get coachFeeLabel => 'Intlawulo';
+
+  @override
+  String get coachGetSteps => 'Fumana amanyathelo elizwe lam';
+
+  @override
+  String get coachLinkFailed => 'Ikhonkco alikwazanga ukuvulwa.';
+
+  @override
+  String get coachNoPlan => 'Le rekhodi ayikabi nasicwangciso sokuhlaziya.';
+
+  @override
+  String get coachOpenLink => 'Vula iphepha elisemthethweni';
+
+  @override
+  String get coachPlanNote => 'Amanyathelo aba luluhlu lokuhlaziya lwale rekhodi, kunye namakhonkco asemthethweni.';
+
+  @override
+  String get coachPlanSaved => 'Isicwangciso sokuhlaziya sigciniwe';
+
+  @override
+  String get coachPlanTitle => 'Isicwangciso sakho sokuhlaziya';
+
+  @override
+  String get coachProcessingLabel => 'Ixesha lokulungiswa';
+
+  @override
+  String get coachPromoBody => 'I-Ask Vaultara ifumana amanyathelo okwenyani elizwe lakho kwiisayithi ezisemthethweni, kunye nentlawulo, ixesha nendawo yokubhukisha.';
+
+  @override
+  String get coachPromoTitle => 'Umqeqeshi wokuhlaziya';
+
+  @override
+  String get coachRulesChange => 'Imithetho nezintlawulo zinokutshintsha. Jonga iphepha elisemthethweni phambi kokuhlawula.';
+
+  @override
+  String get coachSourcesLabel => 'Imithombo';
+
+  @override
+  String get coachStepDoneTitle => 'Phawula inyathelo njengelenziwe';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Inyathelo $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Phawula inyathelo njengelingenziwanga';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'amanyathelo angu-$count',
+      one: 'inyathelo eli-1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Yintoni ezayo kum?';
+
+  @override
+  String get talkBye => 'Sala kakuhle.';
+
+  @override
+  String get talkConfirmAsk => 'Yithi ewe ukuqinisekisa, okanye hayi ukutsiba.';
+
+  @override
+  String get talkDone => 'Kwenziwe.';
+
+  @override
+  String get talkEnd => 'Gqiba';
+
+  @override
+  String get talkListening => 'Iyamamela…';
+
+  @override
+  String get talkNoVoice => 'Ifowuni yakho ayinalizwi lolu lwimi, ngoko iimpendulo ziyaboniswa kodwa azifundwa.';
+
+  @override
+  String get talkNotDone => 'Akuphumelelanga. Jonga ikhadi kwisikrini.';
+
+  @override
+  String get talkReady => 'Ndiyamamela.';
+
+  @override
+  String get talkShortcut => 'Thetha noVaultara';
+
+  @override
+  String get talkSkipped => 'Kulungile, kutsitywe.';
+
+  @override
+  String get talkSpeaking => 'Iyathetha. Chofoza ukuphazamisa';
+
+  @override
+  String get talkTapToSpeak => 'Chofoza ukuthetha';
+
+  @override
+  String get talkThinking => 'Iyacinga…';
+
+  @override
+  String get talkTitle => 'Imowudi yokuthetha';
+
+  @override
+  String get talkYesWords => 'ewe,ehe,kunjalo,kulungile,ok,qinisekisa,yenza,qhubeka';
+
+  @override
+  String get talkNoWords => 'hayi,hayi bo,rhoxisa,tsiba,hayi ngoku';
+
+  @override
+  String get talkStopWords => 'yima,kwanele,kuphelele apho,sala kakuhle,bhayi,gqiba imowudi yokuthetha';
 }

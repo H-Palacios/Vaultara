@@ -9091,4 +9091,191 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Echefuola okwu ndị a mụtara';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Weta: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Oge nhazi maka mmeghari';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: oge gị bụ n\'elekere $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: oge gị bụ echi.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Na-arụ atụmatụ mmeghari gị';
+
+  @override
+  String get assistantStepWeb => 'Na-elele isi mmalite gọọmentị';
+
+  @override
+  String get coachAppointmentBring => 'Weta';
+
+  @override
+  String get coachAppointmentNote => 'Ị ga-enweta ncheta n\'abalị gara aga, na awa abụọ tupu ya ma ọ bụrụ na e debere oge.';
+
+  @override
+  String get coachAppointmentRemove => 'Wepu oge';
+
+  @override
+  String get coachAppointmentSaved => 'Echekwala oge';
+
+  @override
+  String get coachAppointmentStep => 'Gaa n\'oge ahụ';
+
+  @override
+  String get coachAppointmentTitle => 'Oge';
+
+  @override
+  String get coachAppointmentWhen => 'Mgbe';
+
+  @override
+  String get coachAppointmentWhere => 'Ebee';
+
+  @override
+  String get coachAskNext => 'Jụọ Vaultara nzọụkwụ na-esote';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Gịnị bụ nzọụkwụ na-esote iji meghari $name m?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Kedu ka m ga-esi meghari $name m? Mee m atụmatụ mmeghari nwere nzọụkwụ gọọmentị.';
+  }
+
+  @override
+  String get coachBookNote => 'Ị na-ahazi ya na saịtị gọọmentị. Vaultara anaghị ahazi ya maka gị.';
+
+  @override
+  String get coachBookOnSite => 'Hazie na saịtị gọọmentị';
+
+  @override
+  String get coachBookingLabel => 'Nhazi';
+
+  @override
+  String get coachCountryLabel => 'Obodo';
+
+  @override
+  String get coachFeeLabel => 'Ego';
+
+  @override
+  String get coachGetSteps => 'Nweta nzọụkwụ maka obodo m';
+
+  @override
+  String get coachLinkFailed => 'Enweghị ike imepe njikọ ahụ.';
+
+  @override
+  String get coachNoPlan => 'Ndekọ a enwebeghị atụmatụ mmeghari.';
+
+  @override
+  String get coachOpenLink => 'Mepee peeji gọọmentị';
+
+  @override
+  String get coachPlanNote => 'Nzọụkwụ ndị a ga-abụ ndepụta mmeghari ndekọ a, ya na njikọ gọọmentị.';
+
+  @override
+  String get coachPlanSaved => 'Echekwala atụmatụ mmeghari';
+
+  @override
+  String get coachPlanTitle => 'Atụmatụ mmeghari gị';
+
+  @override
+  String get coachProcessingLabel => 'Oge nhazi';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara na-achọta ezigbo nzọụkwụ maka obodo gị na saịtị gọọmentị, ya na ego, ogologo oge na ebe a na-ahazi.';
+
+  @override
+  String get coachPromoTitle => 'Onye nkuzi mmeghari';
+
+  @override
+  String get coachRulesChange => 'Iwu na ego nwere ike ịgbanwe. Lelee peeji gọọmentị tupu ịkwụ ụgwọ.';
+
+  @override
+  String get coachSourcesLabel => 'Isi mmalite';
+
+  @override
+  String get coachStepDoneTitle => 'Kaa nzọụkwụ dị ka emechara';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Nzọụkwụ $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Kaa nzọụkwụ dị ka emechabeghị';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'nzọụkwụ $count',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Gịnị na-abịa maka m?';
+
+  @override
+  String get talkBye => 'Ka ọ dị.';
+
+  @override
+  String get talkConfirmAsk => 'Kwuo ee iji kwado, ma ọ bụ mba iji wụfee.';
+
+  @override
+  String get talkDone => 'Emechaala.';
+
+  @override
+  String get talkEnd => 'Kwụsị';
+
+  @override
+  String get talkListening => 'Na-ege ntị…';
+
+  @override
+  String get talkNoVoice => 'Ekwentị gị enweghị olu maka asụsụ a, ya mere a na-egosi azịza mana a naghị agụpụta ha.';
+
+  @override
+  String get talkNotDone => 'Ọ gaghị. Lelee kaadị dị na ihuenyo.';
+
+  @override
+  String get talkReady => 'Ana m ege ntị.';
+
+  @override
+  String get talkShortcut => 'Kparịta ụka na Vaultara';
+
+  @override
+  String get talkSkipped => 'Ọ dị mma, a wụfere ya.';
+
+  @override
+  String get talkSpeaking => 'Na-ekwu okwu. Pịa iji kwụsịtụ';
+
+  @override
+  String get talkTapToSpeak => 'Pịa ka ị kwuo okwu';
+
+  @override
+  String get talkThinking => 'Na-eche echiche…';
+
+  @override
+  String get talkTitle => 'Ụdị mkparịta ụka';
+
+  @override
+  String get talkYesWords => 'ee,eh,o di mma,ok,okay,kwado,mee ya,gaa n\'ihu';
+
+  @override
+  String get talkNoWords => 'mba,ee e,kagbuo,wụfee,ọ bụghị ugbu a';
+
+  @override
+  String get talkStopWords => 'kwụsị,nke ahụ zuru,ka ọ dị,bye,kwụsị ụdị mkparịta ụka';
 }

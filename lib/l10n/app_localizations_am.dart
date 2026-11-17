@@ -9142,4 +9142,191 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'የተማሩ ቃላት ተረስተዋል';
+
+  @override
+  String appointmentBring(String items) {
+    return 'ይዘው ይምጡ፦ $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'የእድሳት ቀጠሮ';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name፦ ቀጠሮዎ $time ላይ ነው።';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name፦ ቀጠሮዎ ነገ ነው።';
+  }
+
+  @override
+  String get assistantStepRenewal => 'የእድሳት እቅድዎን በማዘጋጀት ላይ';
+
+  @override
+  String get assistantStepWeb => 'ኦፊሴላዊ ምንጮችን በመፈተሽ ላይ';
+
+  @override
+  String get coachAppointmentBring => 'ይዘው ይምጡ';
+
+  @override
+  String get coachAppointmentNote => 'ከቀኑ በፊት ምሽት ላይ፣ ሰዓቱ ከተቀመጠም ከሁለት ሰዓት በፊት ማሳሰቢያ ያገኛሉ።';
+
+  @override
+  String get coachAppointmentRemove => 'ቀጠሮውን አስወግድ';
+
+  @override
+  String get coachAppointmentSaved => 'ቀጠሮ ተቀምጧል';
+
+  @override
+  String get coachAppointmentStep => 'ወደ ቀጠሮው ይሂዱ';
+
+  @override
+  String get coachAppointmentTitle => 'ቀጠሮ';
+
+  @override
+  String get coachAppointmentWhen => 'መቼ';
+
+  @override
+  String get coachAppointmentWhere => 'የት';
+
+  @override
+  String get coachAskNext => 'ቀጣዩን ደረጃ Vaultaraን ይጠይቁ';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'የእኔን $name ለማደስ ቀጣዩ ደረጃ ምንድን ነው?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'የእኔን $name እንዴት ላድስ? ከኦፊሴላዊ ደረጃዎች ጋር የእድሳት እቅድ አዘጋጅልኝ።';
+  }
+
+  @override
+  String get coachBookNote => 'በኦፊሴላዊው ድረ-ገጽ ላይ ይያዛሉ። Vaultara በጭራሽ አይይዝልዎትም።';
+
+  @override
+  String get coachBookOnSite => 'በኦፊሴላዊው ድረ-ገጽ ይያዙ';
+
+  @override
+  String get coachBookingLabel => 'ቀጠሮ ማስያዝ';
+
+  @override
+  String get coachCountryLabel => 'አገር';
+
+  @override
+  String get coachFeeLabel => 'ክፍያ';
+
+  @override
+  String get coachGetSteps => 'ለአገሬ ደረጃዎችን አግኝ';
+
+  @override
+  String get coachLinkFailed => 'ሊንኩ ሊከፈት አልቻለም።';
+
+  @override
+  String get coachNoPlan => 'ይህ መዝገብ ገና የእድሳት እቅድ የለውም።';
+
+  @override
+  String get coachOpenLink => 'ኦፊሴላዊውን ገጽ ክፈት';
+
+  @override
+  String get coachPlanNote => 'ደረጃዎቹ ከኦፊሴላዊ ሊንኮች ጋር የዚህ መዝገብ የእድሳት ዝርዝር ይሆናሉ።';
+
+  @override
+  String get coachPlanSaved => 'የእድሳት እቅድ ተቀምጧል';
+
+  @override
+  String get coachPlanTitle => 'የእድሳት እቅድዎ';
+
+  @override
+  String get coachProcessingLabel => 'የሂደት ጊዜ';
+
+  @override
+  String get coachPromoBody => 'Vaultaraን ይጠይቁ ለአገርዎ ትክክለኛ ደረጃዎችን በኦፊሴላዊ ድረ-ገጾች ላይ ያገኛል፣ ከክፍያው፣ ከሚወስደው ጊዜ እና የት እንደሚያዙ ጋር።';
+
+  @override
+  String get coachPromoTitle => 'የእድሳት አሰልጣኝ';
+
+  @override
+  String get coachRulesChange => 'ደንቦች እና ክፍያዎች ሊለወጡ ይችላሉ። ከመክፈልዎ በፊት ኦፊሴላዊውን ገጽ ይመልከቱ።';
+
+  @override
+  String get coachSourcesLabel => 'ምንጮች';
+
+  @override
+  String get coachStepDoneTitle => 'ደረጃውን እንደተጠናቀቀ ምልክት አድርግ';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'ደረጃ $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'ደረጃውን እንዳልተጠናቀቀ ምልክት አድርግ';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ደረጃዎች',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'ምን እየመጣልኝ ነው?';
+
+  @override
+  String get talkBye => 'ደህና ሁን።';
+
+  @override
+  String get talkConfirmAsk => 'ለማረጋገጥ አዎ፣ ለመዝለል አይ ይበሉ።';
+
+  @override
+  String get talkDone => 'ተጠናቋል።';
+
+  @override
+  String get talkEnd => 'ጨርስ';
+
+  @override
+  String get talkListening => 'በማዳመጥ ላይ…';
+
+  @override
+  String get talkNoVoice => 'ስልክዎ ለዚህ ቋንቋ ድምፅ የለውም፣ ስለዚህ መልሶች ይታያሉ ግን አይነበቡም።';
+
+  @override
+  String get talkNotDone => 'አልተሳካም። በማያ ገጹ ላይ ያለውን ካርድ ይመልከቱ።';
+
+  @override
+  String get talkReady => 'እያዳመጥኩ ነው።';
+
+  @override
+  String get talkShortcut => 'ከVaultara ጋር ይነጋገሩ';
+
+  @override
+  String get talkSkipped => 'እሺ፣ ተዘሏል።';
+
+  @override
+  String get talkSpeaking => 'በመናገር ላይ። ለማቋረጥ ይንኩ';
+
+  @override
+  String get talkTapToSpeak => 'ለመናገር ይንኩ';
+
+  @override
+  String get talkThinking => 'በማሰብ ላይ…';
+
+  @override
+  String get talkTitle => 'የንግግር ሁነታ';
+
+  @override
+  String get talkYesWords => 'አዎ,እሺ,አዎን,ትክክል,አረጋግጥ,አድርገው';
+
+  @override
+  String get talkNoWords => 'አይ,አይደለም,ሰርዝ,ዝለል,አሁን አይደለም';
+
+  @override
+  String get talkStopWords => 'አቁም,በቃ,ደህና ሁን,ቻው,የንግግር ሁነታን ጨርስ';
 }

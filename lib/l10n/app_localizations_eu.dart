@@ -9147,4 +9147,192 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Ikasitako hitzak ahaztu dira';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Ekarri: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Berritzeko hitzordua';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: zure hitzordua ${time}etan da.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: zure hitzordua bihar da.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Berritze-plana prestatzen';
+
+  @override
+  String get assistantStepWeb => 'Iturri ofizialak egiaztatzen';
+
+  @override
+  String get coachAppointmentBring => 'Ekarri';
+
+  @override
+  String get coachAppointmentNote => 'Abisu bat jasoko duzu aurreko arratsaldean, eta bi ordu lehenago ordua ezarrita badago.';
+
+  @override
+  String get coachAppointmentRemove => 'Kendu hitzordua';
+
+  @override
+  String get coachAppointmentSaved => 'Hitzordua gordeta';
+
+  @override
+  String get coachAppointmentStep => 'Joan hitzordura';
+
+  @override
+  String get coachAppointmentTitle => 'Hitzordua';
+
+  @override
+  String get coachAppointmentWhen => 'Noiz';
+
+  @override
+  String get coachAppointmentWhere => 'Non';
+
+  @override
+  String get coachAskNext => 'Galdetu Vaultarari hurrengo urratsa';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Zein da nire $name berritzeko hurrengo urratsa?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Nola berritu nire $name? Egidazu berritze-plan bat urrats ofizialekin.';
+  }
+
+  @override
+  String get coachBookNote => 'Hitzordua webgune ofizialean hartzen duzu. Vaultarak ez du inoiz zure ordez hartzen.';
+
+  @override
+  String get coachBookOnSite => 'Hartu hitzordua webgune ofizialean';
+
+  @override
+  String get coachBookingLabel => 'Hitzordua hartzea';
+
+  @override
+  String get coachCountryLabel => 'Herrialdea';
+
+  @override
+  String get coachFeeLabel => 'Tasa';
+
+  @override
+  String get coachGetSteps => 'Lortu nire herrialdeko urratsak';
+
+  @override
+  String get coachLinkFailed => 'Ezin izan da esteka ireki.';
+
+  @override
+  String get coachNoPlan => 'Erregistro honek ez du oraindik berritze-planik.';
+
+  @override
+  String get coachOpenLink => 'Ireki orri ofiziala';
+
+  @override
+  String get coachPlanNote => 'Urratsak erregistro honen berritze-zerrenda bihurtzen dira, esteka ofizialekin.';
+
+  @override
+  String get coachPlanSaved => 'Berritze-plana gordeta';
+
+  @override
+  String get coachPlanTitle => 'Zure berritze-plana';
+
+  @override
+  String get coachProcessingLabel => 'Izapidetze-epea';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultarak zure herrialdeko benetako urratsak aurkitzen ditu webgune ofizialetan, tasarekin, epearekin eta non hartu hitzordua.';
+
+  @override
+  String get coachPromoTitle => 'Berritze-laguntzailea';
+
+  @override
+  String get coachRulesChange => 'Arauak eta tasak alda daitezke. Begiratu orri ofiziala ordaindu aurretik.';
+
+  @override
+  String get coachSourcesLabel => 'Iturriak';
+
+  @override
+  String get coachStepDoneTitle => 'Markatu urratsa eginda';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number. urratsa';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Markatu urratsa egin gabe';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count urrats',
+      one: 'urrats 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Zer dut laster?';
+
+  @override
+  String get talkBye => 'Agur.';
+
+  @override
+  String get talkConfirmAsk => 'Esan bai baieztatzeko edo ez saltatzeko.';
+
+  @override
+  String get talkDone => 'Eginda.';
+
+  @override
+  String get talkEnd => 'Amaitu';
+
+  @override
+  String get talkListening => 'Entzuten…';
+
+  @override
+  String get talkNoVoice => 'Telefonoak ez du hizkuntza honetarako ahotsik, beraz erantzunak erakusten dira baina ez dira irakurtzen.';
+
+  @override
+  String get talkNotDone => 'Ez da egin. Begiratu pantailako txartela.';
+
+  @override
+  String get talkReady => 'Entzuten ari naiz.';
+
+  @override
+  String get talkShortcut => 'Hitz egin Vaultararekin';
+
+  @override
+  String get talkSkipped => 'Ados, saltatuta.';
+
+  @override
+  String get talkSpeaking => 'Hitz egiten. Ukitu eteteko';
+
+  @override
+  String get talkTapToSpeak => 'Ukitu hitz egiteko';
+
+  @override
+  String get talkThinking => 'Pentsatzen…';
+
+  @override
+  String get talkTitle => 'Elkarrizketa modua';
+
+  @override
+  String get talkYesWords => 'bai,ados,noski,ok,okay,berretsi,egin,aurrera';
+
+  @override
+  String get talkNoWords => 'ez,utzi,saltatu,orain ez,ezeztatu';
+
+  @override
+  String get talkStopWords => 'gelditu,nahikoa,hori da dena,agur,aio,amaitu elkarrizketa';
 }

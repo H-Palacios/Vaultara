@@ -9142,4 +9142,191 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Үйренген сөздер ұмытылды';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Алып келіңіз: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Жаңарту кездесуі';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: кездесуіңіз сағат $time-да.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: кездесуіңіз ертең.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Жаңарту жоспары дайындалуда';
+
+  @override
+  String get assistantStepWeb => 'Ресми дереккөздер тексерілуде';
+
+  @override
+  String get coachAppointmentBring => 'Алып келіңіз';
+
+  @override
+  String get coachAppointmentNote => 'Алдыңғы күні кешке, ал уақыты көрсетілсе, екі сағат бұрын да еске салу келеді.';
+
+  @override
+  String get coachAppointmentRemove => 'Кездесуді жою';
+
+  @override
+  String get coachAppointmentSaved => 'Кездесу сақталды';
+
+  @override
+  String get coachAppointmentStep => 'Кездесуге барыңыз';
+
+  @override
+  String get coachAppointmentTitle => 'Кездесу';
+
+  @override
+  String get coachAppointmentWhen => 'Қашан';
+
+  @override
+  String get coachAppointmentWhere => 'Қайда';
+
+  @override
+  String get coachAskNext => 'Келесі қадамды Vaultara-дан сұрау';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return '$name жаңартудың келесі қадамы қандай?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '$name қалай жаңартамын? Ресми қадамдармен жаңарту жоспарын жасап бер.';
+  }
+
+  @override
+  String get coachBookNote => 'Жазылу ресми сайтта жасалады. Vaultara ешқашан сіздің орныңызға жазылмайды.';
+
+  @override
+  String get coachBookOnSite => 'Ресми сайтта жазылу';
+
+  @override
+  String get coachBookingLabel => 'Жазылу';
+
+  @override
+  String get coachCountryLabel => 'Ел';
+
+  @override
+  String get coachFeeLabel => 'Алым';
+
+  @override
+  String get coachGetSteps => 'Менің елімнің қадамдарын табу';
+
+  @override
+  String get coachLinkFailed => 'Сілтеме ашылмады.';
+
+  @override
+  String get coachNoPlan => 'Бұл жазбада әлі жаңарту жоспары жоқ.';
+
+  @override
+  String get coachOpenLink => 'Ресми бетті ашу';
+
+  @override
+  String get coachPlanNote => 'Қадамдар ресми сілтемелерімен осы жазбаның жаңарту тізіміне айналады.';
+
+  @override
+  String get coachPlanSaved => 'Жаңарту жоспары сақталды';
+
+  @override
+  String get coachPlanTitle => 'Сіздің жаңарту жоспарыңыз';
+
+  @override
+  String get coachProcessingLabel => 'Өңдеу мерзімі';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara ресми сайттардан еліңіздің нақты қадамдарын табады: алым, мерзім және қайда жазылу керегі.';
+
+  @override
+  String get coachPromoTitle => 'Жаңарту көмекшісі';
+
+  @override
+  String get coachRulesChange => 'Ережелер мен алымдар өзгеруі мүмкін. Төлемес бұрын ресми бетті тексеріңіз.';
+
+  @override
+  String get coachSourcesLabel => 'Дереккөздер';
+
+  @override
+  String get coachStepDoneTitle => 'Қадамды орындалды деп белгілеу';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number-қадам';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Қадамды орындалмады деп белгілеу';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count қадам',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Мені не күтіп тұр?';
+
+  @override
+  String get talkBye => 'Сау болыңыз.';
+
+  @override
+  String get talkConfirmAsk => 'Растау үшін иә, өткізіп жіберу үшін жоқ деңіз.';
+
+  @override
+  String get talkDone => 'Дайын.';
+
+  @override
+  String get talkEnd => 'Аяқтау';
+
+  @override
+  String get talkListening => 'Тыңдап тұр…';
+
+  @override
+  String get talkNoVoice => 'Телефоныңызда бұл тілге дауыс жоқ, сондықтан жауаптар көрсетіледі, бірақ оқылмайды.';
+
+  @override
+  String get talkNotDone => 'Болмады. Экрандағы картаны тексеріңіз.';
+
+  @override
+  String get talkReady => 'Тыңдап тұрмын.';
+
+  @override
+  String get talkShortcut => 'Vaultara-мен сөйлесу';
+
+  @override
+  String get talkSkipped => 'Жарайды, өткізілді.';
+
+  @override
+  String get talkSpeaking => 'Сөйлеп тұр. Тоқтату үшін түртіңіз';
+
+  @override
+  String get talkTapToSpeak => 'Сөйлеу үшін түртіңіз';
+
+  @override
+  String get talkThinking => 'Ойлануда…';
+
+  @override
+  String get talkTitle => 'Сөйлесу режимі';
+
+  @override
+  String get talkYesWords => 'иә,ия,әрине,жарайды,ок,растау,жаса,жалғастыр';
+
+  @override
+  String get talkNoWords => 'жоқ,болмайды,бас тарту,өткізу,қазір емес';
+
+  @override
+  String get talkStopWords => 'тоқта,болды,осы ғана,сау бол,сөйлесу режимін аяқта';
 }

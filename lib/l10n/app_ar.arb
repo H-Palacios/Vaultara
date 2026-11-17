@@ -3535,5 +3535,267 @@
   "assistantForgetWordsDone": "تم نسيان الكلمات المتعلَّمة",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "أحضر: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "موعد التجديد",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: موعدك في {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: موعدك غدًا.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "جارٍ إعداد خطة التجديد",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "جارٍ التحقق من المصادر الرسمية",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "أحضر",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "ستصلك تذكرة مساء اليوم السابق، وقبل ساعتين إذا كان الوقت محددًا.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "إزالة الموعد",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "تم حفظ الموعد",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "اذهب إلى الموعد",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "الموعد",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "متى",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "أين",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "اسأل Vaultara عن الخطوة التالية",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "ما الخطوة التالية لتجديد {name}؟",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "كيف أجدد {name}؟ أعدّ لي خطة تجديد بالخطوات الرسمية.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "الحجز يتم على الموقع الرسمي. Vaultara لا يحجز نيابةً عنك أبدًا.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "احجز على الموقع الرسمي",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "الحجز",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "البلد",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "الرسوم",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "احصل على خطوات بلدي",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "تعذّر فتح الرابط.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "لا توجد خطة تجديد لهذا السجل بعد.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "افتح الصفحة الرسمية",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "تصبح الخطوات قائمة تجديد هذا السجل، مع الروابط الرسمية.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "تم حفظ خطة التجديد",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "خطة التجديد",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "مدة المعالجة",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "يجد Ask Vaultara الخطوات الحقيقية لبلدك على المواقع الرسمية، مع الرسوم والمدة ومكان الحجز.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "مدرّب التجديد",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "قد تتغير القواعد والرسوم. راجع الصفحة الرسمية قبل الدفع.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "المصادر",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "وضع علامة تم على الخطوة",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "الخطوة {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "إزالة علامة تم من الخطوة",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, zero{لا خطوات} one{خطوة واحدة} two{{count} خطوتان} few{{count} خطوات} many{{count} خطوة} other{{count} خطوة}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "ما الذي ينتظرني قريبًا؟",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "مع السلامة.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "قل نعم للتأكيد، أو لا للتخطي.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "تم.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "إنهاء",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "جارٍ الاستماع…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "لا يوجد صوت لهذه اللغة في هاتفك، لذا تظهر الإجابات دون قراءتها.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "لم يتم ذلك. راجع البطاقة على الشاشة.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "أنا أستمع.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "تحدث مع Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "حسنًا، تم التخطي.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "يتحدث. اضغط للمقاطعة",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "اضغط للتحدث",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "يفكر…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "وضع المحادثة",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "نعم,أجل,أكيد,حسنا,موافق,أكد,نفذ,تفضل",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "لا,كلا,إلغاء,تخطى,ليس الآن",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "توقف,هذا كل شيء,مع السلامة,وداعا,أنهِ وضع المحادثة",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

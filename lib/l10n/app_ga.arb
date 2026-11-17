@@ -3509,5 +3509,267 @@
   "assistantForgetWordsDone": "Rinneadh dearmad ar na focail foghlamtha",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Tabhair leat: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Coinne athnuachana",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: tá do choinne ag {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: tá do choinne amárach.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Do phlean athnuachana á ullmhú",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Foinsí oifigiúla á seiceáil",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Tabhair leat",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Gheobhaidh tú meabhrúchán an tráthnóna roimhe, agus dhá uair an chloig roimhe má tá an t-am socraithe.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Bain an choinne",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Coinne sábháilte",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Téigh chuig an gcoinne",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Coinne",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Cathain",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Cá háit",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Fiafraigh de Vaultara an chéad chéim eile",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Cad é an chéad chéim eile chun mo {name} a athnuachan?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Conas a athnuafaidh mé mo {name}? Déan plean athnuachana dom leis na céimeanna oifigiúla.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Cuireann tú an choinne in áirithe ar an suíomh oifigiúil. Ní dhéanann Vaultara é duit riamh.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Cuir in áirithe ar an suíomh oifigiúil",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Áirithint",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Tír",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Táille",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Faigh na céimeanna do mo thír",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Níorbh fhéidir an nasc a oscailt.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Níl plean athnuachana ag an taifead seo fós.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Oscail an leathanach oifigiúil",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Éiríonn na céimeanna mar sheicliosta athnuachana an taifid seo, leis na naisc oifigiúla.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Plean athnuachana sábháilte",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Do phlean athnuachana",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Am próiseála",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Aimsíonn Ask Vaultara na fíorchéimeanna do do thír ar shuímh oifigiúla, leis an táille, an fad ama agus cá háit le háirithint.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Cóitseálaí athnuachana",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Féadfaidh rialacha agus táillí athrú. Seiceáil an leathanach oifigiúil sula n-íocann tú.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Foinsí",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Marcáil an chéim mar déanta",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Céim {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Marcáil an chéim mar gan déanamh",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 chéim} =2{2 chéim} few{{count} chéim} many{{count} gcéim} other{{count} céim}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Cad atá romham?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Slán.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Abair tá chun deimhniú, nó níl chun scipeáil.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Déanta.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Críochnaigh",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Ag éisteacht…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Níl guth ag do ghuthán don teanga seo, mar sin taispeántar freagraí ach ní léitear iad.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Níor éirigh leis. Seiceáil an cárta ar an scáileán.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Táim ag éisteacht.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Labhair le Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Ceart go leor, scipeáilte.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Ag labhairt. Tapáil chun cur isteach",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Tapáil chun labhairt",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Ag smaoineamh…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Mód cainte",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "tá,sea,cinnte,ceart go leor,ok,deimhnigh,déan é,ar aghaidh",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "níl,ní hea,cealaigh,scipeáil,ní anois",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "stop,sin é,sin a bhfuil,slán,slán leat,críochnaigh mód cainte",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

@@ -9212,4 +9212,193 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Apgūtie vārdi aizmirsti';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Paņemiet līdzi: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Atjaunošanas vizīte';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: jūsu vizīte ir $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: jūsu vizīte ir rīt.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Gatavo atjaunošanas plānu';
+
+  @override
+  String get assistantStepWeb => 'Pārbauda oficiālos avotus';
+
+  @override
+  String get coachAppointmentBring => 'Paņemiet līdzi';
+
+  @override
+  String get coachAppointmentNote => 'Atgādinājumu saņemsiet iepriekšējā vakarā un divas stundas iepriekš, ja laiks ir norādīts.';
+
+  @override
+  String get coachAppointmentRemove => 'Noņemt vizīti';
+
+  @override
+  String get coachAppointmentSaved => 'Vizīte saglabāta';
+
+  @override
+  String get coachAppointmentStep => 'Dodieties uz vizīti';
+
+  @override
+  String get coachAppointmentTitle => 'Vizīte';
+
+  @override
+  String get coachAppointmentWhen => 'Kad';
+
+  @override
+  String get coachAppointmentWhere => 'Kur';
+
+  @override
+  String get coachAskNext => 'Jautāt Vaultara nākamo soli';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Kāds ir nākamais solis, lai atjaunotu manu $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Kā atjaunot manu $name? Izveido man atjaunošanas plānu ar oficiālajiem soļiem.';
+  }
+
+  @override
+  String get coachBookNote => 'Pieteikšanās notiek oficiālajā vietnē. Vaultara nekad nepiesaka jūsu vietā.';
+
+  @override
+  String get coachBookOnSite => 'Pieteikties oficiālajā vietnē';
+
+  @override
+  String get coachBookingLabel => 'Pieteikšanās';
+
+  @override
+  String get coachCountryLabel => 'Valsts';
+
+  @override
+  String get coachFeeLabel => 'Maksa';
+
+  @override
+  String get coachGetSteps => 'Atrast soļus manai valstij';
+
+  @override
+  String get coachLinkFailed => 'Saiti neizdevās atvērt.';
+
+  @override
+  String get coachNoPlan => 'Šim ierakstam vēl nav atjaunošanas plāna.';
+
+  @override
+  String get coachOpenLink => 'Atvērt oficiālo lapu';
+
+  @override
+  String get coachPlanNote => 'Soļi kļūst par šī ieraksta atjaunošanas sarakstu ar oficiālajām saitēm.';
+
+  @override
+  String get coachPlanSaved => 'Atjaunošanas plāns saglabāts';
+
+  @override
+  String get coachPlanTitle => 'Jūsu atjaunošanas plāns';
+
+  @override
+  String get coachProcessingLabel => 'Apstrādes laiks';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara oficiālās vietnēs atrod īstos soļus jūsu valstij, ar maksu, ilgumu un pieteikšanās vietu.';
+
+  @override
+  String get coachPromoTitle => 'Atjaunošanas palīgs';
+
+  @override
+  String get coachRulesChange => 'Noteikumi un maksas var mainīties. Pirms maksāšanas pārbaudiet oficiālo lapu.';
+
+  @override
+  String get coachSourcesLabel => 'Avoti';
+
+  @override
+  String get coachStepDoneTitle => 'Atzīmēt soli kā izdarītu';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number. solis';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Atzīmēt soli kā neizdarītu';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count soļi',
+      one: '$count solis',
+      zero: '$count soļu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Kas mani gaida?';
+
+  @override
+  String get talkBye => 'Uz redzēšanos.';
+
+  @override
+  String get talkConfirmAsk => 'Sakiet jā, lai apstiprinātu, vai nē, lai izlaistu.';
+
+  @override
+  String get talkDone => 'Gatavs.';
+
+  @override
+  String get talkEnd => 'Beigt';
+
+  @override
+  String get talkListening => 'Klausās…';
+
+  @override
+  String get talkNoVoice => 'Tālrunim nav balss šai valodai, tāpēc atbildes tiek rādītas, bet netiek nolasītas.';
+
+  @override
+  String get talkNotDone => 'Neizdevās. Pārbaudiet karti ekrānā.';
+
+  @override
+  String get talkReady => 'Klausos.';
+
+  @override
+  String get talkShortcut => 'Runāt ar Vaultara';
+
+  @override
+  String get talkSkipped => 'Labi, izlaists.';
+
+  @override
+  String get talkSpeaking => 'Runā. Pieskarieties, lai pārtrauktu';
+
+  @override
+  String get talkTapToSpeak => 'Pieskarieties, lai runātu';
+
+  @override
+  String get talkThinking => 'Domā…';
+
+  @override
+  String get talkTitle => 'Sarunas režīms';
+
+  @override
+  String get talkYesWords => 'jā,jaa,protams,labi,ok,apstiprināt,dari,turpini';
+
+  @override
+  String get talkNoWords => 'nē,atcelt,izlaist,ne tagad,atstāj';
+
+  @override
+  String get talkStopWords => 'stop,pietiek,tas ir viss,atā,uz redzēšanos,beigt sarunu';
 }

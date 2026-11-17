@@ -9142,4 +9142,192 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'ნასწავლი სიტყვები დავიწყებულია';
+
+  @override
+  String appointmentBring(String items) {
+    return 'წამოიღეთ: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'განახლების ვიზიტი';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: თქვენი ვიზიტია $time-ზე.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: თქვენი ვიზიტი ხვალაა.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'მზადდება განახლების გეგმა';
+
+  @override
+  String get assistantStepWeb => 'მოწმდება ოფიციალური წყაროები';
+
+  @override
+  String get coachAppointmentBring => 'წამოიღეთ';
+
+  @override
+  String get coachAppointmentNote => 'შეხსენებას მიიღებთ წინა საღამოს, და ორი საათით ადრე, თუ დრო მითითებულია.';
+
+  @override
+  String get coachAppointmentRemove => 'ვიზიტის წაშლა';
+
+  @override
+  String get coachAppointmentSaved => 'ვიზიტი შენახულია';
+
+  @override
+  String get coachAppointmentStep => 'წადით ვიზიტზე';
+
+  @override
+  String get coachAppointmentTitle => 'ვიზიტი';
+
+  @override
+  String get coachAppointmentWhen => 'როდის';
+
+  @override
+  String get coachAppointmentWhere => 'სად';
+
+  @override
+  String get coachAskNext => 'ჰკითხეთ Vaultara-ს შემდეგი ნაბიჯი';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'რა არის შემდეგი ნაბიჯი ჩემი $name-ის განახლებისთვის?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'როგორ განვაახლო ჩემი $name? შემიდგინე განახლების გეგმა ოფიციალური ნაბიჯებით.';
+  }
+
+  @override
+  String get coachBookNote => 'ჯავშანი ოფიციალურ საიტზე კეთდება. Vaultara არასდროს ჯავშნის თქვენ მაგივრად.';
+
+  @override
+  String get coachBookOnSite => 'დაჯავშნეთ ოფიციალურ საიტზე';
+
+  @override
+  String get coachBookingLabel => 'ჯავშანი';
+
+  @override
+  String get coachCountryLabel => 'ქვეყანა';
+
+  @override
+  String get coachFeeLabel => 'საფასური';
+
+  @override
+  String get coachGetSteps => 'მაჩვენე ნაბიჯები ჩემი ქვეყნისთვის';
+
+  @override
+  String get coachLinkFailed => 'ბმული ვერ გაიხსნა.';
+
+  @override
+  String get coachNoPlan => 'ამ ჩანაწერს ჯერ არ აქვს განახლების გეგმა.';
+
+  @override
+  String get coachOpenLink => 'ოფიციალური გვერდის გახსნა';
+
+  @override
+  String get coachPlanNote => 'ნაბიჯები ხდება ამ ჩანაწერის განახლების სია, ოფიციალური ბმულებით.';
+
+  @override
+  String get coachPlanSaved => 'განახლების გეგმა შენახულია';
+
+  @override
+  String get coachPlanTitle => 'თქვენი განახლების გეგმა';
+
+  @override
+  String get coachProcessingLabel => 'დამუშავების დრო';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara პოულობს თქვენი ქვეყნის რეალურ ნაბიჯებს ოფიციალურ საიტებზე, საფასურით, ვადით და ჯავშნის ადგილით.';
+
+  @override
+  String get coachPromoTitle => 'განახლების ასისტენტი';
+
+  @override
+  String get coachRulesChange => 'წესები და საფასური შეიძლება შეიცვალოს. გადახდამდე შეამოწმეთ ოფიციალური გვერდი.';
+
+  @override
+  String get coachSourcesLabel => 'წყაროები';
+
+  @override
+  String get coachStepDoneTitle => 'ნაბიჯის მონიშვნა შესრულებულად';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'ნაბიჯი $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'ნაბიჯის მონიშვნა შეუსრულებლად';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ნაბიჯი',
+      one: '1 ნაბიჯი',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'რა მელოდება?';
+
+  @override
+  String get talkBye => 'ნახვამდის.';
+
+  @override
+  String get talkConfirmAsk => 'თქვით კი დასადასტურებლად, ან არა გამოსატოვებლად.';
+
+  @override
+  String get talkDone => 'მზადაა.';
+
+  @override
+  String get talkEnd => 'დასრულება';
+
+  @override
+  String get talkListening => 'უსმენს…';
+
+  @override
+  String get talkNoVoice => 'თქვენს ტელეფონს ამ ენის ხმა არ აქვს, ამიტომ პასუხები ჩანს, მაგრამ არ იკითხება.';
+
+  @override
+  String get talkNotDone => 'ვერ მოხერხდა. შეამოწმეთ ბარათი ეკრანზე.';
+
+  @override
+  String get talkReady => 'გისმენთ.';
+
+  @override
+  String get talkShortcut => 'ესაუბრეთ Vaultara-ს';
+
+  @override
+  String get talkSkipped => 'კარგი, გამოტოვებულია.';
+
+  @override
+  String get talkSpeaking => 'საუბრობს. შეეხეთ შესაწყვეტად';
+
+  @override
+  String get talkTapToSpeak => 'შეეხეთ სალაპარაკოდ';
+
+  @override
+  String get talkThinking => 'ფიქრობს…';
+
+  @override
+  String get talkTitle => 'საუბრის რეჟიმი';
+
+  @override
+  String get talkYesWords => 'კი,დიახ,ჰო,რა თქმა უნდა,კარგი,ოკ,დაადასტურე,გააკეთე';
+
+  @override
+  String get talkNoWords => 'არა,არ,გაუქმება,გამოტოვე,ახლა არა';
+
+  @override
+  String get talkStopWords => 'გაჩერდი,სტოპ,სულ ესაა,ნახვამდის,კარგად,საუბრის დასრულება';
 }

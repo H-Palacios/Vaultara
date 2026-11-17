@@ -3247,5 +3247,267 @@
   "assistantForgetWordsDone": "បានបំភ្លេចពាក្យដែលបានរៀន",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "យកមក៖ {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "ការណាត់ជួបសម្រាប់ការបន្ត",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}៖ ការណាត់ជួបរបស់អ្នកនៅម៉ោង {time}។",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}៖ ការណាត់ជួបរបស់អ្នកគឺថ្ងៃស្អែក។",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "កំពុងរៀបចំផែនការបន្ត",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "កំពុងពិនិត្យប្រភពផ្លូវការ",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "យកមក",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "អ្នកនឹងទទួលការរំលឹកនៅល្ងាចមុន និងពីរម៉ោងមុន ប្រសិនបើបានកំណត់ម៉ោង។",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "លុបការណាត់ជួប",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "បានរក្សាទុកការណាត់ជួប",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "ទៅការណាត់ជួប",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "ការណាត់ជួប",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "ពេលណា",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "កន្លែងណា",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "សួរ Vaultara អំពីជំហានបន្ទាប់",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "តើជំហានបន្ទាប់ដើម្បីបន្ត {name} របស់ខ្ញុំគឺអ្វី?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "តើខ្ញុំបន្ត {name} របស់ខ្ញុំដោយរបៀបណា? សូមធ្វើផែនការបន្តជាមួយជំហានផ្លូវការ។",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "អ្នកកក់នៅលើគេហទំព័រផ្លូវការ។ Vaultara មិនដែលកក់ជំនួសអ្នកទេ។",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "កក់នៅលើគេហទំព័រផ្លូវការ",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "ការកក់",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "ប្រទេស",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "ថ្លៃ",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "ទទួលជំហានសម្រាប់ប្រទេសខ្ញុំ",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "មិនអាចបើកតំណបានទេ។",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "កំណត់ត្រានេះមិនទាន់មានផែនការបន្តនៅឡើយទេ។",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "បើកទំព័រផ្លូវការ",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "ជំហានទាំងនេះក្លាយជាបញ្ជីបន្តនៃកំណត់ត្រានេះ ជាមួយតំណផ្លូវការ។",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "បានរក្សាទុកផែនការបន្ត",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "ផែនការបន្តរបស់អ្នក",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "រយៈពេលដំណើរការ",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara រកជំហានពិតសម្រាប់ប្រទេសរបស់អ្នកនៅលើគេហទំព័រផ្លូវការ ជាមួយថ្លៃ រយៈពេល និងកន្លែងកក់។",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "គ្រូបង្វឹកការបន្ត",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "ច្បាប់ និងថ្លៃអាចផ្លាស់ប្តូរ។ សូមពិនិត្យទំព័រផ្លូវការមុនពេលបង់ប្រាក់។",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "ប្រភព",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "សម្គាល់ជំហានថាបានធ្វើរួច",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "ជំហាន {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "សម្គាល់ជំហានថាមិនទាន់ធ្វើ",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, other{{count} ជំហាន}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "តើមានអ្វីខាងមុខសម្រាប់ខ្ញុំ?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "លាហើយ។",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "និយាយ បាទ/ចាស ដើម្បីបញ្ជាក់ ឬ ទេ ដើម្បីរំលង។",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "រួចរាល់។",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "បញ្ចប់",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "កំពុងស្តាប់…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "ទូរសព្ទរបស់អ្នកគ្មានសំឡេងសម្រាប់ភាសានេះទេ ដូច្នេះចម្លើយត្រូវបានបង្ហាញ ប៉ុន្តែមិនអានឮទេ។",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "មិនបានសម្រេច។ សូមពិនិត្យកាតនៅលើអេក្រង់។",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "ខ្ញុំកំពុងស្តាប់។",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "និយាយជាមួយ Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "យល់ព្រម បានរំលង។",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "កំពុងនិយាយ។ ប៉ះដើម្បីកាត់",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "ប៉ះដើម្បីនិយាយ",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "កំពុងគិត…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "របៀបសន្ទនា",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "បាទ,ចាស,បាទ/ចាស,យល់ព្រម,អូខេ,បញ្ជាក់,ធ្វើវា",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "ទេ,អត់,បោះបង់,រំលង,មិនមែនឥឡូវ",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "ឈប់,គ្រប់ហើយ,លាហើយ,បាយបាយ,បញ្ចប់របៀបសន្ទនា",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

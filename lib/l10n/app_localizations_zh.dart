@@ -9080,6 +9080,193 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => '已忘记学到的词语';
+
+  @override
+  String appointmentBring(String items) {
+    return '携带：$items';
+  }
+
+  @override
+  String get appointmentReminderTitle => '续期预约';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name：您的预约时间是$time。';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name：您的预约在明天。';
+  }
+
+  @override
+  String get assistantStepRenewal => '正在制定续期计划';
+
+  @override
+  String get assistantStepWeb => '正在查看官方来源';
+
+  @override
+  String get coachAppointmentBring => '携带';
+
+  @override
+  String get coachAppointmentNote => '前一天晚上会提醒您；如设置了时间，还会提前两小时提醒。';
+
+  @override
+  String get coachAppointmentRemove => '删除预约';
+
+  @override
+  String get coachAppointmentSaved => '预约已保存';
+
+  @override
+  String get coachAppointmentStep => '前往预约';
+
+  @override
+  String get coachAppointmentTitle => '预约';
+
+  @override
+  String get coachAppointmentWhen => '时间';
+
+  @override
+  String get coachAppointmentWhere => '地点';
+
+  @override
+  String get coachAskNext => '向 Vaultara 询问下一步';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return '续期我的$name下一步是什么？';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '我怎么续期我的$name？请按官方步骤为我制定续期计划。';
+  }
+
+  @override
+  String get coachBookNote => '预约在官方网站上进行。Vaultara 绝不会替您预约。';
+
+  @override
+  String get coachBookOnSite => '在官方网站预约';
+
+  @override
+  String get coachBookingLabel => '预约';
+
+  @override
+  String get coachCountryLabel => '国家';
+
+  @override
+  String get coachFeeLabel => '费用';
+
+  @override
+  String get coachGetSteps => '获取我所在国家的步骤';
+
+  @override
+  String get coachLinkFailed => '无法打开链接。';
+
+  @override
+  String get coachNoPlan => '此记录还没有续期计划。';
+
+  @override
+  String get coachOpenLink => '打开官方页面';
+
+  @override
+  String get coachPlanNote => '这些步骤会成为此记录的续期清单，并附官方链接。';
+
+  @override
+  String get coachPlanSaved => '续期计划已保存';
+
+  @override
+  String get coachPlanTitle => '您的续期计划';
+
+  @override
+  String get coachProcessingLabel => '办理时间';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara 会在官方网站上找到您所在国家的真实步骤，包括费用、所需时间和预约地点。';
+
+  @override
+  String get coachPromoTitle => '续期助手';
+
+  @override
+  String get coachRulesChange => '规定和费用可能变化。付款前请查看官方页面。';
+
+  @override
+  String get coachSourcesLabel => '来源';
+
+  @override
+  String get coachStepDoneTitle => '将步骤标记为已完成';
+
+  @override
+  String coachStepLabel(int number) {
+    return '第$number步';
+  }
+
+  @override
+  String get coachStepUndoTitle => '将步骤标记为未完成';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 个步骤',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => '我接下来有什么事？';
+
+  @override
+  String get talkBye => '再见。';
+
+  @override
+  String get talkConfirmAsk => '说“是”确认，说“不”跳过。';
+
+  @override
+  String get talkDone => '已完成。';
+
+  @override
+  String get talkEnd => '结束';
+
+  @override
+  String get talkListening => '正在聆听…';
+
+  @override
+  String get talkNoVoice => '您的手机没有这种语言的语音，因此只显示回答，不朗读。';
+
+  @override
+  String get talkNotDone => '没有成功。请查看屏幕上的卡片。';
+
+  @override
+  String get talkReady => '我在听。';
+
+  @override
+  String get talkShortcut => '与 Vaultara 对话';
+
+  @override
+  String get talkSkipped => '好的，已跳过。';
+
+  @override
+  String get talkSpeaking => '正在说话。轻点可打断';
+
+  @override
+  String get talkTapToSpeak => '轻点开始说话';
+
+  @override
+  String get talkThinking => '正在思考…';
+
+  @override
+  String get talkTitle => '对话模式';
+
+  @override
+  String get talkYesWords => '是,是的,好,好的,可以,确认,行,没问题';
+
+  @override
+  String get talkNoWords => '不,不是,不要,取消,跳过,现在不要';
+
+  @override
+  String get talkStopWords => '停,停止,就这样,再见,拜拜,结束对话模式';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18146,6 +18333,193 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantForgetWordsDone => '已忘记学到的词语';
+
+  @override
+  String appointmentBring(String items) {
+    return '携带：$items';
+  }
+
+  @override
+  String get appointmentReminderTitle => '续期预约';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name：您的预约时间是$time。';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name：您的预约在明天。';
+  }
+
+  @override
+  String get assistantStepRenewal => '正在制定续期计划';
+
+  @override
+  String get assistantStepWeb => '正在查看官方来源';
+
+  @override
+  String get coachAppointmentBring => '携带';
+
+  @override
+  String get coachAppointmentNote => '前一天晚上会提醒您；如设置了时间，还会提前两小时提醒。';
+
+  @override
+  String get coachAppointmentRemove => '删除预约';
+
+  @override
+  String get coachAppointmentSaved => '预约已保存';
+
+  @override
+  String get coachAppointmentStep => '前往预约';
+
+  @override
+  String get coachAppointmentTitle => '预约';
+
+  @override
+  String get coachAppointmentWhen => '时间';
+
+  @override
+  String get coachAppointmentWhere => '地点';
+
+  @override
+  String get coachAskNext => '向 Vaultara 询问下一步';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return '续期我的$name下一步是什么？';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '我怎么续期我的$name？请按官方步骤为我制定续期计划。';
+  }
+
+  @override
+  String get coachBookNote => '预约在官方网站上进行。Vaultara 绝不会替您预约。';
+
+  @override
+  String get coachBookOnSite => '在官方网站预约';
+
+  @override
+  String get coachBookingLabel => '预约';
+
+  @override
+  String get coachCountryLabel => '国家';
+
+  @override
+  String get coachFeeLabel => '费用';
+
+  @override
+  String get coachGetSteps => '获取我所在国家的步骤';
+
+  @override
+  String get coachLinkFailed => '无法打开链接。';
+
+  @override
+  String get coachNoPlan => '此记录还没有续期计划。';
+
+  @override
+  String get coachOpenLink => '打开官方页面';
+
+  @override
+  String get coachPlanNote => '这些步骤会成为此记录的续期清单，并附官方链接。';
+
+  @override
+  String get coachPlanSaved => '续期计划已保存';
+
+  @override
+  String get coachPlanTitle => '您的续期计划';
+
+  @override
+  String get coachProcessingLabel => '办理时间';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara 会在官方网站上找到您所在国家的真实步骤，包括费用、所需时间和预约地点。';
+
+  @override
+  String get coachPromoTitle => '续期助手';
+
+  @override
+  String get coachRulesChange => '规定和费用可能变化。付款前请查看官方页面。';
+
+  @override
+  String get coachSourcesLabel => '来源';
+
+  @override
+  String get coachStepDoneTitle => '将步骤标记为已完成';
+
+  @override
+  String coachStepLabel(int number) {
+    return '第$number步';
+  }
+
+  @override
+  String get coachStepUndoTitle => '将步骤标记为未完成';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 个步骤',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => '我接下来有什么事？';
+
+  @override
+  String get talkBye => '再见。';
+
+  @override
+  String get talkConfirmAsk => '说“是”确认，说“不”跳过。';
+
+  @override
+  String get talkDone => '已完成。';
+
+  @override
+  String get talkEnd => '结束';
+
+  @override
+  String get talkListening => '正在聆听…';
+
+  @override
+  String get talkNoVoice => '您的手机没有这种语言的语音，因此只显示回答，不朗读。';
+
+  @override
+  String get talkNotDone => '没有成功。请查看屏幕上的卡片。';
+
+  @override
+  String get talkReady => '我在听。';
+
+  @override
+  String get talkShortcut => '与 Vaultara 对话';
+
+  @override
+  String get talkSkipped => '好的，已跳过。';
+
+  @override
+  String get talkSpeaking => '正在说话。轻点可打断';
+
+  @override
+  String get talkTapToSpeak => '轻点开始说话';
+
+  @override
+  String get talkThinking => '正在思考…';
+
+  @override
+  String get talkTitle => '对话模式';
+
+  @override
+  String get talkYesWords => '是,是的,好,好的,可以,确认,行,没问题';
+
+  @override
+  String get talkNoWords => '不,不是,不要,取消,跳过,现在不要';
+
+  @override
+  String get talkStopWords => '停,停止,就这样,再见,拜拜,结束对话模式';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -27212,4 +27586,191 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantForgetWordsDone => '已忘記學到的字詞';
+
+  @override
+  String appointmentBring(String items) {
+    return '攜帶：$items';
+  }
+
+  @override
+  String get appointmentReminderTitle => '續期預約';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name：您的預約時間是$time。';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name：您的預約在明天。';
+  }
+
+  @override
+  String get assistantStepRenewal => '正在制定續期計畫';
+
+  @override
+  String get assistantStepWeb => '正在查看官方來源';
+
+  @override
+  String get coachAppointmentBring => '攜帶';
+
+  @override
+  String get coachAppointmentNote => '前一天晚上會提醒您；如設定了時間，還會提前兩小時提醒。';
+
+  @override
+  String get coachAppointmentRemove => '刪除預約';
+
+  @override
+  String get coachAppointmentSaved => '預約已儲存';
+
+  @override
+  String get coachAppointmentStep => '前往預約';
+
+  @override
+  String get coachAppointmentTitle => '預約';
+
+  @override
+  String get coachAppointmentWhen => '時間';
+
+  @override
+  String get coachAppointmentWhere => '地點';
+
+  @override
+  String get coachAskNext => '向 Vaultara 詢問下一步';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return '續期我的$name下一步是什麼？';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '我要怎麼續期我的$name？請依官方步驟為我制定續期計畫。';
+  }
+
+  @override
+  String get coachBookNote => '預約在官方網站上進行。Vaultara 絕不會替您預約。';
+
+  @override
+  String get coachBookOnSite => '在官方網站預約';
+
+  @override
+  String get coachBookingLabel => '預約';
+
+  @override
+  String get coachCountryLabel => '國家';
+
+  @override
+  String get coachFeeLabel => '費用';
+
+  @override
+  String get coachGetSteps => '取得我所在國家的步驟';
+
+  @override
+  String get coachLinkFailed => '無法開啟連結。';
+
+  @override
+  String get coachNoPlan => '此紀錄還沒有續期計畫。';
+
+  @override
+  String get coachOpenLink => '開啟官方頁面';
+
+  @override
+  String get coachPlanNote => '這些步驟會成為此紀錄的續期清單，並附官方連結。';
+
+  @override
+  String get coachPlanSaved => '續期計畫已儲存';
+
+  @override
+  String get coachPlanTitle => '您的續期計畫';
+
+  @override
+  String get coachProcessingLabel => '辦理時間';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara 會在官方網站上找到您所在國家的真實步驟，包括費用、所需時間和預約地點。';
+
+  @override
+  String get coachPromoTitle => '續期助手';
+
+  @override
+  String get coachRulesChange => '規定和費用可能變更。付款前請查看官方頁面。';
+
+  @override
+  String get coachSourcesLabel => '來源';
+
+  @override
+  String get coachStepDoneTitle => '將步驟標記為已完成';
+
+  @override
+  String coachStepLabel(int number) {
+    return '第$number步';
+  }
+
+  @override
+  String get coachStepUndoTitle => '將步驟標記為未完成';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 個步驟',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => '我接下來有什麼事？';
+
+  @override
+  String get talkBye => '再見。';
+
+  @override
+  String get talkConfirmAsk => '說「是」確認，說「不」略過。';
+
+  @override
+  String get talkDone => '已完成。';
+
+  @override
+  String get talkEnd => '結束';
+
+  @override
+  String get talkListening => '正在聆聽…';
+
+  @override
+  String get talkNoVoice => '您的手機沒有這種語言的語音，因此只顯示回答，不朗讀。';
+
+  @override
+  String get talkNotDone => '沒有成功。請查看螢幕上的卡片。';
+
+  @override
+  String get talkReady => '我在聽。';
+
+  @override
+  String get talkShortcut => '與 Vaultara 對話';
+
+  @override
+  String get talkSkipped => '好的，已略過。';
+
+  @override
+  String get talkSpeaking => '正在說話。輕觸可打斷';
+
+  @override
+  String get talkTapToSpeak => '輕觸開始說話';
+
+  @override
+  String get talkThinking => '正在思考…';
+
+  @override
+  String get talkTitle => '對話模式';
+
+  @override
+  String get talkYesWords => '是,是的,好,好的,可以,確認,行,沒問題';
+
+  @override
+  String get talkNoWords => '不,不是,不要,取消,略過,現在不要';
+
+  @override
+  String get talkStopWords => '停,停止,就這樣,再見,掰掰,結束對話模式';
 }

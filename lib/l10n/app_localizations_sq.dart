@@ -9147,4 +9147,192 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Fjalët e mësuara u harruan';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Sillni: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Takim për rinovim';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: takimi juaj është në $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: takimi juaj është nesër.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Po përgatis planin e rinovimit';
+
+  @override
+  String get assistantStepWeb => 'Po kontrolloj burime zyrtare';
+
+  @override
+  String get coachAppointmentBring => 'Sillni';
+
+  @override
+  String get coachAppointmentNote => 'Merrni një kujtesë mbrëmjen më parë, dhe dy orë më parë nëse ora është vendosur.';
+
+  @override
+  String get coachAppointmentRemove => 'Hiq takimin';
+
+  @override
+  String get coachAppointmentSaved => 'Takimi u ruajt';
+
+  @override
+  String get coachAppointmentStep => 'Shkoni në takim';
+
+  @override
+  String get coachAppointmentTitle => 'Takim';
+
+  @override
+  String get coachAppointmentWhen => 'Kur';
+
+  @override
+  String get coachAppointmentWhere => 'Ku';
+
+  @override
+  String get coachAskNext => 'Pyet Vaultara për hapin e radhës';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Cili është hapi i radhës për të rinovuar $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Si ta rinovoj $name? Më bëj një plan rinovimi me hapat zyrtarë.';
+  }
+
+  @override
+  String get coachBookNote => 'Rezervimi bëhet në faqen zyrtare. Vaultara nuk rezervon kurrë për ju.';
+
+  @override
+  String get coachBookOnSite => 'Rezervo në faqen zyrtare';
+
+  @override
+  String get coachBookingLabel => 'Rezervim';
+
+  @override
+  String get coachCountryLabel => 'Shteti';
+
+  @override
+  String get coachFeeLabel => 'Tarifa';
+
+  @override
+  String get coachGetSteps => 'Gjej hapat për shtetin tim';
+
+  @override
+  String get coachLinkFailed => 'Lidhja nuk u hap dot.';
+
+  @override
+  String get coachNoPlan => 'Ky regjistrim nuk ka ende plan rinovimi.';
+
+  @override
+  String get coachOpenLink => 'Hap faqen zyrtare';
+
+  @override
+  String get coachPlanNote => 'Hapat bëhen lista e rinovimit e këtij regjistrimi, me lidhjet zyrtare.';
+
+  @override
+  String get coachPlanSaved => 'Plani i rinovimit u ruajt';
+
+  @override
+  String get coachPlanTitle => 'Plani juaj i rinovimit';
+
+  @override
+  String get coachProcessingLabel => 'Koha e përpunimit';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara gjen hapat e vërtetë për shtetin tuaj në faqe zyrtare, me tarifën, kohëzgjatjen dhe ku të rezervoni.';
+
+  @override
+  String get coachPromoTitle => 'Asistenti i rinovimit';
+
+  @override
+  String get coachRulesChange => 'Rregullat dhe tarifat mund të ndryshojnë. Kontrolloni faqen zyrtare para se të paguani.';
+
+  @override
+  String get coachSourcesLabel => 'Burimet';
+
+  @override
+  String get coachStepDoneTitle => 'Shëno hapin si të kryer';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Hapi $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Shëno hapin si të pakryer';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hapa',
+      one: '1 hap',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Çfarë më pret?';
+
+  @override
+  String get talkBye => 'Mirupafshim.';
+
+  @override
+  String get talkConfirmAsk => 'Thoni po për të konfirmuar ose jo për ta kaluar.';
+
+  @override
+  String get talkDone => 'U krye.';
+
+  @override
+  String get talkEnd => 'Mbyll';
+
+  @override
+  String get talkListening => 'Po dëgjon…';
+
+  @override
+  String get talkNoVoice => 'Telefoni nuk ka zë për këtë gjuhë, prandaj përgjigjet shfaqen, por nuk lexohen.';
+
+  @override
+  String get talkNotDone => 'Nuk u krye. Kontrolloni kartën në ekran.';
+
+  @override
+  String get talkReady => 'Po dëgjoj.';
+
+  @override
+  String get talkShortcut => 'Fol me Vaultara';
+
+  @override
+  String get talkSkipped => 'Në rregull, u kalua.';
+
+  @override
+  String get talkSpeaking => 'Po flet. Prekni për ta ndërprerë';
+
+  @override
+  String get talkTapToSpeak => 'Prekni për të folur';
+
+  @override
+  String get talkThinking => 'Po mendon…';
+
+  @override
+  String get talkTitle => 'Modaliteti i bisedës';
+
+  @override
+  String get talkYesWords => 'po,patjetër,sigurisht,ok,mirë,konfirmo,bëje,vazhdo';
+
+  @override
+  String get talkNoWords => 'jo,anulo,kalo,jo tani,lëre';
+
+  @override
+  String get talkStopWords => 'ndalo,mjaft,kaq,mirupafshim,pa,mbyll bisedën';
 }

@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "கற்ற சொற்கள் மறக்கப்பட்டன",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "கொண்டு வரவும்: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "புதுப்பிப்பு சந்திப்பு",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: உங்கள் சந்திப்பு {time} மணிக்கு.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: உங்கள் சந்திப்பு நாளை.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "உங்கள் புதுப்பிப்பு திட்டம் தயாராகிறது",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "அதிகாரப்பூர்வ ஆதாரங்களைச் சரிபார்க்கிறது",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "கொண்டு வரவும்",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "முந்தைய நாள் மாலையும், நேரம் அமைக்கப்பட்டிருந்தால் இரண்டு மணி நேரம் முன்பும் நினைவூட்டல் வரும்.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "சந்திப்பை நீக்கு",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "சந்திப்பு சேமிக்கப்பட்டது",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "சந்திப்புக்குச் செல்லவும்",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "சந்திப்பு",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "எப்போது",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "எங்கே",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "அடுத்த படியை Vaultara-விடம் கேளுங்கள்",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "என் {name} புதுப்பிக்க அடுத்த படி என்ன?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "என் {name} ஐ எப்படிப் புதுப்பிப்பது? அதிகாரப்பூர்வ படிகளுடன் புதுப்பிப்பு திட்டம் தயாரியுங்கள்.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "முன்பதிவு அதிகாரப்பூர்வ தளத்தில் நடக்கும். Vaultara ஒருபோதும் உங்கள் சார்பாக முன்பதிவு செய்யாது.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "அதிகாரப்பூர்வ தளத்தில் முன்பதிவு செய்யவும்",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "முன்பதிவு",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "நாடு",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "கட்டணம்",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "என் நாட்டுக்கான படிகளைப் பெறு",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "இணைப்பைத் திறக்க முடியவில்லை.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "இந்தப் பதிவுக்கு இன்னும் புதுப்பிப்பு திட்டம் இல்லை.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "அதிகாரப்பூர்வ பக்கத்தைத் திற",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "படிகள் அதிகாரப்பூர்வ இணைப்புகளுடன் இந்தப் பதிவின் புதுப்பிப்பு பட்டியலாகும்.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "புதுப்பிப்பு திட்டம் சேமிக்கப்பட்டது",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "உங்கள் புதுப்பிப்பு திட்டம்",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "செயலாக்க நேரம்",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara அதிகாரப்பூர்வ தளங்களில் உங்கள் நாட்டின் உண்மையான படிகளைக் கண்டறிகிறது, கட்டணம், நேரம், முன்பதிவு இடத்துடன்.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "புதுப்பிப்பு பயிற்சியாளர்",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "விதிகளும் கட்டணங்களும் மாறலாம். பணம் செலுத்தும் முன் அதிகாரப்பூர்வ பக்கத்தைச் சரிபாருங்கள்.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "ஆதாரங்கள்",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "படியை முடிந்ததாகக் குறி",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "படி {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "படியை முடியாததாகக் குறி",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 படி} other{{count} படிகள்}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "எனக்கு வரவிருப்பது என்ன?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "போய் வருகிறேன்.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "உறுதிப்படுத்த ஆம், தவிர்க்க இல்லை என்று சொல்லுங்கள்.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "முடிந்தது.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "முடி",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "கேட்கிறது…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "உங்கள் போனில் இந்த மொழிக்கு குரல் இல்லை, எனவே பதில்கள் காட்டப்படும் ஆனால் வாசிக்கப்படாது.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "அது நடக்கவில்லை. திரையில் உள்ள அட்டையைப் பாருங்கள்.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "கேட்கிறேன்.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Vaultara-வுடன் பேசுங்கள்",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "சரி, தவிர்க்கப்பட்டது.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "பேசுகிறது. நிறுத்த தட்டவும்",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "பேச தட்டவும்",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "யோசிக்கிறது…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "பேச்சு பயன்முறை",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ஆம்,ஆமாம்,சரி,நிச்சயமாக,ஓகே,உறுதிப்படுத்து,செய்,தொடர்",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "இல்லை,வேண்டாம்,ரத்து செய்,தவிர்,இப்போது வேண்டாம்",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "நிறுத்து,போதும்,அவ்வளவுதான்,பை,போய் வருகிறேன்,பேச்சு பயன்முறையை முடி",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

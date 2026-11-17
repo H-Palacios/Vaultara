@@ -9142,4 +9142,192 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'O‘rganilgan so‘zlar unutildi';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Olib keling: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Yangilash uchrashuvi';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: uchrashuvingiz soat $time da.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: uchrashuvingiz ertaga.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Yangilash rejangiz tayyorlanmoqda';
+
+  @override
+  String get assistantStepWeb => 'Rasmiy manbalar tekshirilmoqda';
+
+  @override
+  String get coachAppointmentBring => 'Olib keling';
+
+  @override
+  String get coachAppointmentNote => 'Oldingi kuni kechqurun, vaqt belgilangan bo‘lsa ikki soat oldin ham eslatma keladi.';
+
+  @override
+  String get coachAppointmentRemove => 'Uchrashuvni olib tashlash';
+
+  @override
+  String get coachAppointmentSaved => 'Uchrashuv saqlandi';
+
+  @override
+  String get coachAppointmentStep => 'Uchrashuvga boring';
+
+  @override
+  String get coachAppointmentTitle => 'Uchrashuv';
+
+  @override
+  String get coachAppointmentWhen => 'Qachon';
+
+  @override
+  String get coachAppointmentWhere => 'Qayerda';
+
+  @override
+  String get coachAskNext => 'Keyingi qadamni Vaultara’dan so‘rash';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return '$name ni yangilashning keyingi qadami nima?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '$name ni qanday yangilayman? Rasmiy qadamlar bilan yangilash rejasini tuzib ber.';
+  }
+
+  @override
+  String get coachBookNote => 'Navbat rasmiy saytda olinadi. Vaultara hech qachon siz uchun navbat olmaydi.';
+
+  @override
+  String get coachBookOnSite => 'Rasmiy saytda navbat olish';
+
+  @override
+  String get coachBookingLabel => 'Navbat olish';
+
+  @override
+  String get coachCountryLabel => 'Mamlakat';
+
+  @override
+  String get coachFeeLabel => 'To‘lov';
+
+  @override
+  String get coachGetSteps => 'Mamlakatim uchun qadamlarni topish';
+
+  @override
+  String get coachLinkFailed => 'Havolani ochib bo‘lmadi.';
+
+  @override
+  String get coachNoPlan => 'Bu yozuvda hali yangilash rejasi yo‘q.';
+
+  @override
+  String get coachOpenLink => 'Rasmiy sahifani ochish';
+
+  @override
+  String get coachPlanNote => 'Qadamlar rasmiy havolalar bilan bu yozuvning yangilash ro‘yxatiga aylanadi.';
+
+  @override
+  String get coachPlanSaved => 'Yangilash rejasi saqlandi';
+
+  @override
+  String get coachPlanTitle => 'Yangilash rejangiz';
+
+  @override
+  String get coachProcessingLabel => 'Ko‘rib chiqish muddati';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara rasmiy saytlardan mamlakatingiz uchun haqiqiy qadamlarni topadi: to‘lov, muddat va navbat olish joyi bilan.';
+
+  @override
+  String get coachPromoTitle => 'Yangilash yordamchisi';
+
+  @override
+  String get coachRulesChange => 'Qoidalar va to‘lovlar o‘zgarishi mumkin. To‘lashdan oldin rasmiy sahifani tekshiring.';
+
+  @override
+  String get coachSourcesLabel => 'Manbalar';
+
+  @override
+  String get coachStepDoneTitle => 'Qadamni bajarilgan deb belgilash';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number-qadam';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Qadamni bajarilmagan deb belgilash';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count qadam',
+      one: '1 qadam',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Meni nima kutmoqda?';
+
+  @override
+  String get talkBye => 'Xayr.';
+
+  @override
+  String get talkConfirmAsk => 'Tasdiqlash uchun ha, o‘tkazib yuborish uchun yo‘q deng.';
+
+  @override
+  String get talkDone => 'Tayyor.';
+
+  @override
+  String get talkEnd => 'Tugatish';
+
+  @override
+  String get talkListening => 'Tinglamoqda…';
+
+  @override
+  String get talkNoVoice => 'Telefoningizda bu til uchun ovoz yo‘q, shuning uchun javoblar ko‘rsatiladi, lekin o‘qilmaydi.';
+
+  @override
+  String get talkNotDone => 'Bo‘lmadi. Ekrandagi kartani tekshiring.';
+
+  @override
+  String get talkReady => 'Tinglayapman.';
+
+  @override
+  String get talkShortcut => 'Vaultara bilan gaplashish';
+
+  @override
+  String get talkSkipped => 'Yaxshi, o‘tkazib yuborildi.';
+
+  @override
+  String get talkSpeaking => 'Gapirmoqda. To‘xtatish uchun bosing';
+
+  @override
+  String get talkTapToSpeak => 'Gapirish uchun bosing';
+
+  @override
+  String get talkThinking => 'O‘ylamoqda…';
+
+  @override
+  String get talkTitle => 'Suhbat rejimi';
+
+  @override
+  String get talkYesWords => 'ha,xo‘p,albatta,mayli,ok,tasdiqla,qil,davom et';
+
+  @override
+  String get talkNoWords => 'yo‘q,yoq,bekor qil,o‘tkazib yubor,hozir emas';
+
+  @override
+  String get talkStopWords => 'to‘xta,bo‘ldi,shu xolos,xayr,bay,suhbat rejimini tugat';
 }

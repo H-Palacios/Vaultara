@@ -9068,4 +9068,191 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => '覚えた言葉を忘れました';
+
+  @override
+  String appointmentBring(String items) {
+    return '持ち物: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => '更新の予約';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: 予約は$timeです。';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: 予約は明日です。';
+  }
+
+  @override
+  String get assistantStepRenewal => '更新プランを作成中';
+
+  @override
+  String get assistantStepWeb => '公式情報を確認中';
+
+  @override
+  String get coachAppointmentBring => '持ち物';
+
+  @override
+  String get coachAppointmentNote => '前日の夜に、時刻が設定されていれば2時間前にもリマインダーが届きます。';
+
+  @override
+  String get coachAppointmentRemove => '予約を削除';
+
+  @override
+  String get coachAppointmentSaved => '予約を保存しました';
+
+  @override
+  String get coachAppointmentStep => '予約に行く';
+
+  @override
+  String get coachAppointmentTitle => '予約';
+
+  @override
+  String get coachAppointmentWhen => '日時';
+
+  @override
+  String get coachAppointmentWhere => '場所';
+
+  @override
+  String get coachAskNext => '次のステップをVaultaraに聞く';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return '$nameを更新する次のステップは?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '$nameはどうやって更新しますか？公式の手順で更新プランを作ってください。';
+  }
+
+  @override
+  String get coachBookNote => '予約は公式サイトで行います。Vaultaraが代わりに予約することはありません。';
+
+  @override
+  String get coachBookOnSite => '公式サイトで予約';
+
+  @override
+  String get coachBookingLabel => '予約';
+
+  @override
+  String get coachCountryLabel => '国';
+
+  @override
+  String get coachFeeLabel => '手数料';
+
+  @override
+  String get coachGetSteps => '自分の国の手順を調べる';
+
+  @override
+  String get coachLinkFailed => 'リンクを開けませんでした。';
+
+  @override
+  String get coachNoPlan => 'この記録にはまだ更新プランがありません。';
+
+  @override
+  String get coachOpenLink => '公式ページを開く';
+
+  @override
+  String get coachPlanNote => '手順は公式リンク付きでこの記録の更新チェックリストになります。';
+
+  @override
+  String get coachPlanSaved => '更新プランを保存しました';
+
+  @override
+  String get coachPlanTitle => 'あなたの更新プラン';
+
+  @override
+  String get coachProcessingLabel => '処理期間';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultaraが公式サイトからあなたの国の実際の手順を探し、手数料、期間、予約先も示します。';
+
+  @override
+  String get coachPromoTitle => '更新コーチ';
+
+  @override
+  String get coachRulesChange => '規則や手数料は変わることがあります。支払う前に公式ページを確認してください。';
+
+  @override
+  String get coachSourcesLabel => '出典';
+
+  @override
+  String get coachStepDoneTitle => 'ステップを完了にする';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'ステップ$number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'ステップを未完了にする';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countステップ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => '近々予定されていることは？';
+
+  @override
+  String get talkBye => 'さようなら。';
+
+  @override
+  String get talkConfirmAsk => '確認するには「はい」、スキップするには「いいえ」と言ってください。';
+
+  @override
+  String get talkDone => '完了しました。';
+
+  @override
+  String get talkEnd => '終了';
+
+  @override
+  String get talkListening => '聞いています…';
+
+  @override
+  String get talkNoVoice => 'この言語の音声がないため、回答は表示されますが読み上げられません。';
+
+  @override
+  String get talkNotDone => 'うまくいきませんでした。画面のカードを確認してください。';
+
+  @override
+  String get talkReady => '聞いています。';
+
+  @override
+  String get talkShortcut => 'Vaultaraと話す';
+
+  @override
+  String get talkSkipped => 'わかりました、スキップしました。';
+
+  @override
+  String get talkSpeaking => '話しています。タップで中断';
+
+  @override
+  String get talkTapToSpeak => 'タップして話す';
+
+  @override
+  String get talkThinking => '考えています…';
+
+  @override
+  String get talkTitle => '会話モード';
+
+  @override
+  String get talkYesWords => 'はい,うん,ええ,オッケー,ok,お願い,確定,それで';
+
+  @override
+  String get talkNoWords => 'いいえ,いや,キャンセル,スキップ,今はいい';
+
+  @override
+  String get talkStopWords => 'ストップ,止めて,以上,さようなら,バイバイ,会話モード終了';
 }

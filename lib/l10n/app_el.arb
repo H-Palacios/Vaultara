@@ -3504,5 +3504,267 @@
   "assistantForgetWordsDone": "Οι λέξεις ξεχάστηκαν",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Φέρτε: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Ραντεβού ανανέωσης",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: το ραντεβού σας είναι στις {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: το ραντεβού σας είναι αύριο.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Ετοιμάζει το πλάνο ανανέωσης",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Ελέγχει επίσημες πηγές",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Φέρτε",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Θα λάβετε υπενθύμιση το βράδυ πριν, και δύο ώρες πριν αν έχει οριστεί ώρα.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Αφαίρεση ραντεβού",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Το ραντεβού αποθηκεύτηκε",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Πηγαίνετε στο ραντεβού",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Ραντεβού",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Πότε",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Πού",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Ρωτήστε το Vaultara για το επόμενο βήμα",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Ποιο είναι το επόμενο βήμα για την ανανέωση του {name};",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Πώς ανανεώνω το {name}; Φτιάξε μου πλάνο ανανέωσης με τα επίσημα βήματα.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Κλείνετε ραντεβού στον επίσημο ιστότοπο. Το Vaultara δεν κλείνει ποτέ για εσάς.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Κλείστε στον επίσημο ιστότοπο",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Κράτηση",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Χώρα",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Τέλος",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Βρες τα βήματα για τη χώρα μου",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Ο σύνδεσμος δεν άνοιξε.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Αυτή η εγγραφή δεν έχει ακόμη πλάνο ανανέωσης.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Άνοιγμα επίσημης σελίδας",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Τα βήματα γίνονται η λίστα ανανέωσης αυτής της εγγραφής, με τους επίσημους συνδέσμους.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Το πλάνο ανανέωσης αποθηκεύτηκε",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Το πλάνο ανανέωσής σας",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Χρόνος διεκπεραίωσης",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Το Ask Vaultara βρίσκει τα πραγματικά βήματα για τη χώρα σας σε επίσημους ιστότοπους, με το τέλος, τη διάρκεια και πού κλείνετε ραντεβού.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Βοηθός ανανέωσης",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Οι κανόνες και τα τέλη μπορεί να αλλάξουν. Ελέγξτε την επίσημη σελίδα πριν πληρώσετε.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Πηγές",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Σήμανση βήματος ως ολοκληρωμένου",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Βήμα {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Σήμανση βήματος ως μη ολοκληρωμένου",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 βήμα} other{{count} βήματα}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Τι έρχεται για μένα;",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Αντίο.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Πείτε ναι για επιβεβαίωση ή όχι για παράλειψη.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Έγινε.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Τέλος",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Ακούει…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Το τηλέφωνό σας δεν έχει φωνή για αυτή τη γλώσσα, οπότε οι απαντήσεις εμφανίζονται αλλά δεν διαβάζονται.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Δεν ολοκληρώθηκε. Δείτε την κάρτα στην οθόνη.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Σας ακούω.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Μίλα με το Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Εντάξει, παραλείφθηκε.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Μιλάει. Πατήστε για διακοπή",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Πατήστε για να μιλήσετε",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Σκέφτεται…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Λειτουργία ομιλίας",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ναι,ναι ναι,βεβαίως,οκ,εντάξει,επιβεβαίωσε,κάν'το,προχώρα",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "όχι,οχι,άκυρο,παράλειψε,όχι τώρα",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "σταμάτα,στοπ,αυτά,αντίο,γεια,τέλος ομιλίας",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

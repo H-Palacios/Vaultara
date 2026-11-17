@@ -9080,4 +9080,191 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Đã quên các từ đã học';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Mang theo: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Lịch hẹn gia hạn';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: lịch hẹn của bạn lúc $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: lịch hẹn của bạn là ngày mai.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Đang lập kế hoạch gia hạn';
+
+  @override
+  String get assistantStepWeb => 'Đang kiểm tra nguồn chính thức';
+
+  @override
+  String get coachAppointmentBring => 'Mang theo';
+
+  @override
+  String get coachAppointmentNote => 'Bạn sẽ được nhắc vào tối hôm trước, và hai giờ trước nếu đã đặt giờ.';
+
+  @override
+  String get coachAppointmentRemove => 'Xóa lịch hẹn';
+
+  @override
+  String get coachAppointmentSaved => 'Đã lưu lịch hẹn';
+
+  @override
+  String get coachAppointmentStep => 'Đến buổi hẹn';
+
+  @override
+  String get coachAppointmentTitle => 'Lịch hẹn';
+
+  @override
+  String get coachAppointmentWhen => 'Khi nào';
+
+  @override
+  String get coachAppointmentWhere => 'Ở đâu';
+
+  @override
+  String get coachAskNext => 'Hỏi Vaultara bước tiếp theo';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Bước tiếp theo để gia hạn $name của tôi là gì?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Tôi gia hạn $name như thế nào? Hãy lập kế hoạch gia hạn với các bước chính thức.';
+  }
+
+  @override
+  String get coachBookNote => 'Bạn đặt lịch trên trang chính thức. Vaultara không bao giờ đặt thay bạn.';
+
+  @override
+  String get coachBookOnSite => 'Đặt lịch trên trang chính thức';
+
+  @override
+  String get coachBookingLabel => 'Đặt lịch';
+
+  @override
+  String get coachCountryLabel => 'Quốc gia';
+
+  @override
+  String get coachFeeLabel => 'Lệ phí';
+
+  @override
+  String get coachGetSteps => 'Xem các bước cho quốc gia của tôi';
+
+  @override
+  String get coachLinkFailed => 'Không mở được liên kết.';
+
+  @override
+  String get coachNoPlan => 'Hồ sơ này chưa có kế hoạch gia hạn.';
+
+  @override
+  String get coachOpenLink => 'Mở trang chính thức';
+
+  @override
+  String get coachPlanNote => 'Các bước trở thành danh sách gia hạn của hồ sơ này, kèm liên kết chính thức.';
+
+  @override
+  String get coachPlanSaved => 'Đã lưu kế hoạch gia hạn';
+
+  @override
+  String get coachPlanTitle => 'Kế hoạch gia hạn của bạn';
+
+  @override
+  String get coachProcessingLabel => 'Thời gian xử lý';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara tìm các bước thực tế cho quốc gia của bạn trên trang chính thức, kèm lệ phí, thời gian và nơi đặt lịch.';
+
+  @override
+  String get coachPromoTitle => 'Trợ lý gia hạn';
+
+  @override
+  String get coachRulesChange => 'Quy định và lệ phí có thể thay đổi. Hãy kiểm tra trang chính thức trước khi thanh toán.';
+
+  @override
+  String get coachSourcesLabel => 'Nguồn';
+
+  @override
+  String get coachStepDoneTitle => 'Đánh dấu bước đã xong';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Bước $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Đánh dấu bước chưa xong';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bước',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Tôi sắp có những gì?';
+
+  @override
+  String get talkBye => 'Tạm biệt.';
+
+  @override
+  String get talkConfirmAsk => 'Nói có để xác nhận, hoặc không để bỏ qua.';
+
+  @override
+  String get talkDone => 'Xong.';
+
+  @override
+  String get talkEnd => 'Kết thúc';
+
+  @override
+  String get talkListening => 'Đang nghe…';
+
+  @override
+  String get talkNoVoice => 'Điện thoại không có giọng đọc cho ngôn ngữ này, nên câu trả lời được hiển thị nhưng không đọc.';
+
+  @override
+  String get talkNotDone => 'Không thực hiện được. Hãy xem thẻ trên màn hình.';
+
+  @override
+  String get talkReady => 'Tôi đang nghe.';
+
+  @override
+  String get talkShortcut => 'Nói chuyện với Vaultara';
+
+  @override
+  String get talkSkipped => 'Được, đã bỏ qua.';
+
+  @override
+  String get talkSpeaking => 'Đang nói. Chạm để ngắt';
+
+  @override
+  String get talkTapToSpeak => 'Chạm để nói';
+
+  @override
+  String get talkThinking => 'Đang suy nghĩ…';
+
+  @override
+  String get talkTitle => 'Chế độ trò chuyện';
+
+  @override
+  String get talkYesWords => 'có,vâng,ừ,được,ok,xác nhận,làm đi,tiếp tục';
+
+  @override
+  String get talkNoWords => 'không,thôi,hủy,bỏ qua,không phải bây giờ';
+
+  @override
+  String get talkStopWords => 'dừng,đủ rồi,vậy thôi,tạm biệt,bai,kết thúc trò chuyện';
 }

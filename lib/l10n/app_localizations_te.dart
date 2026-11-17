@@ -9142,4 +9142,192 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'నేర్చుకున్న పదాలు మరచిపోయాం';
+
+  @override
+  String appointmentBring(String items) {
+    return 'తీసుకురండి: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'పునరుద్ధరణ అపాయింట్‌మెంట్';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: మీ అపాయింట్‌మెంట్ $timeకి.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: మీ అపాయింట్‌మెంట్ రేపు.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'మీ పునరుద్ధరణ ప్లాన్ సిద్ధమవుతోంది';
+
+  @override
+  String get assistantStepWeb => 'అధికారిక మూలాలను తనిఖీ చేస్తోంది';
+
+  @override
+  String get coachAppointmentBring => 'తీసుకురండి';
+
+  @override
+  String get coachAppointmentNote => 'ముందు రోజు సాయంత్రం, సమయం సెట్ చేస్తే రెండు గంటల ముందు కూడా రిమైండర్ వస్తుంది.';
+
+  @override
+  String get coachAppointmentRemove => 'అపాయింట్‌మెంట్ తీసివేయి';
+
+  @override
+  String get coachAppointmentSaved => 'అపాయింట్‌మెంట్ సేవ్ అయింది';
+
+  @override
+  String get coachAppointmentStep => 'అపాయింట్‌మెంట్‌కు వెళ్లండి';
+
+  @override
+  String get coachAppointmentTitle => 'అపాయింట్‌మెంట్';
+
+  @override
+  String get coachAppointmentWhen => 'ఎప్పుడు';
+
+  @override
+  String get coachAppointmentWhere => 'ఎక్కడ';
+
+  @override
+  String get coachAskNext => 'తదుపరి దశను Vaultaraని అడగండి';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'నా $name పునరుద్ధరించడానికి తదుపరి దశ ఏమిటి?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'నా $nameని ఎలా పునరుద్ధరించాలి? అధికారిక దశలతో పునరుద్ధరణ ప్లాన్ చేయండి.';
+  }
+
+  @override
+  String get coachBookNote => 'బుకింగ్ అధికారిక సైట్‌లో జరుగుతుంది. Vaultara ఎప్పుడూ మీ తరఫున బుక్ చేయదు.';
+
+  @override
+  String get coachBookOnSite => 'అధికారిక సైట్‌లో బుక్ చేయండి';
+
+  @override
+  String get coachBookingLabel => 'బుకింగ్';
+
+  @override
+  String get coachCountryLabel => 'దేశం';
+
+  @override
+  String get coachFeeLabel => 'రుసుము';
+
+  @override
+  String get coachGetSteps => 'నా దేశానికి దశలు పొందండి';
+
+  @override
+  String get coachLinkFailed => 'లింక్ తెరవలేకపోయాం.';
+
+  @override
+  String get coachNoPlan => 'ఈ రికార్డ్‌కు ఇంకా పునరుద్ధరణ ప్లాన్ లేదు.';
+
+  @override
+  String get coachOpenLink => 'అధికారిక పేజీ తెరవండి';
+
+  @override
+  String get coachPlanNote => 'దశలు అధికారిక లింక్‌లతో ఈ రికార్డ్ పునరుద్ధరణ జాబితాగా మారతాయి.';
+
+  @override
+  String get coachPlanSaved => 'పునరుద్ధరణ ప్లాన్ సేవ్ అయింది';
+
+  @override
+  String get coachPlanTitle => 'మీ పునరుద్ధరణ ప్లాన్';
+
+  @override
+  String get coachProcessingLabel => 'ప్రాసెసింగ్ సమయం';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara అధికారిక సైట్లలో మీ దేశపు నిజమైన దశలను కనుగొంటుంది, రుసుము, సమయం, బుక్ చేయాల్సిన చోటుతో సహా.';
+
+  @override
+  String get coachPromoTitle => 'పునరుద్ధరణ కోచ్';
+
+  @override
+  String get coachRulesChange => 'నియమాలు, రుసుములు మారవచ్చు. చెల్లించే ముందు అధికారిక పేజీ చూడండి.';
+
+  @override
+  String get coachSourcesLabel => 'మూలాలు';
+
+  @override
+  String get coachStepDoneTitle => 'దశను పూర్తయినట్లు గుర్తించు';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'దశ $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'దశను పూర్తికానట్లు గుర్తించు';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count దశలు',
+      one: '1 దశ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'నాకు ముందు ఏముంది?';
+
+  @override
+  String get talkBye => 'వీడ్కోలు.';
+
+  @override
+  String get talkConfirmAsk => 'నిర్ధారించడానికి అవును, దాటవేయడానికి కాదు అని చెప్పండి.';
+
+  @override
+  String get talkDone => 'పూర్తయింది.';
+
+  @override
+  String get talkEnd => 'ముగించు';
+
+  @override
+  String get talkListening => 'వింటోంది…';
+
+  @override
+  String get talkNoVoice => 'మీ ఫోన్‌లో ఈ భాషకు వాయిస్ లేదు, కాబట్టి సమాధానాలు కనిపిస్తాయి కానీ చదవబడవు.';
+
+  @override
+  String get talkNotDone => 'అది జరగలేదు. స్క్రీన్‌పై కార్డ్ చూడండి.';
+
+  @override
+  String get talkReady => 'నేను వింటున్నాను.';
+
+  @override
+  String get talkShortcut => 'Vaultaraతో మాట్లాడండి';
+
+  @override
+  String get talkSkipped => 'సరే, దాటవేయబడింది.';
+
+  @override
+  String get talkSpeaking => 'మాట్లాడుతోంది. ఆపడానికి ట్యాప్ చేయండి';
+
+  @override
+  String get talkTapToSpeak => 'మాట్లాడటానికి ట్యాప్ చేయండి';
+
+  @override
+  String get talkThinking => 'ఆలోచిస్తోంది…';
+
+  @override
+  String get talkTitle => 'సంభాషణ మోడ్';
+
+  @override
+  String get talkYesWords => 'అవును,ఆ,తప్పకుండా,సరే,ఓకే,నిర్ధారించు,చేయి,కొనసాగించు';
+
+  @override
+  String get talkNoWords => 'కాదు,వద్దు,రద్దు చేయి,దాటవేయి,ఇప్పుడు కాదు';
+
+  @override
+  String get talkStopWords => 'ఆపు,చాలు,అంతే,వీడ్కోలు,బై,సంభాషణ మోడ్ ముగించు';
 }

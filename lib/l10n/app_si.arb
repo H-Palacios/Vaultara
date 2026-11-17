@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "ඉගෙනගත් වචන අමතක කළා",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "ගෙනෙන්න: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "අලුත් කිරීමේ හමුව",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: ඔබේ හමුව {time}ට.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: ඔබේ හමුව හෙට.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "ඔබේ අලුත් කිරීමේ සැලැස්ම සකසමින්",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "නිල මූලාශ්‍ර පරීක්ෂා කරමින්",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "ගෙනෙන්න",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "පෙර දින සවස, වේලාව සකසා ඇත්නම් පැය දෙකකට පෙරත් සිහිකැඳවීමක් ලැබේ.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "හමුව ඉවත් කරන්න",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "හමුව සුරැකිණි",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "හමුවට යන්න",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "හමුව",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "කවදාද",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "කොහේද",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "ඊළඟ පියවර Vaultara ගෙන් අසන්න",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "මගේ {name} අලුත් කිරීමේ ඊළඟ පියවර කුමක්ද?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "මගේ {name} අලුත් කරන්නේ කෙසේද? නිල පියවර සමඟ අලුත් කිරීමේ සැලැස්මක් සාදන්න.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "වෙන් කිරීම නිල අඩවියේ සිදු වේ. Vaultara කිසිදා ඔබ වෙනුවෙන් වෙන් නොකරයි.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "නිල අඩවියේ වෙන් කරන්න",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "වෙන් කිරීම",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "රට",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "ගාස්තුව",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "මගේ රටේ පියවර ලබා ගන්න",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "සබැඳිය විවෘත කළ නොහැකි විය.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "මෙම වාර්තාවට තවම අලුත් කිරීමේ සැලැස්මක් නැත.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "නිල පිටුව විවෘත කරන්න",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "පියවර නිල සබැඳි සමඟ මෙම වාර්තාවේ අලුත් කිරීමේ ලැයිස්තුව වේ.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "අලුත් කිරීමේ සැලැස්ම සුරැකිණි",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "ඔබේ අලුත් කිරීමේ සැලැස්ම",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "සැකසුම් කාලය",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara නිල අඩවිවලින් ඔබේ රටේ සැබෑ පියවර සොයයි, ගාස්තුව, කාලය සහ වෙන් කළ යුතු තැන සමඟ.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "අලුත් කිරීමේ උපදේශක",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "නීති සහ ගාස්තු වෙනස් විය හැක. ගෙවීමට පෙර නිල පිටුව පරීක්ෂා කරන්න.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "මූලාශ්‍ර",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "පියවර සම්පූර්ණ ලෙස සලකුණු කරන්න",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "පියවර {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "පියවර අසම්පූර්ණ ලෙස සලකුණු කරන්න",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{පියවර 1} other{පියවර {count}}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "මට ඉදිරියේ ඇත්තේ මොනවාද?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "ආයුබෝවන්.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "තහවුරු කිරීමට ඔව්, මඟ හැරීමට නැහැ කියන්න.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "හරි.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "අවසන්",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "සවන් දෙමින්…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "ඔබේ දුරකථනයේ මෙම භාෂාවට හඬක් නැත, එබැවින් පිළිතුරු පෙන්වයි නමුත් කියවන්නේ නැත.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "එය සිදු නොවීය. තිරයේ කාඩ්පත බලන්න.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "මම සවන් දෙනවා.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Vaultara සමඟ කතා කරන්න",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "හරි, මඟ හැරියා.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "කතා කරමින්. බාධා කිරීමට තට්ටු කරන්න",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "කතා කිරීමට තට්ටු කරන්න",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "සිතමින්…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "කතා ප්‍රකාරය",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ඔව්,හා,හරි,ඇත්තෙන්ම,ඕකේ,තහවුරු කරන්න,කරන්න",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "නැහැ,නෑ,අවලංගු කරන්න,මඟ හරින්න,දැන් නෑ",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "නවත්වන්න,ඇති,එච්චරයි,ආයුබෝවන්,බායි,කතා ප්‍රකාරය අවසන් කරන්න",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

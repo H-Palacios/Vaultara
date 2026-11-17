@@ -9142,4 +9142,192 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Maneno yaliyojifunzwa yamesahauliwa';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Leta: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Miadi ya kuhuisha';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: miadi yako ni saa $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: miadi yako ni kesho.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Inaandaa mpango wako wa kuhuisha';
+
+  @override
+  String get assistantStepWeb => 'Inakagua vyanzo rasmi';
+
+  @override
+  String get coachAppointmentBring => 'Leta';
+
+  @override
+  String get coachAppointmentNote => 'Utapata kikumbusho jioni iliyotangulia, na saa mbili kabla ikiwa muda umewekwa.';
+
+  @override
+  String get coachAppointmentRemove => 'Ondoa miadi';
+
+  @override
+  String get coachAppointmentSaved => 'Miadi imehifadhiwa';
+
+  @override
+  String get coachAppointmentStep => 'Nenda kwenye miadi';
+
+  @override
+  String get coachAppointmentTitle => 'Miadi';
+
+  @override
+  String get coachAppointmentWhen => 'Lini';
+
+  @override
+  String get coachAppointmentWhere => 'Wapi';
+
+  @override
+  String get coachAskNext => 'Uliza Vaultara hatua inayofuata';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Hatua inayofuata ya kuhuisha $name yangu ni ipi?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Nitahuishaje $name yangu? Nitengenezee mpango wa kuhuisha wenye hatua rasmi.';
+  }
+
+  @override
+  String get coachBookNote => 'Unaweka miadi kwenye tovuti rasmi. Vaultara haiwekei miadi kwa niaba yako kamwe.';
+
+  @override
+  String get coachBookOnSite => 'Weka miadi kwenye tovuti rasmi';
+
+  @override
+  String get coachBookingLabel => 'Kuweka miadi';
+
+  @override
+  String get coachCountryLabel => 'Nchi';
+
+  @override
+  String get coachFeeLabel => 'Ada';
+
+  @override
+  String get coachGetSteps => 'Pata hatua za nchi yangu';
+
+  @override
+  String get coachLinkFailed => 'Kiungo hakikuweza kufunguliwa.';
+
+  @override
+  String get coachNoPlan => 'Rekodi hii bado haina mpango wa kuhuisha.';
+
+  @override
+  String get coachOpenLink => 'Fungua ukurasa rasmi';
+
+  @override
+  String get coachPlanNote => 'Hatua zinakuwa orodha ya kuhuisha ya rekodi hii, pamoja na viungo rasmi.';
+
+  @override
+  String get coachPlanSaved => 'Mpango wa kuhuisha umehifadhiwa';
+
+  @override
+  String get coachPlanTitle => 'Mpango wako wa kuhuisha';
+
+  @override
+  String get coachProcessingLabel => 'Muda wa kushughulikia';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara inapata hatua halisi za nchi yako kwenye tovuti rasmi, pamoja na ada, muda na mahali pa kuweka miadi.';
+
+  @override
+  String get coachPromoTitle => 'Kocha wa kuhuisha';
+
+  @override
+  String get coachRulesChange => 'Sheria na ada zinaweza kubadilika. Kagua ukurasa rasmi kabla ya kulipa.';
+
+  @override
+  String get coachSourcesLabel => 'Vyanzo';
+
+  @override
+  String get coachStepDoneTitle => 'Weka alama kuwa hatua imekamilika';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Hatua ya $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Weka alama kuwa hatua haijakamilika';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'hatua $count',
+      one: 'hatua 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Nini kinanijia?';
+
+  @override
+  String get talkBye => 'Kwaheri.';
+
+  @override
+  String get talkConfirmAsk => 'Sema ndiyo kuthibitisha, au hapana kuruka.';
+
+  @override
+  String get talkDone => 'Imekamilika.';
+
+  @override
+  String get talkEnd => 'Maliza';
+
+  @override
+  String get talkListening => 'Inasikiliza…';
+
+  @override
+  String get talkNoVoice => 'Simu yako haina sauti ya lugha hii, kwa hivyo majibu yanaonyeshwa lakini hayasomwi.';
+
+  @override
+  String get talkNotDone => 'Haikufanikiwa. Angalia kadi kwenye skrini.';
+
+  @override
+  String get talkReady => 'Ninasikiliza.';
+
+  @override
+  String get talkShortcut => 'Ongea na Vaultara';
+
+  @override
+  String get talkSkipped => 'Sawa, imerukwa.';
+
+  @override
+  String get talkSpeaking => 'Inaongea. Gusa ili kukatiza';
+
+  @override
+  String get talkTapToSpeak => 'Gusa ili kuongea';
+
+  @override
+  String get talkThinking => 'Inafikiri…';
+
+  @override
+  String get talkTitle => 'Hali ya mazungumzo';
+
+  @override
+  String get talkYesWords => 'ndiyo,ndio,sawa,hakika,ok,thibitisha,fanya,endelea';
+
+  @override
+  String get talkNoWords => 'hapana,la,ghairi,ruka,si sasa';
+
+  @override
+  String get talkStopWords => 'simama,acha,inatosha,kwaheri,bai,maliza mazungumzo';
 }

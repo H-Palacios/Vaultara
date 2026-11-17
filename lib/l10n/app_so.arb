@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "Erayada la bartay waa la illoobay",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Keen: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Ballanta cusboonaysiinta",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: ballantaadu waa {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: ballantaadu waa berri.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Waxaa la diyaarinayaa qorshahaaga cusboonaysiinta",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Waxaa la hubinayaa ilaha rasmiga ah",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Keen",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Xusuusin ayaad helaysaa fiidka ka hor, iyo laba saacadood ka hor haddii waqtiga la dejiyay.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Ka saar ballanta",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Ballanta waa la keydiyay",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Tag ballanta",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Ballan",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Goorma",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Xaggee",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Weydii Vaultara tallaabada xigta",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Waa maxay tallaabada xigta ee lagu cusboonaysiinayo {name}-kayga?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Sideen u cusboonaysiiyaa {name}-kayga? Ii samee qorshe cusboonaysiin oo leh tallaabooyinka rasmiga ah.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Ballanta waxaad ku qabsataa bogga rasmiga ah. Vaultara weligeed kuma qabato adiga beddelkaaga.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Ku qabso bogga rasmiga ah",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Ballan qabasho",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Waddan",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Khidmad",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Hel tallaabooyinka waddankayga",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Xiriirka lama furi karin.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Diiwaankan weli ma laha qorshe cusboonaysiin.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Fur bogga rasmiga ah",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Tallaabooyinku waxay noqonayaan liiska cusboonaysiinta diiwaankan, oo leh xiriirrada rasmiga ah.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Qorshaha cusboonaysiinta waa la keydiyay",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Qorshahaaga cusboonaysiinta",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Waqtiga habaynta",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara wuxuu ka helaa tallaabooyinka dhabta ah ee waddankaaga bogagga rasmiga ah, oo leh khidmadda, muddada iyo halka lagu qabsado.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Tababaraha cusboonaysiinta",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Xeerarka iyo khidmadaha way isbeddeli karaan. Hubi bogga rasmiga ah ka hor intaadan bixin.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Ilaha",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "U calaamadee tallaabada mid la dhammeeyay",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Tallaabada {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "U calaamadee tallaabada mid aan la dhammayn",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 tallaabo} other{{count} tallaabo}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Maxaa ii soo socda?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Nabadgelyo.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Dheh haa si aad u xaqiijiso, ama maya si aad uga boodo.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Waa la dhammeeyay.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Dhammee",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Dhegeysanaya…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Taleefankaagu ma laha cod luqaddan, sidaas darteed jawaabaha waa la muujiyaa laakiin lama akhriyo.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Ma dhicin. Hubi kaarka shaashadda.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Waan dhegeysanayaa.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "La hadal Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Hagaag, waa laga booday.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Hadlaya. Taabo si aad u joojiso",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Taabo si aad u hadasho",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Fikiraya…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Habka wada hadalka",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "haa,haye,dabcan,hagaag,ok,xaqiiji,samee,sii wad",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "maya,may,jooji,ka bood,hadda maya",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "jooji,waa intaas,nabadgelyo,bay,dhammee habka wada hadalka",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

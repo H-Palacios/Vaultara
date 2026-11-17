@@ -9142,4 +9142,192 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Tanult szavak elfelejtve';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Hozza magával: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Megújítási időpont';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: az időpontja $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: az időpontja holnap van.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Készül a megújítási terv';
+
+  @override
+  String get assistantStepWeb => 'Hivatalos források ellenőrzése';
+
+  @override
+  String get coachAppointmentBring => 'Hozza magával';
+
+  @override
+  String get coachAppointmentNote => 'Emlékeztetőt kap előző este, és két órával előtte, ha meg van adva az idő.';
+
+  @override
+  String get coachAppointmentRemove => 'Időpont törlése';
+
+  @override
+  String get coachAppointmentSaved => 'Időpont mentve';
+
+  @override
+  String get coachAppointmentStep => 'Menjen el az időpontra';
+
+  @override
+  String get coachAppointmentTitle => 'Időpont';
+
+  @override
+  String get coachAppointmentWhen => 'Mikor';
+
+  @override
+  String get coachAppointmentWhere => 'Hol';
+
+  @override
+  String get coachAskNext => 'Kérdezze meg a Vaultarát a következő lépésről';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Mi a következő lépés a(z) $name megújításához?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Hogyan újíthatom meg a(z) $name-t? Készíts megújítási tervet a hivatalos lépésekkel.';
+  }
+
+  @override
+  String get coachBookNote => 'Az időpontot a hivatalos oldalon foglalja le. A Vaultara soha nem foglal Ön helyett.';
+
+  @override
+  String get coachBookOnSite => 'Foglalás a hivatalos oldalon';
+
+  @override
+  String get coachBookingLabel => 'Foglalás';
+
+  @override
+  String get coachCountryLabel => 'Ország';
+
+  @override
+  String get coachFeeLabel => 'Díj';
+
+  @override
+  String get coachGetSteps => 'Az országom lépései';
+
+  @override
+  String get coachLinkFailed => 'A linket nem sikerült megnyitni.';
+
+  @override
+  String get coachNoPlan => 'Ehhez a bejegyzéshez még nincs megújítási terv.';
+
+  @override
+  String get coachOpenLink => 'Hivatalos oldal megnyitása';
+
+  @override
+  String get coachPlanNote => 'A lépések a bejegyzés megújítási listájává válnak, a hivatalos linkekkel.';
+
+  @override
+  String get coachPlanSaved => 'Megújítási terv mentve';
+
+  @override
+  String get coachPlanTitle => 'Az Ön megújítási terve';
+
+  @override
+  String get coachProcessingLabel => 'Ügyintézési idő';
+
+  @override
+  String get coachPromoBody => 'Az Ask Vaultara hivatalos oldalakon megkeresi az Ön országának valódi lépéseit, a díjjal, az időtartammal és a foglalás helyével.';
+
+  @override
+  String get coachPromoTitle => 'Megújítási segéd';
+
+  @override
+  String get coachRulesChange => 'A szabályok és díjak változhatnak. Fizetés előtt nézze meg a hivatalos oldalt.';
+
+  @override
+  String get coachSourcesLabel => 'Források';
+
+  @override
+  String get coachStepDoneTitle => 'Lépés megjelölése késznek';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number. lépés';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Lépés megjelölése nem késznek';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lépés',
+      one: '1 lépés',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Mi vár rám?';
+
+  @override
+  String get talkBye => 'Viszlát.';
+
+  @override
+  String get talkConfirmAsk => 'Mondja, hogy igen a megerősítéshez, vagy nem a kihagyáshoz.';
+
+  @override
+  String get talkDone => 'Kész.';
+
+  @override
+  String get talkEnd => 'Befejezés';
+
+  @override
+  String get talkListening => 'Figyel…';
+
+  @override
+  String get talkNoVoice => 'A telefonon nincs hang ehhez a nyelvhez, ezért a válaszok megjelennek, de nincsenek felolvasva.';
+
+  @override
+  String get talkNotDone => 'Ez nem sikerült. Nézze meg a kártyát a képernyőn.';
+
+  @override
+  String get talkReady => 'Figyelek.';
+
+  @override
+  String get talkShortcut => 'Beszélgetés a Vaultarával';
+
+  @override
+  String get talkSkipped => 'Rendben, kihagyva.';
+
+  @override
+  String get talkSpeaking => 'Beszél. Koppintson a megszakításhoz';
+
+  @override
+  String get talkTapToSpeak => 'Koppintson a beszédhez';
+
+  @override
+  String get talkThinking => 'Gondolkodik…';
+
+  @override
+  String get talkTitle => 'Beszélgetés mód';
+
+  @override
+  String get talkYesWords => 'igen,aha,persze,ok,oké,rendben,megerősít,csináld';
+
+  @override
+  String get talkNoWords => 'nem,mégse,mégsem,kihagy,most nem';
+
+  @override
+  String get talkStopWords => 'állj,elég,ennyi,viszlát,szia,beszélgetés vége';
 }

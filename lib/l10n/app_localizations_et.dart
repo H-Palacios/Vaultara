@@ -9147,4 +9147,192 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Õpitud sõnad unustatud';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Võta kaasa: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Uuendamise aeg';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: sinu aeg on kell $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: sinu aeg on homme.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Koostan uuendamise plaani';
+
+  @override
+  String get assistantStepWeb => 'Kontrollin ametlikke allikaid';
+
+  @override
+  String get coachAppointmentBring => 'Võta kaasa';
+
+  @override
+  String get coachAppointmentNote => 'Saad meeldetuletuse eelmisel õhtul ja kaks tundi enne, kui kellaaeg on määratud.';
+
+  @override
+  String get coachAppointmentRemove => 'Eemalda aeg';
+
+  @override
+  String get coachAppointmentSaved => 'Aeg salvestatud';
+
+  @override
+  String get coachAppointmentStep => 'Mine kohtumisele';
+
+  @override
+  String get coachAppointmentTitle => 'Aeg';
+
+  @override
+  String get coachAppointmentWhen => 'Millal';
+
+  @override
+  String get coachAppointmentWhere => 'Kus';
+
+  @override
+  String get coachAskNext => 'Küsi Vaultaralt järgmist sammu';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Mis on järgmine samm, et uuendada minu $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Kuidas uuendada minu $name? Koosta mulle ametlike sammudega uuendamise plaan.';
+  }
+
+  @override
+  String get coachBookNote => 'Aja broneerid ametlikul saidil. Vaultara ei broneeri kunagi sinu eest.';
+
+  @override
+  String get coachBookOnSite => 'Broneeri ametlikul saidil';
+
+  @override
+  String get coachBookingLabel => 'Broneerimine';
+
+  @override
+  String get coachCountryLabel => 'Riik';
+
+  @override
+  String get coachFeeLabel => 'Tasu';
+
+  @override
+  String get coachGetSteps => 'Leia sammud minu riigi jaoks';
+
+  @override
+  String get coachLinkFailed => 'Linki ei saanud avada.';
+
+  @override
+  String get coachNoPlan => 'Sellel kirjel pole veel uuendamise plaani.';
+
+  @override
+  String get coachOpenLink => 'Ava ametlik leht';
+
+  @override
+  String get coachPlanNote => 'Sammudest saab selle kirje uuendamise kontrollnimekiri koos ametlike linkidega.';
+
+  @override
+  String get coachPlanSaved => 'Uuendamise plaan salvestatud';
+
+  @override
+  String get coachPlanTitle => 'Sinu uuendamise plaan';
+
+  @override
+  String get coachProcessingLabel => 'Menetlusaeg';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara leiab ametlikelt saitidelt sinu riigi tegelikud sammud koos tasu, kestuse ja broneerimiskohaga.';
+
+  @override
+  String get coachPromoTitle => 'Uuendamise abiline';
+
+  @override
+  String get coachRulesChange => 'Reeglid ja tasud võivad muutuda. Kontrolli enne maksmist ametlikku lehte.';
+
+  @override
+  String get coachSourcesLabel => 'Allikad';
+
+  @override
+  String get coachStepDoneTitle => 'Märgi samm tehtuks';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Samm $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Märgi samm tegemata';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sammu',
+      one: '1 samm',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Mis mind ees ootab?';
+
+  @override
+  String get talkBye => 'Head aega.';
+
+  @override
+  String get talkConfirmAsk => 'Ütle jah kinnitamiseks või ei vahelejätmiseks.';
+
+  @override
+  String get talkDone => 'Valmis.';
+
+  @override
+  String get talkEnd => 'Lõpeta';
+
+  @override
+  String get talkListening => 'Kuulan…';
+
+  @override
+  String get talkNoVoice => 'Telefonil pole selle keele häält, seega vastused kuvatakse, kuid neid ei loeta ette.';
+
+  @override
+  String get talkNotDone => 'See ei õnnestunud. Vaata ekraanil olevat kaarti.';
+
+  @override
+  String get talkReady => 'Kuulan.';
+
+  @override
+  String get talkShortcut => 'Räägi Vaultaraga';
+
+  @override
+  String get talkSkipped => 'Olgu, jäeti vahele.';
+
+  @override
+  String get talkSpeaking => 'Räägib. Puuduta katkestamiseks';
+
+  @override
+  String get talkTapToSpeak => 'Puuduta rääkimiseks';
+
+  @override
+  String get talkThinking => 'Mõtleb…';
+
+  @override
+  String get talkTitle => 'Vestlusrežiim';
+
+  @override
+  String get talkYesWords => 'jah,jaa,muidugi,ok,olgu,kinnita,tee seda,jätka';
+
+  @override
+  String get talkNoWords => 'ei,ei taha,tühista,jäta vahele,mitte praegu';
+
+  @override
+  String get talkStopWords => 'stopp,aitab,see on kõik,head aega,tšau,lõpeta vestlus';
 }

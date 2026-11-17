@@ -9344,4 +9344,195 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Rinneadh dearmad ar na focail foghlamtha';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Tabhair leat: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Coinne athnuachana';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: tá do choinne ag $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: tá do choinne amárach.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Do phlean athnuachana á ullmhú';
+
+  @override
+  String get assistantStepWeb => 'Foinsí oifigiúla á seiceáil';
+
+  @override
+  String get coachAppointmentBring => 'Tabhair leat';
+
+  @override
+  String get coachAppointmentNote => 'Gheobhaidh tú meabhrúchán an tráthnóna roimhe, agus dhá uair an chloig roimhe má tá an t-am socraithe.';
+
+  @override
+  String get coachAppointmentRemove => 'Bain an choinne';
+
+  @override
+  String get coachAppointmentSaved => 'Coinne sábháilte';
+
+  @override
+  String get coachAppointmentStep => 'Téigh chuig an gcoinne';
+
+  @override
+  String get coachAppointmentTitle => 'Coinne';
+
+  @override
+  String get coachAppointmentWhen => 'Cathain';
+
+  @override
+  String get coachAppointmentWhere => 'Cá háit';
+
+  @override
+  String get coachAskNext => 'Fiafraigh de Vaultara an chéad chéim eile';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Cad é an chéad chéim eile chun mo $name a athnuachan?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Conas a athnuafaidh mé mo $name? Déan plean athnuachana dom leis na céimeanna oifigiúla.';
+  }
+
+  @override
+  String get coachBookNote => 'Cuireann tú an choinne in áirithe ar an suíomh oifigiúil. Ní dhéanann Vaultara é duit riamh.';
+
+  @override
+  String get coachBookOnSite => 'Cuir in áirithe ar an suíomh oifigiúil';
+
+  @override
+  String get coachBookingLabel => 'Áirithint';
+
+  @override
+  String get coachCountryLabel => 'Tír';
+
+  @override
+  String get coachFeeLabel => 'Táille';
+
+  @override
+  String get coachGetSteps => 'Faigh na céimeanna do mo thír';
+
+  @override
+  String get coachLinkFailed => 'Níorbh fhéidir an nasc a oscailt.';
+
+  @override
+  String get coachNoPlan => 'Níl plean athnuachana ag an taifead seo fós.';
+
+  @override
+  String get coachOpenLink => 'Oscail an leathanach oifigiúil';
+
+  @override
+  String get coachPlanNote => 'Éiríonn na céimeanna mar sheicliosta athnuachana an taifid seo, leis na naisc oifigiúla.';
+
+  @override
+  String get coachPlanSaved => 'Plean athnuachana sábháilte';
+
+  @override
+  String get coachPlanTitle => 'Do phlean athnuachana';
+
+  @override
+  String get coachProcessingLabel => 'Am próiseála';
+
+  @override
+  String get coachPromoBody => 'Aimsíonn Ask Vaultara na fíorchéimeanna do do thír ar shuímh oifigiúla, leis an táille, an fad ama agus cá háit le háirithint.';
+
+  @override
+  String get coachPromoTitle => 'Cóitseálaí athnuachana';
+
+  @override
+  String get coachRulesChange => 'Féadfaidh rialacha agus táillí athrú. Seiceáil an leathanach oifigiúil sula n-íocann tú.';
+
+  @override
+  String get coachSourcesLabel => 'Foinsí';
+
+  @override
+  String get coachStepDoneTitle => 'Marcáil an chéim mar déanta';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Céim $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Marcáil an chéim mar gan déanamh';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count céim',
+      many: '$count gcéim',
+      few: '$count chéim',
+      two: '2 chéim',
+      one: '1 chéim',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Cad atá romham?';
+
+  @override
+  String get talkBye => 'Slán.';
+
+  @override
+  String get talkConfirmAsk => 'Abair tá chun deimhniú, nó níl chun scipeáil.';
+
+  @override
+  String get talkDone => 'Déanta.';
+
+  @override
+  String get talkEnd => 'Críochnaigh';
+
+  @override
+  String get talkListening => 'Ag éisteacht…';
+
+  @override
+  String get talkNoVoice => 'Níl guth ag do ghuthán don teanga seo, mar sin taispeántar freagraí ach ní léitear iad.';
+
+  @override
+  String get talkNotDone => 'Níor éirigh leis. Seiceáil an cárta ar an scáileán.';
+
+  @override
+  String get talkReady => 'Táim ag éisteacht.';
+
+  @override
+  String get talkShortcut => 'Labhair le Vaultara';
+
+  @override
+  String get talkSkipped => 'Ceart go leor, scipeáilte.';
+
+  @override
+  String get talkSpeaking => 'Ag labhairt. Tapáil chun cur isteach';
+
+  @override
+  String get talkTapToSpeak => 'Tapáil chun labhairt';
+
+  @override
+  String get talkThinking => 'Ag smaoineamh…';
+
+  @override
+  String get talkTitle => 'Mód cainte';
+
+  @override
+  String get talkYesWords => 'tá,sea,cinnte,ceart go leor,ok,deimhnigh,déan é,ar aghaidh';
+
+  @override
+  String get talkNoWords => 'níl,ní hea,cealaigh,scipeáil,ní anois';
+
+  @override
+  String get talkStopWords => 'stop,sin é,sin a bhfuil,slán,slán leat,críochnaigh mód cainte';
 }

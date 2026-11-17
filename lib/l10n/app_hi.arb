@@ -3509,5 +3509,267 @@
   "assistantForgetWordsDone": "सीखे गए शब्द भुला दिए गए",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "साथ लाएँ: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "नवीनीकरण अपॉइंटमेंट",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: आपका अपॉइंटमेंट {time} बजे है।",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: आपका अपॉइंटमेंट कल है।",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "आपका नवीनीकरण प्लान बन रहा है",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "आधिकारिक स्रोत देखे जा रहे हैं",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "साथ लाएँ",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "आपको एक दिन पहले शाम को, और समय तय हो तो दो घंटे पहले भी रिमाइंडर मिलेगा।",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "अपॉइंटमेंट हटाएँ",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "अपॉइंटमेंट सेव हुआ",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "अपॉइंटमेंट पर जाएँ",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "अपॉइंटमेंट",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "कब",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "कहाँ",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "अगला कदम Vaultara से पूछें",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "मेरे {name} को नवीनीकृत करने का अगला कदम क्या है?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "मैं अपना {name} कैसे नवीनीकृत करूँ? आधिकारिक कदमों के साथ नवीनीकरण प्लान बनाइए।",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "बुकिंग आधिकारिक साइट पर होती है। Vaultara कभी आपकी ओर से बुक नहीं करता।",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "आधिकारिक साइट पर बुक करें",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "बुकिंग",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "देश",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "शुल्क",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "मेरे देश के कदम पाएँ",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "लिंक नहीं खुल सका।",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "इस रिकॉर्ड का अभी कोई नवीनीकरण प्लान नहीं है।",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "आधिकारिक पेज खोलें",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "कदम आधिकारिक लिंक के साथ इस रिकॉर्ड की नवीनीकरण चेकलिस्ट बन जाते हैं।",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "नवीनीकरण प्लान सेव हुआ",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "आपका नवीनीकरण प्लान",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "प्रक्रिया का समय",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara आधिकारिक साइटों पर आपके देश के असली कदम ढूँढता है, शुल्क, समय और बुकिंग की जगह के साथ।",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "नवीनीकरण कोच",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "नियम और शुल्क बदल सकते हैं। भुगतान से पहले आधिकारिक पेज देख लें।",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "स्रोत",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "कदम को पूरा चिह्नित करें",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "कदम {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "कदम को अधूरा चिह्नित करें",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 कदम} other{{count} कदम}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "मेरे लिए आगे क्या है?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "अलविदा।",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "पुष्टि के लिए हाँ, छोड़ने के लिए नहीं कहें।",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "हो गया।",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "समाप्त",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "सुन रहा है…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "आपके फ़ोन में इस भाषा की आवाज़ नहीं है, इसलिए जवाब दिखते हैं पर पढ़े नहीं जाते।",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "यह नहीं हुआ। स्क्रीन पर कार्ड देखें।",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "मैं सुन रहा हूँ।",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Vaultara से बात करें",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "ठीक है, छोड़ दिया।",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "बोल रहा है। रोकने के लिए टैप करें",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "बोलने के लिए टैप करें",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "सोच रहा है…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "बातचीत मोड",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "हाँ,हां,जी,ठीक है,ओके,पुष्टि करें,कर दो,आगे बढ़ो",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "नहीं,ना,रद्द करो,छोड़ो,अभी नहीं",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "रुको,बस,बस इतना ही,अलविदा,बाय,बातचीत मोड बंद करो",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

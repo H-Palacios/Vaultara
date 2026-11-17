@@ -3511,5 +3511,267 @@
   "assistantForgetWordsDone": "Սովորած բառերը մոռացված են",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Բերեք՝ {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Թարմացման այց",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}՝ ձեր այցը ժամը {time}-ին է։",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}՝ ձեր այցը վաղն է։",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Պատրաստվում է թարմացման պլանը",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Ստուգվում են պաշտոնական աղբյուրները",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Բերեք",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Հիշեցում կստանաք նախորդ երեկոյան, և երկու ժամ առաջ, եթե ժամը նշված է։",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Հեռացնել այցը",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Այցը պահպանվեց",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Գնացեք այցին",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Այց",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Երբ",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Որտեղ",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Հարցրեք Vaultara-ին հաջորդ քայլը",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Ո՞րն է {name}-ի թարմացման հաջորդ քայլը։",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Ինչպե՞ս թարմացնեմ {name}-ը։ Կազմիր ինձ համար թարմացման պլան՝ պաշտոնական քայլերով։",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Գրանցվում եք պաշտոնական կայքում։ Vaultara-ն երբեք ձեր փոխարեն չի գրանցում։",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Գրանցվել պաշտոնական կայքում",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Գրանցում",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Երկիր",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Վճար",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Ցույց տալ քայլերը իմ երկրի համար",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Հղումը չհաջողվեց բացել։",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Այս գրառումը դեռ թարմացման պլան չունի։",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Բացել պաշտոնական էջը",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Քայլերը դառնում են այս գրառման թարմացման ցուցակը՝ պաշտոնական հղումներով։",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Թարմացման պլանը պահպանվեց",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Ձեր թարմացման պլանը",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Մշակման ժամկետ",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara-ն պաշտոնական կայքերում գտնում է ձեր երկրի իրական քայլերը՝ վճարով, ժամկետով և գրանցման վայրով։",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Թարմացման օգնական",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Կանոններն ու վճարները կարող են փոխվել։ Վճարելուց առաջ ստուգեք պաշտոնական էջը։",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Աղբյուրներ",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Նշել քայլը որպես կատարված",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Քայլ {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Նշել քայլը որպես չկատարված",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 քայլ} other{{count} քայլ}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Ի՞նչ է սպասվում ինձ։",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Ցտեսություն։",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Ասեք այո՝ հաստատելու, կամ ոչ՝ բաց թողնելու համար։",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Պատրաստ է։",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Ավարտել",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Լսում է…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Ձեր հեռախոսը այս լեզվի ձայն չունի, ուստի պատասխանները ցուցադրվում են, բայց չեն կարդացվում։",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Չստացվեց։ Ստուգեք էկրանի քարտը։",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Լսում եմ։",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Խոսել Vaultara-ի հետ",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Լավ, բաց թողնվեց։",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Խոսում է։ Հպեք ընդհատելու համար",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Հպեք խոսելու համար",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Մտածում է…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Խոսակցության ռեժիմ",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "այո,հա,իհարկե,լավ,օքեյ,հաստատել,արա,շարունակիր",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "ոչ,չէ,չեղարկել,բաց թող,հիմա չէ",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "կանգ,վերջ,այսքանը,ցտեսություն,հաջող,ավարտել խոսակցությունը",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

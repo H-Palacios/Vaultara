@@ -9142,4 +9142,192 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'An manta kalmomin da aka koya';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Kawo: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Lokacin sabuntawa';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: lokacinka shi ne ƙarfe $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: lokacinka gobe ne.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Ana shirya tsarin sabuntawarka';
+
+  @override
+  String get assistantStepWeb => 'Ana duba majiyoyin hukuma';
+
+  @override
+  String get coachAppointmentBring => 'Kawo';
+
+  @override
+  String get coachAppointmentNote => 'Za ka sami tunatarwa da yammacin ranar da ta gabata, da sa\'o\'i biyu kafin idan an saita lokaci.';
+
+  @override
+  String get coachAppointmentRemove => 'Cire lokacin';
+
+  @override
+  String get coachAppointmentSaved => 'An adana lokacin';
+
+  @override
+  String get coachAppointmentStep => 'Je wurin lokacin';
+
+  @override
+  String get coachAppointmentTitle => 'Lokaci';
+
+  @override
+  String get coachAppointmentWhen => 'Yaushe';
+
+  @override
+  String get coachAppointmentWhere => 'A ina';
+
+  @override
+  String get coachAskNext => 'Tambayi Vaultara mataki na gaba';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Mene ne mataki na gaba don sabunta $name na?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Yaya zan sabunta $name na? Yi mini tsarin sabuntawa da matakan hukuma.';
+  }
+
+  @override
+  String get coachBookNote => 'Kana yin rajista a shafin hukuma. Vaultara ba ya taɓa yi maka rajista.';
+
+  @override
+  String get coachBookOnSite => 'Yi rajista a shafin hukuma';
+
+  @override
+  String get coachBookingLabel => 'Rajista';
+
+  @override
+  String get coachCountryLabel => 'Ƙasa';
+
+  @override
+  String get coachFeeLabel => 'Kuɗi';
+
+  @override
+  String get coachGetSteps => 'Samo matakan ƙasata';
+
+  @override
+  String get coachLinkFailed => 'Ba a iya buɗe hanyar haɗin ba.';
+
+  @override
+  String get coachNoPlan => 'Wannan bayanin bai da tsarin sabuntawa tukuna.';
+
+  @override
+  String get coachOpenLink => 'Buɗe shafin hukuma';
+
+  @override
+  String get coachPlanNote => 'Matakan za su zama jerin sabuntawar wannan bayanin, tare da hanyoyin haɗin hukuma.';
+
+  @override
+  String get coachPlanSaved => 'An adana tsarin sabuntawa';
+
+  @override
+  String get coachPlanTitle => 'Tsarin sabuntawarka';
+
+  @override
+  String get coachProcessingLabel => 'Lokacin aiki';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara yana nemo ainihin matakan ƙasarka a shafukan hukuma, tare da kuɗi, tsawon lokaci da inda za a yi rajista.';
+
+  @override
+  String get coachPromoTitle => 'Mai horar da sabuntawa';
+
+  @override
+  String get coachRulesChange => 'Dokoki da kuɗaɗe na iya canzawa. Duba shafin hukuma kafin ka biya.';
+
+  @override
+  String get coachSourcesLabel => 'Majiyoyi';
+
+  @override
+  String get coachStepDoneTitle => 'Yi alama an kammala mataki';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Mataki na $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Yi alama ba a kammala mataki ba';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'matakai $count',
+      one: 'mataki 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Me ke zuwa mini?';
+
+  @override
+  String get talkBye => 'Sai anjima.';
+
+  @override
+  String get talkConfirmAsk => 'Ka ce eh don tabbatarwa, ko a\'a don tsallakewa.';
+
+  @override
+  String get talkDone => 'An gama.';
+
+  @override
+  String get talkEnd => 'Ƙare';
+
+  @override
+  String get talkListening => 'Yana saurara…';
+
+  @override
+  String get talkNoVoice => 'Wayarka ba ta da murya don wannan harshen, don haka ana nuna amsoshi amma ba a karanta su.';
+
+  @override
+  String get talkNotDone => 'Bai yi nasara ba. Duba katin da ke kan allo.';
+
+  @override
+  String get talkReady => 'Ina saurara.';
+
+  @override
+  String get talkShortcut => 'Yi magana da Vaultara';
+
+  @override
+  String get talkSkipped => 'To, an tsallake.';
+
+  @override
+  String get talkSpeaking => 'Yana magana. Taɓa don katsewa';
+
+  @override
+  String get talkTapToSpeak => 'Taɓa don yin magana';
+
+  @override
+  String get talkThinking => 'Yana tunani…';
+
+  @override
+  String get talkTitle => 'Yanayin magana';
+
+  @override
+  String get talkYesWords => 'eh,i,to,tabbas,ok,tabbatar,yi,ci gaba';
+
+  @override
+  String get talkNoWords => 'a\'a,ba,soke,tsallake,ba yanzu ba';
+
+  @override
+  String get talkStopWords => 'tsaya,ya isa,shi ke nan,sai anjima,bye,ƙare yanayin magana';
 }

@@ -3515,5 +3515,267 @@
   "assistantForgetWordsDone": "Сурсан үгсийг мартлаа",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Авчрах: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Сунгалтын цаг",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: таны цаг {time}-д.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: таны цаг маргааш.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Сунгалтын төлөвлөгөө бэлдэж байна",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Албан ёсны эх сурвалж шалгаж байна",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Авчрах",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Өмнөх орой, цаг тохируулсан бол хоёр цагийн өмнө сануулга ирнэ.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Цагийг устгах",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Цаг хадгалагдлаа",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Цагтаа очих",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Цаг",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Хэзээ",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Хаана",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Дараагийн алхмыг Vaultara-аас асуух",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Миний {name}-г сунгах дараагийн алхам юу вэ?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "{name}-ээ яаж сунгах вэ? Албан ёсны алхмуудтай сунгалтын төлөвлөгөө гаргаж өгөөч.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Цагийг албан ёсны сайтаас захиална. Vaultara хэзээ ч таны өмнөөс захиалахгүй.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Албан ёсны сайтаас захиалах",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Захиалга",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Улс",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Хураамж",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Миний улсын алхмуудыг авах",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Холбоосыг нээж чадсангүй.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Энэ бүртгэлд одоогоор сунгалтын төлөвлөгөө алга.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Албан ёсны хуудсыг нээх",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Алхмууд албан ёсны холбоостойгоор энэ бүртгэлийн сунгалтын жагсаалт болно.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Сунгалтын төлөвлөгөө хадгалагдлаа",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Таны сунгалтын төлөвлөгөө",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Шийдвэрлэх хугацаа",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara албан ёсны сайтуудаас таны улсын жинхэнэ алхмуудыг хураамж, хугацаа, захиалах газрын хамт олно.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Сунгалтын туслах",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Дүрэм, хураамж өөрчлөгдөж болно. Төлөхөөс өмнө албан ёсны хуудсыг шалгаарай.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Эх сурвалж",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Алхмыг хийсэн гэж тэмдэглэх",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "{number}-р алхам",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Алхмыг хийгээгүй гэж тэмдэглэх",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 алхам} other{{count} алхам}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Надад юу хүлээж байна?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Баяртай.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Батлахын тулд тийм, алгасахын тулд үгүй гэж хэлнэ үү.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Боллоо.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Дуусгах",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Сонсож байна…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Таны утсанд энэ хэлний дуу хоолой байхгүй тул хариулт харагдах ч уншигдахгүй.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Болсонгүй. Дэлгэц дээрх картыг шалгана уу.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Би сонсож байна.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Vaultara-тай ярих",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "За, алгаслаа.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Ярьж байна. Таслахын тулд товшино уу",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Ярихын тулд товшино уу",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Бодож байна…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Ярианы горим",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "тийм,тиймээ,за,мэдээж,ок,батлах,хий,үргэлжлүүл",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "үгүй,болохгүй,цуцлах,алгас,одоо биш",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "зогс,болно,ингээд,баяртай,бай,ярианы горимыг дуусга",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

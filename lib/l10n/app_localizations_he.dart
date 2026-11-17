@@ -9203,4 +9203,193 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'המילים שנלמדו נשכחו';
+
+  @override
+  String appointmentBring(String items) {
+    return 'יש להביא: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'תור לחידוש';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: התור שלך בשעה $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: התור שלך מחר.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'מכין את תוכנית החידוש';
+
+  @override
+  String get assistantStepWeb => 'בודק מקורות רשמיים';
+
+  @override
+  String get coachAppointmentBring => 'יש להביא';
+
+  @override
+  String get coachAppointmentNote => 'תקבלו תזכורת בערב שלפני, ושעתיים לפני אם נקבעה שעה.';
+
+  @override
+  String get coachAppointmentRemove => 'הסרת התור';
+
+  @override
+  String get coachAppointmentSaved => 'התור נשמר';
+
+  @override
+  String get coachAppointmentStep => 'לכו לתור';
+
+  @override
+  String get coachAppointmentTitle => 'תור';
+
+  @override
+  String get coachAppointmentWhen => 'מתי';
+
+  @override
+  String get coachAppointmentWhere => 'איפה';
+
+  @override
+  String get coachAskNext => 'לשאול את Vaultara מה השלב הבא';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'מה השלב הבא בחידוש $name שלי?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'איך מחדשים את $name שלי? הכן לי תוכנית חידוש עם השלבים הרשמיים.';
+  }
+
+  @override
+  String get coachBookNote => 'קובעים את התור באתר הרשמי. Vaultara לעולם לא קובע תור בשבילך.';
+
+  @override
+  String get coachBookOnSite => 'קביעת תור באתר הרשמי';
+
+  @override
+  String get coachBookingLabel => 'קביעת תור';
+
+  @override
+  String get coachCountryLabel => 'מדינה';
+
+  @override
+  String get coachFeeLabel => 'אגרה';
+
+  @override
+  String get coachGetSteps => 'הצג את השלבים למדינה שלי';
+
+  @override
+  String get coachLinkFailed => 'לא ניתן לפתוח את הקישור.';
+
+  @override
+  String get coachNoPlan => 'לרשומה הזו אין עדיין תוכנית חידוש.';
+
+  @override
+  String get coachOpenLink => 'פתיחת הדף הרשמי';
+
+  @override
+  String get coachPlanNote => 'השלבים הופכים לרשימת החידוש של הרשומה, עם הקישורים הרשמיים.';
+
+  @override
+  String get coachPlanSaved => 'תוכנית החידוש נשמרה';
+
+  @override
+  String get coachPlanTitle => 'תוכנית החידוש שלך';
+
+  @override
+  String get coachProcessingLabel => 'זמן טיפול';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara מוצא את השלבים האמיתיים למדינה שלך באתרים רשמיים, עם האגרה, משך הזמן ואיפה קובעים תור.';
+
+  @override
+  String get coachPromoTitle => 'מאמן חידושים';
+
+  @override
+  String get coachRulesChange => 'כללים ואגרות עשויים להשתנות. בדקו את הדף הרשמי לפני התשלום.';
+
+  @override
+  String get coachSourcesLabel => 'מקורות';
+
+  @override
+  String get coachStepDoneTitle => 'סימון השלב כבוצע';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'שלב $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'סימון השלב כלא בוצע';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count שלבים',
+      two: 'שני שלבים',
+      one: 'שלב אחד',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'מה מחכה לי בקרוב?';
+
+  @override
+  String get talkBye => 'להתראות.';
+
+  @override
+  String get talkConfirmAsk => 'אמרו כן כדי לאשר, או לא כדי לדלג.';
+
+  @override
+  String get talkDone => 'בוצע.';
+
+  @override
+  String get talkEnd => 'סיום';
+
+  @override
+  String get talkListening => 'מקשיב…';
+
+  @override
+  String get talkNoVoice => 'אין בטלפון שלך קול לשפה הזו, לכן התשובות מוצגות אך לא מוקראות.';
+
+  @override
+  String get talkNotDone => 'זה לא עבר. בדקו את הכרטיס במסך.';
+
+  @override
+  String get talkReady => 'אני מקשיב.';
+
+  @override
+  String get talkShortcut => 'לדבר עם Vaultara';
+
+  @override
+  String get talkSkipped => 'בסדר, דילגתי.';
+
+  @override
+  String get talkSpeaking => 'מדבר. הקישו כדי לקטוע';
+
+  @override
+  String get talkTapToSpeak => 'הקישו כדי לדבר';
+
+  @override
+  String get talkThinking => 'חושב…';
+
+  @override
+  String get talkTitle => 'מצב שיחה';
+
+  @override
+  String get talkYesWords => 'כן,כן כן,בטח,בסדר,אוקיי,אשר,תעשה את זה,קדימה';
+
+  @override
+  String get talkNoWords => 'לא,לא תודה,ביטול,דלג,לא עכשיו';
+
+  @override
+  String get talkStopWords => 'עצור,די,זה הכול,להתראות,ביי,סיים מצב שיחה';
 }

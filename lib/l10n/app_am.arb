@@ -3535,5 +3535,267 @@
   "assistantForgetWordsDone": "የተማሩ ቃላት ተረስተዋል",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "ይዘው ይምጡ፦ {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "የእድሳት ቀጠሮ",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}፦ ቀጠሮዎ {time} ላይ ነው።",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}፦ ቀጠሮዎ ነገ ነው።",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "የእድሳት እቅድዎን በማዘጋጀት ላይ",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "ኦፊሴላዊ ምንጮችን በመፈተሽ ላይ",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "ይዘው ይምጡ",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "ከቀኑ በፊት ምሽት ላይ፣ ሰዓቱ ከተቀመጠም ከሁለት ሰዓት በፊት ማሳሰቢያ ያገኛሉ።",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "ቀጠሮውን አስወግድ",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "ቀጠሮ ተቀምጧል",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "ወደ ቀጠሮው ይሂዱ",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "ቀጠሮ",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "መቼ",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "የት",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "ቀጣዩን ደረጃ Vaultaraን ይጠይቁ",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "የእኔን {name} ለማደስ ቀጣዩ ደረጃ ምንድን ነው?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "የእኔን {name} እንዴት ላድስ? ከኦፊሴላዊ ደረጃዎች ጋር የእድሳት እቅድ አዘጋጅልኝ።",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "በኦፊሴላዊው ድረ-ገጽ ላይ ይያዛሉ። Vaultara በጭራሽ አይይዝልዎትም።",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "በኦፊሴላዊው ድረ-ገጽ ይያዙ",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "ቀጠሮ ማስያዝ",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "አገር",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "ክፍያ",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "ለአገሬ ደረጃዎችን አግኝ",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "ሊንኩ ሊከፈት አልቻለም።",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "ይህ መዝገብ ገና የእድሳት እቅድ የለውም።",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "ኦፊሴላዊውን ገጽ ክፈት",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "ደረጃዎቹ ከኦፊሴላዊ ሊንኮች ጋር የዚህ መዝገብ የእድሳት ዝርዝር ይሆናሉ።",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "የእድሳት እቅድ ተቀምጧል",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "የእድሳት እቅድዎ",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "የሂደት ጊዜ",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Vaultaraን ይጠይቁ ለአገርዎ ትክክለኛ ደረጃዎችን በኦፊሴላዊ ድረ-ገጾች ላይ ያገኛል፣ ከክፍያው፣ ከሚወስደው ጊዜ እና የት እንደሚያዙ ጋር።",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "የእድሳት አሰልጣኝ",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "ደንቦች እና ክፍያዎች ሊለወጡ ይችላሉ። ከመክፈልዎ በፊት ኦፊሴላዊውን ገጽ ይመልከቱ።",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "ምንጮች",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "ደረጃውን እንደተጠናቀቀ ምልክት አድርግ",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "ደረጃ {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "ደረጃውን እንዳልተጠናቀቀ ምልክት አድርግ",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, other{{count} ደረጃዎች}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "ምን እየመጣልኝ ነው?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "ደህና ሁን።",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "ለማረጋገጥ አዎ፣ ለመዝለል አይ ይበሉ።",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "ተጠናቋል።",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "ጨርስ",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "በማዳመጥ ላይ…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "ስልክዎ ለዚህ ቋንቋ ድምፅ የለውም፣ ስለዚህ መልሶች ይታያሉ ግን አይነበቡም።",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "አልተሳካም። በማያ ገጹ ላይ ያለውን ካርድ ይመልከቱ።",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "እያዳመጥኩ ነው።",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "ከVaultara ጋር ይነጋገሩ",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "እሺ፣ ተዘሏል።",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "በመናገር ላይ። ለማቋረጥ ይንኩ",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "ለመናገር ይንኩ",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "በማሰብ ላይ…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "የንግግር ሁነታ",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "አዎ,እሺ,አዎን,ትክክል,አረጋግጥ,አድርገው",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "አይ,አይደለም,ሰርዝ,ዝለል,አሁን አይደለም",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "አቁም,በቃ,ደህና ሁን,ቻው,የንግግር ሁነታን ጨርስ",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

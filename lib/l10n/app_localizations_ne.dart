@@ -9142,4 +9142,192 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'सिकेका शब्दहरू बिर्सिए';
+
+  @override
+  String appointmentBring(String items) {
+    return 'साथमा ल्याउनुहोस्: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'नवीकरण भेटघाट';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: तपाईंको भेटघाट $time बजे छ।';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: तपाईंको भेटघाट भोलि छ।';
+  }
+
+  @override
+  String get assistantStepRenewal => 'तपाईंको नवीकरण योजना तयार हुँदैछ';
+
+  @override
+  String get assistantStepWeb => 'आधिकारिक स्रोतहरू हेर्दै';
+
+  @override
+  String get coachAppointmentBring => 'साथमा ल्याउनुहोस्';
+
+  @override
+  String get coachAppointmentNote => 'अघिल्लो साँझ, र समय तोकिएको भए दुई घण्टा अघि पनि सम्झना आउनेछ।';
+
+  @override
+  String get coachAppointmentRemove => 'भेटघाट हटाउनुहोस्';
+
+  @override
+  String get coachAppointmentSaved => 'भेटघाट सेभ भयो';
+
+  @override
+  String get coachAppointmentStep => 'भेटघाटमा जानुहोस्';
+
+  @override
+  String get coachAppointmentTitle => 'भेटघाट';
+
+  @override
+  String get coachAppointmentWhen => 'कहिले';
+
+  @override
+  String get coachAppointmentWhere => 'कहाँ';
+
+  @override
+  String get coachAskNext => 'अर्को चरण Vaultara लाई सोध्नुहोस्';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'मेरो $name नवीकरण गर्ने अर्को चरण के हो?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'म मेरो $name कसरी नवीकरण गरूँ? आधिकारिक चरणसहित नवीकरण योजना बनाइदिनुहोस्।';
+  }
+
+  @override
+  String get coachBookNote => 'बुकिङ आधिकारिक साइटमा हुन्छ। Vaultara कहिल्यै तपाईंको तर्फबाट बुक गर्दैन।';
+
+  @override
+  String get coachBookOnSite => 'आधिकारिक साइटमा बुक गर्नुहोस्';
+
+  @override
+  String get coachBookingLabel => 'बुकिङ';
+
+  @override
+  String get coachCountryLabel => 'देश';
+
+  @override
+  String get coachFeeLabel => 'शुल्क';
+
+  @override
+  String get coachGetSteps => 'मेरो देशका चरणहरू पाउनुहोस्';
+
+  @override
+  String get coachLinkFailed => 'लिंक खोल्न सकिएन।';
+
+  @override
+  String get coachNoPlan => 'यो रेकर्डको अझै नवीकरण योजना छैन।';
+
+  @override
+  String get coachOpenLink => 'आधिकारिक पेज खोल्नुहोस्';
+
+  @override
+  String get coachPlanNote => 'चरणहरू आधिकारिक लिंकसहित यो रेकर्डको नवीकरण सूची बन्छन्।';
+
+  @override
+  String get coachPlanSaved => 'नवीकरण योजना सेभ भयो';
+
+  @override
+  String get coachPlanTitle => 'तपाईंको नवीकरण योजना';
+
+  @override
+  String get coachProcessingLabel => 'प्रक्रिया समय';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara ले आधिकारिक साइटमा तपाईंको देशका वास्तविक चरणहरू भेट्टाउँछ, शुल्क, समय र कहाँ बुक गर्ने सहित।';
+
+  @override
+  String get coachPromoTitle => 'नवीकरण सहायक';
+
+  @override
+  String get coachRulesChange => 'नियम र शुल्क बदलिन सक्छन्। तिर्नुअघि आधिकारिक पेज हेर्नुहोस्।';
+
+  @override
+  String get coachSourcesLabel => 'स्रोतहरू';
+
+  @override
+  String get coachStepDoneTitle => 'चरण पूरा भएको चिन्ह लगाउनुहोस्';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'चरण $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'चरण पूरा नभएको चिन्ह लगाउनुहोस्';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count चरण',
+      one: '1 चरण',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'मेरो लागि अगाडि के छ?';
+
+  @override
+  String get talkBye => 'बिदा।';
+
+  @override
+  String get talkConfirmAsk => 'पुष्टि गर्न हो, छोड्न होइन भन्नुहोस्।';
+
+  @override
+  String get talkDone => 'भयो।';
+
+  @override
+  String get talkEnd => 'अन्त्य';
+
+  @override
+  String get talkListening => 'सुन्दैछ…';
+
+  @override
+  String get talkNoVoice => 'तपाईंको फोनमा यो भाषाको आवाज छैन, त्यसैले जवाफ देखिन्छ तर पढिँदैन।';
+
+  @override
+  String get talkNotDone => 'भएन। स्क्रिनको कार्ड हेर्नुहोस्।';
+
+  @override
+  String get talkReady => 'म सुन्दैछु।';
+
+  @override
+  String get talkShortcut => 'Vaultara सँग कुरा गर्नुहोस्';
+
+  @override
+  String get talkSkipped => 'ठीक छ, छोडियो।';
+
+  @override
+  String get talkSpeaking => 'बोल्दैछ। रोक्न ट्याप गर्नुहोस्';
+
+  @override
+  String get talkTapToSpeak => 'बोल्न ट्याप गर्नुहोस्';
+
+  @override
+  String get talkThinking => 'सोच्दैछ…';
+
+  @override
+  String get talkTitle => 'कुराकानी मोड';
+
+  @override
+  String get talkYesWords => 'हो,हजुर,अवश्य,ठीक छ,ओके,पुष्टि गर,गर,अगाडि बढ';
+
+  @override
+  String get talkNoWords => 'होइन,हैन,रद्द गर,छोड,अहिले होइन';
+
+  @override
+  String get talkStopWords => 'रोक,पुग्यो,यत्ति हो,बिदा,बाइ,कुराकानी मोड बन्द गर';
 }

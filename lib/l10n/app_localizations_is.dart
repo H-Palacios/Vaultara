@@ -9141,4 +9141,192 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Lærðum orðum gleymt';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Taktu með: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Tími vegna endurnýjunar';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: tíminn þinn er kl. $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: tíminn þinn er á morgun.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Útbýr endurnýjunaráætlun';
+
+  @override
+  String get assistantStepWeb => 'Skoðar opinberar heimildir';
+
+  @override
+  String get coachAppointmentBring => 'Taktu með';
+
+  @override
+  String get coachAppointmentNote => 'Þú færð áminningu kvöldið áður, og tveimur tímum áður ef tími er skráður.';
+
+  @override
+  String get coachAppointmentRemove => 'Fjarlægja tíma';
+
+  @override
+  String get coachAppointmentSaved => 'Tími vistaður';
+
+  @override
+  String get coachAppointmentStep => 'Farðu í tímann';
+
+  @override
+  String get coachAppointmentTitle => 'Tími';
+
+  @override
+  String get coachAppointmentWhen => 'Hvenær';
+
+  @override
+  String get coachAppointmentWhere => 'Hvar';
+
+  @override
+  String get coachAskNext => 'Spyrja Vaultara um næsta skref';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Hvert er næsta skref til að endurnýja $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Hvernig endurnýja ég $name? Gerðu fyrir mig endurnýjunaráætlun með opinberu skrefunum.';
+  }
+
+  @override
+  String get coachBookNote => 'Þú bókar á opinbera vefnum. Vaultara bókar aldrei fyrir þig.';
+
+  @override
+  String get coachBookOnSite => 'Bóka á opinbera vefnum';
+
+  @override
+  String get coachBookingLabel => 'Bókun';
+
+  @override
+  String get coachCountryLabel => 'Land';
+
+  @override
+  String get coachFeeLabel => 'Gjald';
+
+  @override
+  String get coachGetSteps => 'Sýna skrefin fyrir mitt land';
+
+  @override
+  String get coachLinkFailed => 'Ekki tókst að opna tengilinn.';
+
+  @override
+  String get coachNoPlan => 'Þessi færsla er ekki enn með endurnýjunaráætlun.';
+
+  @override
+  String get coachOpenLink => 'Opna opinberu síðuna';
+
+  @override
+  String get coachPlanNote => 'Skrefin verða gátlisti færslunnar fyrir endurnýjun, með opinberum tenglum.';
+
+  @override
+  String get coachPlanSaved => 'Endurnýjunaráætlun vistuð';
+
+  @override
+  String get coachPlanTitle => 'Endurnýjunaráætlunin þín';
+
+  @override
+  String get coachProcessingLabel => 'Afgreiðslutími';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara finnur raunveruleg skref fyrir þitt land á opinberum vefjum, með gjaldi, afgreiðslutíma og hvar á að bóka.';
+
+  @override
+  String get coachPromoTitle => 'Endurnýjunarþjálfari';
+
+  @override
+  String get coachRulesChange => 'Reglur og gjöld geta breyst. Skoðaðu opinberu síðuna áður en þú borgar.';
+
+  @override
+  String get coachSourcesLabel => 'Heimildir';
+
+  @override
+  String get coachStepDoneTitle => 'Merkja skref sem lokið';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Skref $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Merkja skref sem ólokið';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count skref',
+      one: '1 skref',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Hvað er fram undan hjá mér?';
+
+  @override
+  String get talkBye => 'Bless.';
+
+  @override
+  String get talkConfirmAsk => 'Segðu já til að staðfesta eða nei til að sleppa.';
+
+  @override
+  String get talkDone => 'Búið.';
+
+  @override
+  String get talkEnd => 'Ljúka';
+
+  @override
+  String get talkListening => 'Hlustar…';
+
+  @override
+  String get talkNoVoice => 'Síminn er ekki með rödd fyrir þetta tungumál, svo svör birtast en eru ekki lesin upp.';
+
+  @override
+  String get talkNotDone => 'Það tókst ekki. Skoðaðu spjaldið á skjánum.';
+
+  @override
+  String get talkReady => 'Ég hlusta.';
+
+  @override
+  String get talkShortcut => 'Tala við Vaultara';
+
+  @override
+  String get talkSkipped => 'Allt í lagi, sleppt.';
+
+  @override
+  String get talkSpeaking => 'Talar. Ýttu til að grípa fram í';
+
+  @override
+  String get talkTapToSpeak => 'Ýttu til að tala';
+
+  @override
+  String get talkThinking => 'Hugsar…';
+
+  @override
+  String get talkTitle => 'Talstilling';
+
+  @override
+  String get talkYesWords => 'já,jú,auðvitað,ok,allt í lagi,staðfesta,gerðu það,áfram';
+
+  @override
+  String get talkNoWords => 'nei,neibb,hætta við,sleppa,ekki núna';
+
+  @override
+  String get talkStopWords => 'stopp,hættu,þetta er allt,bless,bæ,ljúka talstillingu';
 }

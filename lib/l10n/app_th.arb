@@ -3514,5 +3514,267 @@
   "assistantForgetWordsDone": "ลืมคำที่เรียนรู้แล้ว",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "นำมาด้วย: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "นัดหมายต่ออายุ",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: นัดของคุณเวลา {time}",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: นัดของคุณคือพรุ่งนี้",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "กำลังจัดทำแผนต่ออายุ",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "กำลังตรวจสอบแหล่งข้อมูลทางการ",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "นำมาด้วย",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "คุณจะได้รับการแจ้งเตือนตอนเย็นวันก่อน และสองชั่วโมงก่อนหากตั้งเวลาไว้",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "ลบนัดหมาย",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "บันทึกนัดหมายแล้ว",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "ไปตามนัด",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "นัดหมาย",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "เมื่อไร",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "ที่ไหน",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "ถาม Vaultara ถึงขั้นตอนถัดไป",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "ขั้นตอนถัดไปในการต่ออายุ{name}ของฉันคืออะไร",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "ฉันจะต่ออายุ{name}ได้อย่างไร ช่วยทำแผนต่ออายุพร้อมขั้นตอนทางการให้หน่อย",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "คุณจองที่เว็บไซต์ทางการ Vaultara ไม่จองแทนคุณ",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "จองที่เว็บไซต์ทางการ",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "การจอง",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "ประเทศ",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "ค่าธรรมเนียม",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "ดูขั้นตอนสำหรับประเทศของฉัน",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "เปิดลิงก์ไม่ได้",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "รายการนี้ยังไม่มีแผนต่ออายุ",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "เปิดหน้าทางการ",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "ขั้นตอนจะเป็นรายการต่ออายุของรายการนี้ พร้อมลิงก์ทางการ",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "บันทึกแผนต่ออายุแล้ว",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "แผนต่ออายุของคุณ",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "ระยะเวลาดำเนินการ",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara ค้นหาขั้นตอนจริงสำหรับประเทศของคุณจากเว็บไซต์ทางการ พร้อมค่าธรรมเนียม ระยะเวลา และที่จอง",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "โค้ชต่ออายุ",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "กฎและค่าธรรมเนียมอาจเปลี่ยนได้ ตรวจสอบหน้าทางการก่อนชำระเงิน",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "แหล่งที่มา",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "ทำเครื่องหมายว่าขั้นตอนเสร็จแล้ว",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "ขั้นตอนที่ {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "ทำเครื่องหมายว่าขั้นตอนยังไม่เสร็จ",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, other{{count} ขั้นตอน}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "มีอะไรรอฉันอยู่บ้าง",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "ลาก่อน",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "พูดว่าใช่เพื่อยืนยัน หรือไม่เพื่อข้าม",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "เรียบร้อย",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "จบ",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "กำลังฟัง…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "โทรศัพท์ของคุณไม่มีเสียงสำหรับภาษานี้ จึงแสดงคำตอบแต่ไม่อ่านออกเสียง",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "ไม่สำเร็จ ตรวจสอบการ์ดบนหน้าจอ",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "ฉันกำลังฟังอยู่",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "คุยกับ Vaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "ได้ ข้ามแล้ว",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "กำลังพูด แตะเพื่อขัดจังหวะ",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "แตะเพื่อพูด",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "กำลังคิด…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "โหมดสนทนา",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ใช่,ครับ,ค่ะ,ได้,โอเค,ตกลง,ยืนยัน,ทำเลย",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "ไม่,ไม่ใช่,ยกเลิก,ข้าม,ไม่ใช่ตอนนี้",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "หยุด,พอแล้ว,แค่นี้,ลาก่อน,บาย,จบโหมดสนทนา",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

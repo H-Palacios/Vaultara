@@ -9147,4 +9147,192 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Geleerde woorden vergeten';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Neem mee: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Afspraak voor verlenging';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: je afspraak is om $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: je afspraak is morgen.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Je verlengingsplan wordt gemaakt';
+
+  @override
+  String get assistantStepWeb => 'Officiële bronnen worden gecontroleerd';
+
+  @override
+  String get coachAppointmentBring => 'Neem mee';
+
+  @override
+  String get coachAppointmentNote => 'Je krijgt een herinnering de avond ervoor, en twee uur ervoor als de tijd is ingesteld.';
+
+  @override
+  String get coachAppointmentRemove => 'Afspraak verwijderen';
+
+  @override
+  String get coachAppointmentSaved => 'Afspraak opgeslagen';
+
+  @override
+  String get coachAppointmentStep => 'Ga naar de afspraak';
+
+  @override
+  String get coachAppointmentTitle => 'Afspraak';
+
+  @override
+  String get coachAppointmentWhen => 'Wanneer';
+
+  @override
+  String get coachAppointmentWhere => 'Waar';
+
+  @override
+  String get coachAskNext => 'Vraag Vaultara om de volgende stap';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Wat is de volgende stap om mijn $name te verlengen?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Hoe verleng ik mijn $name? Maak een verlengingsplan met de officiële stappen.';
+  }
+
+  @override
+  String get coachBookNote => 'Je boekt op de officiële site. Vaultara boekt nooit voor je.';
+
+  @override
+  String get coachBookOnSite => 'Boeken op de officiële site';
+
+  @override
+  String get coachBookingLabel => 'Boeken';
+
+  @override
+  String get coachCountryLabel => 'Land';
+
+  @override
+  String get coachFeeLabel => 'Kosten';
+
+  @override
+  String get coachGetSteps => 'Stappen voor mijn land ophalen';
+
+  @override
+  String get coachLinkFailed => 'De link kon niet worden geopend.';
+
+  @override
+  String get coachNoPlan => 'Dit item heeft nog geen verlengingsplan.';
+
+  @override
+  String get coachOpenLink => 'Officiële pagina openen';
+
+  @override
+  String get coachPlanNote => 'De stappen worden de verlengingschecklist van dit item, met de officiële links.';
+
+  @override
+  String get coachPlanSaved => 'Verlengingsplan opgeslagen';
+
+  @override
+  String get coachPlanTitle => 'Je verlengingsplan';
+
+  @override
+  String get coachProcessingLabel => 'Doorlooptijd';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara vindt de echte stappen voor jouw land op officiële sites, met de kosten, de doorlooptijd en waar je boekt.';
+
+  @override
+  String get coachPromoTitle => 'Verlengingscoach';
+
+  @override
+  String get coachRulesChange => 'Regels en kosten kunnen veranderen. Controleer de officiële pagina voordat je betaalt.';
+
+  @override
+  String get coachSourcesLabel => 'Bronnen';
+
+  @override
+  String get coachStepDoneTitle => 'Stap markeren als gedaan';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Stap $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Stap markeren als niet gedaan';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stappen',
+      one: '1 stap',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Wat staat er voor mij gepland?';
+
+  @override
+  String get talkBye => 'Tot ziens.';
+
+  @override
+  String get talkConfirmAsk => 'Zeg ja om te bevestigen of nee om over te slaan.';
+
+  @override
+  String get talkDone => 'Klaar.';
+
+  @override
+  String get talkEnd => 'Stoppen';
+
+  @override
+  String get talkListening => 'Luistert…';
+
+  @override
+  String get talkNoVoice => 'Je telefoon heeft geen stem voor deze taal, dus antwoorden worden getoond maar niet voorgelezen.';
+
+  @override
+  String get talkNotDone => 'Dat is niet gelukt. Bekijk de kaart op het scherm.';
+
+  @override
+  String get talkReady => 'Ik luister.';
+
+  @override
+  String get talkShortcut => 'Praat met Vaultara';
+
+  @override
+  String get talkSkipped => 'Oké, overgeslagen.';
+
+  @override
+  String get talkSpeaking => 'Spreekt. Tik om te onderbreken';
+
+  @override
+  String get talkTapToSpeak => 'Tik om te praten';
+
+  @override
+  String get talkThinking => 'Denkt na…';
+
+  @override
+  String get talkTitle => 'Spreekmodus';
+
+  @override
+  String get talkYesWords => 'ja,jawel,zeker,ok,oké,bevestig,doe maar,ga door';
+
+  @override
+  String get talkNoWords => 'nee,annuleer,overslaan,nu niet,laat maar';
+
+  @override
+  String get talkStopWords => 'stop,dat is alles,doei,tot ziens,spreekmodus stoppen';
 }

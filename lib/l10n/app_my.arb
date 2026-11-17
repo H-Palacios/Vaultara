@@ -3247,5 +3247,267 @@
   "assistantForgetWordsDone": "သင်ယူထားသော စကားလုံးများကို မေ့ပြီးပါပြီ",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "ယူလာပါ: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "သက်တမ်းတိုးချိန်းဆိုမှု",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: သင့်ချိန်းဆိုမှုသည် {time} တွင်ဖြစ်သည်။",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: သင့်ချိန်းဆိုမှုသည် မနက်ဖြန်ဖြစ်သည်။",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "သက်တမ်းတိုးအစီအစဉ် ပြင်ဆင်နေသည်",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "တရားဝင်ရင်းမြစ်များ စစ်ဆေးနေသည်",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "ယူလာပါ",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "တစ်ရက်ကြိုတင် ညနေနှင့် အချိန်သတ်မှတ်ထားလျှင် နှစ်နာရီကြိုတင် သတိပေးချက်ရပါမည်။",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "ချိန်းဆိုမှုကို ဖယ်ရှားရန်",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "ချိန်းဆိုမှု သိမ်းပြီး",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "ချိန်းဆိုမှုသို့ သွားပါ",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "ချိန်းဆိုမှု",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "ဘယ်အချိန်",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "ဘယ်နေရာ",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "နောက်တစ်ဆင့်ကို Vaultara ကိုမေးရန်",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "ကျွန်ုပ်၏ {name} သက်တမ်းတိုးရန် နောက်တစ်ဆင့်က ဘာလဲ?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "ကျွန်ုပ်၏ {name} ကို ဘယ်လိုသက်တမ်းတိုးရမလဲ? တရားဝင်အဆင့်များဖြင့် သက်တမ်းတိုးအစီအစဉ် လုပ်ပေးပါ။",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "တရားဝင်ဆိုက်တွင် ကြိုတင်စာရင်းသွင်းရသည်။ Vaultara သည် သင့်ကိုယ်စား ဘယ်တော့မှ မသွင်းပါ။",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "တရားဝင်ဆိုက်တွင် စာရင်းသွင်းရန်",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "စာရင်းသွင်းခြင်း",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "နိုင်ငံ",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "ကြေး",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "ကျွန်ုပ်နိုင်ငံအတွက် အဆင့်များရယူရန်",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "လင့်ခ်ကို ဖွင့်မရပါ။",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "ဤမှတ်တမ်းတွင် သက်တမ်းတိုးအစီအစဉ် မရှိသေးပါ။",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "တရားဝင်စာမျက်နှာ ဖွင့်ရန်",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "အဆင့်များသည် တရားဝင်လင့်ခ်များနှင့်အတူ ဤမှတ်တမ်း၏ သက်တမ်းတိုးစာရင်း ဖြစ်လာမည်။",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "သက်တမ်းတိုးအစီအစဉ် သိမ်းပြီး",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "သင့်သက်တမ်းတိုးအစီအစဉ်",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "ဆောင်ရွက်ချိန်",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara သည် တရားဝင်ဆိုက်များမှ သင့်နိုင်ငံ၏ အမှန်တကယ်အဆင့်များကို ကြေး၊ ကြာချိန်နှင့် စာရင်းသွင်းရမည့်နေရာနှင့်အတူ ရှာပေးသည်။",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "သက်တမ်းတိုးနည်းပြ",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "စည်းမျဉ်းနှင့် ကြေးများ ပြောင်းနိုင်သည်။ မပေးချေမီ တရားဝင်စာမျက်နှာကို စစ်ဆေးပါ။",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "ရင်းမြစ်များ",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "အဆင့်ကို ပြီးကြောင်း မှတ်ရန်",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "အဆင့် {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "အဆင့်ကို မပြီးကြောင်း မှတ်ရန်",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, other{အဆင့် {count} ဆင့်}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "ကျွန်ုပ်အတွက် ဘာတွေလာမလဲ?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "နှုတ်ဆက်ပါတယ်။",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "အတည်ပြုရန် ဟုတ်ကဲ့၊ ကျော်ရန် မဟုတ်ဘူး ဟုပြောပါ။",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "ပြီးပါပြီ။",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "ပြီးဆုံး",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "နားထောင်နေသည်…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "သင့်ဖုန်းတွင် ဤဘာသာစကားအတွက် အသံမရှိသဖြင့် အဖြေများကို ပြသော်လည်း ဖတ်မပြပါ။",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "မအောင်မြင်ပါ။ မျက်နှာပြင်ရှိ ကတ်ကို စစ်ဆေးပါ။",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "နားထောင်နေပါတယ်။",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Vaultara နှင့် စကားပြောရန်",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "ကောင်းပြီ၊ ကျော်လိုက်ပြီ။",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "ပြောနေသည်။ ဖြတ်ရန် တို့ပါ",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "ပြောရန် တို့ပါ",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "စဉ်းစားနေသည်…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "စကားပြောမုဒ်",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ဟုတ်ကဲ့,ဟုတ်,ရပါတယ်,အိုကေ,အတည်ပြု,လုပ်ပါ",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "မဟုတ်ဘူး,မလုပ်နဲ့,ပယ်ဖျက်,ကျော်,အခုမဟုတ်",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "ရပ်,တော်ပြီ,ဒါပဲ,နှုတ်ဆက်ပါတယ်,ဘိုင်,စကားပြောမုဒ်ပိတ်",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

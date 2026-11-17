@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "Amagama afundiweyo alityelwe",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Yiza ne: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Idinga lokuhlaziya",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: idinga lakho ngo-{time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: idinga lakho ngomso.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Kulungiswa isicwangciso sakho sokuhlaziya",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Kujongwa imithombo esemthethweni",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Yiza ne",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Uza kufumana isikhumbuzo ngorhatya lwangaphambili, kunye neeyure ezimbini ngaphambili ukuba ixesha libekiwe.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Susa idinga",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "Idinga ligciniwe",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Yiya edingeni",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Idinga",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Nini",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Phi",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Buza uVaultara inyathelo elilandelayo",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Lithini inyathelo elilandelayo lokuhlaziya i-{name} yam?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Ndiyihlaziya njani i-{name} yam? Ndenzele isicwangciso sokuhlaziya esinamanyathelo asemthethweni.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "Ubhukisha kwisayithi esemthethweni. UVaultara akaze abhukishe endaweni yakho.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Bhukisha kwisayithi esemthethweni",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Ukubhukisha",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Ilizwe",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Intlawulo",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Fumana amanyathelo elizwe lam",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "Ikhonkco alikwazanga ukuvulwa.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Le rekhodi ayikabi nasicwangciso sokuhlaziya.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Vula iphepha elisemthethweni",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Amanyathelo aba luluhlu lokuhlaziya lwale rekhodi, kunye namakhonkco asemthethweni.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "Isicwangciso sokuhlaziya sigciniwe",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Isicwangciso sakho sokuhlaziya",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Ixesha lokulungiswa",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "I-Ask Vaultara ifumana amanyathelo okwenyani elizwe lakho kwiisayithi ezisemthethweni, kunye nentlawulo, ixesha nendawo yokubhukisha.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Umqeqeshi wokuhlaziya",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Imithetho nezintlawulo zinokutshintsha. Jonga iphepha elisemthethweni phambi kokuhlawula.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Imithombo",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Phawula inyathelo njengelenziwe",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Inyathelo {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Phawula inyathelo njengelingenziwanga",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{inyathelo eli-1} other{amanyathelo angu-{count}}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Yintoni ezayo kum?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Sala kakuhle.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Yithi ewe ukuqinisekisa, okanye hayi ukutsiba.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Kwenziwe.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Gqiba",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Iyamamela…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Ifowuni yakho ayinalizwi lolu lwimi, ngoko iimpendulo ziyaboniswa kodwa azifundwa.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Akuphumelelanga. Jonga ikhadi kwisikrini.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Ndiyamamela.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Thetha noVaultara",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Kulungile, kutsitywe.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Iyathetha. Chofoza ukuphazamisa",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Chofoza ukuthetha",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Iyacinga…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Imowudi yokuthetha",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "ewe,ehe,kunjalo,kulungile,ok,qinisekisa,yenza,qhubeka",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "hayi,hayi bo,rhoxisa,tsiba,hayi ngoku",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "yima,kwanele,kuphelele apho,sala kakuhle,bhayi,gqiba imowudi yokuthetha",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

@@ -9301,4 +9301,194 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Naučená slova zapomenuta';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Vezměte s sebou: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Termín obnovy';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: váš termín je v $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: váš termín je zítra.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Připravuji plán obnovy';
+
+  @override
+  String get assistantStepWeb => 'Kontroluji oficiální zdroje';
+
+  @override
+  String get coachAppointmentBring => 'Vezměte s sebou';
+
+  @override
+  String get coachAppointmentNote => 'Připomenutí dostanete večer předem a dvě hodiny předem, pokud je zadán čas.';
+
+  @override
+  String get coachAppointmentRemove => 'Odstranit termín';
+
+  @override
+  String get coachAppointmentSaved => 'Termín uložen';
+
+  @override
+  String get coachAppointmentStep => 'Jděte na termín';
+
+  @override
+  String get coachAppointmentTitle => 'Termín';
+
+  @override
+  String get coachAppointmentWhen => 'Kdy';
+
+  @override
+  String get coachAppointmentWhere => 'Kde';
+
+  @override
+  String get coachAskNext => 'Zeptat se Vaultary na další krok';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Jaký je další krok k obnovení $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Jak obnovím $name? Připrav mi plán obnovy s oficiálními kroky.';
+  }
+
+  @override
+  String get coachBookNote => 'Termín si rezervujete na oficiálním webu. Vaultara za vás nikdy nerezervuje.';
+
+  @override
+  String get coachBookOnSite => 'Rezervovat na oficiálním webu';
+
+  @override
+  String get coachBookingLabel => 'Rezervace';
+
+  @override
+  String get coachCountryLabel => 'Země';
+
+  @override
+  String get coachFeeLabel => 'Poplatek';
+
+  @override
+  String get coachGetSteps => 'Zobrazit kroky pro mou zemi';
+
+  @override
+  String get coachLinkFailed => 'Odkaz se nepodařilo otevřít.';
+
+  @override
+  String get coachNoPlan => 'Tento záznam zatím nemá plán obnovy.';
+
+  @override
+  String get coachOpenLink => 'Otevřít oficiální stránku';
+
+  @override
+  String get coachPlanNote => 'Kroky se stanou kontrolním seznamem obnovy tohoto záznamu, s oficiálními odkazy.';
+
+  @override
+  String get coachPlanSaved => 'Plán obnovy uložen';
+
+  @override
+  String get coachPlanTitle => 'Váš plán obnovy';
+
+  @override
+  String get coachProcessingLabel => 'Doba vyřízení';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara najde skutečné kroky pro vaši zemi na oficiálních webech, s poplatkem, dobou vyřízení a místem rezervace.';
+
+  @override
+  String get coachPromoTitle => 'Průvodce obnovou';
+
+  @override
+  String get coachRulesChange => 'Pravidla a poplatky se mohou změnit. Před platbou zkontrolujte oficiální stránku.';
+
+  @override
+  String get coachSourcesLabel => 'Zdroje';
+
+  @override
+  String get coachStepDoneTitle => 'Označit krok jako hotový';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Krok $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Označit krok jako nehotový';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kroků',
+      many: '$count kroku',
+      few: '$count kroky',
+      one: '1 krok',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Co mě čeká?';
+
+  @override
+  String get talkBye => 'Na shledanou.';
+
+  @override
+  String get talkConfirmAsk => 'Řekněte ano pro potvrzení, nebo ne pro přeskočení.';
+
+  @override
+  String get talkDone => 'Hotovo.';
+
+  @override
+  String get talkEnd => 'Konec';
+
+  @override
+  String get talkListening => 'Poslouchám…';
+
+  @override
+  String get talkNoVoice => 'Telefon nemá hlas pro tento jazyk, takže odpovědi se zobrazí, ale nepřečtou.';
+
+  @override
+  String get talkNotDone => 'Nepodařilo se. Zkontrolujte kartu na obrazovce.';
+
+  @override
+  String get talkReady => 'Poslouchám.';
+
+  @override
+  String get talkShortcut => 'Mluvit s Vaultarou';
+
+  @override
+  String get talkSkipped => 'Dobře, přeskočeno.';
+
+  @override
+  String get talkSpeaking => 'Mluví. Klepnutím přerušíte';
+
+  @override
+  String get talkTapToSpeak => 'Klepněte a mluvte';
+
+  @override
+  String get talkThinking => 'Přemýšlí…';
+
+  @override
+  String get talkTitle => 'Režim konverzace';
+
+  @override
+  String get talkYesWords => 'ano,jo,jasně,ok,dobře,potvrdit,udělej to,pokračuj';
+
+  @override
+  String get talkNoWords => 'ne,nene,zrušit,přeskočit,teď ne';
+
+  @override
+  String get talkStopWords => 'stop,to je vše,ahoj,na shledanou,ukončit konverzaci';
 }

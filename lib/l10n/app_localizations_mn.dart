@@ -9132,4 +9132,192 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Сурсан үгсийг мартлаа';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Авчрах: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Сунгалтын цаг';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: таны цаг $time-д.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: таны цаг маргааш.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Сунгалтын төлөвлөгөө бэлдэж байна';
+
+  @override
+  String get assistantStepWeb => 'Албан ёсны эх сурвалж шалгаж байна';
+
+  @override
+  String get coachAppointmentBring => 'Авчрах';
+
+  @override
+  String get coachAppointmentNote => 'Өмнөх орой, цаг тохируулсан бол хоёр цагийн өмнө сануулга ирнэ.';
+
+  @override
+  String get coachAppointmentRemove => 'Цагийг устгах';
+
+  @override
+  String get coachAppointmentSaved => 'Цаг хадгалагдлаа';
+
+  @override
+  String get coachAppointmentStep => 'Цагтаа очих';
+
+  @override
+  String get coachAppointmentTitle => 'Цаг';
+
+  @override
+  String get coachAppointmentWhen => 'Хэзээ';
+
+  @override
+  String get coachAppointmentWhere => 'Хаана';
+
+  @override
+  String get coachAskNext => 'Дараагийн алхмыг Vaultara-аас асуух';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Миний $name-г сунгах дараагийн алхам юу вэ?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '$name-ээ яаж сунгах вэ? Албан ёсны алхмуудтай сунгалтын төлөвлөгөө гаргаж өгөөч.';
+  }
+
+  @override
+  String get coachBookNote => 'Цагийг албан ёсны сайтаас захиална. Vaultara хэзээ ч таны өмнөөс захиалахгүй.';
+
+  @override
+  String get coachBookOnSite => 'Албан ёсны сайтаас захиалах';
+
+  @override
+  String get coachBookingLabel => 'Захиалга';
+
+  @override
+  String get coachCountryLabel => 'Улс';
+
+  @override
+  String get coachFeeLabel => 'Хураамж';
+
+  @override
+  String get coachGetSteps => 'Миний улсын алхмуудыг авах';
+
+  @override
+  String get coachLinkFailed => 'Холбоосыг нээж чадсангүй.';
+
+  @override
+  String get coachNoPlan => 'Энэ бүртгэлд одоогоор сунгалтын төлөвлөгөө алга.';
+
+  @override
+  String get coachOpenLink => 'Албан ёсны хуудсыг нээх';
+
+  @override
+  String get coachPlanNote => 'Алхмууд албан ёсны холбоостойгоор энэ бүртгэлийн сунгалтын жагсаалт болно.';
+
+  @override
+  String get coachPlanSaved => 'Сунгалтын төлөвлөгөө хадгалагдлаа';
+
+  @override
+  String get coachPlanTitle => 'Таны сунгалтын төлөвлөгөө';
+
+  @override
+  String get coachProcessingLabel => 'Шийдвэрлэх хугацаа';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara албан ёсны сайтуудаас таны улсын жинхэнэ алхмуудыг хураамж, хугацаа, захиалах газрын хамт олно.';
+
+  @override
+  String get coachPromoTitle => 'Сунгалтын туслах';
+
+  @override
+  String get coachRulesChange => 'Дүрэм, хураамж өөрчлөгдөж болно. Төлөхөөс өмнө албан ёсны хуудсыг шалгаарай.';
+
+  @override
+  String get coachSourcesLabel => 'Эх сурвалж';
+
+  @override
+  String get coachStepDoneTitle => 'Алхмыг хийсэн гэж тэмдэглэх';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number-р алхам';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Алхмыг хийгээгүй гэж тэмдэглэх';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count алхам',
+      one: '1 алхам',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Надад юу хүлээж байна?';
+
+  @override
+  String get talkBye => 'Баяртай.';
+
+  @override
+  String get talkConfirmAsk => 'Батлахын тулд тийм, алгасахын тулд үгүй гэж хэлнэ үү.';
+
+  @override
+  String get talkDone => 'Боллоо.';
+
+  @override
+  String get talkEnd => 'Дуусгах';
+
+  @override
+  String get talkListening => 'Сонсож байна…';
+
+  @override
+  String get talkNoVoice => 'Таны утсанд энэ хэлний дуу хоолой байхгүй тул хариулт харагдах ч уншигдахгүй.';
+
+  @override
+  String get talkNotDone => 'Болсонгүй. Дэлгэц дээрх картыг шалгана уу.';
+
+  @override
+  String get talkReady => 'Би сонсож байна.';
+
+  @override
+  String get talkShortcut => 'Vaultara-тай ярих';
+
+  @override
+  String get talkSkipped => 'За, алгаслаа.';
+
+  @override
+  String get talkSpeaking => 'Ярьж байна. Таслахын тулд товшино уу';
+
+  @override
+  String get talkTapToSpeak => 'Ярихын тулд товшино уу';
+
+  @override
+  String get talkThinking => 'Бодож байна…';
+
+  @override
+  String get talkTitle => 'Ярианы горим';
+
+  @override
+  String get talkYesWords => 'тийм,тиймээ,за,мэдээж,ок,батлах,хий,үргэлжлүүл';
+
+  @override
+  String get talkNoWords => 'үгүй,болохгүй,цуцлах,алгас,одоо биш';
+
+  @override
+  String get talkStopWords => 'зогс,болно,ингээд,баяртай,бай,ярианы горимыг дуусга';
 }

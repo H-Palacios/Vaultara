@@ -9142,4 +9142,192 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Öğrenilen kelimeler unutuldu';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Yanınızda getirin: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Yenileme randevusu';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: randevunuz saat $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: randevunuz yarın.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Yenileme planınız hazırlanıyor';
+
+  @override
+  String get assistantStepWeb => 'Resmi kaynaklar kontrol ediliyor';
+
+  @override
+  String get coachAppointmentBring => 'Yanınızda getirin';
+
+  @override
+  String get coachAppointmentNote => 'Bir önceki akşam ve saat belirlenmişse iki saat önce hatırlatma alırsınız.';
+
+  @override
+  String get coachAppointmentRemove => 'Randevuyu kaldır';
+
+  @override
+  String get coachAppointmentSaved => 'Randevu kaydedildi';
+
+  @override
+  String get coachAppointmentStep => 'Randevuya gidin';
+
+  @override
+  String get coachAppointmentTitle => 'Randevu';
+
+  @override
+  String get coachAppointmentWhen => 'Ne zaman';
+
+  @override
+  String get coachAppointmentWhere => 'Nerede';
+
+  @override
+  String get coachAskNext => 'Sonraki adımı Vaultara\'ya sor';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return '$name yenilemek için sonraki adım ne?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '$name nasıl yenilerim? Resmi adımlarla bir yenileme planı hazırla.';
+  }
+
+  @override
+  String get coachBookNote => 'Randevuyu resmi sitede alırsınız. Vaultara asla sizin yerinize randevu almaz.';
+
+  @override
+  String get coachBookOnSite => 'Resmi sitede randevu al';
+
+  @override
+  String get coachBookingLabel => 'Randevu alma';
+
+  @override
+  String get coachCountryLabel => 'Ülke';
+
+  @override
+  String get coachFeeLabel => 'Ücret';
+
+  @override
+  String get coachGetSteps => 'Ülkemin adımlarını getir';
+
+  @override
+  String get coachLinkFailed => 'Bağlantı açılamadı.';
+
+  @override
+  String get coachNoPlan => 'Bu kaydın henüz yenileme planı yok.';
+
+  @override
+  String get coachOpenLink => 'Resmi sayfayı aç';
+
+  @override
+  String get coachPlanNote => 'Adımlar, resmi bağlantılarla bu kaydın yenileme listesi olur.';
+
+  @override
+  String get coachPlanSaved => 'Yenileme planı kaydedildi';
+
+  @override
+  String get coachPlanTitle => 'Yenileme planınız';
+
+  @override
+  String get coachProcessingLabel => 'İşlem süresi';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara ülkenizin gerçek adımlarını resmi sitelerde bulur; ücret, süre ve randevu yeriyle birlikte.';
+
+  @override
+  String get coachPromoTitle => 'Yenileme koçu';
+
+  @override
+  String get coachRulesChange => 'Kurallar ve ücretler değişebilir. Ödeme yapmadan önce resmi sayfayı kontrol edin.';
+
+  @override
+  String get coachSourcesLabel => 'Kaynaklar';
+
+  @override
+  String get coachStepDoneTitle => 'Adımı tamamlandı olarak işaretle';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number. adım';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Adımı tamamlanmadı olarak işaretle';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count adım',
+      one: '1 adım',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Beni neler bekliyor?';
+
+  @override
+  String get talkBye => 'Hoşça kal.';
+
+  @override
+  String get talkConfirmAsk => 'Onaylamak için evet, atlamak için hayır deyin.';
+
+  @override
+  String get talkDone => 'Tamam.';
+
+  @override
+  String get talkEnd => 'Bitir';
+
+  @override
+  String get talkListening => 'Dinliyor…';
+
+  @override
+  String get talkNoVoice => 'Telefonunuzda bu dil için ses yok, bu yüzden yanıtlar gösterilir ama okunmaz.';
+
+  @override
+  String get talkNotDone => 'Olmadı. Ekrandaki kartı kontrol edin.';
+
+  @override
+  String get talkReady => 'Dinliyorum.';
+
+  @override
+  String get talkShortcut => 'Vaultara ile konuş';
+
+  @override
+  String get talkSkipped => 'Tamam, atlandı.';
+
+  @override
+  String get talkSpeaking => 'Konuşuyor. Kesmek için dokunun';
+
+  @override
+  String get talkTapToSpeak => 'Konuşmak için dokunun';
+
+  @override
+  String get talkThinking => 'Düşünüyor…';
+
+  @override
+  String get talkTitle => 'Konuşma modu';
+
+  @override
+  String get talkYesWords => 'evet,olur,tabii,tamam,ok,onayla,yap,devam et';
+
+  @override
+  String get talkNoWords => 'hayır,yok,iptal,atla,şimdi değil';
+
+  @override
+  String get talkStopWords => 'dur,yeter,bu kadar,hoşça kal,bay,konuşma modunu bitir';
 }

@@ -9080,4 +9080,191 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Perkataan yang dipelajari telah dilupakan';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Bawa: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Temu janji pembaharuan';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: temu janji anda pada pukul $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: temu janji anda esok.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Menyediakan pelan pembaharuan anda';
+
+  @override
+  String get assistantStepWeb => 'Menyemak sumber rasmi';
+
+  @override
+  String get coachAppointmentBring => 'Bawa';
+
+  @override
+  String get coachAppointmentNote => 'Anda akan menerima peringatan pada petang sebelumnya, dan dua jam sebelum jika masa ditetapkan.';
+
+  @override
+  String get coachAppointmentRemove => 'Buang temu janji';
+
+  @override
+  String get coachAppointmentSaved => 'Temu janji disimpan';
+
+  @override
+  String get coachAppointmentStep => 'Pergi ke temu janji';
+
+  @override
+  String get coachAppointmentTitle => 'Temu janji';
+
+  @override
+  String get coachAppointmentWhen => 'Bila';
+
+  @override
+  String get coachAppointmentWhere => 'Di mana';
+
+  @override
+  String get coachAskNext => 'Tanya Vaultara langkah seterusnya';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Apakah langkah seterusnya untuk memperbaharui $name saya?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Bagaimana saya memperbaharui $name saya? Buatkan pelan pembaharuan dengan langkah rasmi.';
+  }
+
+  @override
+  String get coachBookNote => 'Anda menempah di laman rasmi. Vaultara tidak pernah menempah untuk anda.';
+
+  @override
+  String get coachBookOnSite => 'Tempah di laman rasmi';
+
+  @override
+  String get coachBookingLabel => 'Tempahan';
+
+  @override
+  String get coachCountryLabel => 'Negara';
+
+  @override
+  String get coachFeeLabel => 'Yuran';
+
+  @override
+  String get coachGetSteps => 'Dapatkan langkah untuk negara saya';
+
+  @override
+  String get coachLinkFailed => 'Pautan tidak dapat dibuka.';
+
+  @override
+  String get coachNoPlan => 'Rekod ini belum ada pelan pembaharuan.';
+
+  @override
+  String get coachOpenLink => 'Buka halaman rasmi';
+
+  @override
+  String get coachPlanNote => 'Langkah-langkah menjadi senarai semak pembaharuan rekod ini, dengan pautan rasmi.';
+
+  @override
+  String get coachPlanSaved => 'Pelan pembaharuan disimpan';
+
+  @override
+  String get coachPlanTitle => 'Pelan pembaharuan anda';
+
+  @override
+  String get coachProcessingLabel => 'Tempoh pemprosesan';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara mencari langkah sebenar untuk negara anda di laman rasmi, dengan yuran, tempoh dan tempat menempah.';
+
+  @override
+  String get coachPromoTitle => 'Jurulatih pembaharuan';
+
+  @override
+  String get coachRulesChange => 'Peraturan dan yuran boleh berubah. Semak halaman rasmi sebelum membayar.';
+
+  @override
+  String get coachSourcesLabel => 'Sumber';
+
+  @override
+  String get coachStepDoneTitle => 'Tandakan langkah selesai';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Langkah $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Tandakan langkah belum selesai';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count langkah',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Apa yang akan datang untuk saya?';
+
+  @override
+  String get talkBye => 'Selamat tinggal.';
+
+  @override
+  String get talkConfirmAsk => 'Sebut ya untuk mengesahkan, atau tidak untuk melangkau.';
+
+  @override
+  String get talkDone => 'Selesai.';
+
+  @override
+  String get talkEnd => 'Tamat';
+
+  @override
+  String get talkListening => 'Mendengar…';
+
+  @override
+  String get talkNoVoice => 'Telefon anda tiada suara untuk bahasa ini, jadi jawapan dipaparkan tetapi tidak dibacakan.';
+
+  @override
+  String get talkNotDone => 'Itu tidak berjaya. Semak kad pada skrin.';
+
+  @override
+  String get talkReady => 'Saya mendengar.';
+
+  @override
+  String get talkShortcut => 'Bercakap dengan Vaultara';
+
+  @override
+  String get talkSkipped => 'Baik, dilangkau.';
+
+  @override
+  String get talkSpeaking => 'Bercakap. Ketik untuk mencelah';
+
+  @override
+  String get talkTapToSpeak => 'Ketik untuk bercakap';
+
+  @override
+  String get talkThinking => 'Berfikir…';
+
+  @override
+  String get talkTitle => 'Mod bercakap';
+
+  @override
+  String get talkYesWords => 'ya,ye,boleh,ok,okey,sahkan,buat,teruskan';
+
+  @override
+  String get talkNoWords => 'tidak,tak,batal,langkau,bukan sekarang';
+
+  @override
+  String get talkStopWords => 'berhenti,cukup,itu sahaja,selamat tinggal,bye,tamatkan mod bercakap';
 }

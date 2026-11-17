@@ -3509,5 +3509,267 @@
   "assistantForgetWordsDone": "واژه‌های آموخته فراموش شدند",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "همراه بیاورید: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "وقت تمدید",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: وقت شما ساعت {time} است.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: وقت شما فرداست.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "در حال آماده‌سازی برنامه تمدید",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "در حال بررسی منابع رسمی",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "همراه بیاورید",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "شب قبل یادآوری دریافت می‌کنید، و اگر ساعت تعیین شده باشد دو ساعت قبل هم.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "حذف وقت",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "وقت ذخیره شد",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "به محل وقت بروید",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "وقت",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "کی",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "کجا",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "گام بعدی را از Vaultara بپرسید",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "گام بعدی برای تمدید {name} من چیست؟",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "چطور {name} خود را تمدید کنم؟ یک برنامه تمدید با مراحل رسمی برایم بساز.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "وقت را در سایت رسمی رزرو می‌کنید. Vaultara هرگز به جای شما رزرو نمی‌کند.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "رزرو در سایت رسمی",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "رزرو",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "کشور",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "هزینه",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "مراحل کشور من را پیدا کن",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "پیوند باز نشد.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "این سابقه هنوز برنامه تمدید ندارد.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "باز کردن صفحه رسمی",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "مراحل با پیوندهای رسمی، فهرست تمدید این سابقه می‌شوند.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "برنامه تمدید ذخیره شد",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "برنامه تمدید شما",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "مدت رسیدگی",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara مراحل واقعی کشور شما را در سایت‌های رسمی پیدا می‌کند، همراه با هزینه، مدت و محل رزرو.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "راهنمای تمدید",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "قوانین و هزینه‌ها ممکن است تغییر کنند. پیش از پرداخت صفحه رسمی را بررسی کنید.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "منابع",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "علامت‌گذاری گام به‌عنوان انجام‌شده",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "گام {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "علامت‌گذاری گام به‌عنوان انجام‌نشده",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 گام} other{{count} گام}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "چه چیزهایی پیش رو دارم؟",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "خداحافظ.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "برای تأیید بگویید بله، یا برای رد شدن بگویید نه.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "انجام شد.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "پایان",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "در حال گوش دادن…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "تلفن شما صدایی برای این زبان ندارد، پس پاسخ‌ها نمایش داده می‌شوند اما خوانده نمی‌شوند.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "انجام نشد. کارت روی صفحه را بررسی کنید.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "گوش می‌دهم.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "با Vaultara صحبت کنید",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "باشه، رد شد.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "در حال صحبت. برای قطع ضربه بزنید",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "برای صحبت ضربه بزنید",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "در حال فکر کردن…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "حالت گفتگو",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "بله,آره,حتما,باشه,اوکی,تأیید,انجامش بده,ادامه بده",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "نه,خیر,لغو,رد کن,الان نه",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "بس کن,توقف,همین,خداحافظ,بای,پایان حالت گفتگو",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

@@ -9227,4 +9227,193 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Cuvintele învățate au fost uitate';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Aduceți: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Programare pentru reînnoire';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: programarea ta este la $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: programarea ta este mâine.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Pregătesc planul de reînnoire';
+
+  @override
+  String get assistantStepWeb => 'Verific surse oficiale';
+
+  @override
+  String get coachAppointmentBring => 'Aduceți';
+
+  @override
+  String get coachAppointmentNote => 'Primești un memento seara dinainte și cu două ore înainte, dacă ora este setată.';
+
+  @override
+  String get coachAppointmentRemove => 'Șterge programarea';
+
+  @override
+  String get coachAppointmentSaved => 'Programare salvată';
+
+  @override
+  String get coachAppointmentStep => 'Mergi la programare';
+
+  @override
+  String get coachAppointmentTitle => 'Programare';
+
+  @override
+  String get coachAppointmentWhen => 'Când';
+
+  @override
+  String get coachAppointmentWhere => 'Unde';
+
+  @override
+  String get coachAskNext => 'Întreabă Vaultara următorul pas';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Care este următorul pas pentru a reînnoi $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Cum îmi reînnoiesc $name? Fă-mi un plan de reînnoire cu pașii oficiali.';
+  }
+
+  @override
+  String get coachBookNote => 'Programarea se face pe site-ul oficial. Vaultara nu face niciodată programări în locul tău.';
+
+  @override
+  String get coachBookOnSite => 'Programează-te pe site-ul oficial';
+
+  @override
+  String get coachBookingLabel => 'Programare';
+
+  @override
+  String get coachCountryLabel => 'Țară';
+
+  @override
+  String get coachFeeLabel => 'Taxă';
+
+  @override
+  String get coachGetSteps => 'Arată pașii pentru țara mea';
+
+  @override
+  String get coachLinkFailed => 'Linkul nu a putut fi deschis.';
+
+  @override
+  String get coachNoPlan => 'Această înregistrare nu are încă un plan de reînnoire.';
+
+  @override
+  String get coachOpenLink => 'Deschide pagina oficială';
+
+  @override
+  String get coachPlanNote => 'Pașii devin lista de reînnoire a acestei înregistrări, cu linkurile oficiale.';
+
+  @override
+  String get coachPlanSaved => 'Plan de reînnoire salvat';
+
+  @override
+  String get coachPlanTitle => 'Planul tău de reînnoire';
+
+  @override
+  String get coachProcessingLabel => 'Timp de procesare';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara găsește pașii reali pentru țara ta pe site-uri oficiale, cu taxa, durata și unde te programezi.';
+
+  @override
+  String get coachPromoTitle => 'Asistent de reînnoire';
+
+  @override
+  String get coachRulesChange => 'Regulile și taxele se pot schimba. Verifică pagina oficială înainte să plătești.';
+
+  @override
+  String get coachSourcesLabel => 'Surse';
+
+  @override
+  String get coachStepDoneTitle => 'Marchează pasul ca făcut';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Pasul $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Marchează pasul ca nefăcut';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de pași',
+      few: '$count pași',
+      one: '1 pas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Ce urmează pentru mine?';
+
+  @override
+  String get talkBye => 'La revedere.';
+
+  @override
+  String get talkConfirmAsk => 'Spune da pentru a confirma sau nu pentru a sări.';
+
+  @override
+  String get talkDone => 'Gata.';
+
+  @override
+  String get talkEnd => 'Termină';
+
+  @override
+  String get talkListening => 'Ascult…';
+
+  @override
+  String get talkNoVoice => 'Telefonul nu are voce pentru această limbă, așa că răspunsurile apar, dar nu sunt citite.';
+
+  @override
+  String get talkNotDone => 'Nu a mers. Verifică cardul de pe ecran.';
+
+  @override
+  String get talkReady => 'Te ascult.';
+
+  @override
+  String get talkShortcut => 'Vorbește cu Vaultara';
+
+  @override
+  String get talkSkipped => 'Bine, sărit.';
+
+  @override
+  String get talkSpeaking => 'Vorbește. Atinge pentru a întrerupe';
+
+  @override
+  String get talkTapToSpeak => 'Atinge pentru a vorbi';
+
+  @override
+  String get talkThinking => 'Mă gândesc…';
+
+  @override
+  String get talkTitle => 'Mod conversație';
+
+  @override
+  String get talkYesWords => 'da,sigur,desigur,ok,bine,confirmă,fă-o,continuă';
+
+  @override
+  String get talkNoWords => 'nu,anulează,sari,nu acum,lasă';
+
+  @override
+  String get talkStopWords => 'stop,gata,asta e tot,pa,la revedere,termină conversația';
 }

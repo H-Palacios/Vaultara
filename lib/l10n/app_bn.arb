@@ -3528,5 +3528,267 @@
   "assistantForgetWordsDone": "শেখা শব্দ ভুলে যাওয়া হয়েছে",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "সঙ্গে আনুন: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "নবায়নের অ্যাপয়েন্টমেন্ট",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: আপনার অ্যাপয়েন্টমেন্ট {time}-এ।",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: আপনার অ্যাপয়েন্টমেন্ট আগামীকাল।",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "আপনার নবায়ন পরিকল্পনা তৈরি হচ্ছে",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "সরকারি উৎস দেখা হচ্ছে",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "সঙ্গে আনুন",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "আগের দিন সন্ধ্যায় এবং সময় দেওয়া থাকলে দুই ঘণ্টা আগে রিমাইন্ডার পাবেন।",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "অ্যাপয়েন্টমেন্ট সরান",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "অ্যাপয়েন্টমেন্ট সেভ হয়েছে",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "অ্যাপয়েন্টমেন্টে যান",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "অ্যাপয়েন্টমেন্ট",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "কখন",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "কোথায়",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "পরের ধাপ Vaultara-কে জিজ্ঞাসা করুন",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "আমার {name} নবায়নের পরের ধাপ কী?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "আমি কীভাবে আমার {name} নবায়ন করব? সরকারি ধাপসহ একটি নবায়ন পরিকল্পনা বানিয়ে দিন।",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "বুকিং সরকারি সাইটে হয়। Vaultara কখনো আপনার হয়ে বুক করে না।",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "সরকারি সাইটে বুক করুন",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "বুকিং",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "দেশ",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "ফি",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "আমার দেশের ধাপগুলো দেখান",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "লিংকটি খোলা যায়নি।",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "এই রেকর্ডের এখনো কোনো নবায়ন পরিকল্পনা নেই।",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "সরকারি পেজ খুলুন",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "ধাপগুলো সরকারি লিংকসহ এই রেকর্ডের নবায়ন চেকলিস্ট হয়ে যাবে।",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "নবায়ন পরিকল্পনা সেভ হয়েছে",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "আপনার নবায়ন পরিকল্পনা",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "প্রক্রিয়াকরণের সময়",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara সরকারি সাইট থেকে আপনার দেশের আসল ধাপগুলো খুঁজে দেয়, ফি, সময় এবং কোথায় বুক করতে হবে তা সহ।",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "নবায়ন সহায়ক",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "নিয়ম ও ফি বদলাতে পারে। টাকা দেওয়ার আগে সরকারি পেজ দেখে নিন।",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "উৎস",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "ধাপটি সম্পন্ন হিসেবে চিহ্নিত করুন",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "ধাপ {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "ধাপটি অসম্পন্ন হিসেবে চিহ্নিত করুন",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{১টি ধাপ} other{{count}টি ধাপ}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "আমার জন্য সামনে কী আছে?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "বিদায়।",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "নিশ্চিত করতে হ্যাঁ, বাদ দিতে না বলুন।",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "হয়ে গেছে।",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "শেষ",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "শুনছি…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "আপনার ফোনে এই ভাষার কণ্ঠ নেই, তাই উত্তর দেখানো হবে কিন্তু পড়ে শোনানো হবে না।",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "হয়নি। স্ক্রিনের কার্ডটি দেখুন।",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "আমি শুনছি।",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Vaultara-র সাথে কথা বলুন",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "ঠিক আছে, বাদ দেওয়া হলো।",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "বলছে। থামাতে ট্যাপ করুন",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "বলতে ট্যাপ করুন",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "ভাবছে…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "কথা বলার মোড",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "হ্যাঁ,হাঁ,অবশ্যই,ঠিক আছে,ওকে,নিশ্চিত করুন,করুন,এগিয়ে যান",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "না,নাহ,বাতিল,বাদ দিন,এখন না",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "থামো,এটুকুই,বিদায়,বাই,কথা বলার মোড শেষ করো",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

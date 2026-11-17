@@ -9395,4 +9395,196 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'تم نسيان الكلمات المتعلَّمة';
+
+  @override
+  String appointmentBring(String items) {
+    return 'أحضر: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'موعد التجديد';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: موعدك في $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: موعدك غدًا.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'جارٍ إعداد خطة التجديد';
+
+  @override
+  String get assistantStepWeb => 'جارٍ التحقق من المصادر الرسمية';
+
+  @override
+  String get coachAppointmentBring => 'أحضر';
+
+  @override
+  String get coachAppointmentNote => 'ستصلك تذكرة مساء اليوم السابق، وقبل ساعتين إذا كان الوقت محددًا.';
+
+  @override
+  String get coachAppointmentRemove => 'إزالة الموعد';
+
+  @override
+  String get coachAppointmentSaved => 'تم حفظ الموعد';
+
+  @override
+  String get coachAppointmentStep => 'اذهب إلى الموعد';
+
+  @override
+  String get coachAppointmentTitle => 'الموعد';
+
+  @override
+  String get coachAppointmentWhen => 'متى';
+
+  @override
+  String get coachAppointmentWhere => 'أين';
+
+  @override
+  String get coachAskNext => 'اسأل Vaultara عن الخطوة التالية';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'ما الخطوة التالية لتجديد $name؟';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'كيف أجدد $name؟ أعدّ لي خطة تجديد بالخطوات الرسمية.';
+  }
+
+  @override
+  String get coachBookNote => 'الحجز يتم على الموقع الرسمي. Vaultara لا يحجز نيابةً عنك أبدًا.';
+
+  @override
+  String get coachBookOnSite => 'احجز على الموقع الرسمي';
+
+  @override
+  String get coachBookingLabel => 'الحجز';
+
+  @override
+  String get coachCountryLabel => 'البلد';
+
+  @override
+  String get coachFeeLabel => 'الرسوم';
+
+  @override
+  String get coachGetSteps => 'احصل على خطوات بلدي';
+
+  @override
+  String get coachLinkFailed => 'تعذّر فتح الرابط.';
+
+  @override
+  String get coachNoPlan => 'لا توجد خطة تجديد لهذا السجل بعد.';
+
+  @override
+  String get coachOpenLink => 'افتح الصفحة الرسمية';
+
+  @override
+  String get coachPlanNote => 'تصبح الخطوات قائمة تجديد هذا السجل، مع الروابط الرسمية.';
+
+  @override
+  String get coachPlanSaved => 'تم حفظ خطة التجديد';
+
+  @override
+  String get coachPlanTitle => 'خطة التجديد';
+
+  @override
+  String get coachProcessingLabel => 'مدة المعالجة';
+
+  @override
+  String get coachPromoBody => 'يجد Ask Vaultara الخطوات الحقيقية لبلدك على المواقع الرسمية، مع الرسوم والمدة ومكان الحجز.';
+
+  @override
+  String get coachPromoTitle => 'مدرّب التجديد';
+
+  @override
+  String get coachRulesChange => 'قد تتغير القواعد والرسوم. راجع الصفحة الرسمية قبل الدفع.';
+
+  @override
+  String get coachSourcesLabel => 'المصادر';
+
+  @override
+  String get coachStepDoneTitle => 'وضع علامة تم على الخطوة';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'الخطوة $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'إزالة علامة تم من الخطوة';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خطوة',
+      many: '$count خطوة',
+      few: '$count خطوات',
+      two: '$count خطوتان',
+      one: 'خطوة واحدة',
+      zero: 'لا خطوات',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'ما الذي ينتظرني قريبًا؟';
+
+  @override
+  String get talkBye => 'مع السلامة.';
+
+  @override
+  String get talkConfirmAsk => 'قل نعم للتأكيد، أو لا للتخطي.';
+
+  @override
+  String get talkDone => 'تم.';
+
+  @override
+  String get talkEnd => 'إنهاء';
+
+  @override
+  String get talkListening => 'جارٍ الاستماع…';
+
+  @override
+  String get talkNoVoice => 'لا يوجد صوت لهذه اللغة في هاتفك، لذا تظهر الإجابات دون قراءتها.';
+
+  @override
+  String get talkNotDone => 'لم يتم ذلك. راجع البطاقة على الشاشة.';
+
+  @override
+  String get talkReady => 'أنا أستمع.';
+
+  @override
+  String get talkShortcut => 'تحدث مع Vaultara';
+
+  @override
+  String get talkSkipped => 'حسنًا، تم التخطي.';
+
+  @override
+  String get talkSpeaking => 'يتحدث. اضغط للمقاطعة';
+
+  @override
+  String get talkTapToSpeak => 'اضغط للتحدث';
+
+  @override
+  String get talkThinking => 'يفكر…';
+
+  @override
+  String get talkTitle => 'وضع المحادثة';
+
+  @override
+  String get talkYesWords => 'نعم,أجل,أكيد,حسنا,موافق,أكد,نفذ,تفضل';
+
+  @override
+  String get talkNoWords => 'لا,كلا,إلغاء,تخطى,ليس الآن';
+
+  @override
+  String get talkStopWords => 'توقف,هذا كل شيء,مع السلامة,وداعا,أنهِ وضع المحادثة';
 }

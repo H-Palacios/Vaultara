@@ -9078,4 +9078,191 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'သင်ယူထားသော စကားလုံးများကို မေ့ပြီးပါပြီ';
+
+  @override
+  String appointmentBring(String items) {
+    return 'ယူလာပါ: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'သက်တမ်းတိုးချိန်းဆိုမှု';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: သင့်ချိန်းဆိုမှုသည် $time တွင်ဖြစ်သည်။';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: သင့်ချိန်းဆိုမှုသည် မနက်ဖြန်ဖြစ်သည်။';
+  }
+
+  @override
+  String get assistantStepRenewal => 'သက်တမ်းတိုးအစီအစဉ် ပြင်ဆင်နေသည်';
+
+  @override
+  String get assistantStepWeb => 'တရားဝင်ရင်းမြစ်များ စစ်ဆေးနေသည်';
+
+  @override
+  String get coachAppointmentBring => 'ယူလာပါ';
+
+  @override
+  String get coachAppointmentNote => 'တစ်ရက်ကြိုတင် ညနေနှင့် အချိန်သတ်မှတ်ထားလျှင် နှစ်နာရီကြိုတင် သတိပေးချက်ရပါမည်။';
+
+  @override
+  String get coachAppointmentRemove => 'ချိန်းဆိုမှုကို ဖယ်ရှားရန်';
+
+  @override
+  String get coachAppointmentSaved => 'ချိန်းဆိုမှု သိမ်းပြီး';
+
+  @override
+  String get coachAppointmentStep => 'ချိန်းဆိုမှုသို့ သွားပါ';
+
+  @override
+  String get coachAppointmentTitle => 'ချိန်းဆိုမှု';
+
+  @override
+  String get coachAppointmentWhen => 'ဘယ်အချိန်';
+
+  @override
+  String get coachAppointmentWhere => 'ဘယ်နေရာ';
+
+  @override
+  String get coachAskNext => 'နောက်တစ်ဆင့်ကို Vaultara ကိုမေးရန်';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'ကျွန်ုပ်၏ $name သက်တမ်းတိုးရန် နောက်တစ်ဆင့်က ဘာလဲ?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'ကျွန်ုပ်၏ $name ကို ဘယ်လိုသက်တမ်းတိုးရမလဲ? တရားဝင်အဆင့်များဖြင့် သက်တမ်းတိုးအစီအစဉ် လုပ်ပေးပါ။';
+  }
+
+  @override
+  String get coachBookNote => 'တရားဝင်ဆိုက်တွင် ကြိုတင်စာရင်းသွင်းရသည်။ Vaultara သည် သင့်ကိုယ်စား ဘယ်တော့မှ မသွင်းပါ။';
+
+  @override
+  String get coachBookOnSite => 'တရားဝင်ဆိုက်တွင် စာရင်းသွင်းရန်';
+
+  @override
+  String get coachBookingLabel => 'စာရင်းသွင်းခြင်း';
+
+  @override
+  String get coachCountryLabel => 'နိုင်ငံ';
+
+  @override
+  String get coachFeeLabel => 'ကြေး';
+
+  @override
+  String get coachGetSteps => 'ကျွန်ုပ်နိုင်ငံအတွက် အဆင့်များရယူရန်';
+
+  @override
+  String get coachLinkFailed => 'လင့်ခ်ကို ဖွင့်မရပါ။';
+
+  @override
+  String get coachNoPlan => 'ဤမှတ်တမ်းတွင် သက်တမ်းတိုးအစီအစဉ် မရှိသေးပါ။';
+
+  @override
+  String get coachOpenLink => 'တရားဝင်စာမျက်နှာ ဖွင့်ရန်';
+
+  @override
+  String get coachPlanNote => 'အဆင့်များသည် တရားဝင်လင့်ခ်များနှင့်အတူ ဤမှတ်တမ်း၏ သက်တမ်းတိုးစာရင်း ဖြစ်လာမည်။';
+
+  @override
+  String get coachPlanSaved => 'သက်တမ်းတိုးအစီအစဉ် သိမ်းပြီး';
+
+  @override
+  String get coachPlanTitle => 'သင့်သက်တမ်းတိုးအစီအစဉ်';
+
+  @override
+  String get coachProcessingLabel => 'ဆောင်ရွက်ချိန်';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara သည် တရားဝင်ဆိုက်များမှ သင့်နိုင်ငံ၏ အမှန်တကယ်အဆင့်များကို ကြေး၊ ကြာချိန်နှင့် စာရင်းသွင်းရမည့်နေရာနှင့်အတူ ရှာပေးသည်။';
+
+  @override
+  String get coachPromoTitle => 'သက်တမ်းတိုးနည်းပြ';
+
+  @override
+  String get coachRulesChange => 'စည်းမျဉ်းနှင့် ကြေးများ ပြောင်းနိုင်သည်။ မပေးချေမီ တရားဝင်စာမျက်နှာကို စစ်ဆေးပါ။';
+
+  @override
+  String get coachSourcesLabel => 'ရင်းမြစ်များ';
+
+  @override
+  String get coachStepDoneTitle => 'အဆင့်ကို ပြီးကြောင်း မှတ်ရန်';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'အဆင့် $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'အဆင့်ကို မပြီးကြောင်း မှတ်ရန်';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'အဆင့် $count ဆင့်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'ကျွန်ုပ်အတွက် ဘာတွေလာမလဲ?';
+
+  @override
+  String get talkBye => 'နှုတ်ဆက်ပါတယ်။';
+
+  @override
+  String get talkConfirmAsk => 'အတည်ပြုရန် ဟုတ်ကဲ့၊ ကျော်ရန် မဟုတ်ဘူး ဟုပြောပါ။';
+
+  @override
+  String get talkDone => 'ပြီးပါပြီ။';
+
+  @override
+  String get talkEnd => 'ပြီးဆုံး';
+
+  @override
+  String get talkListening => 'နားထောင်နေသည်…';
+
+  @override
+  String get talkNoVoice => 'သင့်ဖုန်းတွင် ဤဘာသာစကားအတွက် အသံမရှိသဖြင့် အဖြေများကို ပြသော်လည်း ဖတ်မပြပါ။';
+
+  @override
+  String get talkNotDone => 'မအောင်မြင်ပါ။ မျက်နှာပြင်ရှိ ကတ်ကို စစ်ဆေးပါ။';
+
+  @override
+  String get talkReady => 'နားထောင်နေပါတယ်။';
+
+  @override
+  String get talkShortcut => 'Vaultara နှင့် စကားပြောရန်';
+
+  @override
+  String get talkSkipped => 'ကောင်းပြီ၊ ကျော်လိုက်ပြီ။';
+
+  @override
+  String get talkSpeaking => 'ပြောနေသည်။ ဖြတ်ရန် တို့ပါ';
+
+  @override
+  String get talkTapToSpeak => 'ပြောရန် တို့ပါ';
+
+  @override
+  String get talkThinking => 'စဉ်းစားနေသည်…';
+
+  @override
+  String get talkTitle => 'စကားပြောမုဒ်';
+
+  @override
+  String get talkYesWords => 'ဟုတ်ကဲ့,ဟုတ်,ရပါတယ်,အိုကေ,အတည်ပြု,လုပ်ပါ';
+
+  @override
+  String get talkNoWords => 'မဟုတ်ဘူး,မလုပ်နဲ့,ပယ်ဖျက်,ကျော်,အခုမဟုတ်';
+
+  @override
+  String get talkStopWords => 'ရပ်,တော်ပြီ,ဒါပဲ,နှုတ်ဆက်ပါတယ်,ဘိုင်,စကားပြောမုဒ်ပိတ်';
 }

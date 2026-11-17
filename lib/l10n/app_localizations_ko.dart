@@ -9080,4 +9080,191 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => '학습한 단어를 지웠습니다';
+
+  @override
+  String appointmentBring(String items) {
+    return '준비물: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => '갱신 예약';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: 예약 시간은 $time입니다.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: 예약은 내일입니다.';
+  }
+
+  @override
+  String get assistantStepRenewal => '갱신 계획을 만드는 중';
+
+  @override
+  String get assistantStepWeb => '공식 정보를 확인하는 중';
+
+  @override
+  String get coachAppointmentBring => '준비물';
+
+  @override
+  String get coachAppointmentNote => '전날 저녁에, 시간이 정해져 있으면 2시간 전에도 알림을 받습니다.';
+
+  @override
+  String get coachAppointmentRemove => '예약 삭제';
+
+  @override
+  String get coachAppointmentSaved => '예약 저장됨';
+
+  @override
+  String get coachAppointmentStep => '예약 장소로 가기';
+
+  @override
+  String get coachAppointmentTitle => '예약';
+
+  @override
+  String get coachAppointmentWhen => '언제';
+
+  @override
+  String get coachAppointmentWhere => '어디서';
+
+  @override
+  String get coachAskNext => 'Vaultara에 다음 단계 묻기';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return '$name 갱신의 다음 단계는 뭐야?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return '$name 어떻게 갱신해? 공식 절차로 갱신 계획을 만들어 줘.';
+  }
+
+  @override
+  String get coachBookNote => '예약은 공식 사이트에서 합니다. Vaultara가 대신 예약하지 않습니다.';
+
+  @override
+  String get coachBookOnSite => '공식 사이트에서 예약';
+
+  @override
+  String get coachBookingLabel => '예약';
+
+  @override
+  String get coachCountryLabel => '국가';
+
+  @override
+  String get coachFeeLabel => '수수료';
+
+  @override
+  String get coachGetSteps => '내 나라의 절차 찾기';
+
+  @override
+  String get coachLinkFailed => '링크를 열 수 없습니다.';
+
+  @override
+  String get coachNoPlan => '이 기록에는 아직 갱신 계획이 없습니다.';
+
+  @override
+  String get coachOpenLink => '공식 페이지 열기';
+
+  @override
+  String get coachPlanNote => '단계는 공식 링크와 함께 이 기록의 갱신 체크리스트가 됩니다.';
+
+  @override
+  String get coachPlanSaved => '갱신 계획 저장됨';
+
+  @override
+  String get coachPlanTitle => '나의 갱신 계획';
+
+  @override
+  String get coachProcessingLabel => '처리 기간';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara가 공식 사이트에서 내 나라의 실제 절차를 찾아 수수료, 기간, 예약 장소까지 알려 줍니다.';
+
+  @override
+  String get coachPromoTitle => '갱신 코치';
+
+  @override
+  String get coachRulesChange => '규정과 수수료는 바뀔 수 있습니다. 결제하기 전에 공식 페이지를 확인하세요.';
+
+  @override
+  String get coachSourcesLabel => '출처';
+
+  @override
+  String get coachStepDoneTitle => '단계 완료로 표시';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number단계';
+  }
+
+  @override
+  String get coachStepUndoTitle => '단계 미완료로 표시';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count단계',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => '곧 다가오는 일이 뭐야?';
+
+  @override
+  String get talkBye => '안녕히 계세요.';
+
+  @override
+  String get talkConfirmAsk => '확인하려면 네, 건너뛰려면 아니요라고 말하세요.';
+
+  @override
+  String get talkDone => '완료했습니다.';
+
+  @override
+  String get talkEnd => '종료';
+
+  @override
+  String get talkListening => '듣는 중…';
+
+  @override
+  String get talkNoVoice => '휴대폰에 이 언어의 음성이 없어 답변은 표시되지만 읽어 주지 않습니다.';
+
+  @override
+  String get talkNotDone => '처리되지 않았습니다. 화면의 카드를 확인하세요.';
+
+  @override
+  String get talkReady => '듣고 있어요.';
+
+  @override
+  String get talkShortcut => 'Vaultara와 대화';
+
+  @override
+  String get talkSkipped => '알겠어요, 건너뛰었어요.';
+
+  @override
+  String get talkSpeaking => '말하는 중. 탭하여 중단';
+
+  @override
+  String get talkTapToSpeak => '탭하여 말하기';
+
+  @override
+  String get talkThinking => '생각하는 중…';
+
+  @override
+  String get talkTitle => '대화 모드';
+
+  @override
+  String get talkYesWords => '네,예,응,그래,좋아,오케이,확인,해 줘';
+
+  @override
+  String get talkNoWords => '아니요,아니,취소,건너뛰기,지금은 아니야';
+
+  @override
+  String get talkStopWords => '그만,멈춰,됐어,안녕,바이,대화 모드 종료';
 }

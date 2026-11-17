@@ -9297,4 +9297,194 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Išmokti žodžiai pamiršti';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Pasiimkite: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Atnaujinimo vizitas';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: jūsų vizitas $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: jūsų vizitas rytoj.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Rengiamas atnaujinimo planas';
+
+  @override
+  String get assistantStepWeb => 'Tikrinami oficialūs šaltiniai';
+
+  @override
+  String get coachAppointmentBring => 'Pasiimkite';
+
+  @override
+  String get coachAppointmentNote => 'Priminimą gausite išvakarių vakarą ir dvi valandas prieš, jei laikas nustatytas.';
+
+  @override
+  String get coachAppointmentRemove => 'Pašalinti vizitą';
+
+  @override
+  String get coachAppointmentSaved => 'Vizitas išsaugotas';
+
+  @override
+  String get coachAppointmentStep => 'Eikite į vizitą';
+
+  @override
+  String get coachAppointmentTitle => 'Vizitas';
+
+  @override
+  String get coachAppointmentWhen => 'Kada';
+
+  @override
+  String get coachAppointmentWhere => 'Kur';
+
+  @override
+  String get coachAskNext => 'Paklausti Vaultaros kito žingsnio';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Koks kitas žingsnis atnaujinant mano $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Kaip atnaujinti mano $name? Sudaryk man atnaujinimo planą su oficialiais žingsniais.';
+  }
+
+  @override
+  String get coachBookNote => 'Registruojatės oficialioje svetainėje. Vaultara niekada neregistruoja už jus.';
+
+  @override
+  String get coachBookOnSite => 'Registruotis oficialioje svetainėje';
+
+  @override
+  String get coachBookingLabel => 'Registracija';
+
+  @override
+  String get coachCountryLabel => 'Šalis';
+
+  @override
+  String get coachFeeLabel => 'Mokestis';
+
+  @override
+  String get coachGetSteps => 'Gauti žingsnius mano šaliai';
+
+  @override
+  String get coachLinkFailed => 'Nuorodos atidaryti nepavyko.';
+
+  @override
+  String get coachNoPlan => 'Šis įrašas dar neturi atnaujinimo plano.';
+
+  @override
+  String get coachOpenLink => 'Atidaryti oficialų puslapį';
+
+  @override
+  String get coachPlanNote => 'Žingsniai tampa šio įrašo atnaujinimo sąrašu su oficialiomis nuorodomis.';
+
+  @override
+  String get coachPlanSaved => 'Atnaujinimo planas išsaugotas';
+
+  @override
+  String get coachPlanTitle => 'Jūsų atnaujinimo planas';
+
+  @override
+  String get coachProcessingLabel => 'Tvarkymo laikas';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara oficialiose svetainėse randa tikrus jūsų šalies žingsnius, su mokesčiu, trukme ir registracijos vieta.';
+
+  @override
+  String get coachPromoTitle => 'Atnaujinimo pagalbininkas';
+
+  @override
+  String get coachRulesChange => 'Taisyklės ir mokesčiai gali keistis. Prieš mokėdami patikrinkite oficialų puslapį.';
+
+  @override
+  String get coachSourcesLabel => 'Šaltiniai';
+
+  @override
+  String get coachStepDoneTitle => 'Pažymėti žingsnį kaip atliktą';
+
+  @override
+  String coachStepLabel(int number) {
+    return '$number žingsnis';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Pažymėti žingsnį kaip neatliktą';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count žingsnių',
+      many: '$count žingsnio',
+      few: '$count žingsniai',
+      one: '1 žingsnis',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Kas manęs laukia?';
+
+  @override
+  String get talkBye => 'Viso gero.';
+
+  @override
+  String get talkConfirmAsk => 'Sakykite taip, kad patvirtintumėte, arba ne, kad praleistumėte.';
+
+  @override
+  String get talkDone => 'Atlikta.';
+
+  @override
+  String get talkEnd => 'Baigti';
+
+  @override
+  String get talkListening => 'Klausosi…';
+
+  @override
+  String get talkNoVoice => 'Telefone nėra šios kalbos balso, todėl atsakymai rodomi, bet neskaitomi.';
+
+  @override
+  String get talkNotDone => 'Nepavyko. Patikrinkite kortelę ekrane.';
+
+  @override
+  String get talkReady => 'Klausausi.';
+
+  @override
+  String get talkShortcut => 'Kalbėti su Vaultara';
+
+  @override
+  String get talkSkipped => 'Gerai, praleista.';
+
+  @override
+  String get talkSpeaking => 'Kalba. Bakstelėkite, kad pertrauktumėte';
+
+  @override
+  String get talkTapToSpeak => 'Bakstelėkite, kad kalbėtumėte';
+
+  @override
+  String get talkThinking => 'Galvoja…';
+
+  @override
+  String get talkTitle => 'Pokalbio režimas';
+
+  @override
+  String get talkYesWords => 'taip,jo,žinoma,gerai,ok,patvirtink,padaryk,pirmyn';
+
+  @override
+  String get talkNoWords => 'ne,atšaukti,praleisti,ne dabar,palik';
+
+  @override
+  String get talkStopWords => 'stop,užteks,viskas,viso gero,iki,baigti pokalbį';
 }

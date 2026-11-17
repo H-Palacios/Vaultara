@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "زده شوې کلمې هېرې شوې",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "راوړئ: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "د نوي کولو وخت",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: ستاسو وخت په {time} دی.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: ستاسو وخت سبا دی.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "ستاسو د نوي کولو پلان چمتو کېږي",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "رسمي سرچینې کتل کېږي",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "راوړئ",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "تېره ماښام به یادونه درشي، او که وخت ټاکل شوی وي دوه ساعته مخکې هم.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "وخت لرې کړئ",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "وخت خوندي شو",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "وخت ته لاړ شئ",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "وخت",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "کله",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "چېرته",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "راتلونکی ګام له Vaultara وپوښتئ",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "زما د {name} نوي کولو راتلونکی ګام څه دی؟",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "زه خپل {name} څنګه نوی کړم؟ ما ته د رسمي ګامونو سره د نوي کولو پلان جوړ کړه.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "وخت په رسمي سایټ کې نیسئ. Vaultara هېڅکله ستاسو پر ځای وخت نه نیسي.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "په رسمي سایټ کې وخت ونیسئ",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "وخت نیول",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "هېواد",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "فیس",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "زما د هېواد ګامونه ومومئ",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "لینک خلاص نشو.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "دا ریکارډ تر اوسه د نوي کولو پلان نه لري.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "رسمي پاڼه خلاصه کړئ",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "ګامونه د رسمي لینکونو سره د دې ریکارډ د نوي کولو لېست کېږي.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "د نوي کولو پلان خوندي شو",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "ستاسو د نوي کولو پلان",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "د پروسس وخت",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara په رسمي سایټونو کې ستاسو د هېواد اصلي ګامونه مومي، د فیس، وخت او د وخت نیولو ځای سره.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "د نوي کولو لارښود",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "قواعد او فیسونه بدلېدای شي. له تادیې مخکې رسمي پاڼه وګورئ.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "سرچینې",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "ګام بشپړ په نښه کړئ",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "ګام {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "ګام نابشپړ په نښه کړئ",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 ګام} other{{count} ګامونه}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "زما لپاره څه راروان دي؟",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "په مخه مو ښه.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "د تایید لپاره هو، او د پرېښودو لپاره نه ووایاست.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "وشو.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "پای",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "اوري…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "ستاسو تلیفون د دې ژبې غږ نه لري، نو ځوابونه ښودل کېږي خو نه لوستل کېږي.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "ونشو. په سکرین کارت وګورئ.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "زه اورم.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "له Vaultara سره خبرې وکړئ",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "سمه ده، پرېښودل شو.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "خبرې کوي. د مخنیوي لپاره ټک کړئ",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "د خبرو لپاره ټک کړئ",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "فکر کوي…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "د خبرو حالت",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "هو,هوکې,ښه,سمه ده,اوکې,تایید,وکړه",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "نه,نه نه,لغوه,پرېږده,اوس نه",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "ودرېږه,بس,همدومره,خدای پامان,د خبرو حالت پای ته ورسوه",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

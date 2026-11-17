@@ -9321,4 +9321,194 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Выученные слова забыты';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Возьмите: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Запись на продление';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: ваша запись в $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: ваша запись завтра.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Готовлю план продления';
+
+  @override
+  String get assistantStepWeb => 'Проверяю официальные источники';
+
+  @override
+  String get coachAppointmentBring => 'Возьмите';
+
+  @override
+  String get coachAppointmentNote => 'Напоминание придёт вечером накануне и за два часа, если указано время.';
+
+  @override
+  String get coachAppointmentRemove => 'Удалить запись';
+
+  @override
+  String get coachAppointmentSaved => 'Запись сохранена';
+
+  @override
+  String get coachAppointmentStep => 'Идите на приём';
+
+  @override
+  String get coachAppointmentTitle => 'Запись';
+
+  @override
+  String get coachAppointmentWhen => 'Когда';
+
+  @override
+  String get coachAppointmentWhere => 'Где';
+
+  @override
+  String get coachAskNext => 'Спросить Vaultara о следующем шаге';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Какой следующий шаг, чтобы продлить $name?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Как продлить $name? Составь мне план продления с официальными шагами.';
+  }
+
+  @override
+  String get coachBookNote => 'Запись делается на официальном сайте. Vaultara никогда не записывает за вас.';
+
+  @override
+  String get coachBookOnSite => 'Записаться на официальном сайте';
+
+  @override
+  String get coachBookingLabel => 'Запись';
+
+  @override
+  String get coachCountryLabel => 'Страна';
+
+  @override
+  String get coachFeeLabel => 'Пошлина';
+
+  @override
+  String get coachGetSteps => 'Найти шаги для моей страны';
+
+  @override
+  String get coachLinkFailed => 'Не удалось открыть ссылку.';
+
+  @override
+  String get coachNoPlan => 'У этой записи пока нет плана продления.';
+
+  @override
+  String get coachOpenLink => 'Открыть официальную страницу';
+
+  @override
+  String get coachPlanNote => 'Шаги станут списком продления этой записи, с официальными ссылками.';
+
+  @override
+  String get coachPlanSaved => 'План продления сохранён';
+
+  @override
+  String get coachPlanTitle => 'Ваш план продления';
+
+  @override
+  String get coachProcessingLabel => 'Срок оформления';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara находит настоящие шаги для вашей страны на официальных сайтах: пошлину, сроки и где записаться.';
+
+  @override
+  String get coachPromoTitle => 'Помощник по продлению';
+
+  @override
+  String get coachRulesChange => 'Правила и пошлины могут меняться. Проверьте официальную страницу перед оплатой.';
+
+  @override
+  String get coachSourcesLabel => 'Источники';
+
+  @override
+  String get coachStepDoneTitle => 'Отметить шаг как выполненный';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Шаг $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'Отметить шаг как невыполненный';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count шага',
+      many: '$count шагов',
+      few: '$count шага',
+      one: '$count шаг',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Что меня ждёт?';
+
+  @override
+  String get talkBye => 'До свидания.';
+
+  @override
+  String get talkConfirmAsk => 'Скажите да, чтобы подтвердить, или нет, чтобы пропустить.';
+
+  @override
+  String get talkDone => 'Готово.';
+
+  @override
+  String get talkEnd => 'Завершить';
+
+  @override
+  String get talkListening => 'Слушаю…';
+
+  @override
+  String get talkNoVoice => 'В телефоне нет голоса для этого языка, поэтому ответы показываются, но не читаются вслух.';
+
+  @override
+  String get talkNotDone => 'Не получилось. Проверьте карточку на экране.';
+
+  @override
+  String get talkReady => 'Я слушаю.';
+
+  @override
+  String get talkShortcut => 'Поговорить с Vaultara';
+
+  @override
+  String get talkSkipped => 'Хорошо, пропущено.';
+
+  @override
+  String get talkSpeaking => 'Говорит. Нажмите, чтобы прервать';
+
+  @override
+  String get talkTapToSpeak => 'Нажмите, чтобы говорить';
+
+  @override
+  String get talkThinking => 'Думаю…';
+
+  @override
+  String get talkTitle => 'Режим разговора';
+
+  @override
+  String get talkYesWords => 'да,ага,конечно,хорошо,ок,окей,подтверди,давай';
+
+  @override
+  String get talkNoWords => 'нет,неа,отмена,пропусти,не сейчас';
+
+  @override
+  String get talkStopWords => 'стоп,хватит,это всё,пока,до свидания,заверши разговор';
 }

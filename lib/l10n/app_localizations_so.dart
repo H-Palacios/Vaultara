@@ -9141,4 +9141,192 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'Erayada la bartay waa la illoobay';
+
+  @override
+  String appointmentBring(String items) {
+    return 'Keen: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'Ballanta cusboonaysiinta';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: ballantaadu waa $time.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: ballantaadu waa berri.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'Waxaa la diyaarinayaa qorshahaaga cusboonaysiinta';
+
+  @override
+  String get assistantStepWeb => 'Waxaa la hubinayaa ilaha rasmiga ah';
+
+  @override
+  String get coachAppointmentBring => 'Keen';
+
+  @override
+  String get coachAppointmentNote => 'Xusuusin ayaad helaysaa fiidka ka hor, iyo laba saacadood ka hor haddii waqtiga la dejiyay.';
+
+  @override
+  String get coachAppointmentRemove => 'Ka saar ballanta';
+
+  @override
+  String get coachAppointmentSaved => 'Ballanta waa la keydiyay';
+
+  @override
+  String get coachAppointmentStep => 'Tag ballanta';
+
+  @override
+  String get coachAppointmentTitle => 'Ballan';
+
+  @override
+  String get coachAppointmentWhen => 'Goorma';
+
+  @override
+  String get coachAppointmentWhere => 'Xaggee';
+
+  @override
+  String get coachAskNext => 'Weydii Vaultara tallaabada xigta';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'Waa maxay tallaabada xigta ee lagu cusboonaysiinayo $name-kayga?';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'Sideen u cusboonaysiiyaa $name-kayga? Ii samee qorshe cusboonaysiin oo leh tallaabooyinka rasmiga ah.';
+  }
+
+  @override
+  String get coachBookNote => 'Ballanta waxaad ku qabsataa bogga rasmiga ah. Vaultara weligeed kuma qabato adiga beddelkaaga.';
+
+  @override
+  String get coachBookOnSite => 'Ku qabso bogga rasmiga ah';
+
+  @override
+  String get coachBookingLabel => 'Ballan qabasho';
+
+  @override
+  String get coachCountryLabel => 'Waddan';
+
+  @override
+  String get coachFeeLabel => 'Khidmad';
+
+  @override
+  String get coachGetSteps => 'Hel tallaabooyinka waddankayga';
+
+  @override
+  String get coachLinkFailed => 'Xiriirka lama furi karin.';
+
+  @override
+  String get coachNoPlan => 'Diiwaankan weli ma laha qorshe cusboonaysiin.';
+
+  @override
+  String get coachOpenLink => 'Fur bogga rasmiga ah';
+
+  @override
+  String get coachPlanNote => 'Tallaabooyinku waxay noqonayaan liiska cusboonaysiinta diiwaankan, oo leh xiriirrada rasmiga ah.';
+
+  @override
+  String get coachPlanSaved => 'Qorshaha cusboonaysiinta waa la keydiyay';
+
+  @override
+  String get coachPlanTitle => 'Qorshahaaga cusboonaysiinta';
+
+  @override
+  String get coachProcessingLabel => 'Waqtiga habaynta';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara wuxuu ka helaa tallaabooyinka dhabta ah ee waddankaaga bogagga rasmiga ah, oo leh khidmadda, muddada iyo halka lagu qabsado.';
+
+  @override
+  String get coachPromoTitle => 'Tababaraha cusboonaysiinta';
+
+  @override
+  String get coachRulesChange => 'Xeerarka iyo khidmadaha way isbeddeli karaan. Hubi bogga rasmiga ah ka hor intaadan bixin.';
+
+  @override
+  String get coachSourcesLabel => 'Ilaha';
+
+  @override
+  String get coachStepDoneTitle => 'U calaamadee tallaabada mid la dhammeeyay';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'Tallaabada $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'U calaamadee tallaabada mid aan la dhammayn';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tallaabo',
+      one: '1 tallaabo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'Maxaa ii soo socda?';
+
+  @override
+  String get talkBye => 'Nabadgelyo.';
+
+  @override
+  String get talkConfirmAsk => 'Dheh haa si aad u xaqiijiso, ama maya si aad uga boodo.';
+
+  @override
+  String get talkDone => 'Waa la dhammeeyay.';
+
+  @override
+  String get talkEnd => 'Dhammee';
+
+  @override
+  String get talkListening => 'Dhegeysanaya…';
+
+  @override
+  String get talkNoVoice => 'Taleefankaagu ma laha cod luqaddan, sidaas darteed jawaabaha waa la muujiyaa laakiin lama akhriyo.';
+
+  @override
+  String get talkNotDone => 'Ma dhicin. Hubi kaarka shaashadda.';
+
+  @override
+  String get talkReady => 'Waan dhegeysanayaa.';
+
+  @override
+  String get talkShortcut => 'La hadal Vaultara';
+
+  @override
+  String get talkSkipped => 'Hagaag, waa laga booday.';
+
+  @override
+  String get talkSpeaking => 'Hadlaya. Taabo si aad u joojiso';
+
+  @override
+  String get talkTapToSpeak => 'Taabo si aad u hadasho';
+
+  @override
+  String get talkThinking => 'Fikiraya…';
+
+  @override
+  String get talkTitle => 'Habka wada hadalka';
+
+  @override
+  String get talkYesWords => 'haa,haye,dabcan,hagaag,ok,xaqiiji,samee,sii wad';
+
+  @override
+  String get talkNoWords => 'maya,may,jooji,ka bood,hadda maya';
+
+  @override
+  String get talkStopWords => 'jooji,waa intaas,nabadgelyo,bay,dhammee habka wada hadalka';
 }

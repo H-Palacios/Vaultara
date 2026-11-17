@@ -3497,5 +3497,267 @@
   "assistantForgetWordsDone": "A ti gbàgbé àwọn ọ̀rọ̀ tí a kọ́",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "Mú wá: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "Ìpàdé fún ìsọdọ̀tun",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: ìpàdé rẹ jẹ́ ní agogo {time}.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: ìpàdé rẹ jẹ́ ọ̀la.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "Ń ṣe ètò ìsọdọ̀tun rẹ",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "Ń ṣàyẹ̀wò àwọn orísun ìjọba",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "Mú wá",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "Ìránnilétí yóò dé ní ìrọ̀lẹ́ ọjọ́ tó ṣáájú, àti wákàtí méjì ṣáájú tí a bá ṣètò àkókò.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "Yọ ìpàdé kúrò",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "A ti fi ìpàdé pamọ́",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "Lọ sí ìpàdé",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "Ìpàdé",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "Nígbà wo",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "Níbo",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "Béèrè ìgbésẹ̀ tó kàn lọ́wọ́ Vaultara",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "Kí ni ìgbésẹ̀ tó kàn láti sọ {name} mi dọ̀tun?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "Báwo ni mo ṣe lè sọ {name} mi dọ̀tun? Ṣe ètò ìsọdọ̀tun fún mi pẹ̀lú àwọn ìgbésẹ̀ ìjọba.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "O máa ń ṣe ìfiṣẹ̀ṣẹ̀ lórí ojú-òpó ìjọba. Vaultara kì í ṣe é fún ọ láé.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "Fi orúkọ sílẹ̀ lórí ojú-òpó ìjọba",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "Ìfiṣẹ̀ṣẹ̀",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "Orílẹ̀-èdè",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "Owó",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "Gba àwọn ìgbésẹ̀ fún orílẹ̀-èdè mi",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "A kò lè ṣí ìsopọ̀ náà.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "Àkọsílẹ̀ yìí kò tíì ní ètò ìsọdọ̀tun.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "Ṣí ojú-ìwé ìjọba",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "Àwọn ìgbésẹ̀ náà di àkójọ ìsọdọ̀tun àkọsílẹ̀ yìí, pẹ̀lú àwọn ìsopọ̀ ìjọba.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "A ti fi ètò ìsọdọ̀tun pamọ́",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "Ètò ìsọdọ̀tun rẹ",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "Àkókò ìṣiṣẹ́",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara ń rí àwọn ìgbésẹ̀ gidi fún orílẹ̀-èdè rẹ lórí àwọn ojú-òpó ìjọba, pẹ̀lú owó, àkókò àti ibi tí o ti lè fi orúkọ sílẹ̀.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "Olùkọ́ ìsọdọ̀tun",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "Àwọn òfin àti owó lè yí padà. Ṣàyẹ̀wò ojú-ìwé ìjọba kí o tó sanwó.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "Àwọn orísun",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "Sàmì sí ìgbésẹ̀ pé ó ti parí",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "Ìgbésẹ̀ {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "Sàmì sí ìgbésẹ̀ pé kò tíì parí",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, other{ìgbésẹ̀ {count}}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "Kí ló ń bọ̀ fún mi?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "Ó dàbọ̀.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "Sọ bẹ́ẹ̀ni láti jẹ́rìí, tàbí rárá láti fò ó.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "Ó ti parí.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "Parí",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "Ń gbọ́…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "Fóònù rẹ kò ní ohùn fún èdè yìí, nítorí náà a ń fi ìdáhùn hàn ṣùgbọ́n a kì í kà wọ́n.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "Kò ṣẹlẹ̀. Ṣàyẹ̀wò káàdì lórí ìbòjú.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "Mo ń gbọ́.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Bá Vaultara sọ̀rọ̀",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "Ó dáa, a ti fò ó.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "Ń sọ̀rọ̀. Tẹ̀ láti dá a dúró",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "Tẹ̀ láti sọ̀rọ̀",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "Ń ronú…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "Ipò ìsọ̀rọ̀",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "bẹ́ẹ̀ni,bẹẹni,ó dáa,dájúdájú,ok,jẹ́rìí,ṣe é,tẹ̀síwájú",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "rárá,rara,fagilé,fò ó,kì í ṣe báyìí",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "dúró,ó tó,ìyẹn nìkan,ó dàbọ̀,bye,parí ipò ìsọ̀rọ̀",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

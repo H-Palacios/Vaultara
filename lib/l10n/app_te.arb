@@ -3514,5 +3514,267 @@
   "assistantForgetWordsDone": "నేర్చుకున్న పదాలు మరచిపోయాం",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "తీసుకురండి: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "పునరుద్ధరణ అపాయింట్‌మెంట్",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: మీ అపాయింట్‌మెంట్ {time}కి.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: మీ అపాయింట్‌మెంట్ రేపు.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "మీ పునరుద్ధరణ ప్లాన్ సిద్ధమవుతోంది",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "అధికారిక మూలాలను తనిఖీ చేస్తోంది",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "తీసుకురండి",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "ముందు రోజు సాయంత్రం, సమయం సెట్ చేస్తే రెండు గంటల ముందు కూడా రిమైండర్ వస్తుంది.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "అపాయింట్‌మెంట్ తీసివేయి",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "అపాయింట్‌మెంట్ సేవ్ అయింది",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "అపాయింట్‌మెంట్‌కు వెళ్లండి",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "అపాయింట్‌మెంట్",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "ఎప్పుడు",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "ఎక్కడ",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "తదుపరి దశను Vaultaraని అడగండి",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "నా {name} పునరుద్ధరించడానికి తదుపరి దశ ఏమిటి?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "నా {name}ని ఎలా పునరుద్ధరించాలి? అధికారిక దశలతో పునరుద్ధరణ ప్లాన్ చేయండి.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "బుకింగ్ అధికారిక సైట్‌లో జరుగుతుంది. Vaultara ఎప్పుడూ మీ తరఫున బుక్ చేయదు.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "అధికారిక సైట్‌లో బుక్ చేయండి",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "బుకింగ్",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "దేశం",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "రుసుము",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "నా దేశానికి దశలు పొందండి",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "లింక్ తెరవలేకపోయాం.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "ఈ రికార్డ్‌కు ఇంకా పునరుద్ధరణ ప్లాన్ లేదు.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "అధికారిక పేజీ తెరవండి",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "దశలు అధికారిక లింక్‌లతో ఈ రికార్డ్ పునరుద్ధరణ జాబితాగా మారతాయి.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "పునరుద్ధరణ ప్లాన్ సేవ్ అయింది",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "మీ పునరుద్ధరణ ప్లాన్",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "ప్రాసెసింగ్ సమయం",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara అధికారిక సైట్లలో మీ దేశపు నిజమైన దశలను కనుగొంటుంది, రుసుము, సమయం, బుక్ చేయాల్సిన చోటుతో సహా.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "పునరుద్ధరణ కోచ్",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "నియమాలు, రుసుములు మారవచ్చు. చెల్లించే ముందు అధికారిక పేజీ చూడండి.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "మూలాలు",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "దశను పూర్తయినట్లు గుర్తించు",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "దశ {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "దశను పూర్తికానట్లు గుర్తించు",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 దశ} other{{count} దశలు}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "నాకు ముందు ఏముంది?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "వీడ్కోలు.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "నిర్ధారించడానికి అవును, దాటవేయడానికి కాదు అని చెప్పండి.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "పూర్తయింది.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "ముగించు",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "వింటోంది…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "మీ ఫోన్‌లో ఈ భాషకు వాయిస్ లేదు, కాబట్టి సమాధానాలు కనిపిస్తాయి కానీ చదవబడవు.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "అది జరగలేదు. స్క్రీన్‌పై కార్డ్ చూడండి.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "నేను వింటున్నాను.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "Vaultaraతో మాట్లాడండి",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "సరే, దాటవేయబడింది.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "మాట్లాడుతోంది. ఆపడానికి ట్యాప్ చేయండి",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "మాట్లాడటానికి ట్యాప్ చేయండి",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "ఆలోచిస్తోంది…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "సంభాషణ మోడ్",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "అవును,ఆ,తప్పకుండా,సరే,ఓకే,నిర్ధారించు,చేయి,కొనసాగించు",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "కాదు,వద్దు,రద్దు చేయి,దాటవేయి,ఇప్పుడు కాదు",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "ఆపు,చాలు,అంతే,వీడ్కోలు,బై,సంభాషణ మోడ్ ముగించు",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

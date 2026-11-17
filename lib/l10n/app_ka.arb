@@ -3515,5 +3515,267 @@
   "assistantForgetWordsDone": "ნასწავლი სიტყვები დავიწყებულია",
   "@assistantForgetWordsDone": {
     "description": "Snackbar after learned words were cleared."
+  },
+  "appointmentBring": "წამოიღეთ: {items}",
+  "@appointmentBring": {
+    "description": "appointmentBring",
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentReminderTitle": "განახლების ვიზიტი",
+  "@appointmentReminderTitle": {
+    "description": "appointmentReminderTitle"
+  },
+  "appointmentSoon": "{name}: თქვენი ვიზიტია {time}-ზე.",
+  "@appointmentSoon": {
+    "description": "Notification body two hours before; name is the record, time is HH:MM.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "appointmentTomorrow": "{name}: თქვენი ვიზიტი ხვალაა.",
+  "@appointmentTomorrow": {
+    "description": "appointmentTomorrow",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantStepRenewal": "მზადდება განახლების გეგმა",
+  "@assistantStepRenewal": {
+    "description": "assistantStepRenewal"
+  },
+  "assistantStepWeb": "მოწმდება ოფიციალური წყაროები",
+  "@assistantStepWeb": {
+    "description": "assistantStepWeb"
+  },
+  "coachAppointmentBring": "წამოიღეთ",
+  "@coachAppointmentBring": {
+    "description": "coachAppointmentBring"
+  },
+  "coachAppointmentNote": "შეხსენებას მიიღებთ წინა საღამოს, და ორი საათით ადრე, თუ დრო მითითებულია.",
+  "@coachAppointmentNote": {
+    "description": "coachAppointmentNote"
+  },
+  "coachAppointmentRemove": "ვიზიტის წაშლა",
+  "@coachAppointmentRemove": {
+    "description": "coachAppointmentRemove"
+  },
+  "coachAppointmentSaved": "ვიზიტი შენახულია",
+  "@coachAppointmentSaved": {
+    "description": "coachAppointmentSaved"
+  },
+  "coachAppointmentStep": "წადით ვიზიტზე",
+  "@coachAppointmentStep": {
+    "description": "coachAppointmentStep"
+  },
+  "coachAppointmentTitle": "ვიზიტი",
+  "@coachAppointmentTitle": {
+    "description": "coachAppointmentTitle"
+  },
+  "coachAppointmentWhen": "როდის",
+  "@coachAppointmentWhen": {
+    "description": "coachAppointmentWhen"
+  },
+  "coachAppointmentWhere": "სად",
+  "@coachAppointmentWhere": {
+    "description": "coachAppointmentWhere"
+  },
+  "coachAskNext": "ჰკითხეთ Vaultara-ს შემდეგი ნაბიჯი",
+  "@coachAskNext": {
+    "description": "coachAskNext"
+  },
+  "coachAskNextPrompt": "რა არის შემდეგი ნაბიჯი ჩემი {name}-ის განახლებისთვის?",
+  "@coachAskNextPrompt": {
+    "description": "Message sent to Ask Vaultara from a saved plan; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachAskPrompt": "როგორ განვაახლო ჩემი {name}? შემიდგინე განახლების გეგმა ოფიციალური ნაბიჯებით.",
+  "@coachAskPrompt": {
+    "description": "Message sent to Ask Vaultara from the renewal guide; name is the record name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "coachBookNote": "ჯავშანი ოფიციალურ საიტზე კეთდება. Vaultara არასდროს ჯავშნის თქვენ მაგივრად.",
+  "@coachBookNote": {
+    "description": "coachBookNote"
+  },
+  "coachBookOnSite": "დაჯავშნეთ ოფიციალურ საიტზე",
+  "@coachBookOnSite": {
+    "description": "coachBookOnSite"
+  },
+  "coachBookingLabel": "ჯავშანი",
+  "@coachBookingLabel": {
+    "description": "coachBookingLabel"
+  },
+  "coachCountryLabel": "ქვეყანა",
+  "@coachCountryLabel": {
+    "description": "coachCountryLabel"
+  },
+  "coachFeeLabel": "საფასური",
+  "@coachFeeLabel": {
+    "description": "coachFeeLabel"
+  },
+  "coachGetSteps": "მაჩვენე ნაბიჯები ჩემი ქვეყნისთვის",
+  "@coachGetSteps": {
+    "description": "coachGetSteps"
+  },
+  "coachLinkFailed": "ბმული ვერ გაიხსნა.",
+  "@coachLinkFailed": {
+    "description": "coachLinkFailed"
+  },
+  "coachNoPlan": "ამ ჩანაწერს ჯერ არ აქვს განახლების გეგმა.",
+  "@coachNoPlan": {
+    "description": "coachNoPlan"
+  },
+  "coachOpenLink": "ოფიციალური გვერდის გახსნა",
+  "@coachOpenLink": {
+    "description": "coachOpenLink"
+  },
+  "coachPlanNote": "ნაბიჯები ხდება ამ ჩანაწერის განახლების სია, ოფიციალური ბმულებით.",
+  "@coachPlanNote": {
+    "description": "coachPlanNote"
+  },
+  "coachPlanSaved": "განახლების გეგმა შენახულია",
+  "@coachPlanSaved": {
+    "description": "coachPlanSaved"
+  },
+  "coachPlanTitle": "თქვენი განახლების გეგმა",
+  "@coachPlanTitle": {
+    "description": "coachPlanTitle"
+  },
+  "coachProcessingLabel": "დამუშავების დრო",
+  "@coachProcessingLabel": {
+    "description": "coachProcessingLabel"
+  },
+  "coachPromoBody": "Ask Vaultara პოულობს თქვენი ქვეყნის რეალურ ნაბიჯებს ოფიციალურ საიტებზე, საფასურით, ვადით და ჯავშნის ადგილით.",
+  "@coachPromoBody": {
+    "description": "coachPromoBody"
+  },
+  "coachPromoTitle": "განახლების ასისტენტი",
+  "@coachPromoTitle": {
+    "description": "coachPromoTitle"
+  },
+  "coachRulesChange": "წესები და საფასური შეიძლება შეიცვალოს. გადახდამდე შეამოწმეთ ოფიციალური გვერდი.",
+  "@coachRulesChange": {
+    "description": "coachRulesChange"
+  },
+  "coachSourcesLabel": "წყაროები",
+  "@coachSourcesLabel": {
+    "description": "coachSourcesLabel"
+  },
+  "coachStepDoneTitle": "ნაბიჯის მონიშვნა შესრულებულად",
+  "@coachStepDoneTitle": {
+    "description": "coachStepDoneTitle"
+  },
+  "coachStepLabel": "ნაბიჯი {number}",
+  "@coachStepLabel": {
+    "description": "coachStepLabel",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "coachStepUndoTitle": "ნაბიჯის მონიშვნა შეუსრულებლად",
+  "@coachStepUndoTitle": {
+    "description": "coachStepUndoTitle"
+  },
+  "coachStepsLabel": "{count, plural, =1{1 ნაბიჯი} other{{count} ნაბიჯი}}",
+  "@coachStepsLabel": {
+    "description": "coachStepsLabel",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "talkBriefingAsk": "რა მელოდება?",
+  "@talkBriefingAsk": {
+    "description": "talkBriefingAsk"
+  },
+  "talkBye": "ნახვამდის.",
+  "@talkBye": {
+    "description": "talkBye"
+  },
+  "talkConfirmAsk": "თქვით კი დასადასტურებლად, ან არა გამოსატოვებლად.",
+  "@talkConfirmAsk": {
+    "description": "talkConfirmAsk"
+  },
+  "talkDone": "მზადაა.",
+  "@talkDone": {
+    "description": "talkDone"
+  },
+  "talkEnd": "დასრულება",
+  "@talkEnd": {
+    "description": "talkEnd"
+  },
+  "talkListening": "უსმენს…",
+  "@talkListening": {
+    "description": "talkListening"
+  },
+  "talkNoVoice": "თქვენს ტელეფონს ამ ენის ხმა არ აქვს, ამიტომ პასუხები ჩანს, მაგრამ არ იკითხება.",
+  "@talkNoVoice": {
+    "description": "talkNoVoice"
+  },
+  "talkNotDone": "ვერ მოხერხდა. შეამოწმეთ ბარათი ეკრანზე.",
+  "@talkNotDone": {
+    "description": "talkNotDone"
+  },
+  "talkReady": "გისმენთ.",
+  "@talkReady": {
+    "description": "talkReady"
+  },
+  "talkShortcut": "ესაუბრეთ Vaultara-ს",
+  "@talkShortcut": {
+    "description": "talkShortcut"
+  },
+  "talkSkipped": "კარგი, გამოტოვებულია.",
+  "@talkSkipped": {
+    "description": "talkSkipped"
+  },
+  "talkSpeaking": "საუბრობს. შეეხეთ შესაწყვეტად",
+  "@talkSpeaking": {
+    "description": "talkSpeaking"
+  },
+  "talkTapToSpeak": "შეეხეთ სალაპარაკოდ",
+  "@talkTapToSpeak": {
+    "description": "talkTapToSpeak"
+  },
+  "talkThinking": "ფიქრობს…",
+  "@talkThinking": {
+    "description": "talkThinking"
+  },
+  "talkTitle": "საუბრის რეჟიმი",
+  "@talkTitle": {
+    "description": "talkTitle"
+  },
+  "talkYesWords": "კი,დიახ,ჰო,რა თქმა უნდა,კარგი,ოკ,დაადასტურე,გააკეთე",
+  "@talkYesWords": {
+    "description": "Talk mode: comma-separated words that mean YES when spoken in this language. Not shown."
+  },
+  "talkNoWords": "არა,არ,გაუქმება,გამოტოვე,ახლა არა",
+  "@talkNoWords": {
+    "description": "Talk mode: comma-separated words that mean NO when spoken in this language. Not shown."
+  },
+  "talkStopWords": "გაჩერდი,სტოპ,სულ ესაა,ნახვამდის,კარგად,საუბრის დასრულება",
+  "@talkStopWords": {
+    "description": "Talk mode: comma-separated phrases that end Talk mode when spoken alone. Not shown."
   }
 }

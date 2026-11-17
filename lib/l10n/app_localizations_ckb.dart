@@ -9142,4 +9142,191 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantForgetWordsDone => 'وشە فێربووەکان لەبیر کران';
+
+  @override
+  String appointmentBring(String items) {
+    return 'بهێنە: $items';
+  }
+
+  @override
+  String get appointmentReminderTitle => 'کاتی نوێکردنەوە';
+
+  @override
+  String appointmentSoon(String name, String time) {
+    return '$name: کاتەکەت لە $timeدایە.';
+  }
+
+  @override
+  String appointmentTomorrow(String name) {
+    return '$name: کاتەکەت سبەینێیە.';
+  }
+
+  @override
+  String get assistantStepRenewal => 'پلانی نوێکردنەوەکەت ئامادە دەکرێت';
+
+  @override
+  String get assistantStepWeb => 'سەرچاوە فەرمییەکان دەپشکنرێن';
+
+  @override
+  String get coachAppointmentBring => 'بهێنە';
+
+  @override
+  String get coachAppointmentNote => 'ئێوارەی ڕۆژی پێشتر بیرخستنەوەیەک وەردەگریت، و ئەگەر کات دانرابێت دوو کاتژمێر پێشتریش.';
+
+  @override
+  String get coachAppointmentRemove => 'کاتەکە بسڕەوە';
+
+  @override
+  String get coachAppointmentSaved => 'کاتەکە پاشەکەوت کرا';
+
+  @override
+  String get coachAppointmentStep => 'بڕۆ بۆ کاتەکە';
+
+  @override
+  String get coachAppointmentTitle => 'کات';
+
+  @override
+  String get coachAppointmentWhen => 'کەی';
+
+  @override
+  String get coachAppointmentWhere => 'لە کوێ';
+
+  @override
+  String get coachAskNext => 'هەنگاوی داهاتوو لە Vaultara بپرسە';
+
+  @override
+  String coachAskNextPrompt(String name) {
+    return 'هەنگاوی داهاتوو بۆ نوێکردنەوەی $name چییە؟';
+  }
+
+  @override
+  String coachAskPrompt(String name) {
+    return 'چۆن $name نوێ بکەمەوە؟ پلانێکی نوێکردنەوە بە هەنگاوە فەرمییەکان بۆم دروست بکە.';
+  }
+
+  @override
+  String get coachBookNote => 'لە ماڵپەڕی فەرمی کات دەگریت. Vaultara هەرگیز لە جیاتی تۆ کات ناگرێت.';
+
+  @override
+  String get coachBookOnSite => 'لە ماڵپەڕی فەرمی کات بگرە';
+
+  @override
+  String get coachBookingLabel => 'کاتگرتن';
+
+  @override
+  String get coachCountryLabel => 'وڵات';
+
+  @override
+  String get coachFeeLabel => 'باج';
+
+  @override
+  String get coachGetSteps => 'هەنگاوەکان بۆ وڵاتەکەم پیشان بدە';
+
+  @override
+  String get coachLinkFailed => 'بەستەرەکە نەکرایەوە.';
+
+  @override
+  String get coachNoPlan => 'ئەم تۆمارە هێشتا پلانی نوێکردنەوەی نییە.';
+
+  @override
+  String get coachOpenLink => 'پەڕە فەرمییەکە بکەرەوە';
+
+  @override
+  String get coachPlanNote => 'هەنگاوەکان دەبنە لیستی نوێکردنەوەی ئەم تۆمارە، لەگەڵ بەستەرە فەرمییەکان.';
+
+  @override
+  String get coachPlanSaved => 'پلانی نوێکردنەوە پاشەکەوت کرا';
+
+  @override
+  String get coachPlanTitle => 'پلانی نوێکردنەوەکەت';
+
+  @override
+  String get coachProcessingLabel => 'ماوەی جێبەجێکردن';
+
+  @override
+  String get coachPromoBody => 'Ask Vaultara هەنگاوە ڕاستەقینەکان بۆ وڵاتەکەت لە ماڵپەڕە فەرمییەکان دەدۆزێتەوە، لەگەڵ باج، ماوە و شوێنی کاتگرتن.';
+
+  @override
+  String get coachPromoTitle => 'ڕاهێنەری نوێکردنەوە';
+
+  @override
+  String get coachRulesChange => 'یاسا و باجەکان دەگۆڕێن. پێش پارەدان پەڕە فەرمییەکە بپشکنە.';
+
+  @override
+  String get coachSourcesLabel => 'سەرچاوەکان';
+
+  @override
+  String get coachStepDoneTitle => 'هەنگاوەکە وەک تەواوبوو نیشان بکە';
+
+  @override
+  String coachStepLabel(int number) {
+    return 'هەنگاوی $number';
+  }
+
+  @override
+  String get coachStepUndoTitle => 'هەنگاوەکە وەک تەواونەبوو نیشان بکە';
+
+  @override
+  String coachStepsLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count هەنگاو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get talkBriefingAsk => 'چی چاوەڕێم دەکات؟';
+
+  @override
+  String get talkBye => 'خوات لەگەڵ.';
+
+  @override
+  String get talkConfirmAsk => 'بڵێ بەڵێ بۆ پشتڕاستکردنەوە، یان نەخێر بۆ تێپەڕاندن.';
+
+  @override
+  String get talkDone => 'تەواو.';
+
+  @override
+  String get talkEnd => 'کۆتایی';
+
+  @override
+  String get talkListening => 'گوێ دەگرێت…';
+
+  @override
+  String get talkNoVoice => 'مۆبایلەکەت دەنگی ئەم زمانەی نییە، بۆیە وەڵامەکان پیشان دەدرێن بەڵام ناخوێندرێنەوە.';
+
+  @override
+  String get talkNotDone => 'سەرکەوتوو نەبوو. کارتەکەی سەر شاشە بپشکنە.';
+
+  @override
+  String get talkReady => 'گوێ دەگرم.';
+
+  @override
+  String get talkShortcut => 'لەگەڵ Vaultara قسە بکە';
+
+  @override
+  String get talkSkipped => 'باشە، تێپەڕێندرا.';
+
+  @override
+  String get talkSpeaking => 'قسە دەکات. دەست لێبدە بۆ بڕین';
+
+  @override
+  String get talkTapToSpeak => 'دەست لێبدە بۆ قسەکردن';
+
+  @override
+  String get talkThinking => 'بیر دەکاتەوە…';
+
+  @override
+  String get talkTitle => 'دۆخی قسەکردن';
+
+  @override
+  String get talkYesWords => 'بەڵێ,ئا,دڵنیام,باشە,ئۆکەی,پشتڕاستی بکەرەوە,بیکە';
+
+  @override
+  String get talkNoWords => 'نەخێر,نا,هەڵیوەشێنەوە,تێپەڕێنە,ئێستا نا';
+
+  @override
+  String get talkStopWords => 'بوەستە,ئەوەندە,خوات لەگەڵ,بای,دۆخی قسەکردن کۆتایی پێبهێنە';
 }
