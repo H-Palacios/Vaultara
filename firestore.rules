@@ -179,6 +179,26 @@ service cloud.firestore {
         && (!('passportRule' in d) || d.passportRule in ['six', 'three', 'stay']);
     }
 
+    function validRenewalPlan() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['expiry', 'country', 'steps', 'done', 'bookingUrl', 'fee',
+                               'processing', 'sources', 'appointment', 'createdAt', 'updatedAt'])
+        && d.expiry is string && d.expiry.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
+        && (!('country' in d) || d.country == null
+            || (d.country is string && d.country.matches('^[A-Z]{2}$')))
+        && d.steps is list && d.steps.size() >= 1 && d.steps.size() <= 12
+        && d.done is list && d.done.size() <= 12
+        && (!('bookingUrl' in d) || d.bookingUrl == null
+            || (d.bookingUrl is string && d.bookingUrl.size() <= 500 && d.bookingUrl.matches('^https://.*')))
+        && (!('fee' in d) || d.fee == null || (d.fee is string && d.fee.size() <= 80))
+        && (!('processing' in d) || d.processing == null
+            || (d.processing is string && d.processing.size() <= 80))
+        && (!('sources' in d) || (d.sources is list && d.sources.size() <= 5))
+        && (!('appointment' in d) || d.appointment == null
+            || (d.appointment is map && d.appointment.size() <= 5))
+        && d.updatedAt == request.time;
+    }
+
     function validLifePlan() {
       let d = request.resource.data;
       return d.keys().hasOnly(['event', 'date', 'people', 'country', 'createdAt',
@@ -663,6 +683,13 @@ service cloud.firestore {
       match /assistantMemory/{docId} {
         allow read: if isOwner(uid);
         allow write: if false;
+      }
+
+      // A renewal plan from Ask Vaultara's renewal coach, one per record,
+      // saved by the app after the user confirms the card.
+      match /renewalPlans/{recordId} {
+        allow read, delete: if isOwner(uid);
+        allow create, update: if isOwner(uid) && smallDoc(12) && validRenewalPlan();
       }
 
       // Thumbs up or down on an answer, so weak answers can be found.

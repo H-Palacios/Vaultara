@@ -700,6 +700,18 @@ const TOOLS_V11 = [
 ];
 const NAMES_V11 = new Set(TOOLS_V11.map((t) => t.name));
 
+// Protocol 12: the renewal coach (with web search on official sites) and
+// Talk mode.
+const COACH_MODULE = require("./assistant-coach");
+const COACH = COACH_MODULE({ str, isoDay, parseDay, pushAction, draftReady, countryCode });
+const TOOLS_V12 = [
+  ...TOOLS_V11.filter((t) => t.name !== "suggest_replies"),
+  ...COACH.TOOLS,
+  SUGGEST_REPLIES,
+];
+const NAMES_V12 = new Set(TOOLS_V12.map((t) => t.name));
+let webSearchOff = false;
+
 function cleanWord(value) {
   return typo.fold(value).replace(/^(my|mine)\s+/, "").slice(0, LEARNED_WORD_MAX).trim();
 }
@@ -768,6 +780,8 @@ const APP_GUIDE = [
   "- Security and privacy (Profile > Security and privacy): security checkup, change password, two-step sign-in with an authenticator app, Your devices (see and sign out devices), Security history (last 90 days), App lock with fingerprint or face, Lock again, Privacy screen, Block screenshots, Encrypted photos (only the user's recovery key can unlock them; it cannot be reset), Share usage data, Privacy Policy, Terms of Service, Download my data, Use my location for trips (off by default: only the country is used, to tell if the user is at home or travelling, and it is not saved), and Delete account.",
   "- Delete account: Profile > Security and privacy > Delete account, or on the web at vaultara-f49ab.web.app/delete. It does not cancel a subscription; cancel that in Google Play or the App Store first.",
   "- Privacy: data is stored on Google Cloud in the United States and is not sold. Scanning happens on the phone. Ask Vaultara sends the user's messages and the record details it looks up to Anthropic to answer. Chats are saved to the account so the user can come back to them; they are deleted automatically after 90 days, and the user can delete one chat or all chats at any time in the chat history. Under each answer there are buttons to copy it, read it aloud, mark it helpful or not helpful, and report it with the flag button (offensive or harmful, wrong or misleading, or something else); a report sends the question and the answer to Vorkalis for review.",
+  "- Renewal coach: in a record's renewal guide (Renew > Renewal checklist, or How to renew), Get the steps for my country asks Ask Vaultara to find the real steps on official sites. After the user confirms the card, the plan shows at the top of the guide with ticks, official links, the fee, the processing time, a Book on the official site button and the appointment with Remove. Vaultara never books appointments itself. Appointment reminders come the evening before and two hours before.",
+  "- Talk mode: the speaking-person button at the top of Ask Vaultara (or Talk to Vaultara when pressing and holding the app icon) starts a spoken conversation: Vaultara answers out loud with the phone's own voice and listens again. Tap the big button to interrupt or to send what was said, say yes or no to confirm cards, say stop to end, or tap End. The camera button works there too.",
   "- Ask Vaultara screen: the camera button left of the text field takes or picks a photo of a document; the text is read on the phone and Ask Vaultara offers a card to add the record, and the photo is attached when the user confirms. When an answer stops before the task is done, a Continue button under it asks for the rest. Ask Vaultara learns the user's own words for records when they correct it (for example \"green book\" for a passport); the menu in Chat history has Forget learned words. If the phone cannot listen in the app's language, the voice panel says which language it is listening in and has Change to pick another; the choice is remembered.",
   "- Help: Profile > Help has Tutorials, Ask Vaultara and Email us (support@vorkalis.com; the app version and phone model are added, never records). Appearance and Currency are in Profile > Preferences > Display.",
 ].join("\n");
@@ -2052,7 +2066,9 @@ async function runTool(ctx, name, input, actions, allowed) {
       }
       default: {
         const handled = ctx.v10 ? await V10.run(ctx, name, input, actions) : undefined;
-        return handled === undefined ? { error: "Unknown tool." } : handled;
+        if (handled !== undefined) return handled;
+        const coached = ctx.v12 ? await COACH.run(ctx, name, input, actions) : undefined;
+        return coached === undefined ? { error: "Unknown tool." } : coached;
       }
     }
   } catch (err) {
@@ -2194,6 +2210,16 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
       "If a task needs more cards or steps than fit in one answer, do the first part and say that they can tap Continue for the rest."
     );
   }
+  if (ctx.v12) {
+    const first = str(ctx.userData?.firstName, 40);
+    dynamic.push(first ? `The user's first name is ${first}.` : "The user's first name is not saved.");
+    dynamic.push(
+      ctx.webSearch
+        ? COACH_MODULE.COACH_PROMPT
+        : COACH_MODULE.COACH_PROMPT.replace(/web_search/g, "your own knowledge (web search is not available right now, so say the steps are general and point to the official site)")
+    );
+    if (ctx.talk) dynamic.push(COACH_MODULE.TALK_PROMPT);
+  }
   if (intent === "propose") {
     dynamic.push(
       "The user is filling in the add record form. Call propose_record exactly once with your best guess from their text. Do not ask questions."
@@ -2285,8 +2311,12 @@ async function stepFor(ctx, name, input) {
       return { step: "screen" };
     case "propose_setting":
       return { step: "setting" };
-    default:
-      return ctx.v10 ? V10.step(ctx, name, input) : null;
+    default: {
+      const step = ctx.v10 ? await V10.step(ctx, name, input) : undefined;
+      if (step !== undefined && step !== null) return step;
+      const coached = ctx.v12 ? await COACH.step(ctx, name, input) : undefined;
+      return coached === undefined ? step ?? null : coached;
+    }
   }
 }
 
@@ -2313,6 +2343,7 @@ const COMPLEX_HINTS = new RegExp(
       "before i", "by the time", "what do i need",
       "reise\\w*", "reis", "voyage\\w*", "viajes?", "viage[mn]s?", "viaggi\\w*", "visum",
       "planifi\\w*", "planear", "planen", "planeje\\w*",
+      "how (?:do|can|should) i renew", "how to renew", "renewal steps", "next step",
     ].join("|") +
     ")\\b",
   "i",
@@ -2329,6 +2360,8 @@ const SMART_TOOLS = new Set([
   "renewal_costs",
   "renewal_history",
   "propose_move_records",
+  "get_renewal_plan",
+  "propose_renewal_plan",
 ]);
 
 function lastUserText(messages) {
@@ -2363,6 +2396,9 @@ function withCacheBreakpoint(conversation) {
   if (!conversation.length) return conversation;
   const out = conversation.slice();
   const last = out[out.length - 1];
+  // A paused turn ends with the assistant's own blocks, which are sent back
+  // exactly as they came.
+  if (last.role !== "user") return conversation;
   const blocks = typeof last.content === "string"
     ? [{ type: "text", text: last.content }]
     : last.content.map((b) => ({ ...b }));
@@ -2383,6 +2419,11 @@ async function callModel(params, progress) {
     const stream = client().messages.stream(request);
     let text = "";
     let lastWrite = 0;
+    stream.on("streamEvent", (event) => {
+      if (event?.type === "content_block_start" && event.content_block?.type === "server_tool_use") {
+        progress.show({ step: "web" }).catch(() => {});
+      }
+    });
     stream.on("text", (delta) => {
       text += delta;
       const now = Date.now();
@@ -2395,6 +2436,12 @@ async function callModel(params, progress) {
     if (text) progress.partial(text);
     return message;
   } catch (err) {
+    const tools = Array.isArray(params.tools) ? params.tools : [];
+    if (tools.some((t) => t.type === COACH_MODULE.WEB_SEARCH_TOOL.type) && COACH_MODULE.isWebSearchOff(err)) {
+      logger.warn("askVaultara web search is not enabled for this account; answering without it");
+      webSearchOff = true;
+      return callModel({ ...params, tools: tools.filter((t) => t.type !== COACH_MODULE.WEB_SEARCH_TOOL.type) }, progress);
+    }
     if (model !== FALLBACK_MODEL && isModelMissing(err)) {
       logger.warn("askVaultara model not available, using the fallback", { model });
       missingModels.add(model);
@@ -2476,7 +2523,7 @@ class RunProgress {
 }
 
 exports.askVaultara = onCall(
-  { ...CALLABLE, secrets: [ANTHROPIC_API_KEY], timeoutSeconds: 90, memory: "256MiB", maxInstances: 10 },
+  { ...CALLABLE, secrets: [ANTHROPIC_API_KEY], timeoutSeconds: 120, memory: "256MiB", maxInstances: 10 },
   async (request) => {
     const uid = request.auth?.uid;
     if (!uid) throw new HttpsError("unauthenticated", "Sign in first.");
@@ -2491,6 +2538,7 @@ exports.askVaultara = onCall(
     const v5 = version >= 5 && intent === "chat";
     const v6 = version >= 6 && intent === "chat";
     const v11 = version >= 11 && intent === "chat";
+    const v12 = version >= 12 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
@@ -2527,12 +2575,16 @@ exports.askVaultara = onCall(
     ctx.groups = v9 ? GROUPS_V9 : GROUPS;
     ctx.v10 = v10;
     ctx.v11 = v11;
+    ctx.v12 = v12;
+    ctx.talk = v12 && request.data?.mode === "talk";
+    ctx.webSearch = v12 && !webSearchOff && process.env.ASSISTANT_WEB_SEARCH !== "off";
     ctx.learned = v11 ? await ctx.learnedWords() : [];
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
-    const baseTools = v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
-    const tools = v9 ? withGroupsV9(baseTools) : baseTools;
-    const allowed = v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const baseTools = v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const groupTools = v9 ? withGroupsV9(baseTools) : baseTools;
+    const tools = ctx.webSearch ? [...groupTools, COACH_MODULE.WEB_SEARCH_TOOL] : groupTools;
+    const allowed = v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
@@ -2546,6 +2598,8 @@ exports.askVaultara = onCall(
     let cachedTokens = 0;
     let truncated = false;
     const usedModels = new Set();
+    const sources = [];
+    let searches = 0;
 
     try {
       for (let i = 0; i < MAX_ITERATIONS; i++) {
@@ -2573,10 +2627,15 @@ exports.askVaultara = onCall(
         cachedTokens += Number(response.usage?.cache_read_input_tokens) || 0;
 
         const content = Array.isArray(response.content) ? response.content : [];
-        const text = content
-          .filter((b) => b.type === "text" && typeof b.text === "string")
+        COACH_MODULE.mergeSources(sources, COACH_MODULE.citationsOf(content));
+        searches += content.filter((b) => b.type === "server_tool_use").length;
+        // Cited answers come as many pieces of one text, so they are joined
+        // as they are; otherwise separate blocks go on separate lines.
+        const textBlocks = content.filter((b) => b.type === "text" && typeof b.text === "string");
+        const cited = textBlocks.some((b) => Array.isArray(b.citations) && b.citations.length > 0);
+        const text = textBlocks
           .map((b) => b.text)
-          .join("\n")
+          .join(cited ? "" : "\n")
           .trim();
         if (text) lastText = text;
 
@@ -2585,6 +2644,12 @@ exports.askVaultara = onCall(
           if (use.name === "suggest_replies" && allowed.has(use.name)) replies = cleanReplies(use.input);
         }
         const toolUses = allUses.filter((b) => b.name !== "suggest_replies");
+        // A long web search can pause the turn: send it back as it is and
+        // the model carries on where it stopped.
+        if (response.stop_reason === "pause_turn" && !last) {
+          conversation.push({ role: "assistant", content });
+          continue;
+        }
         if (response.stop_reason !== "tool_use" || toolUses.length === 0) {
           reply = text;
           // Cut off by the length limit, or by the last round, which may not
@@ -2641,6 +2706,8 @@ exports.askVaultara = onCall(
       replies: replies.length,
       models: [...usedModels],
       truncated,
+      searches,
+      talk: ctx.talk,
       inputTokens,
       outputTokens,
       cachedTokens,
@@ -2651,6 +2718,7 @@ exports.askVaultara = onCall(
       actions: actions.map(cleanAction),
       ...(v3 ? { replies } : {}),
       ...(v11 ? { truncated } : {}),
+      ...(v12 ? { sources } : {}),
     };
   }
 );
@@ -2681,4 +2749,6 @@ exports._test = {
   cleanWord,
   SMART_TOOLS,
   COMPLEX_HINTS,
+  TOOLS_V12,
+  NAMES_V12,
 };

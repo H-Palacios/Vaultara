@@ -1,0 +1,389 @@
+// Ask Vaultara protocol 12: the renewal coach and Talk mode.
+//
+// The renewal coach finds the real steps to renew a record in the user's
+// country on official sites (Anthropic's web search tool), offers them as a
+// plan card, and keeps track of the appointment and the steps done. The plan
+// is saved by the app only after the user confirms the card, in
+// users/{uid}/renewalPlans/{recordId}. Vaultara never books anything: the
+// booking link opens the official site.
+//
+// Built with helpers from assistant.js passed in, like assistant-v10.js, so
+// the two files do not require each other.
+
+const MAX_STEPS = 12;
+const MIN_STEPS = 2;
+const STEP_MAX = 200;
+const URL_MAX = 500;
+const TITLE_MAX = 80;
+const MAX_SOURCES = 5;
+const NOTE_MAX = 80;
+const PLACE_MAX = 120;
+const MAX_BRING = 8;
+const BRING_MAX = 60;
+const APPOINTMENT_DAYS_AHEAD = 400;
+const SEARCHES_PER_MESSAGE = 3;
+
+const WEB_SEARCH_TOOL = {
+  type: "web_search_20250305",
+  name: "web_search",
+  max_uses: SEARCHES_PER_MESSAGE,
+};
+
+const TIME_PATTERN = /^([01]\d|2[0-3]):([0-5]\d)$/;
+
+// Only https links, without spaces or credentials, as found in search
+// results. Anything else is dropped rather than shown to the user.
+function cleanUrl(value) {
+  if (typeof value !== "string") return null;
+  const text = value.trim();
+  if (!text || text.length > URL_MAX || /\s/.test(text)) return null;
+  let url;
+  try {
+    url = new URL(text);
+  } catch (_) {
+    return null;
+  }
+  if (url.protocol !== "https:" || url.username || url.password || !url.hostname.includes(".")) return null;
+  return url.toString();
+}
+
+function oneLine(value, max) {
+  if (typeof value !== "string") return null;
+  const text = value.replace(/\s+/g, " ").trim();
+  if (!text) return null;
+  return text.length > max ? text.slice(0, max - 1).trimEnd() + "…" : text;
+}
+
+function cleanSteps(raw) {
+  if (!Array.isArray(raw)) return [];
+  const out = [];
+  for (const item of raw) {
+    const text = oneLine(typeof item === "string" ? item : item?.text, STEP_MAX);
+    if (!text) continue;
+    const url = typeof item === "object" && item ? cleanUrl(item.url) : null;
+    out.push(url ? { text, url } : { text });
+    if (out.length >= MAX_STEPS) break;
+  }
+  return out;
+}
+
+function cleanSources(raw) {
+  if (!Array.isArray(raw)) return [];
+  const out = [];
+  for (const item of raw) {
+    const url = cleanUrl(item?.url);
+    if (!url || out.some((s) => s.url === url)) continue;
+    const title = oneLine(item?.title, TITLE_MAX) || new URL(url).hostname;
+    out.push({ title, url });
+    if (out.length >= MAX_SOURCES) break;
+  }
+  return out;
+}
+
+function cleanBring(raw) {
+  if (!Array.isArray(raw)) return [];
+  const out = [];
+  for (const item of raw) {
+    const text = oneLine(item, BRING_MAX);
+    if (text && !out.includes(text)) out.push(text);
+    if (out.length >= MAX_BRING) break;
+  }
+  return out;
+}
+
+// The pages the answer was written from, from the citations on the text.
+// They are shown under the answer as links, as the web search terms ask.
+function citationsOf(content) {
+  const out = [];
+  if (!Array.isArray(content)) return out;
+  for (const block of content) {
+    if (block?.type !== "text" || !Array.isArray(block.citations)) continue;
+    for (const cite of block.citations) {
+      const url = cleanUrl(cite?.url);
+      if (!url || out.some((s) => s.url === url)) continue;
+      out.push({ title: oneLine(cite?.title, TITLE_MAX) || new URL(url).hostname, url });
+      if (out.length >= MAX_SOURCES) return out;
+    }
+  }
+  return out;
+}
+
+function mergeSources(into, more) {
+  for (const source of more) {
+    if (into.length >= MAX_SOURCES) break;
+    if (!into.some((s) => s.url === source.url)) into.push(source);
+  }
+  return into;
+}
+
+// The account cannot use web search (an administrator has not turned it on
+// in the Claude Console): the request is sent again without it.
+function isWebSearchOff(err) {
+  const status = Number(err?.status) || 0;
+  const message = String(err?.error?.error?.message || err?.message || "");
+  return (status === 400 || status === 403) && /web[ _-]?search/i.test(message);
+}
+
+const TALK_PROMPT = [
+  "Talk mode is on: your answer is read aloud by the phone.",
+  "- Answer in one to three short spoken sentences. No lists, headings, bullet points, emoji, links or web addresses; say the details and links are on the screen.",
+  "- Say dates naturally (\"the 3rd of March\"), and round days (\"in about two weeks\").",
+  "- When you prepare a card, end with a short question asking the user to say yes to confirm or no to skip.",
+  "- A message that starts with [Talk start] opens Talk mode: call list_records with status expiring, then give a two-sentence briefing of what is due soon (or that nothing is due in the next month) and ask how you can help. Greet the user by first name when you know it.",
+  "- Never say the name of a locked record; say a locked record is due.",
+].join("\n");
+
+const COACH_PROMPT = [
+  "Renewal coach. When the user asks how to renew a record, what to do next, or for help with a renewal:",
+  "1. Find the record (list_records) and call get_renewal_plan for it.",
+  "2. If there is no current plan, work out where it will be renewed: passports and national ID cards are renewed with the country that issued them (at home, or through its embassy or consulate in the country where the holder lives); other records in the country where the holder lives. Use the holder's nationality and residence from list_people. Ask one short question if this is still unclear.",
+  "3. Search official sources with web_search (government, embassy and consulate sites; not agencies or forums), at most three searches. Search in English and in the language of that country when it helps. Search with general words only (the kind of document, the countries, the city); never put the user's or anyone's name, a record's own name, dates of birth or any numbers into a search.",
+  "4. Answer with the steps in short, the fee and the processing time when the official page gives them, then call propose_renewal_plan with the steps, the official booking link when one was found, and the pages used as sources. Only use links that appeared in the search results; never make one up. Say that rules and fees can change, so check the official page before paying.",
+  "5. Vaultara never books appointments. When the user says they booked one, call propose_appointment with the date, the time, the place and what to bring. When they finish a step, call propose_plan_step. When they ask what is next, call get_renewal_plan and give only the next step that is not done.",
+  "6. When the user has the new document, offer propose_renew_record with the new expiry date.",
+].join("\n");
+
+module.exports = function build(h) {
+  const { str, isoDay, parseDay, pushAction, draftReady } = h;
+
+  function recordName(record) {
+    return record.locked ? null : str(record.name, 60) || null;
+  }
+
+  async function planDoc(ctx, recordId) {
+    try {
+      const snap = await ctx.userRef.collection("renewalPlans").doc(recordId).get();
+      return snap.exists ? snap.data() || null : null;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  // The saved plan, if it was made for the record's current expiry date.
+  async function currentPlan(ctx, record) {
+    const data = await planDoc(ctx, record.id);
+    if (!data) return null;
+    if (typeof data.expiry === "string" && data.expiry !== isoDay(record.day)) return null;
+    return data;
+  }
+
+  async function getRenewalPlan(ctx, input) {
+    const record = await ctx.findRecord(input?.record_id);
+    if (!record) return { error: "Unknown record_id. Call list_records first." };
+    const data = await currentPlan(ctx, record);
+    if (!data) {
+      return {
+        plan: null,
+        note: "No saved plan for this record's current expiry date. Search official sources and offer propose_renewal_plan.",
+      };
+    }
+    const done = Array.isArray(data.done) ? data.done.filter((n) => Number.isInteger(n)) : [];
+    const steps = cleanSteps(data.steps).map((step, i) => ({
+      number: i + 1,
+      text: step.text,
+      done: done.includes(i),
+      ...(step.url ? { url: step.url } : {}),
+    }));
+    const appointment = data.appointment && typeof data.appointment === "object"
+      ? {
+        date: typeof data.appointment.date === "string" ? data.appointment.date : null,
+        time: typeof data.appointment.time === "string" ? data.appointment.time : null,
+        place: oneLine(data.appointment.place, PLACE_MAX),
+        bring: cleanBring(data.appointment.bring),
+      }
+      : null;
+    return {
+      plan: {
+        country: typeof data.country === "string" ? data.country : null,
+        steps,
+        next_step: steps.find((s) => !s.done)?.number || null,
+        booking_url: cleanUrl(data.bookingUrl),
+        fee: oneLine(data.fee, NOTE_MAX),
+        processing_time: oneLine(data.processing, NOTE_MAX),
+        appointment,
+      },
+    };
+  }
+
+  async function proposeRenewalPlan(ctx, input, actions) {
+    const record = await ctx.findRecord(input?.record_id);
+    if (!record) return { error: "Unknown record_id. Call list_records first." };
+    const steps = cleanSteps(input?.steps);
+    if (steps.length < MIN_STEPS) return { error: `Give at least ${MIN_STEPS} steps, each one short sentence.` };
+    const sources = cleanSources(input?.sources);
+    if (!sources.length) {
+      return { error: "Add the official pages you used as sources (from web_search results). Search first if you have not." };
+    }
+    const country = h.countryCode(input?.country);
+    const failed = pushAction(actions, {
+      type: "renewal_plan",
+      recordId: record.id,
+      name: recordName(record),
+      expiry: isoDay(record.day),
+      country: country || null,
+      steps,
+      bookingUrl: cleanUrl(input?.booking_url),
+      fee: oneLine(input?.fee, NOTE_MAX),
+      processing: oneLine(input?.processing_time, NOTE_MAX),
+      sources,
+    });
+    if (failed) return failed;
+    return {
+      ...draftReady(),
+      note: "After Confirm the steps become the record's renewal checklist, with the links. Mention that rules can change.",
+    };
+  }
+
+  async function proposeAppointment(ctx, input, actions) {
+    const record = await ctx.findRecord(input?.record_id);
+    if (!record) return { error: "Unknown record_id. Call list_records first." };
+    const day = parseDay(input?.date);
+    if (day === null) return { error: "date must be YYYY-MM-DD." };
+    if (day < ctx.today) return { error: "The appointment date has passed. Ask the user for the date." };
+    if (day > ctx.today + APPOINTMENT_DAYS_AHEAD) return { error: "That date is too far ahead. Check it with the user." };
+    const time = typeof input?.time === "string" && TIME_PATTERN.test(input.time.trim()) ? input.time.trim() : null;
+    const failed = pushAction(actions, {
+      type: "appointment",
+      recordId: record.id,
+      name: recordName(record),
+      date: isoDay(day),
+      time,
+      place: oneLine(input?.place, PLACE_MAX),
+      bring: cleanBring(input?.bring),
+    });
+    if (failed) return failed;
+    return {
+      ...draftReady(),
+      note: "After Confirm the app reminds the user the evening before" + (time ? " and two hours before" : "") + ", with what to bring.",
+    };
+  }
+
+  async function proposePlanStep(ctx, input, actions) {
+    const record = await ctx.findRecord(input?.record_id);
+    if (!record) return { error: "Unknown record_id. Call list_records first." };
+    const data = await currentPlan(ctx, record);
+    if (!data) return { error: "This record has no saved plan. Offer propose_renewal_plan first." };
+    const steps = cleanSteps(data.steps);
+    const number = Number(input?.step);
+    if (!Number.isInteger(number) || number < 1 || number > steps.length) {
+      return { error: `step must be a number from 1 to ${steps.length}. Call get_renewal_plan.` };
+    }
+    const failed = pushAction(actions, {
+      type: "plan_step",
+      recordId: record.id,
+      name: recordName(record),
+      step: number - 1,
+      done: input?.done !== false,
+      text: steps[number - 1].text,
+    });
+    if (failed) return failed;
+    return draftReady();
+  }
+
+  const TOOLS = [
+    {
+      name: "get_renewal_plan",
+      description: "The saved renewal plan for a record: its steps (with which are done), the booking link, fee, processing time and appointment. Returns plan null when there is none for the current expiry date.",
+      input_schema: { type: "object", properties: { record_id: { type: "string" } }, required: ["record_id"] },
+    },
+    {
+      name: "propose_renewal_plan",
+      description: "Prepare a renewal plan card for a record, after searching official sources with web_search. On Confirm the steps become the record's renewal checklist. Only use links that appeared in the search results.",
+      input_schema: {
+        type: "object",
+        properties: {
+          record_id: { type: "string" },
+          country: { type: "string", description: "ISO alpha-2 code of the country whose rules the plan follows." },
+          steps: {
+            type: "array",
+            maxItems: MAX_STEPS,
+            description: "Two to twelve steps in order, each one short sentence in the user's language.",
+            items: {
+              type: "object",
+              properties: {
+                text: { type: "string" },
+                url: { type: "string", description: "Official page for this step, if any." },
+              },
+              required: ["text"],
+            },
+          },
+          booking_url: { type: "string", description: "The official page where the appointment is booked, if found." },
+          fee: { type: "string", description: "The fee as written on the official page, for example \"R600 (adults)\"." },
+          processing_time: { type: "string", description: "How long it takes, for example \"4 to 6 weeks\"." },
+          sources: {
+            type: "array",
+            maxItems: MAX_SOURCES,
+            description: "The official pages used.",
+            items: {
+              type: "object",
+              properties: { title: { type: "string" }, url: { type: "string" } },
+              required: ["url"],
+            },
+          },
+        },
+        required: ["record_id", "steps", "sources"],
+      },
+    },
+    {
+      name: "propose_appointment",
+      description: "Prepare saving an appointment the user booked for a renewal, with reminders. Vaultara never books it; the user books on the official site.",
+      input_schema: {
+        type: "object",
+        properties: {
+          record_id: { type: "string" },
+          date: { type: "string", description: "YYYY-MM-DD" },
+          time: { type: "string", description: "24-hour HH:MM, if known." },
+          place: { type: "string", description: "Office, embassy or address." },
+          bring: { type: "array", maxItems: MAX_BRING, items: { type: "string" }, description: "What to bring, short items." },
+        },
+        required: ["record_id", "date"],
+      },
+    },
+    {
+      name: "propose_plan_step",
+      description: "Prepare ticking off (or unticking) a step of a record's saved renewal plan, when the user says they did it.",
+      input_schema: {
+        type: "object",
+        properties: {
+          record_id: { type: "string" },
+          step: { type: "integer", minimum: 1, description: "Step number from get_renewal_plan." },
+          done: { type: "boolean", description: "false to untick. Default true." },
+        },
+        required: ["record_id", "step"],
+      },
+    },
+  ];
+
+  const NAMES = new Set(TOOLS.map((t) => t.name));
+
+  async function run(ctx, name, input, actions) {
+    switch (name) {
+      case "get_renewal_plan":
+        return getRenewalPlan(ctx, input);
+      case "propose_renewal_plan":
+        return proposeRenewalPlan(ctx, input, actions);
+      case "propose_appointment":
+        return proposeAppointment(ctx, input, actions);
+      case "propose_plan_step":
+        return proposePlanStep(ctx, input, actions);
+      default:
+        return undefined;
+    }
+  }
+
+  async function step(ctx, name, input) {
+    if (!NAMES.has(name)) return undefined;
+    const record = await ctx.findRecord(input?.record_id);
+    return { step: "renewal", name: record ? recordName(record) : null };
+  }
+
+  return { TOOLS, NAMES, run, step };
+};
+
+module.exports.WEB_SEARCH_TOOL = WEB_SEARCH_TOOL;
+module.exports.TALK_PROMPT = TALK_PROMPT;
+module.exports.COACH_PROMPT = COACH_PROMPT;
+module.exports.citationsOf = citationsOf;
+module.exports.mergeSources = mergeSources;
+module.exports.isWebSearchOff = isWebSearchOff;
+module.exports._test = { cleanUrl, cleanSteps, cleanSources, cleanBring, citationsOf, isWebSearchOff };
