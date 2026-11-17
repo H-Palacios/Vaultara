@@ -3962,5 +3962,108 @@
   "coachOfficial": "Ametlik sait",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "Pank",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Et Ask Vaultara saaks juhatada sinu panga sammudeni.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "Sisesta oma pank",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "Salvesta andmed",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "Vali riik",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "Tühjenda",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, nt {first} või {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "Kindlustaja",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "Kellega ühendust võtta, kui on aeg uuendada.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "Sisesta oma kindlustaja",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "Väljastaja",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "Riik, mis selle väljastas. Kasutatakse õigete uuendussammude jaoks.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(valikuline)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "Teenusepakkuja",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "Kelle juures uuendad.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "Sisesta teenusepakkuja",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "Kus sõiduk on registreeritud.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "Registreeritud",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "Andmed salvestatud",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "Pood",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "Pood või kaubamärk",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "Sisesta pood või kaubamärk",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "Sisesta pood",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

@@ -3804,5 +3804,108 @@
   "coachOfficial": "ਅਧਿਕਾਰਤ ਸਾਈਟ",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ਬੈਂਕ",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "ਤਾਂ ਜੋ Ask Vaultara ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਬੈਂਕ ਦੇ ਆਪਣੇ ਕਦਮ ਦੱਸ ਸਕੇ।",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "ਆਪਣਾ ਬੈਂਕ ਦਰਜ ਕਰੋ",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "ਵੇਰਵੇ ਸੰਭਾਲੋ",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "ਦੇਸ਼ ਚੁਣੋ",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "ਸਾਫ਼ ਕਰੋ",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, ਜਿਵੇਂ {first} ਜਾਂ {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "ਬੀਮਾਕਰਤਾ",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "ਨਵੀਨੀਕਰਨ ਦੇ ਸਮੇਂ ਕਿਸ ਨਾਲ ਸੰਪਰਕ ਕਰਨਾ ਹੈ।",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "ਆਪਣਾ ਬੀਮਾਕਰਤਾ ਦਰਜ ਕਰੋ",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "ਜਾਰੀਕਰਤਾ",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ਜਿਸ ਦੇਸ਼ ਨੇ ਇਸਨੂੰ ਜਾਰੀ ਕੀਤਾ। ਸਹੀ ਨਵੀਨੀਕਰਨ ਕਦਮਾਂ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ਵਿਕਲਪਿਕ)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "ਪ੍ਰਦਾਤਾ",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "ਤੁਸੀਂ ਕਿਸ ਨਾਲ ਨਵੀਨੀਕਰਨ ਕਰਦੇ ਹੋ।",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "ਪ੍ਰਦਾਤਾ ਦਰਜ ਕਰੋ",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "ਵਾਹਨ ਕਿੱਥੇ ਰਜਿਸਟਰਡ ਹੈ।",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "ਰਜਿਸਟਰਡ ਦੇਸ਼",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "ਵੇਰਵੇ ਸੰਭਾਲੇ ਗਏ",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "ਦੁਕਾਨ",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "ਦੁਕਾਨ ਜਾਂ ਬ੍ਰਾਂਡ",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "ਦੁਕਾਨ ਜਾਂ ਬ੍ਰਾਂਡ ਦਰਜ ਕਰੋ",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "ਦੁਕਾਨ ਦਰਜ ਕਰੋ",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

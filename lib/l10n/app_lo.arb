@@ -3815,5 +3815,108 @@
   "coachOfficial": "ເວັບໄຊທາງການ",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ທະນາຄານ",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "ເພື່ອໃຫ້ Ask Vaultara ແນະນຳຂັ້ນຕອນຂອງທະນາຄານທ່ານ.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "ປ້ອນທະນາຄານຂອງທ່ານ",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "ບັນທຶກລາຍລະອຽດ",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "ເລືອກປະເທດ",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "ລຶບ",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, ເຊັ່ນ {first} ຫຼື {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "ບໍລິສັດປະກັນໄພ",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "ຕິດຕໍ່ໃຜເມື່ອຮອດເວລາຕໍ່ອາຍຸ.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "ປ້ອນບໍລິສັດປະກັນໄພ",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "ອອກໂດຍ",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ປະເທດທີ່ອອກໃຫ້. ໃຊ້ສຳລັບຂັ້ນຕອນຕໍ່ອາຍຸທີ່ຖືກຕ້ອງ.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ທາງເລືອກ)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "ຜູ້ໃຫ້ບໍລິການ",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "ທ່ານຕໍ່ອາຍຸກັບໃຜ.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "ປ້ອນຜູ້ໃຫ້ບໍລິການ",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "ບ່ອນທີ່ລົດຈົດທະບຽນ.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "ຈົດທະບຽນຢູ່",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "ບັນທຶກລາຍລະອຽດແລ້ວ",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "ຮ້ານ",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "ຮ້ານ ຫຼື ຍີ່ຫໍ້",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "ປ້ອນຮ້ານ ຫຼື ຍີ່ຫໍ້",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "ປ້ອນຮ້ານ",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

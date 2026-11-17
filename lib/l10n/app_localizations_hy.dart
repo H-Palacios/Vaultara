@@ -9355,4 +9355,75 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Պաշտոնական կայք';
+
+  @override
+  String get detailsBank => 'Բանկ';
+
+  @override
+  String get detailsBankHelper => 'Որպեսզի Ask Vaultara-ն ձեզ ուղղորդի ձեր բանկի քայլերին։';
+
+  @override
+  String get detailsBankHint => 'Մուտքագրեք ձեր բանկը';
+
+  @override
+  String get detailsCardTitle => 'Պահպանել տվյալները';
+
+  @override
+  String get detailsChooseCountry => 'Ընտրեք երկիր';
+
+  @override
+  String get detailsClear => 'Մաքրել';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, օրինակ՝ $first կամ $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Ապահովագրող';
+
+  @override
+  String get detailsInsurerHelper => 'Ում դիմել, երբ գա թարմացման ժամանակը։';
+
+  @override
+  String get detailsInsurerHint => 'Մուտքագրեք ձեր ապահովագրողին';
+
+  @override
+  String get detailsIssuedBy => 'Տրամադրել է';
+
+  @override
+  String get detailsIssuedByHelper => 'Այն տրամադրած երկիրը։ Օգտագործվում է ճիշտ թարմացման քայլերի համար։';
+
+  @override
+  String get detailsOptional => '(ըստ ցանկության)';
+
+  @override
+  String get detailsProvider => 'Մատակարար';
+
+  @override
+  String get detailsProviderHelper => 'Ում մոտ եք թարմացնում։';
+
+  @override
+  String get detailsProviderHint => 'Մուտքագրեք մատակարարին';
+
+  @override
+  String get detailsRegisteredHelper => 'Որտեղ է գրանցված մեքենան։';
+
+  @override
+  String get detailsRegisteredIn => 'Գրանցված է';
+
+  @override
+  String get detailsSaved => 'Տվյալները պահպանվեցին';
+
+  @override
+  String get detailsStore => 'Խանութ';
+
+  @override
+  String get detailsStoreBrand => 'Խանութ կամ ապրանքանիշ';
+
+  @override
+  String get detailsStoreBrandHint => 'Մուտքագրեք խանութը կամ ապրանքանիշը';
+
+  @override
+  String get detailsStoreHint => 'Մուտքագրեք խանութը';
 }

@@ -9292,6 +9292,77 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get coachOfficial => '官方网站';
+
+  @override
+  String get detailsBank => '银行';
+
+  @override
+  String get detailsBankHelper => '以便 Ask Vaultara 为你指明你所在银行的办理步骤。';
+
+  @override
+  String get detailsBankHint => '输入你的银行';
+
+  @override
+  String get detailsCardTitle => '保存详情';
+
+  @override
+  String get detailsChooseCountry => '选择国家/地区';
+
+  @override
+  String get detailsClear => '清除';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter，例如 $first 或 $second';
+  }
+
+  @override
+  String get detailsInsurer => '保险公司';
+
+  @override
+  String get detailsInsurerHelper => '续保时要联系谁。';
+
+  @override
+  String get detailsInsurerHint => '输入你的保险公司';
+
+  @override
+  String get detailsIssuedBy => '签发国家';
+
+  @override
+  String get detailsIssuedByHelper => '签发它的国家。用于给出正确的续办步骤。';
+
+  @override
+  String get detailsOptional => '（可选）';
+
+  @override
+  String get detailsProvider => '服务商';
+
+  @override
+  String get detailsProviderHelper => '你在哪里续办。';
+
+  @override
+  String get detailsProviderHint => '输入服务商';
+
+  @override
+  String get detailsRegisteredHelper => '车辆的登记地。';
+
+  @override
+  String get detailsRegisteredIn => '登记国家';
+
+  @override
+  String get detailsSaved => '详情已保存';
+
+  @override
+  String get detailsStore => '商店';
+
+  @override
+  String get detailsStoreBrand => '商店或品牌';
+
+  @override
+  String get detailsStoreBrandHint => '输入商店或品牌';
+
+  @override
+  String get detailsStoreHint => '输入商店';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18570,6 +18641,77 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get coachOfficial => '官方网站';
+
+  @override
+  String get detailsBank => '银行';
+
+  @override
+  String get detailsBankHelper => '以便 Ask Vaultara 为你指明你所在银行的办理步骤。';
+
+  @override
+  String get detailsBankHint => '输入你的银行';
+
+  @override
+  String get detailsCardTitle => '保存详情';
+
+  @override
+  String get detailsChooseCountry => '选择国家/地区';
+
+  @override
+  String get detailsClear => '清除';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter，例如 $first 或 $second';
+  }
+
+  @override
+  String get detailsInsurer => '保险公司';
+
+  @override
+  String get detailsInsurerHelper => '续保时要联系谁。';
+
+  @override
+  String get detailsInsurerHint => '输入你的保险公司';
+
+  @override
+  String get detailsIssuedBy => '签发国家';
+
+  @override
+  String get detailsIssuedByHelper => '签发它的国家。用于给出正确的续办步骤。';
+
+  @override
+  String get detailsOptional => '（可选）';
+
+  @override
+  String get detailsProvider => '服务商';
+
+  @override
+  String get detailsProviderHelper => '你在哪里续办。';
+
+  @override
+  String get detailsProviderHint => '输入服务商';
+
+  @override
+  String get detailsRegisteredHelper => '车辆的登记地。';
+
+  @override
+  String get detailsRegisteredIn => '登记国家';
+
+  @override
+  String get detailsSaved => '详情已保存';
+
+  @override
+  String get detailsStore => '商店';
+
+  @override
+  String get detailsStoreBrand => '商店或品牌';
+
+  @override
+  String get detailsStoreBrandHint => '输入商店或品牌';
+
+  @override
+  String get detailsStoreHint => '输入商店';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -27848,4 +27990,75 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get coachOfficial => '官方網站';
+
+  @override
+  String get detailsBank => '銀行';
+
+  @override
+  String get detailsBankHelper => '讓 Ask Vaultara 為你指出你銀行的辦理步驟。';
+
+  @override
+  String get detailsBankHint => '輸入你的銀行';
+
+  @override
+  String get detailsCardTitle => '儲存詳細資料';
+
+  @override
+  String get detailsChooseCountry => '選擇國家/地區';
+
+  @override
+  String get detailsClear => '清除';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter，例如 $first 或 $second';
+  }
+
+  @override
+  String get detailsInsurer => '保險公司';
+
+  @override
+  String get detailsInsurerHelper => '續保時要聯絡誰。';
+
+  @override
+  String get detailsInsurerHint => '輸入你的保險公司';
+
+  @override
+  String get detailsIssuedBy => '簽發國家';
+
+  @override
+  String get detailsIssuedByHelper => '簽發它的國家。用於提供正確的續辦步驟。';
+
+  @override
+  String get detailsOptional => '（選填）';
+
+  @override
+  String get detailsProvider => '服務商';
+
+  @override
+  String get detailsProviderHelper => '你在哪裡續辦。';
+
+  @override
+  String get detailsProviderHint => '輸入服務商';
+
+  @override
+  String get detailsRegisteredHelper => '車輛的登記地。';
+
+  @override
+  String get detailsRegisteredIn => '登記國家';
+
+  @override
+  String get detailsSaved => '詳細資料已儲存';
+
+  @override
+  String get detailsStore => '商店';
+
+  @override
+  String get detailsStoreBrand => '商店或品牌';
+
+  @override
+  String get detailsStoreBrandHint => '輸入商店或品牌';
+
+  @override
+  String get detailsStoreHint => '輸入商店';
 }

@@ -3809,5 +3809,108 @@
   "coachOfficial": "आधिकारिक साइट",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "बैंक",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "ताकि Ask Vaultara आपको आपके बैंक के अपने चरण बता सके।",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "अपना बैंक दर्ज करें",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "विवरण सहेजें",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "देश चुनें",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "साफ़ करें",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, जैसे {first} या {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "बीमाकर्ता",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "नवीनीकरण के समय किससे संपर्क करें।",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "अपना बीमाकर्ता दर्ज करें",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "जारीकर्ता",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "जिस देश ने इसे जारी किया। सही नवीनीकरण चरणों के लिए।",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(वैकल्पिक)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "प्रदाता",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "आप किसके साथ नवीनीकरण करते हैं।",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "प्रदाता दर्ज करें",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "वाहन कहाँ पंजीकृत है।",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "पंजीकृत देश",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "विवरण सहेजा गया",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "स्टोर",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "स्टोर या ब्रांड",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "स्टोर या ब्रांड दर्ज करें",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "स्टोर दर्ज करें",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

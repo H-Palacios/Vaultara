@@ -3547,5 +3547,108 @@
   "coachOfficial": "Официален сайт",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "Банка",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "За да може Ask Vaultara да ви насочи към стъпките на вашата банка.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "Въведете банката си",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "Запази данните",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "Изберете държава",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "Изчисти",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, напр. {first} или {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "Застраховател",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "С кого да се свържете, когато е време за подновяване.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "Въведете застрахователя си",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "Издаден от",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "Държавата, която го е издала. Използва се за правилните стъпки за подновяване.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(по избор)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "Доставчик",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "При кого подновявате.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "Въведете доставчика",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "Къде е регистрирано превозното средство.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "Регистрирано в",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "Данните са запазени",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "Магазин",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "Магазин или марка",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "Въведете магазина или марката",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "Въведете магазина",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

@@ -9355,4 +9355,75 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get coachOfficial => 'अधिकृत साइट';
+
+  @override
+  String get detailsBank => 'बँक';
+
+  @override
+  String get detailsBankHelper => 'जेणेकरून Ask Vaultara तुम्हाला तुमच्या बँकेच्या स्वतःच्या पायऱ्या दाखवू शकेल.';
+
+  @override
+  String get detailsBankHint => 'तुमची बँक लिहा';
+
+  @override
+  String get detailsCardTitle => 'तपशील जतन करा';
+
+  @override
+  String get detailsChooseCountry => 'देश निवडा';
+
+  @override
+  String get detailsClear => 'साफ करा';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, उदा. $first किंवा $second';
+  }
+
+  @override
+  String get detailsInsurer => 'विमा कंपनी';
+
+  @override
+  String get detailsInsurerHelper => 'नूतनीकरणाची वेळ आल्यावर कोणाशी संपर्क करायचा.';
+
+  @override
+  String get detailsInsurerHint => 'तुमची विमा कंपनी लिहा';
+
+  @override
+  String get detailsIssuedBy => 'जारी करणारा';
+
+  @override
+  String get detailsIssuedByHelper => 'ज्या देशाने ते जारी केले. योग्य नूतनीकरण पायऱ्यांसाठी वापरले जाते.';
+
+  @override
+  String get detailsOptional => '(पर्यायी)';
+
+  @override
+  String get detailsProvider => 'प्रदाता';
+
+  @override
+  String get detailsProviderHelper => 'तुम्ही कोणाकडे नूतनीकरण करता.';
+
+  @override
+  String get detailsProviderHint => 'प्रदाता लिहा';
+
+  @override
+  String get detailsRegisteredHelper => 'वाहन कुठे नोंदणीकृत आहे.';
+
+  @override
+  String get detailsRegisteredIn => 'नोंदणी देश';
+
+  @override
+  String get detailsSaved => 'तपशील जतन केले';
+
+  @override
+  String get detailsStore => 'दुकान';
+
+  @override
+  String get detailsStoreBrand => 'दुकान किंवा ब्रँड';
+
+  @override
+  String get detailsStoreBrandHint => 'दुकान किंवा ब्रँड लिहा';
+
+  @override
+  String get detailsStoreHint => 'दुकान लिहा';
 }

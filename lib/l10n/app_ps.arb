@@ -3797,5 +3797,108 @@
   "coachOfficial": "رسمي سایټ",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "بانک",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "څو Ask Vaultara تاسو د خپل بانک ګامونو ته لارښوونه وکړي.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "خپل بانک ولیکئ",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "جزییات خوندي کړئ",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "یو هېواد وټاکئ",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "پاکول",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}، لکه {first} یا {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "بیمه کوونکی",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "د نوي کولو پر وخت له چا سره اړیکه ونیسئ.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "خپل بیمه کوونکی ولیکئ",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "صادروونکی",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "هغه هېواد چې صادر کړی. د سمو نوي کولو ګامونو لپاره کارېږي.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(اختیاري)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "چمتو کوونکی",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "له چا سره یې نوي کوئ.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "چمتو کوونکی ولیکئ",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "موټر چېرته ثبت شوی.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "ثبت شوی په",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "جزییات خوندي شول",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "پلورنځی",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "پلورنځی یا برانډ",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "پلورنځی یا برانډ ولیکئ",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "پلورنځی ولیکئ",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

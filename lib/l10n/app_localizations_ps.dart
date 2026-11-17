@@ -9355,4 +9355,75 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get coachOfficial => 'رسمي سایټ';
+
+  @override
+  String get detailsBank => 'بانک';
+
+  @override
+  String get detailsBankHelper => 'څو Ask Vaultara تاسو د خپل بانک ګامونو ته لارښوونه وکړي.';
+
+  @override
+  String get detailsBankHint => 'خپل بانک ولیکئ';
+
+  @override
+  String get detailsCardTitle => 'جزییات خوندي کړئ';
+
+  @override
+  String get detailsChooseCountry => 'یو هېواد وټاکئ';
+
+  @override
+  String get detailsClear => 'پاکول';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter، لکه $first یا $second';
+  }
+
+  @override
+  String get detailsInsurer => 'بیمه کوونکی';
+
+  @override
+  String get detailsInsurerHelper => 'د نوي کولو پر وخت له چا سره اړیکه ونیسئ.';
+
+  @override
+  String get detailsInsurerHint => 'خپل بیمه کوونکی ولیکئ';
+
+  @override
+  String get detailsIssuedBy => 'صادروونکی';
+
+  @override
+  String get detailsIssuedByHelper => 'هغه هېواد چې صادر کړی. د سمو نوي کولو ګامونو لپاره کارېږي.';
+
+  @override
+  String get detailsOptional => '(اختیاري)';
+
+  @override
+  String get detailsProvider => 'چمتو کوونکی';
+
+  @override
+  String get detailsProviderHelper => 'له چا سره یې نوي کوئ.';
+
+  @override
+  String get detailsProviderHint => 'چمتو کوونکی ولیکئ';
+
+  @override
+  String get detailsRegisteredHelper => 'موټر چېرته ثبت شوی.';
+
+  @override
+  String get detailsRegisteredIn => 'ثبت شوی په';
+
+  @override
+  String get detailsSaved => 'جزییات خوندي شول';
+
+  @override
+  String get detailsStore => 'پلورنځی';
+
+  @override
+  String get detailsStoreBrand => 'پلورنځی یا برانډ';
+
+  @override
+  String get detailsStoreBrandHint => 'پلورنځی یا برانډ ولیکئ';
+
+  @override
+  String get detailsStoreHint => 'پلورنځی ولیکئ';
 }

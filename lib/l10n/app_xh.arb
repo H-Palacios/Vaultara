@@ -3797,5 +3797,108 @@
   "coachOfficial": "Isayithi esemthethweni",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "Ibhanki",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ukuze u-Ask Vaultara akukhokele kumanyathelo ebhanki yakho.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "Faka ibhanki yakho",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "Gcina iinkcukacha",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "Khetha ilizwe",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "Cima",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, umz. {first} okanye {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "Inkampani yeinshorensi",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "Ngubani onokuqhagamshelana naye xa lixesha lokuhlaziya.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "Faka inkampani yakho yeinshorensi",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "Ikhutshwe ngu",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "Ilizwe eliyikhuphileyo. Lisetyenziselwa amanyathelo afanelekileyo okuhlaziya.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ukuzikhethela)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "Umboneleli",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "Ohlaziya kuye.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "Faka umboneleli",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "Apho isithuthi sibhaliswe khona.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "Sibhaliswe e",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "Iinkcukacha zigciniwe",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "Ivenkile",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "Ivenkile okanye uphawu",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "Faka ivenkile okanye uphawu",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "Faka ivenkile",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

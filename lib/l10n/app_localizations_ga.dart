@@ -9560,4 +9560,75 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Suíomh oifigiúil';
+
+  @override
+  String get detailsBank => 'Banc';
+
+  @override
+  String get detailsBankHelper => 'Ionas gur féidir le Ask Vaultara céimeanna do bhainc a thaispeáint duit.';
+
+  @override
+  String get detailsBankHint => 'Cuir isteach do bhanc';
+
+  @override
+  String get detailsCardTitle => 'Sábháil sonraí';
+
+  @override
+  String get detailsChooseCountry => 'Roghnaigh tír';
+
+  @override
+  String get detailsClear => 'Glan';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, m.sh. $first nó $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Árachóir';
+
+  @override
+  String get detailsInsurerHelper => 'Cé leis a dhéanfaidh tú teagmháil nuair is am athnuachana é.';
+
+  @override
+  String get detailsInsurerHint => 'Cuir isteach d\'árachóir';
+
+  @override
+  String get detailsIssuedBy => 'Eisithe ag';
+
+  @override
+  String get detailsIssuedByHelper => 'An tír a d\'eisigh é. Úsáidtear é le haghaidh na gcéimeanna cearta athnuachana.';
+
+  @override
+  String get detailsOptional => '(roghnach)';
+
+  @override
+  String get detailsProvider => 'Soláthraí';
+
+  @override
+  String get detailsProviderHelper => 'Cé leis a athnuann tú.';
+
+  @override
+  String get detailsProviderHint => 'Cuir isteach an soláthraí';
+
+  @override
+  String get detailsRegisteredHelper => 'Cá bhfuil an fheithicil cláraithe.';
+
+  @override
+  String get detailsRegisteredIn => 'Cláraithe i';
+
+  @override
+  String get detailsSaved => 'Sonraí sábháilte';
+
+  @override
+  String get detailsStore => 'Siopa';
+
+  @override
+  String get detailsStoreBrand => 'Siopa nó branda';
+
+  @override
+  String get detailsStoreBrandHint => 'Cuir isteach an siopa nó an branda';
+
+  @override
+  String get detailsStoreHint => 'Cuir isteach an siopa';
 }

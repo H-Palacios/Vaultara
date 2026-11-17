@@ -9354,4 +9354,75 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get coachOfficial => 'ኦፊሴላዊ ድረ-ገጽ';
+
+  @override
+  String get detailsBank => 'ባንክ';
+
+  @override
+  String get detailsBankHelper => 'Vaultaraን ይጠይቁ ወደ ባንክዎ የራሱ ደረጃዎች እንዲመራዎት።';
+
+  @override
+  String get detailsBankHint => 'ባንክዎን ያስገቡ';
+
+  @override
+  String get detailsCardTitle => 'ዝርዝሮችን አስቀምጥ';
+
+  @override
+  String get detailsChooseCountry => 'አገር ይምረጡ';
+
+  @override
+  String get detailsClear => 'አጽዳ';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter፣ ለምሳሌ $first ወይም $second';
+  }
+
+  @override
+  String get detailsInsurer => 'ኢንሹራንስ ሰጪ';
+
+  @override
+  String get detailsInsurerHelper => 'ለማደስ ጊዜው ሲደርስ ማንን ማነጋገር እንዳለብዎ።';
+
+  @override
+  String get detailsInsurerHint => 'ኢንሹራንስ ሰጪዎን ያስገቡ';
+
+  @override
+  String get detailsIssuedBy => 'የሰጠው';
+
+  @override
+  String get detailsIssuedByHelper => 'የሰጠው አገር። ለትክክለኛ የእድሳት ደረጃዎች ያገለግላል።';
+
+  @override
+  String get detailsOptional => '(አማራጭ)';
+
+  @override
+  String get detailsProvider => 'አቅራቢ';
+
+  @override
+  String get detailsProviderHelper => 'የሚያድሱበት።';
+
+  @override
+  String get detailsProviderHint => 'አቅራቢውን ያስገቡ';
+
+  @override
+  String get detailsRegisteredHelper => 'ተሽከርካሪው የተመዘገበበት።';
+
+  @override
+  String get detailsRegisteredIn => 'የተመዘገበበት';
+
+  @override
+  String get detailsSaved => 'ዝርዝሮች ተቀምጠዋል';
+
+  @override
+  String get detailsStore => 'መደብር';
+
+  @override
+  String get detailsStoreBrand => 'መደብር ወይም ብራንድ';
+
+  @override
+  String get detailsStoreBrandHint => 'መደብሩን ወይም ብራንዱን ያስገቡ';
+
+  @override
+  String get detailsStoreHint => 'መደብሩን ያስገቡ';
 }

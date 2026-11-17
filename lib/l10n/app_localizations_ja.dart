@@ -9280,4 +9280,75 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get coachOfficial => '公式サイト';
+
+  @override
+  String get detailsBank => '銀行';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultaraがその銀行の手順を案内できるように。';
+
+  @override
+  String get detailsBankHint => '銀行を入力';
+
+  @override
+  String get detailsCardTitle => '詳細を保存';
+
+  @override
+  String get detailsChooseCountry => '国を選択';
+
+  @override
+  String get detailsClear => '消去';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter（例：$first、$second）';
+  }
+
+  @override
+  String get detailsInsurer => '保険会社';
+
+  @override
+  String get detailsInsurerHelper => '更新の時期に連絡する相手。';
+
+  @override
+  String get detailsInsurerHint => '保険会社を入力';
+
+  @override
+  String get detailsIssuedBy => '発行国';
+
+  @override
+  String get detailsIssuedByHelper => '発行した国。正しい更新手順に使われます。';
+
+  @override
+  String get detailsOptional => '（任意）';
+
+  @override
+  String get detailsProvider => '提供元';
+
+  @override
+  String get detailsProviderHelper => '更新する相手。';
+
+  @override
+  String get detailsProviderHint => '提供元を入力';
+
+  @override
+  String get detailsRegisteredHelper => '車両が登録されている国。';
+
+  @override
+  String get detailsRegisteredIn => '登録国';
+
+  @override
+  String get detailsSaved => '詳細を保存しました';
+
+  @override
+  String get detailsStore => '店舗';
+
+  @override
+  String get detailsStoreBrand => '店舗またはブランド';
+
+  @override
+  String get detailsStoreBrandHint => '店舗またはブランドを入力';
+
+  @override
+  String get detailsStoreHint => '店舗を入力';
 }

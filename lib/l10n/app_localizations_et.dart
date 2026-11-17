@@ -9360,4 +9360,75 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Ametlik sait';
+
+  @override
+  String get detailsBank => 'Pank';
+
+  @override
+  String get detailsBankHelper => 'Et Ask Vaultara saaks juhatada sinu panga sammudeni.';
+
+  @override
+  String get detailsBankHint => 'Sisesta oma pank';
+
+  @override
+  String get detailsCardTitle => 'Salvesta andmed';
+
+  @override
+  String get detailsChooseCountry => 'Vali riik';
+
+  @override
+  String get detailsClear => 'Tühjenda';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, nt $first või $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Kindlustaja';
+
+  @override
+  String get detailsInsurerHelper => 'Kellega ühendust võtta, kui on aeg uuendada.';
+
+  @override
+  String get detailsInsurerHint => 'Sisesta oma kindlustaja';
+
+  @override
+  String get detailsIssuedBy => 'Väljastaja';
+
+  @override
+  String get detailsIssuedByHelper => 'Riik, mis selle väljastas. Kasutatakse õigete uuendussammude jaoks.';
+
+  @override
+  String get detailsOptional => '(valikuline)';
+
+  @override
+  String get detailsProvider => 'Teenusepakkuja';
+
+  @override
+  String get detailsProviderHelper => 'Kelle juures uuendad.';
+
+  @override
+  String get detailsProviderHint => 'Sisesta teenusepakkuja';
+
+  @override
+  String get detailsRegisteredHelper => 'Kus sõiduk on registreeritud.';
+
+  @override
+  String get detailsRegisteredIn => 'Registreeritud';
+
+  @override
+  String get detailsSaved => 'Andmed salvestatud';
+
+  @override
+  String get detailsStore => 'Pood';
+
+  @override
+  String get detailsStoreBrand => 'Pood või kaubamärk';
+
+  @override
+  String get detailsStoreBrandHint => 'Sisesta pood või kaubamärk';
+
+  @override
+  String get detailsStoreHint => 'Sisesta pood';
 }

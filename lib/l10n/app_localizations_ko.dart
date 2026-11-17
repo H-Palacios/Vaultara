@@ -9292,4 +9292,75 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get coachOfficial => '공식 사이트';
+
+  @override
+  String get detailsBank => '은행';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara가 해당 은행의 절차를 안내할 수 있도록요.';
+
+  @override
+  String get detailsBankHint => '은행을 입력하세요';
+
+  @override
+  String get detailsCardTitle => '세부 정보 저장';
+
+  @override
+  String get detailsChooseCountry => '국가 선택';
+
+  @override
+  String get detailsClear => '지우기';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter (예: $first, $second)';
+  }
+
+  @override
+  String get detailsInsurer => '보험사';
+
+  @override
+  String get detailsInsurerHelper => '갱신할 때 연락할 곳.';
+
+  @override
+  String get detailsInsurerHint => '보험사를 입력하세요';
+
+  @override
+  String get detailsIssuedBy => '발급 국가';
+
+  @override
+  String get detailsIssuedByHelper => '발급한 국가. 정확한 갱신 절차에 쓰입니다.';
+
+  @override
+  String get detailsOptional => '(선택 사항)';
+
+  @override
+  String get detailsProvider => '제공업체';
+
+  @override
+  String get detailsProviderHelper => '갱신하는 곳.';
+
+  @override
+  String get detailsProviderHint => '제공업체를 입력하세요';
+
+  @override
+  String get detailsRegisteredHelper => '차량이 등록된 국가.';
+
+  @override
+  String get detailsRegisteredIn => '등록 국가';
+
+  @override
+  String get detailsSaved => '세부 정보를 저장했습니다';
+
+  @override
+  String get detailsStore => '매장';
+
+  @override
+  String get detailsStoreBrand => '매장 또는 브랜드';
+
+  @override
+  String get detailsStoreBrandHint => '매장 또는 브랜드를 입력하세요';
+
+  @override
+  String get detailsStoreHint => '매장을 입력하세요';
 }

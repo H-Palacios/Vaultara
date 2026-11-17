@@ -3797,5 +3797,108 @@
   "coachOfficial": "ماڵپەڕی فەرمی",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "بانک",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "بۆ ئەوەی Ask Vaultara ڕێنمایی بکات بۆ هەنگاوەکانی بانکەکەت.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "بانکەکەت بنووسە",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "وردەکارییەکان پاشەکەوت بکە",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "وڵاتێک هەڵبژێرە",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "سڕینەوە",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}، بۆ نموونە {first} یان {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "کۆمپانیای بیمە",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "کاتی نوێکردنەوە پەیوەندی بە کێوە بکەیت.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "کۆمپانیای بیمەکەت بنووسە",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "دەرکراوە لەلایەن",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ئەو وڵاتەی دەری کردووە. بۆ هەنگاوە دروستەکانی نوێکردنەوە بەکاردێت.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ئارەزوومەندانە)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "دابینکەر",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "لای کێ نوێی دەکەیتەوە.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "دابینکەر بنووسە",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "ئۆتۆمبێلەکە لە کوێ تۆمارکراوە.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "تۆمارکراوە لە",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "وردەکارییەکان پاشەکەوت کران",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "فرۆشگا",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "فرۆشگا یان براند",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "فرۆشگا یان براند بنووسە",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "فرۆشگا بنووسە",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

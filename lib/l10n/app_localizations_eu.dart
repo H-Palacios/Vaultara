@@ -9360,4 +9360,75 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Webgune ofiziala';
+
+  @override
+  String get detailsBank => 'Bankua';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultarak zure bankuaren urratsetara bidera zaitzan.';
+
+  @override
+  String get detailsBankHint => 'Idatzi zure bankua';
+
+  @override
+  String get detailsCardTitle => 'Gorde xehetasunak';
+
+  @override
+  String get detailsChooseCountry => 'Aukeratu herrialde bat';
+
+  @override
+  String get detailsClear => 'Garbitu';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, adib. $first edo $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Aseguratzailea';
+
+  @override
+  String get detailsInsurerHelper => 'Norekin harremanetan jarri berritzeko garaia iristean.';
+
+  @override
+  String get detailsInsurerHint => 'Idatzi zure aseguratzailea';
+
+  @override
+  String get detailsIssuedBy => 'Igorlea';
+
+  @override
+  String get detailsIssuedByHelper => 'Igorri duen herrialdea. Berritzeko urrats zuzenetarako erabiltzen da.';
+
+  @override
+  String get detailsOptional => '(aukerakoa)';
+
+  @override
+  String get detailsProvider => 'Hornitzailea';
+
+  @override
+  String get detailsProviderHelper => 'Norekin berritzen duzun.';
+
+  @override
+  String get detailsProviderHint => 'Idatzi hornitzailea';
+
+  @override
+  String get detailsRegisteredHelper => 'Ibilgailua non dagoen matrikulatuta.';
+
+  @override
+  String get detailsRegisteredIn => 'Matrikulatuta';
+
+  @override
+  String get detailsSaved => 'Xehetasunak gorde dira';
+
+  @override
+  String get detailsStore => 'Denda';
+
+  @override
+  String get detailsStoreBrand => 'Denda edo marka';
+
+  @override
+  String get detailsStoreBrandHint => 'Idatzi denda edo marka';
+
+  @override
+  String get detailsStoreHint => 'Idatzi denda';
 }

@@ -3802,5 +3802,108 @@
   "coachOfficial": "Saịtị gọọmentị",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "Ụlọ akụ",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ka Ask Vaultara wee duzie gị na nzọụkwụ ụlọ akụ gị.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "Tinye ụlọ akụ gị",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "Chekwaa nkọwa",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "Họrọ obodo",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "Hichapụ",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, dịka {first} ma ọ bụ {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "Onye inshọransị",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "Onye ị ga-akpọ mgbe oge iji meghari ruru.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "Tinye onye inshọransị gị",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "Nyere ya",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "Obodo nyere ya. A na-eji ya maka nzọụkwụ mmeghari ziri ezi.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(nhọrọ)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "Onye na-enye",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "Onye ị na-emeghari na ya.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "Tinye onye na-enye",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "Ebe e debanyere ụgbọala ahụ.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "Edebanyere na",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "Echekwala nkọwa",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "Ụlọ ahịa",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "Ụlọ ahịa ma ọ bụ ụdị",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "Tinye ụlọ ahịa ma ọ bụ ụdị",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "Tinye ụlọ ahịa",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

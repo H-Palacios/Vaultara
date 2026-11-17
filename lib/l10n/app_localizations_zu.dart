@@ -9355,4 +9355,75 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Isayithi elisemthethweni';
+
+  @override
+  String get detailsBank => 'Ibhange';
+
+  @override
+  String get detailsBankHelper => 'Ukuze u-Ask Vaultara akukhombise izinyathelo zebhange lakho.';
+
+  @override
+  String get detailsBankHint => 'Faka ibhange lakho';
+
+  @override
+  String get detailsCardTitle => 'Londoloza imininingwane';
+
+  @override
+  String get detailsChooseCountry => 'Khetha izwe';
+
+  @override
+  String get detailsClear => 'Sula';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, isb. $first noma $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Umshwalense';
+
+  @override
+  String get detailsInsurerHelper => 'Okufanele uxhumane naye uma sekuyisikhathi sokuvuselela.';
+
+  @override
+  String get detailsInsurerHint => 'Faka umshwalense wakho';
+
+  @override
+  String get detailsIssuedBy => 'Ikhishwe ngu';
+
+  @override
+  String get detailsIssuedByHelper => 'Izwe eliyikhiphile. Lisetshenziselwa izinyathelo ezifanele zokuvuselela.';
+
+  @override
+  String get detailsOptional => '(ongakukhetha)';
+
+  @override
+  String get detailsProvider => 'Umhlinzeki';
+
+  @override
+  String get detailsProviderHelper => 'Ovuselela kuye.';
+
+  @override
+  String get detailsProviderHint => 'Faka umhlinzeki';
+
+  @override
+  String get detailsRegisteredHelper => 'Lapho imoto ibhaliswe khona.';
+
+  @override
+  String get detailsRegisteredIn => 'Ibhaliswe e';
+
+  @override
+  String get detailsSaved => 'Imininingwane ilondoloziwe';
+
+  @override
+  String get detailsStore => 'Isitolo';
+
+  @override
+  String get detailsStoreBrand => 'Isitolo noma uphawu';
+
+  @override
+  String get detailsStoreBrandHint => 'Faka isitolo noma uphawu';
+
+  @override
+  String get detailsStoreHint => 'Faka isitolo';
 }

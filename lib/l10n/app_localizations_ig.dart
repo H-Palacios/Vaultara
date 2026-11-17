@@ -9303,4 +9303,75 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Saịtị gọọmentị';
+
+  @override
+  String get detailsBank => 'Ụlọ akụ';
+
+  @override
+  String get detailsBankHelper => 'Ka Ask Vaultara wee duzie gị na nzọụkwụ ụlọ akụ gị.';
+
+  @override
+  String get detailsBankHint => 'Tinye ụlọ akụ gị';
+
+  @override
+  String get detailsCardTitle => 'Chekwaa nkọwa';
+
+  @override
+  String get detailsChooseCountry => 'Họrọ obodo';
+
+  @override
+  String get detailsClear => 'Hichapụ';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, dịka $first ma ọ bụ $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Onye inshọransị';
+
+  @override
+  String get detailsInsurerHelper => 'Onye ị ga-akpọ mgbe oge iji meghari ruru.';
+
+  @override
+  String get detailsInsurerHint => 'Tinye onye inshọransị gị';
+
+  @override
+  String get detailsIssuedBy => 'Nyere ya';
+
+  @override
+  String get detailsIssuedByHelper => 'Obodo nyere ya. A na-eji ya maka nzọụkwụ mmeghari ziri ezi.';
+
+  @override
+  String get detailsOptional => '(nhọrọ)';
+
+  @override
+  String get detailsProvider => 'Onye na-enye';
+
+  @override
+  String get detailsProviderHelper => 'Onye ị na-emeghari na ya.';
+
+  @override
+  String get detailsProviderHint => 'Tinye onye na-enye';
+
+  @override
+  String get detailsRegisteredHelper => 'Ebe e debanyere ụgbọala ahụ.';
+
+  @override
+  String get detailsRegisteredIn => 'Edebanyere na';
+
+  @override
+  String get detailsSaved => 'Echekwala nkọwa';
+
+  @override
+  String get detailsStore => 'Ụlọ ahịa';
+
+  @override
+  String get detailsStoreBrand => 'Ụlọ ahịa ma ọ bụ ụdị';
+
+  @override
+  String get detailsStoreBrandHint => 'Tinye ụlọ ahịa ma ọ bụ ụdị';
+
+  @override
+  String get detailsStoreHint => 'Tinye ụlọ ahịa';
 }

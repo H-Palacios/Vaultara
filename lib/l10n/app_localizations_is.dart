@@ -9354,4 +9354,75 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Opinber vefur';
+
+  @override
+  String get detailsBank => 'Banki';
+
+  @override
+  String get detailsBankHelper => 'Svo Ask Vaultara geti vísað þér á skref bankans þíns.';
+
+  @override
+  String get detailsBankHint => 'Sláðu inn bankann þinn';
+
+  @override
+  String get detailsCardTitle => 'Vista upplýsingar';
+
+  @override
+  String get detailsChooseCountry => 'Veldu land';
+
+  @override
+  String get detailsClear => 'Hreinsa';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, t.d. $first eða $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Tryggingafélag';
+
+  @override
+  String get detailsInsurerHelper => 'Hvern á að hafa samband við þegar endurnýja þarf.';
+
+  @override
+  String get detailsInsurerHint => 'Sláðu inn tryggingafélagið';
+
+  @override
+  String get detailsIssuedBy => 'Gefið út af';
+
+  @override
+  String get detailsIssuedByHelper => 'Landið sem gaf það út. Notað fyrir rétt endurnýjunarskref.';
+
+  @override
+  String get detailsOptional => '(valfrjálst)';
+
+  @override
+  String get detailsProvider => 'Veitandi';
+
+  @override
+  String get detailsProviderHelper => 'Hjá hverjum þú endurnýjar.';
+
+  @override
+  String get detailsProviderHint => 'Sláðu inn veitandann';
+
+  @override
+  String get detailsRegisteredHelper => 'Hvar ökutækið er skráð.';
+
+  @override
+  String get detailsRegisteredIn => 'Skráð í';
+
+  @override
+  String get detailsSaved => 'Upplýsingar vistaðar';
+
+  @override
+  String get detailsStore => 'Verslun';
+
+  @override
+  String get detailsStoreBrand => 'Verslun eða vörumerki';
+
+  @override
+  String get detailsStoreBrandHint => 'Sláðu inn verslun eða vörumerki';
+
+  @override
+  String get detailsStoreHint => 'Sláðu inn verslunina';
 }

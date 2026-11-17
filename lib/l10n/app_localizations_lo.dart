@@ -9292,4 +9292,75 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get coachOfficial => 'ເວັບໄຊທາງການ';
+
+  @override
+  String get detailsBank => 'ທະນາຄານ';
+
+  @override
+  String get detailsBankHelper => 'ເພື່ອໃຫ້ Ask Vaultara ແນະນຳຂັ້ນຕອນຂອງທະນາຄານທ່ານ.';
+
+  @override
+  String get detailsBankHint => 'ປ້ອນທະນາຄານຂອງທ່ານ';
+
+  @override
+  String get detailsCardTitle => 'ບັນທຶກລາຍລະອຽດ';
+
+  @override
+  String get detailsChooseCountry => 'ເລືອກປະເທດ';
+
+  @override
+  String get detailsClear => 'ລຶບ';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, ເຊັ່ນ $first ຫຼື $second';
+  }
+
+  @override
+  String get detailsInsurer => 'ບໍລິສັດປະກັນໄພ';
+
+  @override
+  String get detailsInsurerHelper => 'ຕິດຕໍ່ໃຜເມື່ອຮອດເວລາຕໍ່ອາຍຸ.';
+
+  @override
+  String get detailsInsurerHint => 'ປ້ອນບໍລິສັດປະກັນໄພ';
+
+  @override
+  String get detailsIssuedBy => 'ອອກໂດຍ';
+
+  @override
+  String get detailsIssuedByHelper => 'ປະເທດທີ່ອອກໃຫ້. ໃຊ້ສຳລັບຂັ້ນຕອນຕໍ່ອາຍຸທີ່ຖືກຕ້ອງ.';
+
+  @override
+  String get detailsOptional => '(ທາງເລືອກ)';
+
+  @override
+  String get detailsProvider => 'ຜູ້ໃຫ້ບໍລິການ';
+
+  @override
+  String get detailsProviderHelper => 'ທ່ານຕໍ່ອາຍຸກັບໃຜ.';
+
+  @override
+  String get detailsProviderHint => 'ປ້ອນຜູ້ໃຫ້ບໍລິການ';
+
+  @override
+  String get detailsRegisteredHelper => 'ບ່ອນທີ່ລົດຈົດທະບຽນ.';
+
+  @override
+  String get detailsRegisteredIn => 'ຈົດທະບຽນຢູ່';
+
+  @override
+  String get detailsSaved => 'ບັນທຶກລາຍລະອຽດແລ້ວ';
+
+  @override
+  String get detailsStore => 'ຮ້ານ';
+
+  @override
+  String get detailsStoreBrand => 'ຮ້ານ ຫຼື ຍີ່ຫໍ້';
+
+  @override
+  String get detailsStoreBrandHint => 'ປ້ອນຮ້ານ ຫຼື ຍີ່ຫໍ້';
+
+  @override
+  String get detailsStoreHint => 'ປ້ອນຮ້ານ';
 }

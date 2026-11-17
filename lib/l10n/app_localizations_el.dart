@@ -9360,4 +9360,75 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Επίσημος ιστότοπος';
+
+  @override
+  String get detailsBank => 'Τράπεζα';
+
+  @override
+  String get detailsBankHelper => 'Ώστε το Ask Vaultara να σας δείξει τα βήματα της τράπεζάς σας.';
+
+  @override
+  String get detailsBankHint => 'Εισαγάγετε την τράπεζά σας';
+
+  @override
+  String get detailsCardTitle => 'Αποθήκευση στοιχείων';
+
+  @override
+  String get detailsChooseCountry => 'Επιλέξτε χώρα';
+
+  @override
+  String get detailsClear => 'Διαγραφή';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, π.χ. $first ή $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Ασφαλιστής';
+
+  @override
+  String get detailsInsurerHelper => 'Με ποιον να επικοινωνήσετε όταν έρθει η ώρα της ανανέωσης.';
+
+  @override
+  String get detailsInsurerHint => 'Εισαγάγετε τον ασφαλιστή σας';
+
+  @override
+  String get detailsIssuedBy => 'Εκδόθηκε από';
+
+  @override
+  String get detailsIssuedByHelper => 'Η χώρα που το εξέδωσε. Χρησιμοποιείται για τα σωστά βήματα ανανέωσης.';
+
+  @override
+  String get detailsOptional => '(προαιρετικό)';
+
+  @override
+  String get detailsProvider => 'Πάροχος';
+
+  @override
+  String get detailsProviderHelper => 'Με ποιον ανανεώνετε.';
+
+  @override
+  String get detailsProviderHint => 'Εισαγάγετε τον πάροχο';
+
+  @override
+  String get detailsRegisteredHelper => 'Πού είναι ταξινομημένο το όχημα.';
+
+  @override
+  String get detailsRegisteredIn => 'Ταξινομημένο σε';
+
+  @override
+  String get detailsSaved => 'Τα στοιχεία αποθηκεύτηκαν';
+
+  @override
+  String get detailsStore => 'Κατάστημα';
+
+  @override
+  String get detailsStoreBrand => 'Κατάστημα ή μάρκα';
+
+  @override
+  String get detailsStoreBrandHint => 'Εισαγάγετε το κατάστημα ή τη μάρκα';
+
+  @override
+  String get detailsStoreHint => 'Εισαγάγετε το κατάστημα';
 }

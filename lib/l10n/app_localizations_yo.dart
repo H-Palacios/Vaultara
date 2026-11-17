@@ -9303,4 +9303,75 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Ojú-òpó ìjọba';
+
+  @override
+  String get detailsBank => 'Báńkì';
+
+  @override
+  String get detailsBankHelper => 'Kí Ask Vaultara lè fi àwọn ìgbésẹ̀ báńkì rẹ hàn ọ́.';
+
+  @override
+  String get detailsBankHint => 'Tẹ báńkì rẹ sí';
+
+  @override
+  String get detailsCardTitle => 'Fi àwọn àlàyé pamọ́';
+
+  @override
+  String get detailsChooseCountry => 'Yan orílẹ̀-èdè';
+
+  @override
+  String get detailsClear => 'Pa rẹ́';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, fún àpẹẹrẹ $first tàbí $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Olùpèsè ìbánigbófò';
+
+  @override
+  String get detailsInsurerHelper => 'Ẹni tí o máa kàn sí nígbà tí àkókò ìsọdọ̀tun bá tó.';
+
+  @override
+  String get detailsInsurerHint => 'Tẹ olùpèsè ìbánigbófò rẹ sí';
+
+  @override
+  String get detailsIssuedBy => 'Tí a fún láti ọwọ́';
+
+  @override
+  String get detailsIssuedByHelper => 'Orílẹ̀-èdè tí ó fún un. A ń lò ó fún àwọn ìgbésẹ̀ ìsọdọ̀tun tó tọ́.';
+
+  @override
+  String get detailsOptional => '(àṣàyàn)';
+
+  @override
+  String get detailsProvider => 'Olùpèsè';
+
+  @override
+  String get detailsProviderHelper => 'Ẹni tí o ń sọ di tuntun lọ́dọ̀ rẹ̀.';
+
+  @override
+  String get detailsProviderHint => 'Tẹ olùpèsè sí';
+
+  @override
+  String get detailsRegisteredHelper => 'Ibi tí a forúkọ ọkọ̀ sílẹ̀.';
+
+  @override
+  String get detailsRegisteredIn => 'A forúkọ sílẹ̀ ní';
+
+  @override
+  String get detailsSaved => 'A ti fi àwọn àlàyé pamọ́';
+
+  @override
+  String get detailsStore => 'Ilé ìtajà';
+
+  @override
+  String get detailsStoreBrand => 'Ilé ìtajà tàbí àmì';
+
+  @override
+  String get detailsStoreBrandHint => 'Tẹ ilé ìtajà tàbí àmì sí';
+
+  @override
+  String get detailsStoreHint => 'Tẹ ilé ìtajà sí';
 }

@@ -9530,4 +9530,75 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Офіційний сайт';
+
+  @override
+  String get detailsBank => 'Банк';
+
+  @override
+  String get detailsBankHelper => 'Щоб Ask Vaultara міг підказати кроки вашого банку.';
+
+  @override
+  String get detailsBankHint => 'Введіть свій банк';
+
+  @override
+  String get detailsCardTitle => 'Зберегти дані';
+
+  @override
+  String get detailsChooseCountry => 'Виберіть країну';
+
+  @override
+  String get detailsClear => 'Очистити';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, наприклад $first або $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Страховик';
+
+  @override
+  String get detailsInsurerHelper => 'До кого звертатися, коли настане час поновлення.';
+
+  @override
+  String get detailsInsurerHint => 'Введіть свого страховика';
+
+  @override
+  String get detailsIssuedBy => 'Ким видано';
+
+  @override
+  String get detailsIssuedByHelper => 'Країна, яка його видала. Потрібна для правильних кроків поновлення.';
+
+  @override
+  String get detailsOptional => '(необов\'язково)';
+
+  @override
+  String get detailsProvider => 'Постачальник';
+
+  @override
+  String get detailsProviderHelper => 'У кого ви поновлюєте.';
+
+  @override
+  String get detailsProviderHint => 'Введіть постачальника';
+
+  @override
+  String get detailsRegisteredHelper => 'Де зареєстровано транспортний засіб.';
+
+  @override
+  String get detailsRegisteredIn => 'Зареєстровано в';
+
+  @override
+  String get detailsSaved => 'Дані збережено';
+
+  @override
+  String get detailsStore => 'Магазин';
+
+  @override
+  String get detailsStoreBrand => 'Магазин або бренд';
+
+  @override
+  String get detailsStoreBrandHint => 'Введіть магазин або бренд';
+
+  @override
+  String get detailsStoreHint => 'Введіть магазин';
 }

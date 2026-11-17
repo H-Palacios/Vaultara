@@ -9516,4 +9516,75 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Oficiální stránka';
+
+  @override
+  String get detailsBank => 'Banka';
+
+  @override
+  String get detailsBankHelper => 'Aby vás Ask Vaultara mohl navést na postup vaší banky.';
+
+  @override
+  String get detailsBankHint => 'Zadejte svou banku';
+
+  @override
+  String get detailsCardTitle => 'Uložit údaje';
+
+  @override
+  String get detailsChooseCountry => 'Vyberte zemi';
+
+  @override
+  String get detailsClear => 'Vymazat';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, např. $first nebo $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Pojišťovna';
+
+  @override
+  String get detailsInsurerHelper => 'Koho kontaktovat, až bude čas na obnovu.';
+
+  @override
+  String get detailsInsurerHint => 'Zadejte svou pojišťovnu';
+
+  @override
+  String get detailsIssuedBy => 'Vydal';
+
+  @override
+  String get detailsIssuedByHelper => 'Země, která ho vydala. Slouží pro správný postup obnovy.';
+
+  @override
+  String get detailsOptional => '(nepovinné)';
+
+  @override
+  String get detailsProvider => 'Poskytovatel';
+
+  @override
+  String get detailsProviderHelper => 'U koho obnovujete.';
+
+  @override
+  String get detailsProviderHint => 'Zadejte poskytovatele';
+
+  @override
+  String get detailsRegisteredHelper => 'Kde je vozidlo registrováno.';
+
+  @override
+  String get detailsRegisteredIn => 'Registrováno v';
+
+  @override
+  String get detailsSaved => 'Údaje uloženy';
+
+  @override
+  String get detailsStore => 'Obchod';
+
+  @override
+  String get detailsStoreBrand => 'Obchod nebo značka';
+
+  @override
+  String get detailsStoreBrandHint => 'Zadejte obchod nebo značku';
+
+  @override
+  String get detailsStoreHint => 'Zadejte obchod';
 }

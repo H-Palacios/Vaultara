@@ -9375,4 +9375,75 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Official site';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'So Ask Vaultara can point you to your bank\'s own steps.';
+
+  @override
+  String get detailsBankHint => 'Enter your bank';
+
+  @override
+  String get detailsCardTitle => 'Save details';
+
+  @override
+  String get detailsChooseCountry => 'Choose a country';
+
+  @override
+  String get detailsClear => 'Clear';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, e.g. $first or $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Insurer';
+
+  @override
+  String get detailsInsurerHelper => 'Who to contact when it is time to renew.';
+
+  @override
+  String get detailsInsurerHint => 'Enter your insurer';
+
+  @override
+  String get detailsIssuedBy => 'Issued by';
+
+  @override
+  String get detailsIssuedByHelper => 'The country that issued it. Used for the right renewal steps.';
+
+  @override
+  String get detailsOptional => '(optional)';
+
+  @override
+  String get detailsProvider => 'Provider';
+
+  @override
+  String get detailsProviderHelper => 'Who you renew with.';
+
+  @override
+  String get detailsProviderHint => 'Enter the provider';
+
+  @override
+  String get detailsRegisteredHelper => 'Where the vehicle is registered.';
+
+  @override
+  String get detailsRegisteredIn => 'Registered in';
+
+  @override
+  String get detailsSaved => 'Details saved';
+
+  @override
+  String get detailsStore => 'Store';
+
+  @override
+  String get detailsStoreBrand => 'Store or brand';
+
+  @override
+  String get detailsStoreBrandHint => 'Enter the store or brand';
+
+  @override
+  String get detailsStoreHint => 'Enter the store';
 }

@@ -3809,5 +3809,108 @@
   "coachOfficial": "سایت رسمی",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "بانک",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "تا Ask Vaultara شما را به مراحل بانک خودتان راهنمایی کند.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "بانک خود را وارد کنید",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "ذخیره جزئیات",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "یک کشور انتخاب کنید",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "پاک کردن",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}، مثلاً {first} یا {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "بیمه‌گر",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "هنگام تمدید با چه کسی تماس بگیرید.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "بیمه‌گر خود را وارد کنید",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "صادرشده توسط",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "کشوری که آن را صادر کرده. برای مراحل درست تمدید استفاده می‌شود.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(اختیاری)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "ارائه‌دهنده",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "نزد چه کسی تمدید می‌کنید.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "ارائه‌دهنده را وارد کنید",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "محل ثبت خودرو.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "ثبت‌شده در",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "جزئیات ذخیره شد",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "فروشگاه",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "فروشگاه یا برند",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "فروشگاه یا برند را وارد کنید",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "فروشگاه را وارد کنید",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

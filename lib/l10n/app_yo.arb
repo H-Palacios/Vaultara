@@ -3797,5 +3797,108 @@
   "coachOfficial": "Ojú-òpó ìjọba",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "Báńkì",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Kí Ask Vaultara lè fi àwọn ìgbésẹ̀ báńkì rẹ hàn ọ́.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "Tẹ báńkì rẹ sí",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "Fi àwọn àlàyé pamọ́",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "Yan orílẹ̀-èdè",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "Pa rẹ́",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, fún àpẹẹrẹ {first} tàbí {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "Olùpèsè ìbánigbófò",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "Ẹni tí o máa kàn sí nígbà tí àkókò ìsọdọ̀tun bá tó.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "Tẹ olùpèsè ìbánigbófò rẹ sí",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "Tí a fún láti ọwọ́",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "Orílẹ̀-èdè tí ó fún un. A ń lò ó fún àwọn ìgbésẹ̀ ìsọdọ̀tun tó tọ́.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(àṣàyàn)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "Olùpèsè",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "Ẹni tí o ń sọ di tuntun lọ́dọ̀ rẹ̀.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "Tẹ olùpèsè sí",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "Ibi tí a forúkọ ọkọ̀ sílẹ̀.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "A forúkọ sílẹ̀ ní",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "A ti fi àwọn àlàyé pamọ́",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "Ilé ìtajà",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "Ilé ìtajà tàbí àmì",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "Tẹ ilé ìtajà tàbí àmì sí",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "Tẹ ilé ìtajà sí",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

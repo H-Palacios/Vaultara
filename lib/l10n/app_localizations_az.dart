@@ -9355,4 +9355,75 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Rəsmi sayt';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara sizi bankınızın öz addımlarına yönləndirə bilsin deyə.';
+
+  @override
+  String get detailsBankHint => 'Bankınızı daxil edin';
+
+  @override
+  String get detailsCardTitle => 'Məlumatları saxla';
+
+  @override
+  String get detailsChooseCountry => 'Ölkə seçin';
+
+  @override
+  String get detailsClear => 'Təmizlə';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, məs. $first və ya $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Sığortaçı';
+
+  @override
+  String get detailsInsurerHelper => 'Yeniləmə vaxtı kimə müraciət etməli.';
+
+  @override
+  String get detailsInsurerHint => 'Sığortaçınızı daxil edin';
+
+  @override
+  String get detailsIssuedBy => 'Verən ölkə';
+
+  @override
+  String get detailsIssuedByHelper => 'Onu verən ölkə. Düzgün yeniləmə addımları üçün istifadə olunur.';
+
+  @override
+  String get detailsOptional => '(istəyə bağlı)';
+
+  @override
+  String get detailsProvider => 'Təchizatçı';
+
+  @override
+  String get detailsProviderHelper => 'Kiminlə yeniləyirsiniz.';
+
+  @override
+  String get detailsProviderHint => 'Təchizatçını daxil edin';
+
+  @override
+  String get detailsRegisteredHelper => 'Nəqliyyat vasitəsinin qeydiyyatda olduğu ölkə.';
+
+  @override
+  String get detailsRegisteredIn => 'Qeydiyyat ölkəsi';
+
+  @override
+  String get detailsSaved => 'Məlumatlar saxlanıldı';
+
+  @override
+  String get detailsStore => 'Mağaza';
+
+  @override
+  String get detailsStoreBrand => 'Mağaza və ya brend';
+
+  @override
+  String get detailsStoreBrandHint => 'Mağaza və ya brendi daxil edin';
+
+  @override
+  String get detailsStoreHint => 'Mağazanı daxil edin';
 }

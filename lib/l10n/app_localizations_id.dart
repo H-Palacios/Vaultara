@@ -9287,4 +9287,75 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Situs resmi';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Agar Ask Vaultara bisa mengarahkan Anda ke langkah bank Anda sendiri.';
+
+  @override
+  String get detailsBankHint => 'Masukkan bank Anda';
+
+  @override
+  String get detailsCardTitle => 'Simpan detail';
+
+  @override
+  String get detailsChooseCountry => 'Pilih negara';
+
+  @override
+  String get detailsClear => 'Hapus';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, mis. $first atau $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Asuransi';
+
+  @override
+  String get detailsInsurerHelper => 'Siapa yang dihubungi saat tiba waktunya diperpanjang.';
+
+  @override
+  String get detailsInsurerHint => 'Masukkan asuransi Anda';
+
+  @override
+  String get detailsIssuedBy => 'Diterbitkan oleh';
+
+  @override
+  String get detailsIssuedByHelper => 'Negara yang menerbitkannya. Dipakai untuk langkah perpanjangan yang tepat.';
+
+  @override
+  String get detailsOptional => '(opsional)';
+
+  @override
+  String get detailsProvider => 'Penyedia';
+
+  @override
+  String get detailsProviderHelper => 'Tempat Anda memperpanjang.';
+
+  @override
+  String get detailsProviderHint => 'Masukkan penyedia';
+
+  @override
+  String get detailsRegisteredHelper => 'Tempat kendaraan terdaftar.';
+
+  @override
+  String get detailsRegisteredIn => 'Terdaftar di';
+
+  @override
+  String get detailsSaved => 'Detail disimpan';
+
+  @override
+  String get detailsStore => 'Toko';
+
+  @override
+  String get detailsStoreBrand => 'Toko atau merek';
+
+  @override
+  String get detailsStoreBrandHint => 'Masukkan toko atau merek';
+
+  @override
+  String get detailsStoreHint => 'Masukkan toko';
 }

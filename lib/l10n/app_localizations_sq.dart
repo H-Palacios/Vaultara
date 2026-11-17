@@ -9360,4 +9360,75 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Faqe zyrtare';
+
+  @override
+  String get detailsBank => 'Banka';
+
+  @override
+  String get detailsBankHelper => 'Që Ask Vaultara t\'ju drejtojë te hapat e bankës suaj.';
+
+  @override
+  String get detailsBankHint => 'Shkruani bankën tuaj';
+
+  @override
+  String get detailsCardTitle => 'Ruaj detajet';
+
+  @override
+  String get detailsChooseCountry => 'Zgjidhni një shtet';
+
+  @override
+  String get detailsClear => 'Pastro';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, p.sh. $first ose $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Siguruesi';
+
+  @override
+  String get detailsInsurerHelper => 'Kë të kontaktoni kur të vijë koha për rinovim.';
+
+  @override
+  String get detailsInsurerHint => 'Shkruani siguruesin tuaj';
+
+  @override
+  String get detailsIssuedBy => 'Lëshuar nga';
+
+  @override
+  String get detailsIssuedByHelper => 'Shteti që e lëshoi. Përdoret për hapat e duhur të rinovimit.';
+
+  @override
+  String get detailsOptional => '(opsionale)';
+
+  @override
+  String get detailsProvider => 'Ofruesi';
+
+  @override
+  String get detailsProviderHelper => 'Te kush e rinovoni.';
+
+  @override
+  String get detailsProviderHint => 'Shkruani ofruesin';
+
+  @override
+  String get detailsRegisteredHelper => 'Ku është regjistruar automjeti.';
+
+  @override
+  String get detailsRegisteredIn => 'Regjistruar në';
+
+  @override
+  String get detailsSaved => 'Detajet u ruajtën';
+
+  @override
+  String get detailsStore => 'Dyqani';
+
+  @override
+  String get detailsStoreBrand => 'Dyqani ose marka';
+
+  @override
+  String get detailsStoreBrandHint => 'Shkruani dyqanin ose markën';
+
+  @override
+  String get detailsStoreHint => 'Shkruani dyqanin';
 }

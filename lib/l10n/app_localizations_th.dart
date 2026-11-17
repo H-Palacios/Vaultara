@@ -9280,4 +9280,75 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get coachOfficial => 'เว็บไซต์ทางการ';
+
+  @override
+  String get detailsBank => 'ธนาคาร';
+
+  @override
+  String get detailsBankHelper => 'เพื่อให้ Ask Vaultara แนะนำขั้นตอนของธนาคารของคุณ';
+
+  @override
+  String get detailsBankHint => 'ป้อนธนาคารของคุณ';
+
+  @override
+  String get detailsCardTitle => 'บันทึกรายละเอียด';
+
+  @override
+  String get detailsChooseCountry => 'เลือกประเทศ';
+
+  @override
+  String get detailsClear => 'ล้าง';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter เช่น $first หรือ $second';
+  }
+
+  @override
+  String get detailsInsurer => 'บริษัทประกัน';
+
+  @override
+  String get detailsInsurerHelper => 'ติดต่อใครเมื่อถึงเวลาต่ออายุ';
+
+  @override
+  String get detailsInsurerHint => 'ป้อนบริษัทประกันของคุณ';
+
+  @override
+  String get detailsIssuedBy => 'ออกโดย';
+
+  @override
+  String get detailsIssuedByHelper => 'ประเทศที่ออกให้ ใช้สำหรับขั้นตอนต่ออายุที่ถูกต้อง';
+
+  @override
+  String get detailsOptional => '(ไม่บังคับ)';
+
+  @override
+  String get detailsProvider => 'ผู้ให้บริการ';
+
+  @override
+  String get detailsProviderHelper => 'คุณต่ออายุกับใคร';
+
+  @override
+  String get detailsProviderHint => 'ป้อนผู้ให้บริการ';
+
+  @override
+  String get detailsRegisteredHelper => 'รถจดทะเบียนที่ใด';
+
+  @override
+  String get detailsRegisteredIn => 'จดทะเบียนใน';
+
+  @override
+  String get detailsSaved => 'บันทึกรายละเอียดแล้ว';
+
+  @override
+  String get detailsStore => 'ร้านค้า';
+
+  @override
+  String get detailsStoreBrand => 'ร้านค้าหรือแบรนด์';
+
+  @override
+  String get detailsStoreBrandHint => 'ป้อนร้านค้าหรือแบรนด์';
+
+  @override
+  String get detailsStoreHint => 'ป้อนร้านค้า';
 }

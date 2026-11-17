@@ -3814,5 +3814,108 @@
   "coachOfficial": "เว็บไซต์ทางการ",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ธนาคาร",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "เพื่อให้ Ask Vaultara แนะนำขั้นตอนของธนาคารของคุณ",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "ป้อนธนาคารของคุณ",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "บันทึกรายละเอียด",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "เลือกประเทศ",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "ล้าง",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter} เช่น {first} หรือ {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "บริษัทประกัน",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "ติดต่อใครเมื่อถึงเวลาต่ออายุ",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "ป้อนบริษัทประกันของคุณ",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "ออกโดย",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ประเทศที่ออกให้ ใช้สำหรับขั้นตอนต่ออายุที่ถูกต้อง",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ไม่บังคับ)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "ผู้ให้บริการ",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "คุณต่ออายุกับใคร",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "ป้อนผู้ให้บริการ",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "รถจดทะเบียนที่ใด",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "จดทะเบียนใน",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "บันทึกรายละเอียดแล้ว",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "ร้านค้า",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "ร้านค้าหรือแบรนด์",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "ป้อนร้านค้าหรือแบรนด์",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "ป้อนร้านค้า",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

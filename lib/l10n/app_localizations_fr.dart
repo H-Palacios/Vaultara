@@ -9370,4 +9370,75 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Site officiel';
+
+  @override
+  String get detailsBank => 'Banque';
+
+  @override
+  String get detailsBankHelper => 'Pour qu\'Ask Vaultara vous indique les démarches de votre banque.';
+
+  @override
+  String get detailsBankHint => 'Saisissez votre banque';
+
+  @override
+  String get detailsCardTitle => 'Enregistrer les détails';
+
+  @override
+  String get detailsChooseCountry => 'Choisir un pays';
+
+  @override
+  String get detailsClear => 'Effacer';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, p. ex. $first ou $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Assureur';
+
+  @override
+  String get detailsInsurerHelper => 'Qui contacter au moment du renouvellement.';
+
+  @override
+  String get detailsInsurerHint => 'Saisissez votre assureur';
+
+  @override
+  String get detailsIssuedBy => 'Délivré par';
+
+  @override
+  String get detailsIssuedByHelper => 'Le pays qui l\'a délivré. Sert aux bonnes démarches de renouvellement.';
+
+  @override
+  String get detailsOptional => '(facultatif)';
+
+  @override
+  String get detailsProvider => 'Fournisseur';
+
+  @override
+  String get detailsProviderHelper => 'Auprès de qui vous renouvelez.';
+
+  @override
+  String get detailsProviderHint => 'Saisissez le fournisseur';
+
+  @override
+  String get detailsRegisteredHelper => 'Où le véhicule est immatriculé.';
+
+  @override
+  String get detailsRegisteredIn => 'Immatriculé en';
+
+  @override
+  String get detailsSaved => 'Détails enregistrés';
+
+  @override
+  String get detailsStore => 'Magasin';
+
+  @override
+  String get detailsStoreBrand => 'Magasin ou marque';
+
+  @override
+  String get detailsStoreBrandHint => 'Saisissez le magasin ou la marque';
+
+  @override
+  String get detailsStoreHint => 'Saisissez le magasin';
 }

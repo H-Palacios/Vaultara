@@ -9359,4 +9359,75 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Virallinen sivusto';
+
+  @override
+  String get detailsBank => 'Pankki';
+
+  @override
+  String get detailsBankHelper => 'Jotta Ask Vaultara voi ohjata sinut pankkisi omiin vaiheisiin.';
+
+  @override
+  String get detailsBankHint => 'Kirjoita pankkisi';
+
+  @override
+  String get detailsCardTitle => 'Tallenna tiedot';
+
+  @override
+  String get detailsChooseCountry => 'Valitse maa';
+
+  @override
+  String get detailsClear => 'Tyhjennä';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, esim. $first tai $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Vakuutusyhtiö';
+
+  @override
+  String get detailsInsurerHelper => 'Keneen ottaa yhteyttä, kun on aika uusia.';
+
+  @override
+  String get detailsInsurerHint => 'Kirjoita vakuutusyhtiösi';
+
+  @override
+  String get detailsIssuedBy => 'Myöntäjä';
+
+  @override
+  String get detailsIssuedByHelper => 'Maa, joka sen myönsi. Käytetään oikeisiin uusimisvaiheisiin.';
+
+  @override
+  String get detailsOptional => '(valinnainen)';
+
+  @override
+  String get detailsProvider => 'Palveluntarjoaja';
+
+  @override
+  String get detailsProviderHelper => 'Kenen kautta uusit.';
+
+  @override
+  String get detailsProviderHint => 'Kirjoita palveluntarjoaja';
+
+  @override
+  String get detailsRegisteredHelper => 'Missä ajoneuvo on rekisteröity.';
+
+  @override
+  String get detailsRegisteredIn => 'Rekisteröity maahan';
+
+  @override
+  String get detailsSaved => 'Tiedot tallennettu';
+
+  @override
+  String get detailsStore => 'Kauppa';
+
+  @override
+  String get detailsStoreBrand => 'Kauppa tai merkki';
+
+  @override
+  String get detailsStoreBrandHint => 'Kirjoita kauppa tai merkki';
+
+  @override
+  String get detailsStoreHint => 'Kirjoita kauppa';
 }

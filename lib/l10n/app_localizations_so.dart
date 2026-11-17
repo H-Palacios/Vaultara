@@ -9354,4 +9354,75 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Bog rasmi ah';
+
+  @override
+  String get detailsBank => 'Bangiga';
+
+  @override
+  String get detailsBankHelper => 'Si Ask Vaultara kuugu tilmaamo tallaabooyinka bangigaaga.';
+
+  @override
+  String get detailsBankHint => 'Geli bangigaaga';
+
+  @override
+  String get detailsCardTitle => 'Kaydi faahfaahinta';
+
+  @override
+  String get detailsChooseCountry => 'Dooro waddan';
+
+  @override
+  String get detailsClear => 'Tirtir';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, tusaale $first ama $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Caymiyaha';
+
+  @override
+  String get detailsInsurerHelper => 'Cidda la xiriirayo marka la gaaro waqtiga cusboonaysiinta.';
+
+  @override
+  String get detailsInsurerHint => 'Geli caymiyahaaga';
+
+  @override
+  String get detailsIssuedBy => 'Waxaa bixiyay';
+
+  @override
+  String get detailsIssuedByHelper => 'Waddanka bixiyay. Waxaa loo isticmaalaa tallaabooyinka saxda ah.';
+
+  @override
+  String get detailsOptional => '(ikhtiyaari)';
+
+  @override
+  String get detailsProvider => 'Bixiye';
+
+  @override
+  String get detailsProviderHelper => 'Cidda aad la cusboonaysiiso.';
+
+  @override
+  String get detailsProviderHint => 'Geli bixiyaha';
+
+  @override
+  String get detailsRegisteredHelper => 'Halka gaariga ka diiwaangashan yahay.';
+
+  @override
+  String get detailsRegisteredIn => 'Ka diiwaangashan';
+
+  @override
+  String get detailsSaved => 'Faahfaahinta waa la kaydiyay';
+
+  @override
+  String get detailsStore => 'Dukaan';
+
+  @override
+  String get detailsStoreBrand => 'Dukaan ama summad';
+
+  @override
+  String get detailsStoreBrandHint => 'Geli dukaanka ama summadda';
+
+  @override
+  String get detailsStoreHint => 'Geli dukaanka';
 }

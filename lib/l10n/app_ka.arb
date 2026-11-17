@@ -3815,5 +3815,108 @@
   "coachOfficial": "ოფიციალური საიტი",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ბანკი",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "რომ Ask Vaultara-მ თქვენი ბანკის ნაბიჯებზე მიგითითოთ.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "შეიყვანეთ ბანკი",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "დეტალების შენახვა",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "აირჩიეთ ქვეყანა",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "გასუფთავება",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, მაგ. {first} ან {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "სადაზღვევო",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "ვის დაუკავშირდეთ განახლების დროს.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "შეიყვანეთ სადაზღვევო",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "გამცემი",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ქვეყანა, რომელმაც გასცა. გამოიყენება სწორი განახლების ნაბიჯებისთვის.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(არასავალდებულო)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "მომწოდებელი",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "ვისთან ანახლებთ.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "შეიყვანეთ მომწოდებელი",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "სად არის მანქანა რეგისტრირებული.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "რეგისტრირებულია",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "დეტალები შენახულია",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "მაღაზია",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "მაღაზია ან ბრენდი",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "შეიყვანეთ მაღაზია ან ბრენდი",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "შეიყვანეთ მაღაზია",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

@@ -3797,5 +3797,108 @@
   "coachOfficial": "அதிகாரப்பூர்வ தளம்",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "வங்கி",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ask Vaultara உங்கள் வங்கியின் சொந்த படிகளைக் காட்ட.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "உங்கள் வங்கியை உள்ளிடவும்",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "விவரங்களைச் சேமி",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "நாட்டைத் தேர்ந்தெடுக்கவும்",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "அழி",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, எ.கா. {first} அல்லது {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "காப்பீட்டாளர்",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "புதுப்பிக்கும் நேரத்தில் யாரைத் தொடர்புகொள்வது.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "உங்கள் காப்பீட்டாளரை உள்ளிடவும்",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "வழங்கியது",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "இதை வழங்கிய நாடு. சரியான புதுப்பிப்பு படிகளுக்குப் பயன்படும்.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(விருப்பத்தேர்வு)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "வழங்குநர்",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "யாரிடம் புதுப்பிக்கிறீர்கள்.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "வழங்குநரை உள்ளிடவும்",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "வாகனம் எங்கு பதிவு செய்யப்பட்டுள்ளது.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "பதிவு நாடு",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "விவரங்கள் சேமிக்கப்பட்டன",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "கடை",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "கடை அல்லது பிராண்ட்",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "கடை அல்லது பிராண்டை உள்ளிடவும்",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "கடையை உள்ளிடவும்",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

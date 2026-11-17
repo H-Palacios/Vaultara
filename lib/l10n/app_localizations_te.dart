@@ -9355,4 +9355,75 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get coachOfficial => 'అధికారిక సైట్';
+
+  @override
+  String get detailsBank => 'బ్యాంక్';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara మీ బ్యాంక్ సొంత దశలను చూపించేందుకు.';
+
+  @override
+  String get detailsBankHint => 'మీ బ్యాంక్‌ను నమోదు చేయండి';
+
+  @override
+  String get detailsCardTitle => 'వివరాలను సేవ్ చేయండి';
+
+  @override
+  String get detailsChooseCountry => 'దేశాన్ని ఎంచుకోండి';
+
+  @override
+  String get detailsClear => 'క్లియర్ చేయండి';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, ఉదా. $first లేదా $second';
+  }
+
+  @override
+  String get detailsInsurer => 'బీమా సంస్థ';
+
+  @override
+  String get detailsInsurerHelper => 'పునరుద్ధరణ సమయంలో ఎవరిని సంప్రదించాలి.';
+
+  @override
+  String get detailsInsurerHint => 'మీ బీమా సంస్థను నమోదు చేయండి';
+
+  @override
+  String get detailsIssuedBy => 'జారీ చేసినది';
+
+  @override
+  String get detailsIssuedByHelper => 'దీన్ని జారీ చేసిన దేశం. సరైన పునరుద్ధరణ దశల కోసం ఉపయోగిస్తారు.';
+
+  @override
+  String get detailsOptional => '(ఐచ్ఛికం)';
+
+  @override
+  String get detailsProvider => 'ప్రొవైడర్';
+
+  @override
+  String get detailsProviderHelper => 'మీరు ఎవరితో పునరుద్ధరిస్తారు.';
+
+  @override
+  String get detailsProviderHint => 'ప్రొవైడర్‌ను నమోదు చేయండి';
+
+  @override
+  String get detailsRegisteredHelper => 'వాహనం ఎక్కడ నమోదైంది.';
+
+  @override
+  String get detailsRegisteredIn => 'నమోదైన దేశం';
+
+  @override
+  String get detailsSaved => 'వివరాలు సేవ్ అయ్యాయి';
+
+  @override
+  String get detailsStore => 'దుకాణం';
+
+  @override
+  String get detailsStoreBrand => 'దుకాణం లేదా బ్రాండ్';
+
+  @override
+  String get detailsStoreBrandHint => 'దుకాణం లేదా బ్రాండ్‌ను నమోదు చేయండి';
+
+  @override
+  String get detailsStoreHint => 'దుకాణాన్ని నమోదు చేయండి';
 }

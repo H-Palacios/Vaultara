@@ -9355,4 +9355,75 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Shafin hukuma';
+
+  @override
+  String get detailsBank => 'Banki';
+
+  @override
+  String get detailsBankHelper => 'Don Ask Vaultara ya nuna maka matakan bankinka.';
+
+  @override
+  String get detailsBankHint => 'Shigar da bankinka';
+
+  @override
+  String get detailsCardTitle => 'Ajiye bayanai';
+
+  @override
+  String get detailsChooseCountry => 'Zaɓi ƙasa';
+
+  @override
+  String get detailsClear => 'Share';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, misali $first ko $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Mai inshora';
+
+  @override
+  String get detailsInsurerHelper => 'Wanda za a tuntuɓa idan lokacin sabuntawa ya yi.';
+
+  @override
+  String get detailsInsurerHint => 'Shigar da mai inshorarka';
+
+  @override
+  String get detailsIssuedBy => 'Wanda ya bayar';
+
+  @override
+  String get detailsIssuedByHelper => 'Ƙasar da ta bayar. Ana amfani da ita don matakan sabuntawa daidai.';
+
+  @override
+  String get detailsOptional => '(na zaɓi)';
+
+  @override
+  String get detailsProvider => 'Mai bayarwa';
+
+  @override
+  String get detailsProviderHelper => 'Wanda kake sabuntawa wurinsa.';
+
+  @override
+  String get detailsProviderHint => 'Shigar da mai bayarwa';
+
+  @override
+  String get detailsRegisteredHelper => 'Inda aka yi wa abin hawan rajista.';
+
+  @override
+  String get detailsRegisteredIn => 'An yi rajista a';
+
+  @override
+  String get detailsSaved => 'An ajiye bayanai';
+
+  @override
+  String get detailsStore => 'Shago';
+
+  @override
+  String get detailsStoreBrand => 'Shago ko alama';
+
+  @override
+  String get detailsStoreBrandHint => 'Shigar da shago ko alama';
+
+  @override
+  String get detailsStoreHint => 'Shigar da shago';
 }

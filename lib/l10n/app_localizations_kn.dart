@@ -9355,4 +9355,75 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get coachOfficial => 'ಅಧಿಕೃತ ಸೈಟ್';
+
+  @override
+  String get detailsBank => 'ಬ್ಯಾಂಕ್';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara ನಿಮ್ಮ ಬ್ಯಾಂಕ್‌ನ ಸ್ವಂತ ಹಂತಗಳನ್ನು ತೋರಿಸಲು.';
+
+  @override
+  String get detailsBankHint => 'ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ನಮೂದಿಸಿ';
+
+  @override
+  String get detailsCardTitle => 'ವಿವರಗಳನ್ನು ಉಳಿಸಿ';
+
+  @override
+  String get detailsChooseCountry => 'ದೇಶ ಆಯ್ಕೆಮಾಡಿ';
+
+  @override
+  String get detailsClear => 'ತೆರವುಗೊಳಿಸಿ';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, ಉದಾ. $first ಅಥವಾ $second';
+  }
+
+  @override
+  String get detailsInsurer => 'ವಿಮಾದಾರ';
+
+  @override
+  String get detailsInsurerHelper => 'ನವೀಕರಣದ ಸಮಯದಲ್ಲಿ ಯಾರನ್ನು ಸಂಪರ್ಕಿಸಬೇಕು.';
+
+  @override
+  String get detailsInsurerHint => 'ನಿಮ್ಮ ವಿಮಾದಾರ ನಮೂದಿಸಿ';
+
+  @override
+  String get detailsIssuedBy => 'ನೀಡಿದ ದೇಶ';
+
+  @override
+  String get detailsIssuedByHelper => 'ಇದನ್ನು ನೀಡಿದ ದೇಶ. ಸರಿಯಾದ ನವೀಕರಣ ಹಂತಗಳಿಗೆ ಬಳಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get detailsOptional => '(ಐಚ್ಛಿಕ)';
+
+  @override
+  String get detailsProvider => 'ಒದಗಿಸುವವರು';
+
+  @override
+  String get detailsProviderHelper => 'ನೀವು ಯಾರೊಂದಿಗೆ ನವೀಕರಿಸುತ್ತೀರಿ.';
+
+  @override
+  String get detailsProviderHint => 'ಒದಗಿಸುವವರನ್ನು ನಮೂದಿಸಿ';
+
+  @override
+  String get detailsRegisteredHelper => 'ವಾಹನ ಎಲ್ಲಿ ನೋಂದಣಿಯಾಗಿದೆ.';
+
+  @override
+  String get detailsRegisteredIn => 'ನೋಂದಣಿ ದೇಶ';
+
+  @override
+  String get detailsSaved => 'ವಿವರಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ';
+
+  @override
+  String get detailsStore => 'ಅಂಗಡಿ';
+
+  @override
+  String get detailsStoreBrand => 'ಅಂಗಡಿ ಅಥವಾ ಬ್ರ್ಯಾಂಡ್';
+
+  @override
+  String get detailsStoreBrandHint => 'ಅಂಗಡಿ ಅಥವಾ ಬ್ರ್ಯಾಂಡ್ ನಮೂದಿಸಿ';
+
+  @override
+  String get detailsStoreHint => 'ಅಂಗಡಿ ನಮೂದಿಸಿ';
 }

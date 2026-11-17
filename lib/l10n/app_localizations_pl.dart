@@ -9535,4 +9535,75 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Oficjalna strona';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Aby Ask Vaultara mógł wskazać kroki Twojego banku.';
+
+  @override
+  String get detailsBankHint => 'Wpisz swój bank';
+
+  @override
+  String get detailsCardTitle => 'Zapisz szczegóły';
+
+  @override
+  String get detailsChooseCountry => 'Wybierz kraj';
+
+  @override
+  String get detailsClear => 'Wyczyść';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, np. $first lub $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Ubezpieczyciel';
+
+  @override
+  String get detailsInsurerHelper => 'Z kim się skontaktować, gdy przyjdzie czas odnowienia.';
+
+  @override
+  String get detailsInsurerHint => 'Wpisz swojego ubezpieczyciela';
+
+  @override
+  String get detailsIssuedBy => 'Wydany przez';
+
+  @override
+  String get detailsIssuedByHelper => 'Kraj, który go wydał. Służy do właściwych kroków odnowienia.';
+
+  @override
+  String get detailsOptional => '(opcjonalnie)';
+
+  @override
+  String get detailsProvider => 'Dostawca';
+
+  @override
+  String get detailsProviderHelper => 'U kogo odnawiasz.';
+
+  @override
+  String get detailsProviderHint => 'Wpisz dostawcę';
+
+  @override
+  String get detailsRegisteredHelper => 'Gdzie pojazd jest zarejestrowany.';
+
+  @override
+  String get detailsRegisteredIn => 'Zarejestrowany w';
+
+  @override
+  String get detailsSaved => 'Szczegóły zapisane';
+
+  @override
+  String get detailsStore => 'Sklep';
+
+  @override
+  String get detailsStoreBrand => 'Sklep lub marka';
+
+  @override
+  String get detailsStoreBrandHint => 'Wpisz sklep lub markę';
+
+  @override
+  String get detailsStoreHint => 'Wpisz sklep';
 }

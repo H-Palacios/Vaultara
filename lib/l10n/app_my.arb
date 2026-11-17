@@ -3547,5 +3547,108 @@
   "coachOfficial": "တရားဝင်ဆိုက်",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ဘဏ်",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ask Vaultara က သင့်ဘဏ်ရဲ့ အဆင့်တွေကို ပြပေးနိုင်ဖို့။",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "သင့်ဘဏ်ကို ထည့်ပါ",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "အသေးစိတ် သိမ်းရန်",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "နိုင်ငံ ရွေးပါ",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "ရှင်းရန်",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}၊ ဥပမာ {first} သို့ {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "အာမခံကုမ္ပဏီ",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "သက်တမ်းတိုးချိန်ရောက်ရင် ဘယ်သူ့ကို ဆက်သွယ်ရမလဲ။",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "သင့်အာမခံကုမ္ပဏီကို ထည့်ပါ",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "ထုတ်ပေးသူ",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ထုတ်ပေးခဲ့သော နိုင်ငံ။ မှန်ကန်သော သက်တမ်းတိုးအဆင့်များအတွက်။",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ရွေးချယ်နိုင်)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "ဝန်ဆောင်မှုပေးသူ",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "သင် ဘယ်သူနဲ့ သက်တမ်းတိုးလဲ။",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "ဝန်ဆောင်မှုပေးသူကို ထည့်ပါ",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "ယာဉ် မှတ်ပုံတင်ထားသည့်နေရာ။",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "မှတ်ပုံတင်ထားသည့်နိုင်ငံ",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "အသေးစိတ် သိမ်းပြီး",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "ဆိုင်",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "ဆိုင် သို့ အမှတ်တံဆိပ်",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "ဆိုင် သို့ အမှတ်တံဆိပ် ထည့်ပါ",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "ဆိုင်ကို ထည့်ပါ",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

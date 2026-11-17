@@ -9355,4 +9355,75 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Rasmiy sayt';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara sizni bankingizning o\'z qadamlariga yo\'naltira olishi uchun.';
+
+  @override
+  String get detailsBankHint => 'Bankingizni kiriting';
+
+  @override
+  String get detailsCardTitle => 'Ma\'lumotlarni saqlash';
+
+  @override
+  String get detailsChooseCountry => 'Davlatni tanlang';
+
+  @override
+  String get detailsClear => 'Tozalash';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, masalan $first yoki $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Sug\'urtachi';
+
+  @override
+  String get detailsInsurerHelper => 'Yangilash vaqti kelganda kimga murojaat qilish.';
+
+  @override
+  String get detailsInsurerHint => 'Sug\'urtachingizni kiriting';
+
+  @override
+  String get detailsIssuedBy => 'Bergan davlat';
+
+  @override
+  String get detailsIssuedByHelper => 'Uni bergan davlat. To\'g\'ri yangilash qadamlari uchun ishlatiladi.';
+
+  @override
+  String get detailsOptional => '(ixtiyoriy)';
+
+  @override
+  String get detailsProvider => 'Provayder';
+
+  @override
+  String get detailsProviderHelper => 'Kimda yangilaysiz.';
+
+  @override
+  String get detailsProviderHint => 'Provayderni kiriting';
+
+  @override
+  String get detailsRegisteredHelper => 'Transport vositasi qayerda ro\'yxatdan o\'tgan.';
+
+  @override
+  String get detailsRegisteredIn => 'Ro\'yxatdan o\'tgan davlat';
+
+  @override
+  String get detailsSaved => 'Ma\'lumotlar saqlandi';
+
+  @override
+  String get detailsStore => 'Do\'kon';
+
+  @override
+  String get detailsStoreBrand => 'Do\'kon yoki brend';
+
+  @override
+  String get detailsStoreBrandHint => 'Do\'kon yoki brendni kiriting';
+
+  @override
+  String get detailsStoreHint => 'Do\'konni kiriting';
 }

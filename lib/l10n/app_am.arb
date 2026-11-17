@@ -3835,5 +3835,108 @@
   "coachOfficial": "ኦፊሴላዊ ድረ-ገጽ",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ባንክ",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Vaultaraን ይጠይቁ ወደ ባንክዎ የራሱ ደረጃዎች እንዲመራዎት።",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "ባንክዎን ያስገቡ",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "ዝርዝሮችን አስቀምጥ",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "አገር ይምረጡ",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "አጽዳ",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}፣ ለምሳሌ {first} ወይም {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "ኢንሹራንስ ሰጪ",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "ለማደስ ጊዜው ሲደርስ ማንን ማነጋገር እንዳለብዎ።",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "ኢንሹራንስ ሰጪዎን ያስገቡ",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "የሰጠው",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "የሰጠው አገር። ለትክክለኛ የእድሳት ደረጃዎች ያገለግላል።",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(አማራጭ)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "አቅራቢ",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "የሚያድሱበት።",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "አቅራቢውን ያስገቡ",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "ተሽከርካሪው የተመዘገበበት።",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "የተመዘገበበት",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "ዝርዝሮች ተቀምጠዋል",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "መደብር",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "መደብር ወይም ብራንድ",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "መደብሩን ወይም ብራንዱን ያስገቡ",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "መደብሩን ያስገቡ",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

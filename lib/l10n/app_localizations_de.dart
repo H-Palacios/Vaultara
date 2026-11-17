@@ -9360,4 +9360,75 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Offizielle Seite';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Damit Ask Vaultara dich zu den Schritten deiner Bank führen kann.';
+
+  @override
+  String get detailsBankHint => 'Bank eingeben';
+
+  @override
+  String get detailsCardTitle => 'Angaben speichern';
+
+  @override
+  String get detailsChooseCountry => 'Land wählen';
+
+  @override
+  String get detailsClear => 'Löschen';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, z. B. $first oder $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Versicherer';
+
+  @override
+  String get detailsInsurerHelper => 'Wen du kontaktierst, wenn die Erneuerung ansteht.';
+
+  @override
+  String get detailsInsurerHint => 'Versicherer eingeben';
+
+  @override
+  String get detailsIssuedBy => 'Ausgestellt von';
+
+  @override
+  String get detailsIssuedByHelper => 'Das Land, das es ausgestellt hat. Für die richtigen Erneuerungsschritte.';
+
+  @override
+  String get detailsOptional => '(optional)';
+
+  @override
+  String get detailsProvider => 'Anbieter';
+
+  @override
+  String get detailsProviderHelper => 'Bei wem du verlängerst.';
+
+  @override
+  String get detailsProviderHint => 'Anbieter eingeben';
+
+  @override
+  String get detailsRegisteredHelper => 'Wo das Fahrzeug zugelassen ist.';
+
+  @override
+  String get detailsRegisteredIn => 'Zugelassen in';
+
+  @override
+  String get detailsSaved => 'Angaben gespeichert';
+
+  @override
+  String get detailsStore => 'Geschäft';
+
+  @override
+  String get detailsStoreBrand => 'Geschäft oder Marke';
+
+  @override
+  String get detailsStoreBrandHint => 'Geschäft oder Marke eingeben';
+
+  @override
+  String get detailsStoreHint => 'Geschäft eingeben';
 }

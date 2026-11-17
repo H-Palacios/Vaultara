@@ -9426,4 +9426,75 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Oficiālā vietne';
+
+  @override
+  String get detailsBank => 'Banka';
+
+  @override
+  String get detailsBankHelper => 'Lai Ask Vaultara varētu norādīt jūsu bankas soļus.';
+
+  @override
+  String get detailsBankHint => 'Ievadiet savu banku';
+
+  @override
+  String get detailsCardTitle => 'Saglabāt datus';
+
+  @override
+  String get detailsChooseCountry => 'Izvēlieties valsti';
+
+  @override
+  String get detailsClear => 'Notīrīt';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, piem., $first vai $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Apdrošinātājs';
+
+  @override
+  String get detailsInsurerHelper => 'Ar ko sazināties, kad pienāk laiks atjaunot.';
+
+  @override
+  String get detailsInsurerHint => 'Ievadiet savu apdrošinātāju';
+
+  @override
+  String get detailsIssuedBy => 'Izdevējvalsts';
+
+  @override
+  String get detailsIssuedByHelper => 'Valsts, kas to izdeva. Tiek izmantota pareiziem atjaunošanas soļiem.';
+
+  @override
+  String get detailsOptional => '(neobligāti)';
+
+  @override
+  String get detailsProvider => 'Pakalpojumu sniedzējs';
+
+  @override
+  String get detailsProviderHelper => 'Pie kā atjaunojat.';
+
+  @override
+  String get detailsProviderHint => 'Ievadiet pakalpojumu sniedzēju';
+
+  @override
+  String get detailsRegisteredHelper => 'Kur transportlīdzeklis ir reģistrēts.';
+
+  @override
+  String get detailsRegisteredIn => 'Reģistrēts';
+
+  @override
+  String get detailsSaved => 'Dati saglabāti';
+
+  @override
+  String get detailsStore => 'Veikals';
+
+  @override
+  String get detailsStoreBrand => 'Veikals vai zīmols';
+
+  @override
+  String get detailsStoreBrandHint => 'Ievadiet veikalu vai zīmolu';
+
+  @override
+  String get detailsStoreHint => 'Ievadiet veikalu';
 }

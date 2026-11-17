@@ -3547,5 +3547,108 @@
   "coachOfficial": "ಅಧಿಕೃತ ಸೈಟ್",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ಬ್ಯಾಂಕ್",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ask Vaultara ನಿಮ್ಮ ಬ್ಯಾಂಕ್‌ನ ಸ್ವಂತ ಹಂತಗಳನ್ನು ತೋರಿಸಲು.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ನಮೂದಿಸಿ",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "ವಿವರಗಳನ್ನು ಉಳಿಸಿ",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "ದೇಶ ಆಯ್ಕೆಮಾಡಿ",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "ತೆರವುಗೊಳಿಸಿ",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, ಉದಾ. {first} ಅಥವಾ {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "ವಿಮಾದಾರ",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "ನವೀಕರಣದ ಸಮಯದಲ್ಲಿ ಯಾರನ್ನು ಸಂಪರ್ಕಿಸಬೇಕು.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "ನಿಮ್ಮ ವಿಮಾದಾರ ನಮೂದಿಸಿ",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "ನೀಡಿದ ದೇಶ",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ಇದನ್ನು ನೀಡಿದ ದೇಶ. ಸರಿಯಾದ ನವೀಕರಣ ಹಂತಗಳಿಗೆ ಬಳಸಲಾಗುತ್ತದೆ.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ಐಚ್ಛಿಕ)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "ಒದಗಿಸುವವರು",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "ನೀವು ಯಾರೊಂದಿಗೆ ನವೀಕರಿಸುತ್ತೀರಿ.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "ಒದಗಿಸುವವರನ್ನು ನಮೂದಿಸಿ",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "ವಾಹನ ಎಲ್ಲಿ ನೋಂದಣಿಯಾಗಿದೆ.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "ನೋಂದಣಿ ದೇಶ",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "ವಿವರಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "ಅಂಗಡಿ",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "ಅಂಗಡಿ ಅಥವಾ ಬ್ರ್ಯಾಂಡ್",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "ಅಂಗಡಿ ಅಥವಾ ಬ್ರ್ಯಾಂಡ್ ನಮೂದಿಸಿ",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "ಅಂಗಡಿ ನಮೂದಿಸಿ",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

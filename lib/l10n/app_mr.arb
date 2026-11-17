@@ -3547,5 +3547,108 @@
   "coachOfficial": "अधिकृत साइट",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "बँक",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "जेणेकरून Ask Vaultara तुम्हाला तुमच्या बँकेच्या स्वतःच्या पायऱ्या दाखवू शकेल.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "तुमची बँक लिहा",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "तपशील जतन करा",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "देश निवडा",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "साफ करा",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, उदा. {first} किंवा {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "विमा कंपनी",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "नूतनीकरणाची वेळ आल्यावर कोणाशी संपर्क करायचा.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "तुमची विमा कंपनी लिहा",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "जारी करणारा",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ज्या देशाने ते जारी केले. योग्य नूतनीकरण पायऱ्यांसाठी वापरले जाते.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(पर्यायी)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "प्रदाता",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "तुम्ही कोणाकडे नूतनीकरण करता.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "प्रदाता लिहा",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "वाहन कुठे नोंदणीकृत आहे.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "नोंदणी देश",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "तपशील जतन केले",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "दुकान",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "दुकान किंवा ब्रँड",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "दुकान किंवा ब्रँड लिहा",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "दुकान लिहा",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

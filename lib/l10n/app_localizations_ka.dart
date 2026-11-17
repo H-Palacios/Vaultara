@@ -9355,4 +9355,75 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get coachOfficial => 'ოფიციალური საიტი';
+
+  @override
+  String get detailsBank => 'ბანკი';
+
+  @override
+  String get detailsBankHelper => 'რომ Ask Vaultara-მ თქვენი ბანკის ნაბიჯებზე მიგითითოთ.';
+
+  @override
+  String get detailsBankHint => 'შეიყვანეთ ბანკი';
+
+  @override
+  String get detailsCardTitle => 'დეტალების შენახვა';
+
+  @override
+  String get detailsChooseCountry => 'აირჩიეთ ქვეყანა';
+
+  @override
+  String get detailsClear => 'გასუფთავება';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, მაგ. $first ან $second';
+  }
+
+  @override
+  String get detailsInsurer => 'სადაზღვევო';
+
+  @override
+  String get detailsInsurerHelper => 'ვის დაუკავშირდეთ განახლების დროს.';
+
+  @override
+  String get detailsInsurerHint => 'შეიყვანეთ სადაზღვევო';
+
+  @override
+  String get detailsIssuedBy => 'გამცემი';
+
+  @override
+  String get detailsIssuedByHelper => 'ქვეყანა, რომელმაც გასცა. გამოიყენება სწორი განახლების ნაბიჯებისთვის.';
+
+  @override
+  String get detailsOptional => '(არასავალდებულო)';
+
+  @override
+  String get detailsProvider => 'მომწოდებელი';
+
+  @override
+  String get detailsProviderHelper => 'ვისთან ანახლებთ.';
+
+  @override
+  String get detailsProviderHint => 'შეიყვანეთ მომწოდებელი';
+
+  @override
+  String get detailsRegisteredHelper => 'სად არის მანქანა რეგისტრირებული.';
+
+  @override
+  String get detailsRegisteredIn => 'რეგისტრირებულია';
+
+  @override
+  String get detailsSaved => 'დეტალები შენახულია';
+
+  @override
+  String get detailsStore => 'მაღაზია';
+
+  @override
+  String get detailsStoreBrand => 'მაღაზია ან ბრენდი';
+
+  @override
+  String get detailsStoreBrandHint => 'შეიყვანეთ მაღაზია ან ბრენდი';
+
+  @override
+  String get detailsStoreHint => 'შეიყვანეთ მაღაზია';
 }

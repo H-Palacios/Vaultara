@@ -9290,4 +9290,75 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get coachOfficial => 'တရားဝင်ဆိုက်';
+
+  @override
+  String get detailsBank => 'ဘဏ်';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara က သင့်ဘဏ်ရဲ့ အဆင့်တွေကို ပြပေးနိုင်ဖို့။';
+
+  @override
+  String get detailsBankHint => 'သင့်ဘဏ်ကို ထည့်ပါ';
+
+  @override
+  String get detailsCardTitle => 'အသေးစိတ် သိမ်းရန်';
+
+  @override
+  String get detailsChooseCountry => 'နိုင်ငံ ရွေးပါ';
+
+  @override
+  String get detailsClear => 'ရှင်းရန်';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter၊ ဥပမာ $first သို့ $second';
+  }
+
+  @override
+  String get detailsInsurer => 'အာမခံကုမ္ပဏီ';
+
+  @override
+  String get detailsInsurerHelper => 'သက်တမ်းတိုးချိန်ရောက်ရင် ဘယ်သူ့ကို ဆက်သွယ်ရမလဲ။';
+
+  @override
+  String get detailsInsurerHint => 'သင့်အာမခံကုမ္ပဏီကို ထည့်ပါ';
+
+  @override
+  String get detailsIssuedBy => 'ထုတ်ပေးသူ';
+
+  @override
+  String get detailsIssuedByHelper => 'ထုတ်ပေးခဲ့သော နိုင်ငံ။ မှန်ကန်သော သက်တမ်းတိုးအဆင့်များအတွက်။';
+
+  @override
+  String get detailsOptional => '(ရွေးချယ်နိုင်)';
+
+  @override
+  String get detailsProvider => 'ဝန်ဆောင်မှုပေးသူ';
+
+  @override
+  String get detailsProviderHelper => 'သင် ဘယ်သူနဲ့ သက်တမ်းတိုးလဲ။';
+
+  @override
+  String get detailsProviderHint => 'ဝန်ဆောင်မှုပေးသူကို ထည့်ပါ';
+
+  @override
+  String get detailsRegisteredHelper => 'ယာဉ် မှတ်ပုံတင်ထားသည့်နေရာ။';
+
+  @override
+  String get detailsRegisteredIn => 'မှတ်ပုံတင်ထားသည့်နိုင်ငံ';
+
+  @override
+  String get detailsSaved => 'အသေးစိတ် သိမ်းပြီး';
+
+  @override
+  String get detailsStore => 'ဆိုင်';
+
+  @override
+  String get detailsStoreBrand => 'ဆိုင် သို့ အမှတ်တံဆိပ်';
+
+  @override
+  String get detailsStoreBrandHint => 'ဆိုင် သို့ အမှတ်တံဆိပ် ထည့်ပါ';
+
+  @override
+  String get detailsStoreHint => 'ဆိုင်ကို ထည့်ပါ';
 }

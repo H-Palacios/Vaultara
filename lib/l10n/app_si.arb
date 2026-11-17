@@ -3797,5 +3797,108 @@
   "coachOfficial": "නිල අඩවිය",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "බැංකුව",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ask Vaultara ට ඔබේ බැංකුවේම පියවර පෙන්වීමට.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "ඔබේ බැංකුව ඇතුළත් කරන්න",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "විස්තර සුරකින්න",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "රටක් තෝරන්න",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "හිස් කරන්න",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, උදා. {first} හෝ {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "රක්ෂණකරු",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "අලුත් කිරීමට කාලය පැමිණි විට සම්බන්ධ විය යුත්තේ කාටද.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "ඔබේ රක්ෂණකරු ඇතුළත් කරන්න",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "නිකුත් කළේ",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "එය නිකුත් කළ රට. නිවැරදි අලුත් කිරීමේ පියවර සඳහා භාවිතා වේ.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(විකල්ප)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "සපයන්නා",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "ඔබ අලුත් කරන්නේ කා සමඟද.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "සපයන්නා ඇතුළත් කරන්න",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "වාහනය ලියාපදිංචි කර ඇති තැන.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "ලියාපදිංචි රට",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "විස්තර සුරැකිණි",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "වෙළඳසැල",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "වෙළඳසැල හෝ සන්නාමය",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "වෙළඳසැල හෝ සන්නාමය ඇතුළත් කරන්න",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "වෙළඳසැල ඇතුළත් කරන්න",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

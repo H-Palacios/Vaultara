@@ -9355,4 +9355,75 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get coachOfficial => 'سرکاری سائٹ';
+
+  @override
+  String get detailsBank => 'بینک';
+
+  @override
+  String get detailsBankHelper => 'تاکہ Ask Vaultara آپ کو آپ کے بینک کے اپنے مراحل بتا سکے۔';
+
+  @override
+  String get detailsBankHint => 'اپنا بینک درج کریں';
+
+  @override
+  String get detailsCardTitle => 'تفصیلات محفوظ کریں';
+
+  @override
+  String get detailsChooseCountry => 'ملک منتخب کریں';
+
+  @override
+  String get detailsClear => 'صاف کریں';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter، مثلاً $first یا $second';
+  }
+
+  @override
+  String get detailsInsurer => 'بیمہ کار';
+
+  @override
+  String get detailsInsurerHelper => 'تجدید کا وقت آنے پر کس سے رابطہ کریں۔';
+
+  @override
+  String get detailsInsurerHint => 'اپنا بیمہ کار درج کریں';
+
+  @override
+  String get detailsIssuedBy => 'جاری کنندہ';
+
+  @override
+  String get detailsIssuedByHelper => 'وہ ملک جس نے اسے جاری کیا۔ درست تجدید کے مراحل کے لیے۔';
+
+  @override
+  String get detailsOptional => '(اختیاری)';
+
+  @override
+  String get detailsProvider => 'فراہم کنندہ';
+
+  @override
+  String get detailsProviderHelper => 'آپ کس کے پاس تجدید کرتے ہیں۔';
+
+  @override
+  String get detailsProviderHint => 'فراہم کنندہ درج کریں';
+
+  @override
+  String get detailsRegisteredHelper => 'گاڑی کہاں رجسٹرڈ ہے۔';
+
+  @override
+  String get detailsRegisteredIn => 'رجسٹرڈ ملک';
+
+  @override
+  String get detailsSaved => 'تفصیلات محفوظ ہو گئیں';
+
+  @override
+  String get detailsStore => 'اسٹور';
+
+  @override
+  String get detailsStoreBrand => 'اسٹور یا برانڈ';
+
+  @override
+  String get detailsStoreBrandHint => 'اسٹور یا برانڈ درج کریں';
+
+  @override
+  String get detailsStoreHint => 'اسٹور درج کریں';
 }

@@ -9360,4 +9360,75 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Amptelike webwerf';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Sodat Vra Vaultara jou na jou bank se eie stappe kan wys.';
+
+  @override
+  String get detailsBankHint => 'Voer jou bank in';
+
+  @override
+  String get detailsCardTitle => 'Stoor besonderhede';
+
+  @override
+  String get detailsChooseCountry => 'Kies \'n land';
+
+  @override
+  String get detailsClear => 'Vee uit';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, bv. $first of $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Versekeraar';
+
+  @override
+  String get detailsInsurerHelper => 'Met wie om kontak te maak wanneer dit tyd is om te hernu.';
+
+  @override
+  String get detailsInsurerHint => 'Voer jou versekeraar in';
+
+  @override
+  String get detailsIssuedBy => 'Uitgereik deur';
+
+  @override
+  String get detailsIssuedByHelper => 'Die land wat dit uitgereik het. Word gebruik vir die regte hernuwingstappe.';
+
+  @override
+  String get detailsOptional => '(opsioneel)';
+
+  @override
+  String get detailsProvider => 'Verskaffer';
+
+  @override
+  String get detailsProviderHelper => 'By wie jy hernu.';
+
+  @override
+  String get detailsProviderHint => 'Voer die verskaffer in';
+
+  @override
+  String get detailsRegisteredHelper => 'Waar die voertuig geregistreer is.';
+
+  @override
+  String get detailsRegisteredIn => 'Geregistreer in';
+
+  @override
+  String get detailsSaved => 'Besonderhede gestoor';
+
+  @override
+  String get detailsStore => 'Winkel';
+
+  @override
+  String get detailsStoreBrand => 'Winkel of handelsmerk';
+
+  @override
+  String get detailsStoreBrandHint => 'Voer die winkel of handelsmerk in';
+
+  @override
+  String get detailsStoreHint => 'Voer die winkel in';
 }

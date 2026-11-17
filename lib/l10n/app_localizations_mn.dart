@@ -9345,4 +9345,75 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Албан ёсны сайт';
+
+  @override
+  String get detailsBank => 'Банк';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara таныг банкныхаа алхмууд руу чиглүүлэхийн тулд.';
+
+  @override
+  String get detailsBankHint => 'Банкаа оруулна уу';
+
+  @override
+  String get detailsCardTitle => 'Мэдээлэл хадгалах';
+
+  @override
+  String get detailsChooseCountry => 'Улс сонгох';
+
+  @override
+  String get detailsClear => 'Арилгах';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, жишээ нь $first эсвэл $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Даатгагч';
+
+  @override
+  String get detailsInsurerHelper => 'Сунгах цаг болоход хэнд хандах.';
+
+  @override
+  String get detailsInsurerHint => 'Даатгагчаа оруулна уу';
+
+  @override
+  String get detailsIssuedBy => 'Олгосон';
+
+  @override
+  String get detailsIssuedByHelper => 'Үүнийг олгосон улс. Зөв сунгалтын алхмуудад ашиглана.';
+
+  @override
+  String get detailsOptional => '(заавал биш)';
+
+  @override
+  String get detailsProvider => 'Үйлчилгээ үзүүлэгч';
+
+  @override
+  String get detailsProviderHelper => 'Хэнээр сунгадаг.';
+
+  @override
+  String get detailsProviderHint => 'Үйлчилгээ үзүүлэгчийг оруулна уу';
+
+  @override
+  String get detailsRegisteredHelper => 'Тээврийн хэрэгсэл хаана бүртгэлтэй.';
+
+  @override
+  String get detailsRegisteredIn => 'Бүртгэлтэй улс';
+
+  @override
+  String get detailsSaved => 'Мэдээлэл хадгалагдлаа';
+
+  @override
+  String get detailsStore => 'Дэлгүүр';
+
+  @override
+  String get detailsStoreBrand => 'Дэлгүүр эсвэл брэнд';
+
+  @override
+  String get detailsStoreBrandHint => 'Дэлгүүр эсвэл брэндийг оруулна уу';
+
+  @override
+  String get detailsStoreHint => 'Дэлгүүрийг оруулна уу';
 }

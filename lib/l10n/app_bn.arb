@@ -3828,5 +3828,108 @@
   "coachOfficial": "সরকারি সাইট",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ব্যাংক",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "যাতে Ask Vaultara আপনাকে আপনার ব্যাংকের নিজস্ব ধাপ দেখাতে পারে।",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "আপনার ব্যাংক লিখুন",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "বিবরণ সেভ করুন",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "একটি দেশ বেছে নিন",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "মুছুন",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, যেমন {first} বা {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "বিমাকারী",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "নবায়নের সময় কার সাথে যোগাযোগ করবেন।",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "আপনার বিমাকারী লিখুন",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "জারি করেছে",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "যে দেশ এটি জারি করেছে। সঠিক নবায়ন ধাপের জন্য ব্যবহৃত হয়।",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ঐচ্ছিক)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "প্রদানকারী",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "যার কাছে নবায়ন করেন।",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "প্রদানকারী লিখুন",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "যানবাহনটি যেখানে নিবন্ধিত।",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "নিবন্ধিত দেশ",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "বিবরণ সেভ হয়েছে",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "দোকান",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "দোকান বা ব্র্যান্ড",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "দোকান বা ব্র্যান্ড লিখুন",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "দোকান লিখুন",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

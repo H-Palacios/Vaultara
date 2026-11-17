@@ -9354,4 +9354,75 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Расмий сайт';
+
+  @override
+  String get detailsBank => 'Банк';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara сизди банкыңыздын кадамдарына багыттай алышы үчүн.';
+
+  @override
+  String get detailsBankHint => 'Банкыңызды киргизиңиз';
+
+  @override
+  String get detailsCardTitle => 'Маалыматты сактоо';
+
+  @override
+  String get detailsChooseCountry => 'Өлкө тандаңыз';
+
+  @override
+  String get detailsClear => 'Тазалоо';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, мисалы $first же $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Камсыздандыруучу';
+
+  @override
+  String get detailsInsurerHelper => 'Жаңыртуу убагы келгенде кимге кайрылуу керек.';
+
+  @override
+  String get detailsInsurerHint => 'Камсыздандыруучуңузду киргизиңиз';
+
+  @override
+  String get detailsIssuedBy => 'Берген өлкө';
+
+  @override
+  String get detailsIssuedByHelper => 'Аны берген өлкө. Туура жаңыртуу кадамдары үчүн колдонулат.';
+
+  @override
+  String get detailsOptional => '(милдеттүү эмес)';
+
+  @override
+  String get detailsProvider => 'Камсыздоочу';
+
+  @override
+  String get detailsProviderHelper => 'Кимде жаңыртасыз.';
+
+  @override
+  String get detailsProviderHint => 'Камсыздоочуну киргизиңиз';
+
+  @override
+  String get detailsRegisteredHelper => 'Унаа кайда катталган.';
+
+  @override
+  String get detailsRegisteredIn => 'Катталган өлкө';
+
+  @override
+  String get detailsSaved => 'Маалымат сакталды';
+
+  @override
+  String get detailsStore => 'Дүкөн';
+
+  @override
+  String get detailsStoreBrand => 'Дүкөн же бренд';
+
+  @override
+  String get detailsStoreBrandHint => 'Дүкөндү же брендди киргизиңиз';
+
+  @override
+  String get detailsStoreHint => 'Дүкөндү киргизиңиз';
 }

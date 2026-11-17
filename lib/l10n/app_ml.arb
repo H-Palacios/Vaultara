@@ -3547,5 +3547,108 @@
   "coachOfficial": "ഔദ്യോഗിക സൈറ്റ്",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ബാങ്ക്",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ask Vaultara-ക്ക് നിങ്ങളുടെ ബാങ്കിന്റെ സ്വന്തം ഘട്ടങ്ങൾ കാണിക്കാൻ.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "നിങ്ങളുടെ ബാങ്ക് നൽകുക",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "വിശദാംശങ്ങൾ സേവ് ചെയ്യുക",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "രാജ്യം തിരഞ്ഞെടുക്കുക",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "മായ്ക്കുക",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, ഉദാ. {first} അല്ലെങ്കിൽ {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "ഇൻഷുറർ",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "പുതുക്കാൻ സമയമാകുമ്പോൾ ആരെ ബന്ധപ്പെടണം.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "നിങ്ങളുടെ ഇൻഷുറർ നൽകുക",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "നൽകിയത്",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ഇത് നൽകിയ രാജ്യം. ശരിയായ പുതുക്കൽ ഘട്ടങ്ങൾക്ക് ഉപയോഗിക്കുന്നു.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ഓപ്ഷണൽ)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "ദാതാവ്",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "നിങ്ങൾ ആരുമായി പുതുക്കുന്നു.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "ദാതാവിനെ നൽകുക",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "വാഹനം രജിസ്റ്റർ ചെയ്ത സ്ഥലം.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "രജിസ്റ്റർ ചെയ്ത രാജ്യം",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "വിശദാംശങ്ങൾ സേവ് ചെയ്തു",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "സ്റ്റോർ",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "സ്റ്റോർ അല്ലെങ്കിൽ ബ്രാൻഡ്",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "സ്റ്റോർ അല്ലെങ്കിൽ ബ്രാൻഡ് നൽകുക",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "സ്റ്റോർ നൽകുക",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

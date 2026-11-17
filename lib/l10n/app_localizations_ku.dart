@@ -9355,4 +9355,75 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Malpera fermî';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Da ku Ask Vaultara te ber bi gavên banka te ve bibe.';
+
+  @override
+  String get detailsBankHint => 'Banka xwe binivîse';
+
+  @override
+  String get detailsCardTitle => 'Hûrguliyan tomar bike';
+
+  @override
+  String get detailsChooseCountry => 'Welatekî hilbijêre';
+
+  @override
+  String get detailsClear => 'Paqij bike';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, wek $first an $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Sîgortevan';
+
+  @override
+  String get detailsInsurerHelper => 'Dema nûkirinê bi kê re têkilî daynî.';
+
+  @override
+  String get detailsInsurerHint => 'Sîgortevanê xwe binivîse';
+
+  @override
+  String get detailsIssuedBy => 'Ji aliyê';
+
+  @override
+  String get detailsIssuedByHelper => 'Welatê ku ew daye. Ji bo gavên nûkirinê yên rast tê bikaranîn.';
+
+  @override
+  String get detailsOptional => '(vebijarkî)';
+
+  @override
+  String get detailsProvider => 'Peydakar';
+
+  @override
+  String get detailsProviderHelper => 'Tu bi kê re nû dikî.';
+
+  @override
+  String get detailsProviderHint => 'Peydakar binivîse';
+
+  @override
+  String get detailsRegisteredHelper => 'Wesayît li ku hatiye qeydkirin.';
+
+  @override
+  String get detailsRegisteredIn => 'Qeydkirî li';
+
+  @override
+  String get detailsSaved => 'Hûrgulî hatin tomarkirin';
+
+  @override
+  String get detailsStore => 'Dikan';
+
+  @override
+  String get detailsStoreBrand => 'Dikan an marke';
+
+  @override
+  String get detailsStoreBrandHint => 'Dikan an markeyê binivîse';
+
+  @override
+  String get detailsStoreHint => 'Dikanê binivîse';
 }

@@ -3797,5 +3797,108 @@
   "coachOfficial": "سرکاری سائٹ",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "بینک",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "تاکہ Ask Vaultara آپ کو آپ کے بینک کے اپنے مراحل بتا سکے۔",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "اپنا بینک درج کریں",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "تفصیلات محفوظ کریں",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "ملک منتخب کریں",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "صاف کریں",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}، مثلاً {first} یا {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "بیمہ کار",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "تجدید کا وقت آنے پر کس سے رابطہ کریں۔",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "اپنا بیمہ کار درج کریں",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "جاری کنندہ",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "وہ ملک جس نے اسے جاری کیا۔ درست تجدید کے مراحل کے لیے۔",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(اختیاری)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "فراہم کنندہ",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "آپ کس کے پاس تجدید کرتے ہیں۔",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "فراہم کنندہ درج کریں",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "گاڑی کہاں رجسٹرڈ ہے۔",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "رجسٹرڈ ملک",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "تفصیلات محفوظ ہو گئیں",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "اسٹور",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "اسٹور یا برانڈ",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "اسٹور یا برانڈ درج کریں",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "اسٹور درج کریں",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

@@ -9355,4 +9355,75 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Hivatalos oldal';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Hogy az Ask Vaultara a bankod saját lépéseit mutathassa.';
+
+  @override
+  String get detailsBankHint => 'Add meg a bankodat';
+
+  @override
+  String get detailsCardTitle => 'Adatok mentése';
+
+  @override
+  String get detailsChooseCountry => 'Válassz országot';
+
+  @override
+  String get detailsClear => 'Törlés';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, pl. $first vagy $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Biztosító';
+
+  @override
+  String get detailsInsurerHelper => 'Kihez fordulj, amikor megújításra kerül sor.';
+
+  @override
+  String get detailsInsurerHint => 'Add meg a biztosítódat';
+
+  @override
+  String get detailsIssuedBy => 'Kiállította';
+
+  @override
+  String get detailsIssuedByHelper => 'Az ország, amely kiállította. A megfelelő megújítási lépésekhez kell.';
+
+  @override
+  String get detailsOptional => '(nem kötelező)';
+
+  @override
+  String get detailsProvider => 'Szolgáltató';
+
+  @override
+  String get detailsProviderHelper => 'Akinél megújítod.';
+
+  @override
+  String get detailsProviderHint => 'Add meg a szolgáltatót';
+
+  @override
+  String get detailsRegisteredHelper => 'Hol van a jármű forgalomba helyezve.';
+
+  @override
+  String get detailsRegisteredIn => 'Nyilvántartva';
+
+  @override
+  String get detailsSaved => 'Adatok mentve';
+
+  @override
+  String get detailsStore => 'Üzlet';
+
+  @override
+  String get detailsStoreBrand => 'Üzlet vagy márka';
+
+  @override
+  String get detailsStoreBrandHint => 'Add meg az üzletet vagy márkát';
+
+  @override
+  String get detailsStoreHint => 'Add meg az üzletet';
 }

@@ -9612,4 +9612,75 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get coachOfficial => 'موقع رسمي';
+
+  @override
+  String get detailsBank => 'البنك';
+
+  @override
+  String get detailsBankHelper => 'ليتمكن Ask Vaultara من إرشادك إلى خطوات بنكك نفسه.';
+
+  @override
+  String get detailsBankHint => 'أدخل بنكك';
+
+  @override
+  String get detailsCardTitle => 'حفظ التفاصيل';
+
+  @override
+  String get detailsChooseCountry => 'اختر دولة';
+
+  @override
+  String get detailsClear => 'مسح';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter، مثل $first أو $second';
+  }
+
+  @override
+  String get detailsInsurer => 'شركة التأمين';
+
+  @override
+  String get detailsInsurerHelper => 'بمن تتصل عندما يحين وقت التجديد.';
+
+  @override
+  String get detailsInsurerHint => 'أدخل شركة التأمين';
+
+  @override
+  String get detailsIssuedBy => 'صادر عن';
+
+  @override
+  String get detailsIssuedByHelper => 'الدولة التي أصدرته. يُستخدم لخطوات التجديد الصحيحة.';
+
+  @override
+  String get detailsOptional => '(اختياري)';
+
+  @override
+  String get detailsProvider => 'مقدّم الخدمة';
+
+  @override
+  String get detailsProviderHelper => 'الجهة التي تجدد معها.';
+
+  @override
+  String get detailsProviderHint => 'أدخل مقدّم الخدمة';
+
+  @override
+  String get detailsRegisteredHelper => 'مكان تسجيل المركبة.';
+
+  @override
+  String get detailsRegisteredIn => 'مسجّلة في';
+
+  @override
+  String get detailsSaved => 'تم حفظ التفاصيل';
+
+  @override
+  String get detailsStore => 'المتجر';
+
+  @override
+  String get detailsStoreBrand => 'المتجر أو العلامة التجارية';
+
+  @override
+  String get detailsStoreBrandHint => 'أدخل المتجر أو العلامة التجارية';
+
+  @override
+  String get detailsStoreHint => 'أدخل المتجر';
 }

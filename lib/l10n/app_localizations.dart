@@ -15936,6 +15936,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Official site'**
   String get coachOfficial;
+
+  /// detailsBank
+  ///
+  /// In en, this message translates to:
+  /// **'Bank'**
+  String get detailsBank;
+
+  /// detailsBankHelper
+  ///
+  /// In en, this message translates to:
+  /// **'So Ask Vaultara can point you to your bank\'s own steps.'**
+  String get detailsBankHelper;
+
+  /// detailsBankHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your bank'**
+  String get detailsBankHint;
+
+  /// Ask Vaultara card that saves the issuing country or company on a record.
+  ///
+  /// In en, this message translates to:
+  /// **'Save details'**
+  String get detailsCardTitle;
+
+  /// detailsChooseCountry
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a country'**
+  String get detailsChooseCountry;
+
+  /// detailsClear
+  ///
+  /// In en, this message translates to:
+  /// **'Clear'**
+  String get detailsClear;
+
+  /// Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.
+  ///
+  /// In en, this message translates to:
+  /// **'{enter}, e.g. {first} or {second}'**
+  String detailsHintExamples(String enter, String first, String second);
+
+  /// detailsInsurer
+  ///
+  /// In en, this message translates to:
+  /// **'Insurer'**
+  String get detailsInsurer;
+
+  /// detailsInsurerHelper
+  ///
+  /// In en, this message translates to:
+  /// **'Who to contact when it is time to renew.'**
+  String get detailsInsurerHelper;
+
+  /// detailsInsurerHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your insurer'**
+  String get detailsInsurerHint;
+
+  /// Label: the country that issued a document.
+  ///
+  /// In en, this message translates to:
+  /// **'Issued by'**
+  String get detailsIssuedBy;
+
+  /// detailsIssuedByHelper
+  ///
+  /// In en, this message translates to:
+  /// **'The country that issued it. Used for the right renewal steps.'**
+  String get detailsIssuedByHelper;
+
+  /// detailsOptional
+  ///
+  /// In en, this message translates to:
+  /// **'(optional)'**
+  String get detailsOptional;
+
+  /// detailsProvider
+  ///
+  /// In en, this message translates to:
+  /// **'Provider'**
+  String get detailsProvider;
+
+  /// detailsProviderHelper
+  ///
+  /// In en, this message translates to:
+  /// **'Who you renew with.'**
+  String get detailsProviderHelper;
+
+  /// detailsProviderHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the provider'**
+  String get detailsProviderHint;
+
+  /// detailsRegisteredHelper
+  ///
+  /// In en, this message translates to:
+  /// **'Where the vehicle is registered.'**
+  String get detailsRegisteredHelper;
+
+  /// Label: the country where a vehicle is registered.
+  ///
+  /// In en, this message translates to:
+  /// **'Registered in'**
+  String get detailsRegisteredIn;
+
+  /// detailsSaved
+  ///
+  /// In en, this message translates to:
+  /// **'Details saved'**
+  String get detailsSaved;
+
+  /// detailsStore
+  ///
+  /// In en, this message translates to:
+  /// **'Store'**
+  String get detailsStore;
+
+  /// detailsStoreBrand
+  ///
+  /// In en, this message translates to:
+  /// **'Store or brand'**
+  String get detailsStoreBrand;
+
+  /// detailsStoreBrandHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the store or brand'**
+  String get detailsStoreBrandHint;
+
+  /// detailsStoreHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the store'**
+  String get detailsStoreHint;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

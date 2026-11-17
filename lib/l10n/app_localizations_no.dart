@@ -9360,4 +9360,75 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Offisiell side';
+
+  @override
+  String get detailsBank => 'Bank';
+
+  @override
+  String get detailsBankHelper => 'Slik at Ask Vaultara kan vise deg bankens egne trinn.';
+
+  @override
+  String get detailsBankHint => 'Skriv inn banken din';
+
+  @override
+  String get detailsCardTitle => 'Lagre detaljer';
+
+  @override
+  String get detailsChooseCountry => 'Velg et land';
+
+  @override
+  String get detailsClear => 'Tøm';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, f.eks. $first eller $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Forsikringsselskap';
+
+  @override
+  String get detailsInsurerHelper => 'Hvem du kontakter når det er tid for fornyelse.';
+
+  @override
+  String get detailsInsurerHint => 'Skriv inn forsikringsselskapet';
+
+  @override
+  String get detailsIssuedBy => 'Utstedt av';
+
+  @override
+  String get detailsIssuedByHelper => 'Landet som utstedte det. Brukes for riktige fornyelsestrinn.';
+
+  @override
+  String get detailsOptional => '(valgfritt)';
+
+  @override
+  String get detailsProvider => 'Leverandør';
+
+  @override
+  String get detailsProviderHelper => 'Hvem du fornyer hos.';
+
+  @override
+  String get detailsProviderHint => 'Skriv inn leverandøren';
+
+  @override
+  String get detailsRegisteredHelper => 'Hvor kjøretøyet er registrert.';
+
+  @override
+  String get detailsRegisteredIn => 'Registrert i';
+
+  @override
+  String get detailsSaved => 'Detaljer lagret';
+
+  @override
+  String get detailsStore => 'Butikk';
+
+  @override
+  String get detailsStoreBrand => 'Butikk eller merke';
+
+  @override
+  String get detailsStoreBrandHint => 'Skriv inn butikken eller merket';
+
+  @override
+  String get detailsStoreHint => 'Skriv inn butikken';
 }

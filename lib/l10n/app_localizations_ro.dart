@@ -9441,4 +9441,75 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Site oficial';
+
+  @override
+  String get detailsBank => 'Bancă';
+
+  @override
+  String get detailsBankHelper => 'Ca Ask Vaultara să te îndrume spre pașii băncii tale.';
+
+  @override
+  String get detailsBankHint => 'Introdu banca ta';
+
+  @override
+  String get detailsCardTitle => 'Salvează detaliile';
+
+  @override
+  String get detailsChooseCountry => 'Alege o țară';
+
+  @override
+  String get detailsClear => 'Șterge';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, de ex. $first sau $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Asigurător';
+
+  @override
+  String get detailsInsurerHelper => 'Pe cine contactezi când e timpul să reînnoiești.';
+
+  @override
+  String get detailsInsurerHint => 'Introdu asigurătorul tău';
+
+  @override
+  String get detailsIssuedBy => 'Emis de';
+
+  @override
+  String get detailsIssuedByHelper => 'Țara care l-a emis. Folosit pentru pașii corecți de reînnoire.';
+
+  @override
+  String get detailsOptional => '(opțional)';
+
+  @override
+  String get detailsProvider => 'Furnizor';
+
+  @override
+  String get detailsProviderHelper => 'La cine reînnoiești.';
+
+  @override
+  String get detailsProviderHint => 'Introdu furnizorul';
+
+  @override
+  String get detailsRegisteredHelper => 'Unde este înmatriculat vehiculul.';
+
+  @override
+  String get detailsRegisteredIn => 'Înmatriculat în';
+
+  @override
+  String get detailsSaved => 'Detalii salvate';
+
+  @override
+  String get detailsStore => 'Magazin';
+
+  @override
+  String get detailsStoreBrand => 'Magazin sau marcă';
+
+  @override
+  String get detailsStoreBrandHint => 'Introdu magazinul sau marca';
+
+  @override
+  String get detailsStoreHint => 'Introdu magazinul';
 }

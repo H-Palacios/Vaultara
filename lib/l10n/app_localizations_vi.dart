@@ -9292,4 +9292,75 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Trang chính thức';
+
+  @override
+  String get detailsBank => 'Ngân hàng';
+
+  @override
+  String get detailsBankHelper => 'Để Ask Vaultara chỉ bạn các bước của chính ngân hàng bạn.';
+
+  @override
+  String get detailsBankHint => 'Nhập ngân hàng của bạn';
+
+  @override
+  String get detailsCardTitle => 'Lưu chi tiết';
+
+  @override
+  String get detailsChooseCountry => 'Chọn quốc gia';
+
+  @override
+  String get detailsClear => 'Xóa';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, vd. $first hoặc $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Công ty bảo hiểm';
+
+  @override
+  String get detailsInsurerHelper => 'Liên hệ ai khi đến lúc gia hạn.';
+
+  @override
+  String get detailsInsurerHint => 'Nhập công ty bảo hiểm của bạn';
+
+  @override
+  String get detailsIssuedBy => 'Cấp bởi';
+
+  @override
+  String get detailsIssuedByHelper => 'Quốc gia đã cấp. Dùng cho các bước gia hạn đúng.';
+
+  @override
+  String get detailsOptional => '(tùy chọn)';
+
+  @override
+  String get detailsProvider => 'Nhà cung cấp';
+
+  @override
+  String get detailsProviderHelper => 'Bạn gia hạn với ai.';
+
+  @override
+  String get detailsProviderHint => 'Nhập nhà cung cấp';
+
+  @override
+  String get detailsRegisteredHelper => 'Nơi xe được đăng ký.';
+
+  @override
+  String get detailsRegisteredIn => 'Đăng ký tại';
+
+  @override
+  String get detailsSaved => 'Đã lưu chi tiết';
+
+  @override
+  String get detailsStore => 'Cửa hàng';
+
+  @override
+  String get detailsStoreBrand => 'Cửa hàng hoặc thương hiệu';
+
+  @override
+  String get detailsStoreBrandHint => 'Nhập cửa hàng hoặc thương hiệu';
+
+  @override
+  String get detailsStoreHint => 'Nhập cửa hàng';
 }

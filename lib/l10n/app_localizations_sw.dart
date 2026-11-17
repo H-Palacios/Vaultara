@@ -9355,4 +9355,75 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Tovuti rasmi';
+
+  @override
+  String get detailsBank => 'Benki';
+
+  @override
+  String get detailsBankHelper => 'Ili Ask Vaultara ikuonyeshe hatua za benki yako.';
+
+  @override
+  String get detailsBankHint => 'Weka benki yako';
+
+  @override
+  String get detailsCardTitle => 'Hifadhi maelezo';
+
+  @override
+  String get detailsChooseCountry => 'Chagua nchi';
+
+  @override
+  String get detailsClear => 'Futa';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, k.m. $first au $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Bima';
+
+  @override
+  String get detailsInsurerHelper => 'Nani wa kuwasiliana naye wakati wa kuhuisha ukifika.';
+
+  @override
+  String get detailsInsurerHint => 'Weka kampuni yako ya bima';
+
+  @override
+  String get detailsIssuedBy => 'Imetolewa na';
+
+  @override
+  String get detailsIssuedByHelper => 'Nchi iliyoitoa. Inatumika kwa hatua sahihi za kuhuisha.';
+
+  @override
+  String get detailsOptional => '(si lazima)';
+
+  @override
+  String get detailsProvider => 'Mtoa huduma';
+
+  @override
+  String get detailsProviderHelper => 'Unayehuisha kwake.';
+
+  @override
+  String get detailsProviderHint => 'Weka mtoa huduma';
+
+  @override
+  String get detailsRegisteredHelper => 'Gari limesajiliwa wapi.';
+
+  @override
+  String get detailsRegisteredIn => 'Imesajiliwa';
+
+  @override
+  String get detailsSaved => 'Maelezo yamehifadhiwa';
+
+  @override
+  String get detailsStore => 'Duka';
+
+  @override
+  String get detailsStoreBrand => 'Duka au chapa';
+
+  @override
+  String get detailsStoreBrandHint => 'Weka duka au chapa';
+
+  @override
+  String get detailsStoreHint => 'Weka duka';
 }

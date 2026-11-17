@@ -9354,4 +9354,75 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get coachOfficial => 'ماڵپەڕی فەرمی';
+
+  @override
+  String get detailsBank => 'بانک';
+
+  @override
+  String get detailsBankHelper => 'بۆ ئەوەی Ask Vaultara ڕێنمایی بکات بۆ هەنگاوەکانی بانکەکەت.';
+
+  @override
+  String get detailsBankHint => 'بانکەکەت بنووسە';
+
+  @override
+  String get detailsCardTitle => 'وردەکارییەکان پاشەکەوت بکە';
+
+  @override
+  String get detailsChooseCountry => 'وڵاتێک هەڵبژێرە';
+
+  @override
+  String get detailsClear => 'سڕینەوە';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter، بۆ نموونە $first یان $second';
+  }
+
+  @override
+  String get detailsInsurer => 'کۆمپانیای بیمە';
+
+  @override
+  String get detailsInsurerHelper => 'کاتی نوێکردنەوە پەیوەندی بە کێوە بکەیت.';
+
+  @override
+  String get detailsInsurerHint => 'کۆمپانیای بیمەکەت بنووسە';
+
+  @override
+  String get detailsIssuedBy => 'دەرکراوە لەلایەن';
+
+  @override
+  String get detailsIssuedByHelper => 'ئەو وڵاتەی دەری کردووە. بۆ هەنگاوە دروستەکانی نوێکردنەوە بەکاردێت.';
+
+  @override
+  String get detailsOptional => '(ئارەزوومەندانە)';
+
+  @override
+  String get detailsProvider => 'دابینکەر';
+
+  @override
+  String get detailsProviderHelper => 'لای کێ نوێی دەکەیتەوە.';
+
+  @override
+  String get detailsProviderHint => 'دابینکەر بنووسە';
+
+  @override
+  String get detailsRegisteredHelper => 'ئۆتۆمبێلەکە لە کوێ تۆمارکراوە.';
+
+  @override
+  String get detailsRegisteredIn => 'تۆمارکراوە لە';
+
+  @override
+  String get detailsSaved => 'وردەکارییەکان پاشەکەوت کران';
+
+  @override
+  String get detailsStore => 'فرۆشگا';
+
+  @override
+  String get detailsStoreBrand => 'فرۆشگا یان براند';
+
+  @override
+  String get detailsStoreBrandHint => 'فرۆشگا یان براند بنووسە';
+
+  @override
+  String get detailsStoreHint => 'فرۆشگا بنووسە';
 }

@@ -9350,4 +9350,75 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Opisyal na site';
+
+  @override
+  String get detailsBank => 'Bangko';
+
+  @override
+  String get detailsBankHelper => 'Para maituro ka ng Ask Vaultara sa mga hakbang ng iyong bangko.';
+
+  @override
+  String get detailsBankHint => 'Ilagay ang iyong bangko';
+
+  @override
+  String get detailsCardTitle => 'I-save ang detalye';
+
+  @override
+  String get detailsChooseCountry => 'Pumili ng bansa';
+
+  @override
+  String get detailsClear => 'I-clear';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, hal. $first o $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Insurer';
+
+  @override
+  String get detailsInsurerHelper => 'Sino ang kokontakin kapag oras na para mag-renew.';
+
+  @override
+  String get detailsInsurerHint => 'Ilagay ang iyong insurer';
+
+  @override
+  String get detailsIssuedBy => 'Inisyu ng';
+
+  @override
+  String get detailsIssuedByHelper => 'Ang bansang nag-isyu nito. Ginagamit para sa tamang hakbang ng pag-renew.';
+
+  @override
+  String get detailsOptional => '(opsyonal)';
+
+  @override
+  String get detailsProvider => 'Provider';
+
+  @override
+  String get detailsProviderHelper => 'Kung saan ka nagre-renew.';
+
+  @override
+  String get detailsProviderHint => 'Ilagay ang provider';
+
+  @override
+  String get detailsRegisteredHelper => 'Kung saan nakarehistro ang sasakyan.';
+
+  @override
+  String get detailsRegisteredIn => 'Nakarehistro sa';
+
+  @override
+  String get detailsSaved => 'Na-save ang detalye';
+
+  @override
+  String get detailsStore => 'Tindahan';
+
+  @override
+  String get detailsStoreBrand => 'Tindahan o brand';
+
+  @override
+  String get detailsStoreBrandHint => 'Ilagay ang tindahan o brand';
+
+  @override
+  String get detailsStoreHint => 'Ilagay ang tindahan';
 }

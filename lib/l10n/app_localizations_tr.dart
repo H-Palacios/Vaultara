@@ -9355,4 +9355,75 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Resmi site';
+
+  @override
+  String get detailsBank => 'Banka';
+
+  @override
+  String get detailsBankHelper => 'Ask Vaultara sizi bankanızın kendi adımlarına yönlendirebilsin diye.';
+
+  @override
+  String get detailsBankHint => 'Bankanızı girin';
+
+  @override
+  String get detailsCardTitle => 'Ayrıntıları kaydet';
+
+  @override
+  String get detailsChooseCountry => 'Ülke seçin';
+
+  @override
+  String get detailsClear => 'Temizle';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, ör. $first veya $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Sigortacı';
+
+  @override
+  String get detailsInsurerHelper => 'Yenileme zamanı geldiğinde kime başvurulacağı.';
+
+  @override
+  String get detailsInsurerHint => 'Sigortacınızı girin';
+
+  @override
+  String get detailsIssuedBy => 'Veren ülke';
+
+  @override
+  String get detailsIssuedByHelper => 'Onu veren ülke. Doğru yenileme adımları için kullanılır.';
+
+  @override
+  String get detailsOptional => '(isteğe bağlı)';
+
+  @override
+  String get detailsProvider => 'Sağlayıcı';
+
+  @override
+  String get detailsProviderHelper => 'Kimde yenilediğiniz.';
+
+  @override
+  String get detailsProviderHint => 'Sağlayıcıyı girin';
+
+  @override
+  String get detailsRegisteredHelper => 'Aracın kayıtlı olduğu yer.';
+
+  @override
+  String get detailsRegisteredIn => 'Kayıtlı olduğu ülke';
+
+  @override
+  String get detailsSaved => 'Ayrıntılar kaydedildi';
+
+  @override
+  String get detailsStore => 'Mağaza';
+
+  @override
+  String get detailsStoreBrand => 'Mağaza veya marka';
+
+  @override
+  String get detailsStoreBrandHint => 'Mağaza veya markayı girin';
+
+  @override
+  String get detailsStoreHint => 'Mağazayı girin';
 }

@@ -3804,5 +3804,108 @@
   "coachOfficial": "Επίσημος ιστότοπος",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "Τράπεζα",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ώστε το Ask Vaultara να σας δείξει τα βήματα της τράπεζάς σας.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "Εισαγάγετε την τράπεζά σας",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "Αποθήκευση στοιχείων",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "Επιλέξτε χώρα",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "Διαγραφή",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, π.χ. {first} ή {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "Ασφαλιστής",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "Με ποιον να επικοινωνήσετε όταν έρθει η ώρα της ανανέωσης.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "Εισαγάγετε τον ασφαλιστή σας",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "Εκδόθηκε από",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "Η χώρα που το εξέδωσε. Χρησιμοποιείται για τα σωστά βήματα ανανέωσης.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(προαιρετικό)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "Πάροχος",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "Με ποιον ανανεώνετε.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "Εισαγάγετε τον πάροχο",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "Πού είναι ταξινομημένο το όχημα.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "Ταξινομημένο σε",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "Τα στοιχεία αποθηκεύτηκαν",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "Κατάστημα",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "Κατάστημα ή μάρκα",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "Εισαγάγετε το κατάστημα ή τη μάρκα",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "Εισαγάγετε το κατάστημα",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

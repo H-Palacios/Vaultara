@@ -9434,4 +9434,75 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Službena stranica';
+
+  @override
+  String get detailsBank => 'Banka';
+
+  @override
+  String get detailsBankHelper => 'Da vas Ask Vaultara može uputiti na korake vaše banke.';
+
+  @override
+  String get detailsBankHint => 'Unesite svoju banku';
+
+  @override
+  String get detailsCardTitle => 'Spremi pojedinosti';
+
+  @override
+  String get detailsChooseCountry => 'Odaberite državu';
+
+  @override
+  String get detailsClear => 'Očisti';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, npr. $first ili $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Osiguravatelj';
+
+  @override
+  String get detailsInsurerHelper => 'Koga kontaktirati kada dođe vrijeme za obnovu.';
+
+  @override
+  String get detailsInsurerHint => 'Unesite svog osiguravatelja';
+
+  @override
+  String get detailsIssuedBy => 'Izdala';
+
+  @override
+  String get detailsIssuedByHelper => 'Država koja ga je izdala. Koristi se za ispravne korake obnove.';
+
+  @override
+  String get detailsOptional => '(neobavezno)';
+
+  @override
+  String get detailsProvider => 'Pružatelj';
+
+  @override
+  String get detailsProviderHelper => 'Kod koga obnavljate.';
+
+  @override
+  String get detailsProviderHint => 'Unesite pružatelja';
+
+  @override
+  String get detailsRegisteredHelper => 'Gdje je vozilo registrirano.';
+
+  @override
+  String get detailsRegisteredIn => 'Registrirano u';
+
+  @override
+  String get detailsSaved => 'Pojedinosti spremljene';
+
+  @override
+  String get detailsStore => 'Trgovina';
+
+  @override
+  String get detailsStoreBrand => 'Trgovina ili marka';
+
+  @override
+  String get detailsStoreBrandHint => 'Unesite trgovinu ili marku';
+
+  @override
+  String get detailsStoreHint => 'Unesite trgovinu';
 }

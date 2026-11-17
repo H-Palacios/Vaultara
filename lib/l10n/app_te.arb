@@ -3814,5 +3814,108 @@
   "coachOfficial": "అధికారిక సైట్",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "బ్యాంక్",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "Ask Vaultara మీ బ్యాంక్ సొంత దశలను చూపించేందుకు.",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "మీ బ్యాంక్‌ను నమోదు చేయండి",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "వివరాలను సేవ్ చేయండి",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "దేశాన్ని ఎంచుకోండి",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "క్లియర్ చేయండి",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter}, ఉదా. {first} లేదా {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "బీమా సంస్థ",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "పునరుద్ధరణ సమయంలో ఎవరిని సంప్రదించాలి.",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "మీ బీమా సంస్థను నమోదు చేయండి",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "జారీ చేసినది",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "దీన్ని జారీ చేసిన దేశం. సరైన పునరుద్ధరణ దశల కోసం ఉపయోగిస్తారు.",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ఐచ్ఛికం)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "ప్రొవైడర్",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "మీరు ఎవరితో పునరుద్ధరిస్తారు.",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "ప్రొవైడర్‌ను నమోదు చేయండి",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "వాహనం ఎక్కడ నమోదైంది.",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "నమోదైన దేశం",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "వివరాలు సేవ్ అయ్యాయి",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "దుకాణం",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "దుకాణం లేదా బ్రాండ్",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "దుకాణం లేదా బ్రాండ్‌ను నమోదు చేయండి",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "దుకాణాన్ని నమోదు చేయండి",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

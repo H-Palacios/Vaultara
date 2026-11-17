@@ -3547,5 +3547,108 @@
   "coachOfficial": "គេហទំព័រផ្លូវការ",
   "@coachOfficial": {
     "description": "coachOfficial"
+  },
+  "detailsBank": "ធនាគារ",
+  "@detailsBank": {
+    "description": "detailsBank"
+  },
+  "detailsBankHelper": "ដើម្បីឱ្យ Ask Vaultara ណែនាំអ្នកទៅកាន់ជំហានរបស់ធនាគារអ្នក។",
+  "@detailsBankHelper": {
+    "description": "detailsBankHelper"
+  },
+  "detailsBankHint": "បញ្ចូលធនាគាររបស់អ្នក",
+  "@detailsBankHint": {
+    "description": "detailsBankHint"
+  },
+  "detailsCardTitle": "រក្សាទុកព័ត៌មាន",
+  "@detailsCardTitle": {
+    "description": "Ask Vaultara card that saves the issuing country or company on a record."
+  },
+  "detailsChooseCountry": "ជ្រើសរើសប្រទេស",
+  "@detailsChooseCountry": {
+    "description": "detailsChooseCountry"
+  },
+  "detailsClear": "សម្អាត",
+  "@detailsClear": {
+    "description": "detailsClear"
+  },
+  "detailsHintExamples": "{enter} ឧ. {first} ឬ {second}",
+  "@detailsHintExamples": {
+    "description": "Field hint: enter is the plain hint (e.g. Enter your bank); first and second are example company names.",
+    "placeholders": {
+      "enter": {
+        "type": "String"
+      },
+      "first": {
+        "type": "String"
+      },
+      "second": {
+        "type": "String"
+      }
+    }
+  },
+  "detailsInsurer": "ក្រុមហ៊ុនធានារ៉ាប់រង",
+  "@detailsInsurer": {
+    "description": "detailsInsurer"
+  },
+  "detailsInsurerHelper": "អ្នកណាដែលត្រូវទាក់ទងពេលដល់ពេលបន្ត។",
+  "@detailsInsurerHelper": {
+    "description": "detailsInsurerHelper"
+  },
+  "detailsInsurerHint": "បញ្ចូលក្រុមហ៊ុនធានារ៉ាប់រង",
+  "@detailsInsurerHint": {
+    "description": "detailsInsurerHint"
+  },
+  "detailsIssuedBy": "ចេញដោយ",
+  "@detailsIssuedBy": {
+    "description": "Label: the country that issued a document."
+  },
+  "detailsIssuedByHelper": "ប្រទេសដែលបានចេញវា។ ប្រើសម្រាប់ជំហានបន្តត្រឹមត្រូវ។",
+  "@detailsIssuedByHelper": {
+    "description": "detailsIssuedByHelper"
+  },
+  "detailsOptional": "(ស្រេចចិត្ត)",
+  "@detailsOptional": {
+    "description": "detailsOptional"
+  },
+  "detailsProvider": "អ្នកផ្តល់សេវា",
+  "@detailsProvider": {
+    "description": "detailsProvider"
+  },
+  "detailsProviderHelper": "អ្នកដែលអ្នកបន្តជាមួយ។",
+  "@detailsProviderHelper": {
+    "description": "detailsProviderHelper"
+  },
+  "detailsProviderHint": "បញ្ចូលអ្នកផ្តល់សេវា",
+  "@detailsProviderHint": {
+    "description": "detailsProviderHint"
+  },
+  "detailsRegisteredHelper": "កន្លែងដែលយានយន្តត្រូវបានចុះបញ្ជី។",
+  "@detailsRegisteredHelper": {
+    "description": "detailsRegisteredHelper"
+  },
+  "detailsRegisteredIn": "ចុះបញ្ជីនៅ",
+  "@detailsRegisteredIn": {
+    "description": "Label: the country where a vehicle is registered."
+  },
+  "detailsSaved": "បានរក្សាទុកព័ត៌មាន",
+  "@detailsSaved": {
+    "description": "detailsSaved"
+  },
+  "detailsStore": "ហាង",
+  "@detailsStore": {
+    "description": "detailsStore"
+  },
+  "detailsStoreBrand": "ហាង ឬម៉ាក",
+  "@detailsStoreBrand": {
+    "description": "detailsStoreBrand"
+  },
+  "detailsStoreBrandHint": "បញ្ចូលហាង ឬម៉ាក",
+  "@detailsStoreBrandHint": {
+    "description": "detailsStoreBrandHint"
+  },
+  "detailsStoreHint": "បញ្ចូលហាង",
+  "@detailsStoreHint": {
+    "description": "detailsStoreHint"
   }
 }

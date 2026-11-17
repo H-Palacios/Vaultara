@@ -9360,4 +9360,75 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get coachOfficial => 'Lloc oficial';
+
+  @override
+  String get detailsBank => 'Banc';
+
+  @override
+  String get detailsBankHelper => 'Perquè Ask Vaultara et pugui indicar els passos del teu banc.';
+
+  @override
+  String get detailsBankHint => 'Introdueix el teu banc';
+
+  @override
+  String get detailsCardTitle => 'Desa els detalls';
+
+  @override
+  String get detailsChooseCountry => 'Tria un país';
+
+  @override
+  String get detailsClear => 'Esborra';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter, p. ex. $first o $second';
+  }
+
+  @override
+  String get detailsInsurer => 'Asseguradora';
+
+  @override
+  String get detailsInsurerHelper => 'A qui contactar quan toqui renovar.';
+
+  @override
+  String get detailsInsurerHint => 'Introdueix la teva asseguradora';
+
+  @override
+  String get detailsIssuedBy => 'Emès per';
+
+  @override
+  String get detailsIssuedByHelper => 'El país que l\'ha emès. Serveix per als passos de renovació correctes.';
+
+  @override
+  String get detailsOptional => '(opcional)';
+
+  @override
+  String get detailsProvider => 'Proveïdor';
+
+  @override
+  String get detailsProviderHelper => 'Amb qui renoves.';
+
+  @override
+  String get detailsProviderHint => 'Introdueix el proveïdor';
+
+  @override
+  String get detailsRegisteredHelper => 'On està matriculat el vehicle.';
+
+  @override
+  String get detailsRegisteredIn => 'Matriculat a';
+
+  @override
+  String get detailsSaved => 'Detalls desats';
+
+  @override
+  String get detailsStore => 'Botiga';
+
+  @override
+  String get detailsStoreBrand => 'Botiga o marca';
+
+  @override
+  String get detailsStoreBrandHint => 'Introdueix la botiga o la marca';
+
+  @override
+  String get detailsStoreHint => 'Introdueix la botiga';
 }

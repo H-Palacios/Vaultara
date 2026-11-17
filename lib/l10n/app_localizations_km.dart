@@ -9290,4 +9290,75 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get coachOfficial => 'គេហទំព័រផ្លូវការ';
+
+  @override
+  String get detailsBank => 'ធនាគារ';
+
+  @override
+  String get detailsBankHelper => 'ដើម្បីឱ្យ Ask Vaultara ណែនាំអ្នកទៅកាន់ជំហានរបស់ធនាគារអ្នក។';
+
+  @override
+  String get detailsBankHint => 'បញ្ចូលធនាគាររបស់អ្នក';
+
+  @override
+  String get detailsCardTitle => 'រក្សាទុកព័ត៌មាន';
+
+  @override
+  String get detailsChooseCountry => 'ជ្រើសរើសប្រទេស';
+
+  @override
+  String get detailsClear => 'សម្អាត';
+
+  @override
+  String detailsHintExamples(String enter, String first, String second) {
+    return '$enter ឧ. $first ឬ $second';
+  }
+
+  @override
+  String get detailsInsurer => 'ក្រុមហ៊ុនធានារ៉ាប់រង';
+
+  @override
+  String get detailsInsurerHelper => 'អ្នកណាដែលត្រូវទាក់ទងពេលដល់ពេលបន្ត។';
+
+  @override
+  String get detailsInsurerHint => 'បញ្ចូលក្រុមហ៊ុនធានារ៉ាប់រង';
+
+  @override
+  String get detailsIssuedBy => 'ចេញដោយ';
+
+  @override
+  String get detailsIssuedByHelper => 'ប្រទេសដែលបានចេញវា។ ប្រើសម្រាប់ជំហានបន្តត្រឹមត្រូវ។';
+
+  @override
+  String get detailsOptional => '(ស្រេចចិត្ត)';
+
+  @override
+  String get detailsProvider => 'អ្នកផ្តល់សេវា';
+
+  @override
+  String get detailsProviderHelper => 'អ្នកដែលអ្នកបន្តជាមួយ។';
+
+  @override
+  String get detailsProviderHint => 'បញ្ចូលអ្នកផ្តល់សេវា';
+
+  @override
+  String get detailsRegisteredHelper => 'កន្លែងដែលយានយន្តត្រូវបានចុះបញ្ជី។';
+
+  @override
+  String get detailsRegisteredIn => 'ចុះបញ្ជីនៅ';
+
+  @override
+  String get detailsSaved => 'បានរក្សាទុកព័ត៌មាន';
+
+  @override
+  String get detailsStore => 'ហាង';
+
+  @override
+  String get detailsStoreBrand => 'ហាង ឬម៉ាក';
+
+  @override
+  String get detailsStoreBrandHint => 'បញ្ចូលហាង ឬម៉ាក';
+
+  @override
+  String get detailsStoreHint => 'បញ្ចូលហាង';
 }
