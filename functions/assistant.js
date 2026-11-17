@@ -193,6 +193,8 @@ const RECORD_FIELDS = [
   "keptIn",
   "reminderOffsetDays",
   "leadDays",
+  "issuedIn",
+  "provider",
 ];
 
 const RECORD_FIELD_NAMES = [
