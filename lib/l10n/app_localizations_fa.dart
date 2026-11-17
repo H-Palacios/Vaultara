@@ -9107,4 +9107,39 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'شنیدن متوقف شد';
+
+  @override
+  String get assistantPhotoButton => 'عکس یک سند';
+
+  @override
+  String get assistantPhotoMessage => 'این عکس یک سند است';
+
+  @override
+  String get assistantPhotoUnreadable => 'متن این عکس خوانده نشد. در نور خوب دوباره امتحان کنید.';
+
+  @override
+  String get assistantContinue => 'ادامه';
+
+  @override
+  String get voiceLanguageTitle => 'زبان صدا';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'تلفن شما نمی‌تواند به این زبان گوش دهد، پس به $language گوش می‌دهد.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'تغییر';
+
+  @override
+  String get assistantForgetWords => 'فراموش کردن واژه‌های آموخته';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara واژه‌هایی را که برای سوابق شما آموخته فراموش می‌کند. گفتگوها و سوابق شما می‌مانند.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'فراموش کن';
+
+  @override
+  String get assistantForgetWordsDone => 'واژه‌های آموخته فراموش شدند';
 }

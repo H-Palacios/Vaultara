@@ -9112,4 +9112,39 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Zuhören beendet';
+
+  @override
+  String get assistantPhotoButton => 'Foto eines Dokuments';
+
+  @override
+  String get assistantPhotoMessage => 'Hier ist ein Foto eines Dokuments';
+
+  @override
+  String get assistantPhotoUnreadable => 'Der Text auf diesem Foto konnte nicht gelesen werden. Versuche es bei gutem Licht noch einmal.';
+
+  @override
+  String get assistantContinue => 'Weiter';
+
+  @override
+  String get voiceLanguageTitle => 'Sprache für Spracheingabe';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Dein Telefon kann in dieser Sprache nicht zuhören, daher hört es auf $language zu.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Ändern';
+
+  @override
+  String get assistantForgetWords => 'Gelernte Wörter vergessen';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara vergisst die Wörter, die es für deine Einträge gelernt hat. Deine Chats und Einträge bleiben.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Vergessen';
+
+  @override
+  String get assistantForgetWordsDone => 'Gelernte Wörter vergessen';
 }

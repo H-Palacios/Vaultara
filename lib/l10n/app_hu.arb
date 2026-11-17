@@ -3466,5 +3466,54 @@
   "travelLicenceExpiresBeforeLeaving": "A jogosítvány lejár, mielőtt elindul",
   "travelTravellersCount": "{count, plural, =1{1 utazó} other{{count} utazó}}",
   "travelDetailExpiresDaysBeforeLeaving": "A(z) {name} lejár: {date}, {days, plural, =1{1 nappal az indulás előtt} other{{days} nappal az indulás előtt}}.",
-  "assistantVoiceReady": "A hallgatás leállt"
+  "assistantVoiceReady": "A hallgatás leállt",
+  "assistantPhotoButton": "Fotó egy dokumentumról",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Itt egy fotó egy dokumentumról",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "A fotón lévő szöveget nem sikerült elolvasni. Próbáld újra jó fényben.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Tovább",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Hang nyelve",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "A telefonod ezen a nyelven nem tud figyelni, ezért {language} nyelven figyel.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Módosítás",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Tanult szavak elfelejtése",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Az Ask Vaultara elfelejti a bejegyzéseidhez tanult szavakat. A csevegéseid és bejegyzéseid megmaradnak.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Elfelejtés",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Tanult szavak elfelejtve",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

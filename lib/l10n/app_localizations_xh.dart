@@ -9107,4 +9107,39 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Kuyekiwe ukumamela';
+
+  @override
+  String get assistantPhotoButton => 'Ifoto yoxwebhu';
+
+  @override
+  String get assistantPhotoMessage => 'Nantsi ifoto yoxwebhu';
+
+  @override
+  String get assistantPhotoUnreadable => 'Umbhalo okule foto awukwazanga ukufundwa. Zama kwakhona ekukhanyeni okuhle.';
+
+  @override
+  String get assistantContinue => 'Qhubeka';
+
+  @override
+  String get voiceLanguageTitle => 'Ulwimi lwelizwi';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Ifowuni yakho ayikwazi ukumamela ngolu lwimi, ngoko imamela nge$language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Tshintsha';
+
+  @override
+  String get assistantForgetWords => 'Libala amagama afundiweyo';
+
+  @override
+  String get assistantForgetWordsBody => 'I-Ask Vaultara iza kulibala amagama eyawafundayo ngeerekhodi zakho. Iincoko neerekhodi zakho ziyahlala.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Libala';
+
+  @override
+  String get assistantForgetWordsDone => 'Amagama afundiweyo alityelwe';
 }

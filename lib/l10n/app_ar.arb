@@ -3486,5 +3486,54 @@
   "travelLicenceExpiresBeforeLeaving": "تنتهي صلاحية رخصة القيادة قبل سفرك",
   "travelTravellersCount": "{count, plural, =1{مسافر واحد} =2{مسافران} few{{count} مسافرين} many{{count} مسافرًا} other{{count} مسافر}}",
   "travelDetailExpiresDaysBeforeLeaving": "تنتهي صلاحية {name} في {date}، {days, plural, =1{قبل مغادرتك بيوم واحد} =2{قبل مغادرتك بيومين} few{قبل مغادرتك بـ{days} أيام} many{قبل مغادرتك بـ{days} يومًا} other{قبل مغادرتك بـ{days} يوم}}.",
-  "assistantVoiceReady": "توقف الاستماع"
+  "assistantVoiceReady": "توقف الاستماع",
+  "assistantPhotoButton": "صورة مستند",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "هذه صورة مستند",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "تعذّرت قراءة النص في هذه الصورة. حاول مرة أخرى في إضاءة جيدة.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "متابعة",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "لغة الصوت",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "لا يستطيع هاتفك الاستماع بهذه اللغة، لذا يستمع بـ{language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "تغيير",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "نسيان الكلمات المتعلَّمة",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "سينسى Ask Vaultara الكلمات التي تعلّمها لسجلاتك. تبقى محادثاتك وسجلاتك.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "نسيان",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "تم نسيان الكلمات المتعلَّمة",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

@@ -9043,4 +9043,39 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'បានឈប់ស្តាប់';
+
+  @override
+  String get assistantPhotoButton => 'រូបថតឯកសារ';
+
+  @override
+  String get assistantPhotoMessage => 'នេះជារូបថតឯកសារ';
+
+  @override
+  String get assistantPhotoUnreadable => 'មិនអាចអានអត្ថបទលើរូបថតនេះបានទេ។ សូមសាកល្បងម្តងទៀតក្នុងពន្លឺល្អ។';
+
+  @override
+  String get assistantContinue => 'បន្ត';
+
+  @override
+  String get voiceLanguageTitle => 'ភាសាសំឡេង';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'ទូរសព្ទរបស់អ្នកមិនអាចស្តាប់ជាភាសានេះបានទេ ដូច្នេះវាកំពុងស្តាប់ជា$language។';
+  }
+
+  @override
+  String get voiceLanguageChange => 'ប្តូរ';
+
+  @override
+  String get assistantForgetWords => 'បំភ្លេចពាក្យដែលបានរៀន';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara នឹងបំភ្លេចពាក្យដែលវាបានរៀនសម្រាប់កំណត់ត្រារបស់អ្នក។ ការជជែក និងកំណត់ត្រារបស់អ្នកនៅដដែល។';
+
+  @override
+  String get assistantForgetWordsConfirm => 'បំភ្លេច';
+
+  @override
+  String get assistantForgetWordsDone => 'បានបំភ្លេចពាក្យដែលបានរៀន';
 }

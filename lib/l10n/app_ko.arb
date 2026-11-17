@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "출발하기 전에 운전면허가 만료됩니다",
   "travelTravellersCount": "{count, plural, =1{여행자 1명} other{여행자 {count}명}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name}은(는) {date}에 만료됩니다. {days, plural, =1{출발 1일 전입니다} other{출발 {days}일 전입니다}}.",
-  "assistantVoiceReady": "듣기를 멈췄습니다"
+  "assistantVoiceReady": "듣기를 멈췄습니다",
+  "assistantPhotoButton": "문서 사진",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "문서 사진입니다",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "이 사진의 글자를 읽을 수 없습니다. 밝은 곳에서 다시 시도해 주세요.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "계속",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "음성 언어",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "휴대폰이 이 언어로 들을 수 없어 {language}(으)로 듣고 있습니다.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "변경",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "학습한 단어 지우기",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara가 기록에 대해 학습한 단어를 잊습니다. 채팅과 기록은 그대로 남습니다.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "지우기",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "학습한 단어를 지웠습니다",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

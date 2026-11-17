@@ -3462,5 +3462,54 @@
   "travelLicenceExpiresBeforeLeaving": "Patenta skadon para se të nisheni",
   "travelTravellersCount": "{count, plural, =1{1 udhëtar} other{{count} udhëtarë}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} skadon më {date}, {days, plural, =1{1 ditë para nisjes} other{{days} ditë para nisjes}}.",
-  "assistantVoiceReady": "Dëgjimi u ndal"
+  "assistantVoiceReady": "Dëgjimi u ndal",
+  "assistantPhotoButton": "Foto e një dokumenti",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Ja një foto e një dokumenti",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Teksti në këtë foto nuk u lexua dot. Provo përsëri në dritë të mirë.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Vazhdo",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Gjuha e zërit",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefoni nuk mund të dëgjojë në këtë gjuhë, ndaj po dëgjon në {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Ndrysho",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Harro fjalët e mësuara",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara do të harrojë fjalët që mësoi për regjistrimet e tua. Bisedat dhe regjistrimet mbeten.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Harro",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Fjalët e mësuara u harruan",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

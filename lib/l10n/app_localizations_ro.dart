@@ -9192,4 +9192,39 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Ascultarea s-a oprit';
+
+  @override
+  String get assistantPhotoButton => 'Fotografia unui document';
+
+  @override
+  String get assistantPhotoMessage => 'Iată o fotografie a unui document';
+
+  @override
+  String get assistantPhotoUnreadable => 'Textul din această fotografie nu a putut fi citit. Încearcă din nou la lumină bună.';
+
+  @override
+  String get assistantContinue => 'Continuă';
+
+  @override
+  String get voiceLanguageTitle => 'Limba vocii';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefonul nu poate asculta în această limbă, așa că ascultă în $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Schimbă';
+
+  @override
+  String get assistantForgetWords => 'Uită cuvintele învățate';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara va uita cuvintele învățate pentru înregistrările tale. Conversațiile și înregistrările rămân.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Uită';
+
+  @override
+  String get assistantForgetWordsDone => 'Cuvintele învățate au fost uitate';
 }

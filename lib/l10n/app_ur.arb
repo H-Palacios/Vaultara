@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "ڈرائیونگ لائسنس روانگی سے پہلے ختم ہو رہا ہے",
   "travelTravellersCount": "{count, plural, =1{1 مسافر} other{{count} مسافر}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} کی میعاد {date} کو ختم ہو رہی ہے، {days, plural, =1{آپ کی روانگی سے 1 دن پہلے} other{آپ کی روانگی سے {days} دن پہلے}}۔",
-  "assistantVoiceReady": "سننا رک گیا"
+  "assistantVoiceReady": "سننا رک گیا",
+  "assistantPhotoButton": "دستاویز کی تصویر",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "یہ رہی دستاویز کی تصویر",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "اس تصویر کا متن پڑھا نہیں جا سکا۔ اچھی روشنی میں دوبارہ کوشش کریں۔",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "جاری رکھیں",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "آواز کی زبان",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "آپ کا فون اس زبان میں نہیں سن سکتا، اس لیے وہ {language} میں سن رہا ہے۔",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "تبدیل کریں",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "سیکھے گئے الفاظ بھول جائیں",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara آپ کے ریکارڈز کے لیے سیکھے گئے الفاظ بھول جائے گا۔ آپ کی چیٹس اور ریکارڈز باقی رہیں گے۔",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "بھول جائیں",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "سیکھے گئے الفاظ بھلا دیے گئے",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

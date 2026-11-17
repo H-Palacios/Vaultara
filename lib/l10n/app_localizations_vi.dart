@@ -9045,4 +9045,39 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Đã dừng nghe';
+
+  @override
+  String get assistantPhotoButton => 'Ảnh tài liệu';
+
+  @override
+  String get assistantPhotoMessage => 'Đây là ảnh một tài liệu';
+
+  @override
+  String get assistantPhotoUnreadable => 'Không đọc được chữ trên ảnh này. Hãy thử lại ở nơi đủ sáng.';
+
+  @override
+  String get assistantContinue => 'Tiếp tục';
+
+  @override
+  String get voiceLanguageTitle => 'Ngôn ngữ giọng nói';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Điện thoại của bạn không nghe được ngôn ngữ này nên đang nghe bằng $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Thay đổi';
+
+  @override
+  String get assistantForgetWords => 'Quên từ đã học';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara sẽ quên các từ đã học cho hồ sơ của bạn. Các cuộc trò chuyện và hồ sơ vẫn còn.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Quên';
+
+  @override
+  String get assistantForgetWordsDone => 'Đã quên các từ đã học';
 }

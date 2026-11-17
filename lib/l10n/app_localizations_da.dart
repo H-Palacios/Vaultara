@@ -9112,4 +9112,39 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Lytter ikke længere';
+
+  @override
+  String get assistantPhotoButton => 'Foto af et dokument';
+
+  @override
+  String get assistantPhotoMessage => 'Her er et foto af et dokument';
+
+  @override
+  String get assistantPhotoUnreadable => 'Teksten på dette foto kunne ikke læses. Prøv igen i godt lys.';
+
+  @override
+  String get assistantContinue => 'Fortsæt';
+
+  @override
+  String get voiceLanguageTitle => 'Stemmesprog';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Din telefon kan ikke lytte på dette sprog, så den lytter på $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Skift';
+
+  @override
+  String get assistantForgetWords => 'Glem lærte ord';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara glemmer de ord, den har lært til dine poster. Dine chats og poster bliver.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Glem';
+
+  @override
+  String get assistantForgetWordsDone => 'Lærte ord glemt';
 }

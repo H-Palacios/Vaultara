@@ -9102,4 +9102,39 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Huminto na ang pakikinig';
+
+  @override
+  String get assistantPhotoButton => 'Larawan ng dokumento';
+
+  @override
+  String get assistantPhotoMessage => 'Narito ang larawan ng dokumento';
+
+  @override
+  String get assistantPhotoUnreadable => 'Hindi mabasa ang teksto sa larawang ito. Subukang muli sa maliwanag na lugar.';
+
+  @override
+  String get assistantContinue => 'Magpatuloy';
+
+  @override
+  String get voiceLanguageTitle => 'Wika ng boses';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Hindi makakinig ang iyong telepono sa wikang ito, kaya nakikinig ito sa $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Palitan';
+
+  @override
+  String get assistantForgetWords => 'Kalimutan ang mga natutunang salita';
+
+  @override
+  String get assistantForgetWordsBody => 'Kakalimutan ng Ask Vaultara ang mga salitang natutunan nito para sa iyong mga record. Mananatili ang iyong mga chat at record.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Kalimutan';
+
+  @override
+  String get assistantForgetWordsDone => 'Nakalimutan na ang mga natutunang salita';
 }

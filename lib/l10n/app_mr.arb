@@ -3198,5 +3198,54 @@
   "travelLicenceExpiresBeforeLeaving": "तुम्ही निघण्यापूर्वी ड्रायव्हिंग लायसन्सची मुदत संपते",
   "travelTravellersCount": "{count, plural, =1{1 प्रवासी} other{{count} प्रवासी}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} ची मुदत {date} रोजी संपते, {days, plural, =1{तुम्ही निघण्याच्या 1 दिवस आधी} other{तुम्ही निघण्याच्या {days} दिवस आधी}}.",
-  "assistantVoiceReady": "ऐकणे थांबले"
+  "assistantVoiceReady": "ऐकणे थांबले",
+  "assistantPhotoButton": "दस्तऐवजाचा फोटो",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "हा दस्तऐवजाचा फोटो आहे",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "या फोटोतील मजकूर वाचता आला नाही. चांगल्या प्रकाशात पुन्हा प्रयत्न करा.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "सुरू ठेवा",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "आवाजाची भाषा",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "तुमचा फोन या भाषेत ऐकू शकत नाही, म्हणून तो {language} मध्ये ऐकत आहे.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "बदला",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "शिकलेले शब्द विसरा",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara तुमच्या नोंदींसाठी शिकलेले शब्द विसरेल. तुमच्या चॅट आणि नोंदी राहतील.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "विसरा",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "शिकलेले शब्द विसरले",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

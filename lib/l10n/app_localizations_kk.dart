@@ -9107,4 +9107,39 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Тыңдау тоқтады';
+
+  @override
+  String get assistantPhotoButton => 'Құжаттың фотосы';
+
+  @override
+  String get assistantPhotoMessage => 'Міне, құжаттың фотосы';
+
+  @override
+  String get assistantPhotoUnreadable => 'Бұл фотодағы мәтінді оқу мүмкін болмады. Жақсы жарықта қайта көріңіз.';
+
+  @override
+  String get assistantContinue => 'Жалғастыру';
+
+  @override
+  String get voiceLanguageTitle => 'Дауыс тілі';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Телефоныңыз бұл тілде тыңдай алмайды, сондықтан $language тілінде тыңдап тұр.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Өзгерту';
+
+  @override
+  String get assistantForgetWords => 'Үйренген сөздерді ұмыту';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara жазбаларыңыз үшін үйренген сөздерді ұмытады. Чаттар мен жазбалар сақталады.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Ұмыту';
+
+  @override
+  String get assistantForgetWordsDone => 'Үйренген сөздер ұмытылды';
 }

@@ -3466,5 +3466,54 @@
   "travelLicenceExpiresBeforeLeaving": "ໃບຂັບຂີ່ໝົດອາຍຸກ່ອນທ່ານອອກເດີນທາງ",
   "travelTravellersCount": "{count, plural, =1{ຜູ້ເດີນທາງ 1 ຄົນ} other{ຜູ້ເດີນທາງ {count} ຄົນ}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} ໝົດອາຍຸ {date}, {days, plural, =1{1 ມື້ກ່ອນທ່ານອອກເດີນທາງ} other{{days} ມື້ກ່ອນທ່ານອອກເດີນທາງ}}.",
-  "assistantVoiceReady": "ຢຸດຟັງແລ້ວ"
+  "assistantVoiceReady": "ຢຸດຟັງແລ້ວ",
+  "assistantPhotoButton": "ຮູບພາບເອກະສານ",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "ນີ້ແມ່ນຮູບພາບເອກະສານ",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "ບໍ່ສາມາດອ່ານຂໍ້ຄວາມໃນຮູບນີ້ໄດ້. ລອງໃໝ່ໃນແສງສະຫວ່າງດີ.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "ສືບຕໍ່",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "ພາສາສຽງ",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "ໂທລະສັບຂອງທ່ານບໍ່ສາມາດຟັງເປັນພາສານີ້ໄດ້, ຈຶ່ງກຳລັງຟັງເປັນ{language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "ປ່ຽນ",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "ລືມຄຳທີ່ຮຽນມາ",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara ຈະລືມຄຳທີ່ມັນຮຽນສຳລັບບັນທຶກຂອງທ່ານ. ການສົນທະນາ ແລະ ບັນທຶກຂອງທ່ານຍັງຢູ່.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "ລືມ",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "ລືມຄຳທີ່ຮຽນມາແລ້ວ",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

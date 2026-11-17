@@ -3460,5 +3460,54 @@
   "travelLicenceExpiresBeforeLeaving": "گواهینامه رانندگی پیش از سفر منقضی می‌شود",
   "travelTravellersCount": "{count, plural, =1{۱ مسافر} other{{count} مسافر}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} در {date} منقضی می‌شود، {days, plural, =1{۱ روز پیش از حرکت شما} other{{days} روز پیش از حرکت شما}}.",
-  "assistantVoiceReady": "شنیدن متوقف شد"
+  "assistantVoiceReady": "شنیدن متوقف شد",
+  "assistantPhotoButton": "عکس یک سند",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "این عکس یک سند است",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "متن این عکس خوانده نشد. در نور خوب دوباره امتحان کنید.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "ادامه",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "زبان صدا",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "تلفن شما نمی‌تواند به این زبان گوش دهد، پس به {language} گوش می‌دهد.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "تغییر",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "فراموش کردن واژه‌های آموخته",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara واژه‌هایی را که برای سوابق شما آموخته فراموش می‌کند. گفتگوها و سوابق شما می‌مانند.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "فراموش کن",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "واژه‌های آموخته فراموش شدند",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

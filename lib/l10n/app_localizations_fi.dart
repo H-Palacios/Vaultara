@@ -9111,4 +9111,39 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Kuuntelu päättyi';
+
+  @override
+  String get assistantPhotoButton => 'Kuva asiakirjasta';
+
+  @override
+  String get assistantPhotoMessage => 'Tässä on kuva asiakirjasta';
+
+  @override
+  String get assistantPhotoUnreadable => 'Tämän kuvan tekstiä ei voitu lukea. Yritä uudelleen hyvässä valossa.';
+
+  @override
+  String get assistantContinue => 'Jatka';
+
+  @override
+  String get voiceLanguageTitle => 'Puheen kieli';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Puhelin ei osaa kuunnella tällä kielellä, joten se kuuntelee kielellä $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Vaihda';
+
+  @override
+  String get assistantForgetWords => 'Unohda opitut sanat';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara unohtaa sanat, jotka se oppi tietueitasi varten. Keskustelut ja tietueet säilyvät.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Unohda';
+
+  @override
+  String get assistantForgetWordsDone => 'Opitut sanat unohdettu';
 }

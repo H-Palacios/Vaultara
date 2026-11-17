@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "तपाईं जानुअघि सवारी चालक अनुमति पत्रको म्याद सकिन्छ",
   "travelTravellersCount": "{count, plural, =1{1 यात्री} other{{count} यात्री}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} को म्याद {date} मा सकिन्छ, {days, plural, =1{तपाईं जानुभन्दा 1 दिनअघि} other{तपाईं जानुभन्दा {days} दिनअघि}}।",
-  "assistantVoiceReady": "सुन्न रोकियो"
+  "assistantVoiceReady": "सुन्न रोकियो",
+  "assistantPhotoButton": "कागजातको फोटो",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "यो कागजातको फोटो हो",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "यो फोटोको पाठ पढ्न सकिएन। राम्रो उज्यालोमा फेरि प्रयास गर्नुहोस्।",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "जारी राख्नुहोस्",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "आवाजको भाषा",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "तपाईंको फोनले यो भाषामा सुन्न सक्दैन, त्यसैले {language} मा सुनिरहेको छ।",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "परिवर्तन",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "सिकेका शब्दहरू बिर्सनुहोस्",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara ले तपाईंका रेकर्डका लागि सिकेका शब्दहरू बिर्सनेछ। तपाईंका च्याट र रेकर्ड रहनेछन्।",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "बिर्सनुहोस्",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "सिकेका शब्दहरू बिर्सिए",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

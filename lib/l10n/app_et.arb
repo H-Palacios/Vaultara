@@ -3613,5 +3613,54 @@
   "travelLicenceExpiresBeforeLeaving": "Juhiluba aegub enne sinu lahkumist",
   "travelTravellersCount": "{count, plural, =1{1 reisija} other{{count} reisijat}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} aegub {date}, {days, plural, =1{1 päev enne sinu lahkumist} other{{days} päeva enne sinu lahkumist}}.",
-  "assistantVoiceReady": "Kuulamine lõppes"
+  "assistantVoiceReady": "Kuulamine lõppes",
+  "assistantPhotoButton": "Dokumendi foto",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Siin on dokumendi foto",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Selle foto teksti ei õnnestunud lugeda. Proovi uuesti heas valguses.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Jätka",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Hääle keel",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefon ei oska selles keeles kuulata, seega kuulab see keeles {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Muuda",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Unusta õpitud sõnad",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara unustab sõnad, mille ta sinu kirjete jaoks õppis. Vestlused ja kirjed jäävad alles.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Unusta",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Õpitud sõnad unustatud",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

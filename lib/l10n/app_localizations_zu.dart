@@ -9107,4 +9107,39 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Kumisiwe ukulalela';
+
+  @override
+  String get assistantPhotoButton => 'Isithombe sedokhumenti';
+
+  @override
+  String get assistantPhotoMessage => 'Nasi isithombe sedokhumenti';
+
+  @override
+  String get assistantPhotoUnreadable => 'Umbhalo osesithombeni asikwazanga ukufundwa. Zama futhi ekukhanyeni okuhle.';
+
+  @override
+  String get assistantContinue => 'Qhubeka';
+
+  @override
+  String get voiceLanguageTitle => 'Ulimi lwezwi';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Ifoni yakho ayikwazi ukulalela ngalolu limi, ngakho ilalela nge-$language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Shintsha';
+
+  @override
+  String get assistantForgetWords => 'Khohlwa amagama afundiwe';
+
+  @override
+  String get assistantForgetWordsBody => 'I-Ask Vaultara izokhohlwa amagama eyawafundela amarekhodi akho. Izingxoxo namarekhodi akho ayahlala.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Khohlwa';
+
+  @override
+  String get assistantForgetWordsDone => 'Amagama afundiwe akhohlwiwe';
 }

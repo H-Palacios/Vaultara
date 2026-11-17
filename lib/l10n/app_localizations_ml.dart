@@ -9107,4 +9107,39 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'കേൾക്കുന്നത് നിർത്തി';
+
+  @override
+  String get assistantPhotoButton => 'ഒരു രേഖയുടെ ഫോട്ടോ';
+
+  @override
+  String get assistantPhotoMessage => 'ഇതാ ഒരു രേഖയുടെ ഫോട്ടോ';
+
+  @override
+  String get assistantPhotoUnreadable => 'ഈ ഫോട്ടോയിലെ എഴുത്ത് വായിക്കാനായില്ല. നല്ല വെളിച്ചത്തിൽ വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get assistantContinue => 'തുടരുക';
+
+  @override
+  String get voiceLanguageTitle => 'ശബ്ദ ഭാഷ';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'നിങ്ങളുടെ ഫോണിന് ഈ ഭാഷയിൽ കേൾക്കാനാവില്ല, അതിനാൽ അത് $language ഭാഷയിൽ കേൾക്കുന്നു.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'മാറ്റുക';
+
+  @override
+  String get assistantForgetWords => 'പഠിച്ച വാക്കുകൾ മറക്കുക';
+
+  @override
+  String get assistantForgetWordsBody => 'നിങ്ങളുടെ രേഖകൾക്കായി പഠിച്ച വാക്കുകൾ Ask Vaultara മറക്കും. ചാറ്റുകളും രേഖകളും നിലനിൽക്കും.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'മറക്കുക';
+
+  @override
+  String get assistantForgetWordsDone => 'പഠിച്ച വാക്കുകൾ മറന്നു';
 }

@@ -9285,4 +9285,39 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Słuchanie zatrzymane';
+
+  @override
+  String get assistantPhotoButton => 'Zdjęcie dokumentu';
+
+  @override
+  String get assistantPhotoMessage => 'Oto zdjęcie dokumentu';
+
+  @override
+  String get assistantPhotoUnreadable => 'Nie udało się odczytać tekstu na tym zdjęciu. Spróbuj ponownie przy dobrym świetle.';
+
+  @override
+  String get assistantContinue => 'Kontynuuj';
+
+  @override
+  String get voiceLanguageTitle => 'Język głosu';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefon nie potrafi słuchać w tym języku, więc słucha w języku $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Zmień';
+
+  @override
+  String get assistantForgetWords => 'Zapomnij nauczone słowa';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara zapomni słowa, których nauczył się dla Twoich wpisów. Czaty i wpisy pozostaną.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Zapomnij';
+
+  @override
+  String get assistantForgetWordsDone => 'Nauczone słowa zapomniane';
 }

@@ -3440,5 +3440,54 @@
   "travelLicenceExpiresBeforeLeaving": "Ilayisense yokushayela iphelelwa ngaphambi kokuthi uhambe",
   "travelTravellersCount": "{count, plural, =1{Umhambi o-1} other{Abahambi abangu-{count}}}",
   "travelDetailExpiresDaysBeforeLeaving": "I-{name} iphelelwa ngo-{date}, {days, plural, =1{usuku olu-1 ngaphambi kokuthi uhambe} other{izinsuku ezingu-{days} ngaphambi kokuthi uhambe}}.",
-  "assistantVoiceReady": "Kumisiwe ukulalela"
+  "assistantVoiceReady": "Kumisiwe ukulalela",
+  "assistantPhotoButton": "Isithombe sedokhumenti",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Nasi isithombe sedokhumenti",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Umbhalo osesithombeni asikwazanga ukufundwa. Zama futhi ekukhanyeni okuhle.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Qhubeka",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Ulimi lwezwi",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Ifoni yakho ayikwazi ukulalela ngalolu limi, ngakho ilalela nge-{language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Shintsha",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Khohlwa amagama afundiwe",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "I-Ask Vaultara izokhohlwa amagama eyawafundela amarekhodi akho. Izingxoxo namarekhodi akho ayahlala.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Khohlwa",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Amagama afundiwe akhohlwiwe",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

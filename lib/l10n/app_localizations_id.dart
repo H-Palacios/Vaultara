@@ -9040,4 +9040,39 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Berhenti mendengarkan';
+
+  @override
+  String get assistantPhotoButton => 'Foto dokumen';
+
+  @override
+  String get assistantPhotoMessage => 'Ini foto dokumen';
+
+  @override
+  String get assistantPhotoUnreadable => 'Teks pada foto ini tidak dapat dibaca. Coba lagi dengan cahaya yang baik.';
+
+  @override
+  String get assistantContinue => 'Lanjutkan';
+
+  @override
+  String get voiceLanguageTitle => 'Bahasa suara';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Ponsel Anda tidak dapat mendengarkan dalam bahasa ini, jadi mendengarkan dalam $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Ubah';
+
+  @override
+  String get assistantForgetWords => 'Lupakan kata yang dipelajari';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara akan melupakan kata yang dipelajarinya untuk catatan Anda. Obrolan dan catatan Anda tetap ada.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Lupakan';
+
+  @override
+  String get assistantForgetWordsDone => 'Kata yang dipelajari telah dilupakan';
 }

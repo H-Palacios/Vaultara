@@ -9033,4 +9033,39 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => '聞き取りを停止しました';
+
+  @override
+  String get assistantPhotoButton => '書類の写真';
+
+  @override
+  String get assistantPhotoMessage => '書類の写真です';
+
+  @override
+  String get assistantPhotoUnreadable => 'この写真の文字を読み取れませんでした。明るい場所でもう一度お試しください。';
+
+  @override
+  String get assistantContinue => '続ける';
+
+  @override
+  String get voiceLanguageTitle => '音声の言語';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'お使いの電話はこの言語で聞き取りできないため、$languageで聞き取っています。';
+  }
+
+  @override
+  String get voiceLanguageChange => '変更';
+
+  @override
+  String get assistantForgetWords => '覚えた言葉を忘れる';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultaraが記録のために覚えた言葉を忘れます。チャットと記録は残ります。';
+
+  @override
+  String get assistantForgetWordsConfirm => '忘れる';
+
+  @override
+  String get assistantForgetWordsDone => '覚えた言葉を忘れました';
 }

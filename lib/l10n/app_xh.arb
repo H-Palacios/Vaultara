@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Ilayisensi yokuqhuba iphelelwa ngaphambi kokuba uhambe",
   "travelTravellersCount": "{count, plural, =1{Umhambi o-1} other{Abahambi aba-{count}}}",
   "travelDetailExpiresDaysBeforeLeaving": "I-{name} iphelelwa ngomhla we-{date}, {days, plural, =1{usuku olu-1 ngaphambi kokuba uhambe} other{iintsuku ezi-{days} ngaphambi kokuba uhambe}}.",
-  "assistantVoiceReady": "Kuyekiwe ukumamela"
+  "assistantVoiceReady": "Kuyekiwe ukumamela",
+  "assistantPhotoButton": "Ifoto yoxwebhu",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Nantsi ifoto yoxwebhu",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Umbhalo okule foto awukwazanga ukufundwa. Zama kwakhona ekukhanyeni okuhle.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Qhubeka",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Ulwimi lwelizwi",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Ifowuni yakho ayikwazi ukumamela ngolu lwimi, ngoko imamela nge{language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Tshintsha",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Libala amagama afundiweyo",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "I-Ask Vaultara iza kulibala amagama eyawafundayo ngeerekhodi zakho. Iincoko neerekhodi zakho ziyahlala.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Libala",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Amagama afundiweyo alityelwe",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

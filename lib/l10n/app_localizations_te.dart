@@ -9107,4 +9107,39 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'వినడం ఆగిపోయింది';
+
+  @override
+  String get assistantPhotoButton => 'పత్రం ఫోటో';
+
+  @override
+  String get assistantPhotoMessage => 'ఇదిగో పత్రం ఫోటో';
+
+  @override
+  String get assistantPhotoUnreadable => 'ఈ ఫోటోలోని వచనాన్ని చదవలేకపోయాం. మంచి వెలుతురులో మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get assistantContinue => 'కొనసాగించు';
+
+  @override
+  String get voiceLanguageTitle => 'వాయిస్ భాష';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'మీ ఫోన్ ఈ భాషలో వినలేదు, కాబట్టి అది $languageలో వింటోంది.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'మార్చు';
+
+  @override
+  String get assistantForgetWords => 'నేర్చుకున్న పదాలను మరచిపో';
+
+  @override
+  String get assistantForgetWordsBody => 'మీ రికార్డుల కోసం నేర్చుకున్న పదాలను Ask Vaultara మరచిపోతుంది. మీ చాట్‌లు మరియు రికార్డులు ఉంటాయి.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'మరచిపో';
+
+  @override
+  String get assistantForgetWordsDone => 'నేర్చుకున్న పదాలు మరచిపోయాం';
 }

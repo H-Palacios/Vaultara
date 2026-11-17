@@ -9107,4 +9107,39 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'A hallgatás leállt';
+
+  @override
+  String get assistantPhotoButton => 'Fotó egy dokumentumról';
+
+  @override
+  String get assistantPhotoMessage => 'Itt egy fotó egy dokumentumról';
+
+  @override
+  String get assistantPhotoUnreadable => 'A fotón lévő szöveget nem sikerült elolvasni. Próbáld újra jó fényben.';
+
+  @override
+  String get assistantContinue => 'Tovább';
+
+  @override
+  String get voiceLanguageTitle => 'Hang nyelve';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'A telefonod ezen a nyelven nem tud figyelni, ezért $language nyelven figyel.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Módosítás';
+
+  @override
+  String get assistantForgetWords => 'Tanult szavak elfelejtése';
+
+  @override
+  String get assistantForgetWordsBody => 'Az Ask Vaultara elfelejti a bejegyzéseidhez tanult szavakat. A csevegéseid és bejegyzéseid megmaradnak.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Elfelejtés';
+
+  @override
+  String get assistantForgetWordsDone => 'Tanult szavak elfelejtve';
 }

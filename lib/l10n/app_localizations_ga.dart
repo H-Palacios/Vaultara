@@ -9309,4 +9309,39 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Stopadh ag éisteacht';
+
+  @override
+  String get assistantPhotoButton => 'Grianghraf de cháipéis';
+
+  @override
+  String get assistantPhotoMessage => 'Seo grianghraf de cháipéis';
+
+  @override
+  String get assistantPhotoUnreadable => 'Níorbh fhéidir an téacs ar an ngrianghraf seo a léamh. Bain triail eile as i solas maith.';
+
+  @override
+  String get assistantContinue => 'Lean ar aghaidh';
+
+  @override
+  String get voiceLanguageTitle => 'Teanga an ghutha';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Ní féidir le do ghuthán éisteacht sa teanga seo, mar sin tá sé ag éisteacht i $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Athraigh';
+
+  @override
+  String get assistantForgetWords => 'Déan dearmad ar fhocail foghlamtha';
+
+  @override
+  String get assistantForgetWordsBody => 'Déanfaidh Ask Vaultara dearmad ar na focail a d\'fhoghlaim sé do do thaifid. Fanann do chomhráite agus do thaifid.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Déan dearmad';
+
+  @override
+  String get assistantForgetWordsDone => 'Rinneadh dearmad ar na focail foghlamtha';
 }

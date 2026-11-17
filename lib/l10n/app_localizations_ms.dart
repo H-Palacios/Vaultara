@@ -9045,4 +9045,39 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Berhenti mendengar';
+
+  @override
+  String get assistantPhotoButton => 'Foto dokumen';
+
+  @override
+  String get assistantPhotoMessage => 'Ini foto dokumen';
+
+  @override
+  String get assistantPhotoUnreadable => 'Teks pada foto ini tidak dapat dibaca. Cuba lagi dalam cahaya yang baik.';
+
+  @override
+  String get assistantContinue => 'Teruskan';
+
+  @override
+  String get voiceLanguageTitle => 'Bahasa suara';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefon anda tidak boleh mendengar dalam bahasa ini, jadi ia mendengar dalam $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Tukar';
+
+  @override
+  String get assistantForgetWords => 'Lupakan perkataan yang dipelajari';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara akan melupakan perkataan yang dipelajarinya untuk rekod anda. Sembang dan rekod anda kekal.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Lupakan';
+
+  @override
+  String get assistantForgetWordsDone => 'Perkataan yang dipelajari telah dilupakan';
 }

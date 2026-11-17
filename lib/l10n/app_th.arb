@@ -3465,5 +3465,54 @@
   "travelLicenceExpiresBeforeLeaving": "ใบขับขี่หมดอายุก่อนคุณออกเดินทาง",
   "travelTravellersCount": "{count, plural, =1{ผู้เดินทาง 1 คน} other{ผู้เดินทาง {count} คน}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} หมดอายุ {date} {days, plural, =1{1 วันก่อนคุณออกเดินทาง} other{{days} วันก่อนคุณออกเดินทาง}}",
-  "assistantVoiceReady": "หยุดฟังแล้ว"
+  "assistantVoiceReady": "หยุดฟังแล้ว",
+  "assistantPhotoButton": "รูปถ่ายเอกสาร",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "นี่คือรูปถ่ายเอกสาร",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "อ่านข้อความในรูปนี้ไม่ได้ ลองอีกครั้งในที่ที่มีแสงสว่างดี",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "ดำเนินการต่อ",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "ภาษาเสียง",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "โทรศัพท์ของคุณฟังภาษานี้ไม่ได้ จึงฟังเป็นภาษา{language}",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "เปลี่ยน",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "ลืมคำที่เรียนรู้",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara จะลืมคำที่เรียนรู้สำหรับรายการของคุณ แชทและรายการของคุณยังอยู่",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "ลืม",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "ลืมคำที่เรียนรู้แล้ว",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

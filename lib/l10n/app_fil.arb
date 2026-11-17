@@ -3460,5 +3460,54 @@
   "travelLicenceExpiresBeforeLeaving": "Mag-e-expire ang lisensya sa pagmamaneho bago ka umalis",
   "travelTravellersCount": "{count, plural, =1{1 biyahero} other{{count} biyahero}}",
   "travelDetailExpiresDaysBeforeLeaving": "Mag-e-expire ang {name} sa {date}, {days, plural, =1{1 araw bago ka umalis} other{{days} araw bago ka umalis}}.",
-  "assistantVoiceReady": "Huminto na ang pakikinig"
+  "assistantVoiceReady": "Huminto na ang pakikinig",
+  "assistantPhotoButton": "Larawan ng dokumento",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Narito ang larawan ng dokumento",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Hindi mabasa ang teksto sa larawang ito. Subukang muli sa maliwanag na lugar.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Magpatuloy",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Wika ng boses",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Hindi makakinig ang iyong telepono sa wikang ito, kaya nakikinig ito sa {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Palitan",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Kalimutan ang mga natutunang salita",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Kakalimutan ng Ask Vaultara ang mga salitang natutunan nito para sa iyong mga record. Mananatili ang iyong mga chat at record.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Kalimutan",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Nakalimutan na ang mga natutunang salita",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

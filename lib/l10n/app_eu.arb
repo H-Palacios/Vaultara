@@ -3462,5 +3462,54 @@
   "travelLicenceExpiresBeforeLeaving": "Gidabaimena irten aurretik iraungitzen da",
   "travelTravellersCount": "{count, plural, =1{Bidaiari 1} other{{count} bidaiari}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} {date}(e)an iraungitzen da, {days, plural, =1{joan baino egun 1 lehenago} other{joan baino {days} egun lehenago}}.",
-  "assistantVoiceReady": "Entzuteari utzi diot"
+  "assistantVoiceReady": "Entzuteari utzi diot",
+  "assistantPhotoButton": "Dokumentu baten argazkia",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Hona hemen dokumentu baten argazkia",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Ezin izan da argazki honetako testua irakurri. Saiatu berriro argi onarekin.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Jarraitu",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Ahotsaren hizkuntza",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefonoak ezin du hizkuntza honetan entzun, beraz {language} hizkuntzan entzuten ari da.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Aldatu",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Ahaztu ikasitako hitzak",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultarak zure erregistroetarako ikasitako hitzak ahaztuko ditu. Txatak eta erregistroak geratzen dira.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Ahaztu",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Ikasitako hitzak ahaztu dira",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

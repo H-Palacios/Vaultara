@@ -9168,4 +9168,39 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'ההאזנה הופסקה';
+
+  @override
+  String get assistantPhotoButton => 'תמונה של מסמך';
+
+  @override
+  String get assistantPhotoMessage => 'הנה תמונה של מסמך';
+
+  @override
+  String get assistantPhotoUnreadable => 'לא ניתן היה לקרוא את הטקסט בתמונה הזו. נסו שוב בתאורה טובה.';
+
+  @override
+  String get assistantContinue => 'המשך';
+
+  @override
+  String get voiceLanguageTitle => 'שפת הקול';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'הטלפון לא יכול להקשיב בשפה הזו, ולכן הוא מקשיב ב$language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'שינוי';
+
+  @override
+  String get assistantForgetWords => 'שכח מילים שנלמדו';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ישכח את המילים שלמד עבור הרשומות שלך. הצ׳אטים והרשומות שלך נשארים.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'שכח';
+
+  @override
+  String get assistantForgetWordsDone => 'המילים שנלמדו נשכחו';
 }

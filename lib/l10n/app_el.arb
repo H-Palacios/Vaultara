@@ -3455,5 +3455,54 @@
   "travelLicenceExpiresBeforeLeaving": "Το δίπλωμα οδήγησης λήγει πριν φύγετε",
   "travelTravellersCount": "{count, plural, =1{1 ταξιδιώτης} other{{count} ταξιδιώτες}}",
   "travelDetailExpiresDaysBeforeLeaving": "Το στοιχείο {name} λήγει στις {date}, {days, plural, =1{1 ημέρα πριν φύγετε} other{{days} ημέρες πριν φύγετε}}.",
-  "assistantVoiceReady": "Η ακρόαση σταμάτησε"
+  "assistantVoiceReady": "Η ακρόαση σταμάτησε",
+  "assistantPhotoButton": "Φωτογραφία εγγράφου",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Ορίστε μια φωτογραφία εγγράφου",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Δεν ήταν δυνατή η ανάγνωση του κειμένου σε αυτή τη φωτογραφία. Δοκιμάστε ξανά με καλό φωτισμό.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Συνέχεια",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Γλώσσα φωνής",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Το τηλέφωνό σας δεν μπορεί να ακούσει σε αυτή τη γλώσσα, οπότε ακούει στα {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Αλλαγή",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Ξέχασε τις λέξεις που έμαθε",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Το Ask Vaultara θα ξεχάσει τις λέξεις που έμαθε για τις εγγραφές σας. Οι συνομιλίες και οι εγγραφές σας μένουν.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Ξέχασε",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Οι λέξεις ξεχάστηκαν",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

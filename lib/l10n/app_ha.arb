@@ -3460,5 +3460,54 @@
   "travelLicenceExpiresBeforeLeaving": "Lasin tuƙi zai ƙare kafin ka tafi",
   "travelTravellersCount": "{count, plural, =1{Matafiyi 1} other{Matafiya {count}}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} zai ƙare a {date}, {days, plural, =1{kwana 1 kafin ka tashi} other{kwanaki {days} kafin ka tashi}}.",
-  "assistantVoiceReady": "An daina saurara"
+  "assistantVoiceReady": "An daina saurara",
+  "assistantPhotoButton": "Hoton takarda",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Ga hoton takarda",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Ba a iya karanta rubutun da ke wannan hoton ba. Sake gwadawa a haske mai kyau.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Ci gaba",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Harshen murya",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Wayarka ba za ta iya saurara a wannan harshen ba, don haka tana saurara a {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Canja",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Manta kalmomin da aka koya",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara zai manta kalmomin da ya koya don bayananka. Hirarraki da bayananka za su kasance.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Manta",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "An manta kalmomin da aka koya",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

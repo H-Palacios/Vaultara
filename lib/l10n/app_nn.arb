@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Førarkortet går ut før du reiser",
   "travelTravellersCount": "{count, plural, =1{1 reisande} other{{count} reisande}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} går ut {date}, {days, plural, =1{1 dag før du reiser} other{{days} dagar før du reiser}}.",
-  "assistantVoiceReady": "Lyttar ikkje lenger"
+  "assistantVoiceReady": "Lyttar ikkje lenger",
+  "assistantPhotoButton": "Bilete av eit dokument",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Her er eit bilete av eit dokument",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Teksten på dette biletet kunne ikkje lesast. Prøv igjen i godt lys.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Hald fram",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Talespråk",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefonen kan ikkje lytte på dette språket, så han lyttar på {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Endre",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Gløym lærte ord",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara gløymer orda han har lært for oppføringane dine. Samtalane og oppføringane dine blir verande.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Gløym",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Lærte ord gløymde",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

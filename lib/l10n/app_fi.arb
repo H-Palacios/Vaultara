@@ -3466,5 +3466,54 @@
   "travelLicenceExpiresBeforeLeaving": "Ajokortti vanhenee ennen lähtöäsi",
   "travelTravellersCount": "{count, plural, =1{1 matkustaja} other{{count} matkustajaa}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} vanhenee {date}, {days, plural, =1{1 päivä ennen lähtöäsi} other{{days} päivää ennen lähtöäsi}}.",
-  "assistantVoiceReady": "Kuuntelu päättyi"
+  "assistantVoiceReady": "Kuuntelu päättyi",
+  "assistantPhotoButton": "Kuva asiakirjasta",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Tässä on kuva asiakirjasta",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Tämän kuvan tekstiä ei voitu lukea. Yritä uudelleen hyvässä valossa.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Jatka",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Puheen kieli",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Puhelin ei osaa kuunnella tällä kielellä, joten se kuuntelee kielellä {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Vaihda",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Unohda opitut sanat",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara unohtaa sanat, jotka se oppi tietueitasi varten. Keskustelut ja tietueet säilyvät.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Unohda",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Opitut sanat unohdettu",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

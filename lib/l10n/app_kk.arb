@@ -3466,5 +3466,54 @@
   "travelLicenceExpiresBeforeLeaving": "Жүргізуші куәлігінің мерзімі жолға шыққаныңызша бітеді",
   "travelTravellersCount": "{count, plural, =1{1 саяхатшы} other{{count} саяхатшы}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} мерзімі {date} бітеді, {days, plural, =1{жолға шығудан 1 күн бұрын} other{жолға шығудан {days} күн бұрын}}.",
-  "assistantVoiceReady": "Тыңдау тоқтады"
+  "assistantVoiceReady": "Тыңдау тоқтады",
+  "assistantPhotoButton": "Құжаттың фотосы",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Міне, құжаттың фотосы",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Бұл фотодағы мәтінді оқу мүмкін болмады. Жақсы жарықта қайта көріңіз.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Жалғастыру",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Дауыс тілі",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Телефоныңыз бұл тілде тыңдай алмайды, сондықтан {language} тілінде тыңдап тұр.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Өзгерту",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Үйренген сөздерді ұмыту",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara жазбаларыңыз үшін үйренген сөздерді ұмытады. Чаттар мен жазбалар сақталады.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Ұмыту",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Үйренген сөздер ұмытылды",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

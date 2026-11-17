@@ -9262,4 +9262,39 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Klausymas sustabdytas';
+
+  @override
+  String get assistantPhotoButton => 'Dokumento nuotrauka';
+
+  @override
+  String get assistantPhotoMessage => 'Štai dokumento nuotrauka';
+
+  @override
+  String get assistantPhotoUnreadable => 'Šios nuotraukos teksto nepavyko perskaityti. Bandykite dar kartą esant geram apšvietimui.';
+
+  @override
+  String get assistantContinue => 'Tęsti';
+
+  @override
+  String get voiceLanguageTitle => 'Balso kalba';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefonas negali klausytis šia kalba, todėl klausosi kalba $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Keisti';
+
+  @override
+  String get assistantForgetWords => 'Pamiršti išmoktus žodžius';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara pamirš žodžius, kuriuos išmoko jūsų įrašams. Pokalbiai ir įrašai lieka.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Pamiršti';
+
+  @override
+  String get assistantForgetWordsDone => 'Išmokti žodžiai pamiršti';
 }

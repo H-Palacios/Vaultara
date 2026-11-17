@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Sürücü belgesinin süresi yola çıkmadan önce doluyor",
   "travelTravellersCount": "{count, plural, =1{1 yolcu} other{{count} yolcu}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} süresi {date} tarihinde, {days, plural, =1{yola çıkmadan 1 gün önce} other{yola çıkmadan {days} gün önce}} doluyor.",
-  "assistantVoiceReady": "Dinleme durdu"
+  "assistantVoiceReady": "Dinleme durdu",
+  "assistantPhotoButton": "Belge fotoğrafı",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "İşte bir belge fotoğrafı",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Bu fotoğraftaki metin okunamadı. İyi ışıkta tekrar deneyin.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Devam et",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Ses dili",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefonunuz bu dilde dinleyemiyor, bu yüzden {language} dilinde dinliyor.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Değiştir",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Öğrenilen kelimeleri unut",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara kayıtlarınız için öğrendiği kelimeleri unutacak. Sohbetleriniz ve kayıtlarınız kalır.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Unut",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Öğrenilen kelimeler unutuldu",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

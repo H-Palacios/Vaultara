@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Permisul de conducere expiră înainte să pleci",
   "travelTravellersCount": "{count, plural, =1{1 călător} few{{count} călători} other{{count} de călători}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} expiră pe {date}, {days, plural, =1{cu 1 zi înainte de plecare} few{cu {days} zile înainte de plecare} other{cu {days} de zile înainte de plecare}}.",
-  "assistantVoiceReady": "Ascultarea s-a oprit"
+  "assistantVoiceReady": "Ascultarea s-a oprit",
+  "assistantPhotoButton": "Fotografia unui document",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Iată o fotografie a unui document",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Textul din această fotografie nu a putut fi citit. Încearcă din nou la lumină bună.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Continuă",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Limba vocii",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefonul nu poate asculta în această limbă, așa că ascultă în {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Schimbă",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Uită cuvintele învățate",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara va uita cuvintele învățate pentru înregistrările tale. Conversațiile și înregistrările rămân.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Uită",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Cuvintele învățate au fost uitate",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

@@ -9107,4 +9107,39 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'ऐकणे थांबले';
+
+  @override
+  String get assistantPhotoButton => 'दस्तऐवजाचा फोटो';
+
+  @override
+  String get assistantPhotoMessage => 'हा दस्तऐवजाचा फोटो आहे';
+
+  @override
+  String get assistantPhotoUnreadable => 'या फोटोतील मजकूर वाचता आला नाही. चांगल्या प्रकाशात पुन्हा प्रयत्न करा.';
+
+  @override
+  String get assistantContinue => 'सुरू ठेवा';
+
+  @override
+  String get voiceLanguageTitle => 'आवाजाची भाषा';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'तुमचा फोन या भाषेत ऐकू शकत नाही, म्हणून तो $language मध्ये ऐकत आहे.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'बदला';
+
+  @override
+  String get assistantForgetWords => 'शिकलेले शब्द विसरा';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara तुमच्या नोंदींसाठी शिकलेले शब्द विसरेल. तुमच्या चॅट आणि नोंदी राहतील.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'विसरा';
+
+  @override
+  String get assistantForgetWordsDone => 'शिकलेले शब्द विसरले';
 }

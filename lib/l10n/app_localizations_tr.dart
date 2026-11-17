@@ -9107,4 +9107,39 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Dinleme durdu';
+
+  @override
+  String get assistantPhotoButton => 'Belge fotoğrafı';
+
+  @override
+  String get assistantPhotoMessage => 'İşte bir belge fotoğrafı';
+
+  @override
+  String get assistantPhotoUnreadable => 'Bu fotoğraftaki metin okunamadı. İyi ışıkta tekrar deneyin.';
+
+  @override
+  String get assistantContinue => 'Devam et';
+
+  @override
+  String get voiceLanguageTitle => 'Ses dili';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefonunuz bu dilde dinleyemiyor, bu yüzden $language dilinde dinliyor.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Değiştir';
+
+  @override
+  String get assistantForgetWords => 'Öğrenilen kelimeleri unut';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara kayıtlarınız için öğrendiği kelimeleri unutacak. Sohbetleriniz ve kayıtlarınız kalır.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Unut';
+
+  @override
+  String get assistantForgetWordsDone => 'Öğrenilen kelimeler unutuldu';
 }

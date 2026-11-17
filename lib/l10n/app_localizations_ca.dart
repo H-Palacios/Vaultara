@@ -9112,4 +9112,39 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Ja no escolto';
+
+  @override
+  String get assistantPhotoButton => 'Foto d\'un document';
+
+  @override
+  String get assistantPhotoMessage => 'Aquí tens una foto d\'un document';
+
+  @override
+  String get assistantPhotoUnreadable => 'No s\'ha pogut llegir el text d\'aquesta foto. Torna-ho a provar amb bona llum.';
+
+  @override
+  String get assistantContinue => 'Continua';
+
+  @override
+  String get voiceLanguageTitle => 'Idioma de veu';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'El telèfon no pot escoltar en aquest idioma, així que escolta en $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Canvia';
+
+  @override
+  String get assistantForgetWords => 'Oblida les paraules apreses';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara oblidarà les paraules que ha après per als teus registres. Els xats i els registres es mantenen.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Oblida';
+
+  @override
+  String get assistantForgetWordsDone => 'Paraules apreses oblidades';
 }

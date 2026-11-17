@@ -9107,4 +9107,39 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'ማዳመጥ ቆሟል';
+
+  @override
+  String get assistantPhotoButton => 'የሰነድ ፎቶ';
+
+  @override
+  String get assistantPhotoMessage => 'የሰነድ ፎቶ ይኸውና';
+
+  @override
+  String get assistantPhotoUnreadable => 'በዚህ ፎቶ ላይ ያለው ጽሑፍ ሊነበብ አልቻለም። በጥሩ ብርሃን እንደገና ይሞክሩ።';
+
+  @override
+  String get assistantContinue => 'ቀጥል';
+
+  @override
+  String get voiceLanguageTitle => 'የድምፅ ቋንቋ';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'ስልክዎ በዚህ ቋንቋ ማዳመጥ አይችልም፣ ስለዚህ በ$language እያዳመጠ ነው።';
+  }
+
+  @override
+  String get voiceLanguageChange => 'ቀይር';
+
+  @override
+  String get assistantForgetWords => 'የተማሩ ቃላትን እርሳ';
+
+  @override
+  String get assistantForgetWordsBody => 'Vaultaraን ይጠይቁ ለመዝገቦችዎ የተማራቸውን ቃላት ይረሳል። ውይይቶችዎ እና መዝገቦችዎ ይቆያሉ።';
+
+  @override
+  String get assistantForgetWordsConfirm => 'እርሳ';
+
+  @override
+  String get assistantForgetWordsDone => 'የተማሩ ቃላት ተረስተዋል';
 }

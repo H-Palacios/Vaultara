@@ -9360,4 +9360,39 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'توقف الاستماع';
+
+  @override
+  String get assistantPhotoButton => 'صورة مستند';
+
+  @override
+  String get assistantPhotoMessage => 'هذه صورة مستند';
+
+  @override
+  String get assistantPhotoUnreadable => 'تعذّرت قراءة النص في هذه الصورة. حاول مرة أخرى في إضاءة جيدة.';
+
+  @override
+  String get assistantContinue => 'متابعة';
+
+  @override
+  String get voiceLanguageTitle => 'لغة الصوت';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'لا يستطيع هاتفك الاستماع بهذه اللغة، لذا يستمع بـ$language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'تغيير';
+
+  @override
+  String get assistantForgetWords => 'نسيان الكلمات المتعلَّمة';
+
+  @override
+  String get assistantForgetWordsBody => 'سينسى Ask Vaultara الكلمات التي تعلّمها لسجلاتك. تبقى محادثاتك وسجلاتك.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'نسيان';
+
+  @override
+  String get assistantForgetWordsDone => 'تم نسيان الكلمات المتعلَّمة';
 }

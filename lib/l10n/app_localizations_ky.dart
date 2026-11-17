@@ -9107,4 +9107,39 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Угуу токтоду';
+
+  @override
+  String get assistantPhotoButton => 'Документтин сүрөтү';
+
+  @override
+  String get assistantPhotoMessage => 'Мына, документтин сүрөтү';
+
+  @override
+  String get assistantPhotoUnreadable => 'Бул сүрөттөгү текстти окуу мүмкүн болгон жок. Жакшы жарыкта кайра аракет кылыңыз.';
+
+  @override
+  String get assistantContinue => 'Улантуу';
+
+  @override
+  String get voiceLanguageTitle => 'Үн тили';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Телефонуңуз бул тилде уга албайт, ошондуктан $language тилинде угуп жатат.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Өзгөртүү';
+
+  @override
+  String get assistantForgetWords => 'Үйрөнгөн сөздөрдү унутуу';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara жазууларыңыз үчүн үйрөнгөн сөздөрдү унутат. Маектер жана жазуулар калат.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Унутуу';
+
+  @override
+  String get assistantForgetWordsDone => 'Үйрөнгөн сөздөр унутулду';
 }

@@ -9286,4 +9286,39 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Слушание остановлено';
+
+  @override
+  String get assistantPhotoButton => 'Фото документа';
+
+  @override
+  String get assistantPhotoMessage => 'Вот фото документа';
+
+  @override
+  String get assistantPhotoUnreadable => 'Не удалось прочитать текст на этом фото. Попробуйте ещё раз при хорошем освещении.';
+
+  @override
+  String get assistantContinue => 'Продолжить';
+
+  @override
+  String get voiceLanguageTitle => 'Язык голоса';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Телефон не умеет слушать на этом языке, поэтому слушает на языке $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Изменить';
+
+  @override
+  String get assistantForgetWords => 'Забыть выученные слова';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara забудет слова, которые выучил для ваших записей. Чаты и записи останутся.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Забыть';
+
+  @override
+  String get assistantForgetWordsDone => 'Выученные слова забыты';
 }

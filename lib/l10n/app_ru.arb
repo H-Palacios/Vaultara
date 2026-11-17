@@ -3423,5 +3423,54 @@
   "travelLicenceExpiresBeforeLeaving": "Водительское удостоверение истекает до отъезда",
   "travelTravellersCount": "{count, plural, =1{1 путешественник} few{{count} путешественника} many{{count} путешественников} other{{count} путешественника}}",
   "travelDetailExpiresDaysBeforeLeaving": "Срок «{name}» истекает {date}, {days, plural, =1{за 1 день до отъезда} few{за {days} дня до отъезда} many{за {days} дней до отъезда} other{за {days} дня до отъезда}}.",
-  "assistantVoiceReady": "Слушание остановлено"
+  "assistantVoiceReady": "Слушание остановлено",
+  "assistantPhotoButton": "Фото документа",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Вот фото документа",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Не удалось прочитать текст на этом фото. Попробуйте ещё раз при хорошем освещении.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Продолжить",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Язык голоса",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Телефон не умеет слушать на этом языке, поэтому слушает на языке {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Изменить",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Забыть выученные слова",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara забудет слова, которые выучил для ваших записей. Чаты и записи останутся.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Забыть",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Выученные слова забыты",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

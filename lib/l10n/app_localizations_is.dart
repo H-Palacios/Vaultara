@@ -9106,4 +9106,39 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Hlustun lokið';
+
+  @override
+  String get assistantPhotoButton => 'Mynd af skjali';
+
+  @override
+  String get assistantPhotoMessage => 'Hér er mynd af skjali';
+
+  @override
+  String get assistantPhotoUnreadable => 'Ekki tókst að lesa textann á þessari mynd. Reyndu aftur í góðri birtu.';
+
+  @override
+  String get assistantContinue => 'Áfram';
+
+  @override
+  String get voiceLanguageTitle => 'Raddtungumál';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Síminn getur ekki hlustað á þessu tungumáli, svo hann hlustar á $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Breyta';
+
+  @override
+  String get assistantForgetWords => 'Gleyma lærðum orðum';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara gleymir orðunum sem það lærði fyrir færslurnar þínar. Spjöll og færslur haldast.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Gleyma';
+
+  @override
+  String get assistantForgetWordsDone => 'Lærðum orðum gleymt';
 }

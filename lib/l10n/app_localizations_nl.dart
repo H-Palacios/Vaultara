@@ -9112,4 +9112,39 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Luisteren gestopt';
+
+  @override
+  String get assistantPhotoButton => 'Foto van een document';
+
+  @override
+  String get assistantPhotoMessage => 'Hier is een foto van een document';
+
+  @override
+  String get assistantPhotoUnreadable => 'De tekst op deze foto kon niet worden gelezen. Probeer het opnieuw bij goed licht.';
+
+  @override
+  String get assistantContinue => 'Doorgaan';
+
+  @override
+  String get voiceLanguageTitle => 'Spraaktaal';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Je telefoon kan niet in deze taal luisteren, dus luistert hij in het $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Wijzigen';
+
+  @override
+  String get assistantForgetWords => 'Geleerde woorden vergeten';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara vergeet de woorden die het voor je items heeft geleerd. Je chats en items blijven.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Vergeten';
+
+  @override
+  String get assistantForgetWordsDone => 'Geleerde woorden vergeten';
 }

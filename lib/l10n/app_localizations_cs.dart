@@ -9266,4 +9266,39 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Poslech skončil';
+
+  @override
+  String get assistantPhotoButton => 'Fotka dokumentu';
+
+  @override
+  String get assistantPhotoMessage => 'Tady je fotka dokumentu';
+
+  @override
+  String get assistantPhotoUnreadable => 'Text na této fotce se nepodařilo přečíst. Zkuste to znovu při dobrém světle.';
+
+  @override
+  String get assistantContinue => 'Pokračovat';
+
+  @override
+  String get voiceLanguageTitle => 'Jazyk hlasu';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefon v tomto jazyce poslouchat neumí, proto poslouchá v jazyce $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Změnit';
+
+  @override
+  String get assistantForgetWords => 'Zapomenout naučená slova';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara zapomene slova, která se naučil pro vaše záznamy. Chaty a záznamy zůstanou.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Zapomenout';
+
+  @override
+  String get assistantForgetWordsDone => 'Naučená slova zapomenuta';
 }

@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "د موټر چلولو جواز ستاسو له تګ مخکې پای ته رسېږي",
   "travelTravellersCount": "{count, plural, =1{1 مسافر} other{{count} مسافر}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} په {date} پای ته رسېږي، {days, plural, =1{ستاسو له تګ 1 ورځ مخکې} other{ستاسو له تګ {days} ورځې مخکې}}.",
-  "assistantVoiceReady": "اورېدل ودرېدل"
+  "assistantVoiceReady": "اورېدل ودرېدل",
+  "assistantPhotoButton": "د سند انځور",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "دا د سند انځور دی",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "د دې انځور متن ونه لوستل شو. په ښه رڼا کې بیا هڅه وکړئ.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "دوام ورکړئ",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "د غږ ژبه",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "ستاسو تلیفون په دې ژبه نشي اورېدلی، نو په {language} اوري.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "بدلول",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "زده شوې کلمې هېرې کړئ",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara به هغه کلمې هېرې کړي چې ستاسو د ریکارډونو لپاره یې زده کړې دي. ستاسو چټونه او ریکارډونه پاتې کېږي.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "هېرول",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "زده شوې کلمې هېرې شوې",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

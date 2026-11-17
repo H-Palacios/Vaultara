@@ -3486,5 +3486,54 @@
   "travelLicenceExpiresBeforeLeaving": "መንጃ ፈቃዱ ከመሄድዎ በፊት ያበቃል",
   "travelTravellersCount": "{count, plural, =1{1 ተጓዥ} other{{count} ተጓዦች}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} በ{date} ያበቃል፣ {days, plural, =1{ከመነሳትዎ 1 ቀን በፊት} other{ከመነሳትዎ {days} ቀናት በፊት}}።",
-  "assistantVoiceReady": "ማዳመጥ ቆሟል"
+  "assistantVoiceReady": "ማዳመጥ ቆሟል",
+  "assistantPhotoButton": "የሰነድ ፎቶ",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "የሰነድ ፎቶ ይኸውና",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "በዚህ ፎቶ ላይ ያለው ጽሑፍ ሊነበብ አልቻለም። በጥሩ ብርሃን እንደገና ይሞክሩ።",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "ቀጥል",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "የድምፅ ቋንቋ",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "ስልክዎ በዚህ ቋንቋ ማዳመጥ አይችልም፣ ስለዚህ በ{language} እያዳመጠ ነው።",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "ቀይር",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "የተማሩ ቃላትን እርሳ",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Vaultaraን ይጠይቁ ለመዝገቦችዎ የተማራቸውን ቃላት ይረሳል። ውይይቶችዎ እና መዝገቦችዎ ይቆያሉ።",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "እርሳ",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "የተማሩ ቃላት ተረስተዋል",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

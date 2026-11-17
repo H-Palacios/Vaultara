@@ -9107,4 +9107,39 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'கேட்பது நிறுத்தப்பட்டது';
+
+  @override
+  String get assistantPhotoButton => 'ஆவணத்தின் புகைப்படம்';
+
+  @override
+  String get assistantPhotoMessage => 'இதோ ஒரு ஆவணத்தின் புகைப்படம்';
+
+  @override
+  String get assistantPhotoUnreadable => 'இந்தப் புகைப்படத்தில் உள்ள உரையைப் படிக்க முடியவில்லை. நல்ல வெளிச்சத்தில் மீண்டும் முயலவும்.';
+
+  @override
+  String get assistantContinue => 'தொடர்க';
+
+  @override
+  String get voiceLanguageTitle => 'குரல் மொழி';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'உங்கள் ஃபோனால் இந்த மொழியில் கேட்க முடியாது, எனவே அது $language மொழியில் கேட்கிறது.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'மாற்று';
+
+  @override
+  String get assistantForgetWords => 'கற்ற சொற்களை மறக்கவும்';
+
+  @override
+  String get assistantForgetWordsBody => 'உங்கள் பதிவுகளுக்காக கற்ற சொற்களை Ask Vaultara மறந்துவிடும். உங்கள் உரையாடல்களும் பதிவுகளும் இருக்கும்.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'மறக்கவும்';
+
+  @override
+  String get assistantForgetWordsDone => 'கற்ற சொற்கள் மறக்கப்பட்டன';
 }

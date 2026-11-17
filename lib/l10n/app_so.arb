@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Ruqsadda wadistu way dhacaysaa ka hor intaadan bixin",
   "travelTravellersCount": "{count, plural, =1{1 socotore} other{{count} socotore}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} wuu dhacayaa {date}, {days, plural, =1{1 maalin ka hor intaadan bixin} other{{days} maalmood ka hor intaadan bixin}}.",
-  "assistantVoiceReady": "Dhegaysiga waa la joojiyay"
+  "assistantVoiceReady": "Dhegaysiga waa la joojiyay",
+  "assistantPhotoButton": "Sawirka dukumenti",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Waa kan sawirka dukumenti",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Qoraalka sawirkan lama akhrin karin. Mar kale isku day iftiin wanaagsan.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Sii wad",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Luqadda codka",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Taleefankaagu kuma dhegeysan karo luqaddan, sidaa darteed wuxuu ku dhegeysanayaa {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Beddel",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Iska illow erayada la bartay",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara wuxuu iloobi doonaa erayada uu u bartay diiwaannadaada. Wada-hadalladaada iyo diiwaannadaadu way sii jiraan.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Iska illow",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Erayada la bartay waa la illoobay",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

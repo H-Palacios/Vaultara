@@ -3486,5 +3486,54 @@
   "travelLicenceExpiresBeforeLeaving": "Rybewys verval voordat jy vertrek",
   "travelTravellersCount": "{count, plural, =1{1 reisiger} other{{count} reisigers}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} verval op {date}, {days, plural, =1{1 dag voordat jy vertrek} other{{days} dae voordat jy vertrek}}.",
-  "assistantVoiceReady": "Luister nie meer nie"
+  "assistantVoiceReady": "Luister nie meer nie",
+  "assistantPhotoButton": "Foto van 'n dokument",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Hier is 'n foto van 'n dokument",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Die teks op hierdie foto kon nie gelees word nie. Probeer weer in goeie lig.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Gaan voort",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Stemtaal",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Jou foon kan nie in hierdie taal luister nie, dus luister dit in {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Verander",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Vergeet geleerde woorde",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Vra Vaultara sal die woorde vergeet wat dit vir jou rekords geleer het. Jou geselsies en rekords bly.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Vergeet",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Geleerde woorde vergeet",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

@@ -9107,4 +9107,39 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Լսելը դադարեց';
+
+  @override
+  String get assistantPhotoButton => 'Փաստաթղթի լուսանկար';
+
+  @override
+  String get assistantPhotoMessage => 'Ահա փաստաթղթի լուսանկար';
+
+  @override
+  String get assistantPhotoUnreadable => 'Այս լուսանկարի տեքստը հնարավոր չեղավ կարդալ։ Կրկին փորձեք լավ լույսի տակ։';
+
+  @override
+  String get assistantContinue => 'Շարունակել';
+
+  @override
+  String get voiceLanguageTitle => 'Ձայնի լեզու';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Ձեր հեռախոսը չի կարող լսել այս լեզվով, ուստի լսում է $language լեզվով։';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Փոխել';
+
+  @override
+  String get assistantForgetWords => 'Մոռանալ սովորած բառերը';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara-ն կմոռանա ձեր գրառումների համար սովորած բառերը։ Ձեր զրույցներն ու գրառումները մնում են։';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Մոռանալ';
+
+  @override
+  String get assistantForgetWordsDone => 'Սովորած բառերը մոռացված են';
 }

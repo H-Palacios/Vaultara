@@ -9112,4 +9112,39 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Dëgjimi u ndal';
+
+  @override
+  String get assistantPhotoButton => 'Foto e një dokumenti';
+
+  @override
+  String get assistantPhotoMessage => 'Ja një foto e një dokumenti';
+
+  @override
+  String get assistantPhotoUnreadable => 'Teksti në këtë foto nuk u lexua dot. Provo përsëri në dritë të mirë.';
+
+  @override
+  String get assistantContinue => 'Vazhdo';
+
+  @override
+  String get voiceLanguageTitle => 'Gjuha e zërit';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefoni nuk mund të dëgjojë në këtë gjuhë, ndaj po dëgjon në $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Ndrysho';
+
+  @override
+  String get assistantForgetWords => 'Harro fjalët e mësuara';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara do të harrojë fjalët që mësoi për regjistrimet e tua. Bisedat dhe regjistrimet mbeten.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Harro';
+
+  @override
+  String get assistantForgetWordsDone => 'Fjalët e mësuara u harruan';
 }

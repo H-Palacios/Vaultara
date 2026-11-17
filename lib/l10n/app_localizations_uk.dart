@@ -9280,4 +9280,39 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Слухання зупинено';
+
+  @override
+  String get assistantPhotoButton => 'Фото документа';
+
+  @override
+  String get assistantPhotoMessage => 'Ось фото документа';
+
+  @override
+  String get assistantPhotoUnreadable => 'Не вдалося прочитати текст на цьому фото. Спробуйте ще раз за доброго освітлення.';
+
+  @override
+  String get assistantContinue => 'Продовжити';
+
+  @override
+  String get voiceLanguageTitle => 'Мова голосу';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Телефон не вміє слухати цією мовою, тому слухає мовою $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Змінити';
+
+  @override
+  String get assistantForgetWords => 'Забути вивчені слова';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara забуде слова, які вивчив для ваших записів. Чати й записи залишаться.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Забути';
+
+  @override
+  String get assistantForgetWordsDone => 'Вивчені слова забуто';
 }

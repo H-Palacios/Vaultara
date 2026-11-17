@@ -15492,6 +15492,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Stopped listening'**
   String get assistantVoiceReady;
+
+  /// Tooltip of the camera button in the Ask Vaultara text bar.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo of a document'**
+  String get assistantPhotoButton;
+
+  /// Chat message shown for the user after they take a photo of a document.
+  ///
+  /// In en, this message translates to:
+  /// **'Here is a photo of a document'**
+  String get assistantPhotoMessage;
+
+  /// Shown when no text could be read from the photo.
+  ///
+  /// In en, this message translates to:
+  /// **'The text on this photo could not be read. Try again in good light.'**
+  String get assistantPhotoUnreadable;
+
+  /// Button under an answer that stopped early; also sent as the message asking for the rest.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get assistantContinue;
+
+  /// Title of the list of languages voice typing can listen in.
+  ///
+  /// In en, this message translates to:
+  /// **'Voice language'**
+  String get voiceLanguageTitle;
+
+  /// Voice panel note; language is the name of the language the phone listens in instead.
+  ///
+  /// In en, this message translates to:
+  /// **'Your phone cannot listen in this language, so it is listening in {language}.'**
+  String voiceLanguageFallback(String language);
+
+  /// Button next to the voice language note.
+  ///
+  /// In en, this message translates to:
+  /// **'Change'**
+  String get voiceLanguageChange;
+
+  /// Chat history menu item and dialog title: clears the words Ask Vaultara learned.
+  ///
+  /// In en, this message translates to:
+  /// **'Forget learned words'**
+  String get assistantForgetWords;
+
+  /// Dialog text before clearing learned words.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Vaultara will forget the words it learned for your records. Your chats and records stay.'**
+  String get assistantForgetWordsBody;
+
+  /// Dialog button that clears learned words.
+  ///
+  /// In en, this message translates to:
+  /// **'Forget'**
+  String get assistantForgetWordsConfirm;
+
+  /// Snackbar after learned words were cleared.
+  ///
+  /// In en, this message translates to:
+  /// **'Learned words forgotten'**
+  String get assistantForgetWordsDone;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

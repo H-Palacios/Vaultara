@@ -9107,4 +9107,39 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'سننا رک گیا';
+
+  @override
+  String get assistantPhotoButton => 'دستاویز کی تصویر';
+
+  @override
+  String get assistantPhotoMessage => 'یہ رہی دستاویز کی تصویر';
+
+  @override
+  String get assistantPhotoUnreadable => 'اس تصویر کا متن پڑھا نہیں جا سکا۔ اچھی روشنی میں دوبارہ کوشش کریں۔';
+
+  @override
+  String get assistantContinue => 'جاری رکھیں';
+
+  @override
+  String get voiceLanguageTitle => 'آواز کی زبان';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'آپ کا فون اس زبان میں نہیں سن سکتا، اس لیے وہ $language میں سن رہا ہے۔';
+  }
+
+  @override
+  String get voiceLanguageChange => 'تبدیل کریں';
+
+  @override
+  String get assistantForgetWords => 'سیکھے گئے الفاظ بھول جائیں';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara آپ کے ریکارڈز کے لیے سیکھے گئے الفاظ بھول جائے گا۔ آپ کی چیٹس اور ریکارڈز باقی رہیں گے۔';
+
+  @override
+  String get assistantForgetWordsConfirm => 'بھول جائیں';
+
+  @override
+  String get assistantForgetWordsDone => 'سیکھے گئے الفاظ بھلا دیے گئے';
 }

@@ -9043,4 +9043,39 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'နားထောင်ခြင်း ရပ်ပြီ';
+
+  @override
+  String get assistantPhotoButton => 'စာရွက်စာတမ်း ဓာတ်ပုံ';
+
+  @override
+  String get assistantPhotoMessage => 'ဒါက စာရွက်စာတမ်း ဓာတ်ပုံပါ';
+
+  @override
+  String get assistantPhotoUnreadable => 'ဤဓာတ်ပုံပေါ်ရှိ စာသားကို ဖတ်၍မရပါ။ အလင်းကောင်းသောနေရာတွင် ထပ်စမ်းကြည့်ပါ။';
+
+  @override
+  String get assistantContinue => 'ဆက်လုပ်ရန်';
+
+  @override
+  String get voiceLanguageTitle => 'အသံဘာသာစကား';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'သင့်ဖုန်းသည် ဤဘာသာစကားဖြင့် နားမထောင်နိုင်သောကြောင့် $language ဖြင့် နားထောင်နေသည်။';
+  }
+
+  @override
+  String get voiceLanguageChange => 'ပြောင်းရန်';
+
+  @override
+  String get assistantForgetWords => 'သင်ယူထားသော စကားလုံးများကို မေ့ရန်';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara သည် သင့်မှတ်တမ်းများအတွက် သင်ယူထားသော စကားလုံးများကို မေ့ပါမည်။ သင့်ချတ်များနှင့် မှတ်တမ်းများ ကျန်ရှိမည်။';
+
+  @override
+  String get assistantForgetWordsConfirm => 'မေ့ရန်';
+
+  @override
+  String get assistantForgetWordsDone => 'သင်ယူထားသော စကားလုံးများကို မေ့ပြီးပါပြီ';
 }

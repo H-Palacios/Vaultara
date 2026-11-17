@@ -3441,5 +3441,54 @@
   "travelLicenceExpiresBeforeLeaving": "Körkortet går ut innan du reser",
   "travelTravellersCount": "{count, plural, =1{1 resenär} other{{count} resenärer}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} går ut {date}, {days, plural, =1{1 dag innan du reser} other{{days} dagar innan du reser}}.",
-  "assistantVoiceReady": "Lyssnar inte längre"
+  "assistantVoiceReady": "Lyssnar inte längre",
+  "assistantPhotoButton": "Foto av ett dokument",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Här är ett foto av ett dokument",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Texten på det här fotot kunde inte läsas. Försök igen i bra ljus.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Fortsätt",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Röstspråk",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefonen kan inte lyssna på det här språket, så den lyssnar på {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Ändra",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Glöm inlärda ord",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara glömmer orden den har lärt sig för dina poster. Dina chattar och poster finns kvar.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Glöm",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Inlärda ord glömda",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

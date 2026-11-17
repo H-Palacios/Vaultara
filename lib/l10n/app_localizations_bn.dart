@@ -9107,4 +9107,39 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'শোনা বন্ধ হয়েছে';
+
+  @override
+  String get assistantPhotoButton => 'একটি নথির ছবি';
+
+  @override
+  String get assistantPhotoMessage => 'এই যে একটি নথির ছবি';
+
+  @override
+  String get assistantPhotoUnreadable => 'এই ছবির লেখা পড়া যায়নি। ভালো আলোতে আবার চেষ্টা করুন।';
+
+  @override
+  String get assistantContinue => 'চালিয়ে যান';
+
+  @override
+  String get voiceLanguageTitle => 'ভয়েসের ভাষা';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'আপনার ফোন এই ভাষায় শুনতে পারে না, তাই এটি $language ভাষায় শুনছে।';
+  }
+
+  @override
+  String get voiceLanguageChange => 'পরিবর্তন';
+
+  @override
+  String get assistantForgetWords => 'শেখা শব্দ ভুলে যান';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara আপনার রেকর্ডের জন্য শেখা শব্দগুলো ভুলে যাবে। আপনার চ্যাট ও রেকর্ড থাকবে।';
+
+  @override
+  String get assistantForgetWordsConfirm => 'ভুলে যান';
+
+  @override
+  String get assistantForgetWordsDone => 'শেখা শব্দ ভুলে যাওয়া হয়েছে';
 }

@@ -3466,5 +3466,54 @@
   "travelLicenceExpiresBeforeLeaving": "Vairuotojo pažymėjimo galiojimas baigiasi prieš išvykimą",
   "travelTravellersCount": "{count, plural, =1{1 keliautojas} few{{count} keliautojai} many{{count} keliautojo} other{{count} keliautojų}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} galiojimas baigiasi {date}, {days, plural, =1{likus 1 dienai iki išvykimo} few{likus {days} dienoms iki išvykimo} many{likus {days} dienos iki išvykimo} other{likus {days} dienų iki išvykimo}}.",
-  "assistantVoiceReady": "Klausymas sustabdytas"
+  "assistantVoiceReady": "Klausymas sustabdytas",
+  "assistantPhotoButton": "Dokumento nuotrauka",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Štai dokumento nuotrauka",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Šios nuotraukos teksto nepavyko perskaityti. Bandykite dar kartą esant geram apšvietimui.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Tęsti",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Balso kalba",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefonas negali klausytis šia kalba, todėl klausosi kalba {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Keisti",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Pamiršti išmoktus žodžius",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara pamirš žodžius, kuriuos išmoko jūsų įrašams. Pokalbiai ir įrašai lieka.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Pamiršti",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Išmokti žodžiai pamiršti",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

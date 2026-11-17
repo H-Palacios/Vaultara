@@ -9190,6 +9190,41 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Слушање је заустављено';
+
+  @override
+  String get assistantPhotoButton => 'Фотографија документа';
+
+  @override
+  String get assistantPhotoMessage => 'Ево фотографије документа';
+
+  @override
+  String get assistantPhotoUnreadable => 'Текст на овој фотографији није могуће прочитати. Покушајте поново при доброј светлости.';
+
+  @override
+  String get assistantContinue => 'Настави';
+
+  @override
+  String get voiceLanguageTitle => 'Језик гласа';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Ваш телефон не може да слуша на овом језику, па слуша на језику $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Промени';
+
+  @override
+  String get assistantForgetWords => 'Заборави научене речи';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ће заборавити речи које је научио за ваше записе. Ваша ћаскања и записи остају.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Заборави';
+
+  @override
+  String get assistantForgetWordsDone => 'Научене речи су заборављене';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -18377,6 +18412,41 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get assistantVoiceReady => 'Слушање је заустављено';
+
+  @override
+  String get assistantPhotoButton => 'Фотографија документа';
+
+  @override
+  String get assistantPhotoMessage => 'Ево фотографије документа';
+
+  @override
+  String get assistantPhotoUnreadable => 'Текст на овој фотографији није могуће прочитати. Покушајте поново при доброј светлости.';
+
+  @override
+  String get assistantContinue => 'Настави';
+
+  @override
+  String get voiceLanguageTitle => 'Језик гласа';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Ваш телефон не може да слуша на овом језику, па слуша на језику $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Промени';
+
+  @override
+  String get assistantForgetWords => 'Заборави научене речи';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ће заборавити речи које је научио за ваше записе. Ваша ћаскања и записи остају.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Заборави';
+
+  @override
+  String get assistantForgetWordsDone => 'Научене речи су заборављене';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -27560,4 +27630,39 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get assistantVoiceReady => 'Slušanje je zaustavljeno';
+
+  @override
+  String get assistantPhotoButton => 'Fotografija dokumenta';
+
+  @override
+  String get assistantPhotoMessage => 'Evo fotografije dokumenta';
+
+  @override
+  String get assistantPhotoUnreadable => 'Tekst na ovoj fotografiji nije moguće pročitati. Pokušajte ponovo pri dobroj svetlosti.';
+
+  @override
+  String get assistantContinue => 'Nastavi';
+
+  @override
+  String get voiceLanguageTitle => 'Jezik glasa';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Vaš telefon ne može da sluša na ovom jeziku, pa sluša na jeziku $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Promeni';
+
+  @override
+  String get assistantForgetWords => 'Zaboravi naučene reči';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara će zaboraviti reči koje je naučio za vaše zapise. Vaša ćaskanja i zapisi ostaju.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Zaboravi';
+
+  @override
+  String get assistantForgetWordsDone => 'Naučene reči su zaboravljene';
 }

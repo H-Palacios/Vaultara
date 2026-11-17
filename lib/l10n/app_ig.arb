@@ -3453,5 +3453,54 @@
   "travelLicenceExpiresBeforeLeaving": "Ikikere ịnya ụgbọala na-agwụ tupu ị pụọ",
   "travelTravellersCount": "{count, plural, =1{Onye njem 1} other{Ndị njem {count}}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} na-agwụ na {date}, {days, plural, =1{ụbọchị 1 tupu ị pụọ} other{ụbọchị {days} tupu ị pụọ}}.",
-  "assistantVoiceReady": "Akwụsịla ige ntị"
+  "assistantVoiceReady": "Akwụsịla ige ntị",
+  "assistantPhotoButton": "Foto nke akwụkwọ",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Nke a bụ foto nke akwụkwọ",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Enweghị ike ịgụ ederede dị na foto a. Nwaa ọzọ n'ìhè dị mma.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Gaa n'ihu",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Asụsụ olu",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Ekwentị gị enweghị ike ige ntị n'asụsụ a, ya mere ọ na-ege ntị na {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Gbanwee",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Chefuo okwu ndị a mụtara",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara ga-echefu okwu ọ mụtara maka ndekọ gị. Mkparịta ụka na ndekọ gị ga-anọgide.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Chefuo",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Echefuola okwu ndị a mụtara",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

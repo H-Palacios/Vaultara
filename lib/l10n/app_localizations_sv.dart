@@ -9111,4 +9111,39 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Lyssnar inte längre';
+
+  @override
+  String get assistantPhotoButton => 'Foto av ett dokument';
+
+  @override
+  String get assistantPhotoMessage => 'Här är ett foto av ett dokument';
+
+  @override
+  String get assistantPhotoUnreadable => 'Texten på det här fotot kunde inte läsas. Försök igen i bra ljus.';
+
+  @override
+  String get assistantContinue => 'Fortsätt';
+
+  @override
+  String get voiceLanguageTitle => 'Röstspråk';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefonen kan inte lyssna på det här språket, så den lyssnar på $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Ändra';
+
+  @override
+  String get assistantForgetWords => 'Glöm inlärda ord';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara glömmer orden den har lärt sig för dina poster. Dina chattar och poster finns kvar.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Glöm';
+
+  @override
+  String get assistantForgetWordsDone => 'Inlärda ord glömda';
 }

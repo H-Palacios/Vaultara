@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "مۆڵەتی شۆفێری پێش ڕۆیشتنت بەسەردەچێت",
   "travelTravellersCount": "{count, plural, =1{1 گەشتیار} other{{count} گەشتیار}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} لە {date} بەسەردەچێت، {days, plural, =1{1 ڕۆژ پێش ڕۆیشتنت} other{{days} ڕۆژ پێش ڕۆیشتنت}}.",
-  "assistantVoiceReady": "گوێگرتن وەستا"
+  "assistantVoiceReady": "گوێگرتن وەستا",
+  "assistantPhotoButton": "وێنەی بەڵگەنامەیەک",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "ئەمە وێنەی بەڵگەنامەیەکە",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "نووسینی ئەم وێنەیە نەخوێندرایەوە. لە ڕووناکییەکی باشدا دووبارە هەوڵ بدەرەوە.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "بەردەوام بە",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "زمانی دەنگ",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "مۆبایلەکەت ناتوانێت بەم زمانە گوێ بگرێت، بۆیە بە {language} گوێ دەگرێت.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "گۆڕین",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "وشە فێربووەکان لەبیر بکە",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara ئەو وشانە لەبیر دەکات کە بۆ تۆمارەکانت فێری بووە. گفتوگۆ و تۆمارەکانت دەمێننەوە.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "لەبیر بکە",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "وشە فێربووەکان لەبیر کران",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

@@ -9107,4 +9107,39 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'اورېدل ودرېدل';
+
+  @override
+  String get assistantPhotoButton => 'د سند انځور';
+
+  @override
+  String get assistantPhotoMessage => 'دا د سند انځور دی';
+
+  @override
+  String get assistantPhotoUnreadable => 'د دې انځور متن ونه لوستل شو. په ښه رڼا کې بیا هڅه وکړئ.';
+
+  @override
+  String get assistantContinue => 'دوام ورکړئ';
+
+  @override
+  String get voiceLanguageTitle => 'د غږ ژبه';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'ستاسو تلیفون په دې ژبه نشي اورېدلی، نو په $language اوري.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'بدلول';
+
+  @override
+  String get assistantForgetWords => 'زده شوې کلمې هېرې کړئ';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara به هغه کلمې هېرې کړي چې ستاسو د ریکارډونو لپاره یې زده کړې دي. ستاسو چټونه او ریکارډونه پاتې کېږي.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'هېرول';
+
+  @override
+  String get assistantForgetWordsDone => 'زده شوې کلمې هېرې شوې';
 }

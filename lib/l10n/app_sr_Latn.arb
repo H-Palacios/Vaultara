@@ -3422,5 +3422,54 @@
   "travelLicenceExpiresBeforeLeaving": "Vozačka dozvola ističe pre polaska",
   "travelTravellersCount": "{count, plural, =1{1 putnik} few{{count} putnika} other{{count} putnika}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} ističe {date}, {days, plural, =1{1 dan pre polaska} few{{days} dana pre polaska} other{{days} dana pre polaska}}.",
-  "assistantVoiceReady": "Slušanje je zaustavljeno"
+  "assistantVoiceReady": "Slušanje je zaustavljeno",
+  "assistantPhotoButton": "Fotografija dokumenta",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Evo fotografije dokumenta",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Tekst na ovoj fotografiji nije moguće pročitati. Pokušajte ponovo pri dobroj svetlosti.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Nastavi",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Jezik glasa",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Vaš telefon ne može da sluša na ovom jeziku, pa sluša na jeziku {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Promeni",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Zaboravi naučene reči",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara će zaboraviti reči koje je naučio za vaše zapise. Vaša ćaskanja i zapisi ostaju.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Zaboravi",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Naučene reči su zaboravljene",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

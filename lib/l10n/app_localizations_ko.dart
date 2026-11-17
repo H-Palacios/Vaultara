@@ -9045,4 +9045,39 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => '듣기를 멈췄습니다';
+
+  @override
+  String get assistantPhotoButton => '문서 사진';
+
+  @override
+  String get assistantPhotoMessage => '문서 사진입니다';
+
+  @override
+  String get assistantPhotoUnreadable => '이 사진의 글자를 읽을 수 없습니다. 밝은 곳에서 다시 시도해 주세요.';
+
+  @override
+  String get assistantContinue => '계속';
+
+  @override
+  String get voiceLanguageTitle => '음성 언어';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return '휴대폰이 이 언어로 들을 수 없어 $language(으)로 듣고 있습니다.';
+  }
+
+  @override
+  String get voiceLanguageChange => '변경';
+
+  @override
+  String get assistantForgetWords => '학습한 단어 지우기';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara가 기록에 대해 학습한 단어를 잊습니다. 채팅과 기록은 그대로 남습니다.';
+
+  @override
+  String get assistantForgetWordsConfirm => '지우기';
+
+  @override
+  String get assistantForgetWordsDone => '학습한 단어를 지웠습니다';
 }

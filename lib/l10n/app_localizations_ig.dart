@@ -9056,4 +9056,39 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Akwụsịla ige ntị';
+
+  @override
+  String get assistantPhotoButton => 'Foto nke akwụkwọ';
+
+  @override
+  String get assistantPhotoMessage => 'Nke a bụ foto nke akwụkwọ';
+
+  @override
+  String get assistantPhotoUnreadable => 'Enweghị ike ịgụ ederede dị na foto a. Nwaa ọzọ n\'ìhè dị mma.';
+
+  @override
+  String get assistantContinue => 'Gaa n\'ihu';
+
+  @override
+  String get voiceLanguageTitle => 'Asụsụ olu';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Ekwentị gị enweghị ike ige ntị n\'asụsụ a, ya mere ọ na-ege ntị na $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Gbanwee';
+
+  @override
+  String get assistantForgetWords => 'Chefuo okwu ndị a mụtara';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ga-echefu okwu ọ mụtara maka ndekọ gị. Mkparịta ụka na ndekọ gị ga-anọgide.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Chefuo';
+
+  @override
+  String get assistantForgetWordsDone => 'Echefuola okwu ndị a mụtara';
 }

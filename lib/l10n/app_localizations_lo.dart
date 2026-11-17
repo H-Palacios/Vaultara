@@ -9045,4 +9045,39 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'ຢຸດຟັງແລ້ວ';
+
+  @override
+  String get assistantPhotoButton => 'ຮູບພາບເອກະສານ';
+
+  @override
+  String get assistantPhotoMessage => 'ນີ້ແມ່ນຮູບພາບເອກະສານ';
+
+  @override
+  String get assistantPhotoUnreadable => 'ບໍ່ສາມາດອ່ານຂໍ້ຄວາມໃນຮູບນີ້ໄດ້. ລອງໃໝ່ໃນແສງສະຫວ່າງດີ.';
+
+  @override
+  String get assistantContinue => 'ສືບຕໍ່';
+
+  @override
+  String get voiceLanguageTitle => 'ພາສາສຽງ';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'ໂທລະສັບຂອງທ່ານບໍ່ສາມາດຟັງເປັນພາສານີ້ໄດ້, ຈຶ່ງກຳລັງຟັງເປັນ$language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'ປ່ຽນ';
+
+  @override
+  String get assistantForgetWords => 'ລືມຄຳທີ່ຮຽນມາ';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ຈະລືມຄຳທີ່ມັນຮຽນສຳລັບບັນທຶກຂອງທ່ານ. ການສົນທະນາ ແລະ ບັນທຶກຂອງທ່ານຍັງຢູ່.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'ລືມ';
+
+  @override
+  String get assistantForgetWordsDone => 'ລືມຄຳທີ່ຮຽນມາແລ້ວ';
 }

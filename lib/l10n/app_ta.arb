@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "நீங்கள் புறப்படும் முன் ஓட்டுநர் உரிமம் காலாவதியாகும்",
   "travelTravellersCount": "{count, plural, =1{1 பயணி} other{{count} பயணிகள்}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} {date} அன்று காலாவதியாகும், {days, plural, =1{நீங்கள் புறப்படுவதற்கு 1 நாள் முன்பு} other{நீங்கள் புறப்படுவதற்கு {days} நாட்கள் முன்பு}}.",
-  "assistantVoiceReady": "கேட்பது நிறுத்தப்பட்டது"
+  "assistantVoiceReady": "கேட்பது நிறுத்தப்பட்டது",
+  "assistantPhotoButton": "ஆவணத்தின் புகைப்படம்",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "இதோ ஒரு ஆவணத்தின் புகைப்படம்",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "இந்தப் புகைப்படத்தில் உள்ள உரையைப் படிக்க முடியவில்லை. நல்ல வெளிச்சத்தில் மீண்டும் முயலவும்.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "தொடர்க",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "குரல் மொழி",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "உங்கள் ஃபோனால் இந்த மொழியில் கேட்க முடியாது, எனவே அது {language} மொழியில் கேட்கிறது.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "மாற்று",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "கற்ற சொற்களை மறக்கவும்",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "உங்கள் பதிவுகளுக்காக கற்ற சொற்களை Ask Vaultara மறந்துவிடும். உங்கள் உரையாடல்களும் பதிவுகளும் இருக்கும்.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "மறக்கவும்",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "கற்ற சொற்கள் மறக்கப்பட்டன",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

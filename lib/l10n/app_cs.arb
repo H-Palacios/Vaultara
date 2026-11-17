@@ -3479,5 +3479,54 @@
   "travelLicenceExpiresBeforeLeaving": "Řidičský průkaz vyprší před vaším odjezdem",
   "travelTravellersCount": "{count, plural, =1{1 cestující} few{{count} cestující} many{{count} cestujících} other{{count} cestujících}}",
   "travelDetailExpiresDaysBeforeLeaving": "Platnost položky {name} vyprší {date}, {days, plural, =1{1 den před odjezdem} few{{days} dny před odjezdem} many{{days} dne před odjezdem} other{{days} dní před odjezdem}}.",
-  "assistantVoiceReady": "Poslech skončil"
+  "assistantVoiceReady": "Poslech skončil",
+  "assistantPhotoButton": "Fotka dokumentu",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Tady je fotka dokumentu",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Text na této fotce se nepodařilo přečíst. Zkuste to znovu při dobrém světle.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Pokračovat",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Jazyk hlasu",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefon v tomto jazyce poslouchat neumí, proto poslouchá v jazyce {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Změnit",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Zapomenout naučená slova",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara zapomene slova, která se naučil pro vaše záznamy. Chaty a záznamy zůstanou.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Zapomenout",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Naučená slova zapomenuta",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

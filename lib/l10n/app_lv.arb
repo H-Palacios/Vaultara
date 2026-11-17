@@ -3466,5 +3466,54 @@
   "travelLicenceExpiresBeforeLeaving": "Vadītāja apliecības termiņš beidzas pirms izbraukšanas",
   "travelTravellersCount": "{count, plural, =1{1 ceļotājs} other{{count} ceļotāji}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} termiņš beidzas {date}, {days, plural, =1{1 dienu pirms izbraukšanas} other{{days} dienas pirms izbraukšanas}}.",
-  "assistantVoiceReady": "Klausīšanās apturēta"
+  "assistantVoiceReady": "Klausīšanās apturēta",
+  "assistantPhotoButton": "Dokumenta foto",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Lūk, dokumenta foto",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Šī foto tekstu neizdevās nolasīt. Mēģiniet vēlreiz labā apgaismojumā.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Turpināt",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Balss valoda",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Tālrunis nevar klausīties šajā valodā, tāpēc tas klausās valodā {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Mainīt",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Aizmirst apgūtos vārdus",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara aizmirsīs vārdus, ko apguva jūsu ierakstiem. Tērzēšanas un ieraksti paliek.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Aizmirst",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Apgūtie vārdi aizmirsti",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

@@ -9112,4 +9112,39 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Lyttar ikkje lenger';
+
+  @override
+  String get assistantPhotoButton => 'Bilete av eit dokument';
+
+  @override
+  String get assistantPhotoMessage => 'Her er eit bilete av eit dokument';
+
+  @override
+  String get assistantPhotoUnreadable => 'Teksten på dette biletet kunne ikkje lesast. Prøv igjen i godt lys.';
+
+  @override
+  String get assistantContinue => 'Hald fram';
+
+  @override
+  String get voiceLanguageTitle => 'Talespråk';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefonen kan ikkje lytte på dette språket, så han lyttar på $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Endre';
+
+  @override
+  String get assistantForgetWords => 'Gløym lærte ord';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara gløymer orda han har lært for oppføringane dine. Samtalane og oppføringane dine blir verande.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Gløym';
+
+  @override
+  String get assistantForgetWordsDone => 'Lærte ord gløymde';
 }

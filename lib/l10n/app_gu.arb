@@ -3198,5 +3198,54 @@
   "travelLicenceExpiresBeforeLeaving": "તમે નીકળો તે પહેલાં ડ્રાઇવિંગ લાઇસન્સ સમાપ્ત થાય છે",
   "travelTravellersCount": "{count, plural, =1{1 મુસાફર} other{{count} મુસાફરો}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} {date}ના રોજ સમાપ્ત થાય છે, {days, plural, =1{તમે જાઓ તેના 1 દિવસ પહેલાં} other{તમે જાઓ તેના {days} દિવસ પહેલાં}}.",
-  "assistantVoiceReady": "સાંભળવાનું બંધ થયું"
+  "assistantVoiceReady": "સાંભળવાનું બંધ થયું",
+  "assistantPhotoButton": "દસ્તાવેજનો ફોટો",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "આ રહ્યો દસ્તાવેજનો ફોટો",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "આ ફોટામાંનું લખાણ વાંચી શકાયું નહીં. સારા પ્રકાશમાં ફરી પ્રયાસ કરો.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "ચાલુ રાખો",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "અવાજની ભાષા",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "તમારો ફોન આ ભાષામાં સાંભળી શકતો નથી, તેથી તે {language} માં સાંભળી રહ્યો છે.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "બદલો",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "શીખેલા શબ્દો ભૂલી જાઓ",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara તમારા રેકોર્ડ્સ માટે શીખેલા શબ્દો ભૂલી જશે. તમારી ચેટ્સ અને રેકોર્ડ્સ રહેશે.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "ભૂલી જાઓ",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "શીખેલા શબ્દો ભૂલી ગયા",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

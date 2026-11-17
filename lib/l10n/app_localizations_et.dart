@@ -9112,4 +9112,39 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Kuulamine lõppes';
+
+  @override
+  String get assistantPhotoButton => 'Dokumendi foto';
+
+  @override
+  String get assistantPhotoMessage => 'Siin on dokumendi foto';
+
+  @override
+  String get assistantPhotoUnreadable => 'Selle foto teksti ei õnnestunud lugeda. Proovi uuesti heas valguses.';
+
+  @override
+  String get assistantContinue => 'Jätka';
+
+  @override
+  String get voiceLanguageTitle => 'Hääle keel';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefon ei oska selles keeles kuulata, seega kuulab see keeles $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Muuda';
+
+  @override
+  String get assistantForgetWords => 'Unusta õpitud sõnad';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara unustab sõnad, mille ta sinu kirjete jaoks õppis. Vestlused ja kirjed jäävad alles.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Unusta';
+
+  @override
+  String get assistantForgetWordsDone => 'Õpitud sõnad unustatud';
 }

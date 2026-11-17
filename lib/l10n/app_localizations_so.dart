@@ -9106,4 +9106,39 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Dhegaysiga waa la joojiyay';
+
+  @override
+  String get assistantPhotoButton => 'Sawirka dukumenti';
+
+  @override
+  String get assistantPhotoMessage => 'Waa kan sawirka dukumenti';
+
+  @override
+  String get assistantPhotoUnreadable => 'Qoraalka sawirkan lama akhrin karin. Mar kale isku day iftiin wanaagsan.';
+
+  @override
+  String get assistantContinue => 'Sii wad';
+
+  @override
+  String get voiceLanguageTitle => 'Luqadda codka';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Taleefankaagu kuma dhegeysan karo luqaddan, sidaa darteed wuxuu ku dhegeysanayaa $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Beddel';
+
+  @override
+  String get assistantForgetWords => 'Iska illow erayada la bartay';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara wuxuu iloobi doonaa erayada uu u bartay diiwaannadaada. Wada-hadalladaada iyo diiwaannadaadu way sii jiraan.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Iska illow';
+
+  @override
+  String get assistantForgetWordsDone => 'Erayada la bartay waa la illoobay';
 }

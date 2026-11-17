@@ -3479,5 +3479,54 @@
   "travelLicenceExpiresBeforeLeaving": "যাত্রার আগেই ড্রাইভিং লাইসেন্সের মেয়াদ শেষ হচ্ছে",
   "travelTravellersCount": "{count, plural, =1{১ জন যাত্রী} other{{count} জন যাত্রী}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name}-এর মেয়াদ {date} তারিখে শেষ, {days, plural, =1{আপনার যাত্রার ১ দিন আগে} other{আপনার যাত্রার {days} দিন আগে}}।",
-  "assistantVoiceReady": "শোনা বন্ধ হয়েছে"
+  "assistantVoiceReady": "শোনা বন্ধ হয়েছে",
+  "assistantPhotoButton": "একটি নথির ছবি",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "এই যে একটি নথির ছবি",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "এই ছবির লেখা পড়া যায়নি। ভালো আলোতে আবার চেষ্টা করুন।",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "চালিয়ে যান",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "ভয়েসের ভাষা",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "আপনার ফোন এই ভাষায় শুনতে পারে না, তাই এটি {language} ভাষায় শুনছে।",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "পরিবর্তন",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "শেখা শব্দ ভুলে যান",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara আপনার রেকর্ডের জন্য শেখা শব্দগুলো ভুলে যাবে। আপনার চ্যাট ও রেকর্ড থাকবে।",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "ভুলে যান",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "শেখা শব্দ ভুলে যাওয়া হয়েছে",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

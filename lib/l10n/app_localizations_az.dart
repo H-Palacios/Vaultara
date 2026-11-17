@@ -9107,4 +9107,39 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Dinləmə dayandı';
+
+  @override
+  String get assistantPhotoButton => 'Sənədin şəkli';
+
+  @override
+  String get assistantPhotoMessage => 'Budur, sənədin şəkli';
+
+  @override
+  String get assistantPhotoUnreadable => 'Bu şəkildəki mətn oxuna bilmədi. Yaxşı işıqda yenidən cəhd edin.';
+
+  @override
+  String get assistantContinue => 'Davam et';
+
+  @override
+  String get voiceLanguageTitle => 'Səs dili';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefonunuz bu dildə dinləyə bilmir, buna görə $language dilində dinləyir.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Dəyiş';
+
+  @override
+  String get assistantForgetWords => 'Öyrənilmiş sözləri unut';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara qeydləriniz üçün öyrəndiyi sözləri unudacaq. Söhbətləriniz və qeydləriniz qalır.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Unut';
+
+  @override
+  String get assistantForgetWordsDone => 'Öyrənilmiş sözlər unuduldu';
 }

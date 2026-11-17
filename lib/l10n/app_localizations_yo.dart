@@ -9056,4 +9056,39 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Mo ti dẹ́kun gbígbọ́';
+
+  @override
+  String get assistantPhotoButton => 'Fọ́tò ìwé';
+
+  @override
+  String get assistantPhotoMessage => 'Fọ́tò ìwé kan nìyí';
+
+  @override
+  String get assistantPhotoUnreadable => 'A kò lè ka ọ̀rọ̀ tó wà lórí fọ́tò yìí. Gbìyànjú lẹ́ẹ̀kan sí i ní ibi tí ìmọ́lẹ̀ dára.';
+
+  @override
+  String get assistantContinue => 'Tẹ̀síwájú';
+
+  @override
+  String get voiceLanguageTitle => 'Èdè ohùn';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Fóònù rẹ kò lè gbọ́ ní èdè yìí, nítorí náà ó ń gbọ́ ní $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Yípadà';
+
+  @override
+  String get assistantForgetWords => 'Gbàgbé àwọn ọ̀rọ̀ tí a kọ́';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara yóò gbàgbé àwọn ọ̀rọ̀ tí ó kọ́ fún àwọn àkọsílẹ̀ rẹ. Àwọn ìjíròrò àti àkọsílẹ̀ rẹ yóò wà.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Gbàgbé';
+
+  @override
+  String get assistantForgetWordsDone => 'A ti gbàgbé àwọn ọ̀rọ̀ tí a kọ́';
 }

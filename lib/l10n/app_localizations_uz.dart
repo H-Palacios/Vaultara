@@ -9107,4 +9107,39 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Tinglash to‘xtadi';
+
+  @override
+  String get assistantPhotoButton => 'Hujjat surati';
+
+  @override
+  String get assistantPhotoMessage => 'Mana, hujjat surati';
+
+  @override
+  String get assistantPhotoUnreadable => 'Bu suratdagi matnni o‘qib bo‘lmadi. Yaxshi yorug‘likda qayta urinib ko‘ring.';
+
+  @override
+  String get assistantContinue => 'Davom etish';
+
+  @override
+  String get voiceLanguageTitle => 'Ovoz tili';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefoningiz bu tilda tinglay olmaydi, shuning uchun $language tilida tinglamoqda.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'O‘zgartirish';
+
+  @override
+  String get assistantForgetWords => 'O‘rganilgan so‘zlarni unutish';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara yozuvlaringiz uchun o‘rgangan so‘zlarni unutadi. Suhbatlar va yozuvlaringiz qoladi.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Unutish';
+
+  @override
+  String get assistantForgetWordsDone => 'O‘rganilgan so‘zlar unutildi';
 }

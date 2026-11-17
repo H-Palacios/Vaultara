@@ -3460,5 +3460,54 @@
   "travelLicenceExpiresBeforeLeaving": "出発前に運転免許証の期限が切れます",
   "travelTravellersCount": "{count, plural, =1{旅行者 1 人} other{旅行者 {count} 人}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name}の有効期限は{date}で、{days, plural, =1{出発の1日前}other{出発の{days}日前}}です。",
-  "assistantVoiceReady": "聞き取りを停止しました"
+  "assistantVoiceReady": "聞き取りを停止しました",
+  "assistantPhotoButton": "書類の写真",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "書類の写真です",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "この写真の文字を読み取れませんでした。明るい場所でもう一度お試しください。",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "続ける",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "音声の言語",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "お使いの電話はこの言語で聞き取りできないため、{language}で聞き取っています。",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "変更",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "覚えた言葉を忘れる",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultaraが記録のために覚えた言葉を忘れます。チャットと記録は残ります。",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "忘れる",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "覚えた言葉を忘れました",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

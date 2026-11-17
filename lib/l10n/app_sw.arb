@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Leseni ya kuendesha inaisha muda kabla hujaondoka",
   "travelTravellersCount": "{count, plural, =1{Msafiri 1} other{Wasafiri {count}}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} inaisha muda {date}, {days, plural, =1{siku 1 kabla hujaondoka} other{siku {days} kabla hujaondoka}}.",
-  "assistantVoiceReady": "Kusikiliza kumesimama"
+  "assistantVoiceReady": "Kusikiliza kumesimama",
+  "assistantPhotoButton": "Picha ya hati",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Hii ni picha ya hati",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Maandishi kwenye picha hii hayakuweza kusomwa. Jaribu tena kwenye mwanga mzuri.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Endelea",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Lugha ya sauti",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Simu yako haiwezi kusikiliza kwa lugha hii, kwa hivyo inasikiliza kwa {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Badilisha",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Sahau maneno yaliyojifunzwa",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara itasahau maneno iliyojifunza kwa rekodi zako. Mazungumzo na rekodi zako zinabaki.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Sahau",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Maneno yaliyojifunzwa yamesahauliwa",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

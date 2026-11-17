@@ -3441,5 +3441,54 @@
   "travelLicenceExpiresBeforeLeaving": "駕駛執照在您出發前到期",
   "travelTravellersCount": "{count, plural, =1{1 位旅客} other{{count} 位旅客}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} 將於 {date} 到期，{days, plural, =1{比您出發早 1 天} other{比您出發早 {days} 天}}。",
-  "assistantVoiceReady": "已停止聆聽"
+  "assistantVoiceReady": "已停止聆聽",
+  "assistantPhotoButton": "文件照片",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "這是一張文件照片",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "無法辨識這張照片上的文字。請在光線充足的地方再試一次。",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "繼續",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "語音語言",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "你的手機無法以這種語言聽寫，因此正在以{language}聽寫。",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "變更",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "忘記學到的字詞",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara 會忘記它為你的記錄學到的字詞。你的聊天和記錄會保留。",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "忘記",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "已忘記學到的字詞",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

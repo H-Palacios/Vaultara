@@ -9108,4 +9108,39 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Слушането спря';
+
+  @override
+  String get assistantPhotoButton => 'Снимка на документ';
+
+  @override
+  String get assistantPhotoMessage => 'Ето снимка на документ';
+
+  @override
+  String get assistantPhotoUnreadable => 'Текстът на тази снимка не можа да бъде прочетен. Опитайте отново при добра светлина.';
+
+  @override
+  String get assistantContinue => 'Продължи';
+
+  @override
+  String get voiceLanguageTitle => 'Език за глас';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Телефонът ви не може да слуша на този език, затова слуша на $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Промяна';
+
+  @override
+  String get assistantForgetWords => 'Забрави научените думи';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ще забрави думите, които е научил за вашите записи. Чатовете и записите ви остават.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Забрави';
+
+  @override
+  String get assistantForgetWordsDone => 'Научените думи са забравени';
 }

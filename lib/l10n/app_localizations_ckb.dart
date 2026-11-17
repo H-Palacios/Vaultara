@@ -9107,4 +9107,39 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'گوێگرتن وەستا';
+
+  @override
+  String get assistantPhotoButton => 'وێنەی بەڵگەنامەیەک';
+
+  @override
+  String get assistantPhotoMessage => 'ئەمە وێنەی بەڵگەنامەیەکە';
+
+  @override
+  String get assistantPhotoUnreadable => 'نووسینی ئەم وێنەیە نەخوێندرایەوە. لە ڕووناکییەکی باشدا دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get assistantContinue => 'بەردەوام بە';
+
+  @override
+  String get voiceLanguageTitle => 'زمانی دەنگ';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'مۆبایلەکەت ناتوانێت بەم زمانە گوێ بگرێت، بۆیە بە $language گوێ دەگرێت.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'گۆڕین';
+
+  @override
+  String get assistantForgetWords => 'وشە فێربووەکان لەبیر بکە';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ئەو وشانە لەبیر دەکات کە بۆ تۆمارەکانت فێری بووە. گفتوگۆ و تۆمارەکانت دەمێننەوە.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'لەبیر بکە';
+
+  @override
+  String get assistantForgetWordsDone => 'وشە فێربووەکان لەبیر کران';
 }

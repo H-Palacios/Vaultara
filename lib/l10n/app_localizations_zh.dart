@@ -9045,6 +9045,41 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => '已停止聆听';
+
+  @override
+  String get assistantPhotoButton => '证件照片';
+
+  @override
+  String get assistantPhotoMessage => '这是一张证件照片';
+
+  @override
+  String get assistantPhotoUnreadable => '无法识别这张照片上的文字。请在光线充足的地方重试。';
+
+  @override
+  String get assistantContinue => '继续';
+
+  @override
+  String get voiceLanguageTitle => '语音语言';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return '你的手机无法用这种语言听写，因此正在用$language听写。';
+  }
+
+  @override
+  String get voiceLanguageChange => '更改';
+
+  @override
+  String get assistantForgetWords => '忘记学到的词语';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara 会忘记它为你的记录学到的词语。你的聊天和记录会保留。';
+
+  @override
+  String get assistantForgetWordsConfirm => '忘记';
+
+  @override
+  String get assistantForgetWordsDone => '已忘记学到的词语';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18076,6 +18111,41 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantVoiceReady => '已停止聆听';
+
+  @override
+  String get assistantPhotoButton => '证件照片';
+
+  @override
+  String get assistantPhotoMessage => '这是一张证件照片';
+
+  @override
+  String get assistantPhotoUnreadable => '无法识别这张照片上的文字。请在光线充足的地方重试。';
+
+  @override
+  String get assistantContinue => '继续';
+
+  @override
+  String get voiceLanguageTitle => '语音语言';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return '你的手机无法用这种语言听写，因此正在用$language听写。';
+  }
+
+  @override
+  String get voiceLanguageChange => '更改';
+
+  @override
+  String get assistantForgetWords => '忘记学到的词语';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara 会忘记它为你的记录学到的词语。你的聊天和记录会保留。';
+
+  @override
+  String get assistantForgetWordsConfirm => '忘记';
+
+  @override
+  String get assistantForgetWordsDone => '已忘记学到的词语';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -27107,4 +27177,39 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantVoiceReady => '已停止聆聽';
+
+  @override
+  String get assistantPhotoButton => '文件照片';
+
+  @override
+  String get assistantPhotoMessage => '這是一張文件照片';
+
+  @override
+  String get assistantPhotoUnreadable => '無法辨識這張照片上的文字。請在光線充足的地方再試一次。';
+
+  @override
+  String get assistantContinue => '繼續';
+
+  @override
+  String get voiceLanguageTitle => '語音語言';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return '你的手機無法以這種語言聽寫，因此正在以$language聽寫。';
+  }
+
+  @override
+  String get voiceLanguageChange => '變更';
+
+  @override
+  String get assistantForgetWords => '忘記學到的字詞';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara 會忘記它為你的記錄學到的字詞。你的聊天和記錄會保留。';
+
+  @override
+  String get assistantForgetWordsConfirm => '忘記';
+
+  @override
+  String get assistantForgetWordsDone => '已忘記學到的字詞';
 }

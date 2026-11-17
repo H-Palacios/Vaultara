@@ -3466,5 +3466,54 @@
   "travelLicenceExpiresBeforeLeaving": "მართვის მოწმობის ვადა გამგზავრებამდე იწურება",
   "travelTravellersCount": "{count, plural, =1{1 მოგზაური} other{{count} მოგზაური}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name}-ს ვადა იწურება {date}, {days, plural, =1{გამგზავრებამდე 1 დღით ადრე} other{გამგზავრებამდე {days} დღით ადრე}}.",
-  "assistantVoiceReady": "მოსმენა შეჩერდა"
+  "assistantVoiceReady": "მოსმენა შეჩერდა",
+  "assistantPhotoButton": "დოკუმენტის ფოტო",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "აი დოკუმენტის ფოტო",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "ამ ფოტოზე ტექსტის წაკითხვა ვერ მოხერხდა. სცადეთ ხელახლა კარგ განათებაზე.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "გაგრძელება",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "ხმის ენა",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "თქვენს ტელეფონს ამ ენაზე მოსმენა არ შეუძლია, ამიტომ უსმენს {language} ენაზე.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "შეცვლა",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "ნასწავლი სიტყვების დავიწყება",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara დაივიწყებს სიტყვებს, რომლებიც თქვენი ჩანაწერებისთვის ისწავლა. ჩატები და ჩანაწერები რჩება.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "დავიწყება",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "ნასწავლი სიტყვები დავიწყებულია",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

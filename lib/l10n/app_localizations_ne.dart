@@ -9107,4 +9107,39 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'सुन्न रोकियो';
+
+  @override
+  String get assistantPhotoButton => 'कागजातको फोटो';
+
+  @override
+  String get assistantPhotoMessage => 'यो कागजातको फोटो हो';
+
+  @override
+  String get assistantPhotoUnreadable => 'यो फोटोको पाठ पढ्न सकिएन। राम्रो उज्यालोमा फेरि प्रयास गर्नुहोस्।';
+
+  @override
+  String get assistantContinue => 'जारी राख्नुहोस्';
+
+  @override
+  String get voiceLanguageTitle => 'आवाजको भाषा';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'तपाईंको फोनले यो भाषामा सुन्न सक्दैन, त्यसैले $language मा सुनिरहेको छ।';
+  }
+
+  @override
+  String get voiceLanguageChange => 'परिवर्तन';
+
+  @override
+  String get assistantForgetWords => 'सिकेका शब्दहरू बिर्सनुहोस्';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ले तपाईंका रेकर्डका लागि सिकेका शब्दहरू बिर्सनेछ। तपाईंका च्याट र रेकर्ड रहनेछन्।';
+
+  @override
+  String get assistantForgetWordsConfirm => 'बिर्सनुहोस्';
+
+  @override
+  String get assistantForgetWordsDone => 'सिकेका शब्दहरू बिर्सिए';
 }

@@ -9185,4 +9185,39 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Slušanje je zaustavljeno';
+
+  @override
+  String get assistantPhotoButton => 'Fotografija dokumenta';
+
+  @override
+  String get assistantPhotoMessage => 'Evo fotografije dokumenta';
+
+  @override
+  String get assistantPhotoUnreadable => 'Tekst na ovoj fotografiji nije moguće pročitati. Pokušajte ponovno pri dobrom svjetlu.';
+
+  @override
+  String get assistantContinue => 'Nastavi';
+
+  @override
+  String get voiceLanguageTitle => 'Jezik glasa';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Vaš telefon ne može slušati na ovom jeziku pa sluša na jeziku $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Promijeni';
+
+  @override
+  String get assistantForgetWords => 'Zaboravi naučene riječi';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara zaboravit će riječi koje je naučio za vaše zapise. Vaši razgovori i zapisi ostaju.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Zaboravi';
+
+  @override
+  String get assistantForgetWordsDone => 'Naučene riječi zaboravljene';
 }

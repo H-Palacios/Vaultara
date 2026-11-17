@@ -3479,5 +3479,54 @@
   "travelLicenceExpiresBeforeLeaving": "El permís de conduir caduca abans que marxis",
   "travelTravellersCount": "{count, plural, =1{1 viatger} other{{count} viatgers}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} caduca el {date}, {days, plural, =1{1 dia abans que marxis} other{{days} dies abans que marxis}}.",
-  "assistantVoiceReady": "Ja no escolto"
+  "assistantVoiceReady": "Ja no escolto",
+  "assistantPhotoButton": "Foto d'un document",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Aquí tens una foto d'un document",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "No s'ha pogut llegir el text d'aquesta foto. Torna-ho a provar amb bona llum.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Continua",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Idioma de veu",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "El telèfon no pot escoltar en aquest idioma, així que escolta en {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Canvia",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Oblida les paraules apreses",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara oblidarà les paraules que ha après per als teus registres. Els xats i els registres es mantenen.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Oblida",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Paraules apreses oblidades",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

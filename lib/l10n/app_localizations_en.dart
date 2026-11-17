@@ -9127,4 +9127,39 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Stopped listening';
+
+  @override
+  String get assistantPhotoButton => 'Photo of a document';
+
+  @override
+  String get assistantPhotoMessage => 'Here is a photo of a document';
+
+  @override
+  String get assistantPhotoUnreadable => 'The text on this photo could not be read. Try again in good light.';
+
+  @override
+  String get assistantContinue => 'Continue';
+
+  @override
+  String get voiceLanguageTitle => 'Voice language';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Your phone cannot listen in this language, so it is listening in $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Change';
+
+  @override
+  String get assistantForgetWords => 'Forget learned words';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara will forget the words it learned for your records. Your chats and records stay.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Forget';
+
+  @override
+  String get assistantForgetWordsDone => 'Learned words forgotten';
 }

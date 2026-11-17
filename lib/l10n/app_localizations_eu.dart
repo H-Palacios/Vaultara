@@ -9112,4 +9112,39 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Entzuteari utzi diot';
+
+  @override
+  String get assistantPhotoButton => 'Dokumentu baten argazkia';
+
+  @override
+  String get assistantPhotoMessage => 'Hona hemen dokumentu baten argazkia';
+
+  @override
+  String get assistantPhotoUnreadable => 'Ezin izan da argazki honetako testua irakurri. Saiatu berriro argi onarekin.';
+
+  @override
+  String get assistantContinue => 'Jarraitu';
+
+  @override
+  String get voiceLanguageTitle => 'Ahotsaren hizkuntza';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefonoak ezin du hizkuntza honetan entzun, beraz $language hizkuntzan entzuten ari da.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Aldatu';
+
+  @override
+  String get assistantForgetWords => 'Ahaztu ikasitako hitzak';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultarak zure erregistroetarako ikasitako hitzak ahaztuko ditu. Txatak eta erregistroak geratzen dira.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Ahaztu';
+
+  @override
+  String get assistantForgetWordsDone => 'Ikasitako hitzak ahaztu dira';
 }

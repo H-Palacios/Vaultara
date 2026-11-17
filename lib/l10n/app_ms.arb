@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Lesen memandu tamat tempoh sebelum anda berlepas",
   "travelTravellersCount": "{count, plural, =1{1 pengembara} other{{count} pengembara}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} tamat tempoh pada {date}, {days, plural, =1{1 hari sebelum anda bertolak} other{{days} hari sebelum anda bertolak}}.",
-  "assistantVoiceReady": "Berhenti mendengar"
+  "assistantVoiceReady": "Berhenti mendengar",
+  "assistantPhotoButton": "Foto dokumen",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Ini foto dokumen",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Teks pada foto ini tidak dapat dibaca. Cuba lagi dalam cahaya yang baik.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Teruskan",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Bahasa suara",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefon anda tidak boleh mendengar dalam bahasa ini, jadi ia mendengar dalam {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Tukar",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Lupakan perkataan yang dipelajari",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara akan melupakan perkataan yang dipelajarinya untuk rekod anda. Sembang dan rekod anda kekal.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Lupakan",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Perkataan yang dipelajari telah dilupakan",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

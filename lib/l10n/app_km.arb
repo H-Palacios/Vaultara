@@ -3198,5 +3198,54 @@
   "travelLicenceExpiresBeforeLeaving": "ប័ណ្ណបើកបរផុតកំណត់មុនអ្នកចេញដំណើរ",
   "travelTravellersCount": "{count, plural, =1{អ្នកដំណើរ 1 នាក់} other{អ្នកដំណើរ {count} នាក់}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} ផុតកំណត់នៅ {date} {days, plural, =1{1 ថ្ងៃមុនអ្នកចេញដំណើរ} other{{days} ថ្ងៃមុនអ្នកចេញដំណើរ}}។",
-  "assistantVoiceReady": "បានឈប់ស្តាប់"
+  "assistantVoiceReady": "បានឈប់ស្តាប់",
+  "assistantPhotoButton": "រូបថតឯកសារ",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "នេះជារូបថតឯកសារ",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "មិនអាចអានអត្ថបទលើរូបថតនេះបានទេ។ សូមសាកល្បងម្តងទៀតក្នុងពន្លឺល្អ។",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "បន្ត",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "ភាសាសំឡេង",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "ទូរសព្ទរបស់អ្នកមិនអាចស្តាប់ជាភាសានេះបានទេ ដូច្នេះវាកំពុងស្តាប់ជា{language}។",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "ប្តូរ",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "បំភ្លេចពាក្យដែលបានរៀន",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara នឹងបំភ្លេចពាក្យដែលវាបានរៀនសម្រាប់កំណត់ត្រារបស់អ្នក។ ការជជែក និងកំណត់ត្រារបស់អ្នកនៅដដែល។",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "បំភ្លេច",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "បានបំភ្លេចពាក្យដែលបានរៀន",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

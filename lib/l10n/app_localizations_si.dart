@@ -9106,4 +9106,39 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'සවන් දීම නැවතුණි';
+
+  @override
+  String get assistantPhotoButton => 'ලේඛනයක ඡායාරූපයක්';
+
+  @override
+  String get assistantPhotoMessage => 'මෙන්න ලේඛනයක ඡායාරූපයක්';
+
+  @override
+  String get assistantPhotoUnreadable => 'මෙම ඡායාරූපයේ පෙළ කියවිය නොහැකි විය. හොඳ ආලෝකයේ නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get assistantContinue => 'ඉදිරියට';
+
+  @override
+  String get voiceLanguageTitle => 'හඬ භාෂාව';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'ඔබේ දුරකථනයට මෙම භාෂාවෙන් සවන් දිය නොහැක, එබැවින් එය $language භාෂාවෙන් සවන් දෙයි.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'වෙනස් කරන්න';
+
+  @override
+  String get assistantForgetWords => 'ඉගෙනගත් වචන අමතක කරන්න';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara ඔබේ වාර්තා සඳහා ඉගෙනගත් වචන අමතක කරයි. ඔබේ කතාබස් සහ වාර්තා රැඳේ.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'අමතක කරන්න';
+
+  @override
+  String get assistantForgetWordsDone => 'ඉගෙනගත් වචන අමතක කළා';
 }

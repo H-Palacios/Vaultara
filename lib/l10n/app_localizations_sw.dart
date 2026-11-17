@@ -9107,4 +9107,39 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Kusikiliza kumesimama';
+
+  @override
+  String get assistantPhotoButton => 'Picha ya hati';
+
+  @override
+  String get assistantPhotoMessage => 'Hii ni picha ya hati';
+
+  @override
+  String get assistantPhotoUnreadable => 'Maandishi kwenye picha hii hayakuweza kusomwa. Jaribu tena kwenye mwanga mzuri.';
+
+  @override
+  String get assistantContinue => 'Endelea';
+
+  @override
+  String get voiceLanguageTitle => 'Lugha ya sauti';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Simu yako haiwezi kusikiliza kwa lugha hii, kwa hivyo inasikiliza kwa $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Badilisha';
+
+  @override
+  String get assistantForgetWords => 'Sahau maneno yaliyojifunzwa';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara itasahau maneno iliyojifunza kwa rekodi zako. Mazungumzo na rekodi zako zinabaki.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Sahau';
+
+  @override
+  String get assistantForgetWordsDone => 'Maneno yaliyojifunzwa yamesahauliwa';
 }

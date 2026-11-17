@@ -9177,4 +9177,39 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Klausīšanās apturēta';
+
+  @override
+  String get assistantPhotoButton => 'Dokumenta foto';
+
+  @override
+  String get assistantPhotoMessage => 'Lūk, dokumenta foto';
+
+  @override
+  String get assistantPhotoUnreadable => 'Šī foto tekstu neizdevās nolasīt. Mēģiniet vēlreiz labā apgaismojumā.';
+
+  @override
+  String get assistantContinue => 'Turpināt';
+
+  @override
+  String get voiceLanguageTitle => 'Balss valoda';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Tālrunis nevar klausīties šajā valodā, tāpēc tas klausās valodā $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Mainīt';
+
+  @override
+  String get assistantForgetWords => 'Aizmirst apgūtos vārdus';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara aizmirsīs vārdus, ko apguva jūsu ierakstiem. Tērzēšanas un ieraksti paliek.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Aizmirst';
+
+  @override
+  String get assistantForgetWordsDone => 'Apgūtie vārdi aizmirsti';
 }

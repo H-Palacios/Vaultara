@@ -9122,4 +9122,39 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Écoute terminée';
+
+  @override
+  String get assistantPhotoButton => 'Photo d\'un document';
+
+  @override
+  String get assistantPhotoMessage => 'Voici une photo d\'un document';
+
+  @override
+  String get assistantPhotoUnreadable => 'Le texte de cette photo n\'a pas pu être lu. Réessayez avec une bonne lumière.';
+
+  @override
+  String get assistantContinue => 'Continuer';
+
+  @override
+  String get voiceLanguageTitle => 'Langue de la voix';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Votre téléphone ne peut pas écouter dans cette langue, il écoute donc en $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Modifier';
+
+  @override
+  String get assistantForgetWords => 'Oublier les mots appris';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara oubliera les mots appris pour vos fiches. Vos discussions et vos fiches restent.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Oublier';
+
+  @override
+  String get assistantForgetWordsDone => 'Mots appris oubliés';
 }

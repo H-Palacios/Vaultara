@@ -3462,5 +3462,54 @@
   "travelLicenceExpiresBeforeLeaving": "Վարորդական իրավունքի ժամկետը լրանում է մեկնելուց առաջ",
   "travelTravellersCount": "{count, plural, =1{1 ճանապարհորդ} other{{count} ճանապարհորդ}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name}-ի ժամկետը լրանում է {date}-ին՝ {days, plural, =1{մեկնելուց 1 օր առաջ} other{մեկնելուց {days} օր առաջ}}։",
-  "assistantVoiceReady": "Լսելը դադարեց"
+  "assistantVoiceReady": "Լսելը դադարեց",
+  "assistantPhotoButton": "Փաստաթղթի լուսանկար",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Ահա փաստաթղթի լուսանկար",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Այս լուսանկարի տեքստը հնարավոր չեղավ կարդալ։ Կրկին փորձեք լավ լույսի տակ։",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Շարունակել",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Ձայնի լեզու",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Ձեր հեռախոսը չի կարող լսել այս լեզվով, ուստի լսում է {language} լեզվով։",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Փոխել",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Մոռանալ սովորած բառերը",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara-ն կմոռանա ձեր գրառումների համար սովորած բառերը։ Ձեր զրույցներն ու գրառումները մնում են։",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Մոռանալ",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Սովորած բառերը մոռացված են",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

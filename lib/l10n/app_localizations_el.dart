@@ -9112,4 +9112,39 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Η ακρόαση σταμάτησε';
+
+  @override
+  String get assistantPhotoButton => 'Φωτογραφία εγγράφου';
+
+  @override
+  String get assistantPhotoMessage => 'Ορίστε μια φωτογραφία εγγράφου';
+
+  @override
+  String get assistantPhotoUnreadable => 'Δεν ήταν δυνατή η ανάγνωση του κειμένου σε αυτή τη φωτογραφία. Δοκιμάστε ξανά με καλό φωτισμό.';
+
+  @override
+  String get assistantContinue => 'Συνέχεια';
+
+  @override
+  String get voiceLanguageTitle => 'Γλώσσα φωνής';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Το τηλέφωνό σας δεν μπορεί να ακούσει σε αυτή τη γλώσσα, οπότε ακούει στα $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Αλλαγή';
+
+  @override
+  String get assistantForgetWords => 'Ξέχασε τις λέξεις που έμαθε';
+
+  @override
+  String get assistantForgetWordsBody => 'Το Ask Vaultara θα ξεχάσει τις λέξεις που έμαθε για τις εγγραφές σας. Οι συνομιλίες και οι εγγραφές σας μένουν.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Ξέχασε';
+
+  @override
+  String get assistantForgetWordsDone => 'Οι λέξεις ξεχάστηκαν';
 }

@@ -9033,4 +9033,39 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'หยุดฟังแล้ว';
+
+  @override
+  String get assistantPhotoButton => 'รูปถ่ายเอกสาร';
+
+  @override
+  String get assistantPhotoMessage => 'นี่คือรูปถ่ายเอกสาร';
+
+  @override
+  String get assistantPhotoUnreadable => 'อ่านข้อความในรูปนี้ไม่ได้ ลองอีกครั้งในที่ที่มีแสงสว่างดี';
+
+  @override
+  String get assistantContinue => 'ดำเนินการต่อ';
+
+  @override
+  String get voiceLanguageTitle => 'ภาษาเสียง';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'โทรศัพท์ของคุณฟังภาษานี้ไม่ได้ จึงฟังเป็นภาษา$language';
+  }
+
+  @override
+  String get voiceLanguageChange => 'เปลี่ยน';
+
+  @override
+  String get assistantForgetWords => 'ลืมคำที่เรียนรู้';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara จะลืมคำที่เรียนรู้สำหรับรายการของคุณ แชทและรายการของคุณยังอยู่';
+
+  @override
+  String get assistantForgetWordsConfirm => 'ลืม';
+
+  @override
+  String get assistantForgetWordsDone => 'ลืมคำที่เรียนรู้แล้ว';
 }

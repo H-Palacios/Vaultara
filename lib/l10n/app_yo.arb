@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Ìwé-aṣẹ awakọ̀ ń parí kí o tó lọ",
   "travelTravellersCount": "{count, plural, =1{Arìnrìn-àjò 1} other{Arìnrìn-àjò {count}}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} ń parí ní {date}, {days, plural, =1{ọjọ́ 1 kí o tó lọ} other{ọjọ́ {days} kí o tó lọ}}.",
-  "assistantVoiceReady": "Mo ti dẹ́kun gbígbọ́"
+  "assistantVoiceReady": "Mo ti dẹ́kun gbígbọ́",
+  "assistantPhotoButton": "Fọ́tò ìwé",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Fọ́tò ìwé kan nìyí",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "A kò lè ka ọ̀rọ̀ tó wà lórí fọ́tò yìí. Gbìyànjú lẹ́ẹ̀kan sí i ní ibi tí ìmọ́lẹ̀ dára.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Tẹ̀síwájú",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Èdè ohùn",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Fóònù rẹ kò lè gbọ́ ní èdè yìí, nítorí náà ó ń gbọ́ ní {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Yípadà",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Gbàgbé àwọn ọ̀rọ̀ tí a kọ́",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara yóò gbàgbé àwọn ọ̀rọ̀ tí ó kọ́ fún àwọn àkọsílẹ̀ rẹ. Àwọn ìjíròrò àti àkọsílẹ̀ rẹ yóò wà.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Gbàgbé",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "A ti gbàgbé àwọn ọ̀rọ̀ tí a kọ́",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

@@ -3198,5 +3198,54 @@
   "travelLicenceExpiresBeforeLeaving": "သင်ခရီးမထွက်မီ ယာဉ်မောင်းလိုင်စင် သက်တမ်းကုန်မည်",
   "travelTravellersCount": "{count, plural, =1{ခရီးသည် 1 ဦး} other{ခရီးသည် {count} ဦး}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} သည် {date} တွင် သက်တမ်းကုန်မည်၊ {days, plural, =1{သင်မထွက်ခွာမီ 1 ရက်} other{သင်မထွက်ခွာမီ {days} ရက်}}။",
-  "assistantVoiceReady": "နားထောင်ခြင်း ရပ်ပြီ"
+  "assistantVoiceReady": "နားထောင်ခြင်း ရပ်ပြီ",
+  "assistantPhotoButton": "စာရွက်စာတမ်း ဓာတ်ပုံ",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "ဒါက စာရွက်စာတမ်း ဓာတ်ပုံပါ",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "ဤဓာတ်ပုံပေါ်ရှိ စာသားကို ဖတ်၍မရပါ။ အလင်းကောင်းသောနေရာတွင် ထပ်စမ်းကြည့်ပါ။",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "ဆက်လုပ်ရန်",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "အသံဘာသာစကား",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "သင့်ဖုန်းသည် ဤဘာသာစကားဖြင့် နားမထောင်နိုင်သောကြောင့် {language} ဖြင့် နားထောင်နေသည်။",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "ပြောင်းရန်",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "သင်ယူထားသော စကားလုံးများကို မေ့ရန်",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara သည် သင့်မှတ်တမ်းများအတွက် သင်ယူထားသော စကားလုံးများကို မေ့ပါမည်။ သင့်ချတ်များနှင့် မှတ်တမ်းများ ကျန်ရှိမည်။",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "မေ့ရန်",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "သင်ယူထားသော စကားလုံးများကို မေ့ပြီးပါပြီ",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

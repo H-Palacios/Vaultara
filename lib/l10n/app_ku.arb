@@ -3448,5 +3448,54 @@
   "travelLicenceExpiresBeforeLeaving": "Ehlîyeta ajotinê berî çûyîna te bidawî dibe",
   "travelTravellersCount": "{count, plural, =1{1 rêwî} other{{count} rêwî}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} di {date} de bidawî dibe, {days, plural, =1{1 roj berî çûyîna te} other{{days} roj berî çûyîna te}}.",
-  "assistantVoiceReady": "Guhdarî rawestiya"
+  "assistantVoiceReady": "Guhdarî rawestiya",
+  "assistantPhotoButton": "Wêneyê belgeyekê",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Va ye wêneyê belgeyekê",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Nivîsa li ser vê wêneyê nehat xwendin. Di ronahiyeke baş de dîsa biceribîne.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Bidomîne",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Zimanê dengî",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Telefona te nikare bi vî zimanî guhdarî bike, ji ber vê yekê bi {language} guhdarî dike.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Biguherîne",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Peyvên hînbûyî ji bîr bike",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara dê peyvên ku ji bo tomarên te hîn bûye ji bîr bike. Sohbet û tomarên te dimînin.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Ji bîr bike",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Peyvên hînbûyî hatin jibîrkirin",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

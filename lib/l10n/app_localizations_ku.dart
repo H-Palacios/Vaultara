@@ -9107,4 +9107,39 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Guhdarî rawestiya';
+
+  @override
+  String get assistantPhotoButton => 'Wêneyê belgeyekê';
+
+  @override
+  String get assistantPhotoMessage => 'Va ye wêneyê belgeyekê';
+
+  @override
+  String get assistantPhotoUnreadable => 'Nivîsa li ser vê wêneyê nehat xwendin. Di ronahiyeke baş de dîsa biceribîne.';
+
+  @override
+  String get assistantContinue => 'Bidomîne';
+
+  @override
+  String get voiceLanguageTitle => 'Zimanê dengî';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Telefona te nikare bi vî zimanî guhdarî bike, ji ber vê yekê bi $language guhdarî dike.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Biguherîne';
+
+  @override
+  String get assistantForgetWords => 'Peyvên hînbûyî ji bîr bike';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara dê peyvên ku ji bo tomarên te hîn bûye ji bîr bike. Sohbet û tomarên te dimînin.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Ji bîr bike';
+
+  @override
+  String get assistantForgetWordsDone => 'Peyvên hînbûyî hatin jibîrkirin';
 }

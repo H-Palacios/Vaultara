@@ -3466,5 +3466,54 @@
   "travelLicenceExpiresBeforeLeaving": "Возачката дозвола истекува пред да заминете",
   "travelTravellersCount": "{count, plural, =1{1 патник} other{{count} патници}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} истекува на {date}, {days, plural, =1{1 ден пред да заминете} other{{days} дена пред да заминете}}.",
-  "assistantVoiceReady": "Слушањето запре"
+  "assistantVoiceReady": "Слушањето запре",
+  "assistantPhotoButton": "Фотографија на документ",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Еве фотографија на документ",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Текстот на оваа фотографија не може да се прочита. Обидете се повторно на добра светлина.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Продолжи",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Јазик на гласот",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Телефонот не може да слуша на овој јазик, па слуша на {language}.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Промени",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Заборави научени зборови",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara ќе ги заборави зборовите што ги научи за вашите записи. Разговорите и записите остануваат.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Заборави",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Научените зборови се заборавени",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }

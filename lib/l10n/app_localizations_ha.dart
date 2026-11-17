@@ -9107,4 +9107,39 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'An daina saurara';
+
+  @override
+  String get assistantPhotoButton => 'Hoton takarda';
+
+  @override
+  String get assistantPhotoMessage => 'Ga hoton takarda';
+
+  @override
+  String get assistantPhotoUnreadable => 'Ba a iya karanta rubutun da ke wannan hoton ba. Sake gwadawa a haske mai kyau.';
+
+  @override
+  String get assistantContinue => 'Ci gaba';
+
+  @override
+  String get voiceLanguageTitle => 'Harshen murya';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Wayarka ba za ta iya saurara a wannan harshen ba, don haka tana saurara a $language.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Canja';
+
+  @override
+  String get assistantForgetWords => 'Manta kalmomin da aka koya';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara zai manta kalmomin da ya koya don bayananka. Hirarraki da bayananka za su kasance.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Manta';
+
+  @override
+  String get assistantForgetWordsDone => 'An manta kalmomin da aka koya';
 }

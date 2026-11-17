@@ -9097,4 +9097,39 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get assistantVoiceReady => 'Сонсохоо зогсоосон';
+
+  @override
+  String get assistantPhotoButton => 'Баримт бичгийн зураг';
+
+  @override
+  String get assistantPhotoMessage => 'Энэ бол баримт бичгийн зураг';
+
+  @override
+  String get assistantPhotoUnreadable => 'Энэ зурган дээрх бичвэрийг уншиж чадсангүй. Сайн гэрэлтэй газар дахин оролдоно уу.';
+
+  @override
+  String get assistantContinue => 'Үргэлжлүүлэх';
+
+  @override
+  String get voiceLanguageTitle => 'Дуу хоолойн хэл';
+
+  @override
+  String voiceLanguageFallback(String language) {
+    return 'Таны утас энэ хэлээр сонсож чадахгүй тул $language хэлээр сонсож байна.';
+  }
+
+  @override
+  String get voiceLanguageChange => 'Өөрчлөх';
+
+  @override
+  String get assistantForgetWords => 'Сурсан үгсийг мартах';
+
+  @override
+  String get assistantForgetWordsBody => 'Ask Vaultara таны бүртгэлд зориулж сурсан үгсийг мартна. Чат болон бүртгэлүүд хэвээр үлдэнэ.';
+
+  @override
+  String get assistantForgetWordsConfirm => 'Мартах';
+
+  @override
+  String get assistantForgetWordsDone => 'Сурсан үгсийг мартлаа';
 }

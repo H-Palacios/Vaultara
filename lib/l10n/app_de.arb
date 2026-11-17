@@ -3479,5 +3479,54 @@
   "travelLicenceExpiresBeforeLeaving": "Führerschein läuft vor deiner Abreise ab",
   "travelTravellersCount": "{count, plural, =1{1 Reisender} other{{count} Reisende}}",
   "travelDetailExpiresDaysBeforeLeaving": "{name} läuft am {date} ab, {days, plural, =1{1 Tag vor deiner Abreise} other{{days} Tage vor deiner Abreise}}.",
-  "assistantVoiceReady": "Zuhören beendet"
+  "assistantVoiceReady": "Zuhören beendet",
+  "assistantPhotoButton": "Foto eines Dokuments",
+  "@assistantPhotoButton": {
+    "description": "Tooltip of the camera button in the Ask Vaultara text bar."
+  },
+  "assistantPhotoMessage": "Hier ist ein Foto eines Dokuments",
+  "@assistantPhotoMessage": {
+    "description": "Chat message shown for the user after they take a photo of a document."
+  },
+  "assistantPhotoUnreadable": "Der Text auf diesem Foto konnte nicht gelesen werden. Versuche es bei gutem Licht noch einmal.",
+  "@assistantPhotoUnreadable": {
+    "description": "Shown when no text could be read from the photo."
+  },
+  "assistantContinue": "Weiter",
+  "@assistantContinue": {
+    "description": "Button under an answer that stopped early; also sent as the message asking for the rest."
+  },
+  "voiceLanguageTitle": "Sprache für Spracheingabe",
+  "@voiceLanguageTitle": {
+    "description": "Title of the list of languages voice typing can listen in."
+  },
+  "voiceLanguageFallback": "Dein Telefon kann in dieser Sprache nicht zuhören, daher hört es auf {language} zu.",
+  "@voiceLanguageFallback": {
+    "description": "Voice panel note; language is the name of the language the phone listens in instead.",
+    "placeholders": {
+      "language": {
+        "type": "String"
+      }
+    }
+  },
+  "voiceLanguageChange": "Ändern",
+  "@voiceLanguageChange": {
+    "description": "Button next to the voice language note."
+  },
+  "assistantForgetWords": "Gelernte Wörter vergessen",
+  "@assistantForgetWords": {
+    "description": "Chat history menu item and dialog title: clears the words Ask Vaultara learned."
+  },
+  "assistantForgetWordsBody": "Ask Vaultara vergisst die Wörter, die es für deine Einträge gelernt hat. Deine Chats und Einträge bleiben.",
+  "@assistantForgetWordsBody": {
+    "description": "Dialog text before clearing learned words."
+  },
+  "assistantForgetWordsConfirm": "Vergessen",
+  "@assistantForgetWordsConfirm": {
+    "description": "Dialog button that clears learned words."
+  },
+  "assistantForgetWordsDone": "Gelernte Wörter vergessen",
+  "@assistantForgetWordsDone": {
+    "description": "Snackbar after learned words were cleared."
+  }
 }
