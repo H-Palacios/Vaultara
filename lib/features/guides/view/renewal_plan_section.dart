@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_source_links.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/guides/services/renewal_plan_store.dart';
+import 'package:vaultara/features/records/logic/record_details.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_state.dart';
@@ -137,6 +139,37 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
 
   String _date(AppLocalizations loc, DateTime day) =>
       DateFormat.yMMMEd(SafeLocale.date(loc.localeName)).format(day);
+
+  /// Whose record it is when it is not the user's own, and the company
+  /// whose site the steps come from, as on the plan card.
+  List<Widget> _whoAndSource(AppLocalizations loc, ColorScheme scheme) {
+    final record = widget.record;
+    final holderId = record.holderId;
+    final holder = holderId == null || holderId.isEmpty
+        ? null
+        : PeopleRepository.byId(holderId)?.name;
+    final company =
+        record.locked ||
+            RecordDetails.providerKind(record.subcategoryName) == null
+        ? null
+        : record.provider;
+    final style = TextStyle(fontSize: 13, color: scheme.onSurfaceVariant);
+    return <Widget>[
+      if (holder != null)
+        Padding(
+          padding: const EdgeInsets.only(top: 2),
+          child: Text('${loc.coachForLabel}: $holder', style: style),
+        ),
+      if (company != null)
+        Padding(
+          padding: const EdgeInsets.only(top: 2),
+          child: Text(
+            '${loc.coachSourceLabel}: ${loc.coachCompanySite(company)}',
+            style: style,
+          ),
+        ),
+    ];
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -273,6 +306,7 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
                 ],
               ),
             ),
+          ..._whoAndSource(loc, scheme),
           if (plan.applyReason != null &&
               plan.livesIn != null &&
               plan.applyIn != plan.livesIn) ...[

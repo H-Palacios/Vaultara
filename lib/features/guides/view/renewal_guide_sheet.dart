@@ -7,6 +7,7 @@ import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/guides/view/renewal_plan_section.dart';
 import 'package:vaultara/features/records/view/renew/renew_sheet.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/core/util/dates.dart';
 
 Future<void> showRenewalGuide(
   BuildContext context, {
@@ -42,6 +43,24 @@ Future<void> showRenewalGuide(
   if (markRenewed == true && target != null && context.mounted) {
     await showRenewSheet(context, target);
   }
+}
+
+/// When to start: the general advice, unless the record has expired or is
+/// due within a month, when the only right answer is now.
+@visibleForTesting
+String startText(
+  AppLocalizations loc,
+  RenewalGuide guide,
+  TrackedItem? record, {
+  DateTime? today,
+}) {
+  if (record != null) {
+    final now = Dates.only(today ?? DateTime.now());
+    final days = Dates.only(record.expiryDate).difference(now).inDays;
+    if (days < 0) return loc.guideStartExpired;
+    if (days <= 30) return loc.guideStartSoon;
+  }
+  return guide.whenToStart(loc);
 }
 
 class _RenewalGuideSheet extends StatefulWidget {
@@ -171,7 +190,7 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        guide.whenToStart(loc),
+                        startText(loc, guide, record),
                         style: TextStyle(fontSize: 14, color: scheme.onSurface),
                       ),
                     ],

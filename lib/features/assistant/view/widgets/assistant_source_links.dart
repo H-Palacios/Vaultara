@@ -68,7 +68,7 @@ class AssistantSourceLinks extends StatelessWidget {
                     constraints: const BoxConstraints(maxWidth: 220),
                     child: Text(
                       source.title.length > 40 ? source.host : source.title,
-                      maxLines: 1,
+                      maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
