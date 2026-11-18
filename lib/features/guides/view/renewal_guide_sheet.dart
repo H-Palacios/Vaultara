@@ -45,6 +45,20 @@ Future<void> showRenewalGuide(
   }
 }
 
+/// How urgent starting the renewal is.
+enum StartUrgency { none, soon, expired }
+
+/// Expired, due within a month, or neither.
+@visibleForTesting
+StartUrgency startUrgency(TrackedItem? record, {DateTime? today}) {
+  if (record == null) return StartUrgency.none;
+  final now = Dates.only(today ?? DateTime.now());
+  final days = Dates.only(record.expiryDate).difference(now).inDays;
+  if (days < 0) return StartUrgency.expired;
+  if (days <= 30) return StartUrgency.soon;
+  return StartUrgency.none;
+}
+
 /// When to start: the general advice, unless the record has expired or is
 /// due within a month, when the only right answer is now.
 @visibleForTesting
@@ -204,6 +218,7 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
     final guide = widget.guide;
     final steps = guide?.steps ?? const [];
     final record = widget.record;
+    final urgency = startUrgency(record);
 
     return ListView(
       controller: widget.controller,
@@ -239,6 +254,17 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
           ),
         ),
         const SizedBox(height: 18),
+        // Expired or due soon: the most important line, so it comes first,
+        // in red or orange.
+        if (urgency != StartUrgency.none) ...[
+          _StartBox(
+            urgency: urgency,
+            text: urgency == StartUrgency.expired
+                ? loc.guideStartExpired
+                : loc.guideStartSoon,
+          ),
+          const SizedBox(height: 14),
+        ],
         if (record != null)
           RenewalPlanSection(
             record: record,
@@ -247,40 +273,8 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
             },
           ),
         if (guide != null) ...[
-          Container(
-            padding: const EdgeInsets.all(14),
-            decoration: BoxDecoration(
-              color: scheme.primary.withValues(alpha: 0.08),
-              borderRadius: BorderRadius.circular(14),
-            ),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(Icons.schedule_rounded, color: scheme.primary, size: 22),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        loc.guideWhenToStart,
-                        style: TextStyle(
-                          fontSize: 12.5,
-                          fontWeight: FontWeight.w700,
-                          color: scheme.primary,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        startText(loc, guide, record),
-                        style: TextStyle(fontSize: 14, color: scheme.onSurface),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
+          if (urgency == StartUrgency.none)
+            _StartBox(urgency: urgency, text: startText(loc, guide, record)),
           const SizedBox(height: 20),
           if (_hasPlan)
             // The plan above replaces the general checklist; it stays one tap
@@ -386,6 +380,87 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
           ),
         ],
       ],
+    );
+  }
+}
+
+/// The When to start box: red when the record has expired, orange when it
+/// is due soon, and the app colour for the general advice.
+class _StartBox extends StatelessWidget {
+  final StartUrgency urgency;
+  final String text;
+
+  const _StartBox({required this.urgency, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+    final dark = theme.brightness == Brightness.dark;
+    final Color accent;
+    switch (urgency) {
+      case StartUrgency.expired:
+        accent = dark ? const Color(0xFFFF8A80) : const Color(0xFFC62828);
+        break;
+      case StartUrgency.soon:
+        accent = dark ? const Color(0xFFFFB74D) : const Color(0xFFB35A00);
+        break;
+      case StartUrgency.none:
+        accent = scheme.primary;
+        break;
+    }
+    return Semantics(
+      container: true,
+      child: Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(
+          color: accent.withValues(alpha: dark ? 0.16 : 0.09),
+          borderRadius: BorderRadius.circular(14),
+          border: urgency == StartUrgency.none
+              ? null
+              : Border.all(color: accent.withValues(alpha: 0.35)),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(
+              urgency == StartUrgency.none
+                  ? Icons.schedule_rounded
+                  : Icons.priority_high_rounded,
+              color: accent,
+              size: 22,
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    loc.guideWhenToStart,
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w700,
+                      color: accent,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    text,
+                    style: TextStyle(
+                      fontSize: 14.5,
+                      fontWeight: urgency == StartUrgency.none
+                          ? FontWeight.w400
+                          : FontWeight.w700,
+                      color: scheme.onSurface,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
