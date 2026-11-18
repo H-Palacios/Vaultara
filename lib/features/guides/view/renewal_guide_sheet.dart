@@ -87,6 +87,10 @@ class _RenewalGuideSheet extends StatefulWidget {
 class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
   final Set<int> _ticked = <int>{};
 
+  /// True once the record's own renewal plan is loaded: the general
+  /// checklist below is then folded away, as the plan replaces it.
+  bool _hasPlan = false;
+
   @override
   void initState() {
     super.initState();
@@ -120,6 +124,79 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
     _saveTicks();
   }
 
+  /// The general checklist for this kind of record.
+  Widget _generalChecklist(
+    AppLocalizations loc,
+    ColorScheme scheme,
+    List<String Function(AppLocalizations)> steps, {
+    required bool header,
+  }) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (header)
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  loc.guideChecklist,
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    fontWeight: FontWeight.w700,
+                    color: scheme.onSurfaceVariant,
+                  ),
+                ),
+              ),
+              Text(
+                loc.guideProgress(_ticked.length, steps.length),
+                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+              ),
+            ],
+          ),
+        const SizedBox(height: 6),
+        for (var i = 0; i < steps.length; i++)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 6),
+            child: Material(
+              color: scheme.surfaceContainerHighest.withValues(alpha: 0.5),
+              borderRadius: BorderRadius.circular(14),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(14),
+                onTap: () => _toggle(i),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(4, 4, 14, 4),
+                  child: Row(
+                    children: [
+                      Checkbox(
+                        value: _ticked.contains(i),
+                        onChanged: (_) => _toggle(i),
+                      ),
+                      const SizedBox(width: 4),
+                      Expanded(
+                        child: Text(
+                          steps[i](loc),
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: _ticked.contains(i)
+                                ? scheme.onSurfaceVariant
+                                : scheme.onSurface,
+                            decoration: _ticked.contains(i)
+                                ? TextDecoration.lineThrough
+                                : TextDecoration.none,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
@@ -137,33 +214,38 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
         24 + MediaQuery.of(context).padding.bottom,
       ),
       children: [
+        // The record is the title; what kind it is and what this sheet is
+        // sit under it.
         Text(
-          loc.guideTitle,
-          textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+          widget.recordName.trim().isNotEmpty
+              ? widget.recordName
+              : loc.guideTitle,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(fontSize: 21, fontWeight: FontWeight.w800),
         ),
         const SizedBox(height: 4),
         Text(
-          PresetCatalog.groupLabel(context, widget.groupKey),
-          maxLines: 1,
+          widget.recordName.trim().isNotEmpty
+              ? '${PresetCatalog.groupLabel(context, widget.groupKey)}  ·  '
+                    '${loc.guideTitle}'
+              : PresetCatalog.groupLabel(context, widget.groupKey),
+          maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w700,
+            fontSize: 13.5,
+            fontWeight: FontWeight.w600,
             color: scheme.primary,
           ),
         ),
-        if (widget.recordName.trim().isNotEmpty) ...[
-          const SizedBox(height: 2),
-          Text(
-            widget.recordName,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 13, color: scheme.onSurfaceVariant),
-          ),
-        ],
         const SizedBox(height: 18),
-        if (record != null) RenewalPlanSection(record: record),
+        if (record != null)
+          RenewalPlanSection(
+            record: record,
+            onPlanLoaded: (has) {
+              if (mounted && has != _hasPlan) setState(() => _hasPlan = has);
+            },
+          ),
         if (guide != null) ...[
           Container(
             padding: const EdgeInsets.all(14),
@@ -200,63 +282,38 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
             ),
           ),
           const SizedBox(height: 20),
-          Row(
-            children: [
-              Expanded(
-                child: Text(
+          if (_hasPlan)
+            // The plan above replaces the general checklist; it stays one tap
+            // away for anyone who wants it.
+            Theme(
+              data: Theme.of(
+                context,
+              ).copyWith(dividerColor: Colors.transparent),
+              child: ExpansionTile(
+                tilePadding: EdgeInsets.zero,
+                childrenPadding: EdgeInsets.zero,
+                title: Text(
                   loc.guideChecklist,
                   style: TextStyle(
-                    fontSize: 12.5,
+                    fontSize: 13.5,
                     fontWeight: FontWeight.w700,
                     color: scheme.onSurfaceVariant,
                   ),
                 ),
-              ),
-              Text(
-                loc.guideProgress(_ticked.length, steps.length),
-                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
-              ),
-            ],
-          ),
-          const SizedBox(height: 6),
-          for (var i = 0; i < steps.length; i++)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 6),
-              child: Material(
-                color: scheme.surfaceContainerHighest.withValues(alpha: 0.5),
-                borderRadius: BorderRadius.circular(14),
-                child: InkWell(
-                  borderRadius: BorderRadius.circular(14),
-                  onTap: () => _toggle(i),
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(4, 4, 14, 4),
-                    child: Row(
-                      children: [
-                        Checkbox(
-                          value: _ticked.contains(i),
-                          onChanged: (_) => _toggle(i),
-                        ),
-                        const SizedBox(width: 4),
-                        Expanded(
-                          child: Text(
-                            steps[i](loc),
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: _ticked.contains(i)
-                                  ? scheme.onSurfaceVariant
-                                  : scheme.onSurface,
-                              decoration: _ticked.contains(i)
-                                  ? TextDecoration.lineThrough
-                                  : TextDecoration.none,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                trailing: Text(
+                  loc.guideProgress(_ticked.length, steps.length),
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: scheme.onSurfaceVariant,
                   ),
                 ),
+                children: [
+                  _generalChecklist(loc, scheme, steps, header: false),
+                ],
               ),
-            ),
+            )
+          else
+            _generalChecklist(loc, scheme, steps, header: true),
           const SizedBox(height: 14),
           Container(
             padding: const EdgeInsets.all(14),

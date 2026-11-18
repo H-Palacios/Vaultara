@@ -29,7 +29,15 @@ Future<void> openOfficialLink(BuildContext context, String url) async {
 class AssistantSourceLinks extends StatelessWidget {
   final List<RenewalSource> sources;
 
-  const AssistantSourceLinks({super.key, required this.sources});
+  /// A list with the page title and its site under it (in a saved plan),
+  /// instead of chips (in the chat).
+  final bool asList;
+
+  const AssistantSourceLinks({
+    super.key,
+    required this.sources,
+    this.asList = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -51,35 +59,99 @@ class AssistantSourceLinks extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 4),
-          Wrap(
-            spacing: 6,
-            runSpacing: 6,
-            children: [
-              for (final source in sources)
-                ActionChip(
-                  avatar: Icon(
-                    source.official
-                        ? Icons.verified_rounded
-                        : Icons.open_in_new_rounded,
-                    size: 15,
-                    color: scheme.primary,
+          if (asList)
+            for (final source in sources) _SourceRow(source: source)
+          else
+            Wrap(
+              spacing: 6,
+              runSpacing: 6,
+              children: [
+                for (final source in sources)
+                  ActionChip(
+                    avatar: Icon(
+                      source.official
+                          ? Icons.verified_rounded
+                          : Icons.open_in_new_rounded,
+                      size: 15,
+                      color: scheme.primary,
+                    ),
+                    label: ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 220),
+                      child: Text(
+                        source.title.length > 40 ? source.host : source.title,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                    tooltip: source.official
+                        ? '${loc.coachOfficial} · ${source.url}'
+                        : source.url,
+                    onPressed: () => openOfficialLink(context, source.url),
                   ),
-                  label: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 220),
-                    child: Text(
-                      source.title.length > 40 ? source.host : source.title,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
+              ],
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _SourceRow extends StatelessWidget {
+  final RenewalSource source;
+
+  const _SourceRow({required this.source});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    final host = source.host.replaceFirst('www.', '');
+    return InkWell(
+      borderRadius: BorderRadius.circular(10),
+      onTap: () => openOfficialLink(context, source.url),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 2),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Icon(
+              source.official
+                  ? Icons.verified_rounded
+                  : Icons.open_in_new_rounded,
+              size: 18,
+              color: scheme.primary,
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    source.title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 13.5,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
-                  tooltip: source.official
-                      ? '${loc.coachOfficial} · ${source.url}'
-                      : source.url,
-                  onPressed: () => openOfficialLink(context, source.url),
-                ),
-            ],
-          ),
-        ],
+                  const SizedBox(height: 1),
+                  Text(
+                    source.official ? '$host · ${loc.coachOfficial}' : host,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: source.official
+                          ? scheme.primary
+                          : scheme.onSurfaceVariant,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

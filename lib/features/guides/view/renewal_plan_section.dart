@@ -18,7 +18,15 @@ import 'package:vaultara/shell/shell_state.dart';
 class RenewalPlanSection extends StatefulWidget {
   final TrackedItem record;
 
-  const RenewalPlanSection({super.key, required this.record});
+  /// Told whether the record has a plan once it is loaded, so the sheet can
+  /// fold away the general checklist the plan replaces.
+  final ValueChanged<bool>? onPlanLoaded;
+
+  const RenewalPlanSection({
+    super.key,
+    required this.record,
+    this.onPlanLoaded,
+  });
 
   @override
   State<RenewalPlanSection> createState() => _RenewalPlanSectionState();
@@ -52,6 +60,7 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
       _plan = plan;
       _loading = false;
     });
+    widget.onPlanLoaded?.call(plan != null);
   }
 
   Future<void> _toggle(int index) async {
@@ -250,10 +259,26 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
               ),
               Text(
                 loc.guideProgress(plan.done.length, plan.steps.length),
-                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+                style: TextStyle(
+                  fontSize: 12.5,
+                  fontWeight: FontWeight.w700,
+                  color: scheme.primary,
+                ),
               ),
             ],
           ),
+          const SizedBox(height: 10),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(99),
+            child: LinearProgressIndicator(
+              value: plan.steps.isEmpty
+                  ? 0
+                  : plan.done.length / plan.steps.length,
+              minHeight: 6,
+              backgroundColor: scheme.primary.withValues(alpha: 0.12),
+            ),
+          ),
+          const SizedBox(height: 6),
           if (country != null || plan.applyIn != null || plan.checked != null)
             Padding(
               padding: const EdgeInsets.only(top: 4),
@@ -323,6 +348,7 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
               step: plan.steps[i],
               done: plan.done.contains(i),
               next: plan.nextStep == i,
+              last: i == plan.steps.length - 1,
               onToggle: () => _toggle(i),
             ),
           if (plan.fee != null || plan.processing != null) ...[
@@ -413,7 +439,7 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
           ],
           if (plan.sources.isNotEmpty) ...[
             const SizedBox(height: 8),
-            AssistantSourceLinks(sources: plan.sources),
+            AssistantSourceLinks(sources: plan.sources, asList: true),
           ],
           Text(
             loc.coachRulesChange,
@@ -470,11 +496,15 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
   }
 }
 
+/// One step as a timeline: a circle with the step number (a tick once it is
+/// done) joined to the next step by a line, the step text, and the page the
+/// step comes from under it. The step to do next is highlighted.
 class _StepRow extends StatelessWidget {
   final int number;
   final RenewalPlanStep step;
   final bool done;
   final bool next;
+  final bool last;
   final VoidCallback onToggle;
 
   const _StepRow({
@@ -482,6 +512,7 @@ class _StepRow extends StatelessWidget {
     required this.step,
     required this.done,
     required this.next,
+    required this.last,
     required this.onToggle,
   });
 
@@ -490,43 +521,140 @@ class _StepRow extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final loc = AppLocalizations.of(context)!;
     final url = step.url;
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 4),
+    final host = url == null ? null : Uri.tryParse(url)?.host;
+    final circle = done
+        ? scheme.primary
+        : next
+        ? scheme.primary.withValues(alpha: 0.14)
+        : Colors.transparent;
+    return Semantics(
+      checked: done,
+      button: true,
+      label: '$number. ${step.text}',
+      excludeSemantics: true,
       child: Material(
         color: next
-            ? scheme.primary.withValues(alpha: 0.07)
+            ? scheme.primary.withValues(alpha: 0.06)
             : Colors.transparent,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(14),
         child: InkWell(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(14),
           onTap: onToggle,
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(0, 2, 4, 2),
+          child: IntrinsicHeight(
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Checkbox(value: done, onChanged: (_) => onToggle()),
+                SizedBox(
+                  width: 44,
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 10),
+                      AnimatedContainer(
+                        duration: const Duration(milliseconds: 180),
+                        width: 28,
+                        height: 28,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: circle,
+                          border: Border.all(
+                            color: done || next
+                                ? scheme.primary
+                                : scheme.outline,
+                            width: 1.6,
+                          ),
+                        ),
+                        child: done
+                            ? Icon(
+                                Icons.check_rounded,
+                                size: 18,
+                                color: scheme.onPrimary,
+                              )
+                            : Text(
+                                '$number',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w800,
+                                  color: next
+                                      ? scheme.primary
+                                      : scheme.onSurfaceVariant,
+                                ),
+                              ),
+                      ),
+                      if (!last)
+                        Expanded(
+                          child: Container(
+                            width: 2,
+                            margin: const EdgeInsets.symmetric(vertical: 4),
+                            color: done
+                                ? scheme.primary.withValues(alpha: 0.5)
+                                : scheme.outlineVariant,
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
                 Expanded(
-                  child: Text(
-                    '$number. ${step.text}',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: done ? scheme.onSurfaceVariant : scheme.onSurface,
-                      decoration: done
-                          ? TextDecoration.lineThrough
-                          : TextDecoration.none,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(4, 12, 10, 12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          step.text,
+                          style: TextStyle(
+                            fontSize: 14.5,
+                            height: 1.35,
+                            fontWeight: next
+                                ? FontWeight.w700
+                                : FontWeight.w500,
+                            color: done
+                                ? scheme.onSurfaceVariant
+                                : scheme.onSurface,
+                          ),
+                        ),
+                        if (url != null && host != null)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 6),
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(8),
+                              onTap: () => openOfficialLink(context, url),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 4,
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(
+                                      Icons.open_in_new_rounded,
+                                      size: 15,
+                                      color: scheme.primary,
+                                    ),
+                                    const SizedBox(width: 6),
+                                    Flexible(
+                                      child: Text(
+                                        host.replaceFirst('www.', ''),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        semanticsLabel: loc.coachOpenLink,
+                                        style: TextStyle(
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.w700,
+                                          color: scheme.primary,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                      ],
                     ),
                   ),
                 ),
-                if (url != null)
-                  IconButton(
-                    tooltip: loc.coachOpenLink,
-                    onPressed: () => openOfficialLink(context, url),
-                    icon: Icon(
-                      Icons.open_in_new_rounded,
-                      size: 18,
-                      color: scheme.primary,
-                    ),
-                  ),
               ],
             ),
           ),
