@@ -176,6 +176,23 @@ const ctx = {
   assert.ok(isProviderSite("https://www.capitecbank.co.za/cards", "Capitec"));
   assert.ok(isProviderSite("https://www.fnb.co.za/", "FNB"));
   assert.ok(!isProviderSite("https://www.reddit.com/r/fnb", "AB"));
+  // The company's own site under a shorter or longer name counts; a site
+  // that only has the name in its address does not.
+  assert.ok(isProviderSite("https://www.unipol.it/rinnovi", "UnipolSai"));
+  assert.ok(isProviderSite("https://www.unipolsai.it/", "UnipolSai"));
+  assert.ok(!isProviderSite("https://www.assicurazione-unipolsai.info/scaduta", "UnipolSai"));
+  assert.ok(isProviderSite("https://online.fnb.co.za/login", "FNB"));
+  assert.ok(isProviderSite("https://www.discovery.co.za/car-insurance", "Discovery Insure"));
+  assert.ok(isProviderSite("https://www.aviva.co.uk/insurance/motor", "Aviva"));
+  assert.ok(!isProviderSite("https://www.capitecbankreviews.com/", "Capitec"));
+  assert.ok(!isProviderSite("https://www.fnbfans.co.za/", "FNB"));
+  const { cleanSteps } = coach._test;
+  const tidy = cleanSteps([
+    "Accept the renewal terms early (a third-party site; check with Unipol).",
+    "Save the new documents in Vaultara.",
+    "Pay online by card.",
+  ]);
+  assert.deepStrictEqual(tidy.map((s) => s.text), ["Accept the renewal terms early.", "Pay online by card."]);
   assert.strictEqual(recordKind({ group: "debit_and_credit_cards" }).provider, "bank");
   assert.strictEqual(recordKind({ group: "vehicle_registrations" }).kind, "vehicle");
   assert.strictEqual(recordKind({ group: "passports" }).kind, "document");
