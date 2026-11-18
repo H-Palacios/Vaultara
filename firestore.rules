@@ -252,7 +252,8 @@ service cloud.firestore {
         && shortText('lostLine', 40)
         && (!('issuedIn' in d) || d.issuedIn == null
             || (d.issuedIn is string && d.issuedIn.matches('^[A-Z]{2}$')))
-        && shortText('provider', 60);
+        && shortText('provider', 60)
+        && shortText('reference', 40);
     }
 
     function optionalBool(field) {
