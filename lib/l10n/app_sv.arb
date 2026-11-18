@@ -3951,5 +3951,13 @@
   "homeSectionTitle": "Var du bor",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Den har gått ut. Börja nu.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Den går ut snart. Börja nu.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

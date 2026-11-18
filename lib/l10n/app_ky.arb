@@ -3976,5 +3976,13 @@
   "homeSectionTitle": "Кайда жашайсыз",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Мөөнөтү өтүп кеткен. Азыр баштаңыз.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Мөөнөтү жакында бүтөт. Азыр баштаңыз.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

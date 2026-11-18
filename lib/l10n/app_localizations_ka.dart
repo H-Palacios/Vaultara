@@ -9466,4 +9466,10 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'სად ცხოვრობთ';
+
+  @override
+  String get guideStartExpired => 'ვადა გასულია. დაიწყეთ ახლავე.';
+
+  @override
+  String get guideStartSoon => 'ვადა მალე გადის. დაიწყეთ ახლავე.';
 }

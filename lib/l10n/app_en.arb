@@ -11755,5 +11755,13 @@
   "homeSectionTitle": "Where you live",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "It has expired. Start now.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "It is due soon. Start now.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

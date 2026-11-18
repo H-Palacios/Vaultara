@@ -9465,4 +9465,10 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'ඔබ ජීවත් වන තැන';
+
+  @override
+  String get guideStartExpired => 'එය කල් ඉකුත් වී ඇත. දැන්ම අරඹන්න.';
+
+  @override
+  String get guideStartSoon => 'එය ඉක්මනින් කල් ඉකුත් වේ. දැන්ම අරඹන්න.';
 }

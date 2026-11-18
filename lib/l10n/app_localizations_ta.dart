@@ -9466,4 +9466,10 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'நீங்கள் வசிக்கும் இடம்';
+
+  @override
+  String get guideStartExpired => 'இதன் காலாவதி முடிந்தது. இப்போதே தொடங்குங்கள்.';
+
+  @override
+  String get guideStartSoon => 'இது விரைவில் காலாவதியாகும். இப்போதே தொடங்குங்கள்.';
 }

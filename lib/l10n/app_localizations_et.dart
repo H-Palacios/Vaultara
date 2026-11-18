@@ -9471,4 +9471,10 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Kus sa elad';
+
+  @override
+  String get guideStartExpired => 'See on aegunud. Alusta kohe.';
+
+  @override
+  String get guideStartSoon => 'See aegub varsti. Alusta kohe.';
 }

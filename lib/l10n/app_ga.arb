@@ -3970,5 +3970,13 @@
   "homeSectionTitle": "Cá bhfuil tú i do chónaí",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Tá sé imithe in éag. Tosaigh anois.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Rachaidh sé in éag go luath. Tosaigh anois.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

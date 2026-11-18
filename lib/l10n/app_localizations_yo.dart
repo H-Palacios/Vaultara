@@ -9414,4 +9414,10 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Ibi tí o ń gbé';
+
+  @override
+  String get guideStartExpired => 'Ó ti parí. Bẹ̀rẹ̀ báyìí.';
+
+  @override
+  String get guideStartSoon => 'Yóò parí láìpẹ́. Bẹ̀rẹ̀ báyìí.';
 }

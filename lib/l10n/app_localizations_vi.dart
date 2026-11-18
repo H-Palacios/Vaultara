@@ -9403,4 +9403,10 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Nơi bạn sống';
+
+  @override
+  String get guideStartExpired => 'Đã hết hạn. Hãy bắt đầu ngay.';
+
+  @override
+  String get guideStartSoon => 'Sắp hết hạn. Hãy bắt đầu ngay.';
 }

@@ -3965,5 +3965,13 @@
   "homeSectionTitle": "ਤੁਸੀਂ ਕਿੱਥੇ ਰਹਿੰਦੇ ਹੋ",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "ਇਸਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਗਈ ਹੈ। ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ।",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "ਇਸਦੀ ਮਿਆਦ ਜਲਦੀ ਖਤਮ ਹੋਵੇਗੀ। ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ।",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

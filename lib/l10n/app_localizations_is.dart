@@ -9465,4 +9465,10 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Hvar þú býrð';
+
+  @override
+  String get guideStartExpired => 'Það er útrunnið. Byrjaðu núna.';
+
+  @override
+  String get guideStartSoon => 'Það rennur út fljótlega. Byrjaðu núna.';
 }

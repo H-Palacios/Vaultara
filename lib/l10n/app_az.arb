@@ -3708,5 +3708,13 @@
   "homeSectionTitle": "Yaşadığınız yer",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Müddəti bitib. İndi başlayın.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Müddəti tezliklə bitir. İndi başlayın.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

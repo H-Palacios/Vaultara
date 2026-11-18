@@ -9723,4 +9723,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'مكان إقامتك';
+
+  @override
+  String get guideStartExpired => 'انتهت صلاحيته. ابدأ الآن.';
+
+  @override
+  String get guideStartSoon => 'سينتهي قريبًا. ابدأ الآن.';
 }

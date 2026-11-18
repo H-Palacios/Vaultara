@@ -3963,5 +3963,13 @@
   "homeSectionTitle": "איפה אתה גר",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "פג תוקפו. התחל עכשיו.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "תוקפו יפוג בקרוב. התחל עכשיו.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

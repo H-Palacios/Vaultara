@@ -9466,4 +9466,10 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'तपाईं कहाँ बस्नुहुन्छ';
+
+  @override
+  String get guideStartExpired => 'यसको म्याद सकियो। अहिले नै सुरु गर्नुहोस्।';
+
+  @override
+  String get guideStartSoon => 'यसको म्याद चाँडै सकिँदैछ। अहिले नै सुरु गर्नुहोस्।';
 }

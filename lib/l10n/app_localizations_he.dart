@@ -9528,4 +9528,10 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'איפה אתה גר';
+
+  @override
+  String get guideStartExpired => 'פג תוקפו. התחל עכשיו.';
+
+  @override
+  String get guideStartSoon => 'תוקפו יפוג בקרוב. התחל עכשיו.';
 }

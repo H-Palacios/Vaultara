@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "Halka aad ku nooshahay",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Wakhtigiisu wuu dhacay. Hadda bilow.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Wakhtigiisu dhowaan ayuu dhacayaa. Hadda bilow.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

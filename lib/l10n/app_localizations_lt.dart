@@ -9623,4 +9623,10 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Kur gyvenate';
+
+  @override
+  String get guideStartExpired => 'Galiojimas baigėsi. Pradėkite dabar.';
+
+  @override
+  String get guideStartSoon => 'Netrukus baigsis galiojimas. Pradėkite dabar.';
 }

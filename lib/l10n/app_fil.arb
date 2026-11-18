@@ -3970,5 +3970,13 @@
   "homeSectionTitle": "Kung saan ka nakatira",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Expired na ito. Magsimula na ngayon.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Malapit na itong mag-expire. Magsimula na ngayon.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

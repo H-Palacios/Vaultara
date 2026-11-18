@@ -9466,4 +9466,10 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'ನೀವು ಎಲ್ಲಿ ವಾಸಿಸುತ್ತೀರಿ';
+
+  @override
+  String get guideStartExpired => 'ಇದರ ಅವಧಿ ಮುಗಿದಿದೆ. ಈಗಲೇ ಪ್ರಾರಂಭಿಸಿ.';
+
+  @override
+  String get guideStartSoon => 'ಇದರ ಅವಧಿ ಶೀಘ್ರದಲ್ಲೇ ಮುಗಿಯುತ್ತದೆ. ಈಗಲೇ ಪ್ರಾರಂಭಿಸಿ.';
 }

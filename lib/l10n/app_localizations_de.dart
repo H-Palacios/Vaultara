@@ -9471,4 +9471,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Wo du lebst';
+
+  @override
+  String get guideStartExpired => 'Es ist abgelaufen. Jetzt starten.';
+
+  @override
+  String get guideStartSoon => 'Es läuft bald ab. Jetzt starten.';
 }

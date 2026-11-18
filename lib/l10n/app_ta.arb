@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "நீங்கள் வசிக்கும் இடம்",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "இதன் காலாவதி முடிந்தது. இப்போதே தொடங்குங்கள்.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "இது விரைவில் காலாவதியாகும். இப்போதே தொடங்குங்கள்.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

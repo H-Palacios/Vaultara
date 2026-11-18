@@ -9403,4 +9403,10 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'ບ່ອນທີ່ທ່ານອາໄສ';
+
+  @override
+  String get guideStartExpired => 'ໝົດອາຍຸແລ້ວ. ເລີ່ມດຽວນີ້.';
+
+  @override
+  String get guideStartSoon => 'ໃກ້ໝົດອາຍຸແລ້ວ. ເລີ່ມດຽວນີ້.';
 }

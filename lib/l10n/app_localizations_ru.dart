@@ -9647,4 +9647,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Где вы живёте';
+
+  @override
+  String get guideStartExpired => 'Срок истёк. Начните сейчас.';
+
+  @override
+  String get guideStartSoon => 'Срок скоро истекает. Начните сейчас.';
 }

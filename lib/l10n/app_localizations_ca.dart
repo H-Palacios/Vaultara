@@ -9471,4 +9471,10 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'On vius';
+
+  @override
+  String get guideStartExpired => 'Ha caducat. Comença ara.';
+
+  @override
+  String get guideStartSoon => 'Caduca aviat. Comença ara.';
 }

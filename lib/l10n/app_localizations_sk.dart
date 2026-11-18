@@ -9625,4 +9625,10 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Kde žijete';
+
+  @override
+  String get guideStartExpired => 'Platnosť vypršala. Začnite hneď.';
+
+  @override
+  String get guideStartSoon => 'Čoskoro vyprší. Začnite hneď.';
 }

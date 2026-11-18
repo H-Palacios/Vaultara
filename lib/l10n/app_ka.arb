@@ -3976,5 +3976,13 @@
   "homeSectionTitle": "სად ცხოვრობთ",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "ვადა გასულია. დაიწყეთ ახლავე.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "ვადა მალე გადის. დაიწყეთ ახლავე.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

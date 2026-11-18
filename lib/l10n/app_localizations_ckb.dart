@@ -9465,4 +9465,10 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'شوێنی ژیانت';
+
+  @override
+  String get guideStartExpired => 'بەسەرچووە. ئێستا دەست پێبکە.';
+
+  @override
+  String get guideStartSoon => 'بەم زووانە بەسەردەچێت. ئێستا دەست پێبکە.';
 }

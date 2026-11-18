@@ -9478,4 +9478,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Dove vivi';
+
+  @override
+  String get guideStartExpired => 'È scaduto. Inizia ora.';
+
+  @override
+  String get guideStartSoon => 'Scade a breve. Inizia ora.';
 }

@@ -3976,5 +3976,13 @@
   "homeSectionTitle": "ບ່ອນທີ່ທ່ານອາໄສ",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "ໝົດອາຍຸແລ້ວ. ເລີ່ມດຽວນີ້.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "ໃກ້ໝົດອາຍຸແລ້ວ. ເລີ່ມດຽວນີ້.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

@@ -9470,4 +9470,10 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Var du bor';
+
+  @override
+  String get guideStartExpired => 'Den har gått ut. Börja nu.';
+
+  @override
+  String get guideStartSoon => 'Den går ut snart. Börja nu.';
 }

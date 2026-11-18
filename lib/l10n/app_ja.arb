@@ -3970,5 +3970,13 @@
   "homeSectionTitle": "お住まいの国",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "期限が切れています。今すぐ始めましょう。",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "まもなく期限です。今すぐ始めましょう。",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

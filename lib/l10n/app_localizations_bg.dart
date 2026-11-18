@@ -9467,4 +9467,10 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Къде живеете';
+
+  @override
+  String get guideStartExpired => 'Изтекъл е. Започнете сега.';
+
+  @override
+  String get guideStartSoon => 'Изтича скоро. Започнете сега.';
 }

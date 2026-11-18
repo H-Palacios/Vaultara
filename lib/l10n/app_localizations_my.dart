@@ -9401,4 +9401,10 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'သင်နေထိုင်ရာ';
+
+  @override
+  String get guideStartExpired => 'သက်တမ်းကုန်သွားပါပြီ။ ယခုစတင်ပါ။';
+
+  @override
+  String get guideStartSoon => 'သက်တမ်းမကြာမီကုန်ပါမည်။ ယခုစတင်ပါ။';
 }

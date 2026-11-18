@@ -9627,4 +9627,10 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Kde žijete';
+
+  @override
+  String get guideStartExpired => 'Platnost vypršela. Začněte hned.';
+
+  @override
+  String get guideStartSoon => 'Brzy vyprší. Začněte hned.';
 }

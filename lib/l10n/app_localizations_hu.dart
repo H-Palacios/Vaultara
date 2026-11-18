@@ -9466,4 +9466,10 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Hol élsz';
+
+  @override
+  String get guideStartExpired => 'Lejárt. Kezdd el most.';
+
+  @override
+  String get guideStartSoon => 'Hamarosan lejár. Kezdd el most.';
 }

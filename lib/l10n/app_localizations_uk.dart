@@ -9641,4 +9641,10 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Де ви живете';
+
+  @override
+  String get guideStartExpired => 'Термін минув. Почніть зараз.';
+
+  @override
+  String get guideStartSoon => 'Термін скоро спливає. Почніть зараз.';
 }

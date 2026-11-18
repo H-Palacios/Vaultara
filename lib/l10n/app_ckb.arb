@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "شوێنی ژیانت",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "بەسەرچووە. ئێستا دەست پێبکە.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "بەم زووانە بەسەردەچێت. ئێستا دەست پێبکە.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

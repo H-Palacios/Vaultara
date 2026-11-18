@@ -9471,4 +9471,10 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Ku jetoni';
+
+  @override
+  String get guideStartExpired => 'Ka skaduar. Fillo tani.';
+
+  @override
+  String get guideStartSoon => 'Skadon së shpejti. Fillo tani.';
 }

@@ -9466,4 +9466,10 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'چېرته اوسېږئ';
+
+  @override
+  String get guideStartExpired => 'موده یې پای ته رسېدلې. همدا اوس پیل کړئ.';
+
+  @override
+  String get guideStartSoon => 'موده یې ژر پای ته رسېږي. همدا اوس پیل کړئ.';
 }

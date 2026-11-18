@@ -9646,4 +9646,10 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Gdzie mieszkasz';
+
+  @override
+  String get guideStartExpired => 'Termin minął. Zacznij teraz.';
+
+  @override
+  String get guideStartSoon => 'Termin wkrótce mija. Zacznij teraz.';
 }

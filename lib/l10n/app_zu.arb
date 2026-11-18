@@ -3950,5 +3950,13 @@
   "homeSectionTitle": "Lapho uhlala khona",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Iphelelwe yisikhathi. Qala manje.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Isizophelelwa yisikhathi maduze. Qala manje.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

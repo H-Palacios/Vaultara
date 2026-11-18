@@ -9456,4 +9456,10 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Таны амьдардаг газар';
+
+  @override
+  String get guideStartExpired => 'Хугацаа нь дууссан. Одоо эхэлнэ үү.';
+
+  @override
+  String get guideStartSoon => 'Хугацаа нь удахгүй дуусна. Одоо эхэлнэ үү.';
 }

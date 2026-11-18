@@ -3708,5 +3708,13 @@
   "homeSectionTitle": "നിങ്ങൾ താമസിക്കുന്നിടം",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "ഇതിന്റെ കാലാവധി കഴിഞ്ഞു. ഇപ്പോൾ തുടങ്ങുക.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "ഇതിന്റെ കാലാവധി ഉടൻ തീരും. ഇപ്പോൾ തുടങ്ങുക.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

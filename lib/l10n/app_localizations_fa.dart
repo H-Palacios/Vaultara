@@ -9466,4 +9466,10 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'محل زندگی شما';
+
+  @override
+  String get guideStartExpired => 'منقضی شده است. همین حالا شروع کنید.';
+
+  @override
+  String get guideStartSoon => 'به‌زودی منقضی می‌شود. همین حالا شروع کنید.';
 }

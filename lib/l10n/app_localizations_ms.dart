@@ -9403,4 +9403,10 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Tempat anda tinggal';
+
+  @override
+  String get guideStartExpired => 'Ia telah tamat tempoh. Mulakan sekarang.';
+
+  @override
+  String get guideStartSoon => 'Ia akan tamat tempoh tidak lama lagi. Mulakan sekarang.';
 }

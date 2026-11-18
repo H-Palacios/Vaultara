@@ -9465,4 +9465,10 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Қай жерде тұрасыз';
+
+  @override
+  String get guideStartExpired => 'Мерзімі өтіп кетті. Қазір бастаңыз.';
+
+  @override
+  String get guideStartSoon => 'Мерзімі жақында бітеді. Қазір бастаңыз.';
 }

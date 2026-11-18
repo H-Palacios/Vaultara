@@ -9470,4 +9470,10 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Missä asut';
+
+  @override
+  String get guideStartExpired => 'Se on vanhentunut. Aloita nyt.';
+
+  @override
+  String get guideStartSoon => 'Se vanhenee pian. Aloita nyt.';
 }

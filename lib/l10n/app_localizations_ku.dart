@@ -9466,4 +9466,10 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Tu li ku dijî';
+
+  @override
+  String get guideStartExpired => 'Dema wê derbas bûye. Niha dest pê bike.';
+
+  @override
+  String get guideStartSoon => 'Dema wê zû derbas dibe. Niha dest pê bike.';
 }

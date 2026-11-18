@@ -9472,4 +9472,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Onde vive';
+
+  @override
+  String get guideStartExpired => 'Já expirou. Comece agora.';
+
+  @override
+  String get guideStartSoon => 'Expira em breve. Comece agora.';
 }

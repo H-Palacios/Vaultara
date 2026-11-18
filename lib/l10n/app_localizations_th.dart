@@ -9391,4 +9391,10 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'ที่ที่คุณอาศัยอยู่';
+
+  @override
+  String get guideStartExpired => 'หมดอายุแล้ว เริ่มตอนนี้เลย';
+
+  @override
+  String get guideStartSoon => 'ใกล้หมดอายุแล้ว เริ่มตอนนี้เลย';
 }

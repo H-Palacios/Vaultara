@@ -9466,4 +9466,10 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Yaşadığınız yer';
+
+  @override
+  String get guideStartExpired => 'Müddəti bitib. İndi başlayın.';
+
+  @override
+  String get guideStartSoon => 'Müddəti tezliklə bitir. İndi başlayın.';
 }

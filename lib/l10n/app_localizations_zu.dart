@@ -9466,4 +9466,10 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Lapho uhlala khona';
+
+  @override
+  String get guideStartExpired => 'Iphelelwe yisikhathi. Qala manje.';
+
+  @override
+  String get guideStartSoon => 'Isizophelelwa yisikhathi maduze. Qala manje.';
 }

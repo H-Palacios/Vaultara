@@ -9465,4 +9465,10 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'የሚኖሩበት';
+
+  @override
+  String get guideStartExpired => 'ጊዜው አልፎበታል። አሁን ይጀምሩ።';
+
+  @override
+  String get guideStartSoon => 'ጊዜው ቀርቧል። አሁን ይጀምሩ።';
 }

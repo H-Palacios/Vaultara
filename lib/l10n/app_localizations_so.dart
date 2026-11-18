@@ -9465,4 +9465,10 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Halka aad ku nooshahay';
+
+  @override
+  String get guideStartExpired => 'Wakhtigiisu wuu dhacay. Hadda bilow.';
+
+  @override
+  String get guideStartSoon => 'Wakhtigiisu dhowaan ayuu dhacayaa. Hadda bilow.';
 }

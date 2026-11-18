@@ -3708,5 +3708,13 @@
   "homeSectionTitle": "သင်နေထိုင်ရာ",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "သက်တမ်းကုန်သွားပါပြီ။ ယခုစတင်ပါ။",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "သက်တမ်းမကြာမီကုန်ပါမည်။ ယခုစတင်ပါ။",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

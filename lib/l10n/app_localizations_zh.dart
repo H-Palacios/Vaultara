@@ -9403,6 +9403,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get homeSectionTitle => '你居住的地方';
+
+  @override
+  String get guideStartExpired => '已过期。请立即开始办理。';
+
+  @override
+  String get guideStartSoon => '即将到期。请立即开始办理。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18792,6 +18798,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get homeSectionTitle => '你居住的地方';
+
+  @override
+  String get guideStartExpired => '已过期。请立即开始办理。';
+
+  @override
+  String get guideStartSoon => '即将到期。请立即开始办理。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -28181,4 +28193,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get homeSectionTitle => '你居住的地方';
+
+  @override
+  String get guideStartExpired => '已過期。請立即開始辦理。';
+
+  @override
+  String get guideStartSoon => '即將到期。請立即開始辦理。';
 }

@@ -9471,4 +9471,10 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Hvor du bor';
+
+  @override
+  String get guideStartExpired => 'Den har utløpt. Start nå.';
+
+  @override
+  String get guideStartSoon => 'Den utløper snart. Start nå.';
 }

@@ -3963,5 +3963,13 @@
   "homeSectionTitle": "Tempat tinggal Anda",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Sudah kedaluwarsa. Mulai sekarang.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Segera kedaluwarsa. Mulai sekarang.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

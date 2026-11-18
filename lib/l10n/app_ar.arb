@@ -3996,5 +3996,13 @@
   "homeSectionTitle": "مكان إقامتك",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "انتهت صلاحيته. ابدأ الآن.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "سينتهي قريبًا. ابدأ الآن.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

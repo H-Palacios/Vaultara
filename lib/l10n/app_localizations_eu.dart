@@ -9471,4 +9471,10 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Non bizi zaren';
+
+  @override
+  String get guideStartExpired => 'Iraungita dago. Hasi orain.';
+
+  @override
+  String get guideStartSoon => 'Laster iraungiko da. Hasi orain.';
 }

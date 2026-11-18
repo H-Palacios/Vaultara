@@ -9466,4 +9466,10 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Unapoishi';
+
+  @override
+  String get guideStartExpired => 'Muda wake umeisha. Anza sasa.';
+
+  @override
+  String get guideStartSoon => 'Muda wake unaisha hivi karibuni. Anza sasa.';
 }

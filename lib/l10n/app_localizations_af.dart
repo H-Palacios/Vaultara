@@ -9471,4 +9471,10 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Waar jy woon';
+
+  @override
+  String get guideStartExpired => 'Dit het verval. Begin nou.';
+
+  @override
+  String get guideStartSoon => 'Dit is binnekort verval. Begin nou.';
 }

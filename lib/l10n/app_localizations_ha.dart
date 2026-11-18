@@ -9466,4 +9466,10 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Inda kake zaune';
+
+  @override
+  String get guideStartExpired => 'Ya ƙare. Fara yanzu.';
+
+  @override
+  String get guideStartSoon => 'Zai ƙare nan ba da daɗewa ba. Fara yanzu.';
 }

@@ -16146,6 +16146,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Where you live'**
   String get homeSectionTitle;
+
+  /// Renewal checklist, When to start: the record has already expired.
+  ///
+  /// In en, this message translates to:
+  /// **'It has expired. Start now.'**
+  String get guideStartExpired;
+
+  /// Renewal checklist, When to start: the record expires within a month.
+  ///
+  /// In en, this message translates to:
+  /// **'It is due soon. Start now.'**
+  String get guideStartSoon;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

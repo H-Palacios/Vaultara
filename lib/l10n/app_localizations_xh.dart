@@ -9466,4 +9466,10 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Apho uhlala khona';
+
+  @override
+  String get guideStartExpired => 'Liphelelwe lixesha. Qala ngoku.';
+
+  @override
+  String get guideStartSoon => 'Liza kuphelelwa lixesha kungekudala. Qala ngoku.';
 }

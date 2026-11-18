@@ -9550,6 +9550,12 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Где живите';
+
+  @override
+  String get guideStartExpired => 'Истекао је. Почните сада.';
+
+  @override
+  String get guideStartSoon => 'Ускоро истиче. Почните сада.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -19097,6 +19103,12 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get homeSectionTitle => 'Где живите';
+
+  @override
+  String get guideStartExpired => 'Истекао је. Почните сада.';
+
+  @override
+  String get guideStartSoon => 'Ускоро истиче. Почните сада.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -28640,4 +28652,10 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get homeSectionTitle => 'Gde živite';
+
+  @override
+  String get guideStartExpired => 'Istekao je. Počnite sada.';
+
+  @override
+  String get guideStartSoon => 'Uskoro ističe. Počnite sada.';
 }

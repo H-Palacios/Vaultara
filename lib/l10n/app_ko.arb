@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "거주 국가",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "만료되었습니다. 지금 시작하세요.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "곧 만료됩니다. 지금 시작하세요.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

@@ -9466,4 +9466,10 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Որտեղ եք ապրում';
+
+  @override
+  String get guideStartExpired => 'Ժամկետն անցել է։ Սկսեք հիմա։';
+
+  @override
+  String get guideStartSoon => 'Ժամկետը շուտով կավարտվի։ Սկսեք հիմա։';
 }

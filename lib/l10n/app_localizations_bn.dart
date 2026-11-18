@@ -9466,4 +9466,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'আপনি যেখানে থাকেন';
+
+  @override
+  String get guideStartExpired => 'মেয়াদ শেষ হয়ে গেছে। এখনই শুরু করুন।';
+
+  @override
+  String get guideStartSoon => 'শিগগিরই মেয়াদ শেষ হবে। এখনই শুরু করুন।';
 }

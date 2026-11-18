@@ -9403,4 +9403,10 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get homeSectionTitle => '거주 국가';
+
+  @override
+  String get guideStartExpired => '만료되었습니다. 지금 시작하세요.';
+
+  @override
+  String get guideStartSoon => '곧 만료됩니다. 지금 시작하세요.';
 }

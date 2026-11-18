@@ -3970,5 +3970,13 @@
   "homeSectionTitle": "Inda kake zaune",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Ya ƙare. Fara yanzu.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Zai ƙare nan ba da daɗewa ba. Fara yanzu.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

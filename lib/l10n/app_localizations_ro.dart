@@ -9552,4 +9552,10 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Unde locuiești';
+
+  @override
+  String get guideStartExpired => 'A expirat. Începe acum.';
+
+  @override
+  String get guideStartSoon => 'Expiră în curând. Începe acum.';
 }

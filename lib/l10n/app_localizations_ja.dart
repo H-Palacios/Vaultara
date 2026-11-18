@@ -9391,4 +9391,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'お住まいの国';
+
+  @override
+  String get guideStartExpired => '期限が切れています。今すぐ始めましょう。';
+
+  @override
+  String get guideStartSoon => 'まもなく期限です。今すぐ始めましょう。';
 }

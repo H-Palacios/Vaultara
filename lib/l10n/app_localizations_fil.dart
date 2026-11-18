@@ -9461,4 +9461,10 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Kung saan ka nakatira';
+
+  @override
+  String get guideStartExpired => 'Expired na ito. Magsimula na ngayon.';
+
+  @override
+  String get guideStartSoon => 'Malapit na itong mag-expire. Magsimula na ngayon.';
 }

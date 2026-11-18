@@ -3976,5 +3976,13 @@
   "homeSectionTitle": "Kur jūs dzīvojat",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Derīguma termiņš ir beidzies. Sāciet tagad.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Drīz beigsies derīguma termiņš. Sāciet tagad.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

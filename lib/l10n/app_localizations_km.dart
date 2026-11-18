@@ -9401,4 +9401,10 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'កន្លែងដែលអ្នករស់នៅ';
+
+  @override
+  String get guideStartExpired => 'វាផុតកំណត់ហើយ។ ចាប់ផ្តើមឥឡូវនេះ។';
+
+  @override
+  String get guideStartSoon => 'វាជិតផុតកំណត់ហើយ។ ចាប់ផ្តើមឥឡូវនេះ។';
 }

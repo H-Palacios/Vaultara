@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "Tu li ku dijî",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Dema wê derbas bûye. Niha dest pê bike.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Dema wê zû derbas dibe. Niha dest pê bike.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

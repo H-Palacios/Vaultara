@@ -9545,4 +9545,10 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Gdje živite';
+
+  @override
+  String get guideStartExpired => 'Istekao je. Počnite sada.';
+
+  @override
+  String get guideStartSoon => 'Uskoro istječe. Počnite sada.';
 }

@@ -9537,4 +9537,10 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Kur jūs dzīvojat';
+
+  @override
+  String get guideStartExpired => 'Derīguma termiņš ir beidzies. Sāciet tagad.';
+
+  @override
+  String get guideStartSoon => 'Drīz beigsies derīguma termiņš. Sāciet tagad.';
 }

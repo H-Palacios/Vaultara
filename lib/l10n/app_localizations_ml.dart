@@ -9466,4 +9466,10 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'നിങ്ങൾ താമസിക്കുന്നിടം';
+
+  @override
+  String get guideStartExpired => 'ഇതിന്റെ കാലാവധി കഴിഞ്ഞു. ഇപ്പോൾ തുടങ്ങുക.';
+
+  @override
+  String get guideStartSoon => 'ഇതിന്റെ കാലാവധി ഉടൻ തീരും. ഇപ്പോൾ തുടങ്ങുക.';
 }

@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "Nơi bạn sống",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Đã hết hạn. Hãy bắt đầu ngay.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Sắp hết hạn. Hãy bắt đầu ngay.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

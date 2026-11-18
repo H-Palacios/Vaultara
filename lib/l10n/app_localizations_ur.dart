@@ -9466,4 +9466,10 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'آپ کہاں رہتے ہیں';
+
+  @override
+  String get guideStartExpired => 'اس کی میعاد ختم ہو چکی ہے۔ ابھی شروع کریں۔';
+
+  @override
+  String get guideStartSoon => 'اس کی میعاد جلد ختم ہو رہی ہے۔ ابھی شروع کریں۔';
 }

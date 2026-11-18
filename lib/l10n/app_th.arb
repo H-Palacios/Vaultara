@@ -3975,5 +3975,13 @@
   "homeSectionTitle": "ที่ที่คุณอาศัยอยู่",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "หมดอายุแล้ว เริ่มตอนนี้เลย",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "ใกล้หมดอายุแล้ว เริ่มตอนนี้เลย",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

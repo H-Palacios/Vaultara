@@ -3972,5 +3972,13 @@
   "homeSectionTitle": "Որտեղ եք ապրում",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Ժամկետն անցել է։ Սկսեք հիմա։",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Ժամկետը շուտով կավարտվի։ Սկսեք հիմա։",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

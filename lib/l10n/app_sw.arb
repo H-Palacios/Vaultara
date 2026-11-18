@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "Unapoishi",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Muda wake umeisha. Anza sasa.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Muda wake unaisha hivi karibuni. Anza sasa.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

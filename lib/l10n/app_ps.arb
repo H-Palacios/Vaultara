@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "چېرته اوسېږئ",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "موده یې پای ته رسېدلې. همدا اوس پیل کړئ.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "موده یې ژر پای ته رسېږي. همدا اوس پیل کړئ.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

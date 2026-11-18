@@ -9465,4 +9465,10 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Каде живеете';
+
+  @override
+  String get guideStartExpired => 'Истечен е. Почнете сега.';
+
+  @override
+  String get guideStartSoon => 'Наскоро истекува. Почнете сега.';
 }

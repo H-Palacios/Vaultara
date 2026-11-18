@@ -3958,5 +3958,13 @@
   "homeSectionTitle": "Ibi tí o ń gbé",
   "@homeSectionTitle": {
     "description": "Profile section with where the user lives and their passport country."
+  },
+  "guideStartExpired": "Ó ti parí. Bẹ̀rẹ̀ báyìí.",
+  "@guideStartExpired": {
+    "description": "Renewal checklist, When to start: the record has already expired."
+  },
+  "guideStartSoon": "Yóò parí láìpẹ́. Bẹ̀rẹ̀ báyìí.",
+  "@guideStartSoon": {
+    "description": "Renewal checklist, When to start: the record expires within a month."
   }
 }

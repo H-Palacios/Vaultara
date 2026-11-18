@@ -9398,4 +9398,10 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Tempat tinggal Anda';
+
+  @override
+  String get guideStartExpired => 'Sudah kedaluwarsa. Mulai sekarang.';
+
+  @override
+  String get guideStartSoon => 'Segera kedaluwarsa. Mulai sekarang.';
 }

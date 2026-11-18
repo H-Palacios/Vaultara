@@ -9466,4 +9466,10 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get homeSectionTitle => 'Nerede yaşıyorsunuz';
+
+  @override
+  String get guideStartExpired => 'Süresi doldu. Hemen başlayın.';
+
+  @override
+  String get guideStartSoon => 'Süresi yakında doluyor. Hemen başlayın.';
 }
