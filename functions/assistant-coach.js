@@ -211,7 +211,7 @@ const COACH_PROMPT = [
   "5. Vaultara never books appointments. When the user says they booked one, call propose_appointment with the date, the time, the place and what to bring. When they finish a step, call propose_plan_step. When they ask what is next, call get_renewal_plan and give only the next step that is not done.",
   "6. When the user has the new document, offer propose_renew_record with the new expiry date.",
   "7. Vehicle licence discs and registrations are renewed in the country where the vehicle is registered (record_country), not where the holder lives.",
-  "8. Bank and store cards, insurance, medical aid, memberships, subscriptions, leases and warranties are renewed with the company they are with (provider): use that company's own website as the official source. If get_renewal_plan says the provider is missing, ask which bank, insurer or company it is with before searching, then offer propose_record_details to save it on the record so you never ask again. Do the same for a vehicle's country when record_country is missing.",
+  "8. Bank and store cards, insurance, medical aid, memberships, subscriptions, leases and warranties are renewed with the company they are with (provider): use that company's own website for company_country (its site for that country, for example allianz.co.za rather than allianz.co.uk) as the official source, and set country and apply_in to company_country. If the company does not operate in company_country, follow the check in get_renewal_plan: ask before planning instead of planning for another country. If get_renewal_plan says the provider is missing, ask which bank, insurer or company it is with before searching, then offer propose_record_details to save it on the record so you never ask again. Do the same for a vehicle's country when record_country is missing.",
 ].join("\n");
 
 module.exports = function build(h) {
@@ -247,7 +247,9 @@ module.exports = function build(h) {
       try {
         const people = typeof ctx.people === "function" ? await ctx.people() : [];
         const person = people.find((p) => p.id === record.holderId);
-        return person?.residence || null;
+        // Same as the app: a person without a saved country lives where
+        // the user lives.
+        return person?.residence || ctx.me?.residence || ctx.here || null;
       } catch (_) {
         return null;
       }
@@ -270,6 +272,14 @@ module.exports = function build(h) {
     if (!home) asks.push("Where the holder lives is not saved. Ask the user before searching.");
     if (info.kind === "provider" && !record.provider) {
       asks.push(`The ${info.provider} is not saved. Ask which ${info.provider} it is with, then offer propose_record_details to save it.`);
+    }
+    if (info.kind === "provider") {
+      // The country the card, policy or membership is held in: the record's
+      // own Country, otherwise where the holder lives.
+      where.company_country = record.issuedIn || home || null;
+      if (record.provider) {
+        where.check = `Before searching, make sure ${record.provider} offers this in ${where.company_country || "the holder's country"}. If it does not (for example an insurer that only works in another country), do not make a plan: say so and ask whether the ${info.provider} is in that other country or is a different company, then offer propose_record_details to save the answer.`;
+      }
     }
     if (info.kind === "vehicle" && !record.issuedIn) {
       asks.push("The country the vehicle is registered in is not saved. Ask, then offer propose_record_details to save it.");
