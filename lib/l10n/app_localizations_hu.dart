@@ -9426,4 +9426,44 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Add meg az üzletet';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (hivatalos oldal)';
+  }
+
+  @override
+  String get coachForLabel => 'Kinek';
+
+  @override
+  String get coachSourceLabel => 'Forrás';
+
+  @override
+  String get detailsCountry => 'Ország';
+
+  @override
+  String get detailsCountryHelper => 'Hol van nyilvántartva. Ezzel találjuk meg a cég oldalát az adott országban.';
+
+  @override
+  String get detailsReference => 'Kötvény- vagy okmányszám';
+
+  @override
+  String get detailsReferenceHelper => 'A képernyőn rejtve, és soha nem kerül az Ask Vaultarához.';
+
+  @override
+  String get detailsReferenceHide => 'Szám elrejtése';
+
+  @override
+  String get detailsReferenceShow => 'Szám megjelenítése';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (a telefonodról)';
+  }
+
+  @override
+  String get homeNotSet => 'Nincs megadva';
+
+  @override
+  String get homeSectionTitle => 'Hol élsz';
 }

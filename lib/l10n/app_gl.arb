@@ -3912,5 +3912,63 @@
   "detailsStoreHint": "Escribe a tenda",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company} (sitio oficial)",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "Para",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "Fonte",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "País",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "Onde está contratado. Serve para atopar o sitio da empresa nese país.",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "Número de póliza ou documento",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "Oculto na pantalla e nunca se envía a Ask Vaultara.",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "Ocultar número",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "Amosar número",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country} (do teu teléfono)",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "Sen definir",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "Onde vives",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

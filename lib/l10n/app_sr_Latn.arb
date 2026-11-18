@@ -3874,5 +3874,63 @@
   "detailsStoreHint": "Unesite prodavnicu",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company} (zvanični sajt)",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "Za",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "Izvor",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "Država",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "Gde se vodi. Koristi se za pronalaženje sajta kompanije za tu državu.",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "Broj polise ili dokumenta",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "Skriveno na ekranu i nikad se ne šalje Ask Vaultari.",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "Sakrij broj",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "Prikaži broj",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country} (sa vašeg telefona)",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "Nije postavljeno",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "Gde živite",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

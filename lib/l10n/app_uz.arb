@@ -3650,5 +3650,63 @@
   "detailsStoreHint": "Do'konni kiriting",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company} (rasmiy sayt)",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "Kim uchun",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "Manba",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "Davlat",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "Qayerda rasmiylashtirilgan. O'sha davlatdagi kompaniya saytini topish uchun ishlatiladi.",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "Polis yoki hujjat raqami",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "Ekranda yashiriladi va hech qachon Ask Vaultara'ga yuborilmaydi.",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "Raqamni yashirish",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "Raqamni ko'rsatish",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country} (telefoningizdan)",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "Belgilanmagan",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "Qayerda yashaysiz",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

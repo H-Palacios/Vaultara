@@ -3912,5 +3912,63 @@
   "detailsStoreHint": "店舗を入力",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company}（公式サイト）",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "対象",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "情報源",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "国",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "保有している国。その国の会社サイトを探すのに使います。",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "証券番号または書類番号",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "画面では隠され、Ask Vaultaraには送信されません。",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "番号を隠す",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "番号を表示",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country}（スマホの設定から）",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "未設定",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "お住まいの国",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

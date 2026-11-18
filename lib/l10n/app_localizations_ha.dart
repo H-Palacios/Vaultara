@@ -9426,4 +9426,44 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Shigar da shago';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (shafin hukuma)';
+  }
+
+  @override
+  String get coachForLabel => 'Don';
+
+  @override
+  String get coachSourceLabel => 'Tushe';
+
+  @override
+  String get detailsCountry => 'Ƙasa';
+
+  @override
+  String get detailsCountryHelper => 'Inda ake riƙe shi. Ana amfani da shi don nemo shafin kamfanin na wannan ƙasa.';
+
+  @override
+  String get detailsReference => 'Lambar inshora ko takarda';
+
+  @override
+  String get detailsReferenceHelper => 'An ɓoye a allo kuma ba a taɓa aikawa zuwa Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Ɓoye lamba';
+
+  @override
+  String get detailsReferenceShow => 'Nuna lamba';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (daga wayarka)';
+  }
+
+  @override
+  String get homeNotSet => 'Ba a saita ba';
+
+  @override
+  String get homeSectionTitle => 'Inda kake zaune';
 }

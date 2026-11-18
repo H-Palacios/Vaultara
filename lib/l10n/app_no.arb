@@ -3907,5 +3907,63 @@
   "detailsStoreHint": "Skriv inn butikken",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company} (offisielt nettsted)",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "For",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "Kilde",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "Land",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "Hvor det er tegnet. Brukes til å finne selskapets nettsted for det landet.",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "Polise- eller dokumentnummer",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "Skjult på skjermen og sendes aldri til Ask Vaultara.",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "Skjul nummer",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "Vis nummer",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country} (fra telefonen din)",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "Ikke angitt",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "Hvor du bor",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

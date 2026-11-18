@@ -9427,4 +9427,44 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Въведете магазина';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (официален сайт)';
+  }
+
+  @override
+  String get coachForLabel => 'За';
+
+  @override
+  String get coachSourceLabel => 'Източник';
+
+  @override
+  String get detailsCountry => 'Държава';
+
+  @override
+  String get detailsCountryHelper => 'Къде се води. Използва се, за да се намери сайтът на компанията за тази държава.';
+
+  @override
+  String get detailsReference => 'Номер на полица или документ';
+
+  @override
+  String get detailsReferenceHelper => 'Скрит на екрана и никога не се изпраща към Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Скрий номера';
+
+  @override
+  String get detailsReferenceShow => 'Покажи номера';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (от телефона ви)';
+  }
+
+  @override
+  String get homeNotSet => 'Не е зададено';
+
+  @override
+  String get homeSectionTitle => 'Къде живеете';
 }

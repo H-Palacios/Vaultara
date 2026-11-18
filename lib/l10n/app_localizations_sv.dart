@@ -9430,4 +9430,44 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Ange butiken';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (officiell webbplats)';
+  }
+
+  @override
+  String get coachForLabel => 'För';
+
+  @override
+  String get coachSourceLabel => 'Källa';
+
+  @override
+  String get detailsCountry => 'Land';
+
+  @override
+  String get detailsCountryHelper => 'Var det är tecknat. Används för att hitta bolagets webbplats för det landet.';
+
+  @override
+  String get detailsReference => 'Försäkrings- eller dokumentnummer';
+
+  @override
+  String get detailsReferenceHelper => 'Dolt på skärmen och skickas aldrig till Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Dölj nummer';
+
+  @override
+  String get detailsReferenceShow => 'Visa nummer';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (från din telefon)';
+  }
+
+  @override
+  String get homeNotSet => 'Inte angivet';
+
+  @override
+  String get homeSectionTitle => 'Var du bor';
 }

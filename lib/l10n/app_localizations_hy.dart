@@ -9426,4 +9426,44 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Մուտքագրեք խանութը';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (պաշտոնական կայք)';
+  }
+
+  @override
+  String get coachForLabel => 'Ում համար';
+
+  @override
+  String get coachSourceLabel => 'Աղբյուր';
+
+  @override
+  String get detailsCountry => 'Երկիր';
+
+  @override
+  String get detailsCountryHelper => 'Որտեղ է պահվում։ Օգտագործվում է այդ երկրի համար ընկերության կայքը գտնելու համար։';
+
+  @override
+  String get detailsReference => 'Պոլիսի կամ փաստաթղթի համար';
+
+  @override
+  String get detailsReferenceHelper => 'Թաքցված է էկրանին և երբեք չի ուղարկվում Ask Vaultara-ին։';
+
+  @override
+  String get detailsReferenceHide => 'Թաքցնել համարը';
+
+  @override
+  String get detailsReferenceShow => 'Ցույց տալ համարը';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (ձեր հեռախոսից)';
+  }
+
+  @override
+  String get homeNotSet => 'Նշված չէ';
+
+  @override
+  String get homeSectionTitle => 'Որտեղ եք ապրում';
 }

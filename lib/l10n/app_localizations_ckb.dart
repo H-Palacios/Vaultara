@@ -9425,4 +9425,44 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'فرۆشگا بنووسە';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (ماڵپەڕی فەرمی)';
+  }
+
+  @override
+  String get coachForLabel => 'بۆ';
+
+  @override
+  String get coachSourceLabel => 'سەرچاوە';
+
+  @override
+  String get detailsCountry => 'وڵات';
+
+  @override
+  String get detailsCountryHelper => 'لە کوێ هەیە. بۆ دۆزینەوەی ماڵپەڕی کۆمپانیا بۆ ئەو وڵاتە بەکاردێت.';
+
+  @override
+  String get detailsReference => 'ژمارەی بیمە یان بەڵگەنامە';
+
+  @override
+  String get detailsReferenceHelper => 'لەسەر شاشە شاراوەیە و هەرگیز بۆ Ask Vaultara نانێردرێت.';
+
+  @override
+  String get detailsReferenceHide => 'شاردنەوەی ژمارە';
+
+  @override
+  String get detailsReferenceShow => 'پیشاندانی ژمارە';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (لە مۆبایلەکەتەوە)';
+  }
+
+  @override
+  String get homeNotSet => 'دانەنراوە';
+
+  @override
+  String get homeSectionTitle => 'شوێنی ژیانت';
 }

@@ -9421,4 +9421,44 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Ilagay ang tindahan';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (opisyal na site)';
+  }
+
+  @override
+  String get coachForLabel => 'Para kay';
+
+  @override
+  String get coachSourceLabel => 'Pinagmulan';
+
+  @override
+  String get detailsCountry => 'Bansa';
+
+  @override
+  String get detailsCountryHelper => 'Kung saan ito hawak. Ginagamit para mahanap ang site ng kumpanya para sa bansang iyon.';
+
+  @override
+  String get detailsReference => 'Numero ng polisiya o dokumento';
+
+  @override
+  String get detailsReferenceHelper => 'Nakatago sa screen at hindi kailanman ipinapadala sa Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Itago ang numero';
+
+  @override
+  String get detailsReferenceShow => 'Ipakita ang numero';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (mula sa iyong telepono)';
+  }
+
+  @override
+  String get homeNotSet => 'Hindi nakatakda';
+
+  @override
+  String get homeSectionTitle => 'Kung saan ka nakatira';
 }

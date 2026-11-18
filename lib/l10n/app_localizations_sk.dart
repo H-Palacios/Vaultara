@@ -9585,4 +9585,44 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Zadajte obchod';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (oficiálna stránka)';
+  }
+
+  @override
+  String get coachForLabel => 'Pre';
+
+  @override
+  String get coachSourceLabel => 'Zdroj';
+
+  @override
+  String get detailsCountry => 'Krajina';
+
+  @override
+  String get detailsCountryHelper => 'Kde je vedené. Slúži na nájdenie stránky spoločnosti pre túto krajinu.';
+
+  @override
+  String get detailsReference => 'Číslo poistky alebo dokladu';
+
+  @override
+  String get detailsReferenceHelper => 'Skryté na obrazovke a nikdy sa neposiela do Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Skryť číslo';
+
+  @override
+  String get detailsReferenceShow => 'Zobraziť číslo';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (z vášho telefónu)';
+  }
+
+  @override
+  String get homeNotSet => 'Nenastavené';
+
+  @override
+  String get homeSectionTitle => 'Kde žijete';
 }

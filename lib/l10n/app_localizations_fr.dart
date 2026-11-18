@@ -9441,4 +9441,44 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Saisissez le magasin';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (site officiel)';
+  }
+
+  @override
+  String get coachForLabel => 'Pour';
+
+  @override
+  String get coachSourceLabel => 'Source';
+
+  @override
+  String get detailsCountry => 'Pays';
+
+  @override
+  String get detailsCountryHelper => 'Où il est souscrit. Sert à trouver le site de l\'entreprise pour ce pays.';
+
+  @override
+  String get detailsReference => 'Numéro de police ou de document';
+
+  @override
+  String get detailsReferenceHelper => 'Masqué à l\'écran et jamais envoyé à Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Masquer le numéro';
+
+  @override
+  String get detailsReferenceShow => 'Afficher le numéro';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (depuis votre téléphone)';
+  }
+
+  @override
+  String get homeNotSet => 'Non défini';
+
+  @override
+  String get homeSectionTitle => 'Où vous vivez';
 }

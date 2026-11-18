@@ -9583,4 +9583,44 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Įveskite parduotuvę';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (oficiali svetainė)';
+  }
+
+  @override
+  String get coachForLabel => 'Kam';
+
+  @override
+  String get coachSourceLabel => 'Šaltinis';
+
+  @override
+  String get detailsCountry => 'Šalis';
+
+  @override
+  String get detailsCountryHelper => 'Kur jis sudarytas. Naudojama įmonės svetainei toje šalyje rasti.';
+
+  @override
+  String get detailsReference => 'Polisas ar dokumento numeris';
+
+  @override
+  String get detailsReferenceHelper => 'Paslėptas ekrane ir niekada nesiunčiamas Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Slėpti numerį';
+
+  @override
+  String get detailsReferenceShow => 'Rodyti numerį';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (iš jūsų telefono)';
+  }
+
+  @override
+  String get homeNotSet => 'Nenustatyta';
+
+  @override
+  String get homeSectionTitle => 'Kur gyvenate';
 }

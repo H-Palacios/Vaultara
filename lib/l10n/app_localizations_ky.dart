@@ -9425,4 +9425,44 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Дүкөндү киргизиңиз';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (расмий сайт)';
+  }
+
+  @override
+  String get coachForLabel => 'Кимге';
+
+  @override
+  String get coachSourceLabel => 'Булак';
+
+  @override
+  String get detailsCountry => 'Өлкө';
+
+  @override
+  String get detailsCountryHelper => 'Кайсы жерде катталган. Ошол өлкөдөгү компаниянын сайтын табуу үчүн колдонулат.';
+
+  @override
+  String get detailsReference => 'Полис же документ номери';
+
+  @override
+  String get detailsReferenceHelper => 'Экранда жашырылат жана Ask Vaultara\'га эч качан жөнөтүлбөйт.';
+
+  @override
+  String get detailsReferenceHide => 'Номерди жашыруу';
+
+  @override
+  String get detailsReferenceShow => 'Номерди көрсөтүү';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (телефонуңуздан)';
+  }
+
+  @override
+  String get homeNotSet => 'Коюлган эмес';
+
+  @override
+  String get homeSectionTitle => 'Кайда жашайсыз';
 }

@@ -9488,4 +9488,44 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'הזן את החנות';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (אתר רשמי)';
+  }
+
+  @override
+  String get coachForLabel => 'עבור';
+
+  @override
+  String get coachSourceLabel => 'מקור';
+
+  @override
+  String get detailsCountry => 'מדינה';
+
+  @override
+  String get detailsCountryHelper => 'היכן הוא מוחזק. משמש למציאת אתר החברה באותה מדינה.';
+
+  @override
+  String get detailsReference => 'מספר פוליסה או מסמך';
+
+  @override
+  String get detailsReferenceHelper => 'מוסתר במסך ולעולם לא נשלח ל-Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'הסתר מספר';
+
+  @override
+  String get detailsReferenceShow => 'הצג מספר';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (מהטלפון שלך)';
+  }
+
+  @override
+  String get homeNotSet => 'לא הוגדר';
+
+  @override
+  String get homeSectionTitle => 'איפה אתה גר';
 }

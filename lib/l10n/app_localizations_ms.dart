@@ -9363,4 +9363,44 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Masukkan kedai';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (laman rasmi)';
+  }
+
+  @override
+  String get coachForLabel => 'Untuk';
+
+  @override
+  String get coachSourceLabel => 'Sumber';
+
+  @override
+  String get detailsCountry => 'Negara';
+
+  @override
+  String get detailsCountryHelper => 'Tempat ia dipegang. Digunakan untuk mencari laman syarikat bagi negara itu.';
+
+  @override
+  String get detailsReference => 'Nombor polisi atau dokumen';
+
+  @override
+  String get detailsReferenceHelper => 'Disembunyikan pada skrin dan tidak pernah dihantar ke Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Sembunyikan nombor';
+
+  @override
+  String get detailsReferenceShow => 'Tunjukkan nombor';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (daripada telefon anda)';
+  }
+
+  @override
+  String get homeNotSet => 'Belum ditetapkan';
+
+  @override
+  String get homeSectionTitle => 'Tempat anda tinggal';
 }

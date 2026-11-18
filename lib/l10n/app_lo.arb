@@ -3918,5 +3918,63 @@
   "detailsStoreHint": "ປ້ອນຮ້ານ",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company} (ເວັບໄຊທາງການ)",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "ສຳລັບ",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "ແຫຼ່ງທີ່ມາ",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "ປະເທດ",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "ບ່ອນທີ່ຖືຢູ່. ໃຊ້ເພື່ອຊອກຫາເວັບໄຊຂອງບໍລິສັດສຳລັບປະເທດນັ້ນ.",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "ເລກກົມທັນ ຫຼື ເອກະສານ",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "ເຊື່ອງໄວ້ໃນໜ້າຈໍ ແລະ ບໍ່ເຄີຍສົ່ງໄປ Ask Vaultara.",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "ເຊື່ອງເລກ",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "ສະແດງເລກ",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country} (ຈາກໂທລະສັບຂອງທ່ານ)",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "ບໍ່ໄດ້ຕັ້ງ",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "ບ່ອນທີ່ທ່ານອາໄສ",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

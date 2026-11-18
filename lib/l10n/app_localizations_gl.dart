@@ -9431,4 +9431,44 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Escribe a tenda';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (sitio oficial)';
+  }
+
+  @override
+  String get coachForLabel => 'Para';
+
+  @override
+  String get coachSourceLabel => 'Fonte';
+
+  @override
+  String get detailsCountry => 'País';
+
+  @override
+  String get detailsCountryHelper => 'Onde está contratado. Serve para atopar o sitio da empresa nese país.';
+
+  @override
+  String get detailsReference => 'Número de póliza ou documento';
+
+  @override
+  String get detailsReferenceHelper => 'Oculto na pantalla e nunca se envía a Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Ocultar número';
+
+  @override
+  String get detailsReferenceShow => 'Amosar número';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (do teu teléfono)';
+  }
+
+  @override
+  String get homeNotSet => 'Sen definir';
+
+  @override
+  String get homeSectionTitle => 'Onde vives';
 }

@@ -9426,4 +9426,44 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Do\'konni kiriting';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (rasmiy sayt)';
+  }
+
+  @override
+  String get coachForLabel => 'Kim uchun';
+
+  @override
+  String get coachSourceLabel => 'Manba';
+
+  @override
+  String get detailsCountry => 'Davlat';
+
+  @override
+  String get detailsCountryHelper => 'Qayerda rasmiylashtirilgan. O\'sha davlatdagi kompaniya saytini topish uchun ishlatiladi.';
+
+  @override
+  String get detailsReference => 'Polis yoki hujjat raqami';
+
+  @override
+  String get detailsReferenceHelper => 'Ekranda yashiriladi va hech qachon Ask Vaultara\'ga yuborilmaydi.';
+
+  @override
+  String get detailsReferenceHide => 'Raqamni yashirish';
+
+  @override
+  String get detailsReferenceShow => 'Raqamni ko\'rsatish';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (telefoningizdan)';
+  }
+
+  @override
+  String get homeNotSet => 'Belgilanmagan';
+
+  @override
+  String get homeSectionTitle => 'Qayerda yashaysiz';
 }

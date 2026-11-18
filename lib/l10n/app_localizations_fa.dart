@@ -9426,4 +9426,44 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'فروشگاه را وارد کنید';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (سایت رسمی)';
+  }
+
+  @override
+  String get coachForLabel => 'برای';
+
+  @override
+  String get coachSourceLabel => 'منبع';
+
+  @override
+  String get detailsCountry => 'کشور';
+
+  @override
+  String get detailsCountryHelper => 'جایی که نگهداری می‌شود. برای یافتن سایت شرکت در آن کشور استفاده می‌شود.';
+
+  @override
+  String get detailsReference => 'شماره بیمه‌نامه یا سند';
+
+  @override
+  String get detailsReferenceHelper => 'روی صفحه پنهان است و هرگز به Ask Vaultara فرستاده نمی‌شود.';
+
+  @override
+  String get detailsReferenceHide => 'پنهان کردن شماره';
+
+  @override
+  String get detailsReferenceShow => 'نمایش شماره';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (از تلفن شما)';
+  }
+
+  @override
+  String get homeNotSet => 'تنظیم نشده';
+
+  @override
+  String get homeSectionTitle => 'محل زندگی شما';
 }

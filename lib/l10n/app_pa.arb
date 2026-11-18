@@ -3907,5 +3907,63 @@
   "detailsStoreHint": "ਦੁਕਾਨ ਦਰਜ ਕਰੋ",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company} (ਅਧਿਕਾਰਤ ਸਾਈਟ)",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "ਲਈ",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "ਸਰੋਤ",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "ਦੇਸ਼",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "ਇਹ ਕਿੱਥੇ ਹੈ। ਉਸ ਦੇਸ਼ ਲਈ ਕੰਪਨੀ ਦੀ ਸਾਈਟ ਲੱਭਣ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "ਪਾਲਿਸੀ ਜਾਂ ਦਸਤਾਵੇਜ਼ ਨੰਬਰ",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "ਸਕ੍ਰੀਨ 'ਤੇ ਲੁਕਿਆ ਅਤੇ ਕਦੇ ਵੀ Ask Vaultara ਨੂੰ ਨਹੀਂ ਭੇਜਿਆ ਜਾਂਦਾ।",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "ਨੰਬਰ ਲੁਕਾਓ",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "ਨੰਬਰ ਦਿਖਾਓ",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country} (ਤੁਹਾਡੇ ਫ਼ੋਨ ਤੋਂ)",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "ਸੈੱਟ ਨਹੀਂ",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "ਤੁਸੀਂ ਕਿੱਥੇ ਰਹਿੰਦੇ ਹੋ",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

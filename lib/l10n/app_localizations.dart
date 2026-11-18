@@ -16074,6 +16074,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter the store'**
   String get detailsStoreHint;
+
+  /// Plan card source line: company is a company name such as Aviva.
+  ///
+  /// In en, this message translates to:
+  /// **'{company} (official site)'**
+  String coachCompanySite(String company);
+
+  /// coachForLabel
+  ///
+  /// In en, this message translates to:
+  /// **'For'**
+  String get coachForLabel;
+
+  /// coachSourceLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get coachSourceLabel;
+
+  /// detailsCountry
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get detailsCountry;
+
+  /// detailsCountryHelper
+  ///
+  /// In en, this message translates to:
+  /// **'Where it is held. Used to find the company\'s site for that country.'**
+  String get detailsCountryHelper;
+
+  /// Optional record field for a policy, card or document number.
+  ///
+  /// In en, this message translates to:
+  /// **'Policy or document number'**
+  String get detailsReference;
+
+  /// detailsReferenceHelper
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden on screen and never sent to Ask Vaultara.'**
+  String get detailsReferenceHelper;
+
+  /// detailsReferenceHide
+  ///
+  /// In en, this message translates to:
+  /// **'Hide number'**
+  String get detailsReferenceHide;
+
+  /// detailsReferenceShow
+  ///
+  /// In en, this message translates to:
+  /// **'Show number'**
+  String get detailsReferenceShow;
+
+  /// Profile: where the user lives when not set, taken from the phone region; country is a flag and name.
+  ///
+  /// In en, this message translates to:
+  /// **'{country} (from your phone)'**
+  String homeFromPhone(String country);
+
+  /// homeNotSet
+  ///
+  /// In en, this message translates to:
+  /// **'Not set'**
+  String get homeNotSet;
+
+  /// Profile section with where the user lives and their passport country.
+  ///
+  /// In en, this message translates to:
+  /// **'Where you live'**
+  String get homeSectionTitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

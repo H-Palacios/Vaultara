@@ -9426,4 +9426,44 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'দোকান লিখুন';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (অফিসিয়াল সাইট)';
+  }
+
+  @override
+  String get coachForLabel => 'যার জন্য';
+
+  @override
+  String get coachSourceLabel => 'উৎস';
+
+  @override
+  String get detailsCountry => 'দেশ';
+
+  @override
+  String get detailsCountryHelper => 'যেখানে এটি রাখা আছে। সেই দেশের জন্য কোম্পানির সাইট খুঁজতে ব্যবহৃত হয়।';
+
+  @override
+  String get detailsReference => 'পলিসি বা ডকুমেন্ট নম্বর';
+
+  @override
+  String get detailsReferenceHelper => 'স্ক্রিনে লুকানো এবং কখনো Ask Vaultara-তে পাঠানো হয় না।';
+
+  @override
+  String get detailsReferenceHide => 'নম্বর লুকান';
+
+  @override
+  String get detailsReferenceShow => 'নম্বর দেখান';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (আপনার ফোন থেকে)';
+  }
+
+  @override
+  String get homeNotSet => 'সেট করা নেই';
+
+  @override
+  String get homeSectionTitle => 'আপনি যেখানে থাকেন';
 }

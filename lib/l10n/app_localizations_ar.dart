@@ -9683,4 +9683,44 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'أدخل المتجر';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (الموقع الرسمي)';
+  }
+
+  @override
+  String get coachForLabel => 'لـ';
+
+  @override
+  String get coachSourceLabel => 'المصدر';
+
+  @override
+  String get detailsCountry => 'الدولة';
+
+  @override
+  String get detailsCountryHelper => 'مكان الاحتفاظ به. يُستخدم للعثور على موقع الشركة في تلك الدولة.';
+
+  @override
+  String get detailsReference => 'رقم الوثيقة أو البوليصة';
+
+  @override
+  String get detailsReferenceHelper => 'مخفي على الشاشة ولا يُرسل أبدًا إلى Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'إخفاء الرقم';
+
+  @override
+  String get detailsReferenceShow => 'إظهار الرقم';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (من هاتفك)';
+  }
+
+  @override
+  String get homeNotSet => 'غير محدد';
+
+  @override
+  String get homeSectionTitle => 'مكان إقامتك';
 }

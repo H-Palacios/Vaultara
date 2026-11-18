@@ -9430,4 +9430,44 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Kirjoita kauppa';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (virallinen sivusto)';
+  }
+
+  @override
+  String get coachForLabel => 'Kenelle';
+
+  @override
+  String get coachSourceLabel => 'Lähde';
+
+  @override
+  String get detailsCountry => 'Maa';
+
+  @override
+  String get detailsCountryHelper => 'Missä se on. Käytetään yhtiön sivuston löytämiseen kyseisessä maassa.';
+
+  @override
+  String get detailsReference => 'Vakuutus- tai asiakirjanumero';
+
+  @override
+  String get detailsReferenceHelper => 'Piilotettu näytöllä eikä koskaan lähetetä Ask Vaultaralle.';
+
+  @override
+  String get detailsReferenceHide => 'Piilota numero';
+
+  @override
+  String get detailsReferenceShow => 'Näytä numero';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (puhelimestasi)';
+  }
+
+  @override
+  String get homeNotSet => 'Ei asetettu';
+
+  @override
+  String get homeSectionTitle => 'Missä asut';
 }

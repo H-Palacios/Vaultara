@@ -9601,4 +9601,44 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Введіть магазин';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (офіційний сайт)';
+  }
+
+  @override
+  String get coachForLabel => 'Для';
+
+  @override
+  String get coachSourceLabel => 'Джерело';
+
+  @override
+  String get detailsCountry => 'Країна';
+
+  @override
+  String get detailsCountryHelper => 'Де оформлено. Потрібна, щоб знайти сайт компанії для цієї країни.';
+
+  @override
+  String get detailsReference => 'Номер поліса або документа';
+
+  @override
+  String get detailsReferenceHelper => 'Приховано на екрані й ніколи не надсилається в Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Приховати номер';
+
+  @override
+  String get detailsReferenceShow => 'Показати номер';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (з вашого телефона)';
+  }
+
+  @override
+  String get homeNotSet => 'Не вказано';
+
+  @override
+  String get homeSectionTitle => 'Де ви живете';
 }

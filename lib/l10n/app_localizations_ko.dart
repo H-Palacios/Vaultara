@@ -9363,4 +9363,44 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get detailsStoreHint => '매장을 입력하세요';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (공식 사이트)';
+  }
+
+  @override
+  String get coachForLabel => '대상';
+
+  @override
+  String get coachSourceLabel => '출처';
+
+  @override
+  String get detailsCountry => '국가';
+
+  @override
+  String get detailsCountryHelper => '가입된 국가. 그 국가의 회사 사이트를 찾는 데 쓰입니다.';
+
+  @override
+  String get detailsReference => '보험 또는 서류 번호';
+
+  @override
+  String get detailsReferenceHelper => '화면에서 가려지며 Ask Vaultara로 전송되지 않습니다.';
+
+  @override
+  String get detailsReferenceHide => '번호 숨기기';
+
+  @override
+  String get detailsReferenceShow => '번호 보기';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (휴대폰 설정)';
+  }
+
+  @override
+  String get homeNotSet => '설정 안 됨';
+
+  @override
+  String get homeSectionTitle => '거주 국가';
 }

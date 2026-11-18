@@ -9446,4 +9446,44 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Enter the store';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (official site)';
+  }
+
+  @override
+  String get coachForLabel => 'For';
+
+  @override
+  String get coachSourceLabel => 'Source';
+
+  @override
+  String get detailsCountry => 'Country';
+
+  @override
+  String get detailsCountryHelper => 'Where it is held. Used to find the company\'s site for that country.';
+
+  @override
+  String get detailsReference => 'Policy or document number';
+
+  @override
+  String get detailsReferenceHelper => 'Hidden on screen and never sent to Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Hide number';
+
+  @override
+  String get detailsReferenceShow => 'Show number';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (from your phone)';
+  }
+
+  @override
+  String get homeNotSet => 'Not set';
+
+  @override
+  String get homeSectionTitle => 'Where you live';
 }

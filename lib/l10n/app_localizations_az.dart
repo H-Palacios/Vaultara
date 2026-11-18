@@ -9426,4 +9426,44 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Mağazanı daxil edin';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (rəsmi sayt)';
+  }
+
+  @override
+  String get coachForLabel => 'Kim üçün';
+
+  @override
+  String get coachSourceLabel => 'Mənbə';
+
+  @override
+  String get detailsCountry => 'Ölkə';
+
+  @override
+  String get detailsCountryHelper => 'Harada saxlanılır. Həmin ölkə üçün şirkətin saytını tapmaq üçün istifadə olunur.';
+
+  @override
+  String get detailsReference => 'Polis və ya sənəd nömrəsi';
+
+  @override
+  String get detailsReferenceHelper => 'Ekranda gizlədilir və heç vaxt Ask Vaultara-ya göndərilmir.';
+
+  @override
+  String get detailsReferenceHide => 'Nömrəni gizlət';
+
+  @override
+  String get detailsReferenceShow => 'Nömrəni göstər';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (telefonunuzdan)';
+  }
+
+  @override
+  String get homeNotSet => 'Təyin edilməyib';
+
+  @override
+  String get homeSectionTitle => 'Yaşadığınız yer';
 }

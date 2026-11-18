@@ -9592,4 +9592,44 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Vnesite trgovino';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (uradna stran)';
+  }
+
+  @override
+  String get coachForLabel => 'Za';
+
+  @override
+  String get coachSourceLabel => 'Vir';
+
+  @override
+  String get detailsCountry => 'Država';
+
+  @override
+  String get detailsCountryHelper => 'Kje je sklenjeno. Uporablja se za iskanje strani podjetja za to državo.';
+
+  @override
+  String get detailsReference => 'Številka police ali dokumenta';
+
+  @override
+  String get detailsReferenceHelper => 'Skrito na zaslonu in nikoli poslano v Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Skrij številko';
+
+  @override
+  String get detailsReferenceShow => 'Pokaži številko';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (iz vašega telefona)';
+  }
+
+  @override
+  String get homeNotSet => 'Ni nastavljeno';
+
+  @override
+  String get homeSectionTitle => 'Kje živite';
 }

@@ -9426,4 +9426,44 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'கடையை உள்ளிடவும்';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (அதிகாரப்பூர்வ தளம்)';
+  }
+
+  @override
+  String get coachForLabel => 'யாருக்கு';
+
+  @override
+  String get coachSourceLabel => 'மூலம்';
+
+  @override
+  String get detailsCountry => 'நாடு';
+
+  @override
+  String get detailsCountryHelper => 'இது எங்கு உள்ளது. அந்த நாட்டிற்கான நிறுவனத் தளத்தைக் கண்டறிய பயன்படும்.';
+
+  @override
+  String get detailsReference => 'பாலிசி அல்லது ஆவண எண்';
+
+  @override
+  String get detailsReferenceHelper => 'திரையில் மறைக்கப்படும், Ask Vaultara-க்கு ஒருபோதும் அனுப்பப்படாது.';
+
+  @override
+  String get detailsReferenceHide => 'எண்ணை மறை';
+
+  @override
+  String get detailsReferenceShow => 'எண்ணைக் காட்டு';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (உங்கள் தொலைபேசியிலிருந்து)';
+  }
+
+  @override
+  String get homeNotSet => 'அமைக்கப்படவில்லை';
+
+  @override
+  String get homeSectionTitle => 'நீங்கள் வசிக்கும் இடம்';
 }

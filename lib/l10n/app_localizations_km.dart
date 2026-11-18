@@ -9361,4 +9361,44 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'បញ្ចូលហាង';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (គេហទំព័រផ្លូវការ)';
+  }
+
+  @override
+  String get coachForLabel => 'សម្រាប់';
+
+  @override
+  String get coachSourceLabel => 'ប្រភព';
+
+  @override
+  String get detailsCountry => 'ប្រទេស';
+
+  @override
+  String get detailsCountryHelper => 'កន្លែងដែលវាត្រូវបានកាន់។ ប្រើដើម្បីរកគេហទំព័ររបស់ក្រុមហ៊ុនសម្រាប់ប្រទេសនោះ។';
+
+  @override
+  String get detailsReference => 'លេខបណ្ណសន្យា ឬឯកសារ';
+
+  @override
+  String get detailsReferenceHelper => 'លាក់នៅលើអេក្រង់ ហើយមិនដែលផ្ញើទៅ Ask Vaultara ទេ។';
+
+  @override
+  String get detailsReferenceHide => 'លាក់លេខ';
+
+  @override
+  String get detailsReferenceShow => 'បង្ហាញលេខ';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (ពីទូរសព្ទរបស់អ្នក)';
+  }
+
+  @override
+  String get homeNotSet => 'មិនបានកំណត់';
+
+  @override
+  String get homeSectionTitle => 'កន្លែងដែលអ្នករស់នៅ';
 }

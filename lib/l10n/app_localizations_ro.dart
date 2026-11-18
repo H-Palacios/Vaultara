@@ -9512,4 +9512,44 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Introdu magazinul';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (site oficial)';
+  }
+
+  @override
+  String get coachForLabel => 'Pentru';
+
+  @override
+  String get coachSourceLabel => 'Sursă';
+
+  @override
+  String get detailsCountry => 'Țară';
+
+  @override
+  String get detailsCountryHelper => 'Unde este încheiat. Folosit pentru a găsi site-ul companiei din acea țară.';
+
+  @override
+  String get detailsReference => 'Număr de poliță sau document';
+
+  @override
+  String get detailsReferenceHelper => 'Ascuns pe ecran și niciodată trimis către Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Ascunde numărul';
+
+  @override
+  String get detailsReferenceShow => 'Arată numărul';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (din telefonul tău)';
+  }
+
+  @override
+  String get homeNotSet => 'Nesetat';
+
+  @override
+  String get homeSectionTitle => 'Unde locuiești';
 }

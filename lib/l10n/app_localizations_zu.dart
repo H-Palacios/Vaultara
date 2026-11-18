@@ -9426,4 +9426,44 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Faka isitolo';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (iwebhusayithi esemthethweni)';
+  }
+
+  @override
+  String get coachForLabel => 'Okwa';
+
+  @override
+  String get coachSourceLabel => 'Umthombo';
+
+  @override
+  String get detailsCountry => 'Izwe';
+
+  @override
+  String get detailsCountryHelper => 'Lapho kugcinwe khona. Kusetshenziselwa ukuthola iwebhusayithi yenkampani yalelo zwe.';
+
+  @override
+  String get detailsReference => 'Inombolo yenqubomgomo noma yedokhumenti';
+
+  @override
+  String get detailsReferenceHelper => 'Ifihliwe esikrinini futhi ayilokothi ithunyelwe ku-Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Fihla inombolo';
+
+  @override
+  String get detailsReferenceShow => 'Bonisa inombolo';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (kusuka efonini yakho)';
+  }
+
+  @override
+  String get homeNotSet => 'Akusethiwe';
+
+  @override
+  String get homeSectionTitle => 'Lapho uhlala khona';
 }

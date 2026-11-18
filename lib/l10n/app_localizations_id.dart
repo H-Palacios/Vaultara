@@ -9358,4 +9358,44 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Masukkan toko';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (situs resmi)';
+  }
+
+  @override
+  String get coachForLabel => 'Untuk';
+
+  @override
+  String get coachSourceLabel => 'Sumber';
+
+  @override
+  String get detailsCountry => 'Negara';
+
+  @override
+  String get detailsCountryHelper => 'Tempat ini dipegang. Dipakai untuk menemukan situs perusahaan di negara itu.';
+
+  @override
+  String get detailsReference => 'Nomor polis atau dokumen';
+
+  @override
+  String get detailsReferenceHelper => 'Tersembunyi di layar dan tidak pernah dikirim ke Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Sembunyikan nomor';
+
+  @override
+  String get detailsReferenceShow => 'Tampilkan nomor';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (dari ponsel Anda)';
+  }
+
+  @override
+  String get homeNotSet => 'Belum diatur';
+
+  @override
+  String get homeSectionTitle => 'Tempat tinggal Anda';
 }

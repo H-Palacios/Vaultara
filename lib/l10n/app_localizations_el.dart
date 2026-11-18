@@ -9431,4 +9431,44 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Εισαγάγετε το κατάστημα';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (επίσημος ιστότοπος)';
+  }
+
+  @override
+  String get coachForLabel => 'Για';
+
+  @override
+  String get coachSourceLabel => 'Πηγή';
+
+  @override
+  String get detailsCountry => 'Χώρα';
+
+  @override
+  String get detailsCountryHelper => 'Πού τηρείται. Χρησιμοποιείται για τον ιστότοπο της εταιρείας για αυτή τη χώρα.';
+
+  @override
+  String get detailsReference => 'Αριθμός συμβολαίου ή εγγράφου';
+
+  @override
+  String get detailsReferenceHelper => 'Κρυφό στην οθόνη και δεν στέλνεται ποτέ στο Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Απόκρυψη αριθμού';
+
+  @override
+  String get detailsReferenceShow => 'Εμφάνιση αριθμού';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (από το τηλέφωνό σας)';
+  }
+
+  @override
+  String get homeNotSet => 'Δεν έχει οριστεί';
+
+  @override
+  String get homeSectionTitle => 'Πού ζείτε';
 }

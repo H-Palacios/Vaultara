@@ -9351,4 +9351,44 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get detailsStoreHint => '店舗を入力';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company（公式サイト）';
+  }
+
+  @override
+  String get coachForLabel => '対象';
+
+  @override
+  String get coachSourceLabel => '情報源';
+
+  @override
+  String get detailsCountry => '国';
+
+  @override
+  String get detailsCountryHelper => '保有している国。その国の会社サイトを探すのに使います。';
+
+  @override
+  String get detailsReference => '証券番号または書類番号';
+
+  @override
+  String get detailsReferenceHelper => '画面では隠され、Ask Vaultaraには送信されません。';
+
+  @override
+  String get detailsReferenceHide => '番号を隠す';
+
+  @override
+  String get detailsReferenceShow => '番号を表示';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country（スマホの設定から）';
+  }
+
+  @override
+  String get homeNotSet => '未設定';
+
+  @override
+  String get homeSectionTitle => 'お住まいの国';
 }

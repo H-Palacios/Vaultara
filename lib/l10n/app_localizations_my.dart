@@ -9361,4 +9361,44 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'ဆိုင်ကို ထည့်ပါ';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (တရားဝင်ဆိုက်)';
+  }
+
+  @override
+  String get coachForLabel => 'အတွက်';
+
+  @override
+  String get coachSourceLabel => 'ရင်းမြစ်';
+
+  @override
+  String get detailsCountry => 'နိုင်ငံ';
+
+  @override
+  String get detailsCountryHelper => 'ထားရှိရာနေရာ။ ထိုနိုင်ငံအတွက် ကုမ္ပဏီဆိုက်ကို ရှာရန် အသုံးပြုသည်။';
+
+  @override
+  String get detailsReference => 'ပေါ်လစီ သို့ စာရွက်စာတမ်း နံပါတ်';
+
+  @override
+  String get detailsReferenceHelper => 'မျက်နှာပြင်တွင် ဝှက်ထားပြီး Ask Vaultara သို့ ဘယ်တော့မှ မပို့ပါ။';
+
+  @override
+  String get detailsReferenceHide => 'နံပါတ်ဝှက်ရန်';
+
+  @override
+  String get detailsReferenceShow => 'နံပါတ်ပြရန်';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (သင့်ဖုန်းမှ)';
+  }
+
+  @override
+  String get homeNotSet => 'မသတ်မှတ်ရသေး';
+
+  @override
+  String get homeSectionTitle => 'သင်နေထိုင်ရာ';
 }

@@ -9431,4 +9431,44 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Indtast butikken';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (officielt websted)';
+  }
+
+  @override
+  String get coachForLabel => 'For';
+
+  @override
+  String get coachSourceLabel => 'Kilde';
+
+  @override
+  String get detailsCountry => 'Land';
+
+  @override
+  String get detailsCountryHelper => 'Hvor det er tegnet. Bruges til at finde selskabets websted for det land.';
+
+  @override
+  String get detailsReference => 'Police- eller dokumentnummer';
+
+  @override
+  String get detailsReferenceHelper => 'Skjult på skærmen og sendes aldrig til Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Skjul nummer';
+
+  @override
+  String get detailsReferenceShow => 'Vis nummer';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (fra din telefon)';
+  }
+
+  @override
+  String get homeNotSet => 'Ikke angivet';
+
+  @override
+  String get homeSectionTitle => 'Hvor du bor';
 }

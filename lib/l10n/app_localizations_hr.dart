@@ -9505,4 +9505,44 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Unesite trgovinu';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (službena stranica)';
+  }
+
+  @override
+  String get coachForLabel => 'Za';
+
+  @override
+  String get coachSourceLabel => 'Izvor';
+
+  @override
+  String get detailsCountry => 'Država';
+
+  @override
+  String get detailsCountryHelper => 'Gdje se vodi. Koristi se za pronalazak stranice tvrtke za tu državu.';
+
+  @override
+  String get detailsReference => 'Broj police ili dokumenta';
+
+  @override
+  String get detailsReferenceHelper => 'Skriveno na zaslonu i nikad se ne šalje Ask Vaultari.';
+
+  @override
+  String get detailsReferenceHide => 'Sakrij broj';
+
+  @override
+  String get detailsReferenceShow => 'Prikaži broj';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (s vašeg telefona)';
+  }
+
+  @override
+  String get homeNotSet => 'Nije postavljeno';
+
+  @override
+  String get homeSectionTitle => 'Gdje živite';
 }

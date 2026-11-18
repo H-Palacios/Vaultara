@@ -9426,4 +9426,44 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Weka duka';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (tovuti rasmi)';
+  }
+
+  @override
+  String get coachForLabel => 'Kwa';
+
+  @override
+  String get coachSourceLabel => 'Chanzo';
+
+  @override
+  String get detailsCountry => 'Nchi';
+
+  @override
+  String get detailsCountryHelper => 'Mahali kinaposhikiliwa. Hutumika kupata tovuti ya kampuni kwa nchi hiyo.';
+
+  @override
+  String get detailsReference => 'Namba ya bima au hati';
+
+  @override
+  String get detailsReferenceHelper => 'Imefichwa kwenye skrini na haitumwi kamwe kwa Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Ficha namba';
+
+  @override
+  String get detailsReferenceShow => 'Onyesha namba';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (kutoka kwa simu yako)';
+  }
+
+  @override
+  String get homeNotSet => 'Haijawekwa';
+
+  @override
+  String get homeSectionTitle => 'Unapoishi';
 }

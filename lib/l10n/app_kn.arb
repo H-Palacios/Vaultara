@@ -3650,5 +3650,63 @@
   "detailsStoreHint": "ಅಂಗಡಿ ನಮೂದಿಸಿ",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company} (ಅಧಿಕೃತ ಸೈಟ್)",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "ಯಾರಿಗೆ",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "ಮೂಲ",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "ದೇಶ",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "ಇದು ಎಲ್ಲಿದೆ. ಆ ದೇಶಕ್ಕಾಗಿ ಕಂಪನಿಯ ಸೈಟ್ ಹುಡುಕಲು ಬಳಸಲಾಗುತ್ತದೆ.",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "ಪಾಲಿಸಿ ಅಥವಾ ದಾಖಲೆ ಸಂಖ್ಯೆ",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "ಪರದೆಯಲ್ಲಿ ಮರೆಮಾಡಲಾಗಿದೆ ಮತ್ತು Ask Vaultara ಗೆ ಎಂದಿಗೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ.",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "ಸಂಖ್ಯೆ ಮರೆಮಾಡಿ",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "ಸಂಖ್ಯೆ ತೋರಿಸಿ",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country} (ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ)",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "ಹೊಂದಿಸಿಲ್ಲ",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "ನೀವು ಎಲ್ಲಿ ವಾಸಿಸುತ್ತೀರಿ",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

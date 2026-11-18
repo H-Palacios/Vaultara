@@ -9431,4 +9431,44 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Voer die winkel in';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (amptelike webwerf)';
+  }
+
+  @override
+  String get coachForLabel => 'Vir';
+
+  @override
+  String get coachSourceLabel => 'Bron';
+
+  @override
+  String get detailsCountry => 'Land';
+
+  @override
+  String get detailsCountryHelper => 'Waar dit gehou word. Gebruik om die maatskappy se webwerf vir daardie land te vind.';
+
+  @override
+  String get detailsReference => 'Polis- of dokumentnommer';
+
+  @override
+  String get detailsReferenceHelper => 'Versteek op die skerm en nooit na Vra Vaultara gestuur nie.';
+
+  @override
+  String get detailsReferenceHide => 'Versteek nommer';
+
+  @override
+  String get detailsReferenceShow => 'Wys nommer';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (van jou foon)';
+  }
+
+  @override
+  String get homeNotSet => 'Nie gestel nie';
+
+  @override
+  String get homeSectionTitle => 'Waar jy woon';
 }

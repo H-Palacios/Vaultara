@@ -9426,4 +9426,44 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'پلورنځی ولیکئ';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (رسمي سایټ)';
+  }
+
+  @override
+  String get coachForLabel => 'لپاره';
+
+  @override
+  String get coachSourceLabel => 'سرچينه';
+
+  @override
+  String get detailsCountry => 'هېواد';
+
+  @override
+  String get detailsCountryHelper => 'چېرته ساتل کېږي. د هغه هېواد لپاره د شرکت سایټ موندلو ته کارېږي.';
+
+  @override
+  String get detailsReference => 'د بیمې یا سند شمېره';
+
+  @override
+  String get detailsReferenceHelper => 'په پرده پټه ده او هېڅکله Ask Vaultara ته نه لېږل کېږي.';
+
+  @override
+  String get detailsReferenceHide => 'شمېره پټه کړئ';
+
+  @override
+  String get detailsReferenceShow => 'شمېره وښایاست';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (ستاسو له تلیفون)';
+  }
+
+  @override
+  String get homeNotSet => 'نه دی ټاکل شوی';
+
+  @override
+  String get homeSectionTitle => 'چېرته اوسېږئ';
 }

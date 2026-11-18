@@ -9374,4 +9374,44 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Tẹ ilé ìtajà sí';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (ojúlé òṣìṣẹ́)';
+  }
+
+  @override
+  String get coachForLabel => 'Fún';
+
+  @override
+  String get coachSourceLabel => 'Orísun';
+
+  @override
+  String get detailsCountry => 'Orílẹ̀-èdè';
+
+  @override
+  String get detailsCountryHelper => 'Ibi tí ó wà. A ń lò ó láti wá ojúlé ilé-iṣẹ́ fún orílẹ̀-èdè náà.';
+
+  @override
+  String get detailsReference => 'Nọ́mbà ìlànà tàbí ìwé';
+
+  @override
+  String get detailsReferenceHelper => 'Ó farapamọ́ lórí ìbòjú, a kò sì ní fi ránṣẹ́ sí Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Fi nọ́mbà pamọ́';
+
+  @override
+  String get detailsReferenceShow => 'Fi nọ́mbà hàn';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (láti fóònù rẹ)';
+  }
+
+  @override
+  String get homeNotSet => 'A kò tíì ṣètò';
+
+  @override
+  String get homeSectionTitle => 'Ibi tí o ń gbé';
 }

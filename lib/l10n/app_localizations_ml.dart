@@ -9426,4 +9426,44 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'സ്റ്റോർ നൽകുക';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (ഔദ്യോഗിക സൈറ്റ്)';
+  }
+
+  @override
+  String get coachForLabel => 'ആർക്ക്';
+
+  @override
+  String get coachSourceLabel => 'ഉറവിടം';
+
+  @override
+  String get detailsCountry => 'രാജ്യം';
+
+  @override
+  String get detailsCountryHelper => 'ഇത് എവിടെയാണ്. ആ രാജ്യത്തിനുള്ള കമ്പനിയുടെ സൈറ്റ് കണ്ടെത്താൻ ഉപയോഗിക്കുന്നു.';
+
+  @override
+  String get detailsReference => 'പോളിസി അല്ലെങ്കിൽ രേഖ നമ്പർ';
+
+  @override
+  String get detailsReferenceHelper => 'സ്ക്രീനിൽ മറച്ചിരിക്കുന്നു, ഒരിക്കലും Ask Vaultara-ക്ക് അയയ്ക്കില്ല.';
+
+  @override
+  String get detailsReferenceHide => 'നമ്പർ മറയ്ക്കുക';
+
+  @override
+  String get detailsReferenceShow => 'നമ്പർ കാണിക്കുക';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (നിങ്ങളുടെ ഫോണിൽ നിന്ന്)';
+  }
+
+  @override
+  String get homeNotSet => 'സജ്ജമാക്കിയിട്ടില്ല';
+
+  @override
+  String get homeSectionTitle => 'നിങ്ങൾ താമസിക്കുന്നിടം';
 }

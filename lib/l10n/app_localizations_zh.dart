@@ -9363,6 +9363,46 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get detailsStoreHint => '输入商店';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company（官方网站）';
+  }
+
+  @override
+  String get coachForLabel => '对象';
+
+  @override
+  String get coachSourceLabel => '来源';
+
+  @override
+  String get detailsCountry => '国家/地区';
+
+  @override
+  String get detailsCountryHelper => '办理所在地。用于查找该国家/地区的公司网站。';
+
+  @override
+  String get detailsReference => '保单号或证件号';
+
+  @override
+  String get detailsReferenceHelper => '在屏幕上隐藏，且绝不会发送给 Ask Vaultara。';
+
+  @override
+  String get detailsReferenceHide => '隐藏号码';
+
+  @override
+  String get detailsReferenceShow => '显示号码';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country（来自手机设置）';
+  }
+
+  @override
+  String get homeNotSet => '未设置';
+
+  @override
+  String get homeSectionTitle => '你居住的地方';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18712,6 +18752,46 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get detailsStoreHint => '输入商店';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company（官方网站）';
+  }
+
+  @override
+  String get coachForLabel => '对象';
+
+  @override
+  String get coachSourceLabel => '来源';
+
+  @override
+  String get detailsCountry => '国家/地区';
+
+  @override
+  String get detailsCountryHelper => '办理所在地。用于查找该国家/地区的公司网站。';
+
+  @override
+  String get detailsReference => '保单号或证件号';
+
+  @override
+  String get detailsReferenceHelper => '在屏幕上隐藏，且绝不会发送给 Ask Vaultara。';
+
+  @override
+  String get detailsReferenceHide => '隐藏号码';
+
+  @override
+  String get detailsReferenceShow => '显示号码';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country（来自手机设置）';
+  }
+
+  @override
+  String get homeNotSet => '未设置';
+
+  @override
+  String get homeSectionTitle => '你居住的地方';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -28061,4 +28141,44 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get detailsStoreHint => '輸入商店';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company（官方網站）';
+  }
+
+  @override
+  String get coachForLabel => '對象';
+
+  @override
+  String get coachSourceLabel => '來源';
+
+  @override
+  String get detailsCountry => '國家/地區';
+
+  @override
+  String get detailsCountryHelper => '辦理所在地。用於尋找該國家/地區的公司網站。';
+
+  @override
+  String get detailsReference => '保單號碼或證件號碼';
+
+  @override
+  String get detailsReferenceHelper => '在螢幕上隱藏，且絕不會傳送給 Ask Vaultara。';
+
+  @override
+  String get detailsReferenceHide => '隱藏號碼';
+
+  @override
+  String get detailsReferenceShow => '顯示號碼';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country（來自手機設定）';
+  }
+
+  @override
+  String get homeNotSet => '未設定';
+
+  @override
+  String get homeSectionTitle => '你居住的地方';
 }

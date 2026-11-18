@@ -9438,4 +9438,44 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Inserisci il negozio';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (sito ufficiale)';
+  }
+
+  @override
+  String get coachForLabel => 'Per';
+
+  @override
+  String get coachSourceLabel => 'Fonte';
+
+  @override
+  String get detailsCountry => 'Paese';
+
+  @override
+  String get detailsCountryHelper => 'Dove è intestato. Serve a trovare il sito dell\'azienda per quel paese.';
+
+  @override
+  String get detailsReference => 'Numero di polizza o documento';
+
+  @override
+  String get detailsReferenceHelper => 'Nascosto sullo schermo e mai inviato ad Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Nascondi numero';
+
+  @override
+  String get detailsReferenceShow => 'Mostra numero';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (dal tuo telefono)';
+  }
+
+  @override
+  String get homeNotSet => 'Non impostato';
+
+  @override
+  String get homeSectionTitle => 'Dove vivi';
 }

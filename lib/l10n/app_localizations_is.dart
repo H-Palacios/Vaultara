@@ -9425,4 +9425,44 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Sláðu inn verslunina';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (opinber vefur)';
+  }
+
+  @override
+  String get coachForLabel => 'Fyrir';
+
+  @override
+  String get coachSourceLabel => 'Heimild';
+
+  @override
+  String get detailsCountry => 'Land';
+
+  @override
+  String get detailsCountryHelper => 'Hvar það er skráð. Notað til að finna vef fyrirtækisins fyrir það land.';
+
+  @override
+  String get detailsReference => 'Númer tryggingar eða skjals';
+
+  @override
+  String get detailsReferenceHelper => 'Falið á skjánum og aldrei sent til Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Fela númer';
+
+  @override
+  String get detailsReferenceShow => 'Sýna númer';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (úr símanum þínum)';
+  }
+
+  @override
+  String get homeNotSet => 'Ekki stillt';
+
+  @override
+  String get homeSectionTitle => 'Hvar þú býrð';
 }

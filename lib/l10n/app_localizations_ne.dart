@@ -9426,4 +9426,44 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'पसल लेख्नुहोस्';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (आधिकारिक साइट)';
+  }
+
+  @override
+  String get coachForLabel => 'को लागि';
+
+  @override
+  String get coachSourceLabel => 'स्रोत';
+
+  @override
+  String get detailsCountry => 'देश';
+
+  @override
+  String get detailsCountryHelper => 'यो कहाँ छ। त्यो देशका लागि कम्पनीको साइट खोज्न प्रयोग हुन्छ।';
+
+  @override
+  String get detailsReference => 'पोलिसी वा कागजात नम्बर';
+
+  @override
+  String get detailsReferenceHelper => 'स्क्रिनमा लुकाइएको र कहिल्यै Ask Vaultara मा पठाइँदैन।';
+
+  @override
+  String get detailsReferenceHide => 'नम्बर लुकाउनुहोस्';
+
+  @override
+  String get detailsReferenceShow => 'नम्बर देखाउनुहोस्';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (तपाईंको फोनबाट)';
+  }
+
+  @override
+  String get homeNotSet => 'सेट गरिएको छैन';
+
+  @override
+  String get homeSectionTitle => 'तपाईं कहाँ बस्नुहुन्छ';
 }

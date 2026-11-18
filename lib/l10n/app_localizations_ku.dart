@@ -9426,4 +9426,44 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Dikanê binivîse';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (malpera fermî)';
+  }
+
+  @override
+  String get coachForLabel => 'Ji bo';
+
+  @override
+  String get coachSourceLabel => 'Çavkanî';
+
+  @override
+  String get detailsCountry => 'Welat';
+
+  @override
+  String get detailsCountryHelper => 'Li ku tê girtin. Ji bo dîtina malpera şirketê ya wî welatî tê bikaranîn.';
+
+  @override
+  String get detailsReference => 'Hejmara polîçe an belgeyê';
+
+  @override
+  String get detailsReferenceHelper => 'Li ser ekranê veşartî ye û qet ji Ask Vaultara re nayê şandin.';
+
+  @override
+  String get detailsReferenceHide => 'Hejmarê veşêre';
+
+  @override
+  String get detailsReferenceShow => 'Hejmarê nîşan bide';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (ji telefona te)';
+  }
+
+  @override
+  String get homeNotSet => 'Nehatiye danîn';
+
+  @override
+  String get homeSectionTitle => 'Tu li ku dijî';
 }

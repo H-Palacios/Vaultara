@@ -9431,4 +9431,44 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Sisesta pood';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (ametlik sait)';
+  }
+
+  @override
+  String get coachForLabel => 'Kellele';
+
+  @override
+  String get coachSourceLabel => 'Allikas';
+
+  @override
+  String get detailsCountry => 'Riik';
+
+  @override
+  String get detailsCountryHelper => 'Kus see on. Selle järgi leitakse ettevõtte sait selle riigi jaoks.';
+
+  @override
+  String get detailsReference => 'Poliisi või dokumendi number';
+
+  @override
+  String get detailsReferenceHelper => 'Ekraanil peidetud ja seda ei saadeta kunagi Ask Vaultarale.';
+
+  @override
+  String get detailsReferenceHide => 'Peida number';
+
+  @override
+  String get detailsReferenceShow => 'Näita numbrit';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (sinu telefonist)';
+  }
+
+  @override
+  String get homeNotSet => 'Määramata';
+
+  @override
+  String get homeSectionTitle => 'Kus sa elad';
 }

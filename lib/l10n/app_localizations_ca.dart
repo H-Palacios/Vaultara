@@ -9431,4 +9431,44 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Introdueix la botiga';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (lloc oficial)';
+  }
+
+  @override
+  String get coachForLabel => 'Per a';
+
+  @override
+  String get coachSourceLabel => 'Font';
+
+  @override
+  String get detailsCountry => 'País';
+
+  @override
+  String get detailsCountryHelper => 'On es té. Serveix per trobar el lloc de l\'empresa per a aquest país.';
+
+  @override
+  String get detailsReference => 'Número de pòlissa o document';
+
+  @override
+  String get detailsReferenceHelper => 'Amagat a la pantalla i mai enviat a Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Amaga el número';
+
+  @override
+  String get detailsReferenceShow => 'Mostra el número';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (del teu telèfon)';
+  }
+
+  @override
+  String get homeNotSet => 'No definit';
+
+  @override
+  String get homeSectionTitle => 'On vius';
 }

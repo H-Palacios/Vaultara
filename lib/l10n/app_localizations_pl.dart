@@ -9606,4 +9606,44 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Wpisz sklep';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (oficjalna strona)';
+  }
+
+  @override
+  String get coachForLabel => 'Dla';
+
+  @override
+  String get coachSourceLabel => 'Źródło';
+
+  @override
+  String get detailsCountry => 'Kraj';
+
+  @override
+  String get detailsCountryHelper => 'Gdzie jest prowadzone. Służy do znalezienia strony firmy w tym kraju.';
+
+  @override
+  String get detailsReference => 'Numer polisy lub dokumentu';
+
+  @override
+  String get detailsReferenceHelper => 'Ukryty na ekranie i nigdy nie wysyłany do Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Ukryj numer';
+
+  @override
+  String get detailsReferenceShow => 'Pokaż numer';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (z twojego telefonu)';
+  }
+
+  @override
+  String get homeNotSet => 'Nie ustawiono';
+
+  @override
+  String get homeSectionTitle => 'Gdzie mieszkasz';
 }

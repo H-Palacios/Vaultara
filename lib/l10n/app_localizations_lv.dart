@@ -9497,4 +9497,44 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Ievadiet veikalu';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (oficiālā vietne)';
+  }
+
+  @override
+  String get coachForLabel => 'Kam';
+
+  @override
+  String get coachSourceLabel => 'Avots';
+
+  @override
+  String get detailsCountry => 'Valsts';
+
+  @override
+  String get detailsCountryHelper => 'Kur tas ir noformēts. Izmanto, lai atrastu uzņēmuma vietni šajā valstī.';
+
+  @override
+  String get detailsReference => 'Polises vai dokumenta numurs';
+
+  @override
+  String get detailsReferenceHelper => 'Paslēpts ekrānā un nekad netiek sūtīts Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Slēpt numuru';
+
+  @override
+  String get detailsReferenceShow => 'Rādīt numuru';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (no jūsu tālruņa)';
+  }
+
+  @override
+  String get homeNotSet => 'Nav iestatīts';
+
+  @override
+  String get homeSectionTitle => 'Kur jūs dzīvojat';
 }

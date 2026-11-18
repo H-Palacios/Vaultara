@@ -9351,4 +9351,44 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'ป้อนร้านค้า';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (เว็บไซต์ทางการ)';
+  }
+
+  @override
+  String get coachForLabel => 'สำหรับ';
+
+  @override
+  String get coachSourceLabel => 'แหล่งที่มา';
+
+  @override
+  String get detailsCountry => 'ประเทศ';
+
+  @override
+  String get detailsCountryHelper => 'ประเทศที่ถืออยู่ ใช้หาเว็บไซต์ของบริษัทในประเทศนั้น';
+
+  @override
+  String get detailsReference => 'เลขกรมธรรม์หรือเอกสาร';
+
+  @override
+  String get detailsReferenceHelper => 'ซ่อนบนหน้าจอและไม่ส่งไปยัง Ask Vaultara';
+
+  @override
+  String get detailsReferenceHide => 'ซ่อนหมายเลข';
+
+  @override
+  String get detailsReferenceShow => 'แสดงหมายเลข';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (จากโทรศัพท์ของคุณ)';
+  }
+
+  @override
+  String get homeNotSet => 'ยังไม่ได้ตั้งค่า';
+
+  @override
+  String get homeSectionTitle => 'ที่ที่คุณอาศัยอยู่';
 }

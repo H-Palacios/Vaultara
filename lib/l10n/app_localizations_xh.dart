@@ -9426,4 +9426,44 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Faka ivenkile';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (iwebhusayithi esemthethweni)';
+  }
+
+  @override
+  String get coachForLabel => 'Ka';
+
+  @override
+  String get coachSourceLabel => 'Umthombo';
+
+  @override
+  String get detailsCountry => 'Ilizwe';
+
+  @override
+  String get detailsCountryHelper => 'Apho ibanjwe khona. Isetyenziselwa ukufumana iwebhusayithi yenkampani yelo lizwe.';
+
+  @override
+  String get detailsReference => 'Inombolo yepolisi okanye yoxwebhu';
+
+  @override
+  String get detailsReferenceHelper => 'Ifihliwe kwiscreen kwaye ayize ithunyelwe ku-Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Fihla inombolo';
+
+  @override
+  String get detailsReferenceShow => 'Bonisa inombolo';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (kwifowuni yakho)';
+  }
+
+  @override
+  String get homeNotSet => 'Ayisetwanga';
+
+  @override
+  String get homeSectionTitle => 'Apho uhlala khona';
 }

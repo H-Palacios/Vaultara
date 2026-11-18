@@ -9363,4 +9363,44 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Nhập cửa hàng';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (trang chính thức)';
+  }
+
+  @override
+  String get coachForLabel => 'Cho';
+
+  @override
+  String get coachSourceLabel => 'Nguồn';
+
+  @override
+  String get detailsCountry => 'Quốc gia';
+
+  @override
+  String get detailsCountryHelper => 'Nơi đăng ký. Dùng để tìm trang của công ty tại quốc gia đó.';
+
+  @override
+  String get detailsReference => 'Số hợp đồng hoặc giấy tờ';
+
+  @override
+  String get detailsReferenceHelper => 'Ẩn trên màn hình và không bao giờ gửi tới Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Ẩn số';
+
+  @override
+  String get detailsReferenceShow => 'Hiện số';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (từ điện thoại của bạn)';
+  }
+
+  @override
+  String get homeNotSet => 'Chưa đặt';
+
+  @override
+  String get homeSectionTitle => 'Nơi bạn sống';
 }

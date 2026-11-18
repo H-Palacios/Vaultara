@@ -9426,4 +9426,44 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'შეიყვანეთ მაღაზია';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (ოფიციალური საიტი)';
+  }
+
+  @override
+  String get coachForLabel => 'ვისთვის';
+
+  @override
+  String get coachSourceLabel => 'წყარო';
+
+  @override
+  String get detailsCountry => 'ქვეყანა';
+
+  @override
+  String get detailsCountryHelper => 'სადაა გაფორმებული. გამოიყენება ამ ქვეყნის კომპანიის საიტის საპოვნელად.';
+
+  @override
+  String get detailsReference => 'პოლისის ან დოკუმენტის ნომერი';
+
+  @override
+  String get detailsReferenceHelper => 'ეკრანზე დამალულია და არასოდეს ეგზავნება Ask Vaultara-ს.';
+
+  @override
+  String get detailsReferenceHide => 'ნომრის დამალვა';
+
+  @override
+  String get detailsReferenceShow => 'ნომრის ჩვენება';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (თქვენი ტელეფონიდან)';
+  }
+
+  @override
+  String get homeNotSet => 'არ არის მითითებული';
+
+  @override
+  String get homeSectionTitle => 'სად ცხოვრობთ';
 }

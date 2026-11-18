@@ -9431,4 +9431,44 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Idatzi denda';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (webgune ofiziala)';
+  }
+
+  @override
+  String get coachForLabel => 'Norentzat';
+
+  @override
+  String get coachSourceLabel => 'Iturria';
+
+  @override
+  String get detailsCountry => 'Herrialdea';
+
+  @override
+  String get detailsCountryHelper => 'Non dagoen. Herrialde horretako enpresaren webgunea aurkitzeko erabiltzen da.';
+
+  @override
+  String get detailsReference => 'Poliza edo agiri zenbakia';
+
+  @override
+  String get detailsReferenceHelper => 'Pantailan ezkutatuta eta ez zaio inoiz Ask Vaultarari bidaltzen.';
+
+  @override
+  String get detailsReferenceHide => 'Ezkutatu zenbakia';
+
+  @override
+  String get detailsReferenceShow => 'Erakutsi zenbakia';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (zure telefonotik)';
+  }
+
+  @override
+  String get homeNotSet => 'Ezarri gabe';
+
+  @override
+  String get homeSectionTitle => 'Non bizi zaren';
 }

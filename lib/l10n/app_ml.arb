@@ -3650,5 +3650,63 @@
   "detailsStoreHint": "സ്റ്റോർ നൽകുക",
   "@detailsStoreHint": {
     "description": "detailsStoreHint"
+  },
+  "coachCompanySite": "{company} (ഔദ്യോഗിക സൈറ്റ്)",
+  "@coachCompanySite": {
+    "description": "Plan card source line: company is a company name such as Aviva.",
+    "placeholders": {
+      "company": {
+        "type": "String"
+      }
+    }
+  },
+  "coachForLabel": "ആർക്ക്",
+  "@coachForLabel": {
+    "description": "coachForLabel"
+  },
+  "coachSourceLabel": "ഉറവിടം",
+  "@coachSourceLabel": {
+    "description": "coachSourceLabel"
+  },
+  "detailsCountry": "രാജ്യം",
+  "@detailsCountry": {
+    "description": "detailsCountry"
+  },
+  "detailsCountryHelper": "ഇത് എവിടെയാണ്. ആ രാജ്യത്തിനുള്ള കമ്പനിയുടെ സൈറ്റ് കണ്ടെത്താൻ ഉപയോഗിക്കുന്നു.",
+  "@detailsCountryHelper": {
+    "description": "detailsCountryHelper"
+  },
+  "detailsReference": "പോളിസി അല്ലെങ്കിൽ രേഖ നമ്പർ",
+  "@detailsReference": {
+    "description": "Optional record field for a policy, card or document number."
+  },
+  "detailsReferenceHelper": "സ്ക്രീനിൽ മറച്ചിരിക്കുന്നു, ഒരിക്കലും Ask Vaultara-ക്ക് അയയ്ക്കില്ല.",
+  "@detailsReferenceHelper": {
+    "description": "detailsReferenceHelper"
+  },
+  "detailsReferenceHide": "നമ്പർ മറയ്ക്കുക",
+  "@detailsReferenceHide": {
+    "description": "detailsReferenceHide"
+  },
+  "detailsReferenceShow": "നമ്പർ കാണിക്കുക",
+  "@detailsReferenceShow": {
+    "description": "detailsReferenceShow"
+  },
+  "homeFromPhone": "{country} (നിങ്ങളുടെ ഫോണിൽ നിന്ന്)",
+  "@homeFromPhone": {
+    "description": "Profile: where the user lives when not set, taken from the phone region; country is a flag and name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "homeNotSet": "സജ്ജമാക്കിയിട്ടില്ല",
+  "@homeNotSet": {
+    "description": "homeNotSet"
+  },
+  "homeSectionTitle": "നിങ്ങൾ താമസിക്കുന്നിടം",
+  "@homeSectionTitle": {
+    "description": "Profile section with where the user lives and their passport country."
   }
 }

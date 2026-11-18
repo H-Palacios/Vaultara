@@ -9416,4 +9416,44 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Дэлгүүрийг оруулна уу';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (албан ёсны сайт)';
+  }
+
+  @override
+  String get coachForLabel => 'Хэнд';
+
+  @override
+  String get coachSourceLabel => 'Эх сурвалж';
+
+  @override
+  String get detailsCountry => 'Улс';
+
+  @override
+  String get detailsCountryHelper => 'Хаана бүртгэлтэй. Тухайн улсын компанийн сайтыг олоход ашиглана.';
+
+  @override
+  String get detailsReference => 'Даатгалын эсвэл баримт бичгийн дугаар';
+
+  @override
+  String get detailsReferenceHelper => 'Дэлгэц дээр нуугдсан бөгөөд Ask Vaultara руу хэзээ ч илгээгдэхгүй.';
+
+  @override
+  String get detailsReferenceHide => 'Дугаарыг нуух';
+
+  @override
+  String get detailsReferenceShow => 'Дугаарыг харуулах';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (таны утаснаас)';
+  }
+
+  @override
+  String get homeNotSet => 'Тохируулаагүй';
+
+  @override
+  String get homeSectionTitle => 'Таны амьдардаг газар';
 }

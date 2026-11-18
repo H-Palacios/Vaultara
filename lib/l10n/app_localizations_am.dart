@@ -9425,4 +9425,44 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'መደብሩን ያስገቡ';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (ይፋዊ ድር ጣቢያ)';
+  }
+
+  @override
+  String get coachForLabel => 'ለ';
+
+  @override
+  String get coachSourceLabel => 'ምንጭ';
+
+  @override
+  String get detailsCountry => 'አገር';
+
+  @override
+  String get detailsCountryHelper => 'የሚገኝበት። ለዚያ አገር የኩባንያውን ድር ጣቢያ ለማግኘት ያገለግላል።';
+
+  @override
+  String get detailsReference => 'የፖሊሲ ወይም የሰነድ ቁጥር';
+
+  @override
+  String get detailsReferenceHelper => 'በማያ ገጹ ላይ ተደብቋል እና ወደ Ask Vaultara አይላክም።';
+
+  @override
+  String get detailsReferenceHide => 'ቁጥሩን ደብቅ';
+
+  @override
+  String get detailsReferenceShow => 'ቁጥሩን አሳይ';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (ከስልክዎ)';
+  }
+
+  @override
+  String get homeNotSet => 'አልተቀናበረም';
+
+  @override
+  String get homeSectionTitle => 'የሚኖሩበት';
 }

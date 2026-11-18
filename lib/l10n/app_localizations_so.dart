@@ -9425,4 +9425,44 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Geli dukaanka';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (bogga rasmiga)';
+  }
+
+  @override
+  String get coachForLabel => 'Loogu talagalay';
+
+  @override
+  String get coachSourceLabel => 'Isha';
+
+  @override
+  String get detailsCountry => 'Waddan';
+
+  @override
+  String get detailsCountryHelper => 'Halka laga hayo. Waxaa loo isticmaalaa helitaanka bogga shirkadda ee waddankaas.';
+
+  @override
+  String get detailsReference => 'Lambarka caymiska ama dukumentiga';
+
+  @override
+  String get detailsReferenceHelper => 'Shaashadda waa ku qarsoon yahay mana loo diro Ask Vaultara weligiis.';
+
+  @override
+  String get detailsReferenceHide => 'Qari lambarka';
+
+  @override
+  String get detailsReferenceShow => 'Muuji lambarka';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (taleefankaaga)';
+  }
+
+  @override
+  String get homeNotSet => 'Lama dejin';
+
+  @override
+  String get homeSectionTitle => 'Halka aad ku nooshahay';
 }

@@ -9631,4 +9631,44 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Cuir isteach an siopa';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (suíomh oifigiúil)';
+  }
+
+  @override
+  String get coachForLabel => 'Do';
+
+  @override
+  String get coachSourceLabel => 'Foinse';
+
+  @override
+  String get detailsCountry => 'Tír';
+
+  @override
+  String get detailsCountryHelper => 'Cá bhfuil sé. Úsáidtear é chun suíomh na cuideachta don tír sin a aimsiú.';
+
+  @override
+  String get detailsReference => 'Uimhir pholasaí nó doiciméid';
+
+  @override
+  String get detailsReferenceHelper => 'I bhfolach ar an scáileán agus ní sheoltar chuig Ask Vaultara riamh é.';
+
+  @override
+  String get detailsReferenceHide => 'Folaigh an uimhir';
+
+  @override
+  String get detailsReferenceShow => 'Taispeáin an uimhir';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (ó do ghuthán)';
+  }
+
+  @override
+  String get homeNotSet => 'Gan socrú';
+
+  @override
+  String get homeSectionTitle => 'Cá bhfuil tú i do chónaí';
 }

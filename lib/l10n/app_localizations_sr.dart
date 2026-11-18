@@ -9510,6 +9510,46 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Унесите продавницу';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (званични сајт)';
+  }
+
+  @override
+  String get coachForLabel => 'За';
+
+  @override
+  String get coachSourceLabel => 'Извор';
+
+  @override
+  String get detailsCountry => 'Држава';
+
+  @override
+  String get detailsCountryHelper => 'Где се води. Користи се за проналажење сајта компаније за ту државу.';
+
+  @override
+  String get detailsReference => 'Број полисе или документа';
+
+  @override
+  String get detailsReferenceHelper => 'Скривено на екрану и никад се не шаље Ask Vaultari.';
+
+  @override
+  String get detailsReferenceHide => 'Сакриј број';
+
+  @override
+  String get detailsReferenceShow => 'Прикажи број';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (са вашег телефона)';
+  }
+
+  @override
+  String get homeNotSet => 'Није постављено';
+
+  @override
+  String get homeSectionTitle => 'Где живите';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -19017,6 +19057,46 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get detailsStoreHint => 'Унесите продавницу';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (званични сајт)';
+  }
+
+  @override
+  String get coachForLabel => 'За';
+
+  @override
+  String get coachSourceLabel => 'Извор';
+
+  @override
+  String get detailsCountry => 'Држава';
+
+  @override
+  String get detailsCountryHelper => 'Где се води. Користи се за проналажење сајта компаније за ту државу.';
+
+  @override
+  String get detailsReference => 'Број полисе или документа';
+
+  @override
+  String get detailsReferenceHelper => 'Скривено на екрану и никад се не шаље Ask Vaultari.';
+
+  @override
+  String get detailsReferenceHide => 'Сакриј број';
+
+  @override
+  String get detailsReferenceShow => 'Прикажи број';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (са вашег телефона)';
+  }
+
+  @override
+  String get homeNotSet => 'Није постављено';
+
+  @override
+  String get homeSectionTitle => 'Где живите';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -28520,4 +28600,44 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get detailsStoreHint => 'Unesite prodavnicu';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (zvanični sajt)';
+  }
+
+  @override
+  String get coachForLabel => 'Za';
+
+  @override
+  String get coachSourceLabel => 'Izvor';
+
+  @override
+  String get detailsCountry => 'Država';
+
+  @override
+  String get detailsCountryHelper => 'Gde se vodi. Koristi se za pronalaženje sajta kompanije za tu državu.';
+
+  @override
+  String get detailsReference => 'Broj polise ili dokumenta';
+
+  @override
+  String get detailsReferenceHelper => 'Skriveno na ekranu i nikad se ne šalje Ask Vaultari.';
+
+  @override
+  String get detailsReferenceHide => 'Sakrij broj';
+
+  @override
+  String get detailsReferenceShow => 'Prikaži broj';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (sa vašeg telefona)';
+  }
+
+  @override
+  String get homeNotSet => 'Nije postavljeno';
+
+  @override
+  String get homeSectionTitle => 'Gde živite';
 }

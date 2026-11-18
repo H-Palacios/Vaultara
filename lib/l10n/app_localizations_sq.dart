@@ -9431,4 +9431,44 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'Shkruani dyqanin';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (faqja zyrtare)';
+  }
+
+  @override
+  String get coachForLabel => 'Për';
+
+  @override
+  String get coachSourceLabel => 'Burimi';
+
+  @override
+  String get detailsCountry => 'Shteti';
+
+  @override
+  String get detailsCountryHelper => 'Ku mbahet. Përdoret për të gjetur faqen e kompanisë për atë shtet.';
+
+  @override
+  String get detailsReference => 'Numri i policës ose dokumentit';
+
+  @override
+  String get detailsReferenceHelper => 'I fshehur në ekran dhe nuk dërgohet kurrë te Ask Vaultara.';
+
+  @override
+  String get detailsReferenceHide => 'Fshih numrin';
+
+  @override
+  String get detailsReferenceShow => 'Shfaq numrin';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (nga telefoni juaj)';
+  }
+
+  @override
+  String get homeNotSet => 'Pa caktuar';
+
+  @override
+  String get homeSectionTitle => 'Ku jetoni';
 }

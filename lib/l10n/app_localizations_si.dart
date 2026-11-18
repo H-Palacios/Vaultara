@@ -9425,4 +9425,44 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get detailsStoreHint => 'වෙළඳසැල ඇතුළත් කරන්න';
+
+  @override
+  String coachCompanySite(String company) {
+    return '$company (නිල වෙබ් අඩවිය)';
+  }
+
+  @override
+  String get coachForLabel => 'සඳහා';
+
+  @override
+  String get coachSourceLabel => 'මූලාශ්‍රය';
+
+  @override
+  String get detailsCountry => 'රට';
+
+  @override
+  String get detailsCountryHelper => 'එය තබා ඇති තැන. එම රට සඳහා සමාගමේ වෙබ් අඩවිය සොයා ගැනීමට භාවිතා වේ.';
+
+  @override
+  String get detailsReference => 'ප්‍රතිපත්ති හෝ ලේඛන අංකය';
+
+  @override
+  String get detailsReferenceHelper => 'තිරය මත සඟවා ඇති අතර කිසිදා Ask Vaultara වෙත යවනු නොලැබේ.';
+
+  @override
+  String get detailsReferenceHide => 'අංකය සඟවන්න';
+
+  @override
+  String get detailsReferenceShow => 'අංකය පෙන්වන්න';
+
+  @override
+  String homeFromPhone(String country) {
+    return '$country (ඔබේ දුරකථනයෙන්)';
+  }
+
+  @override
+  String get homeNotSet => 'සකසා නැත';
+
+  @override
+  String get homeSectionTitle => 'ඔබ ජීවත් වන තැන';
 }
