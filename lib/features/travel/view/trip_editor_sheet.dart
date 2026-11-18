@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
@@ -25,10 +26,10 @@ Future<SavedTrip?> showTripEditorSheet(
 }) {
   return AppSheet.show<SavedTrip>(
     context: context,
-      showDragHandle: false,
+    showDragHandle: false,
     enableDrag: false,
     builder: (_) => _TripEditorSheet(trip: trip),
-    );
+  );
 }
 
 class _TripEditorSheet extends StatefulWidget {
@@ -108,7 +109,8 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     final today = Dates.only(DateTime.now());
     final current = _departure;
     final first = current != null && current.isBefore(today) ? current : today;
-    final picked = await showDatePicker(
+    final picked = await showAppDatePicker(
+      initialEntryMode: DatePickerEntryMode.calendar,
       context: context,
       initialDate: current ?? today,
       firstDate: first,
@@ -141,7 +143,8 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
         ? floor
         : current;
     final horizon = DateTime(today.year + 6, 12, 31);
-    final picked = await showDatePicker(
+    final picked = await showAppDatePicker(
+      initialEntryMode: DatePickerEntryMode.calendar,
       context: context,
       initialDate: initial,
       firstDate: floor,

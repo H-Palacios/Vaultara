@@ -185,6 +185,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
           lostLine: draft.lostLine,
           issuedIn: draft.issuedIn,
           provider: draft.provider,
+          reference: draft.reference,
           leadDays: draft.leadDays,
           isDeleted: false,
           householdId: draft.shared ? HouseholdRepository.householdId : null,

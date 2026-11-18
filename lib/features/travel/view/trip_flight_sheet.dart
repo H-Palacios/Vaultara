@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
@@ -91,8 +92,12 @@ class TripFlightLimits {
     return TripFlightLimits(
       tripStart: tripStart,
       tripEnd: tripEnd,
-      previous: index > 0 && index <= flights.length ? flights[index - 1] : null,
-      next: index >= 0 && index < flights.length - 1 ? flights[index + 1] : null,
+      previous: index > 0 && index <= flights.length
+          ? flights[index - 1]
+          : null,
+      next: index >= 0 && index < flights.length - 1
+          ? flights[index + 1]
+          : null,
     );
   }
 
@@ -121,14 +126,14 @@ Future<TripFlight?> showTripFlightSheet(
 }) {
   return AppSheet.show<TripFlight>(
     context: context,
-      showDragHandle: false,
+    showDragHandle: false,
     enableDrag: false,
     builder: (_) => _FlightSheet(
       flight: flight,
       suggestedDate: suggestedDate,
       limits: limits,
     ),
-    );
+  );
 }
 
 class _FlightSheet extends StatefulWidget {
@@ -219,7 +224,8 @@ class _FlightSheetState extends State<_FlightSheet> {
     var initial = current ?? widget.suggestedDate ?? first;
     if (initial.isBefore(first)) initial = first;
     if (initial.isAfter(last)) initial = last;
-    final picked = await showDatePicker(
+    final picked = await showAppDatePicker(
+      initialEntryMode: DatePickerEntryMode.calendar,
       context: context,
       initialDate: initial,
       firstDate: first,
@@ -321,13 +327,15 @@ class _FlightSheetState extends State<_FlightSheet> {
     final next = limits.next;
     final previousLandTime = previous?.landTime;
     final nextDepartTime = next?.departTime;
-    final beforePrevious = previous != null &&
+    final beforePrevious =
+        previous != null &&
         (departDate.isBefore(previous.landDate) ||
             (departDate == previous.landDate &&
                 departTime != null &&
                 previousLandTime != null &&
                 departTime.compareTo(previousLandTime) < 0));
-    final afterNext = next != null &&
+    final afterNext =
+        next != null &&
         (landDate.isAfter(next.departDate) ||
             (landDate == next.departDate &&
                 landTime != null &&
@@ -423,8 +431,9 @@ class _FlightSheetState extends State<_FlightSheet> {
                     ? loc.travelTimeChoose
                     : MaterialLocalizations.of(context).formatTimeOfDay(
                         time,
-                        alwaysUse24HourFormat:
-                            MediaQuery.of(context).alwaysUse24HourFormat,
+                        alwaysUse24HourFormat: MediaQuery.of(
+                          context,
+                        ).alwaysUse24HourFormat,
                       ),
                 placeholder: time == null,
                 icon: Icons.schedule_rounded,
@@ -537,10 +546,7 @@ class _FlightSheetState extends State<_FlightSheet> {
                 ),
                 const SizedBox(width: 10),
                 Expanded(
-                  child: FilledButton(
-                    onPressed: _save,
-                    child: Text(loc.save),
-                  ),
+                  child: FilledButton(onPressed: _save, child: Text(loc.save)),
                 ),
               ],
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
@@ -68,7 +69,8 @@ class _StayZoneTile extends StatelessWidget {
     var initial = zone.entry;
     if (initial.isAfter(last)) initial = last;
     if (initial.isBefore(trip.start)) initial = trip.start;
-    final picked = await showDatePicker(
+    final picked = await showAppDatePicker(
+      initialEntryMode: DatePickerEntryMode.calendar,
       context: context,
       initialDate: initial,
       firstDate: trip.start,
@@ -97,7 +99,9 @@ class _StayZoneTile extends StatelessWidget {
     final name = zone.isSchengen
         ? loc.staySchengenArea
         : Countries.name(zone.key);
-    final flag = zone.isSchengen ? Countries.flag('EU') : Countries.flag(zone.key);
+    final flag = zone.isSchengen
+        ? Countries.flag('EU')
+        : Countries.flag(zone.key);
     final leaveBy = TravelText.date(context, zone.leaveBy);
 
     return Container(
@@ -194,9 +198,7 @@ class _StayZoneTile extends StatelessWidget {
               onPressed: () => _pickArrival(context),
               icon: const Icon(Icons.edit_calendar_rounded, size: 18),
               label: Text(loc.stayArrivedOther),
-              style: TextButton.styleFrom(
-                visualDensity: VisualDensity.compact,
-              ),
+              style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
             ),
           ),
         ],

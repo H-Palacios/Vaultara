@@ -29,6 +29,9 @@ class RecordInput {
   /// bank, insurer or company it is with.
   final String? issuedIn;
   final String? provider;
+
+  /// A policy, card or document number.
+  final String? reference;
   final int? leadDays;
   final bool shared;
 
@@ -54,6 +57,7 @@ class RecordInput {
     this.lostLine,
     this.issuedIn,
     this.provider,
+    this.reference,
     this.leadDays,
     this.shared = false,
   });

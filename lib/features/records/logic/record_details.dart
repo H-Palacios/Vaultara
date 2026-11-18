@@ -9,6 +9,10 @@ enum RecordCountryKind {
 
   /// Where a vehicle is registered.
   registered,
+
+  /// Where a card, policy or membership is held, so the company's site for
+  /// that country is used.
+  company,
 }
 
 /// Who a record's group is with.
@@ -90,6 +94,7 @@ class RecordDetails {
     if (group == null) return null;
     if (_issued.contains(group)) return RecordCountryKind.issued;
     if (_registered.contains(group)) return RecordCountryKind.registered;
+    if (_providers.containsKey(group)) return RecordCountryKind.company;
     return _own(group) ? RecordCountryKind.issued : null;
   }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -56,7 +57,7 @@ Future<void> startLifePlan(
       people: people,
       variant: variant,
     ),
-    );
+  );
   if (draft == null || !context.mounted) return;
   try {
     final plan = await LifePlanRepository.startPlan(draft);
@@ -87,7 +88,7 @@ Future<void> editLifePlan(BuildContext context, LifePlan plan) async {
       people: plan.people,
       variant: plan.variant,
     ),
-    );
+  );
   if (edited == null) return;
   // Records that only now belong to the plan, because someone was added or
   // the answer changed from bought to sold, start as they are now.
@@ -186,7 +187,8 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
     if (current != null && current.isBefore(first)) first = current;
     var initial = current ?? now;
     if (initial.isAfter(last)) initial = last;
-    final picked = await showDatePicker(
+    final picked = await showAppDatePicker(
+      initialEntryMode: DatePickerEntryMode.calendar,
       context: context,
       initialDate: initial,
       firstDate: first,

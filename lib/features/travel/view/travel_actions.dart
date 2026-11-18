@@ -76,6 +76,7 @@ class TravelActions {
           lostLine: draft.lostLine,
           issuedIn: draft.issuedIn,
           provider: draft.provider,
+          reference: draft.reference,
           leadDays: draft.leadDays,
           householdId: draft.shared ? HouseholdRepository.householdId : null,
         );

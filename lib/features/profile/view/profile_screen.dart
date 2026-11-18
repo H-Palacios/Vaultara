@@ -16,6 +16,7 @@ import 'package:vaultara/features/profile/data/avatar_repository.dart';
 import 'package:vaultara/features/profile/data/user_profile.dart';
 import 'package:vaultara/features/profile/view/display_settings_screen.dart';
 import 'package:vaultara/features/profile/view/export_calendar_screen.dart';
+import 'package:vaultara/features/profile/view/widgets/home_country_section.dart';
 import 'package:vaultara/features/records/view/recently_deleted_screen.dart';
 import 'package:vaultara/features/reminders/services/reminder_time_service.dart';
 import 'package:vaultara/features/reminders/view/notification_settings_screen.dart';
@@ -206,6 +207,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
               _UpgradeStrip(onTap: _openPlans),
             ],
             const SizedBox(height: 20),
+
+            _Section(
+              title: t.homeSectionTitle,
+              children: const [HomeCountryTiles()],
+            ),
 
             _Section(
               title: t.profileSectionAccountSecurity,

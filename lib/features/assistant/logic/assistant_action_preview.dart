@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:vaultara/features/records/view/editor/editor_details_fields.dart';
 import 'package:vaultara/features/records/logic/record_details.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
@@ -278,7 +279,26 @@ class AssistantActionPreview {
       livesIn: action.planLivesIn,
       applyIn: action.planApplyIn,
     );
+    // Whose record it is when it is not the user's own, and the company
+    // whose site the steps come from for cards, insurance and memberships.
+    final holderId = record?.holderId;
+    final holder = holderId == null || holderId.isEmpty
+        ? null
+        : PeopleRepository.byId(holderId)?.name;
+    final company =
+        record == null ||
+            record.locked ||
+            RecordDetails.providerKind(record.subcategoryName) == null
+        ? null
+        : record.provider;
     final rows = <AssistantChangeRow>[
+      if (holder != null)
+        AssistantChangeRow(label: loc.coachForLabel, after: holder),
+      if (company != null)
+        AssistantChangeRow(
+          label: loc.coachSourceLabel,
+          after: loc.coachCompanySite(company),
+        ),
       if (lines.country != null)
         AssistantChangeRow(
           label: loc.coachCountryLabel,
@@ -369,9 +389,9 @@ class AssistantActionPreview {
       rows: <AssistantChangeRow>[
         if (action.setsIssuedIn)
           AssistantChangeRow(
-            label: countryKind == RecordCountryKind.registered
-                ? loc.detailsRegisteredIn
-                : loc.detailsIssuedBy,
+            label: countryKind == null
+                ? loc.detailsIssuedBy
+                : EditorCountryField.label(loc, countryKind),
             before: action.previousIssuedIn == null
                 ? null
                 : f.country(action.previousIssuedIn),

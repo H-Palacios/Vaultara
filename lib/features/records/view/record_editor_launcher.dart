@@ -48,6 +48,7 @@ Future<void> openRecordEditor({
       lostLine: record.lostLine,
       issuedIn: record.issuedIn,
       provider: record.provider,
+      reference: record.reference,
       leadDays: record.leadDays,
       shared: record.isShared,
     ),
@@ -74,6 +75,8 @@ Future<void> openRecordEditor({
         clearIssuedIn: draft.issuedIn == null,
         provider: draft.provider,
         clearProvider: draft.provider == null,
+        reference: draft.reference,
+        clearReference: draft.reference == null,
         leadDays: draft.leadDays,
         clearLeadDays: draft.leadDays == null,
       );

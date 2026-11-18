@@ -100,6 +100,7 @@ Future<void> showRecordEditorSheet({
     isDismissible: !isAnyTutorialMode,
     enableDrag: false,
     showDragHandle: false,
+    keepHeightWithKeyboard: true,
     builder: (sheetContext) {
       return _RecordEditorSheet(
         mode: mode,
@@ -215,6 +216,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   String? issuedIn;
   bool _issuedTouched = false;
   late final TextEditingController providerController;
+  late final TextEditingController referenceController;
   int? leadDays;
   bool shared = false;
   bool scanBusy = false;
@@ -290,6 +292,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     issuedIn = draft?.issuedIn;
     _issuedTouched = draft?.issuedIn != null;
     providerController = TextEditingController(text: draft?.provider ?? '');
+    referenceController = TextEditingController(text: draft?.reference ?? '');
     leadDays = draft?.leadDays;
     shared = draft?.shared ?? false;
     renewalCost = draft?.renewalCost;
@@ -322,6 +325,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         keptIn != null ||
         lostLineController.text.trim().isNotEmpty ||
         providerController.text.trim().isNotEmpty ||
+        referenceController.text.trim().isNotEmpty ||
         leadDays != null ||
         notesController.text.trim().isNotEmpty ||
         (renewalCost ?? 0) > 0 ||
@@ -419,6 +423,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     notesController.dispose();
     lostLineController.dispose();
     providerController.dispose();
+    referenceController.dispose();
     expiryController.dispose();
 
     if (isEditMode) PrivacyScreen.release();
@@ -1510,6 +1515,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           provider: RecordDetails.providerKind(selectedSubcategory) == null
               ? null
               : TrackedItem.cleanProvider(providerController.text),
+          reference: TrackedItem.cleanReference(referenceController.text),
           leadDays: leadDays,
           shared: shared && HouseholdRepository.canEditShared,
         ),
@@ -1585,6 +1591,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       lostLineController.text.trim(),
       issuedIn,
       providerController.text.trim(),
+      referenceController.text.trim(),
       leadDays,
       shared,
     ].join('|');
@@ -1654,6 +1661,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       locked,
       keptIn != null,
       providerController.text.trim().isNotEmpty,
+      referenceController.text.trim().isNotEmpty,
       leadDays != null,
       notesController.text.trim().isNotEmpty,
       renewalCost != null && renewalCost! > 0,
@@ -1674,7 +1682,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       selectedSubcategory,
     );
     final List<Widget> moreChildren = [
-      if (showExtras && (countryKind != null || providerKind != null)) ...[
+      if (showExtras) ...[
         if (countryKind != null)
           EditorCountryField(
             kind: countryKind,
@@ -1689,9 +1697,15 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           EditorProviderField(
             kind: providerKind,
             controller: providerController,
+            country: issuedIn,
             enabled: !isSaving,
             onChanged: (_) => setState(() {}),
           ),
+        EditorReferenceField(
+          controller: referenceController,
+          enabled: !isSaving,
+          onChanged: (_) => setState(() {}),
+        ),
         const SizedBox(height: 10),
       ],
       if (showExtras) ...[
@@ -1799,51 +1813,57 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     ];
 
     final double maxHeight = MediaQuery.of(context).size.height * 0.92;
+    // The keyboard covers the bottom of the sheet. The sheet keeps its size
+    // and its Cancel and Save buttons stay where they are; only the form
+    // above the keyboard scrolls, so nothing moves and nothing overflows.
+    final bool keyboardOpen = bottomInset > 0;
 
     return PopScope(
       canPop: !isAnyTutorialMode,
       child: SafeArea(
+        bottom: !keyboardOpen,
         child: Padding(
-          padding: EdgeInsets.only(bottom: bottomInset),
+          padding: EdgeInsets.zero,
           child: ConstrainedBox(
-            constraints: BoxConstraints(maxHeight: maxHeight),
+            constraints: BoxConstraints(
+              maxHeight: maxHeight,
+              minHeight: keyboardOpen ? maxHeight : 0,
+            ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        isEditMode ? loc.editRecordTitle : loc.addRecord,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      if (widget.editedRecord != null)
+                        Center(
+                          child: RecordHistoryLines(
+                            record: widget.editedRecord!,
+                            centred: true,
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+                Divider(height: 1, color: scheme.outlineVariant),
                 Flexible(
+                  fit: keyboardOpen ? FlexFit.tight : FlexFit.loose,
                   child: SingleChildScrollView(
                     padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        // The title scrolls with the form, so with the
-                        // keyboard open only the buttons stay fixed.
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(4, 4, 4, 12),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Text(
-                                isEditMode
-                                    ? loc.editRecordTitle
-                                    : loc.addRecord,
-                                textAlign: TextAlign.center,
-                                style: const TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                              if (widget.editedRecord != null)
-                                Center(
-                                  child: RecordHistoryLines(
-                                    record: widget.editedRecord!,
-                                    centred: true,
-                                  ),
-                                ),
-                            ],
-                          ),
-                        ),
                         IgnorePointer(
                           ignoring: isAnyTutorialMode,
                           child: Column(
@@ -2013,8 +2033,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                     ),
                   ),
                 ),
-                Divider(height: 1, color: scheme.outlineVariant),
-                if (saveError != null)
+                if (keyboardOpen) SizedBox(height: bottomInset),
+                if (!keyboardOpen)
+                  Divider(height: 1, color: scheme.outlineVariant),
+                if (!keyboardOpen && saveError != null)
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
                     child: Row(
@@ -2039,15 +2061,16 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                       ],
                     ),
                   ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 10, 16, 12),
-                  child: EditorActionsRow(
-                    saveButtonKey: saveButtonKey,
-                    isSaving: isSaving,
-                    onCancel: _onCancelPressed,
-                    onSave: _onSavePressed,
+                if (!keyboardOpen)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 10, 16, 12),
+                    child: EditorActionsRow(
+                      saveButtonKey: saveButtonKey,
+                      isSaving: isSaving,
+                      onCancel: _onCancelPressed,
+                      onSave: _onSavePressed,
+                    ),
                   ),
-                ),
               ],
             ),
           ),

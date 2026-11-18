@@ -43,7 +43,26 @@ class TrackedItem {
   /// The bank, insurer, store or company it is with. Optional.
   final String? provider;
 
+  /// A policy, card or document number, typed by the user. Shown masked,
+  /// never sent to Ask Vaultara.
+  final String? reference;
+
   static const int maxProvider = 60;
+  static const int maxReference = 40;
+
+  static String? cleanReference(Object? value) {
+    if (value is! String) return null;
+    final text = value.replaceAll(RegExp(r'\s+'), ' ').trim();
+    if (text.isEmpty) return null;
+    return text.length > maxReference ? text.substring(0, maxReference) : text;
+  }
+
+  /// The number with all but the last four characters hidden.
+  static String maskReference(String value) {
+    final plain = value.replaceAll(' ', '');
+    if (plain.length <= 4) return '•' * plain.length;
+    return '•••• ${plain.substring(plain.length - 4)}';
+  }
 
   static String? cleanCountry(Object? value) {
     if (value is! String) return null;
@@ -99,6 +118,7 @@ class TrackedItem {
     String? lostLine,
     String? issuedIn,
     String? provider,
+    String? reference,
     this.leadDays,
     this.isDeleted = false,
     this.deletedAt,
@@ -110,7 +130,8 @@ class TrackedItem {
   }) : keptIn = KeptIn.clean(keptIn),
        lostLine = KeptIn.cleanLine(lostLine),
        issuedIn = cleanCountry(issuedIn),
-       provider = cleanProvider(provider);
+       provider = cleanProvider(provider),
+       reference = cleanReference(reference);
 
   TrackedItem copyWith({
     String? id,
@@ -146,6 +167,8 @@ class TrackedItem {
     bool clearIssuedIn = false,
     String? provider,
     bool clearProvider = false,
+    String? reference,
+    bool clearReference = false,
     int? leadDays,
     bool clearLeadDays = false,
     bool? isDeleted,
@@ -191,6 +214,7 @@ class TrackedItem {
       lostLine: clearLostLine ? null : (lostLine ?? this.lostLine),
       issuedIn: clearIssuedIn ? null : (issuedIn ?? this.issuedIn),
       provider: clearProvider ? null : (provider ?? this.provider),
+      reference: clearReference ? null : (reference ?? this.reference),
       leadDays: clearLeadDays ? null : (leadDays ?? this.leadDays),
       isDeleted: isDeleted ?? this.isDeleted,
       deletedAt: deletedAt ?? this.deletedAt,
@@ -229,6 +253,7 @@ class TrackedItem {
       'lostLine': lostLine,
       'issuedIn': issuedIn,
       'provider': provider,
+      'reference': reference,
       'leadDays': leadDays,
       'isDeleted': isDeleted,
       'deletedAt': deletedAt != null ? Timestamp.fromDate(deletedAt!) : null,
@@ -332,6 +357,7 @@ class TrackedItem {
       lostLine: map['lostLine'] is String ? map['lostLine'] as String : null,
       issuedIn: cleanCountry(map['issuedIn']),
       provider: cleanProvider(map['provider']),
+      reference: cleanReference(map['reference']),
       leadDays: _readLeadDays(map['leadDays']),
       isDeleted: map['isDeleted'] as bool? ?? false,
       deletedAt: deletedAt,

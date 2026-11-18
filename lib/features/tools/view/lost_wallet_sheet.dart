@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/features/records/view/kept_in_text.dart';
@@ -19,7 +20,7 @@ Future<LifePlan?> showLostWalletSheet(
     context: context,
     showDragHandle: true,
     builder: (_) => _LostWalletSheet(plan: plan, variant: variant),
-    );
+  );
 }
 
 class _LostWalletSheet extends StatefulWidget {
@@ -52,7 +53,8 @@ class _LostWalletSheetState extends State<_LostWalletSheet> {
 
   Future<void> _pickDate() async {
     final today = DateUtils.dateOnly(DateTime.now());
-    final picked = await showDatePicker(
+    final picked = await showAppDatePicker(
+      initialEntryMode: DatePickerEntryMode.calendar,
       context: context,
       initialDate: _date.isAfter(today) ? today : _date,
       firstDate: DateTime(today.year - 1, today.month, today.day),

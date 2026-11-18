@@ -27,7 +27,7 @@ import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
-enum _PersonAction { rename, nationality, remove }
+enum _PersonAction { rename, nationality, residence, remove }
 
 class FamilyScreen extends StatefulWidget {
   const FamilyScreen({super.key});
@@ -230,17 +230,20 @@ class _FamilyScreenState extends State<FamilyScreen> {
                     ),
                     const SizedBox(height: 18),
                     if (tier == PlanTier.business) const UpdatesReviewSection(),
-                    ValueListenableBuilder<String?>(
-                      valueListenable: NationalityRepository.mine,
-                      builder: (context, mine, _) => _PersonRow(
+                    ListenableBuilder(
+                      listenable: NationalityRepository.changes,
+                      builder: (context, _) => _PersonRow(
                         key: _meKey,
                         person: null,
                         name: loc.familyMe,
                         recordCount: counts[null] ?? 0,
-                        nationality: mine,
+                        nationality: NationalityRepository.mine.value,
+                        residence: NationalityRepository.myResidence.value,
                         onAction: (action) {
                           if (action == _PersonAction.nationality) {
                             VisaActions.pickNationality(context, null);
+                          } else if (action == _PersonAction.residence) {
+                            VisaActions.pickResidence(context, null);
                           }
                         },
                       ),
@@ -252,6 +255,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                         name: person.name,
                         recordCount: counts[person.id] ?? 0,
                         nationality: person.nationality,
+                        residence: person.residence,
                         onAction: (action) {
                           switch (action) {
                             case _PersonAction.rename:
@@ -259,6 +263,9 @@ class _FamilyScreenState extends State<FamilyScreen> {
                               break;
                             case _PersonAction.nationality:
                               VisaActions.pickNationality(context, person.id);
+                              break;
+                            case _PersonAction.residence:
+                              VisaActions.pickResidence(context, person.id);
                               break;
                             case _PersonAction.remove:
                               _removePerson(person);
@@ -317,6 +324,9 @@ class _PersonRow extends StatelessWidget {
   final String name;
   final int recordCount;
   final String? nationality;
+
+  /// Where the person lives, when it was set.
+  final String? residence;
   final ValueChanged<_PersonAction>? onAction;
 
   const _PersonRow({
@@ -325,6 +335,7 @@ class _PersonRow extends StatelessWidget {
     required this.name,
     required this.recordCount,
     this.nationality,
+    this.residence,
     this.onAction,
   });
 
@@ -360,12 +371,18 @@ class _PersonRow extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    nationality == null
-                        ? loc.familyRecordCount(recordCount)
-                        : '${loc.familyRecordCount(recordCount)}  ·  '
-                              '${Countries.flag(nationality!)} '
-                              '${Countries.name(nationality!)}',
-                    maxLines: 1,
+                    <String>[
+                      loc.familyRecordCount(recordCount),
+                      if (nationality != null)
+                        '${Countries.flag(nationality!)} '
+                            '${Countries.name(nationality!)}',
+                      if (residence != null && residence != nationality)
+                        loc.visaLivesIn(
+                          '${Countries.flag(residence!)} '
+                          '${Countries.name(residence!)}',
+                        ),
+                    ].join('  ·  '),
+                    maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontSize: 12,
@@ -438,6 +455,20 @@ class _PersonRow extends StatelessWidget {
                         ),
                         const SizedBox(width: 12),
                         Text(loc.visaPassportCountry),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem<_PersonAction>(
+                    value: _PersonAction.residence,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.home_work_rounded,
+                          size: 20,
+                          color: scheme.onSurface,
+                        ),
+                        const SizedBox(width: 12),
+                        Text(loc.visaResidenceTitle),
                       ],
                     ),
                   ),
@@ -670,7 +701,7 @@ Future<_PersonInput?> _showNameSheet(
 }) {
   return AppSheet.show<_PersonInput>(
     context: context,
-      showDragHandle: false,
+    showDragHandle: false,
     enableDrag: false,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
@@ -682,7 +713,7 @@ Future<_PersonInput?> _showNameSheet(
       initialEmail: initialEmail,
       initialReminders: initialReminders,
     ),
-    );
+  );
 }
 
 class _NameSheet extends StatefulWidget {

@@ -22,9 +22,29 @@ class EditorCountryField extends StatelessWidget {
     required this.onChanged,
   });
 
-  String _label(AppLocalizations loc) => kind == RecordCountryKind.registered
-      ? loc.detailsRegisteredIn
-      : loc.detailsIssuedBy;
+  String _label(AppLocalizations loc) => label(loc, kind);
+
+  static String label(AppLocalizations loc, RecordCountryKind kind) {
+    switch (kind) {
+      case RecordCountryKind.issued:
+        return loc.detailsIssuedBy;
+      case RecordCountryKind.registered:
+        return loc.detailsRegisteredIn;
+      case RecordCountryKind.company:
+        return loc.detailsCountry;
+    }
+  }
+
+  static String helper(AppLocalizations loc, RecordCountryKind kind) {
+    switch (kind) {
+      case RecordCountryKind.issued:
+        return loc.detailsIssuedByHelper;
+      case RecordCountryKind.registered:
+        return loc.detailsRegisteredHelper;
+      case RecordCountryKind.company:
+        return loc.detailsCountryHelper;
+    }
+  }
 
   Future<void> _pick(BuildContext context) async {
     final loc = AppLocalizations.of(context)!;
@@ -32,9 +52,7 @@ class EditorCountryField extends StatelessWidget {
       context,
       selected: value,
       title: _label(loc),
-      hint: kind == RecordCountryKind.registered
-          ? loc.detailsRegisteredHelper
-          : loc.detailsIssuedByHelper,
+      hint: helper(loc, kind),
     );
     if (picked != null) onChanged(picked);
   }
@@ -58,11 +76,7 @@ class EditorCountryField extends StatelessWidget {
                 prefixIcon: const Icon(Icons.public_rounded),
               ).copyWith(
                 hintText: loc.detailsChooseCountry,
-                helperText: code == null
-                    ? (kind == RecordCountryKind.registered
-                          ? loc.detailsRegisteredHelper
-                          : loc.detailsIssuedByHelper)
-                    : null,
+                helperText: code == null ? helper(loc, kind) : null,
                 helperMaxLines: 3,
                 suffixIcon: code == null
                     ? const Icon(Icons.expand_more_rounded)
@@ -93,12 +107,17 @@ class EditorProviderField extends StatefulWidget {
   final bool enabled;
   final ValueChanged<String> onChanged;
 
+  /// The record's country: suggestions and examples come from there, or
+  /// from where the user lives when it is not set.
+  final String? country;
+
   const EditorProviderField({
     super.key,
     required this.kind,
     required this.controller,
     required this.enabled,
     required this.onChanged,
+    this.country,
   });
 
   @override
@@ -107,13 +126,16 @@ class EditorProviderField extends StatefulWidget {
 
 class _EditorProviderFieldState extends State<EditorProviderField> {
   final FocusNode _focus = FocusNode();
-  late List<String> _names = RecordDetails.suggestions(widget.kind);
+  late List<String> _names = RecordDetails.suggestions(
+    widget.kind,
+    country: widget.country,
+  );
 
   @override
   void didUpdateWidget(EditorProviderField oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.kind != widget.kind) {
-      _names = RecordDetails.suggestions(widget.kind);
+    if (oldWidget.kind != widget.kind || oldWidget.country != widget.country) {
+      _names = RecordDetails.suggestions(widget.kind, country: widget.country);
     }
   }
 
@@ -169,7 +191,10 @@ class _EditorProviderFieldState extends State<EditorProviderField> {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
-    final examples = RecordDetails.examples(widget.kind);
+    final examples = RecordDetails.examples(
+      widget.kind,
+      country: widget.country,
+    );
     final hint = examples.length == 2
         ? loc.detailsHintExamples(_enter(loc), examples[0], examples[1])
         : _enter(loc);
@@ -246,6 +271,67 @@ class _EditorProviderFieldState extends State<EditorProviderField> {
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+/// A policy, card or document number. Hidden while typing unless shown,
+/// kept with the record and never sent to Ask Vaultara. Optional.
+class EditorReferenceField extends StatefulWidget {
+  final TextEditingController controller;
+  final bool enabled;
+  final ValueChanged<String> onChanged;
+
+  const EditorReferenceField({
+    super.key,
+    required this.controller,
+    required this.enabled,
+    required this.onChanged,
+  });
+
+  @override
+  State<EditorReferenceField> createState() => _EditorReferenceFieldState();
+}
+
+class _EditorReferenceFieldState extends State<EditorReferenceField> {
+  bool _shown = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    return Padding(
+      padding: const EdgeInsets.only(top: 6, bottom: 4),
+      child: TextField(
+        controller: widget.controller,
+        enabled: widget.enabled,
+        obscureText: !_shown,
+        obscuringCharacter: '•',
+        autocorrect: false,
+        enableSuggestions: false,
+        maxLength: TrackedItem.maxReference,
+        onChanged: widget.onChanged,
+        decoration:
+            AppInputDecorations.field(
+              context,
+              labelText: '${loc.detailsReference} ${loc.detailsOptional}',
+              prefixIcon: const Icon(Icons.tag_rounded),
+            ).copyWith(
+              helperText: loc.detailsReferenceHelper,
+              helperMaxLines: 3,
+              counterText: '',
+              suffixIcon: IconButton(
+                tooltip: _shown
+                    ? loc.detailsReferenceHide
+                    : loc.detailsReferenceShow,
+                onPressed: () => setState(() => _shown = !_shown),
+                icon: Icon(
+                  _shown
+                      ? Icons.visibility_off_rounded
+                      : Icons.visibility_rounded,
+                ),
+              ),
+            ),
       ),
     );
   }
