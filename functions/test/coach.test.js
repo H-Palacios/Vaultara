@@ -213,6 +213,18 @@ const ctx = {
   r = await tools.run(ctx2, "propose_record_details", { record_id: "v1", issued_in: "Narnia" }, cardActions);
   assert.ok(r.error);
 
+  // A card is planned in its own country, or where the holder lives, and
+  // the model is told to check the company works there first.
+  cards.provider = "UnipolSai";
+  let plan4 = await tools.run(ctx2, "get_renewal_plan", { record_id: "c1" }, cardActions);
+  assert.strictEqual(plan4.company_country, "BS");
+  assert.ok(/UnipolSai offers this in BS/.test(plan4.check));
+  cards.issuedIn = "IT";
+  plan4 = await tools.run(ctx2, "get_renewal_plan", { record_id: "c1" }, cardActions);
+  assert.strictEqual(plan4.company_country, "IT");
+  delete cards.issuedIn;
+  delete cards.provider;
+
   // A vehicle is planned where it is registered, not where the owner lives.
   car.issuedIn = "ZA";
   const plan3 = await tools.run(ctx2, "get_renewal_plan", { record_id: "v1" }, cardActions);

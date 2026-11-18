@@ -22,29 +22,39 @@ void main() {
       expect(RecordDetails.providerKind('vehicle_registrations'), isNull);
     });
 
-    test('cards, insurance and memberships show the company only', () {
-      expect(
-        RecordDetails.providerKind('debit_and_credit_cards'),
-        RecordProviderKind.bank,
-      );
-      expect(
-        RecordDetails.providerKind('store_cards'),
-        RecordProviderKind.store,
-      );
-      expect(
-        RecordDetails.providerKind('vehicle_insurances'),
-        RecordProviderKind.insurer,
-      );
-      expect(
-        RecordDetails.providerKind('gym_memberships'),
-        RecordProviderKind.provider,
-      );
-      expect(
-        RecordDetails.providerKind('warranties'),
-        RecordProviderKind.storeBrand,
-      );
-      expect(RecordDetails.countryKind('debit_and_credit_cards'), isNull);
-    });
+    test(
+      'cards, insurance and memberships show the company and its country',
+      () {
+        expect(
+          RecordDetails.providerKind('debit_and_credit_cards'),
+          RecordProviderKind.bank,
+        );
+        expect(
+          RecordDetails.providerKind('store_cards'),
+          RecordProviderKind.store,
+        );
+        expect(
+          RecordDetails.providerKind('vehicle_insurances'),
+          RecordProviderKind.insurer,
+        );
+        expect(
+          RecordDetails.providerKind('gym_memberships'),
+          RecordProviderKind.provider,
+        );
+        expect(
+          RecordDetails.providerKind('warranties'),
+          RecordProviderKind.storeBrand,
+        );
+        expect(
+          RecordDetails.countryKind('debit_and_credit_cards'),
+          RecordCountryKind.company,
+        );
+        expect(
+          RecordDetails.countryKind('vehicle_insurances'),
+          RecordCountryKind.company,
+        );
+      },
+    );
 
     test('the user\'s own groups show both, health records show neither', () {
       expect(
@@ -101,6 +111,17 @@ void main() {
       );
     });
 
+    test('reference numbers are cleaned and shown masked', () {
+      expect(TrackedItem.cleanReference('  AV-482  139 76 '), 'AV-482 139 76');
+      expect(TrackedItem.cleanReference(''), isNull);
+      expect(
+        TrackedItem.cleanReference('9' * 60)!.length,
+        TrackedItem.maxReference,
+      );
+      expect(TrackedItem.maskReference('AV-48213976'), '•••• 3976');
+      expect(TrackedItem.maskReference('123'), '•••');
+    });
+
     test('a record keeps its country and company through save and load', () {
       final item = TrackedItem(
         name: 'VW Polo licence disc',
@@ -111,13 +132,20 @@ void main() {
         reminderBaseId: 7,
         issuedIn: 'za',
         provider: ' Capitec ',
+        reference: ' AV-48213976 ',
       );
       expect(item.issuedIn, 'ZA');
       expect(item.provider, 'Capitec');
       final back = TrackedItem.fromMap('r1', item.toMap());
       expect(back.issuedIn, 'ZA');
       expect(back.provider, 'Capitec');
-      final cleared = back.copyWith(clearIssuedIn: true, clearProvider: true);
+      expect(back.reference, 'AV-48213976');
+      final cleared = back.copyWith(
+        clearIssuedIn: true,
+        clearProvider: true,
+        clearReference: true,
+      );
+      expect(cleared.reference, isNull);
       expect(cleared.issuedIn, isNull);
       expect(cleared.provider, isNull);
     });
