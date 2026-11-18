@@ -67,16 +67,39 @@ function recordKind(record) {
 
 // The provider's own site: its name, without spaces, appears in the host
 // ("Capitec" and capitecbank.co.za, "FNB" and fnb.co.za).
+// The main part of a web address: unipol for www.unipol.it, capitecbank for
+// www.capitecbank.co.za, fnb for online.fnb.co.za.
+function siteName(url) {
+  let host;
+  try {
+    host = new URL(url).hostname.toLowerCase();
+  } catch (_) {
+    return null;
+  }
+  const labels = host.split(".").filter(Boolean);
+  if (labels.length < 2) return null;
+  labels.pop();
+  const second = labels[labels.length - 1];
+  if (labels.length >= 2 && /^(co|com|org|net|gov|ac|edu|or|ne|gob|gv)$/.test(second)) labels.pop();
+  return (labels[labels.length - 1] || "").replace(/[^a-z0-9]/g, "");
+}
+
+// Words a company adds to its own web address (capitec + bank).
+const COMPANY_SUFFIX = /^(bank|banking|group|gruppo|insure|insurance|assurance|online|direct|app|sa|uk|za)$/;
+
+// True when the link is the company's own site: its address is the company
+// name (unipol.it for UnipolSai, capitecbank.co.za for Capitec), not any
+// site that merely has the name in it (assicurazione-unipolsai.info).
 function isProviderSite(url, provider) {
   if (typeof provider !== "string") return false;
   const name = provider.toLowerCase().replace(/[^a-z0-9]/g, "");
   if (name.length < 3) return false;
-  try {
-    const host = new URL(url).hostname.toLowerCase().replace(/[^a-z0-9]/g, "");
-    return host.includes(name);
-  } catch (_) {
-    return false;
-  }
+  const site = siteName(url);
+  if (!site || site.length < 3) return false;
+  if (site === name) return true;
+  if (site.length >= 4 && name.startsWith(site)) return true;
+  if (site.startsWith(name) && COMPANY_SUFFIX.test(site.slice(name.length))) return true;
+  return false;
 }
 
 // Only https links, without spaces or credentials, as found in search
@@ -102,11 +125,20 @@ function oneLine(value, max) {
   return text.length > max ? text.slice(0, max - 1).trimEnd() + "…" : text;
 }
 
+// Notes about where a step came from do not belong in the step itself.
+const SOURCE_NOTE = /\s*\((?:[^()]*\b(?:third[- ]party|source|according to|check with)\b[^()]*)\)/gi;
+
+// Steps about Vaultara itself (save the documents in Vaultara, mark the
+// record renewed in Vaultara) are left out: the app has its own buttons.
+const ABOUT_VAULTARA = /\bvaultara\b/i;
+
 function cleanSteps(raw) {
   if (!Array.isArray(raw)) return [];
   const out = [];
   for (const item of raw) {
-    const text = oneLine(typeof item === "string" ? item : item?.text, STEP_MAX);
+    const said = typeof item === "string" ? item : item?.text;
+    if (typeof said === "string" && ABOUT_VAULTARA.test(said)) continue;
+    const text = oneLine(typeof said === "string" ? said.replace(SOURCE_NOTE, "") : said, STEP_MAX);
     if (!text) continue;
     const url = typeof item === "object" && item ? cleanUrl(item.url) : null;
     out.push(url ? { text, url } : { text });
@@ -210,6 +242,7 @@ const COACH_PROMPT = [
   "4. Answer with the steps in short, the fee and the processing time when the official page gives them, then call propose_renewal_plan with apply_in set to the country the holder applies from, the steps, the official booking link when one was found, and the pages used as sources. Only use links that appeared in the search results; never make one up. Say that rules and fees can change, so check the official page before paying.",
   "5. Vaultara never books appointments. When the user says they booked one, call propose_appointment with the date, the time, the place and what to bring. When they finish a step, call propose_plan_step. When they ask what is next, call get_renewal_plan and give only the next step that is not done.",
   "6. When the user has the new document, offer propose_renew_record with the new expiry date.",
+  "   Steps are plain instructions for the user. Never put notes about sources in a step (no \"(a third-party site)\" or \"(check with ...)\"); leave out any step that only a third-party site supports. Never add steps about Vaultara itself (saving documents in Vaultara, marking the record renewed): the app has its own buttons for those.",
   "7. Vehicle licence discs and registrations are renewed in the country where the vehicle is registered (record_country), not where the holder lives.",
   "8. Bank and store cards, insurance, medical aid, memberships, subscriptions, leases and warranties are renewed with the company they are with (provider): use that company's own website for company_country (its site for that country, for example allianz.co.za rather than allianz.co.uk) as the official source, and set country and apply_in to company_country. If the company does not operate in company_country, follow the check in get_renewal_plan: ask before planning instead of planning for another country. If get_renewal_plan says the provider is missing, ask which bank, insurer or company it is with before searching, then offer propose_record_details to save it on the record so you never ask again. Do the same for a vehicle's country when record_country is missing.",
 ].join("\n");
