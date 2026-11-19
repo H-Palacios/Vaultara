@@ -9472,4 +9472,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'ਇਸਦੀ ਮਿਆਦ ਜਲਦੀ ਖਤਮ ਹੋਵੇਗੀ। ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ।';
+
+  @override
+  String get scanNumberSaved => 'ਅਸੀਂ ਨੰਬਰ ਨੂੰ ਹਵਾਲਾ ਨੰਬਰ ਵਜੋਂ ਵੀ ਸੰਭਾਲਿਆ ਹੈ। ਇਹ ਲੁਕਿਆ ਰਹਿੰਦਾ ਹੈ।';
+
+  @override
+  String get scanNumberSavedOnly => 'ਅਸੀਂ ਨੰਬਰ ਨੂੰ ਹਵਾਲਾ ਨੰਬਰ ਵਜੋਂ ਸੰਭਾਲਿਆ ਹੈ। ਬਾਕੀ ਹੇਠਾਂ ਭਰੋ।';
 }

@@ -3984,5 +3984,13 @@
   "guideStartSoon": "Se vanhenee pian. Aloita nyt.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Tallensimme numeron myös viitenumeroksi. Se pysyy piilossa.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Tallensimme numeron viitenumeroksi. Täytä loput alla.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

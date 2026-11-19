@@ -3997,5 +3997,13 @@
   "guideStartSoon": "Caduca aviat. Comença ara.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "També hem desat el número com a número de referència. Queda amagat.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Hem desat el número com a número de referència. Omple la resta a sota.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

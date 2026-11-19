@@ -3978,5 +3978,13 @@
   "guideStartSoon": "Il expire bientôt. Commencez maintenant.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Nous avons aussi enregistré le numéro comme numéro de référence. Il reste masqué.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Nous avons enregistré le numéro comme numéro de référence. Complétez le reste ci-dessous.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

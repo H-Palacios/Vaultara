@@ -3984,5 +3984,13 @@
   "guideStartSoon": "ვადა მალე გადის. დაიწყეთ ახლავე.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "ნომერი ასევე შევინახეთ საცნობარო ნომრად. ის დამალული რჩება.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "ნომერი შევინახეთ საცნობარო ნომრად. დანარჩენი ქვემოთ შეავსეთ.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

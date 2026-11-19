@@ -9472,4 +9472,10 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Süresi yakında doluyor. Hemen başlayın.';
+
+  @override
+  String get scanNumberSaved => 'Numarayı referans numarası olarak da kaydettik. Gizli kalır.';
+
+  @override
+  String get scanNumberSavedOnly => 'Numarayı referans numarası olarak kaydettik. Gerisini aşağıda doldurun.';
 }

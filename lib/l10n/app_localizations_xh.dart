@@ -9472,4 +9472,10 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Liza kuphelelwa lixesha kungekudala. Qala ngoku.';
+
+  @override
+  String get scanNumberSaved => 'Sikwagcine inombolo njengenombolo yesalathiso. Ihlala ifihliwe.';
+
+  @override
+  String get scanNumberSavedOnly => 'Sigcine inombolo njengenombolo yesalathiso. Gcwalisa okuseleyo ngezantsi.';
 }

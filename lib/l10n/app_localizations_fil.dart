@@ -9467,4 +9467,10 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Malapit na itong mag-expire. Magsimula na ngayon.';
+
+  @override
+  String get scanNumberSaved => 'Na-save rin namin ang numero bilang reference number. Mananatili itong nakatago.';
+
+  @override
+  String get scanNumberSavedOnly => 'Na-save namin ang numero bilang reference number. Punan ang iba sa ibaba.';
 }

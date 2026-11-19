@@ -9472,4 +9472,10 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'اس کی میعاد جلد ختم ہو رہی ہے۔ ابھی شروع کریں۔';
+
+  @override
+  String get scanNumberSaved => 'ہم نے نمبر کو حوالہ نمبر کے طور پر بھی محفوظ کیا۔ یہ چھپا رہتا ہے۔';
+
+  @override
+  String get scanNumberSavedOnly => 'ہم نے نمبر کو حوالہ نمبر کے طور پر محفوظ کیا۔ باقی نیچے بھریں۔';
 }

@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Liza kuphelelwa lixesha kungekudala. Qala ngoku.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Sikwagcine inombolo njengenombolo yesalathiso. Ihlala ifihliwe.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Sigcine inombolo njengenombolo yesalathiso. Gcwalisa okuseleyo ngezantsi.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

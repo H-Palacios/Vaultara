@@ -3980,5 +3980,13 @@
   "guideStartSoon": "Ժամկետը շուտով կավարտվի։ Սկսեք հիմա։",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Համարը պահպանեցինք նաև որպես հղման համար։ Այն մնում է թաքնված։",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Համարը պահպանեցինք որպես հղման համար։ Մնացածը լրացրեք ներքևում։",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

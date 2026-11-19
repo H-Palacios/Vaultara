@@ -3984,5 +3984,13 @@
   "guideStartSoon": "Hamarosan lejár. Kezdd el most.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "A számot hivatkozási számként is elmentettük. Rejtve marad.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "A számot hivatkozási számként mentettük el. A többit töltsd ki alább.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

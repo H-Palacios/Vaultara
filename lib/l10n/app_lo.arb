@@ -3984,5 +3984,13 @@
   "guideStartSoon": "ໃກ້ໝົດອາຍຸແລ້ວ. ເລີ່ມດຽວນີ້.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "ພວກເຮົາຍັງບັນທຶກເລກເປັນເລກອ້າງອີງນຳ. ມັນຈະຖືກເຊື່ອງໄວ້.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "ພວກເຮົາບັນທຶກເລກເປັນເລກອ້າງອີງແລ້ວ. ຕື່ມສ່ວນທີ່ເຫຼືອຂ້າງລຸ່ມ.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

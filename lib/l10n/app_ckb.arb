@@ -3966,5 +3966,13 @@
   "guideStartSoon": "بەم زووانە بەسەردەچێت. ئێستا دەست پێبکە.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "ژمارەکەشمان وەک ژمارەی ئاماژە پاشەکەوت کرد. شاراوە دەمێنێتەوە.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "ژمارەکەمان وەک ژمارەی ئاماژە پاشەکەوت کرد. ئەوانی تر لە خوارەوە پڕبکەرەوە.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

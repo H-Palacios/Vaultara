@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Het verloopt binnenkort. Begin nu.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "We hebben het nummer ook als referentienummer opgeslagen. Het blijft verborgen.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "We hebben het nummer als referentienummer opgeslagen. Vul de rest hieronder in.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

@@ -9471,4 +9471,10 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'ጊዜው ቀርቧል። አሁን ይጀምሩ።';
+
+  @override
+  String get scanNumberSaved => 'ቁጥሩንም እንደ ማጣቀሻ ቁጥር አስቀምጠናል። ተደብቆ ይቆያል።';
+
+  @override
+  String get scanNumberSavedOnly => 'ቁጥሩን እንደ ማጣቀሻ ቁጥር አስቀምጠናል። ቀሪውን ከታች ይሙሉ።';
 }

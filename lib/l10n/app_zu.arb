@@ -3958,5 +3958,13 @@
   "guideStartSoon": "Isizophelelwa yisikhathi maduze. Qala manje.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Siphinde sagcina inombolo njengenombolo yereferensi. Ihlala ifihliwe.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Sigcine inombolo njengenombolo yereferensi. Gcwalisa okusele ngezansi.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

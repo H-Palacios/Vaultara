@@ -9477,4 +9477,10 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Het verloopt binnenkort. Begin nu.';
+
+  @override
+  String get scanNumberSaved => 'We hebben het nummer ook als referentienummer opgeslagen. Het blijft verborgen.';
+
+  @override
+  String get scanNumberSavedOnly => 'We hebben het nummer als referentienummer opgeslagen. Vul de rest hieronder in.';
 }

@@ -3716,5 +3716,13 @@
   "guideStartSoon": "ഇതിന്റെ കാലാവധി ഉടൻ തീരും. ഇപ്പോൾ തുടങ്ങുക.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "നമ്പർ റഫറൻസ് നമ്പറായും ഞങ്ങൾ സേവ് ചെയ്തു. അത് മറച്ചുവെക്കും.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "നമ്പർ റഫറൻസ് നമ്പറായി ഞങ്ങൾ സേവ് ചെയ്തു. ബാക്കി താഴെ പൂരിപ്പിക്കുക.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

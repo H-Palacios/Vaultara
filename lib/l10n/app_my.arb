@@ -3716,5 +3716,13 @@
   "guideStartSoon": "သက်တမ်းမကြာမီကုန်ပါမည်။ ယခုစတင်ပါ။",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "နံပါတ်ကို ရည်ညွှန်းနံပါတ်အဖြစ်လည်း သိမ်းထားပါပြီ။ ၎င်းကို ဝှက်ထားပါမည်။",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "နံပါတ်ကို ရည်ညွှန်းနံပါတ်အဖြစ် သိမ်းထားပါပြီ။ ကျန်တာကို အောက်တွင် ဖြည့်ပါ။",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

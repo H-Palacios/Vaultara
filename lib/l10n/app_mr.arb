@@ -3716,5 +3716,13 @@
   "guideStartSoon": "याची मुदत लवकरच संपेल. आत्ताच सुरू करा.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "आम्ही क्रमांक संदर्भ क्रमांक म्हणूनही जतन केला. तो लपलेला राहतो.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "आम्ही क्रमांक संदर्भ क्रमांक म्हणून जतन केला. उरलेले खाली भरा.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

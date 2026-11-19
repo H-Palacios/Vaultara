@@ -3997,5 +3997,13 @@
   "guideStartSoon": "Brzy vyprší. Začněte hned.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Číslo jsme také uložili jako referenční číslo. Zůstane skryté.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Číslo jsme uložili jako referenční číslo. Zbytek vyplňte níže.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

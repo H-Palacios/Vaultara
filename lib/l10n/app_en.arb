@@ -11763,5 +11763,13 @@
   "guideStartSoon": "It is due soon. Start now.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "We also saved the number as the reference number. It stays hidden.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "We saved the number as the reference number. Fill in the rest below.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

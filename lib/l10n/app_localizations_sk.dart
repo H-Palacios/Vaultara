@@ -9631,4 +9631,10 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Čoskoro vyprší. Začnite hneď.';
+
+  @override
+  String get scanNumberSaved => 'Číslo sme uložili aj ako referenčné číslo. Zostane skryté.';
+
+  @override
+  String get scanNumberSavedOnly => 'Číslo sme uložili ako referenčné číslo. Zvyšok vyplňte nižšie.';
 }

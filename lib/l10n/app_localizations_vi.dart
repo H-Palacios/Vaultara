@@ -9409,4 +9409,10 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Sắp hết hạn. Hãy bắt đầu ngay.';
+
+  @override
+  String get scanNumberSaved => 'Chúng tôi cũng đã lưu số này làm số tham chiếu. Số vẫn được ẩn.';
+
+  @override
+  String get scanNumberSavedOnly => 'Chúng tôi đã lưu số này làm số tham chiếu. Điền phần còn lại bên dưới.';
 }

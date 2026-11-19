@@ -3971,5 +3971,13 @@
   "guideStartSoon": "Uskoro istječe. Počnite sada.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Spremili smo i broj kao referentni broj. Ostaje skriven.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Spremili smo broj kao referentni broj. Ostalo ispunite ispod.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

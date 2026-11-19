@@ -4004,5 +4004,13 @@
   "guideStartSoon": "ጊዜው ቀርቧል። አሁን ይጀምሩ።",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "ቁጥሩንም እንደ ማጣቀሻ ቁጥር አስቀምጠናል። ተደብቆ ይቆያል።",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "ቁጥሩን እንደ ማጣቀሻ ቁጥር አስቀምጠናል። ቀሪውን ከታች ይሙሉ።",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

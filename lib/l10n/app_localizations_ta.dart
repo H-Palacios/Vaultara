@@ -9472,4 +9472,10 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'இது விரைவில் காலாவதியாகும். இப்போதே தொடங்குங்கள்.';
+
+  @override
+  String get scanNumberSaved => 'எண்ணை குறிப்பு எண்ணாகவும் சேமித்தோம். அது மறைவாகவே இருக்கும்.';
+
+  @override
+  String get scanNumberSavedOnly => 'எண்ணை குறிப்பு எண்ணாக சேமித்தோம். மீதியை கீழே நிரப்புங்கள்.';
 }

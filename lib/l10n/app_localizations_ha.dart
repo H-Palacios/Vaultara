@@ -9472,4 +9472,10 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Zai ƙare nan ba da daɗewa ba. Fara yanzu.';
+
+  @override
+  String get scanNumberSaved => 'Mun kuma ajiye lambar a matsayin lambar shaida. Za ta kasance a ɓoye.';
+
+  @override
+  String get scanNumberSavedOnly => 'Mun ajiye lambar a matsayin lambar shaida. Cika sauran a ƙasa.';
 }

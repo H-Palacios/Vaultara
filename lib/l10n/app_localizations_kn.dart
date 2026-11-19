@@ -9472,4 +9472,10 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'ಇದರ ಅವಧಿ ಶೀಘ್ರದಲ್ಲೇ ಮುಗಿಯುತ್ತದೆ. ಈಗಲೇ ಪ್ರಾರಂಭಿಸಿ.';
+
+  @override
+  String get scanNumberSaved => 'ನಾವು ಸಂಖ್ಯೆಯನ್ನು ಉಲ್ಲೇಖ ಸಂಖ್ಯೆಯಾಗಿಯೂ ಉಳಿಸಿದ್ದೇವೆ. ಅದು ಮರೆಯಾಗಿಯೇ ಇರುತ್ತದೆ.';
+
+  @override
+  String get scanNumberSavedOnly => 'ನಾವು ಸಂಖ್ಯೆಯನ್ನು ಉಲ್ಲೇಖ ಸಂಖ್ಯೆಯಾಗಿ ಉಳಿಸಿದ್ದೇವೆ. ಉಳಿದದ್ದನ್ನು ಕೆಳಗೆ ತುಂಬಿ.';
 }

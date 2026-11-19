@@ -9472,4 +9472,10 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Müddəti tezliklə bitir. İndi başlayın.';
+
+  @override
+  String get scanNumberSaved => 'Nömrəni istinad nömrəsi kimi də saxladıq. Gizli qalır.';
+
+  @override
+  String get scanNumberSavedOnly => 'Nömrəni istinad nömrəsi kimi saxladıq. Qalanını aşağıda doldurun.';
 }

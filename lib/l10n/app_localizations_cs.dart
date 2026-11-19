@@ -9633,4 +9633,10 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Brzy vyprší. Začněte hned.';
+
+  @override
+  String get scanNumberSaved => 'Číslo jsme také uložili jako referenční číslo. Zůstane skryté.';
+
+  @override
+  String get scanNumberSavedOnly => 'Číslo jsme uložili jako referenční číslo. Zbytek vyplňte níže.';
 }

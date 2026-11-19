@@ -9555,4 +9555,10 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Uskoro ističe. Počnite sada.';
+
+  @override
+  String get scanNumberSaved => 'Sačuvali smo i broj kao referentni broj. Ostaje skriven.';
+
+  @override
+  String get scanNumberSavedOnly => 'Sačuvali smo broj kao referentni broj. Ostalo popunite ispod.';
 }

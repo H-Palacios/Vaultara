@@ -3966,5 +3966,13 @@
   "guideStartSoon": "موده یې ژر پای ته رسېږي. همدا اوس پیل کړئ.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "شمېره مو د حوالې شمېرې په توګه هم خوندي کړه. پټه پاتې کېږي.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "شمېره مو د حوالې شمېرې په توګه خوندي کړه. پاتې برخه لاندې ډکه کړئ.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

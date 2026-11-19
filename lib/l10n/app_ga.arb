@@ -3978,5 +3978,13 @@
   "guideStartSoon": "Rachaidh sé in éag go luath. Tosaigh anois.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Shábhálamar an uimhir mar uimhir thagartha freisin. Fanann sí i bhfolach.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Shábhálamar an uimhir mar uimhir thagartha. Líon an chuid eile thíos.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

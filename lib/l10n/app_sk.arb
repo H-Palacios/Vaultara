@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Čoskoro vyprší. Začnite hneď.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Číslo sme uložili aj ako referenčné číslo. Zostane skryté.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Číslo sme uložili ako referenčné číslo. Zvyšok vyplňte nižšie.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

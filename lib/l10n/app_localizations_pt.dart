@@ -9478,4 +9478,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Expira em breve. Comece agora.';
+
+  @override
+  String get scanNumberSaved => 'Também guardámos o número como número de referência. Fica oculto.';
+
+  @override
+  String get scanNumberSavedOnly => 'Guardámos o número como número de referência. Preencha o resto abaixo.';
 }

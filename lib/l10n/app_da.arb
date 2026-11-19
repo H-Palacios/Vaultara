@@ -3997,5 +3997,13 @@
   "guideStartSoon": "Den udløber snart. Start nu.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Vi har også gemt nummeret som referencenummer. Det forbliver skjult.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Vi har gemt nummeret som referencenummer. Udfyld resten nedenfor.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

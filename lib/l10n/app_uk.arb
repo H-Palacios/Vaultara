@@ -3983,5 +3983,13 @@
   "guideStartSoon": "Термін скоро спливає. Почніть зараз.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Ми також зберегли номер як довідковий номер. Він залишається прихованим.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Ми зберегли номер як довідковий номер. Заповніть решту нижче.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

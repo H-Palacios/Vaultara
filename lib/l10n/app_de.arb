@@ -3997,5 +3997,13 @@
   "guideStartSoon": "Es läuft bald ab. Jetzt starten.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Die Nummer wurde auch als Referenznummer gespeichert. Sie bleibt verborgen.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Die Nummer wurde als Referenznummer gespeichert. Fülle den Rest unten aus.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

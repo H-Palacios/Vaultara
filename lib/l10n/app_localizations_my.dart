@@ -9407,4 +9407,10 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'သက်တမ်းမကြာမီကုန်ပါမည်။ ယခုစတင်ပါ။';
+
+  @override
+  String get scanNumberSaved => 'နံပါတ်ကို ရည်ညွှန်းနံပါတ်အဖြစ်လည်း သိမ်းထားပါပြီ။ ၎င်းကို ဝှက်ထားပါမည်။';
+
+  @override
+  String get scanNumberSavedOnly => 'နံပါတ်ကို ရည်ညွှန်းနံပါတ်အဖြစ် သိမ်းထားပါပြီ။ ကျန်တာကို အောက်တွင် ဖြည့်ပါ။';
 }

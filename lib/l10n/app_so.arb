@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Wakhtigiisu dhowaan ayuu dhacayaa. Hadda bilow.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Waxaan sidoo kale u kaydinay lambarka lambar tixraac ahaan. Wuu qarsoonaanayaa.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Waxaan u kaydinay lambarka lambar tixraac ahaan. Buuxi inta kale hoos.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

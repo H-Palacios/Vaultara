@@ -9472,4 +9472,10 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Ժամկետը շուտով կավարտվի։ Սկսեք հիմա։';
+
+  @override
+  String get scanNumberSaved => 'Համարը պահպանեցինք նաև որպես հղման համար։ Այն մնում է թաքնված։';
+
+  @override
+  String get scanNumberSavedOnly => 'Համարը պահպանեցինք որպես հղման համար։ Մնացածը լրացրեք ներքևում։';
 }

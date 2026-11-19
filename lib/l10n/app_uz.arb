@@ -3716,5 +3716,13 @@
   "guideStartSoon": "Muddati tez orada tugaydi. Hozir boshlang.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Raqamni ma'lumot raqami sifatida ham saqladik. U yashirin qoladi.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Raqamni ma'lumot raqami sifatida saqladik. Qolganini quyida to'ldiring.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

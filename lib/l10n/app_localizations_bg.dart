@@ -9473,4 +9473,10 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Изтича скоро. Започнете сега.';
+
+  @override
+  String get scanNumberSaved => 'Запазихме и номера като референтен номер. Остава скрит.';
+
+  @override
+  String get scanNumberSavedOnly => 'Запазихме номера като референтен номер. Попълнете останалото по-долу.';
 }

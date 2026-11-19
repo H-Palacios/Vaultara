@@ -9462,4 +9462,10 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Хугацаа нь удахгүй дуусна. Одоо эхэлнэ үү.';
+
+  @override
+  String get scanNumberSaved => 'Дугаарыг лавлах дугаар болгон бас хадгаллаа. Нууцлагдсан хэвээр байна.';
+
+  @override
+  String get scanNumberSavedOnly => 'Дугаарыг лавлах дугаар болгон хадгаллаа. Үлдсэнийг доор бөглөнө үү.';
 }

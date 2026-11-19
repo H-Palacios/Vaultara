@@ -9677,4 +9677,10 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Rachaidh sé in éag go luath. Tosaigh anois.';
+
+  @override
+  String get scanNumberSaved => 'Shábhálamar an uimhir mar uimhir thagartha freisin. Fanann sí i bhfolach.';
+
+  @override
+  String get scanNumberSavedOnly => 'Shábhálamar an uimhir mar uimhir thagartha. Líon an chuid eile thíos.';
 }

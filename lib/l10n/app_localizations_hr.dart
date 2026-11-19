@@ -9551,4 +9551,10 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Uskoro istječe. Počnite sada.';
+
+  @override
+  String get scanNumberSaved => 'Spremili smo i broj kao referentni broj. Ostaje skriven.';
+
+  @override
+  String get scanNumberSavedOnly => 'Spremili smo broj kao referentni broj. Ostalo ispunite ispod.';
 }

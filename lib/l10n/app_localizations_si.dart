@@ -9471,4 +9471,10 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'එය ඉක්මනින් කල් ඉකුත් වේ. දැන්ම අරඹන්න.';
+
+  @override
+  String get scanNumberSaved => 'අපි අංකය යොමු අංකය ලෙසද සුරැකුවා. එය සැඟවී පවතී.';
+
+  @override
+  String get scanNumberSavedOnly => 'අපි අංකය යොමු අංකය ලෙස සුරැකුවා. ඉතිරිය පහතින් පුරවන්න.';
 }

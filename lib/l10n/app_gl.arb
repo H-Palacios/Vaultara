@@ -3978,5 +3978,13 @@
   "guideStartSoon": "Caduca pronto. Comeza agora.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Tamén gardamos o número como número de referencia. Queda oculto.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Gardamos o número como número de referencia. Completa o resto abaixo.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

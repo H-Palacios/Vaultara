@@ -3978,5 +3978,13 @@
   "guideStartSoon": "まもなく期限です。今すぐ始めましょう。",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "番号を参照番号としても保存しました。番号は隠れたままです。",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "番号を参照番号として保存しました。残りは下で入力してください。",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

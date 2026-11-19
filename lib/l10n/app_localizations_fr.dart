@@ -9487,4 +9487,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Il expire bientôt. Commencez maintenant.';
+
+  @override
+  String get scanNumberSaved => 'Nous avons aussi enregistré le numéro comme numéro de référence. Il reste masqué.';
+
+  @override
+  String get scanNumberSavedOnly => 'Nous avons enregistré le numéro comme numéro de référence. Complétez le reste ci-dessous.';
 }

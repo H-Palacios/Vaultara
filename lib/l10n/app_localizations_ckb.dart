@@ -9471,4 +9471,10 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'بەم زووانە بەسەردەچێت. ئێستا دەست پێبکە.';
+
+  @override
+  String get scanNumberSaved => 'ژمارەکەشمان وەک ژمارەی ئاماژە پاشەکەوت کرد. شاراوە دەمێنێتەوە.';
+
+  @override
+  String get scanNumberSavedOnly => 'ژمارەکەمان وەک ژمارەی ئاماژە پاشەکەوت کرد. ئەوانی تر لە خوارەوە پڕبکەرەوە.';
 }

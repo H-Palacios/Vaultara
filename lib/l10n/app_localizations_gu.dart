@@ -9472,4 +9472,10 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'તેની મુદત જલ્દી પૂરી થાય છે. હમણાં જ શરૂ કરો.';
+
+  @override
+  String get scanNumberSaved => 'અમે નંબરને સંદર્ભ નંબર તરીકે પણ સાચવ્યો છે. તે છુપાયેલો રહે છે.';
+
+  @override
+  String get scanNumberSavedOnly => 'અમે નંબરને સંદર્ભ નંબર તરીકે સાચવ્યો છે. બાકીનું નીચે ભરો.';
 }

@@ -9477,4 +9477,10 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Laster iraungiko da. Hasi orain.';
+
+  @override
+  String get scanNumberSaved => 'Zenbakia erreferentzia-zenbaki gisa ere gorde dugu. Ezkutuan geratzen da.';
+
+  @override
+  String get scanNumberSavedOnly => 'Zenbakia erreferentzia-zenbaki gisa gorde dugu. Bete gainerakoa behean.';
 }

@@ -9409,4 +9409,10 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Ia akan tamat tempoh tidak lama lagi. Mulakan sekarang.';
+
+  @override
+  String get scanNumberSaved => 'Kami juga menyimpan nombor itu sebagai nombor rujukan. Ia kekal tersembunyi.';
+
+  @override
+  String get scanNumberSavedOnly => 'Kami menyimpan nombor itu sebagai nombor rujukan. Isi selebihnya di bawah.';
 }

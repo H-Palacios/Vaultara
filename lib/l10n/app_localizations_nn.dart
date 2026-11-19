@@ -9477,4 +9477,10 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Han går snart ut. Start no.';
+
+  @override
+  String get scanNumberSaved => 'Vi lagra òg nummeret som referansenummer. Det blir verande skjult.';
+
+  @override
+  String get scanNumberSavedOnly => 'Vi lagra nummeret som referansenummer. Fyll ut resten nedanfor.';
 }

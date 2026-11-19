@@ -9472,4 +9472,10 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'به‌زودی منقضی می‌شود. همین حالا شروع کنید.';
+
+  @override
+  String get scanNumberSaved => 'شماره را به‌عنوان شماره مرجع هم ذخیره کردیم. پنهان می‌ماند.';
+
+  @override
+  String get scanNumberSavedOnly => 'شماره را به‌عنوان شماره مرجع ذخیره کردیم. بقیه را پایین پر کنید.';
 }

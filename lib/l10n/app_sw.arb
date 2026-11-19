@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Muda wake unaisha hivi karibuni. Anza sasa.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Tumehifadhi pia namba kama namba ya marejeo. Itabaki imefichwa.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Tumehifadhi namba kama namba ya marejeo. Jaza sehemu iliyobaki hapa chini.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

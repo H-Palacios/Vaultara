@@ -3978,5 +3978,13 @@
   "guideStartSoon": "Zai ƙare nan ba da daɗewa ba. Fara yanzu.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Mun kuma ajiye lambar a matsayin lambar shaida. Za ta kasance a ɓoye.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Mun ajiye lambar a matsayin lambar shaida. Cika sauran a ƙasa.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

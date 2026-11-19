@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Ia akan tamat tempoh tidak lama lagi. Mulakan sekarang.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Kami juga menyimpan nombor itu sebagai nombor rujukan. Ia kekal tersembunyi.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Kami menyimpan nombor itu sebagai nombor rujukan. Isi selebihnya di bawah.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

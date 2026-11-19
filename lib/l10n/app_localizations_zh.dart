@@ -9409,6 +9409,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get guideStartSoon => '即将到期。请立即开始办理。';
+
+  @override
+  String get scanNumberSaved => '我们也已将号码保存为参考编号，号码会保持隐藏。';
+
+  @override
+  String get scanNumberSavedOnly => '我们已将号码保存为参考编号。请在下方填写其余内容。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18804,6 +18810,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get guideStartSoon => '即将到期。请立即开始办理。';
+
+  @override
+  String get scanNumberSaved => '我们也已将号码保存为参考编号，号码会保持隐藏。';
+
+  @override
+  String get scanNumberSavedOnly => '我们已将号码保存为参考编号。请在下方填写其余内容。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -28199,4 +28211,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get guideStartSoon => '即將到期。請立即開始辦理。';
+
+  @override
+  String get scanNumberSaved => '我們也已將號碼儲存為參考編號，號碼會保持隱藏。';
+
+  @override
+  String get scanNumberSavedOnly => '我們已將號碼儲存為參考編號。請在下方填寫其餘內容。';
 }

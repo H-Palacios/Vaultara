@@ -9492,4 +9492,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'It is due soon. Start now.';
+
+  @override
+  String get scanNumberSaved => 'We also saved the number as the reference number. It stays hidden.';
+
+  @override
+  String get scanNumberSavedOnly => 'We saved the number as the reference number. Fill in the rest below.';
 }

@@ -3966,5 +3966,13 @@
   "guideStartSoon": "即将到期。请立即开始办理。",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "我们也已将号码保存为参考编号，号码会保持隐藏。",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "我们已将号码保存为参考编号。请在下方填写其余内容。",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

@@ -3984,5 +3984,13 @@
   "guideStartSoon": "Netrukus baigsis galiojimas. Pradėkite dabar.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Numerį taip pat išsaugojome kaip nuorodos numerį. Jis lieka paslėptas.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Numerį išsaugojome kaip nuorodos numerį. Kitką užpildykite žemiau.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

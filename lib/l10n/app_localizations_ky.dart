@@ -9471,4 +9471,10 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Мөөнөтү жакында бүтөт. Азыр баштаңыз.';
+
+  @override
+  String get scanNumberSaved => 'Номерди маалымдама номери катары да сактадык. Ал жашыруун калат.';
+
+  @override
+  String get scanNumberSavedOnly => 'Номерди маалымдама номери катары сактадык. Калганын төмөндө толтуруңуз.';
 }

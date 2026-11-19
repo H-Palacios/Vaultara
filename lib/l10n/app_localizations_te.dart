@@ -9472,4 +9472,10 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'దీని గడువు త్వరలో ముగుస్తుంది. ఇప్పుడే ప్రారంభించండి.';
+
+  @override
+  String get scanNumberSaved => 'నంబర్‌ను రిఫరెన్స్ నంబర్‌గా కూడా సేవ్ చేశాం. అది దాచబడి ఉంటుంది.';
+
+  @override
+  String get scanNumberSavedOnly => 'నంబర్‌ను రిఫరెన్స్ నంబర్‌గా సేవ్ చేశాం. మిగతాది కింద నింపండి.';
 }

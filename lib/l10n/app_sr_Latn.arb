@@ -3940,5 +3940,13 @@
   "guideStartSoon": "Uskoro ističe. Počnite sada.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Sačuvali smo i broj kao referentni broj. Ostaje skriven.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Sačuvali smo broj kao referentni broj. Ostalo popunite ispod.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

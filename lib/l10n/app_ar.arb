@@ -4004,5 +4004,13 @@
   "guideStartSoon": "سينتهي قريبًا. ابدأ الآن.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "حفظنا الرقم أيضًا كرقم مرجعي. يبقى مخفيًا.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "حفظنا الرقم كرقم مرجعي. أكمل الباقي أدناه.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

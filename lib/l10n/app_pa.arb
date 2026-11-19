@@ -3973,5 +3973,13 @@
   "guideStartSoon": "ਇਸਦੀ ਮਿਆਦ ਜਲਦੀ ਖਤਮ ਹੋਵੇਗੀ। ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ।",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "ਅਸੀਂ ਨੰਬਰ ਨੂੰ ਹਵਾਲਾ ਨੰਬਰ ਵਜੋਂ ਵੀ ਸੰਭਾਲਿਆ ਹੈ। ਇਹ ਲੁਕਿਆ ਰਹਿੰਦਾ ਹੈ।",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "ਅਸੀਂ ਨੰਬਰ ਨੂੰ ਹਵਾਲਾ ਨੰਬਰ ਵਜੋਂ ਸੰਭਾਲਿਆ ਹੈ। ਬਾਕੀ ਹੇਠਾਂ ਭਰੋ।",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

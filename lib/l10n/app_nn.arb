@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Han går snart ut. Start no.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Vi lagra òg nummeret som referansenummer. Det blir verande skjult.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Vi lagra nummeret som referansenummer. Fyll ut resten nedanfor.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

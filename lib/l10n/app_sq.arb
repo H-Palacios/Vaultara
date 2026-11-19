@@ -3980,5 +3980,13 @@
   "guideStartSoon": "Skadon së shpejti. Fillo tani.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "E ruajtëm edhe numrin si numër reference. Mbetet i fshehur.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "E ruajtëm numrin si numër reference. Plotësoni pjesën tjetër më poshtë.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

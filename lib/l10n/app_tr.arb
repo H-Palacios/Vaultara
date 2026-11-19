@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Süresi yakında doluyor. Hemen başlayın.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Numarayı referans numarası olarak da kaydettik. Gizli kalır.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Numarayı referans numarası olarak kaydettik. Gerisini aşağıda doldurun.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

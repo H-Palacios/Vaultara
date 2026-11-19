@@ -9397,4 +9397,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'まもなく期限です。今すぐ始めましょう。';
+
+  @override
+  String get scanNumberSaved => '番号を参照番号としても保存しました。番号は隠れたままです。';
+
+  @override
+  String get scanNumberSavedOnly => '番号を参照番号として保存しました。残りは下で入力してください。';
 }

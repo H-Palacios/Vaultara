@@ -9407,4 +9407,10 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'វាជិតផុតកំណត់ហើយ។ ចាប់ផ្តើមឥឡូវនេះ។';
+
+  @override
+  String get scanNumberSaved => 'យើងក៏បានរក្សាទុកលេខជាលេខយោងផងដែរ។ វានៅតែលាក់។';
+
+  @override
+  String get scanNumberSavedOnly => 'យើងបានរក្សាទុកលេខជាលេខយោង។ បំពេញផ្នែកដែលនៅសល់ខាងក្រោម។';
 }

@@ -16158,6 +16158,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'It is due soon. Start now.'**
   String get guideStartSoon;
+
+  /// scanNumberSaved
+  ///
+  /// In en, this message translates to:
+  /// **'We also saved the number as the reference number. It stays hidden.'**
+  String get scanNumberSaved;
+
+  /// scanNumberSavedOnly
+  ///
+  /// In en, this message translates to:
+  /// **'We saved the number as the reference number. Fill in the rest below.'**
+  String get scanNumberSavedOnly;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

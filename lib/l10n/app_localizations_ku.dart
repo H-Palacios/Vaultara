@@ -9472,4 +9472,10 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Dema wê zû derbas dibe. Niha dest pê bike.';
+
+  @override
+  String get scanNumberSaved => 'Me hejmar wekî hejmara referansê jî tomar kir. Ew veşartî dimîne.';
+
+  @override
+  String get scanNumberSavedOnly => 'Me hejmar wekî hejmara referansê tomar kir. Yên mayî li jêr dagire.';
 }

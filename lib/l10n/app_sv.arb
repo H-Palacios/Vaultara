@@ -3959,5 +3959,13 @@
   "guideStartSoon": "Den går ut snart. Börja nu.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Vi sparade också numret som referensnummer. Det förblir dolt.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Vi sparade numret som referensnummer. Fyll i resten nedan.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

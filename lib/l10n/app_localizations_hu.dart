@@ -9472,4 +9472,10 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Hamarosan lejár. Kezdd el most.';
+
+  @override
+  String get scanNumberSaved => 'A számot hivatkozási számként is elmentettük. Rejtve marad.';
+
+  @override
+  String get scanNumberSavedOnly => 'A számot hivatkozási számként mentettük el. A többit töltsd ki alább.';
 }

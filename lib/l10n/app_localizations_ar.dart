@@ -9729,4 +9729,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'سينتهي قريبًا. ابدأ الآن.';
+
+  @override
+  String get scanNumberSaved => 'حفظنا الرقم أيضًا كرقم مرجعي. يبقى مخفيًا.';
+
+  @override
+  String get scanNumberSavedOnly => 'حفظنا الرقم كرقم مرجعي. أكمل الباقي أدناه.';
 }

@@ -9477,4 +9477,10 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Skadon së shpejti. Fillo tani.';
+
+  @override
+  String get scanNumberSaved => 'E ruajtëm edhe numrin si numër reference. Mbetet i fshehur.';
+
+  @override
+  String get scanNumberSavedOnly => 'E ruajtëm numrin si numër reference. Plotësoni pjesën tjetër më poshtë.';
 }

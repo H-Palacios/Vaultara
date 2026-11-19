@@ -4004,5 +4004,13 @@
   "guideStartSoon": "Dit is binnekort verval. Begin nou.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Ons het ook die nommer as die verwysingsnommer gestoor. Dit bly versteek.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Ons het die nommer as die verwysingsnommer gestoor. Vul die res hieronder in.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

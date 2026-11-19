@@ -9472,4 +9472,10 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Isizophelelwa yisikhathi maduze. Qala manje.';
+
+  @override
+  String get scanNumberSaved => 'Siphinde sagcina inombolo njengenombolo yereferensi. Ihlala ifihliwe.';
+
+  @override
+  String get scanNumberSavedOnly => 'Sigcine inombolo njengenombolo yereferensi. Gcwalisa okusele ngezansi.';
 }

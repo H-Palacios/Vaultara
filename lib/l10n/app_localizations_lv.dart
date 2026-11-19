@@ -9543,4 +9543,10 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Drīz beigsies derīguma termiņš. Sāciet tagad.';
+
+  @override
+  String get scanNumberSaved => 'Numuru saglabājām arī kā atsauces numuru. Tas paliek paslēpts.';
+
+  @override
+  String get scanNumberSavedOnly => 'Numuru saglabājām kā atsauces numuru. Pārējo aizpildiet zemāk.';
 }

@@ -3973,5 +3973,13 @@
   "guideStartSoon": "Den utløper snart. Start nå.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Vi lagret også nummeret som referansenummer. Det forblir skjult.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Vi lagret nummeret som referansenummer. Fyll ut resten nedenfor.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

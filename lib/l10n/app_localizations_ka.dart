@@ -9472,4 +9472,10 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'ვადა მალე გადის. დაიწყეთ ახლავე.';
+
+  @override
+  String get scanNumberSaved => 'ნომერი ასევე შევინახეთ საცნობარო ნომრად. ის დამალული რჩება.';
+
+  @override
+  String get scanNumberSavedOnly => 'ნომერი შევინახეთ საცნობარო ნომრად. დანარჩენი ქვემოთ შეავსეთ.';
 }

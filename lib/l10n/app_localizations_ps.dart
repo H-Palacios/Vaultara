@@ -9472,4 +9472,10 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'موده یې ژر پای ته رسېږي. همدا اوس پیل کړئ.';
+
+  @override
+  String get scanNumberSaved => 'شمېره مو د حوالې شمېرې په توګه هم خوندي کړه. پټه پاتې کېږي.';
+
+  @override
+  String get scanNumberSavedOnly => 'شمېره مو د حوالې شمېرې په توګه خوندي کړه. پاتې برخه لاندې ډکه کړئ.';
 }

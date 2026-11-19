@@ -9471,4 +9471,10 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Wakhtigiisu dhowaan ayuu dhacayaa. Hadda bilow.';
+
+  @override
+  String get scanNumberSaved => 'Waxaan sidoo kale u kaydinay lambarka lambar tixraac ahaan. Wuu qarsoonaanayaa.';
+
+  @override
+  String get scanNumberSavedOnly => 'Waxaan u kaydinay lambarka lambar tixraac ahaan. Buuxi inta kale hoos.';
 }

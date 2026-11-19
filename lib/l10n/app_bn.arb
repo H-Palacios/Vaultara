@@ -3997,5 +3997,13 @@
   "guideStartSoon": "শিগগিরই মেয়াদ শেষ হবে। এখনই শুরু করুন।",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "আমরা নম্বরটি রেফারেন্স নম্বর হিসেবেও সেভ করেছি। এটি লুকানো থাকে।",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "আমরা নম্বরটি রেফারেন্স নম্বর হিসেবে সেভ করেছি। বাকিটা নিচে পূরণ করুন।",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

@@ -9653,4 +9653,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Срок скоро истекает. Начните сейчас.';
+
+  @override
+  String get scanNumberSaved => 'Мы также сохранили номер как справочный номер. Он остаётся скрытым.';
+
+  @override
+  String get scanNumberSavedOnly => 'Мы сохранили номер как справочный номер. Заполните остальное ниже.';
 }

@@ -9472,4 +9472,10 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'यसको म्याद चाँडै सकिँदैछ। अहिले नै सुरु गर्नुहोस्।';
+
+  @override
+  String get scanNumberSaved => 'हामीले नम्बरलाई सन्दर्भ नम्बरको रूपमा पनि सेभ गर्यौं। यो लुकेको रहन्छ।';
+
+  @override
+  String get scanNumberSavedOnly => 'हामीले नम्बरलाई सन्दर्भ नम्बरको रूपमा सेभ गर्यौं। बाँकी तल भर्नुहोस्।';
 }

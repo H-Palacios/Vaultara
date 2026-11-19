@@ -3973,5 +3973,13 @@
   "guideStartSoon": "Λήγει σύντομα. Ξεκινήστε τώρα.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Αποθηκεύσαμε επίσης τον αριθμό ως αριθμό αναφοράς. Παραμένει κρυφός.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Αποθηκεύσαμε τον αριθμό ως αριθμό αναφοράς. Συμπληρώστε τα υπόλοιπα παρακάτω.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

@@ -3971,5 +3971,13 @@
   "guideStartSoon": "Það rennur út fljótlega. Byrjaðu núna.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Við vistuðum númerið líka sem tilvísunarnúmer. Það helst falið.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Við vistuðum númerið sem tilvísunarnúmer. Fylltu út restina hér fyrir neðan.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

@@ -9477,4 +9477,10 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'See aegub varsti. Alusta kohe.';
+
+  @override
+  String get scanNumberSaved => 'Salvestasime numbri ka viitenumbrina. See jääb peidetuks.';
+
+  @override
+  String get scanNumberSavedOnly => 'Salvestasime numbri viitenumbrina. Täida ülejäänu allpool.';
 }

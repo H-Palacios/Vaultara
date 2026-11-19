@@ -9420,4 +9420,10 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Yóò parí láìpẹ́. Bẹ̀rẹ̀ báyìí.';
+
+  @override
+  String get scanNumberSaved => 'A tún fi nọ́mbà náà pamọ́ gẹ́gẹ́ bí nọ́mbà ìtọ́kasí. Ó máa wà ní ìpamọ́.';
+
+  @override
+  String get scanNumberSavedOnly => 'A fi nọ́mbà náà pamọ́ gẹ́gẹ́ bí nọ́mbà ìtọ́kasí. Kún ìyókù nísàlẹ̀.';
 }

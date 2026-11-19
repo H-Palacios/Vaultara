@@ -3978,5 +3978,13 @@
   "guideStartSoon": "इसकी अवधि जल्द समाप्त होगी। अभी शुरू करें।",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "हमने नंबर को संदर्भ नंबर के रूप में भी सहेजा है। यह छिपा रहता है।",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "हमने नंबर को संदर्भ नंबर के रूप में सहेजा है। बाकी नीचे भरें।",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

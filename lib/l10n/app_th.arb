@@ -3983,5 +3983,13 @@
   "guideStartSoon": "ใกล้หมดอายุแล้ว เริ่มตอนนี้เลย",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "เราบันทึกหมายเลขเป็นหมายเลขอ้างอิงด้วย หมายเลขจะถูกซ่อนไว้",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "เราบันทึกหมายเลขเป็นหมายเลขอ้างอิงแล้ว กรอกส่วนที่เหลือด้านล่าง",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

@@ -3941,5 +3941,13 @@
   "guideStartSoon": "Срок скоро истекает. Начните сейчас.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Мы также сохранили номер как справочный номер. Он остаётся скрытым.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Мы сохранили номер как справочный номер. Заполните остальное ниже.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

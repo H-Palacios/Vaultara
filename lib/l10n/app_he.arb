@@ -3971,5 +3971,13 @@
   "guideStartSoon": "תוקפו יפוג בקרוב. התחל עכשיו.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "שמרנו גם את המספר כמספר אסמכתה. הוא נשאר מוסתר.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "שמרנו את המספר כמספר אסמכתה. מלא את השאר למטה.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

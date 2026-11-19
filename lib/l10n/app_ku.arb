@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Dema wê zû derbas dibe. Niha dest pê bike.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Me hejmar wekî hejmara referansê jî tomar kir. Ew veşartî dimîne.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Me hejmar wekî hejmara referansê tomar kir. Yên mayî li jêr dagire.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

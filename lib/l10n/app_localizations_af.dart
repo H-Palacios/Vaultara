@@ -9477,4 +9477,10 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Dit is binnekort verval. Begin nou.';
+
+  @override
+  String get scanNumberSaved => 'Ons het ook die nommer as die verwysingsnommer gestoor. Dit bly versteek.';
+
+  @override
+  String get scanNumberSavedOnly => 'Ons het die nommer as die verwysingsnommer gestoor. Vul die res hieronder in.';
 }

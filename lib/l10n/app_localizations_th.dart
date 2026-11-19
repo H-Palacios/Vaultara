@@ -9397,4 +9397,10 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'ใกล้หมดอายุแล้ว เริ่มตอนนี้เลย';
+
+  @override
+  String get scanNumberSaved => 'เราบันทึกหมายเลขเป็นหมายเลขอ้างอิงด้วย หมายเลขจะถูกซ่อนไว้';
+
+  @override
+  String get scanNumberSavedOnly => 'เราบันทึกหมายเลขเป็นหมายเลขอ้างอิงแล้ว กรอกส่วนที่เหลือด้านล่าง';
 }

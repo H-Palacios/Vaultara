@@ -9638,4 +9638,10 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Kmalu poteče. Začnite zdaj.';
+
+  @override
+  String get scanNumberSaved => 'Številko smo shranili tudi kot referenčno številko. Ostane skrita.';
+
+  @override
+  String get scanNumberSavedOnly => 'Številko smo shranili kot referenčno številko. Ostalo izpolnite spodaj.';
 }

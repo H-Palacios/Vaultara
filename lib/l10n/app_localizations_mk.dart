@@ -9471,4 +9471,10 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Наскоро истекува. Почнете сега.';
+
+  @override
+  String get scanNumberSaved => 'Го зачувавме и бројот како референтен број. Останува скриен.';
+
+  @override
+  String get scanNumberSavedOnly => 'Го зачувавме бројот како референтен број. Остатокот пополнете подолу.';
 }

@@ -3966,5 +3966,13 @@
   "guideStartSoon": "Expiră în curând. Începe acum.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Am salvat și numărul ca număr de referință. Rămâne ascuns.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Am salvat numărul ca număr de referință. Completează restul mai jos.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

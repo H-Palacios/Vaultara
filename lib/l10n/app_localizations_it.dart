@@ -9484,4 +9484,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Scade a breve. Inizia ora.';
+
+  @override
+  String get scanNumberSaved => 'Abbiamo salvato il numero anche come numero di riferimento. Resta nascosto.';
+
+  @override
+  String get scanNumberSavedOnly => 'Abbiamo salvato il numero come numero di riferimento. Completa il resto qui sotto.';
 }

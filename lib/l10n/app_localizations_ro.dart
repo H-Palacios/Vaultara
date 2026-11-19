@@ -9558,4 +9558,10 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Expiră în curând. Începe acum.';
+
+  @override
+  String get scanNumberSaved => 'Am salvat și numărul ca număr de referință. Rămâne ascuns.';
+
+  @override
+  String get scanNumberSavedOnly => 'Am salvat numărul ca număr de referință. Completează restul mai jos.';
 }

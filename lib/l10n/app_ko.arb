@@ -3966,5 +3966,13 @@
   "guideStartSoon": "곧 만료됩니다. 지금 시작하세요.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "번호를 참조 번호로도 저장했습니다. 번호는 가려진 채로 유지됩니다.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "번호를 참조 번호로 저장했습니다. 나머지는 아래에서 입력하세요.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

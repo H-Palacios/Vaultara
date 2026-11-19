@@ -3978,5 +3978,13 @@
   "guideStartSoon": "به‌زودی منقضی می‌شود. همین حالا شروع کنید.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "شماره را به‌عنوان شماره مرجع هم ذخیره کردیم. پنهان می‌ماند.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "شماره را به‌عنوان شماره مرجع ذخیره کردیم. بقیه را پایین پر کنید.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

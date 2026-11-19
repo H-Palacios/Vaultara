@@ -9476,4 +9476,10 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Se vanhenee pian. Aloita nyt.';
+
+  @override
+  String get scanNumberSaved => 'Tallensimme numeron myös viitenumeroksi. Se pysyy piilossa.';
+
+  @override
+  String get scanNumberSavedOnly => 'Tallensimme numeron viitenumeroksi. Täytä loput alla.';
 }

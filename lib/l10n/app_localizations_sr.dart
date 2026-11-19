@@ -9556,6 +9556,12 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Ускоро истиче. Почните сада.';
+
+  @override
+  String get scanNumberSaved => 'Сачували смо и број као референтни број. Остаје скривен.';
+
+  @override
+  String get scanNumberSavedOnly => 'Сачували смо број као референтни број. Остало попуните испод.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -19109,6 +19115,12 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get guideStartSoon => 'Ускоро истиче. Почните сада.';
+
+  @override
+  String get scanNumberSaved => 'Сачували смо и број као референтни број. Остаје скривен.';
+
+  @override
+  String get scanNumberSavedOnly => 'Сачували смо број као референтни број. Остало попуните испод.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -28658,4 +28670,10 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get guideStartSoon => 'Uskoro ističe. Počnite sada.';
+
+  @override
+  String get scanNumberSaved => 'Sačuvali smo i broj kao referentni broj. Ostaje skriven.';
+
+  @override
+  String get scanNumberSavedOnly => 'Sačuvali smo broj kao referentni broj. Ostalo popunite ispod.';
 }

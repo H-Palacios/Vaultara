@@ -3984,5 +3984,13 @@
   "guideStartSoon": "Наскоро истекува. Почнете сега.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Го зачувавме и бројот како референтен број. Останува скриен.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Го зачувавме бројот како референтен број. Остатокот пополнете подолу.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

@@ -9472,4 +9472,10 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'ഇതിന്റെ കാലാവധി ഉടൻ തീരും. ഇപ്പോൾ തുടങ്ങുക.';
+
+  @override
+  String get scanNumberSaved => 'നമ്പർ റഫറൻസ് നമ്പറായും ഞങ്ങൾ സേവ് ചെയ്തു. അത് മറച്ചുവെക്കും.';
+
+  @override
+  String get scanNumberSavedOnly => 'നമ്പർ റഫറൻസ് നമ്പറായി ഞങ്ങൾ സേവ് ചെയ്തു. ബാക്കി താഴെ പൂരിപ്പിക്കുക.';
 }

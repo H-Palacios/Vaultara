@@ -3980,5 +3980,13 @@
   "guideStartSoon": "Laster iraungiko da. Hasi orain.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Zenbakia erreferentzia-zenbaki gisa ere gorde dugu. Ezkutuan geratzen da.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Zenbakia erreferentzia-zenbaki gisa gorde dugu. Bete gainerakoa behean.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

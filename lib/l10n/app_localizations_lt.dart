@@ -9629,4 +9629,10 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Netrukus baigsis galiojimas. Pradėkite dabar.';
+
+  @override
+  String get scanNumberSaved => 'Numerį taip pat išsaugojome kaip nuorodos numerį. Jis lieka paslėptas.';
+
+  @override
+  String get scanNumberSavedOnly => 'Numerį išsaugojome kaip nuorodos numerį. Kitką užpildykite žemiau.';
 }

@@ -3984,5 +3984,13 @@
   "guideStartSoon": "Мөөнөтү жакында бүтөт. Азыр баштаңыз.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Номерди маалымдама номери катары да сактадык. Ал жашыруун калат.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Номерди маалымдама номери катары сактадык. Калганын төмөндө толтуруңуз.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

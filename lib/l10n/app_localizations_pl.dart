@@ -9652,4 +9652,10 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Termin wkrótce mija. Zacznij teraz.';
+
+  @override
+  String get scanNumberSaved => 'Zapisaliśmy też numer jako numer referencyjny. Pozostaje ukryty.';
+
+  @override
+  String get scanNumberSavedOnly => 'Zapisaliśmy numer jako numer referencyjny. Resztę uzupełnij poniżej.';
 }

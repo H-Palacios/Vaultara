@@ -9472,4 +9472,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'শিগগিরই মেয়াদ শেষ হবে। এখনই শুরু করুন।';
+
+  @override
+  String get scanNumberSaved => 'আমরা নম্বরটি রেফারেন্স নম্বর হিসেবেও সেভ করেছি। এটি লুকানো থাকে।';
+
+  @override
+  String get scanNumberSavedOnly => 'আমরা নম্বরটি রেফারেন্স নম্বর হিসেবে সেভ করেছি। বাকিটা নিচে পূরণ করুন।';
 }

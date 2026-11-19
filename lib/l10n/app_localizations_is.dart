@@ -9471,4 +9471,10 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Það rennur út fljótlega. Byrjaðu núna.';
+
+  @override
+  String get scanNumberSaved => 'Við vistuðum númerið líka sem tilvísunarnúmer. Það helst falið.';
+
+  @override
+  String get scanNumberSavedOnly => 'Við vistuðum númerið sem tilvísunarnúmer. Fylltu út restina hér fyrir neðan.';
 }

@@ -9409,4 +9409,10 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'ໃກ້ໝົດອາຍຸແລ້ວ. ເລີ່ມດຽວນີ້.';
+
+  @override
+  String get scanNumberSaved => 'ພວກເຮົາຍັງບັນທຶກເລກເປັນເລກອ້າງອີງນຳ. ມັນຈະຖືກເຊື່ອງໄວ້.';
+
+  @override
+  String get scanNumberSavedOnly => 'ພວກເຮົາບັນທຶກເລກເປັນເລກອ້າງອີງແລ້ວ. ຕື່ມສ່ວນທີ່ເຫຼືອຂ້າງລຸ່ມ.';
 }

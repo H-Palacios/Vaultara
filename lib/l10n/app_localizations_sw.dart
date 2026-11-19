@@ -9472,4 +9472,10 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Muda wake unaisha hivi karibuni. Anza sasa.';
+
+  @override
+  String get scanNumberSaved => 'Tumehifadhi pia namba kama namba ya marejeo. Itabaki imefichwa.';
+
+  @override
+  String get scanNumberSavedOnly => 'Tumehifadhi namba kama namba ya marejeo. Jaza sehemu iliyobaki hapa chini.';
 }

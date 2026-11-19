@@ -3966,5 +3966,13 @@
   "guideStartSoon": "اس کی میعاد جلد ختم ہو رہی ہے۔ ابھی شروع کریں۔",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "ہم نے نمبر کو حوالہ نمبر کے طور پر بھی محفوظ کیا۔ یہ چھپا رہتا ہے۔",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "ہم نے نمبر کو حوالہ نمبر کے طور پر محفوظ کیا۔ باقی نیچے بھریں۔",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

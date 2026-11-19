@@ -9647,4 +9647,10 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Термін скоро спливає. Почніть зараз.';
+
+  @override
+  String get scanNumberSaved => 'Ми також зберегли номер як довідковий номер. Він залишається прихованим.';
+
+  @override
+  String get scanNumberSavedOnly => 'Ми зберегли номер як довідковий номер. Заповніть решту нижче.';
 }

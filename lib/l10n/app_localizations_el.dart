@@ -9477,4 +9477,10 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Λήγει σύντομα. Ξεκινήστε τώρα.';
+
+  @override
+  String get scanNumberSaved => 'Αποθηκεύσαμε επίσης τον αριθμό ως αριθμό αναφοράς. Παραμένει κρυφός.';
+
+  @override
+  String get scanNumberSavedOnly => 'Αποθηκεύσαμε τον αριθμό ως αριθμό αναφοράς. Συμπληρώστε τα υπόλοιπα παρακάτω.';
 }

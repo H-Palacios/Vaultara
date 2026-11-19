@@ -3716,5 +3716,13 @@
   "guideStartSoon": "તેની મુદત જલ્દી પૂરી થાય છે. હમણાં જ શરૂ કરો.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "અમે નંબરને સંદર્ભ નંબર તરીકે પણ સાચવ્યો છે. તે છુપાયેલો રહે છે.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "અમે નંબરને સંદર્ભ નંબર તરીકે સાચવ્યો છે. બાકીનું નીચે ભરો.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

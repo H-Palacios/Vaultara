@@ -3984,5 +3984,13 @@
   "guideStartSoon": "Drīz beigsies derīguma termiņš. Sāciet tagad.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "Numuru saglabājām arī kā atsauces numuru. Tas paliek paslēpts.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "Numuru saglabājām kā atsauces numuru. Pārējo aizpildiet zemāk.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

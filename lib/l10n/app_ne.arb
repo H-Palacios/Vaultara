@@ -3966,5 +3966,13 @@
   "guideStartSoon": "यसको म्याद चाँडै सकिँदैछ। अहिले नै सुरु गर्नुहोस्।",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "हामीले नम्बरलाई सन्दर्भ नम्बरको रूपमा पनि सेभ गर्यौं। यो लुकेको रहन्छ।",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "हामीले नम्बरलाई सन्दर्भ नम्बरको रूपमा सेभ गर्यौं। बाँकी तल भर्नुहोस्।",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }

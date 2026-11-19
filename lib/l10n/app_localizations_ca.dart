@@ -9477,4 +9477,10 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Caduca aviat. Comença ara.';
+
+  @override
+  String get scanNumberSaved => 'També hem desat el número com a número de referència. Queda amagat.';
+
+  @override
+  String get scanNumberSavedOnly => 'Hem desat el número com a número de referència. Omple la resta a sota.';
 }

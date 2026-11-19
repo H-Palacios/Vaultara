@@ -9404,4 +9404,10 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'Segera kedaluwarsa. Mulai sekarang.';
+
+  @override
+  String get scanNumberSaved => 'Kami juga menyimpan nomor sebagai nomor referensi. Nomor tetap tersembunyi.';
+
+  @override
+  String get scanNumberSavedOnly => 'Kami menyimpan nomor sebagai nomor referensi. Isi sisanya di bawah.';
 }

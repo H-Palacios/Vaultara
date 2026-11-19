@@ -9534,4 +9534,10 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get guideStartSoon => 'תוקפו יפוג בקרוב. התחל עכשיו.';
+
+  @override
+  String get scanNumberSaved => 'שמרנו גם את המספר כמספר אסמכתה. הוא נשאר מוסתר.';
+
+  @override
+  String get scanNumberSavedOnly => 'שמרנו את המספר כמספר אסמכתה. מלא את השאר למטה.';
 }

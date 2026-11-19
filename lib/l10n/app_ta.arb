@@ -3966,5 +3966,13 @@
   "guideStartSoon": "இது விரைவில் காலாவதியாகும். இப்போதே தொடங்குங்கள்.",
   "@guideStartSoon": {
     "description": "Renewal checklist, When to start: the record expires within a month."
+  },
+  "scanNumberSaved": "எண்ணை குறிப்பு எண்ணாகவும் சேமித்தோம். அது மறைவாகவே இருக்கும்.",
+  "@scanNumberSaved": {
+    "description": "scanNumberSaved"
+  },
+  "scanNumberSavedOnly": "எண்ணை குறிப்பு எண்ணாக சேமித்தோம். மீதியை கீழே நிரப்புங்கள்.",
+  "@scanNumberSavedOnly": {
+    "description": "scanNumberSavedOnly"
   }
 }
