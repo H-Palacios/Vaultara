@@ -772,13 +772,11 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       }
     }
 
-    final String? number = r.documentNumber;
-    if (number != null &&
-        number.isNotEmpty &&
-        !notesController.text.contains(number)) {
-      final String line = loc.scanNotesNumber(number);
-      final String current = notesController.text.trimRight();
-      notesController.text = current.isEmpty ? line : '$current\n$line';
+    // The document number goes in the reference number field, which is
+    // hidden on screen and never sent to Ask Vaultara, not in the notes.
+    final String? number = TrackedItem.cleanReference(r.documentNumber);
+    if (number != null && referenceController.text.trim().isEmpty) {
+      referenceController.text = number;
       appliedNumber = number;
     }
 

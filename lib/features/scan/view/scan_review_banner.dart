@@ -46,7 +46,7 @@ class ScanFoundBanner extends StatelessWidget {
     if (expiry) return loc.scanFoundExpiry;
     if (group) return loc.scanFoundGroup;
     if (categoryOnly) return loc.scanFoundCategory;
-    if (result.hasDocumentNumber) return loc.scanFoundNumberOnly;
+    if (result.hasDocumentNumber) return loc.scanNumberSavedOnly;
     return loc.scanFoundNothing;
   }
 
@@ -131,8 +131,9 @@ class ScanFoundBanner extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 13,
                       height: 1.4,
-                      fontWeight:
-                          title != null ? FontWeight.w500 : FontWeight.w600,
+                      fontWeight: title != null
+                          ? FontWeight.w500
+                          : FontWeight.w600,
                       color: scheme.onSurface,
                     ),
                   ),
@@ -161,7 +162,7 @@ class ScanFoundBanner extends StatelessWidget {
                   if (showNumberNote) ...[
                     const SizedBox(height: 2),
                     Text(
-                      loc.scanFoundNumberAdded,
+                      loc.scanNumberSaved,
                       style: TextStyle(
                         fontSize: 12,
                         height: 1.4,

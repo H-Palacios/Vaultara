@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' show DateUtils;
+import 'package:flutter/material.dart' show DateUtils, visibleForTesting;
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/repositories/attachment_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -62,8 +62,13 @@ class RecordMatch {
     return best;
   }
 
-  static bool _numberIn(TrackedItem record, String number) {
+  /// True when the record holds this document number: in its reference
+  /// number, or in its notes (where older scans put it).
+  @visibleForTesting
+  static bool numberIn(TrackedItem record, String number) {
     if (record.locked) return false;
+    final reference = record.reference;
+    if (reference != null && _compact(reference) == number) return true;
     final notes = record.notes;
     if (notes == null || notes.isEmpty) return false;
     return _compact(notes).contains(number);
@@ -97,24 +102,28 @@ class RecordMatch {
     final number = _compact(documentNumber ?? '');
     if (number.length >= 4) {
       final byNumber = candidates
-          .where((record) =>
-              (!holderKnown || record.holderId == holderId) &&
-              _numberIn(record, number))
+          .where(
+            (record) =>
+                (!holderKnown || record.holderId == holderId) &&
+                numberIn(record, number),
+          )
           .toList();
       if (byNumber.length == 1) return byNumber.first;
     }
 
     if (!holderKnown) return null;
 
-    final sameHolder =
-        candidates.where((record) => record.holderId == holderId).toList();
+    final sameHolder = candidates
+        .where((record) => record.holderId == holderId)
+        .toList();
     if (sameHolder.length == 1) return sameHolder.first;
     if (sameHolder.isEmpty) return null;
 
     final wanted = _name(name ?? '');
     if (wanted.isEmpty) return null;
-    final byName =
-        sameHolder.where((record) => _name(record.name) == wanted).toList();
+    final byName = sameHolder
+        .where((record) => _name(record.name) == wanted)
+        .toList();
     return byName.length == 1 ? byName.first : null;
   }
 
@@ -125,8 +134,7 @@ class RecordMatch {
     String? imagePath,
   }) async {
     final current = RecordRepository.stored(existing);
-    final updated =
-        current.copyWith(expiryDate: DateUtils.dateOnly(newExpiry));
+    final updated = current.copyWith(expiryDate: DateUtils.dateOnly(newExpiry));
     await RecordRepository.updateRecord(current, updated);
     await RenewalChecklist.clear(current.id);
 
