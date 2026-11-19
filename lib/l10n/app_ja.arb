@@ -4014,5 +4014,17 @@
   "scanHolderTitle": "これは誰の書類ですか？",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara が {date} に更新しました。本当に更新されたか確認してください。",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name}が自動で更新されました",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "記録が自動で更新されました",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

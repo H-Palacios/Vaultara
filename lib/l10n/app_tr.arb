@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Bu belge kimin?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara onu {date} tarihine taşıdı. Gerçekten yenilendiğini kontrol edin.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} kendiliğinden yenilendi",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Bir kayıt kendiliğinden yenilendi",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

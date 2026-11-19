@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Dukumentigan yaa leh?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara waxay u wareejisay {date}. Hubi inuu runtii cusboonaaday.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} iskiis ayuu u cusboonaaday",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Diiwaan ayaa iskiis u cusboonaaday",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

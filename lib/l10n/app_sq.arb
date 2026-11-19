@@ -4016,5 +4016,17 @@
   "scanHolderTitle": "I kujt është ky dokument?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara e zhvendosi në {date}. Kontrollo që u rinovua vërtet.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} u rinovua vetë",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Një regjistrim u rinovua vetë",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

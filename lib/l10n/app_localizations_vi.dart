@@ -9440,4 +9440,17 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Giấy tờ này của ai?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara đã dời sang $date. Hãy kiểm tra xem đã thật sự gia hạn chưa.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name đã tự gia hạn';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Một mục đã tự gia hạn';
 }

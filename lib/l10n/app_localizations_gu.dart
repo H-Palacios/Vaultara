@@ -9503,4 +9503,17 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'આ દસ્તાવેજ કોનો છે?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultaraએ તેને $date પર ખસેડ્યું. ખરેખર રિન્યૂ થયું છે કે નહીં તપાસો.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name જાતે રિન્યૂ થયું';
+  }
+
+  @override
+  String get rolledTitleLocked => 'એક રેકોર્ડ જાતે રિન્યૂ થયો';
 }

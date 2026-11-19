@@ -9503,4 +9503,17 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'இது யாருடைய ஆவணம்?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara அதை $dateக்கு நகர்த்தியது. உண்மையில் புதுப்பிக்கப்பட்டதா என்று சரிபார்க்கவும்.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name தானாக புதுப்பிக்கப்பட்டது';
+  }
+
+  @override
+  String get rolledTitleLocked => 'ஒரு பதிவு தானாக புதுப்பிக்கப்பட்டது';
 }

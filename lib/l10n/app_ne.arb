@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "यो कसको कागजात हो?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ले यसलाई {date} मा सार्यो। साँच्चै नवीकरण भयो कि भएन जाँच्नुहोस्।",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} आफैं नवीकरण भयो",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "एउटा रेकर्ड आफैं नवीकरण भयो",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

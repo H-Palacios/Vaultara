@@ -3977,5 +3977,17 @@
   "scanHolderTitle": "Чей это документ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara перенёс дату на {date}. Проверьте, что продление действительно прошло.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} продлилось само",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Запись продлилась сама",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

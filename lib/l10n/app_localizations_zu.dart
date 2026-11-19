@@ -9503,4 +9503,17 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Le dokhumenti ingekabani?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'I-Vaultara iyihambise ku-$date. Qinisekisa ukuthi ivuselelwe ngempela.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name izivuselele';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Irekhodi izivuselele';
 }

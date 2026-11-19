@@ -4007,5 +4007,17 @@
   "scanHolderTitle": "Hver á þetta skjal?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara færði það til {date}. Athugaðu að það hafi örugglega endurnýjast.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} endurnýjaðist sjálft",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Færsla endurnýjaðist sjálf",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -9493,4 +9493,17 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Энэ хэний баримт вэ?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara үүнийг $date руу шилжүүллээ. Үнэхээр сунгагдсан эсэхийг шалгана уу.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name өөрөө сунгагдлаа';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Нэг бичлэг өөрөө сунгагдлаа';
 }

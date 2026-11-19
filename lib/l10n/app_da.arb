@@ -4033,5 +4033,17 @@
   "scanHolderTitle": "Hvis dokument er det?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara har flyttet den til {date}. Tjek, at den virkelig er fornyet.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} er fornyet af sig selv",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "En post er fornyet af sig selv",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

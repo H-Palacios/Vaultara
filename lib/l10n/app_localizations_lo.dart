@@ -9440,4 +9440,17 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'ນີ້ແມ່ນເອກະສານຂອງໃຜ?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ໄດ້ເລື່ອນໄປ $date. ກວດເບິ່ງວ່າມັນຕໍ່ອາຍຸແທ້.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name ຕໍ່ອາຍຸເອງແລ້ວ';
+  }
+
+  @override
+  String get rolledTitleLocked => 'ບັນທຶກໜຶ່ງຕໍ່ອາຍຸເອງແລ້ວ';
 }

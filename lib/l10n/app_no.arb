@@ -4009,5 +4009,17 @@
   "scanHolderTitle": "Hvem eier dette dokumentet?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara flyttet den til {date}. Sjekk at den faktisk ble fornyet.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} ble fornyet av seg selv",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "En oppføring ble fornyet av seg selv",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

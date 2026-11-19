@@ -9503,4 +9503,17 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'یہ کس کی دستاویز ہے؟';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara نے اسے $date پر منتقل کر دیا۔ تصدیق کریں کہ واقعی تجدید ہوئی۔';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name خود بخود تجدید ہو گیا';
+  }
+
+  @override
+  String get rolledTitleLocked => 'ایک ریکارڈ خود بخود تجدید ہو گیا';
 }

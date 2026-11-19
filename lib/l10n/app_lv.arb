@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "Kā dokuments tas ir?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara to pārcēla uz {date}. Pārbaudiet, vai tas tiešām atjaunojās.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} atjaunojās pats",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Ieraksts atjaunojās pats",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -9451,4 +9451,17 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Ìwé ta ni èyí?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ti gbé e lọ sí $date. Ṣàyẹ̀wò pé ó ti di tuntun lóòótọ́.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name ti sọ ara rẹ̀ di tuntun';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Àkọsílẹ̀ kan ti sọ ara rẹ̀ di tuntun';
 }

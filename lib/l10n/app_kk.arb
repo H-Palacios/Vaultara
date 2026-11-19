@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "Бұл кімнің құжаты?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara оны {date} күніне жылжытты. Шынымен жаңартылғанын тексеріңіз.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} өздігінен жаңартылды",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Жазба өздігінен жаңартылды",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

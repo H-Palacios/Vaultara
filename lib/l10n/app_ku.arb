@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Ev belgeya kê ye?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ew bir {date}. Kontrol bike ku bi rastî nû bûye.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} xwe nû kir",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Tomarek xwe nû kir",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

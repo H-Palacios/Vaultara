@@ -9683,4 +9683,17 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Czyj to dokument?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara przesunęła to na $date. Sprawdź, czy naprawdę się odnowiło.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name odnowiło się samo';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Wpis odnowił się sam';
 }

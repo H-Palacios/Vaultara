@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Al cui este acest document?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara l-a mutat la {date}. Verifică dacă s-a reînnoit cu adevărat.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} s-a reînnoit singur",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "O înregistrare s-a reînnoit singură",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -4014,5 +4014,17 @@
   "scanHolderTitle": "À qui est ce document ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara l'a déplacé au {date}. Vérifiez qu'il a bien été renouvelé.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} s'est renouvelé seul",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Un élément s'est renouvelé seul",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

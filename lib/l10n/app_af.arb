@@ -4040,5 +4040,17 @@
   "scanHolderTitle": "Wie se dokument is dit?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara het dit na {date} geskuif. Maak seker dit is regtig hernu.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} het vanself hernu",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "'n Rekord het vanself hernu",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

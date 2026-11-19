@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Hati hii ni ya nani?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara imeisogeza hadi {date}. Hakikisha kwamba imehuishwa kweli.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} imejihuisha yenyewe",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Rekodi imejihuisha yenyewe",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

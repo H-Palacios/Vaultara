@@ -9503,4 +9503,17 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'ఇది ఎవరి పత్రం?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara దాన్ని $dateకి జరిపింది. నిజంగా పునరుద్ధరించబడిందో చూసుకోండి.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name తనంతట తానే పునరుద్ధరించబడింది';
+  }
+
+  @override
+  String get rolledTitleLocked => 'ఒక రికార్డ్ తనంతట తానే పునరుద్ధరించబడింది';
 }

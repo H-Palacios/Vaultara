@@ -3995,5 +3995,17 @@
   "scanHolderTitle": "這是誰的證件？",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara 已將其順延至 {date}。請確認確實已續期。",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} 已自動續期",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "有一筆紀錄已自動續期",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

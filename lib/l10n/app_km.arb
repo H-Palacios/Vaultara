@@ -3752,5 +3752,17 @@
   "scanHolderTitle": "តើឯកសារនេះជារបស់អ្នកណា?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara បានផ្លាស់វាទៅ {date}។ ពិនិត្យថាវាពិតជាបានបន្ត។",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} បានបន្តដោយខ្លួនឯង",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "កំណត់ត្រាមួយបានបន្តដោយខ្លួនឯង",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

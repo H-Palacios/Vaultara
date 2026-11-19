@@ -9440,4 +9440,17 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get scanHolderTitle => '누구의 서류인가요?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara가 $date(으)로 옮겼습니다. 실제로 갱신되었는지 확인하세요.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name이(가) 자동 갱신됨';
+  }
+
+  @override
+  String get rolledTitleLocked => '기록이 자동 갱신됨';
 }

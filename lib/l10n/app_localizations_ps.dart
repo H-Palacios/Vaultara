@@ -9503,4 +9503,17 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'دا د چا سند دی؟';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara دا $date ته یوړ. وګورئ چې رښتیا نوی شوی.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name پخپله نوی شو';
+  }
+
+  @override
+  String get rolledTitleLocked => 'یو ریکارډ پخپله نوی شو';
 }

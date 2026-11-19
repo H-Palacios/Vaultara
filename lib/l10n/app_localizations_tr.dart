@@ -9503,4 +9503,17 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Bu belge kimin?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara onu $date tarihine taşıdı. Gerçekten yenilendiğini kontrol edin.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name kendiliğinden yenilendi';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Bir kayıt kendiliğinden yenilendi';
 }

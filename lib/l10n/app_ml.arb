@@ -3752,5 +3752,17 @@
   "scanHolderTitle": "ഇത് ആരുടെ രേഖയാണ്?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara അത് {date}-ലേക്ക് മാറ്റി. ശരിക്കും പുതുക്കിയോ എന്ന് പരിശോധിക്കുക.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} തനിയെ പുതുക്കി",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "ഒരു രേഖ തനിയെ പുതുക്കി",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

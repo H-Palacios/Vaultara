@@ -4007,5 +4007,17 @@
   "scanHolderTitle": "Dokumen siapa ini?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara memindahkannya ke {date}. Pastikan benar-benar sudah diperpanjang.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} diperpanjang sendiri",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Sebuah catatan diperpanjang sendiri",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

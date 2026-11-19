@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "இது யாருடைய ஆவணம்?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara அதை {date}க்கு நகர்த்தியது. உண்மையில் புதுப்பிக்கப்பட்டதா என்று சரிபார்க்கவும்.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} தானாக புதுப்பிக்கப்பட்டது",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "ஒரு பதிவு தானாக புதுப்பிக்கப்பட்டது",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "دا د چا سند دی؟",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara دا {date} ته یوړ. وګورئ چې رښتیا نوی شوی.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} پخپله نوی شو",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "یو ریکارډ پخپله نوی شو",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

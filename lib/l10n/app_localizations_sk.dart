@@ -9662,4 +9662,17 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Čí je to doklad?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ho posunula na $date. Overte, že sa naozaj obnovilo.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name sa obnovilo samo';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Záznam sa obnovil sám';
 }

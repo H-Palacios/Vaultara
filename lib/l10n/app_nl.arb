@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Van wie is dit document?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara heeft het verplaatst naar {date}. Controleer of het echt is verlengd.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} is vanzelf verlengd",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Een item is vanzelf verlengd",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

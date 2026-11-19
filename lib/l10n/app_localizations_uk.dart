@@ -9678,4 +9678,17 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Чий це документ?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara переніс дату на $date. Перевірте, що поновлення справді відбулося.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name поновилося саме';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Запис поновився сам';
 }

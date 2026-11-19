@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Czyj to dokument?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara przesunęła to na {date}. Sprawdź, czy naprawdę się odnowiło.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} odnowiło się samo",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Wpis odnowił się sam",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

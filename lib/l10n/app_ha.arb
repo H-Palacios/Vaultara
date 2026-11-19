@@ -4014,5 +4014,17 @@
   "scanHolderTitle": "Takardar wane ce wannan?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ta matsar da shi zuwa {date}. Duba ko an sabunta shi da gaske.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} ya sabunta kansa",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Wani rikodi ya sabunta kansa",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

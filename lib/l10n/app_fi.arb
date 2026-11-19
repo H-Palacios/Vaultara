@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "Kenen asiakirja tämä on?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara siirsi sen päivään {date}. Tarkista, että se todella uusiutui.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} uusiutui itsestään",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Tietue uusiutui itsestään",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

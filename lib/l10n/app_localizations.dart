@@ -16212,6 +16212,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Whose document is this?'**
   String get scanHolderTitle;
+
+  /// rolledBody
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara moved it to {date}. Check that it really renewed.'**
+  String rolledBody(Object date);
+
+  /// rolledTitle
+  ///
+  /// In en, this message translates to:
+  /// **'{name} renewed by itself'**
+  String rolledTitle(Object name);
+
+  /// rolledTitleLocked
+  ///
+  /// In en, this message translates to:
+  /// **'A record renewed by itself'**
+  String get rolledTitleLocked;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -9503,4 +9503,17 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'ಇದು ಯಾರ ದಾಖಲೆ?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ಅದನ್ನು $dateಕ್ಕೆ ಸರಿಸಿದೆ. ನಿಜವಾಗಿಯೂ ನವೀಕರಣವಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name ತಾನಾಗಿಯೇ ನವೀಕರಣವಾಯಿತು';
+  }
+
+  @override
+  String get rolledTitleLocked => 'ಒಂದು ದಾಖಲೆ ತಾನಾಗಿಯೇ ನವೀಕರಣವಾಯಿತು';
 }

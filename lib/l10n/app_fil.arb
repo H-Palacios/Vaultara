@@ -4014,5 +4014,17 @@
   "scanHolderTitle": "Kanino ang dokumentong ito?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Inilipat ito ng Vaultara sa {date}. Tingnan kung talagang na-renew.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "Kusang na-renew ang {name}",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Kusang na-renew ang isang record",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

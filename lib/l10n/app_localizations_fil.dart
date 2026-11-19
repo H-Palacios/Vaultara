@@ -9498,4 +9498,17 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Kanino ang dokumentong ito?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Inilipat ito ng Vaultara sa $date. Tingnan kung talagang na-renew.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return 'Kusang na-renew ang $name';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Kusang na-renew ang isang record';
 }

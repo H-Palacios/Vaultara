@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Dokumen siapa ini?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara mengalihkannya ke {date}. Semak bahawa ia benar-benar diperbaharui.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} diperbaharui sendiri",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Satu rekod diperbaharui sendiri",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

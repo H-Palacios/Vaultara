@@ -9503,4 +9503,17 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Lolu xwebhu lukabani?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'IVaultara iyihambise ku-$date. Qinisekisa ukuba ihlaziywe ngokwenene.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name izihlaziyile';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Irekhodi izihlaziyile';
 }

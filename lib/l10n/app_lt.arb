@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "Kieno tai dokumentas?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara perkėlė į {date}. Patikrinkite, ar tikrai atsinaujino.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} atsinaujino pats",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Įrašas atsinaujino pats",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

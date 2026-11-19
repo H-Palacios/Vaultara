@@ -9438,4 +9438,17 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'តើឯកសារនេះជារបស់អ្នកណា?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara បានផ្លាស់វាទៅ $date។ ពិនិត្យថាវាពិតជាបានបន្ត។';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name បានបន្តដោយខ្លួនឯង';
+  }
+
+  @override
+  String get rolledTitleLocked => 'កំណត់ត្រាមួយបានបន្តដោយខ្លួនឯង';
 }

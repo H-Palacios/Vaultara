@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Ìwé ta ni èyí?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ti gbé e lọ sí {date}. Ṣàyẹ̀wò pé ó ti di tuntun lóòótọ́.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} ti sọ ara rẹ̀ di tuntun",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Àkọsílẹ̀ kan ti sọ ara rẹ̀ di tuntun",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

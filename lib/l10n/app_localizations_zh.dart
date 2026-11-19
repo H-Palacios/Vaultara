@@ -9440,6 +9440,19 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get scanHolderTitle => '这是谁的证件？';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara 已将其顺延至 $date。请确认确实已续期。';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name 已自动续期';
+  }
+
+  @override
+  String get rolledTitleLocked => '有一条记录已自动续期';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18866,6 +18879,19 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get scanHolderTitle => '这是谁的证件？';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara 已将其顺延至 $date。请确认确实已续期。';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name 已自动续期';
+  }
+
+  @override
+  String get rolledTitleLocked => '有一条记录已自动续期';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -28292,4 +28318,17 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get scanHolderTitle => '這是誰的證件？';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara 已將其順延至 $date。請確認確實已續期。';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name 已自動續期';
+  }
+
+  @override
+  String get rolledTitleLocked => '有一筆紀錄已自動續期';
 }

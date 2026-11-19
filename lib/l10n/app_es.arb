@@ -4009,5 +4009,17 @@
   "scanHolderTitle": "¿De quién es este documento?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara lo movió al {date}. Comprueba que se renovó de verdad.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} se renovó solo",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Un registro se renovó solo",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

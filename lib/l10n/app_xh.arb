@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Lolu xwebhu lukabani?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "IVaultara iyihambise ku-{date}. Qinisekisa ukuba ihlaziywe ngokwenene.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} izihlaziyile",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Irekhodi izihlaziyile",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

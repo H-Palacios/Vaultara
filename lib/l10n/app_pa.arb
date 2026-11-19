@@ -4009,5 +4009,17 @@
   "scanHolderTitle": "ਇਹ ਕਿਸਦਾ ਦਸਤਾਵੇਜ਼ ਹੈ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ਨੇ ਇਸਨੂੰ {date} ਤੇ ਕਰ ਦਿੱਤਾ। ਜਾਂਚੋ ਕਿ ਇਹ ਸੱਚਮੁੱਚ ਨਵਿਆਇਆ ਗਿਆ।",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} ਆਪਣੇ ਆਪ ਨਵਿਆਇਆ ਗਿਆ",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "ਇੱਕ ਰਿਕਾਰਡ ਆਪਣੇ ਆਪ ਨਵਿਆਇਆ ਗਿਆ",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

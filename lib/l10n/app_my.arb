@@ -3752,5 +3752,17 @@
   "scanHolderTitle": "ဤစာရွက်စာတမ်းသည် မည်သူ့ဟာလဲ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara က {date} သို့ ရွှေ့လိုက်သည်။ တကယ် သက်တမ်းတိုးထားခြင်း ရှိမရှိ စစ်ဆေးပါ။",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} အလိုအလျောက် သက်တမ်းတိုးသွားသည်",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "မှတ်တမ်းတစ်ခု အလိုအလျောက် သက်တမ်းတိုးသွားသည်",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

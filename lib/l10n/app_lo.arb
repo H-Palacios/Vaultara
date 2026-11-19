@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "ນີ້ແມ່ນເອກະສານຂອງໃຜ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ໄດ້ເລື່ອນໄປ {date}. ກວດເບິ່ງວ່າມັນຕໍ່ອາຍຸແທ້.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} ຕໍ່ອາຍຸເອງແລ້ວ",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "ບັນທຶກໜຶ່ງຕໍ່ອາຍຸເອງແລ້ວ",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

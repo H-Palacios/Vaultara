@@ -9503,4 +9503,17 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Hati hii ni ya nani?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara imeisogeza hadi $date. Hakikisha kwamba imehuishwa kweli.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name imejihuisha yenyewe';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Rekodi imejihuisha yenyewe';
 }

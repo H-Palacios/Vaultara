@@ -9502,4 +9502,17 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'ይህ የማን ሰነድ ነው?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ወደ $date አንቀሳቅሶታል። በእርግጥ መታደሱን ያረጋግጡ።';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name በራሱ ታድሷል';
+  }
+
+  @override
+  String get rolledTitleLocked => 'አንድ መዝገብ በራሱ ታድሷል';
 }

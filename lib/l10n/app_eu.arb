@@ -4016,5 +4016,17 @@
   "scanHolderTitle": "Noren agiria da hau?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultarak {date} datara eraman du. Egiaztatu benetan berritu dela.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} berez berritu da",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Erregistro bat berez berritu da",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

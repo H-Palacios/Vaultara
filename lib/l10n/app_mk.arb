@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "Чиј е овој документ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara го премести на {date}. Проверете дали навистина е обновено.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} се обнови само",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Запис се обнови сам",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

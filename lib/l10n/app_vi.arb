@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Giấy tờ này của ai?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara đã dời sang {date}. Hãy kiểm tra xem đã thật sự gia hạn chưa.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} đã tự gia hạn",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Một mục đã tự gia hạn",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

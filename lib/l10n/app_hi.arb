@@ -4014,5 +4014,17 @@
   "scanHolderTitle": "यह किसका दस्तावेज़ है?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ने इसे {date} पर कर दिया। जाँच लें कि यह सच में नवीनीकृत हुआ।",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} अपने आप नवीनीकृत हुआ",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "एक रिकॉर्ड अपने आप नवीनीकृत हुआ",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -9508,4 +9508,17 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'I kujt është ky dokument?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara e zhvendosi në $date. Kontrollo që u rinovua vërtet.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name u rinovua vetë';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Një regjistrim u rinovua vetë';
 }

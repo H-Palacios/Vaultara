@@ -4033,5 +4033,17 @@
   "scanHolderTitle": "De qui és aquest document?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara l'ha mogut al {date}. Comprova que s'ha renovat de debò.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} s'ha renovat sol",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Un registre s'ha renovat sol",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

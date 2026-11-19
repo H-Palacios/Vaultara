@@ -4019,5 +4019,17 @@
   "scanHolderTitle": "ఇది ఎవరి పత్రం?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara దాన్ని {date}కి జరిపింది. నిజంగా పునరుద్ధరించబడిందో చూసుకోండి.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} తనంతట తానే పునరుద్ధరించబడింది",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "ఒక రికార్డ్ తనంతట తానే పునరుద్ధరించబడింది",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

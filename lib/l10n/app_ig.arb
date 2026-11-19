@@ -4007,5 +4007,17 @@
   "scanHolderTitle": "Akwụkwọ onye bụ nke a?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara bugara ya na {date}. Lelee na e megharịrị ya n'ezie.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} meghariri onwe ya",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Ndekọ meghariri onwe ya",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

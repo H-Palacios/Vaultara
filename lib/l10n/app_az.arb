@@ -3752,5 +3752,17 @@
   "scanHolderTitle": "Bu kimin sənədidir?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara onu {date} tarixinə keçirdi. Həqiqətən yeniləndiyini yoxlayın.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} öz-özünə yeniləndi",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Bir qeyd öz-özünə yeniləndi",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

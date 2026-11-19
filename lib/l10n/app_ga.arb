@@ -4014,5 +4014,17 @@
   "scanHolderTitle": "Cé leis an doiciméad seo?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Bhog Vaultara é go {date}. Seiceáil gur athnuadh é i ndáiríre.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "D'athnuaigh {name} é féin",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "D'athnuaigh taifead é féin",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

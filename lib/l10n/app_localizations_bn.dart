@@ -9503,4 +9503,17 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'এটি কার ডকুমেন্ট?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara এটি $date-এ সরিয়েছে। সত্যিই নবায়ন হয়েছে কি না দেখে নিন।';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name নিজে থেকে নবায়ন হয়েছে';
+  }
+
+  @override
+  String get rolledTitleLocked => 'একটি রেকর্ড নিজে থেকে নবায়ন হয়েছে';
 }

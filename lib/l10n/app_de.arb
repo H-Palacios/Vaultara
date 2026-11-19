@@ -4033,5 +4033,17 @@
   "scanHolderTitle": "Wem gehört dieses Dokument?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara hat es auf {date} verschoben. Prüfe, ob es wirklich verlängert wurde.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} hat sich selbst verlängert",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Ein Eintrag hat sich selbst verlängert",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

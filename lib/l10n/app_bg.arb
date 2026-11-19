@@ -3752,5 +3752,17 @@
   "scanHolderTitle": "Чий е този документ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara го премести на {date}. Проверете дали наистина е подновено.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} се поднови само",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Запис се поднови сам",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -9503,4 +9503,17 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Ev belgeya kê ye?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ew bir $date. Kontrol bike ku bi rastî nû bûye.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name xwe nû kir';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Tomarek xwe nû kir';
 }

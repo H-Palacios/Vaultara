@@ -9502,4 +9502,17 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'ئەم بەڵگەنامەیە هی کێیە؟';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara بردی بۆ $date. دڵنیابە کە بەڕاستی نوێ بووەتەوە.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name خۆی نوێ بووەوە';
+  }
+
+  @override
+  String get rolledTitleLocked => 'تۆمارێک خۆی نوێ بووەوە';
 }

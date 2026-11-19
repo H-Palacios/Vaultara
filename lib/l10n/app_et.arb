@@ -4167,5 +4167,17 @@
   "scanHolderTitle": "Kelle dokument see on?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara viis selle kuupäevale {date}. Kontrolli, et see tõesti uuenes.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} uuenes ise",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Kirje uuenes ise",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

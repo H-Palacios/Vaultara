@@ -4019,5 +4019,17 @@
   "scanHolderTitle": "เอกสารนี้เป็นของใคร",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara เลื่อนไปเป็น {date} แล้ว โปรดตรวจสอบว่าต่ออายุจริง",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} ต่ออายุเองแล้ว",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "รายการหนึ่งต่ออายุเองแล้ว",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

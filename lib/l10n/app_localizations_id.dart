@@ -9435,4 +9435,17 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Dokumen siapa ini?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara memindahkannya ke $date. Pastikan benar-benar sudah diperpanjang.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name diperpanjang sendiri';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Sebuah catatan diperpanjang sendiri';
 }

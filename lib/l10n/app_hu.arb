@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "Kié ez az okmány?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "A Vaultara áttette {date} napra. Ellenőrizd, hogy valóban megújult.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} magától megújult",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Egy tétel magától megújult",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -4040,5 +4040,17 @@
   "scanHolderTitle": "لمن هذه الوثيقة؟",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "نقله Vaultara إلى {date}. تأكد من أنه تجدد فعلًا.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "تجدد {name} تلقائيًا",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "تجدد سجل تلقائيًا",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

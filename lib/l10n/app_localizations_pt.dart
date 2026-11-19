@@ -9509,4 +9509,17 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'De quem é este documento?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'O Vaultara mudou-o para $date. Confirme que foi mesmo renovado.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name renovou-se sozinho';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Um registo renovou-se sozinho';
 }

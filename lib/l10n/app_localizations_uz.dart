@@ -9503,4 +9503,17 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Bu kimning hujjati?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara uni $date sanasiga surdi. Haqiqatan yangilanganini tekshiring.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name o\'zi yangilandi';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Yozuv o\'zi yangilandi';
 }

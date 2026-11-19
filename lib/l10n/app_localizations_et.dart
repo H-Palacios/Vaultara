@@ -9508,4 +9508,17 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Kelle dokument see on?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara viis selle kuupäevale $date. Kontrolli, et see tõesti uuenes.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name uuenes ise';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Kirje uuenes ise';
 }

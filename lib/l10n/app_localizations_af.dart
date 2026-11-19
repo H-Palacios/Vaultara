@@ -9508,4 +9508,17 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Wie se dokument is dit?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara het dit na $date geskuif. Maak seker dit is regtig hernu.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name het vanself hernu';
+  }
+
+  @override
+  String get rolledTitleLocked => '\'n Rekord het vanself hernu';
 }

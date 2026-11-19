@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "Čigav je ta dokument?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ga je premaknila na {date}. Preverite, ali se je res podaljšalo.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} se je podaljšalo samo",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Zapis se je podaljšal sam",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

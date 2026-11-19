@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "یہ کس کی دستاویز ہے؟",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara نے اسے {date} پر منتقل کر دیا۔ تصدیق کریں کہ واقعی تجدید ہوئی۔",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} خود بخود تجدید ہو گیا",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "ایک ریکارڈ خود بخود تجدید ہو گیا",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

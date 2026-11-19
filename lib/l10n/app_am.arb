@@ -4040,5 +4040,17 @@
   "scanHolderTitle": "ይህ የማን ሰነድ ነው?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ወደ {date} አንቀሳቅሶታል። በእርግጥ መታደሱን ያረጋግጡ።",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} በራሱ ታድሷል",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "አንድ መዝገብ በራሱ ታድሷል",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

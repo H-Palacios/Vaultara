@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "ვისი დოკუმენტია ეს?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara-მ ის {date}-ზე გადაიტანა. შეამოწმეთ, ნამდვილად განახლდა თუ არა.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} თავად განახლდა",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "ჩანაწერი თავად განახლდა",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

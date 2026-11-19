@@ -4014,5 +4014,17 @@
   "scanHolderTitle": "De quen é este documento?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara moveuno ao {date}. Comproba que se renovou de verdade.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} renovouse só",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Un rexistro renovouse só",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -4019,5 +4019,17 @@
   "scanHolderTitle": "Чий це документ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara переніс дату на {date}. Перевірте, що поновлення справді відбулося.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} поновилося саме",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Запис поновився сам",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

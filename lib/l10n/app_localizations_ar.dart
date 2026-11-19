@@ -9760,4 +9760,17 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'لمن هذه الوثيقة؟';
+
+  @override
+  String rolledBody(Object date) {
+    return 'نقله Vaultara إلى $date. تأكد من أنه تجدد فعلًا.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return 'تجدد $name تلقائيًا';
+  }
+
+  @override
+  String get rolledTitleLocked => 'تجدد سجل تلقائيًا';
 }

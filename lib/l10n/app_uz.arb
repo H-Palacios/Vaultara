@@ -3752,5 +3752,17 @@
   "scanHolderTitle": "Bu kimning hujjati?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara uni {date} sanasiga surdi. Haqiqatan yangilanganini tekshiring.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} o'zi yangilandi",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Yozuv o'zi yangilandi",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

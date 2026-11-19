@@ -9503,4 +9503,17 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Ո՞ւմ փաստաթուղթն է սա';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara-ն այն տեղափոխեց $date։ Ստուգեք, որ իսկապես թարմացվել է։';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name-ը թարմացվեց ինքնուրույն';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Գրառումը թարմացվեց ինքնուրույն';
 }

@@ -9438,4 +9438,17 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'ဤစာရွက်စာတမ်းသည် မည်သူ့ဟာလဲ?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara က $date သို့ ရွှေ့လိုက်သည်။ တကယ် သက်တမ်းတိုးထားခြင်း ရှိမရှိ စစ်ဆေးပါ။';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name အလိုအလျောက် သက်တမ်းတိုးသွားသည်';
+  }
+
+  @override
+  String get rolledTitleLocked => 'မှတ်တမ်းတစ်ခု အလိုအလျောက် သက်တမ်းတိုးသွားသည်';
 }

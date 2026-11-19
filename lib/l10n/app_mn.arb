@@ -4020,5 +4020,17 @@
   "scanHolderTitle": "Энэ хэний баримт вэ?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara үүнийг {date} руу шилжүүллээ. Үнэхээр сунгагдсан эсэхийг шалгана уу.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} өөрөө сунгагдлаа",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Нэг бичлэг өөрөө сунгагдлаа",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

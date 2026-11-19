@@ -9589,4 +9589,17 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Al cui este acest document?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara l-a mutat la $date. Verifică dacă s-a reînnoit cu adevărat.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name s-a reînnoit singur';
+  }
+
+  @override
+  String get rolledTitleLocked => 'O înregistrare s-a reînnoit singură';
 }

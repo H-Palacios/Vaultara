@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "මෙය කාගේ ලේඛනයද?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara එය {date} වෙත ගෙන ගියේය. එය ඇත්තටම අලුත් වූ බව පරීක්ෂා කරන්න.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} තමන්ම අලුත් විය",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "වාර්තාවක් තමන්ම අලුත් විය",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

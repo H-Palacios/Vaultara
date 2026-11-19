@@ -9708,4 +9708,17 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Cé leis an doiciméad seo?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Bhog Vaultara é go $date. Seiceáil gur athnuadh é i ndáiríre.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return 'D\'athnuaigh $name é féin';
+  }
+
+  @override
+  String get rolledTitleLocked => 'D\'athnuaigh taifead é féin';
 }

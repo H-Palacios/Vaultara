@@ -9508,4 +9508,17 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Noren agiria da hau?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultarak $date datara eraman du. Egiaztatu benetan berritu dela.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name berez berritu da';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Erregistro bat berez berritu da';
 }

@@ -9440,4 +9440,17 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Dokumen siapa ini?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara mengalihkannya ke $date. Semak bahawa ia benar-benar diperbaharui.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name diperbaharui sendiri';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Satu rekod diperbaharui sendiri';
 }

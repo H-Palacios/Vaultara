@@ -9586,4 +9586,17 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Čiji je ovo dokument?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ga je pomjerila na $date. Provjerite je li zaista obnovljeno.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name se samo obnovilo';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Zapis se sam obnovio';
 }

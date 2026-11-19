@@ -9503,4 +9503,17 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'این سند مال کیست؟';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara آن را به $date منتقل کرد. مطمئن شوید واقعاً تمدید شده است.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name خودش تمدید شد';
+  }
+
+  @override
+  String get rolledTitleLocked => 'یک مورد خودش تمدید شد';
 }

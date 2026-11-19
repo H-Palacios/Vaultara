@@ -9660,4 +9660,17 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Kieno tai dokumentas?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara perkėlė į $date. Patikrinkite, ar tikrai atsinaujino.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name atsinaujino pats';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Įrašas atsinaujino pats';
 }

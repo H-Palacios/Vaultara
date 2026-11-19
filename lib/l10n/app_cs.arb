@@ -4033,5 +4033,17 @@
   "scanHolderTitle": "Čí je to doklad?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ho posunula na {date}. Ověřte, že se opravdu obnovilo.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} se obnovilo samo",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Záznam se obnovil sám",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

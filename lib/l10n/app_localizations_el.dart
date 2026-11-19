@@ -9508,4 +9508,17 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Σε ποιον ανήκει αυτό το έγγραφο;';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Το Vaultara το μετέφερε στις $date. Βεβαιωθείτε ότι ανανεώθηκε πραγματικά.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return 'Το $name ανανεώθηκε μόνο του';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Μια εγγραφή ανανεώθηκε μόνη της';
 }

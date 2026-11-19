@@ -4033,5 +4033,17 @@
   "scanHolderTitle": "এটি কার ডকুমেন্ট?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara এটি {date}-এ সরিয়েছে। সত্যিই নবায়ন হয়েছে কি না দেখে নিন।",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} নিজে থেকে নবায়ন হয়েছে",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "একটি রেকর্ড নিজে থেকে নবায়ন হয়েছে",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

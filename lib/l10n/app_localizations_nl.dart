@@ -9508,4 +9508,17 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Van wie is dit document?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara heeft het verplaatst naar $date. Controleer of het echt is verlengd.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name is vanzelf verlengd';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Een item is vanzelf verlengd';
 }

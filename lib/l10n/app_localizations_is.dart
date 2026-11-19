@@ -9502,4 +9502,17 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Hver á þetta skjal?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara færði það til $date. Athugaðu að það hafi örugglega endurnýjast.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name endurnýjaðist sjálft';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Færsla endurnýjaðist sjálf';
 }

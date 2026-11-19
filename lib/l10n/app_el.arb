@@ -4009,5 +4009,17 @@
   "scanHolderTitle": "Σε ποιον ανήκει αυτό το έγγραφο;",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Το Vaultara το μετέφερε στις {date}. Βεβαιωθείτε ότι ανανεώθηκε πραγματικά.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "Το {name} ανανεώθηκε μόνο του",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Μια εγγραφή ανανεώθηκε μόνη της",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -3995,5 +3995,17 @@
   "scanHolderTitle": "Vems dokument är det här?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara flyttade den till {date}. Kontrollera att den verkligen förnyades.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} förnyades av sig själv",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "En post förnyades av sig själv",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

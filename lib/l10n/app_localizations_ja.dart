@@ -9428,4 +9428,17 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'これは誰の書類ですか？';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara が $date に更新しました。本当に更新されたか確認してください。';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$nameが自動で更新されました';
+  }
+
+  @override
+  String get rolledTitleLocked => '記録が自動で更新されました';
 }

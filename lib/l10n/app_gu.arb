@@ -3752,5 +3752,17 @@
   "scanHolderTitle": "આ દસ્તાવેજ કોનો છે?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultaraએ તેને {date} પર ખસેડ્યું. ખરેખર રિન્યૂ થયું છે કે નહીં તપાસો.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} જાતે રિન્યૂ થયું",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "એક રેકોર્ડ જાતે રિન્યૂ થયો",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

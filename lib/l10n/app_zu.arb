@@ -3994,5 +3994,17 @@
   "scanHolderTitle": "Le dokhumenti ingekabani?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "I-Vaultara iyihambise ku-{date}. Qinisekisa ukuthi ivuselelwe ngempela.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} izivuselele",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Irekhodi izivuselele",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

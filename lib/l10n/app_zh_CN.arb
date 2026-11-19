@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "这是谁的证件？",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara 已将其顺延至 {date}。请确认确实已续期。",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} 已自动续期",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "有一条记录已自动续期",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

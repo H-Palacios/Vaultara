@@ -9502,4 +9502,17 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Бул кимдин документи?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara аны $date күнүнө жылдырды. Чындап жаңыланганын текшериңиз.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name өзү жаңыланды';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Жазуу өзү жаңыланды';
 }

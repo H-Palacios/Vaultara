@@ -9507,4 +9507,17 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Kenen asiakirja tämä on?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara siirsi sen päivään $date. Tarkista, että se todella uusiutui.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name uusiutui itsestään';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Tietue uusiutui itsestään';
 }

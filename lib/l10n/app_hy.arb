@@ -4016,5 +4016,17 @@
   "scanHolderTitle": "Ո՞ւմ փաստաթուղթն է սա",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara-ն այն տեղափոխեց {date}։ Ստուգեք, որ իսկապես թարմացվել է։",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name}-ը թարմացվեց ինքնուրույն",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Գրառումը թարմացվեց ինքնուրույն",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

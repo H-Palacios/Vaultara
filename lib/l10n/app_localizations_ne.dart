@@ -9503,4 +9503,17 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'यो कसको कागजात हो?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ले यसलाई $date मा सार्यो। साँच्चै नवीकरण भयो कि भएन जाँच्नुहोस्।';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name आफैं नवीकरण भयो';
+  }
+
+  @override
+  String get rolledTitleLocked => 'एउटा रेकर्ड आफैं नवीकरण भयो';
 }

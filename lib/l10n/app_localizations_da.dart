@@ -9508,4 +9508,17 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Hvis dokument er det?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara har flyttet den til $date. Tjek, at den virkelig er fornyet.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name er fornyet af sig selv';
+  }
+
+  @override
+  String get rolledTitleLocked => 'En post er fornyet af sig selv';
 }

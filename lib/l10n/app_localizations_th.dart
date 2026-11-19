@@ -9428,4 +9428,17 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'เอกสารนี้เป็นของใคร';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara เลื่อนไปเป็น $date แล้ว โปรดตรวจสอบว่าต่ออายุจริง';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name ต่ออายุเองแล้ว';
+  }
+
+  @override
+  String get rolledTitleLocked => 'รายการหนึ่งต่ออายุเองแล้ว';
 }

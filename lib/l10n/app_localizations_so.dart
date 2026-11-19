@@ -9502,4 +9502,17 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Dukumentigan yaa leh?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara waxay u wareejisay $date. Hubi inuu runtii cusboonaaday.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name iskiis ayuu u cusboonaaday';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Diiwaan ayaa iskiis u cusboonaaday';
 }

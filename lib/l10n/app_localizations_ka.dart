@@ -9503,4 +9503,17 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'ვისი დოკუმენტია ეს?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara-მ ის $date-ზე გადაიტანა. შეამოწმეთ, ნამდვილად განახლდა თუ არა.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name თავად განახლდა';
+  }
+
+  @override
+  String get rolledTitleLocked => 'ჩანაწერი თავად განახლდა';
 }

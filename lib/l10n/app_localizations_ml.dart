@@ -9503,4 +9503,17 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'ഇത് ആരുടെ രേഖയാണ്?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara അത് $date-ലേക്ക് മാറ്റി. ശരിക്കും പുതുക്കിയോ എന്ന് പരിശോധിക്കുക.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name തനിയെ പുതുക്കി';
+  }
+
+  @override
+  String get rolledTitleLocked => 'ഒരു രേഖ തനിയെ പുതുക്കി';
 }

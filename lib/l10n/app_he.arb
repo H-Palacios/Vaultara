@@ -4007,5 +4007,17 @@
   "scanHolderTitle": "של מי המסמך הזה?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara העביר אותו ל-{date}. בדוק שהוא באמת חודש.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} התחדש לבד",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "רשומה התחדשה לבד",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

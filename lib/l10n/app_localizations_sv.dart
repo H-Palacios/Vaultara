@@ -9507,4 +9507,17 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Vems dokument är det här?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara flyttade den till $date. Kontrollera att den verkligen förnyades.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name förnyades av sig själv';
+  }
+
+  @override
+  String get rolledTitleLocked => 'En post förnyades av sig själv';
 }

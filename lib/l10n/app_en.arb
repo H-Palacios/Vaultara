@@ -11799,5 +11799,17 @@
   "scanHolderTitle": "Whose document is this?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara moved it to {date}. Check that it really renewed.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} renewed by itself",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "A record renewed by itself",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -4002,5 +4002,17 @@
   "scanHolderTitle": "ئەم بەڵگەنامەیە هی کێیە؟",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara بردی بۆ {date}. دڵنیابە کە بەڕاستی نوێ بووەتەوە.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} خۆی نوێ بووەوە",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "تۆمارێک خۆی نوێ بووەوە",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

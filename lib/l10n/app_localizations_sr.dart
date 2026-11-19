@@ -9587,6 +9587,19 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Чији је ово документ?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara га је померила на $date. Проверите да ли је стварно обновљено.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name се само обновило';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Запис се сам обновио';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -19171,6 +19184,19 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get scanHolderTitle => 'Чији је ово документ?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara га је померила на $date. Проверите да ли је стварно обновљено.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name се само обновило';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Запис се сам обновио';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -28751,4 +28777,17 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get scanHolderTitle => 'Čiji je ovo dokument?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara ga je pomerila na $date. Proverite da li je stvarno obnovljeno.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name se samo obnovilo';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Zapis se sam obnovio';
 }

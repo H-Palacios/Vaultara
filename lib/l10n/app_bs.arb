@@ -4033,5 +4033,17 @@
   "scanHolderTitle": "Čiji je ovo dokument?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ga je pomjerila na {date}. Provjerite je li zaista obnovljeno.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} se samo obnovilo",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Zapis se sam obnovio",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

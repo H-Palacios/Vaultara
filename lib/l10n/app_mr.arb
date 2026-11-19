@@ -3752,5 +3752,17 @@
   "scanHolderTitle": "हा दस्तऐवज कोणाचा आहे?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara ने ते {date} वर नेले. खरंच नूतनीकरण झाले का ते तपासा.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} आपोआप नूतनीकृत झाले",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "एक नोंद आपोआप नूतनीकृत झाली",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

@@ -4007,5 +4007,17 @@
   "scanHolderTitle": "Di chi è questo documento?",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara l'ha spostato al {date}. Controlla che sia stato davvero rinnovato.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} si è rinnovato da solo",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "Un elemento si è rinnovato da solo",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

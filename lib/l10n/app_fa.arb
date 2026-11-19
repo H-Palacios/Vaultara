@@ -4014,5 +4014,17 @@
   "scanHolderTitle": "این سند مال کیست؟",
   "@scanHolderTitle": {
     "description": "scanHolderTitle"
+  },
+  "rolledBody": "Vaultara آن را به {date} منتقل کرد. مطمئن شوید واقعاً تمدید شده است.",
+  "@rolledBody": {
+    "description": "rolledBody"
+  },
+  "rolledTitle": "{name} خودش تمدید شد",
+  "@rolledTitle": {
+    "description": "rolledTitle"
+  },
+  "rolledTitleLocked": "یک مورد خودش تمدید شد",
+  "@rolledTitleLocked": {
+    "description": "rolledTitleLocked"
   }
 }

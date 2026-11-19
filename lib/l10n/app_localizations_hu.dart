@@ -9503,4 +9503,17 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Kié ez az okmány?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'A Vaultara áttette $date napra. Ellenőrizd, hogy valóban megújult.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name magától megújult';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Egy tétel magától megújult';
 }

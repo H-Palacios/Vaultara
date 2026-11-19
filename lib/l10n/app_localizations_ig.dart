@@ -9451,4 +9451,17 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get scanHolderTitle => 'Akwụkwọ onye bụ nke a?';
+
+  @override
+  String rolledBody(Object date) {
+    return 'Vaultara bugara ya na $date. Lelee na e megharịrị ya n\'ezie.';
+  }
+
+  @override
+  String rolledTitle(Object name) {
+    return '$name meghariri onwe ya';
+  }
+
+  @override
+  String get rolledTitleLocked => 'Ndekọ meghariri onwe ya';
 }
