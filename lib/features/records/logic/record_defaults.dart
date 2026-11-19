@@ -22,12 +22,12 @@ class RecordDefaults {
   };
 
   static const Map<String, int> _repeatByGroup = <String, int>{
-    'vehicle_registrations': 12,
+    // A licence disc does not renew by itself, and travel cover is usually
+    // bought per trip, so neither repeats by default.
     'vehicle_insurances': 12,
     'property_insurances': 12,
     'life_insurances': 12,
     'health_insurances': 12,
-    'travel_insurances': 12,
     'lease_agreements': 12,
   };
 
@@ -41,10 +41,10 @@ class RecordDefaults {
   };
 
   static RecordDefaults forGroup(String groupKey) => RecordDefaults(
-        leadDays: _leadByGroup[groupKey],
-        repeatMonths: _repeatByGroup[groupKey],
-        inWallet: _walletGroups.contains(groupKey),
-      );
+    leadDays: _leadByGroup[groupKey],
+    repeatMonths: _repeatByGroup[groupKey],
+    inWallet: _walletGroups.contains(groupKey),
+  );
 
   bool get hasAny => leadDays != null || repeatMonths != null || inWallet;
 }

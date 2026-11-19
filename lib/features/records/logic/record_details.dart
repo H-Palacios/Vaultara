@@ -60,6 +60,28 @@ class RecordDetails {
         'warranties': RecordProviderKind.storeBrand,
       };
 
+  /// Groups whose records can renew by themselves (a debit order, a
+  /// subscription), where Repeats makes sense.
+  static const Set<String> _renewing = <String>{
+    'vehicle_insurances',
+    'property_insurances',
+    'life_insurances',
+    'health_insurances',
+    'travel_insurances',
+    'medical_aid_cards',
+    'gym_memberships',
+    'club_memberships',
+    'subscriptions',
+    'lease_agreements',
+  };
+
+  /// True when records in this group can renew by themselves, and for the
+  /// user's own groups.
+  static bool renewsByItself(String? group) {
+    if (group == null) return false;
+    return _renewing.contains(group) || _own(group);
+  }
+
   /// Every built-in group, so a group outside it is one of the user's own.
   static const Set<String> _builtIn = <String>{
     ..._issued,

@@ -42,9 +42,10 @@ class EditorRepeatField extends StatelessWidget {
           : null,
       decoration: AppInputDecorations.field(
         context,
-        labelText: loc.repeatLabel,
+        labelText: loc.renewsLabel,
+        showLabel: true,
         prefixIcon: const Icon(Icons.repeat_rounded),
-      ).copyWith(helperText: loc.repeatHelper, helperMaxLines: 2),
+      ).copyWith(helperText: loc.renewsHelper, helperMaxLines: 3),
     );
   }
 }

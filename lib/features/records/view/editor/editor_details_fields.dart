@@ -73,6 +73,7 @@ class EditorCountryField extends StatelessWidget {
               AppInputDecorations.field(
                 context,
                 labelText: '${_label(loc)} ${loc.detailsOptional}',
+                showLabel: true,
                 prefixIcon: const Icon(Icons.public_rounded),
               ).copyWith(
                 hintText: loc.detailsChooseCountry,
@@ -226,6 +227,7 @@ class _EditorProviderFieldState extends State<EditorProviderField> {
                     context,
                     labelText:
                         '${label(loc, widget.kind)} ${loc.detailsOptional}',
+                    showLabel: true,
                     prefixIcon: Icon(
                       widget.kind == RecordProviderKind.bank
                           ? Icons.account_balance_rounded
@@ -315,8 +317,10 @@ class _EditorReferenceFieldState extends State<EditorReferenceField> {
             AppInputDecorations.field(
               context,
               labelText: '${loc.detailsReference} ${loc.detailsOptional}',
+              showLabel: true,
               prefixIcon: const Icon(Icons.tag_rounded),
             ).copyWith(
+              hintText: loc.detailsReferenceHint,
               helperText: loc.detailsReferenceHelper,
               helperMaxLines: 3,
               counterText: '',

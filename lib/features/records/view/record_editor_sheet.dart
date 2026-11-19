@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
@@ -565,7 +566,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
 
     final ScanOutcome read = await _readOnlineIfUnsure(outcome);
     if (!mounted) return;
-    _applyScan(read);
+    unawaited(_applyScan(read));
   }
 
   /// Sends the text of the photo, never the photo, to be read online when the
@@ -668,7 +669,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     return ok == true;
   }
 
-  void _applyScan(ScanOutcome outcome) {
+  Future<void> _applyScan(ScanOutcome outcome) async {
     final AppLocalizations loc = AppLocalizations.of(context)!;
     final ScanParseResult r = outcome.result;
 
@@ -823,6 +824,14 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       setState(() => _applyGroupDefaults(appliedGroup));
     }
 
+    // The name on the document matches nobody: ask whose it is rather than
+    // quietly saving it as the user's own.
+    if (holderUnknown && r.hasHolderName && !isEditMode) {
+      final known = await _offerAddHolder(r);
+      if (!mounted) return;
+      if (known) holderUnknown = false;
+    }
+
     if (appliedExpiry != null) {
       _offerScanUpdate(
         outcome,
@@ -830,6 +839,65 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         holderUnknown: holderUnknown,
       );
     }
+  }
+
+  /// "James Whitaker" from "JAMES" and "WHITAKER".
+  static String _personName(String? given, String? surname) {
+    String tidy(String? part) => (part ?? '')
+        .split(RegExp(r'\s+'))
+        .where((w) => w.isNotEmpty)
+        .map((w) => w[0].toUpperCase() + w.substring(1).toLowerCase())
+        .join(' ');
+    return '${tidy(given)} ${tidy(surname)}'.trim();
+  }
+
+  /// Asks whose document this is when the scanned name matches nobody:
+  /// add that person to People (and make them the holder), or keep it as
+  /// the user's own. True when the holder is settled.
+  Future<bool> _offerAddHolder(ScanParseResult r) async {
+    final loc = AppLocalizations.of(context)!;
+    final name = _personName(r.holderGivenNames, r.holderSurname);
+    if (name.isEmpty) return false;
+    final choice = await showDialog<String>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        icon: const Icon(Icons.person_add_alt_1_rounded),
+        title: Text(loc.scanHolderTitle),
+        content: Text(loc.scanHolderBody(name)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(dialogContext, 'mine'),
+            child: Text(loc.scanHolderMine),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(dialogContext, 'add'),
+            child: Text(loc.scanHolderAdd(name)),
+          ),
+        ],
+      ),
+    );
+    if (!mounted || choice == null) return false;
+    if (choice == 'mine') {
+      setState(() => holderId = null);
+      return true;
+    }
+    PlanTier tier;
+    try {
+      tier = await PlanRepository.tierStream().first.timeout(
+        const Duration(seconds: 6),
+      );
+    } catch (_) {
+      tier = PlanTier.free;
+    }
+    if (!mounted) return false;
+    if (!PeopleRepository.canAdd(tier)) {
+      ActionFeedbackSnackbar.showInfo(context, loc.assistantPeopleLimit);
+      return false;
+    }
+    final person = await PeopleRepository.add(name, tier: tier);
+    if (!mounted || person == null) return false;
+    setState(() => holderId = person.id);
+    return true;
   }
 
   void _applyGroupDefaults(String? groupKey) {
@@ -1238,7 +1306,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     }
     final ScanOutcome read = await _readOnlineIfUnsure(outcome);
     if (!mounted) return;
-    _applyScan(read);
+    unawaited(_applyScan(read));
     if (isPdf && outcome.failed && mounted) {
       setState(() {
         scanBanner = null;
@@ -1712,15 +1780,20 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              EditorRepeatField(
-                value: repeatMonths,
-                enabled: !isSaving,
-                onChanged: (value) => setState(() {
-                  _repeatTouched = true;
-                  repeatMonths = value;
-                }),
-              ),
-              const SizedBox(height: 10),
+              // Only for things that renew by themselves (subscriptions,
+              // policies, memberships), or a record that already uses it.
+              if (repeatMonths != null ||
+                  RecordDetails.renewsByItself(selectedSubcategory)) ...[
+                EditorRepeatField(
+                  value: repeatMonths,
+                  enabled: !isSaving,
+                  onChanged: (value) => setState(() {
+                    _repeatTouched = true;
+                    repeatMonths = value;
+                  }),
+                ),
+                const SizedBox(height: 10),
+              ],
               EditorLeadField(
                 value: leadDays,
                 enabled: !isSaving,
