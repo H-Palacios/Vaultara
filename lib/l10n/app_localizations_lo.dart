@@ -2548,7 +2548,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get recordLockTitle => 'ລັອກບັນທຶກນີ້';
 
   @override
-  String get recordLockSubtitle => 'ຂໍລາຍນິ້ວມື, ໃບໜ້າ ຫຼື ການລັອກໜ້າຈໍ ກ່ອນສະແດງລາຍລະອຽດ';
+  String get recordLockSubtitle => 'ມີແຕ່ທ່ານເທົ່ານັ້ນທີ່ເປີດໄດ້ ດ້ວຍລາຍນິ້ວມື, ໃບໜ້າ ຫຼື PIN ໂທລະສັບ.';
 
   @override
   String get recordLockReason => 'ປົດລັອກບັນທຶກນີ້';

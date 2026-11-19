@@ -2590,7 +2590,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get recordLockTitle => 'Cuir glas ar an taifead seo';
 
   @override
-  String get recordLockSubtitle => 'Iarr do mhéarlorg, d’aghaidh nó glas an scáileáin sula dtaispeántar a shonraí';
+  String get recordLockSubtitle => 'Is tusa amháin is féidir é a oscailt, le do mhéarlorg, d\'aghaidh nó UAP an ghutháin.';
 
   @override
   String get recordLockReason => 'Díghlasáil an taifead seo';

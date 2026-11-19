@@ -2551,7 +2551,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get recordLockTitle => 'Funga rekodi hii';
 
   @override
-  String get recordLockSubtitle => 'Omba alama ya kidole, uso au kufuli ya skrini kabla ya kuonyesha maelezo yake';
+  String get recordLockSubtitle => 'Ni wewe tu unayeweza kuifungua, kwa alama ya kidole, uso au PIN ya simu.';
 
   @override
   String get recordLockReason => 'Fungua rekodi hii';

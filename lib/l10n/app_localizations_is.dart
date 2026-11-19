@@ -2550,7 +2550,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get recordLockTitle => 'Læsa þessari færslu';
 
   @override
-  String get recordLockSubtitle => 'Biðja um fingrafar, andlit eða skjálás áður en upplýsingar hennar eru sýndar';
+  String get recordLockSubtitle => 'Aðeins þú getur opnað það, með fingrafari, andliti eða PIN-númeri símans.';
 
   @override
   String get recordLockReason => 'Opna þessa færslu';

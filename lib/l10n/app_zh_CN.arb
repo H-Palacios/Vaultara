@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "您的证件已就绪。打开行程查看清单。",
   "travelTripLimit": "最多可保存 {count} 个行程。删除旧行程后即可添加新行程。",
   "recordLockTitle": "锁定此记录",
-  "recordLockSubtitle": "显示详情前需要验证指纹、面容或屏幕锁",
+  "recordLockSubtitle": "只有你能打开，需要指纹、面容或手机 PIN 码。",
   "recordLockReason": "解锁此记录",
   "recordLockNoDeviceLock": "请先在手机上设置屏幕锁。",
   "repeatLabel": "重复",

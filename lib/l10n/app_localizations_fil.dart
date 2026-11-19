@@ -2549,7 +2549,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get recordLockTitle => 'I-lock ang rekord na ito';
 
   @override
-  String get recordLockSubtitle => 'Hingin ang iyong fingerprint, mukha o screen lock bago ipakita ang mga detalye nito';
+  String get recordLockSubtitle => 'Ikaw lang ang makakapagbukas nito, gamit ang fingerprint, mukha o PIN ng phone.';
 
   @override
   String get recordLockReason => 'I-unlock ang rekord na ito';

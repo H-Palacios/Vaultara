@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Je documenten zijn klaar. Open je reis om de lijst te bekijken.",
   "travelTripLimit": "Je kunt tot {count} reizen opslaan. Verwijder een oude reis om een nieuwe toe te voegen.",
   "recordLockTitle": "Dit record vergrendelen",
-  "recordLockSubtitle": "Vraag om je vingerafdruk, gezicht of schermvergrendeling voordat de details worden getoond",
+  "recordLockSubtitle": "Alleen jij kunt het openen, met je vingerafdruk, gezicht of telefoonpincode.",
   "recordLockReason": "Dit record ontgrendelen",
   "recordLockNoDeviceLock": "Stel eerst een schermvergrendeling in op je telefoon.",
   "repeatLabel": "Herhaling",

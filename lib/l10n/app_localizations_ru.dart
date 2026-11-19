@@ -2588,7 +2588,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get recordLockTitle => 'Заблокировать эту запись';
 
   @override
-  String get recordLockSubtitle => 'Запрашивать отпечаток пальца, лицо или блокировку экрана перед показом подробностей';
+  String get recordLockSubtitle => 'Открыть его можете только вы — по отпечатку пальца, лицу или PIN-коду телефона.';
 
   @override
   String get recordLockReason => 'Разблокируйте эту запись';

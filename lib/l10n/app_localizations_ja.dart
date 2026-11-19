@@ -2536,7 +2536,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get recordLockTitle => 'この記録をロック';
 
   @override
-  String get recordLockSubtitle => '詳細を表示する前に指紋、顔、または画面ロックを求めます';
+  String get recordLockSubtitle => '開けるのはあなただけです。指紋、顔、またはスマホのPINで開きます。';
 
   @override
   String get recordLockReason => 'この記録のロックを解除';

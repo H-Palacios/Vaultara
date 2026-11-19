@@ -999,7 +999,7 @@
   "travelReminderBodyOk": "Dokumentet tuaja janë gati. Hapni udhëtimin për të kontrolluar listën.",
   "travelTripLimit": "Mund të ruani deri në {count} udhëtime. Fshini një udhëtim të vjetër për të shtuar një të ri.",
   "recordLockTitle": "Kyç këtë regjistrim",
-  "recordLockSubtitle": "Kërko gjurmën e gishtit, fytyrën ose kyçjen e ekranit para se të shfaqen detajet",
+  "recordLockSubtitle": "Vetëm ti mund ta hapësh, me shenjën e gishtit, fytyrën ose PIN-in e telefonit.",
   "recordLockReason": "Shkyç këtë regjistrim",
   "recordLockNoDeviceLock": "Fillimisht vendosni një kyçje ekrani në telefonin tuaj.",
   "repeatLabel": "Përsëritet",

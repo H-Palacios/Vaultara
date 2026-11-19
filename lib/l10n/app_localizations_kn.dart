@@ -2551,7 +2551,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get recordLockTitle => 'ಈ ದಾಖಲೆಯನ್ನು ಲಾಕ್ ಮಾಡಿ';
 
   @override
-  String get recordLockSubtitle => 'ವಿವರಗಳನ್ನು ತೋರಿಸುವ ಮೊದಲು ನಿಮ್ಮ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್, ಮುಖ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಕೇಳಿ';
+  String get recordLockSubtitle => 'ನೀವು ಮಾತ್ರ ಇದನ್ನು ತೆರೆಯಬಹುದು, ಬೆರಳಚ್ಚು, ಮುಖ ಅಥವಾ ಫೋನ್ PIN ಮೂಲಕ.';
 
   @override
   String get recordLockReason => 'ಈ ದಾಖಲೆಯನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ';

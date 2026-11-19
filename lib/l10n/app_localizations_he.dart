@@ -2578,7 +2578,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get recordLockTitle => 'נעילת הרשומה הזו';
 
   @override
-  String get recordLockSubtitle => 'בקשת טביעת אצבע, זיהוי פנים או נעילת מסך לפני הצגת הפרטים';
+  String get recordLockSubtitle => 'רק אתה יכול לפתוח אותו, בטביעת אצבע, בזיהוי פנים או בקוד הטלפון.';
 
   @override
   String get recordLockReason => 'בטל את נעילת הרשומה הזו';

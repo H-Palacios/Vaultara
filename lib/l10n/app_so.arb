@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Dukumentiyadaadu waa diyaar. Fur safarkaaga si aad u hubiso liiska.",
   "travelTripLimit": "Waxaad kaydin kartaa ilaa {count} safar. Tirtir safar hore si aad mid cusub ugu darto.",
   "recordLockTitle": "Quful diiwaankan",
-  "recordLockSubtitle": "Weydii farahaaga, wejigaaga ama qufulka shaashadda ka hor inta aan faahfaahintiisa la muujin",
+  "recordLockSubtitle": "Adiga oo keliya ayaa furi kara, faraha, wejiga ama PIN-ka taleefanka.",
   "recordLockReason": "Fur diiwaankan",
   "recordLockNoDeviceLock": "Marka hore qufulka shaashadda ku samee taleefankaaga.",
   "repeatLabel": "Ku celcelin",

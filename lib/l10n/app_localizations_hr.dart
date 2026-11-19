@@ -2564,7 +2564,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get recordLockTitle => 'Zaključaj ovaj zapis';
 
   @override
-  String get recordLockSubtitle => 'Traži otisak prsta, lice ili zaključavanje zaslona prije prikaza pojedinosti';
+  String get recordLockSubtitle => 'Samo ga vi možete otvoriti, otiskom prsta, licem ili PIN-om telefona.';
 
   @override
   String get recordLockReason => 'Otključajte ovaj zapis';

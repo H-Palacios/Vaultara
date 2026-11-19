@@ -2551,7 +2551,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get recordLockTitle => 'Quful diiwaankan';
 
   @override
-  String get recordLockSubtitle => 'Weydii farahaaga, wejigaaga ama qufulka shaashadda ka hor inta aan faahfaahintiisa la muujin';
+  String get recordLockSubtitle => 'Adiga oo keliya ayaa furi kara, faraha, wejiga ama PIN-ka taleefanka.';
 
   @override
   String get recordLockReason => 'Fur diiwaankan';

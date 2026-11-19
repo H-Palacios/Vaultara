@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Dokumenta dine er klare. Opne reisa for å sjekke lista.",
   "travelTripLimit": "Du kan lagre opptil {count} reiser. Slett ei gammal reise for å leggje til ei ny.",
   "recordLockTitle": "Lås denne oppføringa",
-  "recordLockSubtitle": "Be om fingeravtrykk, andlet eller skjermlås før detaljane blir viste",
+  "recordLockSubtitle": "Berre du kan opne han, med fingeravtrykk, ansikt eller PIN-koden på telefonen.",
   "recordLockReason": "Lås opp denne oppføringa",
   "recordLockNoDeviceLock": "Set opp skjermlås på telefonen først.",
   "repeatLabel": "Gjentek seg",

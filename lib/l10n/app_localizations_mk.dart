@@ -2549,7 +2549,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get recordLockTitle => 'Заклучи го овој запис';
 
   @override
-  String get recordLockSubtitle => 'Барај отпечаток од прст, лице или заклучување на екранот пред да се прикажат деталите';
+  String get recordLockSubtitle => 'Само вие можете да го отворите, со отпечаток, лице или PIN на телефонот.';
 
   @override
   String get recordLockReason => 'Отклучи го овој запис';

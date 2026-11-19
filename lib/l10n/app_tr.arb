@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Belgeleriniz hazır. Listeyi kontrol etmek için seyahatinizi açın.",
   "travelTripLimit": "En fazla {count} seyahat kaydedebilirsiniz. Yeni bir seyahat eklemek için eski bir seyahati silin.",
   "recordLockTitle": "Bu kaydı kilitle",
-  "recordLockSubtitle": "Ayrıntıları göstermeden önce parmak izi, yüz veya ekran kilidi iste",
+  "recordLockSubtitle": "Yalnızca siz açabilirsiniz; parmak izi, yüz veya telefon PIN'i ile.",
   "recordLockReason": "Bu kaydın kilidini açın",
   "recordLockNoDeviceLock": "Önce telefonunuzda bir ekran kilidi ayarlayın.",
   "repeatLabel": "Tekrar",

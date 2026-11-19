@@ -2548,7 +2548,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get recordLockTitle => 'Kunci rekod ini';
 
   @override
-  String get recordLockSubtitle => 'Minta cap jari, wajah atau kunci skrin anda sebelum menunjukkan butirannya';
+  String get recordLockSubtitle => 'Hanya anda yang boleh membukanya, dengan cap jari, wajah atau PIN telefon.';
 
   @override
   String get recordLockReason => 'Buka kunci rekod ini';

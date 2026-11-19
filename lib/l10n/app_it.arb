@@ -990,7 +990,7 @@
   "travelReminderBodyOk": "I tuoi documenti sono pronti. Apri il viaggio per controllare la lista.",
   "travelTripLimit": "Puoi salvare fino a {count} viaggi. Elimina un viaggio vecchio per aggiungerne uno nuovo.",
   "recordLockTitle": "Blocca questo record",
-  "recordLockSubtitle": "Chiedi impronta, volto o blocco schermo prima di mostrarne i dettagli",
+  "recordLockSubtitle": "Solo tu puoi aprirlo, con impronta, volto o PIN del telefono.",
   "recordLockReason": "Sblocca questo record",
   "recordLockNoDeviceLock": "Prima imposta un blocco schermo sul telefono.",
   "repeatLabel": "Ripetizione",

@@ -2551,7 +2551,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get recordLockTitle => 'මෙම වාර්තාව අගුළු දමන්න';
 
   @override
-  String get recordLockSubtitle => 'විස්තර පෙන්වීමට පෙර ඔබේ ඇඟිලි සලකුණ, මුහුණ හෝ තිර අගුල ඉල්ලන්න';
+  String get recordLockSubtitle => 'එය විවෘත කළ හැක්කේ ඔබට පමණි, ඇඟිලි සලකුණ, මුහුණ හෝ දුරකථන PIN මගින්.';
 
   @override
   String get recordLockReason => 'මෙම වාර්තාව අගුළු හරින්න';

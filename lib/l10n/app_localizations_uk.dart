@@ -2586,7 +2586,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get recordLockTitle => 'Заблокувати цей запис';
 
   @override
-  String get recordLockSubtitle => 'Запитувати відбиток пальця, обличчя або блокування екрана перед показом подробиць';
+  String get recordLockSubtitle => 'Відкрити його можете лише ви — відбитком пальця, обличчям або PIN-кодом телефона.';
 
   @override
   String get recordLockReason => 'Розблокуйте цей запис';

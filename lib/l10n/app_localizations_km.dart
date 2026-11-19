@@ -2546,7 +2546,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get recordLockTitle => 'ចាក់សោកំណត់ត្រានេះ';
 
   @override
-  String get recordLockSubtitle => 'សុំស្នាមម្រាមដៃ មុខ ឬការចាក់សោអេក្រង់ មុនពេលបង្ហាញព័ត៌មានលម្អិត';
+  String get recordLockSubtitle => 'មានតែអ្នកទេដែលអាចបើកវាបាន ដោយស្នាមម្រាមដៃ មុខ ឬ PIN ទូរសព្ទ។';
 
   @override
   String get recordLockReason => 'ដោះសោកំណត់ត្រានេះ';

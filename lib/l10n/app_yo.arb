@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Àwọn ìwé rẹ ti ṣetán. Ṣí ìrìn àjò rẹ láti ṣàyẹ̀wò àkọsílẹ̀ náà.",
   "travelTripLimit": "O lè fi ìrìn àjò {count} pamọ́ ní pọ̀jù. Pa ìrìn àjò àtijọ́ kan rẹ́ láti ṣafikun tuntun.",
   "recordLockTitle": "Tii igbasilẹ yii pa",
-  "recordLockSubtitle": "Béèrè ìka ọwọ́ rẹ, ojú rẹ tàbí titiipa ojú-iboju kí o tó fi àwọn àlàyé rẹ̀ hàn",
+  "recordLockSubtitle": "Ìwọ nìkan ló lè ṣí i, pẹ̀lú àtẹ̀ ìka, ojú tàbí PIN fóònù rẹ.",
   "recordLockReason": "Ṣí igbasilẹ yii",
   "recordLockNoDeviceLock": "Kọ́kọ́ ṣètò titiipa ojú-iboju lórí fóònù rẹ.",
   "repeatLabel": "Ìtúnṣẹlẹ̀",

@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Dokumen anda sudah sedia. Buka perjalanan anda untuk menyemak senarai.",
   "travelTripLimit": "Anda boleh menyimpan sehingga {count} perjalanan. Padam perjalanan lama untuk menambah yang baharu.",
   "recordLockTitle": "Kunci rekod ini",
-  "recordLockSubtitle": "Minta cap jari, wajah atau kunci skrin anda sebelum menunjukkan butirannya",
+  "recordLockSubtitle": "Hanya anda yang boleh membukanya, dengan cap jari, wajah atau PIN telefon.",
   "recordLockReason": "Buka kunci rekod ini",
   "recordLockNoDeviceLock": "Sediakan kunci skrin pada telefon anda dahulu.",
   "repeatLabel": "Ulangan",

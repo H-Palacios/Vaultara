@@ -2551,7 +2551,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get recordLockTitle => 'Бұл жазбаны құлыптау';
 
   @override
-  String get recordLockSubtitle => 'Мәліметтерін көрсетпес бұрын саусақ ізін, бетті не экран құлпын сұрау';
+  String get recordLockSubtitle => 'Оны тек сіз аша аласыз, саусақ ізімен, бетпен немесе телефон PIN-кодымен.';
 
   @override
   String get recordLockReason => 'Бұл жазбаның құлпын ашу';

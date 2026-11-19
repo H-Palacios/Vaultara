@@ -2580,7 +2580,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get recordLockTitle => 'Užrakinti šį įrašą';
 
   @override
-  String get recordLockSubtitle => 'Prieš rodant išsamią informaciją prašyti piršto atspaudo, veido ar ekrano užrakto';
+  String get recordLockSubtitle => 'Atidaryti galite tik jūs, piršto atspaudu, veidu ar telefono PIN kodu.';
 
   @override
   String get recordLockReason => 'Atrakinti šį įrašą';

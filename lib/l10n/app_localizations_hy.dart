@@ -2551,7 +2551,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get recordLockTitle => 'Կողպել այս գրառումը';
 
   @override
-  String get recordLockSubtitle => 'Մանրամասները ցուցադրելուց առաջ պահանջել մատնահետք, դեմք կամ էկրանի կողպում';
+  String get recordLockSubtitle => 'Միայն դուք կարող եք այն բացել՝ մատնահետքով, դեմքով կամ հեռախոսի PIN-ով։';
 
   @override
   String get recordLockReason => 'Ապակողպեք այս գրառումը';

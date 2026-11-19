@@ -1023,7 +1023,7 @@
   "travelReminderBodyOk": "Jou dokumente is gereed. Maak jou reis oop om die lys na te gaan.",
   "travelTripLimit": "Jy kan tot {count} reise stoor. Vee 'n ou reis uit om 'n nuwe een by te voeg.",
   "recordLockTitle": "Sluit hierdie rekord",
-  "recordLockSubtitle": "Vra vir jou vingerafdruk, gesig of skermslot voordat die besonderhede gewys word",
+  "recordLockSubtitle": "Net jy kan dit oopmaak, met jou vingerafdruk, gesig of foon-PIN.",
   "recordLockReason": "Ontsluit hierdie rekord",
   "recordLockNoDeviceLock": "Stel eers 'n skermslot op jou foon op.",
   "repeatLabel": "Herhaal",

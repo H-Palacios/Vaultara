@@ -997,7 +997,7 @@
   "travelReminderBodyOk": "書類の準備ができています。旅行を開いてリストを確認しましょう。",
   "travelTripLimit": "旅行は最大{count}件まで保存できます。新しい旅行を追加するには、古い旅行を削除してください。",
   "recordLockTitle": "この記録をロック",
-  "recordLockSubtitle": "詳細を表示する前に指紋、顔、または画面ロックを求めます",
+  "recordLockSubtitle": "開けるのはあなただけです。指紋、顔、またはスマホのPINで開きます。",
   "recordLockReason": "この記録のロックを解除",
   "recordLockNoDeviceLock": "先にスマートフォンで画面ロックを設定してください。",
   "repeatLabel": "繰り返し",

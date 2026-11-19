@@ -2551,7 +2551,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get recordLockTitle => 'ئەم تۆمارە قفڵ بکە';
 
   @override
-  String get recordLockSubtitle => 'پێش پیشاندانی وردەکارییەکانی، نیشانەی پەنجە، ڕوخسار یان قفڵی شاشە داوا بکە';
+  String get recordLockSubtitle => 'تەنها تۆ دەتوانیت بیکەیتەوە، بە پەنجەمۆر، ڕوخسار یان PINی مۆبایل.';
 
   @override
   String get recordLockReason => 'قفڵی ئەم تۆمارە بکەرەوە';

@@ -1016,7 +1016,7 @@
   "travelReminderBodyOk": "Els teus documents estan a punt. Obre el viatge per revisar la llista.",
   "travelTripLimit": "Pots desar fins a {count} viatges. Suprimeix un viatge antic per afegir-ne un de nou.",
   "recordLockTitle": "Bloqueja aquest registre",
-  "recordLockSubtitle": "Demana l'empremta digital, la cara o el bloqueig de pantalla abans de mostrar-ne els detalls",
+  "recordLockSubtitle": "Només tu el pots obrir, amb l'empremta, la cara o el PIN del telèfon.",
   "recordLockReason": "Desbloqueja aquest registre",
   "recordLockNoDeviceLock": "Primer configura un bloqueig de pantalla al telèfon.",
   "repeatLabel": "Es repeteix",

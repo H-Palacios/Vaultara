@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Twoje dokumenty są gotowe. Otwórz podróż, aby sprawdzić listę.",
   "travelTripLimit": "Możesz zapisać do {count} podróży. Usuń starą podróż, aby dodać nową.",
   "recordLockTitle": "Zablokuj ten rekord",
-  "recordLockSubtitle": "Pytaj o odcisk palca, twarz lub blokadę ekranu przed pokazaniem szczegółów",
+  "recordLockSubtitle": "Tylko ty możesz go otworzyć, odciskiem palca, twarzą lub PIN-em telefonu.",
   "recordLockReason": "Odblokuj ten rekord",
   "recordLockNoDeviceLock": "Najpierw ustaw blokadę ekranu w telefonie.",
   "repeatLabel": "Powtarzanie",

@@ -2536,7 +2536,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get recordLockTitle => 'ล็อกรายการนี้';
 
   @override
-  String get recordLockSubtitle => 'ขอลายนิ้วมือ ใบหน้า หรือการล็อกหน้าจอก่อนแสดงรายละเอียด';
+  String get recordLockSubtitle => 'มีเพียงคุณที่เปิดได้ ด้วยลายนิ้วมือ ใบหน้า หรือ PIN ของโทรศัพท์';
 
   @override
   String get recordLockReason => 'ปลดล็อกรายการนี้';

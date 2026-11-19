@@ -997,7 +997,7 @@
   "travelReminderBodyOk": "Vos documents sont prêts. Ouvrez votre voyage pour vérifier la liste.",
   "travelTripLimit": "Vous pouvez enregistrer jusqu’à {count} voyages. Supprimez un ancien voyage pour en ajouter un nouveau.",
   "recordLockTitle": "Verrouiller cet enregistrement",
-  "recordLockSubtitle": "Demander votre empreinte digitale, votre visage ou le verrouillage de l’écran avant d’afficher ses détails",
+  "recordLockSubtitle": "Vous seul pouvez l'ouvrir, avec votre empreinte, votre visage ou le code PIN du téléphone.",
   "recordLockReason": "Déverrouillez cet enregistrement",
   "recordLockNoDeviceLock": "Configurez d’abord un verrouillage de l’écran sur votre téléphone.",
   "repeatLabel": "Répétition",

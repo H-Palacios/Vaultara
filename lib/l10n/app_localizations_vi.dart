@@ -2548,7 +2548,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get recordLockTitle => 'Khóa bản ghi này';
 
   @override
-  String get recordLockSubtitle => 'Yêu cầu vân tay, khuôn mặt hoặc khóa màn hình trước khi hiện chi tiết';
+  String get recordLockSubtitle => 'Chỉ bạn mới mở được, bằng vân tay, khuôn mặt hoặc mã PIN điện thoại.';
 
   @override
   String get recordLockReason => 'Mở khóa bản ghi này';

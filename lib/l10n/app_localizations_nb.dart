@@ -2551,7 +2551,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get recordLockTitle => 'Lås denne oppføringen';
 
   @override
-  String get recordLockSubtitle => 'Be om fingeravtrykk, ansikt eller skjermlås før detaljene vises';
+  String get recordLockSubtitle => 'Bare du kan åpne den, med fingeravtrykk, ansikt eller telefonens PIN-kode.';
 
   @override
   String get recordLockReason => 'Lås opp denne oppføringen';

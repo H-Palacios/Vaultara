@@ -2579,7 +2579,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get recordLockTitle => 'Zakleni ta zapis';
 
   @override
-  String get recordLockSubtitle => 'Pred prikazom podrobnosti zahtevaj prstni odtis, obraz ali zaklepanje zaslona';
+  String get recordLockSubtitle => 'Odprete ga lahko samo vi, s prstnim odtisom, obrazom ali PIN-om telefona.';
 
   @override
   String get recordLockReason => 'Odklenite ta zapis';

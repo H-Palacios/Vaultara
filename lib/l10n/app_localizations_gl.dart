@@ -2551,7 +2551,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get recordLockTitle => 'Bloquear este rexistro';
 
   @override
-  String get recordLockSubtitle => 'Pide a túa pegada dixital, a cara ou o bloqueo de pantalla antes de mostrar os seus detalles';
+  String get recordLockSubtitle => 'Só ti podes abrilo, coa túa pegada, a túa cara ou o PIN do teléfono.';
 
   @override
   String get recordLockReason => 'Desbloquea este rexistro';

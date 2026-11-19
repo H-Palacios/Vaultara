@@ -2563,7 +2563,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get recordLockTitle => 'Bloquear este registro';
 
   @override
-  String get recordLockSubtitle => 'Pide tu huella, tu cara o el bloqueo de pantalla antes de mostrar sus detalles';
+  String get recordLockSubtitle => 'Solo tú puedes abrirlo, con tu huella, tu cara o el PIN del teléfono.';
 
   @override
   String get recordLockReason => 'Desbloquea este registro';

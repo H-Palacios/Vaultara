@@ -978,7 +978,7 @@
   "travelReminderBodyOk": "您的證件皆已備妥。開啟旅程查看清單。",
   "travelTripLimit": "最多可儲存 {count} 個旅程。刪除舊旅程即可新增。",
   "recordLockTitle": "鎖定此記錄",
-  "recordLockSubtitle": "顯示詳細資料前需驗證指紋、臉孔或螢幕鎖定",
+  "recordLockSubtitle": "只有你能開啟，需要指紋、臉部或手機 PIN 碼。",
   "recordLockReason": "解鎖此記錄",
   "recordLockNoDeviceLock": "請先在手機上設定螢幕鎖定。",
   "repeatLabel": "重複",

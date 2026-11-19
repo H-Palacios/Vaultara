@@ -2551,7 +2551,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get recordLockTitle => 'Bu sənədi kilidlə';
 
   @override
-  String get recordLockSubtitle => 'Təfərrüatları göstərməzdən əvvəl barmaq izi, üz və ya ekran kilidi istənilsin';
+  String get recordLockSubtitle => 'Onu yalnız siz barmaq iziniz, üzünüz və ya telefon PIN-i ilə aça bilərsiniz.';
 
   @override
   String get recordLockReason => 'Bu sənədin kilidini açın';

@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Giấy tờ của bạn đã sẵn sàng. Mở chuyến đi để kiểm tra danh sách.",
   "travelTripLimit": "Bạn có thể lưu tối đa {count} chuyến đi. Xóa một chuyến đi cũ để thêm chuyến mới.",
   "recordLockTitle": "Khóa bản ghi này",
-  "recordLockSubtitle": "Yêu cầu vân tay, khuôn mặt hoặc khóa màn hình trước khi hiện chi tiết",
+  "recordLockSubtitle": "Chỉ bạn mới mở được, bằng vân tay, khuôn mặt hoặc mã PIN điện thoại.",
   "recordLockReason": "Mở khóa bản ghi này",
   "recordLockNoDeviceLock": "Hãy thiết lập khóa màn hình trên điện thoại trước.",
   "repeatLabel": "Lặp lại",

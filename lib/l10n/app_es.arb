@@ -992,7 +992,7 @@
   "travelReminderBodyOk": "Tus documentos están listos. Abre tu viaje para revisar la lista.",
   "travelTripLimit": "Puedes guardar hasta {count} viajes. Elimina un viaje antiguo para añadir uno nuevo.",
   "recordLockTitle": "Bloquear este registro",
-  "recordLockSubtitle": "Pide tu huella, tu cara o el bloqueo de pantalla antes de mostrar sus detalles",
+  "recordLockSubtitle": "Solo tú puedes abrirlo, con tu huella, tu cara o el PIN del teléfono.",
   "recordLockReason": "Desbloquea este registro",
   "recordLockNoDeviceLock": "Primero configura un bloqueo de pantalla en tu teléfono.",
   "repeatLabel": "Se repite",

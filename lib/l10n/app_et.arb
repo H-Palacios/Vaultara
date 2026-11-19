@@ -1150,7 +1150,7 @@
   "travelReminderBodyOk": "Sinu dokumendid on valmis. Ava reis, et nimekiri üle vaadata.",
   "travelTripLimit": "Saad salvestada kuni {count} reisi. Uue lisamiseks kustuta mõni vana reis.",
   "recordLockTitle": "Lukusta see kirje",
-  "recordLockSubtitle": "Küsi enne üksikasjade näitamist sõrmejälge, nägu või ekraanilukku",
+  "recordLockSubtitle": "Ainult sina saad selle avada, sõrmejälje, näo või telefoni PIN-koodiga.",
   "recordLockReason": "Ava selle kirje lukk",
   "recordLockNoDeviceLock": "Seadista esmalt oma telefonis ekraanilukk.",
   "repeatLabel": "Kordub",

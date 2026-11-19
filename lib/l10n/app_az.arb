@@ -735,7 +735,7 @@
   "travelReminderBodyOk": "Sənədləriniz hazırdır. Siyahını yoxlamaq üçün səfərinizi açın.",
   "travelTripLimit": "{count} səfərə qədər saxlaya bilərsiniz. Yenisini əlavə etmək üçün köhnə səfəri silin.",
   "recordLockTitle": "Bu sənədi kilidlə",
-  "recordLockSubtitle": "Təfərrüatları göstərməzdən əvvəl barmaq izi, üz və ya ekran kilidi istənilsin",
+  "recordLockSubtitle": "Onu yalnız siz barmaq iziniz, üzünüz və ya telefon PIN-i ilə aça bilərsiniz.",
   "recordLockReason": "Bu sənədin kilidini açın",
   "recordLockNoDeviceLock": "Əvvəlcə telefonunuzda ekran kilidi qurun.",
   "repeatLabel": "Təkrar",

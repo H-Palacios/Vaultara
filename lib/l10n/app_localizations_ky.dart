@@ -2551,7 +2551,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get recordLockTitle => 'Бул жазууну кулпулоо';
 
   @override
-  String get recordLockSubtitle => 'Чоо-жайын көрсөтүүдөн мурун манжа изин, жүздү же экран кулпусун суроо';
+  String get recordLockSubtitle => 'Аны сиз гана ача аласыз, манжа изи, бет же телефон PIN-коду менен.';
 
   @override
   String get recordLockReason => 'Бул жазуунун кулпусун ачуу';

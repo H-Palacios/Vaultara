@@ -997,7 +997,7 @@
   "travelReminderBodyOk": "Handa na ang mga dokumento mo. Buksan ang biyahe mo para tingnan ang listahan.",
   "travelTripLimit": "Hanggang {count} biyahe lang ang puwede mong i-save. Magtanggal ng lumang biyahe para makapagdagdag ng bago.",
   "recordLockTitle": "I-lock ang rekord na ito",
-  "recordLockSubtitle": "Hingin ang iyong fingerprint, mukha o screen lock bago ipakita ang mga detalye nito",
+  "recordLockSubtitle": "Ikaw lang ang makakapagbukas nito, gamit ang fingerprint, mukha o PIN ng phone.",
   "recordLockReason": "I-unlock ang rekord na ito",
   "recordLockNoDeviceLock": "Mag-set up muna ng screen lock sa iyong telepono.",
   "repeatLabel": "Umuulit",

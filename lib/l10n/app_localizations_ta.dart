@@ -2551,7 +2551,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get recordLockTitle => 'இந்தப் பதிவைப் பூட்டு';
 
   @override
-  String get recordLockSubtitle => 'விவரங்களைக் காட்டும் முன் உங்கள் விரல் ரேகை, முகம் அல்லது திரைப் பூட்டைக் கேட்கும்';
+  String get recordLockSubtitle => 'நீங்கள் மட்டுமே இதைத் திறக்க முடியும், கைரேகை, முகம் அல்லது ஃபோன் PIN மூலம்.';
 
   @override
   String get recordLockReason => 'இந்தப் பதிவைத் திறக்கவும்';

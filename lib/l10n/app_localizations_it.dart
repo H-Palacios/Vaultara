@@ -2555,7 +2555,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get recordLockTitle => 'Blocca questo record';
 
   @override
-  String get recordLockSubtitle => 'Chiedi impronta, volto o blocco schermo prima di mostrarne i dettagli';
+  String get recordLockSubtitle => 'Solo tu puoi aprirlo, con impronta, volto o PIN del telefono.';
 
   @override
   String get recordLockReason => 'Sblocca questo record';

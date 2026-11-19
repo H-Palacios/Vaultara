@@ -2551,7 +2551,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get recordLockTitle => 'Khiya leli rekhodi';
 
   @override
-  String get recordLockSubtitle => 'Cela isigxivizo somunwe, ubuso noma ukukhiya kwesikrini ngaphambi kokubonisa imininingwane yalo';
+  String get recordLockSubtitle => 'Nguwe kuphela ongayivula, ngesigxivizo somunwe, ubuso noma i-PIN yefoni.';
 
   @override
   String get recordLockReason => 'Vula leli rekhodi';

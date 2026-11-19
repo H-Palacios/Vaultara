@@ -2551,7 +2551,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get recordLockTitle => 'Заключване на записа';
 
   @override
-  String get recordLockSubtitle => 'Изисква пръстов отпечатък, лице или заключване на екрана, преди да се покажат подробностите';
+  String get recordLockSubtitle => 'Само вие можете да го отворите, с пръстов отпечатък, лице или ПИН на телефона.';
 
   @override
   String get recordLockReason => 'Отключете този запис';

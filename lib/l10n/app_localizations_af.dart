@@ -2551,7 +2551,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get recordLockTitle => 'Sluit hierdie rekord';
 
   @override
-  String get recordLockSubtitle => 'Vra vir jou vingerafdruk, gesig of skermslot voordat die besonderhede gewys word';
+  String get recordLockSubtitle => 'Net jy kan dit oopmaak, met jou vingerafdruk, gesig of foon-PIN.';
 
   @override
   String get recordLockReason => 'Ontsluit hierdie rekord';

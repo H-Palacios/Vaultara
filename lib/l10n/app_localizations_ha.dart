@@ -2551,7 +2551,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get recordLockTitle => 'Kulle wannan rikodi';
 
   @override
-  String get recordLockSubtitle => 'Nemi zanen yatsanka, fuskarka ko kullen allo kafin a nuna bayanansa';
+  String get recordLockSubtitle => 'Kai kaɗai ne za ka iya buɗe shi, da zanen yatsa, fuska ko PIN na waya.';
 
   @override
   String get recordLockReason => 'Buɗe wannan rikodi';

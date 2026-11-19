@@ -2549,7 +2549,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get recordLockTitle => 'Kpọchie ndekọ a';
 
   @override
-  String get recordLockSubtitle => 'Jụọ maka mkpịsị aka gị, ihu gị ma ọ bụ mkpọchi ihuenyo tupu e gosi nkọwa ya';
+  String get recordLockSubtitle => 'Naanị gị nwere ike imeghe ya, site na mkpịsị aka, ihu ma ọ bụ PIN ekwentị gị.';
 
   @override
   String get recordLockReason => 'Meghee ndekọ a';

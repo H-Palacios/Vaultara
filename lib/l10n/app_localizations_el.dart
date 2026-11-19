@@ -2551,7 +2551,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get recordLockTitle => 'Κλείδωμα αυτής της εγγραφής';
 
   @override
-  String get recordLockSubtitle => 'Ζητά δακτυλικό αποτύπωμα, πρόσωπο ή κλείδωμα οθόνης πριν εμφανιστούν τα στοιχεία της';
+  String get recordLockSubtitle => 'Μόνο εσείς μπορείτε να το ανοίξετε, με δακτυλικό αποτύπωμα, πρόσωπο ή PIN τηλεφώνου.';
 
   @override
   String get recordLockReason => 'Ξεκλειδώστε αυτή την εγγραφή';

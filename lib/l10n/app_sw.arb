@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Hati zako ziko tayari. Fungua safari yako kuangalia orodha.",
   "travelTripLimit": "Unaweza kuhifadhi hadi safari {count}. Futa safari ya zamani ili kuongeza mpya.",
   "recordLockTitle": "Funga rekodi hii",
-  "recordLockSubtitle": "Omba alama ya kidole, uso au kufuli ya skrini kabla ya kuonyesha maelezo yake",
+  "recordLockSubtitle": "Ni wewe tu unayeweza kuifungua, kwa alama ya kidole, uso au PIN ya simu.",
   "recordLockReason": "Fungua rekodi hii",
   "recordLockNoDeviceLock": "Weka kufuli ya skrini kwenye simu yako kwanza.",
   "repeatLabel": "Inajirudia",

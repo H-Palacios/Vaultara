@@ -2551,7 +2551,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get recordLockTitle => 'یہ ریکارڈ لاک کریں';
 
   @override
-  String get recordLockSubtitle => 'تفصیلات دکھانے سے پہلے آپ کا فنگرپرنٹ، چہرہ یا اسکرین لاک طلب کریں';
+  String get recordLockSubtitle => 'صرف آپ ہی اسے کھول سکتے ہیں، فنگر پرنٹ، چہرے یا فون PIN سے۔';
 
   @override
   String get recordLockReason => 'یہ ریکارڈ ان لاک کریں';

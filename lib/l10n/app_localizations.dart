@@ -4672,7 +4672,7 @@ abstract class AppLocalizations {
   /// Subtitle of the lock switch in the record form
   ///
   /// In en, this message translates to:
-  /// **'Ask for your fingerprint, face or screen lock before showing its details'**
+  /// **'Only you can open it, with your fingerprint, face or phone PIN.'**
   String get recordLockSubtitle;
 
   /// Reason shown by the system fingerprint or face prompt

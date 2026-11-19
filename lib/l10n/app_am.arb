@@ -1023,7 +1023,7 @@
   "travelReminderBodyOk": "ሰነዶችዎ ዝግጁ ናቸው። ዝርዝሩን ለማየት ጉዞዎን ይክፈቱ።",
   "travelTripLimit": "እስከ {count} ጉዞዎች ማስቀመጥ ይችላሉ። አዲስ ለማከል የቆየ ጉዞ ይሰርዙ።",
   "recordLockTitle": "ይህን መዝገብ ቆልፍ",
-  "recordLockSubtitle": "ዝርዝሮቹን ከማሳየት በፊት የጣት አሻራ፣ ፊት ወይም የማያ ገጽ መቆለፊያ ይጠየቅ",
+  "recordLockSubtitle": "እርስዎ ብቻ በጣት አሻራ፣ በፊት ወይም በስልክ ፒን መክፈት ይችላሉ።",
   "recordLockReason": "ይህን መዝገብ ይክፈቱ",
   "recordLockNoDeviceLock": "መጀመሪያ በስልክዎ ላይ የማያ ገጽ መቆለፊያ ያዘጋጁ።",
   "repeatLabel": "ይደገማል",

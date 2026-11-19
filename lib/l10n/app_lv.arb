@@ -1003,7 +1003,7 @@
   "travelReminderBodyOk": "Jūsu dokumenti ir gatavi. Atveriet ceļojumu, lai pārbaudītu sarakstu.",
   "travelTripLimit": "Varat saglabāt līdz {count} ceļojumiem. Izdzēsiet vecu ceļojumu, lai pievienotu jaunu.",
   "recordLockTitle": "Bloķēt šo ierakstu",
-  "recordLockSubtitle": "Pirms detaļu rādīšanas prasīt pirksta nospiedumu, seju vai ekrāna bloķēšanu",
+  "recordLockSubtitle": "To varat atvērt tikai jūs, ar pirkstu nospiedumu, seju vai tālruņa PIN.",
   "recordLockReason": "Atbloķēt šo ierakstu",
   "recordLockNoDeviceLock": "Vispirms iestatiet ekrāna bloķēšanu tālrunī.",
   "repeatLabel": "Atkārtošana",

@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Dokumentene dine er klare. Åpne reisen for å sjekke listen.",
   "travelTripLimit": "Du kan lagre opptil {count} reiser. Slett en gammel reise for å legge til en ny.",
   "recordLockTitle": "Lås denne oppføringen",
-  "recordLockSubtitle": "Be om fingeravtrykk, ansikt eller skjermlås før detaljene vises",
+  "recordLockSubtitle": "Bare du kan åpne den, med fingeravtrykk, ansikt eller telefonens PIN-kode.",
   "recordLockReason": "Lås opp denne oppføringen",
   "recordLockNoDeviceLock": "Sett opp skjermlås på telefonen først.",
   "repeatLabel": "Gjentas",

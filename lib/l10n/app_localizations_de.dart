@@ -2551,7 +2551,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get recordLockTitle => 'Diesen Eintrag sperren';
 
   @override
-  String get recordLockSubtitle => 'Vor dem Anzeigen der Details nach Fingerabdruck, Gesicht oder Displaysperre fragen';
+  String get recordLockSubtitle => 'Nur du kannst ihn öffnen, mit Fingerabdruck, Gesicht oder Handy-PIN.';
 
   @override
   String get recordLockReason => 'Diesen Eintrag entsperren';

@@ -1003,7 +1003,7 @@
   "travelReminderBodyOk": "Jūsų dokumentai paruošti. Atidarykite kelionę ir patikrinkite sąrašą.",
   "travelTripLimit": "Galite išsaugoti iki {count} kelionių. Ištrinkite seną kelionę, kad galėtumėte pridėti naują.",
   "recordLockTitle": "Užrakinti šį įrašą",
-  "recordLockSubtitle": "Prieš rodant išsamią informaciją prašyti piršto atspaudo, veido ar ekrano užrakto",
+  "recordLockSubtitle": "Atidaryti galite tik jūs, piršto atspaudu, veidu ar telefono PIN kodu.",
   "recordLockReason": "Atrakinti šį įrašą",
   "recordLockNoDeviceLock": "Pirmiausia telefone nustatykite ekrano užraktą.",
   "repeatLabel": "Kartojimas",

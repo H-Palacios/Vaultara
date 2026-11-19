@@ -2551,7 +2551,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get recordLockTitle => 'Bu yozuvni qulflash';
 
   @override
-  String get recordLockSubtitle => 'Tafsilotlarni koʻrsatishdan oldin barmoq izi, yuz yoki ekran qulfini soʻrash';
+  String get recordLockSubtitle => 'Uni faqat siz ochishingiz mumkin, barmoq izi, yuz yoki telefon PIN-kodi bilan.';
 
   @override
   String get recordLockReason => 'Bu yozuvni qulfdan chiqaring';

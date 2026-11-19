@@ -2565,7 +2565,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get recordLockTitle => 'Закључај овај запис';
 
   @override
-  String get recordLockSubtitle => 'Тражи отисак прста, лице или закључавање екрана пре приказа детаља';
+  String get recordLockSubtitle => 'Само ви можете да га отворите, отиском прста, лицем или PIN-ом телефона.';
 
   @override
   String get recordLockReason => 'Откључајте овај запис';
@@ -12165,7 +12165,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get recordLockTitle => 'Закључај овај запис';
 
   @override
-  String get recordLockSubtitle => 'Тражи отисак прста, лице или закључавање екрана пре приказа детаља';
+  String get recordLockSubtitle => 'Само ви можете да га отворите, отиском прста, лицем или PIN-ом телефона.';
 
   @override
   String get recordLockReason => 'Откључајте овај запис';
@@ -21765,7 +21765,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get recordLockTitle => 'Zaključaj ovaj zapis';
 
   @override
-  String get recordLockSubtitle => 'Traži otisak prsta, lice ili zaključavanje ekrana pre prikaza detalja';
+  String get recordLockSubtitle => 'Samo vi možete da ga otvorite, otiskom prsta, licem ili PIN-om telefona.';
 
   @override
   String get recordLockReason => 'Otključajte ovaj zapis';

@@ -1016,7 +1016,7 @@
   "travelReminderBodyOk": "Vaše doklady jsou připravené. Otevřete cestu a projděte seznam.",
   "travelTripLimit": "Maximální počet uložených cest je {count}. Pro novou cestu smažte některou starou.",
   "recordLockTitle": "Zamknout tento záznam",
-  "recordLockSubtitle": "Před zobrazením podrobností vyžadovat otisk prstu, obličej nebo zámek obrazovky",
+  "recordLockSubtitle": "Otevřít ho můžete jen vy, otiskem prstu, obličejem nebo PIN telefonu.",
   "recordLockReason": "Odemkněte tento záznam",
   "recordLockNoDeviceLock": "Nejprve si v telefonu nastavte zámek obrazovky.",
   "repeatLabel": "Opakování",

@@ -735,7 +735,7 @@
   "travelReminderBodyOk": "Hujjatlaringiz tayyor. Roʻyxatni tekshirish uchun sayohatni oching.",
   "travelTripLimit": "Koʻpi bilan {count} ta sayohat saqlashingiz mumkin. Yangisini qoʻshish uchun eski sayohatni oʻchiring.",
   "recordLockTitle": "Bu yozuvni qulflash",
-  "recordLockSubtitle": "Tafsilotlarni koʻrsatishdan oldin barmoq izi, yuz yoki ekran qulfini soʻrash",
+  "recordLockSubtitle": "Uni faqat siz ochishingiz mumkin, barmoq izi, yuz yoki telefon PIN-kodi bilan.",
   "recordLockReason": "Bu yozuvni qulfdan chiqaring",
   "recordLockNoDeviceLock": "Avval telefoningizda ekran qulfini sozlang.",
   "repeatLabel": "Takrorlanish",

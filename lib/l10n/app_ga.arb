@@ -997,7 +997,7 @@
   "travelReminderBodyOk": "Tá do dhoiciméid réidh. Oscail do thuras chun an liosta a sheiceáil.",
   "travelTripLimit": "Is féidir leat suas le {count} turas a shábháil. Scrios seanturas chun ceann nua a chur leis.",
   "recordLockTitle": "Cuir glas ar an taifead seo",
-  "recordLockSubtitle": "Iarr do mhéarlorg, d’aghaidh nó glas an scáileáin sula dtaispeántar a shonraí",
+  "recordLockSubtitle": "Is tusa amháin is féidir é a oscailt, le do mhéarlorg, d'aghaidh nó UAP an ghutháin.",
   "recordLockReason": "Díghlasáil an taifead seo",
   "recordLockNoDeviceLock": "Socraigh glas scáileáin ar do ghuthán ar dtús.",
   "repeatLabel": "Athdhéanann",

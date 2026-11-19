@@ -2550,7 +2550,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get recordLockTitle => 'Энэ бичлэгийг түгжих';
 
   @override
-  String get recordLockSubtitle => 'Дэлгэрэнгүйг харуулахаас өмнө хурууны хээ, царай эсвэл дэлгэцийн түгжээ асуух';
+  String get recordLockSubtitle => 'Үүнийг зөвхөн та хурууны хээ, царай эсвэл утасны PIN-ээр нээж чадна.';
 
   @override
   String get recordLockReason => 'Энэ бичлэгийн түгжээг тайлах';

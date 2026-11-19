@@ -2583,7 +2583,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get recordLockTitle => 'Zamknout tento záznam';
 
   @override
-  String get recordLockSubtitle => 'Před zobrazením podrobností vyžadovat otisk prstu, obličej nebo zámek obrazovky';
+  String get recordLockSubtitle => 'Otevřít ho můžete jen vy, otiskem prstu, obličejem nebo PIN telefonu.';
 
   @override
   String get recordLockReason => 'Odemkněte tento záznam';

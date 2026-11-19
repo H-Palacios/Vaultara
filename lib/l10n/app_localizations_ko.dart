@@ -2548,7 +2548,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get recordLockTitle => '이 기록 잠그기';
 
   @override
-  String get recordLockSubtitle => '세부 정보를 보여주기 전에 지문, 얼굴 또는 화면 잠금을 요청합니다';
+  String get recordLockSubtitle => '지문, 얼굴 또는 휴대폰 PIN으로 본인만 열 수 있습니다.';
 
   @override
   String get recordLockReason => '이 기록 잠금 해제';

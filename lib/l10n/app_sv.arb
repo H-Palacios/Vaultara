@@ -978,7 +978,7 @@
   "travelReminderBodyOk": "Dina dokument är klara. Öppna resan för att gå igenom listan.",
   "travelTripLimit": "Du kan spara upp till {count} resor. Ta bort en gammal resa för att lägga till en ny.",
   "recordLockTitle": "Lås den här posten",
-  "recordLockSubtitle": "Be om fingeravtryck, ansikte eller skärmlås innan detaljerna visas",
+  "recordLockSubtitle": "Bara du kan öppna den, med fingeravtryck, ansikte eller telefonens pinkod.",
   "recordLockReason": "Lås upp den här posten",
   "recordLockNoDeviceLock": "Ställ in ett skärmlås på telefonen först.",
   "repeatLabel": "Upprepas",

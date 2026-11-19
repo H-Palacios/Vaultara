@@ -2543,7 +2543,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get recordLockTitle => 'Kunci catatan ini';
 
   @override
-  String get recordLockSubtitle => 'Minta sidik jari, wajah, atau kunci layar Anda sebelum menampilkan detailnya';
+  String get recordLockSubtitle => 'Hanya Anda yang bisa membukanya, dengan sidik jari, wajah, atau PIN ponsel.';
 
   @override
   String get recordLockReason => 'Buka kunci catatan ini';

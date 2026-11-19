@@ -990,7 +990,7 @@
   "travelReminderBodyOk": "המסמכים שלך מוכנים. פתח את הנסיעה כדי לבדוק את הרשימה.",
   "travelTripLimit": "אפשר לשמור עד {count} נסיעות. מחק נסיעה ישנה כדי להוסיף חדשה.",
   "recordLockTitle": "נעילת הרשומה הזו",
-  "recordLockSubtitle": "בקשת טביעת אצבע, זיהוי פנים או נעילת מסך לפני הצגת הפרטים",
+  "recordLockSubtitle": "רק אתה יכול לפתוח אותו, בטביעת אצבע, בזיהוי פנים או בקוד הטלפון.",
   "recordLockReason": "בטל את נעילת הרשומה הזו",
   "recordLockNoDeviceLock": "הגדר קודם נעילת מסך בטלפון שלך.",
   "repeatLabel": "חוזר",

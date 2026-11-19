@@ -2551,7 +2551,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get recordLockTitle => 'Lås denne post';
 
   @override
-  String get recordLockSubtitle => 'Kræv fingeraftryk, ansigt eller skærmlås, før detaljerne vises';
+  String get recordLockSubtitle => 'Kun du kan åbne den, med fingeraftryk, ansigt eller telefonens pinkode.';
 
   @override
   String get recordLockReason => 'Lås denne post op';

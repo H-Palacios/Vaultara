@@ -2551,7 +2551,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get recordLockTitle => 'ይህን መዝገብ ቆልፍ';
 
   @override
-  String get recordLockSubtitle => 'ዝርዝሮቹን ከማሳየት በፊት የጣት አሻራ፣ ፊት ወይም የማያ ገጽ መቆለፊያ ይጠየቅ';
+  String get recordLockSubtitle => 'እርስዎ ብቻ በጣት አሻራ፣ በፊት ወይም በስልክ ፒን መክፈት ይችላሉ።';
 
   @override
   String get recordLockReason => 'ይህን መዝገብ ይክፈቱ';

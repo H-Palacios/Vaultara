@@ -2551,7 +2551,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get recordLockTitle => 'Bloquear este registo';
 
   @override
-  String get recordLockSubtitle => 'Pedir a sua impressão digital, rosto ou bloqueio de ecrã antes de mostrar os detalhes';
+  String get recordLockSubtitle => 'Só você o pode abrir, com a impressão digital, o rosto ou o PIN do telemóvel.';
 
   @override
   String get recordLockReason => 'Desbloquear este registo';

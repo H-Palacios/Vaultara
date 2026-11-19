@@ -2549,7 +2549,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get recordLockTitle => 'Tii igbasilẹ yii pa';
 
   @override
-  String get recordLockSubtitle => 'Béèrè ìka ọwọ́ rẹ, ojú rẹ tàbí titiipa ojú-iboju kí o tó fi àwọn àlàyé rẹ̀ hàn';
+  String get recordLockSubtitle => 'Ìwọ nìkan ló lè ṣí i, pẹ̀lú àtẹ̀ ìka, ojú tàbí PIN fóònù rẹ.';
 
   @override
   String get recordLockReason => 'Ṣí igbasilẹ yii';

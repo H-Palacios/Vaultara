@@ -2551,7 +2551,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get recordLockTitle => 'Tshixa le rekhodi';
 
   @override
-  String get recordLockSubtitle => 'Cela umnwe wakho, ubuso okanye isitshixo sesikrini phambi kokubonisa iinkcukacha zayo';
+  String get recordLockSubtitle => 'Nguwe kuphela onokuyivula, ngomnwe, ubuso okanye i-PIN yefowuni.';
 
   @override
   String get recordLockReason => 'Vula le rekhodi';

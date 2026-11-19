@@ -2568,7 +2568,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get recordLockTitle => 'Blochează această înregistrare';
 
   @override
-  String get recordLockSubtitle => 'Cere amprenta, fața sau blocarea ecranului înainte de a afișa detaliile';
+  String get recordLockSubtitle => 'Doar tu îl poți deschide, cu amprenta, fața sau PIN-ul telefonului.';
 
   @override
   String get recordLockReason => 'Deblochează această înregistrare';

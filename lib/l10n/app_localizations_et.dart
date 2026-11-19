@@ -2551,7 +2551,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get recordLockTitle => 'Lukusta see kirje';
 
   @override
-  String get recordLockSubtitle => 'Küsi enne üksikasjade näitamist sõrmejälge, nägu või ekraanilukku';
+  String get recordLockSubtitle => 'Ainult sina saad selle avada, sõrmejälje, näo või telefoni PIN-koodiga.';
 
   @override
   String get recordLockReason => 'Ava selle kirje lukk';

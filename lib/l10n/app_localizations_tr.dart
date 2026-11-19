@@ -2551,7 +2551,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get recordLockTitle => 'Bu kaydı kilitle';
 
   @override
-  String get recordLockSubtitle => 'Ayrıntıları göstermeden önce parmak izi, yüz veya ekran kilidi iste';
+  String get recordLockSubtitle => 'Yalnızca siz açabilirsiniz; parmak izi, yüz veya telefon PIN\'i ile.';
 
   @override
   String get recordLockReason => 'Bu kaydın kilidini açın';

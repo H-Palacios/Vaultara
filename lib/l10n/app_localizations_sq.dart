@@ -2551,7 +2551,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get recordLockTitle => 'Kyç këtë regjistrim';
 
   @override
-  String get recordLockSubtitle => 'Kërko gjurmën e gishtit, fytyrën ose kyçjen e ekranit para se të shfaqen detajet';
+  String get recordLockSubtitle => 'Vetëm ti mund ta hapësh, me shenjën e gishtit, fytyrën ose PIN-in e telefonit.';
 
   @override
   String get recordLockReason => 'Shkyç këtë regjistrim';

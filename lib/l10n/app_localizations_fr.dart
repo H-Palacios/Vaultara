@@ -2555,7 +2555,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get recordLockTitle => 'Verrouiller cet enregistrement';
 
   @override
-  String get recordLockSubtitle => 'Demander votre empreinte digitale, votre visage ou le verrouillage de l’écran avant d’afficher ses détails';
+  String get recordLockSubtitle => 'Vous seul pouvez l\'ouvrir, avec votre empreinte, votre visage ou le code PIN du téléphone.';
 
   @override
   String get recordLockReason => 'Déverrouillez cet enregistrement';

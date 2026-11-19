@@ -2543,7 +2543,7 @@
   "@recordLockTitle": {
     "description": "Switch in the record form, and tooltip on locked record cards"
   },
-  "recordLockSubtitle": "Ask for your fingerprint, face or screen lock before showing its details",
+  "recordLockSubtitle": "Only you can open it, with your fingerprint, face or phone PIN.",
   "@recordLockSubtitle": {
     "description": "Subtitle of the lock switch in the record form"
   },

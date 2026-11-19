@@ -2551,7 +2551,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get recordLockTitle => 'ამ ჩანაწერის დაბლოკვა';
 
   @override
-  String get recordLockSubtitle => 'დეტალების ჩვენებამდე მოითხოვება თითის ანაბეჭდი, სახე ან ეკრანის დაბლოკვა';
+  String get recordLockSubtitle => 'მისი გახსნა მხოლოდ თქვენ შეგიძლიათ, თითის ანაბეჭდით, სახით ან ტელეფონის PIN-ით.';
 
   @override
   String get recordLockReason => 'ამ ჩანაწერის განბლოკვა';

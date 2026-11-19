@@ -2551,7 +2551,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get recordLockTitle => 'Dit record vergrendelen';
 
   @override
-  String get recordLockSubtitle => 'Vraag om je vingerafdruk, gezicht of schermvergrendeling voordat de details worden getoond';
+  String get recordLockSubtitle => 'Alleen jij kunt het openen, met je vingerafdruk, gezicht of telefoonpincode.';
 
   @override
   String get recordLockReason => 'Dit record ontgrendelen';

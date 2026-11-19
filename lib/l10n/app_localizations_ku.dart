@@ -2551,7 +2551,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get recordLockTitle => 'Vê tomarê qefl bike';
 
   @override
-  String get recordLockSubtitle => 'Berî nîşandana hûrguliyan şopa tiliyê, rû an qefla ekranê bixwaze';
+  String get recordLockSubtitle => 'Tenê tu dikarî wê vekî, bi şopa tiliyê, rû an PIN a telefonê.';
 
   @override
   String get recordLockReason => 'Qefla vê tomarê veke';

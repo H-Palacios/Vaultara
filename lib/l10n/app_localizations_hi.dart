@@ -2551,7 +2551,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get recordLockTitle => 'इस रिकॉर्ड को लॉक करें';
 
   @override
-  String get recordLockSubtitle => 'विवरण दिखाने से पहले आपका फिंगरप्रिंट, चेहरा या स्क्रीन लॉक माँगा जाएगा';
+  String get recordLockSubtitle => 'इसे सिर्फ़ आप खोल सकते हैं, फ़िंगरप्रिंट, चेहरे या फ़ोन PIN से।';
 
   @override
   String get recordLockReason => 'इस रिकॉर्ड को अनलॉक करें';

@@ -1016,7 +1016,7 @@
   "travelReminderBodyOk": "Dine dokumenter er klar. Åbn din rejse for at tjekke listen.",
   "travelTripLimit": "Du kan gemme op til {count} rejser. Slet en gammel rejse for at tilføje en ny.",
   "recordLockTitle": "Lås denne post",
-  "recordLockSubtitle": "Kræv fingeraftryk, ansigt eller skærmlås, før detaljerne vises",
+  "recordLockSubtitle": "Kun du kan åbne den, med fingeraftryk, ansigt eller telefonens pinkode.",
   "recordLockReason": "Lås denne post op",
   "recordLockNoDeviceLock": "Konfigurer først en skærmlås på din telefon.",
   "repeatLabel": "Gentages",

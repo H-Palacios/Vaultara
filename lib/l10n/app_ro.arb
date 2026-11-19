@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Documentele tale sunt pregătite. Deschide călătoria ca să verifici lista.",
   "travelTripLimit": "Poți salva până la {count} călătorii. Șterge o călătorie veche ca să adaugi una nouă.",
   "recordLockTitle": "Blochează această înregistrare",
-  "recordLockSubtitle": "Cere amprenta, fața sau blocarea ecranului înainte de a afișa detaliile",
+  "recordLockSubtitle": "Doar tu îl poți deschide, cu amprenta, fața sau PIN-ul telefonului.",
   "recordLockReason": "Deblochează această înregistrare",
   "recordLockNoDeviceLock": "Setează mai întâi o blocare a ecranului pe telefon.",
   "repeatLabel": "Se repetă",

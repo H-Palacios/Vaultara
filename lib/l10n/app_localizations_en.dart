@@ -2567,7 +2567,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get recordLockTitle => 'Lock this record';
 
   @override
-  String get recordLockSubtitle => 'Ask for your fingerprint, face or screen lock before showing its details';
+  String get recordLockSubtitle => 'Only you can open it, with your fingerprint, face or phone PIN.';
 
   @override
   String get recordLockReason => 'Unlock this record';

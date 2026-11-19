@@ -2551,7 +2551,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get recordLockTitle => 'Bloqueja aquest registre';
 
   @override
-  String get recordLockSubtitle => 'Demana l\'empremta digital, la cara o el bloqueig de pantalla abans de mostrar-ne els detalls';
+  String get recordLockSubtitle => 'Només tu el pots obrir, amb l\'empremta, la cara o el PIN del telèfon.';
 
   @override
   String get recordLockReason => 'Desbloqueja aquest registre';

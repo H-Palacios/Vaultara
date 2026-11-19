@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Belgeyên te amade ne. Rêwîtiya xwe veke da ku lîsteyê kontrol bikî.",
   "travelTripLimit": "Tu dikarî heta {count} rêwîtiyan qeyd bikî. Ji bo ku yeke nû zêde bikî, rêwîtiyeke kevn jê bibe.",
   "recordLockTitle": "Vê tomarê qefl bike",
-  "recordLockSubtitle": "Berî nîşandana hûrguliyan şopa tiliyê, rû an qefla ekranê bixwaze",
+  "recordLockSubtitle": "Tenê tu dikarî wê vekî, bi şopa tiliyê, rû an PIN a telefonê.",
   "recordLockReason": "Qefla vê tomarê veke",
   "recordLockNoDeviceLock": "Pêşî li ser telefona xwe qefla ekranê saz bike.",
   "repeatLabel": "Dubarebûn",

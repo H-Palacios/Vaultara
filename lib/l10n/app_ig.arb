@@ -990,7 +990,7 @@
   "travelReminderBodyOk": "Akwụkwọ gị adịla njikere. Mepee njem gị ka ị lelee ndepụta ahụ.",
   "travelTripLimit": "Ị nwere ike ichekwa ihe ruru njem {count}. Hichapụ njem ochie iji tinye nke ọhụrụ.",
   "recordLockTitle": "Kpọchie ndekọ a",
-  "recordLockSubtitle": "Jụọ maka mkpịsị aka gị, ihu gị ma ọ bụ mkpọchi ihuenyo tupu e gosi nkọwa ya",
+  "recordLockSubtitle": "Naanị gị nwere ike imeghe ya, site na mkpịsị aka, ihu ma ọ bụ PIN ekwentị gị.",
   "recordLockReason": "Meghee ndekọ a",
   "recordLockNoDeviceLock": "Buru ụzọ hazie mkpọchi ihuenyo na ekwentị gị.",
   "repeatLabel": "Ọ na-emeghachi",

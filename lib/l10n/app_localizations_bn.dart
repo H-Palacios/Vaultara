@@ -2551,7 +2551,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get recordLockTitle => 'এই রেকর্ড লক করুন';
 
   @override
-  String get recordLockSubtitle => 'বিবরণ দেখানোর আগে আপনার ফিঙ্গারপ্রিন্ট, মুখ বা স্ক্রিন লক চাওয়া হবে';
+  String get recordLockSubtitle => 'শুধু আপনিই এটি খুলতে পারবেন, আঙুলের ছাপ, মুখ বা ফোনের পিন দিয়ে।';
 
   @override
   String get recordLockReason => 'এই রেকর্ড আনলক করুন';

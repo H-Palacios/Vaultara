@@ -1003,7 +1003,7 @@
   "travelReminderBodyOk": "A dokumentumai rendben vannak. Nyissa meg az utazást, és nézze át a listát.",
   "travelTripLimit": "Legfeljebb {count} utazást menthet. Új utazás hozzáadásához töröljön egy régit.",
   "recordLockTitle": "Bejegyzés zárolása",
-  "recordLockSubtitle": "Ujjlenyomat, arc vagy képernyőzár kérése a részletek megjelenítése előtt",
+  "recordLockSubtitle": "Csak te nyithatod meg, ujjlenyomattal, arccal vagy a telefon PIN-kódjával.",
   "recordLockReason": "Oldja fel ezt a bejegyzést",
   "recordLockNoDeviceLock": "Előbb állítson be képernyőzárat a telefonján.",
   "repeatLabel": "Ismétlődés",

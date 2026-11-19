@@ -2551,7 +2551,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get recordLockTitle => 'Lukitse tämä tietue';
 
   @override
-  String get recordLockSubtitle => 'Pyydä sormenjälki, kasvot tai näytön lukitus ennen tietojen näyttämistä';
+  String get recordLockSubtitle => 'Vain sinä voit avata sen sormenjäljellä, kasvoilla tai puhelimen PIN-koodilla.';
 
   @override
   String get recordLockReason => 'Avaa tämän tietueen lukitus';

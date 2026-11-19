@@ -2551,7 +2551,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get recordLockTitle => 'Bejegyzés zárolása';
 
   @override
-  String get recordLockSubtitle => 'Ujjlenyomat, arc vagy képernyőzár kérése a részletek megjelenítése előtt';
+  String get recordLockSubtitle => 'Csak te nyithatod meg, ujjlenyomattal, arccal vagy a telefon PIN-kódjával.';
 
   @override
   String get recordLockReason => 'Oldja fel ezt a bejegyzést';

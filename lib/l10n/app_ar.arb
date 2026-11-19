@@ -1023,7 +1023,7 @@
   "travelReminderBodyOk": "مستنداتك جاهزة. افتح رحلتك لمراجعة القائمة.",
   "travelTripLimit": "يمكنك حفظ حتى {count} رحلة. احذف رحلة قديمة لإضافة رحلة جديدة.",
   "recordLockTitle": "قفل هذا السجل",
-  "recordLockSubtitle": "اطلب بصمة الإصبع أو الوجه أو قفل الشاشة قبل عرض تفاصيله",
+  "recordLockSubtitle": "أنت فقط من يستطيع فتحه، ببصمتك أو وجهك أو رمز PIN للهاتف.",
   "recordLockReason": "افتح قفل هذا السجل",
   "recordLockNoDeviceLock": "أعدّ قفل الشاشة على هاتفك أولًا.",
   "repeatLabel": "التكرار",

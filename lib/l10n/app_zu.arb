@@ -977,7 +977,7 @@
   "travelReminderBodyOk": "Imibhalo yakho isilungile. Vula uhambo lwakho ukuze uhlole uhlu.",
   "travelTripLimit": "Ungalondoloza uhambo olufika ku-{count}. Susa uhambo oludala ukuze wengeze olusha.",
   "recordLockTitle": "Khiya leli rekhodi",
-  "recordLockSubtitle": "Cela isigxivizo somunwe, ubuso noma ukukhiya kwesikrini ngaphambi kokubonisa imininingwane yalo",
+  "recordLockSubtitle": "Nguwe kuphela ongayivula, ngesigxivizo somunwe, ubuso noma i-PIN yefoni.",
   "recordLockReason": "Vula leli rekhodi",
   "recordLockNoDeviceLock": "Qala ngokusetha ukukhiya kwesikrini efonini yakho.",
   "repeatLabel": "Iyaphindwa",

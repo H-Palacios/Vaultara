@@ -985,7 +985,7 @@
   "travelReminderBodyOk": "Os seus documentos estão prontos. Abra a sua viagem para ver a lista.",
   "travelTripLimit": "Pode guardar até {count} viagens. Elimine uma viagem antiga para adicionar uma nova.",
   "recordLockTitle": "Bloquear este registo",
-  "recordLockSubtitle": "Pedir a sua impressão digital, rosto ou bloqueio de ecrã antes de mostrar os detalhes",
+  "recordLockSubtitle": "Só você o pode abrir, com a impressão digital, o rosto ou o PIN do telemóvel.",
   "recordLockReason": "Desbloquear este registo",
   "recordLockNoDeviceLock": "Configure primeiro um bloqueio de ecrã no seu telemóvel.",
   "repeatLabel": "Repete",

@@ -959,7 +959,7 @@
   "travelReminderBodyOk": "Vaši dokumenti su spremni. Otvorite putovanje da proverite listu.",
   "travelTripLimit": "Možete sačuvati najviše {count} putovanja. Obrišite staro putovanje da biste dodali novo.",
   "recordLockTitle": "Zaključaj ovaj zapis",
-  "recordLockSubtitle": "Traži otisak prsta, lice ili zaključavanje ekrana pre prikaza detalja",
+  "recordLockSubtitle": "Samo vi možete da ga otvorite, otiskom prsta, licem ili PIN-om telefona.",
   "recordLockReason": "Otključajte ovaj zapis",
   "recordLockNoDeviceLock": "Prvo podesite zaključavanje ekrana na telefonu.",
   "repeatLabel": "Ponavljanje",

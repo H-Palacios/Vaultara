@@ -1016,7 +1016,7 @@
   "travelReminderBodyOk": "Deine Dokumente sind bereit. Öffne deine Reise, um die Liste zu prüfen.",
   "travelTripLimit": "Du kannst bis zu {count} Reisen speichern. Lösche eine alte Reise, um eine neue hinzuzufügen.",
   "recordLockTitle": "Diesen Eintrag sperren",
-  "recordLockSubtitle": "Vor dem Anzeigen der Details nach Fingerabdruck, Gesicht oder Displaysperre fragen",
+  "recordLockSubtitle": "Nur du kannst ihn öffnen, mit Fingerabdruck, Gesicht oder Handy-PIN.",
   "recordLockReason": "Diesen Eintrag entsperren",
   "recordLockNoDeviceLock": "Richte zuerst eine Displaysperre auf deinem Handy ein.",
   "repeatLabel": "Wiederholung",

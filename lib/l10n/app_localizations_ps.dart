@@ -2551,7 +2551,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get recordLockTitle => 'دا ریکارډ قلف کړئ';
 
   @override
-  String get recordLockSubtitle => 'د جزییاتو له ښودلو مخکې ستاسو د ګوتې نښه، مخ یا د سکرین قلف وغوښتل شي';
+  String get recordLockSubtitle => 'یوازې تاسو یې خلاصولی شئ، د ګوتې نښې، مخ یا د تلیفون PIN سره.';
 
   @override
   String get recordLockReason => 'دا ریکارډ خلاص کړئ';

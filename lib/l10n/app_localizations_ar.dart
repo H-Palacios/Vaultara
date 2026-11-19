@@ -2603,7 +2603,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get recordLockTitle => 'قفل هذا السجل';
 
   @override
-  String get recordLockSubtitle => 'اطلب بصمة الإصبع أو الوجه أو قفل الشاشة قبل عرض تفاصيله';
+  String get recordLockSubtitle => 'أنت فقط من يستطيع فتحه، ببصمتك أو وجهك أو رمز PIN للهاتف.';
 
   @override
   String get recordLockReason => 'افتح قفل هذا السجل';

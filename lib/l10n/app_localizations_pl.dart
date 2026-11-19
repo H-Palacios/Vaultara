@@ -2599,7 +2599,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get recordLockTitle => 'Zablokuj ten rekord';
 
   @override
-  String get recordLockSubtitle => 'Pytaj o odcisk palca, twarz lub blokadę ekranu przed pokazaniem szczegółów';
+  String get recordLockSubtitle => 'Tylko ty możesz go otworzyć, odciskiem palca, twarzą lub PIN-em telefonu.';
 
   @override
   String get recordLockReason => 'Odblokuj ten rekord';

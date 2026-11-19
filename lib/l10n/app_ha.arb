@@ -997,7 +997,7 @@
   "travelReminderBodyOk": "Takardunka a shirye suke. Buɗe tafiyarka don duba jerin.",
   "travelTripLimit": "Za ka iya ajiye tafiye-tafiye har {count}. Share tsohuwar tafiya don ƙara sabuwa.",
   "recordLockTitle": "Kulle wannan rikodi",
-  "recordLockSubtitle": "Nemi zanen yatsanka, fuskarka ko kullen allo kafin a nuna bayanansa",
+  "recordLockSubtitle": "Kai kaɗai ne za ka iya buɗe shi, da zanen yatsa, fuska ko PIN na waya.",
   "recordLockReason": "Buɗe wannan rikodi",
   "recordLockNoDeviceLock": "Fara saita kullen allo a wayarka tukuna.",
   "repeatLabel": "Maimaitawa",

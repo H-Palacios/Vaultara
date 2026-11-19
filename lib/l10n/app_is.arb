@@ -990,7 +990,7 @@
   "travelReminderBodyOk": "Skjölin þín eru tilbúin. Opnaðu ferðina til að fara yfir listann.",
   "travelTripLimit": "Þú getur vistað allt að {count} ferðir. Eyddu gamalli ferð til að bæta við nýrri.",
   "recordLockTitle": "Læsa þessari færslu",
-  "recordLockSubtitle": "Biðja um fingrafar, andlit eða skjálás áður en upplýsingar hennar eru sýndar",
+  "recordLockSubtitle": "Aðeins þú getur opnað það, með fingrafari, andliti eða PIN-númeri símans.",
   "recordLockReason": "Opna þessa færslu",
   "recordLockNoDeviceLock": "Settu fyrst upp skjálás á símanum þínum.",
   "repeatLabel": "Endurtekning",

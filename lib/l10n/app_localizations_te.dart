@@ -2551,7 +2551,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get recordLockTitle => 'ఈ రికార్డును లాక్ చేయండి';
 
   @override
-  String get recordLockSubtitle => 'వివరాలు చూపే ముందు మీ వేలిముద్ర, ముఖం లేదా స్క్రీన్ లాక్ అడగండి';
+  String get recordLockSubtitle => 'దీన్ని మీరు మాత్రమే తెరవగలరు, వేలిముద్ర, ముఖం లేదా ఫోన్ PINతో.';
 
   @override
   String get recordLockReason => 'ఈ రికార్డును అన్‌లాక్ చేయండి';

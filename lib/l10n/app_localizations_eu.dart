@@ -2551,7 +2551,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get recordLockTitle => 'Blokeatu erregistro hau';
 
   @override
-  String get recordLockSubtitle => 'Eskatu hatz-marka, aurpegia edo pantailaren blokeoa xehetasunak erakutsi aurretik';
+  String get recordLockSubtitle => 'Zuk bakarrik ireki dezakezu, hatz-markarekin, aurpegiarekin edo telefonoaren PINarekin.';
 
   @override
   String get recordLockReason => 'Desblokeatu erregistro hau';

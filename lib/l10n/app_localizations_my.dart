@@ -2546,7 +2546,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get recordLockTitle => 'ဤမှတ်တမ်းကို လော့ခ်ချရန်';
 
   @override
-  String get recordLockSubtitle => 'အသေးစိတ်ကို မပြမီ လက်ဗွေ၊ မျက်နှာ သို့မဟုတ် မျက်နှာပြင်လော့ခ်ကို တောင်းရန်';
+  String get recordLockSubtitle => 'သင်သာ လက်ဗွေ၊ မျက်နှာ သို့ ဖုန်း PIN ဖြင့် ဖွင့်နိုင်သည်။';
 
   @override
   String get recordLockReason => 'ဤမှတ်တမ်းကို လော့ခ်ဖွင့်ရန်';

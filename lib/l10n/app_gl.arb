@@ -997,7 +997,7 @@
   "travelReminderBodyOk": "Os teus documentos están listos. Abre a viaxe para revisar a lista.",
   "travelTripLimit": "Podes gardar ata {count} viaxes. Elimina unha viaxe antiga para engadir unha nova.",
   "recordLockTitle": "Bloquear este rexistro",
-  "recordLockSubtitle": "Pide a túa pegada dixital, a cara ou o bloqueo de pantalla antes de mostrar os seus detalles",
+  "recordLockSubtitle": "Só ti podes abrilo, coa túa pegada, a túa cara ou o PIN do teléfono.",
   "recordLockReason": "Desbloquea este rexistro",
   "recordLockNoDeviceLock": "Primeiro configura un bloqueo de pantalla no teu teléfono.",
   "repeatLabel": "Repítese",

@@ -2548,7 +2548,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get recordLockTitle => '锁定此记录';
 
   @override
-  String get recordLockSubtitle => '显示详情前需要验证指纹、面容或屏幕锁';
+  String get recordLockSubtitle => '只有你能打开，需要指纹、面容或手机 PIN 码。';
 
   @override
   String get recordLockReason => '解锁此记录';
@@ -11990,7 +11990,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get recordLockTitle => '锁定此记录';
 
   @override
-  String get recordLockSubtitle => '显示详情前需要验证指纹、面容或屏幕锁';
+  String get recordLockSubtitle => '只有你能打开，需要指纹、面容或手机 PIN 码。';
 
   @override
   String get recordLockReason => '解锁此记录';
@@ -21432,7 +21432,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get recordLockTitle => '鎖定此記錄';
 
   @override
-  String get recordLockSubtitle => '顯示詳細資料前需驗證指紋、臉孔或螢幕鎖定';
+  String get recordLockSubtitle => '只有你能開啟，需要指紋、臉部或手機 PIN 碼。';
 
   @override
   String get recordLockReason => '解鎖此記錄';

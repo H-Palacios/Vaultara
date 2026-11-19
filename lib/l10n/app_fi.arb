@@ -1003,7 +1003,7 @@
   "travelReminderBodyOk": "Asiakirjasi ovat valmiina. Avaa matka ja tarkista lista.",
   "travelTripLimit": "Voit tallentaa enintään {count} matkaa. Poista vanha matka, jotta voit lisätä uuden.",
   "recordLockTitle": "Lukitse tämä tietue",
-  "recordLockSubtitle": "Pyydä sormenjälki, kasvot tai näytön lukitus ennen tietojen näyttämistä",
+  "recordLockSubtitle": "Vain sinä voit avata sen sormenjäljellä, kasvoilla tai puhelimen PIN-koodilla.",
   "recordLockReason": "Avaa tämän tietueen lukitus",
   "recordLockNoDeviceLock": "Ota ensin näytön lukitus käyttöön puhelimessasi.",
   "repeatLabel": "Toistuu",

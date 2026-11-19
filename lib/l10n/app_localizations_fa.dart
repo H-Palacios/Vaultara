@@ -2551,7 +2551,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get recordLockTitle => 'قفل کردن این رکورد';
 
   @override
-  String get recordLockSubtitle => 'پیش از نمایش جزئیات، اثر انگشت، چهره یا قفل صفحه درخواست شود';
+  String get recordLockSubtitle => 'فقط شما می‌توانید آن را باز کنید، با اثر انگشت، چهره یا PIN گوشی.';
 
   @override
   String get recordLockReason => 'قفل این رکورد را باز کنید';

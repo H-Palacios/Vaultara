@@ -2561,7 +2561,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get recordLockTitle => 'Bloķēt šo ierakstu';
 
   @override
-  String get recordLockSubtitle => 'Pirms detaļu rādīšanas prasīt pirksta nospiedumu, seju vai ekrāna bloķēšanu';
+  String get recordLockSubtitle => 'To varat atvērt tikai jūs, ar pirkstu nospiedumu, seju vai tālruņa PIN.';
 
   @override
   String get recordLockReason => 'Atbloķēt šo ierakstu';

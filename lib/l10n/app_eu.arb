@@ -999,7 +999,7 @@
   "travelReminderBodyOk": "Zure dokumentuak prest daude. Ireki bidaia zerrenda egiaztatzeko.",
   "travelTripLimit": "Gehienez {count} bidaia gorde ditzakezu. Ezabatu bidaia zahar bat berri bat gehitzeko.",
   "recordLockTitle": "Blokeatu erregistro hau",
-  "recordLockSubtitle": "Eskatu hatz-marka, aurpegia edo pantailaren blokeoa xehetasunak erakutsi aurretik",
+  "recordLockSubtitle": "Zuk bakarrik ireki dezakezu, hatz-markarekin, aurpegiarekin edo telefonoaren PINarekin.",
   "recordLockReason": "Desblokeatu erregistro hau",
   "recordLockNoDeviceLock": "Konfiguratu lehenik pantailaren blokeoa zure telefonoan.",
   "repeatLabel": "Errepikapena",
