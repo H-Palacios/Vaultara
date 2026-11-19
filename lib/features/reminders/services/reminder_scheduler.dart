@@ -334,14 +334,19 @@ class ReminderScheduler {
     await init();
     await cancelSeries(item.reminderBaseId, keepSnooze: keepSnooze);
     if (!await notificationsAllowed()) return;
-    if (await DailyDigestService.isEnabled()) {
-      DailyDigestService.refreshSoon();
-      return;
-    }
+    // With the daily summary on (the default), reminders that fall on the
+    // same day are grouped into one notification. Only the urgent ones
+    // (due tomorrow, today, or already expired) still come on their own,
+    // so they are never buried in a list.
+    final grouped = await DailyDigestService.isEnabled();
+    if (grouped) DailyDigestService.refreshSoon();
     await localiseChannel(loc);
     await ReminderSoundChannels.prepare(loc);
 
     var plan = planFor(item);
+    if (grouped) {
+      plan = plan.where((step) => isUrgentStep(step.offsetDays)).toList();
+    }
     if (maxSteps != null && plan.length > maxSteps) {
       plan = plan.take(maxSteps < 0 ? 0 : maxSteps).toList();
     }
@@ -462,6 +467,14 @@ class ReminderScheduler {
 
   /// Reserved for the test notification.
   static const int kTestNotificationId = 0x64000061;
+
+  /// Reminders this close to the expiry date (or after it) are urgent: they
+  /// come on their own even when the others are grouped.
+  static const int urgentDays = 1;
+
+  /// True for a reminder that is sent on its own: due tomorrow, due today,
+  /// or a nudge after the record expired.
+  static bool isUrgentStep(int offsetDays) => offsetDays <= urgentDays;
 
   /// First id for the "renewed by itself" notices (up to [_rolledMax]),
   /// after the appointment reminders (0x64000070 to 0x640000B0).

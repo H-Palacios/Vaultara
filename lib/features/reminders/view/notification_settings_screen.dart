@@ -370,9 +370,7 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
             ScreenHeader(title: t.notificationsTitle),
             const SizedBox(height: 16),
             if (_batteryRestricted) ...[
-              BatteryWarningCard(
-                onFix: () => showReminderHelpSheet(context),
-              ),
+              BatteryWarningCard(onFix: () => showReminderHelpSheet(context)),
               const SizedBox(height: 12),
             ],
             SettingsTile(
@@ -406,7 +404,7 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
             SettingsTile(
               icon: Icons.view_agenda_rounded,
               title: t.dailyDigestSwitchTitle,
-              subtitle: t.dailyDigestSwitchSubtitle,
+              subtitle: t.digestGroupedSubtitle,
               trailing: Transform.scale(
                 scale: 0.85,
                 child: CupertinoSwitch(

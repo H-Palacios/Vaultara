@@ -9,11 +9,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:timezone/timezone.dart' as tz;
 
 import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/core/data/user_name.dart';
 import 'package:vaultara/core/navigation/navigator_key.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/platform/background_notification_actions.dart';
+import 'package:vaultara/features/reminders/logic/reminder_copy.dart';
 import 'package:vaultara/features/reminders/logic/reminder_offsets.dart';
 import 'package:vaultara/features/reminders/services/reminder_sound_channels.dart';
 import 'package:vaultara/features/reminders/services/reminder_sound_details.dart';
@@ -55,7 +58,17 @@ class DailyDigestService {
     var on = false;
     try {
       final prefs = await SharedPreferences.getInstance();
-      on = prefs.getBool(_enabledKey(uid)) ?? false;
+      // On unless the person turned it off: grouping is the default, so
+      // several reminders on one day never arrive as several sounds.
+      final saved = prefs.getBool(_enabledKey(uid));
+      on = saved ?? true;
+      if (saved == null) {
+        // First time with grouping on (a new install or this update):
+        // today's reminders that already went out separately are marked
+        // as sent, so no catch-up summary repeats them.
+        await prefs.setBool(_enabledKey(uid), true);
+        await _markTodaySeen(prefs, uid);
+      }
     } catch (_) {
       on = false;
     }
@@ -154,6 +167,8 @@ class DailyDigestService {
           ReminderOffsets.forInitial(start);
       final untilExpiry = Dates.daysBetween(today, record.expiryDate);
       for (final step in steps.toSet()) {
+        // Urgent reminders are sent on their own by ReminderScheduler.
+        if (ReminderScheduler.isUrgentStep(step)) continue;
         final index = untilExpiry - step;
         if (index < 0 || index >= horizonDays) continue;
         final list = out.putIfAbsent(index, () => <TrackedItem>[]);
@@ -220,7 +235,29 @@ class DailyDigestService {
     await _writePlan(prefs, uid, plan);
   }
 
-  static (String, String) _text(AppLocalizations loc, List<TrackedItem> due) {
+  /// One record that day: the same words as its own reminder. Several: one
+  /// summary that counts them and names the first few.
+  static (String, String) _text(
+    AppLocalizations loc,
+    List<TrackedItem> due, {
+    DateTime? day,
+  }) {
+    if (due.length == 1 && day != null) {
+      final record = due.first;
+      final text = ReminderCopy.forStep(
+        loc: loc,
+        offsetDays: Dates.daysBetween(day, record.expiryDate),
+        expiryDate: record.expiryDate,
+        recordName: record.name,
+        personName: PeopleRepository.byId(record.holderId)?.name,
+        firstName: UserName.first,
+        locked: record.locked,
+        isLead: false,
+        isLast: false,
+        useName: false,
+      );
+      return (text.title, text.body);
+    }
     final names = due
         .take(_maxNames)
         .map(
@@ -241,24 +278,24 @@ class DailyDigestService {
     String body,
     String sound,
   ) => NotificationDetails(
-        android: AndroidNotificationDetails(
-          ReminderSoundDetails.channelId(sound),
-          ReminderSoundDetails.isCustom(sound)
-              ? ReminderSoundNames.of(loc, sound)
-              : loc.notifChannelName,
-          channelDescription: loc.notifChannelDescription,
-          sound: ReminderSoundDetails.android(sound),
-          importance: Importance.high,
-          priority: Priority.high,
-          icon: kNotificationIcon,
-          visibility: NotificationVisibility.private,
-          styleInformation: BigTextStyleInformation(body),
-        ),
-        iOS: DarwinNotificationDetails(
-          threadIdentifier: 'vaultara-digest',
-          sound: ReminderSoundDetails.ios(sound),
-        ),
-      );
+    android: AndroidNotificationDetails(
+      ReminderSoundDetails.channelId(sound),
+      ReminderSoundDetails.isCustom(sound)
+          ? ReminderSoundNames.of(loc, sound)
+          : loc.notifChannelName,
+      channelDescription: loc.notifChannelDescription,
+      sound: ReminderSoundDetails.android(sound),
+      importance: Importance.high,
+      priority: Priority.high,
+      icon: kNotificationIcon,
+      visibility: NotificationVisibility.private,
+      styleInformation: BigTextStyleInformation(body),
+    ),
+    iOS: DarwinNotificationDetails(
+      threadIdentifier: 'vaultara-digest',
+      sound: ReminderSoundDetails.ios(sound),
+    ),
+  );
 
   static Future<void> _schedule(
     int id,
@@ -266,9 +303,9 @@ class DailyDigestService {
     List<TrackedItem> due,
     DateTime fire,
   ) async {
-    final text = _text(loc, due);
-    await ReminderSoundChannels.prepare(loc);
     final day = Dates.only(fire);
+    final text = _text(loc, due, day: day);
+    await ReminderSoundChannels.prepare(loc);
     final soonest = due
         .map((record) => Dates.daysBetween(day, record.expiryDate))
         .fold<int>(1 << 30, (a, b) => a < b ? a : b);
