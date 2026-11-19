@@ -9483,4 +9483,29 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Αποθηκεύσαμε τον αριθμό ως αριθμό αναφοράς. Συμπληρώστε τα υπόλοιπα παρακάτω.';
+
+  @override
+  String get detailsReferenceHint => 'Όπως είναι τυπωμένος στην κάρτα, το συμβόλαιο ή το έγγραφο';
+
+  @override
+  String get renewsHelper => 'Για συνδρομές και πάγιες εντολές που ανανεώνονται μόνες. Όταν περάσει η ημερομηνία, το Vaultara τη μεταφέρει μπροστά.';
+
+  @override
+  String get renewsLabel => 'Ανανεώνεται μόνο του';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Προσθήκη $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ανήκει στον/στην $name, που δεν είναι ακόμα στα Άτομά σας.';
+  }
+
+  @override
+  String get scanHolderMine => 'Είναι δικό μου';
+
+  @override
+  String get scanHolderTitle => 'Σε ποιον ανήκει αυτό το έγγραφο;';
 }

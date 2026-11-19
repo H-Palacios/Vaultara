@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "Дугаарыг лавлах дугаар болгон хадгаллаа. Үлдсэнийг доор бөглөнө үү.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Карт, гэрээ эсвэл баримт дээр хэвлэгдсэнээр",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Өөрөө сунгагддаг захиалга, автомат төлбөрт зориулсан. Огноо өнгөрөхөд Vaultara түүнийг урагшлуулна.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Өөрөө сунгагдана",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} нэмэх",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Энэ {name}-ынх бөгөөд таны Хүмүүст хараахан алга.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Минийх",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Энэ хэний баримт вэ?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

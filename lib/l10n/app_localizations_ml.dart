@@ -9478,4 +9478,29 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'നമ്പർ റഫറൻസ് നമ്പറായി ഞങ്ങൾ സേവ് ചെയ്തു. ബാക്കി താഴെ പൂരിപ്പിക്കുക.';
+
+  @override
+  String get detailsReferenceHint => 'കാർഡിലോ പോളിസിയിലോ രേഖയിലോ അച്ചടിച്ചതുപോലെ';
+
+  @override
+  String get renewsHelper => 'തനിയെ പുതുക്കുന്ന സബ്‌സ്‌ക്രിപ്‌ഷനുകൾക്കും ഡെബിറ്റ് ഓർഡറുകൾക്കും. തീയതി കഴിഞ്ഞാൽ Vaultara അത് മുന്നോട്ട് നീക്കും.';
+
+  @override
+  String get renewsLabel => 'തനിയെ പുതുക്കുന്നു';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name ചേർക്കുക';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'ഇത് $name-ന്റേതാണ്, ഇതുവരെ നിങ്ങളുടെ ആളുകളിൽ ഇല്ല.';
+  }
+
+  @override
+  String get scanHolderMine => 'ഇത് എന്റേതാണ്';
+
+  @override
+  String get scanHolderTitle => 'ഇത് ആരുടെ രേഖയാണ്?';
 }

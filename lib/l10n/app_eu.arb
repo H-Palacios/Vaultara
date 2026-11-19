@@ -3988,5 +3988,33 @@
   "scanNumberSavedOnly": "Zenbakia erreferentzia-zenbaki gisa gorde dugu. Bete gainerakoa behean.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Txartelean, polizan edo agirian inprimatuta dagoen bezala",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Berez berritzen diren harpidetza eta helbideratzeetarako. Data igarotzean, Vaultarak aurrera eramaten du.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Berez berritzen da",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Gehitu {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "{name}(r)ena da, oraindik ez dago zure Pertsonetan.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Nirea da",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Noren agiria da hau?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

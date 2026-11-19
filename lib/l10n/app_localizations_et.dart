@@ -9483,4 +9483,29 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Salvestasime numbri viitenumbrina. Täida ülejäänu allpool.';
+
+  @override
+  String get detailsReferenceHint => 'Nagu kaardile, poliisile või dokumendile trükitud';
+
+  @override
+  String get renewsHelper => 'Tellimuste ja otsekorralduste jaoks, mis uuenevad ise. Kui kuupäev möödub, lükkab Vaultara selle edasi.';
+
+  @override
+  String get renewsLabel => 'Uueneb ise';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Lisa $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'See kuulub isikule $name, keda pole veel sinu Inimestes.';
+  }
+
+  @override
+  String get scanHolderMine => 'See on minu';
+
+  @override
+  String get scanHolderTitle => 'Kelle dokument see on?';
 }

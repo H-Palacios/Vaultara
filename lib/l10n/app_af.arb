@@ -4012,5 +4012,33 @@
   "scanNumberSavedOnly": "Ons het die nommer as die verwysingsnommer gestoor. Vul die res hieronder in.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Soos op die kaart, polis of dokument gedruk",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Vir intekeninge en debietorders wat vanself hernu. Wanneer die datum verbygaan, skuif Vaultara dit vorentoe.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Hernu vanself",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Voeg {name} by",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Dit behoort aan {name}, wat nog nie in jou Mense is nie.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Dis myne",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Wie se dokument is dit?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

@@ -3986,5 +3986,33 @@
   "scanNumberSavedOnly": "Gardamos o número como número de referencia. Completa o resto abaixo.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Tal como figura na tarxeta, póliza ou documento",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Para subscricións e domiciliacións que se renovan soas. Cando pasa a data, Vaultara adiántaa.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Renóvase só",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Engadir a {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "É de {name}, que aínda non está nas túas Persoas.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "É meu",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "De quen é este documento?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

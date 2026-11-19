@@ -9415,6 +9415,31 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => '我们已将号码保存为参考编号。请在下方填写其余内容。';
+
+  @override
+  String get detailsReferenceHint => '与卡片、保单或证件上印的一致';
+
+  @override
+  String get renewsHelper => '适用于自动续订的订阅和自动扣款。日期过后，Vaultara 会把它顺延。';
+
+  @override
+  String get renewsLabel => '自动续期';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '添加$name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return '这属于$name，此人还不在你的“人员”中。';
+  }
+
+  @override
+  String get scanHolderMine => '是我的';
+
+  @override
+  String get scanHolderTitle => '这是谁的证件？';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18816,6 +18841,31 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get scanNumberSavedOnly => '我们已将号码保存为参考编号。请在下方填写其余内容。';
+
+  @override
+  String get detailsReferenceHint => '与卡片、保单或证件上印的一致';
+
+  @override
+  String get renewsHelper => '适用于自动续订的订阅和自动扣款。日期过后，Vaultara 会把它顺延。';
+
+  @override
+  String get renewsLabel => '自动续期';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '添加$name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return '这属于$name，此人还不在你的“人员”中。';
+  }
+
+  @override
+  String get scanHolderMine => '是我的';
+
+  @override
+  String get scanHolderTitle => '这是谁的证件？';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -28217,4 +28267,29 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get scanNumberSavedOnly => '我們已將號碼儲存為參考編號。請在下方填寫其餘內容。';
+
+  @override
+  String get detailsReferenceHint => '與卡片、保單或證件上印的一致';
+
+  @override
+  String get renewsHelper => '適用於自動續訂的訂閱和自動扣款。日期過後，Vaultara 會將其順延。';
+
+  @override
+  String get renewsLabel => '自動續期';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '新增$name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return '這屬於$name，此人尚未在你的「人員」中。';
+  }
+
+  @override
+  String get scanHolderMine => '是我的';
+
+  @override
+  String get scanHolderTitle => '這是誰的證件？';
 }

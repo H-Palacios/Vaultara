@@ -3986,5 +3986,33 @@
   "scanNumberSavedOnly": "हमने नंबर को संदर्भ नंबर के रूप में सहेजा है। बाकी नीचे भरें।",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "जैसा कार्ड, पॉलिसी या दस्तावेज़ पर छपा है",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "अपने आप नवीनीकृत होने वाली सदस्यताओं और डेबिट ऑर्डर के लिए। तारीख निकलने पर Vaultara उसे आगे बढ़ा देता है।",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "अपने आप नवीनीकृत होता है",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} जोड़ें",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "यह {name} का है, जो अभी आपके लोगों में नहीं हैं।",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "यह मेरा है",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "यह किसका दस्तावेज़ है?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

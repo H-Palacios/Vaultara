@@ -9477,4 +9477,29 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'ژمارەکەمان وەک ژمارەی ئاماژە پاشەکەوت کرد. ئەوانی تر لە خوارەوە پڕبکەرەوە.';
+
+  @override
+  String get detailsReferenceHint => 'وەک لەسەر کارت، بیمەنامە یان بەڵگەنامە چاپکراوە';
+
+  @override
+  String get renewsHelper => 'بۆ بەشداربوون و پارەدانی ئۆتۆماتیک کە خۆیان نوێ دەبنەوە. کاتێک بەروار تێدەپەڕێت Vaultara دەیباتە پێشەوە.';
+
+  @override
+  String get renewsLabel => 'خۆی نوێ دەبێتەوە';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'زیادکردنی $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'ئەمە هی $nameە، کە هێشتا لە خەڵکەکانت نییە.';
+  }
+
+  @override
+  String get scanHolderMine => 'هی منە';
+
+  @override
+  String get scanHolderTitle => 'ئەم بەڵگەنامەیە هی کێیە؟';
 }

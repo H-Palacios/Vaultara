@@ -9482,4 +9482,29 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Tallensimme numeron viitenumeroksi. Täytä loput alla.';
+
+  @override
+  String get detailsReferenceHint => 'Kuten kortissa, vakuutuskirjassa tai asiakirjassa';
+
+  @override
+  String get renewsHelper => 'Tilauksille ja suoraveloituksille, jotka uusiutuvat itsestään. Kun päivä menee ohi, Vaultara siirtää sitä eteenpäin.';
+
+  @override
+  String get renewsLabel => 'Uusiutuu itsestään';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Lisää $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Tämä kuuluu henkilölle $name, joka ei vielä ole Henkilöissäsi.';
+  }
+
+  @override
+  String get scanHolderMine => 'Se on minun';
+
+  @override
+  String get scanHolderTitle => 'Kenen asiakirja tämä on?';
 }

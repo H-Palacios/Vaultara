@@ -9477,4 +9477,29 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Við vistuðum númerið sem tilvísunarnúmer. Fylltu út restina hér fyrir neðan.';
+
+  @override
+  String get detailsReferenceHint => 'Eins og prentað er á kortið, skírteinið eða skjalið';
+
+  @override
+  String get renewsHelper => 'Fyrir áskriftir og beingreiðslur sem endurnýjast sjálfar. Þegar dagsetningin líður færir Vaultara hana fram.';
+
+  @override
+  String get renewsLabel => 'Endurnýjast sjálft';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Bæta við $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Þetta tilheyrir $name, sem er ekki enn í Fólkinu þínu.';
+  }
+
+  @override
+  String get scanHolderMine => 'Það er mitt';
+
+  @override
+  String get scanHolderTitle => 'Hver á þetta skjal?';
 }

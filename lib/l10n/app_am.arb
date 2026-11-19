@@ -4012,5 +4012,33 @@
   "scanNumberSavedOnly": "ቁጥሩን እንደ ማጣቀሻ ቁጥር አስቀምጠናል። ቀሪውን ከታች ይሙሉ።",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "በካርዱ፣ በፖሊሲው ወይም በሰነዱ ላይ እንደታተመው",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "በራሳቸው ለሚታደሱ ምዝገባዎች እና የባንክ ትዕዛዞች። ቀኑ ሲያልፍ Vaultara ወደፊት ያንቀሳቅሰዋል።",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "በራሱ ይታደሳል",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name}ን አክል",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "ይህ የ{name} ነው፣ እስካሁን በሰዎችዎ ውስጥ የለም።",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "የእኔ ነው",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "ይህ የማን ሰነድ ነው?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

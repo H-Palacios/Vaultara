@@ -9653,4 +9653,29 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Ми зберегли номер як довідковий номер. Заповніть решту нижче.';
+
+  @override
+  String get detailsReferenceHint => 'Як надруковано на картці, полісі чи документі';
+
+  @override
+  String get renewsHelper => 'Для підписок і автоплатежів, що поновлюються самі. Коли дата минає, Vaultara переносить її вперед.';
+
+  @override
+  String get renewsLabel => 'Поновлюється саме';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Додати $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Це належить $name, якого ще немає у ваших Людях.';
+  }
+
+  @override
+  String get scanHolderMine => 'Це моє';
+
+  @override
+  String get scanHolderTitle => 'Чий це документ?';
 }

@@ -9403,4 +9403,29 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => '番号を参照番号として保存しました。残りは下で入力してください。';
+
+  @override
+  String get detailsReferenceHint => 'カード、証券、書類に印字されているとおり';
+
+  @override
+  String get renewsHelper => '自動で更新されるサブスクや口座振替用です。日付が過ぎると Vaultara が先に進めます。';
+
+  @override
+  String get renewsLabel => '自動で更新';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$nameを追加';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'これは$nameさんのものですが、まだ「人」に登録されていません。';
+  }
+
+  @override
+  String get scanHolderMine => '自分のもの';
+
+  @override
+  String get scanHolderTitle => 'これは誰の書類ですか？';
 }

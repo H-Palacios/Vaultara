@@ -3986,5 +3986,33 @@
   "scanNumberSavedOnly": "Na-save namin ang numero bilang reference number. Punan ang iba sa ibaba.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Gaya ng nakalimbag sa card, polisiya o dokumento",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Para sa mga subscription at debit order na kusang nagre-renew. Kapag lumipas ang petsa, inuusog ito ng Vaultara.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Kusang nagre-renew",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Idagdag si {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Kay {name} ito, na wala pa sa iyong mga Tao.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Akin ito",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Kanino ang dokumentong ito?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

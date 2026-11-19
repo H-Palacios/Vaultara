@@ -9683,4 +9683,29 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Shábhálamar an uimhir mar uimhir thagartha. Líon an chuid eile thíos.';
+
+  @override
+  String get detailsReferenceHint => 'Mar atá sé clóite ar an gcárta, an polasaí nó an doiciméad';
+
+  @override
+  String get renewsHelper => 'Do shíntiúis agus orduithe dochair a athnuann iad féin. Nuair a théann an dáta thart, bogann Vaultara ar aghaidh é.';
+
+  @override
+  String get renewsLabel => 'Athnuann sé féin';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Cuir $name leis';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Is le $name é seo, nach bhfuil i do Dhaoine fós.';
+  }
+
+  @override
+  String get scanHolderMine => 'Is liomsa é';
+
+  @override
+  String get scanHolderTitle => 'Cé leis an doiciméad seo?';
 }

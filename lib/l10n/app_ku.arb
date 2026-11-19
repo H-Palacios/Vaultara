@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Me hejmar wekî hejmara referansê tomar kir. Yên mayî li jêr dagire.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Wekî li ser kart, polîçe an belgeyê hatiye çapkirin",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Ji bo abonetî û dayînên otomatîk ên ku xwe nû dikin. Dema dîrok derbas dibe, Vaultara wê dibe pêş.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Xwe nû dike",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} zêde bike",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Ev ya {name} ye, ku hîn ne di Mirovên te de ye.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Ya min e",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Ev belgeya kê ye?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

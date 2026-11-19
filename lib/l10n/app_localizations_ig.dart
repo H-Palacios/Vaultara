@@ -9426,4 +9426,29 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Anyị chekwara nọmba ahụ dị ka nọmba ntụaka. Dejupụta ndị ọzọ n\'okpuru.';
+
+  @override
+  String get detailsReferenceHint => 'Dịka e biri ya na kaadị, iwu ma ọ bụ akwụkwọ';
+
+  @override
+  String get renewsHelper => 'Maka ndenye aha na iwu ịkwụ ụgwọ na-emeghari onwe ha. Mgbe ụbọchị gafere, Vaultara na-ebuga ya n\'ihu.';
+
+  @override
+  String get renewsLabel => 'Na-emeghari onwe ya';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Tinye $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Nke a bụ nke $name, onye na-anọghị na Ndị gị.';
+  }
+
+  @override
+  String get scanHolderMine => 'Ọ bụ nke m';
+
+  @override
+  String get scanHolderTitle => 'Akwụkwọ onye bụ nke a?';
 }

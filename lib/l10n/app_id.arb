@@ -3979,5 +3979,33 @@
   "scanNumberSavedOnly": "Kami menyimpan nomor sebagai nomor referensi. Isi sisanya di bawah.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Seperti tercetak di kartu, polis, atau dokumen",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Untuk langganan dan debit otomatis yang diperpanjang sendiri. Saat tanggalnya lewat, Vaultara memajukannya.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Diperpanjang sendiri",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Tambahkan {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Ini milik {name}, yang belum ada di Orang Anda.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Ini milik saya",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Dokumen siapa ini?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

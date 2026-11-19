@@ -9493,4 +9493,29 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Nous avons enregistré le numéro comme numéro de référence. Complétez le reste ci-dessous.';
+
+  @override
+  String get detailsReferenceHint => 'Tel qu\'imprimé sur la carte, la police ou le document';
+
+  @override
+  String get renewsHelper => 'Pour les abonnements et prélèvements qui se renouvellent seuls. Une fois la date passée, Vaultara l\'avance.';
+
+  @override
+  String get renewsLabel => 'Se renouvelle seul';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Ajouter $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Il appartient à $name, qui n\'est pas encore dans vos Personnes.';
+  }
+
+  @override
+  String get scanHolderMine => 'C\'est à moi';
+
+  @override
+  String get scanHolderTitle => 'À qui est ce document ?';
 }

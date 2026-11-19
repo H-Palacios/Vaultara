@@ -9483,4 +9483,29 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Hem desat el número com a número de referència. Omple la resta a sota.';
+
+  @override
+  String get detailsReferenceHint => 'Tal com surt a la targeta, pòlissa o document';
+
+  @override
+  String get renewsHelper => 'Per a subscripcions i domiciliacions que es renoven soles. Quan passa la data, Vaultara l\'avança.';
+
+  @override
+  String get renewsLabel => 'Es renova sol';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Afegeix $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'És de $name, que encara no és a les teves Persones.';
+  }
+
+  @override
+  String get scanHolderMine => 'És meu';
+
+  @override
+  String get scanHolderTitle => 'De qui és aquest document?';
 }

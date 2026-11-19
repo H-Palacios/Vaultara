@@ -3981,5 +3981,33 @@
   "scanNumberSavedOnly": "Vi lagret nummeret som referansenummer. Fyll ut resten nedenfor.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Slik det står på kortet, polisen eller dokumentet",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "For abonnementer og avtalegiro som fornyes av seg selv. Når datoen passerer, flytter Vaultara den fram.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Fornyes av seg selv",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Legg til {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Dette tilhører {name}, som ikke er i Personer ennå.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Det er mitt",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Hvem eier dette dokumentet?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

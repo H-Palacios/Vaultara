@@ -9477,4 +9477,29 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Нөмірді анықтамалық нөмір ретінде сақтадық. Қалғанын төменде толтырыңыз.';
+
+  @override
+  String get detailsReferenceHint => 'Картада, полисте немесе құжатта басылғандай';
+
+  @override
+  String get renewsHelper => 'Өздігінен жаңартылатын жазылымдар мен автотөлемдер үшін. Күн өткенде Vaultara оны алға жылжытады.';
+
+  @override
+  String get renewsLabel => 'Өздігінен жаңартылады';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name қосу';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Бұл $name иесіне тиесілі, ол әлі Адамдарыңызда жоқ.';
+  }
+
+  @override
+  String get scanHolderMine => 'Менікі';
+
+  @override
+  String get scanHolderTitle => 'Бұл кімнің құжаты?';
 }

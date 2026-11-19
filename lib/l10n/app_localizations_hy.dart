@@ -9478,4 +9478,29 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Համարը պահպանեցինք որպես հղման համար։ Մնացածը լրացրեք ներքևում։';
+
+  @override
+  String get detailsReferenceHint => 'Ինչպես տպված է քարտի, պոլիսի կամ փաստաթղթի վրա';
+
+  @override
+  String get renewsHelper => 'Ինքնաշխատ թարմացվող բաժանորդագրությունների և ավտոմատ վճարումների համար։ Երբ ամսաթիվն անցնում է, Vaultara-ն այն առաջ է տանում։';
+
+  @override
+  String get renewsLabel => 'Թարմացվում է ինքնուրույն';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Ավելացնել $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Սա պատկանում է $name-ին, ով դեռ ձեր Մարդկանց մեջ չէ։';
+  }
+
+  @override
+  String get scanHolderMine => 'Իմն է';
+
+  @override
+  String get scanHolderTitle => 'Ո՞ւմ փաստաթուղթն է սա';
 }

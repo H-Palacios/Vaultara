@@ -9478,4 +9478,29 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'हामीले नम्बरलाई सन्दर्भ नम्बरको रूपमा सेभ गर्यौं। बाँकी तल भर्नुहोस्।';
+
+  @override
+  String get detailsReferenceHint => 'कार्ड, पोलिसी वा कागजातमा छापिए जस्तै';
+
+  @override
+  String get renewsHelper => 'आफैं नवीकरण हुने सदस्यता र डेबिट अर्डरका लागि। मिति बितेपछि Vaultara ले यसलाई अगाडि सार्छ।';
+
+  @override
+  String get renewsLabel => 'आफैं नवीकरण हुन्छ';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name थप्नुहोस्';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'यो $name को हो, जो अझै तपाईंका मानिसहरूमा छैनन्।';
+  }
+
+  @override
+  String get scanHolderMine => 'यो मेरो हो';
+
+  @override
+  String get scanHolderTitle => 'यो कसको कागजात हो?';
 }

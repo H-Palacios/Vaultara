@@ -3979,5 +3979,33 @@
   "scanNumberSavedOnly": "Við vistuðum númerið sem tilvísunarnúmer. Fylltu út restina hér fyrir neðan.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Eins og prentað er á kortið, skírteinið eða skjalið",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Fyrir áskriftir og beingreiðslur sem endurnýjast sjálfar. Þegar dagsetningin líður færir Vaultara hana fram.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Endurnýjast sjálft",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Bæta við {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Þetta tilheyrir {name}, sem er ekki enn í Fólkinu þínu.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Það er mitt",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Hver á þetta skjal?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

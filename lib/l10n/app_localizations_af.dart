@@ -9483,4 +9483,29 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Ons het die nommer as die verwysingsnommer gestoor. Vul die res hieronder in.';
+
+  @override
+  String get detailsReferenceHint => 'Soos op die kaart, polis of dokument gedruk';
+
+  @override
+  String get renewsHelper => 'Vir intekeninge en debietorders wat vanself hernu. Wanneer die datum verbygaan, skuif Vaultara dit vorentoe.';
+
+  @override
+  String get renewsLabel => 'Hernu vanself';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Voeg $name by';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Dit behoort aan $name, wat nog nie in jou Mense is nie.';
+  }
+
+  @override
+  String get scanHolderMine => 'Dis myne';
+
+  @override
+  String get scanHolderTitle => 'Wie se dokument is dit?';
 }

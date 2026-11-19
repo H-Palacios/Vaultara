@@ -4139,5 +4139,33 @@
   "scanNumberSavedOnly": "Salvestasime numbri viitenumbrina. Täida ülejäänu allpool.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Nagu kaardile, poliisile või dokumendile trükitud",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Tellimuste ja otsekorralduste jaoks, mis uuenevad ise. Kui kuupäev möödub, lükkab Vaultara selle edasi.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Uueneb ise",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Lisa {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "See kuulub isikule {name}, keda pole veel sinu Inimestes.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "See on minu",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Kelle dokument see on?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

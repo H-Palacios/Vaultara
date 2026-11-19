@@ -9477,4 +9477,29 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'ቁጥሩን እንደ ማጣቀሻ ቁጥር አስቀምጠናል። ቀሪውን ከታች ይሙሉ።';
+
+  @override
+  String get detailsReferenceHint => 'በካርዱ፣ በፖሊሲው ወይም በሰነዱ ላይ እንደታተመው';
+
+  @override
+  String get renewsHelper => 'በራሳቸው ለሚታደሱ ምዝገባዎች እና የባንክ ትዕዛዞች። ቀኑ ሲያልፍ Vaultara ወደፊት ያንቀሳቅሰዋል።';
+
+  @override
+  String get renewsLabel => 'በራሱ ይታደሳል';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$nameን አክል';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'ይህ የ$name ነው፣ እስካሁን በሰዎችዎ ውስጥ የለም።';
+  }
+
+  @override
+  String get scanHolderMine => 'የእኔ ነው';
+
+  @override
+  String get scanHolderTitle => 'ይህ የማን ሰነድ ነው?';
 }

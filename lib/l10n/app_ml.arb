@@ -3724,5 +3724,33 @@
   "scanNumberSavedOnly": "നമ്പർ റഫറൻസ് നമ്പറായി ഞങ്ങൾ സേവ് ചെയ്തു. ബാക്കി താഴെ പൂരിപ്പിക്കുക.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "കാർഡിലോ പോളിസിയിലോ രേഖയിലോ അച്ചടിച്ചതുപോലെ",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "തനിയെ പുതുക്കുന്ന സബ്‌സ്‌ക്രിപ്‌ഷനുകൾക്കും ഡെബിറ്റ് ഓർഡറുകൾക്കും. തീയതി കഴിഞ്ഞാൽ Vaultara അത് മുന്നോട്ട് നീക്കും.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "തനിയെ പുതുക്കുന്നു",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} ചേർക്കുക",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "ഇത് {name}-ന്റേതാണ്, ഇതുവരെ നിങ്ങളുടെ ആളുകളിൽ ഇല്ല.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "ഇത് എന്റേതാണ്",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "ഇത് ആരുടെ രേഖയാണ്?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

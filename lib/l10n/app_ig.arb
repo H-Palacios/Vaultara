@@ -3979,5 +3979,33 @@
   "scanNumberSavedOnly": "Anyị chekwara nọmba ahụ dị ka nọmba ntụaka. Dejupụta ndị ọzọ n'okpuru.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Dịka e biri ya na kaadị, iwu ma ọ bụ akwụkwọ",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Maka ndenye aha na iwu ịkwụ ụgwọ na-emeghari onwe ha. Mgbe ụbọchị gafere, Vaultara na-ebuga ya n'ihu.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Na-emeghari onwe ya",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Tinye {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Nke a bụ nke {name}, onye na-anọghị na Ndị gị.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Ọ bụ nke m",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Akwụkwọ onye bụ nke a?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

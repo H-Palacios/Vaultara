@@ -9426,4 +9426,29 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'A fi nọ́mbà náà pamọ́ gẹ́gẹ́ bí nọ́mbà ìtọ́kasí. Kún ìyókù nísàlẹ̀.';
+
+  @override
+  String get detailsReferenceHint => 'Bí a ṣe tẹ̀ ẹ́ sórí káàdì, ìlànà tàbí ìwé';
+
+  @override
+  String get renewsHelper => 'Fún ìforúkọsílẹ̀ àti àṣẹ ìyọkúrò owó tí ó ń sọ ara rẹ̀ di tuntun. Nígbà tí ọjọ́ bá kọjá, Vaultara á gbé e síwájú.';
+
+  @override
+  String get renewsLabel => 'Ó ń sọ ara rẹ̀ di tuntun';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Fi $name kún';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Èyí jẹ́ ti $name, tí kò tíì sí nínú Àwọn Ènìyàn rẹ.';
+  }
+
+  @override
+  String get scanHolderMine => 'Tèmi ni';
+
+  @override
+  String get scanHolderTitle => 'Ìwé ta ni èyí?';
 }

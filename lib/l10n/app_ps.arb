@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "شمېره مو د حوالې شمېرې په توګه خوندي کړه. پاتې برخه لاندې ډکه کړئ.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "لکه څنګه چې په کارت، بیمه یا سند چاپ شوی",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "د هغو ګډونونو او اتومات ورکړو لپاره چې پخپله نوي کېږي. کله چې نېټه تېره شي Vaultara یې مخ ته وړي.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "پخپله نوي کېږي",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} زیات کړئ",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "دا د {name} ده، چې لا ستاسو په خلکو کې نه دی.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "زما دی",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "دا د چا سند دی؟",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

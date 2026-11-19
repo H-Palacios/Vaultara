@@ -9478,4 +9478,29 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Me hejmar wekî hejmara referansê tomar kir. Yên mayî li jêr dagire.';
+
+  @override
+  String get detailsReferenceHint => 'Wekî li ser kart, polîçe an belgeyê hatiye çapkirin';
+
+  @override
+  String get renewsHelper => 'Ji bo abonetî û dayînên otomatîk ên ku xwe nû dikin. Dema dîrok derbas dibe, Vaultara wê dibe pêş.';
+
+  @override
+  String get renewsLabel => 'Xwe nû dike';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name zêde bike';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ev ya $name ye, ku hîn ne di Mirovên te de ye.';
+  }
+
+  @override
+  String get scanHolderMine => 'Ya min e';
+
+  @override
+  String get scanHolderTitle => 'Ev belgeya kê ye?';
 }

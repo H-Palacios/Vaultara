@@ -9483,4 +9483,29 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Vi har gemt nummeret som referencenummer. Udfyld resten nedenfor.';
+
+  @override
+  String get detailsReferenceHint => 'Som trykt på kortet, policen eller dokumentet';
+
+  @override
+  String get renewsHelper => 'Til abonnementer og betalingsaftaler, der fornyes af sig selv. Når datoen passerer, rykker Vaultara den frem.';
+
+  @override
+  String get renewsLabel => 'Fornyes af sig selv';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Tilføj $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Det tilhører $name, som endnu ikke er i dine Personer.';
+  }
+
+  @override
+  String get scanHolderMine => 'Det er mit';
+
+  @override
+  String get scanHolderTitle => 'Hvis dokument er det?';
 }

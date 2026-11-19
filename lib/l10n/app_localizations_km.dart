@@ -9413,4 +9413,29 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'យើងបានរក្សាទុកលេខជាលេខយោង។ បំពេញផ្នែកដែលនៅសល់ខាងក្រោម។';
+
+  @override
+  String get detailsReferenceHint => 'ដូចបានបោះពុម្ពនៅលើកាត បណ្ណសន្យា ឬឯកសារ';
+
+  @override
+  String get renewsHelper => 'សម្រាប់ការជាវ និងការកាត់ប្រាក់ស្វ័យប្រវត្តិដែលបន្តដោយខ្លួនឯង។ ពេលកាលបរិច្ឆេទកន្លងផុត Vaultara ពន្យារវាទៅមុខ។';
+
+  @override
+  String get renewsLabel => 'បន្តដោយខ្លួនឯង';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'បន្ថែម $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'នេះជារបស់ $name ដែលមិនទាន់នៅក្នុងមនុស្សរបស់អ្នក។';
+  }
+
+  @override
+  String get scanHolderMine => 'វាជារបស់ខ្ញុំ';
+
+  @override
+  String get scanHolderTitle => 'តើឯកសារនេះជារបស់អ្នកណា?';
 }

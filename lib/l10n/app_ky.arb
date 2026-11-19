@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "Номерди маалымдама номери катары сактадык. Калганын төмөндө толтуруңуз.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Картада, полисте же документте басылгандай",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Өзү жаңыланган жазылуулар жана автотөлөмдөр үчүн. Күн өткөндө Vaultara аны алдыга жылдырат.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Өзү жаңыланат",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} кошуу",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Бул {name} адамга таандык, ал азырынча Адамдарыңызда жок.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Меники",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Бул кимдин документи?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

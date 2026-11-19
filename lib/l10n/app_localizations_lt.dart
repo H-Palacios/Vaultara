@@ -9635,4 +9635,29 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Numerį išsaugojome kaip nuorodos numerį. Kitką užpildykite žemiau.';
+
+  @override
+  String get detailsReferenceHint => 'Kaip išspausdinta kortelėje, polise ar dokumente';
+
+  @override
+  String get renewsHelper => 'Prenumeratoms ir tiesioginiams debetams, kurie atsinaujina patys. Kai data praeina, Vaultara ją perkelia į priekį.';
+
+  @override
+  String get renewsLabel => 'Atsinaujina pats';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Pridėti $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Tai priklauso asmeniui $name, kurio dar nėra jūsų Žmonėse.';
+  }
+
+  @override
+  String get scanHolderMine => 'Tai mano';
+
+  @override
+  String get scanHolderTitle => 'Kieno tai dokumentas?';
 }

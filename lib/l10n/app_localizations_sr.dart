@@ -9562,6 +9562,31 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Сачували смо број као референтни број. Остало попуните испод.';
+
+  @override
+  String get detailsReferenceHint => 'Како је одштампано на картици, полиси или документу';
+
+  @override
+  String get renewsHelper => 'За претплате и трајне налоге који се сами обнављају. Када датум прође, Vaultara га помера напред.';
+
+  @override
+  String get renewsLabel => 'Обнавља се само';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Додај $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ово припада особи $name, која још није у вашим Особама.';
+  }
+
+  @override
+  String get scanHolderMine => 'Моје је';
+
+  @override
+  String get scanHolderTitle => 'Чији је ово документ?';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -19121,6 +19146,31 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get scanNumberSavedOnly => 'Сачували смо број као референтни број. Остало попуните испод.';
+
+  @override
+  String get detailsReferenceHint => 'Како је одштампано на картици, полиси или документу';
+
+  @override
+  String get renewsHelper => 'За претплате и трајне налоге који се сами обнављају. Када датум прође, Vaultara га помера напред.';
+
+  @override
+  String get renewsLabel => 'Обнавља се само';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Додај $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ово припада особи $name, која још није у вашим Особама.';
+  }
+
+  @override
+  String get scanHolderMine => 'Моје је';
+
+  @override
+  String get scanHolderTitle => 'Чији је ово документ?';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -28676,4 +28726,29 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get scanNumberSavedOnly => 'Sačuvali smo broj kao referentni broj. Ostalo popunite ispod.';
+
+  @override
+  String get detailsReferenceHint => 'Kako je odštampano na kartici, polisi ili dokumentu';
+
+  @override
+  String get renewsHelper => 'Za pretplate i trajne naloge koji se sami obnavljaju. Kada datum prođe, Vaultara ga pomera napred.';
+
+  @override
+  String get renewsLabel => 'Obnavlja se samo';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Dodaj $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ovo pripada osobi $name, koja još nije u vašim Osobama.';
+  }
+
+  @override
+  String get scanHolderMine => 'Moje je';
+
+  @override
+  String get scanHolderTitle => 'Čiji je ovo dokument?';
 }

@@ -3724,5 +3724,33 @@
   "scanNumberSavedOnly": "Запазихме номера като референтен номер. Попълнете останалото по-долу.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Както е отпечатан на картата, полицата или документа",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "За абонаменти и директни дебити, които се подновяват сами. Когато датата мине, Vaultara я премества напред.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Подновява се само",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Добави {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Това е на {name}, който още не е в Хора.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Мое е",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Чий е този документ?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

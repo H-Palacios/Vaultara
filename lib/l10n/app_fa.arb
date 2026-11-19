@@ -3986,5 +3986,33 @@
   "scanNumberSavedOnly": "شماره را به‌عنوان شماره مرجع ذخیره کردیم. بقیه را پایین پر کنید.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "همان‌طور که روی کارت، بیمه‌نامه یا سند چاپ شده",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "برای اشتراک‌ها و برداشت‌های خودکار که خودشان تمدید می‌شوند. وقتی تاریخ بگذرد Vaultara آن را جلو می‌برد.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "خودش تمدید می‌شود",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "افزودن {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "متعلق به {name} است که هنوز در افراد شما نیست.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "مال من است",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "این سند مال کیست؟",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

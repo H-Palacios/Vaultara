@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "ພວກເຮົາບັນທຶກເລກເປັນເລກອ້າງອີງແລ້ວ. ຕື່ມສ່ວນທີ່ເຫຼືອຂ້າງລຸ່ມ.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "ຕາມທີ່ພິມຢູ່ເທິງບັດ, ກົມທັນ ຫຼື ເອກະສານ",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "ສຳລັບການສະໝັກ ແລະ ການຕັດເງິນອັດຕະໂນມັດທີ່ຕໍ່ອາຍຸເອງ. ເມື່ອວັນທີຜ່ານໄປ Vaultara ຈະເລື່ອນມັນໄປໜ້າ.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "ຕໍ່ອາຍຸເອງ",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "ເພີ່ມ {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "ອັນນີ້ເປັນຂອງ {name}, ຜູ້ທີ່ຍັງບໍ່ຢູ່ໃນຄົນຂອງທ່ານ.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "ມັນເປັນຂອງຂ້ອຍ",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "ນີ້ແມ່ນເອກະສານຂອງໃຜ?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

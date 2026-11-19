@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Tumehifadhi namba kama namba ya marejeo. Jaza sehemu iliyobaki hapa chini.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kama ilivyochapishwa kwenye kadi, sera au hati",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Kwa usajili na makato ya moja kwa moja yanayojihuisha yenyewe. Tarehe ikipita, Vaultara huisogeza mbele.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Hujihuisha yenyewe",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Ongeza {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Hii ni ya {name}, ambaye bado hayupo kwenye Watu wako.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Ni yangu",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Hati hii ni ya nani?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

@@ -3986,5 +3986,33 @@
   "scanNumberSavedOnly": "番号を参照番号として保存しました。残りは下で入力してください。",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "カード、証券、書類に印字されているとおり",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "自動で更新されるサブスクや口座振替用です。日付が過ぎると Vaultara が先に進めます。",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "自動で更新",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name}を追加",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "これは{name}さんのものですが、まだ「人」に登録されていません。",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "自分のもの",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "これは誰の書類ですか？",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

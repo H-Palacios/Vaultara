@@ -9735,4 +9735,29 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'حفظنا الرقم كرقم مرجعي. أكمل الباقي أدناه.';
+
+  @override
+  String get detailsReferenceHint => 'كما هو مطبوع على البطاقة أو الوثيقة';
+
+  @override
+  String get renewsHelper => 'للاشتراكات والخصم المباشر الذي يتجدد تلقائيًا. عند مرور التاريخ ينقله Vaultara إلى الأمام.';
+
+  @override
+  String get renewsLabel => 'يتجدد تلقائيًا';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'إضافة $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'هذه تخص $name، وهو غير موجود في الأشخاص بعد.';
+  }
+
+  @override
+  String get scanHolderMine => 'إنها لي';
+
+  @override
+  String get scanHolderTitle => 'لمن هذه الوثيقة؟';
 }

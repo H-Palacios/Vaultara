@@ -3724,5 +3724,33 @@
   "scanNumberSavedOnly": "Raqamni ma'lumot raqami sifatida saqladik. Qolganini quyida to'ldiring.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Karta, polis yoki hujjatda yozilganidek",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "O'zi yangilanadigan obunalar va avtomatik to'lovlar uchun. Sana o'tganda Vaultara uni oldinga suradi.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "O'zi yangilanadi",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} qo'shish",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Bu {name}ga tegishli, u hali Odamlaringizda yo'q.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Meniki",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Bu kimning hujjati?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

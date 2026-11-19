@@ -3988,5 +3988,33 @@
   "scanNumberSavedOnly": "Համարը պահպանեցինք որպես հղման համար։ Մնացածը լրացրեք ներքևում։",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Ինչպես տպված է քարտի, պոլիսի կամ փաստաթղթի վրա",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Ինքնաշխատ թարմացվող բաժանորդագրությունների և ավտոմատ վճարումների համար։ Երբ ամսաթիվն անցնում է, Vaultara-ն այն առաջ է տանում։",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Թարմացվում է ինքնուրույն",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Ավելացնել {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Սա պատկանում է {name}-ին, ով դեռ ձեր Մարդկանց մեջ չէ։",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Իմն է",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Ո՞ւմ փաստաթուղթն է սա",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

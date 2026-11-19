@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Številko smo shranili kot referenčno številko. Ostalo izpolnite spodaj.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kot je natisnjeno na kartici, polici ali dokumentu",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Za naročnine in trajnike, ki se podaljšajo sami. Ko datum mine, ga Vaultara premakne naprej.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Se podaljša samo",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Dodaj {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "To pripada osebi {name}, ki še ni med vašimi Osebami.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Moje je",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Čigav je ta dokument?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

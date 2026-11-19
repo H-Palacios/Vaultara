@@ -4005,5 +4005,33 @@
   "scanNumberSavedOnly": "Die Nummer wurde als Referenznummer gespeichert. Fülle den Rest unten aus.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Wie auf Karte, Police oder Dokument gedruckt",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Für Abos und Lastschriften, die sich selbst verlängern. Wenn das Datum vorbei ist, schiebt Vaultara es weiter.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Verlängert sich selbst",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} hinzufügen",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Das gehört {name}, noch nicht in deinen Personen.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Gehört mir",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Wem gehört dieses Dokument?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

@@ -3986,5 +3986,33 @@
   "scanNumberSavedOnly": "Mun ajiye lambar a matsayin lambar shaida. Cika sauran a ƙasa.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kamar yadda aka buga a kati, inshora ko takarda",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Don biyan kuɗi da umarnin cire kuɗi da ke sabunta kansu. Idan ranar ta wuce, Vaultara yana matsar da ita gaba.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Yana sabunta kansa",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Ƙara {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Wannan na {name} ne, wanda bai shiga Mutanenka ba tukuna.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Nawa ne",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Takardar wane ce wannan?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

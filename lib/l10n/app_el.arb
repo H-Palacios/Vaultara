@@ -3981,5 +3981,33 @@
   "scanNumberSavedOnly": "Αποθηκεύσαμε τον αριθμό ως αριθμό αναφοράς. Συμπληρώστε τα υπόλοιπα παρακάτω.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Όπως είναι τυπωμένος στην κάρτα, το συμβόλαιο ή το έγγραφο",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Για συνδρομές και πάγιες εντολές που ανανεώνονται μόνες. Όταν περάσει η ημερομηνία, το Vaultara τη μεταφέρει μπροστά.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Ανανεώνεται μόνο του",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Προσθήκη {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Ανήκει στον/στην {name}, που δεν είναι ακόμα στα Άτομά σας.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Είναι δικό μου",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Σε ποιον ανήκει αυτό το έγγραφο;",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "Го зачувавме бројот како референтен број. Остатокот пополнете подолу.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Како што е испечатено на картичката, полисата или документот",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "За претплати и трајни налози што се обновуваат сами. Кога датумот ќе помине, Vaultara го поместува напред.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Се обновува само",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Додај {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Ова му припаѓа на {name}, кој сè уште не е во вашите Луѓе.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Мое е",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Чиј е овој документ?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

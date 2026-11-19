@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Waxaan u kaydinay lambarka lambar tixraac ahaan. Buuxi inta kale hoos.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Sida ku daabacan kaarka, caymiska ama dukumentiga",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Rukummada iyo lacag-goynta si iskood ah u cusboonaada. Marka taariikhdu dhaafto, Vaultara ayaa hore u dhaqaajisa.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Iskiis ayuu u cusboonaadaa",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Ku dar {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Tani waxay leedahay {name}, oo aan weli ku jirin Dadkaaga.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Waa kayga",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Dukumentigan yaa leh?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

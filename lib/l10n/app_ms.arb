@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Kami menyimpan nombor itu sebagai nombor rujukan. Isi selebihnya di bawah.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Seperti yang dicetak pada kad, polisi atau dokumen",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Untuk langganan dan debit langsung yang diperbaharui sendiri. Apabila tarikh berlalu, Vaultara memajukannya.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Diperbaharui sendiri",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Tambah {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Ini milik {name}, yang belum ada dalam Orang anda.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Ini milik saya",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Dokumen siapa ini?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

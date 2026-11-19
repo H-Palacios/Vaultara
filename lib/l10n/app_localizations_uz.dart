@@ -9478,4 +9478,29 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Raqamni ma\'lumot raqami sifatida saqladik. Qolganini quyida to\'ldiring.';
+
+  @override
+  String get detailsReferenceHint => 'Karta, polis yoki hujjatda yozilganidek';
+
+  @override
+  String get renewsHelper => 'O\'zi yangilanadigan obunalar va avtomatik to\'lovlar uchun. Sana o\'tganda Vaultara uni oldinga suradi.';
+
+  @override
+  String get renewsLabel => 'O\'zi yangilanadi';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name qo\'shish';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Bu ${name}ga tegishli, u hali Odamlaringizda yo\'q.';
+  }
+
+  @override
+  String get scanHolderMine => 'Meniki';
+
+  @override
+  String get scanHolderTitle => 'Bu kimning hujjati?';
 }

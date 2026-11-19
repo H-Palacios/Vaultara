@@ -9415,4 +9415,29 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => '번호를 참조 번호로 저장했습니다. 나머지는 아래에서 입력하세요.';
+
+  @override
+  String get detailsReferenceHint => '카드, 증권 또는 서류에 인쇄된 대로';
+
+  @override
+  String get renewsHelper => '자동으로 갱신되는 구독과 자동이체용입니다. 날짜가 지나면 Vaultara가 다음 날짜로 옮깁니다.';
+
+  @override
+  String get renewsLabel => '자동 갱신';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name 추가';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return '$name님의 것이지만 아직 사람 목록에 없습니다.';
+  }
+
+  @override
+  String get scanHolderMine => '내 것이에요';
+
+  @override
+  String get scanHolderTitle => '누구의 서류인가요?';
 }

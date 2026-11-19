@@ -9557,4 +9557,29 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Spremili smo broj kao referentni broj. Ostalo ispunite ispod.';
+
+  @override
+  String get detailsReferenceHint => 'Kako je otisnuto na kartici, polici ili dokumentu';
+
+  @override
+  String get renewsHelper => 'Za pretplate i trajne naloge koji se sami obnavljaju. Kad datum prođe, Vaultara ga pomakne naprijed.';
+
+  @override
+  String get renewsLabel => 'Obnavlja se samo';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Dodaj $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ovo pripada osobi $name, koja još nije u vašim Osobama.';
+  }
+
+  @override
+  String get scanHolderMine => 'Moje je';
+
+  @override
+  String get scanHolderTitle => 'Čiji je ovo dokument?';
 }

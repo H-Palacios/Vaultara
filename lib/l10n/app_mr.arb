@@ -3724,5 +3724,33 @@
   "scanNumberSavedOnly": "आम्ही क्रमांक संदर्भ क्रमांक म्हणून जतन केला. उरलेले खाली भरा.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "कार्ड, पॉलिसी किंवा दस्तऐवजावर छापल्याप्रमाणे",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "आपोआप नूतनीकरण होणाऱ्या सदस्यता आणि डेबिट ऑर्डरसाठी. तारीख उलटल्यावर Vaultara ती पुढे नेते.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "आपोआप नूतनीकरण",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} जोडा",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "हे {name} यांचे आहे, जे अजून तुमच्या लोकांमध्ये नाहीत.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "हे माझे आहे",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "हा दस्तऐवज कोणाचा आहे?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

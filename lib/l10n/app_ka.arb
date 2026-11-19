@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "ნომერი შევინახეთ საცნობარო ნომრად. დანარჩენი ქვემოთ შეავსეთ.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "როგორც დაბეჭდილია ბარათზე, პოლისზე ან დოკუმენტზე",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "თავად განახლებადი გამოწერებისა და ავტომატური გადახდებისთვის. როცა თარიღი გავა, Vaultara მას წინ გადაწევს.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "თავად ახლდება",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name}-ის დამატება",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "ეს ეკუთვნის {name}-ს, რომელიც ჯერ არ არის თქვენს ადამიანებში.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "ჩემია",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "ვისი დოკუმენტია ეს?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

@@ -9659,4 +9659,29 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Мы сохранили номер как справочный номер. Заполните остальное ниже.';
+
+  @override
+  String get detailsReferenceHint => 'Как напечатано на карте, полисе или документе';
+
+  @override
+  String get renewsHelper => 'Для подписок и автоплатежей, которые продлеваются сами. Когда дата проходит, Vaultara переносит её вперёд.';
+
+  @override
+  String get renewsLabel => 'Продлевается само';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Добавить $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Это принадлежит $name, которого ещё нет в ваших Людях.';
+  }
+
+  @override
+  String get scanHolderMine => 'Это моё';
+
+  @override
+  String get scanHolderTitle => 'Чей это документ?';
 }

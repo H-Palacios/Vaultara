@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Guardámos o número como número de referência. Preencha o resto abaixo.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Tal como impresso no cartão, apólice ou documento",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Para subscrições e débitos diretos que se renovam sozinhos. Quando a data passa, o Vaultara avança-a.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Renova-se sozinho",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Adicionar {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Pertence a {name}, que ainda não está nas suas Pessoas.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "É meu",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "De quem é este documento?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

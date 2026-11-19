@@ -3967,5 +3967,33 @@
   "scanNumberSavedOnly": "我們已將號碼儲存為參考編號。請在下方填寫其餘內容。",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "與卡片、保單或證件上印的一致",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "適用於自動續訂的訂閱和自動扣款。日期過後，Vaultara 會將其順延。",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "自動續期",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "新增{name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "這屬於{name}，此人尚未在你的「人員」中。",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "是我的",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "這是誰的證件？",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

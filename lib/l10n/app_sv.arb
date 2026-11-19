@@ -3967,5 +3967,33 @@
   "scanNumberSavedOnly": "Vi sparade numret som referensnummer. Fyll i resten nedan.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Som det står på kortet, försäkringsbrevet eller dokumentet",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "För abonnemang och autogiro som förnyas av sig själva. När datumet passerar flyttar Vaultara fram det.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Förnyas av sig själv",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Lägg till {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Det tillhör {name}, som inte finns i dina Personer än.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Det är mitt",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Vems dokument är det här?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

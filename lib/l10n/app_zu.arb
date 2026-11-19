@@ -3966,5 +3966,33 @@
   "scanNumberSavedOnly": "Sigcine inombolo njengenombolo yereferensi. Gcwalisa okusele ngezansi.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Njengoba kuphrintiwe ekhadini, kunqubomgomo noma kudokhumenti",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Okokubhalisa nama-oda edebhithi azivuselelayo. Uma usuku seludlulile, i-Vaultara iluhambisa phambili.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Iyazivuselela",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Engeza {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Lokhu kungokuka-{name}, ongakabi kubantu bakho.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Ngokwami",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Le dokhumenti ingekabani?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

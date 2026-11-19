@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Chúng tôi đã lưu số này làm số tham chiếu. Điền phần còn lại bên dưới.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Như in trên thẻ, hợp đồng hoặc giấy tờ",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Dành cho gói đăng ký và lệnh ghi nợ tự gia hạn. Khi qua ngày, Vaultara sẽ dời sang kỳ sau.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Tự gia hạn",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Thêm {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Giấy tờ này của {name}, người chưa có trong danh sách Mọi người.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Của tôi",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Giấy tờ này của ai?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

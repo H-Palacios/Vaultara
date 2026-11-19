@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "Numuru saglabājām kā atsauces numuru. Pārējo aizpildiet zemāk.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kā uzdrukāts uz kartes, polises vai dokumenta",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Abonementiem un tiešajiem debetiem, kas atjaunojas paši. Kad datums paiet, Vaultara to pārceļ uz priekšu.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Atjaunojas pats",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Pievienot {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Tas pieder {name}, kas vēl nav jūsu Cilvēkos.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Tas ir mans",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Kā dokuments tas ir?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

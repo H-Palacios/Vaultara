@@ -9483,4 +9483,29 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Zenbakia erreferentzia-zenbaki gisa gorde dugu. Bete gainerakoa behean.';
+
+  @override
+  String get detailsReferenceHint => 'Txartelean, polizan edo agirian inprimatuta dagoen bezala';
+
+  @override
+  String get renewsHelper => 'Berez berritzen diren harpidetza eta helbideratzeetarako. Data igarotzean, Vaultarak aurrera eramaten du.';
+
+  @override
+  String get renewsLabel => 'Berez berritzen da';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Gehitu $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return '$name(r)ena da, oraindik ez dago zure Pertsonetan.';
+  }
+
+  @override
+  String get scanHolderMine => 'Nirea da';
+
+  @override
+  String get scanHolderTitle => 'Noren agiria da hau?';
 }

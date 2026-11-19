@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Numarayı referans numarası olarak kaydettik. Gerisini aşağıda doldurun.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kart, poliçe veya belgede yazdığı gibi",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Kendiliğinden yenilenen abonelikler ve otomatik ödemeler için. Tarih geçince Vaultara onu ileri alır.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Kendiliğinden yenilenir",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} ekle",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Bu, henüz Kişilerinizde olmayan {name} adlı kişiye ait.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Benim",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Bu belge kimin?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

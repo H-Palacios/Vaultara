@@ -9490,4 +9490,29 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Abbiamo salvato il numero come numero di riferimento. Completa il resto qui sotto.';
+
+  @override
+  String get detailsReferenceHint => 'Come stampato su carta, polizza o documento';
+
+  @override
+  String get renewsHelper => 'Per abbonamenti e addebiti diretti che si rinnovano da soli. Quando la data passa, Vaultara la sposta in avanti.';
+
+  @override
+  String get renewsLabel => 'Si rinnova da solo';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Aggiungi $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Appartiene a $name, che non è ancora tra le tue Persone.';
+  }
+
+  @override
+  String get scanHolderMine => 'È mio';
+
+  @override
+  String get scanHolderTitle => 'Di chi è questo documento?';
 }

@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "எண்ணை குறிப்பு எண்ணாக சேமித்தோம். மீதியை கீழே நிரப்புங்கள்.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "அட்டை, பாலிசி அல்லது ஆவணத்தில் அச்சிடப்பட்டபடி",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "தானாக புதுப்பிக்கும் சந்தாக்கள் மற்றும் டெபிட் ஆர்டர்களுக்கு. தேதி கடந்ததும் Vaultara அதை முன்னோக்கி நகர்த்தும்.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "தானாக புதுப்பிக்கும்",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} சேர்",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "இது {name} உடையது, அவர் இன்னும் உங்கள் நபர்களில் இல்லை.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "இது என்னுடையது",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "இது யாருடைய ஆவணம்?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

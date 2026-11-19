@@ -3724,5 +3724,33 @@
   "scanNumberSavedOnly": "យើងបានរក្សាទុកលេខជាលេខយោង។ បំពេញផ្នែកដែលនៅសល់ខាងក្រោម។",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "ដូចបានបោះពុម្ពនៅលើកាត បណ្ណសន្យា ឬឯកសារ",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "សម្រាប់ការជាវ និងការកាត់ប្រាក់ស្វ័យប្រវត្តិដែលបន្តដោយខ្លួនឯង។ ពេលកាលបរិច្ឆេទកន្លងផុត Vaultara ពន្យារវាទៅមុខ។",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "បន្តដោយខ្លួនឯង",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "បន្ថែម {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "នេះជារបស់ {name} ដែលមិនទាន់នៅក្នុងមនុស្សរបស់អ្នក។",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "វាជារបស់ខ្ញុំ",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "តើឯកសារនេះជារបស់អ្នកណា?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

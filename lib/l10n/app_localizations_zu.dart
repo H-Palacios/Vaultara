@@ -9478,4 +9478,29 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Sigcine inombolo njengenombolo yereferensi. Gcwalisa okusele ngezansi.';
+
+  @override
+  String get detailsReferenceHint => 'Njengoba kuphrintiwe ekhadini, kunqubomgomo noma kudokhumenti';
+
+  @override
+  String get renewsHelper => 'Okokubhalisa nama-oda edebhithi azivuselelayo. Uma usuku seludlulile, i-Vaultara iluhambisa phambili.';
+
+  @override
+  String get renewsLabel => 'Iyazivuselela';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Engeza $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Lokhu kungokuka-$name, ongakabi kubantu bakho.';
+  }
+
+  @override
+  String get scanHolderMine => 'Ngokwami';
+
+  @override
+  String get scanHolderTitle => 'Le dokhumenti ingekabani?';
 }

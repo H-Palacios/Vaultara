@@ -9468,4 +9468,29 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Дугаарыг лавлах дугаар болгон хадгаллаа. Үлдсэнийг доор бөглөнө үү.';
+
+  @override
+  String get detailsReferenceHint => 'Карт, гэрээ эсвэл баримт дээр хэвлэгдсэнээр';
+
+  @override
+  String get renewsHelper => 'Өөрөө сунгагддаг захиалга, автомат төлбөрт зориулсан. Огноо өнгөрөхөд Vaultara түүнийг урагшлуулна.';
+
+  @override
+  String get renewsLabel => 'Өөрөө сунгагдана';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name нэмэх';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Энэ $name-ынх бөгөөд таны Хүмүүст хараахан алга.';
+  }
+
+  @override
+  String get scanHolderMine => 'Минийх';
+
+  @override
+  String get scanHolderTitle => 'Энэ хэний баримт вэ?';
 }

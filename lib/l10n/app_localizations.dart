@@ -16170,6 +16170,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'We saved the number as the reference number. Fill in the rest below.'**
   String get scanNumberSavedOnly;
+
+  /// detailsReferenceHint
+  ///
+  /// In en, this message translates to:
+  /// **'As printed on the card, policy or document'**
+  String get detailsReferenceHint;
+
+  /// renewsHelper
+  ///
+  /// In en, this message translates to:
+  /// **'For subscriptions and debit orders that renew on their own. When the date passes, Vaultara moves it forward.'**
+  String get renewsHelper;
+
+  /// renewsLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Renews by itself'**
+  String get renewsLabel;
+
+  /// scanHolderAdd
+  ///
+  /// In en, this message translates to:
+  /// **'Add {name}'**
+  String scanHolderAdd(Object name);
+
+  /// scanHolderBody
+  ///
+  /// In en, this message translates to:
+  /// **'This belongs to {name}, who is not in your People yet.'**
+  String scanHolderBody(Object name);
+
+  /// scanHolderMine
+  ///
+  /// In en, this message translates to:
+  /// **'It\'s mine'**
+  String get scanHolderMine;
+
+  /// scanHolderTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Whose document is this?'**
+  String get scanHolderTitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Zapisaliśmy numer jako numer referencyjny. Resztę uzupełnij poniżej.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Tak jak na karcie, polisie lub dokumencie",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Dla subskrypcji i poleceń zapłaty, które odnawiają się same. Gdy data minie, Vaultara przesuwa ją dalej.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Odnawia się samo",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Dodaj {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Należy do {name}, kogoś spoza twoich Osób.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "To moje",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Czyj to dokument?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

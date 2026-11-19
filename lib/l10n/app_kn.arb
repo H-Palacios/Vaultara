@@ -3724,5 +3724,33 @@
   "scanNumberSavedOnly": "ನಾವು ಸಂಖ್ಯೆಯನ್ನು ಉಲ್ಲೇಖ ಸಂಖ್ಯೆಯಾಗಿ ಉಳಿಸಿದ್ದೇವೆ. ಉಳಿದದ್ದನ್ನು ಕೆಳಗೆ ತುಂಬಿ.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "ಕಾರ್ಡ್, ಪಾಲಿಸಿ ಅಥವಾ ದಾಖಲೆಯಲ್ಲಿ ಮುದ್ರಿಸಿದಂತೆ",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "ತಾನಾಗಿಯೇ ನವೀಕರಣವಾಗುವ ಚಂದಾದಾರಿಕೆ ಮತ್ತು ಡೆಬಿಟ್ ಆರ್ಡರ್‌ಗಳಿಗಾಗಿ. ದಿನಾಂಕ ಕಳೆದಾಗ Vaultara ಅದನ್ನು ಮುಂದಕ್ಕೆ ಸರಿಸುತ್ತದೆ.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "ತಾನಾಗಿಯೇ ನವೀಕರಣ",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} ಸೇರಿಸಿ",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "ಇದು {name} ಅವರದು, ಅವರು ಇನ್ನೂ ನಿಮ್ಮ ಜನರಲ್ಲಿ ಇಲ್ಲ.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "ಇದು ನನ್ನದು",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "ಇದು ಯಾರ ದಾಖಲೆ?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

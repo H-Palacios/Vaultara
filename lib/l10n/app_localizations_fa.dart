@@ -9478,4 +9478,29 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'شماره را به‌عنوان شماره مرجع ذخیره کردیم. بقیه را پایین پر کنید.';
+
+  @override
+  String get detailsReferenceHint => 'همان‌طور که روی کارت، بیمه‌نامه یا سند چاپ شده';
+
+  @override
+  String get renewsHelper => 'برای اشتراک‌ها و برداشت‌های خودکار که خودشان تمدید می‌شوند. وقتی تاریخ بگذرد Vaultara آن را جلو می‌برد.';
+
+  @override
+  String get renewsLabel => 'خودش تمدید می‌شود';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'افزودن $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'متعلق به $name است که هنوز در افراد شما نیست.';
+  }
+
+  @override
+  String get scanHolderMine => 'مال من است';
+
+  @override
+  String get scanHolderTitle => 'این سند مال کیست؟';
 }

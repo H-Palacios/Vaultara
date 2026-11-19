@@ -11771,5 +11771,33 @@
   "scanNumberSavedOnly": "We saved the number as the reference number. Fill in the rest below.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "As printed on the card, policy or document",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "For subscriptions and debit orders that renew on their own. When the date passes, Vaultara moves it forward.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Renews by itself",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Add {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "This belongs to {name}, who is not in your People yet.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "It's mine",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Whose document is this?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

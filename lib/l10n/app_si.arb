@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "අපි අංකය යොමු අංකය ලෙස සුරැකුවා. ඉතිරිය පහතින් පුරවන්න.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "කාඩ්පත, ප්‍රතිපත්තිය හෝ ලේඛනයේ මුද්‍රණය කර ඇති පරිදි",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "තමන්ම අලුත් වන දායකත්ව සහ ඩෙබිට් ඇණවුම් සඳහා. දිනය පසු වූ විට Vaultara එය ඉදිරියට ගෙන යයි.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "තමන්ම අලුත් වේ",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} එක් කරන්න",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "මෙය {name} ගේ ය, ඔවුන් තවම ඔබේ පුද්ගලයින් අතර නැත.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "මෙය මගේ",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "මෙය කාගේ ලේඛනයද?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

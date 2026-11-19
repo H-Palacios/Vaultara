@@ -9478,4 +9478,29 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'A számot hivatkozási számként mentettük el. A többit töltsd ki alább.';
+
+  @override
+  String get detailsReferenceHint => 'Ahogy a kártyán, kötvényen vagy okmányon szerepel';
+
+  @override
+  String get renewsHelper => 'Magától megújuló előfizetésekhez és csoportos beszedésekhez. Ha a dátum elmúlik, a Vaultara előrébb teszi.';
+
+  @override
+  String get renewsLabel => 'Magától megújul';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name hozzáadása';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ez $name tulajdona, aki még nincs a Személyeid között.';
+  }
+
+  @override
+  String get scanHolderMine => 'Az enyém';
+
+  @override
+  String get scanHolderTitle => 'Kié ez az okmány?';
 }

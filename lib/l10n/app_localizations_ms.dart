@@ -9415,4 +9415,29 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Kami menyimpan nombor itu sebagai nombor rujukan. Isi selebihnya di bawah.';
+
+  @override
+  String get detailsReferenceHint => 'Seperti yang dicetak pada kad, polisi atau dokumen';
+
+  @override
+  String get renewsHelper => 'Untuk langganan dan debit langsung yang diperbaharui sendiri. Apabila tarikh berlalu, Vaultara memajukannya.';
+
+  @override
+  String get renewsLabel => 'Diperbaharui sendiri';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Tambah $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ini milik $name, yang belum ada dalam Orang anda.';
+  }
+
+  @override
+  String get scanHolderMine => 'Ini milik saya';
+
+  @override
+  String get scanHolderTitle => 'Dokumen siapa ini?';
 }

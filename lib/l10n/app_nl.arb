@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "We hebben het nummer als referentienummer opgeslagen. Vul de rest hieronder in.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Zoals gedrukt op de kaart, polis of het document",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Voor abonnementen en incasso's die zichzelf verlengen. Als de datum voorbij is, schuift Vaultara die door.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Verlengt zichzelf",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} toevoegen",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Dit is van {name}, die nog niet in je Personen staat.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Het is van mij",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Van wie is dit document?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

@@ -9498,4 +9498,29 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'We saved the number as the reference number. Fill in the rest below.';
+
+  @override
+  String get detailsReferenceHint => 'As printed on the card, policy or document';
+
+  @override
+  String get renewsHelper => 'For subscriptions and debit orders that renew on their own. When the date passes, Vaultara moves it forward.';
+
+  @override
+  String get renewsLabel => 'Renews by itself';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Add $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'This belongs to $name, who is not in your People yet.';
+  }
+
+  @override
+  String get scanHolderMine => 'It\'s mine';
+
+  @override
+  String get scanHolderTitle => 'Whose document is this?';
 }

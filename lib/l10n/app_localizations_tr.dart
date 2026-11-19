@@ -9478,4 +9478,29 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Numarayı referans numarası olarak kaydettik. Gerisini aşağıda doldurun.';
+
+  @override
+  String get detailsReferenceHint => 'Kart, poliçe veya belgede yazdığı gibi';
+
+  @override
+  String get renewsHelper => 'Kendiliğinden yenilenen abonelikler ve otomatik ödemeler için. Tarih geçince Vaultara onu ileri alır.';
+
+  @override
+  String get renewsLabel => 'Kendiliğinden yenilenir';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name ekle';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Bu, henüz Kişilerinizde olmayan $name adlı kişiye ait.';
+  }
+
+  @override
+  String get scanHolderMine => 'Benim';
+
+  @override
+  String get scanHolderTitle => 'Bu belge kimin?';
 }

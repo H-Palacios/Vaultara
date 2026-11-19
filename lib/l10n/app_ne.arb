@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "हामीले नम्बरलाई सन्दर्भ नम्बरको रूपमा सेभ गर्यौं। बाँकी तल भर्नुहोस्।",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "कार्ड, पोलिसी वा कागजातमा छापिए जस्तै",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "आफैं नवीकरण हुने सदस्यता र डेबिट अर्डरका लागि। मिति बितेपछि Vaultara ले यसलाई अगाडि सार्छ।",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "आफैं नवीकरण हुन्छ",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} थप्नुहोस्",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "यो {name} को हो, जो अझै तपाईंका मानिसहरूमा छैनन्।",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "यो मेरो हो",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "यो कसको कागजात हो?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

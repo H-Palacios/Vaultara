@@ -9549,4 +9549,29 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Numuru saglabājām kā atsauces numuru. Pārējo aizpildiet zemāk.';
+
+  @override
+  String get detailsReferenceHint => 'Kā uzdrukāts uz kartes, polises vai dokumenta';
+
+  @override
+  String get renewsHelper => 'Abonementiem un tiešajiem debetiem, kas atjaunojas paši. Kad datums paiet, Vaultara to pārceļ uz priekšu.';
+
+  @override
+  String get renewsLabel => 'Atjaunojas pats';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Pievienot $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Tas pieder $name, kas vēl nav jūsu Cilvēkos.';
+  }
+
+  @override
+  String get scanHolderMine => 'Tas ir mans';
+
+  @override
+  String get scanHolderTitle => 'Kā dokuments tas ir?';
 }

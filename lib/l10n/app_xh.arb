@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Sigcine inombolo njengenombolo yesalathiso. Gcwalisa okuseleyo ngezantsi.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Njengoko ibhalwe ekhadini, kwipolisi okanye kuxwebhu",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Ezobhaliso nee-odolo zedebhithi ezizihlaziyayo. Xa umhla udlula, iVaultara iwuhambisa phambili.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Iyazihlaziya",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Yongeza {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Oku kungoka-{name}, ongekabikho kubaNtu bakho.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Ngowam",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Lolu xwebhu lukabani?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

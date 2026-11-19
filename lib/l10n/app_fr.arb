@@ -3986,5 +3986,33 @@
   "scanNumberSavedOnly": "Nous avons enregistré le numéro comme numéro de référence. Complétez le reste ci-dessous.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Tel qu'imprimé sur la carte, la police ou le document",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Pour les abonnements et prélèvements qui se renouvellent seuls. Une fois la date passée, Vaultara l'avance.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Se renouvelle seul",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Ajouter {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Il appartient à {name}, qui n'est pas encore dans vos Personnes.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "C'est à moi",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "À qui est ce document ?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

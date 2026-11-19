@@ -4005,5 +4005,33 @@
   "scanNumberSavedOnly": "Vi har gemt nummeret som referencenummer. Udfyld resten nedenfor.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Som trykt på kortet, policen eller dokumentet",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Til abonnementer og betalingsaftaler, der fornyes af sig selv. Når datoen passerer, rykker Vaultara den frem.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Fornyes af sig selv",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Tilføj {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Det tilhører {name}, som endnu ikke er i dine Personer.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Det er mit",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Hvis dokument er det?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

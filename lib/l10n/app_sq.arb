@@ -3988,5 +3988,33 @@
   "scanNumberSavedOnly": "E ruajtëm numrin si numër reference. Plotësoni pjesën tjetër më poshtë.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Siç është shtypur në kartë, policë ose dokument",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Për abonime dhe debite direkte që rinovohen vetë. Kur kalon data, Vaultara e shtyn përpara.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Rinovohet vetë",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Shto {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "I përket {name}, që nuk është ende te Njerëzit tuaj.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Është i imi",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "I kujt është ky dokument?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

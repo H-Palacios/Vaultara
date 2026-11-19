@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "Am salvat numărul ca număr de referință. Completează restul mai jos.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Cum e tipărit pe card, poliță sau document",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Pentru abonamente și debitări directe care se reînnoiesc singure. Când data trece, Vaultara o mută înainte.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Se reînnoiește singur",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Adaugă {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Aparține lui {name}, care nu e încă în Persoanele tale.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "E al meu",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Al cui este acest document?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

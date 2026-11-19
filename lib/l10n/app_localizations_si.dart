@@ -9477,4 +9477,29 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'අපි අංකය යොමු අංකය ලෙස සුරැකුවා. ඉතිරිය පහතින් පුරවන්න.';
+
+  @override
+  String get detailsReferenceHint => 'කාඩ්පත, ප්‍රතිපත්තිය හෝ ලේඛනයේ මුද්‍රණය කර ඇති පරිදි';
+
+  @override
+  String get renewsHelper => 'තමන්ම අලුත් වන දායකත්ව සහ ඩෙබිට් ඇණවුම් සඳහා. දිනය පසු වූ විට Vaultara එය ඉදිරියට ගෙන යයි.';
+
+  @override
+  String get renewsLabel => 'තමන්ම අලුත් වේ';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name එක් කරන්න';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'මෙය $name ගේ ය, ඔවුන් තවම ඔබේ පුද්ගලයින් අතර නැත.';
+  }
+
+  @override
+  String get scanHolderMine => 'මෙය මගේ';
+
+  @override
+  String get scanHolderTitle => 'මෙය කාගේ ලේඛනයද?';
 }

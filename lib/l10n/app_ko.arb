@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "번호를 참조 번호로 저장했습니다. 나머지는 아래에서 입력하세요.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "카드, 증권 또는 서류에 인쇄된 대로",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "자동으로 갱신되는 구독과 자동이체용입니다. 날짜가 지나면 Vaultara가 다음 날짜로 옮깁니다.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "자동 갱신",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} 추가",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "{name}님의 것이지만 아직 사람 목록에 없습니다.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "내 것이에요",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "누구의 서류인가요?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

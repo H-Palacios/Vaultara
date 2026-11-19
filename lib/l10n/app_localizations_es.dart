@@ -9507,4 +9507,29 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Guardamos el número como número de referencia. Completa el resto abajo.';
+
+  @override
+  String get detailsReferenceHint => 'Tal como aparece en la tarjeta, póliza o documento';
+
+  @override
+  String get renewsHelper => 'Para suscripciones y domiciliaciones que se renuevan solas. Cuando pasa la fecha, Vaultara la adelanta.';
+
+  @override
+  String get renewsLabel => 'Se renueva solo';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Añadir a $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Es de $name, que aún no está en tus Personas.';
+  }
+
+  @override
+  String get scanHolderMine => 'Es mío';
+
+  @override
+  String get scanHolderTitle => '¿De quién es este documento?';
 }

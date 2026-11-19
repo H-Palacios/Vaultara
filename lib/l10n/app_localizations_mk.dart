@@ -9477,4 +9477,29 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Го зачувавме бројот како референтен број. Остатокот пополнете подолу.';
+
+  @override
+  String get detailsReferenceHint => 'Како што е испечатено на картичката, полисата или документот';
+
+  @override
+  String get renewsHelper => 'За претплати и трајни налози што се обновуваат сами. Кога датумот ќе помине, Vaultara го поместува напред.';
+
+  @override
+  String get renewsLabel => 'Се обновува само';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Додај $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ова му припаѓа на $name, кој сè уште не е во вашите Луѓе.';
+  }
+
+  @override
+  String get scanHolderMine => 'Мое е';
+
+  @override
+  String get scanHolderTitle => 'Чиј е овој документ?';
 }

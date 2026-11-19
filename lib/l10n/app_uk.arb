@@ -3991,5 +3991,33 @@
   "scanNumberSavedOnly": "Ми зберегли номер як довідковий номер. Заповніть решту нижче.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Як надруковано на картці, полісі чи документі",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Для підписок і автоплатежів, що поновлюються самі. Коли дата минає, Vaultara переносить її вперед.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Поновлюється саме",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Додати {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Це належить {name}, якого ще немає у ваших Людях.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Це моє",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Чий це документ?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

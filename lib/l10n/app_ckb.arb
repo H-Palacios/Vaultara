@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "ژمارەکەمان وەک ژمارەی ئاماژە پاشەکەوت کرد. ئەوانی تر لە خوارەوە پڕبکەرەوە.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "وەک لەسەر کارت، بیمەنامە یان بەڵگەنامە چاپکراوە",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "بۆ بەشداربوون و پارەدانی ئۆتۆماتیک کە خۆیان نوێ دەبنەوە. کاتێک بەروار تێدەپەڕێت Vaultara دەیباتە پێشەوە.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "خۆی نوێ دەبێتەوە",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "زیادکردنی {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "ئەمە هی {name}ە، کە هێشتا لە خەڵکەکانت نییە.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "هی منە",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "ئەم بەڵگەنامەیە هی کێیە؟",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "A számot hivatkozási számként mentettük el. A többit töltsd ki alább.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Ahogy a kártyán, kötvényen vagy okmányon szerepel",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Magától megújuló előfizetésekhez és csoportos beszedésekhez. Ha a dátum elmúlik, a Vaultara előrébb teszi.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Magától megújul",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} hozzáadása",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Ez {name} tulajdona, aki még nincs a Személyeid között.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Az enyém",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Kié ez az okmány?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

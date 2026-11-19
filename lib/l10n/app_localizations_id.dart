@@ -9410,4 +9410,29 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Kami menyimpan nomor sebagai nomor referensi. Isi sisanya di bawah.';
+
+  @override
+  String get detailsReferenceHint => 'Seperti tercetak di kartu, polis, atau dokumen';
+
+  @override
+  String get renewsHelper => 'Untuk langganan dan debit otomatis yang diperpanjang sendiri. Saat tanggalnya lewat, Vaultara memajukannya.';
+
+  @override
+  String get renewsLabel => 'Diperpanjang sendiri';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Tambahkan $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Ini milik $name, yang belum ada di Orang Anda.';
+  }
+
+  @override
+  String get scanHolderMine => 'Ini milik saya';
+
+  @override
+  String get scanHolderTitle => 'Dokumen siapa ini?';
 }

@@ -9478,4 +9478,29 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'ნომერი შევინახეთ საცნობარო ნომრად. დანარჩენი ქვემოთ შეავსეთ.';
+
+  @override
+  String get detailsReferenceHint => 'როგორც დაბეჭდილია ბარათზე, პოლისზე ან დოკუმენტზე';
+
+  @override
+  String get renewsHelper => 'თავად განახლებადი გამოწერებისა და ავტომატური გადახდებისთვის. როცა თარიღი გავა, Vaultara მას წინ გადაწევს.';
+
+  @override
+  String get renewsLabel => 'თავად ახლდება';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name-ის დამატება';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'ეს ეკუთვნის $name-ს, რომელიც ჯერ არ არის თქვენს ადამიანებში.';
+  }
+
+  @override
+  String get scanHolderMine => 'ჩემია';
+
+  @override
+  String get scanHolderTitle => 'ვისი დოკუმენტია ეს?';
 }

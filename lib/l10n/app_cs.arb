@@ -4005,5 +4005,33 @@
   "scanNumberSavedOnly": "Číslo jsme uložili jako referenční číslo. Zbytek vyplňte níže.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Jak je vytištěno na kartě, pojistce nebo dokladu",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Pro předplatné a inkasa, která se obnovují sama. Když datum uplyne, Vaultara ho posune dál.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Obnovuje se samo",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Přidat {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Patří osobě {name}, která ještě není ve vašich Lidech.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Je to moje",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Čí je to doklad?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

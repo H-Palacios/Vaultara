@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "Numerį išsaugojome kaip nuorodos numerį. Kitką užpildykite žemiau.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kaip išspausdinta kortelėje, polise ar dokumente",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Prenumeratoms ir tiesioginiams debetams, kurie atsinaujina patys. Kai data praeina, Vaultara ją perkelia į priekį.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Atsinaujina pats",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Pridėti {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Tai priklauso asmeniui {name}, kurio dar nėra jūsų Žmonėse.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Tai mano",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Kieno tai dokumentas?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

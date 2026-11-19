@@ -3724,5 +3724,33 @@
   "scanNumberSavedOnly": "અમે નંબરને સંદર્ભ નંબર તરીકે સાચવ્યો છે. બાકીનું નીચે ભરો.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "કાર્ડ, પોલિસી અથવા દસ્તાવેજ પર છાપ્યા મુજબ",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "જાતે રિન્યૂ થતાં સબ્સ્ક્રિપ્શન અને ડેબિટ ઓર્ડર માટે. તારીખ પસાર થાય ત્યારે Vaultara તેને આગળ ખસેડે છે.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "જાતે રિન્યૂ થાય છે",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} ઉમેરો",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "આ {name}નું છે, જે હજી તમારા લોકોમાં નથી.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "તે મારું છે",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "આ દસ્તાવેજ કોનો છે?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

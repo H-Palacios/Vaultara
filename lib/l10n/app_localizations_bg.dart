@@ -9479,4 +9479,29 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Запазихме номера като референтен номер. Попълнете останалото по-долу.';
+
+  @override
+  String get detailsReferenceHint => 'Както е отпечатан на картата, полицата или документа';
+
+  @override
+  String get renewsHelper => 'За абонаменти и директни дебити, които се подновяват сами. Когато датата мине, Vaultara я премества напред.';
+
+  @override
+  String get renewsLabel => 'Подновява се само';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Добави $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Това е на $name, който още не е в Хора.';
+  }
+
+  @override
+  String get scanHolderMine => 'Мое е';
+
+  @override
+  String get scanHolderTitle => 'Чий е този документ?';
 }

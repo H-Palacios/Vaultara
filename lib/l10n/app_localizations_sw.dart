@@ -9478,4 +9478,29 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Tumehifadhi namba kama namba ya marejeo. Jaza sehemu iliyobaki hapa chini.';
+
+  @override
+  String get detailsReferenceHint => 'Kama ilivyochapishwa kwenye kadi, sera au hati';
+
+  @override
+  String get renewsHelper => 'Kwa usajili na makato ya moja kwa moja yanayojihuisha yenyewe. Tarehe ikipita, Vaultara huisogeza mbele.';
+
+  @override
+  String get renewsLabel => 'Hujihuisha yenyewe';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Ongeza $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Hii ni ya $name, ambaye bado hayupo kwenye Watu wako.';
+  }
+
+  @override
+  String get scanHolderMine => 'Ni yangu';
+
+  @override
+  String get scanHolderTitle => 'Hati hii ni ya nani?';
 }

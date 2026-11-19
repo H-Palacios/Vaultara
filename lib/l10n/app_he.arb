@@ -3979,5 +3979,33 @@
   "scanNumberSavedOnly": "שמרנו את המספר כמספר אסמכתה. מלא את השאר למטה.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "כפי שמודפס על הכרטיס, הפוליסה או המסמך",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "למינויים והוראות קבע שמתחדשים לבד. כשהתאריך עובר, Vaultara מקדם אותו.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "מתחדש לבד",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "הוסף את {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "זה שייך ל{name}, שעדיין לא נמצא באנשים שלך.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "זה שלי",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "של מי המסמך הזה?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

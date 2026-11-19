@@ -9403,4 +9403,29 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'เราบันทึกหมายเลขเป็นหมายเลขอ้างอิงแล้ว กรอกส่วนที่เหลือด้านล่าง';
+
+  @override
+  String get detailsReferenceHint => 'ตามที่พิมพ์บนบัตร กรมธรรม์ หรือเอกสาร';
+
+  @override
+  String get renewsHelper => 'สำหรับการสมัครสมาชิกและการหักบัญชีที่ต่ออายุเอง เมื่อพ้นวันที่ Vaultara จะเลื่อนไปข้างหน้า';
+
+  @override
+  String get renewsLabel => 'ต่ออายุเอง';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'เพิ่ม $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'เป็นของ $name ซึ่งยังไม่อยู่ในรายชื่อบุคคลของคุณ';
+  }
+
+  @override
+  String get scanHolderMine => 'เป็นของฉัน';
+
+  @override
+  String get scanHolderTitle => 'เอกสารนี้เป็นของใคร';
 }

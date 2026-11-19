@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "A fi nọ́mbà náà pamọ́ gẹ́gẹ́ bí nọ́mbà ìtọ́kasí. Kún ìyókù nísàlẹ̀.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Bí a ṣe tẹ̀ ẹ́ sórí káàdì, ìlànà tàbí ìwé",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Fún ìforúkọsílẹ̀ àti àṣẹ ìyọkúrò owó tí ó ń sọ ara rẹ̀ di tuntun. Nígbà tí ọjọ́ bá kọjá, Vaultara á gbé e síwájú.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Ó ń sọ ara rẹ̀ di tuntun",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Fi {name} kún",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Èyí jẹ́ ti {name}, tí kò tíì sí nínú Àwọn Ènìyàn rẹ.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Tèmi ni",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Ìwé ta ni èyí?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

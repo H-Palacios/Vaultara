@@ -9415,4 +9415,29 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Chúng tôi đã lưu số này làm số tham chiếu. Điền phần còn lại bên dưới.';
+
+  @override
+  String get detailsReferenceHint => 'Như in trên thẻ, hợp đồng hoặc giấy tờ';
+
+  @override
+  String get renewsHelper => 'Dành cho gói đăng ký và lệnh ghi nợ tự gia hạn. Khi qua ngày, Vaultara sẽ dời sang kỳ sau.';
+
+  @override
+  String get renewsLabel => 'Tự gia hạn';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Thêm $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Giấy tờ này của $name, người chưa có trong danh sách Mọi người.';
+  }
+
+  @override
+  String get scanHolderMine => 'Của tôi';
+
+  @override
+  String get scanHolderTitle => 'Giấy tờ này của ai?';
 }

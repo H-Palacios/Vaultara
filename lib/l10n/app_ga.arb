@@ -3986,5 +3986,33 @@
   "scanNumberSavedOnly": "Shábhálamar an uimhir mar uimhir thagartha. Líon an chuid eile thíos.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Mar atá sé clóite ar an gcárta, an polasaí nó an doiciméad",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Do shíntiúis agus orduithe dochair a athnuann iad féin. Nuair a théann an dáta thart, bogann Vaultara ar aghaidh é.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Athnuann sé féin",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Cuir {name} leis",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Is le {name} é seo, nach bhfuil i do Dhaoine fós.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Is liomsa é",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Cé leis an doiciméad seo?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

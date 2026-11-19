@@ -9483,4 +9483,29 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Die Nummer wurde als Referenznummer gespeichert. Fülle den Rest unten aus.';
+
+  @override
+  String get detailsReferenceHint => 'Wie auf Karte, Police oder Dokument gedruckt';
+
+  @override
+  String get renewsHelper => 'Für Abos und Lastschriften, die sich selbst verlängern. Wenn das Datum vorbei ist, schiebt Vaultara es weiter.';
+
+  @override
+  String get renewsLabel => 'Verlängert sich selbst';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name hinzufügen';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Das gehört $name, noch nicht in deinen Personen.';
+  }
+
+  @override
+  String get scanHolderMine => 'Gehört mir';
+
+  @override
+  String get scanHolderTitle => 'Wem gehört dieses Dokument?';
 }

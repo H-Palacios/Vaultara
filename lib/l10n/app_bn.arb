@@ -4005,5 +4005,33 @@
   "scanNumberSavedOnly": "আমরা নম্বরটি রেফারেন্স নম্বর হিসেবে সেভ করেছি। বাকিটা নিচে পূরণ করুন।",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "কার্ড, পলিসি বা ডকুমেন্টে যেমন ছাপা আছে",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "নিজে থেকে নবায়ন হওয়া সাবস্ক্রিপশন ও ডেবিট অর্ডারের জন্য। তারিখ পেরোলে Vaultara সেটি এগিয়ে দেয়।",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "নিজে থেকে নবায়ন হয়",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} যোগ করুন",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "এটি {name}-এর, যিনি এখনও আপনার মানুষ তালিকায় নেই।",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "এটি আমার",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "এটি কার ডকুমেন্ট?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

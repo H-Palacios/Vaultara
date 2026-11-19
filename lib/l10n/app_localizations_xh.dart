@@ -9478,4 +9478,29 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Sigcine inombolo njengenombolo yesalathiso. Gcwalisa okuseleyo ngezantsi.';
+
+  @override
+  String get detailsReferenceHint => 'Njengoko ibhalwe ekhadini, kwipolisi okanye kuxwebhu';
+
+  @override
+  String get renewsHelper => 'Ezobhaliso nee-odolo zedebhithi ezizihlaziyayo. Xa umhla udlula, iVaultara iwuhambisa phambili.';
+
+  @override
+  String get renewsLabel => 'Iyazihlaziya';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Yongeza $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Oku kungoka-$name, ongekabikho kubaNtu bakho.';
+  }
+
+  @override
+  String get scanHolderMine => 'Ngowam';
+
+  @override
+  String get scanHolderTitle => 'Lolu xwebhu lukabani?';
 }

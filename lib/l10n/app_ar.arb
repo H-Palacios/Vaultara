@@ -4012,5 +4012,33 @@
   "scanNumberSavedOnly": "حفظنا الرقم كرقم مرجعي. أكمل الباقي أدناه.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "كما هو مطبوع على البطاقة أو الوثيقة",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "للاشتراكات والخصم المباشر الذي يتجدد تلقائيًا. عند مرور التاريخ ينقله Vaultara إلى الأمام.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "يتجدد تلقائيًا",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "إضافة {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "هذه تخص {name}، وهو غير موجود في الأشخاص بعد.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "إنها لي",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "لمن هذه الوثيقة؟",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

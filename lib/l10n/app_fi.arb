@@ -3992,5 +3992,33 @@
   "scanNumberSavedOnly": "Tallensimme numeron viitenumeroksi. Täytä loput alla.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kuten kortissa, vakuutuskirjassa tai asiakirjassa",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Tilauksille ja suoraveloituksille, jotka uusiutuvat itsestään. Kun päivä menee ohi, Vaultara siirtää sitä eteenpäin.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Uusiutuu itsestään",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Lisää {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Tämä kuuluu henkilölle {name}, joka ei vielä ole Henkilöissäsi.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Se on minun",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Kenen asiakirja tämä on?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

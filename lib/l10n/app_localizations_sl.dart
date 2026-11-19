@@ -9644,4 +9644,29 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Številko smo shranili kot referenčno številko. Ostalo izpolnite spodaj.';
+
+  @override
+  String get detailsReferenceHint => 'Kot je natisnjeno na kartici, polici ali dokumentu';
+
+  @override
+  String get renewsHelper => 'Za naročnine in trajnike, ki se podaljšajo sami. Ko datum mine, ga Vaultara premakne naprej.';
+
+  @override
+  String get renewsLabel => 'Se podaljša samo';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Dodaj $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'To pripada osebi $name, ki še ni med vašimi Osebami.';
+  }
+
+  @override
+  String get scanHolderMine => 'Moje je';
+
+  @override
+  String get scanHolderTitle => 'Čigav je ta dokument?';
 }

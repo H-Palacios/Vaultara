@@ -9478,4 +9478,29 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'எண்ணை குறிப்பு எண்ணாக சேமித்தோம். மீதியை கீழே நிரப்புங்கள்.';
+
+  @override
+  String get detailsReferenceHint => 'அட்டை, பாலிசி அல்லது ஆவணத்தில் அச்சிடப்பட்டபடி';
+
+  @override
+  String get renewsHelper => 'தானாக புதுப்பிக்கும் சந்தாக்கள் மற்றும் டெபிட் ஆர்டர்களுக்கு. தேதி கடந்ததும் Vaultara அதை முன்னோக்கி நகர்த்தும்.';
+
+  @override
+  String get renewsLabel => 'தானாக புதுப்பிக்கும்';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name சேர்';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'இது $name உடையது, அவர் இன்னும் உங்கள் நபர்களில் இல்லை.';
+  }
+
+  @override
+  String get scanHolderMine => 'இது என்னுடையது';
+
+  @override
+  String get scanHolderTitle => 'இது யாருடைய ஆவணம்?';
 }

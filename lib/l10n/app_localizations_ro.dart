@@ -9564,4 +9564,29 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Am salvat numărul ca număr de referință. Completează restul mai jos.';
+
+  @override
+  String get detailsReferenceHint => 'Cum e tipărit pe card, poliță sau document';
+
+  @override
+  String get renewsHelper => 'Pentru abonamente și debitări directe care se reînnoiesc singure. Când data trece, Vaultara o mută înainte.';
+
+  @override
+  String get renewsLabel => 'Se reînnoiește singur';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Adaugă $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Aparține lui $name, care nu e încă în Persoanele tale.';
+  }
+
+  @override
+  String get scanHolderMine => 'E al meu';
+
+  @override
+  String get scanHolderTitle => 'Al cui este acest document?';
 }

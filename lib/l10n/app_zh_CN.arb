@@ -3974,5 +3974,33 @@
   "scanNumberSavedOnly": "我们已将号码保存为参考编号。请在下方填写其余内容。",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "与卡片、保单或证件上印的一致",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "适用于自动续订的订阅和自动扣款。日期过后，Vaultara 会把它顺延。",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "自动续期",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "添加{name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "这属于{name}，此人还不在你的“人员”中。",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "是我的",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "这是谁的证件？",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

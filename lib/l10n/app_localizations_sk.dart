@@ -9637,4 +9637,29 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Číslo sme uložili ako referenčné číslo. Zvyšok vyplňte nižšie.';
+
+  @override
+  String get detailsReferenceHint => 'Ako je vytlačené na karte, poistke alebo doklade';
+
+  @override
+  String get renewsHelper => 'Pre predplatné a inkasá, ktoré sa obnovujú samy. Keď dátum uplynie, Vaultara ho posunie ďalej.';
+
+  @override
+  String get renewsLabel => 'Obnovuje sa samo';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Pridať $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Patrí osobe $name, ktorá ešte nie je vo vašich Ľuďoch.';
+  }
+
+  @override
+  String get scanHolderMine => 'Je to moje';
+
+  @override
+  String get scanHolderTitle => 'Čí je to doklad?';
 }

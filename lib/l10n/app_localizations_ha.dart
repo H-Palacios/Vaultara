@@ -9478,4 +9478,29 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Mun ajiye lambar a matsayin lambar shaida. Cika sauran a ƙasa.';
+
+  @override
+  String get detailsReferenceHint => 'Kamar yadda aka buga a kati, inshora ko takarda';
+
+  @override
+  String get renewsHelper => 'Don biyan kuɗi da umarnin cire kuɗi da ke sabunta kansu. Idan ranar ta wuce, Vaultara yana matsar da ita gaba.';
+
+  @override
+  String get renewsLabel => 'Yana sabunta kansa';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Ƙara $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Wannan na $name ne, wanda bai shiga Mutanenka ba tukuna.';
+  }
+
+  @override
+  String get scanHolderMine => 'Nawa ne';
+
+  @override
+  String get scanHolderTitle => 'Takardar wane ce wannan?';
 }

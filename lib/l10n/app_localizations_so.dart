@@ -9477,4 +9477,29 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Waxaan u kaydinay lambarka lambar tixraac ahaan. Buuxi inta kale hoos.';
+
+  @override
+  String get detailsReferenceHint => 'Sida ku daabacan kaarka, caymiska ama dukumentiga';
+
+  @override
+  String get renewsHelper => 'Rukummada iyo lacag-goynta si iskood ah u cusboonaada. Marka taariikhdu dhaafto, Vaultara ayaa hore u dhaqaajisa.';
+
+  @override
+  String get renewsLabel => 'Iskiis ayuu u cusboonaadaa';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Ku dar $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Tani waxay leedahay $name, oo aan weli ku jirin Dadkaaga.';
+  }
+
+  @override
+  String get scanHolderMine => 'Waa kayga';
+
+  @override
+  String get scanHolderTitle => 'Dukumentigan yaa leh?';
 }

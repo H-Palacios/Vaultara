@@ -9413,4 +9413,29 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'နံပါတ်ကို ရည်ညွှန်းနံပါတ်အဖြစ် သိမ်းထားပါပြီ။ ကျန်တာကို အောက်တွင် ဖြည့်ပါ။';
+
+  @override
+  String get detailsReferenceHint => 'ကတ်၊ ပေါ်လစီ သို့ စာရွက်စာတမ်းပေါ်တွင် ရိုက်နှိပ်ထားသည့်အတိုင်း';
+
+  @override
+  String get renewsHelper => 'အလိုအလျောက် သက်တမ်းတိုးသော စာရင်းသွင်းမှုများနှင့် ငွေနုတ်ယူမှုများအတွက်။ ရက်စွဲကျော်သွားလျှင် Vaultara က ရှေ့သို့ ရွှေ့ပေးသည်။';
+
+  @override
+  String get renewsLabel => 'အလိုအလျောက် သက်တမ်းတိုး';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name ထည့်ရန်';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'ဤအရာသည် $name ၏ဖြစ်ပြီး သင့်လူများထဲတွင် မရှိသေးပါ။';
+  }
+
+  @override
+  String get scanHolderMine => 'ကျွန်ုပ်၏ဖြစ်သည်';
+
+  @override
+  String get scanHolderTitle => 'ဤစာရွက်စာတမ်းသည် မည်သူ့ဟာလဲ?';
 }

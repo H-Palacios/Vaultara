@@ -9478,4 +9478,29 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'شمېره مو د حوالې شمېرې په توګه خوندي کړه. پاتې برخه لاندې ډکه کړئ.';
+
+  @override
+  String get detailsReferenceHint => 'لکه څنګه چې په کارت، بیمه یا سند چاپ شوی';
+
+  @override
+  String get renewsHelper => 'د هغو ګډونونو او اتومات ورکړو لپاره چې پخپله نوي کېږي. کله چې نېټه تېره شي Vaultara یې مخ ته وړي.';
+
+  @override
+  String get renewsLabel => 'پخپله نوي کېږي';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$name زیات کړئ';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'دا د $name ده، چې لا ستاسو په خلکو کې نه دی.';
+  }
+
+  @override
+  String get scanHolderMine => 'زما دی';
+
+  @override
+  String get scanHolderTitle => 'دا د چا سند دی؟';
 }

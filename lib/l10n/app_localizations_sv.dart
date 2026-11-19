@@ -9482,4 +9482,29 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Vi sparade numret som referensnummer. Fyll i resten nedan.';
+
+  @override
+  String get detailsReferenceHint => 'Som det står på kortet, försäkringsbrevet eller dokumentet';
+
+  @override
+  String get renewsHelper => 'För abonnemang och autogiro som förnyas av sig själva. När datumet passerar flyttar Vaultara fram det.';
+
+  @override
+  String get renewsLabel => 'Förnyas av sig själv';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Lägg till $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Det tillhör $name, som inte finns i dina Personer än.';
+  }
+
+  @override
+  String get scanHolderMine => 'Det är mitt';
+
+  @override
+  String get scanHolderTitle => 'Vems dokument är det här?';
 }

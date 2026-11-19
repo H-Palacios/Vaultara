@@ -9483,4 +9483,29 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'E ruajtëm numrin si numër reference. Plotësoni pjesën tjetër më poshtë.';
+
+  @override
+  String get detailsReferenceHint => 'Siç është shtypur në kartë, policë ose dokument';
+
+  @override
+  String get renewsHelper => 'Për abonime dhe debite direkte që rinovohen vetë. Kur kalon data, Vaultara e shtyn përpara.';
+
+  @override
+  String get renewsLabel => 'Rinovohet vetë';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Shto $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'I përket $name, që nuk është ende te Njerëzit tuaj.';
+  }
+
+  @override
+  String get scanHolderMine => 'Është i imi';
+
+  @override
+  String get scanHolderTitle => 'I kujt është ky dokument?';
 }

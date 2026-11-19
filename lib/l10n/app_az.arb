@@ -3724,5 +3724,33 @@
   "scanNumberSavedOnly": "Nömrəni istinad nömrəsi kimi saxladıq. Qalanını aşağıda doldurun.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kartda, polisdə və ya sənəddə yazıldığı kimi",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Öz-özünə yenilənən abunələr və avtomatik ödənişlər üçün. Tarix keçəndə Vaultara onu irəli çəkir.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Öz-özünə yenilənir",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "{name} əlavə et",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Bu {name} şəxsinə aiddir, o hələ Şəxslərinizdə yoxdur.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Mənimdir",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Bu kimin sənədidir?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

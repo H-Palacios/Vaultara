@@ -3949,5 +3949,33 @@
   "scanNumberSavedOnly": "Мы сохранили номер как справочный номер. Заполните остальное ниже.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Как напечатано на карте, полисе или документе",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Для подписок и автоплатежей, которые продлеваются сами. Когда дата проходит, Vaultara переносит её вперёд.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Продлевается само",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Добавить {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Это принадлежит {name}, которого ещё нет в ваших Людях.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Это моё",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Чей это документ?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

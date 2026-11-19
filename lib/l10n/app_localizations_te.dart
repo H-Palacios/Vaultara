@@ -9478,4 +9478,29 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'నంబర్‌ను రిఫరెన్స్ నంబర్‌గా సేవ్ చేశాం. మిగతాది కింద నింపండి.';
+
+  @override
+  String get detailsReferenceHint => 'కార్డ్, పాలసీ లేదా పత్రంపై ముద్రించినట్లు';
+
+  @override
+  String get renewsHelper => 'తమంతట తామే పునరుద్ధరించే సబ్‌స్క్రిప్షన్లు, డెబిట్ ఆర్డర్ల కోసం. తేదీ దాటితే Vaultara దాన్ని ముందుకు జరుపుతుంది.';
+
+  @override
+  String get renewsLabel => 'తనంతట తానే పునరుద్ధరిస్తుంది';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return '$nameను జోడించండి';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'ఇది $nameది, వారు ఇంకా మీ వ్యక్తులలో లేరు.';
+  }
+
+  @override
+  String get scanHolderMine => 'ఇది నాది';
+
+  @override
+  String get scanHolderTitle => 'ఇది ఎవరి పత్రం?';
 }

@@ -3948,5 +3948,33 @@
   "scanNumberSavedOnly": "Sačuvali smo broj kao referentni broj. Ostalo popunite ispod.",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "Kako je odštampano na kartici, polisi ili dokumentu",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "Za pretplate i trajne naloge koji se sami obnavljaju. Kada datum prođe, Vaultara ga pomera napred.",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "Obnavlja se samo",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "Dodaj {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "Ovo pripada osobi {name}, koja još nije u vašim Osobama.",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "Moje je",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "Čiji je ovo dokument?",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

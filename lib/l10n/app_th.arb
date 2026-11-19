@@ -3991,5 +3991,33 @@
   "scanNumberSavedOnly": "เราบันทึกหมายเลขเป็นหมายเลขอ้างอิงแล้ว กรอกส่วนที่เหลือด้านล่าง",
   "@scanNumberSavedOnly": {
     "description": "scanNumberSavedOnly"
+  },
+  "detailsReferenceHint": "ตามที่พิมพ์บนบัตร กรมธรรม์ หรือเอกสาร",
+  "@detailsReferenceHint": {
+    "description": "detailsReferenceHint"
+  },
+  "renewsHelper": "สำหรับการสมัครสมาชิกและการหักบัญชีที่ต่ออายุเอง เมื่อพ้นวันที่ Vaultara จะเลื่อนไปข้างหน้า",
+  "@renewsHelper": {
+    "description": "renewsHelper"
+  },
+  "renewsLabel": "ต่ออายุเอง",
+  "@renewsLabel": {
+    "description": "renewsLabel"
+  },
+  "scanHolderAdd": "เพิ่ม {name}",
+  "@scanHolderAdd": {
+    "description": "scanHolderAdd"
+  },
+  "scanHolderBody": "เป็นของ {name} ซึ่งยังไม่อยู่ในรายชื่อบุคคลของคุณ",
+  "@scanHolderBody": {
+    "description": "scanHolderBody"
+  },
+  "scanHolderMine": "เป็นของฉัน",
+  "@scanHolderMine": {
+    "description": "scanHolderMine"
+  },
+  "scanHolderTitle": "เอกสารนี้เป็นของใคร",
+  "@scanHolderTitle": {
+    "description": "scanHolderTitle"
   }
 }

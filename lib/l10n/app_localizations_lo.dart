@@ -9415,4 +9415,29 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'ພວກເຮົາບັນທຶກເລກເປັນເລກອ້າງອີງແລ້ວ. ຕື່ມສ່ວນທີ່ເຫຼືອຂ້າງລຸ່ມ.';
+
+  @override
+  String get detailsReferenceHint => 'ຕາມທີ່ພິມຢູ່ເທິງບັດ, ກົມທັນ ຫຼື ເອກະສານ';
+
+  @override
+  String get renewsHelper => 'ສຳລັບການສະໝັກ ແລະ ການຕັດເງິນອັດຕະໂນມັດທີ່ຕໍ່ອາຍຸເອງ. ເມື່ອວັນທີຜ່ານໄປ Vaultara ຈະເລື່ອນມັນໄປໜ້າ.';
+
+  @override
+  String get renewsLabel => 'ຕໍ່ອາຍຸເອງ';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'ເພີ່ມ $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'ອັນນີ້ເປັນຂອງ $name, ຜູ້ທີ່ຍັງບໍ່ຢູ່ໃນຄົນຂອງທ່ານ.';
+  }
+
+  @override
+  String get scanHolderMine => 'ມັນເປັນຂອງຂ້ອຍ';
+
+  @override
+  String get scanHolderTitle => 'ນີ້ແມ່ນເອກະສານຂອງໃຜ?';
 }

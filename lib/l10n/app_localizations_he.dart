@@ -9540,4 +9540,29 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'שמרנו את המספר כמספר אסמכתה. מלא את השאר למטה.';
+
+  @override
+  String get detailsReferenceHint => 'כפי שמודפס על הכרטיס, הפוליסה או המסמך';
+
+  @override
+  String get renewsHelper => 'למינויים והוראות קבע שמתחדשים לבד. כשהתאריך עובר, Vaultara מקדם אותו.';
+
+  @override
+  String get renewsLabel => 'מתחדש לבד';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'הוסף את $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'זה שייך ל$name, שעדיין לא נמצא באנשים שלך.';
+  }
+
+  @override
+  String get scanHolderMine => 'זה שלי';
+
+  @override
+  String get scanHolderTitle => 'של מי המסמך הזה?';
 }

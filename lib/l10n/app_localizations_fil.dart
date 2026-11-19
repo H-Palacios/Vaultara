@@ -9473,4 +9473,29 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get scanNumberSavedOnly => 'Na-save namin ang numero bilang reference number. Punan ang iba sa ibaba.';
+
+  @override
+  String get detailsReferenceHint => 'Gaya ng nakalimbag sa card, polisiya o dokumento';
+
+  @override
+  String get renewsHelper => 'Para sa mga subscription at debit order na kusang nagre-renew. Kapag lumipas ang petsa, inuusog ito ng Vaultara.';
+
+  @override
+  String get renewsLabel => 'Kusang nagre-renew';
+
+  @override
+  String scanHolderAdd(Object name) {
+    return 'Idagdag si $name';
+  }
+
+  @override
+  String scanHolderBody(Object name) {
+    return 'Kay $name ito, na wala pa sa iyong mga Tao.';
+  }
+
+  @override
+  String get scanHolderMine => 'Akin ito';
+
+  @override
+  String get scanHolderTitle => 'Kanino ang dokumentong ito?';
 }
