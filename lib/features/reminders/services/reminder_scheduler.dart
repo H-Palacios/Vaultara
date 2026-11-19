@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'dart:ui' show PlatformDispatcher;
 
+import 'package:intl/intl.dart';
 import 'package:flutter/material.dart' show Locale, TimeOfDay;
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -454,17 +455,55 @@ class ReminderScheduler {
       kTestNotificationId,
       loc.notifTestTitle,
       loc.notifTestBody,
-      _detailsFor(
-        loc,
-        withActions: false,
-        sound: ReminderSoundPrefs.reminder,
-      ),
+      _detailsFor(loc, withActions: false, sound: ReminderSoundPrefs.reminder),
     );
     return true;
   }
 
   /// Reserved for the test notification.
   static const int kTestNotificationId = 0x64000061;
+
+  /// First id for the "renewed by itself" notices (up to [_rolledMax]),
+  /// after the appointment reminders (0x64000070 to 0x640000B0).
+  static const int kRolledNotificationId = 0x640000C0;
+  static const int _rolledMax = 3;
+
+  /// Tells the person that a record which renews by itself has moved to its
+  /// next date, and asks them to check that it really renewed: a policy
+  /// that lapsed would otherwise never show as expired. Locked records are
+  /// not named. Follows the after-expiry setting.
+  static Future<void> notifyRolledForward(List<TrackedItem> rolled) async {
+    if (rolled.isEmpty) return;
+    if (!NotificationPrefs.get(NotificationKind.afterExpiry)) return;
+    AppLocalizations loc;
+    try {
+      loc = lookupAppLocalizations(PlatformDispatcher.instance.locale);
+    } catch (_) {
+      loc = lookupAppLocalizations(const Locale('en'));
+    }
+    try {
+      await init();
+      await localiseChannel(loc);
+      final format = DateFormat.yMMMd(loc.localeName);
+      var slot = 0;
+      for (final item in rolled.take(_rolledMax)) {
+        final title = item.locked
+            ? loc.rolledTitleLocked
+            : loc.rolledTitle(item.name);
+        await _plugin.show(
+          kRolledNotificationId + slot,
+          title,
+          loc.rolledBody(format.format(item.expiryDate)),
+          _detailsFor(
+            loc,
+            withActions: false,
+            sound: ReminderSoundPrefs.reminder,
+          ),
+        );
+        slot++;
+      }
+    } catch (_) {}
+  }
 
   static int? seriesOffset(int? offset, int? leadDays) {
     if (offset != null) return offset >= 0 ? offset : null;

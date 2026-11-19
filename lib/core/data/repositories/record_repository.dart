@@ -772,6 +772,11 @@ class RecordRepository {
     return rolled;
   }
 
+  /// Told about records whose date has just moved forward by itself, so
+  /// the person can be asked to check that they really renewed. Set when
+  /// the app starts.
+  static void Function(List<TrackedItem> rolled)? onRolledForward;
+
   static List<TrackedItem> _rollDue() {
     final today = DateUtils.dateOnly(DateTime.now());
     final rolled = <TrackedItem>[];
@@ -780,6 +785,9 @@ class RecordRepository {
       final next = _nextRepeat(record, today);
       if (next == null) continue;
       rolled.add(_rollOne(record, next));
+    }
+    if (rolled.isNotEmpty) {
+      onRolledForward?.call(List<TrackedItem>.unmodifiable(rolled));
     }
     return rolled;
   }
@@ -1056,15 +1064,15 @@ class RecordRepository {
       _remove(record);
       _add(updated);
       if (canEdit(record)) {
-        _docFor(
-          record,
-        )?.update(
-          _stamped(record, {
-            'holderId': null,
-            if (record.isShared) 'holderName': null,
-            if (record.isShared) 'holderColour': null,
-          }),
-        ).ignore();
+        _docFor(record)
+            ?.update(
+              _stamped(record, {
+                'holderId': null,
+                if (record.isShared) 'holderName': null,
+                if (record.isShared) 'holderColour': null,
+              }),
+            )
+            .ignore();
       }
     }
   }

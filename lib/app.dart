@@ -9,6 +9,7 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'core/analytics/analytics_service.dart';
 import 'core/data/repositories/record_repository.dart';
+import 'features/reminders/services/reminder_scheduler.dart';
 import 'features/records/logic/record_lock.dart';
 import 'core/navigation/navigator_key.dart';
 import 'core/services/connection_status.dart';
@@ -69,6 +70,11 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
 
+    // A record that renews by itself moving to its next date gets a
+    // notification asking to check that it really renewed.
+    RecordRepository.onRolledForward = (rolled) =>
+        unawaited(ReminderScheduler.notifyRolledForward(rolled));
+
     ThemePreference.load();
     unawaited(PrivacyScreen.load());
     unawaited(AutoLockPreference.load());
@@ -84,8 +90,8 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
   void _onGraceExpired() {
     if (_authSettled || !mounted) return;
 
-    final waitingForRestore = FirebaseAuth.instance.currentUser == null &&
-        (_expectSession ?? true);
+    final waitingForRestore =
+        FirebaseAuth.instance.currentUser == null && (_expectSession ?? true);
 
     if (waitingForRestore && !_graceExtended) {
       _graceExtended = true;
@@ -265,14 +271,9 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
   }
 
   Widget _splash() => Scaffold(
-        backgroundColor: AppBrand.navy,
-        body: Center(
-          child: Image.asset(
-            AppBrand.logoAsset,
-            width: 140,
-          ),
-        ),
-      );
+    backgroundColor: AppBrand.navy,
+    body: Center(child: Image.asset(AppBrand.logoAsset, width: 140)),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -420,9 +421,7 @@ class _PrivacyCover extends StatelessWidget {
         filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
         child: ColoredBox(
           color: AppBrand.navy.withValues(alpha: 0.94),
-          child: Center(
-            child: Image.asset(AppBrand.logoAsset, width: 120),
-          ),
+          child: Center(child: Image.asset(AppBrand.logoAsset, width: 120)),
         ),
       ),
     );
