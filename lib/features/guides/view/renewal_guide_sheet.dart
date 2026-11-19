@@ -105,6 +105,9 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
   /// checklist below is then folded away, as the plan replaces it.
   bool _hasPlan = false;
 
+  /// Whether the folded general checklist is open, for its arrow.
+  bool _checklistOpen = false;
+
   @override
   void initState() {
     super.initState();
@@ -275,7 +278,7 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
         if (guide != null) ...[
           if (urgency == StartUrgency.none)
             _StartBox(urgency: urgency, text: startText(loc, guide, record)),
-          const SizedBox(height: 20),
+          SizedBox(height: _hasPlan ? 6 : 20),
           if (_hasPlan)
             // The plan above replaces the general checklist; it stays one tap
             // away for anyone who wants it.
@@ -286,6 +289,8 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
               child: ExpansionTile(
                 tilePadding: EdgeInsets.zero,
                 childrenPadding: EdgeInsets.zero,
+                dense: true,
+                visualDensity: VisualDensity.compact,
                 title: Text(
                   loc.guideChecklist,
                   style: TextStyle(
@@ -294,13 +299,14 @@ class _RenewalGuideSheetState extends State<_RenewalGuideSheet> {
                     color: scheme.onSurfaceVariant,
                   ),
                 ),
-                trailing: Text(
-                  loc.guideProgress(_ticked.length, steps.length),
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: scheme.onSurfaceVariant,
-                  ),
+                // The count and the arrow together, so the row reads as
+                // something that opens.
+                trailing: ChecklistFoldTrailing(
+                  label: loc.guideProgress(_ticked.length, steps.length),
+                  open: _checklistOpen,
                 ),
+                onExpansionChanged: (open) =>
+                    setState(() => _checklistOpen = open),
                 children: [
                   _generalChecklist(loc, scheme, steps, header: false),
                 ],
@@ -461,6 +467,42 @@ class _StartBox extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// The end of the folded checklist row: how many steps are done and an
+/// arrow that turns when it opens, so the row reads as something to tap.
+class ChecklistFoldTrailing extends StatelessWidget {
+  final String label;
+  final bool open;
+
+  const ChecklistFoldTrailing({
+    super.key,
+    required this.label,
+    required this.open,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          label,
+          style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+        ),
+        const SizedBox(width: 4),
+        AnimatedRotation(
+          turns: open ? 0.5 : 0,
+          duration: const Duration(milliseconds: 200),
+          child: Icon(
+            Icons.expand_more_rounded,
+            color: scheme.onSurfaceVariant,
+          ),
+        ),
+      ],
     );
   }
 }
