@@ -11811,5 +11811,9 @@
   "rolledTitleLocked": "A record renewed by itself",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Reminders on the same day come as one notification at your reminder time. Records due tomorrow, due today or expired still get their own.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

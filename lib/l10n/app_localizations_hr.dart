@@ -9595,4 +9595,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Zapis se sam obnovio';
+
+  @override
+  String get digestGroupedSubtitle => 'Podsjetnici za isti dan stižu kao jedna obavijest u vrijeme podsjetnika. Zapisi koji istječu sutra, danas ili su istekli i dalje dobivaju svoju.';
 }

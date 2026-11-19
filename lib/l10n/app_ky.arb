@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "Жазуу өзү жаңыланды",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Бир күндөгү эскертүүлөр эскертүү убагыңызда бир билдирүү болуп келет. Эртең, бүгүн мөөнөтү бүтүүчү же бүткөн жазуулар өзүнчө келет.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

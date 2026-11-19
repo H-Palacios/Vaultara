@@ -9453,6 +9453,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => '有一条记录已自动续期';
+
+  @override
+  String get digestGroupedSubtitle => '同一天的提醒会在你的提醒时间合并为一条通知。明天或今天到期、或已过期的记录仍会单独提醒。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18892,6 +18895,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get rolledTitleLocked => '有一条记录已自动续期';
+
+  @override
+  String get digestGroupedSubtitle => '同一天的提醒会在你的提醒时间合并为一条通知。明天或今天到期、或已过期的记录仍会单独提醒。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -28331,4 +28337,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get rolledTitleLocked => '有一筆紀錄已自動續期';
+
+  @override
+  String get digestGroupedSubtitle => '同一天的提醒會在你的提醒時間合併為一則通知。明天或今天到期、或已過期的紀錄仍會單獨提醒。';
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'ਇੱਕ ਰਿਕਾਰਡ ਆਪਣੇ ਆਪ ਨਵਿਆਇਆ ਗਿਆ';
+
+  @override
+  String get digestGroupedSubtitle => 'ਇੱਕੋ ਦਿਨ ਦੀਆਂ ਯਾਦ-ਦਹਾਨੀਆਂ ਤੁਹਾਡੇ ਸਮੇਂ ਤੇ ਇੱਕ ਸੂਚਨਾ ਵਜੋਂ ਆਉਂਦੀਆਂ ਹਨ। ਕੱਲ੍ਹ, ਅੱਜ ਖਤਮ ਹੋਣ ਵਾਲੇ ਜਾਂ ਖਤਮ ਹੋ ਚੁੱਕੇ ਰਿਕਾਰਡ ਨੂੰ ਅਜੇ ਵੀ ਵੱਖਰੀ ਸੂਚਨਾ ਮਿਲਦੀ ਹੈ।';
 }

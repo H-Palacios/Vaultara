@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "ບັນທຶກໜຶ່ງຕໍ່ອາຍຸເອງແລ້ວ",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "ການແຈ້ງເຕືອນມື້ດຽວກັນຈະມາເປັນການແຈ້ງເຕືອນດຽວໃນເວລາເຕືອນຂອງທ່ານ. ລາຍການທີ່ໝົດອາຍຸມື້ອື່ນ, ມື້ນີ້ ຫຼື ໝົດແລ້ວ ຍັງມາແຍກ.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

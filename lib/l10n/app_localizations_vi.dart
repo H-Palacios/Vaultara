@@ -9453,4 +9453,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Một mục đã tự gia hạn';
+
+  @override
+  String get digestGroupedSubtitle => 'Các lời nhắc cùng ngày sẽ gộp thành một thông báo vào giờ nhắc của bạn. Mục hết hạn ngày mai, hôm nay hoặc đã hết hạn vẫn được báo riêng.';
 }

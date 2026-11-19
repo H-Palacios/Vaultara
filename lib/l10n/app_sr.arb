@@ -3988,5 +3988,9 @@
   "rolledTitleLocked": "Запис се сам обновио",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Подсетници за исти дан стижу као једно обавештење у време подсетника. Записи који истичу сутра, данас или су истекли и даље добијају своје.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

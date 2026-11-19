@@ -9520,4 +9520,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Tietue uusiutui itsestään';
+
+  @override
+  String get digestGroupedSubtitle => 'Saman päivän muistutukset tulevat yhtenä ilmoituksena muistutusaikaasi. Huomenna tai tänään vanhenevat ja vanhentuneet saavat silti omansa.';
 }

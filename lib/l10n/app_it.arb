@@ -4019,5 +4019,9 @@
   "rolledTitleLocked": "Un elemento si è rinnovato da solo",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "I promemoria dello stesso giorno arrivano come un'unica notifica all'orario dei promemoria. Quelli in scadenza domani, oggi o già scaduti arrivano comunque da soli.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

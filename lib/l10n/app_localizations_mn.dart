@@ -9506,4 +9506,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Нэг бичлэг өөрөө сунгагдлаа';
+
+  @override
+  String get digestGroupedSubtitle => 'Нэг өдрийн сануулгууд таны сануулах цагт нэг мэдэгдэл болж ирнэ. Маргааш, өнөөдөр дуусах эсвэл дууссан бичлэгүүд тус тусдаа ирсээр байна.';
 }

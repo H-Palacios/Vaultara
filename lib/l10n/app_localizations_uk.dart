@@ -9691,4 +9691,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Запис поновився сам';
+
+  @override
+  String get digestGroupedSubtitle => 'Нагадування на один день приходять одним сповіщенням у ваш час нагадувань. Записи, що спливають завтра, сьогодні або вже спливли, і далі приходять окремо.';
 }

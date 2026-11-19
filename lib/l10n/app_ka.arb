@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "ჩანაწერი თავად განახლდა",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "ერთი დღის შეხსენებები ერთ შეტყობინებად მოდის შეხსენების დროს. ხვალ, დღეს ვადაგასული ან უკვე ვადაგასული ჩანაწერები კვლავ ცალკე მოდის.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

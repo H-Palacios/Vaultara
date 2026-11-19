@@ -4031,5 +4031,9 @@
   "rolledTitleLocked": "Запис поновився сам",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Нагадування на один день приходять одним сповіщенням у ваш час нагадувань. Записи, що спливають завтра, сьогодні або вже спливли, і далі приходять окремо.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

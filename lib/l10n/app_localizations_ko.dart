@@ -9453,4 +9453,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => '기록이 자동 갱신됨';
+
+  @override
+  String get digestGroupedSubtitle => '같은 날의 알림은 알림 시간에 하나로 묶여 도착합니다. 내일이나 오늘 만료되거나 이미 만료된 항목은 따로 알려 드립니다.';
 }

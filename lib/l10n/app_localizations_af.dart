@@ -9521,4 +9521,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => '\'n Rekord het vanself hernu';
+
+  @override
+  String get digestGroupedSubtitle => 'Herinneringe op dieselfde dag kom as een kennisgewing op jou herinneringstyd. Rekords wat môre of vandag verval, of reeds verval het, kry steeds hul eie.';
 }

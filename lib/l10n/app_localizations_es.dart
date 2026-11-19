@@ -9545,4 +9545,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Un registro se renovó solo';
+
+  @override
+  String get digestGroupedSubtitle => 'Los recordatorios del mismo día llegan como una sola notificación a tu hora de recordatorio. Los que vencen mañana, hoy o ya vencieron siguen llegando por separado.';
 }

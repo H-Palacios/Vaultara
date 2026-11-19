@@ -9602,4 +9602,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'O înregistrare s-a reînnoit singură';
+
+  @override
+  String get digestGroupedSubtitle => 'Mementourile din aceeași zi vin ca o singură notificare la ora mementourilor. Cele care expiră mâine, azi sau au expirat vin în continuare separat.';
 }

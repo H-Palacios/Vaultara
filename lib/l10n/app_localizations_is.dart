@@ -9515,4 +9515,7 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Færsla endurnýjaðist sjálf';
+
+  @override
+  String get digestGroupedSubtitle => 'Áminningar sama dags koma sem ein tilkynning á áminningartíma þínum. Færslur sem renna út á morgun, í dag eða eru útrunnar fá samt sína eigin.';
 }

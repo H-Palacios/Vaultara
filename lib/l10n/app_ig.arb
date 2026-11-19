@@ -4019,5 +4019,9 @@
   "rolledTitleLocked": "Ndekọ meghariri onwe ya",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Ihe ncheta n'otu ụbọchị na-abịa dịka otu ọkwa n'oge ncheta gị. Ndekọ ga-agwụ echi, taa ma ọ bụ nke gwụchara ka na-enweta nke ha.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

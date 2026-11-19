@@ -9515,4 +9515,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'አንድ መዝገብ በራሱ ታድሷል';
+
+  @override
+  String get digestGroupedSubtitle => 'በአንድ ቀን የሚወድቁ ማስታወሻዎች በማስታወሻ ሰዓትዎ እንደ አንድ ማሳወቂያ ይመጣሉ። ነገ ወይም ዛሬ የሚያበቁ ወይም ያበቁ መዝገቦች አሁንም የራሳቸውን ያገኛሉ።';
 }

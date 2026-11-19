@@ -9521,4 +9521,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Een item is vanzelf verlengd';
+
+  @override
+  String get digestGroupedSubtitle => 'Herinneringen op dezelfde dag komen als één melding op je herinneringstijd. Items die morgen of vandaag verlopen of al verlopen zijn, krijgen nog steeds hun eigen melding.';
 }

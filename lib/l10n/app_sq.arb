@@ -4028,5 +4028,9 @@
   "rolledTitleLocked": "Një regjistrim u rinovua vetë",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Kujtesat e së njëjtës ditë vijnë si një njoftim në orën e kujtesave. Regjistrimet që skadojnë nesër, sot ose kanë skaduar vijnë ende veçmas.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

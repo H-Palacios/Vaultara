@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "Een item is vanzelf verlengd",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Herinneringen op dezelfde dag komen als één melding op je herinneringstijd. Items die morgen of vandaag verlopen of al verlopen zijn, krijgen nog steeds hun eigen melding.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

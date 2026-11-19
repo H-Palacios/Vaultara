@@ -4179,5 +4179,9 @@
   "rolledTitleLocked": "Kirje uuenes ise",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Sama päeva meeldetuletused tulevad ühe teatena sinu meeldetuletuse ajal. Homme või täna aeguvad ja aegunud kirjed saavad ikka oma teate.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "Нэг бичлэг өөрөө сунгагдлаа",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Нэг өдрийн сануулгууд таны сануулах цагт нэг мэдэгдэл болж ирнэ. Маргааш, өнөөдөр дуусах эсвэл дууссан бичлэгүүд тус тусдаа ирсээр байна.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

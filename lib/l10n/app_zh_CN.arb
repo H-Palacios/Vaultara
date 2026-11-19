@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "有一条记录已自动续期",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "同一天的提醒会在你的提醒时间合并为一条通知。明天或今天到期、或已过期的记录仍会单独提醒。",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

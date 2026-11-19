@@ -9600,6 +9600,9 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Запис се сам обновио';
+
+  @override
+  String get digestGroupedSubtitle => 'Подсетници за исти дан стижу као једно обавештење у време подсетника. Записи који истичу сутра, данас или су истекли и даље добијају своје.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -19197,6 +19200,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get rolledTitleLocked => 'Запис се сам обновио';
+
+  @override
+  String get digestGroupedSubtitle => 'Подсетници за исти дан стижу као једно обавештење у време подсетника. Записи који истичу сутра, данас или су истекли и даље добијају своје.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -28790,4 +28796,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get rolledTitleLocked => 'Zapis se sam obnovio';
+
+  @override
+  String get digestGroupedSubtitle => 'Podsetnici za isti dan stižu kao jedno obaveštenje u vreme podsetnika. Zapisi koji ističu sutra, danas ili su istekli i dalje dobijaju svoje.';
 }

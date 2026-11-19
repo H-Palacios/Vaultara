@@ -9511,4 +9511,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Kusang na-renew ang isang record';
+
+  @override
+  String get digestGroupedSubtitle => 'Ang mga paalala sa parehong araw ay dumarating bilang isang notification sa oras ng iyong paalala. Ang mga mag-e-expire bukas, ngayon o expired na ay may sariling notification pa rin.';
 }

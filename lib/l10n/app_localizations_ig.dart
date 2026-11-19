@@ -9464,4 +9464,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Ndekọ meghariri onwe ya';
+
+  @override
+  String get digestGroupedSubtitle => 'Ihe ncheta n\'otu ụbọchị na-abịa dịka otu ọkwa n\'oge ncheta gị. Ndekọ ga-agwụ echi, taa ma ọ bụ nke gwụchara ka na-enweta nke ha.';
 }

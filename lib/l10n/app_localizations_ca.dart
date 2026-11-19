@@ -9521,4 +9521,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Un registre s\'ha renovat sol';
+
+  @override
+  String get digestGroupedSubtitle => 'Els recordatoris del mateix dia arriben com una sola notificació a l\'hora de recordatori. Els que caduquen demà, avui o ja han caducat en reben una de pròpia.';
 }

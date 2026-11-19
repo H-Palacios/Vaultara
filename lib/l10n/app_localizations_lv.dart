@@ -9587,4 +9587,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Ieraksts atjaunojās pats';
+
+  @override
+  String get digestGroupedSubtitle => 'Vienas dienas atgādinājumi pienāk kā viens paziņojums jūsu atgādinājumu laikā. Ieraksti, kam termiņš beidzas rīt, šodien vai jau beidzies, joprojām saņem savu.';
 }

@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "Įrašas atsinaujino pats",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Tos pačios dienos priminimai ateina vienu pranešimu jūsų priminimų laiku. Rytoj, šiandien besibaigiantys ar pasibaigę įrašai vis tiek gauna savo.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

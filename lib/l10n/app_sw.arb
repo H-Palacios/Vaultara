@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "Rekodi imejihuisha yenyewe",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Vikumbusho vya siku moja huja kama arifa moja wakati wako wa kukumbusha. Rekodi zinazoisha kesho, leo au zilizoisha bado hupata zao.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

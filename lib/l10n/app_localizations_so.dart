@@ -9515,4 +9515,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Diiwaan ayaa iskiis u cusboonaaday';
+
+  @override
+  String get digestGroupedSubtitle => 'Xusuusinta isla maalinta waxay u yimaadaan hal ogeysiis waqtiga xusuusintaada. Diiwaannada dhacaya berri, maanta ama dhacay weli waxay helaan kooda.';
 }

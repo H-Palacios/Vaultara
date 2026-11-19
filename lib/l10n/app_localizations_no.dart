@@ -9521,4 +9521,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'En oppføring ble fornyet av seg selv';
+
+  @override
+  String get digestGroupedSubtitle => 'Påminnelser samme dag kommer som én varsling på påminnelsestidspunktet ditt. Oppføringer som utløper i morgen, i dag eller har utløpt, får fortsatt sin egen.';
 }

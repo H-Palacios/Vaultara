@@ -9516,4 +9516,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'एक रिकॉर्ड अपने आप नवीनीकृत हुआ';
+
+  @override
+  String get digestGroupedSubtitle => 'एक ही दिन के रिमाइंडर आपके रिमाइंडर समय पर एक सूचना के रूप में आते हैं। कल, आज समाप्त होने वाले या समाप्त हो चुके रिकॉर्ड को अब भी अलग सूचना मिलती है।';
 }

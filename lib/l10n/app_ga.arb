@@ -4026,5 +4026,9 @@
   "rolledTitleLocked": "D'athnuaigh taifead é féin",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Tagann meabhrúcháin an lae chéanna mar fhógra amháin ag d'am meabhrúcháin. Faigheann taifid a théann in éag amárach, inniu nó atá imithe in éag a gcuid féin fós.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

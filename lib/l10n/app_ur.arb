@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "ایک ریکارڈ خود بخود تجدید ہو گیا",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "ایک ہی دن کی یاددہانیاں آپ کے وقت پر ایک اطلاع کے طور پر آتی ہیں۔ کل، آج ختم ہونے والے یا ختم ہو چکے ریکارڈ اب بھی الگ آتے ہیں۔",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

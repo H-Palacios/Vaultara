@@ -4021,5 +4021,9 @@
   "rolledTitleLocked": "Un registro se renovó solo",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Los recordatorios del mismo día llegan como una sola notificación a tu hora de recordatorio. Los que vencen mañana, hoy o ya vencieron siguen llegando por separado.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

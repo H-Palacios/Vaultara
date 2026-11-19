@@ -9516,4 +9516,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'একটি রেকর্ড নিজে থেকে নবায়ন হয়েছে';
+
+  @override
+  String get digestGroupedSubtitle => 'একই দিনের রিমাইন্ডারগুলো আপনার রিমাইন্ডার সময়ে একটি নোটিফিকেশন হিসেবে আসে। কাল বা আজ মেয়াদ শেষ হওয়া বা শেষ হয়ে যাওয়া রেকর্ড আলাদা পায়।';
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Tomarek xwe nû kir';
+
+  @override
+  String get digestGroupedSubtitle => 'Bîranînên heman rojê wekî yek agahdarî di dema bîranîna te de tên. Tomarên ku sibê, îro diqedin an qediyane hîn jî bi serê xwe tên.';
 }

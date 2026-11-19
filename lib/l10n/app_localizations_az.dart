@@ -9516,4 +9516,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Bir qeyd öz-özünə yeniləndi';
+
+  @override
+  String get digestGroupedSubtitle => 'Eyni gündəki xatırlatmalar xatırlatma vaxtınızda bir bildiriş kimi gəlir. Sabah, bu gün bitən və ya artıq bitmiş qeydlər yenə ayrıca gəlir.';
 }

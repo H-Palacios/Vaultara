@@ -9515,4 +9515,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Запис се обнови сам';
+
+  @override
+  String get digestGroupedSubtitle => 'Потсетниците за ист ден доаѓаат како едно известување во времето за потсетници. Записите што истекуваат утре, денес или истекле добиваат свое.';
 }

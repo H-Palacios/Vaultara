@@ -9675,4 +9675,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Záznam sa obnovil sám';
+
+  @override
+  String get digestGroupedSubtitle => 'Pripomienky v rovnaký deň prídu ako jedno upozornenie v čase pripomienok. Záznamy, ktoré vypršia zajtra, dnes alebo už vypršali, dostanú vlastné.';
 }

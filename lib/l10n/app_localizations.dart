@@ -16230,6 +16230,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'A record renewed by itself'**
   String get rolledTitleLocked;
+
+  /// digestGroupedSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders on the same day come as one notification at your reminder time. Records due tomorrow, due today or expired still get their own.'**
+  String get digestGroupedSubtitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

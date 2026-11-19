@@ -9516,4 +9516,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'ఒక రికార్డ్ తనంతట తానే పునరుద్ధరించబడింది';
+
+  @override
+  String get digestGroupedSubtitle => 'ఒకే రోజు రిమైండర్‌లు మీ రిమైండర్ సమయంలో ఒకే నోటిఫికేషన్‌గా వస్తాయి. రేపు, ఈరోజు గడువు ముగిసే లేదా ముగిసిన రికార్డులకు ఇప్పటికీ వేరుగా వస్తుంది.';
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Rekodi imejihuisha yenyewe';
+
+  @override
+  String get digestGroupedSubtitle => 'Vikumbusho vya siku moja huja kama arifa moja wakati wako wa kukumbusha. Rekodi zinazoisha kesho, leo au zilizoisha bado hupata zao.';
 }

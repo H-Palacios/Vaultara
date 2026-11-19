@@ -9521,4 +9521,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Një regjistrim u rinovua vetë';
+
+  @override
+  String get digestGroupedSubtitle => 'Kujtesat e së njëjtës ditë vijnë si një njoftim në orën e kujtesave. Regjistrimet që skadojnë nesër, sot ose kanë skaduar vijnë ende veçmas.';
 }

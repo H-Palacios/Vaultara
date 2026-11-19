@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "Запис се обнови сам",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Потсетниците за ист ден доаѓаат како едно известување во времето за потсетници. Записите што истекуваат утре, денес или истекле добиваат свое.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

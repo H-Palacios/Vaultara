@@ -9697,4 +9697,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Запись продлилась сама';
+
+  @override
+  String get digestGroupedSubtitle => 'Напоминания на один день приходят одним уведомлением в ваше время напоминаний. Записи, истекающие завтра, сегодня или уже истёкшие, по-прежнему приходят отдельно.';
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Yozuv o\'zi yangilandi';
+
+  @override
+  String get digestGroupedSubtitle => 'Bir kundagi eslatmalar eslatma vaqtingizda bitta bildirishnoma bo\'lib keladi. Ertaga, bugun muddati tugaydigan yoki tugagan yozuvlar alohida keladi.';
 }

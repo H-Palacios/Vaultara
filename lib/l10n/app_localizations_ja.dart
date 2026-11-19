@@ -9441,4 +9441,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => '記録が自動で更新されました';
+
+  @override
+  String get digestGroupedSubtitle => '同じ日のリマインダーは、リマインダー時刻に1つの通知にまとめて届きます。明日や今日が期限のもの、期限切れのものは個別に届きます。';
 }

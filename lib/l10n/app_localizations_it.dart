@@ -9528,4 +9528,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Un elemento si è rinnovato da solo';
+
+  @override
+  String get digestGroupedSubtitle => 'I promemoria dello stesso giorno arrivano come un\'unica notifica all\'orario dei promemoria. Quelli in scadenza domani, oggi o già scaduti arrivano comunque da soli.';
 }

@@ -9578,4 +9578,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'רשומה התחדשה לבד';
+
+  @override
+  String get digestGroupedSubtitle => 'תזכורות באותו יום מגיעות כהתראה אחת בשעת התזכורת שלך. רשומות שפגות מחר, היום או שכבר פגו עדיין מקבלות התראה משלהן.';
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'ایک ریکارڈ خود بخود تجدید ہو گیا';
+
+  @override
+  String get digestGroupedSubtitle => 'ایک ہی دن کی یاددہانیاں آپ کے وقت پر ایک اطلاع کے طور پر آتی ہیں۔ کل، آج ختم ہونے والے یا ختم ہو چکے ریکارڈ اب بھی الگ آتے ہیں۔';
 }

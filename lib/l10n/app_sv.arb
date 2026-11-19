@@ -4007,5 +4007,9 @@
   "rolledTitleLocked": "En post förnyades av sig själv",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Påminnelser samma dag kommer som en avisering vid din påminnelsetid. Poster som går ut i morgon, i dag eller redan har gått ut får fortfarande sin egen.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

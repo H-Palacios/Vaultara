@@ -9521,4 +9521,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Un rexistro renovouse só';
+
+  @override
+  String get digestGroupedSubtitle => 'Os recordatorios do mesmo día chegan como unha soa notificación á túa hora de recordatorio. Os que caducan mañá, hoxe ou xa caducaron seguen chegando por separado.';
 }

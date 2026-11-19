@@ -9516,4 +9516,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'یک مورد خودش تمدید شد';
+
+  @override
+  String get digestGroupedSubtitle => 'یادآوری‌های یک روز به‌صورت یک اعلان در زمان یادآوری شما می‌آیند. مواردی که فردا یا امروز منقضی می‌شوند یا منقضی شده‌اند جداگانه می‌آیند.';
 }

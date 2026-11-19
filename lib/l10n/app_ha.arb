@@ -4026,5 +4026,9 @@
   "rolledTitleLocked": "Wani rikodi ya sabunta kansa",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Tunatarwa na rana ɗaya suna zuwa a matsayin sanarwa ɗaya a lokacin tunatarwarka. Rikodin da zai ƙare gobe, yau ko ya riga ya ƙare suna samun nasu.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

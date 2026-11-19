@@ -9516,4 +9516,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'ഒരു രേഖ തനിയെ പുതുക്കി';
+
+  @override
+  String get digestGroupedSubtitle => 'ഒരേ ദിവസത്തെ ഓർമ്മപ്പെടുത്തലുകൾ നിങ്ങളുടെ സമയത്ത് ഒറ്റ അറിയിപ്പായി വരും. നാളെയോ ഇന്നോ കാലാവധി തീരുന്നവയും തീർന്നവയും ഇപ്പോഴും വെവ്വേറെ വരും.';
 }

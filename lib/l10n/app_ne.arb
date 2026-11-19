@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "एउटा रेकर्ड आफैं नवीकरण भयो",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "एउटै दिनका रिमाइन्डरहरू तपाईंको रिमाइन्डर समयमा एउटा सूचनाको रूपमा आउँछन्। भोलि, आज सकिने वा सकिएका रेकर्डले अझै छुट्टै सूचना पाउँछन्।",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

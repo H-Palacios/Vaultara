@@ -9516,4 +9516,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'एउटा रेकर्ड आफैं नवीकरण भयो';
+
+  @override
+  String get digestGroupedSubtitle => 'एउटै दिनका रिमाइन्डरहरू तपाईंको रिमाइन्डर समयमा एउटा सूचनाको रूपमा आउँछन्। भोलि, आज सकिने वा सकिएका रेकर्डले अझै छुट्टै सूचना पाउँछन्।';
 }

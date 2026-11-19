@@ -4045,5 +4045,9 @@
   "rolledTitleLocked": "Záznam se obnovil sám",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Připomínky ze stejného dne přijdou jako jedno oznámení v čase připomínek. Záznamy, které vyprší zítra, dnes nebo už vypršely, dostanou vlastní.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

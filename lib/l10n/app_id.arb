@@ -4019,5 +4019,9 @@
   "rolledTitleLocked": "Sebuah catatan diperpanjang sendiri",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Pengingat di hari yang sama datang sebagai satu notifikasi pada jam pengingat Anda. Yang jatuh tempo besok, hari ini, atau sudah kedaluwarsa tetap datang sendiri.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

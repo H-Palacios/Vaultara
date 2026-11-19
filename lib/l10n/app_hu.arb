@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "Egy tétel magától megújult",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Az egy napra eső emlékeztetők egy értesítésként érkeznek az emlékeztetési időben. A holnap, ma lejáró vagy lejárt tételek továbbra is külön jönnek.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

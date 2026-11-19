@@ -9451,4 +9451,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'မှတ်တမ်းတစ်ခု အလိုအလျောက် သက်တမ်းတိုးသွားသည်';
+
+  @override
+  String get digestGroupedSubtitle => 'တစ်နေ့တည်းရှိ သတိပေးချက်များကို သင့်သတိပေးချိန်တွင် အသိပေးချက်တစ်ခုအဖြစ် ပို့ပါမည်။ မနက်ဖြန်၊ ယနေ့ သက်တမ်းကုန်မည့် သို့ ကုန်ပြီးသော မှတ်တမ်းများကို သီးခြားပို့ပါမည်။';
 }

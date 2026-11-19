@@ -3764,5 +3764,9 @@
   "rolledTitleLocked": "Yozuv o'zi yangilandi",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Bir kundagi eslatmalar eslatma vaqtingizda bitta bildirishnoma bo'lib keladi. Ertaga, bugun muddati tugaydigan yoki tugagan yozuvlar alohida keladi.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

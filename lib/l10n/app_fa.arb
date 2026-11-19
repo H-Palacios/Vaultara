@@ -4026,5 +4026,9 @@
   "rolledTitleLocked": "یک مورد خودش تمدید شد",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "یادآوری‌های یک روز به‌صورت یک اعلان در زمان یادآوری شما می‌آیند. مواردی که فردا یا امروز منقضی می‌شوند یا منقضی شده‌اند جداگانه می‌آیند.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Egy tétel magától megújult';
+
+  @override
+  String get digestGroupedSubtitle => 'Az egy napra eső emlékeztetők egy értesítésként érkeznek az emlékeztetési időben. A holnap, ma lejáró vagy lejárt tételek továbbra is külön jönnek.';
 }

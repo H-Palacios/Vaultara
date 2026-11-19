@@ -9515,4 +9515,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Жазба өздігінен жаңартылды';
+
+  @override
+  String get digestGroupedSubtitle => 'Бір күндегі еске салғыштар еске салу уақытыңызда бір хабарлама болып келеді. Ертең, бүгін мерзімі бітетін немесе біткен жазбалар бөлек келеді.';
 }

@@ -9773,4 +9773,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'تجدد سجل تلقائيًا';
+
+  @override
+  String get digestGroupedSubtitle => 'تصل التذكيرات في اليوم نفسه كإشعار واحد في وقت التذكير. السجلات المستحقة غدًا أو اليوم أو المنتهية تحصل على إشعار خاص بها.';
 }

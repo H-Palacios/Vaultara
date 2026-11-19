@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "O înregistrare s-a reînnoit singură",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Mementourile din aceeași zi vin ca o singură notificare la ora mementourilor. Cele care expiră mâine, azi sau au expirat vin în continuare separat.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

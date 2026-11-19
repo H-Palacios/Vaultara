@@ -4045,5 +4045,9 @@
   "rolledTitleLocked": "Un registre s'ha renovat sol",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Els recordatoris del mateix dia arriben com una sola notificació a l'hora de recordatori. Els que caduquen demà, avui o ja han caducat en reben una de pròpia.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

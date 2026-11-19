@@ -9521,4 +9521,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Ein Eintrag hat sich selbst verlängert';
+
+  @override
+  String get digestGroupedSubtitle => 'Erinnerungen am selben Tag kommen als eine Mitteilung zu deiner Erinnerungszeit. Einträge, die morgen oder heute ablaufen oder abgelaufen sind, kommen weiter einzeln.';
 }

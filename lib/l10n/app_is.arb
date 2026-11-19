@@ -4019,5 +4019,9 @@
   "rolledTitleLocked": "Færsla endurnýjaðist sjálf",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Áminningar sama dags koma sem ein tilkynning á áminningartíma þínum. Færslur sem renna út á morgun, í dag eða eru útrunnar fá samt sína eigin.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

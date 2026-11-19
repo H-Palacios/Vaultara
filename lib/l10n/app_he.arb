@@ -4019,5 +4019,9 @@
   "rolledTitleLocked": "רשומה התחדשה לבד",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "תזכורות באותו יום מגיעות כהתראה אחת בשעת התזכורת שלך. רשומות שפגות מחר, היום או שכבר פגו עדיין מקבלות התראה משלהן.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

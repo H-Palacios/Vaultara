@@ -4031,5 +4031,9 @@
   "rolledTitleLocked": "รายการหนึ่งต่ออายุเองแล้ว",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "การแจ้งเตือนในวันเดียวกันจะรวมเป็นการแจ้งเตือนเดียวตามเวลาที่ตั้งไว้ รายการที่หมดอายุพรุ่งนี้ วันนี้ หรือหมดอายุแล้ว ยังแจ้งแยกเหมือนเดิม",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

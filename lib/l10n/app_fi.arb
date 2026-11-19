@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "Tietue uusiutui itsestään",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Saman päivän muistutukset tulevat yhtenä ilmoituksena muistutusaikaasi. Huomenna tai tänään vanhenevat ja vanhentuneet saavat silti omansa.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

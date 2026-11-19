@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "Àkọsílẹ̀ kan ti sọ ara rẹ̀ di tuntun",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Àwọn ìrántí ọjọ́ kan náà máa ń wá gẹ́gẹ́ bí ìkìlọ̀ kan ní àkókò ìrántí rẹ. Àwọn àkọsílẹ̀ tí yóò parí ní ọ̀la, lónìí tàbí tí ó ti parí ṣì máa ń gba tiwọn.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

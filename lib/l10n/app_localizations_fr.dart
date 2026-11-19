@@ -9531,4 +9531,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Un élément s\'est renouvelé seul';
+
+  @override
+  String get digestGroupedSubtitle => 'Les rappels du même jour arrivent en une seule notification à votre heure de rappel. Ceux qui expirent demain, aujourd\'hui ou ont expiré arrivent toujours seuls.';
 }

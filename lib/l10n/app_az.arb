@@ -3764,5 +3764,9 @@
   "rolledTitleLocked": "Bir qeyd öz-özünə yeniləndi",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Eyni gündəki xatırlatmalar xatırlatma vaxtınızda bir bildiriş kimi gəlir. Sabah, bu gün bitən və ya artıq bitmiş qeydlər yenə ayrıca gəlir.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

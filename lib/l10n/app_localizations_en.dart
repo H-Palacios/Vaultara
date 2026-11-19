@@ -9536,4 +9536,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'A record renewed by itself';
+
+  @override
+  String get digestGroupedSubtitle => 'Reminders on the same day come as one notification at your reminder time. Records due tomorrow, due today or expired still get their own.';
 }

@@ -4045,5 +4045,9 @@
   "rolledTitleLocked": "Ein Eintrag hat sich selbst verlängert",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Erinnerungen am selben Tag kommen als eine Mitteilung zu deiner Erinnerungszeit. Einträge, die morgen oder heute ablaufen oder abgelaufen sind, kommen weiter einzeln.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

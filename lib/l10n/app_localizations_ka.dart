@@ -9516,4 +9516,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'ჩანაწერი თავად განახლდა';
+
+  @override
+  String get digestGroupedSubtitle => 'ერთი დღის შეხსენებები ერთ შეტყობინებად მოდის შეხსენების დროს. ხვალ, დღეს ვადაგასული ან უკვე ვადაგასული ჩანაწერები კვლავ ცალკე მოდის.';
 }

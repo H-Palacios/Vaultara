@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "Wpis odnowił się sam",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Przypomnienia z tego samego dnia przychodzą jako jedno powiadomienie o twojej godzinie. Wpisy wygasające jutro, dziś lub już wygasłe nadal dostają własne.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

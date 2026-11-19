@@ -9451,4 +9451,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'កំណត់ត្រាមួយបានបន្តដោយខ្លួនឯង';
+
+  @override
+  String get digestGroupedSubtitle => 'ការរំលឹកនៅថ្ងៃតែមួយមកជាការជូនដំណឹងតែមួយនៅម៉ោងរំលឹករបស់អ្នក។ កំណត់ត្រាដែលផុតកំណត់ថ្ងៃស្អែក ថ្ងៃនេះ ឬផុតកំណត់ហើយ នៅតែមកដាច់ដោយឡែក។';
 }

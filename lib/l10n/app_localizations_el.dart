@@ -9521,4 +9521,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Μια εγγραφή ανανεώθηκε μόνη της';
+
+  @override
+  String get digestGroupedSubtitle => 'Οι υπενθυμίσεις της ίδιας μέρας έρχονται ως μία ειδοποίηση στην ώρα υπενθύμισης. Όσες λήγουν αύριο, σήμερα ή έχουν λήξει έρχονται ξεχωριστά.';
 }

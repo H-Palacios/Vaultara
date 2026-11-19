@@ -9453,4 +9453,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'ບັນທຶກໜຶ່ງຕໍ່ອາຍຸເອງແລ້ວ';
+
+  @override
+  String get digestGroupedSubtitle => 'ການແຈ້ງເຕືອນມື້ດຽວກັນຈະມາເປັນການແຈ້ງເຕືອນດຽວໃນເວລາເຕືອນຂອງທ່ານ. ລາຍການທີ່ໝົດອາຍຸມື້ອື່ນ, ມື້ນີ້ ຫຼື ໝົດແລ້ວ ຍັງມາແຍກ.';
 }

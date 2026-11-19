@@ -9516,4 +9516,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Wani rikodi ya sabunta kansa';
+
+  @override
+  String get digestGroupedSubtitle => 'Tunatarwa na rana ɗaya suna zuwa a matsayin sanarwa ɗaya a lokacin tunatarwarka. Rikodin da zai ƙare gobe, yau ko ya riga ya ƙare suna samun nasu.';
 }

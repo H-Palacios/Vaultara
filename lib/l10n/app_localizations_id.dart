@@ -9448,4 +9448,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Sebuah catatan diperpanjang sendiri';
+
+  @override
+  String get digestGroupedSubtitle => 'Pengingat di hari yang sama datang sebagai satu notifikasi pada jam pengingat Anda. Yang jatuh tempo besok, hari ini, atau sudah kedaluwarsa tetap datang sendiri.';
 }

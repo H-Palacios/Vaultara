@@ -9520,4 +9520,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'En post förnyades av sig själv';
+
+  @override
+  String get digestGroupedSubtitle => 'Påminnelser samma dag kommer som en avisering vid din påminnelsetid. Poster som går ut i morgon, i dag eller redan har gått ut får fortfarande sin egen.';
 }

@@ -4052,5 +4052,9 @@
   "rolledTitleLocked": "'n Rekord het vanself hernu",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Herinneringe op dieselfde dag kom as een kennisgewing op jou herinneringstyd. Rekords wat môre of vandag verval, of reeds verval het, kry steeds hul eie.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

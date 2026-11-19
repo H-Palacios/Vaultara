@@ -9515,4 +9515,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'වාර්තාවක් තමන්ම අලුත් විය';
+
+  @override
+  String get digestGroupedSubtitle => 'එකම දවසේ මතක් කිරීම් ඔබේ මතක් කිරීමේ වේලාවට එක් දැනුම්දීමක් ලෙස එයි. හෙට, අද කල් ඉකුත් වන හෝ ඉකුත් වූ වාර්තා තවමත් වෙනම එයි.';
 }

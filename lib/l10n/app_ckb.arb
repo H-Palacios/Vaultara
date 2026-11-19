@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "تۆمارێک خۆی نوێ بووەوە",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "بیرخەرەوەکانی هەمان ڕۆژ وەک یەک ئاگادارکردنەوە لە کاتی بیرخستنەوەکەت دێن. تۆمارەکانی سبەی، ئەمڕۆ یان بەسەرچوو هێشتا جیا دێن.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

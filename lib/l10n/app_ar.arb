@@ -4052,5 +4052,9 @@
   "rolledTitleLocked": "تجدد سجل تلقائيًا",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "تصل التذكيرات في اليوم نفسه كإشعار واحد في وقت التذكير. السجلات المستحقة غدًا أو اليوم أو المنتهية تحصل على إشعار خاص بها.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

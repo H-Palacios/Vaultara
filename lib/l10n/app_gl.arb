@@ -4026,5 +4026,9 @@
   "rolledTitleLocked": "Un rexistro renovouse só",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Os recordatorios do mesmo día chegan como unha soa notificación á túa hora de recordatorio. Os que caducan mañá, hoxe ou xa caducaron seguen chegando por separado.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

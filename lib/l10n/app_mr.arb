@@ -3764,5 +3764,9 @@
   "rolledTitleLocked": "एक नोंद आपोआप नूतनीकृत झाली",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "एकाच दिवसाची स्मरणपत्रे तुमच्या स्मरण वेळेला एका सूचनेत येतात. उद्या, आज संपणाऱ्या किंवा संपलेल्या नोंदींना अजूनही स्वतंत्र सूचना मिळते.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

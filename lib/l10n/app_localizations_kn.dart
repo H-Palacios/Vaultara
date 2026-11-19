@@ -9516,4 +9516,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'ಒಂದು ದಾಖಲೆ ತಾನಾಗಿಯೇ ನವೀಕರಣವಾಯಿತು';
+
+  @override
+  String get digestGroupedSubtitle => 'ಒಂದೇ ದಿನದ ಜ್ಞಾಪನೆಗಳು ನಿಮ್ಮ ಜ್ಞಾಪನೆ ಸಮಯದಲ್ಲಿ ಒಂದು ಅಧಿಸೂಚನೆಯಾಗಿ ಬರುತ್ತವೆ. ನಾಳೆ, ಇಂದು ಮುಗಿಯುವ ಅಥವಾ ಮುಗಿದ ದಾಖಲೆಗಳು ಇನ್ನೂ ಪ್ರತ್ಯೇಕವಾಗಿ ಬರುತ್ತವೆ.';
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'એક રેકોર્ડ જાતે રિન્યૂ થયો';
+
+  @override
+  String get digestGroupedSubtitle => 'એક જ દિવસના રિમાઇન્ડર તમારા રિમાઇન્ડર સમયે એક સૂચના તરીકે આવે છે. આવતીકાલે, આજે સમાપ્ત થતા અથવા સમાપ્ત થયેલા રેકોર્ડને હજી અલગ મળે છે.';
 }

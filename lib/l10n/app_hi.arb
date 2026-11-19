@@ -4026,5 +4026,9 @@
   "rolledTitleLocked": "एक रिकॉर्ड अपने आप नवीनीकृत हुआ",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "एक ही दिन के रिमाइंडर आपके रिमाइंडर समय पर एक सूचना के रूप में आते हैं। कल, आज समाप्त होने वाले या समाप्त हो चुके रिकॉर्ड को अब भी अलग सूचना मिलती है।",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

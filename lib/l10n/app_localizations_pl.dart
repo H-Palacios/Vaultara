@@ -9696,4 +9696,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Wpis odnowił się sam';
+
+  @override
+  String get digestGroupedSubtitle => 'Przypomnienia z tego samego dnia przychodzą jako jedno powiadomienie o twojej godzinie. Wpisy wygasające jutro, dziś lub już wygasłe nadal dostają własne.';
 }

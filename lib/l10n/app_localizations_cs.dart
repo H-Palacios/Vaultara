@@ -9677,4 +9677,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Záznam se obnovil sám';
+
+  @override
+  String get digestGroupedSubtitle => 'Připomínky ze stejného dne přijdou jako jedno oznámení v čase připomínek. Záznamy, které vyprší zítra, dnes nebo už vypršely, dostanou vlastní.';
 }

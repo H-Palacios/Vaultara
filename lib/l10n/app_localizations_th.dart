@@ -9441,4 +9441,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'รายการหนึ่งต่ออายุเองแล้ว';
+
+  @override
+  String get digestGroupedSubtitle => 'การแจ้งเตือนในวันเดียวกันจะรวมเป็นการแจ้งเตือนเดียวตามเวลาที่ตั้งไว้ รายการที่หมดอายุพรุ่งนี้ วันนี้ หรือหมดอายุแล้ว ยังแจ้งแยกเหมือนเดิม';
 }

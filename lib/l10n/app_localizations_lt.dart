@@ -9673,4 +9673,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Įrašas atsinaujino pats';
+
+  @override
+  String get digestGroupedSubtitle => 'Tos pačios dienos priminimai ateina vienu pranešimu jūsų priminimų laiku. Rytoj, šiandien besibaigiantys ar pasibaigę įrašai vis tiek gauna savo.';
 }

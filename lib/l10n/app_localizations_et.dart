@@ -9521,4 +9521,7 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Kirje uuenes ise';
+
+  @override
+  String get digestGroupedSubtitle => 'Sama päeva meeldetuletused tulevad ühe teatena sinu meeldetuletuse ajal. Homme või täna aeguvad ja aegunud kirjed saavad ikka oma teate.';
 }

@@ -3989,5 +3989,9 @@
   "rolledTitleLocked": "Запись продлилась сама",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Напоминания на один день приходят одним уведомлением в ваше время напоминаний. Записи, истекающие завтра, сегодня или уже истёкшие, по-прежнему приходят отдельно.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

@@ -9515,4 +9515,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Жазуу өзү жаңыланды';
+
+  @override
+  String get digestGroupedSubtitle => 'Бир күндөгү эскертүүлөр эскертүү убагыңызда бир билдирүү болуп келет. Эртең, бүгүн мөөнөтү бүтүүчү же бүткөн жазуулар өзүнчө келет.';
 }

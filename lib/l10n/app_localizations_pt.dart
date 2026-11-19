@@ -9522,4 +9522,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Um registo renovou-se sozinho';
+
+  @override
+  String get digestGroupedSubtitle => 'Os lembretes do mesmo dia chegam numa só notificação à sua hora de lembrete. Os que expiram amanhã, hoje ou já expiraram continuam a chegar sozinhos.';
 }

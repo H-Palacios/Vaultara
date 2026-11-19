@@ -9453,4 +9453,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Satu rekod diperbaharui sendiri';
+
+  @override
+  String get digestGroupedSubtitle => 'Peringatan pada hari yang sama datang sebagai satu pemberitahuan pada masa peringatan anda. Rekod yang tamat esok, hari ini atau sudah tamat masih datang sendiri.';
 }

@@ -4028,5 +4028,9 @@
   "rolledTitleLocked": "Erregistro bat berez berritu da",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Egun bereko oroigarriak jakinarazpen bakar gisa iristen dira zure oroigarri-orduan. Bihar edo gaur iraungitzen direnek edo iraungitakoek berea jasotzen dute.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'एक नोंद आपोआप नूतनीकृत झाली';
+
+  @override
+  String get digestGroupedSubtitle => 'एकाच दिवसाची स्मरणपत्रे तुमच्या स्मरण वेळेला एका सूचनेत येतात. उद्या, आज संपणाऱ्या किंवा संपलेल्या नोंदींना अजूनही स्वतंत्र सूचना मिळते.';
 }

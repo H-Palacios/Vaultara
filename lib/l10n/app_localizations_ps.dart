@@ -9516,4 +9516,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'یو ریکارډ پخپله نوی شو';
+
+  @override
+  String get digestGroupedSubtitle => 'د یوې ورځې یادونې ستاسو د یادونې په وخت کې د یوه خبرتیا په توګه راځي. هغه ریکارډونه چې سبا، نن پای ته رسېږي یا رسېدلي، لا هم جلا راځي.';
 }

@@ -9721,4 +9721,7 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'D\'athnuaigh taifead é féin';
+
+  @override
+  String get digestGroupedSubtitle => 'Tagann meabhrúcháin an lae chéanna mar fhógra amháin ag d\'am meabhrúcháin. Faigheann taifid a théann in éag amárach, inniu nó atá imithe in éag a gcuid féin fós.';
 }

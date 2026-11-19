@@ -4007,5 +4007,9 @@
   "rolledTitleLocked": "有一筆紀錄已自動續期",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "同一天的提醒會在你的提醒時間合併為一則通知。明天或今天到期、或已過期的紀錄仍會單獨提醒。",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

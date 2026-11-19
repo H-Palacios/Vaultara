@@ -4052,5 +4052,9 @@
   "rolledTitleLocked": "አንድ መዝገብ በራሱ ታድሷል",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "በአንድ ቀን የሚወድቁ ማስታወሻዎች በማስታወሻ ሰዓትዎ እንደ አንድ ማሳወቂያ ይመጣሉ። ነገ ወይም ዛሬ የሚያበቁ ወይም ያበቁ መዝገቦች አሁንም የራሳቸውን ያገኛሉ።",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

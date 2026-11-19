@@ -4032,5 +4032,9 @@
   "rolledTitleLocked": "Ieraksts atjaunojās pats",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Vienas dienas atgādinājumi pienāk kā viens paziņojums jūsu atgādinājumu laikā. Ieraksti, kam termiņš beidzas rīt, šodien vai jau beidzies, joprojām saņem savu.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

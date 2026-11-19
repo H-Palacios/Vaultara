@@ -9464,4 +9464,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Àkọsílẹ̀ kan ti sọ ara rẹ̀ di tuntun';
+
+  @override
+  String get digestGroupedSubtitle => 'Àwọn ìrántí ọjọ́ kan náà máa ń wá gẹ́gẹ́ bí ìkìlọ̀ kan ní àkókò ìrántí rẹ. Àwọn àkọsílẹ̀ tí yóò parí ní ọ̀la, lónìí tàbí tí ó ti parí ṣì máa ń gba tiwọn.';
 }

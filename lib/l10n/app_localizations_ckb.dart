@@ -9515,4 +9515,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'تۆمارێک خۆی نوێ بووەوە';
+
+  @override
+  String get digestGroupedSubtitle => 'بیرخەرەوەکانی هەمان ڕۆژ وەک یەک ئاگادارکردنەوە لە کاتی بیرخستنەوەکەت دێن. تۆمارەکانی سبەی، ئەمڕۆ یان بەسەرچوو هێشتا جیا دێن.';
 }

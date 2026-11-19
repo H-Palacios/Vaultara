@@ -9516,4 +9516,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'ஒரு பதிவு தானாக புதுப்பிக்கப்பட்டது';
+
+  @override
+  String get digestGroupedSubtitle => 'ஒரே நாளின் நினைவூட்டல்கள் உங்கள் நினைவூட்டல் நேரத்தில் ஒரே அறிவிப்பாக வரும். நாளை, இன்று காலாவதியாகும் அல்லது காலாவதியானவை இன்னும் தனியாக வரும்.';
 }

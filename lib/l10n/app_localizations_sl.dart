@@ -9682,4 +9682,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Zapis se je podaljšal sam';
+
+  @override
+  String get digestGroupedSubtitle => 'Opomniki za isti dan pridejo kot eno obvestilo ob času opomnikov. Zapisi, ki potečejo jutri, danes ali so že potekli, še vedno dobijo svojega.';
 }

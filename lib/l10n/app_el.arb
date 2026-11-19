@@ -4021,5 +4021,9 @@
   "rolledTitleLocked": "Μια εγγραφή ανανεώθηκε μόνη της",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Οι υπενθυμίσεις της ίδιας μέρας έρχονται ως μία ειδοποίηση στην ώρα υπενθύμισης. Όσες λήγουν αύριο, σήμερα ή έχουν λήξει έρχονται ξεχωριστά.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

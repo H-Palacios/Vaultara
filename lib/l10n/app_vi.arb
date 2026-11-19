@@ -4014,5 +4014,9 @@
   "rolledTitleLocked": "Một mục đã tự gia hạn",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Các lời nhắc cùng ngày sẽ gộp thành một thông báo vào giờ nhắc của bạn. Mục hết hạn ngày mai, hôm nay hoặc đã hết hạn vẫn được báo riêng.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

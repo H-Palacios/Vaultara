@@ -4028,5 +4028,9 @@
   "rolledTitleLocked": "Գրառումը թարմացվեց ինքնուրույն",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Նույն օրվա հիշեցումները գալիս են որպես մեկ ծանուցում ձեր հիշեցման ժամին։ Վաղը, այսօր ավարտվող կամ ավարտված գրառումները դեռ առանձին են գալիս։",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

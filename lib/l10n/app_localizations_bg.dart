@@ -9517,4 +9517,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Запис се поднови сам';
+
+  @override
+  String get digestGroupedSubtitle => 'Напомнянията за един и същи ден идват като едно известие в часа за напомняне. Записите, изтичащи утре, днес или вече изтекли, получават свое.';
 }

@@ -9516,4 +9516,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Irekhodi izivuselele';
+
+  @override
+  String get digestGroupedSubtitle => 'Izikhumbuzo zosuku olufanayo zifika njengesaziso esisodwa ngesikhathi sakho sesikhumbuzo. Amarekhodi aphelelwa kusasa, namuhla noma aphelelwe asathola awawo.';
 }

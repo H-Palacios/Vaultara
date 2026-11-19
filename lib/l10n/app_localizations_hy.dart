@@ -9516,4 +9516,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Գրառումը թարմացվեց ինքնուրույն';
+
+  @override
+  String get digestGroupedSubtitle => 'Նույն օրվա հիշեցումները գալիս են որպես մեկ ծանուցում ձեր հիշեցման ժամին։ Վաղը, այսօր ավարտվող կամ ավարտված գրառումները դեռ առանձին են գալիս։';
 }

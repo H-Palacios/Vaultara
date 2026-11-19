@@ -4006,5 +4006,9 @@
   "rolledTitleLocked": "Irekhodi izivuselele",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
+  },
+  "digestGroupedSubtitle": "Izikhumbuzo zosuku olufanayo zifika njengesaziso esisodwa ngesikhathi sakho sesikhumbuzo. Amarekhodi aphelelwa kusasa, namuhla noma aphelelwe asathola awawo.",
+  "@digestGroupedSubtitle": {
+    "description": "digestGroupedSubtitle"
   }
 }

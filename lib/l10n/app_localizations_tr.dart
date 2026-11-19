@@ -9516,4 +9516,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Bir kayıt kendiliğinden yenilendi';
+
+  @override
+  String get digestGroupedSubtitle => 'Aynı günkü hatırlatıcılar hatırlatma saatinizde tek bildirim olarak gelir. Yarın, bugün süresi dolan veya dolmuş kayıtlar yine ayrı gelir.';
 }

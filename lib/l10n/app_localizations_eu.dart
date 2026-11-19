@@ -9521,4 +9521,7 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get rolledTitleLocked => 'Erregistro bat berez berritu da';
+
+  @override
+  String get digestGroupedSubtitle => 'Egun bereko oroigarriak jakinarazpen bakar gisa iristen dira zure oroigarri-orduan. Bihar edo gaur iraungitzen direnek edo iraungitakoek berea jasotzen dute.';
 }
