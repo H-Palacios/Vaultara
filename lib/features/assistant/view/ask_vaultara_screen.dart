@@ -41,6 +41,7 @@ import 'package:vaultara/features/insights/services/tts_service.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/services/location_country.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/assistant/logic/assistant_limit.dart';
 
 Future<void> openAskVaultara(
   BuildContext context, {
@@ -509,7 +510,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       case AssistantFailure.offline:
         return loc.assistantErrorOffline;
       case AssistantFailure.limitReached:
-        return loc.assistantErrorLimit;
+        return AssistantLimit.message(loc, AssistantService.lastLimit) ??
+            loc.assistantErrorLimit;
       case AssistantFailure.notPremium:
         return loc.assistantPremiumBody;
       case AssistantFailure.busy:

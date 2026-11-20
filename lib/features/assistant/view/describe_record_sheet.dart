@@ -8,14 +8,15 @@ import 'package:vaultara/features/assistant/services/voice_input.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_voice_panel.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/features/assistant/logic/assistant_limit.dart';
 
 Future<AssistantAction?> showDescribeRecordSheet(BuildContext context) {
   return AppSheet.show<AssistantAction>(
     context: context,
-      showDragHandle: false,
+    showDragHandle: false,
     enableDrag: false,
     builder: (_) => const _DescribeRecordSheet(),
-    );
+  );
 }
 
 class _DescribeRecordSheet extends StatefulWidget {
@@ -73,8 +74,9 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
       locale: Localizations.localeOf(context),
       onWords: (words, _) {
         if (!mounted) return;
-        final joined =
-            _voiceBase.isEmpty ? words : '$_voiceBase ${words.trim()}';
+        final joined = _voiceBase.isEmpty
+            ? words
+            : '$_voiceBase ${words.trim()}';
         _controller.value = TextEditingValue(
           text: joined,
           selection: TextSelection.collapsed(offset: joined.length),
@@ -91,7 +93,8 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
       case AssistantFailure.offline:
         return loc.assistantErrorOffline;
       case AssistantFailure.limitReached:
-        return loc.assistantErrorLimit;
+        return AssistantLimit.message(loc, AssistantService.lastLimit) ??
+            loc.assistantErrorLimit;
       case AssistantFailure.notPremium:
         return loc.assistantPremiumBody;
       case AssistantFailure.busy:
@@ -191,26 +194,30 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
               maxLines: 5,
               maxLength: 500,
               textCapitalization: TextCapitalization.sentences,
-              decoration: AppInputDecorations.field(
-                context,
-                hintText:
-                    listening ? loc.assistantListening : loc.describeItHint,
-                hintFontSize: 14,
-                errorText: _error,
-                suffixIcon: IconButton(
-                  tooltip: listening
-                      ? loc.assistantStopListening
-                      : loc.assistantSpeak,
-                  onPressed: _busy ? null : _toggleMic,
-                  icon: Icon(
-                    listening ? Icons.stop_circle_rounded : Icons.mic_rounded,
-                    color: listening ? scheme.error : scheme.primary,
+              decoration:
+                  AppInputDecorations.field(
+                    context,
+                    hintText: listening
+                        ? loc.assistantListening
+                        : loc.describeItHint,
+                    hintFontSize: 14,
+                    errorText: _error,
+                    suffixIcon: IconButton(
+                      tooltip: listening
+                          ? loc.assistantStopListening
+                          : loc.assistantSpeak,
+                      onPressed: _busy ? null : _toggleMic,
+                      icon: Icon(
+                        listening
+                            ? Icons.stop_circle_rounded
+                            : Icons.mic_rounded,
+                        color: listening ? scheme.error : scheme.primary,
+                      ),
+                    ),
+                  ).copyWith(
+                    contentPadding: const EdgeInsets.fromLTRB(14, 14, 8, 14),
+                    errorMaxLines: 3,
                   ),
-                ),
-              ).copyWith(
-                contentPadding: const EdgeInsets.fromLTRB(14, 14, 8, 14),
-                errorMaxLines: 3,
-              ),
             ),
           ),
           ValueListenableBuilder<bool>(
@@ -238,7 +245,9 @@ class _DescribeRecordSheetState extends State<_DescribeRecordSheet> {
             children: [
               Expanded(
                 child: OutlinedButton(
-                  onPressed: _busy ? null : () => Navigator.of(context).maybePop(),
+                  onPressed: _busy
+                      ? null
+                      : () => Navigator.of(context).maybePop(),
                   child: Text(loc.cancel),
                 ),
               ),

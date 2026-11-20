@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
+import 'package:vaultara/features/assistant/logic/assistant_limit.dart';
 
 enum AssistantFailure {
   offline,
@@ -147,6 +148,9 @@ class AssistantService {
       );
     } on FirebaseFunctionsException catch (e) {
       final failure = _mapCode(e.code);
+      lastLimit = failure == AssistantFailure.limitReached
+          ? AssistantLimit.fromDetails(e.details)
+          : null;
       if (failure == AssistantFailure.busy ||
           failure == AssistantFailure.failed) {
         if (!await _online()) {
@@ -203,6 +207,9 @@ class AssistantService {
       return false;
     }
   }
+
+  /// When the last limit reached ends, for the message shown to the user.
+  static AssistantLimit? lastLimit;
 
   static AssistantFailure _mapCode(String code) {
     switch (code) {
