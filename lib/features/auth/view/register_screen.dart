@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/navigation/auth_root.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-import 'package:vaultara/core/navigation/navigator_key.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/features/auth/services/sign_up_service.dart';
@@ -10,7 +10,6 @@ import 'package:vaultara/features/auth/view/widget/email_typo_hint.dart';
 import 'package:vaultara/features/auth/view/widget/social_sign_in_buttons.dart';
 import 'package:vaultara/features/auth/logic/password_rules.dart';
 import 'package:vaultara/core/util/text_normaliser.dart';
-import 'package:vaultara/shell/shell.dart';
 import 'package:vaultara/features/security/logic/pwned_passwords.dart';
 import 'package:vaultara/features/security/view/consent_sheets.dart';
 
@@ -102,14 +101,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   void _goToShell() {
     FocusManager.instance.primaryFocus?.unfocus();
-
-    final nav = navigatorKey.currentState;
-    if (nav == null) return;
-
-    nav.pushAndRemoveUntil(
-      MaterialPageRoute(builder: (_) => const Shell()),
-      (route) => false,
-    );
+    AuthRoot.showSignedIn();
   }
 
   Future<void> _showErrorModal(String title, String message) async {

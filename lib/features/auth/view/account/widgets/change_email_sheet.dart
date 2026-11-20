@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/navigation/auth_root.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -10,7 +11,6 @@ import 'package:vaultara/features/auth/logic/register_error_mapper.dart';
 import 'package:vaultara/features/auth/services/email_change_service.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 import 'package:vaultara/features/auth/view/verify_email_screen.dart';
-import 'package:vaultara/shell/shell.dart';
 
 class ChangeEmailSheet extends StatefulWidget {
   const ChangeEmailSheet({super.key});
@@ -57,12 +57,7 @@ class _ChangeEmailSheetState extends State<ChangeEmailSheet> {
     super.dispose();
   }
 
-  void _goToShell() {
-    navigatorKey.currentState?.pushAndRemoveUntil(
-      MaterialPageRoute(builder: (_) => const Shell()),
-      (route) => false,
-    );
-  }
+  void _goToShell() => AuthRoot.showSignedIn();
 
   Future<void> _submit() async {
     final loc = AppLocalizations.of(context)!;
@@ -91,12 +86,16 @@ class _ChangeEmailSheetState extends State<ChangeEmailSheet> {
         currentPassword: password,
       );
 
+      AuthRoot.keepScreensOnNextSignOut();
       await FirebaseAuth.instance.signOut();
 
       if (!mounted) return;
       Navigator.of(context).pop();
 
-      navigatorKey.currentState?.pushAndRemoveUntil(
+      // Over the first screen, never in place of it, so signing out
+      // later still lands on the sign-in screen.
+      AuthRoot.backToRoot();
+      navigatorKey.currentState?.push(
         MaterialPageRoute(
           builder: (_) => VerifyEmailScreen(
             onAuthenticated: _goToShell,
@@ -104,7 +103,6 @@ class _ChangeEmailSheetState extends State<ChangeEmailSheet> {
             canDiscardAccount: false,
           ),
         ),
-        (route) => false,
       );
     } on FirebaseAuthException catch (e) {
       if (!mounted || MfaChallenge.isCancelled(e)) return;
@@ -207,7 +205,9 @@ class _ChangeEmailSheetState extends State<ChangeEmailSheet> {
                   focused: _passwordFocus.hasFocus,
                   errorText: _passwordError,
                   suffixIcon: IconButton(
-                    tooltip: _obscurePassword ? AppLocalizations.of(context)!.showPassword : AppLocalizations.of(context)!.hidePassword,
+                    tooltip: _obscurePassword
+                        ? AppLocalizations.of(context)!.showPassword
+                        : AppLocalizations.of(context)!.hidePassword,
                     icon: Icon(
                       _obscurePassword
                           ? Icons.visibility_off_rounded
@@ -236,7 +236,9 @@ class _ChangeEmailSheetState extends State<ChangeEmailSheet> {
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
-                  onPressed: _loading ? null : () => Navigator.of(context).pop(),
+                  onPressed: _loading
+                      ? null
+                      : () => Navigator.of(context).pop(),
                   child: Text(loc.cancel),
                 ),
               ),

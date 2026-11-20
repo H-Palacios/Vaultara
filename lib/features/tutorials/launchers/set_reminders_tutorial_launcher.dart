@@ -7,13 +7,18 @@ class SetRemindersTutorialLauncher {
   const SetRemindersTutorialLauncher._();
 
   static Future<void> launch(BuildContext context) async {
-    final NavigatorState rootNavigator =
-        Navigator.of(context, rootNavigator: true);
+    final NavigatorState rootNavigator = Navigator.of(
+      context,
+      rootNavigator: true,
+    );
     final BuildContext rootContext = rootNavigator.context;
 
     // Read the plan before popping, so the only thing between the pop and
     // the sheet is a couple of frames, not an async gap on Home.
-    final bool isPremium = await PlanRepository.premiumStream().first;
+    final bool isPremium = await PlanRepository.premiumStream().first.timeout(
+      const Duration(seconds: 3),
+      onTimeout: () => false,
+    );
     if (!rootContext.mounted) return;
 
     rootNavigator.popUntil((route) => route.isFirst);

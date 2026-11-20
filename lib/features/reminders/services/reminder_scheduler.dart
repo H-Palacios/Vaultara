@@ -137,7 +137,18 @@ class ReminderScheduler {
     } catch (_) {}
   }
 
-  static Future<void> init() async {
+  static Future<void>? _initFuture;
+
+  /// Safe to call from several places at once: they all wait for the same
+  /// setup instead of each loading the time zones and the plugin again.
+  static Future<void> init() {
+    if (_initialised) return Future<void>.value();
+    return _initFuture ??= _init().whenComplete(() {
+      if (!_initialised) _initFuture = null;
+    });
+  }
+
+  static Future<void> _init() async {
     if (_initialised) return;
     assert(_snoozeSlot == ReminderOffsets.maxNotificationsPerRecord);
 

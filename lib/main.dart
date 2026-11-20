@@ -13,22 +13,28 @@ import 'package:vaultara/features/household/services/shared_reminder_sync.dart';
 import 'core/analytics/analytics_service.dart';
 import 'features/security/services/analytics_consent.dart';
 import 'app.dart';
+import 'features/billing/data/repositories/plan_repository.dart';
 import 'core/util/temp_files.dart';
 
 Future<void> _initAppServices() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  try {
-    await FirebaseAppCheck.instance.activate(
-      androidProvider: kDebugMode
-          ? AndroidProvider.debug
-          : AndroidProvider.playIntegrity,
-      appleProvider: kDebugMode
-          ? AppleProvider.debug
-          : AppleProvider.appAttestWithDeviceCheckFallback,
-    );
-    unawaited(FirebaseAppCheck.instance.setTokenAutoRefreshEnabled(true));
-  } catch (_) {}
+  // Started before any other Firebase call, but not waited for: the
+  // platform handles calls in order, so later requests still carry the
+  // check, and the first screen no longer waits on it.
+  unawaited(
+    FirebaseAppCheck.instance
+        .activate(
+          androidProvider: kDebugMode
+              ? AndroidProvider.debug
+              : AndroidProvider.playIntegrity,
+          appleProvider: kDebugMode
+              ? AppleProvider.debug
+              : AppleProvider.appAttestWithDeviceCheckFallback,
+        )
+        .then((_) => FirebaseAppCheck.instance.setTokenAutoRefreshEnabled(true))
+        .catchError((Object _) {}),
+  );
 
   FirebaseFirestore.instance.settings = const Settings(
     persistenceEnabled: true,
@@ -49,8 +55,10 @@ Future<void> _initAppServices() async {
   AnalyticsService.observer();
 
   FirebaseMessaging.onBackgroundMessage(vaultaraBackgroundPush);
-  await SharedReminderSync.prime();
-  await ReminderScheduler.init();
+  await Future.wait<void>([SharedReminderSync.prime(), PlanStore.prime()]);
+  // Time zones and the notification plugin take a moment to load; every
+  // reminder call waits for this itself, so the first screen does not.
+  unawaited(ReminderScheduler.init());
   unawaited(PushService.start());
 }
 

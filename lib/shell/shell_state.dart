@@ -16,6 +16,7 @@ import 'package:vaultara/shell/bottom_nav_bar.dart';
 
 import 'package:vaultara/features/home/view/home_screen.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
+import 'package:vaultara/core/theme/app_brand.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -43,7 +44,7 @@ class ShellState extends State<Shell> {
   static ShellState? current;
 
   int index = 0;
-  bool isPremium = false;
+  bool isPremium = PlanStore.isPaid;
   bool isReady = false;
   bool isNewUser = false;
 
@@ -89,6 +90,7 @@ class ShellState extends State<Shell> {
     ReferralLinkService.detach();
     HouseholdLinkService.pendingCode.removeListener(_onJoinCode);
     ShareIntake.pending.removeListener(_onShared);
+    PlanStore.current.removeListener(_onPlan);
     TutorialController.instance.removeListener(_onTutorialChanged);
     TutorialController.instance.unregister(TutorialStep.addRecordFab);
     super.dispose();
@@ -143,11 +145,16 @@ class ShellState extends State<Shell> {
   final Completer<void> _planKnown = Completer<void>();
 
   void _listenToPlan() {
-    PlanRepository.premiumStream().listen((value) {
-      if (!_planKnown.isCompleted) _planKnown.complete();
-      if (!mounted) return;
-      setState(() => isPremium = value);
-    });
+    PlanStore.current.addListener(_onPlan);
+    _onPlan();
+  }
+
+  void _onPlan() {
+    final plan = PlanStore.current.value;
+    if (plan == null) return;
+    if (!_planKnown.isCompleted) _planKnown.complete();
+    if (!mounted || isPremium == plan.tier.isPaid) return;
+    setState(() => isPremium = plan.tier.isPaid);
   }
 
   Future<void> _runShortcut(String type) async {
@@ -173,6 +180,11 @@ class ShellState extends State<Shell> {
     final prefs = await SharedPreferences.getInstance();
     isNewUser = prefs.getBool(kIsNewUserKey) ?? false;
     _userFirstName = (prefs.getString(kUserFirstNameKey) ?? '').trim();
+
+    // Home opens with the right plan: straight away when this phone has
+    // seen the account before, otherwise after a short wait for it.
+    await PlanStore.whenKnown();
+    isPremium = PlanStore.isPaid;
 
     if (!mounted) return;
 
@@ -233,9 +245,11 @@ class ShellState extends State<Shell> {
     TutorialController.instance.attachRoot(context);
 
     if (!isReady) {
-      return const Scaffold(
-        backgroundColor: Colors.white,
-        body: SizedBox.expand(),
+      // Same as the launch screen, so opening the app is one smooth step
+      // instead of navy, then white, then Home.
+      return Scaffold(
+        backgroundColor: AppBrand.navy,
+        body: Center(child: Image.asset(AppBrand.logoAsset, width: 140)),
       );
     }
 
