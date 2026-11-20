@@ -1,5 +1,6 @@
 const { setGlobalOptions } = require("firebase-functions/v2");
-const { onCall, onRequest, HttpsError } = require("firebase-functions/v2/https");
+const { onRequest, HttpsError } = require("firebase-functions/v2/https");
+const { onCall } = require("./live-call");
 const { defineSecret } = require("firebase-functions/params");
 const logger = require("firebase-functions/logger");
 const crypto = require("crypto");
@@ -9,7 +10,15 @@ const { admin, ENFORCE_APP_CHECK, consumeRateLimit } = require("./shared");
 const { isPaid } = require("./plans");
 const { emailStrings } = require("./email-strings");
 
-setGlobalOptions({ region: "us-central1", maxInstances: 10 });
+// Runs every function as its own service account with only the roles it
+// needs, once one is set up (see README, "Functions service account"),
+// instead of the project's default account that can change almost anything.
+const serviceAccount = String(process.env.FUNCTIONS_SERVICE_ACCOUNT || "").trim();
+setGlobalOptions({
+  region: "us-central1",
+  maxInstances: 10,
+  ...(serviceAccount ? { serviceAccount } : {}),
+});
 
 const billing = require("./billing");
 const limits = require("./limits");
@@ -32,6 +41,7 @@ exports.onSecurityAlertCreated = security.onSecurityAlertCreated;
 exports.securityLogEvent = security.securityLogEvent;
 exports.securitySignOutEverywhere = security.securitySignOutEverywhere;
 exports.securitySignOutDevice = security.securitySignOutDevice;
+exports.securitySessionCheck = security.securitySessionCheck;
 exports.pruneSecurityDataJob = security.pruneSecurityDataJob;
 exports.yearlyRenewalReminderJob = billing.yearlyRenewalReminderJob;
 exports.requestAccountDeletion = require("./account-deletion").requestAccountDeletion;

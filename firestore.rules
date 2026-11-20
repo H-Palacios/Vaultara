@@ -3,8 +3,18 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
+    // A session signed out with "Sign out of all other devices" is turned
+    // away at once, not when its short-lived token runs out an hour later.
+    // auth_time is when that session signed in, in whole seconds.
+    function sessionLive() {
+      let me = /databases/$(database)/documents/users/$(request.auth.uid);
+      let revoked = exists(me) ? get(me).data.get('sessionsRevokedAt', null) : null;
+      return revoked == null
+        || request.auth.token.auth_time * 1000 > revoked.toMillis() - 1000;
+    }
+
     function signedIn() {
-      return request.auth != null;
+      return request.auth != null && sessionLive();
     }
 
     function isOwner(uid) {
@@ -253,7 +263,10 @@ service cloud.firestore {
         && (!('issuedIn' in d) || d.issuedIn == null
             || (d.issuedIn is string && d.issuedIn.matches('^[A-Z]{2}$')))
         && shortText('provider', 60)
-        && shortText('reference', 40);
+        && shortText('reference', 40)
+        // An encrypted number (base64) and its last four characters.
+        && shortText('referenceSealed', 400)
+        && shortText('referenceEnd', 4);
     }
 
     function optionalBool(field) {

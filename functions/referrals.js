@@ -1,5 +1,6 @@
 const crypto = require("crypto");
-const { onCall, HttpsError } = require("firebase-functions/v2/https");
+const { HttpsError } = require("firebase-functions/v2/https");
+const { onCall } = require("./live-call");
 const { onDocumentCreated } = require("firebase-functions/v2/firestore");
 const { onSchedule } = require("firebase-functions/v2/scheduler");
 const logger = require("firebase-functions/logger");

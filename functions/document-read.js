@@ -6,7 +6,8 @@
 // long numbers before calling this, so ID, policy and card numbers do not
 // leave the phone. The text is not stored or logged.
 
-const { onCall, HttpsError } = require("firebase-functions/v2/https");
+const { HttpsError } = require("firebase-functions/v2/https");
+const { onCall } = require("./live-call");
 const { defineSecret } = require("firebase-functions/params");
 const logger = require("firebase-functions/logger");
 const Anthropic = require("@anthropic-ai/sdk");
@@ -18,9 +19,9 @@ const ANTHROPIC_API_KEY = defineSecret("ANTHROPIC_API_KEY");
 const { modelFor, createMessage } = require("./models");
 const HOUR_MS = 60 * 60 * 1000;
 const DAY_MS = 24 * HOUR_MS;
-const PER_HOUR = 20;
-const PER_DAY = 50;
-const DEFAULT_GLOBAL_DAILY_CAP = 3000;
+// Per account only, generous enough for a whole drawer of documents.
+const PER_HOUR = 40;
+const PER_DAY = 120;
 const TEXT_MAX = 3000;
 const GROUPS_MAX = 400;
 const NAME_MAX = 30;
@@ -172,11 +173,6 @@ exports.readDocument = onCall(
     }
     if (!(await consumeRateLimit(`read-day:${uid}`, PER_DAY, DAY_MS))) {
       throw new HttpsError("resource-exhausted", "limit-day");
-    }
-    const cap = Number(process.env.DOCUMENT_READ_GLOBAL_DAILY_CAP) || DEFAULT_GLOBAL_DAILY_CAP;
-    if (!(await consumeRateLimit("read-global-day", cap, DAY_MS))) {
-      logger.warn("readDocument global cap reached");
-      throw new HttpsError("resource-exhausted", "limit-global");
     }
 
     const model = modelFor("SCAN_MODEL");

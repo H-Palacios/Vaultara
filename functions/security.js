@@ -2,7 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const { beforeUserCreated, beforeUserSignedIn, HttpsError } = require("firebase-functions/v2/identity");
 const { onSchedule } = require("firebase-functions/v2/scheduler");
-const { onCall, HttpsError: CallableError } = require("firebase-functions/v2/https");
+const { HttpsError: CallableError } = require("firebase-functions/v2/https");
+const { onCall, forgetSession } = require("./live-call");
 const { onDocumentCreated } = require("firebase-functions/v2/firestore");
 const logger = require("firebase-functions/logger");
 
@@ -847,6 +848,7 @@ exports.securitySignOutEverywhere = onCall(SECURITY_CALLABLE, async (request) =>
 
   const db = admin.firestore();
   const userRef = db.collection("users").doc(uid);
+  forgetSession(uid);
   await Promise.all([
     userRef.set({ sessionsRevokedAt: revokedAt }, { merge: true }),
     db.collection(SECURITY_STATE).doc(uid).set({ revokedAtMs: tva, tokensValidAfterMs: tva }, { merge: true }),
@@ -866,6 +868,14 @@ exports.securitySignOutEverywhere = onCall(SECURITY_CALLABLE, async (request) =>
 
   logger.info("securitySignOutEverywhere", { uid, devices: targets.length });
   return { revokedAtMs };
+});
+
+// Answers "is this session still allowed?". The check itself happens in
+// the callable wrapper, which turns away a session signed out from another
+// device with "session-signed-out".
+exports.securitySessionCheck = onCall(SECURITY_CALLABLE, async (request) => {
+  requireSignedIn(request);
+  return { ok: true };
 });
 
 exports.securitySignOutDevice = onCall(SECURITY_CALLABLE, async (request) => {

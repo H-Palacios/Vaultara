@@ -7,7 +7,8 @@
 // Only the category name is sent to the model. Nothing about the user's
 // records leaves Firestore.
 
-const { onCall, HttpsError } = require("firebase-functions/v2/https");
+const { HttpsError } = require("firebase-functions/v2/https");
+const { onCall } = require("./live-call");
 const { defineSecret } = require("firebase-functions/params");
 const logger = require("firebase-functions/logger");
 const Anthropic = require("@anthropic-ai/sdk");
@@ -23,7 +24,6 @@ const HOUR_MS = 60 * 60 * 1000;
 const DAY_MS = 24 * HOUR_MS;
 const PER_HOUR = 60;
 const PER_DAY = 200;
-const DEFAULT_GLOBAL_DAILY_CAP = 5000;
 const NAME_MAX = 40;
 
 // Keep in step with CategoryAppearance.icons in the app.
@@ -303,11 +303,6 @@ exports.suggestCategoryIcon = onCall(
     }
     if (!(await consumeRateLimit(`icon-day:${uid}`, PER_DAY, DAY_MS))) {
       throw new HttpsError("resource-exhausted", "limit-day");
-    }
-    const cap = Number(process.env.ICON_SUGGEST_GLOBAL_DAILY_CAP) || DEFAULT_GLOBAL_DAILY_CAP;
-    if (!(await consumeRateLimit("icon-global-day", cap, DAY_MS))) {
-      logger.warn("suggestCategoryIcon global cap reached");
-      throw new HttpsError("resource-exhausted", "limit-global");
     }
 
     const model = modelFor("ICON_MODEL");

@@ -1,4 +1,5 @@
-const { onCall, onRequest, HttpsError } = require("firebase-functions/v2/https");
+const { onRequest, HttpsError } = require("firebase-functions/v2/https");
+const { onCall } = require("./live-call");
 const { onSchedule } = require("firebase-functions/v2/scheduler");
 const { onMessagePublished } = require("firebase-functions/v2/pubsub");
 const logger = require("firebase-functions/logger");

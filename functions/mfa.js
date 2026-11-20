@@ -11,7 +11,8 @@
 // the password, so codes are long, single use and tightly rate limited.
 
 const crypto = require("crypto");
-const { onCall, HttpsError } = require("firebase-functions/v2/https");
+const { HttpsError } = require("firebase-functions/v2/https");
+const { onCall } = require("./live-call");
 const logger = require("firebase-functions/logger");
 const { admin, ENFORCE_APP_CHECK, consumeRateLimit } = require("./shared");
 
