@@ -257,7 +257,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   void initState() {
     super.initState();
 
-    if (isEditMode) PrivacyScreen.acquire();
+    // A new record can show a scanned document number too.
+    PrivacyScreen.acquire();
 
     final draft = widget.initialInput;
 
@@ -427,7 +428,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     referenceController.dispose();
     expiryController.dispose();
 
-    if (isEditMode) PrivacyScreen.release();
+    PrivacyScreen.release();
 
     super.dispose();
   }
@@ -1771,6 +1772,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           controller: referenceController,
           enabled: !isSaving,
           onChanged: (_) => setState(() {}),
+          lockedMask: widget.initialInput?.referenceLockedMask,
         ),
         const SizedBox(height: 10),
       ],

@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:vaultara/core/data/models/sealed_references.dart';
 import 'package:vaultara/core/data/models/renewal_entry.dart';
 import 'package:vaultara/core/data/models/record_attachment.dart';
 import 'package:vaultara/core/data/models/kept_in.dart';
@@ -44,8 +45,32 @@ class TrackedItem {
   final String? provider;
 
   /// A policy, card or document number, typed by the user. Shown masked,
-  /// never sent to Ask Vaultara.
+  /// never sent to Ask Vaultara. With encryption on it is never stored as
+  /// plain text: [referenceSealed] holds it, and this is filled only on a
+  /// phone that has opened it.
   final String? reference;
+
+  /// The number encrypted with the account's key (base64), when encryption
+  /// is on. Only this phone's key can open it.
+  final String? referenceSealed;
+
+  /// The last four characters of a sealed number, so lists can show
+  /// "•••• 1234" without opening it.
+  final String? referenceEnd;
+
+  /// True when the number is stored encrypted and this phone has not
+  /// opened it yet.
+  bool get referenceLocked => referenceSealed != null && reference == null;
+
+  /// The number for display: masked, from the plain number or the sealed
+  /// number's last four characters.
+  String? get referenceMasked {
+    final plain = reference;
+    if (plain != null) return maskReference(plain);
+    if (referenceSealed == null) return null;
+    final end = referenceEnd ?? '';
+    return end.isEmpty ? '••••' : '•••• $end';
+  }
 
   static const int maxProvider = 60;
   static const int maxReference = 40;
@@ -119,6 +144,8 @@ class TrackedItem {
     String? issuedIn,
     String? provider,
     String? reference,
+    String? referenceSealed,
+    String? referenceEnd,
     this.leadDays,
     this.isDeleted = false,
     this.deletedAt,
@@ -131,7 +158,24 @@ class TrackedItem {
        lostLine = KeptIn.cleanLine(lostLine),
        issuedIn = cleanCountry(issuedIn),
        provider = cleanProvider(provider),
-       reference = cleanReference(reference);
+       reference = cleanReference(reference),
+       referenceSealed = _cleanSealed(referenceSealed),
+       referenceEnd = _cleanSealed(referenceSealed) == null
+           ? null
+           : _cleanEnd(referenceEnd);
+
+  static String? _cleanSealed(Object? value) {
+    if (value is! String) return null;
+    final text = value.trim();
+    if (text.isEmpty || text.length > 400) return null;
+    return RegExp(r'^[A-Za-z0-9+/=]+$').hasMatch(text) ? text : null;
+  }
+
+  static String? _cleanEnd(Object? value) {
+    if (value is! String) return null;
+    final text = value.trim();
+    return text.length > 4 ? text.substring(text.length - 4) : text;
+  }
 
   TrackedItem copyWith({
     String? id,
@@ -169,6 +213,8 @@ class TrackedItem {
     bool clearProvider = false,
     String? reference,
     bool clearReference = false,
+    String? referenceSealed,
+    String? referenceEnd,
     int? leadDays,
     bool clearLeadDays = false,
     bool? isDeleted,
@@ -215,6 +261,16 @@ class TrackedItem {
       issuedIn: clearIssuedIn ? null : (issuedIn ?? this.issuedIn),
       provider: clearProvider ? null : (provider ?? this.provider),
       reference: clearReference ? null : (reference ?? this.reference),
+      // A new number replaces the sealed one until it is sealed again;
+      // clearing the number clears both.
+      referenceSealed:
+          clearReference || (reference != null && referenceSealed == null)
+          ? null
+          : (referenceSealed ?? this.referenceSealed),
+      referenceEnd:
+          clearReference || (reference != null && referenceSealed == null)
+          ? null
+          : (referenceEnd ?? this.referenceEnd),
       leadDays: clearLeadDays ? null : (leadDays ?? this.leadDays),
       isDeleted: isDeleted ?? this.isDeleted,
       deletedAt: deletedAt ?? this.deletedAt,
@@ -253,7 +309,10 @@ class TrackedItem {
       'lostLine': lostLine,
       'issuedIn': issuedIn,
       'provider': provider,
-      'reference': reference,
+      // Encrypted numbers are never written as plain text.
+      'reference': referenceSealed == null ? reference : null,
+      'referenceSealed': referenceSealed,
+      'referenceEnd': referenceSealed == null ? null : referenceEnd,
       'leadDays': leadDays,
       'isDeleted': isDeleted,
       'deletedAt': deletedAt != null ? Timestamp.fromDate(deletedAt!) : null,
@@ -357,7 +416,15 @@ class TrackedItem {
       lostLine: map['lostLine'] is String ? map['lostLine'] as String : null,
       issuedIn: cleanCountry(map['issuedIn']),
       provider: cleanProvider(map['provider']),
-      reference: cleanReference(map['reference']),
+      reference:
+          cleanReference(map['reference']) ??
+          SealedReferences.lookup(_cleanSealed(map['referenceSealed'])),
+      referenceSealed: map['referenceSealed'] is String
+          ? map['referenceSealed'] as String
+          : null,
+      referenceEnd: map['referenceEnd'] is String
+          ? map['referenceEnd'] as String
+          : null,
       leadDays: _readLeadDays(map['leadDays']),
       isDeleted: map['isDeleted'] as bool? ?? false,
       deletedAt: deletedAt,

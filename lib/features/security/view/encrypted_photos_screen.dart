@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/security/logic/identity_gate.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/security/data/photo_key_store.dart';
@@ -72,6 +73,8 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
 
   Future<void> _turnOn() async {
     final loc = AppLocalizations.of(context)!;
+    if (!await IdentityGate.device(context)) return;
+    if (!mounted) return;
     final done = await Navigator.of(context).push<bool>(
       MaterialPageRoute<bool>(builder: (_) => const RecoveryKeySetupScreen()),
     );
@@ -108,7 +111,9 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
     ActionFeedbackSnackbar.showInfo(
       context,
       ok ? loc.photoLockEncryptDone : loc.photoLockSomeFailed,
-      icon: ok ? Icons.enhanced_encryption_rounded : Icons.error_outline_rounded,
+      icon: ok
+          ? Icons.enhanced_encryption_rounded
+          : Icons.error_outline_rounded,
     );
   }
 
@@ -139,8 +144,9 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
     try {
       ok = await PhotoMigration.run(PhotoMigrationMode.decrypt);
       if (ok) {
-        final left =
-            await PhotoMigration.countPending(PhotoMigrationMode.decrypt);
+        final left = await PhotoMigration.countPending(
+          PhotoMigrationMode.decrypt,
+        );
         ok = left == 0;
       }
       if (ok) ok = await PhotoKeyStore.forgetKeyEverywhere();
@@ -172,8 +178,9 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
       builder: (dialogContext) {
         final scheme = Theme.of(dialogContext).colorScheme;
         return AlertDialog(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
           title: Text(
             title,
             textAlign: TextAlign.center,
@@ -303,7 +310,7 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
               _statusHeader(
                 icon: Icons.enhanced_encryption_rounded,
                 title: loc.photoLockTitle,
-                body: loc.photoLockIntro,
+                body: '${loc.photoLockIntro} ${loc.photoLockNumbersToo}',
                 accent: scheme.primary,
               ),
               const SizedBox(height: 20),
@@ -314,9 +321,7 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
         const SizedBox(height: 20),
         FilledButton.icon(
           onPressed: _turnOn,
-          style: FilledButton.styleFrom(
-            minimumSize: const Size.fromHeight(48),
-          ),
+          style: FilledButton.styleFrom(minimumSize: const Size.fromHeight(48)),
           icon: const Icon(Icons.lock_rounded),
           label: Text(loc.photoLockTurnOn),
         ),

@@ -1,4 +1,5 @@
 import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
+import 'package:vaultara/features/security/logic/reference_cipher.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/features/records/data/models/record_input.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -22,6 +23,11 @@ Future<void> openRecordEditor({
 }) async {
   if (!HouseholdAccess.canEdit(context, record)) return;
   final loc = AppLocalizations.of(context)!;
+  // An encrypted number is opened on the phone for editing. Without the key
+  // here, the form says it is encrypted and saving leaves it as it is.
+  final plainReference = await ReferenceCipher.open(record);
+  final numberLocked = record.referenceSealed != null && plainReference == null;
+  if (!context.mounted) return;
   return showRecordEditorSheet(
     context: context,
     mode: RecordEditorMode.scoped,
@@ -48,7 +54,8 @@ Future<void> openRecordEditor({
       lostLine: record.lostLine,
       issuedIn: record.issuedIn,
       provider: record.provider,
-      reference: record.reference,
+      reference: plainReference,
+      referenceLockedMask: numberLocked ? record.referenceMasked : null,
       leadDays: record.leadDays,
       shared: record.isShared,
     ),
@@ -76,7 +83,7 @@ Future<void> openRecordEditor({
         provider: draft.provider,
         clearProvider: draft.provider == null,
         reference: draft.reference,
-        clearReference: draft.reference == null,
+        clearReference: draft.reference == null && !numberLocked,
         leadDays: draft.leadDays,
         clearLeadDays: draft.leadDays == null,
       );

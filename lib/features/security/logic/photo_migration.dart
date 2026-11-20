@@ -1,6 +1,7 @@
 import 'dart:convert';
-import 'package:vaultara/core/errors/error_reporter.dart';
 
+import 'package:vaultara/features/security/logic/reference_cipher.dart';
+import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -37,11 +38,8 @@ class _JournalEntry {
 
   const _JournalEntry(this.recordId, this.oldPath, this.newPath);
 
-  String encode() => jsonEncode(<String, String>{
-        'r': recordId,
-        'o': oldPath,
-        'n': newPath,
-      });
+  String encode() =>
+      jsonEncode(<String, String>{'r': recordId, 'o': oldPath, 'n': newPath});
 
   static _JournalEntry? decode(String raw) {
     try {
@@ -82,8 +80,7 @@ class PhotoMigration {
   static DocumentReference<Map<String, dynamic>> _recordRef(
     String uid,
     String recordId,
-  ) =>
-      FirebaseFirestore.instance.doc('users/$uid/records/$recordId');
+  ) => FirebaseFirestore.instance.doc('users/$uid/records/$recordId');
 
   static bool _wants(RecordAttachment a, String uid, PhotoMigrationMode mode) {
     if (!a.storagePath.startsWith('users/$uid/records/')) return false;
@@ -105,7 +102,10 @@ class PhotoMigration {
     return byId.values.toList();
   }
 
-  static Future<List<_Work>> _workFor(String uid, PhotoMigrationMode mode) async {
+  static Future<List<_Work>> _workFor(
+    String uid,
+    PhotoMigrationMode mode,
+  ) async {
     final out = <_Work>[];
     for (final record in await _records()) {
       final id = record.id;
@@ -120,7 +120,8 @@ class PhotoMigration {
   static Future<int> countPending(PhotoMigrationMode mode) async {
     final uid = _uid;
     if (uid == null) return 0;
-    return (await _workFor(uid, mode)).length;
+    return (await _workFor(uid, mode)).length +
+        ReferenceCipher.countPending(seal: mode == PhotoMigrationMode.encrypt);
   }
 
   static Future<bool> run(PhotoMigrationMode mode) {
@@ -173,7 +174,12 @@ class PhotoMigration {
       publish(true);
     }
     publish(false);
-    return _uid == uid && failed == 0 && done == work.length;
+    // Document numbers are sealed or opened with the photos, so turning
+    // encryption off never leaves a number nobody can read.
+    final numbersDone =
+        _uid == uid &&
+        await ReferenceCipher.migrate(seal: mode == PhotoMigrationMode.encrypt);
+    return _uid == uid && failed == 0 && done == work.length && numbersDone;
   }
 
   static Future<bool> _migrateOne(
@@ -271,8 +277,10 @@ class PhotoMigration {
   static Future<bool?> _resolve(String uid, _JournalEntry entry) async {
     DocumentSnapshot<Map<String, dynamic>> snap;
     try {
-      snap = await _recordRef(uid, entry.recordId)
-          .get(const GetOptions(source: Source.server));
+      snap = await _recordRef(
+        uid,
+        entry.recordId,
+      ).get(const GetOptions(source: Source.server));
     } catch (_) {
       return null;
     }
@@ -315,10 +323,10 @@ class PhotoMigration {
     try {
       final prefs = await SharedPreferences.getInstance();
       final raw = prefs.getStringList(_journalKey(uid)) ?? <String>[];
-      await prefs.setStringList(
-        _journalKey(uid),
-        <String>[...raw, entry.encode()],
-      );
+      await prefs.setStringList(_journalKey(uid), <String>[
+        ...raw,
+        entry.encode(),
+      ]);
     } catch (_) {}
   }
 

@@ -69,6 +69,12 @@ class RecordMatch {
     if (record.locked) return false;
     final reference = record.reference;
     if (reference != null && _compact(reference) == number) return true;
+    // An encrypted number this phone has not opened: its last four
+    // characters are all there is to compare.
+    final end = record.referenceLocked ? record.referenceEnd : null;
+    if (end != null && end.length == 4 && number.endsWith(_compact(end))) {
+      return true;
+    }
     final notes = record.notes;
     if (notes == null || notes.isEmpty) return false;
     return _compact(notes).contains(number);

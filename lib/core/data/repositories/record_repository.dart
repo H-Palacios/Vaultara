@@ -13,6 +13,7 @@ import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/models/renewal_entry.dart';
 import 'package:flutter/material.dart' show DateUtils, ValueNotifier;
+import 'package:vaultara/features/security/logic/reference_cipher.dart';
 import 'package:vaultara/core/data/models/record_attachment.dart';
 import 'package:vaultara/core/data/repositories/attachment_repository.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
@@ -338,6 +339,21 @@ class RecordRepository {
       ),
   ];
 
+  /// The household cannot open an encrypted number, so sharing saves it as
+  /// plain text first, as it does with encrypted photos.
+  static Future<void> _openNumberForSharing(TrackedItem record) async {
+    if (record.referenceSealed == null) return;
+    final plain = await ReferenceCipher.open(record);
+    if (plain == null) throw const HouseholdException(HouseholdError.unknown);
+    final opened = record.copyWith(reference: plain);
+    replaceLocal(opened);
+    await _docFor(opened)?.update(<String, dynamic>{
+      'reference': plain,
+      'referenceSealed': null,
+      'referenceEnd': null,
+    });
+  }
+
   static Future<void> _decryptForSharing(TrackedItem record) async {
     if (!record.attachments.any((a) => a.encrypted)) return;
     final next = <RecordAttachment>[];
@@ -396,6 +412,7 @@ class RecordRepository {
     }
 
     await _flushWrites();
+    await _openNumberForSharing(findById(id) ?? record);
     await _decryptForSharing(findById(id) ?? record);
     await HouseholdRepository.shareRecord(id);
 
@@ -922,16 +939,23 @@ class RecordRepository {
   }
 
   static Future<bool> addRecord(
-    TrackedItem record, {
+    TrackedItem original, {
     required bool isPremium,
   }) async {
     if (!canAddRecord(isPremium: isPremium)) return false;
+
+    // The document number is sealed on the phone before it is saved, when
+    // encryption is on. Shared records stay readable by the household.
+    final record = original.isShared
+        ? original
+        : await ReferenceCipher.sealRecord(original);
 
     final user = _auth.currentUser;
     final hid = record.householdId;
     if (user != null && hid != null) {
       final ref = _firestore.collection('households/$hid/records').doc();
       record.id = ref.id;
+      original.id = ref.id;
       ref.set(<String, dynamic>{
         ...record.toMap(),
         ..._holderFields(record),
@@ -953,6 +977,7 @@ class RecordRepository {
     if (user != null) {
       final ref = _firestore.collection(_recordsPath(user.uid)).doc();
       record.id = ref.id;
+      original.id = ref.id;
       ref.set(record.toMap()).ignore();
 
       if (!isPremium) _createdRecordsCount++;
@@ -975,8 +1000,11 @@ class RecordRepository {
 
   static Future<void> updateRecord(
     TrackedItem oldRecord,
-    TrackedItem updated,
+    TrackedItem plainUpdate,
   ) async {
+    final updated = plainUpdate.isShared
+        ? plainUpdate
+        : await ReferenceCipher.sealRecord(plainUpdate);
     final offsetChanged =
         oldRecord.reminderOffsetDays != updated.reminderOffsetDays;
 
@@ -1075,6 +1103,15 @@ class RecordRepository {
             .ignore();
       }
     }
+  }
+
+  /// Swaps a record in memory for a changed copy (same id), e.g. after its
+  /// document number was sealed or opened.
+  static void replaceLocal(TrackedItem record) {
+    if (record.id == null) return;
+    _remove(record);
+    _add(record);
+    changes.value++;
   }
 
   static List<TrackedItem> allActive() =>

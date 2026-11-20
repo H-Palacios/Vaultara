@@ -285,11 +285,15 @@ class EditorReferenceField extends StatefulWidget {
   final bool enabled;
   final ValueChanged<String> onChanged;
 
+  /// Set when the saved number is encrypted and this phone cannot open it.
+  final String? lockedMask;
+
   const EditorReferenceField({
     super.key,
     required this.controller,
     required this.enabled,
     required this.onChanged,
+    this.lockedMask,
   });
 
   @override
@@ -321,7 +325,11 @@ class _EditorReferenceFieldState extends State<EditorReferenceField> {
               prefixIcon: const Icon(Icons.tag_rounded),
             ).copyWith(
               hintText: loc.detailsReferenceHint,
-              helperText: loc.detailsReferenceHelper,
+              helperText:
+                  widget.lockedMask != null &&
+                      widget.controller.text.trim().isEmpty
+                  ? loc.detailsReferenceLocked(widget.lockedMask!)
+                  : loc.detailsReferenceHelper,
               helperMaxLines: 3,
               counterText: '',
               suffixIcon: IconButton(

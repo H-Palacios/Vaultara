@@ -32,6 +32,10 @@ class RecordInput {
 
   /// A policy, card or document number.
   final String? reference;
+
+  /// "•••• 1234" when the number is encrypted and this phone cannot open
+  /// it, so the form says so instead of looking empty.
+  final String? referenceLockedMask;
   final int? leadDays;
   final bool shared;
 
@@ -58,6 +62,7 @@ class RecordInput {
     this.issuedIn,
     this.provider,
     this.reference,
+    this.referenceLockedMask,
     this.leadDays,
     this.shared = false,
   });
