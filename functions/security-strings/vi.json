@@ -11,6 +11,7 @@
   "secureButton": "Bảo vệ tài khoản của tôi",
   "secureHelp": "Nút này mở một trang để bạn chọn mật khẩu mới. Sau đó, hãy mở Vaultara, vào Hồ sơ > Bảo mật và quyền riêng tư > Thiết bị của bạn và nhấn Đăng xuất khỏi tất cả thiết bị khác.",
   "support": "Hãy trả lời email này hoặc liên hệ {supportEmail}.",
+  "supportReply": "Có câu hỏi? Chỉ cần trả lời email này.",
   "securityFooter": "Chúng tôi gửi email này để giữ an toàn cho tài khoản Vaultara của bạn. Bạn không thể tắt những email này.",
   "billingFooter": "Chúng tôi gửi email này để bạn luôn biết điều gì đang diễn ra với gói đăng ký Vaultara của mình.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Quản lý đăng ký",
   "receiptGoogle": "Google Play sẽ gửi cho bạn biên lai chính thức kèm số tiền đã tính phí.",
   "receiptApple": "Apple sẽ gửi cho bạn biên lai chính thức kèm số tiền đã tính phí.",
+  "sellerNote": "Vaultara do Vorkalis phát triển, nên biên lai của cửa hàng và sao kê thẻ hiển thị Vorkalis là người bán.",
   "startedSubject": "Chào mừng bạn đến với Vaultara {plan}",
   "startedHeading": "Chào mừng bạn đến với {plan}",
   "startedBody": "Cảm ơn bạn đã đăng ký. Gói {plan} của bạn hiện đã hoạt động.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Giao dịch mua Vaultara {plan} của bạn đã được hoàn tiền",
   "refundedHeading": "Đã hoàn tiền giao dịch mua",
   "refundedBody": "Một giao dịch mua gói {plan} của bạn đã được hoàn tiền. Quyền sử dụng đi kèm giao dịch này đã kết thúc.",
+  "changedSubject": "Gói Vaultara của bạn hiện là {plan}",
+  "changedHeading": "Đã đổi gói",
+  "changedBody": "Việc đổi gói đăng ký đã xong. Gói {plan} của bạn có hiệu lực ngay bây giờ.",
   "deleteSubject": "Xác nhận xóa tài khoản Vaultara của bạn",
   "deleteHeading": "Xóa tài khoản",
   "deleteBody": "Chúng tôi đã nhận được yêu cầu xóa tài khoản Vaultara dùng địa chỉ email này. Để tiếp tục, hãy mở liên kết bên dưới. Bạn có thể xem lại những gì sẽ bị xóa trước khi xác nhận.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Không có tài khoản Vaultara cho email này",
   "noAccountHeading": "Không có tài khoản với email này",
   "noAccountBody": "Ai đó đã yêu cầu đặt lại mật khẩu Vaultara cho địa chỉ email này, nhưng không có tài khoản Vaultara nào cho nó. Nếu đó là bạn, có thể bạn đã đăng ký bằng địa chỉ email khác, hoặc bạn có thể tạo tài khoản trong ứng dụng.",
-  "noAccountNotYou": "Nếu đó không phải bạn, bạn có thể bỏ qua email này."
+  "noAccountNotYou": "Nếu đó không phải bạn, bạn có thể bỏ qua email này.",
+  "previousPlanLabel": "Gói trước đây",
+  "openAppButton": "Mở Vaultara"
 }

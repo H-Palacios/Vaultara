@@ -11,6 +11,7 @@
   "secureButton": "Zabezpiecz moje konto",
   "secureHelp": "Przycisk otwiera stronę, na której możesz wybrać nowe hasło. Następnie otwórz aplikację Vaultara, przejdź do Profil > Bezpieczeństwo i prywatność > Twoje urządzenia i kliknij Wyloguj się ze wszystkich innych urządzeń.",
   "support": "Odpowiedz na tę wiadomość lub napisz na {supportEmail}.",
+  "supportReply": "Masz pytania? Po prostu odpowiedz na tego e-maila.",
   "securityFooter": "Wysyłamy tę wiadomość, aby chronić twoje konto Vaultara. Nie można wyłączyć tych wiadomości.",
   "billingFooter": "Wysyłamy tę wiadomość, abyś zawsze wiedział, co dzieje się z twoją subskrypcją Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Zarządzaj subskrypcją",
   "receiptGoogle": "Google Play wysyła ci oficjalny paragon z pobraną kwotą.",
   "receiptApple": "Apple wysyła ci oficjalny paragon z pobraną kwotą.",
+  "sellerNote": "Vaultarę tworzy Vorkalis, dlatego na paragonach ze sklepu i wyciągach z karty jako sprzedawca widnieje Vorkalis.",
   "startedSubject": "Witaj w planie Vaultara {plan}",
   "startedHeading": "Witaj w planie {plan}",
   "startedBody": "Dziękujemy za subskrypcję. Twój plan {plan} jest już aktywny.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Zwrócono środki za zakup Vaultara {plan}",
   "refundedHeading": "Zwrócono środki za zakup",
   "refundedBody": "Zwrócono środki za zakup planu {plan}. Dostęp związany z tym zakupem wygasł.",
+  "changedSubject": "Twój plan Vaultara to teraz {plan}",
+  "changedHeading": "Plan zmieniony",
+  "changedBody": "Zmiana subskrypcji została zakończona. Twój plan {plan} jest już aktywny.",
   "deleteSubject": "Potwierdź usunięcie konta Vaultara",
   "deleteHeading": "Usuń konto",
   "deleteBody": "Otrzymaliśmy prośbę o usunięcie konta Vaultara powiązanego z tym adresem e-mail. Aby kontynuować, otwórz poniższy link. Przed potwierdzeniem możesz sprawdzić, co zostanie usunięte.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Dla tego adresu nie ma konta Vaultara",
   "noAccountHeading": "Brak konta z tym adresem",
   "noAccountBody": "Ktoś poprosił o zresetowanie hasła Vaultara dla tego adresu e-mail, ale nie ma dla niego konta Vaultara. Jeśli to Ty, może zarejestrowałeś się innym adresem albo możesz założyć konto w aplikacji.",
-  "noAccountNotYou": "Jeśli to nie Ty, możesz zignorować tego e-maila."
+  "noAccountNotYou": "Jeśli to nie Ty, możesz zignorować tego e-maila.",
+  "previousPlanLabel": "Poprzedni plan",
+  "openAppButton": "Otwórz Vaultarę"
 }

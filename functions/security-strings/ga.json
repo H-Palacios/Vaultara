@@ -11,6 +11,7 @@
   "secureButton": "Daingnigh mo chuntas",
   "secureHelp": "Osclaíonn an cnaipe leathanach inar féidir leat pasfhocal nua a roghnú. Ina dhiaidh sin, oscail Vaultara, téigh go Próifíl > Slándáil agus príobháideacht > Do ghléasanna agus tapáil Logáil amach as gach gléas eile.",
   "support": "Freagair an ríomhphost seo nó déan teagmháil le {supportEmail}.",
+  "supportReply": "Ceisteanna? Freagair an ríomhphost seo.",
   "securityFooter": "Seolaimid an ríomhphost seo chun do chuntas Vaultara a choinneáil slán. Ní féidir leat na ríomhphoist seo a mhúchadh.",
   "billingFooter": "Seolaimid an ríomhphost seo ionas go mbeidh a fhios agat i gcónaí cad atá ag tarlú le do shíntiús Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Bainistigh an síntiús",
   "receiptGoogle": "Seolann Google Play d'admháil oifigiúil chugat leis an méid a gearradh.",
   "receiptApple": "Seolann Apple d'admháil oifigiúil chugat leis an méid a gearradh.",
+  "sellerNote": "Is é Vorkalis a dhéanann Vaultara, mar sin taispeánann admhálacha an stóir agus ráitis cárta Vorkalis mar an díoltóir.",
   "startedSubject": "Fáilte go Vaultara {plan}",
   "startedHeading": "Fáilte go {plan}",
   "startedBody": "Go raibh maith agat as liostáil. Tá do phlean {plan} gníomhach anois.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Aisíocadh do cheannach Vaultara {plan}",
   "refundedHeading": "Aisíocadh an ceannach",
   "refundedBody": "Aisíocadh ceannach de do phlean {plan}. Tá deireadh leis an rochtain a tháinig leis an gceannach seo.",
+  "changedSubject": "Is é {plan} do phlean Vaultara anois",
+  "changedHeading": "Plean athraithe",
+  "changedBody": "Tá d'athrú síntiúis déanta. Tá do phlean {plan} gníomhach anois.",
   "deleteSubject": "Deimhnigh scriosadh do chuntais Vaultara",
   "deleteHeading": "Scrios do chuntas",
   "deleteBody": "Fuaireamar iarratas chun an cuntas Vaultara a úsáideann an seoladh ríomhphoist seo a scriosadh. Chun leanúint ar aghaidh, oscail an nasc thíos. Is féidir leat féachaint ar a scriosfar sula ndeimhníonn tú.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Níl aon chuntas Vaultara don ríomhphost seo",
   "noAccountHeading": "Níl aon chuntas leis an ríomhphost seo",
   "noAccountBody": "D'iarr duine éigin pasfhocal Vaultara an tseolta ríomhphoist seo a athshocrú, ach níl aon chuntas Vaultara aige. Más tusa a bhí ann, b'fhéidir gur chláraigh tú le seoladh eile, nó is féidir leat cuntas a chruthú san aip.",
-  "noAccountNotYou": "Murab tusa a bhí ann, is féidir leat neamhaird a dhéanamh den ríomhphost seo."
+  "noAccountNotYou": "Murab tusa a bhí ann, is féidir leat neamhaird a dhéanamh den ríomhphost seo.",
+  "previousPlanLabel": "Plean roimhe seo",
+  "openAppButton": "Oscail Vaultara"
 }

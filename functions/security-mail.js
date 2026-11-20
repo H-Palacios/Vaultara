@@ -6,6 +6,7 @@ const { SMTP_FROM, createTransport } = require("./mail");
 const { securityStrings, intlLocale } = require("./security-strings");
 const { userLanguage, userOffset, cleanLanguage } = require("./expiry-data");
 const {
+  APP_URL,
   HOSTING_BASE,
   COLORS,
   escapeHtml,
@@ -18,6 +19,10 @@ const {
 
 const supportEmailParam = defineString("SUPPORT_EMAIL", {
   description: "Support address used as Reply-To on security, billing and account emails",
+});
+const billingFromParam = defineString("BILLING_FROM", {
+  description: "Sender for subscription emails, e.g. billing@vorkalis.com (must be an alias of the SMTP mailbox). Empty uses the normal sender.",
+  default: "",
 });
 
 const SECURE_FALLBACK_URL = `${HOSTING_BASE}/verify?mode=secure`;
@@ -32,6 +37,18 @@ function supportEmail() {
     return /^[^\s@<>]{1,64}@[^\s@<>]{1,190}\.[^\s@<>]{2,63}$/.test(value) ? value : "";
   } catch (_) {
     return "";
+  }
+}
+
+/// Subscription emails come from their own address when one is set up, so
+/// they are not mixed with sign-in codes from verify@.
+function billingFrom() {
+  try {
+    const value = String(billingFromParam.value() || "").trim();
+    if (!/^[^\s@<>]{1,64}@[^\s@<>]{1,190}\.[^\s@<>]{2,63}$/.test(value)) return SMTP_FROM;
+    return `Vaultara <${value}>`;
+  } catch (_) {
+    return SMTP_FROM;
   }
 }
 
@@ -115,7 +132,8 @@ function detailRows(rows) {
 
 function supportBlock(s) {
   const address = supportEmail();
-  const line = s.t("support", { supportEmail: address || "support" });
+  // Replies already go to support, so the line does not name it twice.
+  const line = address ? s.t("supportReply") : s.t("support", { supportEmail: "support" });
   return {
     html: `<p style="margin:18px 0 0;font-size:14px;line-height:1.5;color:${COLORS.muted}">${escapeHtml(line)}</p>`,
     text: line,
@@ -164,13 +182,13 @@ function compose(s, { subject, heading, name, paragraphs, rows, buttonBlock, aft
   return { subject, html, text: text.join("\n") };
 }
 
-async function deliver(to, message, transporter) {
+async function deliver(to, message, transporter, { from = SMTP_FROM } = {}) {
   const own = !transporter;
   const t = transporter || createTransport();
   const replyTo = supportEmail();
   try {
     await t.sendMail({
-      from: SMTP_FROM,
+      from,
       to,
       replyTo: replyTo || undefined,
       subject: message.subject,
@@ -239,6 +257,7 @@ const BILLING_KEYS = {
   resumed: "resumed",
   ended: "ended",
   refunded: "refunded",
+  changed: "changed",
 };
 
 function manageUrl(store, productId) {
@@ -248,31 +267,43 @@ function manageUrl(store, productId) {
   return `https://play.google.com/store/account/subscriptions?${params.join("&")}`;
 }
 
-async function sendBillingEmail(uid, { kind, plan, period, store, productId, renewsAtMs, accessUntilMs }, transporter) {
+async function sendBillingEmail(uid, { kind, plan, period, store, productId, renewsAtMs, accessUntilMs, fromPlan, fromPeriod }, transporter) {
   const prefix = BILLING_KEYS[kind];
   if (!prefix || !PLAN_KEYS[plan]) return false;
   const to = await recipientFor(uid);
   if (!to) return false;
   const s = securityStrings(to.lang);
   const planName = s.t(PLAN_KEYS[plan]);
+  const periodName = (p) => (p === "yearly" ? s.t("periodYearly") : p === "monthly" ? s.t("periodMonthly") : "");
   const date = (ms) => (ms ? formatDay(to.lang, ms, to.offset) : "");
   const vars = { plan: planName, date: date(kind === "cancelled" ? accessUntilMs : renewsAtMs) };
 
   const paragraphs = [s.t(`${prefix}Body`, vars)];
-  if (kind === "started") paragraphs.push(s.t(INCLUDED_KEYS[plan]));
+  if (kind === "started" || kind === "changed") paragraphs.push(s.t(INCLUDED_KEYS[plan]));
 
-  const rows = [
+  const rows = [];
+  if (kind === "changed" && PLAN_KEYS[fromPlan]) {
+    const before = [s.t(PLAN_KEYS[fromPlan]), periodName(fromPeriod)].filter(Boolean).join(" \u00b7 ");
+    rows.push({ label: s.t("previousPlanLabel"), value: before });
+  }
+  rows.push(
     { label: s.t("planLabel"), value: planName },
-    { label: s.t("periodLabel"), value: period === "yearly" ? s.t("periodYearly") : period === "monthly" ? s.t("periodMonthly") : "" },
-  ];
-  if (["started", "renewed", "resumed", "yearlyReminder"].includes(kind) && renewsAtMs) {
+    { label: s.t("periodLabel"), value: periodName(period) },
+  );
+  if (["started", "renewed", "resumed", "yearlyReminder", "changed"].includes(kind) && renewsAtMs) {
     rows.push({ label: s.t("renewsLabel"), value: date(renewsAtMs) });
   }
   if (kind === "cancelled" && accessUntilMs) {
     rows.push({ label: s.t("accessUntilLabel"), value: date(accessUntilMs) });
   }
 
-  const showManage = kind !== "ended" && kind !== "refunded";
+  // Ended: a way back in. Refunded: nothing to manage or sell.
+  let buttonBlock = null;
+  if (kind === "ended") {
+    buttonBlock = { url: store === "apple" ? HOSTING_BASE : APP_URL, label: s.t("openAppButton") };
+  } else if (kind !== "refunded") {
+    buttonBlock = { url: manageUrl(store, productId), label: s.t("manageButton") };
+  }
   const receipt = store === "apple" ? s.t("receiptApple") : s.t("receiptGoogle");
   const message = compose(s, {
     subject: s.t(`${prefix}Subject`, vars),
@@ -280,11 +311,11 @@ async function sendBillingEmail(uid, { kind, plan, period, store, productId, ren
     name: to.name,
     paragraphs,
     rows,
-    buttonBlock: showManage ? { url: manageUrl(store, productId), label: s.t("manageButton") } : null,
-    after: { after: [receipt] },
+    buttonBlock,
+    after: { after: [receipt, s.t("sellerNote")] },
     footer: s.t("billingFooter"),
   });
-  await deliver(to.email, message, transporter);
+  await deliver(to.email, message, transporter, { from: billingFrom() });
   return true;
 }
 

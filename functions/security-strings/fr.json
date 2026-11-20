@@ -11,6 +11,7 @@
   "secureButton": "Sécuriser mon compte",
   "secureHelp": "Le bouton ouvre une page où vous pouvez choisir un nouveau mot de passe. Ensuite, ouvrez Vaultara, allez dans Profil > Sécurité et confidentialité > Vos appareils et appuyez sur Se déconnecter de tous les autres appareils.",
   "support": "Répondez à cet e-mail ou contactez {supportEmail}.",
+  "supportReply": "Des questions ? Répondez simplement à cet e-mail.",
   "securityFooter": "Nous vous envoyons cet e-mail pour protéger votre compte Vaultara. Vous ne pouvez pas désactiver ces e-mails.",
   "billingFooter": "Nous vous envoyons cet e-mail pour que vous sachiez toujours où en est votre abonnement Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Gérer l'abonnement",
   "receiptGoogle": "Google Play vous envoie le reçu officiel avec le montant facturé.",
   "receiptApple": "Apple vous envoie le reçu officiel avec le montant facturé.",
+  "sellerNote": "Vaultara est conçue par Vorkalis : les reçus de la boutique et les relevés de carte indiquent donc Vorkalis comme vendeur.",
   "startedSubject": "Bienvenue dans Vaultara {plan}",
   "startedHeading": "Bienvenue dans {plan}",
   "startedBody": "Merci pour votre abonnement. Votre offre {plan} est maintenant active.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Votre achat Vaultara {plan} a été remboursé",
   "refundedHeading": "Achat remboursé",
   "refundedBody": "Un achat de votre offre {plan} a été remboursé. L'accès lié à cet achat a pris fin.",
+  "changedSubject": "Votre offre Vaultara est maintenant {plan}",
+  "changedHeading": "Offre modifiée",
+  "changedBody": "Le changement d'abonnement est fait. Votre offre {plan} est active dès maintenant.",
   "deleteSubject": "Confirmez la suppression de votre compte Vaultara",
   "deleteHeading": "Supprimer votre compte",
   "deleteBody": "Nous avons reçu une demande de suppression du compte Vaultara qui utilise cette adresse e-mail. Pour continuer, ouvrez le lien ci-dessous. Vous pourrez voir ce qui sera supprimé avant de confirmer.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Aucun compte Vaultara pour cette adresse",
   "noAccountHeading": "Aucun compte avec cette adresse",
   "noAccountBody": "Quelqu'un a demandé à réinitialiser le mot de passe Vaultara de cette adresse e-mail, mais aucun compte Vaultara n'y est associé. Si c'était vous, vous vous êtes peut-être inscrit avec une autre adresse, ou vous pouvez créer un compte dans l'application.",
-  "noAccountNotYou": "Si ce n'était pas vous, vous pouvez ignorer cet e-mail."
+  "noAccountNotYou": "Si ce n'était pas vous, vous pouvez ignorer cet e-mail.",
+  "previousPlanLabel": "Offre précédente",
+  "openAppButton": "Ouvrir Vaultara"
 }

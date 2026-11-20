@@ -11,6 +11,7 @@
   "secureButton": "Khusela iakhawunti yam",
   "secureHelp": "Iqhosha livula iphepha apho unokukhetha iphasiwedi entsha. Emva koko, vula i-Vaultara, uye ku-Iprofayile > Ukhuseleko nobumfihlo > Izixhobo zakho uze ucofe u-Phuma kwezinye izixhobo zonke.",
   "support": "Phendula le imeyile okanye uqhagamshelane ne-{supportEmail}.",
+  "supportReply": "Unemibuzo? Phendula nje le imeyile.",
   "securityFooter": "Sithumela le imeyile ukuze sigcine iakhawunti yakho ye-Vaultara ikhuselekile. Akunakuzicima ezi imeyile.",
   "billingFooter": "Sithumela le imeyile ukuze uhlale usazi okwenzekayo ngobhaliso lwakho lwe-Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Lawula ubhaliso",
   "receiptGoogle": "I-Google Play ikuthumelela irisithi esemthethweni enexabiso elihlawulisiweyo.",
   "receiptApple": "I-Apple ikuthumelela irisithi esemthethweni enexabiso elihlawulisiweyo.",
+  "sellerNote": "IVaultara yenziwa nguVorkalis, ngoko iirisithi zevenkile neengxelo zekhadi zibonisa uVorkalis njengomthengisi.",
   "startedSubject": "Wamkelekile kwi-Vaultara {plan}",
   "startedHeading": "Wamkelekile kwi-{plan}",
   "startedBody": "Enkosi ngokubhalisa. Isicwangciso sakho se-{plan} ngoku siyasebenza.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Ukuthenga kwakho i-Vaultara {plan} kubuyiselwe imali",
   "refundedHeading": "Ukuthenga kubuyiselwe imali",
   "refundedBody": "Ukuthenga isicwangciso sakho se-{plan} kubuyiselwe imali. Ufikelelo obuze nokuthenga oku luphelile.",
+  "changedSubject": "Isicwangciso sakho seVaultara ngoku si-{plan}",
+  "changedHeading": "Isicwangciso sitshintshiwe",
+  "changedBody": "Utshintsho lobhaliso lwakho lugqityiwe. Isicwangciso sakho se-{plan} siyasebenza ngoku.",
   "deleteSubject": "Qinisekisa ukucima iakhawunti yakho ye-Vaultara",
   "deleteHeading": "Cima iakhawunti",
   "deleteBody": "Sifumene isicelo sokucima iakhawunti ye-Vaultara esebenzisa le dilesi ye-imeyile. Ukuze uqhubeke, vula ikhonkco elingezantsi. Ungajonga okuza kucinywa phambi kokuba uqinisekise.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Akukho akhawunti ye-Vaultara yale imeyile",
   "noAccountHeading": "Akukho akhawunti ngale imeyile",
   "noAccountBody": "Umntu othile ucele ukuseta kwakhona igama lokugqitha le-Vaultara kule dilesi ye-imeyile, kodwa akukho akhawunti ye-Vaultara yayo. Ukuba ibinguwe, mhlawumbi wabhalisa ngenye idilesi ye-imeyile, okanye ungenza i-akhawunti kwi-app.",
-  "noAccountNotYou": "Ukuba ibingengowe, ungayihoya le imeyile."
+  "noAccountNotYou": "Ukuba ibingengowe, ungayihoya le imeyile.",
+  "previousPlanLabel": "Isicwangciso sangaphambili",
+  "openAppButton": "Vula iVaultara"
 }

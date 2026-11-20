@@ -11,6 +11,7 @@
   "secureButton": "Mijn account beveiligen",
   "secureHelp": "Met de knop open je een pagina waar je een nieuw wachtwoord kunt kiezen. Open daarna Vaultara, ga naar Profiel > Beveiliging en privacy > Je apparaten en tik op Afmelden op alle andere apparaten.",
   "support": "Beantwoord deze e-mail of neem contact op met {supportEmail}.",
+  "supportReply": "Vragen? Beantwoord gewoon deze e-mail.",
   "securityFooter": "We sturen deze e-mail om je Vaultara-account veilig te houden. Je kunt deze e-mails niet uitzetten.",
   "billingFooter": "We sturen deze e-mail zodat je altijd weet wat er met je Vaultara-abonnement gebeurt.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Abonnement beheren",
   "receiptGoogle": "Google Play stuurt je de officiële bon met het afgeschreven bedrag.",
   "receiptApple": "Apple stuurt je de officiële bon met het afgeschreven bedrag.",
+  "sellerNote": "Vaultara wordt gemaakt door Vorkalis, dus op bonnen van de winkel en kaartafschriften staat Vorkalis als verkoper.",
   "startedSubject": "Welkom bij Vaultara {plan}",
   "startedHeading": "Welkom bij {plan}",
   "startedBody": "Bedankt voor je abonnement. Je {plan}-abonnement is nu actief.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Je aankoop van Vaultara {plan} is terugbetaald",
   "refundedHeading": "Aankoop terugbetaald",
   "refundedBody": "Een aankoop van je {plan}-abonnement is terugbetaald. De toegang die bij deze aankoop hoorde, is beëindigd.",
+  "changedSubject": "Je Vaultara-abonnement is nu {plan}",
+  "changedHeading": "Abonnement gewijzigd",
+  "changedBody": "Je abonnementswijziging is klaar. Je {plan}-abonnement is nu actief.",
   "deleteSubject": "Bevestig het verwijderen van je Vaultara-account",
   "deleteHeading": "Je account verwijderen",
   "deleteBody": "We hebben een verzoek ontvangen om het Vaultara-account met dit e-mailadres te verwijderen. Open de link hieronder om door te gaan. Je kunt bekijken wat er wordt verwijderd voordat je bevestigt.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Er is geen Vaultara-account voor dit e-mailadres",
   "noAccountHeading": "Geen account met dit e-mailadres",
   "noAccountBody": "Iemand vroeg om het Vaultara-wachtwoord voor dit e-mailadres opnieuw in te stellen, maar er is geen Vaultara-account voor. Was jij dit, dan heb je je misschien met een ander e-mailadres aangemeld, of je kunt een account maken in de app.",
-  "noAccountNotYou": "Was jij dit niet, dan kun je deze e-mail negeren."
+  "noAccountNotYou": "Was jij dit niet, dan kun je deze e-mail negeren.",
+  "previousPlanLabel": "Vorig abonnement",
+  "openAppButton": "Vaultara openen"
 }

@@ -11,6 +11,7 @@
   "secureButton": "Protegeix el meu compte",
   "secureHelp": "El botó obre una pàgina on pots triar una contrasenya nova. Després, obre Vaultara, ves a Perfil > Seguretat i privadesa > Els teus dispositius i toca Tanca la sessió a tots els altres dispositius.",
   "support": "Respon a aquest correu o contacta amb {supportEmail}.",
+  "supportReply": "Tens preguntes? Només cal que responguis aquest correu.",
   "securityFooter": "T'enviem aquest correu per mantenir segur el teu compte de Vaultara. No pots desactivar aquests correus.",
   "billingFooter": "T'enviem aquest correu perquè sempre sàpigues què passa amb la teva subscripció de Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Gestionar subscripció",
   "receiptGoogle": "Google Play t'envia el rebut oficial amb l'import cobrat.",
   "receiptApple": "Apple t'envia el rebut oficial amb l'import cobrat.",
+  "sellerNote": "Vaultara la fa Vorkalis, així que els rebuts de la botiga i els extractes de la targeta mostren Vorkalis com a venedor.",
   "startedSubject": "Et donem la benvinguda a Vaultara {plan}",
   "startedHeading": "Et donem la benvinguda a {plan}",
   "startedBody": "Gràcies per subscriure't. El teu pla {plan} ja està actiu.",
@@ -67,6 +69,9 @@
   "refundedSubject": "S'ha reemborsat la teva compra de Vaultara {plan}",
   "refundedHeading": "Compra reemborsada",
   "refundedBody": "S'ha reemborsat una compra del teu pla {plan}. L'accés que incloïa aquesta compra ha finalitzat.",
+  "changedSubject": "El teu pla de Vaultara ara és {plan}",
+  "changedHeading": "Pla canviat",
+  "changedBody": "El canvi de subscripció s'ha fet. El teu pla {plan} ja està actiu.",
   "deleteSubject": "Confirma la supressió del teu compte de Vaultara",
   "deleteHeading": "Suprimeix el compte",
   "deleteBody": "Hem rebut una sol·licitud per suprimir el compte de Vaultara que fa servir aquesta adreça electrònica. Per continuar, obre l'enllaç següent. Abans de confirmar, podràs revisar què se suprimirà.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "No hi ha cap compte de Vaultara per a aquest correu",
   "noAccountHeading": "No hi ha cap compte amb aquest correu",
   "noAccountBody": "Algú ha demanat restablir la contrasenya de Vaultara per a aquesta adreça de correu, però no hi ha cap compte de Vaultara associat. Si has estat tu, potser et vas registrar amb una altra adreça, o pots crear un compte a l'aplicació.",
-  "noAccountNotYou": "Si no has estat tu, pots ignorar aquest correu."
+  "noAccountNotYou": "Si no has estat tu, pots ignorar aquest correu.",
+  "previousPlanLabel": "Pla anterior",
+  "openAppButton": "Obre Vaultara"
 }

@@ -11,6 +11,7 @@
   "secureButton": "Sikre kontoen min",
   "secureHelp": "Knappen åpner en side der du kan velge et nytt passord. Åpne deretter Vaultara, gå til Profil > Sikkerhet og personvern > Enhetene dine og trykk på Logg ut av alle andre enheter.",
   "support": "Svar på denne e-posten eller kontakt {supportEmail}.",
+  "supportReply": "Spørsmål? Bare svar på denne e-posten.",
   "securityFooter": "Vi sender denne e-posten for å holde Vaultara-kontoen din trygg. Du kan ikke slå av disse e-postene.",
   "billingFooter": "Vi sender denne e-posten slik at du alltid vet hva som skjer med Vaultara-abonnementet ditt.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Administrer abonnement",
   "receiptGoogle": "Google Play sender deg den offisielle kvitteringen med beløpet som ble belastet.",
   "receiptApple": "Apple sender deg den offisielle kvitteringen med beløpet som ble belastet.",
+  "sellerNote": "Vaultara lages av Vorkalis, så kvitteringer fra butikken og kontoutskrifter viser Vorkalis som selger.",
   "startedSubject": "Velkommen til Vaultara {plan}",
   "startedHeading": "Velkommen til {plan}",
   "startedBody": "Takk for at du abonnerer. {plan}-abonnementet ditt er nå aktivt.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Vaultara {plan}-kjøpet ditt ble refundert",
   "refundedHeading": "Kjøp refundert",
   "refundedBody": "Et kjøp av {plan}-abonnementet ditt ble refundert. Tilgangen som fulgte med dette kjøpet, er avsluttet.",
+  "changedSubject": "Vaultara-abonnementet ditt er nå {plan}",
+  "changedHeading": "Abonnement endret",
+  "changedBody": "Endringen av abonnementet er fullført. {plan}-abonnementet ditt er aktivt nå.",
   "deleteSubject": "Bekreft sletting av Vaultara-kontoen din",
   "deleteHeading": "Slett kontoen din",
   "deleteBody": "Vi har mottatt en forespørsel om å slette Vaultara-kontoen som bruker denne e-postadressen. Åpne lenken nedenfor for å fortsette. Du kan se hva som blir slettet før du bekrefter.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Det finnes ingen Vaultara-konto for denne e-postadressen",
   "noAccountHeading": "Ingen konto med denne e-postadressen",
   "noAccountBody": "Noen ba om å tilbakestille Vaultara-passordet for denne e-postadressen, men det finnes ingen Vaultara-konto for den. Hvis det var deg, registrerte du deg kanskje med en annen e-postadresse, eller du kan opprette en konto i appen.",
-  "noAccountNotYou": "Hvis det ikke var deg, kan du se bort fra denne e-posten."
+  "noAccountNotYou": "Hvis det ikke var deg, kan du se bort fra denne e-posten.",
+  "previousPlanLabel": "Tidligere abonnement",
+  "openAppButton": "Åpne Vaultara"
 }

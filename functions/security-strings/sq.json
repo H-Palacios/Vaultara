@@ -11,6 +11,7 @@
   "secureButton": "Siguro llogarinë time",
   "secureHelp": "Butoni hap një faqe ku mund të zgjidhni një fjalëkalim të ri. Pas kësaj, hapni Vaultara, shkoni te Profili > Siguria dhe privatësia > Pajisjet tuaja dhe prekni Dil nga të gjitha pajisjet e tjera.",
   "support": "Përgjigjuni këtij emaili ose kontaktoni {supportEmail}.",
+  "supportReply": "Ke pyetje? Thjesht përgjigju këtij emaili.",
   "securityFooter": "Ju dërgojmë këtë email për ta mbajtur të sigurt llogarinë tuaj Vaultara. Këto emaile nuk mund t'i çaktivizoni.",
   "billingFooter": "Ju dërgojmë këtë email që të dini gjithmonë çfarë po ndodh me abonimin tuaj Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Menaxho abonimin",
   "receiptGoogle": "Google Play ju dërgon faturën zyrtare me shumën e tarifuar.",
   "receiptApple": "Apple ju dërgon faturën zyrtare me shumën e tarifuar.",
+  "sellerNote": "Vaultara bëhet nga Vorkalis, ndaj faturat e dyqanit dhe pasqyrat e kartës shfaqin Vorkalis si shitës.",
   "startedSubject": "Mirë se vini në Vaultara {plan}",
   "startedHeading": "Mirë se vini në {plan}",
   "startedBody": "Faleminderit që u abonuat. Plani juaj {plan} tani është aktiv.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Blerja juaj Vaultara {plan} u rimbursua",
   "refundedHeading": "Blerja u rimbursua",
   "refundedBody": "Një blerje e planit tuaj {plan} u rimbursua. Qasja që erdhi me këtë blerje ka përfunduar.",
+  "changedSubject": "Plani yt Vaultara tani është {plan}",
+  "changedHeading": "Plani u ndryshua",
+  "changedBody": "Ndryshimi i abonimit përfundoi. Plani yt {plan} është aktiv tani.",
   "deleteSubject": "Konfirmoni fshirjen e llogarisë suaj Vaultara",
   "deleteHeading": "Fshini llogarinë tuaj",
   "deleteBody": "Morëm një kërkesë për të fshirë llogarinë Vaultara që përdor këtë adresë emaili. Për të vazhduar, hapni lidhjen më poshtë. Mund të shihni çfarë do të fshihet përpara se të konfirmoni.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Nuk ka llogari Vaultara për këtë email",
   "noAccountHeading": "Nuk ka llogari me këtë email",
   "noAccountBody": "Dikush kërkoi të rivendosë fjalëkalimin Vaultara për këtë adresë email-i, por nuk ka llogari Vaultara për të. Nëse ishit ju, ndoshta u regjistruat me një adresë tjetër, ose mund të krijoni llogari në aplikacion.",
-  "noAccountNotYou": "Nëse nuk ishit ju, mund ta shpërfillni këtë email."
+  "noAccountNotYou": "Nëse nuk ishit ju, mund ta shpërfillni këtë email.",
+  "previousPlanLabel": "Plani i mëparshëm",
+  "openAppButton": "Hap Vaultara"
 }

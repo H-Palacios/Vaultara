@@ -11,6 +11,7 @@
   "secureButton": "Zaščiti moj račun",
   "secureHelp": "Gumb odpre stran, kjer lahko izberete novo geslo. Nato odprite Vaultara, pojdite na Profil > Varnost in zasebnost > Vaše naprave in tapnite Odjava iz vseh drugih naprav.",
   "support": "Odgovorite na to e-pošto ali pišite na {supportEmail}.",
+  "supportReply": "Imate vprašanja? Samo odgovorite na to e-poštno sporočilo.",
   "securityFooter": "To e-pošto pošiljamo, da bi bil vaš račun Vaultara varen. Teh e-poštnih sporočil ni mogoče izklopiti.",
   "billingFooter": "To e-pošto pošiljamo, da vedno veste, kaj se dogaja z vašo naročnino Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Upravljanje naročnine",
   "receiptGoogle": "Uradno potrdilo z zaračunanim zneskom vam pošlje Google Play.",
   "receiptApple": "Uradno potrdilo z zaračunanim zneskom vam pošlje Apple.",
+  "sellerNote": "Vaultaro izdeluje Vorkalis, zato računi trgovine in izpiski kartice kot prodajalca navajajo Vorkalis.",
   "startedSubject": "Dobrodošli v Vaultara {plan}",
   "startedHeading": "Dobrodošli v paketu {plan}",
   "startedBody": "Hvala za naročnino. Vaš paket {plan} je zdaj aktiven.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Nakup Vaultara {plan} je bil povrnjen",
   "refundedHeading": "Nakup povrnjen",
   "refundedBody": "Nakup vašega paketa {plan} je bil povrnjen. Dostop, ki ste ga dobili s tem nakupom, se je končal.",
+  "changedSubject": "Vaš paket Vaultara je zdaj {plan}",
+  "changedHeading": "Paket spremenjen",
+  "changedBody": "Sprememba naročnine je končana. Vaš paket {plan} je zdaj aktiven.",
   "deleteSubject": "Potrdite izbris svojega računa Vaultara",
   "deleteHeading": "Izbris računa",
   "deleteBody": "Prejeli smo zahtevo za izbris računa Vaultara, ki uporablja ta e-poštni naslov. Za nadaljevanje odprite spodnjo povezavo. Pred potrditvijo si lahko ogledate, kaj bo izbrisano.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Za ta e-poštni naslov ni računa Vaultara",
   "noAccountHeading": "Ni računa s tem e-poštnim naslovom",
   "noAccountBody": "Nekdo je zahteval ponastavitev gesla za Vaultaro za ta e-poštni naslov, vendar zanj ni računa Vaultara. Če ste bili vi, ste se morda registrirali z drugim naslovom, ali pa lahko ustvarite račun v aplikaciji.",
-  "noAccountNotYou": "Če to niste bili vi, lahko to sporočilo prezrete."
+  "noAccountNotYou": "Če to niste bili vi, lahko to sporočilo prezrete.",
+  "previousPlanLabel": "Prejšnji paket",
+  "openAppButton": "Odpri Vaultaro"
 }

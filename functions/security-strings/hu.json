@@ -11,6 +11,7 @@
   "secureButton": "Fiókom védelme",
   "secureHelp": "A gomb megnyit egy oldalt, ahol új jelszót választhat. Ezután nyissa meg a Vaultarát, lépjen a Profil > Biztonság és adatvédelem > Az Ön eszközei menüpontra, és koppintson a Kijelentkezés az összes többi eszközről lehetőségre.",
   "support": "Válaszoljon erre az emailre, vagy írjon ide: {supportEmail}.",
+  "supportReply": "Kérdésed van? Csak válaszolj erre az e-mailre.",
   "securityFooter": "Ezt az emailt a Vaultara-fiókja biztonsága érdekében küldjük. Ezeket az emaileket nem lehet kikapcsolni.",
   "billingFooter": "Ezt az emailt azért küldjük, hogy mindig tudja, mi történik a Vaultara-előfizetésével.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Előfizetés kezelése",
   "receiptGoogle": "A hivatalos nyugtát a terhelt összeggel a Google Play küldi el.",
   "receiptApple": "A hivatalos nyugtát a terhelt összeggel az Apple küldi el.",
+  "sellerNote": "A Vaultarát a Vorkalis készíti, ezért az áruházi nyugtákon és a kártyakivonatokon a Vorkalis szerepel eladóként.",
   "startedSubject": "Üdvözöljük a Vaultara {plan} csomagban",
   "startedHeading": "Üdvözöljük a(z) {plan} csomagban",
   "startedBody": "Köszönjük, hogy előfizetett. A(z) {plan} csomagja most már aktív.",
@@ -67,6 +69,9 @@
   "refundedSubject": "A Vaultara {plan} vásárlását visszatérítették",
   "refundedHeading": "Vásárlás visszatérítve",
   "refundedBody": "A(z) {plan} csomag egyik vásárlását visszatérítették. A vásárlással járó hozzáférés megszűnt.",
+  "changedSubject": "A Vaultara-csomagod most {plan}",
+  "changedHeading": "Csomag módosítva",
+  "changedBody": "Az előfizetés módosítása kész. A {plan} csomagod most aktív.",
   "deleteSubject": "Erősítse meg a Vaultara-fiókja törlését",
   "deleteHeading": "Fiók törlése",
   "deleteBody": "Kérést kaptunk az ehhez az email címhez tartozó Vaultara-fiók törlésére. A folytatáshoz nyissa meg az alábbi linket. A megerősítés előtt átnézheti, mi lesz törölve.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Ehhez az e-mail-címhez nem tartozik Vaultara-fiók",
   "noAccountHeading": "Ezzel az e-mail-címmel nincs fiók",
   "noAccountBody": "Valaki kérte a Vaultara-jelszó visszaállítását ehhez az e-mail-címhez, de nem tartozik hozzá Vaultara-fiók. Ha te voltál, talán másik e-mail-címmel regisztráltál, vagy létrehozhatsz egy fiókot az alkalmazásban.",
-  "noAccountNotYou": "Ha nem te voltál, nyugodtan figyelmen kívül hagyhatod ezt az e-mailt."
+  "noAccountNotYou": "Ha nem te voltál, nyugodtan figyelmen kívül hagyhatod ezt az e-mailt.",
+  "previousPlanLabel": "Előző csomag",
+  "openAppButton": "Vaultara megnyitása"
 }

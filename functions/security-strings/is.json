@@ -11,6 +11,7 @@
   "secureButton": "Tryggja reikninginn minn",
   "secureHelp": "Hnappurinn opnar síðu þar sem þú getur valið nýtt lykilorð. Opnaðu síðan Vaultara, farðu í Prófíll > Öryggi og persónuvernd > Tækin þín og ýttu á Skrá út af öllum öðrum tækjum.",
   "support": "Svaraðu þessum tölvupósti eða hafðu samband við {supportEmail}.",
+  "supportReply": "Spurningar? Svaraðu bara þessum pósti.",
   "securityFooter": "Við sendum þennan tölvupóst til að vernda Vaultara-reikninginn þinn. Ekki er hægt að slökkva á þessum tölvupóstum.",
   "billingFooter": "Við sendum þennan tölvupóst svo þú vitir alltaf hvað er að gerast með Vaultara-áskriftina þína.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Stjórna áskrift",
   "receiptGoogle": "Google Play sendir þér opinbera kvittun með upphæðinni sem var gjaldfærð.",
   "receiptApple": "Apple sendir þér opinbera kvittun með upphæðinni sem var gjaldfærð.",
+  "sellerNote": "Vorkalis gerir Vaultara, svo kvittanir verslunarinnar og kortayfirlit sýna Vorkalis sem seljanda.",
   "startedSubject": "Velkomin í Vaultara {plan}",
   "startedHeading": "Velkomin í {plan}",
   "startedBody": "Takk fyrir að gerast áskrifandi. Áskriftarleiðin {plan} er nú virk.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Vaultara {plan} kaupin þín voru endurgreidd",
   "refundedHeading": "Kaup endurgreidd",
   "refundedBody": "Kaup á áskriftarleiðinni þinni {plan} voru endurgreidd. Aðgangurinn sem fylgdi þessum kaupum er útrunninn.",
+  "changedSubject": "Vaultara-áskriftin þín er núna {plan}",
+  "changedHeading": "Áskrift breytt",
+  "changedBody": "Breytingin á áskriftinni er frágengin. {plan}-áskriftin þín er virk núna.",
   "deleteSubject": "Staðfestu eyðingu Vaultara-reikningsins þíns",
   "deleteHeading": "Eyða reikningnum þínum",
   "deleteBody": "Við fengum beiðni um að eyða Vaultara-reikningnum sem notar þetta netfang. Opnaðu tengilinn hér fyrir neðan til að halda áfram. Þú getur farið yfir hvað verður eytt áður en þú staðfestir.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Enginn Vaultara-aðgangur er til fyrir þetta netfang",
   "noAccountHeading": "Enginn aðgangur með þessu netfangi",
   "noAccountBody": "Einhver bað um að endurstilla Vaultara-lykilorðið fyrir þetta netfang, en enginn Vaultara-aðgangur er til fyrir það. Ef þetta varst þú skráðirðu þig kannski með öðru netfangi, eða þú getur stofnað aðgang í appinu.",
-  "noAccountNotYou": "Ef þetta varst ekki þú geturðu hunsað þennan tölvupóst."
+  "noAccountNotYou": "Ef þetta varst ekki þú geturðu hunsað þennan tölvupóst.",
+  "previousPlanLabel": "Fyrri áskrift",
+  "openAppButton": "Opna Vaultara"
 }

@@ -544,6 +544,14 @@ class _PlansScreenState extends State<PlansScreen> {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
               ),
+              const SizedBox(height: 2),
+              // The store's receipts and card statements name the company,
+              // not the app, so say so before anyone pays.
+              Text(
+                Platform.isIOS ? loc.plansSellerApple : loc.plansSellerGoogle,
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+              ),
               const SizedBox(height: 10),
               if (paid)
                 TextButton.icon(

@@ -93,6 +93,30 @@ function tokenSummary(data) {
   };
 }
 
+/// The plan a new Google Play purchase replaced, when it was a change of
+/// plan or billing period by the same account.
+async function previousPlan(raw, uid) {
+  const linked = typeof raw.linkedPurchaseToken === "string" ? raw.linkedPurchaseToken : "";
+  if (!linked) return null;
+  const old = await admin.firestore().collection("purchaseTokens").doc(sha256(linked)).get();
+  if (!old.exists) return null;
+  const before = tokenSummary(old.data() || {});
+  if (before.uid !== uid || !before.plan) return null;
+  return { plan: before.plan, period: before.period };
+}
+
+/// True when a newer purchase names this one as the purchase it replaced.
+async function replacedByNewer(raw) {
+  if (raw.superseded === true) return true;
+  const token = typeof raw.token === "string" ? raw.token : "";
+  if (!token) return false;
+  const newer = await admin.firestore().collection("purchaseTokens")
+    .where("linkedPurchaseToken", "==", token)
+    .limit(1)
+    .get();
+  return !newer.empty;
+}
+
 async function notifyBilling(tokenRef, kind, { orderId: overrideOrderId = null } = {}) {
   if (!KINDS.has(kind)) return false;
   const snap = await tokenRef.get();
@@ -102,10 +126,16 @@ async function notifyBilling(tokenRef, kind, { orderId: overrideOrderId = null }
   if (!info.uid || !info.plan || !info.period) return false;
   if (info.superseded && kind !== "refunded") return false;
   if (kind === "ended" && raw.revoked === true) return false;
+  // An upgrade or downgrade on Google Play replaces the old purchase. Its
+  // cancel or end is part of the change, not the person leaving.
+  if ((kind === "cancelled" || kind === "ended") && (await replacedByNewer(raw))) return false;
 
   const orderId = overrideOrderId ? String(overrideOrderId).slice(0, 120) : info.orderId;
   const id = sha256(dedupeKey(kind, tokenRef.id, { orderId, expiryMs: info.expiryMs }));
   if (!(await claimNotice(id, { kind }))) return false;
+
+  const change = kind === "started" ? await previousPlan(raw, info.uid) : null;
+  const noticeKind = change ? "changed" : kind;
 
   const now = Date.now();
   const renewing = ["started", "renewed", "resumed"].includes(kind) && info.autoRenew !== false && info.expiryMs > now;
@@ -114,7 +144,7 @@ async function notifyBilling(tokenRef, kind, { orderId: overrideOrderId = null }
   const userRef = db.collection("users").doc(info.uid);
 
   await userRef.collection("billing").doc(id).set({
-    kind,
+    kind: noticeKind,
     plan: info.plan,
     period: info.period,
     store: info.store,
@@ -133,13 +163,15 @@ async function notifyBilling(tokenRef, kind, { orderId: overrideOrderId = null }
 
   try {
     await sendBillingEmail(info.uid, {
-      kind,
+      kind: noticeKind,
       plan: info.plan,
       period: info.period,
       store: info.store,
       productId: info.productId,
       renewsAtMs,
       accessUntilMs: info.expiryMs || null,
+      fromPlan: change?.plan || null,
+      fromPeriod: change?.period || null,
     });
   } catch (err) {
     logger.error("billing email failed", { kind, code: err?.code, message: err?.message });

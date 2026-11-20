@@ -11,6 +11,7 @@
   "secureButton": "መለያዬን ጠብቅ",
   "secureHelp": "አዝራሩ አዲስ የይለፍ ቃል መምረጥ የሚችሉበትን ገጽ ይከፍታል። ከዚያ በኋላ Vaultaraን ይክፈቱ፣ ወደ መገለጫ > ደህንነት እና ግላዊነት > የእርስዎ መሣሪያዎች ይሂዱ እና ከሁሉም ሌሎች መሣሪያዎች ውጣ የሚለውን ይንኩ።",
   "support": "ለዚህ ኢሜይል ምላሽ ይስጡ ወይም {supportEmail}ን ያግኙ።",
+  "supportReply": "ጥያቄ አለዎት? ለዚህ ኢሜይል ብቻ መልስ ይስጡ።",
   "securityFooter": "ይህን ኢሜይል የምንልከው የVaultara መለያዎን ደህንነቱ የተጠበቀ ለማድረግ ነው። እነዚህን ኢሜይሎች ማጥፋት አይችሉም።",
   "billingFooter": "ይህን ኢሜይል የምንልከው በVaultara የደንበኝነት ምዝገባዎ ምን እየተከሰተ እንዳለ ሁልጊዜ እንዲያውቁ ነው።",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "የደንበኝነት ምዝገባ አስተዳድር",
   "receiptGoogle": "Google Play የተከፈለውን መጠን የያዘ ይፋዊ ደረሰኝዎን ይልካል።",
   "receiptApple": "Apple የተከፈለውን መጠን የያዘ ይፋዊ ደረሰኝዎን ይልካል።",
+  "sellerNote": "Vaultara የሚሰራው በVorkalis ነው፣ ስለዚህ የመደብር ደረሰኞች እና የካርድ መግለጫዎች Vorkalisን እንደ ሻጭ ያሳያሉ።",
   "startedSubject": "እንኳን ወደ Vaultara {plan} በደህና መጡ",
   "startedHeading": "እንኳን ወደ {plan} በደህና መጡ",
   "startedBody": "ስለተመዘገቡ እናመሰግናለን። የእርስዎ {plan} ዕቅድ አሁን ንቁ ነው።",
@@ -67,6 +69,9 @@
   "refundedSubject": "የVaultara {plan} ግዢዎ ተመላሽ ተደርጓል",
   "refundedHeading": "ግዢ ተመላሽ ተደርጓል",
   "refundedBody": "የ{plan} ዕቅድዎ አንድ ግዢ ተመላሽ ተደርጓል። ከዚህ ግዢ ጋር የመጣው መዳረሻ አብቅቷል።",
+  "changedSubject": "የVaultara ዕቅድዎ አሁን {plan} ነው",
+  "changedHeading": "ዕቅድ ተቀይሯል",
+  "changedBody": "የደንበኝነት ምዝገባ ለውጥዎ ተጠናቋል። የ{plan} ዕቅድዎ አሁን ንቁ ነው።",
   "deleteSubject": "የVaultara መለያዎን መሰረዝ ያረጋግጡ",
   "deleteHeading": "መለያዎን ይሰርዙ",
   "deleteBody": "ይህን የኢሜይል አድራሻ የሚጠቀመውን የVaultara መለያ ለመሰረዝ ጥያቄ ደርሶናል። ለመቀጠል ከታች ያለውን አገናኝ ይክፈቱ። ከማረጋገጥዎ በፊት ምን እንደሚሰረዝ መገምገም ይችላሉ።",
@@ -88,5 +93,7 @@
   "noAccountSubject": "ለዚህ ኢሜይል የVaultara መለያ የለም",
   "noAccountHeading": "በዚህ ኢሜይል መለያ የለም",
   "noAccountBody": "አንድ ሰው ለዚህ ኢሜይል አድራሻ የVaultara የይለፍ ቃል ዳግም እንዲጀመር ጠይቋል፣ ግን ለእሱ የVaultara መለያ የለም። እርስዎ ከሆኑ በሌላ ኢሜይል አድራሻ ተመዝግበው ሊሆን ይችላል፣ ወይም በመተግበሪያው ውስጥ መለያ መፍጠር ይችላሉ።",
-  "noAccountNotYou": "እርስዎ ካልሆኑ ይህን ኢሜይል ችላ ማለት ይችላሉ።"
+  "noAccountNotYou": "እርስዎ ካልሆኑ ይህን ኢሜይል ችላ ማለት ይችላሉ።",
+  "previousPlanLabel": "የቀድሞ ዕቅድ",
+  "openAppButton": "Vaultaraን ይክፈቱ"
 }

@@ -11,6 +11,7 @@
   "secureButton": "Babestu nire kontua",
   "secureHelp": "Botoiak orri bat irekitzen du, non pasahitz berri bat aukera dezakezun. Ondoren, ireki Vaultara, joan Profila > Segurtasuna eta pribatutasuna > Zure gailuak atalera eta sakatu Amaitu saioa beste gailu guztietan.",
   "support": "Erantzun mezu honi edo idatzi {supportEmail} helbidera.",
+  "supportReply": "Galderarik? Erantzun mezu honi besterik gabe.",
   "securityFooter": "Mezu hau bidaltzen dizugu zure Vaultara kontua seguru mantentzeko. Ezin dituzu mezu hauek desaktibatu.",
   "billingFooter": "Mezu hau bidaltzen dizugu zure Vaultara harpidetzarekin zer gertatzen den beti jakin dezazun.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Kudeatu harpidetza",
   "receiptGoogle": "Google Playk kobratutako zenbatekoa duen ordainagiri ofiziala bidaltzen dizu.",
   "receiptApple": "Applek kobratutako zenbatekoa duen ordainagiri ofiziala bidaltzen dizu.",
+  "sellerNote": "Vorkalisek egiten du Vaultara, beraz dendako ordainagiriek eta txartelaren laburpenek Vorkalis agertzen dute saltzaile gisa.",
   "startedSubject": "Ongi etorri Vaultara {plan} planera",
   "startedHeading": "Ongi etorri {plan} planera",
   "startedBody": "Eskerrik asko harpidetzeagatik. Zure {plan} plana aktibo dago orain.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Zure Vaultara {plan} erosketa itzuli da",
   "refundedHeading": "Erosketa itzulita",
   "refundedBody": "Zure {plan} planaren erosketa bat itzuli da. Erosketa honekin zetorren sarbidea amaitu da.",
+  "changedSubject": "Zure Vaultara plana orain {plan} da",
+  "changedHeading": "Plana aldatu da",
+  "changedBody": "Harpidetza-aldaketa egina dago. Zure {plan} plana aktibo dago orain.",
   "deleteSubject": "Berretsi zure Vaultara kontua ezabatzea",
   "deleteHeading": "Ezabatu zure kontua",
   "deleteBody": "Helbide elektroniko hau erabiltzen duen Vaultara kontua ezabatzeko eskaera jaso dugu. Jarraitzeko, ireki beheko esteka. Berretsi aurretik, zer ezabatuko den berrikus dezakezu.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Ez dago Vaultara konturik posta honentzat",
   "noAccountHeading": "Ez dago konturik posta honekin",
   "noAccountBody": "Norbaitek helbide honen Vaultara pasahitza berrezartzeko eskatu du, baina ez dago Vaultara konturik harentzat. Zu izan bazara, agian beste helbide batekin erregistratu zinen, edo kontu bat sor dezakezu aplikazioan.",
-  "noAccountNotYou": "Zu izan ez bazara, mezu honi ez ikusiarena egin diezaiokezu."
+  "noAccountNotYou": "Zu izan ez bazara, mezu honi ez ikusiarena egin diezaiokezu.",
+  "previousPlanLabel": "Aurreko plana",
+  "openAppButton": "Ireki Vaultara"
 }

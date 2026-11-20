@@ -11,6 +11,7 @@
   "secureButton": "Hesabımı güvene al",
   "secureHelp": "Düğme, yeni bir şifre seçebileceğiniz bir sayfa açar. Ardından Vaultara'yı açın, Profil > Güvenlik ve gizlilik > Cihazlarınız bölümüne gidin ve Diğer tüm cihazlardan çıkış yap seçeneğine dokunun.",
   "support": "Bu e-postayı yanıtlayın veya {supportEmail} ile iletişime geçin.",
+  "supportReply": "Sorunuz mu var? Bu e-postayı yanıtlamanız yeterli.",
   "securityFooter": "Bu e-postayı Vaultara hesabınızı güvende tutmak için gönderiyoruz. Bu e-postaları kapatamazsınız.",
   "billingFooter": "Bu e-postayı, Vaultara aboneliğinizde neler olduğunu her zaman bilmeniz için gönderiyoruz.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Aboneliği yönet",
   "receiptGoogle": "Tahsil edilen tutarı içeren resmi makbuzunuzu Google Play gönderir.",
   "receiptApple": "Tahsil edilen tutarı içeren resmi makbuzunuzu Apple gönderir.",
+  "sellerNote": "Vaultara'yı Vorkalis yapıyor, bu yüzden mağaza makbuzlarında ve kart ekstrelerinde satıcı olarak Vorkalis görünür.",
   "startedSubject": "Vaultara {plan} planına hoş geldiniz",
   "startedHeading": "{plan} planına hoş geldiniz",
   "startedBody": "Abone olduğunuz için teşekkür ederiz. {plan} planınız artık etkin.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Vaultara {plan} satın alımınız iade edildi",
   "refundedHeading": "Satın alım iade edildi",
   "refundedBody": "{plan} planınızın bir satın alımı iade edildi. Bu satın alımla gelen erişim sona erdi.",
+  "changedSubject": "Vaultara planınız artık {plan}",
+  "changedHeading": "Plan değişti",
+  "changedBody": "Abonelik değişikliğiniz tamamlandı. {plan} planınız şimdi etkin.",
   "deleteSubject": "Vaultara hesabınızın silinmesini onaylayın",
   "deleteHeading": "Hesabınızı silin",
   "deleteBody": "Bu e-posta adresini kullanan Vaultara hesabını silmek için bir istek aldık. Devam etmek için aşağıdaki bağlantıyı açın. Onaylamadan önce nelerin silineceğini inceleyebilirsiniz.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Bu e-posta için Vaultara hesabı yok",
   "noAccountHeading": "Bu e-postayla hesap yok",
   "noAccountBody": "Biri bu e-posta adresi için Vaultara şifresinin sıfırlanmasını istedi, ancak bu adres için Vaultara hesabı yok. Sizseniz belki başka bir e-posta adresiyle kaydoldunuz veya uygulamada hesap oluşturabilirsiniz.",
-  "noAccountNotYou": "Siz değilseniz bu e-postayı yok sayabilirsiniz."
+  "noAccountNotYou": "Siz değilseniz bu e-postayı yok sayabilirsiniz.",
+  "previousPlanLabel": "Önceki plan",
+  "openAppButton": "Vaultara'yı aç"
 }

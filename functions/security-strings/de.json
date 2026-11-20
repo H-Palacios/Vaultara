@@ -11,6 +11,7 @@
   "secureButton": "Mein Konto schützen",
   "secureHelp": "Über die Schaltfläche öffnest du eine Seite, auf der du ein neues Passwort wählen kannst. Öffne danach Vaultara, gehe zu Profil > Sicherheit und Datenschutz > Deine Geräte und tippe auf Von allen anderen Geräten abmelden.",
   "support": "Antworte auf diese E-Mail oder schreibe an {supportEmail}.",
+  "supportReply": "Fragen? Antworte einfach auf diese E-Mail.",
   "securityFooter": "Wir senden diese E-Mail, um dein Vaultara-Konto zu schützen. Du kannst diese E-Mails nicht abbestellen.",
   "billingFooter": "Wir senden diese E-Mail, damit du immer weißt, was mit deinem Vaultara-Abo passiert.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Abonnement verwalten",
   "receiptGoogle": "Google Play sendet dir den offiziellen Beleg mit dem berechneten Betrag.",
   "receiptApple": "Apple sendet dir den offiziellen Beleg mit dem berechneten Betrag.",
+  "sellerNote": "Vaultara wird von Vorkalis entwickelt, daher steht auf Store-Belegen und Kartenabrechnungen Vorkalis als Verkäufer.",
   "startedSubject": "Willkommen bei Vaultara {plan}",
   "startedHeading": "Willkommen bei {plan}",
   "startedBody": "Danke für dein Abo. Dein {plan}-Abo ist jetzt aktiv.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Dein Vaultara-{plan}-Kauf wurde erstattet",
   "refundedHeading": "Kauf erstattet",
   "refundedBody": "Ein Kauf deines {plan}-Abos wurde erstattet. Der Zugriff, der mit diesem Kauf verbunden war, ist beendet.",
+  "changedSubject": "Dein Vaultara-Abo ist jetzt {plan}",
+  "changedHeading": "Abo geändert",
+  "changedBody": "Deine Abo-Änderung ist abgeschlossen. Dein {plan}-Abo ist jetzt aktiv.",
   "deleteSubject": "Bestätige die Löschung deines Vaultara-Kontos",
   "deleteHeading": "Konto löschen",
   "deleteBody": "Wir haben eine Anfrage erhalten, das Vaultara-Konto mit dieser E-Mail-Adresse zu löschen. Öffne zum Fortfahren den Link unten. Du kannst prüfen, was gelöscht wird, bevor du bestätigst.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Für diese E-Mail-Adresse gibt es kein Vaultara-Konto",
   "noAccountHeading": "Kein Konto mit dieser E-Mail-Adresse",
   "noAccountBody": "Jemand wollte das Vaultara-Passwort für diese E-Mail-Adresse zurücksetzen, aber dafür gibt es kein Vaultara-Konto. Wenn du das warst, hast du dich vielleicht mit einer anderen E-Mail-Adresse registriert, oder du kannst in der App ein Konto erstellen.",
-  "noAccountNotYou": "Wenn du das nicht warst, kannst du diese E-Mail ignorieren."
+  "noAccountNotYou": "Wenn du das nicht warst, kannst du diese E-Mail ignorieren.",
+  "previousPlanLabel": "Bisheriges Abo",
+  "openAppButton": "Vaultara öffnen"
 }

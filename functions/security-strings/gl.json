@@ -11,6 +11,7 @@
   "secureButton": "Protexer a miña conta",
   "secureHelp": "O botón abre unha páxina onde podes escoller un contrasinal novo. Despois, abre Vaultara, vai a Perfil > Seguridade e privacidade > Os teus dispositivos e toca Pechar sesión en todos os demais dispositivos.",
   "support": "Responde a este correo ou escribe a {supportEmail}.",
+  "supportReply": "Tes preguntas? Só tes que responder a este correo.",
   "securityFooter": "Enviámosche este correo para manter segura a túa conta de Vaultara. Non podes desactivar estes correos.",
   "billingFooter": "Enviámosche este correo para que sempre saibas que pasa coa túa subscrición a Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Xestionar subscrición",
   "receiptGoogle": "Google Play envíache o recibo oficial co importe cobrado.",
   "receiptApple": "Apple envíache o recibo oficial co importe cobrado.",
+  "sellerNote": "Vaultara faina Vorkalis, así que os recibos da tenda e os extractos da tarxeta mostran Vorkalis como vendedor.",
   "startedSubject": "Dámosche a benvida a Vaultara {plan}",
   "startedHeading": "Dámosche a benvida a {plan}",
   "startedBody": "Grazas por subscribirte. O teu plan {plan} xa está activo.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Reembolsouse a túa compra de Vaultara {plan}",
   "refundedHeading": "Compra reembolsada",
   "refundedBody": "Reembolsouse unha compra do teu plan {plan}. O acceso incluído nesta compra rematou.",
+  "changedSubject": "O teu plan de Vaultara agora é {plan}",
+  "changedHeading": "Plan cambiado",
+  "changedBody": "O cambio de subscrición está feito. O teu plan {plan} xa está activo.",
   "deleteSubject": "Confirma a eliminación da túa conta de Vaultara",
   "deleteHeading": "Eliminar a túa conta",
   "deleteBody": "Recibimos unha solicitude para eliminar a conta de Vaultara que usa este enderezo de correo electrónico. Para continuar, abre a ligazón de abaixo. Poderás revisar o que se eliminará antes de confirmar.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Non hai ningunha conta de Vaultara para este correo",
   "noAccountHeading": "Non hai ningunha conta con este correo",
   "noAccountBody": "Alguén pediu restablecer o contrasinal de Vaultara deste enderezo de correo, pero non hai ningunha conta de Vaultara asociada. Se fuches ti, quizais te rexistraches con outro enderezo, ou podes crear unha conta na aplicación.",
-  "noAccountNotYou": "Se non fuches ti, podes ignorar este correo."
+  "noAccountNotYou": "Se non fuches ti, podes ignorar este correo.",
+  "previousPlanLabel": "Plan anterior",
+  "openAppButton": "Abrir Vaultara"
 }

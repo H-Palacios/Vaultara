@@ -11,6 +11,7 @@
   "secureButton": "Suojaa tilini",
   "secureHelp": "Painike avaa sivun, jolla voit valita uuden salasanan. Avaa sen jälkeen Vaultara, siirry kohtaan Profiili > Tietoturva ja yksityisyys > Laitteesi ja napauta Kirjaudu ulos kaikilta muilta laitteilta.",
   "support": "Vastaa tähän sähköpostiin tai ota yhteyttä osoitteeseen {supportEmail}.",
+  "supportReply": "Kysyttävää? Vastaa vain tähän sähköpostiin.",
   "securityFooter": "Lähetämme tämän sähköpostin pitääksemme Vaultara-tilisi turvassa. Näitä sähköposteja ei voi poistaa käytöstä.",
   "billingFooter": "Lähetämme tämän sähköpostin, jotta tiedät aina, mitä Vaultara-tilauksellesi tapahtuu.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Hallitse tilausta",
   "receiptGoogle": "Google Play lähettää sinulle virallisen kuitin veloitetusta summasta.",
   "receiptApple": "Apple lähettää sinulle virallisen kuitin veloitetusta summasta.",
+  "sellerNote": "Vaultaran tekee Vorkalis, joten kaupan kuiteissa ja korttiotteissa myyjänä näkyy Vorkalis.",
   "startedSubject": "Tervetuloa käyttämään Vaultara {plan} -tilausta",
   "startedHeading": "Tervetuloa käyttämään {plan} -tilausta",
   "startedBody": "Kiitos tilauksestasi. {plan} -tilauksesi on nyt voimassa.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Vaultara {plan} -ostoksesi hyvitettiin",
   "refundedHeading": "Ostos hyvitetty",
   "refundedBody": "{plan} -tilauksesi ostos hyvitettiin. Tämän ostoksen mukana tullut käyttöoikeus on päättynyt.",
+  "changedSubject": "Vaultara-tilauksesi on nyt {plan}",
+  "changedHeading": "Tilaus vaihdettu",
+  "changedBody": "Tilauksen muutos on tehty. {plan}-tilauksesi on nyt käytössä.",
   "deleteSubject": "Vahvista Vaultara-tilisi poistaminen",
   "deleteHeading": "Poista tilisi",
   "deleteBody": "Saimme pyynnön poistaa Vaultara-tili, joka käyttää tätä sähköpostiosoitetta. Jatka avaamalla alla oleva linkki. Voit tarkistaa, mitä poistetaan, ennen kuin vahvistat.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Tälle sähköpostille ei ole Vaultara-tiliä",
   "noAccountHeading": "Tällä sähköpostilla ei ole tiliä",
   "noAccountBody": "Joku pyysi Vaultara-salasanan palautusta tälle sähköpostiosoitteelle, mutta sille ei ole Vaultara-tiliä. Jos se olit sinä, rekisteröidyit ehkä toisella osoitteella, tai voit luoda tilin sovelluksessa.",
-  "noAccountNotYou": "Jos se et ollut sinä, voit ohittaa tämän viestin."
+  "noAccountNotYou": "Jos se et ollut sinä, voit ohittaa tämän viestin.",
+  "previousPlanLabel": "Aiempi tilaus",
+  "openAppButton": "Avaa Vaultara"
 }

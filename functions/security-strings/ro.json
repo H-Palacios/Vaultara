@@ -11,6 +11,7 @@
   "secureButton": "Securizează-mi contul",
   "secureHelp": "Butonul deschide o pagină unde poți alege o parolă nouă. După aceea, deschide Vaultara, mergi la Profil > Securitate și confidențialitate > Dispozitivele tale și atinge Deconectare de pe toate celelalte dispozitive.",
   "support": "Răspunde la acest email sau contactează {supportEmail}.",
+  "supportReply": "Ai întrebări? Răspunde pur și simplu la acest e-mail.",
   "securityFooter": "Îți trimitem acest email ca să îți păstrăm contul Vaultara în siguranță. Nu poți dezactiva aceste emailuri.",
   "billingFooter": "Îți trimitem acest email ca să știi mereu ce se întâmplă cu abonamentul tău Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Gestionează abonamentul",
   "receiptGoogle": "Google Play îți trimite chitanța oficială cu suma încasată.",
   "receiptApple": "Apple îți trimite chitanța oficială cu suma încasată.",
+  "sellerNote": "Vaultara este făcută de Vorkalis, așa că bonurile magazinului și extrasele de card arată Vorkalis ca vânzător.",
   "startedSubject": "Bine ai venit la Vaultara {plan}",
   "startedHeading": "Bine ai venit la {plan}",
   "startedBody": "Îți mulțumim pentru abonare. Abonamentul tău {plan} este acum activ.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Achiziția ta Vaultara {plan} a fost rambursată",
   "refundedHeading": "Achiziție rambursată",
   "refundedBody": "O achiziție a abonamentului tău {plan} a fost rambursată. Accesul inclus în această achiziție s-a încheiat.",
+  "changedSubject": "Planul tău Vaultara este acum {plan}",
+  "changedHeading": "Plan schimbat",
+  "changedBody": "Schimbarea abonamentului s-a încheiat. Planul tău {plan} este activ acum.",
   "deleteSubject": "Confirmă ștergerea contului tău Vaultara",
   "deleteHeading": "Șterge-ți contul",
   "deleteBody": "Am primit o solicitare de ștergere a contului Vaultara care folosește această adresă de email. Pentru a continua, deschide linkul de mai jos. Poți vedea ce va fi șters înainte să confirmi.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Nu există niciun cont Vaultara pentru acest e-mail",
   "noAccountHeading": "Niciun cont cu acest e-mail",
   "noAccountBody": "Cineva a cerut resetarea parolei Vaultara pentru această adresă de e-mail, dar nu există niciun cont Vaultara pentru ea. Dacă ai fost tu, poate te-ai înregistrat cu altă adresă sau poți crea un cont în aplicație.",
-  "noAccountNotYou": "Dacă nu ai fost tu, poți ignora acest e-mail."
+  "noAccountNotYou": "Dacă nu ai fost tu, poți ignora acest e-mail.",
+  "previousPlanLabel": "Planul anterior",
+  "openAppButton": "Deschide Vaultara"
 }

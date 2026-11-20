@@ -11,6 +11,7 @@
   "secureButton": "Hesabê min biparêze",
   "secureHelp": "Bişkok rûpelekê vedike ku tu dikarî şîfreyek nû hilbijêrî. Piştre Vaultara veke, here Profîl > Ewlehî û nepenî > Amûrên te û li ser Ji hemû amûrên din derkeve bitikîne.",
   "support": "Bersiva vê e-nameyê bide an bi {supportEmail} re têkilî deyne.",
+  "supportReply": "Pirsên te hene? Tenê bersiva vê e-nameyê bide.",
   "securityFooter": "Em vê e-nameyê dişînin da ku hesabê te yê Vaultara ewle bimîne. Tu nikarî van e-nameyan neçalak bikî.",
   "billingFooter": "Em vê e-nameyê dişînin da ku tu her dem bizanibî bi abonetiya te ya Vaultara re çi diqewime.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Rêvebirina abonetiyê",
   "receiptGoogle": "Google Play meqbûza te ya fermî bi mîqdara hatî girtin dişîne.",
   "receiptApple": "Apple meqbûza te ya fermî bi mîqdara hatî girtin dişîne.",
+  "sellerNote": "Vaultara ji aliyê Vorkalis ve tê çêkirin, ji ber vê yekê wergirên dikanê û daxuyaniyên kartê Vorkalis wekî firoşkar nîşan didin.",
   "startedSubject": "Bi xêr hatî Vaultara {plan}",
   "startedHeading": "Bi xêr hatî {plan}",
   "startedBody": "Spas ji bo abonebûnê. Plana te ya {plan} niha çalak e.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Pereyê kirîna te ya Vaultara {plan} hat vegerandin",
   "refundedHeading": "Pereyê kirînê hat vegerandin",
   "refundedBody": "Pereyê kirîneke plana te ya {plan} hat vegerandin. Gihîştina ku bi vê kirînê re hatibû bi dawî bû.",
+  "changedSubject": "Plana te ya Vaultara niha {plan} e",
+  "changedHeading": "Plan hate guhertin",
+  "changedBody": "Guhertina abonetiya te qediya. Plana te ya {plan} niha çalak e.",
   "deleteSubject": "Jêbirina hesabê xwe yê Vaultara piştrast bike",
   "deleteHeading": "Hesabê xwe jê bibe",
   "deleteBody": "Me daxwazek wergirt ku hesabê Vaultara yê ku vê navnîşana e-nameyê bi kar tîne were jêbirin. Ji bo berdewamkirinê, girêdana li jêr veke. Berî ku tu piştrast bikî, tu dikarî binêrî ka çi dê were jêbirin.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Ji bo vê e-nameyê hesabekî Vaultara tune",
   "noAccountHeading": "Bi vê e-nameyê hesab tune",
   "noAccountBody": "Kesek xwest şîfreya Vaultara ya vê navnîşana e-nameyê nû bike, lê ji bo wê hesabekî Vaultara tune. Heke ew tu bûyî, dibe ku te bi navnîşanek din xwe tomar kiribe, an tu dikarî di sepanê de hesabekî çêbikî.",
-  "noAccountNotYou": "Heke ew ne tu bûyî, tu dikarî vê e-nameyê paşguh bikî."
+  "noAccountNotYou": "Heke ew ne tu bûyî, tu dikarî vê e-nameyê paşguh bikî.",
+  "previousPlanLabel": "Plana berê",
+  "openAppButton": "Vaultara veke"
 }

@@ -11,6 +11,7 @@
   "secureButton": "Apsaugoti mano paskyrą",
   "secureHelp": "Mygtukas atidaro puslapį, kuriame galite pasirinkti naują slaptažodį. Tada atidarykite Vaultara, eikite į Profilis > Sauga ir privatumas > Jūsų įrenginiai ir bakstelėkite Atsijungti visuose kituose įrenginiuose.",
   "support": "Atsakykite į šį el. laišką arba susisiekite adresu {supportEmail}.",
+  "supportReply": "Turite klausimų? Tiesiog atsakykite į šį laišką.",
   "securityFooter": "Šį el. laišką siunčiame, kad jūsų Vaultara paskyra būtų saugi. Šių el. laiškų išjungti negalima.",
   "billingFooter": "Šį el. laišką siunčiame, kad visada žinotumėte, kas vyksta su jūsų Vaultara prenumerata.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Tvarkyti prenumeratą",
   "receiptGoogle": "Google Play atsiunčia oficialų kvitą su nuskaičiuota suma.",
   "receiptApple": "Apple atsiunčia oficialų kvitą su nuskaičiuota suma.",
+  "sellerNote": "Vaultara kuria Vorkalis, todėl parduotuvės kvituose ir kortelės išrašuose pardavėju nurodoma Vorkalis.",
   "startedSubject": "Sveiki atvykę į Vaultara {plan}",
   "startedHeading": "Sveiki atvykę į {plan}",
   "startedBody": "Ačiū, kad užsiprenumeravote. Jūsų planas {plan} dabar aktyvus.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Už jūsų Vaultara {plan} pirkinį grąžinti pinigai",
   "refundedHeading": "Pinigai už pirkinį grąžinti",
   "refundedBody": "Už plano {plan} pirkinį grąžinti pinigai. Su šiuo pirkiniu suteikta prieiga baigėsi.",
+  "changedSubject": "Jūsų Vaultara planas dabar yra {plan}",
+  "changedHeading": "Planas pakeistas",
+  "changedBody": "Prenumeratos pakeitimas atliktas. Jūsų planas {plan} dabar aktyvus.",
   "deleteSubject": "Patvirtinkite Vaultara paskyros ištrynimą",
   "deleteHeading": "Ištrinkite savo paskyrą",
   "deleteBody": "Gavome prašymą ištrinti Vaultara paskyrą, kuri naudoja šį el. pašto adresą. Norėdami tęsti, atidarykite toliau pateiktą nuorodą. Prieš patvirtindami galite peržiūrėti, kas bus ištrinta.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Šiam el. paštui Vaultara paskyros nėra",
   "noAccountHeading": "Su šiuo el. paštu paskyros nėra",
   "noAccountBody": "Kažkas paprašė atkurti Vaultara slaptažodį šiam el. pašto adresui, tačiau jam nėra Vaultara paskyros. Jei tai buvote jūs, galbūt užsiregistravote kitu el. pašto adresu arba galite sukurti paskyrą programoje.",
-  "noAccountNotYou": "Jei tai buvote ne jūs, šį laišką galite ignoruoti."
+  "noAccountNotYou": "Jei tai buvote ne jūs, šį laišką galite ignoruoti.",
+  "previousPlanLabel": "Ankstesnis planas",
+  "openAppButton": "Atidaryti Vaultara"
 }

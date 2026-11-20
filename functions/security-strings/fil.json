@@ -11,6 +11,7 @@
   "secureButton": "I-secure ang account ko",
   "secureHelp": "Magbubukas ang button ng page kung saan puwede kang pumili ng bagong password. Pagkatapos nito, buksan ang Vaultara, pumunta sa Profile > Seguridad at privacy > Mga device mo at i-tap ang Mag-sign out sa lahat ng ibang device.",
   "support": "Sagutin ang email na ito o makipag-ugnayan sa {supportEmail}.",
+  "supportReply": "May tanong? I-reply lang sa email na ito.",
   "securityFooter": "Ipinapadala namin ang email na ito para mapanatiling ligtas ang Vaultara account mo. Hindi mo puwedeng i-off ang mga email na ito.",
   "billingFooter": "Ipinapadala namin ang email na ito para lagi mong alam kung ano ang nangyayari sa Vaultara subscription mo.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Pamahalaan ang subscription",
   "receiptGoogle": "Ang Google Play ang nagpapadala ng opisyal na resibo mo kasama ang halagang siningil.",
   "receiptApple": "Ang Apple ang nagpapadala ng opisyal na resibo mo kasama ang halagang siningil.",
+  "sellerNote": "Ginagawa ng Vorkalis ang Vaultara, kaya Vorkalis ang nakalagay na nagbebenta sa mga resibo ng store at card statement.",
   "startedSubject": "Maligayang pagdating sa Vaultara {plan}",
   "startedHeading": "Maligayang pagdating sa {plan}",
   "startedBody": "Salamat sa pag-subscribe. Aktibo na ang {plan} plan mo.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Na-refund ang Vaultara {plan} na binili mo",
   "refundedHeading": "Na-refund ang binili",
   "refundedBody": "Na-refund ang isang pagbili ng {plan} plan mo. Natapos na ang access na kasama ng pagbiling ito.",
+  "changedSubject": "Ang Vaultara plan mo ay {plan} na ngayon",
+  "changedHeading": "Nabago ang plan",
+  "changedBody": "Tapos na ang pagbabago sa subscription mo. Aktibo na ngayon ang {plan} plan mo.",
   "deleteSubject": "Kumpirmahin ang pagtanggal ng Vaultara account mo",
   "deleteHeading": "Tanggalin ang account mo",
   "deleteBody": "Nakatanggap kami ng kahilingang tanggalin ang Vaultara account na gumagamit ng email address na ito. Para magpatuloy, buksan ang link sa ibaba. Masusuri mo kung ano ang matatanggal bago ka magkumpirma.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Walang Vaultara account para sa email na ito",
   "noAccountHeading": "Walang account sa email na ito",
   "noAccountBody": "May humiling na i-reset ang Vaultara password para sa email address na ito, pero walang Vaultara account para dito. Kung ikaw iyon, baka ibang email address ang ginamit mo sa pag-sign up, o puwede kang gumawa ng account sa app.",
-  "noAccountNotYou": "Kung hindi ikaw iyon, puwede mong balewalain ang email na ito."
+  "noAccountNotYou": "Kung hindi ikaw iyon, puwede mong balewalain ang email na ito.",
+  "previousPlanLabel": "Dating plan",
+  "openAppButton": "Buksan ang Vaultara"
 }

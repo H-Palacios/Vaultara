@@ -11,6 +11,7 @@
   "secureButton": "保护我的账户",
   "secureHelp": "点击该按钮会打开一个页面，您可以在其中选择新密码。之后，请打开 Vaultara，前往 个人资料 > 安全与隐私 > 您的设备，然后点按“在所有其他设备上退出登录”。",
   "support": "请回复此邮件或联系 {supportEmail}。",
+  "supportReply": "有问题？直接回复这封邮件即可。",
   "securityFooter": "我们发送此邮件是为了保护您的 Vaultara 账户安全。您无法关闭此类邮件。",
   "billingFooter": "我们发送此邮件，是为了让您随时了解您的 Vaultara 订阅情况。",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "管理订阅",
   "receiptGoogle": "Google Play 会向您发送包含扣款金额的正式收据。",
   "receiptApple": "Apple 会向您发送包含扣款金额的正式收据。",
+  "sellerNote": "Vaultara 由 Vorkalis 开发，因此商店收据和银行卡账单上显示的卖家是 Vorkalis。",
   "startedSubject": "欢迎使用 Vaultara {plan}",
   "startedHeading": "欢迎使用{plan}",
   "startedBody": "感谢您的订阅。您的{plan}方案现已生效。",
@@ -67,6 +69,9 @@
   "refundedSubject": "您购买的 Vaultara {plan}已退款",
   "refundedHeading": "购买已退款",
   "refundedBody": "您的一笔{plan}方案购买已退款。此次购买附带的使用权限已结束。",
+  "changedSubject": "你的 Vaultara 套餐现在是 {plan}",
+  "changedHeading": "套餐已更改",
+  "changedBody": "你的订阅更改已完成。{plan} 套餐现已生效。",
   "deleteSubject": "确认删除您的 Vaultara 账户",
   "deleteHeading": "删除账户",
   "deleteBody": "我们收到了删除使用此电子邮箱地址的 Vaultara 账户的请求。如需继续，请打开下方链接。在确认之前，您可以查看将被删除的内容。",
@@ -88,5 +93,7 @@
   "noAccountSubject": "这个邮箱没有 Vaultara 账户",
   "noAccountHeading": "没有使用这个邮箱的账户",
   "noAccountBody": "有人请求为这个邮箱地址重置 Vaultara 密码，但该邮箱没有 Vaultara 账户。如果是你本人，你可能用其他邮箱地址注册过，也可以在应用中创建账户。",
-  "noAccountNotYou": "如果不是你本人，可以忽略这封邮件。"
+  "noAccountNotYou": "如果不是你本人，可以忽略这封邮件。",
+  "previousPlanLabel": "之前的套餐",
+  "openAppButton": "打开 Vaultara"
 }

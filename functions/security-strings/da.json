@@ -11,6 +11,7 @@
   "secureButton": "Beskyt min konto",
   "secureHelp": "Knappen åbner en side, hvor du kan vælge en ny adgangskode. Åbn derefter Vaultara, gå til Profil > Sikkerhed og privatliv > Dine enheder, og tryk på Log ud af alle andre enheder.",
   "support": "Svar på denne e-mail, eller kontakt {supportEmail}.",
+  "supportReply": "Spørgsmål? Svar bare på denne e-mail.",
   "securityFooter": "Vi sender denne e-mail for at beskytte din Vaultara-konto. Du kan ikke slå disse e-mails fra.",
   "billingFooter": "Vi sender denne e-mail, så du altid ved, hvad der sker med dit Vaultara-abonnement.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Administrer abonnement",
   "receiptGoogle": "Google Play sender din officielle kvittering med det opkrævede beløb.",
   "receiptApple": "Apple sender din officielle kvittering med det opkrævede beløb.",
+  "sellerNote": "Vaultara er lavet af Vorkalis, så kvitteringer fra butikken og kontoudtog viser Vorkalis som sælger.",
   "startedSubject": "Velkommen til Vaultara {plan}",
   "startedHeading": "Velkommen til {plan}",
   "startedBody": "Tak for dit abonnement. Dit {plan}-abonnement er nu aktivt.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Dit Vaultara {plan}-køb blev refunderet",
   "refundedHeading": "Køb refunderet",
   "refundedBody": "Et køb af dit {plan}-abonnement blev refunderet. Den adgang, der fulgte med dette køb, er ophørt.",
+  "changedSubject": "Dit Vaultara-abonnement er nu {plan}",
+  "changedHeading": "Abonnement ændret",
+  "changedBody": "Din abonnementsændring er gennemført. Dit {plan}-abonnement er aktivt nu.",
   "deleteSubject": "Bekræft sletning af din Vaultara-konto",
   "deleteHeading": "Slet din konto",
   "deleteBody": "Vi har modtaget en anmodning om at slette den Vaultara-konto, der bruger denne e-mailadresse. Åbn linket nedenfor for at fortsætte. Du kan se, hvad der bliver slettet, før du bekræfter.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Der er ingen Vaultara-konto til denne e-mail",
   "noAccountHeading": "Ingen konto med denne e-mail",
   "noAccountBody": "Nogen har bedt om at nulstille Vaultara-adgangskoden til denne e-mailadresse, men der er ingen Vaultara-konto til den. Hvis det var dig, har du måske tilmeldt dig med en anden e-mailadresse, eller du kan oprette en konto i appen.",
-  "noAccountNotYou": "Hvis det ikke var dig, kan du ignorere denne e-mail."
+  "noAccountNotYou": "Hvis det ikke var dig, kan du ignorere denne e-mail.",
+  "previousPlanLabel": "Tidligere abonnement",
+  "openAppButton": "Åbn Vaultara"
 }

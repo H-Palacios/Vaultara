@@ -11,6 +11,7 @@
   "secureButton": "Linda akaunti yangu",
   "secureHelp": "Kitufe hufungua ukurasa ambapo unaweza kuchagua nenosiri jipya. Baada ya hapo, fungua Vaultara, nenda kwenye Wasifu > Usalama na faragha > Vifaa vyako kisha uguse Ondoka kwenye vifaa vingine vyote.",
   "support": "Jibu barua pepe hii au wasiliana na {supportEmail}.",
+  "supportReply": "Una maswali? Jibu tu barua pepe hii.",
   "securityFooter": "Tunakutumia barua pepe hii ili kulinda akaunti yako ya Vaultara. Huwezi kuzima barua pepe hizi.",
   "billingFooter": "Tunakutumia barua pepe hii ili ujue kila wakati kinachoendelea na usajili wako wa Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Dhibiti usajili",
   "receiptGoogle": "Google Play hukutumia risiti yako rasmi yenye kiasi kilichotozwa.",
   "receiptApple": "Apple hukutumia risiti yako rasmi yenye kiasi kilichotozwa.",
+  "sellerNote": "Vaultara hutengenezwa na Vorkalis, kwa hivyo risiti za duka na taarifa za kadi huonyesha Vorkalis kama muuzaji.",
   "startedSubject": "Karibu kwenye Vaultara {plan}",
   "startedHeading": "Karibu kwenye {plan}",
   "startedBody": "Asante kwa kujisajili. Mpango wako wa {plan} sasa unatumika.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Pesa za ununuzi wako wa Vaultara {plan} zimerejeshwa",
   "refundedHeading": "Pesa za ununuzi zimerejeshwa",
   "refundedBody": "Pesa za ununuzi wa mpango wako wa {plan} zimerejeshwa. Ufikiaji uliokuja na ununuzi huu umeisha.",
+  "changedSubject": "Mpango wako wa Vaultara sasa ni {plan}",
+  "changedHeading": "Mpango umebadilishwa",
+  "changedBody": "Mabadiliko ya usajili wako yamekamilika. Mpango wako wa {plan} sasa unatumika.",
   "deleteSubject": "Thibitisha kufuta akaunti yako ya Vaultara",
   "deleteHeading": "Futa akaunti yako",
   "deleteBody": "Tumepokea ombi la kufuta akaunti ya Vaultara inayotumia anwani hii ya barua pepe. Ili kuendelea, fungua kiungo kilicho hapa chini. Unaweza kukagua kitakachofutwa kabla ya kuthibitisha.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Hakuna akaunti ya Vaultara ya barua pepe hii",
   "noAccountHeading": "Hakuna akaunti yenye barua pepe hii",
   "noAccountBody": "Mtu ameomba kuweka upya nenosiri la Vaultara la anwani hii ya barua pepe, lakini hakuna akaunti ya Vaultara yake. Ikiwa ni wewe, huenda ulijisajili kwa anwani nyingine ya barua pepe, au unaweza kuunda akaunti kwenye programu.",
-  "noAccountNotYou": "Ikiwa si wewe, unaweza kupuuza barua pepe hii."
+  "noAccountNotYou": "Ikiwa si wewe, unaweza kupuuza barua pepe hii.",
+  "previousPlanLabel": "Mpango wa awali",
+  "openAppButton": "Fungua Vaultara"
 }

@@ -11,6 +11,7 @@
   "secureButton": "Tsare asusuna",
   "secureHelp": "Maɓallin yana buɗe shafin da za ka iya zaɓar sabuwar kalmar sirri. Bayan haka, buɗe Vaultara, je zuwa Bayanan martaba > Tsaro da sirri > Na'urorinka sannan ka matsa Fita daga duk sauran na'urori.",
   "support": "Amsa wannan imel ko tuntuɓi {supportEmail}.",
+  "supportReply": "Kana da tambayoyi? Kawai ka amsa wannan imel.",
   "securityFooter": "Muna aiko maka da wannan imel ne don kiyaye asusunka na Vaultara. Ba za ka iya kashe waɗannan imel ɗin ba.",
   "billingFooter": "Muna aiko maka da wannan imel ne don ka san abin da ke faruwa da biyan kuɗinka na Vaultara a koyaushe.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Gudanar da biyan kuɗi",
   "receiptGoogle": "Google Play ne ke aiko maka da rasidin hukuma tare da adadin da aka caje.",
   "receiptApple": "Apple ne ke aiko maka da rasidin hukuma tare da adadin da aka caje.",
+  "sellerNote": "Vorkalis ne ke yin Vaultara, don haka rasidin kanti da bayanan katin suna nuna Vorkalis a matsayin mai sayarwa.",
   "startedSubject": "Barka da zuwa Vaultara {plan}",
   "startedHeading": "Barka da zuwa {plan}",
   "startedBody": "Mun gode da biyan kuɗin. Tsarinka na {plan} yana aiki yanzu.",
@@ -67,6 +69,9 @@
   "refundedSubject": "An mayar da kuɗin siyan Vaultara {plan} ɗinka",
   "refundedHeading": "An mayar da kuɗin siya",
   "refundedBody": "An mayar da kuɗin wani siye na tsarinka na {plan}. Damar amfanin da ta zo da wannan siyen ta ƙare.",
+  "changedSubject": "Tsarin Vaultara ɗinka yanzu {plan} ne",
+  "changedHeading": "An canza tsari",
+  "changedBody": "An gama canjin biyan kuɗinka. Tsarin {plan} ɗinka yana aiki yanzu.",
   "deleteSubject": "Tabbatar da share asusunka na Vaultara",
   "deleteHeading": "Share asusunka",
   "deleteBody": "Mun karɓi buƙatar share asusun Vaultara da ke amfani da wannan adireshin imel. Don ci gaba, buɗe hanyar haɗin da ke ƙasa. Za ka iya duba abin da za a share kafin ka tabbatar.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Babu asusun Vaultara na wannan imel",
   "noAccountHeading": "Babu asusu da wannan imel",
   "noAccountBody": "Wani ya nemi a sake saita kalmar sirrin Vaultara na wannan adireshin imel, amma babu asusun Vaultara a gare shi. Idan kai ne, wataƙila ka yi rajista da wani adireshin imel, ko za ka iya ƙirƙirar asusu a manhajar.",
-  "noAccountNotYou": "Idan ba kai ba ne, za ka iya yin watsi da wannan imel."
+  "noAccountNotYou": "Idan ba kai ba ne, za ka iya yin watsi da wannan imel.",
+  "previousPlanLabel": "Tsarin da ya gabata",
+  "openAppButton": "Buɗe Vaultara"
 }

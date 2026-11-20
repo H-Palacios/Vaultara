@@ -11,6 +11,7 @@
   "secureButton": "アカウントを保護する",
   "secureHelp": "ボタンを押すと、新しいパスワードを選択できるページが開きます。その後、Vaultara を開き、プロフィール > セキュリティとプライバシー > お使いのデバイス に移動して、［他のすべてのデバイスからサインアウト］をタップしてください。",
   "support": "このメールに返信するか、{supportEmail} までお問い合わせください。",
+  "supportReply": "ご不明な点は、このメールにそのまま返信してください。",
   "securityFooter": "このメールは Vaultara アカウントを安全に保つためにお送りしています。このメールは停止できません。",
   "billingFooter": "このメールは、Vaultara の定期購入の状況を常に把握していただくためにお送りしています。",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "定期購入を管理",
   "receiptGoogle": "請求額が記載された正式な領収書は Google Play から届きます。",
   "receiptApple": "請求額が記載された正式な領収書は Apple から届きます。",
+  "sellerNote": "Vaultara は Vorkalis が開発しているため、ストアの領収書やカードの明細には販売者として Vorkalis と表示されます。",
   "startedSubject": "Vaultara {plan} へようこそ",
   "startedHeading": "{plan} へようこそ",
   "startedBody": "ご登録ありがとうございます。{plan} プランが有効になりました。",
@@ -67,6 +69,9 @@
   "refundedSubject": "Vaultara {plan} の購入が返金されました",
   "refundedHeading": "購入の返金",
   "refundedBody": "{plan} プランの購入が返金されました。この購入で利用できた機能は終了しました。",
+  "changedSubject": "Vaultara のプランが {plan} になりました",
+  "changedHeading": "プランが変更されました",
+  "changedBody": "サブスクリプションの変更が完了しました。{plan} プランは今から有効です。",
   "deleteSubject": "Vaultara アカウントの削除を確認してください",
   "deleteHeading": "アカウントを削除",
   "deleteBody": "このメールアドレスを使用している Vaultara アカウントを削除するリクエストを受け付けました。続けるには、下のリンクを開いてください。確定する前に、削除される内容を確認できます。",
@@ -88,5 +93,7 @@
   "noAccountSubject": "このメールアドレスの Vaultara アカウントはありません",
   "noAccountHeading": "このメールアドレスのアカウントはありません",
   "noAccountBody": "このメールアドレスの Vaultara パスワードのリセットがリクエストされましたが、該当する Vaultara アカウントはありません。ご本人の場合は、別のメールアドレスで登録された可能性があります。アプリでアカウントを作成することもできます。",
-  "noAccountNotYou": "お心当たりがない場合は、このメールを無視してください。"
+  "noAccountNotYou": "お心当たりがない場合は、このメールを無視してください。",
+  "previousPlanLabel": "以前のプラン",
+  "openAppButton": "Vaultara を開く"
 }

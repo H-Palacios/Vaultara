@@ -11,6 +11,7 @@
   "secureButton": "Zabezpečit můj účet",
   "secureHelp": "Tlačítko otevře stránku, kde si můžete zvolit nové heslo. Potom otevřete aplikaci Vaultara, přejděte do Profil > Zabezpečení a soukromí > Vaše zařízení a klepněte na Odhlásit se ze všech ostatních zařízení.",
   "support": "Odpovězte na tento e-mail nebo napište na {supportEmail}.",
+  "supportReply": "Máte dotazy? Stačí odpovědět na tento e-mail.",
   "securityFooter": "Tento e-mail posíláme, abychom chránili váš účet Vaultara. Tyto e-maily nelze vypnout.",
   "billingFooter": "Tento e-mail posíláme, abyste vždy věděli, co se děje s vaším předplatným Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Spravovat předplatné",
   "receiptGoogle": "Oficiální doklad s účtovanou částkou vám pošle Google Play.",
   "receiptApple": "Oficiální doklad s účtovanou částkou vám pošle Apple.",
+  "sellerNote": "Vaultaru vyvíjí Vorkalis, proto účtenky z obchodu a výpisy z karty uvádějí jako prodejce Vorkalis.",
   "startedSubject": "Vítejte v tarifu Vaultara {plan}",
   "startedHeading": "Vítejte v tarifu {plan}",
   "startedBody": "Děkujeme za předplatné. Váš tarif {plan} je nyní aktivní.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Váš nákup Vaultara {plan} byl vrácen",
   "refundedHeading": "Nákup vrácen",
   "refundedBody": "Platba za váš tarif {plan} byla vrácena. Přístup, který byl součástí tohoto nákupu, skončil.",
+  "changedSubject": "Váš tarif Vaultara je nyní {plan}",
+  "changedHeading": "Tarif změněn",
+  "changedBody": "Změna předplatného je hotová. Váš tarif {plan} je nyní aktivní.",
   "deleteSubject": "Potvrďte smazání svého účtu Vaultara",
   "deleteHeading": "Smazat účet",
   "deleteBody": "Obdrželi jsme žádost o smazání účtu Vaultara, který používá tuto e-mailovou adresu. Pokračujte otevřením odkazu níže. Před potvrzením si můžete prohlédnout, co bude smazáno.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "K tomuto e-mailu neexistuje žádný účet Vaultara",
   "noAccountHeading": "S tímto e-mailem není žádný účet",
   "noAccountBody": "Někdo požádal o obnovení hesla k Vaultaře pro tuto e-mailovou adresu, ale žádný účet Vaultara k ní neexistuje. Pokud jste to byli vy, možná jste se zaregistrovali s jinou e-mailovou adresou, nebo si můžete vytvořit účet v aplikaci.",
-  "noAccountNotYou": "Pokud jste to nebyli vy, můžete tento e-mail ignorovat."
+  "noAccountNotYou": "Pokud jste to nebyli vy, můžete tento e-mail ignorovat.",
+  "previousPlanLabel": "Předchozí tarif",
+  "openAppButton": "Otevřít Vaultaru"
 }

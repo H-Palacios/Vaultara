@@ -11,6 +11,7 @@
   "secureButton": "Lindungi akaun saya",
   "secureHelp": "Butang ini membuka halaman tempat anda boleh memilih kata laluan baharu. Selepas itu, buka Vaultara, pergi ke Profil > Keselamatan dan privasi > Peranti anda dan ketik Log keluar daripada semua peranti lain.",
   "support": "Balas e-mel ini atau hubungi {supportEmail}.",
+  "supportReply": "Ada soalan? Balas sahaja e-mel ini.",
   "securityFooter": "Kami menghantar e-mel ini untuk memastikan akaun Vaultara anda selamat. Anda tidak boleh mematikan e-mel ini.",
   "billingFooter": "Kami menghantar e-mel ini supaya anda sentiasa tahu apa yang berlaku pada langganan Vaultara anda.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Urus langganan",
   "receiptGoogle": "Google Play menghantar resit rasmi anda bersama jumlah yang dicaj.",
   "receiptApple": "Apple menghantar resit rasmi anda bersama jumlah yang dicaj.",
+  "sellerNote": "Vaultara dibuat oleh Vorkalis, jadi resit kedai dan penyata kad menunjukkan Vorkalis sebagai penjual.",
   "startedSubject": "Selamat datang ke Vaultara {plan}",
   "startedHeading": "Selamat datang ke {plan}",
   "startedBody": "Terima kasih kerana melanggan. Pelan {plan} anda kini aktif.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Pembelian Vaultara {plan} anda telah dibayar balik",
   "refundedHeading": "Pembelian dibayar balik",
   "refundedBody": "Satu pembelian pelan {plan} anda telah dibayar balik. Akses yang disertakan dengan pembelian ini telah tamat.",
+  "changedSubject": "Pelan Vaultara anda kini {plan}",
+  "changedHeading": "Pelan ditukar",
+  "changedBody": "Perubahan langganan anda selesai. Pelan {plan} anda kini aktif.",
   "deleteSubject": "Sahkan pemadaman akaun Vaultara anda",
   "deleteHeading": "Padam akaun anda",
   "deleteBody": "Kami menerima permintaan untuk memadam akaun Vaultara yang menggunakan alamat e-mel ini. Untuk meneruskan, buka pautan di bawah. Anda boleh menyemak apa yang akan dipadam sebelum anda mengesahkan.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Tiada akaun Vaultara untuk e-mel ini",
   "noAccountHeading": "Tiada akaun dengan e-mel ini",
   "noAccountBody": "Seseorang meminta untuk menetapkan semula kata laluan Vaultara bagi alamat e-mel ini, tetapi tiada akaun Vaultara untuknya. Jika itu anda, mungkin anda mendaftar dengan alamat e-mel lain, atau anda boleh membuat akaun dalam aplikasi.",
-  "noAccountNotYou": "Jika itu bukan anda, abaikan e-mel ini."
+  "noAccountNotYou": "Jika itu bukan anda, abaikan e-mel ini.",
+  "previousPlanLabel": "Pelan sebelumnya",
+  "openAppButton": "Buka Vaultara"
 }

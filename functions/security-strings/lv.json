@@ -11,6 +11,7 @@
   "secureButton": "Aizsargāt manu kontu",
   "secureHelp": "Poga atver lapu, kurā varat izvēlēties jaunu paroli. Pēc tam atveriet Vaultara, dodieties uz Profils > Drošība un privātums > Jūsu ierīces un pieskarieties Izrakstīties no visām citām ierīcēm.",
   "support": "Atbildiet uz šo e-pastu vai sazinieties ar {supportEmail}.",
+  "supportReply": "Jautājumi? Vienkārši atbildiet uz šo e-pastu.",
   "securityFooter": "Mēs sūtām šo e-pastu, lai jūsu Vaultara konts būtu drošībā. Šos e-pastus nevar izslēgt.",
   "billingFooter": "Mēs sūtām šo e-pastu, lai jūs vienmēr zinātu, kas notiek ar jūsu Vaultara abonementu.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Pārvaldīt abonementu",
   "receiptGoogle": "Google Play nosūta oficiālo kvīti ar iekasēto summu.",
   "receiptApple": "Apple nosūta oficiālo kvīti ar iekasēto summu.",
+  "sellerNote": "Vaultara veido Vorkalis, tāpēc veikala kvītīs un kartes izrakstos kā pārdevējs norādīts Vorkalis.",
   "startedSubject": "Laipni lūdzam Vaultara {plan}",
   "startedHeading": "Laipni lūdzam {plan}",
   "startedBody": "Paldies, ka abonējāt. Jūsu plāns {plan} tagad ir aktīvs.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Jūsu Vaultara {plan} pirkums tika atmaksāts",
   "refundedHeading": "Pirkums atmaksāts",
   "refundedBody": "Plāna {plan} pirkums tika atmaksāts. Piekļuve, kas tika iegūta ar šo pirkumu, ir beigusies.",
+  "changedSubject": "Jūsu Vaultara plāns tagad ir {plan}",
+  "changedHeading": "Plāns mainīts",
+  "changedBody": "Abonementa maiņa ir pabeigta. Jūsu plāns {plan} tagad ir aktīvs.",
   "deleteSubject": "Apstipriniet Vaultara konta dzēšanu",
   "deleteHeading": "Dzēsiet savu kontu",
   "deleteBody": "Mēs saņēmām pieprasījumu dzēst Vaultara kontu, kas izmanto šo e-pasta adresi. Lai turpinātu, atveriet tālāk norādīto saiti. Pirms apstiprināšanas varat pārskatīt, kas tiks dzēsts.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Šai e-pasta adresei nav Vaultara konta",
   "noAccountHeading": "Ar šo e-pastu konta nav",
   "noAccountBody": "Kāds lūdza atiestatīt Vaultara paroli šai e-pasta adresei, taču tai nav Vaultara konta. Ja tas bijāt jūs, iespējams, reģistrējāties ar citu e-pasta adresi, vai arī varat izveidot kontu lietotnē.",
-  "noAccountNotYou": "Ja tas nebijāt jūs, varat ignorēt šo vēstuli."
+  "noAccountNotYou": "Ja tas nebijāt jūs, varat ignorēt šo vēstuli.",
+  "previousPlanLabel": "Iepriekšējais plāns",
+  "openAppButton": "Atvērt Vaultara"
 }

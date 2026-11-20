@@ -11,6 +11,7 @@
   "secureButton": "Dáàbò bo akọọlẹ mi",
   "secureHelp": "Bọ́tìnnì náà ń ṣí ojú-ìwé kan níbi tí o ti lè yan ọrọ aṣínà tuntun. Lẹ́yìn náà, ṣí Vaultara, lọ sí Profaili > Ààbò àti àṣírí > Àwọn ẹ̀rọ rẹ kí o sì tẹ Jáde lórí gbogbo àwọn ẹ̀rọ mìíràn.",
   "support": "Fèsì sí imeeli yìí tàbí kàn sí {supportEmail}.",
+  "supportReply": "Ṣé o ní ìbéèrè? Kàn fèsì sí ímeèlì yìí.",
   "securityFooter": "A fi imeeli yìí ránṣẹ́ láti pa akọọlẹ Vaultara rẹ mọ́ láìléwu. O kò lè pa àwọn imeeli wọ̀nyí.",
   "billingFooter": "A fi imeeli yìí ránṣẹ́ kí o lè máa mọ ohun tó ń ṣẹlẹ̀ pẹ̀lú alabapin Vaultara rẹ nígbà gbogbo.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Ṣakoso alabapin",
   "receiptGoogle": "Google Play ló ń fi ìwé-ẹ̀rí ìsanwó rẹ ránṣẹ́ pẹ̀lú iye tí a gbà.",
   "receiptApple": "Apple ló ń fi ìwé-ẹ̀rí ìsanwó rẹ ránṣẹ́ pẹ̀lú iye tí a gbà.",
+  "sellerNote": "Vorkalis ló ń ṣe Vaultara, nítorí náà àwọn ìwé-ẹ̀rí ilé ìtajà àti àkọsílẹ̀ káàdì ń fi Vorkalis hàn gẹ́gẹ́ bí olùtajà.",
   "startedSubject": "Káàbọ̀ sí Vaultara {plan}",
   "startedHeading": "Káàbọ̀ sí {plan}",
   "startedBody": "O ṣé fún ṣíṣe alabapin. Ètò {plan} rẹ ti ń ṣiṣẹ́ báyìí.",
@@ -67,6 +69,9 @@
   "refundedSubject": "A ti dá owó rírà Vaultara {plan} rẹ padà",
   "refundedHeading": "A dá owó rírà padà",
   "refundedBody": "A ti dá owó rírà kan ti ètò {plan} rẹ padà. Ìwọlé tó wá pẹ̀lú rírà yìí ti parí.",
+  "changedSubject": "Ètò Vaultara rẹ ti di {plan} báyìí",
+  "changedHeading": "A ti yí ètò padà",
+  "changedBody": "Àyípadà ìforúkọsílẹ̀ rẹ ti parí. Ètò {plan} rẹ ti ń ṣiṣẹ́ báyìí.",
   "deleteSubject": "Jẹ́rìí pípa akọọlẹ Vaultara rẹ",
   "deleteHeading": "Pa akọọlẹ rẹ",
   "deleteBody": "A gba ìbéèrè láti pa akọọlẹ Vaultara tó ń lo adirẹsi imeeli yìí. Láti tẹ̀síwájú, ṣí ọ̀nà asopọ̀ tó wà nísàlẹ̀. O lè wo ohun tí a ó pa kí o tó jẹ́rìí.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Kò sí àkáǹtì Vaultara fún ímeèlì yìí",
   "noAccountHeading": "Kò sí àkáǹtì pẹ̀lú ímeèlì yìí",
   "noAccountBody": "Ẹnìkan béèrè láti tún ọ̀rọ̀ aṣínà Vaultara ṣe fún àdírẹ́sì ímeèlì yìí, ṣùgbọ́n kò sí àkáǹtì Vaultara fún un. Bí ìwọ ni, bóyá o forúkọsílẹ̀ pẹ̀lú àdírẹ́sì ímeèlì mìíràn, tàbí o lè ṣe àkáǹtì nínú áàpù náà.",
-  "noAccountNotYou": "Bí kì í ṣe ìwọ, o lè fojú fo ímeèlì yìí."
+  "noAccountNotYou": "Bí kì í ṣe ìwọ, o lè fojú fo ímeèlì yìí.",
+  "previousPlanLabel": "Ètò ti tẹ́lẹ̀",
+  "openAppButton": "Ṣí Vaultara"
 }

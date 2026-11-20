@@ -11,6 +11,7 @@
   "secureButton": "Beveilig my rekening",
   "secureHelp": "Die knoppie maak 'n bladsy oop waar jy 'n nuwe wagwoord kan kies. Maak daarna Vaultara oop, gaan na Profiel > Sekuriteit en privaatheid > Jou toestelle en tik op Meld af op alle ander toestelle.",
   "support": "Antwoord op hierdie e-pos of kontak {supportEmail}.",
+  "supportReply": "Vrae? Antwoord net op hierdie e-pos.",
   "securityFooter": "Ons stuur hierdie e-pos om jou Vaultara-rekening veilig te hou. Jy kan nie hierdie e-posse afskakel nie.",
   "billingFooter": "Ons stuur hierdie e-pos sodat jy altyd weet wat met jou Vaultara-intekening gebeur.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Bestuur intekening",
   "receiptGoogle": "Google Play stuur jou amptelike kwitansie met die bedrag wat gehef is.",
   "receiptApple": "Apple stuur jou amptelike kwitansie met die bedrag wat gehef is.",
+  "sellerNote": "Vaultara word deur Vorkalis gemaak, so winkelkwitansies en kaartstate wys Vorkalis as die verkoper.",
   "startedSubject": "Welkom by Vaultara {plan}",
   "startedHeading": "Welkom by {plan}",
   "startedBody": "Dankie dat jy ingeteken het. Jou {plan}-plan is nou aktief.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Jou Vaultara {plan}-aankoop is terugbetaal",
   "refundedHeading": "Aankoop terugbetaal",
   "refundedBody": "'n Aankoop van jou {plan}-plan is terugbetaal. Toegang wat by hierdie aankoop ingesluit was, het geëindig.",
+  "changedSubject": "Jou Vaultara-plan is nou {plan}",
+  "changedHeading": "Plan verander",
+  "changedBody": "Jou intekeningverandering is klaar. Jou {plan}-plan is nou aktief.",
   "deleteSubject": "Bevestig dat jy jou Vaultara-rekening wil uitvee",
   "deleteHeading": "Vee jou rekening uit",
   "deleteBody": "Ons het 'n versoek ontvang om die Vaultara-rekening wat hierdie e-posadres gebruik, uit te vee. Maak die skakel hieronder oop om voort te gaan. Jy kan nagaan wat uitgevee sal word voordat jy bevestig.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Daar is geen Vaultara-rekening vir hierdie e-pos nie",
   "noAccountHeading": "Geen rekening met hierdie e-pos nie",
   "noAccountBody": "Iemand het gevra om die Vaultara-wagwoord vir hierdie e-posadres terug te stel, maar daar is geen Vaultara-rekening daarvoor nie. As dit jy was, het jy dalk met 'n ander e-posadres aangemeld, of jy kan 'n rekening in die app skep.",
-  "noAccountNotYou": "As dit nie jy was nie, kan jy hierdie e-pos ignoreer."
+  "noAccountNotYou": "As dit nie jy was nie, kan jy hierdie e-pos ignoreer.",
+  "previousPlanLabel": "Vorige plan",
+  "openAppButton": "Maak Vaultara oop"
 }

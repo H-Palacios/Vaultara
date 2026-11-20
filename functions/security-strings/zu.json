@@ -11,6 +11,7 @@
   "secureButton": "Vikela i-akhawunti yami",
   "secureHelp": "Inkinobho ivula ikhasi lapho ungakhetha khona iphasiwedi entsha. Ngemuva kwalokho, vula i-Vaultara, uye ku-Iphrofayela > Ukuphepha nobumfihlo > Amadivayisi akho bese uthepha u-Phuma kuwo wonke amanye amadivayisi.",
   "support": "Phendula le imeyili noma uxhumane no-{supportEmail}.",
+  "supportReply": "Unemibuzo? Phendula nje le imeyili.",
   "securityFooter": "Sithumela le imeyili ukuze sigcine i-akhawunti yakho ye-Vaultara iphephile. Awukwazi ukuvala lezi imeyili.",
   "billingFooter": "Sithumela le imeyili ukuze uhlale wazi ukuthi kwenzekani ngokubhalisa kwakho kwe-Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Phatha ukubhalisa",
   "receiptGoogle": "I-Google Play ikuthumelela irisidi esemthethweni enenani elikhokhisiwe.",
   "receiptApple": "I-Apple ikuthumelela irisidi esemthethweni enenani elikhokhisiwe.",
+  "sellerNote": "I-Vaultara yenziwa yi-Vorkalis, ngakho amarisidi esitolo nezitatimende zekhadi zikhombisa i-Vorkalis njengomthengisi.",
   "startedSubject": "Siyakwamukela ku-Vaultara {plan}",
   "startedHeading": "Siyakwamukela ku-{plan}",
   "startedBody": "Siyabonga ngokubhalisa. Uhlelo lwakho lwe-{plan} manje luyasebenza.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Ukuthenga kwakho kwe-Vaultara {plan} kubuyiselwe imali",
   "refundedHeading": "Ukuthenga kubuyiselwe imali",
   "refundedBody": "Ukuthenga kohlelo lwakho lwe-{plan} kubuyiselwe imali. Ukufinyelela obekuze nalokhu kuthenga kuphelile.",
+  "changedSubject": "Uhlelo lwakho lwe-Vaultara manje lu-{plan}",
+  "changedHeading": "Uhlelo lushintshiwe",
+  "changedBody": "Ushintsho lokubhalisa kwakho luqediwe. Uhlelo lwakho lwe-{plan} luyasebenza manje.",
   "deleteSubject": "Qinisekisa ukususa i-akhawunti yakho ye-Vaultara",
   "deleteHeading": "Susa i-akhawunti",
   "deleteBody": "Sithole isicelo sokususa i-akhawunti ye-Vaultara esebenzisa leli kheli le-imeyili. Ukuze uqhubeke, vula isixhumanisi esingezansi. Ungabuyekeza okuzosuswa ngaphambi kokuthi uqinisekise.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Ayikho i-akhawunti ye-Vaultara yale imeyili",
   "noAccountHeading": "Ayikho i-akhawunti ngale imeyili",
   "noAccountBody": "Othile ucele ukusetha kabusha iphasiwedi ye-Vaultara yaleli kheli le-imeyili, kodwa ayikho i-akhawunti ye-Vaultara yalo. Uma bekunguwe, mhlawumbe wabhalisa ngelinye ikheli le-imeyili, noma ungenza i-akhawunti kuhlelo lokusebenza.",
-  "noAccountNotYou": "Uma bekungeyena wena, ungayishaya indiva le imeyili."
+  "noAccountNotYou": "Uma bekungeyena wena, ungayishaya indiva le imeyili.",
+  "previousPlanLabel": "Uhlelo lwangaphambilini",
+  "openAppButton": "Vula i-Vaultara"
 }

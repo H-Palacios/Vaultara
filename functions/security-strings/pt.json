@@ -11,6 +11,7 @@
   "secureButton": "Proteger a minha conta",
   "secureHelp": "O botão abre uma página onde pode escolher uma nova palavra-passe. Depois, abra o Vaultara, vá a Perfil > Segurança e privacidade > Os seus dispositivos e toque em Terminar sessão em todos os outros dispositivos.",
   "support": "Responda a este email ou contacte {supportEmail}.",
+  "supportReply": "Dúvidas? Basta responder a este e-mail.",
   "securityFooter": "Enviamos este email para manter a sua conta Vaultara segura. Não é possível desativar estes emails.",
   "billingFooter": "Enviamos este email para que saiba sempre o que se passa com a sua assinatura do Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Gerenciar assinatura",
   "receiptGoogle": "O Google Play envia-lhe o recibo oficial com o valor cobrado.",
   "receiptApple": "A Apple envia-lhe o recibo oficial com o valor cobrado.",
+  "sellerNote": "O Vaultara é feito pela Vorkalis, por isso os recibos da loja e os extratos do cartão mostram a Vorkalis como vendedora.",
   "startedSubject": "Bem-vindo ao Vaultara {plan}",
   "startedHeading": "Bem-vindo ao {plan}",
   "startedBody": "Obrigado pela sua assinatura. O seu plano {plan} já está ativo.",
@@ -67,6 +69,9 @@
   "refundedSubject": "A sua compra do Vaultara {plan} foi reembolsada",
   "refundedHeading": "Compra reembolsada",
   "refundedBody": "Uma compra do seu plano {plan} foi reembolsada. O acesso incluído nesta compra terminou.",
+  "changedSubject": "O seu plano Vaultara agora é {plan}",
+  "changedHeading": "Plano alterado",
+  "changedBody": "A alteração da subscrição está concluída. O seu plano {plan} já está ativo.",
   "deleteSubject": "Confirme a eliminação da sua conta Vaultara",
   "deleteHeading": "Eliminar a sua conta",
   "deleteBody": "Recebemos um pedido para eliminar a conta Vaultara que usa este endereço de email. Para continuar, abra o link abaixo. Pode rever o que será eliminado antes de confirmar.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Não existe conta Vaultara para este e-mail",
   "noAccountHeading": "Nenhuma conta com este e-mail",
   "noAccountBody": "Alguém pediu para redefinir a senha do Vaultara deste endereço de e-mail, mas não existe conta Vaultara para ele. Se foi você, talvez tenha se cadastrado com outro endereço, ou você pode criar uma conta no app.",
-  "noAccountNotYou": "Se não foi você, pode ignorar este e-mail."
+  "noAccountNotYou": "Se não foi você, pode ignorar este e-mail.",
+  "previousPlanLabel": "Plano anterior",
+  "openAppButton": "Abrir o Vaultara"
 }

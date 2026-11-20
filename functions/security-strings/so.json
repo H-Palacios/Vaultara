@@ -11,6 +11,7 @@
   "secureButton": "Ilaali akoonkayga",
   "secureHelp": "Badhanku wuxuu furaa bog aad ku dooran karto furaha sirta ah oo cusub. Intaas ka dib, fur Vaultara, tag Bogga shakhsiga > Amniga iyo asturnaanta > Qalabkaaga oo taabo Ka bax dhammaan qalabka kale.",
   "support": "Ka jawaab iimaylkan ama la xiriir {supportEmail}.",
+  "supportReply": "Su'aalo ma qabtaa? Kaliya ka jawaab iimaylkan.",
   "securityFooter": "Waxaan kuu soo dirnaa iimaylkan si aan u ilaalino akoonkaaga Vaultara. Iimaylladan ma demin kartid.",
   "billingFooter": "Waxaan kuu soo dirnaa iimaylkan si aad had iyo jeer u ogaato waxa ka socda isdiiwaangelintaada Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Maamul isdiiwaangelinta",
   "receiptGoogle": "Google Play ayaa kuu soo dira rasiidkaaga rasmiga ah oo leh lacagta lagaa jaray.",
   "receiptApple": "Apple ayaa kuu soo dira rasiidkaaga rasmiga ah oo leh lacagta lagaa jaray.",
+  "sellerNote": "Vaultara waxaa samaysa Vorkalis, sidaa darteed rasiidhada dukaanka iyo warbixinnada kaarka waxay muujiyaan Vorkalis inuu yahay iibiyaha.",
   "startedSubject": "Ku soo dhowow Vaultara {plan}",
   "startedHeading": "Ku soo dhowow {plan}",
   "startedBody": "Waad ku mahadsan tahay isdiiwaangelinta. Qorshahaaga {plan} hadda waa shaqaynayaa.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Lacagta iibsiga Vaultara {plan} waa laguu celiyay",
   "refundedHeading": "Lacagta iibsiga waa la celiyay",
   "refundedBody": "Lacagta iibsiga qorshahaaga {plan} waa laguu celiyay. Helitaankii la socday iibsigan wuu dhammaaday.",
+  "changedSubject": "Qorshahaaga Vaultara hadda waa {plan}",
+  "changedHeading": "Qorshaha waa la beddelay",
+  "changedBody": "Beddelka rukummadaada waa dhammaaday. Qorshahaaga {plan} hadda waa firfircoon yahay.",
   "deleteSubject": "Xaqiiji tirtirka akoonkaaga Vaultara",
   "deleteHeading": "Tirtir akoonkaaga",
   "deleteBody": "Waxaan helnay codsi lagu tirtirayo akoonka Vaultara ee isticmaala cinwaankan iimaylka. Si aad u sii wadato, fur link-ga hoose. Waxaad dib u eegi kartaa waxa la tirtiri doono ka hor intaadan xaqiijin.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Akoon Vaultara oo iimaylkan ah ma jiro",
   "noAccountHeading": "Akoon iimaylkan leh ma jiro",
   "noAccountBody": "Qof ayaa codsaday in dib loo dejiyo erayga sirta ah ee Vaultara ee cinwaankan iimaylka, laakiin akoon Vaultara oo isaga ah ma jiro. Haddii adiga ahayd, waxaa laga yaabaa inaad iska diiwaangelisay cinwaan kale, ama waxaad akoon ka samayn kartaa abka.",
-  "noAccountNotYou": "Haddii aanad adiga ahayn, iska indho tir iimaylkan."
+  "noAccountNotYou": "Haddii aanad adiga ahayn, iska indho tir iimaylkan.",
+  "previousPlanLabel": "Qorshihii hore",
+  "openAppButton": "Fur Vaultara"
 }

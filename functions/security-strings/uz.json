@@ -11,6 +11,7 @@
   "secureButton": "Hisobimni himoyalash",
   "secureHelp": "Tugma yangi parol tanlashingiz mumkin boʻlgan sahifani ochadi. Shundan soʻng Vaultarani oching, Profil > Xavfsizlik va maxfiylik > Qurilmalaringiz boʻlimiga oʻting va Boshqa barcha qurilmalardan chiqish tugmasini bosing.",
   "support": "Bu xatga javob bering yoki {supportEmail} bilan bogʻlaning.",
+  "supportReply": "Savollaringiz bormi? Shunchaki bu xatga javob bering.",
   "securityFooter": "Bu xatni Vaultara hisobingizni xavfsiz saqlash uchun yuboramiz. Bu xatlarni oʻchirib boʻlmaydi.",
   "billingFooter": "Bu xatni Vaultara obunangiz bilan nima boʻlayotganini doim bilishingiz uchun yuboramiz.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Obunani boshqarish",
   "receiptGoogle": "Yechib olingan summa koʻrsatilgan rasmiy kvitansiyangizni Google Play yuboradi.",
   "receiptApple": "Yechib olingan summa koʻrsatilgan rasmiy kvitansiyangizni Apple yuboradi.",
+  "sellerNote": "Vaultara’ni Vorkalis yaratadi, shuning uchun do‘kon cheklari va karta ko‘chirmalarida sotuvchi sifatida Vorkalis ko‘rsatiladi.",
   "startedSubject": "Vaultara {plan} tarifiga xush kelibsiz",
   "startedHeading": "{plan} tarifiga xush kelibsiz",
   "startedBody": "Obuna boʻlganingiz uchun rahmat. {plan} tarifingiz endi faol.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Vaultara {plan} xaridingiz uchun pul qaytarildi",
   "refundedHeading": "Xarid uchun pul qaytarildi",
   "refundedBody": "{plan} tarifingizning bir xaridi uchun pul qaytarildi. Ushbu xarid bilan berilgan foydalanish huquqi tugadi.",
+  "changedSubject": "Vaultara rejangiz endi {plan}",
+  "changedHeading": "Reja o‘zgardi",
+  "changedBody": "Obunani o‘zgartirish yakunlandi. {plan} rejangiz hozir faol.",
   "deleteSubject": "Vaultara hisobingizni oʻchirishni tasdiqlang",
   "deleteHeading": "Hisobni oʻchirish",
   "deleteBody": "Ushbu e-pochta manzilidan foydalanadigan Vaultara hisobini oʻchirish soʻrovini oldik. Davom etish uchun quyidagi havolani oching. Tasdiqlashdan oldin nimalar oʻchirilishini koʻrib chiqishingiz mumkin.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Bu pochta uchun Vaultara hisobi yo‘q",
   "noAccountHeading": "Bu pochta bilan hisob yo‘q",
   "noAccountBody": "Kimdir bu pochta manzili uchun Vaultara parolini tiklashni so‘radi, lekin unga Vaultara hisobi yo‘q. Agar bu siz bo‘lsangiz, ehtimol boshqa pochta bilan ro‘yxatdan o‘tgansiz yoki ilovada hisob yaratishingiz mumkin.",
-  "noAccountNotYou": "Agar bu siz bo‘lmasangiz, bu xatni e’tiborsiz qoldirishingiz mumkin."
+  "noAccountNotYou": "Agar bu siz bo‘lmasangiz, bu xatni e’tiborsiz qoldirishingiz mumkin.",
+  "previousPlanLabel": "Avvalgi reja",
+  "openAppButton": "Vaultara’ni ochish"
 }

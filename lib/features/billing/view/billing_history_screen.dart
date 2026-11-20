@@ -32,12 +32,12 @@ class _BillingHistoryScreenState extends State<BillingHistoryScreen> {
     _stream = uid == null
         ? null
         : FirebaseFirestore.instance
-            .collection('users')
-            .doc(uid)
-            .collection('billing')
-            .orderBy('at', descending: true)
-            .limit(100)
-            .snapshots();
+              .collection('users')
+              .doc(uid)
+              .collection('billing')
+              .orderBy('at', descending: true)
+              .limit(100)
+              .snapshots();
   }
 
   void _retry() => setState(_subscribe);
@@ -66,8 +66,9 @@ class _BillingHistoryScreenState extends State<BillingHistoryScreen> {
     if (store == 'apple') platform = 'ios';
     if (store == 'google') platform = 'android';
     platform ??= await PlanRepository.paidPlatform();
-    await EntitlementService.instance.service
-        .openStoreSubscriptions(platform: platform);
+    await EntitlementService.instance.service.openStoreSubscriptions(
+      platform: platform,
+    );
   }
 
   @override
@@ -106,10 +107,13 @@ class _BillingHistoryScreenState extends State<BillingHistoryScreen> {
                           );
                         }
                         final docs = denied
-                            ? const <QueryDocumentSnapshot<Map<String, dynamic>>>[]
+                            ? const <
+                                QueryDocumentSnapshot<Map<String, dynamic>>
+                              >[]
                             : snap.data!.docs;
-                        final Object? latestStore =
-                            docs.isEmpty ? null : docs.first.data()['store'];
+                        final Object? latestStore = docs.isEmpty
+                            ? null
+                            : docs.first.data()['store'];
                         return ListView(
                           padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
                           children: [
@@ -178,6 +182,8 @@ class _BillingRow extends StatelessWidget {
         return Icons.event_busy_rounded;
       case 'resumed':
         return Icons.replay_rounded;
+      case 'changed':
+        return Icons.swap_horiz_rounded;
       case 'ended':
         return Icons.block_rounded;
       case 'refunded':
@@ -197,6 +203,8 @@ class _BillingRow extends StatelessWidget {
         return loc.secBillingCancelled;
       case 'resumed':
         return loc.secBillingResumed;
+      case 'changed':
+        return loc.secBillingChanged;
       case 'ended':
         return loc.secBillingEnded;
       case 'refunded':
@@ -261,7 +269,10 @@ class _BillingRow extends StatelessWidget {
       final formatted = dateFormat.format(renewsAt);
       if (kind == 'cancelled') {
         dateLine = loc.secBillingAccessUntil(formatted);
-      } else if (kind == 'started' || kind == 'renewed' || kind == 'resumed') {
+      } else if (kind == 'started' ||
+          kind == 'renewed' ||
+          kind == 'resumed' ||
+          kind == 'changed') {
         dateLine = loc.secBillingRenewsOn(formatted);
       }
     }
@@ -271,9 +282,7 @@ class _BillingRow extends StatelessWidget {
       decoration: BoxDecoration(
         color: scheme.surface,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: scheme.outlineVariant.withValues(alpha: 0.6),
-        ),
+        border: Border.all(color: scheme.outlineVariant.withValues(alpha: 0.6)),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,

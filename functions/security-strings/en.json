@@ -11,6 +11,7 @@
   "secureButton": "Secure my account",
   "secureHelp": "The button opens a page where you can choose a new password. After that, open Vaultara, go to Profile > Security and privacy > Your devices and tap Sign out of all other devices.",
   "support": "Reply to this email or contact {supportEmail}.",
+  "supportReply": "Questions? Just reply to this email.",
   "securityFooter": "We send this email to keep your Vaultara account safe. You cannot turn these emails off.",
   "billingFooter": "We send this email so you always know what is happening with your Vaultara subscription.",
   "timeUtc": "{time} UTC",
@@ -52,6 +53,9 @@
   "manageButton": "Manage subscription",
   "receiptGoogle": "Google Play sends your official receipt with the amount charged.",
   "receiptApple": "Apple sends your official receipt with the amount charged.",
+  "sellerNote": "Vaultara is made by Vorkalis, so store receipts and card statements show Vorkalis as the seller.",
+  "openAppButton": "Open Vaultara",
+  "previousPlanLabel": "Previous plan",
 
   "startedSubject": "Welcome to Vaultara {plan}",
   "startedHeading": "Welcome to {plan}",
@@ -80,6 +84,10 @@
   "refundedSubject": "Your Vaultara {plan} purchase was refunded",
   "refundedHeading": "Purchase refunded",
   "refundedBody": "A purchase of your {plan} plan was refunded. Access that came with this purchase has ended.",
+
+  "changedSubject": "Your Vaultara plan is now {plan}",
+  "changedHeading": "Plan changed",
+  "changedBody": "Your subscription change is done. Your {plan} plan is active now.",
 
   "deleteSubject": "Confirm deleting your Vaultara account",
   "deleteHeading": "Delete your account",

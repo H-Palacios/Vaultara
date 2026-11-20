@@ -11,6 +11,7 @@
   "secureButton": "تأمين حسابي",
   "secureHelp": "يفتح الزر صفحة يمكنك فيها اختيار كلمة مرور جديدة. بعد ذلك، افتح Vaultara وانتقل إلى الملف الشخصي > الأمان والخصوصية > أجهزتك واضغط على تسجيل الخروج من جميع الأجهزة الأخرى.",
   "support": "ردّ على هذه الرسالة أو تواصل مع {supportEmail}.",
+  "supportReply": "لديك أسئلة؟ فقط ردّ على هذه الرسالة.",
   "securityFooter": "نرسل هذه الرسالة للحفاظ على أمان حسابك في Vaultara. لا يمكنك إيقاف هذه الرسائل.",
   "billingFooter": "نرسل هذه الرسالة لتعرف دائمًا ما يحدث في اشتراكك في Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "إدارة الاشتراك",
   "receiptGoogle": "يرسل Google Play إيصالك الرسمي بالمبلغ المحصّل.",
   "receiptApple": "ترسل Apple إيصالك الرسمي بالمبلغ المحصّل.",
+  "sellerNote": "تصنع Vorkalis تطبيق Vaultara، لذا تظهر Vorkalis بصفتها البائع في إيصالات المتجر وكشوف البطاقة.",
   "startedSubject": "مرحبًا بك في Vaultara {plan}",
   "startedHeading": "مرحبًا بك في {plan}",
   "startedBody": "شكرًا لاشتراكك. خطة {plan} مفعّلة الآن.",
@@ -67,6 +69,9 @@
   "refundedSubject": "تم استرداد مبلغ شراء Vaultara {plan}",
   "refundedHeading": "تم استرداد مبلغ الشراء",
   "refundedBody": "تم استرداد مبلغ عملية شراء لخطة {plan}. انتهى الوصول الذي كان مرتبطًا بعملية الشراء هذه.",
+  "changedSubject": "خطتك في Vaultara الآن هي {plan}",
+  "changedHeading": "تم تغيير الخطة",
+  "changedBody": "اكتمل تغيير اشتراكك. خطة {plan} مفعّلة الآن.",
   "deleteSubject": "أكّد حذف حسابك في Vaultara",
   "deleteHeading": "حذف حسابك",
   "deleteBody": "تلقينا طلبًا لحذف حساب Vaultara الذي يستخدم عنوان البريد الإلكتروني هذا. للمتابعة، افتح الرابط أدناه. يمكنك مراجعة ما سيتم حذفه قبل أن تؤكّد.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "لا يوجد حساب Vaultara لهذا البريد",
   "noAccountHeading": "لا يوجد حساب بهذا البريد",
   "noAccountBody": "طلب شخص ما إعادة تعيين كلمة مرور Vaultara لعنوان البريد هذا، لكن لا يوجد حساب Vaultara له. إذا كنت أنت، فربما سجلت بعنوان بريد آخر، أو يمكنك إنشاء حساب في التطبيق.",
-  "noAccountNotYou": "إذا لم تكن أنت، يمكنك تجاهل هذه الرسالة."
+  "noAccountNotYou": "إذا لم تكن أنت، يمكنك تجاهل هذه الرسالة.",
+  "previousPlanLabel": "الخطة السابقة",
+  "openAppButton": "افتح Vaultara"
 }

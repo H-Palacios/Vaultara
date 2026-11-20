@@ -11,6 +11,7 @@
   "secureButton": "Kaitse minu kontot",
   "secureHelp": "Nupp avab lehe, kus saad valida uue parooli. Seejärel ava Vaultara, mine Profiil > Turvalisus ja privaatsus > Sinu seadmed ja puuduta Logi välja kõigist teistest seadmetest.",
   "support": "Vasta sellele e-kirjale või võta ühendust aadressil {supportEmail}.",
+  "supportReply": "Küsimusi? Vasta lihtsalt sellele e-kirjale.",
   "securityFooter": "Saadame selle e-kirja, et hoida sinu Vaultara konto turvalisena. Neid e-kirju ei saa välja lülitada.",
   "billingFooter": "Saadame selle e-kirja, et sa teaksid alati, mis sinu Vaultara tellimusega toimub.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Halda tellimust",
   "receiptGoogle": "Google Play saadab sulle ametliku kviitungi koos makstud summaga.",
   "receiptApple": "Apple saadab sulle ametliku kviitungi koos makstud summaga.",
+  "sellerNote": "Vaultarat teeb Vorkalis, seega näitavad poe kviitungid ja kaardi väljavõtted müüjana Vorkalist.",
   "startedSubject": "Tere tulemast kasutama Vaultara paketti {plan}",
   "startedHeading": "Tere tulemast kasutama paketti {plan}",
   "startedBody": "Aitäh tellimise eest. Sinu pakett {plan} on nüüd aktiivne.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Sinu Vaultara paketi {plan} ost tagastati",
   "refundedHeading": "Ost tagastati",
   "refundedBody": "Sinu paketi {plan} ost tagastati. Selle ostuga kaasnenud juurdepääs on lõppenud.",
+  "changedSubject": "Sinu Vaultara pakett on nüüd {plan}",
+  "changedHeading": "Pakett muudetud",
+  "changedBody": "Tellimuse muutmine on tehtud. Sinu {plan} pakett on nüüd aktiivne.",
   "deleteSubject": "Kinnita oma Vaultara konto kustutamine",
   "deleteHeading": "Kustuta oma konto",
   "deleteBody": "Saime taotluse kustutada Vaultara konto, mis kasutab seda e-posti aadressi. Jätkamiseks ava allolev link. Enne kinnitamist saad üle vaadata, mis kustutatakse.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Sellele e-postile pole Vaultara kontot",
   "noAccountHeading": "Selle e-postiga kontot pole",
   "noAccountBody": "Keegi palus selle e-posti aadressi Vaultara parooli lähtestada, kuid sellele pole Vaultara kontot. Kui see olid sina, registreerusid ehk teise e-posti aadressiga või saad rakenduses konto luua.",
-  "noAccountNotYou": "Kui see polnud sina, võid seda kirja eirata."
+  "noAccountNotYou": "Kui see polnud sina, võid seda kirja eirata.",
+  "previousPlanLabel": "Eelmine pakett",
+  "openAppButton": "Ava Vaultara"
 }

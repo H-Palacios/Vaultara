@@ -11,6 +11,7 @@
   "secureButton": "Skydda mitt konto",
   "secureHelp": "Knappen öppnar en sida där du kan välja ett nytt lösenord. Öppna sedan Vaultara, gå till Profil > Säkerhet och integritet > Dina enheter och tryck på Logga ut från alla andra enheter.",
   "support": "Svara på det här e-postmeddelandet eller kontakta {supportEmail}.",
+  "supportReply": "Frågor? Svara bara på det här mejlet.",
   "securityFooter": "Vi skickar det här e-postmeddelandet för att skydda ditt Vaultara-konto. Du kan inte stänga av de här meddelandena.",
   "billingFooter": "Vi skickar det här e-postmeddelandet så att du alltid vet vad som händer med din Vaultara-prenumeration.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Hantera prenumeration",
   "receiptGoogle": "Google Play skickar ditt officiella kvitto med det debiterade beloppet.",
   "receiptApple": "Apple skickar ditt officiella kvitto med det debiterade beloppet.",
+  "sellerNote": "Vaultara görs av Vorkalis, så kvitton från butiken och kontoutdrag visar Vorkalis som säljare.",
   "startedSubject": "Välkommen till Vaultara {plan}",
   "startedHeading": "Välkommen till {plan}",
   "startedBody": "Tack för att du prenumererar. Ditt {plan}-abonnemang är nu aktivt.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Ditt Vaultara {plan}-köp har återbetalats",
   "refundedHeading": "Köpet återbetalades",
   "refundedBody": "Ett köp av ditt {plan}-abonnemang har återbetalats. Åtkomsten som ingick i det köpet har upphört.",
+  "changedSubject": "Ditt Vaultara-abonnemang är nu {plan}",
+  "changedHeading": "Abonnemang ändrat",
+  "changedBody": "Ändringen av abonnemanget är klar. Ditt {plan}-abonnemang är aktivt nu.",
   "deleteSubject": "Bekräfta borttagning av ditt Vaultara-konto",
   "deleteHeading": "Ta bort ditt konto",
   "deleteBody": "Vi har fått en begäran om att ta bort Vaultara-kontot som använder den här e-postadressen. Öppna länken nedan för att fortsätta. Du kan se vad som kommer att tas bort innan du bekräftar.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Det finns inget Vaultara-konto för den här e-postadressen",
   "noAccountHeading": "Inget konto med den här e-postadressen",
   "noAccountBody": "Någon bad om att återställa Vaultara-lösenordet för den här e-postadressen, men det finns inget Vaultara-konto för den. Om det var du registrerade du dig kanske med en annan e-postadress, eller så kan du skapa ett konto i appen.",
-  "noAccountNotYou": "Om det inte var du kan du ignorera det här mejlet."
+  "noAccountNotYou": "Om det inte var du kan du ignorera det här mejlet.",
+  "previousPlanLabel": "Tidigare abonnemang",
+  "openAppButton": "Öppna Vaultara"
 }

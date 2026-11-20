@@ -11,6 +11,7 @@
   "secureButton": "Hesabımı qoru",
   "secureHelp": "Düymə yeni şifrə seçə biləcəyiniz səhifəni açır. Bundan sonra Vaultara-nı açın, Profil > Təhlükəsizlik və məxfilik > Cihazlarınız bölməsinə keçin və Bütün digər cihazlardan çıxış et düyməsinə toxunun.",
   "support": "Bu e-poçta cavab verin və ya {supportEmail} ünvanı ilə əlaqə saxlayın.",
+  "supportReply": "Sualınız var? Sadəcə bu e-poçta cavab verin.",
   "securityFooter": "Bu e-poçtu Vaultara hesabınızı qorumaq üçün göndəririk. Bu e-poçtları söndürə bilməzsiniz.",
   "billingFooter": "Bu e-poçtu Vaultara abunəliyinizlə nə baş verdiyini həmişə bilməyiniz üçün göndəririk.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Abunəliyi idarə et",
   "receiptGoogle": "Rəsmi qəbzi tutulan məbləğlə birlikdə Google Play göndərir.",
   "receiptApple": "Rəsmi qəbzi tutulan məbləğlə birlikdə Apple göndərir.",
+  "sellerNote": "Vaultara-nı Vorkalis hazırlayır, buna görə mağaza qəbzlərində və kart çıxarışlarında satıcı kimi Vorkalis göstərilir.",
   "startedSubject": "Vaultara {plan} planına xoş gəlmisiniz",
   "startedHeading": "{plan} planına xoş gəlmisiniz",
   "startedBody": "Abunə olduğunuz üçün təşəkkür edirik. {plan} planınız artıq aktivdir.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Vaultara {plan} alışınızın pulu qaytarıldı",
   "refundedHeading": "Alışın pulu qaytarıldı",
   "refundedBody": "{plan} planınızın alışı üçün pul qaytarıldı. Bu alışla gələn giriş başa çatıb.",
+  "changedSubject": "Vaultara planınız indi {plan}",
+  "changedHeading": "Plan dəyişdi",
+  "changedBody": "Abunəlik dəyişikliyiniz tamamlandı. {plan} planınız indi aktivdir.",
   "deleteSubject": "Vaultara hesabınızın silinməsini təsdiqləyin",
   "deleteHeading": "Hesabınızı silin",
   "deleteBody": "Bu e-poçt ünvanından istifadə edən Vaultara hesabını silmək üçün sorğu aldıq. Davam etmək üçün aşağıdakı linki açın. Təsdiqləməzdən əvvəl nələrin silinəcəyinə baxa bilərsiniz.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Bu e-poçt üçün Vaultara hesabı yoxdur",
   "noAccountHeading": "Bu e-poçtla hesab yoxdur",
   "noAccountBody": "Kimsə bu e-poçt ünvanı üçün Vaultara parolunun sıfırlanmasını istədi, lakin onun üçün Vaultara hesabı yoxdur. Bu sizsinizsə, bəlkə başqa e-poçt ünvanı ilə qeydiyyatdan keçmisiniz və ya tətbiqdə hesab yarada bilərsiniz.",
-  "noAccountNotYou": "Bu siz deyilsinizsə, bu məktubu nəzərə almaya bilərsiniz."
+  "noAccountNotYou": "Bu siz deyilsinizsə, bu məktubu nəzərə almaya bilərsiniz.",
+  "previousPlanLabel": "Əvvəlki plan",
+  "openAppButton": "Vaultara-nı açın"
 }

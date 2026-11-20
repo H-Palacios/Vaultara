@@ -11,6 +11,7 @@
   "secureButton": "אבטחת החשבון שלי",
   "secureHelp": "הכפתור פותח דף שבו אפשר לבחור סיסמה חדשה. לאחר מכן פתח את Vaultara, עבור אל פרופיל > אבטחה ופרטיות > המכשירים שלך והקש על התנתקות מכל המכשירים האחרים.",
   "support": "השב להודעת הדוא״ל הזו או פנה אל {supportEmail}.",
+  "supportReply": "שאלות? פשוט השיבו למייל הזה.",
   "securityFooter": "אנחנו שולחים את הודעת הדוא״ל הזו כדי לשמור על חשבון Vaultara שלך. אי אפשר לכבות הודעות כאלה.",
   "billingFooter": "אנחנו שולחים את הודעת הדוא״ל הזו כדי שתמיד תדע מה קורה עם המנוי שלך ל-Vaultara.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "ניהול המנוי",
   "receiptGoogle": "Google Play שולחת לך את הקבלה הרשמית עם הסכום שחויב.",
   "receiptApple": "Apple שולחת לך את הקבלה הרשמית עם הסכום שחויב.",
+  "sellerNote": "את Vaultara מפתחת Vorkalis, ולכן בקבלות החנות ובפירוט כרטיס האשראי מופיעה Vorkalis כמוכרת.",
   "startedSubject": "ברוך הבא ל-Vaultara {plan}",
   "startedHeading": "ברוך הבא ל-{plan}",
   "startedBody": "תודה שנרשמת למנוי. תוכנית {plan} שלך פעילה עכשיו.",
@@ -67,6 +69,9 @@
   "refundedSubject": "בוצע החזר כספי על רכישת Vaultara {plan}",
   "refundedHeading": "בוצע החזר כספי על הרכישה",
   "refundedBody": "בוצע החזר כספי על רכישה של תוכנית {plan} שלך. הגישה שניתנה עם הרכישה הזו הסתיימה.",
+  "changedSubject": "התוכנית שלכם ב-Vaultara היא עכשיו {plan}",
+  "changedHeading": "התוכנית שונתה",
+  "changedBody": "שינוי המינוי הושלם. תוכנית {plan} פעילה עכשיו.",
   "deleteSubject": "אשר את מחיקת חשבון Vaultara שלך",
   "deleteHeading": "מחיקת החשבון שלך",
   "deleteBody": "קיבלנו בקשה למחוק את חשבון Vaultara שמשתמש בכתובת הדוא״ל הזו. כדי להמשיך, פתח את הקישור למטה. תוכל לבדוק מה יימחק לפני שתאשר.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "אין חשבון Vaultara לאימייל הזה",
   "noAccountHeading": "אין חשבון עם האימייל הזה",
   "noAccountBody": "מישהו ביקש לאפס את סיסמת Vaultara לכתובת האימייל הזו, אבל אין לה חשבון Vaultara. אם זה הייתם אתם, אולי נרשמתם עם כתובת אחרת, או שאפשר ליצור חשבון באפליקציה.",
-  "noAccountNotYou": "אם זה לא הייתם אתם, אפשר להתעלם מהאימייל הזה."
+  "noAccountNotYou": "אם זה לא הייתם אתם, אפשר להתעלם מהאימייל הזה.",
+  "previousPlanLabel": "התוכנית הקודמת",
+  "openAppButton": "פתיחת Vaultara"
 }

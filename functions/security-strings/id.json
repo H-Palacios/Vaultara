@@ -11,6 +11,7 @@
   "secureButton": "Amankan akun saya",
   "secureHelp": "Tombol ini membuka halaman tempat Anda dapat memilih kata sandi baru. Setelah itu, buka Vaultara, buka Profil > Keamanan dan privasi > Perangkat Anda, lalu ketuk Keluar dari semua perangkat lain.",
   "support": "Balas email ini atau hubungi {supportEmail}.",
+  "supportReply": "Ada pertanyaan? Balas saja email ini.",
   "securityFooter": "Kami mengirim email ini untuk menjaga keamanan akun Vaultara Anda. Anda tidak dapat menonaktifkan email ini.",
   "billingFooter": "Kami mengirim email ini agar Anda selalu tahu apa yang terjadi dengan langganan Vaultara Anda.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Kelola langganan",
   "receiptGoogle": "Google Play mengirimkan tanda terima resmi beserta jumlah yang ditagihkan.",
   "receiptApple": "Apple mengirimkan tanda terima resmi beserta jumlah yang ditagihkan.",
+  "sellerNote": "Vaultara dibuat oleh Vorkalis, jadi struk toko dan laporan kartu menampilkan Vorkalis sebagai penjual.",
   "startedSubject": "Selamat datang di Vaultara {plan}",
   "startedHeading": "Selamat datang di {plan}",
   "startedBody": "Terima kasih telah berlangganan. Paket {plan} Anda kini aktif.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Dana pembelian Vaultara {plan} Anda telah dikembalikan",
   "refundedHeading": "Dana pembelian dikembalikan",
   "refundedBody": "Dana untuk pembelian paket {plan} Anda telah dikembalikan. Akses yang didapat dari pembelian ini telah berakhir.",
+  "changedSubject": "Paket Vaultara Anda sekarang {plan}",
+  "changedHeading": "Paket diubah",
+  "changedBody": "Perubahan langganan Anda selesai. Paket {plan} Anda sekarang aktif.",
   "deleteSubject": "Konfirmasi penghapusan akun Vaultara Anda",
   "deleteHeading": "Hapus akun Anda",
   "deleteBody": "Kami menerima permintaan untuk menghapus akun Vaultara yang menggunakan alamat email ini. Untuk melanjutkan, buka tautan di bawah. Anda dapat meninjau apa saja yang akan dihapus sebelum mengonfirmasi.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Tidak ada akun Vaultara untuk email ini",
   "noAccountHeading": "Tidak ada akun dengan email ini",
   "noAccountBody": "Seseorang meminta reset kata sandi Vaultara untuk alamat email ini, tetapi tidak ada akun Vaultara untuknya. Jika itu Anda, mungkin Anda mendaftar dengan alamat email lain, atau Anda bisa membuat akun di aplikasi.",
-  "noAccountNotYou": "Jika itu bukan Anda, abaikan email ini."
+  "noAccountNotYou": "Jika itu bukan Anda, abaikan email ini.",
+  "previousPlanLabel": "Paket sebelumnya",
+  "openAppButton": "Buka Vaultara"
 }

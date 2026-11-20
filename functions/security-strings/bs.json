@@ -11,6 +11,7 @@
   "secureButton": "Zaštiti moj račun",
   "secureHelp": "Dugme otvara stranicu na kojoj možete odabrati novu lozinku. Nakon toga otvorite Vaultara aplikaciju, idite na Profil > Sigurnost i privatnost > Vaši uređaji i dodirnite Odjava sa svih ostalih uređaja.",
   "support": "Odgovorite na ovaj email ili kontaktirajte {supportEmail}.",
+  "supportReply": "Imate pitanja? Samo odgovorite na ovaj email.",
   "securityFooter": "Šaljemo vam ovaj email da bismo zaštitili vaš Vaultara račun. Ove emailove ne možete isključiti.",
   "billingFooter": "Šaljemo vam ovaj email kako biste uvijek znali šta se dešava s vašom Vaultara pretplatom.",
   "timeUtc": "{time} UTC",
@@ -46,6 +47,7 @@
   "manageButton": "Upravljanje pretplatom",
   "receiptGoogle": "Google Play šalje vaš službeni račun sa naplaćenim iznosom.",
   "receiptApple": "Apple šalje vaš službeni račun sa naplaćenim iznosom.",
+  "sellerNote": "Vaultaru pravi Vorkalis, pa računi trgovine i izvodi kartice prikazuju Vorkalis kao prodavca.",
   "startedSubject": "Dobro došli u Vaultara {plan}",
   "startedHeading": "Dobro došli u {plan}",
   "startedBody": "Hvala vam na pretplati. Vaš plan {plan} je sada aktivan.",
@@ -67,6 +69,9 @@
   "refundedSubject": "Novac za vašu Vaultara {plan} kupovinu je vraćen",
   "refundedHeading": "Novac za kupovinu vraćen",
   "refundedBody": "Novac za kupovinu vašeg plana {plan} je vraćen. Pristup koji ste dobili ovom kupovinom je završen.",
+  "changedSubject": "Vaš Vaultara plan je sada {plan}",
+  "changedHeading": "Plan je promijenjen",
+  "changedBody": "Promjena pretplate je završena. Vaš plan {plan} je sada aktivan.",
   "deleteSubject": "Potvrdite brisanje svog Vaultara računa",
   "deleteHeading": "Izbrišite svoj račun",
   "deleteBody": "Primili smo zahtjev za brisanje Vaultara računa koji koristi ovu email adresu. Da biste nastavili, otvorite link ispod. Prije potvrde možete pregledati šta će biti izbrisano.",
@@ -88,5 +93,7 @@
   "noAccountSubject": "Za ovu e-poštu ne postoji Vaultara račun",
   "noAccountHeading": "Nema računa s ovom e-poštom",
   "noAccountBody": "Neko je zatražio poništavanje Vaultara lozinke za ovu adresu e-pošte, ali za nju ne postoji Vaultara račun. Ako ste to bili vi, možda ste se registrovali drugom adresom e-pošte ili možete napraviti račun u aplikaciji.",
-  "noAccountNotYou": "Ako to niste bili vi, možete zanemariti ovu poruku."
+  "noAccountNotYou": "Ako to niste bili vi, možete zanemariti ovu poruku.",
+  "previousPlanLabel": "Prethodni plan",
+  "openAppButton": "Otvori Vaultaru"
 }
