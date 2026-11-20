@@ -9456,4 +9456,48 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => '같은 날의 알림은 알림 시간에 하나로 묶여 도착합니다. 내일이나 오늘 만료되거나 이미 만료된 항목은 따로 알려 드립니다.';
+
+  @override
+  String get secBillingChanged => '플랜이 변경됨';
+
+  @override
+  String get plansSellerGoogle => 'Google Play에서 Vaultara를 만드는 회사인 Vorkalis 이름으로 청구됩니다.';
+
+  @override
+  String get plansSellerApple => 'App Store에서 Vaultara를 만드는 회사인 Vorkalis 이름으로 청구됩니다.';
+
+  @override
+  String get identityConfirmReason => '본인 확인';
+
+  @override
+  String get rootedTitle => '이 휴대폰은 루팅된 것 같습니다';
+
+  @override
+  String get rootedBody => '기본 보호 기능이 꺼져 있는 것 같아 다른 앱이 Vaultara가 이 휴대폰에 저장한 내용을 읽을 수 있습니다. 계정은 계속 사용할 수 있지만, 루팅이나 탈옥하지 않은 휴대폰에서 기록이 더 안전합니다.';
+
+  @override
+  String get rootedOk => '알겠습니다';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return '암호화됨($number). 보거나 바꾸려면 이 휴대폰에서 복구 키로 암호화를 잠금 해제하세요.';
+  }
+
+  @override
+  String get photoLockNumbersToo => '기록의 문서 번호도 같은 방식으로 잠깁니다. 마지막 네 글자만 읽을 수 있게 저장됩니다.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return '지난 1시간 동안 질문을 많이 보내셨어요. $time부터 다시 질문할 수 있어요. Vaultara의 다른 기능은 평소처럼 사용할 수 있어요.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return '오늘의 \"Vaultara에 물어보기\" 한도에 도달했어요. $time에 초기화돼요. Vaultara의 다른 기능은 평소처럼 사용할 수 있어요.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return '오늘의 \"Vaultara에 물어보기\" 한도에 도달했어요. 내일 $time에 초기화돼요. Vaultara의 다른 기능은 평소처럼 사용할 수 있어요.';
+  }
 }

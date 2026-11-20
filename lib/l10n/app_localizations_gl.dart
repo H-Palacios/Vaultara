@@ -9524,4 +9524,48 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Os recordatorios do mesmo día chegan como unha soa notificación á túa hora de recordatorio. Os que caducan mañá, hoxe ou xa caducaron seguen chegando por separado.';
+
+  @override
+  String get secBillingChanged => 'Plan cambiado';
+
+  @override
+  String get plansSellerGoogle => 'Cóbrao Google Play como Vorkalis, a empresa que fai Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Cóbrao a App Store como Vorkalis, a empresa que fai Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Confirma que es ti';
+
+  @override
+  String get rootedTitle => 'Parece que este teléfono ten root';
+
+  @override
+  String get rootedBody => 'As súas proteccións habituais parecen desactivadas, así que outras apps poderían ler o que Vaultara garda neste teléfono. A túa conta segue funcionando, pero os teus rexistros están máis seguros nun teléfono sen root nin jailbreak.';
+
+  @override
+  String get rootedOk => 'Entendo';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Cifrado ($number). Desbloquea o cifrado neste teléfono coa túa clave de recuperación para velo ou cambialo.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Os números de documento dos teus rexistros bloquéanse igual: só se gardan lexibles os catro últimos caracteres.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Enviaches moitas preguntas na última hora. Podes volver preguntar ás $time. Todo o demais en Vaultara funciona con normalidade.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Chegaches ao límite de hoxe de \"Pregunta a Vaultara\". Renóvase ás $time. Todo o demais en Vaultara funciona con normalidade.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Chegaches ao límite de hoxe de \"Pregunta a Vaultara\". Renóvase mañá ás $time. Todo o demais en Vaultara funciona con normalidade.';
+  }
 }

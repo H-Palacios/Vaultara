@@ -9519,4 +9519,48 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'ერთი დღის შეხსენებები ერთ შეტყობინებად მოდის შეხსენების დროს. ხვალ, დღეს ვადაგასული ან უკვე ვადაგასული ჩანაწერები კვლავ ცალკე მოდის.';
+
+  @override
+  String get secBillingChanged => 'გეგმა შეიცვალა';
+
+  @override
+  String get plansSellerGoogle => 'Google Play-ში იხდით Vorkalis-ის სახელით — კომპანია, რომელიც Vaultara-ს ქმნის.';
+
+  @override
+  String get plansSellerApple => 'App Store-ში იხდით Vorkalis-ის სახელით — კომპანია, რომელიც Vaultara-ს ქმნის.';
+
+  @override
+  String get identityConfirmReason => 'დაადასტურეთ, რომ თქვენ ხართ';
+
+  @override
+  String get rootedTitle => 'ეს ტელეფონი, როგორც ჩანს, root-ირებულია';
+
+  @override
+  String get rootedBody => 'მისი ჩვეულებრივი დაცვა, როგორც ჩანს, გამორთულია, ამიტომ სხვა აპებს შეუძლიათ წაიკითხონ, რასაც Vaultara ამ ტელეფონზე ინახავს. თქვენი ანგარიში კვლავ მუშაობს, მაგრამ ჩანაწერები უფრო დაცულია ტელეფონზე, რომელიც არ არის root-ირებული ან jailbreak-ირებული.';
+
+  @override
+  String get rootedOk => 'გასაგებია';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'დაშიფრულია ($number). სანახავად ან შესაცვლელად ამ ტელეფონზე განბლოკეთ დაშიფვრა აღდგენის გასაღებით.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'თქვენს ჩანაწერებში დოკუმენტების ნომრები ასევე იბლოკება: წასაკითხად ინახება მხოლოდ ბოლო ოთხი სიმბოლო.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'ბოლო საათში ბევრი კითხვა გაგზავნეთ. ხელახლა კითხვა შეგიძლიათ $time-ზე. Vaultara-ში დანარჩენი ყველაფერი ჩვეულებრივ მუშაობს.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'მიაღწიეთ \"ჰკითხეთ Vaultara-ს\"-ს დღევანდელ ლიმიტს. ის განახლდება $time-ზე. Vaultara-ში დანარჩენი ყველაფერი ჩვეულებრივ მუშაობს.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'მიაღწიეთ \"ჰკითხეთ Vaultara-ს\"-ს დღევანდელ ლიმიტს. ის განახლდება ხვალ $time-ზე. Vaultara-ში დანარჩენი ყველაფერი ჩვეულებრივ მუშაობს.';
+  }
 }

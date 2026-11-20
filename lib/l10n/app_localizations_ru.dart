@@ -9700,4 +9700,48 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Напоминания на один день приходят одним уведомлением в ваше время напоминаний. Записи, истекающие завтра, сегодня или уже истёкшие, по-прежнему приходят отдельно.';
+
+  @override
+  String get secBillingChanged => 'Тариф изменён';
+
+  @override
+  String get plansSellerGoogle => 'Списание через Google Play от имени Vorkalis — компании, которая создаёт Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Списание через App Store от имени Vorkalis — компании, которая создаёт Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Подтвердите, что это вы';
+
+  @override
+  String get rootedTitle => 'Похоже, на этом телефоне есть root';
+
+  @override
+  String get rootedBody => 'Похоже, его обычная защита отключена, поэтому другие приложения могут читать то, что Vaultara хранит на этом телефоне. Аккаунт продолжает работать, но записи безопаснее на телефоне без root и джейлбрейка.';
+
+  @override
+  String get rootedOk => 'Понятно';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Зашифровано ($number). Чтобы увидеть или изменить, разблокируйте шифрование на этом телефоне ключом восстановления.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Номера документов в ваших записях блокируются так же: в читаемом виде хранятся только последние четыре символа.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'За последний час вы отправили много вопросов. Снова спросить можно в $time. Всё остальное в Vaultara работает как обычно.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Вы достигли сегодняшнего лимита «Спросите Vaultara». Он обновится в $time. Всё остальное в Vaultara работает как обычно.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Вы достигли сегодняшнего лимита «Спросите Vaultara». Он обновится завтра в $time. Всё остальное в Vaultara работает как обычно.';
+  }
 }

@@ -9456,6 +9456,50 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => '同一天的提醒会在你的提醒时间合并为一条通知。明天或今天到期、或已过期的记录仍会单独提醒。';
+
+  @override
+  String get secBillingChanged => '套餐已更改';
+
+  @override
+  String get plansSellerGoogle => '由 Google Play 以 Vorkalis（Vaultara 的开发公司）的名义收费。';
+
+  @override
+  String get plansSellerApple => '由 App Store 以 Vorkalis（Vaultara 的开发公司）的名义收费。';
+
+  @override
+  String get identityConfirmReason => '确认是你本人';
+
+  @override
+  String get rootedTitle => '这部手机似乎已被 root';
+
+  @override
+  String get rootedBody => '它的常规保护似乎已关闭，因此其他应用可能可以读取 Vaultara 保存在这部手机上的内容。你的账户仍可使用，但在未 root 或越狱的手机上，你的记录更安全。';
+
+  @override
+  String get rootedOk => '我知道了';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return '已加密（$number）。如需查看或修改，请在这部手机上用恢复密钥解锁加密。';
+  }
+
+  @override
+  String get photoLockNumbersToo => '你记录中的证件号码也会以同样方式锁定：只有最后四个字符以可读形式保存。';
+
+  @override
+  String assistantLimitHour(String time) {
+    return '你在过去一小时内发送了很多问题。你可以在 $time 再次提问。Vaultara 的其他功能照常可用。';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return '你已达到今天的 “询问 Vaultara” 上限。将在 $time 重置。Vaultara 的其他功能照常可用。';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return '你已达到今天的 “询问 Vaultara” 上限。将在明天 $time 重置。Vaultara 的其他功能照常可用。';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -18898,6 +18942,50 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get digestGroupedSubtitle => '同一天的提醒会在你的提醒时间合并为一条通知。明天或今天到期、或已过期的记录仍会单独提醒。';
+
+  @override
+  String get secBillingChanged => '套餐已更改';
+
+  @override
+  String get plansSellerGoogle => '由 Google Play 以 Vorkalis（Vaultara 的开发公司）的名义收费。';
+
+  @override
+  String get plansSellerApple => '由 App Store 以 Vorkalis（Vaultara 的开发公司）的名义收费。';
+
+  @override
+  String get identityConfirmReason => '确认是你本人';
+
+  @override
+  String get rootedTitle => '这部手机似乎已被 root';
+
+  @override
+  String get rootedBody => '它的常规保护似乎已关闭，因此其他应用可能可以读取 Vaultara 保存在这部手机上的内容。你的账户仍可使用，但在未 root 或越狱的手机上，你的记录更安全。';
+
+  @override
+  String get rootedOk => '我知道了';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return '已加密（$number）。如需查看或修改，请在这部手机上用恢复密钥解锁加密。';
+  }
+
+  @override
+  String get photoLockNumbersToo => '你记录中的证件号码也会以同样方式锁定：只有最后四个字符以可读形式保存。';
+
+  @override
+  String assistantLimitHour(String time) {
+    return '你在过去一小时内发送了很多问题。你可以在 $time 再次提问。Vaultara 的其他功能照常可用。';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return '你已达到今天的 “询问 Vaultara” 上限。将在 $time 重置。Vaultara 的其他功能照常可用。';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return '你已达到今天的 “询问 Vaultara” 上限。将在明天 $time 重置。Vaultara 的其他功能照常可用。';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -28340,4 +28428,48 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get digestGroupedSubtitle => '同一天的提醒會在你的提醒時間合併為一則通知。明天或今天到期、或已過期的紀錄仍會單獨提醒。';
+
+  @override
+  String get secBillingChanged => '方案已變更';
+
+  @override
+  String get plansSellerGoogle => '由 Google Play 以 Vorkalis（Vaultara 的開發公司）的名義收費。';
+
+  @override
+  String get plansSellerApple => '由 App Store 以 Vorkalis（Vaultara 的開發公司）的名義收費。';
+
+  @override
+  String get identityConfirmReason => '確認是你本人';
+
+  @override
+  String get rootedTitle => '這支手機似乎已被 root';
+
+  @override
+  String get rootedBody => '它的一般保護似乎已關閉，因此其他 App 可能可以讀取 Vaultara 存放在這支手機上的內容。你的帳號仍可使用，但在未 root 或越獄的手機上，你的記錄更安全。';
+
+  @override
+  String get rootedOk => '我知道了';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return '已加密（$number）。如需查看或修改，請在這支手機上用復原金鑰解鎖加密。';
+  }
+
+  @override
+  String get photoLockNumbersToo => '你記錄中的證件號碼也會以同樣方式鎖定：只有最後四個字元以可讀形式儲存。';
+
+  @override
+  String assistantLimitHour(String time) {
+    return '你在過去一小時內傳送了很多問題。你可以在 $time 再次提問。Vaultara 的其他功能照常可用。';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return '你已達到今天的 「詢問 Vaultara」 上限。將在 $time 重設。Vaultara 的其他功能照常可用。';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return '你已達到今天的 「詢問 Vaultara」 上限。將在明天 $time 重設。Vaultara 的其他功能照常可用。';
+  }
 }

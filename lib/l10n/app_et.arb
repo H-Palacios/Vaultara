@@ -4183,5 +4183,77 @@
   "digestGroupedSubtitle": "Sama päeva meeldetuletused tulevad ühe teatena sinu meeldetuletuse ajal. Homme või täna aeguvad ja aegunud kirjed saavad ikka oma teate.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Pakett muudetud",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Arveldab Google Play nimega Vorkalis – ettevõte, mis teeb Vaultarat.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Arveldab App Store nimega Vorkalis – ettevõte, mis teeb Vaultarat.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Kinnita, et see oled sina",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "See telefon paistab olevat juurdunud (rooted)",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Selle tavapärased kaitsed näivad olevat välja lülitatud, nii et teised rakendused võivad lugeda, mida Vaultara selles telefonis hoiab. Sinu konto töötab edasi, kuid kirjed on turvalisemad telefonis, mida pole rootitud ega jailbreak'itud.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Saan aru",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Krüptitud ({number}). Selle nägemiseks või muutmiseks ava krüptimine selles telefonis taastevõtmega.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Sinu kirjete dokumendinumbrid lukustatakse samamoodi: loetavana salvestatakse ainult viimased neli märki.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Saatsid viimase tunni jooksul palju küsimusi. Saad uuesti küsida kell {time}. Kõik muu Vaultaras töötab tavapäraselt.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Jõudsid tänase „Küsi Vaultaralt“ piirini. See uueneb kell {time}. Kõik muu Vaultaras töötab tavapäraselt.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Jõudsid tänase „Küsi Vaultaralt“ piirini. See uueneb homme kell {time}. Kõik muu Vaultaras töötab tavapäraselt.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

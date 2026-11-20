@@ -9685,4 +9685,48 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Opomniki za isti dan pridejo kot eno obvestilo ob času opomnikov. Zapisi, ki potečejo jutri, danes ali so že potekli, še vedno dobijo svojega.';
+
+  @override
+  String get secBillingChanged => 'Paket spremenjen';
+
+  @override
+  String get plansSellerGoogle => 'Zaračuna Google Play kot Vorkalis, podjetje, ki izdeluje Vaultaro.';
+
+  @override
+  String get plansSellerApple => 'Zaračuna App Store kot Vorkalis, podjetje, ki izdeluje Vaultaro.';
+
+  @override
+  String get identityConfirmReason => 'Potrdite, da ste to vi';
+
+  @override
+  String get rootedTitle => 'Ta telefon je videti rootan';
+
+  @override
+  String get rootedBody => 'Njegove običajne zaščite so videti izklopljene, zato bi druge aplikacije morda lahko brale, kar Vaultara hrani v tem telefonu. Vaš račun še vedno deluje, vendar so vaši zapisi varnejši v telefonu brez roota ali jailbreaka.';
+
+  @override
+  String get rootedOk => 'Razumem';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Šifrirano ($number). Če ga želite videti ali spremeniti, odklenite šifriranje v tem telefonu s ključem za obnovitev.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Številke dokumentov v vaših zapisih so zaklenjene enako: berljivi ostanejo samo zadnji štirje znaki.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'V zadnji uri ste poslali veliko vprašanj. Znova lahko vprašate ob $time. Vse drugo v Vaultari deluje kot običajno.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Dosegli ste današnjo omejitev za »Vprašaj Vaultaro«. Ponastavi se ob $time. Vse drugo v Vaultari deluje kot običajno.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Dosegli ste današnjo omejitev za »Vprašaj Vaultaro«. Ponastavi se jutri ob $time. Vse drugo v Vaultari deluje kot običajno.';
+  }
 }

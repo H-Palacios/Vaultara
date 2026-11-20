@@ -9524,4 +9524,48 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Οι υπενθυμίσεις της ίδιας μέρας έρχονται ως μία ειδοποίηση στην ώρα υπενθύμισης. Όσες λήγουν αύριο, σήμερα ή έχουν λήξει έρχονται ξεχωριστά.';
+
+  @override
+  String get secBillingChanged => 'Το πρόγραμμα άλλαξε';
+
+  @override
+  String get plansSellerGoogle => 'Χρεώνεται από το Google Play ως Vorkalis, η εταιρεία που φτιάχνει το Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Χρεώνεται από το App Store ως Vorkalis, η εταιρεία που φτιάχνει το Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Επιβεβαιώστε ότι είστε εσείς';
+
+  @override
+  String get rootedTitle => 'Αυτό το τηλέφωνο φαίνεται να έχει root';
+
+  @override
+  String get rootedBody => 'Οι συνήθεις προστασίες του φαίνονται απενεργοποιημένες, οπότε άλλες εφαρμογές ίσως μπορούν να διαβάσουν όσα κρατά το Vaultara σε αυτό το τηλέφωνο. Ο λογαριασμός σας λειτουργεί κανονικά, αλλά οι εγγραφές σας είναι πιο ασφαλείς σε τηλέφωνο χωρίς root ή jailbreak.';
+
+  @override
+  String get rootedOk => 'Κατάλαβα';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Κρυπτογραφημένο ($number). Ξεκλειδώστε την κρυπτογράφηση σε αυτό το τηλέφωνο με το κλειδί ανάκτησης για να το δείτε ή να το αλλάξετε.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Οι αριθμοί εγγράφων στις εγγραφές σας κλειδώνονται με τον ίδιο τρόπο: μόνο οι τέσσερις τελευταίοι χαρακτήρες αποθηκεύονται αναγνώσιμοι.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Στείλατε πολλές ερωτήσεις την τελευταία ώρα. Μπορείτε να ρωτήσετε ξανά στις $time. Όλα τα άλλα στο Vaultara λειτουργούν κανονικά.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Φτάσατε το σημερινό όριο του \"Ρωτήστε το Vaultara\". Ανανεώνεται στις $time. Όλα τα άλλα στο Vaultara λειτουργούν κανονικά.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Φτάσατε το σημερινό όριο του \"Ρωτήστε το Vaultara\". Ανανεώνεται αύριο στις $time. Όλα τα άλλα στο Vaultara λειτουργούν κανονικά.';
+  }
 }

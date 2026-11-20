@@ -9456,4 +9456,48 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Peringatan pada hari yang sama datang sebagai satu pemberitahuan pada masa peringatan anda. Rekod yang tamat esok, hari ini atau sudah tamat masih datang sendiri.';
+
+  @override
+  String get secBillingChanged => 'Pelan ditukar';
+
+  @override
+  String get plansSellerGoogle => 'Dicaj oleh Google Play sebagai Vorkalis, syarikat yang membuat Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Dicaj oleh App Store sebagai Vorkalis, syarikat yang membuat Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Sahkan bahawa ini anda';
+
+  @override
+  String get rootedTitle => 'Telefon ini nampaknya telah di-root';
+
+  @override
+  String get rootedBody => 'Perlindungan biasanya nampak dimatikan, jadi aplikasi lain mungkin boleh membaca apa yang Vaultara simpan pada telefon ini. Akaun anda masih berfungsi, tetapi rekod anda lebih selamat pada telefon yang tidak di-root atau di-jailbreak.';
+
+  @override
+  String get rootedOk => 'Saya faham';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Disulitkan ($number). Buka kunci penyulitan pada telefon ini dengan kunci pemulihan anda untuk melihat atau menukarnya.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Nombor dokumen dalam rekod anda dikunci dengan cara yang sama: hanya empat aksara terakhir disimpan boleh dibaca.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Anda telah menghantar banyak soalan dalam sejam yang lalu. Anda boleh bertanya lagi pada $time. Semua yang lain dalam Vaultara berfungsi seperti biasa.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Anda telah mencapai had \"Tanya Vaultara\" hari ini. Ia ditetapkan semula pada $time. Semua yang lain dalam Vaultara berfungsi seperti biasa.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Anda telah mencapai had \"Tanya Vaultara\" hari ini. Ia ditetapkan semula esok pada $time. Semua yang lain dalam Vaultara berfungsi seperti biasa.';
+  }
 }

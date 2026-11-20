@@ -9519,4 +9519,48 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'ఒకే రోజు రిమైండర్‌లు మీ రిమైండర్ సమయంలో ఒకే నోటిఫికేషన్‌గా వస్తాయి. రేపు, ఈరోజు గడువు ముగిసే లేదా ముగిసిన రికార్డులకు ఇప్పటికీ వేరుగా వస్తుంది.';
+
+  @override
+  String get secBillingChanged => 'ప్లాన్ మారింది';
+
+  @override
+  String get plansSellerGoogle => 'Google Playలో Vaultaraను తయారు చేసే కంపెనీ Vorkalis పేరుతో బిల్ అవుతుంది.';
+
+  @override
+  String get plansSellerApple => 'App Storeలో Vaultaraను తయారు చేసే కంపెనీ Vorkalis పేరుతో బిల్ అవుతుంది.';
+
+  @override
+  String get identityConfirmReason => 'ఇది మీరేనని నిర్ధారించండి';
+
+  @override
+  String get rootedTitle => 'ఈ ఫోన్ రూట్ చేసినట్లు కనిపిస్తోంది';
+
+  @override
+  String get rootedBody => 'దీని సాధారణ రక్షణలు ఆఫ్ అయినట్లు కనిపిస్తోంది, కాబట్టి ఈ ఫోన్‌లో Vaultara ఉంచే వాటిని ఇతర యాప్‌లు చదవగలవు. మీ ఖాతా పని చేస్తూనే ఉంటుంది, కానీ రూట్ లేదా జైల్‌బ్రేక్ చేయని ఫోన్‌లో మీ రికార్డులు మరింత సురక్షితం.';
+
+  @override
+  String get rootedOk => 'నాకు అర్థమైంది';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'ఎన్‌క్రిప్ట్ చేయబడింది ($number). చూడటానికి లేదా మార్చడానికి ఈ ఫోన్‌లో మీ రికవరీ కీతో ఎన్‌క్రిప్షన్‌ను అన్‌లాక్ చేయండి.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'మీ రికార్డుల్లోని డాక్యుమెంట్ నంబర్లు కూడా ఇలాగే లాక్ అవుతాయి: చివరి నాలుగు అక్షరాలు మాత్రమే చదవగలిగేలా సేవ్ అవుతాయి.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'గత గంటలో మీరు చాలా ప్రశ్నలు పంపారు. $timeకు మళ్లీ అడగవచ్చు. Vaultaraలో మిగతావన్నీ ఎప్పటిలాగే పని చేస్తాయి.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'మీరు ఈ రోజు \"Vaultaraను అడగండి\" పరిమితిని చేరుకున్నారు. ఇది $timeకు రీసెట్ అవుతుంది. Vaultaraలో మిగతావన్నీ ఎప్పటిలాగే పని చేస్తాయి.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'మీరు ఈ రోజు \"Vaultaraను అడగండి\" పరిమితిని చేరుకున్నారు. ఇది రేపు $timeకు రీసెట్ అవుతుంది. Vaultaraలో మిగతావన్నీ ఎప్పటిలాగే పని చేస్తాయి.';
+  }
 }

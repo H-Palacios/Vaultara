@@ -9519,4 +9519,48 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'د یوې ورځې یادونې ستاسو د یادونې په وخت کې د یوه خبرتیا په توګه راځي. هغه ریکارډونه چې سبا، نن پای ته رسېږي یا رسېدلي، لا هم جلا راځي.';
+
+  @override
+  String get secBillingChanged => 'پلان بدل شو';
+
+  @override
+  String get plansSellerGoogle => 'په Google Play کې د Vorkalis په نوم بیل کېږي، هغه شرکت چې Vaultara جوړوي.';
+
+  @override
+  String get plansSellerApple => 'په App Store کې د Vorkalis په نوم بیل کېږي، هغه شرکت چې Vaultara جوړوي.';
+
+  @override
+  String get identityConfirmReason => 'تایید کړئ چې تاسو یاست';
+
+  @override
+  String get rootedTitle => 'داسې ښکاري چې دا تلیفون روټ شوی دی';
+
+  @override
+  String get rootedBody => 'داسې ښکاري چې عادي ساتنې یې بندې دي، نو نور اپونه ښايي هغه څه ولولي چې Vaultara پر دې تلیفون ساتي. ستاسو حساب لا هم کار کوي، خو ستاسو ریکارډونه په هغه تلیفون کې خوندي دي چې روټ یا جیلبریک شوی نه وي.';
+
+  @override
+  String get rootedOk => 'پوه شوم';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'کوډ شوی ($number). د لیدو یا بدلولو لپاره پر دې تلیفون د خپلې بیا راګرځولو کیلي سره کوډ خلاص کړئ.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'ستاسو په ریکارډونو کې د اسنادو شمېرې هم همداسې قفل کېږي: یوازې وروستي څلور توري د لوستلو وړ ساتل کېږي.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'تاسو په تېر یو ساعت کې ډېرې پوښتنې لېږلې. تاسو کولی شئ په $time بیا وپوښتئ. په Vaultara کې نور هر څه د تل په څېر کار کوي.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'تاسو د نن ورځې «له Vaultara وپوښتئ» حد ته رسېدلي یاست. دا په $time بیا پیلېږي. په Vaultara کې نور هر څه د تل په څېر کار کوي.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'تاسو د نن ورځې «له Vaultara وپوښتئ» حد ته رسېدلي یاست. دا سبا په $time بیا پیلېږي. په Vaultara کې نور هر څه د تل په څېر کار کوي.';
+  }
 }

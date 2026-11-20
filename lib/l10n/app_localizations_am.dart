@@ -9518,4 +9518,48 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'በአንድ ቀን የሚወድቁ ማስታወሻዎች በማስታወሻ ሰዓትዎ እንደ አንድ ማሳወቂያ ይመጣሉ። ነገ ወይም ዛሬ የሚያበቁ ወይም ያበቁ መዝገቦች አሁንም የራሳቸውን ያገኛሉ።';
+
+  @override
+  String get secBillingChanged => 'ዕቅድ ተቀይሯል';
+
+  @override
+  String get plansSellerGoogle => 'በGoogle Play እንደ Vorkalis ይከፈላል፣ Vaultaraን የሚሰራው ኩባንያ።';
+
+  @override
+  String get plansSellerApple => 'በApp Store እንደ Vorkalis ይከፈላል፣ Vaultaraን የሚሰራው ኩባንያ።';
+
+  @override
+  String get identityConfirmReason => 'እርስዎ መሆንዎን ያረጋግጡ';
+
+  @override
+  String get rootedTitle => 'ይህ ስልክ ሩት የተደረገ ይመስላል';
+
+  @override
+  String get rootedBody => 'መደበኛ ጥበቃዎቹ የጠፉ ይመስላሉ፣ ስለዚህ ሌሎች መተግበሪያዎች Vaultara በዚህ ስልክ ላይ የሚያስቀምጠውን ሊያነቡ ይችላሉ። መለያዎ አሁንም ይሰራል፣ ነገር ግን መዝገቦችዎ ሩት ወይም ጄልብሬክ ባልተደረገ ስልክ ላይ የበለጠ ደህንነታቸው የተጠበቀ ነው።';
+
+  @override
+  String get rootedOk => 'ገብቶኛል';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'የተመሰጠረ ($number)። ለማየት ወይም ለመቀየር በዚህ ስልክ ላይ በመልሶ ማግኛ ቁልፍዎ ምስጠራን ይክፈቱ።';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'በመዝገቦችዎ ውስጥ ያሉ የሰነድ ቁጥሮች በተመሳሳይ መንገድ ይቆለፋሉ፦ የመጨረሻዎቹ አራት ቁምፊዎች ብቻ በሚነበብ መልኩ ይቀመጣሉ።';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'ባለፈው ሰዓት ብዙ ጥያቄዎችን ልከዋል። በ$time እንደገና መጠየቅ ይችላሉ። በVaultara ውስጥ ያለው ሌላው ሁሉ እንደተለመደው ይሰራል።';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'የዛሬውን የ\"Vaultaraን ይጠይቁ\" ገደብ ደርሰዋል። በ$time እንደገና ይጀምራል። በVaultara ውስጥ ያለው ሌላው ሁሉ እንደተለመደው ይሰራል።';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'የዛሬውን የ\"Vaultaraን ይጠይቁ\" ገደብ ደርሰዋል። ነገ በ$time እንደገና ይጀምራል። በVaultara ውስጥ ያለው ሌላው ሁሉ እንደተለመደው ይሰራል።';
+  }
 }

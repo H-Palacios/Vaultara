@@ -9524,4 +9524,48 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Herinneringe op dieselfde dag kom as een kennisgewing op jou herinneringstyd. Rekords wat môre of vandag verval, of reeds verval het, kry steeds hul eie.';
+
+  @override
+  String get secBillingChanged => 'Plan verander';
+
+  @override
+  String get plansSellerGoogle => 'Gehef deur Google Play as Vorkalis, die maatskappy wat Vaultara maak.';
+
+  @override
+  String get plansSellerApple => 'Gehef deur die App Store as Vorkalis, die maatskappy wat Vaultara maak.';
+
+  @override
+  String get identityConfirmReason => 'Bevestig dis jy';
+
+  @override
+  String get rootedTitle => 'Hierdie foon lyk gewortel';
+
+  @override
+  String get rootedBody => 'Sy normale beskerming lyk afgeskakel, so ander toepassings kan dalk lees wat Vaultara op hierdie foon hou. Jou rekening werk steeds, maar jou rekords is veiliger op \'n foon wat nie gewortel of gejailbreak is nie.';
+
+  @override
+  String get rootedOk => 'Ek verstaan';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Geënkripteer ($number). Ontsluit enkripsie op hierdie foon met jou herstelsleutel om dit te sien of te verander.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Dokumentnommers in jou rekords word op dieselfde manier gesluit: net die laaste vier karakters word leesbaar gestoor.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Jy het die afgelope uur baie vrae gestuur. Jy kan om $time weer vra. Alles anders in Vaultara werk soos gewoonlik.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Jy het vandag se limiet vir \"Vra Vaultara\" bereik. Dit begin weer om $time. Alles anders in Vaultara werk soos gewoonlik.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Jy het vandag se limiet vir \"Vra Vaultara\" bereik. Dit begin môre om $time weer. Alles anders in Vaultara werk soos gewoonlik.';
+  }
 }

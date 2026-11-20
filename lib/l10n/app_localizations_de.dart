@@ -9524,4 +9524,48 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Erinnerungen am selben Tag kommen als eine Mitteilung zu deiner Erinnerungszeit. Einträge, die morgen oder heute ablaufen oder abgelaufen sind, kommen weiter einzeln.';
+
+  @override
+  String get secBillingChanged => 'Abo geändert';
+
+  @override
+  String get plansSellerGoogle => 'Abgerechnet über Google Play als Vorkalis, das Unternehmen hinter Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Abgerechnet über den App Store als Vorkalis, das Unternehmen hinter Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Bestätige, dass du es bist';
+
+  @override
+  String get rootedTitle => 'Dieses Handy scheint gerootet zu sein';
+
+  @override
+  String get rootedBody => 'Seine normalen Schutzfunktionen scheinen ausgeschaltet, daher könnten andere Apps lesen, was Vaultara auf diesem Handy speichert. Dein Konto funktioniert weiter, aber deine Einträge sind auf einem Handy ohne Root oder Jailbreak sicherer.';
+
+  @override
+  String get rootedOk => 'Verstanden';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Verschlüsselt ($number). Entsperre die Verschlüsselung auf diesem Handy mit deinem Wiederherstellungsschlüssel, um sie zu sehen oder zu ändern.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Dokumentnummern in deinen Einträgen werden genauso gesperrt: Nur die letzten vier Zeichen bleiben lesbar gespeichert.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Du hast in der letzten Stunde viele Fragen gestellt. Ab $time kannst du wieder fragen. Alles andere in Vaultara funktioniert wie gewohnt.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Du hast das heutige Limit für „Vaultara fragen“ erreicht. Es setzt sich um $time zurück. Alles andere in Vaultara funktioniert wie gewohnt.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Du hast das heutige Limit für „Vaultara fragen“ erreicht. Es setzt sich morgen um $time zurück. Alles andere in Vaultara funktioniert wie gewohnt.';
+  }
 }

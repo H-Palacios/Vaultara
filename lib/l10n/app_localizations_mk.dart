@@ -9518,4 +9518,48 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Потсетниците за ист ден доаѓаат како едно известување во времето за потсетници. Записите што истекуваат утре, денес или истекле добиваат свое.';
+
+  @override
+  String get secBillingChanged => 'Планот е сменет';
+
+  @override
+  String get plansSellerGoogle => 'Наплатува Google Play како Vorkalis, компанијата што ја прави Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Наплатува App Store како Vorkalis, компанијата што ја прави Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Потврдете дека сте вие';
+
+  @override
+  String get rootedTitle => 'Овој телефон изгледа руутиран';
+
+  @override
+  String get rootedBody => 'Неговите вообичаени заштити изгледаат исклучени, па други апликации можеби можат да читаат што Vaultara чува на овој телефон. Вашата сметка продолжува да работи, но записите се побезбедни на телефон што не е руутиран или џејлбрејкнат.';
+
+  @override
+  String get rootedOk => 'Разбирам';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Шифрирано ($number). Отклучете го шифрирањето на овој телефон со клучот за обновување за да го видите или промените.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Броевите на документи во вашите записи се заклучуваат на ист начин: читливи се зачувуваат само последните четири знаци.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Испративте многу прашања во последниот час. Може повторно да прашате во $time. Сè друго во Vaultara работи како и обично.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Го достигнавте денешниот лимит за „Прашајте го Vaultara“. Се обновува во $time. Сè друго во Vaultara работи како и обично.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Го достигнавте денешниот лимит за „Прашајте го Vaultara“. Се обновува утре во $time. Сè друго во Vaultara работи како и обично.';
+  }
 }

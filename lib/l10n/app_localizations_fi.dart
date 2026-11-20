@@ -9523,4 +9523,48 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Saman päivän muistutukset tulevat yhtenä ilmoituksena muistutusaikaasi. Huomenna tai tänään vanhenevat ja vanhentuneet saavat silti omansa.';
+
+  @override
+  String get secBillingChanged => 'Tilaus vaihdettu';
+
+  @override
+  String get plansSellerGoogle => 'Laskuttaja Google Playssa on Vorkalis, Vaultaran tekevä yritys.';
+
+  @override
+  String get plansSellerApple => 'Laskuttaja App Storessa on Vorkalis, Vaultaran tekevä yritys.';
+
+  @override
+  String get identityConfirmReason => 'Vahvista, että se olet sinä';
+
+  @override
+  String get rootedTitle => 'Tämä puhelin näyttää olevan roottattu';
+
+  @override
+  String get rootedBody => 'Sen tavalliset suojaukset näyttävät olevan pois päältä, joten muut sovellukset voivat ehkä lukea, mitä Vaultara tallentaa tähän puhelimeen. Tilisi toimii edelleen, mutta tietueesi ovat turvallisemmassa puhelimessa, jota ei ole roottattu tai jailbreakattu.';
+
+  @override
+  String get rootedOk => 'Ymmärrän';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Salattu ($number). Avaa salaus tässä puhelimessa palautusavaimella nähdäksesi tai muuttaaksesi sen.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Tietueidesi asiakirjanumerot lukitaan samalla tavalla: vain neljä viimeistä merkkiä tallennetaan luettavina.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Lähetit viime tunnin aikana paljon kysymyksiä. Voit kysyä uudelleen klo $time. Kaikki muu Vaultarassa toimii tavalliseen tapaan.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Tämän päivän palvelun ”Kysy Vaultaralta” raja on täynnä. Se nollautuu klo $time. Kaikki muu Vaultarassa toimii tavalliseen tapaan.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Tämän päivän palvelun ”Kysy Vaultaralta” raja on täynnä. Se nollautuu huomenna klo $time. Kaikki muu Vaultarassa toimii tavalliseen tapaan.';
+  }
 }

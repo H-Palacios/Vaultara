@@ -4036,5 +4036,77 @@
   "digestGroupedSubtitle": "Az egy napra eső emlékeztetők egy értesítésként érkeznek az emlékeztetési időben. A holnap, ma lejáró vagy lejárt tételek továbbra is külön jönnek.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Csomag módosítva",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "A Google Play Vorkalis néven számláz, ez a Vaultarát készítő cég.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Az App Store Vorkalis néven számláz, ez a Vaultarát készítő cég.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Erősítsd meg, hogy te vagy",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Ez a telefon rootoltnak tűnik",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "A szokásos védelmei kikapcsoltnak tűnnek, így más alkalmazások olvashatják, amit a Vaultara ezen a telefonon tárol. A fiókod továbbra is működik, de a bejegyzéseid biztonságosabbak egy nem rootolt vagy jailbreakelt telefonon.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Értem",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Titkosítva ({number}). A megtekintéshez vagy módosításhoz oldd fel a titkosítást ezen a telefonon a helyreállítási kulccsal.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "A bejegyzéseidben lévő okmányszámok ugyanígy zárolódnak: csak az utolsó négy karakter marad olvashatóan tárolva.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Az elmúlt órában sok kérdést küldtél. {time}-kor kérdezhetsz újra. A Vaultara minden más része a megszokott módon működik.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Elérted a „Kérdezze a Vaultarát” mai korlátját. {time}-kor újraindul. A Vaultara minden más része a megszokott módon működik.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Elérted a „Kérdezze a Vaultarát” mai korlátját. Holnap {time}-kor újraindul. A Vaultara minden más része a megszokott módon működik.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

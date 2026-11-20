@@ -9519,4 +9519,48 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'ஒரே நாளின் நினைவூட்டல்கள் உங்கள் நினைவூட்டல் நேரத்தில் ஒரே அறிவிப்பாக வரும். நாளை, இன்று காலாவதியாகும் அல்லது காலாவதியானவை இன்னும் தனியாக வரும்.';
+
+  @override
+  String get secBillingChanged => 'திட்டம் மாற்றப்பட்டது';
+
+  @override
+  String get plansSellerGoogle => 'Google Play-இல் Vaultara-வை உருவாக்கும் நிறுவனமான Vorkalis பெயரில் கட்டணம் வசூலிக்கப்படும்.';
+
+  @override
+  String get plansSellerApple => 'App Store-இல் Vaultara-வை உருவாக்கும் நிறுவனமான Vorkalis பெயரில் கட்டணம் வசூலிக்கப்படும்.';
+
+  @override
+  String get identityConfirmReason => 'இது நீங்கள்தான் என உறுதிப்படுத்துங்கள்';
+
+  @override
+  String get rootedTitle => 'இந்த ஃபோன் ரூட் செய்யப்பட்டதாகத் தெரிகிறது';
+
+  @override
+  String get rootedBody => 'அதன் வழக்கமான பாதுகாப்புகள் அணைக்கப்பட்டதாகத் தெரிகிறது, எனவே இந்த ஃபோனில் Vaultara வைத்திருப்பதை மற்ற ஆப்ஸ் படிக்கக்கூடும். உங்கள் கணக்கு தொடர்ந்து வேலை செய்யும், ஆனால் ரூட் அல்லது ஜெயில்பிரேக் செய்யாத ஃபோனில் உங்கள் பதிவுகள் அதிக பாதுகாப்பானவை.';
+
+  @override
+  String get rootedOk => 'புரிந்தது';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'குறியாக்கப்பட்டது ($number). பார்க்க அல்லது மாற்ற, இந்த ஃபோனில் உங்கள் மீட்பு விசையால் குறியாக்கத்தைத் திறக்கவும்.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'உங்கள் பதிவுகளில் உள்ள ஆவண எண்களும் இதே முறையில் பூட்டப்படும்: கடைசி நான்கு எழுத்துகள் மட்டுமே படிக்கும்படி சேமிக்கப்படும்.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'கடந்த ஒரு மணிநேரத்தில் நிறைய கேள்விகள் அனுப்பியுள்ளீர்கள். $timeக்கு மீண்டும் கேட்கலாம். Vaultara-வில் மற்ற அனைத்தும் வழக்கம்போல் இயங்கும்.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'இன்றைய \"Vaultara-விடம் கேளுங்கள்\" வரம்பை அடைந்துவிட்டீர்கள். அது $timeக்கு மீட்டமைக்கப்படும். Vaultara-வில் மற்ற அனைத்தும் வழக்கம்போல் இயங்கும்.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'இன்றைய \"Vaultara-விடம் கேளுங்கள்\" வரம்பை அடைந்துவிட்டீர்கள். அது நாளை $timeக்கு மீட்டமைக்கப்படும். Vaultara-வில் மற்ற அனைத்தும் வழக்கம்போல் இயங்கும்.';
+  }
 }

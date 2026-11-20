@@ -9519,4 +9519,48 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Bir kundagi eslatmalar eslatma vaqtingizda bitta bildirishnoma bo\'lib keladi. Ertaga, bugun muddati tugaydigan yoki tugagan yozuvlar alohida keladi.';
+
+  @override
+  String get secBillingChanged => 'Reja o‘zgardi';
+
+  @override
+  String get plansSellerGoogle => 'Google Play’da Vaultara’ni yaratuvchi Vorkalis kompaniyasi nomidan to‘lov olinadi.';
+
+  @override
+  String get plansSellerApple => 'App Store’da Vaultara’ni yaratuvchi Vorkalis kompaniyasi nomidan to‘lov olinadi.';
+
+  @override
+  String get identityConfirmReason => 'Siz ekaningizni tasdiqlang';
+
+  @override
+  String get rootedTitle => 'Bu telefon root qilinganga o‘xshaydi';
+
+  @override
+  String get rootedBody => 'Uning odatiy himoyasi o‘chirilganga o‘xshaydi, shuning uchun boshqa ilovalar Vaultara bu telefonda saqlaydigan narsalarni o‘qishi mumkin. Hisobingiz ishlashda davom etadi, ammo yozuvlaringiz root yoki jailbreak qilinmagan telefonda xavfsizroq.';
+
+  @override
+  String get rootedOk => 'Tushundim';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Shifrlangan ($number). Ko‘rish yoki o‘zgartirish uchun bu telefonda tiklash kalitingiz bilan shifrlashni oching.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Yozuvlaringizdagi hujjat raqamlari ham shunday qulflanadi: faqat oxirgi to‘rt belgi o‘qiladigan holda saqlanadi.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'So‘nggi bir soatda ko‘p savol yubordingiz. Soat $time da yana so‘rashingiz mumkin. Vaultara’dagi qolgan hamma narsa odatdagidek ishlaydi.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Bugungi \"Vaultaradan soʻrang\" chegarasiga yetdingiz. U soat $time da yangilanadi. Vaultara’dagi qolgan hamma narsa odatdagidek ishlaydi.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Bugungi \"Vaultaradan soʻrang\" chegarasiga yetdingiz. U ertaga soat $time da yangilanadi. Vaultara’dagi qolgan hamma narsa odatdagidek ishlaydi.';
+  }
 }

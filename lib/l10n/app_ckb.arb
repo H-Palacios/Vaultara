@@ -4018,5 +4018,77 @@
   "digestGroupedSubtitle": "بیرخەرەوەکانی هەمان ڕۆژ وەک یەک ئاگادارکردنەوە لە کاتی بیرخستنەوەکەت دێن. تۆمارەکانی سبەی، ئەمڕۆ یان بەسەرچوو هێشتا جیا دێن.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "پلان گۆڕا",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "لە Google Play بە ناوی Vorkalis پارە وەردەگیرێت، ئەو کۆمپانیایەی Vaultara دروست دەکات.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "لە App Store بە ناوی Vorkalis پارە وەردەگیرێت، ئەو کۆمپانیایەی Vaultara دروست دەکات.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "پشتڕاستی بکەرەوە کە خۆتیت",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "وا دیارە ئەم مۆبایلە ڕووت کراوە",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "وا دیارە پاراستنە ئاساییەکانی کوژێنراونەتەوە، بۆیە لەوانەیە ئەپەکانی تر بتوانن ئەوەی Vaultara لەسەر ئەم مۆبایلە هەڵیدەگرێت بخوێننەوە. هەژمارەکەت هێشتا کار دەکات، بەڵام تۆمارەکانت لەسەر مۆبایلێک کە ڕووت یان جەیڵبرێک نەکرابێت سەلامەتترن.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "تێگەیشتم",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "شفرەکراو ({number}). بۆ بینین یان گۆڕینی، شفرەکردن لەسەر ئەم مۆبایلە بە کلیلی گەڕاندنەوەکەت بکەرەوە.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "ژمارەی بەڵگەنامەکان لە تۆمارەکانتدا بە هەمان شێوە قوفڵ دەکرێن: تەنها چوار پیتی کۆتایی بە خوێندنەوە هەڵدەگیرێن.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "لە کاتژمێری ڕابردوودا پرسیاری زۆرت ناردووە. دەتوانیت لە {time} دووبارە بپرسیت. هەموو شتێکی تری Vaultara وەک هەمیشە کار دەکات.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "گەیشتیتە سنووری ئەمڕۆی «لە Vaultara بپرسە». لە {time} نوێ دەبێتەوە. هەموو شتێکی تری Vaultara وەک هەمیشە کار دەکات.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "گەیشتیتە سنووری ئەمڕۆی «لە Vaultara بپرسە». سبەی لە {time} نوێ دەبێتەوە. هەموو شتێکی تری Vaultara وەک هەمیشە کار دەکات.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

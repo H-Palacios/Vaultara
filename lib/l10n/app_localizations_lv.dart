@@ -9590,4 +9590,48 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Vienas dienas atgādinājumi pienāk kā viens paziņojums jūsu atgādinājumu laikā. Ieraksti, kam termiņš beidzas rīt, šodien vai jau beidzies, joprojām saņem savu.';
+
+  @override
+  String get secBillingChanged => 'Plāns mainīts';
+
+  @override
+  String get plansSellerGoogle => 'Google Play rēķinu izraksta kā Vorkalis — uzņēmums, kas veido Vaultara.';
+
+  @override
+  String get plansSellerApple => 'App Store rēķinu izraksta kā Vorkalis — uzņēmums, kas veido Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Apstipriniet, ka tas esat jūs';
+
+  @override
+  String get rootedTitle => 'Šis tālrunis izskatās rūtots';
+
+  @override
+  String get rootedBody => 'Tā parastā aizsardzība šķiet izslēgta, tāpēc citas lietotnes varētu nolasīt, ko Vaultara glabā šajā tālrunī. Jūsu konts joprojām darbojas, bet ieraksti ir drošāki tālrunī bez rūta vai jailbreak.';
+
+  @override
+  String get rootedOk => 'Saprotu';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Šifrēts ($number). Lai to redzētu vai mainītu, atbloķējiet šifrēšanu šajā tālrunī ar atkopšanas atslēgu.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Dokumentu numuri jūsu ierakstos tiek bloķēti tāpat: lasāmas tiek saglabātas tikai pēdējās četras rakstzīmes.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Pēdējā stundā nosūtījāt daudz jautājumu. Atkal jautāt varēsiet plkst. $time. Viss pārējais Vaultara darbojas kā parasti.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Esat sasniedzis šodienas “Jautāt Vaultara” limitu. Tas atjaunojas plkst. $time. Viss pārējais Vaultara darbojas kā parasti.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Esat sasniedzis šodienas “Jautāt Vaultara” limitu. Tas atjaunojas rīt plkst. $time. Viss pārējais Vaultara darbojas kā parasti.';
+  }
 }

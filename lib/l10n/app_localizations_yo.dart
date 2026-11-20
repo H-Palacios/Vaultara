@@ -9467,4 +9467,48 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Àwọn ìrántí ọjọ́ kan náà máa ń wá gẹ́gẹ́ bí ìkìlọ̀ kan ní àkókò ìrántí rẹ. Àwọn àkọsílẹ̀ tí yóò parí ní ọ̀la, lónìí tàbí tí ó ti parí ṣì máa ń gba tiwọn.';
+
+  @override
+  String get secBillingChanged => 'A ti yí ètò padà';
+
+  @override
+  String get plansSellerGoogle => 'Google Play ń gba owó gẹ́gẹ́ bí Vorkalis, ilé-iṣẹ́ tó ń ṣe Vaultara.';
+
+  @override
+  String get plansSellerApple => 'App Store ń gba owó gẹ́gẹ́ bí Vorkalis, ilé-iṣẹ́ tó ń ṣe Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Jẹ́rìí pé ìwọ ni';
+
+  @override
+  String get rootedTitle => 'Ó dà bí ẹni pé wọ́n ti root fóònù yìí';
+
+  @override
+  String get rootedBody => 'Ó dà bí ẹni pé ààbò rẹ̀ déédéé ti di pípa, nítorí náà àwọn áàpù mìíràn lè ka ohun tí Vaultara ń tọ́jú sórí fóònù yìí. Àkọọ́lẹ̀ rẹ ṣì ń ṣiṣẹ́, ṣùgbọ́n àwọn àkọsílẹ̀ rẹ wà láìléwu jù lórí fóònù tí kò sí root tàbí jailbreak.';
+
+  @override
+  String get rootedOk => 'Mo yé mi';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Ti pa àrokò mọ́ ($number). Ṣí àrokò náà lórí fóònù yìí pẹ̀lú kọ́kọ́rọ́ ìmúpadà rẹ láti rí i tàbí yí i padà.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Àwọn nọ́ńbà ìwé nínú àwọn àkọsílẹ̀ rẹ ni a tì pa lọ́nà kan náà: ẹ̀yà mẹ́rin tó kẹ́yìn nìkan ni a ń tọ́jú ní ọ̀nà tí a lè kà.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'O ti fi ọ̀pọ̀ ìbéèrè ránṣẹ́ ní wákàtí kan sẹ́yìn. O lè tún béèrè ní $time. Gbogbo nǹkan mìíràn nínú Vaultara ń ṣiṣẹ́ bí ó ti máa ń ṣe.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'O ti dé òpin \"Béèrè Vaultara\" ti òní. Yóò tún bẹ̀rẹ̀ ní $time. Gbogbo nǹkan mìíràn nínú Vaultara ń ṣiṣẹ́ bí ó ti máa ń ṣe.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'O ti dé òpin \"Béèrè Vaultara\" ti òní. Yóò tún bẹ̀rẹ̀ ní ọ̀la ní $time. Gbogbo nǹkan mìíràn nínú Vaultara ń ṣiṣẹ́ bí ó ti máa ń ṣe.';
+  }
 }

@@ -9444,4 +9444,48 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'การแจ้งเตือนในวันเดียวกันจะรวมเป็นการแจ้งเตือนเดียวตามเวลาที่ตั้งไว้ รายการที่หมดอายุพรุ่งนี้ วันนี้ หรือหมดอายุแล้ว ยังแจ้งแยกเหมือนเดิม';
+
+  @override
+  String get secBillingChanged => 'เปลี่ยนแผนแล้ว';
+
+  @override
+  String get plansSellerGoogle => 'เรียกเก็บเงินโดย Google Play ในนาม Vorkalis บริษัทผู้สร้าง Vaultara';
+
+  @override
+  String get plansSellerApple => 'เรียกเก็บเงินโดย App Store ในนาม Vorkalis บริษัทผู้สร้าง Vaultara';
+
+  @override
+  String get identityConfirmReason => 'ยืนยันว่าเป็นคุณ';
+
+  @override
+  String get rootedTitle => 'โทรศัพท์เครื่องนี้ดูเหมือนถูกรูท';
+
+  @override
+  String get rootedBody => 'การป้องกันตามปกติดูเหมือนถูกปิดอยู่ แอปอื่นจึงอาจอ่านสิ่งที่ Vaultara เก็บไว้ในโทรศัพท์เครื่องนี้ได้ บัญชีของคุณยังใช้งานได้ แต่บันทึกของคุณจะปลอดภัยกว่าบนโทรศัพท์ที่ไม่ได้รูทหรือเจลเบรก';
+
+  @override
+  String get rootedOk => 'เข้าใจแล้ว';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'เข้ารหัสแล้ว ($number) ปลดล็อกการเข้ารหัสบนโทรศัพท์เครื่องนี้ด้วยคีย์กู้คืนเพื่อดูหรือเปลี่ยน';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'หมายเลขเอกสารในบันทึกของคุณก็ถูกล็อกแบบเดียวกัน โดยเก็บแบบอ่านได้เฉพาะสี่ตัวอักษรสุดท้าย';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'คุณส่งคำถามจำนวนมากในชั่วโมงที่ผ่านมา ถามได้อีกครั้งเวลา $time ส่วนอื่นทั้งหมดใน Vaultara ยังใช้งานได้ตามปกติ';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'คุณใช้ \"ถาม Vaultara\" ครบขีดจำกัดของวันนี้แล้ว จะรีเซ็ตเวลา $time ส่วนอื่นทั้งหมดใน Vaultara ยังใช้งานได้ตามปกติ';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'คุณใช้ \"ถาม Vaultara\" ครบขีดจำกัดของวันนี้แล้ว จะรีเซ็ตพรุ่งนี้เวลา $time ส่วนอื่นทั้งหมดใน Vaultara ยังใช้งานได้ตามปกติ';
+  }
 }

@@ -9520,4 +9520,48 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Напомнянията за един и същи ден идват като едно известие в часа за напомняне. Записите, изтичащи утре, днес или вече изтекли, получават свое.';
+
+  @override
+  String get secBillingChanged => 'Планът е сменен';
+
+  @override
+  String get plansSellerGoogle => 'Таксува се от Google Play като Vorkalis – компанията, която прави Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Таксува се от App Store като Vorkalis – компанията, която прави Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Потвърдете, че сте вие';
+
+  @override
+  String get rootedTitle => 'Този телефон изглежда руутнат';
+
+  @override
+  String get rootedBody => 'Обичайните му защити изглеждат изключени, така че други приложения може да четат това, което Vaultara пази на този телефон. Профилът ви продължава да работи, но записите ви са по-защитени на телефон, който не е руутнат или джейлбрейкнат.';
+
+  @override
+  String get rootedOk => 'Разбирам';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Шифровано ($number). Отключете шифроването на този телефон с ключа си за възстановяване, за да го видите или промените.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Номерата на документи в записите ви се заключват по същия начин: само последните четири знака се пазят четими.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Изпратихте много въпроси през последния час. Можете да питате отново в $time. Всичко друго във Vaultara работи както обикновено.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Достигнахте днешния лимит на „Питайте Vaultara“. Той се подновява в $time. Всичко друго във Vaultara работи както обикновено.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Достигнахте днешния лимит на „Питайте Vaultara“. Той се подновява утре в $time. Всичко друго във Vaultara работи както обикновено.';
+  }
 }

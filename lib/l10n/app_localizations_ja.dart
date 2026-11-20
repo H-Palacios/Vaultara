@@ -9444,4 +9444,48 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => '同じ日のリマインダーは、リマインダー時刻に1つの通知にまとめて届きます。明日や今日が期限のもの、期限切れのものは個別に届きます。';
+
+  @override
+  String get secBillingChanged => 'プランが変更されました';
+
+  @override
+  String get plansSellerGoogle => 'Google Play では、Vaultara を作っている会社 Vorkalis の名前で請求されます。';
+
+  @override
+  String get plansSellerApple => 'App Store では、Vaultara を作っている会社 Vorkalis の名前で請求されます。';
+
+  @override
+  String get identityConfirmReason => 'ご本人であることを確認';
+
+  @override
+  String get rootedTitle => 'このスマホは root 化されているようです';
+
+  @override
+  String get rootedBody => '通常の保護機能がオフになっているようで、他のアプリが Vaultara がこのスマホに保存している内容を読める可能性があります。アカウントはそのまま使えますが、root 化や脱獄をしていないスマホの方が記録は安全です。';
+
+  @override
+  String get rootedOk => 'わかりました';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return '暗号化済み（$number）。表示や変更には、このスマホで復元キーを使って暗号化を解除してください。';
+  }
+
+  @override
+  String get photoLockNumbersToo => '記録の書類番号も同じ方法でロックされます。読める形で保存されるのは最後の4文字だけです。';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'この1時間にたくさん質問されました。$time からまた質問できます。Vaultara のほかの機能はいつも通り使えます。';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return '今日の「Vaultaraに聞く」の上限に達しました。$time にリセットされます。Vaultara のほかの機能はいつも通り使えます。';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return '今日の「Vaultaraに聞く」の上限に達しました。明日の $time にリセットされます。Vaultara のほかの機能はいつも通り使えます。';
+  }
 }

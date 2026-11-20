@@ -4036,5 +4036,77 @@
   "digestGroupedSubtitle": "Tos pačios dienos priminimai ateina vienu pranešimu jūsų priminimų laiku. Rytoj, šiandien besibaigiantys ar pasibaigę įrašai vis tiek gauna savo.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Planas pakeistas",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Play apmokestina kaip Vorkalis – įmonė, kurianti Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Store apmokestina kaip Vorkalis – įmonė, kurianti Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Patvirtinkite, kad tai jūs",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Atrodo, kad šis telefonas yra „rootintas“",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Atrodo, kad įprastos jo apsaugos išjungtos, todėl kitos programos gali perskaityti, ką Vaultara laiko šiame telefone. Jūsų paskyra vis tiek veikia, bet įrašai saugesni telefone be root ar jailbreak.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Suprantu",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Užšifruota ({number}). Norėdami pamatyti ar pakeisti, atrakinkite šifravimą šiame telefone atkūrimo raktu.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Jūsų įrašų dokumentų numeriai užrakinami taip pat: įskaitomi išsaugomi tik paskutiniai keturi simboliai.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Per pastarąją valandą išsiuntėte daug klausimų. Vėl klausti galėsite {time}. Visa kita Vaultara veikia kaip įprastai.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Pasiekėte šiandienos „Klauskite Vaultara“ ribą. Ji atsinaujina {time}. Visa kita Vaultara veikia kaip įprastai.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Pasiekėte šiandienos „Klauskite Vaultara“ ribą. Ji atsinaujina rytoj {time}. Visa kita Vaultara veikia kaip įprastai.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

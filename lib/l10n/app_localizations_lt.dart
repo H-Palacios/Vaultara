@@ -9676,4 +9676,48 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Tos pačios dienos priminimai ateina vienu pranešimu jūsų priminimų laiku. Rytoj, šiandien besibaigiantys ar pasibaigę įrašai vis tiek gauna savo.';
+
+  @override
+  String get secBillingChanged => 'Planas pakeistas';
+
+  @override
+  String get plansSellerGoogle => 'Google Play apmokestina kaip Vorkalis – įmonė, kurianti Vaultara.';
+
+  @override
+  String get plansSellerApple => 'App Store apmokestina kaip Vorkalis – įmonė, kurianti Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Patvirtinkite, kad tai jūs';
+
+  @override
+  String get rootedTitle => 'Atrodo, kad šis telefonas yra „rootintas“';
+
+  @override
+  String get rootedBody => 'Atrodo, kad įprastos jo apsaugos išjungtos, todėl kitos programos gali perskaityti, ką Vaultara laiko šiame telefone. Jūsų paskyra vis tiek veikia, bet įrašai saugesni telefone be root ar jailbreak.';
+
+  @override
+  String get rootedOk => 'Suprantu';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Užšifruota ($number). Norėdami pamatyti ar pakeisti, atrakinkite šifravimą šiame telefone atkūrimo raktu.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Jūsų įrašų dokumentų numeriai užrakinami taip pat: įskaitomi išsaugomi tik paskutiniai keturi simboliai.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Per pastarąją valandą išsiuntėte daug klausimų. Vėl klausti galėsite $time. Visa kita Vaultara veikia kaip įprastai.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Pasiekėte šiandienos „Klauskite Vaultara“ ribą. Ji atsinaujina $time. Visa kita Vaultara veikia kaip įprastai.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Pasiekėte šiandienos „Klauskite Vaultara“ ribą. Ji atsinaujina rytoj $time. Visa kita Vaultara veikia kaip įprastai.';
+  }
 }

@@ -9680,4 +9680,48 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Připomínky ze stejného dne přijdou jako jedno oznámení v čase připomínek. Záznamy, které vyprší zítra, dnes nebo už vypršely, dostanou vlastní.';
+
+  @override
+  String get secBillingChanged => 'Tarif změněn';
+
+  @override
+  String get plansSellerGoogle => 'Účtuje Google Play jako Vorkalis, společnost, která vyvíjí Vaultaru.';
+
+  @override
+  String get plansSellerApple => 'Účtuje App Store jako Vorkalis, společnost, která vyvíjí Vaultaru.';
+
+  @override
+  String get identityConfirmReason => 'Potvrďte, že jste to vy';
+
+  @override
+  String get rootedTitle => 'Tento telefon vypadá jako rootnutý';
+
+  @override
+  String get rootedBody => 'Jeho běžná ochrana se zdá vypnutá, takže jiné aplikace možná mohou číst, co Vaultara v tomto telefonu ukládá. Váš účet dál funguje, ale vaše záznamy jsou bezpečnější v telefonu bez rootu nebo jailbreaku.';
+
+  @override
+  String get rootedOk => 'Rozumím';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Zašifrováno ($number). Chcete-li ho zobrazit nebo změnit, odemkněte šifrování v tomto telefonu klíčem pro obnovení.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Čísla dokladů ve vašich záznamech se zamykají stejně: čitelné zůstávají jen poslední čtyři znaky.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Za poslední hodinu jste poslali hodně dotazů. Znovu se můžete zeptat v $time. Vše ostatní ve Vaultaře funguje jako obvykle.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Dosáhli jste dnešního limitu „Zeptat se aplikace Vaultara“. Obnoví se v $time. Vše ostatní ve Vaultaře funguje jako obvykle.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Dosáhli jste dnešního limitu „Zeptat se aplikace Vaultara“. Obnoví se zítra v $time. Vše ostatní ve Vaultaře funguje jako obvykle.';
+  }
 }

@@ -9514,4 +9514,48 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Ang mga paalala sa parehong araw ay dumarating bilang isang notification sa oras ng iyong paalala. Ang mga mag-e-expire bukas, ngayon o expired na ay may sariling notification pa rin.';
+
+  @override
+  String get secBillingChanged => 'Nabago ang plan';
+
+  @override
+  String get plansSellerGoogle => 'Sinisingil ng Google Play bilang Vorkalis, ang kumpanyang gumagawa ng Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Sinisingil ng App Store bilang Vorkalis, ang kumpanyang gumagawa ng Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Kumpirmahin na ikaw ito';
+
+  @override
+  String get rootedTitle => 'Mukhang naka-root ang phone na ito';
+
+  @override
+  String get rootedBody => 'Mukhang naka-off ang karaniwang proteksyon nito, kaya maaaring mabasa ng ibang app ang itinatago ng Vaultara sa phone na ito. Gumagana pa rin ang account mo, pero mas ligtas ang mga record mo sa phone na hindi naka-root o naka-jailbreak.';
+
+  @override
+  String get rootedOk => 'Naiintindihan ko';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Naka-encrypt ($number). I-unlock ang encryption sa phone na ito gamit ang recovery key mo para makita o mapalitan ito.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Ang mga numero ng dokumento sa mga record mo ay naka-lock sa parehong paraan: ang huling apat na character lang ang naka-save nang nababasa.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Marami kang naipadalang tanong sa nakaraang oras. Puwede kang magtanong ulit sa $time. Gumagana pa rin nang normal ang lahat ng iba pa sa Vaultara.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Naabot mo na ang limit ngayong araw ng \"Magtanong sa Vaultara\". Magre-reset ito sa $time. Gumagana pa rin nang normal ang lahat ng iba pa sa Vaultara.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Naabot mo na ang limit ngayong araw ng \"Magtanong sa Vaultara\". Magre-reset ito bukas sa $time. Gumagana pa rin nang normal ang lahat ng iba pa sa Vaultara.';
+  }
 }

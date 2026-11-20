@@ -9519,4 +9519,48 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Aynı günkü hatırlatıcılar hatırlatma saatinizde tek bildirim olarak gelir. Yarın, bugün süresi dolan veya dolmuş kayıtlar yine ayrı gelir.';
+
+  @override
+  String get secBillingChanged => 'Plan değişti';
+
+  @override
+  String get plansSellerGoogle => 'Google Play tarafından Vaultara\'yı yapan şirket Vorkalis adıyla faturalandırılır.';
+
+  @override
+  String get plansSellerApple => 'App Store tarafından Vaultara\'yı yapan şirket Vorkalis adıyla faturalandırılır.';
+
+  @override
+  String get identityConfirmReason => 'Siz olduğunuzu onaylayın';
+
+  @override
+  String get rootedTitle => 'Bu telefon rootlu görünüyor';
+
+  @override
+  String get rootedBody => 'Normal korumaları kapalı görünüyor, bu yüzden başka uygulamalar Vaultara\'nın bu telefonda tuttuklarını okuyabilir. Hesabınız çalışmaya devam eder, ancak kayıtlarınız root veya jailbreak yapılmamış bir telefonda daha güvendedir.';
+
+  @override
+  String get rootedOk => 'Anladım';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Şifreli ($number). Görmek veya değiştirmek için bu telefonda kurtarma anahtarınızla şifrelemenin kilidini açın.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Kayıtlarınızdaki belge numaraları da aynı şekilde kilitlenir: yalnızca son dört karakter okunabilir şekilde saklanır.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Son bir saatte çok soru gönderdiniz. Saat $time itibarıyla yeniden sorabilirsiniz. Vaultara\'daki diğer her şey her zamanki gibi çalışır.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Bugünkü \"Vaultara\'ya Sor\" sınırına ulaştınız. Saat $time itibarıyla sıfırlanır. Vaultara\'daki diğer her şey her zamanki gibi çalışır.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Bugünkü \"Vaultara\'ya Sor\" sınırına ulaştınız. Yarın saat $time itibarıyla sıfırlanır. Vaultara\'daki diğer her şey her zamanki gibi çalışır.';
+  }
 }

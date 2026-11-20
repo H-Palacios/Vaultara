@@ -9524,4 +9524,48 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Herinneringen op dezelfde dag komen als één melding op je herinneringstijd. Items die morgen of vandaag verlopen of al verlopen zijn, krijgen nog steeds hun eigen melding.';
+
+  @override
+  String get secBillingChanged => 'Abonnement gewijzigd';
+
+  @override
+  String get plansSellerGoogle => 'Gefactureerd door Google Play als Vorkalis, het bedrijf achter Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Gefactureerd door de App Store als Vorkalis, het bedrijf achter Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Bevestig dat jij het bent';
+
+  @override
+  String get rootedTitle => 'Deze telefoon lijkt geroot';
+
+  @override
+  String get rootedBody => 'De normale beveiliging lijkt uitgeschakeld, dus andere apps kunnen mogelijk lezen wat Vaultara op deze telefoon bewaart. Je account blijft werken, maar je gegevens zijn veiliger op een telefoon die niet geroot of gejailbreakt is.';
+
+  @override
+  String get rootedOk => 'Ik begrijp het';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Versleuteld ($number). Ontgrendel de versleuteling op deze telefoon met je herstelsleutel om het te zien of te wijzigen.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Documentnummers in je gegevens worden op dezelfde manier vergrendeld: alleen de laatste vier tekens blijven leesbaar opgeslagen.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Je hebt het afgelopen uur veel vragen gesteld. Om $time kun je weer vragen. Al het andere in Vaultara werkt gewoon.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Je hebt de limiet van vandaag voor \"Vraag Vaultara\" bereikt. Die wordt om $time gereset. Al het andere in Vaultara werkt gewoon.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Je hebt de limiet van vandaag voor \"Vraag Vaultara\" bereikt. Die wordt morgen om $time gereset. Al het andere in Vaultara werkt gewoon.';
+  }
 }

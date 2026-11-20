@@ -4018,5 +4018,77 @@
   "digestGroupedSubtitle": "同一天的提醒会在你的提醒时间合并为一条通知。明天或今天到期、或已过期的记录仍会单独提醒。",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "套餐已更改",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "由 Google Play 以 Vorkalis（Vaultara 的开发公司）的名义收费。",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "由 App Store 以 Vorkalis（Vaultara 的开发公司）的名义收费。",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "确认是你本人",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "这部手机似乎已被 root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "它的常规保护似乎已关闭，因此其他应用可能可以读取 Vaultara 保存在这部手机上的内容。你的账户仍可使用，但在未 root 或越狱的手机上，你的记录更安全。",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "我知道了",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "已加密（{number}）。如需查看或修改，请在这部手机上用恢复密钥解锁加密。",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "你记录中的证件号码也会以同样方式锁定：只有最后四个字符以可读形式保存。",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "你在过去一小时内发送了很多问题。你可以在 {time} 再次提问。Vaultara 的其他功能照常可用。",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "你已达到今天的 “询问 Vaultara” 上限。将在 {time} 重置。Vaultara 的其他功能照常可用。",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "你已达到今天的 “询问 Vaultara” 上限。将在明天 {time} 重置。Vaultara 的其他功能照常可用。",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

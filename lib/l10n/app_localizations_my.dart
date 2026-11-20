@@ -9454,4 +9454,48 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'တစ်နေ့တည်းရှိ သတိပေးချက်များကို သင့်သတိပေးချိန်တွင် အသိပေးချက်တစ်ခုအဖြစ် ပို့ပါမည်။ မနက်ဖြန်၊ ယနေ့ သက်တမ်းကုန်မည့် သို့ ကုန်ပြီးသော မှတ်တမ်းများကို သီးခြားပို့ပါမည်။';
+
+  @override
+  String get secBillingChanged => 'အစီအစဉ် ပြောင်းပြီးပါပြီ';
+
+  @override
+  String get plansSellerGoogle => 'Google Play တွင် Vaultara ကို ပြုလုပ်သည့် ကုမ္ပဏီ Vorkalis အမည်ဖြင့် ငွေတောင်းခံပါသည်။';
+
+  @override
+  String get plansSellerApple => 'App Store တွင် Vaultara ကို ပြုလုပ်သည့် ကုမ္ပဏီ Vorkalis အမည်ဖြင့် ငွေတောင်းခံပါသည်။';
+
+  @override
+  String get identityConfirmReason => 'သင်ဖြစ်ကြောင်း အတည်ပြုပါ';
+
+  @override
+  String get rootedTitle => 'ဤဖုန်းကို root လုပ်ထားပုံရသည်';
+
+  @override
+  String get rootedBody => '၎င်း၏ ပုံမှန်ကာကွယ်မှုများ ပိတ်ထားပုံရသဖြင့် အခြားအက်ပ်များသည် Vaultara က ဤဖုန်းတွင် သိမ်းထားသည်ကို ဖတ်နိုင်ပါသည်။ သင့်အကောင့် ဆက်အလုပ်လုပ်သော်လည်း root သို့ jailbreak မလုပ်ထားသော ဖုန်းတွင် မှတ်တမ်းများ ပိုလုံခြုံပါသည်။';
+
+  @override
+  String get rootedOk => 'နားလည်ပါပြီ';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'ကုဒ်ဝှက်ထားသည် ($number)။ ကြည့်ရန် သို့ ပြောင်းရန် ဤဖုန်းတွင် သင့်ပြန်လည်ရယူရေးကီးဖြင့် ကုဒ်ဝှက်မှုကို ဖွင့်ပါ။';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'သင့်မှတ်တမ်းများရှိ စာရွက်စာတမ်းနံပါတ်များကိုလည်း ထိုနည်းအတိုင်း သော့ခတ်ထားပြီး နောက်ဆုံးစာလုံးလေးလုံးကိုသာ ဖတ်နိုင်အောင် သိမ်းထားပါသည်။';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'လွန်ခဲ့သော တစ်နာရီအတွင်း မေးခွန်းများစွာ ပို့ခဲ့ပါသည်။ $time တွင် ထပ်မေးနိုင်ပါသည်။ Vaultara ရှိ အခြားအရာအားလုံး ပုံမှန်အတိုင်း အလုပ်လုပ်ပါသည်။';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'ယနေ့အတွက် \"Vaultara ကို မေးရန်\" ကန့်သတ်ချက်သို့ ရောက်ပါပြီ။ $time တွင် ပြန်စပါမည်။ Vaultara ရှိ အခြားအရာအားလုံး ပုံမှန်အတိုင်း အလုပ်လုပ်ပါသည်။';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'ယနေ့အတွက် \"Vaultara ကို မေးရန်\" ကန့်သတ်ချက်သို့ ရောက်ပါပြီ။ မနက်ဖြန် $time တွင် ပြန်စပါမည်။ Vaultara ရှိ အခြားအရာအားလုံး ပုံမှန်အတိုင်း အလုပ်လုပ်ပါသည်။';
+  }
 }

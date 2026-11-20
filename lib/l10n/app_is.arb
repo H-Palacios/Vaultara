@@ -4023,5 +4023,77 @@
   "digestGroupedSubtitle": "Áminningar sama dags koma sem ein tilkynning á áminningartíma þínum. Færslur sem renna út á morgun, í dag eða eru útrunnar fá samt sína eigin.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Áskrift breytt",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Play rukkar sem Vorkalis, fyrirtækið sem gerir Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Store rukkar sem Vorkalis, fyrirtækið sem gerir Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Staðfestu að þetta sért þú",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Þessi sími virðist vera rótaður",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Venjuleg vörn hans virðist óvirk, svo önnur forrit gætu lesið það sem Vaultara geymir á símanum. Aðgangurinn þinn virkar áfram, en færslurnar þínar eru öruggari á síma sem er hvorki rótaður né jailbreak-aður.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Ég skil",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Dulkóðað ({number}). Opnaðu dulkóðunina á þessum síma með endurheimtarlyklinum til að sjá eða breyta því.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Skjalanúmer í færslunum þínum eru læst á sama hátt: aðeins síðustu fjórir stafirnir eru vistaðir læsilegir.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Þú hefur sent margar spurningar síðustu klukkustund. Þú getur spurt aftur kl. {time}. Allt annað í Vaultara virkar eins og venjulega.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Þú hefur náð hámarki dagsins í „Spyrðu Vaultara“. Það endurstillist kl. {time}. Allt annað í Vaultara virkar eins og venjulega.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Þú hefur náð hámarki dagsins í „Spyrðu Vaultara“. Það endurstillist á morgun kl. {time}. Allt annað í Vaultara virkar eins og venjulega.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

@@ -4023,5 +4023,77 @@
   "digestGroupedSubtitle": "Ihe ncheta n'otu ụbọchị na-abịa dịka otu ọkwa n'oge ncheta gị. Ndekọ ga-agwụ echi, taa ma ọ bụ nke gwụchara ka na-enweta nke ha.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Agbanwere atụmatụ",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Play na-ana ego dịka Vorkalis, ụlọ ọrụ na-eme Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Store na-ana ego dịka Vorkalis, ụlọ ọrụ na-eme Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Kwado na ọ bụ gị",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Ekwentị a yiri ka e mere ya root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Nchebe ya nkịtị yiri ka agbanyụrụ ya, ya mere ngwa ndị ọzọ nwere ike ịgụ ihe Vaultara na-edebe na ekwentị a. Akaụntụ gị ka na-arụ ọrụ, mana ndekọ gị dị nchebe karịa na ekwentị a na-emeghị root ma ọ bụ jailbreak.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Aghọtara m",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "E zoro ezo ({number}). Mepee nzuzo na ekwentị a site na igodo mgbake gị iji hụ ma ọ bụ gbanwee ya.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "A na-akpọchi nọmba akwụkwọ dị na ndekọ gị n'otu ụzọ ahụ: ọ bụ naanị mkpụrụedemede anọ ikpeazụ ka a na-echekwa ka a gụọ.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "I zitela ọtụtụ ajụjụ n'ime otu awa gara aga. Ị nwere ike ịjụ ọzọ n'elekere {time}. Ihe ndị ọzọ niile na Vaultara na-arụ ọrụ dịka ọ na-adị.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "I ruola oke \"Jụọ Vaultara\" nke taa. Ọ ga-amalite ọzọ n'elekere {time}. Ihe ndị ọzọ niile na Vaultara na-arụ ọrụ dịka ọ na-adị.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "I ruola oke \"Jụọ Vaultara\" nke taa. Ọ ga-amalite ọzọ echi n'elekere {time}. Ihe ndị ọzọ niile na Vaultara na-arụ ọrụ dịka ọ na-adị.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

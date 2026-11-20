@@ -9518,4 +9518,48 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'එකම දවසේ මතක් කිරීම් ඔබේ මතක් කිරීමේ වේලාවට එක් දැනුම්දීමක් ලෙස එයි. හෙට, අද කල් ඉකුත් වන හෝ ඉකුත් වූ වාර්තා තවමත් වෙනම එයි.';
+
+  @override
+  String get secBillingChanged => 'සැලසුම වෙනස් විය';
+
+  @override
+  String get plansSellerGoogle => 'Google Play හි Vaultara සාදන සමාගම වන Vorkalis නමින් බිල් කෙරේ.';
+
+  @override
+  String get plansSellerApple => 'App Store හි Vaultara සාදන සමාගම වන Vorkalis නමින් බිල් කෙරේ.';
+
+  @override
+  String get identityConfirmReason => 'මෙය ඔබ බව තහවුරු කරන්න';
+
+  @override
+  String get rootedTitle => 'මෙම දුරකථනය root කර ඇති බව පෙනේ';
+
+  @override
+  String get rootedBody => 'එහි සාමාන්‍ය ආරක්ෂණ අක්‍රිය කර ඇති බව පෙනේ, එබැවින් වෙනත් යෙදුම්වලට Vaultara මෙම දුරකථනයේ තබන දේ කියවිය හැකිය. ඔබේ ගිණුම තවමත් ක්‍රියා කරයි, නමුත් root හෝ jailbreak නොකළ දුරකථනයක ඔබේ වාර්තා වඩා ආරක්ෂිතයි.';
+
+  @override
+  String get rootedOk => 'මට තේරෙනවා';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'සංකේතනය කර ඇත ($number). බැලීමට හෝ වෙනස් කිරීමට මෙම දුරකථනයේ ඔබේ ප්‍රතිසාධන යතුරෙන් සංකේතනය අගුළු හරින්න.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'ඔබේ වාර්තාවල ලේඛන අංකද එලෙසම අගුළු දමයි: කියවිය හැකි ලෙස ගබඩා වන්නේ අවසාන අක්ෂර හතර පමණි.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'පසුගිය පැය තුළ ඔබ ප්‍රශ්න බොහොමයක් යැව්වා. $time ට නැවත ඇසිය හැක. Vaultara හි අනෙක් සියල්ල සුපුරුදු ලෙස ක්‍රියා කරයි.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'ඔබ අද \"Vaultara ගෙන් අසන්න\" සීමාවට ළඟා වී ඇත. එය $time ට යළි සකසයි. Vaultara හි අනෙක් සියල්ල සුපුරුදු ලෙස ක්‍රියා කරයි.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'ඔබ අද \"Vaultara ගෙන් අසන්න\" සීමාවට ළඟා වී ඇත. එය හෙට $time ට යළි සකසයි. Vaultara හි අනෙක් සියල්ල සුපුරුදු ලෙස ක්‍රියා කරයි.';
+  }
 }

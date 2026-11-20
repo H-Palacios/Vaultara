@@ -4030,5 +4030,77 @@
   "digestGroupedSubtitle": "同じ日のリマインダーは、リマインダー時刻に1つの通知にまとめて届きます。明日や今日が期限のもの、期限切れのものは個別に届きます。",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "プランが変更されました",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Play では、Vaultara を作っている会社 Vorkalis の名前で請求されます。",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Store では、Vaultara を作っている会社 Vorkalis の名前で請求されます。",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "ご本人であることを確認",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "このスマホは root 化されているようです",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "通常の保護機能がオフになっているようで、他のアプリが Vaultara がこのスマホに保存している内容を読める可能性があります。アカウントはそのまま使えますが、root 化や脱獄をしていないスマホの方が記録は安全です。",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "わかりました",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "暗号化済み（{number}）。表示や変更には、このスマホで復元キーを使って暗号化を解除してください。",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "記録の書類番号も同じ方法でロックされます。読める形で保存されるのは最後の4文字だけです。",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "この1時間にたくさん質問されました。{time} からまた質問できます。Vaultara のほかの機能はいつも通り使えます。",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "今日の「Vaultaraに聞く」の上限に達しました。{time} にリセットされます。Vaultara のほかの機能はいつも通り使えます。",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "今日の「Vaultaraに聞く」の上限に達しました。明日の {time} にリセットされます。Vaultara のほかの機能はいつも通り使えます。",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

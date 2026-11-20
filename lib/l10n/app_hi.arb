@@ -4030,5 +4030,77 @@
   "digestGroupedSubtitle": "एक ही दिन के रिमाइंडर आपके रिमाइंडर समय पर एक सूचना के रूप में आते हैं। कल, आज समाप्त होने वाले या समाप्त हो चुके रिकॉर्ड को अब भी अलग सूचना मिलती है।",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "प्लान बदल गया",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Play पर Vorkalis के नाम से बिल होता है, वह कंपनी जो Vaultara बनाती है।",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Store पर Vorkalis के नाम से बिल होता है, वह कंपनी जो Vaultara बनाती है।",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "पुष्टि करें कि यह आप हैं",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "यह फ़ोन रूट किया हुआ लगता है",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "इसकी सामान्य सुरक्षा बंद लगती है, इसलिए दूसरे ऐप इस फ़ोन पर Vaultara की रखी चीज़ें पढ़ सकते हैं। आपका खाता चलता रहेगा, लेकिन रूट या जेलब्रेक न किए गए फ़ोन पर आपके रिकॉर्ड ज़्यादा सुरक्षित हैं।",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "मैं समझता हूँ",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "एन्क्रिप्टेड ({number})। देखने या बदलने के लिए इस फ़ोन पर अपनी रिकवरी कुंजी से एन्क्रिप्शन अनलॉक करें।",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "आपके रिकॉर्ड में दस्तावेज़ नंबर भी इसी तरह लॉक होते हैं: सिर्फ़ आख़िरी चार अक्षर पढ़ने लायक सहेजे जाते हैं।",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "आपने पिछले एक घंटे में बहुत सवाल भेजे हैं। आप {time} पर फिर पूछ सकते हैं। Vaultara में बाकी सब पहले की तरह काम करता है।",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "आप आज की \"Vaultara से पूछें\" सीमा तक पहुँच गए हैं। यह {time} पर फिर शुरू होगी। Vaultara में बाकी सब पहले की तरह काम करता है।",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "आप आज की \"Vaultara से पूछें\" सीमा तक पहुँच गए हैं। यह कल {time} पर फिर शुरू होगी। Vaultara में बाकी सब पहले की तरह काम करता है।",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

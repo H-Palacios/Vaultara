@@ -4035,5 +4035,77 @@
   "digestGroupedSubtitle": "Нагадування на один день приходять одним сповіщенням у ваш час нагадувань. Записи, що спливають завтра, сьогодні або вже спливли, і далі приходять окремо.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Тариф змінено",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Оплата через Google Play від імені Vorkalis — компанії, яка створює Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Оплата через App Store від імені Vorkalis — компанії, яка створює Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Підтвердьте, що це ви",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Схоже, на цьому телефоні є root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Схоже, його звичайний захист вимкнено, тож інші застосунки можуть читати те, що Vaultara зберігає на цьому телефоні. Обліковий запис працює далі, але записи безпечніші на телефоні без root і джейлбрейку.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Зрозуміло",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Зашифровано ({number}). Щоб побачити або змінити, розблокуйте шифрування на цьому телефоні ключем відновлення.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Номери документів у ваших записах блокуються так само: у читабельному вигляді зберігаються лише останні чотири символи.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "За останню годину ви надіслали багато запитань. Знову запитати можна о {time}. Усе інше у Vaultara працює як зазвичай.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Ви досягли сьогоднішнього ліміту «Запитати Vaultara». Він оновиться о {time}. Усе інше у Vaultara працює як зазвичай.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Ви досягли сьогоднішнього ліміту «Запитати Vaultara». Він оновиться завтра о {time}. Усе інше у Vaultara працює як зазвичай.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

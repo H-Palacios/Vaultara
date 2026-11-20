@@ -9539,4 +9539,48 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Reminders on the same day come as one notification at your reminder time. Records due tomorrow, due today or expired still get their own.';
+
+  @override
+  String get secBillingChanged => 'Plan changed';
+
+  @override
+  String get plansSellerGoogle => 'Billed by Google Play as Vorkalis, the company that makes Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Billed by the App Store as Vorkalis, the company that makes Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Confirm it\'s you';
+
+  @override
+  String get rootedTitle => 'This phone looks rooted';
+
+  @override
+  String get rootedBody => 'Its normal protections seem to be turned off, so other apps may be able to read what Vaultara keeps on this phone. Your account still works, but your records are safer on a phone that is not rooted or jailbroken.';
+
+  @override
+  String get rootedOk => 'I understand';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Encrypted ($number). Unlock encryption on this phone with your recovery key to see or change it.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Document numbers in your records are locked the same way: only the last four characters are stored readable.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'You\'ve sent a lot of questions in the last hour. You can ask again at $time. Everything else in Vaultara works as usual.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'You\'ve reached today\'s Ask Vaultara limit. It resets at $time. Everything else in Vaultara works as usual.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'You\'ve reached today\'s Ask Vaultara limit. It resets tomorrow at $time. Everything else in Vaultara works as usual.';
+  }
 }

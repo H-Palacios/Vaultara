@@ -9603,6 +9603,50 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Подсетници за исти дан стижу као једно обавештење у време подсетника. Записи који истичу сутра, данас или су истекли и даље добијају своје.';
+
+  @override
+  String get secBillingChanged => 'План је промењен';
+
+  @override
+  String get plansSellerGoogle => 'Наплаћује Google Play као Vorkalis, компанија која прави Vaultaru.';
+
+  @override
+  String get plansSellerApple => 'Наплаћује App Store као Vorkalis, компанија која прави Vaultaru.';
+
+  @override
+  String get identityConfirmReason => 'Потврдите да сте то ви';
+
+  @override
+  String get rootedTitle => 'Овај телефон изгледа рутован';
+
+  @override
+  String get rootedBody => 'Његове уобичајене заштите изгледају искључене, па друге апликације можда могу да читају оно што Vaultara чува на овом телефону. Ваш налог и даље ради, али су ваши записи безбеднији на телефону који није рутован ни џејлбрејкован.';
+
+  @override
+  String get rootedOk => 'Разумем';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Шифровано ($number). Откључајте шифровање на овом телефону кључем за опоравак да бисте га видели или променили.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Бројеви докумената у вашим записима закључавају се на исти начин: читљиви се чувају само последња четири знака.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Послали сте много питања у последњих сат времена. Поново можете да питате у $time. Све остало у Vaultari ради као и обично.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Достигли сте данашње ограничење за „Питајте Vaultara“. Обнавља се у $time. Све остало у Vaultari ради као и обично.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Достигли сте данашње ограничење за „Питајте Vaultara“. Обнавља се сутра у $time. Све остало у Vaultari ради као и обично.';
+  }
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -19203,6 +19247,50 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get digestGroupedSubtitle => 'Подсетници за исти дан стижу као једно обавештење у време подсетника. Записи који истичу сутра, данас или су истекли и даље добијају своје.';
+
+  @override
+  String get secBillingChanged => 'План је промењен';
+
+  @override
+  String get plansSellerGoogle => 'Наплаћује Google Play као Vorkalis, компанија која прави Vaultaru.';
+
+  @override
+  String get plansSellerApple => 'Наплаћује App Store као Vorkalis, компанија која прави Vaultaru.';
+
+  @override
+  String get identityConfirmReason => 'Потврдите да сте то ви';
+
+  @override
+  String get rootedTitle => 'Овај телефон изгледа рутован';
+
+  @override
+  String get rootedBody => 'Његове уобичајене заштите изгледају искључене, па друге апликације можда могу да читају оно што Vaultara чува на овом телефону. Ваш налог и даље ради, али су ваши записи безбеднији на телефону који није рутован ни џејлбрејкован.';
+
+  @override
+  String get rootedOk => 'Разумем';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Шифровано ($number). Откључајте шифровање на овом телефону кључем за опоравак да бисте га видели или променили.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Бројеви докумената у вашим записима закључавају се на исти начин: читљиви се чувају само последња четири знака.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Послали сте много питања у последњих сат времена. Поново можете да питате у $time. Све остало у Vaultari ради као и обично.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Достигли сте данашње ограничење за „Питајте Vaultara“. Обнавља се у $time. Све остало у Vaultari ради као и обично.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Достигли сте данашње ограничење за „Питајте Vaultara“. Обнавља се сутра у $time. Све остало у Vaultari ради као и обично.';
+  }
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -28799,4 +28887,48 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get digestGroupedSubtitle => 'Podsetnici za isti dan stižu kao jedno obaveštenje u vreme podsetnika. Zapisi koji ističu sutra, danas ili su istekli i dalje dobijaju svoje.';
+
+  @override
+  String get secBillingChanged => 'Plan je promenjen';
+
+  @override
+  String get plansSellerGoogle => 'Naplaćuje Google Play kao Vorkalis, kompanija koja pravi Vaultaru.';
+
+  @override
+  String get plansSellerApple => 'Naplaćuje App Store kao Vorkalis, kompanija koja pravi Vaultaru.';
+
+  @override
+  String get identityConfirmReason => 'Potvrdite da ste to vi';
+
+  @override
+  String get rootedTitle => 'Ovaj telefon izgleda rutovan';
+
+  @override
+  String get rootedBody => 'Njegove uobičajene zaštite izgledaju isključene, pa druge aplikacije možda mogu da čitaju ono što Vaultara čuva na ovom telefonu. Vaš nalog i dalje radi, ali su vaši zapisi bezbedniji na telefonu koji nije rutovan ni džejlbrejkovan.';
+
+  @override
+  String get rootedOk => 'Razumem';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Šifrovano ($number). Otključajte šifrovanje na ovom telefonu ključem za oporavak da biste ga videli ili promenili.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Brojevi dokumenata u vašim zapisima zaključavaju se na isti način: čitljiva se čuvaju samo poslednja četiri znaka.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Poslali ste mnogo pitanja u poslednjih sat vremena. Ponovo možete da pitate u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Dostigli ste današnje ograničenje za „Pitaj Vaultaru“. Obnavlja se u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Dostigli ste današnje ograničenje za „Pitaj Vaultaru“. Obnavlja se sutra u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
 }

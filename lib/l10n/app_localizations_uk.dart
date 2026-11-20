@@ -9694,4 +9694,48 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Нагадування на один день приходять одним сповіщенням у ваш час нагадувань. Записи, що спливають завтра, сьогодні або вже спливли, і далі приходять окремо.';
+
+  @override
+  String get secBillingChanged => 'Тариф змінено';
+
+  @override
+  String get plansSellerGoogle => 'Оплата через Google Play від імені Vorkalis — компанії, яка створює Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Оплата через App Store від імені Vorkalis — компанії, яка створює Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Підтвердьте, що це ви';
+
+  @override
+  String get rootedTitle => 'Схоже, на цьому телефоні є root';
+
+  @override
+  String get rootedBody => 'Схоже, його звичайний захист вимкнено, тож інші застосунки можуть читати те, що Vaultara зберігає на цьому телефоні. Обліковий запис працює далі, але записи безпечніші на телефоні без root і джейлбрейку.';
+
+  @override
+  String get rootedOk => 'Зрозуміло';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Зашифровано ($number). Щоб побачити або змінити, розблокуйте шифрування на цьому телефоні ключем відновлення.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Номери документів у ваших записах блокуються так само: у читабельному вигляді зберігаються лише останні чотири символи.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'За останню годину ви надіслали багато запитань. Знову запитати можна о $time. Усе інше у Vaultara працює як зазвичай.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Ви досягли сьогоднішнього ліміту «Запитати Vaultara». Він оновиться о $time. Усе інше у Vaultara працює як зазвичай.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Ви досягли сьогоднішнього ліміту «Запитати Vaultara». Він оновиться завтра о $time. Усе інше у Vaultara працює як зазвичай.';
+  }
 }

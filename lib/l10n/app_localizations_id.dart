@@ -9451,4 +9451,48 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Pengingat di hari yang sama datang sebagai satu notifikasi pada jam pengingat Anda. Yang jatuh tempo besok, hari ini, atau sudah kedaluwarsa tetap datang sendiri.';
+
+  @override
+  String get secBillingChanged => 'Paket diubah';
+
+  @override
+  String get plansSellerGoogle => 'Ditagih oleh Google Play sebagai Vorkalis, perusahaan pembuat Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Ditagih oleh App Store sebagai Vorkalis, perusahaan pembuat Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Konfirmasi bahwa ini Anda';
+
+  @override
+  String get rootedTitle => 'Ponsel ini tampaknya di-root';
+
+  @override
+  String get rootedBody => 'Perlindungan normalnya tampak nonaktif, jadi aplikasi lain mungkin bisa membaca apa yang disimpan Vaultara di ponsel ini. Akun Anda tetap berfungsi, tetapi catatan Anda lebih aman di ponsel yang tidak di-root atau di-jailbreak.';
+
+  @override
+  String get rootedOk => 'Saya mengerti';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Terenkripsi ($number). Buka enkripsi di ponsel ini dengan kunci pemulihan Anda untuk melihat atau mengubahnya.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Nomor dokumen di catatan Anda dikunci dengan cara yang sama: hanya empat karakter terakhir yang disimpan dalam bentuk terbaca.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Anda telah mengirim banyak pertanyaan dalam satu jam terakhir. Anda bisa bertanya lagi pukul $time. Semua fitur lain di Vaultara tetap berjalan seperti biasa.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Anda telah mencapai batas \"Tanya Vaultara\" hari ini. Batas ini diatur ulang pukul $time. Semua fitur lain di Vaultara tetap berjalan seperti biasa.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Anda telah mencapai batas \"Tanya Vaultara\" hari ini. Batas ini diatur ulang besok pukul $time. Semua fitur lain di Vaultara tetap berjalan seperti biasa.';
+  }
 }

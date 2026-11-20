@@ -9519,4 +9519,48 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Izikhumbuzo zosuku olunye zifika njengesaziso esinye ngexesha lakho lesikhumbuzo. Iirekhodi eziphelelwa ngomso, namhlanje okanye eziphelelweyo zisafumana ezazo.';
+
+  @override
+  String get secBillingChanged => 'Isicwangciso sitshintshiwe';
+
+  @override
+  String get plansSellerGoogle => 'Kuhlawuliswa nguGoogle Play njengoVorkalis, inkampani eyenza iVaultara.';
+
+  @override
+  String get plansSellerApple => 'Kuhlawuliswa yiApp Store njengoVorkalis, inkampani eyenza iVaultara.';
+
+  @override
+  String get identityConfirmReason => 'Qinisekisa ukuba nguwe';
+
+  @override
+  String get rootedTitle => 'Le fowuni ibonakala ingathi iye yenziwa root';
+
+  @override
+  String get rootedBody => 'Ukhuseleko lwayo oluqhelekileyo lubonakala lucinyiwe, ngoko ezinye ii-app zinokufunda oko iVaultara ikugcina kule fowuni. I-akhawunti yakho isasebenza, kodwa iirekhodi zakho zikhuselekile ngakumbi kwifowuni engenziwanga root okanye jailbreak.';
+
+  @override
+  String get rootedOk => 'Ndiyaqonda';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Kufihliwe ($number). Vula ufihlo kule fowuni ngesitshixo sakho sokubuyisela ukuze ukubone okanye ukutshintshe.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Iinombolo zamaxwebhu kwiirekhodi zakho zitshixwa ngendlela efanayo: ngoonobumba abane bokugqibela kuphela abagcinwa befundeka.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Uthumele imibuzo emininzi kwiyure edlulileyo. Ungabuza kwakhona ngo-$time. Yonke enye into kwiVaultara isebenza njengesiqhelo.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Ufikelele kumda wanamhlanje we-\"Buza iVaultara\". Uqala kwakhona ngo-$time. Yonke enye into kwiVaultara isebenza njengesiqhelo.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Ufikelele kumda wanamhlanje we-\"Buza iVaultara\". Uqala kwakhona ngomso ngo-$time. Yonke enye into kwiVaultara isebenza njengesiqhelo.';
+  }
 }

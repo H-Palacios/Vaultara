@@ -9524,4 +9524,48 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Påminningar same dag kjem som eitt varsel på påminningstidspunktet ditt. Oppføringar som går ut i morgon, i dag eller har gått ut, får framleis sitt eige.';
+
+  @override
+  String get secBillingChanged => 'Abonnement endra';
+
+  @override
+  String get plansSellerGoogle => 'Blir belasta av Google Play som Vorkalis, selskapet som lagar Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Blir belasta av App Store som Vorkalis, selskapet som lagar Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Stadfest at det er deg';
+
+  @override
+  String get rootedTitle => 'Denne telefonen ser ut til å vere rota';
+
+  @override
+  String get rootedBody => 'Dei vanlege vernefunksjonane ser ut til å vere slått av, så andre appar kan kanskje lese det Vaultara lagrar på telefonen. Kontoen din fungerer framleis, men oppføringane dine er tryggare på ein telefon som ikkje er rota eller jailbreaka.';
+
+  @override
+  String get rootedOk => 'Eg forstår';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Kryptert ($number). Lås opp krypteringa på denne telefonen med gjenopprettingsnøkkelen for å sjå eller endre det.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Dokumentnummer i oppføringane dine blir låste på same måte: berre dei fire siste teikna blir lagra lesbare.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Du har sendt mange spørsmål den siste timen. Du kan spørje igjen kl. $time. Alt anna i Vaultara fungerer som vanleg.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Du har nådd dagens grense for \"Spør Vaultara\". Ho blir nullstilt kl. $time. Alt anna i Vaultara fungerer som vanleg.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Du har nådd dagens grense for \"Spør Vaultara\". Ho blir nullstilt i morgon kl. $time. Alt anna i Vaultara fungerer som vanleg.';
+  }
 }

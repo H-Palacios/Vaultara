@@ -9724,4 +9724,48 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Tagann meabhrúcháin an lae chéanna mar fhógra amháin ag d\'am meabhrúcháin. Faigheann taifid a théann in éag amárach, inniu nó atá imithe in éag a gcuid féin fós.';
+
+  @override
+  String get secBillingChanged => 'Plean athraithe';
+
+  @override
+  String get plansSellerGoogle => 'Gearrann Google Play é mar Vorkalis, an comhlacht a dhéanann Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Gearrann an App Store é mar Vorkalis, an comhlacht a dhéanann Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Deimhnigh gur tusa atá ann';
+
+  @override
+  String get rootedTitle => 'Is cosúil go bhfuil an fón seo rútáilte';
+
+  @override
+  String get rootedBody => 'Is cosúil go bhfuil a ghnáthchosaintí múchta, mar sin b\'fhéidir go mbeadh aipeanna eile in ann an méid a choinníonn Vaultara ar an bhfón seo a léamh. Oibríonn do chuntas fós, ach tá do thaifid níos sábháilte ar fhón nach bhfuil rútáilte ná jailbreakáilte.';
+
+  @override
+  String get rootedOk => 'Tuigim';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Criptithe ($number). Díghlasáil an criptiú ar an bhfón seo le d\'eochair athshlánaithe chun é a fheiceáil nó a athrú.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Glasáiltear uimhreacha doiciméad i do thaifid ar an mbealach céanna: ní stóráiltear ach na ceithre charachtar deiridh inléite.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Sheol tú a lán ceisteanna san uair dheireanach. Is féidir leat fiafraí arís ag $time. Oibríonn gach rud eile in Vaultara mar is gnáth.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Shroich tú teorainn an lae inniu de \"Fiafraigh de Vaultara\". Athshocraítear í ag $time. Oibríonn gach rud eile in Vaultara mar is gnáth.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Shroich tú teorainn an lae inniu de \"Fiafraigh de Vaultara\". Athshocraítear í amárach ag $time. Oibríonn gach rud eile in Vaultara mar is gnáth.';
+  }
 }

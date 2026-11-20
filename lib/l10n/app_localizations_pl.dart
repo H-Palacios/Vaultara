@@ -9699,4 +9699,48 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Przypomnienia z tego samego dnia przychodzą jako jedno powiadomienie o twojej godzinie. Wpisy wygasające jutro, dziś lub już wygasłe nadal dostają własne.';
+
+  @override
+  String get secBillingChanged => 'Plan zmieniony';
+
+  @override
+  String get plansSellerGoogle => 'Opłaty pobiera Google Play jako Vorkalis, firma, która tworzy Vaultarę.';
+
+  @override
+  String get plansSellerApple => 'Opłaty pobiera App Store jako Vorkalis, firma, która tworzy Vaultarę.';
+
+  @override
+  String get identityConfirmReason => 'Potwierdź, że to Ty';
+
+  @override
+  String get rootedTitle => 'Ten telefon wygląda na zrootowany';
+
+  @override
+  String get rootedBody => 'Jego zwykłe zabezpieczenia wydają się wyłączone, więc inne aplikacje mogą odczytać to, co Vaultara przechowuje na tym telefonie. Twoje konto nadal działa, ale wpisy są bezpieczniejsze na telefonie bez roota i jailbreaka.';
+
+  @override
+  String get rootedOk => 'Rozumiem';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Zaszyfrowane ($number). Aby je zobaczyć lub zmienić, odblokuj szyfrowanie na tym telefonie kluczem odzyskiwania.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Numery dokumentów w Twoich wpisach są blokowane w ten sam sposób: czytelne pozostają tylko ostatnie cztery znaki.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'W ostatniej godzinie zadałeś wiele pytań. Możesz zapytać ponownie o $time. Wszystko inne w Vaultarze działa jak zwykle.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Osiągnąłeś dzisiejszy limit „Zapytaj Vaultara”. Odnowi się o $time. Wszystko inne w Vaultarze działa jak zwykle.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Osiągnąłeś dzisiejszy limit „Zapytaj Vaultara”. Odnowi się jutro o $time. Wszystko inne w Vaultarze działa jak zwykle.';
+  }
 }

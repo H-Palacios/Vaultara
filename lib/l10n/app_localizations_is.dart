@@ -9518,4 +9518,48 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Áminningar sama dags koma sem ein tilkynning á áminningartíma þínum. Færslur sem renna út á morgun, í dag eða eru útrunnar fá samt sína eigin.';
+
+  @override
+  String get secBillingChanged => 'Áskrift breytt';
+
+  @override
+  String get plansSellerGoogle => 'Google Play rukkar sem Vorkalis, fyrirtækið sem gerir Vaultara.';
+
+  @override
+  String get plansSellerApple => 'App Store rukkar sem Vorkalis, fyrirtækið sem gerir Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Staðfestu að þetta sért þú';
+
+  @override
+  String get rootedTitle => 'Þessi sími virðist vera rótaður';
+
+  @override
+  String get rootedBody => 'Venjuleg vörn hans virðist óvirk, svo önnur forrit gætu lesið það sem Vaultara geymir á símanum. Aðgangurinn þinn virkar áfram, en færslurnar þínar eru öruggari á síma sem er hvorki rótaður né jailbreak-aður.';
+
+  @override
+  String get rootedOk => 'Ég skil';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Dulkóðað ($number). Opnaðu dulkóðunina á þessum síma með endurheimtarlyklinum til að sjá eða breyta því.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Skjalanúmer í færslunum þínum eru læst á sama hátt: aðeins síðustu fjórir stafirnir eru vistaðir læsilegir.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Þú hefur sent margar spurningar síðustu klukkustund. Þú getur spurt aftur kl. $time. Allt annað í Vaultara virkar eins og venjulega.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Þú hefur náð hámarki dagsins í „Spyrðu Vaultara“. Það endurstillist kl. $time. Allt annað í Vaultara virkar eins og venjulega.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Þú hefur náð hámarki dagsins í „Spyrðu Vaultara“. Það endurstillist á morgun kl. $time. Allt annað í Vaultara virkar eins og venjulega.';
+  }
 }

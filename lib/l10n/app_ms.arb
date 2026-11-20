@@ -4018,5 +4018,77 @@
   "digestGroupedSubtitle": "Peringatan pada hari yang sama datang sebagai satu pemberitahuan pada masa peringatan anda. Rekod yang tamat esok, hari ini atau sudah tamat masih datang sendiri.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Pelan ditukar",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Dicaj oleh Google Play sebagai Vorkalis, syarikat yang membuat Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Dicaj oleh App Store sebagai Vorkalis, syarikat yang membuat Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Sahkan bahawa ini anda",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Telefon ini nampaknya telah di-root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Perlindungan biasanya nampak dimatikan, jadi aplikasi lain mungkin boleh membaca apa yang Vaultara simpan pada telefon ini. Akaun anda masih berfungsi, tetapi rekod anda lebih selamat pada telefon yang tidak di-root atau di-jailbreak.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Saya faham",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Disulitkan ({number}). Buka kunci penyulitan pada telefon ini dengan kunci pemulihan anda untuk melihat atau menukarnya.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Nombor dokumen dalam rekod anda dikunci dengan cara yang sama: hanya empat aksara terakhir disimpan boleh dibaca.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Anda telah menghantar banyak soalan dalam sejam yang lalu. Anda boleh bertanya lagi pada {time}. Semua yang lain dalam Vaultara berfungsi seperti biasa.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Anda telah mencapai had \"Tanya Vaultara\" hari ini. Ia ditetapkan semula pada {time}. Semua yang lain dalam Vaultara berfungsi seperti biasa.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Anda telah mencapai had \"Tanya Vaultara\" hari ini. Ia ditetapkan semula esok pada {time}. Semua yang lain dalam Vaultara berfungsi seperti biasa.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

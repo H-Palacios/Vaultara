@@ -9509,4 +9509,48 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Нэг өдрийн сануулгууд таны сануулах цагт нэг мэдэгдэл болж ирнэ. Маргааш, өнөөдөр дуусах эсвэл дууссан бичлэгүүд тус тусдаа ирсээр байна.';
+
+  @override
+  String get secBillingChanged => 'Төлөвлөгөө өөрчлөгдлөө';
+
+  @override
+  String get plansSellerGoogle => 'Google Play дээр Vaultara-г бүтээдэг Vorkalis компанийн нэрээр төлбөр авна.';
+
+  @override
+  String get plansSellerApple => 'App Store дээр Vaultara-г бүтээдэг Vorkalis компанийн нэрээр төлбөр авна.';
+
+  @override
+  String get identityConfirmReason => 'Та мөн гэдгээ баталгаажуулна уу';
+
+  @override
+  String get rootedTitle => 'Энэ утас root хийгдсэн бололтой';
+
+  @override
+  String get rootedBody => 'Түүний ердийн хамгаалалт унтарсан бололтой тул бусад апп Vaultara-гийн энэ утсанд хадгалдаг зүйлийг уншиж болзошгүй. Таны бүртгэл ажилласаар байх ч бичлэгүүд тань root эсвэл jailbreak хийгдээгүй утсанд илүү аюулгүй.';
+
+  @override
+  String get rootedOk => 'Ойлголоо';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Шифрлэгдсэн ($number). Харах эсвэл өөрчлөхийн тулд энэ утсан дээр сэргээх түлхүүрээрээ шифрлэлтийг нээнэ үү.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Таны бичлэгүүдийн баримт бичгийн дугаарууд мөн адил түгжигдэнэ: зөвхөн сүүлийн дөрвөн тэмдэгт уншигдахуйц хадгалагдана.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Сүүлийн нэг цагт та олон асуулт илгээсэн байна. $time-д дахин асууж болно. Vaultara-гийн бусад бүх зүйл хэвийн ажиллана.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Та \"Vaultara-аас асуух\"-гийн өнөөдрийн хязгаарт хүрлээ. Энэ нь $time-д шинэчлэгдэнэ. Vaultara-гийн бусад бүх зүйл хэвийн ажиллана.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Та \"Vaultara-аас асуух\"-гийн өнөөдрийн хязгаарт хүрлээ. Энэ нь маргааш $time-д шинэчлэгдэнэ. Vaultara-гийн бусад бүх зүйл хэвийн ажиллана.';
+  }
 }

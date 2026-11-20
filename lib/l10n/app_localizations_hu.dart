@@ -9519,4 +9519,48 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Az egy napra eső emlékeztetők egy értesítésként érkeznek az emlékeztetési időben. A holnap, ma lejáró vagy lejárt tételek továbbra is külön jönnek.';
+
+  @override
+  String get secBillingChanged => 'Csomag módosítva';
+
+  @override
+  String get plansSellerGoogle => 'A Google Play Vorkalis néven számláz, ez a Vaultarát készítő cég.';
+
+  @override
+  String get plansSellerApple => 'Az App Store Vorkalis néven számláz, ez a Vaultarát készítő cég.';
+
+  @override
+  String get identityConfirmReason => 'Erősítsd meg, hogy te vagy';
+
+  @override
+  String get rootedTitle => 'Ez a telefon rootoltnak tűnik';
+
+  @override
+  String get rootedBody => 'A szokásos védelmei kikapcsoltnak tűnnek, így más alkalmazások olvashatják, amit a Vaultara ezen a telefonon tárol. A fiókod továbbra is működik, de a bejegyzéseid biztonságosabbak egy nem rootolt vagy jailbreakelt telefonon.';
+
+  @override
+  String get rootedOk => 'Értem';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Titkosítva ($number). A megtekintéshez vagy módosításhoz oldd fel a titkosítást ezen a telefonon a helyreállítási kulccsal.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'A bejegyzéseidben lévő okmányszámok ugyanígy zárolódnak: csak az utolsó négy karakter marad olvashatóan tárolva.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Az elmúlt órában sok kérdést küldtél. $time-kor kérdezhetsz újra. A Vaultara minden más része a megszokott módon működik.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Elérted a „Kérdezze a Vaultarát” mai korlátját. $time-kor újraindul. A Vaultara minden más része a megszokott módon működik.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Elérted a „Kérdezze a Vaultarát” mai korlátját. Holnap $time-kor újraindul. A Vaultara minden más része a megszokott módon működik.';
+  }
 }

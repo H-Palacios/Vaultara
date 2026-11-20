@@ -9776,4 +9776,48 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'تصل التذكيرات في اليوم نفسه كإشعار واحد في وقت التذكير. السجلات المستحقة غدًا أو اليوم أو المنتهية تحصل على إشعار خاص بها.';
+
+  @override
+  String get secBillingChanged => 'تم تغيير الخطة';
+
+  @override
+  String get plansSellerGoogle => 'تتم الفوترة عبر Google Play باسم Vorkalis، الشركة التي تصنع Vaultara.';
+
+  @override
+  String get plansSellerApple => 'تتم الفوترة عبر App Store باسم Vorkalis، الشركة التي تصنع Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'أكّد أنك أنت';
+
+  @override
+  String get rootedTitle => 'يبدو أن هذا الهاتف مُروَّت (rooted)';
+
+  @override
+  String get rootedBody => 'يبدو أن حمايته المعتادة معطّلة، لذا قد تتمكن تطبيقات أخرى من قراءة ما يحفظه Vaultara على هذا الهاتف. حسابك لا يزال يعمل، لكن سجلاتك أكثر أمانًا على هاتف غير مُروَّت أو مكسور الحماية.';
+
+  @override
+  String get rootedOk => 'فهمت';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'مشفّر ($number). افتح التشفير على هذا الهاتف بمفتاح الاسترداد لرؤيته أو تغييره.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'أرقام المستندات في سجلاتك مقفلة بالطريقة نفسها: تُحفظ آخر أربعة أحرف فقط بشكل مقروء.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'أرسلت الكثير من الأسئلة خلال الساعة الماضية. يمكنك السؤال مجددًا عند $time. كل شيء آخر في Vaultara يعمل كالمعتاد.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'وصلت إلى حد اليوم في اسأل Vaultara. يتجدد عند $time. كل شيء آخر في Vaultara يعمل كالمعتاد.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'وصلت إلى حد اليوم في اسأل Vaultara. يتجدد غدًا عند $time. كل شيء آخر في Vaultara يعمل كالمعتاد.';
+  }
 }

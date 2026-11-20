@@ -9519,4 +9519,48 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Izikhumbuzo zosuku olufanayo zifika njengesaziso esisodwa ngesikhathi sakho sesikhumbuzo. Amarekhodi aphelelwa kusasa, namuhla noma aphelelwe asathola awawo.';
+
+  @override
+  String get secBillingChanged => 'Uhlelo lushintshiwe';
+
+  @override
+  String get plansSellerGoogle => 'Kukhokhiswa yi-Google Play njengo-Vorkalis, inkampani eyenza i-Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Kukhokhiswa yi-App Store njengo-Vorkalis, inkampani eyenza i-Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Qinisekisa ukuthi nguwe';
+
+  @override
+  String get rootedTitle => 'Le foni ibukeka sengathi yenziwe root';
+
+  @override
+  String get rootedBody => 'Ukuvikeleka kwayo okuvamile kubukeka kuvaliwe, ngakho ezinye izinhlelo zingafunda lokho i-Vaultara ekugcina kule foni. I-akhawunti yakho isasebenza, kodwa amarekhodi akho aphephe kakhulu kufoni engenziwanga root noma jailbreak.';
+
+  @override
+  String get rootedOk => 'Ngiyaqonda';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Kubethelwe ($number). Vula ukubethela kule foni ngokhiye wakho wokubuyisela ukuze ukubone noma ukushintshe.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Izinombolo zemibhalo emarekhodini akho zikhiywa ngendlela efanayo: kugcinwa kufundeka izinhlamvu ezine zokugcina kuphela.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Uthumele imibuzo eminingi ehoreni eledlule. Ungabuza futhi ngo-$time. Konke okunye ku-Vaultara kusebenza njengokujwayelekile.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Ufinyelele umkhawulo wanamuhla we-\"Buza i-Vaultara\". Uqala kabusha ngo-$time. Konke okunye ku-Vaultara kusebenza njengokujwayelekile.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Ufinyelele umkhawulo wanamuhla we-\"Buza i-Vaultara\". Uqala kabusha kusasa ngo-$time. Konke okunye ku-Vaultara kusebenza njengokujwayelekile.';
+  }
 }

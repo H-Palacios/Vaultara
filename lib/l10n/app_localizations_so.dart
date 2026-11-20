@@ -9518,4 +9518,48 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Xusuusinta isla maalinta waxay u yimaadaan hal ogeysiis waqtiga xusuusintaada. Diiwaannada dhacaya berri, maanta ama dhacay weli waxay helaan kooda.';
+
+  @override
+  String get secBillingChanged => 'Qorshaha waa la beddelay';
+
+  @override
+  String get plansSellerGoogle => 'Google Play ayaa lacagta ku qaata magaca Vorkalis, shirkadda samaysa Vaultara.';
+
+  @override
+  String get plansSellerApple => 'App Store ayaa lacagta ku qaata magaca Vorkalis, shirkadda samaysa Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Xaqiiji inaad adigu tahay';
+
+  @override
+  String get rootedTitle => 'Taleefankan wuxuu u eg yahay mid la root-gareeyay';
+
+  @override
+  String get rootedBody => 'Ilaalintiisa caadiga ah waxay u egtahay in la damiyay, sidaa darteed abka kale waxay akhrin karaan waxa Vaultara ku hayso taleefankan. Akoonkaagu wuu shaqeynayaa, laakiin diiwaannadaadu way ka ammaan badan yihiin taleefan aan la root-gareyn ama la jailbreak-gareyn.';
+
+  @override
+  String get rootedOk => 'Waan fahmay';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Waa la qariyay ($number). Si aad u aragto ama u beddesho, ka fur qarinta taleefankan adigoo isticmaalaya furahaaga soo celinta.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Lambarrada dukumentiyada ee diiwaannadaada si isku mid ah ayaa loo xiraa: kaliya afarta xaraf ee ugu dambeeya ayaa loo kaydiyaa si la akhrin karo.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Saacaddii la soo dhaafay su\'aalo badan ayaad dirtay. Waxaad mar kale weydiin kartaa $time. Wax kasta oo kale oo Vaultara ah si caadi ah ayay u shaqeeyaan.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Waxaad gaartay xadka maanta ee \"Weydii Vaultara\". Wuxuu dib u bilaabanayaa $time. Wax kasta oo kale oo Vaultara ah si caadi ah ayay u shaqeeyaan.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Waxaad gaartay xadka maanta ee \"Weydii Vaultara\". Wuxuu dib u bilaabanayaa berri $time. Wax kasta oo kale oo Vaultara ah si caadi ah ayay u shaqeeyaan.';
+  }
 }

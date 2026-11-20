@@ -4018,5 +4018,77 @@
   "digestGroupedSubtitle": "Opomniki za isti dan pridejo kot eno obvestilo ob času opomnikov. Zapisi, ki potečejo jutri, danes ali so že potekli, še vedno dobijo svojega.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Paket spremenjen",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Zaračuna Google Play kot Vorkalis, podjetje, ki izdeluje Vaultaro.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Zaračuna App Store kot Vorkalis, podjetje, ki izdeluje Vaultaro.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Potrdite, da ste to vi",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Ta telefon je videti rootan",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Njegove običajne zaščite so videti izklopljene, zato bi druge aplikacije morda lahko brale, kar Vaultara hrani v tem telefonu. Vaš račun še vedno deluje, vendar so vaši zapisi varnejši v telefonu brez roota ali jailbreaka.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Razumem",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Šifrirano ({number}). Če ga želite videti ali spremeniti, odklenite šifriranje v tem telefonu s ključem za obnovitev.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Številke dokumentov v vaših zapisih so zaklenjene enako: berljivi ostanejo samo zadnji štirje znaki.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "V zadnji uri ste poslali veliko vprašanj. Znova lahko vprašate ob {time}. Vse drugo v Vaultari deluje kot običajno.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Dosegli ste današnjo omejitev za »Vprašaj Vaultaro«. Ponastavi se ob {time}. Vse drugo v Vaultari deluje kot običajno.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Dosegli ste današnjo omejitev za »Vprašaj Vaultaro«. Ponastavi se jutri ob {time}. Vse drugo v Vaultari deluje kot običajno.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

@@ -9518,4 +9518,48 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'بیرخەرەوەکانی هەمان ڕۆژ وەک یەک ئاگادارکردنەوە لە کاتی بیرخستنەوەکەت دێن. تۆمارەکانی سبەی، ئەمڕۆ یان بەسەرچوو هێشتا جیا دێن.';
+
+  @override
+  String get secBillingChanged => 'پلان گۆڕا';
+
+  @override
+  String get plansSellerGoogle => 'لە Google Play بە ناوی Vorkalis پارە وەردەگیرێت، ئەو کۆمپانیایەی Vaultara دروست دەکات.';
+
+  @override
+  String get plansSellerApple => 'لە App Store بە ناوی Vorkalis پارە وەردەگیرێت، ئەو کۆمپانیایەی Vaultara دروست دەکات.';
+
+  @override
+  String get identityConfirmReason => 'پشتڕاستی بکەرەوە کە خۆتیت';
+
+  @override
+  String get rootedTitle => 'وا دیارە ئەم مۆبایلە ڕووت کراوە';
+
+  @override
+  String get rootedBody => 'وا دیارە پاراستنە ئاساییەکانی کوژێنراونەتەوە، بۆیە لەوانەیە ئەپەکانی تر بتوانن ئەوەی Vaultara لەسەر ئەم مۆبایلە هەڵیدەگرێت بخوێننەوە. هەژمارەکەت هێشتا کار دەکات، بەڵام تۆمارەکانت لەسەر مۆبایلێک کە ڕووت یان جەیڵبرێک نەکرابێت سەلامەتترن.';
+
+  @override
+  String get rootedOk => 'تێگەیشتم';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'شفرەکراو ($number). بۆ بینین یان گۆڕینی، شفرەکردن لەسەر ئەم مۆبایلە بە کلیلی گەڕاندنەوەکەت بکەرەوە.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'ژمارەی بەڵگەنامەکان لە تۆمارەکانتدا بە هەمان شێوە قوفڵ دەکرێن: تەنها چوار پیتی کۆتایی بە خوێندنەوە هەڵدەگیرێن.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'لە کاتژمێری ڕابردوودا پرسیاری زۆرت ناردووە. دەتوانیت لە $time دووبارە بپرسیت. هەموو شتێکی تری Vaultara وەک هەمیشە کار دەکات.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'گەیشتیتە سنووری ئەمڕۆی «لە Vaultara بپرسە». لە $time نوێ دەبێتەوە. هەموو شتێکی تری Vaultara وەک هەمیشە کار دەکات.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'گەیشتیتە سنووری ئەمڕۆی «لە Vaultara بپرسە». سبەی لە $time نوێ دەبێتەوە. هەموو شتێکی تری Vaultara وەک هەمیشە کار دەکات.';
+  }
 }

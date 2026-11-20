@@ -4056,5 +4056,77 @@
   "digestGroupedSubtitle": "በአንድ ቀን የሚወድቁ ማስታወሻዎች በማስታወሻ ሰዓትዎ እንደ አንድ ማሳወቂያ ይመጣሉ። ነገ ወይም ዛሬ የሚያበቁ ወይም ያበቁ መዝገቦች አሁንም የራሳቸውን ያገኛሉ።",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "ዕቅድ ተቀይሯል",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "በGoogle Play እንደ Vorkalis ይከፈላል፣ Vaultaraን የሚሰራው ኩባንያ።",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "በApp Store እንደ Vorkalis ይከፈላል፣ Vaultaraን የሚሰራው ኩባንያ።",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "እርስዎ መሆንዎን ያረጋግጡ",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "ይህ ስልክ ሩት የተደረገ ይመስላል",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "መደበኛ ጥበቃዎቹ የጠፉ ይመስላሉ፣ ስለዚህ ሌሎች መተግበሪያዎች Vaultara በዚህ ስልክ ላይ የሚያስቀምጠውን ሊያነቡ ይችላሉ። መለያዎ አሁንም ይሰራል፣ ነገር ግን መዝገቦችዎ ሩት ወይም ጄልብሬክ ባልተደረገ ስልክ ላይ የበለጠ ደህንነታቸው የተጠበቀ ነው።",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "ገብቶኛል",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "የተመሰጠረ ({number})። ለማየት ወይም ለመቀየር በዚህ ስልክ ላይ በመልሶ ማግኛ ቁልፍዎ ምስጠራን ይክፈቱ።",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "በመዝገቦችዎ ውስጥ ያሉ የሰነድ ቁጥሮች በተመሳሳይ መንገድ ይቆለፋሉ፦ የመጨረሻዎቹ አራት ቁምፊዎች ብቻ በሚነበብ መልኩ ይቀመጣሉ።",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "ባለፈው ሰዓት ብዙ ጥያቄዎችን ልከዋል። በ{time} እንደገና መጠየቅ ይችላሉ። በVaultara ውስጥ ያለው ሌላው ሁሉ እንደተለመደው ይሰራል።",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "የዛሬውን የ\"Vaultaraን ይጠይቁ\" ገደብ ደርሰዋል። በ{time} እንደገና ይጀምራል። በVaultara ውስጥ ያለው ሌላው ሁሉ እንደተለመደው ይሰራል።",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "የዛሬውን የ\"Vaultaraን ይጠይቁ\" ገደብ ደርሰዋል። ነገ በ{time} እንደገና ይጀምራል። በVaultara ውስጥ ያለው ሌላው ሁሉ እንደተለመደው ይሰራል።",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

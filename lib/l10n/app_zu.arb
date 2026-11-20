@@ -4010,5 +4010,77 @@
   "digestGroupedSubtitle": "Izikhumbuzo zosuku olufanayo zifika njengesaziso esisodwa ngesikhathi sakho sesikhumbuzo. Amarekhodi aphelelwa kusasa, namuhla noma aphelelwe asathola awawo.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Uhlelo lushintshiwe",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Kukhokhiswa yi-Google Play njengo-Vorkalis, inkampani eyenza i-Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Kukhokhiswa yi-App Store njengo-Vorkalis, inkampani eyenza i-Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Qinisekisa ukuthi nguwe",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Le foni ibukeka sengathi yenziwe root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Ukuvikeleka kwayo okuvamile kubukeka kuvaliwe, ngakho ezinye izinhlelo zingafunda lokho i-Vaultara ekugcina kule foni. I-akhawunti yakho isasebenza, kodwa amarekhodi akho aphephe kakhulu kufoni engenziwanga root noma jailbreak.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Ngiyaqonda",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Kubethelwe ({number}). Vula ukubethela kule foni ngokhiye wakho wokubuyisela ukuze ukubone noma ukushintshe.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Izinombolo zemibhalo emarekhodini akho zikhiywa ngendlela efanayo: kugcinwa kufundeka izinhlamvu ezine zokugcina kuphela.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Uthumele imibuzo eminingi ehoreni eledlule. Ungabuza futhi ngo-{time}. Konke okunye ku-Vaultara kusebenza njengokujwayelekile.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Ufinyelele umkhawulo wanamuhla we-\"Buza i-Vaultara\". Uqala kabusha ngo-{time}. Konke okunye ku-Vaultara kusebenza njengokujwayelekile.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Ufinyelele umkhawulo wanamuhla we-\"Buza i-Vaultara\". Uqala kabusha kusasa ngo-{time}. Konke okunye ku-Vaultara kusebenza njengokujwayelekile.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

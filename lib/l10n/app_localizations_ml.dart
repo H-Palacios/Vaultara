@@ -9519,4 +9519,48 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'ഒരേ ദിവസത്തെ ഓർമ്മപ്പെടുത്തലുകൾ നിങ്ങളുടെ സമയത്ത് ഒറ്റ അറിയിപ്പായി വരും. നാളെയോ ഇന്നോ കാലാവധി തീരുന്നവയും തീർന്നവയും ഇപ്പോഴും വെവ്വേറെ വരും.';
+
+  @override
+  String get secBillingChanged => 'പ്ലാൻ മാറ്റി';
+
+  @override
+  String get plansSellerGoogle => 'Google Play-ൽ Vorkalis എന്ന പേരിൽ ബിൽ ചെയ്യും, Vaultara നിർമ്മിക്കുന്ന കമ്പനി.';
+
+  @override
+  String get plansSellerApple => 'App Store-ൽ Vorkalis എന്ന പേരിൽ ബിൽ ചെയ്യും, Vaultara നിർമ്മിക്കുന്ന കമ്പനി.';
+
+  @override
+  String get identityConfirmReason => 'ഇത് നിങ്ങളാണെന്ന് സ്ഥിരീകരിക്കുക';
+
+  @override
+  String get rootedTitle => 'ഈ ഫോൺ റൂട്ട് ചെയ്തതായി തോന്നുന്നു';
+
+  @override
+  String get rootedBody => 'ഇതിന്റെ സാധാരണ സുരക്ഷ ഓഫാണെന്ന് തോന്നുന്നു, അതിനാൽ ഈ ഫോണിൽ Vaultara സൂക്ഷിക്കുന്നത് മറ്റ് ആപ്പുകൾക്ക് വായിക്കാനായേക്കാം. നിങ്ങളുടെ അക്കൗണ്ട് പ്രവർത്തിക്കും, പക്ഷേ റൂട്ട് ചെയ്യാത്തതോ ജെയിൽബ്രേക്ക് ചെയ്യാത്തതോ ആയ ഫോണിൽ രേഖകൾ കൂടുതൽ സുരക്ഷിതമാണ്.';
+
+  @override
+  String get rootedOk => 'എനിക്ക് മനസ്സിലായി';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'എൻക്രിപ്റ്റ് ചെയ്തത് ($number). കാണാനോ മാറ്റാനോ ഈ ഫോണിൽ റിക്കവറി കീ ഉപയോഗിച്ച് എൻക്രിപ്ഷൻ അൺലോക്ക് ചെയ്യുക.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'നിങ്ങളുടെ രേഖകളിലെ ഡോക്യുമെന്റ് നമ്പറുകളും ഇതുപോലെ ലോക്ക് ചെയ്യപ്പെടും: അവസാനത്തെ നാല് അക്ഷരങ്ങൾ മാത്രം വായിക്കാവുന്നതായി സൂക്ഷിക്കും.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'കഴിഞ്ഞ ഒരു മണിക്കൂറിൽ നിങ്ങൾ ധാരാളം ചോദ്യങ്ങൾ അയച്ചു. $time-ന് വീണ്ടും ചോദിക്കാം. Vaultara-യിലെ മറ്റെല്ലാം പതിവുപോലെ പ്രവർത്തിക്കും.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'ഇന്നത്തെ \"Vaultara-യോട് ചോദിക്കുക\" പരിധിയിൽ എത്തി. അത് $time-ന് പുനഃസജ്ജമാകും. Vaultara-യിലെ മറ്റെല്ലാം പതിവുപോലെ പ്രവർത്തിക്കും.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'ഇന്നത്തെ \"Vaultara-യോട് ചോദിക്കുക\" പരിധിയിൽ എത്തി. അത് നാളെ $time-ന് പുനഃസജ്ജമാകും. Vaultara-യിലെ മറ്റെല്ലാം പതിവുപോലെ പ്രവർത്തിക്കും.';
+  }
 }

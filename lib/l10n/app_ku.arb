@@ -4018,5 +4018,77 @@
   "digestGroupedSubtitle": "Bîranînên heman rojê wekî yek agahdarî di dema bîranîna te de tên. Tomarên ku sibê, îro diqedin an qediyane hîn jî bi serê xwe tên.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Plan hate guhertin",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Play bi navê Vorkalis drav distîne, şirketa ku Vaultara çêdike.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Store bi navê Vorkalis drav distîne, şirketa ku Vaultara çêdike.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Piştrast bike ku tu yî",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Wisa xuya ye ku ev telefon root bûye",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Wisa xuya ye ku parastinên wê yên asayî girtî ne, ji ber vê yekê dibe ku sepanên din bikaribin tiştên ku Vaultara li ser vê telefonê digire bixwînin. Hesabê te hîn dixebite, lê tomarên te li ser telefonek ku root an jailbreak nebûye ewletir in.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Min fêm kir",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Şîfrekirî ({number}). Ji bo dîtin an guhertinê, şîfrekirinê li ser vê telefonê bi mifteya xwe ya vegerandinê veke.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Hejmarên belgeyan di tomarên te de bi heman awayî têne kilîtkirin: tenê çar tîpên dawî xwendinbar têne tomarkirin.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Te di saeta dawî de gelek pirs şandin. Tu dikarî di {time} de dîsa bipirsî. Her tiştê din di Vaultara de wekî her car dixebite.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Te gihîşt sînorê îro yê \"Ji Vaultara bipirse\". Ew di {time} de nû dibe. Her tiştê din di Vaultara de wekî her car dixebite.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Te gihîşt sînorê îro yê \"Ji Vaultara bipirse\". Ew sibê di {time} de nû dibe. Her tiştê din di Vaultara de wekî her car dixebite.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

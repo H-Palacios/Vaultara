@@ -9519,4 +9519,48 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Bîranînên heman rojê wekî yek agahdarî di dema bîranîna te de tên. Tomarên ku sibê, îro diqedin an qediyane hîn jî bi serê xwe tên.';
+
+  @override
+  String get secBillingChanged => 'Plan hate guhertin';
+
+  @override
+  String get plansSellerGoogle => 'Google Play bi navê Vorkalis drav distîne, şirketa ku Vaultara çêdike.';
+
+  @override
+  String get plansSellerApple => 'App Store bi navê Vorkalis drav distîne, şirketa ku Vaultara çêdike.';
+
+  @override
+  String get identityConfirmReason => 'Piştrast bike ku tu yî';
+
+  @override
+  String get rootedTitle => 'Wisa xuya ye ku ev telefon root bûye';
+
+  @override
+  String get rootedBody => 'Wisa xuya ye ku parastinên wê yên asayî girtî ne, ji ber vê yekê dibe ku sepanên din bikaribin tiştên ku Vaultara li ser vê telefonê digire bixwînin. Hesabê te hîn dixebite, lê tomarên te li ser telefonek ku root an jailbreak nebûye ewletir in.';
+
+  @override
+  String get rootedOk => 'Min fêm kir';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Şîfrekirî ($number). Ji bo dîtin an guhertinê, şîfrekirinê li ser vê telefonê bi mifteya xwe ya vegerandinê veke.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Hejmarên belgeyan di tomarên te de bi heman awayî têne kilîtkirin: tenê çar tîpên dawî xwendinbar têne tomarkirin.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Te di saeta dawî de gelek pirs şandin. Tu dikarî di $time de dîsa bipirsî. Her tiştê din di Vaultara de wekî her car dixebite.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Te gihîşt sînorê îro yê \"Ji Vaultara bipirse\". Ew di $time de nû dibe. Her tiştê din di Vaultara de wekî her car dixebite.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Te gihîşt sînorê îro yê \"Ji Vaultara bipirse\". Ew sibê di $time de nû dibe. Her tiştê din di Vaultara de wekî her car dixebite.';
+  }
 }

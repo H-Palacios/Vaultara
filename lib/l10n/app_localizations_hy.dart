@@ -9519,4 +9519,48 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Նույն օրվա հիշեցումները գալիս են որպես մեկ ծանուցում ձեր հիշեցման ժամին։ Վաղը, այսօր ավարտվող կամ ավարտված գրառումները դեռ առանձին են գալիս։';
+
+  @override
+  String get secBillingChanged => 'Պլանը փոխվեց';
+
+  @override
+  String get plansSellerGoogle => 'Վճարումը Google Play-ում կատարվում է Vorkalis անունով՝ ընկերություն, որը ստեղծում է Vaultara-ն։';
+
+  @override
+  String get plansSellerApple => 'Վճարումը App Store-ում կատարվում է Vorkalis անունով՝ ընկերություն, որը ստեղծում է Vaultara-ն։';
+
+  @override
+  String get identityConfirmReason => 'Հաստատեք, որ դուք եք';
+
+  @override
+  String get rootedTitle => 'Այս հեռախոսը կարծես root արված է';
+
+  @override
+  String get rootedBody => 'Նրա սովորական պաշտպանությունները կարծես անջատված են, ուստի այլ հավելվածներ կարող են կարդալ այն, ինչ Vaultara-ն պահում է այս հեռախոսում։ Ձեր հաշիվը շարունակում է աշխատել, բայց ձեր գրառումներն ավելի ապահով են root կամ jailbreak չարված հեռախոսում։';
+
+  @override
+  String get rootedOk => 'Հասկանում եմ';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Գաղտնագրված ($number)։ Տեսնելու կամ փոխելու համար այս հեռախոսում ապակողպեք գաղտնագրումը ձեր վերականգնման բանալիով։';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Ձեր գրառումների փաստաթղթերի համարները կողպվում են նույն կերպ՝ ընթեռնելի են պահվում միայն վերջին չորս նիշերը։';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Վերջին ժամում շատ հարցեր եք ուղարկել։ Կարող եք կրկին հարցնել ժամը $time-ին։ Vaultara-ի մնացած ամեն ինչ աշխատում է սովորականի պես։';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Հասել եք \"Հարցրեք Vaultara-ին\"-ի այսօրվա սահմանին։ Այն թարմացվում է ժամը $time-ին։ Vaultara-ի մնացած ամեն ինչ աշխատում է սովորականի պես։';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Հասել եք \"Հարցրեք Vaultara-ին\"-ի այսօրվա սահմանին։ Այն թարմացվում է վաղը ժամը $time-ին։ Vaultara-ի մնացած ամեն ինչ աշխատում է սովորականի պես։';
+  }
 }

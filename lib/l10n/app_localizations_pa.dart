@@ -9519,4 +9519,48 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'ਇੱਕੋ ਦਿਨ ਦੀਆਂ ਯਾਦ-ਦਹਾਨੀਆਂ ਤੁਹਾਡੇ ਸਮੇਂ ਤੇ ਇੱਕ ਸੂਚਨਾ ਵਜੋਂ ਆਉਂਦੀਆਂ ਹਨ। ਕੱਲ੍ਹ, ਅੱਜ ਖਤਮ ਹੋਣ ਵਾਲੇ ਜਾਂ ਖਤਮ ਹੋ ਚੁੱਕੇ ਰਿਕਾਰਡ ਨੂੰ ਅਜੇ ਵੀ ਵੱਖਰੀ ਸੂਚਨਾ ਮਿਲਦੀ ਹੈ।';
+
+  @override
+  String get secBillingChanged => 'ਪਲਾਨ ਬਦਲ ਗਿਆ';
+
+  @override
+  String get plansSellerGoogle => 'Google Play \'ਤੇ Vorkalis ਦੇ ਨਾਂ ਨਾਲ ਬਿੱਲ ਹੁੰਦਾ ਹੈ, ਜੋ ਕੰਪਨੀ Vaultara ਬਣਾਉਂਦੀ ਹੈ।';
+
+  @override
+  String get plansSellerApple => 'App Store \'ਤੇ Vorkalis ਦੇ ਨਾਂ ਨਾਲ ਬਿੱਲ ਹੁੰਦਾ ਹੈ, ਜੋ ਕੰਪਨੀ Vaultara ਬਣਾਉਂਦੀ ਹੈ।';
+
+  @override
+  String get identityConfirmReason => 'ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਇਹ ਤੁਸੀਂ ਹੋ';
+
+  @override
+  String get rootedTitle => 'ਇਹ ਫ਼ੋਨ ਰੂਟ ਕੀਤਾ ਲੱਗਦਾ ਹੈ';
+
+  @override
+  String get rootedBody => 'ਇਸ ਦੀ ਆਮ ਸੁਰੱਖਿਆ ਬੰਦ ਲੱਗਦੀ ਹੈ, ਇਸ ਲਈ ਹੋਰ ਐਪਾਂ ਇਸ ਫ਼ੋਨ \'ਤੇ Vaultara ਵੱਲੋਂ ਰੱਖੀਆਂ ਚੀਜ਼ਾਂ ਪੜ੍ਹ ਸਕਦੀਆਂ ਹਨ। ਤੁਹਾਡਾ ਖਾਤਾ ਚੱਲਦਾ ਰਹੇਗਾ, ਪਰ ਰੂਟ ਜਾਂ ਜੇਲਬ੍ਰੇਕ ਨਾ ਕੀਤੇ ਫ਼ੋਨ \'ਤੇ ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਵਧੇਰੇ ਸੁਰੱਖਿਅਤ ਹਨ।';
+
+  @override
+  String get rootedOk => 'ਮੈਂ ਸਮਝਦਾ ਹਾਂ';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'ਇਨਕ੍ਰਿਪਟ ਕੀਤਾ ($number)। ਦੇਖਣ ਜਾਂ ਬਦਲਣ ਲਈ ਇਸ ਫ਼ੋਨ \'ਤੇ ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਨਾਲ ਇਨਕ੍ਰਿਪਸ਼ਨ ਅਨਲੌਕ ਕਰੋ।';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'ਤੁਹਾਡੇ ਰਿਕਾਰਡਾਂ ਦੇ ਦਸਤਾਵੇਜ਼ ਨੰਬਰ ਵੀ ਇਸੇ ਤਰ੍ਹਾਂ ਲੌਕ ਹੁੰਦੇ ਹਨ: ਸਿਰਫ਼ ਆਖਰੀ ਚਾਰ ਅੱਖਰ ਪੜ੍ਹਨਯੋਗ ਰੱਖੇ ਜਾਂਦੇ ਹਨ।';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'ਤੁਸੀਂ ਪਿਛਲੇ ਇੱਕ ਘੰਟੇ ਵਿੱਚ ਬਹੁਤ ਸਵਾਲ ਭੇਜੇ ਹਨ। ਤੁਸੀਂ $time \'ਤੇ ਦੁਬਾਰਾ ਪੁੱਛ ਸਕਦੇ ਹੋ। Vaultara ਵਿੱਚ ਬਾਕੀ ਸਭ ਕੁਝ ਆਮ ਵਾਂਗ ਚੱਲਦਾ ਹੈ।';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'ਤੁਸੀਂ ਅੱਜ ਦੀ \"Vaultara ਨੂੰ ਪੁੱਛੋ\" ਸੀਮਾ ਤੱਕ ਪਹੁੰਚ ਗਏ ਹੋ। ਇਹ $time \'ਤੇ ਮੁੜ ਸ਼ੁਰੂ ਹੋਵੇਗੀ। Vaultara ਵਿੱਚ ਬਾਕੀ ਸਭ ਕੁਝ ਆਮ ਵਾਂਗ ਚੱਲਦਾ ਹੈ।';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'ਤੁਸੀਂ ਅੱਜ ਦੀ \"Vaultara ਨੂੰ ਪੁੱਛੋ\" ਸੀਮਾ ਤੱਕ ਪਹੁੰਚ ਗਏ ਹੋ। ਇਹ ਕੱਲ੍ਹ $time \'ਤੇ ਮੁੜ ਸ਼ੁਰੂ ਹੋਵੇਗੀ। Vaultara ਵਿੱਚ ਬਾਕੀ ਸਭ ਕੁਝ ਆਮ ਵਾਂਗ ਚੱਲਦਾ ਹੈ।';
+  }
 }

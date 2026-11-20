@@ -9519,4 +9519,48 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Eyni gündəki xatırlatmalar xatırlatma vaxtınızda bir bildiriş kimi gəlir. Sabah, bu gün bitən və ya artıq bitmiş qeydlər yenə ayrıca gəlir.';
+
+  @override
+  String get secBillingChanged => 'Plan dəyişdi';
+
+  @override
+  String get plansSellerGoogle => 'Ödəniş Google Play-də Vaultara-nı hazırlayan Vorkalis şirkəti adı ilə alınır.';
+
+  @override
+  String get plansSellerApple => 'Ödəniş App Store-da Vaultara-nı hazırlayan Vorkalis şirkəti adı ilə alınır.';
+
+  @override
+  String get identityConfirmReason => 'Siz olduğunuzu təsdiqləyin';
+
+  @override
+  String get rootedTitle => 'Bu telefonda root var kimi görünür';
+
+  @override
+  String get rootedBody => 'Onun adi qorumaları söndürülmüş görünür, buna görə digər tətbiqlər Vaultara-nın bu telefonda saxladıqlarını oxuya bilər. Hesabınız işləməyə davam edir, amma qeydləriniz root və ya jailbreak olunmamış telefonda daha təhlükəsizdir.';
+
+  @override
+  String get rootedOk => 'Başa düşürəm';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Şifrələnib ($number). Görmək və ya dəyişmək üçün bu telefonda bərpa açarınızla şifrələməni açın.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Qeydlərinizdəki sənəd nömrələri eyni şəkildə kilidlənir: yalnız son dörd simvol oxunaqlı saxlanılır.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Son bir saatda çox sual göndərdiniz. Saat $time-da yenidən soruşa bilərsiniz. Vaultara-da qalan hər şey adi qaydada işləyir.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Bugünkü \"Vaultara-dan soruş\" limitinə çatdınız. O, saat $time-da yenilənir. Vaultara-da qalan hər şey adi qaydada işləyir.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Bugünkü \"Vaultara-dan soruş\" limitinə çatdınız. O, sabah saat $time-da yenilənir. Vaultara-da qalan hər şey adi qaydada işləyir.';
+  }
 }

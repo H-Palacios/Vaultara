@@ -9548,4 +9548,48 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Los recordatorios del mismo día llegan como una sola notificación a tu hora de recordatorio. Los que vencen mañana, hoy o ya vencieron siguen llegando por separado.';
+
+  @override
+  String get secBillingChanged => 'Plan cambiado';
+
+  @override
+  String get plansSellerGoogle => 'Lo cobra Google Play como Vorkalis, la empresa que crea Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Lo cobra el App Store como Vorkalis, la empresa que crea Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Confirma que eres tú';
+
+  @override
+  String get rootedTitle => 'Parece que este teléfono está rooteado';
+
+  @override
+  String get rootedBody => 'Sus protecciones habituales parecen desactivadas, así que otras apps podrían leer lo que Vaultara guarda en este teléfono. Tu cuenta sigue funcionando, pero tus registros están más seguros en un teléfono sin root ni jailbreak.';
+
+  @override
+  String get rootedOk => 'Entendido';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Cifrado ($number). Desbloquea el cifrado en este teléfono con tu clave de recuperación para verlo o cambiarlo.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Los números de documento de tus registros se bloquean igual: solo se guardan legibles los cuatro últimos caracteres.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Has enviado muchas preguntas en la última hora. Puedes volver a preguntar a las $time. Todo lo demás en Vaultara funciona con normalidad.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Has llegado al límite de hoy de \"Pregunta a Vaultara\". Se renueva a las $time. Todo lo demás en Vaultara funciona con normalidad.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Has llegado al límite de hoy de \"Pregunta a Vaultara\". Se renueva mañana a las $time. Todo lo demás en Vaultara funciona con normalidad.';
+  }
 }

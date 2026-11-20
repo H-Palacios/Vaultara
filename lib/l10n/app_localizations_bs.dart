@@ -9602,4 +9602,48 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Podsjetnici za isti dan stižu kao jedno obavještenje u vrijeme podsjetnika. Zapisi koji ističu sutra, danas ili su istekli i dalje dobijaju svoje.';
+
+  @override
+  String get secBillingChanged => 'Plan je promijenjen';
+
+  @override
+  String get plansSellerGoogle => 'Naplaćuje Google Play pod imenom Vorkalis, kompanije koja pravi Vaultaru.';
+
+  @override
+  String get plansSellerApple => 'Naplaćuje App Store pod imenom Vorkalis, kompanije koja pravi Vaultaru.';
+
+  @override
+  String get identityConfirmReason => 'Potvrdite da ste to vi';
+
+  @override
+  String get rootedTitle => 'Ovaj telefon izgleda rootan';
+
+  @override
+  String get rootedBody => 'Njegove uobičajene zaštite izgledaju isključene, pa druge aplikacije možda mogu čitati ono što Vaultara čuva na ovom telefonu. Vaš račun i dalje radi, ali su vaši zapisi sigurniji na telefonu koji nije rootan ni jailbreakan.';
+
+  @override
+  String get rootedOk => 'Razumijem';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Šifrirano ($number). Otključajte šifriranje na ovom telefonu ključem za oporavak da biste ga vidjeli ili promijenili.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Brojevi dokumenata u vašim zapisima zaključani su na isti način: samo posljednja četiri znaka čuvaju se čitljiva.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Poslali ste mnogo pitanja u posljednjih sat vremena. Možete ponovo pitati u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Dostigli ste današnje ograničenje za „Pitajte Vaultara“. Obnavlja se u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Dostigli ste današnje ograničenje za „Pitajte Vaultara“. Obnavlja se sutra u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
 }

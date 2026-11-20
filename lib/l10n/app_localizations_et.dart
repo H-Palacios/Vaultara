@@ -9524,4 +9524,48 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Sama päeva meeldetuletused tulevad ühe teatena sinu meeldetuletuse ajal. Homme või täna aeguvad ja aegunud kirjed saavad ikka oma teate.';
+
+  @override
+  String get secBillingChanged => 'Pakett muudetud';
+
+  @override
+  String get plansSellerGoogle => 'Arveldab Google Play nimega Vorkalis – ettevõte, mis teeb Vaultarat.';
+
+  @override
+  String get plansSellerApple => 'Arveldab App Store nimega Vorkalis – ettevõte, mis teeb Vaultarat.';
+
+  @override
+  String get identityConfirmReason => 'Kinnita, et see oled sina';
+
+  @override
+  String get rootedTitle => 'See telefon paistab olevat juurdunud (rooted)';
+
+  @override
+  String get rootedBody => 'Selle tavapärased kaitsed näivad olevat välja lülitatud, nii et teised rakendused võivad lugeda, mida Vaultara selles telefonis hoiab. Sinu konto töötab edasi, kuid kirjed on turvalisemad telefonis, mida pole rootitud ega jailbreak\'itud.';
+
+  @override
+  String get rootedOk => 'Saan aru';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Krüptitud ($number). Selle nägemiseks või muutmiseks ava krüptimine selles telefonis taastevõtmega.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Sinu kirjete dokumendinumbrid lukustatakse samamoodi: loetavana salvestatakse ainult viimased neli märki.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Saatsid viimase tunni jooksul palju küsimusi. Saad uuesti küsida kell $time. Kõik muu Vaultaras töötab tavapäraselt.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Jõudsid tänase „Küsi Vaultaralt“ piirini. See uueneb kell $time. Kõik muu Vaultaras töötab tavapäraselt.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Jõudsid tänase „Küsi Vaultaralt“ piirini. See uueneb homme kell $time. Kõik muu Vaultaras töötab tavapäraselt.';
+  }
 }

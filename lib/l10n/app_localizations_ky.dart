@@ -9518,4 +9518,48 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Бир күндөгү эскертүүлөр эскертүү убагыңызда бир билдирүү болуп келет. Эртең, бүгүн мөөнөтү бүтүүчү же бүткөн жазуулар өзүнчө келет.';
+
+  @override
+  String get secBillingChanged => 'План өзгөрдү';
+
+  @override
+  String get plansSellerGoogle => 'Google Play\'де Vaultara\'ны жасаган Vorkalis компаниясынын атынан төлөм алынат.';
+
+  @override
+  String get plansSellerApple => 'App Store\'до Vaultara\'ны жасаган Vorkalis компаниясынын атынан төлөм алынат.';
+
+  @override
+  String get identityConfirmReason => 'Бул сиз экениңизди ырастаңыз';
+
+  @override
+  String get rootedTitle => 'Бул телефон root кылынгандай көрүнөт';
+
+  @override
+  String get rootedBody => 'Анын кадимки коргоолору өчүрүлгөндөй, ошондуктан башка колдонмолор Vaultara бул телефондо сактаганды окуй алышы мүмкүн. Аккаунтуңуз иштей берет, бирок жазууларыңыз root же jailbreak кылынбаган телефондо коопсузураак.';
+
+  @override
+  String get rootedOk => 'Түшүндүм';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Шифрленген ($number). Көрүү же өзгөртүү үчүн бул телефондо калыбына келтирүү ачкычы менен шифрлөөнү ачыңыз.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Жазууларыңыздагы документ номерлери да ушундай кулпуланат: окула турган түрдө акыркы төрт белги гана сакталат.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Акыркы бир саатта көп суроо жөнөттүңүз. Саат $timeда кайра сурай аласыз. Vaultara\'нын калганы кадимкидей иштейт.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return '\"Vaultara\'дан сураңыз\"\'нын бүгүнкү чегине жеттиңиз. Ал саат $timeда жаңыланат. Vaultara\'нын калганы кадимкидей иштейт.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return '\"Vaultara\'дан сураңыз\"\'нын бүгүнкү чегине жеттиңиз. Ал эртең саат $timeда жаңыланат. Vaultara\'нын калганы кадимкидей иштейт.';
+  }
 }

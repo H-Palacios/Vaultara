@@ -9598,4 +9598,48 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Podsjetnici za isti dan stižu kao jedna obavijest u vrijeme podsjetnika. Zapisi koji istječu sutra, danas ili su istekli i dalje dobivaju svoju.';
+
+  @override
+  String get secBillingChanged => 'Paket je promijenjen';
+
+  @override
+  String get plansSellerGoogle => 'Naplaćuje Google Play kao Vorkalis, tvrtka koja izrađuje Vaultaru.';
+
+  @override
+  String get plansSellerApple => 'Naplaćuje App Store kao Vorkalis, tvrtka koja izrađuje Vaultaru.';
+
+  @override
+  String get identityConfirmReason => 'Potvrdite da ste to vi';
+
+  @override
+  String get rootedTitle => 'Ovaj telefon izgleda rootan';
+
+  @override
+  String get rootedBody => 'Njegove uobičajene zaštite izgledaju isključene, pa druge aplikacije možda mogu čitati ono što Vaultara čuva na ovom telefonu. Vaš račun i dalje radi, ali su vaši zapisi sigurniji na telefonu koji nije rootan ni jailbreakan.';
+
+  @override
+  String get rootedOk => 'Razumijem';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Šifrirano ($number). Otključajte šifriranje na ovom telefonu ključem za oporavak kako biste ga vidjeli ili promijenili.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Brojevi dokumenata u vašim zapisima zaključavaju se na isti način: čitljiva se spremaju samo posljednja četiri znaka.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Poslali ste mnogo pitanja u posljednjih sat vremena. Ponovno možete pitati u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Dosegli ste današnje ograničenje za „Pitajte Vaultara“. Obnavlja se u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Dosegli ste današnje ograničenje za „Pitajte Vaultara“. Obnavlja se sutra u $time. Sve ostalo u Vaultari radi kao i obično.';
+  }
 }

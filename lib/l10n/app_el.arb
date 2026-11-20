@@ -4025,5 +4025,77 @@
   "digestGroupedSubtitle": "Οι υπενθυμίσεις της ίδιας μέρας έρχονται ως μία ειδοποίηση στην ώρα υπενθύμισης. Όσες λήγουν αύριο, σήμερα ή έχουν λήξει έρχονται ξεχωριστά.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Το πρόγραμμα άλλαξε",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Χρεώνεται από το Google Play ως Vorkalis, η εταιρεία που φτιάχνει το Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Χρεώνεται από το App Store ως Vorkalis, η εταιρεία που φτιάχνει το Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Επιβεβαιώστε ότι είστε εσείς",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Αυτό το τηλέφωνο φαίνεται να έχει root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Οι συνήθεις προστασίες του φαίνονται απενεργοποιημένες, οπότε άλλες εφαρμογές ίσως μπορούν να διαβάσουν όσα κρατά το Vaultara σε αυτό το τηλέφωνο. Ο λογαριασμός σας λειτουργεί κανονικά, αλλά οι εγγραφές σας είναι πιο ασφαλείς σε τηλέφωνο χωρίς root ή jailbreak.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Κατάλαβα",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Κρυπτογραφημένο ({number}). Ξεκλειδώστε την κρυπτογράφηση σε αυτό το τηλέφωνο με το κλειδί ανάκτησης για να το δείτε ή να το αλλάξετε.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Οι αριθμοί εγγράφων στις εγγραφές σας κλειδώνονται με τον ίδιο τρόπο: μόνο οι τέσσερις τελευταίοι χαρακτήρες αποθηκεύονται αναγνώσιμοι.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Στείλατε πολλές ερωτήσεις την τελευταία ώρα. Μπορείτε να ρωτήσετε ξανά στις {time}. Όλα τα άλλα στο Vaultara λειτουργούν κανονικά.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Φτάσατε το σημερινό όριο του \"Ρωτήστε το Vaultara\". Ανανεώνεται στις {time}. Όλα τα άλλα στο Vaultara λειτουργούν κανονικά.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Φτάσατε το σημερινό όριο του \"Ρωτήστε το Vaultara\". Ανανεώνεται αύριο στις {time}. Όλα τα άλλα στο Vaultara λειτουργούν κανονικά.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

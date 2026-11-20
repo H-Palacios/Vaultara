@@ -9519,4 +9519,48 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Tunatarwa na rana ɗaya suna zuwa a matsayin sanarwa ɗaya a lokacin tunatarwarka. Rikodin da zai ƙare gobe, yau ko ya riga ya ƙare suna samun nasu.';
+
+  @override
+  String get secBillingChanged => 'An canza tsari';
+
+  @override
+  String get plansSellerGoogle => 'Google Play na karɓar kuɗi a matsayin Vorkalis, kamfanin da ke yin Vaultara.';
+
+  @override
+  String get plansSellerApple => 'App Store na karɓar kuɗi a matsayin Vorkalis, kamfanin da ke yin Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Tabbatar cewa kai ne';
+
+  @override
+  String get rootedTitle => 'Wannan wayar kamar an yi mata root';
+
+  @override
+  String get rootedBody => 'Kariyarta ta yau da kullum kamar an kashe ta, don haka wasu manhajoji za su iya karanta abin da Vaultara ke ajiyewa a wannan wayar. Asusunka yana aiki, amma bayananka sun fi aminci a wayar da ba a yi mata root ko jailbreak ba.';
+
+  @override
+  String get rootedOk => 'Na fahimta';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'An ɓoye ($number). Buɗe ɓoyewar a wannan wayar da maɓallin dawowarka don gani ko canza shi.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Lambobin takardu a cikin bayananka ana kulle su ta hanya ɗaya: haruffa huɗu na ƙarshe kawai ake ajiyewa a bayyane.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Ka aika tambayoyi da yawa a cikin awa ɗaya da ta gabata. Za ka iya sake tambaya da ƙarfe $time. Komai a cikin Vaultara yana aiki kamar yadda aka saba.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Ka kai iyakar \"Tambayi Vaultara\" ta yau. Za ta sake farawa da ƙarfe $time. Komai a cikin Vaultara yana aiki kamar yadda aka saba.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Ka kai iyakar \"Tambayi Vaultara\" ta yau. Za ta sake farawa gobe da ƙarfe $time. Komai a cikin Vaultara yana aiki kamar yadda aka saba.';
+  }
 }

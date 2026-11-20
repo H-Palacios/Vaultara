@@ -9518,4 +9518,48 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Бір күндегі еске салғыштар еске салу уақытыңызда бір хабарлама болып келеді. Ертең, бүгін мерзімі бітетін немесе біткен жазбалар бөлек келеді.';
+
+  @override
+  String get secBillingChanged => 'Жоспар өзгерді';
+
+  @override
+  String get plansSellerGoogle => 'Google Play-де Vaultara-ны жасайтын Vorkalis компаниясы атынан төлем алынады.';
+
+  @override
+  String get plansSellerApple => 'App Store-да Vaultara-ны жасайтын Vorkalis компаниясы атынан төлем алынады.';
+
+  @override
+  String get identityConfirmReason => 'Бұл сіз екеніңізді растаңыз';
+
+  @override
+  String get rootedTitle => 'Бұл телефон root жасалған сияқты';
+
+  @override
+  String get rootedBody => 'Оның әдеттегі қорғанысы өшірілген сияқты, сондықтан басқа қолданбалар Vaultara осы телефонда сақтайтын нәрсені оқи алуы мүмкін. Аккаунтыңыз жұмыс істей береді, бірақ жазбаларыңыз root не jailbreak жасалмаған телефонда қауіпсізірек.';
+
+  @override
+  String get rootedOk => 'Түсіндім';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Шифрланған ($number). Көру не өзгерту үшін осы телефонда қалпына келтіру кілтімен шифрлауды ашыңыз.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Жазбаларыңыздағы құжат нөмірлері де солай құлыпталады: оқылатын түрде тек соңғы төрт таңба сақталады.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Соңғы бір сағатта көп сұрақ жібердіңіз. Сағат $time-да қайта сұрай аласыз. Vaultara-ның қалған бөлігі әдеттегідей жұмыс істейді.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return '\"Vaultara-дан сұрау\"-ның бүгінгі шегіне жеттіңіз. Ол сағат $time-да жаңарады. Vaultara-ның қалған бөлігі әдеттегідей жұмыс істейді.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return '\"Vaultara-дан сұрау\"-ның бүгінгі шегіне жеттіңіз. Ол ертең сағат $time-да жаңарады. Vaultara-ның қалған бөлігі әдеттегідей жұмыс істейді.';
+  }
 }

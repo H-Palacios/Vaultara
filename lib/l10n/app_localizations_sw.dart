@@ -9519,4 +9519,48 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Vikumbusho vya siku moja huja kama arifa moja wakati wako wa kukumbusha. Rekodi zinazoisha kesho, leo au zilizoisha bado hupata zao.';
+
+  @override
+  String get secBillingChanged => 'Mpango umebadilishwa';
+
+  @override
+  String get plansSellerGoogle => 'Inatozwa na Google Play kama Vorkalis, kampuni inayotengeneza Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Inatozwa na App Store kama Vorkalis, kampuni inayotengeneza Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Thibitisha kuwa ni wewe';
+
+  @override
+  String get rootedTitle => 'Simu hii inaonekana imefanyiwa root';
+
+  @override
+  String get rootedBody => 'Ulinzi wake wa kawaida unaonekana umezimwa, hivyo programu nyingine zinaweza kusoma kile Vaultara huhifadhi kwenye simu hii. Akaunti yako bado inafanya kazi, lakini rekodi zako ziko salama zaidi kwenye simu isiyofanyiwa root wala jailbreak.';
+
+  @override
+  String get rootedOk => 'Nimeelewa';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Imesimbwa ($number). Fungua usimbaji kwenye simu hii kwa ufunguo wako wa urejeshaji ili kuiona au kuibadilisha.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Nambari za hati katika rekodi zako hufungwa kwa njia hiyo hiyo: ni herufi nne za mwisho tu zinazohifadhiwa zikisomeka.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Umetuma maswali mengi katika saa moja iliyopita. Unaweza kuuliza tena saa $time. Kila kitu kingine katika Vaultara kinafanya kazi kama kawaida.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Umefikia kikomo cha leo cha \"Uliza Vaultara\". Kitaanza upya saa $time. Kila kitu kingine katika Vaultara kinafanya kazi kama kawaida.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Umefikia kikomo cha leo cha \"Uliza Vaultara\". Kitaanza upya kesho saa $time. Kila kitu kingine katika Vaultara kinafanya kazi kama kawaida.';
+  }
 }

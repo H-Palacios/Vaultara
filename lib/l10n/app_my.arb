@@ -3768,5 +3768,77 @@
   "digestGroupedSubtitle": "တစ်နေ့တည်းရှိ သတိပေးချက်များကို သင့်သတိပေးချိန်တွင် အသိပေးချက်တစ်ခုအဖြစ် ပို့ပါမည်။ မနက်ဖြန်၊ ယနေ့ သက်တမ်းကုန်မည့် သို့ ကုန်ပြီးသော မှတ်တမ်းများကို သီးခြားပို့ပါမည်။",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "အစီအစဉ် ပြောင်းပြီးပါပြီ",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Play တွင် Vaultara ကို ပြုလုပ်သည့် ကုမ္ပဏီ Vorkalis အမည်ဖြင့် ငွေတောင်းခံပါသည်။",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Store တွင် Vaultara ကို ပြုလုပ်သည့် ကုမ္ပဏီ Vorkalis အမည်ဖြင့် ငွေတောင်းခံပါသည်။",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "သင်ဖြစ်ကြောင်း အတည်ပြုပါ",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "ဤဖုန်းကို root လုပ်ထားပုံရသည်",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "၎င်း၏ ပုံမှန်ကာကွယ်မှုများ ပိတ်ထားပုံရသဖြင့် အခြားအက်ပ်များသည် Vaultara က ဤဖုန်းတွင် သိမ်းထားသည်ကို ဖတ်နိုင်ပါသည်။ သင့်အကောင့် ဆက်အလုပ်လုပ်သော်လည်း root သို့ jailbreak မလုပ်ထားသော ဖုန်းတွင် မှတ်တမ်းများ ပိုလုံခြုံပါသည်။",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "နားလည်ပါပြီ",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "ကုဒ်ဝှက်ထားသည် ({number})။ ကြည့်ရန် သို့ ပြောင်းရန် ဤဖုန်းတွင် သင့်ပြန်လည်ရယူရေးကီးဖြင့် ကုဒ်ဝှက်မှုကို ဖွင့်ပါ။",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "သင့်မှတ်တမ်းများရှိ စာရွက်စာတမ်းနံပါတ်များကိုလည်း ထိုနည်းအတိုင်း သော့ခတ်ထားပြီး နောက်ဆုံးစာလုံးလေးလုံးကိုသာ ဖတ်နိုင်အောင် သိမ်းထားပါသည်။",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "လွန်ခဲ့သော တစ်နာရီအတွင်း မေးခွန်းများစွာ ပို့ခဲ့ပါသည်။ {time} တွင် ထပ်မေးနိုင်ပါသည်။ Vaultara ရှိ အခြားအရာအားလုံး ပုံမှန်အတိုင်း အလုပ်လုပ်ပါသည်။",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "ယနေ့အတွက် \"Vaultara ကို မေးရန်\" ကန့်သတ်ချက်သို့ ရောက်ပါပြီ။ {time} တွင် ပြန်စပါမည်။ Vaultara ရှိ အခြားအရာအားလုံး ပုံမှန်အတိုင်း အလုပ်လုပ်ပါသည်။",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "ယနေ့အတွက် \"Vaultara ကို မေးရန်\" ကန့်သတ်ချက်သို့ ရောက်ပါပြီ။ မနက်ဖြန် {time} တွင် ပြန်စပါမည်။ Vaultara ရှိ အခြားအရာအားလုံး ပုံမှန်အတိုင်း အလုပ်လုပ်ပါသည်။",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

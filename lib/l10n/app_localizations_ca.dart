@@ -9524,4 +9524,48 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Els recordatoris del mateix dia arriben com una sola notificació a l\'hora de recordatori. Els que caduquen demà, avui o ja han caducat en reben una de pròpia.';
+
+  @override
+  String get secBillingChanged => 'Pla canviat';
+
+  @override
+  String get plansSellerGoogle => 'Ho cobra Google Play com a Vorkalis, l\'empresa que fa Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Ho cobra l\'App Store com a Vorkalis, l\'empresa que fa Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Confirma que ets tu';
+
+  @override
+  String get rootedTitle => 'Sembla que aquest telèfon està rootejat';
+
+  @override
+  String get rootedBody => 'Sembla que les seves proteccions habituals estan desactivades, així que altres apps podrien llegir el que Vaultara desa en aquest telèfon. El teu compte continua funcionant, però els teus registres estan més segurs en un telèfon sense root ni jailbreak.';
+
+  @override
+  String get rootedOk => 'Ho entenc';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Xifrat ($number). Desbloqueja el xifratge en aquest telèfon amb la clau de recuperació per veure\'l o canviar-lo.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Els números de document dels teus registres es bloquegen de la mateixa manera: només els quatre últims caràcters es desen llegibles.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Has enviat moltes preguntes en l\'última hora. Pots tornar a preguntar a les $time. La resta de Vaultara funciona com sempre.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Has arribat al límit d\'avui de \"Pregunta a Vaultara\". Es renova a les $time. La resta de Vaultara funciona com sempre.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Has arribat al límit d\'avui de \"Pregunta a Vaultara\". Es renova demà a les $time. La resta de Vaultara funciona com sempre.';
+  }
 }

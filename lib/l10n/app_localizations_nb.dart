@@ -9524,4 +9524,48 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Påminnelser samme dag kommer som én varsling på påminnelsestidspunktet ditt. Oppføringer som utløper i morgen, i dag eller har utløpt, får fortsatt sin egen.';
+
+  @override
+  String get secBillingChanged => 'Abonnement endret';
+
+  @override
+  String get plansSellerGoogle => 'Belastes av Google Play som Vorkalis, selskapet som lager Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Belastes av App Store som Vorkalis, selskapet som lager Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Bekreft at det er deg';
+
+  @override
+  String get rootedTitle => 'Denne telefonen ser ut til å være rootet';
+
+  @override
+  String get rootedBody => 'De vanlige beskyttelsene ser ut til å være slått av, så andre apper kan kanskje lese det Vaultara lagrer på telefonen. Kontoen din fungerer fortsatt, men oppføringene dine er tryggere på en telefon som ikke er rootet eller jailbreaket.';
+
+  @override
+  String get rootedOk => 'Jeg forstår';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Kryptert ($number). Lås opp krypteringen på denne telefonen med gjenopprettingsnøkkelen for å se eller endre det.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Dokumentnumre i oppføringene dine låses på samme måte: bare de fire siste tegnene lagres lesbart.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Du har sendt mange spørsmål den siste timen. Du kan spørre igjen kl. $time. Alt annet i Vaultara fungerer som vanlig.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Du har nådd dagens grense for \"Spør Vaultara\". Den nullstilles kl. $time. Alt annet i Vaultara fungerer som vanlig.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Du har nådd dagens grense for \"Spør Vaultara\". Den nullstilles i morgen kl. $time. Alt annet i Vaultara fungerer som vanlig.';
+  }
 }

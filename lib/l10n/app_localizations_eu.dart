@@ -9524,4 +9524,48 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Egun bereko oroigarriak jakinarazpen bakar gisa iristen dira zure oroigarri-orduan. Bihar edo gaur iraungitzen direnek edo iraungitakoek berea jasotzen dute.';
+
+  @override
+  String get secBillingChanged => 'Plana aldatu da';
+
+  @override
+  String get plansSellerGoogle => 'Google Play-k kobratzen du Vorkalis izenarekin, Vaultara egiten duen enpresa.';
+
+  @override
+  String get plansSellerApple => 'App Store-k kobratzen du Vorkalis izenarekin, Vaultara egiten duen enpresa.';
+
+  @override
+  String get identityConfirmReason => 'Berretsi zu zarela';
+
+  @override
+  String get rootedTitle => 'Telefono honek root-a duela dirudi';
+
+  @override
+  String get rootedBody => 'Bere ohiko babesak desaktibatuta daudela dirudi, beraz beste aplikazio batzuek Vaultarak telefono honetan gordetzen duena irakur lezakete. Zure kontuak funtzionatzen jarraitzen du, baina zure erregistroak seguruago daude root edo jailbreak gabeko telefono batean.';
+
+  @override
+  String get rootedOk => 'Ulertzen dut';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Enkriptatuta ($number). Ikusteko edo aldatzeko, desblokeatu enkriptatzea telefono honetan berreskuratze-gakoarekin.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Zure erregistroetako dokumentu-zenbakiak modu berean blokeatzen dira: azken lau karaktereak bakarrik gordetzen dira irakurgarri.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Azken orduan galdera asko bidali dituzu. ${time}etan berriro galdetu ahal izango duzu. Vaultarako gainerako guztiak ohi bezala funtzionatzen du.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Gaurko \"Galdetu Vaultarari\" muga gainditu duzu. ${time}etan berrezartzen da. Vaultarako gainerako guztiak ohi bezala funtzionatzen du.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Gaurko \"Galdetu Vaultarari\" muga gainditu duzu. Bihar ${time}etan berrezartzen da. Vaultarako gainerako guztiak ohi bezala funtzionatzen du.';
+  }
 }

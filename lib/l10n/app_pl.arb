@@ -4018,5 +4018,77 @@
   "digestGroupedSubtitle": "Przypomnienia z tego samego dnia przychodzą jako jedno powiadomienie o twojej godzinie. Wpisy wygasające jutro, dziś lub już wygasłe nadal dostają własne.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Plan zmieniony",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Opłaty pobiera Google Play jako Vorkalis, firma, która tworzy Vaultarę.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Opłaty pobiera App Store jako Vorkalis, firma, która tworzy Vaultarę.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Potwierdź, że to Ty",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Ten telefon wygląda na zrootowany",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Jego zwykłe zabezpieczenia wydają się wyłączone, więc inne aplikacje mogą odczytać to, co Vaultara przechowuje na tym telefonie. Twoje konto nadal działa, ale wpisy są bezpieczniejsze na telefonie bez roota i jailbreaka.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Rozumiem",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Zaszyfrowane ({number}). Aby je zobaczyć lub zmienić, odblokuj szyfrowanie na tym telefonie kluczem odzyskiwania.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Numery dokumentów w Twoich wpisach są blokowane w ten sam sposób: czytelne pozostają tylko ostatnie cztery znaki.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "W ostatniej godzinie zadałeś wiele pytań. Możesz zapytać ponownie o {time}. Wszystko inne w Vaultarze działa jak zwykle.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Osiągnąłeś dzisiejszy limit „Zapytaj Vaultara”. Odnowi się o {time}. Wszystko inne w Vaultarze działa jak zwykle.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Osiągnąłeś dzisiejszy limit „Zapytaj Vaultara”. Odnowi się jutro o {time}. Wszystko inne w Vaultarze działa jak zwykle.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

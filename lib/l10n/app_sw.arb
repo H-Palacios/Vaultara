@@ -4018,5 +4018,77 @@
   "digestGroupedSubtitle": "Vikumbusho vya siku moja huja kama arifa moja wakati wako wa kukumbusha. Rekodi zinazoisha kesho, leo au zilizoisha bado hupata zao.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Mpango umebadilishwa",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Inatozwa na Google Play kama Vorkalis, kampuni inayotengeneza Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Inatozwa na App Store kama Vorkalis, kampuni inayotengeneza Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Thibitisha kuwa ni wewe",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Simu hii inaonekana imefanyiwa root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Ulinzi wake wa kawaida unaonekana umezimwa, hivyo programu nyingine zinaweza kusoma kile Vaultara huhifadhi kwenye simu hii. Akaunti yako bado inafanya kazi, lakini rekodi zako ziko salama zaidi kwenye simu isiyofanyiwa root wala jailbreak.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Nimeelewa",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Imesimbwa ({number}). Fungua usimbaji kwenye simu hii kwa ufunguo wako wa urejeshaji ili kuiona au kuibadilisha.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Nambari za hati katika rekodi zako hufungwa kwa njia hiyo hiyo: ni herufi nne za mwisho tu zinazohifadhiwa zikisomeka.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Umetuma maswali mengi katika saa moja iliyopita. Unaweza kuuliza tena saa {time}. Kila kitu kingine katika Vaultara kinafanya kazi kama kawaida.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Umefikia kikomo cha leo cha \"Uliza Vaultara\". Kitaanza upya saa {time}. Kila kitu kingine katika Vaultara kinafanya kazi kama kawaida.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Umefikia kikomo cha leo cha \"Uliza Vaultara\". Kitaanza upya kesho saa {time}. Kila kitu kingine katika Vaultara kinafanya kazi kama kawaida.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

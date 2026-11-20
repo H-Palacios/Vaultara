@@ -9534,4 +9534,48 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Les rappels du même jour arrivent en une seule notification à votre heure de rappel. Ceux qui expirent demain, aujourd\'hui ou ont expiré arrivent toujours seuls.';
+
+  @override
+  String get secBillingChanged => 'Offre modifiée';
+
+  @override
+  String get plansSellerGoogle => 'Facturé par Google Play au nom de Vorkalis, la société qui fait Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Facturé par l\'App Store au nom de Vorkalis, la société qui fait Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Confirmez que c\'est vous';
+
+  @override
+  String get rootedTitle => 'Ce téléphone semble rooté';
+
+  @override
+  String get rootedBody => 'Ses protections habituelles semblent désactivées, donc d\'autres apps pourraient lire ce que Vaultara garde sur ce téléphone. Votre compte fonctionne toujours, mais vos fiches sont plus sûres sur un téléphone ni rooté ni jailbreaké.';
+
+  @override
+  String get rootedOk => 'J\'ai compris';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Chiffré ($number). Déverrouillez le chiffrement sur ce téléphone avec votre clé de récupération pour le voir ou le modifier.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Les numéros de document de vos fiches sont verrouillés de la même façon : seuls les quatre derniers caractères sont gardés lisibles.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Vous avez envoyé beaucoup de questions dans la dernière heure. Vous pourrez redemander à $time. Tout le reste de Vaultara fonctionne normalement.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Vous avez atteint la limite du jour de « Demander à Vaultara ». Elle se réinitialise à $time. Tout le reste de Vaultara fonctionne normalement.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Vous avez atteint la limite du jour de « Demander à Vaultara ». Elle se réinitialise demain à $time. Tout le reste de Vaultara fonctionne normalement.';
+  }
 }

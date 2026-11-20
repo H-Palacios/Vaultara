@@ -3768,5 +3768,77 @@
   "digestGroupedSubtitle": "ការរំលឹកនៅថ្ងៃតែមួយមកជាការជូនដំណឹងតែមួយនៅម៉ោងរំលឹករបស់អ្នក។ កំណត់ត្រាដែលផុតកំណត់ថ្ងៃស្អែក ថ្ងៃនេះ ឬផុតកំណត់ហើយ នៅតែមកដាច់ដោយឡែក។",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "បានប្ដូរគម្រោង",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "គិតប្រាក់ដោយ Google Play ក្នុងនាម Vorkalis ដែលជាក្រុមហ៊ុនបង្កើត Vaultara។",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "គិតប្រាក់ដោយ App Store ក្នុងនាម Vorkalis ដែលជាក្រុមហ៊ុនបង្កើត Vaultara។",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "បញ្ជាក់ថាជាអ្នក",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "ទូរសព្ទនេះហាក់ដូចជាបាន root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "ការការពារធម្មតារបស់វាហាក់ដូចជាត្រូវបានបិទ ដូច្នេះកម្មវិធីផ្សេងទៀតអាចអានអ្វីដែល Vaultara រក្សាទុកនៅលើទូរសព្ទនេះ។ គណនីរបស់អ្នកនៅតែដំណើរការ ប៉ុន្តែកំណត់ត្រារបស់អ្នកមានសុវត្ថិភាពជាងនៅលើទូរសព្ទដែលមិនបាន root ឬ jailbreak។",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "ខ្ញុំយល់ហើយ",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "បានអ៊ិនគ្រីប ({number})។ ដោះសោការអ៊ិនគ្រីបនៅលើទូរសព្ទនេះដោយសោស្ដាររបស់អ្នក ដើម្បីមើល ឬប្ដូរវា។",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "លេខឯកសារក្នុងកំណត់ត្រារបស់អ្នកត្រូវបានចាក់សោតាមរបៀបដូចគ្នា៖ មានតែតួអក្សរបួនចុងក្រោយប៉ុណ្ណោះដែលរក្សាទុកជាអាចអានបាន។",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "អ្នកបានផ្ញើសំណួរច្រើនក្នុងរយៈពេលមួយម៉ោងចុងក្រោយ។ អ្នកអាចសួរម្ដងទៀតនៅម៉ោង {time}។ អ្វីៗផ្សេងទៀតក្នុង Vaultara ដំណើរការធម្មតា។",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "អ្នកបានដល់ដែនកំណត់ \"សួរ Vaultara\" សម្រាប់ថ្ងៃនេះហើយ។ វានឹងកំណត់ឡើងវិញនៅម៉ោង {time}។ អ្វីៗផ្សេងទៀតក្នុង Vaultara ដំណើរការធម្មតា។",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "អ្នកបានដល់ដែនកំណត់ \"សួរ Vaultara\" សម្រាប់ថ្ងៃនេះហើយ។ វានឹងកំណត់ឡើងវិញថ្ងៃស្អែកនៅម៉ោង {time}។ អ្វីៗផ្សេងទៀតក្នុង Vaultara ដំណើរការធម្មតា។",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

@@ -4035,5 +4035,77 @@
   "digestGroupedSubtitle": "ఒకే రోజు రిమైండర్‌లు మీ రిమైండర్ సమయంలో ఒకే నోటిఫికేషన్‌గా వస్తాయి. రేపు, ఈరోజు గడువు ముగిసే లేదా ముగిసిన రికార్డులకు ఇప్పటికీ వేరుగా వస్తుంది.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "ప్లాన్ మారింది",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Playలో Vaultaraను తయారు చేసే కంపెనీ Vorkalis పేరుతో బిల్ అవుతుంది.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Storeలో Vaultaraను తయారు చేసే కంపెనీ Vorkalis పేరుతో బిల్ అవుతుంది.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "ఇది మీరేనని నిర్ధారించండి",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "ఈ ఫోన్ రూట్ చేసినట్లు కనిపిస్తోంది",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "దీని సాధారణ రక్షణలు ఆఫ్ అయినట్లు కనిపిస్తోంది, కాబట్టి ఈ ఫోన్‌లో Vaultara ఉంచే వాటిని ఇతర యాప్‌లు చదవగలవు. మీ ఖాతా పని చేస్తూనే ఉంటుంది, కానీ రూట్ లేదా జైల్‌బ్రేక్ చేయని ఫోన్‌లో మీ రికార్డులు మరింత సురక్షితం.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "నాకు అర్థమైంది",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "ఎన్‌క్రిప్ట్ చేయబడింది ({number}). చూడటానికి లేదా మార్చడానికి ఈ ఫోన్‌లో మీ రికవరీ కీతో ఎన్‌క్రిప్షన్‌ను అన్‌లాక్ చేయండి.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "మీ రికార్డుల్లోని డాక్యుమెంట్ నంబర్లు కూడా ఇలాగే లాక్ అవుతాయి: చివరి నాలుగు అక్షరాలు మాత్రమే చదవగలిగేలా సేవ్ అవుతాయి.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "గత గంటలో మీరు చాలా ప్రశ్నలు పంపారు. {time}కు మళ్లీ అడగవచ్చు. Vaultaraలో మిగతావన్నీ ఎప్పటిలాగే పని చేస్తాయి.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "మీరు ఈ రోజు \"Vaultaraను అడగండి\" పరిమితిని చేరుకున్నారు. ఇది {time}కు రీసెట్ అవుతుంది. Vaultaraలో మిగతావన్నీ ఎప్పటిలాగే పని చేస్తాయి.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "మీరు ఈ రోజు \"Vaultaraను అడగండి\" పరిమితిని చేరుకున్నారు. ఇది రేపు {time}కు రీసెట్ అవుతుంది. Vaultaraలో మిగతావన్నీ ఎప్పటిలాగే పని చేస్తాయి.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

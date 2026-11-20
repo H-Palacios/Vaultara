@@ -4049,5 +4049,77 @@
   "digestGroupedSubtitle": "Påmindelser samme dag kommer som én notifikation på dit påmindelsestidspunkt. Poster, der udløber i morgen, i dag eller er udløbet, får stadig deres egen.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "Abonnement ændret",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Opkræves af Google Play som Vorkalis, firmaet bag Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "Opkræves af App Store som Vorkalis, firmaet bag Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Bekræft, at det er dig",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Denne telefon ser ud til at være rootet",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Dens normale beskyttelse ser ud til at være slået fra, så andre apps kan måske læse det, Vaultara gemmer på telefonen. Din konto virker stadig, men dine poster er mere sikre på en telefon, der ikke er rootet eller jailbreaket.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Jeg forstår",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Krypteret ({number}). Lås krypteringen op på denne telefon med din gendannelsesnøgle for at se eller ændre det.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Dokumentnumre i dine poster låses på samme måde: kun de sidste fire tegn gemmes læsbart.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "Du har sendt mange spørgsmål den seneste time. Du kan spørge igen kl. {time}. Alt andet i Vaultara virker som normalt.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "Du har nået dagens grænse for »Spørg Vaultara«. Den nulstilles kl. {time}. Alt andet i Vaultara virker som normalt.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "Du har nået dagens grænse for »Spørg Vaultara«. Den nulstilles i morgen kl. {time}. Alt andet i Vaultara virker som normalt.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

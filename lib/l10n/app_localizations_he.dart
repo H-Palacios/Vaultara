@@ -9581,4 +9581,48 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'תזכורות באותו יום מגיעות כהתראה אחת בשעת התזכורת שלך. רשומות שפגות מחר, היום או שכבר פגו עדיין מקבלות התראה משלהן.';
+
+  @override
+  String get secBillingChanged => 'התוכנית שונתה';
+
+  @override
+  String get plansSellerGoogle => 'החיוב ב-Google Play הוא בשם Vorkalis, החברה שמפתחת את Vaultara.';
+
+  @override
+  String get plansSellerApple => 'החיוב ב-App Store הוא בשם Vorkalis, החברה שמפתחת את Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'אשרו שזה אתם';
+
+  @override
+  String get rootedTitle => 'נראה שבטלפון הזה בוצע רוט';
+
+  @override
+  String get rootedBody => 'נראה שההגנות הרגילות שלו כבויות, כך שאפליקציות אחרות עלולות לקרוא את מה ש-Vaultara שומרת בטלפון הזה. החשבון שלכם ממשיך לעבוד, אבל הרשומות שלכם בטוחות יותר בטלפון בלי רוט או ג\'יילברייק.';
+
+  @override
+  String get rootedOk => 'הבנתי';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'מוצפן ($number). כדי לראות או לשנות, בטלו את נעילת ההצפנה בטלפון הזה עם מפתח השחזור.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'מספרי מסמכים ברשומות שלכם ננעלים באותה דרך: רק ארבעת התווים האחרונים נשמרים קריאים.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'שלחתם הרבה שאלות בשעה האחרונה. אפשר לשאול שוב ב-$time. כל השאר ב-Vaultara עובד כרגיל.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'הגעתם למגבלה היומית של \"שאל את Vaultara\". היא מתאפסת ב-$time. כל השאר ב-Vaultara עובד כרגיל.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'הגעתם למגבלה היומית של \"שאל את Vaultara\". היא מתאפסת מחר ב-$time. כל השאר ב-Vaultara עובד כרגיל.';
+  }
 }

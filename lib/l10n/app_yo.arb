@@ -4018,5 +4018,77 @@
   "digestGroupedSubtitle": "Àwọn ìrántí ọjọ́ kan náà máa ń wá gẹ́gẹ́ bí ìkìlọ̀ kan ní àkókò ìrántí rẹ. Àwọn àkọsílẹ̀ tí yóò parí ní ọ̀la, lónìí tàbí tí ó ti parí ṣì máa ń gba tiwọn.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "A ti yí ètò padà",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "Google Play ń gba owó gẹ́gẹ́ bí Vorkalis, ilé-iṣẹ́ tó ń ṣe Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "App Store ń gba owó gẹ́gẹ́ bí Vorkalis, ilé-iṣẹ́ tó ń ṣe Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "Jẹ́rìí pé ìwọ ni",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "Ó dà bí ẹni pé wọ́n ti root fóònù yìí",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "Ó dà bí ẹni pé ààbò rẹ̀ déédéé ti di pípa, nítorí náà àwọn áàpù mìíràn lè ka ohun tí Vaultara ń tọ́jú sórí fóònù yìí. Àkọọ́lẹ̀ rẹ ṣì ń ṣiṣẹ́, ṣùgbọ́n àwọn àkọsílẹ̀ rẹ wà láìléwu jù lórí fóònù tí kò sí root tàbí jailbreak.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "Mo yé mi",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "Ti pa àrokò mọ́ ({number}). Ṣí àrokò náà lórí fóònù yìí pẹ̀lú kọ́kọ́rọ́ ìmúpadà rẹ láti rí i tàbí yí i padà.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "Àwọn nọ́ńbà ìwé nínú àwọn àkọsílẹ̀ rẹ ni a tì pa lọ́nà kan náà: ẹ̀yà mẹ́rin tó kẹ́yìn nìkan ni a ń tọ́jú ní ọ̀nà tí a lè kà.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "O ti fi ọ̀pọ̀ ìbéèrè ránṣẹ́ ní wákàtí kan sẹ́yìn. O lè tún béèrè ní {time}. Gbogbo nǹkan mìíràn nínú Vaultara ń ṣiṣẹ́ bí ó ti máa ń ṣe.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "O ti dé òpin \"Béèrè Vaultara\" ti òní. Yóò tún bẹ̀rẹ̀ ní {time}. Gbogbo nǹkan mìíràn nínú Vaultara ń ṣiṣẹ́ bí ó ti máa ń ṣe.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "O ti dé òpin \"Béèrè Vaultara\" ti òní. Yóò tún bẹ̀rẹ̀ ní ọ̀la ní {time}. Gbogbo nǹkan mìíràn nínú Vaultara ń ṣiṣẹ́ bí ó ti máa ń ṣe.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

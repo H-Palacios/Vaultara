@@ -16236,6 +16236,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reminders on the same day come as one notification at your reminder time. Records due tomorrow, due today or expired still get their own.'**
   String get digestGroupedSubtitle;
+
+  /// Billing history: the person moved to another plan or billing period.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan changed'**
+  String get secBillingChanged;
+
+  /// Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Billed by Google Play as Vorkalis, the company that makes Vaultara.'**
+  String get plansSellerGoogle;
+
+  /// Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Billed by the App Store as Vorkalis, the company that makes Vaultara.'**
+  String get plansSellerApple;
+
+  /// Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm it\'s you'**
+  String get identityConfirmReason;
+
+  /// One-time warning title: the phone looks rooted or jailbroken.
+  ///
+  /// In en, this message translates to:
+  /// **'This phone looks rooted'**
+  String get rootedTitle;
+
+  /// One-time warning body for a rooted or jailbroken phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Its normal protections seem to be turned off, so other apps may be able to read what Vaultara keeps on this phone. Your account still works, but your records are safer on a phone that is not rooted or jailbroken.'**
+  String get rootedBody;
+
+  /// Button that closes the rooted phone warning.
+  ///
+  /// In en, this message translates to:
+  /// **'I understand'**
+  String get rootedOk;
+
+  /// Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.
+  ///
+  /// In en, this message translates to:
+  /// **'Encrypted ({number}). Unlock encryption on this phone with your recovery key to see or change it.'**
+  String detailsReferenceLocked(String number);
+
+  /// Encrypted photos screen: document numbers are encrypted with the same key.
+  ///
+  /// In en, this message translates to:
+  /// **'Document numbers in your records are locked the same way: only the last four characters are stored readable.'**
+  String get photoLockNumbersToo;
+
+  /// Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve sent a lot of questions in the last hour. You can ask again at {time}. Everything else in Vaultara works as usual.'**
+  String assistantLimitHour(String time);
+
+  /// Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve reached today\'s Ask Vaultara limit. It resets at {time}. Everything else in Vaultara works as usual.'**
+  String assistantLimitToday(String time);
+
+  /// Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve reached today\'s Ask Vaultara limit. It resets tomorrow at {time}. Everything else in Vaultara works as usual.'**
+  String assistantLimitTomorrow(String time);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

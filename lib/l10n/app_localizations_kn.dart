@@ -9519,4 +9519,48 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'ಒಂದೇ ದಿನದ ಜ್ಞಾಪನೆಗಳು ನಿಮ್ಮ ಜ್ಞಾಪನೆ ಸಮಯದಲ್ಲಿ ಒಂದು ಅಧಿಸೂಚನೆಯಾಗಿ ಬರುತ್ತವೆ. ನಾಳೆ, ಇಂದು ಮುಗಿಯುವ ಅಥವಾ ಮುಗಿದ ದಾಖಲೆಗಳು ಇನ್ನೂ ಪ್ರತ್ಯೇಕವಾಗಿ ಬರುತ್ತವೆ.';
+
+  @override
+  String get secBillingChanged => 'ಪ್ಲಾನ್ ಬದಲಾಗಿದೆ';
+
+  @override
+  String get plansSellerGoogle => 'Google Play ನಲ್ಲಿ Vorkalis ಹೆಸರಿನಲ್ಲಿ ಬಿಲ್ ಆಗುತ್ತದೆ, Vaultara ತಯಾರಿಸುವ ಕಂಪನಿ.';
+
+  @override
+  String get plansSellerApple => 'App Store ನಲ್ಲಿ Vorkalis ಹೆಸರಿನಲ್ಲಿ ಬಿಲ್ ಆಗುತ್ತದೆ, Vaultara ತಯಾರಿಸುವ ಕಂಪನಿ.';
+
+  @override
+  String get identityConfirmReason => 'ಇದು ನೀವೇ ಎಂದು ದೃಢೀಕರಿಸಿ';
+
+  @override
+  String get rootedTitle => 'ಈ ಫೋನ್ ರೂಟ್ ಮಾಡಿದಂತಿದೆ';
+
+  @override
+  String get rootedBody => 'ಇದರ ಸಾಮಾನ್ಯ ರಕ್ಷಣೆಗಳು ಆಫ್ ಆಗಿರುವಂತಿವೆ, ಹಾಗಾಗಿ ಇತರ ಆ್ಯಪ್‌ಗಳು ಈ ಫೋನ್‌ನಲ್ಲಿ Vaultara ಇಡುವುದನ್ನು ಓದಬಹುದು. ನಿಮ್ಮ ಖಾತೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ, ಆದರೆ ರೂಟ್ ಅಥವಾ ಜೈಲ್‌ಬ್ರೇಕ್ ಮಾಡದ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ ದಾಖಲೆಗಳು ಹೆಚ್ಚು ಸುರಕ್ಷಿತ.';
+
+  @override
+  String get rootedOk => 'ನನಗೆ ಅರ್ಥವಾಯಿತು';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಲಾಗಿದೆ ($number). ನೋಡಲು ಅಥವಾ ಬದಲಿಸಲು ಈ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ ರಿಕವರಿ ಕೀಯಿಂದ ಎನ್‌ಕ್ರಿಪ್ಶನ್ ಅನ್‌ಲಾಕ್ ಮಾಡಿ.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'ನಿಮ್ಮ ದಾಖಲೆಗಳಲ್ಲಿನ ದಾಖಲೆ ಸಂಖ್ಯೆಗಳೂ ಹಾಗೆಯೇ ಲಾಕ್ ಆಗುತ್ತವೆ: ಕೊನೆಯ ನಾಲ್ಕು ಅಕ್ಷರಗಳನ್ನು ಮಾತ್ರ ಓದುವಂತೆ ಉಳಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'ಕಳೆದ ಒಂದು ಗಂಟೆಯಲ್ಲಿ ನೀವು ಹಲವು ಪ್ರಶ್ನೆಗಳನ್ನು ಕಳುಹಿಸಿದ್ದೀರಿ. $time ಕ್ಕೆ ಮತ್ತೆ ಕೇಳಬಹುದು. Vaultara ದಲ್ಲಿ ಉಳಿದೆಲ್ಲವೂ ಎಂದಿನಂತೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'ಇಂದಿನ \"Vaultara ಅನ್ನು ಕೇಳಿ\" ಮಿತಿಯನ್ನು ತಲುಪಿದ್ದೀರಿ. ಅದು $time ಕ್ಕೆ ಮರುಹೊಂದಿಸಲ್ಪಡುತ್ತದೆ. Vaultara ದಲ್ಲಿ ಉಳಿದೆಲ್ಲವೂ ಎಂದಿನಂತೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'ಇಂದಿನ \"Vaultara ಅನ್ನು ಕೇಳಿ\" ಮಿತಿಯನ್ನು ತಲುಪಿದ್ದೀರಿ. ಅದು ನಾಳೆ $time ಕ್ಕೆ ಮರುಹೊಂದಿಸಲ್ಪಡುತ್ತದೆ. Vaultara ದಲ್ಲಿ ಉಳಿದೆಲ್ಲವೂ ಎಂದಿನಂತೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ.';
+  }
 }

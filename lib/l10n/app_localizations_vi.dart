@@ -9456,4 +9456,48 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Các lời nhắc cùng ngày sẽ gộp thành một thông báo vào giờ nhắc của bạn. Mục hết hạn ngày mai, hôm nay hoặc đã hết hạn vẫn được báo riêng.';
+
+  @override
+  String get secBillingChanged => 'Đã đổi gói';
+
+  @override
+  String get plansSellerGoogle => 'Được Google Play tính phí dưới tên Vorkalis, công ty làm ra Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Được App Store tính phí dưới tên Vorkalis, công ty làm ra Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Xác nhận đó là bạn';
+
+  @override
+  String get rootedTitle => 'Điện thoại này có vẻ đã bị root';
+
+  @override
+  String get rootedBody => 'Các lớp bảo vệ thông thường của máy có vẻ đã bị tắt, nên ứng dụng khác có thể đọc những gì Vaultara lưu trên điện thoại này. Tài khoản của bạn vẫn hoạt động, nhưng hồ sơ của bạn an toàn hơn trên điện thoại không root hay jailbreak.';
+
+  @override
+  String get rootedOk => 'Tôi hiểu';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Đã mã hóa ($number). Mở khóa mã hóa trên điện thoại này bằng khóa khôi phục để xem hoặc thay đổi.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Số giấy tờ trong hồ sơ của bạn cũng được khóa như vậy: chỉ bốn ký tự cuối được lưu ở dạng đọc được.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Bạn đã gửi nhiều câu hỏi trong một giờ qua. Bạn có thể hỏi lại lúc $time. Mọi thứ khác trong Vaultara vẫn hoạt động bình thường.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Bạn đã đạt giới hạn \"Hỏi Vaultara\" hôm nay. Giới hạn đặt lại lúc $time. Mọi thứ khác trong Vaultara vẫn hoạt động bình thường.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Bạn đã đạt giới hạn \"Hỏi Vaultara\" hôm nay. Giới hạn đặt lại vào ngày mai lúc $time. Mọi thứ khác trong Vaultara vẫn hoạt động bình thường.';
+  }
 }

@@ -9467,4 +9467,48 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Ihe ncheta n\'otu ụbọchị na-abịa dịka otu ọkwa n\'oge ncheta gị. Ndekọ ga-agwụ echi, taa ma ọ bụ nke gwụchara ka na-enweta nke ha.';
+
+  @override
+  String get secBillingChanged => 'Agbanwere atụmatụ';
+
+  @override
+  String get plansSellerGoogle => 'Google Play na-ana ego dịka Vorkalis, ụlọ ọrụ na-eme Vaultara.';
+
+  @override
+  String get plansSellerApple => 'App Store na-ana ego dịka Vorkalis, ụlọ ọrụ na-eme Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Kwado na ọ bụ gị';
+
+  @override
+  String get rootedTitle => 'Ekwentị a yiri ka e mere ya root';
+
+  @override
+  String get rootedBody => 'Nchebe ya nkịtị yiri ka agbanyụrụ ya, ya mere ngwa ndị ọzọ nwere ike ịgụ ihe Vaultara na-edebe na ekwentị a. Akaụntụ gị ka na-arụ ọrụ, mana ndekọ gị dị nchebe karịa na ekwentị a na-emeghị root ma ọ bụ jailbreak.';
+
+  @override
+  String get rootedOk => 'Aghọtara m';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'E zoro ezo ($number). Mepee nzuzo na ekwentị a site na igodo mgbake gị iji hụ ma ọ bụ gbanwee ya.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'A na-akpọchi nọmba akwụkwọ dị na ndekọ gị n\'otu ụzọ ahụ: ọ bụ naanị mkpụrụedemede anọ ikpeazụ ka a na-echekwa ka a gụọ.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'I zitela ọtụtụ ajụjụ n\'ime otu awa gara aga. Ị nwere ike ịjụ ọzọ n\'elekere $time. Ihe ndị ọzọ niile na Vaultara na-arụ ọrụ dịka ọ na-adị.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'I ruola oke \"Jụọ Vaultara\" nke taa. Ọ ga-amalite ọzọ n\'elekere $time. Ihe ndị ọzọ niile na Vaultara na-arụ ọrụ dịka ọ na-adị.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'I ruola oke \"Jụọ Vaultara\" nke taa. Ọ ga-amalite ọzọ echi n\'elekere $time. Ihe ndị ọzọ niile na Vaultara na-arụ ọrụ dịka ọ na-adị.';
+  }
 }

@@ -4036,5 +4036,77 @@
   "digestGroupedSubtitle": "ການແຈ້ງເຕືອນມື້ດຽວກັນຈະມາເປັນການແຈ້ງເຕືອນດຽວໃນເວລາເຕືອນຂອງທ່ານ. ລາຍການທີ່ໝົດອາຍຸມື້ອື່ນ, ມື້ນີ້ ຫຼື ໝົດແລ້ວ ຍັງມາແຍກ.",
   "@digestGroupedSubtitle": {
     "description": "digestGroupedSubtitle"
+  },
+  "secBillingChanged": "ປ່ຽນແຜນແລ້ວ",
+  "@secBillingChanged": {
+    "description": "Billing history: the person moved to another plan or billing period."
+  },
+  "plansSellerGoogle": "ເກັບເງິນໂດຍ Google Play ໃນນາມ Vorkalis, ບໍລິສັດທີ່ສ້າງ Vaultara.",
+  "@plansSellerGoogle": {
+    "description": "Plans screen, under the prices on Android: the store receipts name the company Vorkalis, not the app."
+  },
+  "plansSellerApple": "ເກັບເງິນໂດຍ App Store ໃນນາມ Vorkalis, ບໍລິສັດທີ່ສ້າງ Vaultara.",
+  "@plansSellerApple": {
+    "description": "Plans screen, under the prices on iPhone: the store receipts name the company Vorkalis, not the app."
+  },
+  "identityConfirmReason": "ຢືນຢັນວ່າແມ່ນທ່ານ",
+  "@identityConfirmReason": {
+    "description": "Reason shown by the fingerprint, face or PIN prompt before an export or the recovery key."
+  },
+  "rootedTitle": "ໂທລະສັບນີ້ເບິ່ງຄືຖືກ root",
+  "@rootedTitle": {
+    "description": "One-time warning title: the phone looks rooted or jailbroken."
+  },
+  "rootedBody": "ການປ້ອງກັນປົກກະຕິຂອງມັນເບິ່ງຄືຖືກປິດ, ສະນັ້ນແອັບອື່ນອາດອ່ານສິ່ງທີ່ Vaultara ເກັບໄວ້ໃນໂທລະສັບນີ້ໄດ້. ບັນຊີຂອງທ່ານຍັງໃຊ້ໄດ້, ແຕ່ບັນທຶກຂອງທ່ານປອດໄພກວ່າໃນໂທລະສັບທີ່ບໍ່ໄດ້ root ຫຼື jailbreak.",
+  "@rootedBody": {
+    "description": "One-time warning body for a rooted or jailbroken phone."
+  },
+  "rootedOk": "ຂ້ອຍເຂົ້າໃຈ",
+  "@rootedOk": {
+    "description": "Button that closes the rooted phone warning."
+  },
+  "detailsReferenceLocked": "ເຂົ້າລະຫັດແລ້ວ ({number}). ປົດລັອກການເຂົ້າລະຫັດໃນໂທລະສັບນີ້ດ້ວຍກະແຈກູ້ຄືນເພື່ອເບິ່ງ ຫຼື ປ່ຽນມັນ.",
+  "@detailsReferenceLocked": {
+    "description": "Record form, under the document number when it is encrypted and this phone cannot open it. The placeholder is the masked number, e.g. •••• 1234.",
+    "placeholders": {
+      "number": {
+        "type": "String",
+        "example": "•••• 1234"
+      }
+    }
+  },
+  "photoLockNumbersToo": "ເລກເອກະສານໃນບັນທຶກຂອງທ່ານຖືກລັອກແບບດຽວກັນ: ມີແຕ່ສີ່ຕົວອັກສອນສຸດທ້າຍທີ່ເກັບແບບອ່ານໄດ້.",
+  "@photoLockNumbersToo": {
+    "description": "Encrypted photos screen: document numbers are encrypted with the same key."
+  },
+  "assistantLimitHour": "ທ່ານສົ່ງຄຳຖາມຫຼາຍໃນຊົ່ວໂມງທີ່ຜ່ານມາ. ທ່ານສາມາດຖາມໄດ້ອີກຕອນ {time}. ສ່ວນອື່ນທັງໝົດໃນ Vaultara ຍັງໃຊ້ງານໄດ້ຕາມປົກກະຕິ.",
+  "@assistantLimitHour": {
+    "description": "Ask Vaultara: the per-hour limit was reached. The placeholder is the local time it ends, e.g. 14:05.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitToday": "ທ່ານຮອດຂີດຈຳກັດ \"ຖາມ Vaultara\" ຂອງມື້ນີ້ແລ້ວ. ມັນຈະເລີ່ມໃໝ່ຕອນ {time}. ສ່ວນອື່ນທັງໝົດໃນ Vaultara ຍັງໃຊ້ງານໄດ້ຕາມປົກກະຕິ.",
+  "@assistantLimitToday": {
+    "description": "Ask Vaultara: the daily limit was reached and ends later today. The placeholder is the local time, e.g. 21:40.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
+  },
+  "assistantLimitTomorrow": "ທ່ານຮອດຂີດຈຳກັດ \"ຖາມ Vaultara\" ຂອງມື້ນີ້ແລ້ວ. ມັນຈະເລີ່ມໃໝ່ມື້ອື່ນຕອນ {time}. ສ່ວນອື່ນທັງໝົດໃນ Vaultara ຍັງໃຊ້ງານໄດ້ຕາມປົກກະຕິ.",
+  "@assistantLimitTomorrow": {
+    "description": "Ask Vaultara: the daily limit was reached and ends tomorrow. The placeholder is the local time, e.g. 09:15.",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:05"
+      }
+    }
   }
 }

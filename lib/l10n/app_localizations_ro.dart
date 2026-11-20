@@ -9605,4 +9605,48 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Mementourile din aceeași zi vin ca o singură notificare la ora mementourilor. Cele care expiră mâine, azi sau au expirat vin în continuare separat.';
+
+  @override
+  String get secBillingChanged => 'Plan schimbat';
+
+  @override
+  String get plansSellerGoogle => 'Facturat prin Google Play ca Vorkalis, compania care face Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Facturat prin App Store ca Vorkalis, compania care face Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Confirmă că ești tu';
+
+  @override
+  String get rootedTitle => 'Acest telefon pare să aibă root';
+
+  @override
+  String get rootedBody => 'Protecțiile sale obișnuite par dezactivate, așa că alte aplicații ar putea citi ce păstrează Vaultara pe acest telefon. Contul tău funcționează în continuare, dar înregistrările tale sunt mai sigure pe un telefon fără root sau jailbreak.';
+
+  @override
+  String get rootedOk => 'Am înțeles';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Criptat ($number). Deblochează criptarea pe acest telefon cu cheia de recuperare ca să-l vezi sau să-l schimbi.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Numerele documentelor din înregistrările tale sunt blocate la fel: doar ultimele patru caractere rămân lizibile.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Ai trimis multe întrebări în ultima oră. Poți întreba din nou la $time. Tot restul din Vaultara funcționează ca de obicei.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Ai atins limita de azi pentru „Întreabă Vaultara”. Se resetează la $time. Tot restul din Vaultara funcționează ca de obicei.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Ai atins limita de azi pentru „Întreabă Vaultara”. Se resetează mâine la $time. Tot restul din Vaultara funcționează ca de obicei.';
+  }
 }

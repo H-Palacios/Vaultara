@@ -9523,4 +9523,48 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Påminnelser samma dag kommer som en avisering vid din påminnelsetid. Poster som går ut i morgon, i dag eller redan har gått ut får fortfarande sin egen.';
+
+  @override
+  String get secBillingChanged => 'Abonnemang ändrat';
+
+  @override
+  String get plansSellerGoogle => 'Debiteras av Google Play som Vorkalis, företaget som gör Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Debiteras av App Store som Vorkalis, företaget som gör Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Bekräfta att det är du';
+
+  @override
+  String get rootedTitle => 'Den här telefonen verkar vara rootad';
+
+  @override
+  String get rootedBody => 'Dess vanliga skydd verkar avstängda, så andra appar kan kanske läsa det Vaultara sparar på telefonen. Ditt konto fungerar fortfarande, men dina poster är säkrare på en telefon som inte är rootad eller jailbreakad.';
+
+  @override
+  String get rootedOk => 'Jag förstår';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Krypterat ($number). Lås upp krypteringen på den här telefonen med din återställningsnyckel för att se eller ändra det.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Dokumentnummer i dina poster låses på samma sätt: bara de fyra sista tecknen sparas läsbara.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Du har skickat många frågor den senaste timmen. Du kan fråga igen kl. $time. Allt annat i Vaultara fungerar som vanligt.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Du har nått dagens gräns för \"Fråga Vaultara\". Den nollställs kl. $time. Allt annat i Vaultara fungerar som vanligt.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Du har nått dagens gräns för \"Fråga Vaultara\". Den nollställs i morgon kl. $time. Allt annat i Vaultara fungerar som vanligt.';
+  }
 }

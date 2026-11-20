@@ -9525,4 +9525,48 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get digestGroupedSubtitle => 'Os lembretes do mesmo dia chegam numa só notificação à sua hora de lembrete. Os que expiram amanhã, hoje ou já expiraram continuam a chegar sozinhos.';
+
+  @override
+  String get secBillingChanged => 'Plano alterado';
+
+  @override
+  String get plansSellerGoogle => 'Cobrado pelo Google Play como Vorkalis, a empresa que faz o Vaultara.';
+
+  @override
+  String get plansSellerApple => 'Cobrado pela App Store como Vorkalis, a empresa que faz o Vaultara.';
+
+  @override
+  String get identityConfirmReason => 'Confirme que é você';
+
+  @override
+  String get rootedTitle => 'Este telemóvel parece ter root';
+
+  @override
+  String get rootedBody => 'As proteções normais parecem desativadas, por isso outras apps podem ler o que o Vaultara guarda neste telemóvel. A sua conta continua a funcionar, mas os seus registos estão mais seguros num telemóvel sem root nem jailbreak.';
+
+  @override
+  String get rootedOk => 'Compreendo';
+
+  @override
+  String detailsReferenceLocked(String number) {
+    return 'Encriptado ($number). Desbloqueie a encriptação neste telemóvel com a chave de recuperação para o ver ou alterar.';
+  }
+
+  @override
+  String get photoLockNumbersToo => 'Os números de documento dos seus registos são bloqueados da mesma forma: só os últimos quatro caracteres ficam guardados legíveis.';
+
+  @override
+  String assistantLimitHour(String time) {
+    return 'Enviou muitas perguntas na última hora. Pode voltar a perguntar às $time. Tudo o resto no Vaultara funciona normalmente.';
+  }
+
+  @override
+  String assistantLimitToday(String time) {
+    return 'Atingiu o limite de hoje do \"Pergunte à Vaultara\". É reposto às $time. Tudo o resto no Vaultara funciona normalmente.';
+  }
+
+  @override
+  String assistantLimitTomorrow(String time) {
+    return 'Atingiu o limite de hoje do \"Pergunte à Vaultara\". É reposto amanhã às $time. Tudo o resto no Vaultara funciona normalmente.';
+  }
 }
