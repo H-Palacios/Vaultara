@@ -27,6 +27,13 @@ class MainActivity : FlutterFragmentActivity() {
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, DEVICE_CHANNEL)
+            .setMethodCallHandler { call, result ->
+                when (call.method) {
+                    "isCompromised" -> result.success(looksRooted())
+                    else -> result.notImplemented()
+                }
+            }
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, PRIVACY_CHANNEL)
             .setMethodCallHandler { call, result ->
                 when (call.method) {
@@ -67,6 +74,25 @@ class MainActivity : FlutterFragmentActivity() {
         super.onResume()
         backgrounded = false
         applySecureFlag()
+    }
+
+    // Signs that the phone is rooted: a build signed with test keys, or an
+    // su binary or Magisk folder where rooting tools put them. A hint for a
+    // one-time warning, not a block: a determined user can hide root.
+    private fun looksRooted(): Boolean {
+        if (Build.TAGS?.contains("test-keys") == true) return true
+        val paths = listOf(
+            "/system/bin/su", "/system/xbin/su", "/sbin/su", "/su/bin/su",
+            "/system/sd/xbin/su", "/data/local/su", "/data/local/bin/su",
+            "/data/local/xbin/su", "/system/app/Superuser.apk", "/data/adb/magisk",
+        )
+        return paths.any { path ->
+            try {
+                java.io.File(path).exists()
+            } catch (e: Exception) {
+                false
+            }
+        }
     }
 
     private fun applyRecents() {
@@ -162,6 +188,7 @@ class MainActivity : FlutterFragmentActivity() {
 
     companion object {
         private const val PRIVACY_CHANNEL = "vaultara/privacy"
+        private const val DEVICE_CHANNEL = "vaultara/device"
         private const val LEGACY_IS_SENSITIVE = "android.content.extra.IS_SENSITIVE"
     }
 }

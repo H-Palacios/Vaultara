@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/security/logic/identity_gate.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -109,6 +110,9 @@ class _TwoStepScreenState extends State<TwoStepScreen> {
     final last = (_factors?.length ?? 0) <= 1;
     final sure = await _confirmRemove(last);
     if (sure != true || !mounted) return;
+    // Turning off two-step sign-in always asks for the password first, not
+    // only when Firebase wants a recent sign-in.
+    if (!await IdentityGate.strong(context) || !mounted) return;
 
     setState(() => _removing.add(info.uid));
     var removed = false;

@@ -11,6 +11,7 @@ import 'core/analytics/analytics_service.dart';
 import 'core/data/repositories/record_repository.dart';
 import 'features/reminders/services/reminder_scheduler.dart';
 import 'features/records/logic/record_lock.dart';
+import 'core/navigation/auth_root.dart';
 import 'core/navigation/navigator_key.dart';
 import 'core/services/connection_status.dart';
 import 'core/view/widgets/offline_banner.dart';
@@ -28,6 +29,7 @@ import 'features/platform/home_widget_sync.dart';
 import 'features/platform/privacy_screen.dart';
 import 'features/platform/sensitive_clipboard.dart';
 import 'features/security/logic/auto_lock.dart';
+import 'features/security/logic/identity_gate.dart';
 import 'features/security/services/auto_lock_preference.dart';
 import 'features/security/services/session_guard.dart';
 import 'features/household/services/household_link_service.dart';
@@ -79,6 +81,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
     unawaited(PrivacyScreen.load());
     unawaited(AutoLockPreference.load());
     HouseholdLinkService.start();
+    AuthRoot.attach(_onSignedInManually);
 
     BiometricPreference.lastUid().then((uid) {
       _expectSession = uid != null;
@@ -152,6 +155,11 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
   void _onNoUser() {
     if (_reconciledUid == null && _rememberedUid == null) return;
 
+    // Signed out, from anywhere (Profile, a security sign-out, a deleted
+    // account): close every screen above the first one so the sign-in
+    // screen shows straight away instead of after pressing back.
+    WidgetsBinding.instance.addPostFrameCallback((_) => AuthRoot.onSignedOut());
+
     _rememberedUid = null;
     _reconciledUid = null;
     _unlocked = false;
@@ -170,6 +178,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
         state == AppLifecycleState.hidden ||
         state == AppLifecycleState.detached) {
       RecordLock.forgetAll();
+      IdentityGate.forget();
       _markBackgroundTime();
       return;
     }

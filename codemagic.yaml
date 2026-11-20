@@ -35,10 +35,12 @@ workflows:
         script: |
           LATEST=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID" || echo 0)
           flutter build ipa --release \
+            --obfuscate --split-debug-info=build/debug-info \
             --build-number=$((LATEST + 1)) \
             --export-options-plist=/Users/builder/export_options.plist
     artifacts:
       - build/ios/ipa/*.ipa
+      - build/debug-info/**
       - /tmp/xcodebuild_logs/*.log
     publishing:
       app_store_connect:

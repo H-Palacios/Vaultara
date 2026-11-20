@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:vaultara/features/auth/view/two_step/backup_codes_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/security/logic/identity_gate.dart';
 import 'package:local_auth/local_auth.dart';
 
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -120,15 +121,20 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
     final loc = AppLocalizations.of(context)!;
 
     bool didAuth = false;
-    try {
-      didAuth = await _localAuth.authenticate(
-        localizedReason: value
-            ? loc.profile_biometric_enable_reason
-            : loc.profile_biometric_disable_reason,
-        options: const AuthenticationOptions(biometricOnly: false),
-      );
-    } catch (_) {
-      didAuth = false;
+    if (!value) {
+      // Turning the app lock off needs the password, not just the phone's
+      // PIN, which someone holding the phone may know.
+      didAuth = await IdentityGate.strong(context);
+      if (!mounted) return;
+    } else {
+      try {
+        didAuth = await _localAuth.authenticate(
+          localizedReason: loc.profile_biometric_enable_reason,
+          options: const AuthenticationOptions(biometricOnly: false),
+        );
+      } catch (_) {
+        didAuth = false;
+      }
     }
     if (!didAuth) return;
 

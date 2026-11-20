@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -53,8 +54,9 @@ class SessionGuard {
       stored = prefs.getInt(_key(uid));
     } catch (_) {}
     final user = FirebaseAuth.instance.currentUser;
-    final authMs =
-        user != null && user.uid == uid ? await _tokenAuthTimeMs(user) : null;
+    final authMs = user != null && user.uid == uid
+        ? await _tokenAuthTimeMs(user)
+        : null;
     if (stored == null) return authMs;
     if (authMs == null) return stored;
     return authMs > stored ? authMs : stored;
@@ -94,18 +96,64 @@ class SessionGuard {
     final id = await DeviceRegistry.deviceId();
     if (_uid != uid) return;
 
+    _deviceId = id;
+    _listen(uid);
+  }
+
+  static String? _deviceId;
+  static Timer? _relisten;
+
+  static void _listen(String uid) {
+    final id = _deviceId;
+    if (id == null || _uid != uid) return;
+    _deviceSub?.cancel();
+    _userSub?.cancel();
     final userRef = FirebaseFirestore.instance.collection('users').doc(uid);
-    _deviceSub = userRef.collection('devices').doc(id).snapshots().listen(
-      (snap) => _check(uid, snap.data()?['signedOutAt']),
-      onError: (_) {},
-    );
+    _deviceSub = userRef
+        .collection('devices')
+        .doc(id)
+        .snapshots()
+        .listen(
+          (snap) => _check(uid, snap.data()?['signedOutAt']),
+          onError: (Object e) => _onListenError(uid, e),
+        );
     _userSub = userRef.snapshots().listen(
       (snap) => _check(uid, snap.data()?['sessionsRevokedAt']),
-      onError: (_) {},
+      onError: (Object e) => _onListenError(uid, e),
     );
   }
 
+  /// The database turns away a session signed out from another device, so
+  /// the sign-out time may arrive as an error instead of a value. The
+  /// server says which it is; a listener that stopped is started again.
+  static void _onListenError(String uid, Object error) {
+    if (_uid != uid) return;
+    _relisten?.cancel();
+    final denied =
+        error is FirebaseException && error.code == 'permission-denied';
+    if (denied && _suspended == 0 && !_signingOut) {
+      unawaited(_askServer(uid));
+    }
+    _relisten = Timer(const Duration(seconds: 5), () => _listen(uid));
+  }
+
+  static Future<void> _askServer(String uid) async {
+    try {
+      await FirebaseFunctions.instance
+          .httpsCallable('securitySessionCheck')
+          .call<void>();
+    } on FirebaseFunctionsException catch (e) {
+      if (_uid != uid || _suspended > 0) return;
+      if (e.code == 'unauthenticated' && e.message == 'session-signed-out') {
+        unawaited(_signOutHere());
+      }
+    } catch (_) {}
+  }
+
   static void stop() {
+    _relisten?.cancel();
+    _relisten = null;
+    _deviceId = null;
     _deviceSub?.cancel();
     _userSub?.cancel();
     _deviceSub = null;

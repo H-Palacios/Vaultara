@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/platform/secure_screen.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -156,161 +157,163 @@ class _BackupCodesScreenState extends State<BackupCodesScreen> {
       // Closing straight after setup without the codes would leave them
       // unseen; the Done button is the way out there.
       canPop: !widget.afterSetup || codes == null || _error != null,
-      child: Scaffold(
-        body: SafeArea(
-          child: ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-            children: [
-              ScreenHeader(title: loc.backupCodesTitle),
-              const SizedBox(height: 12),
-              if (widget.afterSetup)
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: Text(
-                    loc.twoStepStepOf(3, 3),
+      child: SecureScreen(
+        child: Scaffold(
+          body: SafeArea(
+            child: ListView(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              children: [
+                ScreenHeader(title: loc.backupCodesTitle),
+                const SizedBox(height: 12),
+                if (widget.afterSetup)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Text(
+                      loc.twoStepStepOf(3, 3),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.w700,
+                        color: scheme.primary,
+                      ),
+                    ),
+                  ),
+                Text(
+                  loc.backupCodesIntro,
+                  style: TextStyle(
+                    fontSize: 14,
+                    height: 1.45,
+                    color: scheme.onSurfaceVariant,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                if (_busy)
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 48),
+                    child: Center(child: CircularProgressIndicator()),
+                  )
+                else if (codes != null) ...[
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: scheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Wrap(
+                      alignment: WrapAlignment.center,
+                      spacing: 12,
+                      runSpacing: 10,
+                      children: [
+                        for (final code in codes)
+                          SizedBox(
+                            width: 132,
+                            child: SelectableText(
+                              code,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontFamily: 'monospace',
+                                fontSize: 16,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 1.2,
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    loc.backupCodesShownOnce,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 12.5,
                       fontWeight: FontWeight.w700,
-                      color: scheme.primary,
+                      color: scheme.error,
                     ),
                   ),
-                ),
-              Text(
-                loc.backupCodesIntro,
-                style: TextStyle(
-                  fontSize: 14,
-                  height: 1.45,
-                  color: scheme.onSurfaceVariant,
-                ),
-              ),
-              const SizedBox(height: 16),
-              if (_busy)
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 48),
-                  child: Center(child: CircularProgressIndicator()),
-                )
-              else if (codes != null) ...[
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: scheme.surfaceContainerHighest,
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Wrap(
-                    alignment: WrapAlignment.center,
-                    spacing: 12,
-                    runSpacing: 10,
+                  const SizedBox(height: 14),
+                  Row(
                     children: [
-                      for (final code in codes)
-                        SizedBox(
-                          width: 132,
-                          child: SelectableText(
-                            code,
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                              fontFamily: 'monospace',
-                              fontSize: 16,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: 1.2,
-                            ),
-                          ),
+                      Expanded(
+                        child: OutlinedButton.icon(
+                          onPressed: () => _copy(codes),
+                          icon: const Icon(Icons.copy_rounded, size: 18),
+                          label: Text(loc.backupCodesCopy),
                         ),
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: OutlinedButton.icon(
+                          onPressed: () => _share(codes),
+                          icon: const Icon(Icons.ios_share_rounded, size: 18),
+                          label: Text(loc.backupCodesSave),
+                        ),
+                      ),
                     ],
                   ),
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  loc.backupCodesShownOnce,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 12.5,
-                    fontWeight: FontWeight.w700,
-                    color: scheme.error,
+                  const SizedBox(height: 12),
+                  FilledButton(
+                    onPressed: () => Navigator.of(context).pop(true),
+                    child: Text(loc.backupCodesSaved),
                   ),
-                ),
-                const SizedBox(height: 14),
-                Row(
-                  children: [
-                    Expanded(
-                      child: OutlinedButton.icon(
-                        onPressed: () => _copy(codes),
-                        icon: const Icon(Icons.copy_rounded, size: 18),
-                        label: Text(loc.backupCodesCopy),
+                ] else ...[
+                  if (status != null && !status.none)
+                    Container(
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color:
+                            (status.remaining <= 2
+                                    ? scheme.errorContainer
+                                    : scheme.primaryContainer)
+                                .withValues(alpha: 0.5),
+                        borderRadius: BorderRadius.circular(14),
                       ),
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: OutlinedButton.icon(
-                        onPressed: () => _share(codes),
-                        icon: const Icon(Icons.ios_share_rounded, size: 18),
-                        label: Text(loc.backupCodesSave),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 12),
-                FilledButton(
-                  onPressed: () => Navigator.of(context).pop(true),
-                  child: Text(loc.backupCodesSaved),
-                ),
-              ] else ...[
-                if (status != null && !status.none)
-                  Container(
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(
-                      color:
-                          (status.remaining <= 2
-                                  ? scheme.errorContainer
-                                  : scheme.primaryContainer)
-                              .withValues(alpha: 0.5),
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.password_rounded,
-                          color: status.remaining <= 2
-                              ? scheme.error
-                              : scheme.primary,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            loc.backupCodesLeft(status.remaining),
-                            style: const TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w700,
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.password_rounded,
+                            color: status.remaining <= 2
+                                ? scheme.error
+                                : scheme.primary,
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Text(
+                              loc.backupCodesLeft(status.remaining),
+                              style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w700,
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
+                    ),
+                  if (_error != null) ...[
+                    const SizedBox(height: 12),
+                    Text(
+                      _error!,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: scheme.error),
+                    ),
+                  ],
+                  const SizedBox(height: 16),
+                  FilledButton.icon(
+                    onPressed: status == null
+                        ? null
+                        : status.none
+                        ? () => _create()
+                        : _confirmReplace,
+                    icon: const Icon(Icons.password_rounded),
+                    label: Text(
+                      status != null && !status.none
+                          ? loc.backupCodesMakeNew
+                          : loc.backupCodesMake,
                     ),
                   ),
-                if (_error != null) ...[
-                  const SizedBox(height: 12),
-                  Text(
-                    _error!,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: scheme.error),
-                  ),
                 ],
-                const SizedBox(height: 16),
-                FilledButton.icon(
-                  onPressed: status == null
-                      ? null
-                      : status.none
-                      ? () => _create()
-                      : _confirmReplace,
-                  icon: const Icon(Icons.password_rounded),
-                  label: Text(
-                    status != null && !status.none
-                        ? loc.backupCodesMakeNew
-                        : loc.backupCodesMake,
-                  ),
-                ),
               ],
-            ],
+            ),
           ),
         ),
       ),

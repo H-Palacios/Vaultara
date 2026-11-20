@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/security/logic/identity_gate.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/settings_tile.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
@@ -34,14 +35,23 @@ class ExportCalendarScreen extends StatelessWidget {
                 title: t.exportPdfTitle,
                 subtitle: t.exportPdfSubtitle,
                 trailing: lock(premium),
-                onTap: () => PdfExport.exportAll(context, isPremium: premium),
+                onTap: () async {
+                  // Free accounts see the upgrade offer, not a lock prompt.
+                  if (premium && !await IdentityGate.device(context)) return;
+                  if (context.mounted) {
+                    await PdfExport.exportAll(context, isPremium: premium);
+                  }
+                },
               ),
               const SizedBox(height: 12),
               SettingsTile(
                 icon: Icons.event_available_rounded,
                 title: t.exportCalendarTitle,
                 subtitle: t.exportCalendarSubtitle,
-                onTap: () => CalendarExport.exportAll(context),
+                onTap: () async {
+                  if (!await IdentityGate.device(context)) return;
+                  if (context.mounted) await CalendarExport.exportAll(context);
+                },
               ),
               const SizedBox(height: 12),
               SettingsTile(

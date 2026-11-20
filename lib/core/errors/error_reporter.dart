@@ -1,8 +1,13 @@
 import 'dart:async';
+import 'dart:io' show FileSystemException, HttpException, SocketException;
 import 'dart:ui' show PlatformDispatcher;
 
 import 'package:flutter/foundation.dart' show kDebugMode, kReleaseMode;
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show PlatformException;
 import 'package:vaultara/core/analytics/analytics_service.dart';
 
 /*
@@ -16,11 +21,8 @@ import 'package:vaultara/core/analytics/analytics_service.dart';
   The last few reports are also kept in memory so a support screen can show
   them later without any extra plumbing.
 */
-typedef ErrorSink = FutureOr<void> Function(
-  String where,
-  String type,
-  bool fatal,
-);
+typedef ErrorSink =
+    FutureOr<void> Function(String where, String type, bool fatal);
 
 class ErrorReporter {
   const ErrorReporter._();
@@ -111,11 +113,7 @@ class ErrorReporter {
     );
   }
 
-  static Future<void> _analyticsSink(
-    String where,
-    String type,
-    bool fatal,
-  ) {
+  static Future<void> _analyticsSink(String where, String type, bool fatal) {
     return AnalyticsService.logEvent(
       'app_error',
       parameters: <String, Object>{
@@ -126,9 +124,33 @@ class ErrorReporter {
     );
   }
 
+  /// Release builds are obfuscated, so runtimeType names are scrambled
+  /// there. The common kinds are named by an `is` check, which survives.
   static String _typeName(Object error) {
+    final known = _knownType(error);
+    if (known != null) return known;
     final name = error.runtimeType.toString();
     return _clean(name);
+  }
+
+  static String? _knownType(Object error) {
+    if (error is FirebaseAuthException) return 'FirebaseAuthException';
+    if (error is FirebaseFunctionsException)
+      return 'FirebaseFunctionsException';
+    if (error is FirebaseException) return 'FirebaseException';
+    if (error is PlatformException) return 'PlatformException';
+    if (error is TimeoutException) return 'TimeoutException';
+    if (error is SocketException) return 'SocketException';
+    if (error is HttpException) return 'HttpException';
+    if (error is FileSystemException) return 'FileSystemException';
+    if (error is FormatException) return 'FormatException';
+    if (error is StateError) return 'StateError';
+    if (error is ArgumentError) return 'ArgumentError';
+    if (error is RangeError) return 'RangeError';
+    if (error is TypeError) return 'TypeError';
+    if (error is UnsupportedError) return 'UnsupportedError';
+    if (error is FlutterError) return 'FlutterError';
+    return null;
   }
 
   static String _clean(String value) {

@@ -1,8 +1,9 @@
 import 'package:vaultara/features/tools/data/life_plan_repository.dart';
+import 'package:vaultara/core/data/models/sealed_references.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'package:vaultara/core/navigation/navigator_key.dart';
+import 'package:vaultara/core/navigation/auth_root.dart';
 import 'package:vaultara/core/data/repositories/category_repository.dart';
 import 'package:vaultara/core/data/repositories/group_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -31,6 +32,7 @@ class SignOutService {
     SessionGuard.stop();
     await DeviceRegistry.removeForSignOut();
     if (uid != null) await SessionGuard.clearForSignOut(uid);
+    if (uid != null) await PlanStore.forget(uid);
 
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -56,12 +58,13 @@ class SignOutService {
     VisaLinkRepository.clearForSignOut();
     AttachmentRepository.clearForSignOut();
     AvatarRepository.clearForSignOut();
+    SealedReferences.clear();
 
     await HomeWidgetSync.clear();
     await TempFiles.markCacheForWipe();
     await TempFiles.clear();
     await FirebaseAuth.instance.signOut();
 
-    navigatorKey.currentState?.popUntil((route) => route.isFirst);
+    AuthRoot.backToRoot();
   }
 }
