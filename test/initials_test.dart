@@ -32,7 +32,10 @@ void main() {
   });
 
   test('the profile picture uses the same letters', () {
-    expect(AvatarRepository.initialsOf('Hector Palacios-Ricaldi', 'h@x.com'), 'HP');
+    expect(
+      AvatarRepository.initialsOf('Hector Palacios-Ricaldi', 'h@x.com'),
+      'HP',
+    );
     expect(AvatarRepository.initialsOf('', 'hector@x.com'), 'H');
   });
 

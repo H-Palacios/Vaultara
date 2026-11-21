@@ -194,12 +194,16 @@ void main() {
     }
   });
 
-  test('every event is in exactly one picker group', () {
+  test('every event that can be started is in exactly one picker group', () {
     final seen = <LifeEvent>[
       for (final list in LifeEvents.groups.values) ...list,
     ];
     expect(seen.toSet().length, seen.length);
-    expect(seen.toSet(), LifeEvent.values.toSet());
+    expect(seen.toSet(), LifeEvent.values.where(LifeEvents.canStart).toSet());
+    for (final event in LifeEvents.retired) {
+      expect(seen, isNot(contains(event)), reason: event.name);
+      expect(LifeEvents.canStart(event), isFalse, reason: event.name);
+    }
   });
 
   test('selling a car cancels its records and asks for nothing new', () {
