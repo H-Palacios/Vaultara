@@ -996,7 +996,40 @@ class AppLocalizationsIt extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Tocca il campo del promemoria per vedere come funzionano i promemoria.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Questo è il campo del promemoria, dove Vaultara può avvisarti prima che il record scada.';
+  String get tutorialAddRecordReminderSolo => 'I promemoria sono calcolati dalla data di scadenza e dal Tempo di rinnovo. Qui puoi disattivarli.';
+
+  @override
+  String get remindersSectionTitle => 'Promemoria';
+
+  @override
+  String get remindersOffSubtitle => 'Nessun promemoria per questo elemento';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara te lo ricorderà il';
+
+  @override
+  String get remindersNoDatesLeft => 'Non restano date di promemoria prima di questa scadenza.';
+
+  @override
+  String get remindersChooseDates => 'Scegli le tue date';
+
+  @override
+  String get remindersChooseDatesLocked => 'Scegli le tue date con Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Usa le date automatiche';
+
+  @override
+  String get tutorialRemindersSection => 'I promemoria sono calcolati dalla data di scadenza. Imposta il Tempo di rinnovo su quanto dura il rinnovo, così iniziano abbastanza presto.';
+
+  @override
+  String get tutorialRemindersDates => 'Questi sono i giorni in cui Vaultara te lo ricorderà.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Con Premium puoi scegliere le tue date di promemoria.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Tocca Scegli le tue date per cambiare un promemoria o aggiungerne uno.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Scade oggi';
@@ -1163,6 +1196,17 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Gruppi personalizzati';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Scegli le tue date di promemoria';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Fino a $count foto per elemento';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Promemoria automatici';
 
   @override
   String get planFeatureMultipleReminders => 'Promemoria multipli su un singolo record';
@@ -7800,7 +7844,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get whatsNewDismiss => 'Ho capito';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Altri dettagli contiene gli extra: note, ripetizione, tempo di rinnovo, di chi è l\'elemento, dove lo tieni, blocco e foto. Aprilo solo quando serve.';
+  String get tutorialAddRecordMoreDetails2 => 'Altri dettagli contiene gli extra: note, ripetizione, di chi è l\'elemento, dove lo tieni, blocco e foto. Aprilo solo quando serve.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Blocca un elemento per chiedere l\'impronta o il blocco schermo prima di mostrarlo. Scegli dove lo tieni, ad esempio nel portafoglio, e aggiungi foto del documento.';
@@ -7879,13 +7923,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get storyRenew3Title => 'Non sai come fare?';
 
   @override
-  String get storyRenew3Body => 'Molti elementi hanno una guida con passaggi, documenti e costo abituale.';
+  String get storyRenew3Body => 'Molti elementi hanno una lista di controllo per il rinnovo. Chiedi a Vaultara può trovare i passaggi per il tuo paese, con link ufficiali.';
 
   @override
   String get storyRenew4Title => 'Lascia che si ripeta';
 
   @override
-  String get storyRenew4Body => 'Per abbonamenti e pagamenti annuali, attiva la ripetizione e la data avanza da sola.';
+  String get storyRenew4Body => 'Per abbonamenti e pagamenti annuali, attiva Si rinnova da solo e la data avanzerà da sola.';
 
   @override
   String get storyAsk1Title => 'Chiedi con parole tue';
@@ -7916,6 +7960,12 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Le chat restano 90 giorni in «Cronologia chat» e le domande suggerite ti aiutano a iniziare.';
+
+  @override
+  String get storyAsk6Title => 'Più che elementi';
+
+  @override
+  String get storyAsk6Body => 'Può anche pianificare viaggi, aggiungere persone, trovare i passaggi di rinnovo per il tuo paese e condividere elementi, con link alle pagine ufficiali.';
 
   @override
   String get storyWallet1Title => 'Preparati prima';

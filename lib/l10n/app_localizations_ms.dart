@@ -995,7 +995,40 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Ketik medan peringatan untuk melihat cara peringatan berfungsi.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Ini medan peringatan, tempat Vaultara boleh memberitahu anda sebelum rekod tamat tempoh.';
+  String get tutorialAddRecordReminderSolo => 'Peringatan dikira daripada tarikh tamat tempoh dan Masa pembaharuan. Anda boleh mematikannya di sini.';
+
+  @override
+  String get remindersSectionTitle => 'Peringatan';
+
+  @override
+  String get remindersOffSubtitle => 'Tiada peringatan untuk rekod ini';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara akan mengingatkan anda pada';
+
+  @override
+  String get remindersNoDatesLeft => 'Tiada lagi tarikh peringatan sebelum tamat tempoh ini.';
+
+  @override
+  String get remindersChooseDates => 'Pilih tarikh sendiri';
+
+  @override
+  String get remindersChooseDatesLocked => 'Pilih tarikh sendiri dengan Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Guna tarikh automatik';
+
+  @override
+  String get tutorialRemindersSection => 'Peringatan dikira daripada tarikh tamat tempoh. Tetapkan Masa pembaharuan mengikut berapa lama pembaharuan mengambil masa, supaya ia bermula cukup awal.';
+
+  @override
+  String get tutorialRemindersDates => 'Inilah hari Vaultara akan mengingatkan anda.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Dengan Premium, anda boleh memilih tarikh peringatan sendiri.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Ketik Pilih tarikh sendiri untuk menukar peringatan atau menambah satu.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Tamat Tempoh Hari Ini';
@@ -1162,6 +1195,17 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Kumpulan tersuai';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Pilih tarikh peringatan sendiri';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Sehingga $count foto pada setiap rekod';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Peringatan automatik';
 
   @override
   String get planFeatureMultipleReminders => 'Beberapa peringatan pada satu rekod';
@@ -7732,7 +7776,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get whatsNewDismiss => 'Faham';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Butiran lanjut mengandungi tambahan: nota, ulangan, masa pembaharuan, milik siapa, disimpan di mana, kunci dan foto. Buka hanya apabila perlu.';
+  String get tutorialAddRecordMoreDetails2 => 'Butiran lanjut mengandungi tambahan: nota, ulangan, milik siapa, disimpan di mana, kunci dan foto. Buka hanya apabila perlu.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Kunci rekod supaya ia meminta cap jari atau kunci skrin sebelum dipaparkan. Pilih tempat anda menyimpannya, contohnya dompet, dan tambah foto dokumen.';
@@ -7811,13 +7855,13 @@ class AppLocalizationsMs extends AppLocalizations {
   String get storyRenew3Title => 'Tidak pasti caranya?';
 
   @override
-  String get storyRenew3Body => 'Banyak rekod ada panduan dengan langkah, dokumen dan kos biasa.';
+  String get storyRenew3Body => 'Banyak rekod mempunyai senarai semak pembaharuan. Tanya Vaultara boleh mencari langkah untuk negara anda, dengan pautan rasmi.';
 
   @override
   String get storyRenew4Title => 'Biarkan ia berulang';
 
   @override
-  String get storyRenew4Body => 'Untuk langganan dan bayaran tahunan, hidupkan ulangan dan tarikh akan beralih sendiri.';
+  String get storyRenew4Body => 'Untuk langganan dan bayaran tahunan, hidupkan Diperbaharui sendiri dan tarikh akan bergerak ke hadapan dengan sendirinya.';
 
   @override
   String get storyAsk1Title => 'Tanya dengan kata-kata anda';
@@ -7848,6 +7892,12 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Sembang disimpan 90 hari dalam «Sejarah sembang», dan soalan cadangan membantu anda bermula.';
+
+  @override
+  String get storyAsk6Title => 'Lebih daripada rekod';
+
+  @override
+  String get storyAsk6Body => 'Ia juga boleh merancang perjalanan, menambah orang, mencari langkah pembaharuan untuk negara anda dan berkongsi rekod, dengan pautan ke halaman rasmi.';
 
   @override
   String get storyWallet1Title => 'Bersedia dahulu';

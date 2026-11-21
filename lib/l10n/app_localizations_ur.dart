@@ -996,7 +996,40 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'یاد دہانیاں کیسے کام کرتی ہیں یہ دیکھنے کے لیے یاد دہانی فیلڈ پر ٹیپ کریں۔';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'یہ یاد دہانی فیلڈ ہے، جہاں ریکارڈ کی میعاد ختم ہونے سے پہلے Vaultara آپ کو مطلع کر سکتا ہے۔';
+  String get tutorialAddRecordReminderSolo => 'یاد دہانیاں میعاد ختم ہونے کی تاریخ اور تجدید کے وقت سے طے ہوتی ہیں۔ آپ انہیں یہاں بند کر سکتے ہیں۔';
+
+  @override
+  String get remindersSectionTitle => 'یاد دہانیاں';
+
+  @override
+  String get remindersOffSubtitle => 'اس ریکارڈ کے لیے کوئی یاد دہانی نہیں';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara آپ کو ان دنوں یاد دلائے گا';
+
+  @override
+  String get remindersNoDatesLeft => 'اس میعاد ختم ہونے سے پہلے کوئی یاد دہانی کی تاریخ باقی نہیں۔';
+
+  @override
+  String get remindersChooseDates => 'اپنی تاریخیں منتخب کریں';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium کے ساتھ اپنی تاریخیں منتخب کریں';
+
+  @override
+  String get remindersUseAutomatic => 'خودکار تاریخیں استعمال کریں';
+
+  @override
+  String get tutorialRemindersSection => 'یاد دہانیاں میعاد ختم ہونے کی تاریخ سے طے ہوتی ہیں۔ تجدید کا وقت اتنا رکھیں جتنا تجدید میں لگتا ہے، تاکہ وہ بروقت شروع ہوں۔';
+
+  @override
+  String get tutorialRemindersDates => 'یہ وہ دن ہیں جب Vaultara آپ کو یاد دلائے گا۔';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium کے ساتھ آپ اپنی یاد دہانی کی تاریخیں منتخب کر سکتے ہیں۔';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'یاد دہانی بدلنے یا شامل کرنے کے لیے اپنی تاریخیں منتخب کریں پر ٹیپ کریں۔';
 
   @override
   String get smartInsightExpiresTodayHeading => 'آج ختم ہو رہا ہے';
@@ -1163,6 +1196,17 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'حسب ضرورت گروپس';
+
+  @override
+  String get planFeatureOwnReminderDates => 'اپنی یاد دہانی کی تاریخیں منتخب کریں';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'ہر ریکارڈ پر $count تک تصاویر';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'خودکار یاد دہانیاں';
 
   @override
   String get planFeatureMultipleReminders => 'ایک ہی ریکارڈ پر متعدد یاد دہانیاں';
@@ -7789,7 +7833,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get whatsNewDismiss => 'سمجھ گیا';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'مزید تفصیلات میں اضافی چیزیں ہیں: نوٹس، دہرانا، تجدید کا وقت، کس کا ہے، کہاں رکھتے ہیں، لاک اور تصاویر۔ ضرورت ہو تب ہی کھولیں۔';
+  String get tutorialAddRecordMoreDetails2 => 'مزید تفصیلات میں اضافی چیزیں ہیں: نوٹس، دہرانا، کس کا ہے، کہاں رکھتے ہیں، لاک اور تصاویر۔ ضرورت ہو تب ہی کھولیں۔';
 
   @override
   String get tutorialAddRecordProtect2 => 'ریکارڈ لاک کریں تاکہ دکھانے سے پہلے فنگر پرنٹ یا اسکرین لاک مانگے۔ منتخب کریں کہ کہاں رکھتے ہیں، جیسے بٹوہ، اور دستاویز کی تصاویر شامل کریں۔';
@@ -7868,13 +7912,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get storyRenew3Title => 'یقین نہیں کیسے؟';
 
   @override
-  String get storyRenew3Body => 'بہت سے ریکارڈز کے ساتھ مراحل، دستاویزات اور معمول کی لاگت کا گائیڈ ہوتا ہے۔';
+  String get storyRenew3Body => 'کئی ریکارڈز کی تجدید کی چیک لسٹ ہوتی ہے۔ Vaultara سے پوچھیں آپ کے ملک کے مراحل سرکاری لنکس کے ساتھ تلاش کر سکتا ہے۔';
 
   @override
   String get storyRenew4Title => 'اسے دہرانے دیں';
 
   @override
-  String get storyRenew4Body => 'سبسکرپشنز اور سالانہ ادائیگیوں کے لیے دہرانا آن کریں، تاریخ خود آگے بڑھ جائے گی۔';
+  String get storyRenew4Body => 'سبسکرپشنز اور سالانہ ادائیگیوں کے لیے خود بخود تجدید آن کریں، تاریخ خود آگے بڑھ جائے گی۔';
 
   @override
   String get storyAsk1Title => 'اپنے الفاظ میں پوچھیں';
@@ -7905,6 +7949,12 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'چیٹس 90 دن تک «گفتگو کی تاریخ» میں رہتی ہیں، اور تجویز کردہ سوالات شروع کرنے میں مدد دیتے ہیں۔';
+
+  @override
+  String get storyAsk6Title => 'ریکارڈز سے بڑھ کر';
+
+  @override
+  String get storyAsk6Body => 'یہ سفر کی منصوبہ بندی، لوگ شامل کرنے، آپ کے ملک کے تجدید کے مراحل تلاش کرنے اور ریکارڈ شیئر کرنے کا کام بھی کر سکتا ہے، سرکاری صفحات کے لنکس کے ساتھ۔';
 
   @override
   String get storyWallet1Title => 'پہلے تیاری کریں';

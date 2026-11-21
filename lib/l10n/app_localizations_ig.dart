@@ -996,7 +996,40 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Pịa mpaghara ncheta iji hụ ka ncheta si arụ ọrụ.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Nke a bụ mpaghara ncheta, ebe Vaultara nwere ike ịma gị ọkwa tupu ndekọ ahụ agwụ.';
+  String get tutorialAddRecordReminderSolo => 'A na-agbakọ ihe ncheta site n\'ụbọchị njedebe na Oge imegharị. Ị nwere ike ịgbanyụ ha ebe a.';
+
+  @override
+  String get remindersSectionTitle => 'Ihe ncheta';
+
+  @override
+  String get remindersOffSubtitle => 'Enweghị ihe ncheta maka ndekọ a';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara ga-echetara gị na';
+
+  @override
+  String get remindersNoDatesLeft => 'Ọ nweghị ụbọchị ncheta fọdụrụ tupu oge a agwụ.';
+
+  @override
+  String get remindersChooseDates => 'Họrọ ụbọchị nke gị';
+
+  @override
+  String get remindersChooseDatesLocked => 'Họrọ ụbọchị nke gị site na Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Jiri ụbọchị akpaaka';
+
+  @override
+  String get tutorialRemindersSection => 'A na-agbakọ ihe ncheta site n\'ụbọchị njedebe. Debe Oge imegharị dịka ogologo oge imegharị na-ewe, ka ha bido n\'oge.';
+
+  @override
+  String get tutorialRemindersDates => 'Ndị a bụ ụbọchị Vaultara ga-echetara gị.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Site na Premium, ị nwere ike ịhọrọ ụbọchị ncheta nke gị.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Pịa Họrọ ụbọchị nke gị iji gbanwee ihe ncheta ma ọ bụ tinye otu.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Na-agwụ taa';
@@ -1163,6 +1196,17 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Otu gasị ahaziri iche';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Họrọ ụbọchị ncheta nke gị';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Ruo foto $count na ndekọ ọ bụla';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Ihe ncheta akpaaka';
 
   @override
   String get planFeatureMultipleReminders => 'Ihe ncheta dị iche iche n\'otu ihe ndekọ';
@@ -7738,7 +7782,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get whatsNewDismiss => 'Aghọtara m';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Nkọwa ndị ọzọ nwere ihe mgbakwunye: ndetu, ikwughachi, oge imegharị, onye nwe ya, ebe ị na-edebe ya, mkpọchi na foto. Mepee ya naanị mgbe ọ dị mkpa.';
+  String get tutorialAddRecordMoreDetails2 => 'Nkọwa ndị ọzọ nwere ihe mgbakwunye: ndetu, ikwughachi, onye nwe ya, ebe ị na-edebe ya, mkpọchi na foto. Mepee ya naanị mgbe ọ dị mkpa.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Kpọchie ndekọ ka ọ chọọ akara mkpịsị aka ma ọ bụ mkpọchi ihuenyo tupu e gosi ya. Họrọ ebe ị na-edebe ya, dịka akpa ego gị, ma tinye foto akwụkwọ ahụ.';
@@ -7817,13 +7861,13 @@ class AppLocalizationsIg extends AppLocalizations {
   String get storyRenew3Title => 'Ejighị n\'aka otu esi eme ya?';
 
   @override
-  String get storyRenew3Body => 'Ọtụtụ ndekọ nwere ntuziaka nwere nzọụkwụ, akwụkwọ na ọnụ ahịa a na-ahụkarị.';
+  String get storyRenew3Body => 'Ọtụtụ ndekọ nwere ndepụta imegharị. Jụọ Vaultara nwere ike ịchọta usoro maka obodo gị, ya na njikọ gọọmentị.';
 
   @override
   String get storyRenew4Title => 'Hapụ ya ka ọ kwughachi';
 
   @override
-  String get storyRenew4Body => 'Maka ndenye aha na ịkwụ ụgwọ kwa afọ, gbanwuo ikwughachi ma ụbọchị ga-aga n\'ihu n\'onwe ya.';
+  String get storyRenew4Body => 'Maka ndenye aha na ịkwụ ụgwọ kwa afọ, gbanye Na-emeghari onwe ya ma ụbọchị ga-aga n\'ihu n\'onwe ya.';
 
   @override
   String get storyAsk1Title => 'Jụọ n\'okwu nke gị';
@@ -7854,6 +7898,12 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'A na-edebe mkparịta ụka ụbọchị 90 na «Akụkọ mkparịta ụka», ajụjụ a tụrụ aro na-enyere gị aka ịmalite.';
+
+  @override
+  String get storyAsk6Title => 'Karịa ndekọ';
+
+  @override
+  String get storyAsk6Body => 'Ọ nwekwara ike ịhazi njem, tinye ndị mmadụ, chọta usoro imegharị maka obodo gị ma kesaa ndekọ, ya na njikọ na ibe gọọmentị.';
 
   @override
   String get storyWallet1Title => 'Kwadebe mbụ';

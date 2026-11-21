@@ -996,7 +996,40 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'நினைவூட்டல்கள் எப்படி வேலை செய்கின்றன என்பதைப் பார்க்க நினைவூட்டல் புலத்தைத் தட்டவும்.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'இது நினைவூட்டல் புலம், பதிவு காலாவதியாகும் முன் Vaultara உங்களுக்கு அறிவிக்கலாம்.';
+  String get tutorialAddRecordReminderSolo => 'நினைவூட்டல்கள் காலாவதி தேதி மற்றும் புதுப்பிப்பு நேரத்திலிருந்து கணக்கிடப்படுகின்றன. அவற்றை இங்கே அணைக்கலாம்.';
+
+  @override
+  String get remindersSectionTitle => 'நினைவூட்டல்கள்';
+
+  @override
+  String get remindersOffSubtitle => 'இந்தப் பதிவுக்கு நினைவூட்டல்கள் இல்லை';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara உங்களுக்கு நினைவூட்டும் நாட்கள்';
+
+  @override
+  String get remindersNoDatesLeft => 'இந்தக் காலாவதிக்கு முன் நினைவூட்டல் தேதிகள் எதுவும் மீதமில்லை.';
+
+  @override
+  String get remindersChooseDates => 'உங்கள் சொந்த தேதிகளைத் தேர்வுசெய்யுங்கள்';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium மூலம் உங்கள் சொந்த தேதிகளைத் தேர்வுசெய்யுங்கள்';
+
+  @override
+  String get remindersUseAutomatic => 'தானியங்கு தேதிகளைப் பயன்படுத்துங்கள்';
+
+  @override
+  String get tutorialRemindersSection => 'நினைவூட்டல்கள் காலாவதி தேதியிலிருந்து கணக்கிடப்படுகின்றன. புதுப்பிக்க எவ்வளவு நேரம் ஆகுமோ அதற்கேற்ப புதுப்பிப்பு நேரத்தை அமைத்தால் அவை சரியான நேரத்தில் தொடங்கும்.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara உங்களுக்கு நினைவூட்டும் நாட்கள் இவை.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium மூலம் உங்கள் சொந்த நினைவூட்டல் தேதிகளைத் தேர்வுசெய்யலாம்.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'நினைவூட்டலை மாற்ற அல்லது சேர்க்க உங்கள் சொந்த தேதிகளைத் தேர்வுசெய்யுங்கள் என்பதைத் தட்டுங்கள்.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'இன்றே காலாவதியாகிறது';
@@ -1163,6 +1196,17 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'பிரத்தியேகக் குழுக்கள்';
+
+  @override
+  String get planFeatureOwnReminderDates => 'உங்கள் சொந்த நினைவூட்டல் தேதிகள்';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'ஒவ்வொரு பதிவிலும் $count புகைப்படங்கள் வரை';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'தானியங்கு நினைவூட்டல்கள்';
 
   @override
   String get planFeatureMultipleReminders => 'ஒரே பதிவில் பல நினைவூட்டல்கள்';
@@ -7789,7 +7833,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get whatsNewDismiss => 'புரிந்தது';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'மேலும் விவரங்களில் கூடுதல்கள் உள்ளன: குறிப்புகள், மீண்டும் நிகழ்வு, புதுப்பிப்பு நேரம், யாருடையது, எங்கே வைத்திருக்கிறீர்கள், பூட்டு மற்றும் புகைப்படங்கள். தேவைப்படும்போது மட்டும் திறங்கள்.';
+  String get tutorialAddRecordMoreDetails2 => 'மேலும் விவரங்களில் கூடுதல்கள் உள்ளன: குறிப்புகள், மீண்டும் நிகழ்வு, யாருடையது, எங்கே வைத்திருக்கிறீர்கள், பூட்டு மற்றும் புகைப்படங்கள். தேவைப்படும்போது மட்டும் திறங்கள்.';
 
   @override
   String get tutorialAddRecordProtect2 => 'காட்டும் முன் கைரேகை அல்லது திரைப் பூட்டைக் கேட்கும்படி பதிவைப் பூட்டுங்கள். எங்கே வைத்திருக்கிறீர்கள் என்பதைத் தேர்ந்தெடுங்கள், எ.கா. பணப்பை, ஆவணப் புகைப்படங்களைச் சேருங்கள்.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsTa extends AppLocalizations {
   String get storyRenew3Title => 'எப்படி என்று தெரியவில்லையா?';
 
   @override
-  String get storyRenew3Body => 'பல பதிவுகளுக்குப் படிகள், ஆவணங்கள் மற்றும் வழக்கமான செலவுடன் வழிகாட்டி உள்ளது.';
+  String get storyRenew3Body => 'பல பதிவுகளுக்குப் புதுப்பிப்பு சரிபார்ப்புப் பட்டியல் உள்ளது. Vaultara-விடம் கேளுங்கள் உங்கள் நாட்டிற்கான படிகளை அதிகாரப்பூர்வ இணைப்புகளுடன் கண்டறியும்.';
 
   @override
   String get storyRenew4Title => 'மீண்டும் நிகழட்டும்';
 
   @override
-  String get storyRenew4Body => 'சந்தாக்கள் மற்றும் ஆண்டுக் கட்டணங்களுக்கு மீண்டும் நிகழ்வை இயக்குங்கள், தேதி தானாக முன்னேறும்.';
+  String get storyRenew4Body => 'சந்தாக்கள் மற்றும் ஆண்டுக் கட்டணங்களுக்கு தானாக புதுப்பிக்கும் என்பதை இயக்குங்கள், தேதி தானாக முன்னேறும்.';
 
   @override
   String get storyAsk1Title => 'உங்கள் சொற்களில் கேளுங்கள்';
@@ -7905,6 +7949,12 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'அரட்டைகள் 90 நாட்கள் «அரட்டை வரலாறு» இல் இருக்கும், பரிந்துரைக்கப்பட்ட கேள்விகள் தொடங்க உதவும்.';
+
+  @override
+  String get storyAsk6Title => 'பதிவுகளுக்கு மேலும்';
+
+  @override
+  String get storyAsk6Body => 'இது பயணங்களைத் திட்டமிடவும், நபர்களைச் சேர்க்கவும், உங்கள் நாட்டின் புதுப்பிப்பு படிகளைக் கண்டறியவும், பதிவுகளைப் பகிரவும் முடியும், அதிகாரப்பூர்வ பக்க இணைப்புகளுடன்.';
 
   @override
   String get storyWallet1Title => 'முதலில் தயாராகுங்கள்';

@@ -989,7 +989,40 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'แตะช่องการเตือนเพื่อดูว่าการเตือนทำงานอย่างไร';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'นี่คือช่องการเตือน ซึ่ง Vaultara สามารถแจ้งคุณก่อนที่รายการจะหมดอายุ';
+  String get tutorialAddRecordReminderSolo => 'การแจ้งเตือนคำนวณจากวันหมดอายุและระยะเวลาต่ออายุ คุณปิดได้ที่นี่';
+
+  @override
+  String get remindersSectionTitle => 'การแจ้งเตือน';
+
+  @override
+  String get remindersOffSubtitle => 'ไม่มีการแจ้งเตือนสำหรับรายการนี้';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara จะเตือนคุณในวันที่';
+
+  @override
+  String get remindersNoDatesLeft => 'ไม่มีวันแจ้งเตือนเหลือก่อนวันหมดอายุนี้แล้ว';
+
+  @override
+  String get remindersChooseDates => 'เลือกวันเอง';
+
+  @override
+  String get remindersChooseDatesLocked => 'เลือกวันเองด้วย Premium';
+
+  @override
+  String get remindersUseAutomatic => 'ใช้วันที่อัตโนมัติ';
+
+  @override
+  String get tutorialRemindersSection => 'การแจ้งเตือนคำนวณจากวันหมดอายุ ตั้งระยะเวลาต่ออายุตามเวลาที่การต่ออายุใช้ เพื่อให้เริ่มเตือนเร็วพอ';
+
+  @override
+  String get tutorialRemindersDates => 'นี่คือวันที่ Vaultara จะเตือนคุณ';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'เมื่อใช้ Premium คุณเลือกวันแจ้งเตือนเองได้';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'แตะ เลือกวันเอง เพื่อเปลี่ยนหรือเพิ่มการแจ้งเตือน';
 
   @override
   String get smartInsightExpiresTodayHeading => 'หมดอายุวันนี้';
@@ -1156,6 +1189,17 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'กลุ่มที่กำหนดเอง';
+
+  @override
+  String get planFeatureOwnReminderDates => 'เลือกวันแจ้งเตือนเอง';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'รูปภาพสูงสุด $count รูปต่อรายการ';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'การแจ้งเตือนอัตโนมัติ';
 
   @override
   String get planFeatureMultipleReminders => 'ตั้งการแจ้งเตือนได้หลายครั้งในหนึ่งรายการ';
@@ -7720,7 +7764,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get whatsNewDismiss => 'เข้าใจแล้ว';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'รายละเอียดเพิ่มเติมเก็บส่วนเสริมไว้ ได้แก่ บันทึก การทำซ้ำ ระยะเวลาต่ออายุ เป็นของใคร เก็บไว้ที่ไหน การล็อก และรูปภาพ เปิดเฉพาะเมื่อต้องการ';
+  String get tutorialAddRecordMoreDetails2 => 'รายละเอียดเพิ่มเติมเก็บส่วนเสริมไว้ ได้แก่ บันทึก การทำซ้ำ เป็นของใคร เก็บไว้ที่ไหน การล็อก และรูปภาพ เปิดเฉพาะเมื่อต้องการ';
 
   @override
   String get tutorialAddRecordProtect2 => 'ล็อกรายการให้ต้องใช้ลายนิ้วมือหรือการล็อกหน้าจอก่อนแสดง เลือกที่เก็บ เช่น กระเป๋าสตางค์ และเพิ่มรูปเอกสาร';
@@ -7799,13 +7843,13 @@ class AppLocalizationsTh extends AppLocalizations {
   String get storyRenew3Title => 'ไม่แน่ใจว่าต้องทำอย่างไร?';
 
   @override
-  String get storyRenew3Body => 'หลายรายการมีคู่มือพร้อมขั้นตอน เอกสาร และค่าใช้จ่ายโดยทั่วไป';
+  String get storyRenew3Body => 'หลายรายการมีรายการตรวจสอบการต่ออายุ ถาม Vaultara ช่วยหาขั้นตอนสำหรับประเทศของคุณพร้อมลิงก์ทางการได้';
 
   @override
   String get storyRenew4Title => 'ให้ทำซ้ำ';
 
   @override
-  String get storyRenew4Body => 'สำหรับการสมัครสมาชิกและการชำระรายปี เปิดการทำซ้ำแล้ววันที่จะเลื่อนไปเอง';
+  String get storyRenew4Body => 'สำหรับการสมัครสมาชิกและการชำระรายปี ให้เปิด ต่ออายุเอง แล้ววันที่จะเลื่อนไปข้างหน้าเอง';
 
   @override
   String get storyAsk1Title => 'ถามด้วยคำพูดของคุณ';
@@ -7836,6 +7880,12 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'แชทจะเก็บไว้ 90 วันใน «ประวัติแชต» และคำถามแนะนำช่วยให้คุณเริ่มต้นได้';
+
+  @override
+  String get storyAsk6Title => 'มากกว่ารายการ';
+
+  @override
+  String get storyAsk6Body => 'ยังวางแผนการเดินทาง เพิ่มบุคคล หาขั้นตอนการต่ออายุของประเทศคุณ และแชร์รายการได้ พร้อมลิงก์ไปยังหน้าทางการ';
 
   @override
   String get storyWallet1Title => 'เตรียมพร้อมก่อน';

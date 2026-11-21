@@ -996,7 +996,40 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Հպեք հիշեցման դաշտին՝ տեսնելու, թե ինչպես են աշխատում հիշեցումները։';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Սա հիշեցման դաշտն է, որտեղ Vaultara-ն կարող է ծանուցել ձեզ՝ նախքան գրառման ժամկետը կլրանա։';
+  String get tutorialAddRecordReminderSolo => 'Հիշեցումները հաշվվում են ժամկետի ավարտից և Նորացման ժամկետից։ Կարող եք դրանք անջատել այստեղ։';
+
+  @override
+  String get remindersSectionTitle => 'Հիշեցումներ';
+
+  @override
+  String get remindersOffSubtitle => 'Այս գրառման համար հիշեցումներ չկան';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara-ն ձեզ կհիշեցնի';
+
+  @override
+  String get remindersNoDatesLeft => 'Այս ժամկետի ավարտից առաջ հիշեցման ամսաթվեր չեն մնացել։';
+
+  @override
+  String get remindersChooseDates => 'Ընտրեք ձեր ամսաթվերը';
+
+  @override
+  String get remindersChooseDatesLocked => 'Ընտրեք ձեր ամսաթվերը Premium-ով';
+
+  @override
+  String get remindersUseAutomatic => 'Օգտագործել ավտոմատ ամսաթվերը';
+
+  @override
+  String get tutorialRemindersSection => 'Հիշեցումները հաշվվում են ժամկետի ավարտի ամսաթվից։ Նորացման ժամկետը սահմանեք այնքան, որքան տևում է նորացումը, որպեսզի դրանք բավական վաղ սկսվեն։';
+
+  @override
+  String get tutorialRemindersDates => 'Սրանք այն օրերն են, երբ Vaultara-ն կհիշեցնի ձեզ։';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium-ով կարող եք ընտրել ձեր հիշեցման ամսաթվերը։';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Հպեք Ընտրեք ձեր ամսաթվերը՝ հիշեցումը փոխելու կամ նորը ավելացնելու համար։';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Ժամկետն ավարտվում է այսօր';
@@ -1163,6 +1196,17 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Անհատական խմբեր';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Ընտրեք ձեր հիշեցման ամսաթվերը';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Մինչև $count լուսանկար յուրաքանչյուր գրառման մեջ';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Ավտոմատ հիշեցումներ';
 
   @override
   String get planFeatureMultipleReminders => 'Բազմակի հիշեցումներ մեկ գրառման վրա';
@@ -7789,7 +7833,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get whatsNewDismiss => 'Հասկանալի է';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Ավելի շատ մանրամասներում լրացուցիչներն են՝ նշումներ, կրկնություն, թարմացման ժամկետ, ում է պատկանում, որտեղ եք պահում, կողպեք և լուսանկարներ։ Բացեք միայն անհրաժեշտության դեպքում։';
+  String get tutorialAddRecordMoreDetails2 => 'Ավելի շատ մանրամասներում լրացուցիչներն են՝ նշումներ, կրկնություն, ում է պատկանում, որտեղ եք պահում, կողպեք և լուսանկարներ։ Բացեք միայն անհրաժեշտության դեպքում։';
 
   @override
   String get tutorialAddRecordProtect2 => 'Կողպեք գրառումը, որպեսզի ցուցադրելուց առաջ պահանջի մատնահետք կամ էկրանի կողպեք։ Ընտրեք, թե որտեղ եք պահում, օրինակ՝ դրամապանակում, և ավելացրեք փաստաթղթի լուսանկարները։';
@@ -7868,13 +7912,13 @@ class AppLocalizationsHy extends AppLocalizations {
   String get storyRenew3Title => 'Չգիտե՞ք ինչպես';
 
   @override
-  String get storyRenew3Body => 'Շատ գրառումներ ունեն ուղեցույց՝ քայլերով, փաստաթղթերով և սովորական արժեքով։';
+  String get storyRenew3Body => 'Շատ գրառումներ ունեն նորացման ստուգաթերթ։ Հարցրեք Vaultara-ին կարող է գտնել ձեր երկրի քայլերը՝ պաշտոնական հղումներով։';
 
   @override
   String get storyRenew4Title => 'Թող կրկնվի';
 
   @override
-  String get storyRenew4Body => 'Բաժանորդագրությունների և տարեկան վճարումների համար միացրեք կրկնությունը, և ամսաթիվն ինքը կառաջանա։';
+  String get storyRenew4Body => 'Բաժանորդագրությունների և տարեկան վճարումների համար միացրեք Թարմացվում է ինքնուրույն, և ամսաթիվն ինքը առաջ կշարժվի։';
 
   @override
   String get storyAsk1Title => 'Հարցրեք ձեր բառերով';
@@ -7905,6 +7949,12 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Զրույցները պահվում են 90 օր «Զրույցների պատմություն»-ում, իսկ առաջարկվող հարցերն օգնում են սկսել։';
+
+  @override
+  String get storyAsk6Title => 'Ավելին, քան գրառումներ';
+
+  @override
+  String get storyAsk6Body => 'Այն կարող է նաև պլանավորել ճամփորդություններ, ավելացնել մարդկանց, գտնել ձեր երկրի նորացման քայլերը և կիսվել գրառումներով՝ պաշտոնական էջերի հղումներով։';
 
   @override
   String get storyWallet1Title => 'Նախ պատրաստվեք';

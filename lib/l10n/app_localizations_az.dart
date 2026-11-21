@@ -996,7 +996,40 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Xatırlatmaların necə işlədiyini görmək üçün xatırlatma sahəsinə toxunun.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Bu, xatırlatma sahəsidir: Vaultara burada sənədin müddəti bitməzdən əvvəl sizə bildiriş göndərə bilər.';
+  String get tutorialAddRecordReminderSolo => 'Xatırlatmalar bitmə tarixinə və Yeniləmə müddətinə görə hesablanır. Onları burada söndürə bilərsiniz.';
+
+  @override
+  String get remindersSectionTitle => 'Xatırlatmalar';
+
+  @override
+  String get remindersOffSubtitle => 'Bu qeyd üçün xatırlatma yoxdur';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara sizə bu tarixlərdə xatırladacaq';
+
+  @override
+  String get remindersNoDatesLeft => 'Bu bitmə tarixindən əvvəl xatırlatma tarixi qalmayıb.';
+
+  @override
+  String get remindersChooseDates => 'Öz tarixlərinizi seçin';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium ilə öz tarixlərinizi seçin';
+
+  @override
+  String get remindersUseAutomatic => 'Avtomatik tarixlərdən istifadə edin';
+
+  @override
+  String get tutorialRemindersSection => 'Xatırlatmalar bitmə tarixinə görə hesablanır. Yeniləmə müddətini yeniləmənin nə qədər çəkdiyinə qoyun ki, vaxtında başlasınlar.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara-nın sizə xatırladacağı günlər bunlardır.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium ilə öz xatırlatma tarixlərinizi seçə bilərsiniz.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Xatırlatmanı dəyişmək və ya yenisini əlavə etmək üçün Öz tarixlərinizi seçin düyməsinə toxunun.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Müddəti bu gün bitir';
@@ -1163,6 +1196,17 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Fərdi qruplar';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Öz xatırlatma tarixlərinizi seçin';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Hər qeyddə $count fotoya qədər';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Avtomatik xatırlatmalar';
 
   @override
   String get planFeatureMultipleReminders => 'Bir sənəd üçün çoxsaylı xatırlatmalar';
@@ -7789,7 +7833,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get whatsNewDismiss => 'Aydındır';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Daha çox təfərrüat əlavələri saxlayır: qeydlər, təkrar, yeniləmə müddəti, kimə aiddir, harada saxlayırsınız, kilid və fotolar. Yalnız lazım olanda açın.';
+  String get tutorialAddRecordMoreDetails2 => 'Daha çox təfərrüat əlavələri saxlayır: qeydlər, təkrar, kimə aiddir, harada saxlayırsınız, kilid və fotolar. Yalnız lazım olanda açın.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Qeydi kilidləyin ki, göstərilməzdən əvvəl barmaq izi və ya ekran kilidi istəsin. Harada saxladığınızı seçin, məsələn pul kisəsi, və sənədin fotolarını əlavə edin.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsAz extends AppLocalizations {
   String get storyRenew3Title => 'Necə olduğunu bilmirsiniz?';
 
   @override
-  String get storyRenew3Body => 'Bir çox qeydin addımlar, sənədlər və adi xərclə bələdçisi var.';
+  String get storyRenew3Body => 'Bir çox qeydin yeniləmə yoxlama siyahısı var. Vaultara-dan soruş ölkəniz üçün addımları rəsmi keçidlərlə tapa bilər.';
 
   @override
   String get storyRenew4Title => 'Qoy təkrarlansın';
 
   @override
-  String get storyRenew4Body => 'Abunəliklər və illik ödənişlər üçün təkrarı aktivləşdirin, tarix özü irəliləyəcək.';
+  String get storyRenew4Body => 'Abunəliklər və illik ödənişlər üçün Öz-özünə yenilənir seçimini aktivləşdirin, tarix özü irəliləyəcək.';
 
   @override
   String get storyAsk1Title => 'Öz sözlərinizlə soruşun';
@@ -7905,6 +7949,12 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Söhbətlər 90 gün «Söhbət tarixçəsi» bölməsində saxlanılır, təklif olunan suallar başlamağa kömək edir.';
+
+  @override
+  String get storyAsk6Title => 'Qeydlərdən daha çox';
+
+  @override
+  String get storyAsk6Body => 'O, həmçinin səfər planlaya, insan əlavə edə, ölkəniz üçün yeniləmə addımlarını tapa və qeydləri paylaşa bilər, rəsmi səhifələrə keçidlərlə.';
 
   @override
   String get storyWallet1Title => 'Əvvəlcə hazırlaşın';

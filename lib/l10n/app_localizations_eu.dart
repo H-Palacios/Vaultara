@@ -996,7 +996,40 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Sakatu gogorarazlearen eremua gogorarazleek nola funtzionatzen duten ikusteko.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Hau da gogorarazlearen eremua; hemen, Vaultarak jakinarazpena bidal diezazuke erregistroa iraungi aurretik.';
+  String get tutorialAddRecordReminderSolo => 'Gogorarazleak iraungitze-datatik eta Berritze-denboratik kalkulatzen dira. Hemen desaktiba ditzakezu.';
+
+  @override
+  String get remindersSectionTitle => 'Gogorarazleak';
+
+  @override
+  String get remindersOffSubtitle => 'Ez dago gogorarazlerik erregistro honetarako';
+
+  @override
+  String get remindersDatesTitle => 'Vaultarak egun hauetan gogoraraziko dizu';
+
+  @override
+  String get remindersNoDatesLeft => 'Iraungitze honen aurretik ez da gogorarazpen datarik geratzen.';
+
+  @override
+  String get remindersChooseDates => 'Aukeratu zure datak';
+
+  @override
+  String get remindersChooseDatesLocked => 'Aukeratu zure datak Premiumekin';
+
+  @override
+  String get remindersUseAutomatic => 'Erabili data automatikoak';
+
+  @override
+  String get tutorialRemindersSection => 'Gogorarazleak iraungitze-datatik kalkulatzen dira. Jarri Berritze-denbora berritzeak behar duen denboran, garaiz has daitezen.';
+
+  @override
+  String get tutorialRemindersDates => 'Hauek dira Vaultarak gogoraraziko dizun egunak.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premiumekin zure gogorarazpen-datak aukera ditzakezu.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Sakatu Aukeratu zure datak gogorarazle bat aldatzeko edo beste bat gehitzeko.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Gaur iraungitzen da';
@@ -1163,6 +1196,17 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Talde pertsonalizatuak';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Aukeratu zure gogorarazpen-datak';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return '$count argazki arte erregistro bakoitzean';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Gogorarazle automatikoak';
 
   @override
   String get planFeatureMultipleReminders => 'Gogorarazle bat baino gehiago erregistro bakar batean';
@@ -7793,7 +7837,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get whatsNewDismiss => 'Ulertuta';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Xehetasun gehiagok gehigarriak ditu: oharrak, errepikapena, berritze-denbora, norena den, non gordetzen duzun, blokeoa eta argazkiak. Ireki behar duzunean bakarrik.';
+  String get tutorialAddRecordMoreDetails2 => 'Xehetasun gehiagok gehigarriak ditu: oharrak, errepikapena, norena den, non gordetzen duzun, blokeoa eta argazkiak. Ireki behar duzunean bakarrik.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Blokeatu erregistro bat erakutsi aurretik hatz-marka edo pantaila-blokeoa eskatzeko. Aukeratu non gordetzen duzun, adibidez zorroan, eta gehitu dokumentuaren argazkiak.';
@@ -7872,13 +7916,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get storyRenew3Title => 'Ez dakizu nola?';
 
   @override
-  String get storyRenew3Body => 'Erregistro askok gida bat dute urratsekin, dokumentuekin eta ohiko kostuarekin.';
+  String get storyRenew3Body => 'Erregistro askok berritze-zerrenda dute. Galdetu Vaultarari aukerak zure herrialdeko urratsak aurki ditzake, esteka ofizialekin.';
 
   @override
   String get storyRenew4Title => 'Errepika dadila';
 
   @override
-  String get storyRenew4Body => 'Harpidetza eta urteko ordainketetarako, aktibatu errepikapena eta data bere kabuz aurreratuko da.';
+  String get storyRenew4Body => 'Harpidetza eta urteko ordainketetarako, aktibatu Berez berritzen da eta data bere kabuz aurreratuko da.';
 
   @override
   String get storyAsk1Title => 'Galdetu zure hitzekin';
@@ -7909,6 +7953,12 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Txatak 90 egunez gordetzen dira «Txaten historia» atalean, eta iradokitako galderek hasten laguntzen dute.';
+
+  @override
+  String get storyAsk6Title => 'Erregistroak baino gehiago';
+
+  @override
+  String get storyAsk6Body => 'Bidaiak planifikatu, pertsonak gehitu, zure herrialdeko berritze-urratsak aurkitu eta erregistroak partekatu ere egin ditzake, orri ofizialetarako estekekin.';
 
   @override
   String get storyWallet1Title => 'Prestatu lehenik';

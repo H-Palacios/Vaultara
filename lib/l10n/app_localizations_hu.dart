@@ -996,7 +996,40 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Koppintson az emlékeztető mezőre, hogy lássa, hogyan működnek az emlékeztetők.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Ez az emlékeztető mező, ahol a Vaultara értesítheti Önt, mielőtt a bejegyzés lejár.';
+  String get tutorialAddRecordReminderSolo => 'Az emlékeztetők a lejárati dátumból és a Megújítási időből számolódnak. Itt kikapcsolhatja őket.';
+
+  @override
+  String get remindersSectionTitle => 'Emlékeztetők';
+
+  @override
+  String get remindersOffSubtitle => 'Ehhez a tételhez nincs emlékeztető';
+
+  @override
+  String get remindersDatesTitle => 'A Vaultara ezeken a napokon emlékeztet';
+
+  @override
+  String get remindersNoDatesLeft => 'Ez előtt a lejárat előtt nem maradt emlékeztető dátum.';
+
+  @override
+  String get remindersChooseDates => 'Saját dátumok választása';
+
+  @override
+  String get remindersChooseDatesLocked => 'Saját dátumok választása Premiummal';
+
+  @override
+  String get remindersUseAutomatic => 'Automatikus dátumok használata';
+
+  @override
+  String get tutorialRemindersSection => 'Az emlékeztetők a lejárati dátumból számolódnak. Állítsa a Megújítási időt arra, amennyi a megújítás, hogy elég korán induljanak.';
+
+  @override
+  String get tutorialRemindersDates => 'Ezeken a napokon emlékeztet a Vaultara.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premiummal saját emlékeztető dátumokat választhat.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Koppintson a Saját dátumok választása gombra egy emlékeztető módosításához vagy hozzáadásához.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Ma jár le';
@@ -1163,6 +1196,17 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Egyedi csoportok';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Saját emlékeztető dátumok';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Legfeljebb $count fotó tételenként';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automatikus emlékeztetők';
 
   @override
   String get planFeatureMultipleReminders => 'Több emlékeztető egyetlen bejegyzéshez';
@@ -7789,7 +7833,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get whatsNewDismiss => 'Értem';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'A További részletek az extrákat tartalmazza: jegyzetek, ismétlés, megújítási idő, kié a tétel, hol tartod, zárolás és fotók. Csak akkor nyisd meg, ha kell.';
+  String get tutorialAddRecordMoreDetails2 => 'A További részletek az extrákat tartalmazza: jegyzetek, ismétlés, kié a tétel, hol tartod, zárolás és fotók. Csak akkor nyisd meg, ha kell.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Zárolj egy tételt, hogy megjelenítés előtt ujjlenyomatot vagy képernyőzárat kérjen. Válaszd ki, hol tartod, például a pénztárcában, és adj hozzá fotókat a dokumentumról.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsHu extends AppLocalizations {
   String get storyRenew3Title => 'Nem tudod, hogyan?';
 
   @override
-  String get storyRenew3Body => 'Sok tételhez tartozik útmutató a lépésekkel, a dokumentumokkal és a szokásos költséggel.';
+  String get storyRenew3Body => 'Sok tételhez tartozik megújítási ellenőrzőlista. A Kérdezze a Vaultarát megtalálja az országa lépéseit, hivatalos linkekkel.';
 
   @override
   String get storyRenew4Title => 'Legyen ismétlődő';
 
   @override
-  String get storyRenew4Body => 'Előfizetéseknél és éves díjaknál kapcsold be az ismétlést, és a dátum magától továbblép.';
+  String get storyRenew4Body => 'Előfizetéseknél és éves fizetéseknél kapcsolja be a Magától megújul opciót, és a dátum magától előre lép.';
 
   @override
   String get storyAsk1Title => 'Kérdezz a saját szavaiddal';
@@ -7905,6 +7949,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'A csevegések 90 napig megmaradnak itt: „Csevegési előzmények”, a javasolt kérdések pedig segítenek elindulni.';
+
+  @override
+  String get storyAsk6Title => 'Több mint tételek';
+
+  @override
+  String get storyAsk6Body => 'Utat is tervez, személyeket ad hozzá, megkeresi az országa megújítási lépéseit és megoszt tételeket, hivatalos oldalakra mutató linkekkel.';
 
   @override
   String get storyWallet1Title => 'Először készülj fel';

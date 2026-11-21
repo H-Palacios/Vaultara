@@ -993,7 +993,40 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'သတိပေးချက်များ အလုပ်လုပ်ပုံကို ကြည့်ရန် သတိပေးချက် အကွက်ကို တို့ပါ။';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'ဤသည်မှာ သတိပေးချက် အကွက် ဖြစ်ပြီး မှတ်တမ်း သက်တမ်းမကုန်မီ Vaultara က သင့်ကို ဤနေရာမှ အကြောင်းကြားနိုင်သည်။';
+  String get tutorialAddRecordReminderSolo => 'သတိပေးချက်များကို သက်တမ်းကုန်ရက်နှင့် သက်တမ်းတိုးချိန်မှ တွက်ချက်ပါသည်။ ဤနေရာတွင် ပိတ်နိုင်ပါသည်။';
+
+  @override
+  String get remindersSectionTitle => 'သတိပေးချက်များ';
+
+  @override
+  String get remindersOffSubtitle => 'ဤမှတ်တမ်းအတွက် သတိပေးချက် မရှိပါ';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara က သင့်ကို သတိပေးမည့်ရက်';
+
+  @override
+  String get remindersNoDatesLeft => 'ဤသက်တမ်းကုန်ရက်မတိုင်မီ သတိပေးရက် မကျန်တော့ပါ။';
+
+  @override
+  String get remindersChooseDates => 'ကိုယ်ပိုင်ရက်များ ရွေးပါ';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium ဖြင့် ကိုယ်ပိုင်ရက်များ ရွေးပါ';
+
+  @override
+  String get remindersUseAutomatic => 'အလိုအလျောက်ရက်များ သုံးပါ';
+
+  @override
+  String get tutorialRemindersSection => 'သတိပေးချက်များကို သက်တမ်းကုန်ရက်မှ တွက်ချက်ပါသည်။ စောစီးစွာ စတင်နိုင်ရန် သက်တမ်းတိုးချိန်ကို သက်တမ်းတိုးရန် ကြာချိန်အတိုင်း သတ်မှတ်ပါ။';
+
+  @override
+  String get tutorialRemindersDates => 'ဤရက်များတွင် Vaultara က သင့်ကို သတိပေးပါမည်။';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium ဖြင့် သတိပေးရက်များကို ကိုယ်တိုင် ရွေးနိုင်ပါသည်။';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'သတိပေးချက်ကို ပြောင်းရန် သို့မဟုတ် ထည့်ရန် ကိုယ်ပိုင်ရက်များ ရွေးပါ ကို တို့ပါ။';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ယနေ့ သက်တမ်းကုန်မည်';
@@ -1160,6 +1193,17 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'စိတ်ကြိုက် အုပ်စုများ';
+
+  @override
+  String get planFeatureOwnReminderDates => 'သတိပေးရက်များကို ကိုယ်တိုင် ရွေးပါ';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'မှတ်တမ်းတစ်ခုစီတွင် ဓာတ်ပုံ $count ပုံအထိ';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'အလိုအလျောက် သတိပေးချက်များ';
 
   @override
   String get planFeatureMultipleReminders => 'မှတ်တမ်းတစ်ခုတည်းတွင် သတိပေးချက် အများအပြား';
@@ -7730,7 +7774,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get whatsNewDismiss => 'နားလည်ပြီ';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'နောက်ထပ်အသေးစိတ်တွင် အပိုများပါသည်- မှတ်စု၊ ထပ်ခါ၊ သက်တမ်းတိုးချိန်၊ မည်သူ့ပိုင်၊ ဘယ်မှာထား၊ လော့ခ်နှင့် ဓာတ်ပုံ။ လိုအပ်မှသာ ဖွင့်ပါ။';
+  String get tutorialAddRecordMoreDetails2 => 'နောက်ထပ်အသေးစိတ်တွင် အပိုများပါသည်- မှတ်စု၊ ထပ်ခါ၊ မည်သူ့ပိုင်၊ ဘယ်မှာထား၊ လော့ခ်နှင့် ဓာတ်ပုံ။ လိုအပ်မှသာ ဖွင့်ပါ။';
 
   @override
   String get tutorialAddRecordProtect2 => 'မပြမီ လက်ဗွေ သို့မဟုတ် မျက်နှာပြင်လော့ခ် တောင်းရန် မှတ်တမ်းကို လော့ခ်ချပါ။ ဘယ်မှာထားသည်ကို ရွေးပါ၊ ဥပမာ ပိုက်ဆံအိတ်၊ စာရွက်စာတမ်းဓာတ်ပုံ ထည့်ပါ။';
@@ -7809,13 +7853,13 @@ class AppLocalizationsMy extends AppLocalizations {
   String get storyRenew3Title => 'ဘယ်လိုလုပ်ရမလဲ မသေချာဘူးလား?';
 
   @override
-  String get storyRenew3Body => 'မှတ်တမ်းများစွာတွင် အဆင့်များ၊ စာရွက်စာတမ်းနှင့် ပုံမှန်ကုန်ကျစရိတ်ပါ လမ်းညွှန်ရှိသည်။';
+  String get storyRenew3Body => 'မှတ်တမ်းအများအပြားတွင် သက်တမ်းတိုးစစ်ဆေးစာရင်း ရှိသည်။ Vaultara ကို မေးရန် က သင့်နိုင်ငံအတွက် အဆင့်များကို တရားဝင်လင့်ခ်များနှင့် ရှာပေးနိုင်သည်။';
 
   @override
   String get storyRenew4Title => 'ထပ်ခါဖြစ်ပါစေ';
 
   @override
-  String get storyRenew4Body => 'စာရင်းသွင်းမှုနှင့် နှစ်စဉ်ပေးချေမှုများအတွက် ထပ်ခါကို ဖွင့်ပါ၊ ရက်စွဲသည် အလိုအလျောက် ရှေ့တိုးမည်။';
+  String get storyRenew4Body => 'စာရင်းသွင်းမှုနှင့် နှစ်စဉ်ပေးချေမှုများအတွက် အလိုအလျောက် သက်တမ်းတိုး ကို ဖွင့်ပါ၊ ရက်စွဲသည် အလိုလို ရှေ့သို့ ရွေ့ပါမည်။';
 
   @override
   String get storyAsk1Title => 'သင့်စကားဖြင့် မေးပါ';
@@ -7846,6 +7890,12 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'ချက်တင်များကို «စကားပြောမှတ်တမ်း» တွင် ရက် 90 သိမ်းထားပြီး အကြံပြုမေးခွန်းများက စတင်ရန် ကူညီသည်။';
+
+  @override
+  String get storyAsk6Title => 'မှတ်တမ်းများထက် ပိုသည်';
+
+  @override
+  String get storyAsk6Body => 'ခရီးစီစဉ်ခြင်း၊ လူထည့်ခြင်း၊ သင့်နိုင်ငံအတွက် သက်တမ်းတိုးအဆင့်များ ရှာခြင်းနှင့် မှတ်တမ်းမျှဝေခြင်းတို့ကိုလည်း တရားဝင်စာမျက်နှာလင့်ခ်များနှင့်အတူ လုပ်နိုင်သည်။';
 
   @override
   String get storyWallet1Title => 'ဦးစွာ ပြင်ဆင်ပါ';

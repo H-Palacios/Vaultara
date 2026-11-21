@@ -998,7 +998,40 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Ťuknite na pole pripomienky a pozrite sa, ako pripomienky fungujú.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Toto je pole pripomienky, kde vás Vaultara môže upozorniť, než záznam vyprší.';
+  String get tutorialAddRecordReminderSolo => 'Pripomienky sa počítajú od dátumu vypršania a Času obnovenia. Tu ich môžete vypnúť.';
+
+  @override
+  String get remindersSectionTitle => 'Pripomienky';
+
+  @override
+  String get remindersOffSubtitle => 'Pre tento záznam nie sú žiadne pripomienky';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara vám pripomenie';
+
+  @override
+  String get remindersNoDatesLeft => 'Pred týmto vypršaním nezostali žiadne dátumy pripomienok.';
+
+  @override
+  String get remindersChooseDates => 'Vybrať vlastné dátumy';
+
+  @override
+  String get remindersChooseDatesLocked => 'Vybrať vlastné dátumy s Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Použiť automatické dátumy';
+
+  @override
+  String get tutorialRemindersSection => 'Pripomienky sa počítajú od dátumu vypršania. Nastavte Čas obnovenia podľa toho, ako dlho obnovenie trvá, aby začali dosť skoro.';
+
+  @override
+  String get tutorialRemindersDates => 'V tieto dni vám Vaultara pripomenie.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'S Premium si môžete vybrať vlastné dátumy pripomienok.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Ťuknutím na Vybrať vlastné dátumy zmeníte pripomienku alebo pridáte ďalšiu.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Vyprší dnes';
@@ -1165,6 +1198,17 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Vlastné skupiny';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Vlastné dátumy pripomienok';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Až $count fotiek pri každom zázname';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automatické pripomienky';
 
   @override
   String get planFeatureMultipleReminders => 'Viacero pripomienok pri jednom zázname';
@@ -7922,7 +7966,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get whatsNewDismiss => 'Rozumiem';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Ďalšie podrobnosti obsahujú doplnky: poznámky, opakovanie, čas obnovy, čí je záznam, kde ho máte, zámok a fotky. Otvárajte ich len v prípade potreby.';
+  String get tutorialAddRecordMoreDetails2 => 'Ďalšie podrobnosti obsahujú doplnky: poznámky, opakovanie, čí je záznam, kde ho máte, zámok a fotky. Otvárajte ich len v prípade potreby.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Zamknite záznam, aby pred zobrazením vyžadoval odtlačok prsta alebo zámok obrazovky. Zvoľte, kde ho máte, napríklad v peňaženke, a pridajte fotky dokladu.';
@@ -8001,13 +8045,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get storyRenew3Title => 'Neviete ako?';
 
   @override
-  String get storyRenew3Body => 'Mnoho záznamov má sprievodcu s krokmi, dokladmi a obvyklou cenou.';
+  String get storyRenew3Body => 'Mnoho záznamov má kontrolný zoznam obnovenia. Opýtajte sa Vaultary nájde kroky pre vašu krajinu s oficiálnymi odkazmi.';
 
   @override
   String get storyRenew4Title => 'Nech sa opakuje';
 
   @override
-  String get storyRenew4Body => 'Pri predplatných a ročných platbách zapnite opakovanie a dátum sa posunie sám.';
+  String get storyRenew4Body => 'Pri predplatnom a ročných platbách zapnite Obnovuje sa samo a dátum sa posunie sám.';
 
   @override
   String get storyAsk1Title => 'Pýtajte sa vlastnými slovami';
@@ -8038,6 +8082,12 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Chaty sa uchovávajú 90 dní v „História chatov“ a navrhované otázky vám pomôžu začať.';
+
+  @override
+  String get storyAsk6Title => 'Viac než záznamy';
+
+  @override
+  String get storyAsk6Body => 'Dokáže aj plánovať cesty, pridávať ľudí, nájsť kroky obnovenia pre vašu krajinu a zdieľať záznamy, s odkazmi na oficiálne stránky.';
 
   @override
   String get storyWallet1Title => 'Pripravte sa vopred';

@@ -996,7 +996,40 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Ýttu á áminningarreitinn til að sjá hvernig áminningar virka.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Þetta er áminningarreiturinn, þar sem Vaultara getur látið þig vita áður en færslan rennur út.';
+  String get tutorialAddRecordReminderSolo => 'Áminningar eru reiknaðar út frá gildislokum og Endurnýjunartíma. Þú getur slökkt á þeim hér.';
+
+  @override
+  String get remindersSectionTitle => 'Áminningar';
+
+  @override
+  String get remindersOffSubtitle => 'Engar áminningar fyrir þessa færslu';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara minnir þig á';
+
+  @override
+  String get remindersNoDatesLeft => 'Engar áminningardagsetningar eru eftir fyrir þessa gildislok.';
+
+  @override
+  String get remindersChooseDates => 'Veldu eigin dagsetningar';
+
+  @override
+  String get remindersChooseDatesLocked => 'Veldu eigin dagsetningar með Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Nota sjálfvirkar dagsetningar';
+
+  @override
+  String get tutorialRemindersSection => 'Áminningar eru reiknaðar út frá gildislokum. Stilltu Endurnýjunartíma á hversu lengi endurnýjun tekur, svo þær hefjist nógu snemma.';
+
+  @override
+  String get tutorialRemindersDates => 'Þetta eru dagarnir sem Vaultara minnir þig á.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Með Premium geturðu valið eigin áminningardagsetningar.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Ýttu á Veldu eigin dagsetningar til að breyta áminningu eða bæta við.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Rennur út í dag';
@@ -1162,6 +1195,17 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Sérsniðnir hópar';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Veldu eigin áminningardagsetningar';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Allt að $count myndir á hverja færslu';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Sjálfvirkar áminningar';
 
   @override
   String get planFeatureMultipleReminders => 'Margar áminningar á stakri færslu';
@@ -7788,7 +7832,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get whatsNewDismiss => 'Skilið';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Nánari upplýsingar geyma aukaatriðin: athugasemdir, endurtekningu, endurnýjunartíma, hver á færsluna, hvar þú geymir hana, læsingu og myndir. Opnaðu það aðeins þegar þú þarft.';
+  String get tutorialAddRecordMoreDetails2 => 'Nánari upplýsingar geyma aukaatriðin: athugasemdir, endurtekningu, hver á færsluna, hvar þú geymir hana, læsingu og myndir. Opnaðu það aðeins þegar þú þarft.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Læstu færslu svo hún krefjist fingrafars eða skjálæsingar áður en hún birtist. Veldu hvar þú geymir hana, t.d. í veskinu, og bættu við myndum af skjalinu.';
@@ -7867,13 +7911,13 @@ class AppLocalizationsIs extends AppLocalizations {
   String get storyRenew3Title => 'Ekki viss um hvernig?';
 
   @override
-  String get storyRenew3Body => 'Margar færslur eru með leiðbeiningar um skrefin, skjölin og venjulegan kostnað.';
+  String get storyRenew3Body => 'Margar færslur eru með gátlista fyrir endurnýjun. Spyrðu Vaultara getur fundið skrefin fyrir landið þitt, með opinberum tenglum.';
 
   @override
   String get storyRenew4Title => 'Láttu hana endurtaka sig';
 
   @override
-  String get storyRenew4Body => 'Fyrir áskriftir og árlegar greiðslur kveikirðu á endurtekningu og dagsetningin færist sjálfkrafa.';
+  String get storyRenew4Body => 'Fyrir áskriftir og árlegar greiðslur skaltu kveikja á Endurnýjast sjálft og dagsetningin færist sjálf áfram.';
 
   @override
   String get storyAsk1Title => 'Spurðu með þínum orðum';
@@ -7904,6 +7948,12 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Spjall er geymt í 90 daga í „Spjallsaga“ og tillögur að spurningum hjálpa þér af stað.';
+
+  @override
+  String get storyAsk6Title => 'Meira en færslur';
+
+  @override
+  String get storyAsk6Body => 'Það getur líka skipulagt ferðir, bætt við fólki, fundið endurnýjunarskref fyrir landið þitt og deilt færslum, með tenglum á opinberar síður.';
 
   @override
   String get storyWallet1Title => 'Undirbúðu þig fyrst';

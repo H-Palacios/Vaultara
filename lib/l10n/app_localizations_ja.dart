@@ -989,7 +989,40 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'リマインダーの仕組みを見るには、リマインダー欄をタップしてください。';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'これはリマインダー欄です。記録の期限が切れる前に Vaultara が通知できます。';
+  String get tutorialAddRecordReminderSolo => 'リマインダーは有効期限と更新にかかる期間から計算されます。ここでオフにできます。';
+
+  @override
+  String get remindersSectionTitle => 'リマインダー';
+
+  @override
+  String get remindersOffSubtitle => 'この記録にはリマインダーがありません';
+
+  @override
+  String get remindersDatesTitle => 'Vaultaraがお知らせする日';
+
+  @override
+  String get remindersNoDatesLeft => 'この期限までに残っているリマインダーの日はありません。';
+
+  @override
+  String get remindersChooseDates => '自分で日付を選ぶ';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premiumで自分で日付を選ぶ';
+
+  @override
+  String get remindersUseAutomatic => '自動の日付を使う';
+
+  @override
+  String get tutorialRemindersSection => 'リマインダーは有効期限から計算されます。更新にかかる期間を実際の所要期間に設定すると、十分早く始まります。';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultaraがお知らせする日です。';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premiumなら、リマインダーの日付を自分で選べます。';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => '「自分で日付を選ぶ」をタップすると、リマインダーの変更や追加ができます。';
 
   @override
   String get smartInsightExpiresTodayHeading => '本日期限切れ';
@@ -1156,6 +1189,17 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'カスタムグループ';
+
+  @override
+  String get planFeatureOwnReminderDates => 'リマインダーの日付を自分で選べる';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return '1件の記録に写真を最大$count枚';
+  }
+
+  @override
+  String get planFeatureAutoReminders => '自動リマインダー';
 
   @override
   String get planFeatureMultipleReminders => '1つの記録に複数のリマインダーを設定可能';
@@ -7720,7 +7764,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get whatsNewDismiss => 'OK';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => '詳細には追加項目があります：メモ、繰り返し、更新期間、持ち主、保管場所、ロック、写真。必要なときだけ開きましょう。';
+  String get tutorialAddRecordMoreDetails2 => '詳細には追加項目があります：メモ、繰り返し、持ち主、保管場所、ロック、写真。必要なときだけ開きましょう。';
 
   @override
   String get tutorialAddRecordProtect2 => '記録をロックすると、表示前に指紋や画面ロックが必要になります。財布など保管場所を選び、書類の写真を追加しましょう。';
@@ -7799,13 +7843,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get storyRenew3Title => 'やり方がわからない？';
 
   @override
-  String get storyRenew3Body => '多くの記録に、手順、必要書類、一般的な費用をまとめたガイドがあります。';
+  String get storyRenew3Body => '多くの記録には更新チェックリストがあります。Vaultaraに聞くで、お住まいの国の手順を公式リンク付きで探せます。';
 
   @override
   String get storyRenew4Title => '繰り返しにする';
 
   @override
-  String get storyRenew4Body => 'サブスクや年払いは繰り返しをオンにすると、日付が自動で進みます。';
+  String get storyRenew4Body => 'サブスクリプションや年払いは「自動で更新」をオンにすると、日付が自動で進みます。';
 
   @override
   String get storyAsk1Title => '自分の言葉で質問';
@@ -7836,6 +7880,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'チャットは「チャット履歴」に90日間保存され、おすすめの質問で始めやすくなっています。';
+
+  @override
+  String get storyAsk6Title => '記録だけではありません';
+
+  @override
+  String get storyAsk6Body => '旅行の計画、人の追加、お住まいの国の更新手順の検索、記録の共有もでき、公式ページへのリンクも示します。';
 
   @override
   String get storyWallet1Title => 'まずは準備';

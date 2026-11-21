@@ -996,7 +996,40 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Taabo goobta xusuusinta si aad u aragto sida xusuusinta u shaqeeyaan.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Tani waa goobta xusuusinta, halkaas oo Vaultara kuu ogeysiin karo ka hor inta uusan diiwaanku dhicin.';
+  String get tutorialAddRecordReminderSolo => 'Xusuusinta waxaa laga xisaabiyaa taariikhda dhicitaanka iyo Waqtiga cusboonaysiinta. Halkan waad ka dami kartaa.';
+
+  @override
+  String get remindersSectionTitle => 'Xusuusin';
+
+  @override
+  String get remindersOffSubtitle => 'Diiwaankan xusuusin uma laha';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara waxay ku xusuusin doontaa';
+
+  @override
+  String get remindersNoDatesLeft => 'Ka hor dhicitaankan ma jiraan taariikho xusuusin oo hadhay.';
+
+  @override
+  String get remindersChooseDates => 'Dooro taariikhahaaga';
+
+  @override
+  String get remindersChooseDatesLocked => 'Ku dooro taariikhahaaga Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Isticmaal taariikhaha tooska ah';
+
+  @override
+  String get tutorialRemindersSection => 'Xusuusinta waxaa laga xisaabiyaa taariikhda dhicitaanka. Dhig Waqtiga cusboonaysiinta inta cusboonaysiintu qaadato, si ay goor hore u bilaabmaan.';
+
+  @override
+  String get tutorialRemindersDates => 'Kuwani waa maalmaha Vaultara ku xusuusin doonto.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium waxaad ku dooran kartaa taariikhaha xusuusintaada.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Taabo Dooro taariikhahaaga si aad u beddesho xusuusin ama aad mid ugu darto.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Maanta Ayay Dhacaysaa';
@@ -1163,6 +1196,17 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Kooxo gaar ah';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Dooro taariikhaha xusuusintaada';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Ilaa $count sawir diiwaan kasta';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Xusuusin toos ah';
 
   @override
   String get planFeatureMultipleReminders => 'Xusuusiyeyaal badan oo ku dhex jira hal diiwaan';
@@ -7788,7 +7832,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get whatsNewDismiss => 'Waan fahmay';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Faahfaahin dheeraad ah waxay haysaa waxyaabaha dheeraadka ah: qoraallo, ku celin, waqtiga cusboonaysiinta, cidda iska leh, halka aad ku haysato, quful iyo sawirro. Fur kaliya marka aad u baahato.';
+  String get tutorialAddRecordMoreDetails2 => 'Faahfaahin dheeraad ah waxay haysaa waxyaabaha dheeraadka ah: qoraallo, ku celin, cidda iska leh, halka aad ku haysato, quful iyo sawirro. Fur kaliya marka aad u baahato.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Quful diiwaan si uu u weydiiyo faraha ama qufulka shaashadda ka hor inta aan la muujin. Dooro halka aad ku haysato, sida boorsadaada, oo ku dar sawirrada dukumentiga.';
@@ -7867,13 +7911,13 @@ class AppLocalizationsSo extends AppLocalizations {
   String get storyRenew3Title => 'Ma hubtid sida?';
 
   @override
-  String get storyRenew3Body => 'Diiwaanno badan waxay leeyihiin hage leh tallaabooyinka, dukumentiyada iyo qiimaha caadiga ah.';
+  String get storyRenew3Body => 'Diiwaanno badan waxay leeyihiin liis cusboonaysiin. Weydii Vaultara waxay heli kartaa tallaabooyinka waddankaaga, iyadoo leh xiriiriyeyaal rasmi ah.';
 
   @override
   String get storyRenew4Title => 'Ha ku celiyo';
 
   @override
-  String get storyRenew4Body => 'Rukummada iyo lacag-bixinta sannadlaha ah, daar ku celinta oo taariikhdu iskeed ayay u dhaqaaqaysaa.';
+  String get storyRenew4Body => 'Rukummada iyo lacag bixinta sanadlaha ah, daar Iskiis ayuu u cusboonaadaa, taariikhduna iskeed ayay hore ugu socon doontaa.';
 
   @override
   String get storyAsk1Title => 'Ku weydii ereyadaada';
@@ -7904,6 +7948,12 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Wadahadallada waxaa lagu hayaa 90 maalmood «Taariikhda wada hadallada», su\'aalaha la soo jeediyayna waxay kaa caawinayaan inaad bilowdo.';
+
+  @override
+  String get storyAsk6Title => 'Ka badan diiwaanno';
+
+  @override
+  String get storyAsk6Body => 'Waxay sidoo kale qorsheyn kartaa safarro, ku dari kartaa dad, heli kartaa tallaabooyinka cusboonaysiinta ee waddankaaga oo wadaagi kartaa diiwaanno, iyadoo leh xiriiriyeyaal bogag rasmi ah.';
 
   @override
   String get storyWallet1Title => 'Marka hore isu diyaari';

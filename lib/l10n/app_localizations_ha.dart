@@ -996,7 +996,40 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Danna filin tunatarwa don ganin yadda tunatarwa ke aiki.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Wannan shi ne filin tunatarwa, inda Vaultara zai iya sanar da kai kafin rikodin ya ƙare.';
+  String get tutorialAddRecordReminderSolo => 'Ana lissafa tunatarwa daga ranar ƙarewa da Lokacin sabuntawa. Za ka iya kashe su a nan.';
+
+  @override
+  String get remindersSectionTitle => 'Tunatarwa';
+
+  @override
+  String get remindersOffSubtitle => 'Babu tunatarwa ga wannan rikodin';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara za ta tunatar da kai a';
+
+  @override
+  String get remindersNoDatesLeft => 'Babu sauran ranakun tunatarwa kafin wannan ƙarewa.';
+
+  @override
+  String get remindersChooseDates => 'Zaɓi ranakunka';
+
+  @override
+  String get remindersChooseDatesLocked => 'Zaɓi ranakunka da Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Yi amfani da ranakun atomatik';
+
+  @override
+  String get tutorialRemindersSection => 'Ana lissafa tunatarwa daga ranar ƙarewa. Saita Lokacin sabuntawa zuwa tsawon lokacin da sabuntawa ke ɗauka, don su fara da wuri.';
+
+  @override
+  String get tutorialRemindersDates => 'Waɗannan su ne ranakun da Vaultara za ta tunatar da kai.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Da Premium, za ka iya zaɓar ranakun tunatarwarka.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Taɓa Zaɓi ranakunka don canza tunatarwa ko ƙara wata.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Yana karewa yau';
@@ -1163,6 +1196,17 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Ƙungiyoyi na musamman';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Zaɓi ranakun tunatarwarka';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Har zuwa hotuna $count a kowane rikodin';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Tunatarwa ta atomatik';
 
   @override
   String get planFeatureMultipleReminders => 'Tunatarwa da yawa akan rikodi guda';
@@ -7789,7 +7833,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get whatsNewDismiss => 'Na gane';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Ƙarin bayani yana ɗauke da ƙari: bayanin kula, maimaitawa, lokacin sabuntawa, na wane ne, inda kake ajiye shi, kulle da hotuna. Buɗe shi kawai idan kana buƙata.';
+  String get tutorialAddRecordMoreDetails2 => 'Ƙarin bayani yana ɗauke da ƙari: bayanin kula, maimaitawa, na wane ne, inda kake ajiye shi, kulle da hotuna. Buɗe shi kawai idan kana buƙata.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Kulle bayani don ya nemi zanen yatsa ko kullin allo kafin a nuna shi. Zaɓi inda kake ajiye shi, kamar walat ɗinka, ka ƙara hotunan takardar.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsHa extends AppLocalizations {
   String get storyRenew3Title => 'Ba ka da tabbacin yadda?';
 
   @override
-  String get storyRenew3Body => 'Bayanai da yawa suna da jagora da matakai, takardu da farashin da aka saba.';
+  String get storyRenew3Body => 'Rikodi da yawa suna da jerin sabuntawa. Tambayi Vaultara na iya nemo matakan ƙasarka, tare da hanyoyin hukuma.';
 
   @override
   String get storyRenew4Title => 'Bari ya maimaita';
 
   @override
-  String get storyRenew4Body => 'Don biyan kuɗi na lokaci-lokaci da na shekara, kunna maimaitawa kuma kwanan wata zai matsa da kansa.';
+  String get storyRenew4Body => 'Don rajista da biyan kuɗi na shekara, kunna Yana sabunta kansa kuma ranar za ta ci gaba da kanta.';
 
   @override
   String get storyAsk1Title => 'Tambaya da kalmominka';
@@ -7905,6 +7949,12 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Ana ajiye hirarraki na kwanaki 90 a «Tarihin hira», kuma tambayoyin da aka ba da shawara suna taimaka maka ka fara.';
+
+  @override
+  String get storyAsk6Title => 'Fiye da rikodi';
+
+  @override
+  String get storyAsk6Body => 'Tana iya tsara tafiye-tafiye, ƙara mutane, nemo matakan sabuntawa na ƙasarka da raba rikodi, tare da hanyoyin zuwa shafukan hukuma.';
 
   @override
   String get storyWallet1Title => 'Shirya da farko';

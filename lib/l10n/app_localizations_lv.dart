@@ -997,7 +997,40 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Pieskarieties atgādinājuma laukam, lai redzētu, kā darbojas atgādinājumi.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Šis ir atgādinājuma lauks, kur Vaultara var jūs informēt pirms ieraksta beigu termiņa.';
+  String get tutorialAddRecordReminderSolo => 'Atgādinājumi tiek aprēķināti no derīguma beigu datuma un Atjaunošanas laika. Šeit tos varat izslēgt.';
+
+  @override
+  String get remindersSectionTitle => 'Atgādinājumi';
+
+  @override
+  String get remindersOffSubtitle => 'Šim ierakstam nav atgādinājumu';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara jums atgādinās';
+
+  @override
+  String get remindersNoDatesLeft => 'Pirms šī derīguma beigām nav palicis neviens atgādinājuma datums.';
+
+  @override
+  String get remindersChooseDates => 'Izvēlēties savus datumus';
+
+  @override
+  String get remindersChooseDatesLocked => 'Izvēlēties savus datumus ar Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Izmantot automātiskos datumus';
+
+  @override
+  String get tutorialRemindersSection => 'Atgādinājumi tiek aprēķināti no derīguma beigu datuma. Iestatiet Atjaunošanas laiku tik ilgu, cik ilgi notiek atjaunošana, lai tie sāktos laikus.';
+
+  @override
+  String get tutorialRemindersDates => 'Šajās dienās Vaultara jums atgādinās.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Ar Premium varat paši izvēlēties atgādinājumu datumus.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Pieskarieties Izvēlēties savus datumus, lai mainītu atgādinājumu vai pievienotu jaunu.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Termiņš beidzas šodien';
@@ -1163,6 +1196,17 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Pielāgotas grupas';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Izvēlieties savus atgādinājumu datumus';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Līdz $count fotoattēliem katram ierakstam';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automātiski atgādinājumi';
 
   @override
   String get planFeatureMultipleReminders => 'Vairāki atgādinājumi vienam ierakstam';
@@ -7855,7 +7899,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get whatsNewDismiss => 'Skaidrs';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Vairāk informācijas ietver papildu lietas: piezīmes, atkārtošanu, atjaunošanas laiku, kam ieraksts pieder, kur to glabā, bloķēšanu un fotoattēlus. Atver to tikai tad, kad vajag.';
+  String get tutorialAddRecordMoreDetails2 => 'Vairāk informācijas ietver papildu lietas: piezīmes, atkārtošanu, kam ieraksts pieder, kur to glabā, bloķēšanu un fotoattēlus. Atver to tikai tad, kad vajag.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Bloķē ierakstu, lai pirms parādīšanas tas prasītu pirksta nospiedumu vai ekrāna bloķēšanu. Izvēlies, kur to glabā, piemēram, makā, un pievieno dokumenta fotoattēlus.';
@@ -7934,13 +7978,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get storyRenew3Title => 'Nezini, kā?';
 
   @override
-  String get storyRenew3Body => 'Daudziem ierakstiem ir ceļvedis ar soļiem, dokumentiem un parasto cenu.';
+  String get storyRenew3Body => 'Daudziem ierakstiem ir atjaunošanas kontrolsaraksts. Jautāt Vaultara var atrast jūsu valsts soļus ar oficiālām saitēm.';
 
   @override
   String get storyRenew4Title => 'Lai atkārtojas';
 
   @override
-  String get storyRenew4Body => 'Abonementiem un gada maksājumiem ieslēdz atkārtošanu, un datums pārbīdīsies pats.';
+  String get storyRenew4Body => 'Abonementiem un ikgadējiem maksājumiem ieslēdziet Atjaunojas pats, un datums pats pārvietosies uz priekšu.';
 
   @override
   String get storyAsk1Title => 'Jautā saviem vārdiem';
@@ -7971,6 +8015,12 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Sarunas glabājas 90 dienas sadaļā “Sarunu vēsture”, un ieteiktie jautājumi palīdz sākt.';
+
+  @override
+  String get storyAsk6Title => 'Vairāk nekā ieraksti';
+
+  @override
+  String get storyAsk6Body => 'Tas var arī plānot ceļojumus, pievienot cilvēkus, atrast jūsu valsts atjaunošanas soļus un kopīgot ierakstus, ar saitēm uz oficiālām lapām.';
 
   @override
   String get storyWallet1Title => 'Vispirms sagatavojies';

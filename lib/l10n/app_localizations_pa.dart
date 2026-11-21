@@ -996,7 +996,40 @@ class AppLocalizationsPa extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'ਰਿਮਾਈਂਡਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਨ ਇਹ ਵੇਖਣ ਲਈ ਰਿਮਾਈਂਡਰ ਖੇਤਰ \'ਤੇ ਟੈਪ ਕਰੋ।';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'ਇਹ ਰਿਮਾਈਂਡਰ ਖੇਤਰ ਹੈ, ਜਿੱਥੇ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ Vaultara ਤੁਹਾਨੂੰ ਸੂਚਿਤ ਕਰ ਸਕਦਾ ਹੈ।';
+  String get tutorialAddRecordReminderSolo => 'ਰਿਮਾਈਂਡਰ ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਦੀ ਤਾਰੀਖ਼ ਅਤੇ ਨਵੀਨੀਕਰਨ ਦੇ ਸਮੇਂ ਤੋਂ ਗਿਣੇ ਜਾਂਦੇ ਹਨ। ਤੁਸੀਂ ਇਨ੍ਹਾਂ ਨੂੰ ਇੱਥੇ ਬੰਦ ਕਰ ਸਕਦੇ ਹੋ।';
+
+  @override
+  String get remindersSectionTitle => 'ਰਿਮਾਈਂਡਰ';
+
+  @override
+  String get remindersOffSubtitle => 'ਇਸ ਰਿਕਾਰਡ ਲਈ ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara ਤੁਹਾਨੂੰ ਇਨ੍ਹਾਂ ਦਿਨਾਂ ਯਾਦ ਕਰਵਾਏਗਾ';
+
+  @override
+  String get remindersNoDatesLeft => 'ਇਸ ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਕੋਈ ਰਿਮਾਈਂਡਰ ਤਾਰੀਖ਼ ਬਾਕੀ ਨਹੀਂ।';
+
+  @override
+  String get remindersChooseDates => 'ਆਪਣੀਆਂ ਤਾਰੀਖ਼ਾਂ ਚੁਣੋ';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium ਨਾਲ ਆਪਣੀਆਂ ਤਾਰੀਖ਼ਾਂ ਚੁਣੋ';
+
+  @override
+  String get remindersUseAutomatic => 'ਆਪਣੇ ਆਪ ਵਾਲੀਆਂ ਤਾਰੀਖ਼ਾਂ ਵਰਤੋ';
+
+  @override
+  String get tutorialRemindersSection => 'ਰਿਮਾਈਂਡਰ ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਦੀ ਤਾਰੀਖ਼ ਤੋਂ ਗਿਣੇ ਜਾਂਦੇ ਹਨ। ਨਵੀਨੀਕਰਨ ਦਾ ਸਮਾਂ ਓਨਾ ਰੱਖੋ ਜਿੰਨਾ ਨਵੀਨੀਕਰਨ ਵਿੱਚ ਲੱਗਦਾ ਹੈ, ਤਾਂ ਜੋ ਉਹ ਸਮੇਂ ਸਿਰ ਸ਼ੁਰੂ ਹੋਣ।';
+
+  @override
+  String get tutorialRemindersDates => 'ਇਨ੍ਹਾਂ ਦਿਨਾਂ Vaultara ਤੁਹਾਨੂੰ ਯਾਦ ਕਰਵਾਏਗਾ।';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium ਨਾਲ ਤੁਸੀਂ ਆਪਣੀਆਂ ਰਿਮਾਈਂਡਰ ਤਾਰੀਖ਼ਾਂ ਚੁਣ ਸਕਦੇ ਹੋ।';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'ਰਿਮਾਈਂਡਰ ਬਦਲਣ ਜਾਂ ਜੋੜਨ ਲਈ ਆਪਣੀਆਂ ਤਾਰੀਖ਼ਾਂ ਚੁਣੋ \'ਤੇ ਟੈਪ ਕਰੋ।';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ਅੱਜ ਖਤਮ ਹੋ ਰਿਹਾ ਹੈ';
@@ -1163,6 +1196,17 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'ਕਸਟਮ ਗਰੁੱਪ';
+
+  @override
+  String get planFeatureOwnReminderDates => 'ਆਪਣੀਆਂ ਰਿਮਾਈਂਡਰ ਤਾਰੀਖ਼ਾਂ ਚੁਣੋ';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'ਹਰ ਰਿਕਾਰਡ \'ਤੇ $count ਤੱਕ ਫ਼ੋਟੋਆਂ';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'ਆਪਣੇ ਆਪ ਰਿਮਾਈਂਡਰ';
 
   @override
   String get planFeatureMultipleReminders => 'ਇੱਕ ਸਿੰਗਲ ਰਿਕਾਰਡ \'ਤੇ ਕਈ ਰਿਮਾਈਂਡਰ';
@@ -7789,7 +7833,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get whatsNewDismiss => 'ਸਮਝ ਗਿਆ';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'ਹੋਰ ਵੇਰਵਿਆਂ ਵਿੱਚ ਵਾਧੂ ਚੀਜ਼ਾਂ ਹਨ: ਨੋਟ, ਦੁਹਰਾਓ, ਨਵੀਨੀਕਰਨ ਸਮਾਂ, ਕਿਸ ਦਾ ਹੈ, ਕਿੱਥੇ ਰੱਖਦੇ ਹੋ, ਲਾਕ ਅਤੇ ਫ਼ੋਟੋਆਂ। ਲੋੜ ਹੋਵੇ ਤਾਂ ਹੀ ਖੋਲ੍ਹੋ।';
+  String get tutorialAddRecordMoreDetails2 => 'ਹੋਰ ਵੇਰਵਿਆਂ ਵਿੱਚ ਵਾਧੂ ਚੀਜ਼ਾਂ ਹਨ: ਨੋਟ, ਦੁਹਰਾਓ, ਕਿਸ ਦਾ ਹੈ, ਕਿੱਥੇ ਰੱਖਦੇ ਹੋ, ਲਾਕ ਅਤੇ ਫ਼ੋਟੋਆਂ। ਲੋੜ ਹੋਵੇ ਤਾਂ ਹੀ ਖੋਲ੍ਹੋ।';
 
   @override
   String get tutorialAddRecordProtect2 => 'ਰਿਕਾਰਡ ਲਾਕ ਕਰੋ ਤਾਂ ਕਿ ਦਿਖਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਫ਼ਿੰਗਰਪ੍ਰਿੰਟ ਜਾਂ ਸਕ੍ਰੀਨ ਲਾਕ ਮੰਗੇ। ਚੁਣੋ ਕਿ ਤੁਸੀਂ ਇਸਨੂੰ ਕਿੱਥੇ ਰੱਖਦੇ ਹੋ, ਜਿਵੇਂ ਬਟੂਆ, ਅਤੇ ਦਸਤਾਵੇਜ਼ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਸ਼ਾਮਲ ਕਰੋ।';
@@ -7868,13 +7912,13 @@ class AppLocalizationsPa extends AppLocalizations {
   String get storyRenew3Title => 'ਪਤਾ ਨਹੀਂ ਕਿਵੇਂ?';
 
   @override
-  String get storyRenew3Body => 'ਬਹੁਤ ਸਾਰੇ ਰਿਕਾਰਡਾਂ ਵਿੱਚ ਕਦਮਾਂ, ਦਸਤਾਵੇਜ਼ਾਂ ਅਤੇ ਆਮ ਖਰਚ ਵਾਲੀ ਗਾਈਡ ਹੁੰਦੀ ਹੈ।';
+  String get storyRenew3Body => 'ਕਈ ਰਿਕਾਰਡਾਂ ਦੀ ਨਵੀਨੀਕਰਨ ਚੈੱਕਲਿਸਟ ਹੁੰਦੀ ਹੈ। Vaultara ਨੂੰ ਪੁੱਛੋ ਤੁਹਾਡੇ ਦੇਸ਼ ਦੇ ਕਦਮ ਸਰਕਾਰੀ ਲਿੰਕਾਂ ਸਮੇਤ ਲੱਭ ਸਕਦਾ ਹੈ।';
 
   @override
   String get storyRenew4Title => 'ਇਸਨੂੰ ਦੁਹਰਾਉਣ ਦਿਓ';
 
   @override
-  String get storyRenew4Body => 'ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਅਤੇ ਸਾਲਾਨਾ ਭੁਗਤਾਨਾਂ ਲਈ ਦੁਹਰਾਓ ਚਾਲੂ ਕਰੋ, ਤਾਰੀਖ ਆਪਣੇ ਆਪ ਅੱਗੇ ਵਧੇਗੀ।';
+  String get storyRenew4Body => 'ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਅਤੇ ਸਾਲਾਨਾ ਭੁਗਤਾਨਾਂ ਲਈ ਆਪਣੇ ਆਪ ਨਵਿਆਉਂਦਾ ਹੈ ਚਾਲੂ ਕਰੋ, ਤਾਰੀਖ਼ ਆਪਣੇ ਆਪ ਅੱਗੇ ਵਧੇਗੀ।';
 
   @override
   String get storyAsk1Title => 'ਆਪਣੇ ਸ਼ਬਦਾਂ ਵਿੱਚ ਪੁੱਛੋ';
@@ -7905,6 +7949,12 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'ਚੈਟਾਂ 90 ਦਿਨ «ਚੈਟ ਇਤਿਹਾਸ» ਵਿੱਚ ਰਹਿੰਦੀਆਂ ਹਨ, ਅਤੇ ਸੁਝਾਏ ਸਵਾਲ ਸ਼ੁਰੂਆਤ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਨ।';
+
+  @override
+  String get storyAsk6Title => 'ਰਿਕਾਰਡਾਂ ਤੋਂ ਵੱਧ';
+
+  @override
+  String get storyAsk6Body => 'ਇਹ ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾਉਣ, ਲੋਕ ਜੋੜਨ, ਤੁਹਾਡੇ ਦੇਸ਼ ਦੇ ਨਵੀਨੀਕਰਨ ਦੇ ਕਦਮ ਲੱਭਣ ਅਤੇ ਰਿਕਾਰਡ ਸਾਂਝੇ ਕਰਨ ਦਾ ਕੰਮ ਵੀ ਕਰ ਸਕਦਾ ਹੈ, ਸਰਕਾਰੀ ਪੰਨਿਆਂ ਦੇ ਲਿੰਕਾਂ ਸਮੇਤ।';
 
   @override
   String get storyWallet1Title => 'ਪਹਿਲਾਂ ਤਿਆਰੀ ਕਰੋ';

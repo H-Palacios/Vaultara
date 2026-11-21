@@ -996,7 +996,40 @@ class AppLocalizationsMr extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'रिमाइंडर कसे काम करतात ते पाहण्यासाठी रिमाइंडर फील्डवर टॅप करा.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'हे रिमाइंडर फील्ड आहे. इथून Vaultara नोंदीची मुदत संपण्यापूर्वी तुम्हाला सूचित करू शकते.';
+  String get tutorialAddRecordReminderSolo => 'रिमाइंडर मुदत संपण्याची तारीख आणि नूतनीकरणाचा वेळ यावरून ठरतात. तुम्ही ते इथे बंद करू शकता.';
+
+  @override
+  String get remindersSectionTitle => 'रिमाइंडर';
+
+  @override
+  String get remindersOffSubtitle => 'या रेकॉर्डसाठी कोणतेही रिमाइंडर नाहीत';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara तुम्हाला या दिवशी आठवण करून देईल';
+
+  @override
+  String get remindersNoDatesLeft => 'या मुदतीपूर्वी कोणतीही रिमाइंडर तारीख शिल्लक नाही.';
+
+  @override
+  String get remindersChooseDates => 'तुमच्या तारखा निवडा';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium सह तुमच्या तारखा निवडा';
+
+  @override
+  String get remindersUseAutomatic => 'आपोआप तारखा वापरा';
+
+  @override
+  String get tutorialRemindersSection => 'रिमाइंडर मुदत संपण्याच्या तारखेवरून ठरतात. नूतनीकरणाला जितका वेळ लागतो तितका नूतनीकरणाचा वेळ सेट करा, म्हणजे ते पुरेसे लवकर सुरू होतील.';
+
+  @override
+  String get tutorialRemindersDates => 'या दिवशी Vaultara तुम्हाला आठवण करून देईल.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium सह तुम्ही स्वतःच्या रिमाइंडर तारखा निवडू शकता.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'रिमाइंडर बदलण्यासाठी किंवा जोडण्यासाठी तुमच्या तारखा निवडा वर टॅप करा.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'आज मुदत संपते';
@@ -1163,6 +1196,17 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'कस्टम गट';
+
+  @override
+  String get planFeatureOwnReminderDates => 'स्वतःच्या रिमाइंडर तारखा निवडा';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'प्रत्येक रेकॉर्डवर $count पर्यंत फोटो';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'आपोआप रिमाइंडर';
 
   @override
   String get planFeatureMultipleReminders => 'एकाच नोंदीवर एकाधिक रिमाइंडर';
@@ -7789,7 +7833,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get whatsNewDismiss => 'समजले';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'अधिक तपशीलमध्ये अतिरिक्त गोष्टी आहेत: नोट्स, पुनरावृत्ती, नूतनीकरण वेळ, कोणाचे आहे, कुठे ठेवता, लॉक आणि फोटो. गरज असेल तेव्हाच उघडा.';
+  String get tutorialAddRecordMoreDetails2 => 'अधिक तपशीलमध्ये अतिरिक्त गोष्टी आहेत: नोट्स, पुनरावृत्ती, कोणाचे आहे, कुठे ठेवता, लॉक आणि फोटो. गरज असेल तेव्हाच उघडा.';
 
   @override
   String get tutorialAddRecordProtect2 => 'रेकॉर्ड लॉक करा जेणेकरून दाखवण्यापूर्वी फिंगरप्रिंट किंवा स्क्रीन लॉक मागेल. तुम्ही ते कुठे ठेवता ते निवडा, जसे पाकीट, आणि दस्तऐवजाचे फोटो जोडा.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsMr extends AppLocalizations {
   String get storyRenew3Title => 'कसे ते माहीत नाही?';
 
   @override
-  String get storyRenew3Body => 'अनेक रेकॉर्डमध्ये पायऱ्या, दस्तऐवज आणि नेहमीच्या खर्चासह मार्गदर्शक असते.';
+  String get storyRenew3Body => 'अनेक रेकॉर्डसाठी नूतनीकरणाची चेकलिस्ट असते. Vaultara ला विचारा तुमच्या देशाच्या पायऱ्या अधिकृत लिंकसह शोधू शकते.';
 
   @override
   String get storyRenew4Title => 'पुनरावृत्ती होऊ द्या';
 
   @override
-  String get storyRenew4Body => 'सदस्यता आणि वार्षिक पेमेंटसाठी पुनरावृत्ती चालू करा, तारीख आपोआप पुढे सरकेल.';
+  String get storyRenew4Body => 'सबस्क्रिप्शन आणि वार्षिक पेमेंटसाठी आपोआप नूतनीकरण चालू करा आणि तारीख आपोआप पुढे जाईल.';
 
   @override
   String get storyAsk1Title => 'तुमच्या शब्दांत विचारा';
@@ -7905,6 +7949,12 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'चॅट्स 90 दिवस «चॅट इतिहास» मध्ये राहतात, आणि सुचवलेले प्रश्न सुरुवात करायला मदत करतात.';
+
+  @override
+  String get storyAsk6Title => 'रेकॉर्डपेक्षा अधिक';
+
+  @override
+  String get storyAsk6Body => 'हे प्रवासाचे नियोजन, लोक जोडणे, तुमच्या देशाच्या नूतनीकरणाच्या पायऱ्या शोधणे आणि रेकॉर्ड शेअर करणेही करू शकते, अधिकृत पेजच्या लिंकसह.';
 
   @override
   String get storyWallet1Title => 'आधी तयारी करा';

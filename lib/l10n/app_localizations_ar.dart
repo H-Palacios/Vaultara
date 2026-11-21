@@ -999,7 +999,40 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'اضغط على حقل التذكير لمعرفة كيفية عمل التذكيرات.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'هذا هو حقل التذكير، حيث يمكن لـ Vaultara إعلامك قبل انتهاء صلاحية السجل.';
+  String get tutorialAddRecordReminderSolo => 'تُحسب التذكيرات من تاريخ الانتهاء ومدة التجديد. يمكنك إيقافها من هنا.';
+
+  @override
+  String get remindersSectionTitle => 'التذكيرات';
+
+  @override
+  String get remindersOffSubtitle => 'لا توجد تذكيرات لهذا السجل';
+
+  @override
+  String get remindersDatesTitle => 'سيذكّرك Vaultara في';
+
+  @override
+  String get remindersNoDatesLeft => 'لم تعد هناك مواعيد تذكير قبل تاريخ الانتهاء هذا.';
+
+  @override
+  String get remindersChooseDates => 'اختر تواريخك بنفسك';
+
+  @override
+  String get remindersChooseDatesLocked => 'اختر تواريخك بنفسك مع Premium';
+
+  @override
+  String get remindersUseAutomatic => 'استخدم التواريخ التلقائية';
+
+  @override
+  String get tutorialRemindersSection => 'تُحسب التذكيرات من تاريخ الانتهاء. اضبط مدة التجديد على الوقت الذي يستغرقه التجديد، لتبدأ مبكرًا بما يكفي.';
+
+  @override
+  String get tutorialRemindersDates => 'هذه هي الأيام التي سيذكّرك فيها Vaultara.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'مع Premium يمكنك اختيار تواريخ التذكير بنفسك.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'اضغط على اختر تواريخك بنفسك لتغيير تذكير أو إضافة تذكير.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'تنتهي صلاحيته اليوم';
@@ -1166,6 +1199,17 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'مجموعات مخصصة';
+
+  @override
+  String get planFeatureOwnReminderDates => 'اختر تواريخ التذكير بنفسك';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'حتى $count صور لكل سجل';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'تذكيرات تلقائية';
 
   @override
   String get planFeatureMultipleReminders => 'تذكيرات متعددة للسجل الواحد';
@@ -8014,7 +8058,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get whatsNewDismiss => 'فهمت';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'تفاصيل إضافية تحتوي على الإضافات: الملاحظات والتكرار ومدة التجديد ولمن السجل وأين تحفظه والقفل والصور. افتحها فقط عند الحاجة.';
+  String get tutorialAddRecordMoreDetails2 => 'تفاصيل إضافية تحتوي على الإضافات: الملاحظات والتكرار ولمن السجل وأين تحفظه والقفل والصور. افتحها فقط عند الحاجة.';
 
   @override
   String get tutorialAddRecordProtect2 => 'اقفل سجلاً ليطلب بصمة الإصبع أو قفل الشاشة قبل عرضه. اختر أين تحفظه، مثل محفظتك، وأضف صور المستند.';
@@ -8093,13 +8137,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get storyRenew3Title => 'لست متأكداً من الطريقة؟';
 
   @override
-  String get storyRenew3Body => 'لكثير من السجلات دليل بالخطوات والمستندات والتكلفة المعتادة.';
+  String get storyRenew3Body => 'لكثير من السجلات قائمة تحقق للتجديد. يمكن لـ اسأل Vaultara العثور على الخطوات في بلدك مع روابط رسمية.';
 
   @override
   String get storyRenew4Title => 'دعه يتكرر';
 
   @override
-  String get storyRenew4Body => 'للاشتراكات والمدفوعات السنوية، فعّل التكرار ليتقدم التاريخ تلقائياً.';
+  String get storyRenew4Body => 'للاشتراكات والمدفوعات السنوية، فعّل يتجدد تلقائيًا وسيتقدم التاريخ من تلقاء نفسه.';
 
   @override
   String get storyAsk1Title => 'اسأل بكلماتك';
@@ -8130,6 +8174,12 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'تُحفظ المحادثات 90 يوماً في «سجل المحادثات»، وتساعدك الأسئلة المقترحة على البدء.';
+
+  @override
+  String get storyAsk6Title => 'أكثر من السجلات';
+
+  @override
+  String get storyAsk6Body => 'يمكنه أيضًا تخطيط الرحلات وإضافة الأشخاص والعثور على خطوات التجديد في بلدك ومشاركة السجلات، مع روابط إلى الصفحات الرسمية.';
 
   @override
   String get storyWallet1Title => 'استعد أولاً';

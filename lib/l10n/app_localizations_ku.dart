@@ -996,7 +996,40 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Li qada bîrxistinê bitikîne da ku bibînî ka çawa dixebitin.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Ev qada bîrxistinê ye, ku Vaultara dikare berî bidawîbûna tomarê te agahdar bike.';
+  String get tutorialAddRecordReminderSolo => 'Bîrxistin ji dîroka qedandinê û Dema nûkirinê têne hesibandin. Tu dikarî li vir wan bigirî.';
+
+  @override
+  String get remindersSectionTitle => 'Bîrxistin';
+
+  @override
+  String get remindersOffSubtitle => 'Ji bo vê tomarê bîrxistin tune';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara dê di van rojan de bîne bîra te';
+
+  @override
+  String get remindersNoDatesLeft => 'Berî vê qedandinê tu rojeke bîrxistinê nemaye.';
+
+  @override
+  String get remindersChooseDates => 'Rojên xwe hilbijêre';
+
+  @override
+  String get remindersChooseDatesLocked => 'Bi Premium rojên xwe hilbijêre';
+
+  @override
+  String get remindersUseAutomatic => 'Rojên otomatîk bi kar bîne';
+
+  @override
+  String get tutorialRemindersSection => 'Bîrxistin ji dîroka qedandinê têne hesibandin. Dema nûkirinê li gorî wextê ku nûkirin digire saz bike, da ku ew bi wext dest pê bikin.';
+
+  @override
+  String get tutorialRemindersDates => 'Ev ew roj in ku Vaultara dê bîne bîra te.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Bi Premium tu dikarî rojên bîrxistinê yên xwe hilbijêrî.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Li Rojên xwe hilbijêre bitikîne da ku bîrxistinekê biguherînî an yekê lê zêde bikî.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Îro bidawî dibe';
@@ -1163,6 +1196,17 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Komên taybet';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Rojên bîrxistinê yên xwe hilbijêre';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Heta $count wêne li ser her tomarê';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Bîrxistinên otomatîk';
 
   @override
   String get planFeatureMultipleReminders => 'Gelek bîrxistin li ser tomareke tenê';
@@ -7789,7 +7833,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get whatsNewDismiss => 'Fêm kir';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Hûrguliyên din tiştên zêde dihewîne: not, dubarekirin, dema nûkirinê, ya kê ye, tu li ku digirî, kilît û wêne. Tenê gava pêwîst be veke.';
+  String get tutorialAddRecordMoreDetails2 => 'Hûrguliyên din tiştên zêde dihewîne: not, dubarekirin, ya kê ye, tu li ku digirî, kilît û wêne. Tenê gava pêwîst be veke.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Tomarekê kilît bike da ku berî nîşandanê şopa tilîyê an kilîta ekranê bixwaze. Hilbijêre tu li ku digirî, wek cûzdanê xwe, û wêneyên belgeyê lê zêde bike.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsKu extends AppLocalizations {
   String get storyRenew3Title => 'Ne bawer î çawa?';
 
   @override
-  String get storyRenew3Body => 'Gelek tomar rêberek bi gav, belge û lêçûna asayî re hene.';
+  String get storyRenew3Body => 'Gelek tomar lîsteya kontrola nûkirinê hene. Ji Vaultara bipirse dikare gavên welatê te bi girêdanên fermî bibîne.';
 
   @override
   String get storyRenew4Title => 'Bila dubare bibe';
 
   @override
-  String get storyRenew4Body => 'Ji bo abonetî û dayînên salane, dubarekirinê veke û dîrok bi xwe pêş ve diçe.';
+  String get storyRenew4Body => 'Ji bo abonetî û dayînên salane Xwe nû dike veke û dîrok bi xwe pêş ve diçe.';
 
   @override
   String get storyAsk1Title => 'Bi gotinên xwe bipirse';
@@ -7905,6 +7949,12 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Sohbet 90 rojan di «Dîroka sohbetan» de dimînin, û pirsên pêşniyarkirî alîkariya destpêkirinê dikin.';
+
+  @override
+  String get storyAsk6Title => 'Ji tomaran zêdetir';
+
+  @override
+  String get storyAsk6Body => 'Ew dikare rêwîtiyan plan bike, mirovan zêde bike, gavên nûkirinê ji bo welatê te bibîne û tomaran parve bike, bi girêdanên rûpelên fermî.';
 
   @override
   String get storyWallet1Title => 'Pêşî amade be';

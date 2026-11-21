@@ -996,7 +996,40 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Toca el campo de recordatorio para ver cómo funcionan los recordatorios.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Este es el campo de recordatorio, donde Vaultara puede avisarte antes de que venza el registro.';
+  String get tutorialAddRecordReminderSolo => 'Los recordatorios se calculan a partir de la fecha de vencimiento y el Tiempo de renovación. Aquí puedes desactivarlos.';
+
+  @override
+  String get remindersSectionTitle => 'Recordatorios';
+
+  @override
+  String get remindersOffSubtitle => 'No hay recordatorios para este registro';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara te lo recordará el';
+
+  @override
+  String get remindersNoDatesLeft => 'No quedan fechas de recordatorio antes de este vencimiento.';
+
+  @override
+  String get remindersChooseDates => 'Elige tus propias fechas';
+
+  @override
+  String get remindersChooseDatesLocked => 'Elige tus propias fechas con Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Usar fechas automáticas';
+
+  @override
+  String get tutorialRemindersSection => 'Los recordatorios se calculan a partir de la fecha de vencimiento. Pon el Tiempo de renovación en lo que tarda la renovación, para que empiecen con tiempo.';
+
+  @override
+  String get tutorialRemindersDates => 'Estos son los días en que Vaultara te lo recordará.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Con Premium puedes elegir tus propias fechas de recordatorio.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Toca Elige tus propias fechas para cambiar un recordatorio o añadir otro.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Vence hoy';
@@ -1163,6 +1196,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Grupos personalizados';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Elige tus propias fechas de recordatorio';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Hasta $count fotos en cada registro';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Recordatorios automáticos';
 
   @override
   String get planFeatureMultipleReminders => 'Múltiples recordatorios en un solo registro';
@@ -7817,7 +7861,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get whatsNewDismiss => 'Entendido';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Más detalles guarda los extras: notas, repetición, tiempo de renovación, de quién es el registro, dónde lo guardas, bloqueo y fotos. Ábrelo solo cuando lo necesites.';
+  String get tutorialAddRecordMoreDetails2 => 'Más detalles guarda los extras: notas, repetición, de quién es el registro, dónde lo guardas, bloqueo y fotos. Ábrelo solo cuando lo necesites.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Bloquea un registro para pedir tu huella o el bloqueo de pantalla antes de mostrarlo. Elige dónde lo guardas, como tu cartera, y añade fotos del documento.';
@@ -7896,13 +7940,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get storyRenew3Title => '¿No sabes cómo?';
 
   @override
-  String get storyRenew3Body => 'Muchos registros tienen una guía con los pasos, los documentos y el coste habitual.';
+  String get storyRenew3Body => 'Muchos registros tienen una lista de renovación. Pregunta a Vaultara puede encontrar los pasos para tu país, con enlaces oficiales.';
 
   @override
   String get storyRenew4Title => 'Que se repita';
 
   @override
-  String get storyRenew4Body => 'Para suscripciones y pagos anuales, activa la repetición y la fecha avanza sola.';
+  String get storyRenew4Body => 'Para suscripciones y pagos anuales, activa Se renueva solo y la fecha avanzará por sí sola.';
 
   @override
   String get storyAsk1Title => 'Pregunta con tus palabras';
@@ -7933,6 +7977,12 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Los chats se guardan 90 días en «Historial de chats», y las preguntas sugeridas te ayudan a empezar.';
+
+  @override
+  String get storyAsk6Title => 'Más que registros';
+
+  @override
+  String get storyAsk6Body => 'También puede planificar viajes, añadir personas, encontrar los pasos de renovación de tu país y compartir registros, con enlaces a páginas oficiales.';
 
   @override
   String get storyWallet1Title => 'Prepárate primero';

@@ -995,7 +995,40 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialAddRecordReminderTour => '알림이 어떻게 작동하는지 보려면 알림 필드를 탭하세요.';
 
   @override
-  String get tutorialAddRecordReminderSolo => '여기는 알림 필드로, 기록이 만료되기 전에 Vaultara가 알려줄 수 있습니다.';
+  String get tutorialAddRecordReminderSolo => '알림은 만료일과 갱신 소요 기간으로 계산됩니다. 여기에서 끌 수 있습니다.';
+
+  @override
+  String get remindersSectionTitle => '알림';
+
+  @override
+  String get remindersOffSubtitle => '이 기록에는 알림이 없습니다';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara가 알려 드리는 날';
+
+  @override
+  String get remindersNoDatesLeft => '이 만료일 전에 남은 알림 날짜가 없습니다.';
+
+  @override
+  String get remindersChooseDates => '직접 날짜 선택';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium으로 직접 날짜 선택';
+
+  @override
+  String get remindersUseAutomatic => '자동 날짜 사용';
+
+  @override
+  String get tutorialRemindersSection => '알림은 만료일을 기준으로 계산됩니다. 갱신 소요 기간을 실제 갱신에 걸리는 기간으로 설정하면 충분히 일찍 시작됩니다.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara가 알려 드리는 날입니다.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium에서는 알림 날짜를 직접 선택할 수 있습니다.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => '직접 날짜 선택을 눌러 알림을 바꾸거나 추가하세요.';
 
   @override
   String get smartInsightExpiresTodayHeading => '오늘 만료됨';
@@ -1162,6 +1195,17 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => '맞춤 그룹';
+
+  @override
+  String get planFeatureOwnReminderDates => '알림 날짜 직접 선택';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return '기록마다 사진 최대 $count장';
+  }
+
+  @override
+  String get planFeatureAutoReminders => '자동 알림';
 
   @override
   String get planFeatureMultipleReminders => '하나의 기록에 여러 개의 알림 설정';
@@ -7732,7 +7776,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get whatsNewDismiss => '알겠어요';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => '세부 정보 더보기에는 추가 항목이 있어요: 메모, 반복, 갱신 기간, 소유자, 보관 장소, 잠금, 사진. 필요할 때만 여세요.';
+  String get tutorialAddRecordMoreDetails2 => '세부 정보 더보기에는 추가 항목이 있어요: 메모, 반복, 소유자, 보관 장소, 잠금, 사진. 필요할 때만 여세요.';
 
   @override
   String get tutorialAddRecordProtect2 => '기록을 잠그면 표시 전에 지문이나 화면 잠금이 필요해요. 지갑 등 보관 장소를 고르고 서류 사진을 추가하세요.';
@@ -7811,13 +7855,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get storyRenew3Title => '방법을 모르겠나요?';
 
   @override
-  String get storyRenew3Body => '많은 기록에 단계, 필요 서류, 일반적인 비용을 담은 안내가 있어요.';
+  String get storyRenew3Body => '많은 기록에 갱신 체크리스트가 있습니다. Vaultara에 물어보기로 거주 국가의 절차를 공식 링크와 함께 찾을 수 있습니다.';
 
   @override
   String get storyRenew4Title => '반복되게 하기';
 
   @override
-  String get storyRenew4Body => '구독과 연간 결제는 반복을 켜면 날짜가 자동으로 넘어가요.';
+  String get storyRenew4Body => '구독과 연간 결제는 자동 갱신을 켜면 날짜가 저절로 앞으로 넘어갑니다.';
 
   @override
   String get storyAsk1Title => '내 말로 물어보기';
@@ -7848,6 +7892,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get storyAsk5Body => '채팅은 \'대화 기록\'에 90일 동안 보관되고, 추천 질문이 시작을 도와요.';
+
+  @override
+  String get storyAsk6Title => '기록 그 이상';
+
+  @override
+  String get storyAsk6Body => '여행 계획, 사람 추가, 거주 국가의 갱신 절차 찾기, 기록 공유도 할 수 있으며 공식 페이지 링크를 함께 보여 줍니다.';
 
   @override
   String get storyWallet1Title => '먼저 준비하기';

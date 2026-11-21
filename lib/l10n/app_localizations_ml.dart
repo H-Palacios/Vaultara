@@ -996,7 +996,40 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'റിമൈൻഡറുകൾ എങ്ങനെ പ്രവർത്തിക്കുന്നുവെന്ന് കാണാൻ റിമൈൻഡർ ഫീൽഡിൽ ടാപ്പ് ചെയ്യുക.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'ഇതാണ് റിമൈൻഡർ ഫീൽഡ്, റെക്കോർഡ് കാലഹരണപ്പെടുന്നതിന് മുമ്പ് Vaultara ഇവിടെ നിന്ന് നിങ്ങളെ അറിയിക്കും.';
+  String get tutorialAddRecordReminderSolo => 'റിമൈൻഡറുകൾ കാലഹരണ തീയതിയും പുതുക്കൽ സമയവും വെച്ച് കണക്കാക്കുന്നു. ഇവിടെ അവ ഓഫാക്കാം.';
+
+  @override
+  String get remindersSectionTitle => 'റിമൈൻഡറുകൾ';
+
+  @override
+  String get remindersOffSubtitle => 'ഈ റെക്കോർഡിന് റിമൈൻഡറുകളില്ല';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara നിങ്ങളെ ഓർമ്മിപ്പിക്കുന്ന ദിവസങ്ങൾ';
+
+  @override
+  String get remindersNoDatesLeft => 'ഈ കാലഹരണത്തിന് മുമ്പ് റിമൈൻഡർ തീയതികളൊന്നും ബാക്കിയില്ല.';
+
+  @override
+  String get remindersChooseDates => 'സ്വന്തം തീയതികൾ തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium ഉപയോഗിച്ച് സ്വന്തം തീയതികൾ തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get remindersUseAutomatic => 'സ്വയമേവയുള്ള തീയതികൾ ഉപയോഗിക്കുക';
+
+  @override
+  String get tutorialRemindersSection => 'റിമൈൻഡറുകൾ കാലഹരണ തീയതിയിൽ നിന്ന് കണക്കാക്കുന്നു. പുതുക്കലിന് എടുക്കുന്ന സമയത്തിന് അനുസരിച്ച് പുതുക്കൽ സമയം സജ്ജമാക്കുക, അപ്പോൾ അവ നേരത്തെ തുടങ്ങും.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara നിങ്ങളെ ഓർമ്മിപ്പിക്കുന്ന ദിവസങ്ങൾ ഇവയാണ്.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium ഉപയോഗിച്ച് സ്വന്തം റിമൈൻഡർ തീയതികൾ തിരഞ്ഞെടുക്കാം.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'ഒരു റിമൈൻഡർ മാറ്റാനോ ചേർക്കാനോ സ്വന്തം തീയതികൾ തിരഞ്ഞെടുക്കുക ടാപ്പ് ചെയ്യുക.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ഇന്ന് കാലഹരണപ്പെടും';
@@ -1163,6 +1196,17 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'ഇഷ്‌ടാനുസൃത ഗ്രൂപ്പുകൾ';
+
+  @override
+  String get planFeatureOwnReminderDates => 'സ്വന്തം റിമൈൻഡർ തീയതികൾ തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'ഓരോ റെക്കോർഡിലും $count ഫോട്ടോകൾ വരെ';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'സ്വയമേവയുള്ള റിമൈൻഡറുകൾ';
 
   @override
   String get planFeatureMultipleReminders => 'ഒരു റെക്കോർഡിന് ഒന്നിലധികം റിമൈൻഡറുകൾ';
@@ -7789,7 +7833,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get whatsNewDismiss => 'മനസ്സിലായി';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'കൂടുതൽ വിശദാംശങ്ങളിൽ അധികങ്ങൾ ഉണ്ട്: കുറിപ്പുകൾ, ആവർത്തനം, പുതുക്കൽ സമയം, ആരുടേതാണ്, എവിടെ സൂക്ഷിക്കുന്നു, ലോക്ക്, ഫോട്ടോകൾ. ആവശ്യമുള്ളപ്പോൾ മാത്രം തുറക്കുക.';
+  String get tutorialAddRecordMoreDetails2 => 'കൂടുതൽ വിശദാംശങ്ങളിൽ അധികങ്ങൾ ഉണ്ട്: കുറിപ്പുകൾ, ആവർത്തനം, ആരുടേതാണ്, എവിടെ സൂക്ഷിക്കുന്നു, ലോക്ക്, ഫോട്ടോകൾ. ആവശ്യമുള്ളപ്പോൾ മാത്രം തുറക്കുക.';
 
   @override
   String get tutorialAddRecordProtect2 => 'കാണിക്കുന്നതിന് മുമ്പ് വിരലടയാളമോ സ്ക്രീൻ ലോക്കോ ചോദിക്കാൻ റെക്കോർഡ് ലോക്ക് ചെയ്യുക. എവിടെ സൂക്ഷിക്കുന്നുവെന്ന് തിരഞ്ഞെടുക്കുക, ഉദാ. പഴ്സ്, രേഖയുടെ ഫോട്ടോകൾ ചേർക്കുക.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsMl extends AppLocalizations {
   String get storyRenew3Title => 'എങ്ങനെയെന്ന് അറിയില്ലേ?';
 
   @override
-  String get storyRenew3Body => 'പല റെക്കോർഡുകൾക്കും ഘട്ടങ്ങളും രേഖകളും സാധാരണ ചെലവുമുള്ള ഗൈഡ് ഉണ്ട്.';
+  String get storyRenew3Body => 'പല റെക്കോർഡുകൾക്കും പുതുക്കൽ ചെക്ക്‌ലിസ്റ്റ് ഉണ്ട്. Vaultara-യോട് ചോദിക്കുക നിങ്ങളുടെ രാജ്യത്തെ ഘട്ടങ്ങൾ ഔദ്യോഗിക ലിങ്കുകളോടെ കണ്ടെത്തും.';
 
   @override
   String get storyRenew4Title => 'ആവർത്തിക്കട്ടെ';
 
   @override
-  String get storyRenew4Body => 'സബ്സ്ക്രിപ്ഷനുകൾക്കും വാർഷിക പേയ്മെന്റുകൾക്കും ആവർത്തനം ഓണാക്കുക, തീയതി സ്വയം മുന്നോട്ട് നീങ്ങും.';
+  String get storyRenew4Body => 'സബ്‌സ്‌ക്രിപ്‌ഷനുകൾക്കും വാർഷിക പേയ്‌മെന്റുകൾക്കും തനിയെ പുതുക്കുന്നു ഓണാക്കുക, തീയതി തനിയെ മുന്നോട്ട് നീങ്ങും.';
 
   @override
   String get storyAsk1Title => 'നിങ്ങളുടെ വാക്കുകളിൽ ചോദിക്കുക';
@@ -7905,6 +7949,12 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'ചാറ്റുകൾ 90 ദിവസം «ചാറ്റ് ചരിത്രം» ൽ സൂക്ഷിക്കുന്നു, നിർദ്ദേശിച്ച ചോദ്യങ്ങൾ തുടങ്ങാൻ സഹായിക്കുന്നു.';
+
+  @override
+  String get storyAsk6Title => 'റെക്കോർഡുകൾക്കപ്പുറം';
+
+  @override
+  String get storyAsk6Body => 'യാത്ര ആസൂത്രണം ചെയ്യാനും ആളുകളെ ചേർക്കാനും നിങ്ങളുടെ രാജ്യത്തെ പുതുക്കൽ ഘട്ടങ്ങൾ കണ്ടെത്താനും റെക്കോർഡുകൾ പങ്കിടാനും ഇതിന് കഴിയും, ഔദ്യോഗിക പേജുകളിലേക്കുള്ള ലിങ്കുകളോടെ.';
 
   @override
   String get storyWallet1Title => 'ആദ്യം തയ്യാറാകൂ';

@@ -996,7 +996,40 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'రిమైండర్‌లు ఎలా పనిచేస్తాయో చూడటానికి రిమైండర్ ఫీల్డ్‌ను నొక్కండి.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'ఇది రిమైండర్ ఫీల్డ్, ఇక్కడ రికార్డు గడువు ముగియకముందే Vaultara మీకు తెలియజేయగలదు.';
+  String get tutorialAddRecordReminderSolo => 'రిమైండర్లు గడువు తేదీ మరియు పునరుద్ధరణ సమయం నుండి లెక్కించబడతాయి. మీరు వాటిని ఇక్కడ ఆఫ్ చేయవచ్చు.';
+
+  @override
+  String get remindersSectionTitle => 'రిమైండర్లు';
+
+  @override
+  String get remindersOffSubtitle => 'ఈ రికార్డ్‌కు రిమైండర్లు లేవు';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara మీకు గుర్తు చేసే తేదీలు';
+
+  @override
+  String get remindersNoDatesLeft => 'ఈ గడువు ముగిసేలోపు రిమైండర్ తేదీలు ఏవీ మిగలలేదు.';
+
+  @override
+  String get remindersChooseDates => 'మీ స్వంత తేదీలను ఎంచుకోండి';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium తో మీ స్వంత తేదీలను ఎంచుకోండి';
+
+  @override
+  String get remindersUseAutomatic => 'ఆటోమేటిక్ తేదీలను ఉపయోగించండి';
+
+  @override
+  String get tutorialRemindersSection => 'రిమైండర్లు గడువు తేదీ నుండి లెక్కించబడతాయి. పునరుద్ధరణకు పట్టే సమయానికి పునరుద్ధరణ సమయం సెట్ చేయండి, అప్పుడు అవి తగినంత ముందుగా మొదలవుతాయి.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara మీకు గుర్తు చేసే రోజులు ఇవే.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium తో మీ స్వంత రిమైండర్ తేదీలను ఎంచుకోవచ్చు.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'రిమైండర్‌ను మార్చడానికి లేదా జోడించడానికి మీ స్వంత తేదీలను ఎంచుకోండి నొక్కండి.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ఈరోజే గడువు ముగుస్తుంది';
@@ -1163,6 +1196,17 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'కస్టమ్ గ్రూపులు';
+
+  @override
+  String get planFeatureOwnReminderDates => 'మీ స్వంత రిమైండర్ తేదీలు';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'ప్రతి రికార్డ్‌కు $count ఫోటోల వరకు';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'ఆటోమేటిక్ రిమైండర్లు';
 
   @override
   String get planFeatureMultipleReminders => 'ఒకే రికార్డుపై బహుళ రిమైండర్‌లు';
@@ -7789,7 +7833,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get whatsNewDismiss => 'అర్థమైంది';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'మరిన్ని వివరాలలో అదనపువి ఉన్నాయి: గమనికలు, పునరావృతం, పునరుద్ధరణ సమయం, ఎవరిది, ఎక్కడ ఉంచుతారు, లాక్ మరియు ఫోటోలు. అవసరమైనప్పుడు మాత్రమే తెరవండి.';
+  String get tutorialAddRecordMoreDetails2 => 'మరిన్ని వివరాలలో అదనపువి ఉన్నాయి: గమనికలు, పునరావృతం, ఎవరిది, ఎక్కడ ఉంచుతారు, లాక్ మరియు ఫోటోలు. అవసరమైనప్పుడు మాత్రమే తెరవండి.';
 
   @override
   String get tutorialAddRecordProtect2 => 'చూపే ముందు వేలిముద్ర లేదా స్క్రీన్ లాక్ అడిగేలా రికార్డ్‌ను లాక్ చేయండి. ఎక్కడ ఉంచుతారో ఎంచుకోండి, ఉదా. పర్సు, పత్రం ఫోటోలు జోడించండి.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsTe extends AppLocalizations {
   String get storyRenew3Title => 'ఎలాగో తెలియదా?';
 
   @override
-  String get storyRenew3Body => 'చాలా రికార్డులకు దశలు, పత్రాలు మరియు సాధారణ ఖర్చుతో గైడ్ ఉంది.';
+  String get storyRenew3Body => 'చాలా రికార్డ్‌లకు పునరుద్ధరణ చెక్‌లిస్ట్ ఉంటుంది. Vaultaraను అడగండి మీ దేశ దశలను అధికారిక లింక్‌లతో కనుగొనగలదు.';
 
   @override
   String get storyRenew4Title => 'పునరావృతం కానివ్వండి';
 
   @override
-  String get storyRenew4Body => 'సబ్‌స్క్రిప్షన్‌లు, వార్షిక చెల్లింపులకు పునరావృతం ఆన్ చేయండి, తేదీ దానంతట అదే ముందుకు వెళ్తుంది.';
+  String get storyRenew4Body => 'సబ్‌స్క్రిప్షన్లు మరియు వార్షిక చెల్లింపుల కోసం తనంతట తానే పునరుద్ధరిస్తుంది ఆన్ చేయండి, తేదీ తనంతట తానే ముందుకు జరుగుతుంది.';
 
   @override
   String get storyAsk1Title => 'మీ మాటల్లో అడగండి';
@@ -7905,6 +7949,12 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'చాట్‌లు 90 రోజులు «చాట్ చరిత్ర» లో ఉంటాయి, సూచించిన ప్రశ్నలు ప్రారంభించడానికి సహాయపడతాయి.';
+
+  @override
+  String get storyAsk6Title => 'రికార్డ్‌లకు మించి';
+
+  @override
+  String get storyAsk6Body => 'ఇది ప్రయాణాలను ప్లాన్ చేయగలదు, వ్యక్తులను జోడించగలదు, మీ దేశ పునరుద్ధరణ దశలను కనుగొనగలదు మరియు రికార్డ్‌లను షేర్ చేయగలదు, అధికారిక పేజీల లింక్‌లతో.';
 
   @override
   String get storyWallet1Title => 'ముందుగా సిద్ధం కండి';

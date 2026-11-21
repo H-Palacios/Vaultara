@@ -996,7 +996,40 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'შეეხეთ შეხსენების ველს, რომ ნახოთ, როგორ მუშაობს შეხსენებები.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'ეს არის შეხსენების ველი, სადაც Vaultara შეგატყობინებთ ჩანაწერის ვადის გასვლამდე.';
+  String get tutorialAddRecordReminderSolo => 'შეხსენებები ითვლება ვადის გასვლის თარიღიდან და განახლების დროიდან. აქ შეგიძლიათ მათი გამორთვა.';
+
+  @override
+  String get remindersSectionTitle => 'შეხსენებები';
+
+  @override
+  String get remindersOffSubtitle => 'ამ ჩანაწერს შეხსენებები არ აქვს';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara შეგახსენებთ';
+
+  @override
+  String get remindersNoDatesLeft => 'ამ ვადის გასვლამდე შეხსენების თარიღები აღარ დარჩა.';
+
+  @override
+  String get remindersChooseDates => 'აირჩიეთ საკუთარი თარიღები';
+
+  @override
+  String get remindersChooseDatesLocked => 'აირჩიეთ საკუთარი თარიღები Premium-ით';
+
+  @override
+  String get remindersUseAutomatic => 'ავტომატური თარიღების გამოყენება';
+
+  @override
+  String get tutorialRemindersSection => 'შეხსენებები ვადის გასვლის თარიღიდან ითვლება. დააყენეთ განახლების დრო იმდენზე, რამდენსაც განახლება სჭირდება, რომ დროულად დაიწყოს.';
+
+  @override
+  String get tutorialRemindersDates => 'ეს ის დღეებია, როცა Vaultara შეგახსენებთ.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium-ით შეგიძლიათ საკუთარი შეხსენების თარიღების არჩევა.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'შეეხეთ აირჩიეთ საკუთარი თარიღები, რომ შეცვალოთ შეხსენება ან დაამატოთ ახალი.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ვადა იწურება დღეს';
@@ -1163,6 +1196,17 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'მორგებული ჯგუფები';
+
+  @override
+  String get planFeatureOwnReminderDates => 'აირჩიეთ საკუთარი შეხსენების თარიღები';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'თითო ჩანაწერზე $count-მდე ფოტო';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'ავტომატური შეხსენებები';
 
   @override
   String get planFeatureMultipleReminders => 'მრავალჯერადი შეხსენება ერთ ჩანაწერზე';
@@ -7789,7 +7833,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get whatsNewDismiss => 'გასაგებია';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'მეტი დეტალი შეიცავს დამატებებს: შენიშვნები, გამეორება, განახლების ვადა, ვისია, სად ინახავთ, ჩაკეტვა და ფოტოები. გახსენით მხოლოდ საჭიროებისას.';
+  String get tutorialAddRecordMoreDetails2 => 'მეტი დეტალი შეიცავს დამატებებს: შენიშვნები, გამეორება, ვისია, სად ინახავთ, ჩაკეტვა და ფოტოები. გახსენით მხოლოდ საჭიროებისას.';
 
   @override
   String get tutorialAddRecordProtect2 => 'ჩაკეტეთ ჩანაწერი, რომ ჩვენებამდე თითის ანაბეჭდი ან ეკრანის საკეტი მოითხოვოს. აირჩიეთ, სად ინახავთ, მაგ. საფულეში, და დაამატეთ დოკუმენტის ფოტოები.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get storyRenew3Title => 'არ იცით როგორ?';
 
   @override
-  String get storyRenew3Body => 'ბევრ ჩანაწერს აქვს გზამკვლევი ნაბიჯებით, დოკუმენტებითა და ჩვეული ღირებულებით.';
+  String get storyRenew3Body => 'ბევრ ჩანაწერს აქვს განახლების სია. ჰკითხეთ Vaultara-ს თქვენი ქვეყნის ნაბიჯებს ოფიციალური ბმულებით იპოვის.';
 
   @override
   String get storyRenew4Title => 'დაე, განმეორდეს';
 
   @override
-  String get storyRenew4Body => 'გამოწერებისა და წლიური გადახდებისთვის ჩართეთ გამეორება და თარიღი თავად გადაიწევს.';
+  String get storyRenew4Body => 'გამოწერებისა და წლიური გადახდებისთვის ჩართეთ თავად ახლდება და თარიღი თავად გადაიწევს წინ.';
 
   @override
   String get storyAsk1Title => 'იკითხეთ თქვენი სიტყვებით';
@@ -7905,6 +7949,12 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'საუბრები 90 დღე ინახება «ჩატების ისტორია»-ში, შემოთავაზებული კითხვები კი დაწყებაში გეხმარებათ.';
+
+  @override
+  String get storyAsk6Title => 'ჩანაწერებზე მეტი';
+
+  @override
+  String get storyAsk6Body => 'მას ასევე შეუძლია მოგზაურობის დაგეგმვა, ადამიანების დამატება, თქვენი ქვეყნის განახლების ნაბიჯების პოვნა და ჩანაწერების გაზიარება, ოფიციალური გვერდების ბმულებით.';
 
   @override
   String get storyWallet1Title => 'ჯერ მოემზადეთ';

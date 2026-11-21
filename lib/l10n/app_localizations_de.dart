@@ -996,7 +996,40 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Tippe auf das Erinnerungsfeld, um zu sehen, wie Erinnerungen funktionieren.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Dies ist das Erinnerungsfeld, über das Vaultara dich benachrichtigen kann, bevor der Eintrag abläuft.';
+  String get tutorialAddRecordReminderSolo => 'Erinnerungen werden aus dem Ablaufdatum und der Verlängerungsdauer berechnet. Hier kannst du sie ausschalten.';
+
+  @override
+  String get remindersSectionTitle => 'Erinnerungen';
+
+  @override
+  String get remindersOffSubtitle => 'Keine Erinnerungen für diesen Eintrag';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara erinnert dich am';
+
+  @override
+  String get remindersNoDatesLeft => 'Vor diesem Ablauf sind keine Erinnerungstermine mehr übrig.';
+
+  @override
+  String get remindersChooseDates => 'Eigene Termine wählen';
+
+  @override
+  String get remindersChooseDatesLocked => 'Eigene Termine mit Premium wählen';
+
+  @override
+  String get remindersUseAutomatic => 'Automatische Termine verwenden';
+
+  @override
+  String get tutorialRemindersSection => 'Erinnerungen werden aus dem Ablaufdatum berechnet. Stelle die Verlängerungsdauer auf die Zeit ein, die eine Verlängerung braucht, damit sie früh genug beginnen.';
+
+  @override
+  String get tutorialRemindersDates => 'An diesen Tagen erinnert dich Vaultara.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Mit Premium kannst du eigene Erinnerungstermine wählen.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Tippe auf Eigene Termine wählen, um eine Erinnerung zu ändern oder hinzuzufügen.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Läuft heute ab';
@@ -1163,6 +1196,17 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Benutzerdefinierte Gruppen';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Eigene Erinnerungstermine wählen';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Bis zu $count Fotos pro Eintrag';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automatische Erinnerungen';
 
   @override
   String get planFeatureMultipleReminders => 'Mehrere Erinnerungen für einen einzelnen Eintrag';
@@ -7793,7 +7837,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get whatsNewDismiss => 'Verstanden';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Unter Weitere Details findest du die Extras: Notizen, Wiederholung, Verlängerungsdauer, wem der Eintrag gehört, wo du ihn aufbewahrst, Sperre und Fotos. Öffne sie nur bei Bedarf.';
+  String get tutorialAddRecordMoreDetails2 => 'Unter Weitere Details findest du die Extras: Notizen, Wiederholung, wem der Eintrag gehört, wo du ihn aufbewahrst, Sperre und Fotos. Öffne sie nur bei Bedarf.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Sperre einen Eintrag, damit vor dem Anzeigen Fingerabdruck oder Bildschirmsperre nötig sind. Wähle, wo du ihn aufbewahrst, etwa in der Geldbörse, und füge Fotos des Dokuments hinzu.';
@@ -7872,13 +7916,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get storyRenew3Title => 'Nicht sicher, wie?';
 
   @override
-  String get storyRenew3Body => 'Viele Einträge haben eine Anleitung mit Schritten, Unterlagen und den üblichen Kosten.';
+  String get storyRenew3Body => 'Viele Einträge haben eine Checkliste zur Verlängerung. Vaultara fragen findet die Schritte für dein Land, mit offiziellen Links.';
 
   @override
   String get storyRenew4Title => 'Automatisch wiederholen';
 
   @override
-  String get storyRenew4Body => 'Für Abos und jährliche Zahlungen schalte die Wiederholung ein, dann rückt das Datum von selbst weiter.';
+  String get storyRenew4Body => 'Für Abos und jährliche Zahlungen schalte Verlängert sich selbst ein, dann rückt das Datum von allein weiter.';
 
   @override
   String get storyAsk1Title => 'Frag in deinen Worten';
@@ -7909,6 +7953,12 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Chats bleiben 90 Tage im „Chatverlauf“, und Fragevorschläge helfen beim Einstieg.';
+
+  @override
+  String get storyAsk6Title => 'Mehr als Einträge';
+
+  @override
+  String get storyAsk6Body => 'Es kann auch Reisen planen, Personen hinzufügen, die Verlängerungsschritte für dein Land finden und Einträge teilen, mit Links zu offiziellen Seiten.';
 
   @override
   String get storyWallet1Title => 'Zuerst vorbereiten';

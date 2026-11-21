@@ -996,7 +996,40 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'روی فیلد یادآوری بزنید تا ببینید یادآوری‌ها چگونه کار می‌کنند.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'این فیلد یادآوری است، جایی که Vaultara می‌تواند پیش از انقضای رکورد به شما اطلاع دهد.';
+  String get tutorialAddRecordReminderSolo => 'یادآوری‌ها از تاریخ انقضا و زمان تمدید محاسبه می‌شوند. می‌توانید آن‌ها را اینجا خاموش کنید.';
+
+  @override
+  String get remindersSectionTitle => 'یادآوری‌ها';
+
+  @override
+  String get remindersOffSubtitle => 'برای این مورد یادآوری‌ای وجود ندارد';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara در این روزها به شما یادآوری می‌کند';
+
+  @override
+  String get remindersNoDatesLeft => 'پیش از این انقضا دیگر تاریخ یادآوری‌ای باقی نمانده است.';
+
+  @override
+  String get remindersChooseDates => 'تاریخ‌های خودتان را انتخاب کنید';
+
+  @override
+  String get remindersChooseDatesLocked => 'با Premium تاریخ‌های خودتان را انتخاب کنید';
+
+  @override
+  String get remindersUseAutomatic => 'استفاده از تاریخ‌های خودکار';
+
+  @override
+  String get tutorialRemindersSection => 'یادآوری‌ها از تاریخ انقضا محاسبه می‌شوند. زمان تمدید را به اندازهٔ مدتی که تمدید طول می‌کشد بگذارید تا به‌موقع شروع شوند.';
+
+  @override
+  String get tutorialRemindersDates => 'این‌ها روزهایی هستند که Vaultara به شما یادآوری می‌کند.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'با Premium می‌توانید تاریخ‌های یادآوری را خودتان انتخاب کنید.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'برای تغییر یک یادآوری یا افزودن یکی دیگر، روی تاریخ‌های خودتان را انتخاب کنید بزنید.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'امروز منقضی می‌شود';
@@ -1163,6 +1196,17 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'گروه‌های سفارشی';
+
+  @override
+  String get planFeatureOwnReminderDates => 'تاریخ‌های یادآوری را خودتان انتخاب کنید';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'تا $count عکس برای هر مورد';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'یادآوری‌های خودکار';
 
   @override
   String get planFeatureMultipleReminders => 'چندین یادآور روی یک رکورد واحد';
@@ -7789,7 +7833,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get whatsNewDismiss => 'متوجه شدم';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'جزئیات بیشتر موارد اضافی را دارد: یادداشت، تکرار، زمان تمدید، مال چه کسی است، کجا نگهش می‌دارید، قفل و عکس‌ها. فقط وقتی لازم است بازش کنید.';
+  String get tutorialAddRecordMoreDetails2 => 'جزئیات بیشتر موارد اضافی را دارد: یادداشت، تکرار، مال چه کسی است، کجا نگهش می‌دارید، قفل و عکس‌ها. فقط وقتی لازم است بازش کنید.';
 
   @override
   String get tutorialAddRecordProtect2 => 'یک مورد را قفل کنید تا پیش از نمایش، اثر انگشت یا قفل صفحه بخواهد. انتخاب کنید کجا نگهش می‌دارید، مثلاً کیف پول، و عکس مدرک را اضافه کنید.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsFa extends AppLocalizations {
   String get storyRenew3Title => 'مطمئن نیستید چطور؟';
 
   @override
-  String get storyRenew3Body => 'بسیاری از موارد راهنمایی با مراحل، مدارک و هزینه معمول دارند.';
+  String get storyRenew3Body => 'بسیاری از موارد فهرست بررسی تمدید دارند. از Vaultara بپرسید می‌تواند مراحل کشور شما را با پیوندهای رسمی پیدا کند.';
 
   @override
   String get storyRenew4Title => 'بگذارید تکرار شود';
 
   @override
-  String get storyRenew4Body => 'برای اشتراک‌ها و پرداخت‌های سالانه، تکرار را روشن کنید تا تاریخ خودش جلو برود.';
+  String get storyRenew4Body => 'برای اشتراک‌ها و پرداخت‌های سالانه، خودش تمدید می‌شود را روشن کنید تا تاریخ خودبه‌خود جلو برود.';
 
   @override
   String get storyAsk1Title => 'با کلمات خودتان بپرسید';
@@ -7905,6 +7949,12 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'گفتگوها ۹۰ روز در «سابقه گفتگو» نگه داشته می‌شوند و پرسش‌های پیشنهادی به شروع کمک می‌کنند.';
+
+  @override
+  String get storyAsk6Title => 'فراتر از موارد';
+
+  @override
+  String get storyAsk6Body => 'همچنین می‌تواند سفر برنامه‌ریزی کند، افراد را اضافه کند، مراحل تمدید کشور شما را پیدا کند و موارد را به اشتراک بگذارد، با پیوند به صفحه‌های رسمی.';
 
   @override
   String get storyWallet1Title => 'اول آماده شوید';

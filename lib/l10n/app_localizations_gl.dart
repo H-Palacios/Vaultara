@@ -996,7 +996,40 @@ class AppLocalizationsGl extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Toca o campo de lembrete para ver como funcionan os lembretes.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Este é o campo de lembrete, onde Vaultara pode avisarte antes de que caduque o rexistro.';
+  String get tutorialAddRecordReminderSolo => 'Os lembretes calcúlanse a partir da data de vencemento e o Tempo de renovación. Aquí podes desactivalos.';
+
+  @override
+  String get remindersSectionTitle => 'Lembretes';
+
+  @override
+  String get remindersOffSubtitle => 'Non hai lembretes para este rexistro';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara lembraracho o';
+
+  @override
+  String get remindersNoDatesLeft => 'Non quedan datas de lembrete antes deste vencemento.';
+
+  @override
+  String get remindersChooseDates => 'Escolle as túas datas';
+
+  @override
+  String get remindersChooseDatesLocked => 'Escolle as túas datas con Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Usar datas automáticas';
+
+  @override
+  String get tutorialRemindersSection => 'Os lembretes calcúlanse a partir da data de vencemento. Pon o Tempo de renovación no que tarda a renovación, para que comecen con tempo.';
+
+  @override
+  String get tutorialRemindersDates => 'Estes son os días en que Vaultara cho lembrará.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Con Premium podes escoller as túas datas de lembrete.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Toca Escolle as túas datas para cambiar un lembrete ou engadir outro.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Caduca hoxe';
@@ -1163,6 +1196,17 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Grupos personalizados';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Escolle as túas datas de lembrete';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Ata $count fotos en cada rexistro';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Lembretes automáticos';
 
   @override
   String get planFeatureMultipleReminders => 'Múltiples lembretes nun único rexistro';
@@ -7793,7 +7837,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get whatsNewDismiss => 'Entendido';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Máis detalles garda os extras: notas, repetición, tempo de renovación, de quen é o rexistro, onde o gardas, bloqueo e fotos. Ábreo só cando o precises.';
+  String get tutorialAddRecordMoreDetails2 => 'Máis detalles garda os extras: notas, repetición, de quen é o rexistro, onde o gardas, bloqueo e fotos. Ábreo só cando o precises.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Bloquea un rexistro para pedir a pegada ou o bloqueo de pantalla antes de amosalo. Escolle onde o gardas, como a carteira, e engade fotos do documento.';
@@ -7872,13 +7916,13 @@ class AppLocalizationsGl extends AppLocalizations {
   String get storyRenew3Title => 'Non sabes como?';
 
   @override
-  String get storyRenew3Body => 'Moitos rexistros teñen unha guía cos pasos, os documentos e o custo habitual.';
+  String get storyRenew3Body => 'Moitos rexistros teñen unha lista de renovación. Pregunta a Vaultara pode atopar os pasos para o teu país, con ligazóns oficiais.';
 
   @override
   String get storyRenew4Title => 'Que se repita';
 
   @override
-  String get storyRenew4Body => 'Para subscricións e pagamentos anuais, activa a repetición e a data avanza soa.';
+  String get storyRenew4Body => 'Para subscricións e pagamentos anuais, activa Renóvase só e a data avanzará por si soa.';
 
   @override
   String get storyAsk1Title => 'Pregunta coas túas palabras';
@@ -7909,6 +7953,12 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'As conversas gárdanse 90 días en «Historial de chats», e as preguntas suxeridas axúdanche a comezar.';
+
+  @override
+  String get storyAsk6Title => 'Máis ca rexistros';
+
+  @override
+  String get storyAsk6Body => 'Tamén pode planificar viaxes, engadir persoas, atopar os pasos de renovación do teu país e compartir rexistros, con ligazóns a páxinas oficiais.';
 
   @override
   String get storyWallet1Title => 'Prepárate primeiro';

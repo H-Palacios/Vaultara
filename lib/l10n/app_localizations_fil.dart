@@ -996,7 +996,40 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'I-tap ang field ng paalala para makita kung paano gumagana ang mga paalala.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Ito ang field ng paalala, kung saan maaari kang abisuhan ng Vaultara bago mag-expire ang rekord.';
+  String get tutorialAddRecordReminderSolo => 'Kinakalkula ang mga paalala mula sa petsa ng pag-expire at Tagal ng pag-renew. Maaari mo itong i-off dito.';
+
+  @override
+  String get remindersSectionTitle => 'Mga paalala';
+
+  @override
+  String get remindersOffSubtitle => 'Walang paalala para sa record na ito';
+
+  @override
+  String get remindersDatesTitle => 'Ipapaalala sa iyo ng Vaultara sa';
+
+  @override
+  String get remindersNoDatesLeft => 'Wala nang petsa ng paalala bago mag-expire ito.';
+
+  @override
+  String get remindersChooseDates => 'Pumili ng sariling petsa';
+
+  @override
+  String get remindersChooseDatesLocked => 'Pumili ng sariling petsa gamit ang Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Gumamit ng awtomatikong petsa';
+
+  @override
+  String get tutorialRemindersSection => 'Kinakalkula ang mga paalala mula sa petsa ng pag-expire. Itakda ang Tagal ng pag-renew sa tagal ng pagre-renew para magsimula ang mga ito nang maaga.';
+
+  @override
+  String get tutorialRemindersDates => 'Ito ang mga araw na ipapaalala sa iyo ng Vaultara.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Sa Premium, maaari kang pumili ng sarili mong petsa ng paalala.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'I-tap ang Pumili ng sariling petsa para baguhin ang isang paalala o magdagdag ng isa.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Mag-eexpire Ngayong Araw';
@@ -1161,6 +1194,17 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Mga custom na grupo';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Pumili ng sariling petsa ng paalala';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Hanggang $count larawan sa bawat record';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Awtomatikong paalala';
 
   @override
   String get planFeatureMultipleReminders => 'Maramihang paalala sa isang solong record';
@@ -7783,7 +7827,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get whatsNewDismiss => 'Gets ko';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Ang Higit pang detalye ay may mga dagdag: tala, pag-ulit, oras ng renewal, kanino ito, saan itinatago, lock at mga larawan. Buksan lang kapag kailangan.';
+  String get tutorialAddRecordMoreDetails2 => 'Ang Higit pang detalye ay may mga dagdag: tala, pag-ulit, kanino ito, saan itinatago, lock at mga larawan. Buksan lang kapag kailangan.';
 
   @override
   String get tutorialAddRecordProtect2 => 'I-lock ang record para humingi ng fingerprint o screen lock bago ito ipakita. Piliin kung saan mo ito itinatago, gaya ng wallet, at magdagdag ng larawan ng dokumento.';
@@ -7862,13 +7906,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get storyRenew3Title => 'Hindi sigurado kung paano?';
 
   @override
-  String get storyRenew3Body => 'Maraming record ang may gabay na may mga hakbang, dokumento at karaniwang gastos.';
+  String get storyRenew3Body => 'Maraming record ang may checklist sa pag-renew. Kayang hanapin ng Magtanong sa Vaultara ang mga hakbang para sa iyong bansa, may opisyal na link.';
 
   @override
   String get storyRenew4Title => 'Hayaang umulit';
 
   @override
-  String get storyRenew4Body => 'Para sa subscription at taunang bayarin, i-on ang pag-ulit at kusang uusad ang petsa.';
+  String get storyRenew4Body => 'Para sa mga subscription at taunang bayad, i-on ang Kusang nagre-renew at kusang uusad ang petsa.';
 
   @override
   String get storyAsk1Title => 'Magtanong sa sarili mong salita';
@@ -7899,6 +7943,12 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Itinatago ang mga chat nang 90 araw sa «History ng chat», at tinutulungan ka ng mga mungkahing tanong na magsimula.';
+
+  @override
+  String get storyAsk6Title => 'Higit pa sa mga record';
+
+  @override
+  String get storyAsk6Body => 'Kaya rin nitong magplano ng biyahe, magdagdag ng tao, hanapin ang mga hakbang sa pag-renew para sa iyong bansa at magbahagi ng record, may link sa mga opisyal na pahina.';
 
   @override
   String get storyWallet1Title => 'Maghanda muna';

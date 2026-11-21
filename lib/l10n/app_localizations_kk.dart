@@ -996,7 +996,40 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Еске салғыштардың қалай жұмыс істейтінін көру үшін еске салғыш өрісін түртіңіз.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Бұл еске салғыш өрісі, мұнда Vaultara жазба мерзімі аяқталмай тұрып хабарлай алады.';
+  String get tutorialAddRecordReminderSolo => 'Еске салғыштар біту күні мен Жаңарту уақытынан есептеледі. Оларды осы жерде өшіре аласыз.';
+
+  @override
+  String get remindersSectionTitle => 'Еске салғыштар';
+
+  @override
+  String get remindersOffSubtitle => 'Бұл жазба үшін еске салғыш жоқ';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara сізге мына күндері еске салады';
+
+  @override
+  String get remindersNoDatesLeft => 'Осы мерзім біткенге дейін еске салу күні қалмады.';
+
+  @override
+  String get remindersChooseDates => 'Өз күндеріңізді таңдаңыз';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium арқылы өз күндеріңізді таңдаңыз';
+
+  @override
+  String get remindersUseAutomatic => 'Автоматты күндерді пайдалану';
+
+  @override
+  String get tutorialRemindersSection => 'Еске салғыштар мерзімнің біту күнінен есептеледі. Жаңарту уақытын жаңарту қанша уақыт алатынына қойыңыз, сонда олар уақытында басталады.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara сізге осы күндері еске салады.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium арқылы еске салу күндерін өзіңіз таңдай аласыз.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Еске салғышты өзгерту не қосу үшін Өз күндеріңізді таңдаңыз түймесін түртіңіз.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Бүгін мерзімі өтеді';
@@ -1163,6 +1196,17 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Реттелмелі топтар';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Еске салу күндерін өзіңіз таңдаңыз';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Әр жазбаға $count фотоға дейін';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Автоматты еске салғыштар';
 
   @override
   String get planFeatureMultipleReminders => 'Бір жазбаға бірнеше еске салғыш қою';
@@ -7789,7 +7833,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get whatsNewDismiss => 'Түсінікті';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Қосымша мәліметтерде қосымшалар бар: жазбалар, қайталау, жаңарту уақыты, кімдікі, қайда сақталады, құлып және фотолар. Тек қажет кезде ашыңыз.';
+  String get tutorialAddRecordMoreDetails2 => 'Қосымша мәліметтерде қосымшалар бар: жазбалар, қайталау, кімдікі, қайда сақталады, құлып және фотолар. Тек қажет кезде ашыңыз.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Жазбаны көрсетпес бұрын саусақ ізін немесе экран құлпын сұрайтындай етіп құлыптаңыз. Қайда сақтайтыныңызды таңдаңыз, мысалы әмиян, және құжат фотоларын қосыңыз.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsKk extends AppLocalizations {
   String get storyRenew3Title => 'Қалай екенін білмейсіз бе?';
 
   @override
-  String get storyRenew3Body => 'Көп жазбада қадамдар, құжаттар және әдеттегі құны бар нұсқаулық бар.';
+  String get storyRenew3Body => 'Көп жазбада жаңарту тізімі бар. Vaultara-дан сұрау еліңіздің қадамдарын ресми сілтемелермен таба алады.';
 
   @override
   String get storyRenew4Title => 'Қайталансын';
 
   @override
-  String get storyRenew4Body => 'Жазылымдар мен жылдық төлемдер үшін қайталауды қосыңыз, күн өздігінен алға жылжиды.';
+  String get storyRenew4Body => 'Жазылымдар мен жылдық төлемдер үшін Өздігінен жаңартылады параметрін қосыңыз, сонда күн өзі алға жылжиды.';
 
   @override
   String get storyAsk1Title => 'Өз сөзіңізбен сұраңыз';
@@ -7905,6 +7949,12 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Чаттар «Чат тарихы» бөлімінде 90 күн сақталады, ұсынылған сұрақтар бастауға көмектеседі.';
+
+  @override
+  String get storyAsk6Title => 'Жазбалардан да көп';
+
+  @override
+  String get storyAsk6Body => 'Ол сапар жоспарлай алады, адам қоса алады, еліңіздің жаңарту қадамдарын таба алады және жазбалармен бөлісе алады, ресми беттерге сілтемелермен.';
 
   @override
   String get storyWallet1Title => 'Алдымен дайындалыңыз';

@@ -995,7 +995,40 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Сануулга хэрхэн ажилладагийг харахын тулд сануулгын талбарыг товшино уу.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Энэ бол сануулгын талбар бөгөөд бичлэгийн хугацаа дуусахаас өмнө Vaultara танд мэдэгдэж чадна.';
+  String get tutorialAddRecordReminderSolo => 'Сануулгыг дуусах огноо болон Сунгах хугацаанаас тооцдог. Эндээс унтрааж болно.';
+
+  @override
+  String get remindersSectionTitle => 'Сануулга';
+
+  @override
+  String get remindersOffSubtitle => 'Энэ бичлэгт сануулга байхгүй';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara танд эдгээр өдөр сануулна';
+
+  @override
+  String get remindersNoDatesLeft => 'Энэ хугацаа дуусахаас өмнө сануулах огноо үлдээгүй байна.';
+
+  @override
+  String get remindersChooseDates => 'Өөрийн огноог сонгох';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium-аар өөрийн огноог сонгох';
+
+  @override
+  String get remindersUseAutomatic => 'Автомат огноог ашиглах';
+
+  @override
+  String get tutorialRemindersSection => 'Сануулгыг дуусах огнооноос тооцдог. Сунгах хугацааг сунгалтад хэр удаан хугацаа шаардагдахаар тохируулбал эрт эхэлнэ.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara танд эдгээр өдөр сануулна.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium-аар сануулах огноогоо өөрөө сонгох боломжтой.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Сануулгыг өөрчлөх эсвэл нэмэхийн тулд Өөрийн огноог сонгох дээр дарна уу.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Өнөөдөр хугацаа дуусна';
@@ -1162,6 +1195,17 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Өөрчилсөн бүлгүүд';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Сануулах огноогоо өөрөө сонгох';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Бичлэг бүрт $count хүртэлх зураг';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Автомат сануулга';
 
   @override
   String get planFeatureMultipleReminders => 'Нэг бичлэгт олон сануулга тохируулах';
@@ -7779,7 +7823,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get whatsNewDismiss => 'Ойлголоо';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Дэлгэрэнгүй мэдээлэлд нэмэлтүүд бий: тэмдэглэл, давталт, сунгах хугацаа, хэнийх, хаана хадгалдаг, түгжээ, зураг. Зөвхөн хэрэгтэй үед нээнэ үү.';
+  String get tutorialAddRecordMoreDetails2 => 'Дэлгэрэнгүй мэдээлэлд нэмэлтүүд бий: тэмдэглэл, давталт, хэнийх, хаана хадгалдаг, түгжээ, зураг. Зөвхөн хэрэгтэй үед нээнэ үү.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Бүртгэлийг харуулахаас өмнө хурууны хээ эсвэл дэлгэцийн түгжээ асуудаг болгож түгжинэ үү. Хаана хадгалдгаа сонгоно уу, жишээ нь түрийвч, мөн баримтын зургийг нэмнэ үү.';
@@ -7858,13 +7902,13 @@ class AppLocalizationsMn extends AppLocalizations {
   String get storyRenew3Title => 'Яаж хийхээ мэдэхгүй байна уу?';
 
   @override
-  String get storyRenew3Body => 'Олон бүртгэлд алхам, баримт бичиг, ердийн зардал бүхий заавар бий.';
+  String get storyRenew3Body => 'Олон бичлэгт сунгалтын шалгах жагсаалт бий. Vaultara-аас асуух таны улсын алхмуудыг албан ёсны холбоостой олж чадна.';
 
   @override
   String get storyRenew4Title => 'Давтагдаг болгох';
 
   @override
-  String get storyRenew4Body => 'Захиалга болон жилийн төлбөрт давталтыг асаавал огноо өөрөө урагшилна.';
+  String get storyRenew4Body => 'Захиалга болон жилийн төлбөрт Өөрөө сунгагдана-г асаавал огноо өөрөө урагшилна.';
 
   @override
   String get storyAsk1Title => 'Өөрийн үгээр асуу';
@@ -7895,6 +7939,12 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Чатууд «Чатын түүх» хэсэгт 90 хоног хадгалагдах ба санал болгосон асуултууд эхлэхэд тусална.';
+
+  @override
+  String get storyAsk6Title => 'Бичлэгээс илүү';
+
+  @override
+  String get storyAsk6Body => 'Аялал төлөвлөх, хүн нэмэх, таны улсын сунгалтын алхмуудыг олох, бичлэг хуваалцах боломжтой бөгөөд албан ёсны хуудасны холбоосыг өгнө.';
 
   @override
   String get storyWallet1Title => 'Эхлээд бэлд';

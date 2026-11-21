@@ -996,7 +996,40 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'මතක් කිරීම් ක්‍රියා කරන ආකාරය බැලීමට මතක් කිරීමේ ක්ෂේත්‍රය තට්ටු කරන්න.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'මෙය මතක් කිරීමේ ක්ෂේත්‍රයයි, එහිදී වාර්තාව කල් ඉකුත් වීමට පෙර Vaultara ට ඔබට දැනුම් දිය හැක.';
+  String get tutorialAddRecordReminderSolo => 'මතක් කිරීම් කල් ඉකුත් දිනය සහ අලුත් කිරීමේ කාලයෙන් ගණනය කෙරේ. ඔබට ඒවා මෙතැනින් අක්‍රිය කළ හැක.';
+
+  @override
+  String get remindersSectionTitle => 'මතක් කිරීම්';
+
+  @override
+  String get remindersOffSubtitle => 'මෙම වාර්තාවට මතක් කිරීම් නැත';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara ඔබට මතක් කරන දින';
+
+  @override
+  String get remindersNoDatesLeft => 'මෙම කල් ඉකුත්වීමට පෙර මතක් කිරීමේ දින ඉතිරි නැත.';
+
+  @override
+  String get remindersChooseDates => 'ඔබේම දින තෝරන්න';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium සමඟ ඔබේම දින තෝරන්න';
+
+  @override
+  String get remindersUseAutomatic => 'ස්වයංක්‍රීය දින භාවිත කරන්න';
+
+  @override
+  String get tutorialRemindersSection => 'මතක් කිරීම් කල් ඉකුත් වන දිනයෙන් ගණනය කෙරේ. අලුත් කිරීමට ගතවන කාලයට අලුත් කිරීමේ කාලය සකසන්න, එවිට ඒවා කලින් ආරම්භ වේ.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara ඔබට මතක් කරන දින මේවාය.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium සමඟ ඔබේම මතක් කිරීමේ දින තෝරාගත හැක.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'මතක් කිරීමක් වෙනස් කිරීමට හෝ එකතු කිරීමට ඔබේම දින තෝරන්න තට්ටු කරන්න.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'අද දින කල් ඉකුත් වේ';
@@ -1163,6 +1196,17 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'අභිරුචි කණ්ඩායම්';
+
+  @override
+  String get planFeatureOwnReminderDates => 'ඔබේම මතක් කිරීමේ දින තෝරන්න';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'එක් එක් වාර්තාවට ඡායාරූප $count දක්වා';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'ස්වයංක්‍රීය මතක් කිරීම්';
 
   @override
   String get planFeatureMultipleReminders => 'තනි වාර්තාවක් සඳහා බහුවිධ මතක් කිරීම්';
@@ -7788,7 +7832,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get whatsNewDismiss => 'තේරුණා';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'තවත් විස්තරවල අමතර දේ ඇත: සටහන්, පුනරාවර්තනය, අලුත් කිරීමේ කාලය, කාගේද, කොහේ තබනවාද, අගුල සහ ඡායාරූප. අවශ්‍ය විට පමණක් විවෘත කරන්න.';
+  String get tutorialAddRecordMoreDetails2 => 'තවත් විස්තරවල අමතර දේ ඇත: සටහන්, පුනරාවර්තනය, කාගේද, කොහේ තබනවාද, අගුල සහ ඡායාරූප. අවශ්‍ය විට පමණක් විවෘත කරන්න.';
 
   @override
   String get tutorialAddRecordProtect2 => 'පෙන්වීමට පෙර ඇඟිලි සලකුණ හෝ තිර අගුල ඉල්ලන ලෙස වාර්තාවක් අගුළු දමන්න. ඔබ එය තබන තැන තෝරන්න, උදා. මුදල් පසුම්බිය, ලේඛනයේ ඡායාරූප එක් කරන්න.';
@@ -7867,13 +7911,13 @@ class AppLocalizationsSi extends AppLocalizations {
   String get storyRenew3Title => 'කොහොමද කියා විශ්වාස නැද්ද?';
 
   @override
-  String get storyRenew3Body => 'බොහෝ වාර්තාවලට පියවර, ලේඛන සහ සාමාන්‍ය වියදම සහිත මාර්ගෝපදේශයක් ඇත.';
+  String get storyRenew3Body => 'බොහෝ වාර්තාවලට අලුත් කිරීමේ පිරික්සුම් ලැයිස්තුවක් ඇත. Vaultara ගෙන් අසන්න ඔබේ රටේ පියවර නිල සබැඳි සමඟ සොයා දිය හැක.';
 
   @override
   String get storyRenew4Title => 'පුනරාවර්තනය වීමට ඉඩ දෙන්න';
 
   @override
-  String get storyRenew4Body => 'දායකත්ව සහ වාර්ෂික ගෙවීම් සඳහා පුනරාවර්තනය සක්‍රිය කරන්න, දිනය ඉබේම ඉදිරියට යයි.';
+  String get storyRenew4Body => 'දායකත්ව සහ වාර්ෂික ගෙවීම් සඳහා තමන්ම අලුත් වේ සක්‍රිය කරන්න, දිනය තමන්ම ඉදිරියට යයි.';
 
   @override
   String get storyAsk1Title => 'ඔබේම වචනවලින් අසන්න';
@@ -7904,6 +7948,12 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'කතාබස් දින 90 ක් «සංවාද ඉතිහාසය» හි තබා ඇති අතර යෝජිත ප්‍රශ්න ආරම්භ කිරීමට උදව් කරයි.';
+
+  @override
+  String get storyAsk6Title => 'වාර්තාවලට වඩා වැඩි';
+
+  @override
+  String get storyAsk6Body => 'එයට සංචාර සැලසුම් කිරීම, පුද්ගලයන් එක් කිරීම, ඔබේ රටේ අලුත් කිරීමේ පියවර සොයා ගැනීම සහ වාර්තා බෙදා ගැනීමද කළ හැක, නිල පිටු සබැඳි සමඟ.';
 
   @override
   String get storyWallet1Title => 'පළමුව සූදානම් වන්න';

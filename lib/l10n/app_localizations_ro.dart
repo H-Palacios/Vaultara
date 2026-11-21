@@ -1000,7 +1000,40 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Atinge câmpul de memento pentru a vedea cum funcționează mementourile.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Acesta este câmpul de memento, unde Vaultara te poate anunța înainte ca înregistrarea să expire.';
+  String get tutorialAddRecordReminderSolo => 'Mementourile se calculează de la data expirării și Timpul de reînnoire. Le poți dezactiva aici.';
+
+  @override
+  String get remindersSectionTitle => 'Mementouri';
+
+  @override
+  String get remindersOffSubtitle => 'Nu există mementouri pentru această înregistrare';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara îți va aminti pe';
+
+  @override
+  String get remindersNoDatesLeft => 'Nu mai sunt date de memento înainte de această expirare.';
+
+  @override
+  String get remindersChooseDates => 'Alege propriile date';
+
+  @override
+  String get remindersChooseDatesLocked => 'Alege propriile date cu Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Folosește datele automate';
+
+  @override
+  String get tutorialRemindersSection => 'Mementourile se calculează de la data expirării. Setează Timpul de reînnoire la cât durează reînnoirea, ca să înceapă suficient de devreme.';
+
+  @override
+  String get tutorialRemindersDates => 'Acestea sunt zilele în care Vaultara îți va aminti.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Cu Premium îți poți alege propriile date de memento.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Atinge Alege propriile date pentru a modifica un memento sau a adăuga unul.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Expiră astăzi';
@@ -1167,6 +1200,17 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Grupuri personalizate';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Alege propriile date de memento';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Până la $count fotografii la fiecare înregistrare';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Mementouri automate';
 
   @override
   String get planFeatureMultipleReminders => 'Mementouri multiple pentru o singură înregistrare';
@@ -7866,7 +7910,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get whatsNewDismiss => 'Am înțeles';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Mai multe detalii conține extrasele: note, repetare, timp de reînnoire, al cui este, unde îl ții, blocare și fotografii. Deschide-l doar când ai nevoie.';
+  String get tutorialAddRecordMoreDetails2 => 'Mai multe detalii conține extrasele: note, repetare, al cui este, unde îl ții, blocare și fotografii. Deschide-l doar când ai nevoie.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Blochează o înregistrare ca să ceară amprenta sau blocarea ecranului înainte de afișare. Alege unde o ții, de pildă în portofel, și adaugă fotografii ale documentului.';
@@ -7945,13 +7989,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get storyRenew3Title => 'Nu știi cum?';
 
   @override
-  String get storyRenew3Body => 'Multe înregistrări au un ghid cu pașii, documentele și costul obișnuit.';
+  String get storyRenew3Body => 'Multe înregistrări au o listă de reînnoire. Întreabă Vaultara poate găsi pașii pentru țara ta, cu linkuri oficiale.';
 
   @override
   String get storyRenew4Title => 'Las-o să se repete';
 
   @override
-  String get storyRenew4Body => 'Pentru abonamente și plăți anuale, activează repetarea și data avansează singură.';
+  String get storyRenew4Body => 'Pentru abonamente și plăți anuale, activează Se reînnoiește singur și data va avansa de la sine.';
 
   @override
   String get storyAsk1Title => 'Întreabă cu cuvintele tale';
@@ -7982,6 +8026,12 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Conversațiile se păstrează 90 de zile în „Istoricul conversațiilor”, iar întrebările sugerate te ajută să începi.';
+
+  @override
+  String get storyAsk6Title => 'Mai mult decât înregistrări';
+
+  @override
+  String get storyAsk6Body => 'Poate și să planifice călătorii, să adauge persoane, să găsească pașii de reînnoire pentru țara ta și să partajeze înregistrări, cu linkuri către pagini oficiale.';
 
   @override
   String get storyWallet1Title => 'Pregătește-te întâi';

@@ -996,7 +996,40 @@ class AppLocalizationsXh extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Cofa indawo yesikhumbuzo ukuze ubone indlela izikhumbuzo ezisebenza ngayo.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Le yindawo yesikhumbuzo, apho iVaultara inokukwazisa phambi kokuba irekhodi iphelelwe lixesha.';
+  String get tutorialAddRecordReminderSolo => 'Izikhumbuzo zibalwa ukusuka kumhla wokuphelelwa nakwiXesha lokuvuselela. Ungazicima apha.';
+
+  @override
+  String get remindersSectionTitle => 'Izikhumbuzo';
+
+  @override
+  String get remindersOffSubtitle => 'Akukho zikhumbuzo zale rekhodi';
+
+  @override
+  String get remindersDatesTitle => 'IVaultara iya kukukhumbuza ngo';
+
+  @override
+  String get remindersNoDatesLeft => 'Akukho mihla yesikhumbuzo eseleyo phambi kokuphelelwa eli xesha.';
+
+  @override
+  String get remindersChooseDates => 'Khetha imihla yakho';
+
+  @override
+  String get remindersChooseDatesLocked => 'Khetha imihla yakho ngePremium';
+
+  @override
+  String get remindersUseAutomatic => 'Sebenzisa imihla ezenzekelayo';
+
+  @override
+  String get tutorialRemindersSection => 'Izikhumbuzo zibalwa ukusuka kumhla wokuphelelwa. Seta Ixesha lokuvuselela kwixesha elithathwa kukuvuselela, ukuze ziqale kwangethuba.';
+
+  @override
+  String get tutorialRemindersDates => 'Le yimihla iVaultara eya kukukhumbuza ngayo.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'NgePremium, ungakhetha imihla yakho yezikhumbuzo.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Cofa Khetha imihla yakho ukuze utshintshe isikhumbuzo okanye wongeze esinye.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Iphelelwa Namhlanje';
@@ -1163,6 +1196,17 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Amaqela alungiselelweyo';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Khetha imihla yakho yezikhumbuzo';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Ukuya kuthi ga kwiifoto ezi-$count kwirekhodi nganye';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Izikhumbuzo ezenzekelayo';
 
   @override
   String get planFeatureMultipleReminders => 'Izikhumbuzo ezininzi kwirekhodi enye';
@@ -7789,7 +7833,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get whatsNewDismiss => 'Ndiyaqonda';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Iinkcukacha ezongezelelweyo ziqulethe izongezo: amanqaku, ukuphinda, ixesha lokuhlaziya, ukuba yeyabani, apho uyigcina khona, isitshixo neefoto. Yivule kuphela xa uyidinga.';
+  String get tutorialAddRecordMoreDetails2 => 'Iinkcukacha ezongezelelweyo ziqulethe izongezo: amanqaku, ukuphinda, ukuba yeyabani, apho uyigcina khona, isitshixo neefoto. Yivule kuphela xa uyidinga.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Tshixa irekhodi ukuze lifune umnwe okanye isitshixo sesikrini phambi kokuboniswa. Khetha apho uligcina khona, njengengxowa yakho, uze wongeze iifoto zoxwebhu.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsXh extends AppLocalizations {
   String get storyRenew3Title => 'Akuqinisekanga ukuba njani?';
 
   @override
-  String get storyRenew3Body => 'Iirekhodi ezininzi zinesikhokelo esinamanyathelo, amaxwebhu neendleko eziqhelekileyo.';
+  String get storyRenew3Body => 'Iirekhodi ezininzi zinoluhlu lokuvuselela. Buza iVaultara inokufumana amanyathelo elizwe lakho, ngamakhonkco asemthethweni.';
 
   @override
   String get storyRenew4Title => 'Yiyeke iziphinde';
 
   @override
-  String get storyRenew4Body => 'Kwimirhumo neentlawulo zonyaka, vula ukuphinda kwaye umhla uya kuhamba ngokwawo.';
+  String get storyRenew4Body => 'Kwimirhumo neentlawulo zonyaka, layita Iyazihlaziya kwaye umhla uya kuqhubela phambili ngokwawo.';
 
   @override
   String get storyAsk1Title => 'Buza ngamazwi akho';
@@ -7905,6 +7949,12 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Iincoko zigcinwa iintsuku ezingama-90 kwi-«Imbali yeencoko», kwaye imibuzo ecetyiswayo ikunceda uqale.';
+
+  @override
+  String get storyAsk6Title => 'Ngaphezu kweerekhodi';
+
+  @override
+  String get storyAsk6Body => 'Inokucwangcisa uhambo, yongeze abantu, ifumane amanyathelo okuvuselela elizwe lakho kwaye yabelane ngeerekhodi, ngamakhonkco kumaphepha asemthethweni.';
 
   @override
   String get storyWallet1Title => 'Zilungiselele kuqala';

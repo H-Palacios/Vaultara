@@ -996,7 +996,40 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Prekni fushën e kujtesës për të parë si funksionojnë kujtesat.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Kjo është fusha e kujtesës, ku Vaultara mund t\'ju njoftojë para se regjistrimi të skadojë.';
+  String get tutorialAddRecordReminderSolo => 'Kujtesat llogariten nga data e skadimit dhe Koha e rinovimit. Mund t\'i çaktivizoni këtu.';
+
+  @override
+  String get remindersSectionTitle => 'Kujtesat';
+
+  @override
+  String get remindersOffSubtitle => 'Nuk ka kujtesa për këtë regjistrim';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara do t\'ju kujtojë më';
+
+  @override
+  String get remindersNoDatesLeft => 'Nuk ka mbetur asnjë datë kujtese para këtij skadimi.';
+
+  @override
+  String get remindersChooseDates => 'Zgjidhni datat tuaja';
+
+  @override
+  String get remindersChooseDatesLocked => 'Zgjidhni datat tuaja me Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Përdor datat automatike';
+
+  @override
+  String get tutorialRemindersSection => 'Kujtesat llogariten nga data e skadimit. Vendosni Kohën e rinovimit sa zgjat rinovimi, që të fillojnë mjaft herët.';
+
+  @override
+  String get tutorialRemindersDates => 'Këto janë ditët kur Vaultara do t\'ju kujtojë.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Me Premium mund të zgjidhni datat tuaja të kujtesave.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Prekni Zgjidhni datat tuaja për të ndryshuar një kujtesë ose për të shtuar një.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Skadon sot';
@@ -1163,6 +1196,17 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Grupe të personalizuara';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Zgjidhni datat tuaja të kujtesave';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Deri në $count foto për çdo regjistrim';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Kujtesa automatike';
 
   @override
   String get planFeatureMultipleReminders => 'Kujtesa të shumta në një regjistrim të vetëm';
@@ -7793,7 +7837,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get whatsNewDismiss => 'E kuptova';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Më shumë detaje mban shtesat: shënime, përsëritje, kohën e rinovimit, i kujt është, ku e mban, kyçjen dhe fotot. Hape vetëm kur të duhet.';
+  String get tutorialAddRecordMoreDetails2 => 'Më shumë detaje mban shtesat: shënime, përsëritje, i kujt është, ku e mban, kyçjen dhe fotot. Hape vetëm kur të duhet.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Kyç një regjistrim që të kërkojë gjurmë gishti ose kyçjen e ekranit para shfaqjes. Zgjidh ku e mban, p.sh. në portofol, dhe shto foto të dokumentit.';
@@ -7872,13 +7916,13 @@ class AppLocalizationsSq extends AppLocalizations {
   String get storyRenew3Title => 'Nuk e di si?';
 
   @override
-  String get storyRenew3Body => 'Shumë regjistrime kanë një udhëzues me hapat, dokumentet dhe koston e zakonshme.';
+  String get storyRenew3Body => 'Shumë regjistrime kanë një listë rinovimi. Pyet Vaultara mund të gjejë hapat për vendin tuaj, me lidhje zyrtare.';
 
   @override
   String get storyRenew4Title => 'Le të përsëritet';
 
   @override
-  String get storyRenew4Body => 'Për abonime dhe pagesa vjetore, aktivizo përsëritjen dhe data shtyhet vetë.';
+  String get storyRenew4Body => 'Për abonime dhe pagesa vjetore, aktivizoni Rinovohet vetë dhe data do të shkojë përpara vetë.';
 
   @override
   String get storyAsk1Title => 'Pyet me fjalët e tua';
@@ -7909,6 +7953,12 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Bisedat ruhen 90 ditë te «Historiku i bisedave» dhe pyetjet e sugjeruara të ndihmojnë të fillosh.';
+
+  @override
+  String get storyAsk6Title => 'Më shumë se regjistrime';
+
+  @override
+  String get storyAsk6Body => 'Mund të planifikojë edhe udhëtime, të shtojë persona, të gjejë hapat e rinovimit për vendin tuaj dhe të ndajë regjistrime, me lidhje drejt faqeve zyrtare.';
 
   @override
   String get storyWallet1Title => 'Përgatitu më parë';

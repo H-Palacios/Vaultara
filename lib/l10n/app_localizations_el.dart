@@ -996,7 +996,40 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Πατήστε το πεδίο υπενθύμισης για να δείτε πώς λειτουργούν οι υπενθυμίσεις.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Αυτό είναι το πεδίο υπενθύμισης, όπου το Vaultara μπορεί να σας ειδοποιήσει πριν λήξει η εγγραφή.';
+  String get tutorialAddRecordReminderSolo => 'Οι υπενθυμίσεις υπολογίζονται από την ημερομηνία λήξης και τον Χρόνο ανανέωσης. Μπορείτε να τις απενεργοποιήσετε εδώ.';
+
+  @override
+  String get remindersSectionTitle => 'Υπενθυμίσεις';
+
+  @override
+  String get remindersOffSubtitle => 'Δεν υπάρχουν υπενθυμίσεις για αυτή την εγγραφή';
+
+  @override
+  String get remindersDatesTitle => 'Το Vaultara θα σας υπενθυμίσει στις';
+
+  @override
+  String get remindersNoDatesLeft => 'Δεν απομένουν ημερομηνίες υπενθύμισης πριν από αυτή τη λήξη.';
+
+  @override
+  String get remindersChooseDates => 'Επιλέξτε δικές σας ημερομηνίες';
+
+  @override
+  String get remindersChooseDatesLocked => 'Επιλέξτε δικές σας ημερομηνίες με το Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Χρήση αυτόματων ημερομηνιών';
+
+  @override
+  String get tutorialRemindersSection => 'Οι υπενθυμίσεις υπολογίζονται από την ημερομηνία λήξης. Ορίστε τον Χρόνο ανανέωσης όσο διαρκεί η ανανέωση, ώστε να ξεκινούν αρκετά νωρίς.';
+
+  @override
+  String get tutorialRemindersDates => 'Αυτές είναι οι ημέρες που θα σας υπενθυμίσει το Vaultara.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Με το Premium μπορείτε να επιλέξετε δικές σας ημερομηνίες υπενθύμισης.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Πατήστε Επιλέξτε δικές σας ημερομηνίες για να αλλάξετε μια υπενθύμιση ή να προσθέσετε μία.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Λήγει σήμερα';
@@ -1163,6 +1196,17 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Προσαρμοσμένες ομάδες';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Δικές σας ημερομηνίες υπενθύμισης';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Έως $count φωτογραφίες σε κάθε εγγραφή';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Αυτόματες υπενθυμίσεις';
 
   @override
   String get planFeatureMultipleReminders => 'Πολλαπλές υπενθυμίσεις σε μία μόνο εγγραφή';
@@ -7793,7 +7837,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get whatsNewDismiss => 'Κατάλαβα';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Οι Περισσότερες λεπτομέρειες περιέχουν τα επιπλέον: σημειώσεις, επανάληψη, χρόνο ανανέωσης, σε ποιον ανήκει, πού το φυλάτε, κλείδωμα και φωτογραφίες. Ανοίξτε τες μόνο όταν χρειάζεται.';
+  String get tutorialAddRecordMoreDetails2 => 'Οι Περισσότερες λεπτομέρειες περιέχουν τα επιπλέον: σημειώσεις, επανάληψη, σε ποιον ανήκει, πού το φυλάτε, κλείδωμα και φωτογραφίες. Ανοίξτε τες μόνο όταν χρειάζεται.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Κλειδώστε μια εγγραφή ώστε να ζητά δακτυλικό αποτύπωμα ή κλείδωμα οθόνης πριν εμφανιστεί. Επιλέξτε πού τη φυλάτε, π.χ. στο πορτοφόλι, και προσθέστε φωτογραφίες του εγγράφου.';
@@ -7872,13 +7916,13 @@ class AppLocalizationsEl extends AppLocalizations {
   String get storyRenew3Title => 'Δεν ξέρετε πώς;';
 
   @override
-  String get storyRenew3Body => 'Πολλές εγγραφές έχουν οδηγό με τα βήματα, τα έγγραφα και το συνηθισμένο κόστος.';
+  String get storyRenew3Body => 'Πολλές εγγραφές έχουν λίστα ελέγχου ανανέωσης. Το Ρωτήστε το Vaultara μπορεί να βρει τα βήματα για τη χώρα σας, με επίσημους συνδέσμους.';
 
   @override
   String get storyRenew4Title => 'Αφήστε τη να επαναλαμβάνεται';
 
   @override
-  String get storyRenew4Body => 'Για συνδρομές και ετήσιες πληρωμές, ενεργοποιήστε την επανάληψη και η ημερομηνία προχωρά μόνη της.';
+  String get storyRenew4Body => 'Για συνδρομές και ετήσιες πληρωμές, ενεργοποιήστε το Ανανεώνεται μόνο του και η ημερομηνία θα προχωρά μόνη της.';
 
   @override
   String get storyAsk1Title => 'Ρωτήστε με δικά σας λόγια';
@@ -7909,6 +7953,12 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Οι συνομιλίες κρατούνται 90 ημέρες στο «Ιστορικό συνομιλιών» και οι προτεινόμενες ερωτήσεις σάς βοηθούν να ξεκινήσετε.';
+
+  @override
+  String get storyAsk6Title => 'Περισσότερα από εγγραφές';
+
+  @override
+  String get storyAsk6Body => 'Μπορεί επίσης να σχεδιάσει ταξίδια, να προσθέσει άτομα, να βρει τα βήματα ανανέωσης για τη χώρα σας και να μοιραστεί εγγραφές, με συνδέσμους σε επίσημες σελίδες.';
 
   @override
   String get storyWallet1Title => 'Πρώτα προετοιμαστείτε';

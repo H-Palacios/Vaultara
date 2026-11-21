@@ -996,7 +996,40 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Touchez le champ de rappel pour voir comment fonctionnent les rappels.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Voici le champ de rappel, où Vaultara peut vous avertir avant l\'expiration de l\'enregistrement.';
+  String get tutorialAddRecordReminderSolo => 'Les rappels sont calculés à partir de la date d\'expiration et du Délai de renouvellement. Vous pouvez les désactiver ici.';
+
+  @override
+  String get remindersSectionTitle => 'Rappels';
+
+  @override
+  String get remindersOffSubtitle => 'Aucun rappel pour cet élément';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara vous le rappellera le';
+
+  @override
+  String get remindersNoDatesLeft => 'Il ne reste aucune date de rappel avant cette échéance.';
+
+  @override
+  String get remindersChooseDates => 'Choisir mes dates';
+
+  @override
+  String get remindersChooseDatesLocked => 'Choisir mes dates avec Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Utiliser les dates automatiques';
+
+  @override
+  String get tutorialRemindersSection => 'Les rappels sont calculés à partir de la date d\'expiration. Réglez le Délai de renouvellement sur le temps que prend le renouvellement, pour qu\'ils commencent assez tôt.';
+
+  @override
+  String get tutorialRemindersDates => 'Voici les jours où Vaultara vous le rappellera.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Avec Premium, vous pouvez choisir vos propres dates de rappel.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Touchez Choisir mes dates pour modifier un rappel ou en ajouter un.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Expire aujourd\'hui';
@@ -1163,6 +1196,17 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Groupes personnalisés';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Choisissez vos propres dates de rappel';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Jusqu\'à $count photos par élément';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Rappels automatiques';
 
   @override
   String get planFeatureMultipleReminders => 'Plusieurs rappels sur un même enregistrement';
@@ -7803,7 +7847,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get whatsNewDismiss => 'Compris';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Plus de détails contient les options : notes, répétition, délai de renouvellement, à qui appartient l\'élément, où vous le rangez, verrou et photos. Ouvrez-le seulement si besoin.';
+  String get tutorialAddRecordMoreDetails2 => 'Plus de détails contient les options : notes, répétition, à qui appartient l\'élément, où vous le rangez, verrou et photos. Ouvrez-le seulement si besoin.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Verrouillez un élément pour demander votre empreinte ou le verrouillage de l\'écran avant de l\'afficher. Choisissez où vous le rangez, par exemple dans votre portefeuille, et ajoutez des photos du document.';
@@ -7882,13 +7926,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get storyRenew3Title => 'Vous ne savez pas comment ?';
 
   @override
-  String get storyRenew3Body => 'Beaucoup d\'éléments ont un guide avec les étapes, les documents et le coût habituel.';
+  String get storyRenew3Body => 'Beaucoup d\'éléments ont une liste de renouvellement. Demander à Vaultara peut trouver les étapes pour votre pays, avec des liens officiels.';
 
   @override
   String get storyRenew4Title => 'Le laisser se répéter';
 
   @override
-  String get storyRenew4Body => 'Pour les abonnements et paiements annuels, activez la répétition et la date avance toute seule.';
+  String get storyRenew4Body => 'Pour les abonnements et paiements annuels, activez Se renouvelle seul et la date avancera d\'elle-même.';
 
   @override
   String get storyAsk1Title => 'Demandez avec vos mots';
@@ -7919,6 +7963,12 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Les conversations restent 90 jours dans « Historique des conversations », et des suggestions de questions vous aident à démarrer.';
+
+  @override
+  String get storyAsk6Title => 'Plus que des éléments';
+
+  @override
+  String get storyAsk6Body => 'Il peut aussi planifier des voyages, ajouter des personnes, trouver les étapes de renouvellement de votre pays et partager des éléments, avec des liens vers les pages officielles.';
 
   @override
   String get storyWallet1Title => 'Préparez-vous d\'abord';

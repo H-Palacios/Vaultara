@@ -990,7 +990,40 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Ketuk bidang pengingat untuk melihat cara kerja pengingat.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Ini bidang pengingat, tempat Vaultara dapat memberi tahu Anda sebelum catatan berakhir.';
+  String get tutorialAddRecordReminderSolo => 'Pengingat dihitung dari tanggal kedaluwarsa dan Waktu perpanjangan. Anda dapat mematikannya di sini.';
+
+  @override
+  String get remindersSectionTitle => 'Pengingat';
+
+  @override
+  String get remindersOffSubtitle => 'Tidak ada pengingat untuk catatan ini';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara akan mengingatkan Anda pada';
+
+  @override
+  String get remindersNoDatesLeft => 'Tidak ada lagi tanggal pengingat sebelum kedaluwarsa ini.';
+
+  @override
+  String get remindersChooseDates => 'Pilih tanggal sendiri';
+
+  @override
+  String get remindersChooseDatesLocked => 'Pilih tanggal sendiri dengan Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Gunakan tanggal otomatis';
+
+  @override
+  String get tutorialRemindersSection => 'Pengingat dihitung dari tanggal kedaluwarsa. Atur Waktu perpanjangan sesuai lama perpanjangan, agar pengingat mulai cukup awal.';
+
+  @override
+  String get tutorialRemindersDates => 'Inilah hari-hari Vaultara akan mengingatkan Anda.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Dengan Premium, Anda dapat memilih tanggal pengingat sendiri.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Ketuk Pilih tanggal sendiri untuk mengubah pengingat atau menambahkannya.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Kedaluwarsa hari ini';
@@ -1157,6 +1190,17 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Grup kustom';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Pilih tanggal pengingat sendiri';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Hingga $count foto di setiap catatan';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Pengingat otomatis';
 
   @override
   String get planFeatureMultipleReminders => 'Beberapa pengingat pada satu catatan';
@@ -7727,7 +7771,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get whatsNewDismiss => 'Mengerti';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Detail lainnya berisi tambahan: catatan, pengulangan, waktu perpanjangan, milik siapa, disimpan di mana, kunci, dan foto. Buka hanya saat perlu.';
+  String get tutorialAddRecordMoreDetails2 => 'Detail lainnya berisi tambahan: catatan, pengulangan, milik siapa, disimpan di mana, kunci, dan foto. Buka hanya saat perlu.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Kunci catatan agar meminta sidik jari atau kunci layar sebelum ditampilkan. Pilih tempat Anda menyimpannya, misalnya dompet, lalu tambahkan foto dokumen.';
@@ -7806,13 +7850,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get storyRenew3Title => 'Tidak yakin caranya?';
 
   @override
-  String get storyRenew3Body => 'Banyak catatan punya panduan berisi langkah, dokumen, dan biaya umumnya.';
+  String get storyRenew3Body => 'Banyak catatan memiliki daftar periksa perpanjangan. Tanya Vaultara dapat menemukan langkah untuk negara Anda, dengan tautan resmi.';
 
   @override
   String get storyRenew4Title => 'Biarkan berulang';
 
   @override
-  String get storyRenew4Body => 'Untuk langganan dan pembayaran tahunan, aktifkan pengulangan dan tanggal akan maju sendiri.';
+  String get storyRenew4Body => 'Untuk langganan dan pembayaran tahunan, aktifkan Diperpanjang sendiri dan tanggal akan maju dengan sendirinya.';
 
   @override
   String get storyAsk1Title => 'Tanya dengan kata-kata Anda';
@@ -7843,6 +7887,12 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Obrolan disimpan 90 hari di «Riwayat obrolan», dan pertanyaan yang disarankan membantu Anda memulai.';
+
+  @override
+  String get storyAsk6Title => 'Lebih dari sekadar catatan';
+
+  @override
+  String get storyAsk6Body => 'Ia juga dapat merencanakan perjalanan, menambahkan orang, menemukan langkah perpanjangan untuk negara Anda, dan membagikan catatan, dengan tautan ke halaman resmi.';
 
   @override
   String get storyWallet1Title => 'Bersiap dulu';

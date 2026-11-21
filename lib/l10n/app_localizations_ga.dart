@@ -999,7 +999,40 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Tapáil an réimse meabhrúcháin le feiceáil conas a oibríonn meabhrúcháin.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Seo an réimse meabhrúcháin, áit ar féidir le Vaultara fógra a thabhairt duit sula rachaidh an taifead in éag.';
+  String get tutorialAddRecordReminderSolo => 'Ríomhtar meabhrúcháin ón dáta éaga agus ón Am athnuachana. Is féidir leat iad a mhúchadh anseo.';
+
+  @override
+  String get remindersSectionTitle => 'Meabhrúcháin';
+
+  @override
+  String get remindersOffSubtitle => 'Níl aon mheabhrúcháin don taifead seo';
+
+  @override
+  String get remindersDatesTitle => 'Cuirfidh Vaultara i gcuimhne duit ar';
+
+  @override
+  String get remindersNoDatesLeft => 'Níl aon dátaí meabhrúcháin fágtha roimh an éag seo.';
+
+  @override
+  String get remindersChooseDates => 'Roghnaigh do dhátaí féin';
+
+  @override
+  String get remindersChooseDatesLocked => 'Roghnaigh do dhátaí féin le Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Úsáid dátaí uathoibríocha';
+
+  @override
+  String get tutorialRemindersSection => 'Ríomhtar meabhrúcháin ón dáta éaga. Socraigh Am athnuachana don fhad a thógann athnuachan, ionas go dtosóidh siad luath go leor.';
+
+  @override
+  String get tutorialRemindersDates => 'Seo iad na laethanta a gcuirfidh Vaultara i gcuimhne duit.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Le Premium, is féidir leat do dhátaí meabhrúcháin féin a roghnú.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Tapáil Roghnaigh do dhátaí féin chun meabhrúchán a athrú nó ceann a chur leis.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Ag dul in éag inniu';
@@ -1166,6 +1199,17 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Grúpaí saincheaptha';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Roghnaigh do dhátaí meabhrúcháin féin';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Suas le $count grianghraf ar gach taifead';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Meabhrúcháin uathoibríocha';
 
   @override
   String get planFeatureMultipleReminders => 'Meabhrúcháin iolracha ar aon taifead amháin';
@@ -7973,7 +8017,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get whatsNewDismiss => 'Tuigim';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Coinníonn Tuilleadh sonraí na breiseáin: nótaí, athdhéanamh, am athnuachana, cé leis é, cá gcoinníonn tú é, glas agus grianghraif. Ná hoscail é ach nuair is gá.';
+  String get tutorialAddRecordMoreDetails2 => 'Coinníonn Tuilleadh sonraí na breiseáin: nótaí, athdhéanamh, cé leis é, cá gcoinníonn tú é, glas agus grianghraif. Ná hoscail é ach nuair is gá.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Cuir glas ar thaifead ionas go n-iarrfaidh sé méarlorg nó glas scáileáin sula dtaispeántar é. Roghnaigh cá gcoinníonn tú é, mar shampla i do sparán, agus cuir grianghraif den doiciméad leis.';
@@ -8052,13 +8096,13 @@ class AppLocalizationsGa extends AppLocalizations {
   String get storyRenew3Title => 'Níl tú cinnte conas?';
 
   @override
-  String get storyRenew3Body => 'Tá treoir ag go leor taifead leis na céimeanna, na doiciméid agus an costas is gnách.';
+  String get storyRenew3Body => 'Tá seicliosta athnuachana ag go leor taifead. Is féidir le Fiafraigh de Vaultara na céimeanna do do thír a aimsiú, le naisc oifigiúla.';
 
   @override
   String get storyRenew4Title => 'Lig dó athdhéanamh';
 
   @override
-  String get storyRenew4Body => 'Do shíntiúis agus íocaíochtaí bliantúla, cas air athdhéanamh agus bogann an dáta ar aghaidh leis féin.';
+  String get storyRenew4Body => 'Le haghaidh síntiús agus íocaíochtaí bliantúla, cas air Athnuann sé féin agus bogfaidh an dáta ar aghaidh leis féin.';
 
   @override
   String get storyAsk1Title => 'Fiafraigh i d\'fhocail féin';
@@ -8089,6 +8133,12 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Coinnítear comhráite ar feadh 90 lá in «Stair comhráite», agus cabhraíonn ceisteanna molta leat tosú.';
+
+  @override
+  String get storyAsk6Title => 'Níos mó ná taifid';
+
+  @override
+  String get storyAsk6Body => 'Is féidir leis turais a phleanáil, daoine a chur leis, céimeanna athnuachana do thíre a aimsiú agus taifid a roinnt, le naisc chuig leathanaigh oifigiúla.';
 
   @override
   String get storyWallet1Title => 'Ullmhaigh ar dtús';

@@ -2068,8 +2068,74 @@ abstract class AppLocalizations {
   /// No description provided for @tutorialAddRecordReminderSolo.
   ///
   /// In en, this message translates to:
-  /// **'This is the reminder field, where Vaultara can notify you before the record expires.'**
+  /// **'Reminders are worked out from the expiry date and Renewal time. You can turn them off here.'**
   String get tutorialAddRecordReminderSolo;
+
+  /// Title of the reminders switch in the record sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders'**
+  String get remindersSectionTitle;
+
+  /// Shown under the reminders switch when it is off.
+  ///
+  /// In en, this message translates to:
+  /// **'No reminders for this record'**
+  String get remindersOffSubtitle;
+
+  /// Heading above the list of dates a record will remind on. The dates follow it.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara will remind you on'**
+  String get remindersDatesTitle;
+
+  /// Shown when every reminder day for the record has already passed.
+  ///
+  /// In en, this message translates to:
+  /// **'There are no reminder dates left before this expiry.'**
+  String get remindersNoDatesLeft;
+
+  /// Button for Premium users to set their own reminder days.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your own dates'**
+  String get remindersChooseDates;
+
+  /// Locked row for free users. Opens the plans.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your own dates with Premium'**
+  String get remindersChooseDatesLocked;
+
+  /// Button that drops the user's own reminder days and goes back to the automatic ones.
+  ///
+  /// In en, this message translates to:
+  /// **'Use automatic dates'**
+  String get remindersUseAutomatic;
+
+  /// Tip in a guided tutorial. Renewal time is the name of the field.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders are worked out from the expiry date. Set Renewal time to how long renewing takes, so they start early enough.'**
+  String get tutorialRemindersSection;
+
+  /// Tip in a guided tutorial.
+  ///
+  /// In en, this message translates to:
+  /// **'These are the days Vaultara will remind you.'**
+  String get tutorialRemindersDates;
+
+  /// Tip in a guided tutorial, for free users.
+  ///
+  /// In en, this message translates to:
+  /// **'With Premium, you can choose your own reminder dates.'**
+  String get tutorialRemindersOwnDatesFree;
+
+  /// Tip in a guided tutorial, for Premium users. Use the same words as remindersChooseDates.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap Choose your own dates to change a reminder or add one.'**
+  String get tutorialRemindersOwnDatesPremium;
 
   /// Heading for the insight shown when one or more records expire today.
   ///
@@ -2268,6 +2334,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Custom groups'**
   String get planFeatureCustomGroups;
+
+  /// Premium benefit on the plans screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your own reminder dates'**
+  String get planFeatureOwnReminderDates;
+
+  /// Premium benefit on the plans screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Up to {count} photos on each record'**
+  String planFeaturePhotos(int count);
+
+  /// Free plan feature on the plans screen. Keep it short.
+  ///
+  /// In en, this message translates to:
+  /// **'Automatic reminders'**
+  String get planFeatureAutoReminders;
 
   /// No description provided for @planFeatureMultipleReminders.
   ///
@@ -13420,7 +13504,7 @@ abstract class AppLocalizations {
   /// Tip in a guided tutorial.
   ///
   /// In en, this message translates to:
-  /// **'More details holds the extras: notes, repeat, renewal time, whose record it is, where you keep it, lock and photos. Open it only when you need it.'**
+  /// **'More details holds the extras: notes, repeat, whose record it is, where you keep it, lock and photos. Open it only when you need it.'**
   String get tutorialAddRecordMoreDetails2;
 
   /// Tip in a guided tutorial.
@@ -13570,7 +13654,7 @@ abstract class AppLocalizations {
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'Many records have a guide with the steps, documents and usual cost of renewing.'**
+  /// **'Many records have a renewal checklist. Ask Vaultara can find the steps for your country, with official links.'**
   String get storyRenew3Body;
 
   /// Title of a tutorial step. Short.
@@ -13582,7 +13666,7 @@ abstract class AppLocalizations {
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'For subscriptions and yearly payments, turn on Repeat and the date moves forward by itself.'**
+  /// **'For subscriptions and yearly payments, turn on Renews by itself and the date moves forward on its own.'**
   String get storyRenew4Body;
 
   /// Title of a tutorial step. Short.
@@ -13644,6 +13728,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Chats are kept for 90 days in Chat history, and suggested questions help you get started.'**
   String get storyAsk5Body;
+
+  /// Title of a tutorial step. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'More than records'**
+  String get storyAsk6Title;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'It can also plan trips, add people, find the renewal steps for your country and share records, with links to official pages.'**
+  String get storyAsk6Body;
 
   /// Title of a tutorial step. Short.
   ///

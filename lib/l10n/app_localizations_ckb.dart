@@ -996,7 +996,40 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'کلیک لە خانەی بیرخەرەوە بکە بۆ بینینی چۆنیەتی کارکردنیان.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'ئەمە خانەی بیرخەرەوەیە، کە Vaultara دەتوانێت پێش بەسەرچوونی تۆمار ئاگادارت بکاتەوە.';
+  String get tutorialAddRecordReminderSolo => 'بیرخەرەوەکان لە ڕۆژی بەسەرچوون و کاتی نوێکردنەوە دەژمێردرێن. لێرە دەتوانیت بیانکوژێنیتەوە.';
+
+  @override
+  String get remindersSectionTitle => 'بیرخەرەوەکان';
+
+  @override
+  String get remindersOffSubtitle => 'هیچ بیرخەرەوەیەک بۆ ئەم تۆمارە نییە';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara لەم ڕۆژانەدا بیرت دەخاتەوە';
+
+  @override
+  String get remindersNoDatesLeft => 'هیچ ڕۆژێکی بیرخستنەوە پێش ئەم بەسەرچوونە نەماوە.';
+
+  @override
+  String get remindersChooseDates => 'ڕۆژەکانی خۆت هەڵبژێرە';
+
+  @override
+  String get remindersChooseDatesLocked => 'بە Premium ڕۆژەکانی خۆت هەڵبژێرە';
+
+  @override
+  String get remindersUseAutomatic => 'ڕۆژە خۆکارەکان بەکاربهێنە';
+
+  @override
+  String get tutorialRemindersSection => 'بیرخەرەوەکان لە ڕۆژی بەسەرچوونەوە دەژمێردرێن. کاتی نوێکردنەوە دابنێ بەپێی ئەوەی نوێکردنەوە چەند دەخایەنێت، تا بەکاتی خۆی دەست پێبکەن.';
+
+  @override
+  String get tutorialRemindersDates => 'ئەمانە ئەو ڕۆژانەن کە Vaultara بیرت دەخاتەوە.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'بە Premium دەتوانیت ڕۆژەکانی بیرخستنەوەی خۆت هەڵبژێریت.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'دەست لە ڕۆژەکانی خۆت هەڵبژێرە بدە بۆ گۆڕینی بیرخەرەوەیەک یان زیادکردنی یەکێکی تر.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ئەمڕۆ بەسەردەچێت';
@@ -1163,6 +1196,17 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'گرووپی دەستکاریکراو';
+
+  @override
+  String get planFeatureOwnReminderDates => 'ڕۆژەکانی بیرخستنەوەی خۆت هەڵبژێرە';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'تا $count وێنە بۆ هەر تۆمارێک';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'بیرخەرەوەی خۆکار';
 
   @override
   String get planFeatureMultipleReminders => 'چەندین بیرخەرەوە لەسەر یەک تۆماری تاقانە';
@@ -7789,7 +7833,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get whatsNewDismiss => 'تێگەیشتم';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'وردەکاری زیاتر شتە زیادەکان لەخۆ دەگرێت: تێبینی، دووبارەبوونەوە، کاتی نوێکردنەوە، هی کێیە، لە کوێ هەڵیدەگریت، قوفڵ و وێنە. تەنها کاتێک پێویست بوو بیکەرەوە.';
+  String get tutorialAddRecordMoreDetails2 => 'وردەکاری زیاتر شتە زیادەکان لەخۆ دەگرێت: تێبینی، دووبارەبوونەوە، هی کێیە، لە کوێ هەڵیدەگریت، قوفڵ و وێنە. تەنها کاتێک پێویست بوو بیکەرەوە.';
 
   @override
   String get tutorialAddRecordProtect2 => 'تۆمارێک قوفڵ بکە تا پێش پیشاندان پەنجەمۆر یان قوفڵی شاشە داوا بکات. هەڵبژێرە لە کوێ هەڵیدەگریت، وەک جزدانەکەت، و وێنەی بەڵگەنامەکە زیاد بکە.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get storyRenew3Title => 'دڵنیا نیت چۆن؟';
 
   @override
-  String get storyRenew3Body => 'زۆر تۆمار ڕێبەرێکیان هەیە بە هەنگاوەکان، بەڵگەنامەکان و تێچووی ئاسایی.';
+  String get storyRenew3Body => 'زۆر تۆمار لیستی پشکنینی نوێکردنەوەیان هەیە. لە Vaultara بپرسە دەتوانێت هەنگاوەکان بۆ وڵاتەکەت لەگەڵ بەستەری فەرمی بدۆزێتەوە.';
 
   @override
   String get storyRenew4Title => 'با دووبارە ببێتەوە';
 
   @override
-  String get storyRenew4Body => 'بۆ بەشداریکردن و پارەدانی ساڵانە، دووبارەبوونەوە چالاک بکە و بەروارەکە خۆی دەچێتە پێشەوە.';
+  String get storyRenew4Body => 'بۆ بەشداریکردن و پارەدانی ساڵانە، خۆی نوێ دەبێتەوە چالاک بکە و ڕۆژەکە خۆی دەچێتە پێشەوە.';
 
   @override
   String get storyAsk1Title => 'بە وشەی خۆت بپرسە';
@@ -7905,6 +7949,12 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'گفتوگۆکان 90 ڕۆژ لە «مێژووی گفتوگۆ» دەمێننەوە، و پرسیارە پێشنیارکراوەکان یارمەتیت دەدەن دەست پێبکەیت.';
+
+  @override
+  String get storyAsk6Title => 'زیاتر لە تۆمار';
+
+  @override
+  String get storyAsk6Body => 'دەتوانێت گەشت پلان بکات، کەس زیاد بکات، هەنگاوەکانی نوێکردنەوە بۆ وڵاتەکەت بدۆزێتەوە و تۆمار هاوبەش بکات، لەگەڵ بەستەر بۆ پەڕە فەرمییەکان.';
 
   @override
   String get storyWallet1Title => 'سەرەتا ئامادە بە';

@@ -996,7 +996,40 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Tik op die herinneringsveld om te sien hoe herinneringe werk.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Dit is die herinneringsveld, waar Vaultara jou in kennis kan stel voordat die rekord verval.';
+  String get tutorialAddRecordReminderSolo => 'Herinneringe word uit die vervaldatum en Hernuwingstyd bereken. Jy kan dit hier afskakel.';
+
+  @override
+  String get remindersSectionTitle => 'Herinneringe';
+
+  @override
+  String get remindersOffSubtitle => 'Geen herinneringe vir hierdie inskrywing nie';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara sal jou herinner op';
+
+  @override
+  String get remindersNoDatesLeft => 'Daar is geen herinneringsdatums meer voor hierdie vervaldatum nie.';
+
+  @override
+  String get remindersChooseDates => 'Kies jou eie datums';
+
+  @override
+  String get remindersChooseDatesLocked => 'Kies jou eie datums met Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Gebruik outomatiese datums';
+
+  @override
+  String get tutorialRemindersSection => 'Herinneringe word uit die vervaldatum bereken. Stel Hernuwingstyd op hoe lank hernuwing duur, sodat hulle vroeg genoeg begin.';
+
+  @override
+  String get tutorialRemindersDates => 'Dit is die dae waarop Vaultara jou sal herinner.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Met Premium kan jy jou eie herinneringsdatums kies.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Tik op Kies jou eie datums om \'n herinnering te verander of een by te voeg.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Verval vandag';
@@ -1163,6 +1196,17 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Pasgemaakte groepe';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Kies jou eie herinneringsdatums';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Tot $count foto\'s by elke inskrywing';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Outomatiese herinneringe';
 
   @override
   String get planFeatureMultipleReminders => 'Verskeie herinneringe op \'n enkele rekord';
@@ -7793,7 +7837,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get whatsNewDismiss => 'Verstaan';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Meer besonderhede hou die ekstras: notas, herhaling, hernutyd, wie s\'n dit is, waar jy dit hou, slot en foto\'s. Maak dit net oop wanneer nodig.';
+  String get tutorialAddRecordMoreDetails2 => 'Meer besonderhede hou die ekstras: notas, herhaling, wie s\'n dit is, waar jy dit hou, slot en foto\'s. Maak dit net oop wanneer nodig.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Sluit \'n inskrywing sodat dit \'n vingerafdruk of skermslot vra voordat dit wys. Kies waar jy dit hou, soos jou beursie, en voeg foto\'s van die dokument by.';
@@ -7872,13 +7916,13 @@ class AppLocalizationsAf extends AppLocalizations {
   String get storyRenew3Title => 'Onseker hoe?';
 
   @override
-  String get storyRenew3Body => 'Baie inskrywings het \'n gids met die stappe, dokumente en gewone koste.';
+  String get storyRenew3Body => 'Baie inskrywings het \'n hernuwingskontrolelys. Vra Vaultara kan die stappe vir jou land vind, met amptelike skakels.';
 
   @override
   String get storyRenew4Title => 'Laat dit herhaal';
 
   @override
-  String get storyRenew4Body => 'Vir intekeninge en jaarlikse betalings skakel jy herhaling aan, en die datum skuif self vorentoe.';
+  String get storyRenew4Body => 'Vir intekeninge en jaarlikse betalings, skakel Hernu vanself aan en die datum skuif self vorentoe.';
 
   @override
   String get storyAsk1Title => 'Vra in jou eie woorde';
@@ -7909,6 +7953,12 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Kletse word 90 dae lank in \"Gespreksgeskiedenis\" gehou, en voorgestelde vrae help jou begin.';
+
+  @override
+  String get storyAsk6Title => 'Meer as inskrywings';
+
+  @override
+  String get storyAsk6Body => 'Dit kan ook reise beplan, mense byvoeg, die hernuwingstappe vir jou land vind en inskrywings deel, met skakels na amptelike bladsye.';
 
   @override
   String get storyWallet1Title => 'Berei eers voor';

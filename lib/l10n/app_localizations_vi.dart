@@ -995,7 +995,40 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Chạm vào trường nhắc nhở để xem cách nhắc nhở hoạt động.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Đây là trường nhắc nhở, nơi Vaultara có thể thông báo cho bạn trước khi bản ghi hết hạn.';
+  String get tutorialAddRecordReminderSolo => 'Lời nhắc được tính từ ngày hết hạn và Thời gian gia hạn. Bạn có thể tắt chúng tại đây.';
+
+  @override
+  String get remindersSectionTitle => 'Lời nhắc';
+
+  @override
+  String get remindersOffSubtitle => 'Không có lời nhắc cho mục này';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara sẽ nhắc bạn vào';
+
+  @override
+  String get remindersNoDatesLeft => 'Không còn ngày nhắc nào trước ngày hết hạn này.';
+
+  @override
+  String get remindersChooseDates => 'Chọn ngày của riêng bạn';
+
+  @override
+  String get remindersChooseDatesLocked => 'Chọn ngày của riêng bạn với Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Dùng ngày tự động';
+
+  @override
+  String get tutorialRemindersSection => 'Lời nhắc được tính từ ngày hết hạn. Đặt Thời gian gia hạn bằng khoảng thời gian gia hạn cần, để lời nhắc bắt đầu đủ sớm.';
+
+  @override
+  String get tutorialRemindersDates => 'Đây là những ngày Vaultara sẽ nhắc bạn.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Với Premium, bạn có thể tự chọn ngày nhắc.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Nhấn Chọn ngày của riêng bạn để đổi một lời nhắc hoặc thêm lời nhắc.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Hết Hạn Hôm Nay';
@@ -1162,6 +1195,17 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Nhóm tùy chỉnh';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Tự chọn ngày nhắc';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Tối đa $count ảnh cho mỗi mục';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Lời nhắc tự động';
 
   @override
   String get planFeatureMultipleReminders => 'Nhiều nhắc nhở trên một bản ghi duy nhất';
@@ -7732,7 +7776,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get whatsNewDismiss => 'Đã hiểu';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Thêm chi tiết chứa các phần bổ sung: ghi chú, lặp lại, thời gian gia hạn, của ai, cất ở đâu, khóa và ảnh. Chỉ mở khi cần.';
+  String get tutorialAddRecordMoreDetails2 => 'Thêm chi tiết chứa các phần bổ sung: ghi chú, lặp lại, của ai, cất ở đâu, khóa và ảnh. Chỉ mở khi cần.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Khóa một mục để yêu cầu vân tay hoặc khóa màn hình trước khi hiển thị. Chọn nơi bạn cất, ví dụ trong ví, và thêm ảnh giấy tờ.';
@@ -7811,13 +7855,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get storyRenew3Title => 'Chưa rõ cách làm?';
 
   @override
-  String get storyRenew3Body => 'Nhiều mục có hướng dẫn với các bước, giấy tờ và chi phí thường gặp.';
+  String get storyRenew3Body => 'Nhiều mục có danh sách kiểm tra gia hạn. Hỏi Vaultara có thể tìm các bước cho quốc gia của bạn, kèm liên kết chính thức.';
 
   @override
   String get storyRenew4Title => 'Để nó lặp lại';
 
   @override
-  String get storyRenew4Body => 'Với gói đăng ký và khoản thanh toán hằng năm, bật lặp lại và ngày sẽ tự dời tới.';
+  String get storyRenew4Body => 'Với gói đăng ký và khoản thanh toán hằng năm, hãy bật Tự gia hạn và ngày sẽ tự chuyển tiếp.';
 
   @override
   String get storyAsk1Title => 'Hỏi bằng lời của bạn';
@@ -7848,6 +7892,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Cuộc trò chuyện được lưu 90 ngày trong «Lịch sử trò chuyện» và câu hỏi gợi ý giúp bạn bắt đầu.';
+
+  @override
+  String get storyAsk6Title => 'Hơn cả các mục';
+
+  @override
+  String get storyAsk6Body => 'Nó còn có thể lên kế hoạch chuyến đi, thêm người, tìm các bước gia hạn cho quốc gia của bạn và chia sẻ mục, kèm liên kết tới trang chính thức.';
 
   @override
   String get storyWallet1Title => 'Chuẩn bị trước';

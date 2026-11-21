@@ -996,7 +996,40 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'د یادونې ساحه کېکاږئ ترڅو وګورئ چې یادونې څنګه کار کوي.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'دا د یادونې ساحه ده، چیرې چې Vaultara کولی شي مخکې له دې چې ریکارډ پای ته ورسیږي تاسو خبر کړي.';
+  String get tutorialAddRecordReminderSolo => 'یادونې د پای ته رسېدو له نېټې او د نوي کولو له وخت حسابېږي. تاسو یې دلته بندولی شئ.';
+
+  @override
+  String get remindersSectionTitle => 'یادونې';
+
+  @override
+  String get remindersOffSubtitle => 'د دې ریکارډ لپاره هیڅ یادونه نشته';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara به تاسو ته په دې ورځو کې یادونه وکړي';
+
+  @override
+  String get remindersNoDatesLeft => 'د دې پای ته رسېدو مخکې د یادونې نېټه پاتې نه ده.';
+
+  @override
+  String get remindersChooseDates => 'خپلې نېټې وټاکئ';
+
+  @override
+  String get remindersChooseDatesLocked => 'د Premium سره خپلې نېټې وټاکئ';
+
+  @override
+  String get remindersUseAutomatic => 'اتومات نېټې وکاروئ';
+
+  @override
+  String get tutorialRemindersSection => 'یادونې د پای ته رسېدو له نېټې حسابېږي. د نوي کولو وخت هغومره وټاکئ چې نوي کول یې اخلي، څو په وخت پیل شي.';
+
+  @override
+  String get tutorialRemindersDates => 'دا هغه ورځې دي چې Vaultara به یې تاسو ته یادونه کوي.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'د Premium سره تاسو کولی شئ د یادونې خپلې نېټې وټاکئ.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'د یادونې د بدلولو یا زیاتولو لپاره خپلې نېټې وټاکئ ټک کړئ.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'نن پای ته رسېږي';
@@ -1163,6 +1196,17 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'دودیزې ډلې';
+
+  @override
+  String get planFeatureOwnReminderDates => 'د یادونې خپلې نېټې وټاکئ';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'په هر ریکارډ کې تر $count عکسونو پورې';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'اتومات یادونې';
 
   @override
   String get planFeatureMultipleReminders => 'په یو واحد ریکارډ کې څو یادونې';
@@ -7789,7 +7833,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get whatsNewDismiss => 'پوه شوم';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'نور جزئیات اضافي شیان لري: یادښتونه، تکرار، د نوي کولو وخت، د چا دی، چیرې یې ساتئ، قلف او عکسونه. یوازې د اړتیا پر وخت یې پرانیزئ.';
+  String get tutorialAddRecordMoreDetails2 => 'نور جزئیات اضافي شیان لري: یادښتونه، تکرار، د چا دی، چیرې یې ساتئ، قلف او عکسونه. یوازې د اړتیا پر وخت یې پرانیزئ.';
 
   @override
   String get tutorialAddRecordProtect2 => 'ریکارډ قلف کړئ ترڅو د ښودلو مخکې د ګوتې نښه یا د سکرین قلف وغواړي. وټاکئ چیرې یې ساتئ، لکه بټوه، او د سند عکسونه اضافه کړئ.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsPs extends AppLocalizations {
   String get storyRenew3Title => 'ډاډه نه یاست څنګه؟';
 
   @override
-  String get storyRenew3Body => 'ډېری ریکارډونه د ګامونو، اسنادو او عادي لګښت لارښود لري.';
+  String get storyRenew3Body => 'ډېری ریکارډونه د نوي کولو چک لیست لري. له Vaultara وپوښتئ ستاسو د هېواد ګامونه له رسمي لینکونو سره موندلی شي.';
 
   @override
   String get storyRenew4Title => 'پرېږدئ چې تکرار شي';
 
   @override
-  String get storyRenew4Body => 'د ګډونونو او کلنیو تادیاتو لپاره تکرار چالان کړئ، نیټه به پخپله وړاندې ځي.';
+  String get storyRenew4Body => 'د ګډون او کلنیو تادیاتو لپاره پخپله نوي کېږي فعال کړئ او نېټه به پخپله مخ ته ولاړه شي.';
 
   @override
   String get storyAsk1Title => 'په خپلو ټکو وپوښتئ';
@@ -7905,6 +7949,12 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'چیټونه ۹۰ ورځې په «د خبرو اترو تاریخچه» کې ساتل کېږي، او وړاندیز شوې پوښتنې د پیل کولو کې مرسته کوي.';
+
+  @override
+  String get storyAsk6Title => 'له ریکارډونو ډېر';
+
+  @override
+  String get storyAsk6Body => 'دا کولی شي سفر پلان کړي، خلک زیات کړي، ستاسو د هېواد د نوي کولو ګامونه ومومي او ریکارډونه شریک کړي، د رسمي پاڼو له لینکونو سره.';
 
   @override
   String get storyWallet1Title => 'لومړی چمتو شئ';

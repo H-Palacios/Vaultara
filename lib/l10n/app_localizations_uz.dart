@@ -996,7 +996,40 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Eslatmalar qanday ishlashini koʻrish uchun eslatma maydonini bosing.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Bu eslatma maydoni. Bu yerda Vaultara yozuv muddati tugashidan oldin sizga bildirishnoma yuborishini sozlaysiz.';
+  String get tutorialAddRecordReminderSolo => 'Eslatmalar muddat tugash sanasi va Yangilash muddatidan hisoblanadi. Ularni shu yerda oʻchirishingiz mumkin.';
+
+  @override
+  String get remindersSectionTitle => 'Eslatmalar';
+
+  @override
+  String get remindersOffSubtitle => 'Bu yozuv uchun eslatmalar yoʻq';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara sizga quyidagi kunlarda eslatadi';
+
+  @override
+  String get remindersNoDatesLeft => 'Bu muddat tugashidan oldin eslatma sanasi qolmadi.';
+
+  @override
+  String get remindersChooseDates => 'Oʻz sanalaringizni tanlang';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium bilan oʻz sanalaringizni tanlang';
+
+  @override
+  String get remindersUseAutomatic => 'Avtomatik sanalardan foydalanish';
+
+  @override
+  String get tutorialRemindersSection => 'Eslatmalar muddat tugash sanasidan hisoblanadi. Yangilash muddatini yangilash qancha vaqt olishiga moslang, shunda ular vaqtida boshlanadi.';
+
+  @override
+  String get tutorialRemindersDates => 'Bular Vaultara sizga eslatadigan kunlar.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium bilan eslatma sanalarini oʻzingiz tanlashingiz mumkin.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Eslatmani oʻzgartirish yoki qoʻshish uchun Oʻz sanalaringizni tanlang tugmasini bosing.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Muddati bugun tugaydi';
@@ -1163,6 +1196,17 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Maxsus guruhlar';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Eslatma sanalarini oʻzingiz tanlang';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Har bir yozuvga $count tagacha rasm';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Avtomatik eslatmalar';
 
   @override
   String get planFeatureMultipleReminders => 'Bitta yozuv uchun bir nechta eslatma';
@@ -7789,7 +7833,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get whatsNewDismiss => 'Tushunarli';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Batafsil maʼlumotlarda qoʻshimchalar bor: izohlar, takrorlash, yangilash muddati, kimniki, qayerda saqlanadi, qulf va rasmlar. Faqat kerak boʻlganda oching.';
+  String get tutorialAddRecordMoreDetails2 => 'Batafsil maʼlumotlarda qoʻshimchalar bor: izohlar, takrorlash, kimniki, qayerda saqlanadi, qulf va rasmlar. Faqat kerak boʻlganda oching.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Yozuvni koʻrsatishdan oldin barmoq izi yoki ekran qulfini soʻraydigan qilib qulflang. Qayerda saqlashingizni tanlang, masalan hamyon, va hujjat rasmlarini qoʻshing.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get storyRenew3Title => 'Qanday qilishni bilmaysizmi?';
 
   @override
-  String get storyRenew3Body => 'Koʻp yozuvlarda qadamlar, hujjatlar va odatiy narx bilan qoʻllanma bor.';
+  String get storyRenew3Body => 'Koʻp yozuvlarda yangilash roʻyxati bor. Vaultaradan soʻrang mamlakatingiz bosqichlarini rasmiy havolalar bilan topa oladi.';
 
   @override
   String get storyRenew4Title => 'Takrorlansin';
 
   @override
-  String get storyRenew4Body => 'Obunalar va yillik toʻlovlar uchun takrorlashni yoqing, sana oʻzi oldinga suriladi.';
+  String get storyRenew4Body => 'Obunalar va yillik toʻlovlar uchun O\'zi yangilanadi ni yoqing, sana oʻzi oldinga siljiydi.';
 
   @override
   String get storyAsk1Title => 'Oʻz soʻzlaringiz bilan soʻrang';
@@ -7905,6 +7949,12 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Suhbatlar «Suhbatlar tarixi» boʻlimida 90 kun saqlanadi, tavsiya etilgan savollar boshlashga yordam beradi.';
+
+  @override
+  String get storyAsk6Title => 'Yozuvlardan ham koʻproq';
+
+  @override
+  String get storyAsk6Body => 'U safar rejalashtirishi, odam qoʻshishi, mamlakatingiz uchun yangilash bosqichlarini topishi va yozuvlarni ulashishi ham mumkin, rasmiy sahifalarga havolalar bilan.';
 
   @override
   String get storyWallet1Title => 'Avval tayyorlaning';

@@ -1000,7 +1000,40 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Tapnite polje za opomnik, da vidite, kako delujejo opomniki.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'To je polje za opomnik, kjer vas lahko Vaultara obvesti, preden zapis poteče.';
+  String get tutorialAddRecordReminderSolo => 'Opomniki se izračunajo iz datuma poteka in Časa obnove. Tukaj jih lahko izklopite.';
+
+  @override
+  String get remindersSectionTitle => 'Opomniki';
+
+  @override
+  String get remindersOffSubtitle => 'Za ta zapis ni opomnikov';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara vas bo opomnila';
+
+  @override
+  String get remindersNoDatesLeft => 'Pred tem potekom ni več datumov opomnikov.';
+
+  @override
+  String get remindersChooseDates => 'Izberite svoje datume';
+
+  @override
+  String get remindersChooseDatesLocked => 'Izberite svoje datume s Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Uporabi samodejne datume';
+
+  @override
+  String get tutorialRemindersSection => 'Opomniki se izračunajo iz datuma poteka. Čas obnove nastavite na to, koliko traja obnova, da se začnejo dovolj zgodaj.';
+
+  @override
+  String get tutorialRemindersDates => 'To so dnevi, ko vas bo Vaultara opomnila.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'S Premium lahko izberete svoje datume opomnikov.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Tapnite Izberite svoje datume, da spremenite opomnik ali dodate novega.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Izteče se danes';
@@ -1165,6 +1198,17 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Prilagojene skupine';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Izberite svoje datume opomnikov';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Do $count fotografij pri vsakem zapisu';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Samodejni opomniki';
 
   @override
   String get planFeatureMultipleReminders => 'Več opomnikov za en sam zapis';
@@ -7929,7 +7973,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get whatsNewDismiss => 'Razumem';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Več podrobnosti vsebuje dodatke: opombe, ponavljanje, čas podaljšanja, čigav je zapis, kje ga hranite, zaklep in fotografije. Odprite le, ko je treba.';
+  String get tutorialAddRecordMoreDetails2 => 'Več podrobnosti vsebuje dodatke: opombe, ponavljanje, čigav je zapis, kje ga hranite, zaklep in fotografije. Odprite le, ko je treba.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Zaklenite zapis, da pred prikazom zahteva prstni odtis ali zaklep zaslona. Izberite, kje ga hranite, na primer v denarnici, in dodajte fotografije dokumenta.';
@@ -8008,13 +8052,13 @@ class AppLocalizationsSl extends AppLocalizations {
   String get storyRenew3Title => 'Ne veste kako?';
 
   @override
-  String get storyRenew3Body => 'Veliko zapisov ima vodič s koraki, dokumenti in običajno ceno.';
+  String get storyRenew3Body => 'Mnogi zapisi imajo kontrolni seznam za obnovo. Vprašaj Vaultaro lahko najde korake za vašo državo, z uradnimi povezavami.';
 
   @override
   String get storyRenew4Title => 'Naj se ponavlja';
 
   @override
-  String get storyRenew4Body => 'Pri naročninah in letnih plačilih vklopite ponavljanje in datum se premakne sam.';
+  String get storyRenew4Body => 'Za naročnine in letna plačila vklopite Se podaljša samo in datum se bo sam premaknil naprej.';
 
   @override
   String get storyAsk1Title => 'Vprašajte s svojimi besedami';
@@ -8045,6 +8089,12 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Klepeti se hranijo 90 dni v »Zgodovina klepetov«, predlagana vprašanja pa vam pomagajo začeti.';
+
+  @override
+  String get storyAsk6Title => 'Več kot zapisi';
+
+  @override
+  String get storyAsk6Body => 'Lahko tudi načrtuje potovanja, dodaja osebe, najde korake obnove za vašo državo in deli zapise, s povezavami na uradne strani.';
 
   @override
   String get storyWallet1Title => 'Najprej se pripravite';

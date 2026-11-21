@@ -996,7 +996,40 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Эскертүүлөр кантип иштээрин көрүү үчүн эскертүү талаасын басыңыз.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Бул эскертүү талаасы, мында Vaultara жазуунун мөөнөтү бүтө электе кабарлай алат.';
+  String get tutorialAddRecordReminderSolo => 'Эскертүүлөр бүтүү күнүнөн жана Жаңылоо убактысынан эсептелет. Аларды бул жерден өчүрө аласыз.';
+
+  @override
+  String get remindersSectionTitle => 'Эскертүүлөр';
+
+  @override
+  String get remindersOffSubtitle => 'Бул жазуу үчүн эскертүү жок';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara сизге бул күндөрү эскертет';
+
+  @override
+  String get remindersNoDatesLeft => 'Бул мөөнөт бүтө электе эскертүү күнү калган жок.';
+
+  @override
+  String get remindersChooseDates => 'Өз күндөрүңүздү тандаңыз';
+
+  @override
+  String get remindersChooseDatesLocked => 'Premium менен өз күндөрүңүздү тандаңыз';
+
+  @override
+  String get remindersUseAutomatic => 'Автоматтык күндөрдү колдонуу';
+
+  @override
+  String get tutorialRemindersSection => 'Эскертүүлөр мөөнөттүн бүтүү күнүнөн эсептелет. Жаңылоо убактысын жаңылоо канча убакыт аларына жараша коюңуз, ошондо алар өз убагында башталат.';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara сизге ушул күндөрү эскертет.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premium менен эскертүү күндөрүн өзүңүз тандай аласыз.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Эскертүүнү өзгөртүү же кошуу үчүн Өз күндөрүңүздү тандаңыз баскычын басыңыз.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Бүгүн мөөнөтү бүтөт';
@@ -1163,6 +1196,17 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Ыңгайлаштырылган топтор';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Эскертүү күндөрүн өзүңүз тандаңыз';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Ар бир жазууга $count сүрөткө чейин';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Автоматтык эскертүүлөр';
 
   @override
   String get planFeatureMultipleReminders => 'Бир жазууга бир нече эскертүү коюу';
@@ -7789,7 +7833,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get whatsNewDismiss => 'Түшүнүктүү';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Кошумча маалыматтарда кошумчалар бар: эскертүүлөр, кайталоо, жаңыртуу убактысы, кимдики, кайда сакталат, кулпу жана сүрөттөр. Керек болгондо гана ачыңыз.';
+  String get tutorialAddRecordMoreDetails2 => 'Кошумча маалыматтарда кошумчалар бар: эскертүүлөр, кайталоо, кимдики, кайда сакталат, кулпу жана сүрөттөр. Керек болгондо гана ачыңыз.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Жазууну көрсөтүүдөн мурун манжа изин же экран кулпусун сурагыдай кылып кулпулаңыз. Кайда сактаарыңызды тандаңыз, мисалы капчык, жана документтин сүрөттөрүн кошуңуз.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsKy extends AppLocalizations {
   String get storyRenew3Title => 'Кантип экенин билбейсизби?';
 
   @override
-  String get storyRenew3Body => 'Көп жазууларда кадамдар, документтер жана кадимки баасы бар колдонмо бар.';
+  String get storyRenew3Body => 'Көп жазууларда жаңылоо тизмеси бар. Vaultara\'дан сураңыз өлкөңүздүн кадамдарын расмий шилтемелер менен таба алат.';
 
   @override
   String get storyRenew4Title => 'Кайталансын';
 
   @override
-  String get storyRenew4Body => 'Жазылуулар жана жылдык төлөмдөр үчүн кайталоону күйгүзүңүз, күн өзү алдыга жылат.';
+  String get storyRenew4Body => 'Жазылуулар жана жылдык төлөмдөр үчүн Өзү жаңыланат параметрин күйгүзүңүз, ошондо күн өзү алдыга жылат.';
 
   @override
   String get storyAsk1Title => 'Өз сөзүңүз менен сураңыз';
@@ -7905,6 +7949,12 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Маектер «Чат тарыхы» бөлүмүндө 90 күн сакталат, сунушталган суроолор баштоого жардам берет.';
+
+  @override
+  String get storyAsk6Title => 'Жазуулардан да көп';
+
+  @override
+  String get storyAsk6Body => 'Ал ошондой эле сапар пландай алат, адам кошо алат, өлкөңүздүн жаңылоо кадамдарын таба алат жана жазууларды бөлүшө алат, расмий барактарга шилтемелер менен.';
 
   @override
   String get storyWallet1Title => 'Адегенде даярданыңыз';

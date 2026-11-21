@@ -996,7 +996,40 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'አስታዋሾች እንዴት እንደሚሰሩ ለማየት የአስታዋሽ መስኩን መታ ያድርጉ.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'ይህ የአስታዋሽ መስክ ነው፣ በዚህም Vaultara መዝገቡ ጊዜው ከማብቃቱ በፊት ሊያሳውቅዎት ይችላል.';
+  String get tutorialAddRecordReminderSolo => 'አስታዋሾች ከማብቂያ ቀኑ እና ከእድሳት ጊዜ ይሰላሉ። እዚህ ማጥፋት ይችላሉ።';
+
+  @override
+  String get remindersSectionTitle => 'አስታዋሾች';
+
+  @override
+  String get remindersOffSubtitle => 'ለዚህ መዝገብ አስታዋሾች የሉም';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara የሚያስታውስዎት በ';
+
+  @override
+  String get remindersNoDatesLeft => 'ከዚህ የማብቂያ ቀን በፊት የቀሩ የአስታዋሽ ቀኖች የሉም።';
+
+  @override
+  String get remindersChooseDates => 'የራስዎን ቀኖች ይምረጡ';
+
+  @override
+  String get remindersChooseDatesLocked => 'በPremium የራስዎን ቀኖች ይምረጡ';
+
+  @override
+  String get remindersUseAutomatic => 'ራስ-ሰር ቀኖችን ይጠቀሙ';
+
+  @override
+  String get tutorialRemindersSection => 'አስታዋሾች ከማብቂያ ቀኑ ይሰላሉ። በጊዜ እንዲጀምሩ የእድሳት ጊዜን እድሳቱ የሚወስደው ጊዜ ላይ ያዘጋጁ።';
+
+  @override
+  String get tutorialRemindersDates => 'Vaultara የሚያስታውስዎት ቀኖች እነዚህ ናቸው።';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'በPremium የራስዎን የአስታዋሽ ቀኖች መምረጥ ይችላሉ።';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'አስታዋሽ ለመቀየር ወይም ለመጨመር የራስዎን ቀኖች ይምረጡ የሚለውን ይንኩ።';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ዛሬ ያበቃል';
@@ -1163,6 +1196,17 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'ብጁ ቡድኖች';
+
+  @override
+  String get planFeatureOwnReminderDates => 'የራስዎን የአስታዋሽ ቀኖች ይምረጡ';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'በእያንዳንዱ መዝገብ እስከ $count ፎቶዎች';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'ራስ-ሰር አስታዋሾች';
 
   @override
   String get planFeatureMultipleReminders => 'በአንድ መዝገብ ላይ በርካታ አስታዋሾች';
@@ -7789,7 +7833,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get whatsNewDismiss => 'ገባኝ';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'ተጨማሪ ዝርዝሮች ተጨማሪዎቹን ይይዛል፦ ማስታወሻዎች፣ መደጋገም፣ የእድሳት ጊዜ፣ የማን እንደሆነ፣ የት እንደሚያስቀምጡት፣ መቆለፊያ እና ፎቶዎች። ሲያስፈልግ ብቻ ይክፈቱት።';
+  String get tutorialAddRecordMoreDetails2 => 'ተጨማሪ ዝርዝሮች ተጨማሪዎቹን ይይዛል፦ ማስታወሻዎች፣ መደጋገም፣ የማን እንደሆነ፣ የት እንደሚያስቀምጡት፣ መቆለፊያ እና ፎቶዎች። ሲያስፈልግ ብቻ ይክፈቱት።';
 
   @override
   String get tutorialAddRecordProtect2 => 'መዝገብን ከመታየቱ በፊት የጣት አሻራ ወይም የማያ ቆልፍ እንዲጠይቅ ይቆልፉት። የት እንደሚያስቀምጡት ይምረጡ፣ ለምሳሌ ቦርሳዎ፣ እና የሰነዱን ፎቶዎች ያክሉ።';
@@ -7868,13 +7912,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get storyRenew3Title => 'እንዴት እንደሆነ እርግጠኛ አይደሉም?';
 
   @override
-  String get storyRenew3Body => 'ብዙ መዝገቦች ደረጃዎቹን፣ ሰነዶቹን እና የተለመደውን ወጪ የያዘ መመሪያ አላቸው።';
+  String get storyRenew3Body => 'ብዙ መዝገቦች የእድሳት ማረጋገጫ ዝርዝር አላቸው። Vaultaraን ይጠይቁ ለአገርዎ ደረጃዎቹን ከይፋዊ አገናኞች ጋር ማግኘት ይችላል።';
 
   @override
   String get storyRenew4Title => 'ይደጋገም';
 
   @override
-  String get storyRenew4Body => 'ለደንበኝነት ምዝገባዎች እና ዓመታዊ ክፍያዎች መደጋገምን ያብሩ፣ ቀኑም በራሱ ወደፊት ይሄዳል።';
+  String get storyRenew4Body => 'ለደንበኝነት ምዝገባዎች እና ዓመታዊ ክፍያዎች በራሱ ይታደሳል የሚለውን ያብሩ፣ ቀኑም በራሱ ወደፊት ይሄዳል።';
 
   @override
   String get storyAsk1Title => 'በራስዎ ቃላት ይጠይቁ';
@@ -7905,6 +7949,12 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'ውይይቶች በ«የውይይት ታሪክ» ውስጥ ለ90 ቀናት ይቀመጣሉ፣ የተጠቆሙ ጥያቄዎችም ለመጀመር ይረዱዎታል።';
+
+  @override
+  String get storyAsk6Title => 'ከመዝገቦች በላይ';
+
+  @override
+  String get storyAsk6Body => 'ጉዞዎችን ማቀድ፣ ሰዎችን መጨመር፣ ለአገርዎ የእድሳት ደረጃዎችን ማግኘት እና መዝገቦችን ማጋራትም ይችላል፣ ከይፋዊ ገጾች አገናኞች ጋር።';
 
   @override
   String get storyWallet1Title => 'መጀመሪያ ይዘጋጁ';

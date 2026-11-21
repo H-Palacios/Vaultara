@@ -1000,7 +1000,40 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Bakstelėkite priminimo lauką, kad pamatytumėte, kaip veikia priminimai.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Tai priminimo laukas, kuriame Vaultara gali pranešti jums prieš baigiantis įrašo galiojimui.';
+  String get tutorialAddRecordReminderSolo => 'Priminimai skaičiuojami nuo galiojimo pabaigos datos ir Atnaujinimo laiko. Čia galite juos išjungti.';
+
+  @override
+  String get remindersSectionTitle => 'Priminimai';
+
+  @override
+  String get remindersOffSubtitle => 'Šiam įrašui priminimų nėra';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara jums primins';
+
+  @override
+  String get remindersNoDatesLeft => 'Iki šio galiojimo pabaigos priminimo datų neliko.';
+
+  @override
+  String get remindersChooseDates => 'Pasirinkite savo datas';
+
+  @override
+  String get remindersChooseDatesLocked => 'Pasirinkite savo datas su Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Naudoti automatines datas';
+
+  @override
+  String get tutorialRemindersSection => 'Priminimai skaičiuojami nuo galiojimo pabaigos datos. Nustatykite Atnaujinimo laiką pagal tai, kiek trunka atnaujinimas, kad jie prasidėtų pakankamai anksti.';
+
+  @override
+  String get tutorialRemindersDates => 'Tai dienos, kai Vaultara jums primins.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Su Premium galite patys pasirinkti priminimų datas.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Bakstelėkite Pasirinkite savo datas, kad pakeistumėte priminimą arba pridėtumėte naują.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Baigiasi Šiandien';
@@ -1167,6 +1200,17 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Pasirinktinės grupės';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Pasirinkite savo priminimų datas';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Iki $count nuotraukų kiekviename įraše';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automatiniai priminimai';
 
   @override
   String get planFeatureMultipleReminders => 'Keli priminimai vienam įrašui';
@@ -7930,7 +7974,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get whatsNewDismiss => 'Supratau';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Daugiau informacijos apima papildomus dalykus: pastabas, kartojimą, atnaujinimo laiką, kieno įrašas, kur jį laikote, užraktą ir nuotraukas. Atidarykite tik kai reikia.';
+  String get tutorialAddRecordMoreDetails2 => 'Daugiau informacijos apima papildomus dalykus: pastabas, kartojimą, kieno įrašas, kur jį laikote, užraktą ir nuotraukas. Atidarykite tik kai reikia.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Užrakinkite įrašą, kad prieš rodant būtų prašoma piršto atspaudo ar ekrano užrakto. Pasirinkite, kur jį laikote, pvz., piniginėje, ir pridėkite dokumento nuotraukų.';
@@ -8009,13 +8053,13 @@ class AppLocalizationsLt extends AppLocalizations {
   String get storyRenew3Title => 'Nežinote, kaip?';
 
   @override
-  String get storyRenew3Body => 'Daugelis įrašų turi vadovą su žingsniais, dokumentais ir įprasta kaina.';
+  String get storyRenew3Body => 'Daug įrašų turi atnaujinimo kontrolinį sąrašą. Klauskite Vaultara gali rasti jūsų šalies žingsnius su oficialiomis nuorodomis.';
 
   @override
   String get storyRenew4Title => 'Tegul kartojasi';
 
   @override
-  String get storyRenew4Body => 'Prenumeratoms ir metiniams mokėjimams įjunkite kartojimą, ir data pasislinks pati.';
+  String get storyRenew4Body => 'Prenumeratoms ir metiniams mokėjimams įjunkite Atsinaujina pats ir data pati pasislinks į priekį.';
 
   @override
   String get storyAsk1Title => 'Klauskite savais žodžiais';
@@ -8046,6 +8090,12 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Pokalbiai saugomi 90 dienų skiltyje „Pokalbių istorija“, o siūlomi klausimai padeda pradėti.';
+
+  @override
+  String get storyAsk6Title => 'Daugiau nei įrašai';
+
+  @override
+  String get storyAsk6Body => 'Jis taip pat gali planuoti keliones, pridėti žmonių, rasti jūsų šalies atnaujinimo žingsnius ir bendrinti įrašus, su nuorodomis į oficialius puslapius.';
 
   @override
   String get storyWallet1Title => 'Pirmiausia pasiruoškite';

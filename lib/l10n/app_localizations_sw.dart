@@ -996,7 +996,40 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Gusa sehemu ya ukumbusho ili kuona jinsi vikumbusho vinavyofanya kazi.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Hii ni sehemu ya ukumbusho, ambapo Vaultara inaweza kukuarifu kabla rekodi haijaisha.';
+  String get tutorialAddRecordReminderSolo => 'Vikumbusho huhesabiwa kutoka tarehe ya kuisha na Muda wa kuhuisha. Unaweza kuvizima hapa.';
+
+  @override
+  String get remindersSectionTitle => 'Vikumbusho';
+
+  @override
+  String get remindersOffSubtitle => 'Hakuna vikumbusho kwa rekodi hii';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara itakukumbusha tarehe';
+
+  @override
+  String get remindersNoDatesLeft => 'Hakuna tarehe za kukumbusha zilizobaki kabla ya muda huu kuisha.';
+
+  @override
+  String get remindersChooseDates => 'Chagua tarehe zako';
+
+  @override
+  String get remindersChooseDatesLocked => 'Chagua tarehe zako ukiwa na Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Tumia tarehe za kiotomatiki';
+
+  @override
+  String get tutorialRemindersSection => 'Vikumbusho huhesabiwa kutoka tarehe ya kuisha. Weka Muda wa kuhuisha kulingana na muda ambao kuhuisha huchukua, ili vianze mapema vya kutosha.';
+
+  @override
+  String get tutorialRemindersDates => 'Hizi ndizo siku Vaultara itakazokukumbusha.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Ukiwa na Premium, unaweza kuchagua tarehe zako za kukumbusha.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Gusa Chagua tarehe zako ili kubadilisha kikumbusho au kuongeza kimoja.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Inamalizika Leo';
@@ -1163,6 +1196,17 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Vikundi maalum';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Chagua tarehe zako za kukumbusha';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Hadi picha $count kwenye kila rekodi';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Vikumbusho vya kiotomatiki';
 
   @override
   String get planFeatureMultipleReminders => 'Vikumbusho vingi kwenye rekodi moja';
@@ -7789,7 +7833,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get whatsNewDismiss => 'Nimeelewa';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Maelezo zaidi yanabeba ziada: madokezo, kurudia, muda wa kuhuisha, ni ya nani, unaiweka wapi, kufuli na picha. Ifungue tu unapohitaji.';
+  String get tutorialAddRecordMoreDetails2 => 'Maelezo zaidi yanabeba ziada: madokezo, kurudia, ni ya nani, unaiweka wapi, kufuli na picha. Ifungue tu unapohitaji.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Funga rekodi ili iombe alama ya kidole au kufuli ya skrini kabla ya kuonyesha. Chagua unapoiweka, kama pochi yako, na uongeze picha za hati.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get storyRenew3Title => 'Huna uhakika vipi?';
 
   @override
-  String get storyRenew3Body => 'Rekodi nyingi zina mwongozo wenye hatua, hati na gharama ya kawaida.';
+  String get storyRenew3Body => 'Rekodi nyingi zina orodha ya kuhuisha. Uliza Vaultara inaweza kupata hatua za nchi yako, pamoja na viungo rasmi.';
 
   @override
   String get storyRenew4Title => 'Iache ijirudie';
 
   @override
-  String get storyRenew4Body => 'Kwa usajili na malipo ya kila mwaka, washa kurudia na tarehe itasonga yenyewe.';
+  String get storyRenew4Body => 'Kwa usajili na malipo ya kila mwaka, washa Hujihuisha yenyewe na tarehe itasogea mbele yenyewe.';
 
   @override
   String get storyAsk1Title => 'Uliza kwa maneno yako';
@@ -7905,6 +7949,12 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Gumzo huhifadhiwa siku 90 kwenye «Historia ya mazungumzo», na maswali yaliyopendekezwa hukusaidia kuanza.';
+
+  @override
+  String get storyAsk6Title => 'Zaidi ya rekodi';
+
+  @override
+  String get storyAsk6Body => 'Inaweza pia kupanga safari, kuongeza watu, kupata hatua za kuhuisha za nchi yako na kushiriki rekodi, pamoja na viungo vya kurasa rasmi.';
 
   @override
   String get storyWallet1Title => 'Jiandae kwanza';

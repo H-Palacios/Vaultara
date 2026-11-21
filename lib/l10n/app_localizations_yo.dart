@@ -996,7 +996,40 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Tẹ àyè ìránnilétí láti rí bí àwọn ìránnilétí ṣe ń ṣiṣẹ́.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Èyí ni àyè ìránnilétí, níbi tí Vaultara ti lè sọ fún ọ kí igbasilẹ tó parí.';
+  String get tutorialAddRecordReminderSolo => 'A ń ṣírò àwọn iranti láti ọjọ́ ìparí àti Àkókò isọdọtun. O lè pa wọ́n níbí.';
+
+  @override
+  String get remindersSectionTitle => 'Àwọn iranti';
+
+  @override
+  String get remindersOffSubtitle => 'Kò sí àwọn iranti fún àkọsílẹ̀ yìí';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara yóò rán ọ létí ní';
+
+  @override
+  String get remindersNoDatesLeft => 'Kò sí ọjọ́ iranti tó kù ṣáájú ìparí yìí.';
+
+  @override
+  String get remindersChooseDates => 'Yan àwọn ọjọ́ tìrẹ';
+
+  @override
+  String get remindersChooseDatesLocked => 'Yan àwọn ọjọ́ tìrẹ pẹ̀lú Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Lo àwọn ọjọ́ aládàáṣe';
+
+  @override
+  String get tutorialRemindersSection => 'A ń ṣírò àwọn iranti láti ọjọ́ ìparí. Ṣètò Àkókò isọdọtun sí bí isọdọtun ṣe ń pẹ́ tó, kí wọ́n lè bẹ̀rẹ̀ ní àkókò.';
+
+  @override
+  String get tutorialRemindersDates => 'Ìwọ̀nyí ni àwọn ọjọ́ tí Vaultara yóò rán ọ létí.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Pẹ̀lú Premium, o lè yan àwọn ọjọ́ iranti tìrẹ.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Tẹ Yan àwọn ọjọ́ tìrẹ láti yí iranti padà tàbí láti fi ọ̀kan kún un.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Yóò Parí Lónìí';
@@ -1163,6 +1196,17 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Àwọn ẹgbẹ́ àṣàyàn';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Yan àwọn ọjọ́ iranti tìrẹ';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Tó àwọn fọ́tò $count lórí àkọsílẹ̀ kọ̀ọ̀kan';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Àwọn iranti aládàáṣe';
 
   @override
   String get planFeatureMultipleReminders => 'Àwọn olùránnilétí púpọ̀ lórí igbasilẹ kan ṣoṣo';
@@ -7738,7 +7782,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get whatsNewDismiss => 'O ye mi';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Awọn alaye diẹ sii ni awọn afikun: awọn akọsilẹ, atunṣe, akoko isọdọtun, ti tani o jẹ, ibi ti o tọju rẹ, titiipa ati awọn fọto. Ṣi i nikan nigbati o ba nilo rẹ.';
+  String get tutorialAddRecordMoreDetails2 => 'Awọn alaye diẹ sii ni awọn afikun: awọn akọsilẹ, atunṣe, ti tani o jẹ, ibi ti o tọju rẹ, titiipa ati awọn fọto. Ṣi i nikan nigbati o ba nilo rẹ.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Tii igbasilẹ kan ki o beere fun itẹka tabi titiipa iboju ṣaaju ki o to han. Yan ibi ti o tọju rẹ, bii apamọwọ rẹ, ki o ṣafikun awọn fọto iwe naa.';
@@ -7817,13 +7861,13 @@ class AppLocalizationsYo extends AppLocalizations {
   String get storyRenew3Title => 'Ko daju bawo?';
 
   @override
-  String get storyRenew3Body => 'Ọpọlọpọ igbasilẹ ni itọsọna pẹlu awọn igbesẹ, awọn iwe ati iye owo ti o wọpọ.';
+  String get storyRenew3Body => 'Ọ̀pọ̀ àkọsílẹ̀ ní àtòjọ isọdọtun. Béèrè Vaultara lè wá àwọn ìgbésẹ̀ fún orílẹ̀-èdè rẹ, pẹ̀lú àwọn ìjápọ̀ ìjọba.';
 
   @override
   String get storyRenew4Title => 'Jẹ ki o tun ṣe';
 
   @override
-  String get storyRenew4Body => 'Fun awọn ṣiṣe alabapin ati awọn sisanwo ọdọọdun, tan atunṣe ati pe ọjọ yoo gbe siwaju funrararẹ.';
+  String get storyRenew4Body => 'Fún àwọn ìforúkọsílẹ̀ àti ìsanwó ọdọọdún, tan Ó ń sọ ara rẹ̀ di tuntun, ọjọ́ náà yóò sì lọ síwájú fúnra rẹ̀.';
 
   @override
   String get storyAsk1Title => 'Beere ni awọn ọrọ tirẹ';
@@ -7854,6 +7898,12 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'A tọju awọn iwiregbe fun ọjọ 90 ninu «Ìtàn ìbánisọ̀rọ̀», ati pe awọn ibeere ti a daba ṣe iranlọwọ fun ọ lati bẹrẹ.';
+
+  @override
+  String get storyAsk6Title => 'Ju àwọn àkọsílẹ̀ lọ';
+
+  @override
+  String get storyAsk6Body => 'Ó tún lè ṣètò ìrìn àjò, fi àwọn ènìyàn kún un, wá àwọn ìgbésẹ̀ isọdọtun fún orílẹ̀-èdè rẹ, kí ó sì pín àwọn àkọsílẹ̀, pẹ̀lú àwọn ìjápọ̀ sí àwọn ojú-ìwé ìjọba.';
 
   @override
   String get storyWallet1Title => 'Mura silẹ ni akọkọ';

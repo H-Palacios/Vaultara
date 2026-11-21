@@ -995,7 +995,40 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialAddRecordReminderTour => '点击提醒字段，了解提醒的运作方式。';
 
   @override
-  String get tutorialAddRecordReminderSolo => '这是提醒字段，Vaultara 可在记录到期前通知您。';
+  String get tutorialAddRecordReminderSolo => '提醒根据到期日和续期所需时间计算。你可以在这里关闭提醒。';
+
+  @override
+  String get remindersSectionTitle => '提醒';
+
+  @override
+  String get remindersOffSubtitle => '此记录没有提醒';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara 将在以下日期提醒你';
+
+  @override
+  String get remindersNoDatesLeft => '在此到期日之前已没有剩余的提醒日期。';
+
+  @override
+  String get remindersChooseDates => '自己选择日期';
+
+  @override
+  String get remindersChooseDatesLocked => '使用 Premium 自己选择日期';
+
+  @override
+  String get remindersUseAutomatic => '使用自动日期';
+
+  @override
+  String get tutorialRemindersSection => '提醒根据到期日计算。将续期所需时间设为续期实际需要的时间，提醒就会足够早开始。';
+
+  @override
+  String get tutorialRemindersDates => '这些是 Vaultara 提醒你的日子。';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => '使用 Premium，你可以自己选择提醒日期。';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => '点按“自己选择日期”即可更改或添加提醒。';
 
   @override
   String get smartInsightExpiresTodayHeading => '今天到期';
@@ -1162,6 +1195,17 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => '自定义分组';
+
+  @override
+  String get planFeatureOwnReminderDates => '自己选择提醒日期';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return '每条记录最多 $count 张照片';
+  }
+
+  @override
+  String get planFeatureAutoReminders => '自动提醒';
 
   @override
   String get planFeatureMultipleReminders => '单条记录可设置多重提醒';
@@ -7732,7 +7776,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get whatsNewDismiss => '知道了';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => '更多详情包含附加信息：备注、重复、续期时长、归属人、存放位置、锁定和照片。需要时再打开。';
+  String get tutorialAddRecordMoreDetails2 => '更多详情包含附加信息：备注、重复、归属人、存放位置、锁定和照片。需要时再打开。';
 
   @override
   String get tutorialAddRecordProtect2 => '锁定记录后，显示前需要指纹或屏幕锁。选择存放位置（例如钱包）并添加证件照片。';
@@ -7811,13 +7855,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get storyRenew3Title => '不确定怎么办？';
 
   @override
-  String get storyRenew3Body => '很多记录都附有指南，包含步骤、所需材料和一般费用。';
+  String get storyRenew3Body => '许多记录都有续期清单。询问 Vaultara 可以查找你所在国家的步骤，并附上官方链接。';
 
   @override
   String get storyRenew4Title => '设为重复';
 
   @override
-  String get storyRenew4Body => '订阅和年费可开启重复，日期会自动顺延。';
+  String get storyRenew4Body => '对于订阅和年度付款，开启“自动续期”，日期就会自动向后移动。';
 
   @override
   String get storyAsk1Title => '用自己的话提问';
@@ -7848,6 +7892,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get storyAsk5Body => '聊天会在“对话记录”中保留 90 天，推荐问题帮你快速开始。';
+
+  @override
+  String get storyAsk6Title => '不止于记录';
+
+  @override
+  String get storyAsk6Body => '它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。';
 
   @override
   String get storyWallet1Title => '先做好准备';
@@ -10687,7 +10737,40 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialAddRecordReminderTour => '点击提醒字段，了解提醒的运作方式。';
 
   @override
-  String get tutorialAddRecordReminderSolo => '这是提醒字段，Vaultara 可在记录到期前通知您。';
+  String get tutorialAddRecordReminderSolo => '提醒根据到期日和续期所需时间计算。你可以在这里关闭提醒。';
+
+  @override
+  String get remindersSectionTitle => '提醒';
+
+  @override
+  String get remindersOffSubtitle => '此记录没有提醒';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara 将在以下日期提醒你';
+
+  @override
+  String get remindersNoDatesLeft => '在此到期日之前已没有剩余的提醒日期。';
+
+  @override
+  String get remindersChooseDates => '自己选择日期';
+
+  @override
+  String get remindersChooseDatesLocked => '使用 Premium 自己选择日期';
+
+  @override
+  String get remindersUseAutomatic => '使用自动日期';
+
+  @override
+  String get tutorialRemindersSection => '提醒根据到期日计算。将续期所需时间设为续期实际需要的时间，提醒就会足够早开始。';
+
+  @override
+  String get tutorialRemindersDates => '这些是 Vaultara 提醒你的日子。';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => '使用 Premium，你可以自己选择提醒日期。';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => '点按“自己选择日期”即可更改或添加提醒。';
 
   @override
   String get smartInsightExpiresTodayHeading => '今天到期';
@@ -10854,6 +10937,17 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get planFeatureCustomGroups => '自定义分组';
+
+  @override
+  String get planFeatureOwnReminderDates => '自己选择提醒日期';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return '每条记录最多 $count 张照片';
+  }
+
+  @override
+  String get planFeatureAutoReminders => '自动提醒';
 
   @override
   String get planFeatureMultipleReminders => '单条记录可设置多重提醒';
@@ -17418,7 +17512,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get whatsNewDismiss => '知道了';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => '更多详情包含附加信息：备注、重复、续期时长、归属人、存放位置、锁定和照片。需要时再打开。';
+  String get tutorialAddRecordMoreDetails2 => '更多详情包含附加信息：备注、重复、归属人、存放位置、锁定和照片。需要时再打开。';
 
   @override
   String get tutorialAddRecordProtect2 => '锁定记录后，显示前需要指纹或屏幕锁。选择存放位置（例如钱包）并添加证件照片。';
@@ -17497,13 +17591,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get storyRenew3Title => '不确定怎么办？';
 
   @override
-  String get storyRenew3Body => '很多记录都附有指南，包含步骤、所需材料和一般费用。';
+  String get storyRenew3Body => '许多记录都有续期清单。询问 Vaultara 可以查找你所在国家的步骤，并附上官方链接。';
 
   @override
   String get storyRenew4Title => '设为重复';
 
   @override
-  String get storyRenew4Body => '订阅和年费可开启重复，日期会自动顺延。';
+  String get storyRenew4Body => '对于订阅和年度付款，开启“自动续期”，日期就会自动向后移动。';
 
   @override
   String get storyAsk1Title => '用自己的话提问';
@@ -17534,6 +17628,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get storyAsk5Body => '聊天会在“对话记录”中保留 90 天，推荐问题帮你快速开始。';
+
+  @override
+  String get storyAsk6Title => '不止于记录';
+
+  @override
+  String get storyAsk6Body => '它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。';
 
   @override
   String get storyWallet1Title => '先做好准备';
@@ -20373,7 +20473,40 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialAddRecordReminderTour => '點擊提醒欄位，了解提醒的運作方式。';
 
   @override
-  String get tutorialAddRecordReminderSolo => '這是提醒欄位，Vaultara 可在記錄到期前通知您。';
+  String get tutorialAddRecordReminderSolo => '提醒會依到期日和續期所需時間計算。你可以在這裡關閉提醒。';
+
+  @override
+  String get remindersSectionTitle => '提醒';
+
+  @override
+  String get remindersOffSubtitle => '此記錄沒有提醒';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara 會在以下日期提醒你';
+
+  @override
+  String get remindersNoDatesLeft => '在此到期日之前已沒有剩餘的提醒日期。';
+
+  @override
+  String get remindersChooseDates => '自行選擇日期';
+
+  @override
+  String get remindersChooseDatesLocked => '使用 Premium 自行選擇日期';
+
+  @override
+  String get remindersUseAutomatic => '使用自動日期';
+
+  @override
+  String get tutorialRemindersSection => '提醒會依到期日計算。將續期所需時間設為續期實際需要的時間，提醒就會夠早開始。';
+
+  @override
+  String get tutorialRemindersDates => '這些是 Vaultara 提醒你的日子。';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => '使用 Premium，你可以自行選擇提醒日期。';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => '點按「自行選擇日期」即可變更或新增提醒。';
 
   @override
   String get smartInsightExpiresTodayHeading => '今天到期';
@@ -20540,6 +20673,17 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get planFeatureCustomGroups => '自訂群組';
+
+  @override
+  String get planFeatureOwnReminderDates => '自行選擇提醒日期';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return '每筆記錄最多 $count 張照片';
+  }
+
+  @override
+  String get planFeatureAutoReminders => '自動提醒';
 
   @override
   String get planFeatureMultipleReminders => '單筆記錄可設定多個提醒';
@@ -27104,7 +27248,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get whatsNewDismiss => '知道了';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => '更多詳細資料包含額外項目：備註、重複、續期期間、所屬人、存放位置、鎖定與照片。需要時再開啟。';
+  String get tutorialAddRecordMoreDetails2 => '更多詳細資料包含額外項目：備註、重複、所屬人、存放位置、鎖定與照片。需要時再開啟。';
 
   @override
   String get tutorialAddRecordProtect2 => '鎖定記錄後，顯示前需要指紋或螢幕鎖定。選擇存放位置（例如錢包）並新增證件照片。';
@@ -27183,13 +27327,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get storyRenew3Title => '不確定怎麼做？';
 
   @override
-  String get storyRenew3Body => '許多記錄都附有指南，包含步驟、所需文件與一般費用。';
+  String get storyRenew3Body => '許多記錄都有續期清單。詢問 Vaultara 可以查找你所在國家的步驟，並附上官方連結。';
 
   @override
   String get storyRenew4Title => '設為重複';
 
   @override
-  String get storyRenew4Body => '訂閱和年費可開啟重複，日期會自動順延。';
+  String get storyRenew4Body => '訂閱和年度付款請開啟「自動續期」，日期就會自動往後移。';
 
   @override
   String get storyAsk1Title => '用自己的話提問';
@@ -27220,6 +27364,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get storyAsk5Body => '對話會在「對話記錄」中保留 90 天，建議問題幫你快速開始。';
+
+  @override
+  String get storyAsk6Title => '不只是記錄';
+
+  @override
+  String get storyAsk6Body => '它還能規劃行程、新增人員、查找你所在國家的續期步驟並分享記錄，並附上官方頁面連結。';
 
   @override
   String get storyWallet1Title => '先做好準備';

@@ -996,7 +996,40 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Tap the reminder field to see how reminders work.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'This is the reminder field, where Vaultara can notify you before the record expires.';
+  String get tutorialAddRecordReminderSolo => 'Reminders are worked out from the expiry date and Renewal time. You can turn them off here.';
+
+  @override
+  String get remindersSectionTitle => 'Reminders';
+
+  @override
+  String get remindersOffSubtitle => 'No reminders for this record';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara will remind you on';
+
+  @override
+  String get remindersNoDatesLeft => 'There are no reminder dates left before this expiry.';
+
+  @override
+  String get remindersChooseDates => 'Choose your own dates';
+
+  @override
+  String get remindersChooseDatesLocked => 'Choose your own dates with Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Use automatic dates';
+
+  @override
+  String get tutorialRemindersSection => 'Reminders are worked out from the expiry date. Set Renewal time to how long renewing takes, so they start early enough.';
+
+  @override
+  String get tutorialRemindersDates => 'These are the days Vaultara will remind you.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'With Premium, you can choose your own reminder dates.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Tap Choose your own dates to change a reminder or add one.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Expires Today';
@@ -1163,6 +1196,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Custom groups';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Choose your own reminder dates';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Up to $count photos on each record';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automatic reminders';
 
   @override
   String get planFeatureMultipleReminders => 'Multiple reminders on a single record';
@@ -7814,7 +7858,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get whatsNewDismiss => 'Got it';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'More details holds the extras: notes, repeat, renewal time, whose record it is, where you keep it, lock and photos. Open it only when you need it.';
+  String get tutorialAddRecordMoreDetails2 => 'More details holds the extras: notes, repeat, whose record it is, where you keep it, lock and photos. Open it only when you need it.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Lock a record to ask for your fingerprint or screen lock before showing it. Choose where you keep it, such as your wallet, and add photos of the document.';
@@ -7893,13 +7937,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get storyRenew3Title => 'Not sure how?';
 
   @override
-  String get storyRenew3Body => 'Many records have a guide with the steps, documents and usual cost of renewing.';
+  String get storyRenew3Body => 'Many records have a renewal checklist. Ask Vaultara can find the steps for your country, with official links.';
 
   @override
   String get storyRenew4Title => 'Let it repeat';
 
   @override
-  String get storyRenew4Body => 'For subscriptions and yearly payments, turn on Repeat and the date moves forward by itself.';
+  String get storyRenew4Body => 'For subscriptions and yearly payments, turn on Renews by itself and the date moves forward on its own.';
 
   @override
   String get storyAsk1Title => 'Ask in your own words';
@@ -7930,6 +7974,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Chats are kept for 90 days in Chat history, and suggested questions help you get started.';
+
+  @override
+  String get storyAsk6Title => 'More than records';
+
+  @override
+  String get storyAsk6Body => 'It can also plan trips, add people, find the renewal steps for your country and share records, with links to official pages.';
 
   @override
   String get storyWallet1Title => 'Get ready first';

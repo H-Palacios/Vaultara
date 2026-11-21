@@ -996,7 +996,40 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Допрете го полето за потсетник за да видите како функционираат потсетниците.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Ова е полето за потсетник, каде што Vaultara може да ве извести пред да истече записот.';
+  String get tutorialAddRecordReminderSolo => 'Потсетниците се пресметуваат од датумот на истекување и Времето за обновување. Тука можете да ги исклучите.';
+
+  @override
+  String get remindersSectionTitle => 'Потсетници';
+
+  @override
+  String get remindersOffSubtitle => 'Нема потсетници за овој запис';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara ќе ве потсети на';
+
+  @override
+  String get remindersNoDatesLeft => 'Не останаа датуми за потсетување пред ова истекување.';
+
+  @override
+  String get remindersChooseDates => 'Изберете свои датуми';
+
+  @override
+  String get remindersChooseDatesLocked => 'Изберете свои датуми со Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Користи автоматски датуми';
+
+  @override
+  String get tutorialRemindersSection => 'Потсетниците се пресметуваат од датумот на истекување. Поставете Време за обновување колку што трае обновувањето, за да почнат доволно рано.';
+
+  @override
+  String get tutorialRemindersDates => 'Ова се деновите кога Vaultara ќе ве потсети.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Со Premium можете сами да изберете датуми за потсетување.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Допрете Изберете свои датуми за да промените потсетник или да додадете нов.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Истекува денес';
@@ -1161,6 +1194,17 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Прилагодени групи';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Изберете свои датуми за потсетување';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'До $count фотографии на секој запис';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Автоматски потсетници';
 
   @override
   String get planFeatureMultipleReminders => 'Повеќе потсетници за еден запис';
@@ -7787,7 +7831,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get whatsNewDismiss => 'Разбрав';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Повеќе детали ги содржи дополнителните: белешки, повторување, време за обнова, чиј е записот, каде го чувате, заклучување и фотографии. Отворете само кога треба.';
+  String get tutorialAddRecordMoreDetails2 => 'Повеќе детали ги содржи дополнителните: белешки, повторување, чиј е записот, каде го чувате, заклучување и фотографии. Отворете само кога треба.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Заклучете запис за да бара отпечаток или заклучување на екранот пред да се прикаже. Изберете каде го чувате, на пр. во паричникот, и додајте фотографии од документот.';
@@ -7866,13 +7910,13 @@ class AppLocalizationsMk extends AppLocalizations {
   String get storyRenew3Title => 'Не знаете како?';
 
   @override
-  String get storyRenew3Body => 'Многу записи имаат водич со чекорите, документите и вообичаената цена.';
+  String get storyRenew3Body => 'Многу записи имаат листа за обновување. Прашајте го Vaultara може да ги најде чекорите за вашата земја, со официјални врски.';
 
   @override
   String get storyRenew4Title => 'Нека се повторува';
 
   @override
-  String get storyRenew4Body => 'За претплати и годишни плаќања вклучете повторување и датумот ќе се поместува сам.';
+  String get storyRenew4Body => 'За претплати и годишни плаќања вклучете Се обновува само и датумот сам ќе се поместува напред.';
 
   @override
   String get storyAsk1Title => 'Прашајте со свои зборови';
@@ -7903,6 +7947,12 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Разговорите се чуваат 90 дена во „Историја на разговори“, а предложените прашања ви помагаат да започнете.';
+
+  @override
+  String get storyAsk6Title => 'Повеќе од записи';
+
+  @override
+  String get storyAsk6Body => 'Може и да планира патувања, да додава луѓе, да ги најде чекорите за обновување за вашата земја и да споделува записи, со врски до официјални страници.';
 
   @override
   String get storyWallet1Title => 'Прво подгответе се';

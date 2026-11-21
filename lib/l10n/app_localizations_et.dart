@@ -996,7 +996,40 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Puuduta meeldetuletuse välja, et näha, kuidas meeldetuletused töötavad.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'See on meeldetuletuse väli, kus Vaultara saab sind teavitada, enne kui kirje aegub.';
+  String get tutorialAddRecordReminderSolo => 'Meeldetuletused arvutatakse aegumiskuupäevast ja Uuendamise ajast. Siin saad need välja lülitada.';
+
+  @override
+  String get remindersSectionTitle => 'Meeldetuletused';
+
+  @override
+  String get remindersOffSubtitle => 'Selle kirje jaoks pole meeldetuletusi';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara tuletab sulle meelde';
+
+  @override
+  String get remindersNoDatesLeft => 'Enne seda aegumist pole enam meeldetuletuse kuupäevi.';
+
+  @override
+  String get remindersChooseDates => 'Vali oma kuupäevad';
+
+  @override
+  String get remindersChooseDatesLocked => 'Vali oma kuupäevad Premiumiga';
+
+  @override
+  String get remindersUseAutomatic => 'Kasuta automaatseid kuupäevi';
+
+  @override
+  String get tutorialRemindersSection => 'Meeldetuletused arvutatakse aegumiskuupäevast. Määra Uuendamise aeg selle järgi, kui kaua uuendamine võtab, et need algaksid piisavalt vara.';
+
+  @override
+  String get tutorialRemindersDates => 'Need on päevad, mil Vaultara sulle meelde tuletab.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Premiumiga saad valida oma meeldetuletuse kuupäevad.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Puuduta Vali oma kuupäevad, et meeldetuletust muuta või uus lisada.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Aegub täna';
@@ -1163,6 +1196,17 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Kohandatud grupid';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Vali oma meeldetuletuse kuupäevad';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Kuni $count fotot iga kirje juures';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automaatsed meeldetuletused';
 
   @override
   String get planFeatureMultipleReminders => 'Mitu meeldetuletust ühel kirjel';
@@ -7793,7 +7837,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get whatsNewDismiss => 'Selge';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Rohkem üksikasju sisaldab lisasid: märkmed, kordumine, uuendusaeg, kellele kirje kuulub, kus seda hoiad, lukk ja fotod. Ava ainult vajadusel.';
+  String get tutorialAddRecordMoreDetails2 => 'Rohkem üksikasju sisaldab lisasid: märkmed, kordumine, kellele kirje kuulub, kus seda hoiad, lukk ja fotod. Ava ainult vajadusel.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Lukusta kirje, et see nõuaks enne kuvamist sõrmejälge või ekraanilukku. Vali, kus seda hoiad, näiteks rahakotis, ja lisa dokumendi fotod.';
@@ -7872,13 +7916,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get storyRenew3Title => 'Ei tea, kuidas?';
 
   @override
-  String get storyRenew3Body => 'Paljudel kirjetel on juhend sammude, dokumentide ja tavapärase hinnaga.';
+  String get storyRenew3Body => 'Paljudel kirjetel on uuendamise kontrollnimekiri. Küsi Vaultaralt oskab leida sinu riigi sammud koos ametlike linkidega.';
 
   @override
   String get storyRenew4Title => 'Las see kordub';
 
   @override
-  String get storyRenew4Body => 'Tellimuste ja aastamaksete puhul lülita kordumine sisse ja kuupäev liigub ise edasi.';
+  String get storyRenew4Body => 'Tellimuste ja aastamaksete puhul lülita sisse Uueneb ise ja kuupäev liigub ise edasi.';
 
   @override
   String get storyAsk1Title => 'Küsi oma sõnadega';
@@ -7909,6 +7953,12 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Vestlusi hoitakse 90 päeva jaotises „Vestluste ajalugu“ ja soovitatud küsimused aitavad alustada.';
+
+  @override
+  String get storyAsk6Title => 'Rohkem kui kirjed';
+
+  @override
+  String get storyAsk6Body => 'See oskab ka reise planeerida, inimesi lisada, sinu riigi uuendamise samme leida ja kirjeid jagada, koos linkidega ametlikele lehtedele.';
 
   @override
   String get storyWallet1Title => 'Valmistu esmalt';

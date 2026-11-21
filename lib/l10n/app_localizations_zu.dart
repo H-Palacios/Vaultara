@@ -996,7 +996,40 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Thepha inkambu yesikhumbuzo ukuze ubone ukuthi izikhumbuzo zisebenza kanjani.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Le yinkambu yesikhumbuzo, lapho iVaultara ingakwazisa khona ngaphambi kokuthi irekhodi liphelelwe.';
+  String get tutorialAddRecordReminderSolo => 'Izikhumbuzo zibalwa kusukela osukwini lokuphelelwa yisikhathi nakuSikhathi sokuvuselela. Ungazicisha lapha.';
+
+  @override
+  String get remindersSectionTitle => 'Izikhumbuzo';
+
+  @override
+  String get remindersOffSubtitle => 'Azikho izikhumbuzo zaleli rekhodi';
+
+  @override
+  String get remindersDatesTitle => 'I-Vaultara izokukhumbuza ngo';
+
+  @override
+  String get remindersNoDatesLeft => 'Azikho izinsuku zesikhumbuzo ezisele ngaphambi kokuphelelwa yisikhathi kwalokhu.';
+
+  @override
+  String get remindersChooseDates => 'Khetha izinsuku zakho';
+
+  @override
+  String get remindersChooseDatesLocked => 'Khetha izinsuku zakho nge-Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Sebenzisa izinsuku ezizenzakalelayo';
+
+  @override
+  String get tutorialRemindersSection => 'Izikhumbuzo zibalwa kusukela osukwini lokuphelelwa yisikhathi. Setha Isikhathi sokuvuselela esikhathini esithathwa ukuvuselela, ukuze ziqale kusenesikhathi.';
+
+  @override
+  String get tutorialRemindersDates => 'Lezi yizinsuku i-Vaultara ezokukhumbuza ngazo.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Nge-Premium, ungakhetha izinsuku zakho zezikhumbuzo.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Thepha Khetha izinsuku zakho ukuze ushintshe isikhumbuzo noma wengeze esinye.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Iphelelwa Namuhla';
@@ -1163,6 +1196,17 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Amaqembu enziwe ngezifiso';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Khetha izinsuku zakho zezikhumbuzo';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Kufika ezithombeni ezingu-$count kurekhodi ngalinye';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Izikhumbuzo ezizenzakalelayo';
 
   @override
   String get planFeatureMultipleReminders => 'Izikhumbuzo eziningi erekhodini elilodwa';
@@ -7789,7 +7833,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get whatsNewDismiss => 'Ngiyaqonda';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Imininingwane eyengeziwe iqukethe okwengeziwe: amanothi, ukuphindaphinda, isikhathi sokuvuselela, ukuthi ngeyani, lapho uyigcina khona, ukukhiya nezithombe. Yivule kuphela uma uyidinga.';
+  String get tutorialAddRecordMoreDetails2 => 'Imininingwane eyengeziwe iqukethe okwengeziwe: amanothi, ukuphindaphinda, ukuthi ngeyani, lapho uyigcina khona, ukukhiya nezithombe. Yivule kuphela uma uyidinga.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Khiya irekhodi ukuze lidinge isigxivizo somunwe noma ukukhiya isikrini ngaphambi kokuboniswa. Khetha lapho uligcina khona, njengesikhwama sakho, bese wengeza izithombe zombhalo.';
@@ -7868,13 +7912,13 @@ class AppLocalizationsZu extends AppLocalizations {
   String get storyRenew3Title => 'Awuqiniseki ukuthi kanjani?';
 
   @override
-  String get storyRenew3Body => 'Amarekhodi amaningi anomhlahlandlela onezinyathelo, imibhalo nezindleko ezijwayelekile.';
+  String get storyRenew3Body => 'Amarekhodi amaningi anohlu lokuhlola lokuvuselela. Buza i-Vaultara ingathola izinyathelo zezwe lakho, ngezixhumanisi ezisemthethweni.';
 
   @override
   String get storyRenew4Title => 'Yiyeke iziphindaphinde';
 
   @override
-  String get storyRenew4Body => 'Kokubhaliselwe nezinkokhelo zonyaka, vula ukuphindaphinda futhi usuku luzohamba ngokwalo.';
+  String get storyRenew4Body => 'Kokubhaliselwe nezinkokhelo zonyaka, vula Iyazivuselela futhi usuku luzoqhubekela phambili ngokwalo.';
 
   @override
   String get storyAsk1Title => 'Buza ngamazwi akho';
@@ -7905,6 +7949,12 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Izingxoxo zigcinwa izinsuku ezingu-90 ku-«Umlando wezingxoxo», futhi imibuzo ephakanyisiwe ikusiza ukuthi uqale.';
+
+  @override
+  String get storyAsk6Title => 'Ngaphezu kwamarekhodi';
+
+  @override
+  String get storyAsk6Body => 'Ingahlela nohambo, yengeze abantu, ithole izinyathelo zokuvuselela zezwe lakho futhi yabelane ngamarekhodi, ngezixhumanisi zamakhasi asemthethweni.';
 
   @override
   String get storyWallet1Title => 'Lungiselela kuqala';

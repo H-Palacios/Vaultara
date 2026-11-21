@@ -998,7 +998,40 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'הקש על שדה התזכורת כדי לראות איך תזכורות עובדות.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'זהו שדה התזכורת, שבו Vaultara יכולה להודיע לך לפני שתוקף הרשומה פג.';
+  String get tutorialAddRecordReminderSolo => 'התזכורות מחושבות מתאריך התפוגה ומזמן החידוש. אפשר לכבות אותן כאן.';
+
+  @override
+  String get remindersSectionTitle => 'תזכורות';
+
+  @override
+  String get remindersOffSubtitle => 'אין תזכורות לרשומה זו';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara יזכיר לך ב';
+
+  @override
+  String get remindersNoDatesLeft => 'לא נותרו תאריכי תזכורת לפני התפוגה הזו.';
+
+  @override
+  String get remindersChooseDates => 'בחירת תאריכים משלך';
+
+  @override
+  String get remindersChooseDatesLocked => 'בחירת תאריכים משלך עם Premium';
+
+  @override
+  String get remindersUseAutomatic => 'שימוש בתאריכים אוטומטיים';
+
+  @override
+  String get tutorialRemindersSection => 'התזכורות מחושבות מתאריך התפוגה. הגדירו את זמן חידוש לפי משך החידוש, כדי שיתחילו מספיק מוקדם.';
+
+  @override
+  String get tutorialRemindersDates => 'אלה הימים שבהם Vaultara יזכיר לך.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'עם Premium אפשר לבחור תאריכי תזכורת משלך.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'הקישו על בחירת תאריכים משלך כדי לשנות תזכורת או להוסיף אחת.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'פג תוקף היום';
@@ -1165,6 +1198,17 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'קבוצות מותאמות אישית';
+
+  @override
+  String get planFeatureOwnReminderDates => 'בחירת תאריכי תזכורת משלך';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'עד $count תמונות בכל רשומה';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'תזכורות אוטומטיות';
 
   @override
   String get planFeatureMultipleReminders => 'תזכורות מרובות ברשומה אחת';
@@ -7842,7 +7886,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get whatsNewDismiss => 'הבנתי';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'פרטים נוספים מכיל את התוספות: הערות, חזרה, זמן חידוש, של מי הרשומה, איפה שומרים אותה, נעילה ותמונות. פתחו רק כשצריך.';
+  String get tutorialAddRecordMoreDetails2 => 'פרטים נוספים מכיל את התוספות: הערות, חזרה, של מי הרשומה, איפה שומרים אותה, נעילה ותמונות. פתחו רק כשצריך.';
 
   @override
   String get tutorialAddRecordProtect2 => 'נעלו רשומה כך שתדרוש טביעת אצבע או נעילת מסך לפני שתוצג. בחרו איפה אתם שומרים אותה, למשל בארנק, והוסיפו תמונות של המסמך.';
@@ -7921,13 +7965,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get storyRenew3Title => 'לא בטוחים איך?';
 
   @override
-  String get storyRenew3Body => 'לרשומות רבות יש מדריך עם השלבים, המסמכים והעלות הרגילה.';
+  String get storyRenew3Body => 'לרשומות רבות יש רשימת חידוש. שאל את Vaultara יכול למצוא את השלבים במדינה שלך, עם קישורים רשמיים.';
 
   @override
   String get storyRenew4Title => 'שיחזור על עצמו';
 
   @override
-  String get storyRenew4Body => 'למינויים ותשלומים שנתיים, הפעילו חזרה והתאריך יתקדם מעצמו.';
+  String get storyRenew4Body => 'למינויים ולתשלומים שנתיים, הפעילו את מתחדש לבד והתאריך יתקדם מעצמו.';
 
   @override
   String get storyAsk1Title => 'שאלו במילים שלכם';
@@ -7958,6 +8002,12 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'שיחות נשמרות 90 יום ב„היסטוריית צ\'אטים”, ושאלות מוצעות עוזרות להתחיל.';
+
+  @override
+  String get storyAsk6Title => 'יותר מרשומות';
+
+  @override
+  String get storyAsk6Body => 'הוא יכול גם לתכנן נסיעות, להוסיף אנשים, למצוא את שלבי החידוש במדינה שלך ולשתף רשומות, עם קישורים לדפים רשמיים.';
 
   @override
   String get storyWallet1Title => 'התכוננו קודם';

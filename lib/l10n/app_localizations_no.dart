@@ -996,7 +996,40 @@ class AppLocalizationsNo extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Trykk på påminnelsesfeltet for å se hvordan påminnelser fungerer.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Dette er påminnelsesfeltet, der Vaultara kan varsle deg før oppføringen utløper.';
+  String get tutorialAddRecordReminderSolo => 'Påminnelser regnes ut fra utløpsdatoen og Fornyelsestid. Du kan slå dem av her.';
+
+  @override
+  String get remindersSectionTitle => 'Påminnelser';
+
+  @override
+  String get remindersOffSubtitle => 'Ingen påminnelser for denne oppføringen';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara minner deg på';
+
+  @override
+  String get remindersNoDatesLeft => 'Det er ingen påminnelsesdatoer igjen før denne utløpsdatoen.';
+
+  @override
+  String get remindersChooseDates => 'Velg egne datoer';
+
+  @override
+  String get remindersChooseDatesLocked => 'Velg egne datoer med Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Bruk automatiske datoer';
+
+  @override
+  String get tutorialRemindersSection => 'Påminnelser regnes ut fra utløpsdatoen. Sett Fornyelsestid til hvor lang tid fornyelsen tar, så de starter tidlig nok.';
+
+  @override
+  String get tutorialRemindersDates => 'Dette er dagene Vaultara minner deg på.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Med Premium kan du velge egne påminnelsesdatoer.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Trykk på Velg egne datoer for å endre en påminnelse eller legge til en.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Utløper i dag';
@@ -1163,6 +1196,17 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Tilpassede grupper';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Velg egne påminnelsesdatoer';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Opptil $count bilder på hver oppføring';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automatiske påminnelser';
 
   @override
   String get planFeatureMultipleReminders => 'Flere påminnelser på én enkelt oppføring';
@@ -7793,7 +7837,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get whatsNewDismiss => 'Skjønner';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Flere detaljer har det ekstra: notater, gjentakelse, fornyelsestid, hvem oppføringen tilhører, hvor du har den, lås og bilder. Åpne det bare når du trenger det.';
+  String get tutorialAddRecordMoreDetails2 => 'Flere detaljer har det ekstra: notater, gjentakelse, hvem oppføringen tilhører, hvor du har den, lås og bilder. Åpne det bare når du trenger det.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Lås en oppføring så den krever fingeravtrykk eller skjermlås før den vises. Velg hvor du har den, for eksempel lommeboken, og legg til bilder av dokumentet.';
@@ -7872,13 +7916,13 @@ class AppLocalizationsNo extends AppLocalizations {
   String get storyRenew3Title => 'Usikker på hvordan?';
 
   @override
-  String get storyRenew3Body => 'Mange oppføringer har en veiledning med trinnene, dokumentene og den vanlige kostnaden.';
+  String get storyRenew3Body => 'Mange oppføringer har en sjekkliste for fornyelse. Spør Vaultara kan finne trinnene for landet ditt, med offisielle lenker.';
 
   @override
   String get storyRenew4Title => 'La den gjentas';
 
   @override
-  String get storyRenew4Body => 'For abonnementer og årlige betalinger slår du på gjentakelse, så flyttes datoen fram av seg selv.';
+  String get storyRenew4Body => 'For abonnementer og årlige betalinger slår du på Fornyes av seg selv, så flytter datoen seg fremover av seg selv.';
 
   @override
   String get storyAsk1Title => 'Spør med egne ord';
@@ -7909,6 +7953,12 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Samtaler lagres i 90 dager i «Samtalehistorikk», og foreslåtte spørsmål hjelper deg i gang.';
+
+  @override
+  String get storyAsk6Title => 'Mer enn oppføringer';
+
+  @override
+  String get storyAsk6Body => 'Den kan også planlegge reiser, legge til personer, finne fornyelsestrinnene for landet ditt og dele oppføringer, med lenker til offisielle sider.';
 
   @override
   String get storyWallet1Title => 'Gjør deg klar først';

@@ -998,7 +998,40 @@ class AppLocalizationsHr extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'Dodirnite polje podsjetnika da vidite kako podsjetnici rade.';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'Ovo je polje podsjetnika, gdje vas Vaultara može obavijestiti prije nego što zapis istekne.';
+  String get tutorialAddRecordReminderSolo => 'Podsjetnici se izračunavaju iz datuma isteka i Vremena obnove. Ovdje ih možete isključiti.';
+
+  @override
+  String get remindersSectionTitle => 'Podsjetnici';
+
+  @override
+  String get remindersOffSubtitle => 'Nema podsjetnika za ovaj zapis';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara će vas podsjetiti';
+
+  @override
+  String get remindersNoDatesLeft => 'Prije ovog isteka nije preostao nijedan datum podsjetnika.';
+
+  @override
+  String get remindersChooseDates => 'Odaberite vlastite datume';
+
+  @override
+  String get remindersChooseDatesLocked => 'Odaberite vlastite datume uz Premium';
+
+  @override
+  String get remindersUseAutomatic => 'Koristi automatske datume';
+
+  @override
+  String get tutorialRemindersSection => 'Podsjetnici se izračunavaju iz datuma isteka. Postavite Vrijeme obnove na trajanje obnove kako bi počeli dovoljno rano.';
+
+  @override
+  String get tutorialRemindersDates => 'Ovo su dani kada će vas Vaultara podsjetiti.';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'Uz Premium možete odabrati vlastite datume podsjetnika.';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'Dodirnite Odaberite vlastite datume za promjenu podsjetnika ili dodavanje novog.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Istječe danas';
@@ -1163,6 +1196,17 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'Prilagođene grupe';
+
+  @override
+  String get planFeatureOwnReminderDates => 'Odaberite vlastite datume podsjetnika';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'Do $count fotografija uz svaki zapis';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'Automatski podsjetnici';
 
   @override
   String get planFeatureMultipleReminders => 'Više podsjetnika za jedan zapis';
@@ -7854,7 +7898,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get whatsNewDismiss => 'Razumijem';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'Više detalja sadrži dodatke: bilješke, ponavljanje, vrijeme obnove, čiji je zapis, gdje ga držite, zaključavanje i fotografije. Otvorite samo kad trebate.';
+  String get tutorialAddRecordMoreDetails2 => 'Više detalja sadrži dodatke: bilješke, ponavljanje, čiji je zapis, gdje ga držite, zaključavanje i fotografije. Otvorite samo kad trebate.';
 
   @override
   String get tutorialAddRecordProtect2 => 'Zaključajte zapis da prije prikaza traži otisak prsta ili zaključavanje zaslona. Odaberite gdje ga držite, npr. u novčaniku, i dodajte fotografije dokumenta.';
@@ -7933,13 +7977,13 @@ class AppLocalizationsHr extends AppLocalizations {
   String get storyRenew3Title => 'Ne znate kako?';
 
   @override
-  String get storyRenew3Body => 'Mnogi zapisi imaju vodič s koracima, dokumentima i uobičajenom cijenom.';
+  String get storyRenew3Body => 'Mnogi zapisi imaju popis za obnovu. Pitajte Vaultara može pronaći korake za vašu zemlju, uz službene poveznice.';
 
   @override
   String get storyRenew4Title => 'Neka se ponavlja';
 
   @override
-  String get storyRenew4Body => 'Za pretplate i godišnja plaćanja uključite ponavljanje i datum će se sam pomicati.';
+  String get storyRenew4Body => 'Za pretplate i godišnja plaćanja uključite Obnavlja se samo i datum će se sam pomicati naprijed.';
 
   @override
   String get storyAsk1Title => 'Pitajte svojim riječima';
@@ -7970,6 +8014,12 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'Razgovori se čuvaju 90 dana u „Povijest razgovora”, a predložena pitanja pomažu vam da počnete.';
+
+  @override
+  String get storyAsk6Title => 'Više od zapisa';
+
+  @override
+  String get storyAsk6Body => 'Može i planirati putovanja, dodavati osobe, pronaći korake obnove za vašu zemlju i dijeliti zapise, uz poveznice na službene stranice.';
 
   @override
   String get storyWallet1Title => 'Prvo se pripremite';

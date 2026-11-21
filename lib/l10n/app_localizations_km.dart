@@ -993,7 +993,40 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialAddRecordReminderTour => 'ចុចលើវាលការរំលឹក ដើម្បីមើលពីរបៀបដែលការរំលឹកដំណើរការ។';
 
   @override
-  String get tutorialAddRecordReminderSolo => 'នេះជាវាលការរំលឹក ដែល Vaultara អាចជូនដំណឹងអ្នកមុនពេលកំណត់ត្រាផុតកំណត់។';
+  String get tutorialAddRecordReminderSolo => 'ការរំលឹកត្រូវបានគណនាពីកាលបរិច្ឆេទផុតកំណត់ និងរយៈពេលបន្តសុពលភាព។ អ្នកអាចបិទវានៅទីនេះ។';
+
+  @override
+  String get remindersSectionTitle => 'ការរំលឹក';
+
+  @override
+  String get remindersOffSubtitle => 'មិនមានការរំលឹកសម្រាប់កំណត់ត្រានេះទេ';
+
+  @override
+  String get remindersDatesTitle => 'Vaultara នឹងរំលឹកអ្នកនៅ';
+
+  @override
+  String get remindersNoDatesLeft => 'មិនមានកាលបរិច្ឆេទរំលឹកនៅសល់មុនការផុតកំណត់នេះទេ។';
+
+  @override
+  String get remindersChooseDates => 'ជ្រើសកាលបរិច្ឆេទផ្ទាល់ខ្លួន';
+
+  @override
+  String get remindersChooseDatesLocked => 'ជ្រើសកាលបរិច្ឆេទផ្ទាល់ខ្លួនជាមួយ Premium';
+
+  @override
+  String get remindersUseAutomatic => 'ប្រើកាលបរិច្ឆេទស្វ័យប្រវត្តិ';
+
+  @override
+  String get tutorialRemindersSection => 'ការរំលឹកត្រូវបានគណនាពីកាលបរិច្ឆេទផុតកំណត់។ កំណត់រយៈពេលបន្តសុពលភាពតាមរយៈពេលដែលការបន្តត្រូវការ ដើម្បីឱ្យវាចាប់ផ្តើមទាន់ពេល។';
+
+  @override
+  String get tutorialRemindersDates => 'នេះជាថ្ងៃដែល Vaultara នឹងរំលឹកអ្នក។';
+
+  @override
+  String get tutorialRemindersOwnDatesFree => 'ជាមួយ Premium អ្នកអាចជ្រើសកាលបរិច្ឆេទរំលឹកផ្ទាល់ខ្លួន។';
+
+  @override
+  String get tutorialRemindersOwnDatesPremium => 'ចុច ជ្រើសកាលបរិច្ឆេទផ្ទាល់ខ្លួន ដើម្បីប្តូរការរំលឹក ឬបន្ថែមមួយទៀត។';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ផុតកំណត់ថ្ងៃនេះ';
@@ -1160,6 +1193,17 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get planFeatureCustomGroups => 'ក្រុមផ្ទាល់ខ្លួន';
+
+  @override
+  String get planFeatureOwnReminderDates => 'ជ្រើសកាលបរិច្ឆេទរំលឹកផ្ទាល់ខ្លួន';
+
+  @override
+  String planFeaturePhotos(int count) {
+    return 'រហូតដល់ $count រូបថតក្នុងកំណត់ត្រានីមួយៗ';
+  }
+
+  @override
+  String get planFeatureAutoReminders => 'ការរំលឹកស្វ័យប្រវត្តិ';
 
   @override
   String get planFeatureMultipleReminders => 'ការរំលឹកច្រើនលើកំណត់ត្រាតែមួយ';
@@ -7730,7 +7774,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get whatsNewDismiss => 'យល់ហើយ';
 
   @override
-  String get tutorialAddRecordMoreDetails2 => 'ព័ត៌មានលម្អិតបន្ថែមមានផ្នែកបន្ថែម៖ កំណត់ចំណាំ ការធ្វើឡើងវិញ ពេលបន្ត ជារបស់អ្នកណា ទុកនៅឯណា សោ និងរូបថត។ បើកតែពេលត្រូវការ។';
+  String get tutorialAddRecordMoreDetails2 => 'ព័ត៌មានលម្អិតបន្ថែមមានផ្នែកបន្ថែម៖ កំណត់ចំណាំ ការធ្វើឡើងវិញ ជារបស់អ្នកណា ទុកនៅឯណា សោ និងរូបថត។ បើកតែពេលត្រូវការ។';
 
   @override
   String get tutorialAddRecordProtect2 => 'ចាក់សោកំណត់ត្រាដើម្បីឱ្យវាសុំស្នាមម្រាមដៃ ឬសោអេក្រង់មុនបង្ហាញ។ ជ្រើសរើសកន្លែងទុក ដូចជាកាបូប ហើយបន្ថែមរូបថតឯកសារ។';
@@ -7809,13 +7853,13 @@ class AppLocalizationsKm extends AppLocalizations {
   String get storyRenew3Title => 'មិនប្រាកដថាធ្វើយ៉ាងម៉េច?';
 
   @override
-  String get storyRenew3Body => 'កំណត់ត្រាជាច្រើនមានមគ្គុទ្ទេសក៍ជាមួយជំហាន ឯកសារ និងថ្លៃធម្មតា។';
+  String get storyRenew3Body => 'កំណត់ត្រាជាច្រើនមានបញ្ជីត្រួតពិនិត្យការបន្ត។ សួរ Vaultara អាចស្វែងរកជំហានសម្រាប់ប្រទេសរបស់អ្នក ជាមួយតំណផ្លូវការ។';
 
   @override
   String get storyRenew4Title => 'ឱ្យវាធ្វើឡើងវិញ';
 
   @override
-  String get storyRenew4Body => 'សម្រាប់ការជាវ និងការបង់ប្រចាំឆ្នាំ បើកការធ្វើឡើងវិញ ហើយកាលបរិច្ឆេទនឹងរំកិលទៅមុខដោយខ្លួនឯង។';
+  String get storyRenew4Body => 'សម្រាប់ការជាវ និងការបង់ប្រាក់ប្រចាំឆ្នាំ បើក បន្តដោយខ្លួនឯង ហើយកាលបរិច្ឆេទនឹងរំកិលទៅមុខដោយខ្លួនឯង។';
 
   @override
   String get storyAsk1Title => 'សួរជាពាក្យរបស់អ្នក';
@@ -7846,6 +7890,12 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get storyAsk5Body => 'ការជជែកត្រូវបានរក្សាទុក 90 ថ្ងៃក្នុង «ប្រវត្តិជជែក» ហើយសំណួរដែលបានណែនាំជួយអ្នកចាប់ផ្ដើម។';
+
+  @override
+  String get storyAsk6Title => 'ច្រើនជាងកំណត់ត្រា';
+
+  @override
+  String get storyAsk6Body => 'វាក៏អាចរៀបគម្រោងដំណើរ បន្ថែមមនុស្ស ស្វែងរកជំហានបន្តសម្រាប់ប្រទេសរបស់អ្នក និងចែករំលែកកំណត់ត្រា ជាមួយតំណទៅទំព័រផ្លូវការ។';
 
   @override
   String get storyWallet1Title => 'ត្រៀមខ្លួនជាមុន';
