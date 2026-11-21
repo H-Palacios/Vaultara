@@ -198,10 +198,11 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
         flights: _flights,
       ),
     );
-    if (picked == null || !mounted) return;
+    final flight = picked?.flight;
+    if (flight == null || !mounted) return;
     setState(() {
       _saveError = null;
-      _flights = [..._flights, picked]..sort(TripFlight.compare);
+      _flights = [..._flights, flight]..sort(TripFlight.compare);
     });
   }
 
@@ -218,18 +219,39 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
       ),
     );
     if (picked == null || !mounted) return;
+    if (picked.delete) {
+      _removeFlight(index);
+      return;
+    }
     setState(() {
       _saveError = null;
       final next = List<TripFlight>.of(_flights);
-      next[index] = picked;
+      next[index] = picked.flight!;
       next.sort(TripFlight.compare);
       _flights = next;
     });
   }
 
+  /// The flight deleted last, so the list can offer Undo in place. A snack
+  /// bar would sit behind this sheet.
+  TripFlight? _deletedFlight;
+
+  /// Deletes a flight from the trip being edited. Nothing is saved until
+  /// the trip itself is saved.
   void _removeFlight(int index) {
+    if (index < 0 || index >= _flights.length) return;
     setState(() {
+      _deletedFlight = _flights[index];
       _flights = List<TripFlight>.of(_flights)..removeAt(index);
+    });
+  }
+
+  void _undoRemoveFlight() {
+    final removed = _deletedFlight;
+    if (removed == null || _flights.length >= SavedTrip.maxFlights) return;
+    setState(() {
+      _deletedFlight = null;
+      _flights = [..._flights, removed]..sort(TripFlight.compare);
     });
   }
 
@@ -245,19 +267,26 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
     return false;
   }
 
-  int? _daysAtDestination() {
+  /// The stay as the trip will show it, from the flights entered so far.
+  String? _stay(AppLocalizations loc) {
     final departure = _departure;
     final returnDate = _return;
     if (departure == null || returnDate == null || _flights.isEmpty) {
       return null;
     }
-    return SavedTrip(
-      id: '',
-      name: '-',
-      departure: departure,
-      returnDate: returnDate,
-      flights: _flights,
-    ).daysAtDestination;
+    return TravelText.stay(
+      context,
+      loc,
+      SavedTrip(
+        id: '',
+        name: '-',
+        departure: departure,
+        returnDate: returnDate,
+        flights: _flights,
+        countries: _countries,
+      ),
+      withDates: true,
+    );
   }
 
   Widget _flightTile(
@@ -275,7 +304,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
           onTap: () => _editFlight(index),
           borderRadius: BorderRadius.circular(14),
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(12, 10, 4, 10),
+            padding: const EdgeInsets.fromLTRB(12, 10, 10, 10),
             child: Row(
               children: [
                 Icon(Icons.flight_rounded, size: 20, color: scheme.primary),
@@ -304,10 +333,9 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                     ],
                   ),
                 ),
-                IconButton(
-                  icon: const Icon(Icons.close_rounded, size: 18),
-                  tooltip: loc.delete,
-                  onPressed: () => _removeFlight(index),
+                Icon(
+                  Icons.chevron_right_rounded,
+                  color: scheme.onSurfaceVariant,
                 ),
               ],
             ),
@@ -393,7 +421,7 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
   }
 
   Widget _flightsSection(AppLocalizations loc, ColorScheme scheme) {
-    final atDestination = _daysAtDestination();
+    final stay = _stay(loc);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -424,12 +452,39 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
               TripFlight.isConnection(_flights[i], _flights[i + 1]))
             _connection(loc, scheme, _flights[i], _flights[i + 1]),
         ],
+        if (_deletedFlight != null)
+          Padding(
+            padding: const EdgeInsets.only(left: 4, bottom: 4),
+            child: Row(
+              children: [
+                Icon(
+                  Icons.delete_outline_rounded,
+                  size: 18,
+                  color: scheme.onSurfaceVariant,
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    loc.travelFlightDeleted,
+                    style: TextStyle(
+                      fontSize: 13,
+                      color: scheme.onSurfaceVariant,
+                    ),
+                  ),
+                ),
+                TextButton(
+                  onPressed: _undoRemoveFlight,
+                  child: Text(loc.assistantUndo),
+                ),
+              ],
+            ),
+          ),
         ..._arrivalLines(loc, scheme),
-        if (atDestination != null)
+        if (stay != null)
           Padding(
             padding: const EdgeInsets.only(left: 4, bottom: 8),
             child: Text(
-              loc.travelAtDestination(atDestination),
+              stay,
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w600,

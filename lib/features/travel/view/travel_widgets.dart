@@ -5,6 +5,7 @@ import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
+import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/logic/passport_rules.dart';
 import 'package:vaultara/features/travel/logic/travel_check.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -18,6 +19,34 @@ class TravelText {
   static String date(BuildContext context, DateTime date) {
     final tag = Localizations.localeOf(context).toString();
     return DateFormat('d MMM y', SafeLocale.date(tag)).format(date);
+  }
+
+  /// How long the trip spends at its destination, worked out from the
+  /// flights: "15 days in Thailand" for a trip to one country, otherwise
+  /// "15 days at your destination". With [withDates] it adds the days it
+  /// counts, from landing to flying out: "15 days in Thailand · 23 Jan –
+  /// 6 Feb", so the number can be checked at a glance. Null without flights.
+  static String? stay(
+    BuildContext context,
+    AppLocalizations loc,
+    SavedTrip trip, {
+    bool withDates = false,
+  }) {
+    final days = trip.daysAtDestination;
+    final landed = trip.landingDay;
+    final left = trip.leavingDestinationDay;
+    if (days == null || landed == null || left == null) return null;
+    final text = trip.countries.length == 1
+        ? loc.travelDaysIn(days, Countries.name(trip.countries.first))
+        : loc.travelAtDestination(days);
+    if (!withDates) return text;
+    final tag = Localizations.localeOf(context).toString();
+    final format = DateFormat('d MMM', SafeLocale.date(tag));
+    return loc.travelStayWithDates(
+      text,
+      format.format(landed),
+      format.format(left),
+    );
   }
 
   static String travellerName(AppLocalizations loc, String? holderId) {

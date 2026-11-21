@@ -121,6 +121,26 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
 
   LifePlan get _current => LifePlanRepository.byId(_plan.id) ?? _plan;
 
+  /// Lost turned out to be stolen, or the other way round. Blocked cards,
+  /// ticked steps and the case number stay; only the steps that differ
+  /// change (a stolen wallet puts the police report near the top).
+  Future<void> _switchLostStolen() async {
+    final loc = AppLocalizations.of(context)!;
+    final current = _current;
+    final toStolen = current.variant != LifeEvents.variantStolen;
+    await _save(
+      current.copyWith(
+        variant: toStolen ? LifeEvents.variantStolen : LifeEvents.variantLost,
+      ),
+    );
+    if (!mounted) return;
+    ActionFeedbackSnackbar.show(
+      context,
+      toStolen ? loc.lostWalletSwitchedStolen : loc.lostWalletSwitchedLost,
+      icon: Icons.swap_horiz_rounded,
+    );
+  }
+
   /// Smaller buttons inside the cards, so two fit side by side.
   static final ButtonStyle _compact = ButtonStyle(
     visualDensity: VisualDensity.compact,
@@ -501,6 +521,8 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
               switch (value) {
                 case 'edit':
                   _edit();
+                case 'switch':
+                  _switchLostStolen();
                 case 'report':
                   LostWalletReport.share(
                     context,
@@ -520,6 +542,14 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
             },
             itemBuilder: (_) => [
               _menu('edit', Icons.edit_rounded, loc.edit),
+              if (!plan.isFinished)
+                _menu(
+                  'switch',
+                  Icons.swap_horiz_rounded,
+                  plan.variant == LifeEvents.variantStolen
+                      ? loc.lostWalletSwitchToLost
+                      : loc.lostWalletSwitchToStolen,
+                ),
               _menu('report', Icons.description_rounded, loc.lostWalletReport),
               _menu(
                 'pdf',

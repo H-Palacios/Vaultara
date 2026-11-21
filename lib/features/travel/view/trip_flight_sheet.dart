@@ -118,13 +118,25 @@ class TripFlightLimits {
   }
 }
 
-Future<TripFlight?> showTripFlightSheet(
+/// What the flight sheet ends with: a flight to save, or, for a flight that
+/// already exists, a request to delete it.
+class FlightSheetResult {
+  final TripFlight? flight;
+  final bool delete;
+
+  const FlightSheetResult.save(TripFlight this.flight) : delete = false;
+  const FlightSheetResult.delete() : flight = null, delete = true;
+}
+
+/// Adds a flight, or edits [flight]. Editing also offers Delete flight, so
+/// the journey list needs no delete button on every row.
+Future<FlightSheetResult?> showTripFlightSheet(
   BuildContext context, {
   TripFlight? flight,
   DateTime? suggestedDate,
   TripFlightLimits limits = const TripFlightLimits(),
 }) {
-  return AppSheet.show<TripFlight>(
+  return AppSheet.show<FlightSheetResult>(
     context: context,
     showDragHandle: false,
     enableDrag: false,
@@ -347,14 +359,16 @@ class _FlightSheetState extends State<_FlightSheet> {
     }
 
     Navigator.of(context).pop(
-      TripFlight(
-        from: from,
-        to: to,
-        departDate: departDate,
-        departTime: departTime,
-        landDate: landDate,
-        landTime: landTime,
-        toCountry: _toCountry,
+      FlightSheetResult.save(
+        TripFlight(
+          from: from,
+          to: to,
+          departDate: departDate,
+          departTime: departTime,
+          landDate: landDate,
+          landTime: landTime,
+          toCountry: _toCountry,
+        ),
       ),
     );
   }
@@ -550,6 +564,19 @@ class _FlightSheetState extends State<_FlightSheet> {
                 ),
               ],
             ),
+            if (widget.flight != null) ...[
+              const SizedBox(height: 6),
+              Center(
+                child: TextButton.icon(
+                  style: TextButton.styleFrom(foregroundColor: scheme.error),
+                  onPressed: () => Navigator.of(
+                    context,
+                  ).pop(const FlightSheetResult.delete()),
+                  icon: const Icon(Icons.delete_outline_rounded, size: 20),
+                  label: Text(loc.travelFlightDelete),
+                ),
+              ),
+            ],
           ],
         ),
       ),

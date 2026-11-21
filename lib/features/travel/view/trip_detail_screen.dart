@@ -118,9 +118,10 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
         flights: trip.flights,
       ),
     );
-    if (picked == null || !mounted) return;
+    final flight = picked?.flight;
+    if (flight == null || !mounted) return;
     final latest = TripRepository.byId(trip.id) ?? trip;
-    await _saveFlights(latest, [...latest.flights, picked]);
+    await _saveFlights(latest, [...latest.flights, flight]);
   }
 
   Future<void> _editFlight(SavedTrip trip, int index) async {
@@ -138,15 +139,40 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
     if (picked == null || !mounted) return;
     final latest = TripRepository.byId(trip.id) ?? trip;
     if (index >= latest.flights.length) return;
+    if (picked.delete) {
+      await _removeFlight(latest, index);
+      return;
+    }
     final next = List<TripFlight>.of(latest.flights);
-    next[index] = picked;
+    next[index] = picked.flight!;
     await _saveFlights(latest, next);
   }
 
+  /// Deletes a flight and offers Undo, which puts the same flight back.
   Future<void> _removeFlight(SavedTrip trip, int index) async {
     if (index < 0 || index >= trip.flights.length) return;
+    final removed = trip.flights[index];
     final next = List<TripFlight>.of(trip.flights)..removeAt(index);
     await _saveFlights(trip, next);
+    if (!mounted) return;
+    final loc = AppLocalizations.of(context)!;
+    ActionFeedbackSnackbar.show(
+      context,
+      loc.travelFlightDeleted,
+      icon: Icons.delete_outline_rounded,
+      actionLabel: loc.assistantUndo,
+      onAction: () {
+        if (!mounted) return;
+        final latest = TripRepository.byId(trip.id);
+        if (latest == null || latest.flights.length >= SavedTrip.maxFlights) {
+          return;
+        }
+        _saveFlights(
+          latest,
+          [...latest.flights, removed]..sort(TripFlight.compare),
+        );
+      },
+    );
   }
 
   @override
@@ -258,7 +284,6 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
           trip: trip,
           onAdd: () => _addFlight(trip),
           onEdit: (index) => _editFlight(trip, index),
-          onRemove: (index) => _removeFlight(trip, index),
         ),
         const SizedBox(height: 22),
         KeyedSubtree(
@@ -505,7 +530,7 @@ class _OverviewCard extends StatelessWidget {
         : (ok ? TravelText.okColour : TravelText.warningColour);
     final daysAway = Dates.daysBetween(today, trip.start);
     final upcoming = daysAway > 0;
-    final atDestination = trip.daysAtDestination;
+    final stay = TravelText.stay(context, loc, trip);
     final total = trip.checklist.length;
     final progress = total == 0 ? 0.0 : trip.doneCount / total;
 
@@ -562,12 +587,8 @@ class _OverviewCard extends StatelessWidget {
                           Icons.nights_stay_rounded,
                           loc.travelNights(trip.nights),
                         ),
-                        if (atDestination != null)
-                          _fact(
-                            context,
-                            Icons.place_rounded,
-                            loc.travelAtDestination(atDestination),
-                          ),
+                        if (stay != null)
+                          _fact(context, Icons.place_rounded, stay),
                         if (trip.travellers.length > 1)
                           _fact(
                             context,
@@ -694,13 +715,11 @@ class _JourneyCard extends StatelessWidget {
   final SavedTrip trip;
   final VoidCallback onAdd;
   final void Function(int index) onEdit;
-  final void Function(int index) onRemove;
 
   const _JourneyCard({
     required this.trip,
     required this.onAdd,
     required this.onEdit,
-    required this.onRemove,
   });
 
   @override
@@ -723,10 +742,9 @@ class _JourneyCard extends StatelessWidget {
               '${flights[i].from} → ${flights[i].to}${flights[i].toCountry == null ? '' : ' ${Countries.flag(flights[i].toCountry!)}'}',
           subtitle: TripFlightText.span(context, flights[i]),
           onTap: () => onEdit(i),
-          trailing: IconButton(
-            icon: const Icon(Icons.close_rounded, size: 18),
-            tooltip: loc.delete,
-            onPressed: () => onRemove(i),
+          trailing: Icon(
+            Icons.chevron_right_rounded,
+            color: scheme.onSurfaceVariant,
           ),
         ),
       _TimelineRow(
@@ -737,7 +755,7 @@ class _JourneyCard extends StatelessWidget {
       ),
     ];
 
-    final atDestination = trip.daysAtDestination;
+    final stay = TravelText.stay(context, loc, trip, withDates: true);
 
     return Container(
       padding: const EdgeInsets.fromLTRB(14, 14, 10, 8),
@@ -749,11 +767,11 @@ class _JourneyCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           ...rows,
-          if (atDestination != null)
+          if (stay != null)
             Padding(
               padding: const EdgeInsets.fromLTRB(2, 4, 4, 6),
               child: Text(
-                loc.travelAtDestination(atDestination),
+                stay,
                 style: TextStyle(
                   fontSize: 12.5,
                   fontWeight: FontWeight.w700,
