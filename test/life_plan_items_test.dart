@@ -464,7 +464,7 @@ void main() {
       expect(blocked.records.every((r) => r.flag == null), isTrue);
     });
 
-    test('a theft asks for the police first, a loss to retrace steps', () {
+    test('a theft asks for the police first, a loss to freeze and look', () {
       final stolen = LifeTasks.forEvent(
         LifeEvent.lostWallet,
         LifeEvents.variantStolen,
@@ -477,12 +477,25 @@ void main() {
         LifeTask.walletFreezeCards,
         LifeTask.reportToPolice,
       ]);
-      expect(lost.take(2), <LifeTask>[
-        LifeTask.walletFreezeCards,
+      expect(lost.take(3), <LifeTask>[
+        LifeTask.walletFreezeLost,
         LifeTask.walletRetrace,
+        LifeTask.walletCancelIfMissing,
       ]);
       expect(lost, contains(LifeTask.reportToPolice));
       expect(LifeTasks.isUrgent(LifeTask.walletRetrace), isTrue);
+      expect(LifeTasks.isUrgent(LifeTask.walletFreezeLost), isTrue);
+      // Saved bank cards replace the theft's freeze step with a call each,
+      // but a loss still freezes first, because freezing can be undone.
+      const cards = <String>{'debit_and_credit_cards'};
+      expect(
+        LifeTasks.relevant(stolen, cards, known: true),
+        isNot(contains(LifeTask.walletFreezeCards)),
+      );
+      expect(
+        LifeTasks.relevant(lost, cards, known: true),
+        contains(LifeTask.walletFreezeLost),
+      );
       expect(LifeTask.values.length, lessThanOrEqualTo(80));
     });
 
@@ -546,9 +559,11 @@ void main() {
         'keptIn': 'phoneCase',
         'lostLine': '  +27 86 010 1111  ',
       });
-      expect(read.place, KeptIn.phoneCase);
+      // Phone case is no longer offered: a record saved with it counts as
+      // in the wallet, so it still shows up when the wallet goes missing.
+      expect(read.place, KeptIn.wallet);
       expect(read.lostLine, '+27 86 010 1111');
-      expect(read.toMap()['keptIn'], KeptIn.phoneCase);
+      expect(read.toMap()['keptIn'], KeptIn.wallet);
     });
 
     test('lost card numbers dial cleanly', () {
