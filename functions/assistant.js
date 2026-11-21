@@ -223,6 +223,7 @@ const RECORD_FIELD_NAMES = [
   "locked",
   "in_wallet",
   "lost_card_number",
+  "kept_in",
 ];
 
 const DATE_PATTERN = /^(\d{4})-(\d{2})-(\d{2})$/;
@@ -271,6 +272,11 @@ const RECORD_FIELD_PROPERTIES = {
     type: "string",
     description: "The phone number to call to block this card when it is lost or stolen, as the user or their bank gives it (digits, spaces, + and brackets). Empty clears it. Lost my wallet shows a call button with it.",
   },
+  kept_in: {
+    type: "string",
+    enum: [...KEPT_IN, "none"],
+    description: "Where the user keeps the card or document. Lost my wallet uses it to know what to block and replace. none clears it.",
+  },
 };
 
 const READ_TOOLS = [
@@ -299,6 +305,15 @@ const READ_TOOLS = [
           minimum: 1,
           maximum: 3650,
           description: "Day window for status expiring (default 30). With status all, only records that expire within this many days.",
+        },
+        kept_in: {
+          type: "string",
+          enum: KEPT_IN,
+          description: "Only records the user keeps here, for example wallet for the cards in their wallet.",
+        },
+        no_lost_card_number: {
+          type: "boolean",
+          description: "true: only records with no lost card number saved, so Lost my wallet has nothing to call for them.",
         },
       },
     },
@@ -738,6 +753,14 @@ const TOOLS_V13 = [
   SUGGEST_REPLIES,
 ];
 const NAMES_V13 = new Set(TOOLS_V13.map((t) => t.name));
+// Protocol 14: trip checklists, household sharing and where records are kept.
+const V14 = require("./assistant-v14")({ admin, str, logger, LOCKED_LABEL, pushAction, draftReady, householdFor });
+const TOOLS_V14 = [
+  ...TOOLS_V13.filter((t) => t.name !== "suggest_replies"),
+  ...V14.TOOLS,
+  SUGGEST_REPLIES,
+];
+const NAMES_V14 = new Set(TOOLS_V14.map((t) => t.name));
 let webSearchOff = false;
 
 // Sent when a turn ended with no words and no card.
@@ -1085,6 +1108,8 @@ class UserData {
           ? data.places.map((p) => str(p, PLACE_MAX)).filter(Boolean).slice(0, MAX_PLACES)
           : [],
         arrivals: storedArrivals(data.arrivals, this.offset),
+        checklistDone: Array.isArray(data.checklist) ? data.checklist.filter((i) => i && i.done === true).length : 0,
+        checklistTotal: Array.isArray(data.checklist) ? data.checklist.length : 0,
       });
     }
     trips.sort((a, b) => a.startDay - b.startDay);
@@ -1422,6 +1447,15 @@ async function parseRecordFields(ctx, input, { record = null, creating = false }
     out.lostLine = line || null;
   }
 
+  if (has(input, "kept_in")) {
+    if (!ctx.v14) return { error: "This version of the app cannot change where a record is kept from chat yet. Tell the user to update Vaultara, or to set Where I keep it in the record." };
+    if (input.kept_in !== "none" && !KEPT_IN.includes(input.kept_in)) {
+      return { error: `kept_in must be one of: ${KEPT_IN.join(", ")}, none.` };
+    }
+    out.keptIn = input.kept_in === "none" ? null : input.kept_in;
+    delete out.inWallet;
+  }
+
   return { fields: out };
 }
 
@@ -1448,6 +1482,7 @@ function dropUnchanged(record, fields) {
   same("locked", record.locked);
   same("inWallet", record.inWallet);
   same("lostLine", record.lostLine || null);
+  same("keptIn", record.keptIn || null);
   if (!record.locked && has(out, "personId") && out.personId === record.holderId) {
     delete out.personId;
     delete out.person;
@@ -1506,6 +1541,13 @@ async function listRecords(ctx, input) {
     records = records.filter((r) => r.day - ctx.today <= within);
   }
 
+  if (ctx.v14 && KEPT_IN.includes(input?.kept_in)) {
+    records = records.filter((r) => r.keptIn === input.kept_in);
+  }
+  if (ctx.v14 && input?.no_lost_card_number === true) {
+    records = records.filter((r) => !r.lostLine);
+  }
+
   const shown = records.slice(0, MAX_RESULTS);
   const views = [];
   for (const record of shown) views.push(await ctx.view(record));
@@ -1557,6 +1599,7 @@ async function listTrips(ctx) {
       purpose: trip.purpose,
       places: trip.places,
       underway: trip.startDay <= ctx.today && trip.endDay >= ctx.today,
+      ...(ctx.v14 ? { checklist: `${trip.checklistDone} of ${trip.checklistTotal} done` } : {}),
       flights: trip.flights.map((f) => ({
         from: f.from,
         to: f.to,
@@ -2127,7 +2170,9 @@ async function runTool(ctx, name, input, actions, allowed) {
         const coached = ctx.v12 ? await COACH.run(ctx, name, input, actions) : undefined;
         if (coached !== undefined) return coached;
         const life = ctx.v13 ? await LIFE.run(ctx, name, input) : undefined;
-        return life === undefined ? { error: "Unknown tool." } : life;
+        if (life !== undefined) return life;
+        const later = ctx.v14 ? await V14.run(ctx, name, input, actions) : undefined;
+        return later === undefined ? { error: "Unknown tool." } : later;
       }
     }
   } catch (err) {
@@ -2136,7 +2181,8 @@ async function runTool(ctx, name, input, actions, allowed) {
   }
 }
 
-function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false) {
+// Built once when the module loads, so it may only use its own arguments.
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -2198,9 +2244,16 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   }
   if (v7) {
     lines.push(
-      ctx.v13
+      v13
         ? "Life events: when the user says something big is happening or happened (moving house, selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job, leaving or losing a job, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen wallet or purse, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Buying a home is the key homeBuy and losing a job is jobLoss; in the app they are answers under Moving and Job. When you already know the answer, add it after a colon: lostWallet:stolen or lostWallet:lost, job:start or job:leave, car:buy or car:sell. There is no plan for a lost phone any more: tell them to block the SIM card with their network and their banking apps with the bank first. Plans in progress are in the dynamic facts with their progress and next step; do not start a second plan for the same event, open it instead. For what is left, what to do next or anything about a plan, call get_life_plan and answer from it, naming the records and steps. When the user says they did something in a plan (blocked a card, got a case number, replaced a document, did a step, found the wallet), save it with update_life_plan and say in a few words what you changed. For a death in the family or a lost job, be brief and kind. Lost my wallet (key lostWallet): tell them to block their bank cards first; each card with a lost card number saved has a call button, and Vaultara notes when it was called. When the user gives a card's lost card number, save it with propose_update_record and lost_card_number. Vaultara keeps the police case number and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
         : "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, a lost or stolen wallet or purse, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first. For a lost or stolen wallet (key lostWallet), tell them to block their bank cards first; Vaultara shows a call button for each card that has its lost card number saved, keeps the police case number, and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
+    );
+  }
+  if (v14) {
+    lines.push(
+      "Trip checklists: for what is left before a trip, call get_trip_checklist and answer from it. When the user says they did something on it (got insurance, applied for the visa, packed the adapter), or asks to add or remove an item, call update_trip_checklist. Like update_life_plan, it saves at once, so say in a few words what you changed. list_trips shows how far each checklist is.",
+      "Where records are kept: kept_in says where the user keeps a card or document (wallet, bag, car, phoneCase, home, travelPouch). To change it, call propose_update_record with kept_in. To list what is in the wallet, call list_records with kept_in wallet; add no_lost_card_number true for cards that still need a number to call when they go missing.",
+      "Household sharing: shared_with_household on a record says whether everyone in the household can see and edit it. When the user asks to share a record with their family or household, or to make one private again, call propose_share_record. Records with encrypted photos cannot be shared; if the card fails, the user can try in the record.",
     );
   }
   if (v10) {
@@ -2225,6 +2278,8 @@ const STATIC_PROMPT_V5 = staticPrompt(true, true, true, true);
 const STATIC_PROMPT_V6 = staticPrompt(true, true, true, true, true);
 const STATIC_PROMPT_V7 = staticPrompt(true, true, true, true, true, true);
 const STATIC_PROMPT_V10 = staticPrompt(true, true, true, true, true, true, true);
+const STATIC_PROMPT_V13 = staticPrompt(true, true, true, true, true, true, true, true);
+const STATIC_PROMPT_V14 = staticPrompt(true, true, true, true, true, true, true, true, true);
 
 function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false) {
   const date = dayToDate(ctx.today);
@@ -2293,7 +2348,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
   return [
     {
       type: "text",
-      text: v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -2382,7 +2437,9 @@ async function stepFor(ctx, name, input) {
       const coached = ctx.v12 ? await COACH.step(ctx, name, input) : undefined;
       if (coached !== undefined) return coached;
       const life = ctx.v13 ? await LIFE.step(ctx, name) : undefined;
-      return life === undefined ? step ?? null : life;
+      if (life !== undefined) return life;
+      const later = ctx.v14 ? await V14.step(ctx, name, input) : undefined;
+      return later === undefined ? step ?? null : later;
     }
   }
 }
@@ -2607,6 +2664,7 @@ exports.askVaultara = onCall(
     const v11 = version >= 11 && intent === "chat";
     const v12 = version >= 12 && intent === "chat";
     const v13 = version >= 13 && intent === "chat";
+    const v14 = version >= 14 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
@@ -2649,15 +2707,16 @@ exports.askVaultara = onCall(
     ctx.v11 = v11;
     ctx.v12 = v12;
     ctx.v13 = v13;
+    ctx.v14 = v14;
     ctx.talk = v12 && request.data?.mode === "talk";
     ctx.webSearch = v12 && !webSearchOff && process.env.ASSISTANT_WEB_SEARCH !== "off";
     ctx.learned = v11 ? await ctx.learnedWords() : [];
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
-    const baseTools = v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const baseTools = v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
     const groupTools = v9 ? withGroupsV9(baseTools) : baseTools;
     const tools = ctx.webSearch ? [...groupTools, COACH_MODULE.WEB_SEARCH_TOOL] : groupTools;
-    const allowed = v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const allowed = v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
