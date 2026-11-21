@@ -51,6 +51,22 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
   late final TextEditingController _case;
   bool _showDone = false;
 
+  /// The Done heading, so the status card can bring it into view.
+  final GlobalKey _doneKey = GlobalKey();
+
+  void _openDone() {
+    setState(() => _showDone = true);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final target = _doneKey.currentContext;
+      if (target == null || !target.mounted) return;
+      Scrollable.ensureVisible(
+        target,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOutCubic,
+      );
+    });
+  }
+
   /// The card whose bank was just called, so coming back to Vaultara can
   /// ask whether it is blocked now.
   String? _callingId;
@@ -599,6 +615,11 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
           view: view,
           next: nextLine,
           onFound: () => _found(view),
+          // Only when something sits in Done; ticked steps without a
+          // deadline stay where they are, with their own Undo.
+          onShowDone: done.isNotEmpty || urgent.any((t) => t.done)
+              ? _openDone
+              : null,
         ),
         if (trip != null) ...[
           const SizedBox(height: 12),
@@ -686,6 +707,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     return [
       const SizedBox(height: 18),
       InkWell(
+        key: _doneKey,
         borderRadius: BorderRadius.circular(12),
         onTap: () => setState(() => _showDone = !_showDone),
         child: Padding(
@@ -1029,6 +1051,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
                 ],
               ),
             ),
+            _undoButton(() => _mark(item, null)),
           ],
         ),
       ),
@@ -1070,7 +1093,9 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
                     ),
                     const SizedBox(width: 10),
                     Expanded(child: _stepText(steps[i])),
-                    if (steps[i].custom != null)
+                    if (steps[i].done)
+                      _undoButton(() => _toggleTask(steps[i]))
+                    else if (steps[i].custom != null)
                       IconButton(
                         tooltip: loc.delete,
                         visualDensity: VisualDensity.compact,
@@ -1208,7 +1233,9 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
                 ),
               ),
             ),
-            if (custom != null)
+            if (item.done)
+              _undoButton(() => _toggleTask(item))
+            else if (custom != null)
               IconButton(
                 tooltip: loc.delete,
                 icon: Icon(
@@ -1221,6 +1248,20 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
           ],
         ),
       ),
+    );
+  }
+
+  /// A plain Undo on everything in Done, so going back a step does not
+  /// depend on knowing that the tick can be tapped again.
+  Widget _undoButton(VoidCallback onPressed) {
+    final loc = AppLocalizations.of(context)!;
+    return TextButton(
+      style: TextButton.styleFrom(
+        visualDensity: VisualDensity.compact,
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+      ),
+      onPressed: onPressed,
+      child: Text(loc.assistantUndo),
     );
   }
 }
@@ -1236,8 +1277,12 @@ class _StatusCard extends StatelessWidget {
     required this.plan,
     required this.view,
     required this.onFound,
+    this.onShowDone,
     this.next,
   });
+
+  /// Opens Done further down, where anything ticked can be undone.
+  final VoidCallback? onShowDone;
 
   /// What to do now, or null when everything open is done.
   final String? next;
@@ -1300,6 +1345,22 @@ class _StatusCard extends StatelessWidget {
                         fontWeight: FontWeight.w800,
                       ),
                     ),
+                    if (onShowDone != null && view.done > 0 && !plan.isFound)
+                      InkWell(
+                        borderRadius: BorderRadius.circular(8),
+                        onTap: onShowDone,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Text(
+                            loc.lostWalletSeeDone,
+                            style: TextStyle(
+                              fontSize: 13.5,
+                              fontWeight: FontWeight.w700,
+                              color: accent,
+                            ),
+                          ),
+                        ),
+                      ),
                     if (next == null) ...[
                       const SizedBox(height: 4),
                       Text(
