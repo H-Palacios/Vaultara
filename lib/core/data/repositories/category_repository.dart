@@ -17,6 +17,10 @@ class CategoryRepository {
   /// account so pins survive a restart and follow the user to other phones.
   static final List<String> _pins = <String>[];
 
+  /// Goes up whenever the pins or the custom categories change, so Home
+  /// can show a new pin straight away.
+  static final ValueNotifier<int> revision = ValueNotifier<int>(0);
+
   static bool _hasLoadedForUser = false;
 
   static const int freeCategoryLimit = 3;
@@ -287,6 +291,7 @@ class CategoryRepository {
       ..addAll(pinned);
 
     _hasLoadedForUser = true;
+    revision.value++;
   }
 
   /// Fills the categories from the copy Firestore keeps on the phone, so
@@ -322,6 +327,7 @@ class CategoryRepository {
           if (key is String && !_pins.contains(key)) _pins.add(key);
         }
       }
+      revision.value++;
     } catch (_) {
       // No copy on the phone yet: the normal load fills the categories.
     }
@@ -370,6 +376,7 @@ class CategoryRepository {
 
   static Future<void> togglePin(String key) async {
     if (!_pins.remove(key)) _pins.add(key);
+    revision.value++;
 
     final User? user = _auth.currentUser;
     if (user == null) return;
@@ -528,5 +535,6 @@ class CategoryRepository {
     _pins.clear();
     _hasLoadedForUser = false;
     _createdCategoriesCount = 0;
+    revision.value++;
   }
 }

@@ -91,11 +91,20 @@ class ProofPack {
     final prepared = loc.proofPackPrepared(dateFormat.format(DateTime.now()));
     final skippedNote = loc.proofPackPdfSkipped;
 
+    // Group names need the context, so they are read before the first
+    // photo is loaded rather than after an await.
+    final groups = <String, String>{
+      for (final r in records)
+        if (r.subcategoryName.isNotEmpty)
+          r.subcategoryName: PresetCatalog.groupLabel(
+            context,
+            r.subcategoryName,
+          ),
+    };
+
     final entries = <_PackEntry>[];
     for (final r in records) {
-      final group = r.subcategoryName.isEmpty
-          ? ''
-          : PresetCatalog.groupLabel(context, r.subcategoryName);
+      final group = groups[r.subcategoryName] ?? '';
       final holder =
           PeopleRepository.byId(r.holderId)?.name ??
           (ownName.isEmpty ? '-' : ownName);

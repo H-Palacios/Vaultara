@@ -53,8 +53,9 @@ class BackupCodeService {
           .call();
       final data = result.data;
       final codes = data is Map ? data['codes'] : null;
-      if (codes is! List)
+      if (codes is! List) {
         throw const BackupCodeException(BackupCodeError.other);
+      }
       return [
         for (final c in codes)
           if (c is String) c,

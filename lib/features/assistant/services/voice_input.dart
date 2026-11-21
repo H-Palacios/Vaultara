@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:speech_to_text/speech_recognition_error.dart';
@@ -34,9 +33,7 @@ class VoiceInput {
 
   /// Set when a session ends because nothing was heard or the recogniser
   /// failed. Cleared when listening starts again.
-  final ValueNotifier<VoiceProblem?> problem = ValueNotifier<VoiceProblem?>(
-    null,
-  );
+  final ValueNotifier<VoiceProblem?> problem = ValueNotifier<VoiceProblem?>(null);
 
   /// Set when the phone cannot listen in the app's language: the name of
   /// the language it listens in instead. The voice panel says so and offers

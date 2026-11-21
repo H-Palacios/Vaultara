@@ -129,19 +129,6 @@ class _UserDocHub {
     if (last != null) yield last;
     yield* _events.stream;
   }
-
-  @visibleForTesting
-  static void resetForTest() {
-    _authSub?.cancel();
-    _docSub?.cancel();
-    _retry?.cancel();
-    _authSub = null;
-    _docSub = null;
-    _started = false;
-    _hasAccount = false;
-    _uid = null;
-    _last = null;
-  }
 }
 
 /// The signed-in account's plan, known from the first frame on any phone

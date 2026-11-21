@@ -4,6 +4,7 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/data/models/category_item.dart';
 import 'package:vaultara/core/data/repositories/category_repository.dart';
 import 'package:vaultara/core/data/category_resolver.dart';
+import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/features/records/view/groups/groups_screen.dart';
 
@@ -32,9 +33,34 @@ class HomePinnedCategories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return ValueListenableBuilder<int>(
+      valueListenable: CategoryRepository.revision,
+      builder: (context, value, child) => _build(context),
+    );
+  }
+
+  /// Built-in categories and the user's own, the same list the Categories
+  /// screen shows. A custom category with a built-in key replaces it.
+  static List<CategoryItem> _all(BuildContext context) {
+    final custom = CategoryRepository.getAll();
+    final customKeys = custom.map((c) => c.key).toSet();
+    return <CategoryItem>[
+      for (final seed in PresetCatalog.buildCategorySeeds(context))
+        if (!customKeys.contains(seed.key))
+          CategoryItem(
+            key: seed.key,
+            label: seed.label,
+            icon: seed.icon,
+            groupKeys: List<String>.from(seed.groupKeys),
+          ),
+      ...custom,
+    ];
+  }
+
+  Widget _build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    final all = CategoryRepository.getAll();
+    final all = _all(context);
     final pinned = <CategoryItem>[
       for (final key in CategoryRepository.pins())
         for (final c in all)

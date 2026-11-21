@@ -139,8 +139,9 @@ class PushService {
     }
 
     final token = givenToken ?? await FirebaseMessaging.instance.getToken();
-    if (token == null || token.isEmpty || token.length > _maxTokenLength)
+    if (token == null || token.isEmpty || token.length > _maxTokenLength) {
       return;
+    }
 
     final locale = _locale();
     final platform = Platform.isIOS ? 'ios' : 'android';
