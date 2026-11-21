@@ -204,7 +204,7 @@ class TravelLockedCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
@@ -344,8 +344,11 @@ class TravelFindingTile extends StatelessWidget {
     return Container(
       padding: EdgeInsets.fromLTRB(14, 12, 12, actions.isEmpty ? 12 : 6),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(16),
+        // A soft edge in the finding's own colour, so a problem stands out
+        // on the white card without a heavy fill.
+        border: Border.all(color: colour.withValues(alpha: 0.28)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

@@ -470,7 +470,7 @@ class _OverviewCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: scheme.surface.withValues(alpha: 0.6),
+        color: scheme.primary.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(999),
       ),
       child: Row(
@@ -530,7 +530,7 @@ class _OverviewCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
@@ -639,7 +639,7 @@ class _OverviewCard extends StatelessWidget {
                     child: LinearProgressIndicator(
                       value: progress,
                       minHeight: 6,
-                      backgroundColor: scheme.surface.withValues(alpha: 0.6),
+                      backgroundColor: scheme.primary.withValues(alpha: 0.12),
                     ),
                   ),
                 ),
@@ -742,7 +742,7 @@ class _JourneyCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(14, 14, 10, 8),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
@@ -966,7 +966,7 @@ class _RemindersCard extends StatelessWidget {
 
     return Material(
       clipBehavior: Clip.antiAlias,
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(20),
       child: Theme(
         data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
@@ -1109,7 +1109,7 @@ class _ChecklistCard extends StatelessWidget {
     final full = trip.checklist.length >= SavedTrip.maxChecklist;
 
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(20),
       clipBehavior: Clip.antiAlias,
       child: Padding(

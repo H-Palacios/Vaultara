@@ -778,7 +778,7 @@ class _TravellerVisaBlock extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(14),
             decoration: BoxDecoration(
-              color: scheme.surfaceContainerHighest,
+              color: scheme.surface,
               borderRadius: BorderRadius.circular(16),
             ),
             child: Row(
@@ -1095,7 +1095,7 @@ class _DestinationTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(14, 12, 12, 6),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -1330,7 +1330,7 @@ class _TransitTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(14, 12, 12, 12),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(16),
       ),
       child: Row(

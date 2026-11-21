@@ -301,7 +301,7 @@ class _EmptyCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
@@ -367,7 +367,7 @@ class _TripCard extends StatelessWidget {
     }
 
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         borderRadius: BorderRadius.circular(20),

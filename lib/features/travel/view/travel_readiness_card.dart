@@ -30,17 +30,16 @@ class TravelReadinessCard extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
 
-    final holders = <String?>[
-      null,
-      for (final p in people) p.id,
-    ];
-    final results =
-        TravelCheck.readiness(RecordRepository.allActive(), holders);
+    final holders = <String?>[null, for (final p in people) p.id];
+    final results = TravelCheck.readiness(
+      RecordRepository.allActive(),
+      holders,
+    );
 
     return Container(
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
@@ -119,8 +118,9 @@ class _ReadinessRow extends StatelessWidget {
         );
         passportColour = scheme.error;
       case PassportReadiness.ready:
-        passportLine =
-            loc.travelReadyUntil(TravelText.date(context, result.travelUntil!));
+        passportLine = loc.travelReadyUntil(
+          TravelText.date(context, result.travelUntil!),
+        );
         passportColour = TravelText.okColour;
     }
 
@@ -163,12 +163,14 @@ class _ReadinessRow extends StatelessWidget {
     if (licence != null) {
       final expiry = Dates.only(licence.expiryDate);
       if (expiry.isBefore(today)) {
-        licenceLine =
-            loc.travelLicenceExpiredOn(TravelText.date(context, expiry));
+        licenceLine = loc.travelLicenceExpiredOn(
+          TravelText.date(context, expiry),
+        );
         licenceColour = scheme.error;
       } else {
-        licenceLine =
-            loc.travelLicenceValidUntil(TravelText.date(context, expiry));
+        licenceLine = loc.travelLicenceValidUntil(
+          TravelText.date(context, expiry),
+        );
       }
     }
 
@@ -210,10 +212,8 @@ class _ReadinessRow extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 2),
                     child: TextButton.icon(
-                      onPressed: () => VisaActions.pickNationality(
-                        context,
-                        result.holderId,
-                      ),
+                      onPressed: () =>
+                          VisaActions.pickNationality(context, result.holderId),
                       icon: const Icon(Icons.flag_rounded, size: 16),
                       label: Text(
                         NationalityRepository.isMe(result.holderId)
@@ -233,10 +233,7 @@ class _ReadinessRow extends StatelessWidget {
               ],
             ),
           ),
-          if (action != null) ...[
-            const SizedBox(width: 4),
-            action,
-          ],
+          if (action != null) ...[const SizedBox(width: 4), action],
         ],
       ),
     );
