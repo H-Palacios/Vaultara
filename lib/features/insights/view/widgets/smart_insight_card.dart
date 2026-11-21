@@ -4,6 +4,9 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/insights/data/models/smart_insight.dart';
 import 'package:vaultara/features/insights/logic/insight_tone.dart';
 import 'package:vaultara/features/insights/services/smart_insight_service.dart';
+import 'package:vaultara/features/insights/view/widgets/smart_insight_dots.dart';
+import 'package:vaultara/features/insights/view/widgets/smart_insight_header.dart';
+import 'package:vaultara/features/insights/view/widgets/smart_insight_page.dart';
 
 /// The insights card: one insight at a time, swiped left and right or picked
 /// with the dots, tinted by how pressing it is. Each insight has its action,
@@ -84,35 +87,12 @@ class _SmartInsightCardState extends State<SmartInsightCard> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Icon(Icons.insights_rounded, color: scheme.primary, size: 18),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  loc.insightsCardTitle,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              _AudioButton(
-                buttonKey: widget.speakerKey,
-                scheme: scheme,
-                enabled: widget.canSpeak,
-                isSpeaking: widget.isSpeaking,
-                onPressed: () {
-                  if (!widget.canSpeak) return;
-                  if (widget.isSpeaking) {
-                    widget.onPause?.call();
-                  } else {
-                    widget.onPlay?.call();
-                  }
-                },
-              ),
-            ],
+          SmartInsightHeader(
+            speakerKey: widget.speakerKey,
+            canSpeak: widget.canSpeak,
+            isSpeaking: widget.isSpeaking,
+            onPlay: widget.onPlay,
+            onPause: widget.onPause,
           ),
           if (current != null) ...[
             const SizedBox(height: 12),
@@ -154,7 +134,7 @@ class _SmartInsightCardState extends State<SmartInsightCard> {
                     ),
                   );
                 },
-                child: _InsightPage(
+                child: SmartInsightPage(
                   key: ValueKey<Object>(_pageKey(current)),
                   insight: current,
                   tone: tone,
@@ -167,7 +147,7 @@ class _SmartInsightCardState extends State<SmartInsightCard> {
           ],
           if (shown.length > 1) ...[
             const SizedBox(height: 12),
-            _Dots(
+            SmartInsightDots(
               count: shown.length,
               index: _index,
               colour: colour,
@@ -196,268 +176,4 @@ class _SmartInsightCardState extends State<SmartInsightCard> {
 
   Object _pageKey(SmartInsight insight) =>
       insight.key ?? '${insight.kind.name}-$_index';
-}
-
-class _Dots extends StatelessWidget {
-  final int count;
-  final int index;
-  final Color colour;
-  final ValueChanged<int> onTap;
-  final String Function(int index) label;
-
-  const _Dots({
-    required this.count,
-    required this.index,
-    required this.colour,
-    required this.onTap,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        for (var i = 0; i < count; i++)
-          Semantics(
-            button: true,
-            selected: i == index,
-            label: label(i),
-            excludeSemantics: true,
-            child: InkWell(
-              onTap: () => onTap(i),
-              borderRadius: BorderRadius.circular(999),
-              child: Padding(
-                padding: const EdgeInsets.all(5),
-                child: AnimatedContainer(
-                  duration: MediaQuery.of(context).disableAnimations
-                      ? Duration.zero
-                      : const Duration(milliseconds: 200),
-                  width: i == index ? 18 : 7,
-                  height: 7,
-                  decoration: BoxDecoration(
-                    color: i == index
-                        ? colour
-                        : scheme.onSurfaceVariant.withValues(alpha: 0.3),
-                    borderRadius: BorderRadius.circular(999),
-                  ),
-                ),
-              ),
-            ),
-          ),
-      ],
-    );
-  }
-}
-
-class _AudioButton extends StatelessWidget {
-  final Key? buttonKey;
-  final ColorScheme scheme;
-  final bool enabled;
-  final bool isSpeaking;
-  final VoidCallback onPressed;
-
-  const _AudioButton({
-    required this.buttonKey,
-    required this.scheme,
-    required this.enabled,
-    required this.isSpeaking,
-    required this.onPressed,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final Color bg = enabled
-        ? scheme.primary
-        : scheme.onSurfaceVariant.withValues(alpha: 0.15);
-    final Color fg = enabled
-        ? scheme.onPrimary
-        : scheme.onSurfaceVariant.withValues(alpha: 0.5);
-
-    return Material(
-      key: buttonKey,
-      color: bg,
-      shape: const StadiumBorder(),
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        onTap: enabled ? onPressed : null,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(Icons.volume_up_rounded, size: 16, color: fg),
-              const SizedBox(width: 4),
-              AnimatedSwitcher(
-                duration: const Duration(milliseconds: 150),
-                transitionBuilder: (child, animation) =>
-                    ScaleTransition(scale: animation, child: child),
-                child: Icon(
-                  isSpeaking ? Icons.pause_rounded : Icons.play_arrow_rounded,
-                  key: ValueKey<bool>(isSpeaking),
-                  size: 18,
-                  color: fg,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _InsightPage extends StatelessWidget {
-  final SmartInsight insight;
-  final InsightTone tone;
-  final void Function(SmartInsight insight)? onAction;
-  final void Function(SmartInsight insight)? onSnooze;
-  final void Function(SmartInsight insight)? onAsk;
-
-  const _InsightPage({
-    super.key,
-    required this.insight,
-    required this.tone,
-    this.onAction,
-    this.onSnooze,
-    this.onAsk,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final loc = AppLocalizations.of(context)!;
-    final accent = InsightTones.colour(tone, scheme);
-    final accentText = InsightTones.text(tone, scheme);
-    final action = onAction;
-    final snooze = onSnooze;
-    final ask = onAsk;
-    final label = insight.actionLabel;
-    final showAction = action != null && insight.hasAction && label != null;
-    final showSnooze = snooze != null && insight.key != null;
-
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          padding: const EdgeInsets.all(8),
-          decoration: BoxDecoration(
-            color: accent.withValues(alpha: 0.16),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          child: Icon(insight.icon, color: accentText, size: 20),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                insight.heading,
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w800,
-                  color: tone == InsightTone.tip
-                      ? scheme.onSurface
-                      : accentText,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                insight.body,
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w500,
-                  color: scheme.onSurface.withValues(alpha: 0.85),
-                  height: 1.4,
-                ),
-              ),
-              if (showAction || showSnooze || ask != null) ...[
-                const SizedBox(height: 10),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: [
-                    if (showAction)
-                      _PillButton(
-                        icon: insight.actionIcon ?? Icons.edit_rounded,
-                        label: label,
-                        foreground: scheme.onPrimary,
-                        background: scheme.primary,
-                        onTap: () => action(insight),
-                      ),
-                    if (showSnooze)
-                      _PillButton(
-                        icon: Icons.snooze_rounded,
-                        label: loc.insightSnooze,
-                        foreground: scheme.onSurfaceVariant,
-                        background: scheme.onSurfaceVariant.withValues(
-                          alpha: 0.10,
-                        ),
-                        onTap: () => snooze(insight),
-                      ),
-                    if (ask != null)
-                      _PillButton(
-                        icon: Icons.auto_awesome_rounded,
-                        label: loc.insightAsk,
-                        foreground: scheme.primary,
-                        background: scheme.primary.withValues(alpha: 0.10),
-                        onTap: () => ask(insight),
-                      ),
-                  ],
-                ),
-              ],
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _PillButton extends StatelessWidget {
-  final IconData icon;
-  final String label;
-  final Color foreground;
-  final Color background;
-  final VoidCallback onTap;
-
-  const _PillButton({
-    required this.icon,
-    required this.label,
-    required this.foreground,
-    required this.background,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: background,
-      shape: const StadiumBorder(),
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(icon, size: 15, color: foreground),
-              const SizedBox(width: 6),
-              Text(
-                label,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  fontWeight: FontWeight.w700,
-                  color: foreground,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 }
