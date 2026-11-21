@@ -643,7 +643,7 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Material(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(16),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(10, 10, 6, 10),
@@ -780,7 +780,7 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
       child: Material(
         color: item.isUrgent && !item.done
             ? scheme.errorContainer.withValues(alpha: 0.45)
-            : scheme.surfaceContainerHighest,
+            : scheme.surface,
         borderRadius: BorderRadius.circular(16),
         clipBehavior: Clip.antiAlias,
         child: InkWell(
@@ -857,7 +857,7 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Material(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(16),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(14, 12, 10, 10),
@@ -1057,7 +1057,7 @@ class _SummaryCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(16, 16, 8, 14),
       decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
@@ -1119,7 +1119,7 @@ class _SummaryCard extends StatelessWidget {
               child: LinearProgressIndicator(
                 value: progress,
                 minHeight: 8,
-                backgroundColor: scheme.surface,
+                backgroundColor: scheme.primary.withValues(alpha: 0.12),
               ),
             ),
           ),

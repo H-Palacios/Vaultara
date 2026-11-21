@@ -137,10 +137,10 @@ class _PlansScreenState extends State<PlansScreen> {
       switch (event.type) {
         case SubscriptionUiEventType.premiumEnabled:
           _onPremiumGranted();
-          _returnHomeAfterPurchase();
+          _returnHomeAfterPurchase(event.tier);
           break;
         case SubscriptionUiEventType.premiumRestored:
-          ActionFeedbackSnackbar.showPremiumRestored(context);
+          ActionFeedbackSnackbar.showPlanRestored(context, event.tier);
           _onPremiumGranted();
           break;
         case SubscriptionUiEventType.otherAccount:
@@ -167,7 +167,7 @@ class _PlansScreenState extends State<PlansScreen> {
     widget.onUpgrade();
   }
 
-  void _returnHomeAfterPurchase() {
+  void _returnHomeAfterPurchase(PlanTier tier) {
     if (_returnedHome) return;
     _returnedHome = true;
     final navigator = navigatorKey.currentState;
@@ -176,14 +176,14 @@ class _PlansScreenState extends State<PlansScreen> {
         shell == null ||
         !shell.mounted ||
         shell.tutorialActive) {
-      ActionFeedbackSnackbar.showPremiumEnabled(context);
+      ActionFeedbackSnackbar.showPlanEnabled(context, tier);
       return;
     }
     navigator.popUntil((route) => route.isFirst);
     shell.update(() => shell.index = 0);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!shell.mounted) return;
-      ActionFeedbackSnackbar.showPremiumEnabled(shell.context);
+      ActionFeedbackSnackbar.showPlanEnabled(shell.context, tier);
     });
   }
 

@@ -10,6 +10,7 @@ import 'package:vaultara/features/auth/services/backup_code_service.dart';
 import 'package:vaultara/features/auth/services/two_step_service.dart';
 import 'package:vaultara/features/support/services/support_email_service.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 class MfaChallenge {
   const MfaChallenge._();
@@ -51,7 +52,7 @@ class MfaChallenge {
           );
           return light ? Theme(data: AppThemes.light(), child: sheet) : sheet;
         },
-    );
+      );
       if (result is UserCredential) return result;
       if (identical(result, backupCodeUsed)) return _retryAfterBackup(action);
       throw FirebaseAuthException(code: cancelledCode);
@@ -317,12 +318,20 @@ class _MfaChallengeSheetState extends State<MfaChallengeSheet> {
   Future<void> _contactSupport() async {
     final loc = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.maybeOf(context);
+    final scheme = Theme.of(context).colorScheme;
     try {
       await SupportEmailService.contactSupport(
         subject: loc.twoStepSupportSubject,
       );
     } catch (_) {
-      messenger?.showSnackBar(SnackBar(content: Text(loc.supportEmailError)));
+      if (messenger != null) {
+        ActionFeedbackSnackbar.showOn(
+          messenger,
+          scheme,
+          loc.supportEmailError,
+          kind: SnackKind.error,
+        );
+      }
     }
   }
 

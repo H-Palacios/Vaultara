@@ -186,7 +186,7 @@ class WalletPanel extends StatelessWidget {
       side: border == null ? BorderSide.none : BorderSide(color: border!),
     );
     return Material(
-      color: colour ?? scheme.surfaceContainerHighest,
+      color: colour ?? scheme.surface,
       shape: shape,
       clipBehavior: Clip.antiAlias,
       child: InkWell(

@@ -72,7 +72,7 @@ class EditorCountryField extends StatelessWidget {
           decoration:
               AppInputDecorations.field(
                 context,
-                labelText: '${_label(loc)} ${loc.detailsOptional}',
+                labelText: _label(loc),
                 showLabel: true,
                 prefixIcon: const Icon(Icons.public_rounded),
               ).copyWith(
@@ -225,8 +225,7 @@ class _EditorProviderFieldState extends State<EditorProviderField> {
               decoration:
                   AppInputDecorations.field(
                     context,
-                    labelText:
-                        '${label(loc, widget.kind)} ${loc.detailsOptional}',
+                    labelText: label(loc, widget.kind),
                     showLabel: true,
                     prefixIcon: Icon(
                       widget.kind == RecordProviderKind.bank
@@ -320,7 +319,7 @@ class _EditorReferenceFieldState extends State<EditorReferenceField> {
         decoration:
             AppInputDecorations.field(
               context,
-              labelText: '${loc.detailsReference} ${loc.detailsOptional}',
+              labelText: loc.detailsReference,
               showLabel: true,
               prefixIcon: const Icon(Icons.tag_rounded),
             ).copyWith(
@@ -338,9 +337,11 @@ class _EditorReferenceFieldState extends State<EditorReferenceField> {
                     : loc.detailsReferenceShow,
                 onPressed: () => setState(() => _shown = !_shown),
                 icon: Icon(
+                  // Same as the password fields: a crossed-out eye while the
+                  // number is hidden, an open eye while it is shown.
                   _shown
-                      ? Icons.visibility_off_rounded
-                      : Icons.visibility_rounded,
+                      ? Icons.visibility_rounded
+                      : Icons.visibility_off_rounded,
                 ),
               ),
             ),

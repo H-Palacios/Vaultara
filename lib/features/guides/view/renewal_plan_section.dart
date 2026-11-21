@@ -11,6 +11,7 @@ import 'package:vaultara/features/records/logic/record_details.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_state.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 /// The renewal coach's part of the renewal guide: the record's own plan
 /// with official links, the booking page and the appointment, or a button
@@ -133,16 +134,13 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
       _plan = saved ?? plan;
     });
     if (next == 0) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(loc.coachThanks),
-        action: next < 0 && !widget.record.locked
-            ? SnackBarAction(
-                label: loc.coachRecheck,
-                onPressed: () => _askCoach(recheck: true),
-              )
-            : null,
-      ),
+    final recheck = next < 0 && !widget.record.locked;
+    ActionFeedbackSnackbar.show(
+      context,
+      loc.coachThanks,
+      icon: next > 0 ? Icons.thumb_up_alt_rounded : Icons.check_circle_rounded,
+      actionLabel: recheck ? loc.coachRecheck : null,
+      onAction: recheck ? () => _askCoach(recheck: true) : null,
     );
   }
 

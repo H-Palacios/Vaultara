@@ -7,6 +7,7 @@ import 'package:vaultara/features/household/logic/record_owner.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/features/family/view/person_avatar.dart';
+import 'package:vaultara/core/util/initials.dart';
 
 class PersonChip extends StatelessWidget {
   final String? holderId;
@@ -24,6 +25,9 @@ class PersonChip extends StatelessWidget {
         if (person == null) return const SizedBox.shrink();
 
         final scheme = Theme.of(context).colorScheme;
+        final short = Initials.shortNames({
+          for (final p in PeopleRepository.people.value) p.id: p.name,
+        });
 
         return Row(
           mainAxisSize: MainAxisSize.min,
@@ -33,7 +37,7 @@ class PersonChip extends StatelessWidget {
             ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 110),
               child: Text(
-                person.name,
+                short[person.id] ?? person.name,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(

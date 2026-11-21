@@ -16,6 +16,7 @@ import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/core/theme/app_input_decorations.dart';
 
 /// Starts a plan for [event] and opens it. If a plan for the same event is
 /// already in progress, that one opens instead.
@@ -359,8 +360,13 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
                 const SizedBox(height: 20),
                 _label(loc.lifePlanDestination, scheme),
                 Material(
-                  color: scheme.surfaceContainerHighest,
-                  borderRadius: BorderRadius.circular(14),
+                  color: AppInputDecorations.fillFor(scheme),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(14),
+                    side: BorderSide(
+                      color: AppInputDecorations.borderFor(scheme),
+                    ),
+                  ),
                   child: ListTile(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),

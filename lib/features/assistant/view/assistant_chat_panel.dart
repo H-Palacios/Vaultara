@@ -94,12 +94,10 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
     final done = await AssistantService.forgetLearnedWords();
     if (!mounted) return;
     setState(() => _working = false);
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          done ? loc.assistantForgetWordsDone : loc.assistantErrorFailed,
-        ),
-      ),
+    ActionFeedbackSnackbar.show(
+      context,
+      done ? loc.assistantForgetWordsDone : loc.assistantErrorFailed,
+      kind: done ? SnackKind.success : SnackKind.error,
     );
   }
 

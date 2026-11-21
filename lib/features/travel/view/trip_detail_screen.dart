@@ -25,6 +25,7 @@ import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/l10n/plural_labels.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 class TripDetailScreen extends StatefulWidget {
   final String tripId;
@@ -45,10 +46,11 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
   @override
   void initState() {
     super.initState();
-    _watcher = UserDataWatcher(onChanged: () {
-      if (mounted) setState(() {});
-    })
-      ..start();
+    _watcher = UserDataWatcher(
+      onChanged: () {
+        if (mounted) setState(() {});
+      },
+    )..start();
     TutorialController.instance
       ..register(TutorialStep.travelTripDocuments, _documentsKey)
       ..register(TutorialStep.travelTripChecklist, _checklistKey);
@@ -102,8 +104,7 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
       await TripRepository.saveChecked(trip.copyWith(flights: sorted));
     } on TripSaveException {
       if (!mounted) return;
-      ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text(loc.travelSaveFailed)));
+      ActionFeedbackSnackbar.showError(context, loc.travelSaveFailed);
     }
   }
 
@@ -437,7 +438,10 @@ class _TravellerHeader extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 4),
       child: Row(
         children: [
-          PersonAvatar(person: PeopleRepository.byId(result.holderId), size: 28),
+          PersonAvatar(
+            person: PeopleRepository.byId(result.holderId),
+            size: 28,
+          ),
           const SizedBox(width: 10),
           Expanded(
             child: Text(
@@ -477,7 +481,10 @@ class _OverviewCard extends StatelessWidget {
           Flexible(
             child: Text(
               text,
-              style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w700),
+              style: const TextStyle(
+                fontSize: 12.5,
+                fontWeight: FontWeight.w700,
+              ),
             ),
           ),
         ],
@@ -944,13 +951,17 @@ class _RemindersCard extends StatelessWidget {
     final today = Dates.only(DateTime.now());
     final days = [
       for (final offset in TripReminders.daysBefore)
-        (offset, DateTime(trip.start.year, trip.start.month, trip.start.day - offset)),
+        (
+          offset,
+          DateTime(trip.start.year, trip.start.month, trip.start.day - offset),
+        ),
     ];
     final visaItems = [
       for (final item in VisaCheck.pendingItems(trip))
         (item, VisaCheck.applyByForItem(trip, item)!),
     ]..sort((a, b) => a.$2.compareTo(b.$2));
-    final anyAhead = days.any((d) => d.$2.isAfter(today)) ||
+    final anyAhead =
+        days.any((d) => d.$2.isAfter(today)) ||
         visaItems.any((v) => v.$2.isAfter(today));
 
     return Material(
@@ -973,85 +984,85 @@ class _RemindersCard extends StatelessWidget {
           childrenPadding: const EdgeInsets.fromLTRB(14, 0, 14, 8),
           expandedCrossAxisAlignment: CrossAxisAlignment.start,
           children: [
-          Text(
-            anyAhead ? loc.travelRemindersBody : loc.travelRemindersPassed,
-            style: TextStyle(
-              fontSize: 12.5,
-              height: 1.35,
-              color: scheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(height: 6),
-          for (final (offset, day) in days)
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6),
-              child: Opacity(
-                opacity: day.isAfter(today) ? 1 : 0.5,
-                child: Row(
-                  children: [
-                    Icon(
-                      day.isAfter(today)
-                          ? Icons.notifications_rounded
-                          : Icons.notifications_off_outlined,
-                      size: 18,
-                      color: scheme.primary,
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: Text(
-                        loc.travelReminderBefore(offset),
-                        style: const TextStyle(
-                          fontSize: 13.5,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      TravelText.date(context, day),
-                      style: TextStyle(
-                        fontSize: 12.5,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ],
-                ),
+            Text(
+              anyAhead ? loc.travelRemindersBody : loc.travelRemindersPassed,
+              style: TextStyle(
+                fontSize: 12.5,
+                height: 1.35,
+                color: scheme.onSurfaceVariant,
               ),
             ),
-          for (final (item, day) in visaItems)
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6),
-              child: Opacity(
-                opacity: day.isAfter(today) ? 1 : 0.5,
-                child: Row(
-                  children: [
-                    Icon(
-                      day.isAfter(today)
-                          ? Icons.approval_rounded
-                          : Icons.notifications_off_outlined,
-                      size: 18,
-                      color: scheme.primary,
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: Text(
-                        item.label,
-                        style: const TextStyle(
-                          fontSize: 13.5,
-                          fontWeight: FontWeight.w600,
+            const SizedBox(height: 6),
+            for (final (offset, day) in days)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 6),
+                child: Opacity(
+                  opacity: day.isAfter(today) ? 1 : 0.5,
+                  child: Row(
+                    children: [
+                      Icon(
+                        day.isAfter(today)
+                            ? Icons.notifications_rounded
+                            : Icons.notifications_off_outlined,
+                        size: 18,
+                        color: scheme.primary,
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          loc.travelReminderBefore(offset),
+                          style: const TextStyle(
+                            fontSize: 13.5,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
-                    ),
-                    Text(
-                      TravelText.date(context, day),
-                      style: TextStyle(
-                        fontSize: 12.5,
-                        color: scheme.onSurfaceVariant,
+                      Text(
+                        TravelText.date(context, day),
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          color: scheme.onSurfaceVariant,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
+            for (final (item, day) in visaItems)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 6),
+                child: Opacity(
+                  opacity: day.isAfter(today) ? 1 : 0.5,
+                  child: Row(
+                    children: [
+                      Icon(
+                        day.isAfter(today)
+                            ? Icons.approval_rounded
+                            : Icons.notifications_off_outlined,
+                        size: 18,
+                        color: scheme.primary,
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          item.label,
+                          style: const TextStyle(
+                            fontSize: 13.5,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        TravelText.date(context, day),
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
           ],
         ),
       ),
@@ -1104,56 +1115,58 @@ class _ChecklistCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.fromLTRB(4, 6, 4, 10),
         child: Column(
-        children: [
-          for (final item in trip.checklist)
-            CheckboxListTile(
-              subtitle: _applyBy(context, loc, item),
-              value: item.done,
-              onChanged: (_) => TripRepository.toggleItem(trip, item.id),
-              controlAffinity: ListTileControlAffinity.leading,
-              dense: true,
-              title: Text(
-                item.label,
-                style: TextStyle(
-                  fontSize: 14,
-                  decoration: item.done ? TextDecoration.lineThrough : null,
-                  color: item.done ? scheme.onSurfaceVariant : scheme.onSurface,
+          children: [
+            for (final item in trip.checklist)
+              CheckboxListTile(
+                subtitle: _applyBy(context, loc, item),
+                value: item.done,
+                onChanged: (_) => TripRepository.toggleItem(trip, item.id),
+                controlAffinity: ListTileControlAffinity.leading,
+                dense: true,
+                title: Text(
+                  item.label,
+                  style: TextStyle(
+                    fontSize: 14,
+                    decoration: item.done ? TextDecoration.lineThrough : null,
+                    color: item.done
+                        ? scheme.onSurfaceVariant
+                        : scheme.onSurface,
+                  ),
+                ),
+                secondary: IconButton(
+                  icon: const Icon(Icons.close_rounded, size: 18),
+                  tooltip: loc.delete,
+                  onPressed: () => TripRepository.removeItem(trip, item.id),
                 ),
               ),
-              secondary: IconButton(
-                icon: const Icon(Icons.close_rounded, size: 18),
-                tooltip: loc.delete,
-                onPressed: () => TripRepository.removeItem(trip, item.id),
-              ),
-            ),
-          if (!full)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(12, 6, 8, 0),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: TextField(
-                      controller: controller,
-                      maxLength: 80,
-                      textInputAction: TextInputAction.done,
-                      onSubmitted: (_) => onAdd(),
-                      decoration: InputDecoration(
-                        hintText: loc.travelChecklistAddHint,
-                        counterText: '',
-                        isDense: true,
-                        border: InputBorder.none,
+            if (!full)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(12, 6, 8, 0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        controller: controller,
+                        maxLength: 80,
+                        textInputAction: TextInputAction.done,
+                        onSubmitted: (_) => onAdd(),
+                        decoration: InputDecoration(
+                          hintText: loc.travelChecklistAddHint,
+                          counterText: '',
+                          isDense: true,
+                          border: InputBorder.none,
+                        ),
                       ),
                     ),
-                  ),
-                  TextButton.icon(
-                    onPressed: onAdd,
-                    icon: const Icon(Icons.add_rounded),
-                    label: Text(loc.travelChecklistAdd),
-                  ),
-                ],
+                    TextButton.icon(
+                      onPressed: onAdd,
+                      icon: const Icon(Icons.add_rounded),
+                      label: Text(loc.travelChecklistAdd),
+                    ),
+                  ],
+                ),
               ),
-            ),
-        ],
+          ],
         ),
       ),
     );

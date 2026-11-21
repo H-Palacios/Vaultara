@@ -3,6 +3,7 @@ import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/features/family/view/person_avatar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/util/initials.dart';
 
 class PersonPicker extends StatelessWidget {
   final String? holderId;
@@ -25,6 +26,11 @@ class PersonPicker extends StatelessWidget {
 
         final scheme = Theme.of(context).colorScheme;
         final loc = AppLocalizations.of(context)!;
+        // First names on the chips; the circle shows both initials, and the
+        // full name stays on the People screen.
+        final short = Initials.shortNames({
+          for (final p in people) p.id: p.name,
+        });
 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +63,7 @@ class PersonPicker extends StatelessWidget {
                   ChoiceChip(
                     avatar: PersonAvatar(person: person, size: 20),
                     label: Text(
-                      person.name,
+                      short[person.id] ?? person.name,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),

@@ -321,7 +321,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
                           child: MediaQuery.removePadding(
                             context: context,
                             removeTop: offline,
-                            child: child!,
+                            child: _LeaveFieldOnTapOutside(child: child!),
                           ),
                         ),
                       ],
@@ -433,6 +433,35 @@ class _PrivacyCover extends StatelessWidget {
           child: Center(child: Image.asset(AppBrand.logoAsset, width: 120)),
         ),
       ),
+    );
+  }
+}
+
+/// Tapping empty space anywhere lets go of the text field being typed in:
+/// the keyboard closes and an empty field shows its hint again instead of
+/// keeping the floating label. Taps on buttons, other fields and list items
+/// still go to them as usual.
+class _LeaveFieldOnTapOutside extends StatelessWidget {
+  const _LeaveFieldOnTapOutside({required this.child});
+
+  final Widget child;
+
+  static void _leave() {
+    final focus = FocusManager.instance.primaryFocus;
+    final ctx = focus?.context;
+    if (focus == null || ctx == null) return;
+    final typing =
+        ctx.widget is EditableText ||
+        ctx.findAncestorWidgetOfExactType<EditableText>() != null;
+    if (typing) focus.unfocus();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      behavior: HitTestBehavior.translucent,
+      onTap: _leave,
+      child: child,
     );
   }
 }

@@ -40,6 +40,7 @@ import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/features/guides/view/renewal_guide_sheet.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/view/trip_detail_screen.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 class InsightsScreen extends StatefulWidget {
   final bool isTutorialMode;
@@ -175,18 +176,16 @@ class _InsightsScreenState extends State<InsightsScreen>
     if (key == null) return;
     final loc = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
+    final scheme = Theme.of(context).colorScheme;
     await InsightSnoozes.snooze(key, days: SmartInsightService.snoozeDays);
-    messenger
-      ..hideCurrentSnackBar()
-      ..showSnackBar(
-        SnackBar(
-          content: Text(loc.insightSnoozed),
-          action: SnackBarAction(
-            label: loc.assistantUndo,
-            onPressed: () => InsightSnoozes.clear(key),
-          ),
-        ),
-      );
+    ActionFeedbackSnackbar.showOn(
+      messenger,
+      scheme,
+      loc.insightSnoozed,
+      icon: Icons.snooze_rounded,
+      actionLabel: loc.assistantUndo,
+      onAction: () => InsightSnoozes.clear(key),
+    );
   }
 
   void _ask(SmartInsight insight) {

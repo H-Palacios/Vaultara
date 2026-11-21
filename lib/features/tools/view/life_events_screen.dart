@@ -261,7 +261,7 @@ class _Tile extends StatelessWidget {
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(16),
       child: ListTile(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -304,7 +304,7 @@ class LifePlanCard extends StatelessWidget {
     final soon = !plan.isFinished && days != null && days >= 0 && days <= 7;
 
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         borderRadius: BorderRadius.circular(20),
@@ -361,7 +361,9 @@ class LifePlanCard extends StatelessWidget {
                         child: LinearProgressIndicator(
                           value: progress,
                           minHeight: 6,
-                          backgroundColor: scheme.surface,
+                          backgroundColor: scheme.primary.withValues(
+                            alpha: 0.12,
+                          ),
                         ),
                       ),
                     ],

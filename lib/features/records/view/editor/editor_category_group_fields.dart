@@ -68,16 +68,10 @@ class EditorCategoryGroupFields extends StatelessWidget {
             initialValue: selectedCategoryKey,
             isExpanded: isTamil,
             dropdownColor: scheme.surface,
-            style: TextStyle(
-              fontSize: baseSize,
-              color: scheme.onSurface,
-            ),
+            style: TextStyle(fontSize: baseSize, color: scheme.onSurface),
             hint: Text(
               loc.editorCategoryHint,
-              style: TextStyle(
-                fontSize: hintSize,
-                color: hintColour,
-              ),
+              style: TextStyle(fontSize: hintSize, color: hintColour),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
@@ -85,6 +79,7 @@ class EditorCategoryGroupFields extends StatelessWidget {
               context,
               labelText: loc.editorCategory,
               showLabel: selectedCategoryKey != null,
+              prefixIcon: const Icon(Icons.category_rounded),
               errorText: categoryError,
               hintFontSize: hintSize,
             ),
@@ -95,10 +90,7 @@ class EditorCategoryGroupFields extends StatelessWidget {
                   categoryLabelFor(key),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontSize: baseSize,
-                    color: scheme.onSurface,
-                  ),
+                  style: TextStyle(fontSize: baseSize, color: scheme.onSurface),
                 ),
               );
             }).toList(),
@@ -115,16 +107,10 @@ class EditorCategoryGroupFields extends StatelessWidget {
             initialValue: selectedSubcategory,
             isExpanded: isTamil,
             dropdownColor: scheme.surface,
-            style: TextStyle(
-              fontSize: baseSize,
-              color: scheme.onSurface,
-            ),
+            style: TextStyle(fontSize: baseSize, color: scheme.onSurface),
             hint: Text(
               loc.editorGroupHint,
-              style: TextStyle(
-                fontSize: hintSize,
-                color: hintColour,
-              ),
+              style: TextStyle(fontSize: hintSize, color: hintColour),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
@@ -132,6 +118,7 @@ class EditorCategoryGroupFields extends StatelessWidget {
               context,
               labelText: loc.editorGroup,
               showLabel: selectedSubcategory != null,
+              prefixIcon: const Icon(Icons.folder_open_rounded),
               errorText: subcategoryError,
               hintFontSize: hintSize,
             ),
@@ -142,10 +129,7 @@ class EditorCategoryGroupFields extends StatelessWidget {
                   groupLabelFor(key),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontSize: baseSize,
-                    color: scheme.onSurface,
-                  ),
+                  style: TextStyle(fontSize: baseSize, color: scheme.onSurface),
                 ),
               );
             }).toList(),
@@ -160,21 +144,23 @@ class EditorCategoryGroupFields extends StatelessWidget {
             focusNode: nameFocus,
             onChanged: onNameChanged,
             maxLength: NameValidator.maxLength,
-            buildCounter: (
-              context, {
-              required currentLength,
-              required isFocused,
-              required maxLength,
-            }) {
-              if (maxLength == null || currentLength < maxLength - 5) {
-                return null;
-              }
-              return Text('$currentLength/$maxLength');
-            },
+            buildCounter:
+                (
+                  context, {
+                  required currentLength,
+                  required isFocused,
+                  required maxLength,
+                }) {
+                  if (maxLength == null || currentLength < maxLength - 5) {
+                    return null;
+                  }
+                  return Text('$currentLength/$maxLength');
+                },
             decoration: AppInputDecorations.field(
               context,
               labelText: loc.editorRecordName,
               hintText: loc.editorRecordNameHint,
+              prefixIcon: const Icon(Icons.badge_rounded),
               focused: nameFocus.hasFocus,
               forceLabel: forceNameLabel,
               errorText: nameError,

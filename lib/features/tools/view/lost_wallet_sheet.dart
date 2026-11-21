@@ -8,6 +8,7 @@ import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/core/theme/app_input_decorations.dart';
 
 /// Asks whether the wallet was lost or stolen, when, and what went missing.
 /// Returns the plan to start, or the edited plan.
@@ -149,8 +150,11 @@ class _LostWalletSheetState extends State<_LostWalletSheet> {
             ),
             const SizedBox(height: 8),
             Material(
-              color: scheme.surfaceContainerHighest,
-              borderRadius: BorderRadius.circular(14),
+              color: AppInputDecorations.fillFor(scheme),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14),
+                side: BorderSide(color: AppInputDecorations.borderFor(scheme)),
+              ),
               child: ListTile(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
@@ -245,13 +249,15 @@ class _Choice extends StatelessWidget {
       button: true,
       child: Material(
         color: selected
-            ? scheme.primaryContainer
-            : scheme.surfaceContainerHighest,
+            ? scheme.primary.withValues(alpha: 0.10)
+            : AppInputDecorations.fillFor(scheme),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(18),
           side: BorderSide(
-            color: selected ? scheme.primary : Colors.transparent,
-            width: 2,
+            color: selected
+                ? scheme.primary
+                : AppInputDecorations.borderFor(scheme),
+            width: selected ? 2 : 1,
           ),
         ),
         clipBehavior: Clip.antiAlias,

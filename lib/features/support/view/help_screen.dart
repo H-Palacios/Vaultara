@@ -6,6 +6,7 @@ import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
 import 'package:vaultara/features/support/services/support_email_service.dart';
 import 'package:vaultara/features/tutorials/view/tutorials_screen.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 /// Help in one place: tutorials, Ask Vaultara and email to support. It
 /// replaces the separate Support and Tutorials tiles on Profile.
@@ -20,9 +21,11 @@ class HelpScreen extends StatelessWidget {
       const ClipboardData(text: SupportEmailService.supportEmail),
     );
     if (!context.mounted) return;
-    ScaffoldMessenger.of(
+    ActionFeedbackSnackbar.show(
       context,
-    ).showSnackBar(SnackBar(content: Text(loc.helpAddressCopied)));
+      loc.helpAddressCopied,
+      icon: Icons.copy_rounded,
+    );
   }
 
   Future<void> _email(BuildContext context, bool isPremium) async {

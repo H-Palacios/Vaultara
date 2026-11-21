@@ -13,6 +13,7 @@ import 'package:vaultara/features/auth/services/verification_code_clipboard.dart
 import 'package:vaultara/features/auth/view/widget/branded_background.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 /// The second step of creating an account. The same screen shows whether or
 /// not the email already had an account: a new address gets a code, an
@@ -197,9 +198,11 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
         locale: loc.localeName,
       );
       if (!mounted) return;
-      ScaffoldMessenger.of(
+      ActionFeedbackSnackbar.show(
         context,
-      ).showSnackBar(SnackBar(content: Text(loc.signUpResent)));
+        loc.signUpResent,
+        icon: Icons.mark_email_read_rounded,
+      );
       _startCooldown();
     } on SignUpException catch (e) {
       if (!mounted) return;
@@ -221,9 +224,12 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
     if (!mounted) return;
 
     void notFound() {
-      ScaffoldMessenger.of(
+      ActionFeedbackSnackbar.show(
         context,
-      ).showSnackBar(SnackBar(content: Text(loc.emailAppNotFound)));
+        loc.emailAppNotFound,
+        kind: SnackKind.notice,
+        icon: Icons.mail_outline_rounded,
+      );
     }
 
     switch (result) {
@@ -265,7 +271,7 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
               ),
             ),
           ),
-    );
+        );
         if (chosen == null) return;
         final opened = await EmailAppLauncher.open(chosen);
         if (!mounted || opened) return;

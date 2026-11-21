@@ -34,6 +34,7 @@ class EditorNotesField extends StatelessWidget {
           context,
           labelText: loc.editorNotes,
           hintText: loc.addNotesHint,
+          prefixIcon: const Icon(Icons.notes_rounded),
           focused: focusNode.hasFocus,
           forceLabel: forceLabel,
           hintFontSize: hintSize,

@@ -22,13 +22,14 @@ class EditorRepeatField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final look = _PickerLook.of(context);
 
     final items = <DropdownMenuItem<int>>[
-      DropdownMenuItem<int>(value: 0, child: Text(loc.repeatNever)),
+      DropdownMenuItem<int>(value: 0, child: look.item(loc.repeatNever)),
       for (final months in TrackedItem.repeatOptions)
         DropdownMenuItem<int>(
           value: months,
-          child: Text(loc.repeatEvery(months)),
+          child: look.item(loc.repeatEvery(months)),
         ),
     ];
 
@@ -36,6 +37,8 @@ class EditorRepeatField extends StatelessWidget {
       key: ValueKey('repeat-${value ?? 0}'),
       initialValue: value ?? 0,
       isExpanded: true,
+      dropdownColor: look.menu,
+      style: look.text,
       items: items,
       onChanged: enabled
           ? (picked) => onChanged(picked == null || picked == 0 ? null : picked)
@@ -76,9 +79,12 @@ class EditorLockTile extends StatelessWidget {
         loc.recordLockTitle,
         style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w700),
       ),
+      // The same size as the help lines under the other fields.
       subtitle: Text(
         loc.recordLockSubtitle,
-        style: TextStyle(fontSize: 12.5, color: scheme.onSurfaceVariant),
+        style: Theme.of(
+          context,
+        ).textTheme.bodySmall?.copyWith(color: scheme.onSurfaceVariant),
       ),
     );
   }
@@ -104,6 +110,7 @@ class EditorLeadField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final look = _PickerLook.of(context);
     final int current = value != null && value! > 0 ? value! : 0;
     final options = <int>{
       ...TrackedItem.leadOptions,
@@ -114,19 +121,31 @@ class EditorLeadField extends StatelessWidget {
       key: ValueKey('lead-$current'),
       initialValue: current,
       isExpanded: true,
+      dropdownColor: look.menu,
+      style: look.text,
       items: [
-        DropdownMenuItem<int>(value: 0, child: Text(loc.leadNotSet)),
+        DropdownMenuItem<int>(value: 0, child: look.item(loc.leadNotSet)),
         for (final days in options)
-          DropdownMenuItem<int>(value: days, child: Text(labelFor(loc, days))),
+          DropdownMenuItem<int>(
+            value: days,
+            child: look.item(labelFor(loc, days)),
+          ),
       ],
       onChanged: enabled
           ? (picked) => onChanged(picked == null || picked == 0 ? null : picked)
           : null,
-      decoration: AppInputDecorations.field(
-        context,
-        labelText: loc.leadLabel,
-        prefixIcon: const Icon(Icons.hourglass_top_rounded),
-      ).copyWith(helperText: loc.leadHelper, helperMaxLines: 2),
+      // The label always shows, so "Not set" reads as "Renewal time: Not
+      // set". The help line says what happens with the choice made.
+      decoration:
+          AppInputDecorations.field(
+            context,
+            labelText: loc.leadLabel,
+            showLabel: true,
+            prefixIcon: const Icon(Icons.hourglass_top_rounded),
+          ).copyWith(
+            helperText: current > 0 ? loc.leadHelper : loc.leadHelperNotSet,
+            helperMaxLines: 2,
+          ),
     );
   }
 }
@@ -275,4 +294,27 @@ class EditorLostLineField extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Menu colour and text size shared with the Category and Group pickers, so
+/// every dropdown in the editor looks the same.
+class _PickerLook {
+  const _PickerLook(this.menu, this.text);
+
+  final Color menu;
+  final TextStyle text;
+
+  factory _PickerLook.of(BuildContext context) {
+    final theme = Theme.of(context);
+    return _PickerLook(
+      theme.colorScheme.surface,
+      TextStyle(
+        fontSize: theme.textTheme.bodyMedium?.fontSize ?? 14.0,
+        color: theme.colorScheme.onSurface,
+      ),
+    );
+  }
+
+  Widget item(String label) =>
+      Text(label, maxLines: 1, overflow: TextOverflow.ellipsis, style: text);
 }

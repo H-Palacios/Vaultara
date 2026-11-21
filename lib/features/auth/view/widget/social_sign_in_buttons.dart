@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:vaultara/features/auth/services/social_sign_in.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 /// "Continue with Google" and, on iPhone and iPad, "Continue with Apple",
 /// followed by an "or" divider. A tap signs in or creates the account in one
@@ -52,9 +53,7 @@ class _SocialSignInButtonsState extends State<SocialSignInButtons> {
       case SocialSignInOutcome.failed:
         message = loc.authErrorSignInFailed;
     }
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(SnackBar(content: Text(message)));
+    ActionFeedbackSnackbar.showError(context, message);
   }
 
   Widget _button({

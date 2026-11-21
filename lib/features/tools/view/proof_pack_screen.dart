@@ -117,7 +117,7 @@ class _ProofPackScreenState extends State<ProofPackScreen> {
                   const SizedBox(height: 4),
                   for (final record in records) ...[
                     Material(
-                      color: scheme.surfaceContainerHighest,
+                      color: scheme.surface,
                       borderRadius: BorderRadius.circular(14),
                       child: CheckboxListTile(
                         shape: RoundedRectangleBorder(

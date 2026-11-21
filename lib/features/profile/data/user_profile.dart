@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/profile/data/avatar_repository.dart';
+import 'package:vaultara/core/util/initials.dart';
 
 class UserProfile {
   static const int companyNameMaxLength = 80;
@@ -27,17 +28,9 @@ class UserProfile {
     return UserProfile(fullName: name, email: user?.email ?? '');
   }
 
-  /// Two initials from the full name, or "?" when there is nothing to use.
-  String get initials {
-    final parts = fullName
-        .trim()
-        .split(' ')
-        .where((p) => p.trim().isNotEmpty)
-        .toList();
-
-    if (parts.isEmpty) return '?';
-    return parts.take(2).map((p) => p[0]).join().toUpperCase();
-  }
+  /// First and last initial from the full name, or "?" when there is
+  /// nothing to use.
+  String get initials => Initials.of(fullName);
 
   static Future<UserProfile> load() async {
     final user = FirebaseAuth.instance.currentUser;
@@ -89,11 +82,10 @@ class UserProfile {
     if (trimmed.length > companyNameMaxLength) {
       trimmed = trimmed.substring(0, companyNameMaxLength);
     }
-    await FirebaseFirestore.instance
-        .collection('users')
-        .doc(user.uid)
-        .update(<String, dynamic>{
-      'companyName': trimmed.isEmpty ? FieldValue.delete() : trimmed,
-    });
+    await FirebaseFirestore.instance.collection('users').doc(user.uid).update(
+      <String, dynamic>{
+        'companyName': trimmed.isEmpty ? FieldValue.delete() : trimmed,
+      },
+    );
   }
 }

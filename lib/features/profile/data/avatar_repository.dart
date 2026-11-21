@@ -8,6 +8,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
+import 'package:vaultara/core/util/initials.dart';
 
 enum AvatarStatus { none, loading, ready, failed }
 
@@ -29,8 +30,9 @@ class AvatarRepository {
 
   static const int maxBytes = 2 * 1024 * 1024;
 
-  static final ValueNotifier<AvatarState> state =
-      ValueNotifier<AvatarState>(AvatarState.none);
+  static final ValueNotifier<AvatarState> state = ValueNotifier<AvatarState>(
+    AvatarState.none,
+  );
 
   /// Initials of the signed-in user, known straight away from the sign-in
   /// account and the last saved name, so no screen waits for the network.
@@ -65,16 +67,9 @@ class AvatarRepository {
   }
 
   static String initialsOf(String name, String email) {
-    final parts = name
-        .trim()
-        .split(' ')
-        .where((p) => p.trim().isNotEmpty)
-        .toList();
-    if (parts.isNotEmpty) {
-      return parts.take(2).map((p) => p[0]).join().toUpperCase();
-    }
+    if (name.trim().isNotEmpty) return Initials.of(name);
     final mail = email.trim();
-    return mail.isEmpty ? '' : mail[0].toUpperCase();
+    return mail.isEmpty ? '' : Initials.of(mail, fallback: '');
   }
 
   static String _photoKey(String uid) => 'avatar_cache_v1_$uid';
@@ -149,10 +144,11 @@ class AvatarRepository {
       _refreshInitials();
       _restoring = _restore(uid);
       _nameSub?.cancel();
-      _nameSub = PlanRepository.userDocStream<String>(
-        (data) => (data?['fullName'] as String?)?.trim() ?? '',
-        '',
-      ).distinct().listen(
+      _nameSub =
+          PlanRepository.userDocStream<String>(
+            (data) => (data?['fullName'] as String?)?.trim() ?? '',
+            '',
+          ).distinct().listen(
             _onName,
             onError: (Object e, StackTrace s) =>
                 ErrorReporter.record(e, s, 'name_listener'),
@@ -161,8 +157,11 @@ class AvatarRepository {
     if (_sub == null) {
       _sub = PlanRepository.userDocStream<String>(_keyFrom, '')
           .distinct()
-          .listen(_onKey, onError: (Object e, StackTrace s) =>
-        ErrorReporter.record(e, s, 'avatar_listener'));
+          .listen(
+            _onKey,
+            onError: (Object e, StackTrace s) =>
+                ErrorReporter.record(e, s, 'avatar_listener'),
+          );
       return;
     }
     if (state.value.status == AvatarStatus.failed && _currentKey.isNotEmpty) {
@@ -201,8 +200,7 @@ class AvatarRepository {
       state.value = AvatarState.loading;
     }
     try {
-      final bytes =
-          await FirebaseStorage.instance.ref(path).getData(maxBytes);
+      final bytes = await FirebaseStorage.instance.ref(path).getData(maxBytes);
       if (generation != _generation) return;
       if (bytes == null || bytes.isEmpty) {
         state.value = AvatarState.failed;
@@ -224,7 +222,9 @@ class AvatarRepository {
     if (jpeg.length > maxBytes) throw StateError('too-large');
 
     final path = pathFor(user.uid);
-    await FirebaseStorage.instance.ref(path).putData(
+    await FirebaseStorage.instance
+        .ref(path)
+        .putData(
           jpeg,
           SettableMetadata(
             contentType: 'image/jpeg',
@@ -241,13 +241,9 @@ class AvatarRepository {
     state.value = AvatarState(AvatarStatus.ready, jpeg);
     unawaited(_remember(key, jpeg));
 
-    await FirebaseFirestore.instance
-        .collection('users')
-        .doc(user.uid)
-        .update(<String, dynamic>{
-      'avatarPath': path,
-      'avatarVersion': version,
-    });
+    await FirebaseFirestore.instance.collection('users').doc(user.uid).update(
+      <String, dynamic>{'avatarPath': path, 'avatarVersion': version},
+    );
   }
 
   static Future<void> remove() async {
@@ -267,13 +263,12 @@ class AvatarRepository {
     state.value = AvatarState.none;
     unawaited(_forgetStored());
 
-    await FirebaseFirestore.instance
-        .collection('users')
-        .doc(user.uid)
-        .update(<String, dynamic>{
-      'avatarPath': FieldValue.delete(),
-      'avatarVersion': FieldValue.delete(),
-    });
+    await FirebaseFirestore.instance.collection('users').doc(user.uid).update(
+      <String, dynamic>{
+        'avatarPath': FieldValue.delete(),
+        'avatarVersion': FieldValue.delete(),
+      },
+    );
   }
 
   static void clearForSignOut() {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/features/profile/view/widgets/my_avatar.dart';
+import 'package:vaultara/core/util/initials.dart';
 
 class PersonAvatar extends StatelessWidget {
   final Person? person;
@@ -8,21 +9,19 @@ class PersonAvatar extends StatelessWidget {
 
   const PersonAvatar({super.key, required this.person, this.size = 40});
 
-  String _initial(String name) {
-    final trimmed = name.trim();
-    if (trimmed.isEmpty) return '?';
-    return String.fromCharCode(trimmed.runes.first).toUpperCase();
-  }
-
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final p = person;
 
     if (p == null) {
-      return MyAvatar(size: size, fallback: InitialsAvatar(size: size));
+      return MyAvatar(
+        size: size,
+        fallback: InitialsAvatar(size: size),
+      );
     }
 
+    final letters = Initials.of(p.name);
     return Container(
       width: size,
       height: size,
@@ -32,9 +31,10 @@ class PersonAvatar extends StatelessWidget {
       ),
       alignment: Alignment.center,
       child: Text(
-        _initial(p.name),
+        letters,
+        maxLines: 1,
         style: TextStyle(
-          fontSize: size * 0.42,
+          fontSize: Initials.fontSize(letters, size),
           fontWeight: FontWeight.w800,
           color: scheme.primary,
           height: 1,

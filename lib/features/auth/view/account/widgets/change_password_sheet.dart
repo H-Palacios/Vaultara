@@ -11,6 +11,7 @@ import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 import 'package:vaultara/features/auth/view/widget/password_strength_meter.dart';
 import 'package:vaultara/features/security/logic/pwned_passwords.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 Future<bool> showChangePasswordSheet(BuildContext context) async {
   final changed = await AppSheet.show<bool>(
@@ -19,7 +20,7 @@ Future<bool> showChangePasswordSheet(BuildContext context) async {
     isDismissible: false,
     enableDrag: false,
     builder: (_) => const ChangePasswordSheet(),
-    );
+  );
   return changed == true;
 }
 
@@ -87,6 +88,7 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
     FocusManager.instance.primaryFocus?.unfocus();
     final loc = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
+    final scheme = Theme.of(context).colorScheme;
     final navigator = Navigator.of(context);
 
     final current = _currentController.text;
@@ -141,8 +143,11 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
       );
       if (!mounted) return;
       navigator.pop(true);
-      messenger.showSnackBar(
-        SnackBar(content: Text(loc.secPasswordChanged)),
+      ActionFeedbackSnackbar.showOn(
+        messenger,
+        scheme,
+        loc.secPasswordChanged,
+        icon: Icons.lock_reset_rounded,
       );
     } on FirebaseAuthException catch (e) {
       if (!mounted || MfaChallenge.isCancelled(e)) return;
@@ -177,8 +182,9 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
       if (!mounted) return;
       final generic = uiError.message == loc.authErrorSignInFailed;
       setState(
-        () => _currentError =
-            generic ? loc.passwordErrorChangeFailed : uiError.message,
+        () => _currentError = generic
+            ? loc.passwordErrorChangeFailed
+            : uiError.message,
       );
     } catch (_) {
       if (!mounted) return;
@@ -192,10 +198,14 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
     if (_sendingReset) return;
     final loc = AppLocalizations.of(context)!;
     final messenger = ScaffoldMessenger.of(context);
+    final scheme = Theme.of(context).colorScheme;
     final email = FirebaseAuth.instance.currentUser?.email;
     if (email == null || email.isEmpty) {
-      messenger.showSnackBar(
-        SnackBar(content: Text(loc.passwordResetEmailFailed)),
+      ActionFeedbackSnackbar.showOn(
+        messenger,
+        scheme,
+        loc.passwordResetEmailFailed,
+        kind: SnackKind.error,
       );
       return;
     }
@@ -203,12 +213,18 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
     setState(() => _sendingReset = true);
     try {
       await PasswordResetService.sendPasswordResetEmail(email);
-      messenger.showSnackBar(
-        SnackBar(content: Text(loc.passwordResetEmailSent)),
+      ActionFeedbackSnackbar.showOn(
+        messenger,
+        scheme,
+        loc.passwordResetEmailSent,
+        icon: Icons.mark_email_read_rounded,
       );
     } catch (_) {
-      messenger.showSnackBar(
-        SnackBar(content: Text(loc.passwordResetEmailFailed)),
+      ActionFeedbackSnackbar.showOn(
+        messenger,
+        scheme,
+        loc.passwordResetEmailFailed,
+        kind: SnackKind.error,
       );
     } finally {
       if (mounted) setState(() => _sendingReset = false);
@@ -217,7 +233,9 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
 
   Widget _visibilityButton(bool visible, VoidCallback onPressed) {
     return IconButton(
-      tooltip: visible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
+      tooltip: visible
+          ? AppLocalizations.of(context)!.hidePassword
+          : AppLocalizations.of(context)!.showPassword,
       icon: Icon(
         visible ? Icons.visibility_rounded : Icons.visibility_off_rounded,
       ),
@@ -245,10 +263,7 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
             Text(
               loc.changePasswordTitle,
               textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w800,
-              ),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
             ),
             const SizedBox(height: 16),
             TextField(
@@ -329,8 +344,9 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
               children: [
                 Expanded(
                   child: TextButton(
-                    onPressed:
-                        _busy ? null : () => Navigator.of(context).pop(false),
+                    onPressed: _busy
+                        ? null
+                        : () => Navigator.of(context).pop(false),
                     child: Text(loc.cancel),
                   ),
                 ),

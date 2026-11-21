@@ -10,6 +10,7 @@ import 'package:vaultara/core/navigation/navigator_key.dart';
 import 'package:vaultara/features/auth/services/sign_out_service.dart';
 import 'package:vaultara/features/security/services/device_registry.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 class SessionGuard {
   const SessionGuard._();
@@ -209,12 +210,13 @@ class SessionGuard {
     final loc = AppLocalizations.of(ctx);
     final messenger = ScaffoldMessenger.maybeOf(ctx);
     if (loc == null || messenger == null) return;
-    messenger.showSnackBar(
-      SnackBar(
-        behavior: SnackBarBehavior.floating,
-        duration: const Duration(seconds: 6),
-        content: Text(message(loc)),
-      ),
+    ActionFeedbackSnackbar.showOn(
+      messenger,
+      Theme.of(ctx).colorScheme,
+      message(loc),
+      kind: SnackKind.notice,
+      icon: Icons.shield_outlined,
+      duration: const Duration(seconds: 6),
     );
   }
 

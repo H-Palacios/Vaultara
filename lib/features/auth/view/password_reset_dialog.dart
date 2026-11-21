@@ -5,6 +5,7 @@ import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/features/auth/services/password_reset_service.dart';
 import 'package:vaultara/features/auth/services/sign_up_service.dart';
 import 'package:vaultara/features/auth/view/widget/email_typo_hint.dart';
+import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
 class PasswordResetDialog extends StatefulWidget {
   final String initialEmail;
@@ -50,12 +51,15 @@ class _PasswordResetDialogState extends State<PasswordResetDialog> {
 
   void _completeWithNeutralMessage(AppLocalizations loc) {
     if (!mounted) return;
+    final messenger = ScaffoldMessenger.of(context);
+    final scheme = Theme.of(context).colorScheme;
     Navigator.of(context).pop();
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(loc.passwordResetIfAccount),
-        duration: const Duration(seconds: 6),
-      ),
+    ActionFeedbackSnackbar.showOn(
+      messenger,
+      scheme,
+      loc.passwordResetIfAccount,
+      icon: Icons.mark_email_read_rounded,
+      duration: const Duration(seconds: 6),
     );
   }
 

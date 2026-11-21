@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -30,6 +31,7 @@ import 'package:vaultara/features/travel/view/trip_detail_screen.dart';
 import 'package:vaultara/features/vault/view/record_photos_button.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_state.dart';
+import 'package:vaultara/core/theme/app_input_decorations.dart';
 
 /// A lost or stolen wallet in progress: block the cards, note the case
 /// number, replace the documents, then the steps that keep the damage
@@ -43,9 +45,14 @@ class LostWalletPlanView extends StatefulWidget {
   State<LostWalletPlanView> createState() => _LostWalletPlanViewState();
 }
 
-class _LostWalletPlanViewState extends State<LostWalletPlanView> {
+class _LostWalletPlanViewState extends State<LostWalletPlanView>
+    with WidgetsBindingObserver {
   late final TextEditingController _case;
   bool _showDone = false;
+
+  /// The card whose bank was just called, so coming back to Vaultara can
+  /// ask whether it is blocked now.
+  String? _callingId;
 
   LifePlan get _plan => widget.plan;
 
@@ -55,6 +62,32 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
   void initState() {
     super.initState();
     _case = TextEditingController(text: _plan.caseNumber ?? '');
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state != AppLifecycleState.resumed) return;
+    final id = _callingId;
+    _callingId = null;
+    if (id == null || !mounted) return;
+    final view = LifePlanItems.build(_current, RecordRepository.allActive());
+    LifeRecordItem? item;
+    for (final r in view.records) {
+      if (r.record.id == id) item = r;
+    }
+    final found = item;
+    if (found == null || found.isDone) return;
+    final loc = AppLocalizations.of(context)!;
+    ActionFeedbackSnackbar.show(
+      context,
+      loc.lostWalletDidBlock(found.record.name),
+      kind: SnackKind.notice,
+      icon: Icons.phone_callback_rounded,
+      actionLabel: loc.lostWalletBlocked,
+      onAction: () => _mark(found, LifeItemStatus.cancelled),
+      duration: const Duration(seconds: 10),
+    );
   }
 
   @override
@@ -68,6 +101,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _case.dispose();
     super.dispose();
   }
@@ -85,6 +119,13 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
   }
 
   LifePlan get _current => LifePlanRepository.byId(_plan.id) ?? _plan;
+
+  /// Smaller buttons inside the cards, so two fit side by side.
+  static final ButtonStyle _compact = ButtonStyle(
+    visualDensity: VisualDensity.compact,
+    minimumSize: const WidgetStatePropertyAll(Size(0, 40)),
+    padding: const WidgetStatePropertyAll(EdgeInsets.symmetric(horizontal: 14)),
+  );
 
   void _mark(LifeRecordItem item, LifeItemStatus? status) {
     final id = item.record.id;
@@ -192,9 +233,10 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
     );
   }
 
-  Future<void> _call(String line) async {
+  Future<void> _call(String line, {String? recordId}) async {
     final number = KeptIn.dialable(line);
     if (number.isEmpty) return;
+    _callingId = recordId;
     try {
       await launchUrl(Uri(scheme: 'tel', path: number));
     } catch (_) {}
@@ -349,6 +391,26 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
     }
   }
 
+  /// The one thing to do now: block a card first, then the urgent steps,
+  /// then replacing documents.
+  String? _nextStep(
+    AppLocalizations loc,
+    List<LifeRecordItem> block,
+    List<LifeTaskItem> urgent,
+    List<LifeRecordItem> replace,
+  ) {
+    if (block.isNotEmpty)
+      return loc.lostWalletNextBlock(block.first.record.name);
+    for (final task in urgent) {
+      if (!task.done)
+        return loc.lostWalletNextStep(LifePlanText.task(loc, task));
+    }
+    if (replace.isNotEmpty) {
+      return loc.lostWalletNextReplace(replace.first.record.name);
+    }
+    return null;
+  }
+
   /// A trip that is happening today, so the plan can mention help abroad.
   SavedTrip? _tripNow() {
     final today = Dates.only(DateTime.now());
@@ -442,12 +504,18 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
           ),
         ),
         const SizedBox(height: 14),
-        _StatusCard(plan: plan, view: view, onFound: () => _found(view)),
+        _StatusCard(
+          plan: plan,
+          view: view,
+          next: plan.isFinished ? null : _nextStep(loc, block, urgent, replace),
+          urgent: block.isNotEmpty || urgent.any((t) => !t.done),
+          onFound: () => _found(view),
+        ),
         if (trip != null) ...[
           const SizedBox(height: 12),
           _InfoCard(
             icon: Icons.flight_takeoff_rounded,
-            colour: scheme.tertiary,
+            colour: scheme.primary,
             title: loc.lostWalletAbroadTitle,
             body: loc.lostWalletAbroadBody(trip.name),
             action: loc.lostWalletOpenTrip,
@@ -666,7 +734,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: WalletPanel(
-        colour: scheme.errorContainer.withValues(alpha: 0.32),
+        border: scheme.error.withValues(alpha: 0.35),
         padding: const EdgeInsets.fromLTRB(12, 12, 4, 12),
         onTap: () => _openRecord(item),
         child: Row(
@@ -700,18 +768,21 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
                           style: FilledButton.styleFrom(
                             backgroundColor: scheme.error,
                             foregroundColor: scheme.onError,
-                          ),
-                          onPressed: () => _call(line),
+                          ).merge(_compact),
+                          onPressed: () =>
+                              _call(line, recordId: item.record.id),
                           icon: const Icon(Icons.call_rounded, size: 18),
                           label: Text('${loc.lostWalletCall} · $line'),
                         )
                       else
                         OutlinedButton.icon(
+                          style: _compact,
                           onPressed: () => _openRecord(item),
                           icon: const Icon(Icons.add_call, size: 18),
                           label: Text(loc.lostWalletAddLine),
                         ),
                       FilledButton.tonalIcon(
+                        style: _compact,
                         onPressed: () => _mark(item, LifeItemStatus.cancelled),
                         icon: const Icon(Icons.check_rounded, size: 18),
                         label: Text(loc.lostWalletBlocked),
@@ -758,6 +829,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       FilledButton.tonalIcon(
+                        style: _compact,
                         onPressed: () =>
                             TravelActions.updateRecord(context, item.record),
                         icon: const Icon(
@@ -768,6 +840,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
                       ),
                       if (RenewalGuides.has(group))
                         TextButton.icon(
+                          style: _compact,
                           onPressed: () => TravelActions.openGuide(
                             context,
                             group: group,
@@ -884,8 +957,8 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView> {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: WalletPanel(
-        colour: item.isUrgent && !item.done
-            ? scheme.errorContainer.withValues(alpha: 0.32)
+        border: item.isUrgent && !item.done
+            ? scheme.error.withValues(alpha: 0.35)
             : null,
         padding: const EdgeInsets.fromLTRB(12, 12, 4, 12),
         onTap: () => _toggleTask(item),
@@ -955,7 +1028,15 @@ class _StatusCard extends StatelessWidget {
     required this.plan,
     required this.view,
     required this.onFound,
+    this.next,
+    this.urgent = false,
   });
+
+  /// What to do now, or null when everything open is done.
+  final String? next;
+
+  /// True while cards still need blocking, to show how long ago it started.
+  final bool urgent;
 
   @override
   Widget build(BuildContext context) {
@@ -965,7 +1046,7 @@ class _StatusCard extends StatelessWidget {
     final progress = view.total == 0 ? 0.0 : view.done / view.total;
     final accent = plan.isFound
         ? scheme.primary
-        : (stolen ? scheme.error : scheme.tertiary);
+        : (stolen ? scheme.error : scheme.primary);
 
     return WalletPanel(
       colour: accent.withValues(alpha: 0.08),
@@ -1015,6 +1096,10 @@ class _StatusCard extends StatelessWidget {
                         fontWeight: FontWeight.w800,
                       ),
                     ),
+                    if (urgent && !plan.isFinished) ...[
+                      const SizedBox(height: 2),
+                      _SinceStarted(since: plan.createdAt, colour: accent),
+                    ],
                     const SizedBox(height: 4),
                     Text(
                       LifeEvents.body(loc, plan.event, plan.variant),
@@ -1029,6 +1114,34 @@ class _StatusCard extends StatelessWidget {
               ),
             ],
           ),
+          if (next != null) ...[
+            const SizedBox(height: 12),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+              decoration: BoxDecoration(
+                color: scheme.surface,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: accent.withValues(alpha: 0.30)),
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.arrow_forward_rounded, size: 18, color: accent),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      next!,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        height: 1.3,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
           const SizedBox(height: 12),
           Wrap(
             spacing: 6,
@@ -1133,29 +1246,7 @@ class _CaseCard extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 12),
-          TextField(
-            controller: controller,
-            maxLength: LifePlan.maxCaseNumber,
-            textInputAction: TextInputAction.done,
-            onSubmitted: (_) => onSave(),
-            onTapOutside: (_) => onSave(),
-            decoration: InputDecoration(
-              labelText: loc.lostWalletCaseLabel,
-              counterText: '',
-              filled: true,
-              fillColor: scheme.surface,
-              prefixIcon: const Icon(Icons.tag_rounded),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(14),
-                borderSide: BorderSide.none,
-              ),
-              suffixIcon: IconButton(
-                tooltip: loc.save,
-                icon: const Icon(Icons.check_rounded),
-                onPressed: onSave,
-              ),
-            ),
-          ),
+          _CaseNumberField(controller: controller, onSave: onSave),
         ],
       ),
     );
@@ -1305,6 +1396,163 @@ class _OwnStepDialogState extends State<_OwnStepDialog> {
           builder: (context, value, _) => FilledButton(
             onPressed: value.text.trim().isEmpty ? null : _submit,
             child: Text(loc.save),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// The case number box: the app's field style. The label floats while you
+/// type; tapping anywhere else saves and lets go of the field, even when it
+/// is empty, so the hint comes back.
+class _CaseNumberField extends StatefulWidget {
+  final TextEditingController controller;
+  final VoidCallback onSave;
+
+  const _CaseNumberField({required this.controller, required this.onSave});
+
+  @override
+  State<_CaseNumberField> createState() => _CaseNumberFieldState();
+}
+
+class _CaseNumberFieldState extends State<_CaseNumberField> {
+  final FocusNode _focus = FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+    _focus.addListener(_changed);
+    widget.controller.addListener(_changed);
+  }
+
+  @override
+  void didUpdateWidget(covariant _CaseNumberField old) {
+    super.didUpdateWidget(old);
+    if (old.controller != widget.controller) {
+      old.controller.removeListener(_changed);
+      widget.controller.addListener(_changed);
+    }
+  }
+
+  @override
+  void dispose() {
+    widget.controller.removeListener(_changed);
+    _focus.dispose();
+    super.dispose();
+  }
+
+  void _changed() {
+    if (mounted) setState(() {});
+  }
+
+  void _leave() {
+    _focus.unfocus();
+    widget.onSave();
+  }
+
+  /// Banks and insurers ask for the number on the phone: one tap copies it.
+  Future<void> _copy() async {
+    final text = widget.controller.text.trim();
+    if (text.isEmpty) return;
+    await Clipboard.setData(ClipboardData(text: text));
+    if (!mounted) return;
+    ActionFeedbackSnackbar.show(
+      context,
+      AppLocalizations.of(context)!.lostWalletCaseCopied,
+      icon: Icons.copy_rounded,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    return TextField(
+      controller: widget.controller,
+      focusNode: _focus,
+      maxLength: LifePlan.maxCaseNumber,
+      textInputAction: TextInputAction.done,
+      onSubmitted: (_) => _leave(),
+      onTapOutside: (_) {
+        if (_focus.hasFocus) _leave();
+      },
+      decoration: AppInputDecorations.field(
+        context,
+        labelText: loc.lostWalletCaseLabel,
+        hintText: loc.lostWalletCaseLabel,
+        focused: _focus.hasFocus,
+        showLabel: widget.controller.text.isNotEmpty,
+        hintFontSize: Theme.of(context).textTheme.bodyMedium?.fontSize ?? 14.0,
+        prefixIcon: const Icon(Icons.tag_rounded),
+        suffixIcon: _focus.hasFocus
+            ? IconButton(
+                tooltip: loc.save,
+                icon: const Icon(Icons.check_rounded),
+                onPressed: _leave,
+              )
+            : widget.controller.text.trim().isEmpty
+            ? null
+            : IconButton(
+                tooltip: loc.lostWalletCaseCopied,
+                icon: const Icon(Icons.copy_rounded),
+                onPressed: _copy,
+              ),
+      ).copyWith(counterText: ''),
+    );
+  }
+}
+
+/// "Started 25 minutes ago", kept up to date every minute, so it is clear
+/// how much time has passed while cards are still open.
+class _SinceStarted extends StatefulWidget {
+  final DateTime since;
+  final Color colour;
+
+  const _SinceStarted({required this.since, required this.colour});
+
+  @override
+  State<_SinceStarted> createState() => _SinceStartedState();
+}
+
+class _SinceStartedState extends State<_SinceStarted> {
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(const Duration(minutes: 1), (_) {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final gap = DateTime.now().difference(widget.since);
+    if (gap.isNegative || gap.inDays >= 3) return const SizedBox.shrink();
+    final ago = gap.inHours < 1
+        ? loc.secMinutesAgo(gap.inMinutes < 1 ? 1 : gap.inMinutes)
+        : gap.inDays < 1
+        ? loc.secHoursAgo(gap.inHours)
+        : loc.secDaysAgo(gap.inDays);
+    return Row(
+      children: [
+        Icon(Icons.schedule_rounded, size: 14, color: widget.colour),
+        const SizedBox(width: 4),
+        Flexible(
+          child: Text(
+            loc.lostWalletStarted(ago),
+            style: TextStyle(
+              fontSize: 12.5,
+              fontWeight: FontWeight.w700,
+              color: widget.colour,
+            ),
           ),
         ),
       ],

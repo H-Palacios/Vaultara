@@ -21,7 +21,21 @@ enum SubscriptionUiEventType {
 class SubscriptionUiEvent {
   final SubscriptionUiEventType type;
   final Object? error;
-  const SubscriptionUiEvent(this.type, {this.error});
+
+  /// The plan that was bought or restored, so the message can name it.
+  final PlanTier tier;
+  const SubscriptionUiEvent(
+    this.type, {
+    this.error,
+    this.tier = PlanTier.premium,
+  });
+}
+
+/// Which plan a store product belongs to.
+PlanTier tierOfProduct(String productId) {
+  if (PremiumSync.isBusinessProduct(productId)) return PlanTier.business;
+  if (PremiumSync.isFamilyProduct(productId)) return PlanTier.family;
+  return PlanTier.premium;
 }
 
 class SubscriptionService {
@@ -179,6 +193,7 @@ class SubscriptionService {
 
   Future<void> _handle(List<PurchaseDetails> purchases) async {
     SubscriptionUiEventType? outcome;
+    var tier = PlanTier.premium;
 
     const priority = <SubscriptionUiEventType>[
       SubscriptionUiEventType.error,
@@ -209,9 +224,13 @@ class SubscriptionService {
           if (key != null) checked[key] = check;
           switch (check) {
             case PurchaseCheck.confirmed:
-              keep(p.status == PurchaseStatus.purchased
-                  ? SubscriptionUiEventType.premiumEnabled
-                  : SubscriptionUiEventType.premiumRestored);
+              final bought = tierOfProduct(p.productID);
+              if (bought.index > tier.index) tier = bought;
+              keep(
+                p.status == PurchaseStatus.purchased
+                    ? SubscriptionUiEventType.premiumEnabled
+                    : SubscriptionUiEventType.premiumRestored,
+              );
             case PurchaseCheck.otherAccount:
               keep(SubscriptionUiEventType.otherAccount);
             case PurchaseCheck.failed:
@@ -234,12 +253,12 @@ class SubscriptionService {
     }
 
     final result = outcome;
-    if (result != null) _emit(SubscriptionUiEvent(result));
+    if (result != null) _emit(SubscriptionUiEvent(result, tier: tier));
   }
 
   Future<GooglePlayPurchaseDetails?> _currentAndroidSubscription() async {
-    final addition =
-        _iap.getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
+    final addition = _iap
+        .getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
     final response = await addition.queryPastPurchases();
     if (response.error != null) {
       throw StateError('past-purchases-unavailable');
@@ -256,8 +275,7 @@ class SubscriptionService {
 
   Future<void> openStoreSubscriptions({String? platform}) async {
     final store = platform ?? (Platform.isIOS ? 'ios' : 'android');
-    final url =
-        store == 'ios' ? _appleSubscriptionsUrl : _playSubscriptionsUrl;
+    final url = store == 'ios' ? _appleSubscriptionsUrl : _playSubscriptionsUrl;
     try {
       await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
     } catch (_) {}
