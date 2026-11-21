@@ -2446,6 +2446,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get lostWalletMarkedDone => 'Позначено як виконане';
 
   @override
+  String get lostWalletSeeDone => 'Переглянути виконане';
+
+  @override
   String get travelSectionJourney => 'Ваша подорож';
 
   @override

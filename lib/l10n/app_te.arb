@@ -970,6 +970,7 @@
   "lostWalletStillMissingTitle": "ఇంకా దొరకలేదా?",
   "lostWalletStillMissingBody": "దొరకకపోతే, ఫ్రీజ్ చేసిన కార్డులను రద్దు చేసి కొత్తవి ఆర్డర్ చేయండి.",
   "lostWalletMarkedDone": "పూర్తయినట్లు గుర్తించబడింది",
+  "lostWalletSeeDone": "ఏమి పూర్తయిందో చూడండి",
   "travelSectionJourney": "మీ ప్రయాణం",
   "travelFlights": "విమానాలు",
   "travelFlightsHint": "మీరు ఎప్పుడు దిగుతారో, అక్కడ ఎన్ని రోజులు ఉంటారో చూడటానికి కనెక్షన్‌లతో సహా ప్రతి విమానాన్ని జోడించండి.",

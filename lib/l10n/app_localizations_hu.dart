@@ -2419,6 +2419,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lostWalletMarkedDone => 'Készként megjelölve';
 
   @override
+  String get lostWalletSeeDone => 'A kész lépések megtekintése';
+
+  @override
   String get travelSectionJourney => 'Az utad';
 
   @override

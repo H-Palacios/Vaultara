@@ -2388,6 +2388,10 @@
   "@lostWalletMarkedDone": {
     "description": "Shown after ticking a card or step in Lost or stolen, with Undo"
   },
+  "lostWalletSeeDone": "See what's done",
+  "@lostWalletSeeDone": {
+    "description": "Link on the Lost or stolen status card that opens Done, where ticked items can be undone"
+  },
   "travelSectionJourney": "Your journey",
   "@travelSectionJourney": {
     "description": "Heading above the departure, flights and return timeline on a trip"

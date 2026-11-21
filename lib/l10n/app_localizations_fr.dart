@@ -2419,6 +2419,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get lostWalletMarkedDone => 'Marqué comme fait';
 
   @override
+  String get lostWalletSeeDone => 'Voir ce qui est fait';
+
+  @override
   String get travelSectionJourney => 'Votre voyage';
 
   @override

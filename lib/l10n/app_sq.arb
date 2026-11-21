@@ -967,6 +967,7 @@
   "lostWalletStillMissingTitle": "Ende mungon?",
   "lostWalletStillMissingBody": "Nëse nuk është gjetur, anulo kartat e ngrira dhe porosit të reja.",
   "lostWalletMarkedDone": "U shënua si e kryer",
+  "lostWalletSeeDone": "Shiko çfarë është kryer",
   "travelSectionJourney": "Udhëtimi yt",
   "travelFlights": "Fluturime",
   "travelFlightsHint": "Shto çdo fluturim, përfshirë ndërlidhjet, për të parë kur ulesh dhe sa ditë qëndron atje.",

@@ -2419,6 +2419,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lostWalletMarkedDone => 'Eginda gisa markatuta';
 
   @override
+  String get lostWalletSeeDone => 'Ikusi egindakoa';
+
+  @override
   String get travelSectionJourney => 'Zure bidaia';
 
   @override

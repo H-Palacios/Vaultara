@@ -953,6 +953,7 @@
   "lostWalletStillMissingTitle": "Hâlâ yok mu?",
   "lostWalletStillMissingBody": "Bulunmadıysa dondurulan kartları iptal edip yenilerini isteyin.",
   "lostWalletMarkedDone": "Tamamlandı olarak işaretlendi",
+  "lostWalletSeeDone": "Tamamlananları gör",
   "travelSectionJourney": "Seyahatiniz",
   "travelFlights": "Uçuşlar",
   "travelFlightsHint": "Ne zaman ineceğini ve orada kaç gün kalacağını görmek için aktarmalar dahil her uçuşu ekle.",

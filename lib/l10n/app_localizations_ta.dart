@@ -2419,6 +2419,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lostWalletMarkedDone => 'முடிந்ததாகக் குறிக்கப்பட்டது';
 
   @override
+  String get lostWalletSeeDone => 'முடிந்தவற்றைப் பாருங்கள்';
+
+  @override
   String get travelSectionJourney => 'உங்கள் பயணம்';
 
   @override

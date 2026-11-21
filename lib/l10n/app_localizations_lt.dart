@@ -2440,6 +2440,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lostWalletMarkedDone => 'Pažymėta kaip atlikta';
 
   @override
+  String get lostWalletSeeDone => 'Peržiūrėti atliktus';
+
+  @override
   String get travelSectionJourney => 'Jūsų kelionė';
 
   @override

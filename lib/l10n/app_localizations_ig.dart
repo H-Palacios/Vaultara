@@ -2419,6 +2419,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lostWalletMarkedDone => 'Akara dị ka emechaala';
 
   @override
+  String get lostWalletSeeDone => 'Hụ ihe emechara';
+
+  @override
   String get travelSectionJourney => 'Njem gị';
 
   @override

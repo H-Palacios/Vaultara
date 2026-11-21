@@ -2418,6 +2418,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lostWalletMarkedDone => '已标记为完成';
 
   @override
+  String get lostWalletSeeDone => '查看已完成的';
+
+  @override
   String get travelSectionJourney => '你的行程';
 
   @override
@@ -12101,6 +12104,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lostWalletMarkedDone => '已标记为完成';
 
   @override
+  String get lostWalletSeeDone => '查看已完成的';
+
+  @override
   String get travelSectionJourney => '你的行程';
 
   @override
@@ -21782,6 +21788,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get lostWalletMarkedDone => '已標示為完成';
+
+  @override
+  String get lostWalletSeeDone => '查看已完成的';
 
   @override
   String get travelSectionJourney => '你的行程';

@@ -2418,6 +2418,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lostWalletMarkedDone => 'Đã đánh dấu là xong';
 
   @override
+  String get lostWalletSeeDone => 'Xem những gì đã xong';
+
+  @override
   String get travelSectionJourney => 'Hành trình của bạn';
 
   @override

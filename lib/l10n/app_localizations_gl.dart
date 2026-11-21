@@ -2419,6 +2419,9 @@ class AppLocalizationsGl extends AppLocalizations {
   String get lostWalletMarkedDone => 'Marcado como feito';
 
   @override
+  String get lostWalletSeeDone => 'Ver o que está feito';
+
+  @override
   String get travelSectionJourney => 'A túa viaxe';
 
   @override

@@ -2419,6 +2419,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lostWalletMarkedDone => 'Imakwe njengeqediwe';
 
   @override
+  String get lostWalletSeeDone => 'Bona okuqediwe';
+
+  @override
   String get travelSectionJourney => 'Uhambo lwakho';
 
   @override

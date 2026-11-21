@@ -2419,6 +2419,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lostWalletMarkedDone => 'Märgitud tehtuks';
 
   @override
+  String get lostWalletSeeDone => 'Vaata tehtut';
+
+  @override
   String get travelSectionJourney => 'Sinu reis';
 
   @override

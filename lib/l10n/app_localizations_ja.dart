@@ -2406,6 +2406,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lostWalletMarkedDone => '完了にしました';
 
   @override
+  String get lostWalletSeeDone => '完了したものを見る';
+
+  @override
   String get travelSectionJourney => '旅程';
 
   @override

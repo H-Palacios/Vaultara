@@ -928,6 +928,7 @@
   "lostWalletStillMissingTitle": "Всё ещё не нашлось?",
   "lostWalletStillMissingBody": "Если не нашлось, закройте замороженные карты и закажите новые.",
   "lostWalletMarkedDone": "Отмечено как выполненное",
+  "lostWalletSeeDone": "Посмотреть выполненное",
   "travelSectionJourney": "Ваша поездка",
   "travelFlights": "Перелёты",
   "travelFlightsHint": "Добавьте каждый рейс, включая пересадки, чтобы видеть, когда вы прилетаете и сколько дней там проводите.",

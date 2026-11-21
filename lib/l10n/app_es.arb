@@ -960,6 +960,7 @@
   "lostWalletStillMissingTitle": "¿Sigue sin aparecer?",
   "lostWalletStillMissingBody": "Si no ha aparecido, cancela las tarjetas congeladas y pide nuevas.",
   "lostWalletMarkedDone": "Marcado como hecho",
+  "lostWalletSeeDone": "Ver lo que está hecho",
   "travelSectionJourney": "Tu viaje",
   "travelFlights": "Vuelos",
   "travelFlightsHint": "Añade cada vuelo, escalas incluidas, para ver cuándo aterrizas y cuántos días pasas allí.",

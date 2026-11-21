@@ -2418,6 +2418,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lostWalletMarkedDone => 'ໝາຍວ່າສຳເລັດແລ້ວ';
 
   @override
+  String get lostWalletSeeDone => 'ເບິ່ງສິ່ງທີ່ສຳເລັດແລ້ວ';
+
+  @override
   String get travelSectionJourney => 'ການເດີນທາງຂອງທ່ານ';
 
   @override

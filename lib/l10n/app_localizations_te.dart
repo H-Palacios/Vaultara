@@ -2419,6 +2419,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get lostWalletMarkedDone => 'పూర్తయినట్లు గుర్తించబడింది';
 
   @override
+  String get lostWalletSeeDone => 'ఏమి పూర్తయిందో చూడండి';
+
+  @override
   String get travelSectionJourney => 'మీ ప్రయాణం';
 
   @override

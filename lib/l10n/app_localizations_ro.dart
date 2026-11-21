@@ -2432,6 +2432,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lostWalletMarkedDone => 'Marcat ca făcut';
 
   @override
+  String get lostWalletSeeDone => 'Vezi ce e gata';
+
+  @override
   String get travelSectionJourney => 'Călătoria ta';
 
   @override

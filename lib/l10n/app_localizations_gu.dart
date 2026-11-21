@@ -2419,6 +2419,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get lostWalletMarkedDone => 'પૂર્ણ તરીકે ચિહ્નિત';
 
   @override
+  String get lostWalletSeeDone => 'શું પૂર્ણ થયું તે જુઓ';
+
+  @override
   String get travelSectionJourney => 'તમારી મુસાફરી';
 
   @override

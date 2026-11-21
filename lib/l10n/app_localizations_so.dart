@@ -2419,6 +2419,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lostWalletMarkedDone => 'Waxaa loo calaamadeeyay dhammaaday';
 
   @override
+  String get lostWalletSeeDone => 'Eeg waxa la dhammeeyay';
+
+  @override
   String get travelSectionJourney => 'Safarkaaga';
 
   @override

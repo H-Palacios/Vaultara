@@ -2419,6 +2419,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get lostWalletMarkedDone => 'Tamamlandı olarak işaretlendi';
 
   @override
+  String get lostWalletSeeDone => 'Tamamlananları gör';
+
+  @override
   String get travelSectionJourney => 'Seyahatiniz';
 
   @override

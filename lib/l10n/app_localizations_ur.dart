@@ -2419,6 +2419,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get lostWalletMarkedDone => 'مکمل کے طور پر نشان زد';
 
   @override
+  String get lostWalletSeeDone => 'دیکھیں کیا مکمل ہوا';
+
+  @override
   String get travelSectionJourney => 'آپ کا سفر';
 
   @override

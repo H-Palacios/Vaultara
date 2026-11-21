@@ -960,6 +960,7 @@
   "lostWalletStillMissingTitle": "Λείπει ακόμα;",
   "lostWalletStillMissingBody": "Αν δεν βρέθηκε, ακυρώστε τις παγωμένες κάρτες και παραγγείλτε νέες.",
   "lostWalletMarkedDone": "Σημειώθηκε ως ολοκληρωμένο",
+  "lostWalletSeeDone": "Δείτε τι έχει γίνει",
   "travelSectionJourney": "Το ταξίδι σας",
   "travelFlights": "Πτήσεις",
   "travelFlightsHint": "Προσθέστε κάθε πτήση, μαζί με τις ανταποκρίσεις, για να δείτε πότε προσγειώνεστε και πόσες μέρες μένετε.",

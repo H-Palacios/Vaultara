@@ -703,6 +703,7 @@
   "lostWalletStillMissingTitle": "Още липсва?",
   "lostWalletStillMissingBody": "Ако не се е появило, анулирайте замразените карти и поръчайте нови.",
   "lostWalletMarkedDone": "Отбелязано като готово",
+  "lostWalletSeeDone": "Вижте готовото",
   "travelSectionJourney": "Вашето пътуване",
   "travelFlights": "Полети",
   "travelFlightsHint": "Добавете всеки полет, включително прекачванията, за да видите кога кацате и колко дни сте там.",

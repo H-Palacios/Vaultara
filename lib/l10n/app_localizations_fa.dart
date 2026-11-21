@@ -2419,6 +2419,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lostWalletMarkedDone => 'به‌عنوان انجام‌شده علامت خورد';
 
   @override
+  String get lostWalletSeeDone => 'دیدن کارهای انجام‌شده';
+
+  @override
   String get travelSectionJourney => 'سفر شما';
 
   @override

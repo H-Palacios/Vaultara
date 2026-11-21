@@ -2419,6 +2419,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lostWalletMarkedDone => 'Merkitty tehdyksi';
 
   @override
+  String get lostWalletSeeDone => 'Näytä tehdyt';
+
+  @override
   String get travelSectionJourney => 'Matkasi';
 
   @override

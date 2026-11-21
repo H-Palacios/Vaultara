@@ -703,6 +703,7 @@
   "lostWalletStillMissingTitle": "မတွေ့သေးဘူးလား။",
   "lostWalletStillMissingBody": "မတွေ့သေးပါက ပိတ်ထားသောကတ်များကို ပယ်ဖျက်ပြီး အသစ်မှာပါ။",
   "lostWalletMarkedDone": "ပြီးပြီဟု မှတ်သားပြီးပါပြီ",
+  "lostWalletSeeDone": "ပြီးသွားသည်များကို ကြည့်ရန်",
   "travelSectionJourney": "သင့်ခရီး",
   "travelFlights": "လေယာဉ်ခရီးစဉ်များ",
   "travelFlightsHint": "ဆင်းသက်မည့်အချိန်နှင့် နေမည့်ရက်ကို ကြည့်ရန် လေယာဉ်ပြောင်းခြင်းအပါအဝင် ခရီးစဉ်တိုင်းကို ထည့်ပါ။",

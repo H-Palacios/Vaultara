@@ -2406,6 +2406,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lostWalletMarkedDone => 'ทำเครื่องหมายว่าเสร็จแล้ว';
 
   @override
+  String get lostWalletSeeDone => 'ดูสิ่งที่เสร็จแล้ว';
+
+  @override
   String get travelSectionJourney => 'การเดินทางของคุณ';
 
   @override

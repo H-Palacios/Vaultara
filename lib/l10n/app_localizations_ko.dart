@@ -2418,6 +2418,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lostWalletMarkedDone => '완료로 표시했습니다';
 
   @override
+  String get lostWalletSeeDone => '완료한 항목 보기';
+
+  @override
   String get travelSectionJourney => '나의 여정';
 
   @override

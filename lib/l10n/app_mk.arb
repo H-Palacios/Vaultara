@@ -971,6 +971,7 @@
   "lostWalletStillMissingTitle": "Сè уште недостасува?",
   "lostWalletStillMissingBody": "Ако не се појавило, откажете ги замрзнатите картички и нарачајте нови.",
   "lostWalletMarkedDone": "Означено како готово",
+  "lostWalletSeeDone": "Погледнете што е готово",
   "travelSectionJourney": "Вашето патување",
   "travelFlights": "Летови",
   "travelFlightsHint": "Додајте го секој лет, вклучувајќи ги поврзувањата, за да видите кога слетувате и колку денови сте таму.",

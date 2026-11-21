@@ -2425,6 +2425,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lostWalletMarkedDone => 'Atzīmēts kā izdarīts';
 
   @override
+  String get lostWalletSeeDone => 'Skatīt paveikto';
+
+  @override
   String get travelSectionJourney => 'Jūsu ceļojums';
 
   @override

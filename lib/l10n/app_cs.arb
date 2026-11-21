@@ -984,6 +984,7 @@
   "lostWalletStillMissingTitle": "Stále se nenašlo?",
   "lostWalletStillMissingBody": "Pokud se neobjevilo, zrušte zmrazené karty a objednejte nové.",
   "lostWalletMarkedDone": "Označeno jako hotové",
+  "lostWalletSeeDone": "Zobrazit hotové",
   "travelSectionJourney": "Vaše cesta",
   "travelFlights": "Lety",
   "travelFlightsHint": "Přidejte každý let včetně přestupů a uvidíte, kdy přistanete a kolik dní tam strávíte.",

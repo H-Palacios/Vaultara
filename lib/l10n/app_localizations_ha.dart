@@ -2419,6 +2419,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lostWalletMarkedDone => 'An yi alama a matsayin an gama';
 
   @override
+  String get lostWalletSeeDone => 'Duba abin da aka gama';
+
+  @override
   String get travelSectionJourney => 'Tafiyarka';
 
   @override

@@ -971,6 +971,7 @@
   "lostWalletStillMissingTitle": "Még mindig hiányzik?",
   "lostWalletStillMissingBody": "Ha nem került elő, töröld a befagyasztott kártyákat, és rendelj újakat.",
   "lostWalletMarkedDone": "Készként megjelölve",
+  "lostWalletSeeDone": "A kész lépések megtekintése",
   "travelSectionJourney": "Az utad",
   "travelFlights": "Járatok",
   "travelFlightsHint": "Add hozzá az összes járatot, az átszállásokat is, hogy lásd, mikor szállsz le és hány napot töltesz ott.",

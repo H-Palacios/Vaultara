@@ -703,6 +703,7 @@
   "lostWalletStillMissingTitle": "अजूनही सापडले नाही?",
   "lostWalletStillMissingBody": "सापडले नसल्यास, फ्रीझ केलेली कार्डे रद्द करा आणि नवी मागवा.",
   "lostWalletMarkedDone": "पूर्ण म्हणून चिन्हांकित",
+  "lostWalletSeeDone": "काय पूर्ण झाले ते पाहा",
   "travelSectionJourney": "तुमचा प्रवास",
   "travelFlights": "विमानसेवा",
   "travelFlightsHint": "तुम्ही कधी उतरता आणि तिथे किती दिवस राहता हे पाहण्यासाठी कनेक्शनसह प्रत्येक फ्लाइट जोडा.",

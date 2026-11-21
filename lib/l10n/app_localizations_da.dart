@@ -2419,6 +2419,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get lostWalletMarkedDone => 'Markeret som udført';
 
   @override
+  String get lostWalletSeeDone => 'Se hvad der er klaret';
+
+  @override
   String get travelSectionJourney => 'Din rejse';
 
   @override

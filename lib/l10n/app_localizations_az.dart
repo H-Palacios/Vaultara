@@ -2419,6 +2419,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get lostWalletMarkedDone => 'Hazır kimi qeyd edildi';
 
   @override
+  String get lostWalletSeeDone => 'Hazır olanlara baxın';
+
+  @override
   String get travelSectionJourney => 'Səyahətiniz';
 
   @override

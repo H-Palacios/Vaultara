@@ -2446,6 +2446,9 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lostWalletMarkedDone => 'Marcáilte mar déanta';
 
   @override
+  String get lostWalletSeeDone => 'Féach a bhfuil déanta';
+
+  @override
   String get travelSectionJourney => 'Do thuras';
 
   @override

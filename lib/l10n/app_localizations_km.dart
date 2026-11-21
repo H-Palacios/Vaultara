@@ -2416,6 +2416,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lostWalletMarkedDone => 'បានសម្គាល់ថារួចរាល់';
 
   @override
+  String get lostWalletSeeDone => 'មើលអ្វីដែលរួចរាល់';
+
+  @override
   String get travelSectionJourney => 'ដំណើររបស់អ្នក';
 
   @override

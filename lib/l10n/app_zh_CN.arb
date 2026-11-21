@@ -953,6 +953,7 @@
   "lostWalletStillMissingTitle": "还没找到？",
   "lostWalletStillMissingBody": "如果还没找到，请注销已冻结的卡并申请新卡。",
   "lostWalletMarkedDone": "已标记为完成",
+  "lostWalletSeeDone": "查看已完成的",
   "travelSectionJourney": "你的行程",
   "travelFlights": "航班",
   "travelFlightsHint": "添加每一段航班（包括转机），即可看到你何时落地以及在当地停留几天。",

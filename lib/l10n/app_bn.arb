@@ -984,6 +984,7 @@
   "lostWalletStillMissingTitle": "এখনও পাননি?",
   "lostWalletStillMissingBody": "না পেলে ফ্রিজ করা কার্ড বাতিল করে নতুন অর্ডার করুন।",
   "lostWalletMarkedDone": "সম্পন্ন হিসেবে চিহ্নিত",
+  "lostWalletSeeDone": "কী সম্পন্ন হয়েছে দেখুন",
   "travelSectionJourney": "আপনার যাত্রা",
   "travelFlights": "ফ্লাইট",
   "travelFlightsHint": "কখন নামবেন আর কত দিন থাকবেন দেখতে সংযোগসহ প্রতিটি ফ্লাইট যোগ করুন।",

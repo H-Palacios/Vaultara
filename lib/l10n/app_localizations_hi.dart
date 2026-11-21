@@ -2419,6 +2419,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get lostWalletMarkedDone => 'पूरा हुआ के रूप में चिह्नित';
 
   @override
+  String get lostWalletSeeDone => 'देखें क्या पूरा हुआ';
+
+  @override
   String get travelSectionJourney => 'आपकी यात्रा';
 
   @override

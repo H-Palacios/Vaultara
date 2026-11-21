@@ -2443,6 +2443,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get lostWalletMarkedDone => 'Označeno jako hotové';
 
   @override
+  String get lostWalletSeeDone => 'Zobrazit hotové';
+
+  @override
   String get travelSectionJourney => 'Vaše cesta';
 
   @override

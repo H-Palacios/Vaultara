@@ -2418,6 +2418,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lostWalletMarkedDone => 'Ditanda selesai';
 
   @override
+  String get lostWalletSeeDone => 'Lihat yang sudah selesai';
+
+  @override
   String get travelSectionJourney => 'Perjalanan anda';
 
   @override

@@ -2448,6 +2448,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lostWalletMarkedDone => 'Отмечено как выполненное';
 
   @override
+  String get lostWalletSeeDone => 'Посмотреть выполненное';
+
+  @override
   String get travelSectionJourney => 'Ваша поездка';
 
   @override

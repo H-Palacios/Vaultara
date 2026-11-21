@@ -2455,6 +2455,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lostWalletMarkedDone => 'تم وضع علامة كمكتمل';
 
   @override
+  String get lostWalletSeeDone => 'عرض ما تم إنجازه';
+
+  @override
   String get travelSectionJourney => 'رحلتك';
 
   @override

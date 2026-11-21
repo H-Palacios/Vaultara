@@ -2419,6 +2419,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lostWalletMarkedDone => 'وەک تەواوبوو نیشانکرا';
 
   @override
+  String get lostWalletSeeDone => 'ئەوەی تەواوبووە ببینە';
+
+  @override
   String get travelSectionJourney => 'گەشتەکەت';
 
   @override

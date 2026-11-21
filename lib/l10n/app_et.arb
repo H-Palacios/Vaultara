@@ -1118,6 +1118,7 @@
   "lostWalletStillMissingTitle": "Ikka kadunud?",
   "lostWalletStillMissingBody": "Kui see pole välja ilmunud, tühista külmutatud kaardid ja telli uued.",
   "lostWalletMarkedDone": "Märgitud tehtuks",
+  "lostWalletSeeDone": "Vaata tehtut",
   "travelSectionJourney": "Sinu reis",
   "travelFlights": "Lennud",
   "travelFlightsHint": "Lisa iga lend koos ümberistumistega, et näha, millal maandud ja mitu päeva seal oled.",

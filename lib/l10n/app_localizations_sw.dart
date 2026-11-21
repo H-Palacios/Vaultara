@@ -2419,6 +2419,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lostWalletMarkedDone => 'Imewekwa alama kuwa imekamilika';
 
   @override
+  String get lostWalletSeeDone => 'Tazama kilichokamilika';
+
+  @override
   String get travelSectionJourney => 'Safari yako';
 
   @override

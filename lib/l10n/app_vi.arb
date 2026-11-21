@@ -953,6 +953,7 @@
   "lostWalletStillMissingTitle": "Vẫn chưa thấy?",
   "lostWalletStillMissingBody": "Nếu chưa tìm thấy, hãy hủy các thẻ đã khóa tạm và đặt thẻ mới.",
   "lostWalletMarkedDone": "Đã đánh dấu là xong",
+  "lostWalletSeeDone": "Xem những gì đã xong",
   "travelSectionJourney": "Hành trình của bạn",
   "travelFlights": "Chuyến bay",
   "travelFlightsHint": "Thêm từng chuyến bay, kể cả chuyến nối, để xem khi nào bạn hạ cánh và ở đó bao nhiêu ngày.",

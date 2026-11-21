@@ -2419,6 +2419,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get lostWalletMarkedDone => 'ಪೂರ್ಣಗೊಂಡಿದೆ ಎಂದು ಗುರುತಿಸಲಾಗಿದೆ';
 
   @override
+  String get lostWalletSeeDone => 'ಏನು ಮುಗಿದಿದೆ ನೋಡಿ';
+
+  @override
   String get travelSectionJourney => 'ನಿಮ್ಮ ಪ್ರಯಾಣ';
 
   @override

@@ -953,6 +953,7 @@
   "lostWalletStillMissingTitle": "لا هم ورک دی؟",
   "lostWalletStillMissingBody": "که پیدا نه شو، کنګل شوي کارتونه لغوه کړئ او نوي وغواړئ.",
   "lostWalletMarkedDone": "د بشپړ شوي په توګه نښه شو",
+  "lostWalletSeeDone": "هغه څه وګورئ چې بشپړ شوي",
   "travelSectionJourney": "ستاسو سفر",
   "travelFlights": "الوتنې",
   "travelFlightsHint": "هره الوتنه، د نښلونو په ګډون، اضافه کړئ ترڅو وګورئ کله کښته کېږئ او څو ورځې هلته یاست.",

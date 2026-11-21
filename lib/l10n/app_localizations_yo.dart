@@ -2419,6 +2419,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lostWalletMarkedDone => 'A ti sàmì sí pé ó parí';
 
   @override
+  String get lostWalletSeeDone => 'Wo ohun tí a ti parí';
+
+  @override
   String get travelSectionJourney => 'Ìrìn àjò rẹ';
 
   @override

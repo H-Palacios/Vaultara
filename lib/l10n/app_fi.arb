@@ -971,6 +971,7 @@
   "lostWalletStillMissingTitle": "Yhä kateissa?",
   "lostWalletStillMissingBody": "Jos se ei ole löytynyt, peru jäädytetyt kortit ja tilaa uudet.",
   "lostWalletMarkedDone": "Merkitty tehdyksi",
+  "lostWalletSeeDone": "Näytä tehdyt",
   "travelSectionJourney": "Matkasi",
   "travelFlights": "Lennot",
   "travelFlightsHint": "Lisää jokainen lento, vaihdot mukaan lukien, niin näet milloin laskeudut ja montako päivää olet perillä.",

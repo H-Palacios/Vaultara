@@ -703,6 +703,7 @@
   "lostWalletStillMissingTitle": "Hali ham topilmadimi?",
   "lostWalletStillMissingBody": "Topilmagan boʻlsa, muzlatilgan kartalarni bekor qiling va yangisini buyurtma qiling.",
   "lostWalletMarkedDone": "Bajarildi deb belgilandi",
+  "lostWalletSeeDone": "Bajarilganlarni koʻrish",
   "travelSectionJourney": "Sayohatingiz",
   "travelFlights": "Reyslar",
   "travelFlightsHint": "Qachon qo'nishingiz va u yerda necha kun bo'lishingizni ko'rish uchun har bir reysni, o'tishlar bilan qo'shing.",

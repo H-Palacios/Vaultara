@@ -946,6 +946,7 @@
   "lostWalletStillMissingTitle": "Fortfarande borta?",
   "lostWalletStillMissingBody": "Om det inte har dykt upp, spärra de frysta korten och beställ nya.",
   "lostWalletMarkedDone": "Markerat som klart",
+  "lostWalletSeeDone": "Se vad som är klart",
   "travelSectionJourney": "Din resa",
   "travelFlights": "Flyg",
   "travelFlightsHint": "Lägg till varje flyg, även byten, för att se när du landar och hur många dagar du är där.",

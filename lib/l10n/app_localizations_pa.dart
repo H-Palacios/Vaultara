@@ -2419,6 +2419,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lostWalletMarkedDone => 'ਪੂਰਾ ਹੋਇਆ ਵਜੋਂ ਨਿਸ਼ਾਨਬੱਧ';
 
   @override
+  String get lostWalletSeeDone => 'ਦੇਖੋ ਕੀ ਪੂਰਾ ਹੋਇਆ';
+
+  @override
   String get travelSectionJourney => 'ਤੁਹਾਡੀ ਯਾਤਰਾ';
 
   @override

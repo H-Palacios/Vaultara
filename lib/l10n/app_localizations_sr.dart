@@ -2429,6 +2429,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lostWalletMarkedDone => 'Означено као готово';
 
   @override
+  String get lostWalletSeeDone => 'Погледајте шта је урађено';
+
+  @override
   String get travelSectionJourney => 'Ваше путовање';
 
   @override
@@ -12270,6 +12273,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lostWalletMarkedDone => 'Означено као готово';
 
   @override
+  String get lostWalletSeeDone => 'Погледајте шта је урађено';
+
+  @override
   String get travelSectionJourney => 'Ваше путовање';
 
   @override
@@ -22109,6 +22115,9 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get lostWalletMarkedDone => 'Označeno kao gotovo';
+
+  @override
+  String get lostWalletSeeDone => 'Pogledajte šta je urađeno';
 
   @override
   String get travelSectionJourney => 'Vaše putovanje';

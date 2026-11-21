@@ -2419,6 +2419,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lostWalletMarkedDone => 'د بشپړ شوي په توګه نښه شو';
 
   @override
+  String get lostWalletSeeDone => 'هغه څه وګورئ چې بشپړ شوي';
+
+  @override
   String get travelSectionJourney => 'ستاسو سفر';
 
   @override

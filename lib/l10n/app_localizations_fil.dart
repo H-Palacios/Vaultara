@@ -2417,6 +2417,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lostWalletMarkedDone => 'Minarkahang tapos';
 
   @override
+  String get lostWalletSeeDone => 'Tingnan ang mga tapos na';
+
+  @override
   String get travelSectionJourney => 'Ang iyong biyahe';
 
   @override

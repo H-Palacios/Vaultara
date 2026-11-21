@@ -4477,6 +4477,12 @@ abstract class AppLocalizations {
   /// **'Marked as done'**
   String get lostWalletMarkedDone;
 
+  /// Link on the Lost or stolen status card that opens Done, where ticked items can be undone
+  ///
+  /// In en, this message translates to:
+  /// **'See what\'s done'**
+  String get lostWalletSeeDone;
+
   /// Heading above the departure, flights and return timeline on a trip
   ///
   /// In en, this message translates to:

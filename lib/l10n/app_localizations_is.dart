@@ -2418,6 +2418,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lostWalletMarkedDone => 'Merkt sem lokið';
 
   @override
+  String get lostWalletSeeDone => 'Sjá það sem er búið';
+
+  @override
   String get travelSectionJourney => 'Ferðin þín';
 
   @override

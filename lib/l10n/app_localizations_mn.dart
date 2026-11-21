@@ -2418,6 +2418,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lostWalletMarkedDone => 'Дууссан гэж тэмдэглэлээ';
 
   @override
+  String get lostWalletSeeDone => 'Хийсэн зүйлсийг харах';
+
+  @override
   String get travelSectionJourney => 'Таны аялал';
 
   @override

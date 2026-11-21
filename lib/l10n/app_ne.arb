@@ -953,6 +953,7 @@
   "lostWalletStillMissingTitle": "अझै भेटिएन?",
   "lostWalletStillMissingBody": "नभेटिएमा, फ्रिज गरिएका कार्ड रद्द गरेर नयाँ मगाउनुहोस्।",
   "lostWalletMarkedDone": "पूरा भएको रूपमा चिन्ह लगाइयो",
+  "lostWalletSeeDone": "के पूरा भयो हेर्नुहोस्",
   "travelSectionJourney": "तपाईंको यात्रा",
   "travelFlights": "उडानहरू",
   "travelFlightsHint": "तपाईं कहिले अवतरण गर्नुहुन्छ र त्यहाँ कति दिन बस्नुहुन्छ हेर्न कनेक्सनसहित हरेक उडान थप्नुहोस्।",

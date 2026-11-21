@@ -984,6 +984,7 @@
   "lostWalletStillMissingTitle": "Stadig væk?",
   "lostWalletStillMissingBody": "Hvis det ikke er dukket op, så annuller de frosne kort og bestil nye.",
   "lostWalletMarkedDone": "Markeret som udført",
+  "lostWalletSeeDone": "Se hvad der er klaret",
   "travelSectionJourney": "Din rejse",
   "travelFlights": "Fly",
   "travelFlightsHint": "Tilføj hver flyvning, også skift, for at se hvornår du lander, og hvor mange dage du er der.",

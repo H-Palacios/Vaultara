@@ -965,6 +965,7 @@
   "lostWalletStillMissingTitle": "अब भी नहीं मिला?",
   "lostWalletStillMissingBody": "अगर नहीं मिला, तो फ़्रीज़ किए कार्ड रद्द करें और नए मंगवाएं।",
   "lostWalletMarkedDone": "पूरा हुआ के रूप में चिह्नित",
+  "lostWalletSeeDone": "देखें क्या पूरा हुआ",
   "travelSectionJourney": "आपकी यात्रा",
   "travelFlights": "उड़ानें",
   "travelFlightsHint": "आप कब उतरेंगे और वहाँ कितने दिन रहेंगे, यह देखने के लिए कनेक्शन समेत हर फ़्लाइट जोड़ें।",

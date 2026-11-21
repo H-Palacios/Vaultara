@@ -971,6 +971,7 @@
   "lostWalletStillMissingTitle": "Әлі табылмады ма?",
   "lostWalletStillMissingBody": "Табылмаса, бұғатталған карталарды жауып, жаңасына тапсырыс беріңіз.",
   "lostWalletMarkedDone": "Орындалды деп белгіленді",
+  "lostWalletSeeDone": "Орындалғанды көру",
   "travelSectionJourney": "Сіздің сапарыңыз",
   "travelFlights": "Ұшулар",
   "travelFlightsHint": "Қашан қонатыныңызды және онда неше күн болатыныңызды көру үшін әр рейсті, ауысуларымен қоса қосыңыз.",

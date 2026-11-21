@@ -953,6 +953,7 @@
   "lostWalletStillMissingTitle": "아직 못 찾았나요?",
   "lostWalletStillMissingBody": "찾지 못했다면 정지한 카드를 해지하고 새 카드를 신청하세요.",
   "lostWalletMarkedDone": "완료로 표시했습니다",
+  "lostWalletSeeDone": "완료한 항목 보기",
   "travelSectionJourney": "나의 여정",
   "travelFlights": "항공편",
   "travelFlightsHint": "경유편을 포함해 모든 항공편을 추가하면 도착일과 머무는 일수를 볼 수 있습니다.",

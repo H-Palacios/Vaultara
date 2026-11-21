@@ -2428,6 +2428,9 @@ class AppLocalizationsHr extends AppLocalizations {
   String get lostWalletMarkedDone => 'Označeno kao gotovo';
 
   @override
+  String get lostWalletSeeDone => 'Pogledajte što je gotovo';
+
+  @override
   String get travelSectionJourney => 'Vaše putovanje';
 
   @override

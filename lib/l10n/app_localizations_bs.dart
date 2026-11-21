@@ -2428,6 +2428,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get lostWalletMarkedDone => 'Označeno kao gotovo';
 
   @override
+  String get lostWalletSeeDone => 'Pogledajte šta je urađeno';
+
+  @override
   String get travelSectionJourney => 'Vaše putovanje';
 
   @override

@@ -971,6 +971,7 @@
   "lostWalletStillMissingTitle": "Joprojām nav?",
   "lostWalletStillMissingBody": "Ja tas nav atradies, atceliet iesaldētās kartes un pasūtiet jaunas.",
   "lostWalletMarkedDone": "Atzīmēts kā izdarīts",
+  "lostWalletSeeDone": "Skatīt paveikto",
   "travelSectionJourney": "Jūsu ceļojums",
   "travelFlights": "Lidojumi",
   "travelFlightsHint": "Pievienojiet katru lidojumu, arī pārsēšanos, lai redzētu, kad nolaižaties un cik dienas tur pavadāt.",

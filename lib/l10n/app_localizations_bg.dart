@@ -2419,6 +2419,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get lostWalletMarkedDone => 'Отбелязано като готово';
 
   @override
+  String get lostWalletSeeDone => 'Вижте готовото';
+
+  @override
   String get travelSectionJourney => 'Вашето пътуване';
 
   @override

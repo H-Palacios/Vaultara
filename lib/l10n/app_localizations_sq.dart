@@ -2419,6 +2419,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lostWalletMarkedDone => 'U shënua si e kryer';
 
   @override
+  String get lostWalletSeeDone => 'Shiko çfarë është kryer';
+
+  @override
   String get travelSectionJourney => 'Udhëtimi yt';
 
   @override

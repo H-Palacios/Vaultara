@@ -2419,6 +2419,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lostWalletMarkedDone => 'Նշվեց որպես արված';
 
   @override
+  String get lostWalletSeeDone => 'Տեսնել արվածը';
+
+  @override
   String get travelSectionJourney => 'Ձեր ճանապարհորդությունը';
 
   @override

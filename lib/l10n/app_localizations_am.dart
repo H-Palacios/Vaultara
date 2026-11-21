@@ -2419,6 +2419,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lostWalletMarkedDone => 'እንደተጠናቀቀ ምልክት ተደርጓል';
 
   @override
+  String get lostWalletSeeDone => 'የተጠናቀቀውን ይመልከቱ';
+
+  @override
   String get travelSectionJourney => 'ጉዞዎ';
 
   @override

@@ -2416,6 +2416,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lostWalletMarkedDone => 'ပြီးပြီဟု မှတ်သားပြီးပါပြီ';
 
   @override
+  String get lostWalletSeeDone => 'ပြီးသွားသည်များကို ကြည့်ရန်';
+
+  @override
   String get travelSectionJourney => 'သင့်ခရီး';
 
   @override

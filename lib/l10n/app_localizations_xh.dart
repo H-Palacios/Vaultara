@@ -2419,6 +2419,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lostWalletMarkedDone => 'Iphawulwe njengegqityiweyo';
 
   @override
+  String get lostWalletSeeDone => 'Bona okugqityiweyo';
+
+  @override
   String get travelSectionJourney => 'Uhambo lwakho';
 
   @override

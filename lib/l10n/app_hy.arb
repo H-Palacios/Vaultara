@@ -967,6 +967,7 @@
   "lostWalletStillMissingTitle": "Դեռ չի՞ գտնվել",
   "lostWalletStillMissingBody": "Եթե չի գտնվել, չեղարկեք սառեցված քարտերը և պատվիրեք նորերը։",
   "lostWalletMarkedDone": "Նշվեց որպես արված",
+  "lostWalletSeeDone": "Տեսնել արվածը",
   "travelSectionJourney": "Ձեր ճանապարհորդությունը",
   "travelFlights": "Չվերթներ",
   "travelFlightsHint": "Ավելացրեք յուրաքանչյուր թռիչք, ներառյալ տրանզիտները, որպեսզի տեսնեք, երբ եք վայրէջք կատարում և քանի օր եք մնում։",

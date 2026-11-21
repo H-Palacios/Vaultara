@@ -2419,6 +2419,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lostWalletMarkedDone => 'Marcat com a fet';
 
   @override
+  String get lostWalletSeeDone => 'Mostra el que està fet';
+
+  @override
   String get travelSectionJourney => 'El teu viatge';
 
   @override

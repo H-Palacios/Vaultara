@@ -965,6 +965,7 @@
   "lostWalletStillMissingTitle": "まだ見つかりませんか？",
   "lostWalletStillMissingBody": "見つからなければ、停止中のカードを解約して新しいカードを申し込みましょう。",
   "lostWalletMarkedDone": "完了にしました",
+  "lostWalletSeeDone": "完了したものを見る",
   "travelSectionJourney": "旅程",
   "travelFlights": "フライト",
   "travelFlightsHint": "乗り継ぎを含めてすべての便を追加すると、到着日と滞在日数がわかります。",

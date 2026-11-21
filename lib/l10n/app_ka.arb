@@ -971,6 +971,7 @@
   "lostWalletStillMissingTitle": "ისევ არ ჩანს?",
   "lostWalletStillMissingBody": "თუ არ გამოჩნდა, გააუქმეთ გაყინული ბარათები და შეუკვეთეთ ახალი.",
   "lostWalletMarkedDone": "მოინიშნა შესრულებულად",
+  "lostWalletSeeDone": "ნახეთ რა გაკეთდა",
   "travelSectionJourney": "თქვენი მოგზაურობა",
   "travelFlights": "ფრენები",
   "travelFlightsHint": "დაამატეთ ყველა ფრენა, გადაჯდომების ჩათვლით, რომ ნახოთ როდის დაეშვებით და რამდენ დღეს დარჩებით.",

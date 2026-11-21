@@ -946,6 +946,7 @@
   "lostWalletStillMissingTitle": "還沒找到？",
   "lostWalletStillMissingBody": "如果還沒找到，請停用已凍結的卡並申請新卡。",
   "lostWalletMarkedDone": "已標示為完成",
+  "lostWalletSeeDone": "查看已完成的",
   "travelSectionJourney": "你的行程",
   "travelFlights": "航班",
   "travelFlightsHint": "新增每一段航班（包括轉機），即可看到你何時落地以及在當地停留幾天。",

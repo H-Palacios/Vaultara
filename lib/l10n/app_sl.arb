@@ -953,6 +953,7 @@
   "lostWalletStillMissingTitle": "Še vedno manjka?",
   "lostWalletStillMissingBody": "Če se ni pojavilo, prekličite zamrznjene kartice in naročite nove.",
   "lostWalletMarkedDone": "Označeno kot opravljeno",
+  "lostWalletSeeDone": "Poglejte, kaj je opravljeno",
   "travelSectionJourney": "Vaše potovanje",
   "travelFlights": "Leti",
   "travelFlightsHint": "Dodajte vsak let, tudi prestope, da vidite, kdaj pristanete in koliko dni boste tam.",

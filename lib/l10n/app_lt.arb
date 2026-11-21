@@ -971,6 +971,7 @@
   "lostWalletStillMissingTitle": "Vis dar nerasta?",
   "lostWalletStillMissingBody": "Jei nerasta, atšaukite užšaldytas korteles ir užsisakykite naujas.",
   "lostWalletMarkedDone": "Pažymėta kaip atlikta",
+  "lostWalletSeeDone": "Peržiūrėti atliktus",
   "travelSectionJourney": "Jūsų kelionė",
   "travelFlights": "Skrydžiai",
   "travelFlightsHint": "Pridėkite kiekvieną skrydį, įskaitant persėdimus, kad matytumėte, kada nusileidžiate ir kiek dienų ten būsite.",

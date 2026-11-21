@@ -2438,6 +2438,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lostWalletMarkedDone => 'Označené ako hotové';
 
   @override
+  String get lostWalletSeeDone => 'Zobraziť hotové';
+
+  @override
   String get travelSectionJourney => 'Vaša cesta';
 
   @override

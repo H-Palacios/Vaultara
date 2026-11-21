@@ -2419,6 +2419,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String get lostWalletMarkedDone => 'Орындалды деп белгіленді';
 
   @override
+  String get lostWalletSeeDone => 'Орындалғанды көру';
+
+  @override
   String get travelSectionJourney => 'Сіздің сапарыңыз';
 
   @override

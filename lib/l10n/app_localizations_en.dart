@@ -2443,6 +2443,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get lostWalletMarkedDone => 'Marked as done';
 
   @override
+  String get lostWalletSeeDone => 'See what\'s done';
+
+  @override
   String get travelSectionJourney => 'Your journey';
 
   @override

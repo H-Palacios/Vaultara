@@ -2419,6 +2419,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lostWalletMarkedDone => 'მოინიშნა შესრულებულად';
 
   @override
+  String get lostWalletSeeDone => 'ნახეთ რა გაკეთდა';
+
+  @override
   String get travelSectionJourney => 'თქვენი მოგზაურობა';
 
   @override

@@ -965,6 +965,7 @@
   "lostWalletStillMissingTitle": "Toujours introuvable ?",
   "lostWalletStillMissingBody": "S'il n'a pas réapparu, annulez les cartes bloquées et commandez-en de nouvelles.",
   "lostWalletMarkedDone": "Marqué comme fait",
+  "lostWalletSeeDone": "Voir ce qui est fait",
   "travelSectionJourney": "Votre voyage",
   "travelFlights": "Vols",
   "travelFlightsHint": "Ajoutez chaque vol, correspondances comprises, pour voir quand vous atterrissez et combien de jours vous y passez.",

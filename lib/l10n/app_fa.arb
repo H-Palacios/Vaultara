@@ -965,6 +965,7 @@
   "lostWalletStillMissingTitle": "هنوز پیدا نشده؟",
   "lostWalletStillMissingBody": "اگر پیدا نشده، کارت‌های مسدود را لغو و کارت جدید سفارش دهید.",
   "lostWalletMarkedDone": "به‌عنوان انجام‌شده علامت خورد",
+  "lostWalletSeeDone": "دیدن کارهای انجام‌شده",
   "travelSectionJourney": "سفر شما",
   "travelFlights": "پروازها",
   "travelFlightsHint": "هر پرواز، همراه با پروازهای اتصالی، را اضافه کنید تا ببینید کی فرود می‌آیید و چند روز آنجا هستید.",

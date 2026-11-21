@@ -967,6 +967,7 @@
   "lostWalletStillMissingTitle": "Oraindik ez da agertu?",
   "lostWalletStillMissingBody": "Agertu ez bada, ezeztatu izoztutako txartelak eta eskatu berriak.",
   "lostWalletMarkedDone": "Eginda gisa markatuta",
+  "lostWalletSeeDone": "Ikusi egindakoa",
   "travelSectionJourney": "Zure bidaia",
   "travelFlights": "Hegaldiak",
   "travelFlightsHint": "Gehitu hegaldi bakoitza, eskalak barne, noiz lurreratzen zaren eta zenbat egun egongo zaren ikusteko.",

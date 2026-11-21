@@ -965,6 +965,7 @@
   "lostWalletStillMissingTitle": "Fós ar iarraidh?",
   "lostWalletStillMissingBody": "Mura bhfuil sé tagtha ar ais, cealaigh na cártaí reoite agus ordaigh cinn nua.",
   "lostWalletMarkedDone": "Marcáilte mar déanta",
+  "lostWalletSeeDone": "Féach a bhfuil déanta",
   "travelSectionJourney": "Do thuras",
   "travelFlights": "Eitiltí",
   "travelFlightsHint": "Cuir gach eitilt leis, naisc san áireamh, chun a fheiceáil cathain a thuirlingíonn tú agus cé mhéad lá a bheidh tú ann.",

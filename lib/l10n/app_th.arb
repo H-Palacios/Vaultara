@@ -970,6 +970,7 @@
   "lostWalletStillMissingTitle": "ยังหาไม่เจอ?",
   "lostWalletStillMissingBody": "ถ้ายังไม่เจอ ให้ยกเลิกบัตรที่อายัดไว้และขอบัตรใหม่",
   "lostWalletMarkedDone": "ทำเครื่องหมายว่าเสร็จแล้ว",
+  "lostWalletSeeDone": "ดูสิ่งที่เสร็จแล้ว",
   "travelSectionJourney": "การเดินทางของคุณ",
   "travelFlights": "เที่ยวบิน",
   "travelFlightsHint": "เพิ่มทุกเที่ยวบิน รวมถึงเที่ยวบินต่อเครื่อง เพื่อดูว่าคุณลงจอดเมื่อไรและอยู่ที่นั่นกี่วัน",

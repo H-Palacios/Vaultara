@@ -970,6 +970,7 @@
   "lostWalletStillMissingTitle": "Досі не знайшлося?",
   "lostWalletStillMissingBody": "Якщо не знайшлося, закрийте заморожені картки й замовте нові.",
   "lostWalletMarkedDone": "Позначено як виконане",
+  "lostWalletSeeDone": "Переглянути виконане",
   "travelSectionJourney": "Ваша подорож",
   "travelFlights": "Перельоти",
   "travelFlightsHint": "Додайте кожен рейс, включно з пересадками, щоб бачити, коли ви прилітаєте і скільки днів там проводите.",

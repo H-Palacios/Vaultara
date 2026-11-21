@@ -2419,6 +2419,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get lostWalletMarkedDone => 'সম্পন্ন হিসেবে চিহ্নিত';
 
   @override
+  String get lostWalletSeeDone => 'কী সম্পন্ন হয়েছে দেখুন';
+
+  @override
   String get travelSectionJourney => 'আপনার যাত্রা';
 
   @override

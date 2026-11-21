@@ -2419,6 +2419,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lostWalletMarkedDone => 'Wek qediyayî hate nîşankirin';
 
   @override
+  String get lostWalletSeeDone => 'Tiştên qediyayî bibîne';
+
+  @override
   String get travelSectionJourney => 'Rêwîtiya te';
 
   @override

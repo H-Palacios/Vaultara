@@ -2413,6 +2413,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get lostWalletMarkedDone => 'Ditandai selesai';
 
   @override
+  String get lostWalletSeeDone => 'Lihat yang sudah selesai';
+
+  @override
   String get travelSectionJourney => 'Perjalanan Anda';
 
   @override

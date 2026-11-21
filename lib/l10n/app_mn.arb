@@ -971,6 +971,7 @@
   "lostWalletStillMissingTitle": "Одоо ч олдоогүй юу?",
   "lostWalletStillMissingBody": "Олдоогүй бол түр хаасан картуудаа цуцалж, шинээр захиалаарай.",
   "lostWalletMarkedDone": "Дууссан гэж тэмдэглэлээ",
+  "lostWalletSeeDone": "Хийсэн зүйлсийг харах",
   "travelSectionJourney": "Таны аялал",
   "travelFlights": "Нислэгүүд",
   "travelFlightsHint": "Хэзээ буухыг болон тэнд хэдэн өдөр байхыг харахын тулд дамжих нислэгийг оролцуулан нислэг бүрийг нэмнэ үү.",

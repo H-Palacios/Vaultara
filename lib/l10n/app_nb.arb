@@ -953,6 +953,7 @@
   "lostWalletStillMissingTitle": "Fortsatt borte?",
   "lostWalletStillMissingBody": "Hvis det ikke har dukket opp, avslutt de frosne kortene og bestill nye.",
   "lostWalletMarkedDone": "Merket som ferdig",
+  "lostWalletSeeDone": "Se hva som er gjort",
   "travelSectionJourney": "Reisen din",
   "travelFlights": "Flyvninger",
   "travelFlightsHint": "Legg til hver flyvning, også bytter, for å se når du lander og hvor mange dager du er der.",

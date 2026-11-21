@@ -984,6 +984,7 @@
   "lostWalletStillMissingTitle": "Continua perdut?",
   "lostWalletStillMissingBody": "Si no ha aparegut, cancel·la les targetes congelades i demana'n de noves.",
   "lostWalletMarkedDone": "Marcat com a fet",
+  "lostWalletSeeDone": "Mostra el que està fet",
   "travelSectionJourney": "El teu viatge",
   "travelFlights": "Vols",
   "travelFlightsHint": "Afegeix cada vol, escales incloses, per veure quan aterres i quants dies hi passes.",

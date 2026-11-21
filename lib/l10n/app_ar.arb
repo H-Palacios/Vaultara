@@ -991,6 +991,7 @@
   "lostWalletStillMissingTitle": "ما زال مفقودًا؟",
   "lostWalletStillMissingBody": "إذا لم يظهر، ألغِ البطاقات المجمدة واطلب بطاقات جديدة.",
   "lostWalletMarkedDone": "تم وضع علامة كمكتمل",
+  "lostWalletSeeDone": "عرض ما تم إنجازه",
   "travelSectionJourney": "رحلتك",
   "travelFlights": "الرحلات الجوية",
   "travelFlightsHint": "أضف كل رحلة، بما فيها رحلات الترانزيت، لترى متى تهبط وكم يومًا تقضي هناك.",

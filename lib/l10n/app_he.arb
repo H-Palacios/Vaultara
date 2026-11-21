@@ -958,6 +958,7 @@
   "lostWalletStillMissingTitle": "עדיין חסר?",
   "lostWalletStillMissingBody": "אם זה לא נמצא, בטל את הכרטיסים המוקפאים והזמן חדשים.",
   "lostWalletMarkedDone": "סומן כבוצע",
+  "lostWalletSeeDone": "הצג את מה שבוצע",
   "travelSectionJourney": "הנסיעה שלך",
   "travelFlights": "טיסות",
   "travelFlightsHint": "הוסיפו כל טיסה, כולל טיסות המשך, כדי לראות מתי נוחתים וכמה ימים שוהים שם.",

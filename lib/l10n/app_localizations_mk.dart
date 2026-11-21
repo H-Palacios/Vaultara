@@ -2417,6 +2417,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get lostWalletMarkedDone => 'Означено како готово';
 
   @override
+  String get lostWalletSeeDone => 'Погледнете што е готово';
+
+  @override
   String get travelSectionJourney => 'Вашето патување';
 
   @override
