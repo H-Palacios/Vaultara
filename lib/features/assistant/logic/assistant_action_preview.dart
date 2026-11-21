@@ -21,6 +21,7 @@ import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/view/trip_purpose_picker.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/records/view/kept_in_text.dart';
 
 class AssistantChangeRow {
   final String label;
@@ -120,6 +121,8 @@ class AssistantActionPreview {
         return 'plan_step';
       case AssistantActionType.recordDetails:
         return 'record_details';
+      case AssistantActionType.share:
+        return 'share';
     }
   }
 
@@ -230,6 +233,19 @@ class AssistantActionPreview {
         return _renewalPlan(f, action);
       case AssistantActionType.recordDetails:
         return _recordDetails(f, action);
+      case AssistantActionType.share:
+        return AssistantActionPreview(
+          title: action.shareOn
+              ? f.loc.assistantShareTitle
+              : f.loc.assistantUnshareTitle,
+          icon: action.shareOn ? Icons.group_add_rounded : Icons.person_rounded,
+          subject: _recordName(f.loc, null, action.name),
+          rows: const <AssistantChangeRow>[],
+          note: action.shareOn
+              ? f.loc.assistantShareNote
+              : f.loc.assistantUnshareNote,
+          private: action.name == null,
+        );
       case AssistantActionType.appointment:
         return _appointment(f, action);
       case AssistantActionType.planStep:
@@ -694,6 +710,15 @@ class AssistantActionPreview {
           label: loc.walletTileTitle,
           before: record == null ? null : f.onOff(record.inWallet),
           after: f.onOff(c.inWallet!),
+        ),
+      );
+    }
+    if (c.keptIn != null) {
+      rows.add(
+        AssistantChangeRow(
+          label: loc.keptInTitle,
+          before: record == null ? null : KeptInText.label(loc, record.place),
+          after: KeptInText.label(loc, c.keptIn!.value),
         ),
       );
     }

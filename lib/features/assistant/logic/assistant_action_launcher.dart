@@ -40,6 +40,7 @@ import 'package:vaultara/features/travel/logic/visa_check.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_fab.dart';
 import 'package:vaultara/shell/shell_state.dart';
+import 'package:vaultara/features/household/data/household_repository.dart';
 
 enum AssistantApplyResult { applied, opened, failed }
 
@@ -261,6 +262,8 @@ class AssistantActionLauncher {
           return await _tickStep(context, action, slot);
         case AssistantActionType.recordDetails:
           return await _saveDetails(context, action, slot);
+        case AssistantActionType.share:
+          return await _share(context, action, slot);
       }
     } catch (_) {
       if (context.mounted) {
@@ -726,6 +729,70 @@ class AssistantActionLauncher {
     return AssistantApplyResult.applied;
   }
 
+  /// Shares a record with the household or makes it private again, the same
+  /// way the record editor does. Undo moves it back, except when a private
+  /// record went back to the household member who shared it.
+  static Future<AssistantApplyResult> _share(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final id = action.recordId;
+    final record = id == null ? null : RecordRepository.findById(id);
+    if (record == null) {
+      _info(context, loc.assistantRecordMissing);
+      return AssistantApplyResult.failed;
+    }
+    final on = action.shareOn;
+    if (record.isShared == on) return AssistantApplyResult.applied;
+    if (!HouseholdRepository.canEditShared) {
+      _info(context, loc.householdMoveFailed);
+      return AssistantApplyResult.failed;
+    }
+    var stillHere = true;
+    try {
+      if (on) {
+        await RecordRepository.moveToHousehold(record);
+      } else {
+        stillHere = await RecordRepository.moveToPrivate(record);
+      }
+    } catch (_) {
+      if (context.mounted) _info(context, loc.householdMoveFailed);
+      return AssistantApplyResult.failed;
+    }
+    _refreshHome();
+    if (stillHere) {
+      slot.undo = () async {
+        final current = RecordRepository.findById(record.id!);
+        if (current == null) return false;
+        try {
+          if (on) {
+            await RecordRepository.moveToPrivate(current);
+          } else {
+            await RecordRepository.moveToHousehold(current);
+          }
+          _refreshHome();
+          return true;
+        } catch (_) {
+          return false;
+        }
+      };
+    }
+    if (context.mounted) {
+      ActionFeedbackSnackbar.show(
+        context,
+        !stillHere
+            ? loc.householdUnsharedToCreator
+            : on
+            ? loc.assistantShareDone
+            : loc.assistantUnshareDone,
+        icon: on ? Icons.group_rounded : Icons.person_rounded,
+      );
+    }
+    return AssistantApplyResult.applied;
+  }
+
   static Future<AssistantApplyResult> _restore(
     BuildContext context,
     AssistantAction action,
@@ -895,6 +962,8 @@ class AssistantActionLauncher {
       lostLine: changes.lostLine?.value,
       clearLostLine:
           changes.lostLine != null && changes.lostLine!.value == null,
+      keptIn: changes.keptIn?.value,
+      clearKeptIn: changes.keptIn != null && changes.keptIn!.value == null,
     );
 
     await RecordRepository.updateRecord(record, updated);

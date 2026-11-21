@@ -1,3 +1,4 @@
+import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/records/data/models/record_prefill.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
@@ -26,6 +27,7 @@ enum AssistantActionType {
   appointment,
   planStep,
   recordDetails,
+  share,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -55,6 +57,9 @@ class AssistantRecordChanges {
   /// The number to call to block a lost card; a null value clears it.
   final AssistantValue<String>? lostLine;
 
+  /// Where the card or document is kept (KeptIn); a null value clears it.
+  final AssistantValue<String>? keptIn;
+
   const AssistantRecordChanges({
     this.name,
     this.groupKey,
@@ -71,6 +76,7 @@ class AssistantRecordChanges {
     this.locked,
     this.inWallet,
     this.lostLine,
+    this.keptIn,
   });
 
   bool get isEmpty =>
@@ -86,7 +92,8 @@ class AssistantRecordChanges {
       personId == null &&
       locked == null &&
       inWallet == null &&
-      lostLine == null;
+      lostLine == null &&
+      keptIn == null;
 
   static AssistantRecordChanges? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -121,6 +128,12 @@ class AssistantRecordChanges {
       inWallet: raw['inWallet'] is bool ? raw['inWallet'] as bool : null,
       lostLine: raw.containsKey('lostLine')
           ? AssistantValue<String>(AssistantAction.text(raw['lostLine'], 40))
+          : null,
+      // An unknown place is ignored rather than clearing the saved one.
+      keptIn:
+          raw.containsKey('keptIn') &&
+              (raw['keptIn'] == null || KeptIn.clean(raw['keptIn']) != null)
+          ? AssistantValue<String>(KeptIn.clean(raw['keptIn']))
           : null,
     );
     if (changes.groupKey != null && changes.categoryKey == null) return null;
@@ -327,6 +340,10 @@ class AssistantAction {
   final bool stepDone;
   final String? stepText;
 
+  /// For a share card: true shares the record with the household, false
+  /// makes it private again.
+  final bool shareOn;
+
   const AssistantAction({
     required this.type,
     this.name,
@@ -339,6 +356,7 @@ class AssistantAction {
     this.person,
     this.notes,
     this.recordId,
+    this.shareOn = false,
     this.renewalCost,
     this.hasCost = false,
     this.currency,
@@ -633,6 +651,17 @@ class AssistantAction {
             type: AssistantActionType.restore,
             recordId: id,
             name: text(raw['name'], 60),
+          );
+        }
+      case 'share':
+        {
+          final id = text(raw['recordId'], 200);
+          if (id == null || raw['share'] is! bool) return null;
+          return AssistantAction(
+            type: AssistantActionType.share,
+            recordId: id,
+            name: text(raw['name'], 60),
+            shareOn: raw['share'] as bool,
           );
         }
       case 'renewal_plan':
