@@ -8943,6 +8943,24 @@ class AppLocalizationsKm extends AppLocalizations {
   String get assistantRestoreNote => 'កំណត់ត្រា និងការរំលឹករបស់វាត្រឡប់មកវិញ។';
 
   @override
+  String get assistantShareTitle => 'ចែករំលែកជាមួយគ្រួសារ';
+
+  @override
+  String get assistantUnshareTitle => 'ធ្វើឱ្យឯកជន';
+
+  @override
+  String get assistantShareNote => 'អ្នកគ្រប់គ្នាក្នុងគ្រួសាររបស់អ្នកអាចមើល និងកែវាបាន។';
+
+  @override
+  String get assistantUnshareNote => 'គ្រួសាររបស់អ្នកនឹងមិនឃើញវាទៀតទេ។';
+
+  @override
+  String get assistantShareDone => 'បានចែករំលែកជាមួយគ្រួសាររបស់អ្នក';
+
+  @override
+  String get assistantUnshareDone => 'កំណត់ត្រាជាឯកជនម្ដងទៀត';
+
+  @override
   String get assistantStepCategories => 'កំពុងពិនិត្យប្រភេទរបស់អ្នក…';
 
   @override

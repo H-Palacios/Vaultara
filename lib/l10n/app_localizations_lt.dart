@@ -9156,6 +9156,24 @@ class AppLocalizationsLt extends AppLocalizations {
   String get assistantRestoreNote => 'Įrašas ir jo priminimai grįžta.';
 
   @override
+  String get assistantShareTitle => 'Bendrinti su namų ūkiu';
+
+  @override
+  String get assistantUnshareTitle => 'Padaryti privačiu';
+
+  @override
+  String get assistantShareNote => 'Visi jūsų namų ūkio nariai galės jį matyti ir redaguoti.';
+
+  @override
+  String get assistantUnshareNote => 'Jūsų namų ūkis jo nebematys.';
+
+  @override
+  String get assistantShareDone => 'Bendrinama su jūsų namų ūkiu';
+
+  @override
+  String get assistantUnshareDone => 'Įrašas vėl privatus';
+
+  @override
   String get assistantStepCategories => 'Tikrinamos jūsų kategorijos…';
 
   @override

@@ -9007,6 +9007,24 @@ class AppLocalizationsBn extends AppLocalizations {
   String get assistantRestoreNote => 'রেকর্ড এবং এর রিমাইন্ডার ফিরে আসবে।';
 
   @override
+  String get assistantShareTitle => 'পরিবারের সাথে শেয়ার করুন';
+
+  @override
+  String get assistantUnshareTitle => 'ব্যক্তিগত করুন';
+
+  @override
+  String get assistantShareNote => 'আপনার পরিবারের সবাই এটি দেখতে ও সম্পাদনা করতে পারবে।';
+
+  @override
+  String get assistantUnshareNote => 'আপনার পরিবার আর এটি দেখতে পাবে না।';
+
+  @override
+  String get assistantShareDone => 'আপনার পরিবারের সাথে শেয়ার করা হয়েছে';
+
+  @override
+  String get assistantUnshareDone => 'রেকর্ডটি আবার ব্যক্তিগত';
+
+  @override
   String get assistantStepCategories => 'আপনার ক্যাটাগরি দেখা হচ্ছে…';
 
   @override

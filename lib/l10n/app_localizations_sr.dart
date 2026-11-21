@@ -9087,6 +9087,24 @@ class AppLocalizationsSr extends AppLocalizations {
   String get assistantRestoreNote => 'Запис и његови подсетници се враћају.';
 
   @override
+  String get assistantShareTitle => 'Подели са домаћинством';
+
+  @override
+  String get assistantUnshareTitle => 'Учини приватним';
+
+  @override
+  String get assistantShareNote => 'Сви у вашем домаћинству могу да га виде и уређују.';
+
+  @override
+  String get assistantUnshareNote => 'Ваше домаћинство га више неће видети.';
+
+  @override
+  String get assistantShareDone => 'Подељено са вашим домаћинством';
+
+  @override
+  String get assistantUnshareDone => 'Запис је поново приватан';
+
+  @override
   String get assistantStepCategories => 'Проверавам ваше категорије…';
 
   @override
@@ -18867,6 +18885,24 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get assistantRestoreNote => 'Запис и његови подсетници се враћају.';
 
   @override
+  String get assistantShareTitle => 'Подели са домаћинством';
+
+  @override
+  String get assistantUnshareTitle => 'Учини приватним';
+
+  @override
+  String get assistantShareNote => 'Сви у вашем домаћинству могу да га виде и уређују.';
+
+  @override
+  String get assistantUnshareNote => 'Ваше домаћинство га више неће видети.';
+
+  @override
+  String get assistantShareDone => 'Подељено са вашим домаћинством';
+
+  @override
+  String get assistantUnshareDone => 'Запис је поново приватан';
+
+  @override
   String get assistantStepCategories => 'Проверавам ваше категорије…';
 
   @override
@@ -28641,6 +28677,24 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get assistantRestoreNote => 'Zapis i njegovi podsetnici se vraćaju.';
+
+  @override
+  String get assistantShareTitle => 'Podeli sa domaćinstvom';
+
+  @override
+  String get assistantUnshareTitle => 'Učini privatnim';
+
+  @override
+  String get assistantShareNote => 'Svi u vašem domaćinstvu mogu da ga vide i uređuju.';
+
+  @override
+  String get assistantUnshareNote => 'Vaše domaćinstvo ga više neće videti.';
+
+  @override
+  String get assistantShareDone => 'Podeljeno sa vašim domaćinstvom';
+
+  @override
+  String get assistantUnshareDone => 'Zapis je ponovo privatan';
 
   @override
   String get assistantStepCategories => 'Proveravam vaše kategorije…';

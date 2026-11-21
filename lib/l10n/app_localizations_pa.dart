@@ -9007,6 +9007,24 @@ class AppLocalizationsPa extends AppLocalizations {
   String get assistantRestoreNote => 'ਰਿਕਾਰਡ ਅਤੇ ਇਸਦੇ ਰਿਮਾਈਂਡਰ ਵਾਪਸ ਆ ਜਾਂਦੇ ਹਨ।';
 
   @override
+  String get assistantShareTitle => 'ਘਰ ਵਾਲਿਆਂ ਨਾਲ ਸਾਂਝਾ ਕਰੋ';
+
+  @override
+  String get assistantUnshareTitle => 'ਨਿੱਜੀ ਬਣਾਓ';
+
+  @override
+  String get assistantShareNote => 'ਤੁਹਾਡੇ ਘਰ ਦਾ ਹਰ ਕੋਈ ਇਸਨੂੰ ਵੇਖ ਅਤੇ ਸੰਪਾਦਿਤ ਕਰ ਸਕਦਾ ਹੈ।';
+
+  @override
+  String get assistantUnshareNote => 'ਤੁਹਾਡੇ ਘਰ ਵਾਲੇ ਹੁਣ ਇਸਨੂੰ ਨਹੀਂ ਵੇਖਣਗੇ।';
+
+  @override
+  String get assistantShareDone => 'ਤੁਹਾਡੇ ਘਰ ਵਾਲਿਆਂ ਨਾਲ ਸਾਂਝਾ ਕੀਤਾ';
+
+  @override
+  String get assistantUnshareDone => 'ਰਿਕਾਰਡ ਫਿਰ ਤੋਂ ਨਿੱਜੀ ਹੈ';
+
+  @override
   String get assistantStepCategories => 'ਤੁਹਾਡੀਆਂ ਸ਼੍ਰੇਣੀਆਂ ਦੀ ਜਾਂਚ ਹੋ ਰਹੀ ਹੈ…';
 
   @override

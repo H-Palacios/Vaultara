@@ -9158,6 +9158,24 @@ class AppLocalizationsSk extends AppLocalizations {
   String get assistantRestoreNote => 'Záznam aj jeho pripomenutia sa vrátia.';
 
   @override
+  String get assistantShareTitle => 'Zdieľať s domácnosťou';
+
+  @override
+  String get assistantUnshareTitle => 'Nastaviť ako súkromné';
+
+  @override
+  String get assistantShareNote => 'Všetci vo vašej domácnosti ho môžu vidieť a upravovať.';
+
+  @override
+  String get assistantUnshareNote => 'Vaša domácnosť ho už neuvidí.';
+
+  @override
+  String get assistantShareDone => 'Zdieľané s vašou domácnosťou';
+
+  @override
+  String get assistantUnshareDone => 'Záznam je opäť súkromný';
+
+  @override
   String get assistantStepCategories => 'Kontrolujem vaše kategórie…';
 
   @override

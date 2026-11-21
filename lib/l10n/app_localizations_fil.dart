@@ -9001,6 +9001,24 @@ class AppLocalizationsFil extends AppLocalizations {
   String get assistantRestoreNote => 'Babalik ang record at ang mga paalala nito.';
 
   @override
+  String get assistantShareTitle => 'Ibahagi sa sambahayan';
+
+  @override
+  String get assistantUnshareTitle => 'Gawing pribado';
+
+  @override
+  String get assistantShareNote => 'Makikita at mae-edit ito ng lahat sa iyong sambahayan.';
+
+  @override
+  String get assistantUnshareNote => 'Hindi na ito makikita ng iyong sambahayan.';
+
+  @override
+  String get assistantShareDone => 'Ibinahagi sa iyong sambahayan';
+
+  @override
+  String get assistantUnshareDone => 'Pribado na ulit ang record';
+
+  @override
   String get assistantStepCategories => 'Sinusuri ang iyong mga kategorya…';
 
   @override

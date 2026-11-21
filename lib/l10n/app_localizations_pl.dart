@@ -9179,6 +9179,24 @@ class AppLocalizationsPl extends AppLocalizations {
   String get assistantRestoreNote => 'Wpis i jego przypomnienia wracają.';
 
   @override
+  String get assistantShareTitle => 'Udostępnij domownikom';
+
+  @override
+  String get assistantUnshareTitle => 'Ustaw jako prywatny';
+
+  @override
+  String get assistantShareNote => 'Wszyscy w Twoim gospodarstwie domowym mogą go zobaczyć i edytować.';
+
+  @override
+  String get assistantUnshareNote => 'Twoi domownicy nie będą go już widzieć.';
+
+  @override
+  String get assistantShareDone => 'Udostępniono domownikom';
+
+  @override
+  String get assistantUnshareDone => 'Wpis znów jest prywatny';
+
+  @override
   String get assistantStepCategories => 'Sprawdzanie kategorii…';
 
   @override

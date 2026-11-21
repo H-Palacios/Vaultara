@@ -8943,6 +8943,24 @@ class AppLocalizationsMy extends AppLocalizations {
   String get assistantRestoreNote => 'မှတ်တမ်းနှင့် ၎င်း၏ သတိပေးချက်များ ပြန်ရောက်လာပါမည်။';
 
   @override
+  String get assistantShareTitle => 'အိမ်ထောင်စုနှင့် မျှဝေရန်';
+
+  @override
+  String get assistantUnshareTitle => 'ကိုယ်ပိုင်အဖြစ် ပြောင်းရန်';
+
+  @override
+  String get assistantShareNote => 'သင့်အိမ်ထောင်စုရှိ လူတိုင်း ၎င်းကို ကြည့်ပြီး ပြင်ဆင်နိုင်ပါသည်။';
+
+  @override
+  String get assistantUnshareNote => 'သင့်အိမ်ထောင်စုက ၎င်းကို မမြင်ရတော့ပါ။';
+
+  @override
+  String get assistantShareDone => 'သင့်အိမ်ထောင်စုနှင့် မျှဝေပြီးပါပြီ';
+
+  @override
+  String get assistantUnshareDone => 'မှတ်တမ်းသည် ကိုယ်ပိုင်အဖြစ် ပြန်ဖြစ်သွားပါပြီ';
+
+  @override
   String get assistantStepCategories => 'သင့်အမျိုးအစားများကို စစ်ဆေးနေသည်…';
 
   @override

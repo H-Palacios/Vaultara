@@ -9007,6 +9007,24 @@ class AppLocalizationsBg extends AppLocalizations {
   String get assistantRestoreNote => 'Записът и напомнянията му се връщат.';
 
   @override
+  String get assistantShareTitle => 'Сподели с домакинството';
+
+  @override
+  String get assistantUnshareTitle => 'Направи личен';
+
+  @override
+  String get assistantShareNote => 'Всички в домакинството ви могат да го виждат и редактират.';
+
+  @override
+  String get assistantUnshareNote => 'Домакинството ви вече няма да го вижда.';
+
+  @override
+  String get assistantShareDone => 'Споделено с домакинството ви';
+
+  @override
+  String get assistantUnshareDone => 'Записът отново е личен';
+
+  @override
   String get assistantStepCategories => 'Проверка на категориите…';
 
   @override

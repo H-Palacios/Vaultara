@@ -9026,6 +9026,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get assistantRestoreNote => 'The record and its reminders come back.';
 
   @override
+  String get assistantShareTitle => 'Share with household';
+
+  @override
+  String get assistantUnshareTitle => 'Make private';
+
+  @override
+  String get assistantShareNote => 'Everyone in your household can see and edit it.';
+
+  @override
+  String get assistantUnshareNote => 'Your household will no longer see it.';
+
+  @override
+  String get assistantShareDone => 'Shared with your household';
+
+  @override
+  String get assistantUnshareDone => 'Record is private again';
+
+  @override
   String get assistantStepCategories => 'Checking your categories…';
 
   @override

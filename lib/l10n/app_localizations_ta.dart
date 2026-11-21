@@ -9007,6 +9007,24 @@ class AppLocalizationsTa extends AppLocalizations {
   String get assistantRestoreNote => 'பதிவும் அதன் நினைவூட்டல்களும் திரும்ப வரும்.';
 
   @override
+  String get assistantShareTitle => 'குடும்பத்துடன் பகிர்';
+
+  @override
+  String get assistantUnshareTitle => 'தனிப்பட்டதாக்கு';
+
+  @override
+  String get assistantShareNote => 'உங்கள் குடும்பத்தில் அனைவரும் இதைப் பார்க்கவும் திருத்தவும் முடியும்.';
+
+  @override
+  String get assistantUnshareNote => 'உங்கள் குடும்பத்தினர் இனி இதைப் பார்க்க மாட்டார்கள்.';
+
+  @override
+  String get assistantShareDone => 'உங்கள் குடும்பத்துடன் பகிரப்பட்டது';
+
+  @override
+  String get assistantUnshareDone => 'பதிவு மீண்டும் தனிப்பட்டது';
+
+  @override
   String get assistantStepCategories => 'உங்கள் வகைகளைச் சரிபார்க்கிறது…';
 
   @override

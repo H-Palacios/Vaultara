@@ -9007,6 +9007,24 @@ class AppLocalizationsKy extends AppLocalizations {
   String get assistantRestoreNote => 'Жазуу жана анын эскертмелери кайтып келет.';
 
   @override
+  String get assistantShareTitle => 'Үй-бүлө менен бөлүшүү';
+
+  @override
+  String get assistantUnshareTitle => 'Жеке кылуу';
+
+  @override
+  String get assistantShareNote => 'Үй-бүлөңүздөгү бардыгы аны көрүп, түзөтө алат.';
+
+  @override
+  String get assistantUnshareNote => 'Үй-бүлөңүз аны мындан ары көрбөйт.';
+
+  @override
+  String get assistantShareDone => 'Үй-бүлөңүз менен бөлүшүлдү';
+
+  @override
+  String get assistantUnshareDone => 'Жазуу кайра жеке';
+
+  @override
   String get assistantStepCategories => 'Категорияларыңыз текшерилүүдө…';
 
   @override

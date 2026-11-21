@@ -8945,6 +8945,24 @@ class AppLocalizationsZh extends AppLocalizations {
   String get assistantRestoreNote => '记录及其提醒将会恢复。';
 
   @override
+  String get assistantShareTitle => '与家庭共享';
+
+  @override
+  String get assistantUnshareTitle => '设为私密';
+
+  @override
+  String get assistantShareNote => '家庭中的每个人都可以查看和编辑它。';
+
+  @override
+  String get assistantUnshareNote => '您的家庭成员将不再看到它。';
+
+  @override
+  String get assistantShareDone => '已与家庭共享';
+
+  @override
+  String get assistantUnshareDone => '记录已恢复为私密';
+
+  @override
   String get assistantStepCategories => '正在检查你的类别…';
 
   @override
@@ -18567,6 +18585,24 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get assistantRestoreNote => '记录及其提醒将会恢复。';
 
   @override
+  String get assistantShareTitle => '与家庭共享';
+
+  @override
+  String get assistantUnshareTitle => '设为私密';
+
+  @override
+  String get assistantShareNote => '家庭中的每个人都可以查看和编辑它。';
+
+  @override
+  String get assistantUnshareNote => '您的家庭成员将不再看到它。';
+
+  @override
+  String get assistantShareDone => '已与家庭共享';
+
+  @override
+  String get assistantUnshareDone => '记录已恢复为私密';
+
+  @override
   String get assistantStepCategories => '正在检查你的类别…';
 
   @override
@@ -28187,6 +28223,24 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantRestoreNote => '記錄及其提醒會恢復。';
+
+  @override
+  String get assistantShareTitle => '與家庭共用';
+
+  @override
+  String get assistantUnshareTitle => '設為私人';
+
+  @override
+  String get assistantShareNote => '家庭中的每個人都能查看和編輯。';
+
+  @override
+  String get assistantUnshareNote => '你的家庭成員將不再看到它。';
+
+  @override
+  String get assistantShareDone => '已與家庭共用';
+
+  @override
+  String get assistantUnshareDone => '紀錄已恢復為私人';
 
   @override
   String get assistantStepCategories => '正在檢查你的類別…';

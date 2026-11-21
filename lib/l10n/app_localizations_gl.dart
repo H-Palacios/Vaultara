@@ -9011,6 +9011,24 @@ class AppLocalizationsGl extends AppLocalizations {
   String get assistantRestoreNote => 'O rexistro e os seus recordatorios volven.';
 
   @override
+  String get assistantShareTitle => 'Compartir co fogar';
+
+  @override
+  String get assistantUnshareTitle => 'Facer privado';
+
+  @override
+  String get assistantShareNote => 'Todos no teu fogar poderán velo e editalo.';
+
+  @override
+  String get assistantUnshareNote => 'O teu fogar xa non o verá.';
+
+  @override
+  String get assistantShareDone => 'Compartido co teu fogar';
+
+  @override
+  String get assistantUnshareDone => 'O rexistro volve ser privado';
+
+  @override
   String get assistantStepCategories => 'Revisando as túas categorías…';
 
   @override

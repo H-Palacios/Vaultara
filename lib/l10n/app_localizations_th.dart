@@ -8933,6 +8933,24 @@ class AppLocalizationsTh extends AppLocalizations {
   String get assistantRestoreNote => 'รายการและการเตือนจะกลับมา';
 
   @override
+  String get assistantShareTitle => 'แชร์กับครัวเรือน';
+
+  @override
+  String get assistantUnshareTitle => 'ทำให้เป็นส่วนตัว';
+
+  @override
+  String get assistantShareNote => 'ทุกคนในครัวเรือนของคุณจะดูและแก้ไขได้';
+
+  @override
+  String get assistantUnshareNote => 'ครัวเรือนของคุณจะไม่เห็นอีกต่อไป';
+
+  @override
+  String get assistantShareDone => 'แชร์กับครัวเรือนของคุณแล้ว';
+
+  @override
+  String get assistantUnshareDone => 'บันทึกเป็นส่วนตัวอีกครั้ง';
+
+  @override
   String get assistantStepCategories => 'กำลังตรวจสอบหมวดหมู่ของคุณ…';
 
   @override

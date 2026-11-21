@@ -9010,6 +9010,24 @@ class AppLocalizationsSv extends AppLocalizations {
   String get assistantRestoreNote => 'Posten och dess påminnelser kommer tillbaka.';
 
   @override
+  String get assistantShareTitle => 'Dela med hushållet';
+
+  @override
+  String get assistantUnshareTitle => 'Gör privat';
+
+  @override
+  String get assistantShareNote => 'Alla i ditt hushåll kan se och redigera den.';
+
+  @override
+  String get assistantUnshareNote => 'Ditt hushåll ser den inte längre.';
+
+  @override
+  String get assistantShareDone => 'Delad med ditt hushåll';
+
+  @override
+  String get assistantUnshareDone => 'Posten är privat igen';
+
+  @override
   String get assistantStepCategories => 'Kontrollerar dina kategorier…';
 
   @override

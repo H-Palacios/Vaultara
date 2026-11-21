@@ -9007,6 +9007,24 @@ class AppLocalizationsXh extends AppLocalizations {
   String get assistantRestoreNote => 'Irekhodi nezikhumbuzi zayo ziyabuya.';
 
   @override
+  String get assistantShareTitle => 'Yabelana nekhaya';
+
+  @override
+  String get assistantUnshareTitle => 'Yenze ibe yimfihlo';
+
+  @override
+  String get assistantShareNote => 'Wonke umntu osekhayeni lakho angayibona aze ayihlele.';
+
+  @override
+  String get assistantUnshareNote => 'Ikhaya lakho alisayi kuyibona kwakhona.';
+
+  @override
+  String get assistantShareDone => 'Yabelwe nekhaya lakho';
+
+  @override
+  String get assistantUnshareDone => 'Irekhodi liyimfihlo kwakhona';
+
+  @override
   String get assistantStepCategories => 'Kujongwa iindidi zakho…';
 
   @override

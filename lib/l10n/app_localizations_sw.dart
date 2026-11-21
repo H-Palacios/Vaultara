@@ -9007,6 +9007,24 @@ class AppLocalizationsSw extends AppLocalizations {
   String get assistantRestoreNote => 'Rekodi na vikumbusho vyake vinarudi.';
 
   @override
+  String get assistantShareTitle => 'Shiriki na kaya';
+
+  @override
+  String get assistantUnshareTitle => 'Fanya iwe ya faragha';
+
+  @override
+  String get assistantShareNote => 'Kila mtu katika kaya yako anaweza kuiona na kuihariri.';
+
+  @override
+  String get assistantUnshareNote => 'Kaya yako haitaiona tena.';
+
+  @override
+  String get assistantShareDone => 'Imeshirikiwa na kaya yako';
+
+  @override
+  String get assistantUnshareDone => 'Rekodi ni ya faragha tena';
+
+  @override
   String get assistantStepCategories => 'Inakagua aina zako…';
 
   @override

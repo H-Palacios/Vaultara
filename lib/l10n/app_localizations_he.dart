@@ -9065,6 +9065,24 @@ class AppLocalizationsHe extends AppLocalizations {
   String get assistantRestoreNote => 'הרשומה והתזכורות שלה חוזרות.';
 
   @override
+  String get assistantShareTitle => 'שיתוף עם משק הבית';
+
+  @override
+  String get assistantUnshareTitle => 'הפוך לפרטי';
+
+  @override
+  String get assistantShareNote => 'כל מי שבמשק הבית שלך יוכל לראות ולערוך אותו.';
+
+  @override
+  String get assistantUnshareNote => 'משק הבית שלך כבר לא יראה אותו.';
+
+  @override
+  String get assistantShareDone => 'שותף עם משק הבית שלך';
+
+  @override
+  String get assistantUnshareDone => 'הרשומה שוב פרטית';
+
+  @override
   String get assistantStepCategories => 'בודקים את הקטגוריות שלכם…';
 
   @override

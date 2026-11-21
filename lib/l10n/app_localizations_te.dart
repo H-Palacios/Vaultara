@@ -9007,6 +9007,24 @@ class AppLocalizationsTe extends AppLocalizations {
   String get assistantRestoreNote => 'రికార్డ్ మరియు దాని రిమైండర్‌లు తిరిగి వస్తాయి.';
 
   @override
+  String get assistantShareTitle => 'కుటుంబంతో షేర్ చేయండి';
+
+  @override
+  String get assistantUnshareTitle => 'ప్రైవేట్ చేయండి';
+
+  @override
+  String get assistantShareNote => 'మీ కుటుంబంలో అందరూ దీన్ని చూడగలరు, సవరించగలరు.';
+
+  @override
+  String get assistantUnshareNote => 'మీ కుటుంబం ఇకపై దీన్ని చూడదు.';
+
+  @override
+  String get assistantShareDone => 'మీ కుటుంబంతో షేర్ చేయబడింది';
+
+  @override
+  String get assistantUnshareDone => 'రికార్డ్ మళ్లీ ప్రైవేట్‌గా ఉంది';
+
+  @override
   String get assistantStepCategories => 'మీ వర్గాలను తనిఖీ చేస్తోంది…';
 
   @override

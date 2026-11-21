@@ -8933,6 +8933,24 @@ class AppLocalizationsJa extends AppLocalizations {
   String get assistantRestoreNote => '記録とそのリマインダーが元に戻ります。';
 
   @override
+  String get assistantShareTitle => '世帯と共有';
+
+  @override
+  String get assistantUnshareTitle => '非公開にする';
+
+  @override
+  String get assistantShareNote => '世帯の全員が表示・編集できるようになります。';
+
+  @override
+  String get assistantUnshareNote => '世帯のメンバーには表示されなくなります。';
+
+  @override
+  String get assistantShareDone => '世帯と共有しました';
+
+  @override
+  String get assistantUnshareDone => '記録は再び非公開です';
+
+  @override
   String get assistantStepCategories => 'カテゴリを確認しています…';
 
   @override

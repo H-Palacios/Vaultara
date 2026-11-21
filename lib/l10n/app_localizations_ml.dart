@@ -9007,6 +9007,24 @@ class AppLocalizationsMl extends AppLocalizations {
   String get assistantRestoreNote => 'റെക്കോർഡും അതിന്റെ ഓർമ്മപ്പെടുത്തലുകളും തിരികെ വരും.';
 
   @override
+  String get assistantShareTitle => 'കുടുംബവുമായി പങ്കിടുക';
+
+  @override
+  String get assistantUnshareTitle => 'സ്വകാര്യമാക്കുക';
+
+  @override
+  String get assistantShareNote => 'നിങ്ങളുടെ കുടുംബത്തിലെ എല്ലാവർക്കും ഇത് കാണാനും തിരുത്താനും കഴിയും.';
+
+  @override
+  String get assistantUnshareNote => 'നിങ്ങളുടെ കുടുംബത്തിന് ഇനി ഇത് കാണാനാകില്ല.';
+
+  @override
+  String get assistantShareDone => 'നിങ്ങളുടെ കുടുംബവുമായി പങ്കിട്ടു';
+
+  @override
+  String get assistantUnshareDone => 'രേഖ വീണ്ടും സ്വകാര്യമാണ്';
+
+  @override
   String get assistantStepCategories => 'നിങ്ങളുടെ വിഭാഗങ്ങൾ പരിശോധിക്കുന്നു…';
 
   @override

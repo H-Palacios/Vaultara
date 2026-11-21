@@ -11133,6 +11133,30 @@
   "@assistantRestoreNote": {
     "description": "Note on the restore card."
   },
+  "assistantShareTitle": "Share with household",
+  "@assistantShareTitle": {
+    "description": "Ask Vaultara card title: shares a record with the household."
+  },
+  "assistantUnshareTitle": "Make private",
+  "@assistantUnshareTitle": {
+    "description": "Ask Vaultara card title: stops sharing a record with the household."
+  },
+  "assistantShareNote": "Everyone in your household can see and edit it.",
+  "@assistantShareNote": {
+    "description": "Note on the share card."
+  },
+  "assistantUnshareNote": "Your household will no longer see it.",
+  "@assistantUnshareNote": {
+    "description": "Note on the make private card."
+  },
+  "assistantShareDone": "Shared with your household",
+  "@assistantShareDone": {
+    "description": "Confirmation after the share card."
+  },
+  "assistantUnshareDone": "Record is private again",
+  "@assistantUnshareDone": {
+    "description": "Confirmation after the make private card."
+  },
   "assistantStepCategories": "Checking your categories…",
   "@assistantStepCategories": {
     "description": "Shown while Ask Vaultara looks at categories and groups."

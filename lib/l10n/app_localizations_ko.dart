@@ -8945,6 +8945,24 @@ class AppLocalizationsKo extends AppLocalizations {
   String get assistantRestoreNote => '기록과 알림이 다시 돌아옵니다.';
 
   @override
+  String get assistantShareTitle => '가구와 공유';
+
+  @override
+  String get assistantUnshareTitle => '비공개로 전환';
+
+  @override
+  String get assistantShareNote => '가구의 모든 구성원이 보고 수정할 수 있습니다.';
+
+  @override
+  String get assistantUnshareNote => '가구 구성원에게 더 이상 표시되지 않습니다.';
+
+  @override
+  String get assistantShareDone => '가구와 공유했습니다';
+
+  @override
+  String get assistantUnshareDone => '기록이 다시 비공개입니다';
+
+  @override
   String get assistantStepCategories => '카테고리를 확인하는 중…';
 
   @override

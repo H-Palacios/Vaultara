@@ -8940,6 +8940,24 @@ class AppLocalizationsId extends AppLocalizations {
   String get assistantRestoreNote => 'Catatan dan pengingatnya kembali.';
 
   @override
+  String get assistantShareTitle => 'Bagikan dengan rumah tangga';
+
+  @override
+  String get assistantUnshareTitle => 'Jadikan pribadi';
+
+  @override
+  String get assistantShareNote => 'Semua orang di rumah tangga Anda bisa melihat dan mengeditnya.';
+
+  @override
+  String get assistantUnshareNote => 'Rumah tangga Anda tidak akan melihatnya lagi.';
+
+  @override
+  String get assistantShareDone => 'Dibagikan dengan rumah tangga Anda';
+
+  @override
+  String get assistantUnshareDone => 'Catatan kembali pribadi';
+
+  @override
   String get assistantStepCategories => 'Memeriksa kategori Anda…';
 
   @override

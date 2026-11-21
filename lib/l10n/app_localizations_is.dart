@@ -9006,6 +9006,24 @@ class AppLocalizationsIs extends AppLocalizations {
   String get assistantRestoreNote => 'Færslan og áminningar hennar koma aftur.';
 
   @override
+  String get assistantShareTitle => 'Deila með heimilinu';
+
+  @override
+  String get assistantUnshareTitle => 'Gera einkamál';
+
+  @override
+  String get assistantShareNote => 'Allir á heimilinu þínu geta séð og breytt henni.';
+
+  @override
+  String get assistantUnshareNote => 'Heimilið þitt sér hana ekki lengur.';
+
+  @override
+  String get assistantShareDone => 'Deilt með heimilinu þínu';
+
+  @override
+  String get assistantUnshareDone => 'Færslan er aftur einkamál';
+
+  @override
   String get assistantStepCategories => 'Athuga flokkana þína…';
 
   @override

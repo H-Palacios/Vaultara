@@ -9007,6 +9007,24 @@ class AppLocalizationsAz extends AppLocalizations {
   String get assistantRestoreNote => 'Qeyd və onun xatırlatmaları geri qayıdır.';
 
   @override
+  String get assistantShareTitle => 'Ailə ilə paylaş';
+
+  @override
+  String get assistantUnshareTitle => 'Şəxsi et';
+
+  @override
+  String get assistantShareNote => 'Ailənizdəki hər kəs onu görə və redaktə edə bilər.';
+
+  @override
+  String get assistantUnshareNote => 'Ailəniz artıq onu görməyəcək.';
+
+  @override
+  String get assistantShareDone => 'Ailənizlə paylaşıldı';
+
+  @override
+  String get assistantUnshareDone => 'Qeyd yenidən şəxsidir';
+
+  @override
   String get assistantStepCategories => 'Kateqoriyalarınız yoxlanılır…';
 
   @override

@@ -9007,6 +9007,24 @@ class AppLocalizationsMr extends AppLocalizations {
   String get assistantRestoreNote => 'नोंद आणि तिची स्मरणपत्रे परत येतात.';
 
   @override
+  String get assistantShareTitle => 'घरच्यांसोबत शेअर करा';
+
+  @override
+  String get assistantUnshareTitle => 'खाजगी करा';
+
+  @override
+  String get assistantShareNote => 'तुमच्या घरातील सर्वजण ते पाहू आणि संपादित करू शकतात.';
+
+  @override
+  String get assistantUnshareNote => 'तुमचे घरचे ते आता पाहू शकणार नाहीत.';
+
+  @override
+  String get assistantShareDone => 'तुमच्या घरच्यांसोबत शेअर केले';
+
+  @override
+  String get assistantUnshareDone => 'नोंद पुन्हा खाजगी आहे';
+
+  @override
   String get assistantStepCategories => 'तुमच्या श्रेणी तपासत आहे…';
 
   @override

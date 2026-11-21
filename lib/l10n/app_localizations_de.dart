@@ -9011,6 +9011,24 @@ class AppLocalizationsDe extends AppLocalizations {
   String get assistantRestoreNote => 'Der Eintrag und seine Erinnerungen kommen zurück.';
 
   @override
+  String get assistantShareTitle => 'Mit dem Haushalt teilen';
+
+  @override
+  String get assistantUnshareTitle => 'Privat machen';
+
+  @override
+  String get assistantShareNote => 'Alle in deinem Haushalt können ihn sehen und bearbeiten.';
+
+  @override
+  String get assistantUnshareNote => 'Dein Haushalt sieht ihn nicht mehr.';
+
+  @override
+  String get assistantShareDone => 'Mit deinem Haushalt geteilt';
+
+  @override
+  String get assistantUnshareDone => 'Eintrag ist wieder privat';
+
+  @override
   String get assistantStepCategories => 'Kategorien werden geprüft…';
 
   @override

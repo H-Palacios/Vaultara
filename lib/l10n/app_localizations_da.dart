@@ -9011,6 +9011,24 @@ class AppLocalizationsDa extends AppLocalizations {
   String get assistantRestoreNote => 'Posten og dens påmindelser kommer tilbage.';
 
   @override
+  String get assistantShareTitle => 'Del med husstanden';
+
+  @override
+  String get assistantUnshareTitle => 'Gør privat';
+
+  @override
+  String get assistantShareNote => 'Alle i din husstand kan se og redigere den.';
+
+  @override
+  String get assistantUnshareNote => 'Din husstand kan ikke længere se den.';
+
+  @override
+  String get assistantShareDone => 'Delt med din husstand';
+
+  @override
+  String get assistantUnshareDone => 'Posten er privat igen';
+
+  @override
   String get assistantStepCategories => 'Tjekker dine kategorier…';
 
   @override

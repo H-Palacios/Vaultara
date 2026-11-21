@@ -8945,6 +8945,24 @@ class AppLocalizationsVi extends AppLocalizations {
   String get assistantRestoreNote => 'Mục và các lời nhắc của nó sẽ quay lại.';
 
   @override
+  String get assistantShareTitle => 'Chia sẻ với hộ gia đình';
+
+  @override
+  String get assistantUnshareTitle => 'Đặt ở chế độ riêng tư';
+
+  @override
+  String get assistantShareNote => 'Mọi người trong hộ gia đình bạn đều có thể xem và chỉnh sửa.';
+
+  @override
+  String get assistantUnshareNote => 'Hộ gia đình bạn sẽ không thấy nó nữa.';
+
+  @override
+  String get assistantShareDone => 'Đã chia sẻ với hộ gia đình bạn';
+
+  @override
+  String get assistantUnshareDone => 'Hồ sơ đã riêng tư trở lại';
+
+  @override
   String get assistantStepCategories => 'Đang kiểm tra danh mục của bạn…';
 
   @override

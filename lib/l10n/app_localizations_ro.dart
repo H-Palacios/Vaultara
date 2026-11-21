@@ -9089,6 +9089,24 @@ class AppLocalizationsRo extends AppLocalizations {
   String get assistantRestoreNote => 'Înregistrarea și mementourile ei revin.';
 
   @override
+  String get assistantShareTitle => 'Partajează cu gospodăria';
+
+  @override
+  String get assistantUnshareTitle => 'Fă-l privat';
+
+  @override
+  String get assistantShareNote => 'Toți membrii gospodăriei tale îl pot vedea și edita.';
+
+  @override
+  String get assistantUnshareNote => 'Gospodăria ta nu îl va mai vedea.';
+
+  @override
+  String get assistantShareDone => 'Partajat cu gospodăria ta';
+
+  @override
+  String get assistantUnshareDone => 'Înregistrarea este din nou privată';
+
+  @override
   String get assistantStepCategories => 'Se verifică categoriile tale…';
 
   @override

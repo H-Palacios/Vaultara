@@ -9012,6 +9012,24 @@ class AppLocalizationsPt extends AppLocalizations {
   String get assistantRestoreNote => 'O registro e seus lembretes voltam.';
 
   @override
+  String get assistantShareTitle => 'Partilhar com o agregado';
+
+  @override
+  String get assistantUnshareTitle => 'Tornar privado';
+
+  @override
+  String get assistantShareNote => 'Todos no seu agregado podem vê-lo e editá-lo.';
+
+  @override
+  String get assistantUnshareNote => 'O seu agregado deixará de o ver.';
+
+  @override
+  String get assistantShareDone => 'Partilhado com o seu agregado';
+
+  @override
+  String get assistantUnshareDone => 'O registo voltou a ser privado';
+
+  @override
   String get assistantStepCategories => 'Verificando suas categorias…';
 
   @override

@@ -9011,6 +9011,24 @@ class AppLocalizationsFi extends AppLocalizations {
   String get assistantRestoreNote => 'Tietue ja sen muistutukset palaavat.';
 
   @override
+  String get assistantShareTitle => 'Jaa taloudelle';
+
+  @override
+  String get assistantUnshareTitle => 'Tee yksityiseksi';
+
+  @override
+  String get assistantShareNote => 'Kaikki taloudessasi voivat nähdä ja muokata sitä.';
+
+  @override
+  String get assistantUnshareNote => 'Taloutesi ei enää näe sitä.';
+
+  @override
+  String get assistantShareDone => 'Jaettu taloudellesi';
+
+  @override
+  String get assistantUnshareDone => 'Tietue on taas yksityinen';
+
+  @override
   String get assistantStepCategories => 'Tarkistetaan luokkiasi…';
 
   @override

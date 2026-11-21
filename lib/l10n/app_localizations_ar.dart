@@ -9251,6 +9251,24 @@ class AppLocalizationsAr extends AppLocalizations {
   String get assistantRestoreNote => 'سيعود السجل وتذكيراته.';
 
   @override
+  String get assistantShareTitle => 'مشاركة مع الأسرة';
+
+  @override
+  String get assistantUnshareTitle => 'جعله خاصًا';
+
+  @override
+  String get assistantShareNote => 'يمكن لكل أفراد أسرتك رؤيته وتعديله.';
+
+  @override
+  String get assistantUnshareNote => 'لن تراه أسرتك بعد الآن.';
+
+  @override
+  String get assistantShareDone => 'تمت المشاركة مع أسرتك';
+
+  @override
+  String get assistantUnshareDone => 'أصبح السجل خاصًا مرة أخرى';
+
+  @override
   String get assistantStepCategories => 'جارٍ التحقق من فئاتك…';
 
   @override

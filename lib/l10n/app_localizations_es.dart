@@ -9035,6 +9035,24 @@ class AppLocalizationsEs extends AppLocalizations {
   String get assistantRestoreNote => 'El registro y sus recordatorios vuelven.';
 
   @override
+  String get assistantShareTitle => 'Compartir con el hogar';
+
+  @override
+  String get assistantUnshareTitle => 'Hacer privado';
+
+  @override
+  String get assistantShareNote => 'Todos en tu hogar podrán verlo y editarlo.';
+
+  @override
+  String get assistantUnshareNote => 'Tu hogar ya no lo verá.';
+
+  @override
+  String get assistantShareDone => 'Compartido con tu hogar';
+
+  @override
+  String get assistantUnshareDone => 'El registro vuelve a ser privado';
+
+  @override
   String get assistantStepCategories => 'Revisando tus categorías…';
 
   @override

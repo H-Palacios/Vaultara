@@ -9007,6 +9007,24 @@ class AppLocalizationsZu extends AppLocalizations {
   String get assistantRestoreNote => 'Irekhodi nezikhumbuzi zalo kuyabuya.';
 
   @override
+  String get assistantShareTitle => 'Yabelana nomndeni';
+
+  @override
+  String get assistantUnshareTitle => 'Yenze ibe yimfihlo';
+
+  @override
+  String get assistantShareNote => 'Wonke umuntu emndenini wakho angayibona futhi ayihlele.';
+
+  @override
+  String get assistantUnshareNote => 'Umndeni wakho ngeke usayibona.';
+
+  @override
+  String get assistantShareDone => 'Kwabelwe umndeni wakho';
+
+  @override
+  String get assistantUnshareDone => 'Irekhodi seliyimfihlo futhi';
+
+  @override
   String get assistantStepCategories => 'Kuhlolwa izigaba zakho…';
 
   @override

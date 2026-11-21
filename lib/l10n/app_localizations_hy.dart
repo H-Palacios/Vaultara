@@ -9007,6 +9007,24 @@ class AppLocalizationsHy extends AppLocalizations {
   String get assistantRestoreNote => 'Գրառումը և դրա հիշեցումները վերադառնում են։';
 
   @override
+  String get assistantShareTitle => 'Կիսվել ընտանիքի հետ';
+
+  @override
+  String get assistantUnshareTitle => 'Դարձնել անձնական';
+
+  @override
+  String get assistantShareNote => 'Ձեր ընտանիքում բոլորը կարող են տեսնել և խմբագրել այն։';
+
+  @override
+  String get assistantUnshareNote => 'Ձեր ընտանիքն այլևս չի տեսնի այն։';
+
+  @override
+  String get assistantShareDone => 'Կիսվեց ձեր ընտանիքի հետ';
+
+  @override
+  String get assistantUnshareDone => 'Գրառումը կրկին անձնական է';
+
+  @override
   String get assistantStepCategories => 'Ստուգում ենք ձեր կատեգորիաները…';
 
   @override

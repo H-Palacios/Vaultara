@@ -9160,6 +9160,24 @@ class AppLocalizationsCs extends AppLocalizations {
   String get assistantRestoreNote => 'Záznam i jeho připomenutí se vrátí.';
 
   @override
+  String get assistantShareTitle => 'Sdílet s domácností';
+
+  @override
+  String get assistantUnshareTitle => 'Nastavit jako soukromé';
+
+  @override
+  String get assistantShareNote => 'Všichni ve vaší domácnosti ho mohou vidět a upravovat.';
+
+  @override
+  String get assistantUnshareNote => 'Vaše domácnost ho už neuvidí.';
+
+  @override
+  String get assistantShareDone => 'Sdíleno s vaší domácností';
+
+  @override
+  String get assistantUnshareDone => 'Záznam je opět soukromý';
+
+  @override
   String get assistantStepCategories => 'Kontroluji vaše kategorie…';
 
   @override

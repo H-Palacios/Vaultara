@@ -9011,6 +9011,24 @@ class AppLocalizationsEl extends AppLocalizations {
   String get assistantRestoreNote => 'Η εγγραφή και οι υπενθυμίσεις της επιστρέφουν.';
 
   @override
+  String get assistantShareTitle => 'Κοινή χρήση με το νοικοκυριό';
+
+  @override
+  String get assistantUnshareTitle => 'Κάνε το ιδιωτικό';
+
+  @override
+  String get assistantShareNote => 'Όλοι στο νοικοκυριό σας μπορούν να το δουν και να το επεξεργαστούν.';
+
+  @override
+  String get assistantUnshareNote => 'Το νοικοκυριό σας δεν θα το βλέπει πλέον.';
+
+  @override
+  String get assistantShareDone => 'Κοινοποιήθηκε στο νοικοκυριό σας';
+
+  @override
+  String get assistantUnshareDone => 'Η εγγραφή είναι ξανά ιδιωτική';
+
+  @override
   String get assistantStepCategories => 'Έλεγχος των κατηγοριών σας…';
 
   @override

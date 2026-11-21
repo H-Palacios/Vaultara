@@ -9021,6 +9021,24 @@ class AppLocalizationsFr extends AppLocalizations {
   String get assistantRestoreNote => 'L\'élément et ses rappels sont rétablis.';
 
   @override
+  String get assistantShareTitle => 'Partager avec le foyer';
+
+  @override
+  String get assistantUnshareTitle => 'Rendre privé';
+
+  @override
+  String get assistantShareNote => 'Tout le monde dans votre foyer pourra le voir et le modifier.';
+
+  @override
+  String get assistantUnshareNote => 'Votre foyer ne le verra plus.';
+
+  @override
+  String get assistantShareDone => 'Partagé avec votre foyer';
+
+  @override
+  String get assistantUnshareDone => 'L\'élément est de nouveau privé';
+
+  @override
   String get assistantStepCategories => 'Vérification de vos catégories…';
 
   @override

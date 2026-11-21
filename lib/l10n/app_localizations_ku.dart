@@ -9007,6 +9007,24 @@ class AppLocalizationsKu extends AppLocalizations {
   String get assistantRestoreNote => 'Tomar û bîrxistinên wê vedigerin.';
 
   @override
+  String get assistantShareTitle => 'Bi malbatê re parve bike';
+
+  @override
+  String get assistantUnshareTitle => 'Taybet bike';
+
+  @override
+  String get assistantShareNote => 'Her kesê di malbata te de dikare wê bibîne û biguherîne.';
+
+  @override
+  String get assistantUnshareNote => 'Malbata te êdî wê nabîne.';
+
+  @override
+  String get assistantShareDone => 'Bi malbata te re hate parvekirin';
+
+  @override
+  String get assistantUnshareDone => 'Tomar dîsa taybet e';
+
+  @override
   String get assistantStepCategories => 'Kategoriyên te têne kontrolkirin…';
 
   @override

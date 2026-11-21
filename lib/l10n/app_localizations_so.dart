@@ -9006,6 +9006,24 @@ class AppLocalizationsSo extends AppLocalizations {
   String get assistantRestoreNote => 'Diiwaanka iyo xasuusinahiisu way soo laabanayaan.';
 
   @override
+  String get assistantShareTitle => 'La wadaag qoyska';
+
+  @override
+  String get assistantUnshareTitle => 'Ka dhig mid gaar ah';
+
+  @override
+  String get assistantShareNote => 'Qof kasta oo qoyskaaga ka mid ah wuu arki karaa wuuna wax ka beddeli karaa.';
+
+  @override
+  String get assistantUnshareNote => 'Qoyskaagu mar dambe ma arki doono.';
+
+  @override
+  String get assistantShareDone => 'Waxaa la wadaagay qoyskaaga';
+
+  @override
+  String get assistantUnshareDone => 'Diiwaanku mar kale waa gaar';
+
+  @override
   String get assistantStepCategories => 'Waxaa la hubinayaa qaybahaaga…';
 
   @override

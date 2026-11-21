@@ -9082,6 +9082,24 @@ class AppLocalizationsHr extends AppLocalizations {
   String get assistantRestoreNote => 'Zapis i njegovi podsjetnici se vraćaju.';
 
   @override
+  String get assistantShareTitle => 'Podijeli s kućanstvom';
+
+  @override
+  String get assistantUnshareTitle => 'Učini privatnim';
+
+  @override
+  String get assistantShareNote => 'Svi u vašem kućanstvu mogu ga vidjeti i uređivati.';
+
+  @override
+  String get assistantUnshareNote => 'Vaše kućanstvo ga više neće vidjeti.';
+
+  @override
+  String get assistantShareDone => 'Podijeljeno s vašim kućanstvom';
+
+  @override
+  String get assistantUnshareDone => 'Zapis je ponovno privatan';
+
+  @override
   String get assistantStepCategories => 'Provjeravam vaše kategorije…';
 
   @override

@@ -9007,6 +9007,24 @@ class AppLocalizationsKn extends AppLocalizations {
   String get assistantRestoreNote => 'ದಾಖಲೆ ಮತ್ತು ಅದರ ಜ್ಞಾಪನೆಗಳು ಹಿಂತಿರುಗುತ್ತವೆ.';
 
   @override
+  String get assistantShareTitle => 'ಮನೆಯವರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ';
+
+  @override
+  String get assistantUnshareTitle => 'ಖಾಸಗಿ ಮಾಡಿ';
+
+  @override
+  String get assistantShareNote => 'ನಿಮ್ಮ ಮನೆಯ ಎಲ್ಲರೂ ಇದನ್ನು ನೋಡಬಹುದು ಮತ್ತು ಸಂಪಾದಿಸಬಹುದು.';
+
+  @override
+  String get assistantUnshareNote => 'ನಿಮ್ಮ ಮನೆಯವರು ಇನ್ನು ಇದನ್ನು ನೋಡುವುದಿಲ್ಲ.';
+
+  @override
+  String get assistantShareDone => 'ನಿಮ್ಮ ಮನೆಯವರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲಾಗಿದೆ';
+
+  @override
+  String get assistantUnshareDone => 'ದಾಖಲೆ ಮತ್ತೆ ಖಾಸಗಿಯಾಗಿದೆ';
+
+  @override
   String get assistantStepCategories => 'ನಿಮ್ಮ ವರ್ಗಗಳನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…';
 
   @override

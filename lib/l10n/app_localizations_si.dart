@@ -9006,6 +9006,24 @@ class AppLocalizationsSi extends AppLocalizations {
   String get assistantRestoreNote => 'වාර්තාව සහ එහි සිහිකැඳවීම් ආපසු එයි.';
 
   @override
+  String get assistantShareTitle => 'ගෘහය සමඟ බෙදාගන්න';
+
+  @override
+  String get assistantUnshareTitle => 'පුද්ගලික කරන්න';
+
+  @override
+  String get assistantShareNote => 'ඔබේ ගෘහයේ සැමට එය බැලීමට සහ සංස්කරණය කිරීමට හැකිය.';
+
+  @override
+  String get assistantUnshareNote => 'ඔබේ ගෘහයට එය තවදුරටත් නොපෙනේ.';
+
+  @override
+  String get assistantShareDone => 'ඔබේ ගෘහය සමඟ බෙදා ගන්නා ලදී';
+
+  @override
+  String get assistantUnshareDone => 'වාර්තාව නැවත පුද්ගලිකයි';
+
+  @override
   String get assistantStepCategories => 'ඔබේ ප්‍රවර්ග පරීක්ෂා කරමින්…';
 
   @override

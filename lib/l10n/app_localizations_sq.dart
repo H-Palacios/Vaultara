@@ -9011,6 +9011,24 @@ class AppLocalizationsSq extends AppLocalizations {
   String get assistantRestoreNote => 'Regjistrimi dhe kujtesat e tij kthehen.';
 
   @override
+  String get assistantShareTitle => 'Ndaj me familjen';
+
+  @override
+  String get assistantUnshareTitle => 'Bëje privat';
+
+  @override
+  String get assistantShareNote => 'Të gjithë në familjen tënde mund ta shohin dhe ta ndryshojnë.';
+
+  @override
+  String get assistantUnshareNote => 'Familja jote nuk do ta shohë më.';
+
+  @override
+  String get assistantShareDone => 'U nda me familjen tënde';
+
+  @override
+  String get assistantUnshareDone => 'Regjistrimi është sërish privat';
+
+  @override
   String get assistantStepCategories => 'Po kontrollohen kategoritë tuaja…';
 
   @override

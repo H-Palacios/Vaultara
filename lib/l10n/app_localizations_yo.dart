@@ -8956,6 +8956,24 @@ class AppLocalizationsYo extends AppLocalizations {
   String get assistantRestoreNote => 'Àkọsílẹ̀ náà àti àwọn ìrántí rẹ̀ yóò padà.';
 
   @override
+  String get assistantShareTitle => 'Pín pẹ̀lú ìdílé';
+
+  @override
+  String get assistantUnshareTitle => 'Ṣe é ní ìkọ̀kọ̀';
+
+  @override
+  String get assistantShareNote => 'Gbogbo ènìyàn nínú ìdílé rẹ lè rí i kí wọ́n sì ṣàtúnṣe rẹ̀.';
+
+  @override
+  String get assistantUnshareNote => 'Ìdílé rẹ kò ní rí i mọ́.';
+
+  @override
+  String get assistantShareDone => 'A ti pín in pẹ̀lú ìdílé rẹ';
+
+  @override
+  String get assistantUnshareDone => 'Àkọsílẹ̀ náà tún wà ní ìkọ̀kọ̀';
+
+  @override
   String get assistantStepCategories => 'Ń ṣàyẹ̀wò àwọn ẹ̀ka rẹ…';
 
   @override

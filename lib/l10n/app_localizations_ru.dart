@@ -9180,6 +9180,24 @@ class AppLocalizationsRu extends AppLocalizations {
   String get assistantRestoreNote => 'Запись и её напоминания вернутся.';
 
   @override
+  String get assistantShareTitle => 'Поделиться с семьёй';
+
+  @override
+  String get assistantUnshareTitle => 'Сделать личным';
+
+  @override
+  String get assistantShareNote => 'Все в вашей семье смогут видеть и изменять эту запись.';
+
+  @override
+  String get assistantUnshareNote => 'Ваша семья больше не будет её видеть.';
+
+  @override
+  String get assistantShareDone => 'Доступно вашей семье';
+
+  @override
+  String get assistantUnshareDone => 'Запись снова личная';
+
+  @override
   String get assistantStepCategories => 'Проверяем ваши категории…';
 
   @override

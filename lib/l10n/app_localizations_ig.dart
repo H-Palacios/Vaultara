@@ -8956,6 +8956,24 @@ class AppLocalizationsIg extends AppLocalizations {
   String get assistantRestoreNote => 'Ndekọ ahụ na ihe ncheta ya na-alọghachi.';
 
   @override
+  String get assistantShareTitle => 'Kekọrịta ya na ezinụlọ';
+
+  @override
+  String get assistantUnshareTitle => 'Mee ya nzuzo';
+
+  @override
+  String get assistantShareNote => 'Onye ọ bụla nọ n\'ezinụlọ gị nwere ike ịhụ ma dezie ya.';
+
+  @override
+  String get assistantUnshareNote => 'Ezinụlọ gị agaghị ahụkwa ya.';
+
+  @override
+  String get assistantShareDone => 'E kekọrịtara ya na ezinụlọ gị';
+
+  @override
+  String get assistantUnshareDone => 'Ndekọ ahụ bụ nzuzo ọzọ';
+
+  @override
   String get assistantStepCategories => 'Na-elele ụdị gị…';
 
   @override

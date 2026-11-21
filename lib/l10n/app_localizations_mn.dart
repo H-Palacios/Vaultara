@@ -8997,6 +8997,24 @@ class AppLocalizationsMn extends AppLocalizations {
   String get assistantRestoreNote => 'Бичлэг болон түүний сануулгууд буцаж ирнэ.';
 
   @override
+  String get assistantShareTitle => 'Өрхтэйгөө хуваалцах';
+
+  @override
+  String get assistantUnshareTitle => 'Хувийн болгох';
+
+  @override
+  String get assistantShareNote => 'Таны өрхийн бүх хүн үүнийг харж, засах боломжтой.';
+
+  @override
+  String get assistantUnshareNote => 'Таны өрх үүнийг дахин харахгүй.';
+
+  @override
+  String get assistantShareDone => 'Таны өрхтэй хуваалцлаа';
+
+  @override
+  String get assistantUnshareDone => 'Бичлэг дахин хувийн боллоо';
+
+  @override
   String get assistantStepCategories => 'Таны ангиллуудыг шалгаж байна…';
 
   @override

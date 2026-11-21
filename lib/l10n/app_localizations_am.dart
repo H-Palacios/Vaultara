@@ -9007,6 +9007,24 @@ class AppLocalizationsAm extends AppLocalizations {
   String get assistantRestoreNote => 'መዝገቡ እና አስታዋሾቹ ይመለሳሉ።';
 
   @override
+  String get assistantShareTitle => 'ከቤተሰብ ጋር አጋራ';
+
+  @override
+  String get assistantUnshareTitle => 'የግል አድርግ';
+
+  @override
+  String get assistantShareNote => 'በቤተሰብዎ ውስጥ ያሉ ሁሉ ሊያዩት እና ሊያርትዑት ይችላሉ።';
+
+  @override
+  String get assistantUnshareNote => 'ቤተሰብዎ ከእንግዲህ አያዩትም።';
+
+  @override
+  String get assistantShareDone => 'ከቤተሰብዎ ጋር ተጋርቷል';
+
+  @override
+  String get assistantUnshareDone => 'መዝገቡ እንደገና የግል ነው';
+
+  @override
   String get assistantStepCategories => 'ምድቦችዎን በመፈተሽ ላይ…';
 
   @override

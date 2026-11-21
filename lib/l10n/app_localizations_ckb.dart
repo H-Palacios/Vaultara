@@ -9007,6 +9007,24 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get assistantRestoreNote => 'تۆمارەکە و بیرخەرەوەکانی دەگەڕێنەوە.';
 
   @override
+  String get assistantShareTitle => 'هاوبەشکردن لەگەڵ ماڵەوە';
+
+  @override
+  String get assistantUnshareTitle => 'تایبەتی بکە';
+
+  @override
+  String get assistantShareNote => 'هەموو کەسێک لە ماڵەوەت دەتوانێت ببینێت و دەستکاری بکات.';
+
+  @override
+  String get assistantUnshareNote => 'ماڵەوەت چیتر نایبینێت.';
+
+  @override
+  String get assistantShareDone => 'لەگەڵ ماڵەوەت هاوبەشکرا';
+
+  @override
+  String get assistantUnshareDone => 'تۆمارەکە دیسان تایبەتییە';
+
+  @override
   String get assistantStepCategories => 'پشکنینی پۆلەکانت…';
 
   @override

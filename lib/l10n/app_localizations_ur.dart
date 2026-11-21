@@ -9007,6 +9007,24 @@ class AppLocalizationsUr extends AppLocalizations {
   String get assistantRestoreNote => 'ریکارڈ اور اس کی یاد دہانیاں واپس آ جاتی ہیں۔';
 
   @override
+  String get assistantShareTitle => 'گھرانے کے ساتھ شیئر کریں';
+
+  @override
+  String get assistantUnshareTitle => 'نجی بنائیں';
+
+  @override
+  String get assistantShareNote => 'آپ کے گھرانے میں ہر کوئی اسے دیکھ اور اس میں ترمیم کر سکتا ہے۔';
+
+  @override
+  String get assistantUnshareNote => 'آپ کا گھرانہ اب اسے نہیں دیکھے گا۔';
+
+  @override
+  String get assistantShareDone => 'آپ کے گھرانے کے ساتھ شیئر کر دیا گیا';
+
+  @override
+  String get assistantUnshareDone => 'ریکارڈ دوبارہ نجی ہے';
+
+  @override
   String get assistantStepCategories => 'آپ کی کیٹیگریز چیک ہو رہی ہیں…';
 
   @override

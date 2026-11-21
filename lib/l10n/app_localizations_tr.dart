@@ -9007,6 +9007,24 @@ class AppLocalizationsTr extends AppLocalizations {
   String get assistantRestoreNote => 'Kayıt ve hatırlatıcıları geri gelir.';
 
   @override
+  String get assistantShareTitle => 'Haneyle paylaş';
+
+  @override
+  String get assistantUnshareTitle => 'Gizli yap';
+
+  @override
+  String get assistantShareNote => 'Hanenizdeki herkes onu görebilir ve düzenleyebilir.';
+
+  @override
+  String get assistantUnshareNote => 'Haneniz artık onu görmeyecek.';
+
+  @override
+  String get assistantShareDone => 'Hanenizle paylaşıldı';
+
+  @override
+  String get assistantUnshareDone => 'Kayıt yeniden gizli';
+
+  @override
   String get assistantStepCategories => 'Kategorileriniz kontrol ediliyor…';
 
   @override

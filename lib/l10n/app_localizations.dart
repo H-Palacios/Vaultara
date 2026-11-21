@@ -15367,6 +15367,42 @@ abstract class AppLocalizations {
   /// **'The record and its reminders come back.'**
   String get assistantRestoreNote;
 
+  /// Ask Vaultara card title: shares a record with the household.
+  ///
+  /// In en, this message translates to:
+  /// **'Share with household'**
+  String get assistantShareTitle;
+
+  /// Ask Vaultara card title: stops sharing a record with the household.
+  ///
+  /// In en, this message translates to:
+  /// **'Make private'**
+  String get assistantUnshareTitle;
+
+  /// Note on the share card.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone in your household can see and edit it.'**
+  String get assistantShareNote;
+
+  /// Note on the make private card.
+  ///
+  /// In en, this message translates to:
+  /// **'Your household will no longer see it.'**
+  String get assistantUnshareNote;
+
+  /// Confirmation after the share card.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared with your household'**
+  String get assistantShareDone;
+
+  /// Confirmation after the make private card.
+  ///
+  /// In en, this message translates to:
+  /// **'Record is private again'**
+  String get assistantUnshareDone;
+
   /// Shown while Ask Vaultara looks at categories and groups.
   ///
   /// In en, this message translates to:

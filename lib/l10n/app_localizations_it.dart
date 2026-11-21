@@ -9018,6 +9018,24 @@ class AppLocalizationsIt extends AppLocalizations {
   String get assistantRestoreNote => 'L\'elemento e i suoi promemoria tornano.';
 
   @override
+  String get assistantShareTitle => 'Condividi con la famiglia';
+
+  @override
+  String get assistantUnshareTitle => 'Rendi privato';
+
+  @override
+  String get assistantShareNote => 'Tutti nella tua famiglia potranno vederlo e modificarlo.';
+
+  @override
+  String get assistantUnshareNote => 'La tua famiglia non lo vedrà più.';
+
+  @override
+  String get assistantShareDone => 'Condiviso con la tua famiglia';
+
+  @override
+  String get assistantUnshareDone => 'Il documento è di nuovo privato';
+
+  @override
   String get assistantStepCategories => 'Controllo delle tue categorie…';
 
   @override

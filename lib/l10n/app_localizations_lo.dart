@@ -8945,6 +8945,24 @@ class AppLocalizationsLo extends AppLocalizations {
   String get assistantRestoreNote => 'ບັນທຶກ ແລະ ການເຕືອນຂອງມັນຈະກັບຄືນມາ.';
 
   @override
+  String get assistantShareTitle => 'ແບ່ງປັນກັບຄອບຄົວ';
+
+  @override
+  String get assistantUnshareTitle => 'ເຮັດໃຫ້ເປັນສ່ວນຕົວ';
+
+  @override
+  String get assistantShareNote => 'ທຸກຄົນໃນຄອບຄົວຂອງທ່ານສາມາດເບິ່ງ ແລະ ແກ້ໄຂມັນໄດ້.';
+
+  @override
+  String get assistantUnshareNote => 'ຄອບຄົວຂອງທ່ານຈະບໍ່ເຫັນມັນອີກ.';
+
+  @override
+  String get assistantShareDone => 'ແບ່ງປັນກັບຄອບຄົວຂອງທ່ານແລ້ວ';
+
+  @override
+  String get assistantUnshareDone => 'ບັນທຶກເປັນສ່ວນຕົວອີກຄັ້ງ';
+
+  @override
   String get assistantStepCategories => 'ກຳລັງກວດໝວດໝູ່ຂອງທ່ານ…';
 
   @override

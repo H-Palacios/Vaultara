@@ -9007,6 +9007,24 @@ class AppLocalizationsPs extends AppLocalizations {
   String get assistantRestoreNote => 'ریکارډ او د هغه یادونې بېرته راځي.';
 
   @override
+  String get assistantShareTitle => 'له کورنۍ سره شریک کړئ';
+
+  @override
+  String get assistantUnshareTitle => 'شخصي یې کړئ';
+
+  @override
+  String get assistantShareNote => 'ستاسو په کورنۍ کې هر څوک کولی شي دا وګوري او سم یې کړي.';
+
+  @override
+  String get assistantUnshareNote => 'ستاسو کورنۍ به دا نور ونه ویني.';
+
+  @override
+  String get assistantShareDone => 'له ستاسو کورنۍ سره شریک شو';
+
+  @override
+  String get assistantUnshareDone => 'ریکارډ بیا شخصي دی';
+
+  @override
   String get assistantStepCategories => 'ستاسو کټګورۍ ګوري…';
 
   @override

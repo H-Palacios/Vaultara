@@ -9007,6 +9007,24 @@ class AppLocalizationsUz extends AppLocalizations {
   String get assistantRestoreNote => 'Yozuv va uning eslatmalari qaytadi.';
 
   @override
+  String get assistantShareTitle => 'Oila bilan ulashish';
+
+  @override
+  String get assistantUnshareTitle => 'Shaxsiy qilish';
+
+  @override
+  String get assistantShareNote => 'Oilangizdagi hamma uni koʻrishi va tahrirlashi mumkin.';
+
+  @override
+  String get assistantUnshareNote => 'Oilangiz endi uni koʻrmaydi.';
+
+  @override
+  String get assistantShareDone => 'Oilangiz bilan ulashildi';
+
+  @override
+  String get assistantUnshareDone => 'Yozuv yana shaxsiy';
+
+  @override
   String get assistantStepCategories => 'Turkumlaringiz tekshirilmoqda…';
 
   @override

@@ -9007,6 +9007,24 @@ class AppLocalizationsGu extends AppLocalizations {
   String get assistantRestoreNote => 'રેકોર્ડ અને તેના રિમાઇન્ડર પાછા આવે છે.';
 
   @override
+  String get assistantShareTitle => 'ઘર સાથે શેર કરો';
+
+  @override
+  String get assistantUnshareTitle => 'ખાનગી બનાવો';
+
+  @override
+  String get assistantShareNote => 'તમારા ઘરના દરેક જણ તેને જોઈ અને સંપાદિત કરી શકે છે.';
+
+  @override
+  String get assistantUnshareNote => 'તમારું ઘર હવે તેને જોઈ શકશે નહીં.';
+
+  @override
+  String get assistantShareDone => 'તમારા ઘર સાથે શેર કર્યું';
+
+  @override
+  String get assistantUnshareDone => 'રેકોર્ડ ફરીથી ખાનગી છે';
+
+  @override
   String get assistantStepCategories => 'તમારી શ્રેણીઓ તપાસી રહ્યા છીએ…';
 
   @override

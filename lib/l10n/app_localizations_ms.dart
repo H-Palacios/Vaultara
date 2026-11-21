@@ -8945,6 +8945,24 @@ class AppLocalizationsMs extends AppLocalizations {
   String get assistantRestoreNote => 'Rekod dan peringatannya kembali.';
 
   @override
+  String get assistantShareTitle => 'Kongsi dengan isi rumah';
+
+  @override
+  String get assistantUnshareTitle => 'Jadikan peribadi';
+
+  @override
+  String get assistantShareNote => 'Semua orang dalam isi rumah anda boleh melihat dan mengeditnya.';
+
+  @override
+  String get assistantUnshareNote => 'Isi rumah anda tidak akan melihatnya lagi.';
+
+  @override
+  String get assistantShareDone => 'Dikongsi dengan isi rumah anda';
+
+  @override
+  String get assistantUnshareDone => 'Rekod kembali peribadi';
+
+  @override
   String get assistantStepCategories => 'Menyemak kategori anda…';
 
   @override

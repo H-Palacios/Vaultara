@@ -9165,6 +9165,24 @@ class AppLocalizationsSl extends AppLocalizations {
   String get assistantRestoreNote => 'Zapis in njegovi opomniki se vrnejo.';
 
   @override
+  String get assistantShareTitle => 'Deli z gospodinjstvom';
+
+  @override
+  String get assistantUnshareTitle => 'Naredi zasebno';
+
+  @override
+  String get assistantShareNote => 'Vsi v vašem gospodinjstvu ga lahko vidijo in urejajo.';
+
+  @override
+  String get assistantUnshareNote => 'Vaše gospodinjstvo ga ne bo več videlo.';
+
+  @override
+  String get assistantShareDone => 'Deljeno z vašim gospodinjstvom';
+
+  @override
+  String get assistantUnshareDone => 'Zapis je spet zaseben';
+
+  @override
   String get assistantStepCategories => 'Preverjam vaše kategorije…';
 
   @override

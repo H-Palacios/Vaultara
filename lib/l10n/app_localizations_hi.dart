@@ -9007,6 +9007,24 @@ class AppLocalizationsHi extends AppLocalizations {
   String get assistantRestoreNote => 'रिकॉर्ड और उसके रिमाइंडर वापस आ जाते हैं।';
 
   @override
+  String get assistantShareTitle => 'परिवार के साथ साझा करें';
+
+  @override
+  String get assistantUnshareTitle => 'निजी बनाएं';
+
+  @override
+  String get assistantShareNote => 'आपके परिवार में हर कोई इसे देख और संपादित कर सकता है।';
+
+  @override
+  String get assistantUnshareNote => 'आपका परिवार अब इसे नहीं देख पाएगा।';
+
+  @override
+  String get assistantShareDone => 'आपके परिवार के साथ साझा किया गया';
+
+  @override
+  String get assistantUnshareDone => 'रिकॉर्ड फिर से निजी है';
+
+  @override
   String get assistantStepCategories => 'आपकी श्रेणियां जांची जा रही हैं…';
 
   @override

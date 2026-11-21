@@ -9011,6 +9011,24 @@ class AppLocalizationsEu extends AppLocalizations {
   String get assistantRestoreNote => 'Erregistroa eta haren oroigarriak itzultzen dira.';
 
   @override
+  String get assistantShareTitle => 'Partekatu etxekoekin';
+
+  @override
+  String get assistantUnshareTitle => 'Egin pribatu';
+
+  @override
+  String get assistantShareNote => 'Zure etxeko guztiek ikusi eta editatu ahal izango dute.';
+
+  @override
+  String get assistantUnshareNote => 'Zure etxekoek ez dute gehiago ikusiko.';
+
+  @override
+  String get assistantShareDone => 'Zure etxekoekin partekatuta';
+
+  @override
+  String get assistantUnshareDone => 'Erregistroa pribatua da berriro';
+
+  @override
   String get assistantStepCategories => 'Zure kategoriak egiaztatzen…';
 
   @override

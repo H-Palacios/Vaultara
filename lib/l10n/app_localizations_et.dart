@@ -9011,6 +9011,24 @@ class AppLocalizationsEt extends AppLocalizations {
   String get assistantRestoreNote => 'Kirje ja selle meeldetuletused tulevad tagasi.';
 
   @override
+  String get assistantShareTitle => 'Jaga leibkonnaga';
+
+  @override
+  String get assistantUnshareTitle => 'Muuda privaatseks';
+
+  @override
+  String get assistantShareNote => 'Kõik sinu leibkonnas saavad seda näha ja muuta.';
+
+  @override
+  String get assistantUnshareNote => 'Sinu leibkond ei näe seda enam.';
+
+  @override
+  String get assistantShareDone => 'Jagatud sinu leibkonnaga';
+
+  @override
+  String get assistantUnshareDone => 'Kirje on taas privaatne';
+
+  @override
   String get assistantStepCategories => 'Kontrollin sinu kategooriaid…';
 
   @override

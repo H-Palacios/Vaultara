@@ -9011,6 +9011,24 @@ class AppLocalizationsNl extends AppLocalizations {
   String get assistantRestoreNote => 'Het item en de herinneringen komen terug.';
 
   @override
+  String get assistantShareTitle => 'Delen met huishouden';
+
+  @override
+  String get assistantUnshareTitle => 'Privé maken';
+
+  @override
+  String get assistantShareNote => 'Iedereen in je huishouden kan het zien en bewerken.';
+
+  @override
+  String get assistantUnshareNote => 'Je huishouden ziet het niet meer.';
+
+  @override
+  String get assistantShareDone => 'Gedeeld met je huishouden';
+
+  @override
+  String get assistantUnshareDone => 'Item is weer privé';
+
+  @override
   String get assistantStepCategories => 'Je categorieën controleren…';
 
   @override

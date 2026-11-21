@@ -9011,6 +9011,24 @@ class AppLocalizationsAf extends AppLocalizations {
   String get assistantRestoreNote => 'Die rekord en sy herinneringe kom terug.';
 
   @override
+  String get assistantShareTitle => 'Deel met huishouding';
+
+  @override
+  String get assistantUnshareTitle => 'Maak privaat';
+
+  @override
+  String get assistantShareNote => 'Almal in jou huishouding kan dit sien en wysig.';
+
+  @override
+  String get assistantUnshareNote => 'Jou huishouding sal dit nie meer sien nie.';
+
+  @override
+  String get assistantShareDone => 'Met jou huishouding gedeel';
+
+  @override
+  String get assistantUnshareDone => 'Rekord is weer privaat';
+
+  @override
   String get assistantStepCategories => 'Kyk na jou kategorieë…';
 
   @override

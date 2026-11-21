@@ -9007,6 +9007,24 @@ class AppLocalizationsKa extends AppLocalizations {
   String get assistantRestoreNote => 'ჩანაწერი და მისი შეხსენებები ბრუნდება.';
 
   @override
+  String get assistantShareTitle => 'გაზიარება ოჯახთან';
+
+  @override
+  String get assistantUnshareTitle => 'პირადად გადაქცევა';
+
+  @override
+  String get assistantShareNote => 'თქვენი ოჯახის ყველა წევრს შეეძლება მისი ნახვა და რედაქტირება.';
+
+  @override
+  String get assistantUnshareNote => 'თქვენი ოჯახი მას აღარ დაინახავს.';
+
+  @override
+  String get assistantShareDone => 'გაზიარებულია თქვენს ოჯახთან';
+
+  @override
+  String get assistantUnshareDone => 'ჩანაწერი კვლავ პირადია';
+
+  @override
   String get assistantStepCategories => 'ვამოწმებთ თქვენს კატეგორიებს…';
 
   @override

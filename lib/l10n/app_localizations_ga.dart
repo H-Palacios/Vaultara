@@ -9206,6 +9206,24 @@ class AppLocalizationsGa extends AppLocalizations {
   String get assistantRestoreNote => 'Tagann an taifead agus a mheabhrúcháin ar ais.';
 
   @override
+  String get assistantShareTitle => 'Roinn leis an teaghlach';
+
+  @override
+  String get assistantUnshareTitle => 'Déan príobháideach';
+
+  @override
+  String get assistantShareNote => 'Is féidir le gach duine i do theaghlach é a fheiceáil agus a chur in eagar.';
+
+  @override
+  String get assistantUnshareNote => 'Ní fheicfidh do theaghlach é a thuilleadh.';
+
+  @override
+  String get assistantShareDone => 'Roinnte le do theaghlach';
+
+  @override
+  String get assistantUnshareDone => 'Tá an taifead príobháideach arís';
+
+  @override
   String get assistantStepCategories => 'Do chatagóirí á seiceáil…';
 
   @override

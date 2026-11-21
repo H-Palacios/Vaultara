@@ -9011,6 +9011,24 @@ class AppLocalizationsCa extends AppLocalizations {
   String get assistantRestoreNote => 'El registre i els seus recordatoris tornen.';
 
   @override
+  String get assistantShareTitle => 'Comparteix amb la llar';
+
+  @override
+  String get assistantUnshareTitle => 'Fes-lo privat';
+
+  @override
+  String get assistantShareNote => 'Tothom de la teva llar el pot veure i editar.';
+
+  @override
+  String get assistantUnshareNote => 'La teva llar ja no el veurà.';
+
+  @override
+  String get assistantShareDone => 'Compartit amb la teva llar';
+
+  @override
+  String get assistantUnshareDone => 'El registre torna a ser privat';
+
+  @override
   String get assistantStepCategories => 'S\'estan comprovant les categories…';
 
   @override

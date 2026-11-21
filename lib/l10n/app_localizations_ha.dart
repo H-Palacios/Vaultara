@@ -9007,6 +9007,24 @@ class AppLocalizationsHa extends AppLocalizations {
   String get assistantRestoreNote => 'Bayanin da tunatarwarsa za su dawo.';
 
   @override
+  String get assistantShareTitle => 'Raba tare da gida';
+
+  @override
+  String get assistantUnshareTitle => 'Mai da shi na sirri';
+
+  @override
+  String get assistantShareNote => 'Kowa a gidanku zai iya gani da gyara shi.';
+
+  @override
+  String get assistantUnshareNote => 'Gidanku ba zai ƙara ganinsa ba.';
+
+  @override
+  String get assistantShareDone => 'An raba tare da gidanku';
+
+  @override
+  String get assistantUnshareDone => 'Bayanin ya sake zama na sirri';
+
+  @override
   String get assistantStepCategories => 'Ana duba rukunanka…';
 
   @override

@@ -9007,6 +9007,24 @@ class AppLocalizationsHu extends AppLocalizations {
   String get assistantRestoreNote => 'A tétel és az emlékeztetői visszakerülnek.';
 
   @override
+  String get assistantShareTitle => 'Megosztás a háztartással';
+
+  @override
+  String get assistantUnshareTitle => 'Priváttá tétel';
+
+  @override
+  String get assistantShareNote => 'A háztartásodban mindenki láthatja és szerkesztheti.';
+
+  @override
+  String get assistantUnshareNote => 'A háztartásod többé nem látja.';
+
+  @override
+  String get assistantShareDone => 'Megosztva a háztartásoddal';
+
+  @override
+  String get assistantUnshareDone => 'A tétel ismét privát';
+
+  @override
   String get assistantStepCategories => 'Kategóriák ellenőrzése…';
 
   @override

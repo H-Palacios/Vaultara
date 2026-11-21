@@ -9007,6 +9007,24 @@ class AppLocalizationsFa extends AppLocalizations {
   String get assistantRestoreNote => 'سابقه و یادآوری‌هایش برمی‌گردند.';
 
   @override
+  String get assistantShareTitle => 'اشتراک با خانوار';
+
+  @override
+  String get assistantUnshareTitle => 'خصوصی کن';
+
+  @override
+  String get assistantShareNote => 'همه اعضای خانوار شما می‌توانند آن را ببینند و ویرایش کنند.';
+
+  @override
+  String get assistantUnshareNote => 'خانوار شما دیگر آن را نمی‌بیند.';
+
+  @override
+  String get assistantShareDone => 'با خانوار شما به اشتراک گذاشته شد';
+
+  @override
+  String get assistantUnshareDone => 'سابقه دوباره خصوصی است';
+
+  @override
   String get assistantStepCategories => 'در حال بررسی دسته‌های شما…';
 
   @override

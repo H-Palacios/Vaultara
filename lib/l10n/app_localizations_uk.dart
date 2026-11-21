@@ -9174,6 +9174,24 @@ class AppLocalizationsUk extends AppLocalizations {
   String get assistantRestoreNote => 'Запис і його нагадування повернуться.';
 
   @override
+  String get assistantShareTitle => 'Поділитися з родиною';
+
+  @override
+  String get assistantUnshareTitle => 'Зробити особистим';
+
+  @override
+  String get assistantShareNote => 'Усі у вашій родині зможуть бачити й змінювати цей запис.';
+
+  @override
+  String get assistantUnshareNote => 'Ваша родина більше не бачитиме його.';
+
+  @override
+  String get assistantShareDone => 'Доступно вашій родині';
+
+  @override
+  String get assistantUnshareDone => 'Запис знову особистий';
+
+  @override
   String get assistantStepCategories => 'Перевіряємо ваші категорії…';
 
   @override

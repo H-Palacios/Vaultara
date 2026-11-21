@@ -9077,6 +9077,24 @@ class AppLocalizationsLv extends AppLocalizations {
   String get assistantRestoreNote => 'Ieraksts un tā atgādinājumi atgriežas.';
 
   @override
+  String get assistantShareTitle => 'Kopīgot ar mājsaimniecību';
+
+  @override
+  String get assistantUnshareTitle => 'Padarīt privātu';
+
+  @override
+  String get assistantShareNote => 'Visi jūsu mājsaimniecībā varēs to redzēt un rediģēt.';
+
+  @override
+  String get assistantUnshareNote => 'Jūsu mājsaimniecība to vairs neredzēs.';
+
+  @override
+  String get assistantShareDone => 'Kopīgots ar jūsu mājsaimniecību';
+
+  @override
+  String get assistantUnshareDone => 'Ieraksts atkal ir privāts';
+
+  @override
   String get assistantStepCategories => 'Pārbauda jūsu kategorijas…';
 
   @override
