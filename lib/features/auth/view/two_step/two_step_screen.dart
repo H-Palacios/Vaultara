@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/features/security/logic/identity_gate.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -163,173 +164,175 @@ class _TwoStepScreenState extends State<TwoStepScreen> {
     final dateFormat = DateFormat.yMMMd(SafeLocale.date(loc.localeName));
 
     return Scaffold(
-      body: SafeArea(
-        child: RefreshIndicator(
-          onRefresh: _load,
-          child: ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-            children: [
-              ScreenHeader(title: loc.twoStepTitle),
-              const SizedBox(height: 16),
-              if (factors == null)
-                const Padding(
-                  padding: EdgeInsets.only(top: 64),
-                  child: Center(child: CircularProgressIndicator()),
-                )
-              else ...[
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    color: scheme.surface,
-                    borderRadius: BorderRadius.circular(18),
-                    border: Border.all(
-                      color: on
-                          ? scheme.primary.withValues(alpha: 0.55)
-                          : scheme.outlineVariant.withValues(alpha: 0.6),
+      body: WideCentered(
+        child: SafeArea(
+          child: RefreshIndicator(
+            onRefresh: _load,
+            child: ListView(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              children: [
+                ScreenHeader(title: loc.twoStepTitle),
+                const SizedBox(height: 16),
+                if (factors == null)
+                  const Padding(
+                    padding: EdgeInsets.only(top: 64),
+                    child: Center(child: CircularProgressIndicator()),
+                  )
+                else ...[
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: scheme.surface,
+                      borderRadius: BorderRadius.circular(18),
+                      border: Border.all(
+                        color: on
+                            ? scheme.primary.withValues(alpha: 0.55)
+                            : scheme.outlineVariant.withValues(alpha: 0.6),
+                      ),
                     ),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          CircleAvatar(
-                            backgroundColor: on
-                                ? scheme.primary.withValues(alpha: 0.12)
-                                : scheme.secondaryContainer,
-                            child: Icon(
-                              on
-                                  ? Icons.verified_user_rounded
-                                  : Icons.shield_outlined,
-                              color: on
-                                  ? scheme.primary
-                                  : scheme.onSecondaryContainer,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Text(
-                              on ? loc.twoStepStatusOn : loc.twoStepStatusOff,
-                              style: const TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w800,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              backgroundColor: on
+                                  ? scheme.primary.withValues(alpha: 0.12)
+                                  : scheme.secondaryContainer,
+                              child: Icon(
+                                on
+                                    ? Icons.verified_user_rounded
+                                    : Icons.shield_outlined,
+                                color: on
+                                    ? scheme.primary
+                                    : scheme.onSecondaryContainer,
                               ),
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Text(
+                                on ? loc.twoStepStatusOn : loc.twoStepStatusOff,
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        Text(
+                          loc.twoStepIntro,
+                          style: TextStyle(
+                            fontSize: 13.5,
+                            height: 1.4,
+                            color: scheme.onSurfaceVariant,
+                          ),
+                        ),
+                        if (!TwoStepService.emailVerified) ...[
+                          const SizedBox(height: 10),
+                          Text(
+                            loc.twoStepVerifyEmailFirst,
+                            style: TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w700,
+                              color: scheme.error,
                             ),
                           ),
                         ],
+                      ],
+                    ),
+                  ),
+                  if (_failed) ...[
+                    const SizedBox(height: 12),
+                    Text(
+                      loc.verifyCodeFailed,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: scheme.error),
+                    ),
+                  ],
+                  if (on) ...[
+                    const SizedBox(height: 20),
+                    Text(
+                      loc.twoStepMethodsTitle,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    for (final info in factors) ...[
+                      _MethodRow(
+                        name: (info.displayName ?? '').trim().isEmpty
+                            ? loc.twoStepDefaultName
+                            : info.displayName!.trim(),
+                        added: TwoStepService.enrolledAt(info) == null
+                            ? null
+                            : loc.twoStepAddedOn(
+                                dateFormat.format(
+                                  TwoStepService.enrolledAt(info)!,
+                                ),
+                              ),
+                        removing: _removing.contains(info.uid),
+                        removeLabel: loc.twoStepRemoveButton,
+                        onRemove: () => _remove(info),
                       ),
                       const SizedBox(height: 10),
-                      Text(
-                        loc.twoStepIntro,
-                        style: TextStyle(
-                          fontSize: 13.5,
-                          height: 1.4,
-                          color: scheme.onSurfaceVariant,
-                        ),
-                      ),
-                      if (!TwoStepService.emailVerified) ...[
-                        const SizedBox(height: 10),
-                        Text(
-                          loc.twoStepVerifyEmailFirst,
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w700,
-                            color: scheme.error,
-                          ),
-                        ),
-                      ],
                     ],
-                  ),
-                ),
-                if (_failed) ...[
-                  const SizedBox(height: 12),
-                  Text(
-                    loc.verifyCodeFailed,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: scheme.error),
-                  ),
-                ],
-                if (on) ...[
-                  const SizedBox(height: 20),
-                  Text(
-                    loc.twoStepMethodsTitle,
-                    style: const TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  for (final info in factors) ...[
-                    _MethodRow(
-                      name: (info.displayName ?? '').trim().isEmpty
-                          ? loc.twoStepDefaultName
-                          : info.displayName!.trim(),
-                      added: TwoStepService.enrolledAt(info) == null
-                          ? null
-                          : loc.twoStepAddedOn(
-                              dateFormat.format(
-                                TwoStepService.enrolledAt(info)!,
-                              ),
-                            ),
-                      removing: _removing.contains(info.uid),
-                      removeLabel: loc.twoStepRemoveButton,
-                      onRemove: () => _remove(info),
-                    ),
-                    const SizedBox(height: 10),
                   ],
-                ],
-                if (on) ...[
-                  const SizedBox(height: 10),
-                  Material(
-                    color: scheme.surfaceContainerHighest,
-                    borderRadius: BorderRadius.circular(16),
-                    child: ListTile(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      leading: Icon(
-                        Icons.password_rounded,
-                        color: (_codes?.remaining ?? 0) <= 2
-                            ? scheme.error
-                            : scheme.primary,
-                      ),
-                      title: Text(
-                        loc.backupCodesTitle,
-                        style: const TextStyle(fontWeight: FontWeight.w700),
-                      ),
-                      subtitle: Text(
-                        _codes == null
-                            ? loc.backupCodesTileHint
-                            : _codes!.none
-                            ? loc.backupCodesNone
-                            : loc.backupCodesLeft(_codes!.remaining),
-                      ),
-                      trailing: const Icon(Icons.chevron_right_rounded),
-                      onTap: _openBackupCodes,
-                    ),
-                  ),
-                ],
-                const SizedBox(height: 16),
-                if (!on)
-                  FilledButton.icon(
-                    onPressed: TwoStepService.emailVerified ? _setUp : null,
-                    style: FilledButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 15),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14),
+                  if (on) ...[
+                    const SizedBox(height: 10),
+                    Material(
+                      color: scheme.surfaceContainerHighest,
+                      borderRadius: BorderRadius.circular(16),
+                      child: ListTile(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        leading: Icon(
+                          Icons.password_rounded,
+                          color: (_codes?.remaining ?? 0) <= 2
+                              ? scheme.error
+                              : scheme.primary,
+                        ),
+                        title: Text(
+                          loc.backupCodesTitle,
+                          style: const TextStyle(fontWeight: FontWeight.w700),
+                        ),
+                        subtitle: Text(
+                          _codes == null
+                              ? loc.backupCodesTileHint
+                              : _codes!.none
+                              ? loc.backupCodesNone
+                              : loc.backupCodesLeft(_codes!.remaining),
+                        ),
+                        trailing: const Icon(Icons.chevron_right_rounded),
+                        onTap: _openBackupCodes,
                       ),
                     ),
-                    icon: const Icon(Icons.qr_code_2_rounded),
-                    label: Text(loc.twoStepSetUpButton),
-                  )
-                else
-                  OutlinedButton.icon(
-                    onPressed: _setUp,
-                    icon: const Icon(Icons.add_rounded),
-                    label: Text(loc.twoStepAddAnother),
-                  ),
+                  ],
+                  const SizedBox(height: 16),
+                  if (!on)
+                    FilledButton.icon(
+                      onPressed: TwoStepService.emailVerified ? _setUp : null,
+                      style: FilledButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 15),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                      ),
+                      icon: const Icon(Icons.qr_code_2_rounded),
+                      label: Text(loc.twoStepSetUpButton),
+                    )
+                  else
+                    OutlinedButton.icon(
+                      onPressed: _setUp,
+                      icon: const Icon(Icons.add_rounded),
+                      label: Text(loc.twoStepAddAnother),
+                    ),
+                ],
               ],
-            ],
+            ),
           ),
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/features/security/logic/identity_gate.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/settings_tile.dart';
@@ -24,51 +25,53 @@ class ExportCalendarScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(t.exportCalendarScreenTitle)),
-      body: SafeArea(
-        child: PremiumBuilder(
-          initial: isPremium,
-          builder: (context, premium) => ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-            children: [
-              SettingsTile(
-                icon: Icons.picture_as_pdf_rounded,
-                title: t.exportPdfTitle,
-                subtitle: t.exportPdfSubtitle,
-                trailing: lock(premium),
-                onTap: () async {
-                  // Free accounts see the upgrade offer, not a lock prompt.
-                  if (premium && !await IdentityGate.device(context)) return;
-                  if (context.mounted) {
-                    await PdfExport.exportAll(context, isPremium: premium);
-                  }
-                },
-              ),
-              const SizedBox(height: 12),
-              SettingsTile(
-                icon: Icons.event_available_rounded,
-                title: t.exportCalendarTitle,
-                subtitle: t.exportCalendarSubtitle,
-                onTap: () async {
-                  if (!await IdentityGate.device(context)) return;
-                  if (context.mounted) await CalendarExport.exportAll(context);
-                },
-              ),
-              const SizedBox(height: 12),
-              SettingsTile(
-                icon: Icons.event_repeat_rounded,
-                title: t.calendarLinkTitle,
-                subtitle: t.calendarLinkTileSubtitle,
-                trailing: lock(premium),
-                onTap: () => premium
-                    ? Navigator.of(context).push(
-                        MaterialPageRoute<void>(
-                          builder: (_) =>
-                              CalendarLinkScreen(isPremium: premium),
-                        ),
-                      )
-                    : openPlans(context),
-              ),
-            ],
+      body: WideCentered(
+        child: SafeArea(
+          child: PremiumBuilder(
+            initial: isPremium,
+            builder: (context, premium) => ListView(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              children: [
+                SettingsTile(
+                  icon: Icons.picture_as_pdf_rounded,
+                  title: t.exportPdfTitle,
+                  subtitle: t.exportPdfSubtitle,
+                  trailing: lock(premium),
+                  onTap: () async {
+                    // Free accounts see the upgrade offer, not a lock prompt.
+                    if (premium && !await IdentityGate.device(context)) return;
+                    if (context.mounted) {
+                      await PdfExport.exportAll(context, isPremium: premium);
+                    }
+                  },
+                ),
+                const SizedBox(height: 12),
+                SettingsTile(
+                  icon: Icons.event_available_rounded,
+                  title: t.exportCalendarTitle,
+                  subtitle: t.exportCalendarSubtitle,
+                  onTap: () async {
+                    if (!await IdentityGate.device(context)) return;
+                    if (context.mounted) await CalendarExport.exportAll(context);
+                  },
+                ),
+                const SizedBox(height: 12),
+                SettingsTile(
+                  icon: Icons.event_repeat_rounded,
+                  title: t.calendarLinkTitle,
+                  subtitle: t.calendarLinkTileSubtitle,
+                  trailing: lock(premium),
+                  onTap: () => premium
+                      ? Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (_) =>
+                                CalendarLinkScreen(isPremium: premium),
+                          ),
+                        )
+                      : openPlans(context),
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 import 'package:vaultara/core/data/models/person.dart';
@@ -150,137 +151,139 @@ class _TravelCheckScreenState extends State<TravelCheckScreen> {
     final loc = AppLocalizations.of(context)!;
 
     return Scaffold(
-      body: SafeArea(
-        child: PremiumBuilder(
-          initial: widget.isPremium,
-          builder: (context, isPremium) {
-            if (!isPremium) {
-              return ListView(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-                children: [
-                  ScreenHeader(title: loc.travelTitle),
-                  const TutorialHint(id: TutorialIds.travel),
-                  const SizedBox(height: 16),
-                  TravelReadinessCard(key: _readinessKey),
-                  const SizedBox(height: 16),
-                  KeyedSubtree(
-                    key: _lockedKey,
-                    child: const TravelLockedCard(),
-                  ),
-                ],
-              );
-            }
-            return ValueListenableBuilder<List<Person>>(
-              valueListenable: PeopleRepository.people,
-              builder: (context, _, __) {
-                return ValueListenableBuilder<List<SavedTrip>>(
-                  valueListenable: TripRepository.trips,
-                  builder: (context, trips, _) {
-                    final today = Dates.only(DateTime.now());
-                    final upcoming = trips
-                        .where((t) => !t.isPast(today))
-                        .toList();
-                    final past = trips.where((t) => t.isPast(today)).toList()
-                      ..sort((a, b) => b.departure.compareTo(a.departure));
-
-                    return ListView(
-                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-                      // Kept until the Flutter version in use exports ScrollCacheExtent.
-                      // ignore: deprecated_member_use
-                      cacheExtent: TutorialController.listCacheExtent,
-                      children: [
-                        ScreenHeader(title: loc.travelTitle),
-                        const TutorialHint(id: TutorialIds.travel),
-                        const SizedBox(height: 16),
-                        TravelReadinessCard(
-                          key: _readinessKey,
-                          isPremium: isPremium,
-                        ),
-                        const SizedBox(height: 18),
-                        if (upcoming.isEmpty)
-                          _EmptyCard(onPlan: _plan, buttonKey: _planKey)
-                        else ...[
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 4),
-                            child: Text(
-                              loc.travelUpcoming,
-                              style: const TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w800,
-                              ),
-                            ),
+      body: WideCentered(
+        child: SafeArea(
+          child: PremiumBuilder(
+            initial: widget.isPremium,
+            builder: (context, isPremium) {
+              if (!isPremium) {
+                return ListView(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                  children: [
+                    ScreenHeader(title: loc.travelTitle),
+                    const TutorialHint(id: TutorialIds.travel),
+                    const SizedBox(height: 16),
+                    TravelReadinessCard(key: _readinessKey),
+                    const SizedBox(height: 16),
+                    KeyedSubtree(
+                      key: _lockedKey,
+                      child: const TravelLockedCard(),
+                    ),
+                  ],
+                );
+              }
+              return ValueListenableBuilder<List<Person>>(
+                valueListenable: PeopleRepository.people,
+                builder: (context, _, __) {
+                  return ValueListenableBuilder<List<SavedTrip>>(
+                    valueListenable: TripRepository.trips,
+                    builder: (context, trips, _) {
+                      final today = Dates.only(DateTime.now());
+                      final upcoming = trips
+                          .where((t) => !t.isPast(today))
+                          .toList();
+                      final past = trips.where((t) => t.isPast(today)).toList()
+                        ..sort((a, b) => b.departure.compareTo(a.departure));
+  
+                      return ListView(
+                        padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                        // Kept until the Flutter version in use exports ScrollCacheExtent.
+                        // ignore: deprecated_member_use
+                        cacheExtent: TutorialController.listCacheExtent,
+                        children: [
+                          ScreenHeader(title: loc.travelTitle),
+                          const TutorialHint(id: TutorialIds.travel),
+                          const SizedBox(height: 16),
+                          TravelReadinessCard(
+                            key: _readinessKey,
+                            isPremium: isPremium,
                           ),
-                          const SizedBox(height: 10),
-                          for (final trip in upcoming) ...[
-                            _TripCard(
-                              key: identical(trip, upcoming.first)
-                                  ? _tripCardKey
-                                  : null,
-                              trip: trip,
-                              onTap: () => _open(trip),
-                            ),
-                            const SizedBox(height: 10),
-                          ],
-                          const SizedBox(height: 4),
-                          SizedBox(
-                            key: _planKey,
-                            width: double.infinity,
-                            child: FilledButton.icon(
-                              onPressed: _plan,
-                              icon: const Icon(Icons.add_rounded),
-                              label: Text(loc.travelPlanTrip),
-                            ),
-                          ),
-                        ],
-                        if (past.isNotEmpty) ...[
                           const SizedBox(height: 18),
-                          InkWell(
-                            borderRadius: BorderRadius.circular(12),
-                            onTap: () => setState(() => _showPast = !_showPast),
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 4,
-                                vertical: 8,
-                              ),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    child: Text(
-                                      '${loc.travelPast} (${past.length})',
-                                      style: const TextStyle(
-                                        fontSize: 15,
-                                        fontWeight: FontWeight.w700,
-                                      ),
-                                    ),
-                                  ),
-                                  Icon(
-                                    _showPast
-                                        ? Icons.expand_less_rounded
-                                        : Icons.expand_more_rounded,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          if (_showPast)
-                            for (final trip in past) ...[
-                              const SizedBox(height: 8),
-                              Opacity(
-                                opacity: 0.7,
-                                child: _TripCard(
-                                  trip: trip,
-                                  onTap: () => _open(trip),
+                          if (upcoming.isEmpty)
+                            _EmptyCard(onPlan: _plan, buttonKey: _planKey)
+                          else ...[
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              child: Text(
+                                loc.travelUpcoming,
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w800,
                                 ),
                               ),
+                            ),
+                            const SizedBox(height: 10),
+                            for (final trip in upcoming) ...[
+                              _TripCard(
+                                key: identical(trip, upcoming.first)
+                                    ? _tripCardKey
+                                    : null,
+                                trip: trip,
+                                onTap: () => _open(trip),
+                              ),
+                              const SizedBox(height: 10),
                             ],
+                            const SizedBox(height: 4),
+                            SizedBox(
+                              key: _planKey,
+                              width: double.infinity,
+                              child: FilledButton.icon(
+                                onPressed: _plan,
+                                icon: const Icon(Icons.add_rounded),
+                                label: Text(loc.travelPlanTrip),
+                              ),
+                            ),
+                          ],
+                          if (past.isNotEmpty) ...[
+                            const SizedBox(height: 18),
+                            InkWell(
+                              borderRadius: BorderRadius.circular(12),
+                              onTap: () => setState(() => _showPast = !_showPast),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 4,
+                                  vertical: 8,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        '${loc.travelPast} (${past.length})',
+                                        style: const TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w700,
+                                        ),
+                                      ),
+                                    ),
+                                    Icon(
+                                      _showPast
+                                          ? Icons.expand_less_rounded
+                                          : Icons.expand_more_rounded,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            if (_showPast)
+                              for (final trip in past) ...[
+                                const SizedBox(height: 8),
+                                Opacity(
+                                  opacity: 0.7,
+                                  child: _TripCard(
+                                    trip: trip,
+                                    onTap: () => _open(trip),
+                                  ),
+                                ),
+                              ],
+                          ],
                         ],
-                      ],
-                    );
-                  },
-                );
-              },
-            );
-          },
+                      );
+                    },
+                  );
+                },
+              );
+            },
+          ),
         ),
       ),
     );

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:vaultara/core/data/models/person.dart';
@@ -202,117 +203,119 @@ class _FamilyScreenState extends State<FamilyScreen> {
     final loc = AppLocalizations.of(context)!;
 
     return Scaffold(
-      body: SafeArea(
-        child: StreamBuilder<PlanTier>(
-          stream: _tierStream,
-          builder: (context, tierSnap) {
-            final tier = tierSnap.data;
-            return ValueListenableBuilder<List<Person>>(
-              valueListenable: PeopleRepository.people,
-              builder: (context, people, _) {
-                final counts = _countsFor(people);
-                return ListView(
-                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-                  // Kept until the Flutter version in use exports ScrollCacheExtent.
-                  // ignore: deprecated_member_use
-                  cacheExtent: TutorialController.listCacheExtent,
-                  children: [
-                    ScreenHeader(title: loc.familyTitle),
-                    const TutorialHint(id: TutorialIds.family),
-                    const SizedBox(height: 12),
-                    Text(
-                      loc.familyIntro,
-                      style: TextStyle(
-                        fontSize: 13,
-                        height: 1.4,
-                        color: scheme.onSurfaceVariant,
+      body: WideCentered(
+        child: SafeArea(
+          child: StreamBuilder<PlanTier>(
+            stream: _tierStream,
+            builder: (context, tierSnap) {
+              final tier = tierSnap.data;
+              return ValueListenableBuilder<List<Person>>(
+                valueListenable: PeopleRepository.people,
+                builder: (context, people, _) {
+                  final counts = _countsFor(people);
+                  return ListView(
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                    // Kept until the Flutter version in use exports ScrollCacheExtent.
+                    // ignore: deprecated_member_use
+                    cacheExtent: TutorialController.listCacheExtent,
+                    children: [
+                      ScreenHeader(title: loc.familyTitle),
+                      const TutorialHint(id: TutorialIds.family),
+                      const SizedBox(height: 12),
+                      Text(
+                        loc.familyIntro,
+                        style: TextStyle(
+                          fontSize: 13,
+                          height: 1.4,
+                          color: scheme.onSurfaceVariant,
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 18),
-                    if (tier == PlanTier.business) const UpdatesReviewSection(),
-                    ListenableBuilder(
-                      listenable: NationalityRepository.changes,
-                      builder: (context, _) => _PersonRow(
-                        key: _meKey,
-                        person: null,
-                        name: loc.familyMe,
-                        recordCount: counts[null] ?? 0,
-                        nationality: NationalityRepository.mine.value,
-                        residence: NationalityRepository.myResidence.value,
-                        onAction: (action) {
-                          if (action == _PersonAction.nationality) {
-                            VisaActions.pickNationality(context, null);
-                          } else if (action == _PersonAction.residence) {
-                            VisaActions.pickResidence(context, null);
-                          }
-                        },
+                      const SizedBox(height: 18),
+                      if (tier == PlanTier.business) const UpdatesReviewSection(),
+                      ListenableBuilder(
+                        listenable: NationalityRepository.changes,
+                        builder: (context, _) => _PersonRow(
+                          key: _meKey,
+                          person: null,
+                          name: loc.familyMe,
+                          recordCount: counts[null] ?? 0,
+                          nationality: NationalityRepository.mine.value,
+                          residence: NationalityRepository.myResidence.value,
+                          onAction: (action) {
+                            if (action == _PersonAction.nationality) {
+                              VisaActions.pickNationality(context, null);
+                            } else if (action == _PersonAction.residence) {
+                              VisaActions.pickResidence(context, null);
+                            }
+                          },
+                        ),
                       ),
-                    ),
-                    for (final person in people) ...[
-                      const SizedBox(height: 10),
-                      _PersonRow(
-                        person: person,
-                        name: person.name,
-                        recordCount: counts[person.id] ?? 0,
-                        nationality: person.nationality,
-                        residence: person.residence,
-                        onAction: (action) {
-                          switch (action) {
-                            case _PersonAction.rename:
-                              _renamePerson(person, tier);
-                              break;
-                            case _PersonAction.nationality:
-                              VisaActions.pickNationality(context, person.id);
-                              break;
-                            case _PersonAction.residence:
-                              VisaActions.pickResidence(context, person.id);
-                              break;
-                            case _PersonAction.remove:
-                              _removePerson(person);
-                              break;
-                          }
-                        },
-                      ),
-                    ],
-                    const SizedBox(height: 20),
-                    if (tier != null && tier.hasPeople) ...[
-                      _AddSection(
-                        key: _addKey,
-                        limit: PeopleRepository.limitFor(tier),
-                        canAdd: people.length < PeopleRepository.limitFor(tier),
-                        onAdd: () => _addPerson(tier),
-                      ),
-                      if (tier == PlanTier.business) ...[
-                        const SizedBox(height: 16),
-                        const CompanyNameTile(),
-                        const SizedBox(height: 12),
-                        const ComplianceReportTile(),
-                      ] else ...[
-                        const SizedBox(height: 16),
-                        _BusinessNudge(
-                          onSeePlan: () => openPlans(
-                            context,
-                            isPremium: true,
-                            initialTier: PlanTier.business,
-                          ),
+                      for (final person in people) ...[
+                        const SizedBox(height: 10),
+                        _PersonRow(
+                          person: person,
+                          name: person.name,
+                          recordCount: counts[person.id] ?? 0,
+                          nationality: person.nationality,
+                          residence: person.residence,
+                          onAction: (action) {
+                            switch (action) {
+                              case _PersonAction.rename:
+                                _renamePerson(person, tier);
+                                break;
+                              case _PersonAction.nationality:
+                                VisaActions.pickNationality(context, person.id);
+                                break;
+                              case _PersonAction.residence:
+                                VisaActions.pickResidence(context, person.id);
+                                break;
+                              case _PersonAction.remove:
+                                _removePerson(person);
+                                break;
+                            }
+                          },
                         ),
                       ],
-                    ] else if (tier != null)
-                      _UpsellCard(
-                        key: _addKey,
-                        onSeePlan: () => openPlans(
-                          context,
-                          isPremium: tier.isPaid,
-                          initialTier: PlanTier.family,
+                      const SizedBox(height: 20),
+                      if (tier != null && tier.hasPeople) ...[
+                        _AddSection(
+                          key: _addKey,
+                          limit: PeopleRepository.limitFor(tier),
+                          canAdd: people.length < PeopleRepository.limitFor(tier),
+                          onAdd: () => _addPerson(tier),
                         ),
-                      ),
-                    const SizedBox(height: 24),
-                    HouseholdSection(tier: tier),
-                  ],
-                );
-              },
-            );
-          },
+                        if (tier == PlanTier.business) ...[
+                          const SizedBox(height: 16),
+                          const CompanyNameTile(),
+                          const SizedBox(height: 12),
+                          const ComplianceReportTile(),
+                        ] else ...[
+                          const SizedBox(height: 16),
+                          _BusinessNudge(
+                            onSeePlan: () => openPlans(
+                              context,
+                              isPremium: true,
+                              initialTier: PlanTier.business,
+                            ),
+                          ),
+                        ],
+                      ] else if (tier != null)
+                        _UpsellCard(
+                          key: _addKey,
+                          onSeePlan: () => openPlans(
+                            context,
+                            isPremium: tier.isPaid,
+                            initialTier: PlanTier.family,
+                          ),
+                        ),
+                      const SizedBox(height: 24),
+                      HouseholdSection(tier: tier),
+                    ],
+                  );
+                },
+              );
+            },
+          ),
         ),
       ),
     );

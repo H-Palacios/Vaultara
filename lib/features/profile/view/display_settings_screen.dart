@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/theme/theme_preference.dart';
 import 'package:vaultara/core/view/widgets/settings_tile.dart';
 import 'package:vaultara/features/costs/data/display_currency.dart';
@@ -53,29 +54,31 @@ class _DisplaySettingsScreenState extends State<DisplaySettingsScreen> {
     final t = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(title: Text(t.displayTitle)),
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-          children: [
-            SettingsTile(
-              icon: Icons.dark_mode_rounded,
-              title: t.appearanceTitle,
-              subtitle: themeModeLabel(t, ThemePreference.mode.value),
-              onTap: _openAppearance,
-            ),
-            const SizedBox(height: 12),
-            ValueListenableBuilder<String?>(
-              valueListenable: DisplayCurrency.chosen,
-              builder: (context, _, __) => SettingsTile(
-                icon: Icons.currency_exchange_rounded,
-                title: t.currencyDisplayTitle,
-                subtitle: t.currencyDisplaySubtitle(
-                  CostField.defaultCurrency(Localizations.localeOf(context)),
-                ),
-                onTap: _openCurrency,
+      body: WideCentered(
+        child: SafeArea(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+            children: [
+              SettingsTile(
+                icon: Icons.dark_mode_rounded,
+                title: t.appearanceTitle,
+                subtitle: themeModeLabel(t, ThemePreference.mode.value),
+                onTap: _openAppearance,
               ),
-            ),
-          ],
+              const SizedBox(height: 12),
+              ValueListenableBuilder<String?>(
+                valueListenable: DisplayCurrency.chosen,
+                builder: (context, _, __) => SettingsTile(
+                  icon: Icons.currency_exchange_rounded,
+                  title: t.currencyDisplayTitle,
+                  subtitle: t.currencyDisplaySubtitle(
+                    CostField.defaultCurrency(Localizations.localeOf(context)),
+                  ),
+                  onTap: _openCurrency,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:qr_flutter/qr_flutter.dart';
@@ -256,21 +257,23 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
     final loc = AppLocalizations.of(context)!;
 
     return Scaffold(
-      body: SafeArea(
-        child: ListView(
-          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-          children: [
-            ScreenHeader(title: loc.twoStepTitle),
-            const SizedBox(height: 20),
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 200),
-              child: KeyedSubtree(
-                key: ValueKey<_SetupStep>(_step),
-                child: _body(loc),
+      body: WideCentered(
+        child: SafeArea(
+          child: ListView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+            children: [
+              ScreenHeader(title: loc.twoStepTitle),
+              const SizedBox(height: 20),
+              AnimatedSwitcher(
+                duration: const Duration(milliseconds: 200),
+                child: KeyedSubtree(
+                  key: ValueKey<_SetupStep>(_step),
+                  child: _body(loc),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

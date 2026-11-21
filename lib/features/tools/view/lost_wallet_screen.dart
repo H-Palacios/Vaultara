@@ -3,6 +3,7 @@ import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
@@ -161,22 +162,24 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: ValueListenableBuilder<List<LifePlan>>(
-          valueListenable: LifePlanRepository.plans,
-          builder: (context, plans, _) {
-            final id = widget.planId;
-            final plan = id != null
-                ? LifePlanRepository.byId(id)
-                : _activePlan();
-            if (plan != null && plan.event == LifeEvent.lostWallet) {
-              return LostWalletPlanView(key: ValueKey(plan.id), plan: plan);
-            }
-            final history = plans
-                .where((p) => p.event == LifeEvent.lostWallet && p.isFinished)
-                .toList();
-            return _prep(context, history);
-          },
+      body: WideCentered(
+        child: SafeArea(
+          child: ValueListenableBuilder<List<LifePlan>>(
+            valueListenable: LifePlanRepository.plans,
+            builder: (context, plans, _) {
+              final id = widget.planId;
+              final plan = id != null
+                  ? LifePlanRepository.byId(id)
+                  : _activePlan();
+              if (plan != null && plan.event == LifeEvent.lostWallet) {
+                return LostWalletPlanView(key: ValueKey(plan.id), plan: plan);
+              }
+              final history = plans
+                  .where((p) => p.event == LifeEvent.lostWallet && p.isFinished)
+                  .toList();
+              return _prep(context, history);
+            },
+          ),
         ),
       ),
     );

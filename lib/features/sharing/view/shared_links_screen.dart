@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
@@ -76,90 +77,92 @@ class _SharedLinksScreenState extends State<SharedLinksScreen> {
         DateFormat.yMMMd(SafeLocale.date(loc.localeName)).add_jm();
 
     return Scaffold(
-      body: SafeArea(
-        child: RefreshIndicator(
-          onRefresh: _load,
-          child: ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-            children: [
-              ScreenHeader(
-                title: loc.sharedLinksTitle,
-                onBack: () => Navigator.of(context).pop(),
-              ),
-              const SizedBox(height: 16),
-              if (links == null)
-                const Padding(
-                  padding: EdgeInsets.only(top: 48),
-                  child: Center(child: CircularProgressIndicator()),
-                )
-              else if (_failed)
-                _Message(text: loc.sharedLinksError)
-              else if (links.isEmpty)
-                _Message(text: loc.sharedLinksEmpty)
-              else
-                for (final link in links) ...[
-                  Container(
-                    padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
-                    decoration: BoxDecoration(
-                      color: scheme.surfaceContainerHighest,
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: Row(
-                      children: [
-                        Icon(Icons.link_rounded, color: scheme.primary),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                RecordRepository.findById(link.recordId)
-                                        ?.name ??
-                                    loc.sharedLinksUnknownRecord,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                              const SizedBox(height: 2),
-                              Text(
-                                loc.sharedLinksExpires(
-                                  format.format(link.expiresAt.toLocal()),
-                                ),
-                                style: TextStyle(
-                                  fontSize: 12.5,
-                                  color: scheme.onSurfaceVariant,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        _stopping.contains(link.token)
-                            ? const Padding(
-                                padding: EdgeInsets.all(12),
-                                child: SizedBox(
-                                  width: 20,
-                                  height: 20,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2,
+      body: WideCentered(
+        child: SafeArea(
+          child: RefreshIndicator(
+            onRefresh: _load,
+            child: ListView(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              children: [
+                ScreenHeader(
+                  title: loc.sharedLinksTitle,
+                  onBack: () => Navigator.of(context).pop(),
+                ),
+                const SizedBox(height: 16),
+                if (links == null)
+                  const Padding(
+                    padding: EdgeInsets.only(top: 48),
+                    child: Center(child: CircularProgressIndicator()),
+                  )
+                else if (_failed)
+                  _Message(text: loc.sharedLinksError)
+                else if (links.isEmpty)
+                  _Message(text: loc.sharedLinksEmpty)
+                else
+                  for (final link in links) ...[
+                    Container(
+                      padding: const EdgeInsets.fromLTRB(16, 12, 8, 12),
+                      decoration: BoxDecoration(
+                        color: scheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(Icons.link_rounded, color: scheme.primary),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  RecordRepository.findById(link.recordId)
+                                          ?.name ??
+                                      loc.sharedLinksUnknownRecord,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w700,
                                   ),
                                 ),
-                              )
-                            : TextButton(
-                                onPressed: () => _stop(link),
-                                style: TextButton.styleFrom(
-                                  foregroundColor: scheme.error,
+                                const SizedBox(height: 2),
+                                Text(
+                                  loc.sharedLinksExpires(
+                                    format.format(link.expiresAt.toLocal()),
+                                  ),
+                                  style: TextStyle(
+                                    fontSize: 12.5,
+                                    color: scheme.onSurfaceVariant,
+                                  ),
                                 ),
-                                child: Text(loc.sharedLinksStop),
-                              ),
-                      ],
+                              ],
+                            ),
+                          ),
+                          _stopping.contains(link.token)
+                              ? const Padding(
+                                  padding: EdgeInsets.all(12),
+                                  child: SizedBox(
+                                    width: 20,
+                                    height: 20,
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2,
+                                    ),
+                                  ),
+                                )
+                              : TextButton(
+                                  onPressed: () => _stop(link),
+                                  style: TextButton.styleFrom(
+                                    foregroundColor: scheme.error,
+                                  ),
+                                  child: Text(loc.sharedLinksStop),
+                                ),
+                        ],
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 10),
-                ],
-            ],
+                    const SizedBox(height: 10),
+                  ],
+              ],
+            ),
           ),
         ),
       ),

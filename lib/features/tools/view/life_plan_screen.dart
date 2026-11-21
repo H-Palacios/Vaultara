@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/data/user_data_watcher.dart';
@@ -276,27 +277,29 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     return Scaffold(
-      body: SafeArea(
-        child: ValueListenableBuilder<List<LifePlan>>(
-          valueListenable: LifePlanRepository.plans,
-          builder: (context, _, __) {
-            final plan = LifePlanRepository.byId(widget.planId);
-            if (plan == null) {
-              return Padding(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-                child: ScreenHeader(title: loc.lifeEventsTitle),
+      body: WideCentered(
+        child: SafeArea(
+          child: ValueListenableBuilder<List<LifePlan>>(
+            valueListenable: LifePlanRepository.plans,
+            builder: (context, _, __) {
+              final plan = LifePlanRepository.byId(widget.planId);
+              if (plan == null) {
+                return Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                  child: ScreenHeader(title: loc.lifeEventsTitle),
+                );
+              }
+              final view = LifePlanItems.build(
+                plan,
+                RecordRepository.allActive(),
+                extraLabels: LifePlanText.extraLabels(loc),
               );
-            }
-            final view = LifePlanItems.build(
-              plan,
-              RecordRepository.allActive(),
-              extraLabels: LifePlanText.extraLabels(loc),
-            );
-            WidgetsBinding.instance.addPostFrameCallback((_) {
-              if (mounted) LifePlanSummary.sync(context, plan, view);
-            });
-            return _content(context, loc, plan, view);
-          },
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                if (mounted) LifePlanSummary.sync(context, plan, view);
+              });
+              return _content(context, loc, plan, view);
+            },
+          ),
         ),
       ),
     );

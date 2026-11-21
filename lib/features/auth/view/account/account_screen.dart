@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -27,35 +28,37 @@ class AccountScreen extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
 
     return Scaffold(
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-          children: [
-            ScreenHeader(title: loc.accountManagementTitle),
-            const SizedBox(height: 16),
-            // Changing the email needs the password, and a Google or Apple
-            // account takes its email from that provider.
-            if (StrongPasswordFlag.hasPasswordSignIn()) ...[
-              SettingsTile(
-                icon: Icons.email_outlined,
-                title: loc.changeEmailTitle,
-                subtitle: loc.changeEmailSubtitle,
-                onTap: () => _openSheet(context, const ChangeEmailSheet()),
-              ),
-              const SizedBox(height: 8),
+      body: WideCentered(
+        child: SafeArea(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+            children: [
+              ScreenHeader(title: loc.accountManagementTitle),
+              const SizedBox(height: 16),
+              // Changing the email needs the password, and a Google or Apple
+              // account takes its email from that provider.
+              if (StrongPasswordFlag.hasPasswordSignIn()) ...[
+                SettingsTile(
+                  icon: Icons.email_outlined,
+                  title: loc.changeEmailTitle,
+                  subtitle: loc.changeEmailSubtitle,
+                  onTap: () => _openSheet(context, const ChangeEmailSheet()),
+                ),
+                const SizedBox(height: 8),
+              ],
+              if (StrongPasswordFlag.hasPasswordSignIn()) ...[
+                SettingsTile(
+                  icon: Icons.lock_outline,
+                  title: loc.changePasswordTitle,
+                  subtitle: loc.secChangePasswordSubtitle,
+                  onTap: () => showChangePasswordSheet(context),
+                ),
+                const SizedBox(height: 8),
+              ],
+              const TwoStepTile(),
+              const SizedBox(height: 16),
             ],
-            if (StrongPasswordFlag.hasPasswordSignIn()) ...[
-              SettingsTile(
-                icon: Icons.lock_outline,
-                title: loc.changePasswordTitle,
-                subtitle: loc.secChangePasswordSubtitle,
-                onTap: () => showChangePasswordSheet(context),
-              ),
-              const SizedBox(height: 8),
-            ],
-            const TwoStepTile(),
-            const SizedBox(height: 16),
-          ],
+          ),
         ),
       ),
     );

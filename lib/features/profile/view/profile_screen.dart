@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -190,198 +191,200 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final t = AppLocalizations.of(context)!;
 
     return Scaffold(
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-          // Kept until the Flutter version in use exports ScrollCacheExtent.
-          // ignore: deprecated_member_use
-          cacheExtent: TutorialController.listCacheExtent,
-          children: [
-            ScreenHeader(title: t.profileHeaderTitle),
-            const SizedBox(height: 16),
-            ProfileHeaderCard(profile: _profile, isPremium: widget.isPremium),
-            // Free users see the way to upgrade near the top, where they
-            // will notice it, instead of under every tile.
-            if (!widget.isPremium) ...[
-              const SizedBox(height: 12),
-              _UpgradeStrip(onTap: _openPlans),
-            ],
-            const SizedBox(height: 20),
-
-            _Section(
-              title: t.homeSectionTitle,
-              children: const [HomeCountryTiles()],
-            ),
-
-            _Section(
-              title: t.profileSectionAccountSecurity,
-              children: [
-                SettingsTile(
-                  icon: Icons.manage_accounts_rounded,
-                  title: t.profile_account_management_title,
-                  subtitle: t.profile_account_management_subtitle,
-                  onTap: () => _push(const AccountScreen()),
-                ),
-                SettingsTile(
-                  icon: Icons.security_rounded,
-                  title: t.secTitle,
-                  subtitle: t.secProfileSubtitle,
-                  onTap: () => _push(const SecurityPrivacyScreen()),
-                ),
-                SettingsTile(
-                  icon: Icons.notifications_active_rounded,
-                  title: t.notificationsTitle,
-                  subtitle: _notificationSubtitle(t),
-                  onTap: _openNotificationSettings,
-                ),
+      body: WideCentered(
+        child: SafeArea(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+            // Kept until the Flutter version in use exports ScrollCacheExtent.
+            // ignore: deprecated_member_use
+            cacheExtent: TutorialController.listCacheExtent,
+            children: [
+              ScreenHeader(title: t.profileHeaderTitle),
+              const SizedBox(height: 16),
+              ProfileHeaderCard(profile: _profile, isPremium: widget.isPremium),
+              // Free users see the way to upgrade near the top, where they
+              // will notice it, instead of under every tile.
+              if (!widget.isPremium) ...[
+                const SizedBox(height: 12),
+                _UpgradeStrip(onTap: _openPlans),
               ],
-            ),
-
-            _Section(
-              title: t.profileSectionPeople,
-              children: [
-                ValueListenableBuilder<HouseholdInfo?>(
-                  valueListenable: HouseholdRepository.household,
-                  builder: (context, household, _) => SettingsTile(
-                    icon: Icons.family_restroom_rounded,
-                    title: t.familyProfileTileTitle,
-                    subtitle: household == null
-                        ? t.familyProfileTileSubtitle
-                        : t.householdProfileTileSubtitle,
-                    onTap: () => _push(const FamilyScreen()),
+              const SizedBox(height: 20),
+  
+              _Section(
+                title: t.homeSectionTitle,
+                children: const [HomeCountryTiles()],
+              ),
+  
+              _Section(
+                title: t.profileSectionAccountSecurity,
+                children: [
+                  SettingsTile(
+                    icon: Icons.manage_accounts_rounded,
+                    title: t.profile_account_management_title,
+                    subtitle: t.profile_account_management_subtitle,
+                    onTap: () => _push(const AccountScreen()),
                   ),
-                ),
-                const InviteFriendsTile(),
-              ],
-            ),
-
-            _Section(
-              title: t.profileSectionYourData,
-              children: [
-                SettingsTile(
-                  icon: Icons.restore_rounded,
-                  title: t.recentlyDeletedTitle,
-                  subtitle: t.recoveryCentreSubtitle,
-                  onTap: _openRecentlyDeleted,
-                ),
-                SettingsTile(
-                  icon: Icons.upload_file_rounded,
-                  title: t.csvImportTileTitle,
-                  subtitle: t.csvImportTileSubtitle,
-                  onTap: () => ImportScreen.open(context),
-                ),
-                SettingsTile(
-                  icon: Icons.ios_share_rounded,
-                  title: t.exportCalendarScreenTitle,
-                  subtitle: t.exportCalendarTileSubtitle,
-                  onTap: () =>
-                      _push(ExportCalendarScreen(isPremium: widget.isPremium)),
-                ),
-              ],
-            ),
-
-            _Section(
-              title: t.smartToolsSection,
-              children: [
-                // The standout feature, highlighted at the top of Tools.
-                PremiumBuilder(
-                  initial: widget.isPremium,
-                  builder: (context, isPremium) => _Highlighted(
-                    child: SettingsTile(
-                      icon: Icons.auto_awesome_rounded,
-                      title: t.assistantTitle,
-                      subtitle: t.assistantTileSubtitle,
-                      trailing: _lock(isPremium),
-                      onTap: () =>
-                          openAskVaultara(context, isPremium: isPremium),
+                  SettingsTile(
+                    icon: Icons.security_rounded,
+                    title: t.secTitle,
+                    subtitle: t.secProfileSubtitle,
+                    onTap: () => _push(const SecurityPrivacyScreen()),
+                  ),
+                  SettingsTile(
+                    icon: Icons.notifications_active_rounded,
+                    title: t.notificationsTitle,
+                    subtitle: _notificationSubtitle(t),
+                    onTap: _openNotificationSettings,
+                  ),
+                ],
+              ),
+  
+              _Section(
+                title: t.profileSectionPeople,
+                children: [
+                  ValueListenableBuilder<HouseholdInfo?>(
+                    valueListenable: HouseholdRepository.household,
+                    builder: (context, household, _) => SettingsTile(
+                      icon: Icons.family_restroom_rounded,
+                      title: t.familyProfileTileTitle,
+                      subtitle: household == null
+                          ? t.familyProfileTileSubtitle
+                          : t.householdProfileTileSubtitle,
+                      onTap: () => _push(const FamilyScreen()),
                     ),
                   ),
-                ),
-                SettingsTile(
-                  key: _lostWalletKey,
-                  icon: Icons.account_balance_wallet_rounded,
-                  title: t.lostWalletTitle,
-                  subtitle: t.lostWalletSubtitle,
-                  onTap: () => _push(const LostWalletScreen()),
-                ),
-                SettingsTile(
-                  key: _lifeEventsKey,
-                  icon: Icons.event_note_rounded,
-                  title: t.lifeEventsTitle,
-                  subtitle: t.lifeEventsSubtitle,
-                  onTap: () => _push(const LifeEventsScreen()),
-                ),
-                PremiumBuilder(
-                  key: _proofPackKey,
-                  initial: widget.isPremium,
-                  builder: (context, isPremium) => SettingsTile(
-                    icon: Icons.folder_shared_rounded,
-                    title: t.proofPackTitle,
-                    subtitle: t.proofPackSubtitle,
-                    trailing: _lock(isPremium),
-                    onTap: () => isPremium
-                        ? _push(const ProofPackScreen())
-                        : openPlans(context),
+                  const InviteFriendsTile(),
+                ],
+              ),
+  
+              _Section(
+                title: t.profileSectionYourData,
+                children: [
+                  SettingsTile(
+                    icon: Icons.restore_rounded,
+                    title: t.recentlyDeletedTitle,
+                    subtitle: t.recoveryCentreSubtitle,
+                    onTap: _openRecentlyDeleted,
+                  ),
+                  SettingsTile(
+                    icon: Icons.upload_file_rounded,
+                    title: t.csvImportTileTitle,
+                    subtitle: t.csvImportTileSubtitle,
+                    onTap: () => ImportScreen.open(context),
+                  ),
+                  SettingsTile(
+                    icon: Icons.ios_share_rounded,
+                    title: t.exportCalendarScreenTitle,
+                    subtitle: t.exportCalendarTileSubtitle,
+                    onTap: () =>
+                        _push(ExportCalendarScreen(isPremium: widget.isPremium)),
+                  ),
+                ],
+              ),
+  
+              _Section(
+                title: t.smartToolsSection,
+                children: [
+                  // The standout feature, highlighted at the top of Tools.
+                  PremiumBuilder(
+                    initial: widget.isPremium,
+                    builder: (context, isPremium) => _Highlighted(
+                      child: SettingsTile(
+                        icon: Icons.auto_awesome_rounded,
+                        title: t.assistantTitle,
+                        subtitle: t.assistantTileSubtitle,
+                        trailing: _lock(isPremium),
+                        onTap: () =>
+                            openAskVaultara(context, isPremium: isPremium),
+                      ),
+                    ),
+                  ),
+                  SettingsTile(
+                    key: _lostWalletKey,
+                    icon: Icons.account_balance_wallet_rounded,
+                    title: t.lostWalletTitle,
+                    subtitle: t.lostWalletSubtitle,
+                    onTap: () => _push(const LostWalletScreen()),
+                  ),
+                  SettingsTile(
+                    key: _lifeEventsKey,
+                    icon: Icons.event_note_rounded,
+                    title: t.lifeEventsTitle,
+                    subtitle: t.lifeEventsSubtitle,
+                    onTap: () => _push(const LifeEventsScreen()),
+                  ),
+                  PremiumBuilder(
+                    key: _proofPackKey,
+                    initial: widget.isPremium,
+                    builder: (context, isPremium) => SettingsTile(
+                      icon: Icons.folder_shared_rounded,
+                      title: t.proofPackTitle,
+                      subtitle: t.proofPackSubtitle,
+                      trailing: _lock(isPremium),
+                      onTap: () => isPremium
+                          ? _push(const ProofPackScreen())
+                          : openPlans(context),
+                    ),
+                  ),
+                  SettingsTile(
+                    key: _sharedLinksKey,
+                    icon: Icons.link_rounded,
+                    title: t.sharedLinksTitle,
+                    subtitle: t.sharedLinksSubtitle,
+                    onTap: () => _push(const SharedLinksScreen()),
+                  ),
+                ],
+              ),
+  
+              _Section(
+                title: t.profileSectionPreferences,
+                children: [
+                  ValueListenableBuilder<String?>(
+                    valueListenable: DisplayCurrency.chosen,
+                    builder: (context, _, __) =>
+                        ValueListenableBuilder<ThemeMode>(
+                          valueListenable: ThemePreference.mode,
+                          builder: (context, _, __) => SettingsTile(
+                            icon: Icons.palette_outlined,
+                            title: t.displayTitle,
+                            subtitle: DisplaySettingsScreen.summary(context),
+                            onTap: _openDisplay,
+                          ),
+                        ),
+                  ),
+                ],
+              ),
+  
+              _Section(
+                title: t.profileHelpSectionTitle,
+                children: [
+                  SettingsTile(
+                    icon: Icons.help_outline_rounded,
+                    title: t.profileHelpSectionTitle,
+                    subtitle: t.helpTileSubtitle,
+                    onTap: () => _push(HelpScreen(isPremium: widget.isPremium)),
+                  ),
+                ],
+              ),
+  
+              // Paid plans keep the subscription card, with Manage subscription.
+              if (widget.isPremium) ...[
+                ValueListenableBuilder<String?>(
+                  valueListenable: HouseholdRepository.planSource,
+                  builder: (context, source, _) => PremiumCard(
+                    isPremium: widget.isPremium,
+                    planSource: source,
+                    onUpgrade: _openPlans,
+                    onManageSubscription: _openSubscriptionManagement,
                   ),
                 ),
-                SettingsTile(
-                  key: _sharedLinksKey,
-                  icon: Icons.link_rounded,
-                  title: t.sharedLinksTitle,
-                  subtitle: t.sharedLinksSubtitle,
-                  onTap: () => _push(const SharedLinksScreen()),
-                ),
+                const SizedBox(height: 8),
               ],
-            ),
-
-            _Section(
-              title: t.profileSectionPreferences,
-              children: [
-                ValueListenableBuilder<String?>(
-                  valueListenable: DisplayCurrency.chosen,
-                  builder: (context, _, __) =>
-                      ValueListenableBuilder<ThemeMode>(
-                        valueListenable: ThemePreference.mode,
-                        builder: (context, _, __) => SettingsTile(
-                          icon: Icons.palette_outlined,
-                          title: t.displayTitle,
-                          subtitle: DisplaySettingsScreen.summary(context),
-                          onTap: _openDisplay,
-                        ),
-                      ),
-                ),
-              ],
-            ),
-
-            _Section(
-              title: t.profileHelpSectionTitle,
-              children: [
-                SettingsTile(
-                  icon: Icons.help_outline_rounded,
-                  title: t.profileHelpSectionTitle,
-                  subtitle: t.helpTileSubtitle,
-                  onTap: () => _push(HelpScreen(isPremium: widget.isPremium)),
-                ),
-              ],
-            ),
-
-            // Paid plans keep the subscription card, with Manage subscription.
-            if (widget.isPremium) ...[
-              ValueListenableBuilder<String?>(
-                valueListenable: HouseholdRepository.planSource,
-                builder: (context, source, _) => PremiumCard(
-                  isPremium: widget.isPremium,
-                  planSource: source,
-                  onUpgrade: _openPlans,
-                  onManageSubscription: _openSubscriptionManagement,
-                ),
-              ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 24),
+              const SignOutButton(),
+              const SizedBox(height: 16),
             ],
-            const SizedBox(height: 24),
-            const SignOutButton(),
-            const SizedBox(height: 16),
-          ],
+          ),
         ),
       ),
     );

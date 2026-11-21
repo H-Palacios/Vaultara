@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
@@ -169,129 +170,131 @@ class _RecoveryKeySetupScreenState extends State<RecoveryKeySetupScreen> {
     return PopScope(
       canPop: !_busy,
       child: Scaffold(
-        body: SafeArea(
-          child: ListView(
-            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-            children: [
-              ScreenHeader(
-                title: loc.photoLockKeyTitle,
-                onBack: _busy ? () {} : () => Navigator.of(context).pop(false),
-              ),
-              const SizedBox(height: 20),
-              PhotoLockPanel(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    PhotoLockStepTitle(number: 1, text: loc.photoLockSaveStep),
-                    const SizedBox(height: 6),
-                    Text(loc.photoLockKeyBody, style: bodyStyle),
-                    const SizedBox(height: 16),
-                    _keyBox(context),
-                    const SizedBox(height: 12),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: OutlinedButton.icon(
-                            onPressed: _copy,
-                            icon: const Icon(Icons.copy_rounded, size: 18),
-                            label: Text(loc.photoLockCopy),
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: OutlinedButton.icon(
-                            onPressed: _share,
-                            icon: const Icon(Icons.ios_share_rounded, size: 18),
-                            label: Text(loc.photoLockSave),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 12),
-                    HintBanner(
-                      text: loc.photoLockKeyWarning,
-                      icon: Icons.warning_amber_rounded,
-                    ),
-                  ],
+        body: WideCentered(
+          child: SafeArea(
+            child: ListView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              children: [
+                ScreenHeader(
+                  title: loc.photoLockKeyTitle,
+                  onBack: _busy ? () {} : () => Navigator.of(context).pop(false),
                 ),
-              ),
-              const SizedBox(height: 14),
-              PhotoLockPanel(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    PhotoLockStepTitle(
-                      number: 2,
-                      text: loc.photoLockConfirmStep,
-                    ),
-                    const SizedBox(height: 6),
-                    Text(loc.photoLockConfirmBody, style: bodyStyle),
-                    const SizedBox(height: 14),
-                    TextField(
-                      controller: _confirm,
-                      focusNode: _confirmFocus,
-                      enabled: !_busy,
-                      autocorrect: false,
-                      enableSuggestions: false,
-                      textAlign: TextAlign.center,
-                      textCapitalization: TextCapitalization.characters,
-                      keyboardType: TextInputType.visiblePassword,
-                      inputFormatters: [
-                        LengthLimitingTextInputFormatter(
-                          RecoveryKey.groupLength + 2,
-                        ),
-                      ],
-                      onChanged: (_) => setState(() => _showMismatch = false),
-                      onSubmitted: (_) => _finish(),
-                      style: const TextStyle(
-                        fontFamily: 'monospace',
-                        fontSize: 22,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 6,
-                      ),
-                      decoration: AppInputDecorations.field(
-                        context,
-                        labelText: loc.photoLockConfirmLabel,
-                        hintText: loc.photoLockConfirmLabel,
-                        focused: _confirmFocus.hasFocus,
-                        forceLabel: _confirm.text.isNotEmpty,
-                        errorText:
-                            _showMismatch ? loc.photoLockConfirmMismatch : null,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: TextButton(
-                            onPressed: _busy
-                                ? null
-                                : () => Navigator.of(context).pop(false),
-                            child: Text(loc.cancel),
+                const SizedBox(height: 20),
+                PhotoLockPanel(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      PhotoLockStepTitle(number: 1, text: loc.photoLockSaveStep),
+                      const SizedBox(height: 6),
+                      Text(loc.photoLockKeyBody, style: bodyStyle),
+                      const SizedBox(height: 16),
+                      _keyBox(context),
+                      const SizedBox(height: 12),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: OutlinedButton.icon(
+                              onPressed: _copy,
+                              icon: const Icon(Icons.copy_rounded, size: 18),
+                              label: Text(loc.photoLockCopy),
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: FilledButton(
-                            onPressed: _busy || !_matches ? null : _finish,
-                            child: _busy
-                                ? const SizedBox(
-                                    width: 18,
-                                    height: 18,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2,
-                                    ),
-                                  )
-                                : Text(loc.photoLockFinish),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: OutlinedButton.icon(
+                              onPressed: _share,
+                              icon: const Icon(Icons.ios_share_rounded, size: 18),
+                              label: Text(loc.photoLockSave),
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
-                  ],
+                        ],
+                      ),
+                      const SizedBox(height: 12),
+                      HintBanner(
+                        text: loc.photoLockKeyWarning,
+                        icon: Icons.warning_amber_rounded,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
+                const SizedBox(height: 14),
+                PhotoLockPanel(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      PhotoLockStepTitle(
+                        number: 2,
+                        text: loc.photoLockConfirmStep,
+                      ),
+                      const SizedBox(height: 6),
+                      Text(loc.photoLockConfirmBody, style: bodyStyle),
+                      const SizedBox(height: 14),
+                      TextField(
+                        controller: _confirm,
+                        focusNode: _confirmFocus,
+                        enabled: !_busy,
+                        autocorrect: false,
+                        enableSuggestions: false,
+                        textAlign: TextAlign.center,
+                        textCapitalization: TextCapitalization.characters,
+                        keyboardType: TextInputType.visiblePassword,
+                        inputFormatters: [
+                          LengthLimitingTextInputFormatter(
+                            RecoveryKey.groupLength + 2,
+                          ),
+                        ],
+                        onChanged: (_) => setState(() => _showMismatch = false),
+                        onSubmitted: (_) => _finish(),
+                        style: const TextStyle(
+                          fontFamily: 'monospace',
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: 6,
+                        ),
+                        decoration: AppInputDecorations.field(
+                          context,
+                          labelText: loc.photoLockConfirmLabel,
+                          hintText: loc.photoLockConfirmLabel,
+                          focused: _confirmFocus.hasFocus,
+                          forceLabel: _confirm.text.isNotEmpty,
+                          errorText:
+                              _showMismatch ? loc.photoLockConfirmMismatch : null,
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: TextButton(
+                              onPressed: _busy
+                                  ? null
+                                  : () => Navigator.of(context).pop(false),
+                              child: Text(loc.cancel),
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: FilledButton(
+                              onPressed: _busy || !_matches ? null : _finish,
+                              child: _busy
+                                  ? const SizedBox(
+                                      width: 18,
+                                      height: 18,
+                                      child: CircularProgressIndicator(
+                                        strokeWidth: 2,
+                                      ),
+                                    )
+                                  : Text(loc.photoLockFinish),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

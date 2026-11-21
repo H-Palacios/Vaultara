@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
@@ -138,136 +139,138 @@ class _HouseholdRecordsScreenState extends State<HouseholdRecordsScreen> {
     final scheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      body: SafeArea(
-        child: ValueListenableBuilder<int>(
-          valueListenable: HouseholdRepository.revision,
-          builder: (context, _, __) => FutureBuilder<Map<String, String>>(
-            future: HouseholdRepository.memberNames(),
-            builder: (context, namesSnapshot) {
-              final memberNames =
-                  namesSnapshot.data ?? const <String, String>{};
-              final you = loc.householdYouTag;
-              final me = FirebaseAuth.instance.currentUser?.uid;
-              String ownerOf(TrackedItem record) => RecordOwner.filterName(
-                RecordOwner.of(
-                  record,
-                  me: me,
-                  personById: PeopleRepository.byId,
-                  memberNames: memberNames,
-                  unknown: memberNames.isEmpty ? null : loc.recordUnknownMember,
-                ),
-                you,
-              );
-              final all = _records();
-              final people = RecordOwner.filterNames(all.map(ownerOf), you);
-              final person = people.contains(_person) ? _person : null;
-              final records = person == null
-                  ? all
-                  : all.where((r) => ownerOf(r) == person).toList();
-              final readOnly =
-                  HouseholdRepository.isMember && !HouseholdRepository.canEditShared;
-              final focused = widget.focusRecordId != null && !_showAll;
-
-              return ListView(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-                children: [
-                  ScreenHeader(title: loc.householdSharedRecordsTitle),
-                  const SizedBox(height: 12),
-                  Text(
-                    loc.householdSharedRecordsIntro,
-                    style: TextStyle(
-                      fontSize: 13,
-                      height: 1.4,
-                      color: scheme.onSurfaceVariant,
-                    ),
+      body: WideCentered(
+        child: SafeArea(
+          child: ValueListenableBuilder<int>(
+            valueListenable: HouseholdRepository.revision,
+            builder: (context, _, __) => FutureBuilder<Map<String, String>>(
+              future: HouseholdRepository.memberNames(),
+              builder: (context, namesSnapshot) {
+                final memberNames =
+                    namesSnapshot.data ?? const <String, String>{};
+                final you = loc.householdYouTag;
+                final me = FirebaseAuth.instance.currentUser?.uid;
+                String ownerOf(TrackedItem record) => RecordOwner.filterName(
+                  RecordOwner.of(
+                    record,
+                    me: me,
+                    personById: PeopleRepository.byId,
+                    memberNames: memberNames,
+                    unknown: memberNames.isEmpty ? null : loc.recordUnknownMember,
                   ),
-                  if (readOnly) ...[
+                  you,
+                );
+                final all = _records();
+                final people = RecordOwner.filterNames(all.map(ownerOf), you);
+                final person = people.contains(_person) ? _person : null;
+                final records = person == null
+                    ? all
+                    : all.where((r) => ownerOf(r) == person).toList();
+                final readOnly =
+                    HouseholdRepository.isMember && !HouseholdRepository.canEditShared;
+                final focused = widget.focusRecordId != null && !_showAll;
+  
+                return ListView(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                  children: [
+                    ScreenHeader(title: loc.householdSharedRecordsTitle),
                     const SizedBox(height: 12),
-                    _Notice(text: loc.householdReadOnly),
-                  ],
-                  if (people.isNotEmpty && !focused) ...[
-                    const SizedBox(height: 12),
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 8,
-                      children: [
-                        FilterChip(
-                          showCheckmark: false,
-                          label: Text(loc.filterAll),
-                          selected: person == null,
-                          onSelected: (_) => setState(() => _person = null),
-                        ),
-                        for (final name in people)
+                    Text(
+                      loc.householdSharedRecordsIntro,
+                      style: TextStyle(
+                        fontSize: 13,
+                        height: 1.4,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                    if (readOnly) ...[
+                      const SizedBox(height: 12),
+                      _Notice(text: loc.householdReadOnly),
+                    ],
+                    if (people.isNotEmpty && !focused) ...[
+                      const SizedBox(height: 12),
+                      Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                        children: [
                           FilterChip(
                             showCheckmark: false,
-                            label: Text(name),
-                            selected: person == name,
-                            onSelected: (_) => setState(
-                              () => _person = person == name ? null : name,
-                            ),
+                            label: Text(loc.filterAll),
+                            selected: person == null,
+                            onSelected: (_) => setState(() => _person = null),
                           ),
-                      ],
-                    ),
-                  ],
-                  const SizedBox(height: 16),
-                  if (records.isEmpty)
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 32),
-                      child: Text(
-                        loc.householdSharedRecordsEmpty,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: scheme.onSurfaceVariant,
-                        ),
+                          for (final name in people)
+                            FilterChip(
+                              showCheckmark: false,
+                              label: Text(name),
+                              selected: person == name,
+                              onSelected: (_) => setState(
+                                () => _person = person == name ? null : name,
+                              ),
+                            ),
+                        ],
                       ),
-                    )
-                  else
-                    for (final record in records)
-                      RecordCard(
-                        record: record,
-                        showSharedBadge: false,
-                        status: RecordStatus.of(record, loc),
-                        onEdit: () => RecordLock.guard(
-                          context,
-                          record,
-                          () => _edit(record),
+                    ],
+                    const SizedBox(height: 16),
+                    if (records.isEmpty)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 32),
+                        child: Text(
+                          loc.householdSharedRecordsEmpty,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: scheme.onSurfaceVariant,
+                          ),
                         ),
-                        onRenew: () => RecordLock.guard(
-                          context,
-                          record,
-                          () => _renew(record),
-                        ),
-                        onDelete: () => RecordLock.guard(
-                          context,
-                          record,
-                          () => _delete(record),
-                        ),
-                        onViewNotes: (record.notes?.trim() ?? '').isEmpty
-                            ? null
-                            : () => RecordLock.guard(
-                                  context,
-                                  record,
-                                  () => RecordNotesDialog.show(
+                      )
+                    else
+                      for (final record in records)
+                        RecordCard(
+                          record: record,
+                          showSharedBadge: false,
+                          status: RecordStatus.of(record, loc),
+                          onEdit: () => RecordLock.guard(
+                            context,
+                            record,
+                            () => _edit(record),
+                          ),
+                          onRenew: () => RecordLock.guard(
+                            context,
+                            record,
+                            () => _renew(record),
+                          ),
+                          onDelete: () => RecordLock.guard(
+                            context,
+                            record,
+                            () => _delete(record),
+                          ),
+                          onViewNotes: (record.notes?.trim() ?? '').isEmpty
+                              ? null
+                              : () => RecordLock.guard(
                                     context,
-                                    title: record.name,
-                                    notes: record.notes!.trim(),
+                                    record,
+                                    () => RecordNotesDialog.show(
+                                      context,
+                                      title: record.name,
+                                      notes: record.notes!.trim(),
+                                    ),
                                   ),
-                                ),
-                        onHowToRenew: () => _guide(record),
-                        onAddToCalendar: () =>
-                            CalendarExport.addOne(context, record),
+                          onHowToRenew: () => _guide(record),
+                          onAddToCalendar: () =>
+                              CalendarExport.addOne(context, record),
+                        ),
+                    if (focused && records.isNotEmpty)
+                      Center(
+                        child: TextButton(
+                          onPressed: () => setState(() => _showAll = true),
+                          child: Text(loc.householdShowAllShared),
+                        ),
                       ),
-                  if (focused && records.isNotEmpty)
-                    Center(
-                      child: TextButton(
-                        onPressed: () => setState(() => _showAll = true),
-                        child: Text(loc.householdShowAllShared),
-                      ),
-                    ),
-                ],
-              );
-            },
+                  ],
+                );
+              },
+            ),
           ),
         ),
       ),

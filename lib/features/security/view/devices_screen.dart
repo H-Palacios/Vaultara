@@ -1,6 +1,7 @@
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -125,6 +126,7 @@ class _DevicesScreenState extends State<DevicesScreen> {
     String? entered;
     return AppSheet.show<String>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       builder: (sheetContext) => Padding(
         padding: EdgeInsets.fromLTRB(
@@ -236,93 +238,95 @@ class _DevicesScreenState extends State<DevicesScreen> {
     final stream = _stream;
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-              child: ScreenHeader(title: loc.secDevicesTitle),
-            ),
-            Expanded(
-              child: stream == null
-                  ? const SizedBox.shrink()
-                  : StreamBuilder<List<DeviceEntry>>(
-                      stream: stream,
-                      builder: (context, snap) {
-                        if (snap.hasError) {
-                          return LoadErrorView(onRetry: _retryLoad);
-                        }
-                        if (!snap.hasData) {
-                          return const Center(
-                            child: CircularProgressIndicator(),
-                          );
-                        }
-                        final thisId = _thisId;
-                        final devices = snap.data!
-                            .where((d) => d.signedOutAt == null || d.id == thisId)
-                            .toList()
-                          ..sort((a, b) {
-                            if (a.id == thisId) return -1;
-                            if (b.id == thisId) return 1;
-                            return 0;
-                          });
-                        return ListView(
-                          padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
-                          children: [
-                            Text(
-                              loc.secDevicesIntro,
-                              style: TextStyle(
-                                fontSize: 13.5,
-                                height: 1.4,
-                                color: scheme.onSurfaceVariant,
-                              ),
-                            ),
-                            const SizedBox(height: 16),
-                            if (devices.isEmpty)
-                              _Message(text: loc.secDevicesEmpty)
-                            else
-                              for (final device in devices) ...[
-                                _DeviceCard(
-                                  device: device,
-                                  isThis: device.id == thisId,
-                                  busy: _signingOut.contains(device.id),
-                                  onSignOut: () => _signOutDevice(device),
+      body: WideCentered(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                child: ScreenHeader(title: loc.secDevicesTitle),
+              ),
+              Expanded(
+                child: stream == null
+                    ? const SizedBox.shrink()
+                    : StreamBuilder<List<DeviceEntry>>(
+                        stream: stream,
+                        builder: (context, snap) {
+                          if (snap.hasError) {
+                            return LoadErrorView(onRetry: _retryLoad);
+                          }
+                          if (!snap.hasData) {
+                            return const Center(
+                              child: CircularProgressIndicator(),
+                            );
+                          }
+                          final thisId = _thisId;
+                          final devices = snap.data!
+                              .where((d) => d.signedOutAt == null || d.id == thisId)
+                              .toList()
+                            ..sort((a, b) {
+                              if (a.id == thisId) return -1;
+                              if (b.id == thisId) return 1;
+                              return 0;
+                            });
+                          return ListView(
+                            padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
+                            children: [
+                              Text(
+                                loc.secDevicesIntro,
+                                style: TextStyle(
+                                  fontSize: 13.5,
+                                  height: 1.4,
+                                  color: scheme.onSurfaceVariant,
                                 ),
-                                const SizedBox(height: 10),
-                              ],
-                          ],
-                        );
-                      },
+                              ),
+                              const SizedBox(height: 16),
+                              if (devices.isEmpty)
+                                _Message(text: loc.secDevicesEmpty)
+                              else
+                                for (final device in devices) ...[
+                                  _DeviceCard(
+                                    device: device,
+                                    isThis: device.id == thisId,
+                                    busy: _signingOut.contains(device.id),
+                                    onSignOut: () => _signOutDevice(device),
+                                  ),
+                                  const SizedBox(height: 10),
+                                ],
+                            ],
+                          );
+                        },
+                      ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: OutlinedButton.icon(
+                    onPressed: _signingOutOthers ? null : _signOutOthers,
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: scheme.error,
+                      side: BorderSide(
+                        color: scheme.error.withValues(alpha: 0.5),
+                      ),
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
                     ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-              child: SizedBox(
-                width: double.infinity,
-                child: OutlinedButton.icon(
-                  onPressed: _signingOutOthers ? null : _signOutOthers,
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: scheme.error,
-                    side: BorderSide(
-                      color: scheme.error.withValues(alpha: 0.5),
-                    ),
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
+                    icon: _signingOutOthers
+                        ? const SizedBox(
+                            width: 18,
+                            height: 18,
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          )
+                        : const Icon(Icons.logout_rounded, size: 18),
+                    label: Text(loc.secSignOutOthers),
                   ),
-                  icon: _signingOutOthers
-                      ? const SizedBox(
-                          width: 18,
-                          height: 18,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        )
-                      : const Icon(Icons.logout_rounded, size: 18),
-                  label: Text(loc.secSignOutOthers),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

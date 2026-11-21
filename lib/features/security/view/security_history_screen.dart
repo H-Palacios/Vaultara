@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 
 import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:vaultara/core/view/widgets/load_error_view.dart';
@@ -109,53 +110,55 @@ class _SecurityHistoryScreenState extends State<SecurityHistoryScreen> {
     final stream = _stream;
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-              child: ScreenHeader(title: loc.secHistoryTitle),
-            ),
-            Expanded(
-              child: stream == null
-                  ? const SizedBox.shrink()
-                  : StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-                      stream: stream,
-                      builder: (context, snap) {
-                        if (snap.hasError) {
-                          return LoadErrorView(onRetry: _retry);
-                        }
-                        if (!snap.hasData) {
-                          return const Center(
-                            child: CircularProgressIndicator(),
-                          );
-                        }
-                        final docs = snap.data!.docs;
-                        return ListView(
-                          padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
-                          children: [
-                            Text(
-                              loc.secHistoryIntro,
-                              style: TextStyle(
-                                fontSize: 13.5,
-                                height: 1.4,
-                                color: scheme.onSurfaceVariant,
+      body: WideCentered(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                child: ScreenHeader(title: loc.secHistoryTitle),
+              ),
+              Expanded(
+                child: stream == null
+                    ? const SizedBox.shrink()
+                    : StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+                        stream: stream,
+                        builder: (context, snap) {
+                          if (snap.hasError) {
+                            return LoadErrorView(onRetry: _retry);
+                          }
+                          if (!snap.hasData) {
+                            return const Center(
+                              child: CircularProgressIndicator(),
+                            );
+                          }
+                          final docs = snap.data!.docs;
+                          return ListView(
+                            padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
+                            children: [
+                              Text(
+                                loc.secHistoryIntro,
+                                style: TextStyle(
+                                  fontSize: 13.5,
+                                  height: 1.4,
+                                  color: scheme.onSurfaceVariant,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 16),
-                            if (docs.isEmpty)
-                              _CentredText(text: loc.secHistoryEmpty)
-                            else
-                              for (final doc in docs) ...[
-                                _EventRow(data: doc.data()),
-                                const SizedBox(height: 8),
-                              ],
-                          ],
-                        );
-                      },
-                    ),
-            ),
-          ],
+                              const SizedBox(height: 16),
+                              if (docs.isEmpty)
+                                _CentredText(text: loc.secHistoryEmpty)
+                              else
+                                for (final doc in docs) ...[
+                                  _EventRow(data: doc.data()),
+                                  const SizedBox(height: 8),
+                                ],
+                            ],
+                          );
+                        },
+                      ),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/core/analytics/analytics_service.dart';
 import 'package:vaultara/core/data/repositories/group_repository.dart';
@@ -274,7 +275,9 @@ class _ImportPreviewScreenState extends State<ImportPreviewScreen> {
           if (!didPop && _phase == _Phase.done) ImportScreen.closeFlow(context);
         },
         child: Scaffold(
-          body: SafeArea(child: _body(context, isPremium)),
+          body: WideCentered(
+            child: SafeArea(child: _body(context, isPremium)),
+          ),
         ),
       ),
     );

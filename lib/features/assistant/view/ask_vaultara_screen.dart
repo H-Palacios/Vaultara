@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:vaultara/features/scan/services/document_reader.dart';
 import 'package:vaultara/features/scan/services/document_scanner.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
@@ -1280,121 +1281,123 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
               onDeleted: _chatDeleted,
               onDeletedAll: _allChatsDeleted,
             ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
-              child: ScreenHeader(
-                title: loc.assistantTitle,
-                trailing: !widget.isPremium
-                    ? null
-                    : Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          IconButton(
-                            tooltip: loc.talkTitle,
-                            onPressed: _loadingChat
-                                ? null
-                                : (_talk ? _exitTalk : _enterTalk),
-                            icon: Icon(
-                              _talk
-                                  ? Icons.voice_over_off_rounded
-                                  : Icons.record_voice_over_rounded,
-                            ),
-                          ),
-                          if (_messages.isNotEmpty)
+      body: WideCentered(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+                child: ScreenHeader(
+                  title: loc.assistantTitle,
+                  trailing: !widget.isPremium
+                      ? null
+                      : Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
                             IconButton(
-                              tooltip: loc.assistantNewChat,
-                              onPressed: _busy ? null : _newChat,
-                              icon: const Icon(Icons.add_comment_outlined),
+                              tooltip: loc.talkTitle,
+                              onPressed: _loadingChat
+                                  ? null
+                                  : (_talk ? _exitTalk : _enterTalk),
+                              icon: Icon(
+                                _talk
+                                    ? Icons.voice_over_off_rounded
+                                    : Icons.record_voice_over_rounded,
+                              ),
                             ),
-                          IconButton(
-                            tooltip: loc.assistantHistoryTitle,
-                            onPressed: _busy ? null : _openChats,
-                            icon: const Icon(Icons.menu_rounded),
-                          ),
-                        ],
+                            if (_messages.isNotEmpty)
+                              IconButton(
+                                tooltip: loc.assistantNewChat,
+                                onPressed: _busy ? null : _newChat,
+                                icon: const Icon(Icons.add_comment_outlined),
+                              ),
+                            IconButton(
+                              tooltip: loc.assistantHistoryTitle,
+                              onPressed: _busy ? null : _openChats,
+                              icon: const Icon(Icons.menu_rounded),
+                            ),
+                          ],
+                        ),
+                ),
+              ),
+              Expanded(
+                child: !widget.isPremium
+                    ? _PremiumGate(onSeePlans: () => openPlans(context))
+                    : _loadingChat
+                    ? const Center(child: CircularProgressIndicator())
+                    : _messages.isEmpty
+                    ? _EmptyState(onSuggestion: (text) => _send(text))
+                    : ListView.builder(
+                        controller: _scroll,
+                        padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+                        itemCount: _messages.length + (_busy ? 1 : 0),
+                        itemBuilder: (context, i) {
+                          if (i >= _messages.length) {
+                            return _LiveThinking(run: _run);
+                          }
+                          return _buildMessage(
+                            context,
+                            _messages[i],
+                            newest: i == _messages.length - 1,
+                          );
+                        },
                       ),
               ),
-            ),
-            Expanded(
-              child: !widget.isPremium
-                  ? _PremiumGate(onSeePlans: () => openPlans(context))
-                  : _loadingChat
-                  ? const Center(child: CircularProgressIndicator())
-                  : _messages.isEmpty
-                  ? _EmptyState(onSuggestion: (text) => _send(text))
-                  : ListView.builder(
-                      controller: _scroll,
-                      padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
-                      itemCount: _messages.length + (_busy ? 1 : 0),
-                      itemBuilder: (context, i) {
-                        if (i >= _messages.length) {
-                          return _LiveThinking(run: _run);
-                        }
-                        return _buildMessage(
-                          context,
-                          _messages[i],
-                          newest: i == _messages.length - 1,
-                        );
-                      },
-                    ),
-            ),
-            if (widget.isPremium)
-              Container(
-                padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
-                decoration: BoxDecoration(
-                  color: scheme.surface,
-                  border: Border(top: BorderSide(color: scheme.outlineVariant)),
-                ),
-                child: _talk
-                    ? AssistantTalkPanel(
-                        phase: _talkPhase,
-                        caption: _talkCaption,
-                        level: _voice.level,
-                        onOrb: _talkOrb,
-                        onEnd: _exitTalk,
-                        onPhoto: _talkPhoto,
-                      )
-                    : ValueListenableBuilder<bool>(
-                        valueListenable: _voice.open,
-                        builder: (context, listening, _) => AnimatedSize(
-                          duration: const Duration(milliseconds: 220),
-                          curve: Curves.easeOutCubic,
-                          alignment: Alignment.bottomCenter,
-                          child: AnimatedSwitcher(
+              if (widget.isPremium)
+                Container(
+                  padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
+                  decoration: BoxDecoration(
+                    color: scheme.surface,
+                    border: Border(top: BorderSide(color: scheme.outlineVariant)),
+                  ),
+                  child: _talk
+                      ? AssistantTalkPanel(
+                          phase: _talkPhase,
+                          caption: _talkCaption,
+                          level: _voice.level,
+                          onOrb: _talkOrb,
+                          onEnd: _exitTalk,
+                          onPhoto: _talkPhoto,
+                        )
+                      : ValueListenableBuilder<bool>(
+                          valueListenable: _voice.open,
+                          builder: (context, listening, _) => AnimatedSize(
                             duration: const Duration(milliseconds: 220),
-                            switchInCurve: Curves.easeOutCubic,
-                            switchOutCurve: Curves.easeInCubic,
-                            child: listening
-                                ? AssistantVoicePanel(
-                                    key: const ValueKey<String>('voice'),
-                                    voice: _voice,
-                                    onCancel: _cancelVoice,
-                                    onConfirm: _sendVoice,
-                                    confirmLabel: loc.assistantSend,
-                                    confirmNeedsWords: true,
-                                    onEdit: _editVoice,
-                                    onChangeLanguage: _chooseVoiceLanguage,
-                                  )
-                                : AssistantInputBar(
-                                    key: const ValueKey<String>('text'),
-                                    controller: _input,
-                                    focusNode: _focus,
-                                    busy: _busy || _loadingChat,
-                                    listening: listening,
-                                    hintText: loc.assistantHint,
-                                    onSend: () => _send(_input.text),
-                                    onMic: _toggleMic,
-                                    onPhoto: _takePhoto,
-                                    onStop: _busy ? _stop : null,
-                                  ),
+                            curve: Curves.easeOutCubic,
+                            alignment: Alignment.bottomCenter,
+                            child: AnimatedSwitcher(
+                              duration: const Duration(milliseconds: 220),
+                              switchInCurve: Curves.easeOutCubic,
+                              switchOutCurve: Curves.easeInCubic,
+                              child: listening
+                                  ? AssistantVoicePanel(
+                                      key: const ValueKey<String>('voice'),
+                                      voice: _voice,
+                                      onCancel: _cancelVoice,
+                                      onConfirm: _sendVoice,
+                                      confirmLabel: loc.assistantSend,
+                                      confirmNeedsWords: true,
+                                      onEdit: _editVoice,
+                                      onChangeLanguage: _chooseVoiceLanguage,
+                                    )
+                                  : AssistantInputBar(
+                                      key: const ValueKey<String>('text'),
+                                      controller: _input,
+                                      focusNode: _focus,
+                                      busy: _busy || _loadingChat,
+                                      listening: listening,
+                                      hintText: loc.assistantHint,
+                                      onSend: () => _send(_input.text),
+                                      onMic: _toggleMic,
+                                      onPhoto: _takePhoto,
+                                      onStop: _busy ? _stop : null,
+                                    ),
+                            ),
                           ),
                         ),
-                      ),
-              ),
-          ],
+                ),
+            ],
+          ),
         ),
       ),
     );

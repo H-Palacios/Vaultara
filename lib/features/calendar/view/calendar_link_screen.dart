@@ -1,5 +1,6 @@
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -212,22 +213,24 @@ class _CalendarLinkScreenState extends State<CalendarLinkScreen> {
     final loc = AppLocalizations.of(context)!;
 
     return Scaffold(
-      body: SafeArea(
-        child: RefreshIndicator(
-          onRefresh: _load,
-          child: ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-            children: [
-              ScreenHeader(title: loc.calendarLinkTitle),
-              const SizedBox(height: 16),
-              PremiumBuilder(
-                initial: widget.isPremium,
-                builder: (context, isPremium) => Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: _content(context, isPremium),
+      body: WideCentered(
+        child: SafeArea(
+          child: RefreshIndicator(
+            onRefresh: _load,
+            child: ListView(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              children: [
+                ScreenHeader(title: loc.calendarLinkTitle),
+                const SizedBox(height: 16),
+                PremiumBuilder(
+                  initial: widget.isPremium,
+                  builder: (context, isPremium) => Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: _content(context, isPremium),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:intl/intl.dart';
 
 import 'package:vaultara/core/util/safe_locale.dart';
@@ -77,80 +78,82 @@ class _BillingHistoryScreenState extends State<BillingHistoryScreen> {
     final stream = _stream;
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-              child: ScreenHeader(title: loc.secBillingTitle),
-            ),
-            Expanded(
-              child: stream == null
-                  ? const SizedBox.shrink()
-                  : StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-                      stream: stream,
-                      builder: (context, snap) {
-                        final denied = snap.hasError && _isDenied(snap.error);
-                        if (snap.hasError) {
-                          _logError(snap.error, snap.stackTrace);
-                        }
-                        if (snap.hasError && !denied) {
-                          return _LoadFailed(
-                            text: loc.secBillingLoadFailed,
-                            retryLabel: loc.secBillingRetry,
-                            onRetry: _retry,
+      body: WideCentered(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                child: ScreenHeader(title: loc.secBillingTitle),
+              ),
+              Expanded(
+                child: stream == null
+                    ? const SizedBox.shrink()
+                    : StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+                        stream: stream,
+                        builder: (context, snap) {
+                          final denied = snap.hasError && _isDenied(snap.error);
+                          if (snap.hasError) {
+                            _logError(snap.error, snap.stackTrace);
+                          }
+                          if (snap.hasError && !denied) {
+                            return _LoadFailed(
+                              text: loc.secBillingLoadFailed,
+                              retryLabel: loc.secBillingRetry,
+                              onRetry: _retry,
+                            );
+                          }
+                          if (!snap.hasData && !denied) {
+                            return const Center(
+                              child: CircularProgressIndicator(),
+                            );
+                          }
+                          final docs = denied
+                              ? const <
+                                  QueryDocumentSnapshot<Map<String, dynamic>>
+                                >[]
+                              : snap.data!.docs;
+                          final Object? latestStore = docs.isEmpty
+                              ? null
+                              : docs.first.data()['store'];
+                          return ListView(
+                            padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
+                            children: [
+                              HintBanner(
+                                text: loc.secBillingNote,
+                                icon: Icons.receipt_long_rounded,
+                              ),
+                              const SizedBox(height: 16),
+                              if (docs.isEmpty)
+                                _EmptyHistory(
+                                  title: loc.secBillingEmpty,
+                                  body: loc.secBillingEmptyHint,
+                                )
+                              else
+                                for (final doc in docs) ...[
+                                  _BillingRow(data: doc.data()),
+                                  const SizedBox(height: 8),
+                                ],
+                              const SizedBox(height: 8),
+                              TextButton.icon(
+                                onPressed: () => _manage(
+                                  latestStore is String ? latestStore : null,
+                                ),
+                                icon: const Icon(
+                                  Icons.open_in_new_rounded,
+                                  size: 18,
+                                ),
+                                label: Text(
+                                  loc.profile_manage_subscription_button,
+                                ),
+                              ),
+                            ],
                           );
-                        }
-                        if (!snap.hasData && !denied) {
-                          return const Center(
-                            child: CircularProgressIndicator(),
-                          );
-                        }
-                        final docs = denied
-                            ? const <
-                                QueryDocumentSnapshot<Map<String, dynamic>>
-                              >[]
-                            : snap.data!.docs;
-                        final Object? latestStore = docs.isEmpty
-                            ? null
-                            : docs.first.data()['store'];
-                        return ListView(
-                          padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
-                          children: [
-                            HintBanner(
-                              text: loc.secBillingNote,
-                              icon: Icons.receipt_long_rounded,
-                            ),
-                            const SizedBox(height: 16),
-                            if (docs.isEmpty)
-                              _EmptyHistory(
-                                title: loc.secBillingEmpty,
-                                body: loc.secBillingEmptyHint,
-                              )
-                            else
-                              for (final doc in docs) ...[
-                                _BillingRow(data: doc.data()),
-                                const SizedBox(height: 8),
-                              ],
-                            const SizedBox(height: 8),
-                            TextButton.icon(
-                              onPressed: () => _manage(
-                                latestStore is String ? latestStore : null,
-                              ),
-                              icon: const Icon(
-                                Icons.open_in_new_rounded,
-                                size: 18,
-                              ),
-                              label: Text(
-                                loc.profile_manage_subscription_button,
-                              ),
-                            ),
-                          ],
-                        );
-                      },
-                    ),
-            ),
-          ],
+                        },
+                      ),
+              ),
+            ],
+          ),
         ),
       ),
     );

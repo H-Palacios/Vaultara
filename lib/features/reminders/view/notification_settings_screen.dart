@@ -5,6 +5,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -363,177 +364,179 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
     final email = FirebaseAuth.instance.currentUser?.email ?? '';
 
     return Scaffold(
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-          children: [
-            ScreenHeader(title: t.notificationsTitle),
-            const SizedBox(height: 16),
-            if (_batteryRestricted) ...[
-              BatteryWarningCard(onFix: () => showReminderHelpSheet(context)),
-              const SizedBox(height: 12),
-            ],
-            SettingsTile(
-              icon: Icons.notifications_active_rounded,
-              title: t.notificationsPermissionTitle,
-              subtitle: _allowed
-                  ? t.notificationsPermissionOnSubtitle
-                  : t.notificationsPermissionOffSubtitle,
-              trailing: Transform.scale(
-                scale: 0.85,
-                child: CupertinoSwitch(
-                  value: _allowed,
-                  activeTrackColor: scheme.primary,
-                  onChanged: _loading ? null : _setAllowed,
-                ),
-              ),
-              onTap: _loading ? null : () => _setAllowed(!_allowed),
-            ),
-            const SizedBox(height: 12),
-            SettingsTile(
-              icon: Icons.schedule_rounded,
-              title: t.reminderTimeTitle,
-              subtitle: _reminderTime.format(context),
-              onTap: _pickReminderTime,
-            ),
-            ValueListenableBuilder<int>(
-              valueListenable: ReminderSoundPrefs.revision,
-              builder: (context, revision, child) => _soundTiles(t, scheme),
-            ),
-            const SizedBox(height: 12),
-            SettingsTile(
-              icon: Icons.view_agenda_rounded,
-              title: t.dailyDigestSwitchTitle,
-              subtitle: t.digestGroupedSubtitle,
-              trailing: Transform.scale(
-                scale: 0.85,
-                child: CupertinoSwitch(
-                  value: _digestOn,
-                  activeTrackColor: scheme.primary,
-                  onChanged: _loading || _digestBusy ? null : _setDigest,
-                ),
-              ),
-              onTap: _loading || _digestBusy
-                  ? null
-                  : () => _setDigest(!_digestOn),
-            ),
-            ValueListenableBuilder<int>(
-              valueListenable: NotificationPrefs.revision,
-              builder: (context, revision, child) => Column(
-                children: [
-                  const SizedBox(height: 12),
-                  _kindTile(
-                    context,
-                    NotificationKind.afterExpiry,
-                    icon: Icons.event_busy_rounded,
-                    title: t.notifAfterExpiryTitle,
-                    subtitle: t.notifAfterExpirySubtitle,
-                  ),
-                ],
-              ),
-            ),
-            ValueListenableBuilder<HouseholdInfo?>(
-              valueListenable: HouseholdRepository.household,
-              builder: (context, household, child) {
-                if (household == null) return const SizedBox.shrink();
-                return ValueListenableBuilder<int>(
-                  valueListenable: NotificationPrefs.revision,
-                  builder: (context, revision, child) => Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      const SizedBox(height: 24),
-                      _sectionTitle(t.notifPushSection),
-                      _kindTile(
-                        context,
-                        NotificationKind.household,
-                        icon: Icons.groups_rounded,
-                        title: t.notifHouseholdTitle,
-                        subtitle: t.notifHouseholdSubtitle,
-                      ),
-                      const SizedBox(height: 12),
-                      _kindTile(
-                        context,
-                        NotificationKind.sharedOnlyMine,
-                        icon: Icons.person_rounded,
-                        title: t.notifSharedOnlyMineTitle,
-                        subtitle: t.notifSharedOnlyMineSubtitle,
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
-            const SizedBox(height: 24),
-            _sectionTitle(t.notificationsEmailSection),
-            SettingsTile(
-              icon: Icons.mark_email_unread_rounded,
-              title: t.monthlySummaryTitle,
-              subtitle: t.monthlySummarySubtitle,
-              trailing: Transform.scale(
-                scale: 0.85,
-                child: CupertinoSwitch(
-                  value: _summaryPending ?? _summaryOn ?? false,
-                  activeTrackColor: scheme.primary,
-                  onChanged: _summaryOn == null || _summaryPending != null
-                      ? null
-                      : _setSummary,
-                ),
-              ),
-              onTap: _summaryOn == null || _summaryPending != null
-                  ? null
-                  : () => _setSummary(!(_summaryOn ?? false)),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
-              child: Text(
-                t.monthlySummaryContents,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  height: 1.4,
-                  color: scheme.onSurfaceVariant,
-                ),
-              ),
-            ),
-            const SizedBox(height: 12),
-            SettingsTile(
-              icon: Icons.send_rounded,
-              title: t.monthlySummarySendSample,
-              subtitle: email.isEmpty
-                  ? t.monthlySummarySubtitle
-                  : t.monthlySummarySampleTo(email),
-              trailing: _sendingSample
-                  ? const SizedBox(
-                      width: 20,
-                      height: 20,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    )
-                  : null,
-              onTap: _sendingSample ? null : _sendSample,
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-              child: Text(
-                _tier == PlanTier.business
-                    ? t.notifSecurityNoteBusiness
-                    : t.notifSecurityNote,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  height: 1.4,
-                  color: scheme.onSurfaceVariant,
-                ),
-              ),
-            ),
-            if (Platform.isIOS) ...[
-              const SizedBox(height: 24),
-              _sectionTitle(t.notifHelpSection),
+      body: WideCentered(
+        child: SafeArea(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+            children: [
+              ScreenHeader(title: t.notificationsTitle),
+              const SizedBox(height: 16),
+              if (_batteryRestricted) ...[
+                BatteryWarningCard(onFix: () => showReminderHelpSheet(context)),
+                const SizedBox(height: 12),
+              ],
               SettingsTile(
-                icon: Icons.help_outline_rounded,
-                title: t.notifIosHelpTitle,
-                subtitle: t.notifIosHelpSubtitle,
-                onTap: () => showIosReminderHelpSheet(context),
+                icon: Icons.notifications_active_rounded,
+                title: t.notificationsPermissionTitle,
+                subtitle: _allowed
+                    ? t.notificationsPermissionOnSubtitle
+                    : t.notificationsPermissionOffSubtitle,
+                trailing: Transform.scale(
+                  scale: 0.85,
+                  child: CupertinoSwitch(
+                    value: _allowed,
+                    activeTrackColor: scheme.primary,
+                    onChanged: _loading ? null : _setAllowed,
+                  ),
+                ),
+                onTap: _loading ? null : () => _setAllowed(!_allowed),
               ),
+              const SizedBox(height: 12),
+              SettingsTile(
+                icon: Icons.schedule_rounded,
+                title: t.reminderTimeTitle,
+                subtitle: _reminderTime.format(context),
+                onTap: _pickReminderTime,
+              ),
+              ValueListenableBuilder<int>(
+                valueListenable: ReminderSoundPrefs.revision,
+                builder: (context, revision, child) => _soundTiles(t, scheme),
+              ),
+              const SizedBox(height: 12),
+              SettingsTile(
+                icon: Icons.view_agenda_rounded,
+                title: t.dailyDigestSwitchTitle,
+                subtitle: t.digestGroupedSubtitle,
+                trailing: Transform.scale(
+                  scale: 0.85,
+                  child: CupertinoSwitch(
+                    value: _digestOn,
+                    activeTrackColor: scheme.primary,
+                    onChanged: _loading || _digestBusy ? null : _setDigest,
+                  ),
+                ),
+                onTap: _loading || _digestBusy
+                    ? null
+                    : () => _setDigest(!_digestOn),
+              ),
+              ValueListenableBuilder<int>(
+                valueListenable: NotificationPrefs.revision,
+                builder: (context, revision, child) => Column(
+                  children: [
+                    const SizedBox(height: 12),
+                    _kindTile(
+                      context,
+                      NotificationKind.afterExpiry,
+                      icon: Icons.event_busy_rounded,
+                      title: t.notifAfterExpiryTitle,
+                      subtitle: t.notifAfterExpirySubtitle,
+                    ),
+                  ],
+                ),
+              ),
+              ValueListenableBuilder<HouseholdInfo?>(
+                valueListenable: HouseholdRepository.household,
+                builder: (context, household, child) {
+                  if (household == null) return const SizedBox.shrink();
+                  return ValueListenableBuilder<int>(
+                    valueListenable: NotificationPrefs.revision,
+                    builder: (context, revision, child) => Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        const SizedBox(height: 24),
+                        _sectionTitle(t.notifPushSection),
+                        _kindTile(
+                          context,
+                          NotificationKind.household,
+                          icon: Icons.groups_rounded,
+                          title: t.notifHouseholdTitle,
+                          subtitle: t.notifHouseholdSubtitle,
+                        ),
+                        const SizedBox(height: 12),
+                        _kindTile(
+                          context,
+                          NotificationKind.sharedOnlyMine,
+                          icon: Icons.person_rounded,
+                          title: t.notifSharedOnlyMineTitle,
+                          subtitle: t.notifSharedOnlyMineSubtitle,
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 24),
+              _sectionTitle(t.notificationsEmailSection),
+              SettingsTile(
+                icon: Icons.mark_email_unread_rounded,
+                title: t.monthlySummaryTitle,
+                subtitle: t.monthlySummarySubtitle,
+                trailing: Transform.scale(
+                  scale: 0.85,
+                  child: CupertinoSwitch(
+                    value: _summaryPending ?? _summaryOn ?? false,
+                    activeTrackColor: scheme.primary,
+                    onChanged: _summaryOn == null || _summaryPending != null
+                        ? null
+                        : _setSummary,
+                  ),
+                ),
+                onTap: _summaryOn == null || _summaryPending != null
+                    ? null
+                    : () => _setSummary(!(_summaryOn ?? false)),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+                child: Text(
+                  t.monthlySummaryContents,
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    height: 1.4,
+                    color: scheme.onSurfaceVariant,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 12),
+              SettingsTile(
+                icon: Icons.send_rounded,
+                title: t.monthlySummarySendSample,
+                subtitle: email.isEmpty
+                    ? t.monthlySummarySubtitle
+                    : t.monthlySummarySampleTo(email),
+                trailing: _sendingSample
+                    ? const SizedBox(
+                        width: 20,
+                        height: 20,
+                        child: CircularProgressIndicator(strokeWidth: 2),
+                      )
+                    : null,
+                onTap: _sendingSample ? null : _sendSample,
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                child: Text(
+                  _tier == PlanTier.business
+                      ? t.notifSecurityNoteBusiness
+                      : t.notifSecurityNote,
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    height: 1.4,
+                    color: scheme.onSurfaceVariant,
+                  ),
+                ),
+              ),
+              if (Platform.isIOS) ...[
+                const SizedBox(height: 24),
+                _sectionTitle(t.notifHelpSection),
+                SettingsTile(
+                  icon: Icons.help_outline_rounded,
+                  title: t.notifIosHelpTitle,
+                  subtitle: t.notifIosHelpSubtitle,
+                  onTap: () => showIosReminderHelpSheet(context),
+                ),
+              ],
             ],
-          ],
+          ),
         ),
       ),
     );

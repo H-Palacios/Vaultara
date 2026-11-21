@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -43,48 +44,50 @@ class _TutorialsScreenState extends State<TutorialsScreen> {
     final List<Tutorial> tutorials = TutorialsService.catalogue(context);
 
     return Scaffold(
-      body: SafeArea(
-        child: ValueListenableBuilder<Set<String>>(
-          valueListenable: TutorialProgress.completed,
-          builder: (context, completed, _) {
-            final done = tutorials
-                .where((x) => completed.contains(x.id))
-                .length;
-            return ListView(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-              children: [
-                ScreenHeader(title: t.tutorialsScreenTitle),
-                const SizedBox(height: 16),
-                _ProgressCard(
-                  done: done,
-                  total: tutorials.length,
-                  onTour: () => openTour(context),
-                ),
-                for (final group in TutorialGroup.values)
-                  if (tutorials.any((x) => x.group == group)) ...[
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(4, 26, 4, 10),
-                      child: Text(
-                        _groupTitle(t, group),
-                        style: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w800,
+      body: WideCentered(
+        child: SafeArea(
+          child: ValueListenableBuilder<Set<String>>(
+            valueListenable: TutorialProgress.completed,
+            builder: (context, completed, _) {
+              final done = tutorials
+                  .where((x) => completed.contains(x.id))
+                  .length;
+              return ListView(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+                children: [
+                  ScreenHeader(title: t.tutorialsScreenTitle),
+                  const SizedBox(height: 16),
+                  _ProgressCard(
+                    done: done,
+                    total: tutorials.length,
+                    onTour: () => openTour(context),
+                  ),
+                  for (final group in TutorialGroup.values)
+                    if (tutorials.any((x) => x.group == group)) ...[
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(4, 26, 4, 10),
+                        child: Text(
+                          _groupTitle(t, group),
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w800,
+                          ),
                         ),
                       ),
-                    ),
-                    for (final tutorial in tutorials.where(
-                      (x) => x.group == group,
-                    ))
-                      _TutorialTile(
-                        tutorial: tutorial,
-                        done: completed.contains(tutorial.id),
-                        onTap: () =>
-                            TutorialsService.playTutorial(context, tutorial.id),
-                      ),
-                  ],
-              ],
-            );
-          },
+                      for (final tutorial in tutorials.where(
+                        (x) => x.group == group,
+                      ))
+                        _TutorialTile(
+                          tutorial: tutorial,
+                          done: completed.contains(tutorial.id),
+                          onTap: () =>
+                              TutorialsService.playTutorial(context, tutorial.id),
+                        ),
+                    ],
+                ],
+              );
+            },
+          ),
         ),
       ),
     );

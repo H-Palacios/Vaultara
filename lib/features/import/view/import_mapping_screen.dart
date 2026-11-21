@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -130,103 +131,105 @@ class _ImportMappingScreenState extends State<ImportMappingScreen> {
     final scheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Expanded(
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-                children: [
-                  ScreenHeader(
-                    title: loc.csvImportMapTitle,
-                    subtitle: widget.fileName.isEmpty ? null : widget.fileName,
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    loc.csvImportMapIntro,
-                    style: TextStyle(
-                      fontSize: 13.5,
-                      height: 1.4,
-                      color: scheme.onSurfaceVariant,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  Material(
-                    color: scheme.surfaceContainerHighest.withValues(alpha: 0.6),
-                    borderRadius: BorderRadius.circular(14),
-                    child: SwitchListTile.adaptive(
-                      value: _hasHeader,
-                      onChanged: _setHeader,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14),
-                      ),
-                      title: Text(
-                        loc.csvImportHasHeader,
-                        style: const TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 18),
-                  for (final field in ImportField.values) ...[
-                    _FieldRow(
-                      key: ValueKey(
-                        'map-${field.name}-${_mapping[field] ?? _none}-$_hasHeader',
-                      ),
-                      label: ImportLabels.field(loc, field),
-                      required: ImportLabels.isRequired(field),
-                      value: _mapping[field] ?? _none,
-                      columnCount: widget.table.columnCount,
-                      columnName: (c) => _columnName(loc, c),
-                      sample: _mapping[field] == null
-                          ? null
-                          : _sample(_mapping[field]!),
-                      onChanged: (c) => _assign(field, c),
+      body: WideCentered(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Expanded(
+                child: ListView(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                  children: [
+                    ScreenHeader(
+                      title: loc.csvImportMapTitle,
+                      subtitle: widget.fileName.isEmpty ? null : widget.fileName,
                     ),
                     const SizedBox(height: 12),
-                  ],
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  if (!_canContinue)
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
-                      child: Text(
-                        loc.csvImportMapNeedRequired,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 12.5,
-                          color: scheme.onSurfaceVariant,
+                    Text(
+                      loc.csvImportMapIntro,
+                      style: TextStyle(
+                        fontSize: 13.5,
+                        height: 1.4,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Material(
+                      color: scheme.surfaceContainerHighest.withValues(alpha: 0.6),
+                      borderRadius: BorderRadius.circular(14),
+                      child: SwitchListTile.adaptive(
+                        value: _hasHeader,
+                        onChanged: _setHeader,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                        title: Text(
+                          loc.csvImportHasHeader,
+                          style: const TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ),
                     ),
-                  Row(
-                    children: [
-                      TextButton(
-                        onPressed: () => ImportScreen.closeFlow(context),
-                        child: Text(loc.cancel),
+                    const SizedBox(height: 18),
+                    for (final field in ImportField.values) ...[
+                      _FieldRow(
+                        key: ValueKey(
+                          'map-${field.name}-${_mapping[field] ?? _none}-$_hasHeader',
+                        ),
+                        label: ImportLabels.field(loc, field),
+                        required: ImportLabels.isRequired(field),
+                        value: _mapping[field] ?? _none,
+                        columnCount: widget.table.columnCount,
+                        columnName: (c) => _columnName(loc, c),
+                        sample: _mapping[field] == null
+                            ? null
+                            : _sample(_mapping[field]!),
+                        onChanged: (c) => _assign(field, c),
                       ),
-                      const Spacer(),
-                      SizedBox(
-                        width: 160,
-                        child: FilledButton(
-                          onPressed: _canContinue ? _continue : null,
-                          child: Text(loc.csvImportContinue),
+                      const SizedBox(height: 12),
+                    ],
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if (!_canContinue)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: Text(
+                          loc.csvImportMapNeedRequired,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            color: scheme.onSurfaceVariant,
+                          ),
                         ),
                       ),
-                    ],
-                  ),
-                ],
+                    Row(
+                      children: [
+                        TextButton(
+                          onPressed: () => ImportScreen.closeFlow(context),
+                          child: Text(loc.cancel),
+                        ),
+                        const Spacer(),
+                        SizedBox(
+                          width: 160,
+                          child: FilledButton(
+                            onPressed: _canContinue ? _continue : null,
+                            child: Text(loc.csvImportContinue),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

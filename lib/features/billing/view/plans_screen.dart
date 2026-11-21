@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:vaultara/features/household/logic/household_wording.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
@@ -424,156 +425,158 @@ class _PlansScreenState extends State<PlansScreen> {
     );
 
     return Scaffold(
-      body: SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 22),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              ScreenHeader(title: loc.plansTitle),
-              const SizedBox(height: 16),
-              Text(
-                loc.plansHeadline,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-              const SizedBox(height: 6),
-              Text(
-                loc.plansSubhead,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 13,
-                  height: 1.35,
-                  color: scheme.onSurfaceVariant,
-                ),
-              ),
-              const ReferralPlanNote(),
-              if (viaHousehold) ...[
-                const SizedBox(height: 14),
-                _HouseholdPlanBanner(
-                  text: HouseholdWording.included(
-                    loc,
-                    HouseholdRepository.household.value,
+      body: WideCentered(
+        child: SafeArea(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 22),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                ScreenHeader(title: loc.plansTitle),
+                const SizedBox(height: 16),
+                Text(
+                  loc.plansHeadline,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w900,
                   ),
                 ),
-              ],
-              const SizedBox(height: 18),
-              _PlanTabs(
-                tabs: _tabs,
-                selected: _tab,
-                current: _plan.tier,
-                labelFor: (t) => _tabLabel(loc, t),
-                iconFor: _tabIcon,
-                onChanged: (t) => setState(() {
-                  _tab = t;
-                  _tabSettled = true;
-                }),
-              ),
-              const SizedBox(height: 12),
-              _BillingToggle(
-                yearlySelected: _yearlySelected,
-                monthlyLabel: loc.planBillingMonthly,
-                yearlyLabel: loc.planBillingYearly,
-                onChanged: (yearly) => setState(() => _yearlySelected = yearly),
-              ),
-              const SizedBox(height: 16),
-              AnimatedSwitcher(
-                duration: const Duration(milliseconds: 220),
-                switchInCurve: Curves.easeOut,
-                switchOutCurve: Curves.easeIn,
-                layoutBuilder: (current, previous) => Stack(
-                  alignment: Alignment.topCenter,
-                  children: [...previous, if (current != null) current],
-                ),
-                child: PlanTile(
-                  key: ValueKey<PlanTier>(tier),
-                  onTap: isCurrent ? null : buyAction(),
-                  name: _planName(loc, tier),
-                  icon: _tabIcon(tier),
-                  price: price,
-                  period: period,
-                  accentLine: accent,
-                  badge: badge,
-                  highlighted: true,
-                  features: _benefits(loc, tier),
-                  footer: footer,
-                ),
-              ),
-              if (tier == PlanTier.premium && !_plan.tier.isPaid) ...[
-                const SizedBox(height: 12),
-                _FreePlanStrip(
-                  name: loc.planFreeName,
-                  badge: loc.planBadgeCurrent,
-                  details: [
-                    loc.planFeatureRecordsLimit(
-                      RecordRepository.freeRecordLimit,
-                    ),
-                    loc.planFeatureCategoriesLimit(
-                      CategoryRepository.freeCategoryLimit,
-                    ),
-                  ],
-                ),
-              ],
-              if (tier == PlanTier.business &&
-                  _plan.tier == PlanTier.business) ...[
-                const SizedBox(height: 12),
-                const CompanyNameTile(),
-              ],
-              const SizedBox(height: 12),
-              if (paid && !isCurrent && Platform.isAndroid) ...[
+                const SizedBox(height: 6),
                 Text(
-                  loc.planSwitchNote,
+                  loc.plansSubhead,
                   textAlign: TextAlign.center,
-                  style: hintStyle,
+                  style: TextStyle(
+                    fontSize: 13,
+                    height: 1.35,
+                    color: scheme.onSurfaceVariant,
+                  ),
                 ),
-                const SizedBox(height: 4),
-              ],
-              if (!isCurrent && trial != null && !trialForNewOnly) ...[
+                const ReferralPlanNote(),
+                if (viaHousehold) ...[
+                  const SizedBox(height: 14),
+                  _HouseholdPlanBanner(
+                    text: HouseholdWording.included(
+                      loc,
+                      HouseholdRepository.household.value,
+                    ),
+                  ),
+                ],
+                const SizedBox(height: 18),
+                _PlanTabs(
+                  tabs: _tabs,
+                  selected: _tab,
+                  current: _plan.tier,
+                  labelFor: (t) => _tabLabel(loc, t),
+                  iconFor: _tabIcon,
+                  onChanged: (t) => setState(() {
+                    _tab = t;
+                    _tabSettled = true;
+                  }),
+                ),
+                const SizedBox(height: 12),
+                _BillingToggle(
+                  yearlySelected: _yearlySelected,
+                  monthlyLabel: loc.planBillingMonthly,
+                  yearlyLabel: loc.planBillingYearly,
+                  onChanged: (yearly) => setState(() => _yearlySelected = yearly),
+                ),
+                const SizedBox(height: 16),
+                AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 220),
+                  switchInCurve: Curves.easeOut,
+                  switchOutCurve: Curves.easeIn,
+                  layoutBuilder: (current, previous) => Stack(
+                    alignment: Alignment.topCenter,
+                    children: [...previous, if (current != null) current],
+                  ),
+                  child: PlanTile(
+                    key: ValueKey<PlanTier>(tier),
+                    onTap: isCurrent ? null : buyAction(),
+                    name: _planName(loc, tier),
+                    icon: _tabIcon(tier),
+                    price: price,
+                    period: period,
+                    accentLine: accent,
+                    badge: badge,
+                    highlighted: true,
+                    features: _benefits(loc, tier),
+                    footer: footer,
+                  ),
+                ),
+                if (tier == PlanTier.premium && !_plan.tier.isPaid) ...[
+                  const SizedBox(height: 12),
+                  _FreePlanStrip(
+                    name: loc.planFreeName,
+                    badge: loc.planBadgeCurrent,
+                    details: [
+                      loc.planFeatureRecordsLimit(
+                        RecordRepository.freeRecordLimit,
+                      ),
+                      loc.planFeatureCategoriesLimit(
+                        CategoryRepository.freeCategoryLimit,
+                      ),
+                    ],
+                  ),
+                ],
+                if (tier == PlanTier.business &&
+                    _plan.tier == PlanTier.business) ...[
+                  const SizedBox(height: 12),
+                  const CompanyNameTile(),
+                ],
+                const SizedBox(height: 12),
+                if (paid && !isCurrent && Platform.isAndroid) ...[
+                  Text(
+                    loc.planSwitchNote,
+                    textAlign: TextAlign.center,
+                    style: hintStyle,
+                  ),
+                  const SizedBox(height: 4),
+                ],
+                if (!isCurrent && trial != null && !trialForNewOnly) ...[
+                  Text(
+                    loc.planTrialNoChargeToday,
+                    textAlign: TextAlign.center,
+                    style: hintStyle,
+                  ),
+                  const SizedBox(height: 4),
+                ],
                 Text(
-                  loc.planTrialNoChargeToday,
+                  loc.plansTaxIncluded,
                   textAlign: TextAlign.center,
-                  style: hintStyle,
+                  style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
                 ),
-                const SizedBox(height: 4),
-              ],
-              Text(
-                loc.plansTaxIncluded,
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
-              ),
-              const SizedBox(height: 2),
-              // The store's receipts and card statements name the company,
-              // not the app, so say so before anyone pays.
-              Text(
-                Platform.isIOS ? loc.plansSellerApple : loc.plansSellerGoogle,
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
-              ),
-              const SizedBox(height: 10),
-              if (paid)
+                const SizedBox(height: 2),
+                // The store's receipts and card statements name the company,
+                // not the app, so say so before anyone pays.
+                Text(
+                  Platform.isIOS ? loc.plansSellerApple : loc.plansSellerGoogle,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+                ),
+                const SizedBox(height: 10),
+                if (paid)
+                  TextButton.icon(
+                    onPressed: _manage,
+                    icon: const Icon(Icons.open_in_new_rounded, size: 18),
+                    label: Text(loc.profile_manage_subscription_button),
+                  )
+                else
+                  TextButton(
+                    onPressed: loading ? null : () => _service.restore(),
+                    child: Text(loc.plansRestore),
+                  ),
                 TextButton.icon(
-                  onPressed: _manage,
-                  icon: const Icon(Icons.open_in_new_rounded, size: 18),
-                  label: Text(loc.profile_manage_subscription_button),
-                )
-              else
-                TextButton(
-                  onPressed: loading ? null : () => _service.restore(),
-                  child: Text(loc.plansRestore),
-                ),
-              TextButton.icon(
-                onPressed: () => Navigator.of(context).push(
-                  MaterialPageRoute<void>(
-                    builder: (_) => const BillingHistoryScreen(),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => const BillingHistoryScreen(),
+                    ),
                   ),
+                  icon: const Icon(Icons.receipt_long_rounded, size: 18),
+                  label: Text(loc.secBillingTitle),
                 ),
-                icon: const Icon(Icons.receipt_long_rounded, size: 18),
-                label: Text(loc.secBillingTitle),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

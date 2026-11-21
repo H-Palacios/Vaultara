@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:share_plus/share_plus.dart';
@@ -166,46 +167,48 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
     final status = _status;
 
     return Scaffold(
-      body: SafeArea(
-        child: RefreshIndicator(
-          onRefresh: _load,
-          child: ListView(
-            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-            children: [
-              ScreenHeader(title: loc.inviteFriendsTitle),
-              const SizedBox(height: 16),
-              if (status == null && _loading)
-                const Padding(
-                  padding: EdgeInsets.only(top: 64),
-                  child: Center(child: CircularProgressIndicator()),
-                )
-              else if (status == null)
-                _LoadError(
-                  message: loc.inviteLoadError,
-                  retryLabel: loc.inviteRetry,
-                  onRetry: _load,
-                )
-              else ...[
-                _codeCard(loc, status),
-                const SizedBox(height: 14),
-                _howItWorks(loc),
-                const SizedBox(height: 14),
-                _progressCard(loc, status),
-                const SizedBox(height: 14),
-                _haveCodeCard(loc, status),
-                if (_failed) ...[
-                  const SizedBox(height: 12),
-                  Text(
-                    loc.inviteLoadError,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Theme.of(context).colorScheme.error,
+      body: WideCentered(
+        child: SafeArea(
+          child: RefreshIndicator(
+            onRefresh: _load,
+            child: ListView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              children: [
+                ScreenHeader(title: loc.inviteFriendsTitle),
+                const SizedBox(height: 16),
+                if (status == null && _loading)
+                  const Padding(
+                    padding: EdgeInsets.only(top: 64),
+                    child: Center(child: CircularProgressIndicator()),
+                  )
+                else if (status == null)
+                  _LoadError(
+                    message: loc.inviteLoadError,
+                    retryLabel: loc.inviteRetry,
+                    onRetry: _load,
+                  )
+                else ...[
+                  _codeCard(loc, status),
+                  const SizedBox(height: 14),
+                  _howItWorks(loc),
+                  const SizedBox(height: 14),
+                  _progressCard(loc, status),
+                  const SizedBox(height: 14),
+                  _haveCodeCard(loc, status),
+                  if (_failed) ...[
+                    const SizedBox(height: 12),
+                    Text(
+                      loc.inviteLoadError,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Theme.of(context).colorScheme.error,
+                      ),
                     ),
-                  ),
+                  ],
                 ],
               ],
-            ],
+            ),
           ),
         ),
       ),

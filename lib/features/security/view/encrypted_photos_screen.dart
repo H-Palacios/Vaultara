@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/features/security/logic/identity_gate.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -468,25 +469,27 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     return Scaffold(
-      body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-          children: [
-            ScreenHeader(
-              title: loc.photoLockTitle,
-              onBack: () => Navigator.of(context).pop(),
-            ),
-            const SizedBox(height: 20),
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 200),
-              child: KeyedSubtree(
-                key: ValueKey<String>(
-                  '${PhotoKeyStore.status.value.name}-$_turningOff',
-                ),
-                child: _body(loc),
+      body: WideCentered(
+        child: SafeArea(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+            children: [
+              ScreenHeader(
+                title: loc.photoLockTitle,
+                onBack: () => Navigator.of(context).pop(),
               ),
-            ),
-          ],
+              const SizedBox(height: 20),
+              AnimatedSwitcher(
+                duration: const Duration(milliseconds: 200),
+                child: KeyedSubtree(
+                  key: ValueKey<String>(
+                    '${PhotoKeyStore.status.value.name}-$_turningOff',
+                  ),
+                  child: _body(loc),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

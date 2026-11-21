@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/settings_tile.dart';
@@ -79,66 +80,68 @@ class HelpScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(title: Text(loc.profileHelpSectionTitle)),
-      body: SafeArea(
-        child: PremiumBuilder(
-          initial: isPremium,
-          builder: (context, premium) => ListView(
-            padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-            children: [
-              SettingsTile(
-                icon: Icons.school_rounded,
-                title: loc.profileTutorialsTitle,
-                subtitle: loc.profileTutorialsSubtitle,
-                onTap: () => Navigator.of(context).push(
-                  MaterialPageRoute<void>(
-                    builder: (_) => const TutorialsScreen(),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 12),
-              SettingsTile(
-                icon: Icons.auto_awesome_rounded,
-                title: loc.assistantTitle,
-                subtitle: loc.assistantTileSubtitle,
-                trailing: premium
-                    ? null
-                    : Icon(
-                        Icons.lock_rounded,
-                        size: 18,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                onTap: () => openAskVaultara(context, isPremium: premium),
-              ),
-              const SizedBox(height: 12),
-              SettingsTile(
-                icon: Icons.mail_outline_rounded,
-                title: loc.helpEmailTitle,
-                subtitle: loc.helpEmailSubtitle,
-                onTap: () => _email(context, premium),
-              ),
-              const SizedBox(height: 20),
-              Row(
-                children: [
-                  Icon(
-                    Icons.alternate_email_rounded,
-                    size: 18,
-                    color: scheme.onSurfaceVariant,
-                  ),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: SelectableText(
-                      SupportEmailService.supportEmail,
-                      style: TextStyle(color: scheme.onSurfaceVariant),
+      body: WideCentered(
+        child: SafeArea(
+          child: PremiumBuilder(
+            initial: isPremium,
+            builder: (context, premium) => ListView(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              children: [
+                SettingsTile(
+                  icon: Icons.school_rounded,
+                  title: loc.profileTutorialsTitle,
+                  subtitle: loc.profileTutorialsSubtitle,
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => const TutorialsScreen(),
                     ),
                   ),
-                  TextButton.icon(
-                    onPressed: () => copyAddress(context),
-                    icon: const Icon(Icons.copy_rounded, size: 16),
-                    label: Text(loc.helpCopyAddress),
-                  ),
-                ],
-              ),
-            ],
+                ),
+                const SizedBox(height: 12),
+                SettingsTile(
+                  icon: Icons.auto_awesome_rounded,
+                  title: loc.assistantTitle,
+                  subtitle: loc.assistantTileSubtitle,
+                  trailing: premium
+                      ? null
+                      : Icon(
+                          Icons.lock_rounded,
+                          size: 18,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                  onTap: () => openAskVaultara(context, isPremium: premium),
+                ),
+                const SizedBox(height: 12),
+                SettingsTile(
+                  icon: Icons.mail_outline_rounded,
+                  title: loc.helpEmailTitle,
+                  subtitle: loc.helpEmailSubtitle,
+                  onTap: () => _email(context, premium),
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.alternate_email_rounded,
+                      size: 18,
+                      color: scheme.onSurfaceVariant,
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: SelectableText(
+                        SupportEmailService.supportEmail,
+                        style: TextStyle(color: scheme.onSurfaceVariant),
+                      ),
+                    ),
+                    TextButton.icon(
+                      onPressed: () => copyAddress(context),
+                      icon: const Icon(Icons.copy_rounded, size: 16),
+                      label: Text(loc.helpCopyAddress),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
