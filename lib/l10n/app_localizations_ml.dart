@@ -710,12 +710,6 @@ class AppLocalizationsMl extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'പരിധിയില്ലാത്ത ഇഷ്‌ടാനുസൃത വിഭാഗങ്ങൾ';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'ഓരോ റിമൈൻഡറും എപ്പോൾ എത്തണമെന്ന് കൃത്യമായി സജ്ജീകരിക്കുക';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'കൂടാതെ, സമയപരിധി അടുക്കുന്തോറും കൂടുതൽ തവണ എത്തുന്ന റിമൈൻഡറുകളും';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'കാലഹരണത്തിന് $days ദിവസം മുമ്പ്';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'സ്വയമേവയുള്ള റിമൈൻഡറുകൾ';
-
-  @override
-  String get planFeatureMultipleReminders => 'ഒരു റെക്കോർഡിന് ഒന്നിലധികം റിമൈൻഡറുകൾ';
 
   @override
   String planTrialThenMonthly(int days, String price) {

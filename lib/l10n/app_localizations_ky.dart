@@ -710,12 +710,6 @@ class AppLocalizationsKy extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Чектөөсүз ыңгайлаштырылган категориялар';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Ар бир эскертүүнүн келүү убактысын так орнотуу';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Андан сырткары, мөөнөт жакындаган сайын бат-баттан келе турган эскертүүлөр';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Мөөнөткө $days күн калганда';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Автоматтык эскертүүлөр';
-
-  @override
-  String get planFeatureMultipleReminders => 'Бир жазууга бир нече эскертүү коюу';
 
   @override
   String planTrialThenMonthly(int days, String price) {

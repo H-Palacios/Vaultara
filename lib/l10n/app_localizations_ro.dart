@@ -712,12 +712,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Categorii personalizate nelimitate';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Setează exact momentul în care sosește fiecare memento';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'În plus, mementouri care devin mai frecvente pe măsură ce termenul limită se apropie';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days zile înainte de expirare';
   }
@@ -1154,9 +1148,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Mementouri automate';
-
-  @override
-  String get planFeatureMultipleReminders => 'Mementouri multiple pentru o singură înregistrare';
 
   @override
   String planTrialThenMonthly(int days, String price) {

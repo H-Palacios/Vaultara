@@ -710,12 +710,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Korlátlan egyedi kategória';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Állítsa be pontosan, mikor érkezzenek az emlékeztetők';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Ráadásul az emlékeztetők gyakoribbá válnak, ahogy közeledik a határidő';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days nappal a lejárat előtt';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Automatikus emlékeztetők';
-
-  @override
-  String get planFeatureMultipleReminders => 'Több emlékeztető egyetlen bejegyzéshez';
 
   @override
   String planTrialThenMonthly(int days, String price) {

@@ -710,12 +710,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Categories personalitzades il·limitades';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Defineix exactament quan arriba cada recordatori';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'A més de recordatoris que es tornen més freqüents a mesura que s\'acosta el termini';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dies abans de caducar';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Recordatoris automàtics';
-
-  @override
-  String get planFeatureMultipleReminders => 'Múltiples recordatoris en un sol registre';
 
   @override
   String planTrialThenMonthly(int days, String price) {

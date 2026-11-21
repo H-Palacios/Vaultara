@@ -213,8 +213,6 @@
   "planBadgePopular": "လူကြိုက်အများဆုံး",
   "planFeatureUnlimitedRecords": "အကန့်အသတ်မဲ့ မှတ်တမ်းများ",
   "planFeatureUnlimitedCategories": "အကန့်အသတ်မဲ့ စိတ်ကြိုက် အမျိုးအစားများ",
-  "planFeatureAdvancedReminderTiming": "သတိပေးချက်တစ်ခုစီ ရောက်လာမည့်အချိန်ကို အတိအကျ သတ်မှတ်ပါ",
-  "planFeatureAutomaticFollowUps": "သတ်မှတ်ရက် နီးလာသည်နှင့်အမျှ ပိုမိုမကြာခဏ ရောက်လာသော သတိပေးချက်များလည်း ပါဝင်သည်",
   "editorReminderDaysBefore": "သက်တမ်းကုန်ရက် မတိုင်မီ {days} ရက်",
   "editorFreeItemsCount": "အခမဲ့ မှတ်တမ်းများ: {used}/{limit}",
   "authErrorUserDisabled": "ဤအကောင့်ကို ပိတ်ထားသည်။",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "အလိုအလျောက် သတိပေးချက်များ",
-  "planFeatureMultipleReminders": "မှတ်တမ်းတစ်ခုတည်းတွင် သတိပေးချက် အများအပြား",
   "planTrialThenMonthly": "{days} ရက် အခမဲ့၊ ထို့နောက် တစ်လလျှင် {price}။ အချိန်မရွေး ပယ်ဖျက်နိုင်သည်။",
   "planTrialThenYearly": "{days} ရက် အခမဲ့၊ ထို့နောက် တစ်နှစ်လျှင် {price}။ အချိန်မရွေး ပယ်ဖျက်နိုင်သည်။",
   "plansRestore": "ဝယ်ယူမှု ပြန်ယူရန်",

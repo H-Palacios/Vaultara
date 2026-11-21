@@ -710,12 +710,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Ótakmarkaðir sérsniðnir flokkar';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Stilltu nákvæmlega hvenær hver áminning berst';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Auk þess áminningar sem verða tíðari þegar fresturinn nálgast';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dögum fyrir fyrningu';
   }
@@ -1149,9 +1143,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Sjálfvirkar áminningar';
-
-  @override
-  String get planFeatureMultipleReminders => 'Margar áminningar á stakri færslu';
 
   @override
   String planTrialThenMonthly(int days, String price) {

@@ -378,8 +378,6 @@
   "planBadgePopular": "Ezagunena",
   "planFeatureUnlimitedRecords": "Erregistro mugagabeak",
   "planFeatureUnlimitedCategories": "Kategoria pertsonalizatu mugagabeak",
-  "planFeatureAdvancedReminderTiming": "Ezarri zehazki noiz iristen den gogorarazle bakoitza",
-  "planFeatureAutomaticFollowUps": "Gehi epea hurbildu ahala maizago bihurtzen diren gogorarazleak",
   "editorReminderOnExpiry": "Iraungitze-datan",
   "editorReminderDaysBefore": "Iraungi baino {days} egun lehenago",
   "editorFreeItemsCount": "Doako elementuak: {used}/{limit}",
@@ -560,7 +558,6 @@
     }
   },
   "planFeatureAutoReminders": "Gogorarazle automatikoak",
-  "planFeatureMultipleReminders": "Gogorarazle bat baino gehiago erregistro bakar batean",
   "planTrialThenMonthly": "Doan {days} egunez, ondoren {price}/hilean. Utzi edonoiz.",
   "@planTrialThenMonthly": {
     "placeholders": {

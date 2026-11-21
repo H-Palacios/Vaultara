@@ -373,8 +373,6 @@
   "planBadgePopular": "Kacha ewu ewu",
   "planFeatureUnlimitedRecords": "Ihe ndekọ na-enweghị njedebe",
   "planFeatureUnlimitedCategories": "Ngalaba ahaziri iche na-enweghị njedebe",
-  "planFeatureAdvancedReminderTiming": "Tọọ kpọmkwem mgbe ihe ncheta ọ bụla ga-abata",
-  "planFeatureAutomaticFollowUps": "Gbakwunyere ihe ncheta na-abawanye ugboro ugboro ka oge ngwụcha na-abịaru nso",
   "editorReminderDaysBefore": "{days} ụbọchị tupu ngwụcha",
   "editorFreeItemsCount": "Ndekọ efu: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -551,7 +549,6 @@
     }
   },
   "planFeatureAutoReminders": "Ihe ncheta akpaaka",
-  "planFeatureMultipleReminders": "Ihe ncheta dị iche iche n'otu ihe ndekọ",
   "planTrialThenMonthly": "N'efu maka ụbọchị {days}, emesia {price}/ọnwa. Kagbuo oge ọ bụla.",
   "@planTrialThenMonthly": {
     "placeholders": {

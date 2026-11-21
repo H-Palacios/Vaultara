@@ -373,8 +373,6 @@
   "planBadgePopular": "הפופולרי ביותר",
   "planFeatureUnlimitedRecords": "רשומות ללא הגבלה",
   "planFeatureUnlimitedCategories": "קטגוריות מותאמות אישית ללא הגבלה",
-  "planFeatureAdvancedReminderTiming": "הגדרה מדויקת של מועד הגעת כל תזכורת",
-  "planFeatureAutomaticFollowUps": "פלוס תזכורות שהופכות לתכופות יותר ככל שהדדליין מתקרב",
   "editorReminderDaysBefore": "{days} ימים לפני התפוגה",
   "editorFreeItemsCount": "רשומות חינמיות: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -551,7 +549,6 @@
     }
   },
   "planFeatureAutoReminders": "תזכורות אוטומטיות",
-  "planFeatureMultipleReminders": "תזכורות מרובות ברשומה אחת",
   "planTrialThenMonthly": "חינם למשך {days} ימים, ואז {price}/חודש. ביטול בכל עת.",
   "@planTrialThenMonthly": {
     "placeholders": {

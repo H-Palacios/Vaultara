@@ -710,12 +710,6 @@ class AppLocalizationsPs extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'نامحدود دودیزې کټګورۍ';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'په دقیق ډول وټاکئ چې هر یادونه کله راځي';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'سربېره پر دې، هغه یادونې چې د پای نېټې په نږدې کېدو سره ډېرېږي';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ورځې د پای څخه مخکې';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'اتومات یادونې';
-
-  @override
-  String get planFeatureMultipleReminders => 'په یو واحد ریکارډ کې څو یادونې';
 
   @override
   String planTrialThenMonthly(int days, String price) {

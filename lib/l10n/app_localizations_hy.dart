@@ -710,12 +710,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Անսահմանափակ անհատական կատեգորիաներ';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Սահմանեք ճշգրիտ ժամանակը, թե երբ է գալիս յուրաքանչյուր հիշեցումը';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Ինչպես նաև հիշեցումներ, որոնք ավելի հաճախակի են դառնում վերջնաժամկետի մոտենալուն պես';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Ժամկետից $days օր առաջ';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Ավտոմատ հիշեցումներ';
-
-  @override
-  String get planFeatureMultipleReminders => 'Բազմակի հիշեցումներ մեկ գրառման վրա';
 
   @override
   String planTrialThenMonthly(int days, String price) {

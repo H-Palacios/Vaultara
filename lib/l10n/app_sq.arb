@@ -378,8 +378,6 @@
   "planBadgePopular": "Më i populluari",
   "planFeatureUnlimitedRecords": "Regjistrime të pakufizuara",
   "planFeatureUnlimitedCategories": "Kategori të personalizuara të pakufizuara",
-  "planFeatureAdvancedReminderTiming": "Caktoni saktësisht se kur mbërrin çdo kujtesë",
-  "planFeatureAutomaticFollowUps": "Plus kujtesa që bëhen më të shpeshta sa më shumë afrohet afati",
   "editorReminderOnExpiry": "Në datën e skadimit",
   "editorReminderDaysBefore": "{days} ditë para skadimit",
   "editorFreeItemsCount": "Artikuj falas: {used}/{limit}",
@@ -560,7 +558,6 @@
     }
   },
   "planFeatureAutoReminders": "Kujtesa automatike",
-  "planFeatureMultipleReminders": "Kujtesa të shumta në një regjistrim të vetëm",
   "planTrialThenMonthly": "Falas për {days} ditë, më pas {price}/muaj. Anuloni në çdo kohë.",
   "@planTrialThenMonthly": {
     "placeholders": {

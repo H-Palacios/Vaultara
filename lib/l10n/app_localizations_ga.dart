@@ -710,12 +710,6 @@ class AppLocalizationsGa extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Catagóirí saincheaptha neamhtheoranta';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Socraigh go díreach cathain a thagann gach meabhrúchán';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Chomh maith le meabhrúcháin a thagann níos minice de réir mar a thagann an spriocdháta níos gaire';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days lá roimh éag';
   }
@@ -1153,9 +1147,6 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Meabhrúcháin uathoibríocha';
-
-  @override
-  String get planFeatureMultipleReminders => 'Meabhrúcháin iolracha ar aon taifead amháin';
 
   @override
   String planTrialThenMonthly(int days, String price) {

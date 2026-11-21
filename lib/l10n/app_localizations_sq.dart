@@ -710,12 +710,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Kategori të personalizuara të pakufizuara';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Caktoni saktësisht se kur mbërrin çdo kujtesë';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Plus kujtesa që bëhen më të shpeshta sa më shumë afrohet afati';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ditë para skadimit';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Kujtesa automatike';
-
-  @override
-  String get planFeatureMultipleReminders => 'Kujtesa të shumta në një regjistrim të vetëm';
 
   @override
   String planTrialThenMonthly(int days, String price) {

@@ -373,8 +373,6 @@
   "planBadgePopular": "Ugu caansan",
   "planFeatureUnlimitedRecords": "Diiwaanno aan xadidnayn",
   "planFeatureUnlimitedCategories": "Qaybood oo gaar ah oo aan xadidnayn",
-  "planFeatureAdvancedReminderTiming": "Deji waqtiga saxda ah ee xusuusiyeyaal kasta uu imanayo",
-  "planFeatureAutomaticFollowUps": "Oo lagu daray xusuusiyeyaal sii badanaya marka waqtiga kama dambaysta ah soo dhowaado",
   "editorReminderDaysBefore": "{days} maalmood ka hor dhicista",
   "editorFreeItemsCount": "Diiwaanno bilaash ah: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Xusuusin toos ah",
-  "planFeatureMultipleReminders": "Xusuusiyeyaal badan oo ku dhex jira hal diiwaan",
   "planTrialThenMonthly": "Bilaash muddo {days} maalmo ah, ka dibna {price}/bishiiba. Jooji wakhti kasta.",
   "@planTrialThenMonthly": {
     "placeholders": {

@@ -346,8 +346,6 @@
   "planBadgePopular": "Najpopularnije",
   "planFeatureUnlimitedRecords": "Neograničen broj zapisa",
   "planFeatureUnlimitedCategories": "Neograničen broj prilagođenih kategorija",
-  "planFeatureAdvancedReminderTiming": "Podesite tačno vreme kada svaki podsetnik stiže",
-  "planFeatureAutomaticFollowUps": "Kao i podsetnici koji postaju učestaliji kako se bliži rok",
   "editorReminderDaysBefore": "{days} dana pre isteka",
   "@editorReminderDaysBefore": {
     "placeholders": {
@@ -520,7 +518,6 @@
     }
   },
   "planFeatureAutoReminders": "Automatski podsetnici",
-  "planFeatureMultipleReminders": "Više podsetnika za jedan zapis",
   "planTrialThenMonthly": "Besplatno {days} dana, zatim {price}/mesečno. Otkažite bilo kada.",
   "@planTrialThenMonthly": {
     "placeholders": {

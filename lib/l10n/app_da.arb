@@ -380,8 +380,6 @@
   "planBadgePopular": "Mest populær",
   "planFeatureUnlimitedRecords": "Ubegrænsede poster",
   "planFeatureUnlimitedCategories": "Ubegrænsede brugerdefinerede kategorier",
-  "planFeatureAdvancedReminderTiming": "Indstil præcis hvornår hver påmindelse ankommer",
-  "planFeatureAutomaticFollowUps": "Plus påmindelser, der bliver hyppigere, jo tættere deadlinen kommer",
   "editorReminderDaysBefore": "{days} dage før udløb",
   "editorFreeItemsCount": "Gratis poster: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -553,7 +551,6 @@
     }
   },
   "planFeatureAutoReminders": "Automatiske påmindelser",
-  "planFeatureMultipleReminders": "Flere påmindelser på en enkelt post",
   "planTrialThenMonthly": "Gratis i {days} dage, derefter {price}/måned. Afmeld når som helst.",
   "@planTrialThenMonthly": {
     "placeholders": {

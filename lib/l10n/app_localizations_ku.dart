@@ -710,12 +710,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Kategoriyên taybet ên bêsînor';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Tam destnîşan bike ka her bîrxistin kîjan demê tê';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Plus bîrxistinên ku her ku dem nêzîk dibe pirtir dibin';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days roj berî bidawîbûnê';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Bîrxistinên otomatîk';
-
-  @override
-  String get planFeatureMultipleReminders => 'Gelek bîrxistin li ser tomareke tenê';
 
   @override
   String planTrialThenMonthly(int days, String price) {

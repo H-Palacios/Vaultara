@@ -710,12 +710,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'ಅನಿಯಮಿತ ಕಸ್ಟಮ್ ವರ್ಗಗಳು';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'ಪ್ರತಿ ರಿಮೈಂಡರ್ ಯಾವಾಗ ಬರಬೇಕೆಂದು ನಿಖರವಾಗಿ ಹೊಂದಿಸಿ';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'ಜೊತೆಗೆ, ಗಡುವು ಸಮೀಪಿಸಿದಂತೆ ಹೆಚ್ಚು ಆಗಾಗ್ಗೆ ಬರುವ ರಿಮೈಂಡರ್‌ಗಳು';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'ಮುಕ್ತಾಯಕ್ಕೆ $days ದಿನಗಳ ಮೊದಲು';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'ಸ್ವಯಂಚಾಲಿತ ರಿಮೈಂಡರ್‌ಗಳು';
-
-  @override
-  String get planFeatureMultipleReminders => 'ಒಂದೇ ದಾಖಲೆಗೆ ಹಲವು ರಿಮೈಂಡರ್‌ಗಳು';
 
   @override
   String planTrialThenMonthly(int days, String price) {

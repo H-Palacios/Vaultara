@@ -373,8 +373,6 @@
   "planBadgePopular": "மிகவும் பிரபலம்",
   "planFeatureUnlimitedRecords": "வரம்பற்ற பதிவுகள்",
   "planFeatureUnlimitedCategories": "வரம்பற்ற பிரத்தியேக வகைகள்",
-  "planFeatureAdvancedReminderTiming": "ஒவ்வொரு நினைவூட்டலும் எப்போது வர வேண்டும் என்பதைத் துல்லியமாக அமைக்கவும்",
-  "planFeatureAutomaticFollowUps": "மேலும் காலக்கெடு நெருங்க நெருங்க அடிக்கடி வரும் நினைவூட்டல்கள்",
   "editorReminderDaysBefore": "காலாவதிக்கு {days} நாட்களுக்கு முன்",
   "editorFreeItemsCount": "இலவச பதிவுகள்: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "தானியங்கு நினைவூட்டல்கள்",
-  "planFeatureMultipleReminders": "ஒரே பதிவில் பல நினைவூட்டல்கள்",
   "planTrialThenMonthly": "{days} நாட்கள் இலவசம், அதற்குப் பிறகு {price}/மாதம். எப்போது வேண்டுமானாலும் ரத்து செய்யலாம்.",
   "@planTrialThenMonthly": {
     "placeholders": {

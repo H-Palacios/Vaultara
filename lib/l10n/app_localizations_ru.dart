@@ -714,12 +714,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Безлимитные свои категории';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Настройка точного времени получения каждого напоминания';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'А также напоминания, которые становятся чаще по мере приближения дедлайна';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'За $days дн. до окончания срока действия';
   }
@@ -1161,9 +1155,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Автоматические напоминания';
-
-  @override
-  String get planFeatureMultipleReminders => 'Несколько напоминаний для одной записи';
 
   @override
   String planTrialThenMonthly(int days, String price) {

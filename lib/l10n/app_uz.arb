@@ -213,8 +213,6 @@
   "planBadgePopular": "Eng ommabop",
   "planFeatureUnlimitedRecords": "Cheksiz yozuvlar",
   "planFeatureUnlimitedCategories": "Cheksiz maxsus turkumlar",
-  "planFeatureAdvancedReminderTiming": "Har bir eslatma qachon kelishini aniq belgilang",
-  "planFeatureAutomaticFollowUps": "Shuningdek, muddat tugashi yaqinlashgan sari tez-tez keladigan eslatmalar",
   "editorReminderDaysBefore": "Muddat tugashidan {days} kun oldin",
   "editorFreeItemsCount": "Bepul yozuvlar: {used}/{limit}",
   "authErrorUserDisabled": "Bu hisob oʻchirib qoʻyilgan.",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "Avtomatik eslatmalar",
-  "planFeatureMultipleReminders": "Bitta yozuv uchun bir nechta eslatma",
   "planTrialThenMonthly": "{days} kun bepul, keyin oyiga {price}. Istalgan vaqtda bekor qiling.",
   "planTrialThenYearly": "{days} kun bepul, keyin yiliga {price}. Istalgan vaqtda bekor qiling.",
   "plansRestore": "Xaridni tiklash",

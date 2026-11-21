@@ -710,12 +710,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'అపరిమిత కస్టమ్ వర్గాలు';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'ప్రతి రిమైండర్ ఖచ్చితంగా ఎప్పుడు రావాలో సెట్ చేయండి';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'అంతేకాకుండా గడువు తేదీ దగ్గరపడే కొద్దీ మరింత తరచుగా వచ్చే రిమైండర్‌లు';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'గడువుకు $days రోజులు ముందు';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'ఆటోమేటిక్ రిమైండర్లు';
-
-  @override
-  String get planFeatureMultipleReminders => 'ఒకే రికార్డుపై బహుళ రిమైండర్‌లు';
 
   @override
   String planTrialThenMonthly(int days, String price) {

@@ -710,12 +710,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Walang limitasyong mga custom na kategorya';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Itakda nang eksakto kung kailan darating ang bawat paalala';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Dagdag pa ang mga paalala na mas nagiging madalas habang papalapit ang deadline';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days araw bago mag-expire';
   }
@@ -1148,9 +1142,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Awtomatikong paalala';
-
-  @override
-  String get planFeatureMultipleReminders => 'Maramihang paalala sa isang solong record';
 
   @override
   String planTrialThenMonthly(int days, String price) {

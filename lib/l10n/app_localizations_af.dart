@@ -710,12 +710,6 @@ class AppLocalizationsAf extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Onbeperkte pasgemaakte kategorieë';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Stel presies in wanneer elke herinnering opdaag';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Plus herinneringe wat meer gereeld word soos die sperdatum nader kom';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dae voor verval';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Outomatiese herinneringe';
-
-  @override
-  String get planFeatureMultipleReminders => 'Verskeie herinneringe op \'n enkele rekord';
 
   @override
   String planTrialThenMonthly(int days, String price) {

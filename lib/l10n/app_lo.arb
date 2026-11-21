@@ -390,8 +390,6 @@
   "planBadgePopular": "ຍອດນິຍົມ",
   "planFeatureUnlimitedRecords": "ບັນທຶກບໍ່ຈຳກັດ",
   "planFeatureUnlimitedCategories": "ໝວດໝູ່ທີ່ກຳນົດເອງບໍ່ຈຳກັດ",
-  "planFeatureAdvancedReminderTiming": "ກຳນົດເວລາທີ່ແນ່ນອນເພື່ອໃຫ້ການເຕືອນສົ່ງເຖິງ",
-  "planFeatureAutomaticFollowUps": "ພ້ອມທັງການເຕືອນທີ່ຈະຖີ່ຂຶ້ນເມື່ອໃກ້ຮອດກຳນົດເວລາ",
   "editorReminderDaysBefore": "{days} ມື້ກ່ອນໝົດອາຍຸ",
   "editorFreeItemsCount": "ລາຍການຟຣີ: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "ການເຕືອນອັດຕະໂນມັດ",
-  "planFeatureMultipleReminders": "ຕັ້ງການເຕືອນໄດ້ຫຼາຍຄັ້ງໃນບັນທຶກດຽວ",
   "planTrialThenMonthly": "ຟຣີ {days} ວັນ, ຈາກນັ້ນ {price}/ເດືອນ. ຍົກເລີກໄດ້ຕະຫຼອດເວລາ.",
   "@planTrialThenMonthly": {
     "placeholders": {

@@ -373,8 +373,6 @@
   "planBadgePopular": "Vinsælast",
   "planFeatureUnlimitedRecords": "Ótakmarkaðar færslur",
   "planFeatureUnlimitedCategories": "Ótakmarkaðir sérsniðnir flokkar",
-  "planFeatureAdvancedReminderTiming": "Stilltu nákvæmlega hvenær hver áminning berst",
-  "planFeatureAutomaticFollowUps": "Auk þess áminningar sem verða tíðari þegar fresturinn nálgast",
   "editorReminderDaysBefore": "{days} dögum fyrir fyrningu",
   "editorFreeItemsCount": "Ókeypis færslur: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -551,7 +549,6 @@
     }
   },
   "planFeatureAutoReminders": "Sjálfvirkar áminningar",
-  "planFeatureMultipleReminders": "Margar áminningar á stakri færslu",
   "planTrialThenMonthly": "Ókeypis í {days} daga, síðan {price}/mánuði. Hættu við hvenær sem er.",
   "@planTrialThenMonthly": {
     "placeholders": {

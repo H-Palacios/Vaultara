@@ -373,8 +373,6 @@
   "planBadgePopular": "Eyona idumileyo",
   "planFeatureUnlimitedRecords": "Iirekhodi ezingasikelwanga mda",
   "planFeatureUnlimitedCategories": "Iindidi ezilungiselelweyo ezingasikelwanga mda",
-  "planFeatureAdvancedReminderTiming": "Misela kanye ixesha esifika ngalo isikhumbuzo ngasinye",
-  "planFeatureAutomaticFollowUps": "Kunye nezikhumbuzo ezifika rhoqo ngakumbi njengoko umhla wokugqibela usondela",
   "editorReminderDaysBefore": "Iintsuku ezi-{days} ngaphambi kokuphelelwa",
   "editorFreeItemsCount": "Iirekhodi zasimahla: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Izikhumbuzo ezenzekelayo",
-  "planFeatureMultipleReminders": "Izikhumbuzo ezininzi kwirekhodi enye",
   "planTrialThenMonthly": "Simahla kangangeentsuku ezi-{days}, emva koko i-{price}/ngenyanga. Rhoxisa nanini na.",
   "@planTrialThenMonthly": {
     "placeholders": {

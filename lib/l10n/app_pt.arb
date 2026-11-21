@@ -373,8 +373,6 @@
   "planBadgePopular": "Mais popular",
   "planFeatureUnlimitedRecords": "Registos ilimitados",
   "planFeatureUnlimitedCategories": "Categorias personalizadas ilimitadas",
-  "planFeatureAdvancedReminderTiming": "Defina exatamente quando cada lembrete chega",
-  "planFeatureAutomaticFollowUps": "Além de lembretes que se tornam mais frequentes à medida que o prazo se aproxima",
   "editorReminderDaysBefore": "{days} dias antes da expiração",
   "editorFreeItemsCount": "Registos gratuitos: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Lembretes automáticos",
-  "planFeatureMultipleReminders": "Múltiplos lembretes num único registo",
   "planTrialThenMonthly": "Gratuito por {days} dias, depois {price}/mês. Cancele a qualquer momento.",
   "@planTrialThenMonthly": {
     "placeholders": {

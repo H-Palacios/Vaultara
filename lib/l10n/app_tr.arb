@@ -373,8 +373,6 @@
   "planBadgePopular": "En popüler",
   "planFeatureUnlimitedRecords": "Sınırsız kayıt",
   "planFeatureUnlimitedCategories": "Sınırsız özel kategori",
-  "planFeatureAdvancedReminderTiming": "Her hatırlatıcının tam olarak ne zaman geleceğini ayarlayın",
-  "planFeatureAutomaticFollowUps": "Ayrıca son tarih yaklaştıkça daha sık gelen hatırlatıcılar",
   "editorReminderDaysBefore": "Son kullanmadan {days} gün önce",
   "editorFreeItemsCount": "Ücretsiz kayıtlar: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Otomatik hatırlatıcılar",
-  "planFeatureMultipleReminders": "Tek bir kayıtta birden fazla hatırlatıcı",
   "planTrialThenMonthly": "{days} gün ücretsiz, ardından {price}/ay. İstediğiniz zaman iptal edin.",
   "@planTrialThenMonthly": {
     "placeholders": {

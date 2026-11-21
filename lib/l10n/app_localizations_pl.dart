@@ -714,12 +714,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Nieograniczona liczba własnych kategorii';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Ustaw dokładny czas dostarczenia każdego przypomnienia';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Dodatkowo przypomnienia, które stają się częstsze w miarę zbliżania się terminu';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dni przed wygaśnięciem';
   }
@@ -1172,9 +1166,6 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Automatyczne przypomnienia';
-
-  @override
-  String get planFeatureMultipleReminders => 'Wiele przypomnień dla jednego rekordu';
 
   @override
   String planTrialThenMonthly(int days, String price) {

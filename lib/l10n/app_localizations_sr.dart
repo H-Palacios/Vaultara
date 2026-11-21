@@ -711,12 +711,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Неограничен број прилагођених категорија';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Подесите тачно време када сваки подсетник стиже';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Као и подсетници који постају учесталији како се ближи рок';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days дана пре истека';
   }
@@ -1151,9 +1145,6 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Аутоматски подсетници';
-
-  @override
-  String get planFeatureMultipleReminders => 'Више подсетника за један запис';
 
   @override
   String planTrialThenMonthly(int days, String price) {
@@ -10545,12 +10536,6 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get planFeatureUnlimitedCategories => 'Неограничен број прилагођених категорија';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Подесите тачно време када сваки подсетник стиже';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Као и подсетници који постају учесталији како се ближи рок';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days дана пре истека';
   }
@@ -10985,9 +10970,6 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get planFeatureAutoReminders => 'Аутоматски подсетници';
-
-  @override
-  String get planFeatureMultipleReminders => 'Више подсетника за један запис';
 
   @override
   String planTrialThenMonthly(int days, String price) {
@@ -20379,12 +20361,6 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get planFeatureUnlimitedCategories => 'Neograničen broj prilagođenih kategorija';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Podesite tačno vreme kada svaki podsetnik stiže';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Kao i podsetnici koji postaju učestaliji kako se bliži rok';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dana pre isteka';
   }
@@ -20819,9 +20795,6 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get planFeatureAutoReminders => 'Automatski podsetnici';
-
-  @override
-  String get planFeatureMultipleReminders => 'Više podsetnika za jedan zapis';
 
   @override
   String planTrialThenMonthly(int days, String price) {

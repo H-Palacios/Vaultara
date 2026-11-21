@@ -710,12 +710,6 @@ class AppLocalizationsSl extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Neomejeno število prilagojenih kategorij';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Nastavite natančen čas, ko vsak opomnik prispe';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'In še opomniki, ki postanejo pogostejši, ko se bliža rok';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dni pred potekom';
   }
@@ -1152,9 +1146,6 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Samodejni opomniki';
-
-  @override
-  String get planFeatureMultipleReminders => 'Več opomnikov za en sam zapis';
 
   @override
   String planTrialThenMonthly(int days, String price) {

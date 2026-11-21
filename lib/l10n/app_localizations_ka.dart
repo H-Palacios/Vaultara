@@ -710,12 +710,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'ულიმიტო მორგებული კატეგორიები';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'განსაზღვრეთ ზუსტად, თუ როდის მოვიდეს თითოეული შეხსენება';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'პლუს შეხსენებები, რომლებიც უფრო ხშირდება ვადის მოახლოებასთან ერთად';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days დღით ადრე ვადამდე';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'ავტომატური შეხსენებები';
-
-  @override
-  String get planFeatureMultipleReminders => 'მრავალჯერადი შეხსენება ერთ ჩანაწერზე';
 
   @override
   String planTrialThenMonthly(int days, String price) {

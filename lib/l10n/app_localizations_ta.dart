@@ -710,12 +710,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'வரம்பற்ற பிரத்தியேக வகைகள்';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'ஒவ்வொரு நினைவூட்டலும் எப்போது வர வேண்டும் என்பதைத் துல்லியமாக அமைக்கவும்';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'மேலும் காலக்கெடு நெருங்க நெருங்க அடிக்கடி வரும் நினைவூட்டல்கள்';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'காலாவதிக்கு $days நாட்களுக்கு முன்';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'தானியங்கு நினைவூட்டல்கள்';
-
-  @override
-  String get planFeatureMultipleReminders => 'ஒரே பதிவில் பல நினைவூட்டல்கள்';
 
   @override
   String planTrialThenMonthly(int days, String price) {

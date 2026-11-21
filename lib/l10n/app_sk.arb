@@ -373,8 +373,6 @@
   "planBadgePopular": "Najobľúbenejšie",
   "planFeatureUnlimitedRecords": "Neobmedzené záznamy",
   "planFeatureUnlimitedCategories": "Neobmedzené vlastné kategórie",
-  "planFeatureAdvancedReminderTiming": "Nastavenie presného času doručenia každej pripomienky",
-  "planFeatureAutomaticFollowUps": "A navyše pripomienky, ktoré sú s blížiacim sa termínom častejšie",
   "editorReminderDaysBefore": "{days} dní pred vypršaním",
   "editorFreeItemsCount": "Bezplatné záznamy: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Automatické pripomienky",
-  "planFeatureMultipleReminders": "Viacero pripomienok pri jednom zázname",
   "planTrialThenMonthly": "Na {days} dní zadarmo, potom {price}/mesiac. Zrušte kedykoľvek.",
   "@planTrialThenMonthly": {
     "placeholders": {

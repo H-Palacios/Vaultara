@@ -710,12 +710,6 @@ class AppLocalizationsXh extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Iindidi ezilungiselelweyo ezingasikelwanga mda';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Misela kanye ixesha esifika ngalo isikhumbuzo ngasinye';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Kunye nezikhumbuzo ezifika rhoqo ngakumbi njengoko umhla wokugqibela usondela';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Iintsuku ezi-$days ngaphambi kokuphelelwa';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Izikhumbuzo ezenzekelayo';
-
-  @override
-  String get planFeatureMultipleReminders => 'Izikhumbuzo ezininzi kwirekhodi enye';
 
   @override
   String planTrialThenMonthly(int days, String price) {

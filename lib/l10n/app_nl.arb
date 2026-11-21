@@ -373,8 +373,6 @@
   "planBadgePopular": "Meest populair",
   "planFeatureUnlimitedRecords": "Onbeperkte records",
   "planFeatureUnlimitedCategories": "Onbeperkte eigen categorieën",
-  "planFeatureAdvancedReminderTiming": "Bepaal precies wanneer elke herinnering aankomt",
-  "planFeatureAutomaticFollowUps": "Plus herinneringen die vaker komen naarmate de vervaldatum dichterbij komt",
   "editorReminderDaysBefore": "{days} dagen vóór vervaldatum",
   "editorFreeItemsCount": "Gratis records: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Automatische herinneringen",
-  "planFeatureMultipleReminders": "Meerdere herinneringen per record",
   "planTrialThenMonthly": "{days} dagen gratis, daarna {price}/maand. Opzeggen kan altijd.",
   "@planTrialThenMonthly": {
     "placeholders": {

@@ -710,12 +710,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Kategori kustom tanpa batas';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Atur dengan tepat kapan setiap pengingat tiba';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Ditambah pengingat yang menjadi lebih sering saat tenggat waktu mendekat';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days hari sebelum kedaluwarsa';
   }
@@ -1144,9 +1138,6 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Pengingat otomatis';
-
-  @override
-  String get planFeatureMultipleReminders => 'Beberapa pengingat pada satu catatan';
 
   @override
   String planTrialThenMonthly(int days, String price) {

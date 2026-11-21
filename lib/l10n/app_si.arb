@@ -373,8 +373,6 @@
   "planBadgePopular": "වඩාත්ම ජනප්‍රිය",
   "planFeatureUnlimitedRecords": "සීමාරහිත වාර්තා",
   "planFeatureUnlimitedCategories": "සීමාරහිත අභිරුචි ප්‍රවර්ග",
-  "planFeatureAdvancedReminderTiming": "එක් එක් මතක් කිරීම පැමිණෙන්නේ කවදාදැයි හරියටම සකසන්න",
-  "planFeatureAutomaticFollowUps": "මීට අමතරව අවසාන දිනය ආසන්න වන විට නිතර නිතර ලැබෙන මතක් කිරීම්",
   "editorReminderDaysBefore": "කල් ඉකුත් වීමට දින {days}කට පෙර",
   "editorFreeItemsCount": "නොමිලේ වාර්තා: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "ස්වයංක්‍රීය මතක් කිරීම්",
-  "planFeatureMultipleReminders": "තනි වාර්තාවක් සඳහා බහුවිධ මතක් කිරීම්",
   "planTrialThenMonthly": "දින {days}ක් නොමිලේ, පසුව මසකට {price}. ඕනෑම වේලාවක අවලංගු කරන්න.",
   "@planTrialThenMonthly": {
     "placeholders": {

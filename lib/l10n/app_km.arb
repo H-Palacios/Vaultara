@@ -213,8 +213,6 @@
   "planBadgePopular": "ពេញនិយមបំផុត",
   "planFeatureUnlimitedRecords": "កំណត់ត្រាគ្មានដែនកំណត់",
   "planFeatureUnlimitedCategories": "ប្រភេទផ្ទាល់ខ្លួនគ្មានដែនកំណត់",
-  "planFeatureAdvancedReminderTiming": "កំណត់ពេលវេលាជាក់លាក់ដែលការរំលឹកនីមួយៗមកដល់",
-  "planFeatureAutomaticFollowUps": "បូករួមទាំងការរំលឹកដែលកាន់តែញឹកញាប់ នៅពេលការផុតកំណត់កាន់តែខិតជិតមកដល់",
   "editorReminderDaysBefore": "{days} ថ្ងៃមុនការផុតកំណត់",
   "editorFreeItemsCount": "កំណត់ត្រាឥតគិតថ្លៃ៖ {used}/{limit}",
   "authErrorUserDisabled": "គណនីនេះត្រូវបានបិទ។",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "ការរំលឹកស្វ័យប្រវត្តិ",
-  "planFeatureMultipleReminders": "ការរំលឹកច្រើនលើកំណត់ត្រាតែមួយ",
   "planTrialThenMonthly": "ឥតគិតថ្លៃ {days} ថ្ងៃ បន្ទាប់មក {price}/ខែ។ បោះបង់បានគ្រប់ពេល។",
   "planTrialThenYearly": "ឥតគិតថ្លៃ {days} ថ្ងៃ បន្ទាប់មក {price}/ឆ្នាំ។ បោះបង់បានគ្រប់ពេល។",
   "plansRestore": "ស្ដារការទិញ",

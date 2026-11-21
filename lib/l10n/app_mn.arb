@@ -390,8 +390,6 @@
   "planBadgePopular": "Хамгийн эрэлттэй",
   "planFeatureUnlimitedRecords": "Хязгааргүй бичлэг",
   "planFeatureUnlimitedCategories": "Хязгааргүй өөрчилсөн ангилал",
-  "planFeatureAdvancedReminderTiming": "Сануулга бүр яг хэзээ ирэхийг нарийн тохируулах",
-  "planFeatureAutomaticFollowUps": "Мөн эцсийн хугацаа дөхөх тусам давтамж нь нэмэгдэх сануулгууд",
   "editorReminderDaysBefore": "Хугацаанаас {days} хоногийн өмнө",
   "editorFreeItemsCount": "Үнэгүй зүйлс: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "Автомат сануулга",
-  "planFeatureMultipleReminders": "Нэг бичлэгт олон сануулга тохируулах",
   "planTrialThenMonthly": "{days} хоног үнэгүй, дараа нь {price}/сард. Хэзээ ч цуцлах боломжтой.",
   "@planTrialThenMonthly": {
     "placeholders": {

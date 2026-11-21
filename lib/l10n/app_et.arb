@@ -380,8 +380,6 @@
   "planBadgePopular": "Kõige populaarsem",
   "planFeatureUnlimitedRecords": "Piiramatu arv kirjeid",
   "planFeatureUnlimitedCategories": "Piiramatu arv kohandatud kategooriaid",
-  "planFeatureAdvancedReminderTiming": "Määra täpselt, millal iga meeldetuletus saabub",
-  "planFeatureAutomaticFollowUps": "Lisaks meeldetuletused, mis muutuvad tähtaja lähenedes sagedasemaks",
   "editorReminderDaysBefore": "{days} päeva enne aegumist",
   "editorFreeItemsCount": "Tasuta kirjed: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -711,7 +709,6 @@
     }
   },
   "planFeatureAutoReminders": "Automaatsed meeldetuletused",
-  "planFeatureMultipleReminders": "Mitu meeldetuletust ühel kirjel",
   "planTrialThenMonthly": "Tasuta {days} päeva, seejärel {price}/kuu. Tühista igal ajal.",
   "@planTrialThenMonthly": {
     "placeholders": {

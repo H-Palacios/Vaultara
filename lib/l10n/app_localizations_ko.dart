@@ -710,12 +710,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get planFeatureUnlimitedCategories => '무제한 맞춤 카테고리';
 
   @override
-  String get planFeatureAdvancedReminderTiming => '각 알림가 도착할 정확한 시간 설정';
-
-  @override
-  String get planFeatureAutomaticFollowUps => '마감일이 다가올수록 알림 빈도가 높아지는 추가 알림 기능';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '만료 $days일 전';
   }
@@ -1149,9 +1143,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => '자동 알림';
-
-  @override
-  String get planFeatureMultipleReminders => '하나의 기록에 여러 개의 알림 설정';
 
   @override
   String planTrialThenMonthly(int days, String price) {

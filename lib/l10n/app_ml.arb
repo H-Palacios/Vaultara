@@ -213,8 +213,6 @@
   "planBadgePopular": "ഏറ്റവും ജനപ്രിയം",
   "planFeatureUnlimitedRecords": "പരിധിയില്ലാത്ത റെക്കോർഡുകൾ",
   "planFeatureUnlimitedCategories": "പരിധിയില്ലാത്ത ഇഷ്‌ടാനുസൃത വിഭാഗങ്ങൾ",
-  "planFeatureAdvancedReminderTiming": "ഓരോ റിമൈൻഡറും എപ്പോൾ എത്തണമെന്ന് കൃത്യമായി സജ്ജീകരിക്കുക",
-  "planFeatureAutomaticFollowUps": "കൂടാതെ, സമയപരിധി അടുക്കുന്തോറും കൂടുതൽ തവണ എത്തുന്ന റിമൈൻഡറുകളും",
   "editorReminderDaysBefore": "കാലഹരണത്തിന് {days} ദിവസം മുമ്പ്",
   "editorFreeItemsCount": "സൗജന്യ റെക്കോർഡുകൾ: {used}/{limit}",
   "authErrorUserDisabled": "ഈ അക്കൗണ്ട് പ്രവർത്തനരഹിതമാക്കിയിരിക്കുന്നു.",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "സ്വയമേവയുള്ള റിമൈൻഡറുകൾ",
-  "planFeatureMultipleReminders": "ഒരു റെക്കോർഡിന് ഒന്നിലധികം റിമൈൻഡറുകൾ",
   "planTrialThenMonthly": "{days} ദിവസത്തേക്ക് സൗജന്യം, തുടർന്ന് {price}/മാസം. എപ്പോൾ വേണമെങ്കിലും റദ്ദാക്കാം.",
   "planTrialThenYearly": "{days} ദിവസത്തേക്ക് സൗജന്യം, തുടർന്ന് {price}/വർഷം. എപ്പോൾ വേണമെങ്കിലും റദ്ദാക്കാം.",
   "plansRestore": "വാങ്ങൽ പുനഃസ്ഥാപിക്കുക",

@@ -380,8 +380,6 @@
   "planBadgePopular": "ਸਭ ਤੋਂ ਪ੍ਰਸਿੱਧ",
   "planFeatureUnlimitedRecords": "ਅਸੀਮਤ ਰਿਕਾਰਡ",
   "planFeatureUnlimitedCategories": "ਅਸੀਮਤ ਕਸਟਮ ਸ਼੍ਰੇਣੀਆਂ",
-  "planFeatureAdvancedReminderTiming": "ਤੈਅ ਕਰੋ ਕਿ ਹਰ ਰਿਮਾਈਂਡਰ ਠੀਕ ਕਦੋਂ ਪਹੁੰਚੇਗਾ",
-  "planFeatureAutomaticFollowUps": "ਇਸਦੇ ਨਾਲ ਹੀ ਅਜਿਹੇ ਰਿਮਾਈਂਡਰ ਜੋ ਡੈੱਡਲਾਈਨ ਨੇੜੇ ਆਉਣ 'ਤੇ ਹੋਰ ਵਾਰ-ਵਾਰ ਆਉਂਦੇ ਹਨ",
   "editorReminderDaysBefore": "ਮਿਆਦ ਤੋਂ {days} ਦਿਨ ਪਹਿਲਾਂ",
   "editorFreeItemsCount": "ਮੁਫ਼ਤ ਚੀਜ਼ਾਂ: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -553,7 +551,6 @@
     }
   },
   "planFeatureAutoReminders": "ਆਪਣੇ ਆਪ ਰਿਮਾਈਂਡਰ",
-  "planFeatureMultipleReminders": "ਇੱਕ ਸਿੰਗਲ ਰਿਕਾਰਡ 'ਤੇ ਕਈ ਰਿਮਾਈਂਡਰ",
   "planTrialThenMonthly": "{days} ਦਿਨਾਂ ਲਈ ਮੁਫ਼ਤ, ਫਿਰ {price}/ਮਹੀਨਾ। ਕਿਸੇ ਵੀ ਸਮੇਂ ਰੱਦ ਕਰੋ।",
   "@planTrialThenMonthly": {
     "placeholders": {

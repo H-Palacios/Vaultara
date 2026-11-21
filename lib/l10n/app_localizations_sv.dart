@@ -710,12 +710,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Obegränsat med anpassade kategorier';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Bestäm exakt när varje påminnelse ska anlända';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Plus påminnelser som blir tätare ju närmare deadline du kommer';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dagar före utgång';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Automatiska påminnelser';
-
-  @override
-  String get planFeatureMultipleReminders => 'Flera påminnelser på en enskild post';
 
   @override
   String planTrialThenMonthly(int days, String price) {

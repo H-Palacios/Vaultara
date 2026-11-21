@@ -710,12 +710,6 @@ class AppLocalizationsYo extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Àwọn ẹka àṣàyàn ailopin';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Ṣètò gangan ìgbà tí olùránnilétí kọ̀ọ̀kan yóò dé';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Pẹ̀lú àwọn olùránnilétí tí ń yára dé bí ọjọ́ ìparí ṣe ń súnmọ́';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Ọjọ́ $days ṣáájú ipari';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Àwọn iranti aládàáṣe';
-
-  @override
-  String get planFeatureMultipleReminders => 'Àwọn olùránnilétí púpọ̀ lórí igbasilẹ kan ṣoṣo';
 
   @override
   String planTrialThenMonthly(int days, String price) {

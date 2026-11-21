@@ -373,8 +373,6 @@
   "planBadgePopular": "Maarufu zaidi",
   "planFeatureUnlimitedRecords": "Rekodi zisizo na kikomo",
   "planFeatureUnlimitedCategories": "Kategoria maalum zisizo na kikomo",
-  "planFeatureAdvancedReminderTiming": "Weka haswa wakati kila kikumbusho kinapowasili",
-  "planFeatureAutomaticFollowUps": "Pamoja na vikumbusho vinavyoongezeka kadri tarehe ya mwisho inavyokaribia",
   "editorReminderDaysBefore": "Siku {days} kabla ya mwisho",
   "editorFreeItemsCount": "Rekodi za bure: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Vikumbusho vya kiotomatiki",
-  "planFeatureMultipleReminders": "Vikumbusho vingi kwenye rekodi moja",
   "planTrialThenMonthly": "Bila malipo kwa siku {days}, kisha {price}/mwezi. Ghairi wakati wowote.",
   "@planTrialThenMonthly": {
     "placeholders": {

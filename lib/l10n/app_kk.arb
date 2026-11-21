@@ -390,8 +390,6 @@
   "planBadgePopular": "Ең танымал",
   "planFeatureUnlimitedRecords": "Шектеусіз жазбалар",
   "planFeatureUnlimitedCategories": "Шектеусіз реттелмелі санаттар",
-  "planFeatureAdvancedReminderTiming": "Әрбір еске салғыштың келу уақытын дәл орнату",
-  "planFeatureAutomaticFollowUps": "Сонымен қатар, мерзім жақындаған сайын жиілей түсетін еске салғыштар",
   "editorReminderDaysBefore": "Мерзімге {days} күн қалғанда",
   "editorFreeItemsCount": "Тегін элементтер: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "Автоматты еске салғыштар",
-  "planFeatureMultipleReminders": "Бір жазбаға бірнеше еске салғыш қою",
   "planTrialThenMonthly": "{days} күн тегін, содан кейін {price}/айына. Кез келген уақытта бас тартуға болады.",
   "@planTrialThenMonthly": {
     "placeholders": {

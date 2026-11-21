@@ -710,12 +710,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'هاوپۆلی دەستکاریکراوی بێسنوور';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'دیاریکردنی کاتی وردی گەیشتنی هەر بیرخەرەوەیەک';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'لەگەڵ بیرخەرەوەکانی تر کە چڕییەکەیان زیاتر دەبێت کاتێک وادەی کۆتایی نزیک دەبێتەوە';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ڕۆژ پێش بەسەرچوون';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'بیرخەرەوەی خۆکار';
-
-  @override
-  String get planFeatureMultipleReminders => 'چەندین بیرخەرەوە لەسەر یەک تۆماری تاقانە';
 
   @override
   String planTrialThenMonthly(int days, String price) {

@@ -390,8 +390,6 @@
   "planBadgePopular": "Legnépszerűbb",
   "planFeatureUnlimitedRecords": "Korlátlan bejegyzés",
   "planFeatureUnlimitedCategories": "Korlátlan egyedi kategória",
-  "planFeatureAdvancedReminderTiming": "Állítsa be pontosan, mikor érkezzenek az emlékeztetők",
-  "planFeatureAutomaticFollowUps": "Ráadásul az emlékeztetők gyakoribbá válnak, ahogy közeledik a határidő",
   "editorReminderDaysBefore": "{days} nappal a lejárat előtt",
   "editorFreeItemsCount": "Ingyenes elemek: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "Automatikus emlékeztetők",
-  "planFeatureMultipleReminders": "Több emlékeztető egyetlen bejegyzéshez",
   "planTrialThenMonthly": "Ingyenes {days} napig, utána {price}/hónap. Bármikor lemondható.",
   "@planTrialThenMonthly": {
     "placeholders": {

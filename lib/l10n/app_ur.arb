@@ -373,8 +373,6 @@
   "planBadgePopular": "سب سے مقبول",
   "planFeatureUnlimitedRecords": "لامحدود ریکارڈز",
   "planFeatureUnlimitedCategories": "لامحدود حسب ضرورت زمرے",
-  "planFeatureAdvancedReminderTiming": "طے کریں کہ ہر یاد دہانی ٹھیک کب پہنچے گی",
-  "planFeatureAutomaticFollowUps": "مزید برآں ایسی یاد دہانیاں جو ڈیڈ لائن قریب آنے پر بار بار آتی ہیں",
   "editorReminderDaysBefore": "اختتام سے {days} دن پہلے",
   "editorFreeItemsCount": "مفت ریکارڈز: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "خودکار یاد دہانیاں",
-  "planFeatureMultipleReminders": "ایک ہی ریکارڈ پر متعدد یاد دہانیاں",
   "planTrialThenMonthly": "{days} دن مفت، پھر {price}/ماہانہ۔ کسی بھی وقت منسوخ کریں۔",
   "@planTrialThenMonthly": {
     "placeholders": {

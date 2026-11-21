@@ -378,8 +378,6 @@
   "planBadgePopular": "Ամենահանրաճանաչ",
   "planFeatureUnlimitedRecords": "Անսահմանափակ գրառումներ",
   "planFeatureUnlimitedCategories": "Անսահմանափակ անհատական կատեգորիաներ",
-  "planFeatureAdvancedReminderTiming": "Սահմանեք ճշգրիտ ժամանակը, թե երբ է գալիս յուրաքանչյուր հիշեցումը",
-  "planFeatureAutomaticFollowUps": "Ինչպես նաև հիշեցումներ, որոնք ավելի հաճախակի են դառնում վերջնաժամկետի մոտենալուն պես",
   "editorReminderOnExpiry": "Ժամկետի ավարտի օրը",
   "editorReminderDaysBefore": "Ժամկետից {days} օր առաջ",
   "editorFreeItemsCount": "Անվճար տարրեր՝ {used}/{limit}",
@@ -560,7 +558,6 @@
     }
   },
   "planFeatureAutoReminders": "Ավտոմատ հիշեցումներ",
-  "planFeatureMultipleReminders": "Բազմակի հիշեցումներ մեկ գրառման վրա",
   "planTrialThenMonthly": "Անվճար {days} օր, այնուհետև {price}/ամիս։ Չեղարկեք ցանկացած պահի։",
   "@planTrialThenMonthly": {
     "placeholders": {

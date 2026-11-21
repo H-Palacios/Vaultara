@@ -380,8 +380,6 @@
   "planBadgePopular": "Most popular",
   "planFeatureUnlimitedRecords": "Unlimited records",
   "planFeatureUnlimitedCategories": "Unlimited custom categories",
-  "planFeatureAdvancedReminderTiming": "Set exactly when each reminder arrives",
-  "planFeatureAutomaticFollowUps": "Plus reminders that get more frequent as the deadline nears",
   "editorReminderDaysBefore": "{days} days before expiry",
   "editorFreeItemsCount": "Free items: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -770,7 +768,6 @@
   "@planFeatureAutoReminders": {
     "description": "Free plan feature on the plans screen. Keep it short."
   },
-  "planFeatureMultipleReminders": "Multiple reminders on a single record",
   "planTrialThenMonthly": "Free for {days} days, then {price}/month. Cancel anytime.",
   "@planTrialThenMonthly": {
     "placeholders": {

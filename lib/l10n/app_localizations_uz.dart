@@ -710,12 +710,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Cheksiz maxsus turkumlar';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Har bir eslatma qachon kelishini aniq belgilang';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Shuningdek, muddat tugashi yaqinlashgan sari tez-tez keladigan eslatmalar';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Muddat tugashidan $days kun oldin';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Avtomatik eslatmalar';
-
-  @override
-  String get planFeatureMultipleReminders => 'Bitta yozuv uchun bir nechta eslatma';
 
   @override
   String planTrialThenMonthly(int days, String price) {

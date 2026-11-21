@@ -9,6 +9,7 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/core/data/repositories/attachment_repository.dart';
 import 'package:vaultara/core/data/repositories/category_repository.dart';
 import 'package:vaultara/features/billing/services/subscription_service.dart';
 import 'package:vaultara/features/billing/services/entitlement_service.dart';
@@ -253,12 +254,14 @@ class _PlansScreenState extends State<PlansScreen> {
       case PlanTier.premium:
       case PlanTier.free:
         return [
+          // The two biggest Premium features first, by their own names.
+          loc.assistantTitle,
+          loc.travelTitle,
           loc.planFeatureUnlimitedRecords,
           loc.planFeatureUnlimitedCategories,
           loc.planFeatureCustomGroups,
-          loc.planFeatureMultipleReminders,
-          loc.planFeatureAdvancedReminderTiming,
-          loc.planFeatureAutomaticFollowUps,
+          loc.planFeatureOwnReminderDates,
+          loc.planFeaturePhotos(AttachmentRepository.premiumPerRecord),
         ];
     }
   }
@@ -516,6 +519,7 @@ class _PlansScreenState extends State<PlansScreen> {
                       loc.planFeatureCategoriesLimit(
                         CategoryRepository.freeCategoryLimit,
                       ),
+                      loc.planFeatureAutoReminders,
                     ],
                   ),
                 ],

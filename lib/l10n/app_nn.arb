@@ -373,8 +373,6 @@
   "planBadgePopular": "Mest populær",
   "planFeatureUnlimitedRecords": "Ubegrensa oppføringar",
   "planFeatureUnlimitedCategories": "Ubegrensa tilpassa kategoriar",
-  "planFeatureAdvancedReminderTiming": "Bestem nøyaktig når kvar påminning kjem",
-  "planFeatureAutomaticFollowUps": "Pluss påminningar som blir hyppigare etter kvart som fristen nærmar seg",
   "editorReminderDaysBefore": "{days} dagar før utløp",
   "editorFreeItemsCount": "Gratis oppføringar: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Automatiske påminningar",
-  "planFeatureMultipleReminders": "Fleire påminningar på éi enkelt oppføring",
   "planTrialThenMonthly": "Gratis i {days} dagar, deretter {price}/månad. Avbryt når som helst.",
   "@planTrialThenMonthly": {
     "placeholders": {

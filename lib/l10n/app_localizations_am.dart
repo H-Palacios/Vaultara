@@ -710,12 +710,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'ያልተገደቡ ብጁ ምድቦች';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'እያንዳንዱ አስታዋሽ መቼ እንደሚደርስ በትክክል ይወስኑ';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'በተጨማሪም የማለቂያው ቀን ሲቃረብ የሚደጋገሙ አስታዋሾች';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'ከማብቂያ $days ቀናት በፊት';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'ራስ-ሰር አስታዋሾች';
-
-  @override
-  String get planFeatureMultipleReminders => 'በአንድ መዝገብ ላይ በርካታ አስታዋሾች';
 
   @override
   String planTrialThenMonthly(int days, String price) {

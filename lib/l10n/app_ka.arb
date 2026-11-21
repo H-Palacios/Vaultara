@@ -390,8 +390,6 @@
   "planBadgePopular": "ყველაზე პოპულარული",
   "planFeatureUnlimitedRecords": "ულიმიტო ჩანაწერები",
   "planFeatureUnlimitedCategories": "ულიმიტო მორგებული კატეგორიები",
-  "planFeatureAdvancedReminderTiming": "განსაზღვრეთ ზუსტად, თუ როდის მოვიდეს თითოეული შეხსენება",
-  "planFeatureAutomaticFollowUps": "პლუს შეხსენებები, რომლებიც უფრო ხშირდება ვადის მოახლოებასთან ერთად",
   "editorReminderDaysBefore": "{days} დღით ადრე ვადამდე",
   "editorFreeItemsCount": "უფასო ელემენტები: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "ავტომატური შეხსენებები",
-  "planFeatureMultipleReminders": "მრავალჯერადი შეხსენება ერთ ჩანაწერზე",
   "planTrialThenMonthly": "უფასო {days} დღით, შემდეგ {price}/თვეში. გააუქმეთ ნებისმიერ დროს.",
   "@planTrialThenMonthly": {
     "placeholders": {

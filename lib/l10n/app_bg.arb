@@ -213,8 +213,6 @@
   "planBadgePopular": "Най-популярен",
   "planFeatureUnlimitedRecords": "Неограничен брой записи",
   "planFeatureUnlimitedCategories": "Неограничен брой собствени категории",
-  "planFeatureAdvancedReminderTiming": "Задайте точно кога да пристига всяко напомняне",
-  "planFeatureAutomaticFollowUps": "Плюс напомняния, които зачестяват с наближаването на крайния срок",
   "editorReminderDaysBefore": "{days} дни преди изтичането",
   "editorFreeItemsCount": "Безплатни записи: {used}/{limit}",
   "authErrorUserDisabled": "Този акаунт е деактивиран.",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "Автоматични напомняния",
-  "planFeatureMultipleReminders": "Няколко напомняния за един запис",
   "planTrialThenMonthly": "Безплатно за {days} дни, след това {price}/месец. Откажете по всяко време.",
   "planTrialThenYearly": "Безплатно за {days} дни, след това {price}/година. Откажете по всяко време.",
   "plansRestore": "Възстановяване на покупката",

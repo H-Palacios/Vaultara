@@ -710,12 +710,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Kategoria maalum zisizo na kikomo';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Weka haswa wakati kila kikumbusho kinapowasili';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Pamoja na vikumbusho vinavyoongezeka kadri tarehe ya mwisho inavyokaribia';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Siku $days kabla ya mwisho';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Vikumbusho vya kiotomatiki';
-
-  @override
-  String get planFeatureMultipleReminders => 'Vikumbusho vingi kwenye rekodi moja';
 
   @override
   String planTrialThenMonthly(int days, String price) {

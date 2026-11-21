@@ -710,12 +710,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Хязгааргүй өөрчилсөн ангилал';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Сануулга бүр яг хэзээ ирэхийг нарийн тохируулах';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Мөн эцсийн хугацаа дөхөх тусам давтамж нь нэмэгдэх сануулгууд';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Хугацаанаас $days хоногийн өмнө';
   }
@@ -1149,9 +1143,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Автомат сануулга';
-
-  @override
-  String get planFeatureMultipleReminders => 'Нэг бичлэгт олон сануулга тохируулах';
 
   @override
   String planTrialThenMonthly(int days, String price) {

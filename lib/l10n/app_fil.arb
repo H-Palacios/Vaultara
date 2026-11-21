@@ -380,8 +380,6 @@
   "planBadgePopular": "Pinakasikat",
   "planFeatureUnlimitedRecords": "Walang limitasyong mga record",
   "planFeatureUnlimitedCategories": "Walang limitasyong mga custom na kategorya",
-  "planFeatureAdvancedReminderTiming": "Itakda nang eksakto kung kailan darating ang bawat paalala",
-  "planFeatureAutomaticFollowUps": "Dagdag pa ang mga paalala na mas nagiging madalas habang papalapit ang deadline",
   "editorReminderDaysBefore": "{days} araw bago mag-expire",
   "editorFreeItemsCount": "Libreng rekord: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -558,7 +556,6 @@
     }
   },
   "planFeatureAutoReminders": "Awtomatikong paalala",
-  "planFeatureMultipleReminders": "Maramihang paalala sa isang solong record",
   "planTrialThenMonthly": "Libre sa loob ng {days} araw, pagkatapos ay {price}/buwan. Kanselahin anumang oras.",
   "@planTrialThenMonthly": {
     "placeholders": {

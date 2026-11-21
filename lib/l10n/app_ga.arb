@@ -380,8 +380,6 @@
   "planBadgePopular": "Is mó tóir",
   "planFeatureUnlimitedRecords": "Taifid neamhtheoranta",
   "planFeatureUnlimitedCategories": "Catagóirí saincheaptha neamhtheoranta",
-  "planFeatureAdvancedReminderTiming": "Socraigh go díreach cathain a thagann gach meabhrúchán",
-  "planFeatureAutomaticFollowUps": "Chomh maith le meabhrúcháin a thagann níos minice de réir mar a thagann an spriocdháta níos gaire",
   "editorReminderDaysBefore": "{days} lá roimh éag",
   "editorFreeItemsCount": "Taifid saor in aisce: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -558,7 +556,6 @@
     }
   },
   "planFeatureAutoReminders": "Meabhrúcháin uathoibríocha",
-  "planFeatureMultipleReminders": "Meabhrúcháin iolracha ar aon taifead amháin",
   "planTrialThenMonthly": "Saor in aisce ar feadh {days} lá, ansin {price}/mí. Cealaigh am ar bith.",
   "@planTrialThenMonthly": {
     "placeholders": {

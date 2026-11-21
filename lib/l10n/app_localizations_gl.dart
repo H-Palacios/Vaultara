@@ -710,12 +710,6 @@ class AppLocalizationsGl extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Categorías personalizadas ilimitadas';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Define exactamente cando chega cada lembrete';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Ademais, lembretes que se volven máis frecuentes a medida que se achega o prazo límite';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days días antes da caducidade';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Lembretes automáticos';
-
-  @override
-  String get planFeatureMultipleReminders => 'Múltiples lembretes nun único rexistro';
 
   @override
   String planTrialThenMonthly(int days, String price) {

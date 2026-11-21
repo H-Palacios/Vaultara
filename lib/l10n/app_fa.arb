@@ -380,8 +380,6 @@
   "planBadgePopular": "محبوب‌ترین",
   "planFeatureUnlimitedRecords": "رکوردهای نامحدود",
   "planFeatureUnlimitedCategories": "دسته‌بندی‌های سفارشی نامحدود",
-  "planFeatureAdvancedReminderTiming": "تنظیم دقیق زمان دریافت هر یادآور",
-  "planFeatureAutomaticFollowUps": "به همراه یادآورهایی که با نزدیک شدن به مهلت مقرر، فرکانس بیشتری پیدا می‌کنند",
   "editorReminderDaysBefore": "{days} روز قبل از انقضا",
   "editorFreeItemsCount": "رکوردهای رایگان: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -558,7 +556,6 @@
     }
   },
   "planFeatureAutoReminders": "یادآوری‌های خودکار",
-  "planFeatureMultipleReminders": "چندین یادآور روی یک رکورد واحد",
   "planTrialThenMonthly": "رایگان برای {days} روز، سپس {price}/ماهانه. لغو در هر زمان.",
   "@planTrialThenMonthly": {
     "placeholders": {

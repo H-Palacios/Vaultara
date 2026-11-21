@@ -378,8 +378,6 @@
   "planBadgePopular": "Gewildste",
   "planFeatureUnlimitedRecords": "Onbeperkte rekords",
   "planFeatureUnlimitedCategories": "Onbeperkte pasgemaakte kategorieë",
-  "planFeatureAdvancedReminderTiming": "Stel presies in wanneer elke herinnering opdaag",
-  "planFeatureAutomaticFollowUps": "Plus herinneringe wat meer gereeld word soos die sperdatum nader kom",
   "editorReminderOnExpiry": "Op vervaldatum",
   "editorReminderDaysBefore": "{days} dae voor verval",
   "editorFreeItemsCount": "Gratis items: {used}/{limit}",
@@ -560,7 +558,6 @@
     }
   },
   "planFeatureAutoReminders": "Outomatiese herinneringe",
-  "planFeatureMultipleReminders": "Verskeie herinneringe op 'n enkele rekord",
   "planTrialThenMonthly": "Gratis vir {days} dae, dan {price}/maand. Kanselleer enige tyd.",
   "@planTrialThenMonthly": {
     "placeholders": {

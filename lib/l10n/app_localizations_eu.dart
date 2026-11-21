@@ -710,12 +710,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Kategoria pertsonalizatu mugagabeak';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Ezarri zehazki noiz iristen den gogorarazle bakoitza';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Gehi epea hurbildu ahala maizago bihurtzen diren gogorarazleak';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Iraungi baino $days egun lehenago';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Gogorarazle automatikoak';
-
-  @override
-  String get planFeatureMultipleReminders => 'Gogorarazle bat baino gehiago erregistro bakar batean';
 
   @override
   String planTrialThenMonthly(int days, String price) {

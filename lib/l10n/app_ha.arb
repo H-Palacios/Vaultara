@@ -380,8 +380,6 @@
   "planBadgePopular": "Mafi shahara",
   "planFeatureUnlimitedRecords": "Rikodi marasa iyaka",
   "planFeatureUnlimitedCategories": "Rukunoni na musamman marasa iyaka",
-  "planFeatureAdvancedReminderTiming": "Saita daidai lokacin da kowace tunatarwa ke fitowa",
-  "planFeatureAutomaticFollowUps": "Da kuma tunatarwa waɗanda ke ƙaruwa yayin da lokacin ƙarshe ke gabatowa",
   "editorReminderDaysBefore": "{days} kwanaki kafin ƙarewa",
   "editorFreeItemsCount": "Rikodi kyauta: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -558,7 +556,6 @@
     }
   },
   "planFeatureAutoReminders": "Tunatarwa ta atomatik",
-  "planFeatureMultipleReminders": "Tunatarwa da yawa akan rikodi guda",
   "planTrialThenMonthly": "Kyauta na kwanaki {days}, sannan {price}/wata. Soke kowane lokaci.",
   "@planTrialThenMonthly": {
     "placeholders": {

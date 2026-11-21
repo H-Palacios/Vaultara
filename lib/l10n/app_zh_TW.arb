@@ -366,8 +366,6 @@
   "planBadgePopular": "最受歡迎",
   "planFeatureUnlimitedRecords": "無限記錄空間",
   "planFeatureUnlimitedCategories": "無限自訂類別",
-  "planFeatureAdvancedReminderTiming": "精確設定每條提醒的送達時間",
-  "planFeatureAutomaticFollowUps": "臨近截止日期時，提醒會自動變得更頻繁",
   "editorReminderDaysBefore": "到期前 {days} 天",
   "editorFreeItemsCount": "免費記錄：{used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -539,7 +537,6 @@
     }
   },
   "planFeatureAutoReminders": "自動提醒",
-  "planFeatureMultipleReminders": "單筆記錄可設定多個提醒",
   "planTrialThenMonthly": "免費試用 {days} 天，隨後 {price}/月。隨時可取消。",
   "@planTrialThenMonthly": {
     "placeholders": {

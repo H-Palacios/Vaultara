@@ -710,12 +710,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Απεριόριστες προσαρμοσμένες κατηγορίες';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Ορίστε ακριβώς πότε θα φτάνει η κάθε υπενθύμιση';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Επιπλέον υπενθυμίσεις που γίνονται πιο συχνές καθώς πλησιάζει η προθεσμία';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ημέρες πριν από τη λήξη';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Αυτόματες υπενθυμίσεις';
-
-  @override
-  String get planFeatureMultipleReminders => 'Πολλαπλές υπενθυμίσεις σε μία μόνο εγγραφή';
 
   @override
   String planTrialThenMonthly(int days, String price) {

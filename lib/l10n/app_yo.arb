@@ -373,8 +373,6 @@
   "planBadgePopular": "Ó lókìkí jùlọ",
   "planFeatureUnlimitedRecords": "Àwọn igbasilẹ ailopin",
   "planFeatureUnlimitedCategories": "Àwọn ẹka àṣàyàn ailopin",
-  "planFeatureAdvancedReminderTiming": "Ṣètò gangan ìgbà tí olùránnilétí kọ̀ọ̀kan yóò dé",
-  "planFeatureAutomaticFollowUps": "Pẹ̀lú àwọn olùránnilétí tí ń yára dé bí ọjọ́ ìparí ṣe ń súnmọ́",
   "editorReminderDaysBefore": "Ọjọ́ {days} ṣáájú ipari",
   "editorFreeItemsCount": "Àwọn igbasilẹ ọfẹ: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Àwọn iranti aládàáṣe",
-  "planFeatureMultipleReminders": "Àwọn olùránnilétí púpọ̀ lórí igbasilẹ kan ṣoṣo",
   "planTrialThenMonthly": "Ọ̀fẹ́ fún ọjọ́ {days}, lẹ́yìn náà {price}/oṣù. Fagilee ní igbakugba.",
   "@planTrialThenMonthly": {
     "placeholders": {

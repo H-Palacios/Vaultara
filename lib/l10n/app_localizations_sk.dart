@@ -710,12 +710,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Neobmedzené vlastné kategórie';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Nastavenie presného času doručenia každej pripomienky';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'A navyše pripomienky, ktoré sú s blížiacim sa termínom častejšie';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dní pred vypršaním';
   }
@@ -1152,9 +1146,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Automatické pripomienky';
-
-  @override
-  String get planFeatureMultipleReminders => 'Viacero pripomienok pri jednom zázname';
 
   @override
   String planTrialThenMonthly(int days, String price) {

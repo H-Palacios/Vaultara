@@ -373,8 +373,6 @@
   "planBadgePopular": "بەناوبانگترین",
   "planFeatureUnlimitedRecords": "تۆماری بێسنوور",
   "planFeatureUnlimitedCategories": "هاوپۆلی دەستکاریکراوی بێسنوور",
-  "planFeatureAdvancedReminderTiming": "دیاریکردنی کاتی وردی گەیشتنی هەر بیرخەرەوەیەک",
-  "planFeatureAutomaticFollowUps": "لەگەڵ بیرخەرەوەکانی تر کە چڕییەکەیان زیاتر دەبێت کاتێک وادەی کۆتایی نزیک دەبێتەوە",
   "editorReminderDaysBefore": "{days} ڕۆژ پێش بەسەرچوون",
   "@editorReminderDaysBefore": {
     "placeholders": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "بیرخەرەوەی خۆکار",
-  "planFeatureMultipleReminders": "چەندین بیرخەرەوە لەسەر یەک تۆماری تاقانە",
   "planTrialThenMonthly": "بێبەرامبەر بۆ {days} ڕۆژ، پاشان {price}/مانگانە. لە هەر کاتێکدا بێت دەتوانیت هەڵیوەشێنیتەوە.",
   "@planTrialThenMonthly": {
     "placeholders": {

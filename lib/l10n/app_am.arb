@@ -378,8 +378,6 @@
   "planBadgePopular": "በጣም ተመራጭ",
   "planFeatureUnlimitedRecords": "ያልተገደቡ መዝገቦች",
   "planFeatureUnlimitedCategories": "ያልተገደቡ ብጁ ምድቦች",
-  "planFeatureAdvancedReminderTiming": "እያንዳንዱ አስታዋሽ መቼ እንደሚደርስ በትክክል ይወስኑ",
-  "planFeatureAutomaticFollowUps": "በተጨማሪም የማለቂያው ቀን ሲቃረብ የሚደጋገሙ አስታዋሾች",
   "editorReminderOnExpiry": "በማብቂያ ቀን",
   "editorReminderDaysBefore": "ከማብቂያ {days} ቀናት በፊት",
   "editorFreeItemsCount": "ነጻ ንጥሎች፦ {used}/{limit}",
@@ -560,7 +558,6 @@
     }
   },
   "planFeatureAutoReminders": "ራስ-ሰር አስታዋሾች",
-  "planFeatureMultipleReminders": "በአንድ መዝገብ ላይ በርካታ አስታዋሾች",
   "planTrialThenMonthly": "ለ{days} ቀናት በነፃ፣ ከዚያ {price}/በወር። በማንኛውም ጊዜ መሰረዝ ይቻላል።",
   "@planTrialThenMonthly": {
     "placeholders": {

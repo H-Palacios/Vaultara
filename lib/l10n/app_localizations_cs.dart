@@ -714,12 +714,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Neomezené vlastní kategorie';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Nastavení přesného času doručení každého připomenutí';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'A navíc připomenutí, která jsou s blížícím se termínem častější';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dní před vypršením';
   }
@@ -1157,9 +1151,6 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Automatické připomínky';
-
-  @override
-  String get planFeatureMultipleReminders => 'Více připomenutí u jednoho záznamu';
 
   @override
   String planTrialThenMonthly(int days, String price) {

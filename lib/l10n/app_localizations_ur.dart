@@ -710,12 +710,6 @@ class AppLocalizationsUr extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'لامحدود حسب ضرورت زمرے';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'طے کریں کہ ہر یاد دہانی ٹھیک کب پہنچے گی';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'مزید برآں ایسی یاد دہانیاں جو ڈیڈ لائن قریب آنے پر بار بار آتی ہیں';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'اختتام سے $days دن پہلے';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'خودکار یاد دہانیاں';
-
-  @override
-  String get planFeatureMultipleReminders => 'ایک ہی ریکارڈ پر متعدد یاد دہانیاں';
 
   @override
   String planTrialThenMonthly(int days, String price) {

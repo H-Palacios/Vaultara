@@ -710,12 +710,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get planFeatureUnlimitedCategories => '无限自定义类别';
 
   @override
-  String get planFeatureAdvancedReminderTiming => '精确设定每条提醒的送达时间';
-
-  @override
-  String get planFeatureAutomaticFollowUps => '临近截止日期时，提醒会自动变得更加频繁';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '到期前 $days 天';
   }
@@ -1149,9 +1143,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => '自动提醒';
-
-  @override
-  String get planFeatureMultipleReminders => '单条记录可设置多重提醒';
 
   @override
   String planTrialThenMonthly(int days, String price) {
@@ -10398,12 +10389,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get planFeatureUnlimitedCategories => '无限自定义类别';
 
   @override
-  String get planFeatureAdvancedReminderTiming => '精确设定每条提醒的送达时间';
-
-  @override
-  String get planFeatureAutomaticFollowUps => '此外，临近截止日期时提醒会越来越频繁';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '到期前 $days 天';
   }
@@ -10831,9 +10816,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get planFeatureAutoReminders => '自动提醒';
-
-  @override
-  String get planFeatureMultipleReminders => '单条记录可设置多重提醒';
 
   @override
   String planTrialThenMonthly(int days, String price) {
@@ -20074,12 +20056,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get planFeatureUnlimitedCategories => '無限自訂類別';
 
   @override
-  String get planFeatureAdvancedReminderTiming => '精確設定每條提醒的送達時間';
-
-  @override
-  String get planFeatureAutomaticFollowUps => '臨近截止日期時，提醒會自動變得更頻繁';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '到期前 $days 天';
   }
@@ -20507,9 +20483,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get planFeatureAutoReminders => '自動提醒';
-
-  @override
-  String get planFeatureMultipleReminders => '單筆記錄可設定多個提醒';
 
   @override
   String planTrialThenMonthly(int days, String price) {

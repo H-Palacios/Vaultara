@@ -710,12 +710,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Ngalaba ahaziri iche na-enweghị njedebe';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Tọọ kpọmkwem mgbe ihe ncheta ọ bụla ga-abata';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Gbakwunyere ihe ncheta na-abawanye ugboro ugboro ka oge ngwụcha na-abịaru nso';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ụbọchị tupu ngwụcha';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Ihe ncheta akpaaka';
-
-  @override
-  String get planFeatureMultipleReminders => 'Ihe ncheta dị iche iche n\'otu ihe ndekọ';
 
   @override
   String planTrialThenMonthly(int days, String price) {

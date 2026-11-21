@@ -380,8 +380,6 @@
   "planBadgePopular": "一番人気",
   "planFeatureUnlimitedRecords": "無制限の記録",
   "planFeatureUnlimitedCategories": "無制限のカスタムカテゴリ",
-  "planFeatureAdvancedReminderTiming": "各リマインダーが届くタイミングを正確に設定",
-  "planFeatureAutomaticFollowUps": "さらに、期限が近づくにつれて頻度が高くなるリマインダー機能も搭載",
   "editorReminderDaysBefore": "有効期限の{days}日前",
   "editorFreeItemsCount": "無料記録: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -558,7 +556,6 @@
     }
   },
   "planFeatureAutoReminders": "自動リマインダー",
-  "planFeatureMultipleReminders": "1つの記録に複数のリマインダーを設定可能",
   "planTrialThenMonthly": "{days}日間無料、その後{price}/月。いつでも解約可能。",
   "@planTrialThenMonthly": {
     "placeholders": {

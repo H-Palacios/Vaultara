@@ -710,12 +710,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Piiramatu arv kohandatud kategooriaid';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Määra täpselt, millal iga meeldetuletus saabub';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Lisaks meeldetuletused, mis muutuvad tähtaja lähenedes sagedasemaks';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days päeva enne aegumist';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Automaatsed meeldetuletused';
-
-  @override
-  String get planFeatureMultipleReminders => 'Mitu meeldetuletust ühel kirjel';
 
   @override
   String planTrialThenMonthly(int days, String price) {

@@ -710,12 +710,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Rajoittamattomat mukautetut kategoriat';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Määritä tarkalleen, milloin kukin muistutus saapuu';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Lisäksi muistutukset, jotka tihenevät määräajan lähestyessä';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days päivää ennen vanhenemista';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Automaattiset muistutukset';
-
-  @override
-  String get planFeatureMultipleReminders => 'Useita muistutuksia yhdessä tietueessa';
 
   @override
   String planTrialThenMonthly(int days, String price) {

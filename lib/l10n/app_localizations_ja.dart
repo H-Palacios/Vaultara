@@ -710,12 +710,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get planFeatureUnlimitedCategories => '無制限のカスタムカテゴリ';
 
   @override
-  String get planFeatureAdvancedReminderTiming => '各リマインダーが届くタイミングを正確に設定';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'さらに、期限が近づくにつれて頻度が高くなるリマインダー機能も搭載';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '有効期限の$days日前';
   }
@@ -1143,9 +1137,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => '自動リマインダー';
-
-  @override
-  String get planFeatureMultipleReminders => '1つの記録に複数のリマインダーを設定可能';
 
   @override
   String planTrialThenMonthly(int days, String price) {

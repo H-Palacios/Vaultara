@@ -389,8 +389,6 @@
   "planBadgePopular": "అత్యంత ప్రజాదరణ పొందినది",
   "planFeatureUnlimitedRecords": "అపరిమిత రికార్డులు",
   "planFeatureUnlimitedCategories": "అపరిమిత కస్టమ్ వర్గాలు",
-  "planFeatureAdvancedReminderTiming": "ప్రతి రిమైండర్ ఖచ్చితంగా ఎప్పుడు రావాలో సెట్ చేయండి",
-  "planFeatureAutomaticFollowUps": "అంతేకాకుండా గడువు తేదీ దగ్గరపడే కొద్దీ మరింత తరచుగా వచ్చే రిమైండర్‌లు",
   "editorReminderDaysBefore": "గడువుకు {days} రోజులు ముందు",
   "editorFreeItemsCount": "ఉచిత అంశాలు: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -563,7 +561,6 @@
     }
   },
   "planFeatureAutoReminders": "ఆటోమేటిక్ రిమైండర్లు",
-  "planFeatureMultipleReminders": "ఒకే రికార్డుపై బహుళ రిమైండర్‌లు",
   "planTrialThenMonthly": "{days} రోజులు ఉచితం, ఆ తర్వాత {price}/నెలకు. ఎప్పుడైనా రద్దు చేసుకోండి.",
   "@planTrialThenMonthly": {
     "placeholders": {

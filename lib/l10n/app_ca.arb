@@ -380,8 +380,6 @@
   "planBadgePopular": "El més popular",
   "planFeatureUnlimitedRecords": "Registres il·limitats",
   "planFeatureUnlimitedCategories": "Categories personalitzades il·limitades",
-  "planFeatureAdvancedReminderTiming": "Defineix exactament quan arriba cada recordatori",
-  "planFeatureAutomaticFollowUps": "A més de recordatoris que es tornen més freqüents a mesura que s'acosta el termini",
   "editorReminderDaysBefore": "{days} dies abans de caducar",
   "editorFreeItemsCount": "Elements gratuïts: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -553,7 +551,6 @@
     }
   },
   "planFeatureAutoReminders": "Recordatoris automàtics",
-  "planFeatureMultipleReminders": "Múltiples recordatoris en un sol registre",
   "planTrialThenMonthly": "Gratis durant {days} dies, després {price}/mes. Cancel·la quan vulguis.",
   "@planTrialThenMonthly": {
     "placeholders": {

@@ -710,12 +710,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'ໝວດໝູ່ທີ່ກຳນົດເອງບໍ່ຈຳກັດ';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'ກຳນົດເວລາທີ່ແນ່ນອນເພື່ອໃຫ້ການເຕືອນສົ່ງເຖິງ';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'ພ້ອມທັງການເຕືອນທີ່ຈະຖີ່ຂຶ້ນເມື່ອໃກ້ຮອດກຳນົດເວລາ';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ມື້ກ່ອນໝົດອາຍຸ';
   }
@@ -1149,9 +1143,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'ການເຕືອນອັດຕະໂນມັດ';
-
-  @override
-  String get planFeatureMultipleReminders => 'ຕັ້ງການເຕືອນໄດ້ຫຼາຍຄັ້ງໃນບັນທຶກດຽວ';
 
   @override
   String planTrialThenMonthly(int days, String price) {

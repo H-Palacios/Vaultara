@@ -373,8 +373,6 @@
   "planBadgePopular": "Paling populer",
   "planFeatureUnlimitedRecords": "Catatan tanpa batas",
   "planFeatureUnlimitedCategories": "Kategori kustom tanpa batas",
-  "planFeatureAdvancedReminderTiming": "Atur dengan tepat kapan setiap pengingat tiba",
-  "planFeatureAutomaticFollowUps": "Ditambah pengingat yang menjadi lebih sering saat tenggat waktu mendekat",
   "editorReminderDaysBefore": "{days} hari sebelum kedaluwarsa",
   "editorFreeItemsCount": "Catatan gratis: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -551,7 +549,6 @@
     }
   },
   "planFeatureAutoReminders": "Pengingat otomatis",
-  "planFeatureMultipleReminders": "Beberapa pengingat pada satu catatan",
   "planTrialThenMonthly": "Gratis selama {days} hari, lalu {price}/bulan. Batalkan kapan saja.",
   "@planTrialThenMonthly": {
     "placeholders": {

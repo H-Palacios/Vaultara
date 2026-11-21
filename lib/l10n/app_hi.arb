@@ -380,8 +380,6 @@
   "planBadgePopular": "सबसे लोकप्रिय",
   "planFeatureUnlimitedRecords": "असीमित रिकॉर्ड",
   "planFeatureUnlimitedCategories": "असीमित कस्टम श्रेणियाँ",
-  "planFeatureAdvancedReminderTiming": "तय करें कि हर रिमाइंडर ठीक कब पहुंचेगा",
-  "planFeatureAutomaticFollowUps": "साथ ही ऐसे रिमाइंडर्स जो डेडलाइन नज़दीक आने पर और बार-बार आते हैं",
   "editorReminderDaysBefore": "समाप्ति से {days} दिन पहले",
   "editorFreeItemsCount": "मुफ़्त रिकॉर्ड: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -558,7 +556,6 @@
     }
   },
   "planFeatureAutoReminders": "अपने आप रिमाइंडर",
-  "planFeatureMultipleReminders": "एक ही रिकॉर्ड पर कई रिमाइंडर्स",
   "planTrialThenMonthly": "{days} दिनों के लिए फ्री, फिर {price}/महीना। कभी भी कैंसिल करें।",
   "@planTrialThenMonthly": {
     "placeholders": {

@@ -213,8 +213,6 @@
   "planBadgePopular": "ಅತ್ಯಂತ ಜನಪ್ರಿಯ",
   "planFeatureUnlimitedRecords": "ಅನಿಯಮಿತ ದಾಖಲೆಗಳು",
   "planFeatureUnlimitedCategories": "ಅನಿಯಮಿತ ಕಸ್ಟಮ್ ವರ್ಗಗಳು",
-  "planFeatureAdvancedReminderTiming": "ಪ್ರತಿ ರಿಮೈಂಡರ್ ಯಾವಾಗ ಬರಬೇಕೆಂದು ನಿಖರವಾಗಿ ಹೊಂದಿಸಿ",
-  "planFeatureAutomaticFollowUps": "ಜೊತೆಗೆ, ಗಡುವು ಸಮೀಪಿಸಿದಂತೆ ಹೆಚ್ಚು ಆಗಾಗ್ಗೆ ಬರುವ ರಿಮೈಂಡರ್‌ಗಳು",
   "editorReminderDaysBefore": "ಮುಕ್ತಾಯಕ್ಕೆ {days} ದಿನಗಳ ಮೊದಲು",
   "editorFreeItemsCount": "ಉಚಿತ ದಾಖಲೆಗಳು: {used}/{limit}",
   "authErrorUserDisabled": "ಈ ಖಾತೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "ಸ್ವಯಂಚಾಲಿತ ರಿಮೈಂಡರ್‌ಗಳು",
-  "planFeatureMultipleReminders": "ಒಂದೇ ದಾಖಲೆಗೆ ಹಲವು ರಿಮೈಂಡರ್‌ಗಳು",
   "planTrialThenMonthly": "{days} ದಿನಗಳವರೆಗೆ ಉಚಿತ, ನಂತರ {price}/ತಿಂಗಳು. ಯಾವಾಗ ಬೇಕಾದರೂ ರದ್ದುಮಾಡಿ.",
   "planTrialThenYearly": "{days} ದಿನಗಳವರೆಗೆ ಉಚಿತ, ನಂತರ {price}/ವರ್ಷ. ಯಾವಾಗ ಬೇಕಾದರೂ ರದ್ದುಮಾಡಿ.",
   "plansRestore": "ಖರೀದಿಯನ್ನು ಮರುಸ್ಥಾಪಿಸಿ",

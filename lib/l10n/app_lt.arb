@@ -390,8 +390,6 @@
   "planBadgePopular": "Populiariausias",
   "planFeatureUnlimitedRecords": "Neriboti įrašai",
   "planFeatureUnlimitedCategories": "Neribotos pasirinktinės kategorijos",
-  "planFeatureAdvancedReminderTiming": "Nustatykite tikslų laiką, kada gaunamas kiekvienas priminimas",
-  "planFeatureAutomaticFollowUps": "Taip pat priminimai, kurie dažnėja artėjant galutiniam terminui",
   "editorReminderDaysBefore": "{days} d. iki galiojimo pabaigos",
   "editorFreeItemsCount": "Nemokami elementai: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "Automatiniai priminimai",
-  "planFeatureMultipleReminders": "Keli priminimai vienam įrašui",
   "planTrialThenMonthly": "Nemokamai {days} d., vėliau {price}/mėn. Atšaukite bet kada.",
   "@planTrialThenMonthly": {
     "placeholders": {

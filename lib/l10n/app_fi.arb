@@ -390,8 +390,6 @@
   "planBadgePopular": "Suosituin",
   "planFeatureUnlimitedRecords": "Rajoittamattomat tietueet",
   "planFeatureUnlimitedCategories": "Rajoittamattomat mukautetut kategoriat",
-  "planFeatureAdvancedReminderTiming": "Määritä tarkalleen, milloin kukin muistutus saapuu",
-  "planFeatureAutomaticFollowUps": "Lisäksi muistutukset, jotka tihenevät määräajan lähestyessä",
   "editorReminderDaysBefore": "{days} päivää ennen vanhenemista",
   "editorFreeItemsCount": "Ilmaiset kohteet: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "Automaattiset muistutukset",
-  "planFeatureMultipleReminders": "Useita muistutuksia yhdessä tietueessa",
   "planTrialThenMonthly": "Maksutta {days} päivää, sen jälkeen {price}/kk. Peruuta milloin vain.",
   "@planTrialThenMonthly": {
     "placeholders": {

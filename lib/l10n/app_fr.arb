@@ -380,8 +380,6 @@
   "planBadgePopular": "Le plus populaire",
   "planFeatureUnlimitedRecords": "Enregistrements illimités",
   "planFeatureUnlimitedCategories": "Catégories personnalisées illimitées",
-  "planFeatureAdvancedReminderTiming": "Définissez précisément le moment où chaque rappel s'affiche",
-  "planFeatureAutomaticFollowUps": "De plus, les rappels se font plus fréquents à l'approche de la date limite",
   "editorReminderDaysBefore": "{days} jours avant l’expiration",
   "editorFreeItemsCount": "Enregistrements gratuits : {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -558,7 +556,6 @@
     }
   },
   "planFeatureAutoReminders": "Rappels automatiques",
-  "planFeatureMultipleReminders": "Plusieurs rappels sur un même enregistrement",
   "planTrialThenMonthly": "Gratuit pendant {days} jours, puis {price}/mois. Annulez à tout moment.",
   "@planTrialThenMonthly": {
     "placeholders": {

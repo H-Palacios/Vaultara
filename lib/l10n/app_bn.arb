@@ -380,8 +380,6 @@
   "planBadgePopular": "সবচেয়ে জনপ্রিয়",
   "planFeatureUnlimitedRecords": "আনলিমিটেড রেকর্ড",
   "planFeatureUnlimitedCategories": "আনলিমিটেড কাস্টম বিভাগ",
-  "planFeatureAdvancedReminderTiming": "প্রতিটি রিমাইন্ডার ঠিক কখন আসবে তা নির্ধারণ করুন",
-  "planFeatureAutomaticFollowUps": "সাথে থাকছে এমন রিমাইন্ডার যা ডেডলাইন এগিয়ে আসার সাথে সাথে ঘন ঘন আসতে থাকে",
   "editorReminderDaysBefore": "মেয়াদ শেষের {days} দিন আগে",
   "editorFreeItemsCount": "ফ্রি আইটেম: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -553,7 +551,6 @@
     }
   },
   "planFeatureAutoReminders": "স্বয়ংক্রিয় রিমাইন্ডার",
-  "planFeatureMultipleReminders": "একটি রেকর্ডে একাধিক রিমাইন্ডার",
   "planTrialThenMonthly": "{days} দিন ফ্রি, তারপর {price}/মাস। যেকোনো সময় বাতিল করুন।",
   "@planTrialThenMonthly": {
     "placeholders": {

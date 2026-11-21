@@ -390,8 +390,6 @@
   "planBadgePopular": "Најпопуларно",
   "planFeatureUnlimitedRecords": "Неограничени записи",
   "planFeatureUnlimitedCategories": "Неограничени прилагодени категории",
-  "planFeatureAdvancedReminderTiming": "Поставете точно кога да пристигне секој потсетник",
-  "planFeatureAutomaticFollowUps": "Плус потсетници кои стануваат почести како што се приближува крајниот рок",
   "editorReminderDaysBefore": "{days} дена пред истек",
   "editorFreeItemsCount": "Бесплатни ставки: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "Автоматски потсетници",
-  "planFeatureMultipleReminders": "Повеќе потсетници за еден запис",
   "planTrialThenMonthly": "Бесплатно {days} дена, потоа {price}/месечно. Откажете во секое време.",
   "@planTrialThenMonthly": {
     "placeholders": {

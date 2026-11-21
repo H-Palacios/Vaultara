@@ -380,8 +380,6 @@
   "planBadgePopular": "Το πιο δημοφιλές",
   "planFeatureUnlimitedRecords": "Απεριόριστες εγγραφές",
   "planFeatureUnlimitedCategories": "Απεριόριστες προσαρμοσμένες κατηγορίες",
-  "planFeatureAdvancedReminderTiming": "Ορίστε ακριβώς πότε θα φτάνει η κάθε υπενθύμιση",
-  "planFeatureAutomaticFollowUps": "Επιπλέον υπενθυμίσεις που γίνονται πιο συχνές καθώς πλησιάζει η προθεσμία",
   "editorReminderDaysBefore": "{days} ημέρες πριν από τη λήξη",
   "editorFreeItemsCount": "Δωρεάν αντικείμενα: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -553,7 +551,6 @@
     }
   },
   "planFeatureAutoReminders": "Αυτόματες υπενθυμίσεις",
-  "planFeatureMultipleReminders": "Πολλαπλές υπενθυμίσεις σε μία μόνο εγγραφή",
   "planTrialThenMonthly": "Δωρεάν για {days} ημέρες, μετά {price}/μήνα. Ακύρωση ανά πάσα στιγμή.",
   "@planTrialThenMonthly": {
     "placeholders": {

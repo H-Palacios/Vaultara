@@ -1537,18 +1537,6 @@ abstract class AppLocalizations {
   /// **'Unlimited custom categories'**
   String get planFeatureUnlimitedCategories;
 
-  /// No description provided for @planFeatureAdvancedReminderTiming.
-  ///
-  /// In en, this message translates to:
-  /// **'Set exactly when each reminder arrives'**
-  String get planFeatureAdvancedReminderTiming;
-
-  /// No description provided for @planFeatureAutomaticFollowUps.
-  ///
-  /// In en, this message translates to:
-  /// **'Plus reminders that get more frequent as the deadline nears'**
-  String get planFeatureAutomaticFollowUps;
-
   /// No description provided for @editorReminderDaysBefore.
   ///
   /// In en, this message translates to:
@@ -2238,12 +2226,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Automatic reminders'**
   String get planFeatureAutoReminders;
-
-  /// No description provided for @planFeatureMultipleReminders.
-  ///
-  /// In en, this message translates to:
-  /// **'Multiple reminders on a single record'**
-  String get planFeatureMultipleReminders;
 
   /// No description provided for @planTrialThenMonthly.
   ///

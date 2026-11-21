@@ -378,8 +378,6 @@
   "planBadgePopular": "الأكثر رواجًا",
   "planFeatureUnlimitedRecords": "سجلات غير محدودة",
   "planFeatureUnlimitedCategories": "فئات مخصصة غير محدودة",
-  "planFeatureAdvancedReminderTiming": "تحديد وقت وصول كل تذكير بدقة",
-  "planFeatureAutomaticFollowUps": "بالإضافة إلى تذكيرات تزداد تكرارًا مع اقتراب الموعد النهائي",
   "editorReminderOnExpiry": "في تاريخ انتهاء الصلاحية",
   "editorReminderDaysBefore": "قبل انتهاء الصلاحية بـ{days} أيام",
   "editorFreeItemsCount": "العناصر المجانية: {used}/{limit}",
@@ -560,7 +558,6 @@
     }
   },
   "planFeatureAutoReminders": "تذكيرات تلقائية",
-  "planFeatureMultipleReminders": "تذكيرات متعددة للسجل الواحد",
   "planTrialThenMonthly": "مجانًا لمدة {days} أيام، ثم {price}/شهريًا. يمكنك الإلغاء في أي وقت.",
   "@planTrialThenMonthly": {
     "placeholders": {

@@ -710,12 +710,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'קטגוריות מותאמות אישית ללא הגבלה';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'הגדרה מדויקת של מועד הגעת כל תזכורת';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'פלוס תזכורות שהופכות לתכופות יותר ככל שהדדליין מתקרב';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ימים לפני התפוגה';
   }
@@ -1152,9 +1146,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'תזכורות אוטומטיות';
-
-  @override
-  String get planFeatureMultipleReminders => 'תזכורות מרובות ברשומה אחת';
 
   @override
   String planTrialThenMonthly(int days, String price) {

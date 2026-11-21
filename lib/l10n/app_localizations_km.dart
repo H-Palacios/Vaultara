@@ -708,12 +708,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'ប្រភេទផ្ទាល់ខ្លួនគ្មានដែនកំណត់';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'កំណត់ពេលវេលាជាក់លាក់ដែលការរំលឹកនីមួយៗមកដល់';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'បូករួមទាំងការរំលឹកដែលកាន់តែញឹកញាប់ នៅពេលការផុតកំណត់កាន់តែខិតជិតមកដល់';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ថ្ងៃមុនការផុតកំណត់';
   }
@@ -1147,9 +1141,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'ការរំលឹកស្វ័យប្រវត្តិ';
-
-  @override
-  String get planFeatureMultipleReminders => 'ការរំលឹកច្រើនលើកំណត់ត្រាតែមួយ';
 
   @override
   String planTrialThenMonthly(int days, String price) {

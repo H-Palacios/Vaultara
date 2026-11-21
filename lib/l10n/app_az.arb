@@ -213,8 +213,6 @@
   "planBadgePopular": "Ən populyar",
   "planFeatureUnlimitedRecords": "Limitsiz sənəd",
   "planFeatureUnlimitedCategories": "Limitsiz fərdi kateqoriya",
-  "planFeatureAdvancedReminderTiming": "Hər xatırlatmanın vaxtını dəqiq təyin edin",
-  "planFeatureAutomaticFollowUps": "Üstəlik, son tarix yaxınlaşdıqca daha tez-tez gələn xatırlatmalar",
   "editorReminderDaysBefore": "Bitmə tarixindən {days} gün əvvəl",
   "editorFreeItemsCount": "Pulsuz sənədlər: {used}/{limit}",
   "authErrorUserDisabled": "Bu hesab deaktiv edilib.",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "Avtomatik xatırlatmalar",
-  "planFeatureMultipleReminders": "Bir sənəd üçün çoxsaylı xatırlatmalar",
   "planTrialThenMonthly": "{days} gün pulsuz, sonra ayda {price}. İstənilən vaxt ləğv edin.",
   "planTrialThenYearly": "{days} gün pulsuz, sonra ildə {price}. İstənilən vaxt ləğv edin.",
   "plansRestore": "Alışı bərpa et",

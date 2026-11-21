@@ -710,12 +710,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Không giới hạn danh mục tùy chỉnh';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Đặt chính xác thời gian nhận từng nhắc nhở';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Cùng với các nhắc nhở xuất hiện thường xuyên hơn khi đến gần hạn chót';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Trước $days ngày';
   }
@@ -1149,9 +1143,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Lời nhắc tự động';
-
-  @override
-  String get planFeatureMultipleReminders => 'Nhiều nhắc nhở trên một bản ghi duy nhất';
 
   @override
   String planTrialThenMonthly(int days, String price) {

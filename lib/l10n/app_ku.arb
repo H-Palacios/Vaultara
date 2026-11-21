@@ -373,8 +373,6 @@
   "planBadgePopular": "Ya herî populer",
   "planFeatureUnlimitedRecords": "Tomarên bêsînor",
   "planFeatureUnlimitedCategories": "Kategoriyên taybet ên bêsînor",
-  "planFeatureAdvancedReminderTiming": "Tam destnîşan bike ka her bîrxistin kîjan demê tê",
-  "planFeatureAutomaticFollowUps": "Plus bîrxistinên ku her ku dem nêzîk dibe pirtir dibin",
   "editorReminderDaysBefore": "{days} roj berî bidawîbûnê",
   "@editorReminderDaysBefore": {
     "placeholders": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Bîrxistinên otomatîk",
-  "planFeatureMultipleReminders": "Gelek bîrxistin li ser tomareke tenê",
   "planTrialThenMonthly": "{days} rojan belaş, paşê {price}/mehê. Her dem betal bike.",
   "@planTrialThenMonthly": {
     "placeholders": {

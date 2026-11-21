@@ -373,8 +373,6 @@
   "planBadgePopular": "最受欢迎",
   "planFeatureUnlimitedRecords": "无限记录空间",
   "planFeatureUnlimitedCategories": "无限自定义类别",
-  "planFeatureAdvancedReminderTiming": "精确设定每条提醒的送达时间",
-  "planFeatureAutomaticFollowUps": "此外，临近截止日期时提醒会越来越频繁",
   "editorReminderDaysBefore": "到期前 {days} 天",
   "editorFreeItemsCount": "免费记录：{used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "自动提醒",
-  "planFeatureMultipleReminders": "单条记录可设置多重提醒",
   "planTrialThenMonthly": "免费试用 {days} 天，随后 {price}/月。随时可取消。",
   "@planTrialThenMonthly": {
     "placeholders": {

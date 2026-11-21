@@ -710,12 +710,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'असीमित कस्टम श्रेणियाँ';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'तय करें कि हर रिमाइंडर ठीक कब पहुंचेगा';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'साथ ही ऐसे रिमाइंडर्स जो डेडलाइन नज़दीक आने पर और बार-बार आते हैं';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'समाप्ति से $days दिन पहले';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'अपने आप रिमाइंडर';
-
-  @override
-  String get planFeatureMultipleReminders => 'एक ही रिकॉर्ड पर कई रिमाइंडर्स';
 
   @override
   String planTrialThenMonthly(int days, String price) {

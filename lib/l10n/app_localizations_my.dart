@@ -708,12 +708,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'အကန့်အသတ်မဲ့ စိတ်ကြိုက် အမျိုးအစားများ';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'သတိပေးချက်တစ်ခုစီ ရောက်လာမည့်အချိန်ကို အတိအကျ သတ်မှတ်ပါ';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'သတ်မှတ်ရက် နီးလာသည်နှင့်အမျှ ပိုမိုမကြာခဏ ရောက်လာသော သတိပေးချက်များလည်း ပါဝင်သည်';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'သက်တမ်းကုန်ရက် မတိုင်မီ $days ရက်';
   }
@@ -1147,9 +1141,6 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'အလိုအလျောက် သတိပေးချက်များ';
-
-  @override
-  String get planFeatureMultipleReminders => 'မှတ်တမ်းတစ်ခုတည်းတွင် သတိပေးချက် အများအပြား';
 
   @override
   String planTrialThenMonthly(int days, String price) {

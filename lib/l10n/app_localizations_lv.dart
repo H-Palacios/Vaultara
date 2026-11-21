@@ -710,12 +710,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Neierobežots pielāgotu kategoriju skaits';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Iestatiet precīzu katra atgādinājuma saņemšanas laiku';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Kā arī atgādinājumi, kas kļūst biežāki, tuvojoties termiņam';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dienas pirms derīguma';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Automātiski atgādinājumi';
-
-  @override
-  String get planFeatureMultipleReminders => 'Vairāki atgādinājumi vienam ierakstam';
 
   @override
   String planTrialThenMonthly(int days, String price) {

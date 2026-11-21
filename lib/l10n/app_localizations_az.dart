@@ -710,12 +710,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Limitsiz fərdi kateqoriya';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Hər xatırlatmanın vaxtını dəqiq təyin edin';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Üstəlik, son tarix yaxınlaşdıqca daha tez-tez gələn xatırlatmalar';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Bitmə tarixindən $days gün əvvəl';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Avtomatik xatırlatmalar';
-
-  @override
-  String get planFeatureMultipleReminders => 'Bir sənəd üçün çoxsaylı xatırlatmalar';
 
   @override
   String planTrialThenMonthly(int days, String price) {

@@ -389,8 +389,6 @@
   "planBadgePopular": "Найпопулярніший",
   "planFeatureUnlimitedRecords": "Безлімітні записи",
   "planFeatureUnlimitedCategories": "Безлімітні власні категорії",
-  "planFeatureAdvancedReminderTiming": "Налаштування точного часу отримання кожного нагадування",
-  "planFeatureAutomaticFollowUps": "А також нагадування, які стають частішими в міру наближення дедлайну",
   "editorReminderDaysBefore": "За {days} днів до закінчення",
   "editorFreeItemsCount": "Безкоштовні елементи: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -563,7 +561,6 @@
     }
   },
   "planFeatureAutoReminders": "Автоматичні нагадування",
-  "planFeatureMultipleReminders": "Кілька нагадувань для одного запису",
   "planTrialThenMonthly": "Безкоштовно на {days} днів, потім {price}/міс. Скасування в будь-який час.",
   "@planTrialThenMonthly": {
     "placeholders": {

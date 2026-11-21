@@ -389,8 +389,6 @@
   "planBadgePopular": "ยอดนิยม",
   "planFeatureUnlimitedRecords": "เพิ่มรายการได้ไม่จำกัด",
   "planFeatureUnlimitedCategories": "หมวดหมู่ที่กำหนดเองได้ไม่จำกัด",
-  "planFeatureAdvancedReminderTiming": "กำหนดเวลาที่แน่นอนสำหรับการแจ้งเตือนแต่ละครั้ง",
-  "planFeatureAutomaticFollowUps": "พร้อมระบบแจ้งเตือนที่จะถี่ขึ้นเมื่อใกล้ถึงวันครบกำหนด",
   "editorReminderDaysBefore": "ก่อนหมดอายุ {days} วัน",
   "editorFreeItemsCount": "รายการฟรี: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -563,7 +561,6 @@
     }
   },
   "planFeatureAutoReminders": "การแจ้งเตือนอัตโนมัติ",
-  "planFeatureMultipleReminders": "ตั้งการแจ้งเตือนได้หลายครั้งในหนึ่งรายการ",
   "planTrialThenMonthly": "ฟรี {days} วัน จากนั้น {price}/เดือน ยกเลิกได้ตลอดเวลา",
   "@planTrialThenMonthly": {
     "placeholders": {

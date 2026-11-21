@@ -710,12 +710,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'আনলিমিটেড কাস্টম বিভাগ';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'প্রতিটি রিমাইন্ডার ঠিক কখন আসবে তা নির্ধারণ করুন';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'সাথে থাকছে এমন রিমাইন্ডার যা ডেডলাইন এগিয়ে আসার সাথে সাথে ঘন ঘন আসতে থাকে';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'মেয়াদ শেষের $days দিন আগে';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'স্বয়ংক্রিয় রিমাইন্ডার';
-
-  @override
-  String get planFeatureMultipleReminders => 'একটি রেকর্ডে একাধিক রিমাইন্ডার';
 
   @override
   String planTrialThenMonthly(int days, String price) {

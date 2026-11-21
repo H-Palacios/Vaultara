@@ -213,8 +213,6 @@
   "planBadgePopular": "સૌથી લોકપ્રિય",
   "planFeatureUnlimitedRecords": "અમર્યાદિત રેકોર્ડ",
   "planFeatureUnlimitedCategories": "અમર્યાદિત કસ્ટમ કૅટેગરી",
-  "planFeatureAdvancedReminderTiming": "દરેક રિમાઇન્ડર ક્યારે આવે તે ચોક્કસ સેટ કરો",
-  "planFeatureAutomaticFollowUps": "ઉપરાંત, ડેડલાઇન નજીક આવે તેમ વધુ વાર આવતા રિમાઇન્ડર",
   "editorReminderDaysBefore": "સમાપ્તિના {days} દિવસ પહેલાં",
   "editorFreeItemsCount": "મફત રેકોર્ડ: {used}/{limit}",
   "authErrorUserDisabled": "આ એકાઉન્ટ બંધ કરવામાં આવ્યું છે.",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "આપમેળે રિમાઇન્ડર",
-  "planFeatureMultipleReminders": "એક જ રેકોર્ડ પર એકથી વધુ રિમાઇન્ડર",
   "planTrialThenMonthly": "{days} દિવસ મફત, પછી {price}/મહિને. ગમે ત્યારે રદ કરો.",
   "planTrialThenYearly": "{days} દિવસ મફત, પછી {price}/વર્ષે. ગમે ત્યારે રદ કરો.",
   "plansRestore": "ખરીદી રિસ્ટોર કરો",

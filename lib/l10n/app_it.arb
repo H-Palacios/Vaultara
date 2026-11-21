@@ -373,8 +373,6 @@
   "planBadgePopular": "Più popolare",
   "planFeatureUnlimitedRecords": "Record illimitati",
   "planFeatureUnlimitedCategories": "Categorie personalizzate illimitate",
-  "planFeatureAdvancedReminderTiming": "Imposta esattamente quando arriva ogni promemoria",
-  "planFeatureAutomaticFollowUps": "Inoltre promemoria che diventano più frequenti all'avvicinarsi della scadenza",
   "editorReminderDaysBefore": "{days} giorni prima della scadenza",
   "editorFreeItemsCount": "Record gratuiti: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -551,7 +549,6 @@
     }
   },
   "planFeatureAutoReminders": "Promemoria automatici",
-  "planFeatureMultipleReminders": "Promemoria multipli su un singolo record",
   "planTrialThenMonthly": "Gratis per {days} giorni, poi {price}/mese. Annulla in qualsiasi momento.",
   "@planTrialThenMonthly": {
     "placeholders": {

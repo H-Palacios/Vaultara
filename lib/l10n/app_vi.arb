@@ -373,8 +373,6 @@
   "planBadgePopular": "Phổ biến nhất",
   "planFeatureUnlimitedRecords": "Không giới hạn bản ghi",
   "planFeatureUnlimitedCategories": "Không giới hạn danh mục tùy chỉnh",
-  "planFeatureAdvancedReminderTiming": "Đặt chính xác thời gian nhận từng nhắc nhở",
-  "planFeatureAutomaticFollowUps": "Cùng với các nhắc nhở xuất hiện thường xuyên hơn khi đến gần hạn chót",
   "editorReminderDaysBefore": "Trước {days} ngày",
   "editorFreeItemsCount": "Bản ghi miễn phí: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Lời nhắc tự động",
-  "planFeatureMultipleReminders": "Nhiều nhắc nhở trên một bản ghi duy nhất",
   "planTrialThenMonthly": "Miễn phí trong {days} ngày, sau đó {price}/tháng. Hủy bất kỳ lúc nào.",
   "@planTrialThenMonthly": {
     "placeholders": {

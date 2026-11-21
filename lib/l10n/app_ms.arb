@@ -373,8 +373,6 @@
   "planBadgePopular": "Paling popular",
   "planFeatureUnlimitedRecords": "Rekod tanpa had",
   "planFeatureUnlimitedCategories": "Kategori tersuai tanpa had",
-  "planFeatureAdvancedReminderTiming": "Tetapkan masa yang tepat untuk setiap peringatan tiba",
-  "planFeatureAutomaticFollowUps": "Ditambah peringatan yang menjadi lebih kerap apabila tarikh akhir semakin hampir",
   "editorReminderDaysBefore": "{days} hari sebelum luput",
   "editorFreeItemsCount": "Rekod percuma: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Peringatan automatik",
-  "planFeatureMultipleReminders": "Beberapa peringatan pada satu rekod",
   "planTrialThenMonthly": "Percuma selama {days} hari, kemudian {price}/bulan. Batalkan bila-bila masa.",
   "@planTrialThenMonthly": {
     "placeholders": {

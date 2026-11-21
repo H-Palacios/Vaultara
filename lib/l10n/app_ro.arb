@@ -373,8 +373,6 @@
   "planBadgePopular": "Cel mai popular",
   "planFeatureUnlimitedRecords": "Înregistrări nelimitate",
   "planFeatureUnlimitedCategories": "Categorii personalizate nelimitate",
-  "planFeatureAdvancedReminderTiming": "Setează exact momentul în care sosește fiecare memento",
-  "planFeatureAutomaticFollowUps": "În plus, mementouri care devin mai frecvente pe măsură ce termenul limită se apropie",
   "editorReminderDaysBefore": "{days} zile înainte de expirare",
   "editorFreeItemsCount": "Înregistrări gratuite: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Mementouri automate",
-  "planFeatureMultipleReminders": "Mementouri multiple pentru o singură înregistrare",
   "planTrialThenMonthly": "Gratuit timp de {days} zile, apoi {price}/lună. Anulează oricând.",
   "@planTrialThenMonthly": {
     "placeholders": {

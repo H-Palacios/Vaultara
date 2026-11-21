@@ -213,8 +213,6 @@
   "planBadgePopular": "सर्वाधिक लोकप्रिय",
   "planFeatureUnlimitedRecords": "अमर्याद नोंदी",
   "planFeatureUnlimitedCategories": "अमर्याद कस्टम श्रेण्या",
-  "planFeatureAdvancedReminderTiming": "प्रत्येक रिमाइंडर नेमका कधी यावा ते सेट करा",
-  "planFeatureAutomaticFollowUps": "तसेच अंतिम तारीख जवळ येईल तसे अधिक वारंवार येणारे रिमाइंडर",
   "editorReminderDaysBefore": "मुदतसमाप्तीच्या {days} दिवस आधी",
   "editorFreeItemsCount": "विनामूल्य नोंदी: {used}/{limit}",
   "authErrorUserDisabled": "हे खाते अक्षम केले आहे.",
@@ -337,7 +335,6 @@
     }
   },
   "planFeatureAutoReminders": "आपोआप रिमाइंडर",
-  "planFeatureMultipleReminders": "एकाच नोंदीवर एकाधिक रिमाइंडर",
   "planTrialThenMonthly": "पहिले {days} दिवस विनामूल्य, त्यानंतर {price}/महिना. कधीही रद्द करा.",
   "planTrialThenYearly": "पहिले {days} दिवस विनामूल्य, त्यानंतर {price}/वर्ष. कधीही रद्द करा.",
   "plansRestore": "खरेदी पुनर्संचयित करा",

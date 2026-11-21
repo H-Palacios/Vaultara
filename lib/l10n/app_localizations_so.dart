@@ -710,12 +710,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Qaybood oo gaar ah oo aan xadidnayn';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Deji waqtiga saxda ah ee xusuusiyeyaal kasta uu imanayo';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Oo lagu daray xusuusiyeyaal sii badanaya marka waqtiga kama dambaysta ah soo dhowaado';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days maalmood ka hor dhicista';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Xusuusin toos ah';
-
-  @override
-  String get planFeatureMultipleReminders => 'Xusuusiyeyaal badan oo ku dhex jira hal diiwaan';
 
   @override
   String planTrialThenMonthly(int days, String price) {

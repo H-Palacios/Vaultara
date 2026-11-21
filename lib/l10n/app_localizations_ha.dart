@@ -710,12 +710,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get planFeatureUnlimitedCategories => 'Rukunoni na musamman marasa iyaka';
 
   @override
-  String get planFeatureAdvancedReminderTiming => 'Saita daidai lokacin da kowace tunatarwa ke fitowa';
-
-  @override
-  String get planFeatureAutomaticFollowUps => 'Da kuma tunatarwa waɗanda ke ƙaruwa yayin da lokacin ƙarshe ke gabatowa';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days kwanaki kafin ƙarewa';
   }
@@ -1150,9 +1144,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get planFeatureAutoReminders => 'Tunatarwa ta atomatik';
-
-  @override
-  String get planFeatureMultipleReminders => 'Tunatarwa da yawa akan rikodi guda';
 
   @override
   String planTrialThenMonthly(int days, String price) {

@@ -373,8 +373,6 @@
   "planBadgePopular": "가장 인기 있음",
   "planFeatureUnlimitedRecords": "무제한 기록",
   "planFeatureUnlimitedCategories": "무제한 맞춤 카테고리",
-  "planFeatureAdvancedReminderTiming": "각 알림가 도착할 정확한 시간 설정",
-  "planFeatureAutomaticFollowUps": "마감일이 다가올수록 알림 빈도가 높아지는 추가 알림 기능",
   "editorReminderDaysBefore": "만료 {days}일 전",
   "editorFreeItemsCount": "무료 기록: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "자동 알림",
-  "planFeatureMultipleReminders": "하나의 기록에 여러 개의 알림 설정",
   "planTrialThenMonthly": "{days}일간 무료 체험 후 {price}/월. 언제든지 취소 가능.",
   "@planTrialThenMonthly": {
     "placeholders": {

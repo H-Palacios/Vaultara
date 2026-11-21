@@ -373,8 +373,6 @@
   "planBadgePopular": "Najpopularniejszy",
   "planFeatureUnlimitedRecords": "Nieograniczona liczba rekordów",
   "planFeatureUnlimitedCategories": "Nieograniczona liczba własnych kategorii",
-  "planFeatureAdvancedReminderTiming": "Ustaw dokładny czas dostarczenia każdego przypomnienia",
-  "planFeatureAutomaticFollowUps": "Dodatkowo przypomnienia, które stają się częstsze w miarę zbliżania się terminu",
   "editorReminderDaysBefore": "{days} dni przed wygaśnięciem",
   "editorFreeItemsCount": "Darmowe rekordy: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "Automatyczne przypomnienia",
-  "planFeatureMultipleReminders": "Wiele przypomnień dla jednego rekordu",
   "planTrialThenMonthly": "Za darmo przez {days} dni, potem {price}/mies. Anuluj w dowolnym momencie.",
   "@planTrialThenMonthly": {
     "placeholders": {

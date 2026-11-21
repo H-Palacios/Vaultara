@@ -373,8 +373,6 @@
   "planBadgePopular": "تر ټولو مشهور",
   "planFeatureUnlimitedRecords": "نامحدود ریکارډونه",
   "planFeatureUnlimitedCategories": "نامحدود دودیزې کټګورۍ",
-  "planFeatureAdvancedReminderTiming": "په دقیق ډول وټاکئ چې هر یادونه کله راځي",
-  "planFeatureAutomaticFollowUps": "سربېره پر دې، هغه یادونې چې د پای نېټې په نږدې کېدو سره ډېرېږي",
   "editorReminderDaysBefore": "{days} ورځې د پای څخه مخکې",
   "editorFreeItemsCount": "وړیا ریکارډونه: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -546,7 +544,6 @@
     }
   },
   "planFeatureAutoReminders": "اتومات یادونې",
-  "planFeatureMultipleReminders": "په یو واحد ریکارډ کې څو یادونې",
   "planTrialThenMonthly": "د {days} ورځو لپاره وړیا، بیا {price}/میاشتنی. هر وخت لغوه کیدی شي.",
   "@planTrialThenMonthly": {
     "placeholders": {

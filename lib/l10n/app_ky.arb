@@ -390,8 +390,6 @@
   "planBadgePopular": "Эң популярдуу",
   "planFeatureUnlimitedRecords": "Чектөөсүз жазуулар",
   "planFeatureUnlimitedCategories": "Чектөөсүз ыңгайлаштырылган категориялар",
-  "planFeatureAdvancedReminderTiming": "Ар бир эскертүүнүн келүү убактысын так орнотуу",
-  "planFeatureAutomaticFollowUps": "Андан сырткары, мөөнөт жакындаган сайын бат-баттан келе турган эскертүүлөр",
   "editorReminderDaysBefore": "Мөөнөткө {days} күн калганда",
   "editorFreeItemsCount": "Акысыз элементтер: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "Автоматтык эскертүүлөр",
-  "planFeatureMultipleReminders": "Бир жазууга бир нече эскертүү коюу",
   "planTrialThenMonthly": "{days} күн акысыз, андан кийин {price}/айына. Каалаган убакта баш тартууга болот.",
   "@planTrialThenMonthly": {
     "placeholders": {

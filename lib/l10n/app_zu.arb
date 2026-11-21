@@ -365,8 +365,6 @@
   "planBadgePopular": "Edume kakhulu",
   "planFeatureUnlimitedRecords": "Amarekhodi angenamkhawulo",
   "planFeatureUnlimitedCategories": "Izigaba ezenziwe ngezifiso ezinganamkhawulo",
-  "planFeatureAdvancedReminderTiming": "Setha kahle ukuthi isikhumbuzo ngasinye sifika nini",
-  "planFeatureAutomaticFollowUps": "Kuhlanganise nezikhumbuzo ezifika njalo njengoba usuku lokugcina lusondela",
   "editorReminderDaysBefore": "Izinsuku {days} ngaphambi kokuphela",
   "editorFreeItemsCount": "Amarekhodi amahhala: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -538,7 +536,6 @@
     }
   },
   "planFeatureAutoReminders": "Izikhumbuzo ezizenzakalelayo",
-  "planFeatureMultipleReminders": "Izikhumbuzo eziningi erekhodini elilodwa",
   "planTrialThenMonthly": "Mahhala izinsuku ezingu-{days}, bese kuba yi-{price}/ngenyanga. Khansela noma nini.",
   "@planTrialThenMonthly": {
     "placeholders": {

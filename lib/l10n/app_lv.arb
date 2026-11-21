@@ -390,8 +390,6 @@
   "planBadgePopular": "Populārākais",
   "planFeatureUnlimitedRecords": "Neierobežots ierakstu skaits",
   "planFeatureUnlimitedCategories": "Neierobežots pielāgotu kategoriju skaits",
-  "planFeatureAdvancedReminderTiming": "Iestatiet precīzu katra atgādinājuma saņemšanas laiku",
-  "planFeatureAutomaticFollowUps": "Kā arī atgādinājumi, kas kļūst biežāki, tuvojoties termiņam",
   "editorReminderDaysBefore": "{days} dienas pirms derīguma",
   "editorFreeItemsCount": "Bezmaksas vienumi: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -564,7 +562,6 @@
     }
   },
   "planFeatureAutoReminders": "Automātiski atgādinājumi",
-  "planFeatureMultipleReminders": "Vairāki atgādinājumi vienam ierakstam",
   "planTrialThenMonthly": "Bezmaksas {days} dienas, pēc tam {price}/mēn. Atceliet jebkurā laikā.",
   "@planTrialThenMonthly": {
     "placeholders": {
