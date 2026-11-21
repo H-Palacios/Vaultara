@@ -4,6 +4,8 @@ import 'package:intl/intl.dart' hide TextDirection;
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/core/layout/two_columns.dart';
+import 'package:vaultara/core/layout/wide_layout.dart';
 import 'package:vaultara/core/services/records_live_sync.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/costs/logic/cost_forecast.dart';
@@ -282,6 +284,7 @@ class _CalendarScreenState extends State<CalendarScreen>
     final next = index.nextAfter(_selectedDay ?? _today);
     final animate = !MediaQuery.of(context).disableAnimations;
     final selectedDay = _selectedDay;
+    final wide = WideLayout.of(context);
 
     final header = Row(
       children: [
@@ -325,7 +328,7 @@ class _CalendarScreenState extends State<CalendarScreen>
       ],
     );
 
-    final monthView = <Widget>[
+    final monthGrid = <Widget>[
       GestureDetector(
         behavior: HitTestBehavior.translucent,
         onHorizontalDragEnd: (details) {
@@ -394,7 +397,9 @@ class _CalendarScreenState extends State<CalendarScreen>
       ),
       const SizedBox(height: 14),
       _monthSummary(index, loc, localeTag),
-      const SizedBox(height: 14),
+    ];
+
+    final dayView = <Widget>[
       if (selectedDay != null) ...[
         Text(
           CalendarDayText.dayLabel(
@@ -428,9 +433,19 @@ class _CalendarScreenState extends State<CalendarScreen>
                   value: person,
                   onChanged: (value) => setState(() => _person = value),
                 ),
-                if (_view == _CalendarView.month)
-                  ...monthView
-                else
+                // On a 10-inch tablet held sideways the month sits on the
+                // left and the chosen day's records on the right.
+                if (_view == _CalendarView.month && wide)
+                  TwoColumns(
+                    columnAlignment: CrossAxisAlignment.start,
+                    left: monthGrid,
+                    right: dayView,
+                  )
+                else if (_view == _CalendarView.month) ...[
+                  ...monthGrid,
+                  const SizedBox(height: 14),
+                  ...dayView,
+                ] else
                   CalendarListView(
                     index: index,
                     today: _today,
