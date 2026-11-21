@@ -71,5 +71,31 @@ void main() {
       });
       expect(after?.settingOn, isFalse);
     });
+
+    test('share cards need a direction and unknown places never clear', () {
+      final share = AssistantAction.fromMap(<String, Object?>{
+        'type': 'share',
+        'recordId': 'r5',
+        'share': false,
+      });
+      expect(share?.type, AssistantActionType.share);
+      expect(share?.shareOn, isFalse);
+      expect(
+        AssistantAction.fromMap(<String, Object?>{
+          'type': 'share',
+          'recordId': 'r5',
+        }),
+        isNull,
+      );
+      AssistantValue<String>? place(Object? value) =>
+          AssistantAction.fromMap(<String, Object?>{
+            'type': 'edit',
+            'recordId': 'r6',
+            'changes': <String, Object?>{'keptIn': value, 'notes': 'x'},
+          })?.changes?.keptIn;
+      expect(place('bag')?.value, 'bag');
+      expect(place(null), isNotNull);
+      expect(place('garage'), isNull);
+    });
   });
 }
