@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/theme/app_brand.dart';
+import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 
 class BiometricPanel extends StatelessWidget {
   final AppLocalizations loc;
@@ -49,6 +50,7 @@ class BiometricPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final look = AuthLook.of(context);
     return Column(
       children: [
         Padding(
@@ -57,9 +59,9 @@ class BiometricPanel extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 20),
             decoration: BoxDecoration(
-              color: const Color(0xFFF1F3F8),
+              color: look.tabTrack,
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: const Color(0xFFE2E6EF)),
+              border: Border.all(color: look.tabEdge),
             ),
             child: Column(
               children: [
@@ -83,8 +85,8 @@ class BiometricPanel extends StatelessWidget {
                 Text(
                   loc.biometricAuthReason,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: Color(0xFF0A0E1A),
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.onSurface,
                     fontWeight: FontWeight.w600,
                   ),
                 ),

@@ -7,7 +7,6 @@ import 'package:flutter/services.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/theme/app_brand.dart';
-import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/features/auth/data/enums/verify_code_result.dart';
 import 'package:vaultara/features/auth/services/email_app_launcher.dart';
 import 'package:vaultara/features/auth/services/email_verification_service.dart';
@@ -16,6 +15,7 @@ import 'package:vaultara/features/auth/services/verification_link_service.dart';
 import 'package:vaultara/features/auth/view/widget/branded_background.dart';
 import 'package:vaultara/features/auth/view/widget/discard_account_dialog.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 
 class VerifyEmailScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
@@ -40,9 +40,6 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
     with WidgetsBindingObserver {
   static const int _resendCooldownSeconds = 60;
 
-  static const Color _fieldFill = Colors.white;
-  static const Color _fieldBorder = Color(0xFFD3DAE5);
-  static const Color _fieldHint = Color(0xFFB6BDCB);
   static const Color _errorOnNavy = Color(0xFFFF8A80);
 
   final TextEditingController _codeController = TextEditingController();
@@ -299,9 +296,9 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
     return AppSheet.show<EmailInboxApp>(
       context: context,
       showDragHandle: true,
-      backgroundColor: Colors.white,
+      backgroundColor: AuthLook.of(context).card,
       builder: (sheetContext) => Theme(
-        data: AppThemes.light(),
+        data: AuthLook.of(context).theme,
         child: SafeArea(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -403,7 +400,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
         _onLeaveRequested();
       },
       child: Theme(
-        data: AppThemes.light(),
+        data: AuthLook.of(context).theme,
         child: Scaffold(
           backgroundColor: AppBrand.navy,
           body: Stack(
@@ -475,20 +472,20 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
                               LengthLimitingTextInputFormatter(6),
                             ],
                             textAlign: TextAlign.center,
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 28,
                               fontWeight: FontWeight.w700,
                               letterSpacing: 12,
-                              color: AppBrand.navy,
+                              color: AuthLook.of(context).codeText,
                             ),
                             decoration: InputDecoration(
                               counterText: '',
                               hintText: '000000',
-                              hintStyle: const TextStyle(
+                              hintStyle: TextStyle(
                                 fontSize: 28,
                                 fontWeight: FontWeight.w700,
                                 letterSpacing: 12,
-                                color: _fieldHint,
+                                color: AuthLook.of(context).codeHint,
                               ),
                               errorText: _codeError,
                               errorMaxLines: 3,
@@ -498,12 +495,16 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
                                 color: _errorOnNavy,
                               ),
                               filled: true,
-                              fillColor: _fieldFill,
+                              fillColor: AuthLook.of(context).codeFill,
                               contentPadding: const EdgeInsets.symmetric(
                                 vertical: 18,
                               ),
-                              enabledBorder: _codeBorder(_fieldBorder),
-                              disabledBorder: _codeBorder(_fieldBorder),
+                              enabledBorder: _codeBorder(
+                                AuthLook.of(context).codeEdge,
+                              ),
+                              disabledBorder: _codeBorder(
+                                AuthLook.of(context).codeEdge,
+                              ),
                               focusedBorder: _codeBorder(
                                 AppBrand.blue,
                                 width: 2,

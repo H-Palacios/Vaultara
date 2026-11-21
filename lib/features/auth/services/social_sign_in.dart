@@ -44,7 +44,6 @@ class SocialSignIn {
       credential = await MfaChallenge.run(
         () => FirebaseAuth.instance.signInWithProvider(_providerFor(provider)),
         context: context,
-        light: true,
       );
     } on FirebaseAuthException catch (e) {
       return outcomeFor(e.code);

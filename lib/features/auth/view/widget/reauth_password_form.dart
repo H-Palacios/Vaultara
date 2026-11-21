@@ -122,23 +122,26 @@ class _ReauthPasswordFormState extends State<ReauthPasswordForm> {
 
   Widget _providerButton(AppLocalizations loc, SocialProvider provider) {
     final apple = provider == SocialProvider.apple;
+    final look = SocialButtonStyle.of(context, provider);
     return FilledButton.icon(
       style: FilledButton.styleFrom(
-        backgroundColor: apple ? Colors.black : Colors.white,
-        foregroundColor: apple ? Colors.white : Colors.black87,
-        side: apple ? null : const BorderSide(color: Color(0xFFDADCE0)),
+        backgroundColor: look.background,
+        foregroundColor: look.foreground,
+        side: look.border == null ? null : BorderSide(color: look.border!),
         minimumSize: const Size.fromHeight(48),
+        textStyle: SocialButtonStyle.label,
       ),
       onPressed: _busy ? null : () => _submitWithProvider(provider),
       icon: _busy
-          ? const SizedBox(
+          ? SizedBox(
               width: 18,
               height: 18,
-              child: CircularProgressIndicator(strokeWidth: 2),
+              child: CircularProgressIndicator(
+                strokeWidth: 2,
+                color: look.foreground,
+              ),
             )
-          : apple
-          ? const SocialLogo(SocialProvider.apple, color: Colors.white)
-          : const SocialLogo(SocialProvider.google),
+          : SocialLogo(provider, color: look.logoTint),
       label: Text(apple ? loc.socialContinueApple : loc.socialContinueGoogle),
     );
   }

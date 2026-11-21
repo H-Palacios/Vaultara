@@ -7,6 +7,7 @@ import 'package:vaultara/features/auth/view/login_screen.dart';
 import 'package:vaultara/features/auth/view/register_screen.dart';
 import 'package:vaultara/features/auth/view/widget/branded_background.dart';
 import 'package:vaultara/features/auth/view/widget/auth_brand_header.dart';
+import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 
 class AuthGatewayScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
@@ -48,6 +49,7 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final look = AuthLook.of(context);
 
     final screenHeight = MediaQuery.of(context).size.height;
     final formHeight = (screenHeight * 0.55).clamp(380.0, 520.0);
@@ -79,14 +81,13 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
                         ),
                         const SizedBox(height: 22),
                         Card(
-                          color: Colors.white,
+                          color: look.card,
+                          surfaceTintColor: Colors.transparent,
                           elevation: 10,
                           shadowColor: Colors.black.withValues(alpha: 0.5),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18),
-                            side: BorderSide(
-                              color: AppBrand.blue.withValues(alpha: 0.12),
-                            ),
+                            side: BorderSide(color: look.cardEdge),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.fromLTRB(16, 14, 16, 18),
@@ -136,14 +137,15 @@ class _TabSelector extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final look = AuthLook.of(context);
     return SizedBox(
       width: double.infinity,
       child: Container(
         padding: const EdgeInsets.all(4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(999),
-          color: const Color(0xFFF1F3F8),
-          border: Border.all(color: const Color(0xFFE2E6EF)),
+          color: look.tabTrack,
+          border: Border.all(color: look.tabEdge),
         ),
         child: TabBar(
           controller: controller,
@@ -154,7 +156,7 @@ class _TabSelector extends StatelessWidget {
             borderRadius: BorderRadius.circular(999),
           ),
           labelColor: Colors.white,
-          unselectedLabelColor: const Color(0xFF0A0E1A).withValues(alpha: 0.7),
+          unselectedLabelColor: look.tabIdleText,
           tabs: [
             SizedBox(height: 44, child: Center(child: Text(loc.tabSignUp))),
             SizedBox(height: 44, child: Center(child: Text(loc.tabSignIn))),

@@ -32,6 +32,56 @@ class SocialLogo extends StatelessWidget {
   }
 }
 
+/// Button colours from the Google and Apple sign-in guidelines: Google's
+/// light or dark button, and Apple's black button in light mode or white
+/// button in dark mode, so the button never disappears into the screen.
+class SocialButtonStyle {
+  final Color background;
+  final Color foreground;
+  final Color? border;
+  final Color? logoTint;
+
+  const SocialButtonStyle._(
+    this.background,
+    this.foreground,
+    this.border,
+    this.logoTint,
+  );
+
+  factory SocialButtonStyle.of(BuildContext context, SocialProvider provider) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    if (provider == SocialProvider.apple) {
+      return dark
+          ? const SocialButtonStyle._(Colors.white, Colors.black, null, null)
+          : const SocialButtonStyle._(
+              Colors.black,
+              Colors.white,
+              null,
+              Colors.white,
+            );
+    }
+    return dark
+        ? const SocialButtonStyle._(
+            Color(0xFF131314),
+            Color(0xFFE3E3E3),
+            Color(0xFF8E918F),
+            null,
+          )
+        : const SocialButtonStyle._(
+            Colors.white,
+            Color(0xFF1F1F1F),
+            Color(0xFF747775),
+            null,
+          );
+  }
+
+  /// Medium weight at 14, as both guidelines use.
+  static const TextStyle label = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+}
+
 /// "Continue with Google" and, on iPhone and iPad, "Continue with Apple",
 /// followed by an "or" divider. A tap signs in or creates the account in one
 /// step, with no password and no question about whether the email exists.
@@ -83,14 +133,12 @@ class _SocialSignInButtonsState extends State<SocialSignInButtons> {
     ActionFeedbackSnackbar.showError(context, message);
   }
 
-  Widget _button({
-    required SocialProvider provider,
-    required Widget icon,
-    required String label,
-    required Color background,
-    required Color foreground,
-    Color? border,
-  }) {
+  Widget _button({required SocialProvider provider, required String label}) {
+    final look = SocialButtonStyle.of(context, provider);
+    final background = look.background;
+    final foreground = look.foreground;
+    final border = look.border;
+    final icon = SocialLogo(provider, color: look.logoTint);
     final busy = _busy == provider;
     return SizedBox(
       width: double.infinity,
@@ -103,7 +151,7 @@ class _SocialSignInButtonsState extends State<SocialSignInButtons> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(999),
           ),
-          textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
+          textStyle: SocialButtonStyle.label,
         ),
         onPressed: widget.enabled && _busy == null ? () => _go(provider) : null,
         child: busy
@@ -136,20 +184,13 @@ class _SocialSignInButtonsState extends State<SocialSignInButtons> {
       children: [
         _button(
           provider: SocialProvider.google,
-          icon: const SocialLogo(SocialProvider.google),
           label: loc.socialContinueGoogle,
-          background: Colors.white,
-          foreground: const Color(0xFF1F1F1F),
-          border: const Color(0xFFDADCE0),
         ),
         if (SocialSignInButtons.showsApple) ...[
           const SizedBox(height: 10),
           _button(
             provider: SocialProvider.apple,
-            icon: const SocialLogo(SocialProvider.apple, color: Colors.white),
             label: loc.socialContinueApple,
-            background: Colors.black,
-            foreground: Colors.white,
           ),
         ],
         Padding(

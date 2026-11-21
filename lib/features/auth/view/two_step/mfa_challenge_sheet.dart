@@ -5,7 +5,6 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/core/navigation/navigator_key.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
-import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/features/auth/services/backup_code_service.dart';
 import 'package:vaultara/features/auth/services/two_step_service.dart';
 import 'package:vaultara/features/support/services/support_email_service.dart';
@@ -27,7 +26,6 @@ class MfaChallenge {
   static Future<UserCredential> run(
     Future<UserCredential> Function() action, {
     BuildContext? context,
-    bool light = false,
     String? email,
   }) async {
     try {
@@ -44,13 +42,11 @@ class MfaChallenge {
         showDragHandle: true,
         isDismissible: false,
         enableDrag: false,
-        backgroundColor: light ? Colors.white : null,
         builder: (_) {
-          final sheet = MfaChallengeSheet(
+          return MfaChallengeSheet(
             resolver: e.resolver,
             email: account.isEmpty ? null : account,
           );
-          return light ? Theme(data: AppThemes.light(), child: sheet) : sheet;
         },
       );
       if (result is UserCredential) return result;

@@ -82,7 +82,11 @@ class PasswordRuleChecklist extends StatelessWidget {
   final String password;
   final bool showErrors;
 
-  static const Color _metColour = Color(0xFF2E7D32);
+  /// Green for a rule that is met, lighter on the dark card so it stays
+  /// easy to read.
+  static Color _met(ColorScheme scheme) => scheme.brightness == Brightness.dark
+      ? const Color(0xFF66BB6A)
+      : const Color(0xFF2E7D32);
 
   const PasswordRuleChecklist({
     super.key,
@@ -110,10 +114,10 @@ class PasswordRuleChecklist extends StatelessWidget {
                       : Icons.circle_outlined,
                   size: 16,
                   color: rule.met
-                      ? _metColour
+                      ? _met(scheme)
                       : showErrors
-                          ? scheme.error
-                          : scheme.onSurfaceVariant,
+                      ? scheme.error
+                      : scheme.onSurfaceVariant,
                 ),
                 const SizedBox(width: 8),
                 Expanded(
@@ -123,10 +127,10 @@ class PasswordRuleChecklist extends StatelessWidget {
                       fontSize: 12.5,
                       fontWeight: FontWeight.w600,
                       color: rule.met
-                          ? _metColour
+                          ? _met(scheme)
                           : showErrors
-                              ? scheme.error
-                              : scheme.onSurfaceVariant,
+                          ? scheme.error
+                          : scheme.onSurfaceVariant,
                     ),
                   ),
                 ),

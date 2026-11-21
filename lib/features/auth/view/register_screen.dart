@@ -3,7 +3,6 @@ import 'package:vaultara/core/navigation/auth_root.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/core/theme/app_input_decorations.dart';
-import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/features/auth/services/sign_up_service.dart';
 import 'package:vaultara/features/auth/view/sign_up_code_screen.dart';
 import 'package:vaultara/features/auth/view/widget/email_typo_hint.dart';
@@ -12,6 +11,7 @@ import 'package:vaultara/features/auth/logic/password_rules.dart';
 import 'package:vaultara/core/util/text_normaliser.dart';
 import 'package:vaultara/features/security/logic/pwned_passwords.dart';
 import 'package:vaultara/features/security/view/consent_sheets.dart';
+import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -113,7 +113,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     await showDialog<void>(
       context: context,
       builder: (_) => Theme(
-        data: AppThemes.light(),
+        data: AuthLook.of(context).theme,
         child: AlertDialog(
           title: Text(title),
           content: Text(message),
@@ -234,7 +234,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: AppThemes.light(),
+      data: AuthLook.of(context).theme,
       child: Builder(
         builder: (context) {
           final loc = AppLocalizations.of(context)!;
@@ -410,7 +410,11 @@ class _PasswordRuleList extends StatelessWidget {
   final String password;
   final bool showErrors;
 
-  static const Color _metColour = Color(0xFF2E7D32);
+  /// Green for a rule that is met, lighter on the dark card so it stays
+  /// easy to read.
+  static Color _met(ColorScheme scheme) => scheme.brightness == Brightness.dark
+      ? const Color(0xFF66BB6A)
+      : const Color(0xFF2E7D32);
 
   const _PasswordRuleList({required this.password, required this.showErrors});
 
@@ -438,7 +442,7 @@ class _PasswordRuleList extends StatelessWidget {
                         : Icons.circle_outlined,
                     size: 18,
                     color: rule.met
-                        ? _metColour
+                        ? _met(scheme)
                         : showErrors
                         ? scheme.error
                         : scheme.onSurfaceVariant,
@@ -451,7 +455,7 @@ class _PasswordRuleList extends StatelessWidget {
                         fontSize: 13,
                         fontWeight: FontWeight.w600,
                         color: rule.met
-                            ? _metColour
+                            ? _met(scheme)
                             : showErrors
                             ? scheme.error
                             : scheme.onSurfaceVariant,

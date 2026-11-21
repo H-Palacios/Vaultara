@@ -7,7 +7,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/core/theme/app_input_decorations.dart';
-import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/features/home/data/home_overview_loader.dart';
 import 'package:vaultara/features/auth/view/password_reset_dialog.dart';
@@ -17,6 +16,7 @@ import 'package:vaultara/features/auth/logic/auth_error_mapper.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 import 'package:vaultara/features/security/services/device_registry.dart';
 import 'package:vaultara/features/security/services/session_guard.dart';
+import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 
 class LoginScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
@@ -164,7 +164,7 @@ class _LoginScreenState extends State<LoginScreen> {
     await showDialog<void>(
       context: context,
       builder: (_) => Theme(
-        data: AppThemes.light(),
+        data: AuthLook.of(context).theme,
         child: AlertDialog(
           title: Text(title),
           content: Text(message),
@@ -235,7 +235,6 @@ class _LoginScreenState extends State<LoginScreen> {
           password: password,
         ),
         context: context,
-        light: true,
         email: email,
       );
 
@@ -309,7 +308,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: AppThemes.light(),
+      data: AuthLook.of(context).theme,
       child: Builder(
         builder: (context) {
           final loc = AppLocalizations.of(context)!;

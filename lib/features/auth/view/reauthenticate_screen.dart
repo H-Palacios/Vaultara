@@ -3,21 +3,18 @@ import 'package:flutter/services.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/core/theme/app_brand.dart';
-import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/features/auth/services/reauth_service.dart';
 import 'package:vaultara/features/auth/view/widget/branded_background.dart';
 import 'package:vaultara/features/auth/view/widget/auth_brand_header.dart';
 import 'package:vaultara/features/auth/view/widget/auth_error_banner.dart';
 import 'package:vaultara/features/auth/view/widget/biometric_panel.dart';
 import 'package:vaultara/features/auth/view/widget/reauth_password_form.dart';
+import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 
 class ReauthenticateScreen extends StatefulWidget {
   final Future<void> Function()? onConfirmed;
 
-  const ReauthenticateScreen({
-    super.key,
-    this.onConfirmed,
-  });
+  const ReauthenticateScreen({super.key, this.onConfirmed});
 
   @override
   State<ReauthenticateScreen> createState() => _ReauthenticateScreenState();
@@ -175,7 +172,8 @@ class _ReauthenticateScreenState extends State<ReauthenticateScreen> {
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
-    final showBiometrics =  _biometricsReady && _biometricsAllowed && _biometricsSupported;
+    final showBiometrics =
+        _biometricsReady && _biometricsAllowed && _biometricsSupported;
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.light.copyWith(
@@ -195,7 +193,9 @@ class _ReauthenticateScreenState extends State<ReauthenticateScreen> {
                     keyboardDismissBehavior:
                         ScrollViewKeyboardDismissBehavior.onDrag,
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 24, vertical: 16),
+                      horizontal: 24,
+                      vertical: 16,
+                    ),
                     child: ConstrainedBox(
                       constraints: const BoxConstraints(maxWidth: 420),
                       child: Column(
@@ -207,27 +207,29 @@ class _ReauthenticateScreenState extends State<ReauthenticateScreen> {
                           ),
                           const SizedBox(height: 22),
                           Card(
-                            color: Colors.white,
+                            color: AuthLook.of(context).card,
+                            surfaceTintColor: Colors.transparent,
                             elevation: 10,
-                            shadowColor:
-                                Colors.black.withValues(alpha: 0.5),
+                            shadowColor: Colors.black.withValues(alpha: 0.5),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18),
                               side: BorderSide(
-                                color:
-                                    AppBrand.blue.withValues(alpha: 0.12),
+                                color: AuthLook.of(context).cardEdge,
                               ),
                             ),
                             child: Theme(
-                              data: AppThemes.light(),
+                              data: AuthLook.of(context).theme,
                               child: Padding(
                                 padding: const EdgeInsets.fromLTRB(
-                                    16, 16, 16, 16),
+                                  16,
+                                  16,
+                                  16,
+                                  16,
+                                ),
                                 child: Column(
                                   children: [
                                     if (_bannerError != null) ...[
-                                      AuthErrorBanner(
-                                          message: _bannerError!),
+                                      AuthErrorBanner(message: _bannerError!),
                                       const SizedBox(height: 14),
                                     ],
                                     _buildBody(loc, showBiometrics),

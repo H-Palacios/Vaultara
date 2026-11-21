@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:vaultara/core/theme/app_brand.dart';
-import 'package:vaultara/core/theme/app_themes.dart';
 import 'package:vaultara/features/auth/services/email_app_launcher.dart';
 import 'package:vaultara/features/auth/services/new_account_setup.dart';
 import 'package:vaultara/features/auth/services/sign_up_service.dart';
@@ -14,6 +13,7 @@ import 'package:vaultara/features/auth/view/widget/branded_background.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
+import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 
 /// The second step of creating an account. The same screen shows whether or
 /// not the email already had an account: a new address gets a code, an
@@ -42,9 +42,6 @@ class SignUpCodeScreen extends StatefulWidget {
 class _SignUpCodeScreenState extends State<SignUpCodeScreen>
     with WidgetsBindingObserver {
   static const int _resendCooldownSeconds = 60;
-  static const Color _fieldFill = Colors.white;
-  static const Color _fieldBorder = Color(0xFFD3DAE5);
-  static const Color _fieldHint = Color(0xFFB6BDCB);
   static const Color _errorOnNavy = Color(0xFFFF8A80);
 
   final TextEditingController _codeController = TextEditingController();
@@ -241,9 +238,9 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
         final chosen = await AppSheet.show<EmailInboxApp>(
           context: context,
           showDragHandle: true,
-          backgroundColor: Colors.white,
+          backgroundColor: AuthLook.of(context).card,
           builder: (sheetContext) => Theme(
-            data: AppThemes.light(),
+            data: AuthLook.of(context).theme,
             child: SafeArea(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -292,7 +289,7 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
     final muted = Colors.white.withValues(alpha: 0.72);
 
     return Theme(
-      data: AppThemes.light(),
+      data: AuthLook.of(context).theme,
       child: Scaffold(
         backgroundColor: AppBrand.navy,
         body: Stack(
@@ -368,20 +365,20 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
                             LengthLimitingTextInputFormatter(6),
                           ],
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 28,
                             fontWeight: FontWeight.w700,
                             letterSpacing: 12,
-                            color: AppBrand.navy,
+                            color: AuthLook.of(context).codeText,
                           ),
                           decoration: InputDecoration(
                             counterText: '',
                             hintText: '000000',
-                            hintStyle: const TextStyle(
+                            hintStyle: TextStyle(
                               fontSize: 28,
                               fontWeight: FontWeight.w700,
                               letterSpacing: 12,
-                              color: _fieldHint,
+                              color: AuthLook.of(context).codeHint,
                             ),
                             errorText: _codeError,
                             errorMaxLines: 3,
@@ -391,7 +388,7 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
                               color: _errorOnNavy,
                             ),
                             filled: true,
-                            fillColor: _fieldFill,
+                            fillColor: AuthLook.of(context).codeFill,
                             contentPadding: const EdgeInsets.symmetric(
                               vertical: 18,
                             ),
@@ -400,8 +397,12 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
                               icon: const Icon(Icons.content_paste_rounded),
                               onPressed: _verifying ? null : _paste,
                             ),
-                            enabledBorder: _border(_fieldBorder),
-                            disabledBorder: _border(_fieldBorder),
+                            enabledBorder: _border(
+                              AuthLook.of(context).codeEdge,
+                            ),
+                            disabledBorder: _border(
+                              AuthLook.of(context).codeEdge,
+                            ),
                             focusedBorder: _border(AppBrand.blue, width: 2),
                             errorBorder: _border(_errorOnNavy),
                             focusedErrorBorder: _border(_errorOnNavy, width: 2),
