@@ -67,6 +67,20 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
 
   bool _logoPrecached = false;
 
+  /// One stream for the whole app, so rebuilding the root does not
+  /// subscribe again.
+  final Stream<User?> _authChanges = FirebaseAuth.instance.authStateChanges();
+
+  /// One sign-in screen across signing out and the signed-out state, so it
+  /// keeps its tab and fields instead of starting again.
+  final GlobalKey _gatewayKey = GlobalKey();
+
+  Widget _gateway() => AuthGatewayScreen(
+    key: _gatewayKey,
+    onAuthenticated: _onSignedInManually,
+    startOnSignIn: AuthRoot.knownUser,
+  );
+
   @override
   void initState() {
     super.initState();
@@ -78,6 +92,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
         unawaited(ReminderScheduler.notifyRolledForward(rolled));
 
     ThemePreference.load();
+    unawaited(AuthRoot.loadKnownUser());
     unawaited(PrivacyScreen.load());
     unawaited(AutoLockPreference.load());
     HouseholdLinkService.start();
@@ -135,6 +150,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
 
   void _onUserSeen(String uid) {
     _settle();
+    AuthRoot.rememberKnownUser();
     if (_gatewayShown) {
       _gatewayShown = false;
       _unlocked = true;
@@ -347,72 +363,81 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
             ...FallbackLocalizations.delegates,
           ],
           supportedLocales: AppLocalizations.supportedLocales,
-          home: StreamBuilder<User?>(
-            stream: FirebaseAuth.instance.authStateChanges(),
-            initialData: FirebaseAuth.instance.currentUser,
-            builder: (context, snap) {
-              if (snap.hasError) {
-                return Scaffold(
-                  body: Center(
-                    child: Text(AppLocalizations.of(context)!.verifyCodeFailed),
-                  ),
-                );
-              }
+          home: ValueListenableBuilder<bool>(
+            valueListenable: AuthRoot.signingOut,
+            builder: (context, signingOut, _) => StreamBuilder<User?>(
+              stream: _authChanges,
+              initialData: FirebaseAuth.instance.currentUser,
+              builder: (context, snap) {
+                if (signingOut && snap.data != null) return _gateway();
+                if (snap.hasError) {
+                  return Scaffold(
+                    body: Center(
+                      child: Text(
+                        AppLocalizations.of(context)!.verifyCodeFailed,
+                      ),
+                    ),
+                  );
+                }
 
-              final user = snap.data;
+                final user = snap.data;
 
-              _syncAnalyticsUser(user);
+                _syncAnalyticsUser(user);
 
-              if (user == null) {
-                _onNoUser();
+                if (user == null) {
+                  _onNoUser();
 
-                if (!_authSettled) return _splash();
+                  if (!_authSettled) return _splash();
 
-                _didKickReload = false;
-                _gatewayShown = true;
-                BiometricPreference.forgetUid();
-                return AuthGatewayScreen(onAuthenticated: _onSignedInManually);
-              }
+                  _didKickReload = false;
+                  _gatewayShown = true;
+                  BiometricPreference.forgetUid();
+                  if (signingOut) {
+                    WidgetsBinding.instance.addPostFrameCallback(
+                      (_) => AuthRoot.endSignOut(),
+                    );
+                  }
+                  return _gateway();
+                }
 
-              _kickReload(user);
+                _kickReload(user);
 
-              final refreshedUser = FirebaseAuth.instance.currentUser ?? user;
+                final refreshedUser = FirebaseAuth.instance.currentUser ?? user;
 
-              if (!refreshedUser.emailVerified) {
-                _settle();
+                if (!refreshedUser.emailVerified) {
+                  _settle();
 
-                if (_gatewayShown) {
-                  return AuthGatewayScreen(
+                  if (_gatewayShown) return _gateway();
+
+                  return VerifyEmailScreen(
                     onAuthenticated: _onSignedInManually,
                   );
                 }
 
-                return VerifyEmailScreen(onAuthenticated: _onSignedInManually);
-              }
+                _onUserSeen(user.uid);
 
-              _onUserSeen(user.uid);
-
-              if (_unlocked) {
-                return Shell(key: ValueKey(refreshedUser.uid));
-              }
-
-              return FutureBuilder<bool>(
-                future: _biometricsFor(refreshedUser.uid),
-                builder: (context, bioSnap) {
-                  if (bioSnap.connectionState != ConnectionState.done) {
-                    return _splash();
-                  }
-
-                  if (bioSnap.data == true) {
-                    return ReauthenticateScreen(
-                      onConfirmed: _onReauthConfirmed,
-                    );
-                  }
-
+                if (_unlocked) {
                   return Shell(key: ValueKey(refreshedUser.uid));
-                },
-              );
-            },
+                }
+
+                return FutureBuilder<bool>(
+                  future: _biometricsFor(refreshedUser.uid),
+                  builder: (context, bioSnap) {
+                    if (bioSnap.connectionState != ConnectionState.done) {
+                      return _splash();
+                    }
+
+                    if (bioSnap.data == true) {
+                      return ReauthenticateScreen(
+                        onConfirmed: _onReauthConfirmed,
+                      );
+                    }
+
+                    return Shell(key: ValueKey(refreshedUser.uid));
+                  },
+                );
+              },
+            ),
           ),
         );
       },

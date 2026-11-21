@@ -48,6 +48,8 @@ class SignOutService {
 
   static Future<void> _signOut() async {
     final uid = FirebaseAuth.instance.currentUser?.uid;
+    // The sign-in screen shows now; everything below happens behind it.
+    AuthRoot.beginSignOut();
     SessionGuard.stop();
 
     // Needs the signed-in account: remove this phone and its push token.
@@ -82,8 +84,9 @@ class SignOutService {
 
     try {
       await FirebaseAuth.instance.signOut();
-    } finally {
-      AuthRoot.backToRoot();
+    } catch (_) {
+      AuthRoot.endSignOut();
+      rethrow;
     }
 
     // Only touches the phone, so it can finish behind the sign-in screen.

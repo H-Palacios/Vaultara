@@ -12,7 +12,15 @@ import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 class AuthGatewayScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
 
-  const AuthGatewayScreen({super.key, required this.onAuthenticated});
+  /// Open on Sign in, for someone who has used Vaultara on this phone
+  /// before, for example right after signing out.
+  final bool startOnSignIn;
+
+  const AuthGatewayScreen({
+    super.key,
+    required this.onAuthenticated,
+    this.startOnSignIn = false,
+  });
 
   @override
   State<AuthGatewayScreen> createState() => _AuthGatewayScreenState();
@@ -26,7 +34,12 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
   @override
   void initState() {
     super.initState();
-    tabController = TabController(length: 2, vsync: this);
+    // Tab 0 is Sign up, tab 1 is Sign in.
+    tabController = TabController(
+      length: 2,
+      vsync: this,
+      initialIndex: widget.startOnSignIn ? 1 : 0,
+    );
   }
 
   @override

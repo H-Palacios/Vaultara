@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'navigator_key.dart';
 
@@ -12,6 +13,44 @@ class AuthRoot {
 
   static VoidCallback? _onSignedIn;
   static bool _keepScreens = false;
+
+  /// True from the moment the user taps Sign out until the account is
+  /// signed out, so the sign-in screen shows at once while the clean-up
+  /// finishes behind it, instead of Home showing first.
+  static final ValueNotifier<bool> signingOut = ValueNotifier<bool>(false);
+
+  static const String _knownKey = 'authKnownUser';
+
+  /// Someone has signed in on this phone before, so the sign-in screen
+  /// opens on Sign in rather than Sign up.
+  static bool knownUser = false;
+
+  static Future<void> loadKnownUser() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      knownUser = knownUser || (prefs.getBool(_knownKey) ?? false);
+    } catch (_) {}
+  }
+
+  static void rememberKnownUser() {
+    if (knownUser) return;
+    knownUser = true;
+    SharedPreferences.getInstance()
+        .then((prefs) => prefs.setBool(_knownKey, true))
+        .catchError((Object _) => false);
+  }
+
+  /// Shows the sign-in screen straight away and closes the screens above
+  /// it once it is in place.
+  static void beginSignOut() {
+    knownUser = true;
+    signingOut.value = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) => backToRoot());
+  }
+
+  /// The account is signed out (the first screen calls this once it sees
+  /// no account), or signing out failed and the app goes back to normal.
+  static void endSignOut() => signingOut.value = false;
 
   /// Set by the app's first screen.
   static void attach(VoidCallback onSignedIn) => _onSignedIn = onSignedIn;
