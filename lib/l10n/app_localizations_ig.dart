@@ -7176,7 +7176,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Lelee nkọwa ụlọ akụ gị maka ịkwụ ụgwọ ị na-emeghị';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Tinye kaadị ọhụrụ na ndebanye aha na ịkwụ ụgwọ akpaaka gị';
+  String get lifeTaskWalletSubscriptions => 'Tinye kaadị ụlọ akụ ọhụrụ n\'ịkwụ ụgwọ akpaaka, ndebanye aha na Google Pay ma ọ bụ Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Tinye kaadị ọhụrụ na Google Pay ma ọ bụ Apple Pay';
@@ -7188,7 +7188,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Gbochie kaadị njem ma ọ bụ ụgwọ okporo ụzọ gị ma bufee ego fọdụrụ';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Rịọ maka kaadị iguzosi ike ọhụrụ ka ị nọgide na-enwe akara gị';
+  String get lifeTaskWalletLoyalty => 'Dochie kaadị ndị ọzọ, dịka nke mkpuchi ahụike, njem na iguzosi ike, ma bufee ego fọdụrụ';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Dochie kaadị ndị ọzọ, dịka nke njem na iguzosi ike, ma bufee ego fọdụrụ';
 
   @override
   String get lifeTaskWalletLocks => 'Ọ bụrụ na igodo ma ọ bụ adreesị gị dị n\'ime ya, tụlee ịgbanwe mkpọchi';
@@ -7326,6 +7329,21 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lostWalletCheckHint => 'Jụọ ma ị chọrọ kaadị ma ọ bụ nọmba ọhụrụ.';
 
   @override
+  String get lostWalletHintMedical => 'Rịọ kaadị ọhụrụ. Nọmba onye otu gị anaghị agbanwekarị.';
+
+  @override
+  String get lostWalletHintMembership => 'Rịọ kaadị ma ọ bụ mkpado ọhụrụ.';
+
+  @override
+  String get lostWalletHintInsurance => 'Rịọ kaadị ọhụrụ ma ọ bụrụ na ha na-enye ya. Nọmba iwu gị anaghị agbanwe.';
+
+  @override
+  String get lostWalletHintFirearm => 'Kọọrọ ndị uwe ojii ma rịọ kaadị ikikere ọhụrụ.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Rịọ dọkịta gị ma ọ bụ ụlọ ọgwụ maka mbipụta ọhụrụ ma ọ dị gị mkpa.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Ọ dịghị ihe echekwara dị ebe ahụ';
 
   @override
@@ -7361,11 +7379,6 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Malitere: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'E depụtaghachiri nọmba okwu';
 
   @override
@@ -7392,7 +7405,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lostWalletPhoneButton => 'Malite atụmatụ ekwentị furu efu';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara ga-echetara gị mgbe ụbọchị 30, 60 na 90 gachara.';
+  String get lostWalletStatementNote => 'Vaultara ga-echetara gị ilele ọzọ mgbe ụbọchị 30, 60 na 90 gachara, n\'ihi na aghụghọ na-ebidokarị izu ole na ole ka e mesịrị.';
 
   @override
   String get lostWalletStatementTitle => 'Lelee nkọwa ụlọ akụ gị';
@@ -7402,6 +7415,9 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Achọtala m ya';
+
+  @override
+  String get lostWalletGotItBack => 'Enwetala m ya';
 
   @override
   String get lostWalletFoundTitle => 'Ozi ọma!';

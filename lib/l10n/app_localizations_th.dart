@@ -7158,7 +7158,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lifeTaskWalletStatements => 'ตรวจสอบรายการเดินบัญชีว่ามีการชำระเงินที่คุณไม่ได้ทำหรือไม่';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'ผูกบัตรใหม่กับการสมัครสมาชิกและการหักบัญชีอัตโนมัติ';
+  String get lifeTaskWalletSubscriptions => 'ผูกบัตรธนาคารใบใหม่กับรายการหักบัญชีอัตโนมัติ การสมัครสมาชิก และ Google Pay หรือ Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'เพิ่มบัตรใหม่ใน Google Pay หรือ Apple Pay';
@@ -7170,7 +7170,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lifeTaskWalletTransport => 'อายัดบัตรเดินทางหรือบัตรทางด่วนและโอนยอดเงินคงเหลือ';
 
   @override
-  String get lifeTaskWalletLoyalty => 'ขอบัตรสะสมแต้มใหม่เพื่อเก็บแต้มไว้';
+  String get lifeTaskWalletLoyalty => 'ทำบัตรอื่นใหม่ เช่น บัตรประกันสุขภาพ บัตรเดินทาง และบัตรสะสมแต้ม แล้วย้ายยอดเงินคงเหลือ';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'ทำบัตรอื่นใหม่ เช่น บัตรเดินทางและบัตรสะสมแต้ม แล้วย้ายยอดเงินคงเหลือ';
 
   @override
   String get lifeTaskWalletLocks => 'ถ้ามีกุญแจหรือที่อยู่ของคุณอยู่ในนั้น ลองพิจารณาเปลี่ยนกุญแจ';
@@ -7308,6 +7311,21 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lostWalletCheckHint => 'สอบถามว่าต้องใช้บัตรหรือหมายเลขใหม่หรือไม่';
 
   @override
+  String get lostWalletHintMedical => 'ขอบัตรใหม่ หมายเลขสมาชิกมักยังเหมือนเดิม';
+
+  @override
+  String get lostWalletHintMembership => 'ขอบัตรหรือแท็กใหม่';
+
+  @override
+  String get lostWalletHintInsurance => 'ขอบัตรใหม่หากมีการออกบัตร หมายเลขกรมธรรม์ยังเหมือนเดิม';
+
+  @override
+  String get lostWalletHintFirearm => 'แจ้งความกับตำรวจและขอบัตรใบอนุญาตใหม่';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'ขอสำเนาใหม่จากแพทย์หรือคลินิกหากจำเป็น';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'ไม่มีอะไรที่บันทึกไว้อยู่ที่นั่น';
 
   @override
@@ -7343,11 +7361,6 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'เริ่มเมื่อ: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'คัดลอกหมายเลขคดีแล้ว';
 
   @override
@@ -7374,7 +7387,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lostWalletPhoneButton => 'เริ่มแผนโทรศัพท์หาย';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara จะเตือนคุณหลัง 30, 60 และ 90 วัน';
+  String get lostWalletStatementNote => 'Vaultara จะเตือนให้ตรวจสอบอีกครั้งหลัง 30, 60 และ 90 วัน เพราะการฉ้อโกงมักเริ่มหลังจากนั้นหลายสัปดาห์';
 
   @override
   String get lostWalletStatementTitle => 'ตรวจสอบรายการเดินบัญชี';
@@ -7384,6 +7397,9 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'ฉันเจอแล้ว';
+
+  @override
+  String get lostWalletGotItBack => 'ได้คืนแล้ว';
 
   @override
   String get lostWalletFoundTitle => 'ข่าวดี!';

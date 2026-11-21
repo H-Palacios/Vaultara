@@ -7216,7 +7216,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Хийгээгүй төлбөр байгаа эсэхийг банкны хуулгаас шалга';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Шинэ картаа захиалга болон автомат төлбөрт холбо';
+  String get lifeTaskWalletSubscriptions => 'Шинэ банкны картаа автомат төлбөр, захиалга болон Google Pay эсвэл Apple Pay-д холбо';
 
   @override
   String get lifeTaskWalletPayApps => 'Шинэ картуудаа Google Pay эсвэл Apple Pay-д нэм';
@@ -7228,7 +7228,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Тээврийн эсвэл замын төлбөрийн картаа хааж, үлдэгдлийг шилжүүл';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Оноогоо хадгалахын тулд шинэ урамшууллын карт хүс';
+  String get lifeTaskWalletLoyalty => 'Эрүүл мэндийн даатгал, тээвэр, урамшууллын зэрэг бусад картаа солиулж, үлдэгдлээ шилжүүл';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Тээвэр, урамшууллын зэрэг бусад картаа солиулж, үлдэгдлээ шилжүүл';
 
   @override
   String get lifeTaskWalletLocks => 'Дотор нь түлхүүр эсвэл хаяг чинь байсан бол цоож солих талаар бод';
@@ -7366,6 +7369,21 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lostWalletCheckHint => 'Шинэ карт эсвэл дугаар хэрэгтэй эсэхийг асуу.';
 
   @override
+  String get lostWalletHintMedical => 'Шинэ карт хүс. Гишүүний дугаар ихэвчлэн хэвээр үлддэг.';
+
+  @override
+  String get lostWalletHintMembership => 'Шинэ карт эсвэл шошго хүс.';
+
+  @override
+  String get lostWalletHintInsurance => 'Олгодог бол шинэ карт хүс. Гэрээний дугаар хэвээр үлдэнэ.';
+
+  @override
+  String get lostWalletHintFirearm => 'Цагдаад мэдэгдэж, шинэ зөвшөөрлийн карт хүс.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Хэрэгтэй бол эмч эсвэл эмнэлгээс шинэ хуулбар хүс.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Тэнд хадгалсан юм байгаагүй';
 
   @override
@@ -7401,11 +7419,6 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Эхэлсэн: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Хэргийн дугаар хуулагдлаа';
 
   @override
@@ -7432,7 +7445,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lostWalletPhoneButton => 'Алдсан утасны төлөвлөгөө эхлүүлэх';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara 30, 60, 90 хоногийн дараа сануулна.';
+  String get lostWalletStatementNote => 'Луйвар ихэвчлэн хэдэн долоо хоногийн дараа эхэлдэг тул Vaultara 30, 60, 90 хоногийн дараа дахин шалгахыг сануулна.';
 
   @override
   String get lostWalletStatementTitle => 'Банкны хуулгаа шалга';
@@ -7442,6 +7455,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Олчихлоо';
+
+  @override
+  String get lostWalletGotItBack => 'Буцааж авсан';
 
   @override
   String get lostWalletFoundTitle => 'Сайн мэдээ!';

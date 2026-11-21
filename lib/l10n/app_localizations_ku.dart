@@ -7226,7 +7226,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Daxuyaniyên bankê ji bo dravdanên ku te nekirine kontrol bike';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Karta nû li ser abonetî û dravdanên otomatîk deyne';
+  String get lifeTaskWalletSubscriptions => 'Karta bankê ya nû li ser dravdanên otomatîk, abonetiyan û Google Pay an Apple Pay bicih bike';
 
   @override
   String get lifeTaskWalletPayApps => 'Kartên nû li Google Pay an Apple Pay zêde bike';
@@ -7238,7 +7238,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Karta veguhastinê an rêbacê bloke bike û balansê veguhezîne';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Kartên dilsoziyê yên nû bixwaze da ku xalên te bimînin';
+  String get lifeTaskWalletLoyalty => 'Kartên din biguherîne, wek kartên sîgorteya tenduristiyê, veguhastinê û dilsoziyê, û bermahiyê veguhêze';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Kartên din biguherîne, wek kartên veguhastinê û dilsoziyê, û bermahiyê veguhêze';
 
   @override
   String get lifeTaskWalletLocks => 'Ger mifte an navnîşana te tê de bû, li ser guhertina kilîtan bifikire';
@@ -7376,6 +7379,21 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lostWalletCheckHint => 'Bipirse ka karta an hejmara nû pêwîst e.';
 
   @override
+  String get lostWalletHintMedical => 'Kartek nû bixwaze. Hejmara endamtiyê bi gelemperî heman dimîne.';
+
+  @override
+  String get lostWalletHintMembership => 'Kartek an etîketek nû bixwaze.';
+
+  @override
+  String get lostWalletHintInsurance => 'Ger derdixin, kartek nû bixwaze. Hejmara polîçeyê heman dimîne.';
+
+  @override
+  String get lostWalletHintFirearm => 'Ji polîsan re ragihîne û karteke lîsansê ya nû bixwaze.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Ger hewce be, ji bijîşk an klînîkê kopiyek nû bixwaze.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Li wir tiştekî tomarkirî tune bû';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Dest pê kir: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Hejmara dosyayê hat kopîkirin';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lostWalletPhoneButton => 'Plana telefona windabûyî dest pê bike';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara dê piştî 30, 60 û 90 rojan bîne bîra te.';
+  String get lostWalletStatementNote => 'Vaultara dê bîne bîra te ku piştî 30, 60 û 90 rojan dîsa kontrol bikî, ji ber ku sextekarî gelek caran hefteyan şûnde dest pê dike.';
 
   @override
   String get lostWalletStatementTitle => 'Daxuyaniyên bankê kontrol bike';
@@ -7452,6 +7465,9 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Min dît';
+
+  @override
+  String get lostWalletGotItBack => 'Min ew vegerand';
 
   @override
   String get lostWalletFoundTitle => 'Nûçeya baş!';

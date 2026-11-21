@@ -7226,7 +7226,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Begiratu banku-laburpenak egin ez dituzun ordainketen bila';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Jarri txartel berria harpidetza eta helbideratzeetan';
+  String get lifeTaskWalletSubscriptions => 'Jarri banku-txartel berria helbideratzeetan, harpidetzetan eta Google Pay edo Apple Pay-n';
 
   @override
   String get lifeTaskWalletPayApps => 'Gehitu txartel berriak Google Pay edo Apple Pay-ra';
@@ -7238,7 +7238,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Blokeatu garraio- edo bidesari-txartela eta pasatu saldoa';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Eskatu leialtasun-txartel berriak puntuak ez galtzeko';
+  String get lifeTaskWalletLoyalty => 'Ordeztu beste txartelak, hala nola osasun, garraio eta leialtasun txartelak, eta eraman saldoa';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Ordeztu beste txartelak, hala nola garraio eta leialtasun txartelak, eta eraman saldoa';
 
   @override
   String get lifeTaskWalletLocks => 'Giltzak edo zure helbidea bazeuden, pentsatu sarrailak aldatzea';
@@ -7379,6 +7382,21 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lostWalletCheckHint => 'Galdetu txartel edo zenbaki berria behar duzun.';
 
   @override
+  String get lostWalletHintMedical => 'Eskatu txartel berri bat. Bazkide-zenbakia normalean berdina da.';
+
+  @override
+  String get lostWalletHintMembership => 'Eskatu txartel edo giltzatako berri bat.';
+
+  @override
+  String get lostWalletHintInsurance => 'Eskatu txartel berri bat ematen badute. Poliza-zenbakia berdina da.';
+
+  @override
+  String get lostWalletHintFirearm => 'Salatu poliziari eta eskatu lizentzia-txartel berri bat.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Eskatu kopia berri bat medikuari edo klinikari behar baduzu.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Ez zegoen ezer gordeta han';
 
   @override
@@ -7414,11 +7432,6 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Hasita: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Kasu-zenbakia kopiatuta';
 
   @override
@@ -7445,7 +7458,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lostWalletPhoneButton => 'Hasi galdutako mugikorraren plana';
 
   @override
-  String get lostWalletStatementNote => 'Vaultarak 30, 60 eta 90 egunera gogoraraziko dizu.';
+  String get lostWalletStatementNote => 'Vaultarak 30, 60 eta 90 egunen buruan berriro begiratzeko gogoraraziko dizu, iruzurra askotan aste batzuk geroago hasten baita.';
 
   @override
   String get lostWalletStatementTitle => 'Begiratu banku-laburpenak';
@@ -7455,6 +7468,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Aurkitu dut';
+
+  @override
+  String get lostWalletGotItBack => 'Berreskuratu dut';
 
   @override
   String get lostWalletFoundTitle => 'Albiste ona!';

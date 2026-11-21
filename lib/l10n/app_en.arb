@@ -8694,7 +8694,7 @@
   "@lifeTaskWalletStatements": {
     "description": "A step in a lost wallet plan. Imperative, short."
   },
-  "lifeTaskWalletSubscriptions": "Put the new card on your subscriptions and debit orders",
+  "lifeTaskWalletSubscriptions": "Put the new bank card on your debit orders, subscriptions and Google Pay or Apple Pay",
   "@lifeTaskWalletSubscriptions": {
     "description": "A step in a lost wallet plan. Imperative, short."
   },
@@ -8710,9 +8710,13 @@
   "@lifeTaskWalletTransport": {
     "description": "A step in a lost wallet plan. Imperative, short."
   },
-  "lifeTaskWalletLoyalty": "Ask for new loyalty cards so you keep your points",
+  "lifeTaskWalletLoyalty": "Replace other cards, like medical aid, transport and loyalty cards, and move any balance",
   "@lifeTaskWalletLoyalty": {
     "description": "A step in a lost wallet plan. Imperative, short."
+  },
+  "lifeTaskWalletOtherCardsShort": "Replace other cards, like transport and loyalty cards, and move any balance",
+  "@lifeTaskWalletOtherCardsShort": {
+    "description": "Lost wallet step when the medical aid card is already listed under Check these."
   },
   "lifeTaskWalletLocks": "If keys or your address were in it, think about changing the locks",
   "@lifeTaskWalletLocks": {
@@ -8881,6 +8885,26 @@
   "@lostWalletCheckHint": {
     "description": "On the Lost my wallet screen."
   },
+  "lostWalletHintMedical": "Ask for a new card. Your member number usually stays the same.",
+  "@lostWalletHintMedical": {
+    "description": "Lost wallet, Check these: hint under a medical aid or health insurance card."
+  },
+  "lostWalletHintMembership": "Ask for a new card or tag.",
+  "@lostWalletHintMembership": {
+    "description": "Lost wallet, Check these: hint under a gym or club membership card."
+  },
+  "lostWalletHintInsurance": "Ask for a new card if they issue one. Your policy number stays the same.",
+  "@lostWalletHintInsurance": {
+    "description": "Lost wallet, Check these: hint under a car, home, life or travel insurance card."
+  },
+  "lostWalletHintFirearm": "Report it to the police and ask for a new licence card.",
+  "@lostWalletHintFirearm": {
+    "description": "Lost wallet, Check these: hint under a firearm licence."
+  },
+  "lostWalletHintMedicalPaper": "Ask your doctor or clinic for a new copy if you need it.",
+  "@lostWalletHintMedicalPaper": {
+    "description": "Lost wallet, Check these: hint under a prescription, vaccination or medical certificate."
+  },
   "lostWalletPlanEmptyTitle": "Nothing saved was kept there",
   "@lostWalletPlanEmptyTitle": {
     "description": "On the Lost my wallet screen."
@@ -8937,15 +8961,6 @@
       }
     }
   },
-  "lostWalletStarted": "Started {time}",
-  "@lostWalletStarted": {
-    "description": "Lost wallet status card: how long ago the plan started. {time} is relative, e.g. \"25 minutes ago\".",
-    "placeholders": {
-      "time": {
-        "type": "String"
-      }
-    }
-  },
   "lostWalletCaseCopied": "Case number copied",
   "@lostWalletCaseCopied": {
     "description": "Shown after copying the police case number."
@@ -8983,7 +8998,7 @@
   "@lostWalletPhoneButton": {
     "description": "Button."
   },
-  "lostWalletStatementNote": "Vaultara reminds you after 30, 60 and 90 days.",
+  "lostWalletStatementNote": "Vaultara will remind you to check again after 30, 60 and 90 days, because fraud often starts weeks later.",
   "@lostWalletStatementNote": {
     "description": "Note under the statement step."
   },
@@ -8998,6 +9013,10 @@
   "lostWalletFoundButton": "I found it",
   "@lostWalletFoundButton": {
     "description": "Button for when the lost wallet turns up."
+  },
+  "lostWalletGotItBack": "I got it back",
+  "@lostWalletGotItBack": {
+    "description": "Status card button on a stolen wallet plan, when the wallet came back."
   },
   "lostWalletFoundTitle": "Good news!",
   "@lostWalletFoundTitle": {

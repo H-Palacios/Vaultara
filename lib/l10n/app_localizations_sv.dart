@@ -7225,7 +7225,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Gå igenom dina kontoutdrag efter betalningar du inte har gjort';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Lägg in det nya kortet för prenumerationer och autogiro';
+  String get lifeTaskWalletSubscriptions => 'Lägg in det nya bankkortet på autogiron, prenumerationer och Google Pay eller Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Lägg till de nya korten i Google Pay eller Apple Pay';
@@ -7237,7 +7237,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Spärra ditt res- eller vägtullskort och flytta saldot';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Be om nya kundkort så att du behåller dina poäng';
+  String get lifeTaskWalletLoyalty => 'Ersätt andra kort, som sjukförsäkrings-, rese- och lojalitetskort, och flytta eventuellt saldo';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Ersätt andra kort, som rese- och lojalitetskort, och flytta eventuellt saldo';
 
   @override
   String get lifeTaskWalletLocks => 'Fanns nycklar eller din adress i den, fundera på att byta lås';
@@ -7378,6 +7381,21 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lostWalletCheckHint => 'Fråga om du behöver ett nytt kort eller nummer.';
 
   @override
+  String get lostWalletHintMedical => 'Be om ett nytt kort. Medlemsnumret brukar vara detsamma.';
+
+  @override
+  String get lostWalletHintMembership => 'Be om ett nytt kort eller en ny tagg.';
+
+  @override
+  String get lostWalletHintInsurance => 'Be om ett nytt kort om de utfärdar ett. Försäkringsnumret är detsamma.';
+
+  @override
+  String get lostWalletHintFirearm => 'Anmäl det till polisen och be om ett nytt licenskort.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Be din läkare eller klinik om en ny kopia om du behöver.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Inget sparat fanns där';
 
   @override
@@ -7413,11 +7431,6 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Startade: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Ärendenummer kopierat';
 
   @override
@@ -7444,7 +7457,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lostWalletPhoneButton => 'Starta planen för borttappad telefon';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara påminner dig efter 30, 60 och 90 dagar.';
+  String get lostWalletStatementNote => 'Vaultara påminner dig om att kolla igen efter 30, 60 och 90 dagar, eftersom bedrägerier ofta börjar veckor senare.';
 
   @override
   String get lostWalletStatementTitle => 'Gå igenom dina kontoutdrag';
@@ -7454,6 +7467,9 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Jag har hittat den';
+
+  @override
+  String get lostWalletGotItBack => 'Jag har fått tillbaka den';
 
   @override
   String get lostWalletFoundTitle => 'Goda nyheter!';

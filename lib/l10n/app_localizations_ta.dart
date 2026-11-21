@@ -7226,7 +7226,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lifeTaskWalletStatements => 'நீங்கள் செய்யாத பணம் செலுத்தல்களுக்கு வங்கி அறிக்கைகளைச் சரிபாருங்கள்';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'புதிய கார்டை சந்தாக்கள் மற்றும் தானியங்கி பற்றுகளில் சேர்க்கவும்';
+  String get lifeTaskWalletSubscriptions => 'புதிய வங்கி அட்டையை டெபிட் ஆர்டர்கள், சந்தாக்கள் மற்றும் Google Pay அல்லது Apple Pay இல் சேர்க்கவும்';
 
   @override
   String get lifeTaskWalletPayApps => 'புதிய கார்டுகளை Google Pay அல்லது Apple Pay இல் சேர்க்கவும்';
@@ -7238,7 +7238,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lifeTaskWalletTransport => 'போக்குவரத்து அல்லது சுங்கக் கார்டைத் தடுத்து இருப்பை மாற்றுங்கள்';
 
   @override
-  String get lifeTaskWalletLoyalty => 'புள்ளிகளைத் தக்கவைக்க புதிய விசுவாசக் கார்டுகளைக் கேளுங்கள்';
+  String get lifeTaskWalletLoyalty => 'மருத்துவக் காப்பீடு, போக்குவரத்து, லாயல்டி அட்டைகள் போன்ற பிற அட்டைகளை மாற்றி இருப்பை நகர்த்துங்கள்';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'போக்குவரத்து, லாயல்டி அட்டைகள் போன்ற பிற அட்டைகளை மாற்றி இருப்பை நகர்த்துங்கள்';
 
   @override
   String get lifeTaskWalletLocks => 'உள்ளே சாவிகள் அல்லது உங்கள் முகவரி இருந்தால் பூட்டுகளை மாற்றுவது பற்றி யோசியுங்கள்';
@@ -7376,6 +7379,21 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lostWalletCheckHint => 'புதிய கார்டு அல்லது எண் தேவையா எனக் கேளுங்கள்.';
 
   @override
+  String get lostWalletHintMedical => 'புதிய அட்டையைக் கேளுங்கள். உறுப்பினர் எண் பொதுவாக மாறாது.';
+
+  @override
+  String get lostWalletHintMembership => 'புதிய அட்டை அல்லது டேக் கேளுங்கள்.';
+
+  @override
+  String get lostWalletHintInsurance => 'வழங்கினால் புதிய அட்டையைக் கேளுங்கள். பாலிசி எண் மாறாது.';
+
+  @override
+  String get lostWalletHintFirearm => 'காவல்துறையில் புகார் செய்து புதிய உரிம அட்டையைக் கேளுங்கள்.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'தேவைப்பட்டால் மருத்துவர் அல்லது கிளினிக்கிடம் புதிய நகலைக் கேளுங்கள்.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'அங்கு எதுவும் சேமிக்கப்படவில்லை';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'தொடங்கியது: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'வழக்கு எண் நகலெடுக்கப்பட்டது';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lostWalletPhoneButton => 'தொலைந்த போன் திட்டத்தைத் தொடங்கு';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara 30, 60, 90 நாட்களுக்குப் பிறகு நினைவூட்டும்.';
+  String get lostWalletStatementNote => 'மோசடி பெரும்பாலும் வாரங்கள் கழித்துத் தொடங்குவதால், 30, 60, 90 நாட்களுக்குப் பிறகு மீண்டும் சரிபார்க்க Vaultara நினைவூட்டும்.';
 
   @override
   String get lostWalletStatementTitle => 'வங்கி அறிக்கைகளைச் சரிபாருங்கள்';
@@ -7452,6 +7465,9 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'கண்டுபிடித்தேன்';
+
+  @override
+  String get lostWalletGotItBack => 'அது திரும்பக் கிடைத்தது';
 
   @override
   String get lostWalletFoundTitle => 'நல்ல செய்தி!';

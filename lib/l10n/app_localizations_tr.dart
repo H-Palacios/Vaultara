@@ -7226,7 +7226,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Banka ekstrelerinde yapmadığın ödemeleri kontrol et';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Yeni kartı aboneliklerine ve otomatik ödemelerine tanımla';
+  String get lifeTaskWalletSubscriptions => 'Yeni banka kartını otomatik ödemelere, aboneliklere ve Google Pay ya da Apple Pay\'e ekle';
 
   @override
   String get lifeTaskWalletPayApps => 'Yeni kartları Google Pay veya Apple Pay\'e ekle';
@@ -7238,7 +7238,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Ulaşım veya geçiş kartını kapat ve bakiyeyi aktar';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Puanlarını korumak için yeni sadakat kartları iste';
+  String get lifeTaskWalletLoyalty => 'Sağlık sigortası, ulaşım ve sadakat kartları gibi diğer kartları yenile ve bakiyeyi aktar';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Ulaşım ve sadakat kartları gibi diğer kartları yenile ve bakiyeyi aktar';
 
   @override
   String get lifeTaskWalletLocks => 'İçinde anahtar veya adresin varsa kilitleri değiştirmeyi düşün';
@@ -7376,6 +7379,21 @@ class AppLocalizationsTr extends AppLocalizations {
   String get lostWalletCheckHint => 'Yeni bir kart veya numara gerekip gerekmediğini sor.';
 
   @override
+  String get lostWalletHintMedical => 'Yeni kart iste. Üye numaran genellikle aynı kalır.';
+
+  @override
+  String get lostWalletHintMembership => 'Yeni kart veya etiket iste.';
+
+  @override
+  String get lostWalletHintInsurance => 'Veriyorlarsa yeni kart iste. Poliçe numaran aynı kalır.';
+
+  @override
+  String get lostWalletHintFirearm => 'Polise bildir ve yeni ruhsat kartı iste.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Gerekirse doktorundan veya klinikten yeni bir kopya iste.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Orada kayıtlı bir şey yoktu';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Başladı: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Dosya numarası kopyalandı';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get lostWalletPhoneButton => 'Kayıp telefon planını başlat';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara 30, 60 ve 90 gün sonra hatırlatır.';
+  String get lostWalletStatementNote => 'Vaultara, 30, 60 ve 90 gün sonra yeniden kontrol etmeni hatırlatır, çünkü dolandırıcılık çoğu zaman haftalar sonra başlar.';
 
   @override
   String get lostWalletStatementTitle => 'Banka ekstrelerini kontrol et';
@@ -7452,6 +7465,9 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Buldum';
+
+  @override
+  String get lostWalletGotItBack => 'Geri aldım';
 
   @override
   String get lostWalletFoundTitle => 'Güzel haber!';

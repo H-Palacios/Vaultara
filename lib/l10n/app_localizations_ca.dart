@@ -7226,7 +7226,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Revisa els extractes bancaris per si hi ha pagaments que no has fet';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Posa la targeta nova a les subscripcions i domiciliacions';
+  String get lifeTaskWalletSubscriptions => 'Posa la nova targeta bancària als rebuts domiciliats, subscripcions i Google Pay o Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Afegeix les targetes noves a Google Pay o Apple Pay';
@@ -7238,7 +7238,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Bloqueja la targeta de transport o de peatge i traspassa el saldo';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Demana noves targetes de fidelitat per conservar els punts';
+  String get lifeTaskWalletLoyalty => 'Substitueix les altres targetes, com la sanitària, de transport i de fidelització, i traspassa el saldo';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Substitueix les altres targetes, com la de transport i de fidelització, i traspassa el saldo';
 
   @override
   String get lifeTaskWalletLocks => 'Si hi havia claus o la teva adreça, pensa a canviar els panys';
@@ -7379,6 +7382,21 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lostWalletCheckHint => 'Pregunta si necessites una targeta o un número nous.';
 
   @override
+  String get lostWalletHintMedical => 'Demana una targeta nova. El número de soci sol ser el mateix.';
+
+  @override
+  String get lostWalletHintMembership => 'Demana una targeta o clauer nou.';
+
+  @override
+  String get lostWalletHintInsurance => 'Demana una targeta nova si n\'emeten. El número de pòlissa és el mateix.';
+
+  @override
+  String get lostWalletHintFirearm => 'Denuncia-ho a la policia i demana una targeta de llicència nova.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Demana una còpia nova al metge o a la clínica si la necessites.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Allà no hi havia res desat';
 
   @override
@@ -7414,11 +7432,6 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Iniciat: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Número de cas copiat';
 
   @override
@@ -7445,7 +7458,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lostWalletPhoneButton => 'Comença el pla de mòbil perdut';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara t\'ho recorda als 30, 60 i 90 dies.';
+  String get lostWalletStatementNote => 'Vaultara et recordarà que tornis a revisar-ho als 30, 60 i 90 dies, perquè el frau sovint comença setmanes després.';
 
   @override
   String get lostWalletStatementTitle => 'Revisa els extractes bancaris';
@@ -7455,6 +7468,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'L\'he trobada';
+
+  @override
+  String get lostWalletGotItBack => 'L\'he recuperat';
 
   @override
   String get lostWalletFoundTitle => 'Bones notícies!';

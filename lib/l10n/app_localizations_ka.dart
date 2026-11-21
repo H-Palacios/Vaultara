@@ -7226,7 +7226,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lifeTaskWalletStatements => 'შეამოწმეთ საბანკო ამონაწერები გადახდებზე, რომლებიც არ გაგიკეთებიათ';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'ახალი ბარათი მიაბით გამოწერებსა და ავტომატურ გადახდებს';
+  String get lifeTaskWalletSubscriptions => 'ახალი საბანკო ბარათი მიაბით ავტოგადახდებს, გამოწერებს და Google Pay-ს ან Apple Pay-ს';
 
   @override
   String get lifeTaskWalletPayApps => 'დაამატეთ ახალი ბარათები Google Pay-ში ან Apple Pay-ში';
@@ -7238,7 +7238,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lifeTaskWalletTransport => 'დაბლოკეთ სატრანსპორტო ან გზის საფასურის ბარათი და გადაიტანეთ ნაშთი';
 
   @override
-  String get lifeTaskWalletLoyalty => 'მოითხოვეთ ახალი ლოიალობის ბარათები ქულების შესანარჩუნებლად';
+  String get lifeTaskWalletLoyalty => 'შეცვალეთ სხვა ბარათები, როგორიცაა სამედიცინო, სატრანსპორტო და ლოიალობის, და გადაიტანეთ ნაშთი';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'შეცვალეთ სხვა ბარათები, როგორიცაა სატრანსპორტო და ლოიალობის, და გადაიტანეთ ნაშთი';
 
   @override
   String get lifeTaskWalletLocks => 'თუ შიგნით გასაღები ან თქვენი მისამართი იყო, იფიქრეთ საკეტების შეცვლაზე';
@@ -7376,6 +7379,21 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lostWalletCheckHint => 'იკითხეთ, გჭირდებათ თუ არა ახალი ბარათი ან ნომერი.';
 
   @override
+  String get lostWalletHintMedical => 'მოითხოვეთ ახალი ბარათი. წევრობის ნომერი ჩვეულებრივ იგივე რჩება.';
+
+  @override
+  String get lostWalletHintMembership => 'მოითხოვეთ ახალი ბარათი ან ჩიპი.';
+
+  @override
+  String get lostWalletHintInsurance => 'მოითხოვეთ ახალი ბარათი, თუ გასცემენ. პოლისის ნომერი იგივე რჩება.';
+
+  @override
+  String get lostWalletHintFirearm => 'შეატყობინეთ პოლიციას და მოითხოვეთ ახალი ლიცენზიის ბარათი.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'საჭიროების შემთხვევაში მოითხოვეთ ახალი ასლი ექიმთან ან კლინიკაში.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'იქ არაფერი იყო შენახული';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'დაიწყო: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'საქმის ნომერი დაკოპირდა';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lostWalletPhoneButton => 'დაკარგული ტელეფონის გეგმის დაწყება';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara შეგახსენებთ 30, 60 და 90 დღის შემდეგ.';
+  String get lostWalletStatementNote => 'Vaultara შეგახსენებთ ხელახლა შემოწმებას 30, 60 და 90 დღის შემდეგ, რადგან თაღლითობა ხშირად კვირების შემდეგ იწყება.';
 
   @override
   String get lostWalletStatementTitle => 'შეამოწმეთ საბანკო ამონაწერები';
@@ -7452,6 +7465,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'ვიპოვე';
+
+  @override
+  String get lostWalletGotItBack => 'დავიბრუნე';
 
   @override
   String get lostWalletFoundTitle => 'კარგი ამბავი!';

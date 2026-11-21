@@ -7226,7 +7226,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Bank ko\'chirmalarida o\'zingiz qilmagan to\'lovlarni tekshiring';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Yangi kartani obunalar va avtomatik to\'lovlarga ulang';
+  String get lifeTaskWalletSubscriptions => 'Yangi bank kartasini avtoto‘lovlar, obunalar va Google Pay yoki Apple Pay‘ga ulang';
 
   @override
   String get lifeTaskWalletPayApps => 'Yangi kartalarni Google Pay yoki Apple Pay\'ga qo\'shing';
@@ -7238,7 +7238,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Transport yoki yo\'l to\'lovi kartasini bloklang va qoldiqni o\'tkazing';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Ballaringizni saqlash uchun yangi sodiqlik kartalarini so\'rang';
+  String get lifeTaskWalletLoyalty => 'Tibbiy sug‘urta, transport va sodiqlik kartalari kabi boshqa kartalarni almashtiring va qoldiqni o‘tkazing';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Transport va sodiqlik kartalari kabi boshqa kartalarni almashtiring va qoldiqni o‘tkazing';
 
   @override
   String get lifeTaskWalletLocks => 'Ichida kalit yoki manzilingiz bo\'lsa, qulflarni almashtirishni o\'ylab ko\'ring';
@@ -7376,6 +7379,21 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lostWalletCheckHint => 'Yangi karta yoki raqam kerakmi, so\'rang.';
 
   @override
+  String get lostWalletHintMedical => 'Yangi karta so‘rang. A’zolik raqami odatda o‘zgarmaydi.';
+
+  @override
+  String get lostWalletHintMembership => 'Yangi karta yoki teg so‘rang.';
+
+  @override
+  String get lostWalletHintInsurance => 'Berishsa, yangi karta so‘rang. Polis raqami o‘zgarmaydi.';
+
+  @override
+  String get lostWalletHintFirearm => 'Politsiyaga xabar bering va yangi litsenziya kartasini so‘rang.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Kerak bo‘lsa, shifokor yoki klinikadan yangi nusxa so‘rang.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'U yerda hech narsa saqlanmagan edi';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Boshlangan: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Ish raqami nusxalandi';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lostWalletPhoneButton => 'Yo\'qolgan telefon rejasini boshlash';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara 30, 60 va 90 kundan keyin eslatadi.';
+  String get lostWalletStatementNote => 'Firibgarlik ko‘pincha haftalar o‘tib boshlangani uchun Vaultara 30, 60 va 90 kundan keyin yana tekshirishni eslatadi.';
 
   @override
   String get lostWalletStatementTitle => 'Bank ko\'chirmalarini tekshiring';
@@ -7452,6 +7465,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Topdim';
+
+  @override
+  String get lostWalletGotItBack => 'Qaytarib oldim';
 
   @override
   String get lostWalletFoundTitle => 'Xushxabar!';

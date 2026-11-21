@@ -7224,7 +7224,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Проверете ги изводите за плаќања што не сте ги направиле';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Поставете ја новата картичка за претплати и трајни налози';
+  String get lifeTaskWalletSubscriptions => 'Ставете ја новата банкарска картичка на трајните налози, претплатите и Google Pay или Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Додајте ги новите картички во Google Pay или Apple Pay';
@@ -7236,7 +7236,10 @@ class AppLocalizationsMk extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Блокирајте ја картичката за превоз или патарина и префрлете го салдото';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Побарајте нови картички за лојалност за да ги задржите поените';
+  String get lifeTaskWalletLoyalty => 'Заменете ги другите картички, како здравствена, транспортна и картички за лојалност, и префрлете го салдото';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Заменете ги другите картички, како транспортна и картички за лојалност, и префрлете го салдото';
 
   @override
   String get lifeTaskWalletLocks => 'Ако внатре имало клучеви или ваша адреса, размислете за замена на бравите';
@@ -7374,6 +7377,21 @@ class AppLocalizationsMk extends AppLocalizations {
   String get lostWalletCheckHint => 'Прашајте дали ви треба нова картичка или број.';
 
   @override
+  String get lostWalletHintMedical => 'Побарајте нова картичка. Членскиот број обично останува ист.';
+
+  @override
+  String get lostWalletHintMembership => 'Побарајте нова картичка или приврзок.';
+
+  @override
+  String get lostWalletHintInsurance => 'Побарајте нова картичка ако издаваат. Бројот на полисата останува ист.';
+
+  @override
+  String get lostWalletHintFirearm => 'Пријавете во полиција и побарајте нова картичка за дозволата.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Побарајте нова копија од лекарот или клиниката ако ви треба.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Таму немаше ништо зачувано';
 
   @override
@@ -7409,11 +7427,6 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Започнато: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Бројот на случајот е копиран';
 
   @override
@@ -7440,7 +7453,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get lostWalletPhoneButton => 'Започни план за изгубен телефон';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara ќе ве потсети по 30, 60 и 90 дена.';
+  String get lostWalletStatementNote => 'Vaultara ќе ве потсети повторно да проверите по 30, 60 и 90 дена, бидејќи измамите често почнуваат неколку недели подоцна.';
 
   @override
   String get lostWalletStatementTitle => 'Проверете ги банкарските изводи';
@@ -7450,6 +7463,9 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Го најдов';
+
+  @override
+  String get lostWalletGotItBack => 'Го вратив';
 
   @override
   String get lostWalletFoundTitle => 'Добри вести!';

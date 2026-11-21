@@ -7226,7 +7226,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get lifeTaskWalletStatements => 'بینک اسٹیٹمنٹس میں وہ ادائیگیاں دیکھیں جو آپ نے نہیں کیں';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'نیا کارڈ اپنی سبسکرپشنز اور خودکار ادائیگیوں پر لگائیں';
+  String get lifeTaskWalletSubscriptions => 'نیا بینک کارڈ ڈیبٹ آرڈرز، سبسکرپشنز اور Google Pay یا Apple Pay پر لگائیں';
 
   @override
   String get lifeTaskWalletPayApps => 'نئے کارڈ Google Pay یا Apple Pay میں شامل کریں';
@@ -7238,7 +7238,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get lifeTaskWalletTransport => 'اپنا ٹرانسپورٹ یا ٹول کارڈ بلاک کریں اور بیلنس منتقل کریں';
 
   @override
-  String get lifeTaskWalletLoyalty => 'نئے لائلٹی کارڈ مانگیں تاکہ آپ کے پوائنٹس محفوظ رہیں';
+  String get lifeTaskWalletLoyalty => 'دوسرے کارڈ تبدیل کروائیں، جیسے میڈیکل، ٹرانسپورٹ اور لائلٹی کارڈ، اور بیلنس منتقل کریں';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'دوسرے کارڈ تبدیل کروائیں، جیسے ٹرانسپورٹ اور لائلٹی کارڈ، اور بیلنس منتقل کریں';
 
   @override
   String get lifeTaskWalletLocks => 'اگر اس میں چابیاں یا آپ کا پتہ تھا تو تالے بدلنے پر غور کریں';
@@ -7376,6 +7379,21 @@ class AppLocalizationsUr extends AppLocalizations {
   String get lostWalletCheckHint => 'پوچھیں کہ کیا آپ کو نیا کارڈ یا نمبر چاہیے۔';
 
   @override
+  String get lostWalletHintMedical => 'نیا کارڈ مانگیں۔ ممبر نمبر عام طور پر وہی رہتا ہے۔';
+
+  @override
+  String get lostWalletHintMembership => 'نیا کارڈ یا ٹیگ مانگیں۔';
+
+  @override
+  String get lostWalletHintInsurance => 'اگر وہ جاری کرتے ہیں تو نیا کارڈ مانگیں۔ پالیسی نمبر وہی رہتا ہے۔';
+
+  @override
+  String get lostWalletHintFirearm => 'پولیس کو اطلاع دیں اور نیا لائسنس کارڈ مانگیں۔';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'ضرورت ہو تو ڈاکٹر یا کلینک سے نئی کاپی مانگیں۔';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'وہاں کچھ محفوظ نہیں تھا';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'شروع: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'کیس نمبر کاپی ہو گیا';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get lostWalletPhoneButton => 'گمشدہ فون کا پلان شروع کریں';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara آپ کو 30، 60 اور 90 دن بعد یاد دلائے گا۔';
+  String get lostWalletStatementNote => 'Vaultara آپ کو 30، 60 اور 90 دن بعد دوبارہ جانچنے کی یاد دلائے گا، کیونکہ دھوکا دہی اکثر ہفتوں بعد شروع ہوتی ہے۔';
 
   @override
   String get lostWalletStatementTitle => 'اپنی بینک اسٹیٹمنٹس دیکھیں';
@@ -7452,6 +7465,9 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'مجھے مل گیا';
+
+  @override
+  String get lostWalletGotItBack => 'مجھے یہ واپس مل گیا';
 
   @override
   String get lostWalletFoundTitle => 'اچھی خبر!';

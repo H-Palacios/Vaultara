@@ -7226,7 +7226,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lifeTaskWalletStatements => 'کورتەی بانکەکەت بپشکنە بۆ پارەدانێک کە نەتکردووە';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'کارتە نوێیەکە لەسەر بەشداربوونەکان و پارەدانە خۆکارەکانت دابنێ';
+  String get lifeTaskWalletSubscriptions => 'کارتی نوێی بانک بخەرە سەر پارەدانە خۆکارەکان، بەشداریکردنەکان و Google Pay یان Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'کارتە نوێیەکان زیاد بکە بۆ Google Pay یان Apple Pay';
@@ -7238,7 +7238,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lifeTaskWalletTransport => 'کارتی گواستنەوە یان باجی ڕێگا ڕابگرە و باڵانسەکە بگوازەوە';
 
   @override
-  String get lifeTaskWalletLoyalty => 'داوای کارتی دڵسۆزی نوێ بکە بۆ ئەوەی خاڵەکانت بمێنن';
+  String get lifeTaskWalletLoyalty => 'کارتەکانی تر بگۆڕە، وەک کارتی دڵنیایی تەندروستی، گواستنەوە و دڵسۆزی، و باڵانس بگوازەرەوە';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'کارتەکانی تر بگۆڕە، وەک کارتی گواستنەوە و دڵسۆزی، و باڵانس بگوازەرەوە';
 
   @override
   String get lifeTaskWalletLocks => 'ئەگەر کلیل یان ناونیشانەکەت تێیدا بوو، بیر لە گۆڕینی قوفڵەکان بکەرەوە';
@@ -7376,6 +7379,21 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lostWalletCheckHint => 'بپرسە ئایا کارت یان ژمارەی نوێت پێویستە.';
 
   @override
+  String get lostWalletHintMedical => 'کارتێکی نوێ داوا بکە. ژمارەی ئەندامێتی زۆرجار وەک خۆی دەمێنێتەوە.';
+
+  @override
+  String get lostWalletHintMembership => 'کارت یان تاگێکی نوێ داوا بکە.';
+
+  @override
+  String get lostWalletHintInsurance => 'ئەگەر دەریدەکەن کارتێکی نوێ داوا بکە. ژمارەی بیمەکە وەک خۆی دەمێنێتەوە.';
+
+  @override
+  String get lostWalletHintFirearm => 'بە پۆلیس ڕابگەیەنە و کارتێکی نوێی مۆڵەت داوا بکە.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'ئەگەر پێویستت بوو، کۆپییەکی نوێ لە پزیشک یان کلینیک داوا بکە.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'هیچ شتێکی پاشەکەوتکراو لەوێ نەبوو';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'دەستپێکرد: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'ژمارەی دۆسیە کۆپی کرا';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lostWalletPhoneButton => 'دەستپێکردنی پلانی مۆبایلی ونبوو';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara دوای 30، 60 و 90 ڕۆژ بیرت دەخاتەوە.';
+  String get lostWalletStatementNote => 'Vaultara بیرت دەخاتەوە دوای 30، 60 و 90 ڕۆژ دووبارە بپشکنیت، چونکە فێڵ زۆرجار هەفتەکان دواتر دەست پێدەکات.';
 
   @override
   String get lostWalletStatementTitle => 'کورتەی بانکەکانت بپشکنە';
@@ -7452,6 +7465,9 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'دۆزیمەوە';
+
+  @override
+  String get lostWalletGotItBack => 'گەڕاندمەوە';
 
   @override
   String get lostWalletFoundTitle => 'هەواڵی خۆش!';

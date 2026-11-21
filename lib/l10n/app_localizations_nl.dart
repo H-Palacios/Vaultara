@@ -7226,7 +7226,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Controleer je bankafschriften op betalingen die je niet hebt gedaan';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Zet de nieuwe pas op je abonnementen en automatische incasso\'s';
+  String get lifeTaskWalletSubscriptions => 'Zet de nieuwe bankpas op je automatische incasso\'s, abonnementen en Google Pay of Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Voeg de nieuwe passen toe aan Google Pay of Apple Pay';
@@ -7238,7 +7238,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Blokkeer je ov- of tolkaart en zet het saldo over';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Vraag nieuwe klantenkaarten aan zodat je je punten houdt';
+  String get lifeTaskWalletLoyalty => 'Vervang andere passen, zoals zorg-, ov- en klantenkaarten, en zet het saldo over';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Vervang andere passen, zoals ov- en klantenkaarten, en zet het saldo over';
 
   @override
   String get lifeTaskWalletLocks => 'Zaten er sleutels of je adres in, overweeg dan de sloten te vervangen';
@@ -7379,6 +7382,21 @@ class AppLocalizationsNl extends AppLocalizations {
   String get lostWalletCheckHint => 'Vraag of je een nieuwe pas of nieuw nummer nodig hebt.';
 
   @override
+  String get lostWalletHintMedical => 'Vraag een nieuwe pas aan. Je lidnummer blijft meestal hetzelfde.';
+
+  @override
+  String get lostWalletHintMembership => 'Vraag een nieuwe pas of tag aan.';
+
+  @override
+  String get lostWalletHintInsurance => 'Vraag een nieuwe pas aan als ze die uitgeven. Je polisnummer blijft hetzelfde.';
+
+  @override
+  String get lostWalletHintFirearm => 'Doe aangifte bij de politie en vraag een nieuwe vergunningskaart aan.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Vraag je arts of kliniek om een nieuwe kopie als je die nodig hebt.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Daar was niets opgeslagen';
 
   @override
@@ -7414,11 +7432,6 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Gestart: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Zaaknummer gekopieerd';
 
   @override
@@ -7445,7 +7458,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get lostWalletPhoneButton => 'Plan voor verloren telefoon starten';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara herinnert je na 30, 60 en 90 dagen.';
+  String get lostWalletStatementNote => 'Vaultara herinnert je eraan om na 30, 60 en 90 dagen opnieuw te kijken, want fraude begint vaak pas weken later.';
 
   @override
   String get lostWalletStatementTitle => 'Controleer je bankafschriften';
@@ -7455,6 +7468,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Ik heb hem gevonden';
+
+  @override
+  String get lostWalletGotItBack => 'Ik heb hem terug';
 
   @override
   String get lostWalletFoundTitle => 'Goed nieuws!';

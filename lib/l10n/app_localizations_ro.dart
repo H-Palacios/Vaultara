@@ -7298,7 +7298,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Verifică extrasele pentru plăți pe care nu le-ai făcut';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Pune noul card la abonamente și debitări directe';
+  String get lifeTaskWalletSubscriptions => 'Pune noul card bancar pe debitările directe, abonamente și Google Pay sau Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Adaugă noile carduri în Google Pay sau Apple Pay';
@@ -7310,7 +7310,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Blochează cardul de transport sau de taxă de drum și mută soldul';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Cere carduri de fidelitate noi ca să-ți păstrezi punctele';
+  String get lifeTaskWalletLoyalty => 'Înlocuiește celelalte carduri, cum ar fi cel de sănătate, de transport și de fidelitate, și mută soldul';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Înlocuiește celelalte carduri, cum ar fi cel de transport și de fidelitate, și mută soldul';
 
   @override
   String get lifeTaskWalletLocks => 'Dacă erau chei sau adresa ta înăuntru, gândește-te să schimbi încuietorile';
@@ -7451,6 +7454,21 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lostWalletCheckHint => 'Întreabă dacă ai nevoie de un card sau un număr nou.';
 
   @override
+  String get lostWalletHintMedical => 'Cere un card nou. Numărul de membru rămâne de obicei același.';
+
+  @override
+  String get lostWalletHintMembership => 'Cere un card sau un tag nou.';
+
+  @override
+  String get lostWalletHintInsurance => 'Cere un card nou dacă emit. Numărul poliței rămâne același.';
+
+  @override
+  String get lostWalletHintFirearm => 'Anunță poliția și cere un card nou pentru permis.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Cere o copie nouă de la medic sau clinică, dacă ai nevoie.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Nu era nimic salvat acolo';
 
   @override
@@ -7486,11 +7504,6 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Început: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Numărul dosarului a fost copiat';
 
   @override
@@ -7517,7 +7530,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lostWalletPhoneButton => 'Pornește planul pentru telefon pierdut';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara îți amintește după 30, 60 și 90 de zile.';
+  String get lostWalletStatementNote => 'Vaultara îți va aminti să verifici din nou după 30, 60 și 90 de zile, pentru că frauda începe adesea după câteva săptămâni.';
 
   @override
   String get lostWalletStatementTitle => 'Verifică extrasele bancare';
@@ -7527,6 +7540,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'L-am găsit';
+
+  @override
+  String get lostWalletGotItBack => 'L-am recuperat';
 
   @override
   String get lostWalletFoundTitle => 'Vești bune!';

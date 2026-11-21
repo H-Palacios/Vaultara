@@ -7226,7 +7226,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Kagua taarifa za benki kwa malipo ambayo hukufanya';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Weka kadi mpya kwenye usajili na makato yako ya moja kwa moja';
+  String get lifeTaskWalletSubscriptions => 'Weka kadi mpya ya benki kwenye malipo ya moja kwa moja, usajili na Google Pay au Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Ongeza kadi mpya kwenye Google Pay au Apple Pay';
@@ -7238,7 +7238,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Zuia kadi yako ya usafiri au ya ushuru wa barabara na uhamishe salio';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Omba kadi mpya za uaminifu ili ubaki na pointi zako';
+  String get lifeTaskWalletLoyalty => 'Badilisha kadi nyingine, kama za bima ya afya, usafiri na uaminifu, na uhamishe salio';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Badilisha kadi nyingine, kama za usafiri na uaminifu, na uhamishe salio';
 
   @override
   String get lifeTaskWalletLocks => 'Ikiwa funguo au anwani yako vilikuwemo, fikiria kubadilisha kufuli';
@@ -7376,6 +7379,21 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lostWalletCheckHint => 'Uliza kama unahitaji kadi au nambari mpya.';
 
   @override
+  String get lostWalletHintMedical => 'Omba kadi mpya. Nambari ya uanachama kwa kawaida haibadiliki.';
+
+  @override
+  String get lostWalletHintMembership => 'Omba kadi au lebo mpya.';
+
+  @override
+  String get lostWalletHintInsurance => 'Omba kadi mpya ikiwa wanatoa. Nambari ya sera haibadiliki.';
+
+  @override
+  String get lostWalletHintFirearm => 'Ripoti polisi na uombe kadi mpya ya leseni.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Omba nakala mpya kwa daktari au kliniki ikiwa unaihitaji.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Hakuna kilichohifadhiwa kilichowekwa hapo';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Ilianza: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Nambari ya kesi imenakiliwa';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lostWalletPhoneButton => 'Anza mpango wa simu iliyopotea';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara itakukumbusha baada ya siku 30, 60 na 90.';
+  String get lostWalletStatementNote => 'Vaultara itakukumbusha kuangalia tena baada ya siku 30, 60 na 90, kwa sababu ulaghai mara nyingi huanza wiki kadhaa baadaye.';
 
   @override
   String get lostWalletStatementTitle => 'Kagua taarifa zako za benki';
@@ -7452,6 +7465,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Nimeipata';
+
+  @override
+  String get lostWalletGotItBack => 'Nimeirejesha';
 
   @override
   String get lostWalletFoundTitle => 'Habari njema!';

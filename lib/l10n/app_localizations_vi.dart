@@ -7170,7 +7170,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Kiểm tra sao kê ngân hàng tìm khoản thanh toán bạn không thực hiện';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Đặt thẻ mới cho các gói đăng ký và lệnh trích nợ tự động';
+  String get lifeTaskWalletSubscriptions => 'Cập nhật thẻ ngân hàng mới cho các khoản trích nợ tự động, gói đăng ký và Google Pay hoặc Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Thêm thẻ mới vào Google Pay hoặc Apple Pay';
@@ -7182,7 +7182,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Khóa thẻ đi lại hoặc thẻ thu phí đường và chuyển số dư';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Xin thẻ khách hàng thân thiết mới để giữ điểm';
+  String get lifeTaskWalletLoyalty => 'Làm lại các thẻ khác, như thẻ bảo hiểm y tế, thẻ đi lại và thẻ thành viên, rồi chuyển số dư';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Làm lại các thẻ khác, như thẻ đi lại và thẻ thành viên, rồi chuyển số dư';
 
   @override
   String get lifeTaskWalletLocks => 'Nếu có chìa khóa hoặc địa chỉ của bạn bên trong, hãy cân nhắc thay khóa';
@@ -7320,6 +7323,21 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lostWalletCheckHint => 'Hỏi xem bạn có cần thẻ hoặc số mới không.';
 
   @override
+  String get lostWalletHintMedical => 'Yêu cầu thẻ mới. Số thành viên thường vẫn giữ nguyên.';
+
+  @override
+  String get lostWalletHintMembership => 'Yêu cầu thẻ hoặc thẻ từ mới.';
+
+  @override
+  String get lostWalletHintInsurance => 'Yêu cầu thẻ mới nếu họ có cấp. Số hợp đồng vẫn giữ nguyên.';
+
+  @override
+  String get lostWalletHintFirearm => 'Báo công an và yêu cầu thẻ giấy phép mới.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Xin bác sĩ hoặc phòng khám bản sao mới nếu bạn cần.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Không có gì được lưu ở đó';
 
   @override
@@ -7355,11 +7373,6 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Bắt đầu: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Đã sao chép số hồ sơ';
 
   @override
@@ -7386,7 +7399,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lostWalletPhoneButton => 'Bắt đầu kế hoạch mất điện thoại';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara sẽ nhắc bạn sau 30, 60 và 90 ngày.';
+  String get lostWalletStatementNote => 'Vaultara sẽ nhắc bạn kiểm tra lại sau 30, 60 và 90 ngày, vì gian lận thường bắt đầu vài tuần sau đó.';
 
   @override
   String get lostWalletStatementTitle => 'Kiểm tra sao kê ngân hàng';
@@ -7396,6 +7409,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Tôi đã tìm thấy';
+
+  @override
+  String get lostWalletGotItBack => 'Tôi đã lấy lại được';
 
   @override
   String get lostWalletFoundTitle => 'Tin vui!';

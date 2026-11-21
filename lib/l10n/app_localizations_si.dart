@@ -7225,7 +7225,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lifeTaskWalletStatements => 'ඔබ නොකළ ගෙවීම් සඳහා බැංකු ප්‍රකාශ පරීක්ෂා කරන්න';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'නව කාඩ්පත දායකත්ව සහ ස්වයංක්‍රීය ගෙවීම්වලට දමන්න';
+  String get lifeTaskWalletSubscriptions => 'නව බැංකු කාඩ්පත ස්වයංක්‍රීය ගෙවීම්, දායකත්ව සහ Google Pay හෝ Apple Pay වෙත එක් කරන්න';
 
   @override
   String get lifeTaskWalletPayApps => 'නව කාඩ්පත් Google Pay හෝ Apple Pay වෙත එක් කරන්න';
@@ -7237,7 +7237,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lifeTaskWalletTransport => 'ප්‍රවාහන හෝ මාර්ග ගාස්තු කාඩ්පත අවහිර කර ශේෂය මාරු කරන්න';
 
   @override
-  String get lifeTaskWalletLoyalty => 'ලකුණු රඳවා ගැනීමට නව පක්ෂපාතීත්ව කාඩ්පත් ඉල්ලන්න';
+  String get lifeTaskWalletLoyalty => 'සෞඛ්‍ය රක්ෂණ, ප්‍රවාහන සහ ලෝයල්ටි කාඩ්පත් වැනි වෙනත් කාඩ්පත් ප්‍රතිස්ථාපනය කර ශේෂය මාරු කරන්න';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'ප්‍රවාහන සහ ලෝයල්ටි කාඩ්පත් වැනි වෙනත් කාඩ්පත් ප්‍රතිස්ථාපනය කර ශේෂය මාරු කරන්න';
 
   @override
   String get lifeTaskWalletLocks => 'ඇතුළේ යතුරු හෝ ඔබේ ලිපිනය තිබුණා නම් අගුළු මාරු කිරීම ගැන සිතන්න';
@@ -7375,6 +7378,21 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lostWalletCheckHint => 'නව කාඩ්පතක් හෝ අංකයක් අවශ්‍යදැයි අසන්න.';
 
   @override
+  String get lostWalletHintMedical => 'නව කාඩ්පතක් ඉල්ලන්න. සාමාජික අංකය සාමාන්‍යයෙන් එලෙසම පවතී.';
+
+  @override
+  String get lostWalletHintMembership => 'නව කාඩ්පතක් හෝ ටැගයක් ඉල්ලන්න.';
+
+  @override
+  String get lostWalletHintInsurance => 'ඔවුන් නිකුත් කරයි නම් නව කාඩ්පතක් ඉල්ලන්න. ප්‍රතිපත්ති අංකය එලෙසම පවතී.';
+
+  @override
+  String get lostWalletHintFirearm => 'පොලිසියට වාර්තා කර නව බලපත්‍ර කාඩ්පතක් ඉල්ලන්න.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'අවශ්‍ය නම් වෛද්‍යවරයාගෙන් හෝ සායනයෙන් නව පිටපතක් ඉල්ලන්න.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'එහි කිසිවක් සුරැකී නොතිබුණි';
 
   @override
@@ -7410,11 +7428,6 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'ආරම්භය: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'නඩු අංකය පිටපත් කළා';
 
   @override
@@ -7441,7 +7454,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lostWalletPhoneButton => 'නැතිවූ දුරකථන සැලැස්ම අරඹන්න';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara දින 30, 60 සහ 90කට පසු මතක් කරයි.';
+  String get lostWalletStatementNote => 'වංචා බොහෝ විට සති කිහිපයකට පසු ආරම්භ වන නිසා, දින 30, 60 සහ 90 කට පසු නැවත පරීක්ෂා කිරීමට Vaultara මතක් කරයි.';
 
   @override
   String get lostWalletStatementTitle => 'බැංකු ප්‍රකාශ පරීක්ෂා කරන්න';
@@ -7451,6 +7464,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'මට හමු වුණා';
+
+  @override
+  String get lostWalletGotItBack => 'මට එය ආපසු ලැබුණා';
 
   @override
   String get lostWalletFoundTitle => 'සුබ ආරංචියක්!';

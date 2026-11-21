@@ -7226,7 +7226,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Kontrolli pangaväljavõtteid maksete suhtes, mida sa ei teinud';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Pane uus kaart tellimustele ja otsekorraldustele';
+  String get lifeTaskWalletSubscriptions => 'Lisa uus pangakaart otsekorraldustele, tellimustele ja Google Payle või Apple Payle';
 
   @override
   String get lifeTaskWalletPayApps => 'Lisa uued kaardid Google Pay või Apple Pay rakendusse';
@@ -7238,7 +7238,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Sulge ühistranspordi- või teemaksukaart ja kanna jääk üle';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Küsi uued kliendikaardid, et punktid alles jääksid';
+  String get lifeTaskWalletLoyalty => 'Asenda muud kaardid, nagu tervise-, ühistranspordi- ja kliendikaardid, ning kanna saldo üle';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Asenda muud kaardid, nagu ühistranspordi- ja kliendikaardid, ning kanna saldo üle';
 
   @override
   String get lifeTaskWalletLocks => 'Kui seal olid võtmed või sinu aadress, kaalu lukkude vahetamist';
@@ -7379,6 +7382,21 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lostWalletCheckHint => 'Küsi, kas vajad uut kaarti või numbrit.';
 
   @override
+  String get lostWalletHintMedical => 'Küsi uut kaarti. Liikmenumber jääb tavaliselt samaks.';
+
+  @override
+  String get lostWalletHintMembership => 'Küsi uut kaarti või kiipi.';
+
+  @override
+  String get lostWalletHintInsurance => 'Küsi uut kaarti, kui nad seda väljastavad. Poliisi number jääb samaks.';
+
+  @override
+  String get lostWalletHintFirearm => 'Teata politseile ja küsi uut loakaarti.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Küsi vajadusel arstilt või kliinikust uut koopiat.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Seal polnud midagi salvestatud';
 
   @override
@@ -7414,11 +7432,6 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Alustatud: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Juhtumi number kopeeritud';
 
   @override
@@ -7445,7 +7458,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lostWalletPhoneButton => 'Alusta kadunud telefoni plaani';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara tuletab meelde 30, 60 ja 90 päeva pärast.';
+  String get lostWalletStatementNote => 'Vaultara tuletab meelde uuesti kontrollida 30, 60 ja 90 päeva pärast, sest pettus algab sageli nädalaid hiljem.';
 
   @override
   String get lostWalletStatementTitle => 'Kontrolli pangaväljavõtteid';
@@ -7455,6 +7468,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Leidsin selle';
+
+  @override
+  String get lostWalletGotItBack => 'Sain selle tagasi';
 
   @override
   String get lostWalletFoundTitle => 'Hea uudis!';

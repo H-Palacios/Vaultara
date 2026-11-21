@@ -7447,7 +7447,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lifeTaskWalletStatements => 'راجع كشوف حسابك بحثًا عن مدفوعات لم تقم بها';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'ضع البطاقة الجديدة على اشتراكاتك وأوامر الخصم المباشر';
+  String get lifeTaskWalletSubscriptions => 'أضف البطاقة المصرفية الجديدة إلى الخصومات المباشرة والاشتراكات وGoogle Pay أو Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'أضف البطاقات الجديدة إلى Google Pay أو Apple Pay';
@@ -7459,7 +7459,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lifeTaskWalletTransport => 'أوقف بطاقة المواصلات أو رسوم الطرق وانقل الرصيد';
 
   @override
-  String get lifeTaskWalletLoyalty => 'اطلب بطاقات ولاء جديدة لتحتفظ بنقاطك';
+  String get lifeTaskWalletLoyalty => 'استبدل البطاقات الأخرى، مثل بطاقات التأمين الطبي والمواصلات والولاء، وانقل أي رصيد';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'استبدل البطاقات الأخرى، مثل بطاقات المواصلات والولاء، وانقل أي رصيد';
 
   @override
   String get lifeTaskWalletLocks => 'إن كانت فيها مفاتيح أو عنوانك، ففكّر في تغيير الأقفال';
@@ -7597,6 +7600,21 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lostWalletCheckHint => 'اسأل إن كنت تحتاج بطاقة أو رقمًا جديدًا.';
 
   @override
+  String get lostWalletHintMedical => 'اطلب بطاقة جديدة. يبقى رقم العضوية عادةً كما هو.';
+
+  @override
+  String get lostWalletHintMembership => 'اطلب بطاقة أو شارة جديدة.';
+
+  @override
+  String get lostWalletHintInsurance => 'اطلب بطاقة جديدة إن كانوا يصدرونها. يبقى رقم الوثيقة كما هو.';
+
+  @override
+  String get lostWalletHintFirearm => 'أبلغ الشرطة واطلب بطاقة ترخيص جديدة.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'اطلب نسخة جديدة من طبيبك أو العيادة إن احتجت إليها.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'لم يكن هناك شيء محفوظ';
 
   @override
@@ -7632,11 +7650,6 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'البداية: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'تم نسخ رقم القضية';
 
   @override
@@ -7663,7 +7676,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lostWalletPhoneButton => 'بدء خطة الهاتف المفقود';
 
   @override
-  String get lostWalletStatementNote => 'سيذكّرك Vaultara بعد 30 و60 و90 يومًا.';
+  String get lostWalletStatementNote => 'سيذكّرك Vaultara بالتحقق مجددًا بعد 30 و60 و90 يومًا، لأن الاحتيال غالبًا ما يبدأ بعد أسابيع.';
 
   @override
   String get lostWalletStatementTitle => 'راجع كشوف حسابك';
@@ -7673,6 +7686,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'وجدتها';
+
+  @override
+  String get lostWalletGotItBack => 'استعدتها';
 
   @override
   String get lostWalletFoundTitle => 'أخبار سارة!';

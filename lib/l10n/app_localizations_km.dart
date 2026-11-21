@@ -7168,7 +7168,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lifeTaskWalletStatements => 'ពិនិត្យរបាយការណ៍ធនាគាររកការបង់ប្រាក់ដែលអ្នកមិនបានធ្វើ';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'ដាក់កាតថ្មីលើការជាវ និងការដកប្រាក់ស្វ័យប្រវត្តិ';
+  String get lifeTaskWalletSubscriptions => 'ដាក់កាតធនាគារថ្មីលើការកាត់ប្រាក់ស្វ័យប្រវត្តិ ការជាវ និង Google Pay ឬ Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'បន្ថែមកាតថ្មីទៅ Google Pay ឬ Apple Pay';
@@ -7180,7 +7180,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lifeTaskWalletTransport => 'បិទកាតដឹកជញ្ជូន ឬកាតបង់ថ្លៃផ្លូវ ហើយផ្ទេរសមតុល្យ';
 
   @override
-  String get lifeTaskWalletLoyalty => 'ស្នើកាតភក្តីភាពថ្មីដើម្បីរក្សាពិន្ទុ';
+  String get lifeTaskWalletLoyalty => 'ជំនួសកាតផ្សេងទៀត ដូចជាកាតធានារ៉ាប់រងសុខភាព ដឹកជញ្ជូន និងកាតសមាជិក ហើយផ្ទេរសមតុល្យ';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'ជំនួសកាតផ្សេងទៀត ដូចជាកាតដឹកជញ្ជូន និងកាតសមាជិក ហើយផ្ទេរសមតុល្យ';
 
   @override
   String get lifeTaskWalletLocks => 'ប្រសិនបើមានសោ ឬអាសយដ្ឋានរបស់អ្នកនៅខាងក្នុង គិតអំពីការប្តូរសោ';
@@ -7318,6 +7321,21 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lostWalletCheckHint => 'សួរថាតើអ្នកត្រូវការកាត ឬលេខថ្មីឬទេ។';
 
   @override
+  String get lostWalletHintMedical => 'សុំកាតថ្មី។ លេខសមាជិកជាធម្មតានៅដដែល។';
+
+  @override
+  String get lostWalletHintMembership => 'សុំកាត ឬស្លាកថ្មី។';
+
+  @override
+  String get lostWalletHintInsurance => 'សុំកាតថ្មី ប្រសិនបើពួកគេចេញឱ្យ។ លេខបណ្ណសន្យារ៉ាប់រងនៅដដែល។';
+
+  @override
+  String get lostWalletHintFirearm => 'រាយការណ៍ទៅប៉ូលិស ហើយសុំកាតអាជ្ញាប័ណ្ណថ្មី។';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'សុំច្បាប់ចម្លងថ្មីពីគ្រូពេទ្យ ឬគ្លីនិក ប្រសិនបើត្រូវការ។';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'គ្មានអ្វីបានរក្សាទុកនៅទីនោះ';
 
   @override
@@ -7353,11 +7371,6 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'បានចាប់ផ្ដើម៖ $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'បានចម្លងលេខករណី';
 
   @override
@@ -7384,7 +7397,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lostWalletPhoneButton => 'ចាប់ផ្តើមផែនការទូរស័ព្ទបាត់';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara នឹងរំលឹកអ្នកក្រោយ 30, 60 និង 90 ថ្ងៃ។';
+  String get lostWalletStatementNote => 'Vaultara នឹងរំលឹកអ្នកឱ្យពិនិត្យម្ដងទៀតក្រោយ 30, 60 និង 90 ថ្ងៃ ព្រោះការបោកប្រាស់ច្រើនចាប់ផ្ដើមប៉ុន្មានសប្ដាហ៍ក្រោយ។';
 
   @override
   String get lostWalletStatementTitle => 'ពិនិត្យរបាយការណ៍ធនាគារ';
@@ -7394,6 +7407,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'ខ្ញុំរកឃើញហើយ';
+
+  @override
+  String get lostWalletGotItBack => 'ខ្ញុំបានវាមកវិញហើយ';
 
   @override
   String get lostWalletFoundTitle => 'ដំណឹងល្អ!';

@@ -7226,7 +7226,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Ստուգեք բանկային քաղվածքները՝ ձեր չկատարած վճարումների համար';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Նոր քարտը կապեք բաժանորդագրություններին և ավտոմատ վճարումներին';
+  String get lifeTaskWalletSubscriptions => 'Նոր բանկային քարտը կցեք ավտոմատ վճարումներին, բաժանորդագրություններին և Google Pay-ին կամ Apple Pay-ին';
 
   @override
   String get lifeTaskWalletPayApps => 'Ավելացրեք նոր քարտերը Google Pay կամ Apple Pay';
@@ -7238,7 +7238,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Արգելափակեք տրանսպորտային կամ ճանապարհավճարի քարտը և փոխանցեք մնացորդը';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Խնդրեք նոր հավատարմության քարտեր՝ միավորները պահելու համար';
+  String get lifeTaskWalletLoyalty => 'Փոխարինեք մյուս քարտերը, օրինակ՝ բժշկական, տրանսպորտային և լոյալության, և տեղափոխեք մնացորդը';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Փոխարինեք մյուս քարտերը, օրինակ՝ տրանսպորտային և լոյալության, և տեղափոխեք մնացորդը';
 
   @override
   String get lifeTaskWalletLocks => 'Եթե ներսում բանալիներ կամ ձեր հասցեն կար, մտածեք կողպեքները փոխելու մասին';
@@ -7376,6 +7379,21 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lostWalletCheckHint => 'Հարցրեք՝ արդյոք նոր քարտ կամ համար է պետք։';
 
   @override
+  String get lostWalletHintMedical => 'Խնդրեք նոր քարտ։ Անդամի համարը սովորաբար նույնն է մնում։';
+
+  @override
+  String get lostWalletHintMembership => 'Խնդրեք նոր քարտ կամ պիտակ։';
+
+  @override
+  String get lostWalletHintInsurance => 'Խնդրեք նոր քարտ, եթե տրամադրում են։ Պոլիսի համարը նույնն է մնում։';
+
+  @override
+  String get lostWalletHintFirearm => 'Հայտնեք ոստիկանությանը և խնդրեք նոր լիցենզիայի քարտ։';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Անհրաժեշտության դեպքում խնդրեք նոր պատճեն բժշկից կամ կլինիկայից։';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Այնտեղ պահպանված ոչինչ չկար';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Սկսվել է՝ $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Գործի համարը պատճենվեց';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lostWalletPhoneButton => 'Սկսել կորած հեռախոսի պլանը';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara-ն կհիշեցնի 30, 60 և 90 օր հետո։';
+  String get lostWalletStatementNote => 'Vaultara-ն կհիշեցնի կրկին ստուգել 30, 60 և 90 օր անց, քանի որ խարդախությունը հաճախ սկսվում է շաբաթներ անց։';
 
   @override
   String get lostWalletStatementTitle => 'Ստուգեք բանկային քաղվածքները';
@@ -7452,6 +7465,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Գտա';
+
+  @override
+  String get lostWalletGotItBack => 'Ետ ստացա';
 
   @override
   String get lostWalletFoundTitle => 'Լավ լուր։';

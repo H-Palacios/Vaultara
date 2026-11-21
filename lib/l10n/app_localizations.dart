@@ -12430,7 +12430,7 @@ abstract class AppLocalizations {
   /// A step in a lost wallet plan. Imperative, short.
   ///
   /// In en, this message translates to:
-  /// **'Put the new card on your subscriptions and debit orders'**
+  /// **'Put the new bank card on your debit orders, subscriptions and Google Pay or Apple Pay'**
   String get lifeTaskWalletSubscriptions;
 
   /// A step in a lost wallet plan. Imperative, short.
@@ -12454,8 +12454,14 @@ abstract class AppLocalizations {
   /// A step in a lost wallet plan. Imperative, short.
   ///
   /// In en, this message translates to:
-  /// **'Ask for new loyalty cards so you keep your points'**
+  /// **'Replace other cards, like medical aid, transport and loyalty cards, and move any balance'**
   String get lifeTaskWalletLoyalty;
+
+  /// Lost wallet step when the medical aid card is already listed under Check these.
+  ///
+  /// In en, this message translates to:
+  /// **'Replace other cards, like transport and loyalty cards, and move any balance'**
+  String get lifeTaskWalletOtherCardsShort;
 
   /// A step in a lost wallet plan. Imperative, short.
   ///
@@ -12685,6 +12691,36 @@ abstract class AppLocalizations {
   /// **'Ask whether you need a new card or number.'**
   String get lostWalletCheckHint;
 
+  /// Lost wallet, Check these: hint under a medical aid or health insurance card.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for a new card. Your member number usually stays the same.'**
+  String get lostWalletHintMedical;
+
+  /// Lost wallet, Check these: hint under a gym or club membership card.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for a new card or tag.'**
+  String get lostWalletHintMembership;
+
+  /// Lost wallet, Check these: hint under a car, home, life or travel insurance card.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask for a new card if they issue one. Your policy number stays the same.'**
+  String get lostWalletHintInsurance;
+
+  /// Lost wallet, Check these: hint under a firearm licence.
+  ///
+  /// In en, this message translates to:
+  /// **'Report it to the police and ask for a new licence card.'**
+  String get lostWalletHintFirearm;
+
+  /// Lost wallet, Check these: hint under a prescription, vaccination or medical certificate.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask your doctor or clinic for a new copy if you need it.'**
+  String get lostWalletHintMedicalPaper;
+
   /// On the Lost my wallet screen.
   ///
   /// In en, this message translates to:
@@ -12739,12 +12775,6 @@ abstract class AppLocalizations {
   /// **'Next: replace {name}'**
   String lostWalletNextReplace(String name);
 
-  /// Lost wallet status card: how long ago the plan started. {time} is relative, e.g. "25 minutes ago".
-  ///
-  /// In en, this message translates to:
-  /// **'Started {time}'**
-  String lostWalletStarted(String time);
-
   /// Shown after copying the police case number.
   ///
   /// In en, this message translates to:
@@ -12796,7 +12826,7 @@ abstract class AppLocalizations {
   /// Note under the statement step.
   ///
   /// In en, this message translates to:
-  /// **'Vaultara reminds you after 30, 60 and 90 days.'**
+  /// **'Vaultara will remind you to check again after 30, 60 and 90 days, because fraud often starts weeks later.'**
   String get lostWalletStatementNote;
 
   /// Notification title.
@@ -12816,6 +12846,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'I found it'**
   String get lostWalletFoundButton;
+
+  /// Status card button on a stolen wallet plan, when the wallet came back.
+  ///
+  /// In en, this message translates to:
+  /// **'I got it back'**
+  String get lostWalletGotItBack;
 
   /// Dialog title when the wallet is found.
   ///

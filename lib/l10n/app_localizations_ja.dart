@@ -7158,7 +7158,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lifeTaskWalletStatements => '身に覚えのない支払いがないか明細を確認する';
 
   @override
-  String get lifeTaskWalletSubscriptions => '新しいカードをサブスクや自動引き落としに登録する';
+  String get lifeTaskWalletSubscriptions => '新しい銀行カードを口座振替、サブスク、Google Pay や Apple Pay に登録する';
 
   @override
   String get lifeTaskWalletPayApps => '新しいカードを Google Pay や Apple Pay に追加する';
@@ -7170,7 +7170,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lifeTaskWalletTransport => '交通系カードや ETC カードを止めて残高を移す';
 
   @override
-  String get lifeTaskWalletLoyalty => 'ポイントを失わないようポイントカードを再発行する';
+  String get lifeTaskWalletLoyalty => '医療保険証、交通系カード、ポイントカードなど他のカードを再発行し、残高を移す';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => '交通系カードやポイントカードなど他のカードを再発行し、残高を移す';
 
   @override
   String get lifeTaskWalletLocks => '鍵や住所が入っていたなら、鍵の交換を検討する';
@@ -7308,6 +7311,21 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lostWalletCheckHint => '新しいカードや番号が必要か問い合わせます。';
 
   @override
+  String get lostWalletHintMedical => '新しいカードを依頼してください。会員番号はふつう変わりません。';
+
+  @override
+  String get lostWalletHintMembership => '新しいカードやタグを依頼してください。';
+
+  @override
+  String get lostWalletHintInsurance => '発行しているなら新しいカードを依頼してください。証券番号は変わりません。';
+
+  @override
+  String get lostWalletHintFirearm => '警察に届け出て、新しい許可証カードを依頼してください。';
+
+  @override
+  String get lostWalletHintMedicalPaper => '必要なら、医師やクリニックに新しい写しを依頼してください。';
+
+  @override
   String get lostWalletPlanEmptyTitle => '保存済みのものはありませんでした';
 
   @override
@@ -7343,11 +7361,6 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return '開始：$time';
-  }
-
-  @override
   String get lostWalletCaseCopied => '受理番号をコピーしました';
 
   @override
@@ -7374,7 +7387,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lostWalletPhoneButton => 'スマホ紛失プランを開始';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara が30日後、60日後、90日後にお知らせします。';
+  String get lostWalletStatementNote => '不正利用は数週間後に始まることが多いため、30日後、60日後、90日後にもう一度確認するよう Vaultara がお知らせします。';
 
   @override
   String get lostWalletStatementTitle => '明細を確認';
@@ -7384,6 +7397,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => '見つかった';
+
+  @override
+  String get lostWalletGotItBack => '戻ってきた';
 
   @override
   String get lostWalletFoundTitle => 'よかったですね!';

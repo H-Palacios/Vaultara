@@ -7226,7 +7226,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Ka duba bayanan bankinka don biyan da ba kai ka yi ba';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Ka sa sabon katin a kan biyan kuɗin wata-wata da cire kuɗi na kai-tsaye';
+  String get lifeTaskWalletSubscriptions => 'Saka sabon katin banki a kan biyan kai-tsaye, rajista da Google Pay ko Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Ka ƙara sabbin katunan zuwa Google Pay ko Apple Pay';
@@ -7238,7 +7238,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Ka toshe katin sufuri ko na kuɗin hanya ka matsar da sauran kuɗin';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Ka nemi sabbin katunan aminci don ka riƙe makinka';
+  String get lifeTaskWalletLoyalty => 'Maye gurbin sauran katuna, kamar na inshorar lafiya, sufuri da na aminci, kuma ka matsar da duk wani saura';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Maye gurbin sauran katuna, kamar na sufuri da na aminci, kuma ka matsar da duk wani saura';
 
   @override
   String get lifeTaskWalletLocks => 'Idan akwai makullai ko adireshinka a ciki, ka yi tunanin canza makullai';
@@ -7376,6 +7379,21 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lostWalletCheckHint => 'Tambayi ko kana bukatar sabon kati ko lamba.';
 
   @override
+  String get lostWalletHintMedical => 'Nemi sabon kati. Lambar membobinka yawanci ba ta canjawa.';
+
+  @override
+  String get lostWalletHintMembership => 'Nemi sabon kati ko alama.';
+
+  @override
+  String get lostWalletHintInsurance => 'Nemi sabon kati idan suna bayarwa. Lambar inshorarka ba ta canjawa.';
+
+  @override
+  String get lostWalletHintFirearm => 'Kai rahoto ga \'yan sanda kuma ka nemi sabon katin lasisi.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Nemi sabon kwafi daga likitanka ko asibiti idan kana bukata.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Babu abin da aka ajiye a wurin';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'An fara: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'An kwafi lambar shari\'a';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lostWalletPhoneButton => 'Fara shirin waya da ta ɓace';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara za ta tunatar da kai bayan kwanaki 30, 60 da 90.';
+  String get lostWalletStatementNote => 'Vaultara zai tunatar da kai ka sake dubawa bayan kwanaki 30, 60 da 90, saboda zamba kan fara bayan makonni.';
 
   @override
   String get lostWalletStatementTitle => 'Duba bayanan bankinka';
@@ -7452,6 +7465,9 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Na same shi';
+
+  @override
+  String get lostWalletGotItBack => 'Na dawo da shi';
 
   @override
   String get lostWalletFoundTitle => 'Labari mai daɗi!';

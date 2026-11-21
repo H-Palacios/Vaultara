@@ -7226,7 +7226,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lifeTaskWalletStatements => 'ያልፈጸሟቸውን ክፍያዎች ለማግኘት የባንክ መግለጫዎችን ያረጋግጡ';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'አዲሱን ካርድ በምዝገባዎችዎ እና በራስ-ሰር ክፍያዎችዎ ላይ ያስገቡ';
+  String get lifeTaskWalletSubscriptions => 'አዲሱን የባንክ ካርድ በቀጥታ ክፍያዎች፣ በምዝገባዎች እና በGoogle Pay ወይም Apple Pay ላይ ያስገቡ';
 
   @override
   String get lifeTaskWalletPayApps => 'አዲሶቹን ካርዶች ወደ Google Pay ወይም Apple Pay ያክሉ';
@@ -7238,7 +7238,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lifeTaskWalletTransport => 'የትራንስፖርት ወይም የመንገድ ክፍያ ካርድዎን ይዝጉ እና ቀሪ ሂሳቡን ያዛውሩ';
 
   @override
-  String get lifeTaskWalletLoyalty => 'ነጥቦችዎን እንዲይዙ አዲስ የታማኝነት ካርዶችን ይጠይቁ';
+  String get lifeTaskWalletLoyalty => 'እንደ የህክምና መድን፣ የትራንስፖርት እና የታማኝነት ካርዶች ያሉ ሌሎች ካርዶችን ይተኩ፣ ቀሪ ሂሳብንም ያዛውሩ';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'እንደ የትራንስፖርት እና የታማኝነት ካርዶች ያሉ ሌሎች ካርዶችን ይተኩ፣ ቀሪ ሂሳብንም ያዛውሩ';
 
   @override
   String get lifeTaskWalletLocks => 'ቁልፎች ወይም አድራሻዎ በውስጡ ከነበሩ ቁልፎቹን መቀየር ያስቡበት';
@@ -7376,6 +7379,21 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lostWalletCheckHint => 'አዲስ ካርድ ወይም ቁጥር ያስፈልግዎት እንደሆነ ይጠይቁ።';
 
   @override
+  String get lostWalletHintMedical => 'አዲስ ካርድ ይጠይቁ። የአባልነት ቁጥርዎ ብዙውን ጊዜ አይቀየርም።';
+
+  @override
+  String get lostWalletHintMembership => 'አዲስ ካርድ ወይም መለያ ይጠይቁ።';
+
+  @override
+  String get lostWalletHintInsurance => 'ካወጡ አዲስ ካርድ ይጠይቁ። የፖሊሲ ቁጥርዎ አይቀየርም።';
+
+  @override
+  String get lostWalletHintFirearm => 'ለፖሊስ ያሳውቁ እና አዲስ የፈቃድ ካርድ ይጠይቁ።';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'ካስፈለገዎ ከሐኪምዎ ወይም ከክሊኒኩ አዲስ ቅጂ ይጠይቁ።';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'እዚያ የተቀመጠ ምንም ነገር አልነበረም';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'የተጀመረው፦ $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'የጉዳይ ቁጥር ተቀድቷል';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lostWalletPhoneButton => 'የጠፋ ስልክ እቅድ ጀምር';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara ከ30፣ 60 እና 90 ቀናት በኋላ ያስታውስዎታል።';
+  String get lostWalletStatementNote => 'Vaultara ከ30፣ 60 እና 90 ቀናት በኋላ እንደገና እንዲፈትሹ ያስታውስዎታል፤ ማጭበርበር ብዙ ጊዜ ከሳምንታት በኋላ ይጀምራል።';
 
   @override
   String get lostWalletStatementTitle => 'የባንክ መግለጫዎችዎን ያረጋግጡ';
@@ -7452,6 +7465,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'አገኘሁት';
+
+  @override
+  String get lostWalletGotItBack => 'መልሼ አግኝቼዋለሁ';
 
   @override
   String get lostWalletFoundTitle => 'መልካም ዜና!';

@@ -7407,7 +7407,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Seiceáil do ráitis bhainc le haghaidh íocaíochtaí nach ndearna tú';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Cuir an cárta nua ar do shíntiúis agus do dhochair dhíreacha';
+  String get lifeTaskWalletSubscriptions => 'Cuir an cárta bainc nua ar do dhochair dhíreacha, síntiúis agus Google Pay nó Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Cuir na cártaí nua le Google Pay nó Apple Pay';
@@ -7419,7 +7419,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Blocáil do chárta taistil nó dola agus aistrigh an t-iarmhéid';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Iarr cártaí dílseachta nua chun do phointí a choinneáil';
+  String get lifeTaskWalletLoyalty => 'Athsholáthair cártaí eile, mar chártaí árachais sláinte, iompair agus dílseachta, agus aistrigh aon iarmhéid';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Athsholáthair cártaí eile, mar chártaí iompair agus dílseachta, agus aistrigh aon iarmhéid';
 
   @override
   String get lifeTaskWalletLocks => 'Má bhí eochracha nó do sheoladh ann, smaoinigh ar na glais a athrú';
@@ -7557,6 +7560,21 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lostWalletCheckHint => 'Fiafraigh an dteastaíonn cárta nó uimhir nua uait.';
 
   @override
+  String get lostWalletHintMedical => 'Iarr cárta nua. Fanann d\'uimhir bhallraíochta mar an gcéanna de ghnáth.';
+
+  @override
+  String get lostWalletHintMembership => 'Iarr cárta nó clib nua.';
+
+  @override
+  String get lostWalletHintInsurance => 'Iarr cárta nua má eisíonn siad ceann. Fanann uimhir an pholasaí mar an gcéanna.';
+
+  @override
+  String get lostWalletHintFirearm => 'Tuairiscigh é do na Gardaí agus iarr cárta ceadúnais nua.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Iarr cóip nua ar do dhochtúir nó ar an gclinic más gá.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Ní raibh aon rud sábháilte ansin';
 
   @override
@@ -7592,11 +7610,6 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Tosaithe: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Uimhir an cháis cóipeáilte';
 
   @override
@@ -7623,7 +7636,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lostWalletPhoneButton => 'Tosaigh plean an fhóin chaillte';
 
   @override
-  String get lostWalletStatementNote => 'Cuirfidh Vaultara i gcuimhne duit tar éis 30, 60 agus 90 lá.';
+  String get lostWalletStatementNote => 'Meabhróidh Vaultara duit seiceáil arís tar éis 30, 60 agus 90 lá, mar is minic a thosaíonn calaois seachtainí ina dhiaidh.';
 
   @override
   String get lostWalletStatementTitle => 'Seiceáil do ráitis bhainc';
@@ -7633,6 +7646,9 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'D\'aimsigh mé é';
+
+  @override
+  String get lostWalletGotItBack => 'Fuair mé ar ais é';
 
   @override
   String get lostWalletFoundTitle => 'Dea-scéala!';

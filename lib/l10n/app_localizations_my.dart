@@ -7168,7 +7168,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lifeTaskWalletStatements => 'သင်မပြုလုပ်ခဲ့သော ငွေပေးချေမှုများအတွက် ဘဏ်စာရင်းရှင်းတမ်းများကို စစ်ဆေးပါ';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'ကတ်အသစ်ကို စာရင်းသွင်းမှုများနှင့် အလိုအလျောက်ငွေဖြတ်မှုများတွင် ထည့်ပါ';
+  String get lifeTaskWalletSubscriptions => 'ဘဏ်ကတ်အသစ်ကို အလိုအလျောက်ငွေပေးချေမှု၊ စာရင်းသွင်းမှုများနှင့် Google Pay သို့မဟုတ် Apple Pay တွင် ထည့်ပါ';
 
   @override
   String get lifeTaskWalletPayApps => 'ကတ်အသစ်များကို Google Pay သို့မဟုတ် Apple Pay သို့ ထည့်ပါ';
@@ -7180,7 +7180,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lifeTaskWalletTransport => 'ခရီးသွားကတ် သို့မဟုတ် လမ်းကြေးကတ်ကို ပိတ်ပြီး လက်ကျန်ငွေကို လွှဲပါ';
 
   @override
-  String get lifeTaskWalletLoyalty => 'အမှတ်များ ထိန်းထားနိုင်ရန် သစ္စာရှိမှုကတ်အသစ်များ တောင်းပါ';
+  String get lifeTaskWalletLoyalty => 'ကျန်းမာရေးအာမခံ၊ သယ်ယူပို့ဆောင်ရေးနှင့် အမှတ်စုကတ်ကဲ့သို့ အခြားကတ်များကို အသစ်လဲပြီး လက်ကျန်ငွေကို ရွှေ့ပါ';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'သယ်ယူပို့ဆောင်ရေးနှင့် အမှတ်စုကတ်ကဲ့သို့ အခြားကတ်များကို အသစ်လဲပြီး လက်ကျန်ငွေကို ရွှေ့ပါ';
 
   @override
   String get lifeTaskWalletLocks => 'သော့ သို့မဟုတ် သင့်လိပ်စာ ပါခဲ့ပါက သော့ခလောက်များ လဲရန် စဉ်းစားပါ';
@@ -7318,6 +7321,21 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lostWalletCheckHint => 'ကတ် သို့မဟုတ် နံပါတ်အသစ် လိုအပ်မလား မေးပါ။';
 
   @override
+  String get lostWalletHintMedical => 'ကတ်အသစ် တောင်းပါ။ အသင်းဝင်နံပါတ်က ပုံမှန်အားဖြင့် မပြောင်းပါ။';
+
+  @override
+  String get lostWalletHintMembership => 'ကတ် သို့မဟုတ် တက်ဂ်အသစ် တောင်းပါ။';
+
+  @override
+  String get lostWalletHintInsurance => 'ထုတ်ပေးပါက ကတ်အသစ် တောင်းပါ။ ပေါ်လစီနံပါတ် မပြောင်းပါ။';
+
+  @override
+  String get lostWalletHintFirearm => 'ရဲထံ တိုင်ကြားပြီး လိုင်စင်ကတ်အသစ် တောင်းပါ။';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'လိုအပ်ပါက ဆရာဝန် သို့မဟုတ် ဆေးခန်းထံမှ မိတ္တူအသစ် တောင်းပါ။';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'ထိုနေရာတွင် ဘာမှ မသိမ်းထားပါ';
 
   @override
@@ -7353,11 +7371,6 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'စတင်ချိန်- $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'အမှုနံပါတ် ကူးယူပြီးပါပြီ';
 
   @override
@@ -7384,7 +7397,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lostWalletPhoneButton => 'ပျောက်ဖုန်း အစီအစဉ် စတင်ရန်';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara က ရက် 30၊ 60 နှင့် 90 ကြာပြီးနောက် သတိပေးမည်။';
+  String get lostWalletStatementNote => 'လိမ်လည်မှုသည် ရက်သတ္တပတ်များကြာမှ စတတ်သောကြောင့် ရက် 30၊ 60 နှင့် 90 အကြာတွင် ပြန်စစ်ရန် Vaultara က သတိပေးပါမည်။';
 
   @override
   String get lostWalletStatementTitle => 'ဘဏ်စာရင်းရှင်းတမ်းများ စစ်ဆေးပါ';
@@ -7394,6 +7407,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'တွေ့ပြီ';
+
+  @override
+  String get lostWalletGotItBack => 'ပြန်ရပြီ';
 
   @override
   String get lostWalletFoundTitle => 'သတင်းကောင်း!';

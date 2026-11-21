@@ -7373,7 +7373,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Проверьте выписки на платежи, которые вы не совершали';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Привяжите новую карту к подпискам и автоплатежам';
+  String get lifeTaskWalletSubscriptions => 'Привяжите новую банковскую карту к автоплатежам, подпискам и Google Pay или Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Добавьте новые карты в Google Pay или Apple Pay';
@@ -7385,7 +7385,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Заблокируйте транспортную карту или карту для оплаты дорог и перенесите баланс';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Закажите новые карты лояльности, чтобы сохранить баллы';
+  String get lifeTaskWalletLoyalty => 'Замените другие карты, например медицинскую, транспортную и карты лояльности, и перенесите остаток';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Замените другие карты, например транспортную и карты лояльности, и перенесите остаток';
 
   @override
   String get lifeTaskWalletLocks => 'Если там были ключи или ваш адрес, подумайте о замене замков';
@@ -7523,6 +7526,21 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lostWalletCheckHint => 'Спросите, нужна ли новая карта или номер.';
 
   @override
+  String get lostWalletHintMedical => 'Запросите новую карту. Номер участника обычно не меняется.';
+
+  @override
+  String get lostWalletHintMembership => 'Запросите новую карту или брелок.';
+
+  @override
+  String get lostWalletHintInsurance => 'Запросите новую карту, если её выдают. Номер полиса не меняется.';
+
+  @override
+  String get lostWalletHintFirearm => 'Сообщите в полицию и запросите новую карточку лицензии.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'При необходимости запросите новую копию у врача или в клинике.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Там ничего не было сохранено';
 
   @override
@@ -7558,11 +7576,6 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Начато: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Номер дела скопирован';
 
   @override
@@ -7589,7 +7602,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lostWalletPhoneButton => 'Начать план для потерянного телефона';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara напомнит через 30, 60 и 90 дней.';
+  String get lostWalletStatementNote => 'Vaultara напомнит проверить ещё раз через 30, 60 и 90 дней, потому что мошенничество часто начинается спустя недели.';
 
   @override
   String get lostWalletStatementTitle => 'Проверьте банковские выписки';
@@ -7599,6 +7612,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Я его нашёл';
+
+  @override
+  String get lostWalletGotItBack => 'Я его вернул';
 
   @override
   String get lostWalletFoundTitle => 'Хорошие новости!';

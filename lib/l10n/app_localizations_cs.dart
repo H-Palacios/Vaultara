@@ -7359,7 +7359,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Projděte výpisy kvůli platbám, které jste neudělali';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Nastavte novou kartu u předplatných a inkas';
+  String get lifeTaskWalletSubscriptions => 'Nastavte novou platební kartu u inkas, předplatných a v Google Pay nebo Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Přidejte nové karty do Google Pay nebo Apple Pay';
@@ -7371,7 +7371,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Zablokujte jízdenkovou nebo mýtnou kartu a převeďte zůstatek';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Požádejte o nové věrnostní karty, ať o body nepřijdete';
+  String get lifeTaskWalletLoyalty => 'Nahraďte ostatní karty, například zdravotní, dopravní a věrnostní, a převeďte zůstatek';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Nahraďte ostatní karty, například dopravní a věrnostní, a převeďte zůstatek';
 
   @override
   String get lifeTaskWalletLocks => 'Pokud tam byly klíče nebo vaše adresa, zvažte výměnu zámků';
@@ -7509,6 +7512,21 @@ class AppLocalizationsCs extends AppLocalizations {
   String get lostWalletCheckHint => 'Zeptejte se, zda potřebujete novou kartu nebo číslo.';
 
   @override
+  String get lostWalletHintMedical => 'Požádejte o novou kartu. Číslo pojištěnce obvykle zůstává stejné.';
+
+  @override
+  String get lostWalletHintMembership => 'Požádejte o novou kartu nebo čip.';
+
+  @override
+  String get lostWalletHintInsurance => 'Požádejte o novou kartu, pokud ji vydávají. Číslo pojistky zůstává stejné.';
+
+  @override
+  String get lostWalletHintFirearm => 'Nahlaste to policii a požádejte o nový průkaz zbrojního průkazu.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Pokud ji potřebujete, požádejte lékaře nebo kliniku o novou kopii.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Nic uloženého tam nebylo';
 
   @override
@@ -7544,11 +7562,6 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Zahájeno: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Číslo případu zkopírováno';
 
   @override
@@ -7575,7 +7588,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get lostWalletPhoneButton => 'Spustit plán ztraceného telefonu';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara připomene po 30, 60 a 90 dnech.';
+  String get lostWalletStatementNote => 'Vaultara vám připomene zkontrolovat to znovu po 30, 60 a 90 dnech, protože podvody často začínají až po týdnech.';
 
   @override
   String get lostWalletStatementTitle => 'Zkontrolujte bankovní výpisy';
@@ -7585,6 +7598,9 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Našel jsem ji';
+
+  @override
+  String get lostWalletGotItBack => 'Dostal(a) jsem ji zpět';
 
   @override
   String get lostWalletFoundTitle => 'Dobrá zpráva!';

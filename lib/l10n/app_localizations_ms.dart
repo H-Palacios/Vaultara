@@ -7170,7 +7170,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Semak penyata bank untuk bayaran yang anda tidak buat';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Letakkan kad baharu pada langganan dan debit terus anda';
+  String get lifeTaskWalletSubscriptions => 'Letakkan kad bank baharu pada debit langsung, langganan dan Google Pay atau Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Tambah kad baharu ke Google Pay atau Apple Pay';
@@ -7182,7 +7182,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Sekat kad pengangkutan atau tol dan pindahkan bakinya';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Minta kad kesetiaan baharu supaya mata anda kekal';
+  String get lifeTaskWalletLoyalty => 'Ganti kad lain, seperti kad insurans kesihatan, pengangkutan dan kesetiaan, dan pindahkan baki';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Ganti kad lain, seperti kad pengangkutan dan kesetiaan, dan pindahkan baki';
 
   @override
   String get lifeTaskWalletLocks => 'Jika ada kunci atau alamat anda di dalamnya, fikirkan untuk menukar kunci';
@@ -7320,6 +7323,21 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lostWalletCheckHint => 'Tanya sama ada anda perlukan kad atau nombor baharu.';
 
   @override
+  String get lostWalletHintMedical => 'Minta kad baharu. Nombor ahli biasanya kekal sama.';
+
+  @override
+  String get lostWalletHintMembership => 'Minta kad atau tag baharu.';
+
+  @override
+  String get lostWalletHintInsurance => 'Minta kad baharu jika mereka mengeluarkannya. Nombor polisi kekal sama.';
+
+  @override
+  String get lostWalletHintFirearm => 'Laporkan kepada polis dan minta kad lesen baharu.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Minta salinan baharu daripada doktor atau klinik jika perlu.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Tiada yang disimpan di situ';
 
   @override
@@ -7355,11 +7373,6 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Dimulakan: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Nombor kes disalin';
 
   @override
@@ -7386,7 +7399,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lostWalletPhoneButton => 'Mulakan pelan telefon hilang';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara akan mengingatkan anda selepas 30, 60 dan 90 hari.';
+  String get lostWalletStatementNote => 'Vaultara akan mengingatkan anda untuk menyemak semula selepas 30, 60 dan 90 hari, kerana penipuan selalunya bermula beberapa minggu kemudian.';
 
   @override
   String get lostWalletStatementTitle => 'Semak penyata bank';
@@ -7396,6 +7409,9 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Saya jumpa';
+
+  @override
+  String get lostWalletGotItBack => 'Sudah dapat semula';
 
   @override
   String get lostWalletFoundTitle => 'Berita baik!';

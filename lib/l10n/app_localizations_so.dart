@@ -7225,7 +7225,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Hubi bayaannada bangiga lacag bixin aadan samayn';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Geli kaarka cusub rukummadaada iyo lacag-bixinta tooska ah';
+  String get lifeTaskWalletSubscriptions => 'Kaarka bangiga cusub ku dar lacag-bixinta tooska ah, rukhsadaha iyo Google Pay ama Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Ku dar kaararka cusub Google Pay ama Apple Pay';
@@ -7237,7 +7237,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Xannib kaarka gaadiidka ama canshuurta waddada oo u wareeji haraaga';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Codso kaarar daacadnimo oo cusub si aad dhibcahaaga u haysato';
+  String get lifeTaskWalletLoyalty => 'Beddel kaararka kale, sida kuwa caymiska caafimaadka, gaadiidka iyo daacadnimada, oo u wareeji haraaga';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Beddel kaararka kale, sida kuwa gaadiidka iyo daacadnimada, oo u wareeji haraaga';
 
   @override
   String get lifeTaskWalletLocks => 'Haddii furayaal ama cinwaankaagu ku jireen, ka fikir inaad beddesho qufulada';
@@ -7375,6 +7378,21 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lostWalletCheckHint => 'Weydii haddii aad u baahan tahay kaar ama lambar cusub.';
 
   @override
+  String get lostWalletHintMedical => 'Codso kaar cusub. Lambarka xubinnimadu badanaa isma beddelo.';
+
+  @override
+  String get lostWalletHintMembership => 'Codso kaar ama calaamad cusub.';
+
+  @override
+  String get lostWalletHintInsurance => 'Codso kaar cusub haddii ay bixiyaan. Lambarka caymiskaagu isma beddelo.';
+
+  @override
+  String get lostWalletHintFirearm => 'U soo sheeg booliska oo codso kaar shati cusub.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Haddii aad u baahan tahay, ka codso dhakhtarka ama rugta nuqul cusub.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Waxba lagama kaydin halkaas';
 
   @override
@@ -7410,11 +7428,6 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Bilaabmay: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Lambarka kiiska waa la koobiyeeyay';
 
   @override
@@ -7441,7 +7454,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lostWalletPhoneButton => 'Bilow qorshaha taleefanka lumay';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara waxay ku xasuusin doontaa 30, 60 iyo 90 maalmood kadib.';
+  String get lostWalletStatementNote => 'Vaultara waxay ku xusuusin doontaa inaad mar kale hubiso 30, 60 iyo 90 maalmood kadib, maxaa yeelay khiyaanadu badanaa waxay bilaabataa toddobaadyo kadib.';
 
   @override
   String get lostWalletStatementTitle => 'Hubi bayaannada bangigaaga';
@@ -7451,6 +7464,9 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Waan helay';
+
+  @override
+  String get lostWalletGotItBack => 'Waan dib u helay';
 
   @override
   String get lostWalletFoundTitle => 'War wanaagsan!';

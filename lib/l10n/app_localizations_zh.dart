@@ -7170,7 +7170,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lifeTaskWalletStatements => '检查银行账单中是否有不是你本人的消费';
 
   @override
-  String get lifeTaskWalletSubscriptions => '把新卡绑定到订阅和自动扣款';
+  String get lifeTaskWalletSubscriptions => '把新的银行卡绑定到自动扣款、订阅以及 Google Pay 或 Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => '把新卡添加到 Google Pay 或 Apple Pay';
@@ -7182,7 +7182,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lifeTaskWalletTransport => '冻结交通卡或通行费卡并转移余额';
 
   @override
-  String get lifeTaskWalletLoyalty => '补办会员卡以保留积分';
+  String get lifeTaskWalletLoyalty => '补办其他卡片，如医保卡、交通卡和会员卡，并转移余额';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => '补办其他卡片，如交通卡和会员卡，并转移余额';
 
   @override
   String get lifeTaskWalletLocks => '如果里面有钥匙或你的地址，考虑换锁';
@@ -7320,6 +7323,21 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lostWalletCheckHint => '询问是否需要新卡或新号码。';
 
   @override
+  String get lostWalletHintMedical => '申请补办新卡。会员号通常不变。';
+
+  @override
+  String get lostWalletHintMembership => '申请补办新卡或门禁扣。';
+
+  @override
+  String get lostWalletHintInsurance => '如果对方发卡，申请补办新卡。保单号不变。';
+
+  @override
+  String get lostWalletHintFirearm => '向警方报案，并申请新的许可证卡。';
+
+  @override
+  String get lostWalletHintMedicalPaper => '如有需要，向医生或诊所索取新的副本。';
+
+  @override
   String get lostWalletPlanEmptyTitle => '那里没有保存的物品';
 
   @override
@@ -7355,11 +7373,6 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return '开始于：$time';
-  }
-
-  @override
   String get lostWalletCaseCopied => '已复制案件编号';
 
   @override
@@ -7386,7 +7399,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lostWalletPhoneButton => '开始手机丢失计划';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara 会在 30、60 和 90 天后提醒你。';
+  String get lostWalletStatementNote => '盗刷常在几周后才开始，Vaultara 会在 30、60 和 90 天后提醒你再次检查。';
 
   @override
   String get lostWalletStatementTitle => '检查银行账单';
@@ -7396,6 +7409,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => '我找到了';
+
+  @override
+  String get lostWalletGotItBack => '已经找回';
 
   @override
   String get lostWalletFoundTitle => '好消息！';
@@ -16699,7 +16715,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lifeTaskWalletStatements => '检查银行账单中是否有不是你本人的消费';
 
   @override
-  String get lifeTaskWalletSubscriptions => '把新卡绑定到订阅和自动扣款';
+  String get lifeTaskWalletSubscriptions => '把新的银行卡绑定到自动扣款、订阅以及 Google Pay 或 Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => '把新卡添加到 Google Pay 或 Apple Pay';
@@ -16711,7 +16727,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lifeTaskWalletTransport => '冻结交通卡或通行费卡并转移余额';
 
   @override
-  String get lifeTaskWalletLoyalty => '补办会员卡以保留积分';
+  String get lifeTaskWalletLoyalty => '补办其他卡片，如医保卡、交通卡和会员卡，并转移余额';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => '补办其他卡片，如交通卡和会员卡，并转移余额';
 
   @override
   String get lifeTaskWalletLocks => '如果里面有钥匙或你的地址，考虑换锁';
@@ -16849,6 +16868,21 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lostWalletCheckHint => '询问是否需要新卡或新号码。';
 
   @override
+  String get lostWalletHintMedical => '申请补办新卡。会员号通常不变。';
+
+  @override
+  String get lostWalletHintMembership => '申请补办新卡或门禁扣。';
+
+  @override
+  String get lostWalletHintInsurance => '如果对方发卡，申请补办新卡。保单号不变。';
+
+  @override
+  String get lostWalletHintFirearm => '向警方报案，并申请新的许可证卡。';
+
+  @override
+  String get lostWalletHintMedicalPaper => '如有需要，向医生或诊所索取新的副本。';
+
+  @override
   String get lostWalletPlanEmptyTitle => '那里没有保存的物品';
 
   @override
@@ -16884,11 +16918,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return '开始于：$time';
-  }
-
-  @override
   String get lostWalletCaseCopied => '已复制案件编号';
 
   @override
@@ -16915,7 +16944,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lostWalletPhoneButton => '开始手机丢失计划';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara 会在 30、60 和 90 天后提醒你。';
+  String get lostWalletStatementNote => '盗刷常在几周后才开始，Vaultara 会在 30、60 和 90 天后提醒你再次检查。';
 
   @override
   String get lostWalletStatementTitle => '检查银行账单';
@@ -16925,6 +16954,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get lostWalletFoundButton => '我找到了';
+
+  @override
+  String get lostWalletGotItBack => '已经找回';
 
   @override
   String get lostWalletFoundTitle => '好消息！';
@@ -26228,7 +26260,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lifeTaskWalletStatements => '檢查銀行對帳單是否有不是你本人的消費';
 
   @override
-  String get lifeTaskWalletSubscriptions => '把新卡綁定到訂閱和自動扣款';
+  String get lifeTaskWalletSubscriptions => '把新的銀行卡綁定到自動扣款、訂閱以及 Google Pay 或 Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => '把新卡加入 Google Pay 或 Apple Pay';
@@ -26240,7 +26272,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lifeTaskWalletTransport => '停用交通卡或通行費卡並轉移餘額';
 
   @override
-  String get lifeTaskWalletLoyalty => '補辦會員卡以保留點數';
+  String get lifeTaskWalletLoyalty => '補辦其他卡片，如健保卡、交通卡和會員卡，並轉移餘額';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => '補辦其他卡片，如交通卡和會員卡，並轉移餘額';
 
   @override
   String get lifeTaskWalletLocks => '如果裡面有鑰匙或你的地址，考慮換鎖';
@@ -26378,6 +26413,21 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lostWalletCheckHint => '詢問是否需要新卡或新號碼。';
 
   @override
+  String get lostWalletHintMedical => '申請補發新卡。會員編號通常不變。';
+
+  @override
+  String get lostWalletHintMembership => '申請補發新卡或感應扣。';
+
+  @override
+  String get lostWalletHintInsurance => '如果對方有發卡，申請補發新卡。保單號碼不變。';
+
+  @override
+  String get lostWalletHintFirearm => '向警方報案，並申請新的許可證卡。';
+
+  @override
+  String get lostWalletHintMedicalPaper => '如有需要，向醫師或診所索取新的副本。';
+
+  @override
   String get lostWalletPlanEmptyTitle => '那裡沒有儲存的物品';
 
   @override
@@ -26413,11 +26463,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return '開始於：$time';
-  }
-
-  @override
   String get lostWalletCaseCopied => '已複製案件編號';
 
   @override
@@ -26444,7 +26489,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lostWalletPhoneButton => '開始手機遺失計畫';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara 會在 30、60 和 90 天後提醒你。';
+  String get lostWalletStatementNote => '盜刷常在幾週後才開始，Vaultara 會在 30、60 和 90 天後提醒你再次檢查。';
 
   @override
   String get lostWalletStatementTitle => '檢查銀行對帳單';
@@ -26454,6 +26499,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get lostWalletFoundButton => '我找到了';
+
+  @override
+  String get lostWalletGotItBack => '已經拿回來了';
 
   @override
   String get lostWalletFoundTitle => '好消息！';

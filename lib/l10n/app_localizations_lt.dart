@@ -7365,7 +7365,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Patikrinkite banko išrašus, ar nėra mokėjimų, kurių neatlikote';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Nustatykite naują kortelę prenumeratoms ir tiesioginio debeto mokėjimams';
+  String get lifeTaskWalletSubscriptions => 'Nurodykite naują banko kortelę tiesioginiam debetui, prenumeratoms ir Google Pay ar Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Pridėkite naujas korteles prie Google Pay arba Apple Pay';
@@ -7377,7 +7377,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Užblokuokite transporto ar kelių mokesčio kortelę ir perkelkite likutį';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Paprašykite naujų lojalumo kortelių, kad išsaugotumėte taškus';
+  String get lifeTaskWalletLoyalty => 'Pakeiskite kitas korteles, pvz., sveikatos draudimo, transporto ir lojalumo, ir perkelkite likutį';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Pakeiskite kitas korteles, pvz., transporto ir lojalumo, ir perkelkite likutį';
 
   @override
   String get lifeTaskWalletLocks => 'Jei ten buvo raktai ar jūsų adresas, apsvarstykite spynų keitimą';
@@ -7515,6 +7518,21 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lostWalletCheckHint => 'Paklauskite, ar reikia naujos kortelės ar numerio.';
 
   @override
+  String get lostWalletHintMedical => 'Paprašykite naujos kortelės. Nario numeris paprastai lieka tas pats.';
+
+  @override
+  String get lostWalletHintMembership => 'Paprašykite naujos kortelės ar žetono.';
+
+  @override
+  String get lostWalletHintInsurance => 'Paprašykite naujos kortelės, jei jas išduoda. Poliso numeris lieka tas pats.';
+
+  @override
+  String get lostWalletHintFirearm => 'Praneškite policijai ir paprašykite naujos leidimo kortelės.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Jei reikia, paprašykite gydytojo ar klinikos naujos kopijos.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Ten nieko išsaugoto nebuvo';
 
   @override
@@ -7550,11 +7568,6 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Pradėta: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Bylos numeris nukopijuotas';
 
   @override
@@ -7581,7 +7594,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lostWalletPhoneButton => 'Pradėti pamesto telefono planą';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara primins po 30, 60 ir 90 dienų.';
+  String get lostWalletStatementNote => 'Vaultara primins dar kartą patikrinti po 30, 60 ir 90 dienų, nes sukčiavimas dažnai prasideda po kelių savaičių.';
 
   @override
   String get lostWalletStatementTitle => 'Patikrinkite banko išrašus';
@@ -7591,6 +7604,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Radau';
+
+  @override
+  String get lostWalletGotItBack => 'Atgavau';
 
   @override
   String get lostWalletFoundTitle => 'Geros naujienos!';

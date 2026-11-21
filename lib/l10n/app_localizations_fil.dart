@@ -7220,7 +7220,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Suriin ang bank statement para sa mga bayad na hindi mo ginawa';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Ilagay ang bagong card sa mga subscription at auto-debit mo';
+  String get lifeTaskWalletSubscriptions => 'Ilagay ang bagong bank card sa iyong debit orders, subscriptions at Google Pay o Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Idagdag ang mga bagong card sa Google Pay o Apple Pay';
@@ -7232,7 +7232,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lifeTaskWalletTransport => 'I-block ang transport o toll card mo at ilipat ang balanse';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Humingi ng bagong loyalty card para hindi mawala ang points mo';
+  String get lifeTaskWalletLoyalty => 'Palitan ang ibang card, gaya ng medical aid, transport at loyalty card, at ilipat ang balanse';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Palitan ang ibang card, gaya ng transport at loyalty card, at ilipat ang balanse';
 
   @override
   String get lifeTaskWalletLocks => 'Kung may susi o address mo sa loob, pag-isipang palitan ang mga kandado';
@@ -7370,6 +7373,21 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lostWalletCheckHint => 'Itanong kung kailangan mo ng bagong card o numero.';
 
   @override
+  String get lostWalletHintMedical => 'Humingi ng bagong card. Kadalasan pareho pa rin ang member number mo.';
+
+  @override
+  String get lostWalletHintMembership => 'Humingi ng bagong card o tag.';
+
+  @override
+  String get lostWalletHintInsurance => 'Humingi ng bagong card kung nagbibigay sila. Pareho pa rin ang policy number mo.';
+
+  @override
+  String get lostWalletHintFirearm => 'I-report ito sa pulis at humingi ng bagong license card.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Humingi ng bagong kopya sa doktor o clinic kung kailangan mo.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Walang naka-save na nakatago doon';
 
   @override
@@ -7405,11 +7423,6 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Sinimulan: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Nakopya ang case number';
 
   @override
@@ -7436,7 +7449,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lostWalletPhoneButton => 'Simulan ang plano para sa nawalang telepono';
 
   @override
-  String get lostWalletStatementNote => 'Ipapaalala ng Vaultara pagkalipas ng 30, 60 at 90 araw.';
+  String get lostWalletStatementNote => 'Ipapaalala ng Vaultara na tingnan ulit pagkalipas ng 30, 60 at 90 araw, dahil madalas nagsisimula ang panloloko makalipas ang ilang linggo.';
 
   @override
   String get lostWalletStatementTitle => 'Suriin ang bank statement mo';
@@ -7446,6 +7459,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Nahanap ko na';
+
+  @override
+  String get lostWalletGotItBack => 'Nabawi ko na';
 
   @override
   String get lostWalletFoundTitle => 'Magandang balita!';

@@ -7226,7 +7226,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Nézd át a bankszámlakivonatokat olyan fizetések után, amelyeket nem te indítottál';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Állítsd be az új kártyát az előfizetéseknél és csoportos beszedéseknél';
+  String get lifeTaskWalletSubscriptions => 'Állítsd be az új bankkártyát a csoportos beszedéseknél, előfizetéseknél és a Google Payben vagy Apple Payben';
 
   @override
   String get lifeTaskWalletPayApps => 'Add hozzá az új kártyákat a Google Payhez vagy az Apple Payhez';
@@ -7238,7 +7238,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Tiltsd le a közlekedési vagy útdíjkártyát, és vidd át az egyenleget';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Kérj új hűségkártyákat, hogy megmaradjanak a pontjaid';
+  String get lifeTaskWalletLoyalty => 'Pótold a többi kártyát, például egészségbiztosítási, közlekedési és hűségkártyát, és vidd át az egyenleget';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Pótold a többi kártyát, például közlekedési és hűségkártyát, és vidd át az egyenleget';
 
   @override
   String get lifeTaskWalletLocks => 'Ha kulcs vagy a címed is benne volt, gondold át a zárcserét';
@@ -7376,6 +7379,21 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lostWalletCheckHint => 'Kérdezd meg, kell-e új kártya vagy szám.';
 
   @override
+  String get lostWalletHintMedical => 'Kérj új kártyát. A tagszámod általában ugyanaz marad.';
+
+  @override
+  String get lostWalletHintMembership => 'Kérj új kártyát vagy chipet.';
+
+  @override
+  String get lostWalletHintInsurance => 'Kérj új kártyát, ha adnak. A kötvényszám ugyanaz marad.';
+
+  @override
+  String get lostWalletHintFirearm => 'Jelentsd a rendőrségen, és kérj új engedélykártyát.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Ha kell, kérj új másolatot az orvosodtól vagy a klinikától.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Ott nem volt semmi mentve';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Elkezdve: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Ügyszám másolva';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lostWalletPhoneButton => 'Elveszett telefon terv indítása';
 
   @override
-  String get lostWalletStatementNote => 'A Vaultara 30, 60 és 90 nap után emlékeztet.';
+  String get lostWalletStatementNote => 'A Vaultara 30, 60 és 90 nap után emlékeztet, hogy nézd meg újra, mert a csalás gyakran csak hetekkel később kezdődik.';
 
   @override
   String get lostWalletStatementTitle => 'Nézd át a bankszámlakivonataidat';
@@ -7452,6 +7465,9 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Megtaláltam';
+
+  @override
+  String get lostWalletGotItBack => 'Visszakaptam';
 
   @override
   String get lostWalletFoundTitle => 'Jó hír!';

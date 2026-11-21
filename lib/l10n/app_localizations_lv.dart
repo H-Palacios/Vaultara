@@ -7291,7 +7291,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Pārbaudi bankas izrakstus, vai nav maksājumu, ko neveici';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Iestati jauno karti abonementiem un tiešā debeta maksājumiem';
+  String get lifeTaskWalletSubscriptions => 'Pievieno jauno bankas karti tiešajiem debetiem, abonementiem un Google Pay vai Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Pievieno jaunās kartes Google Pay vai Apple Pay';
@@ -7303,7 +7303,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Bloķē transporta vai ceļu nodevas karti un pārcel atlikumu';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Palūdz jaunas lojalitātes kartes, lai saglabātu punktus';
+  String get lifeTaskWalletLoyalty => 'Aizstāj citas kartes, piemēram, veselības apdrošināšanas, transporta un lojalitātes, un pārcel atlikumu';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Aizstāj citas kartes, piemēram, transporta un lojalitātes, un pārcel atlikumu';
 
   @override
   String get lifeTaskWalletLocks => 'Ja tur bija atslēgas vai tava adrese, apsver slēdžu nomaiņu';
@@ -7441,6 +7444,21 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lostWalletCheckHint => 'Pajautā, vai vajag jaunu karti vai numuru.';
 
   @override
+  String get lostWalletHintMedical => 'Palūdz jaunu karti. Biedra numurs parasti paliek tas pats.';
+
+  @override
+  String get lostWalletHintMembership => 'Palūdz jaunu karti vai žetonu.';
+
+  @override
+  String get lostWalletHintInsurance => 'Palūdz jaunu karti, ja tādu izsniedz. Polises numurs paliek tas pats.';
+
+  @override
+  String get lostWalletHintFirearm => 'Ziņo policijai un palūdz jaunu atļaujas karti.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Ja vajag, palūdz ārstam vai klīnikai jaunu kopiju.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Tur nekas nebija saglabāts';
 
   @override
@@ -7476,11 +7494,6 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Sākts: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Lietas numurs nokopēts';
 
   @override
@@ -7507,7 +7520,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lostWalletPhoneButton => 'Sākt pazaudēta telefona plānu';
 
   @override
-  String get lostWalletStatementNote => 'Vaultara atgādinās pēc 30, 60 un 90 dienām.';
+  String get lostWalletStatementNote => 'Vaultara atgādinās pārbaudīt vēlreiz pēc 30, 60 un 90 dienām, jo krāpšana bieži sākas tikai pēc vairākām nedēļām.';
 
   @override
   String get lostWalletStatementTitle => 'Pārbaudi bankas izrakstus';
@@ -7517,6 +7530,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Es to atradu';
+
+  @override
+  String get lostWalletGotItBack => 'Es to atguvu';
 
   @override
   String get lostWalletFoundTitle => 'Labas ziņas!';

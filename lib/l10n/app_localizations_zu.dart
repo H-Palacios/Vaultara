@@ -7226,7 +7226,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lifeTaskWalletStatements => 'Hlola izitatimende zebhange ukuthola izinkokhelo ongazenzanga';
 
   @override
-  String get lifeTaskWalletSubscriptions => 'Faka ikhadi elisha kuma-subscription nama-debit order akho';
+  String get lifeTaskWalletSubscriptions => 'Faka ikhadi lebhange elisha kuma-debit orders, okubhaliselwe ku-Google Pay noma ku-Apple Pay';
 
   @override
   String get lifeTaskWalletPayApps => 'Engeza amakhadi amasha ku-Google Pay noma ku-Apple Pay';
@@ -7238,7 +7238,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lifeTaskWalletTransport => 'Vimba ikhadi lakho lezokuthutha noma lethoyili bese udlulisa imali esele';
 
   @override
-  String get lifeTaskWalletLoyalty => 'Cela amakhadi amasha okwethembeka ukuze ugcine amaphoyinti akho';
+  String get lifeTaskWalletLoyalty => 'Shintsha amanye amakhadi, njengawosizo lwezokwelapha, ezokuthutha nawokwethembeka, bese udlulisa ibhalansi';
+
+  @override
+  String get lifeTaskWalletOtherCardsShort => 'Shintsha amanye amakhadi, njengawezokuthutha nawokwethembeka, bese udlulisa ibhalansi';
 
   @override
   String get lifeTaskWalletLocks => 'Uma kwakunezikhiye noma ikheli lakho, cabanga ngokushintsha izingidi';
@@ -7376,6 +7379,21 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lostWalletCheckHint => 'Buza ukuthi udinga ikhadi elisha noma inombolo entsha yini.';
 
   @override
+  String get lostWalletHintMedical => 'Cela ikhadi elisha. Inombolo yobulungu ivame ukuhlala injalo.';
+
+  @override
+  String get lostWalletHintMembership => 'Cela ikhadi noma ithegi entsha.';
+
+  @override
+  String get lostWalletHintInsurance => 'Cela ikhadi elisha uma belikhipha. Inombolo yepholisi ihlala injalo.';
+
+  @override
+  String get lostWalletHintFirearm => 'Kubike emaphoyiseni bese ucela ikhadi lelayisense elisha.';
+
+  @override
+  String get lostWalletHintMedicalPaper => 'Cela ikhophi entsha kudokotela noma emtholampilo uma uyidinga.';
+
+  @override
   String get lostWalletPlanEmptyTitle => 'Akukho okugciniwe okwakukhona lapho';
 
   @override
@@ -7411,11 +7429,6 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String lostWalletStarted(String time) {
-    return 'Kuqalwe: $time';
-  }
-
-  @override
   String get lostWalletCaseCopied => 'Inombolo yecala ikopishiwe';
 
   @override
@@ -7442,7 +7455,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lostWalletPhoneButton => 'Qala uhlelo lwefoni elahlekile';
 
   @override
-  String get lostWalletStatementNote => 'I-Vaultara izokukhumbuza ngemva kwezinsuku ezingama-30, 60 no-90.';
+  String get lostWalletStatementNote => 'I-Vaultara izokukhumbuza ukuthi uhlole futhi ngemuva kwezinsuku ezingu-30, 60 no-90, ngoba ukukhwabanisa kuvame ukuqala emva kwamasonto.';
 
   @override
   String get lostWalletStatementTitle => 'Hlola izitatimende zakho zebhange';
@@ -7452,6 +7465,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get lostWalletFoundButton => 'Ngikutholile';
+
+  @override
+  String get lostWalletGotItBack => 'Ngiyibuyisile';
 
   @override
   String get lostWalletFoundTitle => 'Izindaba ezinhle!';
