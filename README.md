@@ -60,7 +60,8 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 - **Opens instantly.** Home is drawn from the records already saved on the phone, then refreshed from the server in the background. Opening Home loads once instead of several times, reads run side by side, and reminders are only planned again when something about them changed.
 
 ### Reminders
-- **Reminder cascade.** Several notifications before a record expires, at times the user chooses. The first and last greet you by first name, and records of people in your family are named as theirs ("Leo's passport expires tomorrow").
+- **Reminders in the record itself.** Every record reminds a week before it expires, then again three days and one day before. Set Renewal time (how long renewing takes, such as six weeks for a passport) and the reminders start early enough. The record sheet shows the actual dates the reminders arrive. The first and last greet you by first name, and records of people in your family are named as theirs ("Leo's passport expires tomorrow").
+- **Your own reminder dates** (Premium). Change any reminder day, or add up to six, and go back to the automatic dates at any time.
 - **After expiry.** Two nudges, 3 and 14 days after a record expired without being renewed (on by default, not for repeating records).
 - **Locked records stay private.** Reminders, "Remind me tomorrow" and the daily summary never show a locked record's name.
 - **Asked at the right moment.** The app asks for notification permission the first time you set a reminder, with a short explanation, instead of on first launch. "Not now" waits a week before asking again.
@@ -186,7 +187,8 @@ Built with Flutter and Firebase by [Vorkalis](https://vorkalis.com), Gqeberha, S
 | Records | 10 | Unlimited | Unlimited | Unlimited |
 | Custom categories | 3 | Unlimited | Unlimited | Unlimited |
 | Custom groups | 2 | Unlimited | Unlimited | Unlimited |
-| Multiple reminders and cascade | | ✓ | ✓ | ✓ |
+| Automatic reminders | ✓ | ✓ | ✓ | ✓ |
+| Your own reminder dates | | ✓ | ✓ | ✓ |
 | Smart Insights and calendar | ✓ | ✓ | ✓ | ✓ |
 | Photos per record | 1 | Up to 10 | Up to 10 | Up to 10 |
 | Travel check | | ✓ | ✓ | ✓ |
