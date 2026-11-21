@@ -6,28 +6,51 @@ import 'package:vaultara/core/view/widgets/app_sheet.dart';
 const _tabletSideways = Size(1280, 800);
 const _phone = Size(412, 915);
 
-void _useScreen(WidgetTester tester, Size size) {
+void _useScreen(WidgetTester tester, Size size, {double keyboard = 0}) {
   tester.view.devicePixelRatio = 2;
   tester.view.physicalSize = size * 2;
+  if (keyboard > 0) {
+    tester.view.viewInsets = FakeViewPadding(bottom: keyboard * 2);
+  }
   addTearDown(tester.view.reset);
 }
 
-Future<void> _openSheet(
+/// What an opened sheet will send back when it closes.
+class _Opened {
+  late Future<String?> result;
+}
+
+/// Opens a sheet from a button.
+Future<_Opened> _openSheet(
   WidgetTester tester,
   Size size, {
   WideSheetStyle style = WideSheetStyle.side,
+  bool isDismissible = true,
+  TextDirection direction = TextDirection.ltr,
+  double keyboard = 0,
+  WidgetBuilder? builder,
 }) async {
-  _useScreen(tester, size);
+  _useScreen(tester, size, keyboard: keyboard);
+  final opened = _Opened();
   await tester.pumpWidget(
     MaterialApp(
+      builder: (context, child) =>
+          Directionality(textDirection: direction, child: child!),
       home: Builder(
         builder: (context) => Scaffold(
-          body: Center(
+          body: Align(
+            alignment: Alignment.topCenter,
             child: ElevatedButton(
-              onPressed: () => AppSheet.show<void>(
+              onPressed: () => opened.result = AppSheet.show<String>(
                 context: context,
                 wideStyle: style,
-                builder: (_) => const Text('Inside'),
+                isDismissible: isDismissible,
+                builder:
+                    builder ??
+                    (sheetContext) => TextButton(
+                      onPressed: () => Navigator.of(sheetContext).pop('saved'),
+                      child: const Text('Save'),
+                    ),
               ),
               child: const Text('Open'),
             ),
@@ -38,65 +61,186 @@ Future<void> _openSheet(
   );
   await tester.tap(find.text('Open'));
   await tester.pumpAndSettle();
+  return opened;
+}
+
+/// A long form: more fields than fit, then a field at the very end.
+Widget _longForm(BuildContext context) {
+  return Column(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      Flexible(
+        child: ListView(
+          shrinkWrap: true,
+          children: const [SizedBox(height: 2000)],
+        ),
+      ),
+      const TextField(key: Key('last-field')),
+    ],
+  );
 }
 
 void main() {
-  testWidgets('a form opens from the side on a 10-inch held sideways', (
-    tester,
-  ) async {
-    await _openSheet(tester, _tabletSideways);
-    expect(find.text('Inside'), findsOneWidget);
-    expect(find.byType(BottomSheet), findsNothing);
-    expect(find.byType(Dialog), findsNothing);
-    expect(
-      tester.getTopLeft(find.text('Inside')).dx,
-      greaterThan(_tabletSideways.width / 2),
-    );
+  group('on a 10-inch tablet held sideways', () {
+    testWidgets('a form opens from the right, not from the bottom', (
+      tester,
+    ) async {
+      await _openSheet(tester, _tabletSideways);
+      expect(find.text('Save'), findsOneWidget);
+      expect(find.byType(BottomSheet), findsNothing);
+      expect(find.byType(Dialog), findsNothing);
+      expect(
+        tester.getTopLeft(find.text('Save')).dx,
+        greaterThan(_tabletSideways.width / 2),
+      );
+    });
+
+    testWidgets('in Arabic or Hebrew the form opens from the left', (
+      tester,
+    ) async {
+      await _openSheet(
+        tester,
+        _tabletSideways,
+        direction: TextDirection.rtl,
+      );
+      expect(
+        tester.getTopRight(find.text('Save')).dx,
+        lessThan(_tabletSideways.width / 2),
+      );
+    });
+
+    testWidgets('the side sheet sends back what the form saved', (
+      tester,
+    ) async {
+      final sheet = await _openSheet(tester, _tabletSideways);
+      await tester.tap(find.text('Save'));
+      await tester.pumpAndSettle();
+      expect(await sheet.result, 'saved');
+      expect(find.text('Save'), findsNothing);
+    });
+
+    testWidgets('tapping the page beside the side sheet closes it', (
+      tester,
+    ) async {
+      final sheet = await _openSheet(tester, _tabletSideways);
+      await tester.tapAt(const Offset(100, 400));
+      await tester.pumpAndSettle();
+      expect(find.text('Save'), findsNothing);
+      expect(await sheet.result, isNull);
+    });
+
+    testWidgets('a sheet that must be answered stays open when tapped beside', (
+      tester,
+    ) async {
+      await _openSheet(tester, _tabletSideways, isDismissible: false);
+      await tester.tapAt(const Offset(100, 400));
+      await tester.pumpAndSettle();
+      expect(find.text('Save'), findsOneWidget);
+    });
+
+    testWidgets('the last field of a long form stays above the keyboard', (
+      tester,
+    ) async {
+      const keyboard = 300.0;
+      await _openSheet(
+        tester,
+        _tabletSideways,
+        keyboard: keyboard,
+        builder: _longForm,
+      );
+      final field = tester.getRect(find.byKey(const Key('last-field')));
+      expect(field.bottom, lessThanOrEqualTo(_tabletSideways.height - keyboard));
+      // Not pushed far up either: it sits just above the keyboard.
+      expect(field.bottom, greaterThan(_tabletSideways.height - keyboard - 80));
+    });
+
+    testWidgets('a short choice opens as a dialog in the middle', (
+      tester,
+    ) async {
+      final sheet = await _openSheet(
+        tester,
+        _tabletSideways,
+        style: WideSheetStyle.dialog,
+      );
+      expect(find.byType(Dialog), findsOneWidget);
+      expect(find.byType(BottomSheet), findsNothing);
+      final centre = tester.getCenter(find.text('Save')).dx;
+      expect((centre - _tabletSideways.width / 2).abs(), lessThan(150));
+      await tester.tap(find.text('Save'));
+      await tester.pumpAndSettle();
+      expect(await sheet.result, 'saved');
+    });
+
+    testWidgets('a dialog with the keyboard open leaves no gap for it twice', (
+      tester,
+    ) async {
+      const keyboard = 300.0;
+      await _openSheet(
+        tester,
+        _tabletSideways,
+        style: WideSheetStyle.dialog,
+        keyboard: keyboard,
+        builder: _longForm,
+      );
+      final box = tester.getRect(
+        find
+            .descendant(
+              of: find.byType(Dialog),
+              matching: find.byType(Material),
+            )
+            .first,
+      );
+      final field = tester.getRect(find.byKey(const Key('last-field')));
+      expect(box.bottom, lessThanOrEqualTo(_tabletSideways.height - keyboard));
+      expect(box.bottom - field.bottom, lessThan(40));
+    });
   });
 
-  testWidgets('a short choice opens as a dialog on a 10-inch held sideways', (
-    tester,
-  ) async {
-    await _openSheet(tester, _tabletSideways, style: WideSheetStyle.dialog);
-    expect(find.text('Inside'), findsOneWidget);
-    expect(find.byType(Dialog), findsOneWidget);
-    expect(find.byType(BottomSheet), findsNothing);
+  group('on a phone', () {
+    testWidgets('every sheet is still a bottom sheet, even a dialog one', (
+      tester,
+    ) async {
+      final sheet = await _openSheet(
+        tester,
+        _phone,
+        style: WideSheetStyle.dialog,
+      );
+      expect(find.byType(BottomSheet), findsOneWidget);
+      expect(find.byType(Dialog), findsNothing);
+      await tester.tap(find.text('Save'));
+      await tester.pumpAndSettle();
+      expect(await sheet.result, 'saved');
+    });
   });
 
-  testWidgets('a phone still gets the bottom sheet, whatever the style', (
-    tester,
-  ) async {
-    await _openSheet(tester, _phone, style: WideSheetStyle.dialog);
-    expect(find.text('Inside'), findsOneWidget);
-    expect(find.byType(BottomSheet), findsOneWidget);
-    expect(find.byType(Dialog), findsNothing);
-  });
-
-  testWidgets('a one-column page stays 840 wide on a 10-inch held sideways', (
-    tester,
-  ) async {
-    _useScreen(tester, _tabletSideways);
-    await tester.pumpWidget(
-      const MaterialApp(
-        home: Scaffold(
-          body: WideCentered(child: SizedBox.expand(key: Key('page'))),
+  group('WideCentered', () {
+    Future<Size> pageSize(WidgetTester tester, Size screen) async {
+      _useScreen(tester, screen);
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: WideCentered(child: SizedBox.expand(key: Key('page'))),
+          ),
         ),
-      ),
-    );
-    expect(tester.getSize(find.byKey(const Key('page'))).width, 840);
-  });
+      );
+      return tester.getSize(find.byKey(const Key('page')));
+    }
 
-  testWidgets('a one-column page keeps the full width on a phone', (
-    tester,
-  ) async {
-    _useScreen(tester, _phone);
-    await tester.pumpWidget(
-      const MaterialApp(
-        home: Scaffold(
-          body: WideCentered(child: SizedBox.expand(key: Key('page'))),
-        ),
-      ),
-    );
-    expect(tester.getSize(find.byKey(const Key('page'))).width, _phone.width);
+    testWidgets('keeps a page 840 wide and full height on the tablet', (
+      tester,
+    ) async {
+      final size = await pageSize(tester, _tabletSideways);
+      expect(size.width, WideCentered.maxWidth);
+      expect(size.height, _tabletSideways.height);
+      final left = tester.getTopLeft(find.byKey(const Key('page'))).dx;
+      expect(left, (_tabletSideways.width - WideCentered.maxWidth) / 2);
+    });
+
+    testWidgets('changes nothing on a phone or a 7-inch tablet', (
+      tester,
+    ) async {
+      expect((await pageSize(tester, _phone)).width, _phone.width);
+      expect((await pageSize(tester, const Size(960, 600))).width, 960);
+    });
   });
 }
