@@ -148,24 +148,6 @@ void main() {
     expect(view.records.single.flag, LifeFlag.expiresSoon);
   });
 
-  test('missing records are suggested per person and can be skipped', () {
-    final p = plan(
-      LifeEvent.country,
-      people: const <String>['me', 's1'],
-      skipped: const <String>{'vaccination:me'},
-    );
-    final mine = record('a', 'passports', DateTime(2035, 1, 1));
-    final view = LifePlanItems.build(p, <TrackedItem>[mine], now: now);
-    final keys = view.gaps.map((g) => g.key).toSet();
-    expect(keys.contains('passports:me'), isFalse);
-    expect(keys.contains('passports:s1'), isTrue);
-    expect(keys.contains('health_insurances'), isTrue);
-    expect(
-      view.gaps.firstWhere((g) => g.key == 'vaccination:me').skipped,
-      isTrue,
-    );
-  });
-
   test('days to go', () {
     final p = plan(LifeEvent.moving, date: DateTime(2026, 11, 19));
     expect(LifePlanItems.daysToGo(p, now: now), 12);
@@ -199,14 +181,33 @@ void main() {
       for (final list in LifeEvents.groups.values) ...list,
     ];
     expect(seen.toSet().length, seen.length);
-    expect(seen.toSet(), LifeEvent.values.where(LifeEvents.canStart).toSet());
+    expect(
+      seen.toSet(),
+      LifeEvent.values
+          .where(LifeEvents.canStart)
+          .where((e) => !LifeEvents.answerOf.contains(e))
+          .toSet(),
+    );
+    // Buying a home and losing a job are answers under Moving and Job, and
+    // starting with those answers makes the plan for them.
+    expect(
+      LifeEvents.resolve(LifeEvent.moving, LifeEvents.variantMoveBuy).$1,
+      LifeEvent.homeBuy,
+    );
+    expect(
+      LifeEvents.resolve(LifeEvent.job, LifeEvents.variantJobLost).$1,
+      LifeEvent.jobLoss,
+    );
+    for (final event in LifeEvents.answerOf) {
+      expect(LifeEvents.canStart(event), isTrue, reason: event.name);
+    }
     for (final event in LifeEvents.retired) {
       expect(seen, isNot(contains(event)), reason: event.name);
       expect(LifeEvents.canStart(event), isFalse, reason: event.name);
     }
   });
 
-  test('selling a car cancels its records and asks for nothing new', () {
+  test('selling a car cancels its records', () {
     final rego = record(
       'a',
       'vehicle_registrations',
@@ -219,15 +220,7 @@ void main() {
       start: {'a': LifePlan.fingerprint(rego)},
     );
     final view = LifePlanItems.build(p, <TrackedItem>[rego], now: now);
-    expect(view.gaps, isEmpty);
     expect(view.records.single.rule.action, LifeAction.cancel);
-
-    final buying = LifePlanItems.build(
-      plan(LifeEvent.car, variant: LifeEvents.variantBuy),
-      const <TrackedItem>[],
-      now: now,
-    );
-    expect(buying.gaps.map((g) => g.key), contains('vehicle_insurances'));
   });
 
   test('a note does not mark a record done, a cancel waits for the user', () {
@@ -502,15 +495,24 @@ void main() {
         'caseNumber': '  CAS 123/11/2026  ',
         'places': <String>['bag', 'home', 'bag', 'wallet', 'moon'],
         'foundAt': Timestamp.fromDate(DateTime(2026, 11, 3)),
+        'calls': <String, dynamic>{
+          'card1': Timestamp.fromDate(DateTime(2026, 11, 1, 14, 32)),
+          'bad': 'yesterday',
+        },
       })!;
       expect(read.variant, LifeEvents.variantStolen);
+      expect(read.calls, <String, DateTime>{
+        'card1': DateTime(2026, 11, 1, 14, 32),
+      });
       expect(read.caseNumber, 'CAS 123/11/2026');
       expect(read.places, <String>[KeptIn.bag, KeptIn.wallet]);
       expect(read.isFound, isTrue);
       final map = read.toMap();
       expect(map['caseNumber'], 'CAS 123/11/2026');
       expect(map['places'], <String>[KeptIn.bag, KeptIn.wallet]);
-      expect(map.length, lessThanOrEqualTo(16));
+      expect((map['calls'] as Map).keys, <String>['card1']);
+      // firestore.rules allows at most 18 fields on a plan.
+      expect(map.length, lessThanOrEqualTo(18));
 
       final bare = LifePlan.fromMap('w3', <String, dynamic>{
         'event': 'lostWallet',

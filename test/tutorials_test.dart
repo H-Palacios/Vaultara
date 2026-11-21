@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_stories.dart';
@@ -43,8 +42,6 @@ void main() {
   });
 
   group('story steps', () {
-    final loc = lookupAppLocalizations(const Locale('en'));
-
     test('every locale builds every story', () {
       for (final locale in AppLocalizations.supportedLocales) {
         final l = lookupAppLocalizations(locale);
