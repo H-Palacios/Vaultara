@@ -45,14 +45,17 @@ class LifePlanRepository {
     if (uid == null || uid == _uid) return;
     _sub?.cancel();
     _uid = uid;
-    _sub = _collection()!.snapshots().listen((snap) {
-      final list = snap.docs
-          .map((d) => LifePlan.fromMap(d.id, d.data()))
-          .whereType<LifePlan>()
-          .toList();
-      _publish(list);
-    }, onError: (Object e, StackTrace s) =>
-        ErrorReporter.record(e, s, 'life_plans_listener'));
+    _sub = _collection()!.snapshots().listen(
+      (snap) {
+        final list = snap.docs
+            .map((d) => LifePlan.fromMap(d.id, d.data()))
+            .whereType<LifePlan>()
+            .toList();
+        _publish(list);
+      },
+      onError: (Object e, StackTrace s) =>
+          ErrorReporter.record(e, s, 'life_plans_listener'),
+    );
   }
 
   static void clearForSignOut() {
@@ -151,6 +154,22 @@ class LifePlanRepository {
       if (before != null) _replaceLocal(before);
       return false;
     }
+  }
+
+  /// Writes only the summary Ask Vaultara reads. Failing quietly is fine:
+  /// it is written again the next time the plan is shown.
+  static Future<void> saveSummary(
+    String id,
+    Map<String, dynamic> summary,
+  ) async {
+    final collection = _collection();
+    if (collection == null || id.isEmpty) return;
+    try {
+      await collection
+          .doc(id)
+          .update(<String, dynamic>{'summary': summary})
+          .timeout(_ackWait);
+    } catch (_) {}
   }
 
   static Future<bool> delete(String id) async {

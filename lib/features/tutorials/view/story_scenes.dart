@@ -405,8 +405,8 @@ class StorySceneView extends StatelessWidget {
                 const SizedBox(width: 8),
                 Expanded(
                   child: _Button(
-                    text: loc.lifePlanReadAloud,
-                    icon: Icons.volume_up_rounded,
+                    text: loc.lifePlanWhoToTell,
+                    icon: Icons.forward_to_inbox_rounded,
                     filled: false,
                   ),
                 ),

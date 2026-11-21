@@ -31,6 +31,8 @@ import 'package:vaultara/features/vault/view/record_photos_button.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_state.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
+import 'package:vaultara/features/tools/view/block_number_sheet.dart';
+import 'package:vaultara/features/tools/services/life_plan_summary.dart';
 
 /// A lost or stolen wallet in progress: block the cards, note the case
 /// number, replace the documents, then the steps that keep the damage
@@ -237,6 +239,9 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     final number = KeptIn.dialable(line);
     if (number.isEmpty) return;
     _callingId = recordId;
+    if (recordId != null) {
+      unawaited(_save(_current.withCall(recordId, DateTime.now())));
+    }
     try {
       await launchUrl(Uri(scheme: 'tel', path: number));
     } catch (_) {}
@@ -278,7 +283,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
             borderRadius: BorderRadius.circular(22),
           ),
           icon: Icon(
-            Icons.celebration_rounded,
+            Icons.check_circle_rounded,
             color: scheme.primary,
             size: 34,
           ),
@@ -476,6 +481,13 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
       onToggle: policeTask == null ? null : () => _toggleTask(policeTask),
     );
 
+    final nextLine = plan.isFinished
+        ? null
+        : _nextStep(loc, block, urgent, policeTask, replace);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) LifePlanSummary.sync(context, plan, view, next: nextLine);
+    });
+
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 40),
       children: [
@@ -525,9 +537,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
         _StatusCard(
           plan: plan,
           view: view,
-          next: plan.isFinished
-              ? null
-              : _nextStep(loc, block, urgent, policeTask, replace),
+          next: nextLine,
           onFound: () => _found(view),
         ),
         if (trip != null) ...[
@@ -765,6 +775,14 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
                       text: loc.lostWalletNoLine,
                       colour: scheme.onSurfaceVariant,
                     ),
+                  if (_plan.calls[item.record.id] case final at?)
+                    WalletNote(
+                      icon: Icons.call_made_rounded,
+                      text: loc.lostWalletCalledAt(
+                        LifePlanText.dateTime(context, at),
+                      ),
+                      colour: scheme.primary,
+                    ),
                   const SizedBox(height: 10),
                   Wrap(
                     spacing: 8,
@@ -784,7 +802,8 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
                       else
                         OutlinedButton.icon(
                           style: _compact,
-                          onPressed: () => _openRecord(item),
+                          onPressed: () =>
+                              showBlockNumberSheet(context, item.record),
                           icon: const Icon(Icons.add_call, size: 18),
                           label: Text(loc.lostWalletAddLine),
                         ),
@@ -1197,7 +1216,7 @@ class _StatusCard extends StatelessWidget {
                     ),
                     Icon(
                       plan.isFound
-                          ? Icons.celebration_rounded
+                          ? Icons.check_circle_rounded
                           : Icons.account_balance_wallet_rounded,
                       color: accent,
                     ),

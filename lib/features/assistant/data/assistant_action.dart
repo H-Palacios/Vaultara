@@ -52,6 +52,9 @@ class AssistantRecordChanges {
   final bool? locked;
   final bool? inWallet;
 
+  /// The number to call to block a lost card; a null value clears it.
+  final AssistantValue<String>? lostLine;
+
   const AssistantRecordChanges({
     this.name,
     this.groupKey,
@@ -67,6 +70,7 @@ class AssistantRecordChanges {
     this.person,
     this.locked,
     this.inWallet,
+    this.lostLine,
   });
 
   bool get isEmpty =>
@@ -81,7 +85,8 @@ class AssistantRecordChanges {
       repeatMonths == null &&
       personId == null &&
       locked == null &&
-      inWallet == null;
+      inWallet == null &&
+      lostLine == null;
 
   static AssistantRecordChanges? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -114,6 +119,9 @@ class AssistantRecordChanges {
       person: AssistantAction.text(raw['person'], 40),
       locked: raw['locked'] is bool ? raw['locked'] as bool : null,
       inWallet: raw['inWallet'] is bool ? raw['inWallet'] as bool : null,
+      lostLine: raw.containsKey('lostLine')
+          ? AssistantValue<String>(AssistantAction.text(raw['lostLine'], 40))
+          : null,
     );
     if (changes.groupKey != null && changes.categoryKey == null) return null;
     return changes.isEmpty ? null : changes;

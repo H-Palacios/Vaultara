@@ -23,6 +23,8 @@ import 'package:vaultara/features/tools/view/lost_wallet_plan_view.dart';
 import 'package:vaultara/features/tools/view/lost_wallet_sheet.dart';
 import 'package:vaultara/features/tools/view/lost_wallet_widgets.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/tools/view/block_number_sheet.dart';
+import 'package:vaultara/features/tools/services/emergency_sheet.dart';
 
 /// Opens Lost my wallet: the plan in progress if there is one, otherwise
 /// the check-up and the buttons to start. [start] asks what happened
@@ -252,6 +254,13 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
                     icon: Icons.phone_disabled_rounded,
                     colour: scheme.error,
                     text: loc.lostWalletIssueLines(noLine),
+                    action: loc.lostWalletAddLine,
+                    onTap: () => showCardsWithoutNumber(context, <TrackedItem>[
+                      for (final r in carried)
+                        if (KeptIn.cardGroups.contains(r.subcategoryName) &&
+                            r.lostLine == null)
+                          r,
+                    ]),
                   ),
                 if (noPhoto > 0)
                   _Issue(
@@ -293,6 +302,51 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
             ],
           ),
         ),
+        if (carried.any((r) => LifeEvents.blocksFirst(r.subcategoryName)))
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: WalletPanel(
+              padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
+              onTap: () => EmergencySheet.share(context),
+              child: Row(
+                children: [
+                  WalletBadge(
+                    icon: Icons.print_rounded,
+                    colour: scheme.primary,
+                    size: 36,
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          loc.lostWalletSheetButton,
+                          style: const TextStyle(
+                            fontSize: 14.5,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          loc.lostWalletSheetHint,
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            height: 1.35,
+                            color: scheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(
+                    Icons.chevron_right_rounded,
+                    color: scheme.onSurfaceVariant,
+                  ),
+                ],
+              ),
+            ),
+          ),
         WalletSection(
           title: loc.lostWalletWhatsInside,
           icon: Icons.account_balance_wallet_rounded,
@@ -353,7 +407,7 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
                   children: [
                     WalletBadge(
                       icon: plan.isFound
-                          ? Icons.celebration_rounded
+                          ? Icons.check_circle_rounded
                           : Icons.task_alt_rounded,
                       colour: scheme.primary,
                       size: 36,
@@ -504,7 +558,17 @@ class _Issue extends StatelessWidget {
   final Color colour;
   final String text;
 
-  const _Issue({required this.icon, required this.colour, required this.text});
+  /// A button under the text that sorts the issue out, if there is one.
+  final String? action;
+  final VoidCallback? onTap;
+
+  const _Issue({
+    required this.icon,
+    required this.colour,
+    required this.text,
+    this.action,
+    this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -516,9 +580,21 @@ class _Issue extends StatelessWidget {
           Icon(icon, size: 20, color: colour),
           const SizedBox(width: 10),
           Expanded(
-            child: Text(
-              text,
-              style: const TextStyle(fontSize: 13.5, height: 1.4),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(text, style: const TextStyle(fontSize: 13.5, height: 1.4)),
+                if (action != null && onTap != null)
+                  TextButton.icon(
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                      visualDensity: VisualDensity.compact,
+                    ),
+                    onPressed: onTap,
+                    icon: const Icon(Icons.add_call, size: 18),
+                    label: Text(action!),
+                  ),
+              ],
             ),
           ),
         ],

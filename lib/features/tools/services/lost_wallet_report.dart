@@ -43,9 +43,13 @@ class LostWalletReport {
     final notes = <String, String>{
       for (final item in view.records)
         if (item.record.id != null)
-          item.record.id!: item.isDone
-              ? LifePlanText.done(loc, item)
-              : LifePlanText.hint(loc, item.rule.action),
+          item.record.id!: <String>[
+            item.isDone
+                ? LifePlanText.done(loc, item)
+                : LifePlanText.hint(loc, item.rule.action),
+            if (plan.calls[item.record.id!] case final at?)
+              loc.lostWalletCalledAt(LifePlanText.dateTime(context, at)),
+          ].join(' · '),
     };
     try {
       final bytes = await SharingSupport.withProgress<Uint8List>(

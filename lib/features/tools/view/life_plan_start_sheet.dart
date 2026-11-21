@@ -17,6 +17,7 @@ import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
+import 'package:vaultara/features/tools/logic/life_tasks.dart';
 
 /// Starts a plan for [event] and opens it. If a plan for the same event is
 /// already in progress, that one opens instead.
@@ -144,6 +145,24 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
   String? _variant;
   late List<String> _people;
 
+  /// Whether to add the user's own steps from the last finished plan for
+  /// the same event.
+  bool _reuseSteps = true;
+
+  /// The user's own steps from the most recent finished plan for this
+  /// event, ready to start again. Empty when editing or there are none.
+  List<LifeCustomTask> get _lastSteps {
+    if (widget.plan != null) return const <LifeCustomTask>[];
+    LifePlan? last;
+    for (final plan in LifePlanRepository.finished) {
+      if (plan.event != _event || plan.custom.isEmpty) continue;
+      final at = plan.finishedAt ?? plan.createdAt;
+      final best = last == null ? null : (last.finishedAt ?? last.createdAt);
+      if (best == null || at.isAfter(best)) last = plan;
+    }
+    return last?.custom ?? const <LifeCustomTask>[];
+  }
+
   @override
   void initState() {
     super.initState();
@@ -156,7 +175,12 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
       _date = DateTime(now.year, now.month, now.day);
     }
     _country = widget.country;
-    _variant = LifeEvents.cleanVariant(widget.event, widget.variant);
+    final options = _options;
+    _variant = widget.plan == null
+        ? (options != null && options.contains(widget.variant)
+              ? widget.variant
+              : null)
+        : LifeEvents.cleanVariant(widget.event, widget.variant);
     final given = widget.people;
     if (given != null && given.isNotEmpty) {
       _people = List<String>.of(given);
@@ -170,7 +194,18 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
     }
   }
 
-  bool get _single => LifeEvents.singlePerson(widget.event);
+  /// The answers offered: a new plan can also pick buying a home or losing
+  /// a job; an existing plan keeps the answers it was saved with.
+  List<String>? get _options => widget.plan == null
+      ? LifeEvents.startVariants(widget.event)
+      : LifeEvents.variants[widget.event];
+
+  /// The event the plan will be for, once the answer is known.
+  LifeEvent get _event => widget.plan == null
+      ? LifeEvents.resolve(widget.event, _variant).$1
+      : widget.event;
+
+  bool get _single => LifeEvents.singlePerson(_event);
 
   void _toggle(String id) {
     setState(() {
@@ -215,9 +250,27 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
   /// New plans for a car or a job need the answer. Plans saved before the
   /// question existed can still be edited without one.
   bool get _needsVariant =>
-      widget.plan == null &&
-      LifeEvents.hasVariants(widget.event) &&
-      _variant == null;
+      widget.plan == null && _options != null && _variant == null;
+
+  /// The steps from last time, not done yet and with new ids.
+  static List<LifeCustomTask> _freshCopies(List<LifeCustomTask> steps) {
+    final base = DateTime.now().microsecondsSinceEpoch;
+    return <LifeCustomTask>[
+      for (var i = 0; i < steps.length && i < LifeTasks.maxCustom; i++)
+        LifeCustomTask(id: (base + i).toRadixString(36), text: steps[i].text),
+    ];
+  }
+
+  void _pickVariant(String option) {
+    setState(() {
+      _variant = option;
+      // Losing a job has usually already happened: today is filled in.
+      if (_date == null && LifeEvents.alreadyHappened(_event)) {
+        final now = DateTime.now();
+        _date = DateTime(now.year, now.month, now.day);
+      }
+    });
+  }
 
   void _submit() {
     if (_people.isEmpty || _needsVariant) return;
@@ -225,15 +278,19 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
     final date = _date == null
         ? null
         : DateTime(_date!.year, _date!.month, _date!.day);
+    final (event, variant) = LifeEvents.resolve(widget.event, _variant);
     final plan = current == null
         ? LifePlan(
             id: '',
-            event: widget.event,
+            event: event,
             date: date,
-            people: _people,
-            country: LifeEvents.asksCountry(widget.event) ? _country : null,
+            people: _single && _people.length > 1
+                ? <String>[_people.first]
+                : _people,
+            country: LifeEvents.asksCountry(event) ? _country : null,
             createdAt: DateTime.now(),
-            variant: _variant,
+            variant: variant,
+            custom: _reuseSteps ? _freshCopies(_lastSteps) : const [],
           )
         : current.copyWith(
             date: date,
@@ -289,15 +346,12 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
                       color: scheme.primary.withValues(alpha: 0.12),
                       borderRadius: BorderRadius.circular(14),
                     ),
-                    child: Icon(
-                      LifeEvents.icon(widget.event),
-                      color: scheme.primary,
-                    ),
+                    child: Icon(LifeEvents.icon(_event), color: scheme.primary),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: Text(
-                      LifeEvents.title(loc, widget.event, _variant),
+                      LifeEvents.title(loc, _event, _variant),
                       style: const TextStyle(
                         fontSize: 19,
                         fontWeight: FontWeight.w800,
@@ -309,34 +363,38 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
               ),
               const SizedBox(height: 10),
               Text(
-                LifeEvents.body(loc, widget.event, _variant),
+                LifeEvents.body(loc, _event, _variant),
                 style: TextStyle(
                   fontSize: 13.5,
                   height: 1.4,
                   color: scheme.onSurfaceVariant,
                 ),
               ),
-              if (LifeEvents.hasVariants(widget.event)) ...[
+              if (_options case final options?) ...[
                 const SizedBox(height: 20),
-                _label(LifeEvents.variantQuestion(loc, widget.event), scheme),
-                SegmentedButton<String>(
-                  emptySelectionAllowed: true,
-                  showSelectedIcon: false,
-                  segments: <ButtonSegment<String>>[
-                    for (final option in LifeEvents.variants[widget.event]!)
-                      ButtonSegment<String>(
-                        value: option,
+                _label(
+                  LifeEvents.variantQuestion(
+                    loc,
+                    widget.event,
+                    starting: widget.plan == null,
+                  ),
+                  scheme,
+                ),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    for (final option in options)
+                      ChoiceChip(
                         label: Text(LifeEvents.variantLabel(loc, option)),
+                        selected: _variant == option,
+                        onSelected: (_) => _pickVariant(option),
                       ),
                   ],
-                  selected: <String>{if (_variant != null) _variant!},
-                  onSelectionChanged: (value) => setState(
-                    () => _variant = value.isEmpty ? _variant : value.first,
-                  ),
                 ),
               ],
               const SizedBox(height: 20),
-              _label(LifePlanText.whenQuestion(loc, widget.event), scheme),
+              _label(LifePlanText.whenQuestion(loc, _event), scheme),
               Wrap(
                 spacing: 8,
                 runSpacing: 8,
@@ -429,6 +487,17 @@ class _LifePlanStartSheetState extends State<_LifePlanStartSheet> {
                       ),
                   ],
                 ),
+              if (_lastSteps case final steps when steps.isNotEmpty) ...[
+                const SizedBox(height: 12),
+                CheckboxListTile(
+                  contentPadding: EdgeInsets.zero,
+                  controlAffinity: ListTileControlAffinity.leading,
+                  value: _reuseSteps,
+                  onChanged: (value) =>
+                      setState(() => _reuseSteps = value ?? true),
+                  title: Text(loc.lifePlanReuseSteps(steps.length)),
+                ),
+              ],
               const SizedBox(height: 24),
               FilledButton.icon(
                 onPressed: _people.isEmpty || _needsVariant ? null : _submit,

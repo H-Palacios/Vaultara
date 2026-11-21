@@ -95,6 +95,14 @@ class LifePlan {
   /// When a lost wallet turned up again.
   final DateTime? foundAt;
 
+  /// Record id to when its lost card number was last called from the plan.
+  /// Banks and insurers ask when the loss was reported.
+  final Map<String, DateTime> calls;
+
+  /// What Ask Vaultara reads about the plan, written by LifePlanSummary.
+  /// Kept as it was read, so saving the plan does not drop it.
+  final Map<String, dynamic>? summary;
+
   const LifePlan({
     required this.id,
     required this.event,
@@ -112,6 +120,8 @@ class LifePlan {
     this.caseNumber,
     this.places = const <String>[],
     this.foundAt,
+    this.calls = const <String, DateTime>{},
+    this.summary,
   });
 
   bool get isFinished => finishedAt != null;
@@ -218,6 +228,7 @@ class LifePlan {
     List<String>? places,
     DateTime? foundAt,
     bool clearFound = false,
+    Map<String, DateTime>? calls,
   }) {
     return LifePlan(
       id: id ?? this.id,
@@ -238,7 +249,17 @@ class LifePlan {
           : cleanCaseNumber(caseNumber ?? this.caseNumber),
       places: places == null ? this.places : cleanPlaces(places),
       foundAt: clearFound ? null : (foundAt ?? this.foundAt),
+      calls: calls ?? this.calls,
+      summary: summary,
     );
+  }
+
+  /// Notes that the lost card number for [recordId] was called at [at].
+  LifePlan withCall(String recordId, DateTime at) {
+    final next = Map<String, DateTime>.of(calls);
+    if (next.length >= maxItems && !next.containsKey(recordId)) return this;
+    next[recordId] = at;
+    return copyWith(calls: next);
   }
 
   LifePlan withTask(String key, bool done) {
@@ -299,6 +320,12 @@ class LifePlan {
       if (caseNumber != null) 'caseNumber': caseNumber,
       if (places.isNotEmpty) 'places': places,
       if (foundAt != null) 'foundAt': Timestamp.fromDate(foundAt!),
+      if (calls.isNotEmpty)
+        'calls': <String, Timestamp>{
+          for (final entry in calls.entries.take(maxItems))
+            entry.key: Timestamp.fromDate(entry.value),
+        },
+      if (summary != null) 'summary': summary,
       'updatedAt': FieldValue.serverTimestamp(),
     };
   }
@@ -364,6 +391,15 @@ class LifePlan {
       caseNumber: cleanCaseNumber(map['caseNumber']),
       places: cleanPlaces(map['places']),
       foundAt: _date(map['foundAt']),
+      calls: <String, DateTime>{
+        if (map['calls'] case final Map raw)
+          for (final entry in raw.entries.take(maxItems))
+            if (entry.key is String && entry.value is Timestamp)
+              entry.key as String: (entry.value as Timestamp).toDate(),
+      },
+      summary: map['summary'] is Map
+          ? Map<String, dynamic>.from(map['summary'] as Map)
+          : null,
     );
   }
 }

@@ -892,6 +892,9 @@ class AssistantActionLauncher {
       clearHolder: changes.personId != null && personId == null,
       locked: changes.locked,
       inWallet: changes.inWallet,
+      lostLine: changes.lostLine?.value,
+      clearLostLine:
+          changes.lostLine != null && changes.lostLine!.value == null,
     );
 
     await RecordRepository.updateRecord(record, updated);

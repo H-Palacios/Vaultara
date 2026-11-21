@@ -697,6 +697,15 @@ class AssistantActionPreview {
         ),
       );
     }
+    if (c.lostLine != null) {
+      rows.add(
+        AssistantChangeRow(
+          label: loc.lostLineLabel,
+          before: record?.lostLine,
+          after: c.lostLine!.value ?? '-',
+        ),
+      );
+    }
 
     return AssistantActionPreview(
       title: loc.assistantCardEditTitle,

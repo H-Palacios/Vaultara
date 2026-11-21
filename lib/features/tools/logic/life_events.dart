@@ -470,11 +470,7 @@ class LifeEvents {
   /// Groups in the order the picker shows them.
   static const Map<LifeEventGroup, List<LifeEvent>> groups =
       <LifeEventGroup, List<LifeEvent>>{
-        LifeEventGroup.home: <LifeEvent>[
-          LifeEvent.moving,
-          LifeEvent.homeBuy,
-          LifeEvent.homeSell,
-        ],
+        LifeEventGroup.home: <LifeEvent>[LifeEvent.moving, LifeEvent.homeSell],
         LifeEventGroup.family: <LifeEvent>[
           LifeEvent.marriage,
           LifeEvent.nameChange,
@@ -486,7 +482,6 @@ class LifeEvents {
         ],
         LifeEventGroup.work: <LifeEvent>[
           LifeEvent.job,
-          LifeEvent.jobLoss,
           LifeEvent.studies,
           LifeEvent.retiring,
         ],
@@ -504,6 +499,47 @@ class LifeEvents {
 
   /// Whether a new plan can be started for [event].
   static bool canStart(LifeEvent event) => !retired.contains(event);
+
+  /// Events no longer in the picker on their own: they are an answer under
+  /// another event (buying a home under Moving, losing a job under Job).
+  /// They can still be started that way or by Ask Vaultara, and their plans
+  /// are stored under their own name as before.
+  static const Set<LifeEvent> answerOf = <LifeEvent>{
+    LifeEvent.homeBuy,
+    LifeEvent.jobLoss,
+  };
+
+  /// Answers only offered while starting a plan. They pick another event
+  /// and are never stored.
+  static const String variantJobLost = 'jobLost';
+  static const String variantMoveRent = 'moveRent';
+  static const String variantMoveBuy = 'moveBuy';
+
+  /// The answers to show when starting a plan for [event].
+  static List<String>? startVariants(LifeEvent event) {
+    switch (event) {
+      case LifeEvent.job:
+        return const <String>[variantStart, variantLeave, variantJobLost];
+      case LifeEvent.moving:
+        return const <String>[variantMoveRent, variantMoveBuy];
+      default:
+        return variants[event];
+    }
+  }
+
+  /// The event and stored answer a start answer stands for.
+  static (LifeEvent, String?) resolve(LifeEvent event, String? variant) {
+    if (event == LifeEvent.job && variant == variantJobLost) {
+      return (LifeEvent.jobLoss, null);
+    }
+    if (event == LifeEvent.moving && variant == variantMoveBuy) {
+      return (LifeEvent.homeBuy, null);
+    }
+    if (event == LifeEvent.moving && variant == variantMoveRent) {
+      return (LifeEvent.moving, null);
+    }
+    return (event, variant);
+  }
 
   /// Events that are about someone else, so "Me" is not the default.
   static bool aboutSomeoneElse(LifeEvent event) =>
@@ -722,8 +758,17 @@ class LifeEvents {
   }
 
   /// The question and answers for an event with variants.
-  static String variantQuestion(AppLocalizations loc, LifeEvent event) {
-    if (event == LifeEvent.job) return loc.lifeVariantJobQuestion;
+  static String variantQuestion(
+    AppLocalizations loc,
+    LifeEvent event, {
+    bool starting = false,
+  }) {
+    if (event == LifeEvent.job) {
+      return starting
+          ? loc.lifeVariantJobAnyQuestion
+          : loc.lifeVariantJobQuestion;
+    }
+    if (event == LifeEvent.moving) return loc.lifeVariantMoveQuestion;
     if (event == LifeEvent.lostWallet) return loc.lifeVariantWalletQuestion;
     return loc.lifeVariantCarQuestion;
   }
@@ -742,6 +787,12 @@ class LifeEvents {
         return loc.lifeVariantLost;
       case variantStolen:
         return loc.lifeVariantStolen;
+      case variantJobLost:
+        return loc.lifeVariantJobLost;
+      case variantMoveRent:
+        return loc.lifeVariantMoveRent;
+      case variantMoveBuy:
+        return loc.lifeVariantMoveBuy;
     }
     return variant;
   }

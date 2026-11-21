@@ -21,6 +21,13 @@ class LifePlanText {
     return DateFormat('d MMM y', locale).format(date);
   }
 
+  /// A day and time, such as 21 Nov 2026, 14:32.
+  static String dateTime(BuildContext context, DateTime at) {
+    final locale = SafeLocale.date(Localizations.localeOf(context).toString());
+    return '${DateFormat('d MMM y', locale).format(at)}, '
+        '${DateFormat.Hm(locale).format(at)}';
+  }
+
   static String person(AppLocalizations loc, String id) {
     if (id == LifePlan.meKey) return loc.familyMe;
     return PeopleRepository.byId(id)?.name ?? loc.familyMe;
@@ -150,6 +157,48 @@ class LifePlanText {
         CostFormat.format(context, entry.value, entry.key),
     ];
     return parts.join(' + ');
+  }
+
+  /// Plans where every organisation has to be told the same news: a new
+  /// address or a new name.
+  static bool asksWhoToTell(LifeEvent event) =>
+      _tellsAddress(event) || _tellsName(event);
+
+  static bool _tellsAddress(LifeEvent event) =>
+      event == LifeEvent.moving ||
+      event == LifeEvent.homeBuy ||
+      event == LifeEvent.homeSell ||
+      event == LifeEvent.country;
+
+  static bool _tellsName(LifeEvent event) =>
+      event == LifeEvent.nameChange ||
+      event == LifeEvent.marriage ||
+      event == LifeEvent.divorce;
+
+  /// The organisations still to tell, each with its company when saved,
+  /// and a message to send them. Null when there is nobody left.
+  static String? whoToTell(
+    AppLocalizations loc,
+    LifePlan plan,
+    LifePlanView view,
+  ) {
+    if (!asksWhoToTell(plan.event)) return null;
+    final lines = <String>[];
+    final seen = <String>{};
+    for (final item in view.records) {
+      if (item.isDone) continue;
+      final provider = item.record.provider?.trim();
+      final name = recordName(loc, item);
+      final line = provider == null || provider.isEmpty
+          ? name
+          : '$provider ($name)';
+      if (seen.add(line.toLowerCase())) lines.add('• $line');
+    }
+    if (lines.isEmpty) return null;
+    final message = _tellsName(plan.event)
+        ? loc.lifePlanTellName
+        : loc.lifePlanTellAddress;
+    return '${loc.lifePlanTellHeading}\n${lines.join('\n')}\n\n$message';
   }
 
   static String task(AppLocalizations loc, LifeTaskItem item) {

@@ -167,8 +167,14 @@ class AssistantNavigator {
         unawaited(openLifeEvents(context));
         return true;
       case 'life_event':
+        // "lostWallet:stolen" starts the plan with its answer filled in.
+        final parts = (action.targetId ?? '').split(':');
         unawaited(
-          openLifeEvents(context, start: LifeEvents.fromName(action.targetId)),
+          openLifeEvents(
+            context,
+            start: LifeEvents.fromName(parts.first),
+            variant: parts.length > 1 ? parts[1] : null,
+          ),
         );
         return true;
       case 'tutorial':

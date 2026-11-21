@@ -1,5 +1,4 @@
 import 'package:vaultara/core/data/models/tracked_item.dart';
-import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/costs/logic/cost_forecast.dart';
 import 'package:vaultara/features/tools/data/life_plan.dart';
@@ -135,17 +134,6 @@ class LifePlanItems {
 
   /// Many countries want a passport valid for 6 months after arrival.
   static const int passportDays = 183;
-
-  static const Set<String> _personalGroups = <String>{
-    'passports',
-    'id_cards',
-    'residence_permits',
-    'driving_licences',
-    'visas',
-    'study_permits',
-    'work_permits',
-    'professional_licences',
-  };
 
   /// Saved records the plan is about. For a lost wallet that is whatever
   /// was kept in the places that went missing, whoever it belongs to.
@@ -304,24 +292,10 @@ class LifePlanItems {
       );
     }
 
-    final gaps = <LifeGapItem>[];
-    final needs = LifeEvents.needsFor(plan.event, plan.variant);
+    // "You may need" suggestions were removed: guesses at documents the
+    // user has not saved were mostly noise.
+    const gaps = <LifeGapItem>[];
     final active = records.where((r) => !r.isDeleted).toList();
-    for (final need in needs) {
-      final targets = need.perPerson ? plan.people : const <String?>[null];
-      for (final person in targets) {
-        if (_has(active, need, person, plan, extraLabels)) continue;
-        final key = person == null ? need.key : '${need.key}:$person';
-        gaps.add(
-          LifeGapItem(
-            key: key,
-            need: need,
-            person: person,
-            skipped: plan.skipped.contains(key),
-          ),
-        );
-      }
-    }
 
     final builtIn = LifeTasks.relevant(
       LifeTasks.forEvent(plan.event, plan.variant),
@@ -366,53 +340,6 @@ class LifePlanItems {
       costs: costs,
     );
   }
-
-  static bool _has(
-    List<TrackedItem> records,
-    LifeNeed need,
-    String? person,
-    LifePlan plan,
-    Map<String, String> extraLabels,
-  ) {
-    bool forPeople(TrackedItem r) {
-      final holder = r.holderId ?? LifePlan.meKey;
-      if (person != null) return holder == person;
-      return plan.people.contains(holder) ||
-          !_personalGroups.contains(r.subcategoryName);
-    }
-
-    if (need.isExtra) {
-      final extra = LifeEvents.extras[need.key]!;
-      final words = <String>[
-        ...?_extraWords[need.key],
-        // The label in the user's language, which is also the name a
-        // record gets when it is added from the plan.
-        if (extraLabels[need.key] case final label?
-            when label.trim().isNotEmpty)
-          label.trim().toLowerCase(),
-      ];
-      return records.any((r) {
-        if (!forPeople(r)) return false;
-        if (r.categoryKey != extra.categoryKey &&
-            PresetCatalog.categoryKeys.contains(r.categoryKey)) {
-          // A record in another preset category is not this one.
-          return false;
-        }
-        final name = r.name.toLowerCase();
-        return words.any(name.contains);
-      });
-    }
-    return records.any((r) => r.subcategoryName == need.key && forPeople(r));
-  }
-
-  /// English words that show a saved record is the extra. The label in the
-  /// user's language is matched too, through extraLabels.
-  static const Map<String, List<String>> _extraWords = <String, List<String>>{
-    'proof_of_address': <String>['address', 'utility', 'bill'],
-    'police_clearance': <String>['police', 'clearance', 'criminal'],
-    'vaccination': <String>['vaccin', 'yellow fever', 'immunis', 'immuniz'],
-    'student_card': <String>['student'],
-  };
 
   static DateTime _day(DateTime d) => DateTime(d.year, d.month, d.day);
 

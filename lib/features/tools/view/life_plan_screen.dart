@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/data/user_data_watcher.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -11,8 +12,6 @@ import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/features/family/view/family_screen.dart';
 import 'package:vaultara/features/family/view/person_chip.dart';
 import 'package:vaultara/features/guides/data/renewal_guides.dart';
-import 'package:vaultara/features/insights/services/tts_service.dart';
-import 'package:vaultara/features/records/data/models/record_prefill.dart';
 import 'package:vaultara/features/tools/data/life_plan.dart';
 import 'package:vaultara/features/tools/data/life_plan_repository.dart';
 import 'package:vaultara/features/tools/logic/life_events.dart';
@@ -20,13 +19,13 @@ import 'package:vaultara/features/tools/logic/life_plan_items.dart';
 import 'package:vaultara/features/tools/logic/life_tasks.dart';
 import 'package:vaultara/features/tools/services/life_plan_reminders.dart';
 import 'package:vaultara/features/tools/services/life_plan_share.dart';
+import 'package:vaultara/features/tools/services/life_plan_summary.dart';
 import 'package:vaultara/features/tools/view/life_plan_start_sheet.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
 import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:vaultara/features/tools/view/proof_pack_screen.dart';
 import 'package:vaultara/features/travel/view/travel_actions.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
-import 'package:vaultara/shell/shell_fab.dart';
 import 'package:vaultara/shell/shell_state.dart';
 
 Future<void> openLifePlan(BuildContext context, String planId) {
@@ -53,8 +52,6 @@ class LifePlanScreen extends StatefulWidget {
 class _LifePlanScreenState extends State<LifePlanScreen> {
   UserDataWatcher? _watcher;
   bool _showDone = false;
-  final TtsService _tts = TtsService();
-  bool _ttsReady = false;
 
   @override
   void initState() {
@@ -69,7 +66,6 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
   @override
   void dispose() {
     _watcher?.dispose();
-    _tts.stop();
     LifePlanReminders.refreshSoon(LifePlanRepository.plans.value);
     super.dispose();
   }
@@ -109,10 +105,6 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
       item,
       item.isDone ? null : LifePlanText.statusFor(item.rule.action),
     );
-  }
-
-  void _skip(LifePlan plan, LifeGapItem gap, bool skip) {
-    unawaited(_save(plan.withSkipped(gap.key, skip)));
   }
 
   void _toggleTask(LifePlan plan, LifeTaskItem item) {
@@ -195,36 +187,6 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
     }
   }
 
-  Future<void> _add(LifePlan plan, LifeGapItem gap) async {
-    final loc = AppLocalizations.of(context)!;
-    final person =
-        gap.person ??
-        (plan.people.length == 1 ? plan.people.first : LifePlan.meKey);
-    final holderId = person == LifePlan.meKey ? null : person;
-    final need = gap.need;
-    if (!need.isExtra) {
-      await TravelActions.addRecord(
-        context,
-        group: need.key,
-        holderId: holderId,
-        isPremium: _isPremium,
-      );
-      return;
-    }
-    final shell = ShellState.current;
-    if (shell == null) return;
-    final extra = LifeEvents.extras[need.key]!;
-    openAddRecord(
-      context,
-      shell,
-      prefill: RecordPrefill(
-        name: extra.label(loc),
-        categoryKey: extra.categoryKey,
-        holderId: holderId,
-      ),
-    );
-  }
-
   /// Opens Proof pack with the plan's records ticked. Proof pack is part of
   /// the paid plans, so free users see the plans instead.
   Future<void> _proofPack(LifePlanView view) async {
@@ -257,42 +219,15 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
     }
   }
 
-  /// Reads the plan aloud: what it is, how far along it is, and what is
-  /// left, in the order it appears on the screen.
-  Future<void> _readAloud(LifePlan plan, LifePlanView view) async {
+  /// Moving or a new name means telling every organisation in the plan.
+  /// Shares the list, with each one's company, and a message to send them.
+  Future<void> _shareWhoToTell(LifePlan plan, LifePlanView view) async {
     final loc = AppLocalizations.of(context)!;
-    if (_tts.speaking) {
-      _tts.stop();
-      setState(() {});
-      return;
-    }
-    if (!_ttsReady) {
-      await _tts.init(context, () {
-        if (mounted) setState(() {});
-      });
-      _ttsReady = true;
-    }
-    if (!mounted) return;
-    if (!_tts.available) {
-      ActionFeedbackSnackbar.showInfo(
-        context,
-        loc.lifePlanReadAloudUnavailable,
-        icon: Icons.volume_off_rounded,
-      );
-      return;
-    }
-    final parts = <String>[
-      LifePlanText.title(loc, plan),
-      loc.lifePlanProgress(view.done, view.total),
-      for (final task in view.tasks.where((t) => !t.done))
-        LifePlanText.task(loc, task),
-      for (final item in view.records.where((r) => !r.isDone))
-        '${LifePlanText.recordName(loc, item)}. '
-            '${LifePlanText.hint(loc, item.rule.action)}',
-      for (final gap in view.gaps.where((g) => !g.skipped))
-        '${loc.lifePlanMayNeed}: ${LifePlanText.gap(context, loc, plan, gap)}',
-    ];
-    await _tts.speak(parts.join('. '));
+    final text = LifePlanText.whoToTell(loc, plan, view);
+    if (text == null) return;
+    try {
+      await Share.share(text, subject: loc.lifePlanWhoToTell);
+    } catch (_) {}
   }
 
   Future<void> _finish(LifePlan plan, bool finished) async {
@@ -357,6 +292,9 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
               RecordRepository.allActive(),
               extraLabels: LifePlanText.extraLabels(loc),
             );
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+              if (mounted) LifePlanSummary.sync(context, plan, view);
+            });
             return _content(context, loc, plan, view);
           },
         ),
@@ -391,8 +329,8 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
               switch (value) {
                 case 'edit':
                   editLifePlan(context, plan);
-                case 'pack':
-                  _proofPack(view);
+                case 'tell':
+                  _shareWhoToTell(plan, view);
                 case 'pdf':
                   LifePlanShare.sharePdf(context, plan, view);
                 case 'calendar':
@@ -407,11 +345,12 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
             },
             itemBuilder: (_) => [
               _menu('edit', Icons.edit_rounded, loc.edit),
-              if (view.records.isNotEmpty)
+              if (LifePlanText.asksWhoToTell(plan.event) &&
+                  view.records.isNotEmpty)
                 _menu(
-                  'pack',
-                  Icons.folder_shared_rounded,
-                  loc.lifePlanProofPack,
+                  'tell',
+                  Icons.forward_to_inbox_rounded,
+                  loc.lifePlanWhoToTell,
                 ),
               _menu(
                 'pdf',
@@ -432,12 +371,7 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
           ),
         ),
         const SizedBox(height: 14),
-        _SummaryCard(
-          plan: plan,
-          view: view,
-          speaking: _tts.speaking,
-          onReadAloud: () => _readAloud(plan, view),
-        ),
+        _SummaryCard(plan: plan, view: view),
         if (view.allDone && !plan.isFinished) ...[
           const SizedBox(height: 12),
           _AllDoneCard(onFinish: () => _finish(plan, true)),
@@ -476,14 +410,6 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
             label: Text(loc.lifePlanAddOwnStep),
           ),
         ),
-        if (view.gaps.isNotEmpty) ...[
-          _section(
-            loc.lifePlanMayNeed,
-            Icons.add_circle_outline_rounded,
-            view.gaps.length,
-          ),
-          for (final gap in view.gaps) _gapRow(plan, gap),
-        ],
         if (done.isNotEmpty || view.removed > 0) ...[
           const SizedBox(height: 18),
           InkWell(
@@ -850,86 +776,6 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
       ),
     );
   }
-
-  Widget _gapRow(LifePlan plan, LifeGapItem gap) {
-    final loc = AppLocalizations.of(context)!;
-    final scheme = Theme.of(context).colorScheme;
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
-      child: Material(
-        color: scheme.surface,
-        borderRadius: BorderRadius.circular(16),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(14, 12, 10, 10),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 1),
-                child: Icon(
-                  gap.skipped
-                      ? Icons.remove_circle_outline_rounded
-                      : Icons.add_circle_outline_rounded,
-                  size: 22,
-                  color: gap.skipped ? scheme.outline : scheme.primary,
-                ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      LifePlanText.gap(context, loc, plan, gap),
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w700,
-                        height: 1.3,
-                        color: gap.skipped ? scheme.onSurfaceVariant : null,
-                      ),
-                    ),
-                    if (gap.skipped) ...[
-                      const SizedBox(height: 4),
-                      Text(
-                        loc.lifePlanStatusNotNeeded,
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: scheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
-                    const SizedBox(height: 8),
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 4,
-                      children: gap.skipped
-                          ? [
-                              TextButton(
-                                onPressed: () => _skip(plan, gap, false),
-                                child: Text(loc.lifePlanStatusUndo),
-                              ),
-                            ]
-                          : [
-                              FilledButton.tonalIcon(
-                                onPressed: () => _add(plan, gap),
-                                icon: const Icon(Icons.add_rounded, size: 18),
-                                label: Text(loc.travelActionAdd),
-                              ),
-                              TextButton(
-                                onPressed: () => _skip(plan, gap, true),
-                                child: Text(loc.lifePlanStatusNotNeeded),
-                              ),
-                            ],
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 }
 
 class _StatusMenu extends StatelessWidget {
@@ -1038,15 +884,8 @@ class _OwnStepDialogState extends State<_OwnStepDialog> {
 class _SummaryCard extends StatelessWidget {
   final LifePlan plan;
   final LifePlanView view;
-  final bool speaking;
-  final VoidCallback onReadAloud;
 
-  const _SummaryCard({
-    required this.plan,
-    required this.view,
-    required this.speaking,
-    required this.onReadAloud,
-  });
+  const _SummaryCard({required this.plan, required this.view});
 
   @override
   Widget build(BuildContext context) {
@@ -1095,18 +934,6 @@ class _SummaryCard extends StatelessWidget {
                       ),
                     ),
                   ],
-                ),
-              ),
-              IconButton(
-                tooltip: speaking
-                    ? loc.lifePlanStopReading
-                    : loc.lifePlanReadAloud,
-                onPressed: onReadAloud,
-                icon: Icon(
-                  speaking
-                      ? Icons.stop_circle_rounded
-                      : Icons.volume_up_rounded,
-                  color: scheme.primary,
                 ),
               ),
             ],

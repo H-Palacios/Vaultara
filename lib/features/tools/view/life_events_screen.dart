@@ -14,9 +14,15 @@ import 'package:vaultara/features/tools/view/life_plan_text.dart';
 import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-Future<void> openLifeEvents(BuildContext context, {LifeEvent? start}) async {
+Future<void> openLifeEvents(
+  BuildContext context, {
+  LifeEvent? start,
+  String? variant,
+}) async {
   await Navigator.of(context).push(
-    MaterialPageRoute<void>(builder: (_) => LifeEventsScreen(start: start)),
+    MaterialPageRoute<void>(
+      builder: (_) => LifeEventsScreen(start: start, variant: variant),
+    ),
   );
 }
 
@@ -26,7 +32,10 @@ class LifeEventsScreen extends StatefulWidget {
   /// Opens the start sheet for this event once the screen shows.
   final LifeEvent? start;
 
-  const LifeEventsScreen({super.key, this.start});
+  /// The answer to fill in, such as stolen for a wallet.
+  final String? variant;
+
+  const LifeEventsScreen({super.key, this.start, this.variant});
 
   @override
   State<LifeEventsScreen> createState() => _LifeEventsScreenState();
@@ -48,7 +57,7 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
     final start = widget.start;
     if (start != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted) startLifePlan(context, start);
+        if (mounted) startLifePlan(context, start, variant: widget.variant);
       });
     }
   }
