@@ -13,6 +13,9 @@ import 'package:vaultara/shell/shell.dart';
 import 'package:vaultara/shell/shell_pages.dart';
 import 'package:vaultara/shell/shell_fab.dart';
 import 'package:vaultara/shell/bottom_nav_bar.dart';
+import 'package:vaultara/shell/side_nav_add_button.dart';
+import 'package:vaultara/shell/side_nav_rail.dart';
+import 'package:vaultara/core/layout/wide_layout.dart';
 
 import 'package:vaultara/features/home/view/home_screen.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
@@ -56,6 +59,10 @@ class ShellState extends State<Shell> {
   bool insightsTutorialMode = false;
 
   final fabKey = GlobalKey();
+
+  /// Keeps the four tabs alive when the tablet turns and the layout swaps
+  /// between the bottom bar and the side bar.
+  final _pagesKey = GlobalKey();
   final homeKey = GlobalKey<HomeScreenState>();
 
   bool get tutorialActive => tutorialStep != null;
@@ -254,9 +261,33 @@ class ShellState extends State<Shell> {
     }
 
     final primaryColour = Theme.of(context).colorScheme.primary;
+    final pages = IndexedStack(
+      key: _pagesKey,
+      index: index,
+      children: buildShellPages(this),
+    );
+
+    // A 10-inch tablet held sideways gets the side bar, with the + at its
+    // top. Phones and 7-inch tablets keep the curved bottom bar below.
+    if (WideLayout.of(context)) {
+      return Scaffold(
+        body: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            SideNavRail(
+              currentIndex: index,
+              isTutorialActive: tutorialActive,
+              onTap: onNavTap,
+              addButton: SideNavAddButton(shell: this),
+            ),
+            Expanded(child: pages),
+          ],
+        ),
+      );
+    }
 
     return Scaffold(
-      body: IndexedStack(index: index, children: buildShellPages(this)),
+      body: pages,
       bottomNavigationBar: BottomNavBar(
         currentIndex: index,
         isTutorialActive: tutorialActive,
