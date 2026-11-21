@@ -2376,6 +2376,34 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$countryൽ ദിവസങ്ങൾ: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'ഫ്ലൈറ്റ് ഇല്ലാതാക്കുക';
+
+  @override
+  String get travelFlightDeleted => 'ഫ്ലൈറ്റ് ഇല്ലാതാക്കി';
+
+  @override
+  String get lostWalletSwitchToStolen => 'അത് മോഷ്ടിക്കപ്പെട്ടു';
+
+  @override
+  String get lostWalletSwitchToLost => 'അത് നഷ്ടപ്പെട്ടു, മോഷ്ടിക്കപ്പെട്ടില്ല';
+
+  @override
+  String get lostWalletSwitchedStolen => 'മോഷ്ടിക്കപ്പെട്ടു എന്നാക്കി. നിങ്ങളുടെ പുരോഗതി നിലനിൽക്കും.';
+
+  @override
+  String get lostWalletSwitchedLost => 'നഷ്ടപ്പെട്ടു എന്നാക്കി. നിങ്ങളുടെ പുരോഗതി നിലനിൽക്കും.';
+
+  @override
   String get travelSectionJourney => 'നിങ്ങളുടെ യാത്ര';
 
   @override

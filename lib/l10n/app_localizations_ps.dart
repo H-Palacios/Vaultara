@@ -2376,6 +2376,34 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'ورځې په $country کې: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'الوتنه ړنګه کړئ';
+
+  @override
+  String get travelFlightDeleted => 'الوتنه ړنګه شوه';
+
+  @override
+  String get lostWalletSwitchToStolen => 'غلا شوی';
+
+  @override
+  String get lostWalletSwitchToLost => 'ورک شوی، غلا شوی نه دی';
+
+  @override
+  String get lostWalletSwitchedStolen => 'غلا شوي ته بدل شو. ستاسو پرمختګ ساتل کیږي.';
+
+  @override
+  String get lostWalletSwitchedLost => 'ورک شوي ته بدل شو. ستاسو پرمختګ ساتل کیږي.';
+
+  @override
   String get travelSectionJourney => 'ستاسو سفر';
 
   @override

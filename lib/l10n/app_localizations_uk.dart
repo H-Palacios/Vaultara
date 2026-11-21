@@ -2403,6 +2403,34 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Днів у країні $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Видалити рейс';
+
+  @override
+  String get travelFlightDeleted => 'Рейс видалено';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Його вкрали';
+
+  @override
+  String get lostWalletSwitchToLost => 'Загублено, а не вкрадено';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Змінено на «вкрадено». Ваш прогрес збережено.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Змінено на «загублено». Ваш прогрес збережено.';
+
+  @override
   String get travelSectionJourney => 'Ваша подорож';
 
   @override

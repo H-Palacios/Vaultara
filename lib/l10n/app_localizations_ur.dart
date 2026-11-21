@@ -2376,6 +2376,34 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$country میں دن: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'پرواز حذف کریں';
+
+  @override
+  String get travelFlightDeleted => 'پرواز حذف ہو گئی';
+
+  @override
+  String get lostWalletSwitchToStolen => 'یہ چوری ہو گیا';
+
+  @override
+  String get lostWalletSwitchToLost => 'یہ کھو گیا، چوری نہیں ہوا';
+
+  @override
+  String get lostWalletSwitchedStolen => 'چوری میں بدل دیا گیا۔ آپ کی پیش رفت برقرار ہے۔';
+
+  @override
+  String get lostWalletSwitchedLost => 'کھویا ہوا میں بدل دیا گیا۔ آپ کی پیش رفت برقرار ہے۔';
+
+  @override
   String get travelSectionJourney => 'آپ کا سفر';
 
   @override

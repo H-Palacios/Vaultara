@@ -2412,6 +2412,34 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'الأيام في $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'حذف الرحلة';
+
+  @override
+  String get travelFlightDeleted => 'تم حذف الرحلة';
+
+  @override
+  String get lostWalletSwitchToStolen => 'لقد سُرقت';
+
+  @override
+  String get lostWalletSwitchToLost => 'فُقدت ولم تُسرق';
+
+  @override
+  String get lostWalletSwitchedStolen => 'تم التغيير إلى مسروقة. تقدمك محفوظ.';
+
+  @override
+  String get lostWalletSwitchedLost => 'تم التغيير إلى مفقودة. تقدمك محفوظ.';
+
+  @override
   String get travelSectionJourney => 'رحلتك';
 
   @override

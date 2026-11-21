@@ -2375,6 +2375,34 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$country дахь өдрүүд: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Нислэгийг устгах';
+
+  @override
+  String get travelFlightDeleted => 'Нислэг устгагдлаа';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Хулгайлагдсан';
+
+  @override
+  String get lostWalletSwitchToLost => 'Алдагдсан, хулгайлагдаагүй';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Хулгайлагдсан болгож өөрчиллөө. Таны явц хадгалагдана.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Алдагдсан болгож өөрчиллөө. Таны явц хадгалагдана.';
+
+  @override
   String get travelSectionJourney => 'Таны аялал';
 
   @override

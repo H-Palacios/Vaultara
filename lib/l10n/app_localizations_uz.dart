@@ -2376,6 +2376,34 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '${country}dagi kunlar: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Reysni oʻchirish';
+
+  @override
+  String get travelFlightDeleted => 'Reys oʻchirildi';
+
+  @override
+  String get lostWalletSwitchToStolen => 'U oʻgʻirlandi';
+
+  @override
+  String get lostWalletSwitchToLost => 'U yoʻqoldi, oʻgʻirlanmadi';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Oʻgʻirlangan deb oʻzgartirildi. Yutuqlaringiz saqlanadi.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Yoʻqolgan deb oʻzgartirildi. Yutuqlaringiz saqlanadi.';
+
+  @override
   String get travelSectionJourney => 'Sayohatingiz';
 
   @override

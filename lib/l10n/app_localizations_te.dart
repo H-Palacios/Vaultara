@@ -2376,6 +2376,34 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$countryలో రోజులు: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'ఫ్లైట్‌ను తొలగించు';
+
+  @override
+  String get travelFlightDeleted => 'ఫ్లైట్ తొలగించబడింది';
+
+  @override
+  String get lostWalletSwitchToStolen => 'అది దొంగిలించబడింది';
+
+  @override
+  String get lostWalletSwitchToLost => 'అది పోయింది, దొంగిలించబడలేదు';
+
+  @override
+  String get lostWalletSwitchedStolen => 'దొంగిలించబడింది అని మార్చబడింది. మీ పురోగతి ఉంటుంది.';
+
+  @override
+  String get lostWalletSwitchedLost => 'పోయింది అని మార్చబడింది. మీ పురోగతి ఉంటుంది.';
+
+  @override
   String get travelSectionJourney => 'మీ ప్రయాణం';
 
   @override

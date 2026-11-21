@@ -2376,6 +2376,34 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'ቀናት በ$country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'በረራውን ሰርዝ';
+
+  @override
+  String get travelFlightDeleted => 'በረራው ተሰርዟል';
+
+  @override
+  String get lostWalletSwitchToStolen => 'ተሰርቋል';
+
+  @override
+  String get lostWalletSwitchToLost => 'ጠፍቷል እንጂ አልተሰረቀም';
+
+  @override
+  String get lostWalletSwitchedStolen => 'ወደ ተሰረቀ ተቀይሯል። እድገትዎ ይቀመጣል።';
+
+  @override
+  String get lostWalletSwitchedLost => 'ወደ ጠፋ ተቀይሯል። እድገትዎ ይቀመጣል።';
+
+  @override
   String get travelSectionJourney => 'ጉዞዎ';
 
   @override

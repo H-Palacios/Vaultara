@@ -2376,6 +2376,34 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$country में दिन: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'उड़ान हटाएं';
+
+  @override
+  String get travelFlightDeleted => 'उड़ान हटा दी गई';
+
+  @override
+  String get lostWalletSwitchToStolen => 'यह चोरी हो गया';
+
+  @override
+  String get lostWalletSwitchToLost => 'यह खो गया, चोरी नहीं हुआ';
+
+  @override
+  String get lostWalletSwitchedStolen => 'चोरी में बदला गया। आपकी प्रगति बनी रहती है।';
+
+  @override
+  String get lostWalletSwitchedLost => 'खोया हुआ में बदला गया। आपकी प्रगति बनी रहती है।';
+
+  @override
   String get travelSectionJourney => 'आपकी यात्रा';
 
   @override

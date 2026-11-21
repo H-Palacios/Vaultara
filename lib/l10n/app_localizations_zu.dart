@@ -2376,6 +2376,34 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Izinsuku e$country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Susa indiza';
+
+  @override
+  String get travelFlightDeleted => 'Indiza isusiwe';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Intshontshiwe';
+
+  @override
+  String get lostWalletSwitchToLost => 'Ilahlekile, ayintshontshwanga';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Kushintshwe kwaba intshontshiwe. Inqubekela phambili yakho iyagcinwa.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Kushintshwe kwaba ilahlekile. Inqubekela phambili yakho iyagcinwa.';
+
+  @override
   String get travelSectionJourney => 'Uhambo lwakho';
 
   @override

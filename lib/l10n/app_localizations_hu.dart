@@ -2376,6 +2376,34 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Napok – $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Járat törlése';
+
+  @override
+  String get travelFlightDeleted => 'Járat törölve';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Ellopták';
+
+  @override
+  String get lostWalletSwitchToLost => 'Elveszett, nem lopták el';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Ellopottra módosítva. Az előrehaladásod megmarad.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Elveszettre módosítva. Az előrehaladásod megmarad.';
+
+  @override
   String get travelSectionJourney => 'Az utad';
 
   @override

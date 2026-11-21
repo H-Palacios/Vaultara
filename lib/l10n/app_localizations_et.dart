@@ -2376,6 +2376,34 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Päevi riigis $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Kustuta lend';
+
+  @override
+  String get travelFlightDeleted => 'Lend kustutatud';
+
+  @override
+  String get lostWalletSwitchToStolen => 'See varastati';
+
+  @override
+  String get lostWalletSwitchToLost => 'See kadus, seda ei varastatud';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Muudetud varastatuks. Sinu edenemine jääb alles.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Muudetud kadunuks. Sinu edenemine jääb alles.';
+
+  @override
   String get travelSectionJourney => 'Sinu reis';
 
   @override

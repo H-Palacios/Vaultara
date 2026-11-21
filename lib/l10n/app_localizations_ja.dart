@@ -2363,6 +2363,34 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$countryでの日数：$days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'フライトを削除';
+
+  @override
+  String get travelFlightDeleted => 'フライトを削除しました';
+
+  @override
+  String get lostWalletSwitchToStolen => '盗まれた';
+
+  @override
+  String get lostWalletSwitchToLost => 'なくした（盗難ではない）';
+
+  @override
+  String get lostWalletSwitchedStolen => '盗難に変更しました。進捗はそのままです。';
+
+  @override
+  String get lostWalletSwitchedLost => '紛失に変更しました。進捗はそのままです。';
+
+  @override
   String get travelSectionJourney => '旅程';
 
   @override

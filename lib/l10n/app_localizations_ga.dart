@@ -2403,6 +2403,34 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Laethanta in $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Scrios an eitilt';
+
+  @override
+  String get travelFlightDeleted => 'Scriosadh an eitilt';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Goideadh é';
+
+  @override
+  String get lostWalletSwitchToLost => 'Cailleadh é, níor goideadh é';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Athraithe go goidte. Coinnítear do dhul chun cinn.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Athraithe go caillte. Coinnítear do dhul chun cinn.';
+
+  @override
   String get travelSectionJourney => 'Do thuras';
 
   @override

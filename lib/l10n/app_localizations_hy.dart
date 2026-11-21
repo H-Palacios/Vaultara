@@ -2376,6 +2376,34 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Օրեր $country-ում՝ $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Ջնջել թռիչքը';
+
+  @override
+  String get travelFlightDeleted => 'Թռիչքը ջնջվեց';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Այն գողացվել է';
+
+  @override
+  String get lostWalletSwitchToLost => 'Այն կորել է, ոչ թե գողացվել';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Փոխվեց գողացվածի։ Ձեր առաջընթացը պահպանվում է։';
+
+  @override
+  String get lostWalletSwitchedLost => 'Փոխվեց կորածի։ Ձեր առաջընթացը պահպանվում է։';
+
+  @override
   String get travelSectionJourney => 'Ձեր ճանապարհորդությունը';
 
   @override

@@ -2376,6 +2376,34 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Maalmaha $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Tirtir duulimaadka';
+
+  @override
+  String get travelFlightDeleted => 'Duulimaadka waa la tirtiray';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Waa la xaday';
+
+  @override
+  String get lostWalletSwitchToLost => 'Waa lumay, lama xadin';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Waxaa loo beddelay la xaday. Horumarkaagu waa jiraa.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Waxaa loo beddelay lumay. Horumarkaagu waa jiraa.';
+
+  @override
   String get travelSectionJourney => 'Safarkaaga';
 
   @override

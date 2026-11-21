@@ -2397,6 +2397,34 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Dienos šalyje $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Ištrinti skrydį';
+
+  @override
+  String get travelFlightDeleted => 'Skrydis ištrintas';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Jis buvo pavogtas';
+
+  @override
+  String get lostWalletSwitchToLost => 'Jis pamestas, ne pavogtas';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Pakeista į pavogtą. Jūsų pažanga išlieka.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Pakeista į pamestą. Jūsų pažanga išlieka.';
+
+  @override
   String get travelSectionJourney => 'Jūsų kelionė';
 
   @override

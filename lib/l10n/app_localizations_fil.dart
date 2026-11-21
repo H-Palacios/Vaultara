@@ -2374,6 +2374,34 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Mga araw sa $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Burahin ang flight';
+
+  @override
+  String get travelFlightDeleted => 'Nabura ang flight';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Ninakaw ito';
+
+  @override
+  String get lostWalletSwitchToLost => 'Nawala ito, hindi ninakaw';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Pinalitan sa ninakaw. Nananatili ang iyong progreso.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Pinalitan sa nawala. Nananatili ang iyong progreso.';
+
+  @override
   String get travelSectionJourney => 'Ang iyong biyahe';
 
   @override

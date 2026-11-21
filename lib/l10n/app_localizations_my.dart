@@ -2373,6 +2373,34 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$country တွင် ရက်များ: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'ခရီးစဉ်ကို ဖျက်ရန်';
+
+  @override
+  String get travelFlightDeleted => 'ခရီးစဉ်ကို ဖျက်ပြီးပါပြီ';
+
+  @override
+  String get lostWalletSwitchToStolen => 'ခိုးခံရသည်';
+
+  @override
+  String get lostWalletSwitchToLost => 'ပျောက်သွားသည်၊ ခိုးမခံရပါ';
+
+  @override
+  String get lostWalletSwitchedStolen => 'ခိုးခံရသည်ဟု ပြောင်းပြီးပါပြီ။ သင့်တိုးတက်မှု ရှိနေပါမည်။';
+
+  @override
+  String get lostWalletSwitchedLost => 'ပျောက်သွားသည်ဟု ပြောင်းပြီးပါပြီ။ သင့်တိုးတက်မှု ရှိနေပါမည်။';
+
+  @override
   String get travelSectionJourney => 'သင့်ခရီး';
 
   @override

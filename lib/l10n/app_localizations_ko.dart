@@ -2375,6 +2375,34 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$country 체류일: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => '항공편 삭제';
+
+  @override
+  String get travelFlightDeleted => '항공편을 삭제했습니다';
+
+  @override
+  String get lostWalletSwitchToStolen => '도난당했어요';
+
+  @override
+  String get lostWalletSwitchToLost => '도난이 아니라 잃어버렸어요';
+
+  @override
+  String get lostWalletSwitchedStolen => '도난으로 변경했습니다. 진행 상황은 유지됩니다.';
+
+  @override
+  String get lostWalletSwitchedLost => '분실로 변경했습니다. 진행 상황은 유지됩니다.';
+
+  @override
   String get travelSectionJourney => '나의 여정';
 
   @override

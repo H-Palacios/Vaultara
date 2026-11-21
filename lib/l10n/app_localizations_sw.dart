@@ -2376,6 +2376,34 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Siku nchini $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Futa safari ya ndege';
+
+  @override
+  String get travelFlightDeleted => 'Safari ya ndege imefutwa';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Iliibiwa';
+
+  @override
+  String get lostWalletSwitchToLost => 'Ilipotea, haikuibiwa';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Imebadilishwa kuwa imeibiwa. Maendeleo yako yanabaki.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Imebadilishwa kuwa imepotea. Maendeleo yako yanabaki.';
+
+  @override
   String get travelSectionJourney => 'Safari yako';
 
   @override

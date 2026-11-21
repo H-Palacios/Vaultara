@@ -2376,6 +2376,34 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Dies a $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Suprimeix el vol';
+
+  @override
+  String get travelFlightDeleted => 'Vol suprimit';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Me l\'han robat';
+
+  @override
+  String get lostWalletSwitchToLost => 'L\'he perdut, no me l\'han robat';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Canviat a robat. Es manté el teu progrés.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Canviat a perdut. Es manté el teu progrés.';
+
+  @override
   String get travelSectionJourney => 'El teu viatge';
 
   @override

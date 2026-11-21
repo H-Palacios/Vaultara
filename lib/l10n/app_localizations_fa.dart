@@ -2376,6 +2376,34 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'روزها در $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'حذف پرواز';
+
+  @override
+  String get travelFlightDeleted => 'پرواز حذف شد';
+
+  @override
+  String get lostWalletSwitchToStolen => 'دزدیده شد';
+
+  @override
+  String get lostWalletSwitchToLost => 'گم شد، دزدیده نشد';
+
+  @override
+  String get lostWalletSwitchedStolen => 'به دزدیده‌شده تغییر کرد. پیشرفت شما حفظ می‌شود.';
+
+  @override
+  String get lostWalletSwitchedLost => 'به گم‌شده تغییر کرد. پیشرفت شما حفظ می‌شود.';
+
+  @override
   String get travelSectionJourney => 'سفر شما';
 
   @override

@@ -2317,6 +2317,57 @@
       }
     }
   },
+  "travelDaysIn": "{days, plural, =1{{days} day in {country}} other{{days} days in {country}}}",
+  "@travelDaysIn": {
+    "description": "Days at the destination for a trip to one country, from the day the flight lands there to the day it flies out",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "travelStayWithDates": "{stay} · {from} – {to}",
+  "@travelStayWithDates": {
+    "description": "The stay followed by the days it counts, for example: 15 days in Thailand · 23 Jan – 6 Feb",
+    "placeholders": {
+      "stay": {
+        "type": "String"
+      },
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "travelFlightDelete": "Delete flight",
+  "@travelFlightDelete": {
+    "description": "Button in the flight sheet that deletes the flight"
+  },
+  "travelFlightDeleted": "Flight deleted",
+  "@travelFlightDeleted": {
+    "description": "Shown after a flight is deleted, with Undo"
+  },
+  "lostWalletSwitchToStolen": "It was stolen",
+  "@lostWalletSwitchToStolen": {
+    "description": "Lost wallet menu: the wallet turned out to be stolen"
+  },
+  "lostWalletSwitchToLost": "It was lost, not stolen",
+  "@lostWalletSwitchToLost": {
+    "description": "Lost wallet menu: the wallet was lost after all"
+  },
+  "lostWalletSwitchedStolen": "Changed to stolen. Your progress is kept.",
+  "@lostWalletSwitchedStolen": {
+    "description": "Shown after switching the plan to stolen"
+  },
+  "lostWalletSwitchedLost": "Changed to lost. Your progress is kept.",
+  "@lostWalletSwitchedLost": {
+    "description": "Shown after switching the plan to lost"
+  },
   "travelSectionJourney": "Your journey",
   "@travelSectionJourney": {
     "description": "Heading above the departure, flights and return timeline on a trip"

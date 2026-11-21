@@ -2375,6 +2375,34 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '在$country的天数：$days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => '删除航班';
+
+  @override
+  String get travelFlightDeleted => '已删除航班';
+
+  @override
+  String get lostWalletSwitchToStolen => '被偷了';
+
+  @override
+  String get lostWalletSwitchToLost => '丢了，不是被偷';
+
+  @override
+  String get lostWalletSwitchedStolen => '已改为被盗。你的进度会保留。';
+
+  @override
+  String get lostWalletSwitchedLost => '已改为丢失。你的进度会保留。';
+
+  @override
   String get travelSectionJourney => '你的行程';
 
   @override
@@ -12015,6 +12043,34 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '在$country的天数：$days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => '删除航班';
+
+  @override
+  String get travelFlightDeleted => '已删除航班';
+
+  @override
+  String get lostWalletSwitchToStolen => '被偷了';
+
+  @override
+  String get lostWalletSwitchToLost => '丢了，不是被偷';
+
+  @override
+  String get lostWalletSwitchedStolen => '已改为被盗。你的进度会保留。';
+
+  @override
+  String get lostWalletSwitchedLost => '已改为丢失。你的进度会保留。';
+
+  @override
   String get travelSectionJourney => '你的行程';
 
   @override
@@ -21653,6 +21709,34 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String travelAtDestination(int days) {
     return '在目的地的天數：$days';
   }
+
+  @override
+  String travelDaysIn(int days, String country) {
+    return '在$country的天數：$days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => '刪除航班';
+
+  @override
+  String get travelFlightDeleted => '已刪除航班';
+
+  @override
+  String get lostWalletSwitchToStolen => '被偷了';
+
+  @override
+  String get lostWalletSwitchToLost => '遺失了，不是被偷';
+
+  @override
+  String get lostWalletSwitchedStolen => '已改為遭竊。你的進度會保留。';
+
+  @override
+  String get lostWalletSwitchedLost => '已改為遺失。你的進度會保留。';
 
   @override
   String get travelSectionJourney => '你的行程';

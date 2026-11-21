@@ -2376,6 +2376,34 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$country елінде күндер: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Рейсті жою';
+
+  @override
+  String get travelFlightDeleted => 'Рейс жойылды';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Ол ұрланды';
+
+  @override
+  String get lostWalletSwitchToLost => 'Ол жоғалды, ұрланған жоқ';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Ұрланды деп өзгертілді. Прогресіңіз сақталады.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Жоғалды деп өзгертілді. Прогресіңіз сақталады.';
+
+  @override
   String get travelSectionJourney => 'Сіздің сапарыңыз';
 
   @override

@@ -2376,6 +2376,34 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'დღეები $country-ში: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'ფრენის წაშლა';
+
+  @override
+  String get travelFlightDeleted => 'ფრენა წაიშალა';
+
+  @override
+  String get lostWalletSwitchToStolen => 'მოიპარეს';
+
+  @override
+  String get lostWalletSwitchToLost => 'დაიკარგა, არ მოუპარავთ';
+
+  @override
+  String get lostWalletSwitchedStolen => 'შეიცვალა მოპარულად. თქვენი პროგრესი ინახება.';
+
+  @override
+  String get lostWalletSwitchedLost => 'შეიცვალა დაკარგულად. თქვენი პროგრესი ინახება.';
+
+  @override
   String get travelSectionJourney => 'თქვენი მოგზაურობა';
 
   @override

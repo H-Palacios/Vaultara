@@ -2376,6 +2376,34 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Egunak $country-n: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Ezabatu hegaldia';
+
+  @override
+  String get travelFlightDeleted => 'Hegaldia ezabatuta';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Lapurtu egin didate';
+
+  @override
+  String get lostWalletSwitchToLost => 'Galdu egin dut, ez didate lapurtu';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Lapurtutara aldatuta. Zure aurrerapena gordetzen da.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Galdutara aldatuta. Zure aurrerapena gordetzen da.';
+
+  @override
   String get travelSectionJourney => 'Zure bidaia';
 
   @override

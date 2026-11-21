@@ -2385,6 +2385,34 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Dani u $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Izbriši let';
+
+  @override
+  String get travelFlightDeleted => 'Let je izbrisan';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Ukraden je';
+
+  @override
+  String get lostWalletSwitchToLost => 'Izgubljen je, nije ukraden';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Promijenjeno u ukraden. Vaš napredak ostaje.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Promijenjeno u izgubljen. Vaš napredak ostaje.';
+
+  @override
   String get travelSectionJourney => 'Vaše putovanje';
 
   @override

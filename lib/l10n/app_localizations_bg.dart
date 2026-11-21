@@ -2376,6 +2376,34 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Дни в $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Изтрий полета';
+
+  @override
+  String get travelFlightDeleted => 'Полетът е изтрит';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Открадната е';
+
+  @override
+  String get lostWalletSwitchToLost => 'Изгубена е, не открадната';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Променено на открадната. Напредъкът ви се запазва.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Променено на изгубена. Напредъкът ви се запазва.';
+
+  @override
   String get travelSectionJourney => 'Вашето пътуване';
 
   @override

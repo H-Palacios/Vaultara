@@ -2400,6 +2400,34 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Dny v zemi $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Smazat let';
+
+  @override
+  String get travelFlightDeleted => 'Let smazán';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Byla ukradena';
+
+  @override
+  String get lostWalletSwitchToLost => 'Ztratila se, nebyla ukradena';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Změněno na ukradenou. Váš postup zůstává.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Změněno na ztracenou. Váš postup zůstává.';
+
+  @override
   String get travelSectionJourney => 'Vaše cesta';
 
   @override

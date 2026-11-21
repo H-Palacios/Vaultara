@@ -2382,6 +2382,34 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Dienas valstī $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Dzēst lidojumu';
+
+  @override
+  String get travelFlightDeleted => 'Lidojums dzēsts';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Tas tika nozagts';
+
+  @override
+  String get lostWalletSwitchToLost => 'Tas tika pazaudēts, nevis nozagts';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Mainīts uz nozagtu. Jūsu progress saglabājas.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Mainīts uz pazaudētu. Jūsu progress saglabājas.';
+
+  @override
   String get travelSectionJourney => 'Jūsu ceļojums';
 
   @override

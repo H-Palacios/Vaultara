@@ -2394,6 +2394,40 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: '$days days in $country',
+      one: '$days day in $country',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Delete flight';
+
+  @override
+  String get travelFlightDeleted => 'Flight deleted';
+
+  @override
+  String get lostWalletSwitchToStolen => 'It was stolen';
+
+  @override
+  String get lostWalletSwitchToLost => 'It was lost, not stolen';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Changed to stolen. Your progress is kept.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Changed to lost. Your progress is kept.';
+
+  @override
   String get travelSectionJourney => 'Your journey';
 
   @override

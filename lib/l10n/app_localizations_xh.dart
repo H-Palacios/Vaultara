@@ -2376,6 +2376,34 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Iintsuku e$country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Cima inqwelo-moya';
+
+  @override
+  String get travelFlightDeleted => 'Inqwelo-moya icinyiwe';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Ibiwe';
+
+  @override
+  String get lostWalletSwitchToLost => 'Ilahlekile, ayibiwanga';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Itshintshwe yaba ibiwe. Inkqubela yakho iyagcinwa.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Itshintshwe yaba ilahlekile. Inkqubela yakho iyagcinwa.';
+
+  @override
   String get travelSectionJourney => 'Uhambo lwakho';
 
   @override

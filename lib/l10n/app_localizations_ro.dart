@@ -2389,6 +2389,34 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Zile în $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Șterge zborul';
+
+  @override
+  String get travelFlightDeleted => 'Zbor șters';
+
+  @override
+  String get lostWalletSwitchToStolen => 'A fost furat';
+
+  @override
+  String get lostWalletSwitchToLost => 'S-a pierdut, nu a fost furat';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Schimbat în furat. Progresul tău rămâne.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Schimbat în pierdut. Progresul tău rămâne.';
+
+  @override
   String get travelSectionJourney => 'Călătoria ta';
 
   @override

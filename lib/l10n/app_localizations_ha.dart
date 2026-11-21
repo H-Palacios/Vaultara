@@ -2376,6 +2376,34 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Kwanaki a $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Share jirgin';
+
+  @override
+  String get travelFlightDeleted => 'An share jirgin';
+
+  @override
+  String get lostWalletSwitchToStolen => 'An sace shi';
+
+  @override
+  String get lostWalletSwitchToLost => 'Ya ɓace, ba a sace shi ba';
+
+  @override
+  String get lostWalletSwitchedStolen => 'An canza zuwa an sace. Ci gabanku yana nan.';
+
+  @override
+  String get lostWalletSwitchedLost => 'An canza zuwa ya ɓace. Ci gabanku yana nan.';
+
+  @override
   String get travelSectionJourney => 'Tafiyarka';
 
   @override

@@ -2376,6 +2376,34 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Dae in $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Skrap vlug';
+
+  @override
+  String get travelFlightDeleted => 'Vlug geskrap';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Dit is gesteel';
+
+  @override
+  String get lostWalletSwitchToLost => 'Dit is verloor, nie gesteel nie';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Na gesteel verander. Jou vordering bly.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Na verloor verander. Jou vordering bly.';
+
+  @override
   String get travelSectionJourney => 'Jou reis';
 
   @override

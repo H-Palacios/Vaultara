@@ -2375,6 +2375,34 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Số ngày ở $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Xóa chuyến bay';
+
+  @override
+  String get travelFlightDeleted => 'Đã xóa chuyến bay';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Bị đánh cắp';
+
+  @override
+  String get lostWalletSwitchToLost => 'Bị mất, không phải bị đánh cắp';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Đã đổi thành bị đánh cắp. Tiến độ của bạn được giữ lại.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Đã đổi thành bị mất. Tiến độ của bạn được giữ lại.';
+
+  @override
   String get travelSectionJourney => 'Hành trình của bạn';
 
   @override

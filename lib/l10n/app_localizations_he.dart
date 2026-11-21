@@ -2395,6 +2395,34 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'ימים ב$country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'מחיקת טיסה';
+
+  @override
+  String get travelFlightDeleted => 'הטיסה נמחקה';
+
+  @override
+  String get lostWalletSwitchToStolen => 'הוא נגנב';
+
+  @override
+  String get lostWalletSwitchToLost => 'הוא אבד, לא נגנב';
+
+  @override
+  String get lostWalletSwitchedStolen => 'שונה לגנוב. ההתקדמות שלך נשמרת.';
+
+  @override
+  String get lostWalletSwitchedLost => 'שונה לאבוד. ההתקדמות שלך נשמרת.';
+
+  @override
   String get travelSectionJourney => 'הנסיעה שלך';
 
   @override

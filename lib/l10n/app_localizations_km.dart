@@ -2373,6 +2373,34 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'ថ្ងៃនៅ $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'លុបជើងហោះហើរ';
+
+  @override
+  String get travelFlightDeleted => 'បានលុបជើងហោះហើរ';
+
+  @override
+  String get lostWalletSwitchToStolen => 'វាត្រូវបានលួច';
+
+  @override
+  String get lostWalletSwitchToLost => 'វាបាត់ មិនមែនត្រូវបានលួចទេ';
+
+  @override
+  String get lostWalletSwitchedStolen => 'បានប្ដូរទៅជាត្រូវបានលួច។ វឌ្ឍនភាពរបស់អ្នកនៅដដែល។';
+
+  @override
+  String get lostWalletSwitchedLost => 'បានប្ដូរទៅជាបាត់។ វឌ្ឍនភាពរបស់អ្នកនៅដដែល។';
+
+  @override
   String get travelSectionJourney => 'ដំណើររបស់អ្នក';
 
   @override

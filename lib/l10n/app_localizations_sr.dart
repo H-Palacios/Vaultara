@@ -2386,6 +2386,34 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Дани у $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Избриши лет';
+
+  @override
+  String get travelFlightDeleted => 'Лет је избрисан';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Украден је';
+
+  @override
+  String get lostWalletSwitchToLost => 'Изгубљен је, није украден';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Промењено у украден. Ваш напредак остаје.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Промењено у изгубљен. Ваш напредак остаје.';
+
+  @override
   String get travelSectionJourney => 'Ваше путовање';
 
   @override
@@ -12184,6 +12212,34 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Дани у $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Избриши лет';
+
+  @override
+  String get travelFlightDeleted => 'Лет је избрисан';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Украден је';
+
+  @override
+  String get lostWalletSwitchToLost => 'Изгубљен је, није украден';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Промењено у украден. Ваш напредак остаје.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Промењено у изгубљен. Ваш напредак остаје.';
+
+  @override
   String get travelSectionJourney => 'Ваше путовање';
 
   @override
@@ -21980,6 +22036,34 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String travelAtDestination(int days) {
     return 'Dani na odredištu: $days';
   }
+
+  @override
+  String travelDaysIn(int days, String country) {
+    return 'Dani u $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Izbriši let';
+
+  @override
+  String get travelFlightDeleted => 'Let je izbrisan';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Ukraden je';
+
+  @override
+  String get lostWalletSwitchToLost => 'Izgubljen je, nije ukraden';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Promenjeno u ukraden. Vaš napredak ostaje.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Promenjeno u izgubljen. Vaš napredak ostaje.';
 
   @override
   String get travelSectionJourney => 'Vaše putovanje';

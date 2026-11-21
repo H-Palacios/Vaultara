@@ -2376,6 +2376,34 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'ڕۆژەکان لە $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'سڕینەوەی گەشت';
+
+  @override
+  String get travelFlightDeleted => 'گەشتەکە سڕایەوە';
+
+  @override
+  String get lostWalletSwitchToStolen => 'دزرا';
+
+  @override
+  String get lostWalletSwitchToLost => 'ونبوو، نەدزرا';
+
+  @override
+  String get lostWalletSwitchedStolen => 'گۆڕدرا بۆ دزراو. پێشکەوتنەکەت دەمێنێتەوە.';
+
+  @override
+  String get lostWalletSwitchedLost => 'گۆڕدرا بۆ ونبوو. پێشکەوتنەکەت دەمێنێتەوە.';
+
+  @override
   String get travelSectionJourney => 'گەشتەکەت';
 
   @override

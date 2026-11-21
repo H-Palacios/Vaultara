@@ -2375,6 +2375,34 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'ມື້ໃນ $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'ລຶບຖ້ຽວບິນ';
+
+  @override
+  String get travelFlightDeleted => 'ລຶບຖ້ຽວບິນແລ້ວ';
+
+  @override
+  String get lostWalletSwitchToStolen => 'ມັນຖືກລັກ';
+
+  @override
+  String get lostWalletSwitchToLost => 'ມັນເສຍ, ບໍ່ໄດ້ຖືກລັກ';
+
+  @override
+  String get lostWalletSwitchedStolen => 'ປ່ຽນເປັນຖືກລັກແລ້ວ. ຄວາມຄືບໜ້າຂອງທ່ານຍັງຢູ່.';
+
+  @override
+  String get lostWalletSwitchedLost => 'ປ່ຽນເປັນເສຍແລ້ວ. ຄວາມຄືບໜ້າຂອງທ່ານຍັງຢູ່.';
+
+  @override
   String get travelSectionJourney => 'ການເດີນທາງຂອງທ່ານ';
 
   @override

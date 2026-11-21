@@ -2376,6 +2376,34 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return 'Roj li $country: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'Firînê jê bibe';
+
+  @override
+  String get travelFlightDeleted => 'Firîn hate jêbirin';
+
+  @override
+  String get lostWalletSwitchToStolen => 'Hate dizîn';
+
+  @override
+  String get lostWalletSwitchToLost => 'Winda bû, nehat dizîn';
+
+  @override
+  String get lostWalletSwitchedStolen => 'Hate guhertin bo dizîn. Pêşketina te dimîne.';
+
+  @override
+  String get lostWalletSwitchedLost => 'Hate guhertin bo winda. Pêşketina te dimîne.';
+
+  @override
   String get travelSectionJourney => 'Rêwîtiya te';
 
   @override

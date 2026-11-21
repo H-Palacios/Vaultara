@@ -2376,6 +2376,34 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String travelDaysIn(int days, String country) {
+    return '$countryದಲ್ಲಿ ದಿನಗಳು: $days';
+  }
+
+  @override
+  String travelStayWithDates(String stay, String from, String to) {
+    return '$stay · $from – $to';
+  }
+
+  @override
+  String get travelFlightDelete => 'ವಿಮಾನ ಅಳಿಸಿ';
+
+  @override
+  String get travelFlightDeleted => 'ವಿಮಾನ ಅಳಿಸಲಾಗಿದೆ';
+
+  @override
+  String get lostWalletSwitchToStolen => 'ಅದು ಕಳ್ಳತನವಾಗಿದೆ';
+
+  @override
+  String get lostWalletSwitchToLost => 'ಅದು ಕಳೆದುಹೋಗಿದೆ, ಕಳ್ಳತನವಲ್ಲ';
+
+  @override
+  String get lostWalletSwitchedStolen => 'ಕಳ್ಳತನಕ್ಕೆ ಬದಲಾಯಿಸಲಾಗಿದೆ. ನಿಮ್ಮ ಪ್ರಗತಿ ಉಳಿಯುತ್ತದೆ.';
+
+  @override
+  String get lostWalletSwitchedLost => 'ಕಳೆದುಹೋಗಿದೆ ಎಂದು ಬದಲಾಯಿಸಲಾಗಿದೆ. ನಿಮ್ಮ ಪ್ರಗತಿ ಉಳಿಯುತ್ತದೆ.';
+
+  @override
   String get travelSectionJourney => 'ನಿಮ್ಮ ಪ್ರಯಾಣ';
 
   @override

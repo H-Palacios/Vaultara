@@ -4399,6 +4399,54 @@ abstract class AppLocalizations {
   /// **'{days, plural, =1{{days} day at your destination} other{{days} days at your destination}}'**
   String travelAtDestination(int days);
 
+  /// Days at the destination for a trip to one country, from the day the flight lands there to the day it flies out
+  ///
+  /// In en, this message translates to:
+  /// **'{days, plural, =1{{days} day in {country}} other{{days} days in {country}}}'**
+  String travelDaysIn(int days, String country);
+
+  /// The stay followed by the days it counts, for example: 15 days in Thailand · 23 Jan – 6 Feb
+  ///
+  /// In en, this message translates to:
+  /// **'{stay} · {from} – {to}'**
+  String travelStayWithDates(String stay, String from, String to);
+
+  /// Button in the flight sheet that deletes the flight
+  ///
+  /// In en, this message translates to:
+  /// **'Delete flight'**
+  String get travelFlightDelete;
+
+  /// Shown after a flight is deleted, with Undo
+  ///
+  /// In en, this message translates to:
+  /// **'Flight deleted'**
+  String get travelFlightDeleted;
+
+  /// Lost wallet menu: the wallet turned out to be stolen
+  ///
+  /// In en, this message translates to:
+  /// **'It was stolen'**
+  String get lostWalletSwitchToStolen;
+
+  /// Lost wallet menu: the wallet was lost after all
+  ///
+  /// In en, this message translates to:
+  /// **'It was lost, not stolen'**
+  String get lostWalletSwitchToLost;
+
+  /// Shown after switching the plan to stolen
+  ///
+  /// In en, this message translates to:
+  /// **'Changed to stolen. Your progress is kept.'**
+  String get lostWalletSwitchedStolen;
+
+  /// Shown after switching the plan to lost
+  ///
+  /// In en, this message translates to:
+  /// **'Changed to lost. Your progress is kept.'**
+  String get lostWalletSwitchedLost;
+
   /// Heading above the departure, flights and return timeline on a trip
   ///
   /// In en, this message translates to:
