@@ -7446,15 +7446,6 @@ class AppLocalizationsNe extends AppLocalizations {
   String get lostWalletOpenTrip => 'यात्रा खोल्नुहोस्';
 
   @override
-  String get lostWalletPhoneTitle => 'तपाईंको फोन पनि लगियो?';
-
-  @override
-  String get lostWalletPhoneBody => 'पहिले SIM कार्ड र बैंकिङ एपहरू ब्लक गर्नुहोस्। त्यसका लागि योजना छ।';
-
-  @override
-  String get lostWalletPhoneButton => 'हराएको फोनको योजना सुरु गर्नुहोस्';
-
-  @override
   String get lostWalletStatementNote => 'ठगी प्रायः हप्तौंपछि सुरु हुने भएकाले Vaultara ले ३०, ६० र ९० दिनपछि फेरि जाँच्न सम्झाउनेछ।';
 
   @override

@@ -7446,15 +7446,6 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lostWalletOpenTrip => 'Сапарды ачуу';
 
   @override
-  String get lostWalletPhoneTitle => 'Телефонуңузду да алып кетиштиби?';
-
-  @override
-  String get lostWalletPhoneBody => 'Адегенде SIM картаны жана банк колдонмолорун бөгөттөңүз. Бул үчүн план бар.';
-
-  @override
-  String get lostWalletPhoneButton => 'Жоголгон телефон планын баштоо';
-
-  @override
   String get lostWalletStatementNote => 'Алдамчылык көбүнчө бир нече жумадан кийин башталгандыктан, Vaultara 30, 60 жана 90 күндөн кийин кайра текшерүүнү эскертет.';
 
   @override

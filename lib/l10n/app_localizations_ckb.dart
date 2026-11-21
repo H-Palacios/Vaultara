@@ -7446,15 +7446,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lostWalletOpenTrip => 'کردنەوەی گەشت';
 
   @override
-  String get lostWalletPhoneTitle => 'مۆبایلەکەشت برا؟';
-
-  @override
-  String get lostWalletPhoneBody => 'سەرەتا سیمکارت و ئەپەکانی بانک ڕابگرە. پلانێک بۆ ئەوە هەیە.';
-
-  @override
-  String get lostWalletPhoneButton => 'دەستپێکردنی پلانی مۆبایلی ونبوو';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara بیرت دەخاتەوە دوای 30، 60 و 90 ڕۆژ دووبارە بپشکنیت، چونکە فێڵ زۆرجار هەفتەکان دواتر دەست پێدەکات.';
 
   @override

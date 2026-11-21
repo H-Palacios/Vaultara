@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Deschide călătoria",
-  "lostWalletPhoneTitle": "Ți-au luat și telefonul?",
-  "lostWalletPhoneBody": "Blochează întâi cartela SIM și aplicațiile bancare. Există un plan pentru asta.",
-  "lostWalletPhoneButton": "Pornește planul pentru telefon pierdut",
   "lostWalletStatementNote": "Vaultara îți va aminti să verifici din nou după 30, 60 și 90 de zile, pentru că frauda începe adesea după câteva săptămâni.",
   "lostWalletStatementTitle": "Verifică extrasele bancare",
   "lostWalletStatementBody": "Caută plăți pe care nu le-ai făcut de când ai pierdut portofelul.",

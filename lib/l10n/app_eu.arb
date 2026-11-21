@@ -2414,9 +2414,6 @@
     }
   },
   "lostWalletOpenTrip": "Ireki bidaia",
-  "lostWalletPhoneTitle": "Mugikorra ere eraman dute?",
-  "lostWalletPhoneBody": "Blokeatu lehenik SIM txartela eta bankuko aplikazioak. Horretarako plan bat dago.",
-  "lostWalletPhoneButton": "Hasi galdutako mugikorraren plana",
   "lostWalletStatementNote": "Vaultarak 30, 60 eta 90 egunen buruan berriro begiratzeko gogoraraziko dizu, iruzurra askotan aste batzuk geroago hasten baita.",
   "lostWalletStatementTitle": "Begiratu banku-laburpenak",
   "lostWalletStatementBody": "Bilatu zorroa galdu zenuenetik egin ez dituzun ordainketak.",

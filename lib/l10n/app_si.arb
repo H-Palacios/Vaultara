@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "ගමන විවෘත කරන්න",
-  "lostWalletPhoneTitle": "ඔබේ දුරකථනයත් ගත්තාද?",
-  "lostWalletPhoneBody": "පළමුව SIM කාඩ්පත සහ බැංකු යෙදුම් අවහිර කරන්න. ඒ සඳහා සැලැස්මක් ඇත.",
-  "lostWalletPhoneButton": "නැතිවූ දුරකථන සැලැස්ම අරඹන්න",
   "lostWalletStatementNote": "වංචා බොහෝ විට සති කිහිපයකට පසු ආරම්භ වන නිසා, දින 30, 60 සහ 90 කට පසු නැවත පරීක්ෂා කිරීමට Vaultara මතක් කරයි.",
   "lostWalletStatementTitle": "බැංකු ප්‍රකාශ පරීක්ෂා කරන්න",
   "lostWalletStatementBody": "පසුම්බිය නැති වූ දා සිට ඔබ නොකළ ගෙවීම් සොයන්න.",

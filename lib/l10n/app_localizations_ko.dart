@@ -7390,15 +7390,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lostWalletOpenTrip => '여행 열기';
 
   @override
-  String get lostWalletPhoneTitle => '휴대폰도 가져갔나요?';
-
-  @override
-  String get lostWalletPhoneBody => '먼저 SIM 카드와 은행 앱을 정지하세요. 이를 위한 플랜이 있어요.';
-
-  @override
-  String get lostWalletPhoneButton => '휴대폰 분실 플랜 시작';
-
-  @override
   String get lostWalletStatementNote => '부정 사용은 몇 주 뒤에 시작되는 경우가 많아서, Vaultara가 30일, 60일, 90일 후에 다시 확인하도록 알려 드려요.';
 
   @override

@@ -2438,9 +2438,6 @@
     }
   },
   "lostWalletOpenTrip": "فتح الرحلة",
-  "lostWalletPhoneTitle": "هل أُخذ هاتفك أيضًا؟",
-  "lostWalletPhoneBody": "أوقف شريحة SIM وتطبيقات البنك أولًا. هناك خطة لذلك.",
-  "lostWalletPhoneButton": "بدء خطة الهاتف المفقود",
   "lostWalletStatementNote": "سيذكّرك Vaultara بالتحقق مجددًا بعد 30 و60 و90 يومًا، لأن الاحتيال غالبًا ما يبدأ بعد أسابيع.",
   "lostWalletStatementTitle": "راجع كشوف حسابك",
   "lostWalletStatementBody": "ابحث عن مدفوعات لم تقم بها منذ ضياع محفظتك.",

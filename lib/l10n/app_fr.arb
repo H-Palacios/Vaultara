@@ -2412,9 +2412,6 @@
     }
   },
   "lostWalletOpenTrip": "Ouvrir le voyage",
-  "lostWalletPhoneTitle": "Votre téléphone a aussi été pris ?",
-  "lostWalletPhoneBody": "Bloquez d'abord la carte SIM et vos applis bancaires. Il existe un plan pour ça.",
-  "lostWalletPhoneButton": "Démarrer le plan téléphone perdu",
   "lostWalletStatementNote": "Vaultara vous rappellera de vérifier à nouveau après 30, 60 et 90 jours, car la fraude commence souvent des semaines plus tard.",
   "lostWalletStatementTitle": "Vérifiez vos relevés bancaires",
   "lostWalletStatementBody": "Repérez les paiements que vous n'avez pas faits depuis la perte de votre portefeuille.",

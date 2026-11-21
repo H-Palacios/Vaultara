@@ -7444,15 +7444,6 @@ class AppLocalizationsMk extends AppLocalizations {
   String get lostWalletOpenTrip => 'Отвори патување';
 
   @override
-  String get lostWalletPhoneTitle => 'Дали ви го зедоа и телефонот?';
-
-  @override
-  String get lostWalletPhoneBody => 'Прво блокирајте ја SIM-картичката и банкарските апликации. За тоа постои план.';
-
-  @override
-  String get lostWalletPhoneButton => 'Започни план за изгубен телефон';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara ќе ве потсети повторно да проверите по 30, 60 и 90 дена, бидејќи измамите често почнуваат неколку недели подоцна.';
 
   @override

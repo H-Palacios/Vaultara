@@ -7667,15 +7667,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lostWalletOpenTrip => 'فتح الرحلة';
 
   @override
-  String get lostWalletPhoneTitle => 'هل أُخذ هاتفك أيضًا؟';
-
-  @override
-  String get lostWalletPhoneBody => 'أوقف شريحة SIM وتطبيقات البنك أولًا. هناك خطة لذلك.';
-
-  @override
-  String get lostWalletPhoneButton => 'بدء خطة الهاتف المفقود';
-
-  @override
   String get lostWalletStatementNote => 'سيذكّرك Vaultara بالتحقق مجددًا بعد 30 و60 و90 يومًا، لأن الاحتيال غالبًا ما يبدأ بعد أسابيع.';
 
   @override

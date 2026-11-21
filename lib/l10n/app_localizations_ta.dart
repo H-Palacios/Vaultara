@@ -7446,15 +7446,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lostWalletOpenTrip => 'பயணத்தைத் திற';
 
   @override
-  String get lostWalletPhoneTitle => 'உங்கள் போனும் எடுக்கப்பட்டதா?';
-
-  @override
-  String get lostWalletPhoneBody => 'முதலில் SIM கார்டையும் வங்கி ஆப்புகளையும் தடுங்கள். அதற்கு ஒரு திட்டம் உள்ளது.';
-
-  @override
-  String get lostWalletPhoneButton => 'தொலைந்த போன் திட்டத்தைத் தொடங்கு';
-
-  @override
   String get lostWalletStatementNote => 'மோசடி பெரும்பாலும் வாரங்கள் கழித்துத் தொடங்குவதால், 30, 60, 90 நாட்களுக்குப் பிறகு மீண்டும் சரிபார்க்க Vaultara நினைவூட்டும்.';
 
   @override

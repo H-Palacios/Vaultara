@@ -7591,15 +7591,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get lostWalletOpenTrip => 'Відкрити поїздку';
 
   @override
-  String get lostWalletPhoneTitle => 'Телефон теж забрали?';
-
-  @override
-  String get lostWalletPhoneBody => 'Спершу заблокуйте SIM-картку й банківські застосунки. Для цього є окремий план.';
-
-  @override
-  String get lostWalletPhoneButton => 'Почати план для загубленого телефона';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara нагадає перевірити ще раз через 30, 60 і 90 днів, бо шахрайство часто починається через кілька тижнів.';
 
   @override

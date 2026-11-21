@@ -7459,15 +7459,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get lostWalletOpenTrip => 'Ouvrir le voyage';
 
   @override
-  String get lostWalletPhoneTitle => 'Votre téléphone a aussi été pris ?';
-
-  @override
-  String get lostWalletPhoneBody => 'Bloquez d\'abord la carte SIM et vos applis bancaires. Il existe un plan pour ça.';
-
-  @override
-  String get lostWalletPhoneButton => 'Démarrer le plan téléphone perdu';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara vous rappellera de vérifier à nouveau après 30, 60 et 90 jours, car la fraude commence souvent des semaines plus tard.';
 
   @override

@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Vula uhambo",
-  "lostWalletPhoneTitle": "Ingaba nefowuni yakho ithathiwe?",
-  "lostWalletPhoneBody": "Vala i-SIM card nee-app zebhanki kuqala. Kukho icebo lwaloo nto.",
-  "lostWalletPhoneButton": "Qala icebo lefowuni elahlekileyo",
   "lostWalletStatementNote": "I-Vaultara iya kukukhumbuza ukuba ujonge kwakhona emva kweentsuku ezingama-30, 60 nama-90, kuba ubuqhophololo budla ngokuqala emva kweeveki.",
   "lostWalletStatementTitle": "Jonga iingxelo zakho zebhanki",
   "lostWalletStatementBody": "Khangela iintlawulo ongazenzanga ukusukela oko isipaji sakho silahleka.",

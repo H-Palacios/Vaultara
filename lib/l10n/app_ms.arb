@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Buka perjalanan",
-  "lostWalletPhoneTitle": "Telefon anda juga diambil?",
-  "lostWalletPhoneBody": "Sekat kad SIM dan aplikasi bank dahulu. Ada pelan untuk itu.",
-  "lostWalletPhoneButton": "Mulakan pelan telefon hilang",
   "lostWalletStatementNote": "Vaultara akan mengingatkan anda untuk menyemak semula selepas 30, 60 dan 90 hari, kerana penipuan selalunya bermula beberapa minggu kemudian.",
   "lostWalletStatementTitle": "Semak penyata bank",
   "lostWalletStatementBody": "Cari bayaran yang anda tidak buat sejak dompet hilang.",

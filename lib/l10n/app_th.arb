@@ -2417,9 +2417,6 @@
     }
   },
   "lostWalletOpenTrip": "เปิดทริป",
-  "lostWalletPhoneTitle": "โทรศัพท์ถูกเอาไปด้วยหรือเปล่า?",
-  "lostWalletPhoneBody": "อายัดซิมการ์ดและแอปธนาคารก่อน มีแผนสำหรับเรื่องนี้",
-  "lostWalletPhoneButton": "เริ่มแผนโทรศัพท์หาย",
   "lostWalletStatementNote": "Vaultara จะเตือนให้ตรวจสอบอีกครั้งหลัง 30, 60 และ 90 วัน เพราะการฉ้อโกงมักเริ่มหลังจากนั้นหลายสัปดาห์",
   "lostWalletStatementTitle": "ตรวจสอบรายการเดินบัญชี",
   "lostWalletStatementBody": "มองหาการชำระเงินที่คุณไม่ได้ทำตั้งแต่กระเป๋าสตางค์หาย",

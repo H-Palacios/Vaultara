@@ -2150,9 +2150,6 @@
     }
   },
   "lostWalletOpenTrip": "Sayohatni ochish",
-  "lostWalletPhoneTitle": "Telefoningizni ham olib ketishdimi?",
-  "lostWalletPhoneBody": "Avval SIM karta va bank ilovalarini bloklang. Buning uchun reja bor.",
-  "lostWalletPhoneButton": "Yo'qolgan telefon rejasini boshlash",
   "lostWalletStatementNote": "Firibgarlik ko‘pincha haftalar o‘tib boshlangani uchun Vaultara 30, 60 va 90 kundan keyin yana tekshirishni eslatadi.",
   "lostWalletStatementTitle": "Bank ko'chirmalarini tekshiring",
   "lostWalletStatementBody": "Hamyon yo'qolgandan beri o'zingiz qilmagan to'lovlarni qidiring.",

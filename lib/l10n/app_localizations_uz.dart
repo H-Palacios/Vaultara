@@ -7446,15 +7446,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lostWalletOpenTrip => 'Sayohatni ochish';
 
   @override
-  String get lostWalletPhoneTitle => 'Telefoningizni ham olib ketishdimi?';
-
-  @override
-  String get lostWalletPhoneBody => 'Avval SIM karta va bank ilovalarini bloklang. Buning uchun reja bor.';
-
-  @override
-  String get lostWalletPhoneButton => 'Yo\'qolgan telefon rejasini boshlash';
-
-  @override
   String get lostWalletStatementNote => 'Firibgarlik ko‘pincha haftalar o‘tib boshlangani uchun Vaultara 30, 60 va 90 kundan keyin yana tekshirishni eslatadi.';
 
   @override

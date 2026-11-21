@@ -7449,15 +7449,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lostWalletOpenTrip => 'Obre el viatge';
 
   @override
-  String get lostWalletPhoneTitle => 'També t\'han pres el mòbil?';
-
-  @override
-  String get lostWalletPhoneBody => 'Bloqueja primer la SIM i les apps del banc. Hi ha un pla per a això.';
-
-  @override
-  String get lostWalletPhoneButton => 'Comença el pla de mòbil perdut';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara et recordarà que tornis a revisar-ho als 30, 60 i 90 dies, perquè el frau sovint comença setmanes després.';
 
   @override

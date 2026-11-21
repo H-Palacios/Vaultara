@@ -2431,9 +2431,6 @@
     }
   },
   "lostWalletOpenTrip": "Åbn rejse",
-  "lostWalletPhoneTitle": "Blev din telefon også taget?",
-  "lostWalletPhoneBody": "Spær først SIM-kortet og dine bankapps. Der er en plan til det.",
-  "lostWalletPhoneButton": "Start planen for mistet telefon",
   "lostWalletStatementNote": "Vaultara minder dig om at tjekke igen efter 30, 60 og 90 dage, fordi svindel ofte starter uger senere.",
   "lostWalletStatementTitle": "Tjek dine kontoudtog",
   "lostWalletStatementBody": "Kig efter betalinger, du ikke har lavet, siden din pung forsvandt.",

@@ -7446,15 +7446,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get lostWalletOpenTrip => 'यात्रा खोलें';
 
   @override
-  String get lostWalletPhoneTitle => 'क्या आपका फ़ोन भी ले लिया गया?';
-
-  @override
-  String get lostWalletPhoneBody => 'पहले SIM कार्ड और बैंकिंग ऐप ब्लॉक करें। इसके लिए एक प्लान है।';
-
-  @override
-  String get lostWalletPhoneButton => 'खोए फ़ोन का प्लान शुरू करें';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara आपको 30, 60 और 90 दिन बाद फिर से जाँचने की याद दिलाएगा, क्योंकि धोखाधड़ी अक्सर हफ़्तों बाद शुरू होती है।';
 
   @override

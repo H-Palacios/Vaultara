@@ -2150,9 +2150,6 @@
     }
   },
   "lostWalletOpenTrip": "મુસાફરી ખોલો",
-  "lostWalletPhoneTitle": "તમારો ફોન પણ લઈ ગયા?",
-  "lostWalletPhoneBody": "પહેલાં SIM કાર્ડ અને બેંકિંગ ઍપ બ્લૉક કરો. તેના માટે એક યોજના છે.",
-  "lostWalletPhoneButton": "ખોવાયેલા ફોનની યોજના શરૂ કરો",
   "lostWalletStatementNote": "Vaultara તમને 30, 60 અને 90 દિવસ પછી ફરી તપાસવાનું યાદ કરાવશે, કારણ કે છેતરપિંડી ઘણીવાર અઠવાડિયાં પછી શરૂ થાય છે.",
   "lostWalletStatementTitle": "તમારા બેંક સ્ટેટમેન્ટ તપાસો",
   "lostWalletStatementBody": "પાકીટ ખોવાયું ત્યારથી તમે ન કરેલી ચુકવણીઓ શોધો.",

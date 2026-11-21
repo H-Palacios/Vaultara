@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "यात्रा खोल्नुहोस्",
-  "lostWalletPhoneTitle": "तपाईंको फोन पनि लगियो?",
-  "lostWalletPhoneBody": "पहिले SIM कार्ड र बैंकिङ एपहरू ब्लक गर्नुहोस्। त्यसका लागि योजना छ।",
-  "lostWalletPhoneButton": "हराएको फोनको योजना सुरु गर्नुहोस्",
   "lostWalletStatementNote": "ठगी प्रायः हप्तौंपछि सुरु हुने भएकाले Vaultara ले ३०, ६० र ९० दिनपछि फेरि जाँच्न सम्झाउनेछ।",
   "lostWalletStatementTitle": "बैंक स्टेटमेन्ट जाँच्नुहोस्",
   "lostWalletStatementBody": "पर्स हराएदेखि तपाईंले नगरेका भुक्तानी खोज्नुहोस्।",

@@ -2412,9 +2412,6 @@
     }
   },
   "lostWalletOpenTrip": "Buɗe tafiya",
-  "lostWalletPhoneTitle": "An ɗauki wayarka ma?",
-  "lostWalletPhoneBody": "Ka toshe katin SIM da manhajojin banki da farko. Akwai shiri don haka.",
-  "lostWalletPhoneButton": "Fara shirin waya da ta ɓace",
   "lostWalletStatementNote": "Vaultara zai tunatar da kai ka sake dubawa bayan kwanaki 30, 60 da 90, saboda zamba kan fara bayan makonni.",
   "lostWalletStatementTitle": "Duba bayanan bankinka",
   "lostWalletStatementBody": "Nemi biyan da ba kai ka yi ba tun lokacin da walat ɗinka ya ɓace.",

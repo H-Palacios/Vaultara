@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Otwórz podróż",
-  "lostWalletPhoneTitle": "Telefon też zabrano?",
-  "lostWalletPhoneBody": "Najpierw zablokuj kartę SIM i aplikacje bankowe. Jest na to osobny plan.",
-  "lostWalletPhoneButton": "Rozpocznij plan zgubionego telefonu",
   "lostWalletStatementNote": "Vaultara przypomni Ci, by sprawdzić ponownie po 30, 60 i 90 dniach, bo oszustwa często zaczynają się po kilku tygodniach.",
   "lostWalletStatementTitle": "Sprawdź wyciągi bankowe",
   "lostWalletStatementBody": "Szukaj płatności, których nie robiłeś, od kiedy zginął portfel.",

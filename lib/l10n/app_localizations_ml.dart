@@ -7446,15 +7446,6 @@ class AppLocalizationsMl extends AppLocalizations {
   String get lostWalletOpenTrip => 'യാത്ര തുറക്കുക';
 
   @override
-  String get lostWalletPhoneTitle => 'നിങ്ങളുടെ ഫോണും എടുത്തോ?';
-
-  @override
-  String get lostWalletPhoneBody => 'ആദ്യം SIM കാർഡും ബാങ്കിംഗ് ആപ്പുകളും ബ്ലോക്ക് ചെയ്യുക. അതിനൊരു പ്ലാൻ ഉണ്ട്.';
-
-  @override
-  String get lostWalletPhoneButton => 'നഷ്ടപ്പെട്ട ഫോൺ പ്ലാൻ ആരംഭിക്കുക';
-
-  @override
   String get lostWalletStatementNote => 'തട്ടിപ്പ് പലപ്പോഴും ആഴ്ചകൾക്ക് ശേഷമാണ് തുടങ്ങുന്നത്, അതിനാൽ 30, 60, 90 ദിവസങ്ങൾക്ക് ശേഷം വീണ്ടും പരിശോധിക്കാൻ Vaultara ഓർമ്മിപ്പിക്കും.';
 
   @override

@@ -7396,15 +7396,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lostWalletOpenTrip => 'Mepee njem';
 
   @override
-  String get lostWalletPhoneTitle => 'E wekwara ekwentị gị?';
-
-  @override
-  String get lostWalletPhoneBody => 'Buru ụzọ gbochie kaadị SIM na ngwa ụlọ akụ gị. E nwere atụmatụ maka nke ahụ.';
-
-  @override
-  String get lostWalletPhoneButton => 'Malite atụmatụ ekwentị furu efu';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara ga-echetara gị ilele ọzọ mgbe ụbọchị 30, 60 na 90 gachara, n\'ihi na aghụghọ na-ebidokarị izu ole na ole ka e mesịrị.';
 
   @override

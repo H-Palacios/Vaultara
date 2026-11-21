@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Mở chuyến đi",
-  "lostWalletPhoneTitle": "Điện thoại của bạn cũng bị lấy?",
-  "lostWalletPhoneBody": "Khóa SIM và các ứng dụng ngân hàng trước. Có kế hoạch cho việc đó.",
-  "lostWalletPhoneButton": "Bắt đầu kế hoạch mất điện thoại",
   "lostWalletStatementNote": "Vaultara sẽ nhắc bạn kiểm tra lại sau 30, 60 và 90 ngày, vì gian lận thường bắt đầu vài tuần sau đó.",
   "lostWalletStatementTitle": "Kiểm tra sao kê ngân hàng",
   "lostWalletStatementBody": "Tìm các khoản thanh toán bạn không thực hiện kể từ khi mất ví.",

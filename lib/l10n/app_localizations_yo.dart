@@ -7396,15 +7396,6 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lostWalletOpenTrip => 'Ṣí ìrìnàjò';
 
   @override
-  String get lostWalletPhoneTitle => 'Ṣé wọ́n mú fóònù rẹ náà?';
-
-  @override
-  String get lostWalletPhoneBody => 'Dènà káàdì SIM àti àwọn áàpù báǹkì rẹ ní àkọ́kọ́. Ètò kan wà fún ìyẹn.';
-
-  @override
-  String get lostWalletPhoneButton => 'Bẹ̀rẹ̀ ètò fóònù tó sọnù';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara yóò rán ọ létí láti tún ṣàyẹ̀wò lẹ́yìn ọjọ́ 30, 60 àti 90, nítorí jìbìtì sábà máa ń bẹ̀rẹ̀ lẹ́yìn ọ̀sẹ̀ díẹ̀.';
 
   @override

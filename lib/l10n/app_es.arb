@@ -2407,9 +2407,6 @@
     }
   },
   "lostWalletOpenTrip": "Abrir viaje",
-  "lostWalletPhoneTitle": "¿También te quitaron el móvil?",
-  "lostWalletPhoneBody": "Bloquea primero la SIM y tus apps bancarias. Hay un plan para eso.",
-  "lostWalletPhoneButton": "Empezar el plan de móvil perdido",
   "lostWalletStatementNote": "Vaultara te recordará revisar de nuevo a los 30, 60 y 90 días, porque el fraude suele empezar semanas después.",
   "lostWalletStatementTitle": "Revisa tus extractos bancarios",
   "lostWalletStatementBody": "Busca pagos que no hiciste desde que perdiste la cartera.",

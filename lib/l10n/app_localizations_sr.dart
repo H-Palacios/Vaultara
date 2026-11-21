@@ -7515,15 +7515,6 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lostWalletOpenTrip => 'Отвори путовање';
 
   @override
-  String get lostWalletPhoneTitle => 'Да ли је узет и телефон?';
-
-  @override
-  String get lostWalletPhoneBody => 'Прво блокирајте SIM картицу и банкарске апликације. За то постоји план.';
-
-  @override
-  String get lostWalletPhoneButton => 'Покрени план за изгубљени телефон';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara ће вас подсетити да поново проверите после 30, 60 и 90 дана, јер превара често почне недељама касније.';
 
   @override
@@ -17218,15 +17209,6 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lostWalletOpenTrip => 'Отвори путовање';
 
   @override
-  String get lostWalletPhoneTitle => 'Да ли је узет и телефон?';
-
-  @override
-  String get lostWalletPhoneBody => 'Прво блокирајте SIM картицу и банкарске апликације. За то постоји план.';
-
-  @override
-  String get lostWalletPhoneButton => 'Покрени план за изгубљени телефон';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara ће вас подсетити да поново проверите после 30, 60 и 90 дана, јер превара често почне недељама касније.';
 
   @override
@@ -26915,15 +26897,6 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get lostWalletOpenTrip => 'Otvori putovanje';
-
-  @override
-  String get lostWalletPhoneTitle => 'Da li je uzet i telefon?';
-
-  @override
-  String get lostWalletPhoneBody => 'Prvo blokirajte SIM karticu i bankarske aplikacije. Za to postoji plan.';
-
-  @override
-  String get lostWalletPhoneButton => 'Pokreni plan za izgubljeni telefon';
 
   @override
   String get lostWalletStatementNote => 'Vaultara će vas podsetiti da ponovo proverite posle 30, 60 i 90 dana, jer prevara često počne nedeljama kasnije.';

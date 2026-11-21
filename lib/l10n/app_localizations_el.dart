@@ -7449,15 +7449,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lostWalletOpenTrip => 'Άνοιγμα ταξιδιού';
 
   @override
-  String get lostWalletPhoneTitle => 'Πήραν και το κινητό σας;';
-
-  @override
-  String get lostWalletPhoneBody => 'Μπλοκάρετε πρώτα την κάρτα SIM και τις τραπεζικές εφαρμογές. Υπάρχει πλάνο γι\' αυτό.';
-
-  @override
-  String get lostWalletPhoneButton => 'Έναρξη πλάνου για χαμένο κινητό';
-
-  @override
   String get lostWalletStatementNote => 'Το Vaultara θα σας υπενθυμίσει να ελέγξετε ξανά σε 30, 60 και 90 ημέρες, γιατί η απάτη συχνά ξεκινά εβδομάδες αργότερα.';
 
   @override

@@ -7446,15 +7446,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lostWalletOpenTrip => 'ጉዞውን ክፈት';
 
   @override
-  String get lostWalletPhoneTitle => 'ስልክዎም ተወሰደ?';
-
-  @override
-  String get lostWalletPhoneBody => 'መጀመሪያ የSIM ካርዱን እና የባንክ መተግበሪያዎችዎን ይዝጉ። ለዚያ እቅድ አለ።';
-
-  @override
-  String get lostWalletPhoneButton => 'የጠፋ ስልክ እቅድ ጀምር';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara ከ30፣ 60 እና 90 ቀናት በኋላ እንደገና እንዲፈትሹ ያስታውስዎታል፤ ማጭበርበር ብዙ ጊዜ ከሳምንታት በኋላ ይጀምራል።';
 
   @override

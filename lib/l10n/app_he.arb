@@ -2405,9 +2405,6 @@
     }
   },
   "lostWalletOpenTrip": "פתיחת הנסיעה",
-  "lostWalletPhoneTitle": "גם הטלפון נלקח?",
-  "lostWalletPhoneBody": "חסמו קודם את כרטיס ה-SIM ואת אפליקציות הבנק. יש לזה תוכנית.",
-  "lostWalletPhoneButton": "התחלת תוכנית לטלפון אבוד",
   "lostWalletStatementNote": "Vaultara יזכיר לכם לבדוק שוב אחרי 30, 60 ו-90 ימים, כי הונאה מתחילה פעמים רבות שבועות אחר כך.",
   "lostWalletStatementTitle": "בדקו את דפי החשבון",
   "lostWalletStatementBody": "חפשו חיובים שלא ביצעתם מאז שהארנק נעלם.",

@@ -2417,9 +2417,6 @@
     }
   },
   "lostWalletOpenTrip": "Відкрити поїздку",
-  "lostWalletPhoneTitle": "Телефон теж забрали?",
-  "lostWalletPhoneBody": "Спершу заблокуйте SIM-картку й банківські застосунки. Для цього є окремий план.",
-  "lostWalletPhoneButton": "Почати план для загубленого телефона",
   "lostWalletStatementNote": "Vaultara нагадає перевірити ще раз через 30, 60 і 90 днів, бо шахрайство часто починається через кілька тижнів.",
   "lostWalletStatementTitle": "Перевірте банківські виписки",
   "lostWalletStatementBody": "Шукайте платежі, яких ви не робили відтоді, як зник гаманець.",

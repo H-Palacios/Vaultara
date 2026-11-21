@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Seyahati aç",
-  "lostWalletPhoneTitle": "Telefonun da mı alındı?",
-  "lostWalletPhoneBody": "Önce SIM kartını ve banka uygulamalarını kapat. Bunun için bir plan var.",
-  "lostWalletPhoneButton": "Kayıp telefon planını başlat",
   "lostWalletStatementNote": "Vaultara, 30, 60 ve 90 gün sonra yeniden kontrol etmeni hatırlatır, çünkü dolandırıcılık çoğu zaman haftalar sonra başlar.",
   "lostWalletStatementTitle": "Banka ekstrelerini kontrol et",
   "lostWalletStatementBody": "Cüzdanın kaybolduğundan beri yapmadığın ödemelere bak.",

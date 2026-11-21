@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "打开行程",
-  "lostWalletPhoneTitle": "手机也被拿走了吗？",
-  "lostWalletPhoneBody": "先冻结 SIM 卡和银行 App。有专门的计划。",
-  "lostWalletPhoneButton": "开始手机丢失计划",
   "lostWalletStatementNote": "盗刷常在几周后才开始，Vaultara 会在 30、60 和 90 天后提醒你再次检查。",
   "lostWalletStatementTitle": "检查银行账单",
   "lostWalletStatementBody": "查找钱包丢失后不是你本人的消费。",

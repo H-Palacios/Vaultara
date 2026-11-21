@@ -7446,15 +7446,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lostWalletOpenTrip => 'Fungua safari';
 
   @override
-  String get lostWalletPhoneTitle => 'Simu yako nayo ilichukuliwa?';
-
-  @override
-  String get lostWalletPhoneBody => 'Zuia kadi ya SIM na programu za benki kwanza. Kuna mpango kwa hilo.';
-
-  @override
-  String get lostWalletPhoneButton => 'Anza mpango wa simu iliyopotea';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara itakukumbusha kuangalia tena baada ya siku 30, 60 na 90, kwa sababu ulaghai mara nyingi huanza wiki kadhaa baadaye.';
 
   @override

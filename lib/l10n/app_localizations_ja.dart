@@ -7378,15 +7378,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lostWalletOpenTrip => '旅行を開く';
 
   @override
-  String get lostWalletPhoneTitle => 'スマホも取られましたか?';
-
-  @override
-  String get lostWalletPhoneBody => 'まず SIM カードと銀行アプリを止めましょう。専用のプランがあります。';
-
-  @override
-  String get lostWalletPhoneButton => 'スマホ紛失プランを開始';
-
-  @override
   String get lostWalletStatementNote => '不正利用は数週間後に始まることが多いため、30日後、60日後、90日後にもう一度確認するよう Vaultara がお知らせします。';
 
   @override

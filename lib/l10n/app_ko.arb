@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "여행 열기",
-  "lostWalletPhoneTitle": "휴대폰도 가져갔나요?",
-  "lostWalletPhoneBody": "먼저 SIM 카드와 은행 앱을 정지하세요. 이를 위한 플랜이 있어요.",
-  "lostWalletPhoneButton": "휴대폰 분실 플랜 시작",
   "lostWalletStatementNote": "부정 사용은 몇 주 뒤에 시작되는 경우가 많아서, Vaultara가 30일, 60일, 90일 후에 다시 확인하도록 알려 드려요.",
   "lostWalletStatementTitle": "명세서를 확인하세요",
   "lostWalletStatementBody": "지갑을 잃어버린 후 본인이 하지 않은 결제를 찾아보세요.",

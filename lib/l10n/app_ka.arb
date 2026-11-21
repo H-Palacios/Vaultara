@@ -2418,9 +2418,6 @@
     }
   },
   "lostWalletOpenTrip": "მოგზაურობის გახსნა",
-  "lostWalletPhoneTitle": "ტელეფონიც წაიღეს?",
-  "lostWalletPhoneBody": "ჯერ დაბლოკეთ SIM ბარათი და საბანკო აპები. ამისთვის გეგმა არსებობს.",
-  "lostWalletPhoneButton": "დაკარგული ტელეფონის გეგმის დაწყება",
   "lostWalletStatementNote": "Vaultara შეგახსენებთ ხელახლა შემოწმებას 30, 60 და 90 დღის შემდეგ, რადგან თაღლითობა ხშირად კვირების შემდეგ იწყება.",
   "lostWalletStatementTitle": "შეამოწმეთ საბანკო ამონაწერები",
   "lostWalletStatementBody": "მოძებნეთ გადახდები, რომლებიც საფულის დაკარგვის შემდეგ არ გაგიკეთებიათ.",

@@ -7446,15 +7446,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lostWalletOpenTrip => 'Բացել ճանապարհորդությունը';
 
   @override
-  String get lostWalletPhoneTitle => 'Ձեր հեռախոսն էլ վերցրի՞ն';
-
-  @override
-  String get lostWalletPhoneBody => 'Նախ արգելափակեք SIM քարտը և բանկային հավելվածները։ Դրա համար պլան կա։';
-
-  @override
-  String get lostWalletPhoneButton => 'Սկսել կորած հեռախոսի պլանը';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara-ն կհիշեցնի կրկին ստուգել 30, 60 և 90 օր անց, քանի որ խարդախությունը հաճախ սկսվում է շաբաթներ անց։';
 
   @override

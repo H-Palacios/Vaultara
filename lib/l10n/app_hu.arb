@@ -2418,9 +2418,6 @@
     }
   },
   "lostWalletOpenTrip": "Utazás megnyitása",
-  "lostWalletPhoneTitle": "A telefonodat is elvitték?",
-  "lostWalletPhoneBody": "Először tiltsd le a SIM-kártyát és a banki appokat. Erre külön terv van.",
-  "lostWalletPhoneButton": "Elveszett telefon terv indítása",
   "lostWalletStatementNote": "A Vaultara 30, 60 és 90 nap után emlékeztet, hogy nézd meg újra, mert a csalás gyakran csak hetekkel később kezdődik.",
   "lostWalletStatementTitle": "Nézd át a bankszámlakivonataidat",
   "lostWalletStatementBody": "Keress olyan fizetéseket, amelyeket a pénztárca eltűnése óta nem te indítottál.",

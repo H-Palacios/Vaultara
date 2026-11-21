@@ -7456,15 +7456,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get lostWalletOpenTrip => 'Apri il viaggio';
 
   @override
-  String get lostWalletPhoneTitle => 'Hanno preso anche il telefono?';
-
-  @override
-  String get lostWalletPhoneBody => 'Blocca prima la SIM e le app della banca. C\'è un piano apposta.';
-
-  @override
-  String get lostWalletPhoneButton => 'Avvia il piano telefono perso';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara ti ricorderà di ricontrollare dopo 30, 60 e 90 giorni, perché le frodi spesso iniziano settimane dopo.';
 
   @override

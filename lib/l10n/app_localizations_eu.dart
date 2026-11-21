@@ -7449,15 +7449,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lostWalletOpenTrip => 'Ireki bidaia';
 
   @override
-  String get lostWalletPhoneTitle => 'Mugikorra ere eraman dute?';
-
-  @override
-  String get lostWalletPhoneBody => 'Blokeatu lehenik SIM txartela eta bankuko aplikazioak. Horretarako plan bat dago.';
-
-  @override
-  String get lostWalletPhoneButton => 'Hasi galdutako mugikorraren plana';
-
-  @override
   String get lostWalletStatementNote => 'Vaultarak 30, 60 eta 90 egunen buruan berriro begiratzeko gogoraraziko dizu, iruzurra askotan aste batzuk geroago hasten baita.';
 
   @override

@@ -7446,15 +7446,6 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lostWalletOpenTrip => 'سفر پرانیزئ';
 
   @override
-  String get lostWalletPhoneTitle => 'ستاسو تلیفون هم یوړل شو؟';
-
-  @override
-  String get lostWalletPhoneBody => 'لومړی SIM کارت او بانکي اپونه بند کړئ. د دې لپاره پلان شته.';
-
-  @override
-  String get lostWalletPhoneButton => 'د ورک تلیفون پلان پیل کړئ';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara به تاسو ته ور په یاد کړي چې له 30، 60 او 90 ورځو وروسته بیا وګورئ، ځکه درغلي اکثراً څو اونۍ وروسته پیلېږي.';
 
   @override

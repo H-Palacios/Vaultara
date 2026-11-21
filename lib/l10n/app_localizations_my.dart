@@ -7388,15 +7388,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lostWalletOpenTrip => 'ခရီးကို ဖွင့်ရန်';
 
   @override
-  String get lostWalletPhoneTitle => 'သင့်ဖုန်းလည်း ယူသွားသလား?';
-
-  @override
-  String get lostWalletPhoneBody => 'SIM ကတ်နှင့် ဘဏ်အက်ပ်များကို အရင်ပိတ်ပါ။ ၎င်းအတွက် အစီအစဉ်တစ်ခု ရှိသည်။';
-
-  @override
-  String get lostWalletPhoneButton => 'ပျောက်ဖုန်း အစီအစဉ် စတင်ရန်';
-
-  @override
   String get lostWalletStatementNote => 'လိမ်လည်မှုသည် ရက်သတ္တပတ်များကြာမှ စတတ်သောကြောင့် ရက် 30၊ 60 နှင့် 90 အကြာတွင် ပြန်စစ်ရန် Vaultara က သတိပေးပါမည်။';
 
   @override

@@ -7390,15 +7390,6 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lostWalletOpenTrip => 'Buka perjalanan';
 
   @override
-  String get lostWalletPhoneTitle => 'Telefon anda juga diambil?';
-
-  @override
-  String get lostWalletPhoneBody => 'Sekat kad SIM dan aplikasi bank dahulu. Ada pelan untuk itu.';
-
-  @override
-  String get lostWalletPhoneButton => 'Mulakan pelan telefon hilang';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara akan mengingatkan anda untuk menyemak semula selepas 30, 60 dan 90 hari, kerana penipuan selalunya bermula beberapa minggu kemudian.';
 
   @override

@@ -7388,15 +7388,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lostWalletOpenTrip => 'បើកការធ្វើដំណើរ';
 
   @override
-  String get lostWalletPhoneTitle => 'ទូរស័ព្ទរបស់អ្នកក៏ត្រូវគេយកដែរ?';
-
-  @override
-  String get lostWalletPhoneBody => 'បិទស៊ីមកាត និងកម្មវិធីធនាគារជាមុន។ មានផែនការសម្រាប់រឿងនេះ។';
-
-  @override
-  String get lostWalletPhoneButton => 'ចាប់ផ្តើមផែនការទូរស័ព្ទបាត់';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara នឹងរំលឹកអ្នកឱ្យពិនិត្យម្ដងទៀតក្រោយ 30, 60 និង 90 ថ្ងៃ ព្រោះការបោកប្រាស់ច្រើនចាប់ផ្ដើមប៉ុន្មានសប្ដាហ៍ក្រោយ។';
 
   @override

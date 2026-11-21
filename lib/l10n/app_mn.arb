@@ -2418,9 +2418,6 @@
     }
   },
   "lostWalletOpenTrip": "Аяллыг нээх",
-  "lostWalletPhoneTitle": "Утсыг чинь бас авсан уу?",
-  "lostWalletPhoneBody": "Эхлээд SIM карт болон банкны аппуудыг хаа. Үүнд зориулсан төлөвлөгөө бий.",
-  "lostWalletPhoneButton": "Алдсан утасны төлөвлөгөө эхлүүлэх",
   "lostWalletStatementNote": "Луйвар ихэвчлэн хэдэн долоо хоногийн дараа эхэлдэг тул Vaultara 30, 60, 90 хоногийн дараа дахин шалгахыг сануулна.",
   "lostWalletStatementTitle": "Банкны хуулгаа шалга",
   "lostWalletStatementBody": "Түрийвч алдагдсанаас хойш хийгээгүй төлбөрүүдийг хай.",

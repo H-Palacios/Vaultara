@@ -7448,15 +7448,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lostWalletOpenTrip => 'Öppna resan';
 
   @override
-  String get lostWalletPhoneTitle => 'Togs din telefon också?';
-
-  @override
-  String get lostWalletPhoneBody => 'Spärra först SIM-kortet och dina bankappar. Det finns en plan för det.';
-
-  @override
-  String get lostWalletPhoneButton => 'Starta planen för borttappad telefon';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara påminner dig om att kolla igen efter 30, 60 och 90 dagar, eftersom bedrägerier ofta börjar veckor senare.';
 
   @override

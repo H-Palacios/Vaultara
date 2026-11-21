@@ -2150,9 +2150,6 @@
     }
   },
   "lostWalletOpenTrip": "Отвори пътуването",
-  "lostWalletPhoneTitle": "Взеха ли и телефона ви?",
-  "lostWalletPhoneBody": "Първо блокирайте SIM картата и банковите приложения. За това има отделен план.",
-  "lostWalletPhoneButton": "Започни плана за изгубен телефон",
   "lostWalletStatementNote": "Vaultara ще ви напомни да проверите отново след 30, 60 и 90 дни, защото измамите често започват седмици по-късно.",
   "lostWalletStatementTitle": "Проверете банковите извлечения",
   "lostWalletStatementBody": "Търсете плащания, които не сте правили, откакто изчезна портфейлът.",

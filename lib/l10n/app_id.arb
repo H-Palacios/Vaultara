@@ -2405,9 +2405,6 @@
     }
   },
   "lostWalletOpenTrip": "Buka perjalanan",
-  "lostWalletPhoneTitle": "Ponsel Anda juga diambil?",
-  "lostWalletPhoneBody": "Blokir kartu SIM dan aplikasi bank lebih dulu. Ada rencana untuk itu.",
-  "lostWalletPhoneButton": "Mulai rencana ponsel hilang",
   "lostWalletStatementNote": "Vaultara akan mengingatkan Anda untuk memeriksa lagi setelah 30, 60, dan 90 hari, karena penipuan sering baru dimulai berminggu-minggu kemudian.",
   "lostWalletStatementTitle": "Periksa mutasi rekening",
   "lostWalletStatementBody": "Cari pembayaran yang tidak Anda lakukan sejak dompet hilang.",

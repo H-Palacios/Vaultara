@@ -7449,15 +7449,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lostWalletOpenTrip => 'Avaa matka';
 
   @override
-  String get lostWalletPhoneTitle => 'Vietiinkö myös puhelimesi?';
-
-  @override
-  String get lostWalletPhoneBody => 'Sulje ensin SIM-kortti ja pankkisovelluksesi. Siihen on oma suunnitelma.';
-
-  @override
-  String get lostWalletPhoneButton => 'Aloita kadonneen puhelimen suunnitelma';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara muistuttaa tarkistamaan uudelleen 30, 60 ja 90 päivän kuluttua, koska huijaukset alkavat usein vasta viikkojen päästä.';
 
   @override

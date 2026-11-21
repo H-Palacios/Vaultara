@@ -2431,9 +2431,6 @@
     }
   },
   "lostWalletOpenTrip": "ভ্রমণ খুলুন",
-  "lostWalletPhoneTitle": "আপনার ফোনও কি নিয়ে গেছে?",
-  "lostWalletPhoneBody": "প্রথমে SIM কার্ড ও ব্যাংকিং অ্যাপ ব্লক করুন। এর জন্য একটি পরিকল্পনা আছে।",
-  "lostWalletPhoneButton": "হারানো ফোনের পরিকল্পনা শুরু করুন",
   "lostWalletStatementNote": "Vaultara ৩০, ৬০ ও ৯০ দিন পরে আবার দেখতে মনে করিয়ে দেবে, কারণ জালিয়াতি প্রায়ই কয়েক সপ্তাহ পরে শুরু হয়।",
   "lostWalletStatementTitle": "ব্যাংক স্টেটমেন্ট দেখুন",
   "lostWalletStatementBody": "মানিব্যাগ হারানোর পর থেকে যেসব পেমেন্ট আপনি করেননি সেগুলো খুঁজুন।",

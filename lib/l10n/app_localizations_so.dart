@@ -7445,15 +7445,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lostWalletOpenTrip => 'Fur safarka';
 
   @override
-  String get lostWalletPhoneTitle => 'Taleefankaaga sidoo kale ma la qaatay?';
-
-  @override
-  String get lostWalletPhoneBody => 'Marka hore xannib kaarka SIM-ka iyo app-yada bangiga. Waxaa jira qorshe taas loogu talagalay.';
-
-  @override
-  String get lostWalletPhoneButton => 'Bilow qorshaha taleefanka lumay';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara waxay ku xusuusin doontaa inaad mar kale hubiso 30, 60 iyo 90 maalmood kadib, maxaa yeelay khiyaanadu badanaa waxay bilaabataa toddobaadyo kadib.';
 
   @override

@@ -7390,15 +7390,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lostWalletOpenTrip => '打开行程';
 
   @override
-  String get lostWalletPhoneTitle => '手机也被拿走了吗？';
-
-  @override
-  String get lostWalletPhoneBody => '先冻结 SIM 卡和银行 App。有专门的计划。';
-
-  @override
-  String get lostWalletPhoneButton => '开始手机丢失计划';
-
-  @override
   String get lostWalletStatementNote => '盗刷常在几周后才开始，Vaultara 会在 30、60 和 90 天后提醒你再次检查。';
 
   @override
@@ -16935,15 +16926,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lostWalletOpenTrip => '打开行程';
 
   @override
-  String get lostWalletPhoneTitle => '手机也被拿走了吗？';
-
-  @override
-  String get lostWalletPhoneBody => '先冻结 SIM 卡和银行 App。有专门的计划。';
-
-  @override
-  String get lostWalletPhoneButton => '开始手机丢失计划';
-
-  @override
   String get lostWalletStatementNote => '盗刷常在几周后才开始，Vaultara 会在 30、60 和 90 天后提醒你再次检查。';
 
   @override
@@ -26478,15 +26460,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get lostWalletOpenTrip => '開啟行程';
-
-  @override
-  String get lostWalletPhoneTitle => '手機也被拿走了嗎？';
-
-  @override
-  String get lostWalletPhoneBody => '先停用 SIM 卡和銀行 App。有專門的計畫。';
-
-  @override
-  String get lostWalletPhoneButton => '開始手機遺失計畫';
 
   @override
   String get lostWalletStatementNote => '盜刷常在幾週後才開始，Vaultara 會在 30、60 和 90 天後提醒你再次檢查。';

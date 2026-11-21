@@ -2431,9 +2431,6 @@
     }
   },
   "lostWalletOpenTrip": "Otevřít cestu",
-  "lostWalletPhoneTitle": "Vzali vám i telefon?",
-  "lostWalletPhoneBody": "Nejdřív zablokujte SIM kartu a bankovní aplikace. Je na to plán.",
-  "lostWalletPhoneButton": "Spustit plán ztraceného telefonu",
   "lostWalletStatementNote": "Vaultara vám připomene zkontrolovat to znovu po 30, 60 a 90 dnech, protože podvody často začínají až po týdnech.",
   "lostWalletStatementTitle": "Zkontrolujte bankovní výpisy",
   "lostWalletStatementBody": "Hledejte platby, které jste neudělali od ztráty peněženky.",

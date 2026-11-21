@@ -7446,15 +7446,6 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lostWalletOpenTrip => 'ਸਫ਼ਰ ਖੋਲ੍ਹੋ';
 
   @override
-  String get lostWalletPhoneTitle => 'ਕੀ ਤੁਹਾਡਾ ਫ਼ੋਨ ਵੀ ਲੈ ਗਏ?';
-
-  @override
-  String get lostWalletPhoneBody => 'ਪਹਿਲਾਂ SIM ਕਾਰਡ ਅਤੇ ਬੈਂਕਿੰਗ ਐਪਾਂ ਬਲੌਕ ਕਰੋ। ਇਸ ਲਈ ਇੱਕ ਯੋਜਨਾ ਹੈ।';
-
-  @override
-  String get lostWalletPhoneButton => 'ਗੁੰਮ ਫ਼ੋਨ ਦੀ ਯੋਜਨਾ ਸ਼ੁਰੂ ਕਰੋ';
-
-  @override
   String get lostWalletStatementNote => 'ਧੋਖਾਧੜੀ ਅਕਸਰ ਹਫ਼ਤਿਆਂ ਬਾਅਦ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ, ਇਸ ਲਈ Vaultara ਤੁਹਾਨੂੰ 30, 60 ਅਤੇ 90 ਦਿਨਾਂ ਬਾਅਦ ਫਿਰ ਜਾਂਚਣ ਦੀ ਯਾਦ ਦਿਵਾਏਗਾ।';
 
   @override

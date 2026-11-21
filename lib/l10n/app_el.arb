@@ -2407,9 +2407,6 @@
     }
   },
   "lostWalletOpenTrip": "Άνοιγμα ταξιδιού",
-  "lostWalletPhoneTitle": "Πήραν και το κινητό σας;",
-  "lostWalletPhoneBody": "Μπλοκάρετε πρώτα την κάρτα SIM και τις τραπεζικές εφαρμογές. Υπάρχει πλάνο γι' αυτό.",
-  "lostWalletPhoneButton": "Έναρξη πλάνου για χαμένο κινητό",
   "lostWalletStatementNote": "Το Vaultara θα σας υπενθυμίσει να ελέγξετε ξανά σε 30, 60 και 90 ημέρες, γιατί η απάτη συχνά ξεκινά εβδομάδες αργότερα.",
   "lostWalletStatementTitle": "Ελέγξτε τα αντίγραφα κίνησης",
   "lostWalletStatementBody": "Ψάξτε για πληρωμές που δεν κάνατε από τότε που χάθηκε το πορτοφόλι.",

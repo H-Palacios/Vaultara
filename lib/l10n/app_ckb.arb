@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "کردنەوەی گەشت",
-  "lostWalletPhoneTitle": "مۆبایلەکەشت برا؟",
-  "lostWalletPhoneBody": "سەرەتا سیمکارت و ئەپەکانی بانک ڕابگرە. پلانێک بۆ ئەوە هەیە.",
-  "lostWalletPhoneButton": "دەستپێکردنی پلانی مۆبایلی ونبوو",
   "lostWalletStatementNote": "Vaultara بیرت دەخاتەوە دوای 30، 60 و 90 ڕۆژ دووبارە بپشکنیت، چونکە فێڵ زۆرجار هەفتەکان دواتر دەست پێدەکات.",
   "lostWalletStatementTitle": "کورتەی بانکەکانت بپشکنە",
   "lostWalletStatementBody": "بەدوای ئەو پارەدانانەدا بگەڕێ کە لە کاتی ونبوونی جزدانەکەتەوە نەتکردوون.",

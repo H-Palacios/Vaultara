@@ -2374,9 +2374,6 @@
     }
   },
   "lostWalletOpenTrip": "Otvori putovanje",
-  "lostWalletPhoneTitle": "Da li je uzet i telefon?",
-  "lostWalletPhoneBody": "Prvo blokirajte SIM karticu i bankarske aplikacije. Za to postoji plan.",
-  "lostWalletPhoneButton": "Pokreni plan za izgubljeni telefon",
   "lostWalletStatementNote": "Vaultara će vas podsetiti da ponovo proverite posle 30, 60 i 90 dana, jer prevara često počne nedeljama kasnije.",
   "lostWalletStatementTitle": "Proverite bankovne izvode",
   "lostWalletStatementBody": "Tražite plaćanja koja niste napravili otkako je novčanik nestao.",

@@ -7446,15 +7446,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lostWalletOpenTrip => 'Rêwîtiyê veke';
 
   @override
-  String get lostWalletPhoneTitle => 'Telefona te jî hate birin?';
-
-  @override
-  String get lostWalletPhoneBody => 'Pêşî karta SIM û sepanên bankê bloke bike. Ji bo vê planek heye.';
-
-  @override
-  String get lostWalletPhoneButton => 'Plana telefona windabûyî dest pê bike';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara dê bîne bîra te ku piştî 30, 60 û 90 rojan dîsa kontrol bikî, ji ber ku sextekarî gelek caran hefteyan şûnde dest pê dike.';
 
   @override

@@ -2438,9 +2438,6 @@
     }
   },
   "lostWalletOpenTrip": "ጉዞውን ክፈት",
-  "lostWalletPhoneTitle": "ስልክዎም ተወሰደ?",
-  "lostWalletPhoneBody": "መጀመሪያ የSIM ካርዱን እና የባንክ መተግበሪያዎችዎን ይዝጉ። ለዚያ እቅድ አለ።",
-  "lostWalletPhoneButton": "የጠፋ ስልክ እቅድ ጀምር",
   "lostWalletStatementNote": "Vaultara ከ30፣ 60 እና 90 ቀናት በኋላ እንደገና እንዲፈትሹ ያስታውስዎታል፤ ማጭበርበር ብዙ ጊዜ ከሳምንታት በኋላ ይጀምራል።",
   "lostWalletStatementTitle": "የባንክ መግለጫዎችዎን ያረጋግጡ",
   "lostWalletStatementBody": "ቦርሳዎ ከጠፋ ጀምሮ ያልፈጸሟቸውን ክፍያዎች ይፈልጉ።",

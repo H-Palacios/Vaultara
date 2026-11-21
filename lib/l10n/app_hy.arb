@@ -2414,9 +2414,6 @@
     }
   },
   "lostWalletOpenTrip": "Բացել ճանապարհորդությունը",
-  "lostWalletPhoneTitle": "Ձեր հեռախոսն էլ վերցրի՞ն",
-  "lostWalletPhoneBody": "Նախ արգելափակեք SIM քարտը և բանկային հավելվածները։ Դրա համար պլան կա։",
-  "lostWalletPhoneButton": "Սկսել կորած հեռախոսի պլանը",
   "lostWalletStatementNote": "Vaultara-ն կհիշեցնի կրկին ստուգել 30, 60 և 90 օր անց, քանի որ խարդախությունը հաճախ սկսվում է շաբաթներ անց։",
   "lostWalletStatementTitle": "Ստուգեք բանկային քաղվածքները",
   "lostWalletStatementBody": "Փնտրեք վճարումներ, որոնք չեք կատարել դրամապանակը կորցնելուց հետո։",

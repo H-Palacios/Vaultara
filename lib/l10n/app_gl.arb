@@ -2412,9 +2412,6 @@
     }
   },
   "lostWalletOpenTrip": "Abrir a viaxe",
-  "lostWalletPhoneTitle": "Tamén che levaron o móbil?",
-  "lostWalletPhoneBody": "Bloquea primeiro a SIM e as apps do banco. Hai un plan para iso.",
-  "lostWalletPhoneButton": "Comezar o plan de móbil perdido",
   "lostWalletStatementNote": "Vaultara lembraráche revisar de novo aos 30, 60 e 90 días, porque a fraude adoita comezar semanas despois.",
   "lostWalletStatementTitle": "Revisa os extractos bancarios",
   "lostWalletStatementBody": "Busca pagamentos que non fixeches desde que perdiches a carteira.",

@@ -2418,9 +2418,6 @@
     }
   },
   "lostWalletOpenTrip": "Сапарды ашу",
-  "lostWalletPhoneTitle": "Телефоныңызды да алып кетті ме?",
-  "lostWalletPhoneBody": "Алдымен SIM картаны және банк қолданбаларын бұғаттаңыз. Бұл үшін жоспар бар.",
-  "lostWalletPhoneButton": "Жоғалған телефон жоспарын бастау",
   "lostWalletStatementNote": "Алаяқтық көбіне апталар өткен соң басталатындықтан, Vaultara 30, 60 және 90 күннен кейін қайта тексеруді еске салады.",
   "lostWalletStatementTitle": "Банк үзінділерін тексеріңіз",
   "lostWalletStatementBody": "Әмиян жоғалғаннан бері өзіңіз жасамаған төлемдерді іздеңіз.",

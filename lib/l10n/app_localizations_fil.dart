@@ -7440,15 +7440,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lostWalletOpenTrip => 'Buksan ang biyahe';
 
   @override
-  String get lostWalletPhoneTitle => 'Kinuha rin ba ang telepono mo?';
-
-  @override
-  String get lostWalletPhoneBody => 'I-block muna ang SIM card at mga banking app. May plano para diyan.';
-
-  @override
-  String get lostWalletPhoneButton => 'Simulan ang plano para sa nawalang telepono';
-
-  @override
   String get lostWalletStatementNote => 'Ipapaalala ng Vaultara na tingnan ulit pagkalipas ng 30, 60 at 90 araw, dahil madalas nagsisimula ang panloloko makalipas ang ilang linggo.';
 
   @override

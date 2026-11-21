@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Rêwîtiyê veke",
-  "lostWalletPhoneTitle": "Telefona te jî hate birin?",
-  "lostWalletPhoneBody": "Pêşî karta SIM û sepanên bankê bloke bike. Ji bo vê planek heye.",
-  "lostWalletPhoneButton": "Plana telefona windabûyî dest pê bike",
   "lostWalletStatementNote": "Vaultara dê bîne bîra te ku piştî 30, 60 û 90 rojan dîsa kontrol bikî, ji ber ku sextekarî gelek caran hefteyan şûnde dest pê dike.",
   "lostWalletStatementTitle": "Daxuyaniyên bankê kontrol bike",
   "lostWalletStatementBody": "Li dravdanên ku te ji dema windabûna berîkê ve nekirine bigere.",

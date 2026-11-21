@@ -7498,15 +7498,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lostWalletOpenTrip => 'פתיחת הנסיעה';
 
   @override
-  String get lostWalletPhoneTitle => 'גם הטלפון נלקח?';
-
-  @override
-  String get lostWalletPhoneBody => 'חסמו קודם את כרטיס ה-SIM ואת אפליקציות הבנק. יש לזה תוכנית.';
-
-  @override
-  String get lostWalletPhoneButton => 'התחלת תוכנית לטלפון אבוד';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara יזכיר לכם לבדוק שוב אחרי 30, 60 ו-90 ימים, כי הונאה מתחילה פעמים רבות שבועות אחר כך.';
 
   @override

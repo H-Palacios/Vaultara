@@ -2431,9 +2431,6 @@
     }
   },
   "lostWalletOpenTrip": "Reise öffnen",
-  "lostWalletPhoneTitle": "Wurde auch dein Handy genommen?",
-  "lostWalletPhoneBody": "Sperre zuerst die SIM-Karte und deine Banking-Apps. Dafür gibt es einen eigenen Plan.",
-  "lostWalletPhoneButton": "Plan für verlorenes Handy starten",
   "lostWalletStatementNote": "Vaultara erinnert dich nach 30, 60 und 90 Tagen daran, noch einmal nachzusehen, denn Betrug beginnt oft erst Wochen später.",
   "lostWalletStatementTitle": "Prüfe deine Kontoauszüge",
   "lostWalletStatementBody": "Achte auf Zahlungen, die du seit dem Verlust deiner Geldbörse nicht gemacht hast.",

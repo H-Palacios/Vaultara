@@ -7446,15 +7446,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lostWalletOpenTrip => 'Buɗe tafiya';
 
   @override
-  String get lostWalletPhoneTitle => 'An ɗauki wayarka ma?';
-
-  @override
-  String get lostWalletPhoneBody => 'Ka toshe katin SIM da manhajojin banki da farko. Akwai shiri don haka.';
-
-  @override
-  String get lostWalletPhoneButton => 'Fara shirin waya da ta ɓace';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara zai tunatar da kai ka sake dubawa bayan kwanaki 30, 60 da 90, saboda zamba kan fara bayan makonni.';
 
   @override

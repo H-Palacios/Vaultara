@@ -7577,15 +7577,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lostWalletOpenTrip => 'Otvoriť cestu';
 
   @override
-  String get lostWalletPhoneTitle => 'Vzali vám aj telefón?';
-
-  @override
-  String get lostWalletPhoneBody => 'Najprv zablokujte SIM kartu a bankové aplikácie. Je na to plán.';
-
-  @override
-  String get lostWalletPhoneButton => 'Spustiť plán strateného telefónu';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara vám pripomenie znova to skontrolovať po 30, 60 a 90 dňoch, pretože podvody často začínajú až po týždňoch.';
 
   @override

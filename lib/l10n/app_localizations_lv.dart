@@ -7511,15 +7511,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lostWalletOpenTrip => 'Atvērt ceļojumu';
 
   @override
-  String get lostWalletPhoneTitle => 'Vai paņēma arī telefonu?';
-
-  @override
-  String get lostWalletPhoneBody => 'Vispirms bloķē SIM karti un bankas lietotnes. Tam ir atsevišķs plāns.';
-
-  @override
-  String get lostWalletPhoneButton => 'Sākt pazaudēta telefona plānu';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara atgādinās pārbaudīt vēlreiz pēc 30, 60 un 90 dienām, jo krāpšana bieži sākas tikai pēc vairākām nedēļām.';
 
   @override

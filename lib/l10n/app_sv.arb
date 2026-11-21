@@ -2393,9 +2393,6 @@
     }
   },
   "lostWalletOpenTrip": "Öppna resan",
-  "lostWalletPhoneTitle": "Togs din telefon också?",
-  "lostWalletPhoneBody": "Spärra först SIM-kortet och dina bankappar. Det finns en plan för det.",
-  "lostWalletPhoneButton": "Starta planen för borttappad telefon",
   "lostWalletStatementNote": "Vaultara påminner dig om att kolla igen efter 30, 60 och 90 dagar, eftersom bedrägerier ofta börjar veckor senare.",
   "lostWalletStatementTitle": "Gå igenom dina kontoutdrag",
   "lostWalletStatementBody": "Leta efter betalningar du inte har gjort sedan plånboken försvann.",

@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Abrir viagem",
-  "lostWalletPhoneTitle": "Também lhe levaram o telemóvel?",
-  "lostWalletPhoneBody": "Bloqueie primeiro o cartão SIM e as apps bancárias. Há um plano para isso.",
-  "lostWalletPhoneButton": "Iniciar o plano de telemóvel perdido",
   "lostWalletStatementNote": "O Vaultara vai lembrá-lo de verificar de novo após 30, 60 e 90 dias, porque a fraude começa muitas vezes semanas depois.",
   "lostWalletStatementTitle": "Verifique os extratos bancários",
   "lostWalletStatementBody": "Procure pagamentos que não fez desde que perdeu a carteira.",

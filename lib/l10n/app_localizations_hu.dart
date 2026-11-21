@@ -7446,15 +7446,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lostWalletOpenTrip => 'Utazás megnyitása';
 
   @override
-  String get lostWalletPhoneTitle => 'A telefonodat is elvitték?';
-
-  @override
-  String get lostWalletPhoneBody => 'Először tiltsd le a SIM-kártyát és a banki appokat. Erre külön terv van.';
-
-  @override
-  String get lostWalletPhoneButton => 'Elveszett telefon terv indítása';
-
-  @override
   String get lostWalletStatementNote => 'A Vaultara 30, 60 és 90 nap után emlékeztet, hogy nézd meg újra, mert a csalás gyakran csak hetekkel később kezdődik.';
 
   @override

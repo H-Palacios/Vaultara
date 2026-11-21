@@ -2412,9 +2412,6 @@
     }
   },
   "lostWalletOpenTrip": "Buksan ang biyahe",
-  "lostWalletPhoneTitle": "Kinuha rin ba ang telepono mo?",
-  "lostWalletPhoneBody": "I-block muna ang SIM card at mga banking app. May plano para diyan.",
-  "lostWalletPhoneButton": "Simulan ang plano para sa nawalang telepono",
   "lostWalletStatementNote": "Ipapaalala ng Vaultara na tingnan ulit pagkalipas ng 30, 60 at 90 araw, dahil madalas nagsisimula ang panloloko makalipas ang ilang linggo.",
   "lostWalletStatementTitle": "Suriin ang bank statement mo",
   "lostWalletStatementBody": "Hanapin ang mga bayad na hindi mo ginawa mula nang mawala ang wallet mo.",

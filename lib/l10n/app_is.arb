@@ -2405,9 +2405,6 @@
     }
   },
   "lostWalletOpenTrip": "Opna ferðalag",
-  "lostWalletPhoneTitle": "Var símanum líka stolið?",
-  "lostWalletPhoneBody": "Lokaðu fyrst SIM-kortinu og bankaöppunum. Það er til áætlun fyrir það.",
-  "lostWalletPhoneButton": "Hefja áætlun fyrir týndan síma",
   "lostWalletStatementNote": "Vaultara minnir þig á að athuga aftur eftir 30, 60 og 90 daga, því svik byrja oft vikum síðar.",
   "lostWalletStatementTitle": "Farðu yfir bankayfirlitin",
   "lostWalletStatementBody": "Leitaðu að greiðslum sem þú gerðir ekki síðan veskið hvarf.",

@@ -2150,9 +2150,6 @@
     }
   },
   "lostWalletOpenTrip": "ಪ್ರಯಾಣ ತೆರೆಯಿರಿ",
-  "lostWalletPhoneTitle": "ನಿಮ್ಮ ಫೋನ್ ಕೂಡ ತೆಗೆದುಕೊಂಡರೇ?",
-  "lostWalletPhoneBody": "ಮೊದಲು SIM ಕಾರ್ಡ್ ಮತ್ತು ಬ್ಯಾಂಕಿಂಗ್ ಆ್ಯಪ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ. ಅದಕ್ಕೊಂದು ಯೋಜನೆ ಇದೆ.",
-  "lostWalletPhoneButton": "ಕಳೆದುಹೋದ ಫೋನ್ ಯೋಜನೆ ಪ್ರಾರಂಭಿಸಿ",
   "lostWalletStatementNote": "ವಂಚನೆ ಹಲವು ವಾರಗಳ ನಂತರ ಶುರುವಾಗುವುದರಿಂದ, 30, 60 ಮತ್ತು 90 ದಿನಗಳ ನಂತರ ಮತ್ತೆ ಪರಿಶೀಲಿಸಲು Vaultara ನೆನಪಿಸುತ್ತದೆ.",
   "lostWalletStatementTitle": "ಬ್ಯಾಂಕ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಪರಿಶೀಲಿಸಿ",
   "lostWalletStatementBody": "ಪರ್ಸ್ ಕಳೆದುಹೋದಾಗಿನಿಂದ ನೀವು ಮಾಡದ ಪಾವತಿಗಳನ್ನು ಹುಡುಕಿ.",

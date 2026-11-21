@@ -7436,15 +7436,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lostWalletOpenTrip => 'Аяллыг нээх';
 
   @override
-  String get lostWalletPhoneTitle => 'Утсыг чинь бас авсан уу?';
-
-  @override
-  String get lostWalletPhoneBody => 'Эхлээд SIM карт болон банкны аппуудыг хаа. Үүнд зориулсан төлөвлөгөө бий.';
-
-  @override
-  String get lostWalletPhoneButton => 'Алдсан утасны төлөвлөгөө эхлүүлэх';
-
-  @override
   String get lostWalletStatementNote => 'Луйвар ихэвчлэн хэдэн долоо хоногийн дараа эхэлдэг тул Vaultara 30, 60, 90 хоногийн дараа дахин шалгахыг сануулна.';
 
   @override

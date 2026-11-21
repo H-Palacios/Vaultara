@@ -7449,15 +7449,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lostWalletOpenTrip => 'Hap udhëtimin';
 
   @override
-  String get lostWalletPhoneTitle => 'Ta morën edhe telefonin?';
-
-  @override
-  String get lostWalletPhoneBody => 'Blloko së pari kartën SIM dhe aplikacionet bankare. Ka një plan për këtë.';
-
-  @override
-  String get lostWalletPhoneButton => 'Nis planin për telefon të humbur';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara do të të kujtojë të kontrollosh sërish pas 30, 60 dhe 90 ditësh, sepse mashtrimi shpesh nis disa javë më vonë.';
 
   @override

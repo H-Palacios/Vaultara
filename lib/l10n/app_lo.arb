@@ -2418,9 +2418,6 @@
     }
   },
   "lostWalletOpenTrip": "ເປີດການເດີນທາງ",
-  "lostWalletPhoneTitle": "ໂທລະສັບກໍຖືກເອົາໄປບໍ?",
-  "lostWalletPhoneBody": "ລະງັບຊິມກາດ ແລະ ແອັບທະນາຄານກ່ອນ. ມີແຜນສຳລັບເລື່ອງນີ້.",
-  "lostWalletPhoneButton": "ເລີ່ມແຜນໂທລະສັບເສຍ",
   "lostWalletStatementNote": "Vaultara ຈະເຕືອນໃຫ້ກວດອີກຄັ້ງຫຼັງ 30, 60 ແລະ 90 ມື້, ເພາະການສໍ້ໂກງມັກເລີ່ມຫຼາຍອາທິດຕໍ່ມາ.",
   "lostWalletStatementTitle": "ກວດໃບແຈ້ງຍອດທະນາຄານ",
   "lostWalletStatementBody": "ຊອກຫາການຈ່າຍເງິນທີ່ທ່ານບໍ່ໄດ້ເຮັດນັບແຕ່ກະເປົາເງິນເສຍ.",

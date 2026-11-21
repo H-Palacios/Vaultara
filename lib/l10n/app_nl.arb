@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Reis openen",
-  "lostWalletPhoneTitle": "Is je telefoon ook meegenomen?",
-  "lostWalletPhoneBody": "Blokkeer eerst de simkaart en je bankapps. Daar is een plan voor.",
-  "lostWalletPhoneButton": "Plan voor verloren telefoon starten",
   "lostWalletStatementNote": "Vaultara herinnert je eraan om na 30, 60 en 90 dagen opnieuw te kijken, want fraude begint vaak pas weken later.",
   "lostWalletStatementTitle": "Controleer je bankafschriften",
   "lostWalletStatementBody": "Zoek naar betalingen die je niet hebt gedaan sinds je portemonnee weg is.",

@@ -2412,9 +2412,6 @@
     }
   },
   "lostWalletOpenTrip": "Oscail an turas",
-  "lostWalletPhoneTitle": "Ar tógadh d'fhón freisin?",
-  "lostWalletPhoneBody": "Blocáil an cárta SIM agus d'aipeanna bainc ar dtús. Tá plean ann chuige sin.",
-  "lostWalletPhoneButton": "Tosaigh plean an fhóin chaillte",
   "lostWalletStatementNote": "Meabhróidh Vaultara duit seiceáil arís tar éis 30, 60 agus 90 lá, mar is minic a thosaíonn calaois seachtainí ina dhiaidh.",
   "lostWalletStatementTitle": "Seiceáil do ráitis bhainc",
   "lostWalletStatementBody": "Lorg íocaíochtaí nach ndearna tú ó cailleadh do sparán.",

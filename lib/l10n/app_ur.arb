@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "سفر کھولیں",
-  "lostWalletPhoneTitle": "کیا آپ کا فون بھی لے لیا گیا؟",
-  "lostWalletPhoneBody": "پہلے SIM کارڈ اور بینک ایپس بلاک کریں۔ اس کے لیے ایک پلان ہے۔",
-  "lostWalletPhoneButton": "گمشدہ فون کا پلان شروع کریں",
   "lostWalletStatementNote": "Vaultara آپ کو 30، 60 اور 90 دن بعد دوبارہ جانچنے کی یاد دلائے گا، کیونکہ دھوکا دہی اکثر ہفتوں بعد شروع ہوتی ہے۔",
   "lostWalletStatementTitle": "اپنی بینک اسٹیٹمنٹس دیکھیں",
   "lostWalletStatementBody": "وہ ادائیگیاں تلاش کریں جو آپ نے بٹوا گم ہونے کے بعد نہیں کیں۔",

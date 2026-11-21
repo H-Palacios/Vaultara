@@ -7446,15 +7446,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get lostWalletOpenTrip => 'Səyahəti aç';
 
   @override
-  String get lostWalletPhoneTitle => 'Telefonunuz da götürüldü?';
-
-  @override
-  String get lostWalletPhoneBody => 'Əvvəlcə SIM kartı və bank tətbiqlərini bloklayın. Bunun üçün plan var.';
-
-  @override
-  String get lostWalletPhoneButton => 'İtmiş telefon planını başlat';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara 30, 60 və 90 gündən sonra yenidən yoxlamağı xatırladacaq, çünki fırıldaq çox vaxt həftələr sonra başlayır.';
 
   @override

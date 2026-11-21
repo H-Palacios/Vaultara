@@ -2405,9 +2405,6 @@
     }
   },
   "lostWalletOpenTrip": "Mepee njem",
-  "lostWalletPhoneTitle": "E wekwara ekwentị gị?",
-  "lostWalletPhoneBody": "Buru ụzọ gbochie kaadị SIM na ngwa ụlọ akụ gị. E nwere atụmatụ maka nke ahụ.",
-  "lostWalletPhoneButton": "Malite atụmatụ ekwentị furu efu",
   "lostWalletStatementNote": "Vaultara ga-echetara gị ilele ọzọ mgbe ụbọchị 30, 60 na 90 gachara, n'ihi na aghụghọ na-ebidokarị izu ole na ole ka e mesịrị.",
   "lostWalletStatementTitle": "Lelee nkọwa ụlọ akụ gị",
   "lostWalletStatementBody": "Chọọ ịkwụ ụgwọ ị na-emeghị kemgbe akpa ego gị furu efu.",

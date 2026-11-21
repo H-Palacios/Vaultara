@@ -2418,9 +2418,6 @@
     }
   },
   "lostWalletOpenTrip": "Atvērt ceļojumu",
-  "lostWalletPhoneTitle": "Vai paņēma arī telefonu?",
-  "lostWalletPhoneBody": "Vispirms bloķē SIM karti un bankas lietotnes. Tam ir atsevišķs plāns.",
-  "lostWalletPhoneButton": "Sākt pazaudēta telefona plānu",
   "lostWalletStatementNote": "Vaultara atgādinās pārbaudīt vēlreiz pēc 30, 60 un 90 dienām, jo krāpšana bieži sākas tikai pēc vairākām nedēļām.",
   "lostWalletStatementTitle": "Pārbaudi bankas izrakstus",
   "lostWalletStatementBody": "Meklē maksājumus, ko neveici, kopš maks pazuda.",

@@ -7449,15 +7449,6 @@ class AppLocalizationsNn extends AppLocalizations {
   String get lostWalletOpenTrip => 'Opne reisa';
 
   @override
-  String get lostWalletPhoneTitle => 'Vart telefonen òg teken?';
-
-  @override
-  String get lostWalletPhoneBody => 'Sperr først SIM-kortet og bankappane. Det finst ein plan for det.';
-
-  @override
-  String get lostWalletPhoneButton => 'Start planen for mista telefon';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara minner deg på å sjekke att etter 30, 60 og 90 dagar, fordi svindel ofte startar veker seinare.';
 
   @override

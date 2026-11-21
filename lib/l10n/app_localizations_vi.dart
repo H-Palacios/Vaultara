@@ -7390,15 +7390,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lostWalletOpenTrip => 'Mở chuyến đi';
 
   @override
-  String get lostWalletPhoneTitle => 'Điện thoại của bạn cũng bị lấy?';
-
-  @override
-  String get lostWalletPhoneBody => 'Khóa SIM và các ứng dụng ngân hàng trước. Có kế hoạch cho việc đó.';
-
-  @override
-  String get lostWalletPhoneButton => 'Bắt đầu kế hoạch mất điện thoại';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara sẽ nhắc bạn kiểm tra lại sau 30, 60 và 90 ngày, vì gian lận thường bắt đầu vài tuần sau đó.';
 
   @override

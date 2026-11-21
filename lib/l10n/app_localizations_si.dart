@@ -7445,15 +7445,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lostWalletOpenTrip => 'ගමන විවෘත කරන්න';
 
   @override
-  String get lostWalletPhoneTitle => 'ඔබේ දුරකථනයත් ගත්තාද?';
-
-  @override
-  String get lostWalletPhoneBody => 'පළමුව SIM කාඩ්පත සහ බැංකු යෙදුම් අවහිර කරන්න. ඒ සඳහා සැලැස්මක් ඇත.';
-
-  @override
-  String get lostWalletPhoneButton => 'නැතිවූ දුරකථන සැලැස්ම අරඹන්න';
-
-  @override
   String get lostWalletStatementNote => 'වංචා බොහෝ විට සති කිහිපයකට පසු ආරම්භ වන නිසා, දින 30, 60 සහ 90 කට පසු නැවත පරීක්ෂා කිරීමට Vaultara මතක් කරයි.';
 
   @override

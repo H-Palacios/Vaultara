@@ -7378,15 +7378,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lostWalletOpenTrip => 'เปิดทริป';
 
   @override
-  String get lostWalletPhoneTitle => 'โทรศัพท์ถูกเอาไปด้วยหรือเปล่า?';
-
-  @override
-  String get lostWalletPhoneBody => 'อายัดซิมการ์ดและแอปธนาคารก่อน มีแผนสำหรับเรื่องนี้';
-
-  @override
-  String get lostWalletPhoneButton => 'เริ่มแผนโทรศัพท์หาย';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara จะเตือนให้ตรวจสอบอีกครั้งหลัง 30, 60 และ 90 วัน เพราะการฉ้อโกงมักเริ่มหลังจากนั้นหลายสัปดาห์';
 
   @override

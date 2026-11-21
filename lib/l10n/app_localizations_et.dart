@@ -7449,15 +7449,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lostWalletOpenTrip => 'Ava reis';
 
   @override
-  String get lostWalletPhoneTitle => 'Kas ka telefon võeti?';
-
-  @override
-  String get lostWalletPhoneBody => 'Sulge kõigepealt SIM-kaart ja pangarakendused. Selle jaoks on oma plaan.';
-
-  @override
-  String get lostWalletPhoneButton => 'Alusta kadunud telefoni plaani';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara tuletab meelde uuesti kontrollida 30, 60 ja 90 päeva pärast, sest pettus algab sageli nädalaid hiljem.';
 
   @override

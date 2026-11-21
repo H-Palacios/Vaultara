@@ -7510,15 +7510,6 @@ class AppLocalizationsHr extends AppLocalizations {
   String get lostWalletOpenTrip => 'Otvori putovanje';
 
   @override
-  String get lostWalletPhoneTitle => 'Je li uzet i mobitel?';
-
-  @override
-  String get lostWalletPhoneBody => 'Prvo blokirajte SIM karticu i bankovne aplikacije. Za to postoji plan.';
-
-  @override
-  String get lostWalletPhoneButton => 'Pokreni plan za izgubljeni mobitel';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara će vas podsjetiti da ponovno provjerite nakon 30, 60 i 90 dana, jer prijevara često počne tjednima kasnije.';
 
   @override

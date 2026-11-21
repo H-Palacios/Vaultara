@@ -2431,9 +2431,6 @@
     }
   },
   "lostWalletOpenTrip": "Obre el viatge",
-  "lostWalletPhoneTitle": "També t'han pres el mòbil?",
-  "lostWalletPhoneBody": "Bloqueja primer la SIM i les apps del banc. Hi ha un pla per a això.",
-  "lostWalletPhoneButton": "Comença el pla de mòbil perdut",
   "lostWalletStatementNote": "Vaultara et recordarà que tornis a revisar-ho als 30, 60 i 90 dies, perquè el frau sovint comença setmanes després.",
   "lostWalletStatementTitle": "Revisa els extractes bancaris",
   "lostWalletStatementBody": "Busca pagaments que no has fet des que vas perdre la cartera.",

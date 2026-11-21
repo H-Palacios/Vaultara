@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Fur safarka",
-  "lostWalletPhoneTitle": "Taleefankaaga sidoo kale ma la qaatay?",
-  "lostWalletPhoneBody": "Marka hore xannib kaarka SIM-ka iyo app-yada bangiga. Waxaa jira qorshe taas loogu talagalay.",
-  "lostWalletPhoneButton": "Bilow qorshaha taleefanka lumay",
   "lostWalletStatementNote": "Vaultara waxay ku xusuusin doontaa inaad mar kale hubiso 30, 60 iyo 90 maalmood kadib, maxaa yeelay khiyaanadu badanaa waxay bilaabataa toddobaadyo kadib.",
   "lostWalletStatementTitle": "Hubi bayaannada bangigaaga",
   "lostWalletStatementBody": "Raadi lacag bixin aadan samayn tan iyo markii boorsadaadu luntay.",

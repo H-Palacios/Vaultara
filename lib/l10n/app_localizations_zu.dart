@@ -7446,15 +7446,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lostWalletOpenTrip => 'Vula uhambo';
 
   @override
-  String get lostWalletPhoneTitle => 'Ngabe nefoni yakho ithathiwe?';
-
-  @override
-  String get lostWalletPhoneBody => 'Vimba i-SIM card nama-app ebhange kuqala. Kukhona uhlelo lwalokho.';
-
-  @override
-  String get lostWalletPhoneButton => 'Qala uhlelo lwefoni elahlekile';
-
-  @override
   String get lostWalletStatementNote => 'I-Vaultara izokukhumbuza ukuthi uhlole futhi ngemuva kwezinsuku ezingu-30, 60 no-90, ngoba ukukhwabanisa kuvame ukuqala emva kwamasonto.';
 
   @override

@@ -7446,15 +7446,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get lostWalletOpenTrip => 'મુસાફરી ખોલો';
 
   @override
-  String get lostWalletPhoneTitle => 'તમારો ફોન પણ લઈ ગયા?';
-
-  @override
-  String get lostWalletPhoneBody => 'પહેલાં SIM કાર્ડ અને બેંકિંગ ઍપ બ્લૉક કરો. તેના માટે એક યોજના છે.';
-
-  @override
-  String get lostWalletPhoneButton => 'ખોવાયેલા ફોનની યોજના શરૂ કરો';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara તમને 30, 60 અને 90 દિવસ પછી ફરી તપાસવાનું યાદ કરાવશે, કારણ કે છેતરપિંડી ઘણીવાર અઠવાડિયાં પછી શરૂ થાય છે.';
 
   @override

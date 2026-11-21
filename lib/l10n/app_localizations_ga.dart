@@ -7627,15 +7627,6 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lostWalletOpenTrip => 'Oscail an turas';
 
   @override
-  String get lostWalletPhoneTitle => 'Ar tógadh d\'fhón freisin?';
-
-  @override
-  String get lostWalletPhoneBody => 'Blocáil an cárta SIM agus d\'aipeanna bainc ar dtús. Tá plean ann chuige sin.';
-
-  @override
-  String get lostWalletPhoneButton => 'Tosaigh plean an fhóin chaillte';
-
-  @override
   String get lostWalletStatementNote => 'Meabhróidh Vaultara duit seiceáil arís tar éis 30, 60 agus 90 lá, mar is minic a thosaíonn calaois seachtainí ina dhiaidh.';
 
   @override

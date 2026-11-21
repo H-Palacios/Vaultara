@@ -2414,9 +2414,6 @@
     }
   },
   "lostWalletOpenTrip": "Hap udhëtimin",
-  "lostWalletPhoneTitle": "Ta morën edhe telefonin?",
-  "lostWalletPhoneBody": "Blloko së pari kartën SIM dhe aplikacionet bankare. Ka një plan për këtë.",
-  "lostWalletPhoneButton": "Nis planin për telefon të humbur",
   "lostWalletStatementNote": "Vaultara do të të kujtojë të kontrollosh sërish pas 30, 60 dhe 90 ditësh, sepse mashtrimi shpesh nis disa javë më vonë.",
   "lostWalletStatementTitle": "Kontrollo pasqyrat bankare",
   "lostWalletStatementBody": "Kërko pagesa që nuk i ke bërë që kur humbi portofoli.",

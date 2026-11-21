@@ -2418,9 +2418,6 @@
     }
   },
   "lostWalletOpenTrip": "Avaa matka",
-  "lostWalletPhoneTitle": "Vietiinkö myös puhelimesi?",
-  "lostWalletPhoneBody": "Sulje ensin SIM-kortti ja pankkisovelluksesi. Siihen on oma suunnitelma.",
-  "lostWalletPhoneButton": "Aloita kadonneen puhelimen suunnitelma",
   "lostWalletStatementNote": "Vaultara muistuttaa tarkistamaan uudelleen 30, 60 ja 90 päivän kuluttua, koska huijaukset alkavat usein vasta viikkojen päästä.",
   "lostWalletStatementTitle": "Tarkista tiliotteesi",
   "lostWalletStatementBody": "Etsi maksuja, joita et ole tehnyt lompakon katoamisen jälkeen.",

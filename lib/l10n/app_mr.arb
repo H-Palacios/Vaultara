@@ -2150,9 +2150,6 @@
     }
   },
   "lostWalletOpenTrip": "प्रवास उघडा",
-  "lostWalletPhoneTitle": "तुमचा फोनही नेला का?",
-  "lostWalletPhoneBody": "आधी SIM कार्ड आणि बँकिंग ॲप्स ब्लॉक करा. त्यासाठी एक योजना आहे.",
-  "lostWalletPhoneButton": "हरवलेल्या फोनची योजना सुरू करा",
   "lostWalletStatementNote": "फसवणूक अनेकदा काही आठवड्यांनी सुरू होते, म्हणून Vaultara तुम्हाला 30, 60 आणि 90 दिवसांनी पुन्हा तपासण्याची आठवण करून देईल.",
   "lostWalletStatementTitle": "बँक स्टेटमेंट तपासा",
   "lostWalletStatementBody": "पाकीट हरवल्यापासून तुम्ही न केलेली देयके शोधा.",

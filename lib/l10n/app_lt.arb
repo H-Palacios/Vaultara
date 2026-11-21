@@ -2418,9 +2418,6 @@
     }
   },
   "lostWalletOpenTrip": "Atidaryti kelionę",
-  "lostWalletPhoneTitle": "Ar paėmė ir telefoną?",
-  "lostWalletPhoneBody": "Pirmiausia užblokuokite SIM kortelę ir banko programėles. Tam yra atskiras planas.",
-  "lostWalletPhoneButton": "Pradėti pamesto telefono planą",
   "lostWalletStatementNote": "Vaultara primins dar kartą patikrinti po 30, 60 ir 90 dienų, nes sukčiavimas dažnai prasideda po kelių savaičių.",
   "lostWalletStatementTitle": "Patikrinkite banko išrašus",
   "lostWalletStatementBody": "Ieškokite mokėjimų, kurių neatlikote nuo tada, kai dingo piniginė.",

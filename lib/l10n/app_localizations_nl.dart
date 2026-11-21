@@ -7449,15 +7449,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get lostWalletOpenTrip => 'Reis openen';
 
   @override
-  String get lostWalletPhoneTitle => 'Is je telefoon ook meegenomen?';
-
-  @override
-  String get lostWalletPhoneBody => 'Blokkeer eerst de simkaart en je bankapps. Daar is een plan voor.';
-
-  @override
-  String get lostWalletPhoneButton => 'Plan voor verloren telefoon starten';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara herinnert je eraan om na 30, 60 en 90 dagen opnieuw te kijken, want fraude begint vaak pas weken later.';
 
   @override

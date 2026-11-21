@@ -7446,15 +7446,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lostWalletOpenTrip => 'მოგზაურობის გახსნა';
 
   @override
-  String get lostWalletPhoneTitle => 'ტელეფონიც წაიღეს?';
-
-  @override
-  String get lostWalletPhoneBody => 'ჯერ დაბლოკეთ SIM ბარათი და საბანკო აპები. ამისთვის გეგმა არსებობს.';
-
-  @override
-  String get lostWalletPhoneButton => 'დაკარგული ტელეფონის გეგმის დაწყება';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara შეგახსენებთ ხელახლა შემოწმებას 30, 60 და 90 დღის შემდეგ, რადგან თაღლითობა ხშირად კვირების შემდეგ იწყება.';
 
   @override

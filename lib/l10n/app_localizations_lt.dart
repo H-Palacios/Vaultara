@@ -7585,15 +7585,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lostWalletOpenTrip => 'Atidaryti kelionę';
 
   @override
-  String get lostWalletPhoneTitle => 'Ar paėmė ir telefoną?';
-
-  @override
-  String get lostWalletPhoneBody => 'Pirmiausia užblokuokite SIM kortelę ir banko programėles. Tam yra atskiras planas.';
-
-  @override
-  String get lostWalletPhoneButton => 'Pradėti pamesto telefono planą';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara primins dar kartą patikrinti po 30, 60 ir 90 dienų, nes sukčiavimas dažnai prasideda po kelių savaičių.';
 
   @override

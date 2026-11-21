@@ -7445,15 +7445,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lostWalletOpenTrip => 'Opna ferðalag';
 
   @override
-  String get lostWalletPhoneTitle => 'Var símanum líka stolið?';
-
-  @override
-  String get lostWalletPhoneBody => 'Lokaðu fyrst SIM-kortinu og bankaöppunum. Það er til áætlun fyrir það.';
-
-  @override
-  String get lostWalletPhoneButton => 'Hefja áætlun fyrir týndan síma';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara minnir þig á að athuga aftur eftir 30, 60 og 90 daga, því svik byrja oft vikum síðar.';
 
   @override

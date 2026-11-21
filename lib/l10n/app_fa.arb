@@ -2412,9 +2412,6 @@
     }
   },
   "lostWalletOpenTrip": "باز کردن سفر",
-  "lostWalletPhoneTitle": "گوشی‌تان را هم بردند؟",
-  "lostWalletPhoneBody": "اول سیم‌کارت و برنامه‌های بانکی را مسدود کنید. برای این کار یک برنامه وجود دارد.",
-  "lostWalletPhoneButton": "شروع برنامه گوشی گم‌شده",
   "lostWalletStatementNote": "Vaultara پس از ۳۰، ۶۰ و ۹۰ روز یادآوری می‌کند دوباره بررسی کنید، چون کلاهبرداری اغلب هفته‌ها بعد شروع می‌شود.",
   "lostWalletStatementTitle": "صورت‌حساب‌های بانکی را بررسی کنید",
   "lostWalletStatementBody": "دنبال پرداخت‌هایی بگردید که از زمان گم شدن کیف پول انجام نداده‌اید.",

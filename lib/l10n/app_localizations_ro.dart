@@ -7521,15 +7521,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lostWalletOpenTrip => 'Deschide călătoria';
 
   @override
-  String get lostWalletPhoneTitle => 'Ți-au luat și telefonul?';
-
-  @override
-  String get lostWalletPhoneBody => 'Blochează întâi cartela SIM și aplicațiile bancare. Există un plan pentru asta.';
-
-  @override
-  String get lostWalletPhoneButton => 'Pornește planul pentru telefon pierdut';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara îți va aminti să verifici din nou după 30, 60 și 90 de zile, pentru că frauda începe adesea după câteva săptămâni.';
 
   @override

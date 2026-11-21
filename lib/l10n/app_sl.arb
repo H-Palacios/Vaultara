@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Odpri potovanje",
-  "lostWalletPhoneTitle": "So vzeli tudi telefon?",
-  "lostWalletPhoneBody": "Najprej blokirajte kartico SIM in bančne aplikacije. Za to obstaja načrt.",
-  "lostWalletPhoneButton": "Začni načrt za izgubljeni telefon",
   "lostWalletStatementNote": "Vaultara vas bo opomnila, da ponovno preverite po 30, 60 in 90 dneh, saj se goljufija pogosto začne šele čez nekaj tednov.",
   "lostWalletStatementTitle": "Preverite bančne izpiske",
   "lostWalletStatementBody": "Iščite plačila, ki jih niste opravili, odkar je denarnica izginila.",

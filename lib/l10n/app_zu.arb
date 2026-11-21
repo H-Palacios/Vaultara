@@ -2392,9 +2392,6 @@
     }
   },
   "lostWalletOpenTrip": "Vula uhambo",
-  "lostWalletPhoneTitle": "Ngabe nefoni yakho ithathiwe?",
-  "lostWalletPhoneBody": "Vimba i-SIM card nama-app ebhange kuqala. Kukhona uhlelo lwalokho.",
-  "lostWalletPhoneButton": "Qala uhlelo lwefoni elahlekile",
   "lostWalletStatementNote": "I-Vaultara izokukhumbuza ukuthi uhlole futhi ngemuva kwezinsuku ezingu-30, 60 no-90, ngoba ukukhwabanisa kuvame ukuqala emva kwamasonto.",
   "lostWalletStatementTitle": "Hlola izitatimende zakho zebhange",
   "lostWalletStatementBody": "Bheka izinkokhelo ongazenzanga kusukela isikhwama sakho silahlekile.",

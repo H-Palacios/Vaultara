@@ -12805,24 +12805,6 @@ abstract class AppLocalizations {
   /// **'Open trip'**
   String get lostWalletOpenTrip;
 
-  /// Card title in a lost wallet plan.
-  ///
-  /// In en, this message translates to:
-  /// **'Was your phone taken too?'**
-  String get lostWalletPhoneTitle;
-
-  /// On the Lost my wallet screen.
-  ///
-  /// In en, this message translates to:
-  /// **'Block the SIM card and your banking apps first. There is a plan for that.'**
-  String get lostWalletPhoneBody;
-
-  /// Button.
-  ///
-  /// In en, this message translates to:
-  /// **'Start the lost phone plan'**
-  String get lostWalletPhoneButton;
-
   /// Note under the statement step.
   ///
   /// In en, this message translates to:

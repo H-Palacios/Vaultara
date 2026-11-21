@@ -7446,15 +7446,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get lostWalletOpenTrip => 'ప్రయాణం తెరువు';
 
   @override
-  String get lostWalletPhoneTitle => 'మీ ఫోన్ కూడా తీసుకున్నారా?';
-
-  @override
-  String get lostWalletPhoneBody => 'ముందు SIM కార్డు, బ్యాంకింగ్ యాప్‌లను బ్లాక్ చేయండి. దానికి ఒక ప్లాన్ ఉంది.';
-
-  @override
-  String get lostWalletPhoneButton => 'పోయిన ఫోన్ ప్లాన్ ప్రారంభించు';
-
-  @override
   String get lostWalletStatementNote => 'మోసం తరచూ వారాల తర్వాత మొదలవుతుంది కాబట్టి, 30, 60, 90 రోజుల తర్వాత మళ్లీ తనిఖీ చేయమని Vaultara గుర్తు చేస్తుంది.';
 
   @override

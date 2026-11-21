@@ -2400,9 +2400,6 @@
     }
   },
   "lostWalletOpenTrip": "Fungua safari",
-  "lostWalletPhoneTitle": "Simu yako nayo ilichukuliwa?",
-  "lostWalletPhoneBody": "Zuia kadi ya SIM na programu za benki kwanza. Kuna mpango kwa hilo.",
-  "lostWalletPhoneButton": "Anza mpango wa simu iliyopotea",
   "lostWalletStatementNote": "Vaultara itakukumbusha kuangalia tena baada ya siku 30, 60 na 90, kwa sababu ulaghai mara nyingi huanza wiki kadhaa baadaye.",
   "lostWalletStatementTitle": "Kagua taarifa zako za benki",
   "lostWalletStatementBody": "Tafuta malipo ambayo hukufanya tangu pochi yako ipotee.",

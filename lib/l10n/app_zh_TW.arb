@@ -2393,9 +2393,6 @@
     }
   },
   "lostWalletOpenTrip": "開啟行程",
-  "lostWalletPhoneTitle": "手機也被拿走了嗎？",
-  "lostWalletPhoneBody": "先停用 SIM 卡和銀行 App。有專門的計畫。",
-  "lostWalletPhoneButton": "開始手機遺失計畫",
   "lostWalletStatementNote": "盜刷常在幾週後才開始，Vaultara 會在 30、60 和 90 天後提醒你再次檢查。",
   "lostWalletStatementTitle": "檢查銀行對帳單",
   "lostWalletStatementBody": "查找錢包遺失後不是你本人的消費。",

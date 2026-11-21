@@ -7446,15 +7446,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lostWalletOpenTrip => 'باز کردن سفر';
 
   @override
-  String get lostWalletPhoneTitle => 'گوشی‌تان را هم بردند؟';
-
-  @override
-  String get lostWalletPhoneBody => 'اول سیم‌کارت و برنامه‌های بانکی را مسدود کنید. برای این کار یک برنامه وجود دارد.';
-
-  @override
-  String get lostWalletPhoneButton => 'شروع برنامه گوشی گم‌شده';
-
-  @override
   String get lostWalletStatementNote => 'Vaultara پس از ۳۰، ۶۰ و ۹۰ روز یادآوری می‌کند دوباره بررسی کنید، چون کلاهبرداری اغلب هفته‌ها بعد شروع می‌شود.';
 
   @override

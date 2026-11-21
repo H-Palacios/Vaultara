@@ -2565,9 +2565,6 @@
     }
   },
   "lostWalletOpenTrip": "Ava reis",
-  "lostWalletPhoneTitle": "Kas ka telefon võeti?",
-  "lostWalletPhoneBody": "Sulge kõigepealt SIM-kaart ja pangarakendused. Selle jaoks on oma plaan.",
-  "lostWalletPhoneButton": "Alusta kadunud telefoni plaani",
   "lostWalletStatementNote": "Vaultara tuletab meelde uuesti kontrollida 30, 60 ja 90 päeva pärast, sest pettus algab sageli nädalaid hiljem.",
   "lostWalletStatementTitle": "Kontrolli pangaväljavõtteid",
   "lostWalletStatementBody": "Otsi makseid, mida sa pole rahakoti kadumisest saadik teinud.",

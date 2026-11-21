@@ -2438,9 +2438,6 @@
     }
   },
   "lostWalletOpenTrip": "Maak reis oop",
-  "lostWalletPhoneTitle": "Is jou foon ook gevat?",
-  "lostWalletPhoneBody": "Blokkeer eers die SIM-kaart en jou bankprogramme. Daar is 'n plan daarvoor.",
-  "lostWalletPhoneButton": "Begin die verlore-foon-plan",
   "lostWalletStatementNote": "Vaultara herinner jou om weer na 30, 60 en 90 dae te kyk, want bedrog begin dikwels weke later.",
   "lostWalletStatementTitle": "Gaan jou bankstate na",
   "lostWalletStatementBody": "Soek betalings wat jy nie gemaak het sedert jou beursie weg is nie.",

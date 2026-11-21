@@ -2405,9 +2405,6 @@
     }
   },
   "lostWalletOpenTrip": "Apri il viaggio",
-  "lostWalletPhoneTitle": "Hanno preso anche il telefono?",
-  "lostWalletPhoneBody": "Blocca prima la SIM e le app della banca. C'è un piano apposta.",
-  "lostWalletPhoneButton": "Avvia il piano telefono perso",
   "lostWalletStatementNote": "Vaultara ti ricorderà di ricontrollare dopo 30, 60 e 90 giorni, perché le frodi spesso iniziano settimane dopo.",
   "lostWalletStatementTitle": "Controlla gli estratti conto",
   "lostWalletStatementBody": "Cerca pagamenti che non hai fatto da quando hai perso il portafoglio.",
