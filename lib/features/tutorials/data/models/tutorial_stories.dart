@@ -171,6 +171,12 @@ class TutorialStories {
             icon: Icons.history_rounded,
             scene: StoryScene.history,
           ),
+          StoryStep(
+            title: loc.storyAsk6Title,
+            body: loc.storyAsk6Body,
+            icon: Icons.auto_awesome_rounded,
+            scene: StoryScene.guide,
+          ),
         ];
       case TutorialIds.lostWallet:
         return <StoryStep>[
