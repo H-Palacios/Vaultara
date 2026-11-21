@@ -12,6 +12,7 @@ Future<void> showJoinHouseholdSheet(
 }) {
   return AppSheet.show<void>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     showDragHandle: true,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

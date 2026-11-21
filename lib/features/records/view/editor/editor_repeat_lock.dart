@@ -168,6 +168,7 @@ class EditorWalletTile extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
     final picked = await AppSheet.show<String>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       builder: (sheetContext) {
         final scheme = Theme.of(sheetContext).colorScheme;

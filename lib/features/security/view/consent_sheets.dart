@@ -92,6 +92,7 @@ class _LegalAgreementTextState extends State<LegalAgreementText> {
 Future<void> showUpdatedTermsSheet(BuildContext context) {
   return AppSheet.show<void>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
       showDragHandle: false,
     isDismissible: false,
     enableDrag: false,
@@ -221,6 +222,7 @@ class _UpdatedTermsSheetState extends State<_UpdatedTermsSheet> {
 Future<void> showAnalyticsConsentSheet(BuildContext context) async {
   final allow = await AppSheet.show<bool>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     showDragHandle: true,
     builder: (sheetContext) => _AnalyticsConsentSheet(
       onChoice: (value) => Navigator.of(sheetContext).pop(value),

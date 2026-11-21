@@ -8,6 +8,7 @@ import 'package:vaultara/core/view/widgets/app_sheet.dart';
 Future<void> showThemeModeSheet(BuildContext context) {
   return AppSheet.show<void>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     showDragHandle: true,
     builder: (sheetContext) {
       final t = AppLocalizations.of(sheetContext)!;

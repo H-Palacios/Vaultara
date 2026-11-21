@@ -253,6 +253,7 @@ class DocumentScanner {
 
     return AppSheet.show<ImageSource>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       backgroundColor: scheme.surface,
       shape: const RoundedRectangleBorder(

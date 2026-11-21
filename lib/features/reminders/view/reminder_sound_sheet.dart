@@ -28,6 +28,7 @@ class ReminderSoundSheet extends StatefulWidget {
   }) {
     return AppSheet.show<String>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       builder: (_) => ReminderSoundSheet(
         title: title,

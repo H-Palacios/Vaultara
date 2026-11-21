@@ -39,6 +39,7 @@ class MfaChallenge {
           .trim();
       final result = await AppSheet.show<Object>(
         context: ctx,
+        wideStyle: WideSheetStyle.dialog,
         showDragHandle: true,
         isDismissible: false,
         enableDrag: false,

@@ -45,6 +45,7 @@ class CategoryLookSheet extends StatefulWidget {
   }) {
     return AppSheet.show<CategoryLook>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       builder: (_) =>
           CategoryLookSheet(initial: initial, categoryName: categoryName),

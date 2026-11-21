@@ -46,6 +46,7 @@ class NotificationAsk {
 
     final allow = await AppSheet.show<bool>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       builder: (_) => const SingleChildScrollView(child: _AskSheet()),
     );

@@ -119,6 +119,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
 
     AppSheet.show<void>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       builder: (_) => NameEntrySheet(
         title: loc.renameCategoryTitle,

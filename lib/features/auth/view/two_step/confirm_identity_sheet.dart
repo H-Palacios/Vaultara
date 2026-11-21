@@ -8,6 +8,7 @@ import 'package:vaultara/core/view/widgets/app_sheet.dart';
 Future<bool> showConfirmIdentitySheet(BuildContext context) async {
   final ok = await AppSheet.show<bool>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     showDragHandle: true,
     builder: (sheetContext) => ConfirmIdentityPanel(
       onConfirmed: () async => Navigator.of(sheetContext).pop(true),

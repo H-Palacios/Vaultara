@@ -38,6 +38,7 @@ class CategoryCard extends StatelessWidget {
 
     final action = await AppSheet.show<String>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       builder: (sheetContext) {
         Widget tile(String value, IconData icon, String label) {

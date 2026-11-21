@@ -11,6 +11,7 @@ import 'package:vaultara/core/view/widgets/app_sheet.dart';
 Future<void> showIosReminderHelpSheet(BuildContext context) {
   return AppSheet.show<void>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     showDragHandle: true,
     builder: (_) => const _IosReminderHelpSheet(),
     );

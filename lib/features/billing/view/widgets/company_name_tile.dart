@@ -27,6 +27,7 @@ class _CompanyNameTileState extends State<CompanyNameTile> {
     final loc = AppLocalizations.of(context)!;
     final value = await AppSheet.show<String>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

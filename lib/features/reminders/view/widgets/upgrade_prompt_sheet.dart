@@ -13,6 +13,7 @@ void showUpgradePromptSheet(BuildContext context) {
 
   AppSheet.show(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     showDragHandle: true,
     builder: (ctx) {
       return SingleChildScrollView(

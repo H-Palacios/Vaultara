@@ -51,6 +51,7 @@ class _ProfileAvatarButtonState extends State<ProfileAvatarButton> {
   Future<_AvatarAction?> _chooseAction(bool hasPhoto) {
     return AppSheet.show<_AvatarAction>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

@@ -305,6 +305,7 @@ class PassportChoice {
   }) {
     return AppSheet.show<String>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       builder: (_) => _ChoiceSheet(
         destination: destination,

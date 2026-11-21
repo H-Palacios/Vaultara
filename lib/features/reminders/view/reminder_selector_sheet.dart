@@ -62,6 +62,7 @@ Future<int?> showReminderSelectorSheet({
 
   return AppSheet.show<int?>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     isDismissible: !isTutorialMode,
     enableDrag: !isTutorialMode,
     showDragHandle: true,

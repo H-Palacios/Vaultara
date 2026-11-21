@@ -22,6 +22,7 @@ Future<bool> showBlockNumberSheet(
   }
   final picked = await AppSheet.show<BankLine>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     builder: (_) => _BankSheet(record: record, banks: banks),
   );
   if (picked == null || !context.mounted) return false;
@@ -56,6 +57,7 @@ Future<void> showCardsWithoutNumber(
   }
   await AppSheet.show<void>(
     context: context,
+    wideStyle: WideSheetStyle.dialog,
     builder: (sheet) => _CardList(cards: cards),
   );
 }

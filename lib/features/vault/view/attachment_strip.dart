@@ -138,6 +138,7 @@ class AttachmentStrip extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     return AppSheet.show<ImageSource>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),

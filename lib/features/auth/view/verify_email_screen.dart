@@ -295,6 +295,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
 
     return AppSheet.show<EmailInboxApp>(
       context: context,
+      wideStyle: WideSheetStyle.dialog,
       showDragHandle: true,
       backgroundColor: AuthLook.of(context).card,
       builder: (sheetContext) => Theme(

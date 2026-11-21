@@ -237,6 +237,7 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
       case EmailLaunchChoice(:final apps):
         final chosen = await AppSheet.show<EmailInboxApp>(
           context: context,
+          wideStyle: WideSheetStyle.dialog,
           showDragHandle: true,
           backgroundColor: AuthLook.of(context).card,
           builder: (sheetContext) => Theme(
