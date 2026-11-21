@@ -175,6 +175,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
           notes: draft.notes,
           reminderBaseId: baseId % 2147483647,
           reminderOffsetDays: draft.reminderOffsetDays,
+          reminderSteps: draft.reminderSteps,
           holderId: draft.holderId,
           renewalCost: draft.renewalCost,
           costCurrency: draft.costCurrency,

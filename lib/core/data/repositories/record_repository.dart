@@ -229,6 +229,7 @@ class RecordRepository {
     record.name,
     record.expiryDate.millisecondsSinceEpoch,
     record.reminderOffsetDays,
+    record.reminderSteps?.join(','),
     record.leadDays,
     record.holderId,
     record.reminderBaseId,
@@ -712,6 +713,7 @@ class RecordRepository {
           r.reminderBaseId,
           r.expiryDate.toIso8601String().substring(0, 10),
           r.reminderOffsetDays,
+          r.reminderSteps?.join(','),
           r.leadDays,
           r.repeatMonths,
           r.locked,
@@ -1014,6 +1016,8 @@ class RecordRepository {
         oldRecord.name != updated.name ||
         oldRecord.holderId != updated.holderId ||
         oldRecord.leadDays != updated.leadDays ||
+        oldRecord.reminderSteps?.join(',') !=
+            updated.reminderSteps?.join(',') ||
         oldRecord.reminderBaseId != updated.reminderBaseId;
 
     final saved = _withRenewal(oldRecord, updated);

@@ -1,3 +1,5 @@
+import 'package:vaultara/features/reminders/logic/reminder_series.dart';
+
 class RecordDefaults {
   final int? leadDays;
   final int? repeatMonths;
@@ -9,7 +11,7 @@ class RecordDefaults {
     this.inWallet = false,
   });
 
-  static const int reminderDays = 7;
+  static const int reminderDays = ReminderSeries.defaultDays;
 
   static const Map<String, int> _leadByGroup = <String, int>{
     'passports': 42,

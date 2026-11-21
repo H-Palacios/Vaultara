@@ -14,6 +14,11 @@ class TrackedItem {
   final String? notes;
   final int reminderBaseId;
   final int? reminderOffsetDays;
+
+  /// The user's own reminder days, in days before expiry, latest first.
+  /// Null when the reminders are worked out automatically from
+  /// [reminderOffsetDays] and [leadDays].
+  final List<int>? reminderSteps;
   final DateTime? lastRenewedAt;
   final List<RenewalEntry> renewals;
   final String? holderId;
@@ -128,6 +133,7 @@ class TrackedItem {
     this.notes,
     required this.reminderBaseId,
     this.reminderOffsetDays,
+    List<int>? reminderSteps,
     this.lastRenewedAt,
     this.renewals = const <RenewalEntry>[],
     this.holderId,
@@ -154,7 +160,8 @@ class TrackedItem {
     this.createdAt,
     this.updatedBy,
     this.updatedAt,
-  }) : keptIn = KeptIn.clean(keptIn),
+  }) : reminderSteps = cleanSteps(reminderSteps),
+       keptIn = KeptIn.clean(keptIn),
        lostLine = KeptIn.cleanLine(lostLine),
        issuedIn = cleanCountry(issuedIn),
        provider = cleanProvider(provider),
@@ -163,6 +170,33 @@ class TrackedItem {
        referenceEnd = _cleanSealed(referenceSealed) == null
            ? null
            : _cleanEnd(referenceEnd);
+
+  /// The most reminders one record can have, the same as the notification
+  /// slots ReminderPlan gives a record.
+  static const int maxReminderSteps = 6;
+
+  /// The furthest ahead a reminder can be, in days before expiry.
+  static const int maxReminderStepDays = 365;
+
+  /// Keeps whole days from 0 to [maxReminderStepDays], once each, latest
+  /// first, at most [maxReminderSteps]. Anything else, or nothing left,
+  /// gives null, which means the reminders are automatic.
+  static List<int>? cleanSteps(Object? raw) {
+    if (raw is! Iterable) return null;
+    final days = <int>{};
+    for (final value in raw) {
+      final day = value is int
+          ? value
+          : (value is num && value == value.roundToDouble()
+                ? value.toInt()
+                : null);
+      if (day == null || day < 0 || day > maxReminderStepDays) continue;
+      days.add(day);
+    }
+    if (days.isEmpty) return null;
+    final sorted = days.toList()..sort((a, b) => b.compareTo(a));
+    return List<int>.unmodifiable(sorted.take(maxReminderSteps));
+  }
 
   static String? _cleanSealed(Object? value) {
     if (value is! String) return null;
@@ -189,6 +223,8 @@ class TrackedItem {
     int? reminderBaseId,
     int? reminderOffsetDays,
     bool clearReminder = false,
+    List<int>? reminderSteps,
+    bool clearReminderSteps = false,
     DateTime? lastRenewedAt,
     List<RenewalEntry>? renewals,
     String? holderId,
@@ -245,6 +281,9 @@ class TrackedItem {
       reminderOffsetDays: clearReminder
           ? null
           : (reminderOffsetDays ?? this.reminderOffsetDays),
+      reminderSteps: clearReminderSteps
+          ? null
+          : (reminderSteps ?? this.reminderSteps),
       lastRenewedAt: lastRenewedAt ?? this.lastRenewedAt,
       renewals: renewals ?? this.renewals,
       holderId: clearHolder ? null : (holderId ?? this.holderId),
@@ -292,6 +331,7 @@ class TrackedItem {
       'notes': notes,
       'reminderBaseId': reminderBaseId,
       'reminderOffsetDays': reminderOffsetDays,
+      'reminderSteps': reminderSteps,
       'lastRenewedAt': lastRenewedAt != null
           ? Timestamp.fromDate(lastRenewedAt!)
           : null,
@@ -397,6 +437,7 @@ class TrackedItem {
       notes: map['notes'] as String?,
       reminderBaseId: _readInt(map['reminderBaseId'], fallback: baseIdFallback),
       reminderOffsetDays: _readNullableInt(map['reminderOffsetDays']),
+      reminderSteps: cleanSteps(map['reminderSteps']),
       lastRenewedAt: renewed,
       renewals: RenewalEntry.listFrom(map['renewals']),
       holderId: map['holderId'] as String?,

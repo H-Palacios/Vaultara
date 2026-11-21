@@ -17,7 +17,7 @@ import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/features/family/logic/record_display_name.dart';
 import 'package:vaultara/features/platform/background_notification_actions.dart';
 import 'package:vaultara/features/reminders/logic/reminder_copy.dart';
-import 'package:vaultara/features/reminders/logic/reminder_offsets.dart';
+import 'package:vaultara/features/reminders/logic/reminder_series.dart';
 import 'package:vaultara/features/reminders/services/reminder_sound_channels.dart';
 import 'package:vaultara/features/reminders/services/reminder_sound_details.dart';
 import 'package:vaultara/features/reminders/services/reminder_sound_prefs.dart';
@@ -154,17 +154,8 @@ class DailyDigestService {
       )) {
         continue;
       }
-      final start = ReminderScheduler.seriesOffset(
-        record.reminderOffsetDays,
-        record.leadDays,
-      );
-      if (start == null) continue;
-      final steps =
-          ReminderScheduler.seriesSteps(
-            record.reminderOffsetDays,
-            record.leadDays,
-          ) ??
-          ReminderOffsets.forInitial(start);
+      final steps = ReminderSeries.forRecord(record);
+      if (steps.isEmpty) continue;
       final untilExpiry = Dates.daysBetween(today, record.expiryDate);
       for (final step in steps.toSet()) {
         // Urgent reminders are sent on their own by ReminderScheduler.

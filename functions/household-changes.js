@@ -37,7 +37,7 @@ function kindOf(before, after) {
 // Fields the reminders on each phone are planned from. When one changes,
 // the other members' phones are woken to plan that record's reminders again.
 const REMINDER_FIELDS = [
-  "name", "expiryDate", "reminderOffsetDays", "leadDays", "repeatMonths",
+  "name", "expiryDate", "reminderOffsetDays", "reminderSteps", "leadDays", "repeatMonths",
   "isDeleted", "holderName",
 ];
 

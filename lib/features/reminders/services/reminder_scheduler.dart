@@ -25,6 +25,7 @@ import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/data/user_name.dart';
 import 'package:vaultara/core/navigation/navigator_key.dart';
 import 'package:vaultara/features/reminders/logic/reminder_plan.dart';
+import 'package:vaultara/features/reminders/logic/reminder_series.dart';
 import 'package:vaultara/features/reminders/logic/reminder_timing.dart';
 import 'package:vaultara/features/reminders/services/notification_prefs.dart';
 import 'package:vaultara/features/reminders/logic/reminder_sounds.dart';
@@ -287,8 +288,7 @@ class ReminderScheduler {
   }) async {
     await init();
 
-    final start = seriesOffset(item.reminderOffsetDays, item.leadDays);
-    if (start == null) {
+    if (ReminderSeries.forRecord(item).isEmpty) {
       await cancelSeries(item.reminderBaseId, keepSnooze: keepSnooze);
       return true;
     }
@@ -312,20 +312,13 @@ class ReminderScheduler {
     )) {
       return const <PlannedReminder>[];
     }
-    final start = seriesOffset(item.reminderOffsetDays, item.leadDays);
-    if (start == null) return const <PlannedReminder>[];
-    final steps = seriesSteps(item.reminderOffsetDays, item.leadDays);
-    final offsets = steps == null
-        ? ReminderOffsets.forInitial(start)
-        : (List<int>.from(steps)..sort((a, b) => b.compareTo(a)));
-    final int? leadStep =
-        item.leadDays ??
-        (steps != null && offsets.isNotEmpty ? offsets.first : null);
+    final offsets = ReminderSeries.forRecord(item);
+    if (offsets.isEmpty) return const <PlannedReminder>[];
     final repeats = (item.repeatMonths ?? 0) > 0;
     return ReminderPlan.build(
       expiryDate: item.expiryDate,
       offsets: offsets,
-      leadStep: leadStep,
+      leadStep: item.leadDays,
       afterExpiry:
           !repeats && NotificationPrefs.get(NotificationKind.afterExpiry),
       today: Dates.only(today ?? DateTime.now()),
@@ -527,34 +520,6 @@ class ReminderScheduler {
         slot++;
       }
     } catch (_) {}
-  }
-
-  static int? seriesOffset(int? offset, int? leadDays) {
-    if (offset != null) return offset >= 0 ? offset : null;
-    if (leadDays != null && leadDays > 0) return leadDays;
-    return null;
-  }
-
-  static List<int>? seriesSteps(int? offset, int? leadDays) {
-    if (offset != null) return offset >= 0 ? stepsFor(offset, leadDays) : null;
-    if (leadDays != null && leadDays > 0) return <int>[leadDays];
-    return null;
-  }
-
-  static List<int>? stepsFor(int offset, int? leadDays) {
-    if (leadDays == null || leadDays <= offset) return null;
-    final merged = <int>{
-      ...ReminderOffsets.forInitial(leadDays),
-      ...ReminderOffsets.forInitial(offset),
-    }.toList()..sort((a, b) => b.compareTo(a));
-    if (merged.length <= ReminderOffsets.maxNotificationsPerRecord) {
-      return merged;
-    }
-    final keep = <int>{
-      merged.first,
-      ...ReminderOffsets.forInitial(offset),
-    }.toList()..sort((a, b) => b.compareTo(a));
-    return keep.take(ReminderOffsets.maxNotificationsPerRecord).toList();
   }
 
   static Future<void> scheduleSnooze({

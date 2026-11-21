@@ -293,6 +293,22 @@ service cloud.firestore {
                 || (count <= 10 && isPaidUser(uid))));
     }
 
+    // The user's own reminder days. Choosing them is Premium; a record that
+    // already has them keeps them when it is saved again after a downgrade.
+    function reminderStepsOk(uid) {
+      let d = request.resource.data;
+      let before = resource == null ? null : resource.data.get('reminderSteps', null);
+      return !('reminderSteps' in d) || d.reminderSteps == null
+        || (d.reminderSteps is list && d.reminderSteps.size() <= 6
+            && (d.reminderSteps == before || isPaidUser(uid)));
+    }
+
+    function reminderStepsShapeOk() {
+      let d = request.resource.data;
+      return !('reminderSteps' in d) || d.reminderSteps == null
+        || (d.reminderSteps is list && d.reminderSteps.size() <= 6);
+    }
+
     function validRecord(uid) {
       let d = request.resource.data;
       return d.name is string && d.name.size() > 0 && d.name.size() <= 200
@@ -308,6 +324,7 @@ service cloud.firestore {
         && (!('locked' in d) || d.locked is bool)
         && optionalBool('inWallet')
         && keptInOk()
+        && reminderStepsOk(uid)
         && (!('leadDays' in d) || d.leadDays == null
             || (d.leadDays is int && d.leadDays >= 0 && d.leadDays <= 365));
     }
@@ -399,6 +416,7 @@ service cloud.firestore {
         && optionalBool('inWallet')
         && keptInOk()
         && optionalBool('isDeleted')
+        && reminderStepsShapeOk()
         && (!('leadDays' in d) || d.leadDays == null
             || (d.leadDays is int && d.leadDays >= 0 && d.leadDays <= 365));
     }

@@ -8,6 +8,9 @@ class RecordInput {
   final String subcategoryName;
   final String? notes;
   final int? reminderOffsetDays;
+
+  /// The user's own reminder days (Premium), or null for automatic ones.
+  final List<int>? reminderSteps;
   final bool reminderChanged;
   final bool expiryChanged;
   final String? holderId;
@@ -47,6 +50,7 @@ class RecordInput {
     required this.subcategoryName,
     this.notes,
     this.reminderOffsetDays,
+    this.reminderSteps,
     this.reminderChanged = false,
     this.expiryChanged = false,
     this.holderId,

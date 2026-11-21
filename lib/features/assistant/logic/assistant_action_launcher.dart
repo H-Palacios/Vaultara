@@ -949,6 +949,10 @@ class AssistantActionLauncher {
       reminderOffsetDays: changes.reminderDays?.value,
       clearReminder:
           changes.reminderDays != null && changes.reminderDays!.value == null,
+      // A reminder or renewal time asked for in chat replaces the user's own
+      // reminder days, or the change would have no effect.
+      clearReminderSteps:
+          changes.reminderDays != null || changes.leadDays != null,
       leadDays: changes.leadDays?.value,
       clearLeadDays:
           changes.leadDays != null && changes.leadDays!.value == null,
