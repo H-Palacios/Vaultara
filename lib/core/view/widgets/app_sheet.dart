@@ -1,7 +1,16 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_layout.dart';
+import 'package:vaultara/core/view/widgets/app_sheet_dialog.dart';
+import 'package:vaultara/core/view/widgets/app_sheet_frame.dart';
+import 'package:vaultara/core/view/widgets/app_side_sheet.dart';
+import 'package:vaultara/core/view/widgets/wide_sheet_style.dart';
 
+export 'package:vaultara/core/view/widgets/app_sheet_frame.dart';
+export 'package:vaultara/core/view/widgets/wide_sheet_style.dart';
+
+/// Opens every sheet in the app. Phones and 7-inch tablets get a bottom
+/// sheet. A 10-inch tablet held sideways gets a side sheet for forms, or a
+/// centred dialog for short choices, as [wideStyle] says.
 class AppSheet {
   const AppSheet._();
 
@@ -18,7 +27,30 @@ class AppSheet {
     ShapeBorder? shape,
     Color? backgroundColor,
     bool keepHeightWithKeyboard = false,
+    WideSheetStyle wideStyle = WideSheetStyle.side,
   }) {
+    if (WideLayout.of(context)) {
+      switch (wideStyle) {
+        case WideSheetStyle.side:
+          return AppSideSheet.show<T>(
+            context: context,
+            builder: builder,
+            isDismissible: isDismissible,
+            useRootNavigator: useRootNavigator,
+            backgroundColor: backgroundColor,
+            keepHeightWithKeyboard: keepHeightWithKeyboard,
+          );
+        case WideSheetStyle.dialog:
+          return AppSheetDialog.show<T>(
+            context: context,
+            builder: builder,
+            isDismissible: isDismissible,
+            useRootNavigator: useRootNavigator,
+            backgroundColor: backgroundColor,
+          );
+      }
+    }
+
     final height = MediaQuery.sizeOf(context).height;
     return showModalBottomSheet<T>(
       context: context,
@@ -37,53 +69,6 @@ class AppSheet {
       builder: (sheetContext) => AppSheetFrame(
         keepHeightWithKeyboard: keepHeightWithKeyboard,
         child: builder(sheetContext),
-      ),
-    );
-  }
-}
-
-class AppSheetFrame extends StatelessWidget {
-  final Widget child;
-
-  /// The sheet does not shrink when the keyboard opens: it keeps its height
-  /// and its buttons stay at the bottom, under the keyboard. The child gets
-  /// the keyboard height from MediaQuery.viewInsets and leaves room for it
-  /// in its scrolling part.
-  final bool keepHeightWithKeyboard;
-
-  const AppSheetFrame({
-    super.key,
-    required this.child,
-    this.keepHeightWithKeyboard = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final media = MediaQuery.of(context);
-    if (keepHeightWithKeyboard) {
-      final keyboard = media.viewInsets.bottom;
-      return Padding(
-        padding: EdgeInsets.only(
-          bottom: keyboard > 0 ? 0 : media.viewPadding.bottom,
-        ),
-        child: MediaQuery(
-          data: media.removePadding(removeBottom: true),
-          child: child,
-        ),
-      );
-    }
-    final bottom = math.max(media.viewInsets.bottom, media.viewPadding.bottom);
-    // One MediaQuery built from this sheet's own data. Two nested helpers
-    // that both read the outer context undo each other: the inner one put
-    // the keyboard back, so sheets that also leave room for the keyboard
-    // left room twice.
-    return Padding(
-      padding: EdgeInsets.only(bottom: bottom),
-      child: MediaQuery(
-        data: media
-            .removeViewInsets(removeBottom: true)
-            .removePadding(removeBottom: true),
-        child: child,
       ),
     );
   }
