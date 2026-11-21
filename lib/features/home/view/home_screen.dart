@@ -4,6 +4,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
+import 'package:vaultara/core/layout/two_columns.dart';
+import 'package:vaultara/core/layout/wide_layout.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/search_field.dart';
 import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
@@ -13,6 +15,7 @@ import 'package:vaultara/features/home/data/home_overview_loader.dart';
 import 'package:vaultara/features/home/logic/home_welcome_message.dart';
 import 'package:vaultara/features/home/view/widgets/home_next_up.dart';
 import 'package:vaultara/features/home/view/widgets/home_pinned_categories.dart';
+import 'package:vaultara/features/home/view/widgets/home_tour_banner.dart';
 import 'package:vaultara/features/records/view/search/global_search_sheet.dart';
 import 'package:vaultara/features/profile/view/profile_screen.dart';
 import 'package:vaultara/features/profile/view/widgets/my_avatar.dart';
@@ -139,6 +142,22 @@ class HomeScreenState extends State<HomeScreen>
     final loc = AppLocalizations.of(context)!;
 
     final overview = HomeOverviewLoader.cached ?? const HomeOverview.empty();
+    final wide = WideLayout.of(context);
+
+    final nextUp = HomeNextUp(
+      totals: overview.totals,
+      isPremium: widget.isPremium,
+      onChanged: () => HomeOverviewLoader.recompute(),
+    );
+    final pinned = HomePinnedCategories(
+      isPremium: widget.isPremium,
+      onOpenCategories: widget.onOpenCategories,
+    );
+    final rest = <Widget>[
+      const SizedBox(height: 16),
+      TravelCheckCard(isPremium: widget.isPremium),
+      const LifePlansHomeSection(),
+    ];
 
     return SafeArea(
       child: RefreshIndicator(
@@ -146,7 +165,9 @@ class HomeScreenState extends State<HomeScreen>
         child: ListView(
           controller: _scrollController,
           physics: const AlwaysScrollableScrollPhysics(),
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 120),
+          padding: wide
+              ? const EdgeInsets.fromLTRB(24, 8, 24, 32)
+              : const EdgeInsets.fromLTRB(16, 8, 16, 120),
           children: [
             Row(
               children: [
@@ -191,85 +212,25 @@ class HomeScreenState extends State<HomeScreen>
             ),
             if (_showTourBanner) ...[
               const SizedBox(height: 16),
-              _TourBanner(onDismiss: _dismissTourBanner, onStart: _startTour),
+              HomeTourBanner(
+                onDismiss: _dismissTourBanner,
+                onStart: _startTour,
+              ),
             ] else
               WhatsNewCard(newUser: widget.isNewUser),
             const SizedBox(height: 20),
-            HomeNextUp(
-              totals: overview.totals,
-              isPremium: widget.isPremium,
-              onChanged: () => HomeOverviewLoader.recompute(),
-            ),
-            const SizedBox(height: 16),
-            HomePinnedCategories(
-              isPremium: widget.isPremium,
-              onOpenCategories: widget.onOpenCategories,
-            ),
-            const SizedBox(height: 16),
-            TravelCheckCard(isPremium: widget.isPremium),
-            const LifePlansHomeSection(),
+            // On a 10-inch tablet held sideways, what is next sits on the
+            // left and pinned categories, travel and plans on the right.
+            if (wide)
+              TwoColumns(left: [nextUp], right: [pinned, ...rest])
+            else ...[
+              nextUp,
+              const SizedBox(height: 16),
+              pinned,
+              ...rest,
+            ],
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _TourBanner extends StatelessWidget {
-  final VoidCallback onDismiss;
-  final VoidCallback onStart;
-
-  const _TourBanner({required this.onDismiss, required this.onStart});
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final loc = AppLocalizations.of(context)!;
-
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 6),
-      decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            loc.tourBannerTitle,
-            style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            loc.tourBannerBody,
-            style: TextStyle(
-              fontSize: 13.5,
-              height: 1.35,
-              color: scheme.onSurfaceVariant,
-            ),
-          ),
-          const SizedBox(height: 4),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              TextButton(
-                onPressed: onDismiss,
-                child: Text(
-                  loc.tourBannerDismiss,
-                  style: TextStyle(color: scheme.onSurfaceVariant),
-                ),
-              ),
-              TextButton(
-                onPressed: onStart,
-                child: Text(
-                  loc.tourBannerStart,
-                  style: const TextStyle(fontWeight: FontWeight.w700),
-                ),
-              ),
-            ],
-          ),
-        ],
       ),
     );
   }
