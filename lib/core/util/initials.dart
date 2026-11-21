@@ -52,18 +52,16 @@ class Initials {
     final stepCount = count(step.values);
     return {
       for (final e in names.entries)
-        e.key: (stepCount[step[e.key]!.toLowerCase()] ?? 0) > 1 &&
+        e.key:
+            (stepCount[step[e.key]!.toLowerCase()] ?? 0) > 1 &&
                 step[e.key] != firsts[e.key]
             ? e.value.trim()
             : step[e.key]!,
     };
   }
 
-  static List<String> _words(String name) => name
-      .trim()
-      .split(RegExp(r'\s+'))
-      .where((w) => w.isNotEmpty)
-      .toList();
+  static List<String> _words(String name) =>
+      name.trim().split(RegExp(r'\s+')).where((w) => w.isNotEmpty).toList();
 
   /// A slightly smaller font for two letters, so they fit the same circle.
   static double fontSize(String initials, double circle) =>

@@ -72,14 +72,14 @@ class _HouseholdSectionState extends State<HouseholdSection> {
   }
 
   Future<void> _create() => _run(() async {
-        await HouseholdRepository.create();
-        if (!mounted) return;
-        ActionFeedbackSnackbar.showInfo(
-          context,
-          AppLocalizations.of(context)!.householdCreated,
-          icon: Icons.home_rounded,
-        );
-      });
+    await HouseholdRepository.create();
+    if (!mounted) return;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      AppLocalizations.of(context)!.householdCreated,
+      icon: Icons.home_rounded,
+    );
+  });
 
   Future<void> _shareInvite(HouseholdInvite invite) async {
     final loc = AppLocalizations.of(context)!;
@@ -100,22 +100,22 @@ class _HouseholdSectionState extends State<HouseholdSection> {
   }
 
   Future<void> _invite() => _run(() async {
-        final invite = await HouseholdRepository.createInvite();
-        if (!mounted) return;
-        _reload();
-        await _shareInvite(invite);
-      });
+    final invite = await HouseholdRepository.createInvite();
+    if (!mounted) return;
+    _reload();
+    await _shareInvite(invite);
+  });
 
   Future<void> _revoke(HouseholdInvite invite) => _run(() async {
-        await HouseholdRepository.revokeInvite(invite.code);
-        if (!mounted) return;
-        _reload();
-        ActionFeedbackSnackbar.showInfo(
-          context,
-          AppLocalizations.of(context)!.householdInviteRevoked,
-          icon: Icons.link_off_rounded,
-        );
-      });
+    await HouseholdRepository.revokeInvite(invite.code);
+    if (!mounted) return;
+    _reload();
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      AppLocalizations.of(context)!.householdInviteRevoked,
+      icon: Icons.link_off_rounded,
+    );
+  });
 
   Future<bool> _confirm({
     required String title,
@@ -252,7 +252,8 @@ class _HouseholdSectionState extends State<HouseholdSection> {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     final tier = widget.tier;
-    final canCreate = (tier == PlanTier.family || tier == PlanTier.business) &&
+    final canCreate =
+        (tier == PlanTier.family || tier == PlanTier.business) &&
         !HouseholdRepository.viaHousehold;
     final limit = tier == PlanTier.business
         ? HouseholdRepository.businessMemberLimit
@@ -301,11 +302,9 @@ class _HouseholdSectionState extends State<HouseholdSection> {
   }
 
   ButtonStyle _buttonStyle() => FilledButton.styleFrom(
-        padding: const EdgeInsets.symmetric(vertical: 14),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14),
-        ),
-      );
+    padding: const EdgeInsets.symmetric(vertical: 14),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+  );
 
   Widget _buildInside(
     BuildContext context,
@@ -390,14 +389,9 @@ class _HouseholdSectionState extends State<HouseholdSection> {
             ),
             const SizedBox(height: 6),
             Text(
-              details.hasRoom
-                  ? loc.householdInviteNote
-                  : loc.householdFull,
+              details.hasRoom ? loc.householdInviteNote : loc.householdFull,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 12,
-                color: scheme.onSurfaceVariant,
-              ),
+              style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
             ),
           ],
           const SizedBox(height: 12),
@@ -410,7 +404,10 @@ class _HouseholdSectionState extends State<HouseholdSection> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
                 ),
-                leading: Icon(Icons.folder_shared_rounded, color: scheme.primary),
+                leading: Icon(
+                  Icons.folder_shared_rounded,
+                  color: scheme.primary,
+                ),
                 title: Text(
                   loc.householdSharedRecordsTitle,
                   style: const TextStyle(
@@ -447,9 +444,7 @@ class _HouseholdSectionState extends State<HouseholdSection> {
               onPressed: _busy ? null : () => _leave(isOwner),
               style: TextButton.styleFrom(foregroundColor: scheme.error),
               icon: const Icon(Icons.logout_rounded, size: 18),
-              label: Text(
-                isOwner ? loc.householdClose : loc.householdLeave,
-              ),
+              label: Text(isOwner ? loc.householdClose : loc.householdLeave),
             ),
           ),
         ],

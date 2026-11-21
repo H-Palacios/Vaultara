@@ -22,20 +22,20 @@ class ActionFeedbackSnackbar {
   }) {
     final (Color bg, Color fg, IconData fallback) = switch (kind) {
       SnackKind.success => (
-          scheme.primaryContainer,
-          scheme.onPrimaryContainer,
-          Icons.check_circle_rounded,
-        ),
+        scheme.primaryContainer,
+        scheme.onPrimaryContainer,
+        Icons.check_circle_rounded,
+      ),
       SnackKind.notice => (
-          scheme.secondaryContainer,
-          scheme.onSecondaryContainer,
-          Icons.info_outline_rounded,
-        ),
+        scheme.secondaryContainer,
+        scheme.onSecondaryContainer,
+        Icons.info_outline_rounded,
+      ),
       SnackKind.error => (
-          scheme.errorContainer,
-          scheme.onErrorContainer,
-          Icons.error_outline_rounded,
-        ),
+        scheme.errorContainer,
+        scheme.onErrorContainer,
+        Icons.error_outline_rounded,
+      ),
     };
     if (actionLabel != null && onAction != null) {
       _showWithActionOn(
@@ -55,7 +55,8 @@ class ActionFeedbackSnackbar {
         icon: icon ?? fallback,
         background: bg,
         textColor: fg,
-        duration: duration ??
+        duration:
+            duration ??
             (kind == SnackKind.error
                 ? const Duration(seconds: 4)
                 : const Duration(seconds: 3)),
@@ -86,9 +87,11 @@ class ActionFeedbackSnackbar {
     );
   }
 
-  static void showError(BuildContext context, String message,
-          {IconData? icon}) =>
-      show(context, message, kind: SnackKind.error, icon: icon);
+  static void showError(
+    BuildContext context,
+    String message, {
+    IconData? icon,
+  }) => show(context, message, kind: SnackKind.error, icon: icon);
 
   static void showDeleted(BuildContext context, String name) {
     final loc = AppLocalizations.of(context)!;
@@ -316,9 +319,7 @@ class ActionFeedbackSnackbar {
         backgroundColor: background,
         elevation: 6,
         duration: duration,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
         content: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 560),
@@ -384,9 +385,7 @@ class ActionFeedbackSnackbar {
         backgroundColor: background,
         elevation: 6,
         duration: duration,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(14),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
         action: SnackBarAction(
           label: actionLabel,
           textColor: textColor,

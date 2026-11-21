@@ -271,7 +271,7 @@ class _SignUpCodeScreenState extends State<SignUpCodeScreen>
               ),
             ),
           ),
-    );
+        );
         if (chosen == null) return;
         final opened = await EmailAppLauncher.open(chosen);
         if (!mounted || opened) return;

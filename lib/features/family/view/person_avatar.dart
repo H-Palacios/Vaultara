@@ -15,7 +15,10 @@ class PersonAvatar extends StatelessWidget {
     final p = person;
 
     if (p == null) {
-      return MyAvatar(size: size, fallback: InitialsAvatar(size: size));
+      return MyAvatar(
+        size: size,
+        fallback: InitialsAvatar(size: size),
+      );
     }
 
     final letters = Initials.of(p.name);

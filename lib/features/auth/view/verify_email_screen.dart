@@ -257,7 +257,8 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
       _codeController.clear();
     }
 
-    final canResendNow = fromLink &&
+    final canResendNow =
+        fromLink &&
         !_sending &&
         (result == VerifyCodeResult.expired ||
             result == VerifyCodeResult.noActiveCode ||
@@ -368,8 +369,7 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
   }
 
   Future<void> _onLeaveRequested() async {
-    if (widget.canDiscardAccount &&
-        !await DiscardAccountDialog.show(context)) {
+    if (widget.canDiscardAccount && !await DiscardAccountDialog.show(context)) {
       return;
     }
 
@@ -411,195 +411,203 @@ class _VerifyEmailScreenState extends State<VerifyEmailScreen>
             children: [
               const BrandedBackground(),
               SafeArea(
-              child: Center(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.all(24),
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 520),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 104,
-                          height: 104,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: AppBrand.blue.withValues(alpha: 0.16),
+                child: Center(
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.all(24),
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 520),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 104,
+                            height: 104,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: AppBrand.blue.withValues(alpha: 0.16),
+                            ),
+                            child: const Icon(
+                              Icons.mark_email_unread_rounded,
+                              size: 44,
+                              color: AppBrand.blue,
+                            ),
                           ),
-                          child: const Icon(
-                            Icons.mark_email_unread_rounded,
-                            size: 44,
-                            color: AppBrand.blue,
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-                        Text(
-                          loc.verifyEmailTitle,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        Text(
-                          loc.verifyCodeIntro,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 15.5,
-                            color: Colors.white.withValues(alpha: 0.72),
-                          ),
-                        ),
-                        if (_email.isNotEmpty) ...[
-                          const SizedBox(height: 4),
+                          const SizedBox(height: 24),
                           Text(
-                            _email,
+                            loc.verifyEmailTitle,
                             textAlign: TextAlign.center,
                             style: const TextStyle(
-                              fontSize: 15.5,
-                              fontWeight: FontWeight.w700,
+                              fontSize: 24,
+                              fontWeight: FontWeight.w800,
                               color: Colors.white,
                             ),
                           ),
-                        ],
-                        const SizedBox(height: 28),
-                        TextField(
-                          controller: _codeController,
-                          focusNode: _codeFocus,
-                          enabled: !_verifying,
-                          keyboardType: TextInputType.number,
-                          autofillHints: const [AutofillHints.oneTimeCode],
-                          inputFormatters: [
-                            FilteringTextInputFormatter.digitsOnly,
-                            LengthLimitingTextInputFormatter(6),
-                          ],
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            fontSize: 28,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 12,
-                            color: AppBrand.navy,
+                          const SizedBox(height: 12),
+                          Text(
+                            loc.verifyCodeIntro,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 15.5,
+                              color: Colors.white.withValues(alpha: 0.72),
+                            ),
                           ),
-                          decoration: InputDecoration(
-                            counterText: '',
-                            hintText: '000000',
-                            hintStyle: const TextStyle(
+                          if (_email.isNotEmpty) ...[
+                            const SizedBox(height: 4),
+                            Text(
+                              _email,
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 15.5,
+                                fontWeight: FontWeight.w700,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                          const SizedBox(height: 28),
+                          TextField(
+                            controller: _codeController,
+                            focusNode: _codeFocus,
+                            enabled: !_verifying,
+                            keyboardType: TextInputType.number,
+                            autofillHints: const [AutofillHints.oneTimeCode],
+                            inputFormatters: [
+                              FilteringTextInputFormatter.digitsOnly,
+                              LengthLimitingTextInputFormatter(6),
+                            ],
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
                               fontSize: 28,
                               fontWeight: FontWeight.w700,
                               letterSpacing: 12,
-                              color: _fieldHint,
+                              color: AppBrand.navy,
                             ),
-                            errorText: _codeError,
-                            errorMaxLines: 3,
-                            errorStyle: const TextStyle(
-                              fontSize: 12.5,
-                              letterSpacing: 0,
-                              color: _errorOnNavy,
-                            ),
-                            filled: true,
-                            fillColor: _fieldFill,
-                            contentPadding: const EdgeInsets.symmetric(
-                              vertical: 18,
-                            ),
-                            enabledBorder: _codeBorder(_fieldBorder),
-                            disabledBorder: _codeBorder(_fieldBorder),
-                            focusedBorder:
-                                _codeBorder(AppBrand.blue, width: 2),
-                            errorBorder: _codeBorder(_errorOnNavy),
-                            focusedErrorBorder:
-                                _codeBorder(_errorOnNavy, width: 2),
-                          ),
-                        ),
-                        if (_verifying && _verifyingFromLink) ...[
-                          const SizedBox(height: 14),
-                          Text(
-                            loc.verifyEmailLinkVerifying,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.white.withValues(alpha: 0.85),
-                            ),
-                          ),
-                        ],
-                        const SizedBox(height: 20),
-                        SizedBox(
-                          width: double.infinity,
-                          height: 52,
-                          child: FilledButton(
-                            style: FilledButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(999),
+                            decoration: InputDecoration(
+                              counterText: '',
+                              hintText: '000000',
+                              hintStyle: const TextStyle(
+                                fontSize: 28,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 12,
+                                color: _fieldHint,
                               ),
-                              textStyle: const TextStyle(
-                                fontSize: 16,
+                              errorText: _codeError,
+                              errorMaxLines: 3,
+                              errorStyle: const TextStyle(
+                                fontSize: 12.5,
+                                letterSpacing: 0,
+                                color: _errorOnNavy,
+                              ),
+                              filled: true,
+                              fillColor: _fieldFill,
+                              contentPadding: const EdgeInsets.symmetric(
+                                vertical: 18,
+                              ),
+                              enabledBorder: _codeBorder(_fieldBorder),
+                              disabledBorder: _codeBorder(_fieldBorder),
+                              focusedBorder: _codeBorder(
+                                AppBrand.blue,
+                                width: 2,
+                              ),
+                              errorBorder: _codeBorder(_errorOnNavy),
+                              focusedErrorBorder: _codeBorder(
+                                _errorOnNavy,
+                                width: 2,
+                              ),
+                            ),
+                          ),
+                          if (_verifying && _verifyingFromLink) ...[
+                            const SizedBox(height: 14),
+                            Text(
+                              loc.verifyEmailLinkVerifying,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white.withValues(alpha: 0.85),
+                              ),
+                            ),
+                          ],
+                          const SizedBox(height: 20),
+                          SizedBox(
+                            width: double.infinity,
+                            height: 52,
+                            child: FilledButton(
+                              style: FilledButton.styleFrom(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(999),
+                                ),
+                                textStyle: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              onPressed: _verifying
+                                  ? null
+                                  : () => _verifyCode(),
+                              child: _verifying
+                                  ? const SizedBox(
+                                      width: 20,
+                                      height: 20,
+                                      child: CircularProgressIndicator(
+                                        strokeWidth: 2.5,
+                                        color: Colors.white,
+                                      ),
+                                    )
+                                  : Text(loc.verifyCodeButton),
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          TextButton(
+                            onPressed: _openEmailApp,
+                            child: Text(
+                              loc.openEmailApp,
+                              style: const TextStyle(
                                 fontWeight: FontWeight.w700,
                               ),
                             ),
-                            onPressed: _verifying ? null : () => _verifyCode(),
-                            child: _verifying
-                                ? const SizedBox(
-                                    width: 20,
-                                    height: 20,
-                                    child: CircularProgressIndicator(
-                                      strokeWidth: 2.5,
-                                      color: Colors.white,
-                                    ),
-                                  )
-                                : Text(loc.verifyCodeButton),
                           ),
-                        ),
-                        const SizedBox(height: 10),
-                        TextButton(
-                          onPressed: _openEmailApp,
-                          child: Text(
-                            loc.openEmailApp,
-                            style:
-                                const TextStyle(fontWeight: FontWeight.w700),
+                          const SizedBox(height: 16),
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              disabledForegroundColor: Colors.white.withValues(
+                                alpha: 0.38,
+                              ),
+                            ),
+                            onPressed: (_cooldownRemaining <= 0 && !_sending)
+                                ? _resend
+                                : null,
+                            child: Text(
+                              _sending
+                                  ? loc.verifyEmailSending
+                                  : _cooldownRemaining > 0
+                                  ? loc.verifyEmailResendIn(_cooldownRemaining)
+                                  : loc.resendCode,
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 16),
-                        TextButton(
-                          style: TextButton.styleFrom(
-                            disabledForegroundColor:
-                                Colors.white.withValues(alpha: 0.38),
+                          const SizedBox(height: 2),
+                          Text(
+                            loc.verifyEmailSpamHint,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.white.withValues(alpha: 0.55),
+                            ),
                           ),
-                          onPressed: (_cooldownRemaining <= 0 && !_sending)
-                              ? _resend
-                              : null,
-                          child: Text(
-                            _sending
-                                ? loc.verifyEmailSending
-                                : _cooldownRemaining > 0
-                                    ? loc.verifyEmailResendIn(
-                                        _cooldownRemaining)
-                                    : loc.resendCode,
+                          const SizedBox(height: 24),
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.white.withValues(
+                                alpha: 0.85,
+                              ),
+                            ),
+                            onPressed: _onLeaveRequested,
+                            child: Text(loc.verifyEmailWrongAddress),
                           ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          loc.verifyEmailSpamHint,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Colors.white.withValues(alpha: 0.55),
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-                        TextButton(
-                          style: TextButton.styleFrom(
-                            foregroundColor:
-                                Colors.white.withValues(alpha: 0.85),
-                          ),
-                          onPressed: _onLeaveRequested,
-                          child: Text(loc.verifyEmailWrongAddress),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
-              ),
               ),
             ],
           ),

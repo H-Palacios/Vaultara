@@ -28,7 +28,9 @@ class PersonPicker extends StatelessWidget {
         final loc = AppLocalizations.of(context)!;
         // First names on the chips; the circle shows both initials, and the
         // full name stays on the People screen.
-        final short = Initials.shortNames({for (final p in people) p.id: p.name});
+        final short = Initials.shortNames({
+          for (final p in people) p.id: p.name,
+        });
 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,

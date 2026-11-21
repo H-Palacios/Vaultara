@@ -20,7 +20,6 @@ import 'package:vaultara/features/tools/logic/life_plan_items.dart';
 import 'package:vaultara/features/tools/logic/life_tasks.dart';
 import 'package:vaultara/features/tools/services/life_plan_share.dart';
 import 'package:vaultara/features/tools/services/lost_wallet_report.dart';
-import 'package:vaultara/features/tools/view/life_plan_start_sheet.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
 import 'package:vaultara/features/tools/view/lost_wallet_sheet.dart';
 import 'package:vaultara/features/tools/view/lost_wallet_widgets.dart';
@@ -401,11 +400,13 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     LifeTaskItem? police,
     List<LifeRecordItem> replace,
   ) {
-    if (block.isNotEmpty)
+    if (block.isNotEmpty) {
       return loc.lostWalletNextBlock(block.first.record.name);
+    }
     for (final task in urgent) {
-      if (!task.done)
+      if (!task.done) {
         return loc.lostWalletNextStep(LifePlanText.task(loc, task));
+      }
     }
     if (police != null && !police.done) {
       return loc.lostWalletNextStep(LifePlanText.task(loc, police));
@@ -460,10 +461,6 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
         .where((t) => !t.isUrgent && t.task != LifeTask.reportToPolice)
         .toList();
     final trip = plan.isFinished ? null : _tripNow();
-    final phoneToo =
-        !plan.isFinished &&
-        (stolen || plan.missing.contains(KeptIn.phoneCase)) &&
-        !LifePlanRepository.active.any((p) => p.event == LifeEvent.lostPhone);
 
     LifeTaskItem? police;
     for (final t in view.tasks) {
@@ -601,17 +598,6 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
             label: Text(loc.lifePlanAddOwnStep),
           ),
         ),
-        if (phoneToo) ...[
-          const SizedBox(height: 8),
-          _InfoCard(
-            icon: Icons.phonelink_erase_rounded,
-            colour: scheme.error,
-            title: loc.lostWalletPhoneTitle,
-            body: loc.lostWalletPhoneBody,
-            action: loc.lostWalletPhoneButton,
-            onAction: () => startLifePlan(context, LifeEvent.lostPhone),
-          ),
-        ],
         if (done.isNotEmpty || urgent.any((t) => t.done) || view.removed > 0)
           ..._doneSection(loc, scheme, view, done, urgent),
       ],

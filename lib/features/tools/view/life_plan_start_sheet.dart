@@ -38,6 +38,10 @@ Future<void> startLifePlan(
       return;
     }
   }
+  // A retired event, for example asked for by Ask Vaultara, opens no new
+  // plan; one already in progress still opened above.
+  if (!LifeEvents.canStart(event)) return;
+
   final loc = AppLocalizations.of(context)!;
   if (!LifePlanRepository.canStart) {
     ActionFeedbackSnackbar.showInfo(

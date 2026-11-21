@@ -493,10 +493,17 @@ class LifeEvents {
         LifeEventGroup.carTravel: <LifeEvent>[LifeEvent.car, LifeEvent.country],
         LifeEventGroup.emergency: <LifeEvent>[
           LifeEvent.lostWallet,
-          LifeEvent.lostPhone,
           LifeEvent.disaster,
         ],
       };
+
+  /// Events that can no longer be started. Plans already made for them
+  /// still open, so nothing a user saved is lost. The names stay in the
+  /// enum because they are stored in Firestore.
+  static const Set<LifeEvent> retired = <LifeEvent>{LifeEvent.lostPhone};
+
+  /// Whether a new plan can be started for [event].
+  static bool canStart(LifeEvent event) => !retired.contains(event);
 
   /// Events that are about someone else, so "Me" is not the default.
   static bool aboutSomeoneElse(LifeEvent event) =>

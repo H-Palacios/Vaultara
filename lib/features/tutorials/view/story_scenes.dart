@@ -344,7 +344,7 @@ class StorySceneView extends StatelessWidget {
               LifeEvent.moving,
               LifeEvent.baby,
               LifeEvent.job,
-              LifeEvent.lostPhone,
+              LifeEvent.lostWallet,
             ])
               _Row(
                 icon: LifeEvents.icon(e),
