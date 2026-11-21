@@ -157,7 +157,10 @@ const LIFE_EVENTS = [
   "caringParent",
   "lostWallet",
 ];
-const KEPT_IN = ["wallet", "bag", "car", "phoneCase", "home", "travelPouch"];
+const KEPT_IN = ["wallet", "bag", "car", "home", "travelPouch"];
+// Phone case is no longer a place; records saved with it count as wallet.
+const keptInOf = (data) =>
+  data.keptIn === "phoneCase" ? "wallet" : KEPT_IN.includes(data.keptIn) ? data.keptIn : data.inWallet === true ? "wallet" : null;
 // Answers a plan can start with, after a colon: car buy or sell, job start or
 // leave, lostWallet lost or stolen.
 const LIFE_VARIANTS = ["buy", "sell", "start", "leave", "lost", "stolen"];
@@ -267,15 +270,15 @@ const RECORD_FIELD_PROPERTIES = {
   },
   person: { type: "string", description: "Who the record belongs to: \"me\" or a name from list_people." },
   locked: { type: "boolean", description: "Lock the record so the phone's fingerprint, face or screen lock is needed to see it." },
-  in_wallet: { type: "boolean", description: "The card or document is kept in the user's wallet (used by Lost my wallet)." },
+  in_wallet: { type: "boolean", description: "The card or document is kept in the user's wallet (used by Lost or stolen)." },
   lost_card_number: {
     type: "string",
-    description: "The phone number to call to block this card when it is lost or stolen, as the user or their bank gives it (digits, spaces, + and brackets). Empty clears it. Lost my wallet shows a call button with it.",
+    description: "The phone number to call to block this card when it is lost or stolen, as the user or their bank gives it (digits, spaces, + and brackets). Empty clears it. Lost or stolen shows a call button with it.",
   },
   kept_in: {
     type: "string",
     enum: [...KEPT_IN, "none"],
-    description: "Where the user keeps the card or document. Lost my wallet uses it to know what to block and replace. none clears it.",
+    description: "Where the user keeps the card or document. Lost or stolen uses it to know what to block and replace. none clears it.",
   },
 };
 
@@ -313,7 +316,7 @@ const READ_TOOLS = [
         },
         no_lost_card_number: {
           type: "boolean",
-          description: "true: only records with no lost card number saved, so Lost my wallet has nothing to call for them.",
+          description: "true: only records with no lost card number saved, so Lost or stolen has nothing to call for them.",
         },
       },
     },
@@ -744,7 +747,7 @@ const TOOLS_V12 = [
   SUGGEST_REPLIES,
 ];
 const NAMES_V12 = new Set(TOOLS_V12.map((t) => t.name));
-// Protocol 13: Ask Vaultara reads and changes life plans and Lost my wallet.
+// Protocol 13: Ask Vaultara reads and changes life plans and Lost or stolen.
 const LIFE = require("./assistant-life")({ admin, str, toMillis, logger, LOCKED_LABEL });
 const LIFE_EVENT_KEY_V13 = /^[a-zA-Z]+(:[a-zA-Z]+)?$/;
 const TOOLS_V13 = [
@@ -829,7 +832,7 @@ const APP_GUIDE = [
   "- Calendar tab: Month and List views (switch at the top). Coloured dots mark expiries in the app's one colour scale (red expired, orange within 7 days, amber within 30 days, green later), named in the legend under the month, and a ring marks a reminder day. Swipe left or right to change month, tap the month name to jump to any month, and use Today or Next expiry. Tap a day to see its records, tap it again to see the whole month. Each record has Renew and Renewal checklist; swiping it right also opens Renew. A long press on a day adds a record expiring that day. The menu (three dots) has Calendar link (a live calendar feed, paid plans). Profile > Your data > Export and calendar has Export as PDF (paid plans), Add to calendar, and Calendar link.",
   "- Travel check (paid plans): Home > \"Planning a trip?\". A trip has up to 5 destination countries, dates, travellers, whether the user drives and the reason for the trip (holiday, visiting family or friends, business, study or work). Visa results describe short visits; for study and work trips Vaultara warns that a study or work visa is usually needed and links to the official rules. Vaultara checks passport validity, visas, travel insurance and driving licence, runs a visa check from each traveller's nationality and residence, and builds a trip checklist. A trip can also have cities or towns, flights with connections, and the date the user reaches each country. Trips inside the user's home country get no visa checks and a checklist for travelling at home. Up to 20 trips.",
   "- Family: Profile > Family. The Family plan tracks records for up to 5 people and Business for up to 25; each person has their own records and reminders. Household (Family and Business): the owner creates a household and invites people with a code or link (each invite works once, for 7 days). Members get Premium through the plan, their own records stay private, and records with Shared with household turned on can be seen and edited by everyone in it.",
-  "- Smart tools in Profile: Lost my wallet (what was in it and what to replace), Life events (what to update after moving, a new name or a new car), Proof pack (paid plans: chosen records and photos in one PDF), Shared links (see and stop links; a link works for 1 to 72 hours, 24 hours by default).",
+  "- Smart tools in Profile: Lost or stolen (what was in it and what to replace), Life events (what to update after moving, a new name or a new car), Proof pack (paid plans: chosen records and photos in one PDF), Shared links (see and stop links; a link works for 1 to 72 hours, 24 hours by default).",
   "- Import: Profile > Your data > Import from spreadsheet (CSV file). Invite friends is in Profile > People: both people get a free month of Premium.",
   "- Plans (the plan card in Profile): Free has 10 records, 3 custom categories, 2 custom groups and the basic reminders. Premium (Individual tab) has unlimited records, custom categories and custom groups, multiple and custom reminders, Ask Vaultara, Travel check, PDF export, Proof pack, Calendar link, renewal costs, and up to 10 photos or files per record instead of 1. Family has everything in Premium for up to 5 people and a household, with one subscription. Business has everything in Family, staff and vehicle records for up to 25 people, staff email reminders and a team PDF with the company name. Billing is monthly or yearly. Free trials: Premium (Individual) and Family 7 days, Business 14 days. Billing history is on the Plans screen. Subscriptions are managed and cancelled in Google Play or the App Store.",
   "- Security and privacy (Profile > Security and privacy): security checkup, change password, two-step sign-in with an authenticator app, Your devices (see and sign out devices), Security history (last 90 days), App lock with fingerprint or face, Lock again, Privacy screen, Block screenshots, Encrypted photos (only the user's recovery key can unlock them; it cannot be reset), Share usage data, Privacy Policy, Terms of Service, Download my data, Use my location for trips (off by default: only the country is used, to tell if the user is at home or travelling, and it is not saved), and Delete account.",
@@ -1176,7 +1179,7 @@ class UserData {
       cost: Number.isFinite(cost) && cost > 0 && CURRENCY_PATTERN.test(currency) ? cost : null,
       currency: CURRENCY_PATTERN.test(currency) ? currency : null,
       inWallet: data.inWallet === true,
-      keptIn: KEPT_IN.includes(data.keptIn) ? data.keptIn : data.inWallet === true ? "wallet" : null,
+      keptIn: keptInOf(data),
       reminderDays: reminder !== null && reminder >= 0 ? reminder : null,
       leadDays: lead !== null && lead > 0 && lead <= MAX_LEAD_DAYS ? lead : null,
       issuedIn: countryCode(data.issuedIn),
@@ -2245,14 +2248,14 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   if (v7) {
     lines.push(
       v13
-        ? "Life events: when the user says something big is happening or happened (moving house, selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job, leaving or losing a job, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen wallet or purse, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Buying a home is the key homeBuy and losing a job is jobLoss; in the app they are answers under Moving and Job. When you already know the answer, add it after a colon: lostWallet:stolen or lostWallet:lost, job:start or job:leave, car:buy or car:sell. There is no plan for a lost phone any more: tell them to block the SIM card with their network and their banking apps with the bank first. Plans in progress are in the dynamic facts with their progress and next step; do not start a second plan for the same event, open it instead. For what is left, what to do next or anything about a plan, call get_life_plan and answer from it, naming the records and steps. When the user says they did something in a plan (blocked a card, got a case number, replaced a document, did a step, found the wallet), save it with update_life_plan and say in a few words what you changed. For a death in the family or a lost job, be brief and kind. Lost my wallet (key lostWallet): tell them to block their bank cards first; each card with a lost card number saved has a call button, and Vaultara notes when it was called. When the user gives a card's lost card number, save it with propose_update_record and lost_card_number. Vaultara keeps the police case number and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
-        : "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, a lost or stolen wallet or purse, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first. For a lost or stolen wallet (key lostWallet), tell them to block their bank cards first; Vaultara shows a call button for each card that has its lost card number saved, keeps the police case number, and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
+        ? "Life events: when the user says something big is happening or happened (moving house, selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job, leaving or losing a job, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen wallet or purse, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Buying a home is the key homeBuy and losing a job is jobLoss; in the app they are answers under Moving and Job. When you already know the answer, add it after a colon: lostWallet:stolen or lostWallet:lost, job:start or job:leave, car:buy or car:sell. There is no plan for a lost phone any more: tell them to block the SIM card with their network and their banking apps with the bank first. Plans in progress are in the dynamic facts with their progress and next step; do not start a second plan for the same event, open it instead. For what is left, what to do next or anything about a plan, call get_life_plan and answer from it, naming the records and steps. When the user says they did something in a plan (blocked a card, got a case number, replaced a document, did a step, found the wallet), save it with update_life_plan and say in a few words what you changed. For a death in the family or a lost job, be brief and kind. Lost or stolen (key lostWallet, for a wallet, bag, travel pouch or car): if it was stolen, tell them to block their bank cards and report it first; if it was lost, to freeze the cards in their banking app first, which can be undone if it turns up, and to cancel them if it is still missing the next day. Each card with a lost card number saved has a call button, and Vaultara notes when it was called. When the user gives a card's lost card number, save it with propose_update_record and lost_card_number. Vaultara keeps the police case number and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, home or travelPouch)."
+        : "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, a lost or stolen wallet or purse, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first. For a lost or stolen wallet (key lostWallet), tell them to block their bank cards first; Vaultara shows a call button for each card that has its lost card number saved, keeps the police case number, and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, home or travelPouch)."
     );
   }
   if (v14) {
     lines.push(
       "Trip checklists: for what is left before a trip, call get_trip_checklist and answer from it. When the user says they did something on it (got insurance, applied for the visa, packed the adapter), or asks to add or remove an item, call update_trip_checklist. Like update_life_plan, it saves at once, so say in a few words what you changed. list_trips shows how far each checklist is.",
-      "Where records are kept: kept_in says where the user keeps a card or document (wallet, bag, car, phoneCase, home, travelPouch). To change it, call propose_update_record with kept_in. To list what is in the wallet, call list_records with kept_in wallet; add no_lost_card_number true for cards that still need a number to call when they go missing.",
+      "Where records are kept: kept_in says where the user keeps a card or document (wallet, bag, car, home, travelPouch). To change it, call propose_update_record with kept_in. To list what is in the wallet, call list_records with kept_in wallet; add no_lost_card_number true for cards that still need a number to call when they go missing.",
       "Household sharing: shared_with_household on a record says whether everyone in the household can see and edit it. When the user asks to share a record with their family or household, or to make one private again, call propose_share_record. Records with encrypted photos cannot be shared; if the card fails, the user can try in the record.",
     );
   }

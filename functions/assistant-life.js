@@ -1,4 +1,4 @@
-// Ask Vaultara protocol 13: life plans and Lost my wallet.
+// Ask Vaultara protocol 13: life plans and Lost or stolen.
 //
 // Ask Vaultara reads a plan as the user sees it and changes it the way the
 // app does. The app keeps a short summary in each plan document (progress,
@@ -45,7 +45,7 @@ module.exports = function build(h) {
   const GET_LIFE_PLAN = {
     name: "get_life_plan",
     description:
-      "Read a life event plan in progress (including Lost my wallet) as the user sees it: progress, the next step, " +
+      "Read a life event plan in progress (including Lost or stolen) as the user sees it: progress, the next step, " +
       "each record with what to do (block, replace, update, check) and whether it is done, each step with its id and " +
       "whether it is ticked, the police case number, what went missing, when each card's bank was called, and whether " +
       "the wallet was lost or stolen. Without event it lists every plan in progress. Use it before answering what is " +
@@ -67,7 +67,7 @@ module.exports = function build(h) {
       "the statements step\"). Call get_life_plan first for record ids and step ids. Changes: tick_step / untick_step " +
       "(step id), add_step (text, the user's own step), mark_record (record_id and status: blocked for cards, " +
       "replaced for documents, updated, not_needed or claimed) / unmark_record, set_case_number (case_number) / " +
-      "clear_case_number, mark_found (Lost my wallet: it turned up), finish, reopen. Saving a case number also " +
+      "clear_case_number, mark_found (Lost or stolen: it turned up), finish, reopen. Saving a case number also " +
       "ticks the police step. To save a card's lost card number use propose_update_record with lost_card_number.",
     input_schema: {
       type: "object",
@@ -294,7 +294,7 @@ module.exports = function build(h) {
         update.caseNumber = FieldValue.delete();
         break;
       case "mark_found":
-        if (d.event !== "lostWallet") return { error: "Only a Lost my wallet plan can be marked as found." };
+        if (d.event !== "lostWallet") return { error: "Only a Lost or stolen plan can be marked as found." };
         update.foundAt = FieldValue.serverTimestamp();
         update.finishedAt = FieldValue.serverTimestamp();
         break;
