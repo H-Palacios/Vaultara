@@ -114,15 +114,14 @@ class HomePinnedCategories extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         title,
-        SizedBox(
-          height: 44,
-          child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            itemCount: pinned.length,
-            separatorBuilder: (context, index) => const SizedBox(width: 8),
-            itemBuilder: (context, i) {
-              final category = pinned[i];
-              return ActionChip(
+        // Chips wrap onto the next row, so every pin is always visible
+        // without scrolling sideways.
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            for (final category in pinned)
+              ActionChip(
                 avatar: Icon(
                   CategoryResolver.categoryIcon(context, category.key),
                   size: 18,
@@ -130,11 +129,12 @@ class HomePinnedCategories extends StatelessWidget {
                 ),
                 label: Text(
                   CategoryResolver.categoryLabel(context, category.key),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
                 onPressed: () => _open(context, category),
-              );
-            },
-          ),
+              ),
+          ],
         ),
       ],
     );
