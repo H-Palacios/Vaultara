@@ -20,7 +20,7 @@ Future<bool> showChangePasswordSheet(BuildContext context) async {
     isDismissible: false,
     enableDrag: false,
     builder: (_) => const ChangePasswordSheet(),
-  );
+    );
   return changed == true;
 }
 
@@ -182,9 +182,8 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
       if (!mounted) return;
       final generic = uiError.message == loc.authErrorSignInFailed;
       setState(
-        () => _currentError = generic
-            ? loc.passwordErrorChangeFailed
-            : uiError.message,
+        () => _currentError =
+            generic ? loc.passwordErrorChangeFailed : uiError.message,
       );
     } catch (_) {
       if (!mounted) return;
@@ -233,9 +232,7 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
 
   Widget _visibilityButton(bool visible, VoidCallback onPressed) {
     return IconButton(
-      tooltip: visible
-          ? AppLocalizations.of(context)!.hidePassword
-          : AppLocalizations.of(context)!.showPassword,
+      tooltip: visible ? AppLocalizations.of(context)!.hidePassword : AppLocalizations.of(context)!.showPassword,
       icon: Icon(
         visible ? Icons.visibility_rounded : Icons.visibility_off_rounded,
       ),
@@ -263,7 +260,10 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
             Text(
               loc.changePasswordTitle,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w800,
+              ),
             ),
             const SizedBox(height: 16),
             TextField(
@@ -344,9 +344,8 @@ class _ChangePasswordSheetState extends State<ChangePasswordSheet> {
               children: [
                 Expanded(
                   child: TextButton(
-                    onPressed: _busy
-                        ? null
-                        : () => Navigator.of(context).pop(false),
+                    onPressed:
+                        _busy ? null : () => Navigator.of(context).pop(false),
                     child: Text(loc.cancel),
                   ),
                 ),

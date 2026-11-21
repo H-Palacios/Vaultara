@@ -323,7 +323,11 @@ class LifePlanItems {
       }
     }
 
-    final builtIn = LifeTasks.forEvent(plan.event, plan.variant);
+    final builtIn = LifeTasks.relevant(
+      LifeTasks.forEvent(plan.event, plan.variant),
+      <String>{for (final item in items) item.record.subcategoryName},
+      known: items.isNotEmpty,
+    );
     final tasks = <LifeTaskItem>[
       for (final task in builtIn.where(LifeTasks.isUrgent))
         LifeTaskItem.builtIn(task, done: plan.tasksDone.contains(task.name)),

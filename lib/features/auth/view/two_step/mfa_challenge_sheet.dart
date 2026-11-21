@@ -52,7 +52,7 @@ class MfaChallenge {
           );
           return light ? Theme(data: AppThemes.light(), child: sheet) : sheet;
         },
-      );
+    );
       if (result is UserCredential) return result;
       if (identical(result, backupCodeUsed)) return _retryAfterBackup(action);
       throw FirebaseAuthException(code: cancelledCode);

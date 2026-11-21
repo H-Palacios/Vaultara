@@ -93,8 +93,8 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
   void _onGraceExpired() {
     if (_authSettled || !mounted) return;
 
-    final waitingForRestore =
-        FirebaseAuth.instance.currentUser == null && (_expectSession ?? true);
+    final waitingForRestore = FirebaseAuth.instance.currentUser == null &&
+        (_expectSession ?? true);
 
     if (waitingForRestore && !_graceExtended) {
       _graceExtended = true;
@@ -280,9 +280,14 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
   }
 
   Widget _splash() => Scaffold(
-    backgroundColor: AppBrand.navy,
-    body: Center(child: Image.asset(AppBrand.logoAsset, width: 140)),
-  );
+        backgroundColor: AppBrand.navy,
+        body: Center(
+          child: Image.asset(
+            AppBrand.logoAsset,
+            width: 140,
+          ),
+        ),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -430,7 +435,9 @@ class _PrivacyCover extends StatelessWidget {
         filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
         child: ColoredBox(
           color: AppBrand.navy.withValues(alpha: 0.94),
-          child: Center(child: Image.asset(AppBrand.logoAsset, width: 120)),
+          child: Center(
+            child: Image.asset(AppBrand.logoAsset, width: 120),
+          ),
         ),
       ),
     );
@@ -450,8 +457,7 @@ class _LeaveFieldOnTapOutside extends StatelessWidget {
     final focus = FocusManager.instance.primaryFocus;
     final ctx = focus?.context;
     if (focus == null || ctx == null) return;
-    final typing =
-        ctx.widget is EditableText ||
+    final typing = ctx.widget is EditableText ||
         ctx.findAncestorWidgetOfExactType<EditableText>() != null;
     if (typing) focus.unfocus();
   }

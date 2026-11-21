@@ -205,18 +205,19 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     );
   }
 
-  void _saveCase() {
+  /// Saving a case number also ticks off reporting it to the police.
+  void _saveCase(LifeTaskItem? police) {
     final loc = AppLocalizations.of(context)!;
     final value = LifePlan.cleanCaseNumber(_case.text);
     if (value == _current.caseNumber) return;
     FocusScope.of(context).unfocus();
-    unawaited(
-      _save(
-        value == null
-            ? _current.copyWith(clearCaseNumber: true)
-            : _current.copyWith(caseNumber: value),
-      ),
-    );
+    var next = value == null
+        ? _current.copyWith(clearCaseNumber: true)
+        : _current.copyWith(caseNumber: value);
+    if (value != null && police != null && !police.done) {
+      next = next.withTask(LifeTask.reportToPolice.name, true);
+    }
+    unawaited(_save(next));
     if (value != null) {
       ActionFeedbackSnackbar.showInfo(context, loc.lostWalletCaseSaved);
     }
@@ -397,6 +398,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     AppLocalizations loc,
     List<LifeRecordItem> block,
     List<LifeTaskItem> urgent,
+    LifeTaskItem? police,
     List<LifeRecordItem> replace,
   ) {
     if (block.isNotEmpty)
@@ -404,6 +406,9 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     for (final task in urgent) {
       if (!task.done)
         return loc.lostWalletNextStep(LifePlanText.task(loc, task));
+    }
+    if (police != null && !police.done) {
+      return loc.lostWalletNextStep(LifePlanText.task(loc, police));
     }
     if (replace.isNotEmpty) {
       return loc.lostWalletNextReplace(replace.first.record.name);
@@ -445,17 +450,33 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
         )
         .toList();
     final urgent = view.tasks.where((t) => t.isUrgent).toList();
-    final steps = view.tasks.where((t) => !t.isUrgent).toList();
+    _hasMedicalCard = view.records.any(
+      (r) => const <String>{
+        'medical_aid_cards',
+        'health_insurances',
+      }.contains(r.record.subcategoryName),
+    );
+    final steps = view.tasks
+        .where((t) => !t.isUrgent && t.task != LifeTask.reportToPolice)
+        .toList();
     final trip = plan.isFinished ? null : _tripNow();
     final phoneToo =
         !plan.isFinished &&
         (stolen || plan.missing.contains(KeptIn.phoneCase)) &&
         !LifePlanRepository.active.any((p) => p.event == LifeEvent.lostPhone);
 
+    LifeTaskItem? police;
+    for (final t in view.tasks) {
+      if (t.task == LifeTask.reportToPolice) police = t;
+    }
+    final policeTask = police;
     final caseCard = _CaseCard(
       controller: _case,
       stolen: stolen,
-      onSave: _saveCase,
+      onSave: () => _saveCase(policeTask),
+      title: policeTask == null ? null : LifePlanText.task(loc, policeTask),
+      done: policeTask?.done ?? false,
+      onToggle: policeTask == null ? null : () => _toggleTask(policeTask),
     );
 
     return ListView(
@@ -507,8 +528,9 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
         _StatusCard(
           plan: plan,
           view: view,
-          next: plan.isFinished ? null : _nextStep(loc, block, urgent, replace),
-          urgent: block.isNotEmpty || urgent.any((t) => !t.done),
+          next: plan.isFinished
+              ? null
+              : _nextStep(loc, block, urgent, policeTask, replace),
           onFound: () => _found(view),
         ),
         if (trip != null) ...[
@@ -561,7 +583,6 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
             title: loc.lostWalletCheck,
             icon: Icons.fact_check_rounded,
             count: check.length,
-            subtitle: loc.lostWalletCheckHint,
           ),
           for (final item in check) _checkRow(item),
         ],
@@ -571,7 +592,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
           icon: Icons.format_list_bulleted_rounded,
           count: steps.where((t) => !t.done).length,
         ),
-        for (final task in steps) _taskRow(task),
+        if (steps.isNotEmpty) _stepList(steps),
         Align(
           alignment: AlignmentDirectional.centerStart,
           child: TextButton.icon(
@@ -887,7 +908,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
                   _recordTitle(item),
                   const SizedBox(height: 4),
                   Text(
-                    LifePlanText.hint(loc, item.rule.action),
+                    _checkHint(loc, item.record.subcategoryName),
                     style: TextStyle(
                       fontSize: 13,
                       height: 1.35,
@@ -945,6 +966,127 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
           ],
         ),
       ),
+    );
+  }
+
+  /// The steps without a deadline, as one checklist card with a line
+  /// between rows instead of a card each.
+  Widget _stepList(List<LifeTaskItem> steps) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    return WalletPanel(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Column(
+        children: [
+          for (var i = 0; i < steps.length; i++) ...[
+            if (i > 0)
+              Divider(
+                height: 1,
+                indent: 52,
+                color: scheme.outlineVariant.withValues(alpha: 0.6),
+              ),
+            InkWell(
+              onTap: () => _toggleTask(steps[i]),
+              child: Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(
+                  12,
+                  10,
+                  steps[i].custom != null ? 0 : 12,
+                  10,
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    WalletDoneCircle(
+                      done: steps[i].done,
+                      label: _taskText(loc, steps[i]),
+                      onTap: () => _toggleTask(steps[i]),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(child: _stepText(steps[i])),
+                    if (steps[i].custom != null)
+                      IconButton(
+                        tooltip: loc.delete,
+                        visualDensity: VisualDensity.compact,
+                        icon: Icon(
+                          Icons.close_rounded,
+                          size: 20,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                        onPressed: () => _removeCustom(steps[i].custom!),
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  /// What to ask for a record under Check these, by what kind of card it
+  /// is. Anything else gets the general question.
+  static String _checkHint(AppLocalizations loc, String group) {
+    switch (group) {
+      case 'medical_aid_cards':
+      case 'health_insurances':
+        return loc.lostWalletHintMedical;
+      case 'gym_memberships':
+      case 'club_memberships':
+        return loc.lostWalletHintMembership;
+      case 'vehicle_insurances':
+      case 'property_insurances':
+      case 'life_insurances':
+      case 'travel_insurances':
+        return loc.lostWalletHintInsurance;
+      case 'firearm_licences':
+        return loc.lostWalletHintFirearm;
+      case 'prescriptions':
+      case 'vaccinations':
+      case 'medical_certificates':
+        return loc.lostWalletHintMedicalPaper;
+      default:
+        return loc.lostWalletCheckHint;
+    }
+  }
+
+  /// A step's text. The other cards step leaves out medical aid when the
+  /// medical aid card is already listed under Check these.
+  String _taskText(AppLocalizations loc, LifeTaskItem item) {
+    if (item.task == LifeTask.walletLoyalty && _hasMedicalCard) {
+      return loc.lifeTaskWalletOtherCardsShort;
+    }
+    return LifePlanText.task(loc, item);
+  }
+
+  bool _hasMedicalCard = false;
+
+  Widget _stepText(LifeTaskItem item) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    final statements = item.task == LifeTask.walletStatements;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 3),
+        Text(
+          _taskText(loc, item),
+          style: TextStyle(
+            fontSize: 14.5,
+            height: 1.35,
+            fontWeight: FontWeight.w600,
+            color: item.done ? scheme.onSurfaceVariant : null,
+            decoration: item.done ? TextDecoration.lineThrough : null,
+          ),
+        ),
+        if (statements && !item.done && !_plan.isFound)
+          WalletNote(
+            icon: Icons.notifications_active_rounded,
+            text: loc.lostWalletStatementNote,
+            colour: scheme.primary,
+          ),
+      ],
     );
   }
 
@@ -1029,14 +1171,10 @@ class _StatusCard extends StatelessWidget {
     required this.view,
     required this.onFound,
     this.next,
-    this.urgent = false,
   });
 
   /// What to do now, or null when everything open is done.
   final String? next;
-
-  /// True while cards still need blocking, to show how long ago it started.
-  final bool urgent;
 
   @override
   Widget build(BuildContext context) {
@@ -1096,19 +1234,17 @@ class _StatusCard extends StatelessWidget {
                         fontWeight: FontWeight.w800,
                       ),
                     ),
-                    if (urgent && !plan.isFinished) ...[
-                      const SizedBox(height: 2),
-                      _SinceStarted(since: plan.createdAt, colour: accent),
-                    ],
-                    const SizedBox(height: 4),
-                    Text(
-                      LifeEvents.body(loc, plan.event, plan.variant),
-                      style: TextStyle(
-                        fontSize: 13,
-                        height: 1.4,
-                        color: scheme.onSurfaceVariant,
+                    if (next == null) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        LifeEvents.body(loc, plan.event, plan.variant),
+                        style: TextStyle(
+                          fontSize: 13,
+                          height: 1.4,
+                          color: scheme.onSurfaceVariant,
+                        ),
                       ),
-                    ),
+                    ],
                   ],
                 ),
               ),
@@ -1142,29 +1278,22 @@ class _StatusCard extends StatelessWidget {
               ),
             ),
           ],
-          const SizedBox(height: 12),
-          Wrap(
-            spacing: 6,
-            runSpacing: 6,
-            children: [
-              _Pill(
-                icon: stolen
-                    ? Icons.front_hand_rounded
-                    : Icons.search_off_rounded,
-                text: LifeEvents.variantLabel(
-                  loc,
-                  plan.variant ?? LifeEvents.variantLost,
-                ),
-              ),
-              for (final place in plan.missing)
-                _Pill(
-                  icon: KeptInText.icon(place),
-                  text: KeptInText.label(loc, place),
-                ),
-              if (plan.caseNumber != null)
-                _Pill(icon: Icons.local_police_rounded, text: plan.caseNumber!),
-            ],
-          ),
+          // The title already says lost or stolen; the places only add
+          // something when more than one thing went missing.
+          if (plan.missing.length > 1) ...[
+            const SizedBox(height: 12),
+            Wrap(
+              spacing: 6,
+              runSpacing: 6,
+              children: [
+                for (final place in plan.missing)
+                  _Pill(
+                    icon: KeptInText.icon(place),
+                    text: KeptInText.label(loc, place),
+                  ),
+              ],
+            ),
+          ],
           if (!plan.isFinished) ...[
             const SizedBox(height: 14),
             SizedBox(
@@ -1177,9 +1306,9 @@ class _StatusCard extends StatelessWidget {
                     borderRadius: BorderRadius.circular(14),
                   ),
                 ),
-                icon: const Icon(Icons.celebration_rounded, size: 20),
+                icon: const Icon(Icons.check_circle_outline_rounded, size: 20),
                 label: Text(
-                  loc.lostWalletFoundButton,
+                  stolen ? loc.lostWalletGotItBack : loc.lostWalletFoundButton,
                   style: const TextStyle(fontWeight: FontWeight.w800),
                 ),
               ),
@@ -1198,10 +1327,18 @@ class _CaseCard extends StatelessWidget {
   final bool stolen;
   final VoidCallback onSave;
 
+  /// The police step this card stands for, with its tick.
+  final String? title;
+  final bool done;
+  final VoidCallback? onToggle;
+
   const _CaseCard({
     required this.controller,
     required this.stolen,
     required this.onSave,
+    this.title,
+    this.done = false,
+    this.onToggle,
   });
 
   @override
@@ -1213,22 +1350,33 @@ class _CaseCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              WalletBadge(
-                icon: Icons.local_police_rounded,
-                colour: stolen ? scheme.error : scheme.primary,
-                size: 38,
-              ),
+              if (onToggle != null)
+                WalletDoneCircle(
+                  done: done,
+                  label: title ?? loc.lostWalletCaseTitle,
+                  onTap: onToggle!,
+                )
+              else
+                WalletBadge(
+                  icon: Icons.local_police_rounded,
+                  colour: stolen ? scheme.error : scheme.primary,
+                  size: 38,
+                ),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      loc.lostWalletCaseTitle,
-                      style: const TextStyle(
+                      title ?? loc.lostWalletCaseTitle,
+                      style: TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.w800,
+                        height: 1.3,
+                        color: done ? scheme.onSurfaceVariant : null,
+                        decoration: done ? TextDecoration.lineThrough : null,
                       ),
                     ),
                     const SizedBox(height: 2),
@@ -1498,64 +1646,6 @@ class _CaseNumberFieldState extends State<_CaseNumberField> {
                 onPressed: _copy,
               ),
       ).copyWith(counterText: ''),
-    );
-  }
-}
-
-/// "Started 25 minutes ago", kept up to date every minute, so it is clear
-/// how much time has passed while cards are still open.
-class _SinceStarted extends StatefulWidget {
-  final DateTime since;
-  final Color colour;
-
-  const _SinceStarted({required this.since, required this.colour});
-
-  @override
-  State<_SinceStarted> createState() => _SinceStartedState();
-}
-
-class _SinceStartedState extends State<_SinceStarted> {
-  Timer? _timer;
-
-  @override
-  void initState() {
-    super.initState();
-    _timer = Timer.periodic(const Duration(minutes: 1), (_) {
-      if (mounted) setState(() {});
-    });
-  }
-
-  @override
-  void dispose() {
-    _timer?.cancel();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final loc = AppLocalizations.of(context)!;
-    final gap = DateTime.now().difference(widget.since);
-    if (gap.isNegative || gap.inDays >= 3) return const SizedBox.shrink();
-    final ago = gap.inHours < 1
-        ? loc.secMinutesAgo(gap.inMinutes < 1 ? 1 : gap.inMinutes)
-        : gap.inDays < 1
-        ? loc.secHoursAgo(gap.inHours)
-        : loc.secDaysAgo(gap.inDays);
-    return Row(
-      children: [
-        Icon(Icons.schedule_rounded, size: 14, color: widget.colour),
-        const SizedBox(width: 4),
-        Flexible(
-          child: Text(
-            loc.lostWalletStarted(ago),
-            style: TextStyle(
-              fontSize: 12.5,
-              fontWeight: FontWeight.w700,
-              color: widget.colour,
-            ),
-          ),
-        ),
-      ],
     );
   }
 }

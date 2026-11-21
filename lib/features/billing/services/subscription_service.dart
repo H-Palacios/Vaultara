@@ -226,11 +226,9 @@ class SubscriptionService {
             case PurchaseCheck.confirmed:
               final bought = tierOfProduct(p.productID);
               if (bought.index > tier.index) tier = bought;
-              keep(
-                p.status == PurchaseStatus.purchased
-                    ? SubscriptionUiEventType.premiumEnabled
-                    : SubscriptionUiEventType.premiumRestored,
-              );
+              keep(p.status == PurchaseStatus.purchased
+                  ? SubscriptionUiEventType.premiumEnabled
+                  : SubscriptionUiEventType.premiumRestored);
             case PurchaseCheck.otherAccount:
               keep(SubscriptionUiEventType.otherAccount);
             case PurchaseCheck.failed:
@@ -257,8 +255,8 @@ class SubscriptionService {
   }
 
   Future<GooglePlayPurchaseDetails?> _currentAndroidSubscription() async {
-    final addition = _iap
-        .getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
+    final addition =
+        _iap.getPlatformAddition<InAppPurchaseAndroidPlatformAddition>();
     final response = await addition.queryPastPurchases();
     if (response.error != null) {
       throw StateError('past-purchases-unavailable');
@@ -275,7 +273,8 @@ class SubscriptionService {
 
   Future<void> openStoreSubscriptions({String? platform}) async {
     final store = platform ?? (Platform.isIOS ? 'ios' : 'android');
-    final url = store == 'ios' ? _appleSubscriptionsUrl : _playSubscriptionsUrl;
+    final url =
+        store == 'ios' ? _appleSubscriptionsUrl : _playSubscriptionsUrl;
     try {
       await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
     } catch (_) {}

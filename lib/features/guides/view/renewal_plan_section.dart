@@ -155,8 +155,7 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
     final holder = holderId == null || holderId.isEmpty
         ? null
         : PeopleRepository.byId(holderId)?.name;
-    final company =
-        record.locked ||
+    final company = record.locked ||
             RecordDetails.providerKind(record.subcategoryName) == null
         ? null
         : record.provider;
@@ -319,7 +318,10 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
                   if (plan.checked != null)
                     Text(
                       loc.coachCheckedOn(
-                        _date(loc, RenewalAppointment.parseDay(plan.checked)!),
+                        _date(
+                          loc,
+                          RenewalAppointment.parseDay(plan.checked)!,
+                        ),
                       ),
                       style: TextStyle(
                         fontSize: 13,
@@ -531,9 +533,7 @@ class _StepRow extends StatelessWidget {
       label: '$number. ${step.text}',
       excludeSemantics: true,
       child: Material(
-        color: next
-            ? scheme.primary.withValues(alpha: 0.06)
-            : Colors.transparent,
+        color: next ? scheme.primary.withValues(alpha: 0.06) : Colors.transparent,
         borderRadius: BorderRadius.circular(14),
         child: InkWell(
           borderRadius: BorderRadius.circular(14),

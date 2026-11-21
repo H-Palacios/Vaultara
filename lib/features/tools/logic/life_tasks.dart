@@ -224,15 +224,43 @@ class LifeTasks {
           if (!stolen) LifeTask.reportToPolice,
           LifeTask.walletFraudAlert,
           LifeTask.walletStatements,
+          // One step for the new bank card everywhere it is used (debit
+          // orders, subscriptions, Google Pay, Apple Pay) and one for every
+          // other card, instead of a step each.
           LifeTask.walletSubscriptions,
-          LifeTask.walletPayApps,
-          LifeTask.walletHealthCard,
-          LifeTask.walletTransport,
           LifeTask.walletLoyalty,
           LifeTask.walletLocks,
           LifeTask.walletInsurance,
         ];
     }
+  }
+
+  /// Groups that prove who someone is, which a thief can use to open
+  /// accounts in their name.
+  static const Set<String> identityGroups = <String>{
+    'passports',
+    'id_cards',
+    'driving_licences',
+    'residence_permits',
+  };
+
+  /// Leaves out steps the saved records already cover or rule out. When
+  /// Vaultara does not know what was inside ([known] is false), every step
+  /// stays, because anything could have been there.
+  static List<LifeTask> relevant(
+    List<LifeTask> tasks,
+    Set<String> groups, {
+    required bool known,
+  }) {
+    final cards = groups.contains('debit_and_credit_cards');
+    final ids = groups.any(identityGroups.contains);
+    return <LifeTask>[
+      for (final task in tasks)
+        if (!(known && task == LifeTask.walletFreezeCards && cards) &&
+            !(known && task == LifeTask.walletFraudAlert && !ids) &&
+            !(known && task == LifeTask.walletSubscriptions && !cards))
+          task,
+    ];
   }
 
   /// Tasks that are urgent the moment the event happens, shown first and
