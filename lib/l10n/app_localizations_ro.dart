@@ -2417,6 +2417,21 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Schimbat în pierdut. Progresul tău rămâne.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Blochează temporar cardurile în aplicația băncii. Le poți debloca dacă îl găsești';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Tot lipsește după o zi? Anulează cardurile blocate și comandă altele noi';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Tot lipsește?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Dacă nu a apărut, anulează cardurile blocate și comandă altele noi.';
+
+  @override
+  String get lostWalletMarkedDone => 'Marcat ca făcut';
+
+  @override
   String get travelSectionJourney => 'Călătoria ta';
 
   @override
@@ -2862,7 +2877,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get startRenewingNow => 'E timpul să începi reînnoirea';
 
   @override
-  String get lostWalletTitle => 'Mi-am pierdut portofelul';
+  String get lostWalletTitle => 'Pierdut sau furat';
 
   @override
   String get lostWalletSubtitle => 'Vezi ce era în el și ce trebuie înlocuit';
@@ -3468,7 +3483,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Cum folosești instrumentele inteligente';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Portofel pierdut, evenimente din viață, pachete de dovezi și linkuri partajate';
+  String get tutorialsSmartToolsSubtitle => 'Pierdut sau furat, evenimente de viață, pachete de dovezi și linkuri partajate';
 
   @override
   String get tutorialsFamilyTitle => 'Familie și persoane';
@@ -7328,13 +7343,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lostLineHelper => 'Salvează-l acum. Numărul e tipărit pe card, deci nu-l vei avea când îți trebuie.';
 
   @override
-  String get lifeEventWalletLost => 'Mi-am pierdut portofelul';
+  String get lifeEventWalletLost => 'Obiecte pierdute';
 
   @override
-  String get lifeEventWalletLostBody => 'Blochează mai întâi cardurile, apoi înlocuiește documentele pe rând.';
+  String get lifeEventWalletLostBody => 'Mai întâi blochează temporar cardurile. Dacă tot lipsește, anulează-le și înlocuiește documentele pe rând.';
 
   @override
-  String get lifeEventWalletStolen => 'Mi s-a furat portofelul';
+  String get lifeEventWalletStolen => 'Obiecte furate';
 
   @override
   String get lifeEventWalletStolenBody => 'Blochează imediat cardurile și raportează furtul. Apoi urmărește conturile pentru fraude.';
@@ -7382,10 +7397,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Dacă erau chei sau adresa ta înăuntru, gândește-te să schimbi încuietorile';
 
   @override
-  String get lifeTaskWalletInsurance => 'Verifică dacă asigurarea acoperă portofelul și banii';
+  String get lifeTaskWalletInsurance => 'Verifică dacă asigurarea acoperă ce s-a luat și banii cash';
 
   @override
-  String get lostWalletHeroTitle => 'Ți-ai pierdut portofelul?';
+  String get lostWalletHeroTitle => 'Ai pierdut ceva sau ți-a fost furat?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara îți arată ce să blochezi întâi, ce să înlocuiești și pe cine să anunți.';
@@ -7397,10 +7412,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lostWalletEditTitle => 'Modifică detaliile';
 
   @override
-  String get lostWalletLostHint => 'Căzut sau uitat undeva';
+  String get lostWalletLostHint => 'A căzut sau a rămas undeva. Blochează temporar întâi, anulează doar dacă tot lipsește';
 
   @override
-  String get lostWalletStolenHint => 'L-a luat cineva';
+  String get lostWalletStolenHint => 'Cineva l-a luat. Blochează tot și raportează';
 
   @override
   String get lostWalletWhatMissing => 'Ce lipsește?';
@@ -7641,7 +7656,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lostWalletStatementTitle => 'Verifică extrasele bancare';
 
   @override
-  String get lostWalletStatementBody => 'Caută plăți pe care nu le-ai făcut de când ai pierdut portofelul.';
+  String get lostWalletStatementBody => 'Caută plăți pe care nu le-ai făcut de când ți-au dispărut lucrurile.';
 
   @override
   String get lostWalletFoundButton => 'L-am găsit';
@@ -7747,7 +7762,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialsSubHousehold => 'Invită-i pe alții să partajeze înregistrări și mementouri';
 
   @override
-  String get tutorialsTitleLostWallet => 'Mi-am pierdut portofelul';
+  String get tutorialsTitleLostWallet => 'Pierdut sau furat';
 
   @override
   String get tutorialsSubLostWallet => 'Pregătește-te acum și acționează rapid dacă se pierde';
@@ -7839,7 +7854,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get whatsNewBadge => 'Nou';
 
   @override
-  String get whatsNewTitle => 'Mi-am pierdut portofelul';
+  String get whatsNewTitle => 'Pierdut sau furat';
 
   @override
   String get whatsNewBody => 'Salvează unde ții cardurile și numărul de blocare al fiecărei bănci. Dacă pierzi portofelul, blochezi totul în câteva minute.';
@@ -7981,7 +7996,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get storyWallet3Title => 'Dacă se pierde';
 
   @override
-  String get storyWallet3Body => 'Deschide „Mi-am pierdut portofelul” și atinge „Pierdut” sau „Furat”. Vaultara listează tot ce era în el.';
+  String get storyWallet3Body => 'Deschide Pierdut sau furat și atinge Pierdut sau Furat. Vaultara arată tot ce era înăuntru.';
 
   @override
   String get storyWallet4Title => 'Blochează cardurile în câteva minute';

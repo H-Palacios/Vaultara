@@ -2423,6 +2423,21 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lostWalletSwitchedLost => 'שונה לאבוד. ההתקדמות שלך נשמרת.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'הקפא את הכרטיסים באפליקציית הבנק. אפשר לבטל את ההקפאה אם זה יימצא';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'עדיין חסר אחרי יום? בטל את הכרטיסים המוקפאים והזמן חדשים';
+
+  @override
+  String get lostWalletStillMissingTitle => 'עדיין חסר?';
+
+  @override
+  String get lostWalletStillMissingBody => 'אם זה לא נמצא, בטל את הכרטיסים המוקפאים והזמן חדשים.';
+
+  @override
+  String get lostWalletMarkedDone => 'סומן כבוצע';
+
+  @override
   String get travelSectionJourney => 'הנסיעה שלך';
 
   @override
@@ -2874,7 +2889,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get startRenewingNow => 'הגיע הזמן להתחיל לחדש';
 
   @override
-  String get lostWalletTitle => 'איבדתי את הארנק';
+  String get lostWalletTitle => 'אבד או נגנב';
 
   @override
   String get lostWalletSubtitle => 'ראה מה היה בו ומה צריך להחליף';
@@ -3467,7 +3482,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'שימוש בכלים חכמים';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'איבדתי את הארנק, אירועי חיים, חבילות הוכחות וקישורים משותפים';
+  String get tutorialsSmartToolsSubtitle => 'אבד או נגנב, אירועי חיים, חבילות הוכחה וקישורים משותפים';
 
   @override
   String get tutorialsFamilyTitle => 'משפחה ואנשים';
@@ -7308,13 +7323,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lostLineHelper => 'שמרו אותו עכשיו. המספר מודפס על הכרטיס, כך שלא יהיה לכם אותו כשתצטרכו.';
 
   @override
-  String get lifeEventWalletLost => 'איבדתי את הארנק';
+  String get lifeEventWalletLost => 'פריטים שאבדו';
 
   @override
-  String get lifeEventWalletLostBody => 'חסמו קודם את הכרטיסים, ואז החליפו את המסמכים אחד אחד.';
+  String get lifeEventWalletLostBody => 'קודם הקפא את הכרטיסים. אם זה עדיין חסר, בטל אותם והחלף את המסמכים אחד אחד.';
 
   @override
-  String get lifeEventWalletStolen => 'הארנק שלי נגנב';
+  String get lifeEventWalletStolen => 'פריטים שנגנבו';
 
   @override
   String get lifeEventWalletStolenBody => 'חסמו את הכרטיסים מיד ודווחו על הגניבה. אחר כך עקבו אחרי החשבונות בגלל הונאות.';
@@ -7362,10 +7377,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lifeTaskWalletLocks => 'אם היו בו מפתחות או הכתובת שלכם, שקלו להחליף מנעולים';
 
   @override
-  String get lifeTaskWalletInsurance => 'בדקו אם הביטוח מכסה את הארנק והמזומן';
+  String get lifeTaskWalletInsurance => 'בדוק אם הביטוח מכסה את מה שנלקח ומזומן';
 
   @override
-  String get lostWalletHeroTitle => 'איבדתם את הארנק?';
+  String get lostWalletHeroTitle => 'איבדת משהו, או שזה נגנב?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara מראה מה לחסום קודם, מה להחליף ולמי לספר.';
@@ -7377,10 +7392,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lostWalletEditTitle => 'שינוי הפרטים';
 
   @override
-  String get lostWalletLostHint => 'נפל או נשכח איפשהו';
+  String get lostWalletLostHint => 'נפל או נשכח איפשהו. קודם הקפא, בטל רק אם זה לא נמצא';
 
   @override
-  String get lostWalletStolenHint => 'מישהו לקח אותו';
+  String get lostWalletStolenHint => 'מישהו לקח את זה. חסום הכול ודווח';
 
   @override
   String get lostWalletWhatMissing => 'מה חסר?';
@@ -7618,7 +7633,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lostWalletStatementTitle => 'בדקו את דפי החשבון';
 
   @override
-  String get lostWalletStatementBody => 'חפשו חיובים שלא ביצעתם מאז שהארנק נעלם.';
+  String get lostWalletStatementBody => 'חפש תשלומים שלא ביצעת מאז שהחפצים שלך נעלמו.';
 
   @override
   String get lostWalletFoundButton => 'מצאתי אותו';
@@ -7723,7 +7738,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialsSubHousehold => 'הזמינו אחרים לשתף רשומות ותזכורות';
 
   @override
-  String get tutorialsTitleLostWallet => 'איבדתי את הארנק';
+  String get tutorialsTitleLostWallet => 'אבד או נגנב';
 
   @override
   String get tutorialsSubLostWallet => 'התכוננו עכשיו ופעלו מהר אם הוא אובד';
@@ -7815,7 +7830,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get whatsNewBadge => 'חדש';
 
   @override
-  String get whatsNewTitle => 'איבדתי את הארנק';
+  String get whatsNewTitle => 'אבד או נגנב';
 
   @override
   String get whatsNewBody => 'שמרו איפה אתם מחזיקים את הכרטיסים ואת מספר החסימה של כל בנק. אם הארנק אובד, חוסמים הכול בתוך דקות.';
@@ -7957,7 +7972,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get storyWallet3Title => 'אם הוא אובד';
 
   @override
-  String get storyWallet3Body => 'פתחו את „איבדתי את הארנק” והקישו על „אבד” או „נגנב”. Vaultara מציגה כל מה שהיה בו.';
+  String get storyWallet3Body => 'פתח את אבד או נגנב והקש על אבד או נגנב. Vaultara מציג את כל מה שהיה בפנים.';
 
   @override
   String get storyWallet4Title => 'חסמו כרטיסים בתוך דקות';

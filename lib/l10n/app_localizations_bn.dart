@@ -2404,6 +2404,21 @@ class AppLocalizationsBn extends AppLocalizations {
   String get lostWalletSwitchedLost => 'হারানো হিসেবে বদলানো হয়েছে। আপনার অগ্রগতি থাকবে।';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'ব্যাংকিং অ্যাপে কার্ড ফ্রিজ করুন। পাওয়া গেলে আবার চালু করতে পারবেন';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'এক দিন পরেও পাননি? ফ্রিজ করা কার্ড বাতিল করে নতুন অর্ডার করুন';
+
+  @override
+  String get lostWalletStillMissingTitle => 'এখনও পাননি?';
+
+  @override
+  String get lostWalletStillMissingBody => 'না পেলে ফ্রিজ করা কার্ড বাতিল করে নতুন অর্ডার করুন।';
+
+  @override
+  String get lostWalletMarkedDone => 'সম্পন্ন হিসেবে চিহ্নিত';
+
+  @override
   String get travelSectionJourney => 'আপনার যাত্রা';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get startRenewingNow => 'নবায়ন শুরু করার সময় হয়েছে';
 
   @override
-  String get lostWalletTitle => 'ওয়ালেট হারিয়ে ফেলেছি';
+  String get lostWalletTitle => 'হারানো বা চুরি';
 
   @override
   String get lostWalletSubtitle => 'ওয়ালেটে কী ছিল ও কী বদলাতে হবে দেখুন';
@@ -3431,7 +3446,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'স্মার্ট টুল ব্যবহার করা';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'হারানো ওয়ালেট, জীবনের পরিবর্তন, প্রমাণ প্যাক ও শেয়ার করা লিংক';
+  String get tutorialsSmartToolsSubtitle => 'হারানো বা চুরি, জীবনের ঘটনা, প্রমাণ প্যাক ও শেয়ার করা লিঙ্ক';
 
   @override
   String get tutorialsFamilyTitle => 'পরিবার ও ব্যক্তি';
@@ -7256,13 +7271,13 @@ class AppLocalizationsBn extends AppLocalizations {
   String get lostLineHelper => 'এখনই সেভ করুন। নম্বরটি কার্ডে ছাপা থাকে, তাই দরকারের সময় আপনার কাছে থাকবে না।';
 
   @override
-  String get lifeEventWalletLost => 'আমার মানিব্যাগ হারিয়ে গেছে';
+  String get lifeEventWalletLost => 'হারানো জিনিস';
 
   @override
-  String get lifeEventWalletLostBody => 'প্রথমে কার্ডগুলো ব্লক করুন, তারপর নথিগুলো একে একে বদলান।';
+  String get lifeEventWalletLostBody => 'প্রথমে আপনার কার্ড ফ্রিজ করুন। এখনও না পেলে বাতিল করুন এবং একে একে নথি বদলান।';
 
   @override
-  String get lifeEventWalletStolen => 'আমার মানিব্যাগ চুরি হয়ে গেছে';
+  String get lifeEventWalletStolen => 'চুরি যাওয়া জিনিস';
 
   @override
   String get lifeEventWalletStolenBody => 'এখনই কার্ডগুলো ব্লক করুন এবং চুরির কথা জানান। তারপর প্রতারণার জন্য অ্যাকাউন্টগুলো নজরে রাখুন।';
@@ -7310,10 +7325,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ভেতরে চাবি বা আপনার ঠিকানা থাকলে তালা বদলানোর কথা ভাবুন';
 
   @override
-  String get lifeTaskWalletInsurance => 'দেখুন আপনার বিমা মানিব্যাগ ও নগদ টাকা কভার করে কি না';
+  String get lifeTaskWalletInsurance => 'যা নেওয়া হয়েছে এবং নগদ টাকা আপনার বিমা কভার করে কিনা দেখুন';
 
   @override
-  String get lostWalletHeroTitle => 'মানিব্যাগ হারিয়েছেন?';
+  String get lostWalletHeroTitle => 'কিছু হারিয়েছেন, নাকি চুরি হয়েছে?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara দেখায় প্রথমে কী ব্লক করবেন, কী বদলাবেন এবং কাকে জানাবেন।';
@@ -7325,10 +7340,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String get lostWalletEditTitle => 'বিবরণ বদলান';
 
   @override
-  String get lostWalletLostHint => 'পড়ে গেছে বা কোথাও রেখে এসেছি';
+  String get lostWalletLostHint => 'পড়ে গেছে বা কোথাও রেখে এসেছেন। আগে ফ্রিজ করুন, না পেলেই বাতিল করুন';
 
   @override
-  String get lostWalletStolenHint => 'কেউ নিয়ে গেছে';
+  String get lostWalletStolenHint => 'কেউ নিয়ে গেছে। সব ব্লক করুন এবং রিপোর্ট করুন';
 
   @override
   String get lostWalletWhatMissing => 'কী নেই?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get lostWalletStatementTitle => 'ব্যাংক স্টেটমেন্ট দেখুন';
 
   @override
-  String get lostWalletStatementBody => 'মানিব্যাগ হারানোর পর থেকে যেসব পেমেন্ট আপনি করেননি সেগুলো খুঁজুন।';
+  String get lostWalletStatementBody => 'জিনিস হারানোর পর থেকে আপনি করেননি এমন পেমেন্ট খুঁজুন।';
 
   @override
   String get lostWalletFoundButton => 'পেয়ে গেছি';
@@ -7671,7 +7686,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tutorialsSubHousehold => 'রেকর্ড ও রিমাইন্ডার শেয়ার করতে অন্যদের আমন্ত্রণ জানান';
 
   @override
-  String get tutorialsTitleLostWallet => 'ওয়ালেট হারিয়ে ফেলেছি';
+  String get tutorialsTitleLostWallet => 'হারানো বা চুরি';
 
   @override
   String get tutorialsSubLostWallet => 'এখনই প্রস্তুত হন, হারালে দ্রুত ব্যবস্থা নিন';
@@ -7762,7 +7777,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get whatsNewBadge => 'নতুন';
 
   @override
-  String get whatsNewTitle => 'ওয়ালেট হারিয়ে ফেলেছি';
+  String get whatsNewTitle => 'হারানো বা চুরি';
 
   @override
   String get whatsNewBody => 'কার্ড কোথায় রাখেন আর প্রতিটি ব্যাংকের ব্লক নম্বর সেভ করুন। মানিব্যাগ হারালে কয়েক মিনিটে সব ব্লক করতে পারবেন।';
@@ -7904,7 +7919,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get storyWallet3Title => 'যদি হারিয়ে যায়';
 
   @override
-  String get storyWallet3Body => '«ওয়ালেট হারিয়ে ফেলেছি» খুলে «হারিয়েছে» বা «চুরি হয়েছে» ট্যাপ করুন। Vaultara ভেতরে যা ছিল সব তালিকা করে।';
+  String get storyWallet3Body => 'হারানো বা চুরি খুলুন এবং হারানো বা চুরি ট্যাপ করুন। Vaultara ভেতরে যা ছিল সব দেখায়।';
 
   @override
   String get storyWallet4Title => 'মিনিটে কার্ড ব্লক করুন';

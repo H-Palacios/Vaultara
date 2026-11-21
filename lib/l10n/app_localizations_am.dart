@@ -2404,6 +2404,21 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lostWalletSwitchedLost => 'ወደ ጠፋ ተቀይሯል። እድገትዎ ይቀመጣል።';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'ካርዶችዎን በባንክ መተግበሪያዎ ያቁሙ። ከተገኘ መልሰው መክፈት ይችላሉ';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'ከአንድ ቀን በኋላም ጠፍቷል? የቆሙትን ካርዶች ይሰርዙ እና አዳዲስ ይዘዙ';
+
+  @override
+  String get lostWalletStillMissingTitle => 'አሁንም ጠፍቷል?';
+
+  @override
+  String get lostWalletStillMissingBody => 'ካልተገኘ የቆሙትን ካርዶች ይሰርዙ እና አዳዲስ ይዘዙ።';
+
+  @override
+  String get lostWalletMarkedDone => 'እንደተጠናቀቀ ምልክት ተደርጓል';
+
+  @override
   String get travelSectionJourney => 'ጉዞዎ';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get startRenewingNow => 'ማደስ የሚጀመርበት ጊዜ ነው';
 
   @override
-  String get lostWalletTitle => 'የኪስ ቦርሳዬ ጠፍቷል';
+  String get lostWalletTitle => 'የጠፋ ወይም የተሰረቀ';
 
   @override
   String get lostWalletSubtitle => 'ምን እንደነበረበት እና ምን መተካት እንዳለበት ይመልከቱ';
@@ -3431,7 +3446,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'ብልህ መሳሪያዎችን መጠቀም';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'የጠፋ የኪስ ቦርሳ፣ የሕይወት ክስተቶች፣ የማስረጃ ጥቅሎች እና የተጋሩ ሊንኮች';
+  String get tutorialsSmartToolsSubtitle => 'የጠፋ ወይም የተሰረቀ፣ የሕይወት ክስተቶች፣ የማረጋገጫ ጥቅሎች እና የተጋሩ አገናኞች';
 
   @override
   String get tutorialsFamilyTitle => 'ቤተሰብ እና ሰዎች';
@@ -7256,13 +7271,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lostLineHelper => 'አሁን ያስቀምጡት። ቁጥሩ በካርዱ ላይ ስለታተመ ሲፈልጉት አይኖርዎትም።';
 
   @override
-  String get lifeEventWalletLost => 'ቦርሳዬ ጠፋ';
+  String get lifeEventWalletLost => 'የጠፉ ዕቃዎች';
 
   @override
-  String get lifeEventWalletLostBody => 'መጀመሪያ ካርዶችዎን ይዝጉ፣ ከዚያ ሰነዶችዎን አንድ በአንድ ይተኩ።';
+  String get lifeEventWalletLostBody => 'መጀመሪያ ካርዶችዎን ያቁሙ። አሁንም ከጠፋ ይሰርዟቸው እና ሰነዶችዎን አንድ በአንድ ይተኩ።';
 
   @override
-  String get lifeEventWalletStolen => 'ቦርሳዬ ተሰረቀ';
+  String get lifeEventWalletStolen => 'የተሰረቁ ዕቃዎች';
 
   @override
   String get lifeEventWalletStolenBody => 'ካርዶችዎን ወዲያውኑ ይዝጉ እና ስርቆቱን ያሳውቁ። ከዚያ መለያዎችዎን ከማጭበርበር ይከታተሉ።';
@@ -7310,10 +7325,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ቁልፎች ወይም አድራሻዎ በውስጡ ከነበሩ ቁልፎቹን መቀየር ያስቡበት';
 
   @override
-  String get lifeTaskWalletInsurance => 'መድንዎ ቦርሳውን እና ጥሬ ገንዘቡን የሚሸፍን መሆኑን ያረጋግጡ';
+  String get lifeTaskWalletInsurance => 'ኢንሹራንስዎ የተወሰደውን እና ጥሬ ገንዘብን እንደሚሸፍን ያረጋግጡ';
 
   @override
-  String get lostWalletHeroTitle => 'ቦርሳዎ ጠፋ?';
+  String get lostWalletHeroTitle => 'የሆነ ነገር ጠፍቷል ወይስ ተሰርቋል?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara መጀመሪያ ምን መዝጋት፣ ምን መተካት እና ለማን መንገር እንዳለብዎ ያሳያል።';
@@ -7325,10 +7340,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lostWalletEditTitle => 'ዝርዝሮቹን ይቀይሩ';
 
   @override
-  String get lostWalletLostHint => 'ወደቀ ወይም የሆነ ቦታ ረሳሁት';
+  String get lostWalletLostHint => 'ወድቋል ወይም የሆነ ቦታ ተረስቷል። መጀመሪያ ያቁሙ፣ ከጠፋ ብቻ ይሰርዙ';
 
   @override
-  String get lostWalletStolenHint => 'አንድ ሰው ወሰደው';
+  String get lostWalletStolenHint => 'አንድ ሰው ወስዶታል። ሁሉንም ያግዱ እና ሪፖርት ያድርጉ';
 
   @override
   String get lostWalletWhatMissing => 'ምን ጠፋ?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lostWalletStatementTitle => 'የባንክ መግለጫዎችዎን ያረጋግጡ';
 
   @override
-  String get lostWalletStatementBody => 'ቦርሳዎ ከጠፋ ጀምሮ ያልፈጸሟቸውን ክፍያዎች ይፈልጉ።';
+  String get lostWalletStatementBody => 'ዕቃዎችዎ ከጠፉ ጀምሮ ያልፈጸሟቸውን ክፍያዎች ይፈልጉ።';
 
   @override
   String get lostWalletFoundButton => 'አገኘሁት';
@@ -7671,7 +7686,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialsSubHousehold => 'ሌሎች መዝገቦችን እና አስታዋሾችን እንዲያጋሩ ይጋብዙ';
 
   @override
-  String get tutorialsTitleLostWallet => 'የኪስ ቦርሳዬ ጠፍቷል';
+  String get tutorialsTitleLostWallet => 'የጠፋ ወይም የተሰረቀ';
 
   @override
   String get tutorialsSubLostWallet => 'አሁን ይዘጋጁ፣ ከጠፋ በፍጥነት ይንቀሳቀሱ';
@@ -7762,7 +7777,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get whatsNewBadge => 'አዲስ';
 
   @override
-  String get whatsNewTitle => 'የኪስ ቦርሳዬ ጠፍቷል';
+  String get whatsNewTitle => 'የጠፋ ወይም የተሰረቀ';
 
   @override
   String get whatsNewBody => 'ካርዶችዎን የሚያስቀምጡበትን ቦታ እና የእያንዳንዱን ባንክ የማገጃ ቁጥር ያስቀምጡ። ቦርሳዎ ከጠፋ ሁሉንም በደቂቃዎች ውስጥ ያግዳሉ።';
@@ -7904,7 +7919,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get storyWallet3Title => 'ከጠፋ';
 
   @override
-  String get storyWallet3Body => '«የኪስ ቦርሳዬ ጠፍቷል»ን ይክፈቱ እና «ጠፋ» ወይም «ተሰረቀ»ን መታ ያድርጉ። Vaultara በውስጡ የነበረውን ሁሉ ይዘረዝራል።';
+  String get storyWallet3Body => 'የጠፋ ወይም የተሰረቀ ይክፈቱ እና ጠፍቷል ወይም ተሰርቋል ይንኩ። Vaultara በውስጡ የነበረውን ሁሉ ይዘረዝራል።';
 
   @override
   String get storyWallet4Title => 'ካርዶችን በደቂቃዎች ያግዱ';

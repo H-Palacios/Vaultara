@@ -2398,6 +2398,21 @@ class AppLocalizationsId extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Diubah menjadi hilang. Progres Anda tetap tersimpan.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Bekukan kartu di aplikasi bank Anda. Anda bisa membukanya lagi jika ditemukan';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Masih hilang setelah sehari? Batalkan kartu yang dibekukan dan pesan yang baru';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Masih hilang?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Jika belum ditemukan, batalkan kartu yang dibekukan dan pesan yang baru.';
+
+  @override
+  String get lostWalletMarkedDone => 'Ditandai selesai';
+
+  @override
   String get travelSectionJourney => 'Perjalanan Anda';
 
   @override
@@ -2829,7 +2844,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get startRenewingNow => 'Saatnya mulai memperpanjang';
 
   @override
-  String get lostWalletTitle => 'Dompet saya hilang';
+  String get lostWalletTitle => 'Hilang atau dicuri';
 
   @override
   String get lostWalletSubtitle => 'Lihat isinya dan apa yang perlu diganti';
@@ -3405,7 +3420,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Menggunakan Alat Pintar';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Dompet hilang, peristiwa hidup, paket bukti, dan tautan yang dibagikan';
+  String get tutorialsSmartToolsSubtitle => 'Hilang atau dicuri, peristiwa hidup, paket bukti, dan tautan bersama';
 
   @override
   String get tutorialsFamilyTitle => 'Keluarga dan Orang';
@@ -7195,13 +7210,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get lostLineHelper => 'Simpan sekarang. Nomornya tercetak di kartu, jadi tidak ada di tangan saat Anda membutuhkannya.';
 
   @override
-  String get lifeEventWalletLost => 'Dompet saya hilang';
+  String get lifeEventWalletLost => 'Barang hilang';
 
   @override
-  String get lifeEventWalletLostBody => 'Blokir kartu Anda dulu, lalu ganti dokumen satu per satu.';
+  String get lifeEventWalletLostBody => 'Bekukan kartu Anda dulu. Jika masih hilang, batalkan dan ganti dokumen Anda satu per satu.';
 
   @override
-  String get lifeEventWalletStolen => 'Dompet saya dicuri';
+  String get lifeEventWalletStolen => 'Barang dicuri';
 
   @override
   String get lifeEventWalletStolenBody => 'Segera blokir kartu dan laporkan pencurian. Lalu pantau rekening Anda dari penipuan.';
@@ -7249,10 +7264,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Jika ada kunci atau alamat Anda di dalamnya, pertimbangkan mengganti kunci';
 
   @override
-  String get lifeTaskWalletInsurance => 'Periksa apakah asuransi Anda menanggung dompet dan uang tunai';
+  String get lifeTaskWalletInsurance => 'Periksa apakah asuransi Anda menanggung barang yang diambil dan uang tunai';
 
   @override
-  String get lostWalletHeroTitle => 'Dompet hilang?';
+  String get lostWalletHeroTitle => 'Kehilangan sesuatu, atau dicuri?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara menunjukkan apa yang harus diblokir dulu, apa yang diganti, dan siapa yang harus diberi tahu.';
@@ -7264,10 +7279,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get lostWalletEditTitle => 'Ubah detail';
 
   @override
-  String get lostWalletLostHint => 'Terjatuh atau tertinggal di suatu tempat';
+  String get lostWalletLostHint => 'Jatuh atau tertinggal di suatu tempat. Bekukan dulu, batalkan hanya jika tetap hilang';
 
   @override
-  String get lostWalletStolenHint => 'Seseorang mengambilnya';
+  String get lostWalletStolenHint => 'Seseorang mengambilnya. Blokir semuanya dan laporkan';
 
   @override
   String get lostWalletWhatMissing => 'Apa yang hilang?';
@@ -7505,7 +7520,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get lostWalletStatementTitle => 'Periksa mutasi rekening';
 
   @override
-  String get lostWalletStatementBody => 'Cari pembayaran yang tidak Anda lakukan sejak dompet hilang.';
+  String get lostWalletStatementBody => 'Cari pembayaran yang tidak Anda lakukan sejak barang Anda hilang.';
 
   @override
   String get lostWalletFoundButton => 'Sudah ketemu';
@@ -7610,7 +7625,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialsSubHousehold => 'Undang orang lain untuk berbagi catatan dan pengingat';
 
   @override
-  String get tutorialsTitleLostWallet => 'Dompet saya hilang';
+  String get tutorialsTitleLostWallet => 'Hilang atau dicuri';
 
   @override
   String get tutorialsSubLostWallet => 'Bersiap sekarang, bertindak cepat jika hilang';
@@ -7700,7 +7715,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get whatsNewBadge => 'Baru';
 
   @override
-  String get whatsNewTitle => 'Dompet saya hilang';
+  String get whatsNewTitle => 'Hilang atau dicuri';
 
   @override
   String get whatsNewBody => 'Simpan tempat Anda menyimpan kartu dan nomor blokir setiap bank. Jika dompet hilang, Anda memblokir semuanya dalam hitungan menit.';
@@ -7842,7 +7857,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get storyWallet3Title => 'Jika hilang';
 
   @override
-  String get storyWallet3Body => 'Buka «Dompet saya hilang» dan ketuk «Hilang» atau «Dicuri». Vaultara menampilkan semua yang ada di dalamnya.';
+  String get storyWallet3Body => 'Buka Hilang atau dicuri lalu ketuk Hilang atau Dicuri. Vaultara menampilkan semua yang ada di dalamnya.';
 
   @override
   String get storyWallet4Title => 'Blokir kartu dalam hitungan menit';

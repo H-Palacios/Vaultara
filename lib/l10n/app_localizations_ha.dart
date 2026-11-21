@@ -2404,6 +2404,21 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lostWalletSwitchedLost => 'An canza zuwa ya ɓace. Ci gabanku yana nan.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Daskarar da katunanku a manhajar bankinku. Kuna iya buɗe su idan ya bayyana';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Har yanzu ya ɓace bayan kwana ɗaya? Soke katunan da aka daskarar kuma ku yi odar sababbi';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Har yanzu ya ɓace?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Idan bai bayyana ba, soke katunan da aka daskarar kuma ku yi odar sababbi.';
+
+  @override
+  String get lostWalletMarkedDone => 'An yi alama a matsayin an gama';
+
+  @override
   String get travelSectionJourney => 'Tafiyarka';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get startRenewingNow => 'Lokaci ya yi da za a fara sabuntawa';
 
   @override
-  String get lostWalletTitle => 'Na yi asarar jakar kuɗina';
+  String get lostWalletTitle => 'Ya ɓace ko an sace';
 
   @override
   String get lostWalletSubtitle => 'Duba abin da ke cikinta da abin da za ka maye gurbinsa';
@@ -3431,7 +3446,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Amfani da kayan aiki masu wayo';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Jakar kuɗi da ta ɓace, abubuwan rayuwa, fakitin shaida da hanyoyin haɗin da aka raba';
+  String get tutorialsSmartToolsSubtitle => 'Ya ɓace ko an sace, abubuwan rayuwa, fakitin shaida da hanyoyin haɗin da aka raba';
 
   @override
   String get tutorialsFamilyTitle => 'Iyali da mutane';
@@ -7256,13 +7271,13 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lostLineHelper => 'Ajiye ta yanzu. Lambar tana kan katin, don haka ba za ka same ta ba lokacin da kake bukata.';
 
   @override
-  String get lifeEventWalletLost => 'Walat ɗina ya ɓace';
+  String get lifeEventWalletLost => 'Abubuwan da suka ɓace';
 
   @override
-  String get lifeEventWalletLostBody => 'Ka toshe katunanka da farko, sannan ka maye gurbin takardunka ɗaya bayan ɗaya.';
+  String get lifeEventWalletLostBody => 'Fara daskarar da katunanku. Idan har yanzu ya ɓace, soke su kuma maye gurbin takardunku ɗaya bayan ɗaya.';
 
   @override
-  String get lifeEventWalletStolen => 'An sace walat ɗina';
+  String get lifeEventWalletStolen => 'Abubuwan da aka sace';
 
   @override
   String get lifeEventWalletStolenBody => 'Ka toshe katunanka nan take kuma ka kai rahoton satar. Sannan ka sa ido kan asusunka don zamba.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Idan akwai makullai ko adireshinka a ciki, ka yi tunanin canza makullai';
 
   @override
-  String get lifeTaskWalletInsurance => 'Ka duba ko inshorarka tana rufe walat da kuɗin hannu';
+  String get lifeTaskWalletInsurance => 'Duba ko inshorarku tana rufe abin da aka ɗauka da kuɗi';
 
   @override
-  String get lostWalletHeroTitle => 'Walat ɗinka ya ɓace?';
+  String get lostWalletHeroTitle => 'Wani abu ya ɓace, ko an sace shi?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara tana nuna abin da za ka toshe da farko, abin da za ka maye gurbinsa da wanda za ka sanar.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lostWalletEditTitle => 'Canza bayanai';
 
   @override
-  String get lostWalletLostHint => 'Ya faɗi ko na manta shi a wani wuri';
+  String get lostWalletLostHint => 'Ya faɗi ko an bar shi wani wuri. Fara daskarewa, soke kawai idan bai bayyana ba';
 
   @override
-  String get lostWalletStolenHint => 'Wani ya ɗauke shi';
+  String get lostWalletStolenHint => 'Wani ya ɗauka. Toshe komai kuma ku kai rahoto';
 
   @override
   String get lostWalletWhatMissing => 'Me ya ɓace?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lostWalletStatementTitle => 'Duba bayanan bankinka';
 
   @override
-  String get lostWalletStatementBody => 'Nemi biyan da ba kai ka yi ba tun lokacin da walat ɗinka ya ɓace.';
+  String get lostWalletStatementBody => 'Nemi biyan kuɗin da ba ku yi ba tun lokacin da abubuwanku suka ɓace.';
 
   @override
   String get lostWalletFoundButton => 'Na same shi';
@@ -7671,7 +7686,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialsSubHousehold => 'Gayyaci wasu don raba bayanai da tunatarwa';
 
   @override
-  String get tutorialsTitleLostWallet => 'Na yi asarar jakar kuɗina';
+  String get tutorialsTitleLostWallet => 'Ya ɓace ko an sace';
 
   @override
   String get tutorialsSubLostWallet => 'Shirya yanzu, ka yi sauri idan ya ɓace';
@@ -7762,7 +7777,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get whatsNewBadge => 'Sabo';
 
   @override
-  String get whatsNewTitle => 'Na yi asarar jakar kuɗina';
+  String get whatsNewTitle => 'Ya ɓace ko an sace';
 
   @override
   String get whatsNewBody => 'Ajiye inda kake ajiye katunanka da lambar dakatarwa ta kowane banki. Idan walat ɗinka ya ɓace, za ka dakatar da komai cikin mintuna.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get storyWallet3Title => 'Idan ya ɓace';
 
   @override
-  String get storyWallet3Body => 'Buɗe «Na yi asarar jakar kuɗina» ka taɓa «Ya ɓace» ko «An sace shi». Vaultara tana jera duk abin da ke ciki.';
+  String get storyWallet3Body => 'Buɗe Ya ɓace ko an sace kuma danna Ya ɓace ko An sace. Vaultara yana nuna duk abin da ke ciki.';
 
   @override
   String get storyWallet4Title => 'Dakatar da katuna cikin mintuna';

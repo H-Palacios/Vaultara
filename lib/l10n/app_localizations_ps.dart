@@ -2404,6 +2404,21 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lostWalletSwitchedLost => 'ورک شوي ته بدل شو. ستاسو پرمختګ ساتل کیږي.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'کارتونه د بانک په اپ کې کنګل کړئ. که پیدا شو بیا یې خلاصولی شئ';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'له یوې ورځې وروسته هم ورک دی؟ کنګل شوي کارتونه لغوه کړئ او نوي وغواړئ';
+
+  @override
+  String get lostWalletStillMissingTitle => 'لا هم ورک دی؟';
+
+  @override
+  String get lostWalletStillMissingBody => 'که پیدا نه شو، کنګل شوي کارتونه لغوه کړئ او نوي وغواړئ.';
+
+  @override
+  String get lostWalletMarkedDone => 'د بشپړ شوي په توګه نښه شو';
+
+  @override
   String get travelSectionJourney => 'ستاسو سفر';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get startRenewingNow => 'د نوي کولو د پیل وخت دی';
 
   @override
-  String get lostWalletTitle => 'زما کیف ورک شو';
+  String get lostWalletTitle => 'ورک یا غلا شوی';
 
   @override
   String get lostWalletSubtitle => 'وګورئ چې په کې څه وو او څه باید بدل شي';
@@ -3431,7 +3446,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'د هوښیارو وسایلو کارول';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'ورک شوی کیف، د ژوند پېښې، د ثبوت کڅوړې او شریک شوي لینکونه';
+  String get tutorialsSmartToolsSubtitle => 'ورک یا غلا شوی، د ژوند پېښې، د ثبوت کڅوړې او شریک شوي لینکونه';
 
   @override
   String get tutorialsFamilyTitle => 'کورنۍ او خلک';
@@ -7256,13 +7271,13 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lostLineHelper => 'اوس یې خوندي کړئ. شمېره په کارت چاپ ده، نو کله چې اړتیا وي له تاسو سره به نه وي.';
 
   @override
-  String get lifeEventWalletLost => 'زما بټوه ورکه شوه';
+  String get lifeEventWalletLost => 'ورک شوي توکي';
 
   @override
-  String get lifeEventWalletLostBody => 'لومړی خپل کارتونه بند کړئ، بیا خپل اسناد یو په یو بدل کړئ.';
+  String get lifeEventWalletLostBody => 'لومړی خپل کارتونه کنګل کړئ. که لا هم ورک وي، لغوه یې کړئ او خپل اسناد یو په یو بدل کړئ.';
 
   @override
-  String get lifeEventWalletStolen => 'زما بټوه غلا شوه';
+  String get lifeEventWalletStolen => 'غلا شوي توکي';
 
   @override
   String get lifeEventWalletStolenBody => 'سمدستي خپل کارتونه بند کړئ او د غلا راپور ورکړئ. بیا خپل حسابونه د درغلۍ لپاره وڅارئ.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lifeTaskWalletLocks => 'که کلي یا ستاسو پته په کې وه، د قلفونو بدلولو په اړه فکر وکړئ';
 
   @override
-  String get lifeTaskWalletInsurance => 'وګورئ چې ستاسو بیمه بټوه او نغدې پیسې پوښي که نه';
+  String get lifeTaskWalletInsurance => 'وګورئ چې ایا بیمه مو وړل شوي توکي او نغدې پیسې پوښي';
 
   @override
-  String get lostWalletHeroTitle => 'بټوه مو ورکه شوې؟';
+  String get lostWalletHeroTitle => 'څه شی مو ورک کړی، که غلا شوی؟';
 
   @override
   String get lostWalletHeroBody => 'Vaultara ښيي چې لومړی څه بند کړئ، څه بدل کړئ او چا ته ووایاست.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lostWalletEditTitle => 'جزییات بدل کړئ';
 
   @override
-  String get lostWalletLostHint => 'ولوېده یا مې چېرته هېره کړه';
+  String get lostWalletLostHint => 'ولوېد یا چېرته پاتې شو. لومړی کنګل کړئ، یوازې که ونه موندل شو لغوه یې کړئ';
 
   @override
-  String get lostWalletStolenHint => 'یو چا واخیسته';
+  String get lostWalletStolenHint => 'چا یووړ. هر څه بند کړئ او راپور ورکړئ';
 
   @override
   String get lostWalletWhatMissing => 'څه ورک دي؟';
@@ -7566,7 +7581,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lostWalletStatementTitle => 'خپل بانکي صورتحسابونه وګورئ';
 
   @override
-  String get lostWalletStatementBody => 'هغه تادیې ولټوئ چې د بټوې له ورکېدو راهیسې مو نه دي کړې.';
+  String get lostWalletStatementBody => 'هغه تادیات ولټوئ چې تاسو د خپلو توکو له ورکېدو راهیسې نه دي کړي.';
 
   @override
   String get lostWalletFoundButton => 'ومې موندله';
@@ -7671,7 +7686,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialsSubHousehold => 'نور د ریکارډونو او یادونو شریکولو ته راوبلئ';
 
   @override
-  String get tutorialsTitleLostWallet => 'زما کیف ورک شو';
+  String get tutorialsTitleLostWallet => 'ورک یا غلا شوی';
 
   @override
   String get tutorialsSubLostWallet => 'اوس چمتو شئ، که ورک شو ژر اقدام وکړئ';
@@ -7762,7 +7777,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get whatsNewBadge => 'نوی';
 
   @override
-  String get whatsNewTitle => 'زما کیف ورک شو';
+  String get whatsNewTitle => 'ورک یا غلا شوی';
 
   @override
   String get whatsNewBody => 'خوندي کړئ چې کارتونه چیرې ساتئ او د هر بانک د بندولو شمېره. که بټوه مو ورکه شي، په څو دقیقو کې هر څه بندوئ.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get storyWallet3Title => 'که ورک شو';
 
   @override
-  String get storyWallet3Body => '«زما کیف ورک شو» پرانیزئ او «ورکه شوې» یا «غلا شوې» ټک کړئ. Vaultara هر هغه څه لیست کوي چې پکې وو.';
+  String get storyWallet3Body => 'ورک یا غلا شوی پرانیزئ او ورک یا غلا شوی وټاکئ. Vaultara هر هغه څه ښیي چې دننه وو.';
 
   @override
   String get storyWallet4Title => 'په دقیقو کې کارتونه بند کړئ';

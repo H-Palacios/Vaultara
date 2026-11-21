@@ -2391,6 +2391,21 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lostWalletSwitchedLost => 'เปลี่ยนเป็นหายแล้ว ความคืบหน้ายังอยู่';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'อายัดบัตรชั่วคราวในแอปธนาคาร ถ้าเจอก็ปลดได้';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'ผ่านไปหนึ่งวันยังไม่เจอ? ยกเลิกบัตรที่อายัดไว้และขอบัตรใหม่';
+
+  @override
+  String get lostWalletStillMissingTitle => 'ยังหาไม่เจอ?';
+
+  @override
+  String get lostWalletStillMissingBody => 'ถ้ายังไม่เจอ ให้ยกเลิกบัตรที่อายัดไว้และขอบัตรใหม่';
+
+  @override
+  String get lostWalletMarkedDone => 'ทำเครื่องหมายว่าเสร็จแล้ว';
+
+  @override
   String get travelSectionJourney => 'การเดินทางของคุณ';
 
   @override
@@ -2822,7 +2837,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get startRenewingNow => 'ถึงเวลาเริ่มต่ออายุ';
 
   @override
-  String get lostWalletTitle => 'กระเป๋าสตางค์หาย';
+  String get lostWalletTitle => 'หายหรือถูกขโมย';
 
   @override
   String get lostWalletSubtitle => 'ดูว่ามีอะไรอยู่ในนั้นและต้องทำใหม่อะไรบ้าง';
@@ -3398,7 +3413,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'การใช้เครื่องมืออัจฉริยะ';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'กระเป๋าสตางค์หาย เหตุการณ์ในชีวิต ชุดเอกสารยืนยัน และลิงก์ที่แชร์';
+  String get tutorialsSmartToolsSubtitle => 'หายหรือถูกขโมย เหตุการณ์ในชีวิต ชุดหลักฐาน และลิงก์ที่แชร์';
 
   @override
   String get tutorialsFamilyTitle => 'ครอบครัวและบุคคล';
@@ -7188,13 +7203,13 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lostLineHelper => 'บันทึกไว้ตอนนี้ เบอร์พิมพ์อยู่บนบัตร จึงไม่มีอยู่กับคุณตอนที่ต้องใช้';
 
   @override
-  String get lifeEventWalletLost => 'กระเป๋าสตางค์ฉันหาย';
+  String get lifeEventWalletLost => 'ของที่หาย';
 
   @override
-  String get lifeEventWalletLostBody => 'อายัดบัตรก่อน แล้วค่อยทำเอกสารใหม่ทีละอย่าง';
+  String get lifeEventWalletLostBody => 'อายัดบัตรชั่วคราวก่อน ถ้ายังหาไม่เจอ ให้ยกเลิกบัตรและทำเอกสารใหม่ทีละอย่าง';
 
   @override
-  String get lifeEventWalletStolen => 'กระเป๋าสตางค์ฉันถูกขโมย';
+  String get lifeEventWalletStolen => 'ของที่ถูกขโมย';
 
   @override
   String get lifeEventWalletStolenBody => 'อายัดบัตรทันทีและแจ้งความเรื่องการขโมย จากนั้นเฝ้าดูบัญชีเผื่อมีการฉ้อโกง';
@@ -7242,10 +7257,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ถ้ามีกุญแจหรือที่อยู่ของคุณอยู่ในนั้น ลองพิจารณาเปลี่ยนกุญแจ';
 
   @override
-  String get lifeTaskWalletInsurance => 'ตรวจสอบว่าประกันของคุณคุ้มครองกระเป๋าสตางค์และเงินสดหรือไม่';
+  String get lifeTaskWalletInsurance => 'ตรวจดูว่าประกันคุ้มครองของที่ถูกเอาไปและเงินสดหรือไม่';
 
   @override
-  String get lostWalletHeroTitle => 'กระเป๋าสตางค์หาย?';
+  String get lostWalletHeroTitle => 'ทำอะไรหาย หรือถูกขโมย?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara แสดงว่าต้องอายัดอะไรก่อน ต้องทำอะไรใหม่ และต้องแจ้งใคร';
@@ -7257,10 +7272,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lostWalletEditTitle => 'เปลี่ยนรายละเอียด';
 
   @override
-  String get lostWalletLostHint => 'ทำตกหรือลืมไว้ที่ไหนสักแห่ง';
+  String get lostWalletLostHint => 'ทำตกหรือลืมไว้ที่ไหนสักแห่ง อายัดชั่วคราวก่อน ยกเลิกเฉพาะเมื่อหาไม่เจอ';
 
   @override
-  String get lostWalletStolenHint => 'มีคนหยิบไป';
+  String get lostWalletStolenHint => 'มีคนเอาไป บล็อกทุกอย่างและแจ้งความ';
 
   @override
   String get lostWalletWhatMissing => 'อะไรหายไปบ้าง?';
@@ -7498,7 +7513,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lostWalletStatementTitle => 'ตรวจสอบรายการเดินบัญชี';
 
   @override
-  String get lostWalletStatementBody => 'มองหาการชำระเงินที่คุณไม่ได้ทำตั้งแต่กระเป๋าสตางค์หาย';
+  String get lostWalletStatementBody => 'ตรวจหารายการชำระเงินที่คุณไม่ได้ทำ ตั้งแต่ของหาย';
 
   @override
   String get lostWalletFoundButton => 'ฉันเจอแล้ว';
@@ -7603,7 +7618,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialsSubHousehold => 'เชิญคนอื่นมาแชร์รายการและการแจ้งเตือน';
 
   @override
-  String get tutorialsTitleLostWallet => 'กระเป๋าสตางค์หาย';
+  String get tutorialsTitleLostWallet => 'หายหรือถูกขโมย';
 
   @override
   String get tutorialsSubLostWallet => 'เตรียมพร้อมตอนนี้ แล้วรีบจัดการถ้าหาย';
@@ -7693,7 +7708,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get whatsNewBadge => 'ใหม่';
 
   @override
-  String get whatsNewTitle => 'กระเป๋าสตางค์หาย';
+  String get whatsNewTitle => 'หายหรือถูกขโมย';
 
   @override
   String get whatsNewBody => 'บันทึกว่าคุณเก็บบัตรไว้ที่ไหนและเบอร์อายัดบัตรของแต่ละธนาคาร ถ้ากระเป๋าสตางค์หาย คุณอายัดทุกอย่างได้ในไม่กี่นาที';
@@ -7835,7 +7850,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get storyWallet3Title => 'ถ้าหาย';
 
   @override
-  String get storyWallet3Body => 'เปิด «กระเป๋าสตางค์หาย» แล้วแตะ «หาย» หรือ «ถูกขโมย» Vaultara จะแสดงทุกอย่างที่อยู่ข้างใน';
+  String get storyWallet3Body => 'เปิด หายหรือถูกขโมย แล้วแตะ หาย หรือ ถูกขโมย Vaultara จะแสดงทุกอย่างที่อยู่ข้างใน';
 
   @override
   String get storyWallet4Title => 'อายัดบัตรในไม่กี่นาที';

@@ -2404,6 +2404,21 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Imebadilishwa kuwa imepotea. Maendeleo yako yanabaki.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Zuia kadi kwa muda kwenye programu ya benki. Unaweza kuziruhusu tena ikipatikana';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Bado haijapatikana baada ya siku moja? Ghairi kadi zilizozuiwa na uagize mpya';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Bado haijapatikana?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ikiwa haijapatikana, ghairi kadi zilizozuiwa na uagize mpya.';
+
+  @override
+  String get lostWalletMarkedDone => 'Imewekwa alama kuwa imekamilika';
+
+  @override
   String get travelSectionJourney => 'Safari yako';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get startRenewingNow => 'Ni wakati wa kuanza kuhuisha';
 
   @override
-  String get lostWalletTitle => 'Nimepoteza pochi yangu';
+  String get lostWalletTitle => 'Imepotea au imeibiwa';
 
   @override
   String get lostWalletSubtitle => 'Ona kilichokuwa ndani yake na cha kubadilisha';
@@ -3431,7 +3446,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Kutumia Zana mahiri';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Pochi iliyopotea, matukio ya maisha, vifurushi vya uthibitisho na viungo vilivyoshirikiwa';
+  String get tutorialsSmartToolsSubtitle => 'Imepotea au imeibiwa, matukio ya maisha, vifurushi vya ushahidi na viungo vilivyoshirikiwa';
 
   @override
   String get tutorialsFamilyTitle => 'Familia na watu';
@@ -7256,13 +7271,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lostLineHelper => 'Ihifadhi sasa. Nambari imechapishwa kwenye kadi, kwa hivyo hutakuwa nayo unapoihitaji.';
 
   @override
-  String get lifeEventWalletLost => 'Nimepoteza pochi yangu';
+  String get lifeEventWalletLost => 'Vitu vilivyopotea';
 
   @override
-  String get lifeEventWalletLostBody => 'Zuia kadi zako kwanza, kisha badilisha hati zako moja baada ya nyingine.';
+  String get lifeEventWalletLostBody => 'Kwanza zuia kadi zako kwa muda. Ikiwa bado haijapatikana, zighairi na ubadilishe hati zako moja moja.';
 
   @override
-  String get lifeEventWalletStolen => 'Pochi yangu imeibiwa';
+  String get lifeEventWalletStolen => 'Vitu vilivyoibiwa';
 
   @override
   String get lifeEventWalletStolenBody => 'Zuia kadi zako mara moja na uripoti wizi. Kisha fuatilia akaunti zako kwa ulaghai.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ikiwa funguo au anwani yako vilikuwemo, fikiria kubadilisha kufuli';
 
   @override
-  String get lifeTaskWalletInsurance => 'Angalia kama bima yako inagharamia pochi na pesa taslimu';
+  String get lifeTaskWalletInsurance => 'Angalia kama bima yako inagharamia kilichochukuliwa na pesa taslimu';
 
   @override
-  String get lostWalletHeroTitle => 'Umepoteza pochi yako?';
+  String get lostWalletHeroTitle => 'Kuna kitu kimepotea, au kimeibiwa?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara inaonyesha cha kuzuia kwanza, cha kubadilisha na nani wa kumjulisha.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lostWalletEditTitle => 'Badilisha maelezo';
 
   @override
-  String get lostWalletLostHint => 'Ilianguka au niliisahau mahali fulani';
+  String get lostWalletLostHint => 'Imeanguka au imeachwa mahali fulani. Kwanza zuia kwa muda, ghairi tu ikiwa haipatikani';
 
   @override
-  String get lostWalletStolenHint => 'Mtu aliichukua';
+  String get lostWalletStolenHint => 'Mtu ameichukua. Zuia kila kitu na uripoti';
 
   @override
   String get lostWalletWhatMissing => 'Nini kinakosekana?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lostWalletStatementTitle => 'Kagua taarifa zako za benki';
 
   @override
-  String get lostWalletStatementBody => 'Tafuta malipo ambayo hukufanya tangu pochi yako ipotee.';
+  String get lostWalletStatementBody => 'Tafuta malipo ambayo hukufanya tangu vitu vyako vipotee.';
 
   @override
   String get lostWalletFoundButton => 'Nimeipata';
@@ -7671,7 +7686,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialsSubHousehold => 'Alika wengine kushiriki rekodi na vikumbusho';
 
   @override
-  String get tutorialsTitleLostWallet => 'Nimepoteza pochi yangu';
+  String get tutorialsTitleLostWallet => 'Imepotea au imeibiwa';
 
   @override
   String get tutorialsSubLostWallet => 'Jiandae sasa, chukua hatua haraka ukiipoteza';
@@ -7762,7 +7777,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get whatsNewBadge => 'Mpya';
 
   @override
-  String get whatsNewTitle => 'Nimepoteza pochi yangu';
+  String get whatsNewTitle => 'Imepotea au imeibiwa';
 
   @override
   String get whatsNewBody => 'Hifadhi mahali unapoweka kadi zako na nambari ya kuzuia ya kila benki. Ukipoteza pochi, unazuia kila kitu ndani ya dakika.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get storyWallet3Title => 'Ikipotea';
 
   @override
-  String get storyWallet3Body => 'Fungua «Nimepoteza pochi yangu» na ugusa «Imepotea» au «Imeibiwa». Vaultara inaorodhesha kila kilichokuwemo.';
+  String get storyWallet3Body => 'Fungua Imepotea au imeibiwa kisha gusa Imepotea au Imeibiwa. Vaultara inaonyesha kila kitu kilichokuwa ndani.';
 
   @override
   String get storyWallet4Title => 'Zuia kadi ndani ya dakika';

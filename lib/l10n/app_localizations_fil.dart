@@ -2402,6 +2402,21 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Pinalitan sa nawala. Nananatili ang iyong progreso.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'I-freeze ang mga card sa banking app mo. Maaari mo itong i-unfreeze kung makita mo';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Nawawala pa rin pagkalipas ng isang araw? Kanselahin ang mga naka-freeze na card at mag-order ng bago';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Nawawala pa rin?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Kung hindi pa lumalabas, kanselahin ang mga naka-freeze na card at mag-order ng bago.';
+
+  @override
+  String get lostWalletMarkedDone => 'Minarkahang tapos';
+
+  @override
   String get travelSectionJourney => 'Ang iyong biyahe';
 
   @override
@@ -2838,7 +2853,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get startRenewingNow => 'Oras na para simulan ang pag-renew';
 
   @override
-  String get lostWalletTitle => 'Nawala ang wallet ko';
+  String get lostWalletTitle => 'Nawala o ninakaw';
 
   @override
   String get lostWalletSubtitle => 'Tingnan kung ano ang laman nito at kung ano ang papalitan';
@@ -3429,7 +3444,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Paggamit ng mga smart tool';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Nawalang wallet, mga pagbabago sa buhay, pakete ng patunay at mga ibinahaging link';
+  String get tutorialsSmartToolsSubtitle => 'Nawala o ninakaw, mga pangyayari sa buhay, proof pack at mga ibinahaging link';
 
   @override
   String get tutorialsFamilyTitle => 'Pamilya at mga tao';
@@ -7250,13 +7265,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lostLineHelper => 'I-save ito ngayon. Nakaimprenta ang numero sa card, kaya wala ito sa iyo kapag kailangan mo.';
 
   @override
-  String get lifeEventWalletLost => 'Nawala ang wallet ko';
+  String get lifeEventWalletLost => 'Mga nawalang gamit';
 
   @override
-  String get lifeEventWalletLostBody => 'I-block muna ang mga card mo, saka palitan ang mga dokumento isa-isa.';
+  String get lifeEventWalletLostBody => 'I-freeze muna ang iyong mga card. Kung nawawala pa rin, kanselahin ang mga ito at palitan ang mga dokumento isa-isa.';
 
   @override
-  String get lifeEventWalletStolen => 'Ninakaw ang wallet ko';
+  String get lifeEventWalletStolen => 'Mga ninakaw na gamit';
 
   @override
   String get lifeEventWalletStolenBody => 'I-block agad ang mga card mo at i-report ang pagnanakaw. Pagkatapos, bantayan ang mga account mo laban sa panloloko.';
@@ -7304,10 +7319,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Kung may susi o address mo sa loob, pag-isipang palitan ang mga kandado';
 
   @override
-  String get lifeTaskWalletInsurance => 'Alamin kung sakop ng insurance mo ang wallet at cash';
+  String get lifeTaskWalletInsurance => 'Tingnan kung sakop ng insurance mo ang kinuha at ang anumang cash';
 
   @override
-  String get lostWalletHeroTitle => 'Nawala ang wallet mo?';
+  String get lostWalletHeroTitle => 'May nawala ba, o ninakaw ito?';
 
   @override
   String get lostWalletHeroBody => 'Ipinapakita ng Vaultara kung ano ang unang iba-block, ano ang papalitan, at sino ang sasabihan.';
@@ -7319,10 +7334,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lostWalletEditTitle => 'Baguhin ang detalye';
 
   @override
-  String get lostWalletLostHint => 'Nahulog o naiwan kung saan';
+  String get lostWalletLostHint => 'Nahulog o naiwan kung saan. I-freeze muna, kanselahin lang kung hindi makita';
 
   @override
-  String get lostWalletStolenHint => 'May kumuha nito';
+  String get lostWalletStolenHint => 'May kumuha nito. I-block ang lahat at i-report ito';
 
   @override
   String get lostWalletWhatMissing => 'Ano ang nawawala?';
@@ -7560,7 +7575,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lostWalletStatementTitle => 'Suriin ang bank statement mo';
 
   @override
-  String get lostWalletStatementBody => 'Hanapin ang mga bayad na hindi mo ginawa mula nang mawala ang wallet mo.';
+  String get lostWalletStatementBody => 'Hanapin ang mga bayad na hindi mo ginawa mula nang mawala ang iyong mga gamit.';
 
   @override
   String get lostWalletFoundButton => 'Nahanap ko na';
@@ -7665,7 +7680,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialsSubHousehold => 'Imbitahan ang iba na magbahagi ng record at paalala';
 
   @override
-  String get tutorialsTitleLostWallet => 'Nawala ang wallet ko';
+  String get tutorialsTitleLostWallet => 'Nawala o ninakaw';
 
   @override
   String get tutorialsSubLostWallet => 'Maghanda ngayon, kumilos agad kapag nawala';
@@ -7756,7 +7771,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get whatsNewBadge => 'Bago';
 
   @override
-  String get whatsNewTitle => 'Nawala ang wallet ko';
+  String get whatsNewTitle => 'Nawala o ninakaw';
 
   @override
   String get whatsNewBody => 'I-save kung saan mo itinatago ang mga card at ang block number ng bawat bangko. Kapag nawala ang wallet, mabo-block mo ang lahat sa loob ng ilang minuto.';
@@ -7898,7 +7913,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get storyWallet3Title => 'Kapag nawala';
 
   @override
-  String get storyWallet3Body => 'Buksan ang «Nawala ang wallet ko» at i-tap ang «Nawala» o «Ninakaw». Ililista ng Vaultara ang lahat ng laman nito.';
+  String get storyWallet3Body => 'Buksan ang Nawala o ninakaw at i-tap ang Nawala o Ninakaw. Ipinapakita ng Vaultara ang lahat ng nasa loob.';
 
   @override
   String get storyWallet4Title => 'I-block ang mga card sa loob ng ilang minuto';

@@ -2425,6 +2425,21 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Pakeista į pamestą. Jūsų pažanga išlieka.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Užšaldykite korteles banko programėlėje. Jei rasite, galėsite atšaldyti';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Vis dar nerasta po dienos? Atšaukite užšaldytas korteles ir užsisakykite naujas';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Vis dar nerasta?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Jei nerasta, atšaukite užšaldytas korteles ir užsisakykite naujas.';
+
+  @override
+  String get lostWalletMarkedDone => 'Pažymėta kaip atlikta';
+
+  @override
   String get travelSectionJourney => 'Jūsų kelionė';
 
   @override
@@ -2879,7 +2894,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get startRenewingNow => 'Metas pradėti atnaujinti';
 
   @override
-  String get lostWalletTitle => 'Pamečiau piniginę';
+  String get lostWalletTitle => 'Pamesta ar pavogta';
 
   @override
   String get lostWalletSubtitle => 'Pažiūrėkite, kas joje buvo ir ką reikia pakeisti';
@@ -3500,7 +3515,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Išmaniųjų įrankių naudojimas';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Pamesta piniginė, gyvenimo įvykiai, įrodymų paketai ir pasidalintos nuorodos';
+  String get tutorialsSmartToolsSubtitle => 'Pamesta ar pavogta, gyvenimo įvykiai, įrodymų paketai ir bendrinamos nuorodos';
 
   @override
   String get tutorialsFamilyTitle => 'Šeima ir asmenys';
@@ -7395,13 +7410,13 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lostLineHelper => 'Išsaugokite jį dabar. Numeris yra ant kortelės, todėl prireikus jo neturėsite.';
 
   @override
-  String get lifeEventWalletLost => 'Pamečiau piniginę';
+  String get lifeEventWalletLost => 'Pamesti daiktai';
 
   @override
-  String get lifeEventWalletLostBody => 'Pirmiausia užblokuokite korteles, tada po vieną pakeiskite dokumentus.';
+  String get lifeEventWalletLostBody => 'Pirmiausia užšaldykite korteles. Jei vis dar nerasta, atšaukite jas ir po vieną pakeiskite dokumentus.';
 
   @override
-  String get lifeEventWalletStolen => 'Pavogė mano piniginę';
+  String get lifeEventWalletStolen => 'Pavogti daiktai';
 
   @override
   String get lifeEventWalletStolenBody => 'Iškart užblokuokite korteles ir praneškite apie vagystę. Tada stebėkite sąskaitas dėl sukčiavimo.';
@@ -7449,10 +7464,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Jei ten buvo raktai ar jūsų adresas, apsvarstykite spynų keitimą';
 
   @override
-  String get lifeTaskWalletInsurance => 'Patikrinkite, ar draudimas apima piniginę ir grynuosius';
+  String get lifeTaskWalletInsurance => 'Patikrinkite, ar draudimas padengia tai, kas paimta, ir grynuosius pinigus';
 
   @override
-  String get lostWalletHeroTitle => 'Pametėte piniginę?';
+  String get lostWalletHeroTitle => 'Kažką pametėte, ar tai pavogė?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara parodo, ką blokuoti pirmiausia, ką pakeisti ir kam pranešti.';
@@ -7464,10 +7479,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lostWalletEditTitle => 'Keisti duomenis';
 
   @override
-  String get lostWalletLostHint => 'Iškrito ar kažkur palikau';
+  String get lostWalletLostHint => 'Iškrito ar kažkur paliktas. Pirmiausia užšaldykite, atšaukite tik jei nerandama';
 
   @override
-  String get lostWalletStolenHint => 'Kažkas paėmė';
+  String get lostWalletStolenHint => 'Kažkas paėmė. Užblokuokite viską ir praneškite';
 
   @override
   String get lostWalletWhatMissing => 'Ko trūksta?';
@@ -7705,7 +7720,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lostWalletStatementTitle => 'Patikrinkite banko išrašus';
 
   @override
-  String get lostWalletStatementBody => 'Ieškokite mokėjimų, kurių neatlikote nuo tada, kai dingo piniginė.';
+  String get lostWalletStatementBody => 'Ieškokite mokėjimų, kurių neatlikote nuo tada, kai dingo jūsų daiktai.';
 
   @override
   String get lostWalletFoundButton => 'Radau';
@@ -7810,7 +7825,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialsSubHousehold => 'Pakvieskite kitus bendrinti įrašus ir priminimus';
 
   @override
-  String get tutorialsTitleLostWallet => 'Pamečiau piniginę';
+  String get tutorialsTitleLostWallet => 'Pamesta ar pavogta';
 
   @override
   String get tutorialsSubLostWallet => 'Pasiruoškite dabar ir greitai veikite, jei jis dings';
@@ -7903,7 +7918,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get whatsNewBadge => 'Nauja';
 
   @override
-  String get whatsNewTitle => 'Pamečiau piniginę';
+  String get whatsNewTitle => 'Pamesta ar pavogta';
 
   @override
   String get whatsNewBody => 'Išsaugokite, kur laikote korteles, ir kiekvieno banko blokavimo numerį. Pametę piniginę, viską užblokuosite per kelias minutes.';
@@ -8045,7 +8060,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get storyWallet3Title => 'Jei jis dingo';
 
   @override
-  String get storyWallet3Body => 'Atidarykite „Pamečiau piniginę“ ir palieskite „Pamesta“ arba „Pavogta“. Vaultara išvardija viską, kas joje buvo.';
+  String get storyWallet3Body => 'Atidarykite Pamesta ar pavogta ir bakstelėkite Pamesta arba Pavogta. Vaultara parodo viską, kas buvo viduje.';
 
   @override
   String get storyWallet4Title => 'Užblokuokite korteles per minutes';

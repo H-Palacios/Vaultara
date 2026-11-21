@@ -2403,6 +2403,21 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lostWalletSwitchedLost => '已改为丢失。你的进度会保留。';
 
   @override
+  String get lifeTaskWalletFreezeLost => '在银行 App 中冻结你的卡。找到后可以解冻';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => '一天后还没找到？注销已冻结的卡并申请新卡';
+
+  @override
+  String get lostWalletStillMissingTitle => '还没找到？';
+
+  @override
+  String get lostWalletStillMissingBody => '如果还没找到，请注销已冻结的卡并申请新卡。';
+
+  @override
+  String get lostWalletMarkedDone => '已标记为完成';
+
+  @override
   String get travelSectionJourney => '你的行程';
 
   @override
@@ -2834,7 +2849,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get startRenewingNow => '该开始续期了';
 
   @override
-  String get lostWalletTitle => '钱包丢了';
+  String get lostWalletTitle => '丢失或被盗';
 
   @override
   String get lostWalletSubtitle => '查看钱包里有什么，以及需要补办什么';
@@ -3410,7 +3425,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialsSmartToolsTitle => '使用智能工具';
 
   @override
-  String get tutorialsSmartToolsSubtitle => '钱包丢了、人生事件、证明材料包和已分享的链接';
+  String get tutorialsSmartToolsSubtitle => '丢失或被盗、人生大事、证明材料包和共享链接';
 
   @override
   String get tutorialsFamilyTitle => '家庭和成员';
@@ -7200,13 +7215,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lostLineHelper => '现在就保存。号码印在卡上，需要时就不在手边了。';
 
   @override
-  String get lifeEventWalletLost => '我的钱包丢了';
+  String get lifeEventWalletLost => '丢失的物品';
 
   @override
-  String get lifeEventWalletLostBody => '先冻结银行卡，再逐一补办证件。';
+  String get lifeEventWalletLostBody => '先冻结你的卡。如果还是找不到，再注销并逐一补办证件。';
 
   @override
-  String get lifeEventWalletStolen => '我的钱包被偷了';
+  String get lifeEventWalletStolen => '被盗的物品';
 
   @override
   String get lifeEventWalletStolenBody => '立即冻结银行卡并报案。之后留意账户是否有欺诈。';
@@ -7254,10 +7269,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lifeTaskWalletLocks => '如果里面有钥匙或你的地址，考虑换锁';
 
   @override
-  String get lifeTaskWalletInsurance => '确认你的保险是否涵盖钱包和现金';
+  String get lifeTaskWalletInsurance => '确认保险是否赔付被拿走的物品和现金';
 
   @override
-  String get lostWalletHeroTitle => '钱包丢了？';
+  String get lostWalletHeroTitle => '东西丢了，还是被偷了？';
 
   @override
   String get lostWalletHeroBody => 'Vaultara 告诉你先冻结什么、补办什么、通知谁。';
@@ -7269,10 +7284,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lostWalletEditTitle => '更改详情';
 
   @override
-  String get lostWalletLostHint => '掉了或落在某处';
+  String get lostWalletLostHint => '掉了或落在某处。先冻结，找不到再注销';
 
   @override
-  String get lostWalletStolenHint => '被人拿走了';
+  String get lostWalletStolenHint => '被人拿走了。全部冻结并报案';
 
   @override
   String get lostWalletWhatMissing => '少了什么？';
@@ -7510,7 +7525,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lostWalletStatementTitle => '检查银行账单';
 
   @override
-  String get lostWalletStatementBody => '查找钱包丢失后不是你本人的消费。';
+  String get lostWalletStatementBody => '查找自物品丢失以来不是你本人进行的付款。';
 
   @override
   String get lostWalletFoundButton => '我找到了';
@@ -7615,7 +7630,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialsSubHousehold => '邀请他人共享记录和提醒';
 
   @override
-  String get tutorialsTitleLostWallet => '钱包丢了';
+  String get tutorialsTitleLostWallet => '丢失或被盗';
 
   @override
   String get tutorialsSubLostWallet => '现在做好准备，丢失时迅速行动';
@@ -7705,7 +7720,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get whatsNewBadge => '新功能';
 
   @override
-  String get whatsNewTitle => '钱包丢了';
+  String get whatsNewTitle => '丢失或被盗';
 
   @override
   String get whatsNewBody => '保存你放卡的位置以及每家银行的挂失电话。钱包丢了，几分钟就能全部冻结。';
@@ -7847,7 +7862,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get storyWallet3Title => '如果丢失';
 
   @override
-  String get storyWallet3Body => '打开“钱包丢了”，轻点“丢失”或“被盗”。Vaultara 会列出里面的所有物品。';
+  String get storyWallet3Body => '打开“丢失或被盗”，点按“丢失”或“被盗”。Vaultara 会列出里面的所有东西。';
 
   @override
   String get storyWallet4Title => '几分钟冻结卡片';
@@ -12071,6 +12086,21 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lostWalletSwitchedLost => '已改为丢失。你的进度会保留。';
 
   @override
+  String get lifeTaskWalletFreezeLost => '在银行 App 中冻结你的卡。找到后可以解冻';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => '一天后还没找到？注销已冻结的卡并申请新卡';
+
+  @override
+  String get lostWalletStillMissingTitle => '还没找到？';
+
+  @override
+  String get lostWalletStillMissingBody => '如果还没找到，请注销已冻结的卡并申请新卡。';
+
+  @override
+  String get lostWalletMarkedDone => '已标记为完成';
+
+  @override
   String get travelSectionJourney => '你的行程';
 
   @override
@@ -12502,7 +12532,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get startRenewingNow => '该开始续期了';
 
   @override
-  String get lostWalletTitle => '我丢了钱包';
+  String get lostWalletTitle => '丢失或被盗';
 
   @override
   String get lostWalletSubtitle => '查看里面有什么，以及需要补办什么';
@@ -13078,7 +13108,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialsSmartToolsTitle => '使用智能工具';
 
   @override
-  String get tutorialsSmartToolsSubtitle => '丢失钱包、人生大事、证明材料包和已分享的链接';
+  String get tutorialsSmartToolsSubtitle => '丢失或被盗、人生大事、证明材料包和共享链接';
 
   @override
   String get tutorialsFamilyTitle => '家庭和成员';
@@ -16868,13 +16898,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lostLineHelper => '现在就保存。号码印在卡上，需要时就不在手边了。';
 
   @override
-  String get lifeEventWalletLost => '我的钱包丢了';
+  String get lifeEventWalletLost => '丢失的物品';
 
   @override
-  String get lifeEventWalletLostBody => '先冻结银行卡，再逐一补办证件。';
+  String get lifeEventWalletLostBody => '先冻结你的卡。如果还是找不到，再注销并逐一补办证件。';
 
   @override
-  String get lifeEventWalletStolen => '我的钱包被偷了';
+  String get lifeEventWalletStolen => '被盗的物品';
 
   @override
   String get lifeEventWalletStolenBody => '立即冻结银行卡并报案。之后留意账户是否有欺诈。';
@@ -16922,10 +16952,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lifeTaskWalletLocks => '如果里面有钥匙或你的地址，考虑换锁';
 
   @override
-  String get lifeTaskWalletInsurance => '确认你的保险是否涵盖钱包和现金';
+  String get lifeTaskWalletInsurance => '确认保险是否赔付被拿走的物品和现金';
 
   @override
-  String get lostWalletHeroTitle => '钱包丢了？';
+  String get lostWalletHeroTitle => '东西丢了，还是被偷了？';
 
   @override
   String get lostWalletHeroBody => 'Vaultara 告诉你先冻结什么、补办什么、通知谁。';
@@ -16937,10 +16967,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lostWalletEditTitle => '更改详情';
 
   @override
-  String get lostWalletLostHint => '掉了或落在某处';
+  String get lostWalletLostHint => '掉了或落在某处。先冻结，找不到再注销';
 
   @override
-  String get lostWalletStolenHint => '被人拿走了';
+  String get lostWalletStolenHint => '被人拿走了。全部冻结并报案';
 
   @override
   String get lostWalletWhatMissing => '少了什么？';
@@ -17178,7 +17208,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lostWalletStatementTitle => '检查银行账单';
 
   @override
-  String get lostWalletStatementBody => '查找钱包丢失后不是你本人的消费。';
+  String get lostWalletStatementBody => '查找自物品丢失以来不是你本人进行的付款。';
 
   @override
   String get lostWalletFoundButton => '我找到了';
@@ -17283,7 +17313,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialsSubHousehold => '邀请他人共享记录和提醒';
 
   @override
-  String get tutorialsTitleLostWallet => '我丢了钱包';
+  String get tutorialsTitleLostWallet => '丢失或被盗';
 
   @override
   String get tutorialsSubLostWallet => '现在做好准备，丢失时迅速行动';
@@ -17373,7 +17403,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get whatsNewBadge => '新功能';
 
   @override
-  String get whatsNewTitle => '我丢了钱包';
+  String get whatsNewTitle => '丢失或被盗';
 
   @override
   String get whatsNewBody => '保存你放卡的位置以及每家银行的挂失电话。钱包丢了，几分钟就能全部冻结。';
@@ -17515,7 +17545,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get storyWallet3Title => '如果丢失';
 
   @override
-  String get storyWallet3Body => '打开“我丢了钱包”，轻点“丢失”或“被盗”。Vaultara 会列出里面的所有物品。';
+  String get storyWallet3Body => '打开“丢失或被盗”，点按“丢失”或“被盗”。Vaultara 会列出里面的所有东西。';
 
   @override
   String get storyWallet4Title => '几分钟冻结卡片';
@@ -21739,6 +21769,21 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lostWalletSwitchedLost => '已改為遺失。你的進度會保留。';
 
   @override
+  String get lifeTaskWalletFreezeLost => '在銀行 App 中凍結你的卡。找到後可以解凍';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => '一天後還沒找到？停用已凍結的卡並申請新卡';
+
+  @override
+  String get lostWalletStillMissingTitle => '還沒找到？';
+
+  @override
+  String get lostWalletStillMissingBody => '如果還沒找到，請停用已凍結的卡並申請新卡。';
+
+  @override
+  String get lostWalletMarkedDone => '已標示為完成';
+
+  @override
   String get travelSectionJourney => '你的行程';
 
   @override
@@ -22170,7 +22215,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get startRenewingNow => '該開始續期了';
 
   @override
-  String get lostWalletTitle => '我弄丟了錢包';
+  String get lostWalletTitle => '遺失或遭竊';
 
   @override
   String get lostWalletSubtitle => '查看錢包裡有什麼、需要補辦什麼';
@@ -22746,7 +22791,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialsSmartToolsTitle => '使用智慧工具';
 
   @override
-  String get tutorialsSmartToolsSubtitle => '弄丟錢包、人生大事、證明資料包和已分享的連結';
+  String get tutorialsSmartToolsSubtitle => '遺失或遭竊、人生大事、證明資料包和共用連結';
 
   @override
   String get tutorialsFamilyTitle => '家人與成員';
@@ -26536,13 +26581,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lostLineHelper => '現在就儲存。號碼印在卡片上，需要時就不在手邊了。';
 
   @override
-  String get lifeEventWalletLost => '我的錢包掉了';
+  String get lifeEventWalletLost => '遺失的物品';
 
   @override
-  String get lifeEventWalletLostBody => '先停用卡片，再逐一補辦證件。';
+  String get lifeEventWalletLostBody => '先凍結你的卡。如果還是找不到，再停用並逐一補辦證件。';
 
   @override
-  String get lifeEventWalletStolen => '我的錢包被偷了';
+  String get lifeEventWalletStolen => '遭竊的物品';
 
   @override
   String get lifeEventWalletStolenBody => '立即停用卡片並報案。之後留意帳戶是否有盜刷。';
@@ -26590,10 +26635,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lifeTaskWalletLocks => '如果裡面有鑰匙或你的地址，考慮換鎖';
 
   @override
-  String get lifeTaskWalletInsurance => '確認你的保險是否涵蓋錢包和現金';
+  String get lifeTaskWalletInsurance => '確認保險是否理賠被拿走的物品和現金';
 
   @override
-  String get lostWalletHeroTitle => '錢包掉了？';
+  String get lostWalletHeroTitle => '東西遺失了，還是被偷了？';
 
   @override
   String get lostWalletHeroBody => 'Vaultara 告訴你先停用什麼、補辦什麼、通知誰。';
@@ -26605,10 +26650,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lostWalletEditTitle => '變更詳細資料';
 
   @override
-  String get lostWalletLostHint => '掉了或忘在某處';
+  String get lostWalletLostHint => '掉了或忘在某處。先凍結，找不到再停用';
 
   @override
-  String get lostWalletStolenHint => '被人拿走了';
+  String get lostWalletStolenHint => '被人拿走了。全部停用並報案';
 
   @override
   String get lostWalletWhatMissing => '少了什麼？';
@@ -26846,7 +26891,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lostWalletStatementTitle => '檢查銀行對帳單';
 
   @override
-  String get lostWalletStatementBody => '查找錢包遺失後不是你本人的消費。';
+  String get lostWalletStatementBody => '查看自物品遺失以來不是你本人進行的付款。';
 
   @override
   String get lostWalletFoundButton => '我找到了';
@@ -26951,7 +26996,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialsSubHousehold => '邀請他人共享記錄與提醒';
 
   @override
-  String get tutorialsTitleLostWallet => '我弄丟了錢包';
+  String get tutorialsTitleLostWallet => '遺失或遭竊';
 
   @override
   String get tutorialsSubLostWallet => '現在做好準備，遺失時迅速行動';
@@ -27041,7 +27086,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get whatsNewBadge => '新功能';
 
   @override
-  String get whatsNewTitle => '我弄丟了錢包';
+  String get whatsNewTitle => '遺失或遭竊';
 
   @override
   String get whatsNewBody => '儲存你放卡片的位置以及每家銀行的掛失電話。錢包掉了，幾分鐘就能全部停用。';
@@ -27183,7 +27228,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get storyWallet3Title => '如果遺失';
 
   @override
-  String get storyWallet3Body => '開啟「我弄丟了錢包」，輕觸「遺失」或「被偷」。Vaultara 會列出裡面的所有物品。';
+  String get storyWallet3Body => '開啟「遺失或遭竊」，點按「遺失」或「遭竊」。Vaultara 會列出裡面的所有東西。';
 
   @override
   String get storyWallet4Title => '幾分鐘停用卡片';

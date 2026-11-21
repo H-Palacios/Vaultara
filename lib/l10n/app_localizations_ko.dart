@@ -2403,6 +2403,21 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lostWalletSwitchedLost => '분실로 변경했습니다. 진행 상황은 유지됩니다.';
 
   @override
+  String get lifeTaskWalletFreezeLost => '은행 앱에서 카드를 일시 정지하세요. 찾으면 다시 풀 수 있습니다';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => '하루가 지나도 못 찾았나요? 정지한 카드를 해지하고 새 카드를 신청하세요';
+
+  @override
+  String get lostWalletStillMissingTitle => '아직 못 찾았나요?';
+
+  @override
+  String get lostWalletStillMissingBody => '찾지 못했다면 정지한 카드를 해지하고 새 카드를 신청하세요.';
+
+  @override
+  String get lostWalletMarkedDone => '완료로 표시했습니다';
+
+  @override
   String get travelSectionJourney => '나의 여정';
 
   @override
@@ -2834,7 +2849,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get startRenewingNow => '갱신을 시작할 때입니다';
 
   @override
-  String get lostWalletTitle => '지갑 분실';
+  String get lostWalletTitle => '분실 또는 도난';
 
   @override
   String get lostWalletSubtitle => '지갑에 무엇이 있었는지와 교체할 항목을 확인합니다';
@@ -3410,7 +3425,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialsSmartToolsTitle => '스마트 도구 사용하기';
 
   @override
-  String get tutorialsSmartToolsSubtitle => '지갑 분실, 생활 변화, 증빙 패키지, 공유한 링크';
+  String get tutorialsSmartToolsSubtitle => '분실 또는 도난, 생활 이벤트, 증빙 묶음, 공유 링크';
 
   @override
   String get tutorialsFamilyTitle => '가족과 사람';
@@ -7200,13 +7215,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lostLineHelper => '지금 저장하세요. 번호가 카드에 인쇄되어 있어서 필요할 때는 손에 없습니다.';
 
   @override
-  String get lifeEventWalletLost => '지갑을 잃어버렸어요';
+  String get lifeEventWalletLost => '분실한 물건';
 
   @override
-  String get lifeEventWalletLostBody => '먼저 카드를 정지하고, 그다음 서류를 하나씩 재발급하세요.';
+  String get lifeEventWalletLostBody => '먼저 카드를 일시 정지하세요. 그래도 찾지 못하면 해지하고 서류를 하나씩 재발급하세요.';
 
   @override
-  String get lifeEventWalletStolen => '지갑을 도난당했어요';
+  String get lifeEventWalletStolen => '도난당한 물건';
 
   @override
   String get lifeEventWalletStolenBody => '즉시 카드를 정지하고 도난을 신고하세요. 그 후 계좌에서 사기 거래가 없는지 살펴보세요.';
@@ -7254,10 +7269,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lifeTaskWalletLocks => '열쇠나 주소가 들어 있었다면 자물쇠 교체를 고려하세요';
 
   @override
-  String get lifeTaskWalletInsurance => '보험이 지갑과 현금을 보상하는지 확인하세요';
+  String get lifeTaskWalletInsurance => '보험이 가져간 물건과 현금을 보상하는지 확인하기';
 
   @override
-  String get lostWalletHeroTitle => '지갑을 잃어버리셨나요?';
+  String get lostWalletHeroTitle => '잃어버렸나요, 아니면 도난당했나요?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara가 먼저 정지할 것, 재발급할 것, 알릴 곳을 보여 드립니다.';
@@ -7269,10 +7284,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lostWalletEditTitle => '세부 정보 변경';
 
   @override
-  String get lostWalletLostHint => '떨어뜨렸거나 어딘가에 두고 왔어요';
+  String get lostWalletLostHint => '떨어뜨렸거나 어딘가에 두고 왔어요. 먼저 정지하고, 못 찾을 때만 해지';
 
   @override
-  String get lostWalletStolenHint => '누군가 가져갔어요';
+  String get lostWalletStolenHint => '누군가 가져갔어요. 모두 차단하고 신고하기';
 
   @override
   String get lostWalletWhatMissing => '무엇이 없어졌나요?';
@@ -7510,7 +7525,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lostWalletStatementTitle => '명세서를 확인하세요';
 
   @override
-  String get lostWalletStatementBody => '지갑을 잃어버린 후 본인이 하지 않은 결제를 찾아보세요.';
+  String get lostWalletStatementBody => '물건을 잃어버린 뒤로 하지 않은 결제가 있는지 확인하세요.';
 
   @override
   String get lostWalletFoundButton => '찾았어요';
@@ -7615,7 +7630,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialsSubHousehold => '기록과 알림을 함께 쓰도록 가족 초대';
 
   @override
-  String get tutorialsTitleLostWallet => '지갑 분실';
+  String get tutorialsTitleLostWallet => '분실 또는 도난';
 
   @override
   String get tutorialsSubLostWallet => '지금 준비하고, 잃어버리면 빠르게 대처';
@@ -7705,7 +7720,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get whatsNewBadge => '새 기능';
 
   @override
-  String get whatsNewTitle => '지갑 분실';
+  String get whatsNewTitle => '분실 또는 도난';
 
   @override
   String get whatsNewBody => '카드를 어디에 두는지와 은행별 분실 신고 번호를 저장하세요. 지갑을 잃어버려도 몇 분 만에 모두 정지할 수 있어요.';
@@ -7847,7 +7862,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get storyWallet3Title => '잃어버렸다면';
 
   @override
-  String get storyWallet3Body => '\'지갑 분실\'을(를) 열고 \'분실\' 또는 \'도난\'을(를) 탭하세요. Vaultara가 안에 있던 것을 모두 보여 줘요.';
+  String get storyWallet3Body => '분실 또는 도난을 열고 분실 또는 도난을 누르세요. Vaultara가 안에 있던 모든 것을 보여줍니다.';
 
   @override
   String get storyWallet4Title => '몇 분 만에 카드 정지';

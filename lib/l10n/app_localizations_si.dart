@@ -2404,6 +2404,21 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lostWalletSwitchedLost => 'නැති වූ ලෙස වෙනස් කළා. ඔබේ ප්‍රගතිය රැඳේ.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'බැංකු යෙදුමේ කාඩ්පත් ශීත කරන්න. හමු වුණොත් නැවත විවෘත කළ හැක';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'දවසකට පසුවත් නැද්ද? ශීත කළ කාඩ්පත් අවලංගු කර අලුත් ඒවා ඇණවුම් කරන්න';
+
+  @override
+  String get lostWalletStillMissingTitle => 'තවමත් නැද්ද?';
+
+  @override
+  String get lostWalletStillMissingBody => 'හමු නොවුණොත්, ශීත කළ කාඩ්පත් අවලංගු කර අලුත් ඒවා ඇණවුම් කරන්න.';
+
+  @override
+  String get lostWalletMarkedDone => 'නිම කළ ලෙස සලකුණු කළා';
+
+  @override
   String get travelSectionJourney => 'ඔබේ ගමන';
 
   @override
@@ -2839,7 +2854,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get startRenewingNow => 'අලුත් කිරීම ආරම්භ කළ යුතු වේලාවයි';
 
   @override
-  String get lostWalletTitle => 'මගේ පසුම්බිය නැති වුණා';
+  String get lostWalletTitle => 'නැති වුණා හෝ සොරකම් කළා';
 
   @override
   String get lostWalletSubtitle => 'එහි තිබුණේ කුමක්ද සහ ආදේශ කළ යුත්තේ කුමක්ද බලන්න';
@@ -3430,7 +3445,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'ස්මාර්ට් මෙවලම් භාවිතය';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'නැති වූ පසුම්බිය, ජීවිත සිදුවීම්, සාක්ෂි පැකේජ සහ බෙදාගත් සබැඳි';
+  String get tutorialsSmartToolsSubtitle => 'නැති වුණා හෝ සොරකම් කළා, ජීවිත සිදුවීම්, සාක්ෂි පැකේජ සහ බෙදාගත් සබැඳි';
 
   @override
   String get tutorialsFamilyTitle => 'පවුල සහ පුද්ගලයන්';
@@ -7255,13 +7270,13 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lostLineHelper => 'දැන්ම සුරකින්න. අංකය කාඩ්පතේ මුද්‍රණය කර ඇති නිසා අවශ්‍ය වූ විට ඔබ ළඟ නොතිබේ.';
 
   @override
-  String get lifeEventWalletLost => 'මගේ පසුම්බිය නැති වුණා';
+  String get lifeEventWalletLost => 'නැති වූ දේවල්';
 
   @override
-  String get lifeEventWalletLostBody => 'පළමුව කාඩ්පත් අවහිර කරන්න, ඉන්පසු ලේඛන එකින් එක ප්‍රතිස්ථාපනය කරන්න.';
+  String get lifeEventWalletLostBody => 'පළමුව ඔබේ කාඩ්පත් ශීත කරන්න. තවමත් නැත්නම් ඒවා අවලංගු කර ලේඛන එකින් එක ප්‍රතිස්ථාපනය කරන්න.';
 
   @override
-  String get lifeEventWalletStolen => 'මගේ පසුම්බිය සොරකම් කළා';
+  String get lifeEventWalletStolen => 'සොරකම් කළ දේවල්';
 
   @override
   String get lifeEventWalletStolenBody => 'වහාම කාඩ්පත් අවහිර කර සොරකම වාර්තා කරන්න. ඉන්පසු වංචා සඳහා ගිණුම් නිරීක්ෂණය කරන්න.';
@@ -7309,10 +7324,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ඇතුළේ යතුරු හෝ ඔබේ ලිපිනය තිබුණා නම් අගුළු මාරු කිරීම ගැන සිතන්න';
 
   @override
-  String get lifeTaskWalletInsurance => 'ඔබේ රක්ෂණය පසුම්බිය සහ මුදල් ආවරණය කරනවාදැයි පරීක්ෂා කරන්න';
+  String get lifeTaskWalletInsurance => 'ගෙනගිය දේ සහ මුදල් ඔබේ රක්ෂණයෙන් ආවරණය වේදැයි බලන්න';
 
   @override
-  String get lostWalletHeroTitle => 'පසුම්බිය නැති වුණාද?';
+  String get lostWalletHeroTitle => 'යමක් නැති වුණාද, නැත්නම් සොරකම් කළාද?';
 
   @override
   String get lostWalletHeroBody => 'මුලින්ම අවහිර කළ යුත්තේ කුමක්ද, ප්‍රතිස්ථාපනය කළ යුත්තේ කුමක්ද, කාටද කිව යුත්තේ යන්න Vaultara පෙන්වයි.';
@@ -7324,10 +7339,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lostWalletEditTitle => 'විස්තර වෙනස් කරන්න';
 
   @override
-  String get lostWalletLostHint => 'වැටුණා හෝ කොහේ හරි අමතක වුණා';
+  String get lostWalletLostHint => 'වැටුණා හෝ කොහේ හරි ඉතිරි වුණා. පළමුව ශීත කරන්න, හමු නොවුණොත් පමණක් අවලංගු කරන්න';
 
   @override
-  String get lostWalletStolenHint => 'කවුරුහරි ගත්තා';
+  String get lostWalletStolenHint => 'කවුරුහරි ගත්තා. සියල්ල අවහිර කර වාර්තා කරන්න';
 
   @override
   String get lostWalletWhatMissing => 'නැත්තේ මොනවාද?';
@@ -7565,7 +7580,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lostWalletStatementTitle => 'බැංකු ප්‍රකාශ පරීක්ෂා කරන්න';
 
   @override
-  String get lostWalletStatementBody => 'පසුම්බිය නැති වූ දා සිට ඔබ නොකළ ගෙවීම් සොයන්න.';
+  String get lostWalletStatementBody => 'ඔබේ දේවල් නැති වූ දා සිට ඔබ නොකළ ගෙවීම් සොයන්න.';
 
   @override
   String get lostWalletFoundButton => 'මට හමු වුණා';
@@ -7670,7 +7685,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialsSubHousehold => 'වාර්තා සහ සිහිකැඳවීම් බෙදාගැනීමට අන් අයට ආරාධනා කරන්න';
 
   @override
-  String get tutorialsTitleLostWallet => 'මගේ පසුම්බිය නැති වුණා';
+  String get tutorialsTitleLostWallet => 'නැති වුණා හෝ සොරකම් කළා';
 
   @override
   String get tutorialsSubLostWallet => 'දැන්ම සූදානම් වන්න, නැති වුවහොත් ඉක්මනින් ක්‍රියා කරන්න';
@@ -7761,7 +7776,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get whatsNewBadge => 'අලුත්';
 
   @override
-  String get whatsNewTitle => 'මගේ පසුම්බිය නැති වුණා';
+  String get whatsNewTitle => 'නැති වුණා හෝ සොරකම් කළා';
 
   @override
   String get whatsNewBody => 'ඔබ කාඩ්පත් තබන තැන සහ එක් එක් බැංකුවේ අවහිර කිරීමේ අංකය සුරකින්න. මුදල් පසුම්බිය නැති වුවහොත් මිනිත්තු කිහිපයකින් සියල්ල අවහිර කරනු ඇත.';
@@ -7903,7 +7918,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get storyWallet3Title => 'නැති වුවහොත්';
 
   @override
-  String get storyWallet3Body => '«මගේ පසුම්බිය නැති වුණා» විවෘත කර «නැති වුණා» හෝ «සොරකම් කළා» තට්ටු කරන්න. Vaultara එහි තිබූ සියල්ල ලැයිස්තුගත කරයි.';
+  String get storyWallet3Body => 'නැති වුණා හෝ සොරකම් කළා විවෘත කර නැති වුණා හෝ සොරකම් කළා තට්ටු කරන්න. ඇතුළේ තිබූ සියල්ල Vaultara පෙන්වයි.';
 
   @override
   String get storyWallet4Title => 'මිනිත්තු කිහිපයකින් කාඩ්පත් අවහිර කරන්න';

@@ -2404,6 +2404,21 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lostWalletSwitchedLost => 'შეიცვალა დაკარგულად. თქვენი პროგრესი ინახება.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'გაყინეთ ბარათები საბანკო აპში. თუ იპოვით, შეგიძლიათ გაყინვის მოხსნა';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'ერთი დღის შემდეგაც არ ჩანს? გააუქმეთ გაყინული ბარათები და შეუკვეთეთ ახალი';
+
+  @override
+  String get lostWalletStillMissingTitle => 'ისევ არ ჩანს?';
+
+  @override
+  String get lostWalletStillMissingBody => 'თუ არ გამოჩნდა, გააუქმეთ გაყინული ბარათები და შეუკვეთეთ ახალი.';
+
+  @override
+  String get lostWalletMarkedDone => 'მოინიშნა შესრულებულად';
+
+  @override
   String get travelSectionJourney => 'თქვენი მოგზაურობა';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get startRenewingNow => 'დროა განახლება დაიწყოთ';
 
   @override
-  String get lostWalletTitle => 'საფულე დავკარგე';
+  String get lostWalletTitle => 'დაკარგული ან მოპარული';
 
   @override
   String get lostWalletSubtitle => 'ნახეთ, რა იყო მასში და რა უნდა შეიცვალოს';
@@ -3431,7 +3446,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'ჭკვიანი ინსტრუმენტების გამოყენება';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'დაკარგული საფულე, ცხოვრებისეული მოვლენები, მტკიცებულებების ნაკრებები და გაზიარებული ბმულები';
+  String get tutorialsSmartToolsSubtitle => 'დაკარგული ან მოპარული, ცხოვრებისეული მოვლენები, მტკიცებულების პაკეტები და გაზიარებული ბმულები';
 
   @override
   String get tutorialsFamilyTitle => 'ოჯახი და ადამიანები';
@@ -7256,13 +7271,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lostLineHelper => 'შეინახეთ ახლავე. ნომერი ბარათზეა დაბეჭდილი, ამიტომ როცა დაგჭირდებათ, თან არ გექნებათ.';
 
   @override
-  String get lifeEventWalletLost => 'საფულე დავკარგე';
+  String get lifeEventWalletLost => 'დაკარგული ნივთები';
 
   @override
-  String get lifeEventWalletLostBody => 'ჯერ დაბლოკეთ ბარათები, შემდეგ დოკუმენტები სათითაოდ შეცვალეთ.';
+  String get lifeEventWalletLostBody => 'ჯერ გაყინეთ ბარათები. თუ ისევ არ ჩანს, გააუქმეთ ისინი და შეცვალეთ საბუთები სათითაოდ.';
 
   @override
-  String get lifeEventWalletStolen => 'საფულე მომპარეს';
+  String get lifeEventWalletStolen => 'მოპარული ნივთები';
 
   @override
   String get lifeEventWalletStolenBody => 'დაუყოვნებლივ დაბლოკეთ ბარათები და შეატყობინეთ ქურდობის შესახებ. შემდეგ თვალი ადევნეთ ანგარიშებს თაღლითობისგან.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lifeTaskWalletLocks => 'თუ შიგნით გასაღები ან თქვენი მისამართი იყო, იფიქრეთ საკეტების შეცვლაზე';
 
   @override
-  String get lifeTaskWalletInsurance => 'შეამოწმეთ, ფარავს თუ არა დაზღვევა საფულესა და ნაღდ ფულს';
+  String get lifeTaskWalletInsurance => 'შეამოწმეთ, ფარავს თუ არა დაზღვევა წაღებულს და ნაღდ ფულს';
 
   @override
-  String get lostWalletHeroTitle => 'საფულე დაკარგეთ?';
+  String get lostWalletHeroTitle => 'რამე დაკარგეთ, თუ მოგპარეს?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara გაჩვენებთ, რა დაბლოკოთ ჯერ, რა შეცვალოთ და ვის აცნობოთ.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lostWalletEditTitle => 'დეტალების შეცვლა';
 
   @override
-  String get lostWalletLostHint => 'დამივარდა ან სადღაც დავტოვე';
+  String get lostWalletLostHint => 'დავარდა ან სადღაც დარჩა. ჯერ გაყინეთ, გააუქმეთ მხოლოდ თუ არ იპოვება';
 
   @override
-  String get lostWalletStolenHint => 'ვიღაცამ წაიღო';
+  String get lostWalletStolenHint => 'ვიღაცამ წაიღო. დაბლოკეთ ყველაფერი და შეატყობინეთ';
 
   @override
   String get lostWalletWhatMissing => 'რა აკლია?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lostWalletStatementTitle => 'შეამოწმეთ საბანკო ამონაწერები';
 
   @override
-  String get lostWalletStatementBody => 'მოძებნეთ გადახდები, რომლებიც საფულის დაკარგვის შემდეგ არ გაგიკეთებიათ.';
+  String get lostWalletStatementBody => 'მოძებნეთ გადახდები, რომლებიც არ გაგიკეთებიათ ნივთების დაკარგვის შემდეგ.';
 
   @override
   String get lostWalletFoundButton => 'ვიპოვე';
@@ -7671,7 +7686,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialsSubHousehold => 'მოიწვიეთ სხვები ჩანაწერებისა და შეხსენებების გასაზიარებლად';
 
   @override
-  String get tutorialsTitleLostWallet => 'საფულე დავკარგე';
+  String get tutorialsTitleLostWallet => 'დაკარგული ან მოპარული';
 
   @override
   String get tutorialsSubLostWallet => 'მოემზადეთ ახლავე და იმოქმედეთ სწრაფად, თუ დაიკარგება';
@@ -7762,7 +7777,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get whatsNewBadge => 'ახალი';
 
   @override
-  String get whatsNewTitle => 'საფულე დავკარგე';
+  String get whatsNewTitle => 'დაკარგული ან მოპარული';
 
   @override
   String get whatsNewBody => 'შეინახეთ, სად ინახავთ ბარათებს, და თითოეული ბანკის დაბლოკვის ნომერი. საფულე თუ დაიკარგა, ყველაფერს წუთებში დაბლოკავთ.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get storyWallet3Title => 'თუ დაიკარგა';
 
   @override
-  String get storyWallet3Body => 'გახსენით «საფულე დავკარგე» და შეეხეთ «დაიკარგა»-ს ან «მოიპარეს»-ს. Vaultara ჩამოთვლის ყველაფერს, რაც შიგნით იყო.';
+  String get storyWallet3Body => 'გახსენით დაკარგული ან მოპარული და შეეხეთ დაკარგულს ან მოპარულს. Vaultara აჩვენებს ყველაფერს, რაც შიგნით იყო.';
 
   @override
   String get storyWallet4Title => 'დაბლოკეთ ბარათები წუთებში';

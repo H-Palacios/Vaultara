@@ -2404,6 +2404,21 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Waxaa loo beddelay lumay. Horumarkaagu waa jiraa.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Kaararka ku barafee app-ka bangigaaga. Haddii la helo waad furi kartaa';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Weli maqan kadib maalin? Jooji kaararka la barafeeyay oo dalbo kuwo cusub';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Weli maqan?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Haddii aan la helin, jooji kaararka la barafeeyay oo dalbo kuwo cusub.';
+
+  @override
+  String get lostWalletMarkedDone => 'Waxaa loo calaamadeeyay dhammaaday';
+
+  @override
   String get travelSectionJourney => 'Safarkaaga';
 
   @override
@@ -2839,7 +2854,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get startRenewingNow => 'Waa waqtigii aad bilaabi lahayd cusboonaysiinta';
 
   @override
-  String get lostWalletTitle => 'Boorsadaydii way lumday';
+  String get lostWalletTitle => 'Lumay ama la xaday';
 
   @override
   String get lostWalletSubtitle => 'Arag waxa ku jiray iyo waxa la beddelayo';
@@ -3430,7 +3445,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Isticmaalka qalabka caqli badan';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Boorsada lumay, dhacdooyinka nolosha, xirmooyinka caddaynta iyo linkiyada la wadaagay';
+  String get tutorialsSmartToolsSubtitle => 'Lumay ama la xaday, dhacdooyinka nolosha, xirmooyinka caddaynta iyo xiriirada la wadaagay';
 
   @override
   String get tutorialsFamilyTitle => 'Qoyska iyo dadka';
@@ -7255,13 +7270,13 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lostLineHelper => 'Hadda kaydi. Lambarka wuxuu ku qoran yahay kaarka, markaa ma haysan doontid marka aad u baahato.';
 
   @override
-  String get lifeEventWalletLost => 'Boorsadaydii lacagta way luntay';
+  String get lifeEventWalletLost => 'Alaab lumay';
 
   @override
-  String get lifeEventWalletLostBody => 'Marka hore xannib kaararkaaga, kadibna beddel dukumentiyadaada mid mid.';
+  String get lifeEventWalletLostBody => 'Marka hore barafee kaararkaaga. Haddii ay weli maqan tahay, jooji oo dukumentiyadaada mid mid u beddel.';
 
   @override
-  String get lifeEventWalletStolen => 'Boorsadaydii lacagta waa la xaday';
+  String get lifeEventWalletStolen => 'Alaab la xaday';
 
   @override
   String get lifeEventWalletStolenBody => 'Isla markiiba xannib kaararkaaga oo soo sheeg xatooyada. Kadib la soco akoonnadaada khiyaano darteed.';
@@ -7309,10 +7324,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Haddii furayaal ama cinwaankaagu ku jireen, ka fikir inaad beddesho qufulada';
 
   @override
-  String get lifeTaskWalletInsurance => 'Hubi in caymiskaagu daboolayo boorsada iyo lacagta caddaanka ah';
+  String get lifeTaskWalletInsurance => 'Hubi in caymiskaagu daboolayo waxa la qaaday iyo lacag caddaan ah';
 
   @override
-  String get lostWalletHeroTitle => 'Boorsadaada lacagta ma luntay?';
+  String get lostWalletHeroTitle => 'Wax ma kaa lumay, mise waa la xaday?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara waxay ku tusaysaa waxa aad marka hore xannibayso, waxa aad beddelayso iyo cidda aad u sheegayso.';
@@ -7324,10 +7339,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lostWalletEditTitle => 'Beddel faahfaahinta';
 
   @override
-  String get lostWalletLostHint => 'Way dhacday ama meel ayaan ku illaaway';
+  String get lostWalletLostHint => 'Way dhacday ama meel bay ku hartay. Marka hore barafee, jooji kaliya haddii ay maqnaato';
 
   @override
-  String get lostWalletStolenHint => 'Qof ayaa qaatay';
+  String get lostWalletStolenHint => 'Qof baa qaatay. Wax walba xir oo soo sheeg';
 
   @override
   String get lostWalletWhatMissing => 'Maxaa maqan?';
@@ -7565,7 +7580,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lostWalletStatementTitle => 'Hubi bayaannada bangigaaga';
 
   @override
-  String get lostWalletStatementBody => 'Raadi lacag bixin aadan samayn tan iyo markii boorsadaadu luntay.';
+  String get lostWalletStatementBody => 'Raadi lacag-bixinno aadan samayn tan iyo markii alaabtaadu lumtay.';
 
   @override
   String get lostWalletFoundButton => 'Waan helay';
@@ -7670,7 +7685,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialsSubHousehold => 'Ku casuun kuwa kale inay wadaagaan diiwaanno iyo xusuusin';
 
   @override
-  String get tutorialsTitleLostWallet => 'Boorsadaydii way lumday';
+  String get tutorialsTitleLostWallet => 'Lumay ama la xaday';
 
   @override
   String get tutorialsSubLostWallet => 'Hadda isu diyaari, si degdeg ah u dhaqaaq haddii uu lumo';
@@ -7761,7 +7776,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get whatsNewBadge => 'Cusub';
 
   @override
-  String get whatsNewTitle => 'Boorsadaydii way lumday';
+  String get whatsNewTitle => 'Lumay ama la xaday';
 
   @override
   String get whatsNewBody => 'Kaydi halka aad kaararkaaga ku haysato iyo lambarka xannibaadda bangi kasta. Haddii boorsadu kaa lunto, wax walba waxaad ku xannibaysaa daqiiqado.';
@@ -7903,7 +7918,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get storyWallet3Title => 'Haddii uu lumo';
 
   @override
-  String get storyWallet3Body => 'Fur «Boorsadaydii way lumday» oo taabo «Lumay» ama «La xaday». Vaultara waxay taxaysaa wax walba oo ku jiray.';
+  String get storyWallet3Body => 'Fur Lumay ama la xaday oo taabo Lumay ama La xaday. Vaultara wuxuu muujinayaa wax kasta oo ku jiray.';
 
   @override
   String get storyWallet4Title => 'Xannib kaararka daqiiqado gudahood';

@@ -2404,6 +2404,21 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Փոխվեց կորածի։ Ձեր առաջընթացը պահպանվում է։';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Սառեցրեք քարտերը բանկի հավելվածում։ Եթե գտնվի, կարող եք ապասառեցնել';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Մեկ օր անց դեռ չի գտնվել։ Չեղարկեք սառեցված քարտերը և պատվիրեք նորերը';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Դեռ չի՞ գտնվել';
+
+  @override
+  String get lostWalletStillMissingBody => 'Եթե չի գտնվել, չեղարկեք սառեցված քարտերը և պատվիրեք նորերը։';
+
+  @override
+  String get lostWalletMarkedDone => 'Նշվեց որպես արված';
+
+  @override
   String get travelSectionJourney => 'Ձեր ճանապարհորդությունը';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get startRenewingNow => 'Նորացումը սկսելու ժամանակն է';
 
   @override
-  String get lostWalletTitle => 'Կորցրել եմ դրամապանակս';
+  String get lostWalletTitle => 'Կորած կամ գողացված';
 
   @override
   String get lostWalletSubtitle => 'Տեսեք, թե ինչ կար դրա մեջ և ինչ պետք է փոխարինել';
@@ -3431,7 +3446,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Խելացի գործիքների օգտագործում';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Կորցրած դրամապանակ, կյանքի իրադարձություններ, ապացույցների փաթեթներ և կիսված հղումներ';
+  String get tutorialsSmartToolsSubtitle => 'Կորած կամ գողացված, կյանքի իրադարձություններ, ապացույցների փաթեթներ և կիսված հղումներ';
 
   @override
   String get tutorialsFamilyTitle => 'Ընտանիք և մարդիկ';
@@ -7256,13 +7271,13 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lostLineHelper => 'Պահպանեք հիմա։ Համարը տպված է քարտի վրա, ուստի պետք եղած պահին ձեզ մոտ չի լինի։';
 
   @override
-  String get lifeEventWalletLost => 'Կորցրի դրամապանակս';
+  String get lifeEventWalletLost => 'Կորած իրեր';
 
   @override
-  String get lifeEventWalletLostBody => 'Նախ արգելափակեք քարտերը, հետո փաստաթղթերը փոխարինեք մեկ առ մեկ։';
+  String get lifeEventWalletLostBody => 'Նախ սառեցրեք ձեր քարտերը։ Եթե դեռ չի գտնվել, չեղարկեք դրանք և փոխարինեք փաստաթղթերը մեկ առ մեկ։';
 
   @override
-  String get lifeEventWalletStolen => 'Դրամապանակս գողացան';
+  String get lifeEventWalletStolen => 'Գողացված իրեր';
 
   @override
   String get lifeEventWalletStolenBody => 'Անմիջապես արգելափակեք քարտերը և հայտնեք գողության մասին։ Հետո հետևեք հաշիվներին խարդախությունից։';
@@ -7310,10 +7325,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Եթե ներսում բանալիներ կամ ձեր հասցեն կար, մտածեք կողպեքները փոխելու մասին';
 
   @override
-  String get lifeTaskWalletInsurance => 'Ստուգեք՝ արդյոք ապահովագրությունը ծածկում է դրամապանակը և կանխիկը';
+  String get lifeTaskWalletInsurance => 'Ստուգեք՝ արդյոք ապահովագրությունը ծածկում է վերցվածը և կանխիկ գումարը';
 
   @override
-  String get lostWalletHeroTitle => 'Կորցրե՞լ եք դրամապանակը';
+  String get lostWalletHeroTitle => 'Ինչ-որ բան կորցրե՞լ եք, թե՞ գողացել են';
 
   @override
   String get lostWalletHeroBody => 'Vaultara-ն ցույց է տալիս՝ ինչ արգելափակել առաջինը, ինչ փոխարինել և ում տեղեկացնել։';
@@ -7325,10 +7340,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lostWalletEditTitle => 'Փոխել մանրամասները';
 
   @override
-  String get lostWalletLostHint => 'Ընկավ կամ ինչ-որ տեղ մոռացա';
+  String get lostWalletLostHint => 'Ընկել է կամ ինչ-որ տեղ մնացել։ Նախ սառեցրեք, չեղարկեք միայն եթե չգտնվի';
 
   @override
-  String get lostWalletStolenHint => 'Ինչ-որ մեկը վերցրեց';
+  String get lostWalletStolenHint => 'Ինչ-որ մեկը վերցրել է։ Արգելափակեք ամեն ինչ և հայտնեք';
 
   @override
   String get lostWalletWhatMissing => 'Ի՞նչն է պակասում';
@@ -7566,7 +7581,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lostWalletStatementTitle => 'Ստուգեք բանկային քաղվածքները';
 
   @override
-  String get lostWalletStatementBody => 'Փնտրեք վճարումներ, որոնք չեք կատարել դրամապանակը կորցնելուց հետո։';
+  String get lostWalletStatementBody => 'Փնտրեք վճարումներ, որոնք չեք կատարել ձեր իրերի կորչելուց ի վեր։';
 
   @override
   String get lostWalletFoundButton => 'Գտա';
@@ -7671,7 +7686,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialsSubHousehold => 'Հրավիրեք ուրիշներին կիսվելու գրառումներով և հիշեցումներով';
 
   @override
-  String get tutorialsTitleLostWallet => 'Կորցրել եմ դրամապանակս';
+  String get tutorialsTitleLostWallet => 'Կորած կամ գողացված';
 
   @override
   String get tutorialsSubLostWallet => 'Պատրաստվեք հիմա, կորելու դեպքում գործեք արագ';
@@ -7762,7 +7777,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get whatsNewBadge => 'Նոր';
 
   @override
-  String get whatsNewTitle => 'Կորցրել եմ դրամապանակս';
+  String get whatsNewTitle => 'Կորած կամ գողացված';
 
   @override
   String get whatsNewBody => 'Պահպանեք, թե որտեղ եք պահում քարտերը, և յուրաքանչյուր բանկի արգելափակման համարը։ Դրամապանակը կորցնելու դեպքում ամեն ինչ կարգելափակեք րոպեների ընթացքում։';
@@ -7904,7 +7919,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get storyWallet3Title => 'Եթե կորի';
 
   @override
-  String get storyWallet3Body => 'Բացեք «Կորցրել եմ դրամապանակս»-ը և հպեք «Կորել է»-ին կամ «Գողացել են»-ին։ Vaultara-ն թվարկում է այն ամենը, ինչ կար ներսում։';
+  String get storyWallet3Body => 'Բացեք Կորած կամ գողացված և հպեք Կորած կամ Գողացված։ Vaultara-ն ցույց է տալիս այն ամենը, ինչ ներսում էր։';
 
   @override
   String get storyWallet4Title => 'Արգելափակեք քարտերը րոպեների ընթացքում';

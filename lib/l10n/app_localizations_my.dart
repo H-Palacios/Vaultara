@@ -2401,6 +2401,21 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lostWalletSwitchedLost => 'ပျောက်သွားသည်ဟု ပြောင်းပြီးပါပြီ။ သင့်တိုးတက်မှု ရှိနေပါမည်။';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'ဘဏ်အက်ပ်တွင် ကတ်များကို ခေတ္တပိတ်ပါ။ ပြန်တွေ့ပါက ပြန်ဖွင့်နိုင်ပါသည်';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'တစ်ရက်ကြာသော်လည်း မတွေ့သေးဘူးလား။ ပိတ်ထားသောကတ်များကို ပယ်ဖျက်ပြီး အသစ်မှာပါ';
+
+  @override
+  String get lostWalletStillMissingTitle => 'မတွေ့သေးဘူးလား။';
+
+  @override
+  String get lostWalletStillMissingBody => 'မတွေ့သေးပါက ပိတ်ထားသောကတ်များကို ပယ်ဖျက်ပြီး အသစ်မှာပါ။';
+
+  @override
+  String get lostWalletMarkedDone => 'ပြီးပြီဟု မှတ်သားပြီးပါပြီ';
+
+  @override
   String get travelSectionJourney => 'သင့်ခရီး';
 
   @override
@@ -2832,7 +2847,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get startRenewingNow => 'သက်တမ်းတိုးခြင်း စတင်ရမည့်အချိန်';
 
   @override
-  String get lostWalletTitle => 'ပိုက်ဆံအိတ် ပျောက်သွားသည်';
+  String get lostWalletTitle => 'ပျောက် သို့မဟုတ် ခိုးခံရ';
 
   @override
   String get lostWalletSubtitle => 'အထဲတွင် ဘာတွေ ပါခဲ့ပြီး ဘာတွေ အစားထိုးရမည်ကို ကြည့်ပါ';
@@ -3408,7 +3423,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'စမတ်ကိရိယာများ အသုံးပြုခြင်း';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'ပျောက်ဆုံးသော ပိုက်ဆံအိတ်၊ ဘဝ အဖြစ်အပျက်များ၊ သက်သေအထောက်အထား အစုံနှင့် မျှဝေထားသော လင့်ခ်များ';
+  String get tutorialsSmartToolsSubtitle => 'ပျောက် သို့မဟုတ် ခိုးခံရ၊ ဘဝဖြစ်ရပ်များ၊ အထောက်အထား အစုများနှင့် မျှဝေထားသော လင့်ခ်များ';
 
   @override
   String get tutorialsFamilyTitle => 'မိသားစုနှင့် လူများ';
@@ -7198,13 +7213,13 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lostLineHelper => 'ယခုပင် သိမ်းထားပါ။ နံပါတ်က ကတ်ပေါ်တွင် ပုံနှိပ်ထားသဖြင့် လိုအပ်ချိန်တွင် သင့်ထံ ရှိမည်မဟုတ်ပါ။';
 
   @override
-  String get lifeEventWalletLost => 'ကျွန်ုပ်၏ ပိုက်ဆံအိတ် ပျောက်သွားသည်';
+  String get lifeEventWalletLost => 'ပျောက်သွားသော ပစ္စည်းများ';
 
   @override
-  String get lifeEventWalletLostBody => 'ကတ်များကို အရင်ပိတ်ပါ၊ ထို့နောက် စာရွက်စာတမ်းများကို တစ်ခုချင်း အစားထိုးပါ။';
+  String get lifeEventWalletLostBody => 'ကတ်များကို အရင်ခေတ္တပိတ်ပါ။ မတွေ့သေးပါက ပယ်ဖျက်ပြီး စာရွက်စာတမ်းများကို တစ်ခုချင်း အစားထိုးပါ။';
 
   @override
-  String get lifeEventWalletStolen => 'ကျွန်ုပ်၏ ပိုက်ဆံအိတ် ခိုးခံရသည်';
+  String get lifeEventWalletStolen => 'ခိုးခံရသော ပစ္စည်းများ';
 
   @override
   String get lifeEventWalletStolenBody => 'ကတ်များကို ချက်ချင်းပိတ်ပြီး ခိုးမှုကို တိုင်ကြားပါ။ ထို့နောက် လိမ်လည်မှုအတွက် အကောင့်များကို စောင့်ကြည့်ပါ။';
@@ -7252,10 +7267,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lifeTaskWalletLocks => 'သော့ သို့မဟုတ် သင့်လိပ်စာ ပါခဲ့ပါက သော့ခလောက်များ လဲရန် စဉ်းစားပါ';
 
   @override
-  String get lifeTaskWalletInsurance => 'သင့်အာမခံက ပိုက်ဆံအိတ်နှင့် ငွေသားကို ကာမိမကာမိ စစ်ဆေးပါ';
+  String get lifeTaskWalletInsurance => 'ယူသွားသောပစ္စည်းနှင့် ငွေသားကို အာမခံက ကာမိခြင်း ရှိမရှိ စစ်ဆေးပါ';
 
   @override
-  String get lostWalletHeroTitle => 'ပိုက်ဆံအိတ် ပျောက်သွားပြီလား?';
+  String get lostWalletHeroTitle => 'တစ်ခုခု ပျောက်သွားသလား၊ ခိုးခံရသလား။';
 
   @override
   String get lostWalletHeroBody => 'ဘာကို အရင်ပိတ်ရမလဲ၊ ဘာကို အစားထိုးရမလဲ၊ ဘယ်သူ့ကို ပြောရမလဲ Vaultara က ပြသည်။';
@@ -7267,10 +7282,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lostWalletEditTitle => 'အသေးစိတ်ကို ပြောင်းပါ';
 
   @override
-  String get lostWalletLostHint => 'ပြုတ်ကျသွားသည် သို့မဟုတ် တစ်နေရာတွင် မေ့ကျန်ခဲ့သည်';
+  String get lostWalletLostHint => 'ကျသွား သို့မဟုတ် တစ်နေရာတွင် ကျန်ခဲ့သည်။ အရင်ခေတ္တပိတ်ပါ၊ မတွေ့မှသာ ပယ်ဖျက်ပါ';
 
   @override
-  String get lostWalletStolenHint => 'တစ်စုံတစ်ယောက် ယူသွားသည်';
+  String get lostWalletStolenHint => 'တစ်စုံတစ်ယောက်က ယူသွားသည်။ အားလုံးကို ပိတ်ပြီး တိုင်ကြားပါ';
 
   @override
   String get lostWalletWhatMissing => 'ဘာပျောက်နေသလဲ?';
@@ -7508,7 +7523,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lostWalletStatementTitle => 'ဘဏ်စာရင်းရှင်းတမ်းများ စစ်ဆေးပါ';
 
   @override
-  String get lostWalletStatementBody => 'ပိုက်ဆံအိတ် ပျောက်ပြီးကတည်းက သင်မပြုလုပ်ခဲ့သော ငွေပေးချေမှုများကို ရှာပါ။';
+  String get lostWalletStatementBody => 'ပစ္စည်းများ ပျောက်ပြီးကတည်းက သင်မပြုလုပ်ခဲ့သော ငွေပေးချေမှုများကို ရှာပါ။';
 
   @override
   String get lostWalletFoundButton => 'တွေ့ပြီ';
@@ -7613,7 +7628,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialsSubHousehold => 'မှတ်တမ်းနှင့် သတိပေးချက်များ မျှဝေရန် အခြားသူများကို ဖိတ်ပါ';
 
   @override
-  String get tutorialsTitleLostWallet => 'ပိုက်ဆံအိတ် ပျောက်သွားသည်';
+  String get tutorialsTitleLostWallet => 'ပျောက် သို့မဟုတ် ခိုးခံရ';
 
   @override
   String get tutorialsSubLostWallet => 'ယခုပြင်ဆင်ပါ၊ ပျောက်လျှင် မြန်မြန်ဆောင်ရွက်ပါ';
@@ -7703,7 +7718,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get whatsNewBadge => 'အသစ်';
 
   @override
-  String get whatsNewTitle => 'ပိုက်ဆံအိတ် ပျောက်သွားသည်';
+  String get whatsNewTitle => 'ပျောက် သို့မဟုတ် ခိုးခံရ';
 
   @override
   String get whatsNewBody => 'ကတ်များ ဘယ်မှာထားသည်နှင့် ဘဏ်တစ်ခုစီ၏ ပိတ်ရန်နံပါတ်ကို သိမ်းပါ။ ပိုက်ဆံအိတ်ပျောက်လျှင် မိနစ်ပိုင်းအတွင်း အားလုံးပိတ်နိုင်သည်။';
@@ -7845,7 +7860,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get storyWallet3Title => 'ပျောက်လျှင်';
 
   @override
-  String get storyWallet3Body => '«ပိုက်ဆံအိတ် ပျောက်သွားသည်» ကိုဖွင့်ပြီး «ပျောက်သည်» သို့မဟုတ် «ခိုးခံရသည်» ကို နှိပ်ပါ။ Vaultara သည် အထဲရှိသမျှကို စာရင်းပြုစုသည်။';
+  String get storyWallet3Body => 'ပျောက် သို့မဟုတ် ခိုးခံရ ကိုဖွင့်ပြီး ပျောက် သို့မဟုတ် ခိုးခံရ ကိုနှိပ်ပါ။ Vaultara က အထဲရှိခဲ့သမျှကို ပြပါသည်။';
 
   @override
   String get storyWallet4Title => 'မိနစ်ပိုင်းအတွင်း ကတ်ပိတ်ပါ';

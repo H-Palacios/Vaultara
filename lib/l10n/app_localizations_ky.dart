@@ -2404,6 +2404,21 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Жоголду деп өзгөртүлдү. Прогрессиңиз сакталат.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Карталарды банк тиркемесинде тоңдуруңуз. Табылса, кайра ача аласыз';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Бир күндөн кийин да табылбадыбы? Тоңдурулган карталарды жаап, жаңысына буйрутма бериңиз';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Дагы эле табылбадыбы?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Табылбаса, тоңдурулган карталарды жаап, жаңысына буйрутма бериңиз.';
+
+  @override
+  String get lostWalletMarkedDone => 'Аткарылды деп белгиленди';
+
+  @override
   String get travelSectionJourney => 'Сиздин сапарыңыз';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get startRenewingNow => 'Жаңылоону баштоо убагы келди';
 
   @override
-  String get lostWalletTitle => 'Капчыгымды жоготтум';
+  String get lostWalletTitle => 'Жоголгон же уурдалган';
 
   @override
   String get lostWalletSubtitle => 'Анда эмне болгонун жана эмнени алмаштыруу керектигин көрүңүз';
@@ -3431,7 +3446,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Акылдуу куралдарды колдонуу';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Жоголгон капчык, жашоодогу окуялар, далилдер топтому жана бөлүшүлгөн шилтемелер';
+  String get tutorialsSmartToolsSubtitle => 'Жоголгон же уурдалган, турмуш окуялары, далил топтомдору жана бөлүшүлгөн шилтемелер';
 
   @override
   String get tutorialsFamilyTitle => 'Үй-бүлө жана адамдар';
@@ -7256,13 +7271,13 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lostLineHelper => 'Азыр сактаңыз. Номер картада басылган, ошондуктан керек болгондо колуңузда болбойт.';
 
   @override
-  String get lifeEventWalletLost => 'Капчыгымды жоготтум';
+  String get lifeEventWalletLost => 'Жоголгон буюмдар';
 
   @override
-  String get lifeEventWalletLostBody => 'Адегенде карталарды бөгөттөңүз, анан документтерди бир-бирден алмаштырыңыз.';
+  String get lifeEventWalletLostBody => 'Адегенде карталарыңызды тоңдуруңуз. Дагы эле табылбаса, аларды жаап, документтериңизди бир-бирден алмаштырыңыз.';
 
   @override
-  String get lifeEventWalletStolen => 'Капчыгымды уурдап кетишти';
+  String get lifeEventWalletStolen => 'Уурдалган буюмдар';
 
   @override
   String get lifeEventWalletStolenBody => 'Карталарды дароо бөгөттөп, уурулук тууралуу кабарлаңыз. Анан алдамчылыкка карата эсептериңизди көзөмөлдөңүз.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ичинде ачкыч же дарегиңиз болсо, кулпуларды алмаштырууну ойлонуңуз';
 
   @override
-  String get lifeTaskWalletInsurance => 'Камсыздандырууңуз капчык менен накталай акчаны жабарын текшериңиз';
+  String get lifeTaskWalletInsurance => 'Камсыздандыруу алынган нерсени жана накталай акчаны жабарын текшериңиз';
 
   @override
-  String get lostWalletHeroTitle => 'Капчыгыңызды жоготтуңузбу?';
+  String get lostWalletHeroTitle => 'Бир нерсе жоголдубу, же уурдалдыбы?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara адегенде эмнени бөгөттөп, эмнени алмаштырып, кимге кабарлоону көрсөтөт.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lostWalletEditTitle => 'Маалыматты өзгөртүү';
 
   @override
-  String get lostWalletLostHint => 'Түшүп калды же бир жерге унутуп калдым';
+  String get lostWalletLostHint => 'Түшүп калды же бир жерде калды. Адегенде тоңдуруңуз, табылбаса гана жабыңыз';
 
   @override
-  String get lostWalletStolenHint => 'Бирөө алып кетти';
+  String get lostWalletStolenHint => 'Бирөө алып кетти. Баарын бөгөттөп, кабарлаңыз';
 
   @override
   String get lostWalletWhatMissing => 'Эмне жок?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lostWalletStatementTitle => 'Банк көчүрмөлөрүн текшериңиз';
 
   @override
-  String get lostWalletStatementBody => 'Капчык жоголгондон бери өзүңүз жасабаган төлөмдөрдү издеңиз.';
+  String get lostWalletStatementBody => 'Буюмдарыңыз жоголгондон бери сиз жасабаган төлөмдөрдү издеңиз.';
 
   @override
   String get lostWalletFoundButton => 'Таптым';
@@ -7671,7 +7686,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tutorialsSubHousehold => 'Жазуулар менен эскертмелерди бөлүшүүгө башкаларды чакырыңыз';
 
   @override
-  String get tutorialsTitleLostWallet => 'Капчыгымды жоготтум';
+  String get tutorialsTitleLostWallet => 'Жоголгон же уурдалган';
 
   @override
   String get tutorialsSubLostWallet => 'Азыр даярданыңыз, жоголсо тез аракет кылыңыз';
@@ -7762,7 +7777,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get whatsNewBadge => 'Жаңы';
 
   @override
-  String get whatsNewTitle => 'Капчыгымды жоготтум';
+  String get whatsNewTitle => 'Жоголгон же уурдалган';
 
   @override
   String get whatsNewBody => 'Карталарыңызды кайда сактаарыңызды жана ар бир банктын бөгөттөө номерин сактаңыз. Капчык жоголсо, баарын бир нече мүнөттө бөгөттөйсүз.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get storyWallet3Title => 'Эгер жоголсо';
 
   @override
-  String get storyWallet3Body => '«Капчыгымды жоготтум» ачып, «Жоголду» же «Уурдалды» басыңыз. Vaultara ичиндегилердин баарын тизмелейт.';
+  String get storyWallet3Body => 'Жоголгон же уурдалган бөлүмүн ачып, Жоголду же Уурдалды дегенди басыңыз. Vaultara ичинде болгондун баарын көрсөтөт.';
 
   @override
   String get storyWallet4Title => 'Карталарды мүнөттөрдө бөгөттөңүз';

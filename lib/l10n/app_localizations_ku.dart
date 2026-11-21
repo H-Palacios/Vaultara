@@ -2404,6 +2404,21 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Hate guhertin bo winda. Pêşketina te dimîne.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Kartên xwe di sepana bankê de bicemidîne. Heke were dîtin, dikarî wan vekî';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Piştî rojekê hîn winda ye? Kartên cemidî betal bike û yên nû ferman bike';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Hîn winda ye?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Heke derneketiye, kartên cemidî betal bike û yên nû ferman bike.';
+
+  @override
+  String get lostWalletMarkedDone => 'Wek qediyayî hate nîşankirin';
+
+  @override
   String get travelSectionJourney => 'Rêwîtiya te';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get startRenewingNow => 'Wext e dest bi nûkirinê bikî';
 
   @override
-  String get lostWalletTitle => 'Cizdanê min winda bû';
+  String get lostWalletTitle => 'Winda an dizî';
 
   @override
   String get lostWalletSubtitle => 'Bibîne ka çi tê de bû û çi divê were guhertin';
@@ -3431,7 +3446,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Bikaranîna amûrên jîr';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Cizdanê winda, bûyerên jiyanê, pakêtên delîlan û girêdanên parvekirî';
+  String get tutorialsSmartToolsSubtitle => 'Winda an dizî, bûyerên jiyanê, pakêtên delîlan û girêdanên parvekirî';
 
   @override
   String get tutorialsFamilyTitle => 'Malbat û mirov';
@@ -7256,13 +7271,13 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lostLineHelper => 'Niha tomar bike. Hejmar li ser kartê çapkirî ye, ji ber vê yekê dema hewce be dê ne li cem te be.';
 
   @override
-  String get lifeEventWalletLost => 'Min berîka xwe winda kir';
+  String get lifeEventWalletLost => 'Tiştên winda';
 
   @override
-  String get lifeEventWalletLostBody => 'Pêşî kartên xwe bloke bike, paşê belgeyên xwe yek bi yek biguherîne.';
+  String get lifeEventWalletLostBody => 'Pêşî kartên xwe bicemidîne. Heke hîn winda be, wan betal bike û belgeyên xwe yek bi yek biguherîne.';
 
   @override
-  String get lifeEventWalletStolen => 'Berîka min hate dizîn';
+  String get lifeEventWalletStolen => 'Tiştên dizî';
 
   @override
   String get lifeEventWalletStolenBody => 'Tavilê kartên xwe bloke bike û diziyê ragihîne. Paşê li hesabên xwe ji bo xapandinê binêre.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ger mifte an navnîşana te tê de bû, li ser guhertina kilîtan bifikire';
 
   @override
-  String get lifeTaskWalletInsurance => 'Kontrol bike ka sîgorteya te berîk û pereyê nakit digire';
+  String get lifeTaskWalletInsurance => 'Kontrol bike ka sîgorteya te tiştê hatî birin û pereyê nexd digire';
 
   @override
-  String get lostWalletHeroTitle => 'Berîka xwe winda kir?';
+  String get lostWalletHeroTitle => 'Tiştek winda bû, an hate dizîn?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara nîşan dide ku pêşî çi bloke bikî, çi biguherînî û ji kê re bibêjî.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lostWalletEditTitle => 'Hûrguliyan biguherîne';
 
   @override
-  String get lostWalletLostHint => 'Ket an min li derekê ji bîr kir';
+  String get lostWalletLostHint => 'Ket an li cihekî ma. Pêşî bicemidîne, tenê heke winda bimîne betal bike';
 
   @override
-  String get lostWalletStolenHint => 'Kesekî bir';
+  String get lostWalletStolenHint => 'Kesekî ew bir. Her tiştî asteng bike û rapor bike';
 
   @override
   String get lostWalletWhatMissing => 'Çi kêm e?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lostWalletStatementTitle => 'Daxuyaniyên bankê kontrol bike';
 
   @override
-  String get lostWalletStatementBody => 'Li dravdanên ku te ji dema windabûna berîkê ve nekirine bigere.';
+  String get lostWalletStatementBody => 'Li dravdanên ku te nekirine bigere ji dema ku tiştên te winda bûn.';
 
   @override
   String get lostWalletFoundButton => 'Min dît';
@@ -7671,7 +7686,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialsSubHousehold => 'Kesên din vexwîne ku tomar û bîrxistinan parve bikin';
 
   @override
-  String get tutorialsTitleLostWallet => 'Cizdanê min winda bû';
+  String get tutorialsTitleLostWallet => 'Winda an dizî';
 
   @override
   String get tutorialsSubLostWallet => 'Niha amade be, eger winda bibe zû tevbigere';
@@ -7762,7 +7777,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get whatsNewBadge => 'Nû';
 
   @override
-  String get whatsNewTitle => 'Cizdanê min winda bû';
+  String get whatsNewTitle => 'Winda an dizî';
 
   @override
   String get whatsNewBody => 'Tomar bike tu kartên xwe li ku digirî û hejmara astengkirinê ya her bankê. Eger cûzdanê te winda bibe, tu di çend deqîqeyan de her tiştî asteng dikî.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get storyWallet3Title => 'Eger winda bibe';
 
   @override
-  String get storyWallet3Body => '«Cizdanê min winda bû» veke û «Winda bû» an «Hate dizîn» bitikîne. Vaultara her tiştê ku tê de bû rêz dike.';
+  String get storyWallet3Body => 'Winda an dizî veke û li Winda an Dizî bitikîne. Vaultara her tiştê ku tê de bû nîşan dide.';
 
   @override
   String get storyWallet4Title => 'Kartan di deqîqeyan de asteng bike';

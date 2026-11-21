@@ -2404,6 +2404,21 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Muudetud kadunuks. Sinu edenemine jääb alles.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Külmuta kaardid oma pangarakenduses. Kui see leitakse, saad külmutuse tühistada';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Ka päeva pärast kadunud? Tühista külmutatud kaardid ja telli uued';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Ikka kadunud?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Kui see pole välja ilmunud, tühista külmutatud kaardid ja telli uued.';
+
+  @override
+  String get lostWalletMarkedDone => 'Märgitud tehtuks';
+
+  @override
   String get travelSectionJourney => 'Sinu reis';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get startRenewingNow => 'On aeg uuendamist alustada';
 
   @override
-  String get lostWalletTitle => 'Kaotasin rahakoti';
+  String get lostWalletTitle => 'Kadunud või varastatud';
 
   @override
   String get lostWalletSubtitle => 'Vaata, mis seal oli ja mida asendada';
@@ -3431,7 +3446,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Nutikate tööriistade kasutamine';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Kaotatud rahakott, elusündmused, tõendipaketid ja jagatud lingid';
+  String get tutorialsSmartToolsSubtitle => 'Kadunud või varastatud, elusündmused, tõendipaketid ja jagatud lingid';
 
   @override
   String get tutorialsFamilyTitle => 'Pere ja inimesed';
@@ -7256,13 +7271,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lostLineHelper => 'Salvesta see kohe. Number on kaardil, nii et vajadusel pole seda sul käepärast.';
 
   @override
-  String get lifeEventWalletLost => 'Kaotasin oma rahakoti';
+  String get lifeEventWalletLost => 'Kadunud asjad';
 
   @override
-  String get lifeEventWalletLostBody => 'Sulge kõigepealt kaardid, seejärel asenda dokumendid ükshaaval.';
+  String get lifeEventWalletLostBody => 'Külmuta kõigepealt oma kaardid. Kui see on endiselt kadunud, tühista need ja asenda dokumendid ükshaaval.';
 
   @override
-  String get lifeEventWalletStolen => 'Mu rahakott varastati';
+  String get lifeEventWalletStolen => 'Varastatud asjad';
 
   @override
   String get lifeEventWalletStolenBody => 'Sulge kaardid kohe ja teata vargusest. Seejärel jälgi kontosid pettuste suhtes.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Kui seal olid võtmed või sinu aadress, kaalu lukkude vahetamist';
 
   @override
-  String get lifeTaskWalletInsurance => 'Kontrolli, kas kindlustus katab rahakoti ja sularaha';
+  String get lifeTaskWalletInsurance => 'Kontrolli, kas kindlustus katab võetu ja sularaha';
 
   @override
-  String get lostWalletHeroTitle => 'Kaotasid rahakoti?';
+  String get lostWalletHeroTitle => 'Kaotasid midagi või varastati see?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara näitab, mida kõigepealt sulgeda, mida asendada ja keda teavitada.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lostWalletEditTitle => 'Muuda andmeid';
 
   @override
-  String get lostWalletLostHint => 'Kukkus maha või jäi kuhugi';
+  String get lostWalletLostHint => 'Kukkus või jäi kuhugi. Külmuta kõigepealt, tühista ainult siis, kui see ei leia';
 
   @override
-  String get lostWalletStolenHint => 'Keegi võttis selle';
+  String get lostWalletStolenHint => 'Keegi võttis selle. Blokeeri kõik ja teata sellest';
 
   @override
   String get lostWalletWhatMissing => 'Mis on puudu?';
@@ -7569,7 +7584,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lostWalletStatementTitle => 'Kontrolli pangaväljavõtteid';
 
   @override
-  String get lostWalletStatementBody => 'Otsi makseid, mida sa pole rahakoti kadumisest saadik teinud.';
+  String get lostWalletStatementBody => 'Otsi makseid, mida sa pole teinud pärast asjade kadumist.';
 
   @override
   String get lostWalletFoundButton => 'Leidsin selle';
@@ -7675,7 +7690,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialsSubHousehold => 'Kutsu teisi kirjeid ja meeldetuletusi jagama';
 
   @override
-  String get tutorialsTitleLostWallet => 'Kaotasin rahakoti';
+  String get tutorialsTitleLostWallet => 'Kadunud või varastatud';
 
   @override
   String get tutorialsSubLostWallet => 'Valmistu kohe ja tegutse kiiresti, kui see kaob';
@@ -7766,7 +7781,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get whatsNewBadge => 'Uus';
 
   @override
-  String get whatsNewTitle => 'Kaotasin rahakoti';
+  String get whatsNewTitle => 'Kadunud või varastatud';
 
   @override
   String get whatsNewBody => 'Salvesta, kus sa kaarte hoiad, ja iga panga sulgemisnumber. Kui rahakott kaob, sulged kõik mõne minutiga.';
@@ -7908,7 +7923,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get storyWallet3Title => 'Kui see kaob';
 
   @override
-  String get storyWallet3Body => 'Ava „Kaotasin rahakoti“ ja puuduta „Kadunud“ või „Varastatud“. Vaultara loetleb kõik, mis selles oli.';
+  String get storyWallet3Body => 'Ava Kadunud või varastatud ja puuduta Kadunud või Varastatud. Vaultara näitab kõike, mis sees oli.';
 
   @override
   String get storyWallet4Title => 'Sulge kaardid minutitega';

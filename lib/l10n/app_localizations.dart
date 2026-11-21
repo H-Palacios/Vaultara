@@ -4447,6 +4447,36 @@ abstract class AppLocalizations {
   /// **'Changed to lost. Your progress is kept.'**
   String get lostWalletSwitchedLost;
 
+  /// Lost (not stolen) items: first step, freezing cards in the banking app, which can be undone
+  ///
+  /// In en, this message translates to:
+  /// **'Freeze your cards in your banking app. You can unfreeze them if it turns up'**
+  String get lifeTaskWalletFreezeLost;
+
+  /// Lost items: step to cancel the frozen cards if still missing after a day
+  ///
+  /// In en, this message translates to:
+  /// **'Still missing after a day? Cancel the frozen cards and order new ones'**
+  String get lifeTaskWalletCancelIfMissing;
+
+  /// Reminder title the day after something was lost
+  ///
+  /// In en, this message translates to:
+  /// **'Still missing?'**
+  String get lostWalletStillMissingTitle;
+
+  /// Reminder text the day after something was lost
+  ///
+  /// In en, this message translates to:
+  /// **'If it hasn\'t turned up, cancel the frozen cards and order new ones.'**
+  String get lostWalletStillMissingBody;
+
+  /// Shown after ticking a card or step in Lost or stolen, with Undo
+  ///
+  /// In en, this message translates to:
+  /// **'Marked as done'**
+  String get lostWalletMarkedDone;
+
   /// Heading above the departure, flights and return timeline on a trip
   ///
   /// In en, this message translates to:
@@ -5122,7 +5152,7 @@ abstract class AppLocalizations {
   /// Screen title and settings tile title
   ///
   /// In en, this message translates to:
-  /// **'Lost my wallet'**
+  /// **'Lost or stolen'**
   String get lostWalletTitle;
 
   /// Settings tile subtitle
@@ -5956,7 +5986,7 @@ abstract class AppLocalizations {
   /// Short description of the Smart tools tutorial card.
   ///
   /// In en, this message translates to:
-  /// **'Lost wallet, life events, proof packs and shared links'**
+  /// **'Lost or stolen, life events, proof packs and shared links'**
   String get tutorialsSmartToolsSubtitle;
 
   /// Title of the Family and people tutorial card on the Tutorials screen.
@@ -12478,19 +12508,19 @@ abstract class AppLocalizations {
   /// Life event option, first person
   ///
   /// In en, this message translates to:
-  /// **'I lost my wallet'**
+  /// **'Lost items'**
   String get lifeEventWalletLost;
 
   /// Short explanation shown in a lost wallet plan.
   ///
   /// In en, this message translates to:
-  /// **'Block your cards first, then replace your documents one by one.'**
+  /// **'Freeze your cards first. If it\'s still missing, cancel them and replace your documents one by one.'**
   String get lifeEventWalletLostBody;
 
   /// Life event option, first person
   ///
   /// In en, this message translates to:
-  /// **'My wallet was stolen'**
+  /// **'Stolen items'**
   String get lifeEventWalletStolen;
 
   /// Short explanation shown in a lost wallet plan.
@@ -12586,13 +12616,13 @@ abstract class AppLocalizations {
   /// A step in a lost wallet plan. Imperative, short.
   ///
   /// In en, this message translates to:
-  /// **'Check whether your insurance covers the wallet and cash'**
+  /// **'Check whether your insurance covers what was taken and any cash'**
   String get lifeTaskWalletInsurance;
 
   /// On the Lost my wallet screen.
   ///
   /// In en, this message translates to:
-  /// **'Lost your wallet?'**
+  /// **'Lost something, or was it stolen?'**
   String get lostWalletHeroTitle;
 
   /// On the Lost my wallet screen.
@@ -12616,13 +12646,13 @@ abstract class AppLocalizations {
   /// Under the Lost choice.
   ///
   /// In en, this message translates to:
-  /// **'Dropped or left somewhere'**
+  /// **'Dropped or left somewhere. Freeze first, cancel only if it stays missing'**
   String get lostWalletLostHint;
 
   /// Under the Stolen choice.
   ///
   /// In en, this message translates to:
-  /// **'Someone took it'**
+  /// **'Someone took it. Block everything and report it'**
   String get lostWalletStolenHint;
 
   /// Question above the places that were lost.
@@ -13024,7 +13054,7 @@ abstract class AppLocalizations {
   /// Notification body.
   ///
   /// In en, this message translates to:
-  /// **'Look for payments you did not make since your wallet went missing.'**
+  /// **'Look for payments you did not make since your things went missing.'**
   String get lostWalletStatementBody;
 
   /// Button for when the lost wallet turns up.
@@ -13204,7 +13234,7 @@ abstract class AppLocalizations {
   /// Short title of a tutorial.
   ///
   /// In en, this message translates to:
-  /// **'Lost my wallet'**
+  /// **'Lost or stolen'**
   String get tutorialsTitleLostWallet;
 
   /// One line on what a tutorial covers.
@@ -13366,7 +13396,7 @@ abstract class AppLocalizations {
   /// Title of the What's new card.
   ///
   /// In en, this message translates to:
-  /// **'Lost my wallet'**
+  /// **'Lost or stolen'**
   String get whatsNewTitle;
 
   /// Body of the What's new card.
@@ -13642,7 +13672,7 @@ abstract class AppLocalizations {
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'Open Lost my wallet and tap Lost or Stolen. Vaultara lists everything that was inside.'**
+  /// **'Open Lost or stolen and tap Lost or Stolen. Vaultara lists everything that was inside.'**
   String get storyWallet3Body;
 
   /// Title of a tutorial step. Short.

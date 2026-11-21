@@ -2404,6 +2404,21 @@ class AppLocalizationsNe extends AppLocalizations {
   String get lostWalletSwitchedLost => 'हराएकोमा बदलियो। तपाईंको प्रगति रहन्छ।';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'बैंकिङ एपमा कार्डहरू फ्रिज गर्नुहोस्। भेटिए फेरि खोल्न सक्नुहुन्छ';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'एक दिनपछि पनि नभेटिएको? फ्रिज गरिएका कार्ड रद्द गरेर नयाँ मगाउनुहोस्';
+
+  @override
+  String get lostWalletStillMissingTitle => 'अझै भेटिएन?';
+
+  @override
+  String get lostWalletStillMissingBody => 'नभेटिएमा, फ्रिज गरिएका कार्ड रद्द गरेर नयाँ मगाउनुहोस्।';
+
+  @override
+  String get lostWalletMarkedDone => 'पूरा भएको रूपमा चिन्ह लगाइयो';
+
+  @override
   String get travelSectionJourney => 'तपाईंको यात्रा';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get startRenewingNow => 'नवीकरण गर्न सुरु गर्ने समय भयो';
 
   @override
-  String get lostWalletTitle => 'मेरो वालेट हरायो';
+  String get lostWalletTitle => 'हराएको वा चोरी भएको';
 
   @override
   String get lostWalletSubtitle => 'त्यसमा के के थियो र के फेर्नुपर्छ हेर्नुहोस्';
@@ -3431,7 +3446,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'स्मार्ट उपकरण प्रयोग गर्ने तरिका';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'हराएको वालेट, जीवनका घटनाहरू, प्रमाण प्याक र सेयर गरिएका लिङ्कहरू';
+  String get tutorialsSmartToolsSubtitle => 'हराएको वा चोरी भएको, जीवनका घटना, प्रमाण प्याक र साझा लिङ्कहरू';
 
   @override
   String get tutorialsFamilyTitle => 'परिवार र मानिसहरू';
@@ -7256,13 +7271,13 @@ class AppLocalizationsNe extends AppLocalizations {
   String get lostLineHelper => 'अहिले नै सेभ गर्नुहोस्। नम्बर कार्डमा छापिएको हुन्छ, त्यसैले चाहिएको बेला तपाईंसँग हुँदैन।';
 
   @override
-  String get lifeEventWalletLost => 'मेरो पर्स हरायो';
+  String get lifeEventWalletLost => 'हराएका सामान';
 
   @override
-  String get lifeEventWalletLostBody => 'पहिले कार्डहरू ब्लक गर्नुहोस्, त्यसपछि कागजातहरू एक-एक गरी बदल्नुहोस्।';
+  String get lifeEventWalletLostBody => 'पहिले आफ्ना कार्डहरू फ्रिज गर्नुहोस्। अझै नभेटिए, रद्द गर्नुहोस् र कागजातहरू एक-एक गरी बदल्नुहोस्।';
 
   @override
-  String get lifeEventWalletStolen => 'मेरो पर्स चोरी भयो';
+  String get lifeEventWalletStolen => 'चोरी भएका सामान';
 
   @override
   String get lifeEventWalletStolenBody => 'तुरुन्तै कार्डहरू ब्लक गर्नुहोस् र चोरीको उजुरी गर्नुहोस्। त्यसपछि ठगीका लागि खाताहरूमा नजर राख्नुहोस्।';
@@ -7310,10 +7325,10 @@ class AppLocalizationsNe extends AppLocalizations {
   String get lifeTaskWalletLocks => 'भित्र साँचो वा तपाईंको ठेगाना थियो भने ताला फेर्ने बारे सोच्नुहोस्';
 
   @override
-  String get lifeTaskWalletInsurance => 'तपाईंको बिमाले पर्स र नगद समेट्छ कि जाँच्नुहोस्';
+  String get lifeTaskWalletInsurance => 'बिमाले लगिएका सामान र नगद समेट्छ कि जाँच गर्नुहोस्';
 
   @override
-  String get lostWalletHeroTitle => 'पर्स हरायो?';
+  String get lostWalletHeroTitle => 'केही हरायो, कि चोरी भयो?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara ले पहिले के ब्लक गर्ने, के बदल्ने र कसलाई भन्ने देखाउँछ।';
@@ -7325,10 +7340,10 @@ class AppLocalizationsNe extends AppLocalizations {
   String get lostWalletEditTitle => 'विवरण बदल्नुहोस्';
 
   @override
-  String get lostWalletLostHint => 'खस्यो वा कतै छुट्यो';
+  String get lostWalletLostHint => 'खस्यो वा कतै छुट्यो। पहिले फ्रिज गर्नुहोस्, नभेटिए मात्र रद्द गर्नुहोस्';
 
   @override
-  String get lostWalletStolenHint => 'कसैले लग्यो';
+  String get lostWalletStolenHint => 'कसैले लग्यो। सबै ब्लक गर्नुहोस् र उजुरी गर्नुहोस्';
 
   @override
   String get lostWalletWhatMissing => 'के हराएको छ?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get lostWalletStatementTitle => 'बैंक स्टेटमेन्ट जाँच्नुहोस्';
 
   @override
-  String get lostWalletStatementBody => 'पर्स हराएदेखि तपाईंले नगरेका भुक्तानी खोज्नुहोस्।';
+  String get lostWalletStatementBody => 'सामान हराएदेखि तपाईंले नगरेका भुक्तानीहरू खोज्नुहोस्।';
 
   @override
   String get lostWalletFoundButton => 'मैले भेटें';
@@ -7671,7 +7686,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tutorialsSubHousehold => 'रेकर्ड र रिमाइन्डर सेयर गर्न अरूलाई निम्तो दिनुहोस्';
 
   @override
-  String get tutorialsTitleLostWallet => 'मेरो वालेट हरायो';
+  String get tutorialsTitleLostWallet => 'हराएको वा चोरी भएको';
 
   @override
   String get tutorialsSubLostWallet => 'अहिले नै तयारी गर्नुहोस्, हराए छिटो कदम चाल्नुहोस्';
@@ -7762,7 +7777,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get whatsNewBadge => 'नयाँ';
 
   @override
-  String get whatsNewTitle => 'मेरो वालेट हरायो';
+  String get whatsNewTitle => 'हराएको वा चोरी भएको';
 
   @override
   String get whatsNewBody => 'तपाईं कार्ड कहाँ राख्नुहुन्छ र हरेक बैंकको ब्लक नम्बर सेभ गर्नुहोस्। पर्स हराए तपाईं मिनेटमै सबै ब्लक गर्नुहुन्छ।';
@@ -7904,7 +7919,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get storyWallet3Title => 'हराएमा';
 
   @override
-  String get storyWallet3Body => '«मेरो वालेट हरायो» खोल्नुहोस् र «हरायो» वा «चोरी भयो» मा ट्याप गर्नुहोस्। Vaultara ले त्यसमा भएका सबै सूचीबद्ध गर्छ।';
+  String get storyWallet3Body => 'हराएको वा चोरी भएको खोल्नुहोस् र हराएको वा चोरी भएको थिच्नुहोस्। Vaultara ले भित्र भएका सबै देखाउँछ।';
 
   @override
   String get storyWallet4Title => 'मिनेटमै कार्ड ब्लक गर्नुहोस्';

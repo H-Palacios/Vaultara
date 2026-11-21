@@ -2403,6 +2403,21 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Алдагдсан болгож өөрчиллөө. Таны явц хадгалагдана.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Банкны апп дээр картуудаа түр хаа. Олдвол дахин нээж болно';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Нэг өдрийн дараа ч олдоогүй юу? Түр хаасан картуудаа цуцалж, шинээр захиал';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Одоо ч олдоогүй юу?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Олдоогүй бол түр хаасан картуудаа цуцалж, шинээр захиалаарай.';
+
+  @override
+  String get lostWalletMarkedDone => 'Дууссан гэж тэмдэглэлээ';
+
+  @override
   String get travelSectionJourney => 'Таны аялал';
 
   @override
@@ -2839,7 +2854,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get startRenewingNow => 'Сунгалтаа эхлэх цаг боллоо';
 
   @override
-  String get lostWalletTitle => 'Түрийвчээ гээлээ';
+  String get lostWalletTitle => 'Алдагдсан эсвэл хулгайлагдсан';
 
   @override
   String get lostWalletSubtitle => 'Түүнд юу байсан, юуг солих ёстойг харна уу';
@@ -3430,7 +3445,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Ухаалаг хэрэгслүүдийг ашиглах';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Гээсэн түрийвч, амьдралын үйл явдлууд, нотлох багц, хуваалцсан холбоосууд';
+  String get tutorialsSmartToolsSubtitle => 'Алдагдсан эсвэл хулгайлагдсан, амьдралын үйл явдал, нотлох багц, хуваалцсан холбоос';
 
   @override
   String get tutorialsFamilyTitle => 'Гэр бүл ба хүмүүс';
@@ -7246,13 +7261,13 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lostLineHelper => 'Одоо хадгална уу. Дугаар нь карт дээр хэвлэгдсэн тул хэрэгтэй үед танд байхгүй.';
 
   @override
-  String get lifeEventWalletLost => 'Түрийвчээ алдсан';
+  String get lifeEventWalletLost => 'Алдагдсан эд зүйл';
 
   @override
-  String get lifeEventWalletLostBody => 'Эхлээд картуудаа хааж, дараа нь баримт бичгээ нэг нэгээр нь солино уу.';
+  String get lifeEventWalletLostBody => 'Эхлээд картуудаа түр хаа. Одоо ч олдохгүй бол цуцалж, бичиг баримтаа нэг нэгээр нь солиорой.';
 
   @override
-  String get lifeEventWalletStolen => 'Түрийвчийг минь хулгайлсан';
+  String get lifeEventWalletStolen => 'Хулгайлагдсан эд зүйл';
 
   @override
   String get lifeEventWalletStolenBody => 'Картуудаа даруй хааж, хулгайн талаар мэдэгдээрэй. Дараа нь залилангаас сэргийлж дансаа хянаарай.';
@@ -7300,10 +7315,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Дотор нь түлхүүр эсвэл хаяг чинь байсан бол цоож солих талаар бод';
 
   @override
-  String get lifeTaskWalletInsurance => 'Даатгал чинь түрийвч болон бэлэн мөнгийг нөхөх эсэхийг шалга';
+  String get lifeTaskWalletInsurance => 'Даатгал тань авсан зүйл болон бэлэн мөнгийг нөхөх эсэхийг шалгаарай';
 
   @override
-  String get lostWalletHeroTitle => 'Түрийвчээ алдсан уу?';
+  String get lostWalletHeroTitle => 'Ямар нэг юм алдсан уу, эсвэл хулгайлуулсан уу?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara эхлээд юуг хаах, юуг солих, хэнд мэдэгдэхийг харуулна.';
@@ -7315,10 +7330,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lostWalletEditTitle => 'Дэлгэрэнгүйг өөрчлөх';
 
   @override
-  String get lostWalletLostHint => 'Унасан эсвэл хаа нэгтээ мартсан';
+  String get lostWalletLostHint => 'Унасан эсвэл хаа нэг газар мартсан. Эхлээд түр хаа, олдохгүй бол л цуцал';
 
   @override
-  String get lostWalletStolenHint => 'Хэн нэгэн авсан';
+  String get lostWalletStolenHint => 'Хэн нэгэн авсан. Бүгдийг хааж, мэдэгдээрэй';
 
   @override
   String get lostWalletWhatMissing => 'Юу алга?';
@@ -7556,7 +7571,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lostWalletStatementTitle => 'Банкны хуулгаа шалга';
 
   @override
-  String get lostWalletStatementBody => 'Түрийвч алдагдсанаас хойш хийгээгүй төлбөрүүдийг хай.';
+  String get lostWalletStatementBody => 'Эд зүйлсээ алдсанаас хойш өөрөө хийгээгүй төлбөрийг хайгаарай.';
 
   @override
   String get lostWalletFoundButton => 'Олчихлоо';
@@ -7661,7 +7676,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialsSubHousehold => 'Бүртгэл болон сануулгаа хуваалцахаар бусдыг урих';
 
   @override
-  String get tutorialsTitleLostWallet => 'Түрийвчээ гээлээ';
+  String get tutorialsTitleLostWallet => 'Алдагдсан эсвэл хулгайлагдсан';
 
   @override
   String get tutorialsSubLostWallet => 'Одоо бэлдээрэй, алга болвол шуурхай арга хэмжээ аваарай';
@@ -7752,7 +7767,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get whatsNewBadge => 'Шинэ';
 
   @override
-  String get whatsNewTitle => 'Түрийвчээ гээлээ';
+  String get whatsNewTitle => 'Алдагдсан эсвэл хулгайлагдсан';
 
   @override
   String get whatsNewBody => 'Картаа хаана хадгалдаг болон банк бүрийн хаах дугаарыг хадгална уу. Түрийвч алга болвол хэдхэн минутад бүгдийг хаана.';
@@ -7894,7 +7909,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get storyWallet3Title => 'Хэрэв алга болвол';
 
   @override
-  String get storyWallet3Body => '«Түрийвчээ гээлээ»-г нээгээд «Алдсан» эсвэл «Хулгайлагдсан»-г товшино уу. Vaultara дотор байсан бүхнийг жагсаана.';
+  String get storyWallet3Body => 'Алдагдсан эсвэл хулгайлагдсан хэсгийг нээж, Алдагдсан эсвэл Хулгайлагдсан дээр дарна уу. Vaultara дотор нь байсан бүхнийг харуулна.';
 
   @override
   String get storyWallet4Title => 'Картуудыг минутанд хаах';

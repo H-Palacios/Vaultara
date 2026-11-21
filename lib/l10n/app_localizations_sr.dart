@@ -2414,6 +2414,21 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Промењено у изгубљен. Ваш напредак остаје.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Замрзните картице у банкарској апликацији. Можете их одмрзнути ако се пронађе';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'И даље недостаје после једног дана? Откажите замрзнуте картице и наручите нове';
+
+  @override
+  String get lostWalletStillMissingTitle => 'И даље недостаје?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ако се није појавило, откажите замрзнуте картице и наручите нове.';
+
+  @override
+  String get lostWalletMarkedDone => 'Означено као готово';
+
+  @override
   String get travelSectionJourney => 'Ваше путовање';
 
   @override
@@ -2859,7 +2874,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get startRenewingNow => 'Време је да почнете са обновом';
 
   @override
-  String get lostWalletTitle => 'Изгубљен новчаник';
+  String get lostWalletTitle => 'Изгубљено или украдено';
 
   @override
   String get lostWalletSubtitle => 'Погледајте шта је било у њему и шта треба заменити';
@@ -3465,7 +3480,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Коришћење паметних алата';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Изгубљен новчаник, животни догађаји, пакети доказа и подељени линкови';
+  String get tutorialsSmartToolsSubtitle => 'Изгубљено или украдено, животни догађаји, пакети доказа и дељене везе';
 
   @override
   String get tutorialsFamilyTitle => 'Породица и особе';
@@ -7325,13 +7340,13 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lostLineHelper => 'Сачувајте га сада. Број је на картици, па га нећете имати кад вам затреба.';
 
   @override
-  String get lifeEventWalletLost => 'Изгубио сам новчаник';
+  String get lifeEventWalletLost => 'Изгубљене ствари';
 
   @override
-  String get lifeEventWalletLostBody => 'Прво блокирајте картице, а затим замените документе један по један.';
+  String get lifeEventWalletLostBody => 'Прво замрзните картице. Ако и даље недостаје, откажите их и замените документе један по један.';
 
   @override
-  String get lifeEventWalletStolen => 'Украли су ми новчаник';
+  String get lifeEventWalletStolen => 'Украдене ствари';
 
   @override
   String get lifeEventWalletStolenBody => 'Одмах блокирајте картице и пријавите крађу. Затим пазите на преваре на рачунима.';
@@ -7379,10 +7394,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ако су унутра били кључеви или ваша адреса, размислите о замени брава';
 
   @override
-  String get lifeTaskWalletInsurance => 'Проверите да ли осигурање покрива новчаник и готовину';
+  String get lifeTaskWalletInsurance => 'Проверите да ли осигурање покрива узето и готовину';
 
   @override
-  String get lostWalletHeroTitle => 'Изгубили сте новчаник?';
+  String get lostWalletHeroTitle => 'Изгубили сте нешто или је украдено?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara показује шта прво блокирати, шта заменити и кога обавестити.';
@@ -7394,10 +7409,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lostWalletEditTitle => 'Промени податке';
 
   @override
-  String get lostWalletLostHint => 'Испао је или сам га негде оставио';
+  String get lostWalletLostHint => 'Испало или остављено негде. Прво замрзните, откажите само ако и даље недостаје';
 
   @override
-  String get lostWalletStolenHint => 'Неко га је узео';
+  String get lostWalletStolenHint => 'Неко га је узео. Блокирајте све и пријавите';
 
   @override
   String get lostWalletWhatMissing => 'Шта недостаје?';
@@ -7635,7 +7650,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lostWalletStatementTitle => 'Проверите банковне изводе';
 
   @override
-  String get lostWalletStatementBody => 'Тражите плаћања која нисте направили откако је новчаник нестао.';
+  String get lostWalletStatementBody => 'Потражите плаћања која нисте извршили откад су вам ствари нестале.';
 
   @override
   String get lostWalletFoundButton => 'Пронашао сам га';
@@ -7740,7 +7755,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tutorialsSubHousehold => 'Позовите друге да деле записе и подсетнике';
 
   @override
-  String get tutorialsTitleLostWallet => 'Изгубљен новчаник';
+  String get tutorialsTitleLostWallet => 'Изгубљено или украдено';
 
   @override
   String get tutorialsSubLostWallet => 'Припремите се сада и брзо реагујте ако се изгуби';
@@ -7832,7 +7847,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get whatsNewBadge => 'Ново';
 
   @override
-  String get whatsNewTitle => 'Изгубљен новчаник';
+  String get whatsNewTitle => 'Изгубљено или украдено';
 
   @override
   String get whatsNewBody => 'Сачувајте где држите картице и број за блокаду сваке банке. Ако изгубите новчаник, све блокирате за неколико минута.';
@@ -7974,7 +7989,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get storyWallet3Title => 'Ако се изгуби';
 
   @override
-  String get storyWallet3Body => 'Отворите „Изгубљен новчаник” и додирните „Изгубљен” или „Украден”. Vaultara наводи све што је било у њему.';
+  String get storyWallet3Body => 'Отворите Изгубљено или украдено и додирните Изгубљено или Украдено. Vaultara приказује све што је било унутра.';
 
   @override
   String get storyWallet4Title => 'Блокирајте картице за неколико минута';
@@ -12240,6 +12255,21 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lostWalletSwitchedLost => 'Промењено у изгубљен. Ваш напредак остаје.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Замрзните картице у банкарској апликацији. Можете их одмрзнути ако се пронађе';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'И даље недостаје после једног дана? Откажите замрзнуте картице и наручите нове';
+
+  @override
+  String get lostWalletStillMissingTitle => 'И даље недостаје?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ако се није појавило, откажите замрзнуте картице и наручите нове.';
+
+  @override
+  String get lostWalletMarkedDone => 'Означено као готово';
+
+  @override
   String get travelSectionJourney => 'Ваше путовање';
 
   @override
@@ -12685,7 +12715,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get startRenewingNow => 'Време је да почнете са обновом';
 
   @override
-  String get lostWalletTitle => 'Нестао ми је новчаник';
+  String get lostWalletTitle => 'Изгубљено или украдено';
 
   @override
   String get lostWalletSubtitle => 'Погледајте шта је било у њему и шта треба заменити';
@@ -13291,7 +13321,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tutorialsSmartToolsTitle => 'Коришћење паметних алата';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Изгубљен новчаник, животни догађаји, пакети доказа и подељени линкови';
+  String get tutorialsSmartToolsSubtitle => 'Изгубљено или украдено, животни догађаји, пакети доказа и дељене везе';
 
   @override
   String get tutorialsFamilyTitle => 'Породица и људи';
@@ -17151,13 +17181,13 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lostLineHelper => 'Сачувајте га сада. Број је на картици, па га нећете имати кад вам затреба.';
 
   @override
-  String get lifeEventWalletLost => 'Изгубио сам новчаник';
+  String get lifeEventWalletLost => 'Изгубљене ствари';
 
   @override
-  String get lifeEventWalletLostBody => 'Прво блокирајте картице, а затим замените документе један по један.';
+  String get lifeEventWalletLostBody => 'Прво замрзните картице. Ако и даље недостаје, откажите их и замените документе један по један.';
 
   @override
-  String get lifeEventWalletStolen => 'Украли су ми новчаник';
+  String get lifeEventWalletStolen => 'Украдене ствари';
 
   @override
   String get lifeEventWalletStolenBody => 'Одмах блокирајте картице и пријавите крађу. Затим пазите на преваре на рачунима.';
@@ -17205,10 +17235,10 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lifeTaskWalletLocks => 'Ако су унутра били кључеви или ваша адреса, размислите о замени брава';
 
   @override
-  String get lifeTaskWalletInsurance => 'Проверите да ли осигурање покрива новчаник и готовину';
+  String get lifeTaskWalletInsurance => 'Проверите да ли осигурање покрива узето и готовину';
 
   @override
-  String get lostWalletHeroTitle => 'Изгубили сте новчаник?';
+  String get lostWalletHeroTitle => 'Изгубили сте нешто или је украдено?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara показује шта прво блокирати, шта заменити и кога обавестити.';
@@ -17220,10 +17250,10 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lostWalletEditTitle => 'Промени податке';
 
   @override
-  String get lostWalletLostHint => 'Испао је или сам га негде оставио';
+  String get lostWalletLostHint => 'Испало или остављено негде. Прво замрзните, откажите само ако и даље недостаје';
 
   @override
-  String get lostWalletStolenHint => 'Неко га је узео';
+  String get lostWalletStolenHint => 'Неко га је узео. Блокирајте све и пријавите';
 
   @override
   String get lostWalletWhatMissing => 'Шта недостаје?';
@@ -17461,7 +17491,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lostWalletStatementTitle => 'Проверите банковне изводе';
 
   @override
-  String get lostWalletStatementBody => 'Тражите плаћања која нисте направили откако је новчаник нестао.';
+  String get lostWalletStatementBody => 'Потражите плаћања која нисте извршили откад су вам ствари нестале.';
 
   @override
   String get lostWalletFoundButton => 'Пронашао сам га';
@@ -17566,7 +17596,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tutorialsSubHousehold => 'Позовите друге да деле записе и подсетнике';
 
   @override
-  String get tutorialsTitleLostWallet => 'Нестао ми је новчаник';
+  String get tutorialsTitleLostWallet => 'Изгубљено или украдено';
 
   @override
   String get tutorialsSubLostWallet => 'Припремите се сада и брзо реагујте ако се изгуби';
@@ -17658,7 +17688,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get whatsNewBadge => 'Ново';
 
   @override
-  String get whatsNewTitle => 'Нестао ми је новчаник';
+  String get whatsNewTitle => 'Изгубљено или украдено';
 
   @override
   String get whatsNewBody => 'Сачувајте где држите картице и број за блокаду сваке банке. Ако изгубите новчаник, све блокирате за неколико минута.';
@@ -17800,7 +17830,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get storyWallet3Title => 'Ако се изгуби';
 
   @override
-  String get storyWallet3Body => 'Отворите „Нестао ми је новчаник” и додирните „Изгубљен” или „Украден”. Vaultara наводи све што је било у њему.';
+  String get storyWallet3Body => 'Отворите Изгубљено или украдено и додирните Изгубљено или Украдено. Vaultara приказује све што је било унутра.';
 
   @override
   String get storyWallet4Title => 'Блокирајте картице за неколико минута';
@@ -22066,6 +22096,21 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get lostWalletSwitchedLost => 'Promenjeno u izgubljen. Vaš napredak ostaje.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Zamrznite kartice u bankarskoj aplikaciji. Možete ih odmrznuti ako se pronađe';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'I dalje nedostaje posle jednog dana? Otkažite zamrznute kartice i naručite nove';
+
+  @override
+  String get lostWalletStillMissingTitle => 'I dalje nedostaje?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ako se nije pojavilo, otkažite zamrznute kartice i naručite nove.';
+
+  @override
+  String get lostWalletMarkedDone => 'Označeno kao gotovo';
+
+  @override
   String get travelSectionJourney => 'Vaše putovanje';
 
   @override
@@ -22511,7 +22556,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get startRenewingNow => 'Vreme je da počnete obnovu';
 
   @override
-  String get lostWalletTitle => 'Izgubljen novčanik';
+  String get lostWalletTitle => 'Izgubljeno ili ukradeno';
 
   @override
   String get lostWalletSubtitle => 'Pogledajte šta je bilo u njemu i šta treba zameniti';
@@ -23113,7 +23158,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tutorialsSmartToolsTitle => 'Korišćenje pametnih alata';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Izgubljen novčanik, životni događaji, paketi dokaza i deljeni linkovi';
+  String get tutorialsSmartToolsSubtitle => 'Izgubljeno ili ukradeno, životni događaji, paketi dokaza i deljene veze';
 
   @override
   String get tutorialsFamilyTitle => 'Porodica i osobe';
@@ -26973,13 +27018,13 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get lostLineHelper => 'Sačuvajte ga sada. Broj je na kartici, pa ga nećete imati kad vam zatreba.';
 
   @override
-  String get lifeEventWalletLost => 'Izgubio sam novčanik';
+  String get lifeEventWalletLost => 'Izgubljene stvari';
 
   @override
-  String get lifeEventWalletLostBody => 'Prvo blokirajte kartice, a zatim zamenite dokumente jedan po jedan.';
+  String get lifeEventWalletLostBody => 'Prvo zamrznite kartice. Ako i dalje nedostaje, otkažite ih i zamenite dokumente jedan po jedan.';
 
   @override
-  String get lifeEventWalletStolen => 'Ukrali su mi novčanik';
+  String get lifeEventWalletStolen => 'Ukradene stvari';
 
   @override
   String get lifeEventWalletStolenBody => 'Odmah blokirajte kartice i prijavite krađu. Zatim pazite na prevare na računima.';
@@ -27027,10 +27072,10 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get lifeTaskWalletLocks => 'Ako su unutra bili ključevi ili vaša adresa, razmislite o zameni brava';
 
   @override
-  String get lifeTaskWalletInsurance => 'Proverite da li osiguranje pokriva novčanik i gotovinu';
+  String get lifeTaskWalletInsurance => 'Proverite da li osiguranje pokriva uzeto i gotovinu';
 
   @override
-  String get lostWalletHeroTitle => 'Izgubili ste novčanik?';
+  String get lostWalletHeroTitle => 'Izgubili ste nešto ili je ukradeno?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara pokazuje šta prvo blokirati, šta zameniti i koga obavestiti.';
@@ -27042,10 +27087,10 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get lostWalletEditTitle => 'Promeni podatke';
 
   @override
-  String get lostWalletLostHint => 'Ispao je ili sam ga negde ostavio';
+  String get lostWalletLostHint => 'Ispalo ili ostavljeno negde. Prvo zamrznite, otkažite samo ako i dalje nedostaje';
 
   @override
-  String get lostWalletStolenHint => 'Neko ga je uzeo';
+  String get lostWalletStolenHint => 'Neko ga je uzeo. Blokirajte sve i prijavite';
 
   @override
   String get lostWalletWhatMissing => 'Šta nedostaje?';
@@ -27283,7 +27328,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get lostWalletStatementTitle => 'Proverite bankovne izvode';
 
   @override
-  String get lostWalletStatementBody => 'Tražite plaćanja koja niste napravili otkako je novčanik nestao.';
+  String get lostWalletStatementBody => 'Potražite plaćanja koja niste izvršili otkad su vam stvari nestale.';
 
   @override
   String get lostWalletFoundButton => 'Pronašao sam ga';
@@ -27388,7 +27433,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tutorialsSubHousehold => 'Pozovite druge da dele zapise i podsetnike';
 
   @override
-  String get tutorialsTitleLostWallet => 'Izgubljen novčanik';
+  String get tutorialsTitleLostWallet => 'Izgubljeno ili ukradeno';
 
   @override
   String get tutorialsSubLostWallet => 'Pripremite se sada i brzo reagujte ako se izgubi';
@@ -27480,7 +27525,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get whatsNewBadge => 'Novo';
 
   @override
-  String get whatsNewTitle => 'Izgubljen novčanik';
+  String get whatsNewTitle => 'Izgubljeno ili ukradeno';
 
   @override
   String get whatsNewBody => 'Sačuvajte gde držite kartice i broj za blokadu svake banke. Ako izgubite novčanik, sve blokirate za nekoliko minuta.';
@@ -27622,7 +27667,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get storyWallet3Title => 'Ako se izgubi';
 
   @override
-  String get storyWallet3Body => 'Otvorite „Izgubljen novčanik” i dodirnite „Izgubljen” ili „Ukraden”. Vaultara navodi sve što je bilo u njemu.';
+  String get storyWallet3Body => 'Otvorite Izgubljeno ili ukradeno i dodirnite Izgubljeno ili Ukradeno. Vaultara prikazuje sve što je bilo unutra.';
 
   @override
   String get storyWallet4Title => 'Blokirajte kartice za nekoliko minuta';

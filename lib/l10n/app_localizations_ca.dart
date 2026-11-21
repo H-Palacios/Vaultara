@@ -2404,6 +2404,21 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Canviat a perdut. Es manté el teu progrés.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Congela les targetes a l\'app del banc. Pots descongelar-les si apareix';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Continua perdut després d\'un dia? Cancel·la les targetes congelades i demana\'n de noves';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Continua perdut?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Si no ha aparegut, cancel·la les targetes congelades i demana\'n de noves.';
+
+  @override
+  String get lostWalletMarkedDone => 'Marcat com a fet';
+
+  @override
   String get travelSectionJourney => 'El teu viatge';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get startRenewingNow => 'És hora de començar a renovar';
 
   @override
-  String get lostWalletTitle => 'He perdut la cartera';
+  String get lostWalletTitle => 'Perdut o robat';
 
   @override
   String get lostWalletSubtitle => 'Consulta què hi havia i què cal substituir';
@@ -3431,7 +3446,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Com fer servir les eines intel·ligents';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Cartera perduda, esdeveniments vitals, paquets de proves i enllaços compartits';
+  String get tutorialsSmartToolsSubtitle => 'Perdut o robat, esdeveniments vitals, paquets de proves i enllaços compartits';
 
   @override
   String get tutorialsFamilyTitle => 'Família i persones';
@@ -7256,13 +7271,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lostLineHelper => 'Desa\'l ara. El número és a la targeta, així que no el tindràs quan el necessitis.';
 
   @override
-  String get lifeEventWalletLost => 'He perdut la cartera';
+  String get lifeEventWalletLost => 'Objectes perduts';
 
   @override
-  String get lifeEventWalletLostBody => 'Bloqueja primer les targetes i després substitueix els documents un per un.';
+  String get lifeEventWalletLostBody => 'Congela primer les targetes. Si continua perdut, cancel·la-les i substitueix els documents un a un.';
 
   @override
-  String get lifeEventWalletStolen => 'M\'han robat la cartera';
+  String get lifeEventWalletStolen => 'Objectes robats';
 
   @override
   String get lifeEventWalletStolenBody => 'Bloqueja les targetes de seguida i denuncia el robatori. Després vigila els comptes per si hi ha frau.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Si hi havia claus o la teva adreça, pensa a canviar els panys';
 
   @override
-  String get lifeTaskWalletInsurance => 'Comprova si l\'assegurança cobreix la cartera i els diners';
+  String get lifeTaskWalletInsurance => 'Comprova si l\'assegurança cobreix el que s\'han endut i els diners en efectiu';
 
   @override
-  String get lostWalletHeroTitle => 'Has perdut la cartera?';
+  String get lostWalletHeroTitle => 'Has perdut alguna cosa o te l\'han robada?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara et mostra què bloquejar primer, què substituir i a qui avisar.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lostWalletEditTitle => 'Canvia les dades';
 
   @override
-  String get lostWalletLostHint => 'Ha caigut o me l\'he deixat en algun lloc';
+  String get lostWalletLostHint => 'Caigut o oblidat en algun lloc. Congela primer i cancel·la només si continua perdut';
 
   @override
-  String get lostWalletStolenHint => 'Algú se l\'ha endut';
+  String get lostWalletStolenHint => 'Algú se l\'ha endut. Bloqueja-ho tot i denuncia-ho';
 
   @override
   String get lostWalletWhatMissing => 'Què falta?';
@@ -7569,7 +7584,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lostWalletStatementTitle => 'Revisa els extractes bancaris';
 
   @override
-  String get lostWalletStatementBody => 'Busca pagaments que no has fet des que vas perdre la cartera.';
+  String get lostWalletStatementBody => 'Cerca pagaments que no has fet des que van desaparèixer les teves coses.';
 
   @override
   String get lostWalletFoundButton => 'L\'he trobada';
@@ -7675,7 +7690,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialsSubHousehold => 'Convida altres persones a compartir registres i recordatoris';
 
   @override
-  String get tutorialsTitleLostWallet => 'He perdut la cartera';
+  String get tutorialsTitleLostWallet => 'Perdut o robat';
 
   @override
   String get tutorialsSubLostWallet => 'Prepara\'t ara i actua de pressa si es perd';
@@ -7766,7 +7781,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get whatsNewBadge => 'Nou';
 
   @override
-  String get whatsNewTitle => 'He perdut la cartera';
+  String get whatsNewTitle => 'Perdut o robat';
 
   @override
   String get whatsNewBody => 'Desa on guardes les targetes i el número de bloqueig de cada banc. Si perds la cartera, ho bloqueges tot en minuts.';
@@ -7908,7 +7923,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get storyWallet3Title => 'Si es perd';
 
   @override
-  String get storyWallet3Body => 'Obre «He perdut la cartera» i toca «Perduda» o «Robada». Vaultara llista tot el que hi havia.';
+  String get storyWallet3Body => 'Obre Perdut o robat i toca Perdut o Robat. Vaultara mostra tot el que hi havia a dins.';
 
   @override
   String get storyWallet4Title => 'Bloqueja targetes en minuts';

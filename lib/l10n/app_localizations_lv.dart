@@ -2410,6 +2410,21 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Mainīts uz pazaudētu. Jūsu progress saglabājas.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Iesaldējiet kartes bankas lietotnē. Ja atradīsiet, varēsiet tās atkausēt';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Pēc dienas joprojām nav? Atceliet iesaldētās kartes un pasūtiet jaunas';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Joprojām nav?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ja tas nav atradies, atceliet iesaldētās kartes un pasūtiet jaunas.';
+
+  @override
+  String get lostWalletMarkedDone => 'Atzīmēts kā izdarīts';
+
+  @override
   String get travelSectionJourney => 'Jūsu ceļojums';
 
   @override
@@ -2855,7 +2870,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get startRenewingNow => 'Laiks sākt atjaunošanu';
 
   @override
-  String get lostWalletTitle => 'Pazaudēju maku';
+  String get lostWalletTitle => 'Pazaudēts vai nozagts';
 
   @override
   String get lostWalletSubtitle => 'Skatiet, kas tajā bija un kas jāaizstāj';
@@ -3461,7 +3476,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Viedo rīku izmantošana';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Pazaudēts maks, dzīves notikumi, pierādījumu komplekti un kopīgotās saites';
+  String get tutorialsSmartToolsSubtitle => 'Pazaudēts vai nozagts, dzīves notikumi, pierādījumu paketes un kopīgotās saites';
 
   @override
   String get tutorialsFamilyTitle => 'Ģimene un cilvēki';
@@ -7321,13 +7336,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lostLineHelper => 'Saglabā to tagad. Numurs ir uz kartes, tāpēc tad, kad vajadzēs, tā tev nebūs.';
 
   @override
-  String get lifeEventWalletLost => 'Es pazaudēju maku';
+  String get lifeEventWalletLost => 'Pazaudētās lietas';
 
   @override
-  String get lifeEventWalletLostBody => 'Vispirms bloķē kartes, tad aizstāj dokumentus pa vienam.';
+  String get lifeEventWalletLostBody => 'Vispirms iesaldējiet kartes. Ja tas joprojām nav atrasts, atceliet tās un nomainiet dokumentus pa vienam.';
 
   @override
-  String get lifeEventWalletStolen => 'Man nozaga maku';
+  String get lifeEventWalletStolen => 'Nozagtās lietas';
 
   @override
   String get lifeEventWalletStolenBody => 'Uzreiz bloķē kartes un ziņo par zādzību. Pēc tam seko kontiem, vai nav krāpšanas.';
@@ -7375,10 +7390,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ja tur bija atslēgas vai tava adrese, apsver slēdžu nomaiņu';
 
   @override
-  String get lifeTaskWalletInsurance => 'Pārbaudi, vai apdrošināšana sedz maku un skaidru naudu';
+  String get lifeTaskWalletInsurance => 'Pārbaudiet, vai apdrošināšana sedz paņemto un skaidru naudu';
 
   @override
-  String get lostWalletHeroTitle => 'Pazaudēji maku?';
+  String get lostWalletHeroTitle => 'Kaut ko pazaudējāt, vai tas tika nozagts?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara parāda, ko bloķēt vispirms, ko aizstāt un kam paziņot.';
@@ -7390,10 +7405,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lostWalletEditTitle => 'Mainīt datus';
 
   @override
-  String get lostWalletLostHint => 'Izkrita vai kaut kur palika';
+  String get lostWalletLostHint => 'Izkrita vai palika kaut kur. Vispirms iesaldējiet, atceliet tikai, ja neatrod';
 
   @override
-  String get lostWalletStolenHint => 'Kāds to paņēma';
+  String get lostWalletStolenHint => 'Kāds to paņēma. Bloķējiet visu un ziņojiet';
 
   @override
   String get lostWalletWhatMissing => 'Kā trūkst?';
@@ -7631,7 +7646,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lostWalletStatementTitle => 'Pārbaudi bankas izrakstus';
 
   @override
-  String get lostWalletStatementBody => 'Meklē maksājumus, ko neveici, kopš maks pazuda.';
+  String get lostWalletStatementBody => 'Meklējiet maksājumus, ko neveicāt kopš lietu pazušanas.';
 
   @override
   String get lostWalletFoundButton => 'Es to atradu';
@@ -7736,7 +7751,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialsSubHousehold => 'Uzaiciniet citus kopīgot ierakstus un atgādinājumus';
 
   @override
-  String get tutorialsTitleLostWallet => 'Pazaudēju maku';
+  String get tutorialsTitleLostWallet => 'Pazaudēts vai nozagts';
 
   @override
   String get tutorialsSubLostWallet => 'Sagatavojies tagad un rīkojies ātri, ja tas pazūd';
@@ -7828,7 +7843,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get whatsNewBadge => 'Jaunums';
 
   @override
-  String get whatsNewTitle => 'Pazaudēju maku';
+  String get whatsNewTitle => 'Pazaudēts vai nozagts';
 
   @override
   String get whatsNewBody => 'Saglabā, kur glabā kartes, un katras bankas bloķēšanas numuru. Ja pazaudēsi maku, visu nobloķēsi dažās minūtēs.';
@@ -7970,7 +7985,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get storyWallet3Title => 'Ja tas pazūd';
 
   @override
-  String get storyWallet3Body => 'Atver “Pazaudēju maku” un pieskaries “Pazaudēts” vai “Nozagts”. Vaultara uzskaita visu, kas tajā bija.';
+  String get storyWallet3Body => 'Atveriet Pazaudēts vai nozagts un pieskarieties Pazaudēts vai Nozagts. Vaultara parāda visu, kas bija iekšā.';
 
   @override
   String get storyWallet4Title => 'Bloķē kartes minūtēs';

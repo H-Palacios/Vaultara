@@ -2404,6 +2404,21 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Galdutara aldatuta. Zure aurrerapena gordetzen da.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Izoztu txartelak bankuko aplikazioan. Agertzen bada desizoztu ditzakezu';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Egun bat geroago oraindik ez da agertu? Ezeztatu izoztutako txartelak eta eskatu berriak';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Oraindik ez da agertu?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Agertu ez bada, ezeztatu izoztutako txartelak eta eskatu berriak.';
+
+  @override
+  String get lostWalletMarkedDone => 'Eginda gisa markatuta';
+
+  @override
   String get travelSectionJourney => 'Zure bidaia';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get startRenewingNow => 'Berritzen hasteko ordua da';
 
   @override
-  String get lostWalletTitle => 'Zorroa galdu dut';
+  String get lostWalletTitle => 'Galdua edo lapurtua';
 
   @override
   String get lostWalletSubtitle => 'Ikusi zer zegoen barruan eta zer ordezkatu behar den';
@@ -3431,7 +3446,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Tresna adimentsuak erabiltzen';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Galdutako zorroa, bizitzako gertaerak, froga-paketeak eta partekatutako estekak';
+  String get tutorialsSmartToolsSubtitle => 'Galdua edo lapurtua, bizitzako gertaerak, froga-paketeak eta partekatutako estekak';
 
   @override
   String get tutorialsFamilyTitle => 'Familia eta jendea';
@@ -7256,13 +7271,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lostLineHelper => 'Gorde orain. Zenbakia txartelean dago, beraz ez duzu izango behar duzunean.';
 
   @override
-  String get lifeEventWalletLost => 'Zorroa galdu dut';
+  String get lifeEventWalletLost => 'Galdutako gauzak';
 
   @override
-  String get lifeEventWalletLostBody => 'Blokeatu txartelak lehenik, eta gero ordeztu dokumentuak banan-banan.';
+  String get lifeEventWalletLostBody => 'Izoztu lehenik txartelak. Oraindik agertzen ez bada, ezeztatu eta ordeztu dokumentuak banan-banan.';
 
   @override
-  String get lifeEventWalletStolen => 'Zorroa lapurtu didate';
+  String get lifeEventWalletStolen => 'Lapurtutako gauzak';
 
   @override
   String get lifeEventWalletStolenBody => 'Blokeatu txartelak berehala eta salatu lapurreta. Gero zaindu kontuak iruzurrik ez izateko.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Giltzak edo zure helbidea bazeuden, pentsatu sarrailak aldatzea';
 
   @override
-  String get lifeTaskWalletInsurance => 'Egiaztatu aseguruak zorroa eta dirua estaltzen dituen';
+  String get lifeTaskWalletInsurance => 'Egiaztatu aseguruak eramandakoa eta dirua estaltzen dituen';
 
   @override
-  String get lostWalletHeroTitle => 'Zorroa galdu duzu?';
+  String get lostWalletHeroTitle => 'Zerbait galdu duzu, ala lapurtu dizute?';
 
   @override
   String get lostWalletHeroBody => 'Vaultarak erakusten dizu zer blokeatu lehenik, zer ordeztu eta nori abisatu.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lostWalletEditTitle => 'Aldatu datuak';
 
   @override
-  String get lostWalletLostHint => 'Erori zait edo nonbait ahaztu dut';
+  String get lostWalletLostHint => 'Erori edo nonbait ahaztuta. Izoztu lehenik, ezeztatu agertzen ez bada bakarrik';
 
   @override
-  String get lostWalletStolenHint => 'Norbaitek hartu du';
+  String get lostWalletStolenHint => 'Norbaitek hartu du. Blokeatu dena eta salatu';
 
   @override
   String get lostWalletWhatMissing => 'Zer falta da?';
@@ -7569,7 +7584,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lostWalletStatementTitle => 'Begiratu banku-laburpenak';
 
   @override
-  String get lostWalletStatementBody => 'Bilatu zorroa galdu zenuenetik egin ez dituzun ordainketak.';
+  String get lostWalletStatementBody => 'Bilatu zure gauzak desagertu zirenetik egin ez dituzun ordainketak.';
 
   @override
   String get lostWalletFoundButton => 'Aurkitu dut';
@@ -7675,7 +7690,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialsSubHousehold => 'Gonbidatu besteak erregistroak eta oroigarriak partekatzera';
 
   @override
-  String get tutorialsTitleLostWallet => 'Zorroa galdu dut';
+  String get tutorialsTitleLostWallet => 'Galdua edo lapurtua';
 
   @override
   String get tutorialsSubLostWallet => 'Prestatu orain, jardun azkar galtzen bada';
@@ -7766,7 +7781,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get whatsNewBadge => 'Berria';
 
   @override
-  String get whatsNewTitle => 'Zorroa galdu dut';
+  String get whatsNewTitle => 'Galdua edo lapurtua';
 
   @override
   String get whatsNewBody => 'Gorde non dituzun txartelak eta banku bakoitzaren blokeatze-zenbakia. Zorroa galtzen baduzu, dena minututan blokeatuko duzu.';
@@ -7908,7 +7923,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get storyWallet3Title => 'Galtzen bada';
 
   @override
-  String get storyWallet3Body => 'Ireki «Zorroa galdu dut» eta ukitu «Galduta» edo «Lapurtuta». Vaultarak barruan zegoen guztia zerrendatzen du.';
+  String get storyWallet3Body => 'Ireki Galdua edo lapurtua eta sakatu Galdua edo Lapurtua. Vaultara-k barruan zegoen guztia erakusten du.';
 
   @override
   String get storyWallet4Title => 'Blokeatu txartelak minututan';

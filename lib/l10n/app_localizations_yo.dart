@@ -2404,6 +2404,21 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lostWalletSwitchedLost => 'A ti yí i padà sí sísọnù. Ìlọsíwájú rẹ wà síbẹ̀.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Dí àwọn káàdì rẹ nínú ìṣàfilọ́lẹ̀ báńkì. O lè ṣí wọn padà bí ó bá yọ';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Ṣé kò sí síbẹ̀ lẹ́yìn ọjọ́ kan? Fagilé àwọn káàdì tí o dí kí o sì béèrè tuntun';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Kò sí síbẹ̀?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Bí kò bá yọ, fagilé àwọn káàdì tí o dí kí o sì béèrè tuntun.';
+
+  @override
+  String get lostWalletMarkedDone => 'A ti sàmì sí pé ó parí';
+
+  @override
   String get travelSectionJourney => 'Ìrìn àjò rẹ';
 
   @override
@@ -2835,7 +2850,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get startRenewingNow => 'Àkókò tó láti bẹ̀rẹ̀ isọdọtun';
 
   @override
-  String get lostWalletTitle => 'Mo pàdánù àpamọ́wọ́ mi';
+  String get lostWalletTitle => 'Sọnù tàbí wọ́n jí i';
 
   @override
   String get lostWalletSubtitle => 'Wo ohun tó wà nínú rẹ̀ àti ohun tó yẹ kí o rọ́pò';
@@ -3411,7 +3426,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Lílo àwọn irinṣẹ́ ọlọ́gbọ́n';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Àpamọ́wọ́ tó sọnù, àwọn ìṣẹ̀lẹ̀ ayé, àwọn àpò ẹ̀rí àti àwọn ọ̀nà asopọ̀ tí a pín';
+  String get tutorialsSmartToolsSubtitle => 'Sọnù tàbí wọ́n jí i, ìṣẹ̀lẹ̀ ìgbésí ayé, àpò ẹ̀rí àti àwọn ìjápọ̀ tí a pín';
 
   @override
   String get tutorialsFamilyTitle => 'Ẹbí àti àwọn èèyàn';
@@ -7206,13 +7221,13 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lostLineHelper => 'Fi pamọ́ báyìí. Nọ́mbà náà wà lórí káàdì, nítorí náà kò ní sí lọ́wọ́ rẹ nígbà tí o bá nílò rẹ̀.';
 
   @override
-  String get lifeEventWalletLost => 'Àpò owó mi sọnù';
+  String get lifeEventWalletLost => 'Àwọn nǹkan tó sọnù';
 
   @override
-  String get lifeEventWalletLostBody => 'Dènà àwọn káàdì rẹ ní àkọ́kọ́, lẹ́yìn náà rọ́pò àwọn ìwé rẹ ní ọ̀kọ̀ọ̀kan.';
+  String get lifeEventWalletLostBody => 'Kọ́kọ́ dí àwọn káàdì rẹ fún ìgbà díẹ̀. Bí kò bá sí síbẹ̀, fagilé wọn kí o sì rọ́pò àwọn ìwé rẹ ní ọ̀kọ̀ọ̀kan.';
 
   @override
-  String get lifeEventWalletStolen => 'Wọ́n jí àpò owó mi';
+  String get lifeEventWalletStolen => 'Àwọn nǹkan tí wọ́n jí';
 
   @override
   String get lifeEventWalletStolenBody => 'Dènà àwọn káàdì rẹ lẹ́sẹ̀kẹsẹ̀ kí o sì fi ìjínigbé náà tó ọlọ́pàá létí. Lẹ́yìn náà ṣọ́ àwọn àkáǹtì rẹ fún jìbìtì.';
@@ -7260,10 +7275,10 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Tí kọ́kọ́rọ́ tàbí àdírẹ́sì rẹ bá wà nínú rẹ̀, ronú nípa yíyí àwọn títì padà';
 
   @override
-  String get lifeTaskWalletInsurance => 'Ṣàyẹ̀wò bóyá ìbánigbófò rẹ bo àpò owó àti owó ọwọ́';
+  String get lifeTaskWalletInsurance => 'Ṣàyẹ̀wò bóyá ìbánigbófò rẹ bo ohun tí wọ́n gbé àti owó';
 
   @override
-  String get lostWalletHeroTitle => 'Àpò owó rẹ sọnù?';
+  String get lostWalletHeroTitle => 'Ṣé nǹkan sọnù, àbí wọ́n jí i?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara fi ohun tí o yẹ kí o dènà ní àkọ́kọ́ hàn, ohun tí o yẹ kí o rọ́pò àti ẹni tí o yẹ kí o sọ fún.';
@@ -7275,10 +7290,10 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lostWalletEditTitle => 'Yí àwọn àlàyé padà';
 
   @override
-  String get lostWalletLostHint => 'Ó jábọ́ tàbí mo gbàgbé rẹ̀ síbì kan';
+  String get lostWalletLostHint => 'Ó já bọ́ tàbí ó kù síbì kan. Kọ́kọ́ dí i, fagilé nìkan bí kò bá yọ';
 
   @override
-  String get lostWalletStolenHint => 'Ẹnìkan mú un';
+  String get lostWalletStolenHint => 'Ẹnìkan gbé e. Dí gbogbo nǹkan kí o sì fi ẹjọ́ sùn';
 
   @override
   String get lostWalletWhatMissing => 'Kí ló sọnù?';
@@ -7516,7 +7531,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lostWalletStatementTitle => 'Ṣàyẹ̀wò àkọsílẹ̀ báǹkì rẹ';
 
   @override
-  String get lostWalletStatementBody => 'Wá owó tí o kò san látìgbà tí àpò owó rẹ ti sọnù.';
+  String get lostWalletStatementBody => 'Wá àwọn ìsanwó tí o kò ṣe láti ìgbà tí àwọn nǹkan rẹ ti sọnù.';
 
   @override
   String get lostWalletFoundButton => 'Mo ti rí i';
@@ -7621,7 +7636,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialsSubHousehold => 'Pe awọn miiran lati pin awọn igbasilẹ ati awọn iranti';
 
   @override
-  String get tutorialsTitleLostWallet => 'Mo pàdánù àpamọ́wọ́ mi';
+  String get tutorialsTitleLostWallet => 'Sọnù tàbí wọ́n jí i';
 
   @override
   String get tutorialsSubLostWallet => 'Mura silẹ bayi, ṣe ni kiakia ti o ba sọnu';
@@ -7711,7 +7726,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get whatsNewBadge => 'Tuntun';
 
   @override
-  String get whatsNewTitle => 'Mo pàdánù àpamọ́wọ́ mi';
+  String get whatsNewTitle => 'Sọnù tàbí wọ́n jí i';
 
   @override
   String get whatsNewBody => 'Fi ibi ti o tọju awọn kaadi rẹ pamọ ati nọmba idinamọ ti banki kọọkan. Ti apamọwọ rẹ ba sọnu, o dina ohun gbogbo ni iṣẹju diẹ.';
@@ -7853,7 +7868,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get storyWallet3Title => 'Ti o ba sọnu';
 
   @override
-  String get storyWallet3Body => 'Ṣi «Mo pàdánù àpamọ́wọ́ mi» ki o tẹ «Ó sọnù» tabi «Wọ́n jí i». Vaultara ṣe atokọ ohun gbogbo ti o wa ninu rẹ.';
+  String get storyWallet3Body => 'Ṣí Sọnù tàbí wọ́n jí i kí o sì tẹ Sọnù tàbí Wọ́n jí i. Vaultara ń fi gbogbo ohun tó wà nínú rẹ̀ hàn.';
 
   @override
   String get storyWallet4Title => 'Dina awọn kaadi ni iṣẹju';

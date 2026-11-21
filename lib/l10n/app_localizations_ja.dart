@@ -2391,6 +2391,21 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lostWalletSwitchedLost => '紛失に変更しました。進捗はそのままです。';
 
   @override
+  String get lifeTaskWalletFreezeLost => '銀行アプリでカードを一時停止する。見つかれば再開できます';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => '1日たっても見つからない？停止中のカードを解約して新しいカードを申し込む';
+
+  @override
+  String get lostWalletStillMissingTitle => 'まだ見つかりませんか？';
+
+  @override
+  String get lostWalletStillMissingBody => '見つからなければ、停止中のカードを解約して新しいカードを申し込みましょう。';
+
+  @override
+  String get lostWalletMarkedDone => '完了にしました';
+
+  @override
   String get travelSectionJourney => '旅程';
 
   @override
@@ -2822,7 +2837,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get startRenewingNow => '更新を始める時期です';
 
   @override
-  String get lostWalletTitle => '財布をなくした';
+  String get lostWalletTitle => '紛失・盗難';
 
   @override
   String get lostWalletSubtitle => '中に入っていたものと再発行が必要なものを確認します';
@@ -3398,7 +3413,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'スマートツールの使い方';
 
   @override
-  String get tutorialsSmartToolsSubtitle => '財布をなくした、ライフイベント、証明書パック、共有したリンク';
+  String get tutorialsSmartToolsSubtitle => '紛失・盗難、ライフイベント、証明パック、共有リンク';
 
   @override
   String get tutorialsFamilyTitle => '家族と人';
@@ -7188,13 +7203,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lostLineHelper => '今すぐ保存しましょう。番号はカードに印字されているので、必要なときには手元にありません。';
 
   @override
-  String get lifeEventWalletLost => '財布をなくした';
+  String get lifeEventWalletLost => '紛失した物';
 
   @override
-  String get lifeEventWalletLostBody => 'まずカードを止め、それから書類を1つずつ再発行します。';
+  String get lifeEventWalletLostBody => 'まずカードを一時停止しましょう。それでも見つからなければ、カードを解約し、書類を一つずつ再発行します。';
 
   @override
-  String get lifeEventWalletStolen => '財布を盗まれた';
+  String get lifeEventWalletStolen => '盗まれた物';
 
   @override
   String get lifeEventWalletStolenBody => 'すぐにカードを止めて盗難を届け出ます。その後、口座の不正利用に注意します。';
@@ -7242,10 +7257,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lifeTaskWalletLocks => '鍵や住所が入っていたなら、鍵の交換を検討する';
 
   @override
-  String get lifeTaskWalletInsurance => '保険で財布や現金が補償されるか確認する';
+  String get lifeTaskWalletInsurance => '保険で盗まれた物や現金が補償されるか確認する';
 
   @override
-  String get lostWalletHeroTitle => '財布をなくしましたか?';
+  String get lostWalletHeroTitle => 'なくしましたか？それとも盗まれましたか？';
 
   @override
   String get lostWalletHeroBody => 'Vaultara が、最初に止めるもの、再発行するもの、連絡先を示します。';
@@ -7257,10 +7272,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lostWalletEditTitle => '詳細を変更';
 
   @override
-  String get lostWalletLostHint => '落とした、またはどこかに置き忘れた';
+  String get lostWalletLostHint => '落とした、またはどこかに置き忘れた。まず一時停止し、見つからない場合だけ解約';
 
   @override
-  String get lostWalletStolenHint => '誰かに取られた';
+  String get lostWalletStolenHint => '誰かに取られた。すべて止めて届け出る';
 
   @override
   String get lostWalletWhatMissing => '何がなくなりましたか?';
@@ -7498,7 +7513,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lostWalletStatementTitle => '明細を確認';
 
   @override
-  String get lostWalletStatementBody => '財布をなくしてから身に覚えのない支払いがないか確認します。';
+  String get lostWalletStatementBody => '物がなくなってから、身に覚えのない支払いがないか確認しましょう。';
 
   @override
   String get lostWalletFoundButton => '見つかった';
@@ -7603,7 +7618,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialsSubHousehold => '記録とリマインダーを共有するよう家族を招待';
 
   @override
-  String get tutorialsTitleLostWallet => '財布をなくした';
+  String get tutorialsTitleLostWallet => '紛失・盗難';
 
   @override
   String get tutorialsSubLostWallet => '今のうちに準備し、なくしたらすぐ行動';
@@ -7693,7 +7708,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get whatsNewBadge => '新機能';
 
   @override
-  String get whatsNewTitle => '財布をなくした';
+  String get whatsNewTitle => '紛失・盗難';
 
   @override
   String get whatsNewBody => 'カードの保管場所と各銀行の利用停止番号を保存しましょう。財布をなくしても数分ですべて止められます。';
@@ -7835,7 +7850,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get storyWallet3Title => 'なくしたら';
 
   @override
-  String get storyWallet3Body => '「財布をなくした」を開き、「紛失」または「盗難」をタップ。Vaultara が入っていたものを一覧にします。';
+  String get storyWallet3Body => '「紛失・盗難」を開き、「紛失」か「盗難」をタップします。Vaultaraが中に入っていた物をすべて表示します。';
 
   @override
   String get storyWallet4Title => '数分でカードを停止';

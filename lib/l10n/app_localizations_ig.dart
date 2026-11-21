@@ -2404,6 +2404,21 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Agbanwere ka ọ furu efu. Ọganihu gị ka dị.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Kpọchie kaadị gị na ngwa ụlọ akụ gị. Ị nwere ike imeghe ha ma ọ bụrụ na ọ pụta';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Ọ ka furu efu mgbe otu ụbọchị gachara? Kagbuo kaadị a kpọchiri ma tụọ ọhụrụ';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Ọ ka furu efu?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ọ bụrụ na ọ pụtaghị, kagbuo kaadị a kpọchiri ma tụọ ọhụrụ.';
+
+  @override
+  String get lostWalletMarkedDone => 'Akara dị ka emechaala';
+
+  @override
   String get travelSectionJourney => 'Njem gị';
 
   @override
@@ -2835,7 +2850,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get startRenewingNow => 'Oge eruola ịmalite imegharị';
 
   @override
-  String get lostWalletTitle => 'Furu m akpa ego m';
+  String get lostWalletTitle => 'Furu efu ma ọ bụ e zuru ohi';
 
   @override
   String get lostWalletSubtitle => 'Lee ihe dị n\'ime ya na ihe ị ga-edochi';
@@ -3411,7 +3426,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Iji ngwa ọrụ dị mma';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Akpa ego furu efu, ihe mere n\'ọnụ ndụ, ngwugwu ihe akaebe na njikọ ekesara';
+  String get tutorialsSmartToolsSubtitle => 'Furu efu ma ọ bụ e zuru ohi, ihe omume ndụ, ngwugwu ihe akaebe na njikọ ekekọrịtara';
 
   @override
   String get tutorialsFamilyTitle => 'Ezinụlọ na ndị mmadụ';
@@ -7206,13 +7221,13 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lostLineHelper => 'Chekwaa ya ugbu a. Nọmba ahụ dị na kaadị ahụ, ya mere ọ gaghị adị gị mgbe ịchọrọ ya.';
 
   @override
-  String get lifeEventWalletLost => 'Akpa ego m furu efu';
+  String get lifeEventWalletLost => 'Ihe furu efu';
 
   @override
-  String get lifeEventWalletLostBody => 'Gbochie kaadị gị mbụ, wee dochie akwụkwọ gị otu otu.';
+  String get lifeEventWalletLostBody => 'Buru ụzọ kpọchie kaadị gị. Ọ bụrụ na ọ ka furu efu, kagbuo ha ma dochie akwụkwọ gị otu otu.';
 
   @override
-  String get lifeEventWalletStolen => 'E zuru akpa ego m';
+  String get lifeEventWalletStolen => 'Ihe e zuru ohi';
 
   @override
   String get lifeEventWalletStolenBody => 'Gbochie kaadị gị ozugbo ma kọọ ohi ahụ. Mgbe ahụ lezie anya na akaụntụ gị maka aghụghọ.';
@@ -7260,10 +7275,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ọ bụrụ na igodo ma ọ bụ adreesị gị dị n\'ime ya, tụlee ịgbanwe mkpọchi';
 
   @override
-  String get lifeTaskWalletInsurance => 'Lelee ma inshọransị gị ọ na-ekpuchi akpa ego na ego ọcha';
+  String get lifeTaskWalletInsurance => 'Lelee ma mkpuchi gị na-ekpuchi ihe e buru na ego ọ bụla';
 
   @override
-  String get lostWalletHeroTitle => 'Akpa ego gị furu efu?';
+  String get lostWalletHeroTitle => 'Ihe furu gị efu, ka e zuru ya ohi?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara na-egosi ihe ị ga-ebu ụzọ gbochie, ihe ị ga-edochi na onye ị ga-agwa.';
@@ -7275,10 +7290,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lostWalletEditTitle => 'Gbanwee nkọwa';
 
   @override
-  String get lostWalletLostHint => 'Ọ dapụrụ ma ọ bụ m chefuru ya ebe';
+  String get lostWalletLostHint => 'Ọ dara ma ọ bụ hapụrụ ya ebe ụfọdụ. Buru ụzọ kpọchie, kagbuo naanị ma ọ bụrụ na ọ ka furu efu';
 
   @override
-  String get lostWalletStolenHint => 'Mmadụ were ya';
+  String get lostWalletStolenHint => 'Mmadụ buru ya. Gbochie ihe niile ma kọọ ya';
 
   @override
   String get lostWalletWhatMissing => 'Gịnị na-efu?';
@@ -7516,7 +7531,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lostWalletStatementTitle => 'Lelee nkọwa ụlọ akụ gị';
 
   @override
-  String get lostWalletStatementBody => 'Chọọ ịkwụ ụgwọ ị na-emeghị kemgbe akpa ego gị furu efu.';
+  String get lostWalletStatementBody => 'Chọọ ịkwụ ụgwọ ị na-emeghị kemgbe ihe gị furu efu.';
 
   @override
   String get lostWalletFoundButton => 'Achọtala m ya';
@@ -7621,7 +7636,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialsSubHousehold => 'Kpọọ ndị ọzọ ka ha kekọrịta ndekọ na ncheta';
 
   @override
-  String get tutorialsTitleLostWallet => 'Furu m akpa ego m';
+  String get tutorialsTitleLostWallet => 'Furu efu ma ọ bụ e zuru ohi';
 
   @override
   String get tutorialsSubLostWallet => 'Kwadebe ugbu a, mee ngwa ngwa ma ọ furu efu';
@@ -7711,7 +7726,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get whatsNewBadge => 'Ọhụrụ';
 
   @override
-  String get whatsNewTitle => 'Furu m akpa ego m';
+  String get whatsNewTitle => 'Furu efu ma ọ bụ e zuru ohi';
 
   @override
   String get whatsNewBody => 'Chekwaa ebe ị na-edebe kaadị gị na nọmba mkpọchi nke ụlọ akụ ọ bụla. Ọ bụrụ na akpa ego gị efuo, ị na-egbochi ihe niile n\'ime nkeji ole na ole.';
@@ -7853,7 +7868,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get storyWallet3Title => 'Ọ bụrụ na ọ furu efu';
 
   @override
-  String get storyWallet3Body => 'Mepee «Furu m akpa ego m» ma pịa «Furu efu» ma ọ bụ «E zuru ya». Vaultara na-edepụta ihe niile dị n\'ime ya.';
+  String get storyWallet3Body => 'Mepee Furu efu ma ọ bụ e zuru ohi ma pịa Furu efu ma ọ bụ E zuru ohi. Vaultara na-egosi ihe niile dị n\'ime ya.';
 
   @override
   String get storyWallet4Title => 'Gbochie kaadị n\'ime nkeji';

@@ -2404,6 +2404,21 @@ class AppLocalizationsAf extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Na verloor verander. Jou vordering bly.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Vries jou kaarte in jou bankapp. Jy kan hulle ontvries as dit opdaag';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Steeds weg na \'n dag? Kanselleer die gevriesde kaarte en bestel nuwes';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Steeds weg?';
+
+  @override
+  String get lostWalletStillMissingBody => 'As dit nie opgedaag het nie, kanselleer die gevriesde kaarte en bestel nuwes.';
+
+  @override
+  String get lostWalletMarkedDone => 'Gemerk as klaar';
+
+  @override
   String get travelSectionJourney => 'Jou reis';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get startRenewingNow => 'Tyd om te begin hernu';
 
   @override
-  String get lostWalletTitle => 'Beursie verloor';
+  String get lostWalletTitle => 'Verloor of gesteel';
 
   @override
   String get lostWalletSubtitle => 'Sien wat daarin was en wat om te vervang';
@@ -3431,7 +3446,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Gebruik Slim nutsmiddels';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Beursie verloor, lewensgebeure, bewyspakkette en gedeelde skakels';
+  String get tutorialsSmartToolsSubtitle => 'Verloor of gesteel, lewensgebeure, bewyspakke en gedeelde skakels';
 
   @override
   String get tutorialsFamilyTitle => 'Gesin en mense';
@@ -7256,13 +7271,13 @@ class AppLocalizationsAf extends AppLocalizations {
   String get lostLineHelper => 'Stoor dit nou. Die nommer is op die kaart gedruk, so jy het dit nie wanneer jy dit nodig het nie.';
 
   @override
-  String get lifeEventWalletLost => 'Ek het my beursie verloor';
+  String get lifeEventWalletLost => 'Verlore items';
 
   @override
-  String get lifeEventWalletLostBody => 'Blokkeer eers jou kaarte en vervang dan jou dokumente een vir een.';
+  String get lifeEventWalletLostBody => 'Vries eers jou kaarte. As dit steeds weg is, kanselleer hulle en vervang jou dokumente een vir een.';
 
   @override
-  String get lifeEventWalletStolen => 'My beursie is gesteel';
+  String get lifeEventWalletStolen => 'Gesteelde items';
 
   @override
   String get lifeEventWalletStolenBody => 'Blokkeer jou kaarte dadelik en meld die diefstal aan. Hou dan jou rekeninge dop vir bedrog.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get lifeTaskWalletLocks => 'As sleutels of jou adres daarin was, oorweeg dit om die slotte te vervang';
 
   @override
-  String get lifeTaskWalletInsurance => 'Kyk of jou versekering die beursie en kontant dek';
+  String get lifeTaskWalletInsurance => 'Kyk of jou versekering dek wat geneem is, en enige kontant';
 
   @override
-  String get lostWalletHeroTitle => 'Beursie verloor?';
+  String get lostWalletHeroTitle => 'Iets verloor, of is dit gesteel?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara wys wat jy eerste moet blokkeer, wat om te vervang en wie om te laat weet.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get lostWalletEditTitle => 'Verander die besonderhede';
 
   @override
-  String get lostWalletLostHint => 'Laat val of iewers vergeet';
+  String get lostWalletLostHint => 'Laat val of iewers gelos. Vries eers, kanselleer net as dit weg bly';
 
   @override
-  String get lostWalletStolenHint => 'Iemand het dit gevat';
+  String get lostWalletStolenHint => 'Iemand het dit gevat. Blokkeer alles en rapporteer dit';
 
   @override
   String get lostWalletWhatMissing => 'Wat ontbreek?';
@@ -7569,7 +7584,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get lostWalletStatementTitle => 'Gaan jou bankstate na';
 
   @override
-  String get lostWalletStatementBody => 'Soek betalings wat jy nie gemaak het sedert jou beursie weg is nie.';
+  String get lostWalletStatementBody => 'Soek na betalings wat jy nie gemaak het nie sedert jou goed weg is.';
 
   @override
   String get lostWalletFoundButton => 'Ek het dit gekry';
@@ -7675,7 +7690,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialsSubHousehold => 'Nooi ander om inskrywings en herinnerings te deel';
 
   @override
-  String get tutorialsTitleLostWallet => 'Beursie verloor';
+  String get tutorialsTitleLostWallet => 'Verloor of gesteel';
 
   @override
   String get tutorialsSubLostWallet => 'Berei nou voor, tree vinnig op as dit wegraak';
@@ -7766,7 +7781,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get whatsNewBadge => 'Nuut';
 
   @override
-  String get whatsNewTitle => 'Beursie verloor';
+  String get whatsNewTitle => 'Verloor of gesteel';
 
   @override
   String get whatsNewBody => 'Stoor waar jy jou kaarte hou en elke bank se blokkeernommer. As jy jou beursie verloor, blokkeer jy alles binne minute.';
@@ -7908,7 +7923,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get storyWallet3Title => 'As dit wegraak';
 
   @override
-  String get storyWallet3Body => 'Maak \"Beursie verloor\" oop en tik op \"Verloor\" of \"Gesteel\". Vaultara lys alles wat daarin was.';
+  String get storyWallet3Body => 'Maak Verloor of gesteel oop en tik Verloor of Gesteel. Vaultara lys alles wat binne was.';
 
   @override
   String get storyWallet4Title => 'Blokkeer kaarte binne minute';

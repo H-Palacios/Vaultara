@@ -2404,6 +2404,21 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Ändrat till borttappad. Dina framsteg finns kvar.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Frys korten i bankappen. Du kan häva det om det dyker upp';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Fortfarande borta efter en dag? Spärra de frysta korten och beställ nya';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Fortfarande borta?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Om det inte har dykt upp, spärra de frysta korten och beställ nya.';
+
+  @override
+  String get lostWalletMarkedDone => 'Markerat som klart';
+
+  @override
   String get travelSectionJourney => 'Din resa';
 
   @override
@@ -2839,7 +2854,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get startRenewingNow => 'Dags att börja förnya';
 
   @override
-  String get lostWalletTitle => 'Jag har tappat plånboken';
+  String get lostWalletTitle => 'Borttappat eller stulet';
 
   @override
   String get lostWalletSubtitle => 'Se vad som låg i den och vad du behöver ersätta';
@@ -3430,7 +3445,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Använda smarta verktyg';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Tappad plånbok, livshändelser, intygspaket och delade länkar';
+  String get tutorialsSmartToolsSubtitle => 'Borttappat eller stulet, livshändelser, bevispaket och delade länkar';
 
   @override
   String get tutorialsFamilyTitle => 'Familj och personer';
@@ -7255,13 +7270,13 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lostLineHelper => 'Spara det nu. Numret står på kortet, så du har det inte när du behöver det.';
 
   @override
-  String get lifeEventWalletLost => 'Jag har tappat min plånbok';
+  String get lifeEventWalletLost => 'Borttappade saker';
 
   @override
-  String get lifeEventWalletLostBody => 'Spärra dina kort först och ersätt sedan dina dokument ett i taget.';
+  String get lifeEventWalletLostBody => 'Frys dina kort först. Om det fortfarande saknas, spärra dem och ersätt dina dokument ett i taget.';
 
   @override
-  String get lifeEventWalletStolen => 'Min plånbok har blivit stulen';
+  String get lifeEventWalletStolen => 'Stulna saker';
 
   @override
   String get lifeEventWalletStolenBody => 'Spärra dina kort direkt och polisanmäl stölden. Håll sedan koll på bedrägerier på dina konton.';
@@ -7309,10 +7324,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Fanns nycklar eller din adress i den, fundera på att byta lås';
 
   @override
-  String get lifeTaskWalletInsurance => 'Kolla om din försäkring täcker plånboken och kontanterna';
+  String get lifeTaskWalletInsurance => 'Kolla om försäkringen täcker det som togs och kontanter';
 
   @override
-  String get lostWalletHeroTitle => 'Tappat plånboken?';
+  String get lostWalletHeroTitle => 'Har du tappat bort något, eller blev det stulet?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara visar vad du ska spärra först, vad du ska ersätta och vem du ska meddela.';
@@ -7324,10 +7339,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lostWalletEditTitle => 'Ändra uppgifterna';
 
   @override
-  String get lostWalletLostHint => 'Tappad eller kvarglömd någonstans';
+  String get lostWalletLostHint => 'Tappat eller glömt någonstans. Frys först, spärra bara om det förblir borta';
 
   @override
-  String get lostWalletStolenHint => 'Någon tog den';
+  String get lostWalletStolenHint => 'Någon tog det. Spärra allt och polisanmäl det';
 
   @override
   String get lostWalletWhatMissing => 'Vad saknas?';
@@ -7568,7 +7583,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lostWalletStatementTitle => 'Gå igenom dina kontoutdrag';
 
   @override
-  String get lostWalletStatementBody => 'Leta efter betalningar du inte har gjort sedan plånboken försvann.';
+  String get lostWalletStatementBody => 'Leta efter betalningar du inte gjort sedan dina saker försvann.';
 
   @override
   String get lostWalletFoundButton => 'Jag har hittat den';
@@ -7674,7 +7689,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialsSubHousehold => 'Bjud in andra att dela poster och påminnelser';
 
   @override
-  String get tutorialsTitleLostWallet => 'Jag har tappat plånboken';
+  String get tutorialsTitleLostWallet => 'Borttappat eller stulet';
 
   @override
   String get tutorialsSubLostWallet => 'Förbered dig nu och agera snabbt om den försvinner';
@@ -7765,7 +7780,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get whatsNewBadge => 'Nytt';
 
   @override
-  String get whatsNewTitle => 'Jag har tappat plånboken';
+  String get whatsNewTitle => 'Borttappat eller stulet';
 
   @override
   String get whatsNewBody => 'Spara var du har dina kort och varje banks spärrnummer. Tappar du plånboken spärrar du allt på några minuter.';
@@ -7907,7 +7922,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get storyWallet3Title => 'Om den försvinner';
 
   @override
-  String get storyWallet3Body => 'Öppna ”Jag har tappat plånboken” och tryck på ”Borttappad” eller ”Stulen”. Vaultara visar allt som fanns i den.';
+  String get storyWallet3Body => 'Öppna Borttappat eller stulet och tryck på Borttappat eller Stulet. Vaultara visar allt som fanns i.';
 
   @override
   String get storyWallet4Title => 'Spärra kort på minuter';

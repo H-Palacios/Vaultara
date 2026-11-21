@@ -2401,6 +2401,21 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lostWalletSwitchedLost => 'បានប្ដូរទៅជាបាត់។ វឌ្ឍនភាពរបស់អ្នកនៅដដែល។';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'បង្កកកាតនៅក្នុងកម្មវិធីធនាគារ។ អ្នកអាចបើកវិញបាន បើរកឃើញ';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'នៅតែបាត់ក្រោយមួយថ្ងៃ? លុបចោលកាតដែលបានបង្កក ហើយកុម្ម៉ង់ថ្មី';
+
+  @override
+  String get lostWalletStillMissingTitle => 'នៅតែបាត់?';
+
+  @override
+  String get lostWalletStillMissingBody => 'បើមិនទាន់រកឃើញ សូមលុបចោលកាតដែលបានបង្កក ហើយកុម្ម៉ង់ថ្មី។';
+
+  @override
+  String get lostWalletMarkedDone => 'បានសម្គាល់ថារួចរាល់';
+
+  @override
   String get travelSectionJourney => 'ដំណើររបស់អ្នក';
 
   @override
@@ -2832,7 +2847,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get startRenewingNow => 'ដល់ពេលចាប់ផ្តើមបន្តសុពលភាពហើយ';
 
   @override
-  String get lostWalletTitle => 'បាត់កាបូបរបស់ខ្ញុំ';
+  String get lostWalletTitle => 'បាត់ ឬត្រូវបានលួច';
 
   @override
   String get lostWalletSubtitle => 'មើលអ្វីដែលមាននៅក្នុងនោះ និងអ្វីដែលត្រូវជំនួស';
@@ -3408,7 +3423,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'ការប្រើឧបករណ៍ឆ្លាតវៃ';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'បាត់កាបូប ព្រឹត្តិការណ៍ក្នុងជីវិត កញ្ចប់ភស្តុតាង និងតំណដែលបានចែករំលែក';
+  String get tutorialsSmartToolsSubtitle => 'បាត់ ឬត្រូវបានលួច ព្រឹត្តិការណ៍ជីវិត កញ្ចប់ភស្តុតាង និងតំណដែលបានចែករំលែក';
 
   @override
   String get tutorialsFamilyTitle => 'គ្រួសារ និងមនុស្ស';
@@ -7198,13 +7213,13 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lostLineHelper => 'រក្សាទុកឥឡូវនេះ។ លេខបោះពុម្ពលើកាត ដូច្នេះអ្នកនឹងគ្មានវាពេលត្រូវការ។';
 
   @override
-  String get lifeEventWalletLost => 'កាបូបលុយខ្ញុំបាត់';
+  String get lifeEventWalletLost => 'របស់ដែលបាត់';
 
   @override
-  String get lifeEventWalletLostBody => 'បិទកាតរបស់អ្នកជាមុន បន្ទាប់មកប្តូរឯកសារម្តងមួយៗ។';
+  String get lifeEventWalletLostBody => 'បង្កកកាតរបស់អ្នកជាមុនសិន។ បើនៅតែបាត់ សូមលុបចោល ហើយប្ដូរឯកសារម្ដងមួយៗ។';
 
   @override
-  String get lifeEventWalletStolen => 'កាបូបលុយខ្ញុំត្រូវគេលួច';
+  String get lifeEventWalletStolen => 'របស់ដែលត្រូវបានលួច';
 
   @override
   String get lifeEventWalletStolenBody => 'បិទកាតភ្លាមៗ ហើយរាយការណ៍ពីការលួច។ បន្ទាប់មកតាមដានគណនីដើម្បីការពារការបោកប្រាស់។';
@@ -7252,10 +7267,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ប្រសិនបើមានសោ ឬអាសយដ្ឋានរបស់អ្នកនៅខាងក្នុង គិតអំពីការប្តូរសោ';
 
   @override
-  String get lifeTaskWalletInsurance => 'ពិនិត្យថាតើធានារ៉ាប់រងរបស់អ្នកគ្របដណ្តប់កាបូប និងសាច់ប្រាក់ឬទេ';
+  String get lifeTaskWalletInsurance => 'ពិនិត្យមើលថាតើធានារ៉ាប់រងរបស់អ្នកគ្របដណ្ដប់របស់ដែលត្រូវបានយក និងសាច់ប្រាក់ឬទេ';
 
   @override
-  String get lostWalletHeroTitle => 'កាបូបលុយបាត់មែនទេ?';
+  String get lostWalletHeroTitle => 'បាត់អ្វីមួយ ឬត្រូវបានលួច?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara បង្ហាញថាត្រូវបិទអ្វីមុន ប្តូរអ្វី និងប្រាប់អ្នកណា។';
@@ -7267,10 +7282,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lostWalletEditTitle => 'ប្តូរព័ត៌មានលម្អិត';
 
   @override
-  String get lostWalletLostHint => 'ធ្លាក់ ឬភ្លេចទុកនៅកន្លែងណាមួយ';
+  String get lostWalletLostHint => 'ធ្លាក់ ឬភ្លេចទុកនៅកន្លែងណាមួយ។ បង្កកជាមុន លុបចោលតែពេលនៅតែបាត់';
 
   @override
-  String get lostWalletStolenHint => 'មាននរណាម្នាក់យកទៅ';
+  String get lostWalletStolenHint => 'មាននរណាម្នាក់យកវា។ ទប់ស្កាត់អ្វីៗទាំងអស់ ហើយរាយការណ៍';
 
   @override
   String get lostWalletWhatMissing => 'តើអ្វីបាត់?';
@@ -7508,7 +7523,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lostWalletStatementTitle => 'ពិនិត្យរបាយការណ៍ធនាគារ';
 
   @override
-  String get lostWalletStatementBody => 'រកការបង់ប្រាក់ដែលអ្នកមិនបានធ្វើចាប់តាំងពីកាបូបបាត់។';
+  String get lostWalletStatementBody => 'រកមើលការទូទាត់ដែលអ្នកមិនបានធ្វើ ចាប់តាំងពីរបស់របស់អ្នកបាត់។';
 
   @override
   String get lostWalletFoundButton => 'ខ្ញុំរកឃើញហើយ';
@@ -7613,7 +7628,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialsSubHousehold => 'អញ្ជើញអ្នកផ្សេងឱ្យចែករំលែកកំណត់ត្រា និងការរំលឹក';
 
   @override
-  String get tutorialsTitleLostWallet => 'បាត់កាបូបរបស់ខ្ញុំ';
+  String get tutorialsTitleLostWallet => 'បាត់ ឬត្រូវបានលួច';
 
   @override
   String get tutorialsSubLostWallet => 'ត្រៀមខ្លួនឥឡូវ ហើយធ្វើសកម្មភាពភ្លាមបើបាត់';
@@ -7703,7 +7718,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get whatsNewBadge => 'ថ្មី';
 
   @override
-  String get whatsNewTitle => 'បាត់កាបូបរបស់ខ្ញុំ';
+  String get whatsNewTitle => 'បាត់ ឬត្រូវបានលួច';
 
   @override
   String get whatsNewBody => 'រក្សាទុកកន្លែងដែលអ្នកដាក់កាត និងលេខបិទកាតរបស់ធនាគារនីមួយៗ។ បើកាបូបបាត់ អ្នកបិទអ្វីៗទាំងអស់ក្នុងរយៈពេលប៉ុន្មាននាទី។';
@@ -7845,7 +7860,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get storyWallet3Title => 'បើបាត់';
 
   @override
-  String get storyWallet3Body => 'បើក «បាត់កាបូបរបស់ខ្ញុំ» ហើយចុច «បាត់» ឬ «ត្រូវគេលួច»។ Vaultara រាយអ្វីៗដែលនៅខាងក្នុង។';
+  String get storyWallet3Body => 'បើក បាត់ ឬត្រូវបានលួច ហើយចុច បាត់ ឬ ត្រូវបានលួច។ Vaultara បង្ហាញអ្វីៗទាំងអស់ដែលនៅខាងក្នុង។';
 
   @override
   String get storyWallet4Title => 'បិទកាតក្នុងប៉ុន្មាននាទី';

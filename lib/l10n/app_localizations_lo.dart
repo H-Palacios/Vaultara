@@ -2403,6 +2403,21 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lostWalletSwitchedLost => 'ປ່ຽນເປັນເສຍແລ້ວ. ຄວາມຄືບໜ້າຂອງທ່ານຍັງຢູ່.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'ອາຍັດບັດໃນແອັບທະນາຄານ. ຖ້າພົບ ທ່ານສາມາດເປີດຄືນໄດ້';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'ຍັງບໍ່ພົບຫຼັງຈາກໜຶ່ງມື້? ຍົກເລີກບັດທີ່ອາຍັດ ແລະ ສັ່ງບັດໃໝ່';
+
+  @override
+  String get lostWalletStillMissingTitle => 'ຍັງບໍ່ພົບບໍ?';
+
+  @override
+  String get lostWalletStillMissingBody => 'ຖ້າຍັງບໍ່ພົບ, ຍົກເລີກບັດທີ່ອາຍັດ ແລະ ສັ່ງບັດໃໝ່.';
+
+  @override
+  String get lostWalletMarkedDone => 'ໝາຍວ່າສຳເລັດແລ້ວ';
+
+  @override
   String get travelSectionJourney => 'ການເດີນທາງຂອງທ່ານ';
 
   @override
@@ -2834,7 +2849,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get startRenewingNow => 'ເຖິງເວລາເລີ່ມຕໍ່ອາຍຸແລ້ວ';
 
   @override
-  String get lostWalletTitle => 'ເຮັດກະເປົາເງິນຫາຍ';
+  String get lostWalletTitle => 'ເສຍ ຫຼື ຖືກລັກ';
 
   @override
   String get lostWalletSubtitle => 'ເບິ່ງວ່າມີຫຍັງຢູ່ໃນນັ້ນ ແລະ ຕ້ອງປ່ຽນຫຍັງ';
@@ -3410,7 +3425,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'ການໃຊ້ເຄື່ອງມືອັດສະລິຍະ';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'ກະເປົາເງິນຫາຍ, ເຫດການໃນຊີວິດ, ຊຸດຫຼັກຖານ ແລະ ລິ້ງທີ່ແບ່ງປັນ';
+  String get tutorialsSmartToolsSubtitle => 'ເສຍ ຫຼື ຖືກລັກ, ເຫດການຊີວິດ, ຊຸດຫຼັກຖານ ແລະ ລິ້ງທີ່ແບ່ງປັນ';
 
   @override
   String get tutorialsFamilyTitle => 'ຄອບຄົວ ແລະ ບຸກຄົນ';
@@ -7200,13 +7215,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lostLineHelper => 'ບັນທຶກໄວ້ດຽວນີ້. ເບີພິມຢູ່ເທິງບັດ ດັ່ງນັ້ນຈະບໍ່ມີຕອນທີ່ທ່ານຕ້ອງການ.';
 
   @override
-  String get lifeEventWalletLost => 'ກະເປົາເງິນຂ້ອຍເສຍ';
+  String get lifeEventWalletLost => 'ສິ່ງຂອງທີ່ເສຍ';
 
   @override
-  String get lifeEventWalletLostBody => 'ລະງັບບັດກ່ອນ, ແລ້ວປ່ຽນເອກະສານເທື່ອລະອັນ.';
+  String get lifeEventWalletLostBody => 'ອາຍັດບັດຂອງທ່ານກ່ອນ. ຖ້າຍັງບໍ່ພົບ, ຍົກເລີກບັດ ແລະ ປ່ຽນເອກະສານເທື່ອລະອັນ.';
 
   @override
-  String get lifeEventWalletStolen => 'ກະເປົາເງິນຂ້ອຍຖືກລັກ';
+  String get lifeEventWalletStolen => 'ສິ່ງຂອງທີ່ຖືກລັກ';
 
   @override
   String get lifeEventWalletStolenBody => 'ລະງັບບັດທັນທີ ແລະ ແຈ້ງການລັກ. ຈາກນັ້ນຕິດຕາມບັນຊີເພື່ອກັນການສໍ້ໂກງ.';
@@ -7254,10 +7269,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ຖ້າມີກະແຈ ຫຼື ທີ່ຢູ່ຂອງທ່ານຢູ່ໃນນັ້ນ ໃຫ້ພິຈາລະນາປ່ຽນກະແຈ';
 
   @override
-  String get lifeTaskWalletInsurance => 'ກວດວ່າປະກັນຂອງທ່ານຄຸ້ມຄອງກະເປົາເງິນ ແລະ ເງິນສົດບໍ່';
+  String get lifeTaskWalletInsurance => 'ກວດເບິ່ງວ່າປະກັນໄພຄຸ້ມຄອງສິ່ງທີ່ຖືກເອົາໄປ ແລະ ເງິນສົດບໍ່';
 
   @override
-  String get lostWalletHeroTitle => 'ກະເປົາເງິນເສຍບໍ?';
+  String get lostWalletHeroTitle => 'ເສຍບາງຢ່າງ ຫຼື ຖືກລັກ?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara ສະແດງວ່າຕ້ອງລະງັບຫຍັງກ່ອນ, ປ່ຽນຫຍັງ ແລະ ແຈ້ງໃຜ.';
@@ -7269,10 +7284,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lostWalletEditTitle => 'ປ່ຽນລາຍລະອຽດ';
 
   @override
-  String get lostWalletLostHint => 'ຕົກ ຫຼື ລືມໄວ້ບ່ອນໃດບ່ອນໜຶ່ງ';
+  String get lostWalletLostHint => 'ຕົກ ຫຼື ລືມໄວ້ບ່ອນໃດບ່ອນໜຶ່ງ. ອາຍັດກ່ອນ, ຍົກເລີກສະເພາະເມື່ອຍັງບໍ່ພົບ';
 
   @override
-  String get lostWalletStolenHint => 'ມີຄົນເອົາໄປ';
+  String get lostWalletStolenHint => 'ມີຄົນເອົາໄປ. ບລັອກທຸກຢ່າງ ແລະ ແຈ້ງຄວາມ';
 
   @override
   String get lostWalletWhatMissing => 'ຫຍັງເສຍໄປ?';
@@ -7510,7 +7525,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lostWalletStatementTitle => 'ກວດໃບແຈ້ງຍອດທະນາຄານ';
 
   @override
-  String get lostWalletStatementBody => 'ຊອກຫາການຈ່າຍເງິນທີ່ທ່ານບໍ່ໄດ້ເຮັດນັບແຕ່ກະເປົາເງິນເສຍ.';
+  String get lostWalletStatementBody => 'ຊອກຫາການຈ່າຍເງິນທີ່ທ່ານບໍ່ໄດ້ເຮັດ ນັບແຕ່ສິ່ງຂອງຂອງທ່ານເສຍ.';
 
   @override
   String get lostWalletFoundButton => 'ຂ້ອຍພົບແລ້ວ';
@@ -7615,7 +7630,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialsSubHousehold => 'ເຊີນຄົນອື່ນມາແບ່ງປັນລາຍການ ແລະ ການແຈ້ງເຕືອນ';
 
   @override
-  String get tutorialsTitleLostWallet => 'ເຮັດກະເປົາເງິນຫາຍ';
+  String get tutorialsTitleLostWallet => 'ເສຍ ຫຼື ຖືກລັກ';
 
   @override
   String get tutorialsSubLostWallet => 'ກຽມພ້ອມດຽວນີ້, ຖ້າເສຍໃຫ້ຮີບດຳເນີນການ';
@@ -7705,7 +7720,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get whatsNewBadge => 'ໃໝ່';
 
   @override
-  String get whatsNewTitle => 'ເຮັດກະເປົາເງິນຫາຍ';
+  String get whatsNewTitle => 'ເສຍ ຫຼື ຖືກລັກ';
 
   @override
   String get whatsNewBody => 'ບັນທຶກວ່າທ່ານເກັບບັດໄວ້ໃສ ແລະ ເບີອາຍັດບັດຂອງແຕ່ລະທະນາຄານ. ຖ້າກະເປົາເງິນເສຍ, ທ່ານອາຍັດທຸກຢ່າງໄດ້ໃນບໍ່ເທົ່າໃດນາທີ.';
@@ -7847,7 +7862,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get storyWallet3Title => 'ຖ້າເສຍ';
 
   @override
-  String get storyWallet3Body => 'ເປີດ «ເຮັດກະເປົາເງິນຫາຍ» ແລ້ວແຕະ «ເສຍ» ຫຼື «ຖືກລັກ». Vaultara ຈະສະແດງທຸກຢ່າງທີ່ຢູ່ໃນນັ້ນ.';
+  String get storyWallet3Body => 'ເປີດ ເສຍ ຫຼື ຖືກລັກ ແລ້ວແຕະ ເສຍ ຫຼື ຖືກລັກ. Vaultara ສະແດງທຸກຢ່າງທີ່ຢູ່ຂ້າງໃນ.';
 
   @override
   String get storyWallet4Title => 'ອາຍັດບັດໃນບໍ່ເທົ່າໃດນາທີ';

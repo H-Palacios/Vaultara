@@ -2404,6 +2404,21 @@ class AppLocalizationsPt extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Alterado para perdida. O seu progresso mantém-se.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Congele os cartões na app do banco. Pode descongelá-los se aparecer';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Ainda desaparecido após um dia? Cancele os cartões congelados e peça novos';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Ainda desaparecido?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Se não apareceu, cancele os cartões congelados e peça novos.';
+
+  @override
+  String get lostWalletMarkedDone => 'Marcado como feito';
+
+  @override
   String get travelSectionJourney => 'A sua viagem';
 
   @override
@@ -2841,7 +2856,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get startRenewingNow => 'É altura de começar a renovar';
 
   @override
-  String get lostWalletTitle => 'Perdi a minha carteira';
+  String get lostWalletTitle => 'Perdido ou roubado';
 
   @override
   String get lostWalletSubtitle => 'Veja o que lá estava e o que tem de substituir';
@@ -3432,7 +3447,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Usar as Ferramentas inteligentes';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Carteira perdida, acontecimentos da vida, pacotes de comprovativos e links partilhados';
+  String get tutorialsSmartToolsSubtitle => 'Perdido ou roubado, eventos de vida, pacotes de provas e links partilhados';
 
   @override
   String get tutorialsFamilyTitle => 'Família e pessoas';
@@ -7257,13 +7272,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get lostLineHelper => 'Guarde-o agora. O número vem impresso no cartão, por isso não o terá quando precisar.';
 
   @override
-  String get lifeEventWalletLost => 'Perdi a minha carteira';
+  String get lifeEventWalletLost => 'Objetos perdidos';
 
   @override
-  String get lifeEventWalletLostBody => 'Bloqueie primeiro os cartões e depois substitua os documentos um a um.';
+  String get lifeEventWalletLostBody => 'Congele primeiro os seus cartões. Se continuar desaparecido, cancele-os e substitua os documentos um a um.';
 
   @override
-  String get lifeEventWalletStolen => 'Roubaram-me a carteira';
+  String get lifeEventWalletStolen => 'Objetos roubados';
 
   @override
   String get lifeEventWalletStolenBody => 'Bloqueie já os cartões e participe o roubo. Depois vigie as suas contas para detetar fraude.';
@@ -7311,10 +7326,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Se tinha chaves ou a sua morada, pense em mudar as fechaduras';
 
   @override
-  String get lifeTaskWalletInsurance => 'Verifique se o seu seguro cobre a carteira e o dinheiro';
+  String get lifeTaskWalletInsurance => 'Verifique se o seguro cobre o que foi levado e o dinheiro';
 
   @override
-  String get lostWalletHeroTitle => 'Perdeu a carteira?';
+  String get lostWalletHeroTitle => 'Perdeu alguma coisa ou foi roubado?';
 
   @override
   String get lostWalletHeroBody => 'O Vaultara mostra o que bloquear primeiro, o que substituir e a quem avisar.';
@@ -7326,10 +7341,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get lostWalletEditTitle => 'Alterar os dados';
 
   @override
-  String get lostWalletLostHint => 'Caiu ou ficou esquecida';
+  String get lostWalletLostHint => 'Caiu ou ficou esquecido em algum lado. Congele primeiro e cancele só se não aparecer';
 
   @override
-  String get lostWalletStolenHint => 'Alguém a levou';
+  String get lostWalletStolenHint => 'Alguém o levou. Bloqueie tudo e participe';
 
   @override
   String get lostWalletWhatMissing => 'O que falta?';
@@ -7570,7 +7585,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get lostWalletStatementTitle => 'Verifique os extratos bancários';
 
   @override
-  String get lostWalletStatementBody => 'Procure pagamentos que não fez desde que perdeu a carteira.';
+  String get lostWalletStatementBody => 'Procure pagamentos que não fez desde que as suas coisas desapareceram.';
 
   @override
   String get lostWalletFoundButton => 'Encontrei-a';
@@ -7676,7 +7691,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tutorialsSubHousehold => 'Convide outras pessoas para partilhar registos e lembretes';
 
   @override
-  String get tutorialsTitleLostWallet => 'Perdi a minha carteira';
+  String get tutorialsTitleLostWallet => 'Perdido ou roubado';
 
   @override
   String get tutorialsSubLostWallet => 'Prepare-se agora, aja depressa se desaparecer';
@@ -7767,7 +7782,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get whatsNewBadge => 'Novo';
 
   @override
-  String get whatsNewTitle => 'Perdi a minha carteira';
+  String get whatsNewTitle => 'Perdido ou roubado';
 
   @override
   String get whatsNewBody => 'Guarde onde tem os cartões e o número de cancelamento de cada banco. Se perder a carteira, bloqueia tudo em minutos.';
@@ -7909,7 +7924,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get storyWallet3Title => 'Se desaparecer';
 
   @override
-  String get storyWallet3Body => 'Abra «Perdi a minha carteira» e toque em «Perdida» ou «Roubada». O Vaultara lista tudo o que lá estava.';
+  String get storyWallet3Body => 'Abra Perdido ou roubado e toque em Perdido ou Roubado. O Vaultara mostra tudo o que estava lá dentro.';
 
   @override
   String get storyWallet4Title => 'Bloquear cartões em minutos';

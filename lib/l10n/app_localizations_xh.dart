@@ -2404,6 +2404,21 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Itshintshwe yaba ilahlekile. Inkqubela yakho iyagcinwa.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Misa amakhadi okwexeshana kwi-app yebhanki. Ungawavula kwakhona ukuba ifunyenwe';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Isalahlekile emva kosuku? Cima amakhadi amisiweyo uze uodole amatsha';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Isalahlekile?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ukuba ayikafunyanwa, cima amakhadi amisiweyo uze uodole amatsha.';
+
+  @override
+  String get lostWalletMarkedDone => 'Iphawulwe njengegqityiweyo';
+
+  @override
   String get travelSectionJourney => 'Uhambo lwakho';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get startRenewingNow => 'Lixesha lokuqala ukuvuselela';
 
   @override
-  String get lostWalletTitle => 'Ndilahlekelwe sisikhwama sam';
+  String get lostWalletTitle => 'Ilahlekile okanye ibiwe';
 
   @override
   String get lostWalletSubtitle => 'Jonga bekukho ntoni kuso nokuba kufuneka uthathele indawo ntoni';
@@ -3431,7 +3446,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Ukusebenzisa Izixhobo Ezihlakaniphileyo';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Isikhwama esilahlekileyo, iziganeko zobomi, iipakethe zobungqina namakhonkco owabelene ngawo';
+  String get tutorialsSmartToolsSubtitle => 'Ilahlekile okanye ibiwe, iziganeko zobomi, iipakethe zobungqina kunye namakhonkco ekwabelwana ngawo';
 
   @override
   String get tutorialsFamilyTitle => 'Usapho Nabantu';
@@ -7256,13 +7271,13 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lostLineHelper => 'Yigcine ngoku. Inombolo ishicilelwe ekhadini, ngoko awuyi kuba nayo xa uyifuna.';
 
   @override
-  String get lifeEventWalletLost => 'Ndilahlekelwe sisipaji sam';
+  String get lifeEventWalletLost => 'Izinto ezilahlekileyo';
 
   @override
-  String get lifeEventWalletLostBody => 'Vala amakhadi akho kuqala, emva koko utshintshe amaxwebhu akho elinye emva kwelinye.';
+  String get lifeEventWalletLostBody => 'Qala ngokumisa amakhadi akho okwexeshana. Ukuba isalahlekile, wacime uze utshintshe amaxwebhu akho elinye emva kwelinye.';
 
   @override
-  String get lifeEventWalletStolen => 'Isipaji sam sibiwe';
+  String get lifeEventWalletStolen => 'Izinto ezibiweyo';
 
   @override
   String get lifeEventWalletStolenBody => 'Vala amakhadi akho ngoko nangoko kwaye unike ingxelo ngobusela. Emva koko jonga iiakhawunti zakho ngenxa yobuqhophololo.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ukuba bekukho izitshixo okanye idilesi yakho, cinga ngokutshintsha izitshixo';
 
   @override
-  String get lifeTaskWalletInsurance => 'Jonga ukuba iinshorensi yakho iyasigubungela na isipaji nemali';
+  String get lifeTaskWalletInsurance => 'Jonga ukuba i-inshurensi yakho iyazihlawula na izinto ezithathiweyo kunye nemali';
 
   @override
-  String get lostWalletHeroTitle => 'Ulahlekelwe sisipaji?';
+  String get lostWalletHeroTitle => 'Ulahlekelwe yinto, okanye ibiwe?';
 
   @override
   String get lostWalletHeroBody => 'I-Vaultara ibonisa into omawuyivale kuqala, into omawuyitshintshe nokuba ngubani omawumxelele.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lostWalletEditTitle => 'Tshintsha iinkcukacha';
 
   @override
-  String get lostWalletLostHint => 'Siwile okanye ndisilibele kwenye indawo';
+  String get lostWalletLostHint => 'Iwile okanye ishiywe kwenye indawo. Qala ngokumisa, ucime kuphela ukuba ihlala ilahlekile';
 
   @override
-  String get lostWalletStolenHint => 'Sithathwe ngomnye umntu';
+  String get lostWalletStolenHint => 'Umntu uyithathile. Thintela yonke into uze uxele';
 
   @override
   String get lostWalletWhatMissing => 'Yintoni engekhoyo?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lostWalletStatementTitle => 'Jonga iingxelo zakho zebhanki';
 
   @override
-  String get lostWalletStatementBody => 'Khangela iintlawulo ongazenzanga ukusukela oko isipaji sakho silahleka.';
+  String get lostWalletStatementBody => 'Khangela iintlawulo ongazenzanga ukususela oko izinto zakho zalahlekayo.';
 
   @override
   String get lostWalletFoundButton => 'Ndisifumene';
@@ -7671,7 +7686,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get tutorialsSubHousehold => 'Mema abanye ukuba babelane ngeerekhodi nezikhumbuzi';
 
   @override
-  String get tutorialsTitleLostWallet => 'Ndilahlekelwe sisikhwama sam';
+  String get tutorialsTitleLostWallet => 'Ilahlekile okanye ibiwe';
 
   @override
   String get tutorialsSubLostWallet => 'Zilungiselele ngoku, wenze ngokukhawuleza ukuba ilahlekile';
@@ -7762,7 +7777,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get whatsNewBadge => 'Okutsha';
 
   @override
-  String get whatsNewTitle => 'Ndilahlekelwe sisikhwama sam';
+  String get whatsNewTitle => 'Ilahlekile okanye ibiwe';
 
   @override
   String get whatsNewBody => 'Gcina apho ugcina khona amakhadi akho nenombolo yokuvala yebhanki nganye. Ukuba ulahlekelwe yingxowa, uvala yonke into kwimizuzu.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get storyWallet3Title => 'Ukuba ilahlekile';
 
   @override
-  String get storyWallet3Body => 'Vula «Ndilahlekelwe sisikhwama sam» uze ucofe «Silahlekile» okanye «Sibiwe». I-Vaultara idwelisa yonke into ebikuyo.';
+  String get storyWallet3Body => 'Vula Ilahlekile okanye ibiwe uze ucofe Ilahlekile okanye Ibiwe. I-Vaultara ibonisa yonke into ebingaphakathi.';
 
   @override
   String get storyWallet4Title => 'Vala amakhadi kwimizuzu';

@@ -2404,6 +2404,21 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lostWalletSwitchedLost => 'ਗੁੰਮ ਵਿੱਚ ਬਦਲਿਆ। ਤੁਹਾਡੀ ਤਰੱਕੀ ਬਣੀ ਰਹਿੰਦੀ ਹੈ।';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'ਬੈਂਕਿੰਗ ਐਪ ਵਿੱਚ ਕਾਰਡ ਫ੍ਰੀਜ਼ ਕਰੋ। ਮਿਲ ਜਾਵੇ ਤਾਂ ਮੁੜ ਚਾਲੂ ਕਰ ਸਕਦੇ ਹੋ';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'ਇੱਕ ਦਿਨ ਬਾਅਦ ਵੀ ਨਹੀਂ ਮਿਲਿਆ? ਫ੍ਰੀਜ਼ ਕੀਤੇ ਕਾਰਡ ਰੱਦ ਕਰੋ ਅਤੇ ਨਵੇਂ ਮੰਗਵਾਓ';
+
+  @override
+  String get lostWalletStillMissingTitle => 'ਅਜੇ ਵੀ ਨਹੀਂ ਮਿਲਿਆ?';
+
+  @override
+  String get lostWalletStillMissingBody => 'ਜੇ ਨਹੀਂ ਮਿਲਿਆ, ਤਾਂ ਫ੍ਰੀਜ਼ ਕੀਤੇ ਕਾਰਡ ਰੱਦ ਕਰੋ ਅਤੇ ਨਵੇਂ ਮੰਗਵਾਓ।';
+
+  @override
+  String get lostWalletMarkedDone => 'ਪੂਰਾ ਹੋਇਆ ਵਜੋਂ ਨਿਸ਼ਾਨਬੱਧ';
+
+  @override
   String get travelSectionJourney => 'ਤੁਹਾਡੀ ਯਾਤਰਾ';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get startRenewingNow => 'ਨਵੀਨੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਦਾ ਸਮਾਂ';
 
   @override
-  String get lostWalletTitle => 'ਮੇਰਾ ਬਟੂਆ ਗੁਆਚ ਗਿਆ';
+  String get lostWalletTitle => 'ਗੁੰਮ ਜਾਂ ਚੋਰੀ';
 
   @override
   String get lostWalletSubtitle => 'ਦੇਖੋ ਉਸ ਵਿੱਚ ਕੀ ਸੀ ਅਤੇ ਕੀ ਬਦਲਵਾਉਣਾ ਹੈ';
@@ -3431,7 +3446,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'ਸਮਾਰਟ ਟੂਲ ਵਰਤਣਾ';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'ਗੁਆਚਿਆ ਬਟੂਆ, ਜ਼ਿੰਦਗੀ ਦੀਆਂ ਘਟਨਾਵਾਂ, ਸਬੂਤ ਪੈਕ ਅਤੇ ਸਾਂਝੇ ਕੀਤੇ ਲਿੰਕ';
+  String get tutorialsSmartToolsSubtitle => 'ਗੁੰਮ ਜਾਂ ਚੋਰੀ, ਜੀਵਨ ਦੀਆਂ ਘਟਨਾਵਾਂ, ਸਬੂਤ ਪੈਕ ਅਤੇ ਸਾਂਝੇ ਲਿੰਕ';
 
   @override
   String get tutorialsFamilyTitle => 'ਪਰਿਵਾਰ ਅਤੇ ਲੋਕ';
@@ -7256,13 +7271,13 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lostLineHelper => 'ਹੁਣੇ ਸੇਵ ਕਰੋ। ਨੰਬਰ ਕਾਰਡ ਉੱਤੇ ਛਪਿਆ ਹੁੰਦਾ ਹੈ, ਇਸ ਲਈ ਲੋੜ ਵੇਲੇ ਤੁਹਾਡੇ ਕੋਲ ਨਹੀਂ ਹੋਵੇਗਾ।';
 
   @override
-  String get lifeEventWalletLost => 'ਮੇਰਾ ਬਟੂਆ ਗੁੰਮ ਹੋ ਗਿਆ';
+  String get lifeEventWalletLost => 'ਗੁੰਮ ਹੋਈਆਂ ਚੀਜ਼ਾਂ';
 
   @override
-  String get lifeEventWalletLostBody => 'ਪਹਿਲਾਂ ਆਪਣੇ ਕਾਰਡ ਬਲੌਕ ਕਰੋ, ਫਿਰ ਦਸਤਾਵੇਜ਼ ਇੱਕ-ਇੱਕ ਕਰਕੇ ਬਦਲੋ।';
+  String get lifeEventWalletLostBody => 'ਪਹਿਲਾਂ ਆਪਣੇ ਕਾਰਡ ਫ੍ਰੀਜ਼ ਕਰੋ। ਜੇ ਅਜੇ ਵੀ ਨਾ ਮਿਲੇ, ਤਾਂ ਰੱਦ ਕਰੋ ਅਤੇ ਦਸਤਾਵੇਜ਼ ਇੱਕ-ਇੱਕ ਕਰਕੇ ਬਦਲੋ।';
 
   @override
-  String get lifeEventWalletStolen => 'ਮੇਰਾ ਬਟੂਆ ਚੋਰੀ ਹੋ ਗਿਆ';
+  String get lifeEventWalletStolen => 'ਚੋਰੀ ਹੋਈਆਂ ਚੀਜ਼ਾਂ';
 
   @override
   String get lifeEventWalletStolenBody => 'ਤੁਰੰਤ ਕਾਰਡ ਬਲੌਕ ਕਰੋ ਅਤੇ ਚੋਰੀ ਦੀ ਰਿਪੋਰਟ ਕਰੋ। ਫਿਰ ਧੋਖਾਧੜੀ ਲਈ ਖਾਤਿਆਂ ਉੱਤੇ ਨਜ਼ਰ ਰੱਖੋ।';
@@ -7310,10 +7325,10 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ਜੇ ਅੰਦਰ ਚਾਬੀਆਂ ਜਾਂ ਤੁਹਾਡਾ ਪਤਾ ਸੀ ਤਾਂ ਤਾਲੇ ਬਦਲਣ ਬਾਰੇ ਸੋਚੋ';
 
   @override
-  String get lifeTaskWalletInsurance => 'ਦੇਖੋ ਕਿ ਤੁਹਾਡਾ ਬੀਮਾ ਬਟੂਏ ਅਤੇ ਨਕਦੀ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ ਜਾਂ ਨਹੀਂ';
+  String get lifeTaskWalletInsurance => 'ਦੇਖੋ ਕਿ ਤੁਹਾਡਾ ਬੀਮਾ ਲਈਆਂ ਗਈਆਂ ਚੀਜ਼ਾਂ ਅਤੇ ਨਕਦੀ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ ਜਾਂ ਨਹੀਂ';
 
   @override
-  String get lostWalletHeroTitle => 'ਬਟੂਆ ਗੁੰਮ ਹੋ ਗਿਆ?';
+  String get lostWalletHeroTitle => 'ਕੁਝ ਗੁੰਮ ਗਿਆ, ਜਾਂ ਚੋਰੀ ਹੋ ਗਿਆ?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਪਹਿਲਾਂ ਕੀ ਬਲੌਕ ਕਰਨਾ, ਕੀ ਬਦਲਣਾ ਅਤੇ ਕਿਸਨੂੰ ਦੱਸਣਾ ਹੈ।';
@@ -7325,10 +7340,10 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lostWalletEditTitle => 'ਵੇਰਵੇ ਬਦਲੋ';
 
   @override
-  String get lostWalletLostHint => 'ਡਿੱਗ ਗਿਆ ਜਾਂ ਕਿਤੇ ਰਹਿ ਗਿਆ';
+  String get lostWalletLostHint => 'ਡਿੱਗ ਗਿਆ ਜਾਂ ਕਿਤੇ ਰਹਿ ਗਿਆ। ਪਹਿਲਾਂ ਫ੍ਰੀਜ਼ ਕਰੋ, ਨਾ ਮਿਲੇ ਤਾਂ ਹੀ ਰੱਦ ਕਰੋ';
 
   @override
-  String get lostWalletStolenHint => 'ਕਿਸੇ ਨੇ ਲੈ ਲਿਆ';
+  String get lostWalletStolenHint => 'ਕਿਸੇ ਨੇ ਲੈ ਲਿਆ। ਸਭ ਬਲੌਕ ਕਰੋ ਅਤੇ ਰਿਪੋਰਟ ਕਰੋ';
 
   @override
   String get lostWalletWhatMissing => 'ਕੀ ਗਾਇਬ ਹੈ?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lostWalletStatementTitle => 'ਬੈਂਕ ਸਟੇਟਮੈਂਟ ਜਾਂਚੋ';
 
   @override
-  String get lostWalletStatementBody => 'ਬਟੂਆ ਗੁੰਮ ਹੋਣ ਤੋਂ ਬਾਅਦ ਦੇ ਉਹ ਭੁਗਤਾਨ ਲੱਭੋ ਜੋ ਤੁਸੀਂ ਨਹੀਂ ਕੀਤੇ।';
+  String get lostWalletStatementBody => 'ਆਪਣੀਆਂ ਚੀਜ਼ਾਂ ਗੁੰਮ ਹੋਣ ਤੋਂ ਬਾਅਦ ਦੇ ਉਹ ਭੁਗਤਾਨ ਲੱਭੋ ਜੋ ਤੁਸੀਂ ਨਹੀਂ ਕੀਤੇ।';
 
   @override
   String get lostWalletFoundButton => 'ਮੈਨੂੰ ਮਿਲ ਗਿਆ';
@@ -7671,7 +7686,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get tutorialsSubHousehold => 'ਰਿਕਾਰਡ ਅਤੇ ਰੀਮਾਈਂਡਰ ਸਾਂਝੇ ਕਰਨ ਲਈ ਦੂਜਿਆਂ ਨੂੰ ਸੱਦਾ ਦਿਓ';
 
   @override
-  String get tutorialsTitleLostWallet => 'ਮੇਰਾ ਬਟੂਆ ਗੁਆਚ ਗਿਆ';
+  String get tutorialsTitleLostWallet => 'ਗੁੰਮ ਜਾਂ ਚੋਰੀ';
 
   @override
   String get tutorialsSubLostWallet => 'ਹੁਣੇ ਤਿਆਰੀ ਕਰੋ, ਗੁੰਮ ਹੋਵੇ ਤਾਂ ਜਲਦੀ ਕਾਰਵਾਈ ਕਰੋ';
@@ -7762,7 +7777,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get whatsNewBadge => 'ਨਵਾਂ';
 
   @override
-  String get whatsNewTitle => 'ਮੇਰਾ ਬਟੂਆ ਗੁਆਚ ਗਿਆ';
+  String get whatsNewTitle => 'ਗੁੰਮ ਜਾਂ ਚੋਰੀ';
 
   @override
   String get whatsNewBody => 'ਸੇਵ ਕਰੋ ਕਿ ਤੁਸੀਂ ਕਾਰਡ ਕਿੱਥੇ ਰੱਖਦੇ ਹੋ ਅਤੇ ਹਰ ਬੈਂਕ ਦਾ ਬਲਾਕ ਨੰਬਰ। ਬਟੂਆ ਗੁੰਮ ਹੋਵੇ ਤਾਂ ਤੁਸੀਂ ਮਿੰਟਾਂ ਵਿੱਚ ਸਭ ਬਲਾਕ ਕਰ ਦਿਓਗੇ।';
@@ -7904,7 +7919,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get storyWallet3Title => 'ਜੇ ਗੁੰਮ ਹੋ ਜਾਵੇ';
 
   @override
-  String get storyWallet3Body => '«ਮੇਰਾ ਬਟੂਆ ਗੁਆਚ ਗਿਆ» ਖੋਲ੍ਹੋ ਅਤੇ «ਗੁੰਮ ਹੋਇਆ» ਜਾਂ «ਚੋਰੀ ਹੋਇਆ» ਤੇ ਟੈਪ ਕਰੋ। Vaultara ਉਸ ਵਿੱਚ ਜੋ ਸੀ ਸਭ ਦੀ ਸੂਚੀ ਦਿਖਾਉਂਦਾ ਹੈ।';
+  String get storyWallet3Body => 'ਗੁੰਮ ਜਾਂ ਚੋਰੀ ਖੋਲ੍ਹੋ ਅਤੇ ਗੁੰਮ ਜਾਂ ਚੋਰੀ \'ਤੇ ਟੈਪ ਕਰੋ। Vaultara ਅੰਦਰ ਜੋ ਸੀ ਸਭ ਦਿਖਾਉਂਦਾ ਹੈ।';
 
   @override
   String get storyWallet4Title => 'ਮਿੰਟਾਂ ਵਿੱਚ ਕਾਰਡ ਬਲਾਕ ਕਰੋ';

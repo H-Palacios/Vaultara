@@ -2404,6 +2404,21 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lostWalletSwitchedLost => 'به گم‌شده تغییر کرد. پیشرفت شما حفظ می‌شود.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'کارت‌هایتان را در اپ بانک مسدود موقت کنید. اگر پیدا شد می‌توانید دوباره فعالشان کنید';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'بعد از یک روز هنوز پیدا نشده؟ کارت‌های مسدود را لغو و کارت جدید سفارش دهید';
+
+  @override
+  String get lostWalletStillMissingTitle => 'هنوز پیدا نشده؟';
+
+  @override
+  String get lostWalletStillMissingBody => 'اگر پیدا نشده، کارت‌های مسدود را لغو و کارت جدید سفارش دهید.';
+
+  @override
+  String get lostWalletMarkedDone => 'به‌عنوان انجام‌شده علامت خورد';
+
+  @override
   String get travelSectionJourney => 'سفر شما';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get startRenewingNow => 'وقت شروع تمدید است';
 
   @override
-  String get lostWalletTitle => 'کیف پولم را گم کرده‌ام';
+  String get lostWalletTitle => 'گم‌شده یا دزدیده‌شده';
 
   @override
   String get lostWalletSubtitle => 'ببینید چه چیزی در آن بود و چه چیزی را باید جایگزین کنید';
@@ -3431,7 +3446,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'استفاده از ابزارهای هوشمند';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'کیف پول گمشده، رویدادهای زندگی، بسته‌های مدارک و پیوندهای اشتراکی';
+  String get tutorialsSmartToolsSubtitle => 'گم‌شده یا دزدیده‌شده، رویدادهای زندگی، بسته‌های مدرک و پیوندهای اشتراکی';
 
   @override
   String get tutorialsFamilyTitle => 'خانواده و افراد';
@@ -7256,13 +7271,13 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lostLineHelper => 'همین حالا ذخیره‌اش کنید. شماره روی کارت چاپ شده، پس وقتی لازمش دارید همراهتان نیست.';
 
   @override
-  String get lifeEventWalletLost => 'کیف پولم را گم کردم';
+  String get lifeEventWalletLost => 'وسایل گم‌شده';
 
   @override
-  String get lifeEventWalletLostBody => 'اول کارت‌ها را مسدود کنید، بعد مدارک را یکی‌یکی جایگزین کنید.';
+  String get lifeEventWalletLostBody => 'اول کارت‌هایتان را مسدود موقت کنید. اگر هنوز پیدا نشد، لغوشان کنید و مدارکتان را یکی‌یکی جایگزین کنید.';
 
   @override
-  String get lifeEventWalletStolen => 'کیف پولم دزدیده شد';
+  String get lifeEventWalletStolen => 'وسایل دزدیده‌شده';
 
   @override
   String get lifeEventWalletStolenBody => 'فوراً کارت‌ها را مسدود کنید و سرقت را گزارش دهید. سپس حساب‌هایتان را از نظر کلاهبرداری زیر نظر بگیرید.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lifeTaskWalletLocks => 'اگر کلید یا نشانی‌تان داخلش بود، به عوض کردن قفل‌ها فکر کنید';
 
   @override
-  String get lifeTaskWalletInsurance => 'بررسی کنید بیمه‌تان کیف پول و پول نقد را پوشش می‌دهد یا نه';
+  String get lifeTaskWalletInsurance => 'بررسی کنید بیمه‌تان آنچه برده شده و پول نقد را پوشش می‌دهد یا نه';
 
   @override
-  String get lostWalletHeroTitle => 'کیف پولتان را گم کرده‌اید؟';
+  String get lostWalletHeroTitle => 'چیزی گم کرده‌اید یا دزدیده شده؟';
 
   @override
   String get lostWalletHeroBody => 'Vaultara نشان می‌دهد اول چه چیزی را مسدود کنید، چه چیزی را جایگزین کنید و به چه کسی خبر دهید.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lostWalletEditTitle => 'تغییر جزئیات';
 
   @override
-  String get lostWalletLostHint => 'افتاد یا جایی جا ماند';
+  String get lostWalletLostHint => 'افتاده یا جایی جا مانده. اول مسدود موقت کنید، فقط اگر پیدا نشد لغو کنید';
 
   @override
-  String get lostWalletStolenHint => 'کسی آن را برداشت';
+  String get lostWalletStolenHint => 'کسی آن را برده. همه چیز را مسدود و گزارش کنید';
 
   @override
   String get lostWalletWhatMissing => 'چه چیزی گم شده؟';
@@ -7566,7 +7581,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lostWalletStatementTitle => 'صورت‌حساب‌های بانکی را بررسی کنید';
 
   @override
-  String get lostWalletStatementBody => 'دنبال پرداخت‌هایی بگردید که از زمان گم شدن کیف پول انجام نداده‌اید.';
+  String get lostWalletStatementBody => 'دنبال پرداخت‌هایی بگردید که از زمان گم شدن وسایلتان انجام نداده‌اید.';
 
   @override
   String get lostWalletFoundButton => 'پیدایش کردم';
@@ -7671,7 +7686,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialsSubHousehold => 'دیگران را برای اشتراک موارد و یادآوری‌ها دعوت کنید';
 
   @override
-  String get tutorialsTitleLostWallet => 'کیف پولم را گم کرده‌ام';
+  String get tutorialsTitleLostWallet => 'گم‌شده یا دزدیده‌شده';
 
   @override
   String get tutorialsSubLostWallet => 'همین حالا آماده شوید و اگر گم شد سریع اقدام کنید';
@@ -7762,7 +7777,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get whatsNewBadge => 'جدید';
 
   @override
-  String get whatsNewTitle => 'کیف پولم را گم کرده‌ام';
+  String get whatsNewTitle => 'گم‌شده یا دزدیده‌شده';
 
   @override
   String get whatsNewBody => 'جای کارت‌هایتان و شماره مسدودسازی هر بانک را ذخیره کنید. اگر کیف پولتان گم شود، همه‌چیز را در چند دقیقه مسدود می‌کنید.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get storyWallet3Title => 'اگر گم شد';
 
   @override
-  String get storyWallet3Body => '«کیف پولم را گم کرده‌ام» را باز کنید و روی «گم شده» یا «دزدیده شده» ضربه بزنید. Vaultara همه چیزهایی را که داخلش بود فهرست می‌کند.';
+  String get storyWallet3Body => 'گم‌شده یا دزدیده‌شده را باز کنید و گم‌شده یا دزدیده‌شده را بزنید. Vaultara هر چه داخلش بود را نشان می‌دهد.';
 
   @override
   String get storyWallet4Title => 'مسدود کردن کارت‌ها در چند دقیقه';

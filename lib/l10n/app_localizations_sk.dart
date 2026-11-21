@@ -2423,6 +2423,21 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Zmenené na stratenú. Váš postup zostáva.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Zmrazte karty v bankovej aplikácii. Ak sa nájde, môžete ich odblokovať';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Po dni sa stále nenašlo? Zrušte zmrazené karty a objednajte nové';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Stále sa nenašlo?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ak sa neobjavilo, zrušte zmrazené karty a objednajte nové.';
+
+  @override
+  String get lostWalletMarkedDone => 'Označené ako hotové';
+
+  @override
   String get travelSectionJourney => 'Vaša cesta';
 
   @override
@@ -2877,7 +2892,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get startRenewingNow => 'Je čas začať s obnovením';
 
   @override
-  String get lostWalletTitle => 'Stratená peňaženka';
+  String get lostWalletTitle => 'Stratené alebo ukradnuté';
 
   @override
   String get lostWalletSubtitle => 'Pozrite si, čo v nej bolo a čo treba nahradiť';
@@ -3492,7 +3507,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Používanie inteligentných nástrojov';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Stratená peňaženka, životné udalosti, balíky dokladov a zdieľané odkazy';
+  String get tutorialsSmartToolsSubtitle => 'Stratené alebo ukradnuté, životné udalosti, balíky dôkazov a zdieľané odkazy';
 
   @override
   String get tutorialsFamilyTitle => 'Rodina a ľudia';
@@ -7387,13 +7402,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lostLineHelper => 'Uložte si ho teraz. Číslo je na karte, takže ho nebudete mať, keď ho budete potrebovať.';
 
   @override
-  String get lifeEventWalletLost => 'Stratil som peňaženku';
+  String get lifeEventWalletLost => 'Stratené veci';
 
   @override
-  String get lifeEventWalletLostBody => 'Najprv zablokujte karty a potom nahrádzajte doklady jeden po druhom.';
+  String get lifeEventWalletLostBody => 'Najprv zmrazte karty. Ak sa stále nenašlo, zrušte ich a nahraďte doklady jeden po druhom.';
 
   @override
-  String get lifeEventWalletStolen => 'Ukradli mi peňaženku';
+  String get lifeEventWalletStolen => 'Ukradnuté veci';
 
   @override
   String get lifeEventWalletStolenBody => 'Hneď zablokujte karty a nahláste krádež. Potom sledujte účty kvôli podvodom.';
@@ -7441,10 +7456,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ak tam boli kľúče alebo vaša adresa, zvážte výmenu zámkov';
 
   @override
-  String get lifeTaskWalletInsurance => 'Overte, či poistenie kryje peňaženku a hotovosť';
+  String get lifeTaskWalletInsurance => 'Skontrolujte, či poistenie kryje to, čo bolo vzaté, a hotovosť';
 
   @override
-  String get lostWalletHeroTitle => 'Stratili ste peňaženku?';
+  String get lostWalletHeroTitle => 'Stratili ste niečo, alebo vám to ukradli?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara ukáže, čo zablokovať najprv, čo nahradiť a komu dať vedieť.';
@@ -7456,10 +7471,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lostWalletEditTitle => 'Zmeniť údaje';
 
   @override
-  String get lostWalletLostHint => 'Vypadla alebo som ju niekde nechal';
+  String get lostWalletLostHint => 'Vypadlo alebo zostalo niekde ležať. Najprv zmrazte, zrušte len, ak sa nenájde';
 
   @override
-  String get lostWalletStolenHint => 'Niekto ju vzal';
+  String get lostWalletStolenHint => 'Niekto to vzal. Zablokujte všetko a nahláste to';
 
   @override
   String get lostWalletWhatMissing => 'Čo chýba?';
@@ -7697,7 +7712,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lostWalletStatementTitle => 'Skontrolujte bankové výpisy';
 
   @override
-  String get lostWalletStatementBody => 'Hľadajte platby, ktoré ste neurobili od straty peňaženky.';
+  String get lostWalletStatementBody => 'Hľadajte platby, ktoré ste neurobili odvtedy, čo sa vaše veci stratili.';
 
   @override
   String get lostWalletFoundButton => 'Našiel som ju';
@@ -7802,7 +7817,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tutorialsSubHousehold => 'Pozvite ostatných na zdieľanie záznamov a pripomienok';
 
   @override
-  String get tutorialsTitleLostWallet => 'Stratená peňaženka';
+  String get tutorialsTitleLostWallet => 'Stratené alebo ukradnuté';
 
   @override
   String get tutorialsSubLostWallet => 'Pripravte sa teraz a konajte rýchlo, keď sa stratí';
@@ -7895,7 +7910,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get whatsNewBadge => 'Novinka';
 
   @override
-  String get whatsNewTitle => 'Stratená peňaženka';
+  String get whatsNewTitle => 'Stratené alebo ukradnuté';
 
   @override
   String get whatsNewBody => 'Uložte si, kde nosíte karty, a blokovacie číslo každej banky. Keď peňaženku stratíte, všetko zablokujete za pár minút.';
@@ -8037,7 +8052,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get storyWallet3Title => 'Keď sa stratí';
 
   @override
-  String get storyWallet3Body => 'Otvorte „Stratená peňaženka“ a ťuknite na „Stratená“ alebo „Ukradnutá“. Vaultara vypíše všetko, čo v nej bolo.';
+  String get storyWallet3Body => 'Otvorte Stratené alebo ukradnuté a ťuknite na Stratené alebo Ukradnuté. Vaultara ukáže všetko, čo bolo vnútri.';
 
   @override
   String get storyWallet4Title => 'Zablokujte karty za pár minút';

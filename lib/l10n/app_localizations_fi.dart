@@ -2404,6 +2404,21 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Muutettu kadonneeksi. Edistymisesi säilyy.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Jäädytä korttisi pankkisovelluksessa. Voit poistaa jäädytyksen, jos se löytyy';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Yhä kateissa päivän jälkeen? Peru jäädytetyt kortit ja tilaa uudet';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Yhä kateissa?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Jos se ei ole löytynyt, peru jäädytetyt kortit ja tilaa uudet.';
+
+  @override
+  String get lostWalletMarkedDone => 'Merkitty tehdyksi';
+
+  @override
   String get travelSectionJourney => 'Matkasi';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get startRenewingNow => 'Aika aloittaa uusiminen';
 
   @override
-  String get lostWalletTitle => 'Kadotin lompakkoni';
+  String get lostWalletTitle => 'Kadonnut tai varastettu';
 
   @override
   String get lostWalletSubtitle => 'Katso, mitä siinä oli ja mitä pitää korvata';
@@ -3431,7 +3446,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Älykkäiden työkalujen käyttö';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Kadotettu lompakko, elämäntapahtumat, todistepaketit ja jaetut linkit';
+  String get tutorialsSmartToolsSubtitle => 'Kadonnut tai varastettu, elämäntapahtumat, todistepaketit ja jaetut linkit';
 
   @override
   String get tutorialsFamilyTitle => 'Perhe ja henkilöt';
@@ -7256,13 +7271,13 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lostLineHelper => 'Tallenna se nyt. Numero on kortissa, joten se on poissa, kun tarvitset sitä.';
 
   @override
-  String get lifeEventWalletLost => 'Kadotin lompakkoni';
+  String get lifeEventWalletLost => 'Kadonneet tavarat';
 
   @override
-  String get lifeEventWalletLostBody => 'Sulje ensin korttisi ja korvaa sitten asiakirjat yksi kerrallaan.';
+  String get lifeEventWalletLostBody => 'Jäädytä ensin korttisi. Jos se on yhä kateissa, peru ne ja korvaa asiakirjat yksi kerrallaan.';
 
   @override
-  String get lifeEventWalletStolen => 'Lompakkoni varastettiin';
+  String get lifeEventWalletStolen => 'Varastetut tavarat';
 
   @override
   String get lifeEventWalletStolenBody => 'Sulje korttisi heti ja tee rikosilmoitus. Seuraa sitten tilejäsi petosten varalta.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Jos siinä oli avaimia tai osoitteesi, harkitse lukkojen vaihtamista';
 
   @override
-  String get lifeTaskWalletInsurance => 'Tarkista, korvaako vakuutuksesi lompakon ja käteisen';
+  String get lifeTaskWalletInsurance => 'Tarkista, kattaako vakuutuksesi viedyn omaisuuden ja käteisen';
 
   @override
-  String get lostWalletHeroTitle => 'Kadotitko lompakkosi?';
+  String get lostWalletHeroTitle => 'Hukkasitko jotain, vai varastettiinko se?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara näyttää, mitä estää ensin, mitä korvata ja kenelle kertoa.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lostWalletEditTitle => 'Muuta tietoja';
 
   @override
-  String get lostWalletLostHint => 'Pudonnut tai unohtunut jonnekin';
+  String get lostWalletLostHint => 'Putosi tai jäi jonnekin. Jäädytä ensin, peru vain jos se ei löydy';
 
   @override
-  String get lostWalletStolenHint => 'Joku vei sen';
+  String get lostWalletStolenHint => 'Joku vei sen. Estä kaikki ja ilmoita siitä';
 
   @override
   String get lostWalletWhatMissing => 'Mitä puuttuu?';
@@ -7569,7 +7584,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lostWalletStatementTitle => 'Tarkista tiliotteesi';
 
   @override
-  String get lostWalletStatementBody => 'Etsi maksuja, joita et ole tehnyt lompakon katoamisen jälkeen.';
+  String get lostWalletStatementBody => 'Etsi maksuja, joita et tehnyt sen jälkeen, kun tavarasi katosivat.';
 
   @override
   String get lostWalletFoundButton => 'Löysin sen';
@@ -7675,7 +7690,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialsSubHousehold => 'Kutsu muita jakamaan tietueita ja muistutuksia';
 
   @override
-  String get tutorialsTitleLostWallet => 'Kadotin lompakkoni';
+  String get tutorialsTitleLostWallet => 'Kadonnut tai varastettu';
 
   @override
   String get tutorialsSubLostWallet => 'Valmistaudu nyt ja toimi nopeasti, jos se katoaa';
@@ -7766,7 +7781,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get whatsNewBadge => 'Uutta';
 
   @override
-  String get whatsNewTitle => 'Kadotin lompakkoni';
+  String get whatsNewTitle => 'Kadonnut tai varastettu';
 
   @override
   String get whatsNewBody => 'Tallenna, missä pidät korttejasi, ja jokaisen pankin sulkunumero. Jos lompakko katoaa, suljet kaiken muutamassa minuutissa.';
@@ -7908,7 +7923,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get storyWallet3Title => 'Jos se katoaa';
 
   @override
-  String get storyWallet3Body => 'Avaa ”Kadotin lompakkoni” ja napauta ”Kadonnut” tai ”Varastettu”. Vaultara listaa kaiken, mitä siinä oli.';
+  String get storyWallet3Body => 'Avaa Kadonnut tai varastettu ja napauta Kadonnut tai Varastettu. Vaultara näyttää kaiken, mitä sisällä oli.';
 
   @override
   String get storyWallet4Title => 'Sulje kortit minuuteissa';

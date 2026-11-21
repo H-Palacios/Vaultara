@@ -2431,6 +2431,21 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Athraithe go caillte. Coinnítear do dhul chun cinn.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Reoigh do chártaí i d\'aip bhainc. Is féidir iad a dhíreo má thagann sé ar ais';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Fós ar iarraidh tar éis lae? Cealaigh na cártaí reoite agus ordaigh cinn nua';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Fós ar iarraidh?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Mura bhfuil sé tagtha ar ais, cealaigh na cártaí reoite agus ordaigh cinn nua.';
+
+  @override
+  String get lostWalletMarkedDone => 'Marcáilte mar déanta';
+
+  @override
   String get travelSectionJourney => 'Do thuras';
 
   @override
@@ -2894,7 +2909,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get startRenewingNow => 'Am tosú ag athnuachan';
 
   @override
-  String get lostWalletTitle => 'Chaill mé mo sparán';
+  String get lostWalletTitle => 'Caillte nó goidte';
 
   @override
   String get lostWalletSubtitle => 'Féach cad a bhí ann agus cad atá le hathrú';
@@ -3522,7 +3537,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Uirlisí cliste a úsáid';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Sparán caillte, imeachtaí saoil, pacaí cruthúnais agus naisc roinnte';
+  String get tutorialsSmartToolsSubtitle => 'Caillte nó goidte, imeachtaí saoil, pacáistí cruthúnais agus naisc roinnte';
 
   @override
   String get tutorialsFamilyTitle => 'Teaghlach agus daoine';
@@ -7437,13 +7452,13 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lostLineHelper => 'Sábháil anois í. Tá an uimhir ar an gcárta, mar sin ní bheidh sí agat nuair a theastaíonn sí.';
 
   @override
-  String get lifeEventWalletLost => 'Chaill mé mo sparán';
+  String get lifeEventWalletLost => 'Rudaí caillte';
 
   @override
-  String get lifeEventWalletLostBody => 'Blocáil do chártaí ar dtús, ansin athsholáthair do dhoiciméid ceann ar cheann.';
+  String get lifeEventWalletLostBody => 'Reoigh do chártaí ar dtús. Más fós ar iarraidh, cealaigh iad agus cuir doiciméid nua in áit na seanchinn ceann ar cheann.';
 
   @override
-  String get lifeEventWalletStolen => 'Goideadh mo sparán';
+  String get lifeEventWalletStolen => 'Rudaí goidte';
 
   @override
   String get lifeEventWalletStolenBody => 'Blocáil do chártaí láithreach agus tuairiscigh an goid. Ansin coinnigh súil ar do chuntais ar eagla calaoise.';
@@ -7491,10 +7506,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Má bhí eochracha nó do sheoladh ann, smaoinigh ar na glais a athrú';
 
   @override
-  String get lifeTaskWalletInsurance => 'Seiceáil an gclúdaíonn d\'árachas an sparán agus an t-airgead tirim';
+  String get lifeTaskWalletInsurance => 'Seiceáil an gclúdaíonn d\'árachas a tógadh agus aon airgead tirim';
 
   @override
-  String get lostWalletHeroTitle => 'Ar chaill tú do sparán?';
+  String get lostWalletHeroTitle => 'Ar chaill tú rud éigin, nó ar goideadh é?';
 
   @override
   String get lostWalletHeroBody => 'Taispeánann Vaultara cad atá le blocáil ar dtús, cad atá le hathsholáthar agus cé dó a n-inseofá.';
@@ -7506,10 +7521,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lostWalletEditTitle => 'Athraigh na sonraí';
 
   @override
-  String get lostWalletLostHint => 'Thit sé nó d\'fhág mé áit éigin é';
+  String get lostWalletLostHint => 'Thit sé nó fágadh áit éigin é. Reoigh ar dtús, cealaigh ach amháin má fhanann sé ar iarraidh';
 
   @override
-  String get lostWalletStolenHint => 'Thóg duine éigin é';
+  String get lostWalletStolenHint => 'Thóg duine éigin é. Cuir bac ar gach rud agus tuairiscigh é';
 
   @override
   String get lostWalletWhatMissing => 'Cad atá ar iarraidh?';
@@ -7747,7 +7762,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lostWalletStatementTitle => 'Seiceáil do ráitis bhainc';
 
   @override
-  String get lostWalletStatementBody => 'Lorg íocaíochtaí nach ndearna tú ó cailleadh do sparán.';
+  String get lostWalletStatementBody => 'Lorg íocaíochtaí nach ndearna tú ó chuaigh do chuid rudaí ar iarraidh.';
 
   @override
   String get lostWalletFoundButton => 'D\'aimsigh mé é';
@@ -7852,7 +7867,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialsSubHousehold => 'Tabhair cuireadh do dhaoine eile taifid agus meabhrúcháin a chomhroinnt';
 
   @override
-  String get tutorialsTitleLostWallet => 'Chaill mé mo sparán';
+  String get tutorialsTitleLostWallet => 'Caillte nó goidte';
 
   @override
   String get tutorialsSubLostWallet => 'Ullmhaigh anois, agus gníomhaigh go tapa má chailltear é';
@@ -7946,7 +7961,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get whatsNewBadge => 'Nua';
 
   @override
-  String get whatsNewTitle => 'Chaill mé mo sparán';
+  String get whatsNewTitle => 'Caillte nó goidte';
 
   @override
   String get whatsNewBody => 'Sábháil cá gcoinníonn tú do chártaí agus uimhir bhlocála gach bainc. Má chailleann tú do sparán, blocálann tú gach rud i gceann nóiméad.';
@@ -8088,7 +8103,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get storyWallet3Title => 'Má chailltear é';
 
   @override
-  String get storyWallet3Body => 'Oscail «Chaill mé mo sparán» agus tapáil «Caillte» nó «Goidte». Liostaíonn Vaultara gach a raibh ann.';
+  String get storyWallet3Body => 'Oscail Caillte nó goidte agus tapáil Caillte nó Goidte. Taispeánann Vaultara gach rud a bhí istigh.';
 
   @override
   String get storyWallet4Title => 'Blocáil cártaí i gceann nóiméad';

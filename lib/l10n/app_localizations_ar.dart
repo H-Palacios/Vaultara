@@ -2440,6 +2440,21 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lostWalletSwitchedLost => 'تم التغيير إلى مفقودة. تقدمك محفوظ.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'جمّد بطاقاتك في تطبيق البنك. يمكنك إلغاء التجميد إذا وجدته';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'ما زال مفقودًا بعد يوم؟ ألغِ البطاقات المجمدة واطلب بطاقات جديدة';
+
+  @override
+  String get lostWalletStillMissingTitle => 'ما زال مفقودًا؟';
+
+  @override
+  String get lostWalletStillMissingBody => 'إذا لم يظهر، ألغِ البطاقات المجمدة واطلب بطاقات جديدة.';
+
+  @override
+  String get lostWalletMarkedDone => 'تم وضع علامة كمكتمل';
+
+  @override
   String get travelSectionJourney => 'رحلتك';
 
   @override
@@ -2912,7 +2927,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get startRenewingNow => 'حان وقت بدء التجديد';
 
   @override
-  String get lostWalletTitle => 'فقدت محفظتي';
+  String get lostWalletTitle => 'مفقود أو مسروق';
 
   @override
   String get lostWalletSubtitle => 'اطّلع على ما كان فيها وما يجب استبداله';
@@ -3542,7 +3557,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'استخدام الأدوات الذكية';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'فقدان المحفظة وأحداث الحياة وحزم الإثبات والروابط المشاركة';
+  String get tutorialsSmartToolsSubtitle => 'مفقود أو مسروق، أحداث الحياة، حزم الإثبات والروابط المشتركة';
 
   @override
   String get tutorialsFamilyTitle => 'العائلة والأشخاص';
@@ -7477,13 +7492,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lostLineHelper => 'احفظه الآن. الرقم مطبوع على البطاقة، فلن يكون معك حين تحتاج إليه.';
 
   @override
-  String get lifeEventWalletLost => 'أضعت محفظتي';
+  String get lifeEventWalletLost => 'أغراض مفقودة';
 
   @override
-  String get lifeEventWalletLostBody => 'أوقف بطاقاتك أولًا، ثم استبدل مستنداتك واحدًا تلو الآخر.';
+  String get lifeEventWalletLostBody => 'جمّد بطاقاتك أولًا. إذا ظلت مفقودة، ألغها واستبدل مستنداتك واحدًا تلو الآخر.';
 
   @override
-  String get lifeEventWalletStolen => 'سُرقت محفظتي';
+  String get lifeEventWalletStolen => 'أغراض مسروقة';
 
   @override
   String get lifeEventWalletStolenBody => 'أوقف بطاقاتك فورًا وأبلغ عن السرقة. ثم راقب حساباتك تحسبًا للاحتيال.';
@@ -7531,10 +7546,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lifeTaskWalletLocks => 'إن كانت فيها مفاتيح أو عنوانك، ففكّر في تغيير الأقفال';
 
   @override
-  String get lifeTaskWalletInsurance => 'تحقق مما إذا كان تأمينك يغطي المحفظة والنقود';
+  String get lifeTaskWalletInsurance => 'تحقق مما إذا كان تأمينك يغطي ما أُخذ وأي نقود';
 
   @override
-  String get lostWalletHeroTitle => 'أضعت محفظتك؟';
+  String get lostWalletHeroTitle => 'هل فقدت شيئًا أم سُرق؟';
 
   @override
   String get lostWalletHeroBody => 'يعرض Vaultara ما يجب إيقافه أولًا، وما يجب استبداله، ومن يجب إبلاغه.';
@@ -7546,10 +7561,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lostWalletEditTitle => 'تغيير التفاصيل';
 
   @override
-  String get lostWalletLostHint => 'سقطت أو نسيتها في مكان ما';
+  String get lostWalletLostHint => 'سقط أو تُرك في مكان ما. جمّد أولًا، وألغِ فقط إذا ظل مفقودًا';
 
   @override
-  String get lostWalletStolenHint => 'أخذها شخص ما';
+  String get lostWalletStolenHint => 'أخذه شخص ما. احظر كل شيء وأبلغ عنه';
 
   @override
   String get lostWalletWhatMissing => 'ما المفقود؟';
@@ -7787,7 +7802,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lostWalletStatementTitle => 'راجع كشوف حسابك';
 
   @override
-  String get lostWalletStatementBody => 'ابحث عن مدفوعات لم تقم بها منذ ضياع محفظتك.';
+  String get lostWalletStatementBody => 'ابحث عن مدفوعات لم تقم بها منذ فقدان أغراضك.';
 
   @override
   String get lostWalletFoundButton => 'وجدتها';
@@ -7892,7 +7907,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialsSubHousehold => 'ادعُ آخرين لمشاركة السجلات والتذكيرات';
 
   @override
-  String get tutorialsTitleLostWallet => 'فقدت محفظتي';
+  String get tutorialsTitleLostWallet => 'مفقود أو مسروق';
 
   @override
   String get tutorialsSubLostWallet => 'استعد الآن وتصرّف بسرعة إذا ضاعت';
@@ -7987,7 +8002,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get whatsNewBadge => 'جديد';
 
   @override
-  String get whatsNewTitle => 'فقدت محفظتي';
+  String get whatsNewTitle => 'مفقود أو مسروق';
 
   @override
   String get whatsNewBody => 'احفظ مكان بطاقاتك ورقم الإيقاف لكل بنك. إذا ضاعت محفظتك توقف كل شيء في دقائق.';
@@ -8129,7 +8144,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get storyWallet3Title => 'إذا ضاعت';
 
   @override
-  String get storyWallet3Body => 'افتح «فقدت محفظتي» وانقر على «ضاعت» أو «سُرقت». يعرض Vaultara كل ما كان فيها.';
+  String get storyWallet3Body => 'افتح مفقود أو مسروق واضغط مفقود أو مسروق. يعرض Vaultara كل ما كان بداخلها.';
 
   @override
   String get storyWallet4Title => 'أوقف البطاقات في دقائق';

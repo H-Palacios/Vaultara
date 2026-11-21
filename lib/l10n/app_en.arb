@@ -2368,6 +2368,26 @@
   "@lostWalletSwitchedLost": {
     "description": "Shown after switching the plan to lost"
   },
+  "lifeTaskWalletFreezeLost": "Freeze your cards in your banking app. You can unfreeze them if it turns up",
+  "@lifeTaskWalletFreezeLost": {
+    "description": "Lost (not stolen) items: first step, freezing cards in the banking app, which can be undone"
+  },
+  "lifeTaskWalletCancelIfMissing": "Still missing after a day? Cancel the frozen cards and order new ones",
+  "@lifeTaskWalletCancelIfMissing": {
+    "description": "Lost items: step to cancel the frozen cards if still missing after a day"
+  },
+  "lostWalletStillMissingTitle": "Still missing?",
+  "@lostWalletStillMissingTitle": {
+    "description": "Reminder title the day after something was lost"
+  },
+  "lostWalletStillMissingBody": "If it hasn't turned up, cancel the frozen cards and order new ones.",
+  "@lostWalletStillMissingBody": {
+    "description": "Reminder text the day after something was lost"
+  },
+  "lostWalletMarkedDone": "Marked as done",
+  "@lostWalletMarkedDone": {
+    "description": "Shown after ticking a card or step in Lost or stolen, with Undo"
+  },
   "travelSectionJourney": "Your journey",
   "@travelSectionJourney": {
     "description": "Heading above the departure, flights and return timeline on a trip"
@@ -2946,7 +2966,7 @@
   "@startRenewingNow": {
     "description": "Line on a record card when it is time to begin the renewal"
   },
-  "lostWalletTitle": "Lost my wallet",
+  "lostWalletTitle": "Lost or stolen",
   "@lostWalletTitle": {
     "description": "Screen title and settings tile title"
   },
@@ -3757,7 +3777,7 @@
   "@tutorialsSmartToolsTitle": {
     "description": "Title of the Smart tools tutorial card on the Tutorials screen."
   },
-  "tutorialsSmartToolsSubtitle": "Lost wallet, life events, proof packs and shared links",
+  "tutorialsSmartToolsSubtitle": "Lost or stolen, life events, proof packs and shared links",
   "@tutorialsSmartToolsSubtitle": {
     "description": "Short description of the Smart tools tutorial card."
   },
@@ -8750,15 +8770,15 @@
   "@lostLineHelper": {
     "description": "Helper under the lost card phone number field."
   },
-  "lifeEventWalletLost": "I lost my wallet",
+  "lifeEventWalletLost": "Lost items",
   "@lifeEventWalletLost": {
     "description": "Life event option, first person"
   },
-  "lifeEventWalletLostBody": "Block your cards first, then replace your documents one by one.",
+  "lifeEventWalletLostBody": "Freeze your cards first. If it's still missing, cancel them and replace your documents one by one.",
   "@lifeEventWalletLostBody": {
     "description": "Short explanation shown in a lost wallet plan."
   },
-  "lifeEventWalletStolen": "My wallet was stolen",
+  "lifeEventWalletStolen": "Stolen items",
   "@lifeEventWalletStolen": {
     "description": "Life event option, first person"
   },
@@ -8822,11 +8842,11 @@
   "@lifeTaskWalletLocks": {
     "description": "A step in a lost wallet plan. Imperative, short."
   },
-  "lifeTaskWalletInsurance": "Check whether your insurance covers the wallet and cash",
+  "lifeTaskWalletInsurance": "Check whether your insurance covers what was taken and any cash",
   "@lifeTaskWalletInsurance": {
     "description": "A step in a lost wallet plan. Imperative, short."
   },
-  "lostWalletHeroTitle": "Lost your wallet?",
+  "lostWalletHeroTitle": "Lost something, or was it stolen?",
   "@lostWalletHeroTitle": {
     "description": "On the Lost my wallet screen."
   },
@@ -8842,11 +8862,11 @@
   "@lostWalletEditTitle": {
     "description": "Title of the sheet that edits a lost wallet plan."
   },
-  "lostWalletLostHint": "Dropped or left somewhere",
+  "lostWalletLostHint": "Dropped or left somewhere. Freeze first, cancel only if it stays missing",
   "@lostWalletLostHint": {
     "description": "Under the Lost choice."
   },
-  "lostWalletStolenHint": "Someone took it",
+  "lostWalletStolenHint": "Someone took it. Block everything and report it",
   "@lostWalletStolenHint": {
     "description": "Under the Stolen choice."
   },
@@ -9169,7 +9189,7 @@
   "@lostWalletStatementTitle": {
     "description": "Notification title."
   },
-  "lostWalletStatementBody": "Look for payments you did not make since your wallet went missing.",
+  "lostWalletStatementBody": "Look for payments you did not make since your things went missing.",
   "@lostWalletStatementBody": {
     "description": "Notification body."
   },
@@ -9314,7 +9334,7 @@
   "@tutorialsSubHousehold": {
     "description": "One line on what a tutorial covers."
   },
-  "tutorialsTitleLostWallet": "Lost my wallet",
+  "tutorialsTitleLostWallet": "Lost or stolen",
   "@tutorialsTitleLostWallet": {
     "description": "Short title of a tutorial."
   },
@@ -9435,7 +9455,7 @@
   "@whatsNewBadge": {
     "description": "Badge on the What's new card."
   },
-  "whatsNewTitle": "Lost my wallet",
+  "whatsNewTitle": "Lost or stolen",
   "@whatsNewTitle": {
     "description": "Title of the What's new card."
   },
@@ -9629,7 +9649,7 @@
   "@storyWallet3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyWallet3Body": "Open Lost my wallet and tap Lost or Stolen. Vaultara lists everything that was inside.",
+  "storyWallet3Body": "Open Lost or stolen and tap Lost or Stolen. Vaultara lists everything that was inside.",
   "@storyWallet3Body": {
     "description": "Text of a tutorial step."
   },

@@ -2404,6 +2404,21 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Elveszettre módosítva. Az előrehaladásod megmarad.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Fagyaszd be a kártyáidat a banki appban. Ha előkerül, feloldhatod őket';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Egy nap után is hiányzik? Töröld a befagyasztott kártyákat, és rendelj újakat';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Még mindig hiányzik?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ha nem került elő, töröld a befagyasztott kártyákat, és rendelj újakat.';
+
+  @override
+  String get lostWalletMarkedDone => 'Készként megjelölve';
+
+  @override
   String get travelSectionJourney => 'Az utad';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get startRenewingNow => 'Ideje elkezdeni a megújítást';
 
   @override
-  String get lostWalletTitle => 'Elvesztettem a pénztárcámat';
+  String get lostWalletTitle => 'Elveszett vagy ellopták';
 
   @override
   String get lostWalletSubtitle => 'Nézze meg, mi volt benne, és mit kell pótolni';
@@ -3431,7 +3446,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Az okos eszközök használata';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Elveszett pénztárca, életesemények, igazolási csomagok és megosztott linkek';
+  String get tutorialsSmartToolsSubtitle => 'Elveszett vagy ellopták, életesemények, bizonyítékcsomagok és megosztott linkek';
 
   @override
   String get tutorialsFamilyTitle => 'Család és személyek';
@@ -7256,13 +7271,13 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lostLineHelper => 'Mentsd el most. A szám a kártyán van, így nem lesz meg, amikor kell.';
 
   @override
-  String get lifeEventWalletLost => 'Elvesztettem a pénztárcámat';
+  String get lifeEventWalletLost => 'Elveszett tárgyak';
 
   @override
-  String get lifeEventWalletLostBody => 'Először tiltsd le a kártyáidat, aztán pótold egyenként az iratokat.';
+  String get lifeEventWalletLostBody => 'Először fagyaszd be a kártyáidat. Ha még mindig nincs meg, töröld őket, és pótold egyenként az iratokat.';
 
   @override
-  String get lifeEventWalletStolen => 'Ellopták a pénztárcámat';
+  String get lifeEventWalletStolen => 'Ellopott tárgyak';
 
   @override
   String get lifeEventWalletStolenBody => 'Azonnal tiltsd le a kártyáidat, és jelentsd a lopást. Utána figyeld a számláidat csalás miatt.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ha kulcs vagy a címed is benne volt, gondold át a zárcserét';
 
   @override
-  String get lifeTaskWalletInsurance => 'Nézd meg, fedezi-e a biztosításod a pénztárcát és a készpénzt';
+  String get lifeTaskWalletInsurance => 'Nézd meg, fedezi-e a biztosításod az elvitt dolgokat és a készpénzt';
 
   @override
-  String get lostWalletHeroTitle => 'Elvesztetted a pénztárcádat?';
+  String get lostWalletHeroTitle => 'Elvesztettél valamit, vagy ellopták?';
 
   @override
   String get lostWalletHeroBody => 'A Vaultara megmutatja, mit tilts le először, mit pótolj, és kinek szólj.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lostWalletEditTitle => 'Adatok módosítása';
 
   @override
-  String get lostWalletLostHint => 'Leesett vagy otthagytam valahol';
+  String get lostWalletLostHint => 'Leesett vagy ott maradt valahol. Először fagyaszd be, csak akkor töröld, ha nem kerül elő';
 
   @override
-  String get lostWalletStolenHint => 'Valaki elvitte';
+  String get lostWalletStolenHint => 'Valaki elvitte. Tilts le mindent, és jelentsd';
 
   @override
   String get lostWalletWhatMissing => 'Mi hiányzik?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lostWalletStatementTitle => 'Nézd át a bankszámlakivonataidat';
 
   @override
-  String get lostWalletStatementBody => 'Keress olyan fizetéseket, amelyeket a pénztárca eltűnése óta nem te indítottál.';
+  String get lostWalletStatementBody => 'Keress olyan fizetéseket, amelyeket nem te indítottál, mióta eltűntek a holmijaid.';
 
   @override
   String get lostWalletFoundButton => 'Megtaláltam';
@@ -7671,7 +7686,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialsSubHousehold => 'Hívj meg másokat tételek és emlékeztetők megosztására';
 
   @override
-  String get tutorialsTitleLostWallet => 'Elvesztettem a pénztárcámat';
+  String get tutorialsTitleLostWallet => 'Elveszett vagy ellopták';
 
   @override
   String get tutorialsSubLostWallet => 'Készülj fel most, és cselekedj gyorsan, ha elveszik';
@@ -7762,7 +7777,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get whatsNewBadge => 'Új';
 
   @override
-  String get whatsNewTitle => 'Elvesztettem a pénztárcámat';
+  String get whatsNewTitle => 'Elveszett vagy ellopták';
 
   @override
   String get whatsNewBody => 'Mentsd el, hol tartod a kártyáidat, és minden bank letiltási számát. Ha elveszted a pénztárcát, perceken belül mindent letilthatsz.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get storyWallet3Title => 'Ha elveszik';
 
   @override
-  String get storyWallet3Body => 'Nyisd meg: „Elvesztettem a pénztárcámat”, és koppints a(z) „Elveszett” vagy „Ellopták” lehetőségre. A Vaultara felsorolja, mi volt benne.';
+  String get storyWallet3Body => 'Nyisd meg az Elveszett vagy ellopták részt, és koppints az Elveszett vagy Ellopták lehetőségre. A Vaultara mindent mutat, ami benne volt.';
 
   @override
   String get storyWallet4Title => 'Kártyák letiltása percek alatt';

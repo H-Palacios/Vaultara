@@ -2404,6 +2404,21 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Άλλαξε σε χαμένο. Η πρόοδός σας διατηρείται.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Παγώστε τις κάρτες στην εφαρμογή της τράπεζας. Μπορείτε να τις ξεπαγώσετε αν βρεθεί';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Λείπει ακόμα μετά από μια μέρα; Ακυρώστε τις παγωμένες κάρτες και παραγγείλτε νέες';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Λείπει ακόμα;';
+
+  @override
+  String get lostWalletStillMissingBody => 'Αν δεν βρέθηκε, ακυρώστε τις παγωμένες κάρτες και παραγγείλτε νέες.';
+
+  @override
+  String get lostWalletMarkedDone => 'Σημειώθηκε ως ολοκληρωμένο';
+
+  @override
   String get travelSectionJourney => 'Το ταξίδι σας';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get startRenewingNow => 'Ώρα να ξεκινήσει η ανανέωση';
 
   @override
-  String get lostWalletTitle => 'Έχασα το πορτοφόλι μου';
+  String get lostWalletTitle => 'Χαμένο ή κλεμμένο';
 
   @override
   String get lostWalletSubtitle => 'Δείτε τι είχε μέσα και τι να αντικαταστήσετε';
@@ -3431,7 +3446,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Χρήση έξυπνων εργαλείων';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Χαμένο πορτοφόλι, γεγονότα ζωής, φάκελοι αποδείξεων και σύνδεσμοι κοινοποίησης';
+  String get tutorialsSmartToolsSubtitle => 'Χαμένο ή κλεμμένο, γεγονότα ζωής, πακέτα αποδείξεων και κοινόχρηστοι σύνδεσμοι';
 
   @override
   String get tutorialsFamilyTitle => 'Οικογένεια και άτομα';
@@ -7256,13 +7271,13 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lostLineHelper => 'Αποθηκεύστε το τώρα. Ο αριθμός είναι τυπωμένος στην κάρτα, άρα δεν θα τον έχετε όταν τον χρειαστείτε.';
 
   @override
-  String get lifeEventWalletLost => 'Έχασα το πορτοφόλι μου';
+  String get lifeEventWalletLost => 'Χαμένα αντικείμενα';
 
   @override
-  String get lifeEventWalletLostBody => 'Μπλοκάρετε πρώτα τις κάρτες και μετά αντικαταστήστε τα έγγραφα ένα ένα.';
+  String get lifeEventWalletLostBody => 'Παγώστε πρώτα τις κάρτες σας. Αν λείπει ακόμα, ακυρώστε τις και αντικαταστήστε τα έγγραφά σας ένα ένα.';
 
   @override
-  String get lifeEventWalletStolen => 'Μου έκλεψαν το πορτοφόλι';
+  String get lifeEventWalletStolen => 'Κλεμμένα αντικείμενα';
 
   @override
   String get lifeEventWalletStolenBody => 'Μπλοκάρετε αμέσως τις κάρτες και δηλώστε την κλοπή. Μετά προσέχετε τους λογαριασμούς για απάτη.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Αν είχε κλειδιά ή τη διεύθυνσή σας, σκεφτείτε να αλλάξετε κλειδαριές';
 
   @override
-  String get lifeTaskWalletInsurance => 'Ελέγξτε αν η ασφάλειά σας καλύπτει το πορτοφόλι και τα μετρητά';
+  String get lifeTaskWalletInsurance => 'Ελέγξτε αν η ασφάλισή σας καλύπτει ό,τι πάρθηκε και τα μετρητά';
 
   @override
-  String get lostWalletHeroTitle => 'Χάσατε το πορτοφόλι σας;';
+  String get lostWalletHeroTitle => 'Χάσατε κάτι ή κλάπηκε;';
 
   @override
   String get lostWalletHeroBody => 'Το Vaultara δείχνει τι να μπλοκάρετε πρώτα, τι να αντικαταστήσετε και ποιον να ενημερώσετε.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lostWalletEditTitle => 'Αλλαγή στοιχείων';
 
   @override
-  String get lostWalletLostHint => 'Έπεσε ή το ξέχασα κάπου';
+  String get lostWalletLostHint => 'Έπεσε ή ξεχάστηκε κάπου. Παγώστε πρώτα, ακυρώστε μόνο αν δεν βρεθεί';
 
   @override
-  String get lostWalletStolenHint => 'Κάποιος το πήρε';
+  String get lostWalletStolenHint => 'Κάποιος το πήρε. Μπλοκάρετε τα πάντα και δηλώστε το';
 
   @override
   String get lostWalletWhatMissing => 'Τι λείπει;';
@@ -7569,7 +7584,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lostWalletStatementTitle => 'Ελέγξτε τα αντίγραφα κίνησης';
 
   @override
-  String get lostWalletStatementBody => 'Ψάξτε για πληρωμές που δεν κάνατε από τότε που χάθηκε το πορτοφόλι.';
+  String get lostWalletStatementBody => 'Αναζητήστε πληρωμές που δεν κάνατε από τότε που χάθηκαν τα πράγματά σας.';
 
   @override
   String get lostWalletFoundButton => 'Το βρήκα';
@@ -7675,7 +7690,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialsSubHousehold => 'Προσκαλέστε άλλους να μοιράζονται εγγραφές και υπενθυμίσεις';
 
   @override
-  String get tutorialsTitleLostWallet => 'Έχασα το πορτοφόλι μου';
+  String get tutorialsTitleLostWallet => 'Χαμένο ή κλεμμένο';
 
   @override
   String get tutorialsSubLostWallet => 'Προετοιμαστείτε τώρα, δράστε γρήγορα αν χαθεί';
@@ -7766,7 +7781,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get whatsNewBadge => 'Νέο';
 
   @override
-  String get whatsNewTitle => 'Έχασα το πορτοφόλι μου';
+  String get whatsNewTitle => 'Χαμένο ή κλεμμένο';
 
   @override
   String get whatsNewBody => 'Αποθηκεύστε πού έχετε τις κάρτες σας και τον αριθμό φραγής κάθε τράπεζας. Αν χάσετε το πορτοφόλι, μπλοκάρετε τα πάντα σε λίγα λεπτά.';
@@ -7908,7 +7923,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get storyWallet3Title => 'Αν χαθεί';
 
   @override
-  String get storyWallet3Body => 'Ανοίξτε το «Έχασα το πορτοφόλι μου» και πατήστε «Χάθηκε» ή «Κλάπηκε». Το Vaultara δείχνει όσα είχε μέσα.';
+  String get storyWallet3Body => 'Ανοίξτε το Χαμένο ή κλεμμένο και πατήστε Χαμένο ή Κλεμμένο. Το Vaultara δείχνει ό,τι υπήρχε μέσα.';
 
   @override
   String get storyWallet4Title => 'Μπλοκάρετε κάρτες σε λίγα λεπτά';

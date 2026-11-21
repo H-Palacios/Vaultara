@@ -2404,6 +2404,21 @@ class AppLocalizationsKn extends AppLocalizations {
   String get lostWalletSwitchedLost => 'ಕಳೆದುಹೋಗಿದೆ ಎಂದು ಬದಲಾಯಿಸಲಾಗಿದೆ. ನಿಮ್ಮ ಪ್ರಗತಿ ಉಳಿಯುತ್ತದೆ.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'ಬ್ಯಾಂಕಿಂಗ್ ಆ್ಯಪ್‌ನಲ್ಲಿ ಕಾರ್ಡ್‌ಗಳನ್ನು ಫ್ರೀಜ್ ಮಾಡಿ. ಸಿಕ್ಕರೆ ಮತ್ತೆ ಆನ್ ಮಾಡಬಹುದು';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'ಒಂದು ದಿನದ ನಂತರವೂ ಸಿಗಲಿಲ್ಲವೇ? ಫ್ರೀಜ್ ಮಾಡಿದ ಕಾರ್ಡ್‌ಗಳನ್ನು ರದ್ದುಮಾಡಿ ಮತ್ತು ಹೊಸದನ್ನು ಆರ್ಡರ್ ಮಾಡಿ';
+
+  @override
+  String get lostWalletStillMissingTitle => 'ಇನ್ನೂ ಸಿಗಲಿಲ್ಲವೇ?';
+
+  @override
+  String get lostWalletStillMissingBody => 'ಸಿಗದಿದ್ದರೆ, ಫ್ರೀಜ್ ಮಾಡಿದ ಕಾರ್ಡ್‌ಗಳನ್ನು ರದ್ದುಮಾಡಿ ಮತ್ತು ಹೊಸದನ್ನು ಆರ್ಡರ್ ಮಾಡಿ.';
+
+  @override
+  String get lostWalletMarkedDone => 'ಪೂರ್ಣಗೊಂಡಿದೆ ಎಂದು ಗುರುತಿಸಲಾಗಿದೆ';
+
+  @override
   String get travelSectionJourney => 'ನಿಮ್ಮ ಪ್ರಯಾಣ';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get startRenewingNow => 'ನವೀಕರಣ ಪ್ರಾರಂಭಿಸುವ ಸಮಯ';
 
   @override
-  String get lostWalletTitle => 'ನನ್ನ ವಾಲೆಟ್ ಕಳೆದುಹೋಗಿದೆ';
+  String get lostWalletTitle => 'ಕಳೆದುಹೋಗಿದೆ ಅಥವಾ ಕಳ್ಳತನ';
 
   @override
   String get lostWalletSubtitle => 'ಅದರಲ್ಲಿ ಏನಿತ್ತು ಮತ್ತು ಏನನ್ನು ಬದಲಾಯಿಸಬೇಕು ಎಂದು ನೋಡಿ';
@@ -3431,7 +3446,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'ಸ್ಮಾರ್ಟ್ ಟೂಲ್‌ಗಳನ್ನು ಬಳಸುವುದು';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'ಕಳೆದುಹೋದ ವಾಲೆಟ್, ಜೀವನದ ಘಟನೆಗಳು, ಪುರಾವೆ ಪ್ಯಾಕ್‌ಗಳು ಮತ್ತು ಹಂಚಿದ ಲಿಂಕ್‌ಗಳು';
+  String get tutorialsSmartToolsSubtitle => 'ಕಳೆದುಹೋಗಿದೆ ಅಥವಾ ಕಳ್ಳತನ, ಜೀವನದ ಘಟನೆಗಳು, ಪುರಾವೆ ಪ್ಯಾಕ್‌ಗಳು ಮತ್ತು ಹಂಚಿದ ಲಿಂಕ್‌ಗಳು';
 
   @override
   String get tutorialsFamilyTitle => 'ಕುಟುಂಬ ಮತ್ತು ಜನರು';
@@ -7256,13 +7271,13 @@ class AppLocalizationsKn extends AppLocalizations {
   String get lostLineHelper => 'ಈಗಲೇ ಉಳಿಸಿ. ಸಂಖ್ಯೆ ಕಾರ್ಡ್ ಮೇಲೆ ಮುದ್ರಿತವಾಗಿರುತ್ತದೆ, ಆದ್ದರಿಂದ ಬೇಕಾದಾಗ ನಿಮ್ಮ ಬಳಿ ಇರುವುದಿಲ್ಲ.';
 
   @override
-  String get lifeEventWalletLost => 'ನನ್ನ ಪರ್ಸ್ ಕಳೆದುಹೋಯಿತು';
+  String get lifeEventWalletLost => 'ಕಳೆದುಹೋದ ವಸ್ತುಗಳು';
 
   @override
-  String get lifeEventWalletLostBody => 'ಮೊದಲು ನಿಮ್ಮ ಕಾರ್ಡ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ, ನಂತರ ದಾಖಲೆಗಳನ್ನು ಒಂದೊಂದಾಗಿ ಬದಲಾಯಿಸಿ.';
+  String get lifeEventWalletLostBody => 'ಮೊದಲು ನಿಮ್ಮ ಕಾರ್ಡ್‌ಗಳನ್ನು ಫ್ರೀಜ್ ಮಾಡಿ. ಇನ್ನೂ ಸಿಗದಿದ್ದರೆ, ರದ್ದುಮಾಡಿ ಮತ್ತು ದಾಖಲೆಗಳನ್ನು ಒಂದೊಂದಾಗಿ ಬದಲಿಸಿ.';
 
   @override
-  String get lifeEventWalletStolen => 'ನನ್ನ ಪರ್ಸ್ ಕಳುವಾಯಿತು';
+  String get lifeEventWalletStolen => 'ಕಳ್ಳತನವಾದ ವಸ್ತುಗಳು';
 
   @override
   String get lifeEventWalletStolenBody => 'ತಕ್ಷಣ ಕಾರ್ಡ್‌ಗಳನ್ನು ಬ್ಲಾಕ್ ಮಾಡಿ ಮತ್ತು ಕಳ್ಳತನವನ್ನು ವರದಿ ಮಾಡಿ. ನಂತರ ವಂಚನೆಗಾಗಿ ಖಾತೆಗಳ ಮೇಲೆ ಕಣ್ಣಿಡಿ.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsKn extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ಒಳಗೆ ಕೀಲಿಗಳು ಅಥವಾ ನಿಮ್ಮ ವಿಳಾಸ ಇದ್ದರೆ ಬೀಗ ಬದಲಾಯಿಸುವ ಬಗ್ಗೆ ಯೋಚಿಸಿ';
 
   @override
-  String get lifeTaskWalletInsurance => 'ನಿಮ್ಮ ವಿಮೆ ಪರ್ಸ್ ಮತ್ತು ನಗದನ್ನು ಒಳಗೊಳ್ಳುತ್ತದೆಯೇ ಪರಿಶೀಲಿಸಿ';
+  String get lifeTaskWalletInsurance => 'ತೆಗೆದುಕೊಂಡದ್ದನ್ನು ಮತ್ತು ನಗದನ್ನು ನಿಮ್ಮ ವಿಮೆ ಒಳಗೊಳ್ಳುತ್ತದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ';
 
   @override
-  String get lostWalletHeroTitle => 'ಪರ್ಸ್ ಕಳೆದುಹೋಯಿತೇ?';
+  String get lostWalletHeroTitle => 'ಏನಾದರೂ ಕಳೆದುಹೋಯಿತೇ, ಅಥವಾ ಕಳ್ಳತನವಾಯಿತೇ?';
 
   @override
   String get lostWalletHeroBody => 'ಮೊದಲು ಏನು ಬ್ಲಾಕ್ ಮಾಡಬೇಕು, ಏನು ಬದಲಾಯಿಸಬೇಕು ಮತ್ತು ಯಾರಿಗೆ ತಿಳಿಸಬೇಕು ಎಂದು Vaultara ತೋರಿಸುತ್ತದೆ.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsKn extends AppLocalizations {
   String get lostWalletEditTitle => 'ವಿವರಗಳನ್ನು ಬದಲಾಯಿಸಿ';
 
   @override
-  String get lostWalletLostHint => 'ಬಿದ್ದುಹೋಯಿತು ಅಥವಾ ಎಲ್ಲೋ ಬಿಟ್ಟೆ';
+  String get lostWalletLostHint => 'ಬಿದ್ದಿದೆ ಅಥವಾ ಎಲ್ಲೋ ಬಿಟ್ಟಿದ್ದೀರಿ. ಮೊದಲು ಫ್ರೀಜ್ ಮಾಡಿ, ಸಿಗದಿದ್ದರೆ ಮಾತ್ರ ರದ್ದುಮಾಡಿ';
 
   @override
-  String get lostWalletStolenHint => 'ಯಾರೋ ತೆಗೆದುಕೊಂಡರು';
+  String get lostWalletStolenHint => 'ಯಾರೋ ತೆಗೆದುಕೊಂಡರು. ಎಲ್ಲವನ್ನೂ ನಿರ್ಬಂಧಿಸಿ ಮತ್ತು ವರದಿ ಮಾಡಿ';
 
   @override
   String get lostWalletWhatMissing => 'ಏನು ಕಾಣೆಯಾಗಿದೆ?';
@@ -7566,7 +7581,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get lostWalletStatementTitle => 'ಬ್ಯಾಂಕ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಪರಿಶೀಲಿಸಿ';
 
   @override
-  String get lostWalletStatementBody => 'ಪರ್ಸ್ ಕಳೆದುಹೋದಾಗಿನಿಂದ ನೀವು ಮಾಡದ ಪಾವತಿಗಳನ್ನು ಹುಡುಕಿ.';
+  String get lostWalletStatementBody => 'ನಿಮ್ಮ ವಸ್ತುಗಳು ಕಳೆದುಹೋದಾಗಿನಿಂದ ನೀವು ಮಾಡದ ಪಾವತಿಗಳನ್ನು ಹುಡುಕಿ.';
 
   @override
   String get lostWalletFoundButton => 'ನನಗೆ ಸಿಕ್ಕಿತು';
@@ -7671,7 +7686,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tutorialsSubHousehold => 'ದಾಖಲೆಗಳು ಮತ್ತು ಜ್ಞಾಪನೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಇತರರನ್ನು ಆಹ್ವಾನಿಸಿ';
 
   @override
-  String get tutorialsTitleLostWallet => 'ನನ್ನ ವಾಲೆಟ್ ಕಳೆದುಹೋಗಿದೆ';
+  String get tutorialsTitleLostWallet => 'ಕಳೆದುಹೋಗಿದೆ ಅಥವಾ ಕಳ್ಳತನ';
 
   @override
   String get tutorialsSubLostWallet => 'ಈಗಲೇ ಸಿದ್ಧರಾಗಿ, ಕಳೆದುಹೋದರೆ ಬೇಗ ಕ್ರಮ ಕೈಗೊಳ್ಳಿ';
@@ -7762,7 +7777,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get whatsNewBadge => 'ಹೊಸದು';
 
   @override
-  String get whatsNewTitle => 'ನನ್ನ ವಾಲೆಟ್ ಕಳೆದುಹೋಗಿದೆ';
+  String get whatsNewTitle => 'ಕಳೆದುಹೋಗಿದೆ ಅಥವಾ ಕಳ್ಳತನ';
 
   @override
   String get whatsNewBody => 'ನೀವು ಕಾರ್ಡ್‌ಗಳನ್ನು ಎಲ್ಲಿ ಇಡುತ್ತೀರಿ ಮತ್ತು ಪ್ರತಿ ಬ್ಯಾಂಕ್‌ನ ಬ್ಲಾಕ್ ಸಂಖ್ಯೆಯನ್ನು ಉಳಿಸಿ. ಪರ್ಸ್ ಕಳೆದುಹೋದರೆ ನಿಮಿಷಗಳಲ್ಲಿ ಎಲ್ಲವನ್ನೂ ಬ್ಲಾಕ್ ಮಾಡುತ್ತೀರಿ.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get storyWallet3Title => 'ಕಳೆದುಹೋದರೆ';
 
   @override
-  String get storyWallet3Body => '«ನನ್ನ ವಾಲೆಟ್ ಕಳೆದುಹೋಗಿದೆ» ತೆರೆದು «ಕಳೆದುಹೋಯಿತು» ಅಥವಾ «ಕಳುವಾಯಿತು» ಟ್ಯಾಪ್ ಮಾಡಿ. Vaultara ಅದರಲ್ಲಿದ್ದ ಎಲ್ಲವನ್ನೂ ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.';
+  String get storyWallet3Body => 'ಕಳೆದುಹೋಗಿದೆ ಅಥವಾ ಕಳ್ಳತನ ತೆರೆಯಿರಿ ಮತ್ತು ಕಳೆದುಹೋಗಿದೆ ಅಥವಾ ಕಳ್ಳತನ ಟ್ಯಾಪ್ ಮಾಡಿ. Vaultara ಒಳಗಿದ್ದ ಎಲ್ಲವನ್ನೂ ತೋರಿಸುತ್ತದೆ.';
 
   @override
   String get storyWallet4Title => 'ನಿಮಿಷಗಳಲ್ಲಿ ಕಾರ್ಡ್ ಬ್ಲಾಕ್ ಮಾಡಿ';

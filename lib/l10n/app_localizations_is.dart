@@ -2403,6 +2403,21 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Breytt í týnt. Framvinda þín helst.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Frystu kortin í bankaappinu. Þú getur afþítt þau ef það finnst';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Enn týnt eftir dag? Ógiltu frystu kortin og pantaðu ný';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Enn týnt?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Ef það hefur ekki fundist skaltu ógilda frystu kortin og panta ný.';
+
+  @override
+  String get lostWalletMarkedDone => 'Merkt sem lokið';
+
+  @override
   String get travelSectionJourney => 'Ferðin þín';
 
   @override
@@ -2839,7 +2854,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get startRenewingNow => 'Tími til að byrja að endurnýja';
 
   @override
-  String get lostWalletTitle => 'Ég týndi veskinu';
+  String get lostWalletTitle => 'Týnt eða stolið';
 
   @override
   String get lostWalletSubtitle => 'Sjáðu hvað var í því og hverju þarf að skipta út';
@@ -3430,7 +3445,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Notkun snjalltóla';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Týnt veski, lífsviðburðir, skjalapakkar og deildir tenglar';
+  String get tutorialsSmartToolsSubtitle => 'Týnt eða stolið, lífsviðburðir, sönnunarpakkar og deildir tenglar';
 
   @override
   String get tutorialsFamilyTitle => 'Fjölskylda og fólk';
@@ -7255,13 +7270,13 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lostLineHelper => 'Vistaðu það núna. Númerið er á kortinu, svo þú hefur það ekki þegar þú þarft það.';
 
   @override
-  String get lifeEventWalletLost => 'Ég týndi veskinu mínu';
+  String get lifeEventWalletLost => 'Týndir hlutir';
 
   @override
-  String get lifeEventWalletLostBody => 'Lokaðu kortunum fyrst og endurnýjaðu svo skilríkin eitt af öðru.';
+  String get lifeEventWalletLostBody => 'Frystu kortin þín fyrst. Ef það er enn týnt skaltu ógilda þau og skipta út skjölunum einu í einu.';
 
   @override
-  String get lifeEventWalletStolen => 'Veskinu mínu var stolið';
+  String get lifeEventWalletStolen => 'Stolnir hlutir';
 
   @override
   String get lifeEventWalletStolenBody => 'Lokaðu kortunum strax og tilkynntu þjófnaðinn. Fylgstu svo með reikningunum vegna svika.';
@@ -7309,10 +7324,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Ef lyklar eða heimilisfangið þitt voru í því, íhugaðu að skipta um lása';
 
   @override
-  String get lifeTaskWalletInsurance => 'Athugaðu hvort tryggingin þín nær yfir veskið og reiðufé';
+  String get lifeTaskWalletInsurance => 'Athugaðu hvort tryggingin þín nái yfir það sem var tekið og reiðufé';
 
   @override
-  String get lostWalletHeroTitle => 'Týndirðu veskinu?';
+  String get lostWalletHeroTitle => 'Týndirðu einhverju, eða var því stolið?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara sýnir hverju á að loka fyrst, hvað á að endurnýja og hverjum á að segja frá.';
@@ -7324,10 +7339,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lostWalletEditTitle => 'Breyta upplýsingum';
 
   @override
-  String get lostWalletLostHint => 'Datt eða gleymdist einhvers staðar';
+  String get lostWalletLostHint => 'Datt eða gleymdist einhvers staðar. Frystu fyrst, ógiltu aðeins ef það finnst ekki';
 
   @override
-  String get lostWalletStolenHint => 'Einhver tók það';
+  String get lostWalletStolenHint => 'Einhver tók það. Lokaðu öllu og tilkynntu það';
 
   @override
   String get lostWalletWhatMissing => 'Hvað vantar?';
@@ -7565,7 +7580,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lostWalletStatementTitle => 'Farðu yfir bankayfirlitin';
 
   @override
-  String get lostWalletStatementBody => 'Leitaðu að greiðslum sem þú gerðir ekki síðan veskið hvarf.';
+  String get lostWalletStatementBody => 'Leitaðu að greiðslum sem þú gerðir ekki síðan hlutirnir þínir hurfu.';
 
   @override
   String get lostWalletFoundButton => 'Ég fann það';
@@ -7670,7 +7685,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialsSubHousehold => 'Bjóddu öðrum að deila færslum og áminningum';
 
   @override
-  String get tutorialsTitleLostWallet => 'Ég týndi veskinu';
+  String get tutorialsTitleLostWallet => 'Týnt eða stolið';
 
   @override
   String get tutorialsSubLostWallet => 'Undirbúðu þig núna og bregstu hratt við ef hann týnist';
@@ -7761,7 +7776,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get whatsNewBadge => 'Nýtt';
 
   @override
-  String get whatsNewTitle => 'Ég týndi veskinu';
+  String get whatsNewTitle => 'Týnt eða stolið';
 
   @override
   String get whatsNewBody => 'Vistaðu hvar þú geymir kortin og lokunarnúmer hvers banka. Ef veskið týnist lokar þú öllu á nokkrum mínútum.';
@@ -7903,7 +7918,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get storyWallet3Title => 'Ef hann týnist';
 
   @override
-  String get storyWallet3Body => 'Opnaðu „Ég týndi veskinu“ og ýttu á „Týnt“ eða „Stolið“. Vaultara sýnir allt sem var í honum.';
+  String get storyWallet3Body => 'Opnaðu Týnt eða stolið og ýttu á Týnt eða Stolið. Vaultara sýnir allt sem var í því.';
 
   @override
   String get storyWallet4Title => 'Lokaðu kortum á mínútum';

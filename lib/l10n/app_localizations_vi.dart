@@ -2403,6 +2403,21 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lostWalletSwitchedLost => 'Đã đổi thành bị mất. Tiến độ của bạn được giữ lại.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Khóa tạm thẻ trong ứng dụng ngân hàng. Bạn có thể mở lại nếu tìm thấy';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Sau một ngày vẫn chưa thấy? Hủy các thẻ đã khóa tạm và đặt thẻ mới';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Vẫn chưa thấy?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Nếu chưa tìm thấy, hãy hủy các thẻ đã khóa tạm và đặt thẻ mới.';
+
+  @override
+  String get lostWalletMarkedDone => 'Đã đánh dấu là xong';
+
+  @override
   String get travelSectionJourney => 'Hành trình của bạn';
 
   @override
@@ -2834,7 +2849,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get startRenewingNow => 'Đã đến lúc bắt đầu gia hạn';
 
   @override
-  String get lostWalletTitle => 'Tôi bị mất ví';
+  String get lostWalletTitle => 'Bị mất hoặc bị trộm';
 
   @override
   String get lostWalletSubtitle => 'Xem trong ví có gì và cần thay những gì';
@@ -3410,7 +3425,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Dùng công cụ thông minh';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Mất ví, sự kiện trong đời, bộ hồ sơ chứng minh và liên kết đã chia sẻ';
+  String get tutorialsSmartToolsSubtitle => 'Bị mất hoặc bị trộm, sự kiện cuộc sống, gói bằng chứng và liên kết đã chia sẻ';
 
   @override
   String get tutorialsFamilyTitle => 'Gia đình và mọi người';
@@ -7200,13 +7215,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lostLineHelper => 'Lưu ngay bây giờ. Số in trên thẻ, nên khi cần bạn sẽ không có.';
 
   @override
-  String get lifeEventWalletLost => 'Tôi làm mất ví';
+  String get lifeEventWalletLost => 'Đồ bị mất';
 
   @override
-  String get lifeEventWalletLostBody => 'Khóa thẻ trước, rồi làm lại giấy tờ từng cái một.';
+  String get lifeEventWalletLostBody => 'Hãy khóa tạm thẻ trước. Nếu vẫn chưa tìm thấy, hủy thẻ và làm lại giấy tờ từng cái một.';
 
   @override
-  String get lifeEventWalletStolen => 'Ví của tôi bị trộm';
+  String get lifeEventWalletStolen => 'Đồ bị trộm';
 
   @override
   String get lifeEventWalletStolenBody => 'Khóa thẻ ngay và trình báo vụ trộm. Sau đó theo dõi tài khoản để phòng gian lận.';
@@ -7254,10 +7269,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Nếu có chìa khóa hoặc địa chỉ của bạn bên trong, hãy cân nhắc thay khóa';
 
   @override
-  String get lifeTaskWalletInsurance => 'Kiểm tra xem bảo hiểm có chi trả cho ví và tiền mặt không';
+  String get lifeTaskWalletInsurance => 'Kiểm tra xem bảo hiểm có chi trả cho đồ bị lấy và tiền mặt không';
 
   @override
-  String get lostWalletHeroTitle => 'Mất ví?';
+  String get lostWalletHeroTitle => 'Bạn làm mất thứ gì, hay bị trộm?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara cho biết cần khóa gì trước, làm lại gì và báo cho ai.';
@@ -7269,10 +7284,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lostWalletEditTitle => 'Thay đổi chi tiết';
 
   @override
-  String get lostWalletLostHint => 'Rơi hoặc để quên ở đâu đó';
+  String get lostWalletLostHint => 'Đánh rơi hoặc để quên ở đâu đó. Khóa tạm trước, chỉ hủy nếu vẫn không thấy';
 
   @override
-  String get lostWalletStolenHint => 'Có người lấy';
+  String get lostWalletStolenHint => 'Có người lấy mất. Chặn mọi thứ và trình báo';
 
   @override
   String get lostWalletWhatMissing => 'Mất những gì?';
@@ -7510,7 +7525,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lostWalletStatementTitle => 'Kiểm tra sao kê ngân hàng';
 
   @override
-  String get lostWalletStatementBody => 'Tìm các khoản thanh toán bạn không thực hiện kể từ khi mất ví.';
+  String get lostWalletStatementBody => 'Tìm các khoản thanh toán bạn không thực hiện kể từ khi đồ bị mất.';
 
   @override
   String get lostWalletFoundButton => 'Tôi đã tìm thấy';
@@ -7615,7 +7630,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialsSubHousehold => 'Mời người khác chia sẻ mục và lời nhắc';
 
   @override
-  String get tutorialsTitleLostWallet => 'Tôi bị mất ví';
+  String get tutorialsTitleLostWallet => 'Bị mất hoặc bị trộm';
 
   @override
   String get tutorialsSubLostWallet => 'Chuẩn bị ngay bây giờ, hành động nhanh nếu bị mất';
@@ -7705,7 +7720,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get whatsNewBadge => 'Mới';
 
   @override
-  String get whatsNewTitle => 'Tôi bị mất ví';
+  String get whatsNewTitle => 'Bị mất hoặc bị trộm';
 
   @override
   String get whatsNewBody => 'Lưu nơi bạn để thẻ và số khóa thẻ của từng ngân hàng. Nếu mất ví, bạn khóa mọi thứ trong vài phút.';
@@ -7847,7 +7862,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get storyWallet3Title => 'Nếu bị mất';
 
   @override
-  String get storyWallet3Body => 'Mở «Tôi bị mất ví» và chạm «Bị mất» hoặc «Bị trộm». Vaultara liệt kê mọi thứ có trong đó.';
+  String get storyWallet3Body => 'Mở Bị mất hoặc bị trộm rồi chạm Bị mất hoặc Bị trộm. Vaultara hiển thị mọi thứ đã có bên trong.';
 
   @override
   String get storyWallet4Title => 'Khóa thẻ trong vài phút';

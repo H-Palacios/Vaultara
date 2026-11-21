@@ -2404,6 +2404,21 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lostWalletSwitchedLost => 'گۆڕدرا بۆ ونبوو. پێشکەوتنەکەت دەمێنێتەوە.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'کارتەکانت لە ئەپی بانکەکەت بوەستێنە. ئەگەر دۆزرایەوە دەتوانیت دووبارە چالاکیان بکەیتەوە';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'دوای ڕۆژێک هێشتا ونە؟ کارتە وەستێنراوەکان هەڵبوەشێنەوە و نوێ داوا بکە';
+
+  @override
+  String get lostWalletStillMissingTitle => 'هێشتا ونە؟';
+
+  @override
+  String get lostWalletStillMissingBody => 'ئەگەر دەرنەکەوت، کارتە وەستێنراوەکان هەڵبوەشێنەوە و نوێ داوا بکە.';
+
+  @override
+  String get lostWalletMarkedDone => 'وەک تەواوبوو نیشانکرا';
+
+  @override
   String get travelSectionJourney => 'گەشتەکەت';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get startRenewingNow => 'کاتی دەستپێکردنی نوێکردنەوەیە';
 
   @override
-  String get lostWalletTitle => 'جزدانەکەم ون بوو';
+  String get lostWalletTitle => 'ونبوو یان دزراو';
 
   @override
   String get lostWalletSubtitle => 'ببینە چی تێدا بوو و چی بگۆڕیت';
@@ -3431,7 +3446,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'بەکارهێنانی ئامرازە زیرەکەکان';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'جزدانی ون بوو، ڕووداوەکانی ژیان، پاکێتی بەڵگە و بەستەرە هاوبەشکراوەکان';
+  String get tutorialsSmartToolsSubtitle => 'ونبوو یان دزراو، ڕووداوەکانی ژیان، پاکێجی بەڵگە و بەستەرە هاوبەشەکان';
 
   @override
   String get tutorialsFamilyTitle => 'خێزان و کەسەکان';
@@ -7256,13 +7271,13 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lostLineHelper => 'ئێستا پاشەکەوتی بکە. ژمارەکە لەسەر کارتەکە چاپ کراوە، بۆیە کاتێک پێویستت پێیەتی لات نابێت.';
 
   @override
-  String get lifeEventWalletLost => 'جزدانەکەم ون بوو';
+  String get lifeEventWalletLost => 'شتە ونبووەکان';
 
   @override
-  String get lifeEventWalletLostBody => 'سەرەتا کارتەکانت ڕابگرە، پاشان بەڵگەنامەکانت یەک بە یەک بگۆڕە.';
+  String get lifeEventWalletLostBody => 'یەکەم کارتەکانت بوەستێنە. ئەگەر هێشتا ون بوو، هەڵیانبوەشێنەوە و بەڵگەنامەکانت یەک بە یەک بگۆڕە.';
 
   @override
-  String get lifeEventWalletStolen => 'جزدانەکەم دزرا';
+  String get lifeEventWalletStolen => 'شتە دزراوەکان';
 
   @override
   String get lifeEventWalletStolenBody => 'یەکسەر کارتەکانت ڕابگرە و ڕاپۆرتی دزییەکە بدە. پاشان ئاگات لە هەژمارەکانت بێت بۆ فێڵ.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lifeTaskWalletLocks => 'ئەگەر کلیل یان ناونیشانەکەت تێیدا بوو، بیر لە گۆڕینی قوفڵەکان بکەرەوە';
 
   @override
-  String get lifeTaskWalletInsurance => 'بپشکنە ئایا بیمەکەت جزدان و پارەی نەختینە دەگرێتەوە';
+  String get lifeTaskWalletInsurance => 'بزانە ئایا بیمەکەت ئەوەی بردراوە و پارەی نەختینە دەگرێتەوە';
 
   @override
-  String get lostWalletHeroTitle => 'جزدانەکەت ون بووە؟';
+  String get lostWalletHeroTitle => 'شتێکت ونکردووە، یان دزراوە؟';
 
   @override
   String get lostWalletHeroBody => 'Vaultara پیشانی دەدات سەرەتا چی ڕابگریت، چی بگۆڕیت و بە کێ بڵێیت.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lostWalletEditTitle => 'گۆڕینی وردەکارییەکان';
 
   @override
-  String get lostWalletLostHint => 'کەوت یان لە شوێنێک جێم هێشت';
+  String get lostWalletLostHint => 'کەوتووە یان لە شوێنێک ماوەتەوە. یەکەم بیوەستێنە، تەنها ئەگەر هەر ون بوو هەڵیبوەشێنەوە';
 
   @override
-  String get lostWalletStolenHint => 'کەسێک بردی';
+  String get lostWalletStolenHint => 'کەسێک بردوویەتی. هەموو شتێک ڕاگرە و ڕاپۆرتی بکە';
 
   @override
   String get lostWalletWhatMissing => 'چی ونە؟';
@@ -7566,7 +7581,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lostWalletStatementTitle => 'کورتەی بانکەکانت بپشکنە';
 
   @override
-  String get lostWalletStatementBody => 'بەدوای ئەو پارەدانانەدا بگەڕێ کە لە کاتی ونبوونی جزدانەکەتەوە نەتکردوون.';
+  String get lostWalletStatementBody => 'بەدوای ئەو پارەدانانەدا بگەڕێ کە نەتکردوون لەوەتەی شتەکانت ون بوون.';
 
   @override
   String get lostWalletFoundButton => 'دۆزیمەوە';
@@ -7671,7 +7686,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialsSubHousehold => 'کەسانی تر بانگهێشت بکە بۆ هاوبەشیکردنی تۆمار و بیرخەرەوەکان';
 
   @override
-  String get tutorialsTitleLostWallet => 'جزدانەکەم ون بوو';
+  String get tutorialsTitleLostWallet => 'ونبوو یان دزراو';
 
   @override
   String get tutorialsSubLostWallet => 'ئێستا ئامادە بە، ئەگەر ون بوو خێرا هەنگاو بنێ';
@@ -7762,7 +7777,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get whatsNewBadge => 'نوێ';
 
   @override
-  String get whatsNewTitle => 'جزدانەکەم ون بوو';
+  String get whatsNewTitle => 'ونبوو یان دزراو';
 
   @override
   String get whatsNewBody => 'پاشەکەوت بکە کە کارتەکانت لە کوێ دادەنێیت و ژمارەی داخستنی هەر بانکێک. ئەگەر جزدانەکەت ون بوو، لە چەند خولەکێکدا هەموو شت دادەخەیت.';
@@ -7904,7 +7919,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get storyWallet3Title => 'ئەگەر ون بوو';
 
   @override
-  String get storyWallet3Body => '«جزدانەکەم ون بوو» بکەرەوە و دەست لە «ون بوو» یان «دزرا» بدە. Vaultara هەموو ئەو شتانەی تێیدا بوون ڕیز دەکات.';
+  String get storyWallet3Body => 'ونبوو یان دزراو بکەرەوە و ونبوو یان دزراو دابگرە. Vaultara هەموو ئەوەی لە ناویدا بوو پیشان دەدات.';
 
   @override
   String get storyWallet4Title => 'لە چەند خولەکێکدا کارتەکان دابخە';

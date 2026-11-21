@@ -2404,6 +2404,21 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lostWalletSwitchedLost => 'U ndryshua në të humbur. Përparimi yt mbetet.';
 
   @override
+  String get lifeTaskWalletFreezeLost => 'Ngri kartat në aplikacionin e bankës. Mund t\'i shkrish nëse gjendet';
+
+  @override
+  String get lifeTaskWalletCancelIfMissing => 'Ende mungon pas një dite? Anulo kartat e ngrira dhe porosit të reja';
+
+  @override
+  String get lostWalletStillMissingTitle => 'Ende mungon?';
+
+  @override
+  String get lostWalletStillMissingBody => 'Nëse nuk është gjetur, anulo kartat e ngrira dhe porosit të reja.';
+
+  @override
+  String get lostWalletMarkedDone => 'U shënua si e kryer';
+
+  @override
   String get travelSectionJourney => 'Udhëtimi yt';
 
   @override
@@ -2840,7 +2855,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get startRenewingNow => 'Koha për të filluar rinovimin';
 
   @override
-  String get lostWalletTitle => 'Humba portofolin';
+  String get lostWalletTitle => 'Humbur ose vjedhur';
 
   @override
   String get lostWalletSubtitle => 'Shihni çfarë kishte brenda dhe çfarë duhet zëvendësuar';
@@ -3431,7 +3446,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialsSmartToolsTitle => 'Përdorimi i mjeteve të zgjuara';
 
   @override
-  String get tutorialsSmartToolsSubtitle => 'Portofoli i humbur, ngjarjet e jetës, paketat e dëshmive dhe lidhjet e ndara';
+  String get tutorialsSmartToolsSubtitle => 'Humbur ose vjedhur, ngjarje jete, paketa provash dhe lidhje të ndara';
 
   @override
   String get tutorialsFamilyTitle => 'Familja dhe personat';
@@ -7256,13 +7271,13 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lostLineHelper => 'Ruaje tani. Numri është i shtypur në kartë, kështu që nuk do ta kesh kur të duhet.';
 
   @override
-  String get lifeEventWalletLost => 'Humba portofolin';
+  String get lifeEventWalletLost => 'Sende të humbura';
 
   @override
-  String get lifeEventWalletLostBody => 'Blloko së pari kartat, pastaj zëvendëso dokumentet një nga një.';
+  String get lifeEventWalletLostBody => 'Ngri fillimisht kartat. Nëse ende mungon, anuloji dhe zëvendëso dokumentet një nga një.';
 
   @override
-  String get lifeEventWalletStolen => 'Ma vodhën portofolin';
+  String get lifeEventWalletStolen => 'Sende të vjedhura';
 
   @override
   String get lifeEventWalletStolenBody => 'Blloko menjëherë kartat dhe denoncoje vjedhjen. Pastaj ndiq llogaritë për mashtrime.';
@@ -7310,10 +7325,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lifeTaskWalletLocks => 'Nëse kishte çelësa ose adresën tënde, mendo të ndërrosh bravat';
 
   @override
-  String get lifeTaskWalletInsurance => 'Kontrollo nëse sigurimi mbulon portofolin dhe paratë';
+  String get lifeTaskWalletInsurance => 'Kontrollo nëse sigurimi mbulon atë që u mor dhe paratë në dorë';
 
   @override
-  String get lostWalletHeroTitle => 'Humbe portofolin?';
+  String get lostWalletHeroTitle => 'Humbe diçka, apo të vodhën?';
 
   @override
   String get lostWalletHeroBody => 'Vaultara të tregon çfarë të bllokosh së pari, çfarë të zëvendësosh dhe kë të njoftosh.';
@@ -7325,10 +7340,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lostWalletEditTitle => 'Ndrysho të dhënat';
 
   @override
-  String get lostWalletLostHint => 'Më ra ose e harrova diku';
+  String get lostWalletLostHint => 'Ra ose mbeti diku. Ngri fillimisht, anulo vetëm nëse nuk gjendet';
 
   @override
-  String get lostWalletStolenHint => 'Dikush e mori';
+  String get lostWalletStolenHint => 'Dikush e mori. Blloko gjithçka dhe raportoje';
 
   @override
   String get lostWalletWhatMissing => 'Çfarë mungon?';
@@ -7569,7 +7584,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lostWalletStatementTitle => 'Kontrollo pasqyrat bankare';
 
   @override
-  String get lostWalletStatementBody => 'Kërko pagesa që nuk i ke bërë që kur humbi portofoli.';
+  String get lostWalletStatementBody => 'Kërko pagesa që nuk i ke bërë që kur humbën sendet e tua.';
 
   @override
   String get lostWalletFoundButton => 'E gjeta';
@@ -7675,7 +7690,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialsSubHousehold => 'Fto të tjerët të ndajnë regjistrime dhe kujtesa';
 
   @override
-  String get tutorialsTitleLostWallet => 'Humba portofolin';
+  String get tutorialsTitleLostWallet => 'Humbur ose vjedhur';
 
   @override
   String get tutorialsSubLostWallet => 'Përgatitu tani, vepro shpejt nëse humbet';
@@ -7766,7 +7781,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get whatsNewBadge => 'E re';
 
   @override
-  String get whatsNewTitle => 'Humba portofolin';
+  String get whatsNewTitle => 'Humbur ose vjedhur';
 
   @override
   String get whatsNewBody => 'Ruaj ku i mban kartat dhe numrin e bllokimit të çdo banke. Nëse humbet portofolin, bllokon gjithçka brenda pak minutash.';
@@ -7908,7 +7923,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get storyWallet3Title => 'Nëse humbet';
 
   @override
-  String get storyWallet3Body => 'Hap «Humba portofolin» dhe prek «Humbur» ose «Vjedhur». Vaultara rendit gjithçka që kishte brenda.';
+  String get storyWallet3Body => 'Hap Humbur ose vjedhur dhe prek Humbur ose Vjedhur. Vaultara tregon gjithçka që ishte brenda.';
 
   @override
   String get storyWallet4Title => 'Blloko kartat brenda minutash';
