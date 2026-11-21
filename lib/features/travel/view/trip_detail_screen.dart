@@ -779,13 +779,20 @@ class _JourneyCard extends StatelessWidget {
                 ),
               ),
             ),
-          if (flights.length < SavedTrip.maxFlights)
-            Align(
-              alignment: AlignmentDirectional.centerStart,
-              child: TextButton.icon(
-                onPressed: onAdd,
-                icon: const Icon(Icons.add_rounded, size: 18),
-                label: Text(loc.travelFlightAdd),
+          // People book the whole trip at once, so flights are added when
+          // the trip is made. The button only shows on a trip without
+          // flights; after that a flight is changed by tapping it, or in
+          // Edit.
+          if (flights.isEmpty)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(2, 8, 4, 6),
+              child: SizedBox(
+                width: double.infinity,
+                child: FilledButton.tonalIcon(
+                  onPressed: onAdd,
+                  icon: const Icon(Icons.flight_takeoff_rounded, size: 20),
+                  label: Text(loc.travelFlightAdd),
+                ),
               ),
             ),
         ],
