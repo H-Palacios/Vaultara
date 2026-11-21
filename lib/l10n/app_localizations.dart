@@ -12250,13 +12250,13 @@ abstract class AppLocalizations {
   /// Message to send organisations after moving. Keep the square brackets.
   ///
   /// In en, this message translates to:
-  /// **'Hello, I have moved. Please update the address on my account to: [new address]. Thank you.'**
+  /// **'Hello, I have moved. Please update the address on my account to: (your new address). Thank you.'**
   String get lifePlanTellAddress;
 
   /// Message to send organisations after a name change. Keep the square brackets.
   ///
   /// In en, this message translates to:
-  /// **'Hello, my name has changed. Please update the name on my account to: [new name]. I can send proof if you need it. Thank you.'**
+  /// **'Hello, my name has changed. Please update the name on my account to: (your new name). I can send proof if you need it. Thank you.'**
   String get lifePlanTellName;
 
   /// Start sheet: copies the own steps of the last finished plan for the same event.

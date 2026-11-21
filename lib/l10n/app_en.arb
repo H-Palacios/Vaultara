@@ -8564,11 +8564,11 @@
   "@lifePlanTellHeading": {
     "description": "First line of the shared Who to tell text."
   },
-  "lifePlanTellAddress": "Hello, I have moved. Please update the address on my account to: [new address]. Thank you.",
+  "lifePlanTellAddress": "Hello, I have moved. Please update the address on my account to: (your new address). Thank you.",
   "@lifePlanTellAddress": {
     "description": "Message to send organisations after moving. Keep the square brackets."
   },
-  "lifePlanTellName": "Hello, my name has changed. Please update the name on my account to: [new name]. I can send proof if you need it. Thank you.",
+  "lifePlanTellName": "Hello, my name has changed. Please update the name on my account to: (your new name). I can send proof if you need it. Thank you.",
   "@lifePlanTellName": {
     "description": "Message to send organisations after a name change. Keep the square brackets."
   },

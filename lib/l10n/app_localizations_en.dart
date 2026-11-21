@@ -7141,10 +7141,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get lifePlanTellHeading => 'Organisations to tell:';
 
   @override
-  String get lifePlanTellAddress => 'Hello, I have moved. Please update the address on my account to: [new address]. Thank you.';
+  String get lifePlanTellAddress => 'Hello, I have moved. Please update the address on my account to: (your new address). Thank you.';
 
   @override
-  String get lifePlanTellName => 'Hello, my name has changed. Please update the name on my account to: [new name]. I can send proof if you need it. Thank you.';
+  String get lifePlanTellName => 'Hello, my name has changed. Please update the name on my account to: (your new name). I can send proof if you need it. Thank you.';
 
   @override
   String lifePlanReuseSteps(int count) {
