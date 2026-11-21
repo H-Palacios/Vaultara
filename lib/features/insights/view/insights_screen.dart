@@ -26,6 +26,9 @@ import 'package:vaultara/features/insights/services/smart_insight_service.dart';
 import 'package:vaultara/features/insights/services/tts_service.dart';
 import 'package:vaultara/features/insights/view/widgets/expiry_timeline_card.dart';
 import 'package:vaultara/features/insights/view/widgets/smart_insight_card.dart';
+import 'package:vaultara/features/insights/view/widgets/smart_insight_stack.dart';
+import 'package:vaultara/core/layout/two_columns.dart';
+import 'package:vaultara/core/layout/wide_layout.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/records/view/record_editor_launcher.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
@@ -419,74 +422,118 @@ class _InsightsScreenState extends State<InsightsScreen>
     final recapCost = recap?.costLastWeek;
     final recapCurrency = recap?.currency;
 
-    final list = ListView(
-      physics: const AlwaysScrollableScrollPhysics(),
-      padding: const EdgeInsets.all(16),
-      children: [
-        const SizedBox(height: 8),
-        if (!widget.isTutorialMode) ...[
-          PersonFilterChips(
-            records: allRecords,
-            value: person,
-            onChanged: (value) => setState(() => _person = value),
+    final wide = WideLayout.of(context);
+
+    final filter = <Widget>[
+      if (!widget.isTutorialMode)
+        PersonFilterChips(
+          records: allRecords,
+          value: person,
+          onChanged: (value) => setState(() => _person = value),
+        ),
+    ];
+
+    final overview = <Widget>[
+      if (!widget.isTutorialMode) ...[
+        if (recap != null) ...[
+          WeeklyRecapCard(
+            recap: recap,
+            costText:
+                widget.isPremium && recapCost != null && recapCurrency != null
+                ? _formatMoney(recapCost, recapCurrency)
+                : null,
+            onDismiss: _dismissRecap,
           ),
-          if (recap != null) ...[
-            WeeklyRecapCard(
-              recap: recap,
-              costText:
-                  widget.isPremium && recapCost != null && recapCurrency != null
-                  ? _formatMoney(recapCost, recapCurrency)
-                  : null,
-              onDismiss: _dismissRecap,
-            ),
-            const SizedBox(height: 12),
-          ],
-          if (RecordRepository.isLoaded)
-            InsightsSummaryStrip(
-              summary: InsightsSummary.of(records, now: now),
-              onOpen: _openList,
-            )
-          else
-            const InsightsSummarySkeleton(),
           const SizedBox(height: 12),
         ],
-        Container(
-          key: _smartCardKey,
-          child: SmartInsightCard(
-            insights: insights,
-            speakerKey: _speakerKey,
-            canSpeak: widget.isTutorialMode || _ttsReady,
-            isSpeaking: _tts.speaking,
-            isPaused: _tts.paused,
-            onPlay: () => _handlePlay(speechText),
-            onPause: _handlePause,
-            onAction: widget.isTutorialMode ? null : _handleInsightAction,
-            onSnooze: widget.isTutorialMode ? null : _snooze,
-            onAsk: widget.isTutorialMode || !widget.isPremium ? null : _ask,
-          ),
-        ),
-        const SizedBox(height: 16),
-        Container(
-          key: _timelineKey,
-          child: ExpiryTimelineCard(
-            result: timeline,
-            onOpenRecord: widget.isTutorialMode ? null : _openTimelineRecord,
-            upcomingRecords: widget.isTutorialMode ? null : records,
-          ),
-        ),
-        const SizedBox(height: 16),
-        if (!widget.isTutorialMode) ...[
-          PremiumBuilder(
-            initial: widget.isPremium,
-            builder: (context, isPremium) => RenewalCostsCard(
-              key: ValueKey('renewal-costs-$_dataVersion-${person ?? ''}'),
-              isPremium: isPremium,
-              records: records,
-            ),
-          ),
-          const SizedBox(height: 16),
-        ],
+        if (RecordRepository.isLoaded)
+          InsightsSummaryStrip(
+            summary: InsightsSummary.of(records, now: now),
+            onOpen: _openList,
+          )
+        else
+          const InsightsSummarySkeleton(),
+        const SizedBox(height: 12),
       ],
+    ];
+
+    // On a 10-inch tablet held sideways the top insights are listed one
+    // under the other; everywhere else they are swiped one at a time.
+    final smart = Container(
+      key: _smartCardKey,
+      child: wide
+          ? SmartInsightStack(
+              insights: insights,
+              speakerKey: _speakerKey,
+              canSpeak: widget.isTutorialMode || _ttsReady,
+              isSpeaking: _tts.speaking,
+              onPlay: () => _handlePlay(speechText),
+              onPause: _handlePause,
+              onAction: widget.isTutorialMode ? null : _handleInsightAction,
+              onSnooze: widget.isTutorialMode ? null : _snooze,
+              onAsk: widget.isTutorialMode || !widget.isPremium ? null : _ask,
+            )
+          : SmartInsightCard(
+              insights: insights,
+              speakerKey: _speakerKey,
+              canSpeak: widget.isTutorialMode || _ttsReady,
+              isSpeaking: _tts.speaking,
+              isPaused: _tts.paused,
+              onPlay: () => _handlePlay(speechText),
+              onPause: _handlePause,
+              onAction: widget.isTutorialMode ? null : _handleInsightAction,
+              onSnooze: widget.isTutorialMode ? null : _snooze,
+              onAsk: widget.isTutorialMode || !widget.isPremium ? null : _ask,
+            ),
+    );
+
+    final timelineCard = Container(
+      key: _timelineKey,
+      child: ExpiryTimelineCard(
+        result: timeline,
+        onOpenRecord: widget.isTutorialMode ? null : _openTimelineRecord,
+        upcomingRecords: widget.isTutorialMode ? null : records,
+      ),
+    );
+
+    final costs = <Widget>[
+      if (!widget.isTutorialMode) ...[
+        PremiumBuilder(
+          initial: widget.isPremium,
+          builder: (context, isPremium) => RenewalCostsCard(
+            key: ValueKey('renewal-costs-$_dataVersion-${person ?? ''}'),
+            isPremium: isPremium,
+            records: records,
+          ),
+        ),
+        const SizedBox(height: 16),
+      ],
+    ];
+
+    final list = ListView(
+      physics: const AlwaysScrollableScrollPhysics(),
+      padding: wide
+          ? const EdgeInsets.fromLTRB(24, 16, 24, 16)
+          : const EdgeInsets.all(16),
+      children: wide
+          ? [
+              const SizedBox(height: 8),
+              ...filter,
+              TwoColumns(
+                left: [...overview, smart],
+                right: [timelineCard, const SizedBox(height: 16), ...costs],
+              ),
+            ]
+          : [
+              const SizedBox(height: 8),
+              ...filter,
+              ...overview,
+              smart,
+              const SizedBox(height: 16),
+              timelineCard,
+              const SizedBox(height: 16),
+              ...costs,
+            ],
     );
 
     return PopScope(
