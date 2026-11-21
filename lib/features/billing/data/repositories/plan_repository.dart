@@ -60,7 +60,6 @@ class _UserDocHub {
   static final _firestore = FirebaseFirestore.instance;
 
   static final _events = StreamController<_UserDocEvent>.broadcast();
-  static StreamSubscription<User?>? _authSub;
   static StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _docSub;
   static Timer? _retry;
   static String? _uid;
@@ -71,7 +70,8 @@ class _UserDocHub {
   static void ensure() {
     if (_started) return;
     _started = true;
-    _authSub = _auth.authStateChanges().listen(_onUser);
+    // Listens for the whole app session, so the subscription is not kept.
+    _auth.authStateChanges().listen(_onUser);
     final user = _auth.currentUser;
     if (user != null) _onUser(user);
   }

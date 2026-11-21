@@ -7,6 +7,7 @@ import 'package:vaultara/features/auth/services/reauth_service.dart';
 import 'package:vaultara/features/auth/services/social_sign_in.dart';
 import 'package:vaultara/features/auth/logic/auth_error_mapper.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
+import 'package:vaultara/features/auth/view/widget/social_sign_in_buttons.dart';
 
 class ReauthPasswordForm extends StatefulWidget {
   final Future<void> Function() onConfirmed;
@@ -136,15 +137,8 @@ class _ReauthPasswordFormState extends State<ReauthPasswordForm> {
               child: CircularProgressIndicator(strokeWidth: 2),
             )
           : apple
-          ? const Icon(Icons.apple, size: 22)
-          : const Text(
-              'G',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w800,
-                color: Color(0xFF4285F4),
-              ),
-            ),
+          ? const SocialLogo(SocialProvider.apple, color: Colors.white)
+          : const SocialLogo(SocialProvider.google),
       label: Text(apple ? loc.socialContinueApple : loc.socialContinueGoogle),
     );
   }

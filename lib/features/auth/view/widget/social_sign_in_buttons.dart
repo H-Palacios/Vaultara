@@ -5,6 +5,33 @@ import 'package:vaultara/features/auth/services/social_sign_in.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 
+/// The Google and Apple logos, from assets/images. The Apple logo is black in
+/// the file and shown white on the black Apple button.
+class SocialLogo extends StatelessWidget {
+  final SocialProvider provider;
+  final Color? color;
+
+  const SocialLogo(this.provider, {super.key, this.color});
+
+  /// The files are 48 px with a little space around the logo, so at 22 the
+  /// logo itself is about 18 high, the size both sign-in guidelines use.
+  static const double size = 22;
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset(
+      provider == SocialProvider.apple
+          ? 'assets/images/apple.png'
+          : 'assets/images/google.png',
+      width: size,
+      height: size,
+      color: color,
+      filterQuality: FilterQuality.medium,
+      excludeFromSemantics: true,
+    );
+  }
+}
+
 /// "Continue with Google" and, on iPhone and iPad, "Continue with Apple",
 /// followed by an "or" divider. A tap signs in or creates the account in one
 /// step, with no password and no question about whether the email exists.
@@ -109,14 +136,7 @@ class _SocialSignInButtonsState extends State<SocialSignInButtons> {
       children: [
         _button(
           provider: SocialProvider.google,
-          icon: const Text(
-            'G',
-            style: TextStyle(
-              fontSize: 19,
-              fontWeight: FontWeight.w900,
-              color: Color(0xFF4285F4),
-            ),
-          ),
+          icon: const SocialLogo(SocialProvider.google),
           label: loc.socialContinueGoogle,
           background: Colors.white,
           foreground: const Color(0xFF1F1F1F),
@@ -126,7 +146,7 @@ class _SocialSignInButtonsState extends State<SocialSignInButtons> {
           const SizedBox(height: 10),
           _button(
             provider: SocialProvider.apple,
-            icon: const Icon(Icons.apple, size: 22, color: Colors.white),
+            icon: const SocialLogo(SocialProvider.apple, color: Colors.white),
             label: loc.socialContinueApple,
             background: Colors.black,
             foreground: Colors.white,
