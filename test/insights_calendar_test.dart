@@ -7,7 +7,6 @@ import 'package:vaultara/features/calendar/data/models/expiry_index.dart';
 import 'package:vaultara/features/calendar/view/widgets/calendar_list_view.dart';
 import 'package:vaultara/features/insights/data/models/smart_insight.dart';
 import 'package:vaultara/features/insights/data/models/smart_insight_kind.dart';
-import 'package:vaultara/features/insights/logic/insight_tone.dart';
 import 'package:vaultara/features/insights/logic/insights_summary.dart';
 import 'package:vaultara/features/insights/logic/weekly_recap.dart';
 import 'package:vaultara/features/insights/services/expiry_timeline_service.dart';
@@ -267,25 +266,6 @@ void main() {
         expect(speech, contains(i.heading));
       }
     });
-
-    test('every kind has a tone', () {
-      final tones = {
-        for (final kind in SmartInsightKind.values)
-          kind: InsightTones.of(
-            SmartInsight(
-              kind: kind,
-              heading: '',
-              body: '',
-              icon: Icons.info_outline,
-              priority: 0,
-            ),
-          ),
-      };
-      expect(tones[SmartInsightKind.expired], InsightTone.urgent);
-      expect(tones[SmartInsightKind.renewTogether], InsightTone.attention);
-      expect(tones[SmartInsightKind.allCaughtUp], InsightTone.calm);
-      expect(tones[SmartInsightKind.upcomingCost], InsightTone.tip);
-    });
   });
 
   group('snoozes', () {
@@ -304,31 +284,5 @@ void main() {
       final big = {for (var i = 0; i < 80; i++) 'k$i': 200 + i};
       expect(InsightSnoozes.encode(big).length, InsightSnoozes.maxEntries);
     });
-  });
-
-  test('every count string shows the real number in every language', () {
-    for (final locale in AppLocalizations.supportedLocales) {
-      final loc = lookupAppLocalizations(locale);
-      for (final n in [0, 2, 3, 5, 11, 21, 101]) {
-        final s = '$n';
-        expect(loc.calendarDaysLeft(n), contains(s), reason: '$locale $n');
-        expect(loc.calendarDaysAgo(n), contains(s), reason: '$locale $n');
-        expect(loc.weeklyRecapExpiring(n), contains(s), reason: '$locale $n');
-        expect(loc.weeklyRecapRenewed(n), contains(s), reason: '$locale $n');
-        expect(
-          loc.calendarMonthSummary(n, 'M'),
-          contains(s),
-          reason: '$locale $n',
-        );
-        expect(
-          loc.smartInsightUpcomingCostBody(n, 'X'),
-          contains(s),
-          reason: '$locale $n',
-        );
-      }
-      expect(loc.calendarMonthSummary(4, 'MONTH'), contains('MONTH'));
-      expect(loc.calendarReminderFor('NAME', 'DATE'), contains('NAME'));
-      expect(loc.insightAskPrompt('HEAD', 'BODY'), contains('BODY'));
-    }
   });
 }

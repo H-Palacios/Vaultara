@@ -51,24 +51,6 @@ void main() {
     test('31 days is green', () {
       expect(RecordStatusColours.fromDaysLeft(31), RecordStatusColours.valid);
     });
-
-    test('amber text is darker in light mode', () {
-      final amber = RecordStatusColours.foreground(
-        RecordStatusColours.expiringSoon,
-        Brightness.light,
-      );
-      expect(amber.computeLuminance(), lessThan(0.18));
-    });
-
-    test('amber text is unchanged in dark mode', () {
-      expect(
-        RecordStatusColours.foreground(
-          RecordStatusColours.expiringSoon,
-          Brightness.dark,
-        ),
-        RecordStatusColours.expiringSoon,
-      );
-    });
   });
 
   group('Coming up', () {

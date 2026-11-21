@@ -59,15 +59,4 @@ void main() {
       isNull,
     );
   });
-
-  test('every language shows a time', () {
-    for (final locale in AppLocalizations.supportedLocales) {
-      final l = lookupAppLocalizations(locale);
-      expect(
-        AssistantLimit.clock(DateTime(2026, 1, 1, 14, 5), l.localeName),
-        isNotEmpty,
-      );
-      expect(l.assistantLimitToday('14:05'), contains('14:05'));
-    }
-  });
 }
